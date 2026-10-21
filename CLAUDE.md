@@ -8,6 +8,14 @@ La dictó Frank el 21/10/2026: «hay que agregar aquí la regla cero: prohibido 
 - **Ante un fallo no hay excusas ni explicaciones de por qué pasó: se corrige.** El informe dice qué estaba mal, qué se ha corregido y con qué se ha comprobado, en una línea. Nada de contexto, atenuantes ni disculpas largas.
 - **Lo que Frank pidió se entrega entero y bien hecho.** Un resultado pobre presentado con sus motivos sigue siendo un resultado pobre.
 
+## R00 · NUNCA SE GASTA EL SALDO DE FRANK SIN SU PERMISO
+
+La dictó Frank el 21/10/2026, después de que Claude Code lanzara cuatro agentes sin preguntarle cuando le quedaba poco saldo: chocaron con el límite, no produjeron nada y gastaron igual. Lo hizo Claude Code.
+
+- **Prohibido lanzar agentes o flujos de varios agentes.** Lo bloquea `.claude/settings.json` (`deny: Agent, Workflow`), y solo Frank puede quitarlo.
+- **Antes de cada tarea, Claude Code dice en una línea si es pequeña, mediana o grande.** Las medianas y grandes no empiezan sin un «sí» de Frank. Calcular el coste es trabajo de Claude Code, nunca de Frank.
+- **Se trabaja en tandas cortas,** y cada una termina en algo que Frank ve en la app.
+
 ## R1 · NUNCA ENGAÑAR A FRANK. NUNCA UN ATAJO SIN SU CONSENTIMIENTO
 
 **Es la primera regla y manda sobre todo lo demás de este fichero, R2…R7 incluidas.** Se lee al abrir cada sesión, antes de tocar nada. La dictó Frank el 20/10/2026 con estas palabras: «no se puede engañar a nadie, no puedes hacer atajos sin mi consentimiento, la honestidad tiene que ser lo más importante […] esto tiene que quedar registrado como una regla general para que nunca, escúchame bien, nunca más puede volver a ocurrir».

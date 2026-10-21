@@ -19,6 +19,8 @@ import '../models/progresion_model.dart';
 import '../models/rexistro_frases_model.dart';
 import '../models/tpr_curriculum_scheduler.dart';
 import '../models/steam_model.dart';
+import '../../core/localization/localized_string.dart';
+import '../models/unidade_curricular_model.dart';
 import '../models/unidade_do_mes_model.dart';
 
 /// A content file that could not be loaded, kept instead of being discarded.
@@ -924,11 +926,60 @@ class ContentRepository {
 
   /// El núcleo de [unidade] con su inglés y su gesto, con lo que ya esté
   /// leído del banco y del registro.
-  List<PezaDaUnidade> nucleoSync(UnidadeDoMes unidade) => nucleoResolto(
+  ///
+  /// F11 (Frank, 21/10/2026, opción 2): el núcleo del mes es el vocabulario
+  /// diana de la unidad del plan curricular que toca ese mes, si el plan ya
+  /// está leído ([loadPlanCurricular]). La asamblea conserva el suyo:
+  /// [nucleoDaAsembleaSync].
+  List<PezaDaUnidade> nucleoSync(UnidadeDoMes unidade) {
+    final plan = _planCurricular?.para(unidade.curso, unidade.mesCalendario);
+    if (plan == null || plan.vocabulario.isEmpty) {
+      return nucleoDaAsembleaSync(unidade);
+    }
+    LocalizedString xestoDe(FraseCurricular v) {
+      final en = v.en.toLowerCase();
+      for (final a in plan.accionsTPR) {
+        if (a.xesto != null && a.en.toLowerCase().contains(en)) return a.xesto!;
+      }
+      return LocalizedString(
+        gl: 'Sinala ou colle: ${v.significado?.gl ?? v.en}',
+        es: 'Señala o coge: ${v.significado?.es ?? v.en}',
+      );
+    }
+
+    return [
+      for (final v in plan.vocabulario.take(6))
+        PezaDaUnidade(
+          ref: 'curriculo.${plan.id}.${v.en.toLowerCase()}',
+          en: v.en,
+          significado: v.significado,
+          xesto: xestoDe(v),
+        ),
+    ];
+  }
+
+  /// El núcleo que trae la unidad del mes, el de la asamblea del día.
+  List<PezaDaUnidade> nucleoDaAsembleaSync(UnidadeDoMes unidade) =>
+      nucleoResolto(
         unidade,
         programa: _programaTpr,
         rexistro: _rexistroFrases,
       );
+
+  PlanCurricular? _planCurricular;
+  Future<PlanCurricular?>? _cargandoPlan;
+
+  /// El plan curricular de Frank (F11), leído una vez. `null` si falla.
+  Future<PlanCurricular?> loadPlanCurricular() =>
+      _cargandoPlan ??= PlanCurricular.cargar()
+          .then<PlanCurricular?>((p) => _planCurricular = p)
+          .catchError((Object e) {
+        _loadErrors.add(
+            ContentLoadFailure(PlanCurricular.calendarioAsset, e.toString()));
+        return null;
+      });
+
+  PlanCurricular? get planCurricularSync => _planCurricular;
 
   /// Una pieza que cita una unidad (una fórmula, una descriptiva, la
   /// estructura), con su inglés y su gesto; `null` si aún no está leída.
@@ -974,8 +1025,15 @@ class ContentRepository {
     if (orden == null) return Future.value(null);
     final clave = '$cursoId.$orden';
     final ya = _unidadesDoMes[clave];
-    if (ya != null) return Future.value(ya);
-    return _loader.loadUnidadeDoMes(cursoId, orden).then<UnidadeDoMes?>((u) {
+    if (ya != null && _planCurricular != null) return Future.value(ya);
+    // El núcleo del mes sale del plan curricular (F11): se lee con la unidad.
+    final plan = loadPlanCurricular();
+    if (ya != null) return plan.then((_) => ya);
+    return Future.wait([
+      _loader.loadUnidadeDoMes(cursoId, orden),
+      plan,
+    ]).then<UnidadeDoMes?>((r) {
+      final u = r[0] as UnidadeDoMes;
       _unidadesDoMes[clave] = u;
       return u;
     }).catchError((Object e) {

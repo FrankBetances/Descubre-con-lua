@@ -83,6 +83,10 @@ flutter:
     - assets/content/modelo/
     # La sesión de 45 minutos (F3): lo fijo de sus cuatro fases.
     - assets/content/sesion45/
+    # El plan curricular de Frank (F11): las 12 unidades y su calendario.
+    - assets/content/curriculo/
+    # Los 100 cuentos dialogados HIS-001…HIS-100 (F12).
+    - assets/content/biblioteca/
     - assets/audio/
     # Las rejillas de Lúa. Hasta ahora solo las leía tools/build_launcher_icons.py
     # en tiempo de compilación, así que nunca se empaquetaron; en cuanto una
@@ -94,6 +98,7 @@ flutter:
     # Las láminas del contenido: una rejilla de 24×24 por objeto, misma paleta
     # que las insignias. Lo vigila tools/check_bundled_assets.py.
     - assets/brand/laminas/
+    - assets/brand/contos/
     # Neural voice recordings (Celtia gl / Sharvard es / LJSpeech en),
     # synthesised at build time by tools/generate_voice_assets.py and
     # committed. The models never run on the device: la app lleva las

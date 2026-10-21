@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../formacion/widgets/lista_de_practica.dart';
+import '../../juega/widgets/tarxeta_curricular.dart';
 
 import '../../../core/audio/offline_audio_service.dart';
 import '../../../core/brand/lua_pixel.dart';
@@ -404,6 +405,14 @@ class _HoxeFamiliasScreenState extends State<HoxeFamiliasScreen> {
                   onTap: () => _abrirPonteAoDia(ponte),
                 ),
               ],
+              // F11: lo que se trabaja este mes según el plan curricular.
+              TarxetaCurricular(
+                cursoId: widget.cursoId,
+                mesCalendario: _toca.dia.mesCalendario,
+                language: lang,
+                audioService: widget.audioService,
+                enCasa: true,
+              ),
               if (_conto case final conto?) ...[
                 const SizedBox(height: 14),
                 _FilaConto(

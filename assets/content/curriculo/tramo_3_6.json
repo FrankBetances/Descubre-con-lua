@@ -1,0 +1,1460 @@
+{
+  "_doc": "Tramo 3 (3 a 6 años) del currículo de vocabulario: las seis unidades de referencias/base/curriculo-vocabulario-infantil-2-6.txt:147-274, en gallego y castellano, con la fe de erratas (referencias/base/ERRATAS.md) aplicada.",
+  "tramo": "3_6",
+  "unidades": [
+    {
+      "id": "T3.U3.1",
+      "nivel": "3_4",
+      "titulo": {
+        "gl": "Construtores en acción e relacións espaciais",
+        "es": "Constructores en acción y relaciones espaciales"
+      },
+      "semanas": 8,
+      "objetivos": [
+        {
+          "gl": "Usar de forma verbal e espontánea as fórmulas de alternancia no xogo «My turn» e «Your turn» ao amorear e pasar bloques de madeira.",
+          "es": "Usar de forma verbal y espontánea las fórmulas de alternancia en el juego «My turn» y «Your turn» al apilar y pasar bloques de madera."
+        },
+        {
+          "gl": "Executar instrucións motrices complexas coas preposicións espaciais in, on, under, colocando obxectos en estruturas.",
+          "es": "Ejecutar instrucciones motrices complejas con las preposiciones espaciales in, on, under, colocando objetos en estructuras."
+        },
+        {
+          "gl": "Responder a preguntas de identificación causal primaria cun xesto ou cunha resposta telegráfica ante a pregunta «Why did it fall?».",
+          "es": "Responder a preguntas de identificación causal primaria con un gesto o con una respuesta telegráfica ante la pregunta «Why did it fall?»."
+        },
+        {
+          "gl": "Discriminar de oído a aliteración co fonema bilabial sonoro /b/ coa rima motriz «Big blue blocks build bridges».",
+          "es": "Discriminar de oído la aliteración con el fonema bilabial sonoro /b/ con la rima motriz «Big blue blocks build bridges»."
+        }
+      ],
+      "vocabulario": [
+        {
+          "en": "block",
+          "ipa": "/blɑk/",
+          "gl": "bloque",
+          "es": "bloque",
+          "tier": 1
+        },
+        {
+          "en": "train",
+          "ipa": "/treɪn/",
+          "gl": "tren",
+          "es": "tren",
+          "tier": 1
+        },
+        {
+          "en": "cup",
+          "ipa": "/kʌp/",
+          "gl": "cunca",
+          "es": "taza",
+          "tier": 1
+        },
+        {
+          "en": "fall",
+          "ipa": "/fɔl/",
+          "gl": "caer",
+          "es": "caer",
+          "tier": 1
+        },
+        {
+          "en": "make",
+          "ipa": "/meɪk/",
+          "gl": "facer",
+          "es": "hacer",
+          "tier": 1
+        },
+        {
+          "en": "tall",
+          "ipa": "/tɔl/",
+          "gl": "alto",
+          "es": "alto",
+          "tier": 2
+        },
+        {
+          "en": "broken",
+          "ipa": "/ˈbroʊkən/",
+          "gl": "roto",
+          "es": "roto",
+          "tier": 2
+        },
+        {
+          "en": "steady",
+          "ipa": "/ˈstɛdi/",
+          "gl": "firme",
+          "es": "firme",
+          "tier": 2
+        },
+        {
+          "en": "push",
+          "ipa": "/pʊʃ/",
+          "gl": "empurrar",
+          "es": "empujar",
+          "tier": 2
+        },
+        {
+          "en": "rebuild",
+          "ipa": "/riˈbɪld/",
+          "gl": "reconstruír",
+          "es": "reconstruir",
+          "tier": 2
+        }
+      ],
+      "formulas": [
+        {
+          "en": "My turn",
+          "gl": "A miña quenda",
+          "es": "Mi turno"
+        },
+        {
+          "en": "Your turn",
+          "gl": "A túa quenda",
+          "es": "Tu turno"
+        },
+        {
+          "en": "Help me, please",
+          "gl": "Axúdame, por favor",
+          "es": "Ayúdame, por favor"
+        },
+        {
+          "en": "Look at this!",
+          "gl": "Mira isto!",
+          "es": "¡Mira esto!"
+        }
+      ],
+      "estructuras": [
+        {
+          "en": "The car is on the block.",
+          "gl": "O coche está enriba do bloque.",
+          "es": "El coche está encima del bloque."
+        },
+        {
+          "en": "Put it under the bridge.",
+          "gl": "Ponno debaixo da ponte.",
+          "es": "Ponlo debajo del puente."
+        },
+        {
+          "en": "I push and it falls.",
+          "gl": "Empurro e cae.",
+          "es": "Empujo y se cae."
+        }
+      ],
+      "concienciaFonoloxica": {
+        "gl": "Aliteración da oclusiva bilabial /b/: «Bouncing big blue balls build tall towers» (no obxectivo 4, a rima motriz é «Big blue blocks build bridges»). Rimas monosilábicas encadeadas: Block – Lock – Rock.",
+        "es": "Aliteración de la oclusiva bilabial /b/: «Bouncing big blue balls build tall towers» (en el objetivo 4, la rima motriz es «Big blue blocks build bridges»). Rimas monosilábicas encadenadas: Block – Lock – Rock."
+      },
+      "rimas": [
+        {
+          "en": "Big blue blocks build bridges.",
+          "gl": "Bloques grandes e azuis constrúen pontes.",
+          "es": "Bloques grandes y azules construyen puentes."
+        },
+        {
+          "en": "Bouncing big blue balls build tall towers.",
+          "gl": "Pelotas grandes e azuis que botan constrúen torres altas.",
+          "es": "Pelotas grandes y azules que botan construyen torres altas."
+        },
+        {
+          "en": "Block – Lock – Rock",
+          "gl": "Bloque – pechadura – pedra",
+          "es": "Bloque – cerradura – piedra"
+        }
+      ],
+      "xogoSociodramatico": {
+        "escenario": {
+          "gl": "Recuncho de construción: unha obra de enxeñaría na alfombra, con cascos de cartón e bloques de madeira sen pintar.",
+          "es": "Rincón de construcción: una obra de ingeniería en la alfombra, con cascos de cartón y bloques de madera sin pintar."
+        },
+        "intervencion": {
+          "gl": "A persoa adulta garda unha peza clave de madeira e modela cunha pausa expectante: «Do you need this tall block?». Coa peza na man, di ela mesma «Help me, please!» e agarda. Cando a criatura a pide, responde: «Here you are! Now it is your turn to build».",
+          "es": "La persona adulta se queda con una pieza clave de madera y modela con una pausa expectante: «Do you need this tall block?». Con la pieza en la mano, dice ella misma «Help me, please!» y espera. Cuando la criatura la pide, responde: «Here you are! Now it is your turn to build»."
+        },
+        "resolucion": {
+          "gl": "Se dúas criaturas disputan o mesmo bloque, a persoa adulta mete a man entre elas como separador amigable e guía: «Let's share! First my turn, then your turn».",
+          "es": "Si dos criaturas se disputan el mismo bloque, la persona adulta mete la mano entre ellas como separador amistoso y guía: «Let's share! First my turn, then your turn»."
+        }
+      },
+      "frasesAdulta": [
+        {
+          "en": "Why did it fall?",
+          "gl": "Por que caeu?",
+          "es": "¿Por qué se ha caído?"
+        },
+        {
+          "en": "Do you need this tall block?",
+          "gl": "Necesitas este bloque alto?",
+          "es": "¿Necesitas este bloque alto?"
+        },
+        {
+          "en": "Help me, please!",
+          "gl": "Axúdame, por favor!",
+          "es": "¡Ayúdame, por favor!"
+        },
+        {
+          "en": "Here you are! Now it is your turn to build.",
+          "gl": "Aquí tes! Agora tócache construír a ti.",
+          "es": "¡Aquí tienes! Ahora te toca construir a ti."
+        },
+        {
+          "en": "Let's share! First my turn, then your turn.",
+          "gl": "Compartimos! Primeiro a miña quenda e despois a túa.",
+          "es": "¡Compartimos! Primero mi turno y después el tuyo."
+        },
+        {
+          "en": "Look, what is on the bridge?",
+          "gl": "Mira, que hai enriba da ponte?",
+          "es": "Mira, ¿qué hay encima del puente?"
+        },
+        {
+          "en": "Yes, a big red truck is on the bridge!",
+          "gl": "Si, un camión vermello e grande está enriba da ponte!",
+          "es": "¡Sí, un camión rojo y grande está encima del puente!"
+        },
+        {
+          "en": "On the bridge!",
+          "gl": "Enriba da ponte!",
+          "es": "¡Encima del puente!"
+        }
+      ],
+      "realia": [
+        {
+          "gl": "Bloques de madeira sen pintar",
+          "es": "Bloques de madera sin pintar"
+        },
+        {
+          "gl": "Cascos de cartón",
+          "es": "Cascos de cartón"
+        },
+        {
+          "gl": "Unha alfombra",
+          "es": "Una alfombra"
+        },
+        {
+          "gl": "Contos sobre construcións ou pontes (na casa)",
+          "es": "Cuentos sobre construcciones o puentes (en casa)"
+        }
+      ],
+      "familia": {
+        "gl": "Lectura de apoio: contos sobre construcións ou pontes. Secuencia PEER: a persoa adulta sinala o debuxo do camión: «Look, what is on the bridge?» (Prompt). A criatura pode responder «Truck!». A persoa adulta: «Yes, a big red truck is on the bridge!» (Evaluate e Expand). No último paso, retomar: a persoa adulta volve dicir «On the bridge!» e deixa o oco, sen pedir nada.",
+        "es": "Lectura de apoyo: cuentos sobre construcciones o puentes. Secuencia PEER: la persona adulta señala el dibujo del camión: «Look, what is on the bridge?» (Prompt). La criatura puede responder «Truck!». La persona adulta: «Yes, a big red truck is on the bridge!» (Evaluate y Expand). En el último paso, retomar: la persona adulta vuelve a decir «On the bridge!» y deja el hueco, sin pedir nada."
+      },
+      "fonte": "curriculo-vocabulario-infantil-2-6.txt:161-180",
+      "erratasAplicadas": [
+        {
+          "gl": "Quitáronse os números de nota pegados ás frases (22, 15, 12, 14).",
+          "es": "Se han quitado los números de nota pegados a las frases (22, 15, 12, 14)."
+        },
+        {
+          "gl": "Liña 176: o documento facía que a criatura dixese a fórmula de petición ao pé da letra. Agora é a persoa adulta quen di «Help me, please!» coa peza na man, e agarda.",
+          "es": "Línea 176: el documento hacía que la criatura dijera la fórmula de petición al pie de la letra. Ahora es la persona adulta quien dice «Help me, please!» con la pieza en la mano, y espera."
+        },
+        {
+          "gl": "Liña 180: o último paso de PEER pedíalle á criatura que volvese dicir «on the bridge». Cámbiase por retomar: a persoa adulta volve dicir a frase e deixa o oco.",
+          "es": "Línea 180: el último paso de PEER le pedía a la criatura que volviera a decir «on the bridge». Se cambia por retomar: la persona adulta vuelve a decir la frase y deja el hueco."
+        },
+        {
+          "gl": "«O docente», «o educador», «o profesor» e «o proxenitor» pasan a «a persoa adulta», unha soa; «o infante», «o neno» e «o alumno» pasan a «a criatura».",
+          "es": "«El docente», «el educador», «el profesor» y «el progenitor» pasan a «la persona adulta», una sola; «el infante», «el niño» y «el alumno» pasan a «la criatura»."
+        },
+        {
+          "gl": "O documento non trae transcrición do vocabulario: engadiuse en transcrición americana, que é a voz da app.",
+          "es": "El documento no trae transcripción del vocabulario: se ha añadido en transcripción americana, que es la voz de la app."
+        },
+        {
+          "gl": "Nos textos non se usa a palabra «intervención», que a fe de erratas marca como linguaxe clínica: dise que a persoa adulta entra no xogo.",
+          "es": "En los textos no se usa la palabra «intervención», que la fe de erratas marca como lenguaje clínico: se dice que la persona adulta entra en el juego."
+        }
+      ],
+      "naonEntra": []
+    },
+    {
+      "id": "T3.U3.2",
+      "nivel": "3_4",
+      "titulo": {
+        "gl": "O restaurante da aula e a rutina de servir",
+        "es": "El restaurante del aula y la rutina de servir"
+      },
+      "semanas": 8,
+      "objetivos": [
+        {
+          "gl": "Producir a fórmula social de entrega «Here you are» e a fórmula de cortesía de quen recibe «Thank you» en intercambios reais de alimentos simulados.",
+          "es": "Producir la fórmula social de entrega «Here you are» y la fórmula de cortesía de quien recibe «Thank you» en intercambios reales de alimentos simulados."
+        },
+        {
+          "gl": "Usar ben as preposicións in (para o contido de xerras e pratos fondos) e on (para a superficie de mesas e bandexas).",
+          "es": "Usar bien las preposiciones in (para el contenido de jarras y platos hondos) y on (para la superficie de mesas y bandejas)."
+        },
+        {
+          "gl": "Construír enunciados declarativos de petición co modelo «I want [nome], please».",
+          "es": "Construir enunciados declarativos de petición con el modelo «I want [sustantivo], please»."
+        },
+        {
+          "gl": "Identificar a rima final simple en patróns silábicos CVC (Pan – Can – Man).",
+          "es": "Identificar la rima final simple en patrones silábicos CVC (Pan – Can – Man)."
+        }
+      ],
+      "vocabulario": [
+        {
+          "en": "plate",
+          "ipa": "/pleɪt/",
+          "gl": "prato",
+          "es": "plato",
+          "tier": 1
+        },
+        {
+          "en": "spoon",
+          "ipa": "/spun/",
+          "gl": "culler",
+          "es": "cuchara",
+          "tier": 1
+        },
+        {
+          "en": "fork",
+          "ipa": "/fɔrk/",
+          "gl": "garfo",
+          "es": "tenedor",
+          "tier": 1
+        },
+        {
+          "en": "juice",
+          "ipa": "/dʒus/",
+          "gl": "zume",
+          "es": "zumo",
+          "tier": 1
+        },
+        {
+          "en": "bread",
+          "ipa": "/brɛd/",
+          "gl": "pan",
+          "es": "pan",
+          "tier": 1
+        },
+        {
+          "en": "delicious",
+          "ipa": "/dɪˈlɪʃəs/",
+          "gl": "delicioso",
+          "es": "delicioso",
+          "tier": 2
+        },
+        {
+          "en": "hungry",
+          "ipa": "/ˈhʌŋɡri/",
+          "gl": "con fame",
+          "es": "con hambre",
+          "tier": 2
+        },
+        {
+          "en": "empty",
+          "ipa": "/ˈɛmpti/",
+          "gl": "baleiro",
+          "es": "vacío",
+          "tier": 2
+        },
+        {
+          "en": "full",
+          "ipa": "/fʊl/",
+          "gl": "cheo",
+          "es": "lleno",
+          "tier": 2
+        },
+        {
+          "en": "pour",
+          "ipa": "/pɔr/",
+          "gl": "verter",
+          "es": "verter",
+          "tier": 2
+        }
+      ],
+      "formulas": [
+        {
+          "en": "What do you want?",
+          "gl": "Que queres?",
+          "es": "¿Qué quieres?"
+        },
+        {
+          "en": "Here you are",
+          "gl": "Aquí tes",
+          "es": "Aquí tienes"
+        },
+        {
+          "en": "Thank you",
+          "gl": "Grazas",
+          "es": "Gracias"
+        },
+        {
+          "en": "You are welcome",
+          "gl": "De nada",
+          "es": "De nada"
+        },
+        {
+          "en": "Delicious!",
+          "gl": "Delicioso!",
+          "es": "¡Delicioso!"
+        }
+      ],
+      "estructuras": [
+        {
+          "en": "More juice in my cup.",
+          "gl": "Máis zume na miña cunca.",
+          "es": "Más zumo en mi taza."
+        },
+        {
+          "en": "A full plate on the table.",
+          "gl": "Un prato cheo enriba da mesa.",
+          "es": "Un plato lleno encima de la mesa."
+        }
+      ],
+      "concienciaFonoloxica": {
+        "gl": "Segmentación con palmadas de palabras de dúas sílabas (ap-ple, wa-ter, ta-ble) e discriminación da rima en cancións de cociña: «Stir the pot, nice and hot!». No obxectivo 4, rima final simple en patróns CVC: Pan – Can – Man.",
+        "es": "Segmentación con palmadas de palabras de dos sílabas (ap-ple, wa-ter, ta-ble) y discriminación de la rima en canciones de cocina: «Stir the pot, nice and hot!». En el objetivo 4, rima final simple en patrones CVC: Pan – Can – Man."
+      },
+      "rimas": [
+        {
+          "en": "Stir the pot, nice and hot!",
+          "gl": "Remexe a pota, ben quentiña!",
+          "es": "¡Remueve la olla, bien calentita!"
+        },
+        {
+          "en": "Pan – Can – Man",
+          "gl": "Tixola – lata – home",
+          "es": "Sartén – lata – hombre"
+        }
+      ],
+      "xogoSociodramatico": {
+        "escenario": {
+          "gl": "Recuncho do fogar e cociña: cociña infantil con pratos de louza branca irrompibles, xerras de metal e mandís de tea.",
+          "es": "Rincón del hogar y cocina: cocina infantil con platos de loza blanca irrompibles, jarras de metal y delantales de tela."
+        },
+        "intervencion": {
+          "gl": "A persoa adulta séntase á mesa como comensal: «Good morning! I am very hungry. Can I have some soup, please?». Guía a criatura para que sirva co cullerón: «Pour the soup in the plate. Here you are! Thank you!».",
+          "es": "La persona adulta se sienta a la mesa como comensal: «Good morning! I am very hungry. Can I have some soup, please?». Guía a la criatura para que sirva con el cucharón: «Pour the soup in the plate. Here you are! Thank you!»."
+        },
+        "resolucion": {
+          "gl": "O documento non trae resolución de conflito para esta unidade.",
+          "es": "El documento no trae resolución de conflicto para esta unidad."
+        }
+      },
+      "frasesAdulta": [
+        {
+          "en": "Good morning! I am very hungry. Can I have some soup, please?",
+          "gl": "Bos días! Teño moita fame. Pódesme dar un pouco de sopa, por favor?",
+          "es": "¡Buenos días! Tengo mucha hambre. ¿Me puedes dar un poco de sopa, por favor?"
+        },
+        {
+          "en": "Pour the soup in the plate. Here you are! Thank you!",
+          "gl": "Bota a sopa no prato. Aquí tes! Grazas!",
+          "es": "Echa la sopa en el plato. ¡Aquí tienes! ¡Gracias!"
+        },
+        {
+          "en": "Can you pass the bread? Here you are! Thank you!",
+          "gl": "Pásasme o pan? Aquí tes! Grazas!",
+          "es": "¿Me pasas el pan? ¡Aquí tienes! ¡Gracias!"
+        }
+      ],
+      "realia": [
+        {
+          "gl": "Cociña infantil",
+          "es": "Cocina infantil"
+        },
+        {
+          "gl": "Pratos de louza branca irrompibles",
+          "es": "Platos de loza blanca irrompibles"
+        },
+        {
+          "gl": "Xerras de metal",
+          "es": "Jarras de metal"
+        },
+        {
+          "gl": "Mandís de tea",
+          "es": "Delantales de tela"
+        },
+        {
+          "gl": "Un cullerón",
+          "es": "Un cucharón"
+        },
+        {
+          "gl": "Na casa: a xerra de auga e a bandexa do pan da mesa",
+          "es": "En casa: la jarra de agua y la bandeja del pan de la mesa"
+        }
+      ],
+      "familia": {
+        "gl": "Comida de verdade en familia: ao pasar a xerra de auga ou a bandexa do pan na mesa, a persoa adulta modela «Can you pass the bread? Here you are! Thank you!», animando a interacción sen obrigar.",
+        "es": "Comida de verdad en familia: al pasar la jarra de agua o la bandeja del pan en la mesa, la persona adulta modela «Can you pass the bread? Here you are! Thank you!», animando la interacción sin obligar."
+      },
+      "fonte": "curriculo-vocabulario-infantil-2-6.txt:181-198",
+      "erratasAplicadas": [
+        {
+          "gl": "Quitáronse os números de nota pegados ás frases (12, 1).",
+          "es": "Se han quitado los números de nota pegados a las frases (12, 1)."
+        },
+        {
+          "gl": "«O docente», «o educador», «o profesor» e «o proxenitor» pasan a «a persoa adulta», unha soa; «o infante», «o neno» e «o alumno» pasan a «a criatura».",
+          "es": "«El docente», «el educador», «el profesor» y «el progenitor» pasan a «la persona adulta», una sola; «el infante», «el niño» y «el alumno» pasan a «la criatura»."
+        },
+        {
+          "gl": "O documento non trae transcrición do vocabulario: engadiuse en transcrición americana, que é a voz da app.",
+          "es": "El documento no trae transcripción del vocabulario: se ha añadido en transcripción americana, que es la voz de la app."
+        },
+        {
+          "gl": "Nos textos non se usa a palabra «intervención», que a fe de erratas marca como linguaxe clínica: dise que a persoa adulta entra no xogo.",
+          "es": "En los textos no se usa la palabra «intervención», que la fe de erratas marca como lenguaje clínico: se dice que la persona adulta entra en el juego."
+        }
+      ],
+      "naonEntra": []
+    },
+    {
+      "id": "T3.U4.1",
+      "nivel": "4_5",
+      "titulo": {
+        "gl": "A clínica veterinaria e a causalidade fisiolóxica",
+        "es": "La clínica veterinaria y la causalidad fisiológica"
+      },
+      "semanas": 8,
+      "objetivos": [
+        {
+          "gl": "Formular explicacións causais con conectores subordinados («The puppy is crying because his leg is hurt»).",
+          "es": "Formular explicaciones causales con conectores subordinados («The puppy is crying because his leg is hurt»)."
+        },
+        {
+          "gl": "Interpretar e aplicar as preposicións de posición tridimensional behind e in front of.",
+          "es": "Interpretar y aplicar las preposiciones de posición tridimensional behind e in front of."
+        },
+        {
+          "gl": "Negociar papeis e coordinar accións de ficción compartida con «Let's pretend I am the vet and you are the puppy».",
+          "es": "Negociar papeles y coordinar acciones de ficción compartida con «Let's pretend I am the vet and you are the puppy»."
+        },
+        {
+          "gl": "Identificar de oído a aliteración sibilante fricativa /s/ («Seven sick snakes sleep softly»).",
+          "es": "Identificar de oído la aliteración sibilante fricativa /s/ («Seven sick snakes sleep softly»)."
+        }
+      ],
+      "vocabulario": [
+        {
+          "en": "dog",
+          "ipa": "/dɔɡ/",
+          "gl": "can",
+          "es": "perro",
+          "tier": 1
+        },
+        {
+          "en": "cat",
+          "ipa": "/kæt/",
+          "gl": "gato",
+          "es": "gato",
+          "tier": 1
+        },
+        {
+          "en": "hurt",
+          "ipa": "/hɝt/",
+          "gl": "doer, facer dano",
+          "es": "doler, hacer daño",
+          "tier": 1
+        },
+        {
+          "en": "leg",
+          "ipa": "/lɛɡ/",
+          "gl": "perna",
+          "es": "pierna",
+          "tier": 1
+        },
+        {
+          "en": "doctor / vet",
+          "ipa": "/ˈdɑktɚ/, /vɛt/",
+          "gl": "doutor / veterinario",
+          "es": "doctor / veterinario",
+          "tier": 1
+        },
+        {
+          "en": "gentle",
+          "ipa": "/ˈdʒɛntəl/",
+          "gl": "con delicadeza",
+          "es": "con delicadeza",
+          "tier": 2
+        },
+        {
+          "en": "bandage",
+          "ipa": "/ˈbændɪdʒ/",
+          "gl": "venda",
+          "es": "venda",
+          "tier": 2
+        },
+        {
+          "en": "examine",
+          "ipa": "/ɪɡˈzæmɪn/",
+          "gl": "examinar",
+          "es": "examinar",
+          "tier": 2
+        },
+        {
+          "en": "healthy",
+          "ipa": "/ˈhɛlθi/",
+          "gl": "san",
+          "es": "sano",
+          "tier": 2
+        },
+        {
+          "en": "temperature",
+          "ipa": "/ˈtɛmpərətʃɚ/",
+          "gl": "temperatura",
+          "es": "temperatura",
+          "tier": 2
+        }
+      ],
+      "formulas": [
+        {
+          "en": "Can I help you?",
+          "gl": "Podo axudarte?",
+          "es": "¿Puedo ayudarte?"
+        },
+        {
+          "en": "Where does it hurt?",
+          "gl": "Onde che doe?",
+          "es": "¿Dónde te duele?"
+        },
+        {
+          "en": "Wait for me",
+          "gl": "Agárdame",
+          "es": "Espérame"
+        },
+        {
+          "en": "Do not worry, be gentle",
+          "gl": "Non te preocupes, con delicadeza",
+          "es": "No te preocupes, con delicadeza"
+        }
+      ],
+      "estructuras": [
+        {
+          "en": "Why are you putting the bandage? Because the cat is sick.",
+          "gl": "Por que lle pos a venda? Porque o gato está malo.",
+          "es": "¿Por qué le pones la venda? Porque el gato está malito."
+        },
+        {
+          "en": "First we check the heart, then we wrap the bandage.",
+          "gl": "Primeiro miramos o corazón e despois poñemos a venda.",
+          "es": "Primero miramos el corazón y después ponemos la venda."
+        }
+      ],
+      "concienciaFonoloxica": {
+        "gl": "Aliteración de /s/: «Six sick cats sitting on the soft sofa» (o obxectivo 4 usa «Seven sick snakes sleep softly»). Illamento do ataque silábico (onset) en palabras do xogo da clínica: /d/ en doctor, /b/ en bandage.",
+        "es": "Aliteración de /s/: «Six sick cats sitting on the soft sofa» (el objetivo 4 usa «Seven sick snakes sleep softly»). Aislamiento del ataque silábico (onset) en palabras del juego de la clínica: /d/ en doctor, /b/ en bandage."
+      },
+      "rimas": [
+        {
+          "en": "Seven sick snakes sleep softly.",
+          "gl": "Sete serpes malas dormen amodiño.",
+          "es": "Siete serpientes malitas duermen despacito."
+        },
+        {
+          "en": "Six sick cats sitting on the soft sofa.",
+          "gl": "Seis gatos malos sentados no sofá brando.",
+          "es": "Seis gatos malitos sentados en el sofá blandito."
+        }
+      ],
+      "xogoSociodramatico": {
+        "escenario": {
+          "gl": "Recuncho da clínica veterinaria: mesa da clínica de xogo con estetoscopios de verdade, vendas elásticas de algodón, xiringas de plástico sen agulla e peluches de animais feridos.",
+          "es": "Rincón de la clínica veterinaria: mesa de la clínica de juego con estetoscopios de verdad, vendas elásticas de algodón, jeringas de plástico sin aguja y peluches de animales heridos."
+        },
+        "intervencion": {
+          "gl": "A persoa adulta achega un peluche vendado: «Doctor! The dog is sad. Why is he sad?». Agarda a explicación causal da criatura, por exemplo «Because his paw is broken!». A persoa adulta amplía: «Yes! His paw is hurt because he fell down. Let's put a soft bandage on it».",
+          "es": "La persona adulta acerca un peluche vendado: «Doctor! The dog is sad. Why is he sad?». Espera la explicación causal de la criatura, por ejemplo «Because his paw is broken!». La persona adulta amplía: «Yes! His paw is hurt because he fell down. Let's put a soft bandage on it»."
+        },
+        "resolucion": {
+          "gl": "O documento non trae resolución de conflito para esta unidade.",
+          "es": "El documento no trae resolución de conflicto para esta unidad."
+        }
+      },
+      "frasesAdulta": [
+        {
+          "en": "Doctor! The dog is sad. Why is he sad?",
+          "gl": "Doutor! O can está triste. Por que está triste?",
+          "es": "¡Doctor! El perro está triste. ¿Por qué está triste?"
+        },
+        {
+          "en": "Yes! His paw is hurt because he fell down. Let's put a soft bandage on it.",
+          "gl": "Si! Dóelle a pata porque caeu. Poñámoslle unha venda suave.",
+          "es": "¡Sí! Le duele la pata porque se cayó. Vamos a ponerle una venda suave."
+        },
+        {
+          "en": "The little kitten is scared of the doctor.",
+          "gl": "O gatiño ten medo do doutor.",
+          "es": "El gatito tiene miedo del doctor."
+        },
+        {
+          "en": "Do you remember when it rained a lot yesterday? How did you feel?",
+          "gl": "Lembras cando onte choveu moito? Como te sentiches?",
+          "es": "¿Te acuerdas de cuando ayer llovió mucho? ¿Cómo te sentiste?"
+        }
+      ],
+      "realia": [
+        {
+          "gl": "Estetoscopios de verdade",
+          "es": "Estetoscopios de verdad"
+        },
+        {
+          "gl": "Vendas elásticas de algodón",
+          "es": "Vendas elásticas de algodón"
+        },
+        {
+          "gl": "Xiringas de plástico sen agulla",
+          "es": "Jeringas de plástico sin aguja"
+        },
+        {
+          "gl": "Peluches de animais feridos ou vendados",
+          "es": "Peluches de animales heridos o vendados"
+        },
+        {
+          "gl": "Na casa: un conto de animais",
+          "es": "En casa: un cuento de animales"
+        }
+      ],
+      "familia": {
+        "gl": "Pregunta CROWD de distanciamento (Distancing), durante a lectura dun conto de animais: «The little kitten is scared of the doctor». A ponte vai a unha experiencia da casa: «Do you remember when it rained a lot yesterday? How did you feel?».",
+        "es": "Pregunta CROWD de distanciamiento (Distancing), durante la lectura de un cuento de animales: «The little kitten is scared of the doctor». El puente va a una experiencia de casa: «Do you remember when it rained a lot yesterday? How did you feel?»."
+      },
+      "fonte": "curriculo-vocabulario-infantil-2-6.txt:200-217",
+      "erratasAplicadas": [
+        {
+          "gl": "Quitáronse os números de nota pegados ás frases (22, 12, 14).",
+          "es": "Se han quitado los números de nota pegados a las frases (22, 12, 14)."
+        },
+        {
+          "gl": "Liña 217: a pregunta de distanciamento levaba a lembranza a unha visita ao pediatra. Cámbiase por unha experiencia da casa que non é sanitaria; a frase sae do propio documento (liña 341, exemplo de distanciamento): «Do you remember when it rained a lot yesterday? How did you feel?».",
+          "es": "Línea 217: la pregunta de distanciamiento llevaba el recuerdo a una visita al pediatra. Se cambia por una experiencia de casa que no es sanitaria; la frase sale del propio documento (línea 341, ejemplo de distanciamiento): «Do you remember when it rained a lot yesterday? How did you feel?»."
+        },
+        {
+          "gl": "Linguaxe clínica fóra (fe de erratas, «En los cinco»): «mesa de auscultación» pasa a «mesa da clínica de xogo» e «palabras médicas» pasa a «palabras do xogo da clínica». A clínica veterinaria queda como xogo simbólico.",
+          "es": "Lenguaje clínico fuera (fe de erratas, «En los cinco»): «mesa de auscultación» pasa a «mesa de la clínica de juego» y «palabras médicas» pasa a «palabras del juego de la clínica». La clínica veterinaria se queda como juego simbólico."
+        },
+        {
+          "gl": "«O docente», «o educador», «o profesor» e «o proxenitor» pasan a «a persoa adulta», unha soa; «o infante», «o neno» e «o alumno» pasan a «a criatura».",
+          "es": "«El docente», «el educador», «el profesor» y «el progenitor» pasan a «la persona adulta», una sola; «el infante», «el niño» y «el alumno» pasan a «la criatura»."
+        },
+        {
+          "gl": "O documento non trae transcrición do vocabulario: engadiuse en transcrición americana, que é a voz da app.",
+          "es": "El documento no trae transcripción del vocabulario: se ha añadido en transcripción americana, que es la voz de la app."
+        },
+        {
+          "gl": "Nos textos non se usa a palabra «intervención», que a fe de erratas marca como linguaxe clínica: dise que a persoa adulta entra no xogo.",
+          "es": "En los textos no se usa la palabra «intervención», que la fe de erratas marca como lenguaje clínico: se dice que la persona adulta entra en el juego."
+        }
+      ],
+      "naonEntra": []
+    },
+    {
+      "id": "T3.U4.2",
+      "nivel": "4_5",
+      "titulo": {
+        "gl": "A estación meteorolóxica e a roupa do explorador",
+        "es": "La estación meteorológica y la ropa del explorador"
+      },
+      "semanas": 8,
+      "objetivos": [
+        {
+          "gl": "Xustificar a escolla de roupa de abrigo e calzado segundo un tempo simulado («I put on my boots because it is raining outside»).",
+          "es": "Justificar la elección de ropa de abrigo y calzado según un tiempo simulado («I put on my boots because it is raining outside»)."
+        },
+        {
+          "gl": "Usar preposicións espaciais dinámicas (into, out of, over).",
+          "es": "Usar preposiciones espaciales dinámicas (into, out of, over)."
+        },
+        {
+          "gl": "Negociar o uso compartido do equipamento de exterior con fórmulas de colaboración («Let's share the umbrella»).",
+          "es": "Negociar el uso compartido del equipamiento de exterior con fórmulas de colaboración («Let's share the umbrella»)."
+        },
+        {
+          "gl": "Discriminar de oído a aliteración coa vogal curta aberta /æ/ fronte a consoantes en rimas do tempo.",
+          "es": "Discriminar de oído la aliteración con la vocal corta abierta /æ/ frente a consonantes en rimas del tiempo."
+        }
+      ],
+      "vocabulario": [
+        {
+          "en": "rain",
+          "ipa": "/reɪn/",
+          "gl": "choiva",
+          "es": "lluvia",
+          "tier": 1
+        },
+        {
+          "en": "sun",
+          "ipa": "/sʌn/",
+          "gl": "sol",
+          "es": "sol",
+          "tier": 1
+        },
+        {
+          "en": "coat",
+          "ipa": "/koʊt/",
+          "gl": "abrigo",
+          "es": "abrigo",
+          "tier": 1
+        },
+        {
+          "en": "boots",
+          "ipa": "/buts/",
+          "gl": "botas",
+          "es": "botas",
+          "tier": 1
+        },
+        {
+          "en": "hat",
+          "ipa": "/hæt/",
+          "gl": "sombreiro",
+          "es": "sombrero",
+          "tier": 1
+        },
+        {
+          "en": "windy",
+          "ipa": "/ˈwɪndi/",
+          "gl": "con vento",
+          "es": "con viento",
+          "tier": 2
+        },
+        {
+          "en": "stormy",
+          "ipa": "/ˈstɔrmi/",
+          "gl": "de treboada",
+          "es": "de tormenta",
+          "tier": 2
+        },
+        {
+          "en": "muddy",
+          "ipa": "/ˈmʌdi/",
+          "gl": "enlamado",
+          "es": "embarrado",
+          "tier": 2
+        },
+        {
+          "en": "splashy",
+          "ipa": "/ˈsplæʃi/",
+          "gl": "que salpica",
+          "es": "que salpica",
+          "tier": 2
+        },
+        {
+          "en": "protect",
+          "ipa": "/prəˈtɛkt/",
+          "gl": "protexer",
+          "es": "proteger",
+          "tier": 2
+        }
+      ],
+      "formulas": [
+        {
+          "en": "Look outside!",
+          "gl": "Mira fóra!",
+          "es": "¡Mira fuera!"
+        },
+        {
+          "en": "It is raining hard",
+          "gl": "Chove con forza",
+          "es": "Llueve con fuerza"
+        },
+        {
+          "en": "Come under my umbrella",
+          "gl": "Ven debaixo do meu paraugas",
+          "es": "Ven debajo de mi paraguas"
+        },
+        {
+          "en": "Are you ready?",
+          "gl": "Preparados?",
+          "es": "¿Preparados?"
+        }
+      ],
+      "estructuras": [
+        {
+          "en": "When it rains, we need boots.",
+          "gl": "Cando chove, necesitamos botas.",
+          "es": "Cuando llueve, necesitamos botas."
+        },
+        {
+          "en": "Put your feet into the boots.",
+          "gl": "Mete os pés nas botas.",
+          "es": "Mete los pies en las botas."
+        }
+      ],
+      "concienciaFonoloxica": {
+        "gl": "Rima (o documento chámaa acumulativa): «Rain, rain, go away, come again another day». Discriminación de rima CVC: Hat – Cat – Mat – Wet. O obxectivo 4 pide discriminar a aliteración coa vogal curta aberta /æ/ fronte a consoantes en rimas do tempo.",
+        "es": "Rima (el documento la llama acumulativa): «Rain, rain, go away, come again another day». Discriminación de rima CVC: Hat – Cat – Mat – Wet. El objetivo 4 pide discriminar la aliteración con la vocal corta abierta /æ/ frente a consonantes en rimas del tiempo."
+      },
+      "rimas": [
+        {
+          "en": "Rain, rain, go away, come again another day.",
+          "gl": "Choiva, choiva, vaite xa, volve outro día.",
+          "es": "Lluvia, lluvia, vete ya, vuelve otro día."
+        },
+        {
+          "en": "Hat – Cat – Mat – Wet",
+          "gl": "Sombreiro – gato – alfombriña – mollado",
+          "es": "Sombrero – gato – alfombrilla – mojado"
+        }
+      ],
+      "xogoSociodramatico": {
+        "escenario": {
+          "gl": "Recuncho do explorador do tempo: panel con proxeccións luminosas de choiva e vento simulado con ventiladores suaves; percheiros con chuvasqueiros de verdade, botas de auga e paraugas pequenos.",
+          "es": "Rincón del explorador del tiempo: panel con proyecciones luminosas de lluvia y viento simulado con ventiladores suaves; percheros con chubasqueros de verdad, botas de agua y paraguas pequeños."
+        },
+        "intervencion": {
+          "gl": "A persoa adulta pon o son dos tronos: «Listen! A stormy day! Put on your yellow boots! Why do we need boots?». Unha criatura pode responder «Because of the water!». A persoa adulta: «That's right, because the water is deep and wet! Let's jump over the puddle!».",
+          "es": "La persona adulta pone el sonido de los truenos: «Listen! A stormy day! Put on your yellow boots! Why do we need boots?». Una criatura puede responder «Because of the water!». La persona adulta: «That's right, because the water is deep and wet! Let's jump over the puddle!»."
+        },
+        "resolucion": {
+          "gl": "O documento non trae resolución de conflito para esta unidade.",
+          "es": "El documento no trae resolución de conflicto para esta unidad."
+        }
+      },
+      "frasesAdulta": [
+        {
+          "en": "Listen! A stormy day! Put on your yellow boots! Why do we need boots?",
+          "gl": "Escoita! Un día de treboada! Ponte as botas amarelas! Por que necesitamos botas?",
+          "es": "¡Escucha! ¡Un día de tormenta! ¡Ponte las botas amarillas! ¿Por qué necesitamos botas?"
+        },
+        {
+          "en": "That's right, because the water is deep and wet! Let's jump over the puddle!",
+          "gl": "Iso é, porque a auga é fonda e mollada! Saltemos por riba da poza!",
+          "es": "¡Eso es, porque el agua es profunda y moja! ¡Vamos a saltar por encima del charco!"
+        },
+        {
+          "en": "What is happening to the sky today? What clothes should we choose?",
+          "gl": "Que lle pasa hoxe ao ceo? Que roupa escollemos?",
+          "es": "¿Qué le pasa hoy al cielo? ¿Qué ropa elegimos?"
+        }
+      ],
+      "realia": [
+        {
+          "gl": "Panel con proxeccións luminosas de choiva",
+          "es": "Panel con proyecciones luminosas de lluvia"
+        },
+        {
+          "gl": "Ventiladores suaves",
+          "es": "Ventiladores suaves"
+        },
+        {
+          "gl": "Percheiros con chuvasqueiros de verdade",
+          "es": "Percheros con chubasqueros de verdad"
+        },
+        {
+          "gl": "Botas de auga",
+          "es": "Botas de agua"
+        },
+        {
+          "gl": "Paraugas pequenos",
+          "es": "Paraguas pequeños"
+        },
+        {
+          "gl": "Na casa: a fiestra",
+          "es": "En casa: la ventana"
+        }
+      ],
+      "familia": {
+        "gl": "Pregunta CROWD aberta (Open-ended), mirando pola fiestra antes de saír á rúa: «What is happening to the sky today? What clothes should we choose?».",
+        "es": "Pregunta CROWD abierta (Open-ended), mirando por la ventana antes de salir a la calle: «What is happening to the sky today? What clothes should we choose?»."
+      },
+      "fonte": "curriculo-vocabulario-infantil-2-6.txt:218-235",
+      "erratasAplicadas": [
+        {
+          "gl": "Quitáronse os números de nota pegados ás frases (22, 12, 15, 14).",
+          "es": "Se han quitado los números de nota pegados a las frases (22, 12, 15, 14)."
+        },
+        {
+          "gl": "«O docente», «o educador», «o profesor» e «o proxenitor» pasan a «a persoa adulta», unha soa; «o infante», «o neno» e «o alumno» pasan a «a criatura».",
+          "es": "«El docente», «el educador», «el profesor» y «el progenitor» pasan a «la persona adulta», una sola; «el infante», «el niño» y «el alumno» pasan a «la criatura»."
+        },
+        {
+          "gl": "O documento non trae transcrición do vocabulario: engadiuse en transcrición americana, que é a voz da app.",
+          "es": "El documento no trae transcripción del vocabulario: se ha añadido en transcripción americana, que es la voz de la app."
+        },
+        {
+          "gl": "Nos textos non se usa a palabra «intervención», que a fe de erratas marca como linguaxe clínica: dise que a persoa adulta entra no xogo.",
+          "es": "En los textos no se usa la palabra «intervención», que la fe de erratas marca como lenguaje clínico: se dice que la persona adulta entra en el juego."
+        }
+      ],
+      "naonEntra": []
+    },
+    {
+      "id": "T3.U5.1",
+      "nivel": "5_6",
+      "titulo": {
+        "gl": "O estudio de arte cooperativo e a resolución de conflitos",
+        "es": "El estudio de arte cooperativo y la resolución de conflictos"
+      },
+      "semanas": 8,
+      "objetivos": [
+        {
+          "gl": "Empregar linguaxe argumentativa estruturada para resolver a posesión de materiais compartidos («I was using the scissors first, but you can have them next»).",
+          "es": "Emplear lenguaje argumentativo estructurado para resolver la posesión de materiales compartidos («I was using the scissors first, but you can have them next»)."
+        },
+        {
+          "gl": "Describir estados emocionais e atributos físicos con preposicións complexas: between, next to, across.",
+          "es": "Describir estados emocionales y atributos físicos con preposiciones complejas: between, next to, across."
+        },
+        {
+          "gl": "Construír oracións coordinadas de contraste («I like this painting, but it needs more red paint on top»).",
+          "es": "Construir oraciones coordinadas de contraste («I like this painting, but it needs more red paint on top»)."
+        },
+        {
+          "gl": "Manipular fonemas omitindo e substituíndo en xogo a consoante inicial de palabras CVC (cambiar /p/ de pen por /t/ dá ten).",
+          "es": "Manipular fonemas omitiendo y sustituyendo en juego la consonante inicial de palabras CVC (cambiar /p/ de pen por /t/ da ten)."
+        }
+      ],
+      "vocabulario": [
+        {
+          "en": "paint",
+          "ipa": "/peɪnt/",
+          "gl": "pintura",
+          "es": "pintura",
+          "tier": 1
+        },
+        {
+          "en": "paper",
+          "ipa": "/ˈpeɪpɚ/",
+          "gl": "papel",
+          "es": "papel",
+          "tier": 1
+        },
+        {
+          "en": "scissors",
+          "ipa": "/ˈsɪzɚz/",
+          "gl": "tesoiras",
+          "es": "tijeras",
+          "tier": 1
+        },
+        {
+          "en": "cut",
+          "ipa": "/kʌt/",
+          "gl": "cortar",
+          "es": "cortar",
+          "tier": 1
+        },
+        {
+          "en": "draw",
+          "ipa": "/drɔ/",
+          "gl": "debuxar",
+          "es": "dibujar",
+          "tier": 1
+        },
+        {
+          "en": "bright",
+          "ipa": "/braɪt/",
+          "gl": "vivo, brillante",
+          "es": "vivo, brillante",
+          "tier": 2
+        },
+        {
+          "en": "sticky",
+          "ipa": "/ˈstɪki/",
+          "gl": "pegañento",
+          "es": "pegajoso",
+          "tier": 2
+        },
+        {
+          "en": "creative",
+          "ipa": "/kriˈeɪtɪv/",
+          "gl": "creativo",
+          "es": "creativo",
+          "tier": 2
+        },
+        {
+          "en": "blend",
+          "ipa": "/blɛnd/",
+          "gl": "mesturar",
+          "es": "mezclar",
+          "tier": 2
+        },
+        {
+          "en": "careful",
+          "ipa": "/ˈkɛrfəl/",
+          "gl": "coidadoso",
+          "es": "cuidadoso",
+          "tier": 2
+        },
+        {
+          "en": "smooth",
+          "ipa": "/smuð/",
+          "gl": "liso",
+          "es": "liso",
+          "tier": 2
+        }
+      ],
+      "formulas": [
+        {
+          "en": "Can we trade?",
+          "gl": "Facemos un troco?",
+          "es": "¿Hacemos un cambio?"
+        },
+        {
+          "en": "I am not finished yet",
+          "gl": "Aínda non rematei",
+          "es": "Todavía no he terminado"
+        },
+        {
+          "en": "It is fair to share",
+          "gl": "É xusto compartir",
+          "es": "Es justo compartir"
+        },
+        {
+          "en": "I feel proud of our work",
+          "gl": "Que orgullo do noso traballo",
+          "es": "Qué orgullo de nuestro trabajo"
+        }
+      ],
+      "estructuras": [
+        {
+          "en": "I am blending yellow and blue because I want to make green.",
+          "gl": "Estou mesturando amarelo e azul porque quero facer verde.",
+          "es": "Estoy mezclando amarillo y azul porque quiero hacer verde."
+        },
+        {
+          "en": "The brush is between the cup and the paper.",
+          "gl": "O pincel está entre a cunca e o papel.",
+          "es": "El pincel está entre la taza y el papel."
+        }
+      ],
+      "concienciaFonoloxica": {
+        "gl": "Substitución de ataques silábicos: Red – Bed – Fed; Pot – Dot – Hot. Discriminación fina de pares mínimos vocálicos: pen /pɛn/ fronte a pan /pæn/.",
+        "es": "Sustitución de ataques silábicos: Red – Bed – Fed; Pot – Dot – Hot. Discriminación fina de pares mínimos vocálicos: pen /pɛn/ frente a pan /pæn/."
+      },
+      "rimas": [
+        {
+          "en": "Red – Bed – Fed",
+          "gl": "Vermello – cama – alimentado",
+          "es": "Rojo – cama – alimentado"
+        },
+        {
+          "en": "Pot – Dot – Hot",
+          "gl": "Pota – punto – quente",
+          "es": "Olla – punto – caliente"
+        }
+      ],
+      "xogoSociodramatico": {
+        "escenario": {
+          "gl": "Mesa de arte e creación: cabaletes dobres onde dúas criaturas comparten unha soa paleta de témperas e tres pinceis.",
+          "es": "Mesa de arte y creación: caballetes dobles donde dos criaturas comparten una sola paleta de témperas y tres pinceles."
+        },
+        "intervencion": {
+          "gl": "A persoa adulta ve que dúas criaturas dubidan polo bote de pintura azul. Entra ofrecendo a fórmula mediadora: di en voz alta, mirando para as dúas, «Can I use the blue paint next to you?», e agarda. Cando unha criatura fai a petición, a outra pode responder «Yes, here you are!». A persoa adulta reforza: «Thank you for being generous and sharing».",
+          "es": "La persona adulta ve que dos criaturas dudan por el bote de pintura azul. Entra ofreciendo la fórmula mediadora: dice en voz alta, mirando a las dos, «Can I use the blue paint next to you?», y espera. Cuando una criatura hace la petición, la otra puede responder «Yes, here you are!». La persona adulta refuerza: «Thank you for being generous and sharing»."
+        },
+        "resolucion": {
+          "gl": "O documento non separa a resolución nesta unidade: a mediación do conflito polo bote de pintura azul é a propia escena. O obxectivo 1 dá a fórmula argumentativa: «I was using the scissors first, but you can have them next».",
+          "es": "El documento no separa la resolución en esta unidad: la mediación del conflicto por el bote de pintura azul es la propia escena. El objetivo 1 da la fórmula argumentativa: «I was using the scissors first, but you can have them next»."
+        }
+      },
+      "frasesAdulta": [
+        {
+          "en": "Can I use the blue paint next to you?",
+          "gl": "Podo usar a pintura azul que tes ao lado?",
+          "es": "¿Puedo usar la pintura azul que tienes al lado?"
+        },
+        {
+          "en": "Thank you for being generous and sharing.",
+          "gl": "Grazas por ser xenerosa ou xeneroso e compartir.",
+          "es": "Gracias por ser generosa o generoso y compartir."
+        },
+        {
+          "en": "We mixed the red and the blue, so the new color is…",
+          "gl": "Mesturamos o vermello e o azul, así que a cor nova é…",
+          "es": "Mezclamos el rojo y el azul, así que el color nuevo es…"
+        }
+      ],
+      "realia": [
+        {
+          "gl": "Cabaletes dobres",
+          "es": "Caballetes dobles"
+        },
+        {
+          "gl": "Unha soa paleta de témperas",
+          "es": "Una sola paleta de témperas"
+        },
+        {
+          "gl": "Tres pinceis",
+          "es": "Tres pinceles"
+        },
+        {
+          "gl": "Un bote de pintura azul",
+          "es": "Un bote de pintura azul"
+        },
+        {
+          "gl": "Na casa: debuxos feitos en familia",
+          "es": "En casa: dibujos hechos en familia"
+        }
+      ],
+      "familia": {
+        "gl": "Pregunta CROWD de completar (Completion), mirando debuxos feitos en familia: «We mixed the red and the blue, so the new color is…», e a persoa adulta deixa o oco (purple: violeta).",
+        "es": "Pregunta CROWD de completar (Completion), mirando dibujos hechos en familia: «We mixed the red and the blue, so the new color is…», y la persona adulta deja el hueco (purple: morado)."
+      },
+      "fonte": "curriculo-vocabulario-infantil-2-6.txt:237-254",
+      "erratasAplicadas": [
+        {
+          "gl": "Quitáronse os números de nota pegados ás frases (12, 22, 21, 14).",
+          "es": "Se han quitado los números de nota pegados a las frases (12, 22, 21, 14)."
+        },
+        {
+          "gl": "Liña 252: o guión levaba nomes de criaturas. Quítanse: fálase de «dúas criaturas», «unha» e «a outra».",
+          "es": "Línea 252: el guion llevaba nombres de criaturas. Se quitan: se habla de «dos criaturas», «una» y «la otra»."
+        },
+        {
+          "gl": "Liña 252: a persoa adulta dáballe a unha criatura a pregunta exacta para que lla fixese á outra. Como na liña 176, agora é a persoa adulta quen di a fórmula en voz alta e agarda. Isto non o di a fe de erratas para esta liña: aplicouse pola regra xeral de non lle pedir á criatura que diga unha frase dada.",
+          "es": "Línea 252: la persona adulta le daba a una criatura la pregunta exacta para que se la hiciera a la otra. Como en la línea 176, ahora es la persona adulta quien dice la fórmula en voz alta y espera. Esto no lo dice la fe de erratas para esta línea: se ha aplicado por la regla general de no pedir a la criatura que diga una frase dada."
+        },
+        {
+          "gl": "Liña 249: «Pen /pen/» pasa á transcrición americana «/pɛn/».",
+          "es": "Línea 249: «Pen /pen/» pasa a la transcripción americana «/pɛn/»."
+        },
+        {
+          "gl": "«O docente», «o educador», «o profesor» e «o proxenitor» pasan a «a persoa adulta», unha soa; «o infante», «o neno» e «o alumno» pasan a «a criatura».",
+          "es": "«El docente», «el educador», «el profesor» y «el progenitor» pasan a «la persona adulta», una sola; «el infante», «el niño» y «el alumno» pasan a «la criatura»."
+        },
+        {
+          "gl": "O documento non trae transcrición do vocabulario: engadiuse en transcrición americana, que é a voz da app.",
+          "es": "El documento no trae transcripción del vocabulario: se ha añadido en transcripción americana, que es la voz de la app."
+        },
+        {
+          "gl": "Nos textos non se usa a palabra «intervención», que a fe de erratas marca como linguaxe clínica: dise que a persoa adulta entra no xogo.",
+          "es": "En los textos no se usa la palabra «intervención», que la fe de erratas marca como lenguaje clínico: se dice que la persona adulta entra en el juego."
+        }
+      ],
+      "naonEntra": []
+    },
+    {
+      "id": "T3.U5.2",
+      "nivel": "5_6",
+      "titulo": {
+        "gl": "A axencia de viaxes e as aventuras do mapa",
+        "es": "La agencia de viajes y las aventuras del mapa"
+      },
+      "semanas": 8,
+      "objetivos": [
+        {
+          "gl": "Planificar itinerarios de ficción con conectores de secuencia temporal («First we fly by plane, then we take a bus across the mountains»).",
+          "es": "Planificar itinerarios ficticios con conectores de secuencia temporal («First we fly by plane, then we take a bus across the mountains»)."
+        },
+        {
+          "gl": "Describir localizacións xeográficas relativas en mapas tridimensionais con across, through, behind, next to.",
+          "es": "Describir localizaciones geográficas relativas en mapas tridimensionales con across, through, behind, next to."
+        },
+        {
+          "gl": "Formular preguntas complexas de indagación social («Where would you like to travel and why?»).",
+          "es": "Formular preguntas complejas de indagación social («Where would you like to travel and why?»)."
+        },
+        {
+          "gl": "Segmentar de oído palabras dunha sílaba illando cada fonema (boat: /b/-/oʊ/-/t/).",
+          "es": "Segmentar de oído palabras de una sílaba aislando cada fonema (boat: /b/-/oʊ/-/t/)."
+        }
+      ],
+      "vocabulario": [
+        {
+          "en": "plane",
+          "ipa": "/pleɪn/",
+          "gl": "avión",
+          "es": "avión",
+          "tier": 1
+        },
+        {
+          "en": "train",
+          "ipa": "/treɪn/",
+          "gl": "tren",
+          "es": "tren",
+          "tier": 1
+        },
+        {
+          "en": "map",
+          "ipa": "/mæp/",
+          "gl": "mapa",
+          "es": "mapa",
+          "tier": 1
+        },
+        {
+          "en": "ticket",
+          "ipa": "/ˈtɪkɪt/",
+          "gl": "billete",
+          "es": "billete",
+          "tier": 1
+        },
+        {
+          "en": "suitcase",
+          "ipa": "/ˈsutˌkeɪs/",
+          "gl": "maleta",
+          "es": "maleta",
+          "tier": 1
+        },
+        {
+          "en": "journey",
+          "ipa": "/ˈdʒɝni/",
+          "gl": "viaxe",
+          "es": "viaje",
+          "tier": 2
+        },
+        {
+          "en": "destination",
+          "ipa": "/ˌdɛstəˈneɪʃən/",
+          "gl": "destino",
+          "es": "destino",
+          "tier": 2
+        },
+        {
+          "en": "passport",
+          "ipa": "/ˈpæsˌpɔrt/",
+          "gl": "pasaporte",
+          "es": "pasaporte",
+          "tier": 2
+        },
+        {
+          "en": "dangerous",
+          "ipa": "/ˈdeɪndʒərəs/",
+          "gl": "perigoso",
+          "es": "peligroso",
+          "tier": 2
+        },
+        {
+          "en": "explore",
+          "ipa": "/ɪkˈsplɔr/",
+          "gl": "explorar",
+          "es": "explorar",
+          "tier": 2
+        },
+        {
+          "en": "arrive",
+          "ipa": "/əˈraɪv/",
+          "gl": "chegar",
+          "es": "llegar",
+          "tier": 2
+        }
+      ],
+      "formulas": [
+        {
+          "en": "Welcome aboard!",
+          "gl": "Benvidos a bordo!",
+          "es": "¡Bienvenidos a bordo!"
+        },
+        {
+          "en": "May I see your ticket?",
+          "gl": "Podo ver o teu billete?",
+          "es": "¿Puedo ver tu billete?"
+        },
+        {
+          "en": "Fasten your seatbelts",
+          "gl": "Abrochade os cintos",
+          "es": "Abrochaos los cinturones"
+        },
+        {
+          "en": "Have a safe trip!",
+          "gl": "Boa viaxe!",
+          "es": "¡Buen viaje!"
+        }
+      ],
+      "estructuras": [
+        {
+          "en": "We have to hurry because the train is leaving in front of us.",
+          "gl": "Temos que darnos présa porque o tren sae diante de nós.",
+          "es": "Tenemos que darnos prisa porque el tren sale delante de nosotros."
+        }
+      ],
+      "concienciaFonoloxica": {
+        "gl": "Descomposición fonémica de palabras dunha sílaba (boat: /b/-/oʊ/-/t/) e rimas con contrastes vocálicos tensos e laxos: ship /ʃɪp/ fronte a sheep /ʃiːp/. Contar sílabas con palmadas: Des-ti-na-tion (4), Ti-cket (2).",
+        "es": "Descomposición fonémica de palabras de una sílaba (boat: /b/-/oʊ/-/t/) y rimas con contrastes vocálicos tensos y laxos: ship /ʃɪp/ frente a sheep /ʃiːp/. Contar sílabas con palmadas: Des-ti-na-tion (4), Ti-cket (2)."
+      },
+      "rimas": [
+        {
+          "en": "Ship – Sheep",
+          "gl": "Barco – ovella",
+          "es": "Barco – oveja"
+        }
+      ],
+      "xogoSociodramatico": {
+        "escenario": {
+          "gl": "Recuncho da axencia de transporte: mostrador de facturación con billetes impresos, selos de tinta, maletas pequenas de verdade e filas de cadeiras que fan de asentos dun avión ou dun tren.",
+          "es": "Rincón de la agencia de transporte: mostrador de facturación con billetes impresos, sellos de tinta, maletas pequeñas de verdad y filas de sillas que hacen de asientos de un avión o de un tren."
+        },
+        "intervencion": {
+          "gl": "A persoa adulta entrega un billete: «Good morning, traveler! Where are you going today?». Unha criatura pode responder «I am going across the sea by plane!». A persoa adulta: «Why by plane?». A criatura: «Because it is faster than a boat!». A persoa adulta: «Wonderful! Please show your ticket to the officer».",
+          "es": "La persona adulta entrega un billete: «Good morning, traveler! Where are you going today?». Una criatura puede responder «I am going across the sea by plane!». La persona adulta: «Why by plane?». La criatura: «Because it is faster than a boat!». La persona adulta: «Wonderful! Please show your ticket to the officer»."
+        },
+        "resolucion": {
+          "gl": "O documento non trae resolución de conflito para esta unidade.",
+          "es": "El documento no trae resolución de conflicto para esta unidad."
+        }
+      },
+      "frasesAdulta": [
+        {
+          "en": "Good morning, traveler! Where are you going today?",
+          "gl": "Bos días, viaxeira ou viaxeiro! A onde vas hoxe?",
+          "es": "¡Buenos días, viajera o viajero! ¿Adónde vas hoy?"
+        },
+        {
+          "en": "Why by plane?",
+          "gl": "Por que en avión?",
+          "es": "¿Por qué en avión?"
+        },
+        {
+          "en": "Wonderful! Please show your ticket to the officer.",
+          "gl": "Estupendo! Por favor, ensínalle o billete á persoa do control.",
+          "es": "¡Estupendo! Por favor, enséñale el billete a la persona del control."
+        },
+        {
+          "en": "Do you remember which vehicle the explorers used when they crossed the wide river?",
+          "gl": "Lembras que vehículo usaron os exploradores cando cruzaron o río ancho?",
+          "es": "¿Te acuerdas de qué vehículo usaron los exploradores cuando cruzaron el río ancho?"
+        }
+      ],
+      "realia": [
+        {
+          "gl": "Mostrador de facturación",
+          "es": "Mostrador de facturación"
+        },
+        {
+          "gl": "Billetes impresos",
+          "es": "Billetes impresos"
+        },
+        {
+          "gl": "Selos de tinta",
+          "es": "Sellos de tinta"
+        },
+        {
+          "gl": "Maletas pequenas de verdade",
+          "es": "Maletas pequeñas de verdad"
+        },
+        {
+          "gl": "Filas de cadeiras como asentos de avión ou de tren",
+          "es": "Filas de sillas como asientos de avión o de tren"
+        },
+        {
+          "gl": "Mapas tridimensionais (do obxectivo 2)",
+          "es": "Mapas tridimensionales (del objetivo 2)"
+        },
+        {
+          "gl": "Na casa: un conto de aventuras",
+          "es": "En casa: un cuento de aventuras"
+        }
+      ],
+      "familia": {
+        "gl": "Pregunta CROWD de lembranza (Recall), despois de ler un conto de aventuras: «Do you remember which vehicle the explorers used when they crossed the wide river?».",
+        "es": "Pregunta CROWD de recuerdo (Recall), después de leer un cuento de aventuras: «Do you remember which vehicle the explorers used when they crossed the wide river?»."
+      },
+      "fonte": "curriculo-vocabulario-infantil-2-6.txt:255-272",
+      "erratasAplicadas": [
+        {
+          "gl": "Quitáronse os números de nota pegados ás frases (22, 21, 15, 14).",
+          "es": "Se han quitado los números de nota pegados a las frases (22, 21, 15, 14)."
+        },
+        {
+          "gl": "Liña 261: «segmentar palabras polisilábicas illando cada fonema en palabras monosilábicas» contradise. Reescríbese: segmentar palabras dunha sílaba (boat: /b/-/oʊ/-/t/).",
+          "es": "Línea 261: «segmentar palabras polisilábicas aislando cada fonema en palabras monosilábicas» se contradice. Se reescribe: segmentar palabras de una sílaba (boat: /b/-/oʊ/-/t/)."
+        },
+        {
+          "gl": "«O docente», «o educador», «o profesor» e «o proxenitor» pasan a «a persoa adulta», unha soa; «o infante», «o neno» e «o alumno» pasan a «a criatura».",
+          "es": "«El docente», «el educador», «el profesor» y «el progenitor» pasan a «la persona adulta», una sola; «el infante», «el niño» y «el alumno» pasan a «la criatura»."
+        },
+        {
+          "gl": "O documento non trae transcrición do vocabulario: engadiuse en transcrición americana, que é a voz da app.",
+          "es": "El documento no trae transcripción del vocabulario: se ha añadido en transcripción americana, que es la voz de la app."
+        },
+        {
+          "gl": "Nos textos non se usa a palabra «intervención», que a fe de erratas marca como linguaxe clínica: dise que a persoa adulta entra no xogo.",
+          "es": "En los textos no se usa la palabra «intervención», que la fe de erratas marca como lenguaje clínico: se dice que la persona adulta entra en el juego."
+        }
+      ],
+      "naonEntra": []
+    }
+  ]
+}

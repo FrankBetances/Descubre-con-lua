@@ -732,6 +732,45 @@ def collect_locutions(content_dir: Path = CONTENT_DIR) -> list[Locution]:
             _one(texto, "en", estilo_ingles(texto),
                  f"registro/{frase.get('id', '?')}", seen)
 
+    # El plan curricular de Frank (F11): el inglés de cada unidad lleva voz, y
+    # su significado en gl y es también, porque el doble toque lo dice (F7).
+    for tramo in ("tramo_18_36.json", "tramo_3_6.json"):
+        ruta = content_dir / "curriculo" / tramo
+        if not ruta.exists():
+            continue
+        for unidade in json.loads(ruta.read_text(encoding="utf-8")).get("unidades") or []:
+            uid = unidade.get("id", "?")
+            for campo in ("vocabulario", "accionsTPR", "formulas",
+                          "estructuras", "rimas", "frasesAdulta"):
+                for item in unidade.get(campo) or []:
+                    if not isinstance(item, dict) or not item.get("en"):
+                        continue
+                    texto = str(item["en"])
+                    _one(texto, "en", estilo_ingles(texto),
+                         f"curriculo/{uid}/{campo}", seen)
+                    if item.get("gl") and item.get("es"):
+                        _add(_localized(item), "tutor",
+                             f"curriculo/{uid}/{campo}/significado", seen)
+
+    # Los 100 cuentos dialogados (F12): la frase de Lúa, la tríada CROWD y los
+    # recast llevan voz inglesa, y su significado gl/es para el doble toque.
+    for ruta in sorted((content_dir / "biblioteca").glob("his_*.json")):
+        for conto in json.loads(ruta.read_text(encoding="utf-8")):
+            cid = conto.get("id", "?")
+            pezas = [conto.get("fraseLua")]
+            for lamina in conto.get("laminas") or []:
+                pezas.append(lamina.get("lua"))
+                pezas += list((lamina.get("crowd") or {}).values())
+                pezas += list((lamina.get("recast") or {}).values())
+            for peza in pezas:
+                if not isinstance(peza, dict) or not peza.get("en"):
+                    continue
+                texto = str(peza["en"])
+                _one(texto, "en", estilo_ingles(texto), f"biblioteca/{cid}", seen)
+                if peza.get("gl") and peza.get("es"):
+                    _add(_localized(peza), "tutor",
+                         f"biblioteca/{cid}/significado", seen)
+
     # La sesión de 45 minutos (F3): lo fijo que dice la adulta en cada fase.
     sesion_json = content_dir / "sesion45" / "sesion45.json"
     if sesion_json.exists():

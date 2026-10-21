@@ -1,0 +1,65 @@
+{
+  "_doc": "Qué unidad del plan curricular de Frank (referencias/base/curriculo-vocabulario-infantil-2-6.txt) se trabaja en cada curso y mes del calendario. 18-36 meses: las seis bimestrales en el orden del documento (setembro-outubro la 1...); la 5 queda en maio y la 6 en xuño, porque el curso acaba en xuño (el documento solapa la 6 con xuño-xullo). 0-2 sigue as mesmas seis: o documento non ten tramo antes dos 18 meses. 3-6 anos: cada unidade ocupa medio curso (P8, Frank 21/10/2026): setembro-xaneiro e febreiro-xuño.",
+  "cursos": {
+    "curso_0_2": {
+      "9": "T2.U1",
+      "10": "T2.U1",
+      "11": "T2.U2",
+      "12": "T2.U2",
+      "1": "T2.U3",
+      "2": "T2.U3",
+      "3": "T2.U4",
+      "4": "T2.U4",
+      "5": "T2.U5",
+      "6": "T2.U6"
+    },
+    "curso_2_3": {
+      "9": "T2.U1",
+      "10": "T2.U1",
+      "11": "T2.U2",
+      "12": "T2.U2",
+      "1": "T2.U3",
+      "2": "T2.U3",
+      "3": "T2.U4",
+      "4": "T2.U4",
+      "5": "T2.U5",
+      "6": "T2.U6"
+    },
+    "curso_3_4": {
+      "9": "T3.U3.1",
+      "10": "T3.U3.1",
+      "11": "T3.U3.1",
+      "12": "T3.U3.1",
+      "1": "T3.U3.1",
+      "2": "T3.U3.2",
+      "3": "T3.U3.2",
+      "4": "T3.U3.2",
+      "5": "T3.U3.2",
+      "6": "T3.U3.2"
+    },
+    "curso_4_5": {
+      "9": "T3.U4.1",
+      "10": "T3.U4.1",
+      "11": "T3.U4.1",
+      "12": "T3.U4.1",
+      "1": "T3.U4.1",
+      "2": "T3.U4.2",
+      "3": "T3.U4.2",
+      "4": "T3.U4.2",
+      "5": "T3.U4.2",
+      "6": "T3.U4.2"
+    },
+    "curso_5_6": {
+      "9": "T3.U5.1",
+      "10": "T3.U5.1",
+      "11": "T3.U5.1",
+      "12": "T3.U5.1",
+      "1": "T3.U5.1",
+      "2": "T3.U5.2",
+      "3": "T3.U5.2",
+      "4": "T3.U5.2",
+      "5": "T3.U5.2",
+      "6": "T3.U5.2"
+    }
+  }
+}

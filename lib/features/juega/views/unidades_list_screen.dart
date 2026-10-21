@@ -13,6 +13,7 @@ import '../widgets/circulo_do_dia.dart';
 import '../../cuentos/views/microcuento_screen.dart';
 import '../../cuentos/widgets/boton_microcuento.dart';
 import 'sesion45_screen.dart';
+import '../widgets/tarxeta_curricular.dart';
 import '../../calendario/widgets/palabras_do_dia.dart';
 import '../../../data/models/tpr_curriculum_scheduler.dart';
 import '../widgets/aula_segundo_ciclo_panel.dart';
@@ -393,6 +394,12 @@ class _UnidadesListScreenState extends State<UnidadesListScreen> {
       circuloDoDia: _circuloDoDia,
       microcuento: _microcuento,
       sesion45: _sesion45,
+      planDoMes: (curso, mes) => TarxetaCurricular(
+        cursoId: curso,
+        mesCalendario: mes,
+        language: _language,
+        audioService: widget.audioService,
+      ),
       onComezar: (tramo, mes, dia) async {
         final asamblea =
             widget.repository.getAsambleaPrimeiroCicloSync(mes, tramo);
@@ -452,6 +459,12 @@ class _UnidadesListScreenState extends State<UnidadesListScreen> {
       circuloDoDia: _circuloDoDia,
       microcuento: _microcuento,
       sesion45: _sesion45,
+      planDoMes: (curso, mes) => TarxetaCurricular(
+        cursoId: curso,
+        mesCalendario: mes,
+        language: _language,
+        audioService: widget.audioService,
+      ),
       onComezar: (nivel, mes, dia) async {
         final asamblea =
             widget.repository.getAsambleaByMesYNivelSync(mes, nivel);

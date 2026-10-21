@@ -97,7 +97,9 @@ Future<AsembleaDaUnidade?> lerAsembleaDaUnidade(ContentRepository repo,
   ].where((m) => m.trim().isNotEmpty).join(' · ');
   return AsembleaDaUnidade(
     centroInteres: u.centroInteres,
-    nucleo: repo.nucleoSync(u),
+    // La asamblea es la del documento de su mes (opción 2 de Frank): su
+    // núcleo, no el del plan curricular.
+    nucleo: repo.nucleoDaAsembleaSync(u),
     cancion: u.cancion,
     material: material.isEmpty ? null : material,
     ordenes: {
