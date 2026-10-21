@@ -94,6 +94,19 @@ Comprobado contra la app el 20/10/2026 con `grep` sobre `lib/` y
 - O8: qué observar sin casilla; manual, imprimibles y README al día, con el
   PDF mirado página a página.
 
+**F7 · El doble toque dice el significado (orden de Frank, 21/10/2026)**
+- Orden: en toda la app, dos toques sobre una frase o palabra en inglés dicen
+  su significado en la lengua de la sesión (gl o es), con voz.
+- El mecanismo ya existe (`BotonEscuchar.significado`), pero solo lo llevan
+  7 de los 34 botones en inglés. Faltan 27, en: calendario (3), STEAM,
+  vocabulario (2), asamblea (2), barra de inglés, colocaciones (2), repaso,
+  escucha, «O modelo», juego de casa, microcuento (3), visor de cuentos, guía
+  de atención, cápsulas, phonics, aprender a leer (3) y láminas (2).
+- Capas: el significado gl/es en el JSON de cada frase, su voz gl y es, el
+  botón y un gate que falle si un botón en inglés no trae significado.
+- Hecho cuando: el gate está verde y el doble toque se ha probado en cada
+  pantalla, en gl y en es.
+
 ## 4. Decisiones de Frank (20/10/2026)
 
 | | Pregunta | Decisión de Frank | Afecta a |
