@@ -8,13 +8,21 @@ La dictó Frank el 21/10/2026: «hay que agregar aquí la regla cero: prohibido 
 - **Ante un fallo no hay excusas ni explicaciones de por qué pasó: se corrige.** El informe dice qué estaba mal, qué se ha corregido y con qué se ha comprobado, en una línea. Nada de contexto, atenuantes ni disculpas largas.
 - **Lo que Frank pidió se entrega entero y bien hecho.** Un resultado pobre presentado con sus motivos sigue siendo un resultado pobre.
 
-## R00 · NUNCA SE GASTA EL SALDO DE FRANK SIN SU PERMISO
+## 🟨 REGLA DE ORO · NO SE PARA NUNCA HASTA COMPLETAR EL PROYECTO, CON EL MÍNIMO GASTO
+
+La dictó Frank el 21/10/2026, después de habérsela repetido a Claude Code más de cincuenta veces: «no se puede parar nunca, nunca, se debe completar con el mínimo gasto, déjalo escrito en oro». Manda sobre todo el fichero.
+
+- **No se para nunca.** Al terminar una tanda empieza la siguiente de `docs/PLAN_DE_TRABAJO.md`, sin esperar permiso. El plan ya está autorizado por Frank; no se le pide un «sí» por tarea.
+- **Con el mínimo gasto.** Siempre la vía que cuesta menos sin bajar la calidad: scripts antes que prosa, leer solo lo necesario, sin agentes (R00), sin repetir trabajo y sin lanzar lo que va a fallar (R000).
+- **Solo se pregunta a Frank lo que solo él puede decidir** (contenido, recorte, elegir entre dos caminos), y mientras contesta se sigue con lo demás. Preguntar no es parar.
+- **Cada tanda termina en algo que Frank ve en la app,** dicho en una línea.
+
+## R00 · NUNCA SE GASTA EL SALDO DE FRANK EN BALDE
 
 La dictó Frank el 21/10/2026, después de que Claude Code lanzara cuatro agentes sin preguntarle cuando le quedaba poco saldo: chocaron con el límite, no produjeron nada y gastaron igual. Lo hizo Claude Code.
 
 - **Prohibido lanzar agentes o flujos de varios agentes.** Lo bloquea `.claude/settings.json` (`deny: Agent, Workflow`), y solo Frank puede quitarlo.
-- **Antes de cada tarea, Claude Code dice en una línea si es pequeña, mediana o grande.** Las medianas y grandes no empiezan sin un «sí» de Frank. Calcular el coste es trabajo de Claude Code, nunca de Frank.
-- **Se trabaja en tandas cortas,** y cada una termina en algo que Frank ve en la app.
+- **Calcular el coste es trabajo de Claude Code, nunca de Frank.** Si una tarea se sale de lo normal (regenerar todo, cientos de piezas), se dice en una línea antes de empezar, y se empieza.
 
 ## R000 · NUNCA SE LANZA NADA QUE YA SE SABE QUE VA A FALLAR
 
