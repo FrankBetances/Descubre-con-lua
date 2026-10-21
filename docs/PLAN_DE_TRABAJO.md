@@ -137,6 +137,29 @@ Comprobado contra la app el 20/10/2026 con `grep` sobre `lib/` y
 - Hecho cuando: Frank abre la app y entiende dónde está cada cosa y para qué
   sirve sin que nadie se lo explique.
 
+**F11 · El plan curricular de Frank, tal cual (orden de Frank, 21/10/2026)**
+- Las 50 unidades mensuales no siguen `curriculo-vocabulario-infantil-2-6.txt`:
+  sus temas los escribió Claude Code (commits 0106f237, 238fa2c0, a0673d65) y
+  ERRATAS.md descartó las unidades del documento sin preguntar. Lo hizo él.
+- Se transcriben las 12 unidades del documento (6 bimestrales de 18-36 meses;
+  3.1-3.2, 4.1-4.2, 5.1-5.2 de 3-6 años) a `assets/content/curriculo/`, con
+  objetivos, vocabulario, acciones TPR, realia, fonología, dinámica y fórmulas,
+  y cada unidad mensual cita la suya: centro de interés, núcleo y objetivos
+  salen de ella.
+- P8 (Frank, 21/10): en 3-6 años cada unidad ocupa medio curso (septiembre-enero
+  y febrero-junio); sus 8 semanas se trabajan con la recuperación espaciada del
+  propio documento (línea 285).
+
+**F12 · La biblioteca de 100 cuentos dialógicos (orden de Frank, 21/10/2026)**
+- `biblioteca-cuentos-dialogicos-bilingues.txt`: HIS-001 a HIS-100, con su
+  cabecera (escenario, desafío, acción TPR, resolución, palabras diana, frase de
+  Lúa) y, por lámina, composición, narración gl/es con la frase de Lúa en
+  inglés, tríada CROWD y pauta de espera y recast. 3 láminas en 2-3 años y 4 en
+  4-6 años. Cada cuento, atado a su unidad del plan curricular.
+- P9 (Frank, 21/10): los 97 cuentos largos de antes se quedan como material
+  complementario.
+- Las láminas de los 100 se dibujan con la dirección de arte de F9.
+
 ## 4. Decisiones de Frank (20/10/2026)
 
 | | Pregunta | Decisión de Frank | Afecta a |
