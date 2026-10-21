@@ -83,6 +83,8 @@ flutter:
     - assets/content/modelo/
     # La sesión de 45 minutos (F3): lo fijo de sus cuatro fases.
     - assets/content/sesion45/
+    # El plan curricular de Frank (F11): las 12 unidades y su calendario.
+    - assets/content/curriculo/
     - assets/audio/
     # Las rejillas de Lúa. Hasta ahora solo las leía tools/build_launcher_icons.py
     # en tiempo de compilación, así que nunca se empaquetaron; en cuanto una

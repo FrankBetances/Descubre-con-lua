@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../formacion/widgets/lista_de_practica.dart';
+import '../../juega/widgets/tarxeta_curricular.dart';
 
 import '../../../core/audio/offline_audio_service.dart';
 import '../../../core/storage/calendario_store.dart';
@@ -441,6 +442,13 @@ class _HoxeDocentesScreenState extends State<HoxeDocentesScreen> {
                 ),
               ),
             ],
+            // F11: la unidad del plan curricular de Frank que toca este mes.
+            TarxetaCurricular(
+              cursoId: widget.cursoId,
+              mesCalendario: _toca.dia.mesCalendario,
+              language: lang,
+              audioService: widget.audioService,
+            ),
             if (_conto case final conto?) ...[
               const SizedBox(height: 14),
               _FilaRecurso(

@@ -15,11 +15,16 @@ class FraseDoRexistro {
   final String en;
   final LocalizedString accion;
 
+  /// Lo que quiere decir, en gl y es, para el doble toque (F7). Nulo si la
+  /// fuente todavía no lo trae.
+  final LocalizedString? significado;
+
   const FraseDoRexistro({
     required this.id,
     required this.tipo,
     required this.en,
     required this.accion,
+    this.significado,
   });
 
   factory FraseDoRexistro.fromJson(Map<String, dynamic> json) =>
@@ -29,6 +34,10 @@ class FraseDoRexistro {
         en: json['en']?.toString() ?? '',
         accion: LocalizedString.fromJson(Map<String, dynamic>.from(
             json['accion'] is Map ? json['accion'] as Map : const {})),
+        significado: json['significado'] is Map
+            ? LocalizedString.fromJson(
+                Map<String, dynamic>.from(json['significado'] as Map))
+            : null,
       );
 }
 
@@ -92,7 +101,11 @@ PezaDaUnidade? resolverPeza(
   final frase = rexistro?.frase(ref);
   if (frase != null) {
     return PezaDaUnidade(
-        ref: ref, en: frase.en, xesto: frase.accion, objeto: objeto);
+        ref: ref,
+        en: frase.en,
+        significado: frase.significado,
+        xesto: frase.accion,
+        objeto: objeto);
   }
   final palabra = programa?.palabra(ref);
   if (palabra != null) {
