@@ -116,7 +116,7 @@
     "esperaSegundos": 5,
     "laminas": [
       {
-        "lamina": null,
+        "lamina": "microcuento_5_6_02_1",
         "encargo": "Parque de otoño en planos limpios, con el suelo cubierto de hojas MARRONES. Dos aros de mimbre en el suelo, uno a cada lado. Lúa en el centro, con una hoja en cada mano. A su lado salta un conejo BLANCO con bufanda NARANJA.",
         "trama": {
           "gl": "Chegou o outono ao parque e o chan está cheo de follas marróns. Lúa e o seu amigo, o coello branco, traen dous aros de vimbio. O xogo é doado: as follas ásperas, a un aro; as follas lisas, ao outro.",
@@ -194,7 +194,7 @@
         }
       },
       {
-        "lamina": null,
+        "lamina": "microcuento_5_6_02_2",
         "encargo": "Primer plano de un aro de mimbre lleno de hojas MARRONES mezcladas, unas arrugadas y otras lisas. El conejo BLANCO con bufanda NARANJA, en mitad de un salto, deja caer más hojas dentro. Lúa, a un lado, toca una hoja arrugada con la punta de los dedos. El otro aro, vacío.",
         "trama": {
           "gl": "O coello está tan contento que salta, salta… e bota todas as follas no mesmo aro! Agora están todas mesturadas. Lúa colle unha e pasa os dedos por riba: ui, que áspera! Esta non vai aquí.",
@@ -272,7 +272,7 @@
         }
       },
       {
-        "lamina": null,
+        "lamina": "microcuento_5_6_02_3",
         "encargo": "Los dos aros de mimbre, cada uno con cinco hojas MARRONES bien separadas: arrugadas en uno, lisas y brillantes en el otro. Lúa y el conejo BLANCO con bufanda NARANJA, agachados entre los dos aros, cuentan con los dedos levantados.",
         "trama": {
           "gl": "Xuntos, folla a folla, volven facer o xogo: ásperas aquí, lisas alí. Agora toca contar. Un, dous, tres, catro, cinco… e no outro aro, un, dous, tres, catro… cinco! Hai as mesmas!",
@@ -350,7 +350,7 @@
         }
       },
       {
-        "lamina": null,
+        "lamina": "microcuento_5_6_02_4",
         "encargo": "Lúa y el conejo BLANCO con bufanda NARANJA, en el aire, saltan con los dos pies juntos hacia dentro de un aro de mimbre, sonriendo. Hojas MARRONES vuelan alrededor de sus pies. El otro aro espera al lado.",
         "trama": {
           "gl": "Para celebralo, o coello ten unha idea: saltar dun aro ao outro, cos dous pés á vez! Hop, dentro; hop, fóra; hop, ao outro aro. Lúa e o coello saltan e rin ata que se cansan.",

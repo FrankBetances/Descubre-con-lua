@@ -114,7 +114,7 @@
     "esperaSegundos": 5,
     "laminas": [
       {
-        "lamina": null,
+        "lamina": "microcuento_5_6_10_1",
         "encargo": "Escalera de piedra GRIS que baja hacia una playa de arena clara; al fondo, el mar AZUL en franjas lisas. Lúa baja los escalones con dos cestas: una AZUL y otra de mimbre natural. Abajo, un cangrejo ermitaño ROJO que lleva a cuestas una concha pequeña MARRÓN la saluda con una pinza.",
         "trama": {
           "gl": "Chegou o verán e Lúa baixa á praia polos chanzos de pedra, un, dous, tres… Leva dous cestos: un azul e outro de vimbio. Abaixo, o cangrexo ermitán xa a espera: hoxe toca buscar cunchas!",
@@ -192,7 +192,7 @@
         }
       },
       {
-        "lamina": null,
+        "lamina": "microcuento_5_6_10_2",
         "encargo": "Lúa agachada en la arena, señalando con alegría una concha BLANCA lisa que brilla. El cangrejo ermitaño ROJO con su concha pequeña MARRÓN, a su lado, levanta las pinzas sorprendido. La cesta AZUL, vacía, en la arena; piedrecitas grises alrededor.",
         "trama": {
           "gl": "Buscan e buscan pola area, pero só aparecen pedriñas e algas. O cesto azul segue baleiro… De súpeto, algo brilla ao sol, branco e liso.",
@@ -270,7 +270,7 @@
         }
       },
       {
-        "lamina": null,
+        "lamina": "microcuento_5_6_10_3",
         "encargo": "Primer plano: el cangrejo ermitaño ROJO saca medio cuerpo de su concha pequeña MARRÓN, que le queda apretada. Lúa le ofrece con las dos manos la concha BLANCA más grande y lisa. A su lado, la cesta AZUL llena de conchas BLANCAS.",
         "trama": {
           "gl": "O cesto azul énchese de cunchas brancas. Pero o cangrexo está triste: a súa cuncha marrón quédalle pequena e apértalle! Lúa colle a cuncha máis grande e lisa do cesto e ofrécella.",
@@ -348,7 +348,7 @@
         }
       },
       {
-        "lamina": null,
+        "lamina": "microcuento_5_6_10_4",
         "encargo": "Orilla del mar con olas pequeñas de espuma BLANCA. Lúa salpica agua con las manos y ríe. A su lado chapotea el cangrejo ermitaño ROJO, ya dentro de la concha BLANCA grande. Arriba, un sol AMARILLO grande; la cesta AZUL espera en la arena seca.",
         "trama": {
           "gl": "O cangrexo métese na cuncha branca: perfecta! Dá unha volta de contento. O sol quenta moito, así que corren á beira do mar e chapuzan, plas, plas, ata que a auga lles fai cóxegas nos pés.",

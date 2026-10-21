@@ -233,13 +233,17 @@ def collect_locutions(content_dir: Path = CONTENT_DIR) -> list[Locution]:
         data = json.loads(path.read_text(encoding="utf-8"))
         cap_id = data.get("id", path.stem)
 
-        # `luaDice` es el cierre de la gata. Entra en el corpus como las
-        # otras cuatro: es prosa que la familia lee, y si se pudiera leer
-        # pero no escuchar sería la única tarjeta del lector sin altavoz.
+        # `luaDice` es la idea para hoy del cierre, en gl/es: prosa que la
+        # familia lee, y si se pudiera leer pero no escuchar sería la única
+        # tarjeta del lector sin altavoz. Lo que dice Lúa, `luaEn`, va aparte
+        # y en inglés (P4: Lúa solo habla inglés).
         for campo in ("ideaClave", "porQueImporta", "queHacerEnCasa",
                       "ejemploCotidiano", "luaDice"):
             if data.get(campo):
                 _add(_localized(data[campo]), "tutor", f"{cap_id}/{campo}", seen)
+        if data.get("luaEn"):
+            texto = str(data["luaEn"])
+            _one(texto, "en", estilo_ingles(texto), f"{cap_id}/luaEn", seen)
 
         for afirmacion in data.get("afirmaciones") or []:
             if not isinstance(afirmacion, dict):
@@ -727,6 +731,20 @@ def collect_locutions(content_dir: Path = CONTENT_DIR) -> list[Locution]:
             texto = str(frase.get("en", ""))
             _one(texto, "en", estilo_ingles(texto),
                  f"registro/{frase.get('id', '?')}", seen)
+
+    # «O modelo» (F2): la frase inglesa de cada ejemplo, de aula y de casa,
+    # lleva su botón de voz para que la adulta la oiga antes de decirla.
+    modelo_json = content_dir / "modelo" / "o_modelo.json"
+    if modelo_json.exists():
+        modelo = json.loads(modelo_json.read_text(encoding="utf-8"))
+        for seccion in modelo.get("seccions") or []:
+            clave = seccion.get("clave", "?")
+            for campo in ("exemploAula", "exemploCasa"):
+                exemplo = seccion.get(campo) or {}
+                if exemplo.get("adulta"):
+                    texto = str(exemplo["adulta"])
+                    _one(texto, "en", estilo_ingles(texto),
+                         f"modelo/{clave}/{campo}", seen)
 
     return sorted(seen.values(), key=lambda e: (e.lang, e.style, e.id))
 

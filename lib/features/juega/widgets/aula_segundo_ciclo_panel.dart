@@ -53,6 +53,10 @@ class AulaSegundoCicloPanel extends StatefulWidget {
   final Widget Function(String cursoId, int mes, int semana, int dia)?
       circuloDoDia;
 
+  /// La puerta al microcuento del mes en modo aula (M5.8): curso y mes del
+  /// calendario.
+  final Widget Function(String cursoId, int mesCalendario)? microcuento;
+
   /// Abre el Modo Asamblea por la clase, el mes y el día que la docente
   /// eligió aquí.
   final void Function(
@@ -69,6 +73,7 @@ class AulaSegundoCicloPanel extends StatefulWidget {
     this.pe,
     this.progresionDe,
     this.circuloDoDia,
+    this.microcuento,
   });
 
   /// La clave de progresión de un nivel: «segundo_ciclo.4», «.5», «.6».
@@ -260,6 +265,10 @@ class _AulaSegundoCicloPanelState extends State<AulaSegundoCicloPanel> {
                       _mesesDoCurso.indexOf(_mes) + 1,
                       _semana,
                       _dia,
+                    ),
+                    microcuento: widget.microcuento?.call(
+                      'curso_${_nivel.tramoEtario.replaceAll('-', '_')}',
+                      _mes,
                     ),
                     onComezar: () => widget.onComezar(_nivel, _mes, _diaActual),
                   ),
@@ -459,6 +468,9 @@ class _TarxetaDeFluxo extends StatelessWidget {
 
   /// El cuento y la dinámica del día. Nulo si la pantalla no lo pasa.
   final Widget? circulo;
+
+  /// La puerta al microcuento del mes.
+  final Widget? microcuento;
   final VoidCallback onComezar;
 
   const _TarxetaDeFluxo({
@@ -468,6 +480,7 @@ class _TarxetaDeFluxo extends StatelessWidget {
     required this.dia,
     required this.semana,
     required this.circulo,
+    this.microcuento,
     required this.onComezar,
   });
 
@@ -565,6 +578,7 @@ class _TarxetaDeFluxo extends StatelessWidget {
                     ),
                   ),
                 ),
+                if (microcuento case final mc?) mc,
                 const SizedBox(height: AppTheme.spaceLg),
                 if (dia != null) ...[
                   BloqueDoDia(

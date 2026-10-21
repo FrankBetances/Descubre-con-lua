@@ -13,6 +13,7 @@ import '../../../data/repositories/content_repository.dart';
 import '../../academy/views/bloques_list_screen.dart';
 import '../../academy/views/guia_atencion_screen.dart';
 import '../../formacion/views/formacion_screen.dart';
+import '../../formacion/views/o_modelo_screen.dart';
 import '../../premios/premios_model.dart';
 import '../../premios/premios_repository.dart';
 import '../../premios/premios_screen.dart';
@@ -59,6 +60,18 @@ class GuiasFamiliasScreen extends StatelessWidget {
               perfil: PerfilFormacion.familia,
               language: language,
               onLanguageChanged: onLanguageChanged,
+            ),
+      ),
+      (
+        'guia_o_modelo',
+        Icons.forum_rounded,
+        OModeloScreen.nome,
+        OModeloScreen.di,
+        (_) => OModeloScreen(
+              paraAula: false,
+              language: language,
+              onLanguageChanged: onLanguageChanged,
+              audioService: audioService,
             ),
       ),
       (

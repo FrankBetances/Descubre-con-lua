@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../formacion/widgets/lista_de_practica.dart';
+
 import '../../../core/audio/offline_audio_service.dart';
 import '../../../core/brand/lua_pixel.dart';
 import '../../../core/localization/app_language.dart';
@@ -427,6 +429,13 @@ class _HoxeFamiliasScreenState extends State<HoxeFamiliasScreen> {
                 ),
               ],
             ],
+            const SizedBox(height: 18),
+            ListaDePracticaCard(
+              store: widget.store,
+              perfil: 'hogar',
+              dia: widget.agora ?? DateTime.now(),
+              language: lang,
+            ),
           ],
         ),
       ),

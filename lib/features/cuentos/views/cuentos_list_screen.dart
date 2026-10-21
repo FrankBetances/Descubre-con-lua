@@ -6,6 +6,8 @@ import '../../../core/theme/app_theme.dart';
 import '../../../data/models/cuento_model.dart';
 import '../../../data/repositories/content_repository.dart';
 import 'cuento_viewer_screen.dart';
+import 'microcuento_screen.dart';
+import '../widgets/boton_microcuento.dart';
 import '../../juega/widgets/aula_ciclo_panel.dart';
 import '../../../core/navigation/ruta_lua.dart';
 import '../../../core/widgets/cabecera.dart';
@@ -29,6 +31,10 @@ class CuentosListScreen extends StatefulWidget {
   /// [mes] es el del curso (1 es septiembre).
   final ({int mes, int semana})? semanaDestacada;
 
+  /// El mes del calendario de hoy: con él, delante de la lista va el
+  /// microcuento de la unidad de ese mes, en modo casa (M5.8).
+  final int? mesCalendario;
+
   const CuentosListScreen({
     super.key,
     required this.repository,
@@ -37,6 +43,7 @@ class CuentosListScreen extends StatefulWidget {
     this.audioService,
     this.initialCursoId,
     this.semanaDestacada,
+    this.mesCalendario,
   });
 
   @override
@@ -181,6 +188,21 @@ class _CuentosListScreenState extends State<CuentosListScreen> {
               ],
             ),
           ),
+
+          if (widget.mesCalendario case final mes?
+              when _selectedCurso != 'todos')
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 16),
+              child: BotonMicrocuento(
+                repository: widget.repository,
+                cursoId: _selectedCurso,
+                mesCalendario: mes,
+                modo: ModoMicrocuento.casa,
+                language: lang,
+                onLanguageChanged: _cambiarLingua,
+                audioService: widget.audioService,
+              ),
+            ),
 
           // Count Indicator
           Padding(

@@ -43,13 +43,16 @@ void main() {
                 'cerrar con Lúa. Añade "luaDice" con "gl" y "es".');
         expect(capsula.luaDice!.hasParity, isTrue,
             reason: '${entrada.key}: "luaDice" necesita las dos lenguas.');
-        // Lúa habla en primera persona a la persona adulta: es quien lee. Si
-        // el cierre no la nombra, deja de ser el cierre de la gata y pasa a ser
-        // una quinta sección sin encabezado.
+        // P4 (20/10/2026): Lúa solo habla inglés. Su frase es `luaEn`; la
+        // idea para hoy, en gl/es, ya no habla por ella.
+        expect(capsula.luaEn, isNotNull,
+            reason: '${entrada.key}: el cierre necesita la frase de Lúa en '
+                'inglés, "luaEn".');
         for (final lengua in AppLanguage.deInterfaz) {
-          expect(capsula.luaDice!.resolve(lengua), contains('Lúa'),
-              reason: '${entrada.key}: el cierre en ${lengua.code} no nombra '
-                  'a Lúa.');
+          expect(capsula.luaDice!.resolve(lengua),
+              isNot(anyOf(contains('Son Lúa'), contains('Soy Lúa'))),
+              reason: '${entrada.key}: en ${lengua.code}, Lúa vuelve a hablar '
+                  'en gl/es.');
         }
       }
     });

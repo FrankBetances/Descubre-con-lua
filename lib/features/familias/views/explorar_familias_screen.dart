@@ -63,6 +63,7 @@ class ExplorarFamiliasScreen extends StatelessWidget {
           audioService: audioService,
           initialCursoId: cursoId,
           semanaDestacada: (mes: toca.mesDoCurso, semana: toca.dia.semana),
+          mesCalendario: toca.dia.mesCalendario,
         ),
       ),
       _Modulo(

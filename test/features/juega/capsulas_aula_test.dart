@@ -123,7 +123,9 @@ void main() {
       }
     }
 
-    testWidgets('enseña los seis pasos, ninguno apagado', (tester) async {
+    testWidgets(
+        'enseña las cuatro fases con las seis lecturas, ninguna apagada',
+        (tester) async {
       tester.view.physicalSize = const Size(400, 2400);
       tester.view.devicePixelRatio = 1.0;
       addTearDown(tester.view.reset);
@@ -135,9 +137,22 @@ void main() {
       ));
       await tester.pumpAndSettle();
 
-      for (var i = 1; i <= 6; i++) {
-        expect(find.text('PASO $i'), findsOneWidget,
-            reason: 'Falta el paso $i en la lista.');
+      // F2: las seis lecturas van por las cuatro fases de la asamblea, y
+      // delante, las herramientas de «El modelo». Ninguna habla de pasos.
+      for (final f in [
+        '1 · SALUDO Y APERTURA',
+        '2 · ENFOQUE',
+        '3 · NÚCLEO TPR',
+        '4 · CALMA Y DESPEDIDA',
+      ]) {
+        expect(find.text(f), findsOneWidget, reason: 'Falta la fase $f.');
+      }
+      expect(find.byKey(const ValueKey('formacion_o_modelo')), findsOneWidget);
+      expect(find.textContaining('PASO'), findsNothing);
+      expect(find.textContaining('seis pasos'), findsNothing);
+      for (final b in repo.getAllBloquesAula()) {
+        expect(find.text(b.titulo.es), findsOneWidget,
+            reason: 'La lectura «${b.id}» no está en ninguna fase.');
       }
       expect(find.textContaining('preparación pedagógica'), findsNothing,
           reason: 'Un paso sin cápsula deja una tarjeta apagada.');

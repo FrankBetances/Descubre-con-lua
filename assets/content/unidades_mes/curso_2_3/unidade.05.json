@@ -86,7 +86,7 @@
     "esperaSegundos": 5,
     "laminas": [
       {
-        "lamina": null,
+        "lamina": "microcuento_2_3_05_1",
         "encargo": "Entrada de una casa muy simple: una fila de perchas en la pared, una de ellas vacía. Lúa, de pie, se pone un abrigo AZUL y sube la cremallera. Por la ventana se ven gotas de lluvia gruesas. Abajo, junto a la puerta, UNA sola bota de agua ROJA.",
         "trama": {
           "gl": "Chove moito e Lúa quere saír a xogar. Colle o abrigo azul do colgadoiro, mete un brazo, mete o outro… e sobe a cremalleira: zzzip! Xa está lista! Pero xunto á porta só hai unha bota vermella. Onde está a outra?",
@@ -164,7 +164,7 @@
         }
       },
       {
-        "lamina": null,
+        "lamina": "microcuento_2_3_05_2",
         "encargo": "Primer plano de la otra bota de agua ROJA, tumbada en el suelo bajo las perchas. De dentro asoma la cabeza de un patito AMARILLO de pico NARANJA (el mismo de la lámina 3). Lúa, con el abrigo AZUL, se agacha y lo mira con los ojos muy abiertos y las manos en las mejillas.",
         "trama": {
           "gl": "Lúa busca por toda a entrada. Debaixo dos colgadoiros hai unha bota deitada… e móvese! Cuac! Dentro hai un patiño amarelo, moi a gusto. El tamén quere saír á choiva!",
@@ -242,7 +242,7 @@
         }
       },
       {
-        "lamina": null,
+        "lamina": "microcuento_2_3_05_3",
         "encargo": "Exterior bajo la lluvia: un camino gris con tres charcos redondos. Lúa, con el abrigo AZUL y las dos botas de agua ROJAS, pisa fuerte un charco y salpica. A su lado, el patito AMARILLO de pico NARANJA salta en otro charco. Gotas que saltan en forma de corona. Sin más elementos.",
         "trama": {
           "gl": "Lúa pon as dúas botas vermellas e saen á rúa. Hai charcos por todas partes! Lúa pisa forte: un, dous, tres! E o patiño salta con ela: chap, chap! Que ben se está na choiva cando vas ben abrigada!",

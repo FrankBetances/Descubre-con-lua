@@ -109,11 +109,11 @@
     "esperaSegundos": 5,
     "laminas": [
       {
-        "lamina": null,
+        "lamina": "microcuento_4_5_08_1",
         "encargo": "Bosque al atardecer, con pocos troncos y luz naranja suave. En el centro, una oveja pequeña BLANCA con un lazo AZUL al cuello, sola, balando con la boca abierta. Una mariposa amarilla se aleja volando. Lúa, con una bolsa de tela VERDE al hombro, se acerca con los brazos abiertos.",
         "trama": {
-          "gl": "Unha ovella pequeniña ía detrás dunha bolboreta e perdeuse no bosque. Mee, mee! Onde está o rabaño? Lúa escóitaa e achégase amodo: «Eu lévote á casa». O prado das ovellas está ao outro lado do bosque.",
-          "es": "Una oveja pequeñita iba detrás de una mariposa y se ha perdido en el bosque. ¡Mee, mee! ¿Dónde está el rebaño? Lúa la oye y se acerca despacio: «Yo te llevo a casa». El prado de las ovejas está al otro lado del bosque."
+          "gl": "Unha ovella pequeniña ía detrás dunha bolboreta e perdeuse no bosque. Mee, mee! Onde está o rabaño? Lúa escóitaa e achégase amodo para levala á casa: «Come with me!». O prado das ovellas está ao outro lado do bosque.",
+          "es": "Una oveja pequeñita iba detrás de una mariposa y se ha perdido en el bosque. ¡Mee, mee! ¿Dónde está el rebaño? Lúa la oye y se acerca despacio para llevarla a casa: «Come with me!». El prado de las ovejas está al otro lado del bosque."
         },
         "lua": {
           "onomatopeia": "Mee, mee!",
@@ -187,7 +187,7 @@
         }
       },
       {
-        "lamina": null,
+        "lamina": "microcuento_4_5_08_2",
         "encargo": "Camino del bosque. Debajo de un árbol, un lobo GRIS grande de hocico CLARO duerme enroscado, con los ojos cerrados y tres «z» saliendo de la boca. Por delante pasan de puntillas Lúa, con la bolsa VERDE, y la oveja BLANCA del lazo AZUL, con el dedo (o la pezuña) delante de la boca.",
         "trama": {
           "gl": "No medio do camiño, debaixo dunha árbore, dorme un lobo grande e gris. Rrrr… rrrr…, como ronca! Para non espertalo, Lúa e a ovella pasan de puntiñas, moi amodo, sen facer ningún ruído.",
@@ -265,7 +265,7 @@
         }
       },
       {
-        "lamina": null,
+        "lamina": "microcuento_4_5_08_3",
         "encargo": "El mismo árbol. El lobo GRIS de hocico CLARO, todavía tumbado, abre un solo ojo; de su barriga salen líneas de ruido («grrr»). Bajo la pata de la oveja BLANCA del lazo AZUL, una rama seca partida. Lúa, con la bolsa VERDE, y la oveja, quietas como estatuas. El lobo tiene cara de sueño, no de enfado.",
         "trama": {
           "gl": "Crac! A ovella pisa unha póla seca. O lobo abre un ollo… e a súa barriga fai grrr, grrr! Lúa e a ovella quedan quietas coma pedras. Pero o lobo só bocexa e quéixase: «Ai, que fame teño!».",
@@ -343,7 +343,7 @@
         }
       },
       {
-        "lamina": null,
+        "lamina": "microcuento_4_5_08_4",
         "encargo": "Dos escenas en la misma lámina, separadas por un árbol. A la izquierda, el lobo GRIS de hocico CLARO, con la tripa llena, duerme sonriendo con un trozo de pan de maíz AMARILLO a medio comer; Lúa, con la bolsa VERDE abierta, lo mira tranquila. A la derecha, en un prado verde, la oveja BLANCA del lazo AZUL abraza a una oveja grande BLANCA, su madre.",
         "trama": {
           "gl": "Lúa saca da bolsa un bo anaco de broa e dállo ao lobo. Ñam, ñam! Coa barriga chea, o lobo sorrí, dá as grazas e volve durmir, tranquilo. E ao outro lado do bosque, a ovella pequeniña corre a abrazar a súa nai.",

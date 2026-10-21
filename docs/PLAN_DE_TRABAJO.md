@@ -72,7 +72,7 @@ Comprobado contra la app el 20/10/2026 con `grep` sobre `lib/` y
 - La asamblea corta de 4 fases se queda como opción diaria (P2). En 1.º
   ciclo es una sesión propuesta; en 2.º, el período semanal de inglés.
 - Hecho cuando: Modo Aula → la sesión de 45 min se recorre entera en gl y es,
-  en los cursos que Frank fije.
+  en los cinco cursos.
 
 **F4 · Unidades completas (M3.x ampliado)**
 - Objetivos operativos de cada unidad, sacados del currículo de vocabulario.
@@ -93,6 +93,37 @@ Comprobado contra la app el 20/10/2026 con `grep` sobre `lib/` y
   por su nombre oficial.
 - O8: qué observar sin casilla; manual, imprimibles y README al día, con el
   PDF mirado página a página.
+
+**F7 · El doble toque dice el significado (orden de Frank, 21/10/2026)**
+- Orden: en toda la app, dos toques sobre una frase o palabra en inglés dicen
+  su significado en la lengua de la sesión (gl o es), con voz.
+- El mecanismo ya existe (`BotonEscuchar.significado`), pero solo lo llevan
+  7 de los 34 botones en inglés. Faltan 27, en: calendario (3), STEAM,
+  vocabulario (2), asamblea (2), barra de inglés, colocaciones (2), repaso,
+  escucha, «O modelo», juego de casa, microcuento (3), visor de cuentos, guía
+  de atención, cápsulas, phonics, aprender a leer (3) y láminas (2).
+- Capas: el significado gl/es en el JSON de cada frase, su voz gl y es, el
+  botón y un gate que falle si un botón en inglés no trae significado.
+- Hecho cuando: el gate está verde y el doble toque se ha probado en cada
+  pantalla, en gl y en es.
+
+**F8 · STEAM vertebrador (orden de Frank, 21/10/2026)**
+- Orden: STEAM no puede ser un añadido de cinco sesiones (una por curso). Tiene
+  que vertebrar el curso, con la documentación y los ejemplos que dio Frank.
+- Hoy: 5 unidades en `assets/content/steam/unidades_steam.json`, una por
+  curso, y `docs/BASE_PEDAGOGICA_STEAM.md`.
+- Antes de diseñar: localizar el material STEAM que aportó Frank (en el
+  repositorio solo hay el commit 15f1988f, del 29/9) y contrastarlo pieza a
+  pieza, con una tabla como la del apartado 2. Lo que no se encuentre se le
+  pide a Frank.
+
+**F9 · Las láminas, rehechas con dirección de arte (orden de Frank, 21/10/2026)**
+- Orden: el diseño artístico de las 140 láminas de los microcuentos no es
+  correcto. Se rehacen con la mejor calidad, no con la vía más rápida.
+- Las de F1 salieron de componer piezas de catálogo con rectángulos: sin poses
+  ni expresiones, y con colores fijos. Ese método no sirve.
+- Antes de dibujar: definir con Frank la dirección de arte (estilo,
+  personajes, paleta, poses) sobre tres láminas de muestra, y después las 140.
 
 ## 4. Decisiones de Frank (20/10/2026)
 

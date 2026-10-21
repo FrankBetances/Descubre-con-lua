@@ -79,6 +79,8 @@ flutter:
     - assets/content/unidades_mes/curso_3_4/
     - assets/content/unidades_mes/curso_4_5/
     - assets/content/unidades_mes/curso_5_6/
+    # «O modelo» (F2) y la lista de práctica de la persona adulta (P7).
+    - assets/content/modelo/
     - assets/audio/
     # Las rejillas de Lúa. Hasta ahora solo las leía tools/build_launcher_icons.py
     # en tiempo de compilación, así que nunca se empaquetaron; en cuanto una

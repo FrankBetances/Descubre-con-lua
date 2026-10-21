@@ -91,7 +91,9 @@ NEGACION = re.compile(
     r"do\s+not|avoid|without|nada\s+de|nin\s+de)\b", re.I)
 
 # Campos que dicen qué no hacer: todo su texto es la regla escrita.
-CAMPOS_EVITAR = re.compile(r"(?:evitar|avoid|erroComun)", re.I)
+# `erro` y `nonCabeEsperar` son de «O modelo» (F2): el error que se evita y lo
+# que no cabe esperar de la criatura. Describen lo que NO se hace.
+CAMPOS_EVITAR = re.compile(r"(?:evitar|avoid|erroComun|^erro$|nonCabeEsperar)", re.I)
 
 # Fin de frase, para no mirar negaciones de la frase anterior. Lo que va entre
 # comillas no corta la frase: en «Nunca preguntes «¿cómo se dice?»» el «¿» es de

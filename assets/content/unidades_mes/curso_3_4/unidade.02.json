@@ -101,7 +101,7 @@
     "esperaSegundos": 5,
     "laminas": [
       {
-        "lamina": null,
+        "lamina": "microcuento_3_4_02_1",
         "encargo": "Parque en otoño con planos limpios: un roble a la izquierda que suelta hojas. Lúa con una gasa de seda NARANJA en la mano, mirando hacia arriba. En el suelo, a la derecha, un caracol pequeño de concha VERDE, encogido. En el centro cae una hoja ROJA, muy grande.",
         "trama": {
           "gl": "Chega o outono ao parque. Lúa baila coa súa gasa laranxa e as follas caen, amodo, da árbore. No chan hai un caracol pequeniño que treme de frío: precisa un tellado para durmir! E mira: unha folla vermella, enorme, baixa xusto cara a el.",
@@ -179,7 +179,7 @@
         }
       },
       {
-        "lamina": null,
+        "lamina": "microcuento_3_4_02_2",
         "encargo": "Líneas blancas de viento cruzan de izquierda a derecha. La hoja ROJA vuela por el aire dando vueltas (flecha en espiral). Lúa, con su gasa NARANJA, corre detrás con los brazos estirados. El caracol de concha VERDE mira desde el suelo con los cuernos muy estirados.",
         "trama": {
           "gl": "De súpeto sopra o vento: fiuuu! A folla vermella voa e dá voltas e máis voltas no aire. O caracol mírao todo cos corniños moi estirados. Lúa corre detrás da folla… e sopra ela tamén, para traela de volta.",
@@ -257,7 +257,7 @@
         }
       },
       {
-        "lamina": null,
+        "lamina": "microcuento_3_4_02_3",
         "encargo": "Lúa, con su gasa NARANJA alrededor del cuello, agachada, coloca la hoja ROJA como un tejado sobre el caracol de concha VERDE, que duerme debajo con los ojos cerrados. Al lado, un cesto de mimbre con bellotas. Fondo liso, sin viento.",
         "trama": {
           "gl": "A folla cae por fin ao pé dunha landra. Lúa agáchase, recóllea con coidado e pona enriba do caracol, coma un tellado vermello. Que quentiño se está agora! O caracol pecha os ollos e durme, tranquilo.",

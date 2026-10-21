@@ -10,6 +10,7 @@ import '../../../core/widgets/fila_portal.dart';
 import '../../../data/models/formacion_model.dart';
 import '../../../data/repositories/content_repository.dart';
 import '../../formacion/views/formacion_screen.dart';
+import '../../formacion/views/o_modelo_screen.dart';
 import '../../juega/views/capsulas_aula_screen.dart';
 import '../../premios/premios_model.dart';
 import '../../premios/premios_repository.dart';
@@ -81,6 +82,22 @@ class EuDocenteScreen extends StatelessWidget {
                   perfil: PerfilFormacion.docente,
                   language: language,
                   onLanguageChanged: onLanguageChanged,
+                ),
+              ),
+            ),
+            const SizedBox(height: 10),
+            FilaPortal(
+              clave: 'eu_o_modelo',
+              icona: Icons.record_voice_over_rounded,
+              nome: OModeloScreen.nome.resolve(language),
+              di: OModeloScreen.di.resolve(language),
+              onTap: () => _abrir(
+                context,
+                (_) => OModeloScreen(
+                  paraAula: true,
+                  language: language,
+                  onLanguageChanged: onLanguageChanged,
+                  audioService: audioService,
                 ),
               ),
             ),

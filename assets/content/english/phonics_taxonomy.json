@@ -1955,8 +1955,8 @@
       "missionType": "find_phoneme",
       "targetPhonemeId": "ph_c_k",
       "audioPrompt": {
-        "gl": "Lúa di: \"Escanea o toca o son inicial /k/ como en cat e mazá!\"",
-        "es": "Lúa dice: \"¡Escanea o toca el sonido inicial /k/ como en cat y manzana!\""
+        "gl": "Lúa di: \"Find /k/! /k/, /k/, cat!\"",
+        "es": "Lúa dice: \"Find /k/! /k/, /k/, cat!\""
       },
       "hint": {
         "gl": "Busca a tarxeta coa letra C ou K.",
@@ -1978,8 +1978,8 @@
       "missionType": "blend_cvc",
       "targetWordId": "w_cat",
       "audioPrompt": {
-        "gl": "Lúa di: \"Coloca as letras na mesa física: /k/ ... /æ/ ... /t/ -> CAT!\"",
-        "es": "Lúa dice: \"Coloca las letras en la mesa física: /k/ ... /æ/ ... /t/ -> ¡CAT!\""
+        "gl": "Lúa di: \"Let's build it: /k/ /æ/ /t/… cat!\"",
+        "es": "Lúa dice: \"Let's build it: /k/ /æ/ /t/… cat!\""
       },
       "hint": {
         "gl": "Combina as tres letras de madeira C - A - T.",
@@ -2002,8 +2002,8 @@
       "missionType": "rhyme_match",
       "targetWordId": "w_bat",
       "audioPrompt": {
-        "gl": "Lúa di: \"Que palabra rima con cat e voa na noite? Comeza por /b/!\"",
-        "es": "Lúa dice: \"¿Qué palabra rima con cat y vuela en la noche? ¡Empieza por /b/!\""
+        "gl": "Lúa di: \"Cat… b…? It flies at night!\"",
+        "es": "Lúa dice: \"Cat… b…? It flies at night!\""
       },
       "hint": {
         "gl": "É o morcego bat (/b/ + /at/).",
@@ -2026,8 +2026,8 @@
       "missionType": "find_phoneme",
       "targetPhonemeId": "ph_s",
       "audioPrompt": {
-        "gl": "Lúa di: \"Escanea o son silbante /s/ como a serpe ou o sol de verán!\"",
-        "es": "Lúa dice: \"¡Escanea el sonido silbante /s/ como la serpiente o el sol de verano!\""
+        "gl": "Lúa di: \"Find /s/! Sss, like a snake!\"",
+        "es": "Lúa dice: \"Find /s/! Sss, like a snake!\""
       },
       "hint": {
         "gl": "Toca a letra S na mesa de lectura.",
@@ -2048,8 +2048,8 @@
       "missionType": "blend_cvc",
       "targetWordId": "w_ship",
       "audioPrompt": {
-        "gl": "Lúa di: \"Fai o son de silencio /ʃ/ e constrúe o barco marítimo SHIP!\"",
-        "es": "Lúa dice: \"¡Haz el sonido de silencio /ʃ/ y construye el barco marítimo SHIP!\""
+        "gl": "Lúa di: \"Shhh! /ʃ/… let's build ship!\"",
+        "es": "Lúa dice: \"Shhh! /ʃ/… let's build ship!\""
       },
       "hint": {
         "gl": "Combina o dígrafo SH + I + P.",
@@ -2073,8 +2073,8 @@
       "missionType": "magic_e_transform",
       "targetWordId": "w_cake",
       "audioPrompt": {
-        "gl": "Lúa di: \"Engade o E silencioso ao final para transformar a vogal en CAKE!\"",
-        "es": "Lúa dice: \"¡Añade la E silenciosa al final para transformar la vocal en CAKE!\""
+        "gl": "Lúa di: \"Add a magic E… cake!\"",
+        "es": "Lúa dice: \"Add a magic E… cake!\""
       },
       "hint": {
         "gl": "A letra E fai que a letra A diga o seu nome en inglés: /eɪ/.",

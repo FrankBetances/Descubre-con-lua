@@ -41,8 +41,8 @@
         },
         "lamina": "conto_corpo_1",
         "texto": {
-          "gl": "Esta mañá Lúa está seria. Non ri nin un pouquiño. «Perdín as cóxegas», di.",
-          "es": "Esta mañana Lúa está seria. No se ríe ni un poquito. «He perdido las cosquillas», dice."
+          "gl": "Esta mañá Lúa está seria. Non ri nin un pouquiño. Perdeu as cóxegas. «No tickles!», di.",
+          "es": "Esta mañana Lúa está seria. No se ríe ni un poquito. Ha perdido las cosquillas. «No tickles!», dice."
         },
         "preguntaImaxe": {
           "gl": "Quen sae nesta lámina? Sinálao co dedo.",
@@ -1057,8 +1057,8 @@
         },
         "lamina": "conto_inverno_2",
         "texto": {
-          "gl": "«Non vexo nada», di Lúa. Tapa a cara coa manta. Non pode durmir.",
-          "es": "«No veo nada», dice Lúa. Se tapa la cara con la manta. No puede dormir."
+          "gl": "«I can't see!», di Lúa. Tapa a cara coa manta. Non pode durmir.",
+          "es": "«I can't see!», dice Lúa. Se tapa la cara con la manta. No puede dormir."
         },
         "preguntaImaxe": {
           "gl": "Que pasa agora? Como está Lúa?",
@@ -1837,8 +1837,8 @@
         },
         "lamina": "conto_cores_1",
         "texto": {
-          "gl": "Lúa ten unha idea: «Toca nos silencios!». Os grandes fan PUM, e Pío fai tic.",
-          "es": "Lúa tiene una idea: «¡Toca en los silencios!». Los grandes hacen PUM, y Pío hace tic."
+          "gl": "Lúa ten unha idea: tocar nos silencios. «Play in the quiet!». Os grandes fan PUM, e Pío fai tic.",
+          "es": "Lúa tiene una idea: tocar en los silencios. «Play in the quiet!». Los grandes hacen PUM, y Pío hace tic."
         },
         "preguntaImaxe": {
           "gl": "Como o arranxaron? Sinala o que usaron.",
@@ -3959,8 +3959,8 @@
         },
         "lamina": "conto_benvida_1",
         "texto": {
-          "gl": "É o último día de curso. Lúa pregunta: «Medrei este ano?».",
-          "es": "Es el último día de curso. Lúa pregunta: «¿He crecido este año?»."
+          "gl": "É o último día de curso. Lúa quere saber se medrou: «Am I bigger?».",
+          "es": "Es el último día de curso. Lúa quiere saber si ha crecido: «Am I bigger?»."
         },
         "preguntaImaxe": {
           "gl": "Quen sae nesta lámina? Sinálao co dedo.",
@@ -4573,8 +4573,8 @@
         },
         "lamina": "conto_benvida_2",
         "texto": {
-          "gl": "Lúa ten unha idea: «Xogamos á roda de Nela: moi, moi amodo!». Todos van ao paso da tartaruga.",
-          "es": "Lúa tiene una idea: «¡Jugamos al corro de Nela: muy, muy despacio!». Todos van al paso de la tortuga."
+          "gl": "Lúa ten unha idea: xogar á roda de Nela, moi, moi amodo. «Slow, slow, slow!». Todos van ao paso da tartaruga.",
+          "es": "Lúa tiene una idea: jugar al corro de Nela, muy, muy despacio. «Slow, slow, slow!». Todos van al paso de la tortuga."
         },
         "preguntaImaxe": {
           "gl": "Como o arranxaron? Sinala o que usaron.",
@@ -4813,8 +4813,8 @@
         },
         "lamina": "conto_corpo_1",
         "texto": {
-          "gl": "Lúa xoga con ela: «Cando eu diga \"xa\", paras». Rita salta, salta… «Xa!», e Rita cae de nariz.",
-          "es": "Lúa juega con ella: «Cuando yo diga \"ya\", paras». Rita salta, salta… «¡Ya!», y Rita se cae de nariz."
+          "gl": "Lúa xoga con ela: cando Lúa diga «Stop!», Rita para. Rita salta, salta… «Stop!», e Rita cae de nariz.",
+          "es": "Lúa juega con ella: cuando Lúa diga «Stop!», Rita para. Rita salta, salta… «Stop!», y Rita se cae de nariz."
         },
         "preguntaImaxe": {
           "gl": "Que fai agora Rita? Faino ti co corpo.",
@@ -4835,8 +4835,8 @@
         },
         "lamina": "conto_corpo_2",
         "texto": {
-          "gl": "Proban outra vez: «Salta, salta… e dobra os xeonllos para frear». Rita dobra os xeonllos.",
-          "es": "Prueban otra vez: «Salta, salta… y dobla las rodillas para frenar». Rita dobla las rodillas."
+          "gl": "Proban outra vez: hai que dobrar os xeonllos para frear. «Jump, jump… bend your knees!». Rita dobra os xeonllos.",
+          "es": "Prueban otra vez: hay que doblar las rodillas para frenar. «Jump, jump… bend your knees!». Rita dobla las rodillas."
         },
         "preguntaImaxe": {
           "gl": "Como o arranxaron? Sinala o que usaron.",
@@ -5625,8 +5625,8 @@
         },
         "lamina": "conto_choiva_1",
         "texto": {
-          "gl": "Lúa salta para collelo, pero non chega. O paraugas vai camiño do mar. «Para, para!»",
-          "es": "Lúa salta para cogerlo, pero no llega. El paraguas va camino del mar. «¡Para, para!»"
+          "gl": "Lúa salta para collelo, pero non chega. O paraugas vai camiño do mar. «Stop, umbrella, stop!»",
+          "es": "Lúa salta para cogerlo, pero no llega. El paraguas va camino del mar. «Stop, umbrella, stop!»"
         },
         "preguntaImaxe": {
           "gl": "Que fai agora Lúa? Faino ti co corpo.",
@@ -6083,8 +6083,8 @@
         },
         "lamina": "conto_inverno_1",
         "texto": {
-          "gl": "Fai frío e o avó fai sopa. Lúa quere axudar. «Que botamos?», pregunta.",
-          "es": "Hace frío y el abuelo hace sopa. Lúa quiere ayudar. «¿Qué echamos?», pregunta."
+          "gl": "Fai frío e o avó fai sopa. Lúa quere axudar. «What goes in?», pregunta.",
+          "es": "Hace frío y el abuelo hace sopa. Lúa quiere ayudar. «What goes in?», pregunta."
         },
         "preguntaImaxe": {
           "gl": "Quen sae nesta lámina? Sinálao co dedo.",
@@ -6183,8 +6183,8 @@
         },
         "lamina": "conto_inverno_2",
         "texto": {
-          "gl": "«Verzas!», di Lúa. O avó bota as verzas e un pouquiño de sal. Proba: «Agora si!».",
-          "es": "«¡Berzas!», dice Lúa. El abuelo echa las berzas y un poquito de sal. Prueba: «¡Ahora sí!»."
+          "gl": "«Cabbage!», di Lúa, e sinala as verzas. O avó bota as verzas e un pouquiño de sal. Proba: «Agora si!».",
+          "es": "«Cabbage!», dice Lúa, y señala las berzas. El abuelo echa las berzas y un poquito de sal. Prueba: «¡Ahora sí!»."
         },
         "preguntaImaxe": {
           "gl": "Como o arranxaron? Sinala o que usaron.",
@@ -6951,8 +6951,8 @@
         },
         "lamina": "conto_cores_1",
         "texto": {
-          "gl": "Lúa e os nenos son pequenos: ven todo o que hai no chan. «Buscámolo nós!»",
-          "es": "Lúa y los niños son pequeños: ven todo lo que hay en el suelo. «¡Lo buscamos nosotros!»"
+          "gl": "Lúa e os nenos son pequenos: ven todo o que hai no chan. «We can find it!»",
+          "es": "Lúa y los niños son pequeños: ven todo lo que hay en el suelo. «We can find it!»"
         },
         "preguntaImaxe": {
           "gl": "Que fai agora o Meco? Faino ti co corpo.",
@@ -7763,8 +7763,8 @@
         },
         "lamina": "conto_primavera_1",
         "texto": {
-          "gl": "Lúa dille: «E por que non probas unha amarela? Tamén ten néctar».",
-          "es": "Lúa le dice: «¿Y por qué no pruebas una amarilla? También tiene néctar»."
+          "gl": "Lúa dille que probe unha flor amarela: tamén ten néctar. «Try a yellow one!»",
+          "es": "Lúa le dice que pruebe una flor amarilla: también tiene néctar. «Try a yellow one!»"
         },
         "preguntaImaxe": {
           "gl": "Que fai agora a bolboreta Aniña? Faino ti co corpo.",
@@ -8049,8 +8049,8 @@
         },
         "lamina": "conto_choiva_2",
         "texto": {
-          "gl": "Lúa ve unha árbore grande coas follas moi xuntas. «Baixo a árbore e o paraugas á vez!»",
-          "es": "Lúa ve un árbol grande con las hojas muy juntas. «¡Bajo el árbol y el paraguas a la vez!»"
+          "gl": "Lúa ve unha árbore grande coas follas moi xuntas: baixo a árbore e o paraugas caben todos. «Under the tree, everyone!»",
+          "es": "Lúa ve un árbol grande con las hojas muy juntas: bajo el árbol y el paraguas caben todos. «Under the tree, everyone!»"
         },
         "preguntaImaxe": {
           "gl": "Como o arranxaron? Sinala o que usaron.",
@@ -9387,8 +9387,8 @@
         },
         "lamina": "conto_auga_1",
         "texto": {
-          "gl": "Lúa ten unha idea: «Cando xogas, cada pouco pregunta á túa barriga: teño que ir?».",
-          "es": "Lúa tiene una idea: «Cuando juegas, cada poco pregúntale a tu barriga: ¿tengo que ir?»."
+          "gl": "Lúa ten unha idea: cando xoga, Xiana pode preguntarlle á barriga se ten que ir. «Ask your tummy!»",
+          "es": "Lúa tiene una idea: cuando juega, Xiana puede preguntarle a la barriga si tiene que ir. «Ask your tummy!»"
         },
         "preguntaImaxe": {
           "gl": "Que fai agora Xiana? Faino ti co corpo.",
@@ -9881,8 +9881,8 @@
         },
         "lamina": "conto_benvida_2",
         "texto": {
-          "gl": "Lúa quere ser a primeira en adiviñalo. Mira a caixa por todos os lados, pero é de madeira e non se ve nada. «Son caramelos!», di. A mestra nega coa cabeza.",
-          "es": "Lúa quiere ser la primera en adivinarlo. Mira la caja por todos los lados, pero es de madera y no se ve nada. «¡Son caramelos!», dice. La maestra niega con la cabeza."
+          "gl": "Lúa quere ser a primeira en adiviñalo. Mira a caixa por todos os lados, pero é de madeira e non se ve nada. «Sweets!», di. A mestra nega coa cabeza.",
+          "es": "Lúa quiere ser la primera en adivinarlo. Mira la caja por todos los lados, pero es de madera y no se ve nada. «Sweets!», dice. La maestra niega con la cabeza."
         },
         "preguntaImaxe": {
           "gl": "Que quere Lúa? Móstrao co dedo.",
@@ -9909,8 +9909,8 @@
         },
         "lamina": "conto_benvida_3",
         "texto": {
-          "gl": "Lúa cheira a caixa: non cheira a nada. «É un xoguete!», proba. Non. Lúa estase a enfadar: quere saber xa!",
-          "es": "Lúa huele la caja: no huele a nada. «¡Es un juguete!», prueba. No. Lúa se está enfadando: ¡quiere saber ya!"
+          "gl": "Lúa cheira a caixa: non cheira a nada. «A toy!», proba. Non. Lúa estase a enfadar: quere saber xa!",
+          "es": "Lúa huele la caja: no huele a nada. «A toy!», prueba. No. Lúa se está enfadando: ¡quiere saber ya!"
         },
         "preguntaImaxe": {
           "gl": "Que pasa agora? Como está Lúa?",
@@ -9961,8 +9961,8 @@
         },
         "lamina": "conto_benvida_2",
         "texto": {
-          "gl": "Todos escoitan con atención. Martiño pon a orella: «Parece o mar!». Xiana di: «Parece a choiva!». Lúa pensa… «Son sementes!».",
-          "es": "Todos escuchan con atención. Martiño pone la oreja: «¡Parece el mar!». Xiana dice: «¡Parece la lluvia!». Lúa piensa… «¡Son semillas!»."
+          "gl": "Todos escoitan con atención. Martiño pon a orella: «Parece o mar!». Xiana di: «Parece a choiva!». Lúa pensa… «Seeds!».",
+          "es": "Todos escuchan con atención. Martiño pone la oreja: «¡Parece el mar!». Xiana dice: «¡Parece la lluvia!». Lúa piensa… «Seeds!»."
         },
         "preguntaImaxe": {
           "gl": "Como o arranxaron? Sinala o que usaron.",
@@ -10205,8 +10205,8 @@
         },
         "lamina": "conto_animais_1",
         "texto": {
-          "gl": "Lúa ofrécese: «Eu son gata, parente dos raposos. Mira: pés suaves, corpo baixo, ollos atentos». E camiña sen facer ningún ruído.",
-          "es": "Lúa se ofrece: «Yo soy gata, pariente de los zorros. Mira: pies suaves, cuerpo bajo, ojos atentos». Y camina sin hacer ningún ruido."
+          "gl": "Lúa ofrécese: é gata, parente dos raposos, e sabe camiñar sen ruído. «Look! Soft paws, low and slow.» E camiña sen facer ningún ruído.",
+          "es": "Lúa se ofrece: es gata, pariente de los zorros, y sabe caminar sin ruido. «Look! Soft paws, low and slow.» Y camina sin hacer ningún ruido."
         },
         "preguntaImaxe": {
           "gl": "Que fai agora Brais? Faino ti co corpo.",
@@ -11835,8 +11835,8 @@
         },
         "lamina": "conto_animais_1",
         "texto": {
-          "gl": "Xelo senta só na súa rocha. Lúa, que pasaba por alí, dille: «Achegarse de súpeto asusta. E non preguntaches que queren eles».",
-          "es": "Xelo se sienta solo en su roca. Lúa, que pasaba por allí, le dice: «Acercarse de golpe asusta. Y no has preguntado qué quieren ellos»."
+          "gl": "Xelo senta só na súa rocha. Lúa, que pasaba por alí, explícalle que achegarse de súpeto asusta, e que non lles preguntou que queren. «Go slowly. Ask them!»",
+          "es": "Xelo se sienta solo en su roca. Lúa, que pasaba por allí, le explica que acercarse de golpe asusta, y que no les ha preguntado qué quieren. «Go slowly. Ask them!»"
         },
         "preguntaImaxe": {
           "gl": "Que fai agora o lobo Xelo? Faino ti co corpo.",
@@ -13191,8 +13191,8 @@
         },
         "lamina": "conto_primavera_1",
         "texto": {
-          "gl": "Lúa, que dorme ao sol xunto á cabaza, abre un ollo. «Por que non entras de costas? Así sempre ves a saída».",
-          "es": "Lúa, que duerme al sol junto a la calabaza, abre un ojo. «¿Por qué no entras de espaldas? Así siempre ves la salida»."
+          "gl": "Lúa, que dorme ao sol xunto á cabaza, abre un ollo e dálle un truco: entrar de costas, para ver sempre a saída. «Go in backwards!»",
+          "es": "Lúa, que duerme al sol junto a la calabaza, abre un ojo y le da un truco: entrar de espaldas, para ver siempre la salida. «Go in backwards!»"
         },
         "preguntaImaxe": {
           "gl": "Que fai agora a abella Zuca? Faino ti co corpo.",
@@ -14543,8 +14543,8 @@
         },
         "lamina": "conto_mar_1",
         "texto": {
-          "gl": "Na aldea, Lúa escoita a bucina. Corre a avisar a todos os veciños: «O faro apagouse! Un barco non atopa o camiño!».",
-          "es": "En la aldea, Lúa escucha la bocina. Corre a avisar a todos los vecinos: «¡El faro se ha apagado! ¡Un barco no encuentra el camino!»."
+          "gl": "Na aldea, Lúa escoita a bucina. Corre a avisar a todos os veciños de que o faro se apagou: «The light is out! Help the boat!».",
+          "es": "En la aldea, Lúa escucha la bocina. Corre a avisar a todos los vecinos de que el faro se ha apagado: «The light is out! Help the boat!»."
         },
         "preguntaImaxe": {
           "gl": "Que fai agora o faro vello? Faino ti co corpo.",

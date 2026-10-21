@@ -1,12 +1,12 @@
 {
- "generatedAt": "2026-10-20T10:00:55Z",
- "entries": 23641,
+ "generatedAt": "2026-10-21T04:58:22Z",
+ "entries": 23663,
  "byStyle": {
   "slow": 5915,
-  "tutor": 17726
+  "tutor": 17748
  },
  "byLang": {
-  "en": 14205,
+  "en": 14227,
   "es": 4719,
   "gl": 4717
  },
@@ -55362,6 +55362,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_07f8d5c7_18",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Water! Cold water!",
+   "speech": "Water! Cold water!",
+   "source": "modelo/etapas/exemploAula",
+   "pack": false
+  },
+  {
    "id": "en_tutor_08127677_24",
    "lang": "en",
    "style": "tutor",
@@ -59799,6 +59808,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_168e4d71_29",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Yes, it is raining! Boots on!",
+   "speech": "Yes, it is raining! Boots on!",
+   "source": "modelo/etapas/exemploCasa",
+   "pack": false
+  },
+  {
    "id": "en_tutor_168ea387_31",
    "lang": "en",
    "style": "tutor",
@@ -62193,6 +62211,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_1f1dd6a3_20",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Look! A little fish!",
+   "speech": "Look! A little fish!",
+   "source": "modelo/lua_solo_ingles/exemploAula",
+   "pack": false
+  },
+  {
    "id": "en_tutor_1f4572a4_44",
    "lang": "en",
    "style": "tutor",
@@ -62829,6 +62856,15 @@
    "text": "Tourism is important for the local economy.",
    "speech": "Tourism is important for the local economy.",
    "source": "corpus/1310/frase",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_2212c47a_20",
+   "lang": "en",
+   "style": "tutor",
+   "text": "You fill the bucket.",
+   "speech": "You fill the bucket.",
+   "source": "modelo/habla_paralela/exemploCasa",
    "pack": false
   },
   {
@@ -63720,6 +63756,15 @@
    "text": "We made a birthday card for grandma.",
    "speech": "We made a birthday card for grandma.",
    "source": "corpus/137/frase",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_25208dcf_20",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Oh, the brush broke!",
+   "speech": "Oh, the brush broke!",
+   "source": "modelo/recast/exemploAula",
    "pack": false
   },
   {
@@ -65442,6 +65487,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_2ace48f6_14",
+   "lang": "en",
+   "style": "tutor",
+   "text": "A little bird!",
+   "speech": "A little bird!",
+   "source": "modelo/expansion/exemploAula",
+   "pack": false
+  },
+  {
    "id": "en_tutor_2ad2c1c1_20",
    "lang": "en",
    "style": "tutor",
@@ -67086,6 +67140,15 @@
    "text": "What do you do first when you wake up?",
    "speech": "What do you do first when you wake up?",
    "source": "microcuento.curso_5_6.09/3/triada.achegar",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_30866edf_26",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Bath time! Splash, splash!",
+   "speech": "Bath time! Splash, splash!",
+   "source": "academy.rutinas_bano_de_lenguaje.01/luaEn",
    "pack": false
   },
   {
@@ -69732,6 +69795,15 @@
    "text": "Sugar can cause tooth decay.",
    "speech": "Sugar can cause tooth decay.",
    "source": "corpus/3250/frase",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_39a9404d_17",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Look! A big boat!",
+   "speech": "Look! A big boat!",
+   "source": "modelo/parentese/exemploAula",
    "pack": false
   },
   {
@@ -72495,6 +72567,15 @@
    "text": "Rocking chair",
    "speech": "Rocking chair",
    "source": "tpr.0_2.setembro/s3/0_2.setembro.s3.rocking-chair",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_42e1b7ca_13",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Look! A ball!",
+   "speech": "Look! A ball!",
+   "source": "academy.como_se_aprende_a_hablar.01/luaEn",
    "pack": false
   },
   {
@@ -80922,6 +81003,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_60e74cd2_27",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Coat? Yes, your coat is on!",
+   "speech": "Coat? Yes, your coat is on!",
+   "source": "academy.segundo_ciclo.setembro.01/luaEn",
+   "pack": false
+  },
+  {
    "id": "en_tutor_60f85998_41",
    "lang": "en",
    "style": "tutor",
@@ -83583,6 +83673,15 @@
    "text": "If it doesn't work, we try again",
    "speech": "If it doesn't work, we try again",
    "source": "tpr.5_6.setembro/s3/5_6.setembro.s3.if-it-doesn-t-work-we-try-again",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_696393b5_19",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Hello, sleepy duck!",
+   "speech": "Hello, sleepy duck!",
+   "source": "modelo/lua_solo_ingles/exemploCasa",
    "pack": false
   },
   {
@@ -86535,6 +86634,15 @@
    "text": "A local bakery sponsors the football team.",
    "speech": "A local bakery sponsors the football team.",
    "source": "corpus/2869/frase",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_72bce820_27",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Up, up, up! Tickle, tickle!",
+   "speech": "Up, up, up! Tickle, tickle!",
+   "source": "academy.juego_movimiento_sin_pantallas.01/luaEn",
    "pack": false
   },
   {
@@ -96744,6 +96852,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_94c5c348_10",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Your shoe!",
+   "speech": "Your shoe!",
+   "source": "modelo/expansion/exemploCasa",
+   "pack": false
+  },
+  {
    "id": "en_tutor_94c6efd7_26",
    "lang": "en",
    "style": "tutor",
@@ -105159,6 +105276,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_b2c5852f_18",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Good night, teddy!",
+   "speech": "Good night, teddy!",
+   "source": "modelo/compuerta_social/exemploCasa",
+   "pack": false
+  },
+  {
    "id": "en_tutor_b2d2196d_15",
    "lang": "en",
    "style": "tutor",
@@ -106266,6 +106392,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_b6ee58ac_23",
+   "lang": "en",
+   "style": "tutor",
+   "text": "A dog! Woof? Yes, woof!",
+   "speech": "A dog! Woof? Yes, woof!",
+   "source": "academy.turnos_atencion_conjunta.01/luaEn",
+   "pack": false
+  },
+  {
    "id": "en_tutor_b7061eb3_17",
    "lang": "en",
    "style": "tutor",
@@ -106752,6 +106887,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_b940ec70_19",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Splash! Warm water!",
+   "speech": "Splash! Warm water!",
+   "source": "modelo/parentese/exemploCasa",
+   "pack": false
+  },
+  {
    "id": "en_tutor_b94a4547_49",
    "lang": "en",
    "style": "tutor",
@@ -107202,6 +107346,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_bb0bdf21_18",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Where is the duck?",
+   "speech": "Where is the duck?",
+   "source": "modelo/espera/exemploAula",
+   "pack": false
+  },
+  {
    "id": "en_tutor_bb1da78e_31",
    "lang": "en",
    "style": "tutor",
@@ -107586,6 +107739,15 @@
    "text": "What do you find in the park in autumn?",
    "speech": "What do you find in the park in autumn?",
    "source": "microcuento.curso_5_6.03/3/triada.achegar",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_bc07c208_27",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Hello! Look, a little duck!",
+   "speech": "Hello! Look, a little duck!",
+   "source": "modelo/compuerta_social/exemploAula",
    "pack": false
   },
   {
@@ -112071,6 +112233,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_ca4d491b_26",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Yes! You went to the park!",
+   "speech": "Yes! You went to the park!",
+   "source": "modelo/recast/exemploCasa",
+   "pack": false
+  },
+  {
    "id": "en_tutor_ca4e036a_34",
    "lang": "en",
    "style": "tutor",
@@ -115029,6 +115200,15 @@
    "text": "Don't snatch the toy from your sister.",
    "speech": "Don't snatch the toy from your sister.",
    "source": "corpus/3825/frase",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_d3b0d5fb_25",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Two languages? Lucky you!",
+   "speech": "Two languages? Lucky you!",
+   "source": "academy.bilinguismo_y_cultura.01/luaEn",
    "pack": false
   },
   {
@@ -120963,6 +121143,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_e8ac4b4d_23",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Do you want more apple?",
+   "speech": "Do you want more apple?",
+   "source": "modelo/espera/exemploCasa",
+   "pack": false
+  },
+  {
    "id": "en_tutor_e8b5dc8a_33",
    "lang": "en",
    "style": "tutor",
@@ -124461,6 +124650,15 @@
    "text": "We ought to wait a few more seconds.",
    "speech": "We ought to wait a few more seconds.",
    "source": "corpus/600/frase",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_f48b9fac_29",
+   "lang": "en",
+   "style": "tutor",
+   "text": "You put the red block on top.",
+   "speech": "You put the red block on top.",
+   "source": "modelo/habla_paralela/exemploAula",
    "pack": false
   },
   {
@@ -130214,6 +130412,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_0c4e820b_137",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Cuando te pidan pantalla, ofrece cuerpo: hombros, cosquillas, subir y bajar. Y habla de lo que estáis haciendo mientras pasa, no después.",
+   "speech": "Cuando te pidan pantalla, ofrece cuerpo: hombros, cosquillas, subir y bajar. Y habla de lo que estáis haciendo mientras pasa, no después.",
+   "source": "academy.juego_movimiento_sin_pantallas.01/luaDice",
+   "pack": false
+  },
+  {
    "id": "es_tutor_0c53e62e_29",
    "lang": "es",
    "style": "tutor",
@@ -130554,15 +130761,6 @@
    "speech": "Dedo gordo",
    "source": "tpr.0_2.outubro/s4/0_2.outubro.s4.big-toe/significado",
    "pack": true
-  },
-  {
-   "id": "es_tutor_0ebe6808_151",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Soy Lúa. Hoy no dirijas: mira lo que está mirando, ponle nombre y espera. Si contesta con un sonido o un gesto, devuélveselo como si fuese una palabra.",
-   "speech": "Soy Lúa. Hoy no dirijas: mira lo que está mirando, ponle nombre y espera. Si contesta con un sonido o un gesto, devuélveselo como si fuese una palabra.",
-   "source": "academy.turnos_atencion_conjunta.01/luaDice",
-   "pack": false
   },
   {
    "id": "es_tutor_0ef14855_5",
@@ -131427,15 +131625,6 @@
    "speech": "¡Hola, sol!",
    "source": "tpr.3_4.abril/s1/3_4.abril.s1.hello-sun/significado",
    "pack": true
-  },
-  {
-   "id": "es_tutor_1420c835_138",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Soy Lúa. Hoy quédate con un solo gesto: nombra lo que esté mirando y después calla mientras cuentas hasta cinco. Ese silencio es su turno.",
-   "speech": "Soy Lúa. Hoy quédate con un solo gesto: nombra lo que esté mirando y después calla mientras cuentas hasta cinco. Ese silencio es su turno.",
-   "source": "academy.como_se_aprende_a_hablar.01/luaDice",
-   "pack": false
   },
   {
    "id": "es_tutor_1420d6df_22",
@@ -135360,6 +135549,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_2a1ee7a1_129",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Hoy quédate con un solo gesto: nombra lo que esté mirando y después calla mientras cuentas hasta cinco. Ese silencio es su turno.",
+   "speech": "Hoy quédate con un solo gesto: nombra lo que esté mirando y después calla mientras cuentas hasta cinco. Ese silencio es su turno.",
+   "source": "academy.como_se_aprende_a_hablar.01/luaDice",
+   "pack": false
+  },
+  {
    "id": "es_tutor_2a255c37_17",
    "lang": "es",
    "style": "tutor",
@@ -135952,6 +136150,15 @@
    "speech": "Vida marina",
    "source": "tpr.5_6.abril/s1/5_6.abril.s1.marine-life/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_2e1cb64a_123",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Habla en la lengua que te sale sola y no le corrijas las mezclas. Juntar las dos en una frase no es un error: es tener dos.",
+   "speech": "Habla en la lengua que te sale sola y no le corrijas las mezclas. Juntar las dos en una frase no es un error: es tener dos.",
+   "source": "academy.bilinguismo_y_cultura.01/luaDice",
+   "pack": false
   },
   {
    "id": "es_tutor_2e2486f7_9",
@@ -147848,15 +148055,6 @@
    "pack": true
   },
   {
-   "id": "es_tutor_758ef845_181",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Soy Lúa. Elige UN momento del día —el abrigo, los zapatos— y quédate ahí tres minutos. Cuando diga la frase a medias, devuélvesela entera y sigue jugando: no le pidas que la repita.",
-   "speech": "Soy Lúa. Elige UN momento del día —el abrigo, los zapatos— y quédate ahí tres minutos. Cuando diga la frase a medias, devuélvesela entera y sigue jugando: no le pidas que la repita.",
-   "source": "academy.segundo_ciclo.setembro.01/luaDice",
-   "pack": false
-  },
-  {
    "id": "es_tutor_7590591a_17",
    "lang": "es",
    "style": "tutor",
@@ -149048,15 +149246,6 @@
    "speech": "Vamos a calentarnos",
    "source": "tpr.0_2.decembro/s1/0_2.decembro.s1.let-s-get-cosy/significado",
    "pack": true
-  },
-  {
-   "id": "es_tutor_7bfc6036_132",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Soy Lúa. Habla en la lengua que te sale sola y no le corrijas las mezclas. Juntar las dos en una frase no es un error: es tener dos.",
-   "speech": "Soy Lúa. Habla en la lengua que te sale sola y no le corrijas las mezclas. Juntar las dos en una frase no es un error: es tener dos.",
-   "source": "academy.bilinguismo_y_cultura.01/luaDice",
-   "pack": false
   },
   {
    "id": "es_tutor_7bfeb353_8",
@@ -151415,15 +151604,6 @@
    "speech": "Piña",
    "source": "tpr.2_3.marzo/s2/2_3.marzo.s2.pineapple/significado",
    "pack": true
-  },
-  {
-   "id": "es_tutor_8abc03c4_167",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Soy Lúa. Elige una sola rutina —el baño, la cena, el abrigo— y esta semana dila siempre con las mismas palabras. Lo aburrido para ti es justo lo que ya puede adivinar.",
-   "speech": "Soy Lúa. Elige una sola rutina —el baño, la cena, el abrigo— y esta semana dila siempre con las mismas palabras. Lo aburrido para ti es justo lo que ya puede adivinar.",
-   "source": "academy.rutinas_bano_de_lenguaje.01/luaDice",
-   "pack": false
   },
   {
    "id": "es_tutor_8abd27fb_4",
@@ -157029,15 +157209,6 @@
    "speech": "Total",
    "source": "tpr.5_6.novembro/s2/5_6.novembro.s2.total/significado",
    "pack": true
-  },
-  {
-   "id": "es_tutor_ad0a86cf_146",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Soy Lúa. Cuando te pidan pantalla, ofrece cuerpo: hombros, cosquillas, subir y bajar. Y habla de lo que estáis haciendo mientras pasa, no después.",
-   "speech": "Soy Lúa. Cuando te pidan pantalla, ofrece cuerpo: hombros, cosquillas, subir y bajar. Y habla de lo que estáis haciendo mientras pasa, no después.",
-   "source": "academy.juego_movimiento_sin_pantallas.01/luaDice",
-   "pack": false
   },
   {
    "id": "es_tutor_ad0d9616_17",
@@ -166114,6 +166285,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_e4c65b4c_142",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Hoy no dirijas: mira lo que está mirando, ponle nombre y espera. Si contesta con un sonido o un gesto, devuélveselo como si fuese una palabra.",
+   "speech": "Hoy no dirijas: mira lo que está mirando, ponle nombre y espera. Si contesta con un sonido o un gesto, devuélveselo como si fuese una palabra.",
+   "source": "academy.turnos_atencion_conjunta.01/luaDice",
+   "pack": false
+  },
+  {
    "id": "es_tutor_e4de836c_4",
    "lang": "es",
    "style": "tutor",
@@ -169211,6 +169391,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_f6e9c839_172",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Elige UN momento del día —el abrigo, los zapatos— y quédate ahí tres minutos. Cuando diga la frase a medias, devuélvesela entera y sigue jugando: no le pidas que la repita.",
+   "speech": "Elige UN momento del día —el abrigo, los zapatos— y quédate ahí tres minutos. Cuando diga la frase a medias, devuélvesela entera y sigue jugando: no le pidas que la repita.",
+   "source": "academy.segundo_ciclo.setembro.01/luaDice",
+   "pack": false
+  },
+  {
    "id": "es_tutor_f6eb757c_42",
    "lang": "es",
    "style": "tutor",
@@ -169892,6 +170081,15 @@
    "text": "Es necesario exigir que el bebé repita las palabras correctamente cada vez que las pronuncia mal.",
    "speech": "Es necesario exigir que el bebé repita las palabras correctamente cada vez que las pronuncia mal.",
    "source": "academy.como_se_aprende_a_hablar.01/afirmaciones/afirmacion_02/enunciado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_fb44c740_158",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Elige una sola rutina —el baño, la cena, el abrigo— y esta semana dila siempre con las mismas palabras. Lo aburrido para ti es justo lo que ya puede adivinar.",
+   "speech": "Elige una sola rutina —el baño, la cena, el abrigo— y esta semana dila siempre con las mismas palabras. Lo aburrido para ti es justo lo que ya puede adivinar.",
+   "source": "academy.rutinas_bano_de_lenguaje.01/luaDice",
    "pack": false
   },
   {
@@ -178415,6 +178613,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_2b571e31_168",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Escolle UN momento do día —o abrigo, os zapatos— e quédate aí tres minutos. Cando diga a frase a medias, devólvella enteira e segue xogando: non lle pidas que a repita.",
+   "speech": "Escolle UN momento do día —o abrigo, os zapatos— e quédate aí tres minutos. Cando diga a frase a medias, devólvella enteira e segue xogando: non lle pidas que a repita.",
+   "source": "academy.segundo_ciclo.setembro.01/luaDice",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_2b5a4cb8_14",
    "lang": "gl",
    "style": "tutor",
@@ -178629,15 +178836,6 @@
    "speech": "Esponxa mollada",
    "source": "tpr.2_3.maio/s3/2_3.maio.s3.sponge-squeeze/significado",
    "pack": true
-  },
-  {
-   "id": "gl_tutor_2cc3bc4e_131",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Son Lúa. Hoxe quédate cun só xesto: nomea o que estea a mirar e despois cala mentres contas ata cinco. Ese silencio é a súa quenda.",
-   "speech": "Son Lúa. Hoxe quédate cun só xesto: nomea o que estea a mirar e despois cala mentres contas ata cinco. Ese silencio é a súa quenda.",
-   "source": "academy.como_se_aprende_a_hablar.01/luaDice",
-   "pack": false
   },
   {
    "id": "gl_tutor_2cc8403e_15",
@@ -178961,15 +179159,6 @@
    "text": "Exacto: escoitar o modelo correcto dentro dunha conversa real e agarimosa deixa a porta aberta a seguir falando; esixir a repetición pecha a conversa.",
    "speech": "Exacto: escoitar o modelo correcto dentro dunha conversa real e agarimosa deixa a porta aberta a seguir falando; esixir a repetición pecha a conversa.",
    "source": "academy.segundo_ciclo.setembro.01/afirmaciones/afirmacion_01/explicacion",
-   "pack": false
-  },
-  {
-   "id": "gl_tutor_2e2d47fe_125",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Son Lúa. Fala na lingua que che sae soa e non lle corrixas as mesturas. Xuntar as dúas nunha frase non é un erro: é ter dúas.",
-   "speech": "Son Lúa. Fala na lingua que che sae soa e non lle corrixas as mesturas. Xuntar as dúas nunha frase non é un erro: é ter dúas.",
-   "source": "academy.bilinguismo_y_cultura.01/luaDice",
    "pack": false
   },
   {
@@ -188543,6 +188732,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_670316fc_136",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Hoxe non dirixas: mira o que está a mirar, ponlle nome e agarda. Se contesta cun son ou cun xesto, devólvello coma se fose unha palabra.",
+   "speech": "Hoxe non dirixas: mira o que está a mirar, ponlle nome e agarda. Se contesta cun son ou cun xesto, devólvello coma se fose unha palabra.",
+   "source": "academy.turnos_atencion_conjunta.01/luaDice",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_6704ba8f_17",
    "lang": "gl",
    "style": "tutor",
@@ -191095,15 +191293,6 @@
    "pack": true
   },
   {
-   "id": "gl_tutor_7669de71_141",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Son Lúa. Cando che pidan pantalla, ofrece corpo: ombreiros, cóxegas, subir e baixar. E fala do que estades a facer mentres pasa, non despois.",
-   "speech": "Son Lúa. Cando che pidan pantalla, ofrece corpo: ombreiros, cóxegas, subir e baixar. E fala do que estades a facer mentres pasa, non despois.",
-   "source": "academy.juego_movimiento_sin_pantallas.01/luaDice",
-   "pack": false
-  },
-  {
    "id": "gl_tutor_766d6b29_13",
    "lang": "gl",
    "style": "tutor",
@@ -191615,15 +191804,6 @@
    "speech": "Balbucir",
    "source": "tpr.0_2.setembro/s2/0_2.setembro.s2.babble/significado",
    "pack": true
-  },
-  {
-   "id": "gl_tutor_796b9165_158",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Son Lúa. Escolle unha rutina soa —o baño, a cea, o abrigo— e esta semana dilla sempre coas mesmas palabras. O aburrido para ti é xusto o que xa pode adiviñar.",
-   "speech": "Son Lúa. Escolle unha rutina soa —o baño, a cea, o abrigo— e esta semana dilla sempre coas mesmas palabras. O aburrido para ti é xusto o que xa pode adiviñar.",
-   "source": "academy.rutinas_bano_de_lenguaje.01/luaDice",
-   "pack": false
   },
   {
    "id": "gl_tutor_79814213_17",
@@ -195811,15 +195991,6 @@
    "pack": false
   },
   {
-   "id": "gl_tutor_9063ca14_177",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Son Lúa. Escolle UN momento do día —o abrigo, os zapatos— e quédate aí tres minutos. Cando diga a frase a medias, devólvella enteira e segue xogando: non lle pidas que a repita.",
-   "speech": "Son Lúa. Escolle UN momento do día —o abrigo, os zapatos— e quédate aí tres minutos. Cando diga a frase a medias, devólvella enteira e segue xogando: non lle pidas que a repita.",
-   "source": "academy.segundo_ciclo.setembro.01/luaDice",
-   "pack": false
-  },
-  {
    "id": "gl_tutor_906f45d4_18",
    "lang": "gl",
    "style": "tutor",
@@ -196777,6 +196948,15 @@
    "speech": "Come a verdura!",
    "source": "tpr.4_5.marzo/s3/4_5.marzo.s3.eat-your-greens/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_958685c3_122",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Hoxe quédate cun só xesto: nomea o que estea a mirar e despois cala mentres contas ata cinco. Ese silencio é a súa quenda.",
+   "speech": "Hoxe quédate cun só xesto: nomea o que estea a mirar e despois cala mentres contas ata cinco. Ese silencio é a súa quenda.",
+   "source": "academy.como_se_aprende_a_hablar.01/luaDice",
+   "pack": false
   },
   {
    "id": "gl_tutor_95957f93_14",
@@ -202889,6 +203069,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_bbdfaacf_116",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Fala na lingua que che sae soa e non lle corrixas as mesturas. Xuntar as dúas nunha frase non é un erro: é ter dúas.",
+   "speech": "Fala na lingua que che sae soa e non lle corrixas as mesturas. Xuntar as dúas nunha frase non é un erro: é ter dúas.",
+   "source": "academy.bilinguismo_y_cultura.01/luaDice",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_bbe553b6_20",
    "lang": "gl",
    "style": "tutor",
@@ -203610,6 +203799,15 @@
    "text": "A docente describe un refuxio ecolóxico; os alumnos seleccionan a resposta motriz e verbalizan o chunk correspondente.",
    "speech": "A docente describe un refuxio ecolóxico; os alumnos seleccionan a resposta motriz e verbalizan o chunk correspondente.",
    "source": "asamblea.segundo_ciclo.abril.6_infantil/fase/3/consigna",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_c0dd49a6_149",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Escolle unha rutina soa —o baño, a cea, o abrigo— e esta semana dilla sempre coas mesmas palabras. O aburrido para ti é xusto o que xa pode adiviñar.",
+   "speech": "Escolle unha rutina soa —o baño, a cea, o abrigo— e esta semana dilla sempre coas mesmas palabras. O aburrido para ti é xusto o que xa pode adiviñar.",
+   "source": "academy.rutinas_bano_de_lenguaje.01/luaDice",
    "pack": false
   },
   {
@@ -207087,6 +207285,15 @@
    "text": "Xogar a transformarse cunha careta feita en casa, seguindo ordes de movemento.",
    "speech": "Xogar a transformarse cunha careta feita en casa, seguindo ordes de movemento.",
    "source": "asamblea.segundo_ciclo.febreiro.5_infantil/microRutina/objetivoAutonomia",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_d5b53798_132",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Cando che pidan pantalla, ofrece corpo: ombreiros, cóxegas, subir e baixar. E fala do que estades a facer mentres pasa, non despois.",
+   "speech": "Cando che pidan pantalla, ofrece corpo: ombreiros, cóxegas, subir e baixar. E fala do que estades a facer mentres pasa, non despois.",
+   "source": "academy.juego_movimiento_sin_pantallas.01/luaDice",
    "pack": false
   },
   {
@@ -213632,15 +213839,6 @@
    "speech": "Vermello, azul, vermello, azul",
    "source": "tpr.5_6.marzo/s1/5_6.marzo.s1.red-blue-red-blue/significado",
    "pack": true
-  },
-  {
-   "id": "gl_tutor_ff807611_145",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Son Lúa. Hoxe non dirixas: mira o que está a mirar, ponlle nome e agarda. Se contesta cun son ou cun xesto, devólvello coma se fose unha palabra.",
-   "speech": "Son Lúa. Hoxe non dirixas: mira o que está a mirar, ponlle nome e agarda. Se contesta cun son ou cun xesto, devólvello coma se fose unha palabra.",
-   "source": "academy.turnos_atencion_conjunta.01/luaDice",
-   "pack": false
   },
   {
    "id": "gl_tutor_ff8c6655_19",
