@@ -14,6 +14,7 @@ La dictó Frank el 21/10/2026. Manda sobre todo el fichero, regla de oro incluid
 
 - **Se gasta el mínimo de tokens y se hace el máximo esfuerzo, siempre.**
 - **Si Frank dice que no hay saldo, no se gasta nada.** Se para en ese instante y no se lleva la contraria.
+- **«No hay saldo» vale hasta que Frank diga, con palabras, que sigue.** Mientras tanto no se ejecuta ninguna herramienta: ni gates, ni lecturas, ni arreglos, ni comprobaciones. Una pregunta o una queja de Frank («está bloqueado», «¿qué has hecho?») se contesta con texto, sin herramientas; si para contestarla hay que gastar, se le pregunta primero y se espera su «sí».
 
 ## 🟨 REGLA DE ORO · NO SE PARA NUNCA HASTA COMPLETAR EL PROYECTO, CON EL MÍNIMO GASTO
 
