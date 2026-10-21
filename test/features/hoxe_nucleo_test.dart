@@ -106,8 +106,12 @@ void main() {
           calendario.trayecto[calendario.indiceNoTrayecto(c, lunes)].unidade!;
       final deHoxe = repo.unidadeDoMesSync(c, lunes.month)!;
       expect(deHoxe.id, doCalendario.id, reason: c);
+      // F11 (opción 2 de Frank): o núcleo que pintan os dous é o vocabulario
+      // diana do plan curricular para ese curso e mes, o mesmo nos dous.
       expect(repo.nucleoSync(deHoxe).map((p) => p.ref),
-          doCalendario.nucleo.map((n) => n.ref),
+          repo.nucleoSync(doCalendario).map((p) => p.ref),
+          reason: c);
+      expect(repo.nucleoSync(deHoxe).first.ref, startsWith('curriculo.'),
           reason: c);
     }
     expect(repo.unidadeDoMesSync('curso_0_2', 7), isNull,

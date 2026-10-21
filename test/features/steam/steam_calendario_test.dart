@@ -220,8 +220,13 @@ void main() {
       await pintar(tester, hoxe(DateTime(2026, 12, 10)));
       expect(find.byKey(const Key('hoxe_aula_asemblea')), findsOneWidget);
       // Hasta el final de la lista: lo que no se ha construido no se busca.
-      await tester.drag(
-          find.byKey(const Key('hoxe_docentes')), const Offset(0, -3000));
+      // Ata a fila de ciencia: a tarxeta do plan curricular (F11) fai a
+      // lista máis longa.
+      await tester.scrollUntilVisible(
+          find.byKey(const ValueKey('hoxe_aula_ciencia')), 400,
+          scrollable: find.descendant(
+              of: find.byKey(const Key('hoxe_docentes')),
+              matching: find.byType(Scrollable)));
       await tester.pumpAndSettle();
       expect(find.byType(FilaSteamDoDia), findsNothing);
       // En su lugar, cuándo fue: la docente sabe que ya pasó.
