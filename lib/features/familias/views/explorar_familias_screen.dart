@@ -8,11 +8,13 @@ import '../../../core/theme/app_theme.dart';
 import '../../../core/widgets/cabecera.dart';
 import '../../../data/models/steam_model.dart';
 import '../../../data/repositories/content_repository.dart';
+import '../../cuentos/views/biblioteca_contos_screen.dart';
 import '../../cuentos/views/cuentos_list_screen.dart';
 import '../../docentes/widgets/hoxe_na_aula.dart' show DiaQueToca;
 import '../../english/views/palabras_do_traxecto_screen.dart';
 import '../../laminas/views/laminas_gallery_screen.dart';
 import '../../lectura/views/aprender_a_ler_screen.dart';
+import '../../steam/views/steam_do_ano_screen.dart';
 import '../../steam/views/steam_hub_screen.dart';
 import '../nomes_familias.dart';
 import '../widgets/selector_idade.dart';
@@ -128,6 +130,35 @@ class ExplorarFamiliasScreen extends StatelessWidget {
           onLanguageChanged: onLanguageChanged,
           audiencia: SteamAudiencia.hogar,
           initialCursoId: cursoId,
+        ),
+      ),
+      // F10: los 100 cuentos dialogados y el STEAM de todo el curso.
+      _Modulo(
+        clave: 'explorar_contos_dialogados',
+        icona: Icons.forum_rounded,
+        nome: const LocalizedString(gl: 'Os 100 contos', es: 'Los 100 cuentos'),
+        di: const LocalizedString(
+            gl: 'Para contar lámina a lámina',
+            es: 'Para contar lámina a lámina'),
+        abrir: (_) => BibliotecaContosScreen(
+          language: language,
+          onLanguageChanged: onLanguageChanged,
+          audioService: audioService,
+        ),
+      ),
+      _Modulo(
+        clave: 'explorar_steam_do_ano',
+        icona: Icons.biotech_rounded,
+        nome:
+            const LocalizedString(gl: 'STEAM do curso', es: 'STEAM del curso'),
+        di: const LocalizedString(
+            gl: 'Un experimento cada mes', es: 'Un experimento cada mes'),
+        abrir: (_) => SteamDoAnoScreen(
+          cursoId: cursoId,
+          language: language,
+          onLanguageChanged: onLanguageChanged,
+          audioService: audioService,
+          enCasa: true,
         ),
       ),
     ];

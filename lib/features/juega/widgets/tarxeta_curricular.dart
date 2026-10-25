@@ -23,6 +23,10 @@ class TarxetaCurricular extends StatefulWidget {
   /// En casa: sin dinámica de aula, con la orientación para la familia.
   final bool enCasa;
 
+  /// Con los botones de cuentos y STEAM. Hoxe los enseña fuera, como pasos
+  /// propios (F10), y aquí los quita para no repetirlos.
+  final bool conAccesos;
+
   const TarxetaCurricular({
     super.key,
     required this.cursoId,
@@ -30,6 +34,7 @@ class TarxetaCurricular extends StatefulWidget {
     required this.language,
     this.audioService,
     this.enCasa = false,
+    this.conAccesos = true,
   });
 
   @override
@@ -76,7 +81,8 @@ class _TarxetaCurricularState extends State<TarxetaCurricular> {
         // Material más cercano, y un fondo intermedio lo taparía.
         return Padding(
           key: ValueKey('plan_curricular_${u.id}'),
-          padding: const EdgeInsets.only(top: AppTheme.spaceMd),
+          padding:
+              EdgeInsets.only(top: widget.conAccesos ? AppTheme.spaceMd : 0),
           child: Material(
             color: AppTheme.card,
             shape: RoundedRectangleBorder(
@@ -120,73 +126,77 @@ class _TarxetaCurricularState extends State<TarxetaCurricular> {
                     chips(u.vocabulario),
                   ],
                   // F12: los cuentos dialogados de esta unidad del plan.
-                  FutureBuilder<BibliotecaDialogada?>(
-                    future: _biblioteca,
-                    builder: (context, b) {
-                      final contos = b.data?.daUnidade(u.id) ?? const [];
-                      if (contos.isEmpty) return const SizedBox.shrink();
-                      return Padding(
-                        padding: const EdgeInsets.only(top: 12),
-                        child: OutlinedButton.icon(
-                          key: ValueKey('contos_da_unidade_${u.id}'),
-                          onPressed: () => Navigator.of(context).push(RutaLua(
-                            de: context,
-                            builder: (_) => ContosDialogadosScreen(
-                              unidade: u.id,
-                              tituloUnidade: u.titulo.resolve(lang),
-                              contos: contos,
-                              language: lang,
-                              audioService: widget.audioService,
+                  if (widget.conAccesos)
+                    FutureBuilder<BibliotecaDialogada?>(
+                      future: _biblioteca,
+                      builder: (context, b) {
+                        final contos = b.data?.daUnidade(u.id) ?? const [];
+                        if (contos.isEmpty) return const SizedBox.shrink();
+                        return Padding(
+                          padding: const EdgeInsets.only(top: 12),
+                          child: OutlinedButton.icon(
+                            key: ValueKey('contos_da_unidade_${u.id}'),
+                            onPressed: () => Navigator.of(context).push(RutaLua(
+                              de: context,
+                              builder: (_) => ContosDialogadosScreen(
+                                unidade: u.id,
+                                tituloUnidade: u.titulo.resolve(lang),
+                                contos: contos,
+                                language: lang,
+                                audioService: widget.audioService,
+                              ),
+                            )),
+                            style: OutlinedButton.styleFrom(
+                              minimumSize: const Size(0, AppTheme.touchMin),
+                              alignment: Alignment.centerLeft,
                             ),
-                          )),
-                          style: OutlinedButton.styleFrom(
-                            minimumSize: const Size(0, AppTheme.touchMin),
-                            alignment: Alignment.centerLeft,
+                            icon: const Icon(Icons.auto_stories_rounded),
+                            label: Text(
+                              isGl
+                                  ? 'Contos desta unidade (${contos.length})'
+                                  : 'Cuentos de esta unidad (${contos.length})',
+                              style:
+                                  const TextStyle(fontWeight: FontWeight.w700),
+                            ),
                           ),
-                          icon: const Icon(Icons.auto_stories_rounded),
-                          label: Text(
-                            isGl
-                                ? 'Contos desta unidade (${contos.length})'
-                                : 'Cuentos de esta unidad (${contos.length})',
-                            style: const TextStyle(fontWeight: FontWeight.w700),
-                          ),
-                        ),
-                      );
-                    },
-                  ),
+                        );
+                      },
+                    ),
                   // F8: el experimento STEAM de este mes, atado a la unidad.
-                  FutureBuilder<SteamDoMes?>(
-                    future: _steam,
-                    builder: (context, s) {
-                      final e =
-                          s.data?.para(widget.cursoId, widget.mesCalendario);
-                      if (e == null) return const SizedBox.shrink();
-                      return Padding(
-                        padding: const EdgeInsets.only(top: 10),
-                        child: OutlinedButton.icon(
-                          key: ValueKey('steam_do_mes_boton_${e.id}'),
-                          onPressed: () => Navigator.of(context).push(RutaLua(
-                            de: context,
-                            builder: (_) => SteamDoMesScreen(
-                              experimento: e,
-                              language: lang,
-                              audioService: widget.audioService,
-                              enCasa: widget.enCasa,
+                  if (widget.conAccesos)
+                    FutureBuilder<SteamDoMes?>(
+                      future: _steam,
+                      builder: (context, s) {
+                        final e =
+                            s.data?.para(widget.cursoId, widget.mesCalendario);
+                        if (e == null) return const SizedBox.shrink();
+                        return Padding(
+                          padding: const EdgeInsets.only(top: 10),
+                          child: OutlinedButton.icon(
+                            key: ValueKey('steam_do_mes_boton_${e.id}'),
+                            onPressed: () => Navigator.of(context).push(RutaLua(
+                              de: context,
+                              builder: (_) => SteamDoMesScreen(
+                                experimento: e,
+                                language: lang,
+                                audioService: widget.audioService,
+                                enCasa: widget.enCasa,
+                              ),
+                            )),
+                            style: OutlinedButton.styleFrom(
+                              minimumSize: const Size(0, AppTheme.touchMin),
+                              alignment: Alignment.centerLeft,
                             ),
-                          )),
-                          style: OutlinedButton.styleFrom(
-                            minimumSize: const Size(0, AppTheme.touchMin),
-                            alignment: Alignment.centerLeft,
+                            icon: const Icon(Icons.science_rounded),
+                            label: Text(
+                              'STEAM · ${e.nomeFenomeno.resolve(lang)}: ${e.titulo.resolve(lang)}',
+                              style:
+                                  const TextStyle(fontWeight: FontWeight.w700),
+                            ),
                           ),
-                          icon: const Icon(Icons.science_rounded),
-                          label: Text(
-                            'STEAM · ${e.nomeFenomeno.resolve(lang)}: ${e.titulo.resolve(lang)}',
-                            style: const TextStyle(fontWeight: FontWeight.w700),
-                          ),
-                        ),
-                      );
-                    },
-                  ),
+                        );
+                      },
+                    ),
                   Theme(
                     data: Theme.of(context)
                         .copyWith(dividerColor: Colors.transparent),

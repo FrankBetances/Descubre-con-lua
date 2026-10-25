@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../formacion/widgets/lista_de_practica.dart';
+import '../../juega/widgets/pasos_do_dia.dart';
 import '../../juega/widgets/tarxeta_curricular.dart';
 
 import '../../../core/audio/offline_audio_service.dart';
@@ -333,7 +334,16 @@ class _HoxeFamiliasScreenState extends State<HoxeFamiliasScreen> {
                 ),
               ),
             ],
-            const SizedBox(height: 18),
+            // F10: el día en pasos numerados, en el orden en que se usa.
+            RotuloPaso(
+              numero: 1,
+              titulo: lang == AppLanguage.gl
+                  ? 'O xogo e as palabras de hoxe'
+                  : 'El juego y las palabras de hoy',
+              subtitulo: lang == AppLanguage.gl
+                  ? 'Tres minutos, coa túa criatura.'
+                  : 'Tres minutos, con tu criatura.',
+            ),
             // Mientras llega el día, el hueco de la tarjeta, quieto: un
             // indicador que gira no dice nada que el hueco no diga ya.
             if (_cargando)
@@ -406,15 +416,46 @@ class _HoxeFamiliasScreenState extends State<HoxeFamiliasScreen> {
                 ),
               ],
               // F11: lo que se trabaja este mes según el plan curricular.
+              RotuloPaso(
+                numero: 2,
+                titulo: lang == AppLanguage.gl
+                    ? 'O que se traballa este mes'
+                    : 'Lo que se trabaja este mes',
+                subtitulo: lang == AppLanguage.gl
+                    ? 'O mesmo tema que na escola, para a casa.'
+                    : 'El mismo tema que en la escuela, para casa.',
+              ),
               TarxetaCurricular(
                 cursoId: widget.cursoId,
                 mesCalendario: _toca.dia.mesCalendario,
                 language: lang,
                 audioService: widget.audioService,
                 enCasa: true,
+                conAccesos: false,
+              ),
+              PasosDoMes(
+                cursoId: widget.cursoId,
+                mesCalendario: _toca.dia.mesCalendario,
+                semana: _toca.dia.semana,
+                language: lang,
+                audioService: widget.audioService,
+                enCasa: true,
+              ),
+              const Padding(
+                padding: EdgeInsets.only(top: 26, bottom: 4),
+                child: Text(
+                  'MATERIAL COMPLEMENTARIO',
+                  key: Key('hoxe_complementario'),
+                  style: TextStyle(
+                    fontSize: 13,
+                    fontWeight: FontWeight.w800,
+                    letterSpacing: 0.8,
+                    color: AppTheme.textSecondary,
+                  ),
+                ),
               ),
               if (_conto case final conto?) ...[
-                const SizedBox(height: 14),
+                const SizedBox(height: 6),
                 _FilaConto(
                   conto: conto,
                   language: lang,
@@ -805,7 +846,9 @@ class _FilaConto extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      isGl ? 'O CONTO DA SEMANA' : 'EL CUENTO DE LA SEMANA',
+                      isGl
+                          ? 'CONTO LONGO DA SEMANA'
+                          : 'CUENTO LARGO DE LA SEMANA',
                       style: const TextStyle(
                         fontSize: 12,
                         fontWeight: FontWeight.w800,

@@ -127,6 +127,9 @@ class PlanCurricular {
   final Map<String, UnidadeCurricular> _porId;
   final Map<String, Map<int, String>> _calendario;
 
+  /// Las doce unidades, en el orden de los ficheros (18-36 meses y 3-6 años).
+  Iterable<UnidadeCurricular> get unidades => _porId.values;
+
   const PlanCurricular(this._porId, this._calendario);
 
   static const ficheiros = [
