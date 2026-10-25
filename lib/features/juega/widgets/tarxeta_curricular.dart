@@ -6,8 +6,10 @@ import '../../../core/localization/app_language.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../core/navigation/ruta_lua.dart';
 import '../../../data/models/conto_dialogado_model.dart';
+import '../../../data/models/steam_do_mes_model.dart';
 import '../../../data/models/unidade_curricular_model.dart';
 import '../../cuentos/views/contos_dialogados_screen.dart';
+import '../../steam/views/steam_do_mes_screen.dart';
 
 /// La unidad del plan curricular de Frank que toca este mes (F11): su título,
 /// en qué mes de la unidad se está, los objetivos y el vocabulario diana con
@@ -40,6 +42,9 @@ class _TarxetaCurricularState extends State<TarxetaCurricular> {
       BibliotecaDialogada.cargar()
           .then<BibliotecaDialogada?>((b) => b)
           .catchError((Object _) => null);
+  // Sin catchError: en un SynchronousFuture no completa nunca.
+  late final Future<SteamDoMes?> _steam =
+      SteamDoMes.cargar().then<SteamDoMes?>((s) => s, onError: (_) => null);
 
   @override
   Widget build(BuildContext context) {
@@ -143,6 +148,39 @@ class _TarxetaCurricularState extends State<TarxetaCurricular> {
                             isGl
                                 ? 'Contos desta unidade (${contos.length})'
                                 : 'Cuentos de esta unidad (${contos.length})',
+                            style: const TextStyle(fontWeight: FontWeight.w700),
+                          ),
+                        ),
+                      );
+                    },
+                  ),
+                  // F8: el experimento STEAM de este mes, atado a la unidad.
+                  FutureBuilder<SteamDoMes?>(
+                    future: _steam,
+                    builder: (context, s) {
+                      final e =
+                          s.data?.para(widget.cursoId, widget.mesCalendario);
+                      if (e == null) return const SizedBox.shrink();
+                      return Padding(
+                        padding: const EdgeInsets.only(top: 10),
+                        child: OutlinedButton.icon(
+                          key: ValueKey('steam_do_mes_boton_${e.id}'),
+                          onPressed: () => Navigator.of(context).push(RutaLua(
+                            de: context,
+                            builder: (_) => SteamDoMesScreen(
+                              experimento: e,
+                              language: lang,
+                              audioService: widget.audioService,
+                              enCasa: widget.enCasa,
+                            ),
+                          )),
+                          style: OutlinedButton.styleFrom(
+                            minimumSize: const Size(0, AppTheme.touchMin),
+                            alignment: Alignment.centerLeft,
+                          ),
+                          icon: const Icon(Icons.science_rounded),
+                          label: Text(
+                            'STEAM · ${e.nomeFenomeno.resolve(lang)}: ${e.titulo.resolve(lang)}',
                             style: const TextStyle(fontWeight: FontWeight.w700),
                           ),
                         ),

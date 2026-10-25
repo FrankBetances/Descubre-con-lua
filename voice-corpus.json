@@ -1,14 +1,14 @@
 {
- "generatedAt": "2026-10-25T18:39:25Z",
- "entries": 36075,
+ "generatedAt": "2026-10-25T19:09:50Z",
+ "entries": 36372,
  "byStyle": {
   "slow": 5954,
-  "tutor": 30121
+  "tutor": 30418
  },
  "byLang": {
-  "en": 16819,
-  "es": 9628,
-  "gl": 9628
+  "en": 16918,
+  "es": 9727,
+  "gl": 9727
  },
  "corpus": [
   {
@@ -56055,6 +56055,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_071b8d1b_16",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Stop! It's full!",
+   "speech": "Stop! It's full!",
+   "source": "steam/STEAM-3_4-04",
+   "pack": false
+  },
+  {
    "id": "en_tutor_0726b4f8_29",
    "lang": "en",
    "style": "tutor",
@@ -57495,6 +57504,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_0a7f555b_20",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Listen to the heart!",
+   "speech": "Listen to the heart!",
+   "source": "steam/STEAM-4_5-10",
+   "pack": false
+  },
+  {
    "id": "en_tutor_0a7fbc40_11",
    "lang": "en",
    "style": "tutor",
@@ -57978,6 +57996,15 @@
    "text": "Can you hold a treasure like Lúa? Close to your heart!",
    "speech": "Can you hold a treasure like Lúa? Close to your heart!",
    "source": "biblioteca/HIS-021",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_0ba87015_23",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Big sound, small sound!",
+   "speech": "Big sound, small sound!",
+   "source": "steam/STEAM-2_3-12",
    "pack": false
   },
   {
@@ -59754,6 +59781,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_10620850_22",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Examine with the lens!",
+   "speech": "Examine with the lens!",
+   "source": "steam/STEAM-4_5-12",
+   "pack": false
+  },
+  {
    "id": "en_tutor_10684810_38",
    "lang": "en",
    "style": "tutor",
@@ -60084,6 +60120,15 @@
    "text": "Do you keep treasures in your room?",
    "speech": "Do you keep treasures in your room?",
    "source": "biblioteca/HIS-024",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_113f9336_13",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Heavy! Light!",
+   "speech": "Heavy! Light!",
+   "source": "steam/STEAM-2_3-04",
    "pack": false
   },
   {
@@ -62418,6 +62463,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_16e33299_23",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Squeeze the soft bread!",
+   "speech": "Squeeze the soft bread!",
+   "source": "steam/STEAM-2_3-01",
+   "pack": false
+  },
+  {
    "id": "en_tutor_16e83a1b_40",
    "lang": "en",
    "style": "tutor",
@@ -64155,6 +64209,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_1b68cb46_12",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Is it heavy?",
+   "speech": "Is it heavy?",
+   "source": "steam/STEAM-5_6-04",
+   "pack": false
+  },
+  {
    "id": "en_tutor_1b6ce61b_41",
    "lang": "en",
    "style": "tutor",
@@ -64623,6 +64686,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_1ca56817_15",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Four legs here!",
+   "speech": "Four legs here!",
+   "source": "steam/STEAM-4_5-11",
+   "pack": false
+  },
+  {
    "id": "en_tutor_1ca68f46_15",
    "lang": "en",
    "style": "tutor",
@@ -64917,6 +64989,15 @@
    "text": "What is tall in your street or in your home?",
    "speech": "What is tall in your street or in your home?",
    "source": "biblioteca/HIS-057",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_1dba8bc9_21",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Slow, slow! Together!",
+   "speech": "Slow, slow! Together!",
+   "source": "steam/STEAM-4_5-01",
    "pack": false
   },
   {
@@ -66702,6 +66783,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_235f2c52_11",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Fast! Slow!",
+   "speech": "Fast! Slow!",
+   "source": "steam/STEAM-3_4-11",
+   "pack": false
+  },
+  {
    "id": "en_tutor_236530d7_28",
    "lang": "en",
    "style": "tutor",
@@ -67890,6 +67980,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_269e621b_15",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Two legs there!",
+   "speech": "Two legs there!",
+   "source": "steam/STEAM-4_5-11",
+   "pack": false
+  },
+  {
    "id": "en_tutor_26a0ba74_40",
    "lang": "en",
    "style": "tutor",
@@ -68643,6 +68742,15 @@
    "text": "Lie on the grass",
    "speech": "Lie on the grass",
    "source": "tpr.2_3.abril/s1/2_3.abril.s1.lie-on-the-grass",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_28239b6a_11",
+   "lang": "en",
+   "style": "tutor",
+   "text": "It's windy!",
+   "speech": "It's windy!",
+   "source": "steam/STEAM-4_5-03",
    "pack": false
   },
   {
@@ -70752,6 +70860,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_2db03b6d_14",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Roll the ball!",
+   "speech": "Roll the ball!",
+   "source": "steam/STEAM-0_2-06",
+   "pack": false
+  },
+  {
    "id": "en_tutor_2dbc0b3d_31",
    "lang": "en",
    "style": "tutor",
@@ -71211,12 +71328,30 @@
    "pack": false
   },
   {
+   "id": "en_tutor_2ef5229e_23",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Mix the soil and water!",
+   "speech": "Mix the soil and water!",
+   "source": "steam/STEAM-4_5-02",
+   "pack": false
+  },
+  {
    "id": "en_tutor_2ef6d6f4_54",
    "lang": "en",
    "style": "tutor",
    "text": "Where is the cow? On the track? Touch her black spots!",
    "speech": "Where is the cow? On the track? Touch her black spots!",
    "source": "biblioteca/HIS-093",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_2ef7c8d3_15",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Drop the water!",
+   "speech": "Drop the water!",
+   "source": "steam/STEAM-4_5-09",
    "pack": false
   },
   {
@@ -74208,6 +74343,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_36eaf6c3_19",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Look! A dog shadow!",
+   "speech": "Look! A dog shadow!",
+   "source": "steam/STEAM-0_2-05",
+   "pack": false
+  },
+  {
    "id": "en_tutor_37051f2b_32",
    "lang": "en",
    "style": "tutor",
@@ -76332,6 +76476,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_3d0402f5_15",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Big stone here!",
+   "speech": "Big stone here!",
+   "source": "steam/STEAM-2_3-11",
+   "pack": false
+  },
+  {
    "id": "en_tutor_3d06accd_10",
    "lang": "en",
    "style": "tutor",
@@ -77112,6 +77265,15 @@
    "text": "Excuse me, mister, is this your hat?",
    "speech": "Excuse me, mister, is this your hat?",
    "source": "corpus/531/frase",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_3ed41976_23",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Throw the plane gently!",
+   "speech": "Throw the plane gently!",
+   "source": "steam/STEAM-5_6-02",
    "pack": false
   },
   {
@@ -79257,6 +79419,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_442b6230_19",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Mix red and yellow!",
+   "speech": "Mix red and yellow!",
+   "source": "steam/STEAM-5_6-09",
+   "pack": false
+  },
+  {
    "id": "en_tutor_442e5efe_10",
    "lang": "en",
    "style": "tutor",
@@ -81045,6 +81216,15 @@
    "text": "We walked across the bridge to the park.",
    "speech": "We walked across the bridge to the park.",
    "source": "corpus/7/frase",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_491779d5_17",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Shake the bottle!",
+   "speech": "Shake the bottle!",
+   "source": "steam/STEAM-0_2-10",
    "pack": false
   },
   {
@@ -83568,6 +83748,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_5051e6fd_16",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Flash the light!",
+   "speech": "Flash the light!",
+   "source": "steam/STEAM-5_6-05",
+   "pack": false
+  },
+  {
    "id": "en_tutor_5057b8d6_48",
    "lang": "en",
    "style": "tutor",
@@ -85350,6 +85539,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_54d1a838_16",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Go, stars! Stop!",
+   "speech": "Go, stars! Stop!",
+   "source": "steam/STEAM-2_3-06",
+   "pack": false
+  },
+  {
    "id": "en_tutor_54db59c0_47",
    "lang": "en",
    "style": "tutor",
@@ -85392,6 +85590,15 @@
    "text": "You're it!",
    "speech": "You're it!",
    "source": "tpr.4_5.outubro/s2/4_5.outubro.s2.you-re-it",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_550c0af1_19",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Build a tall tower!",
+   "speech": "Build a tall tower!",
+   "source": "steam/STEAM-3_4-09",
    "pack": false
   },
   {
@@ -86583,6 +86790,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_58795de2_17",
+   "lang": "en",
+   "style": "tutor",
+   "text": "What sound is it?",
+   "speech": "What sound is it?",
+   "source": "steam/STEAM-5_6-01",
+   "pack": false
+  },
+  {
    "id": "en_tutor_587a335e_59",
    "lang": "en",
    "style": "tutor",
@@ -86976,6 +87192,15 @@
    "text": "Night time! Sleep!",
    "speech": "Night time! Sleep!",
    "source": "curriculo/T2.U5/frasesAdulta",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_595fb462_18",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Run, shadow! Stop!",
+   "speech": "Run, shadow! Stop!",
+   "source": "steam/STEAM-0_2-05",
    "pack": false
   },
   {
@@ -87591,6 +87816,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_5b0dbf7d_21",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Long pipe, low sound!",
+   "speech": "Long pipe, low sound!",
+   "source": "steam/STEAM-5_6-06",
+   "pack": false
+  },
+  {
    "id": "en_tutor_5b12cc35_7",
    "lang": "en",
    "style": "tutor",
@@ -87624,6 +87858,15 @@
    "text": "The army tried to take power in a coup.",
    "speech": "The army tried to take power in a coup.",
    "source": "corpus/3232/frase",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_5b18cb67_21",
+   "lang": "en",
+   "style": "tutor",
+   "text": "One plate, one spoon!",
+   "speech": "One plate, one spoon!",
+   "source": "steam/STEAM-3_4-03",
    "pack": false
   },
   {
@@ -88632,6 +88875,15 @@
    "text": "Reach for",
    "speech": "Reach for",
    "source": "tpr.0_2.maio/s4/0_2.maio.s4.reach-for",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_5d93ceaa_18",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Look in the spoon!",
+   "speech": "Look in the spoon!",
+   "source": "steam/STEAM-3_4-06",
    "pack": false
   },
   {
@@ -90957,6 +91209,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_639457f2_17",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Jump! Now listen!",
+   "speech": "Jump! Now listen!",
+   "source": "steam/STEAM-4_5-10",
+   "pack": false
+  },
+  {
    "id": "en_tutor_63984790_14",
    "lang": "en",
    "style": "tutor",
@@ -90999,6 +91260,15 @@
    "text": "The school was established in 1980.",
    "speech": "The school was established in 1980.",
    "source": "corpus/1335/frase",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_63b0f556_15",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Pop the bubble!",
+   "speech": "Pop the bubble!",
+   "source": "steam/STEAM-0_2-03",
    "pack": false
   },
   {
@@ -93522,6 +93792,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_69d00629_14",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Make the rain!",
+   "speech": "Make the rain!",
+   "source": "steam/STEAM-4_5-04",
+   "pack": false
+  },
+  {
    "id": "en_tutor_69d60efd_60",
    "lang": "en",
    "style": "tutor",
@@ -94692,6 +94971,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_6d0dc064_20",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Stir with the spoon!",
+   "speech": "Stir with the spoon!",
+   "source": "steam/STEAM-3_4-02",
+   "pack": false
+  },
+  {
    "id": "en_tutor_6d10dad3_57",
    "lang": "en",
    "style": "tutor",
@@ -95430,6 +95718,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_6ec68926_21",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Touch the wet sponge!",
+   "speech": "Touch the wet sponge!",
+   "source": "steam/STEAM-0_2-09",
+   "pack": false
+  },
+  {
    "id": "en_tutor_6ec7b398_16",
    "lang": "en",
    "style": "tutor",
@@ -95844,6 +96141,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_6fe63599_25",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Big shadow, small shadow!",
+   "speech": "Big shadow, small shadow!",
+   "source": "steam/STEAM-0_2-12",
+   "pack": false
+  },
+  {
    "id": "en_tutor_6ff1c7cd_33",
    "lang": "en",
    "style": "tutor",
@@ -95886,6 +96192,15 @@
    "text": "Yes! A stone! A big stone!",
    "speech": "Yes! A stone! A big stone!",
    "source": "biblioteca/HIS-020",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_700b6be9_14",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Look! Bubbles!",
+   "speech": "Look! Bubbles!",
+   "source": "steam/STEAM-0_2-03",
    "pack": false
   },
   {
@@ -95976,6 +96291,15 @@
    "text": "Swap roles",
    "speech": "Swap roles",
    "source": "tpr.5_6.febreiro/s4/5_6.febreiro.s4.swap-roles",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_70396533_16",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Big stone, down!",
+   "speech": "Big stone, down!",
+   "source": "steam/STEAM-0_2-11",
    "pack": false
   },
   {
@@ -98976,6 +99300,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_771d05c1_25",
+   "lang": "en",
+   "style": "tutor",
+   "text": "How far? Count the steps!",
+   "speech": "How far? Count the steps!",
+   "source": "steam/STEAM-5_6-02",
+   "pack": false
+  },
+  {
    "id": "en_tutor_771d98e9_30",
    "lang": "en",
    "style": "tutor",
@@ -99531,6 +99864,15 @@
    "text": "Back and forth wave motion",
    "speech": "Back and forth wave motion",
    "source": "lamina/vigo_nat_119/tpr",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_789f18aa_14",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Sunny! Hat on!",
+   "speech": "Sunny! Hat on!",
+   "source": "steam/STEAM-4_5-06",
    "pack": false
   },
   {
@@ -100704,6 +101046,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_7bb6a48e_17",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Find your shadow!",
+   "speech": "Find your shadow!",
+   "source": "steam/STEAM-4_5-05",
+   "pack": false
+  },
+  {
    "id": "en_tutor_7bc39a5d_35",
    "lang": "en",
    "style": "tutor",
@@ -100755,6 +101106,15 @@
    "text": "Look, a mystery bag. What is in the bag?",
    "speech": "Look, a mystery bag. What is in the bag?",
    "source": "microcuento.curso_5_6.03/1/recast.silencio",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_7be1371d_10",
+   "lang": "en",
+   "style": "tutor",
+   "text": "High! Low!",
+   "speech": "High! Low!",
+   "source": "steam/STEAM-3_4-05",
    "pack": false
   },
   {
@@ -100836,6 +101196,24 @@
    "text": "Beach bag",
    "speech": "Beach bag",
    "source": "tpr.2_3.xuno/s3/2_3.xuno.s3.beach-bag",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_7c445651_17",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Bread in the box!",
+   "speech": "Bread in the box!",
+   "source": "steam/STEAM-0_2-01",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_7c46eaee_15",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Fold the paper!",
+   "speech": "Fold the paper!",
+   "source": "steam/STEAM-5_6-11",
    "pack": false
   },
   {
@@ -101556,6 +101934,15 @@
    "text": "Why do Lúa and the cat look in silence?",
    "speech": "Why do Lúa and the cat look in silence?",
    "source": "biblioteca/HIS-072",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_7e2fe629_16",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Spin the circle!",
+   "speech": "Spin the circle!",
+   "source": "steam/STEAM-5_6-12",
    "pack": false
   },
   {
@@ -102405,6 +102792,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_8008ee2a_23",
+   "lang": "en",
+   "style": "tutor",
+   "text": "It's raining! Boots on!",
+   "speech": "It's raining! Boots on!",
+   "source": "steam/STEAM-4_5-06",
+   "pack": false
+  },
+  {
    "id": "en_tutor_80117146_55",
    "lang": "en",
    "style": "tutor",
@@ -103026,6 +103422,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_819767e8_19",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Listen! Drip, drop!",
+   "speech": "Listen! Drip, drop!",
+   "source": "steam/STEAM-0_2-10",
+   "pack": false
+  },
+  {
    "id": "en_tutor_81980dab_38",
    "lang": "en",
    "style": "tutor",
@@ -103077,6 +103482,15 @@
    "text": "What bird is that?",
    "speech": "What bird is that?",
    "source": "tpr.4_5.abril/s1/4_5.abril.s1.what-bird-is-that",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_81ba4b8c_14",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Drop the leaf!",
+   "speech": "Drop the leaf!",
+   "source": "steam/STEAM-0_2-11",
    "pack": false
   },
   {
@@ -103302,6 +103716,15 @@
    "text": "Wobbly legs",
    "speech": "Wobbly legs",
    "source": "tpr.2_3.outubro/s1/2_3.outubro.s1.wobbly-legs",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_82385059_17",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Splash the water!",
+   "speech": "Splash the water!",
+   "source": "steam/STEAM-0_2-09",
    "pack": false
   },
   {
@@ -104277,6 +104700,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_848d01fb_19",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Lift the wet towel!",
+   "speech": "Lift the wet towel!",
+   "source": "steam/STEAM-2_3-04",
+   "pack": false
+  },
+  {
    "id": "en_tutor_848f051e_33",
    "lang": "en",
    "style": "tutor",
@@ -104391,6 +104823,15 @@
    "text": "She could not bear to see the puppy so sad.",
    "speech": "She could not bear to see the puppy so sad.",
    "source": "corpus/74/frase",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_84d99613_14",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Blow the boat!",
+   "speech": "Blow the boat!",
+   "source": "steam/STEAM-2_3-10",
    "pack": false
   },
   {
@@ -107535,6 +107976,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_8cbd87a0_12",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Upside down!",
+   "speech": "Upside down!",
+   "source": "steam/STEAM-3_4-06",
+   "pack": false
+  },
+  {
    "id": "en_tutor_8cc8434a_27",
    "lang": "en",
    "style": "tutor",
@@ -109719,6 +110169,15 @@
    "text": "The nurse cleaned the wound and put on a plaster.",
    "speech": "The nurse cleaned the wound and put on a plaster.",
    "source": "corpus/1998/frase",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_921208c2_13",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Short shadow!",
+   "speech": "Short shadow!",
+   "source": "steam/STEAM-3_4-01",
    "pack": false
   },
   {
@@ -112845,6 +113304,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_9a7f43f7_7",
+   "lang": "en",
+   "style": "tutor",
+   "text": "A star!",
+   "speech": "A star!",
+   "source": "steam/STEAM-2_3-02",
+   "pack": false
+  },
+  {
    "id": "en_tutor_9a809de6_28",
    "lang": "en",
    "style": "tutor",
@@ -113040,6 +113508,15 @@
    "text": "There are eleven players in a football team.",
    "speech": "There are eleven players in a football team.",
    "source": "corpus/256/frase",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_9b14cb51_21",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Touch the warm bread!",
+   "speech": "Touch the warm bread!",
+   "source": "steam/STEAM-0_2-02",
    "pack": false
   },
   {
@@ -113691,6 +114168,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_9cc84b97_19",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Tap with the spoon!",
+   "speech": "Tap with the spoon!",
+   "source": "steam/STEAM-3_4-05",
+   "pack": false
+  },
+  {
    "id": "en_tutor_9cc8b62d_75",
    "lang": "en",
    "style": "tutor",
@@ -113868,6 +114354,15 @@
    "text": "Do you have a teddy or a soft toy at home? What animal is it?",
    "speech": "Do you have a teddy or a soft toy at home? What animal is it?",
    "source": "biblioteca/HIS-070",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_9d12ac60_22",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Look inside the apple!",
+   "speech": "Look inside the apple!",
+   "source": "steam/STEAM-2_3-02",
    "pack": false
   },
   {
@@ -115326,6 +115821,15 @@
    "text": "The dog understands simple commands.",
    "speech": "The dog understands simple commands.",
    "source": "corpus/1196/frase",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_a09b474c_12",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Is it empty?",
+   "speech": "Is it empty?",
+   "source": "steam/STEAM-3_4-03",
    "pack": false
   },
   {
@@ -118011,6 +118515,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_a7dd39d2_11",
+   "lang": "en",
+   "style": "tutor",
+   "text": "It's muddy!",
+   "speech": "It's muddy!",
+   "source": "steam/STEAM-4_5-02",
+   "pack": false
+  },
+  {
    "id": "en_tutor_a7ddef4e_35",
    "lang": "en",
    "style": "tutor",
@@ -119910,6 +120423,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_ad4756d6_24",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Bandage the leg, gently!",
+   "speech": "Bandage the leg, gently!",
+   "source": "steam/STEAM-4_5-09",
+   "pack": false
+  },
+  {
    "id": "en_tutor_ad4ad76d_46",
    "lang": "en",
    "style": "tutor",
@@ -121746,6 +122268,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_b18c6c29_18",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Choo-choo! Faster!",
+   "speech": "Choo choo! Faster!",
+   "source": "steam/STEAM-5_6-06",
+   "pack": false
+  },
+  {
    "id": "en_tutor_b191395e_25",
    "lang": "en",
    "style": "tutor",
@@ -121950,6 +122481,15 @@
    "text": "Go like Lúa! Go, go, go!",
    "speech": "Go like Lúa! Go, go, go!",
    "source": "biblioteca/HIS-053",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_b2474bd4_16",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Talk in the cup!",
+   "speech": "Talk in the cup!",
+   "source": "steam/STEAM-3_4-12",
    "pack": false
   },
   {
@@ -122337,6 +122877,15 @@
    "text": "Which is the biggest?",
    "speech": "Which is the biggest?",
    "source": "tpr.4_5.marzo/s2/4_5.marzo.s2.which-is-the-biggest",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_b36a4a3f_22",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Red block, blue block!",
+   "speech": "Red block, blue block!",
+   "source": "steam/STEAM-3_4-10",
    "pack": false
   },
   {
@@ -122868,6 +123417,15 @@
    "text": "Let's vote for the name of the class pet.",
    "speech": "Let's vote for the name of the class pet.",
    "source": "corpus/1976/frase",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_b513e156_16",
+   "lang": "en",
+   "style": "tutor",
+   "text": "The colours mix!",
+   "speech": "The colours mix!",
+   "source": "steam/STEAM-5_6-12",
    "pack": false
   },
   {
@@ -123519,6 +124077,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_b6cc4865_16",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Carry it gently!",
+   "speech": "Carry it gently!",
+   "source": "steam/STEAM-4_5-01",
+   "pack": false
+  },
+  {
    "id": "en_tutor_b6dad9ac_29",
    "lang": "en",
    "style": "tutor",
@@ -123924,6 +124491,24 @@
    "pack": false
   },
   {
+   "id": "en_tutor_b805dc71_15",
+   "lang": "en",
+   "style": "tutor",
+   "text": "It's big! Look!",
+   "speech": "It's big! Look!",
+   "source": "steam/STEAM-4_5-12",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_b8070635_13",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Drop! Listen!",
+   "speech": "Drop! Listen!",
+   "source": "steam/STEAM-2_3-12",
+   "pack": false
+  },
+  {
    "id": "en_tutor_b81378aa_35",
    "lang": "en",
    "style": "tutor",
@@ -124047,6 +124632,15 @@
    "text": "Knock on the door: Knock-knock!",
    "speech": "Knock on the door: Knock knock!",
    "source": "lamina/vocab_52/tpr",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_b887f038_11",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Soft, soft!",
+   "speech": "Soft, soft!",
+   "source": "steam/STEAM-0_2-04",
    "pack": false
   },
   {
@@ -124221,6 +124815,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_b92078d3_18",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Pack the suitcase!",
+   "speech": "Pack the suitcase!",
+   "source": "steam/STEAM-5_6-04",
+   "pack": false
+  },
+  {
    "id": "en_tutor_b92b860b_20",
    "lang": "en",
    "style": "tutor",
@@ -124299,6 +124902,15 @@
    "text": "Deep blue",
    "speech": "Deep blue",
    "source": "tpr.4_5.abril/s3/4_5.abril.s3.deep-blue",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_b958e9ad_17",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Small leaf there!",
+   "speech": "Small leaf there!",
+   "source": "steam/STEAM-2_3-11",
    "pack": false
   },
   {
@@ -125199,6 +125811,15 @@
    "text": "Can you enlighten me about the new timetable?",
    "speech": "Can you enlighten me about the new timetable?",
    "source": "corpus/3339/frase",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_bbaea236_25",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Hard bread! Knock, knock!",
+   "speech": "Hard bread! Knock, knock!",
+   "source": "steam/STEAM-2_3-01",
    "pack": false
   },
   {
@@ -126912,6 +127533,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_bfe10097_23",
+   "lang": "en",
+   "style": "tutor",
+   "text": "First water, then soap!",
+   "speech": "First water, then soap!",
+   "source": "steam/STEAM-2_3-03",
+   "pack": false
+  },
+  {
    "id": "en_tutor_bfe2d7b7_28",
    "lang": "en",
    "style": "tutor",
@@ -127569,6 +128199,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_c14ec8f4_15",
+   "lang": "en",
+   "style": "tutor",
+   "text": "One, two… stop!",
+   "speech": "One, two… stop!",
+   "source": "steam/STEAM-5_6-05",
+   "pack": false
+  },
+  {
    "id": "en_tutor_c14f1d46_37",
    "lang": "en",
    "style": "tutor",
@@ -128172,6 +128811,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_c2af4de3_20",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Down, stone! Splash!",
+   "speech": "Down, stone! Splash!",
+   "source": "steam/STEAM-2_3-09",
+   "pack": false
+  },
+  {
    "id": "en_tutor_c2c6548a_16",
    "lang": "en",
    "style": "tutor",
@@ -128187,6 +128835,15 @@
    "text": "Water the plant every morning.",
    "speech": "Water the plant every morning.",
    "source": "corpus/631/frase",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_c2ca0852_27",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Hat on! Look at the shadow!",
+   "speech": "Hat on! Look at the shadow!",
+   "source": "steam/STEAM-4_5-05",
    "pack": false
   },
   {
@@ -130791,6 +131448,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_c93a5e0b_18",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Crumple the paper!",
+   "speech": "Crumple the paper!",
+   "source": "steam/STEAM-5_6-01",
+   "pack": false
+  },
+  {
    "id": "en_tutor_c94ca4f8_30",
    "lang": "en",
    "style": "tutor",
@@ -131034,6 +131700,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_c9ffd233_16",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Sleep, cat. Shh…",
+   "speech": "Sleep, cat. Shh…",
+   "source": "steam/STEAM-2_3-05",
+   "pack": false
+  },
+  {
    "id": "en_tutor_ca0a0375_15",
    "lang": "en",
    "style": "tutor",
@@ -131220,6 +131895,15 @@
    "text": "Where are the two friends? Touch the friends!",
    "speech": "Where are the two friends? Touch the friends!",
    "source": "microcuento.curso_3_4.09/3/triada.sinalar",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_ca96e524_12",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Long shadow!",
+   "speech": "Long shadow!",
+   "source": "steam/STEAM-3_4-01",
    "pack": false
   },
   {
@@ -132048,6 +132732,15 @@
    "text": "Frost can kill young plants.",
    "speech": "Frost can kill young plants.",
    "source": "corpus/449/frase",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_cc9ff7a1_18",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Blow the windmill!",
+   "speech": "Blow the windmill!",
+   "source": "steam/STEAM-4_5-03",
    "pack": false
   },
   {
@@ -133392,6 +134085,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_cfee12ce_10",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Turn left!",
+   "speech": "Turn left!",
+   "source": "steam/STEAM-5_6-03",
+   "pack": false
+  },
+  {
    "id": "en_tutor_cfeea750_40",
    "lang": "en",
    "style": "tutor",
@@ -134634,6 +135336,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_d2d34b79_14",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Rub the towel!",
+   "speech": "Rub the towel!",
+   "source": "steam/STEAM-0_2-04",
+   "pack": false
+  },
+  {
    "id": "en_tutor_d2d96e47_42",
    "lang": "en",
    "style": "tutor",
@@ -134904,6 +135615,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_d36ea60b_18",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Open it! The same!",
+   "speech": "Open it! The same!",
+   "source": "steam/STEAM-5_6-11",
+   "pack": false
+  },
+  {
    "id": "en_tutor_d37a37a9_41",
    "lang": "en",
    "style": "tutor",
@@ -134964,6 +135684,15 @@
    "text": "Where did he go?",
    "speech": "Where did he go?",
    "source": "tpr.4_5.febreiro/s4/4_5.febreiro.s4.where-did-he-go",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_d3a01152_12",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Float, boat!",
+   "speech": "Float, boat!",
+   "source": "steam/STEAM-2_3-09",
    "pack": false
   },
   {
@@ -135822,6 +136551,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_d5d26214_20",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Apple in the basket!",
+   "speech": "Apple in the basket!",
+   "source": "steam/STEAM-0_2-01",
+   "pack": false
+  },
+  {
    "id": "en_tutor_d5d2de98_35",
    "lang": "en",
    "style": "tutor",
@@ -136623,6 +137361,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_d837502a_16",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Wash your hands!",
+   "speech": "Wash your hands!",
+   "source": "steam/STEAM-2_3-03",
+   "pack": false
+  },
+  {
    "id": "en_tutor_d83f736b_44",
    "lang": "en",
    "style": "tutor",
@@ -136647,6 +137394,15 @@
    "text": "Yes, a bird in the sky!",
    "speech": "Yes, a bird in the sky!",
    "source": "microcuento.curso_2_3.06/1/recast.unhaPalabra",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_d84e25a6_14",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Thunder! Boom!",
+   "speech": "Thunder! Boom!",
+   "source": "steam/STEAM-4_5-04",
    "pack": false
   },
   {
@@ -136908,6 +137664,15 @@
    "text": "Best moment",
    "speech": "Best moment",
    "source": "tpr.5_6.xuno/s1/5_6.xuno.s1.best-moment",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_d8f9c020_16",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Ball in the box!",
+   "speech": "Ball in the box!",
+   "source": "steam/STEAM-0_2-06",
    "pack": false
   },
   {
@@ -138936,6 +139701,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_de9e1547_15",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Push the train!",
+   "speech": "Push the train!",
+   "source": "steam/STEAM-3_4-11",
+   "pack": false
+  },
+  {
    "id": "en_tutor_de9eb6f7_31",
    "lang": "en",
    "style": "tutor",
@@ -139455,6 +140229,15 @@
    "text": "Why can't the robin drink?",
    "speech": "Why can't the robin drink?",
    "source": "microcuento.curso_4_5.04/2/casa",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_e01f9372_18",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Two steps forward!",
+   "speech": "Two steps forward!",
+   "source": "steam/STEAM-5_6-03",
    "pack": false
   },
   {
@@ -142311,6 +143094,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_e8116f18_27",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Look through the red paper!",
+   "speech": "Look through the red paper!",
+   "source": "steam/STEAM-5_6-10",
+   "pack": false
+  },
+  {
    "id": "en_tutor_e817c2d6_24",
    "lang": "en",
    "style": "tutor",
@@ -143769,6 +144561,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_ebb677f3_24",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Listen! Can you hear me?",
+   "speech": "Listen! Can you hear me?",
+   "source": "steam/STEAM-3_4-12",
+   "pack": false
+  },
+  {
    "id": "en_tutor_ebbb800a_47",
    "lang": "en",
    "style": "tutor",
@@ -144216,6 +145017,15 @@
    "text": "If I take one away, there are four",
    "speech": "If I take one away, there are four",
    "source": "tpr.5_6.novembro/s2/5_6.novembro.s2.if-i-take-one-away-there-are-four",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_ecd3092a_13",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Go, boat, go!",
+   "speech": "Go, boat, go!",
+   "source": "steam/STEAM-2_3-10",
    "pack": false
   },
   {
@@ -145884,6 +146694,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_f167e4c0_21",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Orange! A new colour!",
+   "speech": "Orange! A new colour!",
+   "source": "steam/STEAM-5_6-09",
+   "pack": false
+  },
+  {
    "id": "en_tutor_f16c6e0b_40",
    "lang": "en",
    "style": "tutor",
@@ -146982,6 +147801,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_f4575c9b_15",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Pour the juice!",
+   "speech": "Pour the juice!",
+   "source": "steam/STEAM-3_4-04",
+   "pack": false
+  },
+  {
    "id": "en_tutor_f459f766_35",
    "lang": "en",
    "style": "tutor",
@@ -147825,6 +148653,15 @@
    "text": "Freeze on command",
    "speech": "Freeze on command",
    "source": "tpr.5_6.febreiro/s1/5_6.febreiro.s1.freeze-on-command",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_f69395cd_17",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Cold apple! Brrr!",
+   "speech": "Cold apple! Brrr!",
+   "source": "steam/STEAM-0_2-02",
    "pack": false
   },
   {
@@ -148782,6 +149619,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_f92c5ccf_15",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Steady! Steady!",
+   "speech": "Steady! Steady!",
+   "source": "steam/STEAM-3_4-09",
+   "pack": false
+  },
+  {
    "id": "en_tutor_f93bccda_40",
    "lang": "en",
    "style": "tutor",
@@ -149556,6 +150402,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_fb383b6b_18",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Look at the light!",
+   "speech": "Look at the light!",
+   "source": "steam/STEAM-0_2-12",
+   "pack": false
+  },
+  {
    "id": "en_tutor_fb3dfcbc_33",
    "lang": "en",
    "style": "tutor",
@@ -150285,6 +151140,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_fd2c96c8_20",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Look, the ice melts!",
+   "speech": "Look, the ice melts!",
+   "source": "steam/STEAM-3_4-02",
+   "pack": false
+  },
+  {
    "id": "en_tutor_fd2f35ec_32",
    "lang": "en",
    "style": "tutor",
@@ -150744,6 +151608,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_fe810bf5_23",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Look! Light in the box!",
+   "speech": "Look! Light in the box!",
+   "source": "steam/STEAM-2_3-06",
+   "pack": false
+  },
+  {
    "id": "en_tutor_fe853192_43",
    "lang": "en",
    "style": "tutor",
@@ -150813,6 +151686,15 @@
    "text": "Let's send a postcard to grandma.",
    "speech": "Let's send a postcard to grandma.",
    "source": "corpus/729/frase",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_fec2a992_15",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Run, dog! Fast!",
+   "speech": "Run, dog! Fast!",
+   "source": "steam/STEAM-2_3-05",
    "pack": false
   },
   {
@@ -150903,6 +151785,15 @@
    "text": "Nine children came to the party.",
    "speech": "Nine children came to the party.",
    "source": "corpus/565/frase",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_ff03bc7a_18",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Everything is red!",
+   "speech": "Everything is red!",
+   "source": "steam/STEAM-5_6-10",
    "pack": false
   },
   {
@@ -154338,6 +155229,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_0772c7e0_21",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Gira a la izquierda!",
+   "speech": "¡Gira a la izquierda!",
+   "source": "steam/STEAM-5_6-03/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_077629cb_55",
    "lang": "es",
    "style": "tutor",
@@ -155267,6 +156167,24 @@
    "text": "¡Sí! ¡El sol! ¡El sol más brillante del cielo!",
    "speech": "¡Sí! ¡El sol! ¡El sol más brillante del cielo!",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_0a4bdf00_20",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡El pan, en la caja!",
+   "speech": "¡El pan, en la caja!",
+   "source": "steam/STEAM-0_2-01/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_0a50c71f_18",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Agita la botella!",
+   "speech": "¡Agita la botella!",
+   "source": "steam/STEAM-0_2-10/significado",
    "pack": false
   },
   {
@@ -156260,6 +157178,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_0cfcd2b3_17",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Frota la toalla!",
+   "speech": "¡Frota la toalla!",
+   "source": "steam/STEAM-0_2-04/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_0cff557e_6",
    "lang": "es",
    "style": "tutor",
@@ -156320,6 +157247,15 @@
    "text": "Mira, Lúa busca el sol. ¿Dónde está el sol?",
    "speech": "Mira, Lúa busca el sol. ¿Dónde está el sol?",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_0d23c5f6_18",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Habla en el vaso!",
+   "speech": "¡Habla en el vaso!",
+   "source": "steam/STEAM-3_4-12/significado",
    "pack": false
   },
   {
@@ -159950,6 +160886,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_1847a59b_30",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Mira! ¡La sombra de un perro!",
+   "speech": "¡Mira! ¡La sombra de un perro!",
+   "source": "steam/STEAM-0_2-05/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_1849c5d8_9",
    "lang": "es",
    "style": "tutor",
@@ -161174,6 +162119,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_1b6079df_16",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Está embarrado!",
+   "speech": "¡Está embarrado!",
+   "source": "steam/STEAM-4_5-02/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_1b6f1498_34",
    "lang": "es",
    "style": "tutor",
@@ -161630,6 +162584,15 @@
    "text": "¡Sí, el abrigo! El abrigo rojo va a proteger al corderito.",
    "speech": "¡Sí, el abrigo! El abrigo rojo va a proteger al corderito.",
    "source": "biblioteca/HIS-077/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_1cbcf4a5_27",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Mira, el hielo se derrite!",
+   "speech": "¡Mira, el hielo se derrite!",
+   "source": "steam/STEAM-3_4-02/significado",
    "pack": false
   },
   {
@@ -162686,6 +163649,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_1fa58455_16",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Uno, dos… ¡para!",
+   "speech": "Uno, dos… ¡para!",
+   "source": "steam/STEAM-5_6-05/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_1fa84c42_5",
    "lang": "es",
    "style": "tutor",
@@ -163596,6 +164568,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_2277a50a_14",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Flota, barco!",
+   "speech": "¡Flota, barco!",
+   "source": "steam/STEAM-2_3-09/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_227c19fd_68",
    "lang": "es",
    "style": "tutor",
@@ -163917,6 +164898,15 @@
    "text": "N · Nido de pájaro",
    "speech": "N · Nido de pájaro",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_23323546_31",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Sombra grande, sombra pequeña!",
+   "speech": "¡Sombra grande, sombra pequeña!",
+   "source": "steam/STEAM-0_2-12/significado",
    "pack": false
   },
   {
@@ -164526,6 +165516,15 @@
    "speech": "Vivo, viva",
    "source": "tpr.3_4.abril/s2/3_4.abril.s2.alive/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_250c63fd_24",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Toca la esponja mojada!",
+   "speech": "¡Toca la esponja mojada!",
+   "source": "steam/STEAM-0_2-09/significado",
+   "pack": false
   },
   {
    "id": "es_tutor_250dfcbe_51",
@@ -166005,6 +167004,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_2917c6a6_23",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Mira! ¡Luz en la caja!",
+   "speech": "¡Mira! ¡Luz en la caja!",
+   "source": "steam/STEAM-2_3-06/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_2920fc4c_37",
    "lang": "es",
    "style": "tutor",
@@ -166173,6 +167181,15 @@
    "text": "¿Bebes leche en casa?",
    "speech": "¿Bebes leche en casa?",
    "source": "biblioteca/HIS-043/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_29a09ca0_26",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Levanta la toalla mojada!",
+   "speech": "¡Levanta la toalla mojada!",
+   "source": "steam/STEAM-2_3-04/significado",
    "pack": false
   },
   {
@@ -171075,6 +172092,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_389479ca_20",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Cuatro patas, aquí!",
+   "speech": "¡Cuatro patas, aquí!",
+   "source": "steam/STEAM-4_5-11/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_38951ea5_56",
    "lang": "es",
    "style": "tutor",
@@ -171108,6 +172134,15 @@
    "text": "Me toca a mí… ¡fuerte, fuerte! ¡Te toca a ti! ¡Agita las campanas!",
    "speech": "Me toca a mí… ¡fuerte, fuerte! ¡Te toca a ti! ¡Agita las campanas!",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_38b20b90_22",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Corre, sombra! ¡Para!",
+   "speech": "¡Corre, sombra! ¡Para!",
+   "source": "steam/STEAM-0_2-05/significado",
    "pack": false
   },
   {
@@ -171550,6 +172585,15 @@
    "speech": "¿Qué es?",
    "source": "tpr.0_2.novembro/s4/0_2.novembro.s4.what-is-it/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_39f546a8_21",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Vamos, barco, vamos!",
+   "speech": "¡Vamos, barco, vamos!",
+   "source": "steam/STEAM-2_3-10/significado",
+   "pack": false
   },
   {
    "id": "es_tutor_39f61f22_44",
@@ -172306,6 +173350,15 @@
    "speech": "Pétalo",
    "source": "tpr.0_2.abril/s1/0_2.abril.s1.petal/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_3c6fb8b2_18",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Lávate las manos!",
+   "speech": "¡Lávate las manos!",
+   "source": "steam/STEAM-2_3-03/significado",
+   "pack": false
   },
   {
    "id": "es_tutor_3c7b4419_25",
@@ -173160,6 +174213,15 @@
    "text": "¿Te acuerdas de qué estaba pintando Lúa?",
    "speech": "¿Te acuerdas de qué estaba pintando Lúa?",
    "source": "biblioteca/HIS-088/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_3eb61f6a_22",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Toca el pan templado!",
+   "speech": "¡Toca el pan templado!",
+   "source": "steam/STEAM-0_2-02/significado",
    "pack": false
   },
   {
@@ -174756,6 +175818,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_43305ad1_23",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Un plato, una cuchara!",
+   "speech": "¡Un plato, una cuchara!",
+   "source": "steam/STEAM-3_4-03/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_433d50e1_34",
    "lang": "es",
    "style": "tutor",
@@ -175521,6 +176592,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_457fdbd5_26",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Bloque rojo, bloque azul!",
+   "speech": "¡Bloque rojo, bloque azul!",
+   "source": "steam/STEAM-3_4-10/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_4584e021_17",
    "lang": "es",
    "style": "tutor",
@@ -176095,6 +177175,15 @@
    "speech": "Colador",
    "source": "tpr.2_3.maio/s3/2_3.maio.s3.sieve/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_46ee7413_20",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Dos pasos adelante!",
+   "speech": "¡Dos pasos adelante!",
+   "source": "steam/STEAM-5_6-03/significado",
+   "pack": false
   },
   {
    "id": "es_tutor_46ee8d3e_28",
@@ -177663,6 +178752,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_4b6ad31d_14",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Una estrella!",
+   "speech": "¡Una estrella!",
+   "source": "steam/STEAM-2_3-02/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_4b7216f0_46",
    "lang": "es",
    "style": "tutor",
@@ -178140,6 +179238,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_4d05e93d_22",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Escucha! ¡Gota, gota!",
+   "speech": "¡Escucha! ¡Gota, gota!",
+   "source": "steam/STEAM-0_2-10/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_4d064090_106",
    "lang": "es",
    "style": "tutor",
@@ -178317,6 +179424,15 @@
    "text": "Mira, Lúa toca el tambor. ¡Pom, pom, pom!",
    "speech": "Mira, Lúa toca el tambor. ¡Pom, pom, pom!",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_4d92ac65_17",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Pesada! ¡Ligera!",
+   "speech": "¡Pesada! ¡Ligera!",
+   "source": "steam/STEAM-2_3-04/significado",
    "pack": false
   },
   {
@@ -180705,6 +181821,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_5449d75f_20",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Hoja pequeña, allí!",
+   "speech": "¡Hoja pequeña, allí!",
+   "source": "steam/STEAM-2_3-11/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_544c3f09_32",
    "lang": "es",
    "style": "tutor",
@@ -182640,6 +183765,33 @@
    "pack": true
   },
   {
+   "id": "es_tutor_5a3cb053_23",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Golpea con la cuchara!",
+   "speech": "¡Golpea con la cuchara!",
+   "source": "steam/STEAM-3_4-05/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_5a4a11af_28",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Mezcla la tierra y el agua!",
+   "speech": "¡Mezcla la tierra y el agua!",
+   "source": "steam/STEAM-4_5-02/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_5a595564_24",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Mira por el papel rojo!",
+   "speech": "¡Mira por el papel rojo!",
+   "source": "steam/STEAM-5_6-10/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_5a82d796_44",
    "lang": "es",
    "style": "tutor",
@@ -183519,6 +184671,15 @@
    "text": "¿Puedes comer como el ratoncito? ¡Ñam, ñam!",
    "speech": "¿Puedes comer como el ratoncito? ¡Ñam, ñam!",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_5ce11a51_16",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Empuja el tren!",
+   "speech": "¡Empuja el tren!",
+   "source": "steam/STEAM-3_4-11/significado",
    "pack": false
   },
   {
@@ -185268,6 +186429,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_61f78b2d_21",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Llévalo con cuidado!",
+   "speech": "¡Llévalo con cuidado!",
+   "source": "steam/STEAM-4_5-01/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_61fb4409_20",
    "lang": "es",
    "style": "tutor",
@@ -185778,6 +186948,15 @@
    "text": "¿Dónde está la piedra grande? ¡Toca la piedra grande!",
    "speech": "¿Dónde está la piedra grande? ¡Toca la piedra grande!",
    "source": "biblioteca/HIS-020/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_63ba42ac_29",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Primero agua, después jabón!",
+   "speech": "¡Primero agua, después jabón!",
+   "source": "steam/STEAM-2_3-03/significado",
    "pack": false
   },
   {
@@ -186972,6 +188151,15 @@
    "speech": "¡Brr, manos heladas!",
    "source": "tpr.4_5.decembro/s1/4_5.decembro.s1.brr-freezing-hands/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_66fd1aae_24",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Los colores se mezclan!",
+   "speech": "¡Los colores se mezclan!",
+   "source": "steam/STEAM-5_6-12/significado",
+   "pack": false
   },
   {
    "id": "es_tutor_6706d816_47",
@@ -188198,6 +189386,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_6a7e0c71_17",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Quieta! ¡Quieta!",
+   "speech": "¡Quieta! ¡Quieta!",
+   "source": "steam/STEAM-3_4-09/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_6a809449_29",
    "lang": "es",
    "style": "tutor",
@@ -188360,6 +189557,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_6af043b0_19",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Rápido! ¡Despacio!",
+   "speech": "¡Rápido! ¡Despacio!",
+   "source": "steam/STEAM-3_4-11/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_6af0a5f2_40",
    "lang": "es",
    "style": "tutor",
@@ -188492,6 +189698,15 @@
    "text": "Aleteo de codos y pico",
    "speech": "Aleteo de codos y pico",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_6bae5fec_20",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Escucha el corazón!",
+   "speech": "¡Escucha el corazón!",
+   "source": "steam/STEAM-4_5-10/significado",
    "pack": false
   },
   {
@@ -189224,6 +190439,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_6dcd5715_20",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Mira en la cuchara!",
+   "speech": "¡Mira en la cuchara!",
+   "source": "steam/STEAM-3_4-06/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_6dd8f7ef_4",
    "lang": "es",
    "style": "tutor",
@@ -189827,6 +191051,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_6f220f4c_29",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Despacio, despacio! ¡Juntos!",
+   "speech": "¡Despacio, despacio! ¡Juntos!",
+   "source": "steam/STEAM-4_5-01/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_6f361ecb_14",
    "lang": "es",
    "style": "tutor",
@@ -189842,6 +191075,15 @@
    "text": "¡Oh, un pez! ¡Y mi concha!",
    "speech": "¡Oh, un pez! ¡Y mi concha!",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_6f4a2aa8_20",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Sopla el molinillo!",
+   "speech": "¡Sopla el molinillo!",
+   "source": "steam/STEAM-4_5-03/significado",
    "pack": false
   },
   {
@@ -190448,6 +191690,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_70fdfb53_28",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Venda la pata, con cuidado!",
+   "speech": "¡Venda la pata, con cuidado!",
+   "source": "steam/STEAM-4_5-09/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_710e858f_8",
    "lang": "es",
    "style": "tutor",
@@ -190544,6 +191795,15 @@
    "text": "Mmm, ¡mira! ¡Agua! ¡Agua fría!",
    "speech": "Mmm, ¡mira! ¡Agua! ¡Agua fría!",
    "source": "curriculo/T2.U1/frasesAdulta/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_7158d2da_21",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Pan duro! ¡Toc, toc!",
+   "speech": "¡Pan duro! ¡Toc, toc!",
+   "source": "steam/STEAM-2_3-01/significado",
    "pack": false
   },
   {
@@ -191480,6 +192740,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_73d25778_20",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Haz una torre alta!",
+   "speech": "¡Haz una torre alta!",
+   "source": "steam/STEAM-3_4-09/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_73d45578_6",
    "lang": "es",
    "style": "tutor",
@@ -191784,6 +193053,15 @@
    "speech": "Sorber",
    "source": "tpr.0_2.xaneiro/s1/0_2.xaneiro.s1.slurp/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_748f5474_22",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Chu-chu! ¡Más rápido!",
+   "speech": "¡Chuchu! ¡Más rápido!",
+   "source": "steam/STEAM-5_6-06/significado",
+   "pack": false
   },
   {
    "id": "es_tutor_7491da05_65",
@@ -196688,6 +197966,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_82f8ddaf_19",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Duerme, gato. Chis…",
+   "speech": "Duerme, gato. Chis…",
+   "source": "steam/STEAM-2_3-05/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_8307c0a1_8",
    "lang": "es",
    "style": "tutor",
@@ -196775,6 +198062,15 @@
    "text": "¡Sí, sol! Un sol amarillo y grande.",
    "speech": "¡Sí, sol! Un sol amarillo y grande.",
    "source": "biblioteca/HIS-080/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_83496a3e_14",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Trueno! ¡Bum!",
+   "speech": "¡Trueno! ¡Bum!",
+   "source": "steam/STEAM-4_5-04/significado",
    "pack": false
   },
   {
@@ -197048,6 +198344,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_84664225_21",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Manzana fría! ¡Brrr!",
+   "speech": "¡Manzana fría! ¡Brrr!",
+   "source": "steam/STEAM-0_2-02/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_8467e0be_14",
    "lang": "es",
    "style": "tutor",
@@ -197154,6 +198459,15 @@
    "speech": "Corriente",
    "source": "tpr.4_5.maio/s2/4_5.maio.s2.current/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_84b5c736_32",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¿Hasta dónde? ¡Cuenta los pasos!",
+   "speech": "¿Hasta dónde? ¡Cuenta los pasos!",
+   "source": "steam/STEAM-5_6-02/significado",
+   "pack": false
   },
   {
    "id": "es_tutor_84c6796b_54",
@@ -197692,6 +199006,15 @@
    "text": "¿Por qué llama la mamá gata?",
    "speech": "¿Por qué llama la mamá gata?",
    "source": "biblioteca/HIS-072/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_864614ec_27",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Mira dentro de la manzana!",
+   "speech": "¡Mira dentro de la manzana!",
+   "source": "steam/STEAM-2_3-02/significado",
    "pack": false
   },
   {
@@ -200251,6 +201574,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_8e3a1403_14",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Suave, suave!",
+   "speech": "¡Suave, suave!",
+   "source": "steam/STEAM-0_2-04/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_8e3a7138_13",
    "lang": "es",
    "style": "tutor",
@@ -200401,6 +201733,15 @@
    "text": "Mira, Lúa vuela como una abeja. ¡Bzzz, bzzz!",
    "speech": "Mira, Lúa vuela como una abeja. ¡Bzzz, bzzz!",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_8e982917_18",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Suelta! ¡Escucha!",
+   "speech": "¡Suelta! ¡Escucha!",
+   "source": "steam/STEAM-2_3-12/significado",
    "pack": false
   },
   {
@@ -200620,6 +201961,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_8f5c75ac_22",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Piedra grande, abajo!",
+   "speech": "¡Piedra grande, abajo!",
+   "source": "steam/STEAM-0_2-11/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_8f64407b_22",
    "lang": "es",
    "style": "tutor",
@@ -200690,6 +202040,15 @@
    "speech": "Luminoso, luminosa",
    "source": "tpr.3_4.outubro/s2/3_4.outubro.s2.bright/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_8fa89c58_21",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Haz rodar la pelota!",
+   "speech": "¡Haz rodar la pelota!",
+   "source": "steam/STEAM-0_2-06/significado",
+   "pack": false
   },
   {
    "id": "es_tutor_8fb18db8_34",
@@ -201113,6 +202472,24 @@
    "text": "¡Dale a la manta! ¡Pat, pat!",
    "speech": "¡Dale a la manta! ¡Pat, pat!",
    "source": "biblioteca/HIS-051/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_90aa14cd_23",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Aprieta el pan blando!",
+   "speech": "¡Aprieta el pan blando!",
+   "source": "steam/STEAM-2_3-01/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_90c5e4b4_19",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Para! ¡Está lleno!",
+   "speech": "¡Para! ¡Está lleno!",
+   "source": "steam/STEAM-3_4-04/significado",
    "pack": false
   },
   {
@@ -203187,6 +204564,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_9650f5ce_34",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Sombrero puesto! ¡Mira la sombra!",
+   "speech": "¡Sombrero puesto! ¡Mira la sombra!",
+   "source": "steam/STEAM-4_5-05/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_96820fb6_49",
    "lang": "es",
    "style": "tutor",
@@ -204381,6 +205767,15 @@
    "text": "Lectura de cuento colectivo",
    "speech": "Lectura de cuento colectivo",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_99d2e8ff_11",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Del revés!",
+   "speech": "¡Del revés!",
+   "source": "steam/STEAM-3_4-06/significado",
    "pack": false
   },
   {
@@ -206238,6 +207633,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_9f38f0c1_26",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Tubo largo, sonido grave!",
+   "speech": "¡Tubo largo, sonido grave!",
+   "source": "steam/STEAM-5_6-06/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_9f43b7e4_13",
    "lang": "es",
    "style": "tutor",
@@ -206810,6 +208214,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_a10416b9_13",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Hace viento!",
+   "speech": "¡Hace viento!",
+   "source": "steam/STEAM-4_5-03/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_a10e17cc_43",
    "lang": "es",
    "style": "tutor",
@@ -206879,6 +208292,15 @@
    "text": "¡Estírate bien alto! Zumo de naranja... vierte, vierte... ¡delicioso!",
    "speech": "¡Estírate bien alto! Zumo de naranja... vierte, vierte... ¡delicioso!",
    "source": "biblioteca/HIS-067/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_a1445bc8_24",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Remueve con la cuchara!",
+   "speech": "¡Remueve con la cuchara!",
+   "source": "steam/STEAM-3_4-02/significado",
    "pack": false
   },
   {
@@ -207098,6 +208520,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_a1b5a1ca_15",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¿Qué sonido es?",
+   "speech": "¿Qué sonido es?",
+   "source": "steam/STEAM-5_6-01/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_a1baf751_16",
    "lang": "es",
    "style": "tutor",
@@ -207278,6 +208709,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_a2576445_23",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Corre, perro! ¡Rápido!",
+   "speech": "¡Corre, perro! ¡Rápido!",
+   "source": "steam/STEAM-2_3-05/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_a25bcb42_31",
    "lang": "es",
    "style": "tutor",
@@ -207347,6 +208787,15 @@
    "text": "¡Busca al perro, al gato y a la vaca! ¡Tócalos: uno, dos, tres!",
    "speech": "¡Busca al perro, al gato y a la vaca! ¡Tócalos: uno, dos, tres!",
    "source": "biblioteca/HIS-009/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_a2991653_21",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Piedra grande, aquí!",
+   "speech": "¡Piedra grande, aquí!",
+   "source": "steam/STEAM-2_3-11/significado",
    "pack": false
   },
   {
@@ -207791,6 +209240,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_a404ce04_12",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¿Está vacío?",
+   "speech": "¿Está vacío?",
+   "source": "steam/STEAM-3_4-03/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_a4072e1f_53",
    "lang": "es",
    "style": "tutor",
@@ -208041,6 +209499,15 @@
    "speech": "Contar una historia",
    "source": "tpr.4_5.xuno/s2/4_5.xuno.s2.tell-a-story/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_a4a3179e_21",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Chapotea en el agua!",
+   "speech": "¡Chapotea en el agua!",
+   "source": "steam/STEAM-0_2-09/significado",
+   "pack": false
   },
   {
    "id": "es_tutor_a4a61a51_36",
@@ -208574,6 +210041,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_a6186c0c_12",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¿Pesa mucho?",
+   "speech": "¿Pesa mucho?",
+   "source": "steam/STEAM-5_6-04/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_a6218141_43",
    "lang": "es",
    "style": "tutor",
@@ -208904,6 +210380,15 @@
    "text": "¿Puedes saltar en el charco? Uno, dos, tres… ¡salta!",
    "speech": "¿Puedes saltar en el charco? Uno, dos, tres… ¡salta!",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_a6d3d7ad_26",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Naranja! ¡Un color nuevo!",
+   "speech": "¡Naranja! ¡Un color nuevo!",
+   "source": "steam/STEAM-5_6-09/significado",
    "pack": false
   },
   {
@@ -209807,6 +211292,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_a9803e1f_22",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Abajo, piedra! ¡Chap!",
+   "speech": "¡Abajo, piedra! ¡Chap!",
+   "source": "steam/STEAM-2_3-09/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_a984c07e_16",
    "lang": "es",
    "style": "tutor",
@@ -209885,6 +211379,15 @@
    "text": "¿Dónde están las castañas calentitas? ¡Toca las castañas!",
    "speech": "¿Dónde están las castañas calentitas? ¡Toca las castañas!",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_a9cfd85e_17",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Busca tu sombra!",
+   "speech": "¡Busca tu sombra!",
+   "source": "steam/STEAM-4_5-05/significado",
    "pack": false
   },
   {
@@ -210632,6 +212135,15 @@
    "text": "¿Dónde está la campana? ¡Toca la campana de Lúa!",
    "speech": "¿Dónde está la campana? ¡Toca la campana de Lúa!",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_ac4a20e7_14",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Todo es rojo!",
+   "speech": "¡Todo es rojo!",
+   "source": "steam/STEAM-5_6-10/significado",
    "pack": false
   },
   {
@@ -211841,6 +213353,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_afaf184b_19",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Escucha! ¿Me oyes?",
+   "speech": "¡Escucha! ¿Me oyes?",
+   "source": "steam/STEAM-3_4-12/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_afaf59e7_6",
    "lang": "es",
    "style": "tutor",
@@ -212814,6 +214335,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_b22133a3_15",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Haz la maleta!",
+   "speech": "¡Haz la maleta!",
+   "source": "steam/STEAM-5_6-04/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_b2322952_111",
    "lang": "es",
    "style": "tutor",
@@ -213149,6 +214679,15 @@
    "text": "Mira, la castaña rueda. ¡Cuesta abajo, cuesta abajo!",
    "speech": "Mira, la castaña rueda. ¡Cuesta abajo, cuesta abajo!",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_b2d38284_17",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Dos patas, allí!",
+   "speech": "¡Dos patas, allí!",
+   "source": "steam/STEAM-4_5-11/significado",
    "pack": false
   },
   {
@@ -213644,6 +215183,15 @@
    "text": "¡Vamos a marchar con las botas: pum, pum... y estírate bien arriba!",
    "speech": "¡Vamos a marchar con las botas: pum, pum... y estírate bien arriba!",
    "source": "biblioteca/HIS-079/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_b440cca8_14",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Echa el zumo!",
+   "speech": "¡Echa el zumo!",
+   "source": "steam/STEAM-3_4-04/significado",
    "pack": false
   },
   {
@@ -214211,6 +215759,15 @@
    "text": "¡Sí, una hoja que hace cranch!",
    "speech": "¡Sí, una hoja que hace cranch!",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_b5d6eeac_31",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Sonido grande, sonido pequeño!",
+   "speech": "¡Sonido grande, sonido pequeño!",
+   "source": "steam/STEAM-2_3-12/significado",
    "pack": false
   },
   {
@@ -214936,6 +216493,15 @@
    "text": "Brazos arriba y el pie izquierdo adelante",
    "speech": "Brazos arriba y el pie izquierdo adelante",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_b818bfc6_29",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Lanza el avión con suavidad!",
+   "speech": "¡Lanza el avión con suavidad!",
+   "source": "steam/STEAM-5_6-02/significado",
    "pack": false
   },
   {
@@ -216406,6 +217972,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_bc3a34ac_23",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Sol! ¡Sombrero puesto!",
+   "speech": "¡Sol! ¡Sombrero puesto!",
+   "source": "steam/STEAM-4_5-06/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_bc42a8c4_44",
    "lang": "es",
    "style": "tutor",
@@ -216892,6 +218467,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_bd8f97a2_23",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡La pelota, en la caja!",
+   "speech": "¡La pelota, en la caja!",
+   "source": "steam/STEAM-0_2-06/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_bd949769_36",
    "lang": "es",
    "style": "tutor",
@@ -217279,6 +218863,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_bea2d3fa_15",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Agudo! ¡Grave!",
+   "speech": "¡Agudo! ¡Grave!",
+   "source": "steam/STEAM-3_4-05/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_bead248f_72",
    "lang": "es",
    "style": "tutor",
@@ -217321,6 +218914,15 @@
    "text": "Distribuir un pañuelo de gasa suave de algodón a cada escolar.",
    "speech": "Distribuir un pañuelo de gasa suave de algodón a cada escolar.",
    "source": "asamblea.segundo_ciclo.setembro.4_infantil/fase/4/consigna",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_bed21e5e_15",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Haz la lluvia!",
+   "speech": "¡Haz la lluvia!",
+   "source": "steam/STEAM-4_5-04/significado",
    "pack": false
   },
   {
@@ -217429,6 +219031,15 @@
    "text": "¡Llamemos al puente como Lúa! ¡Knock, knock! Tap... ¡ay, no, está roto!",
    "speech": "¡Llamemos al puente como Lúa! ¡Knock, knock! Tap... ¡ay, no, está roto!",
    "source": "biblioteca/HIS-056/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_bf314d40_25",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡La manzana, en la cesta!",
+   "speech": "¡La manzana, en la cesta!",
+   "source": "steam/STEAM-0_2-01/significado",
    "pack": false
   },
   {
@@ -218455,6 +220066,15 @@
    "text": "Levantar los brazos hasta la percha",
    "speech": "Levantar los brazos hasta la percha",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_c297a4ed_23",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Salta! ¡Ahora escucha!",
+   "speech": "¡Salta! ¡Ahora escucha!",
+   "source": "steam/STEAM-4_5-10/significado",
    "pack": false
   },
   {
@@ -219626,6 +221246,15 @@
    "speech": "Coger al bebé",
    "source": "tpr.0_2.setembro/s2/0_2.setembro.s2.pick-up-baby/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_c6363fae_14",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Echa la gota!",
+   "speech": "¡Echa la gota!",
+   "source": "steam/STEAM-4_5-09/significado",
+   "pack": false
   },
   {
    "id": "es_tutor_c6448da2_25",
@@ -221374,6 +223003,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_cb843352_16",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Suelta la hoja!",
+   "speech": "¡Suelta la hoja!",
+   "source": "steam/STEAM-0_2-11/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_cb85f6f1_40",
    "lang": "es",
    "style": "tutor",
@@ -221874,6 +223512,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_cce4a583_18",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Es grande! ¡Mira!",
+   "speech": "¡Es grande! ¡Mira!",
+   "source": "steam/STEAM-4_5-12/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_cce62f42_5",
    "lang": "es",
    "style": "tutor",
@@ -222141,6 +223788,15 @@
    "text": "¿Puedes hacer volar la mano como un avión? ¡Fuuu, fuuu!",
    "speech": "¿Puedes hacer volar la mano como un avión? ¡Fuuu, fuuu!",
    "source": "biblioteca/HIS-098/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_cdb6121d_21",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Examina con la lupa!",
+   "speech": "¡Examina con la lupa!",
+   "source": "steam/STEAM-4_5-12/significado",
    "pack": false
   },
   {
@@ -223260,6 +224916,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_d15886a4_32",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Está lloviendo! ¡Botas puestas!",
+   "speech": "¡Está lloviendo! ¡Botas puestas!",
+   "source": "steam/STEAM-4_5-06/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_d15fca9b_41",
    "lang": "es",
    "style": "tutor",
@@ -223374,6 +225039,15 @@
    "text": "dormir",
    "speech": "dormir",
    "source": "curriculo/T2.U5/vocabulario/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_d1e9b80c_13",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Mira la luz!",
+   "speech": "¡Mira la luz!",
+   "source": "steam/STEAM-0_2-12/significado",
    "pack": false
   },
   {
@@ -225181,6 +226855,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_d7430366_14",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Sombra larga!",
+   "speech": "¡Sombra larga!",
+   "source": "steam/STEAM-3_4-01/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_d747a245_12",
    "lang": "es",
    "style": "tutor",
@@ -225971,6 +227654,15 @@
    "speech": "Cuanto más caliente, más rápido se hace",
    "source": "tpr.5_6.novembro/s3/5_6.novembro.s3.the-warmer-it-gets-the-faster-it-cooks/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_da333f46_16",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Dobla el papel!",
+   "speech": "¡Dobla el papel!",
+   "source": "steam/STEAM-5_6-11/significado",
+   "pack": false
   },
   {
    "id": "es_tutor_da38e2a1_71",
@@ -229051,6 +230743,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_e3e56340_22",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Haz destellar la luz!",
+   "speech": "¡Haz destellar la luz!",
+   "source": "steam/STEAM-5_6-05/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_e3eaa51b_30",
    "lang": "es",
    "style": "tutor",
@@ -230307,6 +232008,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_e7b01519_21",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Revienta la burbuja!",
+   "speech": "¡Revienta la burbuja!",
+   "source": "steam/STEAM-0_2-03/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_e7b39c52_9",
    "lang": "es",
    "style": "tutor",
@@ -230430,6 +232140,15 @@
    "text": "¿Dónde está el gatito? ¡Toca al gato!",
    "speech": "¿Dónde está el gatito? ¡Toca al gato!",
    "source": "biblioteca/HIS-043/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_e80af7e1_24",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Mezcla rojo y amarillo!",
+   "speech": "¡Mezcla rojo y amarillo!",
+   "source": "steam/STEAM-5_6-09/significado",
    "pack": false
   },
   {
@@ -230700,6 +232419,15 @@
    "text": "¿Tú estás cansado después del parque?",
    "speech": "¿Tú estás cansado después del parque?",
    "source": "biblioteca/HIS-045/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_e8b1104e_17",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Arruga el papel!",
+   "speech": "¡Arruga el papel!",
+   "source": "steam/STEAM-5_6-01/significado",
    "pack": false
   },
   {
@@ -231528,6 +233256,15 @@
    "text": "¡Duerme como el gato! Zzz...",
    "speech": "¡Duerme como el gato! Zzz...",
    "source": "biblioteca/HIS-047/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_eae7e302_14",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Sombra corta!",
+   "speech": "¡Sombra corta!",
+   "source": "steam/STEAM-3_4-01/significado",
    "pack": false
   },
   {
@@ -232698,6 +234435,15 @@
    "text": "¿Puedes caminar como la hormiga con la hoja grande? Dos dedos: tiptoe, tiptoe... ¡y para!",
    "speech": "¿Puedes caminar como la hormiga con la hoja grande? Dos dedos: tiptoe, tiptoe... ¡y para!",
    "source": "biblioteca/HIS-007/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_eeedfeb7_23",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Id, estrellas! ¡Parad!",
+   "speech": "¡Id, estrellas! ¡Parad!",
+   "source": "steam/STEAM-2_3-06/significado",
    "pack": false
   },
   {
@@ -234287,6 +236033,15 @@
    "text": "De puntillas, de puntillas... ¡toalla suave!",
    "speech": "De puntillas, de puntillas... ¡toalla suave!",
    "source": "biblioteca/HIS-036/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_f3cdf598_16",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Sopla el barco!",
+   "speech": "¡Sopla el barco!",
+   "source": "steam/STEAM-2_3-10/significado",
    "pack": false
   },
   {
@@ -236171,6 +237926,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_f97d5532_17",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Mira! ¡Burbujas!",
+   "speech": "¡Mira! ¡Burbujas!",
+   "source": "steam/STEAM-0_2-03/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_f984c921_54",
    "lang": "es",
    "style": "tutor",
@@ -236303,6 +238067,15 @@
    "text": "¡Un pececito azul nadando en el agua!",
    "speech": "¡Un pececito azul nadando en el agua!",
    "source": "biblioteca/HIS-001/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_f9e61e14_16",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Ábrelo! ¡Igual!",
+   "speech": "¡Ábrelo! ¡Igual!",
+   "source": "steam/STEAM-5_6-11/significado",
    "pack": false
   },
   {
@@ -236897,6 +238670,15 @@
    "text": "Mira, una mariposa cansada. Abre... cierra... Despacio.",
    "speech": "Mira, una mariposa cansada. Abre... cierra... Despacio.",
    "source": "biblioteca/HIS-086/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_fbeb3677_22",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Haz girar el círculo!",
+   "speech": "¡Haz girar el círculo!",
+   "source": "steam/STEAM-5_6-12/significado",
    "pack": false
   },
   {
@@ -240230,6 +242012,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_04d03ffb_16",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Para! Está cheo!",
+   "speech": "Para! Está cheo!",
+   "source": "steam/STEAM-3_4-04/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_04d14230_51",
    "lang": "gl",
    "style": "tutor",
@@ -240698,6 +242489,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_061a31cd_19",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Dous pasos adiante!",
+   "speech": "Dous pasos adiante!",
+   "source": "steam/STEAM-5_6-03/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_061c8abf_59",
    "lang": "gl",
    "style": "tutor",
@@ -240920,6 +242720,15 @@
    "text": "Mira, a porta! Vai, vai... os patos!",
    "speech": "Mira, a porta! Vai, vai... os patos!",
    "source": "biblioteca/HIS-053/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_068b75b4_19",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Pan duro! Toc, toc!",
+   "speech": "Pan duro! Toc, toc!",
+   "source": "steam/STEAM-2_3-01/significado",
    "pack": false
   },
   {
@@ -241227,6 +243036,15 @@
    "speech": "Tarxeta de cor",
    "source": "tpr.0_2.marzo/s1/0_2.marzo.s1.colour-card/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_0733f6d7_20",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Aperta o pan brando!",
+   "speech": "Aperta o pan brando!",
+   "source": "steam/STEAM-2_3-01/significado",
+   "pack": false
   },
   {
    "id": "gl_tutor_073ad553_6",
@@ -242750,6 +244568,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_0c372efe_24",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Son grande, son pequeno!",
+   "speech": "Son grande, son pequeno!",
+   "source": "steam/STEAM-2_3-12/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_0c3e6047_67",
    "lang": "gl",
    "style": "tutor",
@@ -244199,6 +246026,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_105b6c5e_23",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Mira! A sombra dun can!",
+   "speech": "Mira! A sombra dun can!",
+   "source": "steam/STEAM-0_2-05/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_106b9012_24",
    "lang": "gl",
    "style": "tutor",
@@ -244676,6 +246512,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_11a4d461_25",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Levanta a toalla mollada!",
+   "speech": "Levanta a toalla mollada!",
+   "source": "steam/STEAM-2_3-04/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_11ab322d_15",
    "lang": "gl",
    "style": "tutor",
@@ -245144,6 +246989,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_12ecc4a6_17",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Abanea a botella!",
+   "speech": "Abanea a botella!",
+   "source": "steam/STEAM-0_2-10/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_12f02d4a_25",
    "lang": "gl",
    "style": "tutor",
@@ -245475,6 +247329,15 @@
    "text": "Despedida afectiva",
    "speech": "Despedida afectiva",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_13cb2360_21",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Fai escintilar a luz!",
+   "speech": "Fai escintilar a luz!",
+   "source": "steam/STEAM-5_6-05/significado",
    "pack": false
   },
   {
@@ -245931,6 +247794,15 @@
    "speech": "Capitán",
    "source": "tpr.4_5.setembro/s1/4_5.setembro.s1.captain/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_150ab960_9",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Do revés!",
+   "speech": "Do revés!",
+   "source": "steam/STEAM-3_4-06/significado",
+   "pack": false
   },
   {
    "id": "gl_tutor_150c6795_53",
@@ -247445,12 +249317,30 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_197c4949_28",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Está chovendo! Botas postas!",
+   "speech": "Está chovendo! Botas postas!",
+   "source": "steam/STEAM-4_5-06/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_197d93a8_24",
    "lang": "gl",
    "style": "tutor",
    "text": "Patear no chan con ritmo",
    "speech": "Patear no chan con ritmo",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_197f5d14_29",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Primeiro auga, despois xabón!",
+   "speech": "Primeiro auga, despois xabón!",
+   "source": "steam/STEAM-2_3-03/significado",
    "pack": false
   },
   {
@@ -247697,6 +249587,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_1a0afbbc_23",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Laranxa! Unha cor nova!",
+   "speech": "Laranxa! Unha cor nova!",
+   "source": "steam/STEAM-5_6-09/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_1a11c14d_34",
    "lang": "gl",
    "style": "tutor",
@@ -247757,6 +249656,15 @@
    "text": "facer",
    "speech": "facer",
    "source": "curriculo/T3.U3.1/vocabulario/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_1a35ae82_19",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Mira! Luz na caixa!",
+   "speech": "Mira! Luz na caixa!",
+   "source": "steam/STEAM-2_3-06/significado",
    "pack": false
   },
   {
@@ -249641,6 +251549,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_1fcb1101_22",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Escoita! Pinga, pinga!",
+   "speech": "Escoita! Pinga, pinga!",
+   "source": "steam/STEAM-0_2-10/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_1fcc807c_16",
    "lang": "gl",
    "style": "tutor",
@@ -249702,6 +251619,15 @@
    "speech": "Tulipán",
    "source": "tpr.0_2.abril/s1/0_2.abril.s1.tulip/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_1ffe483c_16",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Mira! Burbullas!",
+   "speech": "Mira! Burbullas!",
+   "source": "steam/STEAM-0_2-03/significado",
+   "pack": false
   },
   {
    "id": "gl_tutor_2008d9a5_22",
@@ -249785,6 +251711,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_20467f77_13",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Sombra longa!",
+   "speech": "Sombra longa!",
+   "source": "steam/STEAM-3_4-01/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_20569a90_4",
    "lang": "gl",
    "style": "tutor",
@@ -249863,6 +251798,15 @@
    "text": "Que almorzas ti na casa?",
    "speech": "Que almorzas ti na casa?",
    "source": "biblioteca/HIS-063/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_2085c2a2_17",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Examina coa lupa!",
+   "speech": "Examina coa lupa!",
+   "source": "steam/STEAM-4_5-12/significado",
    "pack": false
   },
   {
@@ -251684,6 +253628,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_25d9d68d_11",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Mira a luz!",
+   "speech": "Mira a luz!",
+   "source": "steam/STEAM-0_2-12/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_25da56fa_8",
    "lang": "gl",
    "style": "tutor",
@@ -253178,6 +255131,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_2aa32cd5_13",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Flota, barco!",
+   "speech": "Flota, barco!",
+   "source": "steam/STEAM-2_3-09/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_2aa3fbf3_18",
    "lang": "gl",
    "style": "tutor",
@@ -254402,6 +256364,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_2d866a35_11",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Trono! Bum!",
+   "speech": "Trono! Bum!",
+   "source": "steam/STEAM-4_5-04/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_2d9233f9_69",
    "lang": "gl",
    "style": "tutor",
@@ -254750,6 +256721,15 @@
    "text": "Si, lama! Unha poza grande e enlamada no camiño.",
    "speech": "Si, lama! Unha poza grande e enlamada no camiño.",
    "source": "biblioteca/HIS-076/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_2e68eca7_19",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "A pelota, na caixa!",
+   "speech": "A pelota, na caixa!",
+   "source": "steam/STEAM-0_2-06/significado",
    "pack": false
   },
   {
@@ -256279,6 +258259,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_324a7f65_11",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Pesa moito?",
+   "speech": "Pesa moito?",
+   "source": "steam/STEAM-5_6-04/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_324ba04b_49",
    "lang": "gl",
    "style": "tutor",
@@ -257431,6 +259420,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_35b3ee33_13",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Sombra curta!",
+   "speech": "Sombra curta!",
+   "source": "steam/STEAM-3_4-01/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_35b4dd6a_37",
    "lang": "gl",
    "style": "tutor",
@@ -257716,6 +259714,15 @@
    "text": "Mira! Un barco vermello na auga! Lúa empuxa o barco!",
    "speech": "Mira! Un barco vermello na auga! Lúa empuxa o barco!",
    "source": "biblioteca/HIS-013/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_36874122_21",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Amodo, amodo! Xuntos!",
+   "speech": "Amodo, amodo! Xuntos!",
+   "source": "steam/STEAM-4_5-01/significado",
    "pack": false
   },
   {
@@ -260694,6 +262701,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_409097b3_19",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Rebenta a burbulla!",
+   "speech": "Rebenta a burbulla!",
+   "source": "steam/STEAM-0_2-03/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_4090e9b9_17",
    "lang": "gl",
    "style": "tutor",
@@ -261204,6 +263220,15 @@
    "text": "Que fas ti cando chegas á casa enlamado ou enlamada?",
    "speech": "Que fas ti cando chegas á casa enlamado ou enlamada?",
    "source": "biblioteca/HIS-073/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_41cfce66_13",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Unha estrela!",
+   "speech": "Unha estrela!",
+   "source": "steam/STEAM-2_3-02/significado",
    "pack": false
   },
   {
@@ -262447,6 +264472,15 @@
    "speech": "Blandiño",
    "source": "tpr.0_2.novembro/s4/0_2.novembro.s4.squishy/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_45a1525c_20",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "As cores mestúranse!",
+   "speech": "As cores mestúranse!",
+   "source": "steam/STEAM-5_6-12/significado",
+   "pack": false
   },
   {
    "id": "gl_tutor_45a16c8f_171",
@@ -265478,6 +267512,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_4e208742_14",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Rápido! Amodo!",
+   "speech": "Rápido! Amodo!",
+   "source": "steam/STEAM-3_4-11/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_4e24e14a_6",
    "lang": "gl",
    "style": "tutor",
@@ -265538,6 +267581,15 @@
    "text": "Podes sentar coma Lúa? Senta… e mans nos xeonllos!",
    "speech": "Podes sentar coma Lúa? Senta… e mans nos xeonllos!",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_4e5987a1_18",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Escoita o corazón!",
+   "speech": "Escoita o corazón!",
+   "source": "steam/STEAM-4_5-10/significado",
    "pack": false
   },
   {
@@ -268007,6 +270059,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_553e572e_15",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Empurra o tren!",
+   "speech": "Empurra o tren!",
+   "source": "steam/STEAM-3_4-11/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_554a454b_6",
    "lang": "gl",
    "style": "tutor",
@@ -268166,6 +270227,15 @@
    "text": "Luz! Oh, a luz!",
    "speech": "Luz! Oh, a luz!",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_55c5dc30_20",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Fai unha torre alta!",
+   "speech": "Fai unha torre alta!",
+   "source": "steam/STEAM-3_4-09/significado",
    "pack": false
   },
   {
@@ -268653,6 +270723,15 @@
    "speech": "Avión",
    "source": "tpr.3_4.xaneiro/s3/3_4.xaneiro.s3.plane/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_576d5bf2_15",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "É grande! Mira!",
+   "speech": "É grande! Mira!",
+   "source": "steam/STEAM-4_5-12/significado",
+   "pack": false
   },
   {
    "id": "gl_tutor_576ee9d4_36",
@@ -269160,6 +271239,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_58f0682b_16",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "O pan, na caixa!",
+   "speech": "O pan, na caixa!",
+   "source": "steam/STEAM-0_2-01/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_58f46842_61",
    "lang": "gl",
    "style": "tutor",
@@ -269601,6 +271689,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_59fb45e5_13",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Está baleiro?",
+   "speech": "Está baleiro?",
+   "source": "steam/STEAM-3_4-03/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_59fcb16b_58",
    "lang": "gl",
    "style": "tutor",
@@ -269868,6 +271965,15 @@
    "text": "Si, o rato! O ratiño tamén tiña fame.",
    "speech": "Si, o rato! O ratiño tamén tiña fame.",
    "source": "biblioteca/HIS-064/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_5abd791c_20",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Fai xirar o círculo!",
+   "speech": "Fai xirar o círculo!",
+   "source": "steam/STEAM-5_6-12/significado",
    "pack": false
   },
   {
@@ -270618,6 +272724,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_5c91138b_19",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Pedra grande, aquí!",
+   "speech": "Pedra grande, aquí!",
+   "source": "steam/STEAM-2_3-11/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_5c983a2d_2",
    "lang": "gl",
    "style": "tutor",
@@ -270894,6 +273009,15 @@
    "text": "Fai o cruce cun neno á vista de todos, moi lento.",
    "speech": "Fai o cruce cun neno á vista de todos, moi lento.",
    "source": "asamblea.segundo_ciclo.maio.4_infantil/fase/3/cmd/cmd.maio.4i.02/modeladoDocente",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_5d608885_25",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Mira polo papel vermello!",
+   "speech": "Mira polo papel vermello!",
+   "source": "steam/STEAM-5_6-10/significado",
    "pack": false
   },
   {
@@ -273134,6 +275258,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_638c2c3d_20",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Mira dentro da mazá!",
+   "speech": "Mira dentro da mazá!",
+   "source": "steam/STEAM-2_3-02/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_63925c07_35",
    "lang": "gl",
    "style": "tutor",
@@ -273206,6 +275339,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_63eb48b8_25",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Ata onde? Conta os pasos!",
+   "speech": "Ata onde? Conta os pasos!",
+   "source": "steam/STEAM-5_6-02/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_63f031ae_39",
    "lang": "gl",
    "style": "tutor",
@@ -273266,6 +275408,15 @@
    "text": "Mira, Lúa comparte a cuncha. Amodo... aquí tes.",
    "speech": "Mira, Lúa comparte a cuncha. Amodo... aquí tes.",
    "source": "biblioteca/HIS-089/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_641bcedd_15",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Frega a toalla!",
+   "speech": "Frega a toalla!",
+   "source": "steam/STEAM-0_2-04/significado",
    "pack": false
   },
   {
@@ -273950,6 +276101,15 @@
    "text": "Si, está chovendo! As botas postas!",
    "speech": "Si, está chovendo! As botas postas!",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_662a550b_27",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Mestura vermello e amarelo!",
+   "speech": "Mestura vermello e amarelo!",
+   "source": "steam/STEAM-5_6-09/significado",
    "pack": false
   },
   {
@@ -275552,6 +277712,15 @@
    "text": "Dálle unha patada a unha folla! Patada, patada!",
    "speech": "Dálle unha patada a unha folla! Patada, patada!",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_6b81b70b_17",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "A mazá, na cesta!",
+   "speech": "A mazá, na cesta!",
+   "source": "steam/STEAM-0_2-01/significado",
    "pack": false
   },
   {
@@ -277301,6 +279470,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_706d2d0c_18",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Catro patas, aquí!",
+   "speech": "Catro patas, aquí!",
+   "source": "steam/STEAM-4_5-11/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_706d8cd3_8",
    "lang": "gl",
    "style": "tutor",
@@ -277343,6 +279521,24 @@
    "text": "Repartir gasas de seda translúcidas en ocres e amarelos.",
    "speech": "Repartir gasas de seda translúcidas en ocres e amarelos.",
    "source": "asamblea.segundo_ciclo.outubro.4_infantil/fase/3/consigna",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_707ec35d_16",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Vai, barco, vai!",
+   "speech": "Vai, barco, vai!",
+   "source": "steam/STEAM-2_3-10/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_708dccaa_25",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Mestura a terra e a auga!",
+   "speech": "Mestura a terra e a auga!",
+   "source": "steam/STEAM-4_5-02/significado",
    "pack": false
   },
   {
@@ -279151,6 +281347,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_75940de7_16",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Engurra o papel!",
+   "speech": "Engurra o papel!",
+   "source": "steam/STEAM-5_6-01/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_7597ee1a_10",
    "lang": "gl",
    "style": "tutor",
@@ -280816,6 +283021,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_7a9bef85_14",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Sopra o barco!",
+   "speech": "Sopra o barco!",
+   "source": "steam/STEAM-2_3-10/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_7a9f05a7_37",
    "lang": "gl",
    "style": "tutor",
@@ -281761,6 +283975,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_7d677bd9_13",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Lava as mans!",
+   "speech": "Lava as mans!",
+   "source": "steam/STEAM-2_3-03/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_7d6a6726_39",
    "lang": "gl",
    "style": "tutor",
@@ -282391,6 +284614,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_7fa7f062_18",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Lévao con coidado!",
+   "speech": "Lévao con coidado!",
+   "source": "steam/STEAM-4_5-01/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_7faf77e7_5",
    "lang": "gl",
    "style": "tutor",
@@ -282937,6 +285169,15 @@
    "text": "A mesma orde, co material",
    "speech": "A mesma orde, co material",
    "source": "progresion.primeiro_ciclo.0_2/s1/d2/foco",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_813c424b_15",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Quieta! Quieta!",
+   "speech": "Quieta! Quieta!",
+   "source": "steam/STEAM-3_4-09/significado",
    "pack": false
   },
   {
@@ -284119,6 +286360,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_84d9994c_22",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Un prato, unha culler!",
+   "speech": "Un prato, unha culler!",
+   "source": "steam/STEAM-3_4-03/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_84de06e9_73",
    "lang": "gl",
    "style": "tutor",
@@ -284986,6 +287236,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_87836aa5_19",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Corre, can! Rápido!",
+   "speech": "Corre, can! Rápido!",
+   "source": "steam/STEAM-2_3-05/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_8788d99b_14",
    "lang": "gl",
    "style": "tutor",
@@ -285357,6 +287616,15 @@
    "text": "Fregar as dúas palmas xuntas coma lavando con xabón.",
    "speech": "Fregar as dúas palmas xuntas coma lavando con xabón.",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_88aab6e2_17",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Toca o pan morno!",
+   "speech": "Toca o pan morno!",
+   "source": "steam/STEAM-0_2-02/significado",
    "pack": false
   },
   {
@@ -285855,6 +288123,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_89d050dc_13",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Fala no vaso!",
+   "speech": "Fala no vaso!",
+   "source": "steam/STEAM-3_4-12/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_89d2fab3_31",
    "lang": "gl",
    "style": "tutor",
@@ -286334,6 +288611,15 @@
    "text": "Oh! Unha ovella… aquí?",
    "speech": "Oh! Unha ovella… aquí?",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_8b115484_21",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Salta! Agora escoita!",
+   "speech": "Salta! Agora escoita!",
+   "source": "steam/STEAM-4_5-10/significado",
    "pack": false
   },
   {
@@ -287773,6 +290059,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_8e8aa1fc_13",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Ábreo! Igual!",
+   "speech": "Ábreo! Igual!",
+   "source": "steam/STEAM-5_6-11/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_8e8fbbff_19",
    "lang": "gl",
    "style": "tutor",
@@ -288275,6 +290570,15 @@
    "speech": "Medir unha folla",
    "source": "tpr.5_6.marzo/s3/5_6.marzo.s3.measure-a-leaf/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_8fe630d8_20",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Corre, sombra! Para!",
+   "speech": "Corre, sombra! Para!",
+   "source": "steam/STEAM-0_2-05/significado",
+   "pack": false
   },
   {
    "id": "gl_tutor_8ff8872e_52",
@@ -292176,6 +294480,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_9a8d3d1c_16",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Mazá fría! Brrr!",
+   "speech": "Mazá fría! Brrr!",
+   "source": "steam/STEAM-0_2-02/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_9a99ea95_24",
    "lang": "gl",
    "style": "tutor",
@@ -293389,6 +295702,15 @@
    "speech": "Cruzar o océano",
    "source": "tpr.5_6.xaneiro/s2/5_6.xaneiro.s2.sail-across-the-ocean/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_9dff2a36_16",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Peta coa culler!",
+   "speech": "Peta coa culler!",
+   "source": "steam/STEAM-3_4-05/significado",
+   "pack": false
   },
   {
    "id": "gl_tutor_9dff36f3_59",
@@ -295048,6 +297370,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_a31aa98e_15",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Un, dous… para!",
+   "speech": "Un, dous… para!",
+   "source": "steam/STEAM-5_6-05/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_a3222db5_12",
    "lang": "gl",
    "style": "tutor",
@@ -295944,6 +298275,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_a61f15d2_17",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Chapotea na auga!",
+   "speech": "Chapotea na auga!",
+   "source": "steam/STEAM-0_2-09/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_a629d379_29",
    "lang": "gl",
    "style": "tutor",
@@ -296412,6 +298752,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_a7aae9c0_14",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Está enlamado!",
+   "speech": "Está enlamado!",
+   "source": "steam/STEAM-4_5-02/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_a7accc8c_29",
    "lang": "gl",
    "style": "tutor",
@@ -296481,6 +298830,15 @@
    "text": "Sentar na alfombra sen ruído",
    "speech": "Sentar na alfombra sen ruído",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_a7e9ff10_19",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Busca a túa sombra!",
+   "speech": "Busca a túa sombra!",
+   "source": "steam/STEAM-4_5-05/significado",
    "pack": false
   },
   {
@@ -297426,6 +299784,15 @@
    "text": "Esperta, bebé! Esperta!",
    "speech": "Esperta, bebé! Esperta!",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_aacd998b_20",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Abaixo, pedra! Chap!",
+   "speech": "Abaixo, pedra! Chap!",
+   "source": "steam/STEAM-2_3-09/significado",
    "pack": false
   },
   {
@@ -299193,6 +301560,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_b00518b2_14",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Solta a folla!",
+   "speech": "Solta a folla!",
+   "source": "steam/STEAM-0_2-11/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_b006aa5c_7",
    "lang": "gl",
    "style": "tutor",
@@ -300477,6 +302853,15 @@
    "text": "Si, un can! Un can marrón!",
    "speech": "Si, un can! Un can marrón!",
    "source": "biblioteca/HIS-041/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_b3813bee_21",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Sol! Sombreiro posto!",
+   "speech": "Sol! Sombreiro posto!",
+   "source": "steam/STEAM-4_5-06/significado",
    "pack": false
   },
   {
@@ -301818,6 +304203,15 @@
    "text": "Onde está o polbo? Detrás da pedra? Toca o seu brazo morado!",
    "speech": "Onde está o polbo? Detrás da pedra? Toca o seu brazo morado!",
    "source": "biblioteca/HIS-089/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_b74c2959_16",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Todo é vermello!",
+   "speech": "Todo é vermello!",
+   "source": "steam/STEAM-5_6-10/significado",
    "pack": false
   },
   {
@@ -304611,6 +307005,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_c0652cdf_21",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Pedra grande, abaixo!",
+   "speech": "Pedra grande, abaixo!",
+   "source": "steam/STEAM-0_2-11/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_c06995a6_59",
    "lang": "gl",
    "style": "tutor",
@@ -305965,6 +308368,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_c494f278_23",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Toca a esponxa mollada!",
+   "speech": "Toca a esponxa mollada!",
+   "source": "steam/STEAM-0_2-09/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_c49813a0_6",
    "lang": "gl",
    "style": "tutor",
@@ -306044,6 +308456,15 @@
    "speech": "Conta atrás",
    "source": "tpr.4_5.outubro/s4/4_5.outubro.s4.countdown/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_c4bde384_28",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Lanza o avión con suavidade!",
+   "speech": "Lanza o avión con suavidade!",
+   "source": "steam/STEAM-5_6-02/significado",
+   "pack": false
   },
   {
    "id": "gl_tutor_c4df253c_66",
@@ -306289,6 +308710,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_c5fb3b25_13",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Fai a maleta!",
+   "speech": "Fai a maleta!",
+   "source": "steam/STEAM-5_6-04/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_c5fe9597_207",
    "lang": "gl",
    "style": "tutor",
@@ -306488,6 +308918,15 @@
    "speech": "Función",
    "source": "tpr.4_5.febreiro/s4/4_5.febreiro.s4.puppet-show/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_c65c4994_15",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Escoita! Óesme?",
+   "speech": "Escoita! Óesme?",
+   "source": "steam/STEAM-3_4-12/significado",
+   "pack": false
   },
   {
    "id": "gl_tutor_c661ac73_20",
@@ -306778,6 +309217,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_c72727be_15",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Solta! Escoita!",
+   "speech": "Solta! Escoita!",
+   "source": "steam/STEAM-2_3-12/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_c7376a06_16",
    "lang": "gl",
    "style": "tutor",
@@ -306884,6 +309332,15 @@
    "speech": "Soleado, soleada",
    "source": "tpr.3_4.abril/s1/3_4.abril.s1.sunny/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_c7a26870_13",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Suave, suave!",
+   "speech": "Suave, suave!",
+   "source": "steam/STEAM-0_2-04/significado",
+   "pack": false
   },
   {
    "id": "gl_tutor_c7a7194e_14",
@@ -307867,6 +310324,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_ca922d16_29",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Bloque vermello, bloque azul!",
+   "speech": "Bloque vermello, bloque azul!",
+   "source": "steam/STEAM-3_4-10/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_ca9421ad_15",
    "lang": "gl",
    "style": "tutor",
@@ -307928,6 +310394,15 @@
    "speech": "Subir amodiño",
    "source": "tpr.0_2.xaneiro/s3/0_2.xaneiro.s3.creep-up/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_cad06dee_31",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Sombreiro posto! Mira a sombra!",
+   "speech": "Sombreiro posto! Mira a sombra!",
+   "source": "steam/STEAM-4_5-05/significado",
+   "pack": false
   },
   {
    "id": "gl_tutor_cad72971_48",
@@ -308101,6 +310576,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_cb2699bd_16",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Pesada! Lixeira!",
+   "speech": "Pesada! Lixeira!",
+   "source": "steam/STEAM-2_3-04/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_cb2c9d42_39",
    "lang": "gl",
    "style": "tutor",
@@ -308153,6 +310637,15 @@
    "speech": "Composto",
    "source": "tpr.4_5.abril/s4/4_5.abril.s4.compost/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_cb763fa2_22",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Tubo longo, son grave!",
+   "speech": "Tubo longo, son grave!",
+   "source": "steam/STEAM-5_6-06/significado",
+   "pack": false
   },
   {
    "id": "gl_tutor_cb790e82_5",
@@ -308506,6 +310999,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_cc992a19_16",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Xira á esquerda!",
+   "speech": "Xira á esquerda!",
+   "source": "steam/STEAM-5_6-03/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_cc9e241a_14",
    "lang": "gl",
    "style": "tutor",
@@ -308737,6 +311239,15 @@
    "text": "As tres ordes co material do mes. O obxecto pasa de man en man: quen o ten, fai; o resto mira e anticipa.",
    "speech": "As tres ordes co material do mes. O obxecto pasa de man en man: quen o ten, fai; o resto mira e anticipa.",
    "source": "progresion.segundo_ciclo.4/s2/d4/consigna",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_cd2a933b_22",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Ide, estrelas! Parade!",
+   "speech": "Ide, estrelas! Parade!",
+   "source": "steam/STEAM-2_3-06/significado",
    "pack": false
   },
   {
@@ -310884,6 +313395,15 @@
    "text": "Toca os xeonllos e estátua!",
    "speech": "Toca os xeonllos e estátua!",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_d343fdd6_10",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Que son é?",
+   "speech": "Que son é?",
+   "source": "steam/STEAM-5_6-01/significado",
    "pack": false
   },
   {
@@ -314676,6 +317196,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_def66d9a_19",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Fai rodar a pelota!",
+   "speech": "Fai rodar a pelota!",
+   "source": "steam/STEAM-0_2-06/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_df02cb37_36",
    "lang": "gl",
    "style": "tutor",
@@ -314700,6 +317229,15 @@
    "text": "Toca as ras da charca: unha, dúas, tres, catro!",
    "speech": "Toca as ras da charca: unha, dúas, tres, catro!",
    "source": "biblioteca/HIS-100/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_df093644_13",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Bota a pinga!",
+   "speech": "Bota a pinga!",
+   "source": "steam/STEAM-4_5-09/significado",
    "pack": false
   },
   {
@@ -314890,6 +317428,15 @@
    "speech": "Nariz de pallaso",
    "source": "tpr.0_2.febreiro/s1/0_2.febreiro.s1.clown-nose/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_dfd7f3e9_14",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Dobra o papel!",
+   "speech": "Dobra o papel!",
+   "source": "steam/STEAM-5_6-11/significado",
+   "pack": false
   },
   {
    "id": "gl_tutor_dfdb1ed0_8",
@@ -316040,6 +318587,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_e331c2cd_22",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Mira, o xeo derrétese!",
+   "speech": "Mira, o xeo derrétese!",
+   "source": "steam/STEAM-3_4-02/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_e33783d4_14",
    "lang": "gl",
    "style": "tutor",
@@ -316560,6 +319116,15 @@
    "speech": "Liso, lisa",
    "source": "tpr.3_4.marzo/s3/3_4.marzo.s3.smooth/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_e547b79d_15",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Mira na culler!",
+   "speech": "Mira na culler!",
+   "source": "steam/STEAM-3_4-06/significado",
+   "pack": false
   },
   {
    "id": "gl_tutor_e54809e9_51",
@@ -318655,6 +321220,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_eb35db2f_14",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Sopra o muíño!",
+   "speech": "Sopra o muíño!",
+   "source": "steam/STEAM-4_5-03/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_eb38d37d_59",
    "lang": "gl",
    "style": "tutor",
@@ -319267,6 +321841,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_ed2cf8f2_10",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Vai vento!",
+   "speech": "Vai vento!",
+   "source": "steam/STEAM-4_5-03/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_ed3de1bb_5",
    "lang": "gl",
    "style": "tutor",
@@ -319822,6 +322405,15 @@
    "text": "Que che gusta comer coa túa familia?",
    "speech": "Que che gusta comer coa túa familia?",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_eec75877_21",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Chu-chu! Máis rápido!",
+   "speech": "Chuchu! Máis rápido!",
+   "source": "steam/STEAM-5_6-06/significado",
    "pack": false
   },
   {
@@ -321040,6 +323632,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_f1c72c4a_30",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Sombra grande, sombra pequena!",
+   "speech": "Sombra grande, sombra pequena!",
+   "source": "steam/STEAM-0_2-12/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_f1df4968_15",
    "lang": "gl",
    "style": "tutor",
@@ -321325,6 +323926,15 @@
    "text": "Podes trabar coma o cabalo? Ñam, cronch!",
    "speech": "Podes trabar coma o cabalo? Ñam, cronch!",
    "source": "biblioteca/HIS-025/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_f2b6b67d_16",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Dúas patas, alí!",
+   "speech": "Dúas patas, alí!",
+   "source": "steam/STEAM-4_5-11/significado",
    "pack": false
   },
   {
@@ -322633,6 +325243,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_f6af1504_26",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Venda a pata, con coidado!",
+   "speech": "Venda a pata, con coidado!",
+   "source": "steam/STEAM-4_5-09/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_f6b55ef7_13",
    "lang": "gl",
    "style": "tutor",
@@ -323119,6 +325738,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_f7fa4fdd_13",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Fai a choiva!",
+   "speech": "Fai a choiva!",
+   "source": "steam/STEAM-4_5-04/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_f7fad07e_50",
    "lang": "gl",
    "style": "tutor",
@@ -323242,6 +325870,15 @@
    "text": "Si, vai! Vai, vai... para!",
    "speech": "Si, vai! Vai, vai... para!",
    "source": "biblioteca/HIS-053/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_f873d756_18",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Remexe coa culler!",
+   "speech": "Remexe coa culler!",
+   "source": "steam/STEAM-3_4-02/significado",
    "pack": false
   },
   {
@@ -323629,6 +326266,15 @@
    "text": "Si, pincel! Onde está o pincel?",
    "speech": "Si, pincel! Onde está o pincel?",
    "source": "biblioteca/HIS-088/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_f9af6a73_19",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Folla pequena, alí!",
+   "speech": "Folla pequena, alí!",
+   "source": "steam/STEAM-2_3-11/significado",
    "pack": false
   },
   {
@@ -324062,6 +326708,15 @@
    "speech": "Shh, o bebé dorme",
    "source": "tpr.2_3.abril/s3/2_3.abril.s3.shh-baby-s-sleeping/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_fb05e1ec_13",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Agudo! Grave!",
+   "speech": "Agudo! Grave!",
+   "source": "steam/STEAM-3_4-05/significado",
+   "pack": false
   },
   {
    "id": "gl_tutor_fb0d5a55_50",
@@ -325306,6 +327961,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_feee5188_18",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Durme, gato. Chis…",
+   "speech": "Durme, gato. Chis…",
+   "source": "steam/STEAM-2_3-05/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_feef8dc1_6",
    "lang": "gl",
    "style": "tutor",
@@ -325501,6 +328165,15 @@
    "text": "Auga morna! Frega o xabón, chap, chap! Mans limpas!",
    "speech": "Auga morna! Frega o xabón, chap, chap! Mans limpas!",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_ff82a2de_12",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Bota o zume!",
+   "speech": "Bota o zume!",
+   "source": "steam/STEAM-3_4-04/significado",
    "pack": false
   },
   {

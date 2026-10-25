@@ -2,6 +2,7 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:descubre_con_lua/data/models/steam_do_mes_model.dart';
 
 import 'package:descubre_con_lua/core/localization/app_language.dart';
 import 'package:descubre_con_lua/core/theme/app_theme.dart';
@@ -13,6 +14,8 @@ import 'package:descubre_con_lua/features/juega/views/sesion45_screen.dart';
 /// fases (7-10, 10-12, 15-18 y 5-7 min) y lo del mes de cada unidad, en gl y
 /// es, con texto normal y grande. Lo que no prueba: un aparato, el audio.
 void main() {
+  final steam =
+      SteamDoMes.fromRaw(File(SteamDoMes.assetPath).readAsStringSync());
   late Sesion45 sesion;
 
   setUpAll(() {
@@ -47,6 +50,7 @@ void main() {
           tester.view.devicePixelRatio = 1.0;
           addTearDown(tester.view.reset);
           Sesion45.sembrar(sesion);
+          SteamDoMes.sembrar(steam);
           final repo = ContentRepository();
           await tester.runAsync(() async {
             await repo.loadProgramaTpr();

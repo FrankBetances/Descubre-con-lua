@@ -1,0 +1,3575 @@
+{
+ "_doc": "F8: un experimento STEAM por mes e curso, atado á unidade do plan curricular dese mes. Os cinco fenómenos e os criterios de seguridade (obxectos de máis de 4 cm, xogo en paralelo antes dos 3 anos e cooperativo despois) saen do banco STEAM de Frank (commit 15f1988f) e de docs/BASE_PEDAGOGICA_STEAM.md.",
+ "experimentos": [
+  {
+   "id": "STEAM-0_2-09",
+   "curso": "curso_0_2",
+   "mes": 9,
+   "unidade": "T2.U1",
+   "fenomeno": "materia",
+   "titulo": {
+    "gl": "Mollado e seco",
+    "es": "Mojado y seco"
+   },
+   "material": [
+    {
+     "gl": "Unha bandexa baixa con dous dedos de auga morna",
+     "es": "Una bandeja baja con dos dedos de agua templada"
+    },
+    {
+     "gl": "Esponxas grandes (máis de 6 cm)",
+     "es": "Esponjas grandes (más de 6 cm)"
+    },
+    {
+     "gl": "Unha toalla seca por criatura",
+     "es": "Una toalla seca por criatura"
+    }
+   ],
+   "seguridade": {
+    "gl": "Auga só de dous dedos e sempre cunha persoa adulta ao lado. Retirade a bandexa ao rematar.",
+    "es": "Agua solo de dos dedos y siempre con una persona adulta al lado. Retirad la bandeja al terminar."
+   },
+   "aula": [
+    {
+     "gl": "Senta o grupo arredor da bandexa: cada criatura, coa súa esponxa.",
+     "es": "Sienta al grupo alrededor de la bandeja: cada criatura, con su esponja."
+    },
+    {
+     "gl": "Mollade e espremede as esponxas ao seu ritmo; ti pon palabras ao que pasa.",
+     "es": "Mojad y estrujad las esponjas a su ritmo; tú pon palabras a lo que pasa."
+    },
+    {
+     "gl": "Pasade da esponxa mollada á toalla seca e notade a diferenza coas mans.",
+     "es": "Pasad de la esponja mojada a la toalla seca y notad la diferencia con las manos."
+    }
+   ],
+   "casa": [
+    {
+     "gl": "Na bañeira ou no lavabo, mete unha esponxa grande na auga.",
+     "es": "En la bañera o en el lavabo, mete una esponja grande en el agua."
+    },
+    {
+     "gl": "Espremédea xuntos e mirade como cae a auga.",
+     "es": "Estrujadla juntos y mirad cómo cae el agua."
+    },
+    {
+     "gl": "Secade as mans na toalla e tocade outra vez a esponxa: mollada, seca.",
+     "es": "Secad las manos en la toalla y tocad otra vez la esponja: mojada, seca."
+    }
+   ],
+   "ordes": [
+    {
+     "en": "Splash the water!",
+     "gl": "Chapotea na auga!",
+     "es": "¡Chapotea en el agua!"
+    },
+    {
+     "en": "Touch the wet sponge!",
+     "gl": "Toca a esponxa mollada!",
+     "es": "¡Toca la esponja mojada!"
+    }
+   ],
+   "observar": {
+    "gl": "Se a criatura busca a toalla despois de mollarse, ou repite o xesto de espremer.",
+    "es": "Si la criatura busca la toalla después de mojarse, o repite el gesto de estrujar."
+   }
+  },
+  {
+   "id": "STEAM-0_2-10",
+   "curso": "curso_0_2",
+   "mes": 10,
+   "unidade": "T2.U1",
+   "fenomeno": "acustica",
+   "titulo": {
+    "gl": "A música da auga",
+    "es": "La música del agua"
+   },
+   "material": [
+    {
+     "gl": "Unha xerra de plástico pequena",
+     "es": "Una jarra de plástico pequeña"
+    },
+    {
+     "gl": "Un caldeiro de plástico",
+     "es": "Un cubo de plástico"
+    },
+    {
+     "gl": "Tres botellas de plástico grandes con distinta auga, ben pechadas",
+     "es": "Tres botellas de plástico grandes con distinta agua, bien cerradas"
+    }
+   ],
+   "seguridade": {
+    "gl": "As botellas, pechadas e con tapón que non se poida sacar. Secade o chan se cae auga.",
+    "es": "Las botellas, cerradas y con tapón que no se pueda sacar. Secad el suelo si cae agua."
+   },
+   "aula": [
+    {
+     "gl": "Bota ti auga da xerra ao caldeiro, amodo e despois rápido: escoitade o son.",
+     "es": "Echa tú agua de la jarra al cubo, despacio y después rápido: escuchad el sonido."
+    },
+    {
+     "gl": "Dálle a cada criatura unha botella para abanear: soa distinto a chea e a medio encher.",
+     "es": "Dale a cada criatura una botella para agitar: suena distinto la llena y la medio llena."
+    },
+    {
+     "gl": "Remata en silencio: unha pinga, e outra, e escoitade.",
+     "es": "Termina en silencio: una gota, y otra, y escuchad."
+    }
+   ],
+   "casa": [
+    {
+     "gl": "No baño, bota auga dun vaso a outro e escoitade xuntos.",
+     "es": "En el baño, echa agua de un vaso a otro y escuchad juntos."
+    },
+    {
+     "gl": "Enche unha botella pechada e abaneádea por quendas.",
+     "es": "Llena una botella cerrada y agitadla por turnos."
+    },
+    {
+     "gl": "Pecha a billa amodo ata que só caian pingas.",
+     "es": "Cierra el grifo despacio hasta que solo caigan gotas."
+    }
+   ],
+   "ordes": [
+    {
+     "en": "Listen! Drip, drop!",
+     "gl": "Escoita! Pinga, pinga!",
+     "es": "¡Escucha! ¡Gota, gota!"
+    },
+    {
+     "en": "Shake the bottle!",
+     "gl": "Abanea a botella!",
+     "es": "¡Agita la botella!"
+    }
+   ],
+   "observar": {
+    "gl": "Se a criatura queda quieta para escoitar, ou busca co ollo de onde vén o son.",
+    "es": "Si la criatura se queda quieta para escuchar, o busca con la mirada de dónde viene el sonido."
+   }
+  },
+  {
+   "id": "STEAM-0_2-11",
+   "curso": "curso_0_2",
+   "mes": 11,
+   "unidade": "T2.U2",
+   "fenomeno": "cinematica",
+   "titulo": {
+    "gl": "A folla baila, a pedra cae",
+    "es": "La hoja baila, la piedra cae"
+   },
+   "material": [
+    {
+     "gl": "Follas secas grandes",
+     "es": "Hojas secas grandes"
+    },
+    {
+     "gl": "Pedras lisas de máis de 5 cm",
+     "es": "Piedras lisas de más de 5 cm"
+    },
+    {
+     "gl": "Unha cesta baixa",
+     "es": "Una cesta baja"
+    }
+   ],
+   "seguridade": {
+    "gl": "Pedras grandes, que non caiban na boca, e só as solta a persoa adulta desde pouca altura.",
+    "es": "Piedras grandes, que no quepan en la boca, y solo las suelta la persona adulta desde poca altura."
+   },
+   "aula": [
+    {
+     "gl": "Solta ti unha folla desde arriba: mirade como baixa bailando.",
+     "es": "Suelta tú una hoja desde arriba: mirad cómo baja bailando."
+    },
+    {
+     "gl": "Solta unha pedra grande dentro da cesta: cae dereita e fai pum.",
+     "es": "Suelta una piedra grande dentro de la cesta: cae recta y hace pum."
+    },
+    {
+     "gl": "Deixa que cada criatura solte follas e as persiga co corpo.",
+     "es": "Deja que cada criatura suelte hojas y las persiga con el cuerpo."
+    }
+   ],
+   "casa": [
+    {
+     "gl": "No parque, recollede follas e unha pedra grande.",
+     "es": "En el parque, recoged hojas y una piedra grande."
+    },
+    {
+     "gl": "Soltade a folla e despois a pedra, desde a vosa man.",
+     "es": "Soltad la hoja y después la piedra, desde vuestra mano."
+    },
+    {
+     "gl": "Mirade xuntos cal chega antes ao chan.",
+     "es": "Mirad juntos cuál llega antes al suelo."
+    }
+   ],
+   "ordes": [
+    {
+     "en": "Drop the leaf!",
+     "gl": "Solta a folla!",
+     "es": "¡Suelta la hoja!"
+    },
+    {
+     "en": "Big stone, down!",
+     "gl": "Pedra grande, abaixo!",
+     "es": "¡Piedra grande, abajo!"
+    }
+   ],
+   "observar": {
+    "gl": "Se a criatura segue a folla coa mirada ata o chan, ou agarda o pum da pedra.",
+    "es": "Si la criatura sigue la hoja con la mirada hasta el suelo, o espera el pum de la piedra."
+   }
+  },
+  {
+   "id": "STEAM-0_2-12",
+   "curso": "curso_0_2",
+   "mes": 12,
+   "unidade": "T2.U2",
+   "fenomeno": "optica",
+   "titulo": {
+    "gl": "Follas ao trasluz",
+    "es": "Hojas a contraluz"
+   },
+   "material": [
+    {
+     "gl": "Follas de cores diferentes",
+     "es": "Hojas de colores diferentes"
+    },
+    {
+     "gl": "Unha fiestra con luz ou unha lanterna",
+     "es": "Una ventana con luz o una linterna"
+    },
+    {
+     "gl": "Pedras grandes e pequenas (todas de máis de 5 cm)",
+     "es": "Piedras grandes y pequeñas (todas de más de 5 cm)"
+    }
+   ],
+   "seguridade": {
+    "gl": "A lanterna, sempre na man da persoa adulta e sen apuntar aos ollos.",
+    "es": "La linterna, siempre en la mano de la persona adulta y sin apuntar a los ojos."
+   },
+   "aula": [
+    {
+     "gl": "Pon unha folla contra o cristal da fiestra: mirade como brilla.",
+     "es": "Pon una hoja contra el cristal de la ventana: mirad cómo brilla."
+    },
+    {
+     "gl": "Coa lanterna, fai a sombra dunha pedra grande e dunha pequena na parede.",
+     "es": "Con la linterna, haz la sombra de una piedra grande y de una pequeña en la pared."
+    },
+    {
+     "gl": "Deixa que toquen a sombra coa man.",
+     "es": "Deja que toquen la sombra con la mano."
+    }
+   ],
+   "casa": [
+    {
+     "gl": "Pola mañá, pon unha folla na fiestra e mirádea xuntos.",
+     "es": "Por la mañana, pon una hoja en la ventana y miradla juntos."
+    },
+    {
+     "gl": "Pola noite, coa lanterna, facede a sombra da man na parede.",
+     "es": "Por la noche, con la linterna, haced la sombra de la mano en la pared."
+    },
+    {
+     "gl": "Facede unha sombra grande e unha pequena achegando e afastando a man.",
+     "es": "Haced una sombra grande y una pequeña acercando y alejando la mano."
+    }
+   ],
+   "ordes": [
+    {
+     "en": "Look at the light!",
+     "gl": "Mira a luz!",
+     "es": "¡Mira la luz!"
+    },
+    {
+     "en": "Big shadow, small shadow!",
+     "gl": "Sombra grande, sombra pequena!",
+     "es": "¡Sombra grande, sombra pequeña!"
+    }
+   ],
+   "observar": {
+    "gl": "Se a criatura sinala a folla iluminada ou intenta coller a sombra.",
+    "es": "Si la criatura señala la hoja iluminada o intenta coger la sombra."
+   }
+  },
+  {
+   "id": "STEAM-0_2-01",
+   "curso": "curso_0_2",
+   "mes": 1,
+   "unidade": "T2.U3",
+   "fenomeno": "logica",
+   "titulo": {
+    "gl": "Cada cousa na súa cesta",
+    "es": "Cada cosa en su cesta"
+   },
+   "material": [
+    {
+     "gl": "Mazás enteiras",
+     "es": "Manzanas enteras"
+    },
+    {
+     "gl": "Pans pequenos enteiros",
+     "es": "Panes pequeños enteros"
+    },
+    {
+     "gl": "Dúas cestas de cores distintas",
+     "es": "Dos cestas de colores distintos"
+    }
+   ],
+   "seguridade": {
+    "gl": "Froita e pan enteiros, sen anacos que se poidan tragar. Só se proban se non hai alerxias.",
+    "es": "Fruta y pan enteros, sin trozos que se puedan tragar. Solo se prueban si no hay alergias."
+   },
+   "aula": [
+    {
+     "gl": "Mestura mazás e pans nunha alfombra.",
+     "es": "Mezcla manzanas y panes en una alfombra."
+    },
+    {
+     "gl": "Ti metes unha mazá nunha cesta e un pan na outra, dicíndoo en inglés.",
+     "es": "Tú metes una manzana en una cesta y un pan en la otra, diciéndolo en inglés."
+    },
+    {
+     "gl": "Cada criatura leva a peza que colle á cesta que queira; ti só nomeas.",
+     "es": "Cada criatura lleva la pieza que coge a la cesta que quiera; tú solo nombras."
+    }
+   ],
+   "casa": [
+    {
+     "gl": "Ao recoller a compra, deixa á vista mazás e pan.",
+     "es": "Al recoger la compra, deja a la vista manzanas y pan."
+    },
+    {
+     "gl": "Pon dous recipientes e separade xuntos: mazás aquí, pan alí.",
+     "es": "Pon dos recipientes y separad juntos: manzanas aquí, pan allí."
+    },
+    {
+     "gl": "Probade un anaco de cada un, ao final, na mesa.",
+     "es": "Probad un trozo de cada uno, al final, en la mesa."
+    }
+   ],
+   "ordes": [
+    {
+     "en": "Apple in the basket!",
+     "gl": "A mazá, na cesta!",
+     "es": "¡La manzana, en la cesta!"
+    },
+    {
+     "en": "Bread in the box!",
+     "gl": "O pan, na caixa!",
+     "es": "¡El pan, en la caja!"
+    }
+   ],
+   "observar": {
+    "gl": "Se a criatura repite o lugar dunha peza igual, ou mira a cesta antes de soltar.",
+    "es": "Si la criatura repite el lugar de una pieza igual, o mira la cesta antes de soltar."
+   }
+  },
+  {
+   "id": "STEAM-0_2-02",
+   "curso": "curso_0_2",
+   "mes": 2,
+   "unidade": "T2.U3",
+   "fenomeno": "materia",
+   "titulo": {
+    "gl": "Morno e frío",
+    "es": "Templado y frío"
+   },
+   "material": [
+    {
+     "gl": "Unha mazá da neveira",
+     "es": "Una manzana de la nevera"
+    },
+    {
+     "gl": "Un pan recén quentado, morno",
+     "es": "Un pan recién calentado, templado"
+    },
+    {
+     "gl": "Un pano de cociña",
+     "es": "Un paño de cocina"
+    }
+   ],
+   "seguridade": {
+    "gl": "O pan, morno ao tacto da persoa adulta antes de dalo; nunca quente.",
+    "es": "El pan, templado al tacto de la persona adulta antes de darlo; nunca caliente."
+   },
+   "aula": [
+    {
+     "gl": "Pon a mazá fría e o pan morno enriba do pano.",
+     "es": "Pon la manzana fría y el pan templado encima del paño."
+    },
+    {
+     "gl": "Tocade cada un coa palma da man: frío, morno.",
+     "es": "Tocad cada uno con la palma de la mano: frío, templado."
+    },
+    {
+     "gl": "Pon ti as mans na meixela despois de tocalos e di como estás.",
+     "es": "Pon tú las manos en la mejilla después de tocarlos y di cómo estás."
+    }
+   ],
+   "casa": [
+    {
+     "gl": "Na merenda, saca unha mazá da neveira e quenta un pouco de pan.",
+     "es": "En la merienda, saca una manzana de la nevera y calienta un poco de pan."
+    },
+    {
+     "gl": "Tocádeos xuntos e dicide frío e morno.",
+     "es": "Tocadlos juntos y decid frío y templado."
+    },
+    {
+     "gl": "Comede un anaco de cada un.",
+     "es": "Comed un trozo de cada uno."
+    }
+   ],
+   "ordes": [
+    {
+     "en": "Touch the warm bread!",
+     "gl": "Toca o pan morno!",
+     "es": "¡Toca el pan templado!"
+    },
+    {
+     "en": "Cold apple! Brrr!",
+     "gl": "Mazá fría! Brrr!",
+     "es": "¡Manzana fría! ¡Brrr!"
+    }
+   ],
+   "observar": {
+    "gl": "Se a criatura retira a man da mazá fría ou volve ao pan morno.",
+    "es": "Si la criatura retira la mano de la manzana fría o vuelve al pan templado."
+   }
+  },
+  {
+   "id": "STEAM-0_2-03",
+   "curso": "curso_0_2",
+   "mes": 3,
+   "unidade": "T2.U4",
+   "fenomeno": "cinematica",
+   "titulo": {
+    "gl": "Burbullas que voan",
+    "es": "Burbujas que vuelan"
+   },
+   "material": [
+    {
+     "gl": "Auga con xabón suave sen bágoas",
+     "es": "Agua con jabón suave sin lágrimas"
+    },
+    {
+     "gl": "Un aro grande para facer burbullas",
+     "es": "Un aro grande para hacer burbujas"
+    }
+   ],
+   "seguridade": {
+    "gl": "As burbullas fainas a persoa adulta. Lonxe da cara das criaturas; se lles cae nos ollos, auga limpa.",
+    "es": "Las burbujas las hace la persona adulta. Lejos de la cara de las criaturas; si les cae en los ojos, agua limpia."
+   },
+   "aula": [
+    {
+     "gl": "Fai ti burbullas amodo, por riba do grupo.",
+     "es": "Haz tú burbujas despacio, por encima del grupo."
+    },
+    {
+     "gl": "Mirade como suben, flotan e baixan amodo.",
+     "es": "Mirad cómo suben, flotan y bajan despacio."
+    },
+    {
+     "gl": "Deixa que as rebenten coas mans, ao seu ritmo.",
+     "es": "Deja que las revienten con las manos, a su ritmo."
+    }
+   ],
+   "casa": [
+    {
+     "gl": "No baño, fai burbullas co xabón das mans.",
+     "es": "En el baño, haz burbujas con el jabón de las manos."
+    },
+    {
+     "gl": "Sopra ti unha burbulla e mirade xuntos onde vai.",
+     "es": "Sopla tú una burbuja y mirad juntos adónde va."
+    },
+    {
+     "gl": "Rebentádea cun dedo: pop!",
+     "es": "Reventadla con un dedo: ¡pop!"
+    }
+   ],
+   "ordes": [
+    {
+     "en": "Look! Bubbles!",
+     "gl": "Mira! Burbullas!",
+     "es": "¡Mira! ¡Burbujas!"
+    },
+    {
+     "en": "Pop the bubble!",
+     "gl": "Rebenta a burbulla!",
+     "es": "¡Revienta la burbuja!"
+    }
+   ],
+   "observar": {
+    "gl": "Se a criatura segue unha burbulla co corpo ou estira a man cara a ela.",
+    "es": "Si la criatura sigue una burbuja con el cuerpo o estira la mano hacia ella."
+   }
+  },
+  {
+   "id": "STEAM-0_2-04",
+   "curso": "curso_0_2",
+   "mes": 4,
+   "unidade": "T2.U4",
+   "fenomeno": "acustica",
+   "titulo": {
+    "gl": "Fregar fai son",
+    "es": "Frotar hace sonido"
+   },
+   "material": [
+    {
+     "gl": "Unha toalla suave",
+     "es": "Una toalla suave"
+    },
+    {
+     "gl": "Un cepillo de uñas grande",
+     "es": "Un cepillo de uñas grande"
+    },
+    {
+     "gl": "Unha pastilla de xabón grande",
+     "es": "Una pastilla de jabón grande"
+    }
+   ],
+   "seguridade": {
+    "gl": "O cepillo, de cerdas suaves e só sobre as mans ou a mesa, nunca na cara.",
+    "es": "El cepillo, de cerdas suaves y solo sobre las manos o la mesa, nunca en la cara."
+   },
+   "aula": [
+    {
+     "gl": "Frega ti a toalla contra a mesa: escoitade, case non soa.",
+     "es": "Frota tú la toalla contra la mesa: escuchad, casi no suena."
+    },
+    {
+     "gl": "Frega o cepillo: ras, ras, soa forte.",
+     "es": "Frota el cepillo: ras, ras, suena fuerte."
+    },
+    {
+     "gl": "Pasa a toalla e o cepillo, por quendas, polas mans de cada criatura.",
+     "es": "Pasa la toalla y el cepillo, por turnos, por las manos de cada criatura."
+    }
+   ],
+   "casa": [
+    {
+     "gl": "Na hora do baño, frega as mans co xabón e escoitade.",
+     "es": "En la hora del baño, frota las manos con el jabón y escuchad."
+    },
+    {
+     "gl": "Secádeas coa toalla, amodo: un son suave.",
+     "es": "Secadlas con la toalla, despacio: un sonido suave."
+    },
+    {
+     "gl": "Dicide xuntos suave e forte.",
+     "es": "Decid juntos suave y fuerte."
+    }
+   ],
+   "ordes": [
+    {
+     "en": "Rub the towel!",
+     "gl": "Frega a toalla!",
+     "es": "¡Frota la toalla!"
+    },
+    {
+     "en": "Soft, soft!",
+     "gl": "Suave, suave!",
+     "es": "¡Suave, suave!"
+    }
+   ],
+   "observar": {
+    "gl": "Se a criatura frega ela soa para facer o son, ou prefire un dos dous.",
+    "es": "Si la criatura frota ella sola para hacer el sonido, o prefiere uno de los dos."
+   }
+  },
+  {
+   "id": "STEAM-0_2-05",
+   "curso": "curso_0_2",
+   "mes": 5,
+   "unidade": "T2.U5",
+   "fenomeno": "optica",
+   "titulo": {
+    "gl": "Sombras de animais",
+    "es": "Sombras de animales"
+   },
+   "material": [
+    {
+     "gl": "Unha lanterna",
+     "es": "Una linterna"
+    },
+    {
+     "gl": "Unha parede clara ou unha saba colgada",
+     "es": "Una pared clara o una sábana colgada"
+    },
+    {
+     "gl": "Animais de xoguete grandes (can, gato)",
+     "es": "Animales de juguete grandes (perro, gato)"
+    }
+   ],
+   "seguridade": {
+    "gl": "Sala en penumbra, non a escuras, e a lanterna sempre na man adulta.",
+    "es": "Sala en penumbra, no a oscuras, y la linterna siempre en la mano adulta."
+   },
+   "aula": [
+    {
+     "gl": "Ilumina o can de xoguete e fai a súa sombra na parede.",
+     "es": "Ilumina el perro de juguete y haz su sombra en la pared."
+    },
+    {
+     "gl": "Move o xoguete: a sombra corre; deixao quieto: a sombra dorme.",
+     "es": "Mueve el juguete: la sombra corre; déjalo quieto: la sombra duerme."
+    },
+    {
+     "gl": "Deixa que cada criatura achegue o seu animal á luz.",
+     "es": "Deja que cada criatura acerque su animal a la luz."
+    }
+   ],
+   "casa": [
+    {
+     "gl": "Antes de durmir, coa lanterna e un peluche, facede a súa sombra.",
+     "es": "Antes de dormir, con la linterna y un peluche, haced su sombra."
+    },
+    {
+     "gl": "Facede correr a sombra e despois parala.",
+     "es": "Haced correr la sombra y después pararla."
+    },
+    {
+     "gl": "Apagade a lanterna: o animal vai durmir.",
+     "es": "Apagad la linterna: el animal se va a dormir."
+    }
+   ],
+   "ordes": [
+    {
+     "en": "Look! A dog shadow!",
+     "gl": "Mira! A sombra dun can!",
+     "es": "¡Mira! ¡La sombra de un perro!"
+    },
+    {
+     "en": "Run, shadow! Stop!",
+     "gl": "Corre, sombra! Para!",
+     "es": "¡Corre, sombra! ¡Para!"
+    }
+   ],
+   "observar": {
+    "gl": "Se a criatura mira da sombra ao xoguete e volve, ou sinala a sombra.",
+    "es": "Si la criatura mira de la sombra al juguete y vuelve, o señala la sombra."
+   }
+  },
+  {
+   "id": "STEAM-0_2-06",
+   "curso": "curso_0_2",
+   "mes": 6,
+   "unidade": "T2.U6",
+   "fenomeno": "logica",
+   "titulo": {
+    "gl": "Rodar ou non rodar",
+    "es": "Rodar o no rodar"
+   },
+   "material": [
+    {
+     "gl": "Pelotas de tamaños distintos (todas de máis de 6 cm)",
+     "es": "Pelotas de tamaños distintos (todas de más de 6 cm)"
+    },
+    {
+     "gl": "Caixas de cartón pequenas e pechadas",
+     "es": "Cajas de cartón pequeñas y cerradas"
+    },
+    {
+     "gl": "Unha táboa inclinada ou un coxín en rampla",
+     "es": "Una tabla inclinada o un cojín en rampa"
+    }
+   ],
+   "seguridade": {
+    "gl": "Rampla baixa e estable; nada de pelotas pequenas que caiban na boca.",
+    "es": "Rampa baja y estable; nada de pelotas pequeñas que quepan en la boca."
+   },
+   "aula": [
+    {
+     "gl": "Pon unha pelota no alto da rampla: rola abaixo.",
+     "es": "Pon una pelota en lo alto de la rampa: rueda abajo."
+    },
+    {
+     "gl": "Pon unha caixa: escorrega ou queda quieta.",
+     "es": "Pon una caja: resbala o se queda quieta."
+    },
+    {
+     "gl": "Deixa que proben e garden as pelotas na caixa ao final.",
+     "es": "Deja que prueben y guarden las pelotas en la caja al final."
+    }
+   ],
+   "casa": [
+    {
+     "gl": "Cun coxín inclinado, facede rodar unha pelota.",
+     "es": "Con un cojín inclinado, haced rodar una pelota."
+    },
+    {
+     "gl": "Probade cunha caixa de cereais pechada: non roda.",
+     "es": "Probad con una caja de cereales cerrada: no rueda."
+    },
+    {
+     "gl": "Gardade a pelota dentro da caixa grande.",
+     "es": "Guardad la pelota dentro de la caja grande."
+    }
+   ],
+   "ordes": [
+    {
+     "en": "Roll the ball!",
+     "gl": "Fai rodar a pelota!",
+     "es": "¡Haz rodar la pelota!"
+    },
+    {
+     "en": "Ball in the box!",
+     "gl": "A pelota, na caixa!",
+     "es": "¡La pelota, en la caja!"
+    }
+   ],
+   "observar": {
+    "gl": "Se a criatura busca outra cousa redonda para facela rodar.",
+    "es": "Si la criatura busca otra cosa redonda para hacerla rodar."
+   }
+  },
+  {
+   "id": "STEAM-2_3-09",
+   "curso": "curso_2_3",
+   "mes": 9,
+   "unidade": "T2.U1",
+   "fenomeno": "materia",
+   "titulo": {
+    "gl": "Flota ou afúndese?",
+    "es": "¿Flota o se hunde?"
+   },
+   "material": [
+    {
+     "gl": "Unha bandexa ou barreño con auga",
+     "es": "Una bandeja o barreño con agua"
+    },
+    {
+     "gl": "Barquiños de plástico ou de cortiza grandes",
+     "es": "Barquitos de plástico o de corcho grandes"
+    },
+    {
+     "gl": "Pedras de máis de 5 cm",
+     "es": "Piedras de más de 5 cm"
+    }
+   ],
+   "seguridade": {
+    "gl": "Auga baixa, persoa adulta ao lado todo o tempo e pedras que non caiban na boca.",
+    "es": "Agua baja, persona adulta al lado todo el tiempo y piedras que no quepan en la boca."
+   },
+   "aula": [
+    {
+     "gl": "Pregunta antes de soltar: flotará ou irá ao fondo?",
+     "es": "Pregunta antes de soltar: ¿flotará o irá al fondo?"
+    },
+    {
+     "gl": "Pon o barco na auga: flota. Pon a pedra: afúndese.",
+     "es": "Pon el barco en el agua: flota. Pon la piedra: se hunde."
+    },
+    {
+     "gl": "Por quendas, cada criatura proba un obxecto e ti nomeas o que pasa.",
+     "es": "Por turnos, cada criatura prueba un objeto y tú nombras lo que pasa."
+    }
+   ],
+   "casa": [
+    {
+     "gl": "Na bañeira, xuntade cousas que non se estragan coa auga.",
+     "es": "En la bañera, juntad cosas que no se estropean con el agua."
+    },
+    {
+     "gl": "Probádeas unha a unha: flota ou afúndese?",
+     "es": "Probadlas una a una: ¿flota o se hunde?"
+    },
+    {
+     "gl": "Deixade os que flotan nun lado e os que se afunden no outro.",
+     "es": "Dejad los que flotan en un lado y los que se hunden en el otro."
+    }
+   ],
+   "ordes": [
+    {
+     "en": "Float, boat!",
+     "gl": "Flota, barco!",
+     "es": "¡Flota, barco!"
+    },
+    {
+     "en": "Down, stone! Splash!",
+     "gl": "Abaixo, pedra! Chap!",
+     "es": "¡Abajo, piedra! ¡Chap!"
+    }
+   ],
+   "observar": {
+    "gl": "Se a criatura intenta afundir o barco coa man, ou colle outra cousa para probar.",
+    "es": "Si la criatura intenta hundir el barco con la mano, o coge otra cosa para probar."
+   }
+  },
+  {
+   "id": "STEAM-2_3-10",
+   "curso": "curso_2_3",
+   "mes": 10,
+   "unidade": "T2.U1",
+   "fenomeno": "cinematica",
+   "titulo": {
+    "gl": "O vento empurra o barco",
+    "es": "El viento empuja el barco"
+   },
+   "material": [
+    {
+     "gl": "Un barreño con auga",
+     "es": "Un barreño con agua"
+    },
+    {
+     "gl": "Barquiños lixeiros con vela de papel",
+     "es": "Barquitos ligeros con vela de papel"
+    },
+    {
+     "gl": "Un abano de cartón",
+     "es": "Un abanico de cartón"
+    }
+   ],
+   "seguridade": {
+    "gl": "Soprar si, sorber non: ensina o xesto antes. Ninguén bebe a auga do barreño.",
+    "es": "Soplar sí, sorber no: enseña el gesto antes. Nadie bebe el agua del barreño."
+   },
+   "aula": [
+    {
+     "gl": "Sopra ti a vela dun barco: vai!",
+     "es": "Sopla tú la vela de un barco: ¡va!"
+    },
+    {
+     "gl": "Fai vento co abano: forte vai rápido, suave vai amodo.",
+     "es": "Haz viento con el abanico: fuerte va rápido, suave va despacio."
+    },
+    {
+     "gl": "Cada criatura sopra o seu barco ata a outra beira.",
+     "es": "Cada criatura sopla su barco hasta la otra orilla."
+    }
+   ],
+   "casa": [
+    {
+     "gl": "Na bañeira, un barco de papel ou unha tapa.",
+     "es": "En la bañera, un barco de papel o una tapa."
+    },
+    {
+     "gl": "Soprade por quendas e mirade ata onde chega.",
+     "es": "Soplad por turnos y mirad hasta dónde llega."
+    },
+    {
+     "gl": "Probade a soprar suave e forte.",
+     "es": "Probad a soplar suave y fuerte."
+    }
+   ],
+   "ordes": [
+    {
+     "en": "Blow the boat!",
+     "gl": "Sopra o barco!",
+     "es": "¡Sopla el barco!"
+    },
+    {
+     "en": "Go, boat, go!",
+     "gl": "Vai, barco, vai!",
+     "es": "¡Vamos, barco, vamos!"
+    }
+   ],
+   "observar": {
+    "gl": "Se a criatura sopra máis forte cando o barco vai amodo.",
+    "es": "Si la criatura sopla más fuerte cuando el barco va despacio."
+   }
+  },
+  {
+   "id": "STEAM-2_3-11",
+   "curso": "curso_2_3",
+   "mes": 11,
+   "unidade": "T2.U2",
+   "fenomeno": "logica",
+   "titulo": {
+    "gl": "Grande aquí, pequeno alí",
+    "es": "Grande aquí, pequeño allí"
+   },
+   "material": [
+    {
+     "gl": "Pedras grandes e pequenas (todas de máis de 5 cm)",
+     "es": "Piedras grandes y pequeñas (todas de más de 5 cm)"
+    },
+    {
+     "gl": "Follas grandes e pequenas",
+     "es": "Hojas grandes y pequeñas"
+    },
+    {
+     "gl": "Dous aros no chan, un grande e un pequeno",
+     "es": "Dos aros en el suelo, uno grande y uno pequeño"
+    }
+   ],
+   "seguridade": {
+    "gl": "Pedras que non caiban na boca; ninguén as lanza.",
+    "es": "Piedras que no quepan en la boca; nadie las lanza."
+   },
+   "aula": [
+    {
+     "gl": "Ensina unha pedra grande e lévaa ao aro grande; unha pequena, ao aro pequeno.",
+     "es": "Enseña una piedra grande y llévala al aro grande; una pequeña, al aro pequeño."
+    },
+    {
+     "gl": "Por quendas, cada criatura colle unha cousa e escolle aro.",
+     "es": "Por turnos, cada criatura coge una cosa y elige aro."
+    },
+    {
+     "gl": "Ao final, mirade xuntos os dous aros e contade.",
+     "es": "Al final, mirad juntos los dos aros y contad."
+    }
+   ],
+   "casa": [
+    {
+     "gl": "No paseo, recollede pedras e follas.",
+     "es": "En el paseo, recoged piedras y hojas."
+    },
+    {
+     "gl": "Na casa, facede dous montóns: grande e pequeno.",
+     "es": "En casa, haced dos montones: grande y pequeño."
+    },
+    {
+     "gl": "Buscade a máis grande de todas.",
+     "es": "Buscad la más grande de todas."
+    }
+   ],
+   "ordes": [
+    {
+     "en": "Big stone here!",
+     "gl": "Pedra grande, aquí!",
+     "es": "¡Piedra grande, aquí!"
+    },
+    {
+     "en": "Small leaf there!",
+     "gl": "Folla pequena, alí!",
+     "es": "¡Hoja pequeña, allí!"
+    }
+   ],
+   "observar": {
+    "gl": "Se a criatura compara dúas pezas antes de escoller o aro.",
+    "es": "Si la criatura compara dos piezas antes de elegir el aro."
+   }
+  },
+  {
+   "id": "STEAM-2_3-12",
+   "curso": "curso_2_3",
+   "mes": 12,
+   "unidade": "T2.U2",
+   "fenomeno": "acustica",
+   "titulo": {
+    "gl": "Pum grande, pum pequeno",
+    "es": "Pum grande, pum pequeño"
+   },
+   "material": [
+    {
+     "gl": "Unha bandexa metálica ou un tambor",
+     "es": "Una bandeja metálica o un tambor"
+    },
+    {
+     "gl": "Pedras grandes e pequenas (de máis de 5 cm)",
+     "es": "Piedras grandes y pequeñas (de más de 5 cm)"
+    },
+    {
+     "gl": "Follas secas",
+     "es": "Hojas secas"
+    }
+   ],
+   "seguridade": {
+    "gl": "As pedras sóltanse desde pouca altura e só enriba da bandexa.",
+    "es": "Las piedras se sueltan desde poca altura y solo encima de la bandeja."
+   },
+   "aula": [
+    {
+     "gl": "Solta unha pedra grande na bandexa: PUM. Unha pequena: pum.",
+     "es": "Suelta una piedra grande en la bandeja: PUM. Una pequeña: pum."
+    },
+    {
+     "gl": "Solta unha folla: case non se oe.",
+     "es": "Suelta una hoja: casi no se oye."
+    },
+    {
+     "gl": "Por quendas, que solten e o grupo diga forte ou suave.",
+     "es": "Por turnos, que suelten y el grupo diga fuerte o suave."
+    }
+   ],
+   "casa": [
+    {
+     "gl": "Cunha tixola vella e unha culler de pau, facede golpes fortes e suaves.",
+     "es": "Con una sartén vieja y una cuchara de palo, haced golpes fuertes y suaves."
+    },
+    {
+     "gl": "Soltade enriba unha noz grande e unha folla.",
+     "es": "Soltad encima una nuez grande y una hoja."
+    },
+    {
+     "gl": "Escoitade con ollos pechados e adiviñade.",
+     "es": "Escuchad con los ojos cerrados y adivinad."
+    }
+   ],
+   "ordes": [
+    {
+     "en": "Drop! Listen!",
+     "gl": "Solta! Escoita!",
+     "es": "¡Suelta! ¡Escucha!"
+    },
+    {
+     "en": "Big sound, small sound!",
+     "gl": "Son grande, son pequeno!",
+     "es": "¡Sonido grande, sonido pequeño!"
+    }
+   ],
+   "observar": {
+    "gl": "Se a criatura agarda o son antes de soltar outra vez, ou tapa as orellas co forte.",
+    "es": "Si la criatura espera el sonido antes de soltar otra vez, o se tapa los oídos con el fuerte."
+   }
+  },
+  {
+   "id": "STEAM-2_3-01",
+   "curso": "curso_2_3",
+   "mes": 1,
+   "unidade": "T2.U3",
+   "fenomeno": "materia",
+   "titulo": {
+    "gl": "Pan duro, pan brando",
+    "es": "Pan duro, pan blando"
+   },
+   "material": [
+    {
+     "gl": "Pan do día",
+     "es": "Pan del día"
+    },
+    {
+     "gl": "Pan duro doutro día",
+     "es": "Pan duro de otro día"
+    },
+    {
+     "gl": "Un pano limpo",
+     "es": "Un paño limpio"
+    }
+   ],
+   "seguridade": {
+    "gl": "Só se proba se non hai alerxias; o pan duro, só para tocar e petar, non para morder.",
+    "es": "Solo se prueba si no hay alergias; el pan duro, solo para tocar y golpear, no para morder."
+   },
+   "aula": [
+    {
+     "gl": "Pon os dous pans no pano e apértaos coa man: un afúndese, o outro non.",
+     "es": "Pon los dos panes en el paño y apriétalos con la mano: uno se hunde, el otro no."
+    },
+    {
+     "gl": "Peta no pan duro: toc, toc.",
+     "es": "Golpea en el pan duro: toc, toc."
+    },
+    {
+     "gl": "Proba cada criatura un anaco do pan brando.",
+     "es": "Prueba cada criatura un trozo del pan blando."
+    }
+   ],
+   "casa": [
+    {
+     "gl": "Gardade un anaco de pan ata o día seguinte.",
+     "es": "Guardad un trozo de pan hasta el día siguiente."
+    },
+    {
+     "gl": "Comparádeo co pan novo: apertade os dous.",
+     "es": "Comparadlo con el pan nuevo: apretad los dos."
+    },
+    {
+     "gl": "Preguntade: que pasou co pan de onte?",
+     "es": "Preguntad: ¿qué pasó con el pan de ayer?"
+    }
+   ],
+   "ordes": [
+    {
+     "en": "Squeeze the soft bread!",
+     "gl": "Aperta o pan brando!",
+     "es": "¡Aprieta el pan blando!"
+    },
+    {
+     "en": "Hard bread! Knock, knock!",
+     "gl": "Pan duro! Toc, toc!",
+     "es": "¡Pan duro! ¡Toc, toc!"
+    }
+   ],
+   "observar": {
+    "gl": "Se a criatura volve apertar para ver se cambia, ou peta noutras cousas.",
+    "es": "Si la criatura vuelve a apretar para ver si cambia, o golpea otras cosas."
+   }
+  },
+  {
+   "id": "STEAM-2_3-02",
+   "curso": "curso_2_3",
+   "mes": 2,
+   "unidade": "T2.U3",
+   "fenomeno": "optica",
+   "titulo": {
+    "gl": "A estrela da mazá",
+    "es": "La estrella de la manzana"
+   },
+   "material": [
+    {
+     "gl": "Unha mazá cortada ao medio pola adulta (en horizontal)",
+     "es": "Una manzana cortada por la mitad por la adulta (en horizontal)"
+    },
+    {
+     "gl": "Unha lupa grande de plástico",
+     "es": "Una lupa grande de plástico"
+    }
+   ],
+   "seguridade": {
+    "gl": "O coitelo só o usa a persoa adulta e lonxe do grupo; as sementes non se comen.",
+    "es": "El cuchillo solo lo usa la persona adulta y lejos del grupo; las semillas no se comen."
+   },
+   "aula": [
+    {
+     "gl": "Ensina a mazá enteira e pregunta que haberá dentro.",
+     "es": "Enseña la manzana entera y pregunta qué habrá dentro."
+    },
+    {
+     "gl": "Ábrea ao medio: no centro, unha estrela de sementes.",
+     "es": "Ábrela por la mitad: en el centro, una estrella de semillas."
+    },
+    {
+     "gl": "Por quendas, mirade a estrela coa lupa.",
+     "es": "Por turnos, mirad la estrella con la lupa."
+    }
+   ],
+   "casa": [
+    {
+     "gl": "Na merenda, corta ti unha mazá en horizontal.",
+     "es": "En la merienda, corta tú una manzana en horizontal."
+    },
+    {
+     "gl": "Buscade xuntos a estrela.",
+     "es": "Buscad juntos la estrella."
+    },
+    {
+     "gl": "Mirade se outra froita ten debuxo dentro.",
+     "es": "Mirad si otra fruta tiene dibujo dentro."
+    }
+   ],
+   "ordes": [
+    {
+     "en": "Look inside the apple!",
+     "gl": "Mira dentro da mazá!",
+     "es": "¡Mira dentro de la manzana!"
+    },
+    {
+     "en": "A star!",
+     "gl": "Unha estrela!",
+     "es": "¡Una estrella!"
+    }
+   ],
+   "observar": {
+    "gl": "Se a criatura sinala a estrela ou busca outra na outra metade.",
+    "es": "Si la criatura señala la estrella o busca otra en la otra mitad."
+   }
+  },
+  {
+   "id": "STEAM-2_3-03",
+   "curso": "curso_2_3",
+   "mes": 3,
+   "unidade": "T2.U4",
+   "fenomeno": "logica",
+   "titulo": {
+    "gl": "Primeiro mollo, despois xabón",
+    "es": "Primero mojo, después jabón"
+   },
+   "material": [
+    {
+     "gl": "Catro tarxetas grandes: mollar, xabón, enxaugar, secar",
+     "es": "Cuatro tarjetas grandes: mojar, jabón, aclarar, secar"
+    },
+    {
+     "gl": "Un lavabo ou palangana",
+     "es": "Un lavabo o palangana"
+    },
+    {
+     "gl": "Xabón e toalla",
+     "es": "Jabón y toalla"
+    }
+   ],
+   "seguridade": {
+    "gl": "Xabón suave e auga morna; coidado co chan mollado.",
+    "es": "Jabón suave y agua templada; cuidado con el suelo mojado."
+   },
+   "aula": [
+    {
+     "gl": "Lavade as mans xuntos, dicindo cada paso.",
+     "es": "Lavad las manos juntos, diciendo cada paso."
+    },
+    {
+     "gl": "Ensina as catro tarxetas desordenadas: cal vai primeiro?",
+     "es": "Enseña las cuatro tarjetas desordenadas: ¿cuál va primero?"
+    },
+    {
+     "gl": "Ordenádeas en fila, cada criatura pon unha.",
+     "es": "Ordenadlas en fila, cada criatura pone una."
+    }
+   ],
+   "casa": [
+    {
+     "gl": "Antes de comer, lavade as mans contando os pasos.",
+     "es": "Antes de comer, lavad las manos contando los pasos."
+    },
+    {
+     "gl": "Sáltate un paso a propósito: notalo?",
+     "es": "Sáltate un paso a propósito: ¿lo nota?"
+    },
+    {
+     "gl": "Repetide en orde.",
+     "es": "Repetid en orden."
+    }
+   ],
+   "ordes": [
+    {
+     "en": "Wash your hands!",
+     "gl": "Lava as mans!",
+     "es": "¡Lávate las manos!"
+    },
+    {
+     "en": "First water, then soap!",
+     "gl": "Primeiro auga, despois xabón!",
+     "es": "¡Primero agua, después jabón!"
+    }
+   ],
+   "observar": {
+    "gl": "Se a criatura corrixe a orde ou anticipa o paso seguinte.",
+    "es": "Si la criatura corrige el orden o anticipa el paso siguiente."
+   }
+  },
+  {
+   "id": "STEAM-2_3-04",
+   "curso": "curso_2_3",
+   "mes": 4,
+   "unidade": "T2.U4",
+   "fenomeno": "cinematica",
+   "titulo": {
+    "gl": "A toalla mollada pesa",
+    "es": "La toalla mojada pesa"
+   },
+   "material": [
+    {
+     "gl": "Dúas toallas pequenas iguais",
+     "es": "Dos toallas pequeñas iguales"
+    },
+    {
+     "gl": "Un barreño con auga",
+     "es": "Un barreño con agua"
+    }
+   ],
+   "seguridade": {
+    "gl": "Auga baixa e chan protexido; ninguén se mete a toalla na cara.",
+    "es": "Agua baja y suelo protegido; nadie se mete la toalla en la cara."
+   },
+   "aula": [
+    {
+     "gl": "Ensina as dúas toallas secas: levantádeas, pesan pouco.",
+     "es": "Enseña las dos toallas secas: levantadlas, pesan poco."
+    },
+    {
+     "gl": "Mete unha na auga e levántaa: pesa moito e pinga.",
+     "es": "Mete una en el agua y levántala: pesa mucho y gotea."
+    },
+    {
+     "gl": "Retorcédea entre dúas criaturas: sae auga e pesa menos.",
+     "es": "Retorcedla entre dos criaturas: sale agua y pesa menos."
+    }
+   ],
+   "casa": [
+    {
+     "gl": "Despois do baño, levantade a toalla mollada e unha seca.",
+     "es": "Después del baño, levantad la toalla mojada y una seca."
+    },
+    {
+     "gl": "Cal pesa máis?",
+     "es": "¿Cuál pesa más?"
+    },
+    {
+     "gl": "Retorcédea xuntos no lavabo.",
+     "es": "Retorcedla juntos en el lavabo."
+    }
+   ],
+   "ordes": [
+    {
+     "en": "Lift the wet towel!",
+     "gl": "Levanta a toalla mollada!",
+     "es": "¡Levanta la toalla mojada!"
+    },
+    {
+     "en": "Heavy! Light!",
+     "gl": "Pesada! Lixeira!",
+     "es": "¡Pesada! ¡Ligera!"
+    }
+   ],
+   "observar": {
+    "gl": "Se a criatura fai forza co corpo ao levantar a mollada.",
+    "es": "Si la criatura hace fuerza con el cuerpo al levantar la mojada."
+   }
+  },
+  {
+   "id": "STEAM-2_3-05",
+   "curso": "curso_2_3",
+   "mes": 5,
+   "unidade": "T2.U5",
+   "fenomeno": "acustica",
+   "titulo": {
+    "gl": "Pasos que corren, pasos que dormen",
+    "es": "Pasos que corren, pasos que duermen"
+   },
+   "material": [
+    {
+     "gl": "Un tambor ou unha caixa de cartón",
+     "es": "Un tambor o una caja de cartón"
+    },
+    {
+     "gl": "Unha baqueta de pau ou a man",
+     "es": "Una baqueta de palo o la mano"
+    }
+   ],
+   "seguridade": {
+    "gl": "Espazo despexado para correr; cando o tambor para, todo o mundo quieto.",
+    "es": "Espacio despejado para correr; cuando el tambor para, todo el mundo quieto."
+   },
+   "aula": [
+    {
+     "gl": "Toca rápido: o grupo corre coma un can.",
+     "es": "Toca rápido: el grupo corre como un perro."
+    },
+    {
+     "gl": "Toca amodo: camiñan coma un gato.",
+     "es": "Toca despacio: caminan como un gato."
+    },
+    {
+     "gl": "Para de tocar: deitados, a durmir.",
+     "es": "Deja de tocar: tumbados, a dormir."
+    }
+   ],
+   "casa": [
+    {
+     "gl": "Cunha caixa e a man, toca rápido e amodo.",
+     "es": "Con una caja y la mano, toca rápido y despacio."
+    },
+    {
+     "gl": "A criatura corre ou camiña segundo o son.",
+     "es": "La criatura corre o camina según el sonido."
+    },
+    {
+     "gl": "Silencio: a durmir no sofá.",
+     "es": "Silencio: a dormir en el sofá."
+    }
+   ],
+   "ordes": [
+    {
+     "en": "Run, dog! Fast!",
+     "gl": "Corre, can! Rápido!",
+     "es": "¡Corre, perro! ¡Rápido!"
+    },
+    {
+     "en": "Sleep, cat. Shh…",
+     "gl": "Durme, gato. Chis…",
+     "es": "Duerme, gato. Chis…"
+    }
+   ],
+   "observar": {
+    "gl": "Se a criatura cambia o paso antes de que o digas, só polo son.",
+    "es": "Si la criatura cambia el paso antes de que lo digas, solo por el sonido."
+   }
+  },
+  {
+   "id": "STEAM-2_3-06",
+   "curso": "curso_2_3",
+   "mes": 6,
+   "unidade": "T2.U6",
+   "fenomeno": "optica",
+   "titulo": {
+    "gl": "A caixa das estrelas",
+    "es": "La caja de las estrellas"
+   },
+   "material": [
+    {
+     "gl": "Unha caixa de cartón con buratos feitos pola adulta",
+     "es": "Una caja de cartón con agujeros hechos por la adulta"
+    },
+    {
+     "gl": "Unha lanterna",
+     "es": "Una linterna"
+    }
+   ],
+   "seguridade": {
+    "gl": "Os buratos fainos a persoa adulta antes; a lanterna, sempre na man adulta.",
+    "es": "Los agujeros los hace la persona adulta antes; la linterna, siempre en la mano adulta."
+   },
+   "aula": [
+    {
+     "gl": "Baixa a luz da sala e mete a lanterna na caixa.",
+     "es": "Baja la luz de la sala y mete la linterna en la caja."
+    },
+    {
+     "gl": "Saen puntos de luz no teito: estrelas!",
+     "es": "Salen puntos de luz en el techo: ¡estrellas!"
+    },
+    {
+     "gl": "Move a caixa: as estrelas van; tapa un burato: unha estrela menos.",
+     "es": "Mueve la caja: las estrellas van; tapa un agujero: una estrella menos."
+    }
+   ],
+   "casa": [
+    {
+     "gl": "Pola noite, cunha caixa de zapatos con buratos e a lanterna.",
+     "es": "Por la noche, con una caja de zapatos con agujeros y la linterna."
+    },
+    {
+     "gl": "Mirade as estrelas no teito do cuarto.",
+     "es": "Mirad las estrellas en el techo de la habitación."
+    },
+    {
+     "gl": "Tapade buratos cos dedos e contade as que quedan.",
+     "es": "Tapad agujeros con los dedos y contad las que quedan."
+    }
+   ],
+   "ordes": [
+    {
+     "en": "Look! Light in the box!",
+     "gl": "Mira! Luz na caixa!",
+     "es": "¡Mira! ¡Luz en la caja!"
+    },
+    {
+     "en": "Go, stars! Stop!",
+     "gl": "Ide, estrelas! Parade!",
+     "es": "¡Id, estrellas! ¡Parad!"
+    }
+   ],
+   "observar": {
+    "gl": "Se a criatura mira da caixa ao teito, ou tapa un burato para ver que pasa.",
+    "es": "Si la criatura mira de la caja al techo, o tapa un agujero para ver qué pasa."
+   }
+  },
+  {
+   "id": "STEAM-3_4-09",
+   "curso": "curso_3_4",
+   "mes": 9,
+   "unidade": "T3.U3.1",
+   "fenomeno": "materia",
+   "titulo": {
+    "gl": "Que torre aguanta?",
+    "es": "¿Qué torre aguanta?"
+   },
+   "material": [
+    {
+     "gl": "Bloques de madeira",
+     "es": "Bloques de madera"
+    },
+    {
+     "gl": "Vasos de papel",
+     "es": "Vasos de papel"
+    },
+    {
+     "gl": "Unha alfombra para que caian en brando",
+     "es": "Una alfombra para que caigan en blando"
+    }
+   ],
+   "seguridade": {
+    "gl": "Torres baixas, ata a altura do peito; ninguén as tira contra ninguén.",
+    "es": "Torres bajas, hasta la altura del pecho; nadie las tira contra nadie."
+   },
+   "aula": [
+    {
+     "gl": "En parellas: unha criatura constrúe, a outra suxeita a base.",
+     "es": "En parejas: una criatura construye, la otra sujeta la base."
+    },
+    {
+     "gl": "Unha torre de bloques e outra de vasos: cal chega máis alto sen caer?",
+     "es": "Una torre de bloques y otra de vasos: ¿cuál llega más alto sin caer?"
+    },
+    {
+     "gl": "Sopra ti ao lado de cada torre: cal se move? Cambiade os papeis.",
+     "es": "Sopla tú al lado de cada torre: ¿cuál se mueve? Cambiad los papeles."
+    }
+   ],
+   "casa": [
+    {
+     "gl": "Con caixas de cereais e vasos de iogur, facede dúas torres.",
+     "es": "Con cajas de cereales y vasos de yogur, haced dos torres."
+    },
+    {
+     "gl": "Unha persoa constrúe e a outra di cando parar.",
+     "es": "Una persona construye y la otra dice cuándo parar."
+    },
+    {
+     "gl": "Preguntade: por que caeu esta e a outra non?",
+     "es": "Preguntad: ¿por qué se cayó esta y la otra no?"
+    }
+   ],
+   "ordes": [
+    {
+     "en": "Build a tall tower!",
+     "gl": "Fai unha torre alta!",
+     "es": "¡Haz una torre alta!"
+    },
+    {
+     "en": "Steady! Steady!",
+     "gl": "Quieta! Quieta!",
+     "es": "¡Quieta! ¡Quieta!"
+    }
+   ],
+   "observar": {
+    "gl": "Se a parella pon os bloques grandes abaixo despois de ver caer unha torre.",
+    "es": "Si la pareja pone los bloques grandes abajo después de ver caer una torre."
+   }
+  },
+  {
+   "id": "STEAM-3_4-10",
+   "curso": "curso_3_4",
+   "mes": 10,
+   "unidade": "T3.U3.1",
+   "fenomeno": "logica",
+   "titulo": {
+    "gl": "Vermello, azul, vermello…",
+    "es": "Rojo, azul, rojo…"
+   },
+   "material": [
+    {
+     "gl": "Bloques de dúas cores",
+     "es": "Bloques de dos colores"
+    },
+    {
+     "gl": "Unha tira de papel longa no chan",
+     "es": "Una tira de papel larga en el suelo"
+    }
+   ],
+   "seguridade": {
+    "gl": "Sen nada especial: espazo para sentar en círculo.",
+    "es": "Sin nada especial: espacio para sentarse en círculo."
+   },
+   "aula": [
+    {
+     "gl": "Pon ti unha serie: vermello, azul, vermello, azul…",
+     "es": "Pon tú una serie: rojo, azul, rojo, azul…"
+    },
+    {
+     "gl": "Pregunta que vén despois e agarda; quen o sabe, pon o bloque.",
+     "es": "Pregunta qué viene después y espera; quien lo sabe, pone el bloque."
+    },
+    {
+     "gl": "Unha criatura inventa a serie e outra contínuaa.",
+     "es": "Una criatura inventa la serie y otra la continúa."
+    }
+   ],
+   "casa": [
+    {
+     "gl": "Con calcetíns ou culleres, facede unha fila de dúas cores.",
+     "es": "Con calcetines o cucharas, haced una fila de dos colores."
+    },
+    {
+     "gl": "A criatura di que vén despois.",
+     "es": "La criatura dice qué viene después."
+    },
+    {
+     "gl": "Despois inventa ela unha serie para ti.",
+     "es": "Después inventa ella una serie para ti."
+    }
+   ],
+   "ordes": [
+    {
+     "en": "Red block, blue block!",
+     "gl": "Bloque vermello, bloque azul!",
+     "es": "¡Bloque rojo, bloque azul!"
+    },
+    {
+     "en": "What comes next?",
+     "gl": "Que vén despois?",
+     "es": "¿Qué viene después?"
+    }
+   ],
+   "observar": {
+    "gl": "Se a criatura detecta un erro na serie ou propón unha serie nova.",
+    "es": "Si la criatura detecta un error en la serie o propone una serie nueva."
+   }
+  },
+  {
+   "id": "STEAM-3_4-11",
+   "curso": "curso_3_4",
+   "mes": 11,
+   "unidade": "T3.U3.1",
+   "fenomeno": "cinematica",
+   "titulo": {
+    "gl": "O tren baixa a costa",
+    "es": "El tren baja la cuesta"
+   },
+   "material": [
+    {
+     "gl": "Un tren de xoguete ou un coche grande",
+     "es": "Un tren de juguete o un coche grande"
+    },
+    {
+     "gl": "Unha táboa para facer rampla",
+     "es": "Una tabla para hacer rampa"
+    },
+    {
+     "gl": "Libros para cambiar a altura",
+     "es": "Libros para cambiar la altura"
+    }
+   ],
+   "seguridade": {
+    "gl": "Rampla estable e baixa; o tren non se lanza, só se solta.",
+    "es": "Rampa estable y baja; el tren no se lanza, solo se suelta."
+   },
+   "aula": [
+    {
+     "gl": "Rampla baixa: solta o tren e mirade ata onde chega.",
+     "es": "Rampa baja: suelta el tren y mirad hasta dónde llega."
+    },
+    {
+     "gl": "Engade un libro: máis alta. Vai máis rápido?",
+     "es": "Añade un libro: más alta. ¿Va más rápido?"
+    },
+    {
+     "gl": "Papeis: unha criatura solta, outra marca onde para cun bloque.",
+     "es": "Papeles: una criatura suelta, otra marca dónde para con un bloque."
+    }
+   ],
+   "casa": [
+    {
+     "gl": "Cunha bandexa inclinada sobre o sofá, facede unha rampla.",
+     "es": "Con una bandeja inclinada sobre el sofá, haced una rampa."
+    },
+    {
+     "gl": "Soltade un coche ou unha laranxa.",
+     "es": "Soltad un coche o una naranja."
+    },
+    {
+     "gl": "Cambiade a altura e comparade.",
+     "es": "Cambiad la altura y comparad."
+    }
+   ],
+   "ordes": [
+    {
+     "en": "Push the train!",
+     "gl": "Empurra o tren!",
+     "es": "¡Empuja el tren!"
+    },
+    {
+     "en": "Fast! Slow!",
+     "gl": "Rápido! Amodo!",
+     "es": "¡Rápido! ¡Despacio!"
+    }
+   ],
+   "observar": {
+    "gl": "Se a criatura sobe a rampla para que vaia máis rápido.",
+    "es": "Si la criatura sube la rampa para que vaya más rápido."
+   }
+  },
+  {
+   "id": "STEAM-3_4-12",
+   "curso": "curso_3_4",
+   "mes": 12,
+   "unidade": "T3.U3.1",
+   "fenomeno": "acustica",
+   "titulo": {
+    "gl": "O teléfono de vasos",
+    "es": "El teléfono de vasos"
+   },
+   "material": [
+    {
+     "gl": "Dous vasos de papel unidos cun fío longo (feito pola adulta)",
+     "es": "Dos vasos de papel unidos con un hilo largo (hecho por la adulta)"
+    }
+   ],
+   "seguridade": {
+    "gl": "O fío non se enrola no pescozo nin nos dedos; vixía sempre a persoa adulta.",
+    "es": "El hilo no se enrolla en el cuello ni en los dedos; vigila siempre la persona adulta."
+   },
+   "aula": [
+    {
+     "gl": "En parellas: unha criatura fala no vaso, a outra escoita no seu.",
+     "es": "En parejas: una criatura habla en el vaso, la otra escucha en el suyo."
+    },
+    {
+     "gl": "Co fío tenso óese; co fío frouxo, non. Probádeo.",
+     "es": "Con el hilo tenso se oye; con el hilo flojo, no. Probadlo."
+    },
+    {
+     "gl": "Cambiade os papeis.",
+     "es": "Cambiad los papeles."
+    }
+   ],
+   "casa": [
+    {
+     "gl": "Facede o teléfono con dous vasos e un cordel.",
+     "es": "Haced el teléfono con dos vasos y un cordel."
+    },
+    {
+     "gl": "Falade de cuarto a cuarto, co fío tenso.",
+     "es": "Hablad de habitación a habitación, con el hilo tenso."
+    },
+    {
+     "gl": "Afrouxade o fío e escoitade a diferenza.",
+     "es": "Aflojad el hilo y escuchad la diferencia."
+    }
+   ],
+   "ordes": [
+    {
+     "en": "Talk in the cup!",
+     "gl": "Fala no vaso!",
+     "es": "¡Habla en el vaso!"
+    },
+    {
+     "en": "Listen! Can you hear me?",
+     "gl": "Escoita! Óesme?",
+     "es": "¡Escucha! ¿Me oyes?"
+    }
+   ],
+   "observar": {
+    "gl": "Se a parella tensa o fío sen que llo digas.",
+    "es": "Si la pareja tensa el hilo sin que se lo digas."
+   }
+  },
+  {
+   "id": "STEAM-3_4-01",
+   "curso": "curso_3_4",
+   "mes": 1,
+   "unidade": "T3.U3.1",
+   "fenomeno": "optica",
+   "titulo": {
+    "gl": "A sombra da torre",
+    "es": "La sombra de la torre"
+   },
+   "material": [
+    {
+     "gl": "Bloques",
+     "es": "Bloques"
+    },
+    {
+     "gl": "Unha lanterna",
+     "es": "Una linterna"
+    },
+    {
+     "gl": "Papel grande na parede",
+     "es": "Papel grande en la pared"
+    }
+   ],
+   "seguridade": {
+    "gl": "Lanterna na man adulta e sen apuntar aos ollos.",
+    "es": "Linterna en la mano adulta y sin apuntar a los ojos."
+   },
+   "aula": [
+    {
+     "gl": "Constrúe unha torre e ilumínaa desde arriba: sombra curta.",
+     "es": "Construye una torre e ilumínala desde arriba: sombra corta."
+    },
+    {
+     "gl": "Baixa a lanterna: a sombra faise longa.",
+     "es": "Baja la linterna: la sombra se hace larga."
+    },
+    {
+     "gl": "Papeis: unha criatura move a luz, outra marca a sombra co dedo.",
+     "es": "Papeles: una criatura mueve la luz, otra marca la sombra con el dedo."
+    }
+   ],
+   "casa": [
+    {
+     "gl": "Ao solpor, mirade xuntos a vosa sombra na rúa.",
+     "es": "Al atardecer, mirad juntos vuestra sombra en la calle."
+    },
+    {
+     "gl": "Na casa, coa lanterna e un vaso, facede sombras curtas e longas.",
+     "es": "En casa, con la linterna y un vaso, haced sombras cortas y largas."
+    },
+    {
+     "gl": "Debuxade a sombra no papel.",
+     "es": "Dibujad la sombra en el papel."
+    }
+   ],
+   "ordes": [
+    {
+     "en": "Long shadow!",
+     "gl": "Sombra longa!",
+     "es": "¡Sombra larga!"
+    },
+    {
+     "en": "Short shadow!",
+     "gl": "Sombra curta!",
+     "es": "¡Sombra corta!"
+    }
+   ],
+   "observar": {
+    "gl": "Se a criatura move a luz para facer a sombra que lle pides.",
+    "es": "Si la criatura mueve la luz para hacer la sombra que le pides."
+   }
+  },
+  {
+   "id": "STEAM-3_4-02",
+   "curso": "curso_3_4",
+   "mes": 2,
+   "unidade": "T3.U3.2",
+   "fenomeno": "materia",
+   "titulo": {
+    "gl": "O xeo no zume",
+    "es": "El hielo en el zumo"
+   },
+   "material": [
+    {
+     "gl": "Cubos de xeo grandes",
+     "es": "Cubitos de hielo grandes"
+    },
+    {
+     "gl": "Dous vasos: un con auga morna e outro con auga fría",
+     "es": "Dos vasos: uno con agua templada y otro con agua fría"
+    },
+    {
+     "gl": "Culleres",
+     "es": "Cucharas"
+    }
+   ],
+   "seguridade": {
+    "gl": "Auga morna, nunca quente. O xeo grande, para mirar e remexer, non para chupar.",
+    "es": "Agua templada, nunca caliente. El hielo grande, para mirar y remover, no para chupar."
+   },
+   "aula": [
+    {
+     "gl": "Pregunta: onde se derrete antes o xeo?",
+     "es": "Pregunta: ¿dónde se derrite antes el hielo?"
+    },
+    {
+     "gl": "Pon un cubo en cada vaso e remexede coa culler.",
+     "es": "Pon un cubito en cada vaso y removed con la cuchara."
+    },
+    {
+     "gl": "Papeis: unha criatura remexe, outra mira e avisa cando desaparece.",
+     "es": "Papeles: una criatura remueve, otra mira y avisa cuando desaparece."
+    }
+   ],
+   "casa": [
+    {
+     "gl": "No almorzo, pon xeo nun zume e mirade como se fai pequeno.",
+     "es": "En el desayuno, pon hielo en un zumo y mirad cómo se hace pequeño."
+    },
+    {
+     "gl": "Remexede coa culler: vai máis rápido?",
+     "es": "Removed con la cuchara: ¿va más rápido?"
+    },
+    {
+     "gl": "Tocade o vaso por fóra: está frío.",
+     "es": "Tocad el vaso por fuera: está frío."
+    }
+   ],
+   "ordes": [
+    {
+     "en": "Look, the ice melts!",
+     "gl": "Mira, o xeo derrétese!",
+     "es": "¡Mira, el hielo se derrite!"
+    },
+    {
+     "en": "Stir with the spoon!",
+     "gl": "Remexe coa culler!",
+     "es": "¡Remueve con la cuchara!"
+    }
+   ],
+   "observar": {
+    "gl": "Se a criatura compara os dous vasos e di cal vai máis rápido.",
+    "es": "Si la criatura compara los dos vasos y dice cuál va más rápido."
+   }
+  },
+  {
+   "id": "STEAM-3_4-03",
+   "curso": "curso_3_4",
+   "mes": 3,
+   "unidade": "T3.U3.2",
+   "fenomeno": "logica",
+   "titulo": {
+    "gl": "Un prato para cada un",
+    "es": "Un plato para cada uno"
+   },
+   "material": [
+    {
+     "gl": "Pratos, culleres e garfos de xoguete",
+     "es": "Platos, cucharas y tenedores de juguete"
+    },
+    {
+     "gl": "Cadeiras ou coxíns arredor dunha mesa",
+     "es": "Sillas o cojines alrededor de una mesa"
+    }
+   ],
+   "seguridade": {
+    "gl": "Cubertos de xoguete, sen puntas.",
+    "es": "Cubiertos de juguete, sin puntas."
+   },
+   "aula": [
+    {
+     "gl": "O restaurante abre: hai que poñer a mesa.",
+     "es": "El restaurante abre: hay que poner la mesa."
+    },
+    {
+     "gl": "Papeis: unha criatura pon os pratos, outra as culleres, outra os garfos.",
+     "es": "Papeles: una criatura pone los platos, otra las cucharas, otra los tenedores."
+    },
+    {
+     "gl": "Revisade xuntos: falta algo? sobra algo?",
+     "es": "Revisad juntos: ¿falta algo? ¿sobra algo?"
+    }
+   ],
+   "casa": [
+    {
+     "gl": "Antes de comer, a criatura pon un prato por persoa.",
+     "es": "Antes de comer, la criatura pone un plato por persona."
+    },
+    {
+     "gl": "Despois, unha culler por prato.",
+     "es": "Después, una cuchara por plato."
+    },
+    {
+     "gl": "Preguntade: hai os mesmos pratos ca persoas?",
+     "es": "Preguntad: ¿hay los mismos platos que personas?"
+    }
+   ],
+   "ordes": [
+    {
+     "en": "One plate, one spoon!",
+     "gl": "Un prato, unha culler!",
+     "es": "¡Un plato, una cuchara!"
+    },
+    {
+     "en": "Is it empty?",
+     "gl": "Está baleiro?",
+     "es": "¿Está vacío?"
+    }
+   ],
+   "observar": {
+    "gl": "Se a criatura sinala o sitio onde falta algo.",
+    "es": "Si la criatura señala el sitio donde falta algo."
+   }
+  },
+  {
+   "id": "STEAM-3_4-04",
+   "curso": "curso_3_4",
+   "mes": 4,
+   "unidade": "T3.U3.2",
+   "fenomeno": "cinematica",
+   "titulo": {
+    "gl": "Verter amodo",
+    "es": "Verter despacio"
+   },
+   "material": [
+    {
+     "gl": "Unha xerra pequena con auga",
+     "es": "Una jarra pequeña con agua"
+    },
+    {
+     "gl": "Vasos de plástico",
+     "es": "Vasos de plástico"
+    },
+    {
+     "gl": "Un funil grande e unha bandexa",
+     "es": "Un embudo grande y una bandeja"
+    }
+   ],
+   "seguridade": {
+    "gl": "Todo enriba da bandexa; chan seco para non escorregar.",
+    "es": "Todo encima de la bandeja; suelo seco para no resbalar."
+   },
+   "aula": [
+    {
+     "gl": "Verte ti amodo ata a marca do vaso: para!",
+     "es": "Vierte tú despacio hasta la marca del vaso: ¡para!"
+    },
+    {
+     "gl": "Papeis: unha criatura serve, outra di para cando está cheo.",
+     "es": "Papeles: una criatura sirve, otra dice para cuando está lleno."
+    },
+    {
+     "gl": "Probade co funil: a auga baixa por un buratiño.",
+     "es": "Probad con el embudo: el agua baja por un agujerito."
+    }
+   ],
+   "casa": [
+    {
+     "gl": "Na cea, a criatura serve a auga cunha xerra pequena.",
+     "es": "En la cena, la criatura sirve el agua con una jarra pequeña."
+    },
+    {
+     "gl": "Ti dis para cando estea cheo.",
+     "es": "Tú dices para cuando esté lleno."
+    },
+    {
+     "gl": "Bebede e mirade: agora está baleiro.",
+     "es": "Bebed y mirad: ahora está vacío."
+    }
+   ],
+   "ordes": [
+    {
+     "en": "Pour the juice!",
+     "gl": "Bota o zume!",
+     "es": "¡Echa el zumo!"
+    },
+    {
+     "en": "Stop! It's full!",
+     "gl": "Para! Está cheo!",
+     "es": "¡Para! ¡Está lleno!"
+    }
+   ],
+   "observar": {
+    "gl": "Se a criatura vai máis amodo cando o vaso está case cheo.",
+    "es": "Si la criatura va más despacio cuando el vaso está casi lleno."
+   }
+  },
+  {
+   "id": "STEAM-3_4-05",
+   "curso": "curso_3_4",
+   "mes": 5,
+   "unidade": "T3.U3.2",
+   "fenomeno": "acustica",
+   "titulo": {
+    "gl": "A música dos vasos",
+    "es": "La música de los vasos"
+   },
+   "material": [
+    {
+     "gl": "Cinco botes de vidro iguais con distinta auga (só para a adulta)",
+     "es": "Cinco botes de cristal iguales con distinta agua (solo para la adulta)"
+    },
+    {
+     "gl": "Unha culler de pau por criatura",
+     "es": "Una cuchara de palo por criatura"
+    }
+   ],
+   "seguridade": {
+    "gl": "Os botes de vidro tócaos só a persoa adulta; as criaturas petan cunha culler de pau, suave, por quendas.",
+    "es": "Los botes de cristal los toca solo la persona adulta; las criaturas golpean con una cuchara de palo, suave, por turnos."
+   },
+   "aula": [
+    {
+     "gl": "Peta ti os botes: o máis cheo soa grave, o máis baleiro, agudo.",
+     "es": "Golpea tú los botes: el más lleno suena grave, el más vacío, agudo."
+    },
+    {
+     "gl": "Por quendas, cada criatura peta un bote e o grupo di agudo ou grave.",
+     "es": "Por turnos, cada criatura golpea un bote y el grupo dice agudo o grave."
+    },
+    {
+     "gl": "Facede unha melodía de tres notas entre todos.",
+     "es": "Haced una melodía de tres notas entre todos."
+    }
+   ],
+   "casa": [
+    {
+     "gl": "Con vasos de plástico duro e auga, peta cunha culler.",
+     "es": "Con vasos de plástico duro y agua, golpea con una cuchara."
+    },
+    {
+     "gl": "Engadide auga a un e escoitade como cambia.",
+     "es": "Añadid agua a uno y escuchad cómo cambia."
+    },
+    {
+     "gl": "Ordenádeos do máis grave ao máis agudo.",
+     "es": "Ordenadlos del más grave al más agudo."
+    }
+   ],
+   "ordes": [
+    {
+     "en": "Tap with the spoon!",
+     "gl": "Peta coa culler!",
+     "es": "¡Golpea con la cuchara!"
+    },
+    {
+     "en": "High! Low!",
+     "gl": "Agudo! Grave!",
+     "es": "¡Agudo! ¡Grave!"
+    }
+   ],
+   "observar": {
+    "gl": "Se a criatura escolle un bote polo son que quere.",
+    "es": "Si la criatura elige un bote por el sonido que quiere."
+   }
+  },
+  {
+   "id": "STEAM-3_4-06",
+   "curso": "curso_3_4",
+   "mes": 6,
+   "unidade": "T3.U3.2",
+   "fenomeno": "optica",
+   "titulo": {
+    "gl": "A cara na culler",
+    "es": "La cara en la cuchara"
+   },
+   "material": [
+    {
+     "gl": "Culleres grandes de metal limpas",
+     "es": "Cucharas grandes de metal limpias"
+    },
+    {
+     "gl": "Un espello pequeno irrompible",
+     "es": "Un espejo pequeño irrompible"
+    }
+   ],
+   "seguridade": {
+    "gl": "Culleres sen bordes cortantes; espello de plástico.",
+    "es": "Cucharas sin bordes cortantes; espejo de plástico."
+   },
+   "aula": [
+    {
+     "gl": "Mirade a cara no espello: dereita.",
+     "es": "Mirad la cara en el espejo: derecha."
+    },
+    {
+     "gl": "Mirade na parte de dentro da culler: a cara está do revés!",
+     "es": "Mirad en la parte de dentro de la cuchara: ¡la cara está del revés!"
+    },
+    {
+     "gl": "En parellas, unha criatura sostén a culler e a outra fai caras.",
+     "es": "En parejas, una criatura sostiene la cuchara y la otra hace caras."
+    }
+   ],
+   "casa": [
+    {
+     "gl": "Ao recoller a mesa, mirádevos nunha culler.",
+     "es": "Al recoger la mesa, miraos en una cuchara."
+    },
+    {
+     "gl": "Dádelle a volta: por fóra a cara está dereita.",
+     "es": "Dadle la vuelta: por fuera la cara está derecha."
+    },
+    {
+     "gl": "Facede caras divertidas por quendas.",
+     "es": "Haced caras divertidas por turnos."
+    }
+   ],
+   "ordes": [
+    {
+     "en": "Look in the spoon!",
+     "gl": "Mira na culler!",
+     "es": "¡Mira en la cuchara!"
+    },
+    {
+     "en": "Upside down!",
+     "gl": "Do revés!",
+     "es": "¡Del revés!"
+    }
+   ],
+   "observar": {
+    "gl": "Se a criatura xira a culler para buscar a cara dereita.",
+    "es": "Si la criatura gira la cuchara para buscar la cara derecha."
+   }
+  },
+  {
+   "id": "STEAM-4_5-09",
+   "curso": "curso_4_5",
+   "mes": 9,
+   "unidade": "T3.U4.1",
+   "fenomeno": "materia",
+   "titulo": {
+    "gl": "Que venda absorbe?",
+    "es": "¿Qué venda absorbe?"
+   },
+   "material": [
+    {
+     "gl": "Anacos de algodón, de gasa e de plástico",
+     "es": "Trozos de algodón, de gasa y de plástico"
+    },
+    {
+     "gl": "Un contagotas ou unha culler con auga",
+     "es": "Un cuentagotas o una cuchara con agua"
+    },
+    {
+     "gl": "Unha pata de peluche",
+     "es": "Una pata de peluche"
+    }
+   ],
+   "seguridade": {
+    "gl": "Material limpo e grande; o contagotas, só con auga.",
+    "es": "Material limpio y grande; el cuentagotas, solo con agua."
+   },
+   "aula": [
+    {
+     "gl": "Na clínica: o can ten unha ferida na pata. Que venda é mellor?",
+     "es": "En la clínica: el perro tiene una herida en la pata. ¿Qué venda es mejor?"
+    },
+    {
+     "gl": "Papeis: veterinaria pon unha pinga en cada material; axudante mira se a auga queda enriba ou entra.",
+     "es": "Papeles: veterinaria pone una gota en cada material; ayudante mira si el agua se queda encima o entra."
+    },
+    {
+     "gl": "Decidide xuntos cal se pon e vendade a pata con coidado.",
+     "es": "Decidid juntos cuál se pone y vendad la pata con cuidado."
+    }
+   ],
+   "casa": [
+    {
+     "gl": "Cunha tirita, un pano e unha bolsa, botade unhas pingas.",
+     "es": "Con una tirita, un paño y una bolsa, echad unas gotas."
+    },
+    {
+     "gl": "Mirade cal bebe a auga e cal non.",
+     "es": "Mirad cuál bebe el agua y cuál no."
+    },
+    {
+     "gl": "Vendade o peluche co que mellor funcione.",
+     "es": "Vendad el peluche con el que mejor funcione."
+    }
+   ],
+   "ordes": [
+    {
+     "en": "Drop the water!",
+     "gl": "Bota a pinga!",
+     "es": "¡Echa la gota!"
+    },
+    {
+     "en": "Bandage the leg, gently!",
+     "gl": "Venda a pata, con coidado!",
+     "es": "¡Venda la pata, con cuidado!"
+    }
+   ],
+   "observar": {
+    "gl": "Se a parella predí antes de probar e despois comproba se acertou.",
+    "es": "Si la pareja predice antes de probar y después comprueba si acertó."
+   }
+  },
+  {
+   "id": "STEAM-4_5-10",
+   "curso": "curso_4_5",
+   "mes": 10,
+   "unidade": "T3.U4.1",
+   "fenomeno": "acustica",
+   "titulo": {
+    "gl": "Escoitar o corazón",
+    "es": "Escuchar el corazón"
+   },
+   "material": [
+    {
+     "gl": "Un funil e un tubo de goma (estetoscopio caseiro)",
+     "es": "Un embudo y un tubo de goma (estetoscopio casero)"
+    }
+   ],
+   "seguridade": {
+    "gl": "O tubo, só no peito, nunca dentro da orella; saltos nun espazo despexado.",
+    "es": "El tubo, solo en el pecho, nunca dentro de la oreja; saltos en un espacio despejado."
+   },
+   "aula": [
+    {
+     "gl": "Papeis: doutora escoita, paciente respira tranquila. Como soa o corazón?",
+     "es": "Papeles: doctora escucha, paciente respira tranquila. ¿Cómo suena el corazón?"
+    },
+    {
+     "gl": "Paciente salta dez veces e volvede escoitar: máis rápido!",
+     "es": "Paciente salta diez veces y volved a escuchar: ¡más rápido!"
+    },
+    {
+     "gl": "Cambiade os papeis e contade cos dedos o ritmo.",
+     "es": "Cambiad los papeles y contad con los dedos el ritmo."
+    }
+   ],
+   "casa": [
+    {
+     "gl": "Pon a orella no peito da criatura e escoitade o tum-tum.",
+     "es": "Pon la oreja en el pecho de la criatura y escuchad el tum-tum."
+    },
+    {
+     "gl": "Correde un pouco e escoitade outra vez.",
+     "es": "Corred un poco y escuchad otra vez."
+    },
+    {
+     "gl": "Deitade no sofá ata que volva amodo.",
+     "es": "Tumbaos en el sofá hasta que vuelva despacio."
+    }
+   ],
+   "ordes": [
+    {
+     "en": "Listen to the heart!",
+     "gl": "Escoita o corazón!",
+     "es": "¡Escucha el corazón!"
+    },
+    {
+     "en": "Jump! Now listen!",
+     "gl": "Salta! Agora escoita!",
+     "es": "¡Salta! ¡Ahora escucha!"
+    }
+   ],
+   "observar": {
+    "gl": "Se a criatura explica que o corazón vai rápido porque saltou.",
+    "es": "Si la criatura explica que el corazón va rápido porque saltó."
+   }
+  },
+  {
+   "id": "STEAM-4_5-11",
+   "curso": "curso_4_5",
+   "mes": 11,
+   "unidade": "T3.U4.1",
+   "fenomeno": "logica",
+   "titulo": {
+    "gl": "Dúas patas, catro patas",
+    "es": "Dos patas, cuatro patas"
+   },
+   "material": [
+    {
+     "gl": "Animais de xoguete variados",
+     "es": "Animales de juguete variados"
+    },
+    {
+     "gl": "Dous aros e tarxetas cos números 2 e 4",
+     "es": "Dos aros y tarjetas con los números 2 y 4"
+    }
+   ],
+   "seguridade": {
+    "gl": "Xoguetes grandes, sen pezas soltas.",
+    "es": "Juguetes grandes, sin piezas sueltas."
+   },
+   "aula": [
+    {
+     "gl": "Na sala de espera da clínica chegan moitos animais.",
+     "es": "En la sala de espera de la clínica llegan muchos animales."
+    },
+    {
+     "gl": "Papeis: recepcionista conta as patas, axudante leva o animal ao aro do 2 ou do 4.",
+     "es": "Papeles: recepcionista cuenta las patas, ayudante lleva el animal al aro del 2 o del 4."
+    },
+    {
+     "gl": "E o peixe? E a serpe? Inventade un terceiro aro.",
+     "es": "¿Y el pez? ¿Y la serpiente? Inventad un tercer aro."
+    }
+   ],
+   "casa": [
+    {
+     "gl": "Cos peluches da casa, contade as patas de cada un.",
+     "es": "Con los peluches de casa, contad las patas de cada uno."
+    },
+    {
+     "gl": "Facede dous grupos no sofá.",
+     "es": "Haced dos grupos en el sofá."
+    },
+    {
+     "gl": "Buscade un animal que non entre en ningún.",
+     "es": "Buscad un animal que no entre en ninguno."
+    }
+   ],
+   "ordes": [
+    {
+     "en": "Four legs here!",
+     "gl": "Catro patas, aquí!",
+     "es": "¡Cuatro patas, aquí!"
+    },
+    {
+     "en": "Two legs there!",
+     "gl": "Dúas patas, alí!",
+     "es": "¡Dos patas, allí!"
+    }
+   ],
+   "observar": {
+    "gl": "Se o grupo propón unha categoría nova para os que non encaixan.",
+    "es": "Si el grupo propone una categoría nueva para los que no encajan."
+   }
+  },
+  {
+   "id": "STEAM-4_5-12",
+   "curso": "curso_4_5",
+   "mes": 12,
+   "unidade": "T3.U4.1",
+   "fenomeno": "optica",
+   "titulo": {
+    "gl": "Coa lupa, máis grande",
+    "es": "Con la lupa, más grande"
+   },
+   "material": [
+    {
+     "gl": "Lupas grandes de plástico",
+     "es": "Lupas grandes de plástico"
+    },
+    {
+     "gl": "Plumas, follas, tea e unha pata de peluche",
+     "es": "Plumas, hojas, tela y una pata de peluche"
+    }
+   ],
+   "seguridade": {
+    "gl": "Nunca mirar o sol coa lupa nin deixala ao sol.",
+    "es": "Nunca mirar el sol con la lupa ni dejarla al sol."
+   },
+   "aula": [
+    {
+     "gl": "Papeis: veterinaria examina coa lupa, rexistradora debuxa o que ve.",
+     "es": "Papeles: veterinaria examina con la lupa, registradora dibuja lo que ve."
+    },
+    {
+     "gl": "Achegade e afastade a lupa: cando se ve máis grande?",
+     "es": "Acercad y alejad la lupa: ¿cuándo se ve más grande?"
+    },
+    {
+     "gl": "Comparade o debuxo co obxecto sen lupa.",
+     "es": "Comparad el dibujo con el objeto sin lupa."
+    }
+   ],
+   "casa": [
+    {
+     "gl": "Cunha lupa ou un vaso con auga, mirade a pel da man.",
+     "es": "Con una lupa o un vaso con agua, mirad la piel de la mano."
+    },
+    {
+     "gl": "Mirade un pelo, unha folla, un tecido.",
+     "es": "Mirad un pelo, una hoja, un tejido."
+    },
+    {
+     "gl": "Debuxade o que máis sorprenda.",
+     "es": "Dibujad lo que más sorprenda."
+    }
+   ],
+   "ordes": [
+    {
+     "en": "Examine with the lens!",
+     "gl": "Examina coa lupa!",
+     "es": "¡Examina con la lupa!"
+    },
+    {
+     "en": "It's big! Look!",
+     "gl": "É grande! Mira!",
+     "es": "¡Es grande! ¡Mira!"
+    }
+   ],
+   "observar": {
+    "gl": "Se a criatura busca a distancia boa da lupa ela soa.",
+    "es": "Si la criatura busca la distancia buena de la lupa ella sola."
+   }
+  },
+  {
+   "id": "STEAM-4_5-01",
+   "curso": "curso_4_5",
+   "mes": 1,
+   "unidade": "T3.U4.1",
+   "fenomeno": "cinematica",
+   "titulo": {
+    "gl": "A padiola",
+    "es": "La camilla"
+   },
+   "material": [
+    {
+     "gl": "Un pano grande e forte",
+     "es": "Una tela grande y fuerte"
+    },
+    {
+     "gl": "Un peluche paciente",
+     "es": "Un peluche paciente"
+    },
+    {
+     "gl": "Uns conos ou bloques para marcar o camiño",
+     "es": "Unos conos o bloques para marcar el camino"
+    }
+   ],
+   "seguridade": {
+    "gl": "Camiño sen obstáculos; ninguén corre levando a padiola.",
+    "es": "Camino sin obstáculos; nadie corre llevando la camilla."
+   },
+   "aula": [
+    {
+     "gl": "Papeis: dúas criaturas levan a padiola, unha guía o camiño.",
+     "es": "Papeles: dos criaturas llevan la camilla, una guía el camino."
+    },
+    {
+     "gl": "Se tiran desiguais, o peluche escorrega. Como o evitades?",
+     "es": "Si tiran desiguales, el peluche resbala. ¿Cómo lo evitáis?"
+    },
+    {
+     "gl": "Probade amodo e algo máis rápido, e comentade que pasa.",
+     "es": "Probad despacio y algo más rápido, y comentad qué pasa."
+    }
+   ],
+   "casa": [
+    {
+     "gl": "Cunha toalla, levade un peluche entre dúas persoas.",
+     "es": "Con una toalla, llevad un peluche entre dos personas."
+    },
+    {
+     "gl": "Primeiro amodo, despois cambiade a altura das mans.",
+     "es": "Primero despacio, después cambiad la altura de las manos."
+    },
+    {
+     "gl": "Que fai que non caia?",
+     "es": "¿Qué hace que no se caiga?"
+    }
+   ],
+   "ordes": [
+    {
+     "en": "Carry it gently!",
+     "gl": "Lévao con coidado!",
+     "es": "¡Llévalo con cuidado!"
+    },
+    {
+     "en": "Slow, slow! Together!",
+     "gl": "Amodo, amodo! Xuntos!",
+     "es": "¡Despacio, despacio! ¡Juntos!"
+    }
+   ],
+   "observar": {
+    "gl": "Se a parella se pon de acordo co ritmo sen que llo digas.",
+    "es": "Si la pareja se pone de acuerdo con el ritmo sin que se lo digas."
+   }
+  },
+  {
+   "id": "STEAM-4_5-02",
+   "curso": "curso_4_5",
+   "mes": 2,
+   "unidade": "T3.U4.2",
+   "fenomeno": "materia",
+   "titulo": {
+    "gl": "Facemos lama",
+    "es": "Hacemos barro"
+   },
+   "material": [
+    {
+     "gl": "Terra seca nun barreño",
+     "es": "Tierra seca en un barreño"
+    },
+    {
+     "gl": "Unha xerra con auga",
+     "es": "Una jarra con agua"
+    },
+    {
+     "gl": "Culleres grandes e mandís",
+     "es": "Cucharas grandes y babis"
+    }
+   ],
+   "seguridade": {
+    "gl": "Terra de xardín sen restos; lavar as mans ao rematar.",
+    "es": "Tierra de jardín sin restos; lavar las manos al terminar."
+   },
+   "aula": [
+    {
+     "gl": "Papeis: unha criatura bota auga, outra remexe, outra di como está.",
+     "es": "Papeles: una criatura echa agua, otra remueve, otra dice cómo está."
+    },
+    {
+     "gl": "Pouca auga: terra húmida. Máis auga: lama. Moita: sopa de lama!",
+     "es": "Poca agua: tierra húmeda. Más agua: barro. Mucha: ¡sopa de barro!"
+    },
+    {
+     "gl": "Pisade a lama coas botas ou facede pegadas coas mans.",
+     "es": "Pisad el barro con las botas o haced huellas con las manos."
+    }
+   ],
+   "casa": [
+    {
+     "gl": "Despois da choiva, buscade lama no parque.",
+     "es": "Después de la lluvia, buscad barro en el parque."
+    },
+    {
+     "gl": "Pisádea coas botas e mirade as pegadas.",
+     "es": "Pisadlo con las botas y mirad las huellas."
+    },
+    {
+     "gl": "Na casa, unha macetiña con terra e auga.",
+     "es": "En casa, una macetita con tierra y agua."
+    }
+   ],
+   "ordes": [
+    {
+     "en": "Mix the soil and water!",
+     "gl": "Mestura a terra e a auga!",
+     "es": "¡Mezcla la tierra y el agua!"
+    },
+    {
+     "en": "It's muddy!",
+     "gl": "Está enlamado!",
+     "es": "¡Está embarrado!"
+    }
+   ],
+   "observar": {
+    "gl": "Se o grupo axusta a auga para conseguir a lama que quere.",
+    "es": "Si el grupo ajusta el agua para conseguir el barro que quiere."
+   }
+  },
+  {
+   "id": "STEAM-4_5-03",
+   "curso": "curso_4_5",
+   "mes": 3,
+   "unidade": "T3.U4.2",
+   "fenomeno": "cinematica",
+   "titulo": {
+    "gl": "O muíño de vento",
+    "es": "El molinillo de viento"
+   },
+   "material": [
+    {
+     "gl": "Muíños de vento de papel (feitos antes pola adulta)",
+     "es": "Molinillos de viento de papel (hechos antes por la adulta)"
+    },
+    {
+     "gl": "Un abano",
+     "es": "Un abanico"
+    }
+   ],
+   "seguridade": {
+    "gl": "Muíños con pau sen punta; ninguén sopra na cara doutra criatura.",
+    "es": "Molinillos con palo sin punta; nadie sopla en la cara de otra criatura."
+   },
+   "aula": [
+    {
+     "gl": "Sopra suave: o muíño xira amodo. Forte: xira rápido.",
+     "es": "Sopla suave: el molinillo gira despacio. Fuerte: gira rápido."
+    },
+    {
+     "gl": "Papeis: unha criatura fai vento co abano, outra suxeita o muíño e di rápido ou amodo.",
+     "es": "Papeles: una criatura hace viento con el abanico, otra sujeta el molinillo y dice rápido o despacio."
+    },
+    {
+     "gl": "Saíde ao patio: hoxe vai vento?",
+     "es": "Salid al patio: ¿hoy hace viento?"
+    }
+   ],
+   "casa": [
+    {
+     "gl": "Facede un muíño cun papel cadrado e un pau.",
+     "es": "Haced un molinillo con un papel cuadrado y un palo."
+    },
+    {
+     "gl": "Levádeo á fiestra ou ao balcón.",
+     "es": "Llevadlo a la ventana o al balcón."
+    },
+    {
+     "gl": "Mirade cada día se xira máis ou menos.",
+     "es": "Mirad cada día si gira más o menos."
+    }
+   ],
+   "ordes": [
+    {
+     "en": "Blow the windmill!",
+     "gl": "Sopra o muíño!",
+     "es": "¡Sopla el molinillo!"
+    },
+    {
+     "en": "It's windy!",
+     "gl": "Vai vento!",
+     "es": "¡Hace viento!"
+    }
+   ],
+   "observar": {
+    "gl": "Se a criatura relaciona o vento de fóra co muíño que xira.",
+    "es": "Si la criatura relaciona el viento de fuera con el molinillo que gira."
+   }
+  },
+  {
+   "id": "STEAM-4_5-04",
+   "curso": "curso_4_5",
+   "mes": 4,
+   "unidade": "T3.U4.2",
+   "fenomeno": "acustica",
+   "titulo": {
+    "gl": "A orquestra da tormenta",
+    "es": "La orquesta de la tormenta"
+   },
+   "material": [
+    {
+     "gl": "Un pau de choiva (tubo de cartón pechado con arroz dentro)",
+     "es": "Un palo de lluvia (tubo de cartón cerrado con arroz dentro)"
+    },
+    {
+     "gl": "Unha folla de cartolina grande",
+     "es": "Una hoja de cartulina grande"
+    },
+    {
+     "gl": "Un tambor",
+     "es": "Un tambor"
+    }
+   ],
+   "seguridade": {
+    "gl": "O tubo, ben pechado con cinta; o arroz non sae.",
+    "es": "El tubo, bien cerrado con cinta; el arroz no sale."
+   },
+   "aula": [
+    {
+     "gl": "Papeis: choiva (pau de choiva), vento (soprar), trono (cartolina e tambor).",
+     "es": "Papeles: lluvia (palo de lluvia), viento (soplar), trueno (cartulina y tambor)."
+    },
+    {
+     "gl": "Ti diriges: primeiro choiva suave, despois vento, despois trono!",
+     "es": "Tú diriges: primero lluvia suave, después viento, después ¡trueno!"
+    },
+    {
+     "gl": "Rematade coa tormenta que se vai: só pingas.",
+     "es": "Terminad con la tormenta que se va: solo gotas."
+    }
+   ],
+   "casa": [
+    {
+     "gl": "Cun tubo de papel de cociña e arroz, facede un pau de choiva.",
+     "es": "Con un tubo de papel de cocina y arroz, haced un palo de lluvia."
+    },
+    {
+     "gl": "Cunha bandexa, facede tronos.",
+     "es": "Con una bandeja, haced truenos."
+    },
+    {
+     "gl": "Contade unha tormenta só con sons.",
+     "es": "Contad una tormenta solo con sonidos."
+    }
+   ],
+   "ordes": [
+    {
+     "en": "Make the rain!",
+     "gl": "Fai a choiva!",
+     "es": "¡Haz la lluvia!"
+    },
+    {
+     "en": "Thunder! Boom!",
+     "gl": "Trono! Bum!",
+     "es": "¡Trueno! ¡Bum!"
+    }
+   ],
+   "observar": {
+    "gl": "Se cada criatura espera o seu momento para tocar.",
+    "es": "Si cada criatura espera su momento para tocar."
+   }
+  },
+  {
+   "id": "STEAM-4_5-05",
+   "curso": "curso_4_5",
+   "mes": 5,
+   "unidade": "T3.U4.2",
+   "fenomeno": "optica",
+   "titulo": {
+    "gl": "A sombra e o sol",
+    "es": "La sombra y el sol"
+   },
+   "material": [
+    {
+     "gl": "Un día de sol no patio",
+     "es": "Un día de sol en el patio"
+    },
+    {
+     "gl": "Xices de cores",
+     "es": "Tizas de colores"
+    },
+    {
+     "gl": "Un sombreiro",
+     "es": "Un sombrero"
+    }
+   ],
+   "seguridade": {
+    "gl": "Gorra ou sombreiro e crema; non mirar o sol de fronte.",
+    "es": "Gorra o sombrero y crema; no mirar el sol de frente."
+   },
+   "aula": [
+    {
+     "gl": "Papeis: unha criatura quieta, outra debuxa a súa sombra co xiz.",
+     "es": "Papeles: una criatura quieta, otra dibuja su sombra con la tiza."
+    },
+    {
+     "gl": "Volvede ao mesmo sitio unha hora despois: a sombra moveuse!",
+     "es": "Volved al mismo sitio una hora después: ¡la sombra se ha movido!"
+    },
+    {
+     "gl": "Co sombreiro posto, a sombra cambia de forma.",
+     "es": "Con el sombrero puesto, la sombra cambia de forma."
+    }
+   ],
+   "casa": [
+    {
+     "gl": "Na rúa, buscade a vosa sombra pola mañá e á tarde.",
+     "es": "En la calle, buscad vuestra sombra por la mañana y por la tarde."
+    },
+    {
+     "gl": "É longa ou curta?",
+     "es": "¿Es larga o corta?"
+    },
+    {
+     "gl": "Facede que as sombras se dean a man.",
+     "es": "Haced que las sombras se den la mano."
+    }
+   ],
+   "ordes": [
+    {
+     "en": "Find your shadow!",
+     "gl": "Busca a túa sombra!",
+     "es": "¡Busca tu sombra!"
+    },
+    {
+     "en": "Hat on! Look at the shadow!",
+     "gl": "Sombreiro posto! Mira a sombra!",
+     "es": "¡Sombrero puesto! ¡Mira la sombra!"
+    }
+   ],
+   "observar": {
+    "gl": "Se a criatura explica que a sombra cambiou porque o sol se moveu.",
+    "es": "Si la criatura explica que la sombra cambió porque el sol se movió."
+   }
+  },
+  {
+   "id": "STEAM-4_5-06",
+   "curso": "curso_4_5",
+   "mes": 6,
+   "unidade": "T3.U4.2",
+   "fenomeno": "logica",
+   "titulo": {
+    "gl": "Que roupa pide o tempo?",
+    "es": "¿Qué ropa pide el tiempo?"
+   },
+   "material": [
+    {
+     "gl": "Tarxetas do tempo: sol, choiva, vento, tormenta",
+     "es": "Tarjetas del tiempo: sol, lluvia, viento, tormenta"
+    },
+    {
+     "gl": "Roupa de verdade: abrigo, botas, sombreiro, chubasqueiro",
+     "es": "Ropa de verdad: abrigo, botas, sombrero, chubasquero"
+    },
+    {
+     "gl": "Un boneco grande",
+     "es": "Un muñeco grande"
+    }
+   ],
+   "seguridade": {
+    "gl": "Roupa limpa e do tamaño do boneco ou das criaturas.",
+    "es": "Ropa limpia y del tamaño del muñeco o de las criaturas."
+   },
+   "aula": [
+    {
+     "gl": "Papeis: a meteoróloga saca unha tarxeta; o equipo viste o boneco.",
+     "es": "Papeles: la meteoróloga saca una tarjeta; el equipo viste al muñeco."
+    },
+    {
+     "gl": "Revisade: con choiva, sombreiro de sol? Que falta?",
+     "es": "Revisad: con lluvia, ¿sombrero de sol? ¿Qué falta?"
+    },
+    {
+     "gl": "Dúas tarxetas á vez: sol e vento. Que roupa serve para as dúas?",
+     "es": "Dos tarjetas a la vez: sol y viento. ¿Qué ropa sirve para las dos?"
+    }
+   ],
+   "casa": [
+    {
+     "gl": "Cada mañá, mirade xuntos o ceo pola fiestra.",
+     "es": "Cada mañana, mirad juntos el cielo por la ventana."
+    },
+    {
+     "gl": "A criatura escolle a roupa segundo o tempo.",
+     "es": "La criatura elige la ropa según el tiempo."
+    },
+    {
+     "gl": "Á volta, comprobade se acertou.",
+     "es": "A la vuelta, comprobad si acertó."
+    }
+   ],
+   "ordes": [
+    {
+     "en": "It's raining! Boots on!",
+     "gl": "Está chovendo! Botas postas!",
+     "es": "¡Está lloviendo! ¡Botas puestas!"
+    },
+    {
+     "en": "Sunny! Hat on!",
+     "gl": "Sol! Sombreiro posto!",
+     "es": "¡Sol! ¡Sombrero puesto!"
+    }
+   ],
+   "observar": {
+    "gl": "Se a criatura xustifica a escolla co tempo que fai.",
+    "es": "Si la criatura justifica la elección con el tiempo que hace."
+   }
+  },
+  {
+   "id": "STEAM-5_6-09",
+   "curso": "curso_5_6",
+   "mes": 9,
+   "unidade": "T3.U5.1",
+   "fenomeno": "materia",
+   "titulo": {
+    "gl": "Cores que nacen",
+    "es": "Colores que nacen"
+   },
+   "material": [
+    {
+     "gl": "Pintura vermella, amarela e azul",
+     "es": "Pintura roja, amarilla y azul"
+    },
+    {
+     "gl": "Paletas ou pratos de plástico",
+     "es": "Paletas o platos de plástico"
+    },
+    {
+     "gl": "Pinceis grosos e papel",
+     "es": "Pinceles gruesos y papel"
+    }
+   ],
+   "seguridade": {
+    "gl": "Pintura lavable e non tóxica; mandís postos.",
+    "es": "Pintura lavable y no tóxica; babis puestos."
+   },
+   "aula": [
+    {
+     "gl": "Predición en equipo: que cor sairá se mesturamos vermello e amarelo?",
+     "es": "Predicción en equipo: ¿qué color saldrá si mezclamos rojo y amarillo?"
+    },
+    {
+     "gl": "Papeis: unha persoa bota a pintura, outra mestura, outra rexistra no papel a cor nova.",
+     "es": "Papeles: una persona echa la pintura, otra mezcla, otra registra en el papel el color nuevo."
+    },
+    {
+     "gl": "Probade as tres parellas e comparade co que predixestes.",
+     "es": "Probad las tres parejas y comparad con lo que predijisteis."
+    }
+   ],
+   "casa": [
+    {
+     "gl": "Con témperas ou rotuladores, mesturade dúas cores.",
+     "es": "Con témperas o rotuladores, mezclad dos colores."
+    },
+    {
+     "gl": "A criatura di antes que cor espera.",
+     "es": "La criatura dice antes qué color espera."
+    },
+    {
+     "gl": "Facede un arco da vella coas cores novas.",
+     "es": "Haced un arcoíris con los colores nuevos."
+    }
+   ],
+   "ordes": [
+    {
+     "en": "Mix red and yellow!",
+     "gl": "Mestura vermello e amarelo!",
+     "es": "¡Mezcla rojo y amarillo!"
+    },
+    {
+     "en": "Orange! A new colour!",
+     "gl": "Laranxa! Unha cor nova!",
+     "es": "¡Naranja! ¡Un color nuevo!"
+    }
+   ],
+   "observar": {
+    "gl": "Se o equipo corrixe a súa predición e explica por que.",
+    "es": "Si el equipo corrige su predicción y explica por qué."
+   }
+  },
+  {
+   "id": "STEAM-5_6-10",
+   "curso": "curso_5_6",
+   "mes": 10,
+   "unidade": "T3.U5.1",
+   "fenomeno": "optica",
+   "titulo": {
+    "gl": "O mundo de cores",
+    "es": "El mundo de colores"
+   },
+   "material": [
+    {
+     "gl": "Papel celofán vermello, azul e amarelo",
+     "es": "Papel celofán rojo, azul y amarillo"
+    },
+    {
+     "gl": "Marcos de cartón para suxeitalo",
+     "es": "Marcos de cartón para sujetarlo"
+    },
+    {
+     "gl": "Unha lanterna",
+     "es": "Una linterna"
+    }
+   ],
+   "seguridade": {
+    "gl": "Lanterna sen apuntar aos ollos; celofán só para mirar, non para a boca.",
+    "es": "Linterna sin apuntar a los ojos; celofán solo para mirar, no para la boca."
+   },
+   "aula": [
+    {
+     "gl": "Mirade a sala polo celofán vermello: todo é vermello!",
+     "es": "Mirad la sala por el celofán rojo: ¡todo es rojo!"
+    },
+    {
+     "gl": "Papeis: unha persoa ilumina co celofán, outra di de que cor é a sombra.",
+     "es": "Papeles: una persona ilumina con el celofán, otra dice de qué color es la sombra."
+    },
+    {
+     "gl": "Xuntade dous celofáns: que cor se ve agora?",
+     "es": "Juntad dos celofanes: ¿qué color se ve ahora?"
+    }
+   ],
+   "casa": [
+    {
+     "gl": "Cun envoltorio de cor transparente, mirade pola fiestra.",
+     "es": "Con un envoltorio de color transparente, mirad por la ventana."
+    },
+    {
+     "gl": "Coa lanterna, facede luz de cor na parede.",
+     "es": "Con la linterna, haced luz de color en la pared."
+    },
+    {
+     "gl": "Probade a xuntar dúas cores.",
+     "es": "Probad a juntar dos colores."
+    }
+   ],
+   "ordes": [
+    {
+     "en": "Look through the red paper!",
+     "gl": "Mira polo papel vermello!",
+     "es": "¡Mira por el papel rojo!"
+    },
+    {
+     "en": "Everything is red!",
+     "gl": "Todo é vermello!",
+     "es": "¡Todo es rojo!"
+    }
+   ],
+   "observar": {
+    "gl": "Se a criatura predí a cor da mestura de dous celofáns.",
+    "es": "Si la criatura predice el color de la mezcla de dos celofanes."
+   }
+  },
+  {
+   "id": "STEAM-5_6-11",
+   "curso": "curso_5_6",
+   "mes": 11,
+   "unidade": "T3.U5.1",
+   "fenomeno": "logica",
+   "titulo": {
+    "gl": "A bolboreta igual",
+    "es": "La mariposa igual"
+   },
+   "material": [
+    {
+     "gl": "Folios dobrados ao medio",
+     "es": "Folios doblados por la mitad"
+    },
+    {
+     "gl": "Pintura de cores",
+     "es": "Pintura de colores"
+    },
+    {
+     "gl": "Espellos pequenos irrompibles",
+     "es": "Espejos pequeños irrompibles"
+    }
+   ],
+   "seguridade": {
+    "gl": "Pintura lavable; espellos de plástico.",
+    "es": "Pintura lavable; espejos de plástico."
+   },
+   "aula": [
+    {
+     "gl": "Pinta manchas só nun lado do papel e dóbrao.",
+     "es": "Pinta manchas solo en un lado del papel y dóblalo."
+    },
+    {
+     "gl": "Abre: os dous lados son iguais! É simetría.",
+     "es": "Abre: ¡los dos lados son iguales! Es simetría."
+    },
+    {
+     "gl": "Papeis: unha persoa pon o espello no medio dun debuxo, outra di se se ve enteiro.",
+     "es": "Papeles: una persona pone el espejo en medio de un dibujo, otra dice si se ve entero."
+    }
+   ],
+   "casa": [
+    {
+     "gl": "Dobrade un papel, pintade un lado e abrídeo.",
+     "es": "Doblad un papel, pintad un lado y abridlo."
+    },
+    {
+     "gl": "Buscade cousas simétricas na casa: unha cara, unha cadeira.",
+     "es": "Buscad cosas simétricas en casa: una cara, una silla."
+    },
+    {
+     "gl": "Cun espello, completade a metade dun debuxo.",
+     "es": "Con un espejo, completad la mitad de un dibujo."
+    }
+   ],
+   "ordes": [
+    {
+     "en": "Fold the paper!",
+     "gl": "Dobra o papel!",
+     "es": "¡Dobla el papel!"
+    },
+    {
+     "en": "Open it! The same!",
+     "gl": "Ábreo! Igual!",
+     "es": "¡Ábrelo! ¡Igual!"
+    }
+   ],
+   "observar": {
+    "gl": "Se a criatura busca simetrías por si mesma na sala.",
+    "es": "Si la criatura busca simetrías por sí misma en la sala."
+   }
+  },
+  {
+   "id": "STEAM-5_6-12",
+   "curso": "curso_5_6",
+   "mes": 12,
+   "unidade": "T3.U5.1",
+   "fenomeno": "cinematica",
+   "titulo": {
+    "gl": "O círculo que xira",
+    "es": "El círculo que gira"
+   },
+   "material": [
+    {
+     "gl": "Círculos de cartón cun lapis no medio (buxainas feitas pola adulta)",
+     "es": "Círculos de cartón con un lápiz en el medio (peonzas hechas por la adulta)"
+    },
+    {
+     "gl": "Rotuladores de cores",
+     "es": "Rotuladores de colores"
+    }
+   ],
+   "seguridade": {
+    "gl": "O lapis, sen punta afiada; xírase na mesa, non na man doutra criatura.",
+    "es": "El lápiz, sin punta afilada; se gira en la mesa, no en la mano de otra criatura."
+   },
+   "aula": [
+    {
+     "gl": "Pintade o círculo metade azul e metade amarelo.",
+     "es": "Pintad el círculo mitad azul y mitad amarillo."
+    },
+    {
+     "gl": "Xiradeo rápido: as cores mestúranse e parece verde!",
+     "es": "Giradlo rápido: los colores se mezclan y ¡parece verde!"
+    },
+    {
+     "gl": "Papeis: unha persoa xira, outra predí que cor se verá, outra conta canto dura.",
+     "es": "Papeles: una persona gira, otra predice qué color se verá, otra cuenta cuánto dura."
+    }
+   ],
+   "casa": [
+    {
+     "gl": "Cun CD vello ou un cartón e un lapis, facede unha buxaina.",
+     "es": "Con un CD viejo o un cartón y un lápiz, haced una peonza."
+    },
+    {
+     "gl": "Pintade cores e facédea xirar.",
+     "es": "Pintad colores y hacedla girar."
+    },
+    {
+     "gl": "Que cor aparece?",
+     "es": "¿Qué color aparece?"
+    }
+   ],
+   "ordes": [
+    {
+     "en": "Spin the circle!",
+     "gl": "Fai xirar o círculo!",
+     "es": "¡Haz girar el círculo!"
+    },
+    {
+     "en": "The colours mix!",
+     "gl": "As cores mestúranse!",
+     "es": "¡Los colores se mezclan!"
+    }
+   ],
+   "observar": {
+    "gl": "Se o equipo cambia as cores para conseguir a mestura que quere.",
+    "es": "Si el equipo cambia los colores para conseguir la mezcla que quiere."
+   }
+  },
+  {
+   "id": "STEAM-5_6-01",
+   "curso": "curso_5_6",
+   "mes": 1,
+   "unidade": "T3.U5.1",
+   "fenomeno": "acustica",
+   "titulo": {
+    "gl": "Cantos sons ten o papel?",
+    "es": "¿Cuántos sonidos tiene el papel?"
+   },
+   "material": [
+    {
+     "gl": "Papel de varios tipos: periódico, cartolina, papel de seda",
+     "es": "Papel de varios tipos: periódico, cartulina, papel de seda"
+    },
+    {
+     "gl": "Unhas tesoiras de punta redonda",
+     "es": "Unas tijeras de punta redonda"
+    },
+    {
+     "gl": "Un pano para tapar os ollos (voluntario)",
+     "es": "Un pañuelo para tapar los ojos (voluntario)"
+    }
+   ],
+   "seguridade": {
+    "gl": "Tesoiras de punta redonda e só para cortar papel; tapar os ollos só se a criatura quere.",
+    "es": "Tijeras de punta redonda y solo para cortar papel; tapar los ojos solo si la criatura quiere."
+   },
+   "aula": [
+    {
+     "gl": "Probade xuntos: engurrar, rachar, cortar, abanar. Cada un soa distinto.",
+     "es": "Probad juntos: arrugar, rasgar, cortar, abanicar. Cada uno suena distinto."
+    },
+    {
+     "gl": "Papeis: unha persoa fai un son detrás dunha caixa, as demais adiviñan.",
+     "es": "Papeles: una persona hace un sonido detrás de una caja, las demás adivinan."
+    },
+    {
+     "gl": "Ordenade os sons do máis suave ao máis forte.",
+     "es": "Ordenad los sonidos del más suave al más fuerte."
+    }
+   ],
+   "casa": [
+    {
+     "gl": "Con papel de cociña, de regalo e periódico, facede sons.",
+     "es": "Con papel de cocina, de regalo y periódico, haced sonidos."
+    },
+    {
+     "gl": "Pecha os ollos: que papel é?",
+     "es": "Cierra los ojos: ¿qué papel es?"
+    },
+    {
+     "gl": "Inventade unha canción de papel.",
+     "es": "Inventad una canción de papel."
+    }
+   ],
+   "ordes": [
+    {
+     "en": "Crumple the paper!",
+     "gl": "Engurra o papel!",
+     "es": "¡Arruga el papel!"
+    },
+    {
+     "en": "What sound is it?",
+     "gl": "Que son é?",
+     "es": "¿Qué sonido es?"
+    }
+   ],
+   "observar": {
+    "gl": "Se a criatura describe a diferenza entre dous sons con palabras propias.",
+    "es": "Si la criatura describe la diferencia entre dos sonidos con palabras propias."
+   }
+  },
+  {
+   "id": "STEAM-5_6-02",
+   "curso": "curso_5_6",
+   "mes": 2,
+   "unidade": "T3.U5.2",
+   "fenomeno": "cinematica",
+   "titulo": {
+    "gl": "Avións de papel",
+    "es": "Aviones de papel"
+   },
+   "material": [
+    {
+     "gl": "Folios para dobrar",
+     "es": "Folios para doblar"
+    },
+    {
+     "gl": "Cinta de pintor no chan para marcar a saída",
+     "es": "Cinta de pintor en el suelo para marcar la salida"
+    }
+   ],
+   "seguridade": {
+    "gl": "Lanzar cara a unha zona baleira, nunca cara a outra persoa.",
+    "es": "Lanzar hacia una zona vacía, nunca hacia otra persona."
+   },
+   "aula": [
+    {
+     "gl": "Cada equipo dobra un avión: un de ás anchas, outro de ás estreitas.",
+     "es": "Cada equipo dobla un avión: uno de alas anchas, otro de alas estrechas."
+    },
+    {
+     "gl": "Predición: cal chegará máis lonxe?",
+     "es": "Predicción: ¿cuál llegará más lejos?"
+    },
+    {
+     "gl": "Papeis: pilota lanza, medidora conta os pasos, rexistradora anota.",
+     "es": "Papeles: piloto lanza, medidora cuenta los pasos, registradora anota."
+    }
+   ],
+   "casa": [
+    {
+     "gl": "Dobrade dous avións distintos.",
+     "es": "Doblad dos aviones distintos."
+    },
+    {
+     "gl": "Lanzádeos no corredor e contade os pasos.",
+     "es": "Lanzadlos en el pasillo y contad los pasos."
+    },
+    {
+     "gl": "Cambiade unha dobra e volvede probar.",
+     "es": "Cambiad un pliegue y volved a probar."
+    }
+   ],
+   "ordes": [
+    {
+     "en": "Throw the plane gently!",
+     "gl": "Lanza o avión con suavidade!",
+     "es": "¡Lanza el avión con suavidad!"
+    },
+    {
+     "en": "How far? Count the steps!",
+     "gl": "Ata onde? Conta os pasos!",
+     "es": "¿Hasta dónde? ¡Cuenta los pasos!"
+    }
+   ],
+   "observar": {
+    "gl": "Se o equipo cambia o deseño despois de medir.",
+    "es": "Si el equipo cambia el diseño después de medir."
+   }
+  },
+  {
+   "id": "STEAM-5_6-03",
+   "curso": "curso_5_6",
+   "mes": 3,
+   "unidade": "T3.U5.2",
+   "fenomeno": "logica",
+   "titulo": {
+    "gl": "O mapa do tesouro",
+    "es": "El mapa del tesoro"
+   },
+   "material": [
+    {
+     "gl": "Un mapa da sala debuxado en cadrícula",
+     "es": "Un mapa de la sala dibujado en cuadrícula"
+    },
+    {
+     "gl": "Un tesouro (unha caixa con algo sorpresa)",
+     "es": "Un tesoro (una caja con algo sorpresa)"
+    },
+    {
+     "gl": "Billetes de viaxe de papel",
+     "es": "Billetes de viaje de papel"
+    }
+   ],
+   "seguridade": {
+    "gl": "Camiño sen obstáculos; ninguén corre.",
+    "es": "Camino sin obstáculos; nadie corre."
+   },
+   "aula": [
+    {
+     "gl": "Agocha ti o tesouro e marca o sitio no mapa cunha X.",
+     "es": "Esconde tú el tesoro y marca el sitio en el mapa con una X."
+    },
+    {
+     "gl": "Papeis: navegante le o mapa, viaxeira camiña, guía dá as ordes en inglés.",
+     "es": "Papeles: navegante lee el mapa, viajera camina, guía da las órdenes en inglés."
+    },
+    {
+     "gl": "Ao atopalo, debuxade o camiño seguido.",
+     "es": "Al encontrarlo, dibujad el camino seguido."
+    }
+   ],
+   "casa": [
+    {
+     "gl": "Debuxade un mapa sinxelo da casa.",
+     "es": "Dibujad un mapa sencillo de casa."
+    },
+    {
+     "gl": "Agochade un obxecto e marcádeo no mapa.",
+     "es": "Esconded un objeto y marcadlo en el mapa."
+    },
+    {
+     "gl": "A criatura atópao seguindo o mapa.",
+     "es": "La criatura lo encuentra siguiendo el mapa."
+    }
+   ],
+   "ordes": [
+    {
+     "en": "Two steps forward!",
+     "gl": "Dous pasos adiante!",
+     "es": "¡Dos pasos adelante!"
+    },
+    {
+     "en": "Turn left!",
+     "gl": "Xira á esquerda!",
+     "es": "¡Gira a la izquierda!"
+    }
+   ],
+   "observar": {
+    "gl": "Se a criatura xira o mapa para orientarse como na sala.",
+    "es": "Si la criatura gira el mapa para orientarse como en la sala."
+   }
+  },
+  {
+   "id": "STEAM-5_6-04",
+   "curso": "curso_5_6",
+   "mes": 4,
+   "unidade": "T3.U5.2",
+   "fenomeno": "materia",
+   "titulo": {
+    "gl": "A maleta que pesa",
+    "es": "La maleta que pesa"
+   },
+   "material": [
+    {
+     "gl": "Dúas maletas ou mochilas pequenas",
+     "es": "Dos maletas o mochilas pequeñas"
+    },
+    {
+     "gl": "Roupa, libros e xoguetes",
+     "es": "Ropa, libros y juguetes"
+    },
+    {
+     "gl": "Unha balanza de pratos de xoguete",
+     "es": "Una balanza de platos de juguete"
+    }
+   ],
+   "seguridade": {
+    "gl": "Maletas lixeiras; levántanse con dúas mans e axuda.",
+    "es": "Maletas ligeras; se levantan con dos manos y ayuda."
+   },
+   "aula": [
+    {
+     "gl": "Predición: que pesa máis, unha maleta con roupa ou con libros?",
+     "es": "Predicción: ¿qué pesa más, una maleta con ropa o con libros?"
+    },
+    {
+     "gl": "Papeis: un equipo fai a maleta, outro pésaa na balanza, outro comproba se pecha.",
+     "es": "Papeles: un equipo hace la maleta, otro la pesa en la balanza, otro comprueba si cierra."
+    },
+    {
+     "gl": "Hai que levar o necesario e que pese pouco: que quitades?",
+     "es": "Hay que llevar lo necesario y que pese poco: ¿qué quitáis?"
+    }
+   ],
+   "casa": [
+    {
+     "gl": "Antes dunha excursión, facede a mochila xuntos.",
+     "es": "Antes de una excursión, haced la mochila juntos."
+    },
+    {
+     "gl": "Levantádea con roupa e despois con libros.",
+     "es": "Levantadla con ropa y después con libros."
+    },
+    {
+     "gl": "Decidide que é imprescindible.",
+     "es": "Decidid qué es imprescindible."
+    }
+   ],
+   "ordes": [
+    {
+     "en": "Pack the suitcase!",
+     "gl": "Fai a maleta!",
+     "es": "¡Haz la maleta!"
+    },
+    {
+     "en": "Is it heavy?",
+     "gl": "Pesa moito?",
+     "es": "¿Pesa mucho?"
+    }
+   ],
+   "observar": {
+    "gl": "Se o equipo xustifica que quitar co peso e coa utilidade.",
+    "es": "Si el equipo justifica qué quitar con el peso y la utilidad."
+   }
+  },
+  {
+   "id": "STEAM-5_6-05",
+   "curso": "curso_5_6",
+   "mes": 5,
+   "unidade": "T3.U5.2",
+   "fenomeno": "optica",
+   "titulo": {
+    "gl": "Mensaxes de luz",
+    "es": "Mensajes de luz"
+   },
+   "material": [
+    {
+     "gl": "Lanternas",
+     "es": "Linternas"
+    },
+    {
+     "gl": "Tarxetas cun código: un escintileo, si; dous, non",
+     "es": "Tarjetas con un código: un destello, sí; dos, no"
+    }
+   ],
+   "seguridade": {
+    "gl": "Lanterna sempre cara á parede, nunca aos ollos.",
+    "es": "Linterna siempre hacia la pared, nunca a los ojos."
+   },
+   "aula": [
+    {
+     "gl": "Coma un faro no porto: a luz manda mensaxes aos barcos.",
+     "es": "Como un faro en el puerto: la luz manda mensajes a los barcos."
+    },
+    {
+     "gl": "Papeis: o faro escintila na parede, o barco le o código e responde co corpo.",
+     "es": "Papeles: el faro destella en la pared, el barco lee el código y responde con el cuerpo."
+    },
+    {
+     "gl": "Inventade un código novo para unha palabra da viaxe.",
+     "es": "Inventad un código nuevo para una palabra del viaje."
+    }
+   ],
+   "casa": [
+    {
+     "gl": "Pola noite, cunha lanterna, mandade mensaxes de luz.",
+     "es": "Por la noche, con una linterna, mandad mensajes de luz."
+    },
+    {
+     "gl": "Un escintileo, si; dous, non.",
+     "es": "Un destello, sí; dos, no."
+    },
+    {
+     "gl": "Preguntádevos cousas só con luz.",
+     "es": "Preguntaos cosas solo con luz."
+    }
+   ],
+   "ordes": [
+    {
+     "en": "Flash the light!",
+     "gl": "Fai escintilar a luz!",
+     "es": "¡Haz destellar la luz!"
+    },
+    {
+     "en": "One, two… stop!",
+     "gl": "Un, dous… para!",
+     "es": "Uno, dos… ¡para!"
+    }
+   ],
+   "observar": {
+    "gl": "Se o equipo inventa un código e o usa sen axuda.",
+    "es": "Si el equipo inventa un código y lo usa sin ayuda."
+   }
+  },
+  {
+   "id": "STEAM-5_6-06",
+   "curso": "curso_5_6",
+   "mes": 6,
+   "unidade": "T3.U5.2",
+   "fenomeno": "acustica",
+   "titulo": {
+    "gl": "A frauta do tren",
+    "es": "La flauta del tren"
+   },
+   "material": [
+    {
+     "gl": "Tubos de cartón ou palliñas de varias lonxitudes (cortadas pola adulta)",
+     "es": "Tubos de cartón o pajitas de varias longitudes (cortadas por la adulta)"
+    },
+    {
+     "gl": "Cinta adhesiva",
+     "es": "Cinta adhesiva"
+    }
+   ],
+   "seguridade": {
+    "gl": "Cada criatura co seu tubo, sen compartir o que vai á boca.",
+    "es": "Cada criatura con su tubo, sin compartir lo que va a la boca."
+   },
+   "aula": [
+    {
+     "gl": "Sopra por riba dun tubo longo e dun curto: cal soa máis grave?",
+     "es": "Sopla por encima de un tubo largo y de uno corto: ¿cuál suena más grave?"
+    },
+    {
+     "gl": "Papeis: o maquinista marca o ritmo do tren (chu-chu), os músicos tocan os tubos en orde.",
+     "es": "Papeles: el maquinista marca el ritmo del tren (chu-chu), los músicos tocan los tubos en orden."
+    },
+    {
+     "gl": "O tren chega ao destino: rematade cun asubío longo.",
+     "es": "El tren llega al destino: terminad con un silbido largo."
+    }
+   ],
+   "casa": [
+    {
+     "gl": "Con palliñas de varias lonxitudes, facede unha frauta de Pan.",
+     "es": "Con pajitas de varias longitudes, haced una flauta de Pan."
+    },
+    {
+     "gl": "Soprade e ordenádeas do grave ao agudo.",
+     "es": "Soplad y ordenadlas de la grave a la aguda."
+    },
+    {
+     "gl": "Tocade o son dun tren que acelera.",
+     "es": "Tocad el sonido de un tren que acelera."
+    }
+   ],
+   "ordes": [
+    {
+     "en": "Choo-choo! Faster!",
+     "gl": "Chu-chu! Máis rápido!",
+     "es": "¡Chu-chu! ¡Más rápido!"
+    },
+    {
+     "en": "Long pipe, low sound!",
+     "gl": "Tubo longo, son grave!",
+     "es": "¡Tubo largo, sonido grave!"
+    }
+   ],
+   "observar": {
+    "gl": "Se a criatura relaciona a lonxitude do tubo co son.",
+    "es": "Si la criatura relaciona la longitud del tubo con el sonido."
+   }
+  }
+ ]
+}
