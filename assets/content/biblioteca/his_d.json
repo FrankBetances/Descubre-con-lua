@@ -3351,8 +3351,8 @@
       },
       "accion": "ACT-01",
       "resolucion": {
-        "gl": "Celebración rítmica conxunta: Lúa e unha ra celebran as follas verdes dando palmadas e chapuzando a ritmo.",
-        "es": "Celebración rítmica conjunta: Lúa y una rana celebran las hojas verdes dando palmadas y chapoteando a ritmo."
+        "gl": "Transición á calma: Lúa e unha ra miran xuntas, en silencio, as follas verdes do debuxo e respiran amodo.",
+        "es": "Transición a la calma: Lúa y una rana miran juntas, en silencio, las hojas verdes del dibujo y respiran despacio."
       }
     },
     "palabrasDiana": [
@@ -3570,19 +3570,19 @@
       {
         "papel": "desenlace",
         "dibujo": {
-          "gl": "O debuxo rematado: a árbore chea de follas verdes brillantes. Lúa e unha ra verde, que saíu da charca, dan palmadas xuntas. Pingas de auga voan arredor.",
-          "es": "El dibujo terminado: el árbol lleno de hojas verdes brillantes. Lúa y una rana verde, que ha salido de la charca, dan palmadas juntas. Gotas de agua vuelan alrededor."
+          "gl": "O debuxo rematado: a árbore chea de follas verdes brillantes. Lúa e unha ra verde, que saíu da charca, sentadas diante do papel, miran o debuxo en calma.",
+          "es": "El dibujo terminado: el árbol lleno de hojas verdes brillantes. Lúa y una rana verde, que ha salido de la charca, sentadas delante del papel, miran el dibujo en calma."
         },
         "narracion": {
-          "gl": "Lúa pinta follas e máis follas, todas verdes e brillantes. A árbore xa parece de verdade! Entón, da charca do horto, salta unha ra verde, chap!, e mira o debuxo. É da mesma cor! Lúa e a ra dan palmadas e saltos: chap, chap, chap! Lúa canta:",
-          "es": "Lúa pinta hojas y más hojas, todas verdes y brillantes. ¡El árbol ya parece de verdad! Entonces, de la charca del huerto, salta una rana verde, ¡chap!, y mira el dibujo. ¡Es del mismo color! Lúa y la rana dan palmadas y saltos: ¡chap, chap, chap! Lúa canta:"
+          "gl": "Lúa pinta follas e máis follas, todas verdes e brillantes. A árbore xa parece de verdade! Entón, da charca do horto, salta unha ra verde e senta ao carón de Lúa. É da mesma cor! As dúas miran o debuxo en silencio, collen aire e bótano amodo. Lúa di baixiño:",
+          "es": "Lúa pinta hojas y más hojas, todas verdes y brillantes. ¡El árbol ya parece de verdad! Entonces, de la charca del huerto, salta una rana verde y se sienta al lado de Lúa. ¡Es del mismo color! Las dos miran el dibujo en silencio, cogen aire y lo echan despacio. Lúa dice bajito:"
         },
         "lua": {
-          "en": "Green leaves! Bright green! Splash, splash, hooray!",
-          "gl": "Follas verdes! Verde vivo! Chap, chap, hurra!",
-          "es": "¡Hojas verdes! ¡Verde vivo! ¡Chap, chap, hurra!"
+          "en": "Green leaves. Bright green. So calm…",
+          "gl": "Follas verdes. Verde vivo. Que calma…",
+          "es": "Hojas verdes. Verde vivo. Qué calma…"
         },
-        "onomatopeia": "Splash, splash!",
+        "onomatopeia": "Mmm…",
         "crowd": {
           "nivel1": {
             "en": "Touch all the green leaves on the paper! And the green frog!",
@@ -3594,12 +3594,12 @@
             }
           },
           "nivel2": {
-            "en": "Let's pat our legs and dance like the frog: Splash, splash, splash!",
-            "gl": "Imos dar palmadas nas pernas e bailar coma a ra: Chap, chap, chap!",
-            "es": "¡Vamos a dar palmadas en las piernas y bailar como la rana: chap, chap, chap!",
+            "en": "Let's breathe like the frog: in… and out… slowly.",
+            "gl": "Imos respirar coma a ra: colle aire… e bótao… amodo.",
+            "es": "Vamos a respirar como la rana: coge aire… y échalo… despacio.",
             "axuda": {
-              "gl": "Marca ti o ritmo nas coxas e para de golpe ao final.",
-              "es": "Marca tú el ritmo en los muslos y para de golpe al final."
+              "gl": "Colle aire ti, moi amodo, coas mans na barriga, e agarda.",
+              "es": "Coge aire tú, muy despacio, con las manos en la barriga, y espera."
             }
           },
           "nivel3": {
@@ -3618,9 +3618,9 @@
         },
         "recast": {
           "silencio": {
-            "en": "Look, green leaves and a green frog. Splash, splash!",
-            "gl": "Mira, follas verdes e unha ra verde. Chap, chap!",
-            "es": "Mira, hojas verdes y una rana verde. ¡Chap, chap!"
+            "en": "Look, green leaves and a green frog. So calm.",
+            "gl": "Mira, follas verdes e unha ra verde. Que calma.",
+            "es": "Mira, hojas verdes y una rana verde. Qué calma."
           },
           "linguaCasa": {
             "en": "Yes, a frog! A green frog, green like the leaves.",

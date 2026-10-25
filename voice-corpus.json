@@ -1,14 +1,14 @@
 {
- "generatedAt": "2026-10-25T18:05:46Z",
- "entries": 36072,
+ "generatedAt": "2026-10-25T18:39:25Z",
+ "entries": 36075,
  "byStyle": {
   "slow": 5954,
-  "tutor": 30118
+  "tutor": 30121
  },
  "byLang": {
-  "en": 16818,
-  "es": 9627,
-  "gl": 9627
+  "en": 16819,
+  "es": 9628,
+  "gl": 9628
  },
  "corpus": [
   {
@@ -57783,15 +57783,6 @@
    "pack": false
   },
   {
-   "id": "en_tutor_0b3dbd38_51",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Green leaves! Bright green! Splash, splash, hooray!",
-   "speech": "Green leaves! Bright green! Splash, splash, hooray!",
-   "source": "biblioteca/HIS-087",
-   "pack": false
-  },
-  {
    "id": "en_tutor_0b3ddad9_18",
    "lang": "en",
    "style": "tutor",
@@ -65970,6 +65961,15 @@
    "text": "It's hard to please everyone.",
    "speech": "It's hard to please everyone.",
    "source": "corpus/633/frase",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_2150b861_35",
+   "lang": "en",
+   "style": "tutor",
+   "text": "What toy do you sleep with at home?",
+   "speech": "What toy do you sleep with at home?",
+   "source": "biblioteca/HIS-044",
    "pack": false
   },
   {
@@ -74208,15 +74208,6 @@
    "pack": false
   },
   {
-   "id": "en_tutor_36e671d7_33",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Run, run... and hug! Hug the dog!",
-   "speech": "Run, run... and hug! Hug the dog!",
-   "source": "biblioteca/HIS-041",
-   "pack": false
-  },
-  {
    "id": "en_tutor_37051f2b_32",
    "lang": "en",
    "style": "tutor",
@@ -77673,15 +77664,6 @@
    "pack": false
   },
   {
-   "id": "en_tutor_4078c6e9_22",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Hug your dog like Lúa!",
-   "speech": "Hug your dog like Lúa!",
-   "source": "biblioteca/HIS-044",
-   "pack": false
-  },
-  {
    "id": "en_tutor_4086c7b5_48",
    "lang": "en",
    "style": "tutor",
@@ -79191,15 +79173,6 @@
    "text": "How do you travel to visit your family? By car, by bus, by train?",
    "speech": "How do you travel to visit your family? By car, by bus, by train?",
    "source": "biblioteca/HIS-100",
-   "pack": false
-  },
-  {
-   "id": "en_tutor_43ccfef0_67",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Let's pat our legs and dance like the frog: Splash, splash, splash!",
-   "speech": "Let's pat our legs and dance like the frog: Splash, splash, splash!",
-   "source": "biblioteca/HIS-087",
    "pack": false
   },
   {
@@ -83829,15 +83802,6 @@
    "pack": false
   },
   {
-   "id": "en_tutor_510b76cc_23",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Who do you hug at home?",
-   "speech": "Who do you hug at home?",
-   "source": "biblioteca/HIS-041",
-   "pack": false
-  },
-  {
    "id": "en_tutor_510da05c_29",
    "lang": "en",
    "style": "tutor",
@@ -87434,7 +87398,7 @@
    "style": "tutor",
    "text": "Yes, a hug! Lúa hugs the dog!",
    "speech": "Yes, a hug! Lúa hugs the dog!",
-   "source": "biblioteca/HIS-044",
+   "source": "biblioteca/HIS-046",
    "pack": false
   },
   {
@@ -95052,15 +95016,6 @@
    "pack": false
   },
   {
-   "id": "en_tutor_6dd03241_52",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Look, green leaves and a green frog. Splash, splash!",
-   "speech": "Look, green leaves and a green frog. Splash, splash!",
-   "source": "biblioteca/HIS-087",
-   "pack": false
-  },
-  {
    "id": "en_tutor_6ddeed54_31",
    "lang": "en",
    "style": "tutor",
@@ -95886,15 +95841,6 @@
    "text": "The old cemetery is next to the church.",
    "speech": "The old cemetery is next to the church.",
    "source": "corpus/3150/frase",
-   "pack": false
-  },
-  {
-   "id": "en_tutor_6fece6d0_21",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Hello, dog! Nice dog!",
-   "speech": "Hello, dog! Nice dog!",
-   "source": "biblioteca/HIS-041",
    "pack": false
   },
   {
@@ -97806,15 +97752,6 @@
    "pack": false
   },
   {
-   "id": "en_tutor_7428d4a3_33",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Look, Lúa hugs the dog. Nice dog!",
-   "speech": "Look, Lúa hugs the dog. Nice dog!",
-   "source": "biblioteca/HIS-041",
-   "pack": false
-  },
-  {
    "id": "en_tutor_742ba351_9",
    "lang": "en",
    "style": "tutor",
@@ -99198,6 +99135,15 @@
    "text": "Faster, faster… oh, no!",
    "speech": "Faster, faster… oh, no!",
    "source": "registro/frase.lua.5_6.09.2",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_7781e1e1_49",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Let's breathe like the frog: in… and out… slowly.",
+   "speech": "Let's breathe like the frog: in… and out… slowly.",
+   "source": "biblioteca/HIS-087",
    "pack": false
   },
   {
@@ -105690,6 +105636,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_87ee0b80_29",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Who do you run and jump with?",
+   "speech": "Who do you run and jump with?",
+   "source": "biblioteca/HIS-041",
+   "pack": false
+  },
+  {
    "id": "en_tutor_87eff7f2_33",
    "lang": "en",
    "style": "tutor",
@@ -110091,6 +110046,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_9334d9a7_45",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Look, green leaves and a green frog. So calm.",
+   "speech": "Look, green leaves and a green frog. So calm.",
+   "source": "biblioteca/HIS-087",
+   "pack": false
+  },
+  {
    "id": "en_tutor_93409791_50",
    "lang": "en",
    "style": "tutor",
@@ -113742,6 +113706,15 @@
    "text": "Yes, the cow! The cow walks slowly.",
    "speech": "Yes, the cow! The cow walks slowly.",
    "source": "microcuento.curso_3_4.08/2/recast.linguaCasa",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_9cd34976_34",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Run, dog, run! Jump, jump! Hooray!",
+   "speech": "Run, dog, run! Jump, jump! Hooray!",
+   "source": "biblioteca/HIS-041",
    "pack": false
   },
   {
@@ -117801,15 +117774,6 @@
    "text": "Move like a robot",
    "speech": "Move like a robot",
    "source": "tpr.4_5.febreiro/s2/4_5.febreiro.s2.move-like-a-robot",
-   "pack": false
-  },
-  {
-   "id": "en_tutor_a776911a_17",
-   "lang": "en",
-   "style": "tutor",
-   "text": "My dog! Nice dog!",
-   "speech": "My dog! Nice dog!",
-   "source": "biblioteca/HIS-044",
    "pack": false
   },
   {
@@ -124833,6 +124797,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_babf2216_36",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Green leaves. Bright green. So calm…",
+   "speech": "Green leaves. Bright green. So calm…",
+   "source": "biblioteca/HIS-087",
+   "pack": false
+  },
+  {
    "id": "en_tutor_bac12200_37",
    "lang": "en",
    "style": "tutor",
@@ -129996,6 +129969,15 @@
    "text": "Gather acorns",
    "speech": "Gather acorns",
    "source": "tpr.4_5.novembro/s2/4_5.novembro.s2.gather-acorns",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_c733c13a_39",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Look, Lúa and the dog jump. Jump, jump!",
+   "speech": "Look, Lúa and the dog jump. Jump, jump!",
+   "source": "biblioteca/HIS-041",
    "pack": false
   },
   {
@@ -137595,6 +137577,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_daefad5c_24",
+   "lang": "en",
+   "style": "tutor",
+   "text": "My dog! Sleep, dog. Shh…",
+   "speech": "My dog! Sleep, dog. Shh…",
+   "source": "biblioteca/HIS-044",
+   "pack": false
+  },
+  {
    "id": "en_tutor_daf9124d_25",
    "lang": "en",
    "style": "tutor",
@@ -139167,15 +139158,6 @@
    "text": "Warm as toast",
    "speech": "Warm as toast",
    "source": "tpr.0_2.decembro/s2/0_2.decembro.s2.warm-as-toast",
-   "pack": false
-  },
-  {
-   "id": "en_tutor_df04970c_28",
-   "lang": "en",
-   "style": "tutor",
-   "text": "What toy do you hug at home?",
-   "speech": "What toy do you hug at home?",
-   "source": "biblioteca/HIS-044",
    "pack": false
   },
   {
@@ -145641,15 +145623,6 @@
    "pack": false
   },
   {
-   "id": "en_tutor_f0c30719_23",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Look, Lúa hugs her dog.",
-   "speech": "Look, Lúa hugs her dog.",
-   "source": "biblioteca/HIS-044",
-   "pack": false
-  },
-  {
    "id": "en_tutor_f0c3539d_29",
    "lang": "en",
    "style": "tutor",
@@ -145998,6 +145971,15 @@
    "text": "Peel a carrot",
    "speech": "Peel a carrot",
    "source": "tpr.4_5.marzo/s3/4_5.marzo.s3.peel-a-carrot",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_f19e64b5_35",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Look, Lúa sleeps with her dog. Shh…",
+   "speech": "Look, Lúa sleeps with her dog. Shh…",
+   "source": "biblioteca/HIS-044",
    "pack": false
   },
   {
@@ -146421,6 +146403,24 @@
    "text": "Have you ever seen something shiny on the ground? What was it?",
    "speech": "Have you ever seen something shiny on the ground? What was it?",
    "source": "biblioteca/HIS-080",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_f2839386_34",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Yes, sleep! Lúa and the dog sleep.",
+   "speech": "Yes, sleep! Lúa and the dog sleep.",
+   "source": "biblioteca/HIS-044",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_f29829e7_40",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Run, run... and jump! Jump with the dog!",
+   "speech": "Run, run... and jump! Jump with the dog!",
+   "source": "biblioteca/HIS-041",
    "pack": false
   },
   {
@@ -148014,6 +148014,15 @@
    "text": "Yes, carrot soup! Orange carrot soup. Delicious!",
    "speech": "Yes, carrot soup! Orange carrot soup. Delicious!",
    "source": "biblioteca/HIS-010",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_f72d7666_32",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Sleep like Lúa and her dog! Shh…",
+   "speech": "Sleep like Lúa and her dog! Shh…",
+   "source": "biblioteca/HIS-044",
    "pack": false
   },
   {
@@ -153092,7 +153101,7 @@
    "style": "tutor",
    "text": "¡Sí, un abrazo! ¡Lúa abraza al perro!",
    "speech": "¡Sí, un abrazo! ¡Lúa abraza al perro!",
-   "source": "biblioteca/HIS-044/significado",
+   "source": "biblioteca/HIS-046/significado",
    "pack": false
   },
   {
@@ -155009,15 +155018,6 @@
    "pack": false
   },
   {
-   "id": "es_tutor_0966701e_41",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Mira, Lúa abraza al perro. ¡Perro bonito!",
-   "speech": "Mira, Lúa abraza al perro. ¡Perro bonito!",
-   "source": "biblioteca/HIS-041/significado",
-   "pack": false
-  },
-  {
    "id": "es_tutor_0977b220_59",
    "lang": "es",
    "style": "tutor",
@@ -155267,6 +155267,15 @@
    "text": "¡Sí! ¡El sol! ¡El sol más brillante del cielo!",
    "speech": "¡Sí! ¡El sol! ¡El sol más brillante del cielo!",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_0a533c28_31",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Mi perro! Duerme, perro. Chis…",
+   "speech": "¡Mi perro! Duerme, perro. Chis…",
+   "source": "biblioteca/HIS-044/significado",
    "pack": false
   },
   {
@@ -157565,15 +157574,6 @@
    "pack": true
   },
   {
-   "id": "es_tutor_1111cb25_47",
-   "lang": "es",
-   "style": "tutor",
-   "text": "¡Hojas verdes! ¡Verde vivo! ¡Chap, chap, hurra!",
-   "speech": "¡Hojas verdes! ¡Verde vivo! ¡Chap, chap, hurra!",
-   "source": "biblioteca/HIS-087/significado",
-   "pack": false
-  },
-  {
    "id": "es_tutor_111243e6_21",
    "lang": "es",
    "style": "tutor",
@@ -158175,15 +158175,6 @@
    "speech": "¡Pulgar arriba por el mar limpio!",
    "source": "tpr.5_6.abril/s1/5_6.abril.s1.thumbs-up-for-a-clean-sea/significado",
    "pack": true
-  },
-  {
-   "id": "es_tutor_128d5ae7_28",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Mira, Lúa abraza a su perro.",
-   "speech": "Mira, Lúa abraza a su perro.",
-   "source": "biblioteca/HIS-044/significado",
-   "pack": false
   },
   {
    "id": "es_tutor_1292336b_15",
@@ -165249,15 +165240,6 @@
    "pack": true
   },
   {
-   "id": "es_tutor_26e7fb75_28",
-   "lang": "es",
-   "style": "tutor",
-   "text": "¡Abraza a tu perro como Lúa!",
-   "speech": "¡Abraza a tu perro como Lúa!",
-   "source": "biblioteca/HIS-044/significado",
-   "pack": false
-  },
-  {
    "id": "es_tutor_26ee0da5_4",
    "lang": "es",
    "style": "tutor",
@@ -166129,15 +166111,6 @@
    "speech": "Detenerse",
    "source": "tpr.2_3.outubro/s3/2_3.outubro.s3.halt/significado",
    "pack": true
-  },
-  {
-   "id": "es_tutor_2976bb9b_44",
-   "lang": "es",
-   "style": "tutor",
-   "text": "¡Corre, corre... y abrazo! ¡Abraza al perro!",
-   "speech": "¡Corre, corre... y abrazo! ¡Abraza al perro!",
-   "source": "biblioteca/HIS-041/significado",
-   "pack": false
   },
   {
    "id": "es_tutor_29783f21_48",
@@ -167280,6 +167253,15 @@
    "text": "¿Puedes subir como la ardilla? ¡Sube, sube, y para!",
    "speech": "¿Puedes subir como la ardilla? ¡Sube, sube, y para!",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_2d0ac5fc_30",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¿Con quién corres y saltas tú?",
+   "speech": "¿Con quién corres y saltas tú?",
+   "source": "biblioteca/HIS-041/significado",
    "pack": false
   },
   {
@@ -168633,15 +168615,6 @@
    "pack": false
   },
   {
-   "id": "es_tutor_31ad0bd0_25",
-   "lang": "es",
-   "style": "tutor",
-   "text": "¡Mi perro! ¡Perro bonito!",
-   "speech": "¡Mi perro! ¡Perro bonito!",
-   "source": "biblioteca/HIS-044/significado",
-   "pack": false
-  },
-  {
    "id": "es_tutor_31c87bcc_43",
    "lang": "es",
    "style": "tutor",
@@ -169876,15 +169849,6 @@
    "speech": "Bailar",
    "source": "tpr.3_4.outubro/s4/3_4.outubro.s4.dance/significado",
    "pack": true
-  },
-  {
-   "id": "es_tutor_34f8227b_28",
-   "lang": "es",
-   "style": "tutor",
-   "text": "¿A quién abrazas tú en casa?",
-   "speech": "¿A quién abrazas tú en casa?",
-   "source": "biblioteca/HIS-041/significado",
-   "pack": false
   },
   {
    "id": "es_tutor_34f9da18_34",
@@ -177717,6 +177681,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_4b7f60ae_36",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Mira, Lúa duerme con su perro. Chis…",
+   "speech": "Mira, Lúa duerme con su perro. Chis…",
+   "source": "biblioteca/HIS-044/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_4b82fa2d_46",
    "lang": "es",
    "style": "tutor",
@@ -179076,6 +179049,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_4f796503_44",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Corre, perro, corre! ¡Salta, salta! ¡Hurra!",
+   "speech": "¡Corre, perro, corre! ¡Salta, salta! ¡Hurra!",
+   "source": "biblioteca/HIS-041/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_4f81e597_55",
    "lang": "es",
    "style": "tutor",
@@ -180127,15 +180109,6 @@
    "speech": "¡Aquí estoy!",
    "source": "tpr.0_2.febreiro/s3/0_2.febreiro.s3.here-i-am/significado",
    "pack": true
-  },
-  {
-   "id": "es_tutor_52a090d4_32",
-   "lang": "es",
-   "style": "tutor",
-   "text": "¿Qué juguete abrazas tú en casa?",
-   "speech": "¿Qué juguete abrazas tú en casa?",
-   "source": "biblioteca/HIS-044/significado",
-   "pack": false
   },
   {
    "id": "es_tutor_52a2fdc4_49",
@@ -186587,15 +186560,6 @@
    "pack": false
   },
   {
-   "id": "es_tutor_65f9a474_28",
-   "lang": "es",
-   "style": "tutor",
-   "text": "¡Hola, perro! ¡Perro bonito!",
-   "speech": "¡Hola, perro! ¡Perro bonito!",
-   "source": "biblioteca/HIS-041/significado",
-   "pack": false
-  },
-  {
    "id": "es_tutor_66037a4f_29",
    "lang": "es",
    "style": "tutor",
@@ -188150,6 +188114,15 @@
    "text": "¡Sí, la pelota! ¡Una pelota azul!",
    "speech": "¡Sí, la pelota! ¡Una pelota azul!",
    "source": "biblioteca/HIS-055/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_6a5049de_38",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Sí, a dormir! Lúa y el perro duermen.",
+   "speech": "¡Sí, a dormir! Lúa y el perro duermen.",
+   "source": "biblioteca/HIS-044/significado",
    "pack": false
   },
   {
@@ -193109,6 +193082,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_78a4c286_34",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Duerme como Lúa y su perro! Chis…",
+   "speech": "¡Duerme como Lúa y su perro! Chis…",
+   "source": "biblioteca/HIS-044/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_78a5b535_41",
    "lang": "es",
    "style": "tutor",
@@ -193926,15 +193908,6 @@
    "speech": "Primero cogemos, luego clasificamos, luego repartimos",
    "source": "tpr.5_6.novembro/s4/5_6.novembro.s4.first-we-pick-then-we-sort-then-we-share/significado",
    "pack": true
-  },
-  {
-   "id": "es_tutor_7ae0ab6c_77",
-   "lang": "es",
-   "style": "tutor",
-   "text": "¡Vamos a dar palmadas en las piernas y bailar como la rana: chap, chap, chap!",
-   "speech": "¡Vamos a dar palmadas en las piernas y bailar como la rana: chap, chap, chap!",
-   "source": "biblioteca/HIS-087/significado",
-   "pack": false
   },
   {
    "id": "es_tutor_7ae120c6_5",
@@ -194966,6 +194939,15 @@
    "speech": "Manos calientes",
    "source": "tpr.0_2.outubro/s2/0_2.outubro.s2.warm-hands/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_7db86443_46",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Corre, corre... y salta! ¡Salta con el perro!",
+   "speech": "¡Corre, corre... y salta! ¡Salta con el perro!",
+   "source": "biblioteca/HIS-041/significado",
+   "pack": false
   },
   {
    "id": "es_tutor_7dc4dfda_25",
@@ -196631,6 +196613,15 @@
    "text": "¿Tienes un muñeco en casa?",
    "speech": "¿Tienes un muñeco en casa?",
    "source": "biblioteca/HIS-035/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_82b037ae_43",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Mira, Lúa y el perro saltan. ¡Salta, salta!",
+   "speech": "Mira, Lúa y el perro saltan. ¡Salta, salta!",
+   "source": "biblioteca/HIS-041/significado",
    "pack": false
   },
   {
@@ -213557,6 +213548,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_b407ddfe_36",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Hojas verdes. Verde vivo. Qué calma…",
+   "speech": "Hojas verdes. Verde vivo. Qué calma…",
+   "source": "biblioteca/HIS-087/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_b40b172f_42",
    "lang": "es",
    "style": "tutor",
@@ -216196,6 +216196,15 @@
    "text": "¿Qué haces primero por la mañana? ¿Y después?",
    "speech": "¿Qué haces primero por la mañana? ¿Y después?",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_bbd22477_36",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¿Con qué juguete duermes tú en casa?",
+   "speech": "¿Con qué juguete duermes tú en casa?",
+   "source": "biblioteca/HIS-044/significado",
    "pack": false
   },
   {
@@ -222801,6 +222810,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_cfab35b5_61",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Vamos a respirar como la rana: coge aire… y échalo… despacio.",
+   "speech": "Vamos a respirar como la rana: coge aire… y échalo… despacio.",
+   "source": "biblioteca/HIS-087/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_cfacc74a_57",
    "lang": "es",
    "style": "tutor",
@@ -224085,6 +224103,15 @@
    "text": "¡Sí, el conejito está escondido! ¡Hola, conejito!",
    "speech": "¡Sí, el conejito está escondido! ¡Hola, conejito!",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_d436c616_47",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Mira, hojas verdes y una rana verde. Qué calma.",
+   "speech": "Mira, hojas verdes y una rana verde. Qué calma.",
+   "source": "biblioteca/HIS-087/significado",
    "pack": false
   },
   {
@@ -235739,15 +235766,6 @@
    "pack": false
   },
   {
-   "id": "es_tutor_f86b564f_49",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Mira, hojas verdes y una rana verde. ¡Chap, chap!",
-   "speech": "Mira, hojas verdes y una rana verde. ¡Chap, chap!",
-   "source": "biblioteca/HIS-087/significado",
-   "pack": false
-  },
-  {
    "id": "es_tutor_f86e1838_55",
    "lang": "es",
    "style": "tutor",
@@ -239267,6 +239285,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_01f7e307_28",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Con quen corres e saltas ti?",
+   "speech": "Con quen corres e saltas ti?",
+   "source": "biblioteca/HIS-041/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_01f95082_42",
    "lang": "gl",
    "style": "tutor",
@@ -240327,6 +240354,15 @@
    "speech": "Secreto, secreta",
    "source": "tpr.3_4.maio/s4/3_4.maio.s4.secret/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_052a9df0_33",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Durme coma Lúa e o seu can! Chis…",
+   "speech": "Durme coma Lúa e o seu can! Chis…",
+   "source": "biblioteca/HIS-044/significado",
+   "pack": false
   },
   {
    "id": "gl_tutor_052bf367_28",
@@ -250496,15 +250532,6 @@
    "pack": false
   },
   {
-   "id": "gl_tutor_22687a79_35",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Mira, Lúa abraza o can. Can bonito!",
-   "speech": "Mira, Lúa abraza o can. Can bonito!",
-   "source": "biblioteca/HIS-041/significado",
-   "pack": false
-  },
-  {
    "id": "gl_tutor_226cefb9_31",
    "lang": "gl",
    "style": "tutor",
@@ -251448,6 +251475,15 @@
    "speech": "Vivo, viva",
    "source": "tpr.3_4.abril/s2/3_4.abril.s2.alive/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_250c9d2d_39",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Mira, Lúa e o can saltan. Salta, salta!",
+   "speech": "Mira, Lúa e o can saltan. Salta, salta!",
+   "source": "biblioteca/HIS-041/significado",
+   "pack": false
   },
   {
    "id": "gl_tutor_25145eaa_11",
@@ -256915,6 +256951,15 @@
    "text": "Mira, Lúa está inmóbil. Chisss… os cabalos!",
    "speech": "Mira, Lúa está inmóbil. Chisss… os cabalos!",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_343aab56_34",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Con que xoguete dormes ti na casa?",
+   "speech": "Con que xoguete dormes ti na casa?",
+   "source": "biblioteca/HIS-044/significado",
    "pack": false
   },
   {
@@ -266090,15 +266135,6 @@
    "pack": false
   },
   {
-   "id": "gl_tutor_5047cd80_27",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Mira, Lúa abraza o seu can.",
-   "speech": "Mira, Lúa abraza o seu can.",
-   "source": "biblioteca/HIS-044/significado",
-   "pack": false
-  },
-  {
    "id": "gl_tutor_5055d9d5_46",
    "lang": "gl",
    "style": "tutor",
@@ -269229,6 +269265,15 @@
    "text": "Podes coller a folla? Cóllea… amodo!",
    "speech": "Podes coller a folla? Cóllea… amodo!",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_593e3072_33",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Si, a durmir! Lúa e o can dormen.",
+   "speech": "Si, a durmir! Lúa e o can dormen.",
+   "source": "biblioteca/HIS-044/significado",
    "pack": false
   },
   {
@@ -273494,15 +273539,6 @@
    "pack": false
   },
   {
-   "id": "gl_tutor_650f3e70_22",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "O meu can! Can bonito!",
-   "speech": "O meu can! Can bonito!",
-   "source": "biblioteca/HIS-044/significado",
-   "pack": false
-  },
-  {
    "id": "gl_tutor_6521bf3e_22",
    "lang": "gl",
    "style": "tutor",
@@ -274095,6 +274131,15 @@
    "speech": "Submarino, submarina",
    "source": "tpr.3_4.xuno/s3/3_4.xuno.s3.underwater/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_66bc8b22_39",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Corre, can, corre! Salta, salta! Hurra!",
+   "speech": "Corre, can, corre! Salta, salta! Hurra!",
+   "source": "biblioteca/HIS-041/significado",
+   "pack": false
   },
   {
    "id": "gl_tutor_66c24baa_29",
@@ -275202,15 +275247,6 @@
    "speech": "Enxaugar as mans",
    "source": "tpr.0_2.maio/s3/0_2.maio.s3.wash-up/significado",
    "pack": true
-  },
-  {
-   "id": "gl_tutor_6a73e27c_26",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "A quen abrazas ti na casa?",
-   "speech": "A quen abrazas ti na casa?",
-   "source": "biblioteca/HIS-041/significado",
-   "pack": false
   },
   {
    "id": "gl_tutor_6a74bb3c_6",
@@ -278545,15 +278581,6 @@
    "text": "Visita guiada",
    "speech": "Visita guiada",
    "source": "significados/significado",
-   "pack": false
-  },
-  {
-   "id": "gl_tutor_73b241b4_21",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Ola, can! Can bonito!",
-   "speech": "Ola, can! Can bonito!",
-   "source": "biblioteca/HIS-041/significado",
    "pack": false
   },
   {
@@ -286652,15 +286679,6 @@
    "pack": false
   },
   {
-   "id": "gl_tutor_8bf1dd2d_66",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Imos dar palmadas nas pernas e bailar coma a ra: Chap, chap, chap!",
-   "speech": "Imos dar palmadas nas pernas e bailar coma a ra: Chap, chap, chap!",
-   "source": "biblioteca/HIS-087/significado",
-   "pack": false
-  },
-  {
    "id": "gl_tutor_8bf2bc6c_26",
    "lang": "gl",
    "style": "tutor",
@@ -290793,6 +290811,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_96b4ea3f_52",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Imos respirar coma a ra: colle aire… e bótao… amodo.",
+   "speech": "Imos respirar coma a ra: colle aire… e bótao… amodo.",
+   "source": "biblioteca/HIS-087/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_96c07a00_89",
    "lang": "gl",
    "style": "tutor",
@@ -291349,15 +291376,6 @@
    "text": "Shhh... mira isto! A miña culler, debaixo da servilleta!",
    "speech": "Shhh... mira isto! A miña culler, debaixo da servilleta!",
    "source": "biblioteca/HIS-063/significado",
-   "pack": false
-  },
-  {
-   "id": "gl_tutor_98294217_26",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Abraza o teu can coma Lúa!",
-   "speech": "Abraza o teu can coma Lúa!",
-   "source": "biblioteca/HIS-044/significado",
    "pack": false
   },
   {
@@ -296277,6 +296295,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_a739e521_47",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Mira, follas verdes e unha ra verde. Que calma.",
+   "speech": "Mira, follas verdes e unha ra verde. Que calma.",
+   "source": "biblioteca/HIS-087/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_a73a126d_32",
    "lang": "gl",
    "style": "tutor",
@@ -299841,6 +299868,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_b1d7978e_38",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Corre, corre... e salta! Salta co can!",
+   "speech": "Corre, corre... e salta! Salta co can!",
+   "source": "biblioteca/HIS-041/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_b1d7c1e5_24",
    "lang": "gl",
    "style": "tutor",
@@ -300180,6 +300216,15 @@
    "text": "Hop, hop, para! Adiante, mazá!",
    "speech": "Hop, hop, para! Adiante, mazá!",
    "source": "biblioteca/HIS-028/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_b2f38664_33",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Mira, Lúa dorme co seu can. Chis…",
+   "speech": "Mira, Lúa dorme co seu can. Chis…",
+   "source": "biblioteca/HIS-044/significado",
    "pack": false
   },
   {
@@ -300702,6 +300747,15 @@
    "text": "Si, baila e queda quieto!",
    "speech": "Si, baila e queda quieto!",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_b4654a8e_37",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Follas verdes. Verde vivo. Que calma…",
+   "speech": "Follas verdes. Verde vivo. Que calma…",
+   "source": "biblioteca/HIS-087/significado",
    "pack": false
   },
   {
@@ -303436,6 +303490,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_bc9822ca_28",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "O meu can! Durme, can. Chis…",
+   "speech": "O meu can! Durme, can. Chis…",
+   "source": "biblioteca/HIS-044/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_bca9af11_17",
    "lang": "gl",
    "style": "tutor",
@@ -304832,7 +304895,7 @@
    "style": "tutor",
    "text": "Si, unha aperta! Lúa abraza o can!",
    "speech": "Si, unha aperta! Lúa abraza o can!",
-   "source": "biblioteca/HIS-044/significado",
+   "source": "biblioteca/HIS-046/significado",
    "pack": false
   },
   {
@@ -305899,15 +305962,6 @@
    "text": "Apego seguro con educadora",
    "speech": "Apego seguro con educadora",
    "source": "significados/significado",
-   "pack": false
-  },
-  {
-   "id": "gl_tutor_c490f3c7_39",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Corre, corre... e aperta! Abraza o can!",
-   "speech": "Corre, corre... e aperta! Abraza o can!",
-   "source": "biblioteca/HIS-041/significado",
    "pack": false
   },
   {
@@ -308917,15 +308971,6 @@
    "text": "Son doce de berce",
    "speech": "Son doce de berce",
    "source": "significados/significado",
-   "pack": false
-  },
-  {
-   "id": "gl_tutor_ce2777dc_45",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Follas verdes! Verde vivo! Chap, chap, hurra!",
-   "speech": "Follas verdes! Verde vivo! Chap, chap, hurra!",
-   "source": "biblioteca/HIS-087/significado",
    "pack": false
   },
   {
@@ -316056,15 +316101,6 @@
    "speech": "Piscina pequena",
    "source": "tpr.0_2.maio/s1/0_2.maio.s1.paddling-pool/significado",
    "pack": true
-  },
-  {
-   "id": "gl_tutor_e36a64f8_31",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Que xoguete abrazas ti na casa?",
-   "speech": "Que xoguete abrazas ti na casa?",
-   "source": "biblioteca/HIS-044/significado",
-   "pack": false
   },
   {
    "id": "gl_tutor_e36db082_15",
@@ -323377,15 +323413,6 @@
    "text": "Gústache a hora do baño?",
    "speech": "Gústache a hora do baño?",
    "source": "biblioteca/HIS-017/significado",
-   "pack": false
-  },
-  {
-   "id": "gl_tutor_f9006739_48",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Mira, follas verdes e unha ra verde. Chap, chap!",
-   "speech": "Mira, follas verdes e unha ra verde. Chap, chap!",
-   "source": "biblioteca/HIS-087/significado",
    "pack": false
   },
   {

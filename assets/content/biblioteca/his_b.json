@@ -2361,8 +2361,8 @@
       },
       "accion": "ACT-03",
       "resolucion": {
-        "gl": "Abrazo e contacto de apego: Lúa atopa o can detrás dunha árbore e dálle unha aperta",
-        "es": "Abrazo y contacto de apego: Lúa encuentra al perro detrás de un árbol y le da un abrazo"
+        "gl": "Celebración rítmica conxunta: Lúa atopa o can detrás dunha árbore e corren e saltan xuntos ao ritmo das palmas",
+        "es": "Celebración rítmica conjunta: Lúa encuentra al perro detrás de un árbol y corren y saltan juntos al ritmo de las palmas"
       }
     },
     "palabrasDiana": [
@@ -2512,19 +2512,19 @@
       {
         "papel": "desenlace",
         "dibujo": {
-          "gl": "Lúa e o can abrazados ao pé da árbore. O can lambe a meixela de Lúa. Corazóns pequenos arredor.",
-          "es": "Lúa y el perro abrazados al pie del árbol. El perro le lame la mejilla a Lúa. Corazones pequeños alrededor."
+          "gl": "Lúa e o can saltan xuntos ao pé da árbore, coas patas no aire. Notas musicais e follas voando arredor.",
+          "es": "Lúa y el perro saltan juntos al pie del árbol, con las patas en el aire. Notas musicales y hojas volando alrededor."
         },
         "narracion": {
-          "gl": "Aquí está! O can estaba detrás da árbore. Lúa corre cara a el e dálle unha aperta forte. O can move o rabo. Lúa di:",
-          "es": "¡Aquí está! El perro estaba detrás del árbol. Lúa corre hacia él y le da un abrazo fuerte. El perro mueve la cola. Lúa dice:"
+          "gl": "Aquí está! O can estaba detrás da árbore. Lúa dá palmas: plas, plas! O can salta e corre arredor dela. Corren, saltan e paran, xuntos, ao ritmo das palmas. Lúa di:",
+          "es": "¡Aquí está! El perro estaba detrás del árbol. Lúa da palmas: ¡plas, plas! El perro salta y corre a su alrededor. Corren, saltan y paran, juntos, al ritmo de las palmas. Lúa dice:"
         },
         "lua": {
-          "en": "Hello, dog! Nice dog!",
-          "gl": "Ola, can! Can bonito!",
-          "es": "¡Hola, perro! ¡Perro bonito!"
+          "en": "Run, dog, run! Jump, jump! Hooray!",
+          "gl": "Corre, can, corre! Salta, salta! Hurra!",
+          "es": "¡Corre, perro, corre! ¡Salta, salta! ¡Hurra!"
         },
-        "onomatopeia": "Woof!",
+        "onomatopeia": "Woof, woof!",
         "crowd": {
           "nivel1": {
             "en": "Touch the dog's tail!",
@@ -2536,18 +2536,18 @@
             }
           },
           "nivel2": {
-            "en": "Run, run... and hug! Hug the dog!",
-            "gl": "Corre, corre... e aperta! Abraza o can!",
-            "es": "¡Corre, corre... y abrazo! ¡Abraza al perro!",
+            "en": "Run, run... and jump! Jump with the dog!",
+            "gl": "Corre, corre... e salta! Salta co can!",
+            "es": "¡Corre, corre... y salta! ¡Salta con el perro!",
             "axuda": {
-              "gl": "Move os pés no sitio, rápido, e despois pecha unha aperta cos brazos. Faino ti primeiro e agarda.",
-              "es": "Mueve los pies en el sitio, rápido, y después cierra un abrazo con los brazos. Hazlo tú primero y espera."
+              "gl": "Move os pés no sitio, rápido, e despois dá un salto pequeno. Faino ti primeiro e agarda.",
+              "es": "Mueve los pies en el sitio, rápido, y después da un salto pequeño. Hazlo tú primero y espera."
             }
           },
           "nivel3": {
-            "en": "Who do you hug at home?",
-            "gl": "A quen abrazas ti na casa?",
-            "es": "¿A quién abrazas tú en casa?",
+            "en": "Who do you run and jump with?",
+            "gl": "Con quen corres e saltas ti?",
+            "es": "¿Con quién corres y saltas tú?",
             "axuda": {
               "gl": "Opcional: só se o grupo segue atento. Abonda cun si coa cabeza, un xesto ou unha palabra na lingua da casa.",
               "es": "Opcional: solo si el grupo sigue atento. Basta con un sí con la cabeza, un gesto o una palabra en la lengua de casa."
@@ -2555,14 +2555,14 @@
           }
         },
         "espera": {
-          "gl": "1) Fai a pregunta e cala de 3 a 5 segundos, cos brazos pechados na aperta. 2) Se chega resposta (un dedo, un xesto, un son, unha palabra), devolve a frase no turno seguinte co guion de abaixo. 3) Agarda uns 3 segundos máis antes do eloxio final e de pechar o conto.",
-          "es": "1) Haz la pregunta y calla de 3 a 5 segundos, con los brazos cerrados en el abrazo. 2) Si llega respuesta (un dedo, un gesto, un sonido, una palabra), devuelve la frase en el turno siguiente con el guion de abajo. 3) Espera unos 3 segundos más antes del elogio final y de cerrar el cuento."
+          "gl": "1) Fai a pregunta e cala de 3 a 5 segundos, coas mans quietas nas coxas. 2) Se chega resposta (un dedo, un xesto, un son, unha palabra), devolve a frase no turno seguinte co guion de abaixo. 3) Agarda uns 3 segundos máis antes do eloxio final e de pechar o conto.",
+          "es": "1) Haz la pregunta y calla de 3 a 5 segundos, con las manos quietas en los muslos. 2) Si llega respuesta (un dedo, un gesto, un sonido, una palabra), devuelve la frase en el turno siguiente con el guion de abajo. 3) Espera unos 3 segundos más antes del elogio final y de cerrar el cuento."
         },
         "recast": {
           "silencio": {
-            "en": "Look, Lúa hugs the dog. Nice dog!",
-            "gl": "Mira, Lúa abraza o can. Can bonito!",
-            "es": "Mira, Lúa abraza al perro. ¡Perro bonito!"
+            "en": "Look, Lúa and the dog jump. Jump, jump!",
+            "gl": "Mira, Lúa e o can saltan. Salta, salta!",
+            "es": "Mira, Lúa y el perro saltan. ¡Salta, salta!"
           },
           "linguaCasa": {
             "en": "Yes, the dog! Lúa runs to the dog!",
@@ -3065,8 +3065,8 @@
       },
       "accion": "ACT-02",
       "resolucion": {
-        "gl": "Abrazo e contacto de apego: Lúa atopa o can de trapo e abrázao",
-        "es": "Abrazo y contacto de apego: Lúa encuentra al perro de trapo y lo abraza"
+        "gl": "Transición ao repouso: Lúa atopa o can de trapo e deítase con el na alfombra para descansar",
+        "es": "Transición al reposo: Lúa encuentra al perro de trapo y se tumba con él en la alfombra para descansar"
       }
     },
     "palabrasDiana": [
@@ -3215,42 +3215,42 @@
       {
         "papel": "desenlace",
         "dibujo": {
-          "gl": "Lúa sentada na alfombra abraza o can de trapo azul contra o peito, cos ollos pechados. A torre segue en pé.",
-          "es": "Lúa sentada en la alfombra abraza al perro de trapo azul contra el pecho, con los ojos cerrados. La torre sigue en pie."
+          "gl": "Lúa deitada na alfombra, cos ollos pechados, e o can de trapo azul durmindo ao seu carón. A torre segue en pé. Unhas Z pequenas no aire.",
+          "es": "Lúa tumbada en la alfombra, con los ojos cerrados, y el perro de trapo azul durmiendo a su lado. La torre sigue en pie. Unas Z pequeñas en el aire."
         },
         "narracion": {
-          "gl": "Aquí está! Lúa saca o can de trapo detrás dos bloques. A torre non caeu! Lúa abraza o seu can moi forte e di:",
-          "es": "¡Aquí está! Lúa saca al perro de trapo de detrás de los bloques. ¡La torre no se ha caído! Lúa abraza a su perro muy fuerte y dice:"
+          "gl": "Aquí está! Lúa saca o can de trapo detrás dos bloques. A torre non caeu! Lúa ten sono. Deítase na alfombra co seu can, respira amodo e di baixiño:",
+          "es": "¡Aquí está! Lúa saca al perro de trapo de detrás de los bloques. ¡La torre no se ha caído! Lúa tiene sueño. Se tumba en la alfombra con su perro, respira despacio y dice bajito:"
         },
         "lua": {
-          "en": "My dog! Nice dog!",
-          "gl": "O meu can! Can bonito!",
-          "es": "¡Mi perro! ¡Perro bonito!"
+          "en": "My dog! Sleep, dog. Shh…",
+          "gl": "O meu can! Durme, can. Chis…",
+          "es": "¡Mi perro! Duerme, perro. Chis…"
         },
-        "onomatopeia": "Mmm!",
+        "onomatopeia": "Shh…",
         "crowd": {
           "nivel1": {
             "en": "Touch the blue dog!",
             "gl": "Toca o can azul!",
             "es": "¡Toca al perro azul!",
             "axuda": {
-              "gl": "Sinala o can nos brazos de Lúa e agarda.",
-              "es": "Señala al perro en los brazos de Lúa y espera."
+              "gl": "Sinala o can ao carón de Lúa e agarda.",
+              "es": "Señala al perro al lado de Lúa y espera."
             }
           },
           "nivel2": {
-            "en": "Hug your dog like Lúa!",
-            "gl": "Abraza o teu can coma Lúa!",
-            "es": "¡Abraza a tu perro como Lúa!",
+            "en": "Sleep like Lúa and her dog! Shh…",
+            "gl": "Durme coma Lúa e o seu can! Chis…",
+            "es": "¡Duerme como Lúa y su perro! Chis…",
             "axuda": {
-              "gl": "Cruza os brazos sobre o peito coma quen abraza un peluche. Faino ti primeiro e agarda.",
-              "es": "Cruza los brazos sobre el pecho como quien abraza un peluche. Hazlo tú primero y espera."
+              "gl": "Pon as mans xuntas baixo a meixela e pecha os ollos. Faino ti primeiro e agarda.",
+              "es": "Pon las manos juntas bajo la mejilla y cierra los ojos. Hazlo tú primero y espera."
             }
           },
           "nivel3": {
-            "en": "What toy do you hug at home?",
-            "gl": "Que xoguete abrazas ti na casa?",
-            "es": "¿Qué juguete abrazas tú en casa?",
+            "en": "What toy do you sleep with at home?",
+            "gl": "Con que xoguete dormes ti na casa?",
+            "es": "¿Con qué juguete duermes tú en casa?",
             "axuda": {
               "gl": "Opcional: só se o grupo segue atento. Abonda cun si coa cabeza, un xesto ou unha palabra na lingua da casa.",
               "es": "Opcional: solo si el grupo sigue atento. Basta con un sí con la cabeza, un gesto o una palabra en la lengua de casa."
@@ -3258,19 +3258,19 @@
           }
         },
         "espera": {
-          "gl": "1) Fai a pregunta e cala de 3 a 5 segundos, cos brazos cruzados na aperta. 2) Se chega resposta (un dedo, un xesto, un son, unha palabra), devolve a frase no turno seguinte co guion de abaixo. 3) Agarda uns 3 segundos máis antes do eloxio final e de pechar o conto.",
-          "es": "1) Haz la pregunta y calla de 3 a 5 segundos, con los brazos cruzados en el abrazo. 2) Si llega respuesta (un dedo, un gesto, un sonido, una palabra), devuelve la frase en el turno siguiente con el guion de abajo. 3) Espera unos 3 segundos más antes del elogio final y de cerrar el cuento."
+          "gl": "1) Fai a pregunta e cala de 3 a 5 segundos, coas mans baixo a meixela. 2) Se chega resposta (un dedo, un xesto, un son, unha palabra), devolve a frase no turno seguinte co guion de abaixo. 3) Agarda uns 3 segundos máis antes do eloxio final e de pechar o conto.",
+          "es": "1) Haz la pregunta y calla de 3 a 5 segundos, con las manos bajo la mejilla. 2) Si llega respuesta (un dedo, un gesto, un sonido, una palabra), devuelve la frase en el turno siguiente con el guion de abajo. 3) Espera unos 3 segundos más antes del elogio final y de cerrar el cuento."
         },
         "recast": {
           "silencio": {
-            "en": "Look, Lúa hugs her dog.",
-            "gl": "Mira, Lúa abraza o seu can.",
-            "es": "Mira, Lúa abraza a su perro."
+            "en": "Look, Lúa sleeps with her dog. Shh…",
+            "gl": "Mira, Lúa dorme co seu can. Chis…",
+            "es": "Mira, Lúa duerme con su perro. Chis…"
           },
           "linguaCasa": {
-            "en": "Yes, a hug! Lúa hugs the dog!",
-            "gl": "Si, unha aperta! Lúa abraza o can!",
-            "es": "¡Sí, un abrazo! ¡Lúa abraza al perro!"
+            "en": "Yes, sleep! Lúa and the dog sleep.",
+            "gl": "Si, a durmir! Lúa e o can dormen.",
+            "es": "¡Sí, a dormir! Lúa y el perro duermen."
           },
           "aproximacion": {
             "en": "Yes, dog! My nice dog!",
