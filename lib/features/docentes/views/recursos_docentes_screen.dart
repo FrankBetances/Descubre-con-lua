@@ -11,6 +11,7 @@ import '../../../core/widgets/fila_portal.dart';
 import '../../../data/models/steam_model.dart';
 import '../../../data/repositories/calendario_repository.dart';
 import '../../../data/repositories/content_repository.dart';
+import '../../cuentos/views/biblioteca_contos_screen.dart';
 import '../../english/views/collocations_screen.dart';
 import '../../english/views/fsrs_trainer_screen.dart';
 import '../../english/views/listening_screen.dart';
@@ -23,6 +24,7 @@ import '../../planificador/views/dinamicas_screen.dart';
 import '../../planificador/views/estrategias_screen.dart';
 import '../../planificador/views/planificador_screen.dart';
 import '../../premios/premios_repository.dart';
+import '../../steam/views/steam_do_ano_screen.dart';
 import '../../steam/views/steam_hub_screen.dart';
 import '../nomes_docentes.dart';
 
@@ -128,6 +130,34 @@ class RecursosDocentesScreen extends StatelessWidget {
                   onLanguageChanged: onLanguageChanged,
                   audiencia: SteamAudiencia.aula,
                   initialCursoId: cursoId,
+                ),
+          ),
+          // F10: los 100 cuentos dialogados y el STEAM de todo el curso.
+          (
+            'recurso_contos_dialogados',
+            Icons.forum_rounded,
+            const LocalizedString(gl: 'Os 100 contos', es: 'Los 100 cuentos'),
+            const LocalizedString(
+                gl: 'Contos dialogados, por unidade do plan',
+                es: 'Cuentos dialogados, por unidad del plan'),
+            (_) => BibliotecaContosScreen(
+                  language: language,
+                  onLanguageChanged: onLanguageChanged,
+                  audioService: audioService,
+                ),
+          ),
+          (
+            'recurso_steam_do_ano',
+            Icons.biotech_rounded,
+            const LocalizedString(gl: 'STEAM do curso', es: 'STEAM del curso'),
+            const LocalizedString(
+                gl: 'Un experimento cada mes, co tema da unidade',
+                es: 'Un experimento cada mes, con el tema de la unidad'),
+            (_) => SteamDoAnoScreen(
+                  cursoId: cursoId,
+                  language: language,
+                  onLanguageChanged: onLanguageChanged,
+                  audioService: audioService,
                 ),
           ),
         ],

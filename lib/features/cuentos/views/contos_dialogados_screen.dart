@@ -9,7 +9,7 @@ import '../../../core/widgets/cabecera.dart';
 import '../../../data/models/conto_dialogado_model.dart';
 
 /// Los cuentos dialogados de una unidad del plan curricular (F12).
-class ContosDialogadosScreen extends StatelessWidget {
+class ContosDialogadosScreen extends StatefulWidget {
   final String unidade;
   final String tituloUnidade;
   final List<ContoDialogado> contos;
@@ -26,23 +26,31 @@ class ContosDialogadosScreen extends StatelessWidget {
   });
 
   @override
+  State<ContosDialogadosScreen> createState() => _ContosDialogadosScreenState();
+}
+
+class _ContosDialogadosScreenState extends State<ContosDialogadosScreen> {
+  late AppLanguage _lang = widget.language;
+
+  @override
   Widget build(BuildContext context) {
+    final language = _lang;
+    final contos = widget.contos;
     final isGl = language == AppLanguage.gl;
     return Scaffold(
       backgroundColor: AppTheme.pageBg,
       appBar: Cabecera(
         titulo: isGl ? 'Contos dialogados' : 'Cuentos dialogados',
         language: language,
-        // La lengua se elige en la pantalla anterior; aquí solo se ve.
-        onLanguageChanged: (_) {},
+        onLanguageChanged: (l) => setState(() => _lang = l),
       ),
       body: SafeArea(
         child: ListView(
-          key: ValueKey('contos_$unidade'),
+          key: ValueKey('contos_${widget.unidade}'),
           padding: const EdgeInsets.fromLTRB(16, 16, 16, 28),
           children: [
             Text(
-              tituloUnidade,
+              widget.tituloUnidade,
               style: const TextStyle(
                 fontSize: 18,
                 fontWeight: FontWeight.w800,
@@ -80,7 +88,7 @@ class ContosDialogadosScreen extends StatelessWidget {
                     builder: (_) => ContoDialogadoScreen(
                       conto: c,
                       language: language,
-                      audioService: audioService,
+                      audioService: widget.audioService,
                     ),
                   )),
                 ),
@@ -113,6 +121,7 @@ class ContoDialogadoScreen extends StatefulWidget {
 
 class _ContoDialogadoScreenState extends State<ContoDialogadoScreen> {
   int _i = 0;
+  late AppLanguage _lang = widget.language;
 
   static const _niveis = {
     'nivel1': ('Nivel 1 · sinalar', 'Nivel 1 · señalar'),
@@ -132,14 +141,14 @@ class _ContoDialogadoScreenState extends State<ContoDialogadoScreen> {
         audioService: widget.audioService,
         texto: f.en,
         language: AppLanguage.en,
-        interfaz: widget.language,
+        interfaz: _lang,
         comoChip: true,
         significado: f.significado,
       );
 
   @override
   Widget build(BuildContext context) {
-    final lang = widget.language;
+    final lang = _lang;
     final isGl = lang == AppLanguage.gl;
     final c = widget.conto;
     final l = c.laminas[_i];
@@ -149,7 +158,7 @@ class _ContoDialogadoScreenState extends State<ContoDialogadoScreen> {
       appBar: Cabecera(
         titulo: c.titulo.resolve(lang),
         language: lang,
-        onLanguageChanged: (_) {},
+        onLanguageChanged: (l) => setState(() => _lang = l),
       ),
       body: SafeArea(
         child: Column(

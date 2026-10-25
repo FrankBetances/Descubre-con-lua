@@ -8,10 +8,13 @@ import '../../../core/theme/app_theme.dart';
 import '../../../core/widgets/cabecera.dart';
 import '../../../data/models/rexistro_frases_model.dart';
 import '../../../data/models/sesion45_model.dart';
+import '../../../data/models/steam_do_mes_model.dart';
 import '../../../data/models/unidade_do_mes_model.dart';
 import '../../../data/repositories/content_repository.dart';
 import '../../cuentos/views/microcuento_screen.dart';
 import '../../cuentos/widgets/boton_microcuento.dart';
+import '../../../core/navigation/ruta_lua.dart';
+import '../../steam/views/steam_do_mes_screen.dart';
 
 /// La sesión de 45 minutos (F3): acogida y pulso, cuento dialogado, taller
 /// TPR y despedida con la bolsa misteriosa. Lo fijo de cada fase sale de
@@ -46,8 +49,10 @@ class _DatosDoMes {
   final UnidadeDoMes? unidade;
   final List<PezaDaUnidade> nucleo;
   final List<PezaDaUnidade> ordes;
+  final ExperimentoSteam? steam;
 
-  const _DatosDoMes(this.sesion, this.unidade, this.nucleo, this.ordes);
+  const _DatosDoMes(this.sesion, this.unidade, this.nucleo, this.ordes,
+      [this.steam]);
 }
 
 class _Sesion45ScreenState extends State<Sesion45Screen> {
@@ -59,11 +64,21 @@ class _Sesion45ScreenState extends State<Sesion45Screen> {
     final sesion = await Sesion45.cargar();
     await Future.wait([repo.loadProgramaTpr(), repo.loadRexistroFrases()]);
     final u = await repo.loadUnidadeDoMes(widget.cursoId, widget.mesCalendario);
-    if (u == null) return _DatosDoMes(sesion, null, const [], const []);
-    return _DatosDoMes(sesion, u, repo.nucleoSync(u), [
-      for (final o in u.ordenes)
-        if (repo.pezaSync(o.ref) case final p?) p,
-    ]);
+    ExperimentoSteam? steam;
+    try {
+      steam = (await SteamDoMes.cargar())
+          .para(widget.cursoId, widget.mesCalendario);
+    } catch (_) {}
+    if (u == null) return _DatosDoMes(sesion, null, const [], const [], steam);
+    return _DatosDoMes(
+        sesion,
+        u,
+        repo.nucleoSync(u),
+        [
+          for (final o in u.ordenes)
+            if (repo.pezaSync(o.ref) case final p?) p,
+        ],
+        steam);
   }
 
   void _cambiar(AppLanguage l) {
@@ -160,6 +175,30 @@ class _Sesion45ScreenState extends State<Sesion45Screen> {
         ];
       case 'taller':
         return [
+          // F8: el experimento STEAM del mes cabe en el taller TPR.
+          if (d.steam case final e?) ...[
+            _Rotulo(isGl ? 'STEAM DESTE MES' : 'STEAM DE ESTE MES'),
+            OutlinedButton.icon(
+              key: ValueKey('sesion45_steam_${e.id}'),
+              onPressed: () => Navigator.of(context).push(RutaLua(
+                de: context,
+                builder: (_) => SteamDoMesScreen(
+                  experimento: e,
+                  language: _lang,
+                  audioService: widget.audioService,
+                ),
+              )),
+              style: OutlinedButton.styleFrom(
+                minimumSize: const Size(0, AppTheme.touchMin),
+                alignment: Alignment.centerLeft,
+              ),
+              icon: const Icon(Icons.science_rounded),
+              label: Text(
+                '${e.nomeFenomeno.resolve(_lang)}: ${e.titulo.resolve(_lang)}',
+                style: const TextStyle(fontWeight: FontWeight.w700),
+              ),
+            ),
+          ],
           if (u.realia.isNotEmpty) ...[
             _Rotulo(isGl ? 'MATERIAL' : 'MATERIAL'),
             for (final r in u.realia) _Texto('· ${r.resolve(_lang)}'),

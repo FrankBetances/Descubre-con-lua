@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 import '../../formacion/widgets/lista_de_practica.dart';
+import '../../juega/views/sesion45_screen.dart';
+import '../../juega/widgets/pasos_do_dia.dart';
 import '../../juega/widgets/tarxeta_curricular.dart';
 
 import '../../../core/audio/offline_audio_service.dart';
@@ -345,7 +347,15 @@ class _HoxeDocentesScreenState extends State<HoxeDocentesScreen> {
                 ),
               ),
             ),
-            const SizedBox(height: 16),
+            // F10: el día en pasos numerados, en el orden en que se usa.
+            RotuloPaso(
+              numero: 1,
+              titulo: isGl
+                  ? 'A asemblea e as palabras'
+                  : 'La asamblea y las palabras',
+              subtitulo:
+                  isGl ? 'Cada día, ao comezar.' : 'Cada día, al empezar.',
+            ),
             if (grupo != null)
               _TarxetaAsemblea(
                 grupo: grupo,
@@ -443,18 +453,79 @@ class _HoxeDocentesScreenState extends State<HoxeDocentesScreen> {
               ),
             ],
             // F11: la unidad del plan curricular de Frank que toca este mes.
+            RotuloPaso(
+              numero: 2,
+              titulo: isGl ? 'O plan do mes' : 'El plan del mes',
+              subtitulo: isGl
+                  ? 'A unidade, o vocabulario e como se traballa.'
+                  : 'La unidad, el vocabulario y cómo se trabaja.',
+            ),
             TarxetaCurricular(
               cursoId: widget.cursoId,
               mesCalendario: _toca.dia.mesCalendario,
               language: lang,
               audioService: widget.audioService,
+              conAccesos: false,
+            ),
+            PasosDoMes(
+              cursoId: widget.cursoId,
+              mesCalendario: _toca.dia.mesCalendario,
+              semana: _toca.dia.semana,
+              language: lang,
+              audioService: widget.audioService,
+            ),
+            RotuloPaso(
+              numero: 5,
+              titulo:
+                  isGl ? 'A sesión de 45 minutos' : 'La sesión de 45 minutos',
+              subtitulo: isGl
+                  ? 'Cando hai tempo para unha sesión longa: catro fases.'
+                  : 'Cuando hay tiempo para una sesión larga: cuatro fases.',
+            ),
+            FilaPaso(
+              claveFila: const Key('paso_sesion45'),
+              icona: Icons.timer_rounded,
+              rotulo: isGl
+                  ? 'ACOLLIDA · CONTO · OBRADOIRO · DESPEDIDA'
+                  : 'ACOGIDA · CUENTO · TALLER · DESPEDIDA',
+              titulo: isGl
+                  ? 'Abrir a sesión deste mes'
+                  : 'Abrir la sesión de este mes',
+              onTap: () => Navigator.of(context).push(RutaLua(
+                de: context,
+                builder: (_) => Sesion45Screen(
+                  repository: widget.repository,
+                  cursoId: widget.cursoId,
+                  mesCalendario: _toca.dia.mesCalendario,
+                  segundoCiclo: !widget.cursoId.startsWith('curso_0_2') &&
+                      !widget.cursoId.startsWith('curso_2_3'),
+                  language: lang,
+                  onLanguageChanged: widget.onLanguageChanged,
+                  audioService: widget.audioService,
+                ),
+              )),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(top: 26, bottom: 4),
+              child: Text(
+                isGl ? 'MATERIAL COMPLEMENTARIO' : 'MATERIAL COMPLEMENTARIO',
+                key: const Key('hoxe_aula_complementario'),
+                style: const TextStyle(
+                  fontSize: 13,
+                  fontWeight: FontWeight.w800,
+                  letterSpacing: 0.8,
+                  color: AppTheme.textSecondary,
+                ),
+              ),
             ),
             if (_conto case final conto?) ...[
-              const SizedBox(height: 14),
+              const SizedBox(height: 6),
               _FilaRecurso(
                 clave: 'hoxe_aula_conto',
                 icona: Icons.auto_stories_rounded,
-                rotulo: isGl ? 'O CONTO DA SEMANA' : 'EL CUENTO DE LA SEMANA',
+                rotulo: isGl
+                    ? 'CONTO LONGO DA SEMANA'
+                    : 'CUENTO LARGO DE LA SEMANA',
                 titulo: conto.titulo.resolve(lang),
                 onTap: () => _abrirConto(conto),
               ),
