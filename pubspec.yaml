@@ -87,6 +87,7 @@ flutter:
     - assets/content/curriculo/
     # Los 100 cuentos dialogados HIS-001…HIS-100 (F12).
     - assets/content/biblioteca/
+    - assets/content/significados/
     - assets/audio/
     # Las rejillas de Lúa. Hasta ahora solo las leía tools/build_launcher_icons.py
     # en tiempo de compilación, así que nunca se empaquetaron; en cuanto una

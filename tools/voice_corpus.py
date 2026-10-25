@@ -771,6 +771,15 @@ def collect_locutions(content_dir: Path = CONTENT_DIR) -> list[Locution]:
                     _add(_localized(peza), "tutor",
                          f"biblioteca/{cid}/significado", seen)
 
+    # El diccionario de significados (F7): el doble toque de cualquier frase
+    # en inglés que no trae el suyo dice este, en gl y es, con voz.
+    significados_json = content_dir / "significados" / "significados.json"
+    if significados_json.exists():
+        dic = json.loads(significados_json.read_text(encoding="utf-8"))
+        for en, sig in (dic.get("significados") or {}).items():
+            if sig.get("gl") and sig.get("es"):
+                _add(_localized(sig), "tutor", "significados/significado", seen)
+
     # La sesión de 45 minutos (F3): lo fijo que dice la adulta en cada fase.
     sesion_json = content_dir / "sesion45" / "sesion45.json"
     if sesion_json.exists():

@@ -5,6 +5,7 @@ import 'package:flutter/services.dart' show rootBundle;
 
 import '../../localization/app_language.dart';
 import '../../localization/localized_string.dart';
+import '../../localization/significados.dart';
 import '../../theme/app_theme.dart';
 import '../offline_audio_service.dart';
 import '../voice_id.dart';
@@ -154,6 +155,10 @@ class _BotonEscucharState extends State<BotonEscuchar> {
     super.dispose();
   }
 
+  /// El suyo, o el del diccionario de significados (F7).
+  LocalizedString? get _significado =>
+      widget.significado ?? Significados.de(widget.texto);
+
   Future<void> _pulsar() async {
     final servicio = widget.audioService;
     if (servicio == null) return;
@@ -171,7 +176,7 @@ class _BotonEscucharState extends State<BotonEscuchar> {
   /// en el paquete de recursos de voz (`assets/voice_pack/`, donde van los
   /// significados de las palabras del curso) y, si no, en la voz de siempre.
   Future<void> _significar() async {
-    final significado = widget.significado;
+    final significado = _significado;
     if (significado == null) return;
     final lingua = widget.interfaz ??
         (widget.language == AppLanguage.en ? AppLanguage.gl : widget.language);
@@ -268,7 +273,7 @@ class _BotonEscucharState extends State<BotonEscuchar> {
           borderRadius: BorderRadius.circular(AppTheme.radiusField),
           child: InkWell(
             onTap: _pulsar,
-            onDoubleTap: widget.significado == null ? null : _significar,
+            onDoubleTap: _significado == null ? null : _significar,
             borderRadius: BorderRadius.circular(AppTheme.radiusField),
             child: Container(
               constraints: const BoxConstraints(minHeight: AppTheme.touchMin),
@@ -316,7 +321,7 @@ class _BotonEscucharState extends State<BotonEscuchar> {
           shape: const CircleBorder(),
           child: InkWell(
             onTap: _pulsar,
-            onDoubleTap: widget.significado == null ? null : _significar,
+            onDoubleTap: _significado == null ? null : _significar,
             customBorder: const CircleBorder(),
             // 48 dp: el mínimo que se puede pulsar con seguridad, y la mano de
             // una maestra en una asamblea no apunta fino.

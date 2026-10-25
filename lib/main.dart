@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'core/audio/local_audio_player.dart';
 import 'core/audio/offline_audio_service.dart';
 import 'core/localization/app_language.dart';
+import 'core/localization/significados.dart';
 import 'core/theme/app_theme.dart';
 import 'data/repositories/content_repository.dart';
 import 'core/storage/calendario_store.dart';
@@ -18,6 +19,8 @@ void main() async {
   // El inglés del curso —cinco palabras al día— lo usan el portal, el
   // calendario y la asamblea: se lee una vez aquí y lo encuentran ya leído.
   await repository.loadProgramaTpr();
+  // F7: el doble toque dice el significado de cualquier frase en inglés.
+  await Significados.cargar();
   runApp(DescubreConLuaApp(contentRepository: repository));
 }
 
