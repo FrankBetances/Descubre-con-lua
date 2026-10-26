@@ -1,0 +1,85 @@
+{
+  "_doc": "Marco normativo do inglés por curso (F6, M1.1 con P6 de Frank: os criterios saen do texto curricular de Frank, referencias/base/curriculo-ingles-infantil-galicia.txt, e quedan pendentes de contrastar co DOG, que non é accesible desde o contorno de traballo). Cada dato leva a súa liña. Non se pintan as afirmacións sobre a Inspección (liñas 75-77 e 90) nin a rúbrica por criatura (123-142): ERRATAS.md. Detalle en docs/referencias/normativa.md.",
+  "pendenteDOG": true,
+  "aviso": {
+    "gl": "Do texto curricular de Frank (Decreto 150/2022 e Orde do 30 de maio de 2023). Pendente de contrastar co DOG.",
+    "es": "Del texto curricular de Frank (Decreto 150/2022 y Orden de 30 de mayo de 2023). Pendiente de contrastar con el DOG."
+  },
+  "area": {
+    "gl": "Área de Comunicación e Representación da Realidade",
+    "es": "Área de Comunicación y Representación de la Realidad",
+    "cita": "referencias/base/curriculo-ingles-infantil-galicia.txt:5"
+  },
+  "saber": {
+    "gl": "Aproximación á lingua estranxeira. Elementos para unha comunicación funcional básica.",
+    "es": "Aproximación a la lengua extranjera. Elementos para una comunicación funcional básica.",
+    "cita": "referencias/base/curriculo-ingles-infantil-galicia.txt:46"
+  },
+  "ciclos": {
+    "primeiro": {
+      "encadre": {"gl": "Bloques 1 e 2 da área", "es": "Bloques 1 y 2 del área", "cita": "referencias/base/curriculo-ingles-infantil-galicia.txt:18"},
+      "horario": {"gl": "Sen horario propio: dentro das rutinas de crianza", "es": "Sin horario propio: dentro de las rutinas de crianza", "cita": "referencias/base/curriculo-ingles-infantil-galicia.txt:21"}
+    },
+    "segundo": {
+      "encadre": {"gl": "Bloque 2: As linguas e os seus falantes", "es": "Bloque 2: As linguas e os seus falantes", "cita": "referencias/base/curriculo-ingles-infantil-galicia.txt:19"},
+      "horario": {"gl": "Un período lectivo á semana, nunha sesión ou en dúas medias sesións", "es": "Un periodo lectivo a la semana, en una sesión o en dos medias sesiones", "cita": "referencias/base/curriculo-ingles-infantil-galicia.txt:22"}
+    }
+  },
+  "cursos": {
+    "curso_0_2": {
+      "ciclo": "primeiro",
+      "obx": "OBX1 e OBX2",
+      "codigo": null,
+      "criterio": {
+        "gl": "Reacción orientativa e motriz ante cancións e estímulos sonoros; imitación xestual no xogo de crianza.",
+        "es": "Reacción orientativa motriz ante canciones y estímulos sonoros; imitación gestual en el juego de crianza."
+      },
+      "cita": "referencias/base/curriculo-ingles-infantil-galicia.txt:59-61"
+    },
+    "curso_2_3": {
+      "ciclo": "primeiro",
+      "obx": "OBX1 e OBX2",
+      "codigo": null,
+      "criterio": {
+        "gl": "Reacción orientativa e motriz ante cancións e estímulos sonoros; imitación xestual no xogo de crianza.",
+        "es": "Reacción orientativa motriz ante canciones y estímulos sonoros; imitación gestual en el juego de crianza."
+      },
+      "cita": "referencias/base/curriculo-ingles-infantil-galicia.txt:59-61"
+    },
+    "curso_3_4": {
+      "ciclo": "segundo",
+      "obx": "OBX5",
+      "codigo": "CA2.7",
+      "criterio": {
+        "gl": "Resposta física total (TPR) ás instrucións da persoa docente e seguimento de cancións con mímica.",
+        "es": "Respuesta física total (TPR) a instrucciones del docente y seguimiento de canciones con mímica."
+      },
+      "cita": "referencias/base/curriculo-ingles-infantil-galicia.txt:62-65"
+    },
+    "curso_4_5": {
+      "ciclo": "segundo",
+      "obx": "OBX5",
+      "codigo": "CA2.7",
+      "criterio": {
+        "gl": "Comprensión e reprodución de estruturas sinxelas e fórmulas de cortesía durante as rutinas de aula.",
+        "es": "Comprensión y reproducción de estructuras sencillas y fórmulas de cortesía durante las rutinas de aula."
+      },
+      "cita": "referencias/base/curriculo-ingles-infantil-galicia.txt:66-69"
+    },
+    "curso_5_6": {
+      "ciclo": "segundo",
+      "obx": "OBX5",
+      "codigo": "CA2.7",
+      "criterio": {
+        "gl": "Uso espontáneo de elementos léxicos funcionais en xogos de simulación e intervencións na asemblea.",
+        "es": "Uso espontáneo de elementos léxicos funcionales en juegos de simulación e intervenciones en asamblea."
+      },
+      "cita": "referencias/base/curriculo-ingles-infantil-galicia.txt:70-73"
+    }
+  },
+  "ca27": {
+    "gl": "Participar en interaccións comunicativas en lingua estranxeira relacionadas con rutinas e situacións cotiás.",
+    "es": "Participar en interacciones comunicativas en lengua extranjera relacionadas con rutinas y situaciones cotidianas.",
+    "cita": "referencias/base/curriculo-ingles-infantil-galicia.txt:43"
+  }
+}

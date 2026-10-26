@@ -1,0 +1,101 @@
+{
+  "_doc": "Guía de casa por idade (F5, apartado 8.2 de docs/PLAN_ARQUITECTURA_PEDAGOGIA.md). Os minutos de 0 a 36 meses son os de calendario/atencion.json; os de 3 a 6 anos son unha proposta da arquitectura. Son tempo de xogo suxerido, non unha medida de nada. Cada fila di a que curso da app pertence. As frases inglesas saen do plan curricular, que xa ten voz.",
+  "tramos": [
+    {
+      "clave": "0_6m", "curso": "curso_0_2",
+      "idade": {"gl": "De 0 a 6 meses", "es": "De 0 a 6 meses"},
+      "minutos": "2",
+      "ferramenta": {"gl": "Parentese e fala paralela, con contacto", "es": "Parentese y habla paralela, con contacto"},
+      "quePedir": {"gl": "Nada: mirar e sentir", "es": "Nada: mirar y sentir"},
+      "lectura": {"gl": "Mirar unha lámina xuntos, sen preguntas", "es": "Mirar una lámina juntos, sin preguntas"},
+      "momento": {"gl": "No cambio do cueiro ou no baño", "es": "En el cambio de pañal o en el baño"},
+      "queFacer": {"gl": "Fala amodo, coa voz algo máis aguda e a cara moi preto, mentres o tocas ou o moves.", "es": "Habla despacio, con la voz algo más aguda y la cara muy cerca, mientras le tocas o le mueves."},
+      "queEvitar": {"gl": "Poñerlle o audio ou unha pantalla: o que lle chega é a túa cara.", "es": "Ponerle el audio o una pantalla: lo que le llega es tu cara."},
+      "exemplo": {"en": "Splash!", "situacion": {"gl": "No baño, mentres lle mollas os pés", "es": "En el baño, mientras le mojas los pies"}}
+    },
+    {
+      "clave": "6_12m", "curso": "curso_0_2",
+      "idade": {"gl": "De 6 a 12 meses", "es": "De 6 a 12 meses"},
+      "minutos": "3",
+      "ferramenta": {"gl": "Fala paralela, xogos de cucú e quendas de son", "es": "Habla paralela, juegos de cucú y turnos de sonido"},
+      "quePedir": {"gl": "Nada: sorrir, balbucear", "es": "Nada: sonreír, balbucear"},
+      "lectura": {"gl": "Mirar unha lámina xuntos, sen preguntas", "es": "Mirar una lámina juntos, sin preguntas"},
+      "momento": {"gl": "No xogo do chan ou no baño", "es": "En el juego del suelo o en el baño"},
+      "queFacer": {"gl": "Fai un son, agarda e, se balbucea, devólvesllo: é unha conversa por quendas.", "es": "Haz un sonido, espera y, si balbucea, se lo devuelves: es una conversación por turnos."},
+      "queEvitar": {"gl": "Encher o silencio: a quenda dela tamén conta.", "es": "Llenar el silencio: su turno también cuenta."},
+      "exemplo": {"en": "Splash!", "situacion": {"gl": "Na bañeira, batendo na auga por quendas", "es": "En la bañera, golpeando el agua por turnos"}}
+    },
+    {
+      "clave": "12_18m", "curso": "curso_0_2",
+      "idade": {"gl": "De 12 a 18 meses", "es": "De 12 a 18 meses"},
+      "minutos": "5",
+      "ferramenta": {"gl": "Fala paralela e espera", "es": "Habla paralela y espera"},
+      "quePedir": {"gl": "Mirar e sinalar, se sae", "es": "Mirar y señalar, si sale"},
+      "lectura": {"gl": "Unha lámina, sinalando", "es": "Una lámina, señalando"},
+      "momento": {"gl": "No paseo ou ao recoller", "es": "En el paseo o al recoger"},
+      "queFacer": {"gl": "Nomea o que colle ou mira, co obxecto na man, e agarda uns segundos.", "es": "Nombra lo que coge o mira, con el objeto en la mano, y espera unos segundos."},
+      "queEvitar": {"gl": "Facer moitas palabras seguidas: unha ou dúas, ben ditas, abondan.", "es": "Decir muchas palabras seguidas: una o dos, bien dichas, bastan."},
+      "exemplo": {"en": "Pick up!", "situacion": {"gl": "No paseo, ao coller unha folla do chan", "es": "En el paseo, al coger una hoja del suelo"}}
+    },
+    {
+      "clave": "18_24m", "curso": "curso_0_2",
+      "idade": {"gl": "De 18 a 24 meses", "es": "De 18 a 24 meses"},
+      "minutos": "6",
+      "ferramenta": {"gl": "Espera, ordes con xesto e obxecto", "es": "Espera, órdenes con gesto y objeto"},
+      "quePedir": {"gl": "Facer o xesto, coller o obxecto", "es": "Hacer el gesto, coger el objeto"},
+      "lectura": {"gl": "Microcuento sinalando", "es": "Microcuento señalando"},
+      "momento": {"gl": "Na merenda ou ao recoller", "es": "En la merienda o al recoger"},
+      "queFacer": {"gl": "Dá unha orde curta co xesto á vez; agarda e, se a fai, celébrao.", "es": "Da una orden corta con el gesto a la vez; espera y, si la hace, celébralo."},
+      "queEvitar": {"gl": "Repetir a orde sen parar: mellor unha vez, agardar e volver co xesto.", "es": "Repetir la orden sin parar: mejor una vez, esperar y volver con el gesto."},
+      "exemplo": {"en": "Drop!", "situacion": {"gl": "Ao recoller, deixando caer os xoguetes na caixa", "es": "Al recoger, dejando caer los juguetes en la caja"}}
+    },
+    {
+      "clave": "24_36m", "curso": "curso_2_3",
+      "idade": {"gl": "De 24 a 36 meses", "es": "De 24 a 36 meses"},
+      "minutos": "8",
+      "ferramenta": {"gl": "Ordes, expansión e recast", "es": "Órdenes, expansión y recast"},
+      "quePedir": {"gl": "Xesto, obxecto, algunha palabra se sae", "es": "Gesto, objeto, alguna palabra si sale"},
+      "lectura": {"gl": "Microcuento de 3 láminas, cunha pregunta por lámina", "es": "Microcuento de 3 láminas, con una pregunta por lámina"},
+      "momento": {"gl": "No baño ou na merenda", "es": "En el baño o en la merienda"},
+      "queFacer": {"gl": "Se di unha palabra, devólvella nunha frase un chisco máis longa.", "es": "Si dice una palabra, devuélvesela en una frase un poco más larga."},
+      "queEvitar": {"gl": "Corrixir: se o di na lingua da casa, tamén vale.", "es": "Corregir: si lo dice en la lengua de casa, también vale."},
+      "exemplo": {"en": "Push the boat!", "situacion": {"gl": "Na bañeira, cando di «barco»", "es": "En la bañera, cuando dice «barco»"}}
+    },
+    {
+      "clave": "3_4a", "curso": "curso_3_4",
+      "idade": {"gl": "De 3 a 4 anos", "es": "De 3 a 4 años"},
+      "minutos": "8",
+      "ferramenta": {"gl": "Fórmulas de quenda no xogo", "es": "Fórmulas de turno en el juego"},
+      "quePedir": {"gl": "Quendas, dar e recibir", "es": "Turnos, dar y recibir"},
+      "lectura": {"gl": "Microcuento de 3 láminas: completar e preguntas de que e onde", "es": "Microcuento de 3 láminas: completar y preguntas de qué y dónde"},
+      "momento": {"gl": "No xogo de mesa ou de construír", "es": "En el juego de mesa o de construir"},
+      "queFacer": {"gl": "Xogade por quendas e di a fórmula cada vez que cambia a quenda.", "es": "Jugad por turnos y di la fórmula cada vez que cambia el turno."},
+      "queEvitar": {"gl": "Esixir a fórmula para seguir xogando: o xogo non se para.", "es": "Exigir la fórmula para seguir jugando: el juego no se para."},
+      "exemplo": {"en": "Your turn", "situacion": {"gl": "Construíndo unha torre, cando lle pasas o bloque", "es": "Construyendo una torre, cuando le pasas el bloque"}}
+    },
+    {
+      "clave": "4_5a", "curso": "curso_4_5",
+      "idade": {"gl": "De 4 a 5 anos", "es": "De 4 a 5 años"},
+      "minutos": "8-10",
+      "ferramenta": {"gl": "Expansión e «because» no xogo", "es": "Expansión y «because» en el juego"},
+      "quePedir": {"gl": "Colocar in, on, under; contar que pasa", "es": "Colocar in, on, under; contar qué pasa"},
+      "lectura": {"gl": "Microcuento de 4 láminas: lembrar e preguntas abertas", "es": "Microcuento de 4 láminas: recordar y preguntas abiertas"},
+      "momento": {"gl": "No xogo simbólico ou ao vestirse", "es": "En el juego simbólico o al vestirse"},
+      "queFacer": {"gl": "Pregunta o porqué dunha cousa do xogo e agarda; acolle o que diga e amplíao.", "es": "Pregunta el porqué de algo del juego y espera; acoge lo que diga y amplíalo."},
+      "queEvitar": {"gl": "Preguntas con resposta única: aquí vale todo o que conte.", "es": "Preguntas con respuesta única: aquí vale todo lo que cuente."},
+      "exemplo": {"en": "Help me, please", "situacion": {"gl": "Cando non chegades a algo e pedides axuda", "es": "Cuando no llegáis a algo y pedís ayuda"}}
+    },
+    {
+      "clave": "5_6a", "curso": "curso_5_6",
+      "idade": {"gl": "De 5 a 6 anos", "es": "De 5 a 6 años"},
+      "minutos": "10",
+      "ferramenta": {"gl": "Conversa, rimas e xogos de sons", "es": "Conversación, rimas y juegos de sonidos"},
+      "quePedir": {"gl": "Xogar coa rima, contar coas súas palabras", "es": "Jugar con la rima, contar con sus palabras"},
+      "lectura": {"gl": "Microcuento de 4 láminas, unha pregunta distinta en cada lámina", "es": "Microcuento de 4 láminas, una pregunta distinta en cada lámina"},
+      "momento": {"gl": "No paseo ou ao preparar unha saída", "es": "En el paseo o al preparar una salida"},
+      "queFacer": {"gl": "Inventade xuntos unha rima ou unha historia curta mesturando linguas.", "es": "Inventad juntos una rima o una historia corta mezclando lenguas."},
+      "queEvitar": {"gl": "Convertelo en deberes: se non lle apetece, hoxe non toca.", "es": "Convertirlo en deberes: si no le apetece, hoy no toca."},
+      "exemplo": {"en": "Look at this!", "situacion": {"gl": "No paseo, ao atopar algo que vos chama a atención", "es": "En el paseo, al encontrar algo que os llama la atención"}}
+    }
+  ]
+}

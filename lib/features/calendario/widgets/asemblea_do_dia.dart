@@ -4,6 +4,7 @@ import '../../../core/audio/offline_audio_service.dart';
 import '../../../core/storage/calendario_store.dart';
 import '../../../core/localization/app_language.dart';
 import '../../../core/localization/localized_string.dart';
+import '../../../data/models/hogar_model.dart';
 import '../../../data/models/asamblea_primeiro_ciclo_model.dart';
 import '../../../data/models/asamblea_segundo_ciclo_model.dart';
 import '../../../data/models/rexistro_frases_model.dart';
@@ -69,6 +70,9 @@ class AsembleaDaUnidade {
   final List<PezaDaUnidade> formulas;
   final List<PezaDaUnidade> reactivar;
 
+  /// La guía de casa del mes: la nota lleva el reto de la semana (M4.4).
+  final HogarDaUnidade? hogar;
+
   const AsembleaDaUnidade({
     required this.centroInteres,
     this.nucleo = const [],
@@ -77,6 +81,7 @@ class AsembleaDaUnidade {
     this.ordenes = const {},
     this.formulas = const [],
     this.reactivar = const [],
+    this.hogar,
   });
 }
 
@@ -109,6 +114,7 @@ Future<AsembleaDaUnidade?> lerAsembleaDaUnidade(ContentRepository repo,
     },
     formulas: resoltas(u.formulas),
     reactivar: resoltas(u.reactivar),
+    hogar: u.hogar,
   );
 }
 
@@ -172,8 +178,9 @@ Future<void> abrirAsembleaDoDia(
         ordenes: daUnidade?.ordenes ?? const {},
         formulas: daUnidade?.formulas ?? const [],
         reactivar: daUnidade?.reactivar ?? const [],
-        notaParaCasas:
-            notaDaAsemblea(daUnidade, grupo.segundo, language, audioService),
+        notaParaCasas: notaDaAsemblea(
+            daUnidade, grupo.segundo, language, audioService,
+            semana: diaDaProgresion?.semana ?? semana),
         premios: premios,
         calendario: calendario,
       ),
@@ -183,18 +190,22 @@ Future<void> abrirAsembleaDoDia(
 
 /// La nota para las casas que cierra la asamblea (M4.3): el centro y el
 /// núcleo de la unidad del mes y, en 2.º ciclo, la micro-rutina de casa de su
-/// asamblea. Sin unidad leída, no hay nota.
+/// asamblea. Desde M4.4 trae además el reto de casa de [semana], el mismo que
+/// enseña Hoxe en casa. Sin unidad leída, no hay nota.
 WidgetBuilder? notaDaAsemblea(
   AsembleaDaUnidade? daUnidade,
   AsambleaSegundoCiclo? segundo,
   AppLanguage language,
-  OfflineAudioService? audioService,
-) {
+  OfflineAudioService? audioService, {
+  int semana = 1,
+}) {
   if (daUnidade == null) return null;
   return (_) => NotaParaCasasScreen(
         centroInteres: daUnidade.centroInteres,
         nucleo: daUnidade.nucleo,
         microRutina: segundo?.microRutinaHogar,
+        reto: daUnidade.hogar?.daSemana(semana),
+        momentoDoReto: daUnidade.hogar?.momento,
         language: language,
         audioService: audioService,
       );

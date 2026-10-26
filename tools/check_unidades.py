@@ -238,6 +238,86 @@ def revisar(curso: str, orden: int, u: dict, existentes: set[str],
                 fallos.append(f"{donde}: reactivar: «{ref}» no está en el "
                               "núcleo del mes anterior")
 
+    revisar_hogar(curso, u, donde, fallos)
+
+    # F6 (M1.1, P6): el criterio de la unidad es el de su curso en
+    # `curriculo/normativa.json`, con su cita al texto de Frank.
+    normativa = json.loads((ROOT / "assets/content/curriculo/normativa.json")
+                           .read_text(encoding="utf-8"))
+    if u.get("criterio") != f"normativa.{curso}" or curso not in normativa["cursos"]:
+        fallos.append(f"{donde}: criterio: tiene que ser «normativa.{curso}»")
+    else:
+        c = normativa["cursos"][curso]
+        bilingue(c.get("criterio"), f"normativa.{curso}.criterio", fallos)
+        if not str(c.get("cita", "")).startswith("referencias/base/"):
+            fallos.append(f"normativa.{curso}: el criterio no cita su línea")
+
+
+_CURRICULO: dict | None = None
+
+
+def ingles_do_curriculo(curso: str, mes: int) -> set[str]:
+    """Lo que dice en inglés la unidad del plan curricular de ese mes, que es lo
+    que tiene voz y lo que enseña la app como núcleo (F11)."""
+    global _CURRICULO
+    if _CURRICULO is None:
+        c = ROOT / "assets" / "content" / "curriculo"
+        unidades = {}
+        for f in ("tramo_18_36.json", "tramo_3_6.json"):
+            for un in json.loads((c / f).read_text(encoding="utf-8"))["unidades"]:
+                unidades[un["id"]] = un
+        cal = json.loads((c / "calendario_curricular.json").read_text(encoding="utf-8"))
+        _CURRICULO = {"unidades": unidades, "cursos": cal["cursos"]}
+    uid = _CURRICULO["cursos"].get(curso, {}).get(str(mes))
+    un = _CURRICULO["unidades"].get(uid) or {}
+    return {str(i["en"]) for campo in ("vocabulario", "accionsTPR", "formulas", "frasesAdulta")
+            for i in un.get(campo) or [] if isinstance(i, dict) and i.get("en")}
+
+
+def revisar_hogar(curso: str, u: dict, donde: str, fallos: list[str]) -> None:
+    """F5, apartado 8.3: la guía de casa del mes."""
+    h = u.get("hogar")
+    if not isinstance(h, dict):
+        fallos.append(f"{donde}: falta el bloque hogar (F5)")
+        return
+    for campo in ("momento", "escena"):
+        bilingue(h.get(campo), f"{donde}: hogar.{campo}", fallos)
+    retos = h.get("retosCasa") or []
+    if [r.get("semana") for r in retos] != [1, 2, 3, 4]:
+        fallos.append(f"{donde}: hogar.retosCasa: tienen que ser cuatro, semanas 1 a 4")
+    ingles = ingles_do_curriculo(curso, u.get("mesCalendario"))
+    for r in retos:
+        rd = f"{donde}: hogar.reto.{r.get('semana')}"
+        en = (r.get("frase") or {}).get("en")
+        if en not in ingles:
+            fallos.append(f"{rd}: «{en}» no es inglés de la unidad del plan curricular del mes")
+        for campo in ("queFacer", "mans", "nonPedir", "nomeFase"):
+            bilingue(r.get(campo), f"{rd}.{campo}", fallos)
+        for k in ("silencio", "linguaCasa", "unhaPalabra"):
+            bilingue((r.get("recast") or {}).get(k), f"{rd}.recast.{k}", fallos)
+    mc = u.get("microcuento")
+    lectura = h.get("lecturaCasa")
+    if isinstance(mc, dict) and (lectura or {}).get("microcuento") != mc.get("id"):
+        fallos.append(f"{donde}: hogar.lecturaCasa no cita el microcuento de la unidad")
+    xogo = h.get("juegoCasa") or {}
+    if "xogo" in xogo:
+        ids = {x["id"] for x in json.loads((ROOT / "assets/content/xogos_fogar.json")
+                                           .read_text(encoding="utf-8"))["xogos"]}
+        if xogo["xogo"] not in ids:
+            fallos.append(f"{donde}: hogar.juegoCasa: no hay juego «{xogo['xogo']}»")
+    elif "steam" in xogo:
+        ids = {e["id"] for e in json.loads((ROOT / "assets/content/steam/steam_do_mes.json")
+                                           .read_text(encoding="utf-8"))["experimentos"]}
+        if xogo["steam"] not in ids:
+            fallos.append(f"{donde}: hogar.juegoCasa: no hay STEAM «{xogo['steam']}»")
+    else:
+        fallos.append(f"{donde}: hogar.juegoCasa vacío")
+    observar = h.get("queObservarCasa") or []
+    if not 2 <= len(observar) <= 3:
+        fallos.append(f"{donde}: hogar.queObservarCasa: dos o tres cosas")
+    for i, o in enumerate(observar):
+        bilingue(o, f"{donde}: hogar.queObservarCasa.{i}", fallos)
+
 
 def main() -> int:
     parser = argparse.ArgumentParser()

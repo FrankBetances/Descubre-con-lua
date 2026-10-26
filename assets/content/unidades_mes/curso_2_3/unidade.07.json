@@ -78,7 +78,208 @@
   "reactivar": [
     "frase.cmd.febreiro.2_3.01"
   ],
-  "hogar": null,
+  "hogar": {
+    "momento": {
+      "gl": "No baño, ao lavar as mans",
+      "es": "En el baño, al lavarse las manos"
+    },
+    "minutos": 8,
+    "escena": {
+      "gl": "O xabón e a toalla",
+      "es": "El jabón y la toalla"
+    },
+    "retosCasa": [
+      {
+        "id": "reto.curso_2_3.03.1",
+        "semana": 1,
+        "fase": "descubrir",
+        "nomeFase": {
+          "gl": "Descubrir",
+          "es": "Descubrir"
+        },
+        "frase": {
+          "en": "Wash",
+          "gl": "lavar",
+          "es": "lavar"
+        },
+        "queFacer": {
+          "gl": "Dio ti mentres o fas, cara a cara e á súa altura: «Wash». Só ten que escoitar e mirar.",
+          "es": "Dilo tú mientras lo haces, cara a cara y a su altura: «Wash». Solo tiene que escuchar y mirar."
+        },
+        "mans": {
+          "gl": "Sinala ou colle o que nomeas: lavar.",
+          "es": "Señala o coge lo que nombras: lavar."
+        },
+        "esperaSegundos": 5,
+        "nonPedir": {
+          "gl": "Non hai que dicilo: abonda con que o faga co corpo ou colla o obxecto.",
+          "es": "No hay que decirlo: basta con que lo haga con el cuerpo o coja el objeto."
+        },
+        "recast": {
+          "silencio": {
+            "gl": "Fai ti o xesto e volve dicir «Wash» amodo, sorrindo, e segue co xogo.",
+            "es": "Haz tú el gesto y vuelve a decir «Wash» despacio, sonriendo, y sigue con el juego."
+          },
+          "linguaCasa": {
+            "gl": "Acolle o que di na lingua da casa, asente e devólvello en inglés: «Wash».",
+            "es": "Acoge lo que dice en la lengua de casa, asiente y devuélveselo en inglés: «Wash»."
+          },
+          "unhaPalabra": {
+            "gl": "Celébrao e engade o que falta: «Yes! Wash».",
+            "es": "Celébralo y añade lo que falta: «Yes! Wash»."
+          }
+        }
+      },
+      {
+        "id": "reto.curso_2_3.03.2",
+        "semana": 2,
+        "fase": "practicar",
+        "nomeFase": {
+          "gl": "Practicar",
+          "es": "Practicar"
+        },
+        "frase": {
+          "en": "Wash!"
+        },
+        "queFacer": {
+          "gl": "Di «Wash!» e fai o xesto á vez. Agarda e, se o fai, facédeo xuntos outra vez.",
+          "es": "Di «Wash!» y haz el gesto a la vez. Espera y, si lo hace, hacedlo juntos otra vez."
+        },
+        "mans": {
+          "gl": "Fregar as palmas das mans facendo círculos sen parar.",
+          "es": "Frotarse las palmas de las manos haciendo círculos sin parar."
+        },
+        "esperaSegundos": 5,
+        "nonPedir": {
+          "gl": "Non hai que dicilo: abonda con que o faga co corpo ou colla o obxecto.",
+          "es": "No hay que decirlo: basta con que lo haga con el cuerpo o coja el objeto."
+        },
+        "recast": {
+          "silencio": {
+            "gl": "Fai ti o xesto e volve dicir «Wash!» amodo, sorrindo, e segue co xogo.",
+            "es": "Haz tú el gesto y vuelve a decir «Wash!» despacio, sonriendo, y sigue con el juego."
+          },
+          "linguaCasa": {
+            "gl": "Acolle o que di na lingua da casa, asente e devólvello en inglés: «Wash!».",
+            "es": "Acoge lo que dice en la lengua de casa, asiente y devuélveselo en inglés: «Wash!»."
+          },
+          "unhaPalabra": {
+            "gl": "Celébrao e engade o que falta: «Yes! Wash!».",
+            "es": "Celébralo y añade lo que falta: «Yes! Wash!»."
+          }
+        }
+      },
+      {
+        "id": "reto.curso_2_3.03.3",
+        "semana": 3,
+        "fase": "combinar",
+        "nomeFase": {
+          "gl": "Combinar",
+          "es": "Combinar"
+        },
+        "frase": {
+          "en": "Baby is dirty! Let's get the soap. Smell the soap!",
+          "gl": "O bebé está sucio! Imos polo xabón. Cheira o xabón!",
+          "es": "¡El bebé está sucio! Vamos a por el jabón. ¡Huele el jabón!"
+        },
+        "queFacer": {
+          "gl": "Xunta a frase desta semana coa da semana pasada nun xogo curto: «Baby is dirty! Let's get the soap. Smell the soap!» e, despois, «Wash!».",
+          "es": "Junta la frase de esta semana con la de la semana pasada en un juego corto: «Baby is dirty! Let's get the soap. Smell the soap!» y, después, «Wash!»."
+        },
+        "mans": {
+          "gl": "Ten na man aquilo do que falas e ensínallo mentres o dis.",
+          "es": "Ten en la mano aquello de lo que hablas y enséñaselo mientras lo dices."
+        },
+        "esperaSegundos": 5,
+        "nonPedir": {
+          "gl": "Non hai que dicilo: abonda con que o faga co corpo ou colla o obxecto.",
+          "es": "No hay que decirlo: basta con que lo haga con el cuerpo o coja el objeto."
+        },
+        "recast": {
+          "silencio": {
+            "gl": "Fai ti o xesto e volve dicir «Baby is dirty! Let's get the soap. Smell the soap!» amodo, sorrindo, e segue co xogo.",
+            "es": "Haz tú el gesto y vuelve a decir «Baby is dirty! Let's get the soap. Smell the soap!» despacio, sonriendo, y sigue con el juego."
+          },
+          "linguaCasa": {
+            "gl": "Acolle o que di na lingua da casa, asente e devólvello en inglés: «Baby is dirty! Let's get the soap. Smell the soap!».",
+            "es": "Acoge lo que dice en la lengua de casa, asiente y devuélveselo en inglés: «Baby is dirty! Let's get the soap. Smell the soap!»."
+          },
+          "unhaPalabra": {
+            "gl": "Celébrao e engade o que falta: «Yes! Baby is dirty! Let's get the soap. Smell the soap!».",
+            "es": "Celébralo y añade lo que falta: «Yes! Baby is dirty! Let's get the soap. Smell the soap!»."
+          }
+        }
+      },
+      {
+        "id": "reto.curso_2_3.03.4",
+        "semana": 4,
+        "fase": "consolidar",
+        "nomeFase": {
+          "gl": "Consolidar",
+          "es": "Consolidar"
+        },
+        "frase": {
+          "en": "Rub the soap! Rub, rub, rub! Now wash your hands under water! Wash!",
+          "gl": "Frega o xabón! Frega, frega, frega! Agora lava as mans debaixo da auga! Lava!",
+          "es": "¡Frota el jabón! ¡Frota, frota, frota! ¡Ahora lávate las manos bajo el agua! ¡Lava!"
+        },
+        "queFacer": {
+          "gl": "Di o comezo, «Rub the soap! Rub, rub, rub! Now wash your hands under water!…», e deixa o oco. Se o completa co corpo ou cunha palabra, celébrao e di a frase enteira.",
+          "es": "Di el comienzo, «Rub the soap! Rub, rub, rub! Now wash your hands under water!…», y deja el hueco. Si lo completa con el cuerpo o con una palabra, celébralo y di la frase entera."
+        },
+        "mans": {
+          "gl": "Ten na man aquilo do que falas e ensínallo mentres o dis.",
+          "es": "Ten en la mano aquello de lo que hablas y enséñaselo mientras lo dices."
+        },
+        "esperaSegundos": 5,
+        "nonPedir": {
+          "gl": "Non hai que dicilo: abonda con que o faga co corpo ou colla o obxecto.",
+          "es": "No hay que decirlo: basta con que lo haga con el cuerpo o coja el objeto."
+        },
+        "recast": {
+          "silencio": {
+            "gl": "Fai ti o xesto e volve dicir «Rub the soap! Rub, rub, rub! Now wash your hands under water! Wash!» amodo, sorrindo, e segue co xogo.",
+            "es": "Haz tú el gesto y vuelve a decir «Rub the soap! Rub, rub, rub! Now wash your hands under water! Wash!» despacio, sonriendo, y sigue con el juego."
+          },
+          "linguaCasa": {
+            "gl": "Acolle o que di na lingua da casa, asente e devólvello en inglés: «Rub the soap! Rub, rub, rub! Now wash your hands under water! Wash!».",
+            "es": "Acoge lo que dice en la lengua de casa, asiente y devuélveselo en inglés: «Rub the soap! Rub, rub, rub! Now wash your hands under water! Wash!»."
+          },
+          "unhaPalabra": {
+            "gl": "Celébrao e engade o que falta: «Yes! Rub the soap! Rub, rub, rub! Now wash your hands under water! Wash!».",
+            "es": "Celébralo y añade lo que falta: «Yes! Rub the soap! Rub, rub, rub! Now wash your hands under water! Wash!»."
+          }
+        }
+      }
+    ],
+    "lecturaCasa": {
+      "microcuento": "microcuento.curso_2_3.07"
+    },
+    "juegoCasa": {
+      "xogo": "xogo_05_espello_corpo"
+    },
+    "queObservarCasa": [
+      {
+        "gl": "Fai o xesto cando oe «Wash»",
+        "es": "Hace el gesto cuando oye «Wash»"
+      },
+      {
+        "gl": "Colle ou sinala o obxecto",
+        "es": "Coge o señala el objeto"
+      },
+      {
+        "gl": "Anticipa o momento: xa sabe que vén o inglés",
+        "es": "Anticipa el momento: ya sabe que llega el inglés"
+      }
+    ],
+    "reactivarCasa": {
+      "en": "Eat",
+      "texto": {
+        "gl": "Noutro momento do día, sen avisar, volve dicir «Eat», a palabra do mes pasado, sinalándoa.",
+        "es": "En otro momento del día, sin avisar, vuelve a decir «Eat», la palabra del mes pasado, señalándola."
+      }
+    }
+  },
   "microcuento": {
     "id": "microcuento.curso_2_3.07",
     "titulo": {
@@ -322,5 +523,6 @@
         }
       }
     ]
-  }
+  },
+  "criterio": "normativa.curso_2_3"
 }

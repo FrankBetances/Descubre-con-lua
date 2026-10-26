@@ -83,7 +83,208 @@
   "reactivar": [
     "frase.cmd.xaneiro.2_3.02"
   ],
-  "hogar": null,
+  "hogar": {
+    "momento": {
+      "gl": "Na merenda",
+      "es": "En la merienda"
+    },
+    "minutos": 8,
+    "escena": {
+      "gl": "A froita da merenda",
+      "es": "La fruta de la merienda"
+    },
+    "retosCasa": [
+      {
+        "id": "reto.curso_2_3.02.1",
+        "semana": 1,
+        "fase": "descubrir",
+        "nomeFase": {
+          "gl": "Descubrir",
+          "es": "Descubrir"
+        },
+        "frase": {
+          "en": "Eat",
+          "gl": "comer",
+          "es": "comer"
+        },
+        "queFacer": {
+          "gl": "Dio ti mentres o fas, cara a cara e á súa altura: «Eat». Só ten que escoitar e mirar.",
+          "es": "Dilo tú mientras lo haces, cara a cara y a su altura: «Eat». Solo tiene que escuchar y mirar."
+        },
+        "mans": {
+          "gl": "Sinala ou colle o que nomeas: comer.",
+          "es": "Señala o coge lo que nombras: comer."
+        },
+        "esperaSegundos": 5,
+        "nonPedir": {
+          "gl": "Non hai que dicilo: abonda con que o faga co corpo ou colla o obxecto.",
+          "es": "No hay que decirlo: basta con que lo haga con el cuerpo o coja el objeto."
+        },
+        "recast": {
+          "silencio": {
+            "gl": "Fai ti o xesto e volve dicir «Eat» amodo, sorrindo, e segue co xogo.",
+            "es": "Haz tú el gesto y vuelve a decir «Eat» despacio, sonriendo, y sigue con el juego."
+          },
+          "linguaCasa": {
+            "gl": "Acolle o que di na lingua da casa, asente e devólvello en inglés: «Eat».",
+            "es": "Acoge lo que dice en la lengua de casa, asiente y devuélveselo en inglés: «Eat»."
+          },
+          "unhaPalabra": {
+            "gl": "Celébrao e engade o que falta: «Yes! Eat».",
+            "es": "Celébralo y añade lo que falta: «Yes! Eat»."
+          }
+        }
+      },
+      {
+        "id": "reto.curso_2_3.02.2",
+        "semana": 2,
+        "fase": "practicar",
+        "nomeFase": {
+          "gl": "Practicar",
+          "es": "Practicar"
+        },
+        "frase": {
+          "en": "Bite!"
+        },
+        "queFacer": {
+          "gl": "Di «Bite!» e fai o xesto á vez. Agarda e, se o fai, facédeo xuntos outra vez.",
+          "es": "Di «Bite!» y haz el gesto a la vez. Espera y, si lo hace, hacedlo juntos otra vez."
+        },
+        "mans": {
+          "gl": "Facer como que se dá unha trabada grande, abrindo e pechando a boca e batendo os dentes.",
+          "es": "Hacer como que se da un mordisco grande, abriendo y cerrando la boca y chocando los dientes."
+        },
+        "esperaSegundos": 5,
+        "nonPedir": {
+          "gl": "Non hai que dicilo: abonda con que o faga co corpo ou colla o obxecto.",
+          "es": "No hay que decirlo: basta con que lo haga con el cuerpo o coja el objeto."
+        },
+        "recast": {
+          "silencio": {
+            "gl": "Fai ti o xesto e volve dicir «Bite!» amodo, sorrindo, e segue co xogo.",
+            "es": "Haz tú el gesto y vuelve a decir «Bite!» despacio, sonriendo, y sigue con el juego."
+          },
+          "linguaCasa": {
+            "gl": "Acolle o que di na lingua da casa, asente e devólvello en inglés: «Bite!».",
+            "es": "Acoge lo que dice en la lengua de casa, asiente y devuélveselo en inglés: «Bite!»."
+          },
+          "unhaPalabra": {
+            "gl": "Celébrao e engade o que falta: «Yes! Bite!».",
+            "es": "Celébralo y añade lo que falta: «Yes! Bite!»."
+          }
+        }
+      },
+      {
+        "id": "reto.curso_2_3.02.3",
+        "semana": 3,
+        "fase": "combinar",
+        "nomeFase": {
+          "gl": "Combinar",
+          "es": "Combinar"
+        },
+        "frase": {
+          "en": "Feel the bread. It is warm. Warm bread! Now, take a bite! Bite! Crunch!",
+          "gl": "Toca o pan. Está morno. Pan morno! Agora, dálle unha trabada! Traba! Cronch!",
+          "es": "Toca el pan. Está templado. ¡Pan templado! Ahora, ¡dale un mordisco! ¡Muerde! ¡Crunch!"
+        },
+        "queFacer": {
+          "gl": "Xunta a frase desta semana coa da semana pasada nun xogo curto: «Feel the bread. It is warm. Warm bread! Now, take a bite! Bite! Crunch!» e, despois, «Bite!».",
+          "es": "Junta la frase de esta semana con la de la semana pasada en un juego corto: «Feel the bread. It is warm. Warm bread! Now, take a bite! Bite! Crunch!» y, después, «Bite!»."
+        },
+        "mans": {
+          "gl": "Ten na man aquilo do que falas e ensínallo mentres o dis.",
+          "es": "Ten en la mano aquello de lo que hablas y enséñaselo mientras lo dices."
+        },
+        "esperaSegundos": 5,
+        "nonPedir": {
+          "gl": "Non hai que dicilo: abonda con que o faga co corpo ou colla o obxecto.",
+          "es": "No hay que decirlo: basta con que lo haga con el cuerpo o coja el objeto."
+        },
+        "recast": {
+          "silencio": {
+            "gl": "Fai ti o xesto e volve dicir «Feel the bread. It is warm. Warm bread! Now, take a bite! Bite! Crunch!» amodo, sorrindo, e segue co xogo.",
+            "es": "Haz tú el gesto y vuelve a decir «Feel the bread. It is warm. Warm bread! Now, take a bite! Bite! Crunch!» despacio, sonriendo, y sigue con el juego."
+          },
+          "linguaCasa": {
+            "gl": "Acolle o que di na lingua da casa, asente e devólvello en inglés: «Feel the bread. It is warm. Warm bread! Now, take a bite! Bite! Crunch!».",
+            "es": "Acoge lo que dice en la lengua de casa, asiente y devuélveselo en inglés: «Feel the bread. It is warm. Warm bread! Now, take a bite! Bite! Crunch!»."
+          },
+          "unhaPalabra": {
+            "gl": "Celébrao e engade o que falta: «Yes! Feel the bread. It is warm. Warm bread! Now, take a bite! Bite! Crunch!».",
+            "es": "Celébralo y añade lo que falta: «Yes! Feel the bread. It is warm. Warm bread! Now, take a bite! Bite! Crunch!»."
+          }
+        }
+      },
+      {
+        "id": "reto.curso_2_3.02.4",
+        "semana": 4,
+        "fase": "consolidar",
+        "nomeFase": {
+          "gl": "Consolidar",
+          "es": "Consolidar"
+        },
+        "frase": {
+          "en": "Mmm, warm and soft",
+          "gl": "Mmm, morno e suave",
+          "es": "Mmm, templado y suave"
+        },
+        "queFacer": {
+          "gl": "Di o comezo, «Mmm, warm and…», e deixa o oco. Se o completa co corpo ou cunha palabra, celébrao e di a frase enteira.",
+          "es": "Di el comienzo, «Mmm, warm and…», y deja el hueco. Si lo completa con el cuerpo o con una palabra, celébralo y di la frase entera."
+        },
+        "mans": {
+          "gl": "Ten na man aquilo do que falas e ensínallo mentres o dis.",
+          "es": "Ten en la mano aquello de lo que hablas y enséñaselo mientras lo dices."
+        },
+        "esperaSegundos": 5,
+        "nonPedir": {
+          "gl": "Non hai que dicilo: abonda con que o faga co corpo ou colla o obxecto.",
+          "es": "No hay que decirlo: basta con que lo haga con el cuerpo o coja el objeto."
+        },
+        "recast": {
+          "silencio": {
+            "gl": "Fai ti o xesto e volve dicir «Mmm, warm and soft» amodo, sorrindo, e segue co xogo.",
+            "es": "Haz tú el gesto y vuelve a decir «Mmm, warm and soft» despacio, sonriendo, y sigue con el juego."
+          },
+          "linguaCasa": {
+            "gl": "Acolle o que di na lingua da casa, asente e devólvello en inglés: «Mmm, warm and soft».",
+            "es": "Acoge lo que dice en la lengua de casa, asiente y devuélveselo en inglés: «Mmm, warm and soft»."
+          },
+          "unhaPalabra": {
+            "gl": "Celébrao e engade o que falta: «Yes! Mmm, warm and soft».",
+            "es": "Celébralo y añade lo que falta: «Yes! Mmm, warm and soft»."
+          }
+        }
+      }
+    ],
+    "lecturaCasa": {
+      "microcuento": "microcuento.curso_2_3.06"
+    },
+    "juegoCasa": {
+      "xogo": "xogo_09_caixa_sons_texturas"
+    },
+    "queObservarCasa": [
+      {
+        "gl": "Fai o xesto cando oe «Eat»",
+        "es": "Hace el gesto cuando oye «Eat»"
+      },
+      {
+        "gl": "Colle ou sinala o obxecto",
+        "es": "Coge o señala el objeto"
+      },
+      {
+        "gl": "Anticipa o momento: xa sabe que vén o inglés",
+        "es": "Anticipa el momento: ya sabe que llega el inglés"
+      }
+    ],
+    "reactivarCasa": {
+      "en": "Apple",
+      "texto": {
+        "gl": "Noutro momento do día, sen avisar, volve dicir «Apple», a palabra do mes pasado, sinalándoa.",
+        "es": "En otro momento del día, sin avisar, vuelve a decir «Apple», la palabra del mes pasado, señalándola."
+      }
+    }
+  },
   "microcuento": {
     "id": "microcuento.curso_2_3.06",
     "titulo": {
@@ -327,5 +528,6 @@
         }
       }
     ]
-  }
+  },
+  "criterio": "normativa.curso_2_3"
 }

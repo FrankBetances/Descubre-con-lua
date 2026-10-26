@@ -256,6 +256,11 @@ void main() {
         for (final peza in u.nucleo) {
           expect(find.text(peza.en), findsWidgets, reason: peza.en);
         }
+        // M4.4: la nota trae el reto de casa de la semana, el mismo de Hoxe.
+        expect(find.byKey(const Key('nota_reto_da_semana'), skipOffstage: false),
+            findsOneWidget);
+        expect(find.text(u.hogar!.daSemana(1)!.frase.en, skipOffstage: false),
+            findsWidgets);
         final rutina = g.segundo?.microRutinaHogar;
         if (rutina == null) {
           expect(

@@ -1,12 +1,12 @@
 {
- "generatedAt": "2026-10-25T19:09:50Z",
- "entries": 36372,
+ "generatedAt": "2026-10-26T07:34:12Z",
+ "entries": 36374,
  "byStyle": {
-  "slow": 5954,
+  "slow": 5956,
   "tutor": 30418
  },
  "byLang": {
-  "en": 16918,
+  "en": 16920,
   "es": 9727,
   "gl": 9727
  },
@@ -1278,6 +1278,15 @@
    "text": "arrange",
    "speech": "arrange",
    "source": "corpus/50/lemma",
+   "pack": false
+  },
+  {
+   "id": "en_slow_0644fc10_6",
+   "lang": "en",
+   "style": "slow",
+   "text": "Violin",
+   "speech": "Violin",
+   "source": "registro/frase.lamina.flashcard_v_violin",
    "pack": false
   },
   {
@@ -40098,6 +40107,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_c02c5b9f_5",
+   "lang": "en",
+   "style": "slow",
+   "text": "Juice",
+   "speech": "Juice",
+   "source": "registro/frase.lamina.flashcard_j_juice",
+   "pack": false
+  },
+  {
    "id": "en_slow_c037b379_7",
    "lang": "en",
    "style": "slow",
@@ -56060,7 +56078,7 @@
    "style": "tutor",
    "text": "Stop! It's full!",
    "speech": "Stop! It's full!",
-   "source": "steam/STEAM-3_4-04",
+   "source": "registro/frase.steam_mes.STEAM-3_4-04.02",
    "pack": false
   },
   {
@@ -57509,7 +57527,7 @@
    "style": "tutor",
    "text": "Listen to the heart!",
    "speech": "Listen to the heart!",
-   "source": "steam/STEAM-4_5-10",
+   "source": "registro/frase.steam_mes.STEAM-4_5-10.01",
    "pack": false
   },
   {
@@ -58004,7 +58022,7 @@
    "style": "tutor",
    "text": "Big sound, small sound!",
    "speech": "Big sound, small sound!",
-   "source": "steam/STEAM-2_3-12",
+   "source": "registro/frase.steam_mes.STEAM-2_3-12.02",
    "pack": false
   },
   {
@@ -59786,7 +59804,7 @@
    "style": "tutor",
    "text": "Examine with the lens!",
    "speech": "Examine with the lens!",
-   "source": "steam/STEAM-4_5-12",
+   "source": "registro/frase.steam_mes.STEAM-4_5-12.01",
    "pack": false
   },
   {
@@ -60128,7 +60146,7 @@
    "style": "tutor",
    "text": "Heavy! Light!",
    "speech": "Heavy! Light!",
-   "source": "steam/STEAM-2_3-04",
+   "source": "registro/frase.steam_mes.STEAM-2_3-04.02",
    "pack": false
   },
   {
@@ -62468,7 +62486,7 @@
    "style": "tutor",
    "text": "Squeeze the soft bread!",
    "speech": "Squeeze the soft bread!",
-   "source": "steam/STEAM-2_3-01",
+   "source": "registro/frase.steam_mes.STEAM-2_3-01.01",
    "pack": false
   },
   {
@@ -64214,7 +64232,7 @@
    "style": "tutor",
    "text": "Is it heavy?",
    "speech": "Is it heavy?",
-   "source": "steam/STEAM-5_6-04",
+   "source": "registro/frase.steam_mes.STEAM-5_6-04.02",
    "pack": false
   },
   {
@@ -64691,7 +64709,7 @@
    "style": "tutor",
    "text": "Four legs here!",
    "speech": "Four legs here!",
-   "source": "steam/STEAM-4_5-11",
+   "source": "registro/frase.steam_mes.STEAM-4_5-11.01",
    "pack": false
   },
   {
@@ -64997,7 +65015,7 @@
    "style": "tutor",
    "text": "Slow, slow! Together!",
    "speech": "Slow, slow! Together!",
-   "source": "steam/STEAM-4_5-01",
+   "source": "registro/frase.steam_mes.STEAM-4_5-01.02",
    "pack": false
   },
   {
@@ -66788,7 +66806,7 @@
    "style": "tutor",
    "text": "Fast! Slow!",
    "speech": "Fast! Slow!",
-   "source": "steam/STEAM-3_4-11",
+   "source": "registro/frase.steam_mes.STEAM-3_4-11.02",
    "pack": false
   },
   {
@@ -67985,7 +68003,7 @@
    "style": "tutor",
    "text": "Two legs there!",
    "speech": "Two legs there!",
-   "source": "steam/STEAM-4_5-11",
+   "source": "registro/frase.steam_mes.STEAM-4_5-11.02",
    "pack": false
   },
   {
@@ -68750,7 +68768,7 @@
    "style": "tutor",
    "text": "It's windy!",
    "speech": "It's windy!",
-   "source": "steam/STEAM-4_5-03",
+   "source": "registro/frase.steam_mes.STEAM-4_5-03.02",
    "pack": false
   },
   {
@@ -70865,7 +70883,7 @@
    "style": "tutor",
    "text": "Roll the ball!",
    "speech": "Roll the ball!",
-   "source": "steam/STEAM-0_2-06",
+   "source": "registro/frase.steam_mes.STEAM-0_2-06.01",
    "pack": false
   },
   {
@@ -71333,7 +71351,7 @@
    "style": "tutor",
    "text": "Mix the soil and water!",
    "speech": "Mix the soil and water!",
-   "source": "steam/STEAM-4_5-02",
+   "source": "registro/frase.steam_mes.STEAM-4_5-02.01",
    "pack": false
   },
   {
@@ -71351,7 +71369,7 @@
    "style": "tutor",
    "text": "Drop the water!",
    "speech": "Drop the water!",
-   "source": "steam/STEAM-4_5-09",
+   "source": "registro/frase.steam_mes.STEAM-4_5-09.01",
    "pack": false
   },
   {
@@ -74348,7 +74366,7 @@
    "style": "tutor",
    "text": "Look! A dog shadow!",
    "speech": "Look! A dog shadow!",
-   "source": "steam/STEAM-0_2-05",
+   "source": "registro/frase.steam_mes.STEAM-0_2-05.01",
    "pack": false
   },
   {
@@ -76481,7 +76499,7 @@
    "style": "tutor",
    "text": "Big stone here!",
    "speech": "Big stone here!",
-   "source": "steam/STEAM-2_3-11",
+   "source": "registro/frase.steam_mes.STEAM-2_3-11.01",
    "pack": false
   },
   {
@@ -77273,7 +77291,7 @@
    "style": "tutor",
    "text": "Throw the plane gently!",
    "speech": "Throw the plane gently!",
-   "source": "steam/STEAM-5_6-02",
+   "source": "registro/frase.steam_mes.STEAM-5_6-02.01",
    "pack": false
   },
   {
@@ -79424,7 +79442,7 @@
    "style": "tutor",
    "text": "Mix red and yellow!",
    "speech": "Mix red and yellow!",
-   "source": "steam/STEAM-5_6-09",
+   "source": "registro/frase.steam_mes.STEAM-5_6-09.01",
    "pack": false
   },
   {
@@ -81224,7 +81242,7 @@
    "style": "tutor",
    "text": "Shake the bottle!",
    "speech": "Shake the bottle!",
-   "source": "steam/STEAM-0_2-10",
+   "source": "registro/frase.steam_mes.STEAM-0_2-10.02",
    "pack": false
   },
   {
@@ -83753,7 +83771,7 @@
    "style": "tutor",
    "text": "Flash the light!",
    "speech": "Flash the light!",
-   "source": "steam/STEAM-5_6-05",
+   "source": "registro/frase.steam_mes.STEAM-5_6-05.01",
    "pack": false
   },
   {
@@ -85544,7 +85562,7 @@
    "style": "tutor",
    "text": "Go, stars! Stop!",
    "speech": "Go, stars! Stop!",
-   "source": "steam/STEAM-2_3-06",
+   "source": "registro/frase.steam_mes.STEAM-2_3-06.02",
    "pack": false
   },
   {
@@ -85598,7 +85616,7 @@
    "style": "tutor",
    "text": "Build a tall tower!",
    "speech": "Build a tall tower!",
-   "source": "steam/STEAM-3_4-09",
+   "source": "registro/frase.steam_mes.STEAM-3_4-09.01",
    "pack": false
   },
   {
@@ -86795,7 +86813,7 @@
    "style": "tutor",
    "text": "What sound is it?",
    "speech": "What sound is it?",
-   "source": "steam/STEAM-5_6-01",
+   "source": "registro/frase.steam_mes.STEAM-5_6-01.02",
    "pack": false
   },
   {
@@ -87200,7 +87218,7 @@
    "style": "tutor",
    "text": "Run, shadow! Stop!",
    "speech": "Run, shadow! Stop!",
-   "source": "steam/STEAM-0_2-05",
+   "source": "registro/frase.steam_mes.STEAM-0_2-05.02",
    "pack": false
   },
   {
@@ -87821,7 +87839,7 @@
    "style": "tutor",
    "text": "Long pipe, low sound!",
    "speech": "Long pipe, low sound!",
-   "source": "steam/STEAM-5_6-06",
+   "source": "registro/frase.steam_mes.STEAM-5_6-06.02",
    "pack": false
   },
   {
@@ -87866,7 +87884,7 @@
    "style": "tutor",
    "text": "One plate, one spoon!",
    "speech": "One plate, one spoon!",
-   "source": "steam/STEAM-3_4-03",
+   "source": "registro/frase.steam_mes.STEAM-3_4-03.01",
    "pack": false
   },
   {
@@ -88883,7 +88901,7 @@
    "style": "tutor",
    "text": "Look in the spoon!",
    "speech": "Look in the spoon!",
-   "source": "steam/STEAM-3_4-06",
+   "source": "registro/frase.steam_mes.STEAM-3_4-06.01",
    "pack": false
   },
   {
@@ -91214,7 +91232,7 @@
    "style": "tutor",
    "text": "Jump! Now listen!",
    "speech": "Jump! Now listen!",
-   "source": "steam/STEAM-4_5-10",
+   "source": "registro/frase.steam_mes.STEAM-4_5-10.02",
    "pack": false
   },
   {
@@ -91268,7 +91286,7 @@
    "style": "tutor",
    "text": "Pop the bubble!",
    "speech": "Pop the bubble!",
-   "source": "steam/STEAM-0_2-03",
+   "source": "registro/frase.steam_mes.STEAM-0_2-03.02",
    "pack": false
   },
   {
@@ -93797,7 +93815,7 @@
    "style": "tutor",
    "text": "Make the rain!",
    "speech": "Make the rain!",
-   "source": "steam/STEAM-4_5-04",
+   "source": "registro/frase.steam_mes.STEAM-4_5-04.01",
    "pack": false
   },
   {
@@ -94976,7 +94994,7 @@
    "style": "tutor",
    "text": "Stir with the spoon!",
    "speech": "Stir with the spoon!",
-   "source": "steam/STEAM-3_4-02",
+   "source": "registro/frase.steam_mes.STEAM-3_4-02.02",
    "pack": false
   },
   {
@@ -95723,7 +95741,7 @@
    "style": "tutor",
    "text": "Touch the wet sponge!",
    "speech": "Touch the wet sponge!",
-   "source": "steam/STEAM-0_2-09",
+   "source": "registro/frase.steam_mes.STEAM-0_2-09.02",
    "pack": false
   },
   {
@@ -96146,7 +96164,7 @@
    "style": "tutor",
    "text": "Big shadow, small shadow!",
    "speech": "Big shadow, small shadow!",
-   "source": "steam/STEAM-0_2-12",
+   "source": "registro/frase.steam_mes.STEAM-0_2-12.02",
    "pack": false
   },
   {
@@ -96200,7 +96218,7 @@
    "style": "tutor",
    "text": "Look! Bubbles!",
    "speech": "Look! Bubbles!",
-   "source": "steam/STEAM-0_2-03",
+   "source": "registro/frase.steam_mes.STEAM-0_2-03.01",
    "pack": false
   },
   {
@@ -96299,7 +96317,7 @@
    "style": "tutor",
    "text": "Big stone, down!",
    "speech": "Big stone, down!",
-   "source": "steam/STEAM-0_2-11",
+   "source": "registro/frase.steam_mes.STEAM-0_2-11.02",
    "pack": false
   },
   {
@@ -99305,7 +99323,7 @@
    "style": "tutor",
    "text": "How far? Count the steps!",
    "speech": "How far? Count the steps!",
-   "source": "steam/STEAM-5_6-02",
+   "source": "registro/frase.steam_mes.STEAM-5_6-02.02",
    "pack": false
   },
   {
@@ -99872,7 +99890,7 @@
    "style": "tutor",
    "text": "Sunny! Hat on!",
    "speech": "Sunny! Hat on!",
-   "source": "steam/STEAM-4_5-06",
+   "source": "registro/frase.steam_mes.STEAM-4_5-06.02",
    "pack": false
   },
   {
@@ -101051,7 +101069,7 @@
    "style": "tutor",
    "text": "Find your shadow!",
    "speech": "Find your shadow!",
-   "source": "steam/STEAM-4_5-05",
+   "source": "registro/frase.steam_mes.STEAM-4_5-05.01",
    "pack": false
   },
   {
@@ -101114,7 +101132,7 @@
    "style": "tutor",
    "text": "High! Low!",
    "speech": "High! Low!",
-   "source": "steam/STEAM-3_4-05",
+   "source": "registro/frase.steam_mes.STEAM-3_4-05.02",
    "pack": false
   },
   {
@@ -101204,7 +101222,7 @@
    "style": "tutor",
    "text": "Bread in the box!",
    "speech": "Bread in the box!",
-   "source": "steam/STEAM-0_2-01",
+   "source": "registro/frase.steam_mes.STEAM-0_2-01.02",
    "pack": false
   },
   {
@@ -101213,7 +101231,7 @@
    "style": "tutor",
    "text": "Fold the paper!",
    "speech": "Fold the paper!",
-   "source": "steam/STEAM-5_6-11",
+   "source": "registro/frase.steam_mes.STEAM-5_6-11.01",
    "pack": false
   },
   {
@@ -101942,7 +101960,7 @@
    "style": "tutor",
    "text": "Spin the circle!",
    "speech": "Spin the circle!",
-   "source": "steam/STEAM-5_6-12",
+   "source": "registro/frase.steam_mes.STEAM-5_6-12.01",
    "pack": false
   },
   {
@@ -102797,7 +102815,7 @@
    "style": "tutor",
    "text": "It's raining! Boots on!",
    "speech": "It's raining! Boots on!",
-   "source": "steam/STEAM-4_5-06",
+   "source": "registro/frase.steam_mes.STEAM-4_5-06.01",
    "pack": false
   },
   {
@@ -103427,7 +103445,7 @@
    "style": "tutor",
    "text": "Listen! Drip, drop!",
    "speech": "Listen! Drip, drop!",
-   "source": "steam/STEAM-0_2-10",
+   "source": "registro/frase.steam_mes.STEAM-0_2-10.01",
    "pack": false
   },
   {
@@ -103490,7 +103508,7 @@
    "style": "tutor",
    "text": "Drop the leaf!",
    "speech": "Drop the leaf!",
-   "source": "steam/STEAM-0_2-11",
+   "source": "registro/frase.steam_mes.STEAM-0_2-11.01",
    "pack": false
   },
   {
@@ -103724,7 +103742,7 @@
    "style": "tutor",
    "text": "Splash the water!",
    "speech": "Splash the water!",
-   "source": "steam/STEAM-0_2-09",
+   "source": "registro/frase.steam_mes.STEAM-0_2-09.01",
    "pack": false
   },
   {
@@ -104705,7 +104723,7 @@
    "style": "tutor",
    "text": "Lift the wet towel!",
    "speech": "Lift the wet towel!",
-   "source": "steam/STEAM-2_3-04",
+   "source": "registro/frase.steam_mes.STEAM-2_3-04.01",
    "pack": false
   },
   {
@@ -104831,7 +104849,7 @@
    "style": "tutor",
    "text": "Blow the boat!",
    "speech": "Blow the boat!",
-   "source": "steam/STEAM-2_3-10",
+   "source": "registro/frase.steam_mes.STEAM-2_3-10.01",
    "pack": false
   },
   {
@@ -107981,7 +107999,7 @@
    "style": "tutor",
    "text": "Upside down!",
    "speech": "Upside down!",
-   "source": "steam/STEAM-3_4-06",
+   "source": "registro/frase.steam_mes.STEAM-3_4-06.02",
    "pack": false
   },
   {
@@ -110177,7 +110195,7 @@
    "style": "tutor",
    "text": "Short shadow!",
    "speech": "Short shadow!",
-   "source": "steam/STEAM-3_4-01",
+   "source": "registro/frase.steam_mes.STEAM-3_4-01.02",
    "pack": false
   },
   {
@@ -113309,7 +113327,7 @@
    "style": "tutor",
    "text": "A star!",
    "speech": "A star!",
-   "source": "steam/STEAM-2_3-02",
+   "source": "registro/frase.steam_mes.STEAM-2_3-02.02",
    "pack": false
   },
   {
@@ -113516,7 +113534,7 @@
    "style": "tutor",
    "text": "Touch the warm bread!",
    "speech": "Touch the warm bread!",
-   "source": "steam/STEAM-0_2-02",
+   "source": "registro/frase.steam_mes.STEAM-0_2-02.01",
    "pack": false
   },
   {
@@ -114173,7 +114191,7 @@
    "style": "tutor",
    "text": "Tap with the spoon!",
    "speech": "Tap with the spoon!",
-   "source": "steam/STEAM-3_4-05",
+   "source": "registro/frase.steam_mes.STEAM-3_4-05.01",
    "pack": false
   },
   {
@@ -114362,7 +114380,7 @@
    "style": "tutor",
    "text": "Look inside the apple!",
    "speech": "Look inside the apple!",
-   "source": "steam/STEAM-2_3-02",
+   "source": "registro/frase.steam_mes.STEAM-2_3-02.01",
    "pack": false
   },
   {
@@ -115829,7 +115847,7 @@
    "style": "tutor",
    "text": "Is it empty?",
    "speech": "Is it empty?",
-   "source": "steam/STEAM-3_4-03",
+   "source": "registro/frase.steam_mes.STEAM-3_4-03.02",
    "pack": false
   },
   {
@@ -118520,7 +118538,7 @@
    "style": "tutor",
    "text": "It's muddy!",
    "speech": "It's muddy!",
-   "source": "steam/STEAM-4_5-02",
+   "source": "registro/frase.steam_mes.STEAM-4_5-02.02",
    "pack": false
   },
   {
@@ -120428,7 +120446,7 @@
    "style": "tutor",
    "text": "Bandage the leg, gently!",
    "speech": "Bandage the leg, gently!",
-   "source": "steam/STEAM-4_5-09",
+   "source": "registro/frase.steam_mes.STEAM-4_5-09.02",
    "pack": false
   },
   {
@@ -122273,7 +122291,7 @@
    "style": "tutor",
    "text": "Choo-choo! Faster!",
    "speech": "Choo choo! Faster!",
-   "source": "steam/STEAM-5_6-06",
+   "source": "registro/frase.steam_mes.STEAM-5_6-06.01",
    "pack": false
   },
   {
@@ -122489,7 +122507,7 @@
    "style": "tutor",
    "text": "Talk in the cup!",
    "speech": "Talk in the cup!",
-   "source": "steam/STEAM-3_4-12",
+   "source": "registro/frase.steam_mes.STEAM-3_4-12.01",
    "pack": false
   },
   {
@@ -122885,7 +122903,7 @@
    "style": "tutor",
    "text": "Red block, blue block!",
    "speech": "Red block, blue block!",
-   "source": "steam/STEAM-3_4-10",
+   "source": "registro/frase.steam_mes.STEAM-3_4-10.01",
    "pack": false
   },
   {
@@ -123425,7 +123443,7 @@
    "style": "tutor",
    "text": "The colours mix!",
    "speech": "The colours mix!",
-   "source": "steam/STEAM-5_6-12",
+   "source": "registro/frase.steam_mes.STEAM-5_6-12.02",
    "pack": false
   },
   {
@@ -124082,7 +124100,7 @@
    "style": "tutor",
    "text": "Carry it gently!",
    "speech": "Carry it gently!",
-   "source": "steam/STEAM-4_5-01",
+   "source": "registro/frase.steam_mes.STEAM-4_5-01.01",
    "pack": false
   },
   {
@@ -124496,7 +124514,7 @@
    "style": "tutor",
    "text": "It's big! Look!",
    "speech": "It's big! Look!",
-   "source": "steam/STEAM-4_5-12",
+   "source": "registro/frase.steam_mes.STEAM-4_5-12.02",
    "pack": false
   },
   {
@@ -124505,7 +124523,7 @@
    "style": "tutor",
    "text": "Drop! Listen!",
    "speech": "Drop! Listen!",
-   "source": "steam/STEAM-2_3-12",
+   "source": "registro/frase.steam_mes.STEAM-2_3-12.01",
    "pack": false
   },
   {
@@ -124640,7 +124658,7 @@
    "style": "tutor",
    "text": "Soft, soft!",
    "speech": "Soft, soft!",
-   "source": "steam/STEAM-0_2-04",
+   "source": "registro/frase.steam_mes.STEAM-0_2-04.02",
    "pack": false
   },
   {
@@ -124820,7 +124838,7 @@
    "style": "tutor",
    "text": "Pack the suitcase!",
    "speech": "Pack the suitcase!",
-   "source": "steam/STEAM-5_6-04",
+   "source": "registro/frase.steam_mes.STEAM-5_6-04.01",
    "pack": false
   },
   {
@@ -124910,7 +124928,7 @@
    "style": "tutor",
    "text": "Small leaf there!",
    "speech": "Small leaf there!",
-   "source": "steam/STEAM-2_3-11",
+   "source": "registro/frase.steam_mes.STEAM-2_3-11.02",
    "pack": false
   },
   {
@@ -125819,7 +125837,7 @@
    "style": "tutor",
    "text": "Hard bread! Knock, knock!",
    "speech": "Hard bread! Knock, knock!",
-   "source": "steam/STEAM-2_3-01",
+   "source": "registro/frase.steam_mes.STEAM-2_3-01.02",
    "pack": false
   },
   {
@@ -127538,7 +127556,7 @@
    "style": "tutor",
    "text": "First water, then soap!",
    "speech": "First water, then soap!",
-   "source": "steam/STEAM-2_3-03",
+   "source": "registro/frase.steam_mes.STEAM-2_3-03.02",
    "pack": false
   },
   {
@@ -128204,7 +128222,7 @@
    "style": "tutor",
    "text": "One, two… stop!",
    "speech": "One, two… stop!",
-   "source": "steam/STEAM-5_6-05",
+   "source": "registro/frase.steam_mes.STEAM-5_6-05.02",
    "pack": false
   },
   {
@@ -128816,7 +128834,7 @@
    "style": "tutor",
    "text": "Down, stone! Splash!",
    "speech": "Down, stone! Splash!",
-   "source": "steam/STEAM-2_3-09",
+   "source": "registro/frase.steam_mes.STEAM-2_3-09.02",
    "pack": false
   },
   {
@@ -128843,7 +128861,7 @@
    "style": "tutor",
    "text": "Hat on! Look at the shadow!",
    "speech": "Hat on! Look at the shadow!",
-   "source": "steam/STEAM-4_5-05",
+   "source": "registro/frase.steam_mes.STEAM-4_5-05.02",
    "pack": false
   },
   {
@@ -131453,7 +131471,7 @@
    "style": "tutor",
    "text": "Crumple the paper!",
    "speech": "Crumple the paper!",
-   "source": "steam/STEAM-5_6-01",
+   "source": "registro/frase.steam_mes.STEAM-5_6-01.01",
    "pack": false
   },
   {
@@ -131705,7 +131723,7 @@
    "style": "tutor",
    "text": "Sleep, cat. Shh…",
    "speech": "Sleep, cat. Shh…",
-   "source": "steam/STEAM-2_3-05",
+   "source": "registro/frase.steam_mes.STEAM-2_3-05.02",
    "pack": false
   },
   {
@@ -131903,7 +131921,7 @@
    "style": "tutor",
    "text": "Long shadow!",
    "speech": "Long shadow!",
-   "source": "steam/STEAM-3_4-01",
+   "source": "registro/frase.steam_mes.STEAM-3_4-01.01",
    "pack": false
   },
   {
@@ -132740,7 +132758,7 @@
    "style": "tutor",
    "text": "Blow the windmill!",
    "speech": "Blow the windmill!",
-   "source": "steam/STEAM-4_5-03",
+   "source": "registro/frase.steam_mes.STEAM-4_5-03.01",
    "pack": false
   },
   {
@@ -134090,7 +134108,7 @@
    "style": "tutor",
    "text": "Turn left!",
    "speech": "Turn left!",
-   "source": "steam/STEAM-5_6-03",
+   "source": "registro/frase.steam_mes.STEAM-5_6-03.02",
    "pack": false
   },
   {
@@ -135341,7 +135359,7 @@
    "style": "tutor",
    "text": "Rub the towel!",
    "speech": "Rub the towel!",
-   "source": "steam/STEAM-0_2-04",
+   "source": "registro/frase.steam_mes.STEAM-0_2-04.01",
    "pack": false
   },
   {
@@ -135620,7 +135638,7 @@
    "style": "tutor",
    "text": "Open it! The same!",
    "speech": "Open it! The same!",
-   "source": "steam/STEAM-5_6-11",
+   "source": "registro/frase.steam_mes.STEAM-5_6-11.02",
    "pack": false
   },
   {
@@ -135692,7 +135710,7 @@
    "style": "tutor",
    "text": "Float, boat!",
    "speech": "Float, boat!",
-   "source": "steam/STEAM-2_3-09",
+   "source": "registro/frase.steam_mes.STEAM-2_3-09.01",
    "pack": false
   },
   {
@@ -136556,7 +136574,7 @@
    "style": "tutor",
    "text": "Apple in the basket!",
    "speech": "Apple in the basket!",
-   "source": "steam/STEAM-0_2-01",
+   "source": "registro/frase.steam_mes.STEAM-0_2-01.01",
    "pack": false
   },
   {
@@ -137366,7 +137384,7 @@
    "style": "tutor",
    "text": "Wash your hands!",
    "speech": "Wash your hands!",
-   "source": "steam/STEAM-2_3-03",
+   "source": "registro/frase.steam_mes.STEAM-2_3-03.01",
    "pack": false
   },
   {
@@ -137402,7 +137420,7 @@
    "style": "tutor",
    "text": "Thunder! Boom!",
    "speech": "Thunder! Boom!",
-   "source": "steam/STEAM-4_5-04",
+   "source": "registro/frase.steam_mes.STEAM-4_5-04.02",
    "pack": false
   },
   {
@@ -137672,7 +137690,7 @@
    "style": "tutor",
    "text": "Ball in the box!",
    "speech": "Ball in the box!",
-   "source": "steam/STEAM-0_2-06",
+   "source": "registro/frase.steam_mes.STEAM-0_2-06.02",
    "pack": false
   },
   {
@@ -139706,7 +139724,7 @@
    "style": "tutor",
    "text": "Push the train!",
    "speech": "Push the train!",
-   "source": "steam/STEAM-3_4-11",
+   "source": "registro/frase.steam_mes.STEAM-3_4-11.01",
    "pack": false
   },
   {
@@ -140237,7 +140255,7 @@
    "style": "tutor",
    "text": "Two steps forward!",
    "speech": "Two steps forward!",
-   "source": "steam/STEAM-5_6-03",
+   "source": "registro/frase.steam_mes.STEAM-5_6-03.01",
    "pack": false
   },
   {
@@ -143099,7 +143117,7 @@
    "style": "tutor",
    "text": "Look through the red paper!",
    "speech": "Look through the red paper!",
-   "source": "steam/STEAM-5_6-10",
+   "source": "registro/frase.steam_mes.STEAM-5_6-10.01",
    "pack": false
   },
   {
@@ -144566,7 +144584,7 @@
    "style": "tutor",
    "text": "Listen! Can you hear me?",
    "speech": "Listen! Can you hear me?",
-   "source": "steam/STEAM-3_4-12",
+   "source": "registro/frase.steam_mes.STEAM-3_4-12.02",
    "pack": false
   },
   {
@@ -145025,7 +145043,7 @@
    "style": "tutor",
    "text": "Go, boat, go!",
    "speech": "Go, boat, go!",
-   "source": "steam/STEAM-2_3-10",
+   "source": "registro/frase.steam_mes.STEAM-2_3-10.02",
    "pack": false
   },
   {
@@ -146699,7 +146717,7 @@
    "style": "tutor",
    "text": "Orange! A new colour!",
    "speech": "Orange! A new colour!",
-   "source": "steam/STEAM-5_6-09",
+   "source": "registro/frase.steam_mes.STEAM-5_6-09.02",
    "pack": false
   },
   {
@@ -147806,7 +147824,7 @@
    "style": "tutor",
    "text": "Pour the juice!",
    "speech": "Pour the juice!",
-   "source": "steam/STEAM-3_4-04",
+   "source": "registro/frase.steam_mes.STEAM-3_4-04.01",
    "pack": false
   },
   {
@@ -148661,7 +148679,7 @@
    "style": "tutor",
    "text": "Cold apple! Brrr!",
    "speech": "Cold apple! Brrr!",
-   "source": "steam/STEAM-0_2-02",
+   "source": "registro/frase.steam_mes.STEAM-0_2-02.02",
    "pack": false
   },
   {
@@ -149624,7 +149642,7 @@
    "style": "tutor",
    "text": "Steady! Steady!",
    "speech": "Steady! Steady!",
-   "source": "steam/STEAM-3_4-09",
+   "source": "registro/frase.steam_mes.STEAM-3_4-09.02",
    "pack": false
   },
   {
@@ -150407,7 +150425,7 @@
    "style": "tutor",
    "text": "Look at the light!",
    "speech": "Look at the light!",
-   "source": "steam/STEAM-0_2-12",
+   "source": "registro/frase.steam_mes.STEAM-0_2-12.01",
    "pack": false
   },
   {
@@ -151145,7 +151163,7 @@
    "style": "tutor",
    "text": "Look, the ice melts!",
    "speech": "Look, the ice melts!",
-   "source": "steam/STEAM-3_4-02",
+   "source": "registro/frase.steam_mes.STEAM-3_4-02.01",
    "pack": false
   },
   {
@@ -151613,7 +151631,7 @@
    "style": "tutor",
    "text": "Look! Light in the box!",
    "speech": "Look! Light in the box!",
-   "source": "steam/STEAM-2_3-06",
+   "source": "registro/frase.steam_mes.STEAM-2_3-06.01",
    "pack": false
   },
   {
@@ -151694,7 +151712,7 @@
    "style": "tutor",
    "text": "Run, dog! Fast!",
    "speech": "Run, dog! Fast!",
-   "source": "steam/STEAM-2_3-05",
+   "source": "registro/frase.steam_mes.STEAM-2_3-05.01",
    "pack": false
   },
   {
@@ -151793,7 +151811,7 @@
    "style": "tutor",
    "text": "Everything is red!",
    "speech": "Everything is red!",
-   "source": "steam/STEAM-5_6-10",
+   "source": "registro/frase.steam_mes.STEAM-5_6-10.02",
    "pack": false
   },
   {

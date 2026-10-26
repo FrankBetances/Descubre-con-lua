@@ -466,7 +466,8 @@ class _UnidadesListScreenState extends State<UnidadesListScreen> {
               formulas: daUnidade?.formulas ?? const [],
               reactivar: daUnidade?.reactivar ?? const [],
               notaParaCasas: notaDaAsemblea(
-                  daUnidade, null, _language, widget.audioService),
+                  daUnidade, null, _language, widget.audioService,
+                  semana: dia?.semana ?? 1),
               premios: widget.premios,
               calendario: widget.calendario,
             ),
@@ -522,7 +523,8 @@ class _UnidadesListScreenState extends State<UnidadesListScreen> {
               formulas: daUnidade?.formulas ?? const [],
               reactivar: daUnidade?.reactivar ?? const [],
               notaParaCasas: notaDaAsemblea(
-                  daUnidade, asamblea, _language, widget.audioService),
+                  daUnidade, asamblea, _language, widget.audioService,
+                  semana: dia?.semana ?? 1),
               premios: widget.premios,
               calendario: widget.calendario,
             ),

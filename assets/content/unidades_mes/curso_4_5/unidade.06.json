@@ -104,7 +104,210 @@
   "reactivar": [
     "3_4.xaneiro.s2.umbrella"
   ],
-  "hogar": null,
+  "hogar": {
+    "momento": {
+      "gl": "Ao vestirse para saír, mirando pola fiestra",
+      "es": "Al vestirse para salir, mirando por la ventana"
+    },
+    "minutos": 8,
+    "escena": {
+      "gl": "O chuvasqueiro e as botas",
+      "es": "El chubasquero y las botas"
+    },
+    "retosCasa": [
+      {
+        "id": "reto.curso_4_5.02.1",
+        "semana": 1,
+        "fase": "descubrir",
+        "nomeFase": {
+          "gl": "Descubrir",
+          "es": "Descubrir"
+        },
+        "frase": {
+          "en": "rain",
+          "gl": "choiva",
+          "es": "lluvia"
+        },
+        "queFacer": {
+          "gl": "Dio ti mentres o fas, cara a cara e á súa altura: «rain». Só ten que escoitar e mirar.",
+          "es": "Dilo tú mientras lo haces, cara a cara y a su altura: «rain». Solo tiene que escuchar y mirar."
+        },
+        "mans": {
+          "gl": "Sinala ou colle o que nomeas: choiva.",
+          "es": "Señala o coge lo que nombras: lluvia."
+        },
+        "esperaSegundos": 5,
+        "nonPedir": {
+          "gl": "Non é unha proba: se responde na lingua da casa, tamén vale, e o xogo segue.",
+          "es": "No es una prueba: si responde en la lengua de casa, también vale, y el juego sigue."
+        },
+        "recast": {
+          "silencio": {
+            "gl": "Fai ti o xesto e volve dicir «rain» amodo, sorrindo, e segue co xogo.",
+            "es": "Haz tú el gesto y vuelve a decir «rain» despacio, sonriendo, y sigue con el juego."
+          },
+          "linguaCasa": {
+            "gl": "Acolle o que di na lingua da casa, asente e devólvello en inglés: «rain».",
+            "es": "Acoge lo que dice en la lengua de casa, asiente y devuélveselo en inglés: «rain»."
+          },
+          "unhaPalabra": {
+            "gl": "Celébrao e engade o que falta: «Yes! rain».",
+            "es": "Celébralo y añade lo que falta: «Yes! rain»."
+          }
+        }
+      },
+      {
+        "id": "reto.curso_4_5.02.2",
+        "semana": 2,
+        "fase": "practicar",
+        "nomeFase": {
+          "gl": "Practicar",
+          "es": "Practicar"
+        },
+        "frase": {
+          "en": "Look outside!",
+          "gl": "Mira fóra!",
+          "es": "¡Mira fuera!"
+        },
+        "queFacer": {
+          "gl": "Di «Look outside!» e fai o xesto á vez. Agarda e, se o fai, facédeo xuntos outra vez.",
+          "es": "Di «Look outside!» y haz el gesto a la vez. Espera y, si lo hace, hacedlo juntos otra vez."
+        },
+        "mans": {
+          "gl": "Acompáñaa dun xesto claro: dar, recibir ou sinalar a quen lle toca.",
+          "es": "Acompáñala de un gesto claro: dar, recibir o señalar a quien le toca."
+        },
+        "esperaSegundos": 5,
+        "nonPedir": {
+          "gl": "Non é unha proba: se responde na lingua da casa, tamén vale, e o xogo segue.",
+          "es": "No es una prueba: si responde en la lengua de casa, también vale, y el juego sigue."
+        },
+        "recast": {
+          "silencio": {
+            "gl": "Fai ti o xesto e volve dicir «Look outside!» amodo, sorrindo, e segue co xogo.",
+            "es": "Haz tú el gesto y vuelve a decir «Look outside!» despacio, sonriendo, y sigue con el juego."
+          },
+          "linguaCasa": {
+            "gl": "Acolle o que di na lingua da casa, asente e devólvello en inglés: «Look outside!».",
+            "es": "Acoge lo que dice en la lengua de casa, asiente y devuélveselo en inglés: «Look outside!»."
+          },
+          "unhaPalabra": {
+            "gl": "Celébrao e engade o que falta: «Yes! Look outside!».",
+            "es": "Celébralo y añade lo que falta: «Yes! Look outside!»."
+          }
+        }
+      },
+      {
+        "id": "reto.curso_4_5.02.3",
+        "semana": 3,
+        "fase": "combinar",
+        "nomeFase": {
+          "gl": "Combinar",
+          "es": "Combinar"
+        },
+        "frase": {
+          "en": "Listen! A stormy day! Put on your yellow boots! Why do we need boots?",
+          "gl": "Escoita! Un día de treboada! Ponte as botas amarelas! Por que necesitamos botas?",
+          "es": "¡Escucha! ¡Un día de tormenta! ¡Ponte las botas amarillas! ¿Por qué necesitamos botas?"
+        },
+        "queFacer": {
+          "gl": "Xunta a frase desta semana coa da semana pasada nun xogo curto: «Listen! A stormy day! Put on your yellow boots! Why do we need boots?» e, despois, «Look outside!».",
+          "es": "Junta la frase de esta semana con la de la semana pasada en un juego corto: «Listen! A stormy day! Put on your yellow boots! Why do we need boots?» y, después, «Look outside!»."
+        },
+        "mans": {
+          "gl": "Ten na man aquilo do que falas e ensínallo mentres o dis.",
+          "es": "Ten en la mano aquello de lo que hablas y enséñaselo mientras lo dices."
+        },
+        "esperaSegundos": 5,
+        "nonPedir": {
+          "gl": "Non é unha proba: se responde na lingua da casa, tamén vale, e o xogo segue.",
+          "es": "No es una prueba: si responde en la lengua de casa, también vale, y el juego sigue."
+        },
+        "recast": {
+          "silencio": {
+            "gl": "Fai ti o xesto e volve dicir «Listen! A stormy day! Put on your yellow boots! Why do we need boots?» amodo, sorrindo, e segue co xogo.",
+            "es": "Haz tú el gesto y vuelve a decir «Listen! A stormy day! Put on your yellow boots! Why do we need boots?» despacio, sonriendo, y sigue con el juego."
+          },
+          "linguaCasa": {
+            "gl": "Acolle o que di na lingua da casa, asente e devólvello en inglés: «Listen! A stormy day! Put on your yellow boots! Why do we need boots?».",
+            "es": "Acoge lo que dice en la lengua de casa, asiente y devuélveselo en inglés: «Listen! A stormy day! Put on your yellow boots! Why do we need boots?»."
+          },
+          "unhaPalabra": {
+            "gl": "Celébrao e engade o que falta: «Yes! Listen! A stormy day! Put on your yellow boots! Why do we need boots?».",
+            "es": "Celébralo y añade lo que falta: «Yes! Listen! A stormy day! Put on your yellow boots! Why do we need boots?»."
+          }
+        }
+      },
+      {
+        "id": "reto.curso_4_5.02.4",
+        "semana": 4,
+        "fase": "consolidar",
+        "nomeFase": {
+          "gl": "Consolidar",
+          "es": "Consolidar"
+        },
+        "frase": {
+          "en": "That's right, because the water is deep and wet! Let's jump over the puddle!",
+          "gl": "Iso é, porque a auga é fonda e mollada! Saltemos por riba da poza!",
+          "es": "¡Eso es, porque el agua es profunda y moja! ¡Vamos a saltar por encima del charco!"
+        },
+        "queFacer": {
+          "gl": "Di o comezo, «That's right, because the water is deep and wet! Let's jump over the…», e deixa o oco. Se o completa co corpo ou cunha palabra, celébrao e di a frase enteira.",
+          "es": "Di el comienzo, «That's right, because the water is deep and wet! Let's jump over the…», y deja el hueco. Si lo completa con el cuerpo o con una palabra, celébralo y di la frase entera."
+        },
+        "mans": {
+          "gl": "Ten na man aquilo do que falas e ensínallo mentres o dis.",
+          "es": "Ten en la mano aquello de lo que hablas y enséñaselo mientras lo dices."
+        },
+        "esperaSegundos": 5,
+        "nonPedir": {
+          "gl": "Non é unha proba: se responde na lingua da casa, tamén vale, e o xogo segue.",
+          "es": "No es una prueba: si responde en la lengua de casa, también vale, y el juego sigue."
+        },
+        "recast": {
+          "silencio": {
+            "gl": "Fai ti o xesto e volve dicir «That's right, because the water is deep and wet! Let's jump over the puddle!» amodo, sorrindo, e segue co xogo.",
+            "es": "Haz tú el gesto y vuelve a decir «That's right, because the water is deep and wet! Let's jump over the puddle!» despacio, sonriendo, y sigue con el juego."
+          },
+          "linguaCasa": {
+            "gl": "Acolle o que di na lingua da casa, asente e devólvello en inglés: «That's right, because the water is deep and wet! Let's jump over the puddle!».",
+            "es": "Acoge lo que dice en la lengua de casa, asiente y devuélveselo en inglés: «That's right, because the water is deep and wet! Let's jump over the puddle!»."
+          },
+          "unhaPalabra": {
+            "gl": "Celébrao e engade o que falta: «Yes! That's right, because the water is deep and wet! Let's jump over the puddle!».",
+            "es": "Celébralo y añade lo que falta: «Yes! That's right, because the water is deep and wet! Let's jump over the puddle!»."
+          }
+        }
+      }
+    ],
+    "lecturaCasa": {
+      "microcuento": "microcuento.curso_4_5.06"
+    },
+    "juegoCasa": {
+      "steam": "STEAM-4_5-02"
+    },
+    "queObservarCasa": [
+      {
+        "gl": "Completa a frase co corpo ou cunha palabra",
+        "es": "Completa la frase con el cuerpo o con una palabra"
+      },
+      {
+        "gl": "Usa a frase noutro xogo, sen que llo propoñas",
+        "es": "Usa la frase en otro juego, sin que se lo propongas"
+      },
+      {
+        "gl": "Conta o que pasa mesturando linguas",
+        "es": "Cuenta lo que pasa mezclando lenguas"
+      }
+    ],
+    "reactivarCasa": {
+      "en": "healthy",
+      "texto": {
+        "gl": "Noutro momento do día, sen avisar, volve dicir «healthy», a palabra do mes pasado, sinalándoa.",
+        "es": "En otro momento del día, sin avisar, vuelve a decir «healthy», la palabra del mes pasado, señalándola."
+      }
+    }
+  },
   "microcuento": {
     "id": "microcuento.curso_4_5.06",
     "titulo": {
@@ -426,5 +629,6 @@
         }
       }
     ]
-  }
+  },
+  "criterio": "normativa.curso_4_5"
 }

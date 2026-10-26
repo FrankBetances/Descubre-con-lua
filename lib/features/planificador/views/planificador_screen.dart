@@ -2,7 +2,12 @@ import 'package:flutter/material.dart';
 
 import '../../../core/localization/app_language.dart';
 import '../../../core/theme/app_theme.dart';
-import '../../../data/models/dia_calendario_dual_model.dart';
+import '../../../core/localization/localized_string.dart';
+import '../../../data/models/normativa_model.dart';
+import '../../../data/models/rexistro_frases_model.dart';
+import '../../../data/models/unidade_curricular_model.dart';
+import '../../../data/models/unidade_do_mes_model.dart';
+import '../../juega/widgets/aula_ciclo_panel.dart' show nomeDoMes;
 import '../../../data/repositories/content_repository.dart';
 import 'dinamicas_screen.dart';
 import 'estrategias_screen.dart';
@@ -36,9 +41,22 @@ class _PlanificadorScreenState extends State<PlanificadorScreen> {
   }
 
   late AppLanguage _language;
-  List<MesCurricular50> _meses = [];
-  bool _isLoading = true;
   String _selectedCurso = 'curso_0_2';
+
+  // M7.3: cada mes sale de su unidad, del plan curricular de Frank y del
+  // marco normativo; ya no de `curriculo_50_meses.json`, que contaba otros
+  // temas que los de la asamblea y el plan.
+  static const _meses = [9, 10, 11, 12, 1, 2, 3, 4, 5, 6];
+  late final Future<Normativa?> _normativa =
+      Normativa.cargar().then<Normativa?>((n) => n, onError: (_) => null);
+  final Map<String, Future<(Normativa?, List<UnidadeDoMes?>)>> _datos = {};
+
+  // Un futuro por curso, guardado: si se crease en cada build, cambiar de
+  // lengua dejaría la lista en blanco mientras vuelve a esperar.
+  Future<(Normativa?, List<UnidadeDoMes?>)> _datosDo(String curso) =>
+      _datos[curso] ??= Future.wait([
+        for (final m in _meses) widget.repository.loadUnidadeDoMes(curso, m),
+      ]).then((u) async => (await _normativa, u));
 
   static const List<Map<String, String>> _cursos = [
     {'id': 'curso_0_2', 'gl': '0 a 2 anos (Nido)', 'es': '0 a 2 años (Nido)'},
@@ -68,22 +86,6 @@ class _PlanificadorScreenState extends State<PlanificadorScreen> {
   void initState() {
     super.initState();
     _language = widget.initialLanguage;
-    _loadCurriculo();
-  }
-
-  Future<void> _loadCurriculo() async {
-    setState(() => _isLoading = true);
-    final results = await widget.repository.loadCurriculo50Meses();
-    if (mounted) {
-      setState(() {
-        _meses = results;
-        _isLoading = false;
-      });
-    }
-  }
-
-  List<MesCurricular50> get _filteredMeses {
-    return _meses.where((m) => m.cursoId == _selectedCurso).toList();
   }
 
   @override
@@ -173,160 +175,218 @@ class _PlanificadorScreenState extends State<PlanificadorScreen> {
             ),
           ),
 
-          // Monthly Cards List
+          // Los meses del curso
           Expanded(
-            child: _isLoading
-                ? const Center(child: CircularProgressIndicator())
-                : ListView.builder(
-                    padding: const EdgeInsets.all(16),
-                    itemCount: _filteredMeses.length,
-                    itemBuilder: (context, index) {
-                      final mes = _filteredMeses[index];
-                      return Card(
-                        margin: const EdgeInsets.only(bottom: 16),
-                        elevation: 0.5,
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(16),
+            child: FutureBuilder<(Normativa?, List<UnidadeDoMes?>)>(
+              key: ValueKey('planificador_$_selectedCurso'),
+              future: _datosDo(_selectedCurso),
+              builder: (context, snap) {
+                final datos = snap.data;
+                if (datos == null) {
+                  return const Center(child: CircularProgressIndicator());
+                }
+                final (normativa, unidades) = datos;
+                final criterio = normativa?.cursos[_selectedCurso];
+                return ListView(
+                  key: const ValueKey('planificador_meses'),
+                  padding: const EdgeInsets.all(16),
+                  children: [
+                    if (normativa != null && criterio != null)
+                      _Marco(
+                        normativa: normativa,
+                        criterio: criterio,
+                        language: lang,
+                      ),
+                    for (final (i, u) in unidades.indexed)
+                      if (u != null)
+                        _MesDoPlan(
+                          numero: i + 1,
+                          unidade: u,
+                          nucleo: widget.repository.nucleoSync(u),
+                          plan: widget.repository.planCurricularSync
+                              ?.para(u.curso, u.mesCalendario),
+                          area: normativa?.area,
+                          criterio: criterio,
+                          language: lang,
                         ),
-                        child: Padding(
-                          padding: const EdgeInsets.all(18),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Row(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
-                                children: [
-                                  Container(
-                                    padding: const EdgeInsets.symmetric(
-                                        horizontal: 10, vertical: 4),
-                                    decoration: BoxDecoration(
-                                      color: context.acentoTint,
-                                      borderRadius: BorderRadius.circular(8),
-                                    ),
-                                    child: Text(
-                                      'MES ${mes.mesNumero} · ${mes.nombreMes.resolve(lang).toUpperCase()}',
-                                      style: TextStyle(
-                                        fontWeight: FontWeight.bold,
-                                        fontSize: 12,
-                                        color: context.acento,
-                                      ),
-                                    ),
-                                  ),
-                                  Text(
-                                    '${mes.minutosSugeridos} min/día',
-                                    style: const TextStyle(
-                                      color: AppTheme.textSecondary,
-                                      fontSize: 12,
-                                    ),
-                                  ),
-                                ],
-                              ),
-                              const SizedBox(height: 12),
-                              Text(
-                                mes.centroInteres.resolve(lang),
-                                style: const TextStyle(
-                                  fontSize: 17,
-                                  fontWeight: FontWeight.bold,
-                                  color: AppTheme.textPrimary,
-                                ),
-                              ),
-                              const SizedBox(height: 4),
-                              Text(
-                                mes.objetivoPedagogico.resolve(lang),
-                                style: const TextStyle(
-                                  fontSize: 14,
-                                  color: AppTheme.textSecondary,
-                                ),
-                              ),
-                              const SizedBox(height: 14),
-
-                              // Aula
-                              _buildPill(
-                                icon: Icons.school_rounded,
-                                title: lang == AppLanguage.gl
-                                    ? 'Actividade de Aula'
-                                    : 'Actividad de Aula',
-                                content: mes.actividadAula.resolve(lang),
-                                color: context.acento,
-                              ),
-                              const SizedBox(height: 8),
-
-                              // Fogar
-                              _buildPill(
-                                icon: Icons.home_rounded,
-                                title: lang == AppLanguage.gl
-                                    ? 'Rutina no Fogar'
-                                    : 'Rutina en el Hogar',
-                                content: mes.actividadHogar.resolve(lang),
-                                color: AppTheme.warning,
-                              ),
-                              const SizedBox(height: 8),
-
-                              // English
-                              Container(
-                                padding: const EdgeInsets.all(10),
-                                decoration: BoxDecoration(
-                                  color: context.acentoTint,
-                                  borderRadius: BorderRadius.circular(10),
-                                ),
-                                child: Row(
-                                  children: [
-                                    Icon(Icons.language_rounded,
-                                        color: context.acento, size: 18),
-                                    const SizedBox(width: 8),
-                                    Expanded(
-                                      child: Text(
-                                        'L3: "${mes.ingles.frase}" (TPR: ${mes.ingles.tpr.join(", ")})',
-                                        style: TextStyle(
-                                          color: context.acento,
-                                          fontSize: 14,
-                                          fontWeight: FontWeight.w600,
-                                        ),
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      );
-                    },
-                  ),
+                  ],
+                );
+              },
+            ),
           ),
         ],
       ),
     );
   }
+}
 
-  Widget _buildPill({
-    required IconData icon,
-    required String title,
-    required String content,
-    required Color color,
-  }) {
-    return Row(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Icon(icon, size: 16, color: color),
-        const SizedBox(width: 8),
-        Expanded(
+/// El marco del curso, una vez arriba: área, encuadre, horario y criterio,
+/// con el aviso de que sale del texto de Frank y falta el DOG.
+class _Marco extends StatelessWidget {
+  final Normativa normativa;
+  final CriterioDoCurso criterio;
+  final AppLanguage language;
+
+  const _Marco({
+    required this.normativa,
+    required this.criterio,
+    required this.language,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final isGl = language == AppLanguage.gl;
+    String l(LocalizedString s) => s.resolve(language);
+    const corpo =
+        TextStyle(fontSize: 14, color: AppTheme.textPrimary, height: 1.35);
+    Widget fila(String rotulo, String texto) => Padding(
+          padding: const EdgeInsets.only(top: 6),
           child: Text.rich(
-            TextSpan(
-              style: const TextStyle(
-                  fontSize: 14, color: AppTheme.textPrimary, height: 1.3),
-              children: [
-                TextSpan(
-                  text: '$title: ',
-                  style: TextStyle(fontWeight: FontWeight.bold, color: color),
-                ),
-                TextSpan(text: content),
-              ],
+            TextSpan(children: [
+              TextSpan(
+                text: '$rotulo: ',
+                style: const TextStyle(fontWeight: FontWeight.w800),
+              ),
+              TextSpan(text: texto),
+            ]),
+            style: corpo,
+          ),
+        );
+    return Container(
+      key: const ValueKey('planificador_marco'),
+      margin: const EdgeInsets.only(bottom: 16),
+      padding: const EdgeInsets.all(16),
+      decoration: BoxDecoration(
+        color: context.acentoTint,
+        borderRadius: BorderRadius.circular(16),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(
+            isGl ? 'O MARCO DO CURSO' : 'EL MARCO DEL CURSO',
+            style: TextStyle(
+              fontSize: 12,
+              fontWeight: FontWeight.w800,
+              letterSpacing: 0.6,
+              color: context.acento,
             ),
           ),
+          fila(isGl ? 'Área' : 'Área', l(normativa.area)),
+          fila(isGl ? 'Encadre' : 'Encuadre', l(criterio.encadre)),
+          fila(isGl ? 'Saber' : 'Saber', l(normativa.saber)),
+          fila(isGl ? 'Horario' : 'Horario', l(criterio.horario)),
+          fila(
+            isGl ? 'Criterio' : 'Criterio',
+            '${criterio.obx}${criterio.codigo == null ? '' : ' · ${criterio.codigo}'}: '
+            '${l(criterio.criterio)}',
+          ),
+          const SizedBox(height: 8),
+          Text(
+            '${l(normativa.aviso)} (${criterio.cita})',
+            key: const ValueKey('planificador_aviso_dog'),
+            style: const TextStyle(
+              fontSize: 12.5,
+              fontStyle: FontStyle.italic,
+              color: AppTheme.textSecondary,
+              height: 1.35,
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+/// Un mes del plan: el área por su nombre oficial, el criterio, el centro de
+/// interés de la unidad, la unidad del plan curricular y el núcleo.
+class _MesDoPlan extends StatelessWidget {
+  final int numero;
+  final UnidadeDoMes unidade;
+  final List<PezaDaUnidade> nucleo;
+  final UnidadeCurricular? plan;
+  final LocalizedString? area;
+  final CriterioDoCurso? criterio;
+  final AppLanguage language;
+
+  const _MesDoPlan({
+    required this.numero,
+    required this.unidade,
+    required this.nucleo,
+    required this.plan,
+    required this.area,
+    required this.criterio,
+    required this.language,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final isGl = language == AppLanguage.gl;
+    String l(LocalizedString s) => s.resolve(language);
+    const corpo =
+        TextStyle(fontSize: 14, color: AppTheme.textPrimary, height: 1.35);
+    Widget fila(String rotulo, String texto) => Padding(
+          padding: const EdgeInsets.only(top: 8),
+          child: Text.rich(
+            TextSpan(children: [
+              TextSpan(
+                text: '$rotulo: ',
+                style: TextStyle(
+                    fontWeight: FontWeight.w800, color: context.acento),
+              ),
+              TextSpan(text: texto),
+            ]),
+            style: corpo,
+          ),
+        );
+    return Card(
+      key: ValueKey('planificador_mes_${unidade.id}'),
+      margin: const EdgeInsets.only(bottom: 16),
+      elevation: 0.5,
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+      child: Padding(
+        padding: const EdgeInsets.all(18),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Container(
+              padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
+              decoration: BoxDecoration(
+                color: context.acentoTint,
+                borderRadius: BorderRadius.circular(8),
+              ),
+              child: Text(
+                'MES $numero · ${l(nomeDoMes[unidade.mesCalendario]!).toUpperCase()}',
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 12,
+                  color: context.acento,
+                ),
+              ),
+            ),
+            const SizedBox(height: 12),
+            Text(
+              l(unidade.centroInteres),
+              style: const TextStyle(
+                fontSize: 17,
+                fontWeight: FontWeight.bold,
+                color: AppTheme.textPrimary,
+              ),
+            ),
+            if (area case final a?) fila(isGl ? 'Área' : 'Área', l(a)),
+            if (criterio case final c?)
+              fila(
+                isGl ? 'Criterio' : 'Criterio',
+                '${c.obx}${c.codigo == null ? '' : ' · ${c.codigo}'}',
+              ),
+            if (plan case final p?)
+              fila(isGl ? 'Plan curricular' : 'Plan curricular', l(p.titulo)),
+            if (nucleo.isNotEmpty)
+              fila(isGl ? 'Núcleo' : 'Núcleo',
+                  [for (final n in nucleo) n.en].join(' · ')),
+          ],
         ),
-      ],
+      ),
     );
   }
 }

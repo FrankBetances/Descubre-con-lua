@@ -77,7 +77,208 @@
   "reactivar": [
     "frase.cmd.outubro.2_3.03"
   ],
-  "hogar": null,
+  "hogar": {
+    "momento": {
+      "gl": "No paseo, ao recoller follas e pedras",
+      "es": "En el paseo, al recoger hojas y piedras"
+    },
+    "minutos": 8,
+    "escena": {
+      "gl": "Unha bolsa de tea para os tesouros",
+      "es": "Una bolsa de tela para los tesoros"
+    },
+    "retosCasa": [
+      {
+        "id": "reto.curso_2_3.11.1",
+        "semana": 1,
+        "fase": "descubrir",
+        "nomeFase": {
+          "gl": "Descubrir",
+          "es": "Descubrir"
+        },
+        "frase": {
+          "en": "Leaf",
+          "gl": "folla",
+          "es": "hoja"
+        },
+        "queFacer": {
+          "gl": "Dio ti mentres o fas, cara a cara e á súa altura: «Leaf». Só ten que escoitar e mirar.",
+          "es": "Dilo tú mientras lo haces, cara a cara y a su altura: «Leaf». Solo tiene que escuchar y mirar."
+        },
+        "mans": {
+          "gl": "Sinala ou colle o que nomeas: folla.",
+          "es": "Señala o coge lo que nombras: hoja."
+        },
+        "esperaSegundos": 5,
+        "nonPedir": {
+          "gl": "Non hai que dicilo: abonda con que o faga co corpo ou colla o obxecto.",
+          "es": "No hay que decirlo: basta con que lo haga con el cuerpo o coja el objeto."
+        },
+        "recast": {
+          "silencio": {
+            "gl": "Fai ti o xesto e volve dicir «Leaf» amodo, sorrindo, e segue co xogo.",
+            "es": "Haz tú el gesto y vuelve a decir «Leaf» despacio, sonriendo, y sigue con el juego."
+          },
+          "linguaCasa": {
+            "gl": "Acolle o que di na lingua da casa, asente e devólvello en inglés: «Leaf».",
+            "es": "Acoge lo que dice en la lengua de casa, asiente y devuélveselo en inglés: «Leaf»."
+          },
+          "unhaPalabra": {
+            "gl": "Celébrao e engade o que falta: «Yes! Leaf».",
+            "es": "Celébralo y añade lo que falta: «Yes! Leaf»."
+          }
+        }
+      },
+      {
+        "id": "reto.curso_2_3.11.2",
+        "semana": 2,
+        "fase": "practicar",
+        "nomeFase": {
+          "gl": "Practicar",
+          "es": "Practicar"
+        },
+        "frase": {
+          "en": "Pick up!"
+        },
+        "queFacer": {
+          "gl": "Di «Pick up!» e fai o xesto á vez. Agarda e, se o fai, facédeo xuntos outra vez.",
+          "es": "Di «Pick up!» y haz el gesto a la vez. Espera y, si lo hace, hacedlo juntos otra vez."
+        },
+        "mans": {
+          "gl": "Agacharse ata o chan para coller as cousas.",
+          "es": "Agacharse hasta el suelo para recoger las cosas."
+        },
+        "esperaSegundos": 5,
+        "nonPedir": {
+          "gl": "Non hai que dicilo: abonda con que o faga co corpo ou colla o obxecto.",
+          "es": "No hay que decirlo: basta con que lo haga con el cuerpo o coja el objeto."
+        },
+        "recast": {
+          "silencio": {
+            "gl": "Fai ti o xesto e volve dicir «Pick up!» amodo, sorrindo, e segue co xogo.",
+            "es": "Haz tú el gesto y vuelve a decir «Pick up!» despacio, sonriendo, y sigue con el juego."
+          },
+          "linguaCasa": {
+            "gl": "Acolle o que di na lingua da casa, asente e devólvello en inglés: «Pick up!».",
+            "es": "Acoge lo que dice en la lengua de casa, asiente y devuélveselo en inglés: «Pick up!»."
+          },
+          "unhaPalabra": {
+            "gl": "Celébrao e engade o que falta: «Yes! Pick up!».",
+            "es": "Celébralo y añade lo que falta: «Yes! Pick up!»."
+          }
+        }
+      },
+      {
+        "id": "reto.curso_2_3.11.3",
+        "semana": 3,
+        "fase": "combinar",
+        "nomeFase": {
+          "gl": "Combinar",
+          "es": "Combinar"
+        },
+        "frase": {
+          "en": "Wow, a stone! A big, heavy stone",
+          "gl": "Hala, unha pedra! Unha pedra grande e pesada",
+          "es": "¡Hala, una piedra! Una piedra grande y pesada"
+        },
+        "queFacer": {
+          "gl": "Xunta a frase desta semana coa da semana pasada nun xogo curto: «Wow, a stone! A big, heavy stone» e, despois, «Pick up!».",
+          "es": "Junta la frase de esta semana con la de la semana pasada en un juego corto: «Wow, a stone! A big, heavy stone» y, después, «Pick up!»."
+        },
+        "mans": {
+          "gl": "Ten na man aquilo do que falas e ensínallo mentres o dis.",
+          "es": "Ten en la mano aquello de lo que hablas y enséñaselo mientras lo dices."
+        },
+        "esperaSegundos": 5,
+        "nonPedir": {
+          "gl": "Non hai que dicilo: abonda con que o faga co corpo ou colla o obxecto.",
+          "es": "No hay que decirlo: basta con que lo haga con el cuerpo o coja el objeto."
+        },
+        "recast": {
+          "silencio": {
+            "gl": "Fai ti o xesto e volve dicir «Wow, a stone! A big, heavy stone» amodo, sorrindo, e segue co xogo.",
+            "es": "Haz tú el gesto y vuelve a decir «Wow, a stone! A big, heavy stone» despacio, sonriendo, y sigue con el juego."
+          },
+          "linguaCasa": {
+            "gl": "Acolle o que di na lingua da casa, asente e devólvello en inglés: «Wow, a stone! A big, heavy stone».",
+            "es": "Acoge lo que dice en la lengua de casa, asiente y devuélveselo en inglés: «Wow, a stone! A big, heavy stone»."
+          },
+          "unhaPalabra": {
+            "gl": "Celébrao e engade o que falta: «Yes! Wow, a stone! A big, heavy stone».",
+            "es": "Celébralo y añade lo que falta: «Yes! Wow, a stone! A big, heavy stone»."
+          }
+        }
+      },
+      {
+        "id": "reto.curso_2_3.11.4",
+        "semana": 4,
+        "fase": "consolidar",
+        "nomeFase": {
+          "gl": "Consolidar",
+          "es": "Consolidar"
+        },
+        "frase": {
+          "en": "Pick up the leaf. Walk, walk... now drop it! Drop!",
+          "gl": "Colle a folla. Camiña, camiña... agora déixaa caer! Sóltaa!",
+          "es": "Coge la hoja. Camina, camina... ¡ahora déjala caer! ¡Suéltala!"
+        },
+        "queFacer": {
+          "gl": "Di o comezo, «Pick up the leaf. Walk, walk... now drop it!…», e deixa o oco. Se o completa co corpo ou cunha palabra, celébrao e di a frase enteira.",
+          "es": "Di el comienzo, «Pick up the leaf. Walk, walk... now drop it!…», y deja el hueco. Si lo completa con el cuerpo o con una palabra, celébralo y di la frase entera."
+        },
+        "mans": {
+          "gl": "Ten na man aquilo do que falas e ensínallo mentres o dis.",
+          "es": "Ten en la mano aquello de lo que hablas y enséñaselo mientras lo dices."
+        },
+        "esperaSegundos": 5,
+        "nonPedir": {
+          "gl": "Non hai que dicilo: abonda con que o faga co corpo ou colla o obxecto.",
+          "es": "No hay que decirlo: basta con que lo haga con el cuerpo o coja el objeto."
+        },
+        "recast": {
+          "silencio": {
+            "gl": "Fai ti o xesto e volve dicir «Pick up the leaf. Walk, walk... now drop it! Drop!» amodo, sorrindo, e segue co xogo.",
+            "es": "Haz tú el gesto y vuelve a decir «Pick up the leaf. Walk, walk... now drop it! Drop!» despacio, sonriendo, y sigue con el juego."
+          },
+          "linguaCasa": {
+            "gl": "Acolle o que di na lingua da casa, asente e devólvello en inglés: «Pick up the leaf. Walk, walk... now drop it! Drop!».",
+            "es": "Acoge lo que dice en la lengua de casa, asiente y devuélveselo en inglés: «Pick up the leaf. Walk, walk... now drop it! Drop!»."
+          },
+          "unhaPalabra": {
+            "gl": "Celébrao e engade o que falta: «Yes! Pick up the leaf. Walk, walk... now drop it! Drop!».",
+            "es": "Celébralo y añade lo que falta: «Yes! Pick up the leaf. Walk, walk... now drop it! Drop!»."
+          }
+        }
+      }
+    ],
+    "lecturaCasa": {
+      "microcuento": "microcuento.curso_2_3.03"
+    },
+    "juegoCasa": {
+      "xogo": "xogo_09_caixa_sons_texturas"
+    },
+    "queObservarCasa": [
+      {
+        "gl": "Fai o xesto cando oe «Leaf»",
+        "es": "Hace el gesto cuando oye «Leaf»"
+      },
+      {
+        "gl": "Colle ou sinala o obxecto",
+        "es": "Coge o señala el objeto"
+      },
+      {
+        "gl": "Anticipa o momento: xa sabe que vén o inglés",
+        "es": "Anticipa el momento: ya sabe que llega el inglés"
+      }
+    ],
+    "reactivarCasa": {
+      "en": "Boat",
+      "texto": {
+        "gl": "Noutro momento do día, sen avisar, volve dicir «Boat», a palabra do mes pasado, sinalándoa.",
+        "es": "En otro momento del día, sin avisar, vuelve a decir «Boat», la palabra del mes pasado, señalándola."
+      }
+    }
+  },
   "microcuento": {
     "id": "microcuento.curso_2_3.03",
     "titulo": {
@@ -321,5 +522,6 @@
         }
       }
     ]
-  }
+  },
+  "criterio": "normativa.curso_2_3"
 }

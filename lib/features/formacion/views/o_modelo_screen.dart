@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 
 import '../../../core/audio/offline_audio_service.dart';
+import '../../../core/audio/voice_id.dart';
 import '../../../core/audio/widgets/boton_escuchar.dart';
 import '../../../core/localization/app_language.dart';
 import '../../../core/localization/localized_string.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../core/widgets/cabecera.dart';
+import '../../../data/models/hogar_model.dart';
 import '../../../data/models/o_modelo_model.dart';
 
 /// «O modelo / El modelo»: cómo habla la adulta (F2). Parentese, compuerta
@@ -39,6 +41,11 @@ class OModeloScreen extends StatefulWidget {
 class _OModeloScreenState extends State<OModeloScreen> {
   late AppLanguage _lang = widget.language;
   late final Future<OModelo> _modelo = OModelo.cargar();
+  // En casa, la guía estable y la guía por edad van delante (F5). Sin
+  // catchError: en un SynchronousFuture no completa nunca.
+  late final Future<GuiaDeCasa?> _guia = widget.paraAula
+      ? Future<GuiaDeCasa?>.value(null)
+      : GuiaDeCasa.cargar().then<GuiaDeCasa?>((g) => g, onError: (_) => null);
 
   void _cambiar(AppLanguage l) {
     setState(() => _lang = l);
@@ -89,6 +96,26 @@ class _OModeloScreenState extends State<OModeloScreen> {
                   ),
                 ),
                 const SizedBox(height: 14),
+                if (!widget.paraAula)
+                  FutureBuilder<GuiaDeCasa?>(
+                    future: _guia,
+                    builder: (context, g) => switch (g.data) {
+                      final guia? => Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            _GuiaEstable(
+                              guia: guia,
+                              lang: _lang,
+                              audioService: widget.audioService,
+                            ),
+                            const SizedBox(height: 10),
+                            _GuiaPorIdade(guia: guia, lang: _lang),
+                            const SizedBox(height: 10),
+                          ],
+                        ),
+                      null => const SizedBox.shrink(),
+                    },
+                  ),
                 for (final s in m.seccions) ...[
                   _Seccion(
                     seccion: s,
@@ -317,4 +344,169 @@ class _Corpo extends StatelessWidget {
           height: 1.4,
         ),
       );
+}
+
+/// Una tarjeta plegable con el mismo molde que las secciones del modelo.
+class _Plegable extends StatelessWidget {
+  final String clave;
+  final String titulo;
+  final String subtitulo;
+  final List<Widget> children;
+
+  const _Plegable({
+    required this.clave,
+    required this.titulo,
+    required this.subtitulo,
+    required this.children,
+  });
+
+  @override
+  Widget build(BuildContext context) => Material(
+        color: AppTheme.card,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(AppTheme.radiusCard),
+          side: BorderSide(color: context.acento, width: 1.5),
+        ),
+        clipBehavior: Clip.antiAlias,
+        child: ExpansionTile(
+          key: PageStorageKey(clave),
+          tilePadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+          childrenPadding: const EdgeInsets.fromLTRB(16, 0, 16, 16),
+          expandedCrossAxisAlignment: CrossAxisAlignment.start,
+          iconColor: context.acento,
+          title: Text(
+            titulo,
+            style: const TextStyle(
+              fontSize: 16,
+              fontWeight: FontWeight.w800,
+              color: AppTheme.textPrimary,
+            ),
+          ),
+          subtitle: Padding(
+            padding: const EdgeInsets.only(top: 4),
+            child: Text(
+              subtitulo,
+              style: const TextStyle(
+                fontSize: 14,
+                color: AppTheme.textSecondary,
+                height: 1.35,
+              ),
+            ),
+          ),
+          children: children,
+        ),
+      );
+}
+
+/// La guía estable de casa: las diez ideas de todo el trayecto (F5, 8.1).
+class _GuiaEstable extends StatelessWidget {
+  final GuiaDeCasa guia;
+  final AppLanguage lang;
+  final OfflineAudioService? audioService;
+
+  const _GuiaEstable({
+    required this.guia,
+    required this.lang,
+    required this.audioService,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final isGl = lang == AppLanguage.gl;
+    return _Plegable(
+      clave: 'modelo_guia_casa',
+      titulo:
+          isGl ? 'A guía da casa: dez ideas' : 'La guía de casa: diez ideas',
+      subtitulo: guia.intro.resolve(lang),
+      children: [
+        for (final (i, p) in guia.puntos.indexed) ...[
+          _Rotulo('${i + 1}. ${p.titulo.resolve(lang)}'),
+          _Corpo(p.texto.resolve(lang)),
+          for (final (ferramenta, situacion, en) in p.exemplos)
+            Padding(
+              padding: const EdgeInsets.only(top: 8),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  _Corpo('${ferramenta.resolve(lang)}: '
+                      '${situacion.resolve(lang)}'),
+                  const SizedBox(height: 4),
+                  BotonEscuchar(
+                    audioService: audioService,
+                    texto: en,
+                    language: AppLanguage.en,
+                    interfaz: lang,
+                    style: estiloIngles(en),
+                    comoChip: true,
+                    colorChip: context.acento,
+                    descripcion: en,
+                  ),
+                ],
+              ),
+            ),
+        ],
+      ],
+    );
+  }
+}
+
+/// La guía por edad: una fila por tramo, de 0 meses a 6 años (F5, 8.2).
+class _GuiaPorIdade extends StatelessWidget {
+  final GuiaDeCasa guia;
+  final AppLanguage lang;
+
+  const _GuiaPorIdade({required this.guia, required this.lang});
+
+  @override
+  Widget build(BuildContext context) {
+    final isGl = lang == AppLanguage.gl;
+    String l(LocalizedString s) => s.resolve(lang);
+    return _Plegable(
+      clave: 'modelo_guia_idade',
+      titulo: isGl ? 'A guía da túa idade' : 'La guía de tu edad',
+      subtitulo: isGl
+          ? 'Canto tempo, que ferramenta, que se lle pide e como se le, de 0 meses a 6 anos.'
+          : 'Cuánto tiempo, qué herramienta, qué se le pide y cómo se lee, de 0 meses a 6 años.',
+      children: [
+        for (final t in guia.tramos)
+          Container(
+            key: ValueKey('modelo_casa_${t.clave}'),
+            width: double.infinity,
+            margin: const EdgeInsets.only(top: 12),
+            padding: const EdgeInsets.all(12),
+            decoration: BoxDecoration(
+              color: context.acentoTint,
+              borderRadius: BorderRadius.circular(10),
+            ),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  '${l(t.idade)} · ${t.minutos} min',
+                  style: const TextStyle(
+                    fontSize: 15,
+                    fontWeight: FontWeight.w800,
+                    color: AppTheme.textPrimary,
+                  ),
+                ),
+                _Rotulo(isGl ? 'Ferramenta' : 'Herramienta'),
+                _Corpo(l(t.ferramenta)),
+                _Rotulo(isGl ? 'Que se lle pide' : 'Qué se le pide'),
+                _Corpo(l(t.quePedir)),
+                _Rotulo(isGl ? 'Cando' : 'Cuándo'),
+                _Corpo(l(t.momento)),
+                _Rotulo(isGl ? 'Que fas' : 'Qué haces'),
+                _Corpo(l(t.queFacer)),
+                _Rotulo(isGl ? 'A lectura' : 'La lectura'),
+                _Corpo(l(t.lectura)),
+                _Rotulo(isGl ? 'Que se evita' : 'Qué se evita'),
+                _Corpo(l(t.queEvitar)),
+                _Rotulo(isGl ? 'Por exemplo' : 'Por ejemplo'),
+                _Corpo('${l(t.exemploSituacion)}: «${t.exemploEn}»'),
+              ],
+            ),
+          ),
+      ],
+    );
+  }
 }

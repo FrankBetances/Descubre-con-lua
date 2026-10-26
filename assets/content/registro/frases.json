@@ -3281,6 +3281,5606 @@
         "es": "Imitar animales (saltar como ranas, volar como pájaros) y parar en seco en \"Freeze!\"."
       },
       "fonte": "calendario/atencion.json"
+    },
+    {
+      "id": "frase.steam_mes.STEAM-0_2-09.01",
+      "tipo": "steam_mes",
+      "en": "Splash the water!",
+      "significado": {
+        "gl": "Chapotea na auga!",
+        "es": "¡Chapotea en el agua!"
+      },
+      "fonte": "steam/steam_do_mes.json"
+    },
+    {
+      "id": "frase.steam_mes.STEAM-0_2-09.02",
+      "tipo": "steam_mes",
+      "en": "Touch the wet sponge!",
+      "significado": {
+        "gl": "Toca a esponxa mollada!",
+        "es": "¡Toca la esponja mojada!"
+      },
+      "fonte": "steam/steam_do_mes.json"
+    },
+    {
+      "id": "frase.steam_mes.STEAM-0_2-10.01",
+      "tipo": "steam_mes",
+      "en": "Listen! Drip, drop!",
+      "significado": {
+        "gl": "Escoita! Pinga, pinga!",
+        "es": "¡Escucha! ¡Gota, gota!"
+      },
+      "fonte": "steam/steam_do_mes.json"
+    },
+    {
+      "id": "frase.steam_mes.STEAM-0_2-10.02",
+      "tipo": "steam_mes",
+      "en": "Shake the bottle!",
+      "significado": {
+        "gl": "Abanea a botella!",
+        "es": "¡Agita la botella!"
+      },
+      "fonte": "steam/steam_do_mes.json"
+    },
+    {
+      "id": "frase.steam_mes.STEAM-0_2-11.01",
+      "tipo": "steam_mes",
+      "en": "Drop the leaf!",
+      "significado": {
+        "gl": "Solta a folla!",
+        "es": "¡Suelta la hoja!"
+      },
+      "fonte": "steam/steam_do_mes.json"
+    },
+    {
+      "id": "frase.steam_mes.STEAM-0_2-11.02",
+      "tipo": "steam_mes",
+      "en": "Big stone, down!",
+      "significado": {
+        "gl": "Pedra grande, abaixo!",
+        "es": "¡Piedra grande, abajo!"
+      },
+      "fonte": "steam/steam_do_mes.json"
+    },
+    {
+      "id": "frase.steam_mes.STEAM-0_2-12.01",
+      "tipo": "steam_mes",
+      "en": "Look at the light!",
+      "significado": {
+        "gl": "Mira a luz!",
+        "es": "¡Mira la luz!"
+      },
+      "fonte": "steam/steam_do_mes.json"
+    },
+    {
+      "id": "frase.steam_mes.STEAM-0_2-12.02",
+      "tipo": "steam_mes",
+      "en": "Big shadow, small shadow!",
+      "significado": {
+        "gl": "Sombra grande, sombra pequena!",
+        "es": "¡Sombra grande, sombra pequeña!"
+      },
+      "fonte": "steam/steam_do_mes.json"
+    },
+    {
+      "id": "frase.steam_mes.STEAM-0_2-01.01",
+      "tipo": "steam_mes",
+      "en": "Apple in the basket!",
+      "significado": {
+        "gl": "A mazá, na cesta!",
+        "es": "¡La manzana, en la cesta!"
+      },
+      "fonte": "steam/steam_do_mes.json"
+    },
+    {
+      "id": "frase.steam_mes.STEAM-0_2-01.02",
+      "tipo": "steam_mes",
+      "en": "Bread in the box!",
+      "significado": {
+        "gl": "O pan, na caixa!",
+        "es": "¡El pan, en la caja!"
+      },
+      "fonte": "steam/steam_do_mes.json"
+    },
+    {
+      "id": "frase.steam_mes.STEAM-0_2-02.01",
+      "tipo": "steam_mes",
+      "en": "Touch the warm bread!",
+      "significado": {
+        "gl": "Toca o pan morno!",
+        "es": "¡Toca el pan templado!"
+      },
+      "fonte": "steam/steam_do_mes.json"
+    },
+    {
+      "id": "frase.steam_mes.STEAM-0_2-02.02",
+      "tipo": "steam_mes",
+      "en": "Cold apple! Brrr!",
+      "significado": {
+        "gl": "Mazá fría! Brrr!",
+        "es": "¡Manzana fría! ¡Brrr!"
+      },
+      "fonte": "steam/steam_do_mes.json"
+    },
+    {
+      "id": "frase.steam_mes.STEAM-0_2-03.01",
+      "tipo": "steam_mes",
+      "en": "Look! Bubbles!",
+      "significado": {
+        "gl": "Mira! Burbullas!",
+        "es": "¡Mira! ¡Burbujas!"
+      },
+      "fonte": "steam/steam_do_mes.json"
+    },
+    {
+      "id": "frase.steam_mes.STEAM-0_2-03.02",
+      "tipo": "steam_mes",
+      "en": "Pop the bubble!",
+      "significado": {
+        "gl": "Rebenta a burbulla!",
+        "es": "¡Revienta la burbuja!"
+      },
+      "fonte": "steam/steam_do_mes.json"
+    },
+    {
+      "id": "frase.steam_mes.STEAM-0_2-04.01",
+      "tipo": "steam_mes",
+      "en": "Rub the towel!",
+      "significado": {
+        "gl": "Frega a toalla!",
+        "es": "¡Frota la toalla!"
+      },
+      "fonte": "steam/steam_do_mes.json"
+    },
+    {
+      "id": "frase.steam_mes.STEAM-0_2-04.02",
+      "tipo": "steam_mes",
+      "en": "Soft, soft!",
+      "significado": {
+        "gl": "Suave, suave!",
+        "es": "¡Suave, suave!"
+      },
+      "fonte": "steam/steam_do_mes.json"
+    },
+    {
+      "id": "frase.steam_mes.STEAM-0_2-05.01",
+      "tipo": "steam_mes",
+      "en": "Look! A dog shadow!",
+      "significado": {
+        "gl": "Mira! A sombra dun can!",
+        "es": "¡Mira! ¡La sombra de un perro!"
+      },
+      "fonte": "steam/steam_do_mes.json"
+    },
+    {
+      "id": "frase.steam_mes.STEAM-0_2-05.02",
+      "tipo": "steam_mes",
+      "en": "Run, shadow! Stop!",
+      "significado": {
+        "gl": "Corre, sombra! Para!",
+        "es": "¡Corre, sombra! ¡Para!"
+      },
+      "fonte": "steam/steam_do_mes.json"
+    },
+    {
+      "id": "frase.steam_mes.STEAM-0_2-06.01",
+      "tipo": "steam_mes",
+      "en": "Roll the ball!",
+      "significado": {
+        "gl": "Fai rodar a pelota!",
+        "es": "¡Haz rodar la pelota!"
+      },
+      "fonte": "steam/steam_do_mes.json"
+    },
+    {
+      "id": "frase.steam_mes.STEAM-0_2-06.02",
+      "tipo": "steam_mes",
+      "en": "Ball in the box!",
+      "significado": {
+        "gl": "A pelota, na caixa!",
+        "es": "¡La pelota, en la caja!"
+      },
+      "fonte": "steam/steam_do_mes.json"
+    },
+    {
+      "id": "frase.steam_mes.STEAM-2_3-09.01",
+      "tipo": "steam_mes",
+      "en": "Float, boat!",
+      "significado": {
+        "gl": "Flota, barco!",
+        "es": "¡Flota, barco!"
+      },
+      "fonte": "steam/steam_do_mes.json"
+    },
+    {
+      "id": "frase.steam_mes.STEAM-2_3-09.02",
+      "tipo": "steam_mes",
+      "en": "Down, stone! Splash!",
+      "significado": {
+        "gl": "Abaixo, pedra! Chap!",
+        "es": "¡Abajo, piedra! ¡Chap!"
+      },
+      "fonte": "steam/steam_do_mes.json"
+    },
+    {
+      "id": "frase.steam_mes.STEAM-2_3-10.01",
+      "tipo": "steam_mes",
+      "en": "Blow the boat!",
+      "significado": {
+        "gl": "Sopra o barco!",
+        "es": "¡Sopla el barco!"
+      },
+      "fonte": "steam/steam_do_mes.json"
+    },
+    {
+      "id": "frase.steam_mes.STEAM-2_3-10.02",
+      "tipo": "steam_mes",
+      "en": "Go, boat, go!",
+      "significado": {
+        "gl": "Vai, barco, vai!",
+        "es": "¡Vamos, barco, vamos!"
+      },
+      "fonte": "steam/steam_do_mes.json"
+    },
+    {
+      "id": "frase.steam_mes.STEAM-2_3-11.01",
+      "tipo": "steam_mes",
+      "en": "Big stone here!",
+      "significado": {
+        "gl": "Pedra grande, aquí!",
+        "es": "¡Piedra grande, aquí!"
+      },
+      "fonte": "steam/steam_do_mes.json"
+    },
+    {
+      "id": "frase.steam_mes.STEAM-2_3-11.02",
+      "tipo": "steam_mes",
+      "en": "Small leaf there!",
+      "significado": {
+        "gl": "Folla pequena, alí!",
+        "es": "¡Hoja pequeña, allí!"
+      },
+      "fonte": "steam/steam_do_mes.json"
+    },
+    {
+      "id": "frase.steam_mes.STEAM-2_3-12.01",
+      "tipo": "steam_mes",
+      "en": "Drop! Listen!",
+      "significado": {
+        "gl": "Solta! Escoita!",
+        "es": "¡Suelta! ¡Escucha!"
+      },
+      "fonte": "steam/steam_do_mes.json"
+    },
+    {
+      "id": "frase.steam_mes.STEAM-2_3-12.02",
+      "tipo": "steam_mes",
+      "en": "Big sound, small sound!",
+      "significado": {
+        "gl": "Son grande, son pequeno!",
+        "es": "¡Sonido grande, sonido pequeño!"
+      },
+      "fonte": "steam/steam_do_mes.json"
+    },
+    {
+      "id": "frase.steam_mes.STEAM-2_3-01.01",
+      "tipo": "steam_mes",
+      "en": "Squeeze the soft bread!",
+      "significado": {
+        "gl": "Aperta o pan brando!",
+        "es": "¡Aprieta el pan blando!"
+      },
+      "fonte": "steam/steam_do_mes.json"
+    },
+    {
+      "id": "frase.steam_mes.STEAM-2_3-01.02",
+      "tipo": "steam_mes",
+      "en": "Hard bread! Knock, knock!",
+      "significado": {
+        "gl": "Pan duro! Toc, toc!",
+        "es": "¡Pan duro! ¡Toc, toc!"
+      },
+      "fonte": "steam/steam_do_mes.json"
+    },
+    {
+      "id": "frase.steam_mes.STEAM-2_3-02.01",
+      "tipo": "steam_mes",
+      "en": "Look inside the apple!",
+      "significado": {
+        "gl": "Mira dentro da mazá!",
+        "es": "¡Mira dentro de la manzana!"
+      },
+      "fonte": "steam/steam_do_mes.json"
+    },
+    {
+      "id": "frase.steam_mes.STEAM-2_3-02.02",
+      "tipo": "steam_mes",
+      "en": "A star!",
+      "significado": {
+        "gl": "Unha estrela!",
+        "es": "¡Una estrella!"
+      },
+      "fonte": "steam/steam_do_mes.json"
+    },
+    {
+      "id": "frase.steam_mes.STEAM-2_3-03.01",
+      "tipo": "steam_mes",
+      "en": "Wash your hands!",
+      "significado": {
+        "gl": "Lava as mans!",
+        "es": "¡Lávate las manos!"
+      },
+      "fonte": "steam/steam_do_mes.json"
+    },
+    {
+      "id": "frase.steam_mes.STEAM-2_3-03.02",
+      "tipo": "steam_mes",
+      "en": "First water, then soap!",
+      "significado": {
+        "gl": "Primeiro auga, despois xabón!",
+        "es": "¡Primero agua, después jabón!"
+      },
+      "fonte": "steam/steam_do_mes.json"
+    },
+    {
+      "id": "frase.steam_mes.STEAM-2_3-04.01",
+      "tipo": "steam_mes",
+      "en": "Lift the wet towel!",
+      "significado": {
+        "gl": "Levanta a toalla mollada!",
+        "es": "¡Levanta la toalla mojada!"
+      },
+      "fonte": "steam/steam_do_mes.json"
+    },
+    {
+      "id": "frase.steam_mes.STEAM-2_3-04.02",
+      "tipo": "steam_mes",
+      "en": "Heavy! Light!",
+      "significado": {
+        "gl": "Pesada! Lixeira!",
+        "es": "¡Pesada! ¡Ligera!"
+      },
+      "fonte": "steam/steam_do_mes.json"
+    },
+    {
+      "id": "frase.steam_mes.STEAM-2_3-05.01",
+      "tipo": "steam_mes",
+      "en": "Run, dog! Fast!",
+      "significado": {
+        "gl": "Corre, can! Rápido!",
+        "es": "¡Corre, perro! ¡Rápido!"
+      },
+      "fonte": "steam/steam_do_mes.json"
+    },
+    {
+      "id": "frase.steam_mes.STEAM-2_3-05.02",
+      "tipo": "steam_mes",
+      "en": "Sleep, cat. Shh…",
+      "significado": {
+        "gl": "Durme, gato. Chis…",
+        "es": "Duerme, gato. Chis…"
+      },
+      "fonte": "steam/steam_do_mes.json"
+    },
+    {
+      "id": "frase.steam_mes.STEAM-2_3-06.01",
+      "tipo": "steam_mes",
+      "en": "Look! Light in the box!",
+      "significado": {
+        "gl": "Mira! Luz na caixa!",
+        "es": "¡Mira! ¡Luz en la caja!"
+      },
+      "fonte": "steam/steam_do_mes.json"
+    },
+    {
+      "id": "frase.steam_mes.STEAM-2_3-06.02",
+      "tipo": "steam_mes",
+      "en": "Go, stars! Stop!",
+      "significado": {
+        "gl": "Ide, estrelas! Parade!",
+        "es": "¡Id, estrellas! ¡Parad!"
+      },
+      "fonte": "steam/steam_do_mes.json"
+    },
+    {
+      "id": "frase.steam_mes.STEAM-3_4-09.01",
+      "tipo": "steam_mes",
+      "en": "Build a tall tower!",
+      "significado": {
+        "gl": "Fai unha torre alta!",
+        "es": "¡Haz una torre alta!"
+      },
+      "fonte": "steam/steam_do_mes.json"
+    },
+    {
+      "id": "frase.steam_mes.STEAM-3_4-09.02",
+      "tipo": "steam_mes",
+      "en": "Steady! Steady!",
+      "significado": {
+        "gl": "Quieta! Quieta!",
+        "es": "¡Quieta! ¡Quieta!"
+      },
+      "fonte": "steam/steam_do_mes.json"
+    },
+    {
+      "id": "frase.steam_mes.STEAM-3_4-10.01",
+      "tipo": "steam_mes",
+      "en": "Red block, blue block!",
+      "significado": {
+        "gl": "Bloque vermello, bloque azul!",
+        "es": "¡Bloque rojo, bloque azul!"
+      },
+      "fonte": "steam/steam_do_mes.json"
+    },
+    {
+      "id": "frase.steam_mes.STEAM-3_4-10.02",
+      "tipo": "steam_mes",
+      "en": "What comes next?",
+      "significado": {
+        "gl": "Que vén despois?",
+        "es": "¿Qué viene después?"
+      },
+      "fonte": "steam/steam_do_mes.json"
+    },
+    {
+      "id": "frase.steam_mes.STEAM-3_4-11.01",
+      "tipo": "steam_mes",
+      "en": "Push the train!",
+      "significado": {
+        "gl": "Empurra o tren!",
+        "es": "¡Empuja el tren!"
+      },
+      "fonte": "steam/steam_do_mes.json"
+    },
+    {
+      "id": "frase.steam_mes.STEAM-3_4-11.02",
+      "tipo": "steam_mes",
+      "en": "Fast! Slow!",
+      "significado": {
+        "gl": "Rápido! Amodo!",
+        "es": "¡Rápido! ¡Despacio!"
+      },
+      "fonte": "steam/steam_do_mes.json"
+    },
+    {
+      "id": "frase.steam_mes.STEAM-3_4-12.01",
+      "tipo": "steam_mes",
+      "en": "Talk in the cup!",
+      "significado": {
+        "gl": "Fala no vaso!",
+        "es": "¡Habla en el vaso!"
+      },
+      "fonte": "steam/steam_do_mes.json"
+    },
+    {
+      "id": "frase.steam_mes.STEAM-3_4-12.02",
+      "tipo": "steam_mes",
+      "en": "Listen! Can you hear me?",
+      "significado": {
+        "gl": "Escoita! Óesme?",
+        "es": "¡Escucha! ¿Me oyes?"
+      },
+      "fonte": "steam/steam_do_mes.json"
+    },
+    {
+      "id": "frase.steam_mes.STEAM-3_4-01.01",
+      "tipo": "steam_mes",
+      "en": "Long shadow!",
+      "significado": {
+        "gl": "Sombra longa!",
+        "es": "¡Sombra larga!"
+      },
+      "fonte": "steam/steam_do_mes.json"
+    },
+    {
+      "id": "frase.steam_mes.STEAM-3_4-01.02",
+      "tipo": "steam_mes",
+      "en": "Short shadow!",
+      "significado": {
+        "gl": "Sombra curta!",
+        "es": "¡Sombra corta!"
+      },
+      "fonte": "steam/steam_do_mes.json"
+    },
+    {
+      "id": "frase.steam_mes.STEAM-3_4-02.01",
+      "tipo": "steam_mes",
+      "en": "Look, the ice melts!",
+      "significado": {
+        "gl": "Mira, o xeo derrétese!",
+        "es": "¡Mira, el hielo se derrite!"
+      },
+      "fonte": "steam/steam_do_mes.json"
+    },
+    {
+      "id": "frase.steam_mes.STEAM-3_4-02.02",
+      "tipo": "steam_mes",
+      "en": "Stir with the spoon!",
+      "significado": {
+        "gl": "Remexe coa culler!",
+        "es": "¡Remueve con la cuchara!"
+      },
+      "fonte": "steam/steam_do_mes.json"
+    },
+    {
+      "id": "frase.steam_mes.STEAM-3_4-03.01",
+      "tipo": "steam_mes",
+      "en": "One plate, one spoon!",
+      "significado": {
+        "gl": "Un prato, unha culler!",
+        "es": "¡Un plato, una cuchara!"
+      },
+      "fonte": "steam/steam_do_mes.json"
+    },
+    {
+      "id": "frase.steam_mes.STEAM-3_4-03.02",
+      "tipo": "steam_mes",
+      "en": "Is it empty?",
+      "significado": {
+        "gl": "Está baleiro?",
+        "es": "¿Está vacío?"
+      },
+      "fonte": "steam/steam_do_mes.json"
+    },
+    {
+      "id": "frase.steam_mes.STEAM-3_4-04.01",
+      "tipo": "steam_mes",
+      "en": "Pour the juice!",
+      "significado": {
+        "gl": "Bota o zume!",
+        "es": "¡Echa el zumo!"
+      },
+      "fonte": "steam/steam_do_mes.json"
+    },
+    {
+      "id": "frase.steam_mes.STEAM-3_4-04.02",
+      "tipo": "steam_mes",
+      "en": "Stop! It's full!",
+      "significado": {
+        "gl": "Para! Está cheo!",
+        "es": "¡Para! ¡Está lleno!"
+      },
+      "fonte": "steam/steam_do_mes.json"
+    },
+    {
+      "id": "frase.steam_mes.STEAM-3_4-05.01",
+      "tipo": "steam_mes",
+      "en": "Tap with the spoon!",
+      "significado": {
+        "gl": "Peta coa culler!",
+        "es": "¡Golpea con la cuchara!"
+      },
+      "fonte": "steam/steam_do_mes.json"
+    },
+    {
+      "id": "frase.steam_mes.STEAM-3_4-05.02",
+      "tipo": "steam_mes",
+      "en": "High! Low!",
+      "significado": {
+        "gl": "Agudo! Grave!",
+        "es": "¡Agudo! ¡Grave!"
+      },
+      "fonte": "steam/steam_do_mes.json"
+    },
+    {
+      "id": "frase.steam_mes.STEAM-3_4-06.01",
+      "tipo": "steam_mes",
+      "en": "Look in the spoon!",
+      "significado": {
+        "gl": "Mira na culler!",
+        "es": "¡Mira en la cuchara!"
+      },
+      "fonte": "steam/steam_do_mes.json"
+    },
+    {
+      "id": "frase.steam_mes.STEAM-3_4-06.02",
+      "tipo": "steam_mes",
+      "en": "Upside down!",
+      "significado": {
+        "gl": "Do revés!",
+        "es": "¡Del revés!"
+      },
+      "fonte": "steam/steam_do_mes.json"
+    },
+    {
+      "id": "frase.steam_mes.STEAM-4_5-09.01",
+      "tipo": "steam_mes",
+      "en": "Drop the water!",
+      "significado": {
+        "gl": "Bota a pinga!",
+        "es": "¡Echa la gota!"
+      },
+      "fonte": "steam/steam_do_mes.json"
+    },
+    {
+      "id": "frase.steam_mes.STEAM-4_5-09.02",
+      "tipo": "steam_mes",
+      "en": "Bandage the leg, gently!",
+      "significado": {
+        "gl": "Venda a pata, con coidado!",
+        "es": "¡Venda la pata, con cuidado!"
+      },
+      "fonte": "steam/steam_do_mes.json"
+    },
+    {
+      "id": "frase.steam_mes.STEAM-4_5-10.01",
+      "tipo": "steam_mes",
+      "en": "Listen to the heart!",
+      "significado": {
+        "gl": "Escoita o corazón!",
+        "es": "¡Escucha el corazón!"
+      },
+      "fonte": "steam/steam_do_mes.json"
+    },
+    {
+      "id": "frase.steam_mes.STEAM-4_5-10.02",
+      "tipo": "steam_mes",
+      "en": "Jump! Now listen!",
+      "significado": {
+        "gl": "Salta! Agora escoita!",
+        "es": "¡Salta! ¡Ahora escucha!"
+      },
+      "fonte": "steam/steam_do_mes.json"
+    },
+    {
+      "id": "frase.steam_mes.STEAM-4_5-11.01",
+      "tipo": "steam_mes",
+      "en": "Four legs here!",
+      "significado": {
+        "gl": "Catro patas, aquí!",
+        "es": "¡Cuatro patas, aquí!"
+      },
+      "fonte": "steam/steam_do_mes.json"
+    },
+    {
+      "id": "frase.steam_mes.STEAM-4_5-11.02",
+      "tipo": "steam_mes",
+      "en": "Two legs there!",
+      "significado": {
+        "gl": "Dúas patas, alí!",
+        "es": "¡Dos patas, allí!"
+      },
+      "fonte": "steam/steam_do_mes.json"
+    },
+    {
+      "id": "frase.steam_mes.STEAM-4_5-12.01",
+      "tipo": "steam_mes",
+      "en": "Examine with the lens!",
+      "significado": {
+        "gl": "Examina coa lupa!",
+        "es": "¡Examina con la lupa!"
+      },
+      "fonte": "steam/steam_do_mes.json"
+    },
+    {
+      "id": "frase.steam_mes.STEAM-4_5-12.02",
+      "tipo": "steam_mes",
+      "en": "It's big! Look!",
+      "significado": {
+        "gl": "É grande! Mira!",
+        "es": "¡Es grande! ¡Mira!"
+      },
+      "fonte": "steam/steam_do_mes.json"
+    },
+    {
+      "id": "frase.steam_mes.STEAM-4_5-01.01",
+      "tipo": "steam_mes",
+      "en": "Carry it gently!",
+      "significado": {
+        "gl": "Lévao con coidado!",
+        "es": "¡Llévalo con cuidado!"
+      },
+      "fonte": "steam/steam_do_mes.json"
+    },
+    {
+      "id": "frase.steam_mes.STEAM-4_5-01.02",
+      "tipo": "steam_mes",
+      "en": "Slow, slow! Together!",
+      "significado": {
+        "gl": "Amodo, amodo! Xuntos!",
+        "es": "¡Despacio, despacio! ¡Juntos!"
+      },
+      "fonte": "steam/steam_do_mes.json"
+    },
+    {
+      "id": "frase.steam_mes.STEAM-4_5-02.01",
+      "tipo": "steam_mes",
+      "en": "Mix the soil and water!",
+      "significado": {
+        "gl": "Mestura a terra e a auga!",
+        "es": "¡Mezcla la tierra y el agua!"
+      },
+      "fonte": "steam/steam_do_mes.json"
+    },
+    {
+      "id": "frase.steam_mes.STEAM-4_5-02.02",
+      "tipo": "steam_mes",
+      "en": "It's muddy!",
+      "significado": {
+        "gl": "Está enlamado!",
+        "es": "¡Está embarrado!"
+      },
+      "fonte": "steam/steam_do_mes.json"
+    },
+    {
+      "id": "frase.steam_mes.STEAM-4_5-03.01",
+      "tipo": "steam_mes",
+      "en": "Blow the windmill!",
+      "significado": {
+        "gl": "Sopra o muíño!",
+        "es": "¡Sopla el molinillo!"
+      },
+      "fonte": "steam/steam_do_mes.json"
+    },
+    {
+      "id": "frase.steam_mes.STEAM-4_5-03.02",
+      "tipo": "steam_mes",
+      "en": "It's windy!",
+      "significado": {
+        "gl": "Vai vento!",
+        "es": "¡Hace viento!"
+      },
+      "fonte": "steam/steam_do_mes.json"
+    },
+    {
+      "id": "frase.steam_mes.STEAM-4_5-04.01",
+      "tipo": "steam_mes",
+      "en": "Make the rain!",
+      "significado": {
+        "gl": "Fai a choiva!",
+        "es": "¡Haz la lluvia!"
+      },
+      "fonte": "steam/steam_do_mes.json"
+    },
+    {
+      "id": "frase.steam_mes.STEAM-4_5-04.02",
+      "tipo": "steam_mes",
+      "en": "Thunder! Boom!",
+      "significado": {
+        "gl": "Trono! Bum!",
+        "es": "¡Trueno! ¡Bum!"
+      },
+      "fonte": "steam/steam_do_mes.json"
+    },
+    {
+      "id": "frase.steam_mes.STEAM-4_5-05.01",
+      "tipo": "steam_mes",
+      "en": "Find your shadow!",
+      "significado": {
+        "gl": "Busca a túa sombra!",
+        "es": "¡Busca tu sombra!"
+      },
+      "fonte": "steam/steam_do_mes.json"
+    },
+    {
+      "id": "frase.steam_mes.STEAM-4_5-05.02",
+      "tipo": "steam_mes",
+      "en": "Hat on! Look at the shadow!",
+      "significado": {
+        "gl": "Sombreiro posto! Mira a sombra!",
+        "es": "¡Sombrero puesto! ¡Mira la sombra!"
+      },
+      "fonte": "steam/steam_do_mes.json"
+    },
+    {
+      "id": "frase.steam_mes.STEAM-4_5-06.01",
+      "tipo": "steam_mes",
+      "en": "It's raining! Boots on!",
+      "significado": {
+        "gl": "Está chovendo! Botas postas!",
+        "es": "¡Está lloviendo! ¡Botas puestas!"
+      },
+      "fonte": "steam/steam_do_mes.json"
+    },
+    {
+      "id": "frase.steam_mes.STEAM-4_5-06.02",
+      "tipo": "steam_mes",
+      "en": "Sunny! Hat on!",
+      "significado": {
+        "gl": "Sol! Sombreiro posto!",
+        "es": "¡Sol! ¡Sombrero puesto!"
+      },
+      "fonte": "steam/steam_do_mes.json"
+    },
+    {
+      "id": "frase.steam_mes.STEAM-5_6-09.01",
+      "tipo": "steam_mes",
+      "en": "Mix red and yellow!",
+      "significado": {
+        "gl": "Mestura vermello e amarelo!",
+        "es": "¡Mezcla rojo y amarillo!"
+      },
+      "fonte": "steam/steam_do_mes.json"
+    },
+    {
+      "id": "frase.steam_mes.STEAM-5_6-09.02",
+      "tipo": "steam_mes",
+      "en": "Orange! A new colour!",
+      "significado": {
+        "gl": "Laranxa! Unha cor nova!",
+        "es": "¡Naranja! ¡Un color nuevo!"
+      },
+      "fonte": "steam/steam_do_mes.json"
+    },
+    {
+      "id": "frase.steam_mes.STEAM-5_6-10.01",
+      "tipo": "steam_mes",
+      "en": "Look through the red paper!",
+      "significado": {
+        "gl": "Mira polo papel vermello!",
+        "es": "¡Mira por el papel rojo!"
+      },
+      "fonte": "steam/steam_do_mes.json"
+    },
+    {
+      "id": "frase.steam_mes.STEAM-5_6-10.02",
+      "tipo": "steam_mes",
+      "en": "Everything is red!",
+      "significado": {
+        "gl": "Todo é vermello!",
+        "es": "¡Todo es rojo!"
+      },
+      "fonte": "steam/steam_do_mes.json"
+    },
+    {
+      "id": "frase.steam_mes.STEAM-5_6-11.01",
+      "tipo": "steam_mes",
+      "en": "Fold the paper!",
+      "significado": {
+        "gl": "Dobra o papel!",
+        "es": "¡Dobla el papel!"
+      },
+      "fonte": "steam/steam_do_mes.json"
+    },
+    {
+      "id": "frase.steam_mes.STEAM-5_6-11.02",
+      "tipo": "steam_mes",
+      "en": "Open it! The same!",
+      "significado": {
+        "gl": "Ábreo! Igual!",
+        "es": "¡Ábrelo! ¡Igual!"
+      },
+      "fonte": "steam/steam_do_mes.json"
+    },
+    {
+      "id": "frase.steam_mes.STEAM-5_6-12.01",
+      "tipo": "steam_mes",
+      "en": "Spin the circle!",
+      "significado": {
+        "gl": "Fai xirar o círculo!",
+        "es": "¡Haz girar el círculo!"
+      },
+      "fonte": "steam/steam_do_mes.json"
+    },
+    {
+      "id": "frase.steam_mes.STEAM-5_6-12.02",
+      "tipo": "steam_mes",
+      "en": "The colours mix!",
+      "significado": {
+        "gl": "As cores mestúranse!",
+        "es": "¡Los colores se mezclan!"
+      },
+      "fonte": "steam/steam_do_mes.json"
+    },
+    {
+      "id": "frase.steam_mes.STEAM-5_6-01.01",
+      "tipo": "steam_mes",
+      "en": "Crumple the paper!",
+      "significado": {
+        "gl": "Engurra o papel!",
+        "es": "¡Arruga el papel!"
+      },
+      "fonte": "steam/steam_do_mes.json"
+    },
+    {
+      "id": "frase.steam_mes.STEAM-5_6-01.02",
+      "tipo": "steam_mes",
+      "en": "What sound is it?",
+      "significado": {
+        "gl": "Que son é?",
+        "es": "¿Qué sonido es?"
+      },
+      "fonte": "steam/steam_do_mes.json"
+    },
+    {
+      "id": "frase.steam_mes.STEAM-5_6-02.01",
+      "tipo": "steam_mes",
+      "en": "Throw the plane gently!",
+      "significado": {
+        "gl": "Lanza o avión con suavidade!",
+        "es": "¡Lanza el avión con suavidad!"
+      },
+      "fonte": "steam/steam_do_mes.json"
+    },
+    {
+      "id": "frase.steam_mes.STEAM-5_6-02.02",
+      "tipo": "steam_mes",
+      "en": "How far? Count the steps!",
+      "significado": {
+        "gl": "Ata onde? Conta os pasos!",
+        "es": "¿Hasta dónde? ¡Cuenta los pasos!"
+      },
+      "fonte": "steam/steam_do_mes.json"
+    },
+    {
+      "id": "frase.steam_mes.STEAM-5_6-03.01",
+      "tipo": "steam_mes",
+      "en": "Two steps forward!",
+      "significado": {
+        "gl": "Dous pasos adiante!",
+        "es": "¡Dos pasos adelante!"
+      },
+      "fonte": "steam/steam_do_mes.json"
+    },
+    {
+      "id": "frase.steam_mes.STEAM-5_6-03.02",
+      "tipo": "steam_mes",
+      "en": "Turn left!",
+      "significado": {
+        "gl": "Xira á esquerda!",
+        "es": "¡Gira a la izquierda!"
+      },
+      "fonte": "steam/steam_do_mes.json"
+    },
+    {
+      "id": "frase.steam_mes.STEAM-5_6-04.01",
+      "tipo": "steam_mes",
+      "en": "Pack the suitcase!",
+      "significado": {
+        "gl": "Fai a maleta!",
+        "es": "¡Haz la maleta!"
+      },
+      "fonte": "steam/steam_do_mes.json"
+    },
+    {
+      "id": "frase.steam_mes.STEAM-5_6-04.02",
+      "tipo": "steam_mes",
+      "en": "Is it heavy?",
+      "significado": {
+        "gl": "Pesa moito?",
+        "es": "¿Pesa mucho?"
+      },
+      "fonte": "steam/steam_do_mes.json"
+    },
+    {
+      "id": "frase.steam_mes.STEAM-5_6-05.01",
+      "tipo": "steam_mes",
+      "en": "Flash the light!",
+      "significado": {
+        "gl": "Fai escintilar a luz!",
+        "es": "¡Haz destellar la luz!"
+      },
+      "fonte": "steam/steam_do_mes.json"
+    },
+    {
+      "id": "frase.steam_mes.STEAM-5_6-05.02",
+      "tipo": "steam_mes",
+      "en": "One, two… stop!",
+      "significado": {
+        "gl": "Un, dous… para!",
+        "es": "Uno, dos… ¡para!"
+      },
+      "fonte": "steam/steam_do_mes.json"
+    },
+    {
+      "id": "frase.steam_mes.STEAM-5_6-06.01",
+      "tipo": "steam_mes",
+      "en": "Choo-choo! Faster!",
+      "significado": {
+        "gl": "Chu-chu! Máis rápido!",
+        "es": "¡Chu-chu! ¡Más rápido!"
+      },
+      "fonte": "steam/steam_do_mes.json"
+    },
+    {
+      "id": "frase.steam_mes.STEAM-5_6-06.02",
+      "tipo": "steam_mes",
+      "en": "Long pipe, low sound!",
+      "significado": {
+        "gl": "Tubo longo, son grave!",
+        "es": "¡Tubo largo, sonido grave!"
+      },
+      "fonte": "steam/steam_do_mes.json"
+    },
+    {
+      "id": "frase.lamina.flashcard_a_apple",
+      "tipo": "lamina",
+      "en": "Apple",
+      "accion": {
+        "gl": "Facer o xesto de morder unha mazá saborosa.",
+        "es": "Hacer el gesto de morder una manzana sabrosa."
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.flashcard_a_apple.orde",
+      "tipo": "lamina",
+      "en": "Munch an apple! Crunch, crunch!",
+      "accion": {
+        "gl": "Facer o xesto de morder unha mazá saborosa.",
+        "es": "Hacer el gesto de morder una manzana sabrosa."
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.flashcard_b_boat",
+      "tipo": "lamina",
+      "en": "Boat",
+      "accion": {
+        "gl": "Remar cos brazos cara adiante e cara atrás.",
+        "es": "Remar con los brazos hacia adelante y hacia atrás."
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.flashcard_b_boat.orde",
+      "tipo": "lamina",
+      "en": "Row your boat on the sea waves!",
+      "accion": {
+        "gl": "Remar cos brazos cara adiante e cara atrás.",
+        "es": "Remar con los brazos hacia adelante y hacia atrás."
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.flashcard_c_cat",
+      "tipo": "lamina",
+      "en": "Cat",
+      "accion": {
+        "gl": "Pousar a man suavemente na cara coma unha patiña.",
+        "es": "Poner la mano suavemente en la cara como una patita."
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.flashcard_c_cat.orde",
+      "tipo": "lamina",
+      "en": "Soft kitten paws, stretch and purr!",
+      "accion": {
+        "gl": "Pousar a man suavemente na cara coma unha patiña.",
+        "es": "Poner la mano suavemente en la cara como una patita."
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.flashcard_d_dog",
+      "tipo": "lamina",
+      "en": "Dog",
+      "accion": {
+        "gl": "Mover as mans atrás simulando o rabiño contento.",
+        "es": "Mover las manos atrás simulando la colita contenta."
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.flashcard_d_dog.orde",
+      "tipo": "lamina",
+      "en": "Wiggle your tail like a happy puppy!",
+      "accion": {
+        "gl": "Mover as mans atrás simulando o rabiño contento.",
+        "es": "Mover las manos atrás simulando la colita contenta."
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.flashcard_e_elephant",
+      "tipo": "lamina",
+      "en": "Elephant",
+      "accion": {
+        "gl": "Erguer o brazo facendo de trompa e pisar forte no chan.",
+        "es": "Alzar el brazo haciendo de trompa y pisar fuerte en el suelo."
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.flashcard_e_elephant.orde",
+      "tipo": "lamina",
+      "en": "Raise your trunk high and stomp your feet!",
+      "accion": {
+        "gl": "Erguer o brazo facendo de trompa e pisar forte no chan.",
+        "es": "Alzar el brazo haciendo de trompa y pisar fuerte en el suelo."
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.flashcard_f_fish",
+      "tipo": "lamina",
+      "en": "Fish",
+      "accion": {
+        "gl": "Xuntar palmas e facer ondas suaves diante do peito.",
+        "es": "Juntar palmas y hacer ondas suaves delante del pecho."
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.flashcard_f_fish.orde",
+      "tipo": "lamina",
+      "en": "Swim like a little fish, glide through the water!",
+      "accion": {
+        "gl": "Xuntar palmas e facer ondas suaves diante do peito.",
+        "es": "Juntar palmas y hacer ondas suaves delante del pecho."
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.flashcard_g_guitar",
+      "tipo": "lamina",
+      "en": "Guitar",
+      "accion": {
+        "gl": "Mover os dedos no aire coma tocando cordas rítmicas.",
+        "es": "Mover los dedos en el aire como tocando cuerdas rítmicas."
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.flashcard_g_guitar.orde",
+      "tipo": "lamina",
+      "en": "Strum the strings to a slow, steady beat!",
+      "accion": {
+        "gl": "Mover os dedos no aire coma tocando cordas rítmicas.",
+        "es": "Mover los dedos en el aire como tocando cuerdas rítmicas."
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.flashcard_h_hat",
+      "tipo": "lamina",
+      "en": "Hat",
+      "accion": {
+        "gl": "Levar as dúas mans á cabeza e axustar o gorro imaxinario.",
+        "es": "Llevar las dos manos a la cabeza y ajustar el gorro imaginario."
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.flashcard_h_hat.orde",
+      "tipo": "lamina",
+      "en": "Put on your warm winter hat!",
+      "accion": {
+        "gl": "Levar as dúas mans á cabeza e axustar o gorro imaxinario.",
+        "es": "Llevar las dos manos a la cabeza y ajustar el gorro imaginario."
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.flashcard_i_island",
+      "tipo": "lamina",
+      "en": "Island",
+      "accion": {
+        "gl": "Poñer a man na fronte coma visera ollando ao horizonte.",
+        "es": "Poner la mano en la frente como visera mirando al horizonte."
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.flashcard_i_island.orde",
+      "tipo": "lamina",
+      "en": "Look far away with hand over eyes: island ahead!",
+      "accion": {
+        "gl": "Poñer a man na fronte coma visera ollando ao horizonte.",
+        "es": "Poner la mano en la frente como visera mirando al horizonte."
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.flashcard_j_juice",
+      "tipo": "lamina",
+      "en": "Juice",
+      "accion": {
+        "gl": "Suxeitar o vaso coas dúas mans e facer son de beber.",
+        "es": "Sujetar el vaso con las dos manos y hacer sonido de beber."
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.flashcard_j_juice.orde",
+      "tipo": "lamina",
+      "en": "Hold your cup with two hands and take a sip!",
+      "accion": {
+        "gl": "Suxeitar o vaso coas dúas mans e facer son de beber.",
+        "es": "Sujetar el vaso con las dos manos y hacer sonido de beber."
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.flashcard_k_kite",
+      "tipo": "lamina",
+      "en": "Kite",
+      "accion": {
+        "gl": "Soprar cos beizos en círculo e erguer a man cara arriba.",
+        "es": "Soplar con los labios en círculo y alzar la mano hacia arriba."
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.flashcard_k_kite.orde",
+      "tipo": "lamina",
+      "en": "Blow like the wind: Fffff! Fly your kite high!",
+      "accion": {
+        "gl": "Soprar cos beizos en círculo e erguer a man cara arriba.",
+        "es": "Soplar con los labios en círculo y alzar la mano hacia arriba."
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.flashcard_l_leaf",
+      "tipo": "lamina",
+      "en": "Leaf",
+      "accion": {
+        "gl": "Xirar as mans baixando amodiño ata tocar o chan.",
+        "es": "Girar las manos bajando despacito hasta tocar el suelo."
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.flashcard_l_leaf.orde",
+      "tipo": "lamina",
+      "en": "Falling leaf, twirl gently to the floor!",
+      "accion": {
+        "gl": "Xirar as mans baixando amodiño ata tocar o chan.",
+        "es": "Girar las manos bajando despacito hasta tocar el suelo."
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.flashcard_m_moon",
+      "tipo": "lamina",
+      "en": "Moon",
+      "accion": {
+        "gl": "Pechar os ollos e xuntar as mans debaixo da meixela.",
+        "es": "Cerrar los ojos y juntar las manos debajo de la mejilla."
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.flashcard_m_moon.orde",
+      "tipo": "lamina",
+      "en": "Close your eyes and make a soft sleeping sound: Shhh...",
+      "accion": {
+        "gl": "Pechar os ollos e xuntar as mans debaixo da meixela.",
+        "es": "Cerrar los ojos y juntar las manos debajo de la mejilla."
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.flashcard_n_nest",
+      "tipo": "lamina",
+      "en": "Nest",
+      "accion": {
+        "gl": "Facer un cunquiño coas dúas mans diante do peito.",
+        "es": "Hacer un cuenquito con las dos manos delante del pecho."
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.flashcard_n_nest.orde",
+      "tipo": "lamina",
+      "en": "Cup your hands together to make a warm nest!",
+      "accion": {
+        "gl": "Facer un cunquiño coas dúas mans diante do peito.",
+        "es": "Hacer un cuenquito con las dos manos delante del pecho."
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.flashcard_o_octopus",
+      "tipo": "lamina",
+      "en": "Octopus",
+      "accion": {
+        "gl": "Mover todos os dedos axilmente coma tentáculos brandos.",
+        "es": "Mover todos los dedos ágilmente como tentáculos blandos."
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.flashcard_o_octopus.orde",
+      "tipo": "lamina",
+      "en": "Wiggle all your eight fingers like octopus legs!",
+      "accion": {
+        "gl": "Mover todos os dedos axilmente coma tentáculos brandos.",
+        "es": "Mover todos los dedos ágilmente como tentáculos blandos."
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.flashcard_p_pumpkin",
+      "tipo": "lamina",
+      "en": "Pumpkin",
+      "accion": {
+        "gl": "Debuxar un gran círculo no aire cos dous brazos xuntos.",
+        "es": "Dibujar un gran círculo en el aire con los dos brazos juntos."
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.flashcard_p_pumpkin.orde",
+      "tipo": "lamina",
+      "en": "Draw a big round circle in the air with both hands!",
+      "accion": {
+        "gl": "Debuxar un gran círculo no aire cos dous brazos xuntos.",
+        "es": "Dibujar un gran círculo en el aire con los dos brazos juntos."
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.flashcard_q_quiet",
+      "tipo": "lamina",
+      "en": "Quiet",
+      "accion": {
+        "gl": "Dedo índice sobre os beizos en actitude de escoita.",
+        "es": "Dedo índice sobre los labios en actitud de escucha."
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.flashcard_q_quiet.orde",
+      "tipo": "lamina",
+      "en": "Finger to lips: Shhh, quiet time...",
+      "accion": {
+        "gl": "Dedo índice sobre os beizos en actitude de escoita.",
+        "es": "Dedo índice sobre los labios en actitud de escucha."
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.flashcard_r_rain",
+      "tipo": "lamina",
+      "en": "Rain",
+      "accion": {
+        "gl": "Bater as puntas dos dedos nas pernas coma pingas no tellado.",
+        "es": "Golpear las puntas de los dedos en las piernas como gotas en el tejado."
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.flashcard_r_rain.orde",
+      "tipo": "lamina",
+      "en": "Tap your fingers on your thighs like gentle rain: plip, plop!",
+      "accion": {
+        "gl": "Bater as puntas dos dedos nas pernas coma pingas no tellado.",
+        "es": "Golpear las puntas de los dedos en las piernas como gotas en el tejado."
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.flashcard_s_sun",
+      "tipo": "lamina",
+      "en": "Sun",
+      "accion": {
+        "gl": "Abrir os dous brazos en cruz mirando cara arriba cun sorriso.",
+        "es": "Abrir los dos brazos en cruz mirando hacia arriba con una sonrisa."
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.flashcard_s_sun.orde",
+      "tipo": "lamina",
+      "en": "Open your arms wide to welcome the sunny day!",
+      "accion": {
+        "gl": "Abrir os dous brazos en cruz mirando cara arriba cun sorriso.",
+        "es": "Abrir los dos brazos en cruz mirando hacia arriba con una sonrisa."
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.flashcard_t_tree",
+      "tipo": "lamina",
+      "en": "Tree",
+      "accion": {
+        "gl": "Poñerse de pé moi rectos e erguer as ramas ao aire.",
+        "es": "Ponerse de pie muy rectos y alzar las ramas al aire."
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.flashcard_t_tree.orde",
+      "tipo": "lamina",
+      "en": "Stand tall like a strong oak tree in the forest!",
+      "accion": {
+        "gl": "Poñerse de pé moi rectos e erguer as ramas ao aire.",
+        "es": "Ponerse de pie muy rectos y alzar las ramas al aire."
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.flashcard_u_umbrella",
+      "tipo": "lamina",
+      "en": "Umbrella",
+      "accion": {
+        "gl": "Erguer unha man por riba da cabeza facendo o arco protector.",
+        "es": "Alzar una mano por encima de la cabeza haciendo el arco protector."
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.flashcard_u_umbrella.orde",
+      "tipo": "lamina",
+      "en": "Open your umbrella: Click! Stay dry under the rain!",
+      "accion": {
+        "gl": "Erguer unha man por riba da cabeza facendo o arco protector.",
+        "es": "Alzar una mano por encima de la cabeza haciendo el arco protector."
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.flashcard_v_violin",
+      "tipo": "lamina",
+      "en": "Violin",
+      "accion": {
+        "gl": "Apoiar o queixo nun ombreiro e mover a man coma un arco.",
+        "es": "Apoyar la barbilla en un hombro y mover la mano como un arco."
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.flashcard_v_violin.orde",
+      "tipo": "lamina",
+      "en": "Move your bow across the violin: Sweeeet melody!",
+      "accion": {
+        "gl": "Apoiar o queixo nun ombreiro e mover a man coma un arco.",
+        "es": "Apoyar la barbilla en un hombro y mover la mano como un arco."
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.flashcard_w_water",
+      "tipo": "lamina",
+      "en": "Water",
+      "accion": {
+        "gl": "Fregar as dúas palmas xuntas coma lavando con xabón.",
+        "es": "Frotar las dos palmas juntas como lavando con jabón."
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.flashcard_w_water.orde",
+      "tipo": "lamina",
+      "en": "Wash, wash your hands with clean warm water!",
+      "accion": {
+        "gl": "Fregar as dúas palmas xuntas coma lavando con xabón.",
+        "es": "Frotar las dos palmas juntas como lavando con jabón."
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.flashcard_x_xylophone",
+      "tipo": "lamina",
+      "en": "Xylophone",
+      "accion": {
+        "gl": "Puntear no aire coma tocando láminas musicais afinadas.",
+        "es": "Puntear en el aire como tocando láminas musicales afinadas."
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.flashcard_x_xylophone.orde",
+      "tipo": "lamina",
+      "en": "Tap the xylophone keys: Ting, ting, tong!",
+      "accion": {
+        "gl": "Puntear no aire coma tocando láminas musicais afinadas.",
+        "es": "Puntear en el aire como tocando láminas musicales afinadas."
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.flashcard_y_yellow",
+      "tipo": "lamina",
+      "en": "Yellow",
+      "accion": {
+        "gl": "Sinalar co dedo calquera elemento amarelo da aula.",
+        "es": "Señalar con el dedo cualquier elemento amarillo del aula."
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.flashcard_y_yellow.orde",
+      "tipo": "lamina",
+      "en": "Point to something yellow around you!",
+      "accion": {
+        "gl": "Sinalar co dedo calquera elemento amarelo da aula.",
+        "es": "Señalar con el dedo cualquier elemento amarillo del aula."
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.flashcard_z_zebra",
+      "tipo": "lamina",
+      "en": "Zebra",
+      "accion": {
+        "gl": "Picar no chan cos pés alternos coma o trote da cebra.",
+        "es": "Picar en el suelo con los pies alternos como el trote de la cebra."
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.flashcard_z_zebra.orde",
+      "tipo": "lamina",
+      "en": "Trot, trot like a striped zebra: Clip-clop!",
+      "accion": {
+        "gl": "Picar no chan cos pés alternos coma o trote da cebra.",
+        "es": "Picar en el suelo con los pies alternos como el trote de la cebra."
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vocab_27",
+      "tipo": "lamina",
+      "en": "House",
+      "accion": {
+        "gl": "Facer o tellado coas mans",
+        "es": "Hacer el tejado con las manos"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vocab_27.orde",
+      "tipo": "lamina",
+      "en": "Make a roof with your hands",
+      "accion": {
+        "gl": "Facer o tellado coas mans",
+        "es": "Hacer el tejado con las manos"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vocab_28",
+      "tipo": "lamina",
+      "en": "Table",
+      "accion": {
+        "gl": "Pousar as mans planas na mesa",
+        "es": "Apoyar las manos planas en la mesa"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vocab_28.orde",
+      "tipo": "lamina",
+      "en": "Put your hands flat on the table",
+      "accion": {
+        "gl": "Pousar as mans planas na mesa",
+        "es": "Apoyar las manos planas en la mesa"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vocab_29",
+      "tipo": "lamina",
+      "en": "Chair",
+      "accion": {
+        "gl": "Sentar amodiño sen ruído",
+        "es": "Sentarse despacito sin hacer ruido"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vocab_29.orde",
+      "tipo": "lamina",
+      "en": "Sit down gently and quietly",
+      "accion": {
+        "gl": "Sentar amodiño sen ruído",
+        "es": "Sentarse despacito sin hacer ruido"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vocab_30",
+      "tipo": "lamina",
+      "en": "Plate",
+      "accion": {
+        "gl": "Debuxar un prato no aire",
+        "es": "Dibujar un plato en el aire"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vocab_30.orde",
+      "tipo": "lamina",
+      "en": "Trace a circle in the air",
+      "accion": {
+        "gl": "Debuxar un prato no aire",
+        "es": "Dibujar un plato en el aire"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vocab_31",
+      "tipo": "lamina",
+      "en": "Spoon",
+      "accion": {
+        "gl": "Levar a culler imaxinaria á boca",
+        "es": "Llevar la cuchara imaginaria a la boca"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vocab_31.orde",
+      "tipo": "lamina",
+      "en": "Bring the spoon to your mouth",
+      "accion": {
+        "gl": "Levar a culler imaxinaria á boca",
+        "es": "Llevar la cuchara imaginaria a la boca"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vocab_32",
+      "tipo": "lamina",
+      "en": "Glass",
+      "accion": {
+        "gl": "Suxeitar con dúas mans",
+        "es": "Sujetar con las dos manos"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vocab_32.orde",
+      "tipo": "lamina",
+      "en": "Hold the glass with two hands",
+      "accion": {
+        "gl": "Suxeitar con dúas mans",
+        "es": "Sujetar con las dos manos"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vocab_33",
+      "tipo": "lamina",
+      "en": "Bed",
+      "accion": {
+        "gl": "Acochar a cabeza no colo",
+        "es": "Acurrucar la cabeza en el regazo"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vocab_33.orde",
+      "tipo": "lamina",
+      "en": "Snuggle your head to rest",
+      "accion": {
+        "gl": "Acochar a cabeza no colo",
+        "es": "Acurrucar la cabeza en el regazo"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vocab_34",
+      "tipo": "lamina",
+      "en": "Rug",
+      "accion": {
+        "gl": "Sentar coas pernas cruzadas",
+        "es": "Sentarse con las piernas cruzadas"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vocab_34.orde",
+      "tipo": "lamina",
+      "en": "Sit cross-legged in a circle",
+      "accion": {
+        "gl": "Sentar coas pernas cruzadas",
+        "es": "Sentarse con las piernas cruzadas"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vocab_35",
+      "tipo": "lamina",
+      "en": "Book",
+      "accion": {
+        "gl": "Abrir e pechar mans coma un libro",
+        "es": "Abrir y cerrar las manos como un libro"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vocab_35.orde",
+      "tipo": "lamina",
+      "en": "Open your hands like a book",
+      "accion": {
+        "gl": "Abrir e pechar mans coma un libro",
+        "es": "Abrir y cerrar las manos como un libro"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vocab_36",
+      "tipo": "lamina",
+      "en": "Backpack",
+      "accion": {
+        "gl": "Colgar tirantes nos ombreiros",
+        "es": "Colgarse los tirantes en los hombros"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vocab_36.orde",
+      "tipo": "lamina",
+      "en": "Put the straps over your shoulders",
+      "accion": {
+        "gl": "Colgar tirantes nos ombreiros",
+        "es": "Colgarse los tirantes en los hombros"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vocab_37",
+      "tipo": "lamina",
+      "en": "Shoes",
+      "accion": {
+        "gl": "Tocar a punta dos pés",
+        "es": "Tocarse la punta de los pies"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vocab_37.orde",
+      "tipo": "lamina",
+      "en": "Touch your toes",
+      "accion": {
+        "gl": "Tocar a punta dos pés",
+        "es": "Tocarse la punta de los pies"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vocab_38",
+      "tipo": "lamina",
+      "en": "Coat",
+      "accion": {
+        "gl": "Subir cremalleira do peito",
+        "es": "Subir la cremallera del pecho"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vocab_38.orde",
+      "tipo": "lamina",
+      "en": "Zip up your coat: Zip!",
+      "accion": {
+        "gl": "Subir cremalleira do peito",
+        "es": "Subir la cremallera del pecho"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vocab_39",
+      "tipo": "lamina",
+      "en": "Soap",
+      "accion": {
+        "gl": "Fregar as mans facendo escuma",
+        "es": "Frotarse las manos haciendo espuma"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vocab_39.orde",
+      "tipo": "lamina",
+      "en": "Rub your hands to make bubbles",
+      "accion": {
+        "gl": "Fregar as mans facendo escuma",
+        "es": "Frotarse las manos haciendo espuma"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vocab_40",
+      "tipo": "lamina",
+      "en": "Towel",
+      "accion": {
+        "gl": "Secar cada dedo con mimo",
+        "es": "Secar cada dedo con mimo"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vocab_40.orde",
+      "tipo": "lamina",
+      "en": "Dry each little finger",
+      "accion": {
+        "gl": "Secar cada dedo con mimo",
+        "es": "Secar cada dedo con mimo"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vocab_41",
+      "tipo": "lamina",
+      "en": "Toothbrush",
+      "accion": {
+        "gl": "Facer movementos arriba e abaixo",
+        "es": "Hacer movimientos arriba y abajo"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vocab_41.orde",
+      "tipo": "lamina",
+      "en": "Brush up and down gently",
+      "accion": {
+        "gl": "Facer movementos arriba e abaixo",
+        "es": "Hacer movimientos arriba y abajo"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vocab_42",
+      "tipo": "lamina",
+      "en": "Scissors",
+      "accion": {
+        "gl": "Abrir e pechar dous dedos",
+        "es": "Abrir y cerrar dos dedos"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vocab_42.orde",
+      "tipo": "lamina",
+      "en": "Snip, snip with two fingers",
+      "accion": {
+        "gl": "Abrir e pechar dous dedos",
+        "es": "Abrir y cerrar dos dedos"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vocab_43",
+      "tipo": "lamina",
+      "en": "Pencil",
+      "accion": {
+        "gl": "Facer trazos no aire co índice",
+        "es": "Hacer trazos en el aire con el índice"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vocab_43.orde",
+      "tipo": "lamina",
+      "en": "Scribble softly in the air",
+      "accion": {
+        "gl": "Facer trazos no aire co índice",
+        "es": "Hacer trazos en el aire con el índice"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vocab_44",
+      "tipo": "lamina",
+      "en": "Paper",
+      "accion": {
+        "gl": "Acariciar o papel suavemente",
+        "es": "Acariciar el papel con suavidad"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vocab_44.orde",
+      "tipo": "lamina",
+      "en": "Stroke the smooth sheet",
+      "accion": {
+        "gl": "Acariciar o papel suavemente",
+        "es": "Acariciar el papel con suavidad"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vocab_45",
+      "tipo": "lamina",
+      "en": "Ball",
+      "accion": {
+        "gl": "Botar coma unha pelota pequena",
+        "es": "Botar como una pelota pequeña"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vocab_45.orde",
+      "tipo": "lamina",
+      "en": "Bounce like a soft ball",
+      "accion": {
+        "gl": "Botar coma unha pelota pequena",
+        "es": "Botar como una pelota pequeña"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vocab_46",
+      "tipo": "lamina",
+      "en": "Doll",
+      "accion": {
+        "gl": "Balancear nos brazos amodiño",
+        "es": "Mecer en los brazos despacito"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vocab_46.orde",
+      "tipo": "lamina",
+      "en": "Rock gently in your arms",
+      "accion": {
+        "gl": "Balancear nos brazos amodiño",
+        "es": "Mecer en los brazos despacito"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vocab_47",
+      "tipo": "lamina",
+      "en": "Train",
+      "accion": {
+        "gl": "Mover os cóbados coma rodas",
+        "es": "Mover los codos como ruedas"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vocab_47.orde",
+      "tipo": "lamina",
+      "en": "Roll your arms: Choo-choo!",
+      "accion": {
+        "gl": "Mover os cóbados coma rodas",
+        "es": "Mover los codos como ruedas"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vocab_48",
+      "tipo": "lamina",
+      "en": "Car",
+      "accion": {
+        "gl": "Xirar o volante imaxinario",
+        "es": "Girar el volante imaginario"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vocab_48.orde",
+      "tipo": "lamina",
+      "en": "Turn the steering wheel",
+      "accion": {
+        "gl": "Xirar o volante imaxinario",
+        "es": "Girar el volante imaginario"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vocab_49",
+      "tipo": "lamina",
+      "en": "Bell",
+      "accion": {
+        "gl": "Tocar a campá coa man arriba",
+        "es": "Tocar la campana con la mano arriba"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vocab_49.orde",
+      "tipo": "lamina",
+      "en": "Ring the high bell: Ding-dong!",
+      "accion": {
+        "gl": "Tocar a campá coa man arriba",
+        "es": "Tocar la campana con la mano arriba"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vocab_50",
+      "tipo": "lamina",
+      "en": "Clock",
+      "accion": {
+        "gl": "Balanzo de cabeza a 72 bpm",
+        "es": "Balanceo de cabeza a 72 bpm"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vocab_50.orde",
+      "tipo": "lamina",
+      "en": "Tick-tock: swing your head slowly",
+      "accion": {
+        "gl": "Balanzo de cabeza a 72 bpm",
+        "es": "Balanceo de cabeza a 72 bpm"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vocab_51",
+      "tipo": "lamina",
+      "en": "Window",
+      "accion": {
+        "gl": "Abrir as dúas follas da fiestra",
+        "es": "Abrir las dos hojas de la ventana"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vocab_51.orde",
+      "tipo": "lamina",
+      "en": "Push open the window frame",
+      "accion": {
+        "gl": "Abrir as dúas follas da fiestra",
+        "es": "Abrir las dos hojas de la ventana"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vocab_52",
+      "tipo": "lamina",
+      "en": "Door",
+      "accion": {
+        "gl": "Bater no ar co puño pechado",
+        "es": "Llamar en el aire con el puño cerrado"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vocab_52.orde",
+      "tipo": "lamina",
+      "en": "Knock on the door: Knock-knock!",
+      "accion": {
+        "gl": "Bater no ar co puño pechado",
+        "es": "Llamar en el aire con el puño cerrado"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vocab_53",
+      "tipo": "lamina",
+      "en": "Key",
+      "accion": {
+        "gl": "Xirar dous dedos no ar",
+        "es": "Girar dos dedos en el aire"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vocab_53.orde",
+      "tipo": "lamina",
+      "en": "Turn the key: Click!",
+      "accion": {
+        "gl": "Xirar dous dedos no ar",
+        "es": "Girar dos dedos en el aire"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vocab_54",
+      "tipo": "lamina",
+      "en": "Mirror",
+      "accion": {
+        "gl": "Poñer carantoñas no espello",
+        "es": "Hacer muecas en el espejo"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vocab_54.orde",
+      "tipo": "lamina",
+      "en": "Smile at your reflection",
+      "accion": {
+        "gl": "Poñer carantoñas no espello",
+        "es": "Hacer muecas en el espejo"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vocab_55",
+      "tipo": "lamina",
+      "en": "Lamp",
+      "accion": {
+        "gl": "Abrir e pechar mans coma luz",
+        "es": "Abrir y cerrar las manos como una luz"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vocab_55.orde",
+      "tipo": "lamina",
+      "en": "Flicker fingers like light",
+      "accion": {
+        "gl": "Abrir e pechar mans coma luz",
+        "es": "Abrir y cerrar las manos como una luz"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vocab_56",
+      "tipo": "lamina",
+      "en": "Box",
+      "accion": {
+        "gl": "Erguer a tapa da caixa",
+        "es": "Levantar la tapa de la caja"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vocab_56.orde",
+      "tipo": "lamina",
+      "en": "Lift open the treasure lid",
+      "accion": {
+        "gl": "Erguer a tapa da caixa",
+        "es": "Levantar la tapa de la caja"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vocab_57",
+      "tipo": "lamina",
+      "en": "Button",
+      "accion": {
+        "gl": "Pinza dixital índice e polgar",
+        "es": "Pinza con el índice y el pulgar"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vocab_57.orde",
+      "tipo": "lamina",
+      "en": "Pincer grasp with thumb and finger",
+      "accion": {
+        "gl": "Pinza dixital índice e polgar",
+        "es": "Pinza con el índice y el pulgar"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vocab_58",
+      "tipo": "lamina",
+      "en": "Ribbon",
+      "accion": {
+        "gl": "Ondear o brazo no aire",
+        "es": "Ondear el brazo en el aire"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vocab_58.orde",
+      "tipo": "lamina",
+      "en": "Wave the ribbon in gentle waves",
+      "accion": {
+        "gl": "Ondear o brazo no aire",
+        "es": "Ondear el brazo en el aire"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vocab_59",
+      "tipo": "lamina",
+      "en": "Blanket",
+      "accion": {
+        "gl": "Taparse ata os ombreiros",
+        "es": "Taparse hasta los hombros"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vocab_59.orde",
+      "tipo": "lamina",
+      "en": "Pull the blanket over your shoulders",
+      "accion": {
+        "gl": "Taparse ata os ombreiros",
+        "es": "Taparse hasta los hombros"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vocab_60",
+      "tipo": "lamina",
+      "en": "Crib",
+      "accion": {
+        "gl": "Balanzo doce dos brazos",
+        "es": "Balanceo suave de los brazos"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vocab_60.orde",
+      "tipo": "lamina",
+      "en": "Sway gently side to side",
+      "accion": {
+        "gl": "Balanzo doce dos brazos",
+        "es": "Balanceo suave de los brazos"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vocab_61",
+      "tipo": "lamina",
+      "en": "Nappy",
+      "accion": {
+        "gl": "Acariciar a barriga",
+        "es": "Acariciarse la barriga"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vocab_61.orde",
+      "tipo": "lamina",
+      "en": "Pat your tummy softly",
+      "accion": {
+        "gl": "Acariciar a barriga",
+        "es": "Acariciarse la barriga"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vocab_62",
+      "tipo": "lamina",
+      "en": "Bottle",
+      "accion": {
+        "gl": "Suxeitar o bibe con coidado",
+        "es": "Sujetar el biberón con cuidado"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vocab_62.orde",
+      "tipo": "lamina",
+      "en": "Hold the baby bottle with care",
+      "accion": {
+        "gl": "Suxeitar o bibe con coidado",
+        "es": "Sujetar el biberón con cuidado"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vocab_63",
+      "tipo": "lamina",
+      "en": "Kiss",
+      "accion": {
+        "gl": "Lanzar un bico coa man",
+        "es": "Lanzar un beso con la mano"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vocab_63.orde",
+      "tipo": "lamina",
+      "en": "Blow a sweet kiss",
+      "accion": {
+        "gl": "Lanzar un bico coa man",
+        "es": "Lanzar un beso con la mano"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vocab_64",
+      "tipo": "lamina",
+      "en": "Hug",
+      "accion": {
+        "gl": "Abrazarse a un mesmo",
+        "es": "Abrazarse a uno mismo"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vocab_64.orde",
+      "tipo": "lamina",
+      "en": "Hug yourself warm and tight",
+      "accion": {
+        "gl": "Abrazarse a un mesmo",
+        "es": "Abrazarse a uno mismo"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vocab_65",
+      "tipo": "lamina",
+      "en": "Tickle",
+      "accion": {
+        "gl": "Camiñar dedos pola barriga",
+        "es": "Caminar con los dedos por la barriga"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vocab_65.orde",
+      "tipo": "lamina",
+      "en": "Crawl fingers on tummy: Giggle!",
+      "accion": {
+        "gl": "Camiñar dedos pola barriga",
+        "es": "Caminar con los dedos por la barriga"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vocab_66",
+      "tipo": "lamina",
+      "en": "Smile",
+      "accion": {
+        "gl": "Debuxar sorriso co índice",
+        "es": "Dibujar una sonrisa con el índice"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vocab_66.orde",
+      "tipo": "lamina",
+      "en": "Trace a big bright smile",
+      "accion": {
+        "gl": "Debuxar sorriso co índice",
+        "es": "Dibujar una sonrisa con el índice"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.animais_67",
+      "tipo": "lamina",
+      "en": "Puppy",
+      "accion": {
+        "gl": "Mover patas dianteiras",
+        "es": "Mover las patas delanteras"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.animais_67.orde",
+      "tipo": "lamina",
+      "en": "Paws up and bark: Woof!",
+      "accion": {
+        "gl": "Mover patas dianteiras",
+        "es": "Mover las patas delanteras"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.animais_68",
+      "tipo": "lamina",
+      "en": "Kitten",
+      "accion": {
+        "gl": "Ronronear «prrr-prrr»",
+        "es": "Ronronear «prrr-prrr»"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.animais_68.orde",
+      "tipo": "lamina",
+      "en": "Purr softly: Purrr-purrr",
+      "accion": {
+        "gl": "Ronronear «prrr-prrr»",
+        "es": "Ronronear «prrr-prrr»"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.animais_69",
+      "tipo": "lamina",
+      "en": "Bird",
+      "accion": {
+        "gl": "Aletear cos cóbados",
+        "es": "Aletear con los codos"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.animais_69.orde",
+      "tipo": "lamina",
+      "en": "Flap wings gently",
+      "accion": {
+        "gl": "Aletear cos cóbados",
+        "es": "Aletear con los codos"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.animais_70",
+      "tipo": "lamina",
+      "en": "Frog",
+      "accion": {
+        "gl": "Dar un salto pequeno no chan",
+        "es": "Dar un saltito en el suelo"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.animais_70.orde",
+      "tipo": "lamina",
+      "en": "Hop on the floor: Ribbit!",
+      "accion": {
+        "gl": "Dar un salto pequeno no chan",
+        "es": "Dar un saltito en el suelo"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.animais_71",
+      "tipo": "lamina",
+      "en": "Goldfish",
+      "accion": {
+        "gl": "Abrir e pechar beizos en O",
+        "es": "Abrir y cerrar los labios en O"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.animais_71.orde",
+      "tipo": "lamina",
+      "en": "Fish mouth pop: Pop-pop!",
+      "accion": {
+        "gl": "Abrir e pechar beizos en O",
+        "es": "Abrir y cerrar los labios en O"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.animais_72",
+      "tipo": "lamina",
+      "en": "Seagull",
+      "accion": {
+        "gl": "Planear cos brazos estendidos",
+        "es": "Planear con los brazos extendidos"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.animais_72.orde",
+      "tipo": "lamina",
+      "en": "Glide arms like a seagull",
+      "accion": {
+        "gl": "Planear cos brazos estendidos",
+        "es": "Planear con los brazos extendidos"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.animais_73",
+      "tipo": "lamina",
+      "en": "Dolphin",
+      "accion": {
+        "gl": "Ondas co corpo adiante",
+        "es": "Ondas con el cuerpo hacia delante"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.animais_73.orde",
+      "tipo": "lamina",
+      "en": "Leap like a dolphin in water",
+      "accion": {
+        "gl": "Ondas co corpo adiante",
+        "es": "Ondas con el cuerpo hacia delante"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.animais_74",
+      "tipo": "lamina",
+      "en": "Octopus",
+      "accion": {
+        "gl": "Encollerse e abrirse de golpe",
+        "es": "Encogerse y abrirse de golpe"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.animais_74.orde",
+      "tipo": "lamina",
+      "en": "Hide and spread tentacle fingers",
+      "accion": {
+        "gl": "Encollerse e abrirse de golpe",
+        "es": "Encogerse y abrirse de golpe"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.animais_75",
+      "tipo": "lamina",
+      "en": "Snail",
+      "accion": {
+        "gl": "Camiñar dous dedos moi amodo",
+        "es": "Caminar con dos dedos muy despacio"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.animais_75.orde",
+      "tipo": "lamina",
+      "en": "Crawl slowly like a snail",
+      "accion": {
+        "gl": "Camiñar dous dedos moi amodo",
+        "es": "Caminar con dos dedos muy despacio"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.animais_76",
+      "tipo": "lamina",
+      "en": "Butterfly",
+      "accion": {
+        "gl": "Cruzar polgares e aletear",
+        "es": "Cruzar los pulgares y aletear"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.animais_76.orde",
+      "tipo": "lamina",
+      "en": "Cross thumbs and flutter wings",
+      "accion": {
+        "gl": "Cruzar polgares e aletear",
+        "es": "Cruzar los pulgares y aletear"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.animais_77",
+      "tipo": "lamina",
+      "en": "Bee",
+      "accion": {
+        "gl": "Zumbido continuo cos dentes",
+        "es": "Zumbido continuo con los dientes"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.animais_77.orde",
+      "tipo": "lamina",
+      "en": "Buzz sound: Bzzzzz!",
+      "accion": {
+        "gl": "Zumbido continuo cos dentes",
+        "es": "Zumbido continuo con los dientes"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.animais_78",
+      "tipo": "lamina",
+      "en": "Ant",
+      "accion": {
+        "gl": "Camiñar de puntas moi baixiño",
+        "es": "Caminar de puntillas muy bajito"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.animais_78.orde",
+      "tipo": "lamina",
+      "en": "Tiptoe small like tiny ants",
+      "accion": {
+        "gl": "Camiñar de puntas moi baixiño",
+        "es": "Caminar de puntillas muy bajito"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.animais_79",
+      "tipo": "lamina",
+      "en": "Cow",
+      "accion": {
+        "gl": "Voz grave prolongada",
+        "es": "Voz grave y larga"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.animais_79.orde",
+      "tipo": "lamina",
+      "en": "Deep long sound: Moooo!",
+      "accion": {
+        "gl": "Voz grave prolongada",
+        "es": "Voz grave y larga"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.animais_80",
+      "tipo": "lamina",
+      "en": "Sheep",
+      "accion": {
+        "gl": "Imitar o balido: «Beeee!»",
+        "es": "Imitar el balido: «¡Beeee!»"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.animais_80.orde",
+      "tipo": "lamina",
+      "en": "Gentle bleat: Baaa-baaa!",
+      "accion": {
+        "gl": "Imitar o balido: «Beeee!»",
+        "es": "Imitar el balido: «¡Beeee!»"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.animais_81",
+      "tipo": "lamina",
+      "en": "Horse",
+      "accion": {
+        "gl": "Percusión de palmas nas pernas",
+        "es": "Percusión de palmas en las piernas"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.animais_81.orde",
+      "tipo": "lamina",
+      "en": "Clap thighs like horse hooves",
+      "accion": {
+        "gl": "Percusión de palmas nas pernas",
+        "es": "Percusión de palmas en las piernas"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.animais_82",
+      "tipo": "lamina",
+      "en": "Pig",
+      "accion": {
+        "gl": "Fungar co nariz engurrado",
+        "es": "Resoplar con la nariz arrugada"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.animais_82.orde",
+      "tipo": "lamina",
+      "en": "Wrinkle nose: Oink-oink!",
+      "accion": {
+        "gl": "Fungar co nariz engurrado",
+        "es": "Resoplar con la nariz arrugada"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.animais_83",
+      "tipo": "lamina",
+      "en": "Hen",
+      "accion": {
+        "gl": "Aleteo de cóbados e bico",
+        "es": "Aleteo de codos y pico"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.animais_83.orde",
+      "tipo": "lamina",
+      "en": "Flap elbows: Cluck-cluck!",
+      "accion": {
+        "gl": "Aleteo de cóbados e bico",
+        "es": "Aleteo de codos y pico"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.animais_84",
+      "tipo": "lamina",
+      "en": "Duck",
+      "accion": {
+        "gl": "Facer bico coas mans",
+        "es": "Hacer un pico con las manos"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.animais_84.orde",
+      "tipo": "lamina",
+      "en": "Make a beak: Quack-quack!",
+      "accion": {
+        "gl": "Facer bico coas mans",
+        "es": "Hacer un pico con las manos"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.animais_85",
+      "tipo": "lamina",
+      "en": "Rabbit",
+      "accion": {
+        "gl": "Dous dedos na cabeza coma orellas",
+        "es": "Dos dedos en la cabeza como orejas"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.animais_85.orde",
+      "tipo": "lamina",
+      "en": "Rabbit ears finger hops",
+      "accion": {
+        "gl": "Dous dedos na cabeza coma orellas",
+        "es": "Dos dedos en la cabeza como orejas"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.animais_86",
+      "tipo": "lamina",
+      "en": "Mouse",
+      "accion": {
+        "gl": "Correr cos dedos polas pernas",
+        "es": "Correr con los dedos por las piernas"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.animais_86.orde",
+      "tipo": "lamina",
+      "en": "Scurry fingers fast and light",
+      "accion": {
+        "gl": "Correr cos dedos polas pernas",
+        "es": "Correr con los dedos por las piernas"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.animais_87",
+      "tipo": "lamina",
+      "en": "Turtle",
+      "accion": {
+        "gl": "Encoller o pescozo nos ombreiros",
+        "es": "Encoger el cuello entre los hombros"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.animais_87.orde",
+      "tipo": "lamina",
+      "en": "Tuck head inside shoulders",
+      "accion": {
+        "gl": "Encoller o pescozo nos ombreiros",
+        "es": "Encoger el cuello entre los hombros"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.animais_88",
+      "tipo": "lamina",
+      "en": "Bear",
+      "accion": {
+        "gl": "Pisadas pesadas de xigante",
+        "es": "Pisadas pesadas de gigante"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.animais_88.orde",
+      "tipo": "lamina",
+      "en": "Heavy slow bear stomps",
+      "accion": {
+        "gl": "Pisadas pesadas de xigante",
+        "es": "Pisadas pesadas de gigante"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.animais_89",
+      "tipo": "lamina",
+      "en": "Lion",
+      "accion": {
+        "gl": "Abrir mans con gadellas",
+        "es": "Abrir las manos con garras"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.animais_89.orde",
+      "tipo": "lamina",
+      "en": "Roar with soft bear paws",
+      "accion": {
+        "gl": "Abrir mans con gadellas",
+        "es": "Abrir las manos con garras"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.animais_90",
+      "tipo": "lamina",
+      "en": "Fox",
+      "accion": {
+        "gl": "Camiñar con pisada de seda",
+        "es": "Caminar con pisada de seda"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.animais_90.orde",
+      "tipo": "lamina",
+      "en": "Silent tiptoe like a sly fox",
+      "accion": {
+        "gl": "Camiñar con pisada de seda",
+        "es": "Caminar con pisada de seda"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.animais_91",
+      "tipo": "lamina",
+      "en": "Whale",
+      "accion": {
+        "gl": "Brotar mans dende a cabeza: Chuuuf!",
+        "es": "Brotar las manos desde la cabeza: ¡Chuuuf!"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.animais_91.orde",
+      "tipo": "lamina",
+      "en": "Spout water from head: Whoosh!",
+      "accion": {
+        "gl": "Brotar mans dende a cabeza: Chuuuf!",
+        "es": "Brotar las manos desde la cabeza: ¡Chuuuf!"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.animais_92",
+      "tipo": "lamina",
+      "en": "Seal",
+      "accion": {
+        "gl": "Aplaudir cos pulsos xuntos",
+        "es": "Aplaudir con las muñecas juntas"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.animais_92.orde",
+      "tipo": "lamina",
+      "en": "Clap with wrists together",
+      "accion": {
+        "gl": "Aplaudir cos pulsos xuntos",
+        "es": "Aplaudir con las muñecas juntas"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.animais_93",
+      "tipo": "lamina",
+      "en": "Crab",
+      "accion": {
+        "gl": "Camiñar de lado abrindo pinzas",
+        "es": "Caminar de lado abriendo pinzas"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.animais_93.orde",
+      "tipo": "lamina",
+      "en": "Scuttle sideways with pincer claws",
+      "accion": {
+        "gl": "Camiñar de lado abrindo pinzas",
+        "es": "Caminar de lado abriendo pinzas"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.animais_94",
+      "tipo": "lamina",
+      "en": "Starfish",
+      "accion": {
+        "gl": "Abrir brazos e pernas en estrela",
+        "es": "Abrir brazos y piernas en estrella"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.animais_94.orde",
+      "tipo": "lamina",
+      "en": "Open limbs like a sea star",
+      "accion": {
+        "gl": "Abrir brazos e pernas en estrela",
+        "es": "Abrir brazos y piernas en estrella"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.animais_95",
+      "tipo": "lamina",
+      "en": "Sea urchin",
+      "accion": {
+        "gl": "Poñer dedos ergueitos ríxidos",
+        "es": "Poner los dedos tiesos y rígidos"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.animais_95.orde",
+      "tipo": "lamina",
+      "en": "Spread prickly spiky fingers",
+      "accion": {
+        "gl": "Poñer dedos ergueitos ríxidos",
+        "es": "Poner los dedos tiesos y rígidos"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.animais_96",
+      "tipo": "lamina",
+      "en": "Mussel",
+      "accion": {
+        "gl": "Xuntar palmas e abrir amodo",
+        "es": "Juntar las palmas y abrir despacio"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.animais_96.orde",
+      "tipo": "lamina",
+      "en": "Open and close your shell hands",
+      "accion": {
+        "gl": "Xuntar palmas e abrir amodo",
+        "es": "Juntar las palmas y abrir despacio"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vigo_nat_97",
+      "tipo": "lamina",
+      "en": "Sea",
+      "accion": {
+        "gl": "Vaivén de remar co corpo",
+        "es": "Vaivén de remar con el cuerpo"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vigo_nat_97.orde",
+      "tipo": "lamina",
+      "en": "Row your arms with the waves",
+      "accion": {
+        "gl": "Vaivén de remar co corpo",
+        "es": "Vaivén de remar con el cuerpo"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vigo_nat_98",
+      "tipo": "lamina",
+      "en": "Cíes Islands",
+      "accion": {
+        "gl": "Brazos arredor coma un escudo",
+        "es": "Brazos alrededor como un escudo"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vigo_nat_98.orde",
+      "tipo": "lamina",
+      "en": "Form a shelter with your arms",
+      "accion": {
+        "gl": "Brazos arredor coma un escudo",
+        "es": "Brazos alrededor como un escudo"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vigo_nat_99",
+      "tipo": "lamina",
+      "en": "Beach",
+      "accion": {
+        "gl": "Pisar amodo sentindo o chan",
+        "es": "Pisar despacio sintiendo el suelo"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vigo_nat_99.orde",
+      "tipo": "lamina",
+      "en": "Step barefoot on the soft floor",
+      "accion": {
+        "gl": "Pisar amodo sentindo o chan",
+        "es": "Pisar despacio sintiendo el suelo"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vigo_nat_100",
+      "tipo": "lamina",
+      "en": "Castro Hill",
+      "accion": {
+        "gl": "Erguer xeonllos subindo a costa",
+        "es": "Levantar las rodillas subiendo la cuesta"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vigo_nat_100.orde",
+      "tipo": "lamina",
+      "en": "March with high knees up the hill",
+      "accion": {
+        "gl": "Erguer xeonllos subindo a costa",
+        "es": "Levantar las rodillas subiendo la cuesta"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vigo_nat_101",
+      "tipo": "lamina",
+      "en": "Castrelos Park",
+      "accion": {
+        "gl": "Pescozo ergueito coma un cisne",
+        "es": "Cuello erguido como un cisne"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vigo_nat_101.orde",
+      "tipo": "lamina",
+      "en": "Graceful swan neck posture",
+      "accion": {
+        "gl": "Pescozo ergueito coma un cisne",
+        "es": "Cuello erguido como un cisne"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vigo_nat_102",
+      "tipo": "lamina",
+      "en": "A Guía Hill",
+      "accion": {
+        "gl": "Xuntar mans coma campanario",
+        "es": "Juntar las manos como un campanario"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vigo_nat_102.orde",
+      "tipo": "lamina",
+      "en": "Hands pointed high like a spire",
+      "accion": {
+        "gl": "Xuntar mans coma campanario",
+        "es": "Juntar las manos como un campanario"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vigo_nat_103",
+      "tipo": "lamina",
+      "en": "Old Port",
+      "accion": {
+        "gl": "Tirar da rede con forza",
+        "es": "Tirar de la red con fuerza"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vigo_nat_103.orde",
+      "tipo": "lamina",
+      "en": "Pull the heavy fishing net: Heave!",
+      "accion": {
+        "gl": "Tirar da rede con forza",
+        "es": "Tirar de la red con fuerza"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vigo_nat_104",
+      "tipo": "lamina",
+      "en": "Sunlight",
+      "accion": {
+        "gl": "Abrir peito cara a luz",
+        "es": "Abrir el pecho hacia la luz"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vigo_nat_104.orde",
+      "tipo": "lamina",
+      "en": "Bask your face in warm light",
+      "accion": {
+        "gl": "Abrir peito cara a luz",
+        "es": "Abrir el pecho hacia la luz"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vigo_nat_105",
+      "tipo": "lamina",
+      "en": "Cloud",
+      "accion": {
+        "gl": "Flotar mans moi brandas",
+        "es": "Hacer flotar las manos muy suaves"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vigo_nat_105.orde",
+      "tipo": "lamina",
+      "en": "Float your hands like soft clouds",
+      "accion": {
+        "gl": "Flotar mans moi brandas",
+        "es": "Hacer flotar las manos muy suaves"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vigo_nat_106",
+      "tipo": "lamina",
+      "en": "Puddles",
+      "accion": {
+        "gl": "Salto suave dentro do charco",
+        "es": "Salto suave dentro del charco"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vigo_nat_106.orde",
+      "tipo": "lamina",
+      "en": "Splash gently in the puddle",
+      "accion": {
+        "gl": "Salto suave dentro do charco",
+        "es": "Salto suave dentro del charco"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vigo_nat_107",
+      "tipo": "lamina",
+      "en": "Wind",
+      "accion": {
+        "gl": "Balanceo de tronco e sopro",
+        "es": "Balanceo del tronco y soplido"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vigo_nat_107.orde",
+      "tipo": "lamina",
+      "en": "Sway your body in the blowing wind",
+      "accion": {
+        "gl": "Balanceo de tronco e sopro",
+        "es": "Balanceo del tronco y soplido"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vigo_nat_108",
+      "tipo": "lamina",
+      "en": "Rainbow",
+      "accion": {
+        "gl": "Debuxar arco amplo de lado a lado",
+        "es": "Dibujar un arco amplio de lado a lado"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vigo_nat_108.orde",
+      "tipo": "lamina",
+      "en": "Paint an arc from left to right",
+      "accion": {
+        "gl": "Debuxar arco amplo de lado a lado",
+        "es": "Dibujar un arco amplio de lado a lado"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vigo_nat_109",
+      "tipo": "lamina",
+      "en": "Autumn",
+      "accion": {
+        "gl": "Recoller follas do chan",
+        "es": "Recoger hojas del suelo"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vigo_nat_109.orde",
+      "tipo": "lamina",
+      "en": "Gather leaves from the floor",
+      "accion": {
+        "gl": "Recoller follas do chan",
+        "es": "Recoger hojas del suelo"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vigo_nat_110",
+      "tipo": "lamina",
+      "en": "Winter",
+      "accion": {
+        "gl": "Fregar os brazos para quentar",
+        "es": "Frotarse los brazos para calentarse"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vigo_nat_110.orde",
+      "tipo": "lamina",
+      "en": "Warm up your arms with a rub",
+      "accion": {
+        "gl": "Fregar os brazos para quentar",
+        "es": "Frotarse los brazos para calentarse"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vigo_nat_111",
+      "tipo": "lamina",
+      "en": "Spring",
+      "accion": {
+        "gl": "Espreguizarse medrando cara arriba",
+        "es": "Desperezarse creciendo hacia arriba"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vigo_nat_111.orde",
+      "tipo": "lamina",
+      "en": "Stretch tall like a blooming flower",
+      "accion": {
+        "gl": "Espreguizarse medrando cara arriba",
+        "es": "Desperezarse creciendo hacia arriba"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vigo_nat_112",
+      "tipo": "lamina",
+      "en": "Summer",
+      "accion": {
+        "gl": "Xogo de salpicar auga cos pés",
+        "es": "Juego de salpicar agua con los pies"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vigo_nat_112.orde",
+      "tipo": "lamina",
+      "en": "Splash water with your feet",
+      "accion": {
+        "gl": "Xogo de salpicar auga cos pés",
+        "es": "Juego de salpicar agua con los pies"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vigo_nat_113",
+      "tipo": "lamina",
+      "en": "Oak tree",
+      "accion": {
+        "gl": "Pés cravados firmes no chan",
+        "es": "Pies clavados firmes en el suelo"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vigo_nat_113.orde",
+      "tipo": "lamina",
+      "en": "Roots planted deep and firm",
+      "accion": {
+        "gl": "Pés cravados firmes no chan",
+        "es": "Pies clavados firmes en el suelo"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vigo_nat_114",
+      "tipo": "lamina",
+      "en": "Blossom",
+      "accion": {
+        "gl": "Abrir as mans dende o puño pechado",
+        "es": "Abrir las manos desde el puño cerrado"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vigo_nat_114.orde",
+      "tipo": "lamina",
+      "en": "Open clenched fists into a bloom",
+      "accion": {
+        "gl": "Abrir as mans dende o puño pechado",
+        "es": "Abrir las manos desde el puño cerrado"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vigo_nat_115",
+      "tipo": "lamina",
+      "en": "Dancing leaf",
+      "accion": {
+        "gl": "Xiro suave sobre si mesmo",
+        "es": "Giro suave sobre uno mismo"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vigo_nat_115.orde",
+      "tipo": "lamina",
+      "en": "Twirl slowly around yourself",
+      "accion": {
+        "gl": "Xiro suave sobre si mesmo",
+        "es": "Giro suave sobre uno mismo"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vigo_nat_116",
+      "tipo": "lamina",
+      "en": "Chestnut",
+      "accion": {
+        "gl": "Soprar a castaña quente",
+        "es": "Soplar la castaña caliente"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vigo_nat_116.orde",
+      "tipo": "lamina",
+      "en": "Blow gently on a hot chestnut",
+      "accion": {
+        "gl": "Soprar a castaña quente",
+        "es": "Soplar la castaña caliente"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vigo_nat_117",
+      "tipo": "lamina",
+      "en": "Golden sand",
+      "accion": {
+        "gl": "Deixar caer dedos brandos",
+        "es": "Dejar caer los dedos suaves"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vigo_nat_117.orde",
+      "tipo": "lamina",
+      "en": "Let the sand trickle through your fingers",
+      "accion": {
+        "gl": "Deixar caer dedos brandos",
+        "es": "Dejar caer los dedos suaves"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vigo_nat_118",
+      "tipo": "lamina",
+      "en": "Pebble",
+      "accion": {
+        "gl": "Apertar o puño con forza: dura!",
+        "es": "Apretar el puño con fuerza: ¡dura!"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vigo_nat_118.orde",
+      "tipo": "lamina",
+      "en": "Squeeze fist tight: Hard rock!",
+      "accion": {
+        "gl": "Apertar o puño con forza: dura!",
+        "es": "Apretar el puño con fuerza: ¡dura!"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vigo_nat_119",
+      "tipo": "lamina",
+      "en": "Sea wave",
+      "accion": {
+        "gl": "Brazos adiante e atrás en vaivén",
+        "es": "Brazos adelante y atrás en vaivén"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vigo_nat_119.orde",
+      "tipo": "lamina",
+      "en": "Back and forth wave motion",
+      "accion": {
+        "gl": "Brazos adiante e atrás en vaivén",
+        "es": "Brazos adelante y atrás en vaivén"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vigo_nat_120",
+      "tipo": "lamina",
+      "en": "Seed",
+      "accion": {
+        "gl": "Abaixarse pequeniño e medrar",
+        "es": "Agacharse pequeñito y crecer"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vigo_nat_120.orde",
+      "tipo": "lamina",
+      "en": "Crouch tiny, then grow tall",
+      "accion": {
+        "gl": "Abaixarse pequeniño e medrar",
+        "es": "Agacharse pequeñito y crecer"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vigo_nat_121",
+      "tipo": "lamina",
+      "en": "Mussel rafts",
+      "accion": {
+        "gl": "Brazos estendidos horizontais",
+        "es": "Brazos extendidos en horizontal"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.vigo_nat_121.orde",
+      "tipo": "lamina",
+      "en": "Extend arms flat like floating rafts",
+      "accion": {
+        "gl": "Brazos estendidos horizontais",
+        "es": "Brazos extendidos en horizontal"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.escola_rut_122",
+      "tipo": "lamina",
+      "en": "Morning circle",
+      "accion": {
+        "gl": "Darse a man en círculo",
+        "es": "Darse la mano en círculo"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.escola_rut_122.orde",
+      "tipo": "lamina",
+      "en": "Join hands in morning circle",
+      "accion": {
+        "gl": "Darse a man en círculo",
+        "es": "Darse la mano en círculo"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.escola_rut_123",
+      "tipo": "lamina",
+      "en": "Welcome",
+      "accion": {
+        "gl": "Abrir os brazos e saudar",
+        "es": "Abrir los brazos y saludar"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.escola_rut_123.orde",
+      "tipo": "lamina",
+      "en": "Open your arms: welcome!",
+      "accion": {
+        "gl": "Abrir os brazos e saudar",
+        "es": "Abrir los brazos y saludar"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.escola_rut_124",
+      "tipo": "lamina",
+      "en": "Handwashing",
+      "accion": {
+        "gl": "Fregar palmas e dedos",
+        "es": "Frotarse las palmas y los dedos"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.escola_rut_124.orde",
+      "tipo": "lamina",
+      "en": "Scrub palms and rinse clean",
+      "accion": {
+        "gl": "Fregar palmas e dedos",
+        "es": "Frotarse las palmas y los dedos"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.escola_rut_125",
+      "tipo": "lamina",
+      "en": "Snack time",
+      "accion": {
+        "gl": "Comer a amodo mastigando ben",
+        "es": "Comer despacio masticando bien"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.escola_rut_125.orde",
+      "tipo": "lamina",
+      "en": "Chew peacefully and share fruit",
+      "accion": {
+        "gl": "Comer a amodo mastigando ben",
+        "es": "Comer despacio masticando bien"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.escola_rut_126",
+      "tipo": "lamina",
+      "en": "Naptime",
+      "accion": {
+        "gl": "Respirar amodo pechando os ollos",
+        "es": "Respirar despacio cerrando los ojos"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.escola_rut_126.orde",
+      "tipo": "lamina",
+      "en": "Slow deep breathing: In and out",
+      "accion": {
+        "gl": "Respirar amodo pechando os ollos",
+        "es": "Respirar despacio cerrando los ojos"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.escola_rut_127",
+      "tipo": "lamina",
+      "en": "Free play",
+      "accion": {
+        "gl": "Poñer unha man sobre a outra",
+        "es": "Poner una mano sobre la otra"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.escola_rut_127.orde",
+      "tipo": "lamina",
+      "en": "Stack blocks one on top of another",
+      "accion": {
+        "gl": "Poñer unha man sobre a outra",
+        "es": "Poner una mano sobre la otra"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.escola_rut_128",
+      "tipo": "lamina",
+      "en": "Tidy up time",
+      "accion": {
+        "gl": "Gardar elementos imaxinarios",
+        "es": "Guardar objetos imaginarios"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.escola_rut_128.orde",
+      "tipo": "lamina",
+      "en": "Place toys gently in the basket",
+      "accion": {
+        "gl": "Gardar elementos imaxinarios",
+        "es": "Guardar objetos imaginarios"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.escola_rut_129",
+      "tipo": "lamina",
+      "en": "Storytime",
+      "accion": {
+        "gl": "Orellas atentas con mans detrás",
+        "es": "Orejas atentas con las manos detrás"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.escola_rut_129.orde",
+      "tipo": "lamina",
+      "en": "Cupped hands behind ears to listen",
+      "accion": {
+        "gl": "Orellas atentas con mans detrás",
+        "es": "Orejas atentas con las manos detrás"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.escola_rut_130",
+      "tipo": "lamina",
+      "en": "Singing beat",
+      "accion": {
+        "gl": "Palmas rítmicas lentas no peito",
+        "es": "Palmas rítmicas lentas en el pecho"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.escola_rut_130.orde",
+      "tipo": "lamina",
+      "en": "Gentle heartbeat taps on chest",
+      "accion": {
+        "gl": "Palmas rítmicas lentas no peito",
+        "es": "Palmas rítmicas lentas en el pecho"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.escola_rut_131",
+      "tipo": "lamina",
+      "en": "Crawling time",
+      "accion": {
+        "gl": "Gatear amodo a catro patas",
+        "es": "Gatear despacio a cuatro patas"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.escola_rut_131.orde",
+      "tipo": "lamina",
+      "en": "Crawl on all fours like a cat",
+      "accion": {
+        "gl": "Gatear amodo a catro patas",
+        "es": "Gatear despacio a cuatro patas"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.escola_rut_132",
+      "tipo": "lamina",
+      "en": "Farewell",
+      "accion": {
+        "gl": "Mover a man no aire saúdando",
+        "es": "Mover la mano en el aire saludando"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.escola_rut_132.orde",
+      "tipo": "lamina",
+      "en": "Wave hand saying: Bye-bye!",
+      "accion": {
+        "gl": "Mover a man no aire saúdando",
+        "es": "Mover la mano en el aire saludando"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.escola_rut_133",
+      "tipo": "lamina",
+      "en": "Gentle drop-off",
+      "accion": {
+        "gl": "Contacto visual e bico na meixela",
+        "es": "Contacto visual y beso en la mejilla"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.escola_rut_133.orde",
+      "tipo": "lamina",
+      "en": "Warm eye contact and goodbye kiss",
+      "accion": {
+        "gl": "Contacto visual e bico na meixela",
+        "es": "Contacto visual y beso en la mejilla"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.escola_rut_134",
+      "tipo": "lamina",
+      "en": "Hanging coat",
+      "accion": {
+        "gl": "Erguer brazos ata a percha",
+        "es": "Levantar los brazos hasta la percha"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.escola_rut_134.orde",
+      "tipo": "lamina",
+      "en": "Reach high to hang up your coat",
+      "accion": {
+        "gl": "Erguer brazos ata a percha",
+        "es": "Levantar los brazos hasta la percha"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.escola_rut_135",
+      "tipo": "lamina",
+      "en": "Quiet sitting",
+      "accion": {
+        "gl": "Sentar amodiño sen golpes",
+        "es": "Sentarse despacito sin golpes"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.escola_rut_135.orde",
+      "tipo": "lamina",
+      "en": "Land softly like a light feather",
+      "accion": {
+        "gl": "Sentar amodiño sen golpes",
+        "es": "Sentarse despacito sin golpes"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.escola_rut_136",
+      "tipo": "lamina",
+      "en": "Taking turns",
+      "accion": {
+        "gl": "Erguer a man suavemente",
+        "es": "Levantar la mano con suavidad"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.escola_rut_136.orde",
+      "tipo": "lamina",
+      "en": "Raise your hand gently: My turn!",
+      "accion": {
+        "gl": "Erguer a man suavemente",
+        "es": "Levantar la mano con suavidad"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.escola_rut_137",
+      "tipo": "lamina",
+      "en": "Sharing toys",
+      "accion": {
+        "gl": "Entregar mans adiante abertas",
+        "es": "Ofrecer las manos abiertas hacia delante"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.escola_rut_137.orde",
+      "tipo": "lamina",
+      "en": "Offer hands forward with a gift",
+      "accion": {
+        "gl": "Entregar mans adiante abertas",
+        "es": "Ofrecer las manos abiertas hacia delante"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.escola_rut_138",
+      "tipo": "lamina",
+      "en": "Finger painting",
+      "accion": {
+        "gl": "Tocar a mesa con cadanseu dedo",
+        "es": "Tocar la mesa con cada dedo"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.escola_rut_138.orde",
+      "tipo": "lamina",
+      "en": "Dip fingers into smooth paint",
+      "accion": {
+        "gl": "Tocar a mesa con cadanseu dedo",
+        "es": "Tocar la mesa con cada dedo"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.escola_rut_139",
+      "tipo": "lamina",
+      "en": "Water sensory play",
+      "accion": {
+        "gl": "Mover auga con movemento suave",
+        "es": "Mover el agua con un movimiento suave"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.escola_rut_139.orde",
+      "tipo": "lamina",
+      "en": "Swirl water in slow circles",
+      "accion": {
+        "gl": "Mover auga con movemento suave",
+        "es": "Mover el agua con un movimiento suave"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.escola_rut_140",
+      "tipo": "lamina",
+      "en": "Garden walk",
+      "accion": {
+        "gl": "Inhalar fondo polo nariz",
+        "es": "Inspirar hondo por la nariz"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.escola_rut_140.orde",
+      "tipo": "lamina",
+      "en": "Breathe in the smell of fresh grass",
+      "accion": {
+        "gl": "Inhalar fondo polo nariz",
+        "es": "Inspirar hondo por la nariz"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.escola_rut_141",
+      "tipo": "lamina",
+      "en": "Ring dance",
+      "accion": {
+        "gl": "Xiro en corro a pasos curtos",
+        "es": "Giro en corro a pasos cortos"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.escola_rut_141.orde",
+      "tipo": "lamina",
+      "en": "Step in rhythm around the circle",
+      "accion": {
+        "gl": "Xiro en corro a pasos curtos",
+        "es": "Giro en corro a pasos cortos"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.escola_rut_142",
+      "tipo": "lamina",
+      "en": "Quiet breath",
+      "accion": {
+        "gl": "Mans na barriga notando o aire",
+        "es": "Manos en la barriga notando el aire"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.escola_rut_142.orde",
+      "tipo": "lamina",
+      "en": "Hands on belly: Breathe in and out",
+      "accion": {
+        "gl": "Mans na barriga notando o aire",
+        "es": "Manos en la barriga notando el aire"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.escola_rut_143",
+      "tipo": "lamina",
+      "en": "Safe bond",
+      "accion": {
+        "gl": "Apertar a man con firmeza suave",
+        "es": "Apretar la mano con firmeza suave"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.escola_rut_143.orde",
+      "tipo": "lamina",
+      "en": "Gentle reassuring hand squeeze",
+      "accion": {
+        "gl": "Apertar a man con firmeza suave",
+        "es": "Apretar la mano con firmeza suave"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.escola_rut_144",
+      "tipo": "lamina",
+      "en": "Eye contact",
+      "accion": {
+        "gl": "Mirada serena e sorriso cálido",
+        "es": "Mirada serena y sonrisa cálida"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.escola_rut_144.orde",
+      "tipo": "lamina",
+      "en": "Warm direct eye contact and smile",
+      "accion": {
+        "gl": "Mirada serena e sorriso cálido",
+        "es": "Mirada serena y sonrisa cálida"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.escola_rut_145",
+      "tipo": "lamina",
+      "en": "Reunion time",
+      "accion": {
+        "gl": "Dar un abrazo de reencontro",
+        "es": "Dar un abrazo de reencuentro"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.escola_rut_145.orde",
+      "tipo": "lamina",
+      "en": "Happy reunion hug at pickup",
+      "accion": {
+        "gl": "Dar un abrazo de reencontro",
+        "es": "Dar un abrazo de reencuentro"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.escola_rut_146",
+      "tipo": "lamina",
+      "en": "School-home link",
+      "accion": {
+        "gl": "Sinalar o corazón coa man",
+        "es": "Señalar el corazón con la mano"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.escola_rut_146.orde",
+      "tipo": "lamina",
+      "en": "Hand on heart: tell your family our story",
+      "accion": {
+        "gl": "Sinalar o corazón coa man",
+        "es": "Señalar el corazón con la mano"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.emocions_corp_147",
+      "tipo": "lamina",
+      "en": "Joy",
+      "accion": {
+        "gl": "Rir «xa, xa, xa!» abrindo os brazos",
+        "es": "Reír «¡ja, ja, ja!» abriendo los brazos"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.emocions_corp_147.orde",
+      "tipo": "lamina",
+      "en": "Laugh out loud with open arms",
+      "accion": {
+        "gl": "Rir «xa, xa, xa!» abrindo os brazos",
+        "es": "Reír «¡ja, ja, ja!» abriendo los brazos"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.emocions_corp_148",
+      "tipo": "lamina",
+      "en": "Calm",
+      "accion": {
+        "gl": "Ombreiros abaixo e respiración fonda",
+        "es": "Bajar los hombros y respirar hondo"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.emocions_corp_148.orde",
+      "tipo": "lamina",
+      "en": "Drop your shoulders and breathe easy",
+      "accion": {
+        "gl": "Ombreiros abaixo e respiración fonda",
+        "es": "Bajar los hombros y respirar hondo"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.emocions_corp_149",
+      "tipo": "lamina",
+      "en": "Surprise",
+      "accion": {
+        "gl": "Mans ás meixelas: ¡Ohhh!",
+        "es": "Manos a las mejillas: ¡Ohhh!"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.emocions_corp_149.orde",
+      "tipo": "lamina",
+      "en": "Hands to cheeks: Wow, look!",
+      "accion": {
+        "gl": "Mans ás meixelas: ¡Ohhh!",
+        "es": "Manos a las mejillas: ¡Ohhh!"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.emocions_corp_150",
+      "tipo": "lamina",
+      "en": "Sleepy",
+      "accion": {
+        "gl": "Bocexo amplo tapando a boca",
+        "es": "Bostezo amplio tapándose la boca"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.emocions_corp_150.orde",
+      "tipo": "lamina",
+      "en": "Yawn and stretch your sleepy arms",
+      "accion": {
+        "gl": "Bocexo amplo tapando a boca",
+        "es": "Bostezo amplio tapándose la boca"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.emocions_corp_151",
+      "tipo": "lamina",
+      "en": "Hungry",
+      "accion": {
+        "gl": "Acariciar a barriga en círculos",
+        "es": "Acariciarse la barriga en círculos"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.emocions_corp_151.orde",
+      "tipo": "lamina",
+      "en": "Rub tummy in happy circles",
+      "accion": {
+        "gl": "Acariciar a barriga en círculos",
+        "es": "Acariciarse la barriga en círculos"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.emocions_corp_152",
+      "tipo": "lamina",
+      "en": "Thirsty",
+      "accion": {
+        "gl": "Pedir auga coa man en cunca",
+        "es": "Pedir agua con la mano en cuenco"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.emocions_corp_152.orde",
+      "tipo": "lamina",
+      "en": "Cup hand asking for clean water",
+      "accion": {
+        "gl": "Pedir auga coa man en cunca",
+        "es": "Pedir agua con la mano en cuenco"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.emocions_corp_153",
+      "tipo": "lamina",
+      "en": "Love",
+      "accion": {
+        "gl": "Pousar a man no corazón",
+        "es": "Poner la mano en el corazón"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.emocions_corp_153.orde",
+      "tipo": "lamina",
+      "en": "Hand over heart with a warm smile",
+      "accion": {
+        "gl": "Pousar a man no corazón",
+        "es": "Poner la mano en el corazón"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.emocions_corp_154",
+      "tipo": "lamina",
+      "en": "Comfort",
+      "accion": {
+        "gl": "Secar a bágoa con caricia suave",
+        "es": "Secar la lágrima con una caricia suave"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.emocions_corp_154.orde",
+      "tipo": "lamina",
+      "en": "Wipe a teardrop with a soft finger",
+      "accion": {
+        "gl": "Secar a bágoa con caricia suave",
+        "es": "Secar la lágrima con una caricia suave"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.emocions_corp_155",
+      "tipo": "lamina",
+      "en": "Calming down",
+      "accion": {
+        "gl": "Soprar o aire amodiño para calmar",
+        "es": "Soplar el aire despacito para calmarse"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.emocions_corp_155.orde",
+      "tipo": "lamina",
+      "en": "Blow out anger like blowing out a candle",
+      "accion": {
+        "gl": "Soprar o aire amodiño para calmar",
+        "es": "Soplar el aire despacito para calmarse"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.emocions_corp_156",
+      "tipo": "lamina",
+      "en": "Head",
+      "accion": {
+        "gl": "Pousar as dúas mans na cabeza",
+        "es": "Poner las dos manos en la cabeza"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.emocions_corp_156.orde",
+      "tipo": "lamina",
+      "en": "Touch your head with both hands",
+      "accion": {
+        "gl": "Pousar as dúas mans na cabeza",
+        "es": "Poner las dos manos en la cabeza"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.emocions_corp_157",
+      "tipo": "lamina",
+      "en": "Eyes",
+      "accion": {
+        "gl": "Pestanexar suavemente",
+        "es": "Parpadear con suavidad"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.emocions_corp_157.orde",
+      "tipo": "lamina",
+      "en": "Blink eyes open and shut",
+      "accion": {
+        "gl": "Pestanexar suavemente",
+        "es": "Parpadear con suavidad"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.emocions_corp_158",
+      "tipo": "lamina",
+      "en": "Ears",
+      "accion": {
+        "gl": "Tocar o lóbulo da orella",
+        "es": "Tocarse el lóbulo de la oreja"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.emocions_corp_158.orde",
+      "tipo": "lamina",
+      "en": "Touch your ears to listen close",
+      "accion": {
+        "gl": "Tocar o lóbulo da orella",
+        "es": "Tocarse el lóbulo de la oreja"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.emocions_corp_159",
+      "tipo": "lamina",
+      "en": "Nose",
+      "accion": {
+        "gl": "Cheirar dúas veces polo nariz",
+        "es": "Oler dos veces por la nariz"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.emocions_corp_159.orde",
+      "tipo": "lamina",
+      "en": "Sniff twice through the nose",
+      "accion": {
+        "gl": "Cheirar dúas veces polo nariz",
+        "es": "Oler dos veces por la nariz"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.emocions_corp_160",
+      "tipo": "lamina",
+      "en": "Mouth",
+      "accion": {
+        "gl": "Abrir a boca e cantar: «Laaa!»",
+        "es": "Abrir la boca y cantar: «¡Laaa!»"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.emocions_corp_160.orde",
+      "tipo": "lamina",
+      "en": "Sing out loud: La-la-la!",
+      "accion": {
+        "gl": "Abrir a boca e cantar: «Laaa!»",
+        "es": "Abrir la boca y cantar: «¡Laaa!»"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.emocions_corp_161",
+      "tipo": "lamina",
+      "en": "Hands",
+      "accion": {
+        "gl": "Xirar palmas cara arriba e abaixo",
+        "es": "Girar las palmas hacia arriba y hacia abajo"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.emocions_corp_161.orde",
+      "tipo": "lamina",
+      "en": "Turn palms up and down",
+      "accion": {
+        "gl": "Xirar palmas cara arriba e abaixo",
+        "es": "Girar las palmas hacia arriba y hacia abajo"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.emocions_corp_162",
+      "tipo": "lamina",
+      "en": "Feet",
+      "accion": {
+        "gl": "Patear no chan con ritmo",
+        "es": "Patear el suelo con ritmo"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.emocions_corp_162.orde",
+      "tipo": "lamina",
+      "en": "Stomp feet to the beat",
+      "accion": {
+        "gl": "Patear no chan con ritmo",
+        "es": "Patear el suelo con ritmo"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.emocions_corp_163",
+      "tipo": "lamina",
+      "en": "Tummy",
+      "accion": {
+        "gl": "Facer círculos na barriga",
+        "es": "Hacer círculos en la barriga"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.emocions_corp_163.orde",
+      "tipo": "lamina",
+      "en": "Circle hands on warm tummy",
+      "accion": {
+        "gl": "Facer círculos na barriga",
+        "es": "Hacer círculos en la barriga"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.emocions_corp_164",
+      "tipo": "lamina",
+      "en": "Back",
+      "accion": {
+        "gl": "Estirar a columna cara ao ceo",
+        "es": "Estirar la columna hacia el cielo"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.emocions_corp_164.orde",
+      "tipo": "lamina",
+      "en": "Straighten your spine tall",
+      "accion": {
+        "gl": "Estirar a columna cara ao ceo",
+        "es": "Estirar la columna hacia el cielo"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.emocions_corp_165",
+      "tipo": "lamina",
+      "en": "Fingers",
+      "accion": {
+        "gl": "Tocar polgar con cada dedo",
+        "es": "Tocar el pulgar con cada dedo"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.emocions_corp_165.orde",
+      "tipo": "lamina",
+      "en": "Tap thumb to each fingertip",
+      "accion": {
+        "gl": "Tocar polgar con cada dedo",
+        "es": "Tocar el pulgar con cada dedo"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.emocions_corp_166",
+      "tipo": "lamina",
+      "en": "Foot tickles",
+      "accion": {
+        "gl": "Encoller os pés e rir",
+        "es": "Encoger los pies y reír"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.emocions_corp_166.orde",
+      "tipo": "lamina",
+      "en": "Curl your toes and giggle!",
+      "accion": {
+        "gl": "Encoller os pés e rir",
+        "es": "Encoger los pies y reír"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.emocions_corp_167",
+      "tipo": "lamina",
+      "en": "Soft touch",
+      "accion": {
+        "gl": "Acariciar o dorso da man",
+        "es": "Acariciar el dorso de la mano"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.emocions_corp_167.orde",
+      "tipo": "lamina",
+      "en": "Caress the back of your hand",
+      "accion": {
+        "gl": "Acariciar o dorso da man",
+        "es": "Acariciar el dorso de la mano"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.emocions_corp_168",
+      "tipo": "lamina",
+      "en": "Loud sound",
+      "accion": {
+        "gl": "Palma forte única no ar",
+        "es": "Una palmada fuerte en el aire"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.emocions_corp_168.orde",
+      "tipo": "lamina",
+      "en": "One loud clap: Boom!",
+      "accion": {
+        "gl": "Palma forte única no ar",
+        "es": "Una palmada fuerte en el aire"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.emocions_corp_169",
+      "tipo": "lamina",
+      "en": "Sweet lullaby",
+      "accion": {
+        "gl": "Balanzo lento do corpo",
+        "es": "Balanceo lento del cuerpo"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.emocions_corp_169.orde",
+      "tipo": "lamina",
+      "en": "Gentle rocking to lullaby rhythm",
+      "accion": {
+        "gl": "Balanzo lento do corpo",
+        "es": "Balanceo lento del cuerpo"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.emocions_corp_170",
+      "tipo": "lamina",
+      "en": "Warmth",
+      "accion": {
+        "gl": "Fregar palmas para xerar calor",
+        "es": "Frotarse las palmas para dar calor"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.emocions_corp_170.orde",
+      "tipo": "lamina",
+      "en": "Rub palms warm and place on cheeks",
+      "accion": {
+        "gl": "Fregar palmas para xerar calor",
+        "es": "Frotarse las palmas para dar calor"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.emocions_corp_171",
+      "tipo": "lamina",
+      "en": "Cold ice",
+      "accion": {
+        "gl": "Tremer ombreiros: ¡Brrr!",
+        "es": "Temblar con los hombros: ¡Brrr!"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.emocions_corp_171.orde",
+      "tipo": "lamina",
+      "en": "Shiver shoulders playfully: Brrr!",
+      "accion": {
+        "gl": "Tremer ombreiros: ¡Brrr!",
+        "es": "Temblar con los hombros: ¡Brrr!"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.cuento_ilus_172",
+      "tipo": "lamina",
+      "en": "Samil shore walk",
+      "accion": {
+        "gl": "Sinalar o mar co índice",
+        "es": "Señalar el mar con el índice"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.cuento_ilus_172.orde",
+      "tipo": "lamina",
+      "en": "Point at the dancing boat",
+      "accion": {
+        "gl": "Sinalar o mar co índice",
+        "es": "Señalar el mar con el índice"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.cuento_ilus_173",
+      "tipo": "lamina",
+      "en": "Jumping fish",
+      "accion": {
+        "gl": "Salto coas mans xuntas",
+        "es": "Salto con las manos juntas"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.cuento_ilus_173.orde",
+      "tipo": "lamina",
+      "en": "Hands jump like fish over waves",
+      "accion": {
+        "gl": "Salto coas mans xuntas",
+        "es": "Salto con las manos juntas"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.cuento_ilus_174",
+      "tipo": "lamina",
+      "en": "Seashell secret",
+      "accion": {
+        "gl": "Man na orella escoitando o mar",
+        "es": "Mano en la oreja escuchando el mar"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.cuento_ilus_174.orde",
+      "tipo": "lamina",
+      "en": "Cup your ear and listen to the ocean",
+      "accion": {
+        "gl": "Man na orella escoitando o mar",
+        "es": "Mano en la oreja escuchando el mar"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.cuento_ilus_175",
+      "tipo": "lamina",
+      "en": "First day at school",
+      "accion": {
+        "gl": "Saúdo alegre coa pata",
+        "es": "Saludo alegre con la pata"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.cuento_ilus_175.orde",
+      "tipo": "lamina",
+      "en": "Wave paw welcoming friends",
+      "accion": {
+        "gl": "Saúdo alegre coa pata",
+        "es": "Saludo alegre con la pata"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.cuento_ilus_176",
+      "tipo": "lamina",
+      "en": "Circle of friends",
+      "accion": {
+        "gl": "Apertar as mans dos compañeiros",
+        "es": "Apretar las manos de los compañeros"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.cuento_ilus_176.orde",
+      "tipo": "lamina",
+      "en": "Softly squeeze your neighbour's hands",
+      "accion": {
+        "gl": "Apertar as mans dos compañeiros",
+        "es": "Apretar las manos de los compañeros"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.cuento_ilus_177",
+      "tipo": "lamina",
+      "en": "Hands holding together",
+      "accion": {
+        "gl": "Acariciar a palma do veciño",
+        "es": "Acariciar la palma del compañero"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.cuento_ilus_177.orde",
+      "tipo": "lamina",
+      "en": "Hold your neighbour's hand with care",
+      "accion": {
+        "gl": "Acariciar a palma do veciño",
+        "es": "Acariciar la palma del compañero"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.cuento_ilus_178",
+      "tipo": "lamina",
+      "en": "Body parts game",
+      "accion": {
+        "gl": "Tocar cabeza, barriga e pés",
+        "es": "Tocarse la cabeza, la barriga y los pies"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.cuento_ilus_178.orde",
+      "tipo": "lamina",
+      "en": "Touch head, tummy, toes",
+      "accion": {
+        "gl": "Tocar cabeza, barriga e pés",
+        "es": "Tocarse la cabeza, la barriga y los pies"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.cuento_ilus_179",
+      "tipo": "lamina",
+      "en": "Autumn leaves falling",
+      "accion": {
+        "gl": "Pisar facendo «crunch»",
+        "es": "Pisar haciendo «crunch»"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.cuento_ilus_179.orde",
+      "tipo": "lamina",
+      "en": "Crush leaves: Crunch, crunch!",
+      "accion": {
+        "gl": "Pisar facendo «crunch»",
+        "es": "Pisar haciendo «crunch»"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.cuento_ilus_180",
+      "tipo": "lamina",
+      "en": "Magosto feast",
+      "accion": {
+        "gl": "Facer círculos coas mans",
+        "es": "Hacer círculos con las manos"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.cuento_ilus_180.orde",
+      "tipo": "lamina",
+      "en": "Stir the hot chestnut pot",
+      "accion": {
+        "gl": "Facer círculos coas mans",
+        "es": "Hacer círculos con las manos"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.cuento_ilus_181",
+      "tipo": "lamina",
+      "en": "Warm winter wool",
+      "accion": {
+        "gl": "Arrimar a bufanda ao queixo",
+        "es": "Arrimar la bufanda a la barbilla"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.cuento_ilus_181.orde",
+      "tipo": "lamina",
+      "en": "Wrap a scarf around your neck",
+      "accion": {
+        "gl": "Arrimar a bufanda ao queixo",
+        "es": "Arrimar la bufanda a la barbilla"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.cuento_ilus_182",
+      "tipo": "lamina",
+      "en": "Vigo festive lights",
+      "accion": {
+        "gl": "Abrir e pechar dedos coma chispas",
+        "es": "Abrir y cerrar los dedos como chispas"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.cuento_ilus_182.orde",
+      "tipo": "lamina",
+      "en": "Twinkle fingers like shining lights",
+      "accion": {
+        "gl": "Abrir e pechar dedos coma chispas",
+        "es": "Abrir y cerrar los dedos como chispas"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.cuento_ilus_183",
+      "tipo": "lamina",
+      "en": "Animal footprints",
+      "accion": {
+        "gl": "Marcar pegadas cos nós dos dedos",
+        "es": "Marcar huellas con los nudillos"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.cuento_ilus_183.orde",
+      "tipo": "lamina",
+      "en": "Press knuckles into the floor",
+      "accion": {
+        "gl": "Marcar pegadas cos nós dos dedos",
+        "es": "Marcar huellas con los nudillos"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.cuento_ilus_184",
+      "tipo": "lamina",
+      "en": "Carnival mask",
+      "accion": {
+        "gl": "Tapar a cara e abrir: ¡Cucú!",
+        "es": "Taparse la cara y abrir: ¡Cucú!"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.cuento_ilus_184.orde",
+      "tipo": "lamina",
+      "en": "Peek-a-boo: I see you!",
+      "accion": {
+        "gl": "Tapar a cara e abrir: ¡Cucú!",
+        "es": "Taparse la cara y abrir: ¡Cucú!"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.cuento_ilus_185",
+      "tipo": "lamina",
+      "en": "Colour harmony",
+      "accion": {
+        "gl": "Sinalar obxectos das 3 cores",
+        "es": "Señalar objetos de los 3 colores"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.cuento_ilus_185.orde",
+      "tipo": "lamina",
+      "en": "Touch something red, yellow and blue",
+      "accion": {
+        "gl": "Sinalar obxectos das 3 cores",
+        "es": "Señalar objetos de los 3 colores"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.cuento_ilus_186",
+      "tipo": "lamina",
+      "en": "Rain boots splash",
+      "accion": {
+        "gl": "Salto suave cos dous pés",
+        "es": "Salto suave con los dos pies"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.cuento_ilus_186.orde",
+      "tipo": "lamina",
+      "en": "Two-foot jump into the puddle",
+      "accion": {
+        "gl": "Salto suave cos dous pés",
+        "es": "Salto suave con los dos pies"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.cuento_ilus_187",
+      "tipo": "lamina",
+      "en": "Garden awakening",
+      "accion": {
+        "gl": "Medrar dende o chan amodo",
+        "es": "Crecer desde el suelo despacio"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.cuento_ilus_187.orde",
+      "tipo": "lamina",
+      "en": "Rise slowly from a seed to bloom",
+      "accion": {
+        "gl": "Medrar dende o chan amodo",
+        "es": "Crecer desde el suelo despacio"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.cuento_ilus_188",
+      "tipo": "lamina",
+      "en": "Soap bubble magic",
+      "accion": {
+        "gl": "Soprar moi lixeiro polos beizos",
+        "es": "Soplar muy ligero entre los labios"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.cuento_ilus_188.orde",
+      "tipo": "lamina",
+      "en": "Gentle blow to make a bubble",
+      "accion": {
+        "gl": "Soprar moi lixeiro polos beizos",
+        "es": "Soplar muy ligero entre los labios"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.cuento_ilus_189",
+      "tipo": "lamina",
+      "en": "Trawler coming home",
+      "accion": {
+        "gl": "Saudar co brazo ao barco que chega",
+        "es": "Saludar con el brazo al barco que llega"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.cuento_ilus_189.orde",
+      "tipo": "lamina",
+      "en": "Wave to the boat docking at port",
+      "accion": {
+        "gl": "Saudar co brazo ao barco que chega",
+        "es": "Saludar con el brazo al barco que llega"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.cuento_ilus_190",
+      "tipo": "lamina",
+      "en": "The boy who loved drumming",
+      "accion": {
+        "gl": "Tocar tambor imaxinario no chan",
+        "es": "Tocar un tambor imaginario en el suelo"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.cuento_ilus_190.orde",
+      "tipo": "lamina",
+      "en": "Drum the floor with soft palms",
+      "accion": {
+        "gl": "Tocar tambor imaxinario no chan",
+        "es": "Tocar un tambor imaginario en el suelo"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.cuento_ilus_191",
+      "tipo": "lamina",
+      "en": "The sheltering tree",
+      "accion": {
+        "gl": "Acubillarse baixo o tellado de brazos",
+        "es": "Refugiarse bajo el tejado de brazos"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.cuento_ilus_191.orde",
+      "tipo": "lamina",
+      "en": "Cuddle under tree branch arms",
+      "accion": {
+        "gl": "Acubillarse baixo o tellado de brazos",
+        "es": "Refugiarse bajo el tejado de brazos"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.cuento_ilus_192",
+      "tipo": "lamina",
+      "en": "The lion and the brave mouse",
+      "accion": {
+        "gl": "Xuntar mans pequena e grande",
+        "es": "Juntar una mano pequeña y una grande"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.cuento_ilus_192.orde",
+      "tipo": "lamina",
+      "en": "Tiny fingers meet giant paw",
+      "accion": {
+        "gl": "Xuntar mans pequena e grande",
+        "es": "Juntar una mano pequeña y una grande"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.cuento_ilus_193",
+      "tipo": "lamina",
+      "en": "The wind and the kite dance",
+      "accion": {
+        "gl": "Soster o fío da cometa no ar",
+        "es": "Sostener el hilo de la cometa en el aire"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.cuento_ilus_193.orde",
+      "tipo": "lamina",
+      "en": "Hold kite string swaying high",
+      "accion": {
+        "gl": "Soster o fío da cometa no ar",
+        "es": "Sostener el hilo de la cometa en el aire"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.cuento_ilus_194",
+      "tipo": "lamina",
+      "en": "Singing raindrops",
+      "accion": {
+        "gl": "Puntear no peitoril da fiestra",
+        "es": "Tamborilear en el alféizar de la ventana"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.cuento_ilus_194.orde",
+      "tipo": "lamina",
+      "en": "Tap your fingertips on the windowsill",
+      "accion": {
+        "gl": "Puntear no peitoril da fiestra",
+        "es": "Tamborilear en el alféizar de la ventana"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.cuento_ilus_195",
+      "tipo": "lamina",
+      "en": "The bird that found its song",
+      "accion": {
+        "gl": "Cantar suavemente «chío-chío»",
+        "es": "Cantar suavemente «pío-pío»"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.cuento_ilus_195.orde",
+      "tipo": "lamina",
+      "en": "Chirp together in harmony",
+      "accion": {
+        "gl": "Cantar suavemente «chío-chío»",
+        "es": "Cantar suavemente «pío-pío»"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.cuento_ilus_196",
+      "tipo": "lamina",
+      "en": "The patient tortoise",
+      "accion": {
+        "gl": "Pasos lentos con respiración calma",
+        "es": "Pasos lentos con respiración tranquila"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.cuento_ilus_196.orde",
+      "tipo": "lamina",
+      "en": "Slow peaceful footsteps",
+      "accion": {
+        "gl": "Pasos lentos con respiración calma",
+        "es": "Pasos lentos con respiración tranquila"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.cuento_ilus_197",
+      "tipo": "lamina",
+      "en": "Rainbow across the bay",
+      "accion": {
+        "gl": "Arco cos dous brazos no alto",
+        "es": "Arco con los dos brazos en alto"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.cuento_ilus_197.orde",
+      "tipo": "lamina",
+      "en": "Stretch a giant rainbow overhead",
+      "accion": {
+        "gl": "Arco cos dous brazos no alto",
+        "es": "Arco con los dos brazos en alto"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.cuento_ilus_198",
+      "tipo": "lamina",
+      "en": "The travelling seed",
+      "accion": {
+        "gl": "Flotar e pousarse suavemente",
+        "es": "Flotar y posarse con suavidad"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.cuento_ilus_198.orde",
+      "tipo": "lamina",
+      "en": "Drift in the wind and land gently",
+      "accion": {
+        "gl": "Flotar e pousarse suavemente",
+        "es": "Flotar y posarse con suavidad"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.cuento_ilus_199",
+      "tipo": "lamina",
+      "en": "Full moon bedtime watch",
+      "accion": {
+        "gl": "Pechar os ollos cun sorriso calmo",
+        "es": "Cerrar los ojos con una sonrisa tranquila"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.cuento_ilus_199.orde",
+      "tipo": "lamina",
+      "en": "Close your eyes softly in the moonlight",
+      "accion": {
+        "gl": "Pechar os ollos cun sorriso calmo",
+        "es": "Cerrar los ojos con una sonrisa tranquila"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.cuento_ilus_200",
+      "tipo": "lamina",
+      "en": "The silver fish treasure",
+      "accion": {
+        "gl": "Abrir mans amosando o tesouro",
+        "es": "Abrir las manos enseñando el tesoro"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.cuento_ilus_200.orde",
+      "tipo": "lamina",
+      "en": "Reveal treasure in open palms",
+      "accion": {
+        "gl": "Abrir mans amosando o tesouro",
+        "es": "Abrir las manos enseñando el tesoro"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.cuento_ilus_201",
+      "tipo": "lamina",
+      "en": "The sharing bee",
+      "accion": {
+        "gl": "Compartir gotas de mel imaxinario",
+        "es": "Compartir gotas de miel imaginaria"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.cuento_ilus_201.orde",
+      "tipo": "lamina",
+      "en": "Serve sweet drops to friends",
+      "accion": {
+        "gl": "Compartir gotas de mel imaxinario",
+        "es": "Compartir gotas de miel imaginaria"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.cuento_ilus_202",
+      "tipo": "lamina",
+      "en": "Dinamita the dog of Vigo",
+      "accion": {
+        "gl": "Mover as mans coma quen saúda a todos",
+        "es": "Mover las manos como quien saluda a todos"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.cuento_ilus_202.orde",
+      "tipo": "lamina",
+      "en": "Greet all citizens with a tail wag",
+      "accion": {
+        "gl": "Mover as mans coma quen saúda a todos",
+        "es": "Mover las manos como quien saluda a todos"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.cuento_ilus_203",
+      "tipo": "lamina",
+      "en": "Rande Bridge across the ría",
+      "accion": {
+        "gl": "Facer arco coas mans unidas arriba",
+        "es": "Hacer un arco con las manos unidas arriba"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.cuento_ilus_203.orde",
+      "tipo": "lamina",
+      "en": "Form a bridge arch with fingertips",
+      "accion": {
+        "gl": "Facer arco coas mans unidas arriba",
+        "es": "Hacer un arco con las manos unidas arriba"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.cuento_ilus_204",
+      "tipo": "lamina",
+      "en": "The midsummer frog dance",
+      "accion": {
+        "gl": "Cantar en coro: ¡Croac, croac!",
+        "es": "Cantar en coro: ¡Croac, croac!"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.cuento_ilus_204.orde",
+      "tipo": "lamina",
+      "en": "Frog chorus: Ribbit-ribbit!",
+      "accion": {
+        "gl": "Cantar en coro: ¡Croac, croac!",
+        "es": "Cantar en coro: ¡Croac, croac!"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.cuento_ilus_205",
+      "tipo": "lamina",
+      "en": "End of year sea welcome",
+      "accion": {
+        "gl": "Erguerse moi altos medrando moito",
+        "es": "Ponerse muy altos creciendo mucho"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.lamina.cuento_ilus_205.orde",
+      "tipo": "lamina",
+      "en": "Stand on tiptoes showing how much we grew",
+      "accion": {
+        "gl": "Erguerse moi altos medrando moito",
+        "es": "Ponerse muy altos creciendo mucho"
+      },
+      "fonte": "laminas/banco200_laminas.json"
+    },
+    {
+      "id": "frase.calendario.c1_m1",
+      "tipo": "calendario",
+      "en": "Hello, baby! Clap, clap, clap your hands!",
+      "significado": {
+        "gl": "Ola, bebé! Plas, plas, dá palmas!",
+        "es": "¡Hola, bebé! ¡Plas, plas, da palmas!"
+      },
+      "fonte": "calendario/curriculo_50_meses.json"
+    },
+    {
+      "id": "frase.calendario.c1_m2",
+      "tipo": "calendario",
+      "en": "Touch your head, touch your little nose!",
+      "significado": {
+        "gl": "Toca a cabeza, toca o teu naciño!",
+        "es": "¡Tócate la cabeza, tócate la naricita!"
+      },
+      "fonte": "calendario/curriculo_50_meses.json"
+    },
+    {
+      "id": "frase.calendario.c1_m3",
+      "tipo": "calendario",
+      "en": "Leaves fall down, pick up the chestnut!",
+      "significado": {
+        "gl": "Caen as follas, colle a castaña!",
+        "es": "¡Caen las hojas, coge la castaña!"
+      },
+      "fonte": "calendario/curriculo_50_meses.json"
+    },
+    {
+      "id": "frase.calendario.c1_m4",
+      "tipo": "calendario",
+      "en": "One shoe, two shoes! Warm feet, push!",
+      "significado": {
+        "gl": "Un zapato, dous zapatos! Pés quentiños, empurra!",
+        "es": "¡Un zapato, dos zapatos! ¡Pies calentitos, empuja!"
+      },
+      "fonte": "calendario/curriculo_50_meses.json"
+    },
+    {
+      "id": "frase.calendario.c1_m5",
+      "tipo": "calendario",
+      "en": "Sleepy cat, meow! Pet the soft cat!",
+      "significado": {
+        "gl": "Gato durmiñón, miau! Acariña o gato suave!",
+        "es": "¡Gato dormilón, miau! ¡Acaricia al gato suave!"
+      },
+      "fonte": "calendario/curriculo_50_meses.json"
+    },
+    {
+      "id": "frase.calendario.c1_m6",
+      "tipo": "calendario",
+      "en": "Where is baby? Peek-a-boo! I see you!",
+      "significado": {
+        "gl": "Onde está o bebé? Cucú! Xa te vexo!",
+        "es": "¿Dónde está el bebé? ¡Cucú! ¡Ya te veo!"
+      },
+      "fonte": "calendario/curriculo_50_meses.json"
+    },
+    {
+      "id": "frase.calendario.c1_m7",
+      "tipo": "calendario",
+      "en": "Red apple, sweet and yummy! Eat, eat!",
+      "significado": {
+        "gl": "Mazá vermella, doce e rica! Come, come!",
+        "es": "¡Manzana roja, dulce y rica! ¡Come, come!"
+      },
+      "fonte": "calendario/curriculo_50_meses.json"
+    },
+    {
+      "id": "frase.calendario.c1_m8",
+      "tipo": "calendario",
+      "en": "Rain, rain, tap, tap! Little flower, grow!",
+      "significado": {
+        "gl": "Choiva, choiva, tap, tap! Florciña, medra!",
+        "es": "¡Lluvia, lluvia, tap, tap! ¡Florecita, crece!"
+      },
+      "fonte": "calendario/curriculo_50_meses.json"
+    },
+    {
+      "id": "frase.calendario.c1_m9",
+      "tipo": "calendario",
+      "en": "Warm water! Splash, splash, clean hands!",
+      "significado": {
+        "gl": "Auga morna! Chap, chap, mans limpas!",
+        "es": "¡Agua templada! ¡Chap, chap, manos limpias!"
+      },
+      "fonte": "calendario/curriculo_50_meses.json"
+    },
+    {
+      "id": "frase.calendario.c1_m10",
+      "tipo": "calendario",
+      "en": "Blue sea! Waves go up, waves go down!",
+      "significado": {
+        "gl": "Mar azul! As ondas soben, as ondas baixan!",
+        "es": "¡Mar azul! ¡Las olas suben, las olas bajan!"
+      },
+      "fonte": "calendario/curriculo_50_meses.json"
+    },
+    {
+      "id": "frase.calendario.c2_m1",
+      "tipo": "calendario",
+      "en": "Pick up the block and put it inside the box!",
+      "significado": {
+        "gl": "Colle o bloque e méteo dentro da caixa!",
+        "es": "¡Coge el bloque y mételo dentro de la caja!"
+      },
+      "fonte": "calendario/curriculo_50_meses.json"
+    },
+    {
+      "id": "frase.calendario.c2_m2",
+      "tipo": "calendario",
+      "en": "Touch your knees and jump up high! Now stop!",
+      "significado": {
+        "gl": "Toca os xeonllos e salta ben alto! Agora para!",
+        "es": "¡Tócate las rodillas y salta bien alto! ¡Ahora para!"
+      },
+      "fonte": "calendario/curriculo_50_meses.json"
+    },
+    {
+      "id": "frase.calendario.c2_m3",
+      "tipo": "calendario",
+      "en": "The wind blows strong! Stomp, stomp on the leaves!",
+      "significado": {
+        "gl": "O vento sopra forte! Pum, pum nas follas!",
+        "es": "¡El viento sopla fuerte! ¡Pum, pum en las hojas!"
+      },
+      "fonte": "calendario/curriculo_50_meses.json"
+    },
+    {
+      "id": "frase.calendario.c2_m4",
+      "tipo": "calendario",
+      "en": "Put on your boots! Jump in the puddle, jump out!",
+      "significado": {
+        "gl": "Pon as botas! Salta na poza, salta fóra!",
+        "es": "¡Ponte las botas! ¡Salta en el charco, salta fuera!"
+      },
+      "fonte": "calendario/curriculo_50_meses.json"
+    },
+    {
+      "id": "frase.calendario.c2_m5",
+      "tipo": "calendario",
+      "en": "The train goes fast, now it goes slow... and STOP!",
+      "significado": {
+        "gl": "O tren vai rápido, agora vai amodo... e PARA!",
+        "es": "El tren va rápido, ahora va despacio... ¡y PARA!"
+      },
+      "fonte": "calendario/curriculo_50_meses.json"
+    },
+    {
+      "id": "frase.calendario.c2_m6",
+      "tipo": "calendario",
+      "en": "Hop like a green frog! Now roar like a big lion!",
+      "significado": {
+        "gl": "Brinca coma unha ra verde! Agora ruxe coma un león grande!",
+        "es": "¡Brinca como una rana verde! ¡Ahora ruge como un león grande!"
+      },
+      "fonte": "calendario/curriculo_50_meses.json"
+    },
+    {
+      "id": "frase.calendario.c2_m7",
+      "tipo": "calendario",
+      "en": "Roll the round hoop! Eat the sweet orange!",
+      "significado": {
+        "gl": "Fai rodar o aro redondo! Come a laranxa doce!",
+        "es": "¡Haz rodar el aro redondo! ¡Cómete la naranja dulce!"
+      },
+      "fonte": "calendario/curriculo_50_meses.json"
+    },
+    {
+      "id": "frase.calendario.c2_m8",
+      "tipo": "calendario",
+      "en": "Walk on your toes like a little bird! Fly high!",
+      "significado": {
+        "gl": "Camiña de puntillas coma un paxariño! Voa alto!",
+        "es": "¡Camina de puntillas como un pajarito! ¡Vuela alto!"
+      },
+      "fonte": "calendario/curriculo_50_meses.json"
+    },
+    {
+      "id": "frase.calendario.c2_m9",
+      "tipo": "calendario",
+      "en": "Rub the soap, make bubbles! Dry with the towel!",
+      "significado": {
+        "gl": "Frega o xabón, fai burbullas! Sécate coa toalla!",
+        "es": "¡Frota el jabón, haz burbujas! ¡Sécate con la toalla!"
+      },
+      "fonte": "calendario/curriculo_50_meses.json"
+    },
+    {
+      "id": "frase.calendario.c2_m10",
+      "tipo": "calendario",
+      "en": "Row, row your little boat! Splish, splash in the sea!",
+      "significado": {
+        "gl": "Rema, rema na túa barquiña! Chip, chap no mar!",
+        "es": "¡Rema, rema en tu barquita! ¡Chip, chap en el mar!"
+      },
+      "fonte": "calendario/curriculo_50_meses.json"
+    },
+    {
+      "id": "frase.calendario.c3_m1",
+      "tipo": "calendario",
+      "en": "Sit in the circle AND raise your hands high!",
+      "significado": {
+        "gl": "Senta no círculo E levanta as mans ben alto!",
+        "es": "¡Siéntate en el círculo Y levanta las manos bien alto!"
+      },
+      "fonte": "calendario/curriculo_50_meses.json"
+    },
+    {
+      "id": "frase.calendario.c3_m2",
+      "tipo": "calendario",
+      "en": "Touch your shoulders AND turn around two times!",
+      "significado": {
+        "gl": "Toca os ombreiros E dá dúas voltas!",
+        "es": "¡Tócate los hombros Y da dos vueltas!"
+      },
+      "fonte": "calendario/curriculo_50_meses.json"
+    },
+    {
+      "id": "frase.calendario.c3_m3",
+      "tipo": "calendario",
+      "en": "Pick up the chestnut AND put it in the basket!",
+      "significado": {
+        "gl": "Colle a castaña E ponna no cesto!",
+        "es": "¡Coge la castaña Y ponla en la cesta!"
+      },
+      "fonte": "calendario/curriculo_50_meses.json"
+    },
+    {
+      "id": "frase.calendario.c3_m4",
+      "tipo": "calendario",
+      "en": "Zip your warm coat AND walk slowly to the light!",
+      "significado": {
+        "gl": "Pecha o abrigo quentiño E camiña amodo ata a luz!",
+        "es": "¡Abróchate el abrigo calentito Y camina despacio hasta la luz!"
+      },
+      "fonte": "calendario/curriculo_50_meses.json"
+    },
+    {
+      "id": "frase.calendario.c3_m5",
+      "tipo": "calendario",
+      "en": "Listen to the doctor AND breathe in deeply!",
+      "significado": {
+        "gl": "Escoita a doutora E respira fondo!",
+        "es": "¡Escucha a la doctora Y respira hondo!"
+      },
+      "fonte": "calendario/curriculo_50_meses.json"
+    },
+    {
+      "id": "frase.calendario.c3_m6",
+      "tipo": "calendario",
+      "en": "Dance to the music AND freeze like a stone statue!",
+      "significado": {
+        "gl": "Baila coa música E queda quieto coma unha estatua de pedra!",
+        "es": "¡Baila con la música Y quédate quieto como una estatua de piedra!"
+      },
+      "fonte": "calendario/curriculo_50_meses.json"
+    },
+    {
+      "id": "frase.calendario.c3_m7",
+      "tipo": "calendario",
+      "en": "Find the green triangle AND touch it with your feet!",
+      "significado": {
+        "gl": "Busca o triángulo verde E tócao cos pés!",
+        "es": "¡Busca el triángulo verde Y tócalo con los pies!"
+      },
+      "fonte": "calendario/curriculo_50_meses.json"
+    },
+    {
+      "id": "frase.calendario.c3_m8",
+      "tipo": "calendario",
+      "en": "Pour the water gently AND watch the little seed grow!",
+      "significado": {
+        "gl": "Bota a auga con coidado E mira como medra a semente!",
+        "es": "¡Echa el agua con cuidado Y mira cómo crece la semilla!"
+      },
+      "fonte": "calendario/curriculo_50_meses.json"
+    },
+    {
+      "id": "frase.calendario.c3_m9",
+      "tipo": "calendario",
+      "en": "Breathe in like you're smelling a flower AND blow out like the wind!",
+      "significado": {
+        "gl": "Respira coma se ulises unha flor E bota o aire coma o vento!",
+        "es": "¡Respira como si olieras una flor Y echa el aire como el viento!"
+      },
+      "fonte": "calendario/curriculo_50_meses.json"
+    },
+    {
+      "id": "frase.calendario.c3_m10",
+      "tipo": "calendario",
+      "en": "Swim like a dolphin AND wave hello to the boat!",
+      "significado": {
+        "gl": "Nada coma un golfiño E saúda o barco!",
+        "es": "¡Nada como un delfín Y saluda al barco!"
+      },
+      "fonte": "calendario/curriculo_50_meses.json"
+    },
+    {
+      "id": "frase.calendario.c4_m1",
+      "tipo": "calendario",
+      "en": "We share the blocks BECAUSE we are building a tower together!",
+      "significado": {
+        "gl": "Compartimos os bloques PORQUE estamos facendo unha torre xuntos!",
+        "es": "¡Compartimos los bloques PORQUE estamos haciendo una torre juntos!"
+      },
+      "fonte": "calendario/curriculo_50_meses.json"
+    },
+    {
+      "id": "frase.calendario.c4_m2",
+      "tipo": "calendario",
+      "en": "Run very fast like a fox... and FREEZE when the owl hoots!",
+      "significado": {
+        "gl": "Corre moi rápido coma un raposo... e ESTÁTUA cando cante a curuxa!",
+        "es": "¡Corre muy rápido como un zorro... y ESTATUA cuando ulule el búho!"
+      },
+      "fonte": "calendario/curriculo_50_meses.json"
+    },
+    {
+      "id": "frase.calendario.c4_m3",
+      "tipo": "calendario",
+      "en": "Leaves fall down BECAUSE the autumn wind blows very hard!",
+      "significado": {
+        "gl": "Caen as follas PORQUE o vento de outono sopra moi forte!",
+        "es": "¡Caen las hojas PORQUE el viento de otoño sopla muy fuerte!"
+      },
+      "fonte": "calendario/curriculo_50_meses.json"
+    },
+    {
+      "id": "frase.calendario.c4_m4",
+      "tipo": "calendario",
+      "en": "Ice is colder than water, but it melts in your hand!",
+      "significado": {
+        "gl": "O xeo está máis frío ca auga, pero derrétese na túa man!",
+        "es": "¡El hielo está más frío que el agua, pero se derrite en tu mano!"
+      },
+      "fonte": "calendario/curriculo_50_meses.json"
+    },
+    {
+      "id": "frase.calendario.c4_m5",
+      "tipo": "calendario",
+      "en": "Walk across the bridge AND step between the two trees!",
+      "significado": {
+        "gl": "Cruza a ponte E pasa entre as dúas árbores!",
+        "es": "¡Cruza el puente Y pasa entre los dos árboles!"
+      },
+      "fonte": "calendario/curriculo_50_meses.json"
+    },
+    {
+      "id": "frase.calendario.c4_m6",
+      "tipo": "calendario",
+      "en": "Walk heavily like a giant, but hide quietly when I count to three!",
+      "significado": {
+        "gl": "Camiña pesado coma un xigante, pero agóchate en silencio cando conte ata tres!",
+        "es": "¡Camina pesado como un gigante, pero escóndete en silencio cuando cuente hasta tres!"
+      },
+      "fonte": "calendario/curriculo_50_meses.json"
+    },
+    {
+      "id": "frase.calendario.c4_m7",
+      "tipo": "calendario",
+      "en": "This banana is bigger AND sweeter than the small lemon!",
+      "significado": {
+        "gl": "Este plátano é máis grande E máis doce ca o limón pequeno!",
+        "es": "¡Este plátano es más grande Y más dulce que el limón pequeño!"
+      },
+      "fonte": "calendario/curriculo_50_meses.json"
+    },
+    {
+      "id": "frase.calendario.c4_m8",
+      "tipo": "calendario",
+      "en": "Fly like a seagull, but IF it rains, hide under your wings!",
+      "significado": {
+        "gl": "Voa coma unha gaivota, pero SE chove, agóchate baixo as ás!",
+        "es": "¡Vuela como una gaviota, pero SI llueve, escóndete bajo las alas!"
+      },
+      "fonte": "calendario/curriculo_50_meses.json"
+    },
+    {
+      "id": "frase.calendario.c4_m9",
+      "tipo": "calendario",
+      "en": "The heavy stone sinks, but the wooden stick floats on top!",
+      "significado": {
+        "gl": "A pedra pesada afúndese, pero o pau de madeira flota enriba!",
+        "es": "¡La piedra pesada se hunde, pero el palo de madera flota encima!"
+      },
+      "fonte": "calendario/curriculo_50_meses.json"
+    },
+    {
+      "id": "frase.calendario.c4_m10",
+      "tipo": "calendario",
+      "en": "We climbed the hill AND now we see the wide blue bay!",
+      "significado": {
+        "gl": "Subimos o monte E agora vemos a ría azul e ancha!",
+        "es": "¡Subimos el monte Y ahora vemos la ría azul y ancha!"
+      },
+      "fonte": "calendario/curriculo_50_meses.json"
+    },
+    {
+      "id": "frase.calendario.c5_m1",
+      "tipo": "calendario",
+      "en": "IF we listen to each other, our class will be a happy team!",
+      "significado": {
+        "gl": "SE nos escoitamos, a nosa clase será un equipo feliz!",
+        "es": "¡SI nos escuchamos, nuestra clase será un equipo feliz!"
+      },
+      "fonte": "calendario/curriculo_50_meses.json"
+    },
+    {
+      "id": "frase.calendario.c5_m2",
+      "tipo": "calendario",
+      "en": "Touch your chest to feel your heart beating fast!",
+      "significado": {
+        "gl": "Toca o peito para sentir o corazón latexar rápido!",
+        "es": "¡Tócate el pecho para sentir el corazón latir rápido!"
+      },
+      "fonte": "calendario/curriculo_50_meses.json"
+    },
+    {
+      "id": "frase.calendario.c5_m3",
+      "tipo": "calendario",
+      "en": "Compare the weights: the basket of acorns is heavier than the basket of leaves!",
+      "significado": {
+        "gl": "Compara os pesos: o cesto de landras pesa máis ca o cesto de follas!",
+        "es": "¡Compara los pesos: la cesta de bellotas pesa más que la cesta de hojas!"
+      },
+      "fonte": "calendario/curriculo_50_meses.json"
+    },
+    {
+      "id": "frase.calendario.c5_m4",
+      "tipo": "calendario",
+      "en": "The Earth goes around the Sun while we count the months!",
+      "significado": {
+        "gl": "A Terra xira arredor do Sol mentres contamos os meses!",
+        "es": "¡La Tierra gira alrededor del Sol mientras contamos los meses!"
+      },
+      "fonte": "calendario/curriculo_50_meses.json"
+    },
+    {
+      "id": "frase.calendario.c5_m5",
+      "tipo": "calendario",
+      "en": "FIRST the seed, THEN a strong tree, FINALLY the symbol of Vigo!",
+      "significado": {
+        "gl": "PRIMEIRO a semente, DESPOIS unha árbore forte, AO FINAL o símbolo de Vigo!",
+        "es": "¡PRIMERO la semilla, DESPUÉS un árbol fuerte, AL FINAL el símbolo de Vigo!"
+      },
+      "fonte": "calendario/curriculo_50_meses.json"
+    },
+    {
+      "id": "frase.calendario.c5_m6",
+      "tipo": "calendario",
+      "en": "Leader says: take the mask, walk backwards, and FREEZE!",
+      "significado": {
+        "gl": "O xefe di: colle a máscara, camiña cara atrás e ESTÁTUA!",
+        "es": "El jefe dice: coge la máscara, camina hacia atrás y ¡ESTATUA!"
+      },
+      "fonte": "calendario/curriculo_50_meses.json"
+    },
+    {
+      "id": "frase.calendario.c5_m7",
+      "tipo": "calendario",
+      "en": "Follow the pattern and PREDICT what shape comes next!",
+      "significado": {
+        "gl": "Segue a serie e ADIVIÑA que forma vén despois!",
+        "es": "¡Sigue la serie y ADIVINA qué forma viene después!"
+      },
+      "fonte": "calendario/curriculo_50_meses.json"
+    },
+    {
+      "id": "frase.calendario.c5_m8",
+      "tipo": "calendario",
+      "en": "IF we protect the ocean, THEN the dolphins will swim safely!",
+      "significado": {
+        "gl": "SE protexemos o océano, ENTÓN os golfiños nadarán seguros!",
+        "es": "¡SI protegemos el océano, ENTONCES los delfines nadarán seguros!"
+      },
+      "fonte": "calendario/curriculo_50_meses.json"
+    },
+    {
+      "id": "frase.calendario.c5_m9",
+      "tipo": "calendario",
+      "en": "I understand you. Let's work it out AND share fairly!",
+      "significado": {
+        "gl": "Enténdote. Arranxémolo E repartamos de forma xusta!",
+        "es": "Te entiendo. ¡Arreglémoslo Y repartamos de forma justa!"
+      },
+      "fonte": "calendario/curriculo_50_meses.json"
+    },
+    {
+      "id": "frase.calendario.c5_m10",
+      "tipo": "calendario",
+      "en": "We are brave explorers ready for Primary School, hurray!",
+      "significado": {
+        "gl": "Somos exploradores valentes listos para Primaria, hurra!",
+        "es": "¡Somos exploradores valientes listos para Primaria, hurra!"
+      },
+      "fonte": "calendario/curriculo_50_meses.json"
     }
   ]
 }

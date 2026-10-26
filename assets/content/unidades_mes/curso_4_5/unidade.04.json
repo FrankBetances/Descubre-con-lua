@@ -103,7 +103,210 @@
   "reactivar": [
     "3_4.outubro.s4.dance"
   ],
-  "hogar": null,
+  "hogar": {
+    "momento": {
+      "gl": "No xogo cos peluches, antes do baño",
+      "es": "En el juego con los peluches, antes del baño"
+    },
+    "minutos": 8,
+    "escena": {
+      "gl": "Un peluche e unha venda ou un pano",
+      "es": "Un peluche y una venda o un pañuelo"
+    },
+    "retosCasa": [
+      {
+        "id": "reto.curso_4_5.12.1",
+        "semana": 1,
+        "fase": "descubrir",
+        "nomeFase": {
+          "gl": "Descubrir",
+          "es": "Descubrir"
+        },
+        "frase": {
+          "en": "bandage",
+          "gl": "venda",
+          "es": "venda"
+        },
+        "queFacer": {
+          "gl": "Dio ti mentres o fas, cara a cara e á súa altura: «bandage». Só ten que escoitar e mirar.",
+          "es": "Dilo tú mientras lo haces, cara a cara y a su altura: «bandage». Solo tiene que escuchar y mirar."
+        },
+        "mans": {
+          "gl": "Sinala ou colle o que nomeas: venda.",
+          "es": "Señala o coge lo que nombras: venda."
+        },
+        "esperaSegundos": 5,
+        "nonPedir": {
+          "gl": "Non é unha proba: se responde na lingua da casa, tamén vale, e o xogo segue.",
+          "es": "No es una prueba: si responde en la lengua de casa, también vale, y el juego sigue."
+        },
+        "recast": {
+          "silencio": {
+            "gl": "Fai ti o xesto e volve dicir «bandage» amodo, sorrindo, e segue co xogo.",
+            "es": "Haz tú el gesto y vuelve a decir «bandage» despacio, sonriendo, y sigue con el juego."
+          },
+          "linguaCasa": {
+            "gl": "Acolle o que di na lingua da casa, asente e devólvello en inglés: «bandage».",
+            "es": "Acoge lo que dice en la lengua de casa, asiente y devuélveselo en inglés: «bandage»."
+          },
+          "unhaPalabra": {
+            "gl": "Celébrao e engade o que falta: «Yes! bandage».",
+            "es": "Celébralo y añade lo que falta: «Yes! bandage»."
+          }
+        }
+      },
+      {
+        "id": "reto.curso_4_5.12.2",
+        "semana": 2,
+        "fase": "practicar",
+        "nomeFase": {
+          "gl": "Practicar",
+          "es": "Practicar"
+        },
+        "frase": {
+          "en": "Do not worry, be gentle",
+          "gl": "Non te preocupes, con delicadeza",
+          "es": "No te preocupes, con delicadeza"
+        },
+        "queFacer": {
+          "gl": "Di «Do not worry, be gentle» e fai o xesto á vez. Agarda e, se o fai, facédeo xuntos outra vez.",
+          "es": "Di «Do not worry, be gentle» y haz el gesto a la vez. Espera y, si lo hace, hacedlo juntos otra vez."
+        },
+        "mans": {
+          "gl": "Acompáñaa dun xesto claro: dar, recibir ou sinalar a quen lle toca.",
+          "es": "Acompáñala de un gesto claro: dar, recibir o señalar a quien le toca."
+        },
+        "esperaSegundos": 5,
+        "nonPedir": {
+          "gl": "Non é unha proba: se responde na lingua da casa, tamén vale, e o xogo segue.",
+          "es": "No es una prueba: si responde en la lengua de casa, también vale, y el juego sigue."
+        },
+        "recast": {
+          "silencio": {
+            "gl": "Fai ti o xesto e volve dicir «Do not worry, be gentle» amodo, sorrindo, e segue co xogo.",
+            "es": "Haz tú el gesto y vuelve a decir «Do not worry, be gentle» despacio, sonriendo, y sigue con el juego."
+          },
+          "linguaCasa": {
+            "gl": "Acolle o que di na lingua da casa, asente e devólvello en inglés: «Do not worry, be gentle».",
+            "es": "Acoge lo que dice en la lengua de casa, asiente y devuélveselo en inglés: «Do not worry, be gentle»."
+          },
+          "unhaPalabra": {
+            "gl": "Celébrao e engade o que falta: «Yes! Do not worry, be gentle».",
+            "es": "Celébralo y añade lo que falta: «Yes! Do not worry, be gentle»."
+          }
+        }
+      },
+      {
+        "id": "reto.curso_4_5.12.3",
+        "semana": 3,
+        "fase": "combinar",
+        "nomeFase": {
+          "gl": "Combinar",
+          "es": "Combinar"
+        },
+        "frase": {
+          "en": "Do you remember when it rained a lot yesterday? How did you feel?",
+          "gl": "Lembras cando onte choveu moito? Como te sentiches?",
+          "es": "¿Te acuerdas de cuando ayer llovió mucho? ¿Cómo te sentiste?"
+        },
+        "queFacer": {
+          "gl": "Xunta a frase desta semana coa da semana pasada nun xogo curto: «Do you remember when it rained a lot yesterday? How did you feel?» e, despois, «Do not worry, be gentle».",
+          "es": "Junta la frase de esta semana con la de la semana pasada en un juego corto: «Do you remember when it rained a lot yesterday? How did you feel?» y, después, «Do not worry, be gentle»."
+        },
+        "mans": {
+          "gl": "Ten na man aquilo do que falas e ensínallo mentres o dis.",
+          "es": "Ten en la mano aquello de lo que hablas y enséñaselo mientras lo dices."
+        },
+        "esperaSegundos": 5,
+        "nonPedir": {
+          "gl": "Non é unha proba: se responde na lingua da casa, tamén vale, e o xogo segue.",
+          "es": "No es una prueba: si responde en la lengua de casa, también vale, y el juego sigue."
+        },
+        "recast": {
+          "silencio": {
+            "gl": "Fai ti o xesto e volve dicir «Do you remember when it rained a lot yesterday? How did you feel?» amodo, sorrindo, e segue co xogo.",
+            "es": "Haz tú el gesto y vuelve a decir «Do you remember when it rained a lot yesterday? How did you feel?» despacio, sonriendo, y sigue con el juego."
+          },
+          "linguaCasa": {
+            "gl": "Acolle o que di na lingua da casa, asente e devólvello en inglés: «Do you remember when it rained a lot yesterday? How did you feel?».",
+            "es": "Acoge lo que dice en la lengua de casa, asiente y devuélveselo en inglés: «Do you remember when it rained a lot yesterday? How did you feel?»."
+          },
+          "unhaPalabra": {
+            "gl": "Celébrao e engade o que falta: «Yes! Do you remember when it rained a lot yesterday? How did you feel?».",
+            "es": "Celébralo y añade lo que falta: «Yes! Do you remember when it rained a lot yesterday? How did you feel?»."
+          }
+        }
+      },
+      {
+        "id": "reto.curso_4_5.12.4",
+        "semana": 4,
+        "fase": "consolidar",
+        "nomeFase": {
+          "gl": "Consolidar",
+          "es": "Consolidar"
+        },
+        "frase": {
+          "en": "Doctor! The dog is sad. Why is he sad?",
+          "gl": "Doutor! O can está triste. Por que está triste?",
+          "es": "¡Doctor! El perro está triste. ¿Por qué está triste?"
+        },
+        "queFacer": {
+          "gl": "Di o comezo, «Doctor! The dog is sad. Why is he…», e deixa o oco. Se o completa co corpo ou cunha palabra, celébrao e di a frase enteira.",
+          "es": "Di el comienzo, «Doctor! The dog is sad. Why is he…», y deja el hueco. Si lo completa con el cuerpo o con una palabra, celébralo y di la frase entera."
+        },
+        "mans": {
+          "gl": "Ten na man aquilo do que falas e ensínallo mentres o dis.",
+          "es": "Ten en la mano aquello de lo que hablas y enséñaselo mientras lo dices."
+        },
+        "esperaSegundos": 5,
+        "nonPedir": {
+          "gl": "Non é unha proba: se responde na lingua da casa, tamén vale, e o xogo segue.",
+          "es": "No es una prueba: si responde en la lengua de casa, también vale, y el juego sigue."
+        },
+        "recast": {
+          "silencio": {
+            "gl": "Fai ti o xesto e volve dicir «Doctor! The dog is sad. Why is he sad?» amodo, sorrindo, e segue co xogo.",
+            "es": "Haz tú el gesto y vuelve a decir «Doctor! The dog is sad. Why is he sad?» despacio, sonriendo, y sigue con el juego."
+          },
+          "linguaCasa": {
+            "gl": "Acolle o que di na lingua da casa, asente e devólvello en inglés: «Doctor! The dog is sad. Why is he sad?».",
+            "es": "Acoge lo que dice en la lengua de casa, asiente y devuélveselo en inglés: «Doctor! The dog is sad. Why is he sad?»."
+          },
+          "unhaPalabra": {
+            "gl": "Celébrao e engade o que falta: «Yes! Doctor! The dog is sad. Why is he sad?».",
+            "es": "Celébralo y añade lo que falta: «Yes! Doctor! The dog is sad. Why is he sad?»."
+          }
+        }
+      }
+    ],
+    "lecturaCasa": {
+      "microcuento": "microcuento.curso_4_5.04"
+    },
+    "juegoCasa": {
+      "xogo": "xogo_05_espello_corpo"
+    },
+    "queObservarCasa": [
+      {
+        "gl": "Completa a frase co corpo ou cunha palabra",
+        "es": "Completa la frase con el cuerpo o con una palabra"
+      },
+      {
+        "gl": "Usa a frase noutro xogo, sen que llo propoñas",
+        "es": "Usa la frase en otro juego, sin que se lo propongas"
+      },
+      {
+        "gl": "Conta o que pasa mesturando linguas",
+        "es": "Cuenta lo que pasa mezclando lenguas"
+      }
+    ],
+    "reactivarCasa": {
+      "en": "doctor / vet",
+      "texto": {
+        "gl": "Noutro momento do día, sen avisar, volve dicir «doctor / vet», a palabra do mes pasado, sinalándoa.",
+        "es": "En otro momento del día, sin avisar, vuelve a decir «doctor / vet», la palabra del mes pasado, señalándola."
+      }
+    }
+  },
   "microcuento": {
     "id": "microcuento.curso_4_5.04",
     "titulo": {
@@ -425,5 +628,6 @@
         }
       }
     ]
-  }
+  },
+  "criterio": "normativa.curso_4_5"
 }
