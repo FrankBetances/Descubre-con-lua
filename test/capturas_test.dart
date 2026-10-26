@@ -24,6 +24,8 @@ import 'package:descubre_con_lua/features/juega/views/nota_para_casas_screen.dar
 import 'package:descubre_con_lua/features/juega/views/cancions_con_pulso_screen.dart';
 import 'package:descubre_con_lua/features/cuentos/views/microcuento_screen.dart';
 import 'package:descubre_con_lua/data/models/rexistro_frases_model.dart';
+import 'package:descubre_con_lua/data/models/unidade_curricular_model.dart';
+import 'package:descubre_con_lua/data/models/hogar_model.dart';
 import 'package:descubre_con_lua/data/models/normativa_model.dart';
 import 'package:descubre_con_lua/data/models/steam_do_mes_model.dart';
 import 'package:descubre_con_lua/data/models/xogos_fogar_model.dart';
@@ -130,6 +132,18 @@ void main() {
   late Directory tmp;
 
   setUp(() async {
+    // Lo que las pantallas leen del paquete por su cuenta, ya leído desde
+    // disco: un futuro del paquete abierto bajo el reloj falso no termina
+    // nunca, y colgaba la captura siguiente que lo esperase.
+    String ler(String r) => File(r).readAsStringSync();
+    PlanCurricular.sembrar(PlanCurricular.fromRaw(
+        [for (final f in PlanCurricular.ficheiros) ler(f)],
+        ler(PlanCurricular.calendarioAsset)));
+    XogosFogar.sembrar(XogosFogar.fromRaw(ler(XogosFogar.assetPath)));
+    SteamDoMes.sembrar(SteamDoMes.fromRaw(ler(SteamDoMes.assetPath)));
+    Normativa.sembrar(Normativa.fromRaw(ler(Normativa.assetPath)));
+    GuiaDeCasa.sembrar(GuiaDeCasa.fromRaw(
+        ler(GuiaDeCasa.guiaAsset), ler(GuiaDeCasa.idadeAsset)));
     contenido = ContentRepository();
     await contenido.initialize();
     tmp = Directory.systemTemp.createTempSync('capturas');
