@@ -205,6 +205,12 @@ def revisar(curso: str, orden: int, u: dict, existentes: set[str],
         bilingue(objeto, f"{donde}: realia.{i}", fallos)
 
     contraste = u.get("contraste")
+    # F4: desde 2-3 cada mes trae su contraste de sonido. En 0-2 no, porque el
+    # contraste empieza a los 18 meses y el curso arranca antes (M3.4).
+    if not contraste and curso != "curso_0_2":
+        fallos.append(f"{donde}: falta el contraste de sonido (F4)")
+    if contraste and contraste.get("a") == contraste.get("b"):
+        fallos.append(f"{donde}: el contraste compara una palabra consigo misma")
     if contraste:
         for lado in ("a", "b"):
             if contraste.get(lado) not in existentes:

@@ -89,7 +89,14 @@
       "es": "Una cuerda en el suelo"
     }
   ],
-  "contraste": null,
+  "contraste": {
+    "a": "4_5.xaneiro.s1.left",
+    "b": "0_2.setembro.s4.lift",
+    "nota": {
+      "gl": "A «e» de «left» fronte á «i» curta e relaxada de «lift»: dilas ti, unha detrás da outra, sen cambiar nada máis.",
+      "es": "La «e» de «left» frente a la «i» corta y relajada de «lift»: dilas tú, una detrás de otra, sin cambiar nada más."
+    }
+  },
   "queObservar": [
     {
       "gl": "Xira á esquerda sen soltar a man do compañeiro",

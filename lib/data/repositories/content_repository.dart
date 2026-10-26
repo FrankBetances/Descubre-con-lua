@@ -986,6 +986,17 @@ class ContentRepository {
   PezaDaUnidade? pezaSync(String ref) =>
       resolverPeza(ref, programa: _programaTpr, rexistro: _rexistroFrases);
 
+  /// Las dos palabras del contraste de sonido de la unidad (F4), si las dos
+  /// están en el banco.
+  (PezaDaUnidade, PezaDaUnidade)? contrasteSync(UnidadeDoMes unidade) =>
+      switch (unidade.contraste) {
+        final c? => switch ((pezaSync(c.a), pezaSync(c.b))) {
+            (final a?, final b?) => (a, b),
+            _ => null,
+          },
+        null => null,
+      };
+
   // --- LAS CANCIONES CON PULSO ---
 
   List<CancionConPulso>? _cancionsConPulso;

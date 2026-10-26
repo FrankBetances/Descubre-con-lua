@@ -383,6 +383,8 @@ class _CalendarioFogarScreenState extends State<CalendarioFogarScreen> {
                             NucleoDoMes(
                               unidade: unidade,
                               nucleo: widget.repository.nucleoSync(unidade),
+                              contraste:
+                                  widget.repository.contrasteSync(unidade),
                               language: lang,
                               audioService: widget.audioService,
                               enCasa: true,

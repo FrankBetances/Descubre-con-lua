@@ -69,7 +69,14 @@
       "es": "Una calabaza pequeña"
     }
   ],
-  "contraste": null,
+  "contraste": {
+    "a": "3_4.setembro.s3.hug",
+    "b": "3_4.outubro.s4.hop",
+    "nota": {
+      "gl": "A «u» de «hug» é curta e escura, a medio camiño dunha «a»; a «o» de «hop» é unha «a» ben aberta. Dilas ti, unha detrás da outra.",
+      "es": "La «u» de «hug» es corta y oscura, a medio camino de una «a»; la «o» de «hop» es una «a» bien abierta. Dilas tú, una detrás de otra."
+    }
+  },
   "queObservar": [
     {
       "gl": "Salta cos pés xuntos cando a castaña estoupa",

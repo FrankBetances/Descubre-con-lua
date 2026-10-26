@@ -83,7 +83,14 @@
       "es": "Una clave de madera"
     }
   ],
-  "contraste": null,
+  "contraste": {
+    "a": "4_5.febreiro.s3.win",
+    "b": "2_3.abril.s2.wing",
+    "nota": {
+      "gl": "«win» remata en «n», coa lingua arriba, e «wing», nun son nasal do fondo da boca, sen «g» ao final. Dilas ti, unha detrás da outra.",
+      "es": "«win» termina en «n», con la lengua arriba, y «wing», en un sonido nasal del fondo de la boca, sin «g» al final. Dilas tú, una detrás de otra."
+    }
+  },
   "queObservar": [
     {
       "gl": "Inventa unha serie de tres movementos e faina igual cada vez",

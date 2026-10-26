@@ -73,7 +73,14 @@
       "es": "Un cesto de mimbre"
     }
   ],
-  "contraste": null,
+  "contraste": {
+    "a": "3_4.marzo.s3.pick",
+    "b": "3_4.abril.s1.peek",
+    "nota": {
+      "gl": "A vogal curta e relaxada de «pick» fronte á longa e tensa de «peek»: dilas ti, unha detrás da outra, exagerando a duración.",
+      "es": "La vocal corta y relajada de «pick» frente a la larga y tensa de «peek»: dilas tú, una detrás de otra, exagerando la duración."
+    }
+  },
   "queObservar": [
     {
       "gl": "Sopra amodo mentres ergue a gasa",

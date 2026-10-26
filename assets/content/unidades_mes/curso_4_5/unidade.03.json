@@ -82,7 +82,14 @@
       "es": "Una colchoneta"
     }
   ],
-  "contraste": null,
+  "contraste": {
+    "a": "3_4.setembro.s2.ball",
+    "b": "3_4.maio.s3.bowl",
+    "nota": {
+      "gl": "A «a» de «ball» é unha «o» aberta e quieta; a de «bowl» é unha «ou» que pecha os beizos. Dilas ti, unha detrás da outra.",
+      "es": "La «a» de «ball» es una «o» abierta y quieta; la de «bowl» es una «ou» que cierra los labios. Dilas tú, una detrás de otra."
+    }
+  },
   "queObservar": [
     {
       "gl": "Roda de lado cos brazos pegados ao corpo",

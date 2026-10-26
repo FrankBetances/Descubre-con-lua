@@ -84,7 +84,14 @@
       "es": "Mochila escolar de lona natural"
     }
   ],
-  "contraste": null,
+  "contraste": {
+    "a": "3_4.marzo.s3.pear",
+    "b": "3_4.febreiro.s3.bear",
+    "nota": {
+      "gl": "A «p» de «pear» sae cun sopro de aire e a «b» de «bear» non sopra. Dilas ti coa man diante da boca: na primeira nótase o aire.",
+      "es": "La «p» de «pear» sale con un soplo de aire y la «b» de «bear» no sopla. Dilas tú con la mano delante de la boca: en la primera se nota el aire."
+    }
+  },
   "queObservar": [
     {
       "gl": "Para coma unha estatua cando soa a campá",

@@ -64,7 +64,14 @@
       "es": "Un aro de madera"
     }
   ],
-  "contraste": null,
+  "contraste": {
+    "a": "3_4.xaneiro.s2.drip",
+    "b": "3_4.xaneiro.s2.drop",
+    "nota": {
+      "gl": "A «i» curta de «drip» fronte á «a» ben aberta de «drop»: dilas ti, coma o son de dúas pingas distintas.",
+      "es": "La «i» corta de «drip» frente a la «a» bien abierta de «drop»: dilas tú, como el sonido de dos gotas distintas."
+    }
+  },
   "queObservar": [
     {
       "gl": "Repica nos xeonllos máis rápido ou máis amodo coa choiva",

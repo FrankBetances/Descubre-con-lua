@@ -60,7 +60,14 @@
       "es": "Una toalla pequeña de microfibra seca por niño"
     }
   ],
-  "contraste": null,
+  "contraste": {
+    "a": "3_4.maio.s1.soap",
+    "b": "3_4.novembro.s4.soup",
+    "nota": {
+      "gl": "«soap» leva unha «ou» e «soup», unha «u» longa cos beizos redondos. Dilas ti, unha detrás da outra.",
+      "es": "«soap» lleva una «ou» y «soup», una «u» larga con los labios redondos. Dilas tú, una detrás de otra."
+    }
+  },
   "queObservar": [
     {
       "gl": "Frega meixelas e fronte coa toalla",

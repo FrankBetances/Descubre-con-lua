@@ -63,7 +63,14 @@
       "es": "Paracaídas azul de asamblea"
     }
   ],
-  "contraste": null,
+  "contraste": {
+    "a": "3_4.xaneiro.s2.wet",
+    "b": "4_5.xaneiro.s4.vet",
+    "nota": {
+      "gl": "«wet» empeza cos beizos redondos, coma para un bico, e «vet», cos dentes de arriba no beizo de abaixo. Dilas ti diante dun espello.",
+      "es": "«wet» empieza con los labios redondos, como para un beso, y «vet», con los dientes de arriba en el labio de abajo. Dilas tú delante de un espejo."
+    }
+  },
   "queObservar": [
     {
       "gl": "Move as mans amodo ou forte segundo a onda",

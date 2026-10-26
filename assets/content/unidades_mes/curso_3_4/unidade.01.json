@@ -64,7 +64,14 @@
       "es": "Cesto de mimbre tradicional"
     }
   ],
-  "contraste": null,
+  "contraste": {
+    "a": "3_4.setembro.s1.sit",
+    "b": "3_4.outubro.s2.see",
+    "nota": {
+      "gl": "A vogal curta e relaxada de «sit» fronte á longa e tensa de «see»: dilas ti, unha detrás da outra, exagerando a duración.",
+      "es": "La vocal corta y relajada de «sit» frente a la larga y tensa de «see»: dilas tú, una detrás de otra, exagerando la duración."
+    }
+  },
   "queObservar": [
     {
       "gl": "Dá as palmadas ao poñerse de pé",

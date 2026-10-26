@@ -65,7 +65,14 @@
       "es": "Un poco de tierra"
     }
   ],
-  "contraste": null,
+  "contraste": {
+    "a": "3_4.novembro.s3.dig",
+    "b": "3_4.febreiro.s1.dog",
+    "nota": {
+      "gl": "A «i» curta de «dig» fronte á «a» ben aberta de «dog»: dilas ti, unha detrás da outra.",
+      "es": "La «i» corta de «dig» frente a la «a» bien abierta de «dog»: dilas tú, una detrás de otra."
+    }
+  },
   "queObservar": [
     {
       "gl": "Encóllese pequeno e medra amodo ata estar de pé",

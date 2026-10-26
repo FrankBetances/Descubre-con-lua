@@ -65,7 +65,14 @@
       "es": "Sin material: el cuerpo"
     }
   ],
-  "contraste": null,
+  "contraste": {
+    "a": "3_4.febreiro.s2.sheep",
+    "b": "4_5.marzo.s4.cheap",
+    "nota": {
+      "gl": "«sheep» empeza cun «xx» longo e suave de pedir silencio e «cheap», cun golpe, «ch». Dilas ti, unha detrás da outra.",
+      "es": "«sheep» empieza con un «sh» largo y suave de pedir silencio y «cheap», con un golpe, «ch». Dilas tú, una detrás de otra."
+    }
+  },
   "queObservar": [
     {
       "gl": "Cambia o andar segundo o animal que nomeas",

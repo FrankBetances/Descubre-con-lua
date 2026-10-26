@@ -86,7 +86,14 @@
       "es": "Disfraces"
     }
   ],
-  "contraste": null,
+  "contraste": {
+    "a": "2_3.marzo.s2.chop",
+    "b": "2_3.xaneiro.s3.shop",
+    "nota": {
+      "gl": "«chop» empeza cun golpe, «ch», e «shop», cun «xx» longo e suave de pedir silencio. Dilas ti, unha detrás da outra.",
+      "es": "«chop» empieza con un golpe, «ch», y «shop», con un «sh» largo y suave de pedir silencio. Dilas tú, una detrás de otra."
+    }
+  },
   "queObservar": [
     {
       "gl": "Coloca o corpo do compañeiro seguindo a orde oral",

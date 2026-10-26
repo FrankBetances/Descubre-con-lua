@@ -61,7 +61,14 @@
       "es": "Campanillas de madera con badajo protegido"
     }
   ],
-  "contraste": null,
+  "contraste": {
+    "a": "3_4.decembro.s1.ice",
+    "b": "3_4.outubro.s1.eyes",
+    "nota": {
+      "gl": "«ice» remata nunha «s» que só sopra e «eyes», nunha «z» que zoa coma unha abella. Dilas ti coa man na gorxa: na segunda vibra.",
+      "es": "«ice» termina en una «s» que solo sopla y «eyes», en una «z» que zumba como una abeja. Dilas tú con la mano en la garganta: en la segunda vibra."
+    }
+  },
   "queObservar": [
     {
       "gl": "Pasa de forte a suave coa campaíña",

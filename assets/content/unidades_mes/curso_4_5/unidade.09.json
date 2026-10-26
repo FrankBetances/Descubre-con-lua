@@ -81,7 +81,14 @@
       "es": "Una cuerda de cáñamo"
     }
   ],
-  "contraste": null,
+  "contraste": {
+    "a": "3_4.setembro.s1.chair",
+    "b": "3_4.setembro.s2.share",
+    "nota": {
+      "gl": "«chair» empeza cun golpe, «ch», e «share», cun «xx» longo e suave de pedir silencio. Dilas ti, unha detrás da outra.",
+      "es": "«chair» empieza con un golpe, «ch», y «share», con un «sh» largo y suave de pedir silencio. Dilas tú, una detrás de otra."
+    }
+  },
   "queObservar": [
     {
       "gl": "Tira da corda ao mesmo tempo que o grupo ao contar",

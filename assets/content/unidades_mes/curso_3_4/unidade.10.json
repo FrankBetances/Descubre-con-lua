@@ -65,7 +65,14 @@
       "es": "Una concha blanca"
     }
   ],
-  "contraste": null,
+  "contraste": {
+    "a": "3_4.xuno.s1.boat",
+    "b": "5_6.setembro.s1.vote",
+    "nota": {
+      "gl": "«boat» empeza cos dous beizos xuntos e «vote», cos dentes de arriba no beizo de abaixo, vibrando. Dilas ti diante dun espello.",
+      "es": "«boat» empieza con los dos labios juntos y «vote», con los dientes de arriba en el labio de abajo, vibrando. Dilas tú delante de un espejo."
+    }
+  },
   "queObservar": [
     {
       "gl": "Rema en parella ao mesmo pulso",

@@ -69,7 +69,14 @@
       "es": "Una careta de madera"
     }
   ],
-  "contraste": null,
+  "contraste": {
+    "a": "3_4.xaneiro.s3.bus",
+    "b": "3_4.abril.s3.buzz",
+    "nota": {
+      "gl": "«bus» remata nunha «s» que só sopra e «buzz», nunha «z» que zoa coma unha abella. Dilas ti coa man na gorxa: na segunda vibra.",
+      "es": "«bus» termina en una «s» que solo sopla y «buzz», en una «z» que zumba como una abeja. Dilas tú con la mano en la garganta: en la segunda vibra."
+    }
+  },
   "queObservar": [
     {
       "gl": "Para de golpe e pon as mans na barriga ao oír «Quiet»",

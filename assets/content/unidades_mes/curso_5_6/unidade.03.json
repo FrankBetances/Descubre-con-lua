@@ -88,7 +88,14 @@
       "es": "Castañas"
     }
   ],
-  "contraste": null,
+  "contraste": {
+    "a": "3_4.novembro.s4.fill",
+    "b": "0_2.novembro.s1.feel",
+    "nota": {
+      "gl": "A vogal curta e relaxada de «fill» fronte á longa e tensa de «feel»: dilas ti, unha detrás da outra, exagerando a duración.",
+      "es": "La vocal corta y relajada de «fill» frente a la larga y tensa de «feel»: dilas tú, una detrás de otra, exagerando la duración."
+    }
+  },
   "queObservar": [
     {
       "gl": "Atopa a castaña só co tacto, sen mirar",

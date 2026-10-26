@@ -82,7 +82,14 @@
       "es": "Sin material: el cuerpo"
     }
   ],
-  "contraste": null,
+  "contraste": {
+    "a": "3_4.xaneiro.s2.wet",
+    "b": "3_4.setembro.s3.wait",
+    "nota": {
+      "gl": "A «e» de «wet» é curta e soa só; a de «wait» é unha «ei». Dilas ti, unha detrás da outra.",
+      "es": "La «e» de «wet» es corta y suena sola; la de «wait» es una «ei». Dilas tú, una detrás de otra."
+    }
+  },
   "queObservar": [
     {
       "gl": "Camiña ombreiro con ombreiro co grupo, amodo",

@@ -62,7 +62,14 @@
       "es": "El abrigo de cada uno, en su percha"
     }
   ],
-  "contraste": null,
+  "contraste": {
+    "a": "3_4.xaneiro.s1.zip",
+    "b": "0_2.setembro.s4.sip",
+    "nota": {
+      "gl": "A «z» de «zip» zoa coma unha abella, coa gorxa vibrando; a «s» de «sip» só sopra. Dilas ti coa man na gorxa.",
+      "es": "La «z» de «zip» zumba como una abeja, con la garganta vibrando; la «s» de «sip» solo sopla. Dilas tú con la mano en la garganta."
+    }
+  },
   "queObservar": [
     {
       "gl": "Mete os brazos en mangas imaxinarias e fai «Zzzip!»",

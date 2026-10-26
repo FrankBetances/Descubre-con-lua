@@ -57,7 +57,14 @@
       "es": "Un tomate de verdad"
     }
   ],
-  "contraste": null,
+  "contraste": {
+    "a": "3_4.febreiro.s2.pig",
+    "b": "3_4.outubro.s1.big",
+    "nota": {
+      "gl": "A «p» de «pig» sae cun sopro de aire e a «b» de «big» non sopra. Dilas ti coa man diante da boca: na primeira nótase o aire.",
+      "es": "La «p» de «pig» sale con un soplo de aire y la «b» de «big» no sopla. Dilas tú con la mano delante de la boca: en la primera se nota el aire."
+    }
+  },
   "queObservar": [
     {
       "gl": "Busca o círculo vermello e pon o pé enriba",

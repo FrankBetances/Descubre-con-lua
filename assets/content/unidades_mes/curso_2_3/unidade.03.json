@@ -56,7 +56,14 @@
       "es": "Dos hojas de cartulina en tonos ocres y marrones por niño"
     }
   ],
-  "contraste": null,
+  "contraste": {
+    "a": "3_4.abril.s3.worm",
+    "b": "3_4.decembro.s1.warm",
+    "nota": {
+      "gl": "A vogal de «worm» é un son neutro, coa boca case pechada e sen redondear; a de «warm», unha «o» aberta. Dilas ti, unha detrás da outra.",
+      "es": "La vocal de «worm» es un sonido neutro, con la boca casi cerrada y sin redondear; la de «warm», una «o» abierta. Dilas tú, una detrás de otra."
+    }
+  },
   "queObservar": [
     {
       "gl": "Bate os brazos e camiña de puntas co vento",

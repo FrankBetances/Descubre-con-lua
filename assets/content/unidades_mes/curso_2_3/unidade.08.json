@@ -54,7 +54,14 @@
       "es": "Sin material: el cuerpo en el suelo"
     }
   ],
-  "contraste": null,
+  "contraste": {
+    "a": "2_3.maio.s1.bin",
+    "b": "0_2.abril.s3.bean",
+    "nota": {
+      "gl": "A vogal curta e relaxada de «bin» fronte á longa e tensa de «bean»: dilas ti, unha detrás da outra, exagerando a duración.",
+      "es": "La vocal corta y relajada de «bin» frente a la larga y tensa de «bean»: dilas tú, una detrás de otra, exagerando la duración."
+    }
+  },
   "queObservar": [
     {
       "gl": "Encóllese e queda quieto coma unha semente",

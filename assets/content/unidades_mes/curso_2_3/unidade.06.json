@@ -62,7 +62,14 @@
       "es": "Tarjetas de gran formato con las siluetas de los animales"
     }
   ],
-  "contraste": null,
+  "contraste": {
+    "a": "3_4.febreiro.s1.bird",
+    "b": "3_4.decembro.s3.bed",
+    "nota": {
+      "gl": "A vogal de «bird» é un son neutro, sen «i» nin «e»; a de «bed», unha «e» curta. Dilas ti, unha detrás da outra.",
+      "es": "La vocal de «bird» es un sonido neutro, sin «i» ni «e»; la de «bed», una «e» corta. Dilas tú, una detrás de otra."
+    }
+  },
   "queObservar": [
     {
       "gl": "Elixe un animal e móvese coma el",

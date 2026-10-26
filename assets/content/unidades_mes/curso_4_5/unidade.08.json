@@ -85,7 +85,14 @@
       "es": "Sin material: el cuerpo"
     }
   ],
-  "contraste": null,
+  "contraste": {
+    "a": "3_4.setembro.s1.come",
+    "b": "3_4.setembro.s3.calm",
+    "nota": {
+      "gl": "A vogal de «come» é curta e escura; a de «calm», unha «a» longa e aberta, e a «l» case non se oe. Dilas ti, unha detrás da outra.",
+      "es": "La vocal de «come» es corta y oscura; la de «calm», una «a» larga y abierta, y la «l» casi no se oye. Dilas tú, una detrás de otra."
+    }
+  },
   "queObservar": [
     {
       "gl": "Camiña tranquilo e espallado polo espazo",

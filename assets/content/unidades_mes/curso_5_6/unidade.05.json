@@ -89,7 +89,14 @@
       "es": "Un banco bajo"
     }
   ],
-  "contraste": null,
+  "contraste": {
+    "a": "0_2.maio.s1.jug",
+    "b": "2_3.outubro.s3.jog",
+    "nota": {
+      "gl": "A «u» de «jug» é curta e escura, a medio camiño dunha «a»; a «o» de «jog» é unha «a» ben aberta. Dilas ti, unha detrás da outra.",
+      "es": "La «u» de «jug» es corta y oscura, a medio camino de una «a»; la «o» de «jog» es una «a» bien abierta. Dilas tú, una detrás de otra."
+    }
+  },
   "queObservar": [
     {
       "gl": "Camiña amodo sobre o banco sen verter a auga",

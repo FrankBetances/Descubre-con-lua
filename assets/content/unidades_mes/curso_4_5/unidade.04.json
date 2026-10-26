@@ -82,7 +82,14 @@
       "es": "Un pandero"
     }
   ],
-  "contraste": null,
+  "contraste": {
+    "a": "3_4.marzo.s4.drum",
+    "b": "3_4.xaneiro.s2.drop",
+    "nota": {
+      "gl": "A «u» de «drum» é curta e escura, a medio camiño dunha «a»; a «o» de «drop» é unha «a» ben aberta. Dilas ti, unha detrás da outra.",
+      "es": "La «u» de «drum» es corta y oscura, a medio camino de una «a»; la «o» de «drop» es una «a» bien abierta. Dilas tú, una detrás de otra."
+    }
+  },
   "queObservar": [
     {
       "gl": "Baila libre e detense cando cala o pandeiro",

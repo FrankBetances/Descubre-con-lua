@@ -92,7 +92,14 @@
       "es": "Hojas ásperas y hojas lisas"
     }
   ],
-  "contraste": null,
+  "contraste": {
+    "a": "3_4.xaneiro.s1.hat",
+    "b": "3_4.novembro.s2.hot",
+    "nota": {
+      "gl": "A «a» de «hat» ábrese cara a unha «e», cos beizos estirados; a «o» de «hot» é unha «a» ben aberta. Dilas ti, unha detrás da outra.",
+      "es": "La «a» de «hat» se abre hacia una «e», con los labios estirados; la «o» de «hot» es una «a» bien abierta. Dilas tú, una detrás de otra."
+    }
+  },
   "queObservar": [
     {
       "gl": "Distingue coa man a folla áspera da lisa",

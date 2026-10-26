@@ -83,7 +83,14 @@
       "es": "Alfombras verde y azul"
     }
   ],
-  "contraste": null,
+  "contraste": {
+    "a": "3_4.febreiro.s3.snake",
+    "b": "3_4.setembro.s4.snack",
+    "nota": {
+      "gl": "A «a» de «snake» soa «ei»; a de «snack» ábrese cara a unha «e» curta, cos beizos estirados. Dilas ti, unha detrás da outra.",
+      "es": "La «a» de «snake» suena «ei»; la de «snack» se abre hacia una «e» corta, con los labios estirados. Dilas tú, una detrás de otra."
+    }
+  },
   "queObservar": [
     {
       "gl": "Sinala cos cóbados o refuxio que elixe",

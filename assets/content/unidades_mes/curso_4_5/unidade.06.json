@@ -83,7 +83,14 @@
       "es": "Sin material: el cuerpo"
     }
   ],
-  "contraste": null,
+  "contraste": {
+    "a": "4_5.outubro.s2.sneak",
+    "b": "3_4.febreiro.s3.snake",
+    "nota": {
+      "gl": "«sneak» leva unha «i» longa e «snake», unha «ei». Dilas ti amodo, unha detrás da outra.",
+      "es": "«sneak» lleva una «i» larga y «snake», una «ei». Dilas tú despacio, una detrás de otra."
+    }
+  },
   "queObservar": [
     {
       "gl": "Cambia de galope a marcha silenciosa segundo o animal",

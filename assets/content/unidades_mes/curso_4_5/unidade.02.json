@@ -83,7 +83,14 @@
       "es": "Castañas"
     }
   ],
-  "contraste": null,
+  "contraste": {
+    "a": "3_4.outubro.s2.hair",
+    "b": "0_2.maio.s4.air",
+    "nota": {
+      "gl": "A «h» de «hair» é só un alento suave, coma cando embazas un cristal, nada que ver coa «j» castelá; «air» empeza sen alento. Dilas ti, unha detrás da outra.",
+      "es": "La «h» de «hair» es solo un aliento suave, como cuando empañas un cristal, nada que ver con la «j»; «air» empieza sin aliento. Dilas tú, una detrás de otra."
+    }
+  },
   "queObservar": [
     {
       "gl": "Salta curto cos pés xuntos e recolle as castañas",

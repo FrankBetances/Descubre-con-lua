@@ -90,7 +90,14 @@
       "es": "Dos cestos, uno azul"
     }
   ],
-  "contraste": null,
+  "contraste": {
+    "a": "0_2.marzo.s1.sort",
+    "b": "3_4.outubro.s4.short",
+    "nota": {
+      "gl": "«sort» empeza cunha «s» que asubía e «short», cun «xx» de pedir silencio, cos beizos para fóra. Dilas ti exagerando os beizos.",
+      "es": "«sort» empieza con una «s» que silba y «short», con un «sh» de pedir silencio, con los labios hacia fuera. Dilas tú exagerando los labios."
+    }
+  },
   "queObservar": [
     {
       "gl": "Conta cinco pasos co corpo e colle a cuncha",

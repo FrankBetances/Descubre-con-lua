@@ -65,7 +65,14 @@
       "es": "Una vela LED"
     }
   ],
-  "contraste": null,
+  "contraste": {
+    "a": "3_4.novembro.s2.hard",
+    "b": "3_4.outubro.s4.heart",
+    "nota": {
+      "gl": "O final de «hard» vibra na gorxa e o de «heart» non; por iso a vogal de «hard» dura un pouco máis. Dilas ti coa man na gorxa.",
+      "es": "El final de «hard» vibra en la garganta y el de «heart» no; por eso la vocal de «hard» dura un poco más. Dilas tú con la mano en la garganta."
+    }
+  },
   "queObservar": [
     {
       "gl": "Fai o xesto de calzar unha bota pesada",

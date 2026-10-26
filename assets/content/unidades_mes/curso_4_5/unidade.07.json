@@ -83,7 +83,14 @@
       "es": "Marcas rojas en el suelo"
     }
   ],
-  "contraste": null,
+  "contraste": {
+    "a": "5_6.marzo.s1.bead",
+    "b": "2_3.outubro.s4.beat",
+    "nota": {
+      "gl": "O final de «bead» vibra na gorxa e o de «beat» non; por iso a vogal de «bead» dura un pouco máis. Dilas ti coa man na gorxa.",
+      "es": "El final de «bead» vibra en la garganta y el de «beat» no; por eso la vocal de «bead» dura un poco más. Dilas tú con la mano en la garganta."
+    }
+  },
   "queObservar": [
     {
       "gl": "Busca a marca vermella e pousa de xeonllos, suave",

@@ -66,7 +66,14 @@
       "es": "Sin material: el cuerpo"
     }
   ],
-  "contraste": null,
+  "contraste": {
+    "a": "3_4.xuno.s1.row",
+    "b": "3_4.marzo.s4.low",
+    "nota": {
+      "gl": "A «r» de «row» non toca nada: a lingua vai cara atrás, sen vibrar. A «l» de «low» apoia a punta da lingua detrás dos dentes. Dilas ti amodo.",
+      "es": "La «r» de «row» no toca nada: la lengua va hacia atrás, sin vibrar. La «l» de «low» apoya la punta de la lengua detrás de los dientes. Dilas tú despacio."
+    }
+  },
   "queObservar": [
     {
       "gl": "Cruza as mans e bate coas do compañeiro",

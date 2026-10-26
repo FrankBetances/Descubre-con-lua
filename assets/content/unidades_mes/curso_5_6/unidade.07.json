@@ -91,7 +91,14 @@
       "es": "Tierra y semillas"
     }
   ],
-  "contraste": null,
+  "contraste": {
+    "a": "3_4.novembro.s4.pot",
+    "b": "4_5.novembro.s4.spot",
+    "nota": {
+      "gl": "«spot» empeza directamente coa «s», sen «e» diante; «pot» é a mesma palabra sen a «s». Dilas ti: «pot», «spot».",
+      "es": "«spot» empieza directamente con la «s», sin «e» delante; «pot» es la misma palabra sin la «s». Dilas tú: «pot», «spot»."
+    }
+  },
   "queObservar": [
     {
       "gl": "Fai os tres pasos sen axuda: encher, sementar e regar",

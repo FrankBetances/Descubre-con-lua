@@ -63,7 +63,14 @@
       "es": "Cinta elástica ancha forrada de terciopelo"
     }
   ],
-  "contraste": null,
+  "contraste": {
+    "a": "3_4.setembro.s3.hold",
+    "b": "3_4.maio.s4.old",
+    "nota": {
+      "gl": "A «h» de «hold» é só un alento suave, coma cando embazas un cristal, nada que ver coa «j» castelá; «old» empeza sen alento. Dilas ti, unha detrás da outra.",
+      "es": "La «h» de «hold» es solo un aliento suave, como cuando empañas un cristal, nada que ver con la «j»; «old» empieza sin aliento. Dilas tú, una detrás de otra."
+    }
+  },
   "queObservar": [
     {
       "gl": "Ponse de pé co resto ao tirar da cinta",
