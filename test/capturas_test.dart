@@ -24,7 +24,12 @@ import 'package:descubre_con_lua/features/juega/views/nota_para_casas_screen.dar
 import 'package:descubre_con_lua/features/juega/views/cancions_con_pulso_screen.dart';
 import 'package:descubre_con_lua/features/cuentos/views/microcuento_screen.dart';
 import 'package:descubre_con_lua/data/models/rexistro_frases_model.dart';
+import 'package:descubre_con_lua/data/models/normativa_model.dart';
+import 'package:descubre_con_lua/data/models/steam_do_mes_model.dart';
+import 'package:descubre_con_lua/data/models/xogos_fogar_model.dart';
 import 'package:descubre_con_lua/data/models/unidade_do_mes_model.dart';
+import 'package:descubre_con_lua/features/familias/widgets/reto_da_semana.dart';
+import 'package:descubre_con_lua/features/planificador/views/planificador_screen.dart';
 import 'package:descubre_con_lua/data/models/cancion_pulso_model.dart';
 import 'package:descubre_con_lua/features/academy/views/bloques_list_screen.dart';
 import 'package:descubre_con_lua/features/academy/views/capsula_detail_screen.dart';
@@ -331,6 +336,52 @@ void main() {
           agora: venres,
         ),
         tema: AppTheme.temaFamilias,
+      );
+    });
+
+    // F5: el reto de la semana de casa, entero (4-5, noviembre, semana 1).
+    testWidgets('na casa · reto da semana · $l', (tester) async {
+      await tester.runAsync(
+          () => Future.wait([XogosFogar.cargar(), SteamDoMes.cargar()]));
+      final u = UnidadeDoMes.fromJson(jsonDecode(
+          File('assets/content/unidades_mes/curso_4_5/unidade.03.json')
+              .readAsStringSync()) as Map<String, dynamic>);
+      await capturar(
+        tester,
+        'reto-semana-$l',
+        Scaffold(
+          backgroundColor: AppTheme.pageBg,
+          body: SafeArea(
+            child: ListView(
+              padding: const EdgeInsets.all(16),
+              children: [
+                RetoDaSemana(hogar: u.hogar!, semana: 1, language: lang),
+              ],
+            ),
+          ),
+        ),
+        tamano: const Size(412, 1500),
+        tema: AppTheme.temaFamilias,
+        antesDeRetratar: (t) async {
+          await t.tap(find.byKey(const Key('reto_recast')));
+        },
+      );
+    });
+
+    // M7.3: el Planificador, con el marco del curso arriba.
+    testWidgets('aula · planificador · $l', (tester) async {
+      // Las unidades y la normativa se leen de disco: con reloj de verdad,
+      // antes de montar la pantalla, o el indicador gira sin fin.
+      await tester.runAsync(() => Future.wait([
+            for (final m in [9, 10, 11, 12, 1, 2, 3, 4, 5, 6])
+              contenido.loadUnidadeDoMes('curso_0_2', m),
+            Normativa.cargar(),
+          ]));
+      await capturar(
+        tester,
+        'planificador-$l',
+        PlanificadorScreen(repository: contenido, initialLanguage: lang),
+        tamano: const Size(412, 1500),
       );
     });
 

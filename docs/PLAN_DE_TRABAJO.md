@@ -177,3 +177,10 @@ Comprobado contra la app el 20/10/2026 con `grep` sobre `lib/` y
 O1 (salvo M1.1), O3 (las 50 unidades, el registro y el núcleo en Hoy y en los
 calendarios), O4 (salvo M4.4) y O5 (salvo M5.6 y M5.8). El detalle y la
 evidencia de cada módulo están en `STATUS.md`.
+
+El 26/10/2026, en la rama `pedagogia`: F4 (contraste de sonido en 48 unidades
+y objetivos en el calendario), F5 (la casa guiada: 50 bloques `hogar`, guía
+estable y por edad, nota para las casas) y F6 salvo dos puntos: el contraste
+de la normativa con el DOG, que sigue inaccesible desde aquí, y los
+imprimibles de las unidades, que no existen en el repositorio y son pregunta
+para Frank. Detalle y evidencia en `STATUS.md`.
