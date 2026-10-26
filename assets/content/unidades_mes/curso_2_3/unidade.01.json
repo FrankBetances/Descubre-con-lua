@@ -63,7 +63,14 @@
       "es": "Cinta elástica ancha forrada de terciopelo"
     }
   ],
-  "contraste": null,
+  "contraste": {
+    "a": "3_4.setembro.s3.hold",
+    "b": "3_4.maio.s4.old",
+    "nota": {
+      "gl": "A «h» de «hold» é só un alento suave, coma cando embazas un cristal, nada que ver coa «j» castelá; «old» empeza sen alento. Dilas ti, unha detrás da outra.",
+      "es": "La «h» de «hold» es solo un aliento suave, como cuando empañas un cristal, nada que ver con la «j»; «old» empieza sin aliento. Dilas tú, una detrás de otra."
+    }
+  },
   "queObservar": [
     {
       "gl": "Ponse de pé co resto ao tirar da cinta",
@@ -79,7 +86,202 @@
     }
   ],
   "reactivar": [],
-  "hogar": null,
+  "hogar": {
+    "momento": {
+      "gl": "No baño, coa bañeira ou o lavabo",
+      "es": "En el baño, con la bañera o el lavabo"
+    },
+    "minutos": 8,
+    "escena": {
+      "gl": "Un vaso de plástico e unha esponxa",
+      "es": "Un vaso de plástico y una esponja"
+    },
+    "retosCasa": [
+      {
+        "id": "reto.curso_2_3.09.1",
+        "semana": 1,
+        "fase": "descubrir",
+        "nomeFase": {
+          "gl": "Descubrir",
+          "es": "Descubrir"
+        },
+        "frase": {
+          "en": "Water",
+          "gl": "auga",
+          "es": "agua"
+        },
+        "queFacer": {
+          "gl": "Dio ti mentres o fas, cara a cara e á súa altura: «Water». Só ten que escoitar e mirar.",
+          "es": "Dilo tú mientras lo haces, cara a cara y a su altura: «Water». Solo tiene que escuchar y mirar."
+        },
+        "mans": {
+          "gl": "Sinala ou colle o que nomeas: auga.",
+          "es": "Señala o coge lo que nombras: agua."
+        },
+        "esperaSegundos": 5,
+        "nonPedir": {
+          "gl": "Non hai que dicilo: abonda con que o faga co corpo ou colla o obxecto.",
+          "es": "No hay que decirlo: basta con que lo haga con el cuerpo o coja el objeto."
+        },
+        "recast": {
+          "silencio": {
+            "gl": "Fai ti o xesto e volve dicir «Water» amodo, sorrindo, e segue co xogo.",
+            "es": "Haz tú el gesto y vuelve a decir «Water» despacio, sonriendo, y sigue con el juego."
+          },
+          "linguaCasa": {
+            "gl": "Acolle o que di na lingua da casa, asente e devólvello en inglés: «Water».",
+            "es": "Acoge lo que dice en la lengua de casa, asiente y devuélveselo en inglés: «Water»."
+          },
+          "unhaPalabra": {
+            "gl": "Celébrao e engade o que falta: «Yes! Water».",
+            "es": "Celébralo y añade lo que falta: «Yes! Water»."
+          }
+        }
+      },
+      {
+        "id": "reto.curso_2_3.09.2",
+        "semana": 2,
+        "fase": "practicar",
+        "nomeFase": {
+          "gl": "Practicar",
+          "es": "Practicar"
+        },
+        "frase": {
+          "en": "Splash!"
+        },
+        "queFacer": {
+          "gl": "Di «Splash!» e fai o xesto á vez. Agarda e, se o fai, facédeo xuntos outra vez.",
+          "es": "Di «Splash!» y haz el gesto a la vez. Espera y, si lo hace, hacedlo juntos otra vez."
+        },
+        "mans": {
+          "gl": "Bater na auga coas mans abertas.",
+          "es": "Chapotear en el agua con las manos abiertas."
+        },
+        "esperaSegundos": 5,
+        "nonPedir": {
+          "gl": "Non hai que dicilo: abonda con que o faga co corpo ou colla o obxecto.",
+          "es": "No hay que decirlo: basta con que lo haga con el cuerpo o coja el objeto."
+        },
+        "recast": {
+          "silencio": {
+            "gl": "Fai ti o xesto e volve dicir «Splash!» amodo, sorrindo, e segue co xogo.",
+            "es": "Haz tú el gesto y vuelve a decir «Splash!» despacio, sonriendo, y sigue con el juego."
+          },
+          "linguaCasa": {
+            "gl": "Acolle o que di na lingua da casa, asente e devólvello en inglés: «Splash!».",
+            "es": "Acoge lo que dice en la lengua de casa, asiente y devuélveselo en inglés: «Splash!»."
+          },
+          "unhaPalabra": {
+            "gl": "Celébrao e engade o que falta: «Yes! Splash!».",
+            "es": "Celébralo y añade lo que falta: «Yes! Splash!»."
+          }
+        }
+      },
+      {
+        "id": "reto.curso_2_3.09.3",
+        "semana": 3,
+        "fase": "combinar",
+        "nomeFase": {
+          "gl": "Combinar",
+          "es": "Combinar"
+        },
+        "frase": {
+          "en": "Mmm, look! Water! Cold water!",
+          "gl": "Mmm, mira! Auga! Auga fría!",
+          "es": "Mmm, ¡mira! ¡Agua! ¡Agua fría!"
+        },
+        "queFacer": {
+          "gl": "Xunta a frase desta semana coa da semana pasada nun xogo curto: «Mmm, look! Water! Cold water!» e, despois, «Splash!».",
+          "es": "Junta la frase de esta semana con la de la semana pasada en un juego corto: «Mmm, look! Water! Cold water!» y, después, «Splash!»."
+        },
+        "mans": {
+          "gl": "Ten na man aquilo do que falas e ensínallo mentres o dis.",
+          "es": "Ten en la mano aquello de lo que hablas y enséñaselo mientras lo dices."
+        },
+        "esperaSegundos": 5,
+        "nonPedir": {
+          "gl": "Non hai que dicilo: abonda con que o faga co corpo ou colla o obxecto.",
+          "es": "No hay que decirlo: basta con que lo haga con el cuerpo o coja el objeto."
+        },
+        "recast": {
+          "silencio": {
+            "gl": "Fai ti o xesto e volve dicir «Mmm, look! Water! Cold water!» amodo, sorrindo, e segue co xogo.",
+            "es": "Haz tú el gesto y vuelve a decir «Mmm, look! Water! Cold water!» despacio, sonriendo, y sigue con el juego."
+          },
+          "linguaCasa": {
+            "gl": "Acolle o que di na lingua da casa, asente e devólvello en inglés: «Mmm, look! Water! Cold water!».",
+            "es": "Acoge lo que dice en la lengua de casa, asiente y devuélveselo en inglés: «Mmm, look! Water! Cold water!»."
+          },
+          "unhaPalabra": {
+            "gl": "Celébrao e engade o que falta: «Yes! Mmm, look! Water! Cold water!».",
+            "es": "Celébralo y añade lo que falta: «Yes! Mmm, look! Water! Cold water!»."
+          }
+        }
+      },
+      {
+        "id": "reto.curso_2_3.09.4",
+        "semana": 4,
+        "fase": "consolidar",
+        "nomeFase": {
+          "gl": "Consolidar",
+          "es": "Consolidar"
+        },
+        "frase": {
+          "en": "Splash, splash, splash in the water! And... stop!",
+          "gl": "Chap, chap, chap na auga! E... para!",
+          "es": "¡Chap, chap, chap en el agua! Y... ¡para!"
+        },
+        "queFacer": {
+          "gl": "Di o comezo, «Splash, splash, splash in the water! And...…», e deixa o oco. Se o completa co corpo ou cunha palabra, celébrao e di a frase enteira.",
+          "es": "Di el comienzo, «Splash, splash, splash in the water! And...…», y deja el hueco. Si lo completa con el cuerpo o con una palabra, celébralo y di la frase entera."
+        },
+        "mans": {
+          "gl": "Ten na man aquilo do que falas e ensínallo mentres o dis.",
+          "es": "Ten en la mano aquello de lo que hablas y enséñaselo mientras lo dices."
+        },
+        "esperaSegundos": 5,
+        "nonPedir": {
+          "gl": "Non hai que dicilo: abonda con que o faga co corpo ou colla o obxecto.",
+          "es": "No hay que decirlo: basta con que lo haga con el cuerpo o coja el objeto."
+        },
+        "recast": {
+          "silencio": {
+            "gl": "Fai ti o xesto e volve dicir «Splash, splash, splash in the water! And... stop!» amodo, sorrindo, e segue co xogo.",
+            "es": "Haz tú el gesto y vuelve a decir «Splash, splash, splash in the water! And... stop!» despacio, sonriendo, y sigue con el juego."
+          },
+          "linguaCasa": {
+            "gl": "Acolle o que di na lingua da casa, asente e devólvello en inglés: «Splash, splash, splash in the water! And... stop!».",
+            "es": "Acoge lo que dice en la lengua de casa, asiente y devuélveselo en inglés: «Splash, splash, splash in the water! And... stop!»."
+          },
+          "unhaPalabra": {
+            "gl": "Celébrao e engade o que falta: «Yes! Splash, splash, splash in the water! And... stop!».",
+            "es": "Celébralo y añade lo que falta: «Yes! Splash, splash, splash in the water! And... stop!»."
+          }
+        }
+      }
+    ],
+    "lecturaCasa": {
+      "microcuento": "microcuento.curso_2_3.01"
+    },
+    "juegoCasa": {
+      "xogo": "xogo_02_barco_samil"
+    },
+    "queObservarCasa": [
+      {
+        "gl": "Fai o xesto cando oe «Water»",
+        "es": "Hace el gesto cuando oye «Water»"
+      },
+      {
+        "gl": "Colle ou sinala o obxecto",
+        "es": "Coge o señala el objeto"
+      },
+      {
+        "gl": "Anticipa o momento: xa sabe que vén o inglés",
+        "es": "Anticipa el momento: ya sabe que llega el inglés"
+      }
+    ],
+    "reactivarCasa": null
+  },
   "microcuento": {
     "id": "microcuento.curso_2_3.01",
     "titulo": {
@@ -323,5 +525,6 @@
         }
       }
     ]
-  }
+  },
+  "criterio": "normativa.curso_2_3"
 }

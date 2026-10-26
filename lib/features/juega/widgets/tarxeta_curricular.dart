@@ -6,6 +6,7 @@ import '../../../core/localization/app_language.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../core/navigation/ruta_lua.dart';
 import '../../../data/models/conto_dialogado_model.dart';
+import '../../../data/models/normativa_model.dart';
 import '../../../data/models/steam_do_mes_model.dart';
 import '../../../data/models/unidade_curricular_model.dart';
 import '../../cuentos/views/contos_dialogados_screen.dart';
@@ -48,6 +49,9 @@ class _TarxetaCurricularState extends State<TarxetaCurricular> {
           .then<BibliotecaDialogada?>((b) => b)
           .catchError((Object _) => null);
   // Sin catchError: en un SynchronousFuture no completa nunca.
+  late final Future<Normativa?> _normativa = widget.enCasa
+      ? Future<Normativa?>.value(null)
+      : Normativa.cargar().then<Normativa?>((n) => n, onError: (_) => null);
   late final Future<SteamDoMes?> _steam =
       SteamDoMes.cargar().then<SteamDoMes?>((s) => s, onError: (_) => null);
 
@@ -119,6 +123,38 @@ class _TarxetaCurricularState extends State<TarxetaCurricular> {
                     _Rotulo(isGl ? 'Obxectivos' : 'Objetivos'),
                     for (final o in u.objetivos) _Texto('· ${o.resolve(lang)}'),
                   ],
+                  // F6 (P6): en el aula, el área y el criterio del curso, del
+                  // texto de Frank y pendientes de contrastar con el DOG.
+                  if (!widget.enCasa)
+                    FutureBuilder<Normativa?>(
+                      future: _normativa,
+                      builder: (context, snap) {
+                        final n = snap.data;
+                        final c = n?.cursos[widget.cursoId];
+                        if (n == null || c == null) {
+                          return const SizedBox.shrink();
+                        }
+                        return Column(
+                          key: const ValueKey('tarxeta_criterio'),
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            _Rotulo(
+                                isGl ? 'Área e criterio' : 'Área y criterio'),
+                            _Texto('${n.area.resolve(lang)}. ${c.obx}'
+                                '${c.codigo == null ? '' : ' · ${c.codigo}'}: '
+                                '${c.criterio.resolve(lang)}'),
+                            Text(
+                              n.aviso.resolve(lang),
+                              style: const TextStyle(
+                                fontSize: 14,
+                                fontStyle: FontStyle.italic,
+                                color: AppTheme.textSecondary,
+                              ),
+                            ),
+                          ],
+                        );
+                      },
+                    ),
                   if (u.vocabulario.isNotEmpty) ...[
                     _Rotulo(isGl
                         ? 'Vocabulario diana (dous toques: o significado)'

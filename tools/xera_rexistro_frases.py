@@ -48,6 +48,8 @@ PROPIAS = CONTENIDO / "registro" / "frases_propias.json"
 LUA = CONTENIDO / "registro" / "frases_lua.json"
 SAIDA = CONTENIDO / "registro" / "frases.json"
 INVENTARIO = ROOT / "referencias" / "inventario_frases_ingles.md"
+SIGNIFICADOS = json.loads((ROOT / "assets" / "content" / "significados" /
+                           "significados.json").read_text(encoding="utf-8"))["significados"]
 
 
 def norm(texto: str) -> str:
@@ -124,6 +126,47 @@ def candidatas() -> list[dict]:
             "fonte": "calendario/atencion.json",
         })
 
+    # M7.2: el STEAM de cada mes (F8), las láminas del banco y la frase del mes
+    # que aún enseñan los dos calendarios. Las láminas llevan su gesto; el STEAM
+    # del mes y la frase del calendario no traen gesto, sino lo que quieren
+    # decir, y entran como «significado».
+    for e in ler(CONTENIDO / "steam" / "steam_do_mes.json")["experimentos"]:
+        for i, orde in enumerate(e.get("ordes") or []):
+            saida.append({
+                "id": f"frase.steam_mes.{e['id']}.{i + 1:02d}",
+                "tipo": "steam_mes",
+                "en": orde.get("en", ""),
+                "significado": {k: orde.get(k, "") for k in ("gl", "es")},
+                "fonte": "steam/steam_do_mes.json",
+            })
+
+    for lamina in ler(CONTENIDO / "laminas" / "banco200_laminas.json"):
+        accion = lamina.get("tprAccion") or {}
+        saida.append({
+            "id": f"frase.lamina.{lamina['id']}",
+            "tipo": "lamina",
+            "en": lamina["en"].split("·")[-1].strip(),
+            "accion": {k: accion.get(k, "") for k in ("gl", "es")},
+            "fonte": "laminas/banco200_laminas.json",
+        })
+        saida.append({
+            "id": f"frase.lamina.{lamina['id']}.orde",
+            "tipo": "lamina",
+            "en": accion.get("en", ""),
+            "accion": {k: accion.get(k, "") for k in ("gl", "es")},
+            "fonte": "laminas/banco200_laminas.json",
+        })
+
+    for mes in ler(CONTENIDO / "calendario" / "curriculo_50_meses.json"):
+        frase = (mes.get("ingles") or {}).get("frase", "")
+        saida.append({
+            "id": f"frase.calendario.{mes.get('id') or mes['cursoId'] + '.' + str(mes['mesNumero'])}",
+            "tipo": "calendario",
+            "en": frase,
+            "significado": SIGNIFICADOS.get(frase) or {},
+            "fonte": "calendario/curriculo_50_meses.json",
+        })
+
     return saida
 
 
@@ -132,18 +175,15 @@ def pendentes() -> list[tuple[str, int, str]]:
     calendario = ler(CONTENIDO / "calendario" / "curriculo_50_meses.json")
     contos = ler(CONTENIDO / "cuentos" / "banco100_cuentos.json")
     historias = ler(CONTENIDO / "cuentos" / "historias_progresivas.json")
-    laminas = ler(CONTENIDO / "laminas" / "banco200_laminas.json")
     return [
-        ("calendario/curriculo_50_meses.json (léxico, órdenes y frase del mes)",
-         sum(len(m["ingles"]["lexico"]) + len(m["ingles"]["tpr"]) + 1
+        ("calendario/curriculo_50_meses.json (léxico y órdenes)",
+         sum(len(m["ingles"]["lexico"]) + len(m["ingles"]["tpr"])
              for m in calendario),
-         "Desde M3.9 el calendario lee la unidad; lo lee aún el Planificador, "
-         "hasta M7.3"),
+         "Ya no lo pinta ninguna pantalla: el calendario lee la unidad (M3.9) y "
+         "el Planificador también (M7.3). Su frase del mes sí entra"),
         ("cuentos: frase TPR de los cuentos y de las historias",
          len(contos) + len(historias),
          "M5: el cuento de la semana conserva su frase; el microcuento cita el registro"),
-        ("laminas/banco200_laminas.json (palabra y acción)", 2 * len(laminas),
-         "M7.2: las láminas pasan a citar el registro"),
     ]
 
 
@@ -179,10 +219,11 @@ def construir() -> tuple[dict, list[str], str]:
         if frase["id"] in vistos:
             fallos.append(f"{frase['id']}: id repetido")
         vistos.add(frase["id"])
-        accion = frase.get("accion") or {}
+        # Lo que no trae gesto trae lo que quiere decir: una de las dos.
+        accion = frase.get("accion") or frase.get("significado") or {}
         for lingua in ("gl", "es"):
             if not str(accion.get(lingua, "")).strip():
-                fallos.append(f"{frase['id']}: sin acción en {lingua}")
+                fallos.append(f"{frase['id']}: sin acción ni significado en {lingua}")
         if frase.get("tipo") == "lua" and not str(
                 frase.get("fonte", "")).startswith("unidades_mes/"):
             fallos.append(f"{frase['id']}: una frase de Lúa dice de qué "

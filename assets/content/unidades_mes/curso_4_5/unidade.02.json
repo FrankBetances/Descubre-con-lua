@@ -83,7 +83,14 @@
       "es": "Castañas"
     }
   ],
-  "contraste": null,
+  "contraste": {
+    "a": "3_4.outubro.s2.hair",
+    "b": "0_2.maio.s4.air",
+    "nota": {
+      "gl": "A «h» de «hair» é só un alento suave, coma cando embazas un cristal, nada que ver coa «j» castelá; «air» empeza sen alento. Dilas ti, unha detrás da outra.",
+      "es": "La «h» de «hair» es solo un aliento suave, como cuando empañas un cristal, nada que ver con la «j»; «air» empieza sin aliento. Dilas tú, una detrás de otra."
+    }
+  },
   "queObservar": [
     {
       "gl": "Salta curto cos pés xuntos e recolle as castañas",
@@ -97,7 +104,210 @@
   "reactivar": [
     "3_4.outubro.s1.freeze"
   ],
-  "hogar": null,
+  "hogar": {
+    "momento": {
+      "gl": "No xogo cos peluches, antes do baño",
+      "es": "En el juego con los peluches, antes del baño"
+    },
+    "minutos": 8,
+    "escena": {
+      "gl": "Un peluche e unha venda ou un pano",
+      "es": "Un peluche y una venda o un pañuelo"
+    },
+    "retosCasa": [
+      {
+        "id": "reto.curso_4_5.10.1",
+        "semana": 1,
+        "fase": "descubrir",
+        "nomeFase": {
+          "gl": "Descubrir",
+          "es": "Descubrir"
+        },
+        "frase": {
+          "en": "hurt",
+          "gl": "doer, facer dano",
+          "es": "doler, hacer daño"
+        },
+        "queFacer": {
+          "gl": "Dio ti mentres o fas, cara a cara e á súa altura: «hurt». Só ten que escoitar e mirar.",
+          "es": "Dilo tú mientras lo haces, cara a cara y a su altura: «hurt». Solo tiene que escuchar y mirar."
+        },
+        "mans": {
+          "gl": "Sinala ou colle o que nomeas: doer, facer dano.",
+          "es": "Señala o coge lo que nombras: doler, hacer daño."
+        },
+        "esperaSegundos": 5,
+        "nonPedir": {
+          "gl": "Non é unha proba: se responde na lingua da casa, tamén vale, e o xogo segue.",
+          "es": "No es una prueba: si responde en la lengua de casa, también vale, y el juego sigue."
+        },
+        "recast": {
+          "silencio": {
+            "gl": "Fai ti o xesto e volve dicir «hurt» amodo, sorrindo, e segue co xogo.",
+            "es": "Haz tú el gesto y vuelve a decir «hurt» despacio, sonriendo, y sigue con el juego."
+          },
+          "linguaCasa": {
+            "gl": "Acolle o que di na lingua da casa, asente e devólvello en inglés: «hurt».",
+            "es": "Acoge lo que dice en la lengua de casa, asiente y devuélveselo en inglés: «hurt»."
+          },
+          "unhaPalabra": {
+            "gl": "Celébrao e engade o que falta: «Yes! hurt».",
+            "es": "Celébralo y añade lo que falta: «Yes! hurt»."
+          }
+        }
+      },
+      {
+        "id": "reto.curso_4_5.10.2",
+        "semana": 2,
+        "fase": "practicar",
+        "nomeFase": {
+          "gl": "Practicar",
+          "es": "Practicar"
+        },
+        "frase": {
+          "en": "Where does it hurt?",
+          "gl": "Onde che doe?",
+          "es": "¿Dónde te duele?"
+        },
+        "queFacer": {
+          "gl": "Di «Where does it hurt?» e fai o xesto á vez. Agarda e, se o fai, facédeo xuntos outra vez.",
+          "es": "Di «Where does it hurt?» y haz el gesto a la vez. Espera y, si lo hace, hacedlo juntos otra vez."
+        },
+        "mans": {
+          "gl": "Acompáñaa dun xesto claro: dar, recibir ou sinalar a quen lle toca.",
+          "es": "Acompáñala de un gesto claro: dar, recibir o señalar a quien le toca."
+        },
+        "esperaSegundos": 5,
+        "nonPedir": {
+          "gl": "Non é unha proba: se responde na lingua da casa, tamén vale, e o xogo segue.",
+          "es": "No es una prueba: si responde en la lengua de casa, también vale, y el juego sigue."
+        },
+        "recast": {
+          "silencio": {
+            "gl": "Fai ti o xesto e volve dicir «Where does it hurt?» amodo, sorrindo, e segue co xogo.",
+            "es": "Haz tú el gesto y vuelve a decir «Where does it hurt?» despacio, sonriendo, y sigue con el juego."
+          },
+          "linguaCasa": {
+            "gl": "Acolle o que di na lingua da casa, asente e devólvello en inglés: «Where does it hurt?».",
+            "es": "Acoge lo que dice en la lengua de casa, asiente y devuélveselo en inglés: «Where does it hurt?»."
+          },
+          "unhaPalabra": {
+            "gl": "Celébrao e engade o que falta: «Yes! Where does it hurt?».",
+            "es": "Celébralo y añade lo que falta: «Yes! Where does it hurt?»."
+          }
+        }
+      },
+      {
+        "id": "reto.curso_4_5.10.3",
+        "semana": 3,
+        "fase": "combinar",
+        "nomeFase": {
+          "gl": "Combinar",
+          "es": "Combinar"
+        },
+        "frase": {
+          "en": "Yes! His paw is hurt because he fell down. Let's put a soft bandage on it.",
+          "gl": "Si! Dóelle a pata porque caeu. Poñámoslle unha venda suave.",
+          "es": "¡Sí! Le duele la pata porque se cayó. Vamos a ponerle una venda suave."
+        },
+        "queFacer": {
+          "gl": "Xunta a frase desta semana coa da semana pasada nun xogo curto: «Yes! His paw is hurt because he fell down. Let's put a soft bandage on it.» e, despois, «Where does it hurt?».",
+          "es": "Junta la frase de esta semana con la de la semana pasada en un juego corto: «Yes! His paw is hurt because he fell down. Let's put a soft bandage on it.» y, después, «Where does it hurt?»."
+        },
+        "mans": {
+          "gl": "Ten na man aquilo do que falas e ensínallo mentres o dis.",
+          "es": "Ten en la mano aquello de lo que hablas y enséñaselo mientras lo dices."
+        },
+        "esperaSegundos": 5,
+        "nonPedir": {
+          "gl": "Non é unha proba: se responde na lingua da casa, tamén vale, e o xogo segue.",
+          "es": "No es una prueba: si responde en la lengua de casa, también vale, y el juego sigue."
+        },
+        "recast": {
+          "silencio": {
+            "gl": "Fai ti o xesto e volve dicir «Yes! His paw is hurt because he fell down. Let's put a soft bandage on it.» amodo, sorrindo, e segue co xogo.",
+            "es": "Haz tú el gesto y vuelve a decir «Yes! His paw is hurt because he fell down. Let's put a soft bandage on it.» despacio, sonriendo, y sigue con el juego."
+          },
+          "linguaCasa": {
+            "gl": "Acolle o que di na lingua da casa, asente e devólvello en inglés: «Yes! His paw is hurt because he fell down. Let's put a soft bandage on it.».",
+            "es": "Acoge lo que dice en la lengua de casa, asiente y devuélveselo en inglés: «Yes! His paw is hurt because he fell down. Let's put a soft bandage on it.»."
+          },
+          "unhaPalabra": {
+            "gl": "Celébrao e engade o que falta: «Yes! Yes! His paw is hurt because he fell down. Let's put a soft bandage on it.».",
+            "es": "Celébralo y añade lo que falta: «Yes! Yes! His paw is hurt because he fell down. Let's put a soft bandage on it.»."
+          }
+        }
+      },
+      {
+        "id": "reto.curso_4_5.10.4",
+        "semana": 4,
+        "fase": "consolidar",
+        "nomeFase": {
+          "gl": "Consolidar",
+          "es": "Consolidar"
+        },
+        "frase": {
+          "en": "The little kitten is scared of the doctor.",
+          "gl": "O gatiño ten medo do doutor.",
+          "es": "El gatito tiene miedo del doctor."
+        },
+        "queFacer": {
+          "gl": "Di o comezo, «The little kitten is scared of the…», e deixa o oco. Se o completa co corpo ou cunha palabra, celébrao e di a frase enteira.",
+          "es": "Di el comienzo, «The little kitten is scared of the…», y deja el hueco. Si lo completa con el cuerpo o con una palabra, celébralo y di la frase entera."
+        },
+        "mans": {
+          "gl": "Ten na man aquilo do que falas e ensínallo mentres o dis.",
+          "es": "Ten en la mano aquello de lo que hablas y enséñaselo mientras lo dices."
+        },
+        "esperaSegundos": 5,
+        "nonPedir": {
+          "gl": "Non é unha proba: se responde na lingua da casa, tamén vale, e o xogo segue.",
+          "es": "No es una prueba: si responde en la lengua de casa, también vale, y el juego sigue."
+        },
+        "recast": {
+          "silencio": {
+            "gl": "Fai ti o xesto e volve dicir «The little kitten is scared of the doctor.» amodo, sorrindo, e segue co xogo.",
+            "es": "Haz tú el gesto y vuelve a decir «The little kitten is scared of the doctor.» despacio, sonriendo, y sigue con el juego."
+          },
+          "linguaCasa": {
+            "gl": "Acolle o que di na lingua da casa, asente e devólvello en inglés: «The little kitten is scared of the doctor.».",
+            "es": "Acoge lo que dice en la lengua de casa, asiente y devuélveselo en inglés: «The little kitten is scared of the doctor.»."
+          },
+          "unhaPalabra": {
+            "gl": "Celébrao e engade o que falta: «Yes! The little kitten is scared of the doctor.».",
+            "es": "Celébralo y añade lo que falta: «Yes! The little kitten is scared of the doctor.»."
+          }
+        }
+      }
+    ],
+    "lecturaCasa": {
+      "microcuento": "microcuento.curso_4_5.02"
+    },
+    "juegoCasa": {
+      "xogo": "xogo_05_espello_corpo"
+    },
+    "queObservarCasa": [
+      {
+        "gl": "Completa a frase co corpo ou cunha palabra",
+        "es": "Completa la frase con el cuerpo o con una palabra"
+      },
+      {
+        "gl": "Usa a frase noutro xogo, sen que llo propoñas",
+        "es": "Usa la frase en otro juego, sin que se lo propongas"
+      },
+      {
+        "gl": "Conta o que pasa mesturando linguas",
+        "es": "Cuenta lo que pasa mezclando lenguas"
+      }
+    ],
+    "reactivarCasa": {
+      "en": "dog",
+      "texto": {
+        "gl": "Noutro momento do día, sen avisar, volve dicir «dog», a palabra do mes pasado, sinalándoa.",
+        "es": "En otro momento del día, sin avisar, vuelve a decir «dog», la palabra del mes pasado, señalándola."
+      }
+    }
+  },
   "microcuento": {
     "id": "microcuento.curso_4_5.02",
     "titulo": {
@@ -419,5 +629,6 @@
         }
       }
     ]
-  }
+  },
+  "criterio": "normativa.curso_4_5"
 }

@@ -30,6 +30,7 @@ import '../../../data/repositories/calendario_repository.dart';
 import '../widgets/temporizador_sutil_widget.dart';
 import '../../../core/navigation/ruta_lua.dart';
 import '../../../core/widgets/cabecera.dart';
+import '../../juega/widgets/tarxeta_curricular.dart';
 
 /// Contrato de callback para o lanzamento a un toque da sesión
 typedef IniciarSesionCallback = void Function(
@@ -1094,7 +1095,7 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
             // En el trayecto, el mes es su unidad: el núcleo va primero. El
             // objetivo y las actividades de `curriculo_50_meses.json` ya no se
             // pintan, porque contaban otro tema que el de la asamblea.
-            if (mes.unidade case final unidade?)
+            if (mes.unidade case final unidade?) ...[
               NucleoDoMes(
                 unidade: unidade,
                 nucleo: widget.repository?.nucleoSync(unidade) ?? const [],
@@ -1110,11 +1111,22 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
                   final e? => widget.repository?.pezaSync(e.ref),
                   null => null,
                 },
+                contraste: widget.repository?.contrasteSync(unidade),
                 language: _language,
                 audioService: widget.audioService,
                 enCasa: !_esDocente,
-              )
-            else
+              ),
+              // F4: los objetivos del mes, del plan curricular de la unidad.
+              const SizedBox(height: AppTheme.spaceMd),
+              TarxetaCurricular(
+                cursoId: unidade.curso,
+                mesCalendario: unidade.mesCalendario,
+                language: _language,
+                audioService: widget.audioService,
+                enCasa: !_esDocente,
+                conAccesos: false,
+              ),
+            ] else
               Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [

@@ -27,6 +27,10 @@ class NucleoDoMes extends StatelessWidget {
   final List<PezaDaUnidade> formulas;
   final List<PezaDaUnidade> descriptivas;
   final PezaDaUnidade? estructura;
+
+  /// El contraste de sonido del mes (F4), ya resuelto: las dos palabras, una
+  /// detrás de otra, para el oído de la adulta. Va en el aula y en casa.
+  final (PezaDaUnidade, PezaDaUnidade)? contraste;
   final AppLanguage language;
   final OfflineAudioService? audioService;
 
@@ -41,6 +45,7 @@ class NucleoDoMes extends StatelessWidget {
     this.formulas = const [],
     this.descriptivas = const [],
     this.estructura,
+    this.contraste,
     required this.language,
     required this.audioService,
     this.enCasa = false,
@@ -123,6 +128,14 @@ class NucleoDoMes extends StatelessWidget {
                 Text(unidade.estructura!.nota.resolve(language),
                     style: lectura),
             ],
+        if (contraste case (final a, final b))
+          ContrasteDoMes(
+            nota: unidade.contraste!.nota,
+            a: a,
+            b: b,
+            language: language,
+            audioService: audioService,
+          ),
         if (cancion != null && cancion.trim().isNotEmpty) ...[
           const SizedBox(height: 4),
           _Linea(rotulo: _cancion.resolve(language), texto: cancion),
@@ -150,6 +163,78 @@ class NucleoDoMes extends StatelessWidget {
             ),
         ],
       ],
+    );
+  }
+}
+
+/// El contraste de sonido del mes: las dos palabras con su voz, una al lado
+/// de la otra, y cómo decirlas. Es para el oído de la adulta, no un ejercicio
+/// para la criatura. Va en el calendario y en la tarjeta del mes del aula.
+class ContrasteDoMes extends StatelessWidget {
+  final LocalizedString nota;
+  final PezaDaUnidade a;
+  final PezaDaUnidade b;
+  final AppLanguage language;
+  final OfflineAudioService? audioService;
+
+  const ContrasteDoMes({
+    super.key,
+    required this.nota,
+    required this.a,
+    required this.b,
+    required this.language,
+    required this.audioService,
+  });
+
+  static const _rotulo =
+      LocalizedString(gl: 'ESCOITA A DIFERENZA', es: 'ESCUCHA LA DIFERENCIA');
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      key: const Key('contraste_do_mes'),
+      padding: const EdgeInsets.symmetric(vertical: AppTheme.spaceSm),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(
+            _rotulo.resolve(language),
+            style: Theme.of(context).textTheme.labelSmall?.copyWith(
+                  color: context.acento,
+                  fontWeight: FontWeight.w800,
+                  letterSpacing: 1.0,
+                ),
+          ),
+          const SizedBox(height: 4),
+          Wrap(
+            spacing: 8,
+            runSpacing: 8,
+            children: [
+              for (final peza in [a, b])
+                BotonEscuchar(
+                  audioService: audioService,
+                  texto: peza.en,
+                  language: AppLanguage.en,
+                  interfaz: language,
+                  style: estiloIngles(peza.en),
+                  comoChip: true,
+                  colorChip: context.acento,
+                  descripcion: peza.en,
+                  significado: peza.significado,
+                ),
+            ],
+          ),
+          const SizedBox(height: 4),
+          Text(
+            nota.resolve(language),
+            style: const TextStyle(
+              fontSize: 14,
+              color: AppTheme.textSecondary,
+              height: 1.35,
+            ),
+          ),
+        ],
+      ),
     );
   }
 }

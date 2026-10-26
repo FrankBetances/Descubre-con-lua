@@ -1,0 +1,21 @@
+{
+  "_doc": "M7.2: unha liña de espera e recast para as frases inglesas das dinámicas, da ciencia (STEAM), das láminas e dos xogos de casa. Son as ferramentas do apartado 7 da arquitectura, ditas para cada tipo de actividade. Non se crean actividades novas.",
+  "pautas": {
+    "dinamica": {
+      "espera": {"gl": "Di a orde unha vez, co xesto, e cala de 3 a 5 segundos: quen non a fai mira a quen si.", "es": "Di la orden una vez, con el gesto, y calla de 3 a 5 segundos: quien no la hace mira a quien sí."},
+      "recast": {"gl": "Se alguén responde na lingua da casa, asente e devólvelle a orde en inglés mentres a fas.", "es": "Si alguien responde en la lengua de casa, asiente y devuélvele la orden en inglés mientras la haces."}
+    },
+    "steam": {
+      "espera": {"gl": "Di a frase mentres o fas e agarda a que miren o que pasa: o experimento é a resposta.", "es": "Di la frase mientras lo haces y espera a que miren lo que pasa: el experimento es la respuesta."},
+      "recast": {"gl": "Se contan o que pasa na lingua da casa, acólleo e devólvello nunha frase curta en inglés.", "es": "Si cuentan lo que pasa en la lengua de casa, acógelo y devuélveselo en una frase corta en inglés."}
+    },
+    "lamina": {
+      "espera": {"gl": "Sinala a lámina, di a palabra e agarda uns segundos con ela á vista.", "es": "Señala la lámina, di la palabra y espera unos segundos con ella a la vista."},
+      "recast": {"gl": "Se a nomea na lingua da casa, asente e devólvella en inglés, sinalando outra vez.", "es": "Si la nombra en la lengua de casa, asiente y devuélvesela en inglés, señalando otra vez."}
+    },
+    "xogo": {
+      "espera": {"gl": "Di a frase unha vez e agarda: se o fai co corpo, xa respondeu.", "es": "Di la frase una vez y espera: si lo hace con el cuerpo, ya ha respondido."},
+      "recast": {"gl": "Se responde na lingua da casa, acólleo e devólvelle a frase en inglés, sen corrixir.", "es": "Si responde en la lengua de casa, acógelo y devuélvele la frase en inglés, sin corregir."}
+    }
+  }
+}

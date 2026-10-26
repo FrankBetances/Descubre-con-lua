@@ -30,6 +30,8 @@ import '../../docentes/nomes_docentes.dart';
 /// El motor es `FsrsService`: los pesos por defecto son los de FSRS-4 y la
 /// curva de olvido, la de 4.5. Por eso la pantalla no pone número de versión.
 class FsrsTrainerScreen extends StatefulWidget {
+  /// El núcleo del mes arriba (M7.1), para el curso elegido y el mes.
+  final Widget Function(String cursoId)? nucleoDo;
   final ProgramaTpr? programa;
 
   /// Dónde se guardan las tarjetas. Por defecto, el fichero de la app.
@@ -46,6 +48,7 @@ class FsrsTrainerScreen extends StatefulWidget {
 
   const FsrsTrainerScreen({
     super.key,
+    this.nucleoDo,
     required this.programa,
     this.progreso,
     this.cursoInicial = 'curso_0_2',
@@ -239,6 +242,7 @@ class _FsrsTrainerScreenState extends State<FsrsTrainerScreen> {
                 key: const Key('fsrs_lista'),
                 padding: const EdgeInsets.all(16),
                 children: [
+                  if (widget.nucleoDo case final n?) n(_curso),
                   SelectorDeCursoTpr(
                     programa: programa,
                     seleccionado: _curso,

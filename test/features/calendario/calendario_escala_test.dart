@@ -148,6 +148,9 @@ void main() {
           )));
           await tester.pumpAndSettle();
           expect(find.byKey(const Key('nucleo_do_mes')), findsOneWidget);
+          // F4: desde 2-3 o mes trae o seu contraste de son.
+          expect(find.byKey(const Key('contraste_do_mes'), skipOffstage: false),
+              curso == 'curso_0_2' ? findsNothing : findsOneWidget);
           expect(erroresDe(tester), isEmpty,
               reason: 'O núcleo desborda no aula, $curso, ${lang.code}, '
                   'escala $escala.');

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../../../core/audio/offline_audio_service.dart';
 import '../../../core/localization/app_language.dart';
 import '../../../core/theme/app_theme.dart';
+import '../../../data/models/unidade_do_mes_model.dart';
 import '../../../data/repositories/content_repository.dart';
 import '../../premios/premios_repository.dart';
 import '../../calendario/views/calendario_screen.dart';
@@ -13,6 +14,7 @@ import '../widgets/circulo_do_dia.dart';
 import '../../cuentos/views/microcuento_screen.dart';
 import '../../cuentos/widgets/boton_microcuento.dart';
 import 'sesion45_screen.dart';
+import '../../calendario/widgets/nucleo_do_mes.dart';
 import '../widgets/tarxeta_curricular.dart';
 import '../../calendario/widgets/palabras_do_dia.dart';
 import '../../../data/models/tpr_curriculum_scheduler.dart';
@@ -385,6 +387,39 @@ class _UnidadesListScreenState extends State<UnidadesListScreen> {
     );
   }
 
+  /// La tarjeta del mes: el plan curricular y, debajo, el contraste de
+  /// sonido de la unidad (F4).
+  Widget _planDoMes(String curso, int mes) => Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          TarxetaCurricular(
+            cursoId: curso,
+            mesCalendario: mes,
+            language: _language,
+            audioService: widget.audioService,
+          ),
+          // La unidad puede no estar leída aún: se pide, y mientras tanto
+          // vale la que ya haya en memoria.
+          FutureBuilder<UnidadeDoMes?>(
+            key: ValueKey('contraste_$curso.$mes'),
+            future: widget.repository.loadUnidadeDoMes(curso, mes),
+            initialData: widget.repository.unidadeDoMesSync(curso, mes),
+            builder: (context, snap) {
+              final u = snap.data;
+              final par = u == null ? null : widget.repository.contrasteSync(u);
+              if (u == null || par == null) return const SizedBox.shrink();
+              return ContrasteDoMes(
+                nota: u.contraste!.nota,
+                a: par.$1,
+                b: par.$2,
+                language: _language,
+                audioService: widget.audioService,
+              );
+            },
+          ),
+        ],
+      );
+
   Widget _buildPrimeiroCicloView(BuildContext context) {
     return AulaPrimeiroCicloPanel(
       asambleas: widget.repository.getAllAsambleasPrimeiroCicloSync(),
@@ -394,12 +429,7 @@ class _UnidadesListScreenState extends State<UnidadesListScreen> {
       circuloDoDia: _circuloDoDia,
       microcuento: _microcuento,
       sesion45: _sesion45,
-      planDoMes: (curso, mes) => TarxetaCurricular(
-        cursoId: curso,
-        mesCalendario: mes,
-        language: _language,
-        audioService: widget.audioService,
-      ),
+      planDoMes: _planDoMes,
       onComezar: (tramo, mes, dia) async {
         final asamblea =
             widget.repository.getAsambleaPrimeiroCicloSync(mes, tramo);
@@ -436,7 +466,8 @@ class _UnidadesListScreenState extends State<UnidadesListScreen> {
               formulas: daUnidade?.formulas ?? const [],
               reactivar: daUnidade?.reactivar ?? const [],
               notaParaCasas: notaDaAsemblea(
-                  daUnidade, null, _language, widget.audioService),
+                  daUnidade, null, _language, widget.audioService,
+                  semana: dia?.semana ?? 1),
               premios: widget.premios,
               calendario: widget.calendario,
             ),
@@ -459,12 +490,7 @@ class _UnidadesListScreenState extends State<UnidadesListScreen> {
       circuloDoDia: _circuloDoDia,
       microcuento: _microcuento,
       sesion45: _sesion45,
-      planDoMes: (curso, mes) => TarxetaCurricular(
-        cursoId: curso,
-        mesCalendario: mes,
-        language: _language,
-        audioService: widget.audioService,
-      ),
+      planDoMes: _planDoMes,
       onComezar: (nivel, mes, dia) async {
         final asamblea =
             widget.repository.getAsambleaByMesYNivelSync(mes, nivel);
@@ -497,7 +523,8 @@ class _UnidadesListScreenState extends State<UnidadesListScreen> {
               formulas: daUnidade?.formulas ?? const [],
               reactivar: daUnidade?.reactivar ?? const [],
               notaParaCasas: notaDaAsemblea(
-                  daUnidade, asamblea, _language, widget.audioService),
+                  daUnidade, asamblea, _language, widget.audioService,
+                  semana: dia?.semana ?? 1),
               premios: widget.premios,
               calendario: widget.calendario,
             ),

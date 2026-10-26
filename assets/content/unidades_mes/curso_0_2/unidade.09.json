@@ -72,6 +72,202 @@
   "reactivar": [
     "frase.cmd.abril.0_2.01"
   ],
-  "hogar": null,
-  "microcuento": null
+  "hogar": {
+    "momento": {
+      "gl": "No xogo do chan, antes de durmir",
+      "es": "En el juego del suelo, antes de dormir"
+    },
+    "minutos": 3,
+    "escena": {
+      "gl": "Un peluche de animal e unha manta",
+      "es": "Un peluche de animal y una manta"
+    },
+    "retosCasa": [
+      {
+        "id": "reto.curso_0_2.05.1",
+        "semana": 1,
+        "fase": "descubrir",
+        "nomeFase": {
+          "gl": "Descubrir",
+          "es": "Descubrir"
+        },
+        "frase": {
+          "en": "Dog",
+          "gl": "can",
+          "es": "perro"
+        },
+        "queFacer": {
+          "gl": "Dio ti mentres o fas, cara a cara e á súa altura: «Dog». Só ten que escoitar e mirar.",
+          "es": "Dilo tú mientras lo haces, cara a cara y a su altura: «Dog». Solo tiene que escuchar y mirar."
+        },
+        "mans": {
+          "gl": "Sinala ou colle o que nomeas: can.",
+          "es": "Señala o coge lo que nombras: perro."
+        },
+        "esperaSegundos": 3,
+        "nonPedir": {
+          "gl": "Non se lle pide nada: mirar e sentir xa é a resposta.",
+          "es": "No se le pide nada: mirar y sentir ya es la respuesta."
+        },
+        "recast": {
+          "silencio": {
+            "gl": "Fai ti o xesto e volve dicir «Dog» amodo, sorrindo, e segue co xogo.",
+            "es": "Haz tú el gesto y vuelve a decir «Dog» despacio, sonriendo, y sigue con el juego."
+          },
+          "linguaCasa": {
+            "gl": "Acolle o que di na lingua da casa, asente e devólvello en inglés: «Dog».",
+            "es": "Acoge lo que dice en la lengua de casa, asiente y devuélveselo en inglés: «Dog»."
+          },
+          "unhaPalabra": {
+            "gl": "Celébrao e engade o que falta: «Yes! Dog».",
+            "es": "Celébralo y añade lo que falta: «Yes! Dog»."
+          }
+        }
+      },
+      {
+        "id": "reto.curso_0_2.05.2",
+        "semana": 2,
+        "fase": "practicar",
+        "nomeFase": {
+          "gl": "Practicar",
+          "es": "Practicar"
+        },
+        "frase": {
+          "en": "Run!"
+        },
+        "queFacer": {
+          "gl": "Di «Run!» e fai o xesto sobre o seu corpo, amodo, mentres o miras aos ollos.",
+          "es": "Di «Run!» y haz el gesto sobre su cuerpo, despacio, mientras le miras a los ojos."
+        },
+        "mans": {
+          "gl": "Correr levantando os xeonllos no sitio ou dando voltas en círculo.",
+          "es": "Correr levantando las rodillas en el sitio o dando vueltas en círculo."
+        },
+        "esperaSegundos": 3,
+        "nonPedir": {
+          "gl": "Non se lle pide nada: mirar e sentir xa é a resposta.",
+          "es": "No se le pide nada: mirar y sentir ya es la respuesta."
+        },
+        "recast": {
+          "silencio": {
+            "gl": "Fai ti o xesto e volve dicir «Run!» amodo, sorrindo, e segue co xogo.",
+            "es": "Haz tú el gesto y vuelve a decir «Run!» despacio, sonriendo, y sigue con el juego."
+          },
+          "linguaCasa": {
+            "gl": "Acolle o que di na lingua da casa, asente e devólvello en inglés: «Run!».",
+            "es": "Acoge lo que dice en la lengua de casa, asiente y devuélveselo en inglés: «Run!»."
+          },
+          "unhaPalabra": {
+            "gl": "Celébrao e engade o que falta: «Yes! Run!».",
+            "es": "Celébralo y añade lo que falta: «Yes! Run!»."
+          }
+        }
+      },
+      {
+        "id": "reto.curso_0_2.05.3",
+        "semana": 3,
+        "fase": "combinar",
+        "nomeFase": {
+          "gl": "Combinar",
+          "es": "Combinar"
+        },
+        "frase": {
+          "en": "Shh... the dog is sleeping! Sleep, little dog...",
+          "gl": "Chis... o can está durmindo! Durme, canciño...",
+          "es": "Chis... ¡el perro está durmiendo! Duerme, perrito..."
+        },
+        "queFacer": {
+          "gl": "Dio noutro momento do día co mesmo xesto, e tamén a da semana pasada: «Shh... the dog is sleeping! Sleep, little dog...», «Run!».",
+          "es": "Dilo en otro momento del día con el mismo gesto, y también la de la semana pasada: «Shh... the dog is sleeping! Sleep, little dog...», «Run!»."
+        },
+        "mans": {
+          "gl": "Ten na man aquilo do que falas e ensínallo mentres o dis.",
+          "es": "Ten en la mano aquello de lo que hablas y enséñaselo mientras lo dices."
+        },
+        "esperaSegundos": 3,
+        "nonPedir": {
+          "gl": "Non se lle pide nada: mirar e sentir xa é a resposta.",
+          "es": "No se le pide nada: mirar y sentir ya es la respuesta."
+        },
+        "recast": {
+          "silencio": {
+            "gl": "Fai ti o xesto e volve dicir «Shh... the dog is sleeping! Sleep, little dog...» amodo, sorrindo, e segue co xogo.",
+            "es": "Haz tú el gesto y vuelve a decir «Shh... the dog is sleeping! Sleep, little dog...» despacio, sonriendo, y sigue con el juego."
+          },
+          "linguaCasa": {
+            "gl": "Acolle o que di na lingua da casa, asente e devólvello en inglés: «Shh... the dog is sleeping! Sleep, little dog...».",
+            "es": "Acoge lo que dice en la lengua de casa, asiente y devuélveselo en inglés: «Shh... the dog is sleeping! Sleep, little dog...»."
+          },
+          "unhaPalabra": {
+            "gl": "Celébrao e engade o que falta: «Yes! Shh... the dog is sleeping! Sleep, little dog...».",
+            "es": "Celébralo y añade lo que falta: «Yes! Shh... the dog is sleeping! Sleep, little dog...»."
+          }
+        }
+      },
+      {
+        "id": "reto.curso_0_2.05.4",
+        "semana": 4,
+        "fase": "consolidar",
+        "nomeFase": {
+          "gl": "Consolidar",
+          "es": "Consolidar"
+        },
+        "frase": {
+          "en": "Wake up, dog! Run, dog, run! Fast, fast, fast!",
+          "gl": "Esperta, can! Corre, can, corre! Rápido, rápido, rápido!",
+          "es": "¡Despierta, perro! ¡Corre, perro, corre! ¡Rápido, rápido, rápido!"
+        },
+        "queFacer": {
+          "gl": "Di «Wake up, dog! Run, dog, run! Fast, fast, fast!» e agarda. Se se xira, sorrí ou move o corpo, xa respondeu: devólvello cun sorriso.",
+          "es": "Di «Wake up, dog! Run, dog, run! Fast, fast, fast!» y espera. Si se gira, sonríe o mueve el cuerpo, ya ha respondido: devuélveselo con una sonrisa."
+        },
+        "mans": {
+          "gl": "Ten na man aquilo do que falas e ensínallo mentres o dis.",
+          "es": "Ten en la mano aquello de lo que hablas y enséñaselo mientras lo dices."
+        },
+        "esperaSegundos": 3,
+        "nonPedir": {
+          "gl": "Non se lle pide nada: mirar e sentir xa é a resposta.",
+          "es": "No se le pide nada: mirar y sentir ya es la respuesta."
+        },
+        "recast": {
+          "silencio": {
+            "gl": "Fai ti o xesto e volve dicir «Wake up, dog! Run, dog, run! Fast, fast, fast!» amodo, sorrindo, e segue co xogo.",
+            "es": "Haz tú el gesto y vuelve a decir «Wake up, dog! Run, dog, run! Fast, fast, fast!» despacio, sonriendo, y sigue con el juego."
+          },
+          "linguaCasa": {
+            "gl": "Acolle o que di na lingua da casa, asente e devólvello en inglés: «Wake up, dog! Run, dog, run! Fast, fast, fast!».",
+            "es": "Acoge lo que dice en la lengua de casa, asiente y devuélveselo en inglés: «Wake up, dog! Run, dog, run! Fast, fast, fast!»."
+          },
+          "unhaPalabra": {
+            "gl": "Celébrao e engade o que falta: «Yes! Wake up, dog! Run, dog, run! Fast, fast, fast!».",
+            "es": "Celébralo y añade lo que falta: «Yes! Wake up, dog! Run, dog, run! Fast, fast, fast!»."
+          }
+        }
+      }
+    ],
+    "lecturaCasa": null,
+    "juegoCasa": {
+      "xogo": "xogo_06_masaxe_72bpm"
+    },
+    "queObservarCasa": [
+      {
+        "gl": "Vólvese ou mira cando oe a frase",
+        "es": "Se gira o mira cuando oye la frase"
+      },
+      {
+        "gl": "Sorrí, balbucea ou move o corpo co xesto",
+        "es": "Sonríe, balbucea o mueve el cuerpo con el gesto"
+      }
+    ],
+    "reactivarCasa": {
+      "en": "Towel",
+      "texto": {
+        "gl": "Noutro momento do día, sen avisar, volve dicir «Towel», a palabra do mes pasado, sinalándoa.",
+        "es": "En otro momento del día, sin avisar, vuelve a decir «Towel», la palabra del mes pasado, señalándola."
+      }
+    }
+  },
+  "microcuento": null,
+  "criterio": "normativa.curso_0_2"
 }

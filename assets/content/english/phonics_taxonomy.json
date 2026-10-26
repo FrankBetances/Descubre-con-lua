@@ -1,8 +1,8 @@
 {
   "inventario": {
     "nota": {
-      "gl": "Os 44 son o inventario habitual dos fonemas do inglés: 24 consoantes e 20 vogais. A voz da app é americana: nela /ɪə/, /eə/ e /ʊə/ soan cun r, e /oʊ/ é o que no inglés británico se escribe /əʊ/. Hai 47 fichas porque tres grafías levan un son que xa ten a súa: ck (/k/), oa/ow (/oʊ/) e u_e (/j/ + /uː/).",
-      "es": "Los 44 son el inventario habitual de los fonemas del inglés: 24 consonantes y 20 vocales. La voz de la app es americana: en ella /ɪə/, /eə/ y /ʊə/ suenan con r, y /oʊ/ es lo que en el inglés británico se escribe /əʊ/. Hay 47 fichas porque tres grafías llevan un sonido que ya tiene la suya: ck (/k/), oa/ow (/oʊ/) y u_e (/j/ + /uː/)."
+      "gl": "Os 44 son o inventario habitual dos fonemas do inglés: 24 consoantes e 20 vogais. A voz da app é americana: nela /ɪə/, /eə/ e /ʊə/ soan cun r, /oʊ/ é o que no inglés británico se escribe /əʊ/, e a «o» curta de dog ou pot soa /ɑ/, a mesma vogal aberta de car, que alí vai seguida de /r/. Hai 47 fichas porque tres grafías levan un son que xa ten a súa: ck (/k/), oa/ow (/oʊ/) e u_e (/j/ + /uː/).",
+      "es": "Los 44 son el inventario habitual de los fonemas del inglés: 24 consonantes y 20 vocales. La voz de la app es americana: en ella /ɪə/, /eə/ y /ʊə/ suenan con r, /oʊ/ es lo que en el inglés británico se escribe /əʊ/, y la «o» corta de dog o pot suena /ɑ/, la misma vocal abierta de car, que allí va seguida de /r/. Hay 47 fichas porque tres grafías llevan un sonido que ya tiene la suya: ck (/k/), oa/ow (/oʊ/) y u_e (/j/ + /uː/)."
     },
     "consoantes": [
       {
@@ -120,7 +120,7 @@
         "fonema": "ph_short_u"
       },
       {
-        "ipa": "/ɒ/",
+        "ipa": "/ɑ/",
         "fonema": "ph_short_o"
       },
       {
@@ -136,15 +136,15 @@
         "fonema": "ph_ee_ea"
       },
       {
-        "ipa": "/ɑː/",
+        "ipa": "/ɑr/",
         "fonema": "ph_r_ar"
       },
       {
-        "ipa": "/ɔː/",
+        "ipa": "/ɔ/",
         "fonema": "ph_or"
       },
       {
-        "ipa": "/ɜː/",
+        "ipa": "/ɝ/",
         "fonema": "ph_er"
       },
       {
@@ -257,19 +257,19 @@
     },
     {
       "id": "ph_short_o",
-      "symbolIpa": "/ɒ/",
+      "symbolIpa": "/ɑ/",
       "grapheme": "o",
       "category": "short_vowel",
       "name": {
-        "gl": "O curta (/ɒ/)",
-        "es": "O corta (/ɒ/)"
+        "gl": "O curta (/ɑ/)",
+        "es": "O corta (/ɑ/)"
       },
       "exampleWord": {
         "en": "octopus",
         "gl": "polbo",
         "es": "pulpo"
       },
-      "audioCue": "/ɒ/ como en octopus e dog",
+      "audioCue": "/ɑ/ como en octopus e dog",
       "articulationGuide": {
         "gl": "Abre a boca en forma oval vertical, lingua relaxada no fondo.",
         "es": "Abre la boca en forma oval vertical, lengua relajada al fondo."
@@ -947,7 +947,7 @@
     },
     {
       "id": "ph_r_ar",
-      "symbolIpa": "/ɑːr/",
+      "symbolIpa": "/ɑr/",
       "grapheme": "ar",
       "category": "r_controlled",
       "name": {
@@ -959,10 +959,10 @@
         "gl": "estrela",
         "es": "estrella"
       },
-      "audioCue": "/ɑːr/ \"Arrr!\" do pirata",
+      "audioCue": "/ɑr/ \"Arrr!\" do pirata",
       "articulationGuide": {
-        "gl": "Abre a boca en /ɑː/ e retrae a lingua cara atrás para o /r/.",
-        "es": "Abre la boca en /ɑː/ y retrae la lengua hacia atrás para la /r/."
+        "gl": "Abre a boca en /ɑ/ e retrae a lingua cara atrás para o /r/.",
+        "es": "Abre la boca en /ɑ/ y retrae la lengua hacia atrás para la /r/."
       },
       "frequencyRank": 34,
       "readingLevel": 5,
@@ -1102,7 +1102,7 @@
     },
     {
       "id": "ph_or",
-      "symbolIpa": "/ɔː/",
+      "symbolIpa": "/ɔ/",
       "grapheme": "or",
       "category": "r_controlled",
       "name": {
@@ -1114,7 +1114,7 @@
         "gl": "Cabalo",
         "es": "Caballo"
       },
-      "audioCue": "/ɔː/ como en horse e ball",
+      "audioCue": "/ɔ/ como en horse e ball",
       "articulationGuide": {
         "gl": "Beizos redondeados e boca medio aberta, un son longo. En horse, a voz americana da app engade un r suave.",
         "es": "Labios redondeados y boca medio abierta, un sonido largo. En horse, la voz americana de la app añade una r suave."
@@ -1124,19 +1124,19 @@
     },
     {
       "id": "ph_er",
-      "symbolIpa": "/ɜː/",
+      "symbolIpa": "/ɝ/",
       "grapheme": "ir/er/ur",
       "category": "r_controlled",
       "name": {
-        "gl": "Son /ɜː/ (bird)",
-        "es": "Sonido /ɜː/ (bird)"
+        "gl": "Son /ɝ/ (bird)",
+        "es": "Sonido /ɝ/ (bird)"
       },
       "exampleWord": {
         "en": "bird",
         "gl": "Paxaro",
         "es": "Pájaro"
       },
-      "audioCue": "/ɜː/ como en bird, her e turn",
+      "audioCue": "/ɝ/ como en bird, her e turn",
       "articulationGuide": {
         "gl": "Boca entreaberta e lingua no medio, sen redondear os beizos. Na voz americana da app soa cun r.",
         "es": "Boca entreabierta y lengua en medio, sin redondear los labios. En la voz americana de la app suena con r."
@@ -1550,7 +1550,7 @@
       ],
       "phonemeIpa": [
         "/d/",
-        "/ɒ/",
+        "/ɑ/",
         "/g/"
       ],
       "wordFamily": "-og",
@@ -1581,7 +1581,7 @@
       ],
       "phonemeIpa": [
         "/p/",
-        "/ɒ/",
+        "/ɑ/",
         "/t/"
       ],
       "wordFamily": "-ot",

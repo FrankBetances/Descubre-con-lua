@@ -24,7 +24,15 @@ import 'package:descubre_con_lua/features/juega/views/nota_para_casas_screen.dar
 import 'package:descubre_con_lua/features/juega/views/cancions_con_pulso_screen.dart';
 import 'package:descubre_con_lua/features/cuentos/views/microcuento_screen.dart';
 import 'package:descubre_con_lua/data/models/rexistro_frases_model.dart';
+import 'package:descubre_con_lua/data/models/unidade_curricular_model.dart';
+import 'package:descubre_con_lua/data/models/hogar_model.dart';
+import 'package:descubre_con_lua/core/codigo_casa.dart';
+import 'package:descubre_con_lua/data/models/normativa_model.dart';
+import 'package:descubre_con_lua/data/models/steam_do_mes_model.dart';
+import 'package:descubre_con_lua/data/models/xogos_fogar_model.dart';
 import 'package:descubre_con_lua/data/models/unidade_do_mes_model.dart';
+import 'package:descubre_con_lua/features/familias/widgets/reto_da_semana.dart';
+import 'package:descubre_con_lua/features/planificador/views/planificador_screen.dart';
 import 'package:descubre_con_lua/data/models/cancion_pulso_model.dart';
 import 'package:descubre_con_lua/features/academy/views/bloques_list_screen.dart';
 import 'package:descubre_con_lua/features/academy/views/capsula_detail_screen.dart';
@@ -125,6 +133,18 @@ void main() {
   late Directory tmp;
 
   setUp(() async {
+    // Lo que las pantallas leen del paquete por su cuenta, ya leído desde
+    // disco: un futuro del paquete abierto bajo el reloj falso no termina
+    // nunca, y colgaba la captura siguiente que lo esperase.
+    String ler(String r) => File(r).readAsStringSync();
+    PlanCurricular.sembrar(PlanCurricular.fromRaw(
+        [for (final f in PlanCurricular.ficheiros) ler(f)],
+        ler(PlanCurricular.calendarioAsset)));
+    XogosFogar.sembrar(XogosFogar.fromRaw(ler(XogosFogar.assetPath)));
+    SteamDoMes.sembrar(SteamDoMes.fromRaw(ler(SteamDoMes.assetPath)));
+    Normativa.sembrar(Normativa.fromRaw(ler(Normativa.assetPath)));
+    GuiaDeCasa.sembrar(GuiaDeCasa.fromRaw(
+        ler(GuiaDeCasa.guiaAsset), ler(GuiaDeCasa.idadeAsset)));
     contenido = ContentRepository();
     await contenido.initialize();
     tmp = Directory.systemTemp.createTempSync('capturas');
@@ -331,6 +351,57 @@ void main() {
           agora: venres,
         ),
         tema: AppTheme.temaFamilias,
+      );
+    });
+
+    // F5: el reto de la semana de casa, entero (4-5, noviembre, semana 1).
+    testWidgets('na casa · reto da semana · $l', (tester) async {
+      // Desde disco y ya leídos: un futuro del paquete abierto antes bajo el
+      // reloj falso no termina nunca, ni dentro de runAsync.
+      XogosFogar.sembrar(
+          XogosFogar.fromRaw(File(XogosFogar.assetPath).readAsStringSync()));
+      SteamDoMes.sembrar(
+          SteamDoMes.fromRaw(File(SteamDoMes.assetPath).readAsStringSync()));
+      final u = UnidadeDoMes.fromJson(jsonDecode(
+          File('assets/content/unidades_mes/curso_4_5/unidade.03.json')
+              .readAsStringSync()) as Map<String, dynamic>);
+      await capturar(
+        tester,
+        'reto-semana-$l',
+        Scaffold(
+          backgroundColor: AppTheme.pageBg,
+          body: SafeArea(
+            child: ListView(
+              padding: const EdgeInsets.all(16),
+              children: [
+                RetoDaSemana(hogar: u.hogar!, semana: 1, language: lang),
+              ],
+            ),
+          ),
+        ),
+        tamano: const Size(412, 1500),
+        tema: AppTheme.temaFamilias,
+        antesDeRetratar: (t) async {
+          await t.tap(find.byKey(const Key('reto_recast')));
+        },
+      );
+    });
+
+    // M7.3: el Planificador, con el marco del curso arriba.
+    testWidgets('aula · planificador · $l', (tester) async {
+      // Las unidades y la normativa se leen de disco: con reloj de verdad,
+      // antes de montar la pantalla, o el indicador gira sin fin.
+      await tester.runAsync(() => Future.wait([
+            for (final m in [9, 10, 11, 12, 1, 2, 3, 4, 5, 6])
+              contenido.loadUnidadeDoMes('curso_0_2', m),
+          ]));
+      Normativa.sembrar(
+          Normativa.fromRaw(File(Normativa.assetPath).readAsStringSync()));
+      await capturar(
+        tester,
+        'planificador-$l',
+        PlanificadorScreen(repository: contenido, initialLanguage: lang),
+        tamano: const Size(412, 1500),
       );
     });
 
@@ -698,10 +769,15 @@ void main() {
           centroInteres: unidade.centroInteres,
           nucleo: contenido.nucleoSync(unidade),
           microRutina: asamblea.microRutinaHogar,
+          // Como la abre la app: el reto de la semana 1 y su código (M4.4,
+          // P10).
+          reto: unidade.hogar?.daSemana(1),
+          momentoDoReto: unidade.hogar?.momento,
+          codigoCasa: CodigoCasa.para('curso_3_4', 10, 1)?.texto,
           language: lang,
           audioService: MockOfflineAudioService(),
         ),
-        tamano: const Size(412, 1400),
+        tamano: const Size(412, 1700),
       );
     });
 

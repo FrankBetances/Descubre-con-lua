@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../core/audio/offline_audio_service.dart';
+import '../../../core/audio/voice_id.dart';
 import '../../../core/audio/widgets/boton_escuchar.dart';
 import '../../../core/brand/iconos_contenido.dart';
 import '../../../core/brand/lua_pixel.dart';
@@ -383,6 +384,8 @@ class _CalendarioFogarScreenState extends State<CalendarioFogarScreen> {
                             NucleoDoMes(
                               unidade: unidade,
                               nucleo: widget.repository.nucleoSync(unidade),
+                              contraste:
+                                  widget.repository.contrasteSync(unidade),
                               language: lang,
                               audioService: widget.audioService,
                               enCasa: true,
@@ -819,6 +822,59 @@ class _CalendarioFogarScreenState extends State<CalendarioFogarScreen> {
               ],
             ),
             const SizedBox(height: 12),
+
+            // F5: el reto de casa de esta semana y su momento, el mismo que
+            // enseña Hoxe.
+            if (_mesCurricularActual?.unidade?.hogar case final hogar?)
+              if (hogar.daSemana(dia.semanaNumero) case final reto?) ...[
+                Container(
+                  key: ValueKey('calendario_reto_${dia.semanaNumero}'),
+                  width: double.infinity,
+                  padding: const EdgeInsets.all(12),
+                  decoration: BoxDecoration(
+                    color: context.acentoTint,
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        '${isGl ? 'RETO DA SEMANA' : 'RETO DE LA SEMANA'} · '
+                        '${reto.nomeFase.resolve(_language).toUpperCase()}',
+                        style: TextStyle(
+                          fontSize: 12,
+                          fontWeight: FontWeight.w800,
+                          letterSpacing: 0.6,
+                          color: context.acento,
+                        ),
+                      ),
+                      const SizedBox(height: 6),
+                      BotonEscuchar(
+                        audioService: widget.audioService,
+                        texto: reto.frase.en,
+                        language: AppLanguage.en,
+                        interfaz: _language,
+                        style: estiloIngles(reto.frase.en),
+                        comoChip: true,
+                        colorChip: context.acento,
+                        descripcion: reto.frase.en,
+                        significado: reto.frase.significado,
+                      ),
+                      const SizedBox(height: 6),
+                      Text(
+                        '${hogar.momento.resolve(_language)} · '
+                        '${hogar.minutos} min',
+                        style: const TextStyle(
+                          fontSize: 14,
+                          color: AppTheme.textSecondary,
+                          height: 1.35,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                const SizedBox(height: 12),
+              ],
 
             // Tema do Día
             Text(

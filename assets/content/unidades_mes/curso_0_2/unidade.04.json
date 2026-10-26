@@ -79,6 +79,204 @@
   "reactivar": [
     "frase.cmd.novembro.0_2.02"
   ],
-  "hogar": null,
-  "microcuento": null
+  "hogar": {
+    "momento": {
+      "gl": "No paseo, ao recoller follas e pedras",
+      "es": "En el paseo, al recoger hojas y piedras"
+    },
+    "minutos": 3,
+    "escena": {
+      "gl": "Unha bolsa de tea para os tesouros",
+      "es": "Una bolsa de tela para los tesoros"
+    },
+    "retosCasa": [
+      {
+        "id": "reto.curso_0_2.12.1",
+        "semana": 1,
+        "fase": "descubrir",
+        "nomeFase": {
+          "gl": "Descubrir",
+          "es": "Descubrir"
+        },
+        "frase": {
+          "en": "Drop",
+          "gl": "deixar caer",
+          "es": "dejar caer"
+        },
+        "queFacer": {
+          "gl": "Dio ti mentres o fas, cara a cara e á súa altura: «Drop». Só ten que escoitar e mirar.",
+          "es": "Dilo tú mientras lo haces, cara a cara y a su altura: «Drop». Solo tiene que escuchar y mirar."
+        },
+        "mans": {
+          "gl": "Sinala ou colle o que nomeas: deixar caer.",
+          "es": "Señala o coge lo que nombras: dejar caer."
+        },
+        "esperaSegundos": 3,
+        "nonPedir": {
+          "gl": "Non se lle pide nada: mirar e sentir xa é a resposta.",
+          "es": "No se le pide nada: mirar y sentir ya es la respuesta."
+        },
+        "recast": {
+          "silencio": {
+            "gl": "Fai ti o xesto e volve dicir «Drop» amodo, sorrindo, e segue co xogo.",
+            "es": "Haz tú el gesto y vuelve a decir «Drop» despacio, sonriendo, y sigue con el juego."
+          },
+          "linguaCasa": {
+            "gl": "Acolle o que di na lingua da casa, asente e devólvello en inglés: «Drop».",
+            "es": "Acoge lo que dice en la lengua de casa, asiente y devuélveselo en inglés: «Drop»."
+          },
+          "unhaPalabra": {
+            "gl": "Celébrao e engade o que falta: «Yes! Drop».",
+            "es": "Celébralo y añade lo que falta: «Yes! Drop»."
+          }
+        }
+      },
+      {
+        "id": "reto.curso_0_2.12.2",
+        "semana": 2,
+        "fase": "practicar",
+        "nomeFase": {
+          "gl": "Practicar",
+          "es": "Practicar"
+        },
+        "frase": {
+          "en": "Drop!",
+          "gl": "Pinga",
+          "es": "Gota"
+        },
+        "queFacer": {
+          "gl": "Di «Drop!» e fai o xesto sobre o seu corpo, amodo, mentres o miras aos ollos.",
+          "es": "Di «Drop!» y haz el gesto sobre su cuerpo, despacio, mientras le miras a los ojos."
+        },
+        "mans": {
+          "gl": "Abrir as mans á altura dos ombros e deixar que a cousa caia con forza ao chan.",
+          "es": "Abrir las manos a la altura de los hombros y dejar que la cosa caiga con fuerza al suelo."
+        },
+        "esperaSegundos": 3,
+        "nonPedir": {
+          "gl": "Non se lle pide nada: mirar e sentir xa é a resposta.",
+          "es": "No se le pide nada: mirar y sentir ya es la respuesta."
+        },
+        "recast": {
+          "silencio": {
+            "gl": "Fai ti o xesto e volve dicir «Drop!» amodo, sorrindo, e segue co xogo.",
+            "es": "Haz tú el gesto y vuelve a decir «Drop!» despacio, sonriendo, y sigue con el juego."
+          },
+          "linguaCasa": {
+            "gl": "Acolle o que di na lingua da casa, asente e devólvello en inglés: «Drop!».",
+            "es": "Acoge lo que dice en la lengua de casa, asiente y devuélveselo en inglés: «Drop!»."
+          },
+          "unhaPalabra": {
+            "gl": "Celébrao e engade o que falta: «Yes! Drop!».",
+            "es": "Celébralo y añade lo que falta: «Yes! Drop!»."
+          }
+        }
+      },
+      {
+        "id": "reto.curso_0_2.12.3",
+        "semana": 3,
+        "fase": "combinar",
+        "nomeFase": {
+          "gl": "Combinar",
+          "es": "Combinar"
+        },
+        "frase": {
+          "en": "Pick up the leaf. Walk, walk... now drop it! Drop!",
+          "gl": "Colle a folla. Camiña, camiña... agora déixaa caer! Sóltaa!",
+          "es": "Coge la hoja. Camina, camina... ¡ahora déjala caer! ¡Suéltala!"
+        },
+        "queFacer": {
+          "gl": "Dio noutro momento do día co mesmo xesto, e tamén a da semana pasada: «Pick up the leaf. Walk, walk... now drop it! Drop!», «Drop!».",
+          "es": "Dilo en otro momento del día con el mismo gesto, y también la de la semana pasada: «Pick up the leaf. Walk, walk... now drop it! Drop!», «Drop!»."
+        },
+        "mans": {
+          "gl": "Ten na man aquilo do que falas e ensínallo mentres o dis.",
+          "es": "Ten en la mano aquello de lo que hablas y enséñaselo mientras lo dices."
+        },
+        "esperaSegundos": 3,
+        "nonPedir": {
+          "gl": "Non se lle pide nada: mirar e sentir xa é a resposta.",
+          "es": "No se le pide nada: mirar y sentir ya es la respuesta."
+        },
+        "recast": {
+          "silencio": {
+            "gl": "Fai ti o xesto e volve dicir «Pick up the leaf. Walk, walk... now drop it! Drop!» amodo, sorrindo, e segue co xogo.",
+            "es": "Haz tú el gesto y vuelve a decir «Pick up the leaf. Walk, walk... now drop it! Drop!» despacio, sonriendo, y sigue con el juego."
+          },
+          "linguaCasa": {
+            "gl": "Acolle o que di na lingua da casa, asente e devólvello en inglés: «Pick up the leaf. Walk, walk... now drop it! Drop!».",
+            "es": "Acoge lo que dice en la lengua de casa, asiente y devuélveselo en inglés: «Pick up the leaf. Walk, walk... now drop it! Drop!»."
+          },
+          "unhaPalabra": {
+            "gl": "Celébrao e engade o que falta: «Yes! Pick up the leaf. Walk, walk... now drop it! Drop!».",
+            "es": "Celébralo y añade lo que falta: «Yes! Pick up the leaf. Walk, walk... now drop it! Drop!»."
+          }
+        }
+      },
+      {
+        "id": "reto.curso_0_2.12.4",
+        "semana": 4,
+        "fase": "consolidar",
+        "nomeFase": {
+          "gl": "Consolidar",
+          "es": "Consolidar"
+        },
+        "frase": {
+          "en": "Drop the stone: Boom!",
+          "gl": "Deixa caer a pedra: bum!",
+          "es": "Deja caer la piedra: ¡bum!"
+        },
+        "queFacer": {
+          "gl": "Di «Drop the stone: Boom!» e agarda. Se se xira, sorrí ou move o corpo, xa respondeu: devólvello cun sorriso.",
+          "es": "Di «Drop the stone: Boom!» y espera. Si se gira, sonríe o mueve el cuerpo, ya ha respondido: devuélveselo con una sonrisa."
+        },
+        "mans": {
+          "gl": "Ten na man aquilo do que falas e ensínallo mentres o dis.",
+          "es": "Ten en la mano aquello de lo que hablas y enséñaselo mientras lo dices."
+        },
+        "esperaSegundos": 3,
+        "nonPedir": {
+          "gl": "Non se lle pide nada: mirar e sentir xa é a resposta.",
+          "es": "No se le pide nada: mirar y sentir ya es la respuesta."
+        },
+        "recast": {
+          "silencio": {
+            "gl": "Fai ti o xesto e volve dicir «Drop the stone: Boom!» amodo, sorrindo, e segue co xogo.",
+            "es": "Haz tú el gesto y vuelve a decir «Drop the stone: Boom!» despacio, sonriendo, y sigue con el juego."
+          },
+          "linguaCasa": {
+            "gl": "Acolle o que di na lingua da casa, asente e devólvello en inglés: «Drop the stone: Boom!».",
+            "es": "Acoge lo que dice en la lengua de casa, asiente y devuélveselo en inglés: «Drop the stone: Boom!»."
+          },
+          "unhaPalabra": {
+            "gl": "Celébrao e engade o que falta: «Yes! Drop the stone: Boom!».",
+            "es": "Celébralo y añade lo que falta: «Yes! Drop the stone: Boom!»."
+          }
+        }
+      }
+    ],
+    "lecturaCasa": null,
+    "juegoCasa": {
+      "xogo": "xogo_09_caixa_sons_texturas"
+    },
+    "queObservarCasa": [
+      {
+        "gl": "Vólvese ou mira cando oe a frase",
+        "es": "Se gira o mira cuando oye la frase"
+      },
+      {
+        "gl": "Sorrí, balbucea ou move o corpo co xesto",
+        "es": "Sonríe, balbucea o mueve el cuerpo con el gesto"
+      }
+    ],
+    "reactivarCasa": {
+      "en": "Leaf",
+      "texto": {
+        "gl": "Noutro momento do día, sen avisar, volve dicir «Leaf», a palabra do mes pasado, sinalándoa.",
+        "es": "En otro momento del día, sin avisar, vuelve a decir «Leaf», la palabra del mes pasado, señalándola."
+      }
+    }
+  },
+  "microcuento": null,
+  "criterio": "normativa.curso_0_2"
 }

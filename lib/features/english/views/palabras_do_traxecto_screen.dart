@@ -19,6 +19,8 @@ import '../../juega/widgets/aula_ciclo_panel.dart' show nomeDoMes;
 /// tocaban. Para preparar la semana, o para saber cuándo sale «umbrella», no
 /// había dónde mirarlas.
 class PalabrasDoTraxectoScreen extends StatefulWidget {
+  /// El núcleo del mes arriba (M7.1), para el curso elegido y el mes.
+  final Widget Function(String cursoId)? nucleoDo;
   final ProgramaTpr? programa;
   final String cursoInicial;
   final AppLanguage language;
@@ -36,6 +38,7 @@ class PalabrasDoTraxectoScreen extends StatefulWidget {
 
   const PalabrasDoTraxectoScreen({
     super.key,
+    this.nucleoDo,
     required this.programa,
     this.cursoInicial = 'curso_0_2',
     this.language = AppLanguage.gl,
@@ -125,6 +128,7 @@ class _PalabrasDoTraxectoScreenState extends State<PalabrasDoTraxectoScreen> {
                 key: const Key('traxecto_lista'),
                 padding: const EdgeInsets.all(16),
                 children: [
+                  if (widget.nucleoDo case final n?) n(_curso),
                   Text(
                     isGl
                         ? '${formatarMiles(programa.totalPalabras)} palabras en ${programa.cursos.length} cursos, ${programa.modelo.ritmoDiario} novas cada día de luns a xoves.'

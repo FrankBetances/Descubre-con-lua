@@ -95,6 +95,10 @@ class XogosFogar {
   @visibleForTesting
   static void olvidar() => _enCurso = null;
 
+  /// Solo para los tests: deja los juegos ya leídos, sin pasar por el bundle.
+  @visibleForTesting
+  static void sembrar(XogosFogar x) => _enCurso = SynchronousFuture(x);
+
   /// Solo para los tests: deja la carga en avería, para comprobar sobre la
   /// pantalla de verdad que el fallo se enseña.
   @visibleForTesting

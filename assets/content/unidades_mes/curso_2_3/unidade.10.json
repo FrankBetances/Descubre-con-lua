@@ -63,7 +63,14 @@
       "es": "Paracaídas azul de asamblea"
     }
   ],
-  "contraste": null,
+  "contraste": {
+    "a": "3_4.xaneiro.s2.wet",
+    "b": "4_5.xaneiro.s4.vet",
+    "nota": {
+      "gl": "«wet» empeza cos beizos redondos, coma para un bico, e «vet», cos dentes de arriba no beizo de abaixo. Dilas ti diante dun espello.",
+      "es": "«wet» empieza con los labios redondos, como para un beso, y «vet», con los dientes de arriba en el labio de abajo. Dilas tú delante de un espejo."
+    }
+  },
   "queObservar": [
     {
       "gl": "Move as mans amodo ou forte segundo a onda",
@@ -77,7 +84,208 @@
   "reactivar": [
     "2_3.maio.s1.soap-rub-rinse"
   ],
-  "hogar": null,
+  "hogar": {
+    "momento": {
+      "gl": "Ao recoller os xoguetes",
+      "es": "Al recoger los juguetes"
+    },
+    "minutos": 8,
+    "escena": {
+      "gl": "Unha caixa de cartón e unha pelota",
+      "es": "Una caja de cartón y una pelota"
+    },
+    "retosCasa": [
+      {
+        "id": "reto.curso_2_3.06.1",
+        "semana": 1,
+        "fase": "descubrir",
+        "nomeFase": {
+          "gl": "Descubrir",
+          "es": "Descubrir"
+        },
+        "frase": {
+          "en": "Ball",
+          "gl": "pelota",
+          "es": "pelota"
+        },
+        "queFacer": {
+          "gl": "Dio ti mentres o fas, cara a cara e á súa altura: «Ball». Só ten que escoitar e mirar.",
+          "es": "Dilo tú mientras lo haces, cara a cara y a su altura: «Ball». Solo tiene que escuchar y mirar."
+        },
+        "mans": {
+          "gl": "Sinala ou colle o que nomeas: pelota.",
+          "es": "Señala o coge lo que nombras: pelota."
+        },
+        "esperaSegundos": 5,
+        "nonPedir": {
+          "gl": "Non hai que dicilo: abonda con que o faga co corpo ou colla o obxecto.",
+          "es": "No hay que decirlo: basta con que lo haga con el cuerpo o coja el objeto."
+        },
+        "recast": {
+          "silencio": {
+            "gl": "Fai ti o xesto e volve dicir «Ball» amodo, sorrindo, e segue co xogo.",
+            "es": "Haz tú el gesto y vuelve a decir «Ball» despacio, sonriendo, y sigue con el juego."
+          },
+          "linguaCasa": {
+            "gl": "Acolle o que di na lingua da casa, asente e devólvello en inglés: «Ball».",
+            "es": "Acoge lo que dice en la lengua de casa, asiente y devuélveselo en inglés: «Ball»."
+          },
+          "unhaPalabra": {
+            "gl": "Celébrao e engade o que falta: «Yes! Ball».",
+            "es": "Celébralo y añade lo que falta: «Yes! Ball»."
+          }
+        }
+      },
+      {
+        "id": "reto.curso_2_3.06.2",
+        "semana": 2,
+        "fase": "practicar",
+        "nomeFase": {
+          "gl": "Practicar",
+          "es": "Practicar"
+        },
+        "frase": {
+          "en": "Clap!"
+        },
+        "queFacer": {
+          "gl": "Di «Clap!» e fai o xesto á vez. Agarda e, se o fai, facédeo xuntos outra vez.",
+          "es": "Di «Clap!» y haz el gesto a la vez. Espera y, si lo hace, hacedlo juntos otra vez."
+        },
+        "mans": {
+          "gl": "Dar palmas co ritmo, coas dúas mans diante do peito.",
+          "es": "Dar palmas con el ritmo, con las dos manos delante del pecho."
+        },
+        "esperaSegundos": 5,
+        "nonPedir": {
+          "gl": "Non hai que dicilo: abonda con que o faga co corpo ou colla o obxecto.",
+          "es": "No hay que decirlo: basta con que lo haga con el cuerpo o coja el objeto."
+        },
+        "recast": {
+          "silencio": {
+            "gl": "Fai ti o xesto e volve dicir «Clap!» amodo, sorrindo, e segue co xogo.",
+            "es": "Haz tú el gesto y vuelve a decir «Clap!» despacio, sonriendo, y sigue con el juego."
+          },
+          "linguaCasa": {
+            "gl": "Acolle o que di na lingua da casa, asente e devólvello en inglés: «Clap!».",
+            "es": "Acoge lo que dice en la lengua de casa, asiente y devuélveselo en inglés: «Clap!»."
+          },
+          "unhaPalabra": {
+            "gl": "Celébrao e engade o que falta: «Yes! Clap!».",
+            "es": "Celébralo y añade lo que falta: «Yes! Clap!»."
+          }
+        }
+      },
+      {
+        "id": "reto.curso_2_3.06.3",
+        "semana": 3,
+        "fase": "combinar",
+        "nomeFase": {
+          "gl": "Combinar",
+          "es": "Combinar"
+        },
+        "frase": {
+          "en": "What is in the box? Listen! A box!",
+          "gl": "Que hai na caixa? Escoita! Unha caixa!",
+          "es": "¿Qué hay en la caja? ¡Escucha! ¡Una caja!"
+        },
+        "queFacer": {
+          "gl": "Xunta a frase desta semana coa da semana pasada nun xogo curto: «What is in the box? Listen! A box!» e, despois, «Clap!».",
+          "es": "Junta la frase de esta semana con la de la semana pasada en un juego corto: «What is in the box? Listen! A box!» y, después, «Clap!»."
+        },
+        "mans": {
+          "gl": "Ten na man aquilo do que falas e ensínallo mentres o dis.",
+          "es": "Ten en la mano aquello de lo que hablas y enséñaselo mientras lo dices."
+        },
+        "esperaSegundos": 5,
+        "nonPedir": {
+          "gl": "Non hai que dicilo: abonda con que o faga co corpo ou colla o obxecto.",
+          "es": "No hay que decirlo: basta con que lo haga con el cuerpo o coja el objeto."
+        },
+        "recast": {
+          "silencio": {
+            "gl": "Fai ti o xesto e volve dicir «What is in the box? Listen! A box!» amodo, sorrindo, e segue co xogo.",
+            "es": "Haz tú el gesto y vuelve a decir «What is in the box? Listen! A box!» despacio, sonriendo, y sigue con el juego."
+          },
+          "linguaCasa": {
+            "gl": "Acolle o que di na lingua da casa, asente e devólvello en inglés: «What is in the box? Listen! A box!».",
+            "es": "Acoge lo que dice en la lengua de casa, asiente y devuélveselo en inglés: «What is in the box? Listen! A box!»."
+          },
+          "unhaPalabra": {
+            "gl": "Celébrao e engade o que falta: «Yes! What is in the box? Listen! A box!».",
+            "es": "Celébralo y añade lo que falta: «Yes! What is in the box? Listen! A box!»."
+          }
+        }
+      },
+      {
+        "id": "reto.curso_2_3.06.4",
+        "semana": 4,
+        "fase": "consolidar",
+        "nomeFase": {
+          "gl": "Consolidar",
+          "es": "Consolidar"
+        },
+        "frase": {
+          "en": "Go!",
+          "gl": "Adiante!",
+          "es": "¡Adelante!"
+        },
+        "queFacer": {
+          "gl": "Di o comezo, «G…», e deixa o oco. Se o completa co corpo ou cunha palabra, celébrao e di a frase enteira.",
+          "es": "Di el comienzo, «G…», y deja el hueco. Si lo completa con el cuerpo o con una palabra, celébralo y di la frase entera."
+        },
+        "mans": {
+          "gl": "Ten na man aquilo do que falas e ensínallo mentres o dis.",
+          "es": "Ten en la mano aquello de lo que hablas y enséñaselo mientras lo dices."
+        },
+        "esperaSegundos": 5,
+        "nonPedir": {
+          "gl": "Non hai que dicilo: abonda con que o faga co corpo ou colla o obxecto.",
+          "es": "No hay que decirlo: basta con que lo haga con el cuerpo o coja el objeto."
+        },
+        "recast": {
+          "silencio": {
+            "gl": "Fai ti o xesto e volve dicir «Go!» amodo, sorrindo, e segue co xogo.",
+            "es": "Haz tú el gesto y vuelve a decir «Go!» despacio, sonriendo, y sigue con el juego."
+          },
+          "linguaCasa": {
+            "gl": "Acolle o que di na lingua da casa, asente e devólvello en inglés: «Go!».",
+            "es": "Acoge lo que dice en la lengua de casa, asiente y devuélveselo en inglés: «Go!»."
+          },
+          "unhaPalabra": {
+            "gl": "Celébrao e engade o que falta: «Yes! Go!».",
+            "es": "Celébralo y añade lo que falta: «Yes! Go!»."
+          }
+        }
+      }
+    ],
+    "lecturaCasa": {
+      "microcuento": "microcuento.curso_2_3.10"
+    },
+    "juegoCasa": {
+      "xogo": "xogo_10_eco_pes_mans"
+    },
+    "queObservarCasa": [
+      {
+        "gl": "Fai o xesto cando oe «Ball»",
+        "es": "Hace el gesto cuando oye «Ball»"
+      },
+      {
+        "gl": "Colle ou sinala o obxecto",
+        "es": "Coge o señala el objeto"
+      },
+      {
+        "gl": "Anticipa o momento: xa sabe que vén o inglés",
+        "es": "Anticipa el momento: ya sabe que llega el inglés"
+      }
+    ],
+    "reactivarCasa": {
+      "en": "Dog",
+      "texto": {
+        "gl": "Noutro momento do día, sen avisar, volve dicir «Dog», a palabra do mes pasado, sinalándoa.",
+        "es": "En otro momento del día, sin avisar, vuelve a decir «Dog», la palabra del mes pasado, señalándola."
+      }
+    }
+  },
   "microcuento": {
     "id": "microcuento.curso_2_3.10",
     "titulo": {
@@ -321,5 +529,6 @@
         }
       }
     ]
-  }
+  },
+  "criterio": "normativa.curso_2_3"
 }

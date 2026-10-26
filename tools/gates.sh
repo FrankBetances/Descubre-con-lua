@@ -102,6 +102,10 @@ run_gate "phrase register in sync with its sources" \
 # tamaño de su edad. En --estricto: las 50 tienen que estar.
 run_gate "every month unit cites what exists and follows its assembly" \
   python3 tools/check_unidades.py --estricto
+# F5: la guía de casa de cada mes sale del plan curricular por script; si se
+# toca el plan o una unidad sin regenerarla, la casa contaría otro mes.
+run_gate "home guide of every month is regenerated from its sources" \
+  python3 tools/gen_hogar.py --check
 # Nace de O5 (M5.1): el microcuento es una conversación sobre el núcleo, no
 # otro vocabulario. Comprueba que lo que dice Lúa sale del núcleo, que hay
 # tríada, guion de recast para cinco respuestas y pregunta de casa por edad, y

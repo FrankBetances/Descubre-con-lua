@@ -83,7 +83,14 @@
       "es": "Una clave de madera"
     }
   ],
-  "contraste": null,
+  "contraste": {
+    "a": "4_5.febreiro.s3.win",
+    "b": "2_3.abril.s2.wing",
+    "nota": {
+      "gl": "«win» remata en «n», coa lingua arriba, e «wing», nun son nasal do fondo da boca, sen «g» ao final. Dilas ti, unha detrás da outra.",
+      "es": "«win» termina en «n», con la lengua arriba, y «wing», en un sonido nasal del fondo de la boca, sin «g» al final. Dilas tú, una detrás de otra."
+    }
+  },
   "queObservar": [
     {
       "gl": "Inventa unha serie de tres movementos e faina igual cada vez",
@@ -97,7 +104,210 @@
   "reactivar": [
     "3_4.novembro.s3.fox"
   ],
-  "hogar": null,
+  "hogar": {
+    "momento": {
+      "gl": "Ao preparar unha saída ou a mochila",
+      "es": "Al preparar una salida o la mochila"
+    },
+    "minutos": 10,
+    "escena": {
+      "gl": "Unha mochila e un billete feito por vós",
+      "es": "Una mochila y un billete hecho por vosotros"
+    },
+    "retosCasa": [
+      {
+        "id": "reto.curso_5_6.05.1",
+        "semana": 1,
+        "fase": "descubrir",
+        "nomeFase": {
+          "gl": "Descubrir",
+          "es": "Descubrir"
+        },
+        "frase": {
+          "en": "destination",
+          "gl": "destino",
+          "es": "destino"
+        },
+        "queFacer": {
+          "gl": "Dio ti mentres o fas, cara a cara e á súa altura: «destination». Só ten que escoitar e mirar.",
+          "es": "Dilo tú mientras lo haces, cara a cara y a su altura: «destination». Solo tiene que escuchar y mirar."
+        },
+        "mans": {
+          "gl": "Sinala ou colle o que nomeas: destino.",
+          "es": "Señala o coge lo que nombras: destino."
+        },
+        "esperaSegundos": 5,
+        "nonPedir": {
+          "gl": "Non é unha proba: se responde na lingua da casa, tamén vale, e o xogo segue.",
+          "es": "No es una prueba: si responde en la lengua de casa, también vale, y el juego sigue."
+        },
+        "recast": {
+          "silencio": {
+            "gl": "Fai ti o xesto e volve dicir «destination» amodo, sorrindo, e segue co xogo.",
+            "es": "Haz tú el gesto y vuelve a decir «destination» despacio, sonriendo, y sigue con el juego."
+          },
+          "linguaCasa": {
+            "gl": "Acolle o que di na lingua da casa, asente e devólvello en inglés: «destination».",
+            "es": "Acoge lo que dice en la lengua de casa, asiente y devuélveselo en inglés: «destination»."
+          },
+          "unhaPalabra": {
+            "gl": "Celébrao e engade o que falta: «Yes! destination».",
+            "es": "Celébralo y añade lo que falta: «Yes! destination»."
+          }
+        }
+      },
+      {
+        "id": "reto.curso_5_6.05.2",
+        "semana": 2,
+        "fase": "practicar",
+        "nomeFase": {
+          "gl": "Practicar",
+          "es": "Practicar"
+        },
+        "frase": {
+          "en": "Have a safe trip!",
+          "gl": "Boa viaxe!",
+          "es": "¡Buen viaje!"
+        },
+        "queFacer": {
+          "gl": "Di «Have a safe trip!» e fai o xesto á vez. Agarda e, se o fai, facédeo xuntos outra vez.",
+          "es": "Di «Have a safe trip!» y haz el gesto a la vez. Espera y, si lo hace, hacedlo juntos otra vez."
+        },
+        "mans": {
+          "gl": "Acompáñaa dun xesto claro: dar, recibir ou sinalar a quen lle toca.",
+          "es": "Acompáñala de un gesto claro: dar, recibir o señalar a quien le toca."
+        },
+        "esperaSegundos": 5,
+        "nonPedir": {
+          "gl": "Non é unha proba: se responde na lingua da casa, tamén vale, e o xogo segue.",
+          "es": "No es una prueba: si responde en la lengua de casa, también vale, y el juego sigue."
+        },
+        "recast": {
+          "silencio": {
+            "gl": "Fai ti o xesto e volve dicir «Have a safe trip!» amodo, sorrindo, e segue co xogo.",
+            "es": "Haz tú el gesto y vuelve a decir «Have a safe trip!» despacio, sonriendo, y sigue con el juego."
+          },
+          "linguaCasa": {
+            "gl": "Acolle o que di na lingua da casa, asente e devólvello en inglés: «Have a safe trip!».",
+            "es": "Acoge lo que dice en la lengua de casa, asiente y devuélveselo en inglés: «Have a safe trip!»."
+          },
+          "unhaPalabra": {
+            "gl": "Celébrao e engade o que falta: «Yes! Have a safe trip!».",
+            "es": "Celébralo y añade lo que falta: «Yes! Have a safe trip!»."
+          }
+        }
+      },
+      {
+        "id": "reto.curso_5_6.05.3",
+        "semana": 3,
+        "fase": "combinar",
+        "nomeFase": {
+          "gl": "Combinar",
+          "es": "Combinar"
+        },
+        "frase": {
+          "en": "Do you remember which vehicle the explorers used when they crossed the wide river?",
+          "gl": "Lembras que vehículo usaron os exploradores cando cruzaron o río ancho?",
+          "es": "¿Te acuerdas de qué vehículo usaron los exploradores cuando cruzaron el río ancho?"
+        },
+        "queFacer": {
+          "gl": "Xunta a frase desta semana coa da semana pasada nun xogo curto: «Do you remember which vehicle the explorers used when they crossed the wide river?» e, despois, «Have a safe trip!».",
+          "es": "Junta la frase de esta semana con la de la semana pasada en un juego corto: «Do you remember which vehicle the explorers used when they crossed the wide river?» y, después, «Have a safe trip!»."
+        },
+        "mans": {
+          "gl": "Ten na man aquilo do que falas e ensínallo mentres o dis.",
+          "es": "Ten en la mano aquello de lo que hablas y enséñaselo mientras lo dices."
+        },
+        "esperaSegundos": 5,
+        "nonPedir": {
+          "gl": "Non é unha proba: se responde na lingua da casa, tamén vale, e o xogo segue.",
+          "es": "No es una prueba: si responde en la lengua de casa, también vale, y el juego sigue."
+        },
+        "recast": {
+          "silencio": {
+            "gl": "Fai ti o xesto e volve dicir «Do you remember which vehicle the explorers used when they crossed the wide river?» amodo, sorrindo, e segue co xogo.",
+            "es": "Haz tú el gesto y vuelve a decir «Do you remember which vehicle the explorers used when they crossed the wide river?» despacio, sonriendo, y sigue con el juego."
+          },
+          "linguaCasa": {
+            "gl": "Acolle o que di na lingua da casa, asente e devólvello en inglés: «Do you remember which vehicle the explorers used when they crossed the wide river?».",
+            "es": "Acoge lo que dice en la lengua de casa, asiente y devuélveselo en inglés: «Do you remember which vehicle the explorers used when they crossed the wide river?»."
+          },
+          "unhaPalabra": {
+            "gl": "Celébrao e engade o que falta: «Yes! Do you remember which vehicle the explorers used when they crossed the wide river?».",
+            "es": "Celébralo y añade lo que falta: «Yes! Do you remember which vehicle the explorers used when they crossed the wide river?»."
+          }
+        }
+      },
+      {
+        "id": "reto.curso_5_6.05.4",
+        "semana": 4,
+        "fase": "consolidar",
+        "nomeFase": {
+          "gl": "Consolidar",
+          "es": "Consolidar"
+        },
+        "frase": {
+          "en": "Good morning, traveler! Where are you going today?",
+          "gl": "Bos días, viaxeira ou viaxeiro! A onde vas hoxe?",
+          "es": "¡Buenos días, viajera o viajero! ¿Adónde vas hoy?"
+        },
+        "queFacer": {
+          "gl": "Di o comezo, «Good morning, traveler! Where are you going…», e deixa o oco. Se o completa co corpo ou cunha palabra, celébrao e di a frase enteira.",
+          "es": "Di el comienzo, «Good morning, traveler! Where are you going…», y deja el hueco. Si lo completa con el cuerpo o con una palabra, celébralo y di la frase entera."
+        },
+        "mans": {
+          "gl": "Ten na man aquilo do que falas e ensínallo mentres o dis.",
+          "es": "Ten en la mano aquello de lo que hablas y enséñaselo mientras lo dices."
+        },
+        "esperaSegundos": 5,
+        "nonPedir": {
+          "gl": "Non é unha proba: se responde na lingua da casa, tamén vale, e o xogo segue.",
+          "es": "No es una prueba: si responde en la lengua de casa, también vale, y el juego sigue."
+        },
+        "recast": {
+          "silencio": {
+            "gl": "Fai ti o xesto e volve dicir «Good morning, traveler! Where are you going today?» amodo, sorrindo, e segue co xogo.",
+            "es": "Haz tú el gesto y vuelve a decir «Good morning, traveler! Where are you going today?» despacio, sonriendo, y sigue con el juego."
+          },
+          "linguaCasa": {
+            "gl": "Acolle o que di na lingua da casa, asente e devólvello en inglés: «Good morning, traveler! Where are you going today?».",
+            "es": "Acoge lo que dice en la lengua de casa, asiente y devuélveselo en inglés: «Good morning, traveler! Where are you going today?»."
+          },
+          "unhaPalabra": {
+            "gl": "Celébrao e engade o que falta: «Yes! Good morning, traveler! Where are you going today?».",
+            "es": "Celébralo y añade lo que falta: «Yes! Good morning, traveler! Where are you going today?»."
+          }
+        }
+      }
+    ],
+    "lecturaCasa": {
+      "microcuento": "microcuento.curso_5_6.09"
+    },
+    "juegoCasa": {
+      "xogo": "xogo_07_circuito_5palabras"
+    },
+    "queObservarCasa": [
+      {
+        "gl": "Completa a frase co corpo ou cunha palabra",
+        "es": "Completa la frase con el cuerpo o con una palabra"
+      },
+      {
+        "gl": "Usa a frase noutro xogo, sen que llo propoñas",
+        "es": "Usa la frase en otro juego, sin que se lo propongas"
+      },
+      {
+        "gl": "Conta o que pasa mesturando linguas",
+        "es": "Cuenta lo que pasa mezclando lenguas"
+      }
+    ],
+    "reactivarCasa": {
+      "en": "suitcase",
+      "texto": {
+        "gl": "Noutro momento do día, sen avisar, volve dicir «suitcase», a palabra do mes pasado, sinalándoa.",
+        "es": "En otro momento del día, sin avisar, vuelve a decir «suitcase», la palabra del mes pasado, señalándola."
+      }
+    }
+  },
   "microcuento": {
     "id": "microcuento.curso_5_6.09",
     "titulo": {
@@ -419,5 +629,6 @@
         }
       }
     ]
-  }
+  },
+  "criterio": "normativa.curso_5_6"
 }

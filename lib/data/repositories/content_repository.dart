@@ -971,13 +971,16 @@ class ContentRepository {
 
   /// El plan curricular de Frank (F11), leído una vez. `null` si falla.
   Future<PlanCurricular?> loadPlanCurricular() =>
-      _cargandoPlan ??= PlanCurricular.cargar()
-          .then<PlanCurricular?>((p) => _planCurricular = p)
-          .catchError((Object e) {
-        _loadErrors.add(
-            ContentLoadFailure(PlanCurricular.calendarioAsset, e.toString()));
-        return null;
-      });
+      // Sin catchError: en un SynchronousFuture (el plan sembrado) no
+      // completa nunca.
+      _cargandoPlan ??= PlanCurricular.cargar().then<PlanCurricular?>(
+        (p) => _planCurricular = p,
+        onError: (Object e) {
+          _loadErrors.add(
+              ContentLoadFailure(PlanCurricular.calendarioAsset, e.toString()));
+          return null;
+        },
+      );
 
   PlanCurricular? get planCurricularSync => _planCurricular;
 
@@ -985,6 +988,17 @@ class ContentRepository {
   /// estructura), con su inglés y su gesto; `null` si aún no está leída.
   PezaDaUnidade? pezaSync(String ref) =>
       resolverPeza(ref, programa: _programaTpr, rexistro: _rexistroFrases);
+
+  /// Las dos palabras del contraste de sonido de la unidad (F4), si las dos
+  /// están en el banco.
+  (PezaDaUnidade, PezaDaUnidade)? contrasteSync(UnidadeDoMes unidade) =>
+      switch (unidade.contraste) {
+        final c? => switch ((pezaSync(c.a), pezaSync(c.b))) {
+            (final a?, final b?) => (a, b),
+            _ => null,
+          },
+        null => null,
+      };
 
   // --- LAS CANCIONES CON PULSO ---
 
@@ -1029,14 +1043,16 @@ class ContentRepository {
     // El núcleo del mes sale del plan curricular (F11): se lee con la unidad.
     final plan = loadPlanCurricular();
     if (ya != null) return plan.then((_) => ya);
-    return Future.wait([
-      _loader.loadUnidadeDoMes(cursoId, orden),
-      plan,
-    ]).then<UnidadeDoMes?>((r) {
-      final u = r[0] as UnidadeDoMes;
-      _unidadesDoMes[clave] = u;
-      return u;
-    }).catchError((Object e) {
+    // Encadenado y no con Future.wait: con el plan sembrado (un
+    // SynchronousFuture), Future.wait llama a su callback antes de tener su
+    // lista y revienta con un null check.
+    return _loader
+        .loadUnidadeDoMes(cursoId, orden)
+        .then<UnidadeDoMes?>((u) => plan.then((_) {
+              _unidadesDoMes[clave] = u;
+              return u;
+            }))
+        .catchError((Object e) {
       _loadErrors.add(ContentLoadFailure(
           ContentAssetLoader.unidadeDoMesPath(cursoId, orden), e.toString()));
       return null;

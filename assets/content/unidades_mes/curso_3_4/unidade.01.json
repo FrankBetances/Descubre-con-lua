@@ -64,7 +64,14 @@
       "es": "Cesto de mimbre tradicional"
     }
   ],
-  "contraste": null,
+  "contraste": {
+    "a": "3_4.setembro.s1.sit",
+    "b": "3_4.outubro.s2.see",
+    "nota": {
+      "gl": "A vogal curta e relaxada de «sit» fronte á longa e tensa de «see»: dilas ti, unha detrás da outra, exagerando a duración.",
+      "es": "La vocal corta y relajada de «sit» frente a la larga y tensa de «see»: dilas tú, una detrás de otra, exagerando la duración."
+    }
+  },
   "queObservar": [
     {
       "gl": "Dá as palmadas ao poñerse de pé",
@@ -80,7 +87,204 @@
     }
   ],
   "reactivar": [],
-  "hogar": null,
+  "hogar": {
+    "momento": {
+      "gl": "No xogo de construír, despois da merenda",
+      "es": "En el juego de construir, después de la merienda"
+    },
+    "minutos": 8,
+    "escena": {
+      "gl": "Bloques, caixas ou envases baleiros para amorear",
+      "es": "Bloques, cajas o envases vacíos para apilar"
+    },
+    "retosCasa": [
+      {
+        "id": "reto.curso_3_4.09.1",
+        "semana": 1,
+        "fase": "descubrir",
+        "nomeFase": {
+          "gl": "Descubrir",
+          "es": "Descubrir"
+        },
+        "frase": {
+          "en": "block",
+          "gl": "bloque",
+          "es": "bloque"
+        },
+        "queFacer": {
+          "gl": "Dio ti mentres o fas, cara a cara e á súa altura: «block». Só ten que escoitar e mirar.",
+          "es": "Dilo tú mientras lo haces, cara a cara y a su altura: «block». Solo tiene que escuchar y mirar."
+        },
+        "mans": {
+          "gl": "Sinala ou colle o que nomeas: bloque.",
+          "es": "Señala o coge lo que nombras: bloque."
+        },
+        "esperaSegundos": 5,
+        "nonPedir": {
+          "gl": "Non hai que dicilo nin pasalo á lingua da casa: se o fai co corpo, xa respondeu.",
+          "es": "No hay que decirlo ni pasarlo a la lengua de casa: si lo hace con el cuerpo, ya ha respondido."
+        },
+        "recast": {
+          "silencio": {
+            "gl": "Fai ti o xesto e volve dicir «block» amodo, sorrindo, e segue co xogo.",
+            "es": "Haz tú el gesto y vuelve a decir «block» despacio, sonriendo, y sigue con el juego."
+          },
+          "linguaCasa": {
+            "gl": "Acolle o que di na lingua da casa, asente e devólvello en inglés: «block».",
+            "es": "Acoge lo que dice en la lengua de casa, asiente y devuélveselo en inglés: «block»."
+          },
+          "unhaPalabra": {
+            "gl": "Celébrao e engade o que falta: «Yes! block».",
+            "es": "Celébralo y añade lo que falta: «Yes! block»."
+          }
+        }
+      },
+      {
+        "id": "reto.curso_3_4.09.2",
+        "semana": 2,
+        "fase": "practicar",
+        "nomeFase": {
+          "gl": "Practicar",
+          "es": "Practicar"
+        },
+        "frase": {
+          "en": "My turn",
+          "gl": "A miña quenda",
+          "es": "Mi turno"
+        },
+        "queFacer": {
+          "gl": "Di «My turn» e fai o xesto á vez. Agarda e, se o fai, facédeo xuntos outra vez.",
+          "es": "Di «My turn» y haz el gesto a la vez. Espera y, si lo hace, hacedlo juntos otra vez."
+        },
+        "mans": {
+          "gl": "Acompáñaa dun xesto claro: dar, recibir ou sinalar a quen lle toca.",
+          "es": "Acompáñala de un gesto claro: dar, recibir o señalar a quien le toca."
+        },
+        "esperaSegundos": 5,
+        "nonPedir": {
+          "gl": "Non hai que dicilo nin pasalo á lingua da casa: se o fai co corpo, xa respondeu.",
+          "es": "No hay que decirlo ni pasarlo a la lengua de casa: si lo hace con el cuerpo, ya ha respondido."
+        },
+        "recast": {
+          "silencio": {
+            "gl": "Fai ti o xesto e volve dicir «My turn» amodo, sorrindo, e segue co xogo.",
+            "es": "Haz tú el gesto y vuelve a decir «My turn» despacio, sonriendo, y sigue con el juego."
+          },
+          "linguaCasa": {
+            "gl": "Acolle o que di na lingua da casa, asente e devólvello en inglés: «My turn».",
+            "es": "Acoge lo que dice en la lengua de casa, asiente y devuélveselo en inglés: «My turn»."
+          },
+          "unhaPalabra": {
+            "gl": "Celébrao e engade o que falta: «Yes! My turn».",
+            "es": "Celébralo y añade lo que falta: «Yes! My turn»."
+          }
+        }
+      },
+      {
+        "id": "reto.curso_3_4.09.3",
+        "semana": 3,
+        "fase": "combinar",
+        "nomeFase": {
+          "gl": "Combinar",
+          "es": "Combinar"
+        },
+        "frase": {
+          "en": "Why did it fall?",
+          "gl": "Por que caeu?",
+          "es": "¿Por qué se ha caído?"
+        },
+        "queFacer": {
+          "gl": "Xunta a frase desta semana coa da semana pasada nun xogo curto: «Why did it fall?» e, despois, «My turn».",
+          "es": "Junta la frase de esta semana con la de la semana pasada en un juego corto: «Why did it fall?» y, después, «My turn»."
+        },
+        "mans": {
+          "gl": "Ten na man aquilo do que falas e ensínallo mentres o dis.",
+          "es": "Ten en la mano aquello de lo que hablas y enséñaselo mientras lo dices."
+        },
+        "esperaSegundos": 5,
+        "nonPedir": {
+          "gl": "Non hai que dicilo nin pasalo á lingua da casa: se o fai co corpo, xa respondeu.",
+          "es": "No hay que decirlo ni pasarlo a la lengua de casa: si lo hace con el cuerpo, ya ha respondido."
+        },
+        "recast": {
+          "silencio": {
+            "gl": "Fai ti o xesto e volve dicir «Why did it fall?» amodo, sorrindo, e segue co xogo.",
+            "es": "Haz tú el gesto y vuelve a decir «Why did it fall?» despacio, sonriendo, y sigue con el juego."
+          },
+          "linguaCasa": {
+            "gl": "Acolle o que di na lingua da casa, asente e devólvello en inglés: «Why did it fall?».",
+            "es": "Acoge lo que dice en la lengua de casa, asiente y devuélveselo en inglés: «Why did it fall?»."
+          },
+          "unhaPalabra": {
+            "gl": "Celébrao e engade o que falta: «Yes! Why did it fall?».",
+            "es": "Celébralo y añade lo que falta: «Yes! Why did it fall?»."
+          }
+        }
+      },
+      {
+        "id": "reto.curso_3_4.09.4",
+        "semana": 4,
+        "fase": "consolidar",
+        "nomeFase": {
+          "gl": "Consolidar",
+          "es": "Consolidar"
+        },
+        "frase": {
+          "en": "Do you need this tall block?",
+          "gl": "Necesitas este bloque alto?",
+          "es": "¿Necesitas este bloque alto?"
+        },
+        "queFacer": {
+          "gl": "Di o comezo, «Do you need this tall…», e deixa o oco. Se o completa co corpo ou cunha palabra, celébrao e di a frase enteira.",
+          "es": "Di el comienzo, «Do you need this tall…», y deja el hueco. Si lo completa con el cuerpo o con una palabra, celébralo y di la frase entera."
+        },
+        "mans": {
+          "gl": "Ten na man aquilo do que falas e ensínallo mentres o dis.",
+          "es": "Ten en la mano aquello de lo que hablas y enséñaselo mientras lo dices."
+        },
+        "esperaSegundos": 5,
+        "nonPedir": {
+          "gl": "Non hai que dicilo nin pasalo á lingua da casa: se o fai co corpo, xa respondeu.",
+          "es": "No hay que decirlo ni pasarlo a la lengua de casa: si lo hace con el cuerpo, ya ha respondido."
+        },
+        "recast": {
+          "silencio": {
+            "gl": "Fai ti o xesto e volve dicir «Do you need this tall block?» amodo, sorrindo, e segue co xogo.",
+            "es": "Haz tú el gesto y vuelve a decir «Do you need this tall block?» despacio, sonriendo, y sigue con el juego."
+          },
+          "linguaCasa": {
+            "gl": "Acolle o que di na lingua da casa, asente e devólvello en inglés: «Do you need this tall block?».",
+            "es": "Acoge lo que dice en la lengua de casa, asiente y devuélveselo en inglés: «Do you need this tall block?»."
+          },
+          "unhaPalabra": {
+            "gl": "Celébrao e engade o que falta: «Yes! Do you need this tall block?».",
+            "es": "Celébralo y añade lo que falta: «Yes! Do you need this tall block?»."
+          }
+        }
+      }
+    ],
+    "lecturaCasa": {
+      "microcuento": "microcuento.curso_3_4.01"
+    },
+    "juegoCasa": {
+      "xogo": "xogo_03_xigante_formiga"
+    },
+    "queObservarCasa": [
+      {
+        "gl": "Fai o xesto cando oe «block»",
+        "es": "Hace el gesto cuando oye «block»"
+      },
+      {
+        "gl": "Usa unha palabra ou unha fórmula no xogo, na lingua que sexa",
+        "es": "Usa una palabra o una fórmula en el juego, en la lengua que sea"
+      },
+      {
+        "gl": "Busca o momento do inglés ou o propón",
+        "es": "Busca el momento del inglés o lo propone"
+      }
+    ],
+    "reactivarCasa": null
+  },
   "microcuento": {
     "id": "microcuento.curso_3_4.01",
     "titulo": {
@@ -324,5 +528,6 @@
         }
       }
     ]
-  }
+  },
+  "criterio": "normativa.curso_3_4"
 }

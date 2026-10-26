@@ -10,6 +10,7 @@ import '../../../core/theme/app_theme.dart';
 import '../../../core/widgets/paxina_sen_scroll.dart';
 import '../../../data/models/asamblea_segundo_ciclo_model.dart'
     show MicroRutinaHogarSegundoCiclo;
+import '../../../data/models/hogar_model.dart';
 import '../../../data/models/rexistro_frases_model.dart';
 import '../../../core/widgets/cabecera.dart';
 import '../../../core/widgets/con_lingua.dart';
@@ -40,6 +41,15 @@ class NotaParaCasasScreen extends StatelessWidget {
 
   /// En 2.º ciclo, la micro-rutina de casa de la asamblea del mes.
   final MicroRutinaHogarSegundoCiclo? microRutina;
+
+  /// El reto de casa de esta semana (M4.4): el mismo que ve la familia en
+  /// Hoxe, con el momento del mes.
+  final RetoDeCasa? reto;
+  final LocalizedString? momentoDoReto;
+
+  /// El código para casa (P10): con él, la familia abre en su app el núcleo,
+  /// el reto de esta semana y qué mirar.
+  final String? codigoCasa;
   final AppLanguage language;
 
   /// Avisa a quien la abrió de que se cambió de lengua aquí.
@@ -51,6 +61,9 @@ class NotaParaCasasScreen extends StatelessWidget {
     required this.centroInteres,
     required this.nucleo,
     this.microRutina,
+    this.reto,
+    this.momentoDoReto,
+    this.codigoCasa,
     required this.language,
     this.onLanguageChanged,
     this.audioService,
@@ -84,6 +97,11 @@ class NotaParaCasasScreen extends StatelessWidget {
         'a repita: abonda con que a escoite.',
     es: 'En casa, decid una cuando salga en el día, con su gesto. Sin pedir que '
         'la repita: basta con que la escuche.',
+  );
+
+  static const _retoDaSemana = LocalizedString(
+    gl: 'O RETO DESTA SEMANA NA CASA',
+    es: 'EL RETO DE ESTA SEMANA EN CASA',
   );
 
   static const _paraCasa = LocalizedString(
@@ -208,6 +226,70 @@ class NotaParaCasasScreen extends StatelessWidget {
                     ),
                   ),
                 ],
+                if ((reto, momentoDoReto) case (final r?, final m?)) ...[
+                  const SizedBox(height: AppTheme.spaceMd),
+                  _Bloque(
+                    key: const Key('nota_reto_da_semana'),
+                    kicker: _retoDaSemana.resolve(language),
+                    acento: context.acento,
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        BotonEscuchar(
+                          audioService: audioService,
+                          texto: r.frase.en,
+                          language: AppLanguage.en,
+                          interfaz: language,
+                          style: estiloIngles(r.frase.en),
+                          comoChip: true,
+                          colorChip: context.acento,
+                          descripcion: r.frase.en,
+                          significado: r.frase.significado,
+                        ),
+                        const SizedBox(height: 6),
+                        Text(
+                          '${m.resolve(language)}. ${r.queFacer.resolve(language)}',
+                          style: theme.textTheme.bodyMedium?.copyWith(
+                            color: AppTheme.textSecondary,
+                            height: 1.4,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+                if (codigoCasa case final codigo?) ...[
+                  const SizedBox(height: AppTheme.spaceMd),
+                  _Bloque(
+                    key: const Key('nota_codigo_casa'),
+                    kicker: isGl ? 'CÓDIGO PARA A CASA' : 'CÓDIGO PARA CASA',
+                    acento: context.acento,
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        SelectableText(
+                          codigo,
+                          style: TextStyle(
+                            fontSize: 30,
+                            fontWeight: FontWeight.w800,
+                            letterSpacing: 2,
+                            color: context.acento,
+                          ),
+                        ),
+                        const SizedBox(height: 4),
+                        Text(
+                          isGl
+                              ? 'Na app, entra en Na casa, abre Hoxe e toca «Tes un código da escola?». Abre o núcleo, o reto desta semana e que mirar. Non se garda nada.'
+                              : 'En la app, entra en En casa, abre Hoy y toca «¿Tienes un código de la escuela?». Abre el núcleo, el reto de esta semana y qué mirar. No se guarda nada.',
+                          style: theme.textTheme.bodyMedium?.copyWith(
+                            color: AppTheme.textSecondary,
+                            height: 1.4,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
                 if (rutina != null) ...[
                   const SizedBox(height: AppTheme.spaceMd),
                   _Bloque(
@@ -270,6 +352,7 @@ class _Bloque extends StatelessWidget {
   final Color? acento;
 
   const _Bloque({
+    super.key,
     required this.kicker,
     required this.child,
     this.acento,

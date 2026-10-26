@@ -1,6 +1,7 @@
 import 'package:flutter/foundation.dart';
 
 import '../../core/localization/localized_string.dart';
+import 'hogar_model.dart';
 import 'microcuento_model.dart';
 
 /// La unidad de un mes de un curso: la única fuente de lo que se enseña ese
@@ -53,6 +54,9 @@ class UnidadeDoMes {
   /// El cuento dialógico de la unidad, desde 2-3 años. Nulo en 0-2.
   final Microcuento? microcuento;
 
+  /// La guía de casa del mes (F5): cuatro retos, lectura, juego y qué mirar.
+  final HogarDaUnidade? hogar;
+
   const UnidadeDoMes({
     required this.id,
     required this.curso,
@@ -71,6 +75,7 @@ class UnidadeDoMes {
     required this.queObservar,
     this.reactivar = const [],
     this.microcuento,
+    this.hogar,
   });
 
   factory UnidadeDoMes.fromJson(Map<String, dynamic> json) {
@@ -81,6 +86,7 @@ class UnidadeDoMes {
     final estructura = json['estructura'];
     final contraste = json['contraste'];
     final microcuento = json['microcuento'];
+    final hogar = json['hogar'];
     return UnidadeDoMes(
       id: json['id'] as String? ?? '',
       curso: json['curso'] as String? ?? '',
@@ -116,6 +122,9 @@ class UnidadeDoMes {
       ],
       microcuento: microcuento is Map
           ? Microcuento.fromJson(Map<String, dynamic>.from(microcuento))
+          : null,
+      hogar: hogar is Map
+          ? HogarDaUnidade.fromJson(Map<String, dynamic>.from(hogar))
           : null,
     );
   }

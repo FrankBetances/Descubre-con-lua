@@ -23,11 +23,15 @@ import '../../../data/repositories/content_repository.dart';
 import '../../calendario/widgets/nucleo_de_hoxe.dart';
 import '../../calendario/widgets/palabras_do_dia.dart';
 import '../../cuentos/views/cuento_viewer_screen.dart';
+import '../../cuentos/views/microcuento_screen.dart' show ModoMicrocuento;
+import '../../cuentos/widgets/boton_microcuento.dart';
 import '../../docentes/widgets/hoxe_na_aula.dart';
 import '../../juega/widgets/aula_ciclo_panel.dart' show nomeDoMes;
 import '../../steam/widgets/steam_no_calendario.dart';
 import '../nomes_familias.dart';
+import '../widgets/reto_da_semana.dart';
 import '../widgets/selector_idade.dart';
+import 'codigo_da_escola_screen.dart';
 import 'ponte_ao_dia_screen.dart';
 import 'xogo_de_hoxe_screen.dart';
 
@@ -415,16 +419,86 @@ class _HoxeFamiliasScreenState extends State<HoxeFamiliasScreen> {
                   onTap: () => _abrirPonteAoDia(ponte),
                 ),
               ],
-              // F11: lo que se trabaja este mes según el plan curricular.
+              // F5: el reto de la semana, y debajo lo que se trabaja este mes
+              // según el plan curricular (F11).
               RotuloPaso(
                 numero: 2,
                 titulo: lang == AppLanguage.gl
-                    ? 'O que se traballa este mes'
-                    : 'Lo que se trabaja este mes',
+                    ? 'O reto da semana e o tema do mes'
+                    : 'El reto de la semana y el tema del mes',
                 subtitulo: lang == AppLanguage.gl
-                    ? 'O mesmo tema que na escola, para a casa.'
-                    : 'El mismo tema que en la escuela, para casa.',
+                    ? 'O mesmo que na escola, para a casa.'
+                    : 'Lo mismo que en la escuela, para casa.',
               ),
+              if (widget.repository
+                      .unidadeDoMesSync(widget.cursoId, _toca.dia.mesCalendario)
+                      ?.hogar
+                  case final hogar?) ...[
+                RetoDaSemana(
+                  hogar: hogar,
+                  semana: _toca.dia.semana,
+                  language: lang,
+                  audioService: widget.audioService,
+                  lectura: hogar.microcuento == null
+                      ? null
+                      : BotonMicrocuento(
+                          repository: widget.repository,
+                          cursoId: widget.cursoId,
+                          mesCalendario: _toca.dia.mesCalendario,
+                          modo: ModoMicrocuento.casa,
+                          language: lang,
+                          onLanguageChanged: widget.onLanguageChanged,
+                          audioService: widget.audioService,
+                        ),
+                ),
+                const SizedBox(height: 14),
+              ],
+              // P10: el código que da la escuela abre el mes y la semana que
+              // dice la nota, aunque no sean los de hoy.
+              Material(
+                key: const Key('hoxe_codigo_escola'),
+                color: Colors.white,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(14),
+                  side: const BorderSide(color: AppTheme.border),
+                ),
+                child: InkWell(
+                  borderRadius: BorderRadius.circular(14),
+                  onTap: () => Navigator.of(context).push(RutaLua(
+                    de: context,
+                    builder: (_) => CodigoDaEscolaScreen(
+                      repository: widget.repository,
+                      language: lang,
+                      onLanguageChanged: widget.onLanguageChanged,
+                      audioService: widget.audioService,
+                    ),
+                  )),
+                  child: Padding(
+                    padding: const EdgeInsets.all(14),
+                    child: Row(
+                      children: [
+                        Icon(Icons.pin_rounded, color: context.acento),
+                        const SizedBox(width: 12),
+                        Expanded(
+                          child: Text(
+                            lang == AppLanguage.gl
+                                ? 'Tes un código da escola?'
+                                : '¿Tienes un código de la escuela?',
+                            style: const TextStyle(
+                              fontSize: 16,
+                              fontWeight: FontWeight.w700,
+                              color: AppTheme.textPrimary,
+                            ),
+                          ),
+                        ),
+                        Icon(Icons.chevron_right_rounded,
+                            color: context.acento),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+              const SizedBox(height: 14),
               TarxetaCurricular(
                 cursoId: widget.cursoId,
                 mesCalendario: _toca.dia.mesCalendario,

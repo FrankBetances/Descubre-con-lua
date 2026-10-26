@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../core/widgets/pauta_espera_recast.dart';
 import '../../../core/audio/offline_audio_service.dart';
 import '../../../core/brand/lamina_vector.dart';
 import '../../../core/audio/voice_id.dart';
@@ -404,6 +405,7 @@ class LaminaDetailScreen extends StatelessWidget {
                             color: context.acento,
                           ),
                         ),
+                        PautaEsperaRecast(tipo: 'lamina', language: lang),
                       ],
                     ),
                   ),

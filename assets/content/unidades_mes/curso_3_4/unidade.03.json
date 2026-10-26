@@ -69,7 +69,14 @@
       "es": "Una calabaza pequeña"
     }
   ],
-  "contraste": null,
+  "contraste": {
+    "a": "3_4.setembro.s3.hug",
+    "b": "3_4.outubro.s4.hop",
+    "nota": {
+      "gl": "A «u» de «hug» é curta e escura, a medio camiño dunha «a»; a «o» de «hop» é unha «a» ben aberta. Dilas ti, unha detrás da outra.",
+      "es": "La «u» de «hug» es corta y oscura, a medio camino de una «a»; la «o» de «hop» es una «a» bien abierta. Dilas tú, una detrás de otra."
+    }
+  },
   "queObservar": [
     {
       "gl": "Salta cos pés xuntos cando a castaña estoupa",
@@ -87,7 +94,210 @@
   "reactivar": [
     "3_4.novembro.s1.leaf"
   ],
-  "hogar": null,
+  "hogar": {
+    "momento": {
+      "gl": "No xogo de construír, despois da merenda",
+      "es": "En el juego de construir, después de la merienda"
+    },
+    "minutos": 8,
+    "escena": {
+      "gl": "Bloques, caixas ou envases baleiros para amorear",
+      "es": "Bloques, cajas o envases vacíos para apilar"
+    },
+    "retosCasa": [
+      {
+        "id": "reto.curso_3_4.11.1",
+        "semana": 1,
+        "fase": "descubrir",
+        "nomeFase": {
+          "gl": "Descubrir",
+          "es": "Descubrir"
+        },
+        "frase": {
+          "en": "make",
+          "gl": "facer",
+          "es": "hacer"
+        },
+        "queFacer": {
+          "gl": "Dio ti mentres o fas, cara a cara e á súa altura: «make». Só ten que escoitar e mirar.",
+          "es": "Dilo tú mientras lo haces, cara a cara y a su altura: «make». Solo tiene que escuchar y mirar."
+        },
+        "mans": {
+          "gl": "Sinala ou colle o que nomeas: facer.",
+          "es": "Señala o coge lo que nombras: hacer."
+        },
+        "esperaSegundos": 5,
+        "nonPedir": {
+          "gl": "Non hai que dicilo nin pasalo á lingua da casa: se o fai co corpo, xa respondeu.",
+          "es": "No hay que decirlo ni pasarlo a la lengua de casa: si lo hace con el cuerpo, ya ha respondido."
+        },
+        "recast": {
+          "silencio": {
+            "gl": "Fai ti o xesto e volve dicir «make» amodo, sorrindo, e segue co xogo.",
+            "es": "Haz tú el gesto y vuelve a decir «make» despacio, sonriendo, y sigue con el juego."
+          },
+          "linguaCasa": {
+            "gl": "Acolle o que di na lingua da casa, asente e devólvello en inglés: «make».",
+            "es": "Acoge lo que dice en la lengua de casa, asiente y devuélveselo en inglés: «make»."
+          },
+          "unhaPalabra": {
+            "gl": "Celébrao e engade o que falta: «Yes! make».",
+            "es": "Celébralo y añade lo que falta: «Yes! make»."
+          }
+        }
+      },
+      {
+        "id": "reto.curso_3_4.11.2",
+        "semana": 2,
+        "fase": "practicar",
+        "nomeFase": {
+          "gl": "Practicar",
+          "es": "Practicar"
+        },
+        "frase": {
+          "en": "Help me, please",
+          "gl": "Axúdame, por favor",
+          "es": "Ayúdame, por favor"
+        },
+        "queFacer": {
+          "gl": "Di «Help me, please» e fai o xesto á vez. Agarda e, se o fai, facédeo xuntos outra vez.",
+          "es": "Di «Help me, please» y haz el gesto a la vez. Espera y, si lo hace, hacedlo juntos otra vez."
+        },
+        "mans": {
+          "gl": "Acompáñaa dun xesto claro: dar, recibir ou sinalar a quen lle toca.",
+          "es": "Acompáñala de un gesto claro: dar, recibir o señalar a quien le toca."
+        },
+        "esperaSegundos": 5,
+        "nonPedir": {
+          "gl": "Non hai que dicilo nin pasalo á lingua da casa: se o fai co corpo, xa respondeu.",
+          "es": "No hay que decirlo ni pasarlo a la lengua de casa: si lo hace con el cuerpo, ya ha respondido."
+        },
+        "recast": {
+          "silencio": {
+            "gl": "Fai ti o xesto e volve dicir «Help me, please» amodo, sorrindo, e segue co xogo.",
+            "es": "Haz tú el gesto y vuelve a decir «Help me, please» despacio, sonriendo, y sigue con el juego."
+          },
+          "linguaCasa": {
+            "gl": "Acolle o que di na lingua da casa, asente e devólvello en inglés: «Help me, please».",
+            "es": "Acoge lo que dice en la lengua de casa, asiente y devuélveselo en inglés: «Help me, please»."
+          },
+          "unhaPalabra": {
+            "gl": "Celébrao e engade o que falta: «Yes! Help me, please».",
+            "es": "Celébralo y añade lo que falta: «Yes! Help me, please»."
+          }
+        }
+      },
+      {
+        "id": "reto.curso_3_4.11.3",
+        "semana": 3,
+        "fase": "combinar",
+        "nomeFase": {
+          "gl": "Combinar",
+          "es": "Combinar"
+        },
+        "frase": {
+          "en": "Help me, please!",
+          "gl": "Axúdame, por favor!",
+          "es": "¡Ayúdame, por favor!"
+        },
+        "queFacer": {
+          "gl": "Xunta a frase desta semana coa da semana pasada nun xogo curto: «Help me, please!» e, despois, «Help me, please».",
+          "es": "Junta la frase de esta semana con la de la semana pasada en un juego corto: «Help me, please!» y, después, «Help me, please»."
+        },
+        "mans": {
+          "gl": "Ten na man aquilo do que falas e ensínallo mentres o dis.",
+          "es": "Ten en la mano aquello de lo que hablas y enséñaselo mientras lo dices."
+        },
+        "esperaSegundos": 5,
+        "nonPedir": {
+          "gl": "Non hai que dicilo nin pasalo á lingua da casa: se o fai co corpo, xa respondeu.",
+          "es": "No hay que decirlo ni pasarlo a la lengua de casa: si lo hace con el cuerpo, ya ha respondido."
+        },
+        "recast": {
+          "silencio": {
+            "gl": "Fai ti o xesto e volve dicir «Help me, please!» amodo, sorrindo, e segue co xogo.",
+            "es": "Haz tú el gesto y vuelve a decir «Help me, please!» despacio, sonriendo, y sigue con el juego."
+          },
+          "linguaCasa": {
+            "gl": "Acolle o que di na lingua da casa, asente e devólvello en inglés: «Help me, please!».",
+            "es": "Acoge lo que dice en la lengua de casa, asiente y devuélveselo en inglés: «Help me, please!»."
+          },
+          "unhaPalabra": {
+            "gl": "Celébrao e engade o que falta: «Yes! Help me, please!».",
+            "es": "Celébralo y añade lo que falta: «Yes! Help me, please!»."
+          }
+        }
+      },
+      {
+        "id": "reto.curso_3_4.11.4",
+        "semana": 4,
+        "fase": "consolidar",
+        "nomeFase": {
+          "gl": "Consolidar",
+          "es": "Consolidar"
+        },
+        "frase": {
+          "en": "Here you are! Now it is your turn to build.",
+          "gl": "Aquí tes! Agora tócache construír a ti.",
+          "es": "¡Aquí tienes! Ahora te toca construir a ti."
+        },
+        "queFacer": {
+          "gl": "Di o comezo, «Here you are! Now it is your turn to…», e deixa o oco. Se o completa co corpo ou cunha palabra, celébrao e di a frase enteira.",
+          "es": "Di el comienzo, «Here you are! Now it is your turn to…», y deja el hueco. Si lo completa con el cuerpo o con una palabra, celébralo y di la frase entera."
+        },
+        "mans": {
+          "gl": "Ten na man aquilo do que falas e ensínallo mentres o dis.",
+          "es": "Ten en la mano aquello de lo que hablas y enséñaselo mientras lo dices."
+        },
+        "esperaSegundos": 5,
+        "nonPedir": {
+          "gl": "Non hai que dicilo nin pasalo á lingua da casa: se o fai co corpo, xa respondeu.",
+          "es": "No hay que decirlo ni pasarlo a la lengua de casa: si lo hace con el cuerpo, ya ha respondido."
+        },
+        "recast": {
+          "silencio": {
+            "gl": "Fai ti o xesto e volve dicir «Here you are! Now it is your turn to build.» amodo, sorrindo, e segue co xogo.",
+            "es": "Haz tú el gesto y vuelve a decir «Here you are! Now it is your turn to build.» despacio, sonriendo, y sigue con el juego."
+          },
+          "linguaCasa": {
+            "gl": "Acolle o que di na lingua da casa, asente e devólvello en inglés: «Here you are! Now it is your turn to build.».",
+            "es": "Acoge lo que dice en la lengua de casa, asiente y devuélveselo en inglés: «Here you are! Now it is your turn to build.»."
+          },
+          "unhaPalabra": {
+            "gl": "Celébrao e engade o que falta: «Yes! Here you are! Now it is your turn to build.».",
+            "es": "Celébralo y añade lo que falta: «Yes! Here you are! Now it is your turn to build.»."
+          }
+        }
+      }
+    ],
+    "lecturaCasa": {
+      "microcuento": "microcuento.curso_3_4.03"
+    },
+    "juegoCasa": {
+      "xogo": "xogo_03_xigante_formiga"
+    },
+    "queObservarCasa": [
+      {
+        "gl": "Fai o xesto cando oe «make»",
+        "es": "Hace el gesto cuando oye «make»"
+      },
+      {
+        "gl": "Usa unha palabra ou unha fórmula no xogo, na lingua que sexa",
+        "es": "Usa una palabra o una fórmula en el juego, en la lengua que sea"
+      },
+      {
+        "gl": "Busca o momento do inglés ou o propón",
+        "es": "Busca el momento del inglés o lo propone"
+      }
+    ],
+    "reactivarCasa": {
+      "en": "cup",
+      "texto": {
+        "gl": "Noutro momento do día, sen avisar, volve dicir «cup», a palabra do mes pasado, sinalándoa.",
+        "es": "En otro momento del día, sin avisar, vuelve a decir «cup», la palabra del mes pasado, señalándola."
+      }
+    }
+  },
   "microcuento": {
     "id": "microcuento.curso_3_4.03",
     "titulo": {
@@ -331,5 +541,6 @@
         }
       }
     ]
-  }
+  },
+  "criterio": "normativa.curso_3_4"
 }

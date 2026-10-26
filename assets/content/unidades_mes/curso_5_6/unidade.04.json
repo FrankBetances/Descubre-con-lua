@@ -89,7 +89,14 @@
       "es": "Una cuerda en el suelo"
     }
   ],
-  "contraste": null,
+  "contraste": {
+    "a": "4_5.xaneiro.s1.left",
+    "b": "0_2.setembro.s4.lift",
+    "nota": {
+      "gl": "A «e» de «left» fronte á «i» curta e relaxada de «lift»: dilas ti, unha detrás da outra, sen cambiar nada máis.",
+      "es": "La «e» de «left» frente a la «i» corta y relajada de «lift»: dilas tú, una detrás de otra, sin cambiar nada más."
+    }
+  },
   "queObservar": [
     {
       "gl": "Xira á esquerda sen soltar a man do compañeiro",
@@ -103,7 +110,210 @@
   "reactivar": [
     "3_4.novembro.s2.chestnut"
   ],
-  "hogar": null,
+  "hogar": {
+    "momento": {
+      "gl": "Na mesa, pintando xuntos",
+      "es": "En la mesa, pintando juntos"
+    },
+    "minutos": 10,
+    "escena": {
+      "gl": "Un papel grande e unha soa cor para compartir",
+      "es": "Un papel grande y un solo color para compartir"
+    },
+    "retosCasa": [
+      {
+        "id": "reto.curso_5_6.12.1",
+        "semana": 1,
+        "fase": "descubrir",
+        "nomeFase": {
+          "gl": "Descubrir",
+          "es": "Descubrir"
+        },
+        "frase": {
+          "en": "sticky",
+          "gl": "pegañento",
+          "es": "pegajoso"
+        },
+        "queFacer": {
+          "gl": "Dio ti mentres o fas, cara a cara e á súa altura: «sticky». Só ten que escoitar e mirar.",
+          "es": "Dilo tú mientras lo haces, cara a cara y a su altura: «sticky». Solo tiene que escuchar y mirar."
+        },
+        "mans": {
+          "gl": "Sinala ou colle o que nomeas: pegañento.",
+          "es": "Señala o coge lo que nombras: pegajoso."
+        },
+        "esperaSegundos": 5,
+        "nonPedir": {
+          "gl": "Non é unha proba: se responde na lingua da casa, tamén vale, e o xogo segue.",
+          "es": "No es una prueba: si responde en la lengua de casa, también vale, y el juego sigue."
+        },
+        "recast": {
+          "silencio": {
+            "gl": "Fai ti o xesto e volve dicir «sticky» amodo, sorrindo, e segue co xogo.",
+            "es": "Haz tú el gesto y vuelve a decir «sticky» despacio, sonriendo, y sigue con el juego."
+          },
+          "linguaCasa": {
+            "gl": "Acolle o que di na lingua da casa, asente e devólvello en inglés: «sticky».",
+            "es": "Acoge lo que dice en la lengua de casa, asiente y devuélveselo en inglés: «sticky»."
+          },
+          "unhaPalabra": {
+            "gl": "Celébrao e engade o que falta: «Yes! sticky».",
+            "es": "Celébralo y añade lo que falta: «Yes! sticky»."
+          }
+        }
+      },
+      {
+        "id": "reto.curso_5_6.12.2",
+        "semana": 2,
+        "fase": "practicar",
+        "nomeFase": {
+          "gl": "Practicar",
+          "es": "Practicar"
+        },
+        "frase": {
+          "en": "I feel proud of our work",
+          "gl": "Que orgullo do noso traballo",
+          "es": "Qué orgullo de nuestro trabajo"
+        },
+        "queFacer": {
+          "gl": "Di «I feel proud of our work» e fai o xesto á vez. Agarda e, se o fai, facédeo xuntos outra vez.",
+          "es": "Di «I feel proud of our work» y haz el gesto a la vez. Espera y, si lo hace, hacedlo juntos otra vez."
+        },
+        "mans": {
+          "gl": "Acompáñaa dun xesto claro: dar, recibir ou sinalar a quen lle toca.",
+          "es": "Acompáñala de un gesto claro: dar, recibir o señalar a quien le toca."
+        },
+        "esperaSegundos": 5,
+        "nonPedir": {
+          "gl": "Non é unha proba: se responde na lingua da casa, tamén vale, e o xogo segue.",
+          "es": "No es una prueba: si responde en la lengua de casa, también vale, y el juego sigue."
+        },
+        "recast": {
+          "silencio": {
+            "gl": "Fai ti o xesto e volve dicir «I feel proud of our work» amodo, sorrindo, e segue co xogo.",
+            "es": "Haz tú el gesto y vuelve a decir «I feel proud of our work» despacio, sonriendo, y sigue con el juego."
+          },
+          "linguaCasa": {
+            "gl": "Acolle o que di na lingua da casa, asente e devólvello en inglés: «I feel proud of our work».",
+            "es": "Acoge lo que dice en la lengua de casa, asiente y devuélveselo en inglés: «I feel proud of our work»."
+          },
+          "unhaPalabra": {
+            "gl": "Celébrao e engade o que falta: «Yes! I feel proud of our work».",
+            "es": "Celébralo y añade lo que falta: «Yes! I feel proud of our work»."
+          }
+        }
+      },
+      {
+        "id": "reto.curso_5_6.12.3",
+        "semana": 3,
+        "fase": "combinar",
+        "nomeFase": {
+          "gl": "Combinar",
+          "es": "Combinar"
+        },
+        "frase": {
+          "en": "Can I use the blue paint next to you?",
+          "gl": "Podo usar a pintura azul que tes ao lado?",
+          "es": "¿Puedo usar la pintura azul que tienes al lado?"
+        },
+        "queFacer": {
+          "gl": "Xunta a frase desta semana coa da semana pasada nun xogo curto: «Can I use the blue paint next to you?» e, despois, «I feel proud of our work».",
+          "es": "Junta la frase de esta semana con la de la semana pasada en un juego corto: «Can I use the blue paint next to you?» y, después, «I feel proud of our work»."
+        },
+        "mans": {
+          "gl": "Ten na man aquilo do que falas e ensínallo mentres o dis.",
+          "es": "Ten en la mano aquello de lo que hablas y enséñaselo mientras lo dices."
+        },
+        "esperaSegundos": 5,
+        "nonPedir": {
+          "gl": "Non é unha proba: se responde na lingua da casa, tamén vale, e o xogo segue.",
+          "es": "No es una prueba: si responde en la lengua de casa, también vale, y el juego sigue."
+        },
+        "recast": {
+          "silencio": {
+            "gl": "Fai ti o xesto e volve dicir «Can I use the blue paint next to you?» amodo, sorrindo, e segue co xogo.",
+            "es": "Haz tú el gesto y vuelve a decir «Can I use the blue paint next to you?» despacio, sonriendo, y sigue con el juego."
+          },
+          "linguaCasa": {
+            "gl": "Acolle o que di na lingua da casa, asente e devólvello en inglés: «Can I use the blue paint next to you?».",
+            "es": "Acoge lo que dice en la lengua de casa, asiente y devuélveselo en inglés: «Can I use the blue paint next to you?»."
+          },
+          "unhaPalabra": {
+            "gl": "Celébrao e engade o que falta: «Yes! Can I use the blue paint next to you?».",
+            "es": "Celébralo y añade lo que falta: «Yes! Can I use the blue paint next to you?»."
+          }
+        }
+      },
+      {
+        "id": "reto.curso_5_6.12.4",
+        "semana": 4,
+        "fase": "consolidar",
+        "nomeFase": {
+          "gl": "Consolidar",
+          "es": "Consolidar"
+        },
+        "frase": {
+          "en": "Thank you for being generous and sharing.",
+          "gl": "Grazas por ser xenerosa ou xeneroso e compartir.",
+          "es": "Gracias por ser generosa o generoso y compartir."
+        },
+        "queFacer": {
+          "gl": "Di o comezo, «Thank you for being generous and…», e deixa o oco. Se o completa co corpo ou cunha palabra, celébrao e di a frase enteira.",
+          "es": "Di el comienzo, «Thank you for being generous and…», y deja el hueco. Si lo completa con el cuerpo o con una palabra, celébralo y di la frase entera."
+        },
+        "mans": {
+          "gl": "Ten na man aquilo do que falas e ensínallo mentres o dis.",
+          "es": "Ten en la mano aquello de lo que hablas y enséñaselo mientras lo dices."
+        },
+        "esperaSegundos": 5,
+        "nonPedir": {
+          "gl": "Non é unha proba: se responde na lingua da casa, tamén vale, e o xogo segue.",
+          "es": "No es una prueba: si responde en la lengua de casa, también vale, y el juego sigue."
+        },
+        "recast": {
+          "silencio": {
+            "gl": "Fai ti o xesto e volve dicir «Thank you for being generous and sharing.» amodo, sorrindo, e segue co xogo.",
+            "es": "Haz tú el gesto y vuelve a decir «Thank you for being generous and sharing.» despacio, sonriendo, y sigue con el juego."
+          },
+          "linguaCasa": {
+            "gl": "Acolle o que di na lingua da casa, asente e devólvello en inglés: «Thank you for being generous and sharing.».",
+            "es": "Acoge lo que dice en la lengua de casa, asiente y devuélveselo en inglés: «Thank you for being generous and sharing.»."
+          },
+          "unhaPalabra": {
+            "gl": "Celébrao e engade o que falta: «Yes! Thank you for being generous and sharing.».",
+            "es": "Celébralo y añade lo que falta: «Yes! Thank you for being generous and sharing.»."
+          }
+        }
+      }
+    ],
+    "lecturaCasa": {
+      "microcuento": "microcuento.curso_5_6.04"
+    },
+    "juegoCasa": {
+      "steam": "STEAM-5_6-12"
+    },
+    "queObservarCasa": [
+      {
+        "gl": "Completa a frase co corpo ou cunha palabra",
+        "es": "Completa la frase con el cuerpo o con una palabra"
+      },
+      {
+        "gl": "Usa a frase noutro xogo, sen que llo propoñas",
+        "es": "Usa la frase en otro juego, sin que se lo propongas"
+      },
+      {
+        "gl": "Conta o que pasa mesturando linguas",
+        "es": "Cuenta lo que pasa mezclando lenguas"
+      }
+    ],
+    "reactivarCasa": {
+      "en": "draw",
+      "texto": {
+        "gl": "Noutro momento do día, sen avisar, volve dicir «draw», a palabra do mes pasado, sinalándoa.",
+        "es": "En otro momento del día, sin avisar, vuelve a decir «draw», la palabra del mes pasado, señalándola."
+      }
+    }
+  },
   "microcuento": {
     "id": "microcuento.curso_5_6.04",
     "titulo": {
@@ -425,5 +635,6 @@
         }
       }
     ]
-  }
+  },
+  "criterio": "normativa.curso_5_6"
 }

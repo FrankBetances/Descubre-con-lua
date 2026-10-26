@@ -542,6 +542,7 @@ class _HoxeDocentesScreenState extends State<HoxeDocentesScreen> {
                     de: context,
                     builder: (_) => DinamicasScreen(
                       repository: widget.repository,
+                      audioService: widget.audioService,
                       initialLanguage: lang,
                       onLanguageChanged: widget.onLanguageChanged,
                     ),

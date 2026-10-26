@@ -16,7 +16,12 @@ casa y *Hoy · Calendario · Recursos · Yo* en la escuela.
   semana, la dinámica y cuándo toca la ciencia del curso.
 - **Hoy, en casa** — el juego de tres minutos del día, con el momento como
   título y un solo botón, sus palabras en inglés con voz y el cuento de la
-  semana. Si la criatura llega nueva a un curso empezado, **Ponte al día**
+  semana. Debajo, **el reto de la semana**: una frase del mes con su voz para la
+  persona adulta, el momento fijo del día en que se dice, qué hacer, la espera,
+  qué no pedir y qué responder si la criatura calla, contesta en la lengua de
+  casa o dice una palabra; y el juego del mes, qué mirar —sin marcar nada— y la
+  palabra del mes anterior. El mismo reto sale en cada día del calendario de
+  casa y en la nota que la escuela da a las familias. Si la criatura llega nueva a un curso empezado, **Ponte al día**
   enseña las palabras de antes que dan por sabidas las asambleas y los retos
   de los cuentos del mes, dos
   o tres al día, con su gesto y su voz. Se elige la edad y el mes; no se guarda
@@ -32,6 +37,17 @@ casa y *Hoy · Calendario · Recursos · Yo* en la escuela.
   persona, el habla paralela, la espera en tres tiempos, la expansión, el
   recast, qué cabe esperar en cada edad y qué no mide la app. Cada técnica
   trae un ejemplo con su frase en inglés y su voz.
+  En casa, delante, la guía de casa en diez ideas y la guía de cada edad, de
+  0 meses a 6 años.
+- **Escucha la diferencia** — desde 2-3 años, cada mes trae un par de palabras
+  del curso que la voz inglesa de la app distingue (*fit* y *feet*, *bus* y
+  *buzz*…), para el oído de la persona adulta, con cómo decirlas. Está en el
+  calendario y en la tarjeta del mes del Modo Aula.
+- **El Planificador** — en Recursos de la escuela: el área por su nombre
+  oficial, el criterio de cada curso y, mes a mes, el centro de interés, la
+  unidad del plan curricular y el núcleo. El criterio sale del texto curricular
+  aportado al proyecto y está pendiente de contrastar con el Diario Oficial de
+  Galicia; la app lo dice en la misma pantalla.
 - **El microcuento del mes** — de 2-3 a 5-6, un cuento dialógico de tres o
   cuatro láminas por unidad: en el aula, debajo de «Comenzar la asamblea», con
   la tríada y el guion de recast; en casa, en Explorar → Cuentos, con una
@@ -178,12 +194,13 @@ comprobado y nombra el comando que lo comprobó.
 | Canciones con pulso | 10, una por mes del curso, en Recursos del Portal Docentes, con el pulso dibujado |
 | Calendario e inglés | 50 meses de calendario (5 cursos × 10, de 0-2 a 5-6 años) · 4.000 palabras inglesas, 800 por curso, cinco nuevas al día · 63 colocaciones · 44 fonemas |
 | Contenido · segundo ciclo | 3 asambleas matinales, una por nivel (4.º, 5.º y 6.º de Infantil), de 4 fases cada una |
-| Cuentos | 303: 200 de la semana —uno por semana de cada curso, de septiembre a junio—, cada uno con las 20 palabras inglesas de su semana dentro del texto, y 103 más que no son de ninguna semana |
+| Cuentos | 100 cuentos dialogados de tres o cuatro láminas, cada uno atado a su unidad del plan curricular, y 40 microcuentos, uno por mes desde 2-3 años. Además, 303 de antes: 200 de la semana —uno por semana de cada curso, de septiembre a junio—, cada uno con las 20 palabras inglesas de su semana dentro del texto, y 103 más que no son de ninguna semana |
 | Ponte al día | 250 palabras de cursos o meses anteriores que dan por sabidas 86 de las 133 órdenes de las asambleas y 68 de los 303 retos de los cuentos, revisadas a mano, cada una con su gesto y su voz |
 | Cápsulas | 12: 6 de Academy para las familias y 6 de formación docente |
-| STEAM | 5 sesiones de ciencia, una por curso de 12 meses a 6 años, cada una en versión de aula y de casa |
-| Voz | 22.263 locuciones grabadas dentro de la app: 14.531 en el módulo base (852 gl + 852 es + 12.827 en) y 7.732 en el paquete de voz de instalación, los significados en gallego (3.865) y castellano (3.867) de las palabras inglesas del curso |
-| Láminas | 80 propias, dibujadas como datos: 50 de vocabulario y 30 escenas del cuento |
+| STEAM | 5 sesiones de ciencia, una por curso de 12 meses a 6 años, y 50 experimentos del mes, uno por mes y curso, cada uno en versión de aula y de casa |
+| Voz | 36.378 locuciones grabadas dentro de la app: 16.920 en inglés y 9.729 en gallego y otras tantas en castellano, entre el módulo base y el paquete de voz de instalación |
+| Láminas | 350 en pixel art para los 100 cuentos dialogados, con Lúa desde su rejilla; y 80 propias, dibujadas como datos: 50 de vocabulario y 30 escenas del cuento |
+| Casa | En cada uno de los 50 meses, cuatro retos semanales, la lectura del microcuento, un juego, qué mirar y la palabra del mes anterior; una guía de casa y una guía por edad |
 | Premios | 6 niveles, 9 insignias y 6 medallas de calendario, todos de la persona adulta |
 | Android | `minSdk 24` · `compileSdk` y `targetSdk` 36 |
 

@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 
+import '../../../core/widgets/pauta_espera_recast.dart';
 import '../../../core/audio/offline_audio_service.dart';
 import '../../../core/audio/voice_id.dart';
 import '../../../core/audio/widgets/boton_escuchar.dart';
@@ -266,6 +267,8 @@ class _SteamSesionGuiadaScreenState extends State<SteamSesionGuiadaScreen> {
                   const SizedBox(height: AppTheme.spaceSm),
                   _orden(orden),
                 ],
+                const SizedBox(height: AppTheme.spaceSm),
+                PautaEsperaRecast(tipo: 'steam', language: _language),
               ],
             ),
             const SizedBox(height: AppTheme.spaceMd),

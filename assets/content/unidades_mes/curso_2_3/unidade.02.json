@@ -60,7 +60,14 @@
       "es": "Sin material: solo el cuerpo"
     }
   ],
-  "contraste": null,
+  "contraste": {
+    "a": "2_3.setembro.s2.fit",
+    "b": "3_4.outubro.s1.feet",
+    "nota": {
+      "gl": "A vogal curta e relaxada de «fit» fronte á longa e tensa de «feet»: dilas ti, unha detrás da outra, exagerando a duración.",
+      "es": "La vocal corta y relajada de «fit» frente a la larga y tensa de «feet»: dilas tú, una detrás de otra, exagerando la duración."
+    }
+  },
   "queObservar": [
     {
       "gl": "Toca a parte que nomeas, aínda que vaia máis amodo",
@@ -74,7 +81,208 @@
   "reactivar": [
     "frase.cmd.setembro.2_3.02"
   ],
-  "hogar": null,
+  "hogar": {
+    "momento": {
+      "gl": "No baño, coa bañeira ou o lavabo",
+      "es": "En el baño, con la bañera o el lavabo"
+    },
+    "minutos": 8,
+    "escena": {
+      "gl": "Un vaso de plástico e unha esponxa",
+      "es": "Un vaso de plástico y una esponja"
+    },
+    "retosCasa": [
+      {
+        "id": "reto.curso_2_3.10.1",
+        "semana": 1,
+        "fase": "descubrir",
+        "nomeFase": {
+          "gl": "Descubrir",
+          "es": "Descubrir"
+        },
+        "frase": {
+          "en": "Boat",
+          "gl": "barco",
+          "es": "barco"
+        },
+        "queFacer": {
+          "gl": "Dio ti mentres o fas, cara a cara e á súa altura: «Boat». Só ten que escoitar e mirar.",
+          "es": "Dilo tú mientras lo haces, cara a cara y a su altura: «Boat». Solo tiene que escuchar y mirar."
+        },
+        "mans": {
+          "gl": "Sinala ou colle o que nomeas: barco.",
+          "es": "Señala o coge lo que nombras: barco."
+        },
+        "esperaSegundos": 5,
+        "nonPedir": {
+          "gl": "Non hai que dicilo: abonda con que o faga co corpo ou colla o obxecto.",
+          "es": "No hay que decirlo: basta con que lo haga con el cuerpo o coja el objeto."
+        },
+        "recast": {
+          "silencio": {
+            "gl": "Fai ti o xesto e volve dicir «Boat» amodo, sorrindo, e segue co xogo.",
+            "es": "Haz tú el gesto y vuelve a decir «Boat» despacio, sonriendo, y sigue con el juego."
+          },
+          "linguaCasa": {
+            "gl": "Acolle o que di na lingua da casa, asente e devólvello en inglés: «Boat».",
+            "es": "Acoge lo que dice en la lengua de casa, asiente y devuélveselo en inglés: «Boat»."
+          },
+          "unhaPalabra": {
+            "gl": "Celébrao e engade o que falta: «Yes! Boat».",
+            "es": "Celébralo y añade lo que falta: «Yes! Boat»."
+          }
+        }
+      },
+      {
+        "id": "reto.curso_2_3.10.2",
+        "semana": 2,
+        "fase": "practicar",
+        "nomeFase": {
+          "gl": "Practicar",
+          "es": "Practicar"
+        },
+        "frase": {
+          "en": "Stop!"
+        },
+        "queFacer": {
+          "gl": "Di «Stop!» e fai o xesto á vez. Agarda e, se o fai, facédeo xuntos outra vez.",
+          "es": "Di «Stop!» y haz el gesto a la vez. Espera y, si lo hace, hacedlo juntos otra vez."
+        },
+        "mans": {
+          "gl": "Quedar quieto de golpe, coas mans no alto.",
+          "es": "Quedarse quieto de golpe, con las manos en alto."
+        },
+        "esperaSegundos": 5,
+        "nonPedir": {
+          "gl": "Non hai que dicilo: abonda con que o faga co corpo ou colla o obxecto.",
+          "es": "No hay que decirlo: basta con que lo haga con el cuerpo o coja el objeto."
+        },
+        "recast": {
+          "silencio": {
+            "gl": "Fai ti o xesto e volve dicir «Stop!» amodo, sorrindo, e segue co xogo.",
+            "es": "Haz tú el gesto y vuelve a decir «Stop!» despacio, sonriendo, y sigue con el juego."
+          },
+          "linguaCasa": {
+            "gl": "Acolle o que di na lingua da casa, asente e devólvello en inglés: «Stop!».",
+            "es": "Acoge lo que dice en la lengua de casa, asiente y devuélveselo en inglés: «Stop!»."
+          },
+          "unhaPalabra": {
+            "gl": "Celébrao e engade o que falta: «Yes! Stop!».",
+            "es": "Celébralo y añade lo que falta: «Yes! Stop!»."
+          }
+        }
+      },
+      {
+        "id": "reto.curso_2_3.10.3",
+        "semana": 3,
+        "fase": "combinar",
+        "nomeFase": {
+          "gl": "Combinar",
+          "es": "Combinar"
+        },
+        "frase": {
+          "en": "Splash, splash, splash in the water! And... stop!",
+          "gl": "Chap, chap, chap na auga! E... para!",
+          "es": "¡Chap, chap, chap en el agua! Y... ¡para!"
+        },
+        "queFacer": {
+          "gl": "Xunta a frase desta semana coa da semana pasada nun xogo curto: «Splash, splash, splash in the water! And... stop!» e, despois, «Stop!».",
+          "es": "Junta la frase de esta semana con la de la semana pasada en un juego corto: «Splash, splash, splash in the water! And... stop!» y, después, «Stop!»."
+        },
+        "mans": {
+          "gl": "Ten na man aquilo do que falas e ensínallo mentres o dis.",
+          "es": "Ten en la mano aquello de lo que hablas y enséñaselo mientras lo dices."
+        },
+        "esperaSegundos": 5,
+        "nonPedir": {
+          "gl": "Non hai que dicilo: abonda con que o faga co corpo ou colla o obxecto.",
+          "es": "No hay que decirlo: basta con que lo haga con el cuerpo o coja el objeto."
+        },
+        "recast": {
+          "silencio": {
+            "gl": "Fai ti o xesto e volve dicir «Splash, splash, splash in the water! And... stop!» amodo, sorrindo, e segue co xogo.",
+            "es": "Haz tú el gesto y vuelve a decir «Splash, splash, splash in the water! And... stop!» despacio, sonriendo, y sigue con el juego."
+          },
+          "linguaCasa": {
+            "gl": "Acolle o que di na lingua da casa, asente e devólvello en inglés: «Splash, splash, splash in the water! And... stop!».",
+            "es": "Acoge lo que dice en la lengua de casa, asiente y devuélveselo en inglés: «Splash, splash, splash in the water! And... stop!»."
+          },
+          "unhaPalabra": {
+            "gl": "Celébrao e engade o que falta: «Yes! Splash, splash, splash in the water! And... stop!».",
+            "es": "Celébralo y añade lo que falta: «Yes! Splash, splash, splash in the water! And... stop!»."
+          }
+        }
+      },
+      {
+        "id": "reto.curso_2_3.10.4",
+        "semana": 4,
+        "fase": "consolidar",
+        "nomeFase": {
+          "gl": "Consolidar",
+          "es": "Consolidar"
+        },
+        "frase": {
+          "en": "Push the boat!",
+          "gl": "Empuxa o barco!",
+          "es": "¡Empuja el barco!"
+        },
+        "queFacer": {
+          "gl": "Di o comezo, «Push the…», e deixa o oco. Se o completa co corpo ou cunha palabra, celébrao e di a frase enteira.",
+          "es": "Di el comienzo, «Push the…», y deja el hueco. Si lo completa con el cuerpo o con una palabra, celébralo y di la frase entera."
+        },
+        "mans": {
+          "gl": "Ten na man aquilo do que falas e ensínallo mentres o dis.",
+          "es": "Ten en la mano aquello de lo que hablas y enséñaselo mientras lo dices."
+        },
+        "esperaSegundos": 5,
+        "nonPedir": {
+          "gl": "Non hai que dicilo: abonda con que o faga co corpo ou colla o obxecto.",
+          "es": "No hay que decirlo: basta con que lo haga con el cuerpo o coja el objeto."
+        },
+        "recast": {
+          "silencio": {
+            "gl": "Fai ti o xesto e volve dicir «Push the boat!» amodo, sorrindo, e segue co xogo.",
+            "es": "Haz tú el gesto y vuelve a decir «Push the boat!» despacio, sonriendo, y sigue con el juego."
+          },
+          "linguaCasa": {
+            "gl": "Acolle o que di na lingua da casa, asente e devólvello en inglés: «Push the boat!».",
+            "es": "Acoge lo que dice en la lengua de casa, asiente y devuélveselo en inglés: «Push the boat!»."
+          },
+          "unhaPalabra": {
+            "gl": "Celébrao e engade o que falta: «Yes! Push the boat!».",
+            "es": "Celébralo y añade lo que falta: «Yes! Push the boat!»."
+          }
+        }
+      }
+    ],
+    "lecturaCasa": {
+      "microcuento": "microcuento.curso_2_3.02"
+    },
+    "juegoCasa": {
+      "xogo": "xogo_02_barco_samil"
+    },
+    "queObservarCasa": [
+      {
+        "gl": "Fai o xesto cando oe «Boat»",
+        "es": "Hace el gesto cuando oye «Boat»"
+      },
+      {
+        "gl": "Colle ou sinala o obxecto",
+        "es": "Coge o señala el objeto"
+      },
+      {
+        "gl": "Anticipa o momento: xa sabe que vén o inglés",
+        "es": "Anticipa el momento: ya sabe que llega el inglés"
+      }
+    ],
+    "reactivarCasa": {
+      "en": "Water",
+      "texto": {
+        "gl": "Noutro momento do día, sen avisar, volve dicir «Water», a palabra do mes pasado, sinalándoa.",
+        "es": "En otro momento del día, sin avisar, vuelve a decir «Water», la palabra del mes pasado, señalándola."
+      }
+    }
+  },
   "microcuento": {
     "id": "microcuento.curso_2_3.02",
     "titulo": {
@@ -318,5 +526,6 @@
         }
       }
     ]
-  }
+  },
+  "criterio": "normativa.curso_2_3"
 }
