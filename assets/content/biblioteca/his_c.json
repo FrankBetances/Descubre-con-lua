@@ -96,7 +96,8 @@
             "gl": "Un peixe! Si, un peixiño, nadando rápido.",
             "es": "¡Un pez! Sí, un pececito, nadando rápido."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his006_1.png"
       },
       {
         "papel": "peripecia",
@@ -163,7 +164,8 @@
             "gl": "Empurra! Si, Lúa empurra a rocha alta.",
             "es": "¡Empuja! Sí, Lúa empuja la roca alta."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his006_2.png"
       },
       {
         "papel": "climax",
@@ -230,7 +232,8 @@
             "gl": "Si! Empurran, e a rocha cae.",
             "es": "¡Sí! Empujan, y la roca se cae."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his006_3.png"
       },
       {
         "papel": "desenlace",
@@ -297,7 +300,8 @@
             "gl": "Si, a caracola estaba debaixo da rocha! Unha caracola rosa e brillante.",
             "es": "¡Sí, la caracola estaba debajo de la roca! Una caracola rosa y brillante."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his006_4.png"
       }
     ],
     "fonte": "biblioteca-cuentos-dialogicos-bilingues.txt:43-47,112-116,160-162,230-236,339-351"
@@ -400,7 +404,8 @@
             "gl": "Unha formiga pequeniña! Si, a formiga é pequeniña, e a folla é grande.",
             "es": "¡Una hormiga pequeñita! Sí, la hormiga es pequeñita, y la hoja es grande."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his007_1.png"
       },
       {
         "papel": "peripecia",
@@ -467,7 +472,8 @@
             "gl": "Cae! Si, a folla cae abaixo.",
             "es": "¡Se cae! Sí, la hoja se cae abajo."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his007_2.png"
       },
       {
         "papel": "climax",
@@ -534,7 +540,8 @@
             "gl": "Firme! Si, Lúa sostén a folla firme.",
             "es": "¡Firme! Sí, Lúa sostiene la hoja firme."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his007_3.png"
       },
       {
         "papel": "desenlace",
@@ -601,7 +608,8 @@
             "gl": "Casa alta! Si, unha casa alta e firme.",
             "es": "¡Casa alta! Sí, una casa alta y firme."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his007_4.png"
       }
     ],
     "fonte": "biblioteca-cuentos-dialogicos-bilingues.txt:38-42,142-146,160-162,237-243,339-351"
@@ -703,7 +711,8 @@
             "gl": "Si! É un gorro vermello! Lúa leva un gorro vermello e quentiño!",
             "es": "¡Sí! ¡Es un gorro rojo! ¡Lúa lleva un gorro rojo y calentito!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his008_1.png"
       },
       {
         "papel": "peripecia",
@@ -770,7 +779,8 @@
             "gl": "O gorro vermello voa ben alto no aire frío!",
             "es": "¡El gorro rojo vuela bien alto en el aire frío!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his008_2.png"
       },
       {
         "papel": "climax",
@@ -837,7 +847,8 @@
             "gl": "Salta abaixo! Si, o esquío salta abaixo co gorro vermello.",
             "es": "¡Salta abajo! Sí, la ardilla salta abajo con el gorro rojo."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his008_3.png"
       },
       {
         "papel": "desenlace",
@@ -904,7 +915,8 @@
             "gl": "Munch, munch, crunch! O esquío come unha castaña marrón deliciosa!",
             "es": "¡Munch, munch, crunch! ¡La ardilla se come una castaña marrón deliciosa!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his008_4.png"
       }
     ],
     "fonte": "biblioteca-cuentos-dialogicos-bilingues.txt:33-37,137-141,160-162,244-250,390-435"
@@ -1006,7 +1018,8 @@
             "gl": "Si, o can e o gato! Bos días, can e gato!",
             "es": "¡Sí, el perro y el gato! ¡Buenos días, perro y gato!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his009_1.png"
       },
       {
         "papel": "peripecia",
@@ -1073,7 +1086,8 @@
             "gl": "Si, con delicadeza, can! Un can delicado é un can calado.",
             "es": "¡Sí, con delicadeza, perro! Un perro delicado es un perro callado."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his009_2.png"
       },
       {
         "papel": "climax",
@@ -1140,7 +1154,8 @@
             "gl": "Esperta, vaca grande! Si, a vaca esperta.",
             "es": "¡Despierta, vaca grande! Sí, la vaca se despierta."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his009_3.png"
       },
       {
         "papel": "desenlace",
@@ -1207,7 +1222,8 @@
             "gl": "Bos días! Si, bos días, vaca grande!",
             "es": "¡Buenos días! Sí, ¡buenos días, vaca grande!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his009_4.png"
       }
     ],
     "fonte": "biblioteca-cuentos-dialogicos-bilingues.txt:53-57,147-151,160-162,251-257,339-351"
@@ -1310,7 +1326,8 @@
             "gl": "Fame! Si, Lúa ten moita fame.",
             "es": "¡Hambre! Sí, Lúa tiene mucha hambre."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his010_1.png"
       },
       {
         "papel": "peripecia",
@@ -1377,7 +1394,8 @@
             "gl": "Remexe amodo! Si, amodo, amodo.",
             "es": "¡Remueve despacio! Sí, despacio, despacio."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his010_2.png"
       },
       {
         "papel": "climax",
@@ -1444,7 +1462,8 @@
             "gl": "Verte a sopa! Si, Lúa verte a sopa no prato.",
             "es": "¡Vierte la sopa! Sí, Lúa vierte la sopa en el plato."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his010_3.png"
       },
       {
         "papel": "desenlace",
@@ -1511,7 +1530,8 @@
             "gl": "Deliciosa! Si, a sopa está deliciosa.",
             "es": "¡Deliciosa! Sí, la sopa está deliciosa."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his010_4.png"
       }
     ],
     "fonte": "biblioteca-cuentos-dialogicos-bilingues.txt:23-27,127-131,160-162,258-264,339-351"
@@ -1614,7 +1634,8 @@
             "gl": "Un tren! Si, un tren vermello. Chu, chu!",
             "es": "¡Un tren! Sí, un tren rojo. ¡Chu, chu!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his056_1.png"
       },
       {
         "papel": "peripecia",
@@ -1681,7 +1702,8 @@
             "gl": "Rota! Si, a ponte está rota.",
             "es": "¡Roto! Sí, el puente está roto."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his056_2.png"
       },
       {
         "papel": "climax",
@@ -1748,7 +1770,8 @@
             "gl": "A miña quenda! Si, a miña quenda, e despois a túa.",
             "es": "¡Mi turno! Sí, mi turno, y después el tuyo."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his056_3.png"
       },
       {
         "papel": "desenlace",
@@ -1815,7 +1838,8 @@
             "gl": "Si, o tren está enriba da ponte!",
             "es": "¡Sí, el tren está encima del puente!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his056_4.png"
       }
     ],
     "fonte": "biblioteca-cuentos-dialogicos-bilingues.txt:48-52,147-151,160-162,339-351"
@@ -1918,7 +1942,8 @@
             "gl": "Alta! Si, a torre é alta.",
             "es": "¡Alta! Sí, la torre es alta."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his057_1.png"
       },
       {
         "papel": "peripecia",
@@ -1985,7 +2010,8 @@
             "gl": "Cae! Si, a torre alta cae.",
             "es": "¡Se cae! Sí, la torre alta se cae."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his057_2.png"
       },
       {
         "papel": "climax",
@@ -2052,7 +2078,8 @@
             "gl": "Un caracol! Si, un caracoliño debaixo das pedras.",
             "es": "¡Un caracol! Sí, un caracolito debajo de las piedras."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his057_3.png"
       },
       {
         "papel": "desenlace",
@@ -2119,7 +2146,8 @@
             "gl": "Reconstruír! Si, Lúa reconstrúe unha casiña.",
             "es": "¡Reconstruir! Sí, Lúa reconstruye una casita."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his057_4.png"
       }
     ],
     "fonte": "biblioteca-cuentos-dialogicos-bilingues.txt:38-42,132-136,160-162,339-351"
@@ -2222,7 +2250,8 @@
             "gl": "Unha cunca! Si, unha cunca azul chea de area.",
             "es": "¡Una taza! Sí, una taza azul llena de arena."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his058_1.png"
       },
       {
         "papel": "peripecia",
@@ -2289,7 +2318,8 @@
             "gl": "Debaixo! Si, o coche está debaixo dunha torre.",
             "es": "¡Debajo! Sí, el coche está debajo de una torre."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his058_2.png"
       },
       {
         "papel": "climax",
@@ -2356,7 +2386,8 @@
             "gl": "Empurra! Si, Lúa empurra a torre, e cae.",
             "es": "¡Empuja! Sí, Lúa empuja la torre, y se cae."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his058_3.png"
       },
       {
         "papel": "desenlace",
@@ -2423,7 +2454,8 @@
             "gl": "Enriba da torre! Si, o coche está enriba da torre.",
             "es": "¡Encima de la torre! Sí, el coche está encima de la torre."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his058_4.png"
       }
     ],
     "fonte": "biblioteca-cuentos-dialogicos-bilingues.txt:33-37,122-126,160-162,339-351"
@@ -2526,7 +2558,8 @@
             "gl": "De puntas! Si, Lúa camiña de puntas.",
             "es": "¡De puntillas! Sí, Lúa camina de puntillas."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his059_1.png"
       },
       {
         "papel": "peripecia",
@@ -2593,7 +2626,8 @@
             "gl": "Cae! Si, a palla cae no camiño.",
             "es": "¡Se cae! Sí, la paja se cae en el camino."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his059_2.png"
       },
       {
         "papel": "climax",
@@ -2660,7 +2694,8 @@
             "gl": "Firme! Si, unha ponte firme para os patiños.",
             "es": "¡Firme! Sí, un puente firme para los patitos."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his059_3.png"
       },
       {
         "papel": "desenlace",
@@ -2727,7 +2762,8 @@
             "gl": "Unha aperta! Si, Lúa aperta os patiños.",
             "es": "¡Un abrazo! Sí, Lúa abraza a los patitos."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his059_4.png"
       }
     ],
     "fonte": "biblioteca-cuentos-dialogicos-bilingues.txt:53-57,117-121,160-162,339-351"
@@ -2830,7 +2866,8 @@
             "gl": "Unha torre alta! Si, unha torre alta de cuncas.",
             "es": "¡Una torre alta! Sí, una torre alta de tazas."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his060_1.png"
       },
       {
         "papel": "peripecia",
@@ -2897,7 +2934,8 @@
             "gl": "Cae! Si, a torre alta pode caer.",
             "es": "¡Se cae! Sí, la torre alta se puede caer."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his060_2.png"
       },
       {
         "papel": "climax",
@@ -2964,7 +3002,8 @@
             "gl": "Firme! Si, a torre está firme. Non cae.",
             "es": "¡Firme! Sí, la torre está firme. No se cae."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his060_3.png"
       },
       {
         "papel": "desenlace",
@@ -3031,7 +3070,8 @@
             "gl": "Unha cunca! Si, unha cunca de auga para Lúa.",
             "es": "¡Una taza! Sí, una taza de agua para Lúa."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his060_4.png"
       }
     ],
     "fonte": "biblioteca-cuentos-dialogicos-bilingues.txt:23-27,117-121,160-162,339-351"
@@ -3134,7 +3174,8 @@
             "gl": "Un bloque! Si, Lúa quere o último bloque.",
             "es": "¡Un bloque! Sí, Lúa quiere el último bloque."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his061_1.png"
       },
       {
         "papel": "peripecia",
@@ -3201,7 +3242,8 @@
             "gl": "No tren! Si, o bloque está no tren.",
             "es": "¡En el tren! Sí, el bloque está en el tren."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his061_2.png"
       },
       {
         "papel": "climax",
@@ -3268,7 +3310,8 @@
             "gl": "Ben alto! Si, Lúa estírase ben alto.",
             "es": "¡Bien alto! Sí, Lúa se estira bien alto."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his061_3.png"
       },
       {
         "papel": "desenlace",
@@ -3335,7 +3378,8 @@
             "gl": "Bloques grandes e azuis! Si, os bloques grandes e azuis constrúen pontes.",
             "es": "¡Bloques grandes y azules! Sí, los bloques grandes y azules construyen puentes."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his061_4.png"
       }
     ],
     "fonte": "biblioteca-cuentos-dialogicos-bilingues.txt:48-52,142-146,160-162,339-351"
@@ -3438,7 +3482,8 @@
             "gl": "Un paxaro! Si, un paxariño amarelo.",
             "es": "¡Un pájaro! Sí, un pajarito amarillo."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his062_1.png"
       },
       {
         "papel": "peripecia",
@@ -3505,7 +3550,8 @@
             "gl": "Rota! Si, a casiña está rota.",
             "es": "¡Rota! Sí, la casita está rota."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his062_2.png"
       },
       {
         "papel": "climax",
@@ -3572,7 +3618,8 @@
             "gl": "Firme! Si, a casiña está firme no poste.",
             "es": "¡Firme! Sí, la casita está firme en el poste."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his062_3.png"
       },
       {
         "papel": "desenlace",
@@ -3639,7 +3686,8 @@
             "gl": "Durme! Si, o paxariño dorme na casiña.",
             "es": "¡Duerme! Sí, el pajarito duerme en la casita."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his062_4.png"
       }
     ],
     "fonte": "biblioteca-cuentos-dialogicos-bilingues.txt:33-37,137-141,160-162,339-351"
@@ -3742,7 +3790,8 @@
             "gl": "Fame! Si, Lúa ten moita fame.",
             "es": "¡Hambre! Sí, Lúa tiene mucha hambre."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his063_1.png"
       },
       {
         "papel": "peripecia",
@@ -3809,7 +3858,8 @@
             "gl": "Culler! Si, onde está a culler? Shhh...",
             "es": "¡Cuchara! Sí, ¿dónde está la cuchara? Shhh..."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his063_2.png"
       },
       {
         "papel": "climax",
@@ -3876,7 +3926,8 @@
             "gl": "Unha culler! Si, a culler de Lúa, debaixo da servilleta.",
             "es": "¡Una cuchara! Sí, la cuchara de Lúa, debajo de la servilleta."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his063_3.png"
       },
       {
         "papel": "desenlace",
@@ -3943,7 +3994,8 @@
             "gl": "Delicioso! Si, o iogur está delicioso.",
             "es": "¡Delicioso! Sí, el yogur está delicioso."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his063_4.png"
       }
     ],
     "fonte": "biblioteca-cuentos-dialogicos-bilingues.txt:23-27,132-136,160-162,339-351"
@@ -4046,7 +4098,8 @@
             "gl": "Fame! Si, Lúa ten fame despois do parque.",
             "es": "¡Hambre! Sí, Lúa tiene hambre después del parque."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his064_1.png"
       },
       {
         "papel": "peripecia",
@@ -4113,7 +4166,8 @@
             "gl": "Toc, toc! Si, Lúa peta na cesta.",
             "es": "¡Toc, toc! Sí, Lúa llama a la cesta."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his064_2.png"
       },
       {
         "papel": "climax",
@@ -4180,7 +4234,8 @@
             "gl": "Pan! Si, o rato está enriba do pan.",
             "es": "¡Pan! Sí, el ratón está encima del pan."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his064_3.png"
       },
       {
         "papel": "desenlace",
@@ -4247,7 +4302,8 @@
             "gl": "Zume! Si, zume e pan para a merenda.",
             "es": "¡Zumo! Sí, zumo y pan para la merienda."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his064_4.png"
       }
     ],
     "fonte": "biblioteca-cuentos-dialogicos-bilingues.txt:33-37,147-151,160-162,339-351"
@@ -4350,7 +4406,8 @@
             "gl": "Cabuxa! Si, unha cabuxiña branca.",
             "es": "¡Cabra! Sí, una cabrita blanca."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his065_1.png"
       },
       {
         "papel": "peripecia",
@@ -4417,7 +4474,8 @@
             "gl": "Baleiro! Si, o prato está baleiro.",
             "es": "¡Vacío! Sí, el plato está vacío."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his065_2.png"
       },
       {
         "papel": "climax",
@@ -4484,7 +4542,8 @@
             "gl": "Cheo! Si, o prato xa está cheo.",
             "es": "¡Lleno! Sí, el plato ya está lleno."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his065_3.png"
       },
       {
         "papel": "desenlace",
@@ -4551,7 +4610,8 @@
             "gl": "Unha barriga chea! Si, a cabuxiña ten a barriga chea.",
             "es": "¡Una barriga llena! Sí, la cabrita tiene la barriga llena."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his065_4.png"
       }
     ],
     "fonte": "biblioteca-cuentos-dialogicos-bilingues.txt:53-57,127-131,160-162,339-351"
@@ -4653,7 +4713,8 @@
             "gl": "Que queres? Si, Lúa pregúntalle ao coello.",
             "es": "¿Qué quieres? Sí, Lúa le pregunta al conejo."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his066_1.png"
       },
       {
         "papel": "peripecia",
@@ -4720,7 +4781,8 @@
             "gl": "Garfo! Si, onde está o garfo?",
             "es": "¡Tenedor! Sí, ¿dónde está el tenedor?"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his066_2.png"
       },
       {
         "papel": "climax",
@@ -4787,7 +4849,8 @@
             "gl": "O garfo! Si, Lúa atopa o garfo.",
             "es": "¡El tenedor! Sí, Lúa encuentra el tenedor."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his066_3.png"
       },
       {
         "papel": "desenlace",
@@ -4854,7 +4917,8 @@
             "gl": "Aquí tes! Si, aquí tes, coello.",
             "es": "¡Aquí tienes! Sí, aquí tienes, conejo."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his066_4.png"
       }
     ],
     "fonte": "biblioteca-cuentos-dialogicos-bilingues.txt:48-52,117-121,160-162,339-351"
@@ -4957,7 +5021,8 @@
             "gl": "Zume! Si, Lúa quere zume.",
             "es": "¡Zumo! Sí, Lúa quiere zumo."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his067_1.png"
       },
       {
         "papel": "peripecia",
@@ -5024,7 +5089,8 @@
             "gl": "Laranxas! Si, tres laranxas grandes.",
             "es": "¡Naranjas! Sí, tres naranjas grandes."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his067_2.png"
       },
       {
         "papel": "climax",
@@ -5091,7 +5157,8 @@
             "gl": "Ben alto! Si, as laranxas están ben altas.",
             "es": "¡Bien alto! Sí, las naranjas están bien altas."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his067_3.png"
       },
       {
         "papel": "desenlace",
@@ -5158,7 +5225,8 @@
             "gl": "Delicioso! Si, o zume de laranxa está delicioso.",
             "es": "¡Delicioso! Sí, el zumo de naranja está delicioso."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his067_4.png"
       }
     ],
     "fonte": "biblioteca-cuentos-dialogicos-bilingues.txt:38-42,142-146,160-162,339-351"
@@ -5261,7 +5329,8 @@
             "gl": "Baleiros! Si, os peixes teñen os pratos baleiros.",
             "es": "¡Vacíos! Sí, los peces tienen los platos vacíos."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his068_1.png"
       },
       {
         "papel": "peripecia",
@@ -5328,7 +5397,8 @@
             "gl": "Whoosh! Si, a auga fai whoosh, whoosh.",
             "es": "¡Whoosh! Sí, el agua hace whoosh, whoosh."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his068_2.png"
       },
       {
         "papel": "climax",
@@ -5395,7 +5465,8 @@
             "gl": "Pratos cheos! Si, os pratos seguen cheos.",
             "es": "¡Platos llenos! Sí, los platos siguen llenos."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his068_3.png"
       },
       {
         "papel": "desenlace",
@@ -5462,7 +5533,8 @@
             "gl": "Barrigas cheas! Si, os peixes teñen a barriga chea.",
             "es": "¡Barrigas llenas! Sí, los peces tienen la barriga llena."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his068_4.png"
       }
     ],
     "fonte": "biblioteca-cuentos-dialogicos-bilingues.txt:43-47,137-141,160-162,339-351"
@@ -5565,7 +5637,8 @@
             "gl": "Pan! Si, pan no prato.",
             "es": "¡Pan! Sí, pan en el plato."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his069_1.png"
       },
       {
         "papel": "peripecia",
@@ -5632,7 +5705,8 @@
             "gl": "De puntas! Si, Lúa camiña de puntas.",
             "es": "¡De puntillas! Sí, Lúa camina de puntillas."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his069_2.png"
       },
       {
         "papel": "climax",
@@ -5699,7 +5773,8 @@
             "gl": "Aquí tes! Si, aquí tes, avó.",
             "es": "¡Aquí tienes! Sí, aquí tienes, abuelo."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his069_3.png"
       },
       {
         "papel": "desenlace",
@@ -5766,7 +5841,8 @@
             "gl": "Baleiro! Si, o prato xa está baleiro.",
             "es": "¡Vacío! Sí, el plato ya está vacío."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his069_4.png"
       }
     ],
     "fonte": "biblioteca-cuentos-dialogicos-bilingues.txt:23-27,117-121,160-162,339-351"
@@ -5869,7 +5945,8 @@
             "gl": "Un can! Si, un canciño marrón.",
             "es": "¡Un perro! Sí, un perrito marrón."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his070_1.png"
       },
       {
         "papel": "peripecia",
@@ -5936,7 +6013,8 @@
             "gl": "Medo! Si, o canciño ten medo.",
             "es": "¡Miedo! Sí, el perrito tiene miedo."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his070_2.png"
       },
       {
         "papel": "climax",
@@ -6003,7 +6081,8 @@
             "gl": "Venda! Si, unha venda suave na perna.",
             "es": "¡Venda! Sí, una venda suave en la pata."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his070_3.png"
       },
       {
         "papel": "desenlace",
@@ -6070,7 +6149,8 @@
             "gl": "Unha aperta! Si, unha aperta grande para o canciño.",
             "es": "¡Un abrazo! Sí, un abrazo grande para el perrito."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his070_4.png"
       }
     ],
     "fonte": "biblioteca-cuentos-dialogicos-bilingues.txt:48-52,132-136,160-162,339-351"
@@ -6172,7 +6252,8 @@
             "gl": "Corre! Si, o canciño corre rápido.",
             "es": "¡Corre! Sí, el perrito corre rápido."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his071_1.png"
       },
       {
         "papel": "peripecia",
@@ -6239,7 +6320,8 @@
             "gl": "Perna! Si, ao can dóelle un pouco a perna.",
             "es": "¡Pata! Sí, al perro le duele un poco la pata."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his071_2.png"
       },
       {
         "papel": "climax",
@@ -6306,7 +6388,8 @@
             "gl": "Agárdame! Si, Lúa agarda polo canciño.",
             "es": "¡Espérame! Sí, Lúa espera al perrito."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his071_3.png"
       },
       {
         "papel": "desenlace",
@@ -6373,7 +6456,8 @@
             "gl": "Durme! Si, o canciño dorme.",
             "es": "¡Duerme! Sí, el perrito duerme."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his071_4.png"
       }
     ],
     "fonte": "biblioteca-cuentos-dialogicos-bilingues.txt:33-37,117-121,160-162,339-351"
@@ -6476,7 +6560,8 @@
             "gl": "Gato! Si, unha gata laranxa.",
             "es": "¡Gato! Sí, una gata naranja."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his072_1.png"
       },
       {
         "papel": "peripecia",
@@ -6543,7 +6628,8 @@
             "gl": "Shhh! Si, shhh, o gatiño dorme.",
             "es": "¡Shhh! Sí, shhh, el gatito duerme."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his072_2.png"
       },
       {
         "papel": "climax",
@@ -6610,7 +6696,8 @@
             "gl": "Con delicadeza! Si, Lúa trata o gatiño con delicadeza.",
             "es": "¡Con delicadeza! Sí, Lúa trata al gatito con delicadeza."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his072_3.png"
       },
       {
         "papel": "desenlace",
@@ -6677,7 +6764,8 @@
             "gl": "Unha aperta! Si, unha aperta grande para os dous gatos.",
             "es": "¡Un abrazo! Sí, un abrazo grande para los dos gatos."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his072_4.png"
       }
     ],
     "fonte": "biblioteca-cuentos-dialogicos-bilingues.txt:53-57,132-136,160-162,339-351"
@@ -6779,7 +6867,8 @@
             "gl": "Lama! Si, moita lama marrón.",
             "es": "¡Barro! Sí, mucho barro marrón."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his073_1.png"
       },
       {
         "papel": "peripecia",
@@ -6846,7 +6935,8 @@
             "gl": "Can enlamado! Si, o can está moi enlamado.",
             "es": "¡Perro embarrado! Sí, el perro está muy embarrado."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his073_2.png"
       },
       {
         "papel": "climax",
@@ -6913,7 +7003,8 @@
             "gl": "Con delicadeza! Si, Lúa lava o can con delicadeza.",
             "es": "¡Con delicadeza! Sí, Lúa lava al perro con delicadeza."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his073_3.png"
       },
       {
         "papel": "desenlace",
@@ -6980,7 +7071,8 @@
             "gl": "Can branco! Si, o can está branco e limpo.",
             "es": "¡Perro blanco! Sí, el perro está blanco y limpio."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his073_4.png"
       }
     ],
     "fonte": "biblioteca-cuentos-dialogicos-bilingues.txt:38-42,112-116,160-162,339-351"
@@ -7082,7 +7174,8 @@
             "gl": "Gato! Si, un gato gris. Un gato con fame.",
             "es": "¡Gato! Sí, un gato gris. Un gato con hambre."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his074_1.png"
       },
       {
         "papel": "peripecia",
@@ -7149,7 +7242,8 @@
             "gl": "Quente! Si, a temperatura está moi quente.",
             "es": "¡Caliente! Sí, la temperatura está muy caliente."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his074_2.png"
       },
       {
         "papel": "climax",
@@ -7216,7 +7310,8 @@
             "gl": "Temperatura! Si, agora a temperatura está ben.",
             "es": "¡Temperatura! Sí, ahora la temperatura está bien."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his074_3.png"
       },
       {
         "papel": "desenlace",
@@ -7283,7 +7378,8 @@
             "gl": "Durme! Si, o gato dorme na almofada.",
             "es": "¡Duerme! Sí, el gato duerme en el cojín."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his074_4.png"
       }
     ],
     "fonte": "biblioteca-cuentos-dialogicos-bilingues.txt:23-27,127-131,160-162,339-351"
@@ -7386,7 +7482,8 @@
             "gl": "Perna! Si, a perna da gata.",
             "es": "¡Pierna! Sí, la pierna de la gata."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his075_1.png"
       },
       {
         "papel": "peripecia",
@@ -7453,7 +7550,8 @@
             "gl": "Venda! Si, onde está a venda?",
             "es": "¡Venda! Sí, ¿dónde está la venda?"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his075_2.png"
       },
       {
         "papel": "climax",
@@ -7520,7 +7618,8 @@
             "gl": "Venda! Si, a venda estaba na caixa.",
             "es": "¡Venda! Sí, la venda estaba en la caja."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his075_3.png"
       },
       {
         "papel": "desenlace",
@@ -7587,7 +7686,8 @@
             "gl": "Mirar ben! Si, primeiro miramos ben a perna.",
             "es": "¡Mirar bien! Sí, primero miramos bien la pierna."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his075_4.png"
       }
     ],
     "fonte": "biblioteca-cuentos-dialogicos-bilingues.txt:48-52,147-151,160-162,339-351"

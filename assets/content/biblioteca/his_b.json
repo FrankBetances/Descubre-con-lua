@@ -94,7 +94,8 @@
             "gl": "Si, xabón! O xabón amarelo!",
             "es": "¡Sí, jabón! ¡El jabón amarillo!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his031_1.png"
       },
       {
         "papel": "nó",
@@ -161,7 +162,8 @@
             "gl": "Si, xabón! O xabón está na escuma!",
             "es": "¡Sí, jabón! ¡El jabón está en la espuma!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his031_2.png"
       },
       {
         "papel": "desenlace",
@@ -228,7 +230,8 @@
             "gl": "Si, xabón! Lúa ten o xabón! Chap!",
             "es": "¡Sí, jabón! ¡Lúa tiene el jabón! ¡Chap!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his031_3.png"
       }
     ],
     "fonte": "biblioteca-cuentos-dialogicos-bilingues.txt:18-22,112-116,160-162,171-185,269-305,306-338,339-389"
@@ -329,7 +332,8 @@
             "gl": "Si, toalla! A toalla de Lúa!",
             "es": "¡Sí, toalla! ¡La toalla de Lúa!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his032_1.png"
       },
       {
         "papel": "nó",
@@ -396,7 +400,8 @@
             "gl": "Si, suave! Toalla suave!",
             "es": "¡Sí, suave! ¡Toalla suave!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his032_2.png"
       },
       {
         "papel": "desenlace",
@@ -463,7 +468,8 @@
             "gl": "Si, toalla! Unha toalla suave!",
             "es": "¡Sí, toalla! ¡Una toalla suave!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his032_3.png"
       }
     ],
     "fonte": "biblioteca-cuentos-dialogicos-bilingues.txt:18-22,132-136,160-162,171-185,269-305,306-338,339-389"
@@ -563,7 +569,8 @@
             "gl": "Si, lavar! Lava as mans!",
             "es": "¡Sí, lavar! ¡Lávate las manos!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his033_1.png"
       },
       {
         "papel": "nó",
@@ -630,7 +637,8 @@
             "gl": "Si, lavar! Lava, lava as mans!",
             "es": "¡Sí, lavar! ¡Lava, lava las manos!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his033_2.png"
       },
       {
         "papel": "desenlace",
@@ -697,7 +705,8 @@
             "gl": "Si, lavar! Lavar e comer! Mmm!",
             "es": "¡Sí, lavar! ¡Lavar y comer! ¡Mmm!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his033_3.png"
       }
     ],
     "fonte": "biblioteca-cuentos-dialogicos-bilingues.txt:23-27,112-116,160-162,171-185,269-305,306-338,339-389"
@@ -797,7 +806,8 @@
             "gl": "Si, barro! As mans de Lúa! A lavar!",
             "es": "¡Sí, barro! ¡Las manos de Lúa! ¡A lavar!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his034_1.png"
       },
       {
         "papel": "nó",
@@ -864,7 +874,8 @@
             "gl": "Si, bota! Bota, bota, para!",
             "es": "¡Sí, bota! ¡Bota, bota, para!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his034_2.png"
       },
       {
         "papel": "desenlace",
@@ -931,7 +942,8 @@
             "gl": "Si, lavar! Lava as mans!",
             "es": "¡Sí, lavar! ¡Lávate las manos!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his034_3.png"
       }
     ],
     "fonte": "biblioteca-cuentos-dialogicos-bilingues.txt:33-37,122-126,160-162,171-185,269-305,306-338,339-389"
@@ -1032,7 +1044,8 @@
             "gl": "Si, xabón! Frega, frega o xabón!",
             "es": "¡Sí, jabón! ¡Frota, frota el jabón!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his035_1.png"
       },
       {
         "papel": "nó",
@@ -1099,7 +1112,8 @@
             "gl": "Si, fregar! Frega, frega, frega!",
             "es": "¡Sí, frotar! ¡Frota, frota, frota!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his035_2.png"
       },
       {
         "papel": "desenlace",
@@ -1166,7 +1180,8 @@
             "gl": "Si, xabón! Frega, frega... bebé limpo!",
             "es": "¡Sí, jabón! Frota, frota... ¡bebé limpio!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his035_3.png"
       }
     ],
     "fonte": "biblioteca-cuentos-dialogicos-bilingues.txt:48-52,112-116,160-162,171-185,269-305,306-338,339-389"
@@ -1267,7 +1282,8 @@
             "gl": "Si, toalla! Onde está a toalla?",
             "es": "¡Sí, toalla! ¿Dónde está la toalla?"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his036_1.png"
       },
       {
         "papel": "nó",
@@ -1334,7 +1350,8 @@
             "gl": "Si, toalla! A toalla rosa e suave!",
             "es": "¡Sí, toalla! ¡La toalla rosa y suave!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his036_2.png"
       },
       {
         "papel": "desenlace",
@@ -1401,7 +1418,8 @@
             "gl": "Si, suave! A toalla suave!",
             "es": "¡Sí, suave! ¡La toalla suave!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his036_3.png"
       }
     ],
     "fonte": "biblioteca-cuentos-dialogicos-bilingues.txt:28-32,117-121,160-162,171-185,269-305,306-338,339-389"
@@ -1502,7 +1520,8 @@
             "gl": "Si, ovella! Bééé! Unha ovella branca!",
             "es": "¡Sí, oveja! ¡Beee! ¡Una oveja blanca!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his037_1.png"
       },
       {
         "papel": "nó",
@@ -1569,7 +1588,8 @@
             "gl": "Si, fregar! Frega, frega... ovella suave!",
             "es": "¡Sí, frotar! Frota, frota... ¡oveja suave!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his037_2.png"
       },
       {
         "papel": "desenlace",
@@ -1636,7 +1656,8 @@
             "gl": "Si, suave! Frega, frega... moi suave!",
             "es": "¡Sí, suave! Frota, frota... ¡muy suave!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his037_3.png"
       }
     ],
     "fonte": "biblioteca-cuentos-dialogicos-bilingues.txt:53-57,137-141,160-162,171-185,269-305,306-338,339-389"
@@ -1736,7 +1757,8 @@
             "gl": "Si, toalla! A toalla verde!",
             "es": "¡Sí, toalla! ¡La toalla verde!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his038_1.png"
       },
       {
         "papel": "nó",
@@ -1803,7 +1825,8 @@
             "gl": "Si, toalla! Estírate ben alto!",
             "es": "¡Sí, toalla! ¡Estírate bien alto!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his038_2.png"
       },
       {
         "papel": "desenlace",
@@ -1870,7 +1893,8 @@
             "gl": "Si, toalla! Lúa ten a toalla!",
             "es": "¡Sí, toalla! ¡Lúa tiene la toalla!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his038_3.png"
       }
     ],
     "fonte": "biblioteca-cuentos-dialogicos-bilingues.txt:23-27,142-146,160-162,171-185,269-305,306-338,339-389"
@@ -1970,7 +1994,8 @@
             "gl": "Si, fregar! Frega, frega, frega!",
             "es": "¡Sí, frotar! ¡Frota, frota, frota!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his039_1.png"
       },
       {
         "papel": "nó",
@@ -2037,7 +2062,8 @@
             "gl": "Si, burbullas! Frega, frega... fiuuu!",
             "es": "¡Sí, burbujas! Frota, frota... ¡fiuuu!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his039_2.png"
       },
       {
         "papel": "desenlace",
@@ -2104,7 +2130,8 @@
             "gl": "Si, fregar! Frega, frega, amodo...",
             "es": "¡Sí, frotar! Frota, frota, despacio..."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his039_3.png"
       }
     ],
     "fonte": "biblioteca-cuentos-dialogicos-bilingues.txt:18-22,137-141,160-162,171-185,269-305,306-338,339-389"
@@ -2205,7 +2232,8 @@
             "gl": "Si, gato! Un gato con sono!",
             "es": "¡Sí, gato! ¡Un gato con sueño!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his040_1.png"
       },
       {
         "papel": "nó",
@@ -2272,7 +2300,8 @@
             "gl": "Si, gato! Durme, gatiño!",
             "es": "¡Sí, gato! ¡Duerme, gatito!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his040_2.png"
       },
       {
         "papel": "desenlace",
@@ -2339,7 +2368,8 @@
             "gl": "Si, durmir! O gato está durmindo.",
             "es": "¡Sí, dormir! El gato está durmiendo."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his040_3.png"
       }
     ],
     "fonte": "biblioteca-cuentos-dialogicos-bilingues.txt:28-32,117-121,160-162,171-185,269-305,306-338,339-389"
@@ -2440,7 +2470,8 @@
             "gl": "Si, can! O can corre!",
             "es": "¡Sí, perro! ¡El perro corre!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his041_1.png"
       },
       {
         "papel": "nó",
@@ -2507,7 +2538,8 @@
             "gl": "Si, can! O can está aí!",
             "es": "¡Sí, perro! ¡El perro está ahí!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his041_2.png"
       },
       {
         "papel": "desenlace",
@@ -2574,7 +2606,8 @@
             "gl": "Si, can! Un can contento!",
             "es": "¡Sí, perro! ¡Un perro contento!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his041_3.png"
       }
     ],
     "fonte": "biblioteca-cuentos-dialogicos-bilingues.txt:33-37,122-126,160-162,171-185,269-305,306-338,339-389"
@@ -2675,7 +2708,8 @@
             "gl": "Si, can! Corre, can... para!",
             "es": "¡Sí, perro! Corre, perro... ¡para!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his042_1.png"
       },
       {
         "papel": "nó",
@@ -2742,7 +2776,8 @@
             "gl": "Si, para! Para, can!",
             "es": "¡Sí, para! ¡Para, perro!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his042_2.png"
       },
       {
         "papel": "desenlace",
@@ -2809,7 +2844,8 @@
             "gl": "Si, para! Chap, chap, para!",
             "es": "¡Sí, para! ¡Chap, chap, para!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his042_3.png"
       }
     ],
     "fonte": "biblioteca-cuentos-dialogicos-bilingues.txt:53-57,112-116,160-162,171-185,269-305,306-338,339-389"
@@ -2909,7 +2945,8 @@
             "gl": "Si, gato! Un gatiño!",
             "es": "¡Sí, gato! ¡Un gatito!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his043_1.png"
       },
       {
         "papel": "nó",
@@ -2976,7 +3013,8 @@
             "gl": "Si, gato! Ola, gatiño!",
             "es": "¡Sí, gato! ¡Hola, gatito!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his043_2.png"
       },
       {
         "papel": "desenlace",
@@ -3043,7 +3081,8 @@
             "gl": "Si, gato! Un gato contento!",
             "es": "¡Sí, gato! ¡Un gato contento!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his043_3.png"
       }
     ],
     "fonte": "biblioteca-cuentos-dialogicos-bilingues.txt:23-27,117-121,160-162,171-185,269-305,306-338,339-389"
@@ -3143,7 +3182,8 @@
             "gl": "Si, can! O can de Lúa!",
             "es": "¡Sí, perro! ¡El perro de Lúa!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his044_1.png"
       },
       {
         "papel": "nó",
@@ -3210,7 +3250,8 @@
             "gl": "Si, can! O can azul!",
             "es": "¡Sí, perro! ¡El perro azul!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his044_2.png"
       },
       {
         "papel": "desenlace",
@@ -3277,7 +3318,8 @@
             "gl": "Si, can! O meu can bonito!",
             "es": "¡Sí, perro! ¡Mi perro bonito!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his044_3.png"
       }
     ],
     "fonte": "biblioteca-cuentos-dialogicos-bilingues.txt:48-52,117-121,160-162,171-185,269-305,306-338,339-389"
@@ -3378,7 +3420,8 @@
             "gl": "Si, correr! Corre, corre... e a durmir!",
             "es": "¡Sí, correr! Corre, corre... ¡y a dormir!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his045_1.png"
       },
       {
         "papel": "nó",
@@ -3445,7 +3488,8 @@
             "gl": "Si, durmir! Lúa quere durmir.",
             "es": "¡Sí, dormir! Lúa quiere dormir."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his045_2.png"
       },
       {
         "papel": "desenlace",
@@ -3512,7 +3556,8 @@
             "gl": "Si, durmir! Chis... a durmir.",
             "es": "¡Sí, dormir! Chis... a dormir."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his045_3.png"
       }
     ],
     "fonte": "biblioteca-cuentos-dialogicos-bilingues.txt:33-37,132-136,160-162,171-185,269-305,306-338,339-389"
@@ -3613,7 +3658,8 @@
             "gl": "Si, can! Un can mollado! Para, can!",
             "es": "¡Sí, perro! ¡Un perro mojado! ¡Para, perro!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his046_1.png"
       },
       {
         "papel": "nó",
@@ -3680,7 +3726,8 @@
             "gl": "Si, para! Para, can, para!",
             "es": "¡Sí, para! ¡Para, perro, para!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his046_2.png"
       },
       {
         "papel": "desenlace",
@@ -3747,7 +3794,8 @@
             "gl": "Si, para! O can para! Un can contento!",
             "es": "¡Sí, para! ¡El perro para! ¡Un perro contento!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his046_3.png"
       }
     ],
     "fonte": "biblioteca-cuentos-dialogicos-bilingues.txt:18-22,137-141,160-162,171-185,269-305,306-338,339-389"
@@ -3848,7 +3896,8 @@
             "gl": "Si, gato! O gato está durmindo.",
             "es": "¡Sí, gato! El gato está durmiendo."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his047_1.png"
       },
       {
         "papel": "nó",
@@ -3915,7 +3964,8 @@
             "gl": "Si, gato! Esperta, gato!",
             "es": "¡Sí, gato! ¡Despierta, gato!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his047_2.png"
       },
       {
         "papel": "desenlace",
@@ -3982,7 +4032,8 @@
             "gl": "Si, gato! Xa non hai que durmir!",
             "es": "¡Sí, gato! ¡Ya no hay que dormir!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his047_3.png"
       }
     ],
     "fonte": "biblioteca-cuentos-dialogicos-bilingues.txt:53-57,142-146,160-162,171-185,269-305,306-338,339-389"
@@ -4083,7 +4134,8 @@
             "gl": "Si, caixa! Unha pelota na caixa?",
             "es": "¡Sí, caja! ¿Una pelota en la caja?"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his048_1.png"
       },
       {
         "papel": "nó",
@@ -4150,7 +4202,8 @@
             "gl": "Si, caixa! Unha pelota vermella na caixa!",
             "es": "¡Sí, caja! ¡Una pelota roja en la caja!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his048_2.png"
       },
       {
         "papel": "desenlace",
@@ -4217,7 +4270,8 @@
             "gl": "Si, pelota! A pelota da caixa!",
             "es": "¡Sí, pelota! ¡La pelota de la caja!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his048_3.png"
       }
     ],
     "fonte": "biblioteca-cuentos-dialogicos-bilingues.txt:48-52,147-151,160-162,171-185,269-305,306-338,339-389"
@@ -4318,7 +4372,8 @@
             "gl": "Si, pelota! Baixa, pelota!",
             "es": "¡Sí, pelota! ¡Baja, pelota!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his049_1.png"
       },
       {
         "papel": "nó",
@@ -4385,7 +4440,8 @@
             "gl": "Si, vai! Vai, pelota, vai!",
             "es": "¡Sí, va! ¡Va, pelota, va!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his049_2.png"
       },
       {
         "papel": "desenlace",
@@ -4452,7 +4508,8 @@
             "gl": "Si, pelota! Vai, pelota, vai!",
             "es": "¡Sí, pelota! ¡Va, pelota, va!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his049_3.png"
       }
     ],
     "fonte": "biblioteca-cuentos-dialogicos-bilingues.txt:33-37,142-146,160-162,171-185,269-305,306-338,339-389"
@@ -4552,7 +4609,8 @@
             "gl": "Si, caixa! A caixa azul!",
             "es": "¡Sí, caja! ¡La caja azul!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his050_1.png"
       },
       {
         "papel": "nó",
@@ -4619,7 +4677,8 @@
             "gl": "Si, caixa! Toc, toc, caixa!",
             "es": "¡Sí, caja! ¡Toc, toc, caja!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his050_2.png"
       },
       {
         "papel": "desenlace",
@@ -4686,7 +4745,8 @@
             "gl": "Si, caixa! A caixa do pan! Mmm!",
             "es": "¡Sí, caja! ¡La caja del pan! ¡Mmm!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his050_3.png"
       }
     ],
     "fonte": "biblioteca-cuentos-dialogicos-bilingues.txt:23-27,147-151,160-162,171-185,269-305,306-338,339-389"
@@ -4787,7 +4847,8 @@
             "gl": "Si, pelota! A pelota da caixa!",
             "es": "¡Sí, pelota! ¡La pelota de la caja!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his051_1.png"
       },
       {
         "papel": "nó",
@@ -4854,7 +4915,8 @@
             "gl": "Si, caixa! Na caixa!",
             "es": "¡Sí, caja! ¡En la caja!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his051_2.png"
       },
       {
         "papel": "desenlace",
@@ -4921,7 +4983,8 @@
             "gl": "Si, pelota! A pelota está na caixa.",
             "es": "¡Sí, pelota! La pelota está en la caja."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his051_3.png"
       }
     ],
     "fonte": "biblioteca-cuentos-dialogicos-bilingues.txt:28-32,132-136,160-162,171-185,269-305,306-338,339-389"
@@ -5022,7 +5085,8 @@
             "gl": "Si, pelota! Vai, pelota, vai!",
             "es": "¡Sí, pelota! ¡Va, pelota, va!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his052_1.png"
       },
       {
         "papel": "nó",
@@ -5089,7 +5153,8 @@
             "gl": "Si, pelota! Vai, pelota! Volve!",
             "es": "¡Sí, pelota! ¡Va, pelota! ¡Vuelve!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his052_2.png"
       },
       {
         "papel": "desenlace",
@@ -5156,7 +5221,8 @@
             "gl": "Si, vai! Vai, pelota, vai!",
             "es": "¡Sí, va! ¡Va, pelota, va!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his052_3.png"
       }
     ],
     "fonte": "biblioteca-cuentos-dialogicos-bilingues.txt:18-22,112-116,160-162,171-185,269-305,306-338,339-389"
@@ -5257,7 +5323,8 @@
             "gl": "Si, vai! Vai, vai, vai... e para!",
             "es": "¡Sí, va! Va, va, va... ¡y para!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his053_1.png"
       },
       {
         "papel": "nó",
@@ -5324,7 +5391,8 @@
             "gl": "Si, para! Vai, vai... para!",
             "es": "¡Sí, para! Va, va... ¡para!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his053_2.png"
       },
       {
         "papel": "desenlace",
@@ -5391,7 +5459,8 @@
             "gl": "Si, vai! Vai, vai... para!",
             "es": "¡Sí, va! Va, va... ¡para!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his053_3.png"
       }
     ],
     "fonte": "biblioteca-cuentos-dialogicos-bilingues.txt:53-57,122-126,160-162,171-185,269-305,306-338,339-389"
@@ -5492,7 +5561,8 @@
             "gl": "Si, palmas! Palmas, palmas, palmas!",
             "es": "¡Sí, palmas! ¡Palmas, palmas, palmas!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his054_1.png"
       },
       {
         "papel": "nó",
@@ -5559,7 +5629,8 @@
             "gl": "Si, caixa! Palmada na caixa!",
             "es": "¡Sí, caja! ¡Palmada en la caja!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his054_2.png"
       },
       {
         "papel": "desenlace",
@@ -5626,7 +5697,8 @@
             "gl": "Si, palmas! Palmas, palmas, para!",
             "es": "¡Sí, palmas! ¡Palmas, palmas, para!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his054_3.png"
       }
     ],
     "fonte": "biblioteca-cuentos-dialogicos-bilingues.txt:48-52,122-126,160-162,171-185,269-305,306-338,339-389"
@@ -5727,7 +5799,8 @@
             "gl": "Si, pelota! Para, pelota, para!",
             "es": "¡Sí, pelota! ¡Para, pelota, para!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his055_1.png"
       },
       {
         "papel": "nó",
@@ -5794,7 +5867,8 @@
             "gl": "Si, pelota! Para, pelota! Nas herbas.",
             "es": "¡Sí, pelota! ¡Para, pelota! Entre las hierbas."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his055_2.png"
       },
       {
         "papel": "desenlace",
@@ -5861,7 +5935,8 @@
             "gl": "Si, pelota! A pelota para!",
             "es": "¡Sí, pelota! ¡La pelota para!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his055_3.png"
       }
     ],
     "fonte": "biblioteca-cuentos-dialogicos-bilingues.txt:33-37,117-121,160-162,171-185,269-305,306-338,339-389"

@@ -35,9 +35,9 @@ void main() {
         expect(l.lua, isNotNull, reason: c.id);
         expect(l.crowd.length, 3, reason: c.id);
         expect(l.lua!.significado, isNotNull, reason: c.id);
-        if (l.imaxe case final img?) {
-          expect(File(img).existsSync(), isTrue, reason: img);
-        }
+        // F9: cada lámina lleva su dibujo, y el fichero existe.
+        expect(l.imaxe, isNotNull, reason: c.id);
+        expect(File(l.imaxe!).existsSync(), isTrue, reason: l.imaxe);
       }
     }
   });
@@ -60,9 +60,8 @@ void main() {
         await tester.pumpAndSettle();
         for (var i = 0; i < c.laminas.length; i++) {
           expect(find.byKey(Key('conto_dialogado_${id}_$i')), findsOneWidget);
-          // F9: HIS-001 ya tiene sus láminas dibujadas; el resto, descripción.
-          expect(find.byKey(const Key('conto_imaxe')),
-              id == 'HIS-001' ? findsOneWidget : findsNothing);
+          // F9: las 350 láminas están dibujadas.
+          expect(find.byKey(const Key('conto_imaxe')), findsOneWidget);
           expect(tester.takeException(), isNull);
           if (i < c.laminas.length - 1) {
             await tester.tap(find.byKey(const Key('conto_seguinte')));
