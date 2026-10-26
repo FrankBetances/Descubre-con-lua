@@ -9,8 +9,8 @@ Cada línea de `escenas/*.txt` es una lámina:
 
 - fondo y sus opciones (clave=valor; true/false para sí/no);
 - elementos en orden de pintado: nombre@x,y, «xN» escala, «<» en espejo;
-  LUA:postura@x,y es Lúa (sentada, salto, deitada, durme, puntillas,
-  inclinada), siempre desde su rejilla oficial;
+  LUA:postura@x,y es Lúa (sentada, pe, brazos, salto, durme, camiña,
+  abrazo, puntillas, deitada, inclinada), siempre desde `lua_art.json`;
 - efectos: nombre@x,y (gotas, vento, zzz, notas, corazons, vapor…).
 
 Escribe `assets/brand/contos/hisNNN_K.png` y pone `imaxe` en la lámina del
@@ -63,13 +63,13 @@ def debuxar(liña: str):
             pose = nome.split(":", 1)[1] if ":" in nome else "sentada"
             im = motor.lua(pose, escala=esc if m["e"] else 2, espello=esp)
             yy = y - (8 if pose in ("salto", "puntillas") else 0)
-            if pose not in ("deitada", "durme"):
+            if pose != "deitada":
                 motor.sombra(l, x + im.width // 2, y + im.height - 1, im.width // 2 - 4)
             l.pegar(im, x, yy)
             if pose == "salto":
                 motor.EFECTOS["salto"](l, x + im.width // 2, y + im.height + 2)
             if pose == "durme":
-                motor.zzz(l, x + im.width - 6, y - 4)
+                motor.zzz(l, x + im.width - 6, y + 4)
         else:
             if nome not in sprites.S:
                 raise ValueError(f"{lid}: no hay sprite «{nome}»")

@@ -1,9 +1,9 @@
 """Motor de las láminas en pixel art de los cuentos HIS (F9).
 
 Una lámina es un fondo (uno por escenario del documento: ESC-01…08) más
-elementos (sprites de `sprites.py`), Lúa —siempre desde su rejilla oficial,
-`luaSitArt`, sin redibujar: las posturas se hacen moviendo, girando o
-volteando el sprite (regla 5b)— y efectos (gotas, viento, zzz, notas…).
+elementos (sprites de `sprites.py`), Lúa —siempre desde `lua_art.json`: `luaSitArt`
+y sus posturas, que conservan la cabeza píxel a píxel y solo cambian cuerpo
+y patas (regla 5b)— y efectos (gotas, viento, zzz, notas…).
 El lienzo mide 192×120 y se guarda a ese tamaño; la app lo escala sin
 suavizar.
 """
@@ -114,17 +114,25 @@ def de_reixa(filas, pal, escala=1, contorno=True):
 _LUA = None
 
 
+POSTURAS = {
+    "sentada": "luaSitArt", "pe": "luaStandArt", "brazos": "luaArmsUpArt",
+    "salto": "luaJumpArt", "durme": "luaSleepArt", "camiña": "luaWalkArt",
+    "puntillas": "luaArmsUpArt", "abrazo": "luaHugArt", "deitada": "luaSitArt",
+    "inclinada": "luaWalkArt",
+}
+
+
 def lua(pose="sentada", escala=2, espello=False):
-    """Lúa desde `luaSitArt` (lua_art.json). Posturas sin redibujar."""
+    """Lúa desde lua_art.json: luaSitArt y las posturas sacadas de ella
+    (misma cabeza, píxel a píxel). Nunca se redibuja a ojo."""
     global _LUA
     if _LUA is None:
-        art = json.loads((ROOT / "assets/content/lua_art.json").read_text())
-        pal = {k: v for k, v in art["luaPalette"].items() if v != "transparent"}
-        _LUA = (art["luaSitArt"], pal)
-    im = de_reixa(_LUA[0], _LUA[1], escala)
+        _LUA = json.loads((ROOT / "assets/content/lua_art.json").read_text())
+    pal = {k: v for k, v in _LUA["luaPalette"].items() if v != "transparent"}
+    im = de_reixa(_LUA[POSTURAS.get(pose, "luaSitArt")], pal, escala)
     if espello:
         im = im.transpose(Image.FLIP_LEFT_RIGHT)
-    if pose in ("deitada", "durme"):
+    if pose == "deitada":
         im = im.rotate(90, expand=True)
     elif pose == "inclinada":
         im = im.rotate(-12, expand=True, resample=Image.NEAREST)

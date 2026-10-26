@@ -1,7 +1,7 @@
 # HIS-002…030 (2-3 anos). Cada ficha sae da descrición «dibujo» da lámina.
 HIS-002.1 | cociña cor=crema | mesa@58,78x3 prato@90,68x3 mazá@128,56x3 LUA:sentada@4,32 | pregunta@40,22
 HIS-002.2 | cociña cor=crema | mesa@20,84x4 prato@56,66x4 mazá_cuartos@68,58x3 LUA:sentada@122,30 |
-HIS-002.3 | cociña cor=crema | mesa@30,84x4 LUA:sentada@24,30 osito@112,62x4 mazá@64,70x2 mazá@138,74x2 | corazons@92,22
+HIS-002.3 | cociña cor=crema | mesa@30,84x4 LUA:abrazo@24,30 osito@112,62x4 mazá@64,70x2 mazá@138,74x2 | corazons@92,22
 HIS-003.1 | cuarto cor=azulnoite lúa=true | cama@24,72x4 LUA:sentada@56,18 osito@96,62x2 |
 HIS-003.2 | cuarto cor=azulnoite lúa=false ventá_x=none | osito@70,30x6 manta@22,74x4 LUA:sentada@148,60x1 |
 HIS-003.3 | cuarto cor=azulnoite lúa=true | cama@24,72x4 LUA:durme@40,50 osito@120,62x2 manta@36,80x4 |
@@ -10,11 +10,11 @@ HIS-004.2 | parque camiño=true | charco_grande@10,92x4 LUA:sentada@126,28 | pre
 HIS-004.3 | parque | charco_grande@24,94x4 LUA:salto@36,10 ra@112,52x3 | salto@118,86 corazons@96,14
 HIS-005.1 | xogo | LUA:sentada@30,30 pelota@120,82x3 | movemento@116,88
 HIS-005.2 | xogo | caixa@112,66x4 pelota@104,88x2 LUA:puntillas@20,30 |
-HIS-005.3 | xogo estante=false | LUA:sentada@60,28 pelota@80,76x3 | alegria@96,58
+HIS-005.3 | xogo estante=false | LUA:brazos@60,28 pelota@80,76x3 | alegria@96,58
 HIS-006.1 | mar | rocha@120,82x3 caracola@140,104 LUA:sentada@30,26 peixe_laranxa@100,40x2 | burbullas@80,30 brillo@146,104
 HIS-006.2 | mar | rocha@70,58x5 caracola@100,104x2 LUA:inclinada@4,30 | brillo@110,106
 HIS-006.3 | mar | rocha@96,64x4 polbo@40,56x3 LUA:inclinada@120,30x1 | burbullas@30,30 vento@0,0
-HIS-006.4 | mar | rocha@150,92x2 LUA:sentada@24,30 polbo@100,56x3 caracola@82,86x2 peixe_laranxa@70,16 | burbullas@140,30 corazons@82,20
+HIS-006.4 | mar | rocha@150,92x2 LUA:abrazo@24,30 polbo@100,56x3 caracola@82,86x2 peixe_laranxa@70,16 | burbullas@140,30 corazons@82,20
 HIS-007.1 | natureza | folla@70,88x3 formiga@76,100x2 pedra@124,70x6 LUA:sentada@2,40x1 lupa@38,62x2 |
 HIS-007.2 | natureza | pedra@60,46x10 folla@96,52x3 formiga@100,64x2 LUA:sentada@8,60x1 | movemento@104,70
 HIS-007.3 | natureza | pedra@96,46x10 LUA:puntillas@40,28 folla@124,42x3 formiga@128,56x2 |
@@ -22,7 +22,7 @@ HIS-007.4 | natureza | pedra@140,60x6 folla@150,52x2 tronco@60,92x2 formiga@62,1
 HIS-008.1 | parque outono=true | LUA:sentada@60,30 gorro@84,22x2 | vento@0,0
 HIS-008.2 | parque outono=true | árbore@124,24x4 gorro@120,26x2 LUA:puntillas@40,34 | vento@0,0
 HIS-008.3 | parque outono=true | árbore@110,6x5 esquío@136,30x2 gorro@150,40x2 lama@132,100x2 LUA:sentada@20,36 |
-HIS-008.4 | parque outono=true | banco@40,86x6 LUA:sentada@40,20 gorro@64,14x2 esquío@124,60x3 castaña@144,66x2 | corazons@100,20
+HIS-008.4 | parque outono=true | banco@40,86x6 LUA:abrazo@40,20 gorro@64,14x2 esquío@124,60x3 castaña@144,66x2 | corazons@100,20
 HIS-009.1 | granxa ceo_tipo=amencer establo=true | LUA:sentada@4,32 can@70,80x3 gato@108,82x3 | zzz@150,18
 HIS-009.2 | granxa interior=true | vaca@80,70x3 can@18,84x3 gato@50,86x2 LUA:sentada@130,30x1 | zzz@120,50
 HIS-009.3 | granxa establo=true | vaca@20,50x4 LUA:sentada@130,36x1 gato@88,86x2 can@160,92x2 |
@@ -30,22 +30,22 @@ HIS-009.4 | granxa establo=true | vaca@62,52x4 LUA:sentada@4,40x1 can@40,96x2 ga
 HIS-010.1 | cociña cor=crema | mesa@40,84x4 pota@58,58x3 cullerón@100,60x2 prato@110,74x2 cesta@140,64x3 cenoria@148,58x2 tomate@166,58x2 LUA:sentada@2,30 |
 HIS-010.2 | cociña cor=crema | mesa@20,84x4 pota@50,46x4 sopa@58,50x3 cullerón@92,30x3 LUA:sentada@128,30 | vapor@60,44 gotas@40,70
 HIS-010.3 | cociña cor=crema | mesa@20,84x4 prato@46,70x3 prato@96,74x2 LUA:sentada@120,30 | vapor@56,66
-HIS-010.4 | cociña cor=crema | mesa@20,84x4 prato@30,74x2 prato@68,74x2 prato@106,74x2 LUA:sentada@120,30 | alegria@154,52 vapor@40,70
+HIS-010.4 | cociña cor=crema | mesa@20,84x4 prato@30,74x2 prato@68,74x2 prato@106,74x2 LUA:brazos@120,30 | alegria@154,52 vapor@40,70
 HIS-011.1 | baño cor=azul | bañeira@20,70x5 espuma@40,60x3 espuma@100,62x3 LUA:salto@60,4 | gotas@90,20
 HIS-011.2 | baño cor=azul | bañeira@20,70x5 espuma@30,54x4 espuma@90,56x4 pato@140,60x2 |
-HIS-011.3 | baño cor=azul azulexo=false | LUA:sentada@60,28 pato@80,74x3 | gotas@84,64 corazons@100,20
+HIS-011.3 | baño cor=azul azulexo=false | LUA:abrazo@60,28 pato@80,74x3 | gotas@84,64 corazons@100,20
 HIS-012.1 | parque ceo_tipo=gris | columpio@50,22x5 LUA:sentada@66,22 | gotas@100,18
 HIS-012.2 | parque ceo_tipo=gris | LUA:sentada@62,30 | choiva@0,0
 HIS-012.3 | parque ceo_tipo=gris | paraugas@44,6x8 LUA:sentada@50,44 can@100,90x3 | choiva@0,0
 HIS-013.1 | xogo | mesa@24,84x4 cubeta@40,64x5 barco@84,58x3 LUA:sentada@130,30 |
 HIS-013.2 | xogo | mesa@24,84x4 cubeta@40,64x5 barco@110,58x3 LUA:sentada@0,30 | vento@0,0
-HIS-013.3 | xogo | mesa@24,84x4 cubeta@40,64x5 barco@70,58x3 LUA:sentada@120,22 | alegria@156,44
+HIS-013.3 | xogo | mesa@24,84x4 cubeta@40,64x5 barco@70,58x3 LUA:brazos@120,22 | alegria@156,44
 HIS-014.1 | granxa | ovella@60,60x5 sol@150,6x3 |
 HIS-014.2 | granxa | bebedoiro@60,82x4 ovella@140,56x2 LUA:sentada@4,30 | gotas@90,70
-HIS-014.3 | granxa valla=false | bebedoiro@40,90x5 ovella@40,62x3 LUA:sentada@100,30 | corazons@90,20
+HIS-014.3 | granxa valla=false | bebedoiro@40,90x5 ovella@40,62x3 LUA:abrazo@100,30 | corazons@90,20
 HIS-015.1 | cociña cor=amarelo | mesa@40,80x4 vaso_caído@80,66x3 charco@70,100x3 LUA:sentada@120,30 | gotas@90,84
 HIS-015.2 | cociña cor=amarelo | charco_grande@40,96x4 LUA:puntillas@60,26 | gotas@70,84
-HIS-015.3 | cociña cor=amarelo | toalla@50,56x8 LUA:sentada@62,0 | alegria@96,30
+HIS-015.3 | cociña cor=amarelo | toalla@50,56x8 LUA:brazos@62,0 | alegria@96,30
 HIS-016.1 | cuarto cor=azulnoite gotas=true ventá_x=130 | cama@4,74x4 LUA:sentada@30,20 |
 HIS-016.2 | cuarto cor=azulnoite ventá_x=none | ventá_peq@30,4x16 LUA:sentada@60,30 | gotas@50,20 gotas@130,40
 HIS-016.3 | cuarto cor=azul noite=false ventá_x=150 | cama@20,74x4 LUA:durme@40,52 manta@32,82x4 | gotas@160,24
@@ -63,19 +63,19 @@ HIS-020.2 | granxa valla=false | pedra@90,60x8 LUA:inclinada@20,30 | movemento@1
 HIS-020.3 | granxa valla=false | pedra@4,96x4 pato@80,92x2 pata_branca@100,74x3 LUA:salto@130,16x1 | corazons@96,60
 HIS-021.1 | xogo alfombra=#5cb84a | cesta@20,78x4 LUA:sentada@70,26 pedra_branca@120,64x2 |
 HIS-021.2 | xogo alfombra=#5cb84a | folla_marrón@80,80x5 pedra_branca@112,104x2 LUA:puntillas@10,26 |
-HIS-021.3 | xogo alfombra=#5cb84a | LUA:sentada@60,28 pedra_branca@84,74x3 folla_marrón@140,96x3 | alegria@96,50
+HIS-021.3 | xogo alfombra=#5cb84a | LUA:brazos@60,28 pedra_branca@84,74x3 folla_marrón@140,96x3 | alegria@96,50
 HIS-022.1 | cuarto cor=malva noite=false ventá_x=none | cama@10,70x6 LUA:sentada@80,50x1 |
 HIS-022.2 | cuarto cor=malva noite=false ventá_x=none | cama@10,70x6 LUA:puntillas@64,14 | alegria@98,30
 HIS-022.3 | cuarto cor=malva noite=false ventá_x=none | cama@10,70x6 LUA:durme@60,56x1 manta_lila@50,72x3 |
 HIS-023.1 | baño cor=azul | bañeira@20,70x5 auga_bañeira@26,74x5 LUA:sentada@50,20x1 esponxa@110,40x2 | gotas@114,66
 HIS-023.2 | baño cor=azul | bañeira@20,70x5 auga_bañeira@26,74x5 LUA:puntillas@60,8 esponxa_vermella@78,2x3 |
-HIS-023.3 | baño cor=azul azulexo=false | LUA:sentada@60,28 | gotas@40,40 gotas@120,40 gotas@80,20 alegria@96,60
+HIS-023.3 | baño cor=azul azulexo=false | LUA:brazos@60,28 | gotas@40,40 gotas@120,40 gotas@80,20 alegria@96,60
 HIS-024.1 | cuarto cor=amarelo noite=false ventá_x=150 | mesiña@40,70x5 LUA:sentada@100,30 | pregunta@134,20
 HIS-024.2 | cuarto cor=amarelo noite=false ventá_x=none | cama@0,40x7 zapatilla@40,100x4 folla_vermella@100,92x3 |
-HIS-024.3 | cuarto cor=amarelo noite=false ventá_x=150 | cama@20,74x4 LUA:sentada@50,20 folla_vermella@70,60x3 | corazons@100,20
+HIS-024.3 | cuarto cor=amarelo noite=false ventá_x=150 | cama@20,74x4 LUA:abrazo@50,20 folla_vermella@70,60x3 | corazons@100,20
 HIS-025.1 | granxa | palla@70,76x5 cabalo@0,54x4 LUA:sentada@130,30x1 mazá@150,90x2 |
 HIS-025.2 | granxa valla=false | palla@20,64x10 mazá@90,80x3 |
-HIS-025.3 | granxa valla=false | cabalo@10,40x5 mazá@64,48x2 LUA:sentada@120,30 mazá@146,72 | corazons@100,20
+HIS-025.3 | granxa valla=false | cabalo@10,40x5 mazá@64,48x2 LUA:abrazo@120,30 mazá@146,72 | corazons@100,20
 HIS-026.1 | cuarto cor=azulnoite vento=true | cama@4,74x4 LUA:sentada@34,22 | vento@0,0
 HIS-026.2 | cuarto cor=azulnoite | cama@4,74x4 manta_vermella@100,76x3 LUA:inclinada@20,20 |
 HIS-026.3 | cuarto cor=azulnoite ventá_x=150 | cama@4,74x4 LUA:sentada@30,26 osito@80,62x3 manta_vermella@20,82x5 |
@@ -87,7 +87,7 @@ HIS-028.2 | xogo alfombra=#7cc1e4 | vía@20,98x5 tren@10,78x3 bloque@100,86x3 LU
 HIS-028.3 | xogo alfombra=#7cc1e4 | tren@10,78x3 osito@90,64x3 mazá@100,72 LUA:salto@130,20x1 |
 HIS-029.1 | cociña cor=crema | forno@60,46x6 LUA:sentada@130,30x1 |
 HIS-029.2 | cociña cor=crema | mesa@20,84x4 prato@46,72x3 pan@54,62x3 LUA:sentada@120,30 | vapor@60,58
-HIS-029.3 | cociña cor=crema | mesa@20,84x4 prato@100,72x3 pan@106,64x2 LUA:sentada@20,30 pan@44,74 | corazons@50,20
+HIS-029.3 | cociña cor=crema | mesa@20,84x4 prato@100,72x3 pan@106,64x2 LUA:abrazo@20,30 pan@44,74 | corazons@50,20
 HIS-030.1 | baño cor=verde | gancho@140,20x3 toalla_amarela@132,26x3 LUA:sentada@30,30 | gotas@40,60
 HIS-030.2 | baño cor=verde | gancho@120,6x3 toalla_amarela@112,12x3 LUA:puntillas@70,30 |
-HIS-030.3 | baño cor=verde azulexo=false | toalla_amarela@50,56x8 LUA:sentada@62,0 | corazons@100,20
+HIS-030.3 | baño cor=verde azulexo=false | toalla_amarela@50,56x8 LUA:abrazo@62,0 | corazons@100,20
