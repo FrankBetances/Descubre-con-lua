@@ -341,8 +341,12 @@ void main() {
 
     // F5: el reto de la semana de casa, entero (4-5, noviembre, semana 1).
     testWidgets('na casa · reto da semana · $l', (tester) async {
-      await tester.runAsync(
-          () => Future.wait([XogosFogar.cargar(), SteamDoMes.cargar()]));
+      // Desde disco y ya leídos: un futuro del paquete abierto antes bajo el
+      // reloj falso no termina nunca, ni dentro de runAsync.
+      XogosFogar.sembrar(
+          XogosFogar.fromRaw(File(XogosFogar.assetPath).readAsStringSync()));
+      SteamDoMes.sembrar(
+          SteamDoMes.fromRaw(File(SteamDoMes.assetPath).readAsStringSync()));
       final u = UnidadeDoMes.fromJson(jsonDecode(
           File('assets/content/unidades_mes/curso_4_5/unidade.03.json')
               .readAsStringSync()) as Map<String, dynamic>);
@@ -375,8 +379,9 @@ void main() {
       await tester.runAsync(() => Future.wait([
             for (final m in [9, 10, 11, 12, 1, 2, 3, 4, 5, 6])
               contenido.loadUnidadeDoMes('curso_0_2', m),
-            Normativa.cargar(),
           ]));
+      Normativa.sembrar(
+          Normativa.fromRaw(File(Normativa.assetPath).readAsStringSync()));
       await capturar(
         tester,
         'planificador-$l',
