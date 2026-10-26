@@ -50,7 +50,7 @@ class PautaEsperaRecast extends StatelessWidget {
         final p = snap.data?[tipo];
         if (p == null) return const SizedBox.shrink();
         const corpo = TextStyle(
-          fontSize: 13.5,
+          fontSize: 14,
           color: AppTheme.textSecondary,
           height: 1.35,
         );

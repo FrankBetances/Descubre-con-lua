@@ -146,7 +146,7 @@ class _TarxetaCurricularState extends State<TarxetaCurricular> {
                             Text(
                               n.aviso.resolve(lang),
                               style: const TextStyle(
-                                fontSize: 12.5,
+                                fontSize: 14,
                                 fontStyle: FontStyle.italic,
                                 color: AppTheme.textSecondary,
                               ),

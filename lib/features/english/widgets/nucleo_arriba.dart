@@ -68,7 +68,7 @@ class NucleoArriba extends StatelessWidget {
                     ? 'O que se queda todo o mes. O resto do banco vai debaixo, como ampliación.'
                     : 'Lo que se queda todo el mes. El resto del banco va debajo, como ampliación.',
                 style: const TextStyle(
-                  fontSize: 13.5,
+                  fontSize: 14,
                   color: AppTheme.textSecondary,
                   height: 1.35,
                 ),

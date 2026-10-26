@@ -161,7 +161,7 @@ class _VocabularioInglesScreenState extends State<VocabularioInglesScreen> {
                       : 'Consulta para la persona adulta: las 4.000 palabras de uso habitual. No es el currículo; lo del mes está en el núcleo.',
                   key: const Key('corpus_consulta'),
                   style: const TextStyle(
-                    fontSize: 13.5,
+                    fontSize: 14,
                     color: AppTheme.textSecondary,
                     height: 1.35,
                   ),

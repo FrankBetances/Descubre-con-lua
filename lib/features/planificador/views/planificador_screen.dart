@@ -182,9 +182,9 @@ class _PlanificadorScreenState extends State<PlanificadorScreen> {
               future: _datosDo(_selectedCurso),
               builder: (context, snap) {
                 final datos = snap.data;
-                if (datos == null) {
-                  return const Center(child: CircularProgressIndicator());
-                }
+                // Mientras llega, el hueco quieto: un indicador que gira no
+                // dice nada que el hueco no diga ya.
+                if (datos == null) return const SizedBox.shrink();
                 final (normativa, unidades) = datos;
                 final criterio = normativa?.cursos[_selectedCurso];
                 return ListView(
@@ -286,7 +286,7 @@ class _Marco extends StatelessWidget {
             '${l(normativa.aviso)} (${criterio.cita})',
             key: const ValueKey('planificador_aviso_dog'),
             style: const TextStyle(
-              fontSize: 12.5,
+              fontSize: 14,
               fontStyle: FontStyle.italic,
               color: AppTheme.textSecondary,
               height: 1.35,
