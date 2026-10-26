@@ -971,13 +971,16 @@ class ContentRepository {
 
   /// El plan curricular de Frank (F11), leído una vez. `null` si falla.
   Future<PlanCurricular?> loadPlanCurricular() =>
-      _cargandoPlan ??= PlanCurricular.cargar()
-          .then<PlanCurricular?>((p) => _planCurricular = p)
-          .catchError((Object e) {
-        _loadErrors.add(
-            ContentLoadFailure(PlanCurricular.calendarioAsset, e.toString()));
-        return null;
-      });
+      // Sin catchError: en un SynchronousFuture (el plan sembrado) no
+      // completa nunca.
+      _cargandoPlan ??= PlanCurricular.cargar().then<PlanCurricular?>(
+        (p) => _planCurricular = p,
+        onError: (Object e) {
+          _loadErrors.add(ContentLoadFailure(
+              PlanCurricular.calendarioAsset, e.toString()));
+          return null;
+        },
+      );
 
   PlanCurricular? get planCurricularSync => _planCurricular;
 
