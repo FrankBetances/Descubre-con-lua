@@ -97,7 +97,8 @@
             "gl": "Si, choiva! A choiva cae na herba.",
             "es": "¡Sí, lluvia! La lluvia cae en la hierba."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his076_1.png"
       },
       {
         "papel": "peripecia",
@@ -164,7 +165,8 @@
             "gl": "Si, enlamada! A poza está enlamada.",
             "es": "¡Sí, embarrado! El charco está embarrado."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his076_2.png"
       },
       {
         "papel": "climax",
@@ -231,7 +233,8 @@
             "gl": "Si, botas! Lúa ten botas amarelas.",
             "es": "¡Sí, botas! Lúa tiene botas amarillas."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his076_3.png"
       },
       {
         "papel": "desenlace",
@@ -298,7 +301,8 @@
             "gl": "Si, plof! Unha poza que salpica. Plof, plof!",
             "es": "¡Sí, plof! Un charco que salpica. ¡Plof, plof!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his076_4.png"
       }
     ],
     "fonte": "biblioteca-cuentos-dialogicos-bilingues.txt:33-37,112-116,160-162,174-185,339-351,390-435"
@@ -400,7 +404,8 @@
             "gl": "Si, un abrigo! Lúa ten un abrigo vermello.",
             "es": "¡Sí, un abrigo! Lúa tiene un abrigo rojo."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his077_1.png"
       },
       {
         "papel": "peripecia",
@@ -467,7 +472,8 @@
             "gl": "Si, año! Un año branco e pequeno.",
             "es": "¡Sí, cordero! Un corderito blanco y pequeño."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his077_2.png"
       },
       {
         "papel": "climax",
@@ -534,7 +540,8 @@
             "gl": "Si, o abrigo! O abrigo vermello vai protexer o año.",
             "es": "¡Sí, el abrigo! El abrigo rojo va a proteger al corderito."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his077_3.png"
       },
       {
         "papel": "desenlace",
@@ -601,7 +608,8 @@
             "gl": "Si, unha aperta! Unha aperta grande e quentiña.",
             "es": "¡Sí, un abrazo! Un abrazo grande y calentito."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his077_4.png"
       }
     ],
     "fonte": "biblioteca-cuentos-dialogicos-bilingues.txt:53-57,137-141,160-162,174-185,339-351,390-435"
@@ -703,7 +711,8 @@
             "gl": "Si, toc! Toc, toc na fiestra.",
             "es": "¡Sí, toc! Toc, toc en la ventana."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his078_1.png"
       },
       {
         "papel": "peripecia",
@@ -770,7 +779,8 @@
             "gl": "Si, unha pelota! Unha pelota vermella debaixo da mesa.",
             "es": "¡Sí, una pelota! Una pelota roja debajo de la mesa."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his078_2.png"
       },
       {
         "papel": "climax",
@@ -837,7 +847,8 @@
             "gl": "Si, choiva! Pingas grandes de choiva na fiestra.",
             "es": "¡Sí, lluvia! Gotas grandes de lluvia en la ventana."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his078_3.png"
       },
       {
         "papel": "desenlace",
@@ -904,7 +915,8 @@
             "gl": "Si, o sol! Mañá vén o sol.",
             "es": "¡Sí, el sol! Mañana viene el sol."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his078_4.png"
       }
     ],
     "fonte": "biblioteca-cuentos-dialogicos-bilingues.txt:48-52,147-151,160-162,174-185,339-351,390-435"
@@ -1006,7 +1018,8 @@
             "gl": "Si, sombreiro! Lúa ten un sombreiro marrón.",
             "es": "¡Sí, sombrero! Lúa tiene un sombrero marrón."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his079_1.png"
       },
       {
         "papel": "peripecia",
@@ -1073,7 +1086,8 @@
             "gl": "Si, botas! Onde están as botas?",
             "es": "¡Sí, botas! ¿Dónde están las botas?"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his079_2.png"
       },
       {
         "papel": "climax",
@@ -1140,7 +1154,8 @@
             "gl": "Si, alto! As botas vermellas están ben arriba.",
             "es": "¡Sí, alto! Las botas rojas están bien arriba."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his079_3.png"
       },
       {
         "papel": "desenlace",
@@ -1207,7 +1222,8 @@
             "gl": "Si, botas! Os teus pés entran nas botas.",
             "es": "¡Sí, botas! Tus pies entran en las botas."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his079_4.png"
       }
     ],
     "fonte": "biblioteca-cuentos-dialogicos-bilingues.txt:48-52,142-146,160-162,174-185,339-351,390-435"
@@ -1310,7 +1326,8 @@
             "gl": "Si, lama! Terra marrón e enlamada.",
             "es": "¡Sí, barro! Tierra marrón y embarrada."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his080_1.png"
       },
       {
         "papel": "peripecia",
@@ -1377,7 +1394,8 @@
             "gl": "Si, botas enlamadas! Lúa ten as botas enlamadas.",
             "es": "¡Sí, botas embarradas! Lúa tiene las botas embarradas."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his080_2.png"
       },
       {
         "papel": "climax",
@@ -1444,7 +1462,8 @@
             "gl": "Si, caracol! Un caracol pequeno cunha cuncha redonda.",
             "es": "¡Sí, caracol! Un caracol pequeño con una concha redonda."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his080_3.png"
       },
       {
         "papel": "desenlace",
@@ -1511,7 +1530,8 @@
             "gl": "Si, sol! Un sol amarelo e grande.",
             "es": "¡Sí, sol! Un sol amarillo y grande."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his080_4.png"
       }
     ],
     "fonte": "biblioteca-cuentos-dialogicos-bilingues.txt:38-42,117-121,160-162,174-185,339-351,390-435"
@@ -1613,7 +1633,8 @@
             "gl": "Si, vento! É un día de vento.",
             "es": "¡Sí, viento! Es un día de viento."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his081_1.png"
       },
       {
         "papel": "peripecia",
@@ -1680,7 +1701,8 @@
             "gl": "Si, bum! Un bum grande de treboada.",
             "es": "¡Sí, bum! Un bum grande de tormenta."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his081_2.png"
       },
       {
         "papel": "climax",
@@ -1747,7 +1769,8 @@
             "gl": "Si, shhh! Caladiños. Shhh...",
             "es": "¡Sí, shhh! Calladitos. Shhh..."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his081_3.png"
       },
       {
         "papel": "desenlace",
@@ -1814,7 +1837,8 @@
             "gl": "Si, torrada! Unha torrada quentiña e crocante.",
             "es": "¡Sí, tostada! Una tostada calentita y crujiente."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his081_4.png"
       }
     ],
     "fonte": "biblioteca-cuentos-dialogicos-bilingues.txt:23-27,132-136,160-162,174-185,339-351,390-435"
@@ -1916,7 +1940,8 @@
             "gl": "Si, enlamadas! As botas de Lúa están enlamadas.",
             "es": "¡Sí, embarradas! Las botas de Lúa están embarradas."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his082_1.png"
       },
       {
         "papel": "peripecia",
@@ -1983,7 +2008,8 @@
             "gl": "Si, limpo! O chan está limpo e branco.",
             "es": "¡Sí, limpio! El suelo está limpio y blanco."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his082_2.png"
       },
       {
         "papel": "climax",
@@ -2050,7 +2076,8 @@
             "gl": "Si, fóra! Os pés fóra das botas enlamadas.",
             "es": "¡Sí, fuera! Los pies fuera de las botas embarradas."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his082_3.png"
       },
       {
         "papel": "desenlace",
@@ -2117,7 +2144,8 @@
             "gl": "Si, mazá! Unha mazá quentiña e doce.",
             "es": "¡Sí, manzana! Una manzana calentita y dulce."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his082_4.png"
       }
     ],
     "fonte": "biblioteca-cuentos-dialogicos-bilingues.txt:23-27,122-126,160-162,174-185,339-351,390-435"
@@ -2219,7 +2247,8 @@
             "gl": "Si, cabaliño de mar! Un cabaliño laranxa co rabo enroscado.",
             "es": "¡Sí, caballito de mar! Un caballito naranja con la cola enroscada."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his083_1.png"
       },
       {
         "papel": "peripecia",
@@ -2286,7 +2315,8 @@
             "gl": "Si, treboada! Un mar de treboada.",
             "es": "¡Sí, tormenta! Un mar de tormenta."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his083_2.png"
       },
       {
         "papel": "climax",
@@ -2353,7 +2383,8 @@
             "gl": "Si, cuncha! Unha cuncha rosa e grande.",
             "es": "¡Sí, concha! Una concha rosa y grande."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his083_3.png"
       },
       {
         "papel": "desenlace",
@@ -2420,7 +2451,8 @@
             "gl": "Si, a cuncha! O cabaliño estaba na cuncha rosa.",
             "es": "¡Sí, la concha! El caballito estaba en la concha rosa."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his083_4.png"
       }
     ],
     "fonte": "biblioteca-cuentos-dialogicos-bilingues.txt:43-47,137-141,160-162,174-185,339-351,390-435"
@@ -2522,7 +2554,8 @@
             "gl": "Si, sol! Un sol grande e amarelo.",
             "es": "¡Sí, sol! Un sol grande y amarillo."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his084_1.png"
       },
       {
         "papel": "peripecia",
@@ -2589,7 +2622,8 @@
             "gl": "Si, choiva! A choiva cae. Tap, tap.",
             "es": "¡Sí, lluvia! La lluvia cae. Tap, tap."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his084_2.png"
       },
       {
         "papel": "climax",
@@ -2656,7 +2690,8 @@
             "gl": "Si, debaixo! O sombreiro está debaixo do banco.",
             "es": "¡Sí, debajo! El sombrero está debajo del banco."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his084_3.png"
       },
       {
         "papel": "desenlace",
@@ -2723,7 +2758,8 @@
             "gl": "Si, o sombreiro! O sombreiro está na cabeza de Lúa.",
             "es": "¡Sí, el sombrero! El sombrero está en la cabeza de Lúa."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his084_4.png"
       }
     ],
     "fonte": "biblioteca-cuentos-dialogicos-bilingues.txt:33-37,147-151,160-162,174-185,339-351,390-435"
@@ -2825,7 +2861,8 @@
             "gl": "Si, papel! Un papel branco e longo no valado.",
             "es": "¡Sí, papel! Un papel blanco y largo en la valla."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his085_1.png"
       },
       {
         "papel": "peripecia",
@@ -2892,7 +2929,8 @@
             "gl": "Si, amarelo! Pintura amarela viva para o sol.",
             "es": "¡Sí, amarillo! Pintura amarilla viva para el sol."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his085_2.png"
       },
       {
         "papel": "climax",
@@ -2959,7 +2997,8 @@
             "gl": "Si, alto! O sol está ben arriba no papel.",
             "es": "¡Sí, alto! El sol está bien arriba en el papel."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his085_3.png"
       },
       {
         "papel": "desenlace",
@@ -3026,7 +3065,8 @@
             "gl": "Si, brillante! Un sol amarelo e brillante.",
             "es": "¡Sí, brillante! Un sol amarillo y brillante."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his085_4.png"
       }
     ],
     "fonte": "biblioteca-cuentos-dialogicos-bilingues.txt:33-37,142-146,160-162,174-185,339-351,390-435"
@@ -3128,7 +3168,8 @@
             "gl": "Si, debuxar! Lúa debuxa no papel branco.",
             "es": "¡Sí, dibujar! Lúa dibuja en el papel blanco."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his086_1.png"
       },
       {
         "papel": "peripecia",
@@ -3195,7 +3236,8 @@
             "gl": "Si, cansa! A bolboreta está moi cansa.",
             "es": "¡Sí, cansada! La mariposa está muy cansada."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his086_2.png"
       },
       {
         "papel": "climax",
@@ -3262,7 +3304,8 @@
             "gl": "Si, con coidado! Con coidado e amodo.",
             "es": "¡Sí, con cuidado! Con cuidado y despacio."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his086_3.png"
       },
       {
         "papel": "desenlace",
@@ -3329,7 +3372,8 @@
             "gl": "Si, un debuxo! Un debuxo da bolboreta.",
             "es": "¡Sí, un dibujo! Un dibujo de la mariposa."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his086_4.png"
       }
     ],
     "fonte": "biblioteca-cuentos-dialogicos-bilingues.txt:38-42,132-136,160-162,174-185,339-351,390-435"
@@ -3431,7 +3475,8 @@
             "gl": "Si, pintar! Lúa pinta o horto.",
             "es": "¡Sí, pintar! Lúa pinta el huerto."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his087_1.png"
       },
       {
         "papel": "peripecia",
@@ -3498,7 +3543,8 @@
             "gl": "Si, verde! As follas precisan pintura verde.",
             "es": "¡Sí, verde! Las hojas necesitan pintura verde."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his087_2.png"
       },
       {
         "papel": "climax",
@@ -3565,7 +3611,8 @@
             "gl": "Si, mesturar! Lúa está mesturando amarelo e azul.",
             "es": "¡Sí, mezclar! Lúa está mezclando amarillo y azul."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his087_3.png"
       },
       {
         "papel": "desenlace",
@@ -3632,7 +3679,8 @@
             "gl": "Si, vivo! Follas dun verde vivo.",
             "es": "¡Sí, vivo! Hojas de un verde vivo."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his087_4.png"
       }
     ],
     "fonte": "biblioteca-cuentos-dialogicos-bilingues.txt:38-42,112-116,160-162,174-185,339-351,390-435"
@@ -3734,7 +3782,8 @@
             "gl": "Si, rosa! Pintura rosa para os porquiños.",
             "es": "¡Sí, rosa! Pintura rosa para los cerditos."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his088_1.png"
       },
       {
         "papel": "peripecia",
@@ -3801,7 +3850,8 @@
             "gl": "Si, pincel! Onde está o pincel?",
             "es": "¡Sí, pincel! ¿Dónde está el pincel?"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his088_2.png"
       },
       {
         "papel": "climax",
@@ -3868,7 +3918,8 @@
             "gl": "Si, aquí! O pincel está aquí, entre a cunca e o papel.",
             "es": "¡Sí, aquí! El pincel está aquí, entre la taza y el papel."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his088_3.png"
       },
       {
         "papel": "desenlace",
@@ -3935,7 +3986,8 @@
             "gl": "Si, rosa! Unha manchiña rosa no nariz da cabriña.",
             "es": "¡Sí, rosa! Una manchita rosa en la nariz de la cabrita."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his088_4.png"
       }
     ],
     "fonte": "biblioteca-cuentos-dialogicos-bilingues.txt:53-57,117-121,160-162,174-185,339-351,390-435"
@@ -4037,7 +4089,8 @@
             "gl": "Si, lisa! A area é lisa.",
             "es": "¡Sí, lisa! La arena es lisa."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his089_1.png"
       },
       {
         "papel": "peripecia",
@@ -4104,7 +4157,8 @@
             "gl": "Si, tímido! O polbo é tímido.",
             "es": "¡Sí, tímido! El pulpo es tímido."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his089_2.png"
       },
       {
         "papel": "climax",
@@ -4171,7 +4225,8 @@
             "gl": "Si, cuncha! Unha cuncha branca para debuxar.",
             "es": "¡Sí, concha! Una concha blanca para dibujar."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his089_3.png"
       },
       {
         "papel": "desenlace",
@@ -4238,7 +4293,8 @@
             "gl": "Si, unha aperta! Unha aperta grande de polbo.",
             "es": "¡Sí, un abrazo! Un abrazo grande de pulpo."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his089_4.png"
       }
     ],
     "fonte": "biblioteca-cuentos-dialogicos-bilingues.txt:43-47,132-136,160-162,174-185,339-351,390-435"
@@ -4340,7 +4396,8 @@
             "gl": "Si, cortar! Lúa corta o papel laranxa.",
             "es": "¡Sí, cortar! Lúa corta el papel naranja."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his090_1.png"
       },
       {
         "papel": "peripecia",
@@ -4407,7 +4464,8 @@
             "gl": "Si, unha! Unha cenoria de papel na mesa.",
             "es": "¡Sí, una! Una zanahoria de papel en la mesa."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his090_2.png"
       },
       {
         "papel": "climax",
@@ -4474,7 +4532,8 @@
             "gl": "Si, trocar! Unha cenoria de verdade polo papel.",
             "es": "¡Sí, cambiar! Una zanahoria de verdad por el papel."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his090_3.png"
       },
       {
         "papel": "desenlace",
@@ -4541,7 +4600,8 @@
             "gl": "Si, crac! Ñam, crac, unha cenoria de verdade.",
             "es": "¡Sí, crac! Ñam, crac, una zanahoria de verdad."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his090_4.png"
       }
     ],
     "fonte": "biblioteca-cuentos-dialogicos-bilingues.txt:53-57,127-131,160-162,174-185,339-351,390-435"
@@ -4643,7 +4703,8 @@
             "gl": "Si, unha folla! Unha folla amarela no papel.",
             "es": "¡Sí, una hoja! Una hoja amarilla en el papel."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his091_1.png"
       },
       {
         "papel": "peripecia",
@@ -4710,7 +4771,8 @@
             "gl": "Si, sen rematar! Lúa aínda non rematou.",
             "es": "¡Sí, sin terminar! Lúa todavía no ha terminado."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his091_2.png"
       },
       {
         "papel": "climax",
@@ -4777,7 +4839,8 @@
             "gl": "Si, durmindo! O ourizo está durmindo.",
             "es": "¡Sí, durmiendo! El erizo está durmiendo."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his091_3.png"
       },
       {
         "papel": "desenlace",
@@ -4844,7 +4907,8 @@
             "gl": "Si, vermella! Unha folla vermella e viva no papel.",
             "es": "¡Sí, roja! Una hoja roja y viva en el papel."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his091_4.png"
       }
     ],
     "fonte": "biblioteca-cuentos-dialogicos-bilingues.txt:33-37,117-121,160-162,174-185,339-351,390-435"
@@ -4946,7 +5010,8 @@
             "gl": "Si, vermello! Pintura vermella viva.",
             "es": "¡Sí, rojo! Pintura roja viva."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his092_1.png"
       },
       {
         "papel": "peripecia",
@@ -5013,7 +5078,8 @@
             "gl": "Si, tap! Tap, tap, pintas negras.",
             "es": "¡Sí, tap! Tap, tap, lunares negros."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his092_2.png"
       },
       {
         "papel": "climax",
@@ -5080,7 +5146,8 @@
             "gl": "Si, de verdade! Esta xoaniña é de verdade.",
             "es": "¡Sí, de verdad! Esta mariquita es de verdad."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his092_3.png"
       },
       {
         "papel": "desenlace",
@@ -5147,7 +5214,8 @@
             "gl": "Si, dúas! Dúas xoaniñas vermellas.",
             "es": "¡Sí, dos! Dos mariquitas rojas."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his092_4.png"
       }
     ],
     "fonte": "biblioteca-cuentos-dialogicos-bilingues.txt:38-42,147-151,160-162,174-185,339-351,390-435"
@@ -5249,7 +5317,8 @@
             "gl": "Si, billete! Un billete amarelo para o tren.",
             "es": "¡Sí, billete! Un billete amarillo para el tren."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his093_1.png"
       },
       {
         "papel": "peripecia",
@@ -5316,7 +5385,8 @@
             "gl": "Si, un pato! O pato ten un billete azul.",
             "es": "¡Sí, un pato! El pato tiene un billete azul."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his093_2.png"
       },
       {
         "papel": "climax",
@@ -5383,7 +5453,8 @@
             "gl": "Si, alto! O tren para. Alto, trenciño!",
             "es": "¡Sí, alto! El tren para. ¡Alto, trenecito!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his093_3.png"
       },
       {
         "papel": "desenlace",
@@ -5450,7 +5521,8 @@
             "gl": "Si, rodas! Catro rodas vermellas.",
             "es": "¡Sí, ruedas! Cuatro ruedas rojas."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his093_4.png"
       }
     ],
     "fonte": "biblioteca-cuentos-dialogicos-bilingues.txt:53-57,122-126,160-162,174-185,339-351,390-435"
@@ -5552,7 +5624,8 @@
             "gl": "Si, a X! A X vermella é o noso destino.",
             "es": "¡Sí, la X! La X roja es nuestro destino."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his094_1.png"
       },
       {
         "papel": "peripecia",
@@ -5619,7 +5692,8 @@
             "gl": "Si, cruzar! Cruzar a ponte.",
             "es": "¡Sí, cruzar! Cruzar el puente."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his094_2.png"
       },
       {
         "papel": "climax",
@@ -5686,7 +5760,8 @@
             "gl": "Si, detrás! O cesto está detrás da árbore.",
             "es": "¡Sí, detrás! La cesta está detrás del árbol."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his094_3.png"
       },
       {
         "papel": "desenlace",
@@ -5753,7 +5828,8 @@
             "gl": "Si, pan! O esquío come pan.",
             "es": "¡Sí, pan! La ardilla come pan."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his094_4.png"
       }
     ],
     "fonte": "biblioteca-cuentos-dialogicos-bilingues.txt:33-37,127-131,160-162,174-185,339-351,390-435"
@@ -5855,7 +5931,8 @@
             "gl": "Si, verde! Unha botella verde.",
             "es": "¡Sí, verde! Una botella verde."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his095_1.png"
       },
       {
         "papel": "peripecia",
@@ -5922,7 +5999,8 @@
             "gl": "Si, mapa! Un mapa nunha botella.",
             "es": "¡Sí, mapa! Un mapa en una botella."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his095_2.png"
       },
       {
         "papel": "climax",
@@ -5989,7 +6067,8 @@
             "gl": "Si, coral! Un coral rosa e grande.",
             "es": "¡Sí, coral! Un coral rosa y grande."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his095_3.png"
       },
       {
         "papel": "desenlace",
@@ -6056,7 +6135,8 @@
             "gl": "Si, tres! Tres tartarugas.",
             "es": "¡Sí, tres! Tres tortugas."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his095_4.png"
       }
     ],
     "fonte": "biblioteca-cuentos-dialogicos-bilingues.txt:43-47,147-151,160-162,174-185,339-351,390-435"
@@ -6158,7 +6238,8 @@
             "gl": "Si, pasaporte! Un pasaporte azul na maleta.",
             "es": "¡Sí, pasaporte! Un pasaporte azul en la maleta."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his096_1.png"
       },
       {
         "papel": "peripecia",
@@ -6225,7 +6306,8 @@
             "gl": "Si, pasaporte! Onde está o pasaporte?",
             "es": "¡Sí, pasaporte! ¿Dónde está el pasaporte?"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his096_2.png"
       },
       {
         "papel": "climax",
@@ -6292,7 +6374,8 @@
             "gl": "Si, enriba! O pasaporte está enriba da palla.",
             "es": "¡Sí, encima! El pasaporte está encima de la paja."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his096_3.png"
       },
       {
         "papel": "desenlace",
@@ -6359,7 +6442,8 @@
             "gl": "Si, a maleta! O pasaporte está enriba da maleta.",
             "es": "¡Sí, la maleta! El pasaporte está encima de la maleta."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his096_4.png"
       }
     ],
     "fonte": "biblioteca-cuentos-dialogicos-bilingues.txt:53-57,142-146,160-162,174-185,339-351,390-435"
@@ -6461,7 +6545,8 @@
             "gl": "Si, adeus! Adeus, tren azul.",
             "es": "¡Sí, adiós! Adiós, tren azul."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his097_1.png"
       },
       {
         "papel": "peripecia",
@@ -6528,7 +6613,8 @@
             "gl": "Si, pesada! Unha maleta pesada.",
             "es": "¡Sí, pesada! Una maleta pesada."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his097_2.png"
       },
       {
         "papel": "climax",
@@ -6595,7 +6681,8 @@
             "gl": "Si, unha vaca! Unha vaca que dorme. Shhh...",
             "es": "¡Sí, una vaca! Una vaca que duerme. Shhh..."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his097_3.png"
       },
       {
         "papel": "desenlace",
@@ -6662,7 +6749,8 @@
             "gl": "Si, a lúa! Unha lúa redonda na fiestra.",
             "es": "¡Sí, la luna! Una luna redonda en la ventana."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his097_4.png"
       }
     ],
     "fonte": "biblioteca-cuentos-dialogicos-bilingues.txt:53-57,132-136,160-162,174-185,339-351,390-435"
@@ -6764,7 +6852,8 @@
             "gl": "Si, voar! O avión voa. Fuuu!",
             "es": "¡Sí, volar! El avión vuela. ¡Fuuu!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his098_1.png"
       },
       {
         "papel": "peripecia",
@@ -6831,7 +6920,8 @@
             "gl": "Si, unha abella! Unha abella pequena nunha flor amarela.",
             "es": "¡Sí, una abeja! Una abeja pequeña en una flor amarilla."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his098_2.png"
       },
       {
         "papel": "climax",
@@ -6898,7 +6988,8 @@
             "gl": "Si, no avión! A abella está no avión de papel.",
             "es": "¡Sí, en el avión! La abeja está en el avión de papel."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his098_3.png"
       },
       {
         "papel": "desenlace",
@@ -6965,7 +7056,8 @@
             "gl": "Si, unha aperta! Unha aperta pequeniña de abella.",
             "es": "¡Sí, un abrazo! Un abrazo pequeñito de abeja."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his098_4.png"
       }
     ],
     "fonte": "biblioteca-cuentos-dialogicos-bilingues.txt:38-42,137-141,160-162,174-185,339-351,390-435"
@@ -7067,7 +7159,8 @@
             "gl": "Si, explorar! Lúa explora o mar.",
             "es": "¡Sí, explorar! Lúa explora el mar."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his099_1.png"
       },
       {
         "papel": "peripecia",
@@ -7134,7 +7227,8 @@
             "gl": "Si, perigoso! As pedras afiadas son perigosas.",
             "es": "¡Sí, peligroso! Las piedras afiladas son peligrosas."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his099_2.png"
       },
       {
         "papel": "climax",
@@ -7201,7 +7295,8 @@
             "gl": "Si, amodo! Lúa explora amodo.",
             "es": "¡Sí, despacio! Lúa explora despacio."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his099_3.png"
       },
       {
         "papel": "desenlace",
@@ -7268,7 +7363,8 @@
             "gl": "Si, luces! Luces azuis e verdes.",
             "es": "¡Sí, luces! Luces azules y verdes."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his099_4.png"
       }
     ],
     "fonte": "biblioteca-cuentos-dialogicos-bilingues.txt:43-47,117-121,160-162,174-185,339-351,390-435"
@@ -7370,7 +7466,8 @@
             "gl": "Si, ra! Unha ra verde cunha maleta diminuta.",
             "es": "¡Sí, rana! Una rana verde con una maleta diminuta."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his100_1.png"
       },
       {
         "papel": "peripecia",
@@ -7437,7 +7534,8 @@
             "gl": "Si, billete! Onde está o billete?",
             "es": "¡Sí, billete! ¿Dónde está el billete?"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his100_2.png"
       },
       {
         "papel": "climax",
@@ -7504,7 +7602,8 @@
             "gl": "Si, debaixo! O billete está debaixo da folla.",
             "es": "¡Sí, debajo! El billete está debajo de la hoja."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his100_3.png"
       },
       {
         "papel": "desenlace",
@@ -7571,7 +7670,8 @@
             "gl": "Si, ras! Catro ras verdes na charca.",
             "es": "¡Sí, ranas! Cuatro ranas verdes en la charca."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his100_4.png"
       }
     ],
     "fonte": "biblioteca-cuentos-dialogicos-bilingues.txt:38-42,122-126,160-162,174-185,339-351,390-435"

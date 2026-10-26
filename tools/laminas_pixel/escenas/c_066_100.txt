@@ -1,0 +1,141 @@
+# HIS-066…100 (4-6 anos). Fichas desde a descrición «dibujo» de cada lámina.
+HIS-066.1 | xogo | mesiña@70,72x5 cadeira@120,70x4 coello@126,52x3 LUA:sentada@4,30 papel@50,64x1 |
+HIS-066.2 | xogo | mesiña@40,72x7 prato@60,64x3 cullerón@96,62x2 coello@130,52x3 LUA:sentada@0,50x1 | pregunta@20,40
+HIS-066.3 | xogo | mesiña@10,72x5 lavabo@140,60x4 cullerón@150,52x2 LUA:puntillas@60,26 | salto@80,110
+HIS-066.4 | xogo | mesiña@60,72x6 prato@76,64x3 coello@110,48x3 LUA:sentada@0,30 | corazons@120,30
+HIS-067.1 | natureza | árbore@90,20x7 LUA:sentada@0,30 regadeira@60,74x3 | gotas@80,90
+HIS-067.2 | natureza | árbore@40,0x10 naranxa@70,20x3 naranxa@96,14x3 naranxa@120,26x3 LUA:sentada@130,46x1 |
+HIS-067.3 | natureza | árbore@80,0x10 naranxa@100,20x3 LUA:puntillas@40,20 cesta@140,96x3 naranxa@148,90x2 |
+HIS-067.4 | natureza | mesa@30,84x4 xerra@60,62x3 vaso@90,70x2 vaso@110,70x2 vaso@130,70x2 LUA:sentada@0,30 caracol@150,96x2 xoaniña@170,100x2 | alegria@100,50
+HIS-068.1 | mar | polbo@10,46x3 prato@6,82x2 prato@52,82x2 rocha@110,86x4 peixe@120,60 peixe_laranxa@145,64 peixe@170,60 |
+HIS-068.2 | mar | polbo@60,40x4 prato@40,82x2 prato@110,82x2 folla@20,40x2 | vento@0,0
+HIS-068.3 | mar | rocha@4,70x5 LUA:sentada@60,26 polbo@120,40x3 prato@110,84x2 | vento@0,0
+HIS-068.4 | mar | rocha@80,86x4 peixe@90,64 peixe_laranxa@110,66 peixe@130,64 polbo@140,40x3 LUA:sentada@10,30 | burbullas@60,30
+HIS-069.1 | cociña cor=laranxa | prato@40,76x3 pan@46,70x2 LUA:sentada@20,36 mesa@120,90x2 cadeira@150,78x2 |
+HIS-069.2 | cociña cor=crema | tren@40,90x2 bloque@90,96x2 bloque_azul@100,96x2 pelota@130,94x2 LUA:sentada@0,40x1 prato@20,80x2 |
+HIS-069.3 | cociña cor=crema | tren@10,96x2 pelota@120,96x2 LUA:puntillas@60,20 prato@80,66x2 |
+HIS-069.4 | cociña cor=crema | mesa@40,84x4 prato@70,74x2 LUA:durme@80,40x1 | estrela@150,10 estrela@170,20
+HIS-070.1 | xogo | mesiña@60,72x6 caixa@80,60x2 corda@70,58x1 LUA:sentada@0,30 can_trapo@140,72x3 |
+HIS-070.2 | xogo | mesiña@50,50x9 can_trapo@80,90x3 LUA:sentada@130,40x1 | golpe@100,82
+HIS-070.3 | xogo | LUA:sentada@40,30 can_trapo@80,72x4 toalla_branca@100,90x1 |
+HIS-070.4 | xogo | LUA:sentada@50,30 can_trapo@80,70x3 caixa@140,96x2 | corazons@80,14
+HIS-071.1 | parque | LUA:inclinada@10,30 can_manchas@110,80x3 regato@120,60x6 banco@150,64x2 | movemento@100,92
+HIS-071.2 | parque | regato@20,80x15 pedra@60,94x2 pedra@90,94x2 pedra@120,94x2 can_manchas@10,80x3 LUA:sentada@50,40x1 |
+HIS-071.3 | parque | regato@0,80x16 pedra@80,94x4 LUA:puntillas@60,24x1 can_manchas@94,80x2 |
+HIS-071.4 | parque ceo_tipo=laranxa | árbore@100,0x8 banco@40,86x6 LUA:sentada@50,24 can_manchas@70,62x2 | zzz@100,40
+HIS-072.1 | granxa establo=true | gato_laranxa@80,74x4 LUA:sentada@0,40x1 palla@150,80x2 |
+HIS-072.2 | granxa establo=true | caldeiro@20,90x3 tractor@60,80x3 gato_laranxa@110,92x2 LUA:puntillas@120,40x1 | pregunta@30,80 pregunta@80,70 pregunta@160,30
+HIS-072.3 | granxa interior=true | palla@60,84x5 gato_laranxa@76,74x2 LUA:sentada@120,40x1 gato_laranxa@4,82x3 |
+HIS-072.4 | granxa interior=true | palla@50,84x6 gato_laranxa@60,70x3 gato_laranxa@86,76x2 LUA:sentada@110,30 | corazons@90,30
+HIS-073.1 | natureza | flor_vermella@110,84x3 flor@130,84x3 flor_vermella@150,84x3 can@120,90x2 LUA:sentada@0,30 regadeira@50,80x2 |
+HIS-073.2 | natureza | can@70,70x5 LUA:sentada@130,30x1 lama@60,104x3 | alegria@150,40
+HIS-073.3 | natureza | cunca@60,94x5 can@70,70x4 LUA:sentada@130,30x1 esponxa@120,80x2 regadeira@20,90x2 | gotas@80,60
+HIS-073.4 | natureza | can_manchas@50,64x5 LUA:sentada@120,30 | gotas@40,50 gotas@110,50 alegria@60,50
+HIS-074.1 | cociña cor=laranxa | gato@50,80x4 cunca@20,104x3 LUA:sentada@120,30 cunca@146,74x2 |
+HIS-074.2 | cociña cor=crema | cunca@50,70x7 LUA:sentada@130,40x1 gato@20,90x2 | vapor@70,62
+HIS-074.3 | cociña cor=crema | cunca@60,100x4 gato@60,78x3 LUA:sentada@110,30 |
+HIS-074.4 | cociña cor=crema | coxín@60,90x5 gato@70,80x3 LUA:sentada@120,30 | zzz@100,70
+HIS-075.1 | xogo | mesiña@50,70x7 gato@70,60x3 LUA:sentada@130,30x1 lupa@124,60x2 caixa_cartón@10,40x2 caixa_cartón@40,40x2 caixa_cartón@160,40x2 |
+HIS-075.2 | xogo | caixa@40,80x3 LUA:sentada@80,30 gato@150,80x2 caixa_cartón@120,40x2 | pregunta@100,20
+HIS-075.3 | xogo | caixa_cartón@40,70x6 osito@60,56x3 toalla_branca@70,74x1 LUA:inclinada@110,30 | alegria@60,40
+HIS-075.4 | xogo | mesiña@50,72x7 gato@76,54x3 LUA:sentada@0,40x1 osito@150,70x3 | notas@90,20
+HIS-076.1 | parque ceo_tipo=gris | columpio@140,40x3 LUA:sentada@60,30 | choiva@0,0
+HIS-076.2 | parque ceo_tipo=gris camiño=true | lama@40,90x8 LUA:sentada@130,30 | choiva@0,0
+HIS-076.3 | parque ceo_tipo=gris | banco@20,86x6 LUA:sentada@30,26 botas@90,90x3 lama@120,100x4 | choiva@0,0
+HIS-076.4 | parque | lama@20,96x10 LUA:salto@30,10 can@120,70x3 sol@160,4x2 | gotas@60,80 gotas@140,80
+HIS-077.1 | granxa | abrigo@80,64x4 LUA:sentada@60,30 | vento@0,0
+HIS-077.2 | granxa valla=false | vala@20,50x8 ovella@80,92x2 | vento@0,0
+HIS-077.3 | granxa | LUA:sentada@40,30 abrigo@60,64x6 ovella@76,90x1 | vento@0,0
+HIS-077.4 | granxa | ovella@110,56x4 LUA:sentada@20,30 ovella@80,92x2 | corazons@100,20
+HIS-078.1 | xogo | bloque@20,90x3 tren@40,94x2 cortina@150,30x6 LUA:sentada@70,30 |
+HIS-078.2 | xogo | mesiña@40,60x8 pelota@70,98x2 LUA:deitada@100,76x1 cortina@150,30x6 | golpe@146,40
+HIS-078.3 | xogo | ventá_peq@100,10x12 LUA:sentada@20,30 | gotas@120,30 relampo@140,20
+HIS-078.4 | xogo | coxín@50,98x4 coxín@50,90x4 coxín@50,82x4 LUA:sentada@50,20 toalla_amarela@60,62x4 ventá_peq@140,20x6 | luz@150,20
+HIS-079.1 | xogo | gancho@100,10x2 abrigo@92,16x3 sombreiro_explorador@120,10x3 caixa@100,90x3 LUA:sentada@10,30 lupa@40,70x2 |
+HIS-079.2 | xogo | caixa@50,70x6 LUA:inclinada@60,4x1 pelota@20,20x2 gorro@140,20x2 | alegria@80,20
+HIS-079.3 | xogo | botas@140,10x3 LUA:puntillas@80,26 |
+HIS-079.4 | xogo | LUA:salto@50,14 sombreiro_explorador@66,10x3 abrigo@74,56x3 botas@70,98x2 | notas@120,20
+HIS-080.1 | natureza | ventá_peq@20,20x10 LUA:sentada@40,20x1 botas@90,96x2 | gotas@120,60
+HIS-080.2 | natureza | lechuga@10,96x2 lechuga@30,96x2 lechuga@140,96x2 lechuga@160,96x2 pedra@90,90x4 LUA:puntillas@40,24x1 | brillo@100,88
+HIS-080.3 | natureza | col@60,60x6 caracol@70,96x2 caracol@90,96x2 caracol@110,96x2 LUA:sentada@140,40x1 |
+HIS-080.4 | natureza | sol@160,2x2 pedra@20,92x5 LUA:sentada@10,30x1 col@100,84x4 caracol@140,100x2 |
+HIS-081.1 | cociña cor=crema | ventá_peq@100,10x10 mesa@20,90x3 cadeira@10,80x2 cadeira@90,80x2 LUA:sentada@120,40x1 cunca@140,70x1 | choiva@100,10
+HIS-081.2 | cociña cor=crema | mesa@20,70x5 can_manchas@60,92x2 ventá_peq@140,10x8 LUA:sentada@140,40x1 | relampo@160,14 golpe@70,86
+HIS-081.3 | cociña cor=crema | mesa@10,50x9 LUA:sentada@40,40 can_manchas@100,90x2 |
+HIS-081.4 | cociña cor=crema | mesa@20,84x4 cunca@50,74x2 prato@80,76x2 pan@84,70 LUA:sentada@0,40x1 can_manchas@130,72x3 | vapor@54,70
+HIS-082.1 | cociña cor=crema | mesa@120,84x2 prato@130,76x2 mazá@136,70 LUA:sentada@20,30 lama@30,104x3 abrigo@50,70x3 | vapor@136,66
+HIS-082.2 | cociña cor=crema | lama@60,96x6 LUA:puntillas@60,30 |
+HIS-082.3 | cociña cor=crema | gancho@110,20x2 abrigo@104,26x3 LUA:inclinada@40,30 botas@120,96x2 |
+HIS-082.4 | cociña cor=crema | mesa@20,84x4 prato@46,76x2 mazá@54,70 LUA:sentada@60,20 botas@150,98x2 gancho@160,40x2 abrigo@154,46x2 |
+HIS-083.1 | mar | LUA:sentada@30,30 cabaliño_mar@120,60x4 |
+HIS-083.2 | mar | LUA:sentada@62,30 | vento@0,0
+HIS-083.3 | mar | caracola@50,50x7 cabaliño_mar@70,56x2 LUA:sentada@130,40x1 |
+HIS-083.4 | mar | LUA:sentada@40,30 cabaliño_mar@100,50x4 | corazons@100,20 burbullas@140,40
+HIS-084.1 | parque | banco@20,86x6 sombreiro@44,74x2 tobogán@140,40x3 LUA:inclinada@100,40x1 sol@160,4x2 |
+HIS-084.2 | parque ceo_tipo=gris | banco@20,86x6 LUA:sentada@110,30 paraugas@150,60x1 | choiva@0,0
+HIS-084.3 | parque ceo_tipo=gris | banco@20,70x7 can@50,96x2 sombreiro@50,104x2 LUA:sentada@120,30 paraugas@100,10x5 | choiva@0,0
+HIS-084.4 | parque ceo_tipo=gris | paraugas@44,6x8 LUA:sentada@50,44 sombreiro@66,40x2 can@86,90x2 | choiva@0,0 golpe@60,10
+HIS-085.1 | parque | vala@10,50x10 papel@20,40x15 botes_pintura@40,100x3 LUA:sentada@110,40x1 coello_branco@150,80x2 |
+HIS-085.2 | parque | papel@10,10x20 flor_vermella@40,60x3 flor_vermella@70,60x3 flor_vermella@100,60x3 regato@20,90x6 LUA:sentada@140,46x1 | brillo@150,16
+HIS-085.3 | parque | papel@10,4x20 sol@80,6x2 LUA:puntillas@40,30 coello_branco@120,86x2 pincel@100,40x3 |
+HIS-085.4 | parque | papel@10,4x20 sol@70,6x4 LUA:sentada@40,40x1 coello_branco@100,80x3 | corazons@80,40 gotas@60,104
+HIS-086.1 | natureza | flor@10,84x3 flor_vermella@170,84x3 LUA:sentada@40,30 papel@100,90x3 flor@110,92 |
+HIS-086.2 | natureza | papel@20,20x18 bolboreta@80,50x4 LUA:sentada@150,40x1 |
+HIS-086.3 | natureza | papel@40,80x6 bolboreta@60,84x2 bolboreta@90,84x2 LUA:sentada@110,30 |
+HIS-086.4 | natureza | LUA:durme@20,70 papel@90,96x3 flor@150,80x3 bolboreta@146,72x2 |
+HIS-087.1 | natureza | mesa@30,84x4 botes_pintura@40,76x2 papel@100,40x6 sol@120,44 LUA:sentada@0,30 |
+HIS-087.2 | natureza | papel@20,10x18 árbore@50,20x5 botes_pintura@140,96x2 LUA:sentada@130,30x1 | pregunta@150,20
+HIS-087.3 | natureza | prato@40,50x10 pincel@90,60x3 | gotas@60,40 brillo@84,62
+HIS-087.4 | natureza | papel@20,10x18 árbore@50,10x6 LUA:sentada@130,40x1 ra@160,90x2 |
+HIS-088.1 | granxa | palla@10,90x4 porquiño@20,84x2 porquiño@40,86x2 porquiño@60,84x2 mesa@100,84x3 papel@110,76x2 LUA:sentada@140,30x1 |
+HIS-088.2 | granxa | mesa@40,84x4 papel@50,76x2 caldeiro@140,84x3 LUA:sentada@110,30x1 | pregunta@130,20
+HIS-088.3 | granxa | mesa@20,84x5 vaso@40,70x2 papel@100,76x3 pincel@70,78x2 cabra@140,70x2 LUA:puntillas@150,20x1 |
+HIS-088.4 | granxa | LUA:sentada@20,30 cabra@80,60x4 papel@150,60x3 porquiño@140,96x2 | corazons@90,20
+HIS-089.1 | mar | LUA:sentada@20,30 caracola@70,90x2 pedra@140,90x5 | movemento@100,104
+HIS-089.2 | mar | pedra@90,70x8 polbo@110,50x2 LUA:sentada@20,30 |
+HIS-089.3 | mar | pedra@120,70x8 polbo@120,50x2 LUA:sentada@20,30 caracola@80,80x2 |
+HIS-089.4 | mar | polbo@90,40x4 LUA:sentada@20,30 estrela@60,104x2 | corazons@100,20
+HIS-090.1 | granxa | mesa@20,84x5 tesoiras@40,74x3 cenoria@70,76x2 cenoria@80,76x2 cenoria@90,76x2 cenoria@100,76x2 cesta@130,88x2 LUA:sentada@140,30x1 |
+HIS-090.2 | granxa | mesa@20,84x5 cenoria@60,76x2 LUA:sentada@120,30 | pregunta@140,20
+HIS-090.3 | granxa | burro@60,60x4 cenoria@108,66x2 LUA:sentada@140,40x1 |
+HIS-090.4 | granxa | burro@20,60x4 cenoria@68,66x2 LUA:sentada@110,20 mazá@130,62x2 |
+HIS-091.1 | parque outono=true | banco@20,86x6 LUA:sentada@30,26 papel@80,78x2 folla_vermella@120,96x3 folla_vermella@140,98x3 |
+HIS-091.2 | parque outono=true | banco@20,86x6 papel@40,78x2 LUA:puntillas@100,30 folla_vermella@140,96x3 |
+HIS-091.3 | parque outono=true | folla_vermella@60,40x5 ourizo@70,90x3 LUA:sentada@130,30x1 | zzz@100,82
+HIS-091.4 | parque outono=true | banco@20,86x6 LUA:sentada@30,26 papel@80,78x2 folla_vermella@140,96x3 ourizo@150,100 | luz@80,0
+HIS-092.1 | natureza | mesa@30,84x4 pedra@70,64x4 botes_pintura@110,76x1 pincel@96,60x2 LUA:sentada@130,30x1 |
+HIS-092.2 | natureza | pedra@40,40x12 | golpe@120,40 brillo@90,50
+HIS-092.3 | natureza | pedra@60,60x6 xoaniña@80,56x2 LUA:sentada@130,30x1 | alegria@150,40
+HIS-092.4 | natureza | mesa@30,84x4 pedra@70,64x4 xoaniña@100,74 LUA:sentada@130,30x1 | notas@70,40 golpe@50,80
+HIS-093.1 | granxa | estación@10,40x6 tren_vermello@60,80x3 pato@100,74x2 porquiño@130,74x2 LUA:inclinada@0,40x1 billete@20,74x2 |
+HIS-093.2 | granxa | tren_vermello@20,80x4 pato@60,70x2 porquiño@100,70x2 billete@60,62 billete@100,62 LUA:sentada@140,30x1 |
+HIS-093.3 | granxa | vía@10,98x6 tren_vermello@10,78x3 vaca@100,84x3 LUA:sentada@20,50x1 |
+HIS-093.4 | granxa | estación@100,40x6 tren_vermello@10,80x3 vaca@100,64x3 LUA:sentada@150,40x1 pato@20,74 porquiño@40,74 | corazons@140,30
+HIS-094.1 | parque | banco@20,86x6 mapa@50,70x3 LUA:sentada@100,30 esquío@40,64x2 |
+HIS-094.2 | parque | regato@0,90x18 ponte@50,84x4 LUA:sentada@60,30x1 esquío@90,70x2 columpio@140,40x2 mapa@56,60x1 |
+HIS-094.3 | parque | árbore@60,0x10 cesta@110,90x3 manta_cadros@110,86x1 LUA:sentada@140,40x1 esquío@90,90x2 mazá@120,84 |
+HIS-094.4 | parque | árbore@120,0x9 manta_cadros@20,96x7 LUA:sentada@30,30 esquío@100,82x2 pan@110,90 mapa@140,104 mazá@60,70 |
+HIS-095.1 | mar | botella@100,80x5 LUA:sentada@20,30 | golpe@116,72
+HIS-095.2 | mar | mapa@60,60x5 LUA:sentada@0,30 tartaruga@130,50x3 |
+HIS-095.3 | mar | coral@120,80x5 LUA:sentada@20,30 tartaruga@90,40x2 | burbullas@70,30
+HIS-095.4 | mar | tartaruga@20,50x4 tartaruga@120,50x4 tartaruga@80,30x2 LUA:sentada@70,44x1 | burbullas@100,20 corazons@90,14
+HIS-096.1 | granxa | banco@10,90x5 maleta@30,70x4 sombreiro@36,62 pasaporte@50,74 palla@140,70x3 galiña@150,60x2 LUA:sentada@80,30 |
+HIS-096.2 | granxa | banco@10,90x5 maleta@30,64x5 LUA:sentada@90,30 palla@150,70x3 | pregunta@110,20 salto@140,104
+HIS-096.3 | granxa | palla@80,30x5 galiña@90,14x3 pasaporte@96,26x2 LUA:puntillas@70,50x1 |
+HIS-096.4 | granxa | mesa@40,84x4 pan@60,74x2 cunca@90,74x2 galiña@130,64x3 LUA:sentada@0,30x1 maleta@150,96x2 pasaporte@154,92 |
+HIS-097.1 | granxa ceo_tipo=noite valla=false | farola@10,40x5 tren_azul@40,72x4 LUA:sentada@130,40x1 maleta_marrón@150,90x2 lúa_ceo@160,6x2 |
+HIS-097.2 | granxa ceo_tipo=noite valla=false | casa_pedra@130,30x5 LUA:inclinada@20,40x1 maleta_marrón@60,90x2 lúa_ceo@20,6x2 |
+HIS-097.3 | granxa ceo_tipo=noite | vaca@100,74x3 ovella@10,80x2 ovella@40,82x2 LUA:puntillas@60,40x1 maleta_marrón@80,70 | zzz@130,60
+HIS-097.4 | cuarto cor=azulnoite lúa=true | palla@20,80x8 manta_cadros@30,76x5 LUA:durme@40,50x1 maleta_marrón@130,92x2 | estrela@150,10 estrela@170,30
+HIS-098.1 | natureza | arbusto@120,40x10 LUA:sentada@10,30 avión_papel@70,40x3 flor@100,90x2 abella@102,84 |
+HIS-098.2 | natureza | flor@50,30x12 abella@84,50x4 LUA:sentada@140,40x1 |
+HIS-098.3 | natureza | arbusto@140,30x8 avión_papel@60,40x5 abella@80,46x2 LUA:sentada@0,30x1 | vento@0,0
+HIS-098.4 | natureza | colmea@100,60x6 avión_papel@60,96x3 abella@90,50 abella@140,40 abella@150,70 abella@80,70 LUA:sentada@0,30 | alegria@40,40
+HIS-099.1 | mar | cova@100,70x6 LUA:sentada@10,30 lanterna@54,60x2 mapa@70,74x2 |
+HIS-099.2 | mar | rocha@10,80x5 rocha@120,80x5 cangrexo@70,80x4 LUA:sentada@0,50x1 |
+HIS-099.3 | mar | rocha@0,80x5 rocha@140,80x5 cangrexo@140,60x3 LUA:puntillas@60,30 | burbullas@150,40
+HIS-099.4 | cuarto cor=azulnoite noite=true lúa=false ventá_x=none | LUA:deitada@40,60 peixe_luz@40,20x2 peixe_luz@80,30x2 peixe_luz@120,16x2 peixe_luz@150,40x2 peixe_luz@60,40x2 lanterna@140,100x2 |
+HIS-100.1 | natureza | poste@40,50x3 folla@36,40x3 ra@90,90x2 castaña@110,96x2 estanque@150,64x2 LUA:sentada@120,30x1 |
+HIS-100.2 | natureza | castaña@60,90x4 caracola@66,84 ra@100,86x2 col@140,70x4 LUA:sentada@0,40x1 |
+HIS-100.3 | natureza | col@40,40x6 billete@60,90x3 ra@130,50x3 LUA:sentada@0,40x1 | movemento@126,60
+HIS-100.4 | natureza horta=false | estanque@30,80x9 nenúfar@50,90x2 ra@40,60x2 ra@70,54x2 ra@100,60x2 ra@130,54x2 LUA:salto@140,20x1 | alegria@90,40

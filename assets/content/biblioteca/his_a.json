@@ -333,7 +333,8 @@
             "gl": "Si, mazá! Unha mazá doce! Traba, traba!",
             "es": "¡Sí, manzana! ¡Una manzana dulce! ¡Muerde, muerde!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his002_1.png"
       },
       {
         "papel": "nó",
@@ -400,7 +401,8 @@
             "gl": "Si, traba! Trabar a mazá!",
             "es": "¡Sí, muerde! ¡Morder la manzana!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his002_2.png"
       },
       {
         "papel": "desenlace",
@@ -467,7 +469,8 @@
             "gl": "Si, mazá! Que mazá tan rica! Trabada grande!",
             "es": "¡Sí, manzana! ¡Qué manzana tan rica! ¡Mordisco grande!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his002_3.png"
       }
     ],
     "fonte": "biblioteca-cuentos-dialogicos-bilingues.txt:202-208"
@@ -567,7 +570,8 @@
             "gl": "Si, durmir! É de noite, a durmir!",
             "es": "¡Sí, dormir! ¡Es de noche, a dormir!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his003_1.png"
       },
       {
         "papel": "nó",
@@ -634,7 +638,8 @@
             "gl": "Si, durmir! O osiño vai durmir.",
             "es": "¡Sí, dormir! El osito se va a dormir."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his003_2.png"
       },
       {
         "papel": "desenlace",
@@ -701,7 +706,8 @@
             "gl": "Si, durmir! Osiño con sono!",
             "es": "¡Sí, dormir! ¡Osito con sueño!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his003_3.png"
       }
     ],
     "fonte": "biblioteca-cuentos-dialogicos-bilingues.txt:209-215"
@@ -802,7 +808,8 @@
             "gl": "Si, pequeno! Un charco pequeno, non grande!",
             "es": "¡Sí, pequeño! ¡Un charco pequeño, no grande!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his004_1.png"
       },
       {
         "papel": "nó",
@@ -869,7 +876,8 @@
             "gl": "Si, grande! Un charco grande, non pequeno!",
             "es": "¡Sí, grande! ¡Un charco grande, no pequeño!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his004_2.png"
       },
       {
         "papel": "desenlace",
@@ -936,7 +944,8 @@
             "gl": "Si, grande! Charco grande, ra pequena! Salta, salta!",
             "es": "¡Sí, grande! ¡Charco grande, rana pequeña! ¡Salta, salta!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his004_3.png"
       }
     ],
     "fonte": "biblioteca-cuentos-dialogicos-bilingues.txt:216-222"
@@ -1037,7 +1046,8 @@
             "gl": "Si, pelota! Pelota vermella! Palmas!",
             "es": "¡Sí, pelota! ¡Pelota roja! ¡Palmas!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his005_1.png"
       },
       {
         "papel": "nó",
@@ -1104,7 +1114,8 @@
             "gl": "Si, pelota! A pelota de Lúa! Palmas, palmas!",
             "es": "¡Sí, pelota! ¡La pelota de Lúa! ¡Palmas, palmas!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his005_2.png"
       },
       {
         "papel": "desenlace",
@@ -1171,7 +1182,8 @@
             "gl": "Si, palmas! Palmas para a pelota!",
             "es": "¡Sí, palmas! ¡Palmas para la pelota!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his005_3.png"
       }
     ],
     "fonte": "biblioteca-cuentos-dialogicos-bilingues.txt:223-229"
@@ -1272,7 +1284,8 @@
             "gl": "Si, chap! Chap na auga!",
             "es": "¡Sí, chap! ¡Chap en el agua!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his011_1.png"
       },
       {
         "papel": "nó",
@@ -1339,7 +1352,8 @@
             "gl": "Si, patiño! O patiño amarelo! Chap!",
             "es": "¡Sí, patito! ¡El patito amarillo! ¡Chap!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his011_2.png"
       },
       {
         "papel": "desenlace",
@@ -1406,7 +1420,8 @@
             "gl": "Si, chap! Chap, chap, auga!",
             "es": "¡Sí, chap! ¡Chap, chap, agua!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his011_3.png"
       }
     ],
     "fonte": "biblioteca-cuentos-dialogicos-bilingues.txt:195-201,13-57,107-151,158-162"
@@ -1507,7 +1522,8 @@
             "gl": "Si, auga! Nariz mollado!",
             "es": "¡Sí, agua! ¡Nariz mojada!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his012_1.png"
       },
       {
         "papel": "nó",
@@ -1574,7 +1590,8 @@
             "gl": "Si, mollada! Toda mollada de auga!",
             "es": "¡Sí, mojada! ¡Toda mojada de agua!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his012_2.png"
       },
       {
         "papel": "desenlace",
@@ -1641,7 +1658,8 @@
             "gl": "Si, mollada! Lúa estaba mollada. Agora, unha aperta!",
             "es": "¡Sí, mojada! Lúa estaba mojada. ¡Ahora, un abrazo!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his012_3.png"
       }
     ],
     "fonte": "biblioteca-cuentos-dialogicos-bilingues.txt:13-57,107-151,158-162"
@@ -1742,7 +1760,8 @@
             "gl": "Si, barco! Un barco vermello!",
             "es": "¡Sí, barco! ¡Un barco rojo!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his013_1.png"
       },
       {
         "papel": "nó",
@@ -1809,7 +1828,8 @@
             "gl": "Si, barco! Volve, barco!",
             "es": "¡Sí, barco! ¡Vuelve, barco!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his013_2.png"
       },
       {
         "papel": "desenlace",
@@ -1876,7 +1896,8 @@
             "gl": "Si, barco! O barco volveu pola auga!",
             "es": "¡Sí, barco! ¡El barco ha vuelto por el agua!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his013_3.png"
       }
     ],
     "fonte": "biblioteca-cuentos-dialogicos-bilingues.txt:13-57,107-151,158-162"
@@ -1977,7 +1998,8 @@
             "gl": "Si, auga! Chap, chap! Auga para a ovella!",
             "es": "¡Sí, agua! ¡Chap, chap! ¡Agua para la oveja!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his014_1.png"
       },
       {
         "papel": "nó",
@@ -2044,7 +2066,8 @@
             "gl": "Si, chap! Chap, chap, chap!",
             "es": "¡Sí, chap! ¡Chap, chap, chap!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his014_2.png"
       },
       {
         "papel": "desenlace",
@@ -2111,7 +2134,8 @@
             "gl": "Si, auga! Mmm, auga! Chap!",
             "es": "¡Sí, agua! ¡Mmm, agua! ¡Chap!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his014_3.png"
       }
     ],
     "fonte": "biblioteca-cuentos-dialogicos-bilingues.txt:13-57,107-151,158-162"
@@ -2212,7 +2236,8 @@
             "gl": "Si, auga! Oh, oh, auga!",
             "es": "¡Sí, agua! ¡Oh, oh, agua!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his015_1.png"
       },
       {
         "papel": "nó",
@@ -2279,7 +2304,8 @@
             "gl": "Si, molladas! Patas molladas na auga!",
             "es": "¡Sí, mojadas! ¡Patas mojadas en el agua!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his015_2.png"
       },
       {
         "papel": "desenlace",
@@ -2346,7 +2372,8 @@
             "gl": "Si, mollada! Mollada... e agora seca!",
             "es": "¡Sí, mojada! Mojada... ¡y ahora seca!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his015_3.png"
       }
     ],
     "fonte": "biblioteca-cuentos-dialogicos-bilingues.txt:13-57,107-151,158-162"
@@ -2446,7 +2473,8 @@
             "gl": "Si, tap! Tap, tap, auga!",
             "es": "¡Sí, tap! ¡Tap, tap, agua!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his016_1.png"
       },
       {
         "papel": "nó",
@@ -2513,7 +2541,8 @@
             "gl": "Si, auga! Pingas pequenas de auga!",
             "es": "¡Sí, agua! ¡Gotas pequeñas de agua!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his016_2.png"
       },
       {
         "papel": "desenlace",
@@ -2580,7 +2609,8 @@
             "gl": "Si, auga... auga suave. Tap, tap.",
             "es": "Sí, agua... agua suave. Tap, tap."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his016_3.png"
       }
     ],
     "fonte": "biblioteca-cuentos-dialogicos-bilingues.txt:13-57,107-151,158-162"
@@ -2680,7 +2710,8 @@
             "gl": "Si, peixe! Un peixiño!",
             "es": "¡Sí, pez! ¡Un pececito!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his017_1.png"
       },
       {
         "papel": "nó",
@@ -2747,7 +2778,8 @@
             "gl": "Si, peixe! Onde está o peixe? Alí!",
             "es": "¡Sí, pez! ¿Dónde está el pez? ¡Ahí!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his017_2.png"
       },
       {
         "papel": "desenlace",
@@ -2814,7 +2846,8 @@
             "gl": "Si, peixe! Peixe contento!",
             "es": "¡Sí, pez! ¡Pez contento!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his017_3.png"
       }
     ],
     "fonte": "biblioteca-cuentos-dialogicos-bilingues.txt:13-57,107-151,158-162"
@@ -2915,7 +2948,8 @@
             "gl": "Si, barco! Vai, barco!",
             "es": "¡Sí, barco! ¡Vamos, barco!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his018_1.png"
       },
       {
         "papel": "nó",
@@ -2982,7 +3016,8 @@
             "gl": "Si, barco! Para, barco!",
             "es": "¡Sí, barco! ¡Para, barco!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his018_2.png"
       },
       {
         "papel": "desenlace",
@@ -3049,7 +3084,8 @@
             "gl": "Si, barco! Un barco mollado!",
             "es": "¡Sí, barco! ¡Un barco mojado!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his018_3.png"
       }
     ],
     "fonte": "biblioteca-cuentos-dialogicos-bilingues.txt:13-57,107-151,158-162"
@@ -3150,7 +3186,8 @@
             "gl": "Si, folla! A folla cae!",
             "es": "¡Sí, hoja! ¡La hoja cae!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his019_1.png"
       },
       {
         "papel": "nó",
@@ -3217,7 +3254,8 @@
             "gl": "Si, cae! Cae, cae, folla!",
             "es": "¡Sí, cae! ¡Cae, cae, hoja!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his019_2.png"
       },
       {
         "papel": "desenlace",
@@ -3284,7 +3322,8 @@
             "gl": "Si, folla! A folla cae ao chan.",
             "es": "¡Sí, hoja! La hoja cae al suelo."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his019_3.png"
       }
     ],
     "fonte": "biblioteca-cuentos-dialogicos-bilingues.txt:13-57,107-151,158-162"
@@ -3385,7 +3424,8 @@
             "gl": "Si, pedra! Unha pedra grande!",
             "es": "¡Sí, piedra! ¡Una piedra grande!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his020_1.png"
       },
       {
         "papel": "nó",
@@ -3452,7 +3492,8 @@
             "gl": "Si, pedra! Toc, toc, pedra!",
             "es": "¡Sí, piedra! ¡Toc, toc, piedra!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his020_2.png"
       },
       {
         "papel": "desenlace",
@@ -3519,7 +3560,8 @@
             "gl": "Si, grande! Unha pedra grande! Tap, tap!",
             "es": "¡Sí, grande! ¡Una piedra grande! ¡Tap, tap!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his020_3.png"
       }
     ],
     "fonte": "biblioteca-cuentos-dialogicos-bilingues.txt:13-57,107-151,158-162"
@@ -3620,7 +3662,8 @@
             "gl": "Si, pequena! Unha pedra pequena!",
             "es": "¡Sí, pequeña! ¡Una piedra pequeña!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his021_1.png"
       },
       {
         "papel": "nó",
@@ -3687,7 +3730,8 @@
             "gl": "Si, pedra! A pedra pequena!",
             "es": "¡Sí, piedra! ¡La piedra pequeña!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his021_2.png"
       },
       {
         "papel": "desenlace",
@@ -3754,7 +3798,8 @@
             "gl": "Si, pequena! Unha pedra pequena para Lúa!",
             "es": "¡Sí, pequeña! ¡Una piedra pequeña para Lúa!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his021_3.png"
       }
     ],
     "fonte": "biblioteca-cuentos-dialogicos-bilingues.txt:13-57,107-151,158-162"
@@ -3855,7 +3900,8 @@
             "gl": "Si, grande! Unha cama grande, unha gata pequena!",
             "es": "¡Sí, grande! ¡Una cama grande, una gata pequeña!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his022_1.png"
       },
       {
         "papel": "nó",
@@ -3922,7 +3968,8 @@
             "gl": "Si, grande! Lúa grande, grande!",
             "es": "¡Sí, grande! ¡Lúa grande, grande!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his022_2.png"
       },
       {
         "papel": "desenlace",
@@ -3989,7 +4036,8 @@
             "gl": "Si, pequena! Pequena e acochadiña.",
             "es": "¡Sí, pequeña! Pequeña y acurrucadita."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his022_3.png"
       }
     ],
     "fonte": "biblioteca-cuentos-dialogicos-bilingues.txt:13-57,107-151,158-162"
@@ -4090,7 +4138,8 @@
             "gl": "Si, abaixo! Deixa caer a esponxa! E a grande?",
             "es": "¡Sí, abajo! ¡Deja caer la esponja! ¿Y la grande?"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his023_1.png"
       },
       {
         "papel": "nó",
@@ -4157,7 +4206,8 @@
             "gl": "Si, grande! Esponxa grande! Lista para caer!",
             "es": "¡Sí, grande! ¡Esponja grande! ¡Lista para caer!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his023_2.png"
       },
       {
         "papel": "desenlace",
@@ -4224,7 +4274,8 @@
             "gl": "Si, abaixo! Unha caída grande!",
             "es": "¡Sí, abajo! ¡Una caída grande!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his023_3.png"
       }
     ],
     "fonte": "biblioteca-cuentos-dialogicos-bilingues.txt:13-57,107-151,158-162"
@@ -4325,7 +4376,8 @@
             "gl": "Si, folla! Onde está a folla grande?",
             "es": "¡Sí, hoja! ¿Dónde está la hoja grande?"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his024_1.png"
       },
       {
         "papel": "nó",
@@ -4392,7 +4444,8 @@
             "gl": "Si, folla! Unha folla grande!",
             "es": "¡Sí, hoja! ¡Una hoja grande!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his024_2.png"
       },
       {
         "papel": "desenlace",
@@ -4459,7 +4512,8 @@
             "gl": "Si, grande! Unha folla grande para Lúa!",
             "es": "¡Sí, grande! ¡Una hoja grande para Lúa!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his024_3.png"
       }
     ],
     "fonte": "biblioteca-cuentos-dialogicos-bilingues.txt:13-57,107-151,158-162"
@@ -4560,7 +4614,8 @@
             "gl": "Si, mazá! Unha mazá vermella! Unha trabada?",
             "es": "¡Sí, manzana! ¡Una manzana roja! ¿Un mordisco?"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his025_1.png"
       },
       {
         "papel": "nó",
@@ -4627,7 +4682,8 @@
             "gl": "Si, mazá! A mazá está aquí! Traba!",
             "es": "¡Sí, manzana! ¡La manzana está aquí! ¡Muerde!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his025_2.png"
       },
       {
         "papel": "desenlace",
@@ -4694,7 +4750,8 @@
             "gl": "Si, traba! Unha trabada grande de mazá!",
             "es": "¡Sí, muerde! ¡Un mordisco grande de manzana!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his025_3.png"
       }
     ],
     "fonte": "biblioteca-cuentos-dialogicos-bilingues.txt:13-57,107-151,158-162"
@@ -4794,7 +4851,8 @@
             "gl": "Si, quentiña! Lúa quere unha manta quentiña.",
             "es": "¡Sí, calentita! Lúa quiere una manta calentita."
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his026_1.png"
       },
       {
         "papel": "nó",
@@ -4861,7 +4919,8 @@
             "gl": "Si, quentiña! Unha manta quentiña!",
             "es": "¡Sí, calentita! ¡Una manta calentita!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his026_2.png"
       },
       {
         "papel": "desenlace",
@@ -4928,7 +4987,8 @@
             "gl": "Si, quentiña! Quentiña e contenta!",
             "es": "¡Sí, calentita! ¡Calentita y contenta!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his026_3.png"
       }
     ],
     "fonte": "biblioteca-cuentos-dialogicos-bilingues.txt:13-57,107-151,158-162"
@@ -5029,7 +5089,8 @@
             "gl": "Si, pan! Pan para comer!",
             "es": "¡Sí, pan! ¡Pan para comer!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his027_1.png"
       },
       {
         "papel": "nó",
@@ -5096,7 +5157,8 @@
             "gl": "Si, pan! Mmm, pan! Imos comer!",
             "es": "¡Sí, pan! ¡Mmm, pan! ¡Vamos a comer!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his027_2.png"
       },
       {
         "papel": "desenlace",
@@ -5163,7 +5225,8 @@
             "gl": "Si, comer! Comer o pan!",
             "es": "¡Sí, comer! ¡Comer el pan!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his027_3.png"
       }
     ],
     "fonte": "biblioteca-cuentos-dialogicos-bilingues.txt:13-57,107-151,158-162"
@@ -5264,7 +5327,8 @@
             "gl": "Si, mazá! Unha mazá para que coma o osiño!",
             "es": "¡Sí, manzana! ¡Una manzana para que coma el osito!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his028_1.png"
       },
       {
         "papel": "nó",
@@ -5331,7 +5395,8 @@
             "gl": "Si, para! O tren da mazá para!",
             "es": "¡Sí, para! ¡El tren de la manzana se para!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his028_2.png"
       },
       {
         "papel": "desenlace",
@@ -5398,7 +5463,8 @@
             "gl": "Si, come! O osiño come a mazá!",
             "es": "¡Sí, come! ¡El osito se come la manzana!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his028_3.png"
       }
     ],
     "fonte": "biblioteca-cuentos-dialogicos-bilingues.txt:13-57,107-151,158-162"
@@ -5499,7 +5565,8 @@
             "gl": "Si, pan! Pan quentiño!",
             "es": "¡Sí, pan! ¡Pan calentito!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his029_1.png"
       },
       {
         "papel": "nó",
@@ -5566,7 +5633,8 @@
             "gl": "Si, quentiño! Pan quentiño, quentiño!",
             "es": "¡Sí, calentito! ¡Pan calentito, calentito!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his029_2.png"
       },
       {
         "papel": "desenlace",
@@ -5633,7 +5701,8 @@
             "gl": "Si, pan! Pan brando e quentiño!",
             "es": "¡Sí, pan! ¡Pan blando y calentito!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his029_3.png"
       }
     ],
     "fonte": "biblioteca-cuentos-dialogicos-bilingues.txt:13-57,107-151,158-162"
@@ -5733,7 +5802,8 @@
             "gl": "Si, quentiña! Unha toalla quentiña!",
             "es": "¡Sí, calentita! ¡Una toalla calentita!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his030_1.png"
       },
       {
         "papel": "nó",
@@ -5800,7 +5870,8 @@
             "gl": "Si, quentiña! A toalla quentiña está alá arriba!",
             "es": "¡Sí, calentita! ¡La toalla calentita está allá arriba!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his030_2.png"
       },
       {
         "papel": "desenlace",
@@ -5867,7 +5938,8 @@
             "gl": "Si, quentiña! Unha aperta de toalla quentiña!",
             "es": "¡Sí, calentita! ¡Un abrazo de toalla calentita!"
           }
-        }
+        },
+        "imaxe": "assets/brand/contos/his030_3.png"
       }
     ],
     "fonte": "biblioteca-cuentos-dialogicos-bilingues.txt:13-57,107-151,158-162"
