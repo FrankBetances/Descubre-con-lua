@@ -26,6 +26,7 @@ import 'package:descubre_con_lua/features/cuentos/views/microcuento_screen.dart'
 import 'package:descubre_con_lua/data/models/rexistro_frases_model.dart';
 import 'package:descubre_con_lua/data/models/unidade_curricular_model.dart';
 import 'package:descubre_con_lua/data/models/hogar_model.dart';
+import 'package:descubre_con_lua/core/codigo_casa.dart';
 import 'package:descubre_con_lua/data/models/normativa_model.dart';
 import 'package:descubre_con_lua/data/models/steam_do_mes_model.dart';
 import 'package:descubre_con_lua/data/models/xogos_fogar_model.dart';
@@ -768,10 +769,15 @@ void main() {
           centroInteres: unidade.centroInteres,
           nucleo: contenido.nucleoSync(unidade),
           microRutina: asamblea.microRutinaHogar,
+          // Como la abre la app: el reto de la semana 1 y su código (M4.4,
+          // P10).
+          reto: unidade.hogar?.daSemana(1),
+          momentoDoReto: unidade.hogar?.momento,
+          codigoCasa: CodigoCasa.para('curso_3_4', 10, 1)?.texto,
           language: lang,
           audioService: MockOfflineAudioService(),
         ),
-        tamano: const Size(412, 1400),
+        tamano: const Size(412, 1700),
       );
     });
 

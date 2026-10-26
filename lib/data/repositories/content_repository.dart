@@ -976,8 +976,8 @@ class ContentRepository {
       _cargandoPlan ??= PlanCurricular.cargar().then<PlanCurricular?>(
         (p) => _planCurricular = p,
         onError: (Object e) {
-          _loadErrors.add(ContentLoadFailure(
-              PlanCurricular.calendarioAsset, e.toString()));
+          _loadErrors.add(
+              ContentLoadFailure(PlanCurricular.calendarioAsset, e.toString()));
           return null;
         },
       );
@@ -1043,14 +1043,16 @@ class ContentRepository {
     // El núcleo del mes sale del plan curricular (F11): se lee con la unidad.
     final plan = loadPlanCurricular();
     if (ya != null) return plan.then((_) => ya);
-    return Future.wait([
-      _loader.loadUnidadeDoMes(cursoId, orden),
-      plan,
-    ]).then<UnidadeDoMes?>((r) {
-      final u = r[0] as UnidadeDoMes;
-      _unidadesDoMes[clave] = u;
-      return u;
-    }).catchError((Object e) {
+    // Encadenado y no con Future.wait: con el plan sembrado (un
+    // SynchronousFuture), Future.wait llama a su callback antes de tener su
+    // lista y revienta con un null check.
+    return _loader
+        .loadUnidadeDoMes(cursoId, orden)
+        .then<UnidadeDoMes?>((u) => plan.then((_) {
+              _unidadesDoMes[clave] = u;
+              return u;
+            }))
+        .catchError((Object e) {
       _loadErrors.add(ContentLoadFailure(
           ContentAssetLoader.unidadeDoMesPath(cursoId, orden), e.toString()));
       return null;

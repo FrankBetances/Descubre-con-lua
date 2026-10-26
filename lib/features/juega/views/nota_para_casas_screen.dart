@@ -279,8 +279,8 @@ class NotaParaCasasScreen extends StatelessWidget {
                         const SizedBox(height: 4),
                         Text(
                           isGl
-                              ? 'Na app, en Na casa → Hoxe → «Tes un código da escola?». Abre o núcleo, o reto desta semana e que mirar. Non se garda nada.'
-                              : 'En la app, en En casa → Hoy → «¿Tienes un código de la escuela?». Abre el núcleo, el reto de esta semana y qué mirar. No se guarda nada.',
+                              ? 'Na app, entra en Na casa, abre Hoxe e toca «Tes un código da escola?». Abre o núcleo, o reto desta semana e que mirar. Non se garda nada.'
+                              : 'En la app, entra en En casa, abre Hoy y toca «¿Tienes un código de la escuela?». Abre el núcleo, el reto de esta semana y qué mirar. No se guarda nada.',
                           style: theme.textTheme.bodyMedium?.copyWith(
                             color: AppTheme.textSecondary,
                             height: 1.4,
