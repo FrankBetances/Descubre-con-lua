@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 
+import '../../../core/widgets/pauta_espera_recast.dart';
 import '../../../core/audio/offline_audio_service.dart';
 import '../../../core/audio/voice_id.dart';
 import '../../../core/audio/widgets/boton_escuchar.dart';
@@ -254,6 +255,7 @@ class _Ingles extends StatelessWidget {
               ),
             ],
           ),
+          PautaEsperaRecast(tipo: 'xogo', language: language),
           if (plan case final p? when p.newWords.isNotEmpty) ...[
             const SizedBox(height: 12),
             PalabrasDoDia(

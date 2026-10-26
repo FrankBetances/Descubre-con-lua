@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../english/widgets/nucleo_arriba.dart';
 import '../../../core/audio/offline_audio_service.dart';
 import '../../../core/localization/app_language.dart';
 import '../../../core/localization/localized_string.dart';
@@ -74,6 +75,13 @@ class ExplorarFamiliasScreen extends StatelessWidget {
         nome: NomesFamilias.ingles,
         di: NomesFamilias.inglesDi,
         abrir: (_) => PalabrasDoTraxectoScreen(
+          nucleoDo: (c) => NucleoArriba(
+            repository: repository,
+            cursoId: c,
+            mesCalendario: (agora ?? DateTime.now()).month,
+            language: language,
+            audioService: audioService,
+          ),
           programa: repository.programaTprSync,
           cursoInicial: cursoId,
           language: language,

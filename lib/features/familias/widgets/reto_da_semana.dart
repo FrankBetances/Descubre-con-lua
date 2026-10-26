@@ -67,7 +67,8 @@ class _RetoDaSemanaState extends State<RetoDaSemana> {
   static const _xogo =
       LocalizedString(gl: 'O XOGO DO MES', es: 'EL JUEGO DEL MES');
   static const _observar = LocalizedString(
-      gl: 'QUE MIRAR · NON SE MARCA NIN SE GARDA', es: 'QUÉ MIRAR · NO SE MARCA NI SE GUARDA');
+      gl: 'QUE MIRAR · NON SE MARCA NIN SE GARDA',
+      es: 'QUÉ MIRAR · NO SE MARCA NI SE GUARDA');
   static const _reactivar =
       LocalizedString(gl: 'O MES PASADO', es: 'EL MES PASADO');
 

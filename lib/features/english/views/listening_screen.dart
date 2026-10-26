@@ -21,6 +21,8 @@ import '../../docentes/nomes_docentes.dart';
 /// dieciséis por mes, 160 por curso, 800 en el trayecto. Primero se escucha
 /// sin leer; después se ve el texto, lo que significa y el gesto.
 class ListeningScreen extends StatefulWidget {
+  /// El núcleo del mes arriba (M7.1), para el curso elegido y el mes.
+  final Widget Function(String cursoId)? nucleoDo;
   final ProgramaTpr? programa;
   final String cursoInicial;
   final AppLanguage language;
@@ -34,6 +36,7 @@ class ListeningScreen extends StatefulWidget {
 
   const ListeningScreen({
     super.key,
+    this.nucleoDo,
     required this.programa,
     this.cursoInicial = 'curso_0_2',
     this.language = AppLanguage.gl,
@@ -111,6 +114,7 @@ class _ListeningScreenState extends State<ListeningScreen> {
                 key: const Key('escoita_lista'),
                 padding: const EdgeInsets.all(16),
                 children: [
+                  if (widget.nucleoDo case final n?) n(_curso),
                   SelectorDeCursoTpr(
                     programa: programa,
                     seleccionado: _curso,

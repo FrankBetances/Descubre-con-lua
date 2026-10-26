@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 
+import '../../../core/audio/offline_audio_service.dart';
+import '../../../core/audio/voice_id.dart';
+import '../../../core/audio/widgets/boton_escuchar.dart';
 import '../../../core/localization/app_language.dart';
+import '../../../core/widgets/pauta_espera_recast.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../data/models/dinamica_model.dart';
 import '../../../data/repositories/content_repository.dart';
@@ -9,6 +13,9 @@ import '../../docentes/nomes_docentes.dart';
 
 /// Catálogo de Dinámicas de Aula organizadas por día de la semana y pulso BPM.
 class DinamicasScreen extends StatefulWidget {
+  /// La voz de la orden inglesa de cada dinámica (M7.2).
+  final OfflineAudioService? audioService;
+
   final ContentRepository repository;
   final AppLanguage initialLanguage;
 
@@ -17,6 +24,7 @@ class DinamicasScreen extends StatefulWidget {
 
   const DinamicasScreen({
     super.key,
+    this.audioService,
     required this.repository,
     this.initialLanguage = AppLanguage.gl,
     this.onLanguageChanged,
@@ -208,6 +216,33 @@ class _DinamicasScreenState extends State<DinamicasScreen> {
                             ],
                           ),
                         ),
+
+                        // M7.2: la orden inglesa de la dinámica, con su voz,
+                        // su gesto y la línea de espera y recast.
+                        if (din.tprIngles case final tpr?
+                            when tpr.comando.trim().isNotEmpty) ...[
+                          const SizedBox(height: 12),
+                          BotonEscuchar(
+                            key: ValueKey('dinamica_orde_${din.clave}'),
+                            audioService: widget.audioService,
+                            texto: tpr.comando,
+                            language: AppLanguage.en,
+                            interfaz: lang,
+                            style: estiloIngles(tpr.comando),
+                            comoChip: true,
+                            colorChip: context.acento,
+                            descripcion: tpr.comando,
+                          ),
+                          const SizedBox(height: 4),
+                          Text(
+                            tpr.accion.resolve(lang),
+                            style: const TextStyle(
+                              fontSize: 14,
+                              color: AppTheme.textSecondary,
+                            ),
+                          ),
+                          PautaEsperaRecast(tipo: 'dinamica', language: lang),
+                        ],
                       ],
                     ),
                   ),

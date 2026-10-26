@@ -1,14 +1,14 @@
 {
- "generatedAt": "2026-10-26T07:34:12Z",
- "entries": 36374,
+ "generatedAt": "2026-10-26T07:45:50Z",
+ "entries": 36378,
  "byStyle": {
   "slow": 5956,
-  "tutor": 30418
+  "tutor": 30422
  },
  "byLang": {
   "en": 16920,
-  "es": 9727,
-  "gl": 9727
+  "es": 9729,
+  "gl": 9729
  },
  "corpus": [
   {
@@ -228052,6 +228052,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_db6040d0_4",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Zumo",
+   "speech": "Zumo",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_db609bf4_39",
    "lang": "es",
    "style": "tutor",
@@ -231996,6 +232005,15 @@
    "text": "¿Conoces algún perro?",
    "speech": "¿Conoces algún perro?",
    "source": "biblioteca/HIS-042/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_e78c8b8c_6",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Violín",
+   "speech": "Violín",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -319217,6 +319235,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_e560508e_4",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Zume",
+   "speech": "Zume",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_e5648d08_38",
    "lang": "gl",
    "style": "tutor",
@@ -320124,6 +320151,15 @@
    "speech": "Durme ben",
    "source": "tpr.3_4.decembro/s3/3_4.decembro.s3.sleep-tight/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_e78c8b8c_6",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Violín",
+   "speech": "Violín",
+   "source": "significados/significado",
+   "pack": false
   },
   {
    "id": "gl_tutor_e7925c89_30",

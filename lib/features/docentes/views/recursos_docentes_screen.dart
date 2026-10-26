@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../english/widgets/nucleo_arriba.dart';
 import '../../../core/audio/offline_audio_service.dart';
 import '../../../core/localization/app_language.dart';
 import '../../../core/localization/localized_string.dart';
@@ -102,6 +103,7 @@ class RecursosDocentesScreen extends StatelessWidget {
             NomesDocentes.dinamicasDi,
             (_) => DinamicasScreen(
                   repository: repository,
+                  audioService: audioService,
                   initialLanguage: language,
                   onLanguageChanged: onLanguageChanged,
                 ),
@@ -187,6 +189,13 @@ class RecursosDocentesScreen extends StatelessWidget {
             NomesDocentes.palabrasCurso,
             NomesDocentes.palabrasCursoDi,
             (_) => PalabrasDoTraxectoScreen(
+                  nucleoDo: (c) => NucleoArriba(
+                    repository: repository,
+                    cursoId: c,
+                    mesCalendario: (agora ?? DateTime.now()).month,
+                    language: language,
+                    audioService: audioService,
+                  ),
                   programa: repository.programaTprSync,
                   cursoInicial: cursoId,
                   language: language,
@@ -202,6 +211,13 @@ class RecursosDocentesScreen extends StatelessWidget {
             NomesDocentes.repaso,
             NomesDocentes.repasoDi,
             (_) => FsrsTrainerScreen(
+                  nucleoDo: (c) => NucleoArriba(
+                    repository: repository,
+                    cursoId: c,
+                    mesCalendario: (agora ?? DateTime.now()).month,
+                    language: language,
+                    audioService: audioService,
+                  ),
                   programa: repository.programaTprSync,
                   cursoInicial: cursoId,
                   language: language,
@@ -216,6 +232,13 @@ class RecursosDocentesScreen extends StatelessWidget {
             NomesDocentes.escoita,
             NomesDocentes.escoitaDi,
             (_) => ListeningScreen(
+                  nucleoDo: (c) => NucleoArriba(
+                    repository: repository,
+                    cursoId: c,
+                    mesCalendario: (agora ?? DateTime.now()).month,
+                    language: language,
+                    audioService: audioService,
+                  ),
                   programa: repository.programaTprSync,
                   cursoInicial: cursoId,
                   language: language,

@@ -154,6 +154,19 @@ class _VocabularioInglesScreenState extends State<VocabularioInglesScreen> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
+                // M7.1: el corpus es consulta, no currículo.
+                Text(
+                  isGl
+                      ? 'Consulta para a persoa adulta: as 4.000 palabras de uso habitual. Non é o currículo; o do mes está no núcleo.'
+                      : 'Consulta para la persona adulta: las 4.000 palabras de uso habitual. No es el currículo; lo del mes está en el núcleo.',
+                  key: const Key('corpus_consulta'),
+                  style: const TextStyle(
+                    fontSize: 13.5,
+                    color: AppTheme.textSecondary,
+                    height: 1.35,
+                  ),
+                ),
+                const SizedBox(height: 8),
                 TextField(
                   decoration: InputDecoration(
                     hintText: isGl

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../core/widgets/pauta_espera_recast.dart';
 import '../../../core/audio/offline_audio_service.dart';
 import '../../../core/audio/widgets/boton_escuchar.dart';
 import '../../../core/localization/app_language.dart';
@@ -114,6 +115,7 @@ class _SteamDoMesScreenState extends State<SteamDoMesScreen> {
                   ),
               ],
             ),
+            PautaEsperaRecast(tipo: 'steam', language: lang),
             rotulo(isGl ? 'QUE OBSERVAR' : 'QUÉ OBSERVAR'),
             texto(e.observar.resolve(lang)),
           ],

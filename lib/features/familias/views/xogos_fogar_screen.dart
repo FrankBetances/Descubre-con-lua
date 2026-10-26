@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../core/widgets/pauta_espera_recast.dart';
 import '../../../core/audio/offline_audio_service.dart';
 import '../../../core/localization/app_language.dart';
 import '../../../core/theme/app_theme.dart';
@@ -335,6 +336,10 @@ class _XogosFogarScreenState extends State<XogosFogarScreen> {
                       fontWeight: FontWeight.bold,
                       color: Color(0xFF1A365D),
                     ),
+                  ),
+                  PautaEsperaRecast(
+                    tipo: 'xogo',
+                    language: isGl ? AppLanguage.gl : AppLanguage.es,
                   ),
                 ],
               ),

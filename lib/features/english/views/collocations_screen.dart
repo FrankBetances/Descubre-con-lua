@@ -7,6 +7,7 @@ import '../../../core/audio/offline_audio_service.dart';
 import '../../../core/audio/voice_id.dart';
 import '../../../core/audio/widgets/boton_escuchar.dart';
 import '../../../core/localization/app_language.dart';
+import '../../../core/localization/localized_string.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../data/repositories/content_repository.dart';
 import '../../../core/widgets/cabecera.dart';
@@ -54,6 +55,10 @@ class _CollocationsScreenState extends State<CollocationsScreen> {
   late AppLanguage _language;
   List<Map<String, dynamic>>? _colocacions;
 
+  /// M7.1: las fórmulas de turno del plan curricular de 3-6 años, marcadas
+  /// arriba. Ninguna colocación del fichero es una de ellas.
+  List<(String, LocalizedString?)> _formulas = const [];
+
   @override
   void initState() {
     super.initState();
@@ -73,7 +78,27 @@ class _CollocationsScreenState extends State<CollocationsScreen> {
     } catch (_) {
       lista = const [];
     }
-    if (mounted) setState(() => _colocacions = lista);
+    final formulas = <(String, LocalizedString?)>[];
+    try {
+      final plan =
+          jsonDecode(await ler('assets/content/curriculo/tramo_3_6.json'))
+              as Map;
+      final vistas = <String>{};
+      for (final u in plan['unidades'] as List? ?? const []) {
+        for (final f in (u as Map)['formulas'] as List? ?? const []) {
+          final en = (f as Map)['en']?.toString() ?? '';
+          if (en.isEmpty || !vistas.add(en)) continue;
+          final s = LocalizedString.fromJson(Map<String, dynamic>.from(f));
+          formulas.add((en, s.hasParity ? s : null));
+        }
+      }
+    } catch (_) {}
+    if (mounted) {
+      setState(() {
+        _colocacions = lista;
+        _formulas = formulas;
+      });
+    }
   }
 
   String _txt(Object? m) {
@@ -117,6 +142,52 @@ class _CollocationsScreenState extends State<CollocationsScreen> {
                     height: 1.35,
                   ),
                 ),
+                if (_formulas.isNotEmpty) ...[
+                  const SizedBox(height: 12),
+                  Container(
+                    key: const Key('colocacions_formulas'),
+                    padding: const EdgeInsets.all(14),
+                    decoration: BoxDecoration(
+                      color: context.acentoTint,
+                      borderRadius: BorderRadius.circular(12),
+                    ),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          isGl
+                              ? 'FÓRMULAS DE QUENDA · DO PLAN CURRICULAR (3-6 ANOS)'
+                              : 'FÓRMULAS DE TURNO · DEL PLAN CURRICULAR (3-6 AÑOS)',
+                          style: TextStyle(
+                            fontSize: 12.5,
+                            fontWeight: FontWeight.w800,
+                            letterSpacing: 0.5,
+                            color: context.acento,
+                          ),
+                        ),
+                        const SizedBox(height: 8),
+                        Wrap(
+                          spacing: 8,
+                          runSpacing: 8,
+                          children: [
+                            for (final (en, sig) in _formulas)
+                              BotonEscuchar(
+                                audioService: widget.audioService,
+                                texto: en,
+                                language: AppLanguage.en,
+                                interfaz: _language,
+                                style: estiloIngles(en),
+                                comoChip: true,
+                                colorChip: context.acento,
+                                descripcion: en,
+                                significado: sig,
+                              ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
                 const SizedBox(height: 8),
                 for (final entrada in porTipo.entries) ...[
                   Padding(
