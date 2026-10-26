@@ -31,6 +31,7 @@ import '../../steam/widgets/steam_no_calendario.dart';
 import '../nomes_familias.dart';
 import '../widgets/reto_da_semana.dart';
 import '../widgets/selector_idade.dart';
+import 'codigo_da_escola_screen.dart';
 import 'ponte_ao_dia_screen.dart';
 import 'xogo_de_hoxe_screen.dart';
 
@@ -452,6 +453,52 @@ class _HoxeFamiliasScreenState extends State<HoxeFamiliasScreen> {
                 ),
                 const SizedBox(height: 14),
               ],
+              // P10: el código que da la escuela abre el mes y la semana que
+              // dice la nota, aunque no sean los de hoy.
+              Material(
+                key: const Key('hoxe_codigo_escola'),
+                color: Colors.white,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(14),
+                  side: const BorderSide(color: AppTheme.border),
+                ),
+                child: InkWell(
+                  borderRadius: BorderRadius.circular(14),
+                  onTap: () => Navigator.of(context).push(RutaLua(
+                    de: context,
+                    builder: (_) => CodigoDaEscolaScreen(
+                      repository: widget.repository,
+                      language: lang,
+                      onLanguageChanged: widget.onLanguageChanged,
+                      audioService: widget.audioService,
+                    ),
+                  )),
+                  child: Padding(
+                    padding: const EdgeInsets.all(14),
+                    child: Row(
+                      children: [
+                        Icon(Icons.pin_rounded, color: context.acento),
+                        const SizedBox(width: 12),
+                        Expanded(
+                          child: Text(
+                            lang == AppLanguage.gl
+                                ? 'Tes un código da escola?'
+                                : '¿Tienes un código de la escuela?',
+                            style: const TextStyle(
+                              fontSize: 16,
+                              fontWeight: FontWeight.w700,
+                              color: AppTheme.textPrimary,
+                            ),
+                          ),
+                        ),
+                        Icon(Icons.chevron_right_rounded,
+                            color: context.acento),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+              const SizedBox(height: 14),
               TarxetaCurricular(
                 cursoId: widget.cursoId,
                 mesCalendario: _toca.dia.mesCalendario,

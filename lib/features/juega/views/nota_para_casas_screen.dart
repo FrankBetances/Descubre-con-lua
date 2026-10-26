@@ -46,6 +46,10 @@ class NotaParaCasasScreen extends StatelessWidget {
   /// Hoxe, con el momento del mes.
   final RetoDeCasa? reto;
   final LocalizedString? momentoDoReto;
+
+  /// El código para casa (P10): con él, la familia abre en su app el núcleo,
+  /// el reto de esta semana y qué mirar.
+  final String? codigoCasa;
   final AppLanguage language;
 
   /// Avisa a quien la abrió de que se cambió de lengua aquí.
@@ -59,6 +63,7 @@ class NotaParaCasasScreen extends StatelessWidget {
     this.microRutina,
     this.reto,
     this.momentoDoReto,
+    this.codigoCasa,
     required this.language,
     this.onLanguageChanged,
     this.audioService,
@@ -244,6 +249,38 @@ class NotaParaCasasScreen extends StatelessWidget {
                         const SizedBox(height: 6),
                         Text(
                           '${m.resolve(language)}. ${r.queFacer.resolve(language)}',
+                          style: theme.textTheme.bodyMedium?.copyWith(
+                            color: AppTheme.textSecondary,
+                            height: 1.4,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+                if (codigoCasa case final codigo?) ...[
+                  const SizedBox(height: AppTheme.spaceMd),
+                  _Bloque(
+                    key: const Key('nota_codigo_casa'),
+                    kicker: isGl ? 'CÓDIGO PARA A CASA' : 'CÓDIGO PARA CASA',
+                    acento: context.acento,
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        SelectableText(
+                          codigo,
+                          style: TextStyle(
+                            fontSize: 30,
+                            fontWeight: FontWeight.w800,
+                            letterSpacing: 2,
+                            color: context.acento,
+                          ),
+                        ),
+                        const SizedBox(height: 4),
+                        Text(
+                          isGl
+                              ? 'Na app, en Na casa → Hoxe → «Tes un código da escola?». Abre o núcleo, o reto desta semana e que mirar. Non se garda nada.'
+                              : 'En la app, en En casa → Hoy → «¿Tienes un código de la escuela?». Abre el núcleo, el reto de esta semana y qué mirar. No se guarda nada.',
                           style: theme.textTheme.bodyMedium?.copyWith(
                             color: AppTheme.textSecondary,
                             height: 1.4,

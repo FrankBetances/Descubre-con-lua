@@ -262,6 +262,9 @@ void main() {
             findsOneWidget);
         expect(find.text(u.hogar!.daSemana(1)!.frase.en, skipOffstage: false),
             findsWidgets);
+        // P10: y el código para casa de esa semana.
+        expect(find.byKey(const Key('nota_codigo_casa'), skipOffstage: false),
+            findsOneWidget);
         final rutina = g.segundo?.microRutinaHogar;
         if (rutina == null) {
           expect(

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../core/codigo_casa.dart';
 import '../../../core/audio/offline_audio_service.dart';
 import '../../../core/storage/calendario_store.dart';
 import '../../../core/localization/app_language.dart';
@@ -73,6 +74,10 @@ class AsembleaDaUnidade {
   /// La guía de casa del mes: la nota lleva el reto de la semana (M4.4).
   final HogarDaUnidade? hogar;
 
+  /// El curso y el mes de la unidad: con la semana dan el código para casa.
+  final String? cursoId;
+  final int? mesCalendario;
+
   const AsembleaDaUnidade({
     required this.centroInteres,
     this.nucleo = const [],
@@ -82,6 +87,8 @@ class AsembleaDaUnidade {
     this.formulas = const [],
     this.reactivar = const [],
     this.hogar,
+    this.cursoId,
+    this.mesCalendario,
   });
 }
 
@@ -115,6 +122,8 @@ Future<AsembleaDaUnidade?> lerAsembleaDaUnidade(ContentRepository repo,
     formulas: resoltas(u.formulas),
     reactivar: resoltas(u.reactivar),
     hogar: u.hogar,
+    cursoId: u.curso,
+    mesCalendario: u.mesCalendario,
   );
 }
 
@@ -206,6 +215,10 @@ WidgetBuilder? notaDaAsemblea(
         microRutina: segundo?.microRutinaHogar,
         reto: daUnidade.hogar?.daSemana(semana),
         momentoDoReto: daUnidade.hogar?.momento,
+        codigoCasa: switch ((daUnidade.cursoId, daUnidade.mesCalendario)) {
+          (final c?, final m?) => CodigoCasa.para(c, m, semana)?.texto,
+          _ => null,
+        },
         language: language,
         audioService: audioService,
       );

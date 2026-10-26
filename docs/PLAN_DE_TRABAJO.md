@@ -91,7 +91,7 @@ Comprobado contra la app el 20/10/2026 con `grep` sobre `lib/` y
 - O7: los recursos de inglés abren por el núcleo; las dinámicas, la ciencia,
   las láminas y los juegos citan el registro; el planificador muestra el área
   por su nombre oficial.
-- O8: qué observar sin casilla; manual, imprimibles y README al día, con el
+- O8: qué observar sin casilla; manual y README al día (sin imprimibles, P10), con el
   PDF mirado página a página.
 
 **F7 · El doble toque dice el significado (orden de Frank, 21/10/2026)**
@@ -171,6 +171,7 @@ Comprobado contra la app el 20/10/2026 con `grep` sobre `lib/` y
 | P5 | LENA y pruebas | **Se explican en «El modelo», no se usan**; la app no mide ni guarda nada | F2 |
 | P6 | Criterios de evaluación | **Del texto de Frank** (CA2.7 por nivel), marcados como pendientes de contrastar con el DOG | F6 |
 | P7 | Lista de práctica de la adulta | **Entra**, con la política de privacidad y los dos gates en el mismo cambio; Frank actualiza el formulario de Play Console | F2 |
+| P10 | Imprimibles de las unidades | **No se hacen: es una app.** En su lugar, un código que la escuela da a la familia y que, escrito en la app de casa, abre el núcleo, el reto de la semana y qué mirar (Frank, 26/10/2026) | F6 |
 
 ## 5. Lo que ya está hecho y no se repite
 
@@ -180,7 +181,6 @@ evidencia de cada módulo están en `STATUS.md`.
 
 El 26/10/2026, en la rama `pedagogia`: F4 (contraste de sonido en 48 unidades
 y objetivos en el calendario), F5 (la casa guiada: 50 bloques `hogar`, guía
-estable y por edad, nota para las casas) y F6 salvo dos puntos: el contraste
-de la normativa con el DOG, que sigue inaccesible desde aquí, y los
-imprimibles de las unidades, que no existen en el repositorio y son pregunta
-para Frank. Detalle y evidencia en `STATUS.md`.
+estable y por edad, nota para las casas) y F6 salvo el contraste de la
+normativa con el DOG, que sigue inaccesible desde aquí. Los imprimibles no se
+hacen (P10): en su lugar, el código para casa. Detalle y evidencia en `STATUS.md`.
