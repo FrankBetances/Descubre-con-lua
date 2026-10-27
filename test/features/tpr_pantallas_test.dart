@@ -347,7 +347,7 @@ void main() {
           );
           for (final id in ['curso_4_5', 'curso_2_3', 'curso_5_6']) {
             // O selector está arriba de todo: vólvese ao principio.
-            await tester.drag(lista, const Offset(0, 3000));
+            await tester.drag(lista, const Offset(0, 30000));
             await tester.pumpAndSettle();
             await tester.tap(find.byKey(const ValueKey('selector_idade')));
             await tester.pumpAndSettle();
@@ -607,7 +607,7 @@ void main() {
         (TramoPrimeiroCiclo.lactantes0a2.etiquetaCorta, 'curso_0_2'),
         (NivelEducativoSegundoCiclo.infantil4.etiquetaCorta, 'curso_3_4'),
       ]) {
-        await tester.drag(lista, const Offset(0, 3000));
+        await tester.drag(lista, const Offset(0, 30000));
         await tester.pumpAndSettle();
         await tester.tap(find.byKey(const ValueKey('selector_idade')));
         await tester.pumpAndSettle();
@@ -622,11 +622,14 @@ void main() {
                 .curso(cursoId)!
                 .planDoDia(hoxe.mesCalendario, hoxe.semana, hoxe.dia)!,
             lang);
-        // El botón está arriba: la lista solo mantiene lo que está cerca de
-        // la vista, así que se vuelve al principio antes de buscarlo.
-        await tester.drag(lista, const Offset(0, 3000));
-        await tester.pumpAndSettle();
+        // P11: la asamblea va en el material complementario, justo encima
+        // de las palabras: la lista solo mantiene lo que está cerca de la
+        // vista, así que se sube hasta ella.
         final iniciar = find.byKey(const Key('boton_asemblea_de_hoxe'));
+        await tester.scrollUntilVisible(iniciar, -200,
+            scrollable: find
+                .descendant(of: lista, matching: find.byType(Scrollable))
+                .first);
         await tester.ensureVisible(iniciar);
         await tester.pumpAndSettle();
         await tester.tap(iniciar);

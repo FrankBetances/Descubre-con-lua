@@ -73,21 +73,32 @@ void main() {
   for (final lang in AppLanguage.deInterfaz) {
     final gl = lang == AppLanguage.gl;
 
-    testWidgets('Hoxe: a asemblea arriba e o botón sen baixar (${lang.code})',
+    testWidgets('Hoxe: a lección arriba e a asemblea debaixo (${lang.code})',
         (tester) async {
       await abrir(tester, portal(lang, venres));
 
       expect(texto(tester, 'hoxe_aula_titulo'),
-          gl ? 'A asemblea de hoxe' : 'La asamblea de hoy');
+          gl ? 'A lección desta semana' : 'La lección de esta semana');
       expect(texto(tester, 'hoxe_aula_data'),
           gl ? 'VENRES, 2 DE OUTUBRO' : 'VIERNES, 2 DE OCTUBRE');
 
-      // El botón, entero, por encima de la barra de pestañas: sin bajar.
-      final boton = find.byKey(const Key('boton_asemblea_de_hoxe'));
-      expect(boton, findsOneWidget);
+      // P11: la cabecera de la lección, entera, por encima de la barra de
+      // pestañas: sin bajar.
+      final cabeceira = find.byKey(const Key('leccion_cabeceira'));
+      expect(cabeceira, findsOneWidget);
       final barra = tester.getRect(find.byType(NavigationBar));
-      expect(tester.getRect(boton).bottom, lessThanOrEqualTo(barra.top),
-          reason: 'O botón queda baixo a barra de pestanas');
+      expect(tester.getRect(cabeceira).bottom, lessThanOrEqualTo(barra.top),
+          reason: 'A lección queda baixo a barra de pestanas');
+
+      // La asamblea sigue, en el material complementario.
+      final boton = find.byKey(const Key('boton_asemblea_de_hoxe'));
+      await tester.scrollUntilVisible(boton, 300,
+          scrollable: find.byType(Scrollable).first);
+      expect(
+          tester.getTopLeft(boton).dy,
+          greaterThan(tester
+              .getTopLeft(find.byKey(const Key('hoxe_aula_complementario')))
+              .dy));
 
       // Las cuatro fases, con su nombre corto.
       for (final f in gl
@@ -111,13 +122,18 @@ void main() {
     testWidgets('as fases da tarxeta son as que abre o botón (${lang.code})',
         (tester) async {
       await abrir(tester, portal(lang, venres));
+      final boton = find.byKey(const Key('boton_asemblea_de_hoxe'));
+      await tester.scrollUntilVisible(boton, 300,
+          scrollable: find.byType(Scrollable).first);
+      await tester.ensureVisible(boton);
+      await tester.pumpAndSettle();
       final chips = tester
           .widgetList<Text>(find.descendant(
               of: find.byKey(const Key('hoxe_aula_fases')),
               matching: find.byType(Text)))
           .map((t) => t.data)
           .toList();
-      await tester.tap(find.byKey(const Key('boton_asemblea_de_hoxe')));
+      await tester.tap(boton);
       await Pasarela.asentar(tester);
       final player = tester
           .widget<AsambleaPlayerScreen>(find.byType(AsambleaPlayerScreen));
@@ -156,11 +172,12 @@ void main() {
       expect(sesion.audiencia, SteamAudiencia.aula);
     });
 
-    testWidgets('fin de semana: a asemblea do luns (${lang.code})',
+    testWidgets('fin de semana: a lección da semana (${lang.code})',
         (tester) async {
       await abrir(tester, portal(lang, domingo));
       expect(texto(tester, 'hoxe_aula_titulo'),
-          gl ? 'A asemblea do luns' : 'La asamblea del lunes');
+          gl ? 'A lección desta semana' : 'La lección de esta semana');
+      expect(find.byKey(const Key('leccion_cabeceira')), findsOneWidget);
     });
 
     testWidgets(

@@ -17,6 +17,7 @@ import 'package:descubre_con_lua/data/models/como_funciona_o_conto_model.dart';
 import 'package:descubre_con_lua/data/models/cuento_model.dart';
 import 'package:descubre_con_lua/data/models/formacion_model.dart';
 import 'package:descubre_con_lua/data/models/lamina_model.dart';
+import 'package:descubre_con_lua/data/models/leccion_model.dart';
 import 'package:descubre_con_lua/data/models/lectura_model.dart';
 import 'package:descubre_con_lua/data/models/steam_model.dart';
 import 'package:descubre_con_lua/data/models/tpr_curriculum_scheduler.dart';
@@ -166,6 +167,9 @@ class Pasarela {
       }
     }
     colocacions = File(CollocationsScreen.asset).readAsStringSync();
+    // P11: la lección de la semana, que abre los dos «Hoxe».
+    Leccions.sembrar(
+        Leccions.fromRaw(File(Leccions.assetPath).readAsStringSync()));
 
     store = CalendarioStore(overrideDirectory: _tmp.path);
     await store.cargar();

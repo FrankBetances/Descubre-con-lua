@@ -60,6 +60,16 @@ void main() {
   String texto(WidgetTester tester, String clave) =>
       tester.widget<Text>(find.byKey(Key(clave))).data ?? '';
 
+  // P11: arriba va la lección de la semana; el juego de tres minutos, en el
+  // material complementario.
+  Future<void> irAoXogo(WidgetTester tester) async {
+    final comezar = find.byKey(const Key('hoxe_comezar'));
+    await tester.scrollUntilVisible(comezar, 300,
+        scrollable: find.byType(Scrollable).first);
+    await tester.ensureVisible(comezar);
+    await tester.pumpAndSettle();
+  }
+
   for (final lang in AppLanguage.deInterfaz) {
     final gl = lang == AppLanguage.gl;
 
@@ -68,9 +78,11 @@ void main() {
       await abrirPortal(tester, lang, agora: venres);
 
       expect(texto(tester, 'hoxe_titulo'),
-          gl ? 'Os tres minutos de hoxe' : 'Los tres minutos de hoy');
+          gl ? 'A lección desta semana' : 'La lección de esta semana');
       expect(texto(tester, 'hoxe_data'),
           gl ? 'VENRES, 2 DE OUTUBRO' : 'VIERNES, 2 DE OCTUBRE');
+      expect(find.byKey(const Key('leccion_cabeceira')), findsOneWidget);
+      await irAoXogo(tester);
 
       // El título es el momento del día, no el nombre de la asamblea (A6).
       expect(texto(tester, 'hoxe_xogo_titulo'),
@@ -129,7 +141,8 @@ void main() {
         (tester) async {
       await abrirPortal(tester, lang, agora: domingo);
       expect(texto(tester, 'hoxe_titulo'),
-          gl ? 'Os tres minutos do luns' : 'Los tres minutos del lunes');
+          gl ? 'A lección desta semana' : 'La lección de esta semana');
+      await irAoXogo(tester);
       await tester.tap(find.byKey(const Key('hoxe_comezar')));
       await Pasarela.asentar(tester);
       expect(find.byType(XogoDeHoxeScreen), findsOneWidget);
@@ -145,6 +158,7 @@ void main() {
       final store = (await tester.runAsync(storeBaleiro))!;
       await abrirPortal(tester, lang, agora: venres, store: store);
 
+      await irAoXogo(tester);
       await tester.tap(find.byKey(const Key('hoxe_comezar')));
       await Pasarela.asentar(tester);
       expect(find.byType(XogoDeHoxeScreen), findsOneWidget);
@@ -173,11 +187,24 @@ void main() {
     testWidgets('a idade cámbiase arriba e vale para todo (${lang.code})',
         (tester) async {
       await abrirPortal(tester, lang, agora: venres);
+      bool leccionDe(String curso) => find
+          .byWidgetPredicate((w) =>
+              w.key is ValueKey<String> &&
+              (w.key as ValueKey<String>).value.startsWith('leccion_$curso.'))
+          .evaluate()
+          .isNotEmpty;
+      expect(leccionDe('curso_0_2'), isTrue);
+      await irAoXogo(tester);
       final antes = texto(tester, 'hoxe_xogo_texto');
+      await tester.drag(find.byType(Scrollable).first, const Offset(0, 30000));
+      await tester.pumpAndSettle();
       await tester.tap(find.byKey(const ValueKey('selector_idade')));
       await tester.pumpAndSettle();
       await tester.tap(find.byKey(const ValueKey('idade_curso_5_6')));
       await Pasarela.asentar(tester);
+      // P11: la lección de arriba es la del curso elegido.
+      expect(leccionDe('curso_5_6'), isTrue);
+      await irAoXogo(tester);
       final despois = texto(tester, 'hoxe_xogo_texto');
       expect(despois, isNot(antes));
       final esperado =

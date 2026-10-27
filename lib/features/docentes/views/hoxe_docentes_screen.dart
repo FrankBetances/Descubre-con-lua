@@ -26,19 +26,19 @@ import '../../cuentos/views/cuento_viewer_screen.dart';
 import '../../familias/widgets/selector_idade.dart';
 import '../../juega/widgets/aula_ciclo_panel.dart' show nomeDoMes;
 import '../../premios/premios_repository.dart';
+import '../../leccions/widgets/leccion_da_semana.dart';
 import '../../planificador/views/dinamicas_screen.dart';
 import '../../steam/widgets/steam_no_calendario.dart';
 import '../nomes_docentes.dart';
 import '../widgets/hoxe_na_aula.dart'
     show DiaQueToca, ProxeccionDoCurso, formatarMiles;
 
-/// «Hoxe», la portada de la docente: la asamblea de hoy, arriba, con sus
-/// cuatro fases y un botón.
+/// «Hoxe», la portada de la docente: la lección de la semana (P11), la misma
+/// que ven las familias, y la sesión de 45 minutos.
 ///
-/// Debajo, lo que la acompaña: las palabras inglesas del día, el cuento de la
-/// semana, la dinámica del día y, si toca, la ciencia. Antes la asamblea
-/// estaba detrás de cinco pastillas de edad y de «Entrar en Modo Aula», y el
-/// nivel y la racha ocupaban el sitio de arriba.
+/// Debajo, como material complementario: la asamblea diaria con sus cuatro
+/// fases y su botón, las palabras del banco, el plan del mes, el cuento, la
+/// dinámica del día y, si toca, la ciencia.
 class HoxeDocentesScreen extends StatefulWidget {
   const HoxeDocentesScreen({
     super.key,
@@ -184,20 +184,12 @@ class _HoxeDocentesScreenState extends State<HoxeDocentesScreen> {
     return '${_semana[d.weekday - 1].resolve(lang)}, ${d.day} de $mes';
   }
 
-  String _diaQueToca(AppLanguage lang) =>
-      _semana[_toca.dia.dia - 1].resolve(lang).toLowerCase();
-
   String _titulo(AppLanguage lang) {
     final isGl = lang == AppLanguage.gl;
     if (_toca.prevista) {
       return isGl ? 'Para empezar en setembro' : 'Para empezar en septiembre';
     }
-    if (_toca.finDeSemana) {
-      return isGl
-          ? 'A asemblea do ${_diaQueToca(lang)}'
-          : 'La asamblea del ${_diaQueToca(lang)}';
-    }
-    return isGl ? 'A asemblea de hoxe' : 'La asamblea de hoy';
+    return isGl ? 'A lección desta semana' : 'La lección de esta semana';
   }
 
   void _comezar(GrupoDaAsemblea grupo) {
@@ -347,15 +339,72 @@ class _HoxeDocentesScreenState extends State<HoxeDocentesScreen> {
                 ),
               ),
             ),
-            // F10: el día en pasos numerados, en el orden en que se usa.
-            RotuloPaso(
-              numero: 1,
-              titulo: isGl
-                  ? 'A asemblea e as palabras'
-                  : 'La asamblea y las palabras',
-              subtitulo:
-                  isGl ? 'Cada día, ao comezar.' : 'Cada día, al empezar.',
+            // P11: lo primero, la lección de la semana del plan curricular,
+            // la misma que ven las familias.
+            const SizedBox(height: 16),
+            LeccionDaSemanaCargada(
+              cursoId: widget.cursoId,
+              mesCalendario: _toca.dia.mesCalendario,
+              semana: _toca.dia.semana,
+              language: lang,
+              audioService: widget.audioService,
+              enAula: true,
             ),
+            RotuloPaso(
+              numero: 4,
+              titulo:
+                  isGl ? 'A sesión de 45 minutos' : 'La sesión de 45 minutos',
+              subtitulo: isGl
+                  ? 'Cando hai tempo para unha sesión longa: catro fases.'
+                  : 'Cuando hay tiempo para una sesión larga: cuatro fases.',
+            ),
+            FilaPaso(
+              claveFila: const Key('paso_sesion45'),
+              icona: Icons.timer_rounded,
+              rotulo: isGl
+                  ? 'ACOLLIDA · CONTO · OBRADOIRO · DESPEDIDA'
+                  : 'ACOGIDA · CUENTO · TALLER · DESPEDIDA',
+              titulo: isGl
+                  ? 'Abrir a sesión deste mes'
+                  : 'Abrir la sesión de este mes',
+              onTap: () => Navigator.of(context).push(RutaLua(
+                de: context,
+                builder: (_) => Sesion45Screen(
+                  repository: widget.repository,
+                  cursoId: widget.cursoId,
+                  mesCalendario: _toca.dia.mesCalendario,
+                  segundoCiclo: !widget.cursoId.startsWith('curso_0_2') &&
+                      !widget.cursoId.startsWith('curso_2_3'),
+                  language: lang,
+                  onLanguageChanged: widget.onLanguageChanged,
+                  audioService: widget.audioService,
+                ),
+              )),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(top: 26, bottom: 4),
+              child: Text(
+                isGl ? 'MATERIAL COMPLEMENTARIO' : 'MATERIAL COMPLEMENTARIO',
+                key: const Key('hoxe_aula_complementario'),
+                style: const TextStyle(
+                  fontSize: 13,
+                  fontWeight: FontWeight.w800,
+                  letterSpacing: 0.8,
+                  color: AppTheme.textSecondary,
+                ),
+              ),
+            ),
+            Text(
+              isGl
+                  ? 'A asemblea antiga, as palabras do banco e o plan do mes enteiro, para consultar.'
+                  : 'La asamblea antigua, las palabras del banco y el plan del mes entero, para consultar.',
+              style: const TextStyle(
+                fontSize: 14,
+                color: AppTheme.textSecondary,
+                height: 1.35,
+              ),
+            ),
+            const SizedBox(height: 10),
             if (grupo != null)
               _TarxetaAsemblea(
                 grupo: grupo,
@@ -452,14 +501,7 @@ class _HoxeDocentesScreenState extends State<HoxeDocentesScreen> {
                 ),
               ),
             ],
-            // F11: la unidad del plan curricular de Frank que toca este mes.
-            RotuloPaso(
-              numero: 2,
-              titulo: isGl ? 'O plan do mes' : 'El plan del mes',
-              subtitulo: isGl
-                  ? 'A unidade, o vocabulario e como se traballa.'
-                  : 'La unidad, el vocabulario y cómo se trabaja.',
-            ),
+            const SizedBox(height: 14),
             TarxetaCurricular(
               cursoId: widget.cursoId,
               mesCalendario: _toca.dia.mesCalendario,
@@ -473,50 +515,6 @@ class _HoxeDocentesScreenState extends State<HoxeDocentesScreen> {
               semana: _toca.dia.semana,
               language: lang,
               audioService: widget.audioService,
-            ),
-            RotuloPaso(
-              numero: 5,
-              titulo:
-                  isGl ? 'A sesión de 45 minutos' : 'La sesión de 45 minutos',
-              subtitulo: isGl
-                  ? 'Cando hai tempo para unha sesión longa: catro fases.'
-                  : 'Cuando hay tiempo para una sesión larga: cuatro fases.',
-            ),
-            FilaPaso(
-              claveFila: const Key('paso_sesion45'),
-              icona: Icons.timer_rounded,
-              rotulo: isGl
-                  ? 'ACOLLIDA · CONTO · OBRADOIRO · DESPEDIDA'
-                  : 'ACOGIDA · CUENTO · TALLER · DESPEDIDA',
-              titulo: isGl
-                  ? 'Abrir a sesión deste mes'
-                  : 'Abrir la sesión de este mes',
-              onTap: () => Navigator.of(context).push(RutaLua(
-                de: context,
-                builder: (_) => Sesion45Screen(
-                  repository: widget.repository,
-                  cursoId: widget.cursoId,
-                  mesCalendario: _toca.dia.mesCalendario,
-                  segundoCiclo: !widget.cursoId.startsWith('curso_0_2') &&
-                      !widget.cursoId.startsWith('curso_2_3'),
-                  language: lang,
-                  onLanguageChanged: widget.onLanguageChanged,
-                  audioService: widget.audioService,
-                ),
-              )),
-            ),
-            Padding(
-              padding: const EdgeInsets.only(top: 26, bottom: 4),
-              child: Text(
-                isGl ? 'MATERIAL COMPLEMENTARIO' : 'MATERIAL COMPLEMENTARIO',
-                key: const Key('hoxe_aula_complementario'),
-                style: const TextStyle(
-                  fontSize: 13,
-                  fontWeight: FontWeight.w800,
-                  letterSpacing: 0.8,
-                  color: AppTheme.textSecondary,
-                ),
-              ),
             ),
             if (_conto case final conto?) ...[
               const SizedBox(height: 6),

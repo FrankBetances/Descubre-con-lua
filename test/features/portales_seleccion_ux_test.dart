@@ -179,9 +179,9 @@ void main() {
       await tester.pumpAndSettle();
       expect(find.text('¿Dónde la vas a usar?'), findsOneWidget);
       expect(find.text('En casa'), findsOneWidget);
-      expect(find.text('Tres minutos al día con tu criatura'), findsOneWidget);
+      expect(find.text('La lección de cada semana, por edad'), findsOneWidget);
       expect(find.text('En la escuela'), findsOneWidget);
-      expect(find.text('La asamblea de cada día'), findsOneWidget);
+      expect(find.text('La lección de la semana para el aula'), findsOneWidget);
     });
 
     testWidgets('«Na casa» abre o Portal Familias por Hoxe', (tester) async {

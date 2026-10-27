@@ -6,10 +6,12 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:descubre_con_lua/core/localization/app_language.dart';
 import 'package:descubre_con_lua/core/theme/app_theme.dart';
 import 'package:descubre_con_lua/data/loaders/content_asset_loader.dart';
+import 'package:descubre_con_lua/data/models/leccion_model.dart';
 import 'package:descubre_con_lua/data/repositories/content_repository.dart';
 import 'package:descubre_con_lua/features/familias/views/codigo_da_escola_screen.dart';
 
-/// P10: o código da nota abre o mes e a semana que di, en casa.
+/// P10: o código da nota abre o mes e a semana que di, en casa; desde P11,
+/// a lección desa semana.
 void main() {
   late ContentRepository repo;
 
@@ -22,10 +24,12 @@ void main() {
     await repo.loadRexistroFrases();
     TestWidgetsFlutterBinding.ensureInitialized();
     await repo.loadUnidadeDoMes('curso_4_5', 11);
+    Leccions.sembrar(
+        Leccions.fromRaw(File(Leccions.assetPath).readAsStringSync()));
   });
 
   for (final lang in [AppLanguage.gl, AppLanguage.es]) {
-    testWidgets('un código bo abre o reto da súa semana (${lang.code})',
+    testWidgets('un código bo abre a lección da súa semana (${lang.code})',
         (tester) async {
       await tester.pumpWidget(MaterialApp(
         theme: AppTheme.temaFamilias,
@@ -38,11 +42,10 @@ void main() {
       await tester.pumpAndSettle();
       expect(find.byKey(const ValueKey('codigo_resultado_45-11-3')),
           findsOneWidget);
-      expect(find.byKey(const Key('nucleo_do_mes')), findsOneWidget);
-      expect(
-          find.textContaining(
-              lang == AppLanguage.gl ? 'SEMANA 3 DE 4' : 'SEMANA 3 DE 4'),
-          findsOneWidget);
+      // P11: la lección de 4-5 años de la semana 3 de noviembre.
+      final id = Leccions.lidas!.da('curso_4_5', 11, 3)!.$2.id;
+      expect(find.byKey(ValueKey('leccion_$id')), findsOneWidget);
+      expect(find.byKey(const Key('leccion_cabeceira')), findsOneWidget);
       expect(tester.takeException(), isNull);
     });
 
