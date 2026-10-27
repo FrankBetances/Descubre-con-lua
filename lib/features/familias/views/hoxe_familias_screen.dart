@@ -27,6 +27,7 @@ import '../../cuentos/views/microcuento_screen.dart' show ModoMicrocuento;
 import '../../cuentos/widgets/boton_microcuento.dart';
 import '../../docentes/widgets/hoxe_na_aula.dart';
 import '../../juega/widgets/aula_ciclo_panel.dart' show nomeDoMes;
+import '../../leccions/widgets/leccion_da_semana.dart';
 import '../../steam/widgets/steam_no_calendario.dart';
 import '../nomes_familias.dart';
 import '../widgets/reto_da_semana.dart';
@@ -35,13 +36,9 @@ import 'codigo_da_escola_screen.dart';
 import 'ponte_ao_dia_screen.dart';
 import 'xogo_de_hoxe_screen.dart';
 
-/// «Hoxe», la portada de casa: lo que toca hoy, entero, en una pantalla.
-///
-/// El juego de tres minutos con su título de casa y un solo botón, las
-/// palabras en inglés del día con su voz, y el cuento de la semana, que es el
-/// que las lleva dentro. Antes la portada empezaba por una bienvenida, una
-/// tarjeta que llevaba al calendario y siete módulos con filtros: para hacer
-/// el juego de hoy había que dar cuatro toques y adivinar el mes.
+/// «Hoxe», la portada de casa: la lección de la semana (P11), y debajo, como
+/// material complementario, el juego de tres minutos, las palabras del día,
+/// el reto del mes y el cuento.
 class HoxeFamiliasScreen extends StatefulWidget {
   const HoxeFamiliasScreen({
     super.key,
@@ -192,12 +189,7 @@ class _HoxeFamiliasScreenState extends State<HoxeFamiliasScreen> {
     if (_toca.prevista) {
       return isGl ? 'Para empezar en setembro' : 'Para empezar en septiembre';
     }
-    if (_toca.finDeSemana) {
-      return isGl
-          ? 'Os tres minutos do ${_diaQueToca(lang)}'
-          : 'Los tres minutos del ${_diaQueToca(lang)}';
-    }
-    return isGl ? 'Os tres minutos de hoxe' : 'Los tres minutos de hoy';
+    return isGl ? 'A lección desta semana' : 'La lección de esta semana';
   }
 
   void _abrirXogo() {
@@ -326,11 +318,11 @@ class _HoxeFamiliasScreenState extends State<HoxeFamiliasScreen> {
               Text(
                 _toca.prevista
                     ? (lang == AppLanguage.gl
-                        ? 'En xullo e agosto non hai escola. Este é o primeiro xogo do curso.'
-                        : 'En julio y agosto no hay escuela. Este es el primer juego del curso.')
+                        ? 'En xullo e agosto non hai escola. Esta é a primeira lección do curso.'
+                        : 'En julio y agosto no hay escuela. Esta es la primera lección del curso.')
                     : (lang == AppLanguage.gl
-                        ? 'Hoxe é fin de semana. Este é o xogo do ${_diaQueToca(lang)}, para ir collendo o ritmo.'
-                        : 'Hoy es fin de semana. Este es el juego del ${_diaQueToca(lang)}, para ir cogiendo el ritmo.'),
+                        ? 'Hoxe é fin de semana: bo momento para repasar a lección.'
+                        : 'Hoy es fin de semana: buen momento para repasar la lección.'),
                 style: const TextStyle(
                   fontSize: 14.5,
                   color: AppTheme.textSecondary,
@@ -338,18 +330,86 @@ class _HoxeFamiliasScreenState extends State<HoxeFamiliasScreen> {
                 ),
               ),
             ],
-            // F10: el día en pasos numerados, en el orden en que se usa.
-            RotuloPaso(
-              numero: 1,
-              titulo: lang == AppLanguage.gl
-                  ? 'O xogo e as palabras de hoxe'
-                  : 'El juego y las palabras de hoy',
-              subtitulo: lang == AppLanguage.gl
-                  ? 'Tres minutos, coa túa criatura.'
-                  : 'Tres minutos, con tu criatura.',
+            // P11: lo primero, la lección de la semana del plan curricular.
+            // Lo demás, el juego de tres minutos incluido, es complementario.
+            const SizedBox(height: 16),
+            LeccionDaSemanaCargada(
+              cursoId: widget.cursoId,
+              mesCalendario: _toca.dia.mesCalendario,
+              semana: _toca.dia.semana,
+              language: lang,
+              audioService: widget.audioService,
             ),
-            // Mientras llega el día, el hueco de la tarjeta, quieto: un
-            // indicador que gira no dice nada que el hueco no diga ya.
+            const SizedBox(height: 16),
+            // P10: el código que da la escuela abre el mes y la semana que
+            // dice la nota, aunque no sean los de hoy.
+            Material(
+              key: const Key('hoxe_codigo_escola'),
+              color: Colors.white,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(14),
+                side: const BorderSide(color: AppTheme.border),
+              ),
+              child: InkWell(
+                borderRadius: BorderRadius.circular(14),
+                onTap: () => Navigator.of(context).push(RutaLua(
+                  de: context,
+                  builder: (_) => CodigoDaEscolaScreen(
+                    repository: widget.repository,
+                    language: lang,
+                    onLanguageChanged: widget.onLanguageChanged,
+                    audioService: widget.audioService,
+                  ),
+                )),
+                child: Padding(
+                  padding: const EdgeInsets.all(14),
+                  child: Row(
+                    children: [
+                      Icon(Icons.pin_rounded, color: context.acento),
+                      const SizedBox(width: 12),
+                      Expanded(
+                        child: Text(
+                          lang == AppLanguage.gl
+                              ? 'Tes un código da escola?'
+                              : '¿Tienes un código de la escuela?',
+                          style: const TextStyle(
+                            fontSize: 16,
+                            fontWeight: FontWeight.w700,
+                            color: AppTheme.textPrimary,
+                          ),
+                        ),
+                      ),
+                      Icon(Icons.chevron_right_rounded, color: context.acento),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+            const SizedBox(height: 14),
+            const Padding(
+              padding: EdgeInsets.only(top: 26, bottom: 4),
+              child: Text(
+                'MATERIAL COMPLEMENTARIO',
+                key: Key('hoxe_complementario'),
+                style: TextStyle(
+                  fontSize: 13,
+                  fontWeight: FontWeight.w800,
+                  letterSpacing: 0.8,
+                  color: AppTheme.textSecondary,
+                ),
+              ),
+            ),
+            Text(
+              lang == AppLanguage.gl
+                  ? 'Para cando queirades máis. Non fai falta para seguir as leccións.'
+                  : 'Para cuando queráis más. No hace falta para seguir las lecciones.',
+              style: const TextStyle(
+                fontSize: 14,
+                color: AppTheme.textSecondary,
+                height: 1.35,
+              ),
+            ),
+            const SizedBox(height: 10),
             if (_cargando)
               Container(
                 key: const Key('hoxe_cargando'),
@@ -419,17 +479,6 @@ class _HoxeFamiliasScreenState extends State<HoxeFamiliasScreen> {
                   onTap: () => _abrirPonteAoDia(ponte),
                 ),
               ],
-              // F5: el reto de la semana, y debajo lo que se trabaja este mes
-              // según el plan curricular (F11).
-              RotuloPaso(
-                numero: 2,
-                titulo: lang == AppLanguage.gl
-                    ? 'O reto da semana e o tema do mes'
-                    : 'El reto de la semana y el tema del mes',
-                subtitulo: lang == AppLanguage.gl
-                    ? 'O mesmo que na escola, para a casa.'
-                    : 'Lo mismo que en la escuela, para casa.',
-              ),
               if (widget.repository
                       .unidadeDoMesSync(widget.cursoId, _toca.dia.mesCalendario)
                       ?.hogar
@@ -437,6 +486,9 @@ class _HoxeFamiliasScreenState extends State<HoxeFamiliasScreen> {
                 RetoDaSemana(
                   hogar: hogar,
                   semana: _toca.dia.semana,
+                  rotulo: lang == AppLanguage.gl
+                      ? 'O RETO DO MES · SEMANA ${_toca.dia.semana} DE 4'
+                      : 'EL RETO DEL MES · SEMANA ${_toca.dia.semana} DE 4',
                   language: lang,
                   audioService: widget.audioService,
                   lectura: hogar.microcuento == null
@@ -453,52 +505,6 @@ class _HoxeFamiliasScreenState extends State<HoxeFamiliasScreen> {
                 ),
                 const SizedBox(height: 14),
               ],
-              // P10: el código que da la escuela abre el mes y la semana que
-              // dice la nota, aunque no sean los de hoy.
-              Material(
-                key: const Key('hoxe_codigo_escola'),
-                color: Colors.white,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(14),
-                  side: const BorderSide(color: AppTheme.border),
-                ),
-                child: InkWell(
-                  borderRadius: BorderRadius.circular(14),
-                  onTap: () => Navigator.of(context).push(RutaLua(
-                    de: context,
-                    builder: (_) => CodigoDaEscolaScreen(
-                      repository: widget.repository,
-                      language: lang,
-                      onLanguageChanged: widget.onLanguageChanged,
-                      audioService: widget.audioService,
-                    ),
-                  )),
-                  child: Padding(
-                    padding: const EdgeInsets.all(14),
-                    child: Row(
-                      children: [
-                        Icon(Icons.pin_rounded, color: context.acento),
-                        const SizedBox(width: 12),
-                        Expanded(
-                          child: Text(
-                            lang == AppLanguage.gl
-                                ? 'Tes un código da escola?'
-                                : '¿Tienes un código de la escuela?',
-                            style: const TextStyle(
-                              fontSize: 16,
-                              fontWeight: FontWeight.w700,
-                              color: AppTheme.textPrimary,
-                            ),
-                          ),
-                        ),
-                        Icon(Icons.chevron_right_rounded,
-                            color: context.acento),
-                      ],
-                    ),
-                  ),
-                ),
-              ),
-              const SizedBox(height: 14),
               TarxetaCurricular(
                 cursoId: widget.cursoId,
                 mesCalendario: _toca.dia.mesCalendario,
@@ -514,19 +520,6 @@ class _HoxeFamiliasScreenState extends State<HoxeFamiliasScreen> {
                 language: lang,
                 audioService: widget.audioService,
                 enCasa: true,
-              ),
-              const Padding(
-                padding: EdgeInsets.only(top: 26, bottom: 4),
-                child: Text(
-                  'MATERIAL COMPLEMENTARIO',
-                  key: Key('hoxe_complementario'),
-                  style: TextStyle(
-                    fontSize: 13,
-                    fontWeight: FontWeight.w800,
-                    letterSpacing: 0.8,
-                    color: AppTheme.textSecondary,
-                  ),
-                ),
               ),
               if (_conto case final conto?) ...[
                 const SizedBox(height: 6),

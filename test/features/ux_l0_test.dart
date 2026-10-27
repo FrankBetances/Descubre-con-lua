@@ -150,7 +150,7 @@ void main() {
       );
       expect(find.textContaining('Juega con Lúa'), findsNothing);
       expect(find.textContaining('asambleas'), findsNothing);
-      expect(find.text('A asemblea de cada día'), findsOneWidget);
+      expect(find.text('A lección da semana para a aula'), findsOneWidget);
     });
   });
 

@@ -6,6 +6,7 @@ import '../../../core/storage/calendario_store.dart';
 import '../../../core/localization/app_language.dart';
 import '../../../core/localization/localized_string.dart';
 import '../../../data/models/hogar_model.dart';
+import '../../../data/models/leccion_model.dart';
 import '../../../data/models/asamblea_primeiro_ciclo_model.dart';
 import '../../../data/models/asamblea_segundo_ciclo_model.dart';
 import '../../../data/models/rexistro_frases_model.dart';
@@ -209,12 +210,29 @@ WidgetBuilder? notaDaAsemblea(
   int semana = 1,
 }) {
   if (daUnidade == null) return null;
+  // P11: si las lecciones ya están leídas, la nota lleva las palabras y el
+  // reto de la lección de esta semana, lo mismo que abre el código.
+  final leccion = switch ((daUnidade.cursoId, daUnidade.mesCalendario)) {
+    (final c?, final m?) => Leccions.lidas?.da(c, m, semana)?.$2,
+    _ => null,
+  };
   return (_) => NotaParaCasasScreen(
         centroInteres: daUnidade.centroInteres,
-        nucleo: daUnidade.nucleo,
+        nucleo: leccion == null
+            ? daUnidade.nucleo
+            : [
+                for (final p in leccion.repaso ? leccion.repasa : leccion.novas)
+                  PezaDaUnidade(
+                    ref: leccion.id,
+                    en: p.en,
+                    significado: p.significado,
+                    xesto: p.xesto ?? const LocalizedString(gl: '', es: ''),
+                  ),
+              ],
+        daSemana: leccion != null,
         microRutina: segundo?.microRutinaHogar,
-        reto: daUnidade.hogar?.daSemana(semana),
-        momentoDoReto: daUnidade.hogar?.momento,
+        reto: leccion?.reto ?? daUnidade.hogar?.daSemana(semana),
+        momentoDoReto: leccion?.momento ?? daUnidade.hogar?.momento,
         codigoCasa: switch ((daUnidade.cursoId, daUnidade.mesCalendario)) {
           (final c?, final m?) => CodigoCasa.para(c, m, semana)?.texto,
           _ => null,

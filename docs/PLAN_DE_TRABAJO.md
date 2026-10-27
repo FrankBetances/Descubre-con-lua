@@ -172,6 +172,7 @@ Comprobado contra la app el 20/10/2026 con `grep` sobre `lib/` y
 | P6 | Criterios de evaluación | **Del texto de Frank** (CA2.7 por nivel), marcados como pendientes de contrastar con el DOG | F6 |
 | P7 | Lista de práctica de la adulta | **Entra**, con la política de privacidad y los dos gates en el mismo cambio; Frank actualiza el formulario de Play Console | F2 |
 | P10 | Imprimibles de las unidades | **No se hacen: es una app.** En su lugar, un código que la escuela da a la familia y que, escrito en la app de casa, abre el núcleo, el reto de la semana y qué mirar (Frank, 26/10/2026) | F6 |
+| P11 | Las familias no entienden las unidades, las palabras ni el orden | **Lecciones de una semana por grupo, con una sola fuente: el plan curricular.** Cada lección dice lo que ya debería saber, lo nuevo, el reto de casa, el cuento, el juego y qué mirar. Lidera Hoxe en casa y en el aula; el banco de 4.000 palabras, las asambleas antiguas y el juego de tres minutos pasan a material complementario (Frank, 27/10/2026) | Hoxe casa y aula, código, nota, calendario |
 
 ## 5. Lo que ya está hecho y no se repite
 

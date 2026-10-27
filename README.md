@@ -11,17 +11,22 @@ Portal Docentes. Cada portal se abre por lo que toca hoy y tiene cuatro
 pestañas, siempre en el mismo sitio: *Hoy · Calendario · Explorar · Guías* en
 casa y *Hoy · Calendario · Recursos · Yo* en la escuela.
 
-- **Hoy, en la escuela** — la asamblea del día del grupo, arriba, con sus cuatro
-  fases y un solo botón; debajo, las palabras en inglés de hoy, el cuento de la
-  semana, la dinámica y cuándo toca la ciencia del curso.
-- **Hoy, en casa** — el juego de tres minutos del día, con el momento como
-  título y un solo botón, sus palabras en inglés con voz y el cuento de la
-  semana. Debajo, **el reto de la semana**: una frase del mes con su voz para la
-  persona adulta, el momento fijo del día en que se dice, qué hacer, la espera,
-  qué no pedir y qué responder si la criatura calla, contesta en la lengua de
-  casa o dice una palabra; y el juego del mes, qué mirar —sin marcar nada— y la
-  palabra del mes anterior. El mismo reto sale en cada día del calendario de
-  casa y en la nota que la escuela da a las familias. Si la criatura llega nueva a un curso empezado, **Ponte al día**
+- **La lección de la semana** — los dos portales se abren por ella. El curso de
+  cada grupo es una fila de lecciones de una semana que salen del plan
+  curricular, unidad a unidad. Está escrita para familias que no saben de
+  pedagogía: de dónde viene y a dónde va la unidad, las palabras que ya conoce,
+  y la semana en tres pasos —escuchar las palabras, decirlas siempre en el
+  mismo momento del día, esperar y celebrar—, cada uno con su porqué en una o
+  dos frases. Debajo, el cuento y el juego de la unidad, las señales de que va
+  bien, sin apuntar nada, y las palabras de la semana que viene. La misma
+  lección sale en los dos calendarios, en la nota que la escuela da a las
+  familias y en el código para casa.
+- **Hoy, en la escuela** — la lección de la semana y la sesión de 45 minutos;
+  debajo, como material complementario, la asamblea diaria de cuatro fases, las
+  palabras del banco, el plan del mes, el cuento, la dinámica y la ciencia.
+- **Hoy, en casa** — la lección de la semana; debajo, como material
+  complementario, el juego de tres minutos del día con un solo botón, las
+  palabras del día, el reto del mes con su microcuento y el cuento. Si la criatura llega nueva a un curso empezado, **Ponte al día**
   enseña las palabras de antes que dan por sabidas las asambleas y los retos
   de los cuentos del mes, dos
   o tres al día, con su gesto y su voz. Se elige la edad y el mes; no se guarda

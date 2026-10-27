@@ -16,11 +16,12 @@ class NomesInicio {
       LocalizedString(gl: 'Onde vas usala?', es: '¿Dónde la vas a usar?');
   static const casa = LocalizedString(gl: 'Na casa', es: 'En casa');
   static const casaDi = LocalizedString(
-      gl: 'Tres minutos ao día coa túa criatura',
-      es: 'Tres minutos al día con tu criatura');
+      gl: 'A lección de cada semana, pola idade',
+      es: 'La lección de cada semana, por edad');
   static const escola = LocalizedString(gl: 'Na escola', es: 'En la escuela');
   static const escolaDi = LocalizedString(
-      gl: 'A asemblea de cada día', es: 'La asamblea de cada día');
+      gl: 'A lección da semana para a aula',
+      es: 'La lección de la semana para el aula');
   static const quenFaiIsto =
       LocalizedString(gl: 'Quen fai isto', es: 'Quién hace esto');
   static const privacidade = LocalizedString(

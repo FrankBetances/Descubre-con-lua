@@ -18,6 +18,8 @@ import '../../../data/repositories/content_repository.dart';
 import '../../docentes/widgets/hoxe_na_aula.dart';
 import '../../steam/widgets/steam_comun.dart';
 import '../../steam/widgets/steam_no_calendario.dart';
+import '../../../data/models/leccion_model.dart';
+import '../../leccions/widgets/leccion_da_semana.dart';
 import '../widgets/nucleo_do_mes.dart';
 import '../widgets/palabras_do_dia.dart';
 
@@ -118,6 +120,12 @@ class _CalendarioFogarScreenState extends State<CalendarioFogarScreen> {
   @override
   void initState() {
     super.initState();
+    // P11: la lección de cada semana, en la ficha del día.
+    if (Leccions.lidas == null) {
+      Leccions.cargar().then((_) {
+        if (mounted) setState(() {});
+      }, onError: (_) {});
+    }
     _language = widget.initialLanguage;
     _cursoSeleccionado = widget.initialCursoId ?? _cursos.first['id']!;
     // Abre no día que toca, coa MESMA conta que «Hoxe na aula»: antes abría
@@ -351,15 +359,18 @@ class _CalendarioFogarScreenState extends State<CalendarioFogarScreen> {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text(
-                                      '${isGl ? _mesesNomes[_mesIndex]["gl"] : _mesesNomes[_mesIndex]["es"]} · ${mesCurricular.centroInteres.resolve(lang)}',
+                                      // P11: la unidad del plan curricular
+                                      // del mes, la misma de la lección.
+                                      '${isGl ? _mesesNomes[_mesIndex]["gl"] : _mesesNomes[_mesIndex]["es"]} · ${(_unidadeDoMes?.titulo ?? mesCurricular.centroInteres).resolve(lang)}',
                                       style: TextStyle(
                                         fontSize: 14,
                                         fontWeight: FontWeight.bold,
                                         color: context.acento,
                                       ),
                                     ),
-                                    if (mesCurricular
-                                        .objetivoPedagogico.hasParity) ...[
+                                    if (_unidadeDoMes == null &&
+                                        mesCurricular
+                                            .objetivoPedagogico.hasParity) ...[
                                       const SizedBox(height: 2),
                                       Text(
                                         mesCurricular.objetivoPedagogico
@@ -823,9 +834,20 @@ class _CalendarioFogarScreenState extends State<CalendarioFogarScreen> {
             ),
             const SizedBox(height: 12),
 
+            // P11: la lección de esta semana, la misma que abre Hoxe.
+            if (_leccionDe(dia) case (final u, final l)) ...[
+              LeccionNoCalendario(
+                unidade: u,
+                leccion: l,
+                semana: dia.semanaNumero,
+                language: _language,
+                audioService: widget.audioService,
+              ),
+              const SizedBox(height: 12),
+            ]
             // F5: el reto de casa de esta semana y su momento, el mismo que
             // enseña Hoxe.
-            if (_mesCurricularActual?.unidade?.hogar case final hogar?)
+            else if (_mesCurricularActual?.unidade?.hogar case final hogar?)
               if (hogar.daSemana(dia.semanaNumero) case final reto?) ...[
                 Container(
                   key: ValueKey('calendario_reto_${dia.semanaNumero}'),
@@ -1180,6 +1202,14 @@ class _CalendarioFogarScreenState extends State<CalendarioFogarScreen> {
   ];
 
   /// El índice 0..9 del curso (septiembre es 0) de cada mes del calendario.
+  UnidadeDeLeccions? get _unidadeDoMes => Leccions.lidas
+      ?.da(_cursoSeleccionado, _mesIndex < 4 ? _mesIndex + 9 : _mesIndex - 3, 1)
+      ?.$1;
+
+  (UnidadeDeLeccions, Leccion)? _leccionDe(DiaCalendarioDual dia) =>
+      Leccions.lidas?.da(_cursoSeleccionado,
+          _mesIndex < 4 ? _mesIndex + 9 : _mesIndex - 3, dia.semanaNumero);
+
   static int _indiceDoMes(int mesCalendario) =>
       mesCalendario >= 9 ? mesCalendario - 9 : mesCalendario + 3;
 

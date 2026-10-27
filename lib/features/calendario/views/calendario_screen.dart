@@ -9,6 +9,8 @@ import '../../../core/theme/app_theme.dart';
 import '../../../core/widgets/paxina_sen_scroll.dart';
 import '../../../core/widgets/aviso_contenido_ilegible.dart';
 import '../../../data/models/calendario_model.dart';
+import '../../../data/models/leccion_model.dart';
+import '../../leccions/widgets/leccion_da_semana.dart';
 import '../../juega/widgets/aula_ciclo_panel.dart';
 import '../../../data/models/progresion_model.dart';
 import '../../../data/models/steam_model.dart';
@@ -284,6 +286,12 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
   @override
   void initState() {
     super.initState();
+    // P11: la lección de cada semana, en la ficha del mes.
+    if (Leccions.lidas == null) {
+      Leccions.cargar().then((_) {
+        if (mounted) setState(() {});
+      }, onError: (_) {});
+    }
     _language = widget.initialLanguage;
     _esDocente = widget.esDocenteInicial;
     final repo = widget.repository;
@@ -1426,6 +1434,19 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
           _dia = d;
         }),
       ),
+      // P11: la lección de la semana elegida, la misma que abre Hoxe.
+      if (mes.cursoId case final c?)
+        if (Leccions.lidas?.da(c, mes.mesCalendario, _semana)
+            case (final u, final l)) ...[
+          const SizedBox(height: 12),
+          LeccionNoCalendario(
+            unidade: u,
+            leccion: l,
+            semana: _semana,
+            language: _language,
+            audioService: widget.audioService,
+          ),
+        ],
       // La sesión STEAM del día, si ese día le toca al curso: la misma que
       // sale en «Hoxe na aula» y en el día del Modo Aula.
       for (final u in repo.getSteamUnitsDoDia(

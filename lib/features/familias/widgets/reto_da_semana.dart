@@ -26,6 +26,10 @@ class RetoDaSemana extends StatefulWidget {
   /// El botón del microcuento en modo casa, si la unidad lo tiene.
   final Widget? lectura;
 
+  /// El antetítulo, si no es el del reto del mes («… SEMANA 2 DE 4»): la
+  /// lección semanal (P11) pone el suyo.
+  final String? rotulo;
+
   const RetoDaSemana({
     super.key,
     required this.hogar,
@@ -33,6 +37,7 @@ class RetoDaSemana extends StatefulWidget {
     required this.language,
     this.audioService,
     this.lectura,
+    this.rotulo,
   });
 
   @override
@@ -66,6 +71,8 @@ class _RetoDaSemanaState extends State<RetoDaSemana> {
       LocalizedString(gl: 'Se di unha palabra', es: 'Si dice una palabra');
   static const _xogo =
       LocalizedString(gl: 'O XOGO DO MES', es: 'EL JUEGO DEL MES');
+  static const _xogoDaUnidade =
+      LocalizedString(gl: 'O XOGO DA UNIDADE', es: 'EL JUEGO DE LA UNIDAD');
   static const _observar = LocalizedString(
       gl: 'QUE MIRAR · NON SE MARCA NIN SE GARDA',
       es: 'QUÉ MIRAR · NO SE MARCA NI SE GUARDA');
@@ -116,8 +123,9 @@ class _RetoDaSemanaState extends State<RetoDaSemana> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              '${_kicker.resolve(lang)} · ${_semana.resolve(lang).toUpperCase()} '
-              '${reto.semana} DE 4 · ${reto.nomeFase.resolve(lang).toUpperCase()}',
+              widget.rotulo ??
+                  '${_kicker.resolve(lang)} · ${_semana.resolve(lang).toUpperCase()} '
+                      '${reto.semana} DE 4 · ${reto.nomeFase.resolve(lang).toUpperCase()}',
               style: kicker,
             ),
             const SizedBox(height: 10),
@@ -183,12 +191,13 @@ class _RetoDaSemanaState extends State<RetoDaSemana> {
               const SizedBox(height: 4),
               l,
             ],
-            _Xogo(
+            XogoDoReto(
               hogar: h,
               xogos: _xogos,
               steam: _steam,
               language: lang,
-              rotulo: _xogo.resolve(lang),
+              rotulo: (widget.rotulo == null ? _xogo : _xogoDaUnidade)
+                  .resolve(lang),
               kicker: kicker,
             ),
             if (h.queObservar.isNotEmpty) ...[
@@ -224,7 +233,8 @@ class _RetoDaSemanaState extends State<RetoDaSemana> {
   }
 }
 
-class _Xogo extends StatelessWidget {
+/// El juego o la ciencia del reto, con su guion para la persona adulta.
+class XogoDoReto extends StatelessWidget {
   final HogarDaUnidade hogar;
   final Future<XogosFogar?> xogos;
   final Future<SteamDoMes?> steam;
@@ -232,7 +242,8 @@ class _Xogo extends StatelessWidget {
   final String rotulo;
   final TextStyle kicker;
 
-  const _Xogo({
+  const XogoDoReto({
+    super.key,
     required this.hogar,
     required this.xogos,
     required this.steam,

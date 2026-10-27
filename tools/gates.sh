@@ -106,6 +106,10 @@ run_gate "every month unit cites what exists and follows its assembly" \
 # toca el plan o una unidad sin regenerarla, la casa contaría otro mes.
 run_gate "home guide of every month is regenerated from its sources" \
   python3 tools/gen_hogar.py --check
+# P11: las lecciones semanales salen del plan curricular por script; si se
+# toca el plan sin regenerarlas, la lección enseñaría otra unidad.
+run_gate "weekly lessons are regenerated from the plan" \
+  python3 tools/gen_leccions.py --check
 # Nace de O5 (M5.1): el microcuento es una conversación sobre el núcleo, no
 # otro vocabulario. Comprueba que lo que dice Lúa sale del núcleo, que hay
 # tríada, guion de recast para cinco respuestas y pregunta de casa por edad, y

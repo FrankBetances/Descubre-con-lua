@@ -5,13 +5,12 @@ import '../../../core/codigo_casa.dart';
 import '../../../core/localization/app_language.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../core/widgets/cabecera.dart';
-import '../../../data/models/unidade_do_mes_model.dart';
 import '../../../data/repositories/content_repository.dart';
-import '../../calendario/widgets/nucleo_do_mes.dart';
-import '../widgets/reto_da_semana.dart';
+import '../../leccions/widgets/leccion_da_semana.dart';
 
-/// Lo que abre el código que da la escuela (P10): el núcleo del mes, el reto
-/// de esa semana y qué mirar. Es lo que antes iría en un imprimible.
+/// Lo que abre el código que da la escuela (P10): la lección de esa semana
+/// (P11), con lo que ya debería saber, lo nuevo, el reto y qué mirar. Es lo
+/// que antes iría en un imprimible.
 ///
 /// El código no se guarda: al salir de la pantalla se olvida.
 class CodigoDaEscolaScreen extends StatefulWidget {
@@ -36,7 +35,6 @@ class _CodigoDaEscolaScreenState extends State<CodigoDaEscolaScreen> {
   late AppLanguage _lang = widget.language;
   final _texto = TextEditingController();
   CodigoCasa? _codigo;
-  Future<UnidadeDoMes?>? _unidade;
   bool _erro = false;
 
   void _cambiar(AppLanguage l) {
@@ -49,9 +47,6 @@ class _CodigoDaEscolaScreenState extends State<CodigoDaEscolaScreen> {
     setState(() {
       _erro = c == null;
       _codigo = c;
-      _unidade = c == null
-          ? null
-          : widget.repository.loadUnidadeDoMes(c.cursoId, c.mesCalendario);
     });
   }
 
@@ -137,50 +132,19 @@ class _CodigoDaEscolaScreenState extends State<CodigoDaEscolaScreen> {
                 ),
               ),
             ],
-            if (_unidade case final f?)
-              FutureBuilder<UnidadeDoMes?>(
-                future: f,
-                builder: (context, snap) {
-                  final u = snap.data;
-                  final c = _codigo;
-                  if (u == null || c == null) {
-                    return const SizedBox.shrink();
-                  }
-                  return Column(
-                    key: ValueKey('codigo_resultado_${c.texto}'),
-                    crossAxisAlignment: CrossAxisAlignment.stretch,
-                    children: [
-                      const SizedBox(height: 18),
-                      Text(
-                        u.centroInteres.resolve(_lang),
-                        style: const TextStyle(
-                          fontSize: 20,
-                          fontWeight: FontWeight.w800,
-                          color: AppTheme.textPrimary,
-                        ),
-                      ),
-                      const SizedBox(height: 12),
-                      NucleoDoMes(
-                        unidade: u,
-                        nucleo: widget.repository.nucleoSync(u),
-                        contraste: widget.repository.contrasteSync(u),
-                        language: _lang,
-                        audioService: widget.audioService,
-                        enCasa: true,
-                      ),
-                      if (u.hogar case final h?) ...[
-                        const SizedBox(height: 12),
-                        RetoDaSemana(
-                          hogar: h,
-                          semana: c.semana,
-                          language: _lang,
-                          audioService: widget.audioService,
-                        ),
-                      ],
-                    ],
-                  );
-                },
+            // P11: el código abre la lección de esa semana, la misma que
+            // está viendo el aula.
+            if (_codigo case final c?) ...[
+              const SizedBox(height: 18),
+              LeccionDaSemanaCargada(
+                key: ValueKey('codigo_resultado_${c.texto}'),
+                cursoId: c.cursoId,
+                mesCalendario: c.mesCalendario,
+                semana: c.semana,
+                language: _lang,
+                audioService: widget.audioService,
               ),
+            ],
           ],
         ),
       ),

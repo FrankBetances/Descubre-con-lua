@@ -39,6 +39,10 @@ class NotaParaCasasScreen extends StatelessWidget {
   /// El núcleo del mes, ya resuelto: lo que la familia puede decir en casa.
   final List<PezaDaUnidade> nucleo;
 
+  /// P11: [nucleo] son las palabras de la lección de esta semana, no las del
+  /// mes.
+  final bool daSemana;
+
   /// En 2.º ciclo, la micro-rutina de casa de la asamblea del mes.
   final MicroRutinaHogarSegundoCiclo? microRutina;
 
@@ -60,6 +64,7 @@ class NotaParaCasasScreen extends StatelessWidget {
     super.key,
     required this.centroInteres,
     required this.nucleo,
+    this.daSemana = false,
     this.microRutina,
     this.reto,
     this.momentoDoReto,
@@ -90,6 +95,11 @@ class NotaParaCasasScreen extends StatelessWidget {
   static const _palabras = LocalizedString(
     gl: 'AS PALABRAS EN INGLÉS DO MES',
     es: 'LAS PALABRAS EN INGLÉS DEL MES',
+  );
+
+  static const _palabrasDaSemana = LocalizedString(
+    gl: 'AS PALABRAS EN INGLÉS DESTA SEMANA',
+    es: 'LAS PALABRAS EN INGLÉS DE ESTA SEMANA',
   );
 
   static const _palabrasCasa = LocalizedString(
@@ -174,7 +184,8 @@ class NotaParaCasasScreen extends StatelessWidget {
                 if (nucleo.isNotEmpty) ...[
                   const SizedBox(height: AppTheme.spaceMd),
                   _Bloque(
-                    kicker: _palabras.resolve(language),
+                    kicker: (daSemana ? _palabrasDaSemana : _palabras)
+                        .resolve(language),
                     acento: context.acento,
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -279,8 +290,8 @@ class NotaParaCasasScreen extends StatelessWidget {
                         const SizedBox(height: 4),
                         Text(
                           isGl
-                              ? 'Na app, entra en Na casa, abre Hoxe e toca «Tes un código da escola?». Abre o núcleo, o reto desta semana e que mirar. Non se garda nada.'
-                              : 'En la app, entra en En casa, abre Hoy y toca «¿Tienes un código de la escuela?». Abre el núcleo, el reto de esta semana y qué mirar. No se guarda nada.',
+                              ? 'Na app, entra en Na casa, abre Hoxe e toca «Tes un código da escola?». Abre a lección desta semana: as palabras, o reto e que mirar. Non se garda nada.'
+                              : 'En la app, entra en En casa, abre Hoy y toca «¿Tienes un código de la escuela?». Abre la lección de esta semana: las palabras, el reto y qué mirar. No se guarda nada.',
                           style: theme.textTheme.bodyMedium?.copyWith(
                             color: AppTheme.textSecondary,
                             height: 1.4,
