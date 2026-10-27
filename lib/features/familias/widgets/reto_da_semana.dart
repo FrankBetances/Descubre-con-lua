@@ -191,7 +191,7 @@ class _RetoDaSemanaState extends State<RetoDaSemana> {
               const SizedBox(height: 4),
               l,
             ],
-            _Xogo(
+            XogoDoReto(
               hogar: h,
               xogos: _xogos,
               steam: _steam,
@@ -233,7 +233,8 @@ class _RetoDaSemanaState extends State<RetoDaSemana> {
   }
 }
 
-class _Xogo extends StatelessWidget {
+/// El juego o la ciencia del reto, con su guion para la persona adulta.
+class XogoDoReto extends StatelessWidget {
   final HogarDaUnidade hogar;
   final Future<XogosFogar?> xogos;
   final Future<SteamDoMes?> steam;
@@ -241,7 +242,8 @@ class _Xogo extends StatelessWidget {
   final String rotulo;
   final TextStyle kicker;
 
-  const _Xogo({
+  const XogoDoReto({
+    super.key,
     required this.hogar,
     required this.xogos,
     required this.steam,

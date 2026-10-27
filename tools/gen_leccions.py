@@ -35,6 +35,45 @@ C = H.C
 SAIDA = C / "leccions" / "leccions.json"
 SEMANAS_DO_PLAN = {"T2": 6, "T3": 8}
 
+# Lo que la familia lee para entender qué hace, cómo y por qué (Frank,
+# 27/10/2026: las familias no saben pedagogía). Corto, sin jerga y sin cifras
+# que no salgan de un documento.
+GUIA = {
+    "comoFunciona": ("Cada semana, unhas poucas palabras novas en inglés, nun momento do día que xa tedes. Non é unha clase: son uns minutos de xogo.",
+                     "Cada semana, unas pocas palabras nuevas en inglés, en un momento del día que ya tenéis. No es una clase: son unos minutos de juego."),
+    "deOnde": ("Xa as coñece", "Ya las conoce"),
+    "deOndeTexto": ("Das semanas anteriores. Se algunha non a recorda, dila ti tamén esta semana.",
+                    "De las semanas anteriores. Si alguna no la recuerda, dila tú también esta semana."),
+    "comezo": ("É a primeira semana: comezades de cero.", "Es la primera semana: empezáis de cero."),
+    "aOnde": ("Ao final desta unidade", "Al final de esta unidad"),
+    "pasos": ("Esta semana, en tres pasos", "Esta semana, en tres pasos"),
+    "paso1": ("Escoita ti as palabras", "Escucha tú las palabras"),
+    "paso1Repaso": ("Escoita ti as que volven", "Escucha tú las que vuelven"),
+    "paso1Texto": ("Toca cada unha para oíla en inglés; con dous toques, oes o que quere dicir.",
+                   "Toca cada una para oírla en inglés; con dos toques, oyes lo que quiere decir."),
+    "paso1Porque": ("Ti es o modelo da túa criatura. Non fai falta pronunciar perfecto: abonda con dicilas con gusto e sempre igual.",
+                    "Tú eres el modelo de tu criatura. No hace falta pronunciar perfecto: basta con decirlas con gusto y siempre igual."),
+    "paso2": ("Dias sempre no mesmo momento", "Dilas siempre en el mismo momento"),
+    "paso2Porque": ("Se o inglés chega sempre no mesmo momento, a criatura sabe que vai pasar e espérao. Unha lingua apréndese oíndoa moitas veces.",
+                    "Si el inglés llega siempre en el mismo momento, la criatura sabe que va a pasar y lo espera. Una lengua se aprende oyéndola muchas veces."),
+    "paso3": ("Agarda e celebra", "Espera y celebra"),
+    "paso3Espera": ("Despois de dicilo, conta {n} segundos en silencio, mirándoa.",
+                    "Después de decirlo, cuenta {n} segundos en silencio, mirándola."),
+    "paso3Porque": ("Responder leva tempo. Se se lle pide que o repita, deixa de ser un xogo; se se celebra o que fai, quere volver.",
+                    "Responder lleva tiempo. Si se le pide que lo repita, deja de ser un juego; si se celebra lo que hace, quiere volver."),
+    "porque": ("Por que?", "¿Por qué?"),
+    "seResponde": ("Que dicir despois, segundo responda", "Qué decir después, según responda"),
+    "silencio": ("Se non di nada", "Si no dice nada"),
+    "linguaCasa": ("Se contesta na lingua da casa", "Si contesta en la lengua de casa"),
+    "unhaPalabra": ("Se di unha palabra", "Si dice una palabra"),
+    "gozar": ("Para gozar máis esta semana", "Para disfrutar más esta semana"),
+    "sinais": ("Sinais de que vai ben", "Señales de que va bien"),
+    "sinaisTexto": ("Non hai que apuntar nada nin compararse: cada criatura leva o seu ritmo.",
+                    "No hay que apuntar nada ni compararse: cada criatura lleva su ritmo."),
+    "seguinte": ("A semana que vén", "La semana que viene"),
+    "seguinteUnidade": ("Despois vén a unidade", "Después viene la unidad"),
+}
+
 
 def items_da_unidade(u):
     """Lo que enseña la unidad, en el orden en que se presenta: las palabras
@@ -136,7 +175,9 @@ def main():
     for f in sorted((C / "biblioteca").glob("his_*.json")):
         contos += json.loads(f.read_text())
     saida = {"_doc": "Generado por tools/gen_leccions.py desde el plan curricular; "
-                     "no se edita a mano.", "cursos": {}}
+                     "no se edita a mano.",
+             "guia": {k: {"gl": g, "es": e} for k, (g, e) in GUIA.items()},
+             "cursos": {}}
     for curso in H.CURSOS:
         # Las semanas del curso, en orden, con su unidad del plan.
         slots = [(mes, s, cal[curso][str(mes)]) for mes in H.MESES for s in range(1, 5)]
@@ -201,8 +242,15 @@ def main():
                     "xaSabe": list(xa_sabe) if (xa_sabe or k) else list(da_anterior),
                     "novas": novas,
                     "repasa": repasa,
+                    # Las manos van con la palabra que lleva la frase del reto.
                     "reto": reto(curso, uid, fase, frase, prev, sig,
-                                 mans_de((novas or repasa)[0])),
+                                 mans_de(next(
+                                     # Primero las que traen gesto.
+                                     (p for p in sorted(novas or repasa,
+                                                        key=lambda p: "xesto" not in p)
+                                      if p["en"].strip("!.?¡¿ ").lower()
+                                      in frase["en"].lower()),
+                                     {"tipo": "frase"}))),
                     "conto": conto,
                     "xogo": {"xogo": xogo} if xogo else {"steam": steam[(curso, mes0)]},
                     "queMirar": [{"gl": g.format(en=alvo), "es": e.format(en=alvo)}
@@ -211,7 +259,11 @@ def main():
                 calendario.setdefault(str(mes), []).append(leccions[-1]["id"])
                 xa_sabe += [{"en": p["en"], **({"gl": p["gl"], "es": p["es"]} if "gl" in p else {})}
                             for p in novas]
-            unidades.append({"id": uid, "titulo": u["titulo"], "leccions": leccions})
+            unidades.append({"id": uid, "titulo": u["titulo"],
+                             # A dónde va: los objetivos del plan, tal cual.
+                             "obxectivos": [{"gl": o["gl"], "es": o["es"]}
+                                            for o in u.get("objetivos") or []],
+                             "leccions": leccions})
             da_anterior = xa_sabe
         saida["cursos"][curso] = {"unidades": unidades, "calendario": calendario}
     texto = json.dumps(saida, ensure_ascii=False, indent=1) + "\n"

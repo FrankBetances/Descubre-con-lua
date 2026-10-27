@@ -13,12 +13,12 @@ casa y *Hoy · Calendario · Recursos · Yo* en la escuela.
 
 - **La lección de la semana** — los dos portales se abren por ella. El curso de
   cada grupo es una fila de lecciones de una semana que salen del plan
-  curricular, unidad a unidad, y cada lección dice siempre lo mismo y en el
-  mismo orden: el grupo y la unidad, lo que ya debería saber, las palabras
-  nuevas de esa semana con su voz y su gesto, y cómo decirlas en casa: el reto,
-  con el momento fijo del día, la espera, qué no pedir y qué responder si la
-  criatura calla, contesta en la lengua de casa o dice una palabra; el cuento de
-  la semana, el juego de la unidad y qué mirar, sin marcar nada. La misma
+  curricular, unidad a unidad. Está escrita para familias que no saben de
+  pedagogía: de dónde viene y a dónde va la unidad, las palabras que ya conoce,
+  y la semana en tres pasos —escuchar las palabras, decirlas siempre en el
+  mismo momento del día, esperar y celebrar—, cada uno con su porqué en una o
+  dos frases. Debajo, el cuento y el juego de la unidad, las señales de que va
+  bien, sin apuntar nada, y las palabras de la semana que viene. La misma
   lección sale en los dos calendarios, en la nota que la escuela da a las
   familias y en el código para casa.
 - **Hoy, en la escuela** — la lección de la semana y la sesión de 45 minutos;

@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart' show rootBundle;
 
+import '../../core/localization/app_language.dart';
 import '../../core/localization/localized_string.dart';
 import 'hogar_model.dart';
 
@@ -111,11 +112,15 @@ class Leccion {
 class UnidadeDeLeccions {
   final String id;
   final LocalizedString titulo;
+
+  /// A dónde va la unidad: sus objetivos, tal cual los dice el plan.
+  final List<LocalizedString> obxectivos;
   final List<Leccion> leccions;
 
   const UnidadeDeLeccions({
     required this.id,
     required this.titulo,
+    this.obxectivos = const [],
     required this.leccions,
   });
 }
@@ -129,7 +134,18 @@ class Leccions {
   /// Curso → mes → las lecciones de sus semanas 1 a 4.
   final Map<String, Map<int, List<String>>> calendario;
 
-  const Leccions({required this.unidades, required this.calendario});
+  /// Lo que la familia lee para entender qué hace, cómo y por qué.
+  final Map<String, LocalizedString> guia;
+
+  const Leccions({
+    required this.unidades,
+    required this.calendario,
+    this.guia = const {},
+  });
+
+  /// Un texto de la guía; vacío si falta.
+  String texto(String clave, AppLanguage lang) =>
+      guia[clave]?.resolve(lang) ?? '';
 
   static const assetPath = 'assets/content/leccions/leccions.json';
 
@@ -145,6 +161,9 @@ class Leccions {
             UnidadeDeLeccions(
               id: u['id']?.toString() ?? '',
               titulo: _t(u['titulo']),
+              obxectivos: [
+                for (final o in (u['obxectivos'] as List? ?? const [])) _t(o),
+              ],
               leccions: [
                 for (final l in (u['leccions'] as List? ?? const []))
                   if (l is Map) Leccion.fromJson(Map<String, dynamic>.from(l)),
@@ -158,7 +177,14 @@ class Leccions {
           ],
       };
     }
-    return Leccions(unidades: unidades, calendario: calendario);
+    return Leccions(
+      unidades: unidades,
+      calendario: calendario,
+      guia: {
+        for (final g in (j['guia'] as Map? ?? const {}).entries)
+          g.key.toString(): _t(g.value),
+      },
+    );
   }
 
   /// La lección de la semana 1 a 4 (la 5.ª es la 4.ª) de un mes del curso.

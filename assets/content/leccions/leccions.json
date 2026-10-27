@@ -1,5 +1,107 @@
 {
  "_doc": "Generado por tools/gen_leccions.py desde el plan curricular; no se edita a mano.",
+ "guia": {
+  "comoFunciona": {
+   "gl": "Cada semana, unhas poucas palabras novas en inglés, nun momento do día que xa tedes. Non é unha clase: son uns minutos de xogo.",
+   "es": "Cada semana, unas pocas palabras nuevas en inglés, en un momento del día que ya tenéis. No es una clase: son unos minutos de juego."
+  },
+  "deOnde": {
+   "gl": "Xa as coñece",
+   "es": "Ya las conoce"
+  },
+  "deOndeTexto": {
+   "gl": "Das semanas anteriores. Se algunha non a recorda, dila ti tamén esta semana.",
+   "es": "De las semanas anteriores. Si alguna no la recuerda, dila tú también esta semana."
+  },
+  "comezo": {
+   "gl": "É a primeira semana: comezades de cero.",
+   "es": "Es la primera semana: empezáis de cero."
+  },
+  "aOnde": {
+   "gl": "Ao final desta unidade",
+   "es": "Al final de esta unidad"
+  },
+  "pasos": {
+   "gl": "Esta semana, en tres pasos",
+   "es": "Esta semana, en tres pasos"
+  },
+  "paso1": {
+   "gl": "Escoita ti as palabras",
+   "es": "Escucha tú las palabras"
+  },
+  "paso1Repaso": {
+   "gl": "Escoita ti as que volven",
+   "es": "Escucha tú las que vuelven"
+  },
+  "paso1Texto": {
+   "gl": "Toca cada unha para oíla en inglés; con dous toques, oes o que quere dicir.",
+   "es": "Toca cada una para oírla en inglés; con dos toques, oyes lo que quiere decir."
+  },
+  "paso1Porque": {
+   "gl": "Ti es o modelo da túa criatura. Non fai falta pronunciar perfecto: abonda con dicilas con gusto e sempre igual.",
+   "es": "Tú eres el modelo de tu criatura. No hace falta pronunciar perfecto: basta con decirlas con gusto y siempre igual."
+  },
+  "paso2": {
+   "gl": "Dias sempre no mesmo momento",
+   "es": "Dilas siempre en el mismo momento"
+  },
+  "paso2Porque": {
+   "gl": "Se o inglés chega sempre no mesmo momento, a criatura sabe que vai pasar e espérao. Unha lingua apréndese oíndoa moitas veces.",
+   "es": "Si el inglés llega siempre en el mismo momento, la criatura sabe que va a pasar y lo espera. Una lengua se aprende oyéndola muchas veces."
+  },
+  "paso3": {
+   "gl": "Agarda e celebra",
+   "es": "Espera y celebra"
+  },
+  "paso3Espera": {
+   "gl": "Despois de dicilo, conta {n} segundos en silencio, mirándoa.",
+   "es": "Después de decirlo, cuenta {n} segundos en silencio, mirándola."
+  },
+  "paso3Porque": {
+   "gl": "Responder leva tempo. Se se lle pide que o repita, deixa de ser un xogo; se se celebra o que fai, quere volver.",
+   "es": "Responder lleva tiempo. Si se le pide que lo repita, deja de ser un juego; si se celebra lo que hace, quiere volver."
+  },
+  "porque": {
+   "gl": "Por que?",
+   "es": "¿Por qué?"
+  },
+  "seResponde": {
+   "gl": "Que dicir despois, segundo responda",
+   "es": "Qué decir después, según responda"
+  },
+  "silencio": {
+   "gl": "Se non di nada",
+   "es": "Si no dice nada"
+  },
+  "linguaCasa": {
+   "gl": "Se contesta na lingua da casa",
+   "es": "Si contesta en la lengua de casa"
+  },
+  "unhaPalabra": {
+   "gl": "Se di unha palabra",
+   "es": "Si dice una palabra"
+  },
+  "gozar": {
+   "gl": "Para gozar máis esta semana",
+   "es": "Para disfrutar más esta semana"
+  },
+  "sinais": {
+   "gl": "Sinais de que vai ben",
+   "es": "Señales de que va bien"
+  },
+  "sinaisTexto": {
+   "gl": "Non hai que apuntar nada nin compararse: cada criatura leva o seu ritmo.",
+   "es": "No hay que apuntar nada ni compararse: cada criatura lleva su ritmo."
+  },
+  "seguinte": {
+   "gl": "A semana que vén",
+   "es": "La semana que viene"
+  },
+  "seguinteUnidade": {
+   "gl": "Despois vén a unidade",
+   "es": "Después viene la unidad"
+  }
+ },
  "cursos": {
   "curso_0_2": {
    "unidades": [
@@ -9,6 +111,20 @@
       "gl": "O recuncho da auga e a exploración líquida",
       "es": "El rincón del agua y la exploración líquida"
      },
+     "obxectivos": [
+      {
+       "gl": "Reaccionar co corpo, cun salto e batendo na auga de forma coordinada, ás ordes splash e stop.",
+       "es": "Reaccionar con el cuerpo, con un salto y chapoteando de forma coordinada, a las órdenes splash y stop."
+      },
+      {
+       "gl": "Identificar e coller coas mans water e boat nas cubetas de auga cando a persoa adulta o pide de palabra.",
+       "es": "Identificar y coger con las manos water y boat en las cubetas de agua cuando la persona adulta lo pide de palabra."
+      },
+      {
+       "gl": "Distinguir polo tacto e co corpo a sensación de wet e de dry, con toallas e esponxas.",
+       "es": "Distinguir por el tacto y con el cuerpo la sensación de wet y de dry, con toallas y esponjas."
+      }
+     ],
      "leccions": [
       {
        "id": "curso_0_2.T2.U1.1",
@@ -651,8 +767,8 @@
          "es": "Di «Splash, splash, splash in the water! And... stop!» y espera. Si se gira, sonríe o mueve el cuerpo, ya ha respondido: devuélveselo con una sonrisa."
         },
         "mans": {
-         "gl": "Sinala ou colle o que nomeas: auga.",
-         "es": "Señala o coge lo que nombras: agua."
+         "gl": "Bater na auga coas mans abertas.",
+         "es": "Chapotear en el agua con las manos abiertas."
         },
         "esperaSegundos": 3,
         "nonPedir": {
@@ -790,8 +906,8 @@
          "es": "Di «Push the boat!» y espera. Si se gira, sonríe o mueve el cuerpo, ya ha respondido: devuélveselo con una sonrisa."
         },
         "mans": {
-         "gl": "Sinala ou colle o que nomeas: auga.",
-         "es": "Señala o coge lo que nombras: agua."
+         "gl": "Sinala ou colle o que nomeas: barco.",
+         "es": "Señala o coge lo que nombras: barco."
         },
         "esperaSegundos": 3,
         "nonPedir": {
@@ -836,6 +952,24 @@
       "gl": "Tesouros da natureza e do chan",
       "es": "Tesoros de la naturaleza y del suelo"
      },
+     "obxectivos": [
+      {
+       "gl": "Agacharse a coller (pick up) e soltar deixando caer (drop) ao oír o sinal.",
+       "es": "Agacharse a recoger (pick up) y soltar dejando caer (drop) al oír la señal."
+      },
+      {
+       "gl": "Manipular e clasificar follas secas naturais (leaf) e pedras de río (stone).",
+       "es": "Manipular y clasificar hojas secas naturales (leaf) y piedras de río (stone)."
+      },
+      {
+       "gl": "Vivir co corpo e contrastar os tamaños grande e pequeno (big e small).",
+       "es": "Vivir con el cuerpo y contrastar los tamaños grande y pequeño (big y small)."
+      },
+      {
+       "gl": "Asimilar o contraste de duración entre a vogal longa /i/ (leaf) e a vogal breve /ɪ/ (big).",
+       "es": "Asimilar el contraste de duración entre la vocal larga /i/ (leaf) y la vocal breve /ɪ/ (big)."
+      }
+     ],
      "leccions": [
       {
        "id": "curso_0_2.T2.U2.1",
@@ -1515,8 +1649,8 @@
          "es": "Di «Pick up the leaf. Walk, walk... now drop it! Drop!» y espera. Si se gira, sonríe o mueve el cuerpo, ya ha respondido: devuélveselo con una sonrisa."
         },
         "mans": {
-         "gl": "Sinala ou colle o que nomeas: folla.",
-         "es": "Señala o coge lo que nombras: hoja."
+         "gl": "Agacharse ata o chan para coller as cousas.",
+         "es": "Agacharse hasta el suelo para recoger las cosas."
         },
         "esperaSegundos": 3,
         "nonPedir": {
@@ -1658,8 +1792,8 @@
          "es": "Di «Drop the stone: Boom!» y espera. Si se gira, sonríe o mueve el cuerpo, ya ha respondido: devuélveselo con una sonrisa."
         },
         "mans": {
-         "gl": "Sinala ou colle o que nomeas: folla.",
-         "es": "Señala o coge lo que nombras: hoja."
+         "gl": "Abrir as mans á altura dos ombros e deixar que a cousa caia con forza ao chan.",
+         "es": "Abrir las manos a la altura de los hombros y dejar que la cosa caiga con fuerza al suelo."
         },
         "esperaSegundos": 3,
         "nonPedir": {
@@ -1704,6 +1838,24 @@
       "gl": "Texturas, sabores e alimentación saudable",
       "es": "Texturas, sabores y alimentación saludable"
      },
+     "obxectivos": [
+      {
+       "gl": "Facer xestos coordinados de mastigar e de tragar de mentira ao oír as ordes bite e eat.",
+       "es": "Hacer gestos coordinados de masticar y de tragar de mentira al oír las órdenes bite y eat."
+      },
+      {
+       "gl": "Distinguir polo tacto e polo gusto a froita fresca (apple) do alimento cocido no forno (bread).",
+       "es": "Distinguir por el tacto y por el gusto la fruta fresca (apple) del alimento horneado (bread)."
+      },
+      {
+       "gl": "Recoñecer co tacto o morno e o frío, distinguindo warm de cold.",
+       "es": "Reconocer con el tacto lo templado y lo frío, distinguiendo warm de cold."
+      },
+      {
+       "gl": "Distinguir de oído a vogal aberta anterior non redondeada /æ/ (apple) das vogais centrais do castelán.",
+       "es": "Distinguir de oído la vocal abierta anterior no redondeada /æ/ (apple) de las vocales centrales del castellano."
+      }
+     ],
      "leccions": [
       {
        "id": "curso_0_2.T2.U3.1",
@@ -2371,8 +2523,8 @@
          "es": "Di «Mmm, warm and soft» y espera. Si se gira, sonríe o mueve el cuerpo, ya ha respondido: devuélveselo con una sonrisa."
         },
         "mans": {
-         "gl": "Sinala ou colle o que nomeas: mazá.",
-         "es": "Señala o coge lo que nombras: manzana."
+         "gl": "Abrazarse o peito, coma quen está quentiño.",
+         "es": "Abrazarse el pecho, como quien está calentito."
         },
         "esperaSegundos": 3,
         "nonPedir": {
@@ -2510,8 +2662,8 @@
          "es": "Di «Bite the apple! Mmm, yummy apple» y espera. Si se gira, sonríe o mueve el cuerpo, ya ha respondido: devuélveselo con una sonrisa."
         },
         "mans": {
-         "gl": "Sinala ou colle o que nomeas: mazá.",
-         "es": "Señala o coge lo que nombras: manzana."
+         "gl": "Facer como que se dá unha trabada grande, abrindo e pechando a boca e batendo os dentes.",
+         "es": "Hacer como que se da un mordisco grande, abriendo y cerrando la boca y chocando los dientes."
         },
         "esperaSegundos": 3,
         "nonPedir": {
@@ -2556,6 +2708,24 @@
       "gl": "O corpo, o xabón e o coidado persoal",
       "es": "El cuerpo, el jabón y el cuidado personal"
      },
+     "obxectivos": [
+      {
+       "gl": "Seguir as ordes de fregar e lavar o corpo ao oír wash e rub.",
+       "es": "Seguir las órdenes de frotar y lavar el cuerpo al oír wash y rub."
+      },
+      {
+       "gl": "Manipular o xabón (soap) e asociar el e o tacto da toalla (towel) á rutina de hixiene da aula.",
+       "es": "Manipular el jabón (soap) y asociarlo, junto con el tacto de la toalla (towel), a la rutina de higiene del aula."
+      },
+      {
+       "gl": "Sentir co tacto o que é soft fronte a superficies rugosas.",
+       "es": "Sentir con el tacto lo que es soft frente a superficies rugosas."
+      },
+      {
+       "gl": "Percibir a vogal central breve /ʌ/ (rub) distinguíndoa da /ɑ/ aberta (wash), próxima á /a/ do galego e do castelán.",
+       "es": "Percibir la vocal central breve /ʌ/ (rub) distinguiéndola de la /ɑ/ abierta (wash), cercana a la /a/ del gallego y del castellano."
+      }
+     ],
      "leccions": [
       {
        "id": "curso_0_2.T2.U4.1",
@@ -3108,8 +3278,8 @@
          "es": "Di «Baby is dirty! Let's get the soap. Smell the soap!» y espera. Si se gira, sonríe o mueve el cuerpo, ya ha respondido: devuélveselo con una sonrisa."
         },
         "mans": {
-         "gl": "Fregar as palmas das mans facendo círculos sen parar.",
-         "es": "Frotarse las palmas de las manos haciendo círculos sin parar."
+         "gl": "Sinala ou colle o que nomeas: xabón.",
+         "es": "Señala o coge lo que nombras: jabón."
         },
         "esperaSegundos": 3,
         "nonPedir": {
@@ -3364,8 +3534,8 @@
          "es": "Di «Dry with the towel. Feel how soft it is. Soft towel on your nose!» y espera. Si se gira, sonríe o mueve el cuerpo, ya ha respondido: devuélveselo con una sonrisa."
         },
         "mans": {
-         "gl": "Fregar as palmas das mans facendo círculos sen parar.",
-         "es": "Frotarse las palmas de las manos haciendo círculos sin parar."
+         "gl": "Tocar as meixelas suavemente.",
+         "es": "Tocarse las mejillas suavemente."
         },
         "esperaSegundos": 3,
         "nonPedir": {
@@ -3410,6 +3580,24 @@
       "gl": "Animais en movemento, carreira e calma",
       "es": "Animales en movimiento, carrera y calma"
      },
+     "obxectivos": [
+      {
+       "gl": "Regular o movemento de todo o corpo alternando a carreira rápida (run) e a quietude (sleep / stop).",
+       "es": "Regular el movimiento de todo el cuerpo alternando la carrera rápida (run) y la quietud (sleep / stop)."
+      },
+      {
+       "gl": "Emparellar figuras de animais de todos os días (cat, dog) cos seus sons e cos seus movementos.",
+       "es": "Emparejar figuras de animales de todos los días (cat, dog) con sus sonidos y con sus movimientos."
+      },
+      {
+       "gl": "Interiorizar a velocidade, contrastando fast e slow.",
+       "es": "Interiorizar la velocidad, contrastando fast y slow."
+      },
+      {
+       "gl": "Asimilar o contraste ao final da palabra: a /ɡ/ sonora de dog fronte á /t/ xorda de cat.",
+       "es": "Asimilar el contraste al final de la palabra: la /ɡ/ sonora de dog frente a la /t/ sorda de cat."
+      }
+     ],
      "leccions": [
       {
        "id": "curso_0_2.T2.U5.1",
@@ -3799,6 +3987,20 @@
       "gl": "Espazos, recipientes e movemento rítmico",
       "es": "Espacios, recipientes y movimiento rítmico"
      },
+     "obxectivos": [
+      {
+       "gl": "Seguir as ordes de desprazarse e de marcar o ritmo co corpo ao oír go, stop e clap.",
+       "es": "Seguir las órdenes de desplazarse y de marcar el ritmo con el cuerpo al oír go, stop y clap."
+      },
+      {
+       "gl": "Meter e sacar cousas redondas (ball) en recipientes cúbicos pechados (box).",
+       "es": "Meter y sacar cosas redondas (ball) en recipientes cúbicos cerrados (box)."
+      },
+      {
+       "gl": "Sentir o peso manipulando caixas con cargas distintas (heavy e light).",
+       "es": "Sentir el peso manipulando cajas con cargas distintas (heavy y light)."
+      }
+     ],
      "leccions": [
       {
        "id": "curso_0_2.T2.U6.1",
@@ -4266,6 +4468,20 @@
       "gl": "O recuncho da auga e a exploración líquida",
       "es": "El rincón del agua y la exploración líquida"
      },
+     "obxectivos": [
+      {
+       "gl": "Reaccionar co corpo, cun salto e batendo na auga de forma coordinada, ás ordes splash e stop.",
+       "es": "Reaccionar con el cuerpo, con un salto y chapoteando de forma coordinada, a las órdenes splash y stop."
+      },
+      {
+       "gl": "Identificar e coller coas mans water e boat nas cubetas de auga cando a persoa adulta o pide de palabra.",
+       "es": "Identificar y coger con las manos water y boat en las cubetas de agua cuando la persona adulta lo pide de palabra."
+      },
+      {
+       "gl": "Distinguir polo tacto e co corpo a sensación de wet e de dry, con toallas e esponxas.",
+       "es": "Distinguir por el tacto y con el cuerpo la sensación de wet y de dry, con toallas y esponjas."
+      }
+     ],
      "leccions": [
       {
        "id": "curso_2_3.T2.U1.1",
@@ -4932,8 +5148,8 @@
          "es": "Di el comienzo, «Splash, splash, splash in the water! And...…», y deja el hueco. Si lo completa con el cuerpo o con una palabra, celébralo y di la frase entera."
         },
         "mans": {
-         "gl": "Sinala ou colle o que nomeas: auga.",
-         "es": "Señala o coge lo que nombras: agua."
+         "gl": "Bater na auga coas mans abertas.",
+         "es": "Chapotear en el agua con las manos abiertas."
         },
         "esperaSegundos": 5,
         "nonPedir": {
@@ -5075,8 +5291,8 @@
          "es": "Di el comienzo, «Push the…», y deja el hueco. Si lo completa con el cuerpo o con una palabra, celébralo y di la frase entera."
         },
         "mans": {
-         "gl": "Sinala ou colle o que nomeas: auga.",
-         "es": "Señala o coge lo que nombras: agua."
+         "gl": "Sinala ou colle o que nomeas: barco.",
+         "es": "Señala o coge lo que nombras: barco."
         },
         "esperaSegundos": 5,
         "nonPedir": {
@@ -5125,6 +5341,24 @@
       "gl": "Tesouros da natureza e do chan",
       "es": "Tesoros de la naturaleza y del suelo"
      },
+     "obxectivos": [
+      {
+       "gl": "Agacharse a coller (pick up) e soltar deixando caer (drop) ao oír o sinal.",
+       "es": "Agacharse a recoger (pick up) y soltar dejando caer (drop) al oír la señal."
+      },
+      {
+       "gl": "Manipular e clasificar follas secas naturais (leaf) e pedras de río (stone).",
+       "es": "Manipular y clasificar hojas secas naturales (leaf) y piedras de río (stone)."
+      },
+      {
+       "gl": "Vivir co corpo e contrastar os tamaños grande e pequeno (big e small).",
+       "es": "Vivir con el cuerpo y contrastar los tamaños grande y pequeño (big y small)."
+      },
+      {
+       "gl": "Asimilar o contraste de duración entre a vogal longa /i/ (leaf) e a vogal breve /ɪ/ (big).",
+       "es": "Asimilar el contraste de duración entre la vocal larga /i/ (leaf) y la vocal breve /ɪ/ (big)."
+      }
+     ],
      "leccions": [
       {
        "id": "curso_2_3.T2.U2.1",
@@ -5828,8 +6062,8 @@
          "es": "Di el comienzo, «Pick up the leaf. Walk, walk... now drop it!…», y deja el hueco. Si lo completa con el cuerpo o con una palabra, celébralo y di la frase entera."
         },
         "mans": {
-         "gl": "Sinala ou colle o que nomeas: folla.",
-         "es": "Señala o coge lo que nombras: hoja."
+         "gl": "Agacharse ata o chan para coller as cousas.",
+         "es": "Agacharse hasta el suelo para recoger las cosas."
         },
         "esperaSegundos": 5,
         "nonPedir": {
@@ -5975,8 +6209,8 @@
          "es": "Di el comienzo, «Drop the stone:…», y deja el hueco. Si lo completa con el cuerpo o con una palabra, celébralo y di la frase entera."
         },
         "mans": {
-         "gl": "Sinala ou colle o que nomeas: folla.",
-         "es": "Señala o coge lo que nombras: hoja."
+         "gl": "Abrir as mans á altura dos ombros e deixar que a cousa caia con forza ao chan.",
+         "es": "Abrir las manos a la altura de los hombros y dejar que la cosa caiga con fuerza al suelo."
         },
         "esperaSegundos": 5,
         "nonPedir": {
@@ -6025,6 +6259,24 @@
       "gl": "Texturas, sabores e alimentación saudable",
       "es": "Texturas, sabores y alimentación saludable"
      },
+     "obxectivos": [
+      {
+       "gl": "Facer xestos coordinados de mastigar e de tragar de mentira ao oír as ordes bite e eat.",
+       "es": "Hacer gestos coordinados de masticar y de tragar de mentira al oír las órdenes bite y eat."
+      },
+      {
+       "gl": "Distinguir polo tacto e polo gusto a froita fresca (apple) do alimento cocido no forno (bread).",
+       "es": "Distinguir por el tacto y por el gusto la fruta fresca (apple) del alimento horneado (bread)."
+      },
+      {
+       "gl": "Recoñecer co tacto o morno e o frío, distinguindo warm de cold.",
+       "es": "Reconocer con el tacto lo templado y lo frío, distinguiendo warm de cold."
+      },
+      {
+       "gl": "Distinguir de oído a vogal aberta anterior non redondeada /æ/ (apple) das vogais centrais do castelán.",
+       "es": "Distinguir de oído la vocal abierta anterior no redondeada /æ/ (apple) de las vocales centrales del castellano."
+      }
+     ],
      "leccions": [
       {
        "id": "curso_2_3.T2.U3.1",
@@ -6716,8 +6968,8 @@
          "es": "Di el comienzo, «Mmm, warm and…», y deja el hueco. Si lo completa con el cuerpo o con una palabra, celébralo y di la frase entera."
         },
         "mans": {
-         "gl": "Sinala ou colle o que nomeas: mazá.",
-         "es": "Señala o coge lo que nombras: manzana."
+         "gl": "Abrazarse o peito, coma quen está quentiño.",
+         "es": "Abrazarse el pecho, como quien está calentito."
         },
         "esperaSegundos": 5,
         "nonPedir": {
@@ -6859,8 +7111,8 @@
          "es": "Di el comienzo, «Bite the apple! Mmm, yummy…», y deja el hueco. Si lo completa con el cuerpo o con una palabra, celébralo y di la frase entera."
         },
         "mans": {
-         "gl": "Sinala ou colle o que nomeas: mazá.",
-         "es": "Señala o coge lo que nombras: manzana."
+         "gl": "Facer como que se dá unha trabada grande, abrindo e pechando a boca e batendo os dentes.",
+         "es": "Hacer como que se da un mordisco grande, abriendo y cerrando la boca y chocando los dientes."
         },
         "esperaSegundos": 5,
         "nonPedir": {
@@ -6909,6 +7161,24 @@
       "gl": "O corpo, o xabón e o coidado persoal",
       "es": "El cuerpo, el jabón y el cuidado personal"
      },
+     "obxectivos": [
+      {
+       "gl": "Seguir as ordes de fregar e lavar o corpo ao oír wash e rub.",
+       "es": "Seguir las órdenes de frotar y lavar el cuerpo al oír wash y rub."
+      },
+      {
+       "gl": "Manipular o xabón (soap) e asociar el e o tacto da toalla (towel) á rutina de hixiene da aula.",
+       "es": "Manipular el jabón (soap) y asociarlo, junto con el tacto de la toalla (towel), a la rutina de higiene del aula."
+      },
+      {
+       "gl": "Sentir co tacto o que é soft fronte a superficies rugosas.",
+       "es": "Sentir con el tacto lo que es soft frente a superficies rugosas."
+      },
+      {
+       "gl": "Percibir a vogal central breve /ʌ/ (rub) distinguíndoa da /ɑ/ aberta (wash), próxima á /a/ do galego e do castelán.",
+       "es": "Percibir la vocal central breve /ʌ/ (rub) distinguiéndola de la /ɑ/ abierta (wash), cercana a la /a/ del gallego y del castellano."
+      }
+     ],
      "leccions": [
       {
        "id": "curso_2_3.T2.U4.1",
@@ -7481,8 +7751,8 @@
          "es": "Di el comienzo, «Baby is dirty! Let's get the soap. Smell the…», y deja el hueco. Si lo completa con el cuerpo o con una palabra, celébralo y di la frase entera."
         },
         "mans": {
-         "gl": "Fregar as palmas das mans facendo círculos sen parar.",
-         "es": "Frotarse las palmas de las manos haciendo círculos sin parar."
+         "gl": "Sinala ou colle o que nomeas: xabón.",
+         "es": "Señala o coge lo que nombras: jabón."
         },
         "esperaSegundos": 5,
         "nonPedir": {
@@ -7745,8 +8015,8 @@
          "es": "Di el comienzo, «Dry with the towel. Feel how soft it is. Soft towel on your…», y deja el hueco. Si lo completa con el cuerpo o con una palabra, celébralo y di la frase entera."
         },
         "mans": {
-         "gl": "Fregar as palmas das mans facendo círculos sen parar.",
-         "es": "Frotarse las palmas de las manos haciendo círculos sin parar."
+         "gl": "Tocar as meixelas suavemente.",
+         "es": "Tocarse las mejillas suavemente."
         },
         "esperaSegundos": 5,
         "nonPedir": {
@@ -7795,6 +8065,24 @@
       "gl": "Animais en movemento, carreira e calma",
       "es": "Animales en movimiento, carrera y calma"
      },
+     "obxectivos": [
+      {
+       "gl": "Regular o movemento de todo o corpo alternando a carreira rápida (run) e a quietude (sleep / stop).",
+       "es": "Regular el movimiento de todo el cuerpo alternando la carrera rápida (run) y la quietud (sleep / stop)."
+      },
+      {
+       "gl": "Emparellar figuras de animais de todos os días (cat, dog) cos seus sons e cos seus movementos.",
+       "es": "Emparejar figuras de animales de todos los días (cat, dog) con sus sonidos y con sus movimientos."
+      },
+      {
+       "gl": "Interiorizar a velocidade, contrastando fast e slow.",
+       "es": "Interiorizar la velocidad, contrastando fast y slow."
+      },
+      {
+       "gl": "Asimilar o contraste ao final da palabra: a /ɡ/ sonora de dog fronte á /t/ xorda de cat.",
+       "es": "Asimilar el contraste al final de la palabra: la /ɡ/ sonora de dog frente a la /t/ sorda de cat."
+      }
+     ],
      "leccions": [
       {
        "id": "curso_2_3.T2.U5.1",
@@ -8200,6 +8488,20 @@
       "gl": "Espazos, recipientes e movemento rítmico",
       "es": "Espacios, recipientes y movimiento rítmico"
      },
+     "obxectivos": [
+      {
+       "gl": "Seguir as ordes de desprazarse e de marcar o ritmo co corpo ao oír go, stop e clap.",
+       "es": "Seguir las órdenes de desplazarse y de marcar el ritmo con el cuerpo al oír go, stop y clap."
+      },
+      {
+       "gl": "Meter e sacar cousas redondas (ball) en recipientes cúbicos pechados (box).",
+       "es": "Meter y sacar cosas redondas (ball) en recipientes cúbicos cerrados (box)."
+      },
+      {
+       "gl": "Sentir o peso manipulando caixas con cargas distintas (heavy e light).",
+       "es": "Sentir el peso manipulando cajas con cargas distintas (heavy y light)."
+      }
+     ],
      "leccions": [
       {
        "id": "curso_2_3.T2.U6.1",
@@ -8683,6 +8985,24 @@
       "gl": "Construtores en acción e relacións espaciais",
       "es": "Constructores en acción y relaciones espaciales"
      },
+     "obxectivos": [
+      {
+       "gl": "Usar de forma verbal e espontánea as fórmulas de alternancia no xogo «My turn» e «Your turn» ao amorear e pasar bloques de madeira.",
+       "es": "Usar de forma verbal y espontánea las fórmulas de alternancia en el juego «My turn» y «Your turn» al apilar y pasar bloques de madera."
+      },
+      {
+       "gl": "Executar instrucións motrices complexas coas preposicións espaciais in, on, under, colocando obxectos en estruturas.",
+       "es": "Ejecutar instrucciones motrices complejas con las preposiciones espaciales in, on, under, colocando objetos en estructuras."
+      },
+      {
+       "gl": "Responder a preguntas de identificación causal primaria cun xesto ou cunha resposta telegráfica ante a pregunta «Why did it fall?».",
+       "es": "Responder a preguntas de identificación causal primaria con un gesto o con una respuesta telegráfica ante la pregunta «Why did it fall?»."
+      },
+      {
+       "gl": "Discriminar de oído a aliteración co fonema bilabial sonoro /b/ coa rima motriz «Big blue blocks build bridges».",
+       "es": "Discriminar de oído la aliteración con el fonema bilabial sonoro /b/ con la rima motriz «Big blue blocks build bridges»."
+      }
+     ],
      "leccions": [
       {
        "id": "curso_3_4.T3.U3.1.1",
@@ -9872,8 +10192,8 @@
          "es": "Di el comienzo, «Why did it…», y deja el hueco. Si lo completa con el cuerpo o con una palabra, celébralo y di la frase entera."
         },
         "mans": {
-         "gl": "Sinala ou colle o que nomeas: bloque.",
-         "es": "Señala o coge lo que nombras: bloque."
+         "gl": "Sinala ou colle o que nomeas: caer.",
+         "es": "Señala o coge lo que nombras: caer."
         },
         "esperaSegundos": 5,
         "nonPedir": {
@@ -10070,8 +10390,8 @@
          "es": "Di el comienzo, «Help me,…», y deja el hueco. Si lo completa con el cuerpo o con una palabra, celébralo y di la frase entera."
         },
         "mans": {
-         "gl": "Sinala ou colle o que nomeas: facer.",
-         "es": "Señala o coge lo que nombras: hacer."
+         "gl": "Acompáñaa dun xesto claro: dar, recibir ou sinalar a quen lle toca.",
+         "es": "Acompáñala de un gesto claro: dar, recibir o señalar a quien le toca."
         },
         "esperaSegundos": 5,
         "nonPedir": {
@@ -10268,8 +10588,8 @@
          "es": "Di el comienzo, «Do you need this tall…», y deja el hueco. Si lo completa con el cuerpo o con una palabra, celébralo y di la frase entera."
         },
         "mans": {
-         "gl": "Sinala ou colle o que nomeas: empurrar.",
-         "es": "Señala o coge lo que nombras: empujar."
+         "gl": "Sinala ou colle o que nomeas: bloque.",
+         "es": "Señala o coge lo que nombras: bloque."
         },
         "esperaSegundos": 5,
         "nonPedir": {
@@ -10466,8 +10786,8 @@
          "es": "Di el comienzo, «Let's share! First my turn, then your…», y deja el hueco. Si lo completa con el cuerpo o con una palabra, celébralo y di la frase entera."
         },
         "mans": {
-         "gl": "Sinala ou colle o que nomeas: tren.",
-         "es": "Señala o coge lo que nombras: tren."
+         "gl": "Acompáñaa dun xesto claro: dar, recibir ou sinalar a quen lle toca.",
+         "es": "Acompáñala de un gesto claro: dar, recibir o señalar a quien le toca."
         },
         "esperaSegundos": 5,
         "nonPedir": {
@@ -10862,8 +11182,8 @@
          "es": "Di el comienzo, «Do you need this tall…», y deja el hueco. Si lo completa con el cuerpo o con una palabra, celébralo y di la frase entera."
         },
         "mans": {
-         "gl": "Sinala ou colle o que nomeas: reconstruír.",
-         "es": "Señala o coge lo que nombras: reconstruir."
+         "gl": "Sinala ou colle o que nomeas: bloque.",
+         "es": "Señala o coge lo que nombras: bloque."
         },
         "esperaSegundos": 5,
         "nonPedir": {
@@ -11456,8 +11776,8 @@
          "es": "Di el comienzo, «Do you need this tall…», y deja el hueco. Si lo completa con el cuerpo o con una palabra, celébralo y di la frase entera."
         },
         "mans": {
-         "gl": "Ten na man aquilo do que falas e ensínallo mentres o dis.",
-         "es": "Ten en la mano aquello de lo que hablas y enséñaselo mientras lo dices."
+         "gl": "Sinala ou colle o que nomeas: bloque.",
+         "es": "Señala o coge lo que nombras: bloque."
         },
         "esperaSegundos": 5,
         "nonPedir": {
@@ -11654,8 +11974,8 @@
          "es": "Di el comienzo, «Help me,…», y deja el hueco. Si lo completa con el cuerpo o con una palabra, celébralo y di la frase entera."
         },
         "mans": {
-         "gl": "Sinala ou colle o que nomeas: cunca.",
-         "es": "Señala o coge lo que nombras: taza."
+         "gl": "Acompáñaa dun xesto claro: dar, recibir ou sinalar a quen lle toca.",
+         "es": "Acompáñala de un gesto claro: dar, recibir o señalar a quien le toca."
         },
         "esperaSegundos": 5,
         "nonPedir": {
@@ -12050,8 +12370,8 @@
          "es": "Di el comienzo, «Let's share! First my turn, then your…», y deja el hueco. Si lo completa con el cuerpo o con una palabra, celébralo y di la frase entera."
         },
         "mans": {
-         "gl": "Ten na man aquilo do que falas e ensínallo mentres o dis.",
-         "es": "Ten en la mano aquello de lo que hablas y enséñaselo mientras lo dices."
+         "gl": "Acompáñaa dun xesto claro: dar, recibir ou sinalar a quen lle toca.",
+         "es": "Acompáñala de un gesto claro: dar, recibir o señalar a quien le toca."
         },
         "esperaSegundos": 5,
         "nonPedir": {
@@ -12100,6 +12420,24 @@
       "gl": "O restaurante da aula e a rutina de servir",
       "es": "El restaurante del aula y la rutina de servir"
      },
+     "obxectivos": [
+      {
+       "gl": "Producir a fórmula social de entrega «Here you are» e a fórmula de cortesía de quen recibe «Thank you» en intercambios reais de alimentos simulados.",
+       "es": "Producir la fórmula social de entrega «Here you are» y la fórmula de cortesía de quien recibe «Thank you» en intercambios reales de alimentos simulados."
+      },
+      {
+       "gl": "Usar ben as preposicións in (para o contido de xerras e pratos fondos) e on (para a superficie de mesas e bandexas).",
+       "es": "Usar bien las preposiciones in (para el contenido de jarras y platos hondos) y on (para la superficie de mesas y bandejas)."
+      },
+      {
+       "gl": "Construír enunciados declarativos de petición co modelo «I want [nome], please».",
+       "es": "Construir enunciados declarativos de petición con el modelo «I want [sustantivo], please»."
+      },
+      {
+       "gl": "Identificar a rima final simple en patróns silábicos CVC (Pan – Can – Man).",
+       "es": "Identificar la rima final simple en patrones silábicos CVC (Pan – Can – Man)."
+      }
+     ],
      "leccions": [
       {
        "id": "curso_3_4.T3.U3.2.1",
@@ -12977,8 +13315,8 @@
          "es": "Di el comienzo, «Pour the soup in the plate. Here you are! Thank…», y deja el hueco. Si lo completa con el cuerpo o con una palabra, celébralo y di la frase entera."
         },
         "mans": {
-         "gl": "Sinala ou colle o que nomeas: cheo.",
-         "es": "Señala o coge lo que nombras: lleno."
+         "gl": "Sinala ou colle o que nomeas: verter.",
+         "es": "Señala o coge lo que nombras: verter."
         },
         "esperaSegundos": 5,
         "nonPedir": {
@@ -13522,8 +13860,8 @@
          "es": "Di el comienzo, «Good morning! I am very hungry. Can I have some soup,…», y deja el hueco. Si lo completa con el cuerpo o con una palabra, celébralo y di la frase entera."
         },
         "mans": {
-         "gl": "Sinala ou colle o que nomeas: pan.",
-         "es": "Señala o coge lo que nombras: pan."
+         "gl": "Sinala ou colle o que nomeas: con fame.",
+         "es": "Señala o coge lo que nombras: con hambre."
         },
         "esperaSegundos": 5,
         "nonPedir": {
@@ -13715,8 +14053,8 @@
          "es": "Di el comienzo, «Pour the soup in the plate. Here you are! Thank…», y deja el hueco. Si lo completa con el cuerpo o con una palabra, celébralo y di la frase entera."
         },
         "mans": {
-         "gl": "Sinala ou colle o que nomeas: cheo.",
-         "es": "Señala o coge lo que nombras: lleno."
+         "gl": "Sinala ou colle o que nomeas: verter.",
+         "es": "Señala o coge lo que nombras: verter."
         },
         "esperaSegundos": 5,
         "nonPedir": {
@@ -14101,8 +14439,8 @@
          "es": "Di el comienzo, «Good morning! I am very hungry. Can I have some soup,…», y deja el hueco. Si lo completa con el cuerpo o con una palabra, celébralo y di la frase entera."
         },
         "mans": {
-         "gl": "Acompáñaa dun xesto claro: dar, recibir ou sinalar a quen lle toca.",
-         "es": "Acompáñala de un gesto claro: dar, recibir o señalar a quien le toca."
+         "gl": "Sinala ou colle o que nomeas: con fame.",
+         "es": "Señala o coge lo que nombras: con hambre."
         },
         "esperaSegundos": 5,
         "nonPedir": {
@@ -14294,8 +14632,8 @@
          "es": "Di el comienzo, «Pour the soup in the plate. Here you are! Thank…», y deja el hueco. Si lo completa con el cuerpo o con una palabra, celébralo y di la frase entera."
         },
         "mans": {
-         "gl": "Ten na man aquilo do que falas e ensínallo mentres o dis.",
-         "es": "Ten en la mano aquello de lo que hablas y enséñaselo mientras lo dices."
+         "gl": "Sinala ou colle o que nomeas: prato.",
+         "es": "Señala o coge lo que nombras: plato."
         },
         "esperaSegundos": 5,
         "nonPedir": {
@@ -14487,8 +14825,8 @@
          "es": "Di el comienzo, «Can you pass the bread? Here you are! Thank…», y deja el hueco. Si lo completa con el cuerpo o con una palabra, celébralo y di la frase entera."
         },
         "mans": {
-         "gl": "Sinala ou colle o que nomeas: zume.",
-         "es": "Señala o coge lo que nombras: zumo."
+         "gl": "Acompáñaa dun xesto claro: dar, recibir ou sinalar a quen lle toca.",
+         "es": "Acompáñala de un gesto claro: dar, recibir o señalar a quien le toca."
         },
         "esperaSegundos": 5,
         "nonPedir": {
@@ -14680,8 +15018,8 @@
          "es": "Di el comienzo, «Pour the soup in the plate. Here you are! Thank…», y deja el hueco. Si lo completa con el cuerpo o con una palabra, celébralo y di la frase entera."
         },
         "mans": {
-         "gl": "Sinala ou colle o que nomeas: baleiro.",
-         "es": "Señala o coge lo que nombras: vacío."
+         "gl": "Sinala ou colle o que nomeas: verter.",
+         "es": "Señala o coge lo que nombras: verter."
         },
         "esperaSegundos": 5,
         "nonPedir": {
@@ -15259,8 +15597,8 @@
          "es": "Di el comienzo, «Pour the soup in the plate. Here you are! Thank…», y deja el hueco. Si lo completa con el cuerpo o con una palabra, celébralo y di la frase entera."
         },
         "mans": {
-         "gl": "Sinala ou colle o que nomeas: cheo.",
-         "es": "Señala o coge lo que nombras: lleno."
+         "gl": "Sinala ou colle o que nomeas: verter.",
+         "es": "Señala o coge lo que nombras: verter."
         },
         "esperaSegundos": 5,
         "nonPedir": {
@@ -15568,6 +15906,24 @@
       "gl": "A clínica veterinaria e a causalidade fisiolóxica",
       "es": "La clínica veterinaria y la causalidad fisiológica"
      },
+     "obxectivos": [
+      {
+       "gl": "Formular explicacións causais con conectores subordinados («The puppy is crying because his leg is hurt»).",
+       "es": "Formular explicaciones causales con conectores subordinados («The puppy is crying because his leg is hurt»)."
+      },
+      {
+       "gl": "Interpretar e aplicar as preposicións de posición tridimensional behind e in front of.",
+       "es": "Interpretar y aplicar las preposiciones de posición tridimensional behind e in front of."
+      },
+      {
+       "gl": "Negociar papeis e coordinar accións de ficción compartida con «Let's pretend I am the vet and you are the puppy».",
+       "es": "Negociar papeles y coordinar acciones de ficción compartida con «Let's pretend I am the vet and you are the puppy»."
+      },
+      {
+       "gl": "Identificar de oído a aliteración sibilante fricativa /s/ («Seven sick snakes sleep softly»).",
+       "es": "Identificar de oído la aliteración sibilante fricativa /s/ («Seven sick snakes sleep softly»)."
+      }
+     ],
      "leccions": [
       {
        "id": "curso_4_5.T3.U4.1.1",
@@ -16071,8 +16427,8 @@
          "es": "Junta la frase de esta semana con la de la semana pasada en un juego corto: «Yes! His paw is hurt because he fell down. Let's put a soft bandage on it.» y, después, «gentle»."
         },
         "mans": {
-         "gl": "Acompáñaa dun xesto claro: dar, recibir ou sinalar a quen lle toca.",
-         "es": "Acompáñala de un gesto claro: dar, recibir o señalar a quien le toca."
+         "gl": "Sinala ou colle o que nomeas: venda.",
+         "es": "Señala o coge lo que nombras: venda."
         },
         "esperaSegundos": 5,
         "nonPedir": {
@@ -16904,8 +17260,8 @@
          "es": "Di el comienzo, «Yes! His paw is hurt because he fell down. Let's put a soft bandage on…», y deja el hueco. Si lo completa con el cuerpo o con una palabra, celébralo y di la frase entera."
         },
         "mans": {
-         "gl": "Sinala ou colle o que nomeas: doutor / veterinario.",
-         "es": "Señala o coge lo que nombras: doctor / veterinario."
+         "gl": "Sinala ou colle o que nomeas: venda.",
+         "es": "Señala o coge lo que nombras: venda."
         },
         "esperaSegundos": 5,
         "nonPedir": {
@@ -17097,8 +17453,8 @@
          "es": "Di el comienzo, «Doctor! The dog is sad. Why is he…», y deja el hueco. Si lo completa con el cuerpo o con una palabra, celébralo y di la frase entera."
         },
         "mans": {
-         "gl": "Sinala ou colle o que nomeas: san.",
-         "es": "Señala o coge lo que nombras: sano."
+         "gl": "Sinala ou colle o que nomeas: can.",
+         "es": "Señala o coge lo que nombras: perro."
         },
         "esperaSegundos": 5,
         "nonPedir": {
@@ -17290,8 +17646,8 @@
          "es": "Di el comienzo, «Yes! His paw is hurt because he fell down. Let's put a soft bandage on…», y deja el hueco. Si lo completa con el cuerpo o con una palabra, celébralo y di la frase entera."
         },
         "mans": {
-         "gl": "Acompáñaa dun xesto claro: dar, recibir ou sinalar a quen lle toca.",
-         "es": "Acompáñala de un gesto claro: dar, recibir o señalar a quien le toca."
+         "gl": "Sinala ou colle o que nomeas: doer, facer dano.",
+         "es": "Señala o coge lo que nombras: doler, hacer daño."
         },
         "esperaSegundos": 5,
         "nonPedir": {
@@ -17483,8 +17839,8 @@
          "es": "Di el comienzo, «Yes! His paw is hurt because he fell down. Let's put a soft bandage on…», y deja el hueco. Si lo completa con el cuerpo o con una palabra, celébralo y di la frase entera."
         },
         "mans": {
-         "gl": "Acompáñaa dun xesto claro: dar, recibir ou sinalar a quen lle toca.",
-         "es": "Acompáñala de un gesto claro: dar, recibir o señalar a quien le toca."
+         "gl": "Sinala ou colle o que nomeas: venda.",
+         "es": "Señala o coge lo que nombras: venda."
         },
         "esperaSegundos": 5,
         "nonPedir": {
@@ -17676,8 +18032,8 @@
          "es": "Di el comienzo, «Yes! His paw is hurt because he fell down. Let's put a soft bandage on…», y deja el hueco. Si lo completa con el cuerpo o con una palabra, celébralo y di la frase entera."
         },
         "mans": {
-         "gl": "Ten na man aquilo do que falas e ensínallo mentres o dis.",
-         "es": "Ten en la mano aquello de lo que hablas y enséñaselo mientras lo dices."
+         "gl": "Sinala ou colle o que nomeas: doer, facer dano.",
+         "es": "Señala o coge lo que nombras: doler, hacer daño."
         },
         "esperaSegundos": 5,
         "nonPedir": {
@@ -17869,8 +18225,8 @@
          "es": "Di el comienzo, «Yes! His paw is hurt because he fell down. Let's put a soft bandage on…», y deja el hueco. Si lo completa con el cuerpo o con una palabra, celébralo y di la frase entera."
         },
         "mans": {
-         "gl": "Sinala ou colle o que nomeas: perna.",
-         "es": "Señala o coge lo que nombras: pierna."
+         "gl": "Sinala ou colle o que nomeas: venda.",
+         "es": "Señala o coge lo que nombras: venda."
         },
         "esperaSegundos": 5,
         "nonPedir": {
@@ -18448,8 +18804,8 @@
          "es": "Di el comienzo, «Yes! His paw is hurt because he fell down. Let's put a soft bandage on…», y deja el hueco. Si lo completa con el cuerpo o con una palabra, celébralo y di la frase entera."
         },
         "mans": {
-         "gl": "Sinala ou colle o que nomeas: doutor / veterinario.",
-         "es": "Señala o coge lo que nombras: doctor / veterinario."
+         "gl": "Sinala ou colle o que nomeas: venda.",
+         "es": "Señala o coge lo que nombras: venda."
         },
         "esperaSegundos": 5,
         "nonPedir": {
@@ -18641,8 +18997,8 @@
          "es": "Di el comienzo, «Doctor! The dog is sad. Why is he…», y deja el hueco. Si lo completa con el cuerpo o con una palabra, celébralo y di la frase entera."
         },
         "mans": {
-         "gl": "Sinala ou colle o que nomeas: san.",
-         "es": "Señala o coge lo que nombras: sano."
+         "gl": "Sinala ou colle o que nomeas: can.",
+         "es": "Señala o coge lo que nombras: perro."
         },
         "esperaSegundos": 5,
         "nonPedir": {
@@ -18834,8 +19190,8 @@
          "es": "Di el comienzo, «Yes! His paw is hurt because he fell down. Let's put a soft bandage on…», y deja el hueco. Si lo completa con el cuerpo o con una palabra, celébralo y di la frase entera."
         },
         "mans": {
-         "gl": "Acompáñaa dun xesto claro: dar, recibir ou sinalar a quen lle toca.",
-         "es": "Acompáñala de un gesto claro: dar, recibir o señalar a quien le toca."
+         "gl": "Sinala ou colle o que nomeas: doer, facer dano.",
+         "es": "Señala o coge lo que nombras: doler, hacer daño."
         },
         "esperaSegundos": 5,
         "nonPedir": {
@@ -18884,6 +19240,24 @@
       "gl": "A estación meteorolóxica e a roupa do explorador",
       "es": "La estación meteorológica y la ropa del explorador"
      },
+     "obxectivos": [
+      {
+       "gl": "Xustificar a escolla de roupa de abrigo e calzado segundo un tempo simulado («I put on my boots because it is raining outside»).",
+       "es": "Justificar la elección de ropa de abrigo y calzado según un tiempo simulado («I put on my boots because it is raining outside»)."
+      },
+      {
+       "gl": "Usar preposicións espaciais dinámicas (into, out of, over).",
+       "es": "Usar preposiciones espaciales dinámicas (into, out of, over)."
+      },
+      {
+       "gl": "Negociar o uso compartido do equipamento de exterior con fórmulas de colaboración («Let's share the umbrella»).",
+       "es": "Negociar el uso compartido del equipamiento de exterior con fórmulas de colaboración («Let's share the umbrella»)."
+      },
+      {
+       "gl": "Discriminar de oído a aliteración coa vogal curta aberta /æ/ fronte a consoantes en rimas do tempo.",
+       "es": "Discriminar de oído la aliteración con la vocal corta abierta /æ/ frente a consonantes en rimas del tiempo."
+      }
+     ],
      "leccions": [
       {
        "id": "curso_4_5.T3.U4.2.1",
@@ -19468,8 +19842,8 @@
          "es": "Junta la frase de esta semana con la de la semana pasada en un juego corto: «Listen! A stormy day! Put on your yellow boots! Why do we need boots?» y, después, «windy»."
         },
         "mans": {
-         "gl": "Acompáñaa dun xesto claro: dar, recibir ou sinalar a quen lle toca.",
-         "es": "Acompáñala de un gesto claro: dar, recibir o señalar a quien le toca."
+         "gl": "Sinala ou colle o que nomeas: de treboada.",
+         "es": "Señala o coge lo que nombras: de tormenta."
         },
         "esperaSegundos": 5,
         "nonPedir": {
@@ -20108,8 +20482,8 @@
          "es": "Di el comienzo, «Listen! A stormy day! Put on your yellow boots! Why do we need…», y deja el hueco. Si lo completa con el cuerpo o con una palabra, celébralo y di la frase entera."
         },
         "mans": {
-         "gl": "Sinala ou colle o que nomeas: choiva.",
-         "es": "Señala o coge lo que nombras: lluvia."
+         "gl": "Sinala ou colle o que nomeas: botas.",
+         "es": "Señala o coge lo que nombras: botas."
         },
         "esperaSegundos": 5,
         "nonPedir": {
@@ -20301,8 +20675,8 @@
          "es": "Di el comienzo, «Listen! A stormy day! Put on your yellow boots! Why do we need…», y deja el hueco. Si lo completa con el cuerpo o con una palabra, celébralo y di la frase entera."
         },
         "mans": {
-         "gl": "Sinala ou colle o que nomeas: sombreiro.",
-         "es": "Señala o coge lo que nombras: sombrero."
+         "gl": "Sinala ou colle o que nomeas: de treboada.",
+         "es": "Señala o coge lo que nombras: de tormenta."
         },
         "esperaSegundos": 5,
         "nonPedir": {
@@ -20687,8 +21061,8 @@
          "es": "Di el comienzo, «What is happening to the sky today? What clothes should we…», y deja el hueco. Si lo completa con el cuerpo o con una palabra, celébralo y di la frase entera."
         },
         "mans": {
-         "gl": "Acompáñaa dun xesto claro: dar, recibir ou sinalar a quen lle toca.",
-         "es": "Acompáñala de un gesto claro: dar, recibir o señalar a quien le toca."
+         "gl": "Sinala ou colle o que nomeas: sombreiro.",
+         "es": "Señala o coge lo que nombras: sombrero."
         },
         "esperaSegundos": 5,
         "nonPedir": {
@@ -20880,8 +21254,8 @@
          "es": "Di el comienzo, «Listen! A stormy day! Put on your yellow boots! Why do we need…», y deja el hueco. Si lo completa con el cuerpo o con una palabra, celébralo y di la frase entera."
         },
         "mans": {
-         "gl": "Acompáñaa dun xesto claro: dar, recibir ou sinalar a quen lle toca.",
-         "es": "Acompáñala de un gesto claro: dar, recibir o señalar a quien le toca."
+         "gl": "Sinala ou colle o que nomeas: de treboada.",
+         "es": "Señala o coge lo que nombras: de tormenta."
         },
         "esperaSegundos": 5,
         "nonPedir": {
@@ -21266,8 +21640,8 @@
          "es": "Di el comienzo, «What is happening to the sky today? What clothes should we…», y deja el hueco. Si lo completa con el cuerpo o con una palabra, celébralo y di la frase entera."
         },
         "mans": {
-         "gl": "Sinala ou colle o que nomeas: botas.",
-         "es": "Señala o coge lo que nombras: botas."
+         "gl": "Sinala ou colle o que nomeas: sombreiro.",
+         "es": "Señala o coge lo que nombras: sombrero."
         },
         "esperaSegundos": 5,
         "nonPedir": {
@@ -21652,8 +22026,8 @@
          "es": "Di el comienzo, «Listen! A stormy day! Put on your yellow boots! Why do we need…», y deja el hueco. Si lo completa con el cuerpo o con una palabra, celébralo y di la frase entera."
         },
         "mans": {
-         "gl": "Sinala ou colle o que nomeas: choiva.",
-         "es": "Señala o coge lo que nombras: lluvia."
+         "gl": "Sinala ou colle o que nomeas: botas.",
+         "es": "Señala o coge lo que nombras: botas."
         },
         "esperaSegundos": 5,
         "nonPedir": {
@@ -22231,8 +22605,8 @@
          "es": "Di el comienzo, «That's right, because the water is deep and wet! Let's jump over the…», y deja el hueco. Si lo completa con el cuerpo o con una palabra, celébralo y di la frase entera."
         },
         "mans": {
-         "gl": "Acompáñaa dun xesto claro: dar, recibir ou sinalar a quen lle toca.",
-         "es": "Acompáñala de un gesto claro: dar, recibir o señalar a quien le toca."
+         "gl": "Sinala ou colle o que nomeas: sombreiro.",
+         "es": "Señala o coge lo que nombras: sombrero."
         },
         "esperaSegundos": 5,
         "nonPedir": {
@@ -22347,6 +22721,24 @@
       "gl": "O estudio de arte cooperativo e a resolución de conflitos",
       "es": "El estudio de arte cooperativo y la resolución de conflictos"
      },
+     "obxectivos": [
+      {
+       "gl": "Empregar linguaxe argumentativa estruturada para resolver a posesión de materiais compartidos («I was using the scissors first, but you can have them next»).",
+       "es": "Emplear lenguaje argumentativo estructurado para resolver la posesión de materiales compartidos («I was using the scissors first, but you can have them next»)."
+      },
+      {
+       "gl": "Describir estados emocionais e atributos físicos con preposicións complexas: between, next to, across.",
+       "es": "Describir estados emocionales y atributos físicos con preposiciones complejas: between, next to, across."
+      },
+      {
+       "gl": "Construír oracións coordinadas de contraste («I like this painting, but it needs more red paint on top»).",
+       "es": "Construir oraciones coordinadas de contraste («I like this painting, but it needs more red paint on top»)."
+      },
+      {
+       "gl": "Manipular fonemas omitindo e substituíndo en xogo a consoante inicial de palabras CVC (cambiar /p/ de pen por /t/ dá ten).",
+       "es": "Manipular fonemas omitiendo y sustituyendo en juego la consonante inicial de palabras CVC (cambiar /p/ de pen por /t/ da ten)."
+      }
+     ],
      "leccions": [
       {
        "id": "curso_5_6.T3.U5.1.1",
@@ -23932,8 +24324,8 @@
          "es": "Di el comienzo, «Can I use the blue paint next to…», y deja el hueco. Si lo completa con el cuerpo o con una palabra, celébralo y di la frase entera."
         },
         "mans": {
-         "gl": "Sinala ou colle o que nomeas: mesturar.",
-         "es": "Señala o coge lo que nombras: mezclar."
+         "gl": "Sinala ou colle o que nomeas: pintura.",
+         "es": "Señala o coge lo que nombras: pintura."
         },
         "esperaSegundos": 5,
         "nonPedir": {
@@ -24526,8 +24918,8 @@
          "es": "Di el comienzo, «Can I use the blue paint next to…», y deja el hueco. Si lo completa con el cuerpo o con una palabra, celébralo y di la frase entera."
         },
         "mans": {
-         "gl": "Sinala ou colle o que nomeas: coidadoso.",
-         "es": "Señala o coge lo que nombras: cuidadoso."
+         "gl": "Sinala ou colle o que nomeas: pintura.",
+         "es": "Señala o coge lo que nombras: pintura."
         },
         "esperaSegundos": 5,
         "nonPedir": {
@@ -25120,8 +25512,8 @@
          "es": "Di el comienzo, «Can I use the blue paint next to…», y deja el hueco. Si lo completa con el cuerpo o con una palabra, celébralo y di la frase entera."
         },
         "mans": {
-         "gl": "Sinala ou colle o que nomeas: liso.",
-         "es": "Señala o coge lo que nombras: liso."
+         "gl": "Sinala ou colle o que nomeas: pintura.",
+         "es": "Señala o coge lo que nombras: pintura."
         },
         "esperaSegundos": 5,
         "nonPedir": {
@@ -25714,8 +26106,8 @@
          "es": "Di el comienzo, «Can I use the blue paint next to…», y deja el hueco. Si lo completa con el cuerpo o con una palabra, celébralo y di la frase entera."
         },
         "mans": {
-         "gl": "Ten na man aquilo do que falas e ensínallo mentres o dis.",
-         "es": "Ten en la mano aquello de lo que hablas y enséñaselo mientras lo dices."
+         "gl": "Sinala ou colle o que nomeas: pintura.",
+         "es": "Señala o coge lo que nombras: pintura."
         },
         "esperaSegundos": 5,
         "nonPedir": {
@@ -25764,6 +26156,24 @@
       "gl": "A axencia de viaxes e as aventuras do mapa",
       "es": "La agencia de viajes y las aventuras del mapa"
      },
+     "obxectivos": [
+      {
+       "gl": "Planificar itinerarios de ficción con conectores de secuencia temporal («First we fly by plane, then we take a bus across the mountains»).",
+       "es": "Planificar itinerarios ficticios con conectores de secuencia temporal («First we fly by plane, then we take a bus across the mountains»)."
+      },
+      {
+       "gl": "Describir localizacións xeográficas relativas en mapas tridimensionais con across, through, behind, next to.",
+       "es": "Describir localizaciones geográficas relativas en mapas tridimensionales con across, through, behind, next to."
+      },
+      {
+       "gl": "Formular preguntas complexas de indagación social («Where would you like to travel and why?»).",
+       "es": "Formular preguntas complejas de indagación social («Where would you like to travel and why?»)."
+      },
+      {
+       "gl": "Segmentar de oído palabras dunha sílaba illando cada fonema (boat: /b/-/oʊ/-/t/).",
+       "es": "Segmentar de oído palabras de una sílaba aislando cada fonema (boat: /b/-/oʊ/-/t/)."
+      }
+     ],
      "leccions": [
       {
        "id": "curso_5_6.T3.U5.2.1",
@@ -26641,8 +27051,8 @@
          "es": "Di el comienzo, «Do you remember which vehicle the explorers used when they crossed the wide…», y deja el hueco. Si lo completa con el cuerpo o con una palabra, celébralo y di la frase entera."
         },
         "mans": {
-         "gl": "Sinala ou colle o que nomeas: perigoso.",
-         "es": "Señala o coge lo que nombras: peligroso."
+         "gl": "Sinala ou colle o que nomeas: explorar.",
+         "es": "Señala o coge lo que nombras: explorar."
         },
         "esperaSegundos": 5,
         "nonPedir": {
@@ -27379,8 +27789,8 @@
          "es": "Di el comienzo, «Why by…», y deja el hueco. Si lo completa con el cuerpo o con una palabra, celébralo y di la frase entera."
         },
         "mans": {
-         "gl": "Sinala ou colle o que nomeas: perigoso.",
-         "es": "Señala o coge lo que nombras: peligroso."
+         "gl": "Sinala ou colle o que nomeas: avión.",
+         "es": "Señala o coge lo que nombras: avión."
         },
         "esperaSegundos": 5,
         "nonPedir": {
@@ -27572,8 +27982,8 @@
          "es": "Di el comienzo, «Wonderful! Please show your ticket to the…», y deja el hueco. Si lo completa con el cuerpo o con una palabra, celébralo y di la frase entera."
         },
         "mans": {
-         "gl": "Acompáñaa dun xesto claro: dar, recibir ou sinalar a quen lle toca.",
-         "es": "Acompáñala de un gesto claro: dar, recibir o señalar a quien le toca."
+         "gl": "Sinala ou colle o que nomeas: billete.",
+         "es": "Señala o coge lo que nombras: billete."
         },
         "esperaSegundos": 5,
         "nonPedir": {
@@ -27765,8 +28175,8 @@
          "es": "Di el comienzo, «Do you remember which vehicle the explorers used when they crossed the wide…», y deja el hueco. Si lo completa con el cuerpo o con una palabra, celébralo y di la frase entera."
         },
         "mans": {
-         "gl": "Acompáñaa dun xesto claro: dar, recibir ou sinalar a quen lle toca.",
-         "es": "Acompáñala de un gesto claro: dar, recibir o señalar a quien le toca."
+         "gl": "Sinala ou colle o que nomeas: explorar.",
+         "es": "Señala o coge lo que nombras: explorar."
         },
         "esperaSegundos": 5,
         "nonPedir": {
@@ -27958,8 +28368,8 @@
          "es": "Di el comienzo, «Why by…», y deja el hueco. Si lo completa con el cuerpo o con una palabra, celébralo y di la frase entera."
         },
         "mans": {
-         "gl": "Sinala ou colle o que nomeas: chegar.",
-         "es": "Señala o coge lo que nombras: llegar."
+         "gl": "Sinala ou colle o que nomeas: avión.",
+         "es": "Señala o coge lo que nombras: avión."
         },
         "esperaSegundos": 5,
         "nonPedir": {
@@ -28344,8 +28754,8 @@
          "es": "Di el comienzo, «Do you remember which vehicle the explorers used when they crossed the wide…», y deja el hueco. Si lo completa con el cuerpo o con una palabra, celébralo y di la frase entera."
         },
         "mans": {
-         "gl": "Sinala ou colle o que nomeas: pasaporte.",
-         "es": "Señala o coge lo que nombras: pasaporte."
+         "gl": "Sinala ou colle o que nomeas: explorar.",
+         "es": "Señala o coge lo que nombras: explorar."
         },
         "esperaSegundos": 5,
         "nonPedir": {
@@ -28923,8 +29333,8 @@
          "es": "Di el comienzo, «Why by…», y deja el hueco. Si lo completa con el cuerpo o con una palabra, celébralo y di la frase entera."
         },
         "mans": {
-         "gl": "Sinala ou colle o que nomeas: perigoso.",
-         "es": "Señala o coge lo que nombras: peligroso."
+         "gl": "Sinala ou colle o que nomeas: avión.",
+         "es": "Señala o coge lo que nombras: avión."
         },
         "esperaSegundos": 5,
         "nonPedir": {
@@ -29116,8 +29526,8 @@
          "es": "Di el comienzo, «Wonderful! Please show your ticket to the…», y deja el hueco. Si lo completa con el cuerpo o con una palabra, celébralo y di la frase entera."
         },
         "mans": {
-         "gl": "Acompáñaa dun xesto claro: dar, recibir ou sinalar a quen lle toca.",
-         "es": "Acompáñala de un gesto claro: dar, recibir o señalar a quien le toca."
+         "gl": "Sinala ou colle o que nomeas: billete.",
+         "es": "Señala o coge lo que nombras: billete."
         },
         "esperaSegundos": 5,
         "nonPedir": {
