@@ -14,6 +14,7 @@ import 'package:descubre_con_lua/core/localization/app_language.dart';
 import 'package:descubre_con_lua/core/storage/local_store.dart';
 import 'package:descubre_con_lua/core/theme/app_theme.dart';
 import 'package:descubre_con_lua/core/storage/calendario_store.dart';
+import 'package:descubre_con_lua/data/models/conto_dialogado_model.dart';
 import 'package:descubre_con_lua/data/models/leccion_model.dart';
 import 'package:descubre_con_lua/data/models/tpr_curriculum_scheduler.dart';
 import 'package:descubre_con_lua/data/repositories/calendario_repository.dart';
@@ -144,6 +145,8 @@ void main() {
     XogosFogar.sembrar(XogosFogar.fromRaw(ler(XogosFogar.assetPath)));
     SteamDoMes.sembrar(SteamDoMes.fromRaw(ler(SteamDoMes.assetPath)));
     Leccions.sembrar(Leccions.fromRaw(ler(Leccions.assetPath)));
+    BibliotecaDialogada.sembrar(BibliotecaDialogada.fromRaw(
+        [for (final f in BibliotecaDialogada.ficheiros) ler(f)]));
     Normativa.sembrar(Normativa.fromRaw(ler(Normativa.assetPath)));
     GuiaDeCasa.sembrar(GuiaDeCasa.fromRaw(
         ler(GuiaDeCasa.guiaAsset), ler(GuiaDeCasa.idadeAsset)));
