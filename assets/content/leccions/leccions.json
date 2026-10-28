@@ -207,6 +207,18 @@
        "es": "El rincón del agua y la exploración líquida"
       }
      },
+     "gramatica": {
+      "n": 10,
+      "nivel": "A1",
+      "titulo": {
+       "gl": "Can e o imperativo",
+       "es": "Can y el imperativo"
+      },
+      "paraFamilias": {
+       "gl": "Ordes e o que se pode facer: «Jump!», «Clap your hands!», «I can fly!».",
+       "es": "Órdenes y lo que se puede hacer: «Jump!», «Clap your hands!», «I can fly!»."
+      }
+     },
      "obxectivos": [
       {
        "gl": "Reaccionar co corpo, cun salto e batendo na auga de forma coordinada, ás ordes splash e stop.",
@@ -230,6 +242,11 @@
        "espera": {
         "gl": "Esta semana abonda con que o entenda co teu xesto.",
         "es": "Esta semana basta con que lo entienda con tu gesto."
+       },
+       "fraseGramatica": {
+        "en": "Clap!",
+        "gl": "Aplaude!",
+        "es": "¡Aplaude!"
        },
        "xaSabe": [],
        "novas": [
@@ -400,6 +417,11 @@
        "espera": {
         "gl": "Esta semana, que o faga sen que lle fagas o xesto.",
         "es": "Esta semana, que lo haga sin que le hagas el gesto."
+       },
+       "fraseGramatica": {
+        "en": "Splash!",
+        "gl": "Chapuza!",
+        "es": "¡Chapotea!"
        },
        "xaSabe": [
         {
@@ -613,6 +635,11 @@
        "espera": {
         "gl": "Esta semana, que o diga contigo, nunha rutina ou nunha canción.",
         "es": "Esta semana, que lo diga contigo, en una rutina o en una canción."
+       },
+       "fraseGramatica": {
+        "en": "Come up!",
+        "gl": "Arriba!",
+        "es": "¡Arriba!"
        },
        "xaSabe": [
         {
@@ -850,6 +877,11 @@
        "espera": {
         "gl": "Esta semana, que o use só, xogando, sen que llo pidas.",
         "es": "Esta semana, que lo use solo, jugando, sin que se lo pidas."
+       },
+       "fraseGramatica": {
+        "en": "Wave hello!",
+        "gl": "Di ola coa man!",
+        "es": "¡Di hola con la mano!"
        },
        "xaSabe": [
         {
@@ -1104,6 +1136,18 @@
        "es": "El rincón del agua y la exploración líquida"
       }
      },
+     "gramatica": {
+      "n": 10,
+      "nivel": "A1",
+      "titulo": {
+       "gl": "Can e o imperativo",
+       "es": "Can y el imperativo"
+      },
+      "paraFamilias": {
+       "gl": "Ordes e o que se pode facer: «Jump!», «Clap your hands!», «I can fly!».",
+       "es": "Órdenes y lo que se puede hacer: «Jump!», «Clap your hands!», «I can fly!»."
+      }
+     },
      "obxectivos": [
       {
        "gl": "Reaccionar co corpo, cun salto e batendo na auga de forma coordinada, ás ordes splash e stop.",
@@ -1127,6 +1171,11 @@
        "espera": {
         "gl": "Esta semana abonda con que o entenda co teu xesto.",
         "es": "Esta semana basta con que lo entienda con tu gesto."
+       },
+       "fraseGramatica": {
+        "en": "Touch your head!",
+        "gl": "Toca a cabeza!",
+        "es": "¡Tócate la cabeza!"
        },
        "xaSabe": [
         {
@@ -1403,6 +1452,11 @@
         "gl": "Esta semana, que o faga sen que lle fagas o xesto.",
         "es": "Esta semana, que lo haga sin que le hagas el gesto."
        },
+       "fraseGramatica": {
+        "en": "Wiggle your toes!",
+        "gl": "Move os dedos dos pés!",
+        "es": "¡Mueve los dedos de los pies!"
+       },
        "xaSabe": [
         {
          "tipo": "orde",
@@ -1619,6 +1673,11 @@
        "espera": {
         "gl": "Esta semana, que o diga contigo, nunha rutina ou nunha canción.",
         "es": "Esta semana, que lo diga contigo, en una rutina o en una canción."
+       },
+       "fraseGramatica": {
+        "en": "Stop!",
+        "gl": "Para!",
+        "es": "¡Para!"
        },
        "xaSabe": [
         {
@@ -1850,6 +1909,11 @@
        "espera": {
         "gl": "Esta semana, que o use só, xogando, sen que llo pidas.",
         "es": "Esta semana, que lo use solo, jugando, sin que se lo pidas."
+       },
+       "fraseGramatica": {
+        "en": "Touch your tummy!",
+        "gl": "Toca a barriguiña!",
+        "es": "¡Tócate la barriguita!"
        },
        "xaSabe": [
         {
@@ -2144,6 +2208,18 @@
        "es": "Tesoros de la naturaleza y del suelo"
       }
      },
+     "gramatica": {
+      "n": 2,
+      "nivel": "A1",
+      "titulo": {
+       "gl": "Artigos e substantivos",
+       "es": "Artículos y sustantivos"
+      },
+      "paraFamilias": {
+       "gl": "Os nomes das cousas, un ou moitos: «a leaf», «the leaf», «leaves».",
+       "es": "Los nombres de las cosas, uno o muchos: «a leaf», «the leaf», «leaves»."
+      }
+     },
      "obxectivos": [
       {
        "gl": "Agacharse a coller (pick up) e soltar deixando caer (drop) ao oír o sinal.",
@@ -2171,6 +2247,11 @@
        "espera": {
         "gl": "Esta semana abonda con que o entenda co teu xesto.",
         "es": "Esta semana basta con que lo entienda con tu gesto."
+       },
+       "fraseGramatica": {
+        "en": "A leaf.",
+        "gl": "Unha folla.",
+        "es": "Una hoja."
        },
        "xaSabe": [
         {
@@ -2444,6 +2525,11 @@
         "gl": "Esta semana, que o faga sen que lle fagas o xesto.",
         "es": "Esta semana, que lo haga sin que le hagas el gesto."
        },
+       "fraseGramatica": {
+        "en": "The leaf is falling.",
+        "gl": "A folla está caendo.",
+        "es": "La hoja se está cayendo."
+       },
        "xaSabe": [
         {
          "tipo": "orde",
@@ -2655,6 +2741,11 @@
        "espera": {
         "gl": "Esta semana, que o diga contigo, nunha rutina ou nunha canción.",
         "es": "Esta semana, que lo diga contigo, en una rutina o en una canción."
+       },
+       "fraseGramatica": {
+        "en": "Leaves!",
+        "gl": "Follas!",
+        "es": "¡Hojas!"
        },
        "xaSabe": [
         {
@@ -2881,6 +2972,11 @@
        "espera": {
         "gl": "Esta semana, que o use só, xogando, sen que llo pidas.",
         "es": "Esta semana, que lo use solo, jugando, sin que se lo pidas."
+       },
+       "fraseGramatica": {
+        "en": "A stone.",
+        "gl": "Unha pedra.",
+        "es": "Una piedra."
        },
        "xaSabe": [
         {
@@ -3128,6 +3224,18 @@
        "es": "Tesoros de la naturaleza y del suelo"
       }
      },
+     "gramatica": {
+      "n": 3,
+      "nivel": "A1",
+      "titulo": {
+       "gl": "Demostrativos e posesivos",
+       "es": "Demostrativos y posesivos"
+      },
+      "paraFamilias": {
+       "gl": "Sinalar e dicir de quen é: «this hat», «my hat», «Mum's coat».",
+       "es": "Señalar y decir de quién es: «this hat», «my hat», «Mum's coat»."
+      }
+     },
      "obxectivos": [
       {
        "gl": "Agacharse a coller (pick up) e soltar deixando caer (drop) ao oír o sinal.",
@@ -3155,6 +3263,11 @@
        "espera": {
         "gl": "Esta semana abonda con que o entenda co teu xesto.",
         "es": "Esta semana basta con que lo entienda con tu gesto."
+       },
+       "fraseGramatica": {
+        "en": "This bell.",
+        "gl": "Esta campá.",
+        "es": "Esta campana."
        },
        "xaSabe": [
         {
@@ -3435,6 +3548,11 @@
         "gl": "Esta semana, que o faga sen que lle fagas o xesto.",
         "es": "Esta semana, que lo haga sin que le hagas el gesto."
        },
+       "fraseGramatica": {
+        "en": "That bell is big.",
+        "gl": "Esa campá é grande.",
+        "es": "Esa campana es grande."
+       },
        "xaSabe": [
         {
          "tipo": "orde",
@@ -3651,6 +3769,11 @@
        "espera": {
         "gl": "Esta semana, que o diga contigo, nunha rutina ou nunha canción.",
         "es": "Esta semana, que lo diga contigo, en una rutina o en una canción."
+       },
+       "fraseGramatica": {
+        "en": "This hug is warm.",
+        "gl": "Esta aperta é quentiña.",
+        "es": "Este abrazo es calentito."
        },
        "xaSabe": [
         {
@@ -3882,6 +4005,11 @@
        "espera": {
         "gl": "Esta semana, que o use só, xogando, sen que llo pidas.",
         "es": "Esta semana, que lo use solo, jugando, sin que se lo pidas."
+       },
+       "fraseGramatica": {
+        "en": "That bell is small.",
+        "gl": "Esa campá é pequena.",
+        "es": "Esa campana es pequeña."
        },
        "xaSabe": [
         {
@@ -4176,6 +4304,18 @@
        "es": "Texturas, sabores y alimentación saludable"
       }
      },
+     "gramatica": {
+      "n": 3,
+      "nivel": "A1",
+      "titulo": {
+       "gl": "Demostrativos e posesivos",
+       "es": "Demostrativos y posesivos"
+      },
+      "paraFamilias": {
+       "gl": "Sinalar e dicir de quen é: «this hat», «my hat», «Mum's coat».",
+       "es": "Señalar y decir de quién es: «this hat», «my hat», «Mum's coat»."
+      }
+     },
      "obxectivos": [
       {
        "gl": "Facer xestos coordinados de mastigar e de tragar de mentira ao oír as ordes bite e eat.",
@@ -4203,6 +4343,11 @@
        "espera": {
         "gl": "Esta semana abonda con que o entenda co teu xesto.",
         "es": "Esta semana basta con que lo entienda con tu gesto."
+       },
+       "fraseGramatica": {
+        "en": "My hat.",
+        "gl": "O meu gorro.",
+        "es": "Mi gorro."
        },
        "xaSabe": [
         {
@@ -4476,6 +4621,11 @@
         "gl": "Esta semana, que o faga sen que lle fagas o xesto.",
         "es": "Esta semana, que lo haga sin que le hagas el gesto."
        },
+       "fraseGramatica": {
+        "en": "Your hat.",
+        "gl": "O teu gorro.",
+        "es": "Tu gorro."
+       },
        "xaSabe": [
         {
          "tipo": "orde",
@@ -4687,6 +4837,11 @@
        "espera": {
         "gl": "Esta semana, que o diga contigo, nunha rutina ou nunha canción.",
         "es": "Esta semana, que lo diga contigo, en una rutina o en una canción."
+       },
+       "fraseGramatica": {
+        "en": "My mittens.",
+        "gl": "As miñas luvas.",
+        "es": "Mis manoplas."
        },
        "xaSabe": [
         {
@@ -4913,6 +5068,11 @@
        "espera": {
         "gl": "Esta semana, que o use só, xogando, sen que llo pidas.",
         "es": "Esta semana, que lo use solo, jugando, sin que se lo pidas."
+       },
+       "fraseGramatica": {
+        "en": "Your apple.",
+        "gl": "A túa mazá.",
+        "es": "Tu manzana."
        },
        "xaSabe": [
         {
@@ -5160,6 +5320,18 @@
        "es": "Texturas, sabores y alimentación saludable"
       }
      },
+     "gramatica": {
+      "n": 2,
+      "nivel": "A1",
+      "titulo": {
+       "gl": "Artigos e substantivos",
+       "es": "Artículos y sustantivos"
+      },
+      "paraFamilias": {
+       "gl": "Os nomes das cousas, un ou moitos: «a leaf», «the leaf», «leaves».",
+       "es": "Los nombres de las cosas, uno o muchos: «a leaf», «the leaf», «leaves»."
+      }
+     },
      "obxectivos": [
       {
        "gl": "Facer xestos coordinados de mastigar e de tragar de mentira ao oír as ordes bite e eat.",
@@ -5187,6 +5359,11 @@
        "espera": {
         "gl": "Esta semana abonda con que o entenda co teu xesto.",
         "es": "Esta semana basta con que lo entienda con tu gesto."
+       },
+       "fraseGramatica": {
+        "en": "A frog.",
+        "gl": "Unha ra.",
+        "es": "Una rana."
        },
        "xaSabe": [
         {
@@ -5470,6 +5647,11 @@
         "gl": "Esta semana, que o faga sen que lle fagas o xesto.",
         "es": "Esta semana, que lo haga sin que le hagas el gesto."
        },
+       "fraseGramatica": {
+        "en": "Two cats.",
+        "gl": "Dous gatos.",
+        "es": "Dos gatos."
+       },
        "xaSabe": [
         {
          "tipo": "orde",
@@ -5675,6 +5857,11 @@
        "espera": {
         "gl": "Esta semana, que o diga contigo, nunha rutina ou nunha canción.",
         "es": "Esta semana, que lo diga contigo, en una rutina o en una canción."
+       },
+       "fraseGramatica": {
+        "en": "The bird says tweet.",
+        "gl": "O paxaro di chío.",
+        "es": "El pájaro dice pío."
        },
        "xaSabe": [
         {
@@ -5895,6 +6082,11 @@
        "espera": {
         "gl": "Esta semana, que o use só, xogando, sen que llo pidas.",
         "es": "Esta semana, que lo use solo, jugando, sin que se lo pidas."
+       },
+       "fraseGramatica": {
+        "en": "Frogs jump!",
+        "gl": "As ras saltan!",
+        "es": "¡Las ranas saltan!"
        },
        "xaSabe": [
         {
@@ -6178,6 +6370,18 @@
        "es": "El cuerpo, el jabón y el cuidado personal"
       }
      },
+     "gramatica": {
+      "n": 7,
+      "nivel": "A1",
+      "titulo": {
+       "gl": "There is / there are e preposicións de lugar",
+       "es": "There is / there are y preposiciones de lugar"
+      },
+      "paraFamilias": {
+       "gl": "Que hai e onde está: «There is a fish in the water», «The ball is under the table».",
+       "es": "Qué hay y dónde está: «There is a fish in the water», «The ball is under the table»."
+      }
+     },
      "obxectivos": [
       {
        "gl": "Seguir as ordes de fregar e lavar o corpo ao oír wash e rub.",
@@ -6205,6 +6409,11 @@
        "espera": {
         "gl": "Esta semana abonda con que o entenda co teu xesto.",
         "es": "Esta semana basta con que lo entienda con tu gesto."
+       },
+       "fraseGramatica": {
+        "en": "The soap is in the water.",
+        "gl": "O xabón está na auga.",
+        "es": "El jabón está en el agua."
        },
        "xaSabe": [
         {
@@ -6468,6 +6677,11 @@
         "gl": "Esta semana, que o faga sen que lle fagas o xesto.",
         "es": "Esta semana, que lo haga sin que le hagas el gesto."
        },
+       "fraseGramatica": {
+        "en": "The towel is on the chair.",
+        "gl": "A toalla está na cadeira.",
+        "es": "La toalla está en la silla."
+       },
        "xaSabe": [
         {
          "tipo": "orde",
@@ -6669,6 +6883,11 @@
        "espera": {
         "gl": "Esta semana, que o diga contigo, nunha rutina ou nunha canción.",
         "es": "Esta semana, que lo diga contigo, en una rutina o en una canción."
+       },
+       "fraseGramatica": {
+        "en": "The circle is on the floor.",
+        "gl": "O círculo está no chan.",
+        "es": "El círculo está en el suelo."
        },
        "xaSabe": [
         {
@@ -6895,6 +7114,11 @@
        "espera": {
         "gl": "Esta semana, que o use só, xogando, sen que llo pidas.",
         "es": "Esta semana, que lo use solo, jugando, sin que se lo pidas."
+       },
+       "fraseGramatica": {
+        "en": "The ball is in the box.",
+        "gl": "A pelota está na caixa.",
+        "es": "La pelota está en la caja."
        },
        "xaSabe": [
         {
@@ -7142,6 +7366,18 @@
        "es": "El cuerpo, el jabón y el cuidado personal"
       }
      },
+     "gramatica": {
+      "n": 7,
+      "nivel": "A1",
+      "titulo": {
+       "gl": "There is / there are e preposicións de lugar",
+       "es": "There is / there are y preposiciones de lugar"
+      },
+      "paraFamilias": {
+       "gl": "Que hai e onde está: «There is a fish in the water», «The ball is under the table».",
+       "es": "Qué hay y dónde está: «There is a fish in the water», «The ball is under the table»."
+      }
+     },
      "obxectivos": [
       {
        "gl": "Seguir as ordes de fregar e lavar o corpo ao oír wash e rub.",
@@ -7169,6 +7405,11 @@
        "espera": {
         "gl": "Esta semana abonda con que o entenda co teu xesto.",
         "es": "Esta semana basta con que lo entienda con tu gesto."
+       },
+       "fraseGramatica": {
+        "en": "There is a drop!",
+        "gl": "Hai unha pinga!",
+        "es": "¡Hay una gota!"
        },
        "xaSabe": [
         {
@@ -7452,6 +7693,11 @@
         "gl": "Esta semana, que o faga sen que lle fagas o xesto.",
         "es": "Esta semana, que lo haga sin que le hagas el gesto."
        },
+       "fraseGramatica": {
+        "en": "There is the sun!",
+        "gl": "Aí está o sol!",
+        "es": "¡Ahí está el sol!"
+       },
        "xaSabe": [
         {
          "tipo": "orde",
@@ -7657,6 +7903,11 @@
        "espera": {
         "gl": "Esta semana, que o diga contigo, nunha rutina ou nunha canción.",
         "es": "Esta semana, que lo diga contigo, en una rutina o en una canción."
+       },
+       "fraseGramatica": {
+        "en": "There are drops on the window.",
+        "gl": "Hai pingas na ventá.",
+        "es": "Hay gotas en la ventana."
        },
        "xaSabe": [
         {
@@ -7919,6 +8170,11 @@
        "espera": {
         "gl": "Esta semana, que o use só, xogando, sen que llo pidas.",
         "es": "Esta semana, que lo use solo, jugando, sin que se lo pidas."
+       },
+       "fraseGramatica": {
+        "en": "There is rain!",
+        "gl": "Hai chuvia!",
+        "es": "¡Hay lluvia!"
        },
        "xaSabe": [
         {
@@ -8188,6 +8444,18 @@
        "es": "Animales en movimiento, carrera y calma"
       }
      },
+     "gramatica": {
+      "n": 3,
+      "nivel": "A1",
+      "titulo": {
+       "gl": "Demostrativos e posesivos",
+       "es": "Demostrativos y posesivos"
+      },
+      "paraFamilias": {
+       "gl": "Sinalar e dicir de quen é: «this hat», «my hat», «Mum's coat».",
+       "es": "Señalar y decir de quién es: «this hat», «my hat», «Mum's coat»."
+      }
+     },
      "obxectivos": [
       {
        "gl": "Regular o movemento de todo o corpo alternando a carreira rápida (run) e a quietude (sleep / stop).",
@@ -8215,6 +8483,11 @@
        "espera": {
         "gl": "Esta semana abonda con que o entenda co teu xesto.",
         "es": "Esta semana basta con que lo entienda con tu gesto."
+       },
+       "fraseGramatica": {
+        "en": "This is my soap.",
+        "gl": "Este é o meu xabón.",
+        "es": "Este es mi jabón."
        },
        "xaSabe": [
         {
@@ -8471,6 +8744,11 @@
         "gl": "Esta semana, que o faga sen que lle fagas o xesto.",
         "es": "Esta semana, que lo haga sin que le hagas el gesto."
        },
+       "fraseGramatica": {
+        "en": "This is your towel.",
+        "gl": "Esta é a túa toalla.",
+        "es": "Esta es tu toalla."
+       },
        "xaSabe": [
         {
          "tipo": "orde",
@@ -8697,6 +8975,11 @@
        "espera": {
         "gl": "Esta semana, que o diga contigo, nunha rutina ou nunha canción.",
         "es": "Esta semana, que lo diga contigo, en una rutina o en una canción."
+       },
+       "fraseGramatica": {
+        "en": "My clean hands!",
+        "gl": "As miñas mans limpas!",
+        "es": "¡Mis manos limpias!"
        },
        "xaSabe": [
         {
@@ -8952,6 +9235,11 @@
        "espera": {
         "gl": "Esta semana, que o use só, xogando, sen que llo pidas.",
         "es": "Esta semana, que lo use solo, jugando, sin que se lo pidas."
+       },
+       "fraseGramatica": {
+        "en": "Your dog.",
+        "gl": "O teu can.",
+        "es": "Tu perro."
        },
        "xaSabe": [
         {
@@ -9256,6 +9544,18 @@
        "es": "Espacios, recipientes y movimiento rítmico"
       }
      },
+     "gramatica": {
+      "n": 7,
+      "nivel": "A1",
+      "titulo": {
+       "gl": "There is / there are e preposicións de lugar",
+       "es": "There is / there are y preposiciones de lugar"
+      },
+      "paraFamilias": {
+       "gl": "Que hai e onde está: «There is a fish in the water», «The ball is under the table».",
+       "es": "Qué hay y dónde está: «There is a fish in the water», «The ball is under the table»."
+      }
+     },
      "obxectivos": [
       {
        "gl": "Seguir as ordes de desprazarse e de marcar o ritmo co corpo ao oír go, stop e clap.",
@@ -9279,6 +9579,11 @@
        "espera": {
         "gl": "Esta semana abonda con que o entenda co teu xesto.",
         "es": "Esta semana basta con que lo entienda con tu gesto."
+       },
+       "fraseGramatica": {
+        "en": "The fish is in the sea.",
+        "gl": "O peixe está no mar.",
+        "es": "El pez está en el mar."
        },
        "xaSabe": [
         {
@@ -9569,6 +9874,11 @@
         "gl": "Esta semana, que o faga sen que lle fagas o xesto.",
         "es": "Esta semana, que lo haga sin que le hagas el gesto."
        },
+       "fraseGramatica": {
+        "en": "The ball is in the box.",
+        "gl": "A pelota está na caixa.",
+        "es": "La pelota está en la caja."
+       },
        "xaSabe": [
         {
          "tipo": "orde",
@@ -9791,6 +10101,11 @@
        "espera": {
         "gl": "Esta semana, que o diga contigo, nunha rutina ou nunha canción.",
         "es": "Esta semana, que lo diga contigo, en una rutina o en una canción."
+       },
+       "fraseGramatica": {
+        "en": "There is a wave!",
+        "gl": "Hai unha onda!",
+        "es": "¡Hay una ola!"
        },
        "xaSabe": [
         {
@@ -10028,6 +10343,11 @@
        "espera": {
         "gl": "Esta semana, que o use só, xogando, sen que llo pidas.",
         "es": "Esta semana, que lo use solo, jugando, sin que se lo pidas."
+       },
+       "fraseGramatica": {
+        "en": "The boat is on the water.",
+        "gl": "O barco está na auga.",
+        "es": "El barco está en el agua."
        },
        "xaSabe": [
         {
@@ -10352,6 +10672,18 @@
        "es": "El rincón del agua y la exploración líquida"
       }
      },
+     "gramatica": {
+      "n": 1,
+      "nivel": "A1",
+      "titulo": {
+       "gl": "Pronomes suxeito e o verbo to be",
+       "es": "Pronombres sujeto y el verbo to be"
+      },
+      "paraFamilias": {
+       "gl": "Dicir quen é e como está: «I am happy», «It is a cat», «Is it cold?».",
+       "es": "Decir quién es y cómo está: «I am happy», «It is a cat», «Is it cold?»."
+      }
+     },
      "obxectivos": [
       {
        "gl": "Reaccionar co corpo, cun salto e batendo na auga de forma coordinada, ás ordes splash e stop.",
@@ -10375,6 +10707,11 @@
        "espera": {
         "gl": "Esta semana abonda con que o entenda co teu xesto.",
         "es": "Esta semana basta con que lo entienda con tu gesto."
+       },
+       "fraseGramatica": {
+        "en": "I am Lúa.",
+        "gl": "Eu son Lúa.",
+        "es": "Yo soy Lúa."
        },
        "xaSabe": [],
        "novas": [
@@ -10549,6 +10886,11 @@
        "espera": {
         "gl": "Esta semana, que o faga sen que lle fagas o xesto.",
         "es": "Esta semana, que lo haga sin que le hagas el gesto."
+       },
+       "fraseGramatica": {
+        "en": "You are my friend.",
+        "gl": "Ti es o meu amigo.",
+        "es": "Tú eres mi amigo."
        },
        "xaSabe": [
         {
@@ -10766,6 +11108,11 @@
        "espera": {
         "gl": "Esta semana, que o diga contigo, nunha rutina ou nunha canción.",
         "es": "Esta semana, que lo diga contigo, en una rutina o en una canción."
+       },
+       "fraseGramatica": {
+        "en": "It is water.",
+        "gl": "É auga.",
+        "es": "Es agua."
        },
        "xaSabe": [
         {
@@ -11007,6 +11354,11 @@
        "espera": {
         "gl": "Esta semana, que o use só, xogando, sen que llo pidas.",
         "es": "Esta semana, que lo use solo, jugando, sin que se lo pidas."
+       },
+       "fraseGramatica": {
+        "en": "I am wet!",
+        "gl": "Estou mollado!",
+        "es": "¡Estoy mojado!"
        },
        "xaSabe": [
         {
@@ -11265,6 +11617,18 @@
        "es": "El rincón del agua y la exploración líquida"
       }
      },
+     "gramatica": {
+      "n": 10,
+      "nivel": "A1",
+      "titulo": {
+       "gl": "Can e o imperativo",
+       "es": "Can y el imperativo"
+      },
+      "paraFamilias": {
+       "gl": "Ordes e o que se pode facer: «Jump!», «Clap your hands!», «I can fly!».",
+       "es": "Órdenes y lo que se puede hacer: «Jump!», «Clap your hands!», «I can fly!»."
+      }
+     },
      "obxectivos": [
       {
        "gl": "Reaccionar co corpo, cun salto e batendo na auga de forma coordinada, ás ordes splash e stop.",
@@ -11288,6 +11652,11 @@
        "espera": {
         "gl": "Esta semana abonda con que o entenda co teu xesto.",
         "es": "Esta semana basta con que lo entienda con tu gesto."
+       },
+       "fraseGramatica": {
+        "en": "Touch your knees!",
+        "gl": "Toca os xeonllos!",
+        "es": "¡Tócate las rodillas!"
        },
        "xaSabe": [
         {
@@ -11568,6 +11937,11 @@
         "gl": "Esta semana, que o faga sen que lle fagas o xesto.",
         "es": "Esta semana, que lo haga sin que le hagas el gesto."
        },
+       "fraseGramatica": {
+        "en": "Shake your hands!",
+        "gl": "Axita as mans!",
+        "es": "¡Sacude las manos!"
+       },
        "xaSabe": [
         {
          "tipo": "orde",
@@ -11788,6 +12162,11 @@
        "espera": {
         "gl": "Esta semana, que o diga contigo, nunha rutina ou nunha canción.",
         "es": "Esta semana, que lo diga contigo, en una rutina o en una canción."
+       },
+       "fraseGramatica": {
+        "en": "Freeze!",
+        "gl": "Estátua!",
+        "es": "¡Estatua!"
        },
        "xaSabe": [
         {
@@ -12023,6 +12402,11 @@
        "espera": {
         "gl": "Esta semana, que o use só, xogando, sen que llo pidas.",
         "es": "Esta semana, que lo use solo, jugando, sin que se lo pidas."
+       },
+       "fraseGramatica": {
+        "en": "Dance and freeze!",
+        "gl": "Baila e queda quieto!",
+        "es": "¡Baila y quédate quieto!"
        },
        "xaSabe": [
         {
@@ -12321,6 +12705,18 @@
        "es": "Tesoros de la naturaleza y del suelo"
       }
      },
+     "gramatica": {
+      "n": 2,
+      "nivel": "A1",
+      "titulo": {
+       "gl": "Artigos e substantivos",
+       "es": "Artículos y sustantivos"
+      },
+      "paraFamilias": {
+       "gl": "Os nomes das cousas, un ou moitos: «a leaf», «the leaf», «leaves».",
+       "es": "Los nombres de las cosas, uno o muchos: «a leaf», «the leaf», «leaves»."
+      }
+     },
      "obxectivos": [
       {
        "gl": "Agacharse a coller (pick up) e soltar deixando caer (drop) ao oír o sinal.",
@@ -12348,6 +12744,11 @@
        "espera": {
         "gl": "Esta semana abonda con que o entenda co teu xesto.",
         "es": "Esta semana basta con que lo entienda con tu gesto."
+       },
+       "fraseGramatica": {
+        "en": "A leaf, two leaves.",
+        "gl": "Unha folla, dúas follas.",
+        "es": "Una hoja, dos hojas."
        },
        "xaSabe": [
         {
@@ -12625,6 +13026,11 @@
         "gl": "Esta semana, que o faga sen que lle fagas o xesto.",
         "es": "Esta semana, que lo haga sin que le hagas el gesto."
        },
+       "fraseGramatica": {
+        "en": "The leaves are crunchy.",
+        "gl": "As follas fan cruc.",
+        "es": "Las hojas crujen."
+       },
        "xaSabe": [
         {
          "tipo": "orde",
@@ -12840,6 +13246,11 @@
        "espera": {
         "gl": "Esta semana, que o diga contigo, nunha rutina ou nunha canción.",
         "es": "Esta semana, que lo diga contigo, en una rutina o en una canción."
+       },
+       "fraseGramatica": {
+        "en": "Three stones.",
+        "gl": "Tres pedras.",
+        "es": "Tres piedras."
        },
        "xaSabe": [
         {
@@ -13084,6 +13495,11 @@
        "espera": {
         "gl": "Esta semana, que o use só, xogando, sen que llo pidas.",
         "es": "Esta semana, que lo use solo, jugando, sin que se lo pidas."
+       },
+       "fraseGramatica": {
+        "en": "The wind is blowing.",
+        "gl": "Sopra o vento.",
+        "es": "Sopla el viento."
        },
        "xaSabe": [
         {
@@ -13349,6 +13765,18 @@
        "es": "Tesoros de la naturaleza y del suelo"
       }
      },
+     "gramatica": {
+      "n": 1,
+      "nivel": "A1",
+      "titulo": {
+       "gl": "Pronomes suxeito e o verbo to be",
+       "es": "Pronombres sujeto y el verbo to be"
+      },
+      "paraFamilias": {
+       "gl": "Dicir quen é e como está: «I am happy», «It is a cat», «Is it cold?».",
+       "es": "Decir quién es y cómo está: «I am happy», «It is a cat», «Is it cold?»."
+      }
+     },
      "obxectivos": [
       {
        "gl": "Agacharse a coller (pick up) e soltar deixando caer (drop) ao oír o sinal.",
@@ -13376,6 +13804,11 @@
        "espera": {
         "gl": "Esta semana abonda con que o entenda co teu xesto.",
         "es": "Esta semana basta con que lo entienda con tu gesto."
+       },
+       "fraseGramatica": {
+        "en": "It is loud!",
+        "gl": "Soa forte!",
+        "es": "¡Suena fuerte!"
        },
        "xaSabe": [
         {
@@ -13663,6 +14096,11 @@
         "gl": "Esta semana, que o faga sen que lle fagas o xesto.",
         "es": "Esta semana, que lo haga sin que le hagas el gesto."
        },
+       "fraseGramatica": {
+        "en": "It isn't loud. It is quiet.",
+        "gl": "Non soa forte. Soa baixiño.",
+        "es": "No suena fuerte. Suena bajito."
+       },
        "xaSabe": [
         {
          "tipo": "orde",
@@ -13886,6 +14324,11 @@
        "espera": {
         "gl": "Esta semana, que o diga contigo, nunha rutina ou nunha canción.",
         "es": "Esta semana, que lo diga contigo, en una rutina o en una canción."
+       },
+       "fraseGramatica": {
+        "en": "Is it big?",
+        "gl": "É grande?",
+        "es": "¿Es grande?"
        },
        "xaSabe": [
         {
@@ -14124,6 +14567,11 @@
        "espera": {
         "gl": "Esta semana, que o use só, xogando, sen que llo pidas.",
         "es": "Esta semana, que lo use solo, jugando, sin que se lo pidas."
+       },
+       "fraseGramatica": {
+        "en": "The baby is sleeping. Shh!",
+        "gl": "O bebé está durmindo. Shh!",
+        "es": "El bebé está durmiendo. ¡Shh!"
        },
        "xaSabe": [
         {
@@ -14425,6 +14873,18 @@
        "es": "Texturas, sabores y alimentación saludable"
       }
      },
+     "gramatica": {
+      "n": 3,
+      "nivel": "A1",
+      "titulo": {
+       "gl": "Demostrativos e posesivos",
+       "es": "Demostrativos y posesivos"
+      },
+      "paraFamilias": {
+       "gl": "Sinalar e dicir de quen é: «this hat», «my hat», «Mum's coat».",
+       "es": "Señalar y decir de quién es: «this hat», «my hat», «Mum's coat»."
+      }
+     },
      "obxectivos": [
       {
        "gl": "Facer xestos coordinados de mastigar e de tragar de mentira ao oír as ordes bite e eat.",
@@ -14452,6 +14912,11 @@
        "espera": {
         "gl": "Esta semana abonda con que o entenda co teu xesto.",
         "es": "Esta semana basta con que lo entienda con tu gesto."
+       },
+       "fraseGramatica": {
+        "en": "My coat.",
+        "gl": "O meu abrigo.",
+        "es": "Mi abrigo."
        },
        "xaSabe": [
         {
@@ -14726,6 +15191,11 @@
         "gl": "Esta semana, que o faga sen que lle fagas o xesto.",
         "es": "Esta semana, que lo haga sin que le hagas el gesto."
        },
+       "fraseGramatica": {
+        "en": "Your boots.",
+        "gl": "As túas botas.",
+        "es": "Tus botas."
+       },
        "xaSabe": [
         {
          "tipo": "orde",
@@ -14938,6 +15408,11 @@
        "espera": {
         "gl": "Esta semana, que o diga contigo, nunha rutina ou nunha canción.",
         "es": "Esta semana, que lo diga contigo, en una rutina o en una canción."
+       },
+       "fraseGramatica": {
+        "en": "This is my apple.",
+        "gl": "Esta é a miña mazá.",
+        "es": "Esta es mi manzana."
        },
        "xaSabe": [
         {
@@ -15179,6 +15654,11 @@
        "espera": {
         "gl": "Esta semana, que o use só, xogando, sen que llo pidas.",
         "es": "Esta semana, que lo use solo, jugando, sin que se lo pidas."
+       },
+       "fraseGramatica": {
+        "en": "Mum's coat.",
+        "gl": "O abrigo de mamá.",
+        "es": "El abrigo de mamá."
        },
        "xaSabe": [
         {
@@ -15441,6 +15921,18 @@
        "es": "Texturas, sabores y alimentación saludable"
       }
      },
+     "gramatica": {
+      "n": 10,
+      "nivel": "A1",
+      "titulo": {
+       "gl": "Can e o imperativo",
+       "es": "Can y el imperativo"
+      },
+      "paraFamilias": {
+       "gl": "Ordes e o que se pode facer: «Jump!», «Clap your hands!», «I can fly!».",
+       "es": "Órdenes y lo que se puede hacer: «Jump!», «Clap your hands!», «I can fly!»."
+      }
+     },
      "obxectivos": [
       {
        "gl": "Facer xestos coordinados de mastigar e de tragar de mentira ao oír as ordes bite e eat.",
@@ -15468,6 +15960,11 @@
        "espera": {
         "gl": "Esta semana abonda con que o entenda co teu xesto.",
         "es": "Esta semana basta con que lo entienda con tu gesto."
+       },
+       "fraseGramatica": {
+        "en": "I can fly like a bird!",
+        "gl": "Podo voar coma un paxaro!",
+        "es": "¡Puedo volar como un pájaro!"
        },
        "xaSabe": [
         {
@@ -15755,6 +16252,11 @@
         "gl": "Esta semana, que o faga sen que lle fagas o xesto.",
         "es": "Esta semana, que lo haga sin que le hagas el gesto."
        },
+       "fraseGramatica": {
+        "en": "Can you stomp like a bear?",
+        "gl": "Podes pisar forte coma un oso?",
+        "es": "¿Puedes pisar fuerte como un oso?"
+       },
        "xaSabe": [
         {
          "tipo": "orde",
@@ -15978,6 +16480,11 @@
        "espera": {
         "gl": "Esta semana, que o diga contigo, nunha rutina ou nunha canción.",
         "es": "Esta semana, que lo diga contigo, en una rutina o en una canción."
+       },
+       "fraseGramatica": {
+        "en": "I can't fly!",
+        "gl": "Non podo voar!",
+        "es": "¡No puedo volar!"
        },
        "xaSabe": [
         {
@@ -16216,6 +16723,11 @@
        "espera": {
         "gl": "Esta semana, que o use só, xogando, sen que llo pidas.",
         "es": "Esta semana, que lo use solo, jugando, sin que se lo pidas."
+       },
+       "fraseGramatica": {
+        "en": "Flap your wings!",
+        "gl": "Bate as ás!",
+        "es": "¡Bate las alas!"
        },
        "xaSabe": [
         {
@@ -16517,6 +17029,18 @@
        "es": "El cuerpo, el jabón y el cuidado personal"
       }
      },
+     "gramatica": {
+      "n": 3,
+      "nivel": "A1",
+      "titulo": {
+       "gl": "Demostrativos e posesivos",
+       "es": "Demostrativos y posesivos"
+      },
+      "paraFamilias": {
+       "gl": "Sinalar e dicir de quen é: «this hat», «my hat», «Mum's coat».",
+       "es": "Señalar y decir de quién es: «this hat», «my hat», «Mum's coat»."
+      }
+     },
      "obxectivos": [
       {
        "gl": "Seguir as ordes de fregar e lavar o corpo ao oír wash e rub.",
@@ -16544,6 +17068,11 @@
        "espera": {
         "gl": "Esta semana abonda con que o entenda co teu xesto.",
         "es": "Esta semana basta con que lo entienda con tu gesto."
+       },
+       "fraseGramatica": {
+        "en": "This circle is red.",
+        "gl": "Este círculo é vermello.",
+        "es": "Este círculo es rojo."
        },
        "xaSabe": [
         {
@@ -16825,6 +17354,11 @@
         "gl": "Esta semana, que o faga sen que lle fagas o xesto.",
         "es": "Esta semana, que lo haga sin que le hagas el gesto."
        },
+       "fraseGramatica": {
+        "en": "That card is red.",
+        "gl": "Esa tarxeta é vermella.",
+        "es": "Esa tarjeta es roja."
+       },
        "xaSabe": [
         {
          "tipo": "orde",
@@ -17044,6 +17578,11 @@
        "espera": {
         "gl": "Esta semana, que o diga contigo, nunha rutina ou nunha canción.",
         "es": "Esta semana, que lo diga contigo, en una rutina o en una canción."
+       },
+       "fraseGramatica": {
+        "en": "These tomatoes are red.",
+        "gl": "Estes tomates son vermellos.",
+        "es": "Estos tomates son rojos."
        },
        "xaSabe": [
         {
@@ -17288,6 +17827,11 @@
        "espera": {
         "gl": "Esta semana, que o use só, xogando, sen que llo pidas.",
         "es": "Esta semana, que lo use solo, jugando, sin que se lo pidas."
+       },
+       "fraseGramatica": {
+        "en": "My towel.",
+        "gl": "A miña toalla.",
+        "es": "Mi toalla."
        },
        "xaSabe": [
         {
@@ -17553,6 +18097,18 @@
        "es": "El cuerpo, el jabón y el cuidado personal"
       }
      },
+     "gramatica": {
+      "n": 8,
+      "nivel": "A1",
+      "titulo": {
+       "gl": "Preguntas con wh-",
+       "es": "Preguntas con wh-"
+      },
+      "paraFamilias": {
+       "gl": "Preguntar: «Where is the sun?», «What is it?», «Who is it?».",
+       "es": "Preguntar: «Where is the sun?», «What is it?», «Who is it?»."
+      }
+     },
      "obxectivos": [
       {
        "gl": "Seguir as ordes de fregar e lavar o corpo ao oír wash e rub.",
@@ -17580,6 +18136,11 @@
        "espera": {
         "gl": "Esta semana abonda con que o entenda co teu xesto.",
         "es": "Esta semana basta con que lo entienda con tu gesto."
+       },
+       "fraseGramatica": {
+        "en": "Where is the sun?",
+        "gl": "Onde está o sol?",
+        "es": "¿Dónde está el sol?"
        },
        "xaSabe": [
         {
@@ -17867,6 +18428,11 @@
         "gl": "Esta semana, que o faga sen que lle fagas o xesto.",
         "es": "Esta semana, que lo haga sin que le hagas el gesto."
        },
+       "fraseGramatica": {
+        "en": "What is it? A seed!",
+        "gl": "Que é? Unha semente!",
+        "es": "¿Qué es? ¡Una semilla!"
+       },
        "xaSabe": [
         {
          "tipo": "orde",
@@ -18076,6 +18642,11 @@
        "espera": {
         "gl": "Esta semana, que o diga contigo, nunha rutina ou nunha canción.",
         "es": "Esta semana, que lo diga contigo, en una rutina o en una canción."
+       },
+       "fraseGramatica": {
+        "en": "Where are the flowers?",
+        "gl": "Onde están as flores?",
+        "es": "¿Dónde están las flores?"
        },
        "xaSabe": [
         {
@@ -18300,6 +18871,11 @@
        "espera": {
         "gl": "Esta semana, que o use só, xogando, sen que llo pidas.",
         "es": "Esta semana, que lo use solo, jugando, sin que se lo pidas."
+       },
+       "fraseGramatica": {
+        "en": "What is soft?",
+        "gl": "Que é suave?",
+        "es": "¿Qué es suave?"
        },
        "xaSabe": [
         {
@@ -18587,6 +19163,18 @@
        "es": "Animales en movimiento, carrera y calma"
       }
      },
+     "gramatica": {
+      "n": 6,
+      "nivel": "A1",
+      "titulo": {
+       "gl": "Contables e incontables",
+       "es": "Contables e incontables"
+      },
+      "paraFamilias": {
+       "gl": "Cantidades: «some water», «more juice», «a lot of seeds».",
+       "es": "Cantidades: «some water», «more juice», «a lot of seeds»."
+      }
+     },
      "obxectivos": [
       {
        "gl": "Regular o movemento de todo o corpo alternando a carreira rápida (run) e a quietude (sleep / stop).",
@@ -18614,6 +19202,11 @@
        "espera": {
         "gl": "Esta semana abonda con que o entenda co teu xesto.",
         "es": "Esta semana basta con que lo entienda con tu gesto."
+       },
+       "fraseGramatica": {
+        "en": "Some soap.",
+        "gl": "Un pouco de xabón.",
+        "es": "Un poco de jabón."
        },
        "xaSabe": [
         {
@@ -18891,6 +19484,11 @@
         "gl": "Esta semana, que o faga sen que lle fagas o xesto.",
         "es": "Esta semana, que lo haga sin que le hagas el gesto."
        },
+       "fraseGramatica": {
+        "en": "More water!",
+        "gl": "Máis auga!",
+        "es": "¡Más agua!"
+       },
        "xaSabe": [
         {
          "tipo": "orde",
@@ -19124,6 +19722,11 @@
        "espera": {
         "gl": "Esta semana, que o diga contigo, nunha rutina ou nunha canción.",
         "es": "Esta semana, que lo diga contigo, en una rutina o en una canción."
+       },
+       "fraseGramatica": {
+        "en": "A lot of bubbles!",
+        "gl": "Moitas burbullas!",
+        "es": "¡Muchas burbujas!"
        },
        "xaSabe": [
         {
@@ -19386,6 +19989,11 @@
        "espera": {
         "gl": "Esta semana, que o use só, xogando, sen que llo pidas.",
         "es": "Esta semana, que lo use solo, jugando, sin que se lo pidas."
+       },
+       "fraseGramatica": {
+        "en": "Some water on your face.",
+        "gl": "Un pouco de auga na cara.",
+        "es": "Un poco de agua en la cara."
        },
        "xaSabe": [
         {
@@ -19697,6 +20305,18 @@
        "es": "Espacios, recipientes y movimiento rítmico"
       }
      },
+     "gramatica": {
+      "n": 7,
+      "nivel": "A1",
+      "titulo": {
+       "gl": "There is / there are e preposicións de lugar",
+       "es": "There is / there are y preposiciones de lugar"
+      },
+      "paraFamilias": {
+       "gl": "Que hai e onde está: «There is a fish in the water», «The ball is under the table».",
+       "es": "Qué hay y dónde está: «There is a fish in the water», «The ball is under the table»."
+      }
+     },
      "obxectivos": [
       {
        "gl": "Seguir as ordes de desprazarse e de marcar o ritmo co corpo ao oír go, stop e clap.",
@@ -19720,6 +20340,11 @@
        "espera": {
         "gl": "Esta semana abonda con que o entenda co teu xesto.",
         "es": "Esta semana basta con que lo entienda con tu gesto."
+       },
+       "fraseGramatica": {
+        "en": "The fish is under the sea.",
+        "gl": "O peixe está debaixo do mar.",
+        "es": "El pez está debajo del mar."
        },
        "xaSabe": [
         {
@@ -20014,6 +20639,11 @@
         "gl": "Esta semana, que o faga sen que lle fagas o xesto.",
         "es": "Esta semana, que lo haga sin que le hagas el gesto."
        },
+       "fraseGramatica": {
+        "en": "The ball is in the box.",
+        "gl": "A pelota está na caixa.",
+        "es": "La pelota está en la caja."
+       },
        "xaSabe": [
         {
          "tipo": "orde",
@@ -20254,6 +20884,11 @@
        "espera": {
         "gl": "Esta semana, que o diga contigo, nunha rutina ou nunha canción.",
         "es": "Esta semana, que lo diga contigo, en una rutina o en una canción."
+       },
+       "fraseGramatica": {
+        "en": "The box is next to the ball.",
+        "gl": "A caixa está ao lado da pelota.",
+        "es": "La caja está al lado de la pelota."
        },
        "xaSabe": [
         {
@@ -20509,6 +21144,11 @@
        "espera": {
         "gl": "Esta semana, que o use só, xogando, sen que llo pidas.",
         "es": "Esta semana, que lo use solo, jugando, sin que se lo pidas."
+       },
+       "fraseGramatica": {
+        "en": "There are big waves!",
+        "gl": "Hai ondas grandes!",
+        "es": "¡Hay olas grandes!"
        },
        "xaSabe": [
         {
@@ -20841,6 +21481,18 @@
       "gl": "Frases con preposicións de lugar («The car is on the block», «Put it under the bridge») e frases de quen fai, que fai e que pasa («I push and it falls»).",
       "es": "Frases con preposiciones de lugar («The car is on the block», «Put it under the bridge») y frases de quién hace, qué hace y qué pasa («I push and it falls»)."
      },
+     "gramatica": {
+      "n": 4,
+      "nivel": "A1",
+      "titulo": {
+       "gl": "Presente simple",
+       "es": "Presente simple"
+      },
+      "paraFamilias": {
+       "gl": "O que facemos sempre: «We sit in a circle», «The cow eats grass».",
+       "es": "Lo que hacemos siempre: «We sit in a circle», «The cow eats grass»."
+      }
+     },
      "obxectivos": [
       {
        "gl": "Usar de forma verbal e espontánea as fórmulas de alternancia no xogo «My turn» e «Your turn» ao amorear e pasar bloques de madeira.",
@@ -20868,6 +21520,11 @@
        "espera": {
         "gl": "Esta semana abonda con que o entenda co teu xesto.",
         "es": "Esta semana basta con que lo entienda con tu gesto."
+       },
+       "fraseGramatica": {
+        "en": "We sit in a circle.",
+        "gl": "Sentamos en círculo.",
+        "es": "Nos sentamos en círculo."
        },
        "xaSabe": [],
        "novas": [
@@ -21059,6 +21716,11 @@
        "espera": {
         "gl": "Esta semana, que o faga sen que lle fagas o xesto.",
         "es": "Esta semana, que lo haga sin que le hagas el gesto."
+       },
+       "fraseGramatica": {
+        "en": "We clap our hands.",
+        "gl": "Aplaudimos.",
+        "es": "Aplaudimos."
        },
        "xaSabe": [
         {
@@ -21303,6 +21965,11 @@
        "espera": {
         "gl": "Esta semana, que o diga contigo, nunha rutina ou nunha canción.",
         "es": "Esta semana, que lo diga contigo, en una rutina o en una canción."
+       },
+       "fraseGramatica": {
+        "en": "I say hello.",
+        "gl": "Eu digo ola.",
+        "es": "Yo digo hola."
        },
        "xaSabe": [
         {
@@ -21585,6 +22252,11 @@
        "espera": {
         "gl": "Esta semana, que o use só, xogando, sen que llo pidas.",
         "es": "Esta semana, que lo use solo, jugando, sin que se lo pidas."
+       },
+       "fraseGramatica": {
+        "en": "The train goes round.",
+        "gl": "O tren dá voltas.",
+        "es": "El tren da vueltas."
        },
        "xaSabe": [
         {
@@ -21874,6 +22546,18 @@
       "gl": "Frases con preposicións de lugar («The car is on the block», «Put it under the bridge») e frases de quen fai, que fai e que pasa («I push and it falls»).",
       "es": "Frases con preposiciones de lugar («The car is on the block», «Put it under the bridge») y frases de quién hace, qué hace y qué pasa («I push and it falls»)."
      },
+     "gramatica": {
+      "n": 7,
+      "nivel": "A1",
+      "titulo": {
+       "gl": "There is / there are e preposicións de lugar",
+       "es": "There is / there are y preposiciones de lugar"
+      },
+      "paraFamilias": {
+       "gl": "Que hai e onde está: «There is a fish in the water», «The ball is under the table».",
+       "es": "Qué hay y dónde está: «There is a fish in the water», «The ball is under the table»."
+      }
+     },
      "obxectivos": [
       {
        "gl": "Usar de forma verbal e espontánea as fórmulas de alternancia no xogo «My turn» e «Your turn» ao amorear e pasar bloques de madeira.",
@@ -21901,6 +22585,11 @@
        "espera": {
         "gl": "Esta semana abonda con que o entenda co teu xesto.",
         "es": "Esta semana basta con que lo entienda con tu gesto."
+       },
+       "fraseGramatica": {
+        "en": "The leaf is on the floor.",
+        "gl": "A folla está no chan.",
+        "es": "La hoja está en el suelo."
        },
        "xaSabe": [
         {
@@ -22194,6 +22883,11 @@
         "gl": "Esta semana, que o faga sen que lle fagas o xesto.",
         "es": "Esta semana, que lo haga sin que le hagas el gesto."
        },
+       "fraseGramatica": {
+        "en": "Put the leaf under the cloth.",
+        "gl": "Pon a folla debaixo da tela.",
+        "es": "Pon la hoja debajo de la tela."
+       },
        "xaSabe": [
         {
          "tipo": "verb",
@@ -22437,6 +23131,11 @@
        "espera": {
         "gl": "Esta semana, que o diga contigo, nunha rutina ou nunha canción.",
         "es": "Esta semana, que lo diga contigo, en una rutina o en una canción."
+       },
+       "fraseGramatica": {
+        "en": "The leaf is in my hand.",
+        "gl": "A folla está na miña man.",
+        "es": "La hoja está en mi mano."
        },
        "xaSabe": [
         {
@@ -22720,6 +23419,11 @@
         "gl": "Esta semana, que o use só, xogando, sen que llo pidas.",
         "es": "Esta semana, que lo use solo, jugando, sin que se lo pidas."
        },
+       "fraseGramatica": {
+        "en": "Your turn!",
+        "gl": "Tócache a ti!",
+        "es": "¡Te toca!"
+       },
        "xaSabe": [
         {
          "tipo": "palabra",
@@ -22980,6 +23684,18 @@
       "gl": "Frases con preposicións de lugar («The car is on the block», «Put it under the bridge») e frases de quen fai, que fai e que pasa («I push and it falls»).",
       "es": "Frases con preposiciones de lugar («The car is on the block», «Put it under the bridge») y frases de quién hace, qué hace y qué pasa («I push and it falls»)."
      },
+     "gramatica": {
+      "n": 10,
+      "nivel": "A1",
+      "titulo": {
+       "gl": "Can e o imperativo",
+       "es": "Can y el imperativo"
+      },
+      "paraFamilias": {
+       "gl": "Ordes e o que se pode facer: «Jump!», «Clap your hands!», «I can fly!».",
+       "es": "Órdenes y lo que se puede hacer: «Jump!», «Clap your hands!», «I can fly!»."
+      }
+     },
      "obxectivos": [
       {
        "gl": "Usar de forma verbal e espontánea as fórmulas de alternancia no xogo «My turn» e «Your turn» ao amorear e pasar bloques de madeira.",
@@ -23007,6 +23723,11 @@
        "espera": {
         "gl": "Esta semana abonda con que o entenda co teu xesto.",
         "es": "Esta semana basta con que lo entienda con tu gesto."
+       },
+       "fraseGramatica": {
+        "en": "I can jump!",
+        "gl": "Podo saltar!",
+        "es": "¡Puedo saltar!"
        },
        "xaSabe": [
         {
@@ -23300,6 +24021,11 @@
         "gl": "Esta semana, que o faga sen que lle fagas o xesto.",
         "es": "Esta semana, que lo haga sin que le hagas el gesto."
        },
+       "fraseGramatica": {
+        "en": "Can you help me, please?",
+        "gl": "Podes axudarme, por favor?",
+        "es": "¿Me puedes ayudar, por favor?"
+       },
        "xaSabe": [
         {
          "tipo": "noun",
@@ -23543,6 +24269,11 @@
        "espera": {
         "gl": "Esta semana, que o diga contigo, nunha rutina ou nunha canción.",
         "es": "Esta semana, que lo diga contigo, en una rutina o en una canción."
+       },
+       "fraseGramatica": {
+        "en": "Roll the pumpkin!",
+        "gl": "Fai rodar a cabaza!",
+        "es": "¡Haz rodar la calabaza!"
        },
        "xaSabe": [
         {
@@ -23825,6 +24556,11 @@
        "espera": {
         "gl": "Esta semana, que o use só, xogando, sen que llo pidas.",
         "es": "Esta semana, que lo use solo, jugando, sin que se lo pidas."
+       },
+       "fraseGramatica": {
+        "en": "I can't jump so high.",
+        "gl": "Non podo saltar tan alto.",
+        "es": "No puedo saltar tan alto."
        },
        "xaSabe": [
         {
@@ -24114,6 +24850,18 @@
       "gl": "Frases con preposicións de lugar («The car is on the block», «Put it under the bridge») e frases de quen fai, que fai e que pasa («I push and it falls»).",
       "es": "Frases con preposiciones de lugar («The car is on the block», «Put it under the bridge») y frases de quién hace, qué hace y qué pasa («I push and it falls»)."
      },
+     "gramatica": {
+      "n": 5,
+      "nivel": "A1",
+      "titulo": {
+       "gl": "Adverbios e expresións de frecuencia",
+       "es": "Adverbios y expresiones de frecuencia"
+      },
+      "paraFamilias": {
+       "gl": "Cada canto se fai algo: «We always wear boots in the rain».",
+       "es": "Cada cuánto se hace algo: «We always wear boots in the rain»."
+      }
+     },
      "obxectivos": [
       {
        "gl": "Usar de forma verbal e espontánea as fórmulas de alternancia no xogo «My turn» e «Your turn» ao amorear e pasar bloques de madeira.",
@@ -24141,6 +24889,11 @@
        "espera": {
         "gl": "Esta semana abonda con que o entenda co teu xesto.",
         "es": "Esta semana basta con que lo entienda con tu gesto."
+       },
+       "fraseGramatica": {
+        "en": "We always put on our boots.",
+        "gl": "Sempre poñemos as botas.",
+        "es": "Siempre nos ponemos las botas."
        },
        "xaSabe": [
         {
@@ -24434,6 +25187,11 @@
         "gl": "Esta semana, que o faga sen que lle fagas o xesto.",
         "es": "Esta semana, que lo haga sin que le hagas el gesto."
        },
+       "fraseGramatica": {
+        "en": "It sometimes snows.",
+        "gl": "Ás veces neva.",
+        "es": "A veces nieva."
+       },
        "xaSabe": [
         {
          "tipo": "noun",
@@ -24677,6 +25435,11 @@
        "espera": {
         "gl": "Esta semana, que o diga contigo, nunha rutina ou nunha canción.",
         "es": "Esta semana, que lo diga contigo, en una rutina o en una canción."
+       },
+       "fraseGramatica": {
+        "en": "We never stomp on a friend.",
+        "gl": "Nunca pisamos a un amigo.",
+        "es": "Nunca pisamos a un amigo."
        },
        "xaSabe": [
         {
@@ -24960,6 +25723,11 @@
         "gl": "Esta semana, que o use só, xogando, sen que llo pidas.",
         "es": "Esta semana, que lo use solo, jugando, sin que se lo pidas."
        },
+       "fraseGramatica": {
+        "en": "We usually walk on tiptoe.",
+        "gl": "Normalmente camiñamos de puntillas.",
+        "es": "Normalmente andamos de puntillas."
+       },
        "xaSabe": [
         {
          "tipo": "verb",
@@ -25220,6 +25988,18 @@
       "gl": "Frases con preposicións de lugar («The car is on the block», «Put it under the bridge») e frases de quen fai, que fai e que pasa («I push and it falls»).",
       "es": "Frases con preposiciones de lugar («The car is on the block», «Put it under the bridge») y frases de quién hace, qué hace y qué pasa («I push and it falls»)."
      },
+     "gramatica": {
+      "n": 11,
+      "nivel": "A2",
+      "titulo": {
+       "gl": "Presente continuo",
+       "es": "Presente continuo"
+      },
+      "paraFamilias": {
+       "gl": "O que está pasando agora: «It is raining», «The bear is sleeping».",
+       "es": "Lo que está pasando ahora: «It is raining», «The bear is sleeping»."
+      }
+     },
      "obxectivos": [
       {
        "gl": "Usar de forma verbal e espontánea as fórmulas de alternancia no xogo «My turn» e «Your turn» ao amorear e pasar bloques de madeira.",
@@ -25247,6 +26027,11 @@
        "espera": {
         "gl": "Esta semana abonda con que o entenda co teu xesto.",
         "es": "Esta semana basta con que lo entienda con tu gesto."
+       },
+       "fraseGramatica": {
+        "en": "It is raining.",
+        "gl": "Está chovendo.",
+        "es": "Está lloviendo."
        },
        "xaSabe": [
         {
@@ -25540,6 +26325,11 @@
         "gl": "Esta semana, que o faga sen que lle fagas o xesto.",
         "es": "Esta semana, que lo haga sin que le hagas el gesto."
        },
+       "fraseGramatica": {
+        "en": "We are jumping over the puddle.",
+        "gl": "Estamos saltando o charco.",
+        "es": "Estamos saltando el charco."
+       },
        "xaSabe": [
         {
          "tipo": "noun",
@@ -25759,6 +26549,11 @@
        "espera": {
         "gl": "Esta semana, que o diga contigo, nunha rutina ou nunha canción.",
         "es": "Esta semana, que lo diga contigo, en una rutina o en una canción."
+       },
+       "fraseGramatica": {
+        "en": "I am opening my umbrella.",
+        "gl": "Estou abrindo o paraugas.",
+        "es": "Estoy abriendo el paraguas."
        },
        "xaSabe": [
         {
@@ -26007,6 +26802,11 @@
        "espera": {
         "gl": "Esta semana, que o use só, xogando, sen que llo pidas.",
         "es": "Esta semana, que lo use solo, jugando, sin que se lo pidas."
+       },
+       "fraseGramatica": {
+        "en": "The rain is falling fast.",
+        "gl": "A chuvia está caendo rápido.",
+        "es": "La lluvia está cayendo rápido."
        },
        "xaSabe": [
         {
@@ -26280,6 +27080,18 @@
       "gl": "Palabras para cantidades («More juice in my cup», «A full plate on the table»).",
       "es": "Palabras para cantidades («More juice in my cup», «A full plate on the table»)."
      },
+     "gramatica": {
+      "n": 6,
+      "nivel": "A1",
+      "titulo": {
+       "gl": "Contables e incontables",
+       "es": "Contables e incontables"
+      },
+      "paraFamilias": {
+       "gl": "Cantidades: «some water», «more juice», «a lot of seeds».",
+       "es": "Cantidades: «some water», «more juice», «a lot of seeds»."
+      }
+     },
      "obxectivos": [
       {
        "gl": "Producir a fórmula social de entrega «Here you are» e a fórmula de cortesía de quen recibe «Thank you» en intercambios reais de alimentos simulados.",
@@ -26307,6 +27119,11 @@
        "espera": {
         "gl": "Esta semana abonda con que o entenda co teu xesto.",
         "es": "Esta semana basta con que lo entienda con tu gesto."
+       },
+       "fraseGramatica": {
+        "en": "Some juice, please.",
+        "gl": "Un pouco de zume, por favor.",
+        "es": "Un poco de zumo, por favor."
        },
        "xaSabe": [
         {
@@ -26608,6 +27425,11 @@
         "gl": "Esta semana, que o faga sen que lle fagas o xesto.",
         "es": "Esta semana, que lo haga sin que le hagas el gesto."
        },
+       "fraseGramatica": {
+        "en": "More bread!",
+        "gl": "Máis pan!",
+        "es": "¡Más pan!"
+       },
        "xaSabe": [
         {
          "tipo": "adjective",
@@ -26851,6 +27673,11 @@
        "espera": {
         "gl": "Esta semana, que o diga contigo, nunha rutina ou nunha canción.",
         "es": "Esta semana, que lo diga contigo, en una rutina o en una canción."
+       },
+       "fraseGramatica": {
+        "en": "A full plate.",
+        "gl": "Un prato cheo.",
+        "es": "Un plato lleno."
        },
        "xaSabe": [
         {
@@ -27134,6 +27961,11 @@
         "gl": "Esta semana, que o use só, xogando, sen que llo pidas.",
         "es": "Esta semana, que lo use solo, jugando, sin que se lo pidas."
        },
+       "fraseGramatica": {
+        "en": "A lot of noise!",
+        "gl": "Moito ruído!",
+        "es": "¡Mucho ruido!"
+       },
        "xaSabe": [
         {
          "tipo": "noun",
@@ -27394,6 +28226,18 @@
       "gl": "Palabras para cantidades («More juice in my cup», «A full plate on the table»).",
       "es": "Palabras para cantidades («More juice in my cup», «A full plate on the table»)."
      },
+     "gramatica": {
+      "n": 4,
+      "nivel": "A1",
+      "titulo": {
+       "gl": "Presente simple",
+       "es": "Presente simple"
+      },
+      "paraFamilias": {
+       "gl": "O que facemos sempre: «We sit in a circle», «The cow eats grass».",
+       "es": "Lo que hacemos siempre: «We sit in a circle», «The cow eats grass»."
+      }
+     },
      "obxectivos": [
       {
        "gl": "Producir a fórmula social de entrega «Here you are» e a fórmula de cortesía de quen recibe «Thank you» en intercambios reais de alimentos simulados.",
@@ -27421,6 +28265,11 @@
        "espera": {
         "gl": "Esta semana abonda con que o entenda co teu xesto.",
         "es": "Esta semana basta con que lo entienda con tu gesto."
+       },
+       "fraseGramatica": {
+        "en": "The seed grows.",
+        "gl": "A semente medra.",
+        "es": "La semilla crece."
        },
        "xaSabe": [
         {
@@ -27700,6 +28549,11 @@
         "gl": "Esta semana, que o faga sen que lle fagas o xesto.",
         "es": "Esta semana, que lo haga sin que le hagas el gesto."
        },
+       "fraseGramatica": {
+        "en": "The sunflower grows tall.",
+        "gl": "O xirasol medra alto.",
+        "es": "El girasol crece alto."
+       },
        "xaSabe": [
         {
          "tipo": "noun",
@@ -27919,6 +28773,11 @@
        "espera": {
         "gl": "Esta semana, que o diga contigo, nunha rutina ou nunha canción.",
         "es": "Esta semana, que lo diga contigo, en una rutina o en una canción."
+       },
+       "fraseGramatica": {
+        "en": "We dig the soil.",
+        "gl": "Cavamos a terra.",
+        "es": "Cavamos la tierra."
        },
        "xaSabe": [
         {
@@ -28177,6 +29036,11 @@
        "espera": {
         "gl": "Esta semana, que o use só, xogando, sen que llo pidas.",
         "es": "Esta semana, que lo use solo, jugando, sin que se lo pidas."
+       },
+       "fraseGramatica": {
+        "en": "Does the seed need water?",
+        "gl": "A semente precisa auga?",
+        "es": "¿La semilla necesita agua?"
        },
        "xaSabe": [
         {
@@ -28470,6 +29334,18 @@
       "gl": "Palabras para cantidades («More juice in my cup», «A full plate on the table»).",
       "es": "Palabras para cantidades («More juice in my cup», «A full plate on the table»)."
      },
+     "gramatica": {
+      "n": 8,
+      "nivel": "A1",
+      "titulo": {
+       "gl": "Preguntas con wh-",
+       "es": "Preguntas con wh-"
+      },
+      "paraFamilias": {
+       "gl": "Preguntar: «Where is the sun?», «What is it?», «Who is it?».",
+       "es": "Preguntar: «Where is the sun?», «What is it?», «Who is it?»."
+      }
+     },
      "obxectivos": [
       {
        "gl": "Producir a fórmula social de entrega «Here you are» e a fórmula de cortesía de quen recibe «Thank you» en intercambios reais de alimentos simulados.",
@@ -28497,6 +29373,11 @@
        "espera": {
         "gl": "Esta semana abonda con que o entenda co teu xesto.",
         "es": "Esta semana basta con que lo entienda con tu gesto."
+       },
+       "fraseGramatica": {
+        "en": "Who is it? A horse!",
+        "gl": "Quen é? Un cabalo!",
+        "es": "¿Quién es? ¡Un caballo!"
        },
        "xaSabe": [
         {
@@ -28784,6 +29665,11 @@
         "gl": "Esta semana, que o faga sen que lle fagas o xesto.",
         "es": "Esta semana, que lo haga sin que le hagas el gesto."
        },
+       "fraseGramatica": {
+        "en": "What does the cow say?",
+        "gl": "Que di a vaca?",
+        "es": "¿Qué dice la vaca?"
+       },
        "xaSabe": [
         {
          "tipo": "noun",
@@ -29017,6 +29903,11 @@
        "espera": {
         "gl": "Esta semana, que o diga contigo, nunha rutina ou nunha canción.",
         "es": "Esta semana, que lo diga contigo, en una rutina o en una canción."
+       },
+       "fraseGramatica": {
+        "en": "How does the horse walk?",
+        "gl": "Como anda o cabalo?",
+        "es": "¿Cómo anda el caballo?"
        },
        "xaSabe": [
         {
@@ -29290,6 +30181,11 @@
         "gl": "Esta semana, que o use só, xogando, sen que llo pidas.",
         "es": "Esta semana, que lo use solo, jugando, sin que se lo pidas."
        },
+       "fraseGramatica": {
+        "en": "Where is the sheep?",
+        "gl": "Onde está a ovella?",
+        "es": "¿Dónde está la oveja?"
+       },
        "xaSabe": [
         {
          "tipo": "noun",
@@ -29554,6 +30450,18 @@
       "gl": "Palabras para cantidades («More juice in my cup», «A full plate on the table»).",
       "es": "Palabras para cantidades («More juice in my cup», «A full plate on the table»)."
      },
+     "gramatica": {
+      "n": 9,
+      "nivel": "A1",
+      "titulo": {
+       "gl": "Preposicións de tempo",
+       "es": "Preposiciones de tiempo"
+      },
+      "paraFamilias": {
+       "gl": "Cando pasa: «in the morning», «at night», «on Monday».",
+       "es": "Cuándo pasa: «in the morning», «at night», «on Monday»."
+      }
+     },
      "obxectivos": [
       {
        "gl": "Producir a fórmula social de entrega «Here you are» e a fórmula de cortesía de quen recibe «Thank you» en intercambios reais de alimentos simulados.",
@@ -29581,6 +30489,11 @@
        "espera": {
         "gl": "Esta semana abonda con que o entenda co teu xesto.",
         "es": "Esta semana basta con que lo entienda con tu gesto."
+       },
+       "fraseGramatica": {
+        "en": "We clap in the morning.",
+        "gl": "Aplaudimos pola mañá.",
+        "es": "Aplaudimos por la mañana."
        },
        "xaSabe": [
         {
@@ -29860,6 +30773,11 @@
         "gl": "Esta semana, que o faga sen que lle fagas o xesto.",
         "es": "Esta semana, que lo haga sin que le hagas el gesto."
        },
+       "fraseGramatica": {
+        "en": "We sing on Monday.",
+        "gl": "Cantamos o luns.",
+        "es": "Cantamos el lunes."
+       },
        "xaSabe": [
         {
          "tipo": "phrase",
@@ -30089,6 +31007,11 @@
        "espera": {
         "gl": "Esta semana, que o diga contigo, nunha rutina ou nunha canción.",
         "es": "Esta semana, que lo diga contigo, en una rutina o en una canción."
+       },
+       "fraseGramatica": {
+        "en": "We sleep at night.",
+        "gl": "Durmimos pola noite.",
+        "es": "Dormimos por la noche."
        },
        "xaSabe": [
         {
@@ -30358,6 +31281,11 @@
         "gl": "Esta semana, que o use só, xogando, sen que llo pidas.",
         "es": "Esta semana, que lo use solo, jugando, sin que se lo pidas."
        },
+       "fraseGramatica": {
+        "en": "Clap high, clap low!",
+        "gl": "Aplaude arriba, aplaude abaixo!",
+        "es": "¡Aplaude arriba, aplaude abajo!"
+       },
        "xaSabe": [
         {
          "tipo": "adjective",
@@ -30618,6 +31546,18 @@
       "gl": "Palabras para cantidades («More juice in my cup», «A full plate on the table»).",
       "es": "Palabras para cantidades («More juice in my cup», «A full plate on the table»)."
      },
+     "gramatica": {
+      "n": 19,
+      "nivel": "A2",
+      "titulo": {
+       "gl": "Preposicións de movemento",
+       "es": "Preposiciones de movimiento"
+      },
+      "paraFamilias": {
+       "gl": "Cara a onde: «into the boat», «across the river», «through the waves».",
+       "es": "Hacia dónde: «into the boat», «across the river», «through the waves»."
+      }
+     },
      "obxectivos": [
       {
        "gl": "Producir a fórmula social de entrega «Here you are» e a fórmula de cortesía de quen recibe «Thank you» en intercambios reais de alimentos simulados.",
@@ -30645,6 +31585,11 @@
        "espera": {
         "gl": "Esta semana abonda con que o entenda co teu xesto.",
         "es": "Esta semana basta con que lo entienda con tu gesto."
+       },
+       "fraseGramatica": {
+        "en": "Row the boat through the waves.",
+        "gl": "Rema o barco entre as ondas.",
+        "es": "Rema el barco entre las olas."
        },
        "xaSabe": [
         {
@@ -30928,6 +31873,11 @@
         "gl": "Esta semana, que o faga sen que lle fagas o xesto.",
         "es": "Esta semana, que lo haga sin que le hagas el gesto."
        },
+       "fraseGramatica": {
+        "en": "Get into the boat.",
+        "gl": "Entra no barco.",
+        "es": "Sube al barco."
+       },
        "xaSabe": [
         {
          "tipo": "verb",
@@ -31151,6 +32101,11 @@
        "espera": {
         "gl": "Esta semana, que o diga contigo, nunha rutina ou nunha canción.",
         "es": "Esta semana, que lo diga contigo, en una rutina o en una canción."
+       },
+       "fraseGramatica": {
+        "en": "Swim to the shell.",
+        "gl": "Nada ata a cuncha.",
+        "es": "Nada hasta la concha."
        },
        "xaSabe": [
         {
@@ -31403,6 +32358,11 @@
        "espera": {
         "gl": "Esta semana, que o use só, xogando, sen que llo pidas.",
         "es": "Esta semana, que lo use solo, jugando, sin que se lo pidas."
+       },
+       "fraseGramatica": {
+        "en": "Get out of the water.",
+        "gl": "Sae da auga.",
+        "es": "Sal del agua."
        },
        "xaSabe": [
         {
@@ -31746,6 +32706,18 @@
       "gl": "Frases de causa e efecto («Why…? Because the cat is sick») e de orde no tempo («First…, then…»).",
       "es": "Frases de causa y efecto («Why…? Because the cat is sick») y de orden en el tiempo («First…, then…»)."
      },
+     "gramatica": {
+      "n": 11,
+      "nivel": "A2",
+      "titulo": {
+       "gl": "Presente continuo",
+       "es": "Presente continuo"
+      },
+      "paraFamilias": {
+       "gl": "O que está pasando agora: «It is raining», «The bear is sleeping».",
+       "es": "Lo que está pasando ahora: «It is raining», «The bear is sleeping»."
+      }
+     },
      "obxectivos": [
       {
        "gl": "Formular explicacións causais con conectores subordinados («The puppy is crying because his leg is hurt»).",
@@ -31773,6 +32745,11 @@
        "espera": {
         "gl": "Esta semana abonda con que o entenda co teu xesto.",
         "es": "Esta semana basta con que lo entienda con tu gesto."
+       },
+       "fraseGramatica": {
+        "en": "The bear is sleeping.",
+        "gl": "O oso está durmindo.",
+        "es": "El oso está durmiendo."
        },
        "xaSabe": [],
        "novas": [
@@ -31978,6 +32955,11 @@
        "espera": {
         "gl": "Esta semana, que o faga sen que lle fagas o xesto.",
         "es": "Esta semana, que lo haga sin que le hagas el gesto."
+       },
+       "fraseGramatica": {
+        "en": "Bears sleep in winter.",
+        "gl": "Os osos dormen no inverno.",
+        "es": "Los osos duermen en invierno."
        },
        "xaSabe": [
         {
@@ -32250,6 +33232,11 @@
        "espera": {
         "gl": "Esta semana, que o diga contigo, nunha rutina ou nunha canción.",
         "es": "Esta semana, que lo diga contigo, en una rutina o en una canción."
+       },
+       "fraseGramatica": {
+        "en": "I am carrying my backpack.",
+        "gl": "Levo a mochila.",
+        "es": "Llevo la mochila."
        },
        "xaSabe": [
         {
@@ -32546,6 +33533,11 @@
        "espera": {
         "gl": "Esta semana, que o use só, xogando, sen que llo pidas.",
         "es": "Esta semana, que lo use solo, jugando, sin que se lo pidas."
+       },
+       "fraseGramatica": {
+        "en": "The bell is ringing!",
+        "gl": "Está soando a campá!",
+        "es": "¡Está sonando la campana!"
        },
        "xaSabe": [
         {
@@ -32853,6 +33845,18 @@
       "gl": "Frases de causa e efecto («Why…? Because the cat is sick») e de orde no tempo («First…, then…»).",
       "es": "Frases de causa y efecto («Why…? Because the cat is sick») y de orden en el tiempo («First…, then…»)."
      },
+     "gramatica": {
+      "n": 12,
+      "nivel": "A2",
+      "titulo": {
+       "gl": "Pasado de to be",
+       "es": "Pasado de to be"
+      },
+      "paraFamilias": {
+       "gl": "Como era antes: «It was cold», «There was a squirrel».",
+       "es": "Cómo era antes: «It was cold», «There was a squirrel»."
+      }
+     },
      "obxectivos": [
       {
        "gl": "Formular explicacións causais con conectores subordinados («The puppy is crying because his leg is hurt»).",
@@ -32880,6 +33884,11 @@
        "espera": {
         "gl": "Esta semana abonda con que o entenda co teu xesto.",
         "es": "Esta semana basta con que lo entienda con tu gesto."
+       },
+       "fraseGramatica": {
+        "en": "The squirrel was in the tree.",
+        "gl": "O esquío estaba na árbore.",
+        "es": "La ardilla estaba en el árbol."
        },
        "xaSabe": [
         {
@@ -33191,6 +34200,11 @@
         "gl": "Esta semana, que o faga sen que lle fagas o xesto.",
         "es": "Esta semana, que lo haga sin que le hagas el gesto."
        },
+       "fraseGramatica": {
+        "en": "There was a boar in the forest.",
+        "gl": "Había un xabaril no bosque.",
+        "es": "Había un jabalí en el bosque."
+       },
        "xaSabe": [
         {
          "tipo": "noun",
@@ -33462,6 +34476,11 @@
        "espera": {
         "gl": "Esta semana, que o diga contigo, nunha rutina ou nunha canción.",
         "es": "Esta semana, que lo diga contigo, en una rutina o en una canción."
+       },
+       "fraseGramatica": {
+        "en": "The chestnuts were on the ground.",
+        "gl": "As castañas estaban no chan.",
+        "es": "Las castañas estaban en el suelo."
        },
        "xaSabe": [
         {
@@ -33758,6 +34777,11 @@
        "espera": {
         "gl": "Esta semana, que o use só, xogando, sen que llo pidas.",
         "es": "Esta semana, que lo use solo, jugando, sin que se lo pidas."
+       },
+       "fraseGramatica": {
+        "en": "Was it hiding?",
+        "gl": "Estaba escondido?",
+        "es": "¿Estaba escondido?"
        },
        "xaSabe": [
         {
@@ -34065,6 +35089,18 @@
       "gl": "Frases de causa e efecto («Why…? Because the cat is sick») e de orde no tempo («First…, then…»).",
       "es": "Frases de causa y efecto («Why…? Because the cat is sick») y de orden en el tiempo («First…, then…»)."
      },
+     "gramatica": {
+      "n": 13,
+      "nivel": "A2",
+      "titulo": {
+       "gl": "Pasado simple",
+       "es": "Pasado simple"
+      },
+      "paraFamilias": {
+       "gl": "Contar o que pasou: «The chestnut rolled», «We went home».",
+       "es": "Contar lo que pasó: «The chestnut rolled», «We went home»."
+      }
+     },
      "obxectivos": [
       {
        "gl": "Formular explicacións causais con conectores subordinados («The puppy is crying because his leg is hurt»).",
@@ -34092,6 +35128,11 @@
        "espera": {
         "gl": "Esta semana abonda con que o entenda co teu xesto.",
         "es": "Esta semana basta con que lo entienda con tu gesto."
+       },
+       "fraseGramatica": {
+        "en": "The chestnut rolled downhill.",
+        "gl": "A castaña rodou costa abaixo.",
+        "es": "La castaña rodó cuesta abajo."
        },
        "xaSabe": [
         {
@@ -34389,6 +35430,11 @@
         "gl": "Esta semana, que o faga sen que lle fagas o xesto.",
         "es": "Esta semana, que lo haga sin que le hagas el gesto."
        },
+       "fraseGramatica": {
+        "en": "The hedgehog curled into a ball.",
+        "gl": "O ourizo fíxose unha bóla.",
+        "es": "El erizo se hizo una bola."
+       },
        "xaSabe": [
         {
          "tipo": "verb",
@@ -34646,6 +35692,11 @@
        "espera": {
         "gl": "Esta semana, que o diga contigo, nunha rutina ou nunha canción.",
         "es": "Esta semana, que lo diga contigo, en una rutina o en una canción."
+       },
+       "fraseGramatica": {
+        "en": "We danced together.",
+        "gl": "Bailamos xuntos.",
+        "es": "Bailamos juntos."
        },
        "xaSabe": [
         {
@@ -34942,6 +35993,11 @@
        "espera": {
         "gl": "Esta semana, que o use só, xogando, sen que llo pidas.",
         "es": "Esta semana, que lo use solo, jugando, sin que se lo pidas."
+       },
+       "fraseGramatica": {
+        "en": "Did it hurt? Yes, it did.",
+        "gl": "Doeulle? Si.",
+        "es": "¿Le dolió? Sí."
        },
        "xaSabe": [
         {
@@ -35249,6 +36305,18 @@
       "gl": "Frases de causa e efecto («Why…? Because the cat is sick») e de orde no tempo («First…, then…»).",
       "es": "Frases de causa y efecto («Why…? Because the cat is sick») y de orden en el tiempo («First…, then…»)."
      },
+     "gramatica": {
+      "n": 13,
+      "nivel": "A2",
+      "titulo": {
+       "gl": "Pasado simple",
+       "es": "Pasado simple"
+      },
+      "paraFamilias": {
+       "gl": "Contar o que pasou: «The chestnut rolled», «We went home».",
+       "es": "Contar lo que pasó: «The chestnut rolled», «We went home»."
+      }
+     },
      "obxectivos": [
       {
        "gl": "Formular explicacións causais con conectores subordinados («The puppy is crying because his leg is hurt»).",
@@ -35276,6 +36344,11 @@
        "espera": {
         "gl": "Esta semana abonda con que o entenda co teu xesto.",
         "es": "Esta semana basta con que lo entienda con tu gesto."
+       },
+       "fraseGramatica": {
+        "en": "It was cold last night.",
+        "gl": "Onte pola noite facía frío.",
+        "es": "Anoche hacía frío."
        },
        "xaSabe": [
         {
@@ -35587,6 +36660,11 @@
         "gl": "Esta semana, que o faga sen que lle fagas o xesto.",
         "es": "Esta semana, que lo haga sin que le hagas el gesto."
        },
+       "fraseGramatica": {
+        "en": "The sun went down.",
+        "gl": "Púxose o sol.",
+        "es": "Se puso el sol."
+       },
        "xaSabe": [
         {
          "tipo": "noun",
@@ -35858,6 +36936,11 @@
        "espera": {
         "gl": "Esta semana, que o diga contigo, nunha rutina ou nunha canción.",
         "es": "Esta semana, que lo diga contigo, en una rutina o en una canción."
+       },
+       "fraseGramatica": {
+        "en": "We played the drum.",
+        "gl": "Tocamos o tambor.",
+        "es": "Tocamos el tambor."
        },
        "xaSabe": [
         {
@@ -36154,6 +37237,11 @@
        "espera": {
         "gl": "Esta semana, que o use só, xogando, sen que llo pidas.",
         "es": "Esta semana, que lo use solo, jugando, sin que se lo pidas."
+       },
+       "fraseGramatica": {
+        "en": "The pond froze.",
+        "gl": "Xeou a charca.",
+        "es": "Se heló la charca."
        },
        "xaSabe": [
         {
@@ -36461,6 +37549,18 @@
       "gl": "Frases de causa e efecto («Why…? Because the cat is sick») e de orde no tempo («First…, then…»).",
       "es": "Frases de causa y efecto («Why…? Because the cat is sick») y de orden en el tiempo («First…, then…»)."
      },
+     "gramatica": {
+      "n": 20,
+      "nivel": "A2",
+      "titulo": {
+       "gl": "Conectores básicos",
+       "es": "Conectores básicos"
+      },
+      "paraFamilias": {
+       "gl": "Unir dúas ideas: «We pull and pull, but it doesn't move», «because».",
+       "es": "Unir dos ideas: «We pull and pull, but it doesn't move», «because»."
+      }
+     },
      "obxectivos": [
       {
        "gl": "Formular explicacións causais con conectores subordinados («The puppy is crying because his leg is hurt»).",
@@ -36488,6 +37588,11 @@
        "espera": {
         "gl": "Esta semana abonda con que o entenda co teu xesto.",
         "es": "Esta semana basta con que lo entienda con tu gesto."
+       },
+       "fraseGramatica": {
+        "en": "We run because the storm is here.",
+        "gl": "Corremos porque chegou a tormenta.",
+        "es": "Corremos porque ha llegado la tormenta."
        },
        "xaSabe": [
         {
@@ -36789,6 +37894,11 @@
         "gl": "Esta semana, que o faga sen que lle fagas o xesto.",
         "es": "Esta semana, que lo haga sin que le hagas el gesto."
        },
+       "fraseGramatica": {
+        "en": "It is cloudy, so we take the umbrella.",
+        "gl": "Está nubrado, así que levamos o paraugas.",
+        "es": "Está nublado, así que llevamos el paraguas."
+       },
        "xaSabe": [
         {
          "tipo": "noun",
@@ -37026,6 +38136,11 @@
        "espera": {
         "gl": "Esta semana, que o diga contigo, nunha rutina ou nunha canción.",
         "es": "Esta semana, que lo diga contigo, en una rutina o en una canción."
+       },
+       "fraseGramatica": {
+        "en": "We hide under the umbrella because it is raining.",
+        "gl": "Escondémonos baixo o paraugas porque chove.",
+        "es": "Nos escondemos bajo el paraguas porque llueve."
        },
        "xaSabe": [
         {
@@ -37306,6 +38421,11 @@
        "espera": {
         "gl": "Esta semana, que o use só, xogando, sen que llo pidas.",
         "es": "Esta semana, que lo use solo, jugando, sin que se lo pidas."
+       },
+       "fraseGramatica": {
+        "en": "I am wet, but I am happy.",
+        "gl": "Estou mollado, pero estou contento.",
+        "es": "Estoy mojado, pero estoy contento."
        },
        "xaSabe": [
         {
@@ -37597,6 +38717,18 @@
       "gl": "Frases de condición e de tempo («When it rains, we need boots»; «Put your feet into the boots»).",
       "es": "Frases de condición y de tiempo («When it rains, we need boots»; «Put your feet into the boots»)."
      },
+     "gramatica": {
+      "n": 15,
+      "nivel": "A2",
+      "titulo": {
+       "gl": "Pronomes obxecto e reflexivos",
+       "es": "Pronombres objeto y reflexivos"
+      },
+      "paraFamilias": {
+       "gl": "A quen: «Look at me», «Help him», «I can do it myself».",
+       "es": "A quién: «Look at me», «Help him», «I can do it myself»."
+      }
+     },
      "obxectivos": [
       {
        "gl": "Xustificar a escolla de roupa de abrigo e calzado segundo un tempo simulado («I put on my boots because it is raining outside»).",
@@ -37624,6 +38756,11 @@
        "espera": {
         "gl": "Esta semana abonda con que o entenda co teu xesto.",
         "es": "Esta semana basta con que lo entienda con tu gesto."
+       },
+       "fraseGramatica": {
+        "en": "The wolf can see you!",
+        "gl": "O lobo pódete ver!",
+        "es": "¡El lobo te puede ver!"
        },
        "xaSabe": [
         {
@@ -37933,6 +39070,11 @@
         "gl": "Esta semana, que o faga sen que lle fagas o xesto.",
         "es": "Esta semana, que lo haga sin que le hagas el gesto."
        },
+       "fraseGramatica": {
+        "en": "Look at me: I am a horse.",
+        "gl": "Mírame: son un cabalo.",
+        "es": "Mírame: soy un caballo."
+       },
        "xaSabe": [
         {
          "tipo": "noun",
@@ -38156,6 +39298,11 @@
        "espera": {
         "gl": "Esta semana, que o diga contigo, nunha rutina ou nunha canción.",
         "es": "Esta semana, que lo diga contigo, en una rutina o en una canción."
+       },
+       "fraseGramatica": {
+        "en": "Follow him!",
+        "gl": "Ségueo!",
+        "es": "¡Síguelo!"
        },
        "xaSabe": [
         {
@@ -38432,6 +39579,11 @@
        "espera": {
         "gl": "Esta semana, que o use só, xogando, sen que llo pidas.",
         "es": "Esta semana, que lo use solo, jugando, sin que se lo pidas."
+       },
+       "fraseGramatica": {
+        "en": "The fox is watching us.",
+        "gl": "O raposo está mirándonos.",
+        "es": "El zorro nos está mirando."
        },
        "xaSabe": [
         {
@@ -38729,6 +39881,18 @@
       "gl": "Frases de condición e de tempo («When it rains, we need boots»; «Put your feet into the boots»).",
       "es": "Frases de condición y de tiempo («When it rains, we need boots»; «Put your feet into the boots»)."
      },
+     "gramatica": {
+      "n": 16,
+      "nivel": "A2",
+      "titulo": {
+       "gl": "Adxectivos: comparativos e superlativos",
+       "es": "Adjetivos: comparativos y superlativos"
+      },
+      "paraFamilias": {
+       "gl": "Comparar: «bigger», «as big as», «the biggest».",
+       "es": "Comparar: «bigger», «as big as», «the biggest»."
+      }
+     },
      "obxectivos": [
       {
        "gl": "Xustificar a escolla de roupa de abrigo e calzado segundo un tempo simulado («I put on my boots because it is raining outside»).",
@@ -38756,6 +39920,11 @@
        "espera": {
         "gl": "Esta semana abonda con que o entenda co teu xesto.",
         "es": "Esta semana basta con que lo entienda con tu gesto."
+       },
+       "fraseGramatica": {
+        "en": "The honey is sweeter than the apple.",
+        "gl": "O mel é máis doce ca a mazá.",
+        "es": "La miel es más dulce que la manzana."
        },
        "xaSabe": [
         {
@@ -39067,6 +40236,11 @@
         "gl": "Esta semana, que o faga sen que lle fagas o xesto.",
         "es": "Esta semana, que lo haga sin que le hagas el gesto."
        },
+       "fraseGramatica": {
+        "en": "This flower is bigger.",
+        "gl": "Esta flor é máis grande.",
+        "es": "Esta flor es más grande."
+       },
        "xaSabe": [
         {
          "tipo": "noun",
@@ -39324,6 +40498,11 @@
        "espera": {
         "gl": "Esta semana, que o diga contigo, nunha rutina ou nunha canción.",
         "es": "Esta semana, que lo diga contigo, en una rutina o en una canción."
+       },
+       "fraseGramatica": {
+        "en": "The bee is as small as my finger.",
+        "gl": "A abella é tan pequena coma o meu dedo.",
+        "es": "La abeja es tan pequeña como mi dedo."
        },
        "xaSabe": [
         {
@@ -39621,6 +40800,11 @@
         "gl": "Esta semana, que o use só, xogando, sen que llo pidas.",
         "es": "Esta semana, que lo use solo, jugando, sin que se lo pidas."
        },
+       "fraseGramatica": {
+        "en": "The red flower is the biggest.",
+        "gl": "A flor vermella é a máis grande.",
+        "es": "La flor roja es la más grande."
+       },
        "xaSabe": [
         {
          "tipo": "verb",
@@ -39913,6 +41097,18 @@
       "gl": "Frases de condición e de tempo («When it rains, we need boots»; «Put your feet into the boots»).",
       "es": "Frases de condición y de tiempo («When it rains, we need boots»; «Put your feet into the boots»)."
      },
+     "gramatica": {
+      "n": 14,
+      "nivel": "A2",
+      "titulo": {
+       "gl": "Pasado continuo",
+       "es": "Pasado continuo"
+      },
+      "paraFamilias": {
+       "gl": "O que estaba pasando: «The wolf was sleeping when the sheep came».",
+       "es": "Lo que estaba pasando: «The wolf was sleeping when the sheep came»."
+      }
+     },
      "obxectivos": [
       {
        "gl": "Xustificar a escolla de roupa de abrigo e calzado segundo un tempo simulado («I put on my boots because it is raining outside»).",
@@ -39940,6 +41136,11 @@
        "espera": {
         "gl": "Esta semana abonda con que o entenda co teu xesto.",
         "es": "Esta semana basta con que lo entienda con tu gesto."
+       },
+       "fraseGramatica": {
+        "en": "The wolf was sleeping when the sheep came.",
+        "gl": "O lobo estaba durmindo cando chegou a ovella.",
+        "es": "El lobo estaba durmiendo cuando llegó la oveja."
        },
        "xaSabe": [
         {
@@ -40233,6 +41434,11 @@
         "gl": "Esta semana, que o faga sen que lle fagas o xesto.",
         "es": "Esta semana, que lo haga sin que le hagas el gesto."
        },
+       "fraseGramatica": {
+        "en": "We were walking calmly.",
+        "gl": "Estabamos camiñando con calma.",
+        "es": "Estábamos andando con calma."
+       },
        "xaSabe": [
         {
          "tipo": "noun",
@@ -40462,6 +41668,11 @@
        "espera": {
         "gl": "Esta semana, que o diga contigo, nunha rutina ou nunha canción.",
         "es": "Esta semana, que lo diga contigo, en una rutina o en una canción."
+       },
+       "fraseGramatica": {
+        "en": "It was raining when we went out.",
+        "gl": "Estaba chovendo cando saímos.",
+        "es": "Estaba lloviendo cuando salimos."
        },
        "xaSabe": [
         {
@@ -40745,6 +41956,11 @@
         "gl": "Esta semana, que o use só, xogando, sen que llo pidas.",
         "es": "Esta semana, que lo use solo, jugando, sin que se lo pidas."
        },
+       "fraseGramatica": {
+        "en": "While the wolf was sleeping, we walked on tiptoe.",
+        "gl": "Mentres o lobo durmía, camiñamos de puntillas.",
+        "es": "Mientras el lobo dormía, andamos de puntillas."
+       },
        "xaSabe": [
         {
          "tipo": "formula",
@@ -41019,6 +42235,18 @@
       "gl": "Frases de condición e de tempo («When it rains, we need boots»; «Put your feet into the boots»).",
       "es": "Frases de condición y de tiempo («When it rains, we need boots»; «Put your feet into the boots»)."
      },
+     "gramatica": {
+      "n": 20,
+      "nivel": "A2",
+      "titulo": {
+       "gl": "Conectores básicos",
+       "es": "Conectores básicos"
+      },
+      "paraFamilias": {
+       "gl": "Unir dúas ideas: «We pull and pull, but it doesn't move», «because».",
+       "es": "Unir dos ideas: «We pull and pull, but it doesn't move», «because»."
+      }
+     },
      "obxectivos": [
       {
        "gl": "Xustificar a escolla de roupa de abrigo e calzado segundo un tempo simulado («I put on my boots because it is raining outside»).",
@@ -41046,6 +42274,11 @@
        "espera": {
         "gl": "Esta semana abonda con que o entenda co teu xesto.",
         "es": "Esta semana basta con que lo entienda con tu gesto."
+       },
+       "fraseGramatica": {
+        "en": "We pull and pull, but it doesn't move.",
+        "gl": "Tiramos e tiramos, pero non se move.",
+        "es": "Tiramos y tiramos, pero no se mueve."
        },
        "xaSabe": [
         {
@@ -41353,6 +42586,11 @@
         "gl": "Esta semana, que o faga sen que lle fagas o xesto.",
         "es": "Esta semana, que lo haga sin que le hagas el gesto."
        },
+       "fraseGramatica": {
+        "en": "We help, so it comes out.",
+        "gl": "Axudamos, así que sae.",
+        "es": "Ayudamos, así que sale."
+       },
        "xaSabe": [
         {
          "tipo": "verb",
@@ -41624,6 +42862,11 @@
        "espera": {
         "gl": "Esta semana, que o diga contigo, nunha rutina ou nunha canción.",
         "es": "Esta semana, que lo diga contigo, en una rutina o en una canción."
+       },
+       "fraseGramatica": {
+        "en": "It is heavy because it is enormous.",
+        "gl": "Pesa porque é enorme.",
+        "es": "Pesa porque es enorme."
        },
        "xaSabe": [
         {
@@ -41920,6 +43163,11 @@
        "espera": {
         "gl": "Esta semana, que o use só, xogando, sen que llo pidas.",
         "es": "Esta semana, que lo use solo, jugando, sin que se lo pidas."
+       },
+       "fraseGramatica": {
+        "en": "Pull and help!",
+        "gl": "Tira e axuda!",
+        "es": "¡Tira y ayuda!"
        },
        "xaSabe": [
         {
@@ -42227,6 +43475,18 @@
       "gl": "Frases de condición e de tempo («When it rains, we need boots»; «Put your feet into the boots»).",
       "es": "Frases de condición y de tiempo («When it rains, we need boots»; «Put your feet into the boots»)."
      },
+     "gramatica": {
+      "n": 17,
+      "nivel": "A2",
+      "titulo": {
+       "gl": "O futuro",
+       "es": "El futuro"
+      },
+      "paraFamilias": {
+       "gl": "O que imos facer: «We are going to swim», «I will help you».",
+       "es": "Lo que vamos a hacer: «We are going to swim», «I will help you»."
+      }
+     },
      "obxectivos": [
       {
        "gl": "Xustificar a escolla de roupa de abrigo e calzado segundo un tempo simulado («I put on my boots because it is raining outside»).",
@@ -42254,6 +43514,11 @@
        "espera": {
         "gl": "Esta semana abonda con que o entenda co teu xesto.",
         "es": "Esta semana basta con que lo entienda con tu gesto."
+       },
+       "fraseGramatica": {
+        "en": "We are going to swim in the sea.",
+        "gl": "Imos nadar no mar.",
+        "es": "Vamos a nadar en el mar."
        },
        "xaSabe": [
         {
@@ -42527,6 +43792,11 @@
         "gl": "Esta semana, que o faga sen que lle fagas o xesto.",
         "es": "Esta semana, que lo haga sin que le hagas el gesto."
        },
+       "fraseGramatica": {
+        "en": "Look at the clouds: it is going to rain.",
+        "gl": "Mira as nubes: vai chover.",
+        "es": "Mira las nubes: va a llover."
+       },
        "xaSabe": [
         {
          "tipo": "noun",
@@ -42736,6 +44006,11 @@
        "espera": {
         "gl": "Esta semana, que o diga contigo, nunha rutina ou nunha canción.",
         "es": "Esta semana, que lo diga contigo, en una rutina o en una canción."
+       },
+       "fraseGramatica": {
+        "en": "I will help you.",
+        "gl": "Eu axúdote.",
+        "es": "Yo te ayudo."
        },
        "xaSabe": [
         {
@@ -42988,6 +44263,11 @@
        "espera": {
         "gl": "Esta semana, que o use só, xogando, sen que llo pidas.",
         "es": "Esta semana, que lo use solo, jugando, sin que se lo pidas."
+       },
+       "fraseGramatica": {
+        "en": "The sea will be calm.",
+        "gl": "O mar estará en calma.",
+        "es": "El mar estará en calma."
        },
        "xaSabe": [
         {
@@ -43345,6 +44625,18 @@
       "gl": "Dicir para que se fai algo e por que («I am blending yellow and blue because I want to make green»); onde está («between the cup and the paper»).",
       "es": "Decir para qué se hace algo y por qué («I am blending yellow and blue because I want to make green»); dónde está («between the cup and the paper»)."
      },
+     "gramatica": {
+      "n": 15,
+      "nivel": "A2",
+      "titulo": {
+       "gl": "Pronomes obxecto e reflexivos",
+       "es": "Pronombres objeto y reflexivos"
+      },
+      "paraFamilias": {
+       "gl": "A quen: «Look at me», «Help him», «I can do it myself».",
+       "es": "A quién: «Look at me», «Help him», «I can do it myself»."
+      }
+     },
      "obxectivos": [
       {
        "gl": "Empregar linguaxe argumentativa estruturada para resolver a posesión de materiais compartidos («I was using the scissors first, but you can have them next»).",
@@ -43372,6 +44664,11 @@
        "espera": {
         "gl": "Esta semana abonda con que o entenda co teu xesto.",
         "es": "Esta semana basta con que lo entienda con tu gesto."
+       },
+       "fraseGramatica": {
+        "en": "I hang my coat myself.",
+        "gl": "Colgo o abrigo eu só.",
+        "es": "Cuelgo el abrigo yo solo."
        },
        "xaSabe": [],
        "novas": [
@@ -43577,6 +44874,11 @@
        "espera": {
         "gl": "Esta semana, que o faga sen que lle fagas o xesto.",
         "es": "Esta semana, que lo haga sin que le hagas el gesto."
+       },
+       "fraseGramatica": {
+        "en": "Help her, please.",
+        "gl": "Axúdaa, por favor.",
+        "es": "Ayúdala, por favor."
        },
        "xaSabe": [
         {
@@ -43849,6 +45151,11 @@
        "espera": {
         "gl": "Esta semana, que o diga contigo, nunha rutina ou nunha canción.",
         "es": "Esta semana, que lo diga contigo, en una rutina o en una canción."
+       },
+       "fraseGramatica": {
+        "en": "I can do it myself.",
+        "gl": "Podo facelo eu só.",
+        "es": "Puedo hacerlo yo solo."
        },
        "xaSabe": [
         {
@@ -44145,6 +45452,11 @@
        "espera": {
         "gl": "Esta semana, que o use só, xogando, sen que llo pidas.",
         "es": "Esta semana, que lo use solo, jugando, sin que se lo pidas."
+       },
+       "fraseGramatica": {
+        "en": "Give me the green card.",
+        "gl": "Dáme a tarxeta verde.",
+        "es": "Dame la tarjeta verde."
        },
        "xaSabe": [
         {
@@ -44452,6 +45764,18 @@
       "gl": "Dicir para que se fai algo e por que («I am blending yellow and blue because I want to make green»); onde está («between the cup and the paper»).",
       "es": "Decir para qué se hace algo y por qué («I am blending yellow and blue because I want to make green»); dónde está («between the cup and the paper»)."
      },
+     "gramatica": {
+      "n": 16,
+      "nivel": "A2",
+      "titulo": {
+       "gl": "Adxectivos: comparativos e superlativos",
+       "es": "Adjetivos: comparativos y superlativos"
+      },
+      "paraFamilias": {
+       "gl": "Comparar: «bigger», «as big as», «the biggest».",
+       "es": "Comparar: «bigger», «as big as», «the biggest»."
+      }
+     },
      "obxectivos": [
       {
        "gl": "Empregar linguaxe argumentativa estruturada para resolver a posesión de materiais compartidos («I was using the scissors first, but you can have them next»).",
@@ -44479,6 +45803,11 @@
        "espera": {
         "gl": "Esta semana abonda con que o entenda co teu xesto.",
         "es": "Esta semana basta con que lo entienda con tu gesto."
+       },
+       "fraseGramatica": {
+        "en": "This leaf is rougher than that one.",
+        "gl": "Esta folla é máis áspera ca esa.",
+        "es": "Esta hoja es más áspera que esa."
        },
        "xaSabe": [
         {
@@ -44790,6 +46119,11 @@
         "gl": "Esta semana, que o faga sen que lle fagas o xesto.",
         "es": "Esta semana, que lo haga sin que le hagas el gesto."
        },
+       "fraseGramatica": {
+        "en": "The smoothest leaf goes in the hoop.",
+        "gl": "A folla máis lisa vai no aro.",
+        "es": "La hoja más lisa va en el aro."
+       },
        "xaSabe": [
         {
          "tipo": "noun",
@@ -45061,6 +46395,11 @@
        "espera": {
         "gl": "Esta semana, que o diga contigo, nunha rutina ou nunha canción.",
         "es": "Esta semana, que lo diga contigo, en una rutina o en una canción."
+       },
+       "fraseGramatica": {
+        "en": "My leaf is as brown as yours.",
+        "gl": "A miña folla é tan marrón coma a túa.",
+        "es": "Mi hoja es tan marrón como la tuya."
        },
        "xaSabe": [
         {
@@ -45357,6 +46696,11 @@
        "espera": {
         "gl": "Esta semana, que o use só, xogando, sen que llo pidas.",
         "es": "Esta semana, que lo use solo, jugando, sin que se lo pidas."
+       },
+       "fraseGramatica": {
+        "en": "This hoop is the biggest.",
+        "gl": "Este aro é o máis grande.",
+        "es": "Este aro es el más grande."
        },
        "xaSabe": [
         {
@@ -45664,6 +47008,18 @@
       "gl": "Dicir para que se fai algo e por que («I am blending yellow and blue because I want to make green»); onde está («between the cup and the paper»).",
       "es": "Decir para qué se hace algo y por qué («I am blending yellow and blue because I want to make green»); dónde está («between the cup and the paper»)."
      },
+     "gramatica": {
+      "n": 20,
+      "nivel": "A2",
+      "titulo": {
+       "gl": "Conectores básicos",
+       "es": "Conectores básicos"
+      },
+      "paraFamilias": {
+       "gl": "Unir dúas ideas: «We pull and pull, but it doesn't move», «because».",
+       "es": "Unir dos ideas: «We pull and pull, but it doesn't move», «because»."
+      }
+     },
      "obxectivos": [
       {
        "gl": "Empregar linguaxe argumentativa estruturada para resolver a posesión de materiais compartidos («I was using the scissors first, but you can have them next»).",
@@ -45691,6 +47047,11 @@
        "espera": {
         "gl": "Esta semana abonda con que o entenda co teu xesto.",
         "es": "Esta semana basta con que lo entienda con tu gesto."
+       },
+       "fraseGramatica": {
+        "en": "It is round, so it is a chestnut.",
+        "gl": "É redonda, así que é unha castaña.",
+        "es": "Es redonda, así que es una castaña."
        },
        "xaSabe": [
         {
@@ -46002,6 +47363,11 @@
         "gl": "Esta semana, que o faga sen que lle fagas o xesto.",
         "es": "Esta semana, que lo haga sin que le hagas el gesto."
        },
+       "fraseGramatica": {
+        "en": "It is cold, but it isn't wet.",
+        "gl": "Está fría, pero non está mollada.",
+        "es": "Está fría, pero no está mojada."
+       },
        "xaSabe": [
         {
          "tipo": "noun",
@@ -46259,6 +47625,11 @@
        "espera": {
         "gl": "Esta semana, que o diga contigo, nunha rutina ou nunha canción.",
         "es": "Esta semana, que lo diga contigo, en una rutina o en una canción."
+       },
+       "fraseGramatica": {
+        "en": "Although I can't see it, I can feel it.",
+        "gl": "Aínda que non a vexo, podo tocala.",
+        "es": "Aunque no la veo, la puedo tocar."
        },
        "xaSabe": [
         {
@@ -46556,6 +47927,11 @@
         "gl": "Esta semana, que o use só, xogando, sen que llo pidas.",
         "es": "Esta semana, que lo use solo, jugando, sin que se lo pidas."
        },
+       "fraseGramatica": {
+        "en": "We share because it is fair.",
+        "gl": "Compartimos porque é xusto.",
+        "es": "Compartimos porque es justo."
+       },
        "xaSabe": [
         {
          "tipo": "noun",
@@ -46820,6 +48196,18 @@
       "gl": "Dicir para que se fai algo e por que («I am blending yellow and blue because I want to make green»); onde está («between the cup and the paper»).",
       "es": "Decir para qué se hace algo y por qué («I am blending yellow and blue because I want to make green»); dónde está («between the cup and the paper»)."
      },
+     "gramatica": {
+      "n": 19,
+      "nivel": "A2",
+      "titulo": {
+       "gl": "Preposicións de movemento",
+       "es": "Preposiciones de movimiento"
+      },
+      "paraFamilias": {
+       "gl": "Cara a onde: «into the boat», «across the river», «through the waves».",
+       "es": "Hacia dónde: «into the boat», «across the river», «through the waves»."
+      }
+     },
      "obxectivos": [
       {
        "gl": "Empregar linguaxe argumentativa estruturada para resolver a posesión de materiais compartidos («I was using the scissors first, but you can have them next»).",
@@ -46847,6 +48235,11 @@
        "espera": {
         "gl": "Esta semana abonda con que o entenda co teu xesto.",
         "es": "Esta semana basta con que lo entienda con tu gesto."
+       },
+       "fraseGramatica": {
+        "en": "Walk across the room.",
+        "gl": "Cruza a sala.",
+        "es": "Cruza la sala."
        },
        "xaSabe": [
         {
@@ -47154,6 +48547,11 @@
         "gl": "Esta semana, que o faga sen que lle fagas o xesto.",
         "es": "Esta semana, que lo haga sin que le hagas el gesto."
        },
+       "fraseGramatica": {
+        "en": "Turn left and walk towards the light.",
+        "gl": "Xira á esquerda e camiña cara á luz.",
+        "es": "Gira a la izquierda y camina hacia la luz."
+       },
        "xaSabe": [
         {
          "tipo": "complex",
@@ -47425,6 +48823,11 @@
        "espera": {
         "gl": "Esta semana, que o diga contigo, nunha rutina ou nunha canción.",
         "es": "Esta semana, que lo diga contigo, en una rutina o en una canción."
+       },
+       "fraseGramatica": {
+        "en": "Walk along the line, hand in hand.",
+        "gl": "Camiña pola liña, da man.",
+        "es": "Camina por la línea, de la mano."
        },
        "xaSabe": [
         {
@@ -47711,6 +49114,11 @@
        "espera": {
         "gl": "Esta semana, que o use só, xogando, sen que llo pidas.",
         "es": "Esta semana, que lo use solo, jugando, sin que se lo pidas."
+       },
+       "fraseGramatica": {
+        "en": "Go out of the circle slowly.",
+        "gl": "Sae do círculo amodo.",
+        "es": "Sal del círculo despacio."
        },
        "xaSabe": [
         {
@@ -48008,6 +49416,18 @@
       "gl": "Dicir para que se fai algo e por que («I am blending yellow and blue because I want to make green»); onde está («between the cup and the paper»).",
       "es": "Decir para qué se hace algo y por qué («I am blending yellow and blue because I want to make green»); dónde está («between the cup and the paper»)."
      },
+     "gramatica": {
+      "n": 18,
+      "nivel": "A2",
+      "titulo": {
+       "gl": "Obriga e consello",
+       "es": "Obligación y consejo"
+      },
+      "paraFamilias": {
+       "gl": "O que hai que facer: «You must walk slowly», «You should hide».",
+       "es": "Lo que hay que hacer: «You must walk slowly», «You should hide»."
+      }
+     },
      "obxectivos": [
       {
        "gl": "Empregar linguaxe argumentativa estruturada para resolver a posesión de materiais compartidos («I was using the scissors first, but you can have them next»).",
@@ -48035,6 +49455,11 @@
        "espera": {
         "gl": "Esta semana abonda con que o entenda co teu xesto.",
         "es": "Esta semana basta con que lo entienda con tu gesto."
+       },
+       "fraseGramatica": {
+        "en": "You must walk slowly.",
+        "gl": "Tes que camiñar amodo.",
+        "es": "Tienes que andar despacio."
        },
        "xaSabe": [
         {
@@ -48346,6 +49771,11 @@
         "gl": "Esta semana, que o faga sen que lle fagas o xesto.",
         "es": "Esta semana, que lo haga sin que le hagas el gesto."
        },
+       "fraseGramatica": {
+        "en": "You have to balance the plate.",
+        "gl": "Tes que manter o prato en equilibrio.",
+        "es": "Tienes que mantener el plato en equilibrio."
+       },
        "xaSabe": [
         {
          "tipo": "noun",
@@ -48579,6 +50009,11 @@
        "espera": {
         "gl": "Esta semana, que o diga contigo, nunha rutina ou nunha canción.",
         "es": "Esta semana, que lo diga contigo, en una rutina o en una canción."
+       },
+       "fraseGramatica": {
+        "en": "You don't have to run.",
+        "gl": "Non fai falta correr.",
+        "es": "No hace falta correr."
        },
        "xaSabe": [
         {
@@ -48856,6 +50291,11 @@
         "gl": "Esta semana, que o use só, xogando, sen que llo pidas.",
         "es": "Esta semana, que lo use solo, jugando, sin que se lo pidas."
        },
+       "fraseGramatica": {
+        "en": "You shouldn't spill the water.",
+        "gl": "Non deberías derramar a auga.",
+        "es": "No deberías derramar el agua."
+       },
        "xaSabe": [
         {
          "tipo": "verb",
@@ -49128,6 +50568,18 @@
       "gl": "Frases que unen tempo e causa («We have to hurry because the train is leaving»).",
       "es": "Frases que unen tiempo y causa («We have to hurry because the train is leaving»)."
      },
+     "gramatica": {
+      "n": 17,
+      "nivel": "A2",
+      "titulo": {
+       "gl": "O futuro",
+       "es": "El futuro"
+      },
+      "paraFamilias": {
+       "gl": "O que imos facer: «We are going to swim», «I will help you».",
+       "es": "Lo que vamos a hacer: «We are going to swim», «I will help you»."
+      }
+     },
      "obxectivos": [
       {
        "gl": "Planificar itinerarios de ficción con conectores de secuencia temporal («First we fly by plane, then we take a bus across the mountains»).",
@@ -49155,6 +50607,11 @@
        "espera": {
         "gl": "Esta semana abonda con que o entenda co teu xesto.",
         "es": "Esta semana basta con que lo entienda con tu gesto."
+       },
+       "fraseGramatica": {
+        "en": "I am going to be a statue.",
+        "gl": "Vou ser unha estatua.",
+        "es": "Voy a ser una estatua."
        },
        "xaSabe": [
         {
@@ -49470,6 +50927,11 @@
         "gl": "Esta semana, que o faga sen que lle fagas o xesto.",
         "es": "Esta semana, que lo haga sin que le hagas el gesto."
        },
+       "fraseGramatica": {
+        "en": "I will copy your movements.",
+        "gl": "Vou copiar os teus movementos.",
+        "es": "Copiaré tus movimientos."
+       },
        "xaSabe": [
         {
          "tipo": "phrase",
@@ -49713,6 +51175,11 @@
        "espera": {
         "gl": "Esta semana, que o diga contigo, nunha rutina ou nunha canción.",
         "es": "Esta semana, que lo diga contigo, en una rutina o en una canción."
+       },
+       "fraseGramatica": {
+        "en": "We are going to put on our costumes.",
+        "gl": "Imos poñer os disfraces.",
+        "es": "Vamos a ponernos los disfraces."
        },
        "xaSabe": [
         {
@@ -50010,6 +51477,11 @@
         "gl": "Esta semana, que o use só, xogando, sen que llo pidas.",
         "es": "Esta semana, que lo use solo, jugando, sin que se lo pidas."
        },
+       "fraseGramatica": {
+        "en": "I will put my arms up.",
+        "gl": "Vou poñer os brazos arriba.",
+        "es": "Pondré los brazos arriba."
+       },
        "xaSabe": [
         {
          "tipo": "noun",
@@ -50284,6 +51756,18 @@
       "gl": "Frases que unen tempo e causa («We have to hurry because the train is leaving»).",
       "es": "Frases que unen tiempo y causa («We have to hurry because the train is leaving»)."
      },
+     "gramatica": {
+      "n": 14,
+      "nivel": "A2",
+      "titulo": {
+       "gl": "Pasado continuo",
+       "es": "Pasado continuo"
+      },
+      "paraFamilias": {
+       "gl": "O que estaba pasando: «The wolf was sleeping when the sheep came».",
+       "es": "Lo que estaba pasando: «The wolf was sleeping when the sheep came»."
+      }
+     },
      "obxectivos": [
       {
        "gl": "Planificar itinerarios de ficción con conectores de secuencia temporal («First we fly by plane, then we take a bus across the mountains»).",
@@ -50311,6 +51795,11 @@
        "espera": {
         "gl": "Esta semana abonda con que o entenda co teu xesto.",
         "es": "Esta semana basta con que lo entienda con tu gesto."
+       },
+       "fraseGramatica": {
+        "en": "I was filling the pot when the seed fell.",
+        "gl": "Estaba enchendo o testo cando caeu a semente.",
+        "es": "Estaba llenando la maceta cuando se cayó la semilla."
        },
        "xaSabe": [
         {
@@ -50618,6 +52107,11 @@
         "gl": "Esta semana, que o faga sen que lle fagas o xesto.",
         "es": "Esta semana, que lo haga sin que le hagas el gesto."
        },
+       "fraseGramatica": {
+        "en": "We were watering the plants.",
+        "gl": "Estabamos regando as plantas.",
+        "es": "Estábamos regando las plantas."
+       },
        "xaSabe": [
         {
          "tipo": "noun",
@@ -50875,6 +52369,11 @@
        "espera": {
         "gl": "Esta semana, que o diga contigo, nunha rutina ou nunha canción.",
         "es": "Esta semana, que lo diga contigo, en una rutina o en una canción."
+       },
+       "fraseGramatica": {
+        "en": "While she was digging, I was singing.",
+        "gl": "Mentres ela cavaba, eu cantaba.",
+        "es": "Mientras ella cavaba, yo cantaba."
        },
        "xaSabe": [
         {
@@ -51172,6 +52671,11 @@
         "gl": "Esta semana, que o use só, xogando, sen que llo pidas.",
         "es": "Esta semana, que lo use solo, jugando, sin que se lo pidas."
        },
+       "fraseGramatica": {
+        "en": "The seed was growing in the soil.",
+        "gl": "A semente estaba medrando na terra.",
+        "es": "La semilla estaba creciendo en la tierra."
+       },
        "xaSabe": [
         {
          "tipo": "verb",
@@ -51436,6 +52940,18 @@
       "gl": "Frases que unen tempo e causa («We have to hurry because the train is leaving»).",
       "es": "Frases que unen tiempo y causa («We have to hurry because the train is leaving»)."
      },
+     "gramatica": {
+      "n": 18,
+      "nivel": "A2",
+      "titulo": {
+       "gl": "Obriga e consello",
+       "es": "Obligación y consejo"
+      },
+      "paraFamilias": {
+       "gl": "O que hai que facer: «You must walk slowly», «You should hide».",
+       "es": "Lo que hay que hacer: «You must walk slowly», «You should hide»."
+      }
+     },
      "obxectivos": [
       {
        "gl": "Planificar itinerarios de ficción con conectores de secuencia temporal («First we fly by plane, then we take a bus across the mountains»).",
@@ -51463,6 +52979,11 @@
        "espera": {
         "gl": "Esta semana abonda con que o entenda co teu xesto.",
         "es": "Esta semana basta con que lo entienda con tu gesto."
+       },
+       "fraseGramatica": {
+        "en": "You should hide behind the tree.",
+        "gl": "Deberías esconderte detrás da árbore.",
+        "es": "Deberías esconderte detrás del árbol."
        },
        "xaSabe": [
         {
@@ -51770,6 +53291,11 @@
         "gl": "Esta semana, que o faga sen que lle fagas o xesto.",
         "es": "Esta semana, que lo haga sin que le hagas el gesto."
        },
+       "fraseGramatica": {
+        "en": "You must fasten your seatbelt.",
+        "gl": "Tes que pór o cinto.",
+        "es": "Tienes que ponerte el cinturón."
+       },
        "xaSabe": [
         {
          "tipo": "noun",
@@ -52027,6 +53553,11 @@
        "espera": {
         "gl": "Esta semana, que o diga contigo, nunha rutina ou nunha canción.",
         "es": "Esta semana, que lo diga contigo, en una rutina o en una canción."
+       },
+       "fraseGramatica": {
+        "en": "We have to crawl like a snake.",
+        "gl": "Temos que arrastrarnos coma unha serpe.",
+        "es": "Tenemos que arrastrarnos como una serpiente."
        },
        "xaSabe": [
         {
@@ -52324,6 +53855,11 @@
         "gl": "Esta semana, que o use só, xogando, sen que llo pidas.",
         "es": "Esta semana, que lo use solo, jugando, sin que se lo pidas."
        },
+       "fraseGramatica": {
+        "en": "You shouldn't touch the pointy stick.",
+        "gl": "Non deberías tocar o pau con punta.",
+        "es": "No deberías tocar el palo con punta."
+       },
        "xaSabe": [
         {
          "tipo": "verb",
@@ -52616,6 +54152,18 @@
       "gl": "Frases que unen tempo e causa («We have to hurry because the train is leaving»).",
       "es": "Frases que unen tiempo y causa («We have to hurry because the train is leaving»)."
      },
+     "gramatica": {
+      "n": 16,
+      "nivel": "A2",
+      "titulo": {
+       "gl": "Adxectivos: comparativos e superlativos",
+       "es": "Adjetivos: comparativos y superlativos"
+      },
+      "paraFamilias": {
+       "gl": "Comparar: «bigger», «as big as», «the biggest».",
+       "es": "Comparar: «bigger», «as big as», «the biggest»."
+      }
+     },
      "obxectivos": [
       {
        "gl": "Planificar itinerarios de ficción con conectores de secuencia temporal («First we fly by plane, then we take a bus across the mountains»).",
@@ -52643,6 +54191,11 @@
        "espera": {
         "gl": "Esta semana abonda con que o entenda co teu xesto.",
         "es": "Esta semana basta con que lo entienda con tu gesto."
+       },
+       "fraseGramatica": {
+        "en": "Clap faster!",
+        "gl": "Aplaude máis rápido!",
+        "es": "¡Aplaude más rápido!"
        },
        "xaSabe": [
         {
@@ -52936,6 +54489,11 @@
         "gl": "Esta semana, que o faga sen que lle fagas o xesto.",
         "es": "Esta semana, que lo haga sin que le hagas el gesto."
        },
+       "fraseGramatica": {
+        "en": "Now tap slower than before.",
+        "gl": "Agora toca máis amodo ca antes.",
+        "es": "Ahora toca más despacio que antes."
+       },
        "xaSabe": [
         {
          "tipo": "verb",
@@ -53193,6 +54751,11 @@
        "espera": {
         "gl": "Esta semana, que o diga contigo, nunha rutina ou nunha canción.",
         "es": "Esta semana, que lo diga contigo, en una rutina o en una canción."
+       },
+       "fraseGramatica": {
+        "en": "My pattern is longer than yours.",
+        "gl": "O meu patrón é máis longo co teu.",
+        "es": "Mi patrón es más largo que el tuyo."
        },
        "xaSabe": [
         {
@@ -53490,6 +55053,11 @@
         "gl": "Esta semana, que o use só, xogando, sen que llo pidas.",
         "es": "Esta semana, que lo use solo, jugando, sin que se lo pidas."
        },
+       "fraseGramatica": {
+        "en": "This is the fastest rhythm.",
+        "gl": "Este é o ritmo máis rápido.",
+        "es": "Este es el ritmo más rápido."
+       },
        "xaSabe": [
         {
          "tipo": "adjective",
@@ -53754,6 +55322,18 @@
       "gl": "Frases que unen tempo e causa («We have to hurry because the train is leaving»).",
       "es": "Frases que unen tiempo y causa («We have to hurry because the train is leaving»)."
      },
+     "gramatica": {
+      "n": 17,
+      "nivel": "A2",
+      "titulo": {
+       "gl": "O futuro",
+       "es": "El futuro"
+      },
+      "paraFamilias": {
+       "gl": "O que imos facer: «We are going to swim», «I will help you».",
+       "es": "Lo que vamos a hacer: «We are going to swim», «I will help you»."
+      }
+     },
      "obxectivos": [
       {
        "gl": "Planificar itinerarios de ficción con conectores de secuencia temporal («First we fly by plane, then we take a bus across the mountains»).",
@@ -53781,6 +55361,11 @@
        "espera": {
         "gl": "Esta semana abonda con que o entenda co teu xesto.",
         "es": "Esta semana basta con que lo entienda con tu gesto."
+       },
+       "fraseGramatica": {
+        "en": "We are going to find shells.",
+        "gl": "Imos atopar cunchas.",
+        "es": "Vamos a encontrar conchas."
        },
        "xaSabe": [
         {
@@ -54078,6 +55663,11 @@
         "gl": "Esta semana, que o faga sen que lle fagas o xesto.",
         "es": "Esta semana, que lo haga sin que le hagas el gesto."
        },
+       "fraseGramatica": {
+        "en": "I will walk five steps.",
+        "gl": "Vou dar cinco pasos.",
+        "es": "Daré cinco pasos."
+       },
        "xaSabe": [
         {
          "tipo": "noun",
@@ -54301,6 +55891,11 @@
        "espera": {
         "gl": "Esta semana, que o diga contigo, nunha rutina ou nunha canción.",
         "es": "Esta semana, que lo diga contigo, en una rutina o en una canción."
+       },
+       "fraseGramatica": {
+        "en": "The tide is going to come in.",
+        "gl": "Vai subir a marea.",
+        "es": "Va a subir la marea."
        },
        "xaSabe": [
         {
@@ -54567,6 +56162,11 @@
        "espera": {
         "gl": "Esta semana, que o use só, xogando, sen que llo pidas.",
         "es": "Esta semana, que lo use solo, jugando, sin que se lo pidas."
+       },
+       "fraseGramatica": {
+        "en": "I will put the white shell in the basket.",
+        "gl": "Vou pór a cuncha branca na cesta.",
+        "es": "Pondré la concha blanca en la cesta."
        },
        "xaSabe": [
         {

@@ -12,6 +12,7 @@ import '../../../data/models/conto_dialogado_model.dart';
 import '../../../data/models/hogar_model.dart';
 import '../../../data/models/leccion_model.dart';
 import '../../cuentos/views/contos_dialogados_screen.dart';
+import '../views/gramatica_screen.dart';
 import '../../../data/models/steam_do_mes_model.dart';
 import '../../../data/models/xogos_fogar_model.dart';
 import '../../familias/widgets/reto_da_semana.dart';
@@ -320,6 +321,49 @@ class _LeccionDaSemanaState extends State<LeccionDaSemana> {
           icona: Icons.menu_book_rounded,
           titulo: t('foco'),
           children: [
+            // La gramática del curso: el punto de esta unidad, qué es en
+            // sencillo y la frase de la semana.
+            if (unidade.gramatica case final gr?) ...[
+              Text(
+                '${isGl ? 'GRAMÁTICA' : 'GRAMÁTICA'} · ${gr.nivel} · '
+                '${isGl ? 'PUNTO' : 'PUNTO'} ${gr.n}',
+                key: const Key('leccion_gramatica'),
+                style: kicker,
+              ),
+              const SizedBox(height: 2),
+              Text(gr.titulo.resolve(lang), style: forte),
+              if (gr.paraFamilias case final pf?) ...[
+                const SizedBox(height: 4),
+                Text(pf.resolve(lang), style: lectura),
+              ],
+              if (leccion.fraseGramatica case final fg?) ...[
+                const SizedBox(height: 8),
+                Text(
+                  isGl ? 'A frase desta semana:' : 'La frase de esta semana:',
+                  style: lectura,
+                ),
+                const SizedBox(height: 4),
+                _chip(fg, lang),
+              ],
+              Align(
+                alignment: Alignment.centerLeft,
+                child: TextButton(
+                  key: const Key('leccion_ver_gramatica'),
+                  onPressed: () => Navigator.of(context).push(RutaLua(
+                    de: context,
+                    builder: (_) => GramaticaScreen(
+                      language: lang,
+                      audioService: widget.audioService,
+                      destacado: gr.n,
+                    ),
+                  )),
+                  child: Text(isGl
+                      ? 'Ver toda a gramática, de A1 a C1'
+                      : 'Ver toda la gramática, de A1 a C1'),
+                ),
+              ),
+              const SizedBox(height: 6),
+            ],
             if (unidade.foco case final f?) ...[
               Text(f.resolve(lang), style: forte),
               const SizedBox(height: 8),

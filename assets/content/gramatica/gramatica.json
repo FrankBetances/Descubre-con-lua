@@ -1,0 +1,2111 @@
+{
+ "_doc": "Generado por tools/gen_gramatica.py; no se edita a mano.",
+ "puntos": [
+  {
+   "n": 1,
+   "nivel": "A1",
+   "titulo": {
+    "gl": "Pronomes suxeito e o verbo to be",
+    "es": "Pronombres sujeto y el verbo to be"
+   },
+   "descricion": {
+    "gl": "Formas afirmativa, negativa e interrogativa en presente simple.",
+    "es": "Formas afirmativa, negativa e interrogativa en presente simple."
+   },
+   "paraCriaturas": true,
+   "paraFamilias": {
+    "gl": "Dicir quen é e como está: «I am happy», «It is a cat», «Is it cold?».",
+    "es": "Decir quién es y cómo está: «I am happy», «It is a cat», «Is it cold?»."
+   }
+  },
+  {
+   "n": 2,
+   "nivel": "A1",
+   "titulo": {
+    "gl": "Artigos e substantivos",
+    "es": "Artículos y sustantivos"
+   },
+   "descricion": {
+    "gl": "Artigos indeterminados (a/an) e determinado (the); substantivos en singular e plural (formación regular e irregular).",
+    "es": "Artículos indeterminados (a/an) y determinado (the); sustantivos en singular y plural (reglas de formación regular e irregular)."
+   },
+   "paraCriaturas": true,
+   "paraFamilias": {
+    "gl": "Os nomes das cousas, un ou moitos: «a leaf», «the leaf», «leaves».",
+    "es": "Los nombres de las cosas, uno o muchos: «a leaf», «the leaf», «leaves»."
+   }
+  },
+  {
+   "n": 3,
+   "nivel": "A1",
+   "titulo": {
+    "gl": "Demostrativos e posesivos",
+    "es": "Demostrativos y posesivos"
+   },
+   "descricion": {
+    "gl": "Pronomes e adxectivos demostrativos (this, that, these, those); adxectivos posesivos (my, your, his…) e xenitivo saxón ('s).",
+    "es": "Pronombres/adjetivos demostrativos (this, that, these, those); adjetivos posesivos (my, your, his...) y genitivo sajón ('s)."
+   },
+   "paraCriaturas": true,
+   "paraFamilias": {
+    "gl": "Sinalar e dicir de quen é: «this hat», «my hat», «Mum's coat».",
+    "es": "Señalar y decir de quién es: «this hat», «my hat», «Mum's coat»."
+   }
+  },
+  {
+   "n": 4,
+   "nivel": "A1",
+   "titulo": {
+    "gl": "Presente simple",
+    "es": "Presente simple"
+   },
+   "descricion": {
+    "gl": "Verbos de acción, terceira persoa do singular (-s/-es), auxiliares do / does para negar e preguntar.",
+    "es": "Verbos de acción, reglas de tercera persona singular (-s/-es), auxiliares do / does para negación y preguntas."
+   },
+   "paraCriaturas": true,
+   "paraFamilias": {
+    "gl": "O que facemos sempre: «We sit in a circle», «The cow eats grass».",
+    "es": "Lo que hacemos siempre: «We sit in a circle», «The cow eats grass»."
+   }
+  },
+  {
+   "n": 5,
+   "nivel": "A1",
+   "titulo": {
+    "gl": "Adverbios e expresións de frecuencia",
+    "es": "Adverbios y expresiones de frecuencia"
+   },
+   "descricion": {
+    "gl": "Posición de always, usually, often, sometimes, never e expresións de tempo.",
+    "es": "Posición sintáctica de always, usually, often, sometimes, never y expresiones temporales."
+   },
+   "paraCriaturas": true,
+   "paraFamilias": {
+    "gl": "Cada canto se fai algo: «We always wear boots in the rain».",
+    "es": "Cada cuánto se hace algo: «We always wear boots in the rain»."
+   }
+  },
+  {
+   "n": 6,
+   "nivel": "A1",
+   "titulo": {
+    "gl": "Contables e incontables",
+    "es": "Contables e incontables"
+   },
+   "descricion": {
+    "gl": "Cuantificadores básicos (some, any, much, many, a lot of).",
+    "es": "Cuantificadores básicos (some, any, much, many, a lot of)."
+   },
+   "paraCriaturas": true,
+   "paraFamilias": {
+    "gl": "Cantidades: «some water», «more juice», «a lot of seeds».",
+    "es": "Cantidades: «some water», «more juice», «a lot of seeds»."
+   }
+  },
+  {
+   "n": 7,
+   "nivel": "A1",
+   "titulo": {
+    "gl": "There is / there are e preposicións de lugar",
+    "es": "There is / there are y preposiciones de lugar"
+   },
+   "descricion": {
+    "gl": "Estrutura there is / there are; preposicións básicas (in, on, under, next to, behind, in front of).",
+    "es": "Estructura There is / There are; preposiciones básicas (in, on, under, next to, behind, in front of)."
+   },
+   "paraCriaturas": true,
+   "paraFamilias": {
+    "gl": "Que hai e onde está: «There is a fish in the water», «The ball is under the table».",
+    "es": "Qué hay y dónde está: «There is a fish in the water», «The ball is under the table»."
+   }
+  },
+  {
+   "n": 8,
+   "nivel": "A1",
+   "titulo": {
+    "gl": "Preguntas con wh-",
+    "es": "Preguntas con wh-"
+   },
+   "descricion": {
+    "gl": "Preguntas con what, where, when, who, why, which, how.",
+    "es": "Estructura de preguntas con what, where, when, who, why, which, how."
+   },
+   "paraCriaturas": true,
+   "paraFamilias": {
+    "gl": "Preguntar: «Where is the sun?», «What is it?», «Who is it?».",
+    "es": "Preguntar: «Where is the sun?», «What is it?», «Who is it?»."
+   }
+  },
+  {
+   "n": 9,
+   "nivel": "A1",
+   "titulo": {
+    "gl": "Preposicións de tempo",
+    "es": "Preposiciones de tiempo"
+   },
+   "descricion": {
+    "gl": "Uso de at, in, on.",
+    "es": "Uso canónico de at, in, on."
+   },
+   "paraCriaturas": true,
+   "paraFamilias": {
+    "gl": "Cando pasa: «in the morning», «at night», «on Monday».",
+    "es": "Cuándo pasa: «in the morning», «at night», «on Monday»."
+   }
+  },
+  {
+   "n": 10,
+   "nivel": "A1",
+   "titulo": {
+    "gl": "Can e o imperativo",
+    "es": "Can y el imperativo"
+   },
+   "descricion": {
+    "gl": "Can / can't (habilidade, posibilidade e permiso); oracións imperativas (ordes e instrucións).",
+    "es": "Verbo modal can / can't (habilidad, posibilidad y permiso informal); oraciones imperativas (órdenes e instrucciones)."
+   },
+   "paraCriaturas": true,
+   "paraFamilias": {
+    "gl": "Ordes e o que se pode facer: «Jump!», «Clap your hands!», «I can fly!».",
+    "es": "Órdenes y lo que se puede hacer: «Jump!», «Clap your hands!», «I can fly!»."
+   }
+  },
+  {
+   "n": 11,
+   "nivel": "A2",
+   "titulo": {
+    "gl": "Presente continuo",
+    "es": "Presente continuo"
+   },
+   "descricion": {
+    "gl": "To be + xerundio (-ing) para o que está pasando agora, fronte ao presente simple.",
+    "es": "Formación con to be + gerundio (-ing) para acciones en progreso y contraste con Presente Simple (action verbs vs. stative verbs)."
+   },
+   "paraCriaturas": true,
+   "paraFamilias": {
+    "gl": "O que está pasando agora: «It is raining», «The bear is sleeping».",
+    "es": "Lo que está pasando ahora: «It is raining», «The bear is sleeping»."
+   }
+  },
+  {
+   "n": 12,
+   "nivel": "A2",
+   "titulo": {
+    "gl": "Pasado de to be",
+    "es": "Pasado de to be"
+   },
+   "descricion": {
+    "gl": "Was / were e there was / there were.",
+    "es": "Formas was / were y estructura existencial en pasado (there was / there were)."
+   },
+   "paraCriaturas": true,
+   "paraFamilias": {
+    "gl": "Como era antes: «It was cold», «There was a squirrel».",
+    "es": "Cómo era antes: «It was cold», «There was a squirrel»."
+   }
+  },
+  {
+   "n": 13,
+   "nivel": "A2",
+   "titulo": {
+    "gl": "Pasado simple",
+    "es": "Pasado simple"
+   },
+   "descricion": {
+    "gl": "Verbos regulares (-ed) e os irregulares básicos; auxiliar did / didn't.",
+    "es": "Verbos regulares (terminación -ed y reglas fonéticas) y lista fundamental de verbos irregulares; auxiliar did / didn't."
+   },
+   "paraCriaturas": true,
+   "paraFamilias": {
+    "gl": "Contar o que pasou: «The chestnut rolled», «We went home».",
+    "es": "Contar lo que pasó: «The chestnut rolled», «We went home»."
+   }
+  },
+  {
+   "n": 14,
+   "nivel": "A2",
+   "titulo": {
+    "gl": "Pasado continuo",
+    "es": "Pasado continuo"
+   },
+   "descricion": {
+    "gl": "Accións en curso no pasado, con when e while.",
+    "es": "Acciones en progreso en el pasado y combinación con Pasado Simple mediante conectores when y while."
+   },
+   "paraCriaturas": true,
+   "paraFamilias": {
+    "gl": "O que estaba pasando: «The wolf was sleeping when the sheep came».",
+    "es": "Lo que estaba pasando: «The wolf was sleeping when the sheep came»."
+   }
+  },
+  {
+   "n": 15,
+   "nivel": "A2",
+   "titulo": {
+    "gl": "Pronomes obxecto e reflexivos",
+    "es": "Pronombres objeto y reflexivos"
+   },
+   "descricion": {
+    "gl": "Me, you, him, her… e myself, yourself…",
+    "es": "Pronombres personales de complemento directo/indirecto (me, you, him, her...) y reflexivos (myself, yourself...)."
+   },
+   "paraCriaturas": true,
+   "paraFamilias": {
+    "gl": "A quen: «Look at me», «Help him», «I can do it myself».",
+    "es": "A quién: «Look at me», «Help him», «I can do it myself»."
+   }
+  },
+  {
+   "n": 16,
+   "nivel": "A2",
+   "titulo": {
+    "gl": "Adxectivos: comparativos e superlativos",
+    "es": "Adjetivos: comparativos y superlativos"
+   },
+   "descricion": {
+    "gl": "Orde dos adxectivos; comparativo (-er / more than, as… as) e superlativo (-est / the most).",
+    "es": "Orden estándar de adjetivos; comparativo de superioridad (-er / more than), igualdad (as... as) y superlativo (-est / the most)."
+   },
+   "paraCriaturas": true,
+   "paraFamilias": {
+    "gl": "Comparar: «bigger», «as big as», «the biggest».",
+    "es": "Comparar: «bigger», «as big as», «the biggest»."
+   }
+  },
+  {
+   "n": 17,
+   "nivel": "A2",
+   "titulo": {
+    "gl": "O futuro",
+    "es": "El futuro"
+   },
+   "descricion": {
+    "gl": "Be going to (plans e o que se ve vir) fronte a will (decisións, predicións e promesas).",
+    "es": "Be going to (intenciones, planes previos y evidencia inmediata) frente a Will (decisiones espontáneas, predicciones y promesas)."
+   },
+   "paraCriaturas": true,
+   "paraFamilias": {
+    "gl": "O que imos facer: «We are going to swim», «I will help you».",
+    "es": "Lo que vamos a hacer: «We are going to swim», «I will help you»."
+   }
+  },
+  {
+   "n": 18,
+   "nivel": "A2",
+   "titulo": {
+    "gl": "Obriga e consello",
+    "es": "Obligación y consejo"
+   },
+   "descricion": {
+    "gl": "Must, have to, don't have to e should / shouldn't.",
+    "es": "Must, have to, don't have to (ausencia de obligación) y should / shouldn't."
+   },
+   "paraCriaturas": true,
+   "paraFamilias": {
+    "gl": "O que hai que facer: «You must walk slowly», «You should hide».",
+    "es": "Lo que hay que hacer: «You must walk slowly», «You should hide»."
+   }
+  },
+  {
+   "n": 19,
+   "nivel": "A2",
+   "titulo": {
+    "gl": "Preposicións de movemento",
+    "es": "Preposiciones de movimiento"
+   },
+   "descricion": {
+    "gl": "To, into, out of, through, across, towards, along.",
+    "es": "To, into, out of, through, across, towards, along."
+   },
+   "paraCriaturas": true,
+   "paraFamilias": {
+    "gl": "Cara a onde: «into the boat», «across the river», «through the waves».",
+    "es": "Hacia dónde: «into the boat», «across the river», «through the waves»."
+   }
+  },
+  {
+   "n": 20,
+   "nivel": "A2",
+   "titulo": {
+    "gl": "Conectores básicos",
+    "es": "Conectores básicos"
+   },
+   "descricion": {
+    "gl": "And, but, so, because, although.",
+    "es": "Coordinación y subordinación elemental (and, but, so, because, although)."
+   },
+   "paraCriaturas": true,
+   "paraFamilias": {
+    "gl": "Unir dúas ideas: «We pull and pull, but it doesn't move», «because».",
+    "es": "Unir dos ideas: «We pull and pull, but it doesn't move», «because»."
+   }
+  },
+  {
+   "n": 21,
+   "nivel": "B1",
+   "titulo": {
+    "gl": "Presente perfecto",
+    "es": "Presente perfecto"
+   },
+   "descricion": {
+    "gl": "Have/has + participio; experiencias con ever, never, already, yet, just.",
+    "es": "Formación con have/has + participio pasado; uso para experiencias vitales con marcadores ever, never, already, yet, just."
+   },
+   "paraCriaturas": false,
+   "exemplo": {
+    "en": "Have you ever seen a hedgehog?",
+    "gl": "Viches algunha vez un ourizo?",
+    "es": "¿Has visto alguna vez un erizo?"
+   }
+  },
+  {
+   "n": 22,
+   "nivel": "B1",
+   "titulo": {
+    "gl": "Presente perfecto e pasado simple",
+    "es": "Presente perfecto y pasado simple"
+   },
+   "descricion": {
+    "gl": "Duración e relevancia no presente fronte a tempo pechado; for e since.",
+    "es": "Duración y relevancia presente frente a tiempo cerrado; uso de for y since."
+   },
+   "paraCriaturas": false,
+   "exemplo": {
+    "en": "We have lived in Vigo since 2020.",
+    "gl": "Vivimos en Vigo desde 2020.",
+    "es": "Vivimos en Vigo desde 2020."
+   }
+  },
+  {
+   "n": 23,
+   "nivel": "B1",
+   "titulo": {
+    "gl": "Presente perfecto continuo",
+    "es": "Presente perfecto continuo"
+   },
+   "descricion": {
+    "gl": "Accións prolongadas con efecto no presente fronte ao resultado do presente perfecto.",
+    "es": "Acciones prolongadas con efecto en el presente frente al resultado del Presente Perfecto Simple."
+   },
+   "paraCriaturas": false,
+   "exemplo": {
+    "en": "She has been playing in the sand all morning.",
+    "gl": "Leva toda a mañá xogando na area.",
+    "es": "Lleva toda la mañana jugando en la arena."
+   }
+  },
+  {
+   "n": 24,
+   "nivel": "B1",
+   "titulo": {
+    "gl": "Pasado perfecto",
+    "es": "Pasado perfecto"
+   },
+   "descricion": {
+    "gl": "Had + participio; o que pasou antes doutra acción pasada.",
+    "es": "Formación con had + participio; anterioridad cronológica respecto a otra acción en pasado."
+   },
+   "paraCriaturas": false,
+   "exemplo": {
+    "en": "The bus had left when we arrived.",
+    "gl": "O autobús xa saíra cando chegamos.",
+    "es": "El autobús ya se había ido cuando llegamos."
+   }
+  },
+  {
+   "n": 25,
+   "nivel": "B1",
+   "titulo": {
+    "gl": "Modais de probabilidade e dedución",
+    "es": "Modales de probabilidad y deducción"
+   },
+   "descricion": {
+    "gl": "May, might, could (posibilidade); must, can't (certeza no presente).",
+    "es": "May, might, could (posibilidad); must, can't (certeza en presente)."
+   },
+   "paraCriaturas": false,
+   "exemplo": {
+    "en": "It might rain later.",
+    "gl": "Pode que chova máis tarde.",
+    "es": "Puede que llueva más tarde."
+   }
+  },
+  {
+   "n": 26,
+   "nivel": "B1",
+   "titulo": {
+    "gl": "Condicional cero e primeiro",
+    "es": "Condicional cero y primero"
+   },
+   "descricion": {
+    "gl": "Cero (if + presente, presente); primeiro (if + presente, will + infinitivo); unless.",
+    "es": "Cero (hechos universales: if + present, present); Primero (hipótesis reales y futuras: if + present, will + infinitive); cláusulas con unless."
+   },
+   "paraCriaturas": false,
+   "exemplo": {
+    "en": "If it rains, we will stay at home.",
+    "gl": "Se chove, quedaremos na casa.",
+    "es": "Si llueve, nos quedaremos en casa."
+   }
+  },
+  {
+   "n": 27,
+   "nivel": "B1",
+   "titulo": {
+    "gl": "Segundo condicional",
+    "es": "Segundo condicional"
+   },
+   "descricion": {
+    "gl": "Situacións hipotéticas do presente e do futuro (if + pasado simple, would + infinitivo).",
+    "es": "Situaciones hipotéticas o irreales del presente y futuro (if + past simple, would + infinitive)."
+   },
+   "paraCriaturas": false,
+   "exemplo": {
+    "en": "If I had a boat, I would sail to the islands.",
+    "gl": "Se tivese un barco, iría ás illas.",
+    "es": "Si tuviera un barco, iría a las islas."
+   }
+  },
+  {
+   "n": 28,
+   "nivel": "B1",
+   "titulo": {
+    "gl": "Voz pasiva básica",
+    "es": "Voz pasiva básica"
+   },
+   "descricion": {
+    "gl": "Pasiva en presente e pasado simple (am/is/are + participio, was/were + participio).",
+    "es": "Transformación agente-paciente en Presente Simple y Pasado Simple (am/is/are + participio, was/were + participio)."
+   },
+   "paraCriaturas": false,
+   "exemplo": {
+    "en": "The bread is made every morning.",
+    "gl": "O pan faise todas as mañás.",
+    "es": "El pan se hace todas las mañanas."
+   }
+  },
+  {
+   "n": 29,
+   "nivel": "B1",
+   "titulo": {
+    "gl": "Oracións de relativo especificativas",
+    "es": "Oraciones de relativo especificativas"
+   },
+   "descricion": {
+    "gl": "Who, which, that, whose, where e cando se omite o pronome.",
+    "es": "Pronombres relativos (who, which, that, whose, where) y regla de omisión del pronombre como objeto."
+   },
+   "paraCriaturas": false,
+   "exemplo": {
+    "en": "This is the park where we play.",
+    "gl": "Este é o parque onde xogamos.",
+    "es": "Este es el parque donde jugamos."
+   }
+  },
+  {
+   "n": 30,
+   "nivel": "B1",
+   "titulo": {
+    "gl": "Xerundio ou infinitivo",
+    "es": "Gerundio o infinitivo"
+   },
+   "descricion": {
+    "gl": "Verbos con to-infinitivo (decide, want), con -ing (enjoy, avoid) e cos dous con distinto significado (stop, remember).",
+    "es": "Verbos seguidos de to-infinitive (ej. decide, want), verbos seguidos de -ing (ej. enjoy, avoid), y verbos con cambio de significado (ej. stop, remember)."
+   },
+   "paraCriaturas": false,
+   "exemplo": {
+    "en": "She enjoys painting.",
+    "gl": "Gústalle pintar.",
+    "es": "Le gusta pintar."
+   }
+  },
+  {
+   "n": 31,
+   "nivel": "B1",
+   "titulo": {
+    "gl": "Estilo indirecto básico",
+    "es": "Estilo indirecto básico"
+   },
+   "descricion": {
+    "gl": "Cambio de tempos (backshift) en afirmacións e preguntas.",
+    "es": "Correlación temporal básica (backshift) en afirmaciones y preguntas reportadas."
+   },
+   "paraCriaturas": false,
+   "exemplo": {
+    "en": "He said he was tired.",
+    "gl": "Dixo que estaba canso.",
+    "es": "Dijo que estaba cansado."
+   }
+  },
+  {
+   "n": 32,
+   "nivel": "B1",
+   "titulo": {
+    "gl": "Phrasal verbs",
+    "es": "Phrasal verbs"
+   },
+   "descricion": {
+    "gl": "Transitivos, intransitivos, separables e inseparables.",
+    "es": "Clasificación sintáctica: transitivos, intransitivos, separables e inseparables."
+   },
+   "paraCriaturas": false,
+   "exemplo": {
+    "en": "Put on your coat.",
+    "gl": "Ponte o abrigo.",
+    "es": "Ponte el abrigo."
+   }
+  },
+  {
+   "n": 33,
+   "nivel": "B1",
+   "titulo": {
+    "gl": "Preguntas confirmatorias e indirectas",
+    "es": "Preguntas confirmatorias e indirectas"
+   },
+   "descricion": {
+    "gl": "Question tags e preguntas de cortesía (Could you tell me where…?).",
+    "es": "Question tags y estructuras de cortesía (Could you tell me where...?)."
+   },
+   "paraCriaturas": false,
+   "exemplo": {
+    "en": "It's cold today, isn't it?",
+    "gl": "Hoxe vai frío, non si?",
+    "es": "Hoy hace frío, ¿verdad?"
+   }
+  },
+  {
+   "n": 34,
+   "nivel": "B2",
+   "titulo": {
+    "gl": "Terceiro condicional",
+    "es": "Tercer condicional"
+   },
+   "descricion": {
+    "gl": "Hipóteses do pasado (if + past perfect, would have + participio).",
+    "es": "Hipótesis del pasado y arrepentimientos (if + past perfect, would have + past participle)."
+   },
+   "paraCriaturas": false,
+   "exemplo": {
+    "en": "If we had left earlier, we would have caught the bus.",
+    "gl": "Se saísemos antes, colleriamos o autobús.",
+    "es": "Si hubiéramos salido antes, habríamos cogido el autobús."
+   }
+  },
+  {
+   "n": 35,
+   "nivel": "B2",
+   "titulo": {
+    "gl": "Condicionais mixtos",
+    "es": "Condicionales mixtos"
+   },
+   "descricion": {
+    "gl": "Causa pasada con consecuencia presente, ou condición permanente con resultado pasado.",
+    "es": "Causa pasada con consecuencia en el presente, o condición permanente con resultado pasado."
+   },
+   "paraCriaturas": false,
+   "exemplo": {
+    "en": "If I had slept more, I wouldn't be so tired now.",
+    "gl": "Se durmise máis, agora non estaría tan canso.",
+    "es": "Si hubiera dormido más, ahora no estaría tan cansado."
+   }
+  },
+  {
+   "n": 36,
+   "nivel": "B2",
+   "titulo": {
+    "gl": "Desexo e arrepentimento",
+    "es": "Deseo y arrepentimiento"
+   },
+   "descricion": {
+    "gl": "Wish e if only (+ pasado simple, + pasado perfecto, + would).",
+    "es": "Uso de Wish e If only (+ pasado simple para el presente; + pasado perfecto para el pasado; + would para quejas)."
+   },
+   "paraCriaturas": false,
+   "exemplo": {
+    "en": "I wish I lived near the sea.",
+    "gl": "Oxalá vivise preto do mar.",
+    "es": "Ojalá viviera cerca del mar."
+   }
+  },
+  {
+   "n": 37,
+   "nivel": "B2",
+   "titulo": {
+    "gl": "Modais en pasado",
+    "es": "Modales en pasado"
+   },
+   "descricion": {
+    "gl": "Must have, can't have, couldn't have, should have, might have + participio.",
+    "es": "Deducción y juicio retrospectivo (must have, can't have, couldn't have, should have, might have + participio)."
+   },
+   "paraCriaturas": false,
+   "exemplo": {
+    "en": "She must have forgotten her hat.",
+    "gl": "Debeu de esquecer o gorro.",
+    "es": "Debió de olvidar el gorro."
+   }
+  },
+  {
+   "n": 38,
+   "nivel": "B2",
+   "titulo": {
+    "gl": "Pasiva avanzada e causativos",
+    "es": "Pasiva avanzada y causativos"
+   },
+   "descricion": {
+    "gl": "Pasiva en tempos continuos e perfectos; pasiva impersoal (It is said that…); have/get something done.",
+    "es": "Pasiva en tiempos continuos y perfectos; pasiva impersonal (It is said that... / Subject is said to...); estructuras causativas (have/get something done)."
+   },
+   "paraCriaturas": false,
+   "exemplo": {
+    "en": "We had the windows cleaned.",
+    "gl": "Fixemos limpar as ventás.",
+    "es": "Hicimos limpiar las ventanas."
+   }
+  },
+  {
+   "n": 39,
+   "nivel": "B2",
+   "titulo": {
+    "gl": "Oracións de relativo explicativas",
+    "es": "Oraciones de relativo explicativas"
+   },
+   "descricion": {
+    "gl": "Comas, pronomes obrigatorios e sen that.",
+    "es": "Uso de comas, pronombres obligatorios y prohibición de that."
+   },
+   "paraCriaturas": false,
+   "exemplo": {
+    "en": "My sister, who lives in Lugo, is a teacher.",
+    "gl": "A miña irmá, que vive en Lugo, é mestra.",
+    "es": "Mi hermana, que vive en Lugo, es maestra."
+   }
+  },
+  {
+   "n": 40,
+   "nivel": "B2",
+   "titulo": {
+    "gl": "Futuros compostos",
+    "es": "Futuros compuestos"
+   },
+   "descricion": {
+    "gl": "Futuro continuo (will be doing) e futuro perfecto (will have done).",
+    "es": "Futuro Continuo (will be doing) para acciones en desarrollo futuro; Futuro Perfecto (will have done) para acciones completadas antes de un punto temporal."
+   },
+   "paraCriaturas": false,
+   "exemplo": {
+    "en": "This time tomorrow, we will be flying to London.",
+    "gl": "Mañá a esta hora estaremos voando a Londres.",
+    "es": "Mañana a esta hora estaremos volando a Londres."
+   }
+  },
+  {
+   "n": 41,
+   "nivel": "B2",
+   "titulo": {
+    "gl": "Pasado perfecto continuo",
+    "es": "Pasado perfecto continuo"
+   },
+   "descricion": {
+    "gl": "Had been doing: o que viña pasando antes doutro momento pasado.",
+    "es": "Continuidad de una acción previa a otro punto de referencia en el pasado (had been doing)."
+   },
+   "paraCriaturas": false,
+   "exemplo": {
+    "en": "They had been waiting for an hour when the bus came.",
+    "gl": "Levaban unha hora esperando cando chegou o autobús.",
+    "es": "Llevaban una hora esperando cuando llegó el autobús."
+   }
+  },
+  {
+   "n": 42,
+   "nivel": "B2",
+   "titulo": {
+    "gl": "Verbos de estilo indirecto",
+    "es": "Verbos de estilo indirecto"
+   },
+   "descricion": {
+    "gl": "Admit, deny, refuse, warn, insist on, apologize for.",
+    "es": "Patrones con verbos específicos de reporte (admit, deny, refuse, warn, insist on, apologize for)."
+   },
+   "paraCriaturas": false,
+   "exemplo": {
+    "en": "He apologized for being late.",
+    "gl": "Pediu perdón por chegar tarde.",
+    "es": "Pidió perdón por llegar tarde."
+   }
+  },
+  {
+   "n": 43,
+   "nivel": "B2",
+   "titulo": {
+    "gl": "Conectores avanzados",
+    "es": "Conectores avanzados"
+   },
+   "descricion": {
+    "gl": "Contraste, concesión e propósito (despite, in spite of, whereas, in order to, so that, nonetheless).",
+    "es": "Marcadores de contraste, concesión y propósito (despite, in spite of, whereas, in order to, so that, nonetheless)."
+   },
+   "paraCriaturas": false,
+   "exemplo": {
+    "en": "Despite the rain, we went to the beach.",
+    "gl": "A pesar da chuvia, fomos á praia.",
+    "es": "A pesar de la lluvia, fuimos a la playa."
+   }
+  },
+  {
+   "n": 44,
+   "nivel": "C1",
+   "titulo": {
+    "gl": "Cláusulas de participio",
+    "es": "Cláusulas de participio"
+   },
+   "descricion": {
+    "gl": "Reducir subordinadas con -ing, -ed e having done.",
+    "es": "Reducción de subordinadas temporales, causales y relativas mediante participios de presente (-ing), pasado (-ed) y perfecto (having done)."
+   },
+   "paraCriaturas": false,
+   "exemplo": {
+    "en": "Having finished dinner, we went for a walk.",
+    "gl": "Despois de cear, fomos dar un paseo.",
+    "es": "Después de cenar, fuimos a dar un paseo."
+   }
+  },
+  {
+   "n": 45,
+   "nivel": "C1",
+   "titulo": {
+    "gl": "Inversión enfática",
+    "es": "Inversión enfática"
+   },
+   "descricion": {
+    "gl": "Never had I seen, Seldom do we, Under no circumstances should you.",
+    "es": "Alteración del orden sujeto-verbo tras adverbios negativos o restrictivos (Never had I seen, Seldom do we, Under no circumstances should you)."
+   },
+   "paraCriaturas": false,
+   "exemplo": {
+    "en": "Never have I seen such a big wave.",
+    "gl": "Nunca vin unha onda tan grande.",
+    "es": "Nunca he visto una ola tan grande."
+   }
+  },
+  {
+   "n": 46,
+   "nivel": "C1",
+   "titulo": {
+    "gl": "Oracións fendidas",
+    "es": "Oraciones hendidas"
+   },
+   "descricion": {
+    "gl": "What I really need is… / It was yesterday when… / The reason why…",
+    "es": "Estructuras de focalización y énfasis (What I really need is... / It was yesterday when... / The reason why...)."
+   },
+   "paraCriaturas": false,
+   "exemplo": {
+    "en": "What I really need is a cup of tea.",
+    "gl": "O que de verdade necesito é unha cunca de té.",
+    "es": "Lo que de verdad necesito es una taza de té."
+   }
+  },
+  {
+   "n": 47,
+   "nivel": "C1",
+   "titulo": {
+    "gl": "Subxuntivo e fórmulas hipotéticas",
+    "es": "Subjuntivo y fórmulas hipotéticas"
+   },
+   "descricion": {
+    "gl": "Subxuntivo mandativo (demand that he be present) e were he to come, lest.",
+    "es": "Subjuntivo mandativo (demand that he be present) y giros hipotéticos arcaicos o formales (were he to come, lest)."
+   },
+   "paraCriaturas": false,
+   "exemplo": {
+    "en": "The school asks that every child bring a hat.",
+    "gl": "A escola pide que cada neno traia un gorro.",
+    "es": "La escuela pide que cada niño traiga un gorro."
+   }
+  },
+  {
+   "n": 48,
+   "nivel": "C1",
+   "titulo": {
+    "gl": "Elipse, substitución e cohesión",
+    "es": "Elipsis, sustitución y cohesión"
+   },
+   "descricion": {
+    "gl": "So do I, neither will he, to do so e marcadores de rexistro formal.",
+    "es": "Omisión de elementos sintácticos redundantes (so do I, neither will he, to do so) y marcadores de registro formal/académico."
+   },
+   "paraCriaturas": false,
+   "exemplo": {
+    "en": "I love the sea, and so does my son.",
+    "gl": "Encántame o mar, e ao meu fillo tamén.",
+    "es": "Me encanta el mar, y a mi hijo también."
+   }
+  }
+ ],
+ "ruta": {
+  "curso_0_2": {
+   "9": {
+    "punto": 10,
+    "frases": [
+     {
+      "en": "Clap!",
+      "gl": "Aplaude!",
+      "es": "¡Aplaude!"
+     },
+     {
+      "en": "Splash!",
+      "gl": "Chapuza!",
+      "es": "¡Chapotea!"
+     },
+     {
+      "en": "Come up!",
+      "gl": "Arriba!",
+      "es": "¡Arriba!"
+     },
+     {
+      "en": "Wave hello!",
+      "gl": "Di ola coa man!",
+      "es": "¡Di hola con la mano!"
+     }
+    ]
+   },
+   "10": {
+    "punto": 10,
+    "frases": [
+     {
+      "en": "Touch your head!",
+      "gl": "Toca a cabeza!",
+      "es": "¡Tócate la cabeza!"
+     },
+     {
+      "en": "Wiggle your toes!",
+      "gl": "Move os dedos dos pés!",
+      "es": "¡Mueve los dedos de los pies!"
+     },
+     {
+      "en": "Stop!",
+      "gl": "Para!",
+      "es": "¡Para!"
+     },
+     {
+      "en": "Touch your tummy!",
+      "gl": "Toca a barriguiña!",
+      "es": "¡Tócate la barriguita!"
+     }
+    ]
+   },
+   "11": {
+    "punto": 2,
+    "frases": [
+     {
+      "en": "A leaf.",
+      "gl": "Unha folla.",
+      "es": "Una hoja."
+     },
+     {
+      "en": "The leaf is falling.",
+      "gl": "A folla está caendo.",
+      "es": "La hoja se está cayendo."
+     },
+     {
+      "en": "Leaves!",
+      "gl": "Follas!",
+      "es": "¡Hojas!"
+     },
+     {
+      "en": "A stone.",
+      "gl": "Unha pedra.",
+      "es": "Una piedra."
+     }
+    ]
+   },
+   "12": {
+    "punto": 3,
+    "frases": [
+     {
+      "en": "This bell.",
+      "gl": "Esta campá.",
+      "es": "Esta campana."
+     },
+     {
+      "en": "That bell is big.",
+      "gl": "Esa campá é grande.",
+      "es": "Esa campana es grande."
+     },
+     {
+      "en": "This hug is warm.",
+      "gl": "Esta aperta é quentiña.",
+      "es": "Este abrazo es calentito."
+     },
+     {
+      "en": "That bell is small.",
+      "gl": "Esa campá é pequena.",
+      "es": "Esa campana es pequeña."
+     }
+    ]
+   },
+   "1": {
+    "punto": 3,
+    "frases": [
+     {
+      "en": "My hat.",
+      "gl": "O meu gorro.",
+      "es": "Mi gorro."
+     },
+     {
+      "en": "Your hat.",
+      "gl": "O teu gorro.",
+      "es": "Tu gorro."
+     },
+     {
+      "en": "My mittens.",
+      "gl": "As miñas luvas.",
+      "es": "Mis manoplas."
+     },
+     {
+      "en": "Your apple.",
+      "gl": "A túa mazá.",
+      "es": "Tu manzana."
+     }
+    ]
+   },
+   "2": {
+    "punto": 2,
+    "frases": [
+     {
+      "en": "A frog.",
+      "gl": "Unha ra.",
+      "es": "Una rana."
+     },
+     {
+      "en": "Two cats.",
+      "gl": "Dous gatos.",
+      "es": "Dos gatos."
+     },
+     {
+      "en": "The bird says tweet.",
+      "gl": "O paxaro di chío.",
+      "es": "El pájaro dice pío."
+     },
+     {
+      "en": "Frogs jump!",
+      "gl": "As ras saltan!",
+      "es": "¡Las ranas saltan!"
+     }
+    ]
+   },
+   "3": {
+    "punto": 7,
+    "frases": [
+     {
+      "en": "The soap is in the water.",
+      "gl": "O xabón está na auga.",
+      "es": "El jabón está en el agua."
+     },
+     {
+      "en": "The towel is on the chair.",
+      "gl": "A toalla está na cadeira.",
+      "es": "La toalla está en la silla."
+     },
+     {
+      "en": "The circle is on the floor.",
+      "gl": "O círculo está no chan.",
+      "es": "El círculo está en el suelo."
+     },
+     {
+      "en": "The ball is in the box.",
+      "gl": "A pelota está na caixa.",
+      "es": "La pelota está en la caja."
+     }
+    ]
+   },
+   "4": {
+    "punto": 7,
+    "frases": [
+     {
+      "en": "There is a drop!",
+      "gl": "Hai unha pinga!",
+      "es": "¡Hay una gota!"
+     },
+     {
+      "en": "There is the sun!",
+      "gl": "Aí está o sol!",
+      "es": "¡Ahí está el sol!"
+     },
+     {
+      "en": "There are drops on the window.",
+      "gl": "Hai pingas na ventá.",
+      "es": "Hay gotas en la ventana."
+     },
+     {
+      "en": "There is rain!",
+      "gl": "Hai chuvia!",
+      "es": "¡Hay lluvia!"
+     }
+    ]
+   },
+   "5": {
+    "punto": 3,
+    "frases": [
+     {
+      "en": "This is my soap.",
+      "gl": "Este é o meu xabón.",
+      "es": "Este es mi jabón."
+     },
+     {
+      "en": "This is your towel.",
+      "gl": "Esta é a túa toalla.",
+      "es": "Esta es tu toalla."
+     },
+     {
+      "en": "My clean hands!",
+      "gl": "As miñas mans limpas!",
+      "es": "¡Mis manos limpias!"
+     },
+     {
+      "en": "Your dog.",
+      "gl": "O teu can.",
+      "es": "Tu perro."
+     }
+    ]
+   },
+   "6": {
+    "punto": 7,
+    "frases": [
+     {
+      "en": "The fish is in the sea.",
+      "gl": "O peixe está no mar.",
+      "es": "El pez está en el mar."
+     },
+     {
+      "en": "The ball is in the box.",
+      "gl": "A pelota está na caixa.",
+      "es": "La pelota está en la caja."
+     },
+     {
+      "en": "There is a wave!",
+      "gl": "Hai unha onda!",
+      "es": "¡Hay una ola!"
+     },
+     {
+      "en": "The boat is on the water.",
+      "gl": "O barco está na auga.",
+      "es": "El barco está en el agua."
+     }
+    ]
+   }
+  },
+  "curso_2_3": {
+   "9": {
+    "punto": 1,
+    "frases": [
+     {
+      "en": "I am Lúa.",
+      "gl": "Eu son Lúa.",
+      "es": "Yo soy Lúa."
+     },
+     {
+      "en": "You are my friend.",
+      "gl": "Ti es o meu amigo.",
+      "es": "Tú eres mi amigo."
+     },
+     {
+      "en": "It is water.",
+      "gl": "É auga.",
+      "es": "Es agua."
+     },
+     {
+      "en": "I am wet!",
+      "gl": "Estou mollado!",
+      "es": "¡Estoy mojado!"
+     }
+    ]
+   },
+   "10": {
+    "punto": 10,
+    "frases": [
+     {
+      "en": "Touch your knees!",
+      "gl": "Toca os xeonllos!",
+      "es": "¡Tócate las rodillas!"
+     },
+     {
+      "en": "Shake your hands!",
+      "gl": "Axita as mans!",
+      "es": "¡Sacude las manos!"
+     },
+     {
+      "en": "Freeze!",
+      "gl": "Estátua!",
+      "es": "¡Estatua!"
+     },
+     {
+      "en": "Dance and freeze!",
+      "gl": "Baila e queda quieto!",
+      "es": "¡Baila y quédate quieto!"
+     }
+    ]
+   },
+   "11": {
+    "punto": 2,
+    "frases": [
+     {
+      "en": "A leaf, two leaves.",
+      "gl": "Unha folla, dúas follas.",
+      "es": "Una hoja, dos hojas."
+     },
+     {
+      "en": "The leaves are crunchy.",
+      "gl": "As follas fan cruc.",
+      "es": "Las hojas crujen."
+     },
+     {
+      "en": "Three stones.",
+      "gl": "Tres pedras.",
+      "es": "Tres piedras."
+     },
+     {
+      "en": "The wind is blowing.",
+      "gl": "Sopra o vento.",
+      "es": "Sopla el viento."
+     }
+    ]
+   },
+   "12": {
+    "punto": 1,
+    "frases": [
+     {
+      "en": "It is loud!",
+      "gl": "Soa forte!",
+      "es": "¡Suena fuerte!"
+     },
+     {
+      "en": "It isn't loud. It is quiet.",
+      "gl": "Non soa forte. Soa baixiño.",
+      "es": "No suena fuerte. Suena bajito."
+     },
+     {
+      "en": "Is it big?",
+      "gl": "É grande?",
+      "es": "¿Es grande?"
+     },
+     {
+      "en": "The baby is sleeping. Shh!",
+      "gl": "O bebé está durmindo. Shh!",
+      "es": "El bebé está durmiendo. ¡Shh!"
+     }
+    ]
+   },
+   "1": {
+    "punto": 3,
+    "frases": [
+     {
+      "en": "My coat.",
+      "gl": "O meu abrigo.",
+      "es": "Mi abrigo."
+     },
+     {
+      "en": "Your boots.",
+      "gl": "As túas botas.",
+      "es": "Tus botas."
+     },
+     {
+      "en": "This is my apple.",
+      "gl": "Esta é a miña mazá.",
+      "es": "Esta es mi manzana."
+     },
+     {
+      "en": "Mum's coat.",
+      "gl": "O abrigo de mamá.",
+      "es": "El abrigo de mamá."
+     }
+    ]
+   },
+   "2": {
+    "punto": 10,
+    "frases": [
+     {
+      "en": "I can fly like a bird!",
+      "gl": "Podo voar coma un paxaro!",
+      "es": "¡Puedo volar como un pájaro!"
+     },
+     {
+      "en": "Can you stomp like a bear?",
+      "gl": "Podes pisar forte coma un oso?",
+      "es": "¿Puedes pisar fuerte como un oso?"
+     },
+     {
+      "en": "I can't fly!",
+      "gl": "Non podo voar!",
+      "es": "¡No puedo volar!"
+     },
+     {
+      "en": "Flap your wings!",
+      "gl": "Bate as ás!",
+      "es": "¡Bate las alas!"
+     }
+    ]
+   },
+   "3": {
+    "punto": 3,
+    "frases": [
+     {
+      "en": "This circle is red.",
+      "gl": "Este círculo é vermello.",
+      "es": "Este círculo es rojo."
+     },
+     {
+      "en": "That card is red.",
+      "gl": "Esa tarxeta é vermella.",
+      "es": "Esa tarjeta es roja."
+     },
+     {
+      "en": "These tomatoes are red.",
+      "gl": "Estes tomates son vermellos.",
+      "es": "Estos tomates son rojos."
+     },
+     {
+      "en": "My towel.",
+      "gl": "A miña toalla.",
+      "es": "Mi toalla."
+     }
+    ]
+   },
+   "4": {
+    "punto": 8,
+    "frases": [
+     {
+      "en": "Where is the sun?",
+      "gl": "Onde está o sol?",
+      "es": "¿Dónde está el sol?"
+     },
+     {
+      "en": "What is it? A seed!",
+      "gl": "Que é? Unha semente!",
+      "es": "¿Qué es? ¡Una semilla!"
+     },
+     {
+      "en": "Where are the flowers?",
+      "gl": "Onde están as flores?",
+      "es": "¿Dónde están las flores?"
+     },
+     {
+      "en": "What is soft?",
+      "gl": "Que é suave?",
+      "es": "¿Qué es suave?"
+     }
+    ]
+   },
+   "5": {
+    "punto": 6,
+    "frases": [
+     {
+      "en": "Some soap.",
+      "gl": "Un pouco de xabón.",
+      "es": "Un poco de jabón."
+     },
+     {
+      "en": "More water!",
+      "gl": "Máis auga!",
+      "es": "¡Más agua!"
+     },
+     {
+      "en": "A lot of bubbles!",
+      "gl": "Moitas burbullas!",
+      "es": "¡Muchas burbujas!"
+     },
+     {
+      "en": "Some water on your face.",
+      "gl": "Un pouco de auga na cara.",
+      "es": "Un poco de agua en la cara."
+     }
+    ]
+   },
+   "6": {
+    "punto": 7,
+    "frases": [
+     {
+      "en": "The fish is under the sea.",
+      "gl": "O peixe está debaixo do mar.",
+      "es": "El pez está debajo del mar."
+     },
+     {
+      "en": "The ball is in the box.",
+      "gl": "A pelota está na caixa.",
+      "es": "La pelota está en la caja."
+     },
+     {
+      "en": "The box is next to the ball.",
+      "gl": "A caixa está ao lado da pelota.",
+      "es": "La caja está al lado de la pelota."
+     },
+     {
+      "en": "There are big waves!",
+      "gl": "Hai ondas grandes!",
+      "es": "¡Hay olas grandes!"
+     }
+    ]
+   }
+  },
+  "curso_3_4": {
+   "9": {
+    "punto": 4,
+    "frases": [
+     {
+      "en": "We sit in a circle.",
+      "gl": "Sentamos en círculo.",
+      "es": "Nos sentamos en círculo."
+     },
+     {
+      "en": "We clap our hands.",
+      "gl": "Aplaudimos.",
+      "es": "Aplaudimos."
+     },
+     {
+      "en": "I say hello.",
+      "gl": "Eu digo ola.",
+      "es": "Yo digo hola."
+     },
+     {
+      "en": "The train goes round.",
+      "gl": "O tren dá voltas.",
+      "es": "El tren da vueltas."
+     }
+    ]
+   },
+   "10": {
+    "punto": 7,
+    "frases": [
+     {
+      "en": "The leaf is on the floor.",
+      "gl": "A folla está no chan.",
+      "es": "La hoja está en el suelo."
+     },
+     {
+      "en": "Put the leaf under the cloth.",
+      "gl": "Pon a folla debaixo da tela.",
+      "es": "Pon la hoja debajo de la tela."
+     },
+     {
+      "en": "The leaf is in my hand.",
+      "gl": "A folla está na miña man.",
+      "es": "La hoja está en mi mano."
+     },
+     {
+      "en": "Your turn!",
+      "gl": "Tócache a ti!",
+      "es": "¡Te toca!"
+     }
+    ]
+   },
+   "11": {
+    "punto": 10,
+    "frases": [
+     {
+      "en": "I can jump!",
+      "gl": "Podo saltar!",
+      "es": "¡Puedo saltar!"
+     },
+     {
+      "en": "Can you help me, please?",
+      "gl": "Podes axudarme, por favor?",
+      "es": "¿Me puedes ayudar, por favor?"
+     },
+     {
+      "en": "Roll the pumpkin!",
+      "gl": "Fai rodar a cabaza!",
+      "es": "¡Haz rodar la calabaza!"
+     },
+     {
+      "en": "I can't jump so high.",
+      "gl": "Non podo saltar tan alto.",
+      "es": "No puedo saltar tan alto."
+     }
+    ]
+   },
+   "12": {
+    "punto": 5,
+    "frases": [
+     {
+      "en": "We always put on our boots.",
+      "gl": "Sempre poñemos as botas.",
+      "es": "Siempre nos ponemos las botas."
+     },
+     {
+      "en": "It sometimes snows.",
+      "gl": "Ás veces neva.",
+      "es": "A veces nieva."
+     },
+     {
+      "en": "We never stomp on a friend.",
+      "gl": "Nunca pisamos a un amigo.",
+      "es": "Nunca pisamos a un amigo."
+     },
+     {
+      "en": "We usually walk on tiptoe.",
+      "gl": "Normalmente camiñamos de puntillas.",
+      "es": "Normalmente andamos de puntillas."
+     }
+    ]
+   },
+   "1": {
+    "punto": 11,
+    "frases": [
+     {
+      "en": "It is raining.",
+      "gl": "Está chovendo.",
+      "es": "Está lloviendo."
+     },
+     {
+      "en": "We are jumping over the puddle.",
+      "gl": "Estamos saltando o charco.",
+      "es": "Estamos saltando el charco."
+     },
+     {
+      "en": "I am opening my umbrella.",
+      "gl": "Estou abrindo o paraugas.",
+      "es": "Estoy abriendo el paraguas."
+     },
+     {
+      "en": "The rain is falling fast.",
+      "gl": "A chuvia está caendo rápido.",
+      "es": "La lluvia está cayendo rápido."
+     }
+    ]
+   },
+   "2": {
+    "punto": 6,
+    "frases": [
+     {
+      "en": "Some juice, please.",
+      "gl": "Un pouco de zume, por favor.",
+      "es": "Un poco de zumo, por favor."
+     },
+     {
+      "en": "More bread!",
+      "gl": "Máis pan!",
+      "es": "¡Más pan!"
+     },
+     {
+      "en": "A full plate.",
+      "gl": "Un prato cheo.",
+      "es": "Un plato lleno."
+     },
+     {
+      "en": "A lot of noise!",
+      "gl": "Moito ruído!",
+      "es": "¡Mucho ruido!"
+     }
+    ]
+   },
+   "3": {
+    "punto": 4,
+    "frases": [
+     {
+      "en": "The seed grows.",
+      "gl": "A semente medra.",
+      "es": "La semilla crece."
+     },
+     {
+      "en": "The sunflower grows tall.",
+      "gl": "O xirasol medra alto.",
+      "es": "El girasol crece alto."
+     },
+     {
+      "en": "We dig the soil.",
+      "gl": "Cavamos a terra.",
+      "es": "Cavamos la tierra."
+     },
+     {
+      "en": "Does the seed need water?",
+      "gl": "A semente precisa auga?",
+      "es": "¿La semilla necesita agua?"
+     }
+    ]
+   },
+   "4": {
+    "punto": 8,
+    "frases": [
+     {
+      "en": "Who is it? A horse!",
+      "gl": "Quen é? Un cabalo!",
+      "es": "¿Quién es? ¡Un caballo!"
+     },
+     {
+      "en": "What does the cow say?",
+      "gl": "Que di a vaca?",
+      "es": "¿Qué dice la vaca?"
+     },
+     {
+      "en": "How does the horse walk?",
+      "gl": "Como anda o cabalo?",
+      "es": "¿Cómo anda el caballo?"
+     },
+     {
+      "en": "Where is the sheep?",
+      "gl": "Onde está a ovella?",
+      "es": "¿Dónde está la oveja?"
+     }
+    ]
+   },
+   "5": {
+    "punto": 9,
+    "frases": [
+     {
+      "en": "We clap in the morning.",
+      "gl": "Aplaudimos pola mañá.",
+      "es": "Aplaudimos por la mañana."
+     },
+     {
+      "en": "We sing on Monday.",
+      "gl": "Cantamos o luns.",
+      "es": "Cantamos el lunes."
+     },
+     {
+      "en": "We sleep at night.",
+      "gl": "Durmimos pola noite.",
+      "es": "Dormimos por la noche."
+     },
+     {
+      "en": "Clap high, clap low!",
+      "gl": "Aplaude arriba, aplaude abaixo!",
+      "es": "¡Aplaude arriba, aplaude abajo!"
+     }
+    ]
+   },
+   "6": {
+    "punto": 19,
+    "frases": [
+     {
+      "en": "Row the boat through the waves.",
+      "gl": "Rema o barco entre as ondas.",
+      "es": "Rema el barco entre las olas."
+     },
+     {
+      "en": "Get into the boat.",
+      "gl": "Entra no barco.",
+      "es": "Sube al barco."
+     },
+     {
+      "en": "Swim to the shell.",
+      "gl": "Nada ata a cuncha.",
+      "es": "Nada hasta la concha."
+     },
+     {
+      "en": "Get out of the water.",
+      "gl": "Sae da auga.",
+      "es": "Sal del agua."
+     }
+    ]
+   }
+  },
+  "curso_4_5": {
+   "9": {
+    "punto": 11,
+    "frases": [
+     {
+      "en": "The bear is sleeping.",
+      "gl": "O oso está durmindo.",
+      "es": "El oso está durmiendo."
+     },
+     {
+      "en": "Bears sleep in winter.",
+      "gl": "Os osos dormen no inverno.",
+      "es": "Los osos duermen en invierno."
+     },
+     {
+      "en": "I am carrying my backpack.",
+      "gl": "Levo a mochila.",
+      "es": "Llevo la mochila."
+     },
+     {
+      "en": "The bell is ringing!",
+      "gl": "Está soando a campá!",
+      "es": "¡Está sonando la campana!"
+     }
+    ]
+   },
+   "10": {
+    "punto": 12,
+    "frases": [
+     {
+      "en": "The squirrel was in the tree.",
+      "gl": "O esquío estaba na árbore.",
+      "es": "La ardilla estaba en el árbol."
+     },
+     {
+      "en": "There was a boar in the forest.",
+      "gl": "Había un xabaril no bosque.",
+      "es": "Había un jabalí en el bosque."
+     },
+     {
+      "en": "The chestnuts were on the ground.",
+      "gl": "As castañas estaban no chan.",
+      "es": "Las castañas estaban en el suelo."
+     },
+     {
+      "en": "Was it hiding?",
+      "gl": "Estaba escondido?",
+      "es": "¿Estaba escondido?"
+     }
+    ]
+   },
+   "11": {
+    "punto": 13,
+    "frases": [
+     {
+      "en": "The chestnut rolled downhill.",
+      "gl": "A castaña rodou costa abaixo.",
+      "es": "La castaña rodó cuesta abajo."
+     },
+     {
+      "en": "The hedgehog curled into a ball.",
+      "gl": "O ourizo fíxose unha bóla.",
+      "es": "El erizo se hizo una bola."
+     },
+     {
+      "en": "We danced together.",
+      "gl": "Bailamos xuntos.",
+      "es": "Bailamos juntos."
+     },
+     {
+      "en": "Did it hurt? Yes, it did.",
+      "gl": "Doeulle? Si.",
+      "es": "¿Le dolió? Sí."
+     }
+    ]
+   },
+   "12": {
+    "punto": 13,
+    "frases": [
+     {
+      "en": "It was cold last night.",
+      "gl": "Onte pola noite facía frío.",
+      "es": "Anoche hacía frío."
+     },
+     {
+      "en": "The sun went down.",
+      "gl": "Púxose o sol.",
+      "es": "Se puso el sol."
+     },
+     {
+      "en": "We played the drum.",
+      "gl": "Tocamos o tambor.",
+      "es": "Tocamos el tambor."
+     },
+     {
+      "en": "The pond froze.",
+      "gl": "Xeou a charca.",
+      "es": "Se heló la charca."
+     }
+    ]
+   },
+   "1": {
+    "punto": 20,
+    "frases": [
+     {
+      "en": "We run because the storm is here.",
+      "gl": "Corremos porque chegou a tormenta.",
+      "es": "Corremos porque ha llegado la tormenta."
+     },
+     {
+      "en": "It is cloudy, so we take the umbrella.",
+      "gl": "Está nubrado, así que levamos o paraugas.",
+      "es": "Está nublado, así que llevamos el paraguas."
+     },
+     {
+      "en": "We hide under the umbrella because it is raining.",
+      "gl": "Escondémonos baixo o paraugas porque chove.",
+      "es": "Nos escondemos bajo el paraguas porque llueve."
+     },
+     {
+      "en": "I am wet, but I am happy.",
+      "gl": "Estou mollado, pero estou contento.",
+      "es": "Estoy mojado, pero estoy contento."
+     }
+    ]
+   },
+   "2": {
+    "punto": 15,
+    "frases": [
+     {
+      "en": "The wolf can see you!",
+      "gl": "O lobo pódete ver!",
+      "es": "¡El lobo te puede ver!"
+     },
+     {
+      "en": "Look at me: I am a horse.",
+      "gl": "Mírame: son un cabalo.",
+      "es": "Mírame: soy un caballo."
+     },
+     {
+      "en": "Follow him!",
+      "gl": "Ségueo!",
+      "es": "¡Síguelo!"
+     },
+     {
+      "en": "The fox is watching us.",
+      "gl": "O raposo está mirándonos.",
+      "es": "El zorro nos está mirando."
+     }
+    ]
+   },
+   "3": {
+    "punto": 16,
+    "frases": [
+     {
+      "en": "The honey is sweeter than the apple.",
+      "gl": "O mel é máis doce ca a mazá.",
+      "es": "La miel es más dulce que la manzana."
+     },
+     {
+      "en": "This flower is bigger.",
+      "gl": "Esta flor é máis grande.",
+      "es": "Esta flor es más grande."
+     },
+     {
+      "en": "The bee is as small as my finger.",
+      "gl": "A abella é tan pequena coma o meu dedo.",
+      "es": "La abeja es tan pequeña como mi dedo."
+     },
+     {
+      "en": "The red flower is the biggest.",
+      "gl": "A flor vermella é a máis grande.",
+      "es": "La flor roja es la más grande."
+     }
+    ]
+   },
+   "4": {
+    "punto": 14,
+    "frases": [
+     {
+      "en": "The wolf was sleeping when the sheep came.",
+      "gl": "O lobo estaba durmindo cando chegou a ovella.",
+      "es": "El lobo estaba durmiendo cuando llegó la oveja."
+     },
+     {
+      "en": "We were walking calmly.",
+      "gl": "Estabamos camiñando con calma.",
+      "es": "Estábamos andando con calma."
+     },
+     {
+      "en": "It was raining when we went out.",
+      "gl": "Estaba chovendo cando saímos.",
+      "es": "Estaba lloviendo cuando salimos."
+     },
+     {
+      "en": "While the wolf was sleeping, we walked on tiptoe.",
+      "gl": "Mentres o lobo durmía, camiñamos de puntillas.",
+      "es": "Mientras el lobo dormía, andamos de puntillas."
+     }
+    ]
+   },
+   "5": {
+    "punto": 20,
+    "frases": [
+     {
+      "en": "We pull and pull, but it doesn't move.",
+      "gl": "Tiramos e tiramos, pero non se move.",
+      "es": "Tiramos y tiramos, pero no se mueve."
+     },
+     {
+      "en": "We help, so it comes out.",
+      "gl": "Axudamos, así que sae.",
+      "es": "Ayudamos, así que sale."
+     },
+     {
+      "en": "It is heavy because it is enormous.",
+      "gl": "Pesa porque é enorme.",
+      "es": "Pesa porque es enorme."
+     },
+     {
+      "en": "Pull and help!",
+      "gl": "Tira e axuda!",
+      "es": "¡Tira y ayuda!"
+     }
+    ]
+   },
+   "6": {
+    "punto": 17,
+    "frases": [
+     {
+      "en": "We are going to swim in the sea.",
+      "gl": "Imos nadar no mar.",
+      "es": "Vamos a nadar en el mar."
+     },
+     {
+      "en": "Look at the clouds: it is going to rain.",
+      "gl": "Mira as nubes: vai chover.",
+      "es": "Mira las nubes: va a llover."
+     },
+     {
+      "en": "I will help you.",
+      "gl": "Eu axúdote.",
+      "es": "Yo te ayudo."
+     },
+     {
+      "en": "The sea will be calm.",
+      "gl": "O mar estará en calma.",
+      "es": "El mar estará en calma."
+     }
+    ]
+   }
+  },
+  "curso_5_6": {
+   "9": {
+    "punto": 15,
+    "frases": [
+     {
+      "en": "I hang my coat myself.",
+      "gl": "Colgo o abrigo eu só.",
+      "es": "Cuelgo el abrigo yo solo."
+     },
+     {
+      "en": "Help her, please.",
+      "gl": "Axúdaa, por favor.",
+      "es": "Ayúdala, por favor."
+     },
+     {
+      "en": "I can do it myself.",
+      "gl": "Podo facelo eu só.",
+      "es": "Puedo hacerlo yo solo."
+     },
+     {
+      "en": "Give me the green card.",
+      "gl": "Dáme a tarxeta verde.",
+      "es": "Dame la tarjeta verde."
+     }
+    ]
+   },
+   "10": {
+    "punto": 16,
+    "frases": [
+     {
+      "en": "This leaf is rougher than that one.",
+      "gl": "Esta folla é máis áspera ca esa.",
+      "es": "Esta hoja es más áspera que esa."
+     },
+     {
+      "en": "The smoothest leaf goes in the hoop.",
+      "gl": "A folla máis lisa vai no aro.",
+      "es": "La hoja más lisa va en el aro."
+     },
+     {
+      "en": "My leaf is as brown as yours.",
+      "gl": "A miña folla é tan marrón coma a túa.",
+      "es": "Mi hoja es tan marrón como la tuya."
+     },
+     {
+      "en": "This hoop is the biggest.",
+      "gl": "Este aro é o máis grande.",
+      "es": "Este aro es el más grande."
+     }
+    ]
+   },
+   "11": {
+    "punto": 20,
+    "frases": [
+     {
+      "en": "It is round, so it is a chestnut.",
+      "gl": "É redonda, así que é unha castaña.",
+      "es": "Es redonda, así que es una castaña."
+     },
+     {
+      "en": "It is cold, but it isn't wet.",
+      "gl": "Está fría, pero non está mollada.",
+      "es": "Está fría, pero no está mojada."
+     },
+     {
+      "en": "Although I can't see it, I can feel it.",
+      "gl": "Aínda que non a vexo, podo tocala.",
+      "es": "Aunque no la veo, la puedo tocar."
+     },
+     {
+      "en": "We share because it is fair.",
+      "gl": "Compartimos porque é xusto.",
+      "es": "Compartimos porque es justo."
+     }
+    ]
+   },
+   "12": {
+    "punto": 19,
+    "frases": [
+     {
+      "en": "Walk across the room.",
+      "gl": "Cruza a sala.",
+      "es": "Cruza la sala."
+     },
+     {
+      "en": "Turn left and walk towards the light.",
+      "gl": "Xira á esquerda e camiña cara á luz.",
+      "es": "Gira a la izquierda y camina hacia la luz."
+     },
+     {
+      "en": "Walk along the line, hand in hand.",
+      "gl": "Camiña pola liña, da man.",
+      "es": "Camina por la línea, de la mano."
+     },
+     {
+      "en": "Go out of the circle slowly.",
+      "gl": "Sae do círculo amodo.",
+      "es": "Sal del círculo despacio."
+     }
+    ]
+   },
+   "1": {
+    "punto": 18,
+    "frases": [
+     {
+      "en": "You must walk slowly.",
+      "gl": "Tes que camiñar amodo.",
+      "es": "Tienes que andar despacio."
+     },
+     {
+      "en": "You have to balance the plate.",
+      "gl": "Tes que manter o prato en equilibrio.",
+      "es": "Tienes que mantener el plato en equilibrio."
+     },
+     {
+      "en": "You don't have to run.",
+      "gl": "Non fai falta correr.",
+      "es": "No hace falta correr."
+     },
+     {
+      "en": "You shouldn't spill the water.",
+      "gl": "Non deberías derramar a auga.",
+      "es": "No deberías derramar el agua."
+     }
+    ]
+   },
+   "2": {
+    "punto": 17,
+    "frases": [
+     {
+      "en": "I am going to be a statue.",
+      "gl": "Vou ser unha estatua.",
+      "es": "Voy a ser una estatua."
+     },
+     {
+      "en": "I will copy your movements.",
+      "gl": "Vou copiar os teus movementos.",
+      "es": "Copiaré tus movimientos."
+     },
+     {
+      "en": "We are going to put on our costumes.",
+      "gl": "Imos poñer os disfraces.",
+      "es": "Vamos a ponernos los disfraces."
+     },
+     {
+      "en": "I will put my arms up.",
+      "gl": "Vou poñer os brazos arriba.",
+      "es": "Pondré los brazos arriba."
+     }
+    ]
+   },
+   "3": {
+    "punto": 14,
+    "frases": [
+     {
+      "en": "I was filling the pot when the seed fell.",
+      "gl": "Estaba enchendo o testo cando caeu a semente.",
+      "es": "Estaba llenando la maceta cuando se cayó la semilla."
+     },
+     {
+      "en": "We were watering the plants.",
+      "gl": "Estabamos regando as plantas.",
+      "es": "Estábamos regando las plantas."
+     },
+     {
+      "en": "While she was digging, I was singing.",
+      "gl": "Mentres ela cavaba, eu cantaba.",
+      "es": "Mientras ella cavaba, yo cantaba."
+     },
+     {
+      "en": "The seed was growing in the soil.",
+      "gl": "A semente estaba medrando na terra.",
+      "es": "La semilla estaba creciendo en la tierra."
+     }
+    ]
+   },
+   "4": {
+    "punto": 18,
+    "frases": [
+     {
+      "en": "You should hide behind the tree.",
+      "gl": "Deberías esconderte detrás da árbore.",
+      "es": "Deberías esconderte detrás del árbol."
+     },
+     {
+      "en": "You must fasten your seatbelt.",
+      "gl": "Tes que pór o cinto.",
+      "es": "Tienes que ponerte el cinturón."
+     },
+     {
+      "en": "We have to crawl like a snake.",
+      "gl": "Temos que arrastrarnos coma unha serpe.",
+      "es": "Tenemos que arrastrarnos como una serpiente."
+     },
+     {
+      "en": "You shouldn't touch the pointy stick.",
+      "gl": "Non deberías tocar o pau con punta.",
+      "es": "No deberías tocar el palo con punta."
+     }
+    ]
+   },
+   "5": {
+    "punto": 16,
+    "frases": [
+     {
+      "en": "Clap faster!",
+      "gl": "Aplaude máis rápido!",
+      "es": "¡Aplaude más rápido!"
+     },
+     {
+      "en": "Now tap slower than before.",
+      "gl": "Agora toca máis amodo ca antes.",
+      "es": "Ahora toca más despacio que antes."
+     },
+     {
+      "en": "My pattern is longer than yours.",
+      "gl": "O meu patrón é máis longo co teu.",
+      "es": "Mi patrón es más largo que el tuyo."
+     },
+     {
+      "en": "This is the fastest rhythm.",
+      "gl": "Este é o ritmo máis rápido.",
+      "es": "Este es el ritmo más rápido."
+     }
+    ]
+   },
+   "6": {
+    "punto": 17,
+    "frases": [
+     {
+      "en": "We are going to find shells.",
+      "gl": "Imos atopar cunchas.",
+      "es": "Vamos a encontrar conchas."
+     },
+     {
+      "en": "I will walk five steps.",
+      "gl": "Vou dar cinco pasos.",
+      "es": "Daré cinco pasos."
+     },
+     {
+      "en": "The tide is going to come in.",
+      "gl": "Vai subir a marea.",
+      "es": "Va a subir la marea."
+     },
+     {
+      "en": "I will put the white shell in the basket.",
+      "gl": "Vou pór a cuncha branca na cesta.",
+      "es": "Pondré la concha blanca en la cesta."
+     }
+    ]
+   }
+  }
+ }
+}

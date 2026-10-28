@@ -9,6 +9,7 @@ import 'package:descubre_con_lua/core/localization/app_language.dart';
 import 'package:descubre_con_lua/core/theme/app_theme.dart';
 import 'package:descubre_con_lua/data/models/leccion_model.dart';
 import 'package:descubre_con_lua/data/models/xogos_fogar_model.dart';
+import 'package:descubre_con_lua/features/leccions/views/gramatica_screen.dart';
 import 'package:descubre_con_lua/features/leccions/widgets/leccion_da_semana.dart';
 
 /// P11 (Frank 27/10/2026): lecciones de una semana por grupo, con una sola
@@ -152,6 +153,66 @@ void main() {
           }
         }
       }
+    }
+  });
+
+  test('cada unidade leva o seu punto de gramática e cada semana a súa frase',
+      () {
+    final puntos = <int>{};
+    for (final c in cursos) {
+      for (final u in leccions.unidades[c]!) {
+        final g = u.gramatica;
+        expect(g, isNotNull, reason: u.id);
+        expect(g!.n, inInclusiveRange(1, 20), reason: u.id);
+        expect(g.paraFamilias?.hasParity, isTrue, reason: u.id);
+        puntos.add(g.n);
+        for (final l in u.leccions) {
+          expect(l.fraseGramatica?.significado?.hasParity, isTrue,
+              reason: l.id);
+        }
+      }
+    }
+    expect(puntos, hasLength(20));
+  });
+
+  testWidgets('a gramática do curso, a 360 px e escala 1.8', (tester) async {
+    GramaticaDoCurso.sembrar(GramaticaDoCurso.fromRaw(
+        File(GramaticaDoCurso.assetPath).readAsStringSync()));
+    await tester.binding.setSurfaceSize(const Size(360, 780));
+    addTearDown(() => tester.binding.setSurfaceSize(null));
+    for (final lang in AppLanguage.deInterfaz) {
+      await tester.pumpWidget(MaterialApp(
+        theme: AppTheme.lightTheme,
+        home: MediaQuery(
+          data: const MediaQueryData(
+              size: Size(360, 780), textScaler: TextScaler.linear(1.8)),
+          child: GramaticaScreen(
+            key: ValueKey(lang),
+            language: lang,
+            audioService: MockOfflineAudioService(),
+            destacado: 7,
+          ),
+        ),
+      ));
+      await tester.pump();
+      await tester.pump();
+      expect(tester.takeException(), isNull);
+      expect(find.byKey(const ValueKey('gramatica_punto_1')), findsOneWidget);
+      // Hasta el final de la lista, sin que nada desborde por el camino.
+      for (var i = 0;
+          i < 200 &&
+              find
+                  .byKey(const ValueKey('gramatica_punto_48'))
+                  .evaluate()
+                  .isEmpty;
+          i++) {
+        await tester.drag(
+            find.byKey(const Key('gramatica')), const Offset(0, -500));
+        await tester.pump();
+        expect(tester.takeException(), isNull);
+      }
+      expect(find.byKey(const ValueKey('gramatica_punto_48')), findsOneWidget);
+      expect(tester.takeException(), isNull);
     }
   });
 

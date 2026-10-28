@@ -752,6 +752,22 @@ def collect_locutions(content_dir: Path = CONTENT_DIR) -> list[Locution]:
                         _add(_localized(item), "tutor",
                              f"curriculo/{uid}/{campo}/significado", seen)
 
+    # La gramática del curso (Frank, 28/10/2026): las frases de cada semana y
+    # los ejemplos para la persona adulta, con su significado para el doble
+    # toque.
+    gram = content_dir / "gramatica" / "gramatica.json"
+    if gram.exists():
+        g = json.loads(gram.read_text(encoding="utf-8"))
+        frases = [(f"gramatica/{c}/{m}", f) for c, ms in g["ruta"].items()
+                  for m, x in ms.items() for f in x["frases"]]
+        frases += [(f"gramatica/punto/{p['n']}", p["exemplo"])
+                   for p in g["puntos"] if p.get("exemplo")]
+        for fonte, f in frases:
+            texto = str(f["en"])
+            _one(texto, "en", estilo_ingles(texto), fonte, seen)
+            if f.get("gl") and f.get("es"):
+                _add(_localized(f), "tutor", f"{fonte}/significado", seen)
+
     # Los 100 cuentos dialogados (F12): la frase de Lúa, la tríada CROWD y los
     # recast llevan voz inglesa, y su significado gl/es para el doble toque.
     for ruta in sorted((content_dir / "biblioteca").glob("his_*.json")):

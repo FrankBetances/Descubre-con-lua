@@ -110,6 +110,10 @@ run_gate "home guide of every month is regenerated from its sources" \
 # toca el plan sin regenerarlas, la lección enseñaría otra unidad.
 run_gate "weekly lessons are regenerated from the plan" \
   python3 tools/gen_leccions.py --check
+# La gramática del curso (Frank, 28/10/2026): los 20 puntos de A1-A2 en las
+# cinco edades, sin bajar de una edad a la siguiente.
+run_gate "course grammar covers A1-A2 across the five ages" \
+  python3 tools/gen_gramatica.py --check
 # Nace de O5 (M5.1): el microcuento es una conversación sobre el núcleo, no
 # otro vocabulario. Comprueba que lo que dice Lúa sale del núcleo, que hay
 # tríada, guion de recast para cinco respuestas y pregunta de casa por edad, y

@@ -89,6 +89,9 @@ class Leccion {
   /// El nivel de logro que se espera esta semana.
   final LocalizedString? espera;
 
+  /// La frase de gramática de la semana, con su significado.
+  final PezaDaLeccion? fraseGramatica;
+
   const Leccion({
     required this.id,
     required this.numero,
@@ -107,6 +110,7 @@ class Leccion {
     this.queMirar = const [],
     this.dias = const [],
     this.espera,
+    this.fraseGramatica,
   });
 
   factory Leccion.fromJson(Map<String, dynamic> j) {
@@ -137,6 +141,12 @@ class Leccion {
       steam: xogo['steam']?.toString(),
       queMirar: [for (final q in (j['queMirar'] as List? ?? const [])) _t(q)],
       espera: j['espera'] is Map ? _t(j['espera']) : null,
+      fraseGramatica: j['fraseGramatica'] is Map
+          ? PezaDaLeccion.fromJson({
+              ...Map<String, dynamic>.from(j['fraseGramatica'] as Map),
+              'tipo': 'gramatica'
+            })
+          : null,
       dias: [
         for (final d in (j['dias'] as List? ?? const []))
           if (d is Map)
@@ -165,6 +175,9 @@ class UnidadeDeLeccions {
 
   /// Lo que trabaja en gramática, del documento del plan; no todas lo traen.
   final LocalizedString? foco;
+
+  /// El punto de la gramática del curso (A1-A2) de esta unidad.
+  final PuntoDeGramatica? gramatica;
   final List<Leccion> leccions;
 
   const UnidadeDeLeccions({
@@ -173,6 +186,7 @@ class UnidadeDeLeccions {
     this.obxectivos = const [],
     this.plan,
     this.foco,
+    this.gramatica,
     required this.leccions,
   });
 }
@@ -222,6 +236,10 @@ class Leccions {
               ],
               plan: u['plan'] is Map ? _t((u['plan'] as Map)['titulo']) : null,
               foco: u['foco'] is Map ? _t(u['foco']) : null,
+              gramatica: u['gramatica'] is Map
+                  ? PuntoDeGramatica.fromJson(
+                      Map<String, dynamic>.from(u['gramatica'] as Map))
+                  : null,
               leccions: [
                 for (final l in (u['leccions'] as List? ?? const []))
                   if (l is Map) Leccion.fromJson(Map<String, dynamic>.from(l)),
@@ -285,4 +303,79 @@ class Leccions {
     _lidas = l;
     _enCurso = SynchronousFuture(l);
   }
+}
+
+/// Un punto de la gramática del curso (Frank, 28/10/2026): de A1 a C1.
+@immutable
+class PuntoDeGramatica {
+  final int n;
+  final String nivel;
+  final LocalizedString titulo;
+  final LocalizedString? descricion;
+  final LocalizedString? paraFamilias;
+  final PezaDaLeccion? exemplo;
+
+  const PuntoDeGramatica({
+    required this.n,
+    required this.nivel,
+    required this.titulo,
+    this.descricion,
+    this.paraFamilias,
+    this.exemplo,
+  });
+
+  factory PuntoDeGramatica.fromJson(Map<String, dynamic> j) => PuntoDeGramatica(
+        n: (j['n'] as num).toInt(),
+        nivel: j['nivel']?.toString() ?? '',
+        titulo: _t(j['titulo']),
+        descricion: j['descricion'] is Map ? _t(j['descricion']) : null,
+        paraFamilias: j['paraFamilias'] is Map ? _t(j['paraFamilias']) : null,
+        exemplo: j['exemplo'] is Map
+            ? PezaDaLeccion.fromJson({
+                ...Map<String, dynamic>.from(j['exemplo'] as Map),
+                'tipo': 'gramatica'
+              })
+            : null,
+      );
+}
+
+/// Los 48 puntos y en qué edad y mes va cada uno de A1-A2.
+@immutable
+class GramaticaDoCurso {
+  final List<PuntoDeGramatica> puntos;
+
+  /// Punto → los (curso, mes) en que se trabaja.
+  final Map<int, List<(String, int)>> onde;
+
+  const GramaticaDoCurso({required this.puntos, required this.onde});
+
+  static const assetPath = 'assets/content/gramatica/gramatica.json';
+
+  factory GramaticaDoCurso.fromRaw(String raw) {
+    final j = jsonDecode(raw) as Map<String, dynamic>;
+    final onde = <int, List<(String, int)>>{};
+    for (final c in (j['ruta'] as Map).entries) {
+      for (final m in (c.value as Map).entries) {
+        final n = ((m.value as Map)['punto'] as num).toInt();
+        onde
+            .putIfAbsent(n, () => [])
+            .add((c.key.toString(), int.parse(m.key.toString())));
+      }
+    }
+    return GramaticaDoCurso(
+      puntos: [
+        for (final p in (j['puntos'] as List))
+          PuntoDeGramatica.fromJson(Map<String, dynamic>.from(p as Map)),
+      ],
+      onde: onde,
+    );
+  }
+
+  static Future<GramaticaDoCurso>? _enCurso;
+
+  static Future<GramaticaDoCurso> cargar() => _enCurso ??=
+      rootBundle.loadString(assetPath).then(GramaticaDoCurso.fromRaw);
+
+  @visibleForTesting
+  static void sembrar(GramaticaDoCurso g) => _enCurso = SynchronousFuture(g);
 }

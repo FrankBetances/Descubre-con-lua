@@ -17,7 +17,9 @@ casa y *Hoy · Calendario · Recursos · Yo* en la escuela.
   lecciones, sin repetir una palabra en el curso. Enseña la ruta de los cinco
   cursos (de escuchar y hacer a argumentar), qué se espera esa semana, qué
   clase de palabras trae —nombres, verbos, adjetivos, frases— y una actividad
-  distinta cada día. Está escrita para familias que no saben de pedagogía: de dónde viene y a dónde va la unidad, las palabras que ya conoce,
+  distinta cada día. Cada unidad trabaja un punto de gramática de A1 o A2, en
+  orden de edad, con una frase por semana; los 48 puntos de A1 a C1 se pueden
+  consultar, y los de B1 a C1 son para la persona adulta. Está escrita para familias que no saben de pedagogía: de dónde viene y a dónde va la unidad, las palabras que ya conoce,
   y la semana en tres pasos —escuchar las palabras, decirlas siempre en el
   mismo momento del día, esperar y celebrar—, cada uno con su porqué en una o
   dos frases. Debajo, el cuento y el juego de la unidad, las señales de que va
