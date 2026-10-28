@@ -259,6 +259,40 @@ def norm(en):
     return en.strip("!.?¡¿ ").lower()
 
 
+# El único inglés de las lecciones sin significado en ninguna fuente; lo
+# escribe Claude Code y queda señalado aquí.
+SIGNIFICADO_EXTRA = {"roll! / ball": ("Rodar / Pelota", "Rodar / Pelota")}
+
+
+def indice_de_significados(plan, b, sig):
+    """Lo que quiere decir cada inglés, de todas las fuentes, para que el
+    doble toque diga algo en cada botón de la lección."""
+    idx = dict(SIGNIFICADO_EXTRA)
+
+    def add(en, gl, es):
+        if en and gl and es:
+            idx.setdefault(norm(en), (gl, es))
+    for u in plan.values():
+        for k in ("vocabulario", "accionsTPR", "formulas", "estructuras", "rimas", "frasesAdulta"):
+            for x in u.get(k) or []:
+                if isinstance(x, dict):
+                    add(x.get("en"), x.get("gl"), x.get("es"))
+    for x in b.values():
+        add(x["en"], x.get("gl"), x.get("es"))
+    for en, v in sig.items():
+        if isinstance(v, dict):
+            add(en, v.get("gl"), v.get("es"))
+    return idx
+
+
+def con_significado(p, idx):
+    """`p` con gl/es si le faltan; nunca inventa: si no hay, lo deja."""
+    if p.get("gl") and p.get("es"):
+        return p
+    s = idx.get(norm(p["en"]))
+    return {**p, "gl": s[0], "es": s[1]} if s else p
+
+
 def peza_de(item, que, sig):
     s = H.significado(item, sig) if not (item.get("gl") and item.get("es")) else \
         {"gl": item["gl"], "es": item["es"]}
@@ -278,6 +312,7 @@ def main():
     a = ap.parse_args()
     plan, cal, sig, xogos, steam = H.cargar()
     b = banco()
+    idx = indice_de_significados(plan, b, sig)
     # La categoría de una palabra del plan, si el banco la tiene.
     cat_en = {}
     for x in b.values():
@@ -389,6 +424,10 @@ def main():
                      if conto else ("Contade o que fixestes na semana, coas palabras en inglés.",
                                     "Contad lo que hicisteis en la semana, con las palabras en inglés.", None)),
                 ]
+                novas = [con_significado(p, idx) for p in novas]
+                repasa = [con_significado(p, idx) for p in repasa]
+                if r.get("frase"):
+                    r["frase"] = con_significado(r["frase"], idx)
                 lid = f"{curso}.{n_mes:02d}.{semana}"
                 leccions.append({
                     "id": lid,
@@ -396,7 +435,7 @@ def main():
                     "de": 4,
                     "tipo": "repaso" if repaso else "leccion",
                     "espera": {"gl": NIVEIS[k][0], "es": NIVEIS[k][1]},
-                    "xaSabe": [dict(p) for p in (da_unidade or anterior)[-8:]],
+                    "xaSabe": [con_significado(dict(p), idx) for p in (da_unidade or anterior)[-8:]],
                     "novas": novas,
                     "repasa": [dict(p) for p in repasa],
                     "reto": {**r, "momento": momento,
@@ -406,7 +445,7 @@ def main():
                     "xogo": xc,
                     "queMirar": hogar.get("queObservarCasa") or [],
                     "dias": [{"dia": {"gl": g, "es": e}, "texto": {"gl": tg, "es": te},
-                              **({"en": en} if en else {})}
+                              **(con_significado({"en": en}, idx) if en else {})}
                              for (g, e), (tg, te, en) in zip(DIAS, dias)],
                 })
                 calendario.setdefault(str(mes), []).append(lid)
