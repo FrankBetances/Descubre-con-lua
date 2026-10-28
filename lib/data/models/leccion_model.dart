@@ -89,6 +89,10 @@ class Leccion {
   /// El nivel de logro que se espera esta semana.
   final LocalizedString? espera;
 
+  /// Cómo se habla esta semana: la técnica del modelo y sus pasos.
+  final LocalizedString? comoFalarTitulo;
+  final List<LocalizedString> comoFalar;
+
   /// La frase de gramática de la semana, con su significado.
   final PezaDaLeccion? fraseGramatica;
 
@@ -111,6 +115,8 @@ class Leccion {
     this.dias = const [],
     this.espera,
     this.fraseGramatica,
+    this.comoFalarTitulo,
+    this.comoFalar = const [],
   });
 
   factory Leccion.fromJson(Map<String, dynamic> j) {
@@ -141,6 +147,13 @@ class Leccion {
       steam: xogo['steam']?.toString(),
       queMirar: [for (final q in (j['queMirar'] as List? ?? const [])) _t(q)],
       espera: j['espera'] is Map ? _t(j['espera']) : null,
+      comoFalarTitulo:
+          j['comoFalar'] is Map ? _t((j['comoFalar'] as Map)['titulo']) : null,
+      comoFalar: [
+        for (final c
+            in ((j['comoFalar'] as Map?)?['como'] as List? ?? const []))
+          _t(c),
+      ],
       fraseGramatica: j['fraseGramatica'] is Map
           ? PezaDaLeccion.fromJson({
               ...Map<String, dynamic>.from(j['fraseGramatica'] as Map),
@@ -176,6 +189,9 @@ class UnidadeDeLeccions {
   /// Lo que trabaja en gramática, del documento del plan; no todas lo traen.
   final LocalizedString? foco;
 
+  /// El experimento STEAM del mes: el eje de las cuatro semanas.
+  final LocalizedString? steam;
+
   /// El punto de la gramática del curso (A1-A2) de esta unidad.
   final PuntoDeGramatica? gramatica;
 
@@ -189,6 +205,7 @@ class UnidadeDeLeccions {
     required this.titulo,
     this.obxectivos = const [],
     this.plan,
+    this.steam,
     this.foco,
     this.gramatica,
     this.gramaticaAntes,
@@ -242,6 +259,8 @@ class Leccions {
               ],
               plan: u['plan'] is Map ? _t((u['plan'] as Map)['titulo']) : null,
               foco: u['foco'] is Map ? _t(u['foco']) : null,
+              steam:
+                  u['steam'] is Map ? _t((u['steam'] as Map)['titulo']) : null,
               gramatica: u['gramatica'] is Map
                   ? PuntoDeGramatica.fromJson(
                       Map<String, dynamic>.from(u['gramatica'] as Map))

@@ -93,13 +93,16 @@ void main() {
     }
   });
 
-  test('todo o que o plan ensina aparece no curso que o usa', () {
+  // O-20261028-7: lo que el plan enseña sale en la primera edad que usa la
+  // unidad; la siguiente no lo repite, lo da por sabido.
+  test('todo o que o plan ensina aparece no curso que o usa ou antes', () {
+    final ensinado = <String>{};
     for (final c in cursos) {
-      final ensinado = {
+      ensinado.addAll({
         for (final u in leccions.unidades[c]!)
           for (final l in u.leccions)
             for (final p in l.novas) norm(p.en),
-      };
+      });
       final usadas = {
         for (final m in meses)
           if (leccions.da(c, m, 1) != null) m,
@@ -135,6 +138,61 @@ void main() {
               for (final p in l.novas) p.en,
         ];
     expect(novas('curso_0_2'), isNot(novas('curso_2_3')));
+  });
+
+  // O-20261028-7 (opción A de Frank): nada se repite entre edades ni se
+  // rellena con «repaso».
+  // El STEAM es el eje: cada mes tiene el suyo y los cinco días de cada
+  // semana son distintos de los de cualquier otra semana del curso.
+  // Cada semana dice cómo hablar: una técnica del modelo por fase, las
+  // cuatro distintas en el mes.
+  test('cada semana di como falar, catro técnicas distintas no mes', () {
+    for (final c in cursos) {
+      for (final u in leccions.unidades[c]!) {
+        final t = {for (final l in u.leccions) l.comoFalarTitulo?.gl};
+        expect(t, hasLength(4), reason: u.id);
+        expect(t, isNot(contains(null)), reason: u.id);
+      }
+    }
+  });
+
+  test('cada mes co seu STEAM e ningún día repetido no curso', () {
+    for (final c in cursos) {
+      final vistos = <String>{};
+      for (final u in leccions.unidades[c]!) {
+        expect(u.steam, isNotNull, reason: u.id);
+        for (final l in u.leccions) {
+          for (final d in l.dias) {
+            expect(vistos.add(d.texto.gl), isTrue,
+                reason: '${l.id}: «${d.texto.gl}» repetido');
+          }
+        }
+      }
+    }
+  });
+
+  test('entre idades, ningún tema, palabra nova nin conto repetido', () {
+    final temas = <String, String>{};
+    final palabras = <String, String>{};
+    final contos = <String, String>{};
+    for (final c in cursos) {
+      for (final u in leccions.unidades[c]!) {
+        expect(temas.putIfAbsent(u.titulo.gl, () => c), c,
+            reason: '«${u.titulo.gl}» en dúas idades');
+        for (final l in u.leccions) {
+          expect(l.repaso, isFalse, reason: '${l.id}: semana sen nada novo');
+          expect(l.novas.length, greaterThanOrEqualTo(3), reason: l.id);
+          for (final p in l.novas) {
+            expect(palabras.putIfAbsent(norm(p.en), () => c), c,
+                reason: '«${p.en}» nova en dúas idades');
+          }
+          if (l.conto case final k?) {
+            expect(contos.putIfAbsent(k, () => l.id), l.id,
+                reason: 'o conto $k, en dúas semanas');
+          }
+        }
+      }
+    }
   });
 
   // F7: el doble toque dice el significado; un botón sin él no hace nada.
@@ -278,6 +336,10 @@ void main() {
         }
         // La barra es la del curso, y lo dice: tema 2, lección 4 = semana 8.
         expect(find.text('Curso: semana 8 de 40'), findsOneWidget);
+        // El STEAM del mes, a la vista: el eje de la semana.
+        expect(find.byKey(const Key('leccion_steam')), findsOneWidget);
+        // Cómo hablar esta semana: la 4.ª, la de consolidar, el recast.
+        expect(find.byKey(const Key('leccion_como_falar')), findsOneWidget);
         final hoxe = find.byKey(const Key('leccion_dias'));
         expect(tester.getRect(hoxe).bottom, lessThan(915));
         expect(find.byKey(const Key('leccion_xa_sabe')), findsOneWidget);
@@ -351,8 +413,9 @@ void main() {
   }
 
   test('o que xa coñece é o ensinado antes', () {
+    // Lo de antes puede venir de la edad anterior: al empezar el curso.
+    final antes = <String>{};
     for (final c in cursos) {
-      final antes = <String>{};
       for (final u in leccions.unidades[c]!) {
         for (final l in u.leccions) {
           for (final p in l.xaSabe) {

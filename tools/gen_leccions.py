@@ -255,6 +255,65 @@ def banco():
     return b
 
 
+def banco_por_semana():
+    """curso → (n.º de mes, semana) → palabras del banco del curso, en su
+    orden: lo que la edad trae para esa semana, con significado y gesto."""
+    saida = {}
+    for f in sorted((C / "tpr").glob("curso_*/tpr.*.json")):
+        j = json.loads(f.read_text())
+        n_mes = int(f.name.split(".")[1])
+        for sem in j["semanas"]:
+            saida.setdefault(f.parent.name, {})[(n_mes, sem["semana"])] = [
+                {"en": p["en"], "gl": p.get("gl"), "es": p.get("es"),
+                 "que": p.get("category") or "palabra", "xesto": p.get("tprAction")}
+                for p in sem["palabras"]]
+    return saida
+
+
+# O-20261028-7 (opción A de Frank): cada semana trae al menos estas palabras
+# nuevas. Si el plan curricular no da tantas, se completan con las del banco
+# de esa edad para ese mes y esa semana, nunca con «repaso».
+# Los temas de 2-3 años, escritos por Claude Code (O-20261028-7): la unidad del
+# mes comparte el centro de interés de la asamblea del primer ciclo con 0-2,
+# y la lección no puede repetir el tema de otra edad.
+TEMA_PROPIO = {"curso_2_3": {
+    1: ("Ola, amigos: o círculo e o primeiro saúdo", "Hola, amigos: el círculo y el primer saludo"),
+    2: ("Cabeza, xeonllos e pés: o corpo que baila e para", "Cabeza, rodillas y pies: el cuerpo que baila y se para"),
+    3: ("O vento do outono e as follas de Castrelos", "El viento de otoño y las hojas de Castrelos"),
+    4: ("Forte e baixiño: campás, choiva e o quentiño da casa", "Fuerte y bajito: campanas, lluvia y el calorcito de casa"),
+    5: ("Abrigo, botas e cremalleira: vestirse para os charcos", "Abrigo, botas y cremallera: vestirse para los charcos"),
+    6: ("O desfile do Entroido: voar, pisar e quedar quietos", "El desfile de Carnaval: volar, pisar y quedarse quietos"),
+    7: ("Formas e cores na merenda: círculos, tomates e bólas", "Formas y colores en la merienda: círculos, tomates y bolas"),
+    8: ("As sementes espertan: flores, sol e paxariños", "Las semillas despiertan: flores, sol y pajaritos"),
+    9: ("Lávome eu só: xabón, auga e secar os dedos", "Me lavo solo: jabón, agua y secar los dedos"),
+    10: ("As ondas de Samil: peixes, barcos e ata logo", "Las olas de Samil: peces, barcos y hasta luego"),
+}}
+
+MINIMO_NOVAS = 3
+
+# Cómo se habla cada semana, del modelo (assets/content/modelo/o_modelo.json):
+# una técnica por fase. En 0-2 años, antes de que haya palabras que expandir,
+# el habla paralela.
+TECNICA = {"curso_0_2": ["parentese", "habla_paralela", "espera", "recast"]}
+def cat_da_unidade(titulo_es):
+    """La clase de palabra que trabaja la unidad de gramática, si trabaja una."""
+    t = titulo_es.lower()
+    if any(k in t for k in ("sustantiv", "contable")):
+        return "noun"
+    if "adjetiv" in t:
+        return "adjective"
+    if any(k in t for k in ("verbo", "presente", "pasado", "futuro", "imperativo", "obliga", "can ")):
+        return "verb"
+    return None
+
+
+TECNICA_RESTO = ["parentese", "espera", "expansion", "recast"]
+
+# Los cuentos dialogados son de una cohorte; cada edad lee los suyos. 0-2
+# años no tiene cohorte propia: lee el microcuento de su mes.
+COHORTE = {"curso_2_3": "2_3", "curso_3_4": "4_6", "curso_4_5": "4_6", "curso_5_6": "4_6"}
+
+
 def norm(en):
     return en.strip("!.?¡¿ ").lower()
 
@@ -306,12 +365,42 @@ def peza_de(item, que, sig):
     return p
 
 
+def revisar(saida):
+    """Lo que tumba el gate: un tema con el título de otro, una palabra nueva
+    en dos edades o una semana sin nada nuevo."""
+    fallos, titulos, donde = [], {}, {}
+    for curso, c in saida["cursos"].items():
+        for u in c["unidades"]:
+            t = u["titulo"]["gl"]
+            if t in titulos:
+                fallos.append(f"«{t}»: tema de {titulos[t]} y de {curso}")
+            titulos[t] = curso
+            cu = cat_da_unidade(u["gramatica"]["titulo"]["es"])
+            for l in u["leccions"]:
+                if cu and not any(p.get("tipo") == cu for p in l["novas"]):
+                    fallos.append(f"{l['id']}: ninguna palabra nueva es de la clase de su unidad ({cu})")
+                if len(l["novas"]) < MINIMO_NOVAS:
+                    fallos.append(f"{l['id']}: {len(l['novas'])} palabras nuevas")
+                dias = " ".join(d["texto"]["gl"] for d in l["dias"])
+                for p in l["novas"]:
+                    if f"«{p['en']}»" not in dias:
+                        fallos.append(f"{l['id']}: «{p['en']}» no sale en ninguna actividad")
+                    k = norm(p["en"])
+                    if donde.get(k, curso) != curso:
+                        fallos.append(f"«{p['en']}»: nueva en {donde[k]} y en {curso}")
+                    donde.setdefault(k, curso)
+    return fallos
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--check", action="store_true")
     a = ap.parse_args()
     plan, cal, sig, xogos, steam = H.cargar()
     b = banco()
+    modelo = {x["clave"]: x for x in
+              json.loads((C / "modelo" / "o_modelo.json").read_text())["seccions"]}
+    bsem = banco_por_semana()
     idx = indice_de_significados(plan, b, sig)
     # La gramática del curso (tools/gen_gramatica.py): un punto por unidad.
     gram = json.loads((C / "gramatica" / "gramatica.json").read_text())
@@ -321,8 +410,24 @@ def main():
     for x in b.values():
         if x["que"] in ("noun", "verb", "adjective"):
             cat_en.setdefault(norm(x["en"]), x["que"])
-    steam_tit = {e["id"]: e["titulo"] for e in
-                 json.loads((C / "steam" / "steam_do_mes.json").read_text())["experimentos"]}
+    steam_exp = json.loads((C / "steam" / "steam_do_mes.json").read_text())["experimentos"]
+    steam_tit = {e["id"]: e["titulo"] for e in steam_exp}
+    # El eje de cada mes: su experimento STEAM, por edad.
+    steam_mes = {(e["curso"], e["mes"]): e for e in steam_exp}
+    # Las frases de gramática de cada semana, con su significado.
+    for r_ in gram["ruta"].values():
+        for m_ in r_.values():
+            for f_ in m_["frases"]:
+                if f_.get("gl") and f_.get("es"):
+                    idx.setdefault(norm(f_["en"]), (f_["gl"], f_["es"]))
+    for e in steam_exp:
+        for o in e.get("ordes") or []:
+            idx.setdefault(norm(o["en"]), (o["gl"], o["es"]))
+    # El cuento de cada semana: uno por edad, mes y semana, con las palabras
+    # del banco de esa semana dentro.
+    conto_sem = {(h["cursoId"], int(h["mesNumero"]), int(h["semanaSugerida"])): h
+                 for h in json.loads((C / "cuentos" / "historias_progresivas.json").read_text())
+                 if h.get("semanaSugerida")}
     contos = []
     for f in sorted((C / "biblioteca").glob("his_*.json")):
         contos += json.loads(f.read_text())
@@ -332,6 +437,9 @@ def main():
              "ruta": [{"curso": c, "titulo": {"gl": t[0], "es": t[1]},
                        "texto": {"gl": x[0], "es": x[1]}} for c, t, x in RUTA],
              "cursos": {}}
+    # Lo enseñado en las edades anteriores: ninguna palabra se enseña en dos
+    # edades, y ningún cuento se lee en dos (O-20261028-7).
+    ensinado_antes, contos_lidos, ultimas_do_curso = set(), set(), []
     for curso in H.CURSOS:
         # Las semanas de cada unidad del plan en el curso, para repartir su
         # contenido entre ellas sin repetir.
@@ -344,7 +452,9 @@ def main():
             its = items_da_unidade(plan[uid])
             tr = repartir(its, len(sems)) if its else [[] for _ in sems]
             trozos_plan[uid] = dict(zip(sems, tr))
-        ensinado, unidades, calendario, anterior = set(), [], {}, []
+        ensinado, unidades, calendario = set(ensinado_antes), [], {}
+        # Lo que ya debería saber al empezar el curso: lo último del anterior.
+        anterior = list(ultimas_do_curso)
         k_plan, ultimo_reto = {}, None
         for n_mes, mes in enumerate(MESES_ORDE, start=1):
             um = json.loads((C / "unidades_mes" / curso / f"unidade.{n_mes:02d}.json").read_text())
@@ -367,7 +477,7 @@ def main():
             xc = hogar.get("juegoCasa") or {}
             xogo_tit = (xogos[xc["xogo"]]["titulo"] if xc.get("xogo") in xogos
                         else steam_tit.get(xc.get("steam")))
-            leccions, da_unidade = [], []
+            leccions, da_unidade, micro_usado = [], [], False
             for k in range(4):
                 semana = k + 1
                 novas, vistos = [], set()
@@ -379,6 +489,22 @@ def main():
                         continue
                     vistos.add(nk)
                     novas.append(p)
+                # Si el plan no da bastante, el banco de la edad para esa
+                # semana, en su orden: es lo que esa edad trabaja ese mes.
+                cs = conto_sem.get((curso, n_mes, semana))
+                do_conto = {norm(w) for pg in (cs or {}).get("paginas", []) for w in pg.get("palabras", [])}
+                da_semana = bsem.get(curso, {}).get((n_mes, semana), [])
+                # Primero, las de la clase que trabaja la unidad de gramática;
+                # luego, las que salen en el cuento de la semana.
+                cu = cat_da_unidade(puntos[gram["ruta"][curso][str(mes)]["punto"]]["titulo"]["es"])
+                for it in sorted(da_semana, key=lambda x: (x["que"] != cu, norm(x["en"]) not in do_conto)):
+                    if len(novas) >= MINIMO_NOVAS and (not cu or any(p.get("tipo") == cu for p in novas)):
+                        break
+                    nk = norm(it["en"])
+                    if nk in ensinado or nk in vistos or not (it.get("gl") and it.get("es")):
+                        continue
+                    vistos.add(nk)
+                    novas.append(peza_de(it, it["que"], sig))
                 repaso = not novas
                 repasa = [] if novas else (da_unidade or anterior)[-4:]
                 # El reto practica una palabra de ESTA semana, no otra de la
@@ -396,7 +522,24 @@ def main():
                 ultimo_reto = (r.get("frase") or {}).get("en")
                 kp = k_plan.get(uid, 0)
                 k_plan[uid] = kp + 1
-                conto = do_plan[kp % len(do_plan)] if do_plan else None
+                # El primer cuento de la unidad y de la cohorte de la edad que
+                # nadie haya leído aún; 0-2 años, su microcuento del mes.
+                coh = COHORTE.get(curso)
+                libres = [c for c in do_plan if c.get("cohorte") == coh and c["id"] not in contos_lidos]
+                conto = libres[0] if libres else None
+                if conto:
+                    contos_lidos.add(conto["id"])
+                # El microcuento del mes, una sola vez en el mes.
+                micro = (um.get("microcuento") or {}).get("titulo") \
+                    if not conto and not micro_usado else None
+                micro_usado = micro_usado or bool(micro)
+                usar = ", ".join(f"«{p['en']}»" for p in novas[:3])
+                # Todas: ninguna palabra nueva se queda fuera de una actividad.
+                todas = ", ".join(f"«{p['en']}»" for p in novas)
+                # Solo las que salen de verdad en el cuento de la semana.
+                no_conto = [p["en"] for p in novas if norm(p["en"]) in do_conto][:3] or \
+                    [w for pg in (cs or {}).get("paginas", []) for w in pg.get("palabras", [])][:3]
+                usar_conto = ", ".join(f"«{w}»" for w in no_conto)
                 cancion = (um.get("cancion") or {}).get("titulo")
                 if cancion:
                     dia3 = (f"Cantade xuntos «{cancion}», con xestos.",
@@ -413,25 +556,50 @@ def main():
                     dia3 = ("Repasade as palabras da semana, cantando.",
                             "Repasad las palabras de la semana, cantando.", None)
                 momento = hogar.get("momento") or {"gl": "", "es": ""}
+                st = steam_mes.get((curso, mes))
+                fg = gram["ruta"][curso][str(mes)]["frases"][k]
+                pasos = (st or {}).get("casa") or []
+                ordes = (st or {}).get("ordes") or []
+                paso = pasos[k] if k < len(pasos) else None
+                orde = ordes[k % len(ordes)] if ordes else None
                 dias = [
-                    ("Escoita ti as palabras novas e dias co seu xesto.",
-                     "Escucha tú las palabras nuevas y dilas con su gesto.", None),
-                    (f"Fai o reto: {momento['gl'].lower()}.",
-                     f"Haz el reto: {momento['es'].lower()}.", (r.get("frase") or {}).get("en")),
-                    dia3,
-                    ((f"Xogade a «{xogo_tit['gl']}».", f"Jugad a «{xogo_tit['es']}».", None)
+                    (f"Escoita ti as palabras novas, {todas}, e dias co seu xesto.",
+                     f"Escucha tú las palabras nuevas, {todas}, y dilas con su gesto.", None),
+                    (f"Fai o reto: {momento['gl'].lower()}, con «{(r.get('frase') or {}).get('en')}».",
+                     f"Haz el reto: {momento['es'].lower()}, con «{(r.get('frase') or {}).get('en')}».",
+                     (r.get("frase") or {}).get("en")),
+                    ((f"STEAM «{st['titulo']['gl']}»: mentres o facedes, di ti a frase da unidade "
+                      f"{gram['ruta'][curso][str(mes)]['punto']}: «{fg['en']}».",
+                      f"STEAM «{st['titulo']['es']}»: mientras lo hacéis, di tú la frase de la unidad "
+                      f"{gram['ruta'][curso][str(mes)]['punto']}: «{fg['en']}».", fg["en"])
+                     if st else dia3),
+                    ((f"STEAM «{st['titulo']['gl']}», paso {k % len(pasos) + 1}: {paso['gl']}",
+                      f"STEAM «{st['titulo']['es']}», paso {k % len(pasos) + 1}: {paso['es']}",
+                      orde["en"] if orde else None)
+                     if st and paso else
+                     (f"STEAM «{st['titulo']['gl']}»: facédeo outra vez, xuntos, e mirade isto: "
+                      f"{st['observar']['gl']}",
+                      f"STEAM «{st['titulo']['es']}»: hacedlo otra vez, juntos, y mirad esto: "
+                      f"{st['observar']['es']}", orde["en"] if orde else None)
+                     if st and st.get("observar") else
+                     (f"Xogade a «{xogo_tit['gl']}».", f"Jugad a «{xogo_tit['es']}».", None)
                      if xogo_tit else ("Xogade co obxecto da semana, dicindo as palabras.",
                                        "Jugad con el objeto de la semana, diciendo las palabras.", None)),
-                    ((f"Lede o conto «{conto['titulo']['gl']}».",
+                    ((f"Lede o conto da semana, «{cs['titulo']['gl']}»: nel saen {usar_conto}.",
+                      f"Leed el cuento de la semana, «{cs['titulo']['es']}»: en él salen {usar_conto}.", None)
+                     if cs else
+                     (f"Lede o conto «{conto['titulo']['gl']}».",
                       f"Leed el cuento «{conto['titulo']['es']}».", None)
-                     if conto else ("Contade o que fixestes na semana, coas palabras en inglés.",
-                                    "Contad lo que hicisteis en la semana, con las palabras en inglés.", None)),
+                     if conto else
+                     (f"Mirade o microcuento «{micro['gl']}» e sinalade o que nomeades.",
+                      f"Mirad el microcuento «{micro['es']}» y señalad lo que nombráis.", None)
+                     if micro else (f"Contade o que fixestes na semana, dicindo {usar}.",
+                                    f"Contad lo que hicisteis en la semana, diciendo {usar}.", None)),
                 ]
                 novas = [con_significado(p, idx) for p in novas]
                 repasa = [con_significado(p, idx) for p in repasa]
                 if r.get("frase"):
                     r["frase"] = con_significado(r["frase"], idx)
-                fg = gram["ruta"][curso][str(mes)]["frases"][k]
                 lid = f"{curso}.{n_mes:02d}.{semana}"
                 leccions.append({
                     "id": lid,
@@ -441,6 +609,11 @@ def main():
                     "espera": {"gl": NIVEIS[k][0], "es": NIVEIS[k][1]},
                     # La frase de gramática de la semana.
                     "fraseGramatica": fg,
+                    # Cómo hablar esta semana: la técnica del modelo y sus dos
+                    # primeros pasos.
+                    "comoFalar": (lambda t: {"clave": t["clave"], "titulo": t["titulo"],
+                                             "como": t["como"][:2]})(
+                        modelo[TECNICA.get(curso, TECNICA_RESTO)[k]]),
                     "xaSabe": [con_significado(dict(p), idx) for p in (da_unidade or anterior)[-8:]],
                     "novas": novas,
                     "repasa": [dict(p) for p in repasa],
@@ -462,8 +635,12 @@ def main():
             pg = puntos[gram["ruta"][curso][str(mes)]["punto"]]
             unidades.append({
                 "id": um["id"],
-                "titulo": um["centroInteres"],
+                "titulo": ({"gl": TEMA_PROPIO[curso][n_mes][0], "es": TEMA_PROPIO[curso][n_mes][1]}
+                           if n_mes in TEMA_PROPIO.get(curso, {}) else um["centroInteres"]),
                 "plan": {"id": uid, "titulo": pu["titulo"]},
+                **({"steam": {"id": steam_mes[(curso, mes)]["id"],
+                              "titulo": steam_mes[(curso, mes)]["titulo"]}}
+                   if (curso, mes) in steam_mes else {}),
                 **({"foco": {"gl": foco[0], "es": foco[1]}} if foco else {}),
                 "gramatica": {"n": pg["n"], "nivel": pg["nivel"], "titulo": pg["titulo"],
                               "paraFamilias": pg["paraFamilias"]},
@@ -480,6 +657,12 @@ def main():
             })
             anterior = da_unidade or anterior
         saida["cursos"][curso] = {"unidades": unidades, "calendario": calendario}
+        ensinado_antes |= ensinado
+        ultimas_do_curso = (anterior or [])[-8:]
+    fallos = revisar(saida)
+    if fallos:
+        print("FALLO (O-20261028-7):\n  " + "\n  ".join(fallos[:20]))
+        return 1
     texto = json.dumps(saida, ensure_ascii=False, indent=1) + "\n"
     if a.check:
         if not SAIDA.exists() or SAIDA.read_text() != texto:

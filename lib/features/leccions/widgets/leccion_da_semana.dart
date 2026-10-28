@@ -1278,6 +1278,19 @@ class _LeccionFamiliaState extends State<LeccionFamilia> {
               ),
               const SizedBox(height: 2),
               Text(unidade.titulo.resolve(lang), style: forte),
+              // El eje del mes: los días de la semana salen de él.
+              if (unidade.steam case final st?) ...[
+                const SizedBox(height: 4),
+                Text(
+                  'STEAM ${isGl ? 'do mes' : 'del mes'}: ${st.resolve(lang)}',
+                  key: const Key('leccion_steam'),
+                  style: TextStyle(
+                    fontSize: 14,
+                    fontWeight: FontWeight.w700,
+                    color: acento,
+                  ),
+                ),
+              ],
               const SizedBox(height: 8),
               ClipRRect(
                 borderRadius: BorderRadius.circular(4),
@@ -1366,6 +1379,22 @@ class _LeccionFamiliaState extends State<LeccionFamilia> {
                   _chip(PezaDaLeccion(
                       tipo: 'dia', en: en, significado: dia.significado)),
                 ],
+              ],
+              // Cómo hablar esta semana: la técnica del modelo, a la vista.
+              if (leccion.comoFalarTitulo case final cf?) ...[
+                Divider(height: 24, color: acento.withValues(alpha: 0.25)),
+                Text(
+                  isGl ? 'COMO FALAR ESTA SEMANA' : 'CÓMO HABLAR ESTA SEMANA',
+                  style: kicker,
+                ),
+                const SizedBox(height: 4),
+                Text(cf.resolve(lang),
+                    key: const Key('leccion_como_falar'), style: forte),
+                for (final c in leccion.comoFalar)
+                  Padding(
+                    padding: const EdgeInsets.only(top: 4),
+                    child: Text('·  ${c.resolve(lang)}', style: lectura),
+                  ),
               ],
               // 3 · Lo nuevo de la semana, con lo de hoy: es lo que se usa.
               Divider(height: 24, color: acento.withValues(alpha: 0.25)),

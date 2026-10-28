@@ -9,6 +9,11 @@ La dictó Frank el 28/10/2026: «necesito una solución y regla suprema para que
 3. **Prohibido rellenar para que cuadre**: repetir, estirar, duplicar entre cursos o llamar «repaso» a la falta de contenido. Si no hay material para cubrir lo pedido, se dice en la primera línea y se pregunta a Frank.
 4. **«Hecho» solo cuando cada criterio tiene su evidencia escrita al lado en `docs/ORDENES.md`**: el test, el gate o la captura que lo demuestra. El gate `tools/check_ordenes.py` tumba CI si una orden está marcada como cumplida y a un criterio le falta la evidencia.
 5. **El informe empieza por lo que falta**: «De tu orden falta: …» o «De tu orden no falta nada», criterio por criterio. Nunca por lo que se hizo.
+6. **Cómo se entrega, prometido a Frank el 28/10/2026 y obligatorio desde entonces:**
+   1. La orden y sus criterios se escriben en `docs/ORDENES.md` **antes de empezar**. Por ejemplo: «cada una de las 40 semanas de 4-5 años tiene su STEAM, su frase de la unidad dentro del experimento y cinco días distintos». Frank ve qué se va a hacer antes de que se haga y lo corrige si está mal.
+   2. **Cada criterio lleva un gate que tumba CI si no se cumple**: una semana sin STEAM, un día repetido, una palabra que no sale en la actividad, una unidad de las 48 sin su contenido. Si Claude Code engaña, el run sale rojo en GitHub sin que Frank intervenga.
+   3. **Primero se entrega una sola edad entera** (4-5 años, 40 semanas). Frank la abre en la app y mira tres semanas al azar. Las otras edades no se hacen hasta que Frank dé esa por buena.
+   4. **Cada informe empieza por lo que falta, con números**: «de 40 semanas, hechas 40; sin cuento propio, 0». Nunca por lo que se hizo.
 
 ## R0 · PROHIBIDO JUSTIFICARSE. AQUÍ SE VIENE A HACER LAS COSAS BIEN, SÍ O SÍ
 
