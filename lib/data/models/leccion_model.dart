@@ -18,11 +18,15 @@ class PezaDaLeccion {
   final LocalizedString? significado;
   final LocalizedString? xesto;
 
+  /// Qué es, dicho para una familia: «Verbo: unha acción».
+  final LocalizedString? que;
+
   const PezaDaLeccion({
     required this.tipo,
     required this.en,
     this.significado,
     this.xesto,
+    this.que,
   });
 
   factory PezaDaLeccion.fromJson(Map<String, dynamic> j) {
@@ -32,8 +36,21 @@ class PezaDaLeccion {
       en: j['en']?.toString() ?? '',
       significado: s.hasParity ? s : null,
       xesto: j['xesto'] is Map ? _t(j['xesto']) : null,
+      que: j['que'] is Map ? _t(j['que']) : null,
     );
   }
+}
+
+/// Lo que toca un día de la semana.
+@immutable
+class DiaDaLeccion {
+  final LocalizedString dia;
+  final LocalizedString texto;
+
+  /// El inglés de ese día, si lleva, para oírlo.
+  final String? en;
+
+  const DiaDaLeccion({required this.dia, required this.texto, this.en});
 }
 
 /// Una semana de una unidad del plan curricular (P11): lo que ya debería
@@ -58,6 +75,12 @@ class Leccion {
   final String? steam;
   final List<LocalizedString> queMirar;
 
+  /// Lunes a viernes: una cosa distinta cada día.
+  final List<DiaDaLeccion> dias;
+
+  /// El nivel de logro que se espera esta semana.
+  final LocalizedString? espera;
+
   const Leccion({
     required this.id,
     required this.numero,
@@ -74,6 +97,8 @@ class Leccion {
     this.xogo,
     this.steam,
     this.queMirar = const [],
+    this.dias = const [],
+    this.espera,
   });
 
   factory Leccion.fromJson(Map<String, dynamic> j) {
@@ -103,6 +128,16 @@ class Leccion {
       xogo: xogo['xogo']?.toString(),
       steam: xogo['steam']?.toString(),
       queMirar: [for (final q in (j['queMirar'] as List? ?? const [])) _t(q)],
+      espera: j['espera'] is Map ? _t(j['espera']) : null,
+      dias: [
+        for (final d in (j['dias'] as List? ?? const []))
+          if (d is Map)
+            DiaDaLeccion(
+              dia: _t(d['dia']),
+              texto: _t(d['texto']),
+              en: d['en']?.toString(),
+            ),
+      ],
     );
   }
 }
@@ -115,12 +150,20 @@ class UnidadeDeLeccions {
 
   /// A dónde va la unidad: sus objetivos, tal cual los dice el plan.
   final List<LocalizedString> obxectivos;
+
+  /// La unidad del plan curricular en la que va este mes.
+  final LocalizedString? plan;
+
+  /// Lo que trabaja en gramática, del documento del plan; no todas lo traen.
+  final LocalizedString? foco;
   final List<Leccion> leccions;
 
   const UnidadeDeLeccions({
     required this.id,
     required this.titulo,
     this.obxectivos = const [],
+    this.plan,
+    this.foco,
     required this.leccions,
   });
 }
@@ -137,10 +180,14 @@ class Leccions {
   /// Lo que la familia lee para entender qué hace, cómo y por qué.
   final Map<String, LocalizedString> guia;
 
+  /// La ruta de los cinco cursos: curso, título y qué se trabaja.
+  final List<(String, LocalizedString, LocalizedString)> ruta;
+
   const Leccions({
     required this.unidades,
     required this.calendario,
     this.guia = const {},
+    this.ruta = const [],
   });
 
   /// Un texto de la guía; vacío si falta.
@@ -164,6 +211,8 @@ class Leccions {
               obxectivos: [
                 for (final o in (u['obxectivos'] as List? ?? const [])) _t(o),
               ],
+              plan: u['plan'] is Map ? _t((u['plan'] as Map)['titulo']) : null,
+              foco: u['foco'] is Map ? _t(u['foco']) : null,
               leccions: [
                 for (final l in (u['leccions'] as List? ?? const []))
                   if (l is Map) Leccion.fromJson(Map<String, dynamic>.from(l)),
@@ -184,6 +233,11 @@ class Leccions {
         for (final g in (j['guia'] as Map? ?? const {}).entries)
           g.key.toString(): _t(g.value),
       },
+      ruta: [
+        for (final r in (j['ruta'] as List? ?? const []))
+          if (r is Map)
+            (r['curso'].toString(), _t(r['titulo']), _t(r['texto'])),
+      ],
     );
   }
 
