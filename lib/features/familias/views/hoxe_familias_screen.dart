@@ -299,7 +299,7 @@ class _HoxeFamiliasScreenState extends State<HoxeFamiliasScreen> {
                         _data(lang).toUpperCase(),
                         key: const Key('hoxe_data'),
                         style: const TextStyle(
-                          fontSize: 11.5,
+                          fontSize: 12,
                           fontWeight: FontWeight.w800,
                           letterSpacing: 0.6,
                           color: AppTheme.textSecondary,
