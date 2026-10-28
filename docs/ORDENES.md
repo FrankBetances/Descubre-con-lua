@@ -129,5 +129,5 @@ Estado: abierta
 - [x] Las cuatro frases de cada mes cuentan el STEAM de ese mes con la estructura de su unidad · evidencia: tools/ruta_48.py (escritas a mano a partir de cada STEAM; sin comprobación automática del sentido)
 - [x] La clase de palabra de la unidad entra en cada semana que la pide · evidencia: tools/gen_leccions.py (revisar: falla si una semana no la trae)
 - [x] Se ve cómo se avanza: antes, ahora y después en Hoy, y la unidad de cada tema en el camino · evidencia: test/features/leccions/leccions_test.dart («dónde estamos e o de hoxe, sen baixar» y «o camiño dos 10 temas, coa lección de agora»)
-- [ ] Las frases nuevas tienen su voz · evidencia:
+- [x] Las frases nuevas tienen su voz · evidencia: tools/check_voice_coverage.py (run 107 de Generate Voice Assets en verde)
 - [ ] Mergeado en main con CI en verde · evidencia:
