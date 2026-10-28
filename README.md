@@ -18,9 +18,9 @@ casa y *Hoy · Calendario · Recursos · Yo* en la escuela.
   nuevas cada semana. Enseña la ruta de los cinco
   cursos (de escuchar y hacer a argumentar), qué se espera esa semana, qué
   clase de palabras trae —nombres, verbos, adjetivos, frases— y una actividad
-  distinta cada día. Cada unidad trabaja un punto de gramática de A1 o A2, en
-  orden de edad, con una frase por semana; los 48 puntos de A1 a C1 se pueden
-  consultar, y los de B1 a C1 son para la persona adulta. Arriba dice dónde
+  distinta cada día. Cada mes trabaja una de las 48 unidades de gramática, de A1 a C1,
+  adaptada a la edad: de la 1 en septiembre de 0-2 años a la 48 en junio de
+  5-6, sin volver atrás, con cuatro frases que cuentan el STEAM del mes. Arriba dice dónde
   se está en las 48 unidades —la anterior, la de ahora y la siguiente, con su título: sustantivos, adjetivos,
   presente…—, el tema del mes y la lección; debajo, los cinco días de la
   semana, las palabras nuevas, la frase de la unidad y lo que ya debería saber.

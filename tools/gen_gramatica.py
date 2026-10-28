@@ -311,12 +311,18 @@ RUTA = {
 MESES = [9, 10, 11, 12, 1, 2, 3, 4, 5, 6]
 
 
+# O-20261028-9 (Frank): las 48 unidades son para las criaturas, una por mes.
+from ruta_48 import PARA_FAMILIAS, RUTA as RUTA_48  # noqa: E402
+
+
 def construir():
     puntos = []
     for n, (niv, tgl, tes, dgl, des, fgl, fes) in PUNTOS.items():
         p = {"n": n, "nivel": niv, "titulo": {"gl": tgl, "es": tes},
              "descricion": {"gl": dgl, "es": des},
-             "paraCriaturas": n <= 20}
+             "paraCriaturas": True}
+        if not fgl and n in PARA_FAMILIAS:
+            fgl, fes = PARA_FAMILIAS[n]
         if fgl:
             p["paraFamilias"] = {"gl": fgl, "es": fes}
         if n in EXEMPLO_ADULTO:
@@ -324,7 +330,7 @@ def construir():
             p["exemplo"] = {"en": en, "gl": gl, "es": es}
         puntos.append(p)
     ruta = {}
-    for curso, meses in RUTA.items():
+    for curso, meses in RUTA_48.items():
         ruta[curso] = {}
         for mes in MESES:
             punto, frases = meses[mes]
@@ -339,20 +345,18 @@ def construir():
 def revisar(d):
     fallos = []
     usados = {m["punto"] for c in d["ruta"].values() for m in c.values()}
-    for n in range(1, 21):
+    for n in range(1, 49):
         if n not in usados:
             fallos.append(f"el punto {n} no está en ninguna edad")
     for c, ms in d["ruta"].items():
         if len(ms) != 10:
             fallos.append(f"{c}: {len(ms)} meses")
         for m, x in ms.items():
-            if x["punto"] > 20:
-                fallos.append(f"{c} {m}: punto {x['punto']} no es A1-A2")
             if len(x["frases"]) != 4:
                 fallos.append(f"{c} {m}: {len(x['frases'])} frases")
     # Progresión real: a lo largo de los 50 meses, de 0-2 en septiembre a
     # 5-6 en junio, la unidad nunca vuelve atrás.
-    seq = [d["ruta"][c][str(m)]["punto"] for c in RUTA for m in MESES]
+    seq = [d["ruta"][c][str(m)]["punto"] for c in RUTA_48 for m in MESES]
     atras = [(i, a, b) for i, (a, b) in enumerate(zip(seq, seq[1:])) if b < a]
     if atras:
         fallos.append(f"la columna vuelve atrás {len(atras)} veces: {atras[:5]}")
@@ -373,7 +377,7 @@ def main():
         if not SAIDA.exists() or SAIDA.read_text() != texto:
             print("FALLO: gramatica.json no está al día (python3 tools/gen_gramatica.py)")
             return 1
-        print("OK: gramática al día; 48 puntos, los 20 de A1-A2 en las cinco edades.")
+        print("OK: gramática al día; las 48 unidades, en orden, en las cinco edades.")
         return 0
     SAIDA.parent.mkdir(parents=True, exist_ok=True)
     SAIDA.write_text(texto)

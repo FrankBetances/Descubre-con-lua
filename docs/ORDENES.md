@@ -118,3 +118,16 @@ Estado: abierta
 - [x] Un PDF normalizado con cada edad, sus 10 temas, la unidad de las 48, el STEAM, el cuento de cada semana, las palabras y los cinco días · evidencia: docs/Descubre-con-Lua-Material-por-edades.pdf (de tools/gen_catalogo.py)
 - [x] Un inventario con números por edad · evidencia: docs/catalogo-por-idades.html (tabla «Inventario»)
 - [ ] Las unidades 21-48 con su material completo, no solo descripción y ejemplo · evidencia:
+
+## O-20261028-9 · Las 48 unidades, para las criaturas, con el STEAM como eje
+Estado: abierta
+> las 48 unidades son para los niños. Si hay que adaptarlas no para el adulto, esto está mal, y se adaptan sí o sí
+> Steam es el eje vertebrador [...] hay 48 unidades que hay que cumplir sí o sí y debe dejarse claro cómo se avanza entre uno y la otra
+
+- [x] Las 48 unidades van en la ruta de las criaturas, una por mes de los 50 meses, sin volver atrás (la 1 y la 25 duran dos meses) · evidencia: tools/gen_gramatica.py (revisar: falla si falta una de las 48 o la columna baja)
+- [x] Cada semana, su frase de la unidad, con significado en gl y es · evidencia: test/features/leccions/leccions_test.dart («cada unidade leva o seu punto de gramática e cada semana a súa frase»)
+- [x] Las cuatro frases de cada mes cuentan el STEAM de ese mes con la estructura de su unidad · evidencia: tools/ruta_48.py (escritas a mano a partir de cada STEAM; sin comprobación automática del sentido)
+- [x] La clase de palabra de la unidad entra en cada semana que la pide · evidencia: tools/gen_leccions.py (revisar: falla si una semana no la trae)
+- [x] Se ve cómo se avanza: antes, ahora y después en Hoy, y la unidad de cada tema en el camino · evidencia: test/features/leccions/leccions_test.dart («dónde estamos e o de hoxe, sen baixar» y «o camiño dos 10 temas, coa lección de agora»)
+- [x] Las frases nuevas tienen su voz · evidencia: tools/check_voice_coverage.py (run 107 de Generate Voice Assets en verde)
+- [ ] Mergeado en main con CI en verde · evidencia:
