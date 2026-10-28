@@ -67,6 +67,10 @@ run_gate "flutter analyze" flutter analyze
 run_gate "flutter test" flutter test --exclude-tags capturas
 
 # ------------------------------------------------------------- content gates
+# R∞ (Frank, 28/10/2026): ninguna orden suya se da por cumplida sin la
+# evidencia de cada criterio.
+run_gate "every order marked done has evidence for each criterion" \
+  python3 tools/check_ordenes.py
 run_gate "contact address" python3 tools/check_contact_email.py
 # Nace del Calendario, que llegó al aparato como un disco girando para siempre
 # porque `assets/content/calendario/` no estaba en pubspec.yaml. Un asset que
