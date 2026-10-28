@@ -107,6 +107,26 @@ void main() {
           findsOneWidget);
     });
 
+    testWidgets('«Máis para casa» vai pregado, ao final (${lang.code})',
+        (tester) async {
+      await abrirPortal(tester, lang, agora: venres);
+      final mais = find.byKey(const Key('hoxe_complementario'));
+      await tester.scrollUntilVisible(mais, 300,
+          scrollable: find.byType(Scrollable).first);
+      // Debajo de la guía de la lección: lo último de Hoy.
+      final guia = find.byKey(const Key('leccion_como_e_por_que'));
+      expect(
+          tester.getTopLeft(mais).dy, greaterThan(tester.getTopLeft(guia).dy));
+      // Plegado: el juego y el código no están hasta que se abre.
+      for (final k in ['hoxe_comezar', 'hoxe_codigo_escola']) {
+        expect(find.byKey(Key(k), skipOffstage: false), findsNothing,
+            reason: k);
+      }
+      await Pasarela.abrirMaisParaCasa(tester);
+      expect(find.byKey(const Key('hoxe_codigo_escola'), skipOffstage: false),
+          findsOneWidget);
+    });
+
     testWidgets('o venres, as 20 do reto soan (${lang.code})', (tester) async {
       await abrirPortal(tester, lang, agora: venres);
       // M3.10: las del día van plegadas bajo el núcleo del mes; el reto está

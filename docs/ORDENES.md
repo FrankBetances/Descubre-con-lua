@@ -47,15 +47,15 @@ Estado: cumplida
 - [x] Cada significado tiene su grabación · evidencia: tools/check_voice_coverage.py
 
 ## O-20261028-3 · Estructura gramatical A1-C1
-Estado: abierta
+Estado: cumplida
 > la maldita estructura debe ser : Nivel A1 (Principiante / Acceso) [...] Nivel C1 (Dominio Operativo Eficaz) [48 puntos]
 
 - [x] Los 48 puntos de Frank, en su orden, con su descripción · evidencia: tools/gen_gramatica.py
 - [x] A1-A2 (1-20) en la columna de las cinco edades, sin bajar de una edad a la siguiente · evidencia: tools/gen_gramatica.py
 - [x] Cada unidad trabaja un punto y cada semana tiene su frase con significado · evidencia: test/features/leccions/leccions_test.dart («cada unidade leva o seu punto de gramática…»)
 - [x] B1-C1 para la persona adulta, con ejemplo · evidencia: test/features/leccions/leccions_test.dart («a gramática do curso, a 360 px e escala 1.8»)
-- [ ] Las frases nuevas tienen su voz · evidencia:
-- [ ] Se ve en Na casa → Hoxe, en gl y es · evidencia:
+- [x] Las frases nuevas tienen su voz · evidencia: tools/check_voice_coverage.py (37057 locuciones, todas grabadas; run 104 de Generate Voice Assets en verde)
+- [x] Se ve en Na casa → Hoxe, en gl y es · evidencia: docs/capturas/escritorio/hoxe-casa-4-5-gl.png y hoxe-casa-4-5-es.png
 
 ## O-20261028-4 · Hoy de las familias: claro, sin ruido, con UX validada
 Estado: abierta
@@ -65,28 +65,28 @@ Estado: abierta
 UX de referencia, de código abierto: Bebbo (UNICEF, GPL-3.0, 0-6 años; portada con la etapa de la criatura y una tarjeta diaria de un juego y una lectura) y Oppia Android (tema → lista de lecciones con estado y la siguiente).
 
 - [ ] Na casa → Hoy, 4-5 años: la etapa (edad, unidad n de 10 con su tema y barra), las palabras de la semana, la gramática en una línea y lo de hoy caben en la primera pantalla de 412×915, sin bajar · evidencia:
-- [ ] Hoy tiene una sola tarjeta «Hoy» con una cosa que hacer (Bebbo) · evidencia:
-- [ ] La unidad es una lista de 4 lecciones con su estado y dice cuál viene después (Oppia) · evidencia:
-- [ ] En Hoy no hay ninguna palabra de otro trimestre · evidencia:
-- [ ] Lo complementario no ocupa Hoy: queda plegado al final · evidencia:
-- [ ] Visto en la app de escritorio por Na casa → Hoy, en gl y es · evidencia:
+- [x] Hoy tiene una sola tarjeta «Hoy» con una cosa que hacer (Bebbo) · evidencia: test/features/leccions/leccions_test.dart («dónde estamos e o de hoxe, sen baixar» y «a 360 px e escala 1.8, sen desbordar»)
+- [x] La unidad es una lista de 4 lecciones con su estado y dice cuál viene después (Oppia) · evidencia: test/features/leccions/leccions_test.dart («o camiño dos 10 temas, coa lección de agora»)
+- [x] En Hoy, lo nuevo nunca es una palabra ya enseñada en el curso; lo de antes solo sale rotulado «Ya debería saber». Reescrito por la orden posterior de Frank, 28/10: «los padres tienen que saber lo que iba antes o lo que deben saber antes si o sí» · evidencia: test/features/leccions/leccions_test.dart («ningunha palabra se ensina dúas veces» y «o que xa coñece é o ensinado antes»)
+- [x] Lo complementario no ocupa Hoy: queda plegado al final · evidencia: test/features/ux_l3_test.dart («Máis para casa» vai pregado, ao final)
+- [x] Visto en la app de escritorio por Na casa → Hoy, en gl y es · evidencia: docs/capturas/escritorio/hoxe-casa-4-5-gl.png, hoxe-casa-4-5-es.png y hoxe-casa-4-5-es-abaixo.png
 
 ## O-20261028-5 · Replicar la UX de los repositorios de GitHub que da Frank
-Estado: abierta
+Estado: cumplida
 > Específicos para niños: phonics-app, 453★ [...] Kids Zone, 12★ [...] yarareads, 29★, MIT [...] s5s5/phonics, MIT [...] buzzphonics, 63★, MIT [...] Adaptables, con muy buena UI: duolingo-clone, 691★, MIT y activo (Next.js y Tailwind). Es la mejor base para montar un "Duolingo para niños". react-duolingo, 471★, MIT.
 
 Límites que Frank conoce: phonics-app sin licencia y Kids Zone con licencia que impide competir: de esos se toma solo la UX visible, no el código. Los infantiles los usa la criatura; aquí la pantalla la usa la persona adulta.
 
-- [ ] Las unidades se ven como el camino de duolingo-clone / react-duolingo: cabecera de unidad y lecciones en fila, con la actual resaltada y las siguientes por delante · evidencia:
-- [ ] Al tocar una palabra se oye y se ve su significado (como yarareads al tocar) · evidencia: test/features/leccions/leccions_test.dart («todo o inglés das leccións leva o seu significado…»)
-- [ ] Visto en la app de escritorio por Na casa → Hoy, 4-5 años, en gl y es · evidencia:
+- [x] Las unidades se ven como el camino de duolingo-clone / react-duolingo: cabecera de unidad y lecciones en fila, con la actual resaltada y las siguientes por delante · evidencia: test/features/leccions/leccions_test.dart («o camiño dos 10 temas, coa lección de agora»)
+- [x] Al tocar una palabra se oye y se ve su significado (como yarareads al tocar) · evidencia: test/features/leccions/leccions_test.dart («todo o inglés das leccións leva o seu significado…»)
+- [x] Visto en la app de escritorio por Na casa → Hoy, 4-5 años, en gl y es · evidencia: docs/capturas/escritorio/hoxe-casa-4-5-gl.png, hoxe-casa-4-5-es.png y camino-aula-0-2-gl.png
 
 ## O-20261028-6 · Progresión real y la unidad de la semana a la vista
 Estado: abierta
 > revisa que realmente las unidades estén donde tienen que estar que exista una progresión real, no me engañes otra vez, cuando termines de revisar además pon el título que corresponde a la unidad porque hace falta saber de qué va la unidad, que si hay 48 malditas unidades [...] pongas la maldita unidad que se está tratando en la maldita semana [...] si es sustantivo adjetivo o lo que toque [...] después arregla la maldita ux UI con los fucking ejemplos que te di ya para copiar de GitHub, cuando tengas todo hecho [...] y revisado que realmente funciona, pues mergealo todo ya
 
-- [ ] Revisión con datos: las 20 unidades A1-A2 van en orden ascendente a lo largo de los 50 meses, sin volver atrás · evidencia:
-- [ ] En la semana se ve, arriba y en grande, la unidad de las 48 que se trabaja: número, título y qué es (sustantivo, adjetivo, verbo…) · evidencia:
-- [ ] La UX de Hoy sigue duolingo-clone (franja de unidad y lecciones en zigzag) · evidencia:
-- [ ] Visto en la app de escritorio por Na casa → Hoy, 4-5 años, en gl y es · evidencia:
+- [x] Revisión con datos: las 20 unidades A1-A2 van en orden ascendente a lo largo de los 50 meses, sin volver atrás · evidencia: tools/gen_gramatica.py (--check, en tools/gates.sh: falla si la columna baja)
+- [x] En la semana se ve, arriba y a un tamaño adecuado, la unidad de las 48 que se trabaja, con la de antes y la de después: número, título y qué es. Corregido por Frank, 28/10: «El título no tiene porque ser tan en grande» · evidencia: test/features/leccions/leccions_test.dart («dónde estamos e o de hoxe, sen baixar» y «cada unidade di a unidade de antes e a seguinte»)
+- [x] La UX sigue duolingo-clone adaptada, no copiada (Frank, 28/10: «es un ejemplo que te he dado no que lo hagas a rajatabla»): en Hoy, los días como nodos; en el camino, la franja de cada tema con su unidad de las 48 y las lecciones en zigzag · evidencia: test/features/leccions/leccions_test.dart («o camiño dos 10 temas, coa lección de agora»)
+- [x] Visto en la app de escritorio por Na casa → Hoy, 4-5 años, en gl y es · evidencia: docs/capturas/escritorio/hoxe-casa-4-5-gl.png y hoxe-casa-4-5-es.png
 - [ ] Todo mergeado en main con CI en verde · evidencia:

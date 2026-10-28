@@ -74,7 +74,7 @@ class CaminoDaUnidade extends StatelessWidget {
               Text(
                 '${isGl ? 'Tema' : 'Tema'} $numero ${isGl ? 'de' : 'de'} $de',
                 style: const TextStyle(
-                  fontSize: 22,
+                  fontSize: 19,
                   fontWeight: FontWeight.w800,
                   color: Colors.white,
                 ),
@@ -88,6 +88,21 @@ class CaminoDaUnidade extends StatelessWidget {
                   height: 1.3,
                 ),
               ),
+              // Qué unidad de las 48 trabaja el tema (O-20261028-6).
+              if (unidade.gramatica case final gr?) ...[
+                const SizedBox(height: 8),
+                Text(
+                  '${isGl ? 'Unidade' : 'Unidad'} ${gr.n} ${isGl ? 'de' : 'de'} 48 · '
+                  '${gr.nivel} · ${gr.titulo.resolve(language)}',
+                  key: ValueKey('camino_gramatica_${unidade.id}'),
+                  style: const TextStyle(
+                    fontSize: 14.5,
+                    fontWeight: FontWeight.w700,
+                    color: Colors.white,
+                    height: 1.3,
+                  ),
+                ),
+              ],
             ],
           ),
         ),

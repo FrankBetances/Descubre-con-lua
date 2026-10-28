@@ -1249,10 +1249,27 @@ class _LeccionFamiliaState extends State<LeccionFamilia> {
                 ),
               ),
               if (unidade.gramatica?.paraFamilias case final pf?) ...[
-                const SizedBox(height: 10),
+                const SizedBox(height: 8),
                 Text(pf.resolve(lang), style: lectura),
               ],
-              const Divider(height: 22),
+              if (leccion.fraseGramatica case final fg?) ...[
+                const SizedBox(height: 8),
+                Wrap(
+                  spacing: 8,
+                  runSpacing: 6,
+                  crossAxisAlignment: WrapCrossAlignment.center,
+                  children: [
+                    Text(
+                      '${isGl ? 'A frase da unidade' : 'La frase de la unidad'} '
+                      '${unidade.gramatica?.n ?? ''}:',
+                      key: const Key('leccion_gramatica'),
+                      style: kicker,
+                    ),
+                    _chip(fg),
+                  ],
+                ),
+              ],
+              const Divider(height: 20),
               Text(
                 '${isGl ? 'Tema' : 'Tema'} ${iU + 1} ${isGl ? 'de' : 'de'} ${unidades.length} · '
                 '${leccion.repaso ? 'Repaso' : 'Lección'} ${leccion.numero} ${isGl ? 'de' : 'de'} ${leccion.de}',
@@ -1272,24 +1289,38 @@ class _LeccionFamiliaState extends State<LeccionFamilia> {
                   backgroundColor: context.acentoTint,
                 ),
               ),
-              Align(
-                alignment: Alignment.centerLeft,
-                child: TextButton(
-                  key: const Key('leccion_ver_camino'),
-                  onPressed: () => Navigator.of(context).push(RutaLua(
-                    de: context,
-                    builder: (_) => CaminoDoCursoScreen(
-                      leccions: g,
-                      cursoId: widget.cursoId,
-                      actual: leccion.id,
-                      language: lang,
-                      audioService: widget.audioService,
+              // La barra es del curso entero, no del tema: se dice.
+              Wrap(
+                alignment: WrapAlignment.spaceBetween,
+                crossAxisAlignment: WrapCrossAlignment.center,
+                spacing: 8,
+                children: [
+                  Text(
+                    'Curso: ${isGl ? 'semana' : 'semana'} ${iU * 4 + leccion.numero} de ${unidades.length * 4}',
+                    key: const Key('leccion_progreso_texto'),
+                    style: const TextStyle(
+                      fontSize: 12.5,
+                      fontWeight: FontWeight.w600,
+                      color: AppTheme.textSecondary,
                     ),
-                  )),
-                  child: Text(isGl
-                      ? 'Ver todo o curso: os ${unidades.length} temas'
-                      : 'Ver todo el curso: los ${unidades.length} temas'),
-                ),
+                  ),
+                  TextButton(
+                    key: const Key('leccion_ver_camino'),
+                    onPressed: () => Navigator.of(context).push(RutaLua(
+                      de: context,
+                      builder: (_) => CaminoDoCursoScreen(
+                        leccions: g,
+                        cursoId: widget.cursoId,
+                        actual: leccion.id,
+                        language: lang,
+                        audioService: widget.audioService,
+                      ),
+                    )),
+                    child: Text(isGl
+                        ? 'Os ${unidades.length} temas'
+                        : 'Los ${unidades.length} temas'),
+                  ),
+                ],
               ),
             ],
           ),
@@ -1336,44 +1367,29 @@ class _LeccionFamiliaState extends State<LeccionFamilia> {
                       tipo: 'dia', en: en, significado: dia.significado)),
                 ],
               ],
-            ],
-          ),
-        ),
-        // 3 · Lo nuevo de la semana.
-        const SizedBox(height: 12),
-        Container(
-          key: const Key('leccion_esta_semana'),
-          padding: const EdgeInsets.all(16),
-          decoration: tarxeta(),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                leccion.repaso
-                    ? (isGl ? 'ESTA SEMANA VOLVEN' : 'ESTA SEMANA VUELVEN')
-                    : (isGl
-                        ? 'O NOVO DESTA SEMANA'
-                        : 'LO NUEVO DE ESTA SEMANA'),
-                style: kicker,
+              // 3 · Lo nuevo de la semana, con lo de hoy: es lo que se usa.
+              Divider(height: 24, color: acento.withValues(alpha: 0.25)),
+              Column(
+                key: const Key('leccion_esta_semana'),
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    leccion.repaso
+                        ? (isGl ? 'ESTA SEMANA VOLVEN' : 'ESTA SEMANA VUELVEN')
+                        : (isGl
+                            ? 'O NOVO DESTA SEMANA'
+                            : 'LO NUEVO DE ESTA SEMANA'),
+                    style: kicker,
+                  ),
+                  const SizedBox(height: 8),
+                  Wrap(
+                    key: const Key('leccion_novas'),
+                    spacing: 8,
+                    runSpacing: 8,
+                    children: [for (final p in pezas) _chip(p)],
+                  ),
+                ],
               ),
-              const SizedBox(height: 8),
-              Wrap(
-                key: const Key('leccion_novas'),
-                spacing: 8,
-                runSpacing: 8,
-                children: [for (final p in pezas) _chip(p)],
-              ),
-              if (leccion.fraseGramatica case final fg?) ...[
-                const SizedBox(height: 12),
-                Text(
-                  '${isGl ? 'A frase da unidade' : 'La frase de la unidad'} '
-                  '${unidade.gramatica?.n ?? ''}',
-                  key: const Key('leccion_gramatica'),
-                  style: kicker,
-                ),
-                const SizedBox(height: 6),
-                _chip(fg),
-              ],
             ],
           ),
         ),
@@ -1528,8 +1544,8 @@ class _NodoDoDia extends StatelessWidget {
             mainAxisSize: MainAxisSize.min,
             children: [
               Container(
-                width: 54,
-                height: 54,
+                width: 50,
+                height: 50,
                 alignment: Alignment.center,
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
@@ -1539,8 +1555,8 @@ class _NodoDoDia extends StatelessWidget {
                   ),
                 ),
                 child: Container(
-                  width: 44,
-                  height: 44,
+                  width: 40,
+                  height: 40,
                   decoration: BoxDecoration(
                     color: cor,
                     shape: BoxShape.circle,

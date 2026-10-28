@@ -140,3 +140,11 @@ la de Android, pero no sus barras del sistema, su densidad ni su escala de texto
 | `l7-escola-{gl,es}.png` | La escuela tras L7: la dinámica del lunes sin «72 bpm», la del viernes sin difusor, y la última fase de la asamblea, de la que «Rematar» vuelve sin preguntar |
 | `l8-escola-{gl,es}.png` | La escuela tras L8, con 4-5 años un martes de octubre: «Antes da orde» en la asamblea, justo antes del reto, y el cuento de la semana abierto desde Hoy con «Como funciona o conto» |
 | `l8-casa-{gl,es}.png` | Casa tras L8, con 4-5 años un martes de octubre: la puerta «Ponte ao día» en Hoy, la pantalla con la edad, el mes y los días, y el cuento con «Como funciona o conto» |
+
+## `escritorio/`
+
+Capturas de la app **arrancada de verdad** en el escritorio Linux, en una
+pantalla virtual de 412×900, llegando por el camino que usa la persona:
+Inicio → En casa → Hoy (4-5 años) y Inicio → En la escuela → Hoy. Son la
+evidencia de lo que sale y de qué hay dentro. Tampoco son de un aparato
+Android: ni muesca, ni barra de gestos, ni escala de texto del sistema.

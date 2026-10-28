@@ -280,38 +280,48 @@ class _HoxeFamiliasScreenState extends State<HoxeFamiliasScreen> {
           key: const Key('hoxe_familias'),
           padding: const EdgeInsets.fromLTRB(16, 14, 16, 28),
           children: [
-            Align(
-              alignment: Alignment.centerLeft,
-              child: SelectorIdade(
-                cursoId: widget.cursoId,
-                language: lang,
-                onCambiar: widget.onCambiarCurso,
-              ),
-            ),
-            const SizedBox(height: 18),
-            Text(
-              _data(lang).toUpperCase(),
-              key: const Key('hoxe_data'),
-              style: const TextStyle(
-                fontSize: 12.5,
-                fontWeight: FontWeight.w800,
-                letterSpacing: 0.8,
-                color: AppTheme.textSecondary,
-              ),
-            ),
-            const SizedBox(height: 4),
-            Semantics(
-              header: true,
-              child: Text(
-                _titulo(lang),
-                key: const Key('hoxe_titulo'),
-                style: const TextStyle(
-                  fontSize: 26,
-                  fontWeight: FontWeight.w800,
-                  color: AppTheme.textPrimary,
-                  height: 1.15,
+            // O-20261028-4: la edad, la fecha y el título en una fila, para
+            // que la lección entre en la primera pantalla.
+            Row(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                SelectorIdade(
+                  cursoId: widget.cursoId,
+                  language: lang,
+                  onCambiar: widget.onCambiarCurso,
                 ),
-              ),
+                const SizedBox(width: 12),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        _data(lang).toUpperCase(),
+                        key: const Key('hoxe_data'),
+                        style: const TextStyle(
+                          fontSize: 11.5,
+                          fontWeight: FontWeight.w800,
+                          letterSpacing: 0.6,
+                          color: AppTheme.textSecondary,
+                        ),
+                      ),
+                      Semantics(
+                        header: true,
+                        child: Text(
+                          _titulo(lang),
+                          key: const Key('hoxe_titulo'),
+                          style: const TextStyle(
+                            fontSize: 17,
+                            fontWeight: FontWeight.w800,
+                            color: AppTheme.textPrimary,
+                            height: 1.2,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
             ),
             if (_toca.finDeSemana || _toca.prevista) ...[
               const SizedBox(height: 6),

@@ -9,6 +9,7 @@ import 'package:descubre_con_lua/core/localization/app_language.dart';
 import 'package:descubre_con_lua/core/theme/app_theme.dart';
 import 'package:descubre_con_lua/data/models/leccion_model.dart';
 import 'package:descubre_con_lua/data/models/xogos_fogar_model.dart';
+import 'package:descubre_con_lua/features/leccions/views/camino_do_curso_screen.dart';
 import 'package:descubre_con_lua/features/leccions/views/gramatica_screen.dart';
 import 'package:descubre_con_lua/features/leccions/widgets/leccion_da_semana.dart';
 
@@ -275,6 +276,8 @@ void main() {
         for (final t in ['12 · A2', '13 · A2', '14 · A2']) {
           expect(find.text(t), findsOneWidget, reason: t);
         }
+        // La barra es la del curso, y lo dice: tema 2, lección 4 = semana 8.
+        expect(find.text('Curso: semana 8 de 40'), findsOneWidget);
         final hoxe = find.byKey(const Key('leccion_dias'));
         expect(tester.getRect(hoxe).bottom, lessThan(915));
         expect(find.byKey(const Key('leccion_xa_sabe')), findsOneWidget);
@@ -284,13 +287,68 @@ void main() {
           (tester) async {
         await pintar(tester, const Size(360, 780), 1.8, lang);
         expect(tester.takeException(), isNull);
-        // Otro día de la semana, y vuelta a hoy.
-        await tester.tap(find.byKey(const ValueKey('leccion_dia_5')));
+        // Otro día de la semana: se ve lo de ese día.
+        final venres = find.byKey(const ValueKey('leccion_dia_5'));
+        await tester.ensureVisible(venres);
+        await tester.pump();
+        await tester.tap(venres);
         await tester.pump();
         expect(tester.takeException(), isNull);
+        final dia5 = leccions.unidades['curso_4_5']![1].leccions[3].dias[4];
+        expect(find.text(dia5.texto.resolve(lang)), findsOneWidget);
       });
     }
   });
+
+  for (final lang in AppLanguage.deInterfaz) {
+    testWidgets('o camiño dos 10 temas, coa lección de agora, en ${lang.code}',
+        (tester) async {
+      final unidades = leccions.unidades['curso_4_5']!;
+      expect(unidades, hasLength(10));
+      final u = unidades[1];
+      final l = u.leccions[3];
+      await tester.binding.setSurfaceSize(const Size(412, 915));
+      addTearDown(() => tester.binding.setSurfaceSize(null));
+      await tester.pumpWidget(MaterialApp(
+        theme: AppTheme.temaFamilias,
+        home: CaminoDoCursoScreen(
+          leccions: leccions,
+          cursoId: 'curso_4_5',
+          actual: l.id,
+          language: lang,
+          audioService: MockOfflineAudioService(),
+        ),
+      ));
+      await tester.pumpAndSettle();
+      expect(tester.takeException(), isNull);
+      for (final x in unidades) {
+        expect(find.byKey(ValueKey('camino_${x.id}'), skipOffstage: false),
+            findsOneWidget,
+            reason: x.id);
+      }
+      // Cada tema dice qué unidad de las 48 trabaja: la 13 en octubre.
+      expect(
+          tester
+              .widget<Text>(find.byKey(ValueKey('camino_gramatica_${u.id}')))
+              .data,
+          '${lang == AppLanguage.gl ? 'Unidade' : 'Unidad'} 13 de 48 · '
+          'A2 · ${u.gramatica!.titulo.resolve(lang)}');
+      // Solo una lección marcada como la de esta semana.
+      expect(find.byKey(const Key('leccion_globo')), findsOneWidget);
+      final punto = find.descendant(
+          of: find.byKey(ValueKey('camino_${u.id}')),
+          matching: find.byKey(const ValueKey('leccion_punto_4')));
+      await tester.ensureVisible(punto);
+      await tester.pumpAndSettle();
+      await tester.tap(punto);
+      await tester.pumpAndSettle();
+      expect(find.byKey(ValueKey('camino_leccion_${l.id}')), findsOneWidget);
+      for (final p in l.novas) {
+        expect(find.text(p.en), findsWidgets, reason: p.en);
+      }
+      expect(tester.takeException(), isNull);
+    });
+  }
 
   test('o que xa coñece é o ensinado antes', () {
     for (final c in cursos) {
