@@ -75,43 +75,75 @@ void main() {
     expect(total, 200);
   });
 
-  test('ningunha semana baleira e todo sae do plan', () {
-    expect(plan, isNotEmpty);
+  test('ningunha palabra se ensina dúas veces e cada unha di que é', () {
     for (final c in cursos) {
+      final vistas = <String>{};
       for (final u in leccions.unidades[c]!) {
-        final doPlan = plan[u.id];
-        expect(doPlan, isNotNull, reason: u.id);
-        final ensinado = <String>{};
         for (final l in u.leccions) {
-          final pezas = l.repaso ? l.repasa : l.novas;
-          expect(pezas, isNotEmpty, reason: l.id);
-          // En la primera, lo que ya debería saber es de la unidad anterior.
-          for (final p in [
-            ...l.novas,
-            ...l.repasa,
-            if (l.numero > 1) ...l.xaSabe,
-          ]) {
-            expect(doPlan, contains(norm(p.en)), reason: '${l.id}: ${p.en}');
+          expect(l.repaso ? l.repasa : l.novas, isNotEmpty, reason: l.id);
+          for (final p in l.novas) {
+            expect(vistas.add(norm(p.en)), isTrue, reason: '${l.id}: ${p.en}');
+            expect(p.que, isNotNull, reason: '${l.id}: ${p.en}');
           }
-          ensinado.addAll(l.novas.map((p) => norm(p.en)));
-          expect(l.reto.frase.en, isNotEmpty, reason: l.id);
+          expect(l.dias, hasLength(5), reason: l.id);
         }
-        // Nada del plan sin enseñar (salvo las variantes que se dan una vez:
-        // «Splash» y «Splash!»).
-        expect(doPlan!.difference(ensinado), isEmpty, reason: u.id);
       }
     }
   });
 
-  test('o que xa debería saber é o das semanas anteriores', () {
+  test('todo o que o plan ensina aparece no curso que o usa', () {
     for (final c in cursos) {
-      for (final u in leccions.unidades[c]!) {
-        final antes = <String>[];
+      final ensinado = {
+        for (final u in leccions.unidades[c]!)
+          for (final l in u.leccions)
+            for (final p in l.novas) norm(p.en),
+      };
+      final usadas = {
+        for (final m in meses)
+          if (leccions.da(c, m, 1) != null) m,
+      };
+      expect(usadas, hasLength(10), reason: c);
+      final cal = jsonDecode(
+          File('assets/content/curriculo/calendario_curricular.json')
+              .readAsStringSync())['cursos'][c] as Map;
+      for (final uid in cal.values.toSet()) {
+        expect(plan[uid]!.difference(ensinado), isEmpty, reason: '$c $uid');
+      }
+    }
+  });
+
+  test(
+      'progresión: 10 unidades distintas, sen reto repetido seguido, '
+      '0-2 e 2-3 distintos', () {
+    for (final c in cursos) {
+      final us = leccions.unidades[c]!;
+      expect(us, hasLength(10), reason: c);
+      expect(us.map((u) => u.titulo.gl).toSet(), hasLength(10), reason: c);
+      String? antes;
+      for (final u in us) {
         for (final l in u.leccions) {
-          if (l.numero > 1) {
-            expect(l.xaSabe.map((p) => p.en).toList(), antes, reason: l.id);
+          expect(l.reto.frase.en, isNot(antes), reason: l.id);
+          antes = l.reto.frase.en;
+        }
+      }
+    }
+    List<String> novas(String c) => [
+          for (final u in leccions.unidades[c]!)
+            for (final l in u.leccions)
+              for (final p in l.novas) p.en,
+        ];
+    expect(novas('curso_0_2'), isNot(novas('curso_2_3')));
+  });
+
+  test('o que xa coñece é o ensinado antes', () {
+    for (final c in cursos) {
+      final antes = <String>{};
+      for (final u in leccions.unidades[c]!) {
+        for (final l in u.leccions) {
+          for (final p in l.xaSabe) {
+            expect(antes, contains(norm(p.en)), reason: '${l.id}: ${p.en}');
           }
-          antes.addAll(l.novas.map((p) => p.en));
+          antes.addAll(l.novas.map((p) => norm(p.en)));
         }
       }
     }

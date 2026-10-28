@@ -346,6 +346,7 @@ class _HoxeDocentesScreenState extends State<HoxeDocentesScreen> {
               cursoId: widget.cursoId,
               mesCalendario: _toca.dia.mesCalendario,
               semana: _toca.dia.semana,
+              dia: _toca.dia.dia,
               language: lang,
               audioService: widget.audioService,
               enAula: true,

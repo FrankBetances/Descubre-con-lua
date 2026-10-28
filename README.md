@@ -13,8 +13,11 @@ casa y *Hoy · Calendario · Recursos · Yo* en la escuela.
 
 - **La lección de la semana** — los dos portales se abren por ella. El curso de
   cada grupo es una fila de lecciones de una semana que salen del plan
-  curricular, unidad a unidad. Está escrita para familias que no saben de
-  pedagogía: de dónde viene y a dónde va la unidad, las palabras que ya conoce,
+  curricular y de la unidad de cada mes: diez unidades por curso, de cuatro
+  lecciones, sin repetir una palabra en el curso. Enseña la ruta de los cinco
+  cursos (de escuchar y hacer a argumentar), qué se espera esa semana, qué
+  clase de palabras trae —nombres, verbos, adjetivos, frases— y una actividad
+  distinta cada día. Está escrita para familias que no saben de pedagogía: de dónde viene y a dónde va la unidad, las palabras que ya conoce,
   y la semana en tres pasos —escuchar las palabras, decirlas siempre en el
   mismo momento del día, esperar y celebrar—, cada uno con su porqué en una o
   dos frases. Debajo, el cuento y el juego de la unidad, las señales de que va

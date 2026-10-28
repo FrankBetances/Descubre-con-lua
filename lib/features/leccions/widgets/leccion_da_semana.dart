@@ -35,7 +35,11 @@ class LeccionDaSemana extends StatefulWidget {
   /// En el aula el paso 3 habla de la nota para las casas.
   final bool enAula;
 
+  /// El día de la semana que se enseña (1 = lunes); `null`, ninguno.
+  final int? dia;
+
   const LeccionDaSemana({
+    this.dia,
     super.key,
     required this.leccions,
     required this.cursoId,
@@ -127,6 +131,14 @@ class _LeccionDaSemanaState extends State<LeccionDaSemana> {
       height: 1.35,
     );
 
+    // Qué trae esta semana, contado por clase: «2 verbos, 1 adxectivo».
+    final porClase = <String, int>{};
+    for (final p in pezas) {
+      if (p.que case final q?) {
+        porClase.update(q.resolve(lang).split(':').first, (n) => n + 1,
+            ifAbsent: () => 1);
+      }
+    }
     final objectivos = unidade.obxectivos;
     final vistos = _todosObxectivos ? objectivos : objectivos.take(1).toList();
 
@@ -166,17 +178,35 @@ class _LeccionDaSemanaState extends State<LeccionDaSemana> {
                   height: 1.2,
                 ),
               ),
+              if (unidade.plan case final pl?) ...[
+                const SizedBox(height: 4),
+                Text(
+                  '${t('doPlan')}: ${pl.resolve(lang)}',
+                  key: const Key('leccion_do_plan'),
+                  style: lectura,
+                ),
+              ],
               const SizedBox(height: 8),
               Text(
                 leccion.repaso
                     ? 'Semana ${leccion.numero} de ${leccion.de}: repaso'
-                    : 'Lección ${leccion.numero} de ${leccion.de}',
+                    : (isGl
+                        ? 'Lección ${leccion.numero} de ${leccion.de} desta unidade'
+                        : 'Lección ${leccion.numero} de ${leccion.de} de esta unidad'),
                 style: const TextStyle(
                   fontSize: 16,
                   fontWeight: FontWeight.w700,
                   color: AppTheme.textPrimary,
                 ),
               ),
+              if (leccion.espera case final e?) ...[
+                const SizedBox(height: 6),
+                Text(
+                  e.resolve(lang),
+                  key: const Key('leccion_espera'),
+                  style: lectura,
+                ),
+              ],
               const SizedBox(height: 10),
               Wrap(
                 spacing: 6,
@@ -233,6 +263,145 @@ class _LeccionDaSemanaState extends State<LeccionDaSemana> {
             ],
           ),
         ),
+        // De dónde viene y a dónde va entre cursos: la ruta de los cinco,
+        // con el de la criatura resaltado.
+        if (g.ruta.isNotEmpty)
+          _Bloque(
+            clave: 'leccion_ruta',
+            icona: Icons.stairs_rounded,
+            titulo: t('ruta'),
+            children: [
+              Text(t('rutaTexto'), style: lectura),
+              const SizedBox(height: 10),
+              for (final (curso, titulo, texto) in g.ruta)
+                Container(
+                  key: ValueKey('leccion_ruta_$curso'),
+                  margin: const EdgeInsets.only(bottom: 6),
+                  padding: const EdgeInsets.all(12),
+                  decoration: BoxDecoration(
+                    color: curso == widget.cursoId
+                        ? context.acentoTint
+                        : Colors.white,
+                    borderRadius: BorderRadius.circular(12),
+                    border: Border.all(
+                      color: curso == widget.cursoId
+                          ? context.acento
+                          : AppTheme.border,
+                      width: curso == widget.cursoId ? 2 : 1,
+                    ),
+                  ),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        titulo.resolve(lang),
+                        style: TextStyle(
+                          fontSize: 15.5,
+                          fontWeight: FontWeight.w800,
+                          color: curso == widget.cursoId
+                              ? context.acento
+                              : AppTheme.textPrimary,
+                        ),
+                      ),
+                      // Solo el curso propio, entero: los demás, el título.
+                      if (curso == widget.cursoId) ...[
+                        const SizedBox(height: 4),
+                        Text(texto.resolve(lang), style: lectura),
+                      ],
+                    ],
+                  ),
+                ),
+            ],
+          ),
+        // Qué se trabaja: la gramática del plan y qué clase de palabras trae
+        // la semana.
+        _Bloque(
+          clave: 'leccion_foco',
+          icona: Icons.menu_book_rounded,
+          titulo: t('foco'),
+          children: [
+            if (unidade.foco case final f?) ...[
+              Text(f.resolve(lang), style: forte),
+              const SizedBox(height: 8),
+            ],
+            if (porClase.isNotEmpty)
+              Wrap(
+                spacing: 8,
+                runSpacing: 8,
+                children: [
+                  for (final e in porClase.entries)
+                    Container(
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 10, vertical: 6),
+                      decoration: BoxDecoration(
+                        color: context.acentoTint,
+                        borderRadius: BorderRadius.circular(20),
+                      ),
+                      child: Text(
+                        '${e.value} · ${e.key}',
+                        style: TextStyle(
+                          fontSize: 14,
+                          fontWeight: FontWeight.w700,
+                          color: context.acento,
+                        ),
+                      ),
+                    ),
+                ],
+              ),
+          ],
+        ),
+        // Cada día, una cosa distinta; la de hoy, resaltada.
+        if (leccion.dias.isNotEmpty)
+          _Bloque(
+            clave: 'leccion_dias',
+            icona: Icons.calendar_view_week_rounded,
+            titulo: t('dias'),
+            children: [
+              for (final (i, d) in leccion.dias.indexed)
+                Container(
+                  key: ValueKey('leccion_dia_${i + 1}'),
+                  margin: const EdgeInsets.only(bottom: 8),
+                  padding: const EdgeInsets.all(12),
+                  decoration: BoxDecoration(
+                    color:
+                        widget.dia == i + 1 ? context.acentoTint : Colors.white,
+                    borderRadius: BorderRadius.circular(12),
+                    border: Border.all(
+                      color: widget.dia == i + 1
+                          ? context.acento
+                          : AppTheme.border,
+                      width: widget.dia == i + 1 ? 2 : 1,
+                    ),
+                  ),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        widget.dia == i + 1
+                            ? '${t('hoxe')} · ${d.dia.resolve(lang).toUpperCase()}'
+                            : d.dia.resolve(lang).toUpperCase(),
+                        style: kicker,
+                      ),
+                      const SizedBox(height: 4),
+                      Text(d.texto.resolve(lang), style: lectura),
+                      if (d.en case final en?) ...[
+                        const SizedBox(height: 6),
+                        BotonEscuchar(
+                          audioService: widget.audioService,
+                          texto: en,
+                          language: AppLanguage.en,
+                          interfaz: lang,
+                          style: estiloIngles(en),
+                          comoChip: true,
+                          colorChip: context.acento,
+                          descripcion: en,
+                        ),
+                      ],
+                    ],
+                  ),
+                ),
+            ],
+          ),
         const SizedBox(height: 14),
         Text(
           t('comoFunciona'),
@@ -290,6 +459,7 @@ class _LeccionDaSemanaState extends State<LeccionDaSemana> {
                         _chip(p, lang),
                         Text(
                           [
+                            if (p.que case final q?) q.resolve(lang),
                             if (p.significado case final s?) s.resolve(lang),
                             if (p.xesto case final x?) x.resolve(lang),
                           ].join(' · '),
@@ -740,8 +910,10 @@ class LeccionDaSemanaCargada extends StatefulWidget {
   final AppLanguage language;
   final OfflineAudioService? audioService;
   final bool enAula;
+  final int? dia;
 
   const LeccionDaSemanaCargada({
+    this.dia,
     super.key,
     required this.cursoId,
     required this.mesCalendario,
@@ -785,6 +957,7 @@ class _LeccionDaSemanaCargadaState extends State<LeccionDaSemanaCargada> {
             language: widget.language,
             audioService: widget.audioService,
             enAula: widget.enAula,
+            dia: widget.dia,
           );
         },
       );
