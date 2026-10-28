@@ -14,7 +14,8 @@ casa y *Hoy · Calendario · Recursos · Yo* en la escuela.
 - **La lección de la semana** — los dos portales se abren por ella. El curso de
   cada grupo es una fila de lecciones de una semana que salen del plan
   curricular y de la unidad de cada mes: diez unidades por curso, de cuatro
-  lecciones, sin repetir una palabra en el curso. Enseña la ruta de los cinco
+  lecciones, sin repetir una palabra nueva en ninguna edad y con al menos tres
+  nuevas cada semana. Enseña la ruta de los cinco
   cursos (de escuchar y hacer a argumentar), qué se espera esa semana, qué
   clase de palabras trae —nombres, verbos, adjetivos, frases— y una actividad
   distinta cada día. Cada unidad trabaja un punto de gramática de A1 o A2, en

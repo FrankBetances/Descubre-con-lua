@@ -90,3 +90,31 @@ Estado: abierta
 - [x] La UX sigue duolingo-clone adaptada, no copiada (Frank, 28/10: «es un ejemplo que te he dado no que lo hagas a rajatabla»): en Hoy, los días como nodos; en el camino, la franja de cada tema con su unidad de las 48 y las lecciones en zigzag · evidencia: test/features/leccions/leccions_test.dart («o camiño dos 10 temas, coa lección de agora»)
 - [x] Visto en la app de escritorio por Na casa → Hoy, 4-5 años, en gl y es · evidencia: docs/capturas/escritorio/hoxe-casa-4-5-gl.png y hoxe-casa-4-5-es.png
 - [ ] Todo mergeado en main con CI en verde · evidencia:
+
+## O-20261028-7 · Opción A: cinco edades completas, sin repetir ni rellenar
+Estado: abierta
+> Ejecuta la opción A, Mergea y push al main de lo que hay ahora, pero prohibido engañarme, todas las edades deben estar completas, no intentes engañarme haciendo solo la primera parte porque ya lo has hecho antes solo haces lo primero y no conecta con nada
+
+La opción A, tal como se le propuso: diez temas propios para 2-3 años, palabras nuevas para las semanas que no traían ninguna y ninguna palabra repetida entre cursos.
+
+- [ ] Lo que había, mergeado en main con CI en verde · evidencia:
+- [x] Los 50 temas (10 por edad) tienen título distinto: ninguno se repite entre edades · evidencia: test/features/leccions/leccions_test.dart («entre idades, ningún tema, palabra nova nin conto repetido»)
+- [x] Las 200 semanas traen al menos tres palabras nuevas: ninguna semana de «repaso» por falta de contenido · evidencia: tools/gen_leccions.py (revisar: falla si una semana trae menos de 3)
+- [x] Ninguna palabra nueva se enseña en dos edades: cada una, en una sola · evidencia: tools/gen_leccions.py (revisar: falla si una palabra es nueva en dos edades)
+- [x] Cada palabra nueva lleva su significado en gl y es y su voz en, gl y es · evidencia: test/features/leccions/leccions_test.dart («todo o inglés das leccións leva o seu significado») y tools/check_voice_coverage.py
+- [x] Todo conecta, en las cinco edades: el STEAM del mes es el eje (se ve en Hoy); el lunes, las palabras nuevas; el martes, el reto con una de ellas; el miércoles, la frase de la unidad de las 48 dicha dentro del STEAM; el jueves, un paso del STEAM; el viernes, el cuento de esa semana con las palabras que salen en él. Ningún día se repite en el curso · evidencia: test/features/leccions/leccions_test.dart («cada mes co seu STEAM e ningún día repetido no curso»)
+- [x] Un gate tumba CI si vuelve a repetirse un tema o una palabra entre edades, o si una semana no trae nada nuevo · evidencia: tools/gen_leccions.py (--check, en tools/gates.sh)
+- [ ] Visto en la app de escritorio por Na casa → Hoy en las cinco edades, en gl y es · evidencia:
+- [ ] Mergeado en main con CI en verde · evidencia:
+- [x] Cada palabra nueva sale en una actividad de su semana (el lunes, todas; el viernes, las que trae el cuento) · evidencia: tools/gen_leccions.py (revisar: falla si una palabra nueva no sale en ningún día)
+- [x] La unidad de gramática manda en las palabras: en las 128 semanas cuya unidad trabaja una clase de palabra (nombres, verbos, adjetivos), al menos una palabra nueva es de esa clase · evidencia: tools/gen_leccions.py (revisar: falla si una semana no la trae)
+- [x] Cada semana dice cómo hablar: parentese, habla paralela, espera, expansión o recast, una técnica por fase · evidencia: test/features/leccions/leccions_test.dart («cada semana di como falar, catro técnicas distintas no mes»)
+- [ ] Las unidades 21-48 (B1-C1) tienen su contenido semanal para la persona adulta · evidencia:
+
+## O-20261028-8 · Informe y PDF de todo el material por edad
+Estado: abierta
+> entregar un informe de todo el material que hayas generado para ocupar cada uno de los rangos de edades, quiero todo el material [...] genera al finalizar un documento normalizado en PDF con cada una de las unidades y material cuentos y el Stem ya completo
+
+- [x] Un PDF normalizado con cada edad, sus 10 temas, la unidad de las 48, el STEAM, el cuento de cada semana, las palabras y los cinco días · evidencia: docs/Descubre-con-Lua-Material-por-edades.pdf (de tools/gen_catalogo.py)
+- [x] Un inventario con números por edad · evidencia: docs/catalogo-por-idades.html (tabla «Inventario»)
+- [ ] Las unidades 21-48 con su material completo, no solo descripción y ejemplo · evidencia:
