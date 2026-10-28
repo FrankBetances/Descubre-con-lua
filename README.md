@@ -17,18 +17,20 @@ casa y *Hoy · Calendario · Recursos · Yo* en la escuela.
   lecciones, sin repetir una palabra en el curso. Enseña la ruta de los cinco
   cursos (de escuchar y hacer a argumentar), qué se espera esa semana, qué
   clase de palabras trae —nombres, verbos, adjetivos, frases— y una actividad
-  distinta cada día. Está escrita para familias que no saben de pedagogía: de dónde viene y a dónde va la unidad, las palabras que ya conoce,
-  y la semana en tres pasos —escuchar las palabras, decirlas siempre en el
-  mismo momento del día, esperar y celebrar—, cada uno con su porqué en una o
-  dos frases. Debajo, el cuento y el juego de la unidad, las señales de que va
-  bien, sin apuntar nada, y las palabras de la semana que viene. La misma
-  lección sale en los dos calendarios, en la nota que la escuela da a las
-  familias y en el código para casa.
+  distinta cada día. Cada unidad trabaja un punto de gramática de A1 o A2, en
+  orden de edad, con una frase por semana; los 48 puntos de A1 a C1 se pueden
+  consultar, y los de B1 a C1 son para la persona adulta. Arriba dice dónde
+  se está en las 48 unidades —la anterior, la de ahora y la siguiente, con su título: sustantivos, adjetivos,
+  presente…—, el tema del mes y la lección; debajo, los cinco días de la
+  semana, las palabras nuevas, la frase de la unidad y lo que ya debería saber.
+  La guía —qué hacer, cómo esperar y por qué— va plegada. La misma lección sale
+  en los dos calendarios, en la nota que la escuela da a las familias y en el
+  código para casa.
 - **Hoy, en la escuela** — la lección de la semana y la sesión de 45 minutos;
   debajo, como material complementario, la asamblea diaria de cuatro fases, las
   palabras del banco, el plan del mes, el cuento, la dinámica y la ciencia.
-- **Hoy, en casa** — la lección de la semana; debajo, como material
-  complementario, el juego de tres minutos del día con un solo botón, las
+- **Hoy, en casa** — la lección de la semana; debajo, plegado en «Más para
+  casa», el código de la escuela, el juego de tres minutos del día con un solo botón, las
   palabras del día, el reto del mes con su microcuento y el cuento. Si la criatura llega nueva a un curso empezado, **Ponte al día**
   enseña las palabras de antes que dan por sabidas las asambleas y los retos
   de los cuentos del mes, dos

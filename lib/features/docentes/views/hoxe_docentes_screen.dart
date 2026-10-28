@@ -351,13 +351,22 @@ class _HoxeDocentesScreenState extends State<HoxeDocentesScreen> {
               audioService: widget.audioService,
               enAula: true,
             ),
-            RotuloPaso(
-              numero: 4,
-              titulo:
-                  isGl ? 'A sesión de 45 minutos' : 'La sesión de 45 minutos',
-              subtitulo: isGl
-                  ? 'Cando hai tempo para unha sesión longa: catro fases.'
-                  : 'Cuando hay tiempo para una sesión larga: cuatro fases.',
+            // Sin número: los pasos 1-3 de la lección antigua ya no están.
+            Padding(
+              padding: const EdgeInsets.only(top: 22, bottom: 10),
+              child: Semantics(
+                header: true,
+                child: Text(
+                  isGl
+                      ? 'A sesión de 45 minutos, cando hai tempo: catro fases.'
+                      : 'La sesión de 45 minutos, cuando hay tiempo: cuatro fases.',
+                  style: const TextStyle(
+                    fontSize: 15.5,
+                    fontWeight: FontWeight.w700,
+                    color: AppTheme.textPrimary,
+                  ),
+                ),
+              ),
             ),
             FilaPaso(
               claveFila: const Key('paso_sesion45'),

@@ -82,9 +82,9 @@ void main() {
       expect(texto(tester, 'hoxe_aula_data'),
           gl ? 'VENRES, 2 DE OUTUBRO' : 'VIERNES, 2 DE OCTUBRE');
 
-      // P11: la cabecera de la lección, entera, por encima de la barra de
-      // pestañas: sin bajar.
-      final cabeceira = find.byKey(const Key('leccion_cabeceira'));
+      // O-20261028-6: la unidad de gramática de la semana, entera, por encima
+      // de la barra de pestañas: sin bajar.
+      final cabeceira = find.byKey(const Key('leccion_ruta_gramatica'));
       expect(cabeceira, findsOneWidget);
       final barra = tester.getRect(find.byType(NavigationBar));
       expect(tester.getRect(cabeceira).bottom, lessThanOrEqualTo(barra.top),

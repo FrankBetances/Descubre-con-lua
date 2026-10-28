@@ -313,6 +313,9 @@ def main():
     plan, cal, sig, xogos, steam = H.cargar()
     b = banco()
     idx = indice_de_significados(plan, b, sig)
+    # La gramática del curso (tools/gen_gramatica.py): un punto por unidad.
+    gram = json.loads((C / "gramatica" / "gramatica.json").read_text())
+    puntos = {p["n"]: p for p in gram["puntos"]}
     # La categoría de una palabra del plan, si el banco la tiene.
     cat_en = {}
     for x in b.values():
@@ -428,6 +431,7 @@ def main():
                 repasa = [con_significado(p, idx) for p in repasa]
                 if r.get("frase"):
                     r["frase"] = con_significado(r["frase"], idx)
+                fg = gram["ruta"][curso][str(mes)]["frases"][k]
                 lid = f"{curso}.{n_mes:02d}.{semana}"
                 leccions.append({
                     "id": lid,
@@ -435,6 +439,8 @@ def main():
                     "de": 4,
                     "tipo": "repaso" if repaso else "leccion",
                     "espera": {"gl": NIVEIS[k][0], "es": NIVEIS[k][1]},
+                    # La frase de gramática de la semana.
+                    "fraseGramatica": fg,
                     "xaSabe": [con_significado(dict(p), idx) for p in (da_unidade or anterior)[-8:]],
                     "novas": novas,
                     "repasa": [dict(p) for p in repasa],
@@ -453,11 +459,22 @@ def main():
                     ensinado.add(norm(p["en"]))
                 da_unidade += novas
             foco = FOCO.get(uid)
+            pg = puntos[gram["ruta"][curso][str(mes)]["punto"]]
             unidades.append({
                 "id": um["id"],
                 "titulo": um["centroInteres"],
                 "plan": {"id": uid, "titulo": pu["titulo"]},
                 **({"foco": {"gl": foco[0], "es": foco[1]}} if foco else {}),
+                "gramatica": {"n": pg["n"], "nivel": pg["nivel"], "titulo": pg["titulo"],
+                              "paraFamilias": pg["paraFamilias"]},
+                # De dónde viene y a dónde va: la unidad de gramática de antes
+                # y la de después, en el orden de Frank.
+                **({"gramaticaAntes": {"n": pg["n"] - 1, "nivel": puntos[pg["n"] - 1]["nivel"],
+                                       "titulo": puntos[pg["n"] - 1]["titulo"]}}
+                   if pg["n"] > 1 else {}),
+                **({"gramaticaDespois": {"n": pg["n"] + 1, "nivel": puntos[pg["n"] + 1]["nivel"],
+                                         "titulo": puntos[pg["n"] + 1]["titulo"]}}
+                   if pg["n"] < 48 else {}),
                 "obxectivos": [{"gl": o["gl"], "es": o["es"]} for o in pu.get("objetivos") or []],
                 "leccions": leccions,
             })

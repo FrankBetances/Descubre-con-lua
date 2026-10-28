@@ -67,6 +67,10 @@ run_gate "flutter analyze" flutter analyze
 run_gate "flutter test" flutter test --exclude-tags capturas
 
 # ------------------------------------------------------------- content gates
+# R∞ (Frank, 28/10/2026): ninguna orden suya se da por cumplida sin la
+# evidencia de cada criterio.
+run_gate "every order marked done has evidence for each criterion" \
+  python3 tools/check_ordenes.py
 run_gate "contact address" python3 tools/check_contact_email.py
 # Nace del Calendario, que llegó al aparato como un disco girando para siempre
 # porque `assets/content/calendario/` no estaba en pubspec.yaml. Un asset que
@@ -110,6 +114,10 @@ run_gate "home guide of every month is regenerated from its sources" \
 # toca el plan sin regenerarlas, la lección enseñaría otra unidad.
 run_gate "weekly lessons are regenerated from the plan" \
   python3 tools/gen_leccions.py --check
+# La gramática del curso (Frank, 28/10/2026): los 20 puntos de A1-A2 en las
+# cinco edades, sin bajar de una edad a la siguiente.
+run_gate "course grammar covers A1-A2 across the five ages" \
+  python3 tools/gen_gramatica.py --check
 # Nace de O5 (M5.1): el microcuento es una conversación sobre el núcleo, no
 # otro vocabulario. Comprueba que lo que dice Lúa sale del núcleo, que hay
 # tríada, guion de recast para cinco respuestas y pregunta de casa por edad, y

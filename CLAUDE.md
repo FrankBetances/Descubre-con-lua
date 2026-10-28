@@ -1,5 +1,15 @@
 # Lúa · Edición Vigo (Flutter) · Notas para Claude Code
 
+## R∞ · REGLA SUPREMA · LA ORDEN LITERAL, SUS CRITERIOS ESCRITOS ANTES Y PROHIBIDO SIMULAR
+
+La dictó Frank el 28/10/2026: «necesito una solución y regla suprema para que no vuelva a repetirse en ningún repositorio este problema». Manda sobre todo el fichero, R0 incluida. Nació de un fallo de Claude Code: dio por hechas unas unidades estirando dos a cuarenta semanas con repaso, y no escribió la estructura gramatical que Frank pedía desde el principio. Lo hizo Claude Code.
+
+1. **Antes de tocar nada, la orden se copia literal en `docs/ORDENES.md`**, con fecha, y se parte en **criterios de aceptación comprobables**: qué ve Frank, dónde (el camino en la app) y con qué dato. Si un criterio no se puede comprobar, se reescribe hasta que se pueda.
+2. **Si la orden pide una estructura, una progresión o un contenido que no existe, Claude Code lo redacta y lo propone.** Nunca lo sustituye por lo que ya hay, ni lo da por cubierto con lo parecido.
+3. **Prohibido rellenar para que cuadre**: repetir, estirar, duplicar entre cursos o llamar «repaso» a la falta de contenido. Si no hay material para cubrir lo pedido, se dice en la primera línea y se pregunta a Frank.
+4. **«Hecho» solo cuando cada criterio tiene su evidencia escrita al lado en `docs/ORDENES.md`**: el test, el gate o la captura que lo demuestra. El gate `tools/check_ordenes.py` tumba CI si una orden está marcada como cumplida y a un criterio le falta la evidencia.
+5. **El informe empieza por lo que falta**: «De tu orden falta: …» o «De tu orden no falta nada», criterio por criterio. Nunca por lo que se hizo.
+
 ## R0 · PROHIBIDO JUSTIFICARSE. AQUÍ SE VIENE A HACER LAS COSAS BIEN, SÍ O SÍ
 
 La dictó Frank el 21/10/2026: «hay que agregar aquí la regla cero: prohibido justificarse, aquí se viene a hacer las cosas bien sí o sí». Va antes que todo lo demás.

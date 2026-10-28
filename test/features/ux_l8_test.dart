@@ -345,6 +345,7 @@ void main() {
         expect(find.byKey(const Key('hoxe_ponte_ao_dia')), findsNothing);
 
         await idade(tester, 'curso_4_5');
+        await Pasarela.abrirMaisParaCasa(tester);
         final porta = find.byKey(const Key('hoxe_ponte_ao_dia'));
         await tester.scrollUntilVisible(porta, 200,
             scrollable: find.byType(Scrollable).first);

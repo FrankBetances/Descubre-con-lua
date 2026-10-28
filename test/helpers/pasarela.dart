@@ -122,6 +122,23 @@ class Pasarela {
   /// outubro de 2026, un día de escola con asemblea.
   static final agora = DateTime(2026, 10, 2, 10);
 
+  /// O-20261028-4: en Hoxe de la casa, lo complementario va plegado en «Máis
+  /// para casa». Lo abre una vez (si ya está abierto, no hace nada).
+  static Future<void> abrirMaisParaCasa(WidgetTester tester) async {
+    final mais = find.byKey(const Key('hoxe_complementario'));
+    if (mais.evaluate().isEmpty) {
+      await tester.scrollUntilVisible(mais, 400,
+          scrollable: find.byType(Scrollable).first);
+    }
+    if (find.byKey(const Key('hoxe_codigo_escola')).evaluate().isNotEmpty) {
+      return;
+    }
+    await tester.ensureVisible(mais);
+    await tester.pumpAndSettle();
+    await tester.tap(mais);
+    await tester.pumpAndSettle();
+  }
+
   Future<void> cargar() async {
     TestWidgetsFlutterBinding.ensureInitialized();
     await cargarFontes();
