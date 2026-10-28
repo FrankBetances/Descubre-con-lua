@@ -342,217 +342,230 @@ class _HoxeFamiliasScreenState extends State<HoxeFamiliasScreen> {
               audioService: widget.audioService,
             ),
             const SizedBox(height: 16),
-            // P10: el código que da la escuela abre el mes y la semana que
-            // dice la nota, aunque no sean los de hoy.
+            // O-20261028-4: Hoxe es la lección. Todo lo demás —el código de
+            // la escuela, el juego de tres minutos, las palabras del banco, el
+            // reto del mes, el cuento, la ciencia y la lista de práctica—,
+            // plegado aquí, al final.
+            const SizedBox(height: 12),
             Material(
-              key: const Key('hoxe_codigo_escola'),
               color: Colors.white,
               shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(14),
+                borderRadius: BorderRadius.circular(AppTheme.radiusCard),
                 side: const BorderSide(color: AppTheme.border),
               ),
-              child: InkWell(
-                borderRadius: BorderRadius.circular(14),
-                onTap: () => Navigator.of(context).push(RutaLua(
-                  de: context,
-                  builder: (_) => CodigoDaEscolaScreen(
-                    repository: widget.repository,
-                    language: lang,
-                    onLanguageChanged: widget.onLanguageChanged,
-                    audioService: widget.audioService,
-                  ),
-                )),
-                child: Padding(
-                  padding: const EdgeInsets.all(14),
-                  child: Row(
-                    children: [
-                      Icon(Icons.pin_rounded, color: context.acento),
-                      const SizedBox(width: 12),
-                      Expanded(
-                        child: Text(
-                          lang == AppLanguage.gl
-                              ? 'Tes un código da escola?'
-                              : '¿Tienes un código de la escuela?',
-                          style: const TextStyle(
-                            fontSize: 16,
-                            fontWeight: FontWeight.w700,
-                            color: AppTheme.textPrimary,
-                          ),
-                        ),
-                      ),
-                      Icon(Icons.chevron_right_rounded, color: context.acento),
-                    ],
+              clipBehavior: Clip.antiAlias,
+              child: ExpansionTile(
+                key: const Key('hoxe_complementario'),
+                title: Text(
+                  lang == AppLanguage.gl ? 'Máis para casa' : 'Más para casa',
+                  style: const TextStyle(
+                    fontSize: 16,
+                    fontWeight: FontWeight.w700,
+                    color: AppTheme.textPrimary,
                   ),
                 ),
-              ),
-            ),
-            const SizedBox(height: 14),
-            const Padding(
-              padding: EdgeInsets.only(top: 26, bottom: 4),
-              child: Text(
-                'MATERIAL COMPLEMENTARIO',
-                key: Key('hoxe_complementario'),
-                style: TextStyle(
-                  fontSize: 13,
-                  fontWeight: FontWeight.w800,
-                  letterSpacing: 0.8,
-                  color: AppTheme.textSecondary,
+                subtitle: Text(
+                  lang == AppLanguage.gl
+                      ? 'Para cando queirades máis. Non fai falta.'
+                      : 'Para cuando queráis más. No hace falta.',
+                  style: const TextStyle(
+                      fontSize: 14, color: AppTheme.textSecondary),
                 ),
-              ),
-            ),
-            Text(
-              lang == AppLanguage.gl
-                  ? 'Para cando queirades máis. Non fai falta para seguir as leccións.'
-                  : 'Para cuando queráis más. No hace falta para seguir las lecciones.',
-              style: const TextStyle(
-                fontSize: 14,
-                color: AppTheme.textSecondary,
-                height: 1.35,
-              ),
-            ),
-            const SizedBox(height: 10),
-            if (_cargando)
-              Container(
-                key: const Key('hoxe_cargando'),
-                height: 260,
-                decoration: BoxDecoration(
-                  color: context.acentoTint,
-                  borderRadius: BorderRadius.circular(20),
-                ),
-              )
-            else ...[
-              if (_dia == null)
-                Container(
-                  key: const Key('hoxe_sen_xogo'),
-                  padding: const EdgeInsets.all(18),
-                  decoration: BoxDecoration(
+                childrenPadding: const EdgeInsets.fromLTRB(12, 0, 12, 12),
+                expandedCrossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  // P10: el código que da la escuela abre el mes y la semana que
+                  // dice la nota, aunque no sean los de hoy.
+                  Material(
+                    key: const Key('hoxe_codigo_escola'),
                     color: Colors.white,
-                    borderRadius: BorderRadius.circular(20),
-                    border: Border.all(color: AppTheme.border),
-                  ),
-                  child: Text(
-                    lang == AppLanguage.gl
-                        ? 'O xogo deste día non está no calendario. Mira o Calendario ou Explorar.'
-                        : 'El juego de este día no está en el calendario. Mira el Calendario o Explorar.',
-                    style: const TextStyle(
-                      fontSize: 15.5,
-                      color: AppTheme.textSecondary,
-                      height: 1.4,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(14),
+                      side: const BorderSide(color: AppTheme.border),
                     ),
-                  ),
-                ),
-              if (_dia case final dia?)
-                _TarxetaXogo(
-                  dia: dia,
-                  language: lang,
-                  rotulo: _toca.eHoxe
-                      ? (lang == AppLanguage.gl
-                          ? 'O XOGO DE HOXE · 3 MIN'
-                          : 'EL JUEGO DE HOY · 3 MIN')
-                      : (lang == AppLanguage.gl
-                          ? 'O XOGO DO ${_diaQueToca(lang).toUpperCase()} · 3 MIN'
-                          : 'EL JUEGO DEL ${_diaQueToca(lang).toUpperCase()} · 3 MIN'),
-                  feito: _toca.eHoxe && _feitoHoxe,
-                  racha: widget.store.rachaActual,
-                  onComezar: _abrirXogo,
-                ),
-              if (plan != null && curso != null) ...[
-                const SizedBox(height: 14),
-                _TarxetaPalabras(
-                  plan: plan,
-                  modeloDoDia: curso.modelo.dia(_toca.dia.dia),
-                  nucleo: switch (widget.repository.unidadeDoMesSync(
-                      widget.cursoId, _toca.dia.mesCalendario)) {
-                    final u? => widget.repository.nucleoSync(u),
-                    null => const <PezaDaUnidade>[],
-                  },
-                  language: lang,
-                  audioService: widget.audioService,
-                ),
-              ],
-              if (ponte != null && dadasPorSabidas.isNotEmpty) ...[
-                const SizedBox(height: 14),
-                _FilaPonteAoDia(
-                  ponte: ponte,
-                  cantas: dadasPorSabidas.length,
-                  mes: _toca.dia.mesCalendario,
-                  language: lang,
-                  onTap: () => _abrirPonteAoDia(ponte),
-                ),
-              ],
-              if (widget.repository
-                      .unidadeDoMesSync(widget.cursoId, _toca.dia.mesCalendario)
-                      ?.hogar
-                  case final hogar?) ...[
-                RetoDaSemana(
-                  hogar: hogar,
-                  semana: _toca.dia.semana,
-                  rotulo: lang == AppLanguage.gl
-                      ? 'O RETO DO MES · SEMANA ${_toca.dia.semana} DE 4'
-                      : 'EL RETO DEL MES · SEMANA ${_toca.dia.semana} DE 4',
-                  language: lang,
-                  audioService: widget.audioService,
-                  lectura: hogar.microcuento == null
-                      ? null
-                      : BotonMicrocuento(
+                    child: InkWell(
+                      borderRadius: BorderRadius.circular(14),
+                      onTap: () => Navigator.of(context).push(RutaLua(
+                        de: context,
+                        builder: (_) => CodigoDaEscolaScreen(
                           repository: widget.repository,
-                          cursoId: widget.cursoId,
-                          mesCalendario: _toca.dia.mesCalendario,
-                          modo: ModoMicrocuento.casa,
                           language: lang,
                           onLanguageChanged: widget.onLanguageChanged,
                           audioService: widget.audioService,
                         ),
-                ),
-                const SizedBox(height: 14),
-              ],
-              TarxetaCurricular(
-                cursoId: widget.cursoId,
-                mesCalendario: _toca.dia.mesCalendario,
-                language: lang,
-                audioService: widget.audioService,
-                enCasa: true,
-                conAccesos: false,
-              ),
-              PasosDoMes(
-                cursoId: widget.cursoId,
-                mesCalendario: _toca.dia.mesCalendario,
-                semana: _toca.dia.semana,
-                language: lang,
-                audioService: widget.audioService,
-                enCasa: true,
-              ),
-              if (_conto case final conto?) ...[
-                const SizedBox(height: 6),
-                _FilaConto(
-                  conto: conto,
-                  language: lang,
-                  onTap: () => _abrirConto(conto),
-                ),
-              ],
-              if (_steam case final steam?) ...[
-                const SizedBox(height: 14),
-                FilaSteamDoDia(
-                  unidade: steam,
-                  audiencia: SteamAudiencia.hogar,
-                  language: lang,
-                  onTap: () => abrirSesionSteam(
-                    context,
-                    unidade: steam,
-                    audiencia: SteamAudiencia.hogar,
-                    language: lang,
-                    audioService: widget.audioService,
-                    onLanguageChanged: widget.onLanguageChanged,
+                      )),
+                      child: Padding(
+                        padding: const EdgeInsets.all(14),
+                        child: Row(
+                          children: [
+                            Icon(Icons.pin_rounded, color: context.acento),
+                            const SizedBox(width: 12),
+                            Expanded(
+                              child: Text(
+                                lang == AppLanguage.gl
+                                    ? 'Tes un código da escola?'
+                                    : '¿Tienes un código de la escuela?',
+                                style: const TextStyle(
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.w700,
+                                  color: AppTheme.textPrimary,
+                                ),
+                              ),
+                            ),
+                            Icon(Icons.chevron_right_rounded,
+                                color: context.acento),
+                          ],
+                        ),
+                      ),
+                    ),
                   ),
-                ),
-              ],
-            ],
-            const SizedBox(height: 18),
-            ListaDePracticaCard(
-              store: widget.store,
-              perfil: 'hogar',
-              dia: widget.agora ?? DateTime.now(),
-              language: lang,
+                  const SizedBox(height: 14),
+                  if (_cargando)
+                    Container(
+                      key: const Key('hoxe_cargando'),
+                      height: 260,
+                      decoration: BoxDecoration(
+                        color: context.acentoTint,
+                        borderRadius: BorderRadius.circular(20),
+                      ),
+                    )
+                  else ...[
+                    if (_dia == null)
+                      Container(
+                        key: const Key('hoxe_sen_xogo'),
+                        padding: const EdgeInsets.all(18),
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(20),
+                          border: Border.all(color: AppTheme.border),
+                        ),
+                        child: Text(
+                          lang == AppLanguage.gl
+                              ? 'O xogo deste día non está no calendario. Mira o Calendario ou Explorar.'
+                              : 'El juego de este día no está en el calendario. Mira el Calendario o Explorar.',
+                          style: const TextStyle(
+                            fontSize: 15.5,
+                            color: AppTheme.textSecondary,
+                            height: 1.4,
+                          ),
+                        ),
+                      ),
+                    if (_dia case final dia?)
+                      _TarxetaXogo(
+                        dia: dia,
+                        language: lang,
+                        rotulo: _toca.eHoxe
+                            ? (lang == AppLanguage.gl
+                                ? 'O XOGO DE HOXE · 3 MIN'
+                                : 'EL JUEGO DE HOY · 3 MIN')
+                            : (lang == AppLanguage.gl
+                                ? 'O XOGO DO ${_diaQueToca(lang).toUpperCase()} · 3 MIN'
+                                : 'EL JUEGO DEL ${_diaQueToca(lang).toUpperCase()} · 3 MIN'),
+                        feito: _toca.eHoxe && _feitoHoxe,
+                        racha: widget.store.rachaActual,
+                        onComezar: _abrirXogo,
+                      ),
+                    if (plan != null && curso != null) ...[
+                      const SizedBox(height: 14),
+                      _TarxetaPalabras(
+                        plan: plan,
+                        modeloDoDia: curso.modelo.dia(_toca.dia.dia),
+                        nucleo: switch (widget.repository.unidadeDoMesSync(
+                            widget.cursoId, _toca.dia.mesCalendario)) {
+                          final u? => widget.repository.nucleoSync(u),
+                          null => const <PezaDaUnidade>[],
+                        },
+                        language: lang,
+                        audioService: widget.audioService,
+                      ),
+                    ],
+                    if (ponte != null && dadasPorSabidas.isNotEmpty) ...[
+                      const SizedBox(height: 14),
+                      _FilaPonteAoDia(
+                        ponte: ponte,
+                        cantas: dadasPorSabidas.length,
+                        mes: _toca.dia.mesCalendario,
+                        language: lang,
+                        onTap: () => _abrirPonteAoDia(ponte),
+                      ),
+                    ],
+                    if (widget.repository
+                            .unidadeDoMesSync(
+                                widget.cursoId, _toca.dia.mesCalendario)
+                            ?.hogar
+                        case final hogar?) ...[
+                      RetoDaSemana(
+                        hogar: hogar,
+                        semana: _toca.dia.semana,
+                        rotulo: lang == AppLanguage.gl
+                            ? 'O RETO DO MES · SEMANA ${_toca.dia.semana} DE 4'
+                            : 'EL RETO DEL MES · SEMANA ${_toca.dia.semana} DE 4',
+                        language: lang,
+                        audioService: widget.audioService,
+                        lectura: hogar.microcuento == null
+                            ? null
+                            : BotonMicrocuento(
+                                repository: widget.repository,
+                                cursoId: widget.cursoId,
+                                mesCalendario: _toca.dia.mesCalendario,
+                                modo: ModoMicrocuento.casa,
+                                language: lang,
+                                onLanguageChanged: widget.onLanguageChanged,
+                                audioService: widget.audioService,
+                              ),
+                      ),
+                      const SizedBox(height: 14),
+                    ],
+                    TarxetaCurricular(
+                      cursoId: widget.cursoId,
+                      mesCalendario: _toca.dia.mesCalendario,
+                      language: lang,
+                      audioService: widget.audioService,
+                      enCasa: true,
+                      conAccesos: false,
+                    ),
+                    PasosDoMes(
+                      cursoId: widget.cursoId,
+                      mesCalendario: _toca.dia.mesCalendario,
+                      semana: _toca.dia.semana,
+                      language: lang,
+                      audioService: widget.audioService,
+                      enCasa: true,
+                    ),
+                    if (_conto case final conto?) ...[
+                      const SizedBox(height: 6),
+                      _FilaConto(
+                        conto: conto,
+                        language: lang,
+                        onTap: () => _abrirConto(conto),
+                      ),
+                    ],
+                    if (_steam case final steam?) ...[
+                      const SizedBox(height: 14),
+                      FilaSteamDoDia(
+                        unidade: steam,
+                        audiencia: SteamAudiencia.hogar,
+                        language: lang,
+                        onTap: () => abrirSesionSteam(
+                          context,
+                          unidade: steam,
+                          audiencia: SteamAudiencia.hogar,
+                          language: lang,
+                          audioService: widget.audioService,
+                          onLanguageChanged: widget.onLanguageChanged,
+                        ),
+                      ),
+                    ],
+                  ],
+                  const SizedBox(height: 18),
+                  ListaDePracticaCard(
+                    store: widget.store,
+                    perfil: 'hogar',
+                    dia: widget.agora ?? DateTime.now(),
+                    language: lang,
+                  ),
+                ],
+              ),
             ),
           ],
         ),

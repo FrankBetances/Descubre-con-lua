@@ -849,258 +849,6 @@
  "ruta": {
   "curso_0_2": {
    "9": {
-    "punto": 10,
-    "frases": [
-     {
-      "en": "Clap!",
-      "gl": "Aplaude!",
-      "es": "¡Aplaude!"
-     },
-     {
-      "en": "Splash!",
-      "gl": "Chapuza!",
-      "es": "¡Chapotea!"
-     },
-     {
-      "en": "Come up!",
-      "gl": "Arriba!",
-      "es": "¡Arriba!"
-     },
-     {
-      "en": "Wave hello!",
-      "gl": "Di ola coa man!",
-      "es": "¡Di hola con la mano!"
-     }
-    ]
-   },
-   "10": {
-    "punto": 10,
-    "frases": [
-     {
-      "en": "Touch your head!",
-      "gl": "Toca a cabeza!",
-      "es": "¡Tócate la cabeza!"
-     },
-     {
-      "en": "Wiggle your toes!",
-      "gl": "Move os dedos dos pés!",
-      "es": "¡Mueve los dedos de los pies!"
-     },
-     {
-      "en": "Stop!",
-      "gl": "Para!",
-      "es": "¡Para!"
-     },
-     {
-      "en": "Touch your tummy!",
-      "gl": "Toca a barriguiña!",
-      "es": "¡Tócate la barriguita!"
-     }
-    ]
-   },
-   "11": {
-    "punto": 2,
-    "frases": [
-     {
-      "en": "A leaf.",
-      "gl": "Unha folla.",
-      "es": "Una hoja."
-     },
-     {
-      "en": "The leaf is falling.",
-      "gl": "A folla está caendo.",
-      "es": "La hoja se está cayendo."
-     },
-     {
-      "en": "Leaves!",
-      "gl": "Follas!",
-      "es": "¡Hojas!"
-     },
-     {
-      "en": "A stone.",
-      "gl": "Unha pedra.",
-      "es": "Una piedra."
-     }
-    ]
-   },
-   "12": {
-    "punto": 3,
-    "frases": [
-     {
-      "en": "This bell.",
-      "gl": "Esta campá.",
-      "es": "Esta campana."
-     },
-     {
-      "en": "That bell is big.",
-      "gl": "Esa campá é grande.",
-      "es": "Esa campana es grande."
-     },
-     {
-      "en": "This hug is warm.",
-      "gl": "Esta aperta é quentiña.",
-      "es": "Este abrazo es calentito."
-     },
-     {
-      "en": "That bell is small.",
-      "gl": "Esa campá é pequena.",
-      "es": "Esa campana es pequeña."
-     }
-    ]
-   },
-   "1": {
-    "punto": 3,
-    "frases": [
-     {
-      "en": "My hat.",
-      "gl": "O meu gorro.",
-      "es": "Mi gorro."
-     },
-     {
-      "en": "Your hat.",
-      "gl": "O teu gorro.",
-      "es": "Tu gorro."
-     },
-     {
-      "en": "My mittens.",
-      "gl": "As miñas luvas.",
-      "es": "Mis manoplas."
-     },
-     {
-      "en": "Your apple.",
-      "gl": "A túa mazá.",
-      "es": "Tu manzana."
-     }
-    ]
-   },
-   "2": {
-    "punto": 2,
-    "frases": [
-     {
-      "en": "A frog.",
-      "gl": "Unha ra.",
-      "es": "Una rana."
-     },
-     {
-      "en": "Two cats.",
-      "gl": "Dous gatos.",
-      "es": "Dos gatos."
-     },
-     {
-      "en": "The bird says tweet.",
-      "gl": "O paxaro di chío.",
-      "es": "El pájaro dice pío."
-     },
-     {
-      "en": "Frogs jump!",
-      "gl": "As ras saltan!",
-      "es": "¡Las ranas saltan!"
-     }
-    ]
-   },
-   "3": {
-    "punto": 7,
-    "frases": [
-     {
-      "en": "The soap is in the water.",
-      "gl": "O xabón está na auga.",
-      "es": "El jabón está en el agua."
-     },
-     {
-      "en": "The towel is on the chair.",
-      "gl": "A toalla está na cadeira.",
-      "es": "La toalla está en la silla."
-     },
-     {
-      "en": "The circle is on the floor.",
-      "gl": "O círculo está no chan.",
-      "es": "El círculo está en el suelo."
-     },
-     {
-      "en": "The ball is in the box.",
-      "gl": "A pelota está na caixa.",
-      "es": "La pelota está en la caja."
-     }
-    ]
-   },
-   "4": {
-    "punto": 7,
-    "frases": [
-     {
-      "en": "There is a drop!",
-      "gl": "Hai unha pinga!",
-      "es": "¡Hay una gota!"
-     },
-     {
-      "en": "There is the sun!",
-      "gl": "Aí está o sol!",
-      "es": "¡Ahí está el sol!"
-     },
-     {
-      "en": "There are drops on the window.",
-      "gl": "Hai pingas na ventá.",
-      "es": "Hay gotas en la ventana."
-     },
-     {
-      "en": "There is rain!",
-      "gl": "Hai chuvia!",
-      "es": "¡Hay lluvia!"
-     }
-    ]
-   },
-   "5": {
-    "punto": 3,
-    "frases": [
-     {
-      "en": "This is my soap.",
-      "gl": "Este é o meu xabón.",
-      "es": "Este es mi jabón."
-     },
-     {
-      "en": "This is your towel.",
-      "gl": "Esta é a túa toalla.",
-      "es": "Esta es tu toalla."
-     },
-     {
-      "en": "My clean hands!",
-      "gl": "As miñas mans limpas!",
-      "es": "¡Mis manos limpias!"
-     },
-     {
-      "en": "Your dog.",
-      "gl": "O teu can.",
-      "es": "Tu perro."
-     }
-    ]
-   },
-   "6": {
-    "punto": 7,
-    "frases": [
-     {
-      "en": "The fish is in the sea.",
-      "gl": "O peixe está no mar.",
-      "es": "El pez está en el mar."
-     },
-     {
-      "en": "The ball is in the box.",
-      "gl": "A pelota está na caixa.",
-      "es": "La pelota está en la caja."
-     },
-     {
-      "en": "There is a wave!",
-      "gl": "Hai unha onda!",
-      "es": "¡Hay una ola!"
-     },
-     {
-      "en": "The boat is on the water.",
-      "gl": "O barco está na auga.",
-      "es": "El barco está en el agua."
-     }
-    ]
-   }
-  },
-  "curso_2_3": {
-   "9": {
     "punto": 1,
     "frases": [
      {
@@ -1126,27 +874,27 @@
     ]
    },
    "10": {
-    "punto": 10,
+    "punto": 1,
     "frases": [
      {
-      "en": "Touch your knees!",
-      "gl": "Toca os xeonllos!",
-      "es": "¡Tócate las rodillas!"
+      "en": "I am happy.",
+      "gl": "Estou contento.",
+      "es": "Estoy contento."
      },
      {
-      "en": "Shake your hands!",
-      "gl": "Axita as mans!",
-      "es": "¡Sacude las manos!"
+      "en": "Is it your tummy? Yes, it is.",
+      "gl": "É a túa barriga? Si.",
+      "es": "¿Es tu barriga? Sí."
      },
      {
-      "en": "Freeze!",
-      "gl": "Estátua!",
-      "es": "¡Estatua!"
+      "en": "It is your head.",
+      "gl": "É a túa cabeza.",
+      "es": "Es tu cabeza."
      },
      {
-      "en": "Dance and freeze!",
-      "gl": "Baila e queda quieto!",
-      "es": "¡Baila y quédate quieto!"
+      "en": "You are big!",
+      "gl": "Es grande!",
+      "es": "¡Eres grande!"
      }
     ]
    },
@@ -1154,99 +902,99 @@
     "punto": 2,
     "frases": [
      {
-      "en": "A leaf, two leaves.",
-      "gl": "Unha folla, dúas follas.",
-      "es": "Una hoja, dos hojas."
+      "en": "A leaf.",
+      "gl": "Unha folla.",
+      "es": "Una hoja."
      },
      {
-      "en": "The leaves are crunchy.",
-      "gl": "As follas fan cruc.",
-      "es": "Las hojas crujen."
+      "en": "The leaves are falling.",
+      "gl": "As follas caen.",
+      "es": "Las hojas caen."
      },
      {
-      "en": "Three stones.",
-      "gl": "Tres pedras.",
-      "es": "Tres piedras."
+      "en": "Two stones.",
+      "gl": "Dúas pedras.",
+      "es": "Dos piedras."
      },
      {
-      "en": "The wind is blowing.",
-      "gl": "Sopra o vento.",
-      "es": "Sopla el viento."
+      "en": "A big leaf.",
+      "gl": "Unha folla grande.",
+      "es": "Una hoja grande."
      }
     ]
    },
    "12": {
-    "punto": 1,
+    "punto": 2,
     "frases": [
      {
-      "en": "It is loud!",
-      "gl": "Soa forte!",
-      "es": "¡Suena fuerte!"
+      "en": "A bell.",
+      "gl": "Unha campá.",
+      "es": "Una campana."
      },
      {
-      "en": "It isn't loud. It is quiet.",
-      "gl": "Non soa forte. Soa baixiño.",
-      "es": "No suena fuerte. Suena bajito."
+      "en": "The bells ring.",
+      "gl": "As campás soan.",
+      "es": "Las campanas suenan."
      },
      {
-      "en": "Is it big?",
-      "gl": "É grande?",
-      "es": "¿Es grande?"
+      "en": "A big hug.",
+      "gl": "Unha aperta grande.",
+      "es": "Un abrazo grande."
      },
      {
-      "en": "The baby is sleeping. Shh!",
-      "gl": "O bebé está durmindo. Shh!",
-      "es": "El bebé está durmiendo. ¡Shh!"
+      "en": "Two small bells.",
+      "gl": "Dúas campás pequenas.",
+      "es": "Dos campanas pequeñas."
      }
     ]
    },
    "1": {
-    "punto": 3,
+    "punto": 2,
     "frases": [
      {
-      "en": "My coat.",
-      "gl": "O meu abrigo.",
-      "es": "Mi abrigo."
+      "en": "A hat.",
+      "gl": "Un gorro.",
+      "es": "Un gorro."
      },
      {
-      "en": "Your boots.",
-      "gl": "As túas botas.",
-      "es": "Tus botas."
+      "en": "The mittens.",
+      "gl": "As luvas.",
+      "es": "Las manoplas."
      },
      {
-      "en": "This is my apple.",
-      "gl": "Esta é a miña mazá.",
-      "es": "Esta es mi manzana."
+      "en": "An apple.",
+      "gl": "Unha mazá.",
+      "es": "Una manzana."
      },
      {
-      "en": "Mum's coat.",
-      "gl": "O abrigo de mamá.",
-      "es": "El abrigo de mamá."
+      "en": "Two apples.",
+      "gl": "Dúas mazás.",
+      "es": "Dos manzanas."
      }
     ]
    },
    "2": {
-    "punto": 10,
+    "punto": 3,
     "frases": [
      {
-      "en": "I can fly like a bird!",
-      "gl": "Podo voar coma un paxaro!",
-      "es": "¡Puedo volar como un pájaro!"
+      "en": "This frog.",
+      "gl": "Esta ra.",
+      "es": "Esta rana."
      },
      {
-      "en": "Can you stomp like a bear?",
-      "gl": "Podes pisar forte coma un oso?",
-      "es": "¿Puedes pisar fuerte como un oso?"
+      "en": "That cat.",
+      "gl": "Ese gato.",
+      "es": "Ese gato."
      },
      {
-      "en": "I can't fly!",
-      "gl": "Non podo voar!",
-      "es": "¡No puedo volar!"
+      "en": "This is my bird.",
+      "gl": "Este é o meu paxaro.",
+      "es": "Este es mi pájaro."
      },
      {
-      "en": "Flap your wings!",
-      "gl": "Bate as ás!",
-      "es": "¡Bate las alas!"
+      "en": "Your frog jumps!",
+      "gl": "A túa ra salta!",
+      "es": "¡Tu rana salta!"
      }
     ]
    },
@@ -1254,24 +1002,276 @@
     "punto": 3,
     "frases": [
      {
-      "en": "This circle is red.",
-      "gl": "Este círculo é vermello.",
-      "es": "Este círculo es rojo."
+      "en": "This circle is yellow.",
+      "gl": "Este círculo é amarelo.",
+      "es": "Este círculo es amarillo."
      },
      {
-      "en": "That card is red.",
-      "gl": "Esa tarxeta é vermella.",
-      "es": "Esa tarjeta es roja."
+      "en": "That is my soap.",
+      "gl": "Ese é o meu xabón.",
+      "es": "Ese es mi jabón."
      },
      {
-      "en": "These tomatoes are red.",
-      "gl": "Estes tomates son vermellos.",
-      "es": "Estos tomates son rojos."
+      "en": "Your towel.",
+      "gl": "A túa toalla.",
+      "es": "Tu toalla."
      },
      {
-      "en": "My towel.",
-      "gl": "A miña toalla.",
-      "es": "Mi toalla."
+      "en": "These are my hands.",
+      "gl": "Estas son as miñas mans.",
+      "es": "Estas son mis manos."
+     }
+    ]
+   },
+   "4": {
+    "punto": 4,
+    "frases": [
+     {
+      "en": "The rain falls.",
+      "gl": "A chuvia cae.",
+      "es": "La lluvia cae."
+     },
+     {
+      "en": "The sun comes up.",
+      "gl": "Sae o sol.",
+      "es": "Sale el sol."
+     },
+     {
+      "en": "We clap.",
+      "gl": "Aplaudimos.",
+      "es": "Aplaudimos."
+     },
+     {
+      "en": "It drips.",
+      "gl": "Pinga.",
+      "es": "Gotea."
+     }
+    ]
+   },
+   "5": {
+    "punto": 4,
+    "frases": [
+     {
+      "en": "We wash our hands.",
+      "gl": "Lavamos as mans.",
+      "es": "Nos lavamos las manos."
+     },
+     {
+      "en": "The dog runs.",
+      "gl": "O can corre.",
+      "es": "El perro corre."
+     },
+     {
+      "en": "The cat sleeps.",
+      "gl": "O gato dorme.",
+      "es": "El gato duerme."
+     },
+     {
+      "en": "I dry my toes.",
+      "gl": "Seco os dedos dos pés.",
+      "es": "Me seco los dedos de los pies."
+     }
+    ]
+   },
+   "6": {
+    "punto": 4,
+    "frases": [
+     {
+      "en": "The waves go up.",
+      "gl": "As ondas soben.",
+      "es": "Las olas suben."
+     },
+     {
+      "en": "The fish swims.",
+      "gl": "O peixe nada.",
+      "es": "El pez nada."
+     },
+     {
+      "en": "We roll the ball.",
+      "gl": "Facemos rodar a pelota.",
+      "es": "Hacemos rodar la pelota."
+     },
+     {
+      "en": "The sea moves.",
+      "gl": "O mar móvese.",
+      "es": "El mar se mueve."
+     }
+    ]
+   }
+  },
+  "curso_2_3": {
+   "9": {
+    "punto": 5,
+    "frases": [
+     {
+      "en": "We always say hello.",
+      "gl": "Sempre dicimos ola.",
+      "es": "Siempre decimos hola."
+     },
+     {
+      "en": "We sometimes splash.",
+      "gl": "Ás veces chapuzamos.",
+      "es": "A veces chapoteamos."
+     },
+     {
+      "en": "We never push our friends.",
+      "gl": "Nunca empurramos aos amigos.",
+      "es": "Nunca empujamos a los amigos."
+     },
+     {
+      "en": "We usually sit in a circle.",
+      "gl": "Normalmente sentamos en círculo.",
+      "es": "Normalmente nos sentamos en círculo."
+     }
+    ]
+   },
+   "10": {
+    "punto": 5,
+    "frases": [
+     {
+      "en": "We always touch our knees.",
+      "gl": "Sempre tocamos os xeonllos.",
+      "es": "Siempre nos tocamos las rodillas."
+     },
+     {
+      "en": "We often dance.",
+      "gl": "Bailamos a miúdo.",
+      "es": "Bailamos a menudo."
+     },
+     {
+      "en": "We sometimes freeze.",
+      "gl": "Ás veces quedamos quietos.",
+      "es": "A veces nos quedamos quietos."
+     },
+     {
+      "en": "We usually shake our hands.",
+      "gl": "Normalmente axitamos as mans.",
+      "es": "Normalmente sacudimos las manos."
+     }
+    ]
+   },
+   "11": {
+    "punto": 6,
+    "frases": [
+     {
+      "en": "Some leaves.",
+      "gl": "Unhas follas.",
+      "es": "Unas hojas."
+     },
+     {
+      "en": "A lot of stones.",
+      "gl": "Moitas pedras.",
+      "es": "Muchas piedras."
+     },
+     {
+      "en": "More leaves, please!",
+      "gl": "Máis follas, por favor!",
+      "es": "¡Más hojas, por favor!"
+     },
+     {
+      "en": "How many stones?",
+      "gl": "Cantas pedras?",
+      "es": "¿Cuántas piedras?"
+     }
+    ]
+   },
+   "12": {
+    "punto": 6,
+    "frases": [
+     {
+      "en": "Some bells.",
+      "gl": "Unhas campás.",
+      "es": "Unas campanas."
+     },
+     {
+      "en": "A lot of noise!",
+      "gl": "Moito ruído!",
+      "es": "¡Mucho ruido!"
+     },
+     {
+      "en": "More quiet, please.",
+      "gl": "Máis silencio, por favor.",
+      "es": "Más silencio, por favor."
+     },
+     {
+      "en": "Many bells.",
+      "gl": "Moitas campás.",
+      "es": "Muchas campanas."
+     }
+    ]
+   },
+   "1": {
+    "punto": 6,
+    "frases": [
+     {
+      "en": "Some bread.",
+      "gl": "Un pouco de pan.",
+      "es": "Un poco de pan."
+     },
+     {
+      "en": "Many apples.",
+      "gl": "Moitas mazás.",
+      "es": "Muchas manzanas."
+     },
+     {
+      "en": "Some puddles.",
+      "gl": "Unhas pozas.",
+      "es": "Unos charcos."
+     },
+     {
+      "en": "A lot of boots.",
+      "gl": "Moitas botas.",
+      "es": "Muchas botas."
+     }
+    ]
+   },
+   "2": {
+    "punto": 7,
+    "frases": [
+     {
+      "en": "There is a bird in the tree.",
+      "gl": "Hai un paxaro na árbore.",
+      "es": "Hay un pájaro en el árbol."
+     },
+     {
+      "en": "There are two bears.",
+      "gl": "Hai dous osos.",
+      "es": "Hay dos osos."
+     },
+     {
+      "en": "The bird is on the branch.",
+      "gl": "O paxaro está na póla.",
+      "es": "El pájaro está en la rama."
+     },
+     {
+      "en": "The bear is behind the tree.",
+      "gl": "O oso está detrás da árbore.",
+      "es": "El oso está detrás del árbol."
+     }
+    ]
+   },
+   "3": {
+    "punto": 7,
+    "frases": [
+     {
+      "en": "There is a red circle on the floor.",
+      "gl": "Hai un círculo vermello no chan.",
+      "es": "Hay un círculo rojo en el suelo."
+     },
+     {
+      "en": "The card is under the chair.",
+      "gl": "A tarxeta está debaixo da cadeira.",
+      "es": "La tarjeta está debajo de la silla."
+     },
+     {
+      "en": "The tomato is in the box.",
+      "gl": "O tomate está na caixa.",
+      "es": "El tomate está en la caja."
+     },
+     {
+      "en": "There are two circles.",
+      "gl": "Hai dous círculos.",
+      "es": "Hay dos círculos."
      }
     ]
    },
@@ -1289,116 +1289,116 @@
       "es": "¿Qué es? ¡Una semilla!"
      },
      {
-      "en": "Where are the flowers?",
-      "gl": "Onde están as flores?",
-      "es": "¿Dónde están las flores?"
+      "en": "Who has the flower?",
+      "gl": "Quen ten a flor?",
+      "es": "¿Quién tiene la flor?"
      },
      {
-      "en": "What is soft?",
-      "gl": "Que é suave?",
-      "es": "¿Qué es suave?"
+      "en": "How big is the flower?",
+      "gl": "Que grande é a flor?",
+      "es": "¿Qué tamaño tiene la flor?"
      }
     ]
    },
    "5": {
-    "punto": 6,
+    "punto": 8,
     "frases": [
      {
-      "en": "Some soap.",
-      "gl": "Un pouco de xabón.",
-      "es": "Un poco de jabón."
+      "en": "What do we wash? Our face!",
+      "gl": "Que lavamos? A cara!",
+      "es": "¿Qué lavamos? ¡La cara!"
      },
      {
-      "en": "More water!",
-      "gl": "Máis auga!",
-      "es": "¡Más agua!"
+      "en": "Where is the soap?",
+      "gl": "Onde está o xabón?",
+      "es": "¿Dónde está el jabón?"
      },
      {
-      "en": "A lot of bubbles!",
-      "gl": "Moitas burbullas!",
-      "es": "¡Muchas burbujas!"
+      "en": "Who is wet?",
+      "gl": "Quen está mollado?",
+      "es": "¿Quién está mojado?"
      },
      {
-      "en": "Some water on your face.",
-      "gl": "Un pouco de auga na cara.",
-      "es": "Un poco de agua en la cara."
+      "en": "Which towel is yours?",
+      "gl": "Cal é a túa toalla?",
+      "es": "¿Cuál es tu toalla?"
      }
     ]
    },
    "6": {
-    "punto": 7,
+    "punto": 8,
     "frases": [
      {
-      "en": "The fish is under the sea.",
-      "gl": "O peixe está debaixo do mar.",
-      "es": "El pez está debajo del mar."
+      "en": "Where is the fish?",
+      "gl": "Onde está o peixe?",
+      "es": "¿Dónde está el pez?"
      },
      {
-      "en": "The ball is in the box.",
-      "gl": "A pelota está na caixa.",
-      "es": "La pelota está en la caja."
+      "en": "What is in the box?",
+      "gl": "Que hai na caixa?",
+      "es": "¿Qué hay en la caja?"
      },
      {
-      "en": "The box is next to the ball.",
-      "gl": "A caixa está ao lado da pelota.",
-      "es": "La caja está al lado de la pelota."
+      "en": "How big are the waves?",
+      "gl": "Que grandes son as ondas?",
+      "es": "¿Qué tamaño tienen las olas?"
      },
      {
-      "en": "There are big waves!",
-      "gl": "Hai ondas grandes!",
-      "es": "¡Hay olas grandes!"
+      "en": "Who has the ball?",
+      "gl": "Quen ten a pelota?",
+      "es": "¿Quién tiene la pelota?"
      }
     ]
    }
   },
   "curso_3_4": {
    "9": {
-    "punto": 4,
+    "punto": 9,
     "frases": [
      {
-      "en": "We sit in a circle.",
-      "gl": "Sentamos en círculo.",
-      "es": "Nos sentamos en círculo."
+      "en": "We sit in the circle in the morning.",
+      "gl": "Pola mañá sentamos no círculo.",
+      "es": "Por la mañana nos sentamos en el círculo."
      },
      {
-      "en": "We clap our hands.",
-      "gl": "Aplaudimos.",
-      "es": "Aplaudimos."
+      "en": "We clap at nine o'clock.",
+      "gl": "Aplaudimos ás nove.",
+      "es": "Aplaudimos a las nueve."
      },
      {
-      "en": "I say hello.",
-      "gl": "Eu digo ola.",
-      "es": "Yo digo hola."
+      "en": "On Monday we play trains.",
+      "gl": "O luns xogamos aos trens.",
+      "es": "El lunes jugamos a los trenes."
      },
      {
-      "en": "The train goes round.",
-      "gl": "O tren dá voltas.",
-      "es": "El tren da vueltas."
+      "en": "In the afternoon we sing.",
+      "gl": "Pola tarde cantamos.",
+      "es": "Por la tarde cantamos."
      }
     ]
    },
    "10": {
-    "punto": 7,
+    "punto": 9,
     "frases": [
      {
-      "en": "The leaf is on the floor.",
-      "gl": "A folla está no chan.",
-      "es": "La hoja está en el suelo."
+      "en": "In autumn the leaves fall.",
+      "gl": "No outono caen as follas.",
+      "es": "En otoño caen las hojas."
      },
      {
-      "en": "Put the leaf under the cloth.",
-      "gl": "Pon a folla debaixo da tela.",
-      "es": "Pon la hoja debajo de la tela."
+      "en": "On Friday we blow the leaves.",
+      "gl": "O venres sopramos as follas.",
+      "es": "El viernes soplamos las hojas."
      },
      {
-      "en": "The leaf is in my hand.",
-      "gl": "A folla está na miña man.",
-      "es": "La hoja está en mi mano."
+      "en": "At night the wind blows.",
+      "gl": "Pola noite sopra o vento.",
+      "es": "Por la noche sopla el viento."
      },
      {
-      "en": "Your turn!",
-      "gl": "Tócache a ti!",
-      "es": "¡Te toca!"
+      "en": "In October we spin like leaves.",
+      "gl": "En outubro xiramos coma follas.",
+      "es": "En octubre giramos como hojas."
      }
     ]
    },
@@ -1406,9 +1406,9 @@
     "punto": 10,
     "frases": [
      {
-      "en": "I can jump!",
-      "gl": "Podo saltar!",
-      "es": "¡Puedo saltar!"
+      "en": "Jump like a chestnut!",
+      "gl": "Salta coma unha castaña!",
+      "es": "¡Salta como una castaña!"
      },
      {
       "en": "Can you help me, please?",
@@ -1416,9 +1416,9 @@
       "es": "¿Me puedes ayudar, por favor?"
      },
      {
-      "en": "Roll the pumpkin!",
-      "gl": "Fai rodar a cabaza!",
-      "es": "¡Haz rodar la calabaza!"
+      "en": "I can roll the pumpkin.",
+      "gl": "Podo facer rodar a cabaza.",
+      "es": "Puedo hacer rodar la calabaza."
      },
      {
       "en": "I can't jump so high.",
@@ -1428,304 +1428,304 @@
     ]
    },
    "12": {
-    "punto": 5,
+    "punto": 10,
     "frases": [
      {
-      "en": "We always put on our boots.",
-      "gl": "Sempre poñemos as botas.",
-      "es": "Siempre nos ponemos las botas."
+      "en": "Put on your boots!",
+      "gl": "Pon as botas!",
+      "es": "¡Ponte las botas!"
      },
      {
-      "en": "It sometimes snows.",
-      "gl": "Ás veces neva.",
-      "es": "A veces nieva."
+      "en": "Can you stomp in the snow?",
+      "gl": "Podes pisar forte na neve?",
+      "es": "¿Puedes pisar fuerte en la nieve?"
      },
      {
-      "en": "We never stomp on a friend.",
-      "gl": "Nunca pisamos a un amigo.",
-      "es": "Nunca pisamos a un amigo."
+      "en": "Walk on tiptoe!",
+      "gl": "Camiña de puntillas!",
+      "es": "¡Anda de puntillas!"
      },
      {
-      "en": "We usually walk on tiptoe.",
-      "gl": "Normalmente camiñamos de puntillas.",
-      "es": "Normalmente andamos de puntillas."
+      "en": "I can't find my boot.",
+      "gl": "Non atopo a miña bota.",
+      "es": "No encuentro mi bota."
      }
     ]
    },
    "1": {
-    "punto": 11,
+    "punto": 10,
     "frases": [
      {
-      "en": "It is raining.",
-      "gl": "Está chovendo.",
-      "es": "Está lloviendo."
+      "en": "Open your umbrella!",
+      "gl": "Abre o paraugas!",
+      "es": "¡Abre el paraguas!"
      },
      {
-      "en": "We are jumping over the puddle.",
-      "gl": "Estamos saltando o charco.",
-      "es": "Estamos saltando el charco."
+      "en": "Jump over the puddle!",
+      "gl": "Salta a poza!",
+      "es": "¡Salta el charco!"
      },
      {
-      "en": "I am opening my umbrella.",
-      "gl": "Estou abrindo o paraugas.",
-      "es": "Estoy abriendo el paraguas."
+      "en": "Can you tap like the rain?",
+      "gl": "Podes petar coma a chuvia?",
+      "es": "¿Puedes dar golpecitos como la lluvia?"
      },
      {
-      "en": "The rain is falling fast.",
-      "gl": "A chuvia está caendo rápido.",
-      "es": "La lluvia está cayendo rápido."
+      "en": "I can jump!",
+      "gl": "Podo saltar!",
+      "es": "¡Puedo saltar!"
      }
     ]
    },
    "2": {
-    "punto": 6,
+    "punto": 11,
     "frases": [
      {
-      "en": "Some juice, please.",
-      "gl": "Un pouco de zume, por favor.",
-      "es": "Un poco de zumo, por favor."
+      "en": "I am shaking my bells.",
+      "gl": "Estou axitando as campás.",
+      "es": "Estoy sacudiendo las campanas."
      },
      {
-      "en": "More bread!",
-      "gl": "Máis pan!",
-      "es": "¡Más pan!"
+      "en": "The lion is roaring.",
+      "gl": "O león está ruxindo.",
+      "es": "El león está rugiendo."
      },
      {
-      "en": "A full plate.",
-      "gl": "Un prato cheo.",
-      "es": "Un plato lleno."
+      "en": "We are playing quietly.",
+      "gl": "Estamos xogando en silencio.",
+      "es": "Estamos jugando en silencio."
      },
      {
-      "en": "A lot of noise!",
-      "gl": "Moito ruído!",
-      "es": "¡Mucho ruido!"
+      "en": "You are eating with a spoon.",
+      "gl": "Estás comendo coa culler.",
+      "es": "Estás comiendo con la cuchara."
      }
     ]
    },
    "3": {
-    "punto": 4,
+    "punto": 11,
     "frases": [
      {
-      "en": "The seed grows.",
-      "gl": "A semente medra.",
-      "es": "La semilla crece."
+      "en": "The seed is growing.",
+      "gl": "A semente está medrando.",
+      "es": "La semilla está creciendo."
      },
      {
-      "en": "The sunflower grows tall.",
-      "gl": "O xirasol medra alto.",
-      "es": "El girasol crece alto."
+      "en": "We are digging the soil.",
+      "gl": "Estamos cavando a terra.",
+      "es": "Estamos cavando la tierra."
      },
      {
-      "en": "We dig the soil.",
-      "gl": "Cavamos a terra.",
-      "es": "Cavamos la tierra."
+      "en": "The sunflower is growing tall.",
+      "gl": "O xirasol está medrando alto.",
+      "es": "El girasol está creciendo alto."
      },
      {
-      "en": "Does the seed need water?",
-      "gl": "A semente precisa auga?",
-      "es": "¿La semilla necesita agua?"
+      "en": "I am curling up like a seed.",
+      "gl": "Estou encollido coma unha semente.",
+      "es": "Estoy encogido como una semilla."
      }
     ]
    },
    "4": {
-    "punto": 8,
+    "punto": 12,
     "frases": [
      {
-      "en": "Who is it? A horse!",
-      "gl": "Quen é? Un cabalo!",
-      "es": "¿Quién es? ¡Un caballo!"
+      "en": "The horse was in the field.",
+      "gl": "O cabalo estaba no campo.",
+      "es": "El caballo estaba en el campo."
      },
      {
-      "en": "What does the cow say?",
-      "gl": "Que di a vaca?",
-      "es": "¿Qué dice la vaca?"
+      "en": "The cows were hungry.",
+      "gl": "As vacas tiñan fame.",
+      "es": "Las vacas tenían hambre."
      },
      {
-      "en": "How does the horse walk?",
-      "gl": "Como anda o cabalo?",
-      "es": "¿Cómo anda el caballo?"
+      "en": "There was a sheep.",
+      "gl": "Había unha ovella.",
+      "es": "Había una oveja."
      },
      {
-      "en": "Where is the sheep?",
-      "gl": "Onde está a ovella?",
-      "es": "¿Dónde está la oveja?"
+      "en": "Were you a horse? Yes, I was.",
+      "gl": "Eras un cabalo? Si, era.",
+      "es": "¿Eras un caballo? Sí, lo era."
      }
     ]
    },
    "5": {
-    "punto": 9,
+    "punto": 12,
     "frases": [
      {
-      "en": "We clap in the morning.",
-      "gl": "Aplaudimos pola mañá.",
-      "es": "Aplaudimos por la mañana."
+      "en": "It was fun!",
+      "gl": "Foi divertido!",
+      "es": "¡Fue divertido!"
      },
      {
-      "en": "We sing on Monday.",
-      "gl": "Cantamos o luns.",
-      "es": "Cantamos el lunes."
+      "en": "We were friends.",
+      "gl": "Eramos amigos.",
+      "es": "Éramos amigos."
      },
      {
-      "en": "We sleep at night.",
-      "gl": "Durmimos pola noite.",
-      "es": "Dormimos por la noche."
+      "en": "There were many claps.",
+      "gl": "Houbo moitas palmadas.",
+      "es": "Hubo muchas palmadas."
      },
      {
-      "en": "Clap high, clap low!",
-      "gl": "Aplaude arriba, aplaude abaixo!",
-      "es": "¡Aplaude arriba, aplaude abajo!"
+      "en": "Was it high or low?",
+      "gl": "Era alto ou baixo?",
+      "es": "¿Era alto o bajo?"
      }
     ]
    },
    "6": {
-    "punto": 19,
+    "punto": 12,
     "frases": [
      {
-      "en": "Row the boat through the waves.",
-      "gl": "Rema o barco entre as ondas.",
-      "es": "Rema el barco entre las olas."
+      "en": "The waves were big.",
+      "gl": "As ondas eran grandes.",
+      "es": "Las olas eran grandes."
      },
      {
-      "en": "Get into the boat.",
-      "gl": "Entra no barco.",
-      "es": "Sube al barco."
+      "en": "There was a white shell.",
+      "gl": "Había unha cuncha branca.",
+      "es": "Había una concha blanca."
      },
      {
-      "en": "Swim to the shell.",
-      "gl": "Nada ata a cuncha.",
-      "es": "Nada hasta la concha."
+      "en": "The boat was in the ría.",
+      "gl": "O barco estaba na ría.",
+      "es": "El barco estaba en la ría."
      },
      {
-      "en": "Get out of the water.",
-      "gl": "Sae da auga.",
-      "es": "Sal del agua."
+      "en": "We were in the boat.",
+      "gl": "Estabamos no barco.",
+      "es": "Estábamos en el barco."
      }
     ]
    }
   },
   "curso_4_5": {
    "9": {
-    "punto": 11,
+    "punto": 13,
     "frases": [
      {
-      "en": "The bear is sleeping.",
-      "gl": "O oso está durmindo.",
-      "es": "El oso está durmiendo."
+      "en": "The bell rang.",
+      "gl": "Soou a campá.",
+      "es": "Sonó la campana."
      },
      {
-      "en": "Bears sleep in winter.",
-      "gl": "Os osos dormen no inverno.",
-      "es": "Los osos duermen en invierno."
+      "en": "I packed my backpack.",
+      "gl": "Preparei a mochila.",
+      "es": "Preparé la mochila."
      },
      {
-      "en": "I am carrying my backpack.",
-      "gl": "Levo a mochila.",
-      "es": "Llevo la mochila."
+      "en": "The bear slept.",
+      "gl": "O oso durmiu.",
+      "es": "El oso durmió."
      },
      {
-      "en": "The bell is ringing!",
-      "gl": "Está soando a campá!",
-      "es": "¡Está sonando la campana!"
+      "en": "Did you hear the bell?",
+      "gl": "Escoitaches a campá?",
+      "es": "¿Oíste la campana?"
      }
     ]
    },
    "10": {
-    "punto": 12,
+    "punto": 13,
     "frases": [
      {
-      "en": "The squirrel was in the tree.",
-      "gl": "O esquío estaba na árbore.",
-      "es": "La ardilla estaba en el árbol."
+      "en": "The squirrel climbed the tree.",
+      "gl": "O esquío subiu á árbore.",
+      "es": "La ardilla subió al árbol."
      },
      {
-      "en": "There was a boar in the forest.",
-      "gl": "Había un xabaril no bosque.",
-      "es": "Había un jabalí en el bosque."
+      "en": "The boar hid.",
+      "gl": "O xabaril escondeuse.",
+      "es": "El jabalí se escondió."
      },
      {
-      "en": "The chestnuts were on the ground.",
-      "gl": "As castañas estaban no chan.",
-      "es": "Las castañas estaban en el suelo."
+      "en": "We found a chestnut.",
+      "gl": "Atopamos unha castaña.",
+      "es": "Encontramos una castaña."
      },
      {
-      "en": "Was it hiding?",
-      "gl": "Estaba escondido?",
-      "es": "¿Estaba escondido?"
+      "en": "Did you see the squirrel?",
+      "gl": "Viches o esquío?",
+      "es": "¿Viste la ardilla?"
      }
     ]
    },
    "11": {
-    "punto": 13,
+    "punto": 14,
     "frases": [
      {
-      "en": "The chestnut rolled downhill.",
-      "gl": "A castaña rodou costa abaixo.",
-      "es": "La castaña rodó cuesta abajo."
+      "en": "The chestnut was rolling downhill.",
+      "gl": "A castaña ía rodando costa abaixo.",
+      "es": "La castaña iba rodando cuesta abajo."
      },
      {
-      "en": "The hedgehog curled into a ball.",
-      "gl": "O ourizo fíxose unha bóla.",
-      "es": "El erizo se hizo una bola."
+      "en": "The hedgehog was sleeping when we came.",
+      "gl": "O ourizo estaba durmindo cando chegamos.",
+      "es": "El erizo estaba durmiendo cuando llegamos."
      },
      {
-      "en": "We danced together.",
-      "gl": "Bailamos xuntos.",
-      "es": "Bailamos juntos."
+      "en": "We were dancing.",
+      "gl": "Estabamos bailando.",
+      "es": "Estábamos bailando."
      },
      {
-      "en": "Did it hurt? Yes, it did.",
-      "gl": "Doeulle? Si.",
-      "es": "¿Le dolió? Sí."
+      "en": "While it was rolling, we waited.",
+      "gl": "Mentres rodaba, agardamos.",
+      "es": "Mientras rodaba, esperamos."
      }
     ]
    },
    "12": {
-    "punto": 13,
+    "punto": 14,
     "frases": [
      {
-      "en": "It was cold last night.",
-      "gl": "Onte pola noite facía frío.",
-      "es": "Anoche hacía frío."
+      "en": "We were playing the drum when the sun came up.",
+      "gl": "Estabamos tocando o tambor cando saíu o sol.",
+      "es": "Estábamos tocando el tambor cuando salió el sol."
      },
      {
-      "en": "The sun went down.",
-      "gl": "Púxose o sol.",
-      "es": "Se puso el sol."
+      "en": "It was snowing at night.",
+      "gl": "Pola noite estaba nevando.",
+      "es": "Por la noche estaba nevando."
      },
      {
-      "en": "We played the drum.",
-      "gl": "Tocamos o tambor.",
-      "es": "Tocamos el tambor."
+      "en": "The children were stretching.",
+      "gl": "As criaturas estaban estirándose.",
+      "es": "Los niños se estaban estirando."
      },
      {
-      "en": "The pond froze.",
-      "gl": "Xeou a charca.",
-      "es": "Se heló la charca."
+      "en": "While it was cold, we were inside.",
+      "gl": "Mentres facía frío, estabamos dentro.",
+      "es": "Mientras hacía frío, estábamos dentro."
      }
     ]
    },
    "1": {
-    "punto": 20,
+    "punto": 14,
     "frases": [
      {
-      "en": "We run because the storm is here.",
-      "gl": "Corremos porque chegou a tormenta.",
-      "es": "Corremos porque ha llegado la tormenta."
+      "en": "It was raining when we went out.",
+      "gl": "Estaba chovendo cando saímos.",
+      "es": "Estaba lloviendo cuando salimos."
      },
      {
-      "en": "It is cloudy, so we take the umbrella.",
-      "gl": "Está nubrado, así que levamos o paraugas.",
-      "es": "Está nublado, así que llevamos el paraguas."
+      "en": "We were running when the storm came.",
+      "gl": "Estabamos correndo cando chegou a tormenta.",
+      "es": "Estábamos corriendo cuando llegó la tormenta."
      },
      {
-      "en": "We hide under the umbrella because it is raining.",
-      "gl": "Escondémonos baixo o paraugas porque chove.",
-      "es": "Nos escondemos bajo el paraguas porque llueve."
+      "en": "The clouds were moving fast.",
+      "gl": "As nubes movíanse rápido.",
+      "es": "Las nubes se movían rápido."
      },
      {
-      "en": "I am wet, but I am happy.",
-      "gl": "Estou mollado, pero estou contento.",
-      "es": "Estoy mojado, pero estoy contento."
+      "en": "While it was raining, we hid.",
+      "gl": "Mentres chovía, escondémonos.",
+      "es": "Mientras llovía, nos escondimos."
      }
     ]
    },
@@ -1738,9 +1738,9 @@
       "es": "¡El lobo te puede ver!"
      },
      {
-      "en": "Look at me: I am a horse.",
-      "gl": "Mírame: son un cabalo.",
-      "es": "Mírame: soy un caballo."
+      "en": "Look at me!",
+      "gl": "Mírame!",
+      "es": "¡Mírame!"
      },
      {
       "en": "Follow him!",
@@ -1755,119 +1755,17 @@
     ]
    },
    "3": {
-    "punto": 16,
-    "frases": [
-     {
-      "en": "The honey is sweeter than the apple.",
-      "gl": "O mel é máis doce ca a mazá.",
-      "es": "La miel es más dulce que la manzana."
-     },
-     {
-      "en": "This flower is bigger.",
-      "gl": "Esta flor é máis grande.",
-      "es": "Esta flor es más grande."
-     },
-     {
-      "en": "The bee is as small as my finger.",
-      "gl": "A abella é tan pequena coma o meu dedo.",
-      "es": "La abeja es tan pequeña como mi dedo."
-     },
-     {
-      "en": "The red flower is the biggest.",
-      "gl": "A flor vermella é a máis grande.",
-      "es": "La flor roja es la más grande."
-     }
-    ]
-   },
-   "4": {
-    "punto": 14,
-    "frases": [
-     {
-      "en": "The wolf was sleeping when the sheep came.",
-      "gl": "O lobo estaba durmindo cando chegou a ovella.",
-      "es": "El lobo estaba durmiendo cuando llegó la oveja."
-     },
-     {
-      "en": "We were walking calmly.",
-      "gl": "Estabamos camiñando con calma.",
-      "es": "Estábamos andando con calma."
-     },
-     {
-      "en": "It was raining when we went out.",
-      "gl": "Estaba chovendo cando saímos.",
-      "es": "Estaba lloviendo cuando salimos."
-     },
-     {
-      "en": "While the wolf was sleeping, we walked on tiptoe.",
-      "gl": "Mentres o lobo durmía, camiñamos de puntillas.",
-      "es": "Mientras el lobo dormía, andamos de puntillas."
-     }
-    ]
-   },
-   "5": {
-    "punto": 20,
-    "frases": [
-     {
-      "en": "We pull and pull, but it doesn't move.",
-      "gl": "Tiramos e tiramos, pero non se move.",
-      "es": "Tiramos y tiramos, pero no se mueve."
-     },
-     {
-      "en": "We help, so it comes out.",
-      "gl": "Axudamos, así que sae.",
-      "es": "Ayudamos, así que sale."
-     },
-     {
-      "en": "It is heavy because it is enormous.",
-      "gl": "Pesa porque é enorme.",
-      "es": "Pesa porque es enorme."
-     },
-     {
-      "en": "Pull and help!",
-      "gl": "Tira e axuda!",
-      "es": "¡Tira y ayuda!"
-     }
-    ]
-   },
-   "6": {
-    "punto": 17,
-    "frases": [
-     {
-      "en": "We are going to swim in the sea.",
-      "gl": "Imos nadar no mar.",
-      "es": "Vamos a nadar en el mar."
-     },
-     {
-      "en": "Look at the clouds: it is going to rain.",
-      "gl": "Mira as nubes: vai chover.",
-      "es": "Mira las nubes: va a llover."
-     },
-     {
-      "en": "I will help you.",
-      "gl": "Eu axúdote.",
-      "es": "Yo te ayudo."
-     },
-     {
-      "en": "The sea will be calm.",
-      "gl": "O mar estará en calma.",
-      "es": "El mar estará en calma."
-     }
-    ]
-   }
-  },
-  "curso_5_6": {
-   "9": {
     "punto": 15,
     "frases": [
      {
-      "en": "I hang my coat myself.",
-      "gl": "Colgo o abrigo eu só.",
-      "es": "Cuelgo el abrigo yo solo."
+      "en": "The bee is looking at me.",
+      "gl": "A abella está mirándome.",
+      "es": "La abeja me está mirando."
      },
      {
-      "en": "Help her, please.",
-      "gl": "Axúdaa, por favor.",
-      "es": "Ayúdala, por favor."
+      "en": "Give it to her.",
+      "gl": "Dállo a ela.",
+      "es": "Dáselo a ella."
      },
      {
       "en": "I can do it myself.",
@@ -1875,88 +1773,165 @@
       "es": "Puedo hacerlo yo solo."
      },
      {
-      "en": "Give me the green card.",
-      "gl": "Dáme a tarxeta verde.",
-      "es": "Dame la tarjeta verde."
+      "en": "The flowers are for them.",
+      "gl": "As flores son para eles.",
+      "es": "Las flores son para ellos."
+     }
+    ]
+   },
+   "4": {
+    "punto": 16,
+    "frases": [
+     {
+      "en": "The wolf is bigger than the sheep.",
+      "gl": "O lobo é máis grande ca a ovella.",
+      "es": "El lobo es más grande que la oveja."
+     },
+     {
+      "en": "The sheep is calmer than the wolf.",
+      "gl": "A ovella está máis tranquila co lobo.",
+      "es": "La oveja está más tranquila que el lobo."
+     },
+     {
+      "en": "This umbrella is the biggest.",
+      "gl": "Este paraugas é o máis grande.",
+      "es": "Este paraguas es el más grande."
+     },
+     {
+      "en": "The wolf is as hungry as a bear.",
+      "gl": "O lobo ten tanta fame coma un oso.",
+      "es": "El lobo tiene tanta hambre como un oso."
+     }
+    ]
+   },
+   "5": {
+    "punto": 16,
+    "frases": [
+     {
+      "en": "The turnip is bigger than me!",
+      "gl": "O nabo é máis grande ca min!",
+      "es": "¡El nabo es más grande que yo!"
+     },
+     {
+      "en": "We are stronger together.",
+      "gl": "Xuntos somos máis fortes.",
+      "es": "Juntos somos más fuertes."
+     },
+     {
+      "en": "This rope is the longest.",
+      "gl": "Esta corda é a máis longa.",
+      "es": "Esta cuerda es la más larga."
+     },
+     {
+      "en": "He is as brave as a lion.",
+      "gl": "É tan valente coma un león.",
+      "es": "Es tan valiente como un león."
+     }
+    ]
+   },
+   "6": {
+    "punto": 16,
+    "frases": [
+     {
+      "en": "The sea is calmer today.",
+      "gl": "Hoxe o mar está máis tranquilo.",
+      "es": "Hoy el mar está más tranquilo."
+     },
+     {
+      "en": "These waves are bigger than yesterday.",
+      "gl": "Estas ondas son máis grandes ca onte.",
+      "es": "Estas olas son más grandes que ayer."
+     },
+     {
+      "en": "The blue fish is the fastest.",
+      "gl": "O peixe azul é o máis rápido.",
+      "es": "El pez azul es el más rápido."
+     },
+     {
+      "en": "The sea is as blue as the sky.",
+      "gl": "O mar é tan azul coma o ceo.",
+      "es": "El mar es tan azul como el cielo."
+     }
+    ]
+   }
+  },
+  "curso_5_6": {
+   "9": {
+    "punto": 17,
+    "frases": [
+     {
+      "en": "I am going to hang my coat.",
+      "gl": "Vou colgar o abrigo.",
+      "es": "Voy a colgar el abrigo."
+     },
+     {
+      "en": "I will help you.",
+      "gl": "Eu axúdote.",
+      "es": "Yo te ayudo."
+     },
+     {
+      "en": "We are going to paint.",
+      "gl": "Imos pintar.",
+      "es": "Vamos a pintar."
+     },
+     {
+      "en": "It is going to be a good day.",
+      "gl": "Vai ser un bo día.",
+      "es": "Va a ser un buen día."
      }
     ]
    },
    "10": {
-    "punto": 16,
+    "punto": 17,
     "frases": [
      {
-      "en": "This leaf is rougher than that one.",
-      "gl": "Esta folla é máis áspera ca esa.",
-      "es": "Esta hoja es más áspera que esa."
+      "en": "We are going to count the leaves.",
+      "gl": "Imos contar as follas.",
+      "es": "Vamos a contar las hojas."
      },
      {
-      "en": "The smoothest leaf goes in the hoop.",
-      "gl": "A folla máis lisa vai no aro.",
-      "es": "La hoja más lisa va en el aro."
+      "en": "I will jump into the hoop.",
+      "gl": "Vou saltar dentro do aro.",
+      "es": "Saltaré dentro del aro."
      },
      {
-      "en": "My leaf is as brown as yours.",
-      "gl": "A miña folla é tan marrón coma a túa.",
-      "es": "Mi hoja es tan marrón como la tuya."
+      "en": "We are going to cut paper.",
+      "gl": "Imos cortar papel.",
+      "es": "Vamos a cortar papel."
      },
      {
-      "en": "This hoop is the biggest.",
-      "gl": "Este aro é o máis grande.",
-      "es": "Este aro es el más grande."
+      "en": "It will be fun.",
+      "gl": "Vai ser divertido.",
+      "es": "Será divertido."
      }
     ]
    },
    "11": {
-    "punto": 20,
+    "punto": 18,
     "frases": [
      {
-      "en": "It is round, so it is a chestnut.",
-      "gl": "É redonda, así que é unha castaña.",
-      "es": "Es redonda, así que es una castaña."
+      "en": "You must feel without looking.",
+      "gl": "Tes que tocar sen mirar.",
+      "es": "Tienes que tocar sin mirar."
      },
      {
-      "en": "It is cold, but it isn't wet.",
-      "gl": "Está fría, pero non está mollada.",
-      "es": "Está fría, pero no está mojada."
+      "en": "We have to share.",
+      "gl": "Temos que compartir.",
+      "es": "Tenemos que compartir."
      },
      {
-      "en": "Although I can't see it, I can feel it.",
-      "gl": "Aínda que non a vexo, podo tocala.",
-      "es": "Aunque no la veo, la puedo tocar."
+      "en": "You should wait your turn.",
+      "gl": "Deberías agardar a túa quenda.",
+      "es": "Deberías esperar tu turno."
      },
      {
-      "en": "We share because it is fair.",
-      "gl": "Compartimos porque é xusto.",
-      "es": "Compartimos porque es justo."
+      "en": "You don't have to hurry.",
+      "gl": "Non fai falta ter présa.",
+      "es": "No hace falta tener prisa."
      }
     ]
    },
    "12": {
-    "punto": 19,
-    "frases": [
-     {
-      "en": "Walk across the room.",
-      "gl": "Cruza a sala.",
-      "es": "Cruza la sala."
-     },
-     {
-      "en": "Turn left and walk towards the light.",
-      "gl": "Xira á esquerda e camiña cara á luz.",
-      "es": "Gira a la izquierda y camina hacia la luz."
-     },
-     {
-      "en": "Walk along the line, hand in hand.",
-      "gl": "Camiña pola liña, da man.",
-      "es": "Camina por la línea, de la mano."
-     },
-     {
-      "en": "Go out of the circle slowly.",
-      "gl": "Sae do círculo amodo.",
-      "es": "Sal del círculo despacio."
-     }
-    ]
-   },
-   "1": {
     "punto": 18,
     "frases": [
      {
@@ -1965,9 +1940,34 @@
       "es": "Tienes que andar despacio."
      },
      {
+      "en": "We have to hold hands.",
+      "gl": "Temos que ir da man.",
+      "es": "Tenemos que ir de la mano."
+     },
+     {
+      "en": "You shouldn't touch the candle.",
+      "gl": "Non deberías tocar a vela.",
+      "es": "No deberías tocar la vela."
+     },
+     {
+      "en": "You should turn left.",
+      "gl": "Deberías xirar á esquerda.",
+      "es": "Deberías girar a la izquierda."
+     }
+    ]
+   },
+   "1": {
+    "punto": 18,
+    "frases": [
+     {
       "en": "You have to balance the plate.",
       "gl": "Tes que manter o prato en equilibrio.",
       "es": "Tienes que mantener el plato en equilibrio."
+     },
+     {
+      "en": "You must not spill the water.",
+      "gl": "Non podes derramar a auga.",
+      "es": "No puedes derramar el agua."
      },
      {
       "en": "You don't have to run.",
@@ -1975,134 +1975,134 @@
       "es": "No hace falta correr."
      },
      {
-      "en": "You shouldn't spill the water.",
-      "gl": "Non deberías derramar a auga.",
-      "es": "No deberías derramar el agua."
+      "en": "You should step slowly.",
+      "gl": "Deberías pisar amodo.",
+      "es": "Deberías pisar despacio."
      }
     ]
    },
    "2": {
-    "punto": 17,
+    "punto": 19,
     "frases": [
      {
-      "en": "I am going to be a statue.",
-      "gl": "Vou ser unha estatua.",
-      "es": "Voy a ser una estatua."
+      "en": "Walk across the room.",
+      "gl": "Cruza a sala.",
+      "es": "Cruza la sala."
      },
      {
-      "en": "I will copy your movements.",
-      "gl": "Vou copiar os teus movementos.",
-      "es": "Copiaré tus movimientos."
+      "en": "Jump into the circle.",
+      "gl": "Salta dentro do círculo.",
+      "es": "Salta dentro del círculo."
      },
      {
-      "en": "We are going to put on our costumes.",
-      "gl": "Imos poñer os disfraces.",
-      "es": "Vamos a ponernos los disfraces."
+      "en": "Go out of the box.",
+      "gl": "Sae da caixa.",
+      "es": "Sal de la caja."
      },
      {
-      "en": "I will put my arms up.",
-      "gl": "Vou poñer os brazos arriba.",
-      "es": "Pondré los brazos arriba."
+      "en": "Move towards me.",
+      "gl": "Móvete cara a min.",
+      "es": "Muévete hacia mí."
      }
     ]
    },
    "3": {
-    "punto": 14,
+    "punto": 19,
     "frases": [
      {
-      "en": "I was filling the pot when the seed fell.",
-      "gl": "Estaba enchendo o testo cando caeu a semente.",
-      "es": "Estaba llenando la maceta cuando se cayó la semilla."
+      "en": "Put the seed into the pot.",
+      "gl": "Mete a semente no testo.",
+      "es": "Mete la semilla en la maceta."
      },
      {
-      "en": "We were watering the plants.",
-      "gl": "Estabamos regando as plantas.",
-      "es": "Estábamos regando las plantas."
+      "en": "The water goes through the soil.",
+      "gl": "A auga pasa a través da terra.",
+      "es": "El agua pasa a través de la tierra."
      },
      {
-      "en": "While she was digging, I was singing.",
-      "gl": "Mentres ela cavaba, eu cantaba.",
-      "es": "Mientras ella cavaba, yo cantaba."
+      "en": "Walk along the garden.",
+      "gl": "Camiña polo xardín.",
+      "es": "Camina por el jardín."
      },
      {
-      "en": "The seed was growing in the soil.",
-      "gl": "A semente estaba medrando na terra.",
-      "es": "La semilla estaba creciendo en la tierra."
+      "en": "Take it out of the box.",
+      "gl": "Sácao da caixa.",
+      "es": "Sácalo de la caja."
      }
     ]
    },
    "4": {
-    "punto": 18,
+    "punto": 20,
     "frases": [
      {
-      "en": "You should hide behind the tree.",
-      "gl": "Deberías esconderte detrás da árbore.",
-      "es": "Deberías esconderte detrás del árbol."
+      "en": "We hide because the fox is coming.",
+      "gl": "Escondémonos porque vén o raposo.",
+      "es": "Nos escondemos porque viene el zorro."
      },
      {
-      "en": "You must fasten your seatbelt.",
-      "gl": "Tes que pór o cinto.",
-      "es": "Tienes que ponerte el cinturón."
+      "en": "The snake crawls, but it doesn't bite.",
+      "gl": "A serpe arrástrase, pero non morde.",
+      "es": "La serpiente se arrastra, pero no muerde."
      },
      {
-      "en": "We have to crawl like a snake.",
-      "gl": "Temos que arrastrarnos coma unha serpe.",
-      "es": "Tenemos que arrastrarnos como una serpiente."
+      "en": "It is dark, so we use a lamp.",
+      "gl": "Está escuro, así que usamos unha lámpada.",
+      "es": "Está oscuro, así que usamos una lámpara."
      },
      {
-      "en": "You shouldn't touch the pointy stick.",
-      "gl": "Non deberías tocar o pau con punta.",
-      "es": "No deberías tocar el palo con punta."
+      "en": "Although it is pointy, it is safe.",
+      "gl": "Aínda que ten punta, é seguro.",
+      "es": "Aunque tiene punta, es seguro."
      }
     ]
    },
    "5": {
-    "punto": 16,
+    "punto": 20,
     "frases": [
      {
-      "en": "Clap faster!",
-      "gl": "Aplaude máis rápido!",
-      "es": "¡Aplaude más rápido!"
+      "en": "Clap and tap!",
+      "gl": "Aplaude e peta!",
+      "es": "¡Aplaude y golpea!"
      },
      {
-      "en": "Now tap slower than before.",
-      "gl": "Agora toca máis amodo ca antes.",
-      "es": "Ahora toca más despacio que antes."
+      "en": "It is fast, but I can do it.",
+      "gl": "É rápido, pero podo facelo.",
+      "es": "Es rápido, pero puedo hacerlo."
      },
      {
-      "en": "My pattern is longer than yours.",
-      "gl": "O meu patrón é máis longo co teu.",
-      "es": "Mi patrón es más largo que el tuyo."
+      "en": "I like it because it is a pattern.",
+      "gl": "Gústame porque é un patrón.",
+      "es": "Me gusta porque es un patrón."
      },
      {
-      "en": "This is the fastest rhythm.",
-      "gl": "Este é o ritmo máis rápido.",
-      "es": "Este es el ritmo más rápido."
+      "en": "Although it is difficult, we try.",
+      "gl": "Aínda que é difícil, intentámolo.",
+      "es": "Aunque es difícil, lo intentamos."
      }
     ]
    },
    "6": {
-    "punto": 17,
+    "punto": 20,
     "frases": [
      {
-      "en": "We are going to find shells.",
-      "gl": "Imos atopar cunchas.",
-      "es": "Vamos a encontrar conchas."
+      "en": "The shell is smooth, so it goes in the basket.",
+      "gl": "A cuncha é lisa, así que vai na cesta.",
+      "es": "La concha es lisa, así que va en la cesta."
      },
      {
-      "en": "I will walk five steps.",
-      "gl": "Vou dar cinco pasos.",
-      "es": "Daré cinco pasos."
+      "en": "We look for shells and we count them.",
+      "gl": "Buscamos cunchas e contámolas.",
+      "es": "Buscamos conchas y las contamos."
      },
      {
-      "en": "The tide is going to come in.",
-      "gl": "Vai subir a marea.",
-      "es": "Va a subir la marea."
+      "en": "I want this shell because it is white.",
+      "gl": "Quero esta cuncha porque é branca.",
+      "es": "Quiero esta concha porque es blanca."
      },
      {
-      "en": "I will put the white shell in the basket.",
-      "gl": "Vou pór a cuncha branca na cesta.",
-      "es": "Pondré la concha blanca en la cesta."
+      "en": "Although it is small, it is beautiful.",
+      "gl": "Aínda que é pequena, é bonita.",
+      "es": "Aunque es pequeña, es bonita."
      }
     ]
    }
