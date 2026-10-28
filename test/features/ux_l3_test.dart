@@ -63,6 +63,7 @@ void main() {
   // P11: arriba va la lección de la semana; el juego de tres minutos, en el
   // material complementario.
   Future<void> irAoXogo(WidgetTester tester) async {
+    await Pasarela.abrirMaisParaCasa(tester);
     final comezar = find.byKey(const Key('hoxe_comezar'));
     await tester.scrollUntilVisible(comezar, 300,
         scrollable: find.byType(Scrollable).first);
@@ -109,7 +110,8 @@ void main() {
     testWidgets('o venres, as 20 do reto soan (${lang.code})', (tester) async {
       await abrirPortal(tester, lang, agora: venres);
       // M3.10: las del día van plegadas bajo el núcleo del mes; el reto está
-      // dentro.
+      // dentro. Desde O-20261028-4, todo eso va en «Máis para casa».
+      await Pasarela.abrirMaisParaCasa(tester);
       final abrir = find.byKey(const Key('abrir_palabras_do_dia'));
       await tester.scrollUntilVisible(abrir, 200,
           scrollable: find.byType(Scrollable).first);

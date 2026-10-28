@@ -219,6 +219,14 @@
        "es": "Decir quién es y cómo está: «I am happy», «It is a cat», «Is it cold?»."
       }
      },
+     "gramaticaDespois": {
+      "n": 2,
+      "nivel": "A1",
+      "titulo": {
+       "gl": "Artigos e substantivos",
+       "es": "Artículos y sustantivos"
+      }
+     },
      "obxectivos": [
       {
        "gl": "Reaccionar co corpo, cun salto e batendo na auga de forma coordinada, ás ordes splash e stop.",
@@ -1146,6 +1154,14 @@
       "paraFamilias": {
        "gl": "Dicir quen é e como está: «I am happy», «It is a cat», «Is it cold?».",
        "es": "Decir quién es y cómo está: «I am happy», «It is a cat», «Is it cold?»."
+      }
+     },
+     "gramaticaDespois": {
+      "n": 2,
+      "nivel": "A1",
+      "titulo": {
+       "gl": "Artigos e substantivos",
+       "es": "Artículos y sustantivos"
       }
      },
      "obxectivos": [
@@ -2220,6 +2236,22 @@
        "es": "Los nombres de las cosas, uno o muchos: «a leaf», «the leaf», «leaves»."
       }
      },
+     "gramaticaAntes": {
+      "n": 1,
+      "nivel": "A1",
+      "titulo": {
+       "gl": "Pronomes suxeito e o verbo to be",
+       "es": "Pronombres sujeto y el verbo to be"
+      }
+     },
+     "gramaticaDespois": {
+      "n": 3,
+      "nivel": "A1",
+      "titulo": {
+       "gl": "Demostrativos e posesivos",
+       "es": "Demostrativos y posesivos"
+      }
+     },
      "obxectivos": [
       {
        "gl": "Agacharse a coller (pick up) e soltar deixando caer (drop) ao oír o sinal.",
@@ -3234,6 +3266,22 @@
       "paraFamilias": {
        "gl": "Os nomes das cousas, un ou moitos: «a leaf», «the leaf», «leaves».",
        "es": "Los nombres de las cosas, uno o muchos: «a leaf», «the leaf», «leaves»."
+      }
+     },
+     "gramaticaAntes": {
+      "n": 1,
+      "nivel": "A1",
+      "titulo": {
+       "gl": "Pronomes suxeito e o verbo to be",
+       "es": "Pronombres sujeto y el verbo to be"
+      }
+     },
+     "gramaticaDespois": {
+      "n": 3,
+      "nivel": "A1",
+      "titulo": {
+       "gl": "Demostrativos e posesivos",
+       "es": "Demostrativos y posesivos"
       }
      },
      "obxectivos": [
@@ -4316,6 +4364,22 @@
        "es": "Los nombres de las cosas, uno o muchos: «a leaf», «the leaf», «leaves»."
       }
      },
+     "gramaticaAntes": {
+      "n": 1,
+      "nivel": "A1",
+      "titulo": {
+       "gl": "Pronomes suxeito e o verbo to be",
+       "es": "Pronombres sujeto y el verbo to be"
+      }
+     },
+     "gramaticaDespois": {
+      "n": 3,
+      "nivel": "A1",
+      "titulo": {
+       "gl": "Demostrativos e posesivos",
+       "es": "Demostrativos y posesivos"
+      }
+     },
      "obxectivos": [
       {
        "gl": "Facer xestos coordinados de mastigar e de tragar de mentira ao oír as ordes bite e eat.",
@@ -5330,6 +5394,22 @@
       "paraFamilias": {
        "gl": "Sinalar e dicir de quen é: «this hat», «my hat», «Mum's coat».",
        "es": "Señalar y decir de quién es: «this hat», «my hat», «Mum's coat»."
+      }
+     },
+     "gramaticaAntes": {
+      "n": 2,
+      "nivel": "A1",
+      "titulo": {
+       "gl": "Artigos e substantivos",
+       "es": "Artículos y sustantivos"
+      }
+     },
+     "gramaticaDespois": {
+      "n": 4,
+      "nivel": "A1",
+      "titulo": {
+       "gl": "Presente simple",
+       "es": "Presente simple"
       }
      },
      "obxectivos": [
@@ -6382,6 +6462,22 @@
        "es": "Señalar y decir de quién es: «this hat», «my hat», «Mum's coat»."
       }
      },
+     "gramaticaAntes": {
+      "n": 2,
+      "nivel": "A1",
+      "titulo": {
+       "gl": "Artigos e substantivos",
+       "es": "Artículos y sustantivos"
+      }
+     },
+     "gramaticaDespois": {
+      "n": 4,
+      "nivel": "A1",
+      "titulo": {
+       "gl": "Presente simple",
+       "es": "Presente simple"
+      }
+     },
      "obxectivos": [
       {
        "gl": "Seguir as ordes de fregar e lavar o corpo ao oír wash e rub.",
@@ -7376,6 +7472,22 @@
       "paraFamilias": {
        "gl": "O que facemos sempre: «We sit in a circle», «The cow eats grass».",
        "es": "Lo que hacemos siempre: «We sit in a circle», «The cow eats grass»."
+      }
+     },
+     "gramaticaAntes": {
+      "n": 3,
+      "nivel": "A1",
+      "titulo": {
+       "gl": "Demostrativos e posesivos",
+       "es": "Demostrativos y posesivos"
+      }
+     },
+     "gramaticaDespois": {
+      "n": 5,
+      "nivel": "A1",
+      "titulo": {
+       "gl": "Adverbios e expresións de frecuencia",
+       "es": "Adverbios y expresiones de frecuencia"
       }
      },
      "obxectivos": [
@@ -8454,6 +8566,22 @@
       "paraFamilias": {
        "gl": "O que facemos sempre: «We sit in a circle», «The cow eats grass».",
        "es": "Lo que hacemos siempre: «We sit in a circle», «The cow eats grass»."
+      }
+     },
+     "gramaticaAntes": {
+      "n": 3,
+      "nivel": "A1",
+      "titulo": {
+       "gl": "Demostrativos e posesivos",
+       "es": "Demostrativos y posesivos"
+      }
+     },
+     "gramaticaDespois": {
+      "n": 5,
+      "nivel": "A1",
+      "titulo": {
+       "gl": "Adverbios e expresións de frecuencia",
+       "es": "Adverbios y expresiones de frecuencia"
       }
      },
      "obxectivos": [
@@ -9554,6 +9682,22 @@
       "paraFamilias": {
        "gl": "O que facemos sempre: «We sit in a circle», «The cow eats grass».",
        "es": "Lo que hacemos siempre: «We sit in a circle», «The cow eats grass»."
+      }
+     },
+     "gramaticaAntes": {
+      "n": 3,
+      "nivel": "A1",
+      "titulo": {
+       "gl": "Demostrativos e posesivos",
+       "es": "Demostrativos y posesivos"
+      }
+     },
+     "gramaticaDespois": {
+      "n": 5,
+      "nivel": "A1",
+      "titulo": {
+       "gl": "Adverbios e expresións de frecuencia",
+       "es": "Adverbios y expresiones de frecuencia"
       }
      },
      "obxectivos": [
@@ -10684,6 +10828,22 @@
        "es": "Cada cuánto se hace algo: «We always wear boots in the rain»."
       }
      },
+     "gramaticaAntes": {
+      "n": 4,
+      "nivel": "A1",
+      "titulo": {
+       "gl": "Presente simple",
+       "es": "Presente simple"
+      }
+     },
+     "gramaticaDespois": {
+      "n": 6,
+      "nivel": "A1",
+      "titulo": {
+       "gl": "Contables e incontables",
+       "es": "Contables e incontables"
+      }
+     },
      "obxectivos": [
       {
        "gl": "Reaccionar co corpo, cun salto e batendo na auga de forma coordinada, ás ordes splash e stop.",
@@ -11627,6 +11787,22 @@
       "paraFamilias": {
        "gl": "Cada canto se fai algo: «We always wear boots in the rain».",
        "es": "Cada cuánto se hace algo: «We always wear boots in the rain»."
+      }
+     },
+     "gramaticaAntes": {
+      "n": 4,
+      "nivel": "A1",
+      "titulo": {
+       "gl": "Presente simple",
+       "es": "Presente simple"
+      }
+     },
+     "gramaticaDespois": {
+      "n": 6,
+      "nivel": "A1",
+      "titulo": {
+       "gl": "Contables e incontables",
+       "es": "Contables e incontables"
       }
      },
      "obxectivos": [
@@ -12717,6 +12893,22 @@
        "es": "Cantidades: «some water», «more juice», «a lot of seeds»."
       }
      },
+     "gramaticaAntes": {
+      "n": 5,
+      "nivel": "A1",
+      "titulo": {
+       "gl": "Adverbios e expresións de frecuencia",
+       "es": "Adverbios y expresiones de frecuencia"
+      }
+     },
+     "gramaticaDespois": {
+      "n": 7,
+      "nivel": "A1",
+      "titulo": {
+       "gl": "There is / there are e preposicións de lugar",
+       "es": "There is / there are y preposiciones de lugar"
+      }
+     },
      "obxectivos": [
       {
        "gl": "Agacharse a coller (pick up) e soltar deixando caer (drop) ao oír o sinal.",
@@ -13775,6 +13967,22 @@
       "paraFamilias": {
        "gl": "Cantidades: «some water», «more juice», «a lot of seeds».",
        "es": "Cantidades: «some water», «more juice», «a lot of seeds»."
+      }
+     },
+     "gramaticaAntes": {
+      "n": 5,
+      "nivel": "A1",
+      "titulo": {
+       "gl": "Adverbios e expresións de frecuencia",
+       "es": "Adverbios y expresiones de frecuencia"
+      }
+     },
+     "gramaticaDespois": {
+      "n": 7,
+      "nivel": "A1",
+      "titulo": {
+       "gl": "There is / there are e preposicións de lugar",
+       "es": "There is / there are y preposiciones de lugar"
       }
      },
      "obxectivos": [
@@ -14885,6 +15093,22 @@
        "es": "Cantidades: «some water», «more juice», «a lot of seeds»."
       }
      },
+     "gramaticaAntes": {
+      "n": 5,
+      "nivel": "A1",
+      "titulo": {
+       "gl": "Adverbios e expresións de frecuencia",
+       "es": "Adverbios y expresiones de frecuencia"
+      }
+     },
+     "gramaticaDespois": {
+      "n": 7,
+      "nivel": "A1",
+      "titulo": {
+       "gl": "There is / there are e preposicións de lugar",
+       "es": "There is / there are y preposiciones de lugar"
+      }
+     },
      "obxectivos": [
       {
        "gl": "Facer xestos coordinados de mastigar e de tragar de mentira ao oír as ordes bite e eat.",
@@ -15931,6 +16155,22 @@
       "paraFamilias": {
        "gl": "Que hai e onde está: «There is a fish in the water», «The ball is under the table».",
        "es": "Qué hay y dónde está: «There is a fish in the water», «The ball is under the table»."
+      }
+     },
+     "gramaticaAntes": {
+      "n": 6,
+      "nivel": "A1",
+      "titulo": {
+       "gl": "Contables e incontables",
+       "es": "Contables e incontables"
+      }
+     },
+     "gramaticaDespois": {
+      "n": 8,
+      "nivel": "A1",
+      "titulo": {
+       "gl": "Preguntas con wh-",
+       "es": "Preguntas con wh-"
       }
      },
      "obxectivos": [
@@ -17041,6 +17281,22 @@
        "es": "Qué hay y dónde está: «There is a fish in the water», «The ball is under the table»."
       }
      },
+     "gramaticaAntes": {
+      "n": 6,
+      "nivel": "A1",
+      "titulo": {
+       "gl": "Contables e incontables",
+       "es": "Contables e incontables"
+      }
+     },
+     "gramaticaDespois": {
+      "n": 8,
+      "nivel": "A1",
+      "titulo": {
+       "gl": "Preguntas con wh-",
+       "es": "Preguntas con wh-"
+      }
+     },
      "obxectivos": [
       {
        "gl": "Seguir as ordes de fregar e lavar o corpo ao oír wash e rub.",
@@ -18109,6 +18365,22 @@
        "es": "Preguntar: «Where is the sun?», «What is it?», «Who is it?»."
       }
      },
+     "gramaticaAntes": {
+      "n": 7,
+      "nivel": "A1",
+      "titulo": {
+       "gl": "There is / there are e preposicións de lugar",
+       "es": "There is / there are y preposiciones de lugar"
+      }
+     },
+     "gramaticaDespois": {
+      "n": 9,
+      "nivel": "A1",
+      "titulo": {
+       "gl": "Preposicións de tempo",
+       "es": "Preposiciones de tiempo"
+      }
+     },
      "obxectivos": [
       {
        "gl": "Seguir as ordes de fregar e lavar o corpo ao oír wash e rub.",
@@ -19173,6 +19445,22 @@
       "paraFamilias": {
        "gl": "Preguntar: «Where is the sun?», «What is it?», «Who is it?».",
        "es": "Preguntar: «Where is the sun?», «What is it?», «Who is it?»."
+      }
+     },
+     "gramaticaAntes": {
+      "n": 7,
+      "nivel": "A1",
+      "titulo": {
+       "gl": "There is / there are e preposicións de lugar",
+       "es": "There is / there are y preposiciones de lugar"
+      }
+     },
+     "gramaticaDespois": {
+      "n": 9,
+      "nivel": "A1",
+      "titulo": {
+       "gl": "Preposicións de tempo",
+       "es": "Preposiciones de tiempo"
       }
      },
      "obxectivos": [
@@ -20315,6 +20603,22 @@
       "paraFamilias": {
        "gl": "Preguntar: «Where is the sun?», «What is it?», «Who is it?».",
        "es": "Preguntar: «Where is the sun?», «What is it?», «Who is it?»."
+      }
+     },
+     "gramaticaAntes": {
+      "n": 7,
+      "nivel": "A1",
+      "titulo": {
+       "gl": "There is / there are e preposicións de lugar",
+       "es": "There is / there are y preposiciones de lugar"
+      }
+     },
+     "gramaticaDespois": {
+      "n": 9,
+      "nivel": "A1",
+      "titulo": {
+       "gl": "Preposicións de tempo",
+       "es": "Preposiciones de tiempo"
       }
      },
      "obxectivos": [
@@ -21493,6 +21797,22 @@
        "es": "Cuándo pasa: «in the morning», «at night», «on Monday»."
       }
      },
+     "gramaticaAntes": {
+      "n": 8,
+      "nivel": "A1",
+      "titulo": {
+       "gl": "Preguntas con wh-",
+       "es": "Preguntas con wh-"
+      }
+     },
+     "gramaticaDespois": {
+      "n": 10,
+      "nivel": "A1",
+      "titulo": {
+       "gl": "Can e o imperativo",
+       "es": "Can y el imperativo"
+      }
+     },
      "obxectivos": [
       {
        "gl": "Usar de forma verbal e espontánea as fórmulas de alternancia no xogo «My turn» e «Your turn» ao amorear e pasar bloques de madeira.",
@@ -22556,6 +22876,22 @@
       "paraFamilias": {
        "gl": "Cando pasa: «in the morning», «at night», «on Monday».",
        "es": "Cuándo pasa: «in the morning», «at night», «on Monday»."
+      }
+     },
+     "gramaticaAntes": {
+      "n": 8,
+      "nivel": "A1",
+      "titulo": {
+       "gl": "Preguntas con wh-",
+       "es": "Preguntas con wh-"
+      }
+     },
+     "gramaticaDespois": {
+      "n": 10,
+      "nivel": "A1",
+      "titulo": {
+       "gl": "Can e o imperativo",
+       "es": "Can y el imperativo"
       }
      },
      "obxectivos": [
@@ -23694,6 +24030,22 @@
       "paraFamilias": {
        "gl": "Ordes e o que se pode facer: «Jump!», «Clap your hands!», «I can fly!».",
        "es": "Órdenes y lo que se puede hacer: «Jump!», «Clap your hands!», «I can fly!»."
+      }
+     },
+     "gramaticaAntes": {
+      "n": 9,
+      "nivel": "A1",
+      "titulo": {
+       "gl": "Preposicións de tempo",
+       "es": "Preposiciones de tiempo"
+      }
+     },
+     "gramaticaDespois": {
+      "n": 11,
+      "nivel": "A2",
+      "titulo": {
+       "gl": "Presente continuo",
+       "es": "Presente continuo"
       }
      },
      "obxectivos": [
@@ -24862,6 +25214,22 @@
        "es": "Órdenes y lo que se puede hacer: «Jump!», «Clap your hands!», «I can fly!»."
       }
      },
+     "gramaticaAntes": {
+      "n": 9,
+      "nivel": "A1",
+      "titulo": {
+       "gl": "Preposicións de tempo",
+       "es": "Preposiciones de tiempo"
+      }
+     },
+     "gramaticaDespois": {
+      "n": 11,
+      "nivel": "A2",
+      "titulo": {
+       "gl": "Presente continuo",
+       "es": "Presente continuo"
+      }
+     },
      "obxectivos": [
       {
        "gl": "Usar de forma verbal e espontánea as fórmulas de alternancia no xogo «My turn» e «Your turn» ao amorear e pasar bloques de madeira.",
@@ -26000,6 +26368,22 @@
        "es": "Órdenes y lo que se puede hacer: «Jump!», «Clap your hands!», «I can fly!»."
       }
      },
+     "gramaticaAntes": {
+      "n": 9,
+      "nivel": "A1",
+      "titulo": {
+       "gl": "Preposicións de tempo",
+       "es": "Preposiciones de tiempo"
+      }
+     },
+     "gramaticaDespois": {
+      "n": 11,
+      "nivel": "A2",
+      "titulo": {
+       "gl": "Presente continuo",
+       "es": "Presente continuo"
+      }
+     },
      "obxectivos": [
       {
        "gl": "Usar de forma verbal e espontánea as fórmulas de alternancia no xogo «My turn» e «Your turn» ao amorear e pasar bloques de madeira.",
@@ -27090,6 +27474,22 @@
       "paraFamilias": {
        "gl": "O que está pasando agora: «It is raining», «The bear is sleeping».",
        "es": "Lo que está pasando ahora: «It is raining», «The bear is sleeping»."
+      }
+     },
+     "gramaticaAntes": {
+      "n": 10,
+      "nivel": "A1",
+      "titulo": {
+       "gl": "Can e o imperativo",
+       "es": "Can y el imperativo"
+      }
+     },
+     "gramaticaDespois": {
+      "n": 12,
+      "nivel": "A2",
+      "titulo": {
+       "gl": "Pasado de to be",
+       "es": "Pasado de to be"
       }
      },
      "obxectivos": [
@@ -28238,6 +28638,22 @@
        "es": "Lo que está pasando ahora: «It is raining», «The bear is sleeping»."
       }
      },
+     "gramaticaAntes": {
+      "n": 10,
+      "nivel": "A1",
+      "titulo": {
+       "gl": "Can e o imperativo",
+       "es": "Can y el imperativo"
+      }
+     },
+     "gramaticaDespois": {
+      "n": 12,
+      "nivel": "A2",
+      "titulo": {
+       "gl": "Pasado de to be",
+       "es": "Pasado de to be"
+      }
+     },
      "obxectivos": [
       {
        "gl": "Producir a fórmula social de entrega «Here you are» e a fórmula de cortesía de quen recibe «Thank you» en intercambios reais de alimentos simulados.",
@@ -29344,6 +29760,22 @@
       "paraFamilias": {
        "gl": "Como era antes: «It was cold», «There was a squirrel».",
        "es": "Cómo era antes: «It was cold», «There was a squirrel»."
+      }
+     },
+     "gramaticaAntes": {
+      "n": 11,
+      "nivel": "A2",
+      "titulo": {
+       "gl": "Presente continuo",
+       "es": "Presente continuo"
+      }
+     },
+     "gramaticaDespois": {
+      "n": 13,
+      "nivel": "A2",
+      "titulo": {
+       "gl": "Pasado simple",
+       "es": "Pasado simple"
       }
      },
      "obxectivos": [
@@ -30462,6 +30894,22 @@
        "es": "Cómo era antes: «It was cold», «There was a squirrel»."
       }
      },
+     "gramaticaAntes": {
+      "n": 11,
+      "nivel": "A2",
+      "titulo": {
+       "gl": "Presente continuo",
+       "es": "Presente continuo"
+      }
+     },
+     "gramaticaDespois": {
+      "n": 13,
+      "nivel": "A2",
+      "titulo": {
+       "gl": "Pasado simple",
+       "es": "Pasado simple"
+      }
+     },
      "obxectivos": [
       {
        "gl": "Producir a fórmula social de entrega «Here you are» e a fórmula de cortesía de quen recibe «Thank you» en intercambios reais de alimentos simulados.",
@@ -31556,6 +32004,22 @@
       "paraFamilias": {
        "gl": "Como era antes: «It was cold», «There was a squirrel».",
        "es": "Cómo era antes: «It was cold», «There was a squirrel»."
+      }
+     },
+     "gramaticaAntes": {
+      "n": 11,
+      "nivel": "A2",
+      "titulo": {
+       "gl": "Presente continuo",
+       "es": "Presente continuo"
+      }
+     },
+     "gramaticaDespois": {
+      "n": 13,
+      "nivel": "A2",
+      "titulo": {
+       "gl": "Pasado simple",
+       "es": "Pasado simple"
       }
      },
      "obxectivos": [
@@ -32718,6 +33182,22 @@
        "es": "Contar lo que pasó: «The chestnut rolled», «We went home»."
       }
      },
+     "gramaticaAntes": {
+      "n": 12,
+      "nivel": "A2",
+      "titulo": {
+       "gl": "Pasado de to be",
+       "es": "Pasado de to be"
+      }
+     },
+     "gramaticaDespois": {
+      "n": 14,
+      "nivel": "A2",
+      "titulo": {
+       "gl": "Pasado continuo",
+       "es": "Pasado continuo"
+      }
+     },
      "obxectivos": [
       {
        "gl": "Formular explicacións causais con conectores subordinados («The puppy is crying because his leg is hurt»).",
@@ -33855,6 +34335,22 @@
       "paraFamilias": {
        "gl": "Contar o que pasou: «The chestnut rolled», «We went home».",
        "es": "Contar lo que pasó: «The chestnut rolled», «We went home»."
+      }
+     },
+     "gramaticaAntes": {
+      "n": 12,
+      "nivel": "A2",
+      "titulo": {
+       "gl": "Pasado de to be",
+       "es": "Pasado de to be"
+      }
+     },
+     "gramaticaDespois": {
+      "n": 14,
+      "nivel": "A2",
+      "titulo": {
+       "gl": "Pasado continuo",
+       "es": "Pasado continuo"
       }
      },
      "obxectivos": [
@@ -35101,6 +35597,22 @@
        "es": "Lo que estaba pasando: «The wolf was sleeping when the sheep came»."
       }
      },
+     "gramaticaAntes": {
+      "n": 13,
+      "nivel": "A2",
+      "titulo": {
+       "gl": "Pasado simple",
+       "es": "Pasado simple"
+      }
+     },
+     "gramaticaDespois": {
+      "n": 15,
+      "nivel": "A2",
+      "titulo": {
+       "gl": "Pronomes obxecto e reflexivos",
+       "es": "Pronombres objeto y reflexivos"
+      }
+     },
      "obxectivos": [
       {
        "gl": "Formular explicacións causais con conectores subordinados («The puppy is crying because his leg is hurt»).",
@@ -36315,6 +36827,22 @@
       "paraFamilias": {
        "gl": "O que estaba pasando: «The wolf was sleeping when the sheep came».",
        "es": "Lo que estaba pasando: «The wolf was sleeping when the sheep came»."
+      }
+     },
+     "gramaticaAntes": {
+      "n": 13,
+      "nivel": "A2",
+      "titulo": {
+       "gl": "Pasado simple",
+       "es": "Pasado simple"
+      }
+     },
+     "gramaticaDespois": {
+      "n": 15,
+      "nivel": "A2",
+      "titulo": {
+       "gl": "Pronomes obxecto e reflexivos",
+       "es": "Pronombres objeto y reflexivos"
       }
      },
      "obxectivos": [
@@ -37561,6 +38089,22 @@
        "es": "Lo que estaba pasando: «The wolf was sleeping when the sheep came»."
       }
      },
+     "gramaticaAntes": {
+      "n": 13,
+      "nivel": "A2",
+      "titulo": {
+       "gl": "Pasado simple",
+       "es": "Pasado simple"
+      }
+     },
+     "gramaticaDespois": {
+      "n": 15,
+      "nivel": "A2",
+      "titulo": {
+       "gl": "Pronomes obxecto e reflexivos",
+       "es": "Pronombres objeto y reflexivos"
+      }
+     },
      "obxectivos": [
       {
        "gl": "Formular explicacións causais con conectores subordinados («The puppy is crying because his leg is hurt»).",
@@ -38729,6 +39273,22 @@
        "es": "A quién: «Look at me», «Help him», «I can do it myself»."
       }
      },
+     "gramaticaAntes": {
+      "n": 14,
+      "nivel": "A2",
+      "titulo": {
+       "gl": "Pasado continuo",
+       "es": "Pasado continuo"
+      }
+     },
+     "gramaticaDespois": {
+      "n": 16,
+      "nivel": "A2",
+      "titulo": {
+       "gl": "Adxectivos: comparativos e superlativos",
+       "es": "Adjetivos: comparativos y superlativos"
+      }
+     },
      "obxectivos": [
       {
        "gl": "Xustificar a escolla de roupa de abrigo e calzado segundo un tempo simulado («I put on my boots because it is raining outside»).",
@@ -39891,6 +40451,22 @@
       "paraFamilias": {
        "gl": "A quen: «Look at me», «Help him», «I can do it myself».",
        "es": "A quién: «Look at me», «Help him», «I can do it myself»."
+      }
+     },
+     "gramaticaAntes": {
+      "n": 14,
+      "nivel": "A2",
+      "titulo": {
+       "gl": "Pasado continuo",
+       "es": "Pasado continuo"
+      }
+     },
+     "gramaticaDespois": {
+      "n": 16,
+      "nivel": "A2",
+      "titulo": {
+       "gl": "Adxectivos: comparativos e superlativos",
+       "es": "Adjetivos: comparativos y superlativos"
       }
      },
      "obxectivos": [
@@ -41109,6 +41685,22 @@
        "es": "Comparar: «bigger», «as big as», «the biggest»."
       }
      },
+     "gramaticaAntes": {
+      "n": 15,
+      "nivel": "A2",
+      "titulo": {
+       "gl": "Pronomes obxecto e reflexivos",
+       "es": "Pronombres objeto y reflexivos"
+      }
+     },
+     "gramaticaDespois": {
+      "n": 17,
+      "nivel": "A2",
+      "titulo": {
+       "gl": "O futuro",
+       "es": "El futuro"
+      }
+     },
      "obxectivos": [
       {
        "gl": "Xustificar a escolla de roupa de abrigo e calzado segundo un tempo simulado («I put on my boots because it is raining outside»).",
@@ -42245,6 +42837,22 @@
       "paraFamilias": {
        "gl": "Comparar: «bigger», «as big as», «the biggest».",
        "es": "Comparar: «bigger», «as big as», «the biggest»."
+      }
+     },
+     "gramaticaAntes": {
+      "n": 15,
+      "nivel": "A2",
+      "titulo": {
+       "gl": "Pronomes obxecto e reflexivos",
+       "es": "Pronombres objeto y reflexivos"
+      }
+     },
+     "gramaticaDespois": {
+      "n": 17,
+      "nivel": "A2",
+      "titulo": {
+       "gl": "O futuro",
+       "es": "El futuro"
       }
      },
      "obxectivos": [
@@ -43487,6 +44095,22 @@
        "es": "Comparar: «bigger», «as big as», «the biggest»."
       }
      },
+     "gramaticaAntes": {
+      "n": 15,
+      "nivel": "A2",
+      "titulo": {
+       "gl": "Pronomes obxecto e reflexivos",
+       "es": "Pronombres objeto y reflexivos"
+      }
+     },
+     "gramaticaDespois": {
+      "n": 17,
+      "nivel": "A2",
+      "titulo": {
+       "gl": "O futuro",
+       "es": "El futuro"
+      }
+     },
      "obxectivos": [
       {
        "gl": "Xustificar a escolla de roupa de abrigo e calzado segundo un tempo simulado («I put on my boots because it is raining outside»).",
@@ -44637,6 +45261,22 @@
        "es": "Lo que vamos a hacer: «We are going to swim», «I will help you»."
       }
      },
+     "gramaticaAntes": {
+      "n": 16,
+      "nivel": "A2",
+      "titulo": {
+       "gl": "Adxectivos: comparativos e superlativos",
+       "es": "Adjetivos: comparativos y superlativos"
+      }
+     },
+     "gramaticaDespois": {
+      "n": 18,
+      "nivel": "A2",
+      "titulo": {
+       "gl": "Obriga e consello",
+       "es": "Obligación y consejo"
+      }
+     },
      "obxectivos": [
       {
        "gl": "Empregar linguaxe argumentativa estruturada para resolver a posesión de materiais compartidos («I was using the scissors first, but you can have them next»).",
@@ -45774,6 +46414,22 @@
       "paraFamilias": {
        "gl": "O que imos facer: «We are going to swim», «I will help you».",
        "es": "Lo que vamos a hacer: «We are going to swim», «I will help you»."
+      }
+     },
+     "gramaticaAntes": {
+      "n": 16,
+      "nivel": "A2",
+      "titulo": {
+       "gl": "Adxectivos: comparativos e superlativos",
+       "es": "Adjetivos: comparativos y superlativos"
+      }
+     },
+     "gramaticaDespois": {
+      "n": 18,
+      "nivel": "A2",
+      "titulo": {
+       "gl": "Obriga e consello",
+       "es": "Obligación y consejo"
       }
      },
      "obxectivos": [
@@ -47020,6 +47676,22 @@
        "es": "Lo que hay que hacer: «You must walk slowly», «You should hide»."
       }
      },
+     "gramaticaAntes": {
+      "n": 17,
+      "nivel": "A2",
+      "titulo": {
+       "gl": "O futuro",
+       "es": "El futuro"
+      }
+     },
+     "gramaticaDespois": {
+      "n": 19,
+      "nivel": "A2",
+      "titulo": {
+       "gl": "Preposicións de movemento",
+       "es": "Preposiciones de movimiento"
+      }
+     },
      "obxectivos": [
       {
        "gl": "Empregar linguaxe argumentativa estruturada para resolver a posesión de materiais compartidos («I was using the scissors first, but you can have them next»).",
@@ -48206,6 +48878,22 @@
       "paraFamilias": {
        "gl": "O que hai que facer: «You must walk slowly», «You should hide».",
        "es": "Lo que hay que hacer: «You must walk slowly», «You should hide»."
+      }
+     },
+     "gramaticaAntes": {
+      "n": 17,
+      "nivel": "A2",
+      "titulo": {
+       "gl": "O futuro",
+       "es": "El futuro"
+      }
+     },
+     "gramaticaDespois": {
+      "n": 19,
+      "nivel": "A2",
+      "titulo": {
+       "gl": "Preposicións de movemento",
+       "es": "Preposiciones de movimiento"
       }
      },
      "obxectivos": [
@@ -49428,6 +50116,22 @@
        "es": "Lo que hay que hacer: «You must walk slowly», «You should hide»."
       }
      },
+     "gramaticaAntes": {
+      "n": 17,
+      "nivel": "A2",
+      "titulo": {
+       "gl": "O futuro",
+       "es": "El futuro"
+      }
+     },
+     "gramaticaDespois": {
+      "n": 19,
+      "nivel": "A2",
+      "titulo": {
+       "gl": "Preposicións de movemento",
+       "es": "Preposiciones de movimiento"
+      }
+     },
      "obxectivos": [
       {
        "gl": "Empregar linguaxe argumentativa estruturada para resolver a posesión de materiais compartidos («I was using the scissors first, but you can have them next»).",
@@ -50578,6 +51282,22 @@
       "paraFamilias": {
        "gl": "Cara a onde: «into the boat», «across the river», «through the waves».",
        "es": "Hacia dónde: «into the boat», «across the river», «through the waves»."
+      }
+     },
+     "gramaticaAntes": {
+      "n": 18,
+      "nivel": "A2",
+      "titulo": {
+       "gl": "Obriga e consello",
+       "es": "Obligación y consejo"
+      }
+     },
+     "gramaticaDespois": {
+      "n": 20,
+      "nivel": "A2",
+      "titulo": {
+       "gl": "Conectores básicos",
+       "es": "Conectores básicos"
       }
      },
      "obxectivos": [
@@ -51768,6 +52488,22 @@
        "es": "Hacia dónde: «into the boat», «across the river», «through the waves»."
       }
      },
+     "gramaticaAntes": {
+      "n": 18,
+      "nivel": "A2",
+      "titulo": {
+       "gl": "Obriga e consello",
+       "es": "Obligación y consejo"
+      }
+     },
+     "gramaticaDespois": {
+      "n": 20,
+      "nivel": "A2",
+      "titulo": {
+       "gl": "Conectores básicos",
+       "es": "Conectores básicos"
+      }
+     },
      "obxectivos": [
       {
        "gl": "Planificar itinerarios de ficción con conectores de secuencia temporal («First we fly by plane, then we take a bus across the mountains»).",
@@ -52950,6 +53686,22 @@
       "paraFamilias": {
        "gl": "Unir dúas ideas: «We pull and pull, but it doesn't move», «because».",
        "es": "Unir dos ideas: «We pull and pull, but it doesn't move», «because»."
+      }
+     },
+     "gramaticaAntes": {
+      "n": 19,
+      "nivel": "A2",
+      "titulo": {
+       "gl": "Preposicións de movemento",
+       "es": "Preposiciones de movimiento"
+      }
+     },
+     "gramaticaDespois": {
+      "n": 21,
+      "nivel": "B1",
+      "titulo": {
+       "gl": "Presente perfecto",
+       "es": "Presente perfecto"
       }
      },
      "obxectivos": [
@@ -54164,6 +54916,22 @@
        "es": "Unir dos ideas: «We pull and pull, but it doesn't move», «because»."
       }
      },
+     "gramaticaAntes": {
+      "n": 19,
+      "nivel": "A2",
+      "titulo": {
+       "gl": "Preposicións de movemento",
+       "es": "Preposiciones de movimiento"
+      }
+     },
+     "gramaticaDespois": {
+      "n": 21,
+      "nivel": "B1",
+      "titulo": {
+       "gl": "Presente perfecto",
+       "es": "Presente perfecto"
+      }
+     },
      "obxectivos": [
       {
        "gl": "Planificar itinerarios de ficción con conectores de secuencia temporal («First we fly by plane, then we take a bus across the mountains»).",
@@ -55332,6 +56100,22 @@
       "paraFamilias": {
        "gl": "Unir dúas ideas: «We pull and pull, but it doesn't move», «because».",
        "es": "Unir dos ideas: «We pull and pull, but it doesn't move», «because»."
+      }
+     },
+     "gramaticaAntes": {
+      "n": 19,
+      "nivel": "A2",
+      "titulo": {
+       "gl": "Preposicións de movemento",
+       "es": "Preposiciones de movimiento"
+      }
+     },
+     "gramaticaDespois": {
+      "n": 21,
+      "nivel": "B1",
+      "titulo": {
+       "gl": "Presente perfecto",
+       "es": "Presente perfecto"
       }
      },
      "obxectivos": [

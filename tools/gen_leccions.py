@@ -467,6 +467,14 @@ def main():
                 **({"foco": {"gl": foco[0], "es": foco[1]}} if foco else {}),
                 "gramatica": {"n": pg["n"], "nivel": pg["nivel"], "titulo": pg["titulo"],
                               "paraFamilias": pg["paraFamilias"]},
+                # De dónde viene y a dónde va: la unidad de gramática de antes
+                # y la de después, en el orden de Frank.
+                **({"gramaticaAntes": {"n": pg["n"] - 1, "nivel": puntos[pg["n"] - 1]["nivel"],
+                                       "titulo": puntos[pg["n"] - 1]["titulo"]}}
+                   if pg["n"] > 1 else {}),
+                **({"gramaticaDespois": {"n": pg["n"] + 1, "nivel": puntos[pg["n"] + 1]["nivel"],
+                                         "titulo": puntos[pg["n"] + 1]["titulo"]}}
+                   if pg["n"] < 48 else {}),
                 "obxectivos": [{"gl": o["gl"], "es": o["es"]} for o in pu.get("objetivos") or []],
                 "leccions": leccions,
             })

@@ -14,7 +14,6 @@ import '../../../data/models/leccion_model.dart';
 import '../../cuentos/views/contos_dialogados_screen.dart';
 import '../views/camino_do_curso_screen.dart';
 import '../views/gramatica_screen.dart';
-import 'camino_da_unidade.dart';
 import '../../../data/models/steam_do_mes_model.dart';
 import '../../../data/models/xogos_fogar_model.dart';
 import '../../familias/widgets/reto_da_semana.dart';
@@ -963,27 +962,16 @@ class _LeccionDaSemanaCargadaState extends State<LeccionDaSemanaCargada> {
                     ),
                   );
           }
-          // En casa, la portada compacta; en el aula, la lección entera.
-          if (!widget.enAula) {
-            return LeccionFamilia(
-              leccions: l,
-              cursoId: widget.cursoId,
-              mesCalendario: widget.mesCalendario,
-              semana: widget.semana,
-              dia: widget.dia,
-              language: widget.language,
-              audioService: widget.audioService,
-            );
-          }
-          return LeccionDaSemana(
+          // La misma lección clara en casa y en el aula (O-20261028-6): la
+          // docente ve lo que ven las familias.
+          return LeccionFamilia(
             leccions: l,
             cursoId: widget.cursoId,
             mesCalendario: widget.mesCalendario,
             semana: widget.semana,
+            dia: widget.dia,
             language: widget.language,
             audioService: widget.audioService,
-            enAula: widget.enAula,
-            dia: widget.dia,
           );
         },
       );
@@ -1081,11 +1069,12 @@ class LeccionNoCalendario extends StatelessWidget {
   }
 }
 
-/// Hoxe de las familias (O-20261028-4), con la UX de dos apps abiertas y
-/// probadas con familias y criaturas: Bebbo (UNICEF) abre por la etapa de la
-/// criatura y una tarjeta diaria con una sola cosa que hacer; Oppia presenta
-/// cada tema como una lista corta de lecciones con su estado. Todo lo demás,
-/// plegado en «Ver como e por que».
+/// Hoxe de las familias (O-20261028-4/6). Arriba, dónde estamos: la unidad
+/// de gramática de antes, la de ahora y la siguiente, y el tema del mes con su
+/// lección. Debajo, lo de hoy y la semana día a día, como los nodos del camino
+/// de duolingo-clone (github.com/sanidhyy/duolingo-clone, MIT): hecho, hoy y
+/// lo que viene. Luego lo nuevo de la semana y lo que ya debería saber. El
+/// cómo y el porqué, plegados.
 class LeccionFamilia extends StatefulWidget {
   final Leccions leccions;
   final String cursoId;
@@ -1111,7 +1100,8 @@ class LeccionFamilia extends StatefulWidget {
 }
 
 class _LeccionFamiliaState extends State<LeccionFamilia> {
-  String? _elixida;
+  /// El día que se mira en la semana; `null` es hoy.
+  int? _diaElixido;
 
   @override
   void didUpdateWidget(LeccionFamilia old) {
@@ -1119,7 +1109,7 @@ class _LeccionFamiliaState extends State<LeccionFamilia> {
     if (old.cursoId != widget.cursoId ||
         old.mesCalendario != widget.mesCalendario ||
         old.semana != widget.semana) {
-      _elixida = null;
+      _diaElixido = null;
     }
   }
 
@@ -1135,6 +1125,14 @@ class _LeccionFamiliaState extends State<LeccionFamilia> {
         significado: p.significado,
       );
 
+  static const _iconas = [
+    Icons.headphones_rounded,
+    Icons.record_voice_over_rounded,
+    Icons.music_note_rounded,
+    Icons.extension_rounded,
+    Icons.auto_stories_rounded,
+  ];
+
   @override
   Widget build(BuildContext context) {
     final lang = widget.language;
@@ -1142,15 +1140,17 @@ class _LeccionFamiliaState extends State<LeccionFamilia> {
     final g = widget.leccions;
     final daSemana = g.da(widget.cursoId, widget.mesCalendario, widget.semana);
     if (daSemana == null) return const SizedBox.shrink();
-    final (unidade, leccion) = _elixida == null
-        ? daSemana
-        : (g.porId(widget.cursoId, _elixida!) ?? daSemana);
+    final (unidade, leccion) = daSemana;
     final unidades = g.unidades[widget.cursoId] ?? const [];
     final iU = unidades.indexWhere((u) => u.id == unidade.id);
-    final seguinte = iU + 1 < unidades.length ? unidades[iU + 1] : null;
     final grupo = LeccionDaSemana.grupos[widget.cursoId]?.resolve(lang) ?? '';
     final pezas = leccion.repaso ? leccion.repasa : leccion.novas;
     final acento = context.acento;
+    final hoxeN = (widget.dia ?? 1).clamp(1, 5);
+    final nDia = _diaElixido ?? hoxeN;
+    final dia = leccion.dias.length >= nDia ? leccion.dias[nDia - 1] : null;
+    final reto = leccion.reto;
+
     final kicker = TextStyle(
       fontSize: 13,
       fontWeight: FontWeight.w800,
@@ -1164,58 +1164,182 @@ class _LeccionFamiliaState extends State<LeccionFamilia> {
         fontWeight: FontWeight.w700,
         color: AppTheme.textPrimary,
         height: 1.3);
-    // El día que toca; el fin de semana, el lunes.
-    final nDia = (widget.dia ?? 1).clamp(1, 5);
-    final hoxe = leccion.dias.length >= nDia ? leccion.dias[nDia - 1] : null;
-    final reto = leccion.reto;
-
     BoxDecoration tarxeta({bool chea = false}) => BoxDecoration(
           color: chea ? context.acentoTint : Colors.white,
           borderRadius: BorderRadius.circular(AppTheme.radiusCard),
           border: Border.all(color: chea ? acento : AppTheme.border),
         );
 
-    return Column(
-      key: ValueKey('leccion_${leccion.id}'),
-      crossAxisAlignment: CrossAxisAlignment.stretch,
-      children: [
-        // 0 · La unidad de gramática de la semana, arriba y en grande.
-        if (unidade.gramatica case final gr?) ...[
-          UnidadeGramaticalDaSemana(
-            punto: gr,
-            frase: leccion.fraseGramatica,
-            language: lang,
-            audioService: widget.audioService,
-          ),
-          const SizedBox(height: 18),
-        ],
-        // 2 · Hoy (Bebbo): una sola cosa que hacer.
-        if (hoxe != null) ...[
-          const SizedBox(height: 12),
-          Container(
-            key: const Key('leccion_hoxe'),
-            padding: const EdgeInsets.all(16),
-            decoration: tarxeta(chea: true),
+    Widget paso(String rotulo, PuntoDeGramatica? p, {bool agora = false}) =>
+        Expanded(
+          child: Container(
+            padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 10),
+            decoration: BoxDecoration(
+              color: agora ? acento : Colors.white,
+              borderRadius: BorderRadius.circular(12),
+              border: Border.all(color: agora ? acento : AppTheme.border),
+            ),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  '${g.texto('hoxe', lang)} · '
-                  '${hoxe.dia.resolve(lang).toUpperCase()}',
-                  style: kicker,
+                  rotulo,
+                  style: TextStyle(
+                    fontSize: 12,
+                    fontWeight: FontWeight.w800,
+                    letterSpacing: 0.5,
+                    color: agora ? Colors.white : AppTheme.textMuted,
+                  ),
                 ),
-                const SizedBox(height: 6),
-                Text(hoxe.texto.resolve(lang), style: forte),
-                if (hoxe.en case final en?) ...[
-                  const SizedBox(height: 8),
-                  _chip(PezaDaLeccion(
-                      tipo: 'dia', en: en, significado: hoxe.significado)),
-                ],
+                const SizedBox(height: 2),
+                Text(
+                  p == null ? '—' : '${p.n} · ${p.nivel}',
+                  style: TextStyle(
+                    fontSize: 12.5,
+                    fontWeight: FontWeight.w700,
+                    color: agora ? Colors.white : acento,
+                  ),
+                ),
+                const SizedBox(height: 2),
+                Text(
+                  p?.titulo.resolve(lang) ?? '',
+                  style: TextStyle(
+                    fontSize: 14,
+                    fontWeight: FontWeight.w700,
+                    color: agora ? Colors.white : AppTheme.textPrimary,
+                    height: 1.2,
+                  ),
+                ),
               ],
             ),
           ),
-        ],
-        // 3 · Esta semana: las palabras y la gramática, en una línea cada una.
+        );
+
+    return Column(
+      key: ValueKey('leccion_${leccion.id}'),
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        // 1 · Dónde estamos, de dónde venimos y a dónde vamos.
+        Container(
+          key: const Key('leccion_cabeceira'),
+          padding: const EdgeInsets.all(14),
+          decoration: tarxeta(),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                '${grupo.toUpperCase()} · '
+                '${isGl ? 'ONDE ESTAMOS NAS 48 UNIDADES' : 'DÓNDE ESTAMOS EN LAS 48 UNIDADES'}',
+                style: kicker,
+              ),
+              const SizedBox(height: 10),
+              IntrinsicHeight(
+                key: const Key('leccion_ruta_gramatica'),
+                child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: [
+                    paso(isGl ? 'ANTES' : 'ANTES', unidade.gramaticaAntes),
+                    const SizedBox(width: 6),
+                    paso(isGl ? 'AGORA' : 'AHORA', unidade.gramatica,
+                        agora: true),
+                    const SizedBox(width: 6),
+                    paso(
+                        isGl ? 'DESPOIS' : 'DESPUÉS', unidade.gramaticaDespois),
+                  ],
+                ),
+              ),
+              if (unidade.gramatica?.paraFamilias case final pf?) ...[
+                const SizedBox(height: 10),
+                Text(pf.resolve(lang), style: lectura),
+              ],
+              const Divider(height: 22),
+              Text(
+                '${isGl ? 'Tema' : 'Tema'} ${iU + 1} ${isGl ? 'de' : 'de'} ${unidades.length} · '
+                '${leccion.repaso ? 'Repaso' : 'Lección'} ${leccion.numero} ${isGl ? 'de' : 'de'} ${leccion.de}',
+                key: const Key('leccion_tema'),
+                style: kicker,
+              ),
+              const SizedBox(height: 2),
+              Text(unidade.titulo.resolve(lang), style: forte),
+              const SizedBox(height: 8),
+              ClipRRect(
+                borderRadius: BorderRadius.circular(4),
+                child: LinearProgressIndicator(
+                  key: const Key('leccion_progreso'),
+                  value: ((iU * 4) + leccion.numero) / (unidades.length * 4),
+                  minHeight: 8,
+                  color: acento,
+                  backgroundColor: context.acentoTint,
+                ),
+              ),
+              Align(
+                alignment: Alignment.centerLeft,
+                child: TextButton(
+                  key: const Key('leccion_ver_camino'),
+                  onPressed: () => Navigator.of(context).push(RutaLua(
+                    de: context,
+                    builder: (_) => CaminoDoCursoScreen(
+                      leccions: g,
+                      cursoId: widget.cursoId,
+                      actual: leccion.id,
+                      language: lang,
+                      audioService: widget.audioService,
+                    ),
+                  )),
+                  child: Text(isGl
+                      ? 'Ver todo o curso: os ${unidades.length} temas'
+                      : 'Ver todo el curso: los ${unidades.length} temas'),
+                ),
+              ),
+            ],
+          ),
+        ),
+        // 2 · La semana, día a día (los nodos de duolingo-clone), y lo de hoy.
+        const SizedBox(height: 12),
+        Container(
+          key: const Key('leccion_hoxe'),
+          padding: const EdgeInsets.fromLTRB(12, 14, 12, 16),
+          decoration: tarxeta(chea: true),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Row(
+                key: const Key('leccion_dias'),
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  for (var i = 1; i <= leccion.dias.length; i++)
+                    _NodoDoDia(
+                      clave: 'leccion_dia_$i',
+                      icona: _iconas[(i - 1) % _iconas.length],
+                      dia: leccion.dias[i - 1].dia.resolve(lang),
+                      feito: i < hoxeN,
+                      hoxe: i == hoxeN,
+                      elixido: i == nDia,
+                      onTap: () =>
+                          setState(() => _diaElixido = i == hoxeN ? null : i),
+                    ),
+                ],
+              ),
+              if (dia != null) ...[
+                const SizedBox(height: 14),
+                Text(
+                  nDia == hoxeN
+                      ? '${g.texto('hoxe', lang)} · ${dia.dia.resolve(lang).toUpperCase()}'
+                      : dia.dia.resolve(lang).toUpperCase(),
+                  style: kicker,
+                ),
+                const SizedBox(height: 4),
+                Text(dia.texto.resolve(lang), style: forte),
+                if (dia.en case final en?) ...[
+                  const SizedBox(height: 8),
+                  _chip(PezaDaLeccion(
+                      tipo: 'dia', en: en, significado: dia.significado)),
+                ],
+              ],
+            ],
+          ),
+        ),
+        // 3 · Lo nuevo de la semana.
         const SizedBox(height: 12),
         Container(
           key: const Key('leccion_esta_semana'),
@@ -1225,9 +1349,11 @@ class _LeccionFamiliaState extends State<LeccionFamilia> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                '${isGl ? 'ESTA SEMANA' : 'ESTA SEMANA'} · '
-                '${isGl ? 'LECCIÓN' : 'LECCIÓN'} ${leccion.numero} '
-                '${isGl ? 'DE' : 'DE'} ${leccion.de}',
+                leccion.repaso
+                    ? (isGl ? 'ESTA SEMANA VOLVEN' : 'ESTA SEMANA VUELVEN')
+                    : (isGl
+                        ? 'O NOVO DESTA SEMANA'
+                        : 'LO NUEVO DE ESTA SEMANA'),
                 style: kicker,
               ),
               const SizedBox(height: 8),
@@ -1237,62 +1363,55 @@ class _LeccionFamiliaState extends State<LeccionFamilia> {
                 runSpacing: 8,
                 children: [for (final p in pezas) _chip(p)],
               ),
+              if (leccion.fraseGramatica case final fg?) ...[
+                const SizedBox(height: 12),
+                Text(
+                  '${isGl ? 'A frase da unidade' : 'La frase de la unidad'} '
+                  '${unidade.gramatica?.n ?? ''}',
+                  key: const Key('leccion_gramatica'),
+                  style: kicker,
+                ),
+                const SizedBox(height: 6),
+                _chip(fg),
+              ],
             ],
           ),
         ),
-        const SizedBox(height: 18),
-        // 1 · El camino del tema del mes (duolingo-clone): la franja y las
-        // lecciones en zigzag. Tocar una la abre debajo.
-        Text(
-          '${grupo.toUpperCase()} · ${isGl ? 'O CAMIÑO DO CURSO' : 'EL CAMINO DEL CURSO'}',
-          key: const Key('leccion_cabeceira'),
-          style: kicker,
-        ),
-        const SizedBox(height: 8),
-        CaminoDaUnidade(
-          unidade: unidade,
-          numero: iU + 1,
-          de: unidades.length,
-          actual: unidade.id == daSemana.$1.id ? daSemana.$2.id : null,
-          feita: (l) {
-            final iD = unidades.indexWhere((u) => u.id == daSemana.$1.id);
-            if (iU != iD) return iU < iD;
-            return l.numero < daSemana.$2.numero;
-          },
-          elixida: leccion.id,
-          progreso: nDia / 5,
-          onTap: (l) =>
-              setState(() => _elixida = l.id == daSemana.$2.id ? null : l.id),
-          language: lang,
-        ),
-        if (seguinte != null)
-          Text(
-            '${isGl ? 'Despois' : 'Después'}: '
-            '${isGl ? 'tema' : 'tema'} ${iU + 2}, '
-            '${seguinte.titulo.resolve(lang)}',
-            key: const Key('leccion_despois'),
-            textAlign: TextAlign.center,
-            style: lectura,
+        // 4 · Lo que ya debería saber: lo de antes.
+        if (leccion.xaSabe.isNotEmpty) ...[
+          const SizedBox(height: 12),
+          Container(
+            key: const Key('leccion_xa_sabe'),
+            padding: const EdgeInsets.all(16),
+            decoration: tarxeta(),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  isGl ? 'XA DEBERÍA SABER' : 'YA DEBERÍA SABER',
+                  style: kicker,
+                ),
+                const SizedBox(height: 4),
+                Text(
+                  [
+                    if (unidade.gramaticaAntes case final ga?)
+                      '${isGl ? 'A unidade' : 'La unidad'} ${ga.n}, ${ga.titulo.resolve(lang)},',
+                    isGl
+                        ? 'e estas palabras de antes. Se algunha non a recorda, dila ti tamén esta semana.'
+                        : 'y estas palabras de antes. Si alguna no la recuerda, dila tú también esta semana.',
+                  ].join(' '),
+                  style: lectura,
+                ),
+                const SizedBox(height: 8),
+                Wrap(
+                  spacing: 8,
+                  runSpacing: 8,
+                  children: [for (final p in leccion.xaSabe) _chip(p)],
+                ),
+              ],
+            ),
           ),
-        Center(
-          child: TextButton.icon(
-            key: const Key('leccion_ver_camino'),
-            icon: const Icon(Icons.route_rounded),
-            label: Text(isGl
-                ? 'Ver todo o camiño: os ${unidades.length} temas'
-                : 'Ver todo el camino: los ${unidades.length} temas'),
-            onPressed: () => Navigator.of(context).push(RutaLua(
-              de: context,
-              builder: (_) => CaminoDoCursoScreen(
-                leccions: g,
-                cursoId: widget.cursoId,
-                actual: daSemana.$2.id,
-                language: lang,
-                audioService: widget.audioService,
-              ),
-            )),
-          ),
-        ),
+        ],
         // 5 · Cómo y por qué: plegado.
         const SizedBox(height: 12),
         Material(
@@ -1304,7 +1423,8 @@ class _LeccionFamiliaState extends State<LeccionFamilia> {
           clipBehavior: Clip.antiAlias,
           child: ExpansionTile(
             key: const Key('leccion_como_e_por_que'),
-            title: Text(isGl ? 'Ver como e por que' : 'Ver cómo y por qué',
+            leading: Icon(Icons.menu_book_rounded, color: acento),
+            title: Text(isGl ? 'Guía: como e por que' : 'Guía: cómo y por qué',
                 style: forte),
             childrenPadding: const EdgeInsets.fromLTRB(16, 0, 16, 16),
             expandedCrossAxisAlignment: CrossAxisAlignment.start,
@@ -1325,6 +1445,10 @@ class _LeccionFamiliaState extends State<LeccionFamilia> {
                 style: forte,
               ),
               Text(reto.nonPedir.resolve(lang), style: lectura),
+              if (leccion.espera case final e?) ...[
+                const SizedBox(height: 8),
+                Text(e.resolve(lang), style: forte),
+              ],
               const SizedBox(height: 10),
               for (final k in ['paso1Porque', 'paso2Porque', 'paso3Porque'])
                 Padding(
@@ -1338,15 +1462,110 @@ class _LeccionFamiliaState extends State<LeccionFamilia> {
                 for (final o in leccion.queMirar)
                   Text('·  ${o.resolve(lang)}', style: lectura),
               ],
-              if (unidade.obxectivos.isNotEmpty) ...[
-                const SizedBox(height: 8),
-                Text(g.texto('aOnde', lang), style: forte),
-                Text(unidade.obxectivos.first.resolve(lang), style: lectura),
-              ],
+              TextButton(
+                key: const Key('leccion_ver_gramatica'),
+                onPressed: () => Navigator.of(context).push(RutaLua(
+                  de: context,
+                  builder: (_) => GramaticaScreen(
+                    language: lang,
+                    audioService: widget.audioService,
+                    destacado: unidade.gramatica?.n,
+                  ),
+                )),
+                child: Text(isGl
+                    ? 'Ver as 48 unidades, de A1 a C1'
+                    : 'Ver las 48 unidades, de A1 a C1'),
+              ),
             ],
           ),
         ),
       ],
+    );
+  }
+}
+
+/// Un día de la semana como nodo de duolingo-clone: redondo, con el canto de
+/// abajo más oscuro; hecho, hoy (con anillo) o por venir.
+class _NodoDoDia extends StatelessWidget {
+  final String clave;
+  final IconData icona;
+  final String dia;
+  final bool feito;
+  final bool hoxe;
+  final bool elixido;
+  final VoidCallback onTap;
+
+  const _NodoDoDia({
+    required this.clave,
+    required this.icona,
+    required this.dia,
+    required this.feito,
+    required this.hoxe,
+    required this.elixido,
+    required this.onTap,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final acento = context.acento;
+    final activo = feito || hoxe;
+    final cor = activo ? acento : const Color(0xFFE5E7EB);
+    final canto = activo
+        ? Color.lerp(acento, Colors.black, 0.25)!
+        : const Color(0xFFC4C8CF);
+    return Semantics(
+      button: true,
+      selected: elixido,
+      label: dia,
+      excludeSemantics: true,
+      child: InkWell(
+        key: ValueKey(clave),
+        onTap: onTap,
+        borderRadius: BorderRadius.circular(30),
+        child: SizedBox(
+          width: 58,
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Container(
+                width: 54,
+                height: 54,
+                alignment: Alignment.center,
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  border: Border.all(
+                    color: elixido ? acento : Colors.transparent,
+                    width: 3,
+                  ),
+                ),
+                child: Container(
+                  width: 44,
+                  height: 44,
+                  decoration: BoxDecoration(
+                    color: cor,
+                    shape: BoxShape.circle,
+                    border: Border(bottom: BorderSide(color: canto, width: 5)),
+                  ),
+                  child: Icon(
+                    feito ? Icons.check_rounded : icona,
+                    size: 22,
+                    color: activo ? Colors.white : const Color(0xFF9CA3AF),
+                  ),
+                ),
+              ),
+              const SizedBox(height: 4),
+              Text(
+                dia.length > 3 ? dia.substring(0, 3) : dia,
+                style: TextStyle(
+                  fontSize: 13,
+                  fontWeight: hoxe ? FontWeight.w800 : FontWeight.w600,
+                  color: hoxe ? acento : AppTheme.textSecondary,
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
     );
   }
 }
@@ -1397,7 +1616,7 @@ class UnidadeGramaticalDaSemana extends StatelessWidget {
             punto.titulo.resolve(language),
             key: const Key('leccion_unidade_titulo'),
             style: const TextStyle(
-              fontSize: 26,
+              fontSize: 20,
               fontWeight: FontWeight.w800,
               color: AppTheme.textPrimary,
               height: 1.15,

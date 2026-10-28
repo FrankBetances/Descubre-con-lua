@@ -178,6 +178,10 @@ class UnidadeDeLeccions {
 
   /// El punto de la gramática del curso (A1-A2) de esta unidad.
   final PuntoDeGramatica? gramatica;
+
+  /// La unidad de gramática de antes y la de después.
+  final PuntoDeGramatica? gramaticaAntes;
+  final PuntoDeGramatica? gramaticaDespois;
   final List<Leccion> leccions;
 
   const UnidadeDeLeccions({
@@ -187,6 +191,8 @@ class UnidadeDeLeccions {
     this.plan,
     this.foco,
     this.gramatica,
+    this.gramaticaAntes,
+    this.gramaticaDespois,
     required this.leccions,
   });
 }
@@ -239,6 +245,14 @@ class Leccions {
               gramatica: u['gramatica'] is Map
                   ? PuntoDeGramatica.fromJson(
                       Map<String, dynamic>.from(u['gramatica'] as Map))
+                  : null,
+              gramaticaAntes: u['gramaticaAntes'] is Map
+                  ? PuntoDeGramatica.fromJson(
+                      Map<String, dynamic>.from(u['gramaticaAntes'] as Map))
+                  : null,
+              gramaticaDespois: u['gramaticaDespois'] is Map
+                  ? PuntoDeGramatica.fromJson(
+                      Map<String, dynamic>.from(u['gramaticaDespois'] as Map))
                   : null,
               leccions: [
                 for (final l in (u['leccions'] as List? ?? const []))

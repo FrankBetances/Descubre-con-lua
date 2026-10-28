@@ -3,6 +3,8 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
+import '../helpers/pasarela.dart';
+
 import 'package:descubre_con_lua/core/audio/mock_offline_audio_service.dart';
 import 'package:descubre_con_lua/core/localization/app_language.dart';
 import 'package:descubre_con_lua/core/storage/calendario_store.dart';
@@ -133,6 +135,7 @@ void main() {
         );
 
     Future<void> abrirPalabras(WidgetTester tester) async {
+      await Pasarela.abrirMaisParaCasa(tester);
       final tarxeta = find.byKey(const Key('tarxeta_ingles_de_hoxe_fogar'));
       await tester.dragUntilVisible(tarxeta,
           find.byKey(const Key('hoxe_familias')), const Offset(0, -150));
@@ -245,6 +248,10 @@ Future<void> comprobar(
   final nucleo = repo.nucleoSync(repo.unidadeDoMesSync(curso, 10)!);
   expect(nucleo, isNotEmpty);
 
+  if (find.byKey(const Key('hoxe_complementario')).evaluate().isNotEmpty ||
+      find.byKey(const Key('hoxe_familias')).evaluate().isNotEmpty) {
+    await Pasarela.abrirMaisParaCasa(tester);
+  }
   await tester.dragUntilVisible(tarxeta, lista, const Offset(0, -150));
   await tester.pumpAndSettle();
   final enTarxeta = find.descendant(

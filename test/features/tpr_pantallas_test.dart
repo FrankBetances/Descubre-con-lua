@@ -3,6 +3,8 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
+import '../helpers/pasarela.dart';
+
 import 'package:descubre_con_lua/core/audio/mock_offline_audio_service.dart';
 import 'package:descubre_con_lua/core/localization/app_language.dart';
 import 'package:descubre_con_lua/core/storage/calendario_store.dart';
@@ -671,6 +673,7 @@ void main() {
         tamano: const Size(400, 2600),
       );
       final tarxeta = find.byKey(const Key('tarxeta_ingles_de_hoxe_fogar'));
+      await Pasarela.abrirMaisParaCasa(tester);
       await tester.scrollUntilVisible(tarxeta, 200,
           scrollable: find.byType(Scrollable).first);
       await tester.pumpAndSettle();
