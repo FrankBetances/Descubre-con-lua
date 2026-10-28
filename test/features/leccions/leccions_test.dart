@@ -222,7 +222,7 @@ void main() {
       for (final u in leccions.unidades[c]!) {
         final g = u.gramatica;
         expect(g, isNotNull, reason: u.id);
-        expect(g!.n, inInclusiveRange(1, 20), reason: u.id);
+        expect(g!.n, inInclusiveRange(1, 48), reason: u.id);
         expect(g.paraFamilias?.hasParity, isTrue, reason: u.id);
         puntos.add(g.n);
         for (final l in u.leccions) {
@@ -231,7 +231,8 @@ void main() {
         }
       }
     }
-    expect(puntos, hasLength(20));
+    // O-20261028-9: las 48 unidades son para las criaturas, todas en la ruta.
+    expect(puntos, hasLength(48));
   });
 
   testWidgets('a gramática do curso, a 360 px e escala 1.8', (tester) async {
@@ -330,8 +331,8 @@ void main() {
         await pintar(tester, const Size(412, 915), 1.0, lang);
         expect(tester.takeException(), isNull);
         expect(find.byKey(const Key('leccion_ruta_gramatica')), findsOneWidget);
-        // Antes, ahora y después: 12, 13 y 14 en octubre de 4-5 años.
-        for (final t in ['12 · A2', '13 · A2', '14 · A2']) {
+        // Antes, ahora y después: 29, 30 y 31 en octubre de 4-5 años.
+        for (final t in ['29 · B1', '30 · B1', '31 · B1']) {
           expect(find.text(t), findsOneWidget, reason: t);
         }
         // La barra es la del curso, y lo dice: tema 2, lección 4 = semana 8.
@@ -388,13 +389,13 @@ void main() {
             findsOneWidget,
             reason: x.id);
       }
-      // Cada tema dice qué unidad de las 48 trabaja: la 13 en octubre.
+      // Cada tema dice qué unidad de las 48 trabaja: la 30 en octubre.
       expect(
           tester
               .widget<Text>(find.byKey(ValueKey('camino_gramatica_${u.id}')))
               .data,
-          '${lang == AppLanguage.gl ? 'Unidade' : 'Unidad'} 13 de 48 · '
-          'A2 · ${u.gramatica!.titulo.resolve(lang)}');
+          '${lang == AppLanguage.gl ? 'Unidade' : 'Unidad'} 30 de 48 · '
+          'B1 · ${u.gramatica!.titulo.resolve(lang)}');
       // Solo una lección marcada como la de esta semana.
       expect(find.byKey(const Key('leccion_globo')), findsOneWidget);
       final punto = find.descendant(

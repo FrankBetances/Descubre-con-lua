@@ -12,7 +12,7 @@ import '../widgets/leccion_da_semana.dart';
 
 /// La gramática del curso, de A1 a C1 (Frank, 28/10/2026). Los puntos 1-20
 /// son la columna de las cinco edades y dicen en qué edad y mes se trabajan;
-/// los 21-48 son para la persona adulta, con un ejemplo que se puede oír.
+/// las 48 van en la ruta de las criaturas, una por mes (O-20261028-9).
 class GramaticaScreen extends StatefulWidget {
   final AppLanguage language;
   final ValueChanged<AppLanguage>? onLanguageChanged;
@@ -73,8 +73,8 @@ class _GramaticaScreenState extends State<GramaticaScreen> {
               children: [
                 Text(
                   isGl
-                      ? 'Do máis sinxelo ao máis complexo. A1 e A2 son o que traballan as criaturas, de 0 a 6 anos, nas frases que dis ti; B1 a C1 son para ti, por se queres ir máis aló.'
-                      : 'De lo más sencillo a lo más complejo. A1 y A2 son lo que trabajan las criaturas, de 0 a 6 años, en las frases que dices tú; B1 a C1 son para ti, por si quieres ir más allá.',
+                      ? 'Do máis sinxelo ao máis complexo: as 48, unha por mes, de 0 a 6 anos, adaptadas a cada idade nas frases que dis ti co STEAM do mes.'
+                      : 'De lo más sencillo a lo más complejo: las 48, una por mes, de 0 a 6 años, adaptadas a cada edad en las frases que dices tú con el STEAM del mes.',
                   style: const TextStyle(
                     fontSize: 15,
                     color: AppTheme.textSecondary,
