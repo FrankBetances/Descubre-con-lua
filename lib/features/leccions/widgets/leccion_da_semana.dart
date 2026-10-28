@@ -395,6 +395,7 @@ class _LeccionDaSemanaState extends State<LeccionDaSemana> {
                           comoChip: true,
                           colorChip: context.acento,
                           descripcion: en,
+                          significado: d.significado,
                         ),
                       ],
                     ],

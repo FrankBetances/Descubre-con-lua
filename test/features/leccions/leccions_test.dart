@@ -135,6 +135,26 @@ void main() {
     expect(novas('curso_0_2'), isNot(novas('curso_2_3')));
   });
 
+  // F7: el doble toque dice el significado; un botón sin él no hace nada.
+  test('todo o inglés das leccións leva o seu significado en gl e es', () {
+    for (final c in cursos) {
+      for (final u in leccions.unidades[c]!) {
+        for (final l in u.leccions) {
+          for (final p in [...l.novas, ...l.repasa, ...l.xaSabe]) {
+            expect(p.significado?.hasParity, isTrue,
+                reason: '${l.id}: ${p.en}');
+          }
+          expect(l.reto.frase.significado?.hasParity, isTrue,
+              reason: '${l.id}: ${l.reto.frase.en}');
+          for (final d in l.dias.where((d) => d.en != null)) {
+            expect(d.significado?.hasParity, isTrue,
+                reason: '${l.id}: ${d.en}');
+          }
+        }
+      }
+    }
+  });
+
   test('o que xa coñece é o ensinado antes', () {
     for (final c in cursos) {
       final antes = <String>{};

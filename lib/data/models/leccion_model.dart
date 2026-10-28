@@ -50,7 +50,15 @@ class DiaDaLeccion {
   /// El inglés de ese día, si lleva, para oírlo.
   final String? en;
 
-  const DiaDaLeccion({required this.dia, required this.texto, this.en});
+  /// Lo que quiere decir, para el doble toque.
+  final LocalizedString? significado;
+
+  const DiaDaLeccion({
+    required this.dia,
+    required this.texto,
+    this.en,
+    this.significado,
+  });
 }
 
 /// Una semana de una unidad del plan curricular (P11): lo que ya debería
@@ -136,6 +144,7 @@ class Leccion {
               dia: _t(d['dia']),
               texto: _t(d['texto']),
               en: d['en']?.toString(),
+              significado: d['gl'] != null ? _t(d) : null,
             ),
       ],
     );
