@@ -2,9 +2,9 @@
  "lang": "gl",
  "voice": "Celtia · Proxecto Nós (proxectonos)",
  "peakDbfs": -3.0,
- "entries": 9955,
- "totalBytes": 147081420,
- "totalSeconds": 22488.11,
+ "entries": 9957,
+ "totalBytes": 147289424,
+ "totalSeconds": 22527.65,
  "files": [
   {
    "id": "gl_slow_1f518b1d_4",
@@ -155,6 +155,12 @@
    "file": "gl_tutor_00572523_22.m4a",
    "seconds": 1.73,
    "bytes": 12824
+  },
+  {
+   "id": "gl_tutor_006a2c37_17",
+   "file": "gl_tutor_006a2c37_17.m4a",
+   "seconds": 1.46,
+   "bytes": 8547
   },
   {
    "id": "gl_tutor_006d8a5a_31",
@@ -337,6 +343,12 @@
    "bytes": 21345
   },
   {
+   "id": "gl_tutor_012f3779_29",
+   "file": "gl_tutor_012f3779_29.m4a",
+   "seconds": 2.31,
+   "bytes": 15914
+  },
+  {
    "id": "gl_tutor_01337b25_41",
    "file": "gl_tutor_01337b25_41.m4a",
    "seconds": 2.74,
@@ -349,10 +361,10 @@
    "bytes": 25255
   },
   {
-   "id": "gl_tutor_013af8d7_12",
-   "file": "gl_tutor_013af8d7_12.m4a",
-   "seconds": 0.82,
-   "bytes": 7858
+   "id": "gl_tutor_013b4bd2_22",
+   "file": "gl_tutor_013b4bd2_22.m4a",
+   "seconds": 1.41,
+   "bytes": 8960
   },
   {
    "id": "gl_tutor_0143b675_58",
@@ -425,6 +437,12 @@
    "file": "gl_tutor_01a25c91_12.m4a",
    "seconds": 0.95,
    "bytes": 7245
+  },
+  {
+   "id": "gl_tutor_01ae138d_12",
+   "file": "gl_tutor_01ae138d_12.m4a",
+   "seconds": 1.06,
+   "bytes": 7077
   },
   {
    "id": "gl_tutor_01b31f66_32",
@@ -715,6 +733,12 @@
    "bytes": 18694
   },
   {
+   "id": "gl_tutor_02dc57d0_21",
+   "file": "gl_tutor_02dc57d0_21.m4a",
+   "seconds": 1.28,
+   "bytes": 10279
+  },
+  {
    "id": "gl_tutor_02ea6ff8_21",
    "file": "gl_tutor_02ea6ff8_21.m4a",
    "seconds": 1.39,
@@ -761,6 +785,12 @@
    "file": "gl_tutor_0305421f_51.m4a",
    "seconds": 2.98,
    "bytes": 18477
+  },
+  {
+   "id": "gl_tutor_030897cb_12",
+   "file": "gl_tutor_030897cb_12.m4a",
+   "seconds": 1.1,
+   "bytes": 8765
   },
   {
    "id": "gl_tutor_030de57b_49",
@@ -811,6 +841,12 @@
    "bytes": 10222
   },
   {
+   "id": "gl_tutor_03402ec0_30",
+   "file": "gl_tutor_03402ec0_30.m4a",
+   "seconds": 1.9,
+   "bytes": 13452
+  },
+  {
    "id": "gl_tutor_0341d14c_10",
    "file": "gl_tutor_0341d14c_10.m4a",
    "seconds": 0.75,
@@ -839,12 +875,6 @@
    "file": "gl_tutor_0362f7d4_5.m4a",
    "seconds": 0.56,
    "bytes": 4367
-  },
-  {
-   "id": "gl_tutor_03637330_25",
-   "file": "gl_tutor_03637330_25.m4a",
-   "seconds": 1.41,
-   "bytes": 10603
   },
   {
    "id": "gl_tutor_03657168_36",
@@ -1489,6 +1519,12 @@
    "bytes": 9752
   },
   {
+   "id": "gl_tutor_06158064_34",
+   "file": "gl_tutor_06158064_34.m4a",
+   "seconds": 2.44,
+   "bytes": 14448
+  },
+  {
    "id": "gl_tutor_061a31cd_19",
    "file": "gl_tutor_061a31cd_19.m4a",
    "seconds": 1.4,
@@ -1633,12 +1669,6 @@
    "bytes": 20576
   },
   {
-   "id": "gl_tutor_068732ab_30",
-   "file": "gl_tutor_068732ab_30.m4a",
-   "seconds": 1.88,
-   "bytes": 12719
-  },
-  {
    "id": "gl_tutor_068a2b98_101",
    "file": "gl_tutor_068a2b98_101.m4a",
    "seconds": 6.12,
@@ -1723,16 +1753,16 @@
    "bytes": 20950
   },
   {
-   "id": "gl_tutor_06c04d22_17",
-   "file": "gl_tutor_06c04d22_17.m4a",
-   "seconds": 1.15,
-   "bytes": 8732
-  },
-  {
    "id": "gl_tutor_06c73f7e_16",
    "file": "gl_tutor_06c73f7e_16.m4a",
    "seconds": 1.19,
    "bytes": 9103
+  },
+  {
+   "id": "gl_tutor_06d04840_22",
+   "file": "gl_tutor_06d04840_22.m4a",
+   "seconds": 1.37,
+   "bytes": 11006
   },
   {
    "id": "gl_tutor_06d1e298_3",
@@ -1799,6 +1829,12 @@
    "file": "gl_tutor_0703c409_29.m4a",
    "seconds": 1.48,
    "bytes": 10099
+  },
+  {
+   "id": "gl_tutor_0706f777_13",
+   "file": "gl_tutor_0706f777_13.m4a",
+   "seconds": 0.98,
+   "bytes": 8419
   },
   {
    "id": "gl_tutor_0708ba05_23",
@@ -1901,6 +1937,12 @@
    "file": "gl_tutor_07451ab6_17.m4a",
    "seconds": 1.4,
    "bytes": 10367
+  },
+  {
+   "id": "gl_tutor_0748e55f_25",
+   "file": "gl_tutor_0748e55f_25.m4a",
+   "seconds": 1.8,
+   "bytes": 10568
   },
   {
    "id": "gl_tutor_074c8d22_13",
@@ -2455,6 +2497,18 @@
    "bytes": 12057
   },
   {
+   "id": "gl_tutor_09f4e622_25",
+   "file": "gl_tutor_09f4e622_25.m4a",
+   "seconds": 1.81,
+   "bytes": 12384
+  },
+  {
+   "id": "gl_tutor_09fa2ad0_20",
+   "file": "gl_tutor_09fa2ad0_20.m4a",
+   "seconds": 1.34,
+   "bytes": 9438
+  },
+  {
    "id": "gl_tutor_0a052996_12",
    "file": "gl_tutor_0a052996_12.m4a",
    "seconds": 0.9,
@@ -2495,12 +2549,6 @@
    "file": "gl_tutor_0a1594d6_12.m4a",
    "seconds": 1.04,
    "bytes": 8121
-  },
-  {
-   "id": "gl_tutor_0a1b0a9e_25",
-   "file": "gl_tutor_0a1b0a9e_25.m4a",
-   "seconds": 1.78,
-   "bytes": 10795
   },
   {
    "id": "gl_tutor_0a2a0e4b_6",
@@ -2641,6 +2689,12 @@
    "bytes": 24746
   },
   {
+   "id": "gl_tutor_0ac15b8d_16",
+   "file": "gl_tutor_0ac15b8d_16.m4a",
+   "seconds": 1.03,
+   "bytes": 8867
+  },
+  {
    "id": "gl_tutor_0ac3c7d8_22",
    "file": "gl_tutor_0ac3c7d8_22.m4a",
    "seconds": 1.34,
@@ -2675,12 +2729,6 @@
    "file": "gl_tutor_0b05166d_25.m4a",
    "seconds": 1.65,
    "bytes": 10359
-  },
-  {
-   "id": "gl_tutor_0b13e2bc_9",
-   "file": "gl_tutor_0b13e2bc_9.m4a",
-   "seconds": 0.8,
-   "bytes": 5864
   },
   {
    "id": "gl_tutor_0b13e3f9_9",
@@ -2723,6 +2771,12 @@
    "file": "gl_tutor_0b6873d7_61.m4a",
    "seconds": 4.12,
    "bytes": 28819
+  },
+  {
+   "id": "gl_tutor_0b6e2f67_22",
+   "file": "gl_tutor_0b6e2f67_22.m4a",
+   "seconds": 1.36,
+   "bytes": 10012
   },
   {
    "id": "gl_tutor_0b6e38a2_23",
@@ -2803,12 +2857,6 @@
    "bytes": 26426
   },
   {
-   "id": "gl_tutor_0bb5c156_37",
-   "file": "gl_tutor_0bb5c156_37.m4a",
-   "seconds": 2.37,
-   "bytes": 13318
-  },
-  {
    "id": "gl_tutor_0bba22c5_55",
    "file": "gl_tutor_0bba22c5_55.m4a",
    "seconds": 4.12,
@@ -2819,6 +2867,12 @@
    "file": "gl_tutor_0bc426e9_26.m4a",
    "seconds": 1.95,
    "bytes": 12401
+  },
+  {
+   "id": "gl_tutor_0bcc1423_36",
+   "file": "gl_tutor_0bcc1423_36.m4a",
+   "seconds": 1.99,
+   "bytes": 14030
   },
   {
    "id": "gl_tutor_0bcd1d20_5",
@@ -3157,6 +3211,12 @@
    "bytes": 10268
   },
   {
+   "id": "gl_tutor_0d1e303b_16",
+   "file": "gl_tutor_0d1e303b_16.m4a",
+   "seconds": 1.25,
+   "bytes": 8299
+  },
+  {
    "id": "gl_tutor_0d20f7bc_17",
    "file": "gl_tutor_0d20f7bc_17.m4a",
    "seconds": 1.37,
@@ -3475,6 +3535,12 @@
    "bytes": 5300
   },
   {
+   "id": "gl_tutor_0e752df1_24",
+   "file": "gl_tutor_0e752df1_24.m4a",
+   "seconds": 1.56,
+   "bytes": 9221
+  },
+  {
    "id": "gl_tutor_0e7acc5e_54",
    "file": "gl_tutor_0e7acc5e_54.m4a",
    "seconds": 4.79,
@@ -3535,10 +3601,22 @@
    "bytes": 12489
   },
   {
+   "id": "gl_tutor_0ec27bce_40",
+   "file": "gl_tutor_0ec27bce_40.m4a",
+   "seconds": 2.65,
+   "bytes": 16954
+  },
+  {
    "id": "gl_tutor_0ec6d298_12",
    "file": "gl_tutor_0ec6d298_12.m4a",
    "seconds": 1.01,
    "bytes": 6646
+  },
+  {
+   "id": "gl_tutor_0ec86276_29",
+   "file": "gl_tutor_0ec86276_29.m4a",
+   "seconds": 1.77,
+   "bytes": 10878
   },
   {
    "id": "gl_tutor_0ed19bb6_62",
@@ -3557,12 +3635,6 @@
    "file": "gl_tutor_0ee18217_72.m4a",
    "seconds": 4.2,
    "bytes": 25800
-  },
-  {
-   "id": "gl_tutor_0eeba2be_20",
-   "file": "gl_tutor_0eeba2be_20.m4a",
-   "seconds": 1.49,
-   "bytes": 10766
   },
   {
    "id": "gl_tutor_0eedd5b7_51",
@@ -3931,12 +4003,6 @@
    "bytes": 13381
   },
   {
-   "id": "gl_tutor_1091a07b_25",
-   "file": "gl_tutor_1091a07b_25.m4a",
-   "seconds": 1.6,
-   "bytes": 10927
-  },
-  {
    "id": "gl_tutor_109b196b_74",
    "file": "gl_tutor_109b196b_74.m4a",
    "seconds": 4.97,
@@ -3947,6 +4013,12 @@
    "file": "gl_tutor_10a07fc5_30.m4a",
    "seconds": 2.4,
    "bytes": 17912
+  },
+  {
+   "id": "gl_tutor_10a54007_10",
+   "file": "gl_tutor_10a54007_10.m4a",
+   "seconds": 0.82,
+   "bytes": 6864
   },
   {
    "id": "gl_tutor_10b27380_29",
@@ -4093,6 +4165,12 @@
    "bytes": 20740
   },
   {
+   "id": "gl_tutor_111ffc56_30",
+   "file": "gl_tutor_111ffc56_30.m4a",
+   "seconds": 2.29,
+   "bytes": 13902
+  },
+  {
    "id": "gl_tutor_1123a9de_4",
    "file": "gl_tutor_1123a9de_4.m4a",
    "seconds": 0.54,
@@ -4145,6 +4223,12 @@
    "file": "gl_tutor_1160d66e_39.m4a",
    "seconds": 2.04,
    "bytes": 13513
+  },
+  {
+   "id": "gl_tutor_1162b697_33",
+   "file": "gl_tutor_1162b697_33.m4a",
+   "seconds": 2.23,
+   "bytes": 15197
   },
   {
    "id": "gl_tutor_1164fcde_22",
@@ -4339,12 +4423,6 @@
    "bytes": 6980
   },
   {
-   "id": "gl_tutor_1210ff92_20",
-   "file": "gl_tutor_1210ff92_20.m4a",
-   "seconds": 1.54,
-   "bytes": 12060
-  },
-  {
    "id": "gl_tutor_12126f3d_34",
    "file": "gl_tutor_12126f3d_34.m4a",
    "seconds": 2.44,
@@ -4427,12 +4505,6 @@
    "file": "gl_tutor_12644db6_16.m4a",
    "seconds": 1.22,
    "bytes": 8278
-  },
-  {
-   "id": "gl_tutor_1267d76a_25",
-   "file": "gl_tutor_1267d76a_25.m4a",
-   "seconds": 1.68,
-   "bytes": 11466
   },
   {
    "id": "gl_tutor_12681fdf_30",
@@ -4711,12 +4783,6 @@
    "bytes": 6564
   },
   {
-   "id": "gl_tutor_139db375_26",
-   "file": "gl_tutor_139db375_26.m4a",
-   "seconds": 1.65,
-   "bytes": 10740
-  },
-  {
    "id": "gl_tutor_139e34f6_16",
    "file": "gl_tutor_139e34f6_16.m4a",
    "seconds": 1.32,
@@ -4855,6 +4921,12 @@
    "bytes": 26055
   },
   {
+   "id": "gl_tutor_142ac50e_19",
+   "file": "gl_tutor_142ac50e_19.m4a",
+   "seconds": 1.35,
+   "bytes": 9824
+  },
+  {
    "id": "gl_tutor_142c8839_15",
    "file": "gl_tutor_142c8839_15.m4a",
    "seconds": 1.14,
@@ -4957,12 +5029,6 @@
    "bytes": 17042
   },
   {
-   "id": "gl_tutor_149b5843_13",
-   "file": "gl_tutor_149b5843_13.m4a",
-   "seconds": 1.14,
-   "bytes": 7527
-  },
-  {
    "id": "gl_tutor_149b959f_16",
    "file": "gl_tutor_149b959f_16.m4a",
    "seconds": 1.21,
@@ -4973,12 +5039,6 @@
    "file": "gl_tutor_14a08736_44.m4a",
    "seconds": 2.83,
    "bytes": 17453
-  },
-  {
-   "id": "gl_tutor_14af76d0_25",
-   "file": "gl_tutor_14af76d0_25.m4a",
-   "seconds": 1.78,
-   "bytes": 11177
   },
   {
    "id": "gl_tutor_14c464a1_17",
@@ -5107,12 +5167,6 @@
    "bytes": 39606
   },
   {
-   "id": "gl_tutor_15185b8c_18",
-   "file": "gl_tutor_15185b8c_18.m4a",
-   "seconds": 1.25,
-   "bytes": 9015
-  },
-  {
    "id": "gl_tutor_1519d977_26",
    "file": "gl_tutor_1519d977_26.m4a",
    "seconds": 1.5,
@@ -5179,12 +5233,6 @@
    "bytes": 7781
   },
   {
-   "id": "gl_tutor_15560f76_22",
-   "file": "gl_tutor_15560f76_22.m4a",
-   "seconds": 1.51,
-   "bytes": 10204
-  },
-  {
    "id": "gl_tutor_155bfb2c_33",
    "file": "gl_tutor_155bfb2c_33.m4a",
    "seconds": 2.23,
@@ -5219,12 +5267,6 @@
    "file": "gl_tutor_156c3995_45.m4a",
    "seconds": 3.36,
    "bytes": 21617
-  },
-  {
-   "id": "gl_tutor_15747245_15",
-   "file": "gl_tutor_15747245_15.m4a",
-   "seconds": 1.16,
-   "bytes": 8574
   },
   {
    "id": "gl_tutor_1585cbbd_11",
@@ -5327,6 +5369,12 @@
    "file": "gl_tutor_15cc0299_14.m4a",
    "seconds": 1.17,
    "bytes": 8942
+  },
+  {
+   "id": "gl_tutor_15cdcaa8_13",
+   "file": "gl_tutor_15cdcaa8_13.m4a",
+   "seconds": 1.05,
+   "bytes": 6872
   },
   {
    "id": "gl_tutor_15d4184e_52",
@@ -5455,6 +5503,12 @@
    "bytes": 13012
   },
   {
+   "id": "gl_tutor_1672eaf5_26",
+   "file": "gl_tutor_1672eaf5_26.m4a",
+   "seconds": 1.77,
+   "bytes": 11182
+  },
+  {
    "id": "gl_tutor_16754ac2_32",
    "file": "gl_tutor_16754ac2_32.m4a",
    "seconds": 2.02,
@@ -5507,12 +5561,6 @@
    "file": "gl_tutor_169f5c23_71.m4a",
    "seconds": 5.26,
    "bytes": 34095
-  },
-  {
-   "id": "gl_tutor_16a34bb1_14",
-   "file": "gl_tutor_16a34bb1_14.m4a",
-   "seconds": 1.07,
-   "bytes": 7857
   },
   {
    "id": "gl_tutor_16a4dddc_6",
@@ -5629,6 +5677,12 @@
    "bytes": 6019
   },
   {
+   "id": "gl_tutor_171053e3_32",
+   "file": "gl_tutor_171053e3_32.m4a",
+   "seconds": 2.04,
+   "bytes": 15021
+  },
+  {
    "id": "gl_tutor_171eadf6_8",
    "file": "gl_tutor_171eadf6_8.m4a",
    "seconds": 0.91,
@@ -5719,10 +5773,10 @@
    "bytes": 4834
   },
   {
-   "id": "gl_tutor_17903d1c_29",
-   "file": "gl_tutor_17903d1c_29.m4a",
-   "seconds": 2.12,
-   "bytes": 13808
+   "id": "gl_tutor_17a07852_36",
+   "file": "gl_tutor_17a07852_36.m4a",
+   "seconds": 2.2,
+   "bytes": 14456
   },
   {
    "id": "gl_tutor_17a22230_5",
@@ -6031,12 +6085,6 @@
    "bytes": 20858
   },
   {
-   "id": "gl_tutor_18d6d4e9_35",
-   "file": "gl_tutor_18d6d4e9_35.m4a",
-   "seconds": 2.51,
-   "bytes": 15324
-  },
-  {
    "id": "gl_tutor_18dc92e8_30",
    "file": "gl_tutor_18dc92e8_30.m4a",
    "seconds": 2.2,
@@ -6103,12 +6151,6 @@
    "bytes": 4357
   },
   {
-   "id": "gl_tutor_1933f42d_18",
-   "file": "gl_tutor_1933f42d_18.m4a",
-   "seconds": 1.16,
-   "bytes": 8589
-  },
-  {
    "id": "gl_tutor_193d0231_45",
    "file": "gl_tutor_193d0231_45.m4a",
    "seconds": 3.43,
@@ -6119,6 +6161,12 @@
    "file": "gl_tutor_1957ca3d_12.m4a",
    "seconds": 0.97,
    "bytes": 6173
+  },
+  {
+   "id": "gl_tutor_196db388_19",
+   "file": "gl_tutor_196db388_19.m4a",
+   "seconds": 1.07,
+   "bytes": 8132
   },
   {
    "id": "gl_tutor_197504bd_6",
@@ -6373,12 +6421,6 @@
    "bytes": 21550
   },
   {
-   "id": "gl_tutor_1a3dffc7_12",
-   "file": "gl_tutor_1a3dffc7_12.m4a",
-   "seconds": 0.97,
-   "bytes": 7476
-  },
-  {
    "id": "gl_tutor_1a3f3877_43",
    "file": "gl_tutor_1a3f3877_43.m4a",
    "seconds": 3.63,
@@ -6503,6 +6545,12 @@
    "file": "gl_tutor_1aaf0c1c_43.m4a",
    "seconds": 2.93,
    "bytes": 16516
+  },
+  {
+   "id": "gl_tutor_1ab093bb_26",
+   "file": "gl_tutor_1ab093bb_26.m4a",
+   "seconds": 1.64,
+   "bytes": 11651
   },
   {
    "id": "gl_tutor_1ab82275_17",
@@ -6797,12 +6845,6 @@
    "file": "gl_tutor_1bac4d78_6.m4a",
    "seconds": 0.65,
    "bytes": 4713
-  },
-  {
-   "id": "gl_tutor_1bb0dd60_24",
-   "file": "gl_tutor_1bb0dd60_24.m4a",
-   "seconds": 1.39,
-   "bytes": 10141
   },
   {
    "id": "gl_tutor_1bb2b34b_38",
@@ -7165,12 +7207,6 @@
    "bytes": 13039
   },
   {
-   "id": "gl_tutor_1d51d03d_16",
-   "file": "gl_tutor_1d51d03d_16.m4a",
-   "seconds": 1.21,
-   "bytes": 7420
-  },
-  {
    "id": "gl_tutor_1d530104_6",
    "file": "gl_tutor_1d530104_6.m4a",
    "seconds": 0.6,
@@ -7193,6 +7229,12 @@
    "file": "gl_tutor_1d7cffec_11.m4a",
    "seconds": 0.93,
    "bytes": 7762
+  },
+  {
+   "id": "gl_tutor_1d7e9268_27",
+   "file": "gl_tutor_1d7e9268_27.m4a",
+   "seconds": 1.65,
+   "bytes": 10224
   },
   {
    "id": "gl_tutor_1d851b07_17",
@@ -7435,6 +7477,12 @@
    "bytes": 25973
   },
   {
+   "id": "gl_tutor_1e99faa8_30",
+   "file": "gl_tutor_1e99faa8_30.m4a",
+   "seconds": 1.85,
+   "bytes": 11411
+  },
+  {
    "id": "gl_tutor_1e9cde2b_17",
    "file": "gl_tutor_1e9cde2b_17.m4a",
    "seconds": 1.3,
@@ -7465,10 +7513,10 @@
    "bytes": 10049
   },
   {
-   "id": "gl_tutor_1ec69c67_32",
-   "file": "gl_tutor_1ec69c67_32.m4a",
-   "seconds": 2.28,
-   "bytes": 14505
+   "id": "gl_tutor_1ec0e86e_14",
+   "file": "gl_tutor_1ec0e86e_14.m4a",
+   "seconds": 1.01,
+   "bytes": 6994
   },
   {
    "id": "gl_tutor_1ed1584c_61",
@@ -7555,6 +7603,12 @@
    "bytes": 25808
   },
   {
+   "id": "gl_tutor_1f2f5d8c_14",
+   "file": "gl_tutor_1f2f5d8c_14.m4a",
+   "seconds": 1.11,
+   "bytes": 7588
+  },
+  {
    "id": "gl_tutor_1f40294b_5",
    "file": "gl_tutor_1f40294b_5.m4a",
    "seconds": 0.7,
@@ -7601,6 +7655,12 @@
    "file": "gl_tutor_1f6cee7b_15.m4a",
    "seconds": 1.34,
    "bytes": 10514
+  },
+  {
+   "id": "gl_tutor_1f701d9d_25",
+   "file": "gl_tutor_1f701d9d_25.m4a",
+   "seconds": 1.56,
+   "bytes": 10953
   },
   {
    "id": "gl_tutor_1f7fa6cd_8",
@@ -8035,12 +8095,6 @@
    "bytes": 11993
   },
   {
-   "id": "gl_tutor_215dfaf9_30",
-   "file": "gl_tutor_215dfaf9_30.m4a",
-   "seconds": 2.08,
-   "bytes": 14840
-  },
-  {
    "id": "gl_tutor_216578f2_50",
    "file": "gl_tutor_216578f2_50.m4a",
    "seconds": 3.11,
@@ -8123,12 +8177,6 @@
    "file": "gl_tutor_21a153ca_7.m4a",
    "seconds": 0.73,
    "bytes": 5628
-  },
-  {
-   "id": "gl_tutor_21abd830_15",
-   "file": "gl_tutor_21abd830_15.m4a",
-   "seconds": 1.19,
-   "bytes": 9490
   },
   {
    "id": "gl_tutor_21b760fc_47",
@@ -8425,12 +8473,6 @@
    "bytes": 4188
   },
   {
-   "id": "gl_tutor_2311b262_33",
-   "file": "gl_tutor_2311b262_33.m4a",
-   "seconds": 2.48,
-   "bytes": 15802
-  },
-  {
    "id": "gl_tutor_2314d6b9_20",
    "file": "gl_tutor_2314d6b9_20.m4a",
    "seconds": 1.59,
@@ -8495,12 +8537,6 @@
    "file": "gl_tutor_235b24ec_76.m4a",
    "seconds": 5.84,
    "bytes": 35138
-  },
-  {
-   "id": "gl_tutor_2366f843_22",
-   "file": "gl_tutor_2366f843_22.m4a",
-   "seconds": 1.53,
-   "bytes": 10468
   },
   {
    "id": "gl_tutor_236fc44c_72",
@@ -8657,12 +8693,6 @@
    "file": "gl_tutor_24187c25_24.m4a",
    "seconds": 1.83,
    "bytes": 12228
-  },
-  {
-   "id": "gl_tutor_241df573_26",
-   "file": "gl_tutor_241df573_26.m4a",
-   "seconds": 1.69,
-   "bytes": 11838
   },
   {
    "id": "gl_tutor_241e960a_45",
@@ -8879,12 +8909,6 @@
    "file": "gl_tutor_24b7ce55_3.m4a",
    "seconds": 0.52,
    "bytes": 4386
-  },
-  {
-   "id": "gl_tutor_24bf7d1b_12",
-   "file": "gl_tutor_24bf7d1b_12.m4a",
-   "seconds": 1.11,
-   "bytes": 7919
   },
   {
    "id": "gl_tutor_24c21fa3_31",
@@ -9451,12 +9475,6 @@
    "bytes": 11749
   },
   {
-   "id": "gl_tutor_27879a31_25",
-   "file": "gl_tutor_27879a31_25.m4a",
-   "seconds": 1.57,
-   "bytes": 9965
-  },
-  {
    "id": "gl_tutor_278a86db_13",
    "file": "gl_tutor_278a86db_13.m4a",
    "seconds": 1.04,
@@ -9535,6 +9553,12 @@
    "bytes": 26034
   },
   {
+   "id": "gl_tutor_27d35d38_44",
+   "file": "gl_tutor_27d35d38_44.m4a",
+   "seconds": 3.14,
+   "bytes": 18769
+  },
+  {
    "id": "gl_tutor_27d41a74_35",
    "file": "gl_tutor_27d41a74_35.m4a",
    "seconds": 2.16,
@@ -9557,6 +9581,12 @@
    "file": "gl_tutor_27ded7c0_33.m4a",
    "seconds": 2.72,
    "bytes": 19578
+  },
+  {
+   "id": "gl_tutor_27e10960_37",
+   "file": "gl_tutor_27e10960_37.m4a",
+   "seconds": 2.31,
+   "bytes": 16015
   },
   {
    "id": "gl_tutor_27e2edfa_17",
@@ -9631,12 +9661,6 @@
    "bytes": 17379
   },
   {
-   "id": "gl_tutor_283cf0fd_16",
-   "file": "gl_tutor_283cf0fd_16.m4a",
-   "seconds": 1.04,
-   "bytes": 6946
-  },
-  {
    "id": "gl_tutor_285719fc_48",
    "file": "gl_tutor_285719fc_48.m4a",
    "seconds": 2.82,
@@ -9677,6 +9701,12 @@
    "file": "gl_tutor_2899afde_6.m4a",
    "seconds": 0.81,
    "bytes": 6619
+  },
+  {
+   "id": "gl_tutor_289c322f_29",
+   "file": "gl_tutor_289c322f_29.m4a",
+   "seconds": 1.63,
+   "bytes": 10350
   },
   {
    "id": "gl_tutor_289e200d_35",
@@ -10141,12 +10171,6 @@
    "bytes": 15314
   },
   {
-   "id": "gl_tutor_2ac138b9_20",
-   "file": "gl_tutor_2ac138b9_20.m4a",
-   "seconds": 1.76,
-   "bytes": 11376
-  },
-  {
    "id": "gl_tutor_2ac1f439_14",
    "file": "gl_tutor_2ac1f439_14.m4a",
    "seconds": 1.14,
@@ -10399,12 +10423,6 @@
    "bytes": 30284
   },
   {
-   "id": "gl_tutor_2bb172c2_13",
-   "file": "gl_tutor_2bb172c2_13.m4a",
-   "seconds": 1.01,
-   "bytes": 7973
-  },
-  {
    "id": "gl_tutor_2bb2ba0a_29",
    "file": "gl_tutor_2bb2ba0a_29.m4a",
    "seconds": 2.03,
@@ -10489,12 +10507,6 @@
    "bytes": 8788
   },
   {
-   "id": "gl_tutor_2c085afe_24",
-   "file": "gl_tutor_2c085afe_24.m4a",
-   "seconds": 1.69,
-   "bytes": 10704
-  },
-  {
    "id": "gl_tutor_2c0bebc2_10",
    "file": "gl_tutor_2c0bebc2_10.m4a",
    "seconds": 0.89,
@@ -10511,12 +10523,6 @@
    "file": "gl_tutor_2c0fd223_274.m4a",
    "seconds": 16.83,
    "bytes": 98381
-  },
-  {
-   "id": "gl_tutor_2c1a36de_23",
-   "file": "gl_tutor_2c1a36de_23.m4a",
-   "seconds": 1.47,
-   "bytes": 11050
   },
   {
    "id": "gl_tutor_2c1ba58b_39",
@@ -11083,12 +11089,6 @@
    "bytes": 20278
   },
   {
-   "id": "gl_tutor_2e04a2a1_13",
-   "file": "gl_tutor_2e04a2a1_13.m4a",
-   "seconds": 1.01,
-   "bytes": 6806
-  },
-  {
    "id": "gl_tutor_2e08bfb9_22",
    "file": "gl_tutor_2e08bfb9_22.m4a",
    "seconds": 1.52,
@@ -11141,6 +11141,12 @@
    "file": "gl_tutor_2e3e76b2_16.m4a",
    "seconds": 1.41,
    "bytes": 9425
+  },
+  {
+   "id": "gl_tutor_2e41ef39_47",
+   "file": "gl_tutor_2e41ef39_47.m4a",
+   "seconds": 3.24,
+   "bytes": 21712
   },
   {
    "id": "gl_tutor_2e42e485_42",
@@ -11227,18 +11233,6 @@
    "bytes": 7237
   },
   {
-   "id": "gl_tutor_2e955a6e_25",
-   "file": "gl_tutor_2e955a6e_25.m4a",
-   "seconds": 1.74,
-   "bytes": 12155
-  },
-  {
-   "id": "gl_tutor_2e9c1fca_18",
-   "file": "gl_tutor_2e9c1fca_18.m4a",
-   "seconds": 1.16,
-   "bytes": 7244
-  },
-  {
    "id": "gl_tutor_2eaebd26_3",
    "file": "gl_tutor_2eaebd26_3.m4a",
    "seconds": 0.54,
@@ -11315,12 +11309,6 @@
    "file": "gl_tutor_2eee2f15_19.m4a",
    "seconds": 1.42,
    "bytes": 9254
-  },
-  {
-   "id": "gl_tutor_2ef0d58f_13",
-   "file": "gl_tutor_2ef0d58f_13.m4a",
-   "seconds": 0.94,
-   "bytes": 7400
   },
   {
    "id": "gl_tutor_2ef45edb_9",
@@ -11407,10 +11395,10 @@
    "bytes": 18689
   },
   {
-   "id": "gl_tutor_2f5b9a7e_13",
-   "file": "gl_tutor_2f5b9a7e_13.m4a",
-   "seconds": 1.0,
-   "bytes": 6717
+   "id": "gl_tutor_2f581dee_27",
+   "file": "gl_tutor_2f581dee_27.m4a",
+   "seconds": 1.62,
+   "bytes": 11316
   },
   {
    "id": "gl_tutor_2f639952_28",
@@ -11509,6 +11497,12 @@
    "bytes": 21723
   },
   {
+   "id": "gl_tutor_2fcd75c5_31",
+   "file": "gl_tutor_2fcd75c5_31.m4a",
+   "seconds": 1.94,
+   "bytes": 12406
+  },
+  {
    "id": "gl_tutor_2fd4714d_28",
    "file": "gl_tutor_2fd4714d_28.m4a",
    "seconds": 1.91,
@@ -11551,18 +11545,6 @@
    "bytes": 5919
   },
   {
-   "id": "gl_tutor_2feae11b_13",
-   "file": "gl_tutor_2feae11b_13.m4a",
-   "seconds": 1.15,
-   "bytes": 7262
-  },
-  {
-   "id": "gl_tutor_2ff3fc42_27",
-   "file": "gl_tutor_2ff3fc42_27.m4a",
-   "seconds": 1.73,
-   "bytes": 11417
-  },
-  {
    "id": "gl_tutor_2ffd5fdd_44",
    "file": "gl_tutor_2ffd5fdd_44.m4a",
    "seconds": 3.86,
@@ -11597,6 +11579,12 @@
    "file": "gl_tutor_30188610_20.m4a",
    "seconds": 1.43,
    "bytes": 8469
+  },
+  {
+   "id": "gl_tutor_301af172_6",
+   "file": "gl_tutor_301af172_6.m4a",
+   "seconds": 0.69,
+   "bytes": 4666
   },
   {
    "id": "gl_tutor_3020cf76_37",
@@ -11645,6 +11633,12 @@
    "file": "gl_tutor_304c1308_18.m4a",
    "seconds": 1.28,
    "bytes": 9350
+  },
+  {
+   "id": "gl_tutor_304eed2a_22",
+   "file": "gl_tutor_304eed2a_22.m4a",
+   "seconds": 1.49,
+   "bytes": 8818
   },
   {
    "id": "gl_tutor_3059f6f7_12",
@@ -12079,6 +12073,12 @@
    "bytes": 7719
   },
   {
+   "id": "gl_tutor_31cbd5cd_17",
+   "file": "gl_tutor_31cbd5cd_17.m4a",
+   "seconds": 1.62,
+   "bytes": 11710
+  },
+  {
    "id": "gl_tutor_31cd2515_34",
    "file": "gl_tutor_31cd2515_34.m4a",
    "seconds": 2.9,
@@ -12241,6 +12241,12 @@
    "bytes": 16437
   },
   {
+   "id": "gl_tutor_32455b29_8",
+   "file": "gl_tutor_32455b29_8.m4a",
+   "seconds": 0.76,
+   "bytes": 6600
+  },
+  {
    "id": "gl_tutor_32477a37_20",
    "file": "gl_tutor_32477a37_20.m4a",
    "seconds": 1.25,
@@ -12281,12 +12287,6 @@
    "file": "gl_tutor_327d63d2_7.m4a",
    "seconds": 0.74,
    "bytes": 6077
-  },
-  {
-   "id": "gl_tutor_3282dfe1_18",
-   "file": "gl_tutor_3282dfe1_18.m4a",
-   "seconds": 1.19,
-   "bytes": 7224
   },
   {
    "id": "gl_tutor_328c3d51_123",
@@ -12643,12 +12643,6 @@
    "bytes": 12274
   },
   {
-   "id": "gl_tutor_3400ce32_13",
-   "file": "gl_tutor_3400ce32_13.m4a",
-   "seconds": 0.96,
-   "bytes": 6720
-  },
-  {
    "id": "gl_tutor_3401a67b_28",
    "file": "gl_tutor_3401a67b_28.m4a",
    "seconds": 2.12,
@@ -13003,6 +12997,12 @@
    "bytes": 20711
   },
   {
+   "id": "gl_tutor_358b95d4_14",
+   "file": "gl_tutor_358b95d4_14.m4a",
+   "seconds": 1.07,
+   "bytes": 7145
+  },
+  {
    "id": "gl_tutor_359176b3_12",
    "file": "gl_tutor_359176b3_12.m4a",
    "seconds": 0.83,
@@ -13195,10 +13195,10 @@
    "bytes": 18415
   },
   {
-   "id": "gl_tutor_365a5152_12",
-   "file": "gl_tutor_365a5152_12.m4a",
-   "seconds": 0.95,
-   "bytes": 6377
+   "id": "gl_tutor_365c76ef_25",
+   "file": "gl_tutor_365c76ef_25.m4a",
+   "seconds": 1.63,
+   "bytes": 10870
   },
   {
    "id": "gl_tutor_36655fd4_24",
@@ -13403,6 +13403,12 @@
    "file": "gl_tutor_374f724e_4.m4a",
    "seconds": 0.59,
    "bytes": 5459
+  },
+  {
+   "id": "gl_tutor_37543fc7_54",
+   "file": "gl_tutor_37543fc7_54.m4a",
+   "seconds": 3.31,
+   "bytes": 19315
   },
   {
    "id": "gl_tutor_375ee905_20",
@@ -13747,6 +13753,12 @@
    "bytes": 26416
   },
   {
+   "id": "gl_tutor_38d4bcbe_35",
+   "file": "gl_tutor_38d4bcbe_35.m4a",
+   "seconds": 2.76,
+   "bytes": 16349
+  },
+  {
    "id": "gl_tutor_38d895a9_8",
    "file": "gl_tutor_38d895a9_8.m4a",
    "seconds": 0.81,
@@ -13825,10 +13837,10 @@
    "bytes": 8548
   },
   {
-   "id": "gl_tutor_3937cdbc_28",
-   "file": "gl_tutor_3937cdbc_28.m4a",
-   "seconds": 1.69,
-   "bytes": 11381
+   "id": "gl_tutor_3937a9b2_18",
+   "file": "gl_tutor_3937a9b2_18.m4a",
+   "seconds": 1.15,
+   "bytes": 7857
   },
   {
    "id": "gl_tutor_394fd1d6_39",
@@ -14113,6 +14125,12 @@
    "bytes": 20692
   },
   {
+   "id": "gl_tutor_3abdb5ab_24",
+   "file": "gl_tutor_3abdb5ab_24.m4a",
+   "seconds": 1.81,
+   "bytes": 12347
+  },
+  {
    "id": "gl_tutor_3abdc275_26",
    "file": "gl_tutor_3abdc275_26.m4a",
    "seconds": 1.81,
@@ -14137,6 +14155,12 @@
    "bytes": 19233
   },
   {
+   "id": "gl_tutor_3ad5d136_41",
+   "file": "gl_tutor_3ad5d136_41.m4a",
+   "seconds": 2.66,
+   "bytes": 18239
+  },
+  {
    "id": "gl_tutor_3adb17b5_58",
    "file": "gl_tutor_3adb17b5_58.m4a",
    "seconds": 3.62,
@@ -14153,6 +14177,12 @@
    "file": "gl_tutor_3af2606d_31.m4a",
    "seconds": 1.9,
    "bytes": 12299
+  },
+  {
+   "id": "gl_tutor_3afbbc65_21",
+   "file": "gl_tutor_3afbbc65_21.m4a",
+   "seconds": 1.37,
+   "bytes": 10356
   },
   {
    "id": "gl_tutor_3b059d3c_29",
@@ -14347,6 +14377,12 @@
    "bytes": 23631
   },
   {
+   "id": "gl_tutor_3bda92fa_31",
+   "file": "gl_tutor_3bda92fa_31.m4a",
+   "seconds": 1.91,
+   "bytes": 12405
+  },
+  {
    "id": "gl_tutor_3be0da2b_10",
    "file": "gl_tutor_3be0da2b_10.m4a",
    "seconds": 1.01,
@@ -14485,6 +14521,12 @@
    "bytes": 5930
   },
   {
+   "id": "gl_tutor_3ca6d32c_14",
+   "file": "gl_tutor_3ca6d32c_14.m4a",
+   "seconds": 1.0,
+   "bytes": 7662
+  },
+  {
    "id": "gl_tutor_3ca760e6_44",
    "file": "gl_tutor_3ca760e6_44.m4a",
    "seconds": 3.06,
@@ -14501,6 +14543,12 @@
    "file": "gl_tutor_3ccf87b5_10.m4a",
    "seconds": 0.9,
    "bytes": 6247
+  },
+  {
+   "id": "gl_tutor_3cd045c7_27",
+   "file": "gl_tutor_3cd045c7_27.m4a",
+   "seconds": 1.81,
+   "bytes": 11187
   },
   {
    "id": "gl_tutor_3cdd1772_44",
@@ -14633,6 +14681,12 @@
    "file": "gl_tutor_3d62a7b8_37.m4a",
    "seconds": 2.93,
    "bytes": 18836
+  },
+  {
+   "id": "gl_tutor_3d65eb1c_23",
+   "file": "gl_tutor_3d65eb1c_23.m4a",
+   "seconds": 1.5,
+   "bytes": 10520
   },
   {
    "id": "gl_tutor_3d6a0b61_16",
@@ -14911,6 +14965,12 @@
    "bytes": 20491
   },
   {
+   "id": "gl_tutor_3edacfd1_31",
+   "file": "gl_tutor_3edacfd1_31.m4a",
+   "seconds": 1.98,
+   "bytes": 12796
+  },
+  {
    "id": "gl_tutor_3edd2ffd_12",
    "file": "gl_tutor_3edd2ffd_12.m4a",
    "seconds": 1.03,
@@ -14921,6 +14981,12 @@
    "file": "gl_tutor_3edf3aa6_28.m4a",
    "seconds": 2.23,
    "bytes": 13876
+  },
+  {
+   "id": "gl_tutor_3eedc5a7_24",
+   "file": "gl_tutor_3eedc5a7_24.m4a",
+   "seconds": 1.62,
+   "bytes": 11553
   },
   {
    "id": "gl_tutor_3ef34b3d_57",
@@ -15029,6 +15095,12 @@
    "file": "gl_tutor_3f79012f_25.m4a",
    "seconds": 1.72,
    "bytes": 11654
+  },
+  {
+   "id": "gl_tutor_3f84fa4c_19",
+   "file": "gl_tutor_3f84fa4c_19.m4a",
+   "seconds": 1.1,
+   "bytes": 8158
   },
   {
    "id": "gl_tutor_3f8526b8_27",
@@ -15439,12 +15511,6 @@
    "bytes": 6124
   },
   {
-   "id": "gl_tutor_41337ecc_22",
-   "file": "gl_tutor_41337ecc_22.m4a",
-   "seconds": 1.5,
-   "bytes": 10346
-  },
-  {
    "id": "gl_tutor_4133e4dd_40",
    "file": "gl_tutor_4133e4dd_40.m4a",
    "seconds": 3.26,
@@ -15739,6 +15805,12 @@
    "bytes": 9344
   },
   {
+   "id": "gl_tutor_42893629_20",
+   "file": "gl_tutor_42893629_20.m4a",
+   "seconds": 1.29,
+   "bytes": 8658
+  },
+  {
    "id": "gl_tutor_42894194_34",
    "file": "gl_tutor_42894194_34.m4a",
    "seconds": 2.55,
@@ -16001,12 +16073,6 @@
    "file": "gl_tutor_439e5ee1_29.m4a",
    "seconds": 2.13,
    "bytes": 13648
-  },
-  {
-   "id": "gl_tutor_43a0410e_18",
-   "file": "gl_tutor_43a0410e_18.m4a",
-   "seconds": 1.04,
-   "bytes": 7579
   },
   {
    "id": "gl_tutor_43a13cdb_18",
@@ -16285,12 +16351,6 @@
    "bytes": 16840
   },
   {
-   "id": "gl_tutor_44bc2590_24",
-   "file": "gl_tutor_44bc2590_24.m4a",
-   "seconds": 2.14,
-   "bytes": 17172
-  },
-  {
    "id": "gl_tutor_44c0d541_3",
    "file": "gl_tutor_44c0d541_3.m4a",
    "seconds": 0.57,
@@ -16483,6 +16543,12 @@
    "bytes": 12765
   },
   {
+   "id": "gl_tutor_45b61244_19",
+   "file": "gl_tutor_45b61244_19.m4a",
+   "seconds": 1.43,
+   "bytes": 10405
+  },
+  {
    "id": "gl_tutor_45b76b32_10",
    "file": "gl_tutor_45b76b32_10.m4a",
    "seconds": 0.93,
@@ -16511,6 +16577,12 @@
    "file": "gl_tutor_45e5ea50_63.m4a",
    "seconds": 4.47,
    "bytes": 28245
+  },
+  {
+   "id": "gl_tutor_45e88565_22",
+   "file": "gl_tutor_45e88565_22.m4a",
+   "seconds": 1.41,
+   "bytes": 10238
   },
   {
    "id": "gl_tutor_45eafc40_17",
@@ -16711,6 +16783,12 @@
    "bytes": 4449
   },
   {
+   "id": "gl_tutor_4685d740_22",
+   "file": "gl_tutor_4685d740_22.m4a",
+   "seconds": 1.5,
+   "bytes": 10550
+  },
+  {
    "id": "gl_tutor_468d56c3_11",
    "file": "gl_tutor_468d56c3_11.m4a",
    "seconds": 0.81,
@@ -16739,12 +16817,6 @@
    "file": "gl_tutor_46acd327_5.m4a",
    "seconds": 0.62,
    "bytes": 5670
-  },
-  {
-   "id": "gl_tutor_46b2a933_15",
-   "file": "gl_tutor_46b2a933_15.m4a",
-   "seconds": 1.11,
-   "bytes": 8145
   },
   {
    "id": "gl_tutor_46b7ab17_20",
@@ -17209,12 +17281,6 @@
    "bytes": 8923
   },
   {
-   "id": "gl_tutor_48e4168c_20",
-   "file": "gl_tutor_48e4168c_20.m4a",
-   "seconds": 1.4,
-   "bytes": 10768
-  },
-  {
    "id": "gl_tutor_48eefcab_6",
    "file": "gl_tutor_48eefcab_6.m4a",
    "seconds": 0.7,
@@ -17285,6 +17351,12 @@
    "file": "gl_tutor_492e39a1_6.m4a",
    "seconds": 0.72,
    "bytes": 6000
+  },
+  {
+   "id": "gl_tutor_493882a9_14",
+   "file": "gl_tutor_493882a9_14.m4a",
+   "seconds": 1.12,
+   "bytes": 8345
   },
   {
    "id": "gl_tutor_494ce44b_20",
@@ -17713,6 +17785,12 @@
    "bytes": 15572
   },
   {
+   "id": "gl_tutor_4aeeeab6_27",
+   "file": "gl_tutor_4aeeeab6_27.m4a",
+   "seconds": 1.88,
+   "bytes": 12688
+  },
+  {
    "id": "gl_tutor_4afa108b_9",
    "file": "gl_tutor_4afa108b_9.m4a",
    "seconds": 0.89,
@@ -17807,6 +17885,12 @@
    "file": "gl_tutor_4b549073_48.m4a",
    "seconds": 2.74,
    "bytes": 18379
+  },
+  {
+   "id": "gl_tutor_4b57c8e4_38",
+   "file": "gl_tutor_4b57c8e4_38.m4a",
+   "seconds": 2.2,
+   "bytes": 15151
   },
   {
    "id": "gl_tutor_4b5bc973_7",
@@ -17969,6 +18053,12 @@
    "file": "gl_tutor_4bec0c4d_14.m4a",
    "seconds": 1.09,
    "bytes": 8874
+  },
+  {
+   "id": "gl_tutor_4bf80cd9_28",
+   "file": "gl_tutor_4bf80cd9_28.m4a",
+   "seconds": 1.97,
+   "bytes": 11783
   },
   {
    "id": "gl_tutor_4c047ef2_59",
@@ -18295,6 +18385,12 @@
    "bytes": 16603
   },
   {
+   "id": "gl_tutor_4d6c8438_20",
+   "file": "gl_tutor_4d6c8438_20.m4a",
+   "seconds": 1.41,
+   "bytes": 9508
+  },
+  {
    "id": "gl_tutor_4d6f1721_30",
    "file": "gl_tutor_4d6f1721_30.m4a",
    "seconds": 2.32,
@@ -18409,16 +18505,16 @@
    "bytes": 20774
   },
   {
+   "id": "gl_tutor_4dc6d95e_26",
+   "file": "gl_tutor_4dc6d95e_26.m4a",
+   "seconds": 1.75,
+   "bytes": 10970
+  },
+  {
    "id": "gl_tutor_4dd28fe7_30",
    "file": "gl_tutor_4dd28fe7_30.m4a",
    "seconds": 2.54,
    "bytes": 16289
-  },
-  {
-   "id": "gl_tutor_4de04507_41",
-   "file": "gl_tutor_4de04507_41.m4a",
-   "seconds": 2.55,
-   "bytes": 18143
   },
   {
    "id": "gl_tutor_4dea2897_10",
@@ -18679,12 +18775,6 @@
    "bytes": 17476
   },
   {
-   "id": "gl_tutor_4f092205_11",
-   "file": "gl_tutor_4f092205_11.m4a",
-   "seconds": 0.96,
-   "bytes": 7640
-  },
-  {
    "id": "gl_tutor_4f0d1083_109",
    "file": "gl_tutor_4f0d1083_109.m4a",
    "seconds": 7.39,
@@ -18763,12 +18853,6 @@
    "bytes": 15739
   },
   {
-   "id": "gl_tutor_4f69053d_27",
-   "file": "gl_tutor_4f69053d_27.m4a",
-   "seconds": 1.89,
-   "bytes": 11745
-  },
-  {
    "id": "gl_tutor_4f6b1d26_18",
    "file": "gl_tutor_4f6b1d26_18.m4a",
    "seconds": 1.4,
@@ -18785,6 +18869,12 @@
    "file": "gl_tutor_4f7a4c8e_34.m4a",
    "seconds": 2.5,
    "bytes": 16774
+  },
+  {
+   "id": "gl_tutor_4f7d4abd_26",
+   "file": "gl_tutor_4f7d4abd_26.m4a",
+   "seconds": 1.71,
+   "bytes": 12328
   },
   {
    "id": "gl_tutor_4f7f7152_30",
@@ -18875,12 +18965,6 @@
    "file": "gl_tutor_4fe37162_14.m4a",
    "seconds": 1.32,
    "bytes": 10567
-  },
-  {
-   "id": "gl_tutor_4fea4d05_24",
-   "file": "gl_tutor_4fea4d05_24.m4a",
-   "seconds": 1.51,
-   "bytes": 9469
   },
   {
    "id": "gl_tutor_4ff54a8c_169",
@@ -19273,6 +19357,12 @@
    "bytes": 41014
   },
   {
+   "id": "gl_tutor_517817ed_28",
+   "file": "gl_tutor_517817ed_28.m4a",
+   "seconds": 1.84,
+   "bytes": 12079
+  },
+  {
    "id": "gl_tutor_517c71dd_5",
    "file": "gl_tutor_517c71dd_5.m4a",
    "seconds": 0.6,
@@ -19409,12 +19499,6 @@
    "file": "gl_tutor_51eab7df_34.m4a",
    "seconds": 2.44,
    "bytes": 16274
-  },
-  {
-   "id": "gl_tutor_52084175_9",
-   "file": "gl_tutor_52084175_9.m4a",
-   "seconds": 0.8,
-   "bytes": 7169
   },
   {
    "id": "gl_tutor_520c55c0_40",
@@ -19561,6 +19645,12 @@
    "bytes": 17730
   },
   {
+   "id": "gl_tutor_52c14efb_19",
+   "file": "gl_tutor_52c14efb_19.m4a",
+   "seconds": 1.45,
+   "bytes": 9670
+  },
+  {
    "id": "gl_tutor_52c1c1d1_25",
    "file": "gl_tutor_52c1c1d1_25.m4a",
    "seconds": 2.37,
@@ -19685,12 +19775,6 @@
    "file": "gl_tutor_53115090_39.m4a",
    "seconds": 3.03,
    "bytes": 20882
-  },
-  {
-   "id": "gl_tutor_53134f69_10",
-   "file": "gl_tutor_53134f69_10.m4a",
-   "seconds": 0.92,
-   "bytes": 6907
   },
   {
    "id": "gl_tutor_5316e268_56",
@@ -19957,16 +20041,16 @@
    "bytes": 16528
   },
   {
+   "id": "gl_tutor_541cbd75_37",
+   "file": "gl_tutor_541cbd75_37.m4a",
+   "seconds": 2.39,
+   "bytes": 14641
+  },
+  {
    "id": "gl_tutor_5421241f_11",
    "file": "gl_tutor_5421241f_11.m4a",
    "seconds": 1.03,
    "bytes": 7658
-  },
-  {
-   "id": "gl_tutor_5422b1f0_25",
-   "file": "gl_tutor_5422b1f0_25.m4a",
-   "seconds": 1.53,
-   "bytes": 11973
   },
   {
    "id": "gl_tutor_5429952a_42",
@@ -20069,6 +20153,12 @@
    "file": "gl_tutor_549f5bdf_38.m4a",
    "seconds": 2.98,
    "bytes": 16696
+  },
+  {
+   "id": "gl_tutor_54a72c2a_20",
+   "file": "gl_tutor_54a72c2a_20.m4a",
+   "seconds": 1.47,
+   "bytes": 9442
   },
   {
    "id": "gl_tutor_54aa453e_17",
@@ -20195,6 +20285,12 @@
    "file": "gl_tutor_55097677_43.m4a",
    "seconds": 3.4,
    "bytes": 20096
+  },
+  {
+   "id": "gl_tutor_550d7f08_32",
+   "file": "gl_tutor_550d7f08_32.m4a",
+   "seconds": 2.14,
+   "bytes": 12838
   },
   {
    "id": "gl_tutor_5512060c_8",
@@ -20383,16 +20479,16 @@
    "bytes": 16031
   },
   {
+   "id": "gl_tutor_55eaa950_19",
+   "file": "gl_tutor_55eaa950_19.m4a",
+   "seconds": 1.45,
+   "bytes": 8986
+  },
+  {
    "id": "gl_tutor_55eab490_15",
    "file": "gl_tutor_55eab490_15.m4a",
    "seconds": 1.35,
    "bytes": 8690
-  },
-  {
-   "id": "gl_tutor_55f54a0f_21",
-   "file": "gl_tutor_55f54a0f_21.m4a",
-   "seconds": 1.46,
-   "bytes": 9490
   },
   {
    "id": "gl_tutor_55f88a22_18",
@@ -20779,22 +20875,10 @@
    "bytes": 9676
   },
   {
-   "id": "gl_tutor_57a9661a_16",
-   "file": "gl_tutor_57a9661a_16.m4a",
-   "seconds": 1.21,
-   "bytes": 8595
-  },
-  {
    "id": "gl_tutor_57ae28be_7",
    "file": "gl_tutor_57ae28be_7.m4a",
    "seconds": 0.76,
    "bytes": 5617
-  },
-  {
-   "id": "gl_tutor_57ceb583_17",
-   "file": "gl_tutor_57ceb583_17.m4a",
-   "seconds": 1.27,
-   "bytes": 9136
   },
   {
    "id": "gl_tutor_57cee635_16",
@@ -20861,6 +20945,12 @@
    "file": "gl_tutor_57ffc222_112.m4a",
    "seconds": 5.83,
    "bytes": 33725
+  },
+  {
+   "id": "gl_tutor_580e7ff0_30",
+   "file": "gl_tutor_580e7ff0_30.m4a",
+   "seconds": 2.07,
+   "bytes": 14605
   },
   {
    "id": "gl_tutor_5814bf4f_10",
@@ -21931,12 +22021,6 @@
    "bytes": 10392
   },
   {
-   "id": "gl_tutor_5c3b90e1_13",
-   "file": "gl_tutor_5c3b90e1_13.m4a",
-   "seconds": 0.96,
-   "bytes": 6135
-  },
-  {
    "id": "gl_tutor_5c428441_18",
    "file": "gl_tutor_5c428441_18.m4a",
    "seconds": 1.23,
@@ -22135,6 +22219,12 @@
    "bytes": 24147
   },
   {
+   "id": "gl_tutor_5d0aa6df_24",
+   "file": "gl_tutor_5d0aa6df_24.m4a",
+   "seconds": 1.73,
+   "bytes": 12223
+  },
+  {
    "id": "gl_tutor_5d0adf53_39",
    "file": "gl_tutor_5d0adf53_39.m4a",
    "seconds": 3.18,
@@ -22273,12 +22363,6 @@
    "bytes": 16581
   },
   {
-   "id": "gl_tutor_5d8bd169_14",
-   "file": "gl_tutor_5d8bd169_14.m4a",
-   "seconds": 0.96,
-   "bytes": 8049
-  },
-  {
    "id": "gl_tutor_5d9f8300_42",
    "file": "gl_tutor_5d9f8300_42.m4a",
    "seconds": 3.35,
@@ -22349,12 +22433,6 @@
    "file": "gl_tutor_5dd1b186_40.m4a",
    "seconds": 3.23,
    "bytes": 18982
-  },
-  {
-   "id": "gl_tutor_5dd2d60d_34",
-   "file": "gl_tutor_5dd2d60d_34.m4a",
-   "seconds": 2.14,
-   "bytes": 13987
   },
   {
    "id": "gl_tutor_5dd82e98_18",
@@ -22445,12 +22523,6 @@
    "file": "gl_tutor_5e331723_7.m4a",
    "seconds": 0.71,
    "bytes": 4837
-  },
-  {
-   "id": "gl_tutor_5e42ea07_19",
-   "file": "gl_tutor_5e42ea07_19.m4a",
-   "seconds": 1.4,
-   "bytes": 10937
   },
   {
    "id": "gl_tutor_5e43aaa9_18",
@@ -22627,12 +22699,6 @@
    "bytes": 8801
   },
   {
-   "id": "gl_tutor_5ed17fdd_18",
-   "file": "gl_tutor_5ed17fdd_18.m4a",
-   "seconds": 1.25,
-   "bytes": 9658
-  },
-  {
    "id": "gl_tutor_5edf0086_19",
    "file": "gl_tutor_5edf0086_19.m4a",
    "seconds": 1.74,
@@ -22667,18 +22733,6 @@
    "file": "gl_tutor_5ef0e145_15.m4a",
    "seconds": 1.08,
    "bytes": 7186
-  },
-  {
-   "id": "gl_tutor_5efbf03a_33",
-   "file": "gl_tutor_5efbf03a_33.m4a",
-   "seconds": 2.12,
-   "bytes": 14605
-  },
-  {
-   "id": "gl_tutor_5efcf24d_18",
-   "file": "gl_tutor_5efcf24d_18.m4a",
-   "seconds": 1.33,
-   "bytes": 10270
   },
   {
    "id": "gl_tutor_5effc4c8_41",
@@ -22753,12 +22807,6 @@
    "bytes": 4443
   },
   {
-   "id": "gl_tutor_5f580e71_21",
-   "file": "gl_tutor_5f580e71_21.m4a",
-   "seconds": 1.36,
-   "bytes": 9936
-  },
-  {
    "id": "gl_tutor_5f5c82af_24",
    "file": "gl_tutor_5f5c82af_24.m4a",
    "seconds": 1.9,
@@ -22799,6 +22847,12 @@
    "file": "gl_tutor_5f9ad9a5_13.m4a",
    "seconds": 1.11,
    "bytes": 7584
+  },
+  {
+   "id": "gl_tutor_5f9cb29e_26",
+   "file": "gl_tutor_5f9cb29e_26.m4a",
+   "seconds": 1.77,
+   "bytes": 11582
   },
   {
    "id": "gl_tutor_5fa26187_30",
@@ -22937,12 +22991,6 @@
    "file": "gl_tutor_60220025_30.m4a",
    "seconds": 1.5,
    "bytes": 9042
-  },
-  {
-   "id": "gl_tutor_6028b6bf_25",
-   "file": "gl_tutor_6028b6bf_25.m4a",
-   "seconds": 1.69,
-   "bytes": 11863
   },
   {
    "id": "gl_tutor_602a3508_14",
@@ -23353,6 +23401,12 @@
    "bytes": 26414
   },
   {
+   "id": "gl_tutor_61bb2897_12",
+   "file": "gl_tutor_61bb2897_12.m4a",
+   "seconds": 0.98,
+   "bytes": 7310
+  },
+  {
    "id": "gl_tutor_61bc75aa_32",
    "file": "gl_tutor_61bc75aa_32.m4a",
    "seconds": 1.71,
@@ -23497,12 +23551,6 @@
    "bytes": 16194
   },
   {
-   "id": "gl_tutor_622f1e64_7",
-   "file": "gl_tutor_622f1e64_7.m4a",
-   "seconds": 0.77,
-   "bytes": 5299
-  },
-  {
    "id": "gl_tutor_623f05f4_39",
    "file": "gl_tutor_623f05f4_39.m4a",
    "seconds": 2.78,
@@ -23641,12 +23689,6 @@
    "bytes": 13864
   },
   {
-   "id": "gl_tutor_62df1e07_20",
-   "file": "gl_tutor_62df1e07_20.m4a",
-   "seconds": 1.48,
-   "bytes": 11665
-  },
-  {
    "id": "gl_tutor_62e7e5b1_48",
    "file": "gl_tutor_62e7e5b1_48.m4a",
    "seconds": 3.39,
@@ -23675,12 +23717,6 @@
    "file": "gl_tutor_630f997b_7.m4a",
    "seconds": 0.77,
    "bytes": 6802
-  },
-  {
-   "id": "gl_tutor_6326dda2_24",
-   "file": "gl_tutor_6326dda2_24.m4a",
-   "seconds": 1.67,
-   "bytes": 10690
   },
   {
    "id": "gl_tutor_6330e899_16",
@@ -23747,12 +23783,6 @@
    "file": "gl_tutor_635758d9_16.m4a",
    "seconds": 1.11,
    "bytes": 8178
-  },
-  {
-   "id": "gl_tutor_6370e338_19",
-   "file": "gl_tutor_6370e338_19.m4a",
-   "seconds": 1.22,
-   "bytes": 8784
   },
   {
    "id": "gl_tutor_6371d3fb_39",
@@ -24023,6 +24053,12 @@
    "file": "gl_tutor_64d75123_27.m4a",
    "seconds": 1.58,
    "bytes": 10935
+  },
+  {
+   "id": "gl_tutor_64dd3c5e_26",
+   "file": "gl_tutor_64dd3c5e_26.m4a",
+   "seconds": 1.6,
+   "bytes": 9814
   },
   {
    "id": "gl_tutor_64e3391f_69",
@@ -24667,6 +24703,12 @@
    "bytes": 7899
   },
   {
+   "id": "gl_tutor_67a2bb76_15",
+   "file": "gl_tutor_67a2bb76_15.m4a",
+   "seconds": 1.25,
+   "bytes": 9569
+  },
+  {
    "id": "gl_tutor_67a2fea5_11",
    "file": "gl_tutor_67a2fea5_11.m4a",
    "seconds": 0.86,
@@ -24683,6 +24725,12 @@
    "file": "gl_tutor_67be6c62_41.m4a",
    "seconds": 2.65,
    "bytes": 17582
+  },
+  {
+   "id": "gl_tutor_67c1ca75_32",
+   "file": "gl_tutor_67c1ca75_32.m4a",
+   "seconds": 2.12,
+   "bytes": 14014
   },
   {
    "id": "gl_tutor_67c9179b_26",
@@ -25229,6 +25277,12 @@
    "file": "gl_tutor_6a8032b3_25.m4a",
    "seconds": 1.68,
    "bytes": 10527
+  },
+  {
+   "id": "gl_tutor_6a852a97_15",
+   "file": "gl_tutor_6a852a97_15.m4a",
+   "seconds": 1.2,
+   "bytes": 8467
   },
   {
    "id": "gl_tutor_6a8a0780_38",
@@ -25849,6 +25903,12 @@
    "bytes": 8379
   },
   {
+   "id": "gl_tutor_6d3e91e9_22",
+   "file": "gl_tutor_6d3e91e9_22.m4a",
+   "seconds": 1.32,
+   "bytes": 9943
+  },
+  {
    "id": "gl_tutor_6d3ec276_58",
    "file": "gl_tutor_6d3ec276_58.m4a",
    "seconds": 3.59,
@@ -26263,12 +26323,6 @@
    "bytes": 5377
   },
   {
-   "id": "gl_tutor_6ed10df2_13",
-   "file": "gl_tutor_6ed10df2_13.m4a",
-   "seconds": 1.15,
-   "bytes": 8944
-  },
-  {
    "id": "gl_tutor_6ed389e5_9",
    "file": "gl_tutor_6ed389e5_9.m4a",
    "seconds": 0.87,
@@ -26369,12 +26423,6 @@
    "file": "gl_tutor_6f68355e_5.m4a",
    "seconds": 0.54,
    "bytes": 4590
-  },
-  {
-   "id": "gl_tutor_6f6f0eeb_26",
-   "file": "gl_tutor_6f6f0eeb_26.m4a",
-   "seconds": 1.55,
-   "bytes": 9499
   },
   {
    "id": "gl_tutor_6f72b011_12",
@@ -26539,6 +26587,12 @@
    "bytes": 11025
   },
   {
+   "id": "gl_tutor_6fdec123_26",
+   "file": "gl_tutor_6fdec123_26.m4a",
+   "seconds": 1.81,
+   "bytes": 12362
+  },
+  {
    "id": "gl_tutor_6fe01fbf_45",
    "file": "gl_tutor_6fe01fbf_45.m4a",
    "seconds": 3.61,
@@ -26693,6 +26747,12 @@
    "file": "gl_tutor_70aa69c5_108.m4a",
    "seconds": 5.84,
    "bytes": 34525
+  },
+  {
+   "id": "gl_tutor_70ae0105_47",
+   "file": "gl_tutor_70ae0105_47.m4a",
+   "seconds": 3.0,
+   "bytes": 19096
   },
   {
    "id": "gl_tutor_70ae2bd7_8",
@@ -26903,6 +26963,12 @@
    "file": "gl_tutor_719496c4_11.m4a",
    "seconds": 1.0,
    "bytes": 6369
+  },
+  {
+   "id": "gl_tutor_7195ac45_18",
+   "file": "gl_tutor_7195ac45_18.m4a",
+   "seconds": 1.25,
+   "bytes": 9320
   },
   {
    "id": "gl_tutor_71ac4a6c_27",
@@ -27433,12 +27499,6 @@
    "bytes": 6759
   },
   {
-   "id": "gl_tutor_73889648_29",
-   "file": "gl_tutor_73889648_29.m4a",
-   "seconds": 1.82,
-   "bytes": 11672
-  },
-  {
    "id": "gl_tutor_739650c4_9",
    "file": "gl_tutor_739650c4_9.m4a",
    "seconds": 0.83,
@@ -27517,6 +27577,12 @@
    "bytes": 20951
   },
   {
+   "id": "gl_tutor_73e005b5_18",
+   "file": "gl_tutor_73e005b5_18.m4a",
+   "seconds": 1.14,
+   "bytes": 7052
+  },
+  {
    "id": "gl_tutor_73e6605b_24",
    "file": "gl_tutor_73e6605b_24.m4a",
    "seconds": 2.47,
@@ -27545,18 +27611,6 @@
    "file": "gl_tutor_74088dd5_52.m4a",
    "seconds": 3.16,
    "bytes": 17302
-  },
-  {
-   "id": "gl_tutor_741359e0_24",
-   "file": "gl_tutor_741359e0_24.m4a",
-   "seconds": 1.66,
-   "bytes": 12027
-  },
-  {
-   "id": "gl_tutor_7418cc69_26",
-   "file": "gl_tutor_7418cc69_26.m4a",
-   "seconds": 1.53,
-   "bytes": 10012
   },
   {
    "id": "gl_tutor_741c67d7_31",
@@ -27655,12 +27709,6 @@
    "bytes": 11268
   },
   {
-   "id": "gl_tutor_74ba32be_10",
-   "file": "gl_tutor_74ba32be_10.m4a",
-   "seconds": 0.86,
-   "bytes": 5759
-  },
-  {
    "id": "gl_tutor_74c102b7_22",
    "file": "gl_tutor_74c102b7_22.m4a",
    "seconds": 1.62,
@@ -27757,12 +27805,6 @@
    "bytes": 9061
   },
   {
-   "id": "gl_tutor_7526efac_21",
-   "file": "gl_tutor_7526efac_21.m4a",
-   "seconds": 1.36,
-   "bytes": 9445
-  },
-  {
    "id": "gl_tutor_75270d13_47",
    "file": "gl_tutor_75270d13_47.m4a",
    "seconds": 3.13,
@@ -27821,12 +27863,6 @@
    "file": "gl_tutor_755b2bd1_65.m4a",
    "seconds": 4.43,
    "bytes": 28135
-  },
-  {
-   "id": "gl_tutor_755db874_26",
-   "file": "gl_tutor_755db874_26.m4a",
-   "seconds": 1.86,
-   "bytes": 11336
   },
   {
    "id": "gl_tutor_755ed862_28",
@@ -27943,12 +27979,6 @@
    "bytes": 9061
   },
   {
-   "id": "gl_tutor_75c83e6e_24",
-   "file": "gl_tutor_75c83e6e_24.m4a",
-   "seconds": 1.91,
-   "bytes": 11228
-  },
-  {
    "id": "gl_tutor_75d4eb8a_12",
    "file": "gl_tutor_75d4eb8a_12.m4a",
    "seconds": 0.99,
@@ -28001,12 +28031,6 @@
    "file": "gl_tutor_7619ba18_21.m4a",
    "seconds": 1.51,
    "bytes": 9727
-  },
-  {
-   "id": "gl_tutor_7621241a_30",
-   "file": "gl_tutor_7621241a_30.m4a",
-   "seconds": 2.07,
-   "bytes": 14210
   },
   {
    "id": "gl_tutor_7630eaf5_11",
@@ -28285,12 +28309,6 @@
    "bytes": 11251
   },
   {
-   "id": "gl_tutor_77639f9d_14",
-   "file": "gl_tutor_77639f9d_14.m4a",
-   "seconds": 1.05,
-   "bytes": 7096
-  },
-  {
    "id": "gl_tutor_7779c186_6",
    "file": "gl_tutor_7779c186_6.m4a",
    "seconds": 0.73,
@@ -28553,6 +28571,12 @@
    "file": "gl_tutor_78b10071_13.m4a",
    "seconds": 1.2,
    "bytes": 7535
+  },
+  {
+   "id": "gl_tutor_78b90cdd_22",
+   "file": "gl_tutor_78b90cdd_22.m4a",
+   "seconds": 1.46,
+   "bytes": 9288
   },
   {
    "id": "gl_tutor_78bd1955_47",
@@ -28933,6 +28957,12 @@
    "bytes": 16375
   },
   {
+   "id": "gl_tutor_7a41b69d_47",
+   "file": "gl_tutor_7a41b69d_47.m4a",
+   "seconds": 3.29,
+   "bytes": 20325
+  },
+  {
    "id": "gl_tutor_7a44e886_15",
    "file": "gl_tutor_7a44e886_15.m4a",
    "seconds": 1.22,
@@ -29017,6 +29047,12 @@
    "bytes": 7506
   },
   {
+   "id": "gl_tutor_7a7a9142_24",
+   "file": "gl_tutor_7a7a9142_24.m4a",
+   "seconds": 1.91,
+   "bytes": 13569
+  },
+  {
    "id": "gl_tutor_7a81e709_6",
    "file": "gl_tutor_7a81e709_6.m4a",
    "seconds": 0.75,
@@ -29075,12 +29111,6 @@
    "file": "gl_tutor_7ab4218c_30.m4a",
    "seconds": 2.2,
    "bytes": 12543
-  },
-  {
-   "id": "gl_tutor_7ab86fe2_14",
-   "file": "gl_tutor_7ab86fe2_14.m4a",
-   "seconds": 1.07,
-   "bytes": 6820
   },
   {
    "id": "gl_tutor_7ab9d48c_75",
@@ -29275,6 +29305,12 @@
    "bytes": 5341
   },
   {
+   "id": "gl_tutor_7ba133d4_18",
+   "file": "gl_tutor_7ba133d4_18.m4a",
+   "seconds": 1.26,
+   "bytes": 7590
+  },
+  {
    "id": "gl_tutor_7ba73110_57",
    "file": "gl_tutor_7ba73110_57.m4a",
    "seconds": 3.36,
@@ -29461,12 +29497,6 @@
    "bytes": 7118
   },
   {
-   "id": "gl_tutor_7c5d5de3_23",
-   "file": "gl_tutor_7c5d5de3_23.m4a",
-   "seconds": 1.73,
-   "bytes": 11288
-  },
-  {
    "id": "gl_tutor_7c5e33bd_12",
    "file": "gl_tutor_7c5e33bd_12.m4a",
    "seconds": 0.95,
@@ -29483,12 +29513,6 @@
    "file": "gl_tutor_7c6d48c0_17.m4a",
    "seconds": 1.17,
    "bytes": 8084
-  },
-  {
-   "id": "gl_tutor_7c76373f_43",
-   "file": "gl_tutor_7c76373f_43.m4a",
-   "seconds": 2.49,
-   "bytes": 17466
   },
   {
    "id": "gl_tutor_7c82d652_27",
@@ -29515,10 +29539,22 @@
    "bytes": 5759
   },
   {
+   "id": "gl_tutor_7ca08a80_16",
+   "file": "gl_tutor_7ca08a80_16.m4a",
+   "seconds": 1.09,
+   "bytes": 7072
+  },
+  {
    "id": "gl_tutor_7ca225a1_4",
    "file": "gl_tutor_7ca225a1_4.m4a",
    "seconds": 0.52,
    "bytes": 4719
+  },
+  {
+   "id": "gl_tutor_7ca28f36_27",
+   "file": "gl_tutor_7ca28f36_27.m4a",
+   "seconds": 1.93,
+   "bytes": 12364
   },
   {
    "id": "gl_tutor_7ca645e2_104",
@@ -29531,6 +29567,12 @@
    "file": "gl_tutor_7ca78371_6.m4a",
    "seconds": 0.69,
    "bytes": 4655
+  },
+  {
+   "id": "gl_tutor_7cb3af1c_9",
+   "file": "gl_tutor_7cb3af1c_9.m4a",
+   "seconds": 0.92,
+   "bytes": 6890
   },
   {
    "id": "gl_tutor_7cbaddd1_25",
@@ -29737,16 +29779,16 @@
    "bytes": 7889
   },
   {
+   "id": "gl_tutor_7d971917_30",
+   "file": "gl_tutor_7d971917_30.m4a",
+   "seconds": 1.77,
+   "bytes": 13227
+  },
+  {
    "id": "gl_tutor_7d9793ba_4",
    "file": "gl_tutor_7d9793ba_4.m4a",
    "seconds": 0.55,
    "bytes": 5335
-  },
-  {
-   "id": "gl_tutor_7d9fa7fa_18",
-   "file": "gl_tutor_7d9fa7fa_18.m4a",
-   "seconds": 1.22,
-   "bytes": 9762
   },
   {
    "id": "gl_tutor_7d9fc221_18",
@@ -29923,6 +29965,12 @@
    "bytes": 7470
   },
   {
+   "id": "gl_tutor_7ec747da_47",
+   "file": "gl_tutor_7ec747da_47.m4a",
+   "seconds": 3.1,
+   "bytes": 18744
+  },
+  {
    "id": "gl_tutor_7eea6ac9_30",
    "file": "gl_tutor_7eea6ac9_30.m4a",
    "seconds": 1.97,
@@ -29993,12 +30041,6 @@
    "file": "gl_tutor_7f16e163_43.m4a",
    "seconds": 3.35,
    "bytes": 22967
-  },
-  {
-   "id": "gl_tutor_7f192029_25",
-   "file": "gl_tutor_7f192029_25.m4a",
-   "seconds": 1.72,
-   "bytes": 11211
   },
   {
    "id": "gl_tutor_7f1e0803_66",
@@ -30137,6 +30179,12 @@
    "file": "gl_tutor_7fc49c5a_33.m4a",
    "seconds": 2.22,
    "bytes": 14210
+  },
+  {
+   "id": "gl_tutor_7fd2bad8_22",
+   "file": "gl_tutor_7fd2bad8_22.m4a",
+   "seconds": 1.49,
+   "bytes": 10111
   },
   {
    "id": "gl_tutor_7fe13597_123",
@@ -30469,16 +30517,16 @@
    "bytes": 19314
   },
   {
+   "id": "gl_tutor_811deb7c_30",
+   "file": "gl_tutor_811deb7c_30.m4a",
+   "seconds": 1.81,
+   "bytes": 11512
+  },
+  {
    "id": "gl_tutor_812682d4_17",
    "file": "gl_tutor_812682d4_17.m4a",
    "seconds": 1.09,
    "bytes": 9422
-  },
-  {
-   "id": "gl_tutor_812c9f67_15",
-   "file": "gl_tutor_812c9f67_15.m4a",
-   "seconds": 1.17,
-   "bytes": 8592
   },
   {
    "id": "gl_tutor_812fc30f_40",
@@ -30679,6 +30727,12 @@
    "bytes": 5469
   },
   {
+   "id": "gl_tutor_81ef1736_11",
+   "file": "gl_tutor_81ef1736_11.m4a",
+   "seconds": 0.86,
+   "bytes": 6012
+  },
+  {
    "id": "gl_tutor_81f8f77d_7",
    "file": "gl_tutor_81f8f77d_7.m4a",
    "seconds": 0.76,
@@ -30719,6 +30773,12 @@
    "file": "gl_tutor_823b4975_26.m4a",
    "seconds": 1.97,
    "bytes": 12055
+  },
+  {
+   "id": "gl_tutor_8243852d_14",
+   "file": "gl_tutor_8243852d_14.m4a",
+   "seconds": 0.97,
+   "bytes": 6622
   },
   {
    "id": "gl_tutor_8249c4ef_39",
@@ -30785,12 +30845,6 @@
    "file": "gl_tutor_82b5e251_39.m4a",
    "seconds": 2.56,
    "bytes": 16945
-  },
-  {
-   "id": "gl_tutor_82bde00f_27",
-   "file": "gl_tutor_82bde00f_27.m4a",
-   "seconds": 1.73,
-   "bytes": 12924
   },
   {
    "id": "gl_tutor_82bfb26b_10",
@@ -30901,6 +30955,12 @@
    "bytes": 49777
   },
   {
+   "id": "gl_tutor_832c8b94_18",
+   "file": "gl_tutor_832c8b94_18.m4a",
+   "seconds": 1.33,
+   "bytes": 10765
+  },
+  {
    "id": "gl_tutor_832f3d3d_19",
    "file": "gl_tutor_832f3d3d_19.m4a",
    "seconds": 1.43,
@@ -30995,6 +31055,12 @@
    "file": "gl_tutor_83b3801e_25.m4a",
    "seconds": 2.48,
    "bytes": 17454
+  },
+  {
+   "id": "gl_tutor_83b8717d_10",
+   "file": "gl_tutor_83b8717d_10.m4a",
+   "seconds": 0.84,
+   "bytes": 5625
   },
   {
    "id": "gl_tutor_83ba3936_67",
@@ -31267,12 +31333,6 @@
    "bytes": 16816
   },
   {
-   "id": "gl_tutor_84ba7a67_16",
-   "file": "gl_tutor_84ba7a67_16.m4a",
-   "seconds": 1.11,
-   "bytes": 8734
-  },
-  {
    "id": "gl_tutor_84c07c32_53",
    "file": "gl_tutor_84c07c32_53.m4a",
    "seconds": 3.12,
@@ -31399,6 +31459,12 @@
    "bytes": 7681
   },
   {
+   "id": "gl_tutor_854ce5f3_11",
+   "file": "gl_tutor_854ce5f3_11.m4a",
+   "seconds": 0.99,
+   "bytes": 8804
+  },
+  {
    "id": "gl_tutor_85550925_15",
    "file": "gl_tutor_85550925_15.m4a",
    "seconds": 1.16,
@@ -31459,12 +31525,6 @@
    "bytes": 7454
   },
   {
-   "id": "gl_tutor_85805080_24",
-   "file": "gl_tutor_85805080_24.m4a",
-   "seconds": 1.42,
-   "bytes": 10553
-  },
-  {
    "id": "gl_tutor_8587cc08_47",
    "file": "gl_tutor_8587cc08_47.m4a",
    "seconds": 3.58,
@@ -31481,12 +31541,6 @@
    "file": "gl_tutor_858ecb32_8.m4a",
    "seconds": 0.74,
    "bytes": 4885
-  },
-  {
-   "id": "gl_tutor_8592a7d3_19",
-   "file": "gl_tutor_8592a7d3_19.m4a",
-   "seconds": 1.37,
-   "bytes": 9424
   },
   {
    "id": "gl_tutor_8597a816_18",
@@ -31531,6 +31585,12 @@
    "bytes": 18346
   },
   {
+   "id": "gl_tutor_85bf70f9_20",
+   "file": "gl_tutor_85bf70f9_20.m4a",
+   "seconds": 1.36,
+   "bytes": 8524
+  },
+  {
    "id": "gl_tutor_85c3d191_49",
    "file": "gl_tutor_85c3d191_49.m4a",
    "seconds": 3.43,
@@ -31559,12 +31619,6 @@
    "file": "gl_tutor_85db652f_4.m4a",
    "seconds": 0.53,
    "bytes": 4933
-  },
-  {
-   "id": "gl_tutor_85e3fdc3_18",
-   "file": "gl_tutor_85e3fdc3_18.m4a",
-   "seconds": 1.29,
-   "bytes": 7780
   },
   {
    "id": "gl_tutor_85e4bf56_12",
@@ -31625,6 +31679,12 @@
    "file": "gl_tutor_861ef2a1_9.m4a",
    "seconds": 0.85,
    "bytes": 5508
+  },
+  {
+   "id": "gl_tutor_8622d84b_16",
+   "file": "gl_tutor_8622d84b_16.m4a",
+   "seconds": 1.15,
+   "bytes": 8694
   },
   {
    "id": "gl_tutor_862dacec_27",
@@ -31699,12 +31759,6 @@
    "bytes": 7121
   },
   {
-   "id": "gl_tutor_86935934_20",
-   "file": "gl_tutor_86935934_20.m4a",
-   "seconds": 1.42,
-   "bytes": 8604
-  },
-  {
    "id": "gl_tutor_8694901d_24",
    "file": "gl_tutor_8694901d_24.m4a",
    "seconds": 2.2,
@@ -31727,12 +31781,6 @@
    "file": "gl_tutor_869e18ed_16.m4a",
    "seconds": 1.21,
    "bytes": 10189
-  },
-  {
-   "id": "gl_tutor_86b15e09_37",
-   "file": "gl_tutor_86b15e09_37.m4a",
-   "seconds": 2.46,
-   "bytes": 16972
   },
   {
    "id": "gl_tutor_86b41e19_147",
@@ -31831,6 +31879,12 @@
    "bytes": 22220
   },
   {
+   "id": "gl_tutor_87340c44_36",
+   "file": "gl_tutor_87340c44_36.m4a",
+   "seconds": 2.41,
+   "bytes": 13976
+  },
+  {
    "id": "gl_tutor_873e568d_30",
    "file": "gl_tutor_873e568d_30.m4a",
    "seconds": 1.66,
@@ -31901,6 +31955,12 @@
    "file": "gl_tutor_87684333_11.m4a",
    "seconds": 0.95,
    "bytes": 6062
+  },
+  {
+   "id": "gl_tutor_87761894_23",
+   "file": "gl_tutor_87761894_23.m4a",
+   "seconds": 1.68,
+   "bytes": 10084
   },
   {
    "id": "gl_tutor_87836aa5_19",
@@ -32137,6 +32197,12 @@
    "bytes": 20086
   },
   {
+   "id": "gl_tutor_88961cd5_29",
+   "file": "gl_tutor_88961cd5_29.m4a",
+   "seconds": 2.05,
+   "bytes": 13383
+  },
+  {
    "id": "gl_tutor_889a3b7a_35",
    "file": "gl_tutor_889a3b7a_35.m4a",
    "seconds": 2.4,
@@ -32165,12 +32231,6 @@
    "file": "gl_tutor_88acc7f2_14.m4a",
    "seconds": 1.06,
    "bytes": 6596
-  },
-  {
-   "id": "gl_tutor_88b416d4_37",
-   "file": "gl_tutor_88b416d4_37.m4a",
-   "seconds": 2.16,
-   "bytes": 13729
   },
   {
    "id": "gl_tutor_88ba9bc3_8",
@@ -32317,6 +32377,12 @@
    "bytes": 19361
   },
   {
+   "id": "gl_tutor_8927d3d2_20",
+   "file": "gl_tutor_8927d3d2_20.m4a",
+   "seconds": 1.27,
+   "bytes": 9985
+  },
+  {
    "id": "gl_tutor_892fe126_54",
    "file": "gl_tutor_892fe126_54.m4a",
    "seconds": 3.33,
@@ -32333,6 +32399,12 @@
    "file": "gl_tutor_893517fe_29.m4a",
    "seconds": 1.74,
    "bytes": 12849
+  },
+  {
+   "id": "gl_tutor_89428145_20",
+   "file": "gl_tutor_89428145_20.m4a",
+   "seconds": 1.17,
+   "bytes": 8094
   },
   {
    "id": "gl_tutor_894d6008_22",
@@ -32425,6 +32497,12 @@
    "bytes": 13020
   },
   {
+   "id": "gl_tutor_899b0243_34",
+   "file": "gl_tutor_899b0243_34.m4a",
+   "seconds": 2.46,
+   "bytes": 14514
+  },
+  {
    "id": "gl_tutor_899e4bec_12",
    "file": "gl_tutor_899e4bec_12.m4a",
    "seconds": 0.9,
@@ -32479,6 +32557,12 @@
    "bytes": 6880
   },
   {
+   "id": "gl_tutor_89c00017_40",
+   "file": "gl_tutor_89c00017_40.m4a",
+   "seconds": 2.5,
+   "bytes": 16072
+  },
+  {
    "id": "gl_tutor_89c896ca_39",
    "file": "gl_tutor_89c896ca_39.m4a",
    "seconds": 3.23,
@@ -32531,6 +32615,12 @@
    "file": "gl_tutor_89df363f_42.m4a",
    "seconds": 3.38,
    "bytes": 20687
+  },
+  {
+   "id": "gl_tutor_89ea21db_16",
+   "file": "gl_tutor_89ea21db_16.m4a",
+   "seconds": 1.02,
+   "bytes": 7682
   },
   {
    "id": "gl_tutor_89ed85d5_17",
@@ -32665,6 +32755,12 @@
    "bytes": 9081
   },
   {
+   "id": "gl_tutor_8a6a5a11_29",
+   "file": "gl_tutor_8a6a5a11_29.m4a",
+   "seconds": 2.23,
+   "bytes": 12791
+  },
+  {
    "id": "gl_tutor_8a6bf0e5_12",
    "file": "gl_tutor_8a6bf0e5_12.m4a",
    "seconds": 0.94,
@@ -32741,6 +32837,12 @@
    "file": "gl_tutor_8ab6cc28_4.m4a",
    "seconds": 0.54,
    "bytes": 4026
+  },
+  {
+   "id": "gl_tutor_8abb0e25_23",
+   "file": "gl_tutor_8abb0e25_23.m4a",
+   "seconds": 1.47,
+   "bytes": 10815
   },
   {
    "id": "gl_tutor_8abd27fb_4",
@@ -33217,12 +33319,6 @@
    "bytes": 5007
   },
   {
-   "id": "gl_tutor_8c903ac3_18",
-   "file": "gl_tutor_8c903ac3_18.m4a",
-   "seconds": 1.03,
-   "bytes": 7991
-  },
-  {
    "id": "gl_tutor_8c935ee9_41",
    "file": "gl_tutor_8c935ee9_41.m4a",
    "seconds": 3.06,
@@ -33601,12 +33697,6 @@
    "bytes": 4655
   },
   {
-   "id": "gl_tutor_8e14913c_29",
-   "file": "gl_tutor_8e14913c_29.m4a",
-   "seconds": 2.04,
-   "bytes": 12829
-  },
-  {
    "id": "gl_tutor_8e182800_19",
    "file": "gl_tutor_8e182800_19.m4a",
    "seconds": 1.3,
@@ -33895,16 +33985,16 @@
    "bytes": 23137
   },
   {
-   "id": "gl_tutor_8f19c7fd_30",
-   "file": "gl_tutor_8f19c7fd_30.m4a",
-   "seconds": 1.97,
-   "bytes": 11169
-  },
-  {
    "id": "gl_tutor_8f20f684_8",
    "file": "gl_tutor_8f20f684_8.m4a",
    "seconds": 0.85,
    "bytes": 6315
+  },
+  {
+   "id": "gl_tutor_8f22ffb9_22",
+   "file": "gl_tutor_8f22ffb9_22.m4a",
+   "seconds": 1.55,
+   "bytes": 11311
   },
   {
    "id": "gl_tutor_8f24f378_7",
@@ -33947,6 +34037,12 @@
    "file": "gl_tutor_8f3f74e2_6.m4a",
    "seconds": 1.06,
    "bytes": 6382
+  },
+  {
+   "id": "gl_tutor_8f42576a_40",
+   "file": "gl_tutor_8f42576a_40.m4a",
+   "seconds": 2.53,
+   "bytes": 16309
   },
   {
    "id": "gl_tutor_8f49984f_61",
@@ -34135,12 +34231,6 @@
    "bytes": 21052
   },
   {
-   "id": "gl_tutor_8ffb45ae_26",
-   "file": "gl_tutor_8ffb45ae_26.m4a",
-   "seconds": 1.59,
-   "bytes": 12109
-  },
-  {
    "id": "gl_tutor_8ffee2f3_59",
    "file": "gl_tutor_8ffee2f3_59.m4a",
    "seconds": 3.53,
@@ -34163,12 +34253,6 @@
    "file": "gl_tutor_900aeac7_90.m4a",
    "seconds": 6.81,
    "bytes": 43312
-  },
-  {
-   "id": "gl_tutor_900b42f0_22",
-   "file": "gl_tutor_900b42f0_22.m4a",
-   "seconds": 1.54,
-   "bytes": 9491
   },
   {
    "id": "gl_tutor_900dc176_38",
@@ -34543,6 +34627,12 @@
    "bytes": 8007
   },
   {
+   "id": "gl_tutor_9156eb27_17",
+   "file": "gl_tutor_9156eb27_17.m4a",
+   "seconds": 1.1,
+   "bytes": 8367
+  },
+  {
    "id": "gl_tutor_91572679_18",
    "file": "gl_tutor_91572679_18.m4a",
    "seconds": 1.27,
@@ -34657,12 +34747,6 @@
    "bytes": 7922
   },
   {
-   "id": "gl_tutor_91fb156c_20",
-   "file": "gl_tutor_91fb156c_20.m4a",
-   "seconds": 1.63,
-   "bytes": 12733
-  },
-  {
    "id": "gl_tutor_92071754_36",
    "file": "gl_tutor_92071754_36.m4a",
    "seconds": 2.8,
@@ -34741,12 +34825,6 @@
    "bytes": 41663
   },
   {
-   "id": "gl_tutor_9256cd82_19",
-   "file": "gl_tutor_9256cd82_19.m4a",
-   "seconds": 1.19,
-   "bytes": 8696
-  },
-  {
    "id": "gl_tutor_9258c230_33",
    "file": "gl_tutor_9258c230_33.m4a",
    "seconds": 2.26,
@@ -34807,6 +34885,12 @@
    "bytes": 4228
   },
   {
+   "id": "gl_tutor_92932c62_20",
+   "file": "gl_tutor_92932c62_20.m4a",
+   "seconds": 1.38,
+   "bytes": 9204
+  },
+  {
    "id": "gl_tutor_92935b62_27",
    "file": "gl_tutor_92935b62_27.m4a",
    "seconds": 1.73,
@@ -34859,6 +34943,12 @@
    "file": "gl_tutor_92b6e802_11.m4a",
    "seconds": 1.08,
    "bytes": 7659
+  },
+  {
+   "id": "gl_tutor_92b84648_8",
+   "file": "gl_tutor_92b84648_8.m4a",
+   "seconds": 0.76,
+   "bytes": 6394
   },
   {
    "id": "gl_tutor_92c486f3_31",
@@ -35515,12 +35605,6 @@
    "bytes": 15793
   },
   {
-   "id": "gl_tutor_9565a16c_33",
-   "file": "gl_tutor_9565a16c_33.m4a",
-   "seconds": 2.03,
-   "bytes": 12710
-  },
-  {
    "id": "gl_tutor_956a0051_46",
    "file": "gl_tutor_956a0051_46.m4a",
    "seconds": 3.43,
@@ -35569,6 +35653,12 @@
    "bytes": 7599
   },
   {
+   "id": "gl_tutor_95ac650c_11",
+   "file": "gl_tutor_95ac650c_11.m4a",
+   "seconds": 1.06,
+   "bytes": 7695
+  },
+  {
    "id": "gl_tutor_95ad2e1f_13",
    "file": "gl_tutor_95ad2e1f_13.m4a",
    "seconds": 1.08,
@@ -35597,6 +35687,12 @@
    "file": "gl_tutor_95bfeb50_5.m4a",
    "seconds": 0.67,
    "bytes": 5341
+  },
+  {
+   "id": "gl_tutor_95c07c91_35",
+   "file": "gl_tutor_95c07c91_35.m4a",
+   "seconds": 2.19,
+   "bytes": 14798
   },
   {
    "id": "gl_tutor_95c1cfa4_22",
@@ -35707,6 +35803,12 @@
    "bytes": 6248
   },
   {
+   "id": "gl_tutor_962a6963_26",
+   "file": "gl_tutor_962a6963_26.m4a",
+   "seconds": 1.77,
+   "bytes": 11172
+  },
+  {
    "id": "gl_tutor_962c8ce1_40",
    "file": "gl_tutor_962c8ce1_40.m4a",
    "seconds": 3.06,
@@ -35741,6 +35843,12 @@
    "file": "gl_tutor_96430a80_55.m4a",
    "seconds": 3.88,
    "bytes": 25939
+  },
+  {
+   "id": "gl_tutor_96480448_23",
+   "file": "gl_tutor_96480448_23.m4a",
+   "seconds": 1.51,
+   "bytes": 10879
   },
   {
    "id": "gl_tutor_965b70ec_41",
@@ -35849,12 +35957,6 @@
    "file": "gl_tutor_96c07a00_89.m4a",
    "seconds": 4.85,
    "bytes": 26998
-  },
-  {
-   "id": "gl_tutor_96c85a6e_26",
-   "file": "gl_tutor_96c85a6e_26.m4a",
-   "seconds": 1.58,
-   "bytes": 10924
   },
   {
    "id": "gl_tutor_96c92211_22",
@@ -36115,6 +36217,12 @@
    "bytes": 12437
   },
   {
+   "id": "gl_tutor_979fce8f_35",
+   "file": "gl_tutor_979fce8f_35.m4a",
+   "seconds": 2.44,
+   "bytes": 16552
+  },
+  {
    "id": "gl_tutor_97af9031_15",
    "file": "gl_tutor_97af9031_15.m4a",
    "seconds": 1.23,
@@ -36169,12 +36277,6 @@
    "bytes": 5967
   },
   {
-   "id": "gl_tutor_97d6e289_20",
-   "file": "gl_tutor_97d6e289_20.m4a",
-   "seconds": 1.69,
-   "bytes": 12016
-  },
-  {
    "id": "gl_tutor_97e17c7e_77",
    "file": "gl_tutor_97e17c7e_77.m4a",
    "seconds": 4.86,
@@ -36209,6 +36311,12 @@
    "file": "gl_tutor_982055cf_308.m4a",
    "seconds": 17.04,
    "bytes": 94199
+  },
+  {
+   "id": "gl_tutor_98217c4c_36",
+   "file": "gl_tutor_98217c4c_36.m4a",
+   "seconds": 2.2,
+   "bytes": 12927
   },
   {
    "id": "gl_tutor_9826bf78_10",
@@ -36317,6 +36425,12 @@
    "file": "gl_tutor_98add96a_46.m4a",
    "seconds": 2.87,
    "bytes": 19239
+  },
+  {
+   "id": "gl_tutor_98aeacca_31",
+   "file": "gl_tutor_98aeacca_31.m4a",
+   "seconds": 2.46,
+   "bytes": 14913
   },
   {
    "id": "gl_tutor_98b052e8_107",
@@ -36481,6 +36595,12 @@
    "bytes": 11286
   },
   {
+   "id": "gl_tutor_9979c9e7_13",
+   "file": "gl_tutor_9979c9e7_13.m4a",
+   "seconds": 0.93,
+   "bytes": 6871
+  },
+  {
    "id": "gl_tutor_99814279_20",
    "file": "gl_tutor_99814279_20.m4a",
    "seconds": 1.76,
@@ -36497,12 +36617,6 @@
    "file": "gl_tutor_998d6987_19.m4a",
    "seconds": 1.46,
    "bytes": 8751
-  },
-  {
-   "id": "gl_tutor_999827c1_9",
-   "file": "gl_tutor_999827c1_9.m4a",
-   "seconds": 0.83,
-   "bytes": 6748
   },
   {
    "id": "gl_tutor_999cee82_13",
@@ -36787,6 +36901,12 @@
    "bytes": 5177
   },
   {
+   "id": "gl_tutor_9aa5c167_32",
+   "file": "gl_tutor_9aa5c167_32.m4a",
+   "seconds": 1.86,
+   "bytes": 12313
+  },
+  {
    "id": "gl_tutor_9ab2482a_28",
    "file": "gl_tutor_9ab2482a_28.m4a",
    "seconds": 1.92,
@@ -36899,12 +37019,6 @@
    "file": "gl_tutor_9b2fd323_24.m4a",
    "seconds": 2.07,
    "bytes": 15638
-  },
-  {
-   "id": "gl_tutor_9b3923f6_20",
-   "file": "gl_tutor_9b3923f6_20.m4a",
-   "seconds": 1.26,
-   "bytes": 8239
   },
   {
    "id": "gl_tutor_9b411e9f_19",
@@ -37189,10 +37303,10 @@
    "bytes": 21151
   },
   {
-   "id": "gl_tutor_9c80e6d0_28",
-   "file": "gl_tutor_9c80e6d0_28.m4a",
-   "seconds": 1.86,
-   "bytes": 11509
+   "id": "gl_tutor_9c8b6f33_28",
+   "file": "gl_tutor_9c8b6f33_28.m4a",
+   "seconds": 1.83,
+   "bytes": 13085
   },
   {
    "id": "gl_tutor_9c8d40a4_4",
@@ -37813,6 +37927,12 @@
    "bytes": 19337
   },
   {
+   "id": "gl_tutor_9effa11e_11",
+   "file": "gl_tutor_9effa11e_11.m4a",
+   "seconds": 0.84,
+   "bytes": 6786
+  },
+  {
    "id": "gl_tutor_9f036cb5_59",
    "file": "gl_tutor_9f036cb5_59.m4a",
    "seconds": 4.23,
@@ -38017,12 +38137,6 @@
    "bytes": 27124
   },
   {
-   "id": "gl_tutor_9ff34430_24",
-   "file": "gl_tutor_9ff34430_24.m4a",
-   "seconds": 1.65,
-   "bytes": 11383
-  },
-  {
    "id": "gl_tutor_9ff85868_50",
    "file": "gl_tutor_9ff85868_50.m4a",
    "seconds": 3.71,
@@ -38189,12 +38303,6 @@
    "file": "gl_tutor_a0f2b754_28.m4a",
    "seconds": 2.11,
    "bytes": 13990
-  },
-  {
-   "id": "gl_tutor_a0fa0f4d_20",
-   "file": "gl_tutor_a0fa0f4d_20.m4a",
-   "seconds": 1.21,
-   "bytes": 8654
   },
   {
    "id": "gl_tutor_a0fc1000_13",
@@ -38503,6 +38611,12 @@
    "bytes": 8078
   },
   {
+   "id": "gl_tutor_a26bd03f_34",
+   "file": "gl_tutor_a26bd03f_34.m4a",
+   "seconds": 1.93,
+   "bytes": 12204
+  },
+  {
    "id": "gl_tutor_a27eb198_34",
    "file": "gl_tutor_a27eb198_34.m4a",
    "seconds": 2.24,
@@ -38525,6 +38639,12 @@
    "file": "gl_tutor_a293eeb7_4.m4a",
    "seconds": 0.59,
    "bytes": 4345
+  },
+  {
+   "id": "gl_tutor_a2950117_27",
+   "file": "gl_tutor_a2950117_27.m4a",
+   "seconds": 1.63,
+   "bytes": 9993
   },
   {
    "id": "gl_tutor_a29bef78_14",
@@ -38731,6 +38851,12 @@
    "bytes": 7846
   },
   {
+   "id": "gl_tutor_a33c1f4a_14",
+   "file": "gl_tutor_a33c1f4a_14.m4a",
+   "seconds": 1.39,
+   "bytes": 10626
+  },
+  {
    "id": "gl_tutor_a34772d1_38",
    "file": "gl_tutor_a34772d1_38.m4a",
    "seconds": 3.22,
@@ -38857,12 +38983,6 @@
    "bytes": 19867
   },
   {
-   "id": "gl_tutor_a3db0cea_19",
-   "file": "gl_tutor_a3db0cea_19.m4a",
-   "seconds": 1.46,
-   "bytes": 10723
-  },
-  {
    "id": "gl_tutor_a3e28f5e_69",
    "file": "gl_tutor_a3e28f5e_69.m4a",
    "seconds": 4.8,
@@ -38873,6 +38993,12 @@
    "file": "gl_tutor_a3e53086_27.m4a",
    "seconds": 1.43,
    "bytes": 9473
+  },
+  {
+   "id": "gl_tutor_a3e765d5_31",
+   "file": "gl_tutor_a3e765d5_31.m4a",
+   "seconds": 1.9,
+   "bytes": 13685
   },
   {
    "id": "gl_tutor_a3ebf4f4_33",
@@ -39085,12 +39211,6 @@
    "bytes": 24542
   },
   {
-   "id": "gl_tutor_a507e369_20",
-   "file": "gl_tutor_a507e369_20.m4a",
-   "seconds": 1.38,
-   "bytes": 9511
-  },
-  {
    "id": "gl_tutor_a507ec38_12",
    "file": "gl_tutor_a507ec38_12.m4a",
    "seconds": 0.97,
@@ -39155,6 +39275,12 @@
    "file": "gl_tutor_a5258929_60.m4a",
    "seconds": 4.48,
    "bytes": 26689
+  },
+  {
+   "id": "gl_tutor_a53b48f6_20",
+   "file": "gl_tutor_a53b48f6_20.m4a",
+   "seconds": 1.46,
+   "bytes": 10928
   },
   {
    "id": "gl_tutor_a54c35be_8",
@@ -39385,6 +39511,12 @@
    "bytes": 8522
   },
   {
+   "id": "gl_tutor_a6601d9b_16",
+   "file": "gl_tutor_a6601d9b_16.m4a",
+   "seconds": 1.16,
+   "bytes": 8383
+  },
+  {
    "id": "gl_tutor_a663ac0e_49",
    "file": "gl_tutor_a663ac0e_49.m4a",
    "seconds": 3.49,
@@ -39493,16 +39625,16 @@
    "bytes": 37209
   },
   {
-   "id": "gl_tutor_a6dc11e7_18",
-   "file": "gl_tutor_a6dc11e7_18.m4a",
-   "seconds": 1.33,
-   "bytes": 10082
-  },
-  {
    "id": "gl_tutor_a6e79bbc_24",
    "file": "gl_tutor_a6e79bbc_24.m4a",
    "seconds": 1.4,
    "bytes": 10306
+  },
+  {
+   "id": "gl_tutor_a6e91c17_29",
+   "file": "gl_tutor_a6e91c17_29.m4a",
+   "seconds": 1.92,
+   "bytes": 11244
   },
   {
    "id": "gl_tutor_a6f69217_12",
@@ -39545,12 +39677,6 @@
    "file": "gl_tutor_a722094d_54.m4a",
    "seconds": 3.32,
    "bytes": 20192
-  },
-  {
-   "id": "gl_tutor_a725d992_34",
-   "file": "gl_tutor_a725d992_34.m4a",
-   "seconds": 1.96,
-   "bytes": 15043
   },
   {
    "id": "gl_tutor_a72fcb97_12",
@@ -39727,12 +39853,6 @@
    "bytes": 14114
   },
   {
-   "id": "gl_tutor_a80c00b4_31",
-   "file": "gl_tutor_a80c00b4_31.m4a",
-   "seconds": 1.94,
-   "bytes": 12611
-  },
-  {
    "id": "gl_tutor_a811e571_39",
    "file": "gl_tutor_a811e571_39.m4a",
    "seconds": 3.29,
@@ -39767,12 +39887,6 @@
    "file": "gl_tutor_a8376712_44.m4a",
    "seconds": 2.57,
    "bytes": 18172
-  },
-  {
-   "id": "gl_tutor_a839ca82_40",
-   "file": "gl_tutor_a839ca82_40.m4a",
-   "seconds": 2.51,
-   "bytes": 15781
   },
   {
    "id": "gl_tutor_a845f1ad_33",
@@ -39887,6 +40001,12 @@
    "file": "gl_tutor_a889b09b_54.m4a",
    "seconds": 3.29,
    "bytes": 19508
+  },
+  {
+   "id": "gl_tutor_a893528f_37",
+   "file": "gl_tutor_a893528f_37.m4a",
+   "seconds": 2.37,
+   "bytes": 15099
   },
   {
    "id": "gl_tutor_a8993ebb_22",
@@ -40087,12 +40207,6 @@
    "bytes": 19417
   },
   {
-   "id": "gl_tutor_a961f7d8_13",
-   "file": "gl_tutor_a961f7d8_13.m4a",
-   "seconds": 1.12,
-   "bytes": 7684
-  },
-  {
    "id": "gl_tutor_a965d33e_7",
    "file": "gl_tutor_a965d33e_7.m4a",
    "seconds": 0.73,
@@ -40231,12 +40345,6 @@
    "bytes": 114625
   },
   {
-   "id": "gl_tutor_aa084063_13",
-   "file": "gl_tutor_aa084063_13.m4a",
-   "seconds": 1.09,
-   "bytes": 8538
-  },
-  {
    "id": "gl_tutor_aa287a88_14",
    "file": "gl_tutor_aa287a88_14.m4a",
    "seconds": 1.16,
@@ -40297,10 +40405,10 @@
    "bytes": 11197
   },
   {
-   "id": "gl_tutor_aa852e37_20",
-   "file": "gl_tutor_aa852e37_20.m4a",
-   "seconds": 1.37,
-   "bytes": 11319
+   "id": "gl_tutor_aa89af4b_25",
+   "file": "gl_tutor_aa89af4b_25.m4a",
+   "seconds": 1.94,
+   "bytes": 13003
   },
   {
    "id": "gl_tutor_aa9c17b4_40",
@@ -40435,12 +40543,6 @@
    "bytes": 7558
   },
   {
-   "id": "gl_tutor_ab24d53f_13",
-   "file": "gl_tutor_ab24d53f_13.m4a",
-   "seconds": 1.04,
-   "bytes": 6732
-  },
-  {
    "id": "gl_tutor_ab2503b0_6",
    "file": "gl_tutor_ab2503b0_6.m4a",
    "seconds": 0.67,
@@ -40451,12 +40553,6 @@
    "file": "gl_tutor_ab2e1a5e_47.m4a",
    "seconds": 3.45,
    "bytes": 21263
-  },
-  {
-   "id": "gl_tutor_ab2f9e15_19",
-   "file": "gl_tutor_ab2f9e15_19.m4a",
-   "seconds": 1.31,
-   "bytes": 8477
   },
   {
    "id": "gl_tutor_ab3ede34_107",
@@ -40471,12 +40567,6 @@
    "bytes": 7522
   },
   {
-   "id": "gl_tutor_ab40a519_24",
-   "file": "gl_tutor_ab40a519_24.m4a",
-   "seconds": 1.56,
-   "bytes": 11167
-  },
-  {
    "id": "gl_tutor_ab42c4ae_13",
    "file": "gl_tutor_ab42c4ae_13.m4a",
    "seconds": 0.91,
@@ -40487,6 +40577,12 @@
    "file": "gl_tutor_ab430d7a_4.m4a",
    "seconds": 0.44,
    "bytes": 3719
+  },
+  {
+   "id": "gl_tutor_ab431981_28",
+   "file": "gl_tutor_ab431981_28.m4a",
+   "seconds": 1.96,
+   "bytes": 11889
   },
   {
    "id": "gl_tutor_ab4be836_78",
@@ -40705,6 +40801,12 @@
    "bytes": 18873
   },
   {
+   "id": "gl_tutor_ac20c914_18",
+   "file": "gl_tutor_ac20c914_18.m4a",
+   "seconds": 1.24,
+   "bytes": 9129
+  },
+  {
    "id": "gl_tutor_ac254bef_12",
    "file": "gl_tutor_ac254bef_12.m4a",
    "seconds": 1.12,
@@ -40825,12 +40927,6 @@
    "bytes": 22569
   },
   {
-   "id": "gl_tutor_aca119bc_28",
-   "file": "gl_tutor_aca119bc_28.m4a",
-   "seconds": 1.83,
-   "bytes": 11234
-  },
-  {
    "id": "gl_tutor_aca1de88_29",
    "file": "gl_tutor_aca1de88_29.m4a",
    "seconds": 1.81,
@@ -40921,6 +41017,12 @@
    "bytes": 6376
   },
   {
+   "id": "gl_tutor_acf04bbc_23",
+   "file": "gl_tutor_acf04bbc_23.m4a",
+   "seconds": 1.58,
+   "bytes": 10032
+  },
+  {
    "id": "gl_tutor_acf185ab_96",
    "file": "gl_tutor_acf185ab_96.m4a",
    "seconds": 5.7,
@@ -40937,6 +41039,12 @@
    "file": "gl_tutor_acf59228_3.m4a",
    "seconds": 0.48,
    "bytes": 3614
+  },
+  {
+   "id": "gl_tutor_acf5ee92_15",
+   "file": "gl_tutor_acf5ee92_15.m4a",
+   "seconds": 1.05,
+   "bytes": 7941
   },
   {
    "id": "gl_tutor_acfacd18_10",
@@ -40991,12 +41099,6 @@
    "file": "gl_tutor_ad20c26e_64.m4a",
    "seconds": 3.8,
    "bytes": 23396
-  },
-  {
-   "id": "gl_tutor_ad2549f6_18",
-   "file": "gl_tutor_ad2549f6_18.m4a",
-   "seconds": 1.13,
-   "bytes": 7937
   },
   {
    "id": "gl_tutor_ad2850a5_30",
@@ -41269,12 +41371,6 @@
    "bytes": 9556
   },
   {
-   "id": "gl_tutor_ae89f9aa_30",
-   "file": "gl_tutor_ae89f9aa_30.m4a",
-   "seconds": 1.9,
-   "bytes": 11909
-  },
-  {
    "id": "gl_tutor_ae8e7550_44",
    "file": "gl_tutor_ae8e7550_44.m4a",
    "seconds": 2.67,
@@ -41285,6 +41381,12 @@
    "file": "gl_tutor_ae8ffa74_32.m4a",
    "seconds": 1.92,
    "bytes": 12821
+  },
+  {
+   "id": "gl_tutor_ae95a67d_21",
+   "file": "gl_tutor_ae95a67d_21.m4a",
+   "seconds": 1.47,
+   "bytes": 10544
   },
   {
    "id": "gl_tutor_ae98f418_9",
@@ -41689,12 +41791,6 @@
    "bytes": 19966
   },
   {
-   "id": "gl_tutor_b0602030_22",
-   "file": "gl_tutor_b0602030_22.m4a",
-   "seconds": 1.36,
-   "bytes": 9396
-  },
-  {
    "id": "gl_tutor_b069e2a2_105",
    "file": "gl_tutor_b069e2a2_105.m4a",
    "seconds": 6.15,
@@ -42017,6 +42113,12 @@
    "file": "gl_tutor_b1b174d9_5.m4a",
    "seconds": 0.55,
    "bytes": 4627
+  },
+  {
+   "id": "gl_tutor_b1b42d8d_29",
+   "file": "gl_tutor_b1b42d8d_29.m4a",
+   "seconds": 1.96,
+   "bytes": 14006
   },
   {
    "id": "gl_tutor_b1c2a8a3_53",
@@ -42571,12 +42673,6 @@
    "bytes": 6996
   },
   {
-   "id": "gl_tutor_b401e657_29",
-   "file": "gl_tutor_b401e657_29.m4a",
-   "seconds": 1.93,
-   "bytes": 11982
-  },
-  {
    "id": "gl_tutor_b40397e4_40",
    "file": "gl_tutor_b40397e4_40.m4a",
    "seconds": 2.85,
@@ -42727,12 +42823,6 @@
    "bytes": 24887
   },
   {
-   "id": "gl_tutor_b49daf10_15",
-   "file": "gl_tutor_b49daf10_15.m4a",
-   "seconds": 1.09,
-   "bytes": 8760
-  },
-  {
    "id": "gl_tutor_b4a0fc56_26",
    "file": "gl_tutor_b4a0fc56_26.m4a",
    "seconds": 1.88,
@@ -42833,12 +42923,6 @@
    "file": "gl_tutor_b5190140_5.m4a",
    "seconds": 0.7,
    "bytes": 5473
-  },
-  {
-   "id": "gl_tutor_b52db140_31",
-   "file": "gl_tutor_b52db140_31.m4a",
-   "seconds": 1.92,
-   "bytes": 12904
   },
   {
    "id": "gl_tutor_b5324184_290",
@@ -43043,12 +43127,6 @@
    "file": "gl_tutor_b5e1006d_51.m4a",
    "seconds": 4.28,
    "bytes": 25795
-  },
-  {
-   "id": "gl_tutor_b5ed08b2_26",
-   "file": "gl_tutor_b5ed08b2_26.m4a",
-   "seconds": 1.8,
-   "bytes": 12487
   },
   {
    "id": "gl_tutor_b5f2f849_36",
@@ -43291,6 +43369,12 @@
    "bytes": 18614
   },
   {
+   "id": "gl_tutor_b6cd9086_32",
+   "file": "gl_tutor_b6cd9086_32.m4a",
+   "seconds": 2.27,
+   "bytes": 13213
+  },
+  {
    "id": "gl_tutor_b6de97f3_34",
    "file": "gl_tutor_b6de97f3_34.m4a",
    "seconds": 2.22,
@@ -43319,6 +43403,12 @@
    "file": "gl_tutor_b7142648_16.m4a",
    "seconds": 1.3,
    "bytes": 8521
+  },
+  {
+   "id": "gl_tutor_b71be0d4_38",
+   "file": "gl_tutor_b71be0d4_38.m4a",
+   "seconds": 2.5,
+   "bytes": 15656
   },
   {
    "id": "gl_tutor_b7233678_55",
@@ -43361,12 +43451,6 @@
    "file": "gl_tutor_b73fc674_3.m4a",
    "seconds": 0.43,
    "bytes": 3320
-  },
-  {
-   "id": "gl_tutor_b741118e_29",
-   "file": "gl_tutor_b741118e_29.m4a",
-   "seconds": 2.07,
-   "bytes": 12830
   },
   {
    "id": "gl_tutor_b74557bb_13",
@@ -43747,12 +43831,6 @@
    "bytes": 17467
   },
   {
-   "id": "gl_tutor_b8df1c7b_8",
-   "file": "gl_tutor_b8df1c7b_8.m4a",
-   "seconds": 0.69,
-   "bytes": 6326
-  },
-  {
    "id": "gl_tutor_b8e1a824_65",
    "file": "gl_tutor_b8e1a824_65.m4a",
    "seconds": 4.51,
@@ -44029,12 +44107,6 @@
    "bytes": 10404
   },
   {
-   "id": "gl_tutor_ba2003ed_15",
-   "file": "gl_tutor_ba2003ed_15.m4a",
-   "seconds": 1.18,
-   "bytes": 7194
-  },
-  {
    "id": "gl_tutor_ba25b0b6_7",
    "file": "gl_tutor_ba25b0b6_7.m4a",
    "seconds": 0.71,
@@ -44107,12 +44179,6 @@
    "bytes": 17664
   },
   {
-   "id": "gl_tutor_ba8a76d5_12",
-   "file": "gl_tutor_ba8a76d5_12.m4a",
-   "seconds": 0.85,
-   "bytes": 7783
-  },
-  {
    "id": "gl_tutor_ba91aa67_5",
    "file": "gl_tutor_ba91aa67_5.m4a",
    "seconds": 0.58,
@@ -44147,12 +44213,6 @@
    "file": "gl_tutor_bab89183_8.m4a",
    "seconds": 0.87,
    "bytes": 5550
-  },
-  {
-   "id": "gl_tutor_bac14142_6",
-   "file": "gl_tutor_bac14142_6.m4a",
-   "seconds": 0.59,
-   "bytes": 5340
   },
   {
    "id": "gl_tutor_bac1e968_9",
@@ -44381,12 +44441,6 @@
    "file": "gl_tutor_bbce78c8_40.m4a",
    "seconds": 2.46,
    "bytes": 15669
-  },
-  {
-   "id": "gl_tutor_bbd75a6b_19",
-   "file": "gl_tutor_bbd75a6b_19.m4a",
-   "seconds": 1.4,
-   "bytes": 9287
   },
   {
    "id": "gl_tutor_bbdfaacf_116",
@@ -44635,6 +44689,12 @@
    "bytes": 7817
   },
   {
+   "id": "gl_tutor_bd2707c7_38",
+   "file": "gl_tutor_bd2707c7_38.m4a",
+   "seconds": 2.54,
+   "bytes": 16024
+  },
+  {
    "id": "gl_tutor_bd2cf70e_25",
    "file": "gl_tutor_bd2cf70e_25.m4a",
    "seconds": 1.43,
@@ -44699,12 +44759,6 @@
    "file": "gl_tutor_bd56fbe8_20.m4a",
    "seconds": 1.48,
    "bytes": 9005
-  },
-  {
-   "id": "gl_tutor_bd629180_34",
-   "file": "gl_tutor_bd629180_34.m4a",
-   "seconds": 2.14,
-   "bytes": 14690
   },
   {
    "id": "gl_tutor_bd62eb76_6",
@@ -44875,10 +44929,22 @@
    "bytes": 23765
   },
   {
+   "id": "gl_tutor_be218e87_19",
+   "file": "gl_tutor_be218e87_19.m4a",
+   "seconds": 1.22,
+   "bytes": 9158
+  },
+  {
    "id": "gl_tutor_be234e31_11",
    "file": "gl_tutor_be234e31_11.m4a",
    "seconds": 1.11,
    "bytes": 11613
+  },
+  {
+   "id": "gl_tutor_be31f322_25",
+   "file": "gl_tutor_be31f322_25.m4a",
+   "seconds": 1.74,
+   "bytes": 11225
   },
   {
    "id": "gl_tutor_be330d7d_31",
@@ -44921,12 +44987,6 @@
    "file": "gl_tutor_be656368_26.m4a",
    "seconds": 2.11,
    "bytes": 14687
-  },
-  {
-   "id": "gl_tutor_be68f7d0_22",
-   "file": "gl_tutor_be68f7d0_22.m4a",
-   "seconds": 1.49,
-   "bytes": 9972
   },
   {
    "id": "gl_tutor_be7cdf07_18",
@@ -45175,12 +45235,6 @@
    "bytes": 20306
   },
   {
-   "id": "gl_tutor_c006aa51_18",
-   "file": "gl_tutor_c006aa51_18.m4a",
-   "seconds": 1.48,
-   "bytes": 8748
-  },
-  {
    "id": "gl_tutor_c006c7af_12",
    "file": "gl_tutor_c006c7af_12.m4a",
    "seconds": 1.11,
@@ -45227,12 +45281,6 @@
    "file": "gl_tutor_c0314d89_75.m4a",
    "seconds": 6.08,
    "bytes": 37761
-  },
-  {
-   "id": "gl_tutor_c03535f0_16",
-   "file": "gl_tutor_c03535f0_16.m4a",
-   "seconds": 0.96,
-   "bytes": 7674
   },
   {
    "id": "gl_tutor_c03771b0_61",
@@ -45307,6 +45355,12 @@
    "bytes": 8920
   },
   {
+   "id": "gl_tutor_c07a2714_16",
+   "file": "gl_tutor_c07a2714_16.m4a",
+   "seconds": 1.06,
+   "bytes": 8218
+  },
+  {
    "id": "gl_tutor_c081731f_8",
    "file": "gl_tutor_c081731f_8.m4a",
    "seconds": 0.82,
@@ -45323,12 +45377,6 @@
    "file": "gl_tutor_c08d16fe_19.m4a",
    "seconds": 1.65,
    "bytes": 12561
-  },
-  {
-   "id": "gl_tutor_c09666c6_11",
-   "file": "gl_tutor_c09666c6_11.m4a",
-   "seconds": 0.94,
-   "bytes": 7301
   },
   {
    "id": "gl_tutor_c09b26b2_32",
@@ -45377,12 +45425,6 @@
    "file": "gl_tutor_c0dd49a6_149.m4a",
    "seconds": 9.19,
    "bytes": 53231
-  },
-  {
-   "id": "gl_tutor_c0e4478a_13",
-   "file": "gl_tutor_c0e4478a_13.m4a",
-   "seconds": 1.03,
-   "bytes": 7224
   },
   {
    "id": "gl_tutor_c0eb96de_14",
@@ -45467,12 +45509,6 @@
    "file": "gl_tutor_c1408db0_19.m4a",
    "seconds": 1.42,
    "bytes": 9785
-  },
-  {
-   "id": "gl_tutor_c14a3dd2_24",
-   "file": "gl_tutor_c14a3dd2_24.m4a",
-   "seconds": 1.62,
-   "bytes": 10505
   },
   {
    "id": "gl_tutor_c1509fbb_94",
@@ -45721,6 +45757,12 @@
    "bytes": 5814
   },
   {
+   "id": "gl_tutor_c2640818_24",
+   "file": "gl_tutor_c2640818_24.m4a",
+   "seconds": 1.55,
+   "bytes": 10650
+  },
+  {
    "id": "gl_tutor_c26fc6a3_47",
    "file": "gl_tutor_c26fc6a3_47.m4a",
    "seconds": 2.65,
@@ -45737,6 +45779,12 @@
    "file": "gl_tutor_c2819262_21.m4a",
    "seconds": 1.58,
    "bytes": 10375
+  },
+  {
+   "id": "gl_tutor_c2959d8f_29",
+   "file": "gl_tutor_c2959d8f_29.m4a",
+   "seconds": 1.87,
+   "bytes": 11701
   },
   {
    "id": "gl_tutor_c2ae689f_20",
@@ -45877,12 +45925,6 @@
    "bytes": 5926
   },
   {
-   "id": "gl_tutor_c3060404_23",
-   "file": "gl_tutor_c3060404_23.m4a",
-   "seconds": 1.5,
-   "bytes": 10445
-  },
-  {
    "id": "gl_tutor_c308828a_7",
    "file": "gl_tutor_c308828a_7.m4a",
    "seconds": 0.76,
@@ -45959,12 +46001,6 @@
    "file": "gl_tutor_c36f847f_24.m4a",
    "seconds": 2.65,
    "bytes": 17406
-  },
-  {
-   "id": "gl_tutor_c3785937_18",
-   "file": "gl_tutor_c3785937_18.m4a",
-   "seconds": 1.6,
-   "bytes": 9782
   },
   {
    "id": "gl_tutor_c37ed364_9",
@@ -46349,12 +46385,6 @@
    "file": "gl_tutor_c5990cf4_9.m4a",
    "seconds": 0.97,
    "bytes": 6446
-  },
-  {
-   "id": "gl_tutor_c59c3d69_15",
-   "file": "gl_tutor_c59c3d69_15.m4a",
-   "seconds": 1.43,
-   "bytes": 10537
   },
   {
    "id": "gl_tutor_c59de6f0_62",
@@ -46915,12 +46945,6 @@
    "bytes": 11476
   },
   {
-   "id": "gl_tutor_c8190870_11",
-   "file": "gl_tutor_c8190870_11.m4a",
-   "seconds": 1.06,
-   "bytes": 8783
-  },
-  {
    "id": "gl_tutor_c81b4dc5_20",
    "file": "gl_tutor_c81b4dc5_20.m4a",
    "seconds": 1.69,
@@ -47101,6 +47125,12 @@
    "bytes": 5885
   },
   {
+   "id": "gl_tutor_c88b8e96_21",
+   "file": "gl_tutor_c88b8e96_21.m4a",
+   "seconds": 1.28,
+   "bytes": 8942
+  },
+  {
    "id": "gl_tutor_c88dce55_8",
    "file": "gl_tutor_c88dce55_8.m4a",
    "seconds": 0.82,
@@ -47117,12 +47147,6 @@
    "file": "gl_tutor_c89a3949_70.m4a",
    "seconds": 5.03,
    "bytes": 30417
-  },
-  {
-   "id": "gl_tutor_c8a99d83_25",
-   "file": "gl_tutor_c8a99d83_25.m4a",
-   "seconds": 1.62,
-   "bytes": 10952
   },
   {
    "id": "gl_tutor_c8b1ebb2_31",
@@ -47551,10 +47575,10 @@
    "bytes": 7495
   },
   {
-   "id": "gl_tutor_cac3bf85_26",
-   "file": "gl_tutor_cac3bf85_26.m4a",
-   "seconds": 1.56,
-   "bytes": 10747
+   "id": "gl_tutor_cac95610_29",
+   "file": "gl_tutor_cac95610_29.m4a",
+   "seconds": 2.21,
+   "bytes": 13991
   },
   {
    "id": "gl_tutor_cad06dee_31",
@@ -47809,6 +47833,12 @@
    "bytes": 5381
   },
   {
+   "id": "gl_tutor_cbbd5f4e_23",
+   "file": "gl_tutor_cbbd5f4e_23.m4a",
+   "seconds": 1.56,
+   "bytes": 11008
+  },
+  {
    "id": "gl_tutor_cbbf2f16_83",
    "file": "gl_tutor_cbbf2f16_83.m4a",
    "seconds": 5.36,
@@ -47933,12 +47963,6 @@
    "file": "gl_tutor_cc5a6667_20.m4a",
    "seconds": 1.61,
    "bytes": 10011
-  },
-  {
-   "id": "gl_tutor_cc5ed4aa_32",
-   "file": "gl_tutor_cc5ed4aa_32.m4a",
-   "seconds": 1.83,
-   "bytes": 11775
   },
   {
    "id": "gl_tutor_cc6e9bde_11",
@@ -48275,6 +48299,12 @@
    "file": "gl_tutor_cdf77c0a_16.m4a",
    "seconds": 1.36,
    "bytes": 8641
+  },
+  {
+   "id": "gl_tutor_cdff136d_39",
+   "file": "gl_tutor_cdff136d_39.m4a",
+   "seconds": 2.2,
+   "bytes": 15085
   },
   {
    "id": "gl_tutor_cdfff3a0_9",
@@ -48643,12 +48673,6 @@
    "bytes": 7653
   },
   {
-   "id": "gl_tutor_cfa4d193_38",
-   "file": "gl_tutor_cfa4d193_38.m4a",
-   "seconds": 2.66,
-   "bytes": 16908
-  },
-  {
    "id": "gl_tutor_cfadba68_50",
    "file": "gl_tutor_cfadba68_50.m4a",
    "seconds": 3.36,
@@ -48913,16 +48937,16 @@
    "bytes": 6119
   },
   {
+   "id": "gl_tutor_d08da1d9_35",
+   "file": "gl_tutor_d08da1d9_35.m4a",
+   "seconds": 2.61,
+   "bytes": 15671
+  },
+  {
    "id": "gl_tutor_d0a10feb_12",
    "file": "gl_tutor_d0a10feb_12.m4a",
    "seconds": 1.01,
    "bytes": 8052
-  },
-  {
-   "id": "gl_tutor_d0a4cd78_37",
-   "file": "gl_tutor_d0a4cd78_37.m4a",
-   "seconds": 2.26,
-   "bytes": 14438
   },
   {
    "id": "gl_tutor_d0a544c0_31",
@@ -49225,16 +49249,16 @@
    "bytes": 19814
   },
   {
-   "id": "gl_tutor_d1d0d7c9_23",
-   "file": "gl_tutor_d1d0d7c9_23.m4a",
-   "seconds": 1.54,
-   "bytes": 9586
-  },
-  {
    "id": "gl_tutor_d1d60962_52",
    "file": "gl_tutor_d1d60962_52.m4a",
    "seconds": 3.3,
    "bytes": 19385
+  },
+  {
+   "id": "gl_tutor_d1d70c45_32",
+   "file": "gl_tutor_d1d70c45_32.m4a",
+   "seconds": 2.41,
+   "bytes": 14324
   },
   {
    "id": "gl_tutor_d1dd6fa5_132",
@@ -49309,6 +49333,12 @@
    "bytes": 8947
   },
   {
+   "id": "gl_tutor_d20a5882_23",
+   "file": "gl_tutor_d20a5882_23.m4a",
+   "seconds": 1.61,
+   "bytes": 9756
+  },
+  {
    "id": "gl_tutor_d20a6d5a_44",
    "file": "gl_tutor_d20a6d5a_44.m4a",
    "seconds": 3.19,
@@ -49331,12 +49361,6 @@
    "file": "gl_tutor_d216c1ea_6.m4a",
    "seconds": 0.74,
    "bytes": 7015
-  },
-  {
-   "id": "gl_tutor_d22e15cc_11",
-   "file": "gl_tutor_d22e15cc_11.m4a",
-   "seconds": 0.91,
-   "bytes": 6879
   },
   {
    "id": "gl_tutor_d2348660_12",
@@ -49429,6 +49453,12 @@
    "bytes": 8782
   },
   {
+   "id": "gl_tutor_d26ed314_30",
+   "file": "gl_tutor_d26ed314_30.m4a",
+   "seconds": 2.1,
+   "bytes": 13160
+  },
+  {
    "id": "gl_tutor_d270d1c0_41",
    "file": "gl_tutor_d270d1c0_41.m4a",
    "seconds": 2.41,
@@ -49495,10 +49525,10 @@
    "bytes": 12416
   },
   {
-   "id": "gl_tutor_d2bb5eff_26",
-   "file": "gl_tutor_d2bb5eff_26.m4a",
-   "seconds": 1.61,
-   "bytes": 10887
+   "id": "gl_tutor_d2b09315_22",
+   "file": "gl_tutor_d2b09315_22.m4a",
+   "seconds": 1.26,
+   "bytes": 8272
   },
   {
    "id": "gl_tutor_d2bc372d_28",
@@ -49729,12 +49759,6 @@
    "bytes": 32143
   },
   {
-   "id": "gl_tutor_d3b48b2b_28",
-   "file": "gl_tutor_d3b48b2b_28.m4a",
-   "seconds": 1.71,
-   "bytes": 11437
-  },
-  {
    "id": "gl_tutor_d3b7dfd3_12",
    "file": "gl_tutor_d3b7dfd3_12.m4a",
    "seconds": 1.07,
@@ -49751,6 +49775,12 @@
    "file": "gl_tutor_d3d431fe_34.m4a",
    "seconds": 3.03,
    "bytes": 19588
+  },
+  {
+   "id": "gl_tutor_d3d7a026_18",
+   "file": "gl_tutor_d3d7a026_18.m4a",
+   "seconds": 1.32,
+   "bytes": 8587
   },
   {
    "id": "gl_tutor_d3f1d7c7_53",
@@ -49849,6 +49879,12 @@
    "bytes": 16129
   },
   {
+   "id": "gl_tutor_d4654f1e_20",
+   "file": "gl_tutor_d4654f1e_20.m4a",
+   "seconds": 1.39,
+   "bytes": 10147
+  },
+  {
    "id": "gl_tutor_d4677821_36",
    "file": "gl_tutor_d4677821_36.m4a",
    "seconds": 3.06,
@@ -49865,12 +49901,6 @@
    "file": "gl_tutor_d46df3ed_48.m4a",
    "seconds": 3.24,
    "bytes": 20532
-  },
-  {
-   "id": "gl_tutor_d46f5bdb_21",
-   "file": "gl_tutor_d46f5bdb_21.m4a",
-   "seconds": 1.57,
-   "bytes": 9205
   },
   {
    "id": "gl_tutor_d46f79d0_14",
@@ -49945,6 +49975,12 @@
    "bytes": 6221
   },
   {
+   "id": "gl_tutor_d4e200a0_25",
+   "file": "gl_tutor_d4e200a0_25.m4a",
+   "seconds": 1.64,
+   "bytes": 10045
+  },
+  {
    "id": "gl_tutor_d4e2b018_29",
    "file": "gl_tutor_d4e2b018_29.m4a",
    "seconds": 2.76,
@@ -49955,12 +49991,6 @@
    "file": "gl_tutor_d4e2baf5_9.m4a",
    "seconds": 0.88,
    "bytes": 5895
-  },
-  {
-   "id": "gl_tutor_d4f270f7_34",
-   "file": "gl_tutor_d4f270f7_34.m4a",
-   "seconds": 2.27,
-   "bytes": 14466
   },
   {
    "id": "gl_tutor_d4f3ae4e_16",
@@ -50149,10 +50179,10 @@
    "bytes": 25121
   },
   {
-   "id": "gl_tutor_d5e8de7e_25",
-   "file": "gl_tutor_d5e8de7e_25.m4a",
-   "seconds": 1.55,
-   "bytes": 10190
+   "id": "gl_tutor_d5e7da99_26",
+   "file": "gl_tutor_d5e7da99_26.m4a",
+   "seconds": 1.58,
+   "bytes": 11028
   },
   {
    "id": "gl_tutor_d5ea9395_18",
@@ -50231,6 +50261,12 @@
    "file": "gl_tutor_d629f111_54.m4a",
    "seconds": 3.42,
    "bytes": 20940
+  },
+  {
+   "id": "gl_tutor_d62d3fe2_37",
+   "file": "gl_tutor_d62d3fe2_37.m4a",
+   "seconds": 2.48,
+   "bytes": 15715
   },
   {
    "id": "gl_tutor_d62db142_16",
@@ -50617,6 +50653,12 @@
    "bytes": 6138
   },
   {
+   "id": "gl_tutor_d7e7d064_26",
+   "file": "gl_tutor_d7e7d064_26.m4a",
+   "seconds": 1.74,
+   "bytes": 13627
+  },
+  {
    "id": "gl_tutor_d7eb7d33_24",
    "file": "gl_tutor_d7eb7d33_24.m4a",
    "seconds": 1.8,
@@ -50971,12 +51013,6 @@
    "bytes": 8142
   },
   {
-   "id": "gl_tutor_d9784119_12",
-   "file": "gl_tutor_d9784119_12.m4a",
-   "seconds": 0.99,
-   "bytes": 7663
-  },
-  {
    "id": "gl_tutor_d97a7012_28",
    "file": "gl_tutor_d97a7012_28.m4a",
    "seconds": 1.56,
@@ -51199,6 +51235,12 @@
    "bytes": 22302
   },
   {
+   "id": "gl_tutor_da91ac50_24",
+   "file": "gl_tutor_da91ac50_24.m4a",
+   "seconds": 1.74,
+   "bytes": 12000
+  },
+  {
    "id": "gl_tutor_da91b647_8",
    "file": "gl_tutor_da91b647_8.m4a",
    "seconds": 0.79,
@@ -51359,12 +51401,6 @@
    "file": "gl_tutor_db406c60_9.m4a",
    "seconds": 0.89,
    "bytes": 6348
-  },
-  {
-   "id": "gl_tutor_db40b668_34",
-   "file": "gl_tutor_db40b668_34.m4a",
-   "seconds": 2.05,
-   "bytes": 13549
   },
   {
    "id": "gl_tutor_db45437b_55",
@@ -51733,6 +51769,12 @@
    "bytes": 25761
   },
   {
+   "id": "gl_tutor_dd1a6b4f_38",
+   "file": "gl_tutor_dd1a6b4f_38.m4a",
+   "seconds": 2.27,
+   "bytes": 14203
+  },
+  {
    "id": "gl_tutor_dd1e3704_45",
    "file": "gl_tutor_dd1e3704_45.m4a",
    "seconds": 3.47,
@@ -51769,22 +51811,10 @@
    "bytes": 15387
   },
   {
-   "id": "gl_tutor_dd40e2a6_28",
-   "file": "gl_tutor_dd40e2a6_28.m4a",
-   "seconds": 2.07,
-   "bytes": 14053
-  },
-  {
    "id": "gl_tutor_dd49a54c_201",
    "file": "gl_tutor_dd49a54c_201.m4a",
    "seconds": 11.86,
    "bytes": 67949
-  },
-  {
-   "id": "gl_tutor_dd52c5d2_13",
-   "file": "gl_tutor_dd52c5d2_13.m4a",
-   "seconds": 1.13,
-   "bytes": 6877
   },
   {
    "id": "gl_tutor_dd594c34_13",
@@ -51839,12 +51869,6 @@
    "file": "gl_tutor_dd7f8470_4.m4a",
    "seconds": 0.77,
    "bytes": 5615
-  },
-  {
-   "id": "gl_tutor_dd940493_18",
-   "file": "gl_tutor_dd940493_18.m4a",
-   "seconds": 1.49,
-   "bytes": 10610
   },
   {
    "id": "gl_tutor_dd94a445_30",
@@ -51917,6 +51941,12 @@
    "file": "gl_tutor_dddbd313_62.m4a",
    "seconds": 3.61,
    "bytes": 23318
+  },
+  {
+   "id": "gl_tutor_dde2e47e_18",
+   "file": "gl_tutor_dde2e47e_18.m4a",
+   "seconds": 1.26,
+   "bytes": 8189
   },
   {
    "id": "gl_tutor_dde366f4_22",
@@ -52043,6 +52073,12 @@
    "file": "gl_tutor_de59ad3d_61.m4a",
    "seconds": 3.79,
    "bytes": 22474
+  },
+  {
+   "id": "gl_tutor_de6c4fce_22",
+   "file": "gl_tutor_de6c4fce_22.m4a",
+   "seconds": 1.46,
+   "bytes": 10755
   },
   {
    "id": "gl_tutor_de6c9e58_49",
@@ -52327,12 +52363,6 @@
    "bytes": 69407
   },
   {
-   "id": "gl_tutor_dfa01b09_22",
-   "file": "gl_tutor_dfa01b09_22.m4a",
-   "seconds": 1.43,
-   "bytes": 10183
-  },
-  {
    "id": "gl_tutor_dfb9e07e_6",
    "file": "gl_tutor_dfb9e07e_6.m4a",
    "seconds": 0.62,
@@ -52361,6 +52391,12 @@
    "file": "gl_tutor_dfdca23f_47.m4a",
    "seconds": 3.63,
    "bytes": 22642
+  },
+  {
+   "id": "gl_tutor_dfe260e8_26",
+   "file": "gl_tutor_dfe260e8_26.m4a",
+   "seconds": 1.78,
+   "bytes": 11701
   },
   {
    "id": "gl_tutor_dfeda440_56",
@@ -52511,12 +52547,6 @@
    "file": "gl_tutor_e07d3dce_59.m4a",
    "seconds": 4.18,
    "bytes": 28237
-  },
-  {
-   "id": "gl_tutor_e0801dfa_18",
-   "file": "gl_tutor_e0801dfa_18.m4a",
-   "seconds": 1.1,
-   "bytes": 10014
   },
   {
    "id": "gl_tutor_e081ed83_26",
@@ -52697,12 +52727,6 @@
    "file": "gl_tutor_e115d605_54.m4a",
    "seconds": 3.71,
    "bytes": 23192
-  },
-  {
-   "id": "gl_tutor_e12a0e00_14",
-   "file": "gl_tutor_e12a0e00_14.m4a",
-   "seconds": 1.02,
-   "bytes": 7377
   },
   {
    "id": "gl_tutor_e12e290f_15",
@@ -53197,12 +53221,6 @@
    "bytes": 11918
   },
   {
-   "id": "gl_tutor_e390b062_19",
-   "file": "gl_tutor_e390b062_19.m4a",
-   "seconds": 1.31,
-   "bytes": 9329
-  },
-  {
    "id": "gl_tutor_e39e7700_66",
    "file": "gl_tutor_e39e7700_66.m4a",
    "seconds": 3.76,
@@ -53219,12 +53237,6 @@
    "file": "gl_tutor_e3b785e5_24.m4a",
    "seconds": 1.51,
    "bytes": 9348
-  },
-  {
-   "id": "gl_tutor_e3b92253_11",
-   "file": "gl_tutor_e3b92253_11.m4a",
-   "seconds": 0.84,
-   "bytes": 5574
   },
   {
    "id": "gl_tutor_e3bbd145_41",
@@ -53383,12 +53395,6 @@
    "bytes": 3578
   },
   {
-   "id": "gl_tutor_e4bc914b_15",
-   "file": "gl_tutor_e4bc914b_15.m4a",
-   "seconds": 1.12,
-   "bytes": 8994
-  },
-  {
    "id": "gl_tutor_e4c0e92f_19",
    "file": "gl_tutor_e4c0e92f_19.m4a",
    "seconds": 1.06,
@@ -53413,6 +53419,12 @@
    "bytes": 8013
   },
   {
+   "id": "gl_tutor_e4d88b50_39",
+   "file": "gl_tutor_e4d88b50_39.m4a",
+   "seconds": 2.49,
+   "bytes": 16194
+  },
+  {
    "id": "gl_tutor_e4d89768_38",
    "file": "gl_tutor_e4d89768_38.m4a",
    "seconds": 2.35,
@@ -53423,12 +53435,6 @@
    "file": "gl_tutor_e4e7af70_7.m4a",
    "seconds": 0.66,
    "bytes": 5734
-  },
-  {
-   "id": "gl_tutor_e4e8c7d6_22",
-   "file": "gl_tutor_e4e8c7d6_22.m4a",
-   "seconds": 1.4,
-   "bytes": 8728
   },
   {
    "id": "gl_tutor_e4e9ee9b_5",
@@ -53641,6 +53647,12 @@
    "bytes": 10350
   },
   {
+   "id": "gl_tutor_e5ab799e_45",
+   "file": "gl_tutor_e5ab799e_45.m4a",
+   "seconds": 2.66,
+   "bytes": 15947
+  },
+  {
    "id": "gl_tutor_e5ac598c_42",
    "file": "gl_tutor_e5ac598c_42.m4a",
    "seconds": 2.53,
@@ -53753,12 +53765,6 @@
    "file": "gl_tutor_e604dd81_75.m4a",
    "seconds": 5.42,
    "bytes": 34334
-  },
-  {
-   "id": "gl_tutor_e611ffd3_24",
-   "file": "gl_tutor_e611ffd3_24.m4a",
-   "seconds": 1.71,
-   "bytes": 10464
   },
   {
    "id": "gl_tutor_e616e3a0_22",
@@ -53909,12 +53915,6 @@
    "file": "gl_tutor_e68944fe_34.m4a",
    "seconds": 2.99,
    "bytes": 20441
-  },
-  {
-   "id": "gl_tutor_e694b392_30",
-   "file": "gl_tutor_e694b392_30.m4a",
-   "seconds": 1.89,
-   "bytes": 12856
   },
   {
    "id": "gl_tutor_e6a6f1d7_10",
@@ -54637,12 +54637,6 @@
    "bytes": 20783
   },
   {
-   "id": "gl_tutor_e9a942bb_30",
-   "file": "gl_tutor_e9a942bb_30.m4a",
-   "seconds": 2.17,
-   "bytes": 15369
-  },
-  {
    "id": "gl_tutor_e9b4fe3a_46",
    "file": "gl_tutor_e9b4fe3a_46.m4a",
    "seconds": 3.09,
@@ -55135,12 +55129,6 @@
    "bytes": 6529
   },
   {
-   "id": "gl_tutor_ebe156ef_24",
-   "file": "gl_tutor_ebe156ef_24.m4a",
-   "seconds": 1.58,
-   "bytes": 11604
-  },
-  {
    "id": "gl_tutor_ebe40ae4_45",
    "file": "gl_tutor_ebe40ae4_45.m4a",
    "seconds": 3.26,
@@ -55247,6 +55235,18 @@
    "file": "gl_tutor_ec7ac5b6_37.m4a",
    "seconds": 2.76,
    "bytes": 18529
+  },
+  {
+   "id": "gl_tutor_ec7f76b3_19",
+   "file": "gl_tutor_ec7f76b3_19.m4a",
+   "seconds": 1.4,
+   "bytes": 8452
+  },
+  {
+   "id": "gl_tutor_ec89f66e_11",
+   "file": "gl_tutor_ec89f66e_11.m4a",
+   "seconds": 0.79,
+   "bytes": 7567
   },
   {
    "id": "gl_tutor_ec93df95_12",
@@ -55363,12 +55363,6 @@
    "bytes": 4952
   },
   {
-   "id": "gl_tutor_ed428f1f_27",
-   "file": "gl_tutor_ed428f1f_27.m4a",
-   "seconds": 1.79,
-   "bytes": 11927
-  },
-  {
    "id": "gl_tutor_ed4fa1cc_7",
    "file": "gl_tutor_ed4fa1cc_7.m4a",
    "seconds": 0.79,
@@ -55391,12 +55385,6 @@
    "file": "gl_tutor_ed59afef_33.m4a",
    "seconds": 2.22,
    "bytes": 16272
-  },
-  {
-   "id": "gl_tutor_ed5cc38b_26",
-   "file": "gl_tutor_ed5cc38b_26.m4a",
-   "seconds": 1.99,
-   "bytes": 12586
   },
   {
    "id": "gl_tutor_ed5d3a40_55",
@@ -55487,6 +55475,12 @@
    "file": "gl_tutor_eda9f660_21.m4a",
    "seconds": 1.98,
    "bytes": 13541
+  },
+  {
+   "id": "gl_tutor_edb1837e_26",
+   "file": "gl_tutor_edb1837e_26.m4a",
+   "seconds": 1.58,
+   "bytes": 11604
   },
   {
    "id": "gl_tutor_edb2f2f4_47",
@@ -55601,6 +55595,12 @@
    "file": "gl_tutor_ee09ccd1_51.m4a",
    "seconds": 3.6,
    "bytes": 20388
+  },
+  {
+   "id": "gl_tutor_ee1469a7_17",
+   "file": "gl_tutor_ee1469a7_17.m4a",
+   "seconds": 1.24,
+   "bytes": 9338
   },
   {
    "id": "gl_tutor_ee178363_36",
@@ -55933,12 +55933,6 @@
    "bytes": 24300
   },
   {
-   "id": "gl_tutor_ef92a7bf_10",
-   "file": "gl_tutor_ef92a7bf_10.m4a",
-   "seconds": 0.9,
-   "bytes": 6022
-  },
-  {
    "id": "gl_tutor_efa0833d_18",
    "file": "gl_tutor_efa0833d_18.m4a",
    "seconds": 1.29,
@@ -56033,6 +56027,12 @@
    "file": "gl_tutor_f008eeb1_42.m4a",
    "seconds": 2.45,
    "bytes": 18692
+  },
+  {
+   "id": "gl_tutor_f00e7ac0_19",
+   "file": "gl_tutor_f00e7ac0_19.m4a",
+   "seconds": 1.34,
+   "bytes": 9606
   },
   {
    "id": "gl_tutor_f010dfb7_19",
@@ -56521,6 +56521,12 @@
    "bytes": 23241
   },
   {
+   "id": "gl_tutor_f190be37_30",
+   "file": "gl_tutor_f190be37_30.m4a",
+   "seconds": 1.69,
+   "bytes": 11432
+  },
+  {
    "id": "gl_tutor_f191f902_27",
    "file": "gl_tutor_f191f902_27.m4a",
    "seconds": 2.14,
@@ -56621,12 +56627,6 @@
    "file": "gl_tutor_f21377bc_30.m4a",
    "seconds": 2.14,
    "bytes": 13666
-  },
-  {
-   "id": "gl_tutor_f2167084_33",
-   "file": "gl_tutor_f2167084_33.m4a",
-   "seconds": 2.15,
-   "bytes": 12863
   },
   {
    "id": "gl_tutor_f219ef25_41",
@@ -56825,12 +56825,6 @@
    "file": "gl_tutor_f2c5b7e7_50.m4a",
    "seconds": 3.71,
    "bytes": 23902
-  },
-  {
-   "id": "gl_tutor_f2c68354_25",
-   "file": "gl_tutor_f2c68354_25.m4a",
-   "seconds": 1.72,
-   "bytes": 10316
   },
   {
    "id": "gl_tutor_f2c96674_15",
@@ -57055,12 +57049,6 @@
    "bytes": 37106
   },
   {
-   "id": "gl_tutor_f3dfef71_25",
-   "file": "gl_tutor_f3dfef71_25.m4a",
-   "seconds": 1.64,
-   "bytes": 11125
-  },
-  {
    "id": "gl_tutor_f3e4a2c1_30",
    "file": "gl_tutor_f3e4a2c1_30.m4a",
    "seconds": 1.87,
@@ -57229,6 +57217,12 @@
    "bytes": 19767
   },
   {
+   "id": "gl_tutor_f4c3bd0c_30",
+   "file": "gl_tutor_f4c3bd0c_30.m4a",
+   "seconds": 1.86,
+   "bytes": 13337
+  },
+  {
    "id": "gl_tutor_f4c3ed47_41",
    "file": "gl_tutor_f4c3ed47_41.m4a",
    "seconds": 2.8,
@@ -57367,10 +57361,10 @@
    "bytes": 7428
   },
   {
-   "id": "gl_tutor_f56ffde5_28",
-   "file": "gl_tutor_f56ffde5_28.m4a",
-   "seconds": 1.93,
-   "bytes": 13175
+   "id": "gl_tutor_f5713603_24",
+   "file": "gl_tutor_f5713603_24.m4a",
+   "seconds": 1.43,
+   "bytes": 8478
   },
   {
    "id": "gl_tutor_f57288d6_10",
@@ -57883,6 +57877,12 @@
    "bytes": 18442
   },
   {
+   "id": "gl_tutor_f78b4600_28",
+   "file": "gl_tutor_f78b4600_28.m4a",
+   "seconds": 1.7,
+   "bytes": 11740
+  },
+  {
    "id": "gl_tutor_f7902298_13",
    "file": "gl_tutor_f7902298_13.m4a",
    "seconds": 1.24,
@@ -57905,12 +57905,6 @@
    "file": "gl_tutor_f7aedb09_6.m4a",
    "seconds": 0.69,
    "bytes": 5596
-  },
-  {
-   "id": "gl_tutor_f7b81cf0_14",
-   "file": "gl_tutor_f7b81cf0_14.m4a",
-   "seconds": 1.12,
-   "bytes": 8393
   },
   {
    "id": "gl_tutor_f7be7352_13",
@@ -58225,12 +58219,6 @@
    "bytes": 25171
   },
   {
-   "id": "gl_tutor_f91f6a46_20",
-   "file": "gl_tutor_f91f6a46_20.m4a",
-   "seconds": 1.34,
-   "bytes": 11107
-  },
-  {
    "id": "gl_tutor_f920dd3f_39",
    "file": "gl_tutor_f920dd3f_39.m4a",
    "seconds": 3.58,
@@ -58303,6 +58291,12 @@
    "bytes": 16409
   },
   {
+   "id": "gl_tutor_f95eef94_24",
+   "file": "gl_tutor_f95eef94_24.m4a",
+   "seconds": 1.81,
+   "bytes": 11860
+  },
+  {
    "id": "gl_tutor_f96422a2_14",
    "file": "gl_tutor_f96422a2_14.m4a",
    "seconds": 1.01,
@@ -58343,6 +58337,12 @@
    "file": "gl_tutor_f98a5fbb_8.m4a",
    "seconds": 0.8,
    "bytes": 6778
+  },
+  {
+   "id": "gl_tutor_f990c8a5_20",
+   "file": "gl_tutor_f990c8a5_20.m4a",
+   "seconds": 1.45,
+   "bytes": 10460
   },
   {
    "id": "gl_tutor_f994fd56_37",
@@ -58501,6 +58501,12 @@
    "bytes": 13618
   },
   {
+   "id": "gl_tutor_fa2936dd_15",
+   "file": "gl_tutor_fa2936dd_15.m4a",
+   "seconds": 1.06,
+   "bytes": 7438
+  },
+  {
    "id": "gl_tutor_fa2e3000_62",
    "file": "gl_tutor_fa2e3000_62.m4a",
    "seconds": 4.06,
@@ -58535,6 +58541,12 @@
    "file": "gl_tutor_fa490759_35.m4a",
    "seconds": 3.09,
    "bytes": 19157
+  },
+  {
+   "id": "gl_tutor_fa49c09c_14",
+   "file": "gl_tutor_fa49c09c_14.m4a",
+   "seconds": 1.02,
+   "bytes": 6691
   },
   {
    "id": "gl_tutor_fa4a2b31_5",
@@ -58771,12 +58783,6 @@
    "bytes": 9735
   },
   {
-   "id": "gl_tutor_fb8c65f0_44",
-   "file": "gl_tutor_fb8c65f0_44.m4a",
-   "seconds": 2.68,
-   "bytes": 17333
-  },
-  {
    "id": "gl_tutor_fb94eda8_52",
    "file": "gl_tutor_fb94eda8_52.m4a",
    "seconds": 3.59,
@@ -58897,16 +58903,22 @@
    "bytes": 6156
   },
   {
-   "id": "gl_tutor_fc154bef_20",
-   "file": "gl_tutor_fc154bef_20.m4a",
-   "seconds": 1.26,
-   "bytes": 10738
+   "id": "gl_tutor_fc1526fe_21",
+   "file": "gl_tutor_fc1526fe_21.m4a",
+   "seconds": 1.43,
+   "bytes": 10277
   },
   {
    "id": "gl_tutor_fc242ae8_14",
    "file": "gl_tutor_fc242ae8_14.m4a",
    "seconds": 1.06,
    "bytes": 7511
+  },
+  {
+   "id": "gl_tutor_fc270ded_38",
+   "file": "gl_tutor_fc270ded_38.m4a",
+   "seconds": 2.74,
+   "bytes": 17508
   },
   {
    "id": "gl_tutor_fc29823f_16",
@@ -59119,12 +59131,6 @@
    "bytes": 17977
   },
   {
-   "id": "gl_tutor_fd21b77d_13",
-   "file": "gl_tutor_fd21b77d_13.m4a",
-   "seconds": 1.09,
-   "bytes": 8212
-  },
-  {
    "id": "gl_tutor_fd2ea937_15",
    "file": "gl_tutor_fd2ea937_15.m4a",
    "seconds": 1.07,
@@ -59231,6 +59237,12 @@
    "file": "gl_tutor_fd8862b1_9.m4a",
    "seconds": 0.9,
    "bytes": 6223
+  },
+  {
+   "id": "gl_tutor_fd898a14_29",
+   "file": "gl_tutor_fd898a14_29.m4a",
+   "seconds": 2.44,
+   "bytes": 14206
   },
   {
    "id": "gl_tutor_fd89bcff_18",
@@ -59611,12 +59623,6 @@
    "bytes": 5337
   },
   {
-   "id": "gl_tutor_ff6744d1_22",
-   "file": "gl_tutor_ff6744d1_22.m4a",
-   "seconds": 1.58,
-   "bytes": 10673
-  },
-  {
    "id": "gl_tutor_ff7609cd_30",
    "file": "gl_tutor_ff7609cd_30.m4a",
    "seconds": 2.44,
@@ -59687,6 +59693,12 @@
    "file": "gl_tutor_ffa67c12_8.m4a",
    "seconds": 0.81,
    "bytes": 5203
+  },
+  {
+   "id": "gl_tutor_ffa84fef_26",
+   "file": "gl_tutor_ffa84fef_26.m4a",
+   "seconds": 1.74,
+   "bytes": 10719
   },
   {
    "id": "gl_tutor_ffb6a9a6_68",
