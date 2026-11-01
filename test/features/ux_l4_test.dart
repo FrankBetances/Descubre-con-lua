@@ -196,8 +196,15 @@ void main() {
       await Pasarela.asentar(tester);
       await tester.tap(find.byKey(const Key('pestana_calendario')));
       // O-20261101-1: el calendario de lecciones; el de antes, dentro.
-      await esperarA(tester, find.byKey(const Key('calendario_completo')));
-      await tester.tap(find.byKey(const Key('calendario_completo')));
+      await esperarA(tester, find.byKey(const Key('calendario_leccions')));
+      final completo = find.byKey(const Key('calendario_completo'));
+      await tester.scrollUntilVisible(completo, 200,
+          scrollable: find
+              .descendant(
+                  of: find.byKey(const Key('calendario_leccions')),
+                  matching: find.byType(Scrollable))
+              .first);
+      await tester.tap(completo);
       await esperarA(tester, find.byKey(const Key('paginas_meses')));
       final calendario =
           tester.widget<CalendarioScreen>(find.byType(CalendarioScreen));

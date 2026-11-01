@@ -1173,7 +1173,7 @@ class _LeccionFamiliaState extends State<LeccionFamilia> {
     Widget paso(String rotulo, PuntoDeGramatica? p, {bool agora = false}) =>
         Expanded(
           child: Container(
-            padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 10),
+            padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 7),
             decoration: BoxDecoration(
               color: agora ? acento : Colors.white,
               borderRadius: BorderRadius.circular(12),
@@ -1283,7 +1283,7 @@ class _LeccionFamiliaState extends State<LeccionFamilia> {
                     : 'LAS 48 UNIDADES · $grupo'.toUpperCase(),
                 style: kicker,
               ),
-              const SizedBox(height: 8),
+              const SizedBox(height: 6),
               IntrinsicHeight(
                 key: const Key('leccion_ruta_gramatica'),
                 child: Row(
@@ -1299,7 +1299,7 @@ class _LeccionFamiliaState extends State<LeccionFamilia> {
                   ],
                 ),
               ),
-              const Divider(height: 16),
+              const Divider(height: 12),
               Wrap(
                 alignment: WrapAlignment.spaceBetween,
                 crossAxisAlignment: WrapCrossAlignment.center,
@@ -1377,10 +1377,10 @@ class _LeccionFamiliaState extends State<LeccionFamilia> {
           ),
         ),
         // 2 · Lo de hoy: el día, qué hacer, la frase y lo nuevo.
-        const SizedBox(height: 10),
+        const SizedBox(height: 8),
         Container(
           key: const Key('leccion_hoxe'),
-          padding: const EdgeInsets.fromLTRB(12, 12, 12, 14),
+          padding: const EdgeInsets.fromLTRB(12, 10, 12, 12),
           decoration: tarxeta(chea: true),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -1403,7 +1403,7 @@ class _LeccionFamiliaState extends State<LeccionFamilia> {
                 ],
               ),
               if (dia != null) ...[
-                const SizedBox(height: 10),
+                const SizedBox(height: 8),
                 Text(
                   nDia == hoxeN
                       ? '${g.texto('hoxe', lang)} · ${dia.dia.resolve(lang).toUpperCase()}'
@@ -1418,7 +1418,7 @@ class _LeccionFamiliaState extends State<LeccionFamilia> {
                       tipo: 'dia', en: en, significado: dia.significado)),
                 ],
               ],
-              Divider(height: 20, color: acento.withValues(alpha: 0.25)),
+              Divider(height: 16, color: acento.withValues(alpha: 0.25)),
               if (leccion.fraseGramatica case final fg?) ...[
                 Wrap(
                   spacing: 8,

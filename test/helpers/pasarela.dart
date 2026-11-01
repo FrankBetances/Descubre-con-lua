@@ -125,6 +125,11 @@ class Pasarela {
   /// O-20261028-4: en Hoxe de la casa, lo complementario va plegado en «Máis
   /// para casa». Lo abre una vez (si ya está abierto, no hace nada).
   static Future<void> abrirMaisParaCasa(WidgetTester tester) async {
+    // Solo en Hoy, de casa o del aula: en otra pantalla no hay pliegue.
+    if (find.byKey(const Key('hoxe_familias')).evaluate().isEmpty &&
+        find.byKey(const Key('hoxe_docentes')).evaluate().isEmpty) {
+      return;
+    }
     final mais = find.byKey(const Key('hoxe_complementario'));
     if (mais.evaluate().isEmpty) {
       await tester.scrollUntilVisible(mais, 400,

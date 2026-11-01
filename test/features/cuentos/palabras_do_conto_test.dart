@@ -78,7 +78,10 @@ void main() {
       for (final p in c.paginas) {
         expect(p.palabras.length, inInclusiveRange(1, 4),
             reason: '${c.id} p${p.numero}');
-        for (final en in p.palabras) {
+        // O-20261101-1: la página «Y además» cuenta palabras de la lección
+        // de la semana que no son del banco; esas no tienen ficha del curso.
+        final extra = p.tituloPagina?.es == 'Y además';
+        for (final en in extra ? const <String>[] : p.palabras) {
           // Do curso, co seu xesto: non a palabra de reserva da páxina.
           expect(palabras.palabraDaPaxina(p, en).id, isNotEmpty,
               reason: '${c.id} p${p.numero}: «$en»');

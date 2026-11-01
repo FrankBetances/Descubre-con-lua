@@ -473,7 +473,7 @@ class _LinaDeApoio extends StatelessWidget {
             overflow: TextOverflow.ellipsis,
             style: const TextStyle(
               fontFamily: AppTheme.fontFamily,
-              fontSize: 13,
+              fontSize: 14,
               fontWeight: FontWeight.w600,
               color: AppTheme.textSecondary,
             ),

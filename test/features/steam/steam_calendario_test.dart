@@ -4,6 +4,8 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
+import '../../helpers/pasarela.dart';
+
 import 'package:descubre_con_lua/core/audio/mock_offline_audio_service.dart';
 import 'package:descubre_con_lua/core/localization/app_language.dart';
 import 'package:descubre_con_lua/core/storage/calendario_store.dart';
@@ -201,6 +203,8 @@ void main() {
     testWidgets('«Hoxe» de la docente trae la sesión el día que le toca',
         (tester) async {
       await pintar(tester, hoxe(DateTime(2026, 12, 9)));
+      // O-20261101-1: el material del día va plegado al final.
+      await Pasarela.abrirMaisParaCasa(tester);
       final fila = find.byKey(const ValueKey('fila_steam_I4-OPTICA-001'));
       await tester.dragUntilVisible(
           fila, find.byKey(const Key('hoxe_docentes')), const Offset(0, -200));
@@ -218,7 +222,9 @@ void main() {
     testWidgets('«Hoxe» de la docente no la trae el día siguiente',
         (tester) async {
       await pintar(tester, hoxe(DateTime(2026, 12, 10)));
-      expect(find.byKey(const Key('hoxe_aula_asemblea')), findsOneWidget);
+      await Pasarela.abrirMaisParaCasa(tester);
+      expect(find.byKey(const Key('hoxe_aula_asemblea'), skipOffstage: false),
+          findsOneWidget);
       // Hasta el final de la lista: lo que no se ha construido no se busca.
       // Ata a fila de ciencia: a tarxeta do plan curricular (F11) fai a
       // lista máis longa.
@@ -255,6 +261,8 @@ void main() {
           ]),
         ),
       );
+      // O-20261101-1: el material del día va plegado al final.
+      await Pasarela.abrirMaisParaCasa(tester);
       final fila = find.byKey(const ValueKey('fila_steam_I4-OPTICA-001'));
       expect(fila, findsOneWidget);
       expect(find.text('La sesión STEAM de hoy'), findsOneWidget);
@@ -319,6 +327,8 @@ void main() {
 
       await verYTocar(tester, find.byKey(const ValueKey('cal_semana_2')));
       await verYTocar(tester, find.byKey(const ValueKey('cal_dia_3')));
+      // O-20261101-1: el material del día va plegado al final.
+      await Pasarela.abrirMaisParaCasa(tester);
       final fila = find.byKey(const ValueKey('fila_steam_I4-OPTICA-001'));
       await verYTocar(tester, fila);
       final sesion = tester.widget<SteamSesionGuiadaScreen>(
@@ -334,6 +344,8 @@ void main() {
 
       await verYTocar(tester, find.byKey(const ValueKey('fogar_semana_2')));
       await verYTocar(tester, find.byKey(const ValueKey('fogar_dia_3')));
+      // O-20261101-1: el material del día va plegado al final.
+      await Pasarela.abrirMaisParaCasa(tester);
       final fila = find.byKey(const ValueKey('fila_steam_I4-OPTICA-001'));
       expect(find.text('O xogo STEAM de hoxe'), findsOneWidget);
       await verYTocar(tester, fila);
@@ -372,6 +384,8 @@ void main() {
       final casilla = find.byKey(const ValueKey('reixa_steam_2_3'));
       expect(casilla, findsOneWidget);
       await verYTocar(tester, casilla);
+      // O-20261101-1: el material del día va plegado al final.
+      await Pasarela.abrirMaisParaCasa(tester);
       final fila = find.byKey(const ValueKey('fila_steam_I4-OPTICA-001'));
       expect(find.text('El juego STEAM de hoy'), findsOneWidget);
       await verYTocar(tester, fila);
@@ -556,6 +570,8 @@ void main() {
             ),
             escala,
           );
+          // O-20261101-1: el material del día va plegado al final.
+          await Pasarela.abrirMaisParaCasa(tester);
           final fila = find.byType(FilaSteamDoDia);
           await tester.dragUntilVisible(fila,
               find.byKey(const Key('hoxe_docentes')), const Offset(0, -200));
