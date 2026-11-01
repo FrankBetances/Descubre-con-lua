@@ -1877,6 +1877,31 @@
           "Greet",
           "Precious"
         ]
+      },
+      {
+        "numero": 6,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_benvida_2",
+        "extra": true,
+        "texto": {
+          "gl": "Á tarde, Uxía baixa do colo, “Down”, e toca a auga da fonte, “Water”.",
+          "es": "Por la tarde, Uxía baja del regazo, “Down”, y toca el agua de la fuente, “Water”."
+        },
+        "palabras": [
+          "Down",
+          "Water"
+        ],
+        "vocabularioClave": [
+          "Abaixo",
+          "auga"
+        ],
+        "vocabularioClaveEs": [
+          "Abajo",
+          "agua"
+        ]
       }
     ],
     "preguntasGraduadas": [
@@ -2177,6 +2202,34 @@
           "Here's Grandad!",
           "Glad",
           "Safe and sound"
+        ]
+      },
+      {
+        "numero": 6,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_benvida_2",
+        "extra": true,
+        "texto": {
+          "gl": "Na última foto, Brais bate palmas, “Clap”. O avó saúdao: “Hello, little one!”, e na bañeira, “Splash!”.",
+          "es": "En la última foto, Brais da palmas, “Clap”. El abuelo lo saluda: “Hello, little one!”, y en la bañera, “Splash!”."
+        },
+        "palabras": [
+          "Clap",
+          "Hello, little one!",
+          "Splash!"
+        ],
+        "vocabularioClave": [
+          "aplaudir, dar palmas",
+          "Ola, pequeno!",
+          "salpicar, bater na auga"
+        ],
+        "vocabularioClaveEs": [
+          "aplaudir, dar palmas",
+          "¡Hola, pequeño!",
+          "chapotear, salpicar"
         ]
       }
     ],
@@ -2479,6 +2532,31 @@
           "Joyful",
           "Content"
         ]
+      },
+      {
+        "numero": 6,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_corpo_2",
+        "extra": true,
+        "texto": {
+          "gl": "Noa ri nos brazos da mamá, “In my arms”, e mira un barquiño no baño, “Boat”.",
+          "es": "Noa se ríe en los brazos de mamá, “In my arms”, y mira un barquito en el baño, “Boat”."
+        },
+        "palabras": [
+          "In my arms",
+          "Boat"
+        ],
+        "vocabularioClave": [
+          "Nos meus brazos",
+          "barco"
+        ],
+        "vocabularioClaveEs": [
+          "En mis brazos",
+          "barco"
+        ]
       }
     ],
     "preguntasGraduadas": [
@@ -2779,6 +2857,28 @@
           "Fresh and clean",
           "Comfortable",
           "All done!"
+        ]
+      },
+      {
+        "numero": 6,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_benvida_2",
+        "extra": true,
+        "texto": {
+          "gl": "O peluche aparece no baño, todo mollado, “Wet”. Iago abrázao igual.",
+          "es": "El peluche aparece en el baño, todo mojado, “Wet”. Iago lo abraza igual."
+        },
+        "palabras": [
+          "Wet"
+        ],
+        "vocabularioClave": [
+          "mollado"
+        ],
+        "vocabularioClaveEs": [
+          "mojado"
         ]
       }
     ],
@@ -3081,6 +3181,31 @@
           "Toenails",
           "Nose to nose"
         ]
+      },
+      {
+        "numero": 6,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_corpo_2",
+        "extra": true,
+        "texto": {
+          "gl": "Despois, a mamá tócalle a barriga, “Tummy”, e Martiño ri ata que ela di: “Stop!”.",
+          "es": "Después, mamá le toca la barriga, “Tummy”, y Martiño se ríe hasta que ella dice: “Stop!”."
+        },
+        "palabras": [
+          "Tummy",
+          "Stop!"
+        ],
+        "vocabularioClave": [
+          "Barriga",
+          "parar"
+        ],
+        "vocabularioClaveEs": [
+          "Barriga",
+          "parar"
+        ]
       }
     ],
     "preguntasGraduadas": [
@@ -3382,6 +3507,31 @@
           "Knee",
           "Tender"
         ]
+      },
+      {
+        "numero": 6,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_corpo_2",
+        "extra": true,
+        "texto": {
+          "gl": "Na masaxe, o papá toca os dediños dos pés, “Tiny toes”, e debuxa un peixe na pel: “Fish!”.",
+          "es": "En el masaje, papá toca los deditos de los pies, “Tiny toes”, y dibuja un pez en la piel: “Fish!”."
+        },
+        "palabras": [
+          "Tiny toes",
+          "Fish!"
+        ],
+        "vocabularioClave": [
+          "Dedos pequenos dos pés",
+          "peixe"
+        ],
+        "vocabularioClaveEs": [
+          "Deditos pequeños",
+          "pez"
+        ]
       }
     ],
     "preguntasGraduadas": [
@@ -3682,6 +3832,28 @@
           "Pull faces",
           "Silly face",
           "Hairbrush"
+        ]
+      },
+      {
+        "numero": 6,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_corpo_2",
+        "extra": true,
+        "texto": {
+          "gl": "Ante o espello, Anxo toca da cabeza aos pés, “Head to toes”.",
+          "es": "Ante el espejo, Anxo se toca de la cabeza a los pies, “Head to toes”."
+        },
+        "palabras": [
+          "Head to toes"
+        ],
+        "vocabularioClave": [
+          "Da cabeza aos pés"
+        ],
+        "vocabularioClaveEs": [
+          "De la cabeza a los pies"
         ]
       }
     ],
@@ -4285,6 +4457,34 @@
           "Scrunch",
           "Rub gently"
         ]
+      },
+      {
+        "numero": 6,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_follas_2",
+        "extra": true,
+        "texto": {
+          "gl": "Unha folla cae amodo: “Falling, falling, falling down!”. Iria písaa: “Crunch, crunch!”, e colle a folla, “Leaf”.",
+          "es": "Una hoja cae despacio: “Falling, falling, falling down!”. Iria la pisa: “Crunch, crunch!”, y coge la hoja, “Leaf”."
+        },
+        "palabras": [
+          "Falling, falling, falling down!",
+          "Crunch, crunch!",
+          "Leaf"
+        ],
+        "vocabularioClave": [
+          "Caendo, caendo, caendo ao chan!",
+          "Cranch, cranch!",
+          "folla"
+        ],
+        "vocabularioClaveEs": [
+          "¡Cayendo, cayendo, cayendo al suelo!",
+          "¡Cranch, cranch!",
+          "hoja"
+        ]
       }
     ],
     "preguntasGraduadas": [
@@ -4585,6 +4785,31 @@
           "Kick leaves",
           "Rustle",
           "Floaty"
+        ]
+      },
+      {
+        "numero": 6,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_follas_2",
+        "extra": true,
+        "texto": {
+          "gl": "Na morea, a mamá dálle unha pedra lisa: “Feel this!”. Roi toca a pedra, “Stone”.",
+          "es": "En el montón, mamá le da una piedra lisa: “Feel this!”. Roi toca la piedra, “Stone”."
+        },
+        "palabras": [
+          "Feel this!",
+          "Stone"
+        ],
+        "vocabularioClave": [
+          "Toca isto!",
+          "pedra"
+        ],
+        "vocabularioClaveEs": [
+          "¡Toca esto!",
+          "piedra"
         ]
       }
     ],
@@ -4887,6 +5112,28 @@
           "Songbird",
           "Clap along"
         ]
+      },
+      {
+        "numero": 6,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_follas_2",
+        "extra": true,
+        "texto": {
+          "gl": "No Magosto, Alba colle unha castaña do chan: “Pick up!”.",
+          "es": "En el Magosto, Alba coge una castaña del suelo: “Pick up!”."
+        },
+        "palabras": [
+          "Pick up!"
+        ],
+        "vocabularioClave": [
+          "Apañar"
+        ],
+        "vocabularioClaveEs": [
+          "Recoger"
+        ]
       }
     ],
     "preguntasGraduadas": [
@@ -5187,6 +5434,28 @@
           "From hand to hand",
           "Hand over",
           "Crackly"
+        ]
+      },
+      {
+        "numero": 6,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_choiva_2",
+        "extra": true,
+        "texto": {
+          "gl": "Xoán deixa caer a culler de madeira: “Drop!”, e volve collela.",
+          "es": "Xoán deja caer la cuchara de madera: “Drop!”, y vuelve a cogerla."
+        },
+        "palabras": [
+          "Drop!"
+        ],
+        "vocabularioClave": [
+          "Pinga"
+        ],
+        "vocabularioClaveEs": [
+          "Gota"
         ]
       }
     ],
@@ -5489,6 +5758,34 @@
           "Tuck in",
           "Toasty warm"
         ]
+      },
+      {
+        "numero": 6,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_inverno_2",
+        "extra": true,
+        "texto": {
+          "gl": "Coas manoplas postas, Breixo fai soar as campás, “Ring the bells”. Que gusto: “Warm... soft and warm”. E unha campá moi grande: “Big!”.",
+          "es": "Con las manoplas puestas, Breixo hace sonar las campanas, “Ring the bells”. Qué gusto: “Warm... soft and warm”. Y una campana muy grande: “Big!”."
+        },
+        "palabras": [
+          "Ring the bells",
+          "Warm... soft and warm",
+          "Big!"
+        ],
+        "vocabularioClave": [
+          "Toca as campás",
+          "Morniño... suave e morno",
+          "grande"
+        ],
+        "vocabularioClaveEs": [
+          "Toca las campanas",
+          "Calentito... suave y calentito",
+          "grande"
+        ]
       }
     ],
     "preguntasGraduadas": [
@@ -5790,6 +6087,34 @@
           "Cover up",
           "Heavy blanket"
         ]
+      },
+      {
+        "numero": 6,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_inverno_2",
+        "extra": true,
+        "texto": {
+          "gl": "Ao saír, vai frío: “Brr, so cold!”. Soa unha campaíña, “Jingle bell”, moi pequena: “Small!”.",
+          "es": "Al salir, hace frío: “Brr, so cold!”. Suena una campanilla, “Jingle bell”, muy pequeña: “Small!”."
+        },
+        "palabras": [
+          "Brr, so cold!",
+          "Jingle bell",
+          "Small!"
+        ],
+        "vocabularioClave": [
+          "Brr, que frío!",
+          "Cascabel",
+          "pequeno"
+        ],
+        "vocabularioClaveEs": [
+          "¡Brr, qué frío!",
+          "Cascabel",
+          "pequeño"
+        ]
       }
     ],
     "preguntasGraduadas": [
@@ -6090,6 +6415,28 @@
           "Twinkly",
           "Starlight",
           "Glittery"
+        ]
+      },
+      {
+        "numero": 6,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_inverno_2",
+        "extra": true,
+        "texto": {
+          "gl": "Cando as luces se acenden, Icía e a avoa danse unha aperta grande, “Big hug”.",
+          "es": "Cuando las luces se encienden, Icía y la abuela se dan un abrazo grande, “Big hug”."
+        },
+        "palabras": [
+          "Big hug"
+        ],
+        "vocabularioClave": [
+          "Aperta grande"
+        ],
+        "vocabularioClaveEs": [
+          "Abrazo grande"
         ]
       }
     ],
@@ -6693,6 +7040,34 @@
           "Dog bowl",
           "The cat says meow"
         ]
+      },
+      {
+        "numero": 6,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_animais_2",
+        "extra": true,
+        "texto": {
+          "gl": "Antes de saír: “Put on your hat!”. Na casa: “Take it off!”. E Nela merenda unha mazá, “Apple”.",
+          "es": "Antes de salir: “Put on your hat!”. En casa: “Take it off!”. Y Nela merienda una manzana, “Apple”."
+        },
+        "palabras": [
+          "Put on your hat!",
+          "Take it off!",
+          "Apple"
+        ],
+        "vocabularioClave": [
+          "Pon o gorro",
+          "Quítao!",
+          "mazá"
+        ],
+        "vocabularioClaveEs": [
+          "Ponte el gorro",
+          "¡Quítatelo!",
+          "manzana"
+        ]
       }
     ],
     "preguntasGraduadas": [
@@ -6993,6 +7368,34 @@
           "Chomp",
           "Muddy pig",
           "Lamb"
+        ]
+      },
+      {
+        "numero": 6,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_animais_2",
+        "extra": true,
+        "texto": {
+          "gl": "Na granxa, Bieito pon as luvas, “Mittens”, e xoga co gorro: “Hat on, hat off”. Despois come pan, “Bread”.",
+          "es": "En la granja, Bieito se pone los guantes, “Mittens”, y juega con el gorro: “Hat on, hat off”. Después come pan, “Bread”."
+        },
+        "palabras": [
+          "Mittens",
+          "Hat on, hat off",
+          "Bread"
+        ],
+        "vocabularioClave": [
+          "Manoplas",
+          "Gorro posto, gorro fóra",
+          "pan"
+        ],
+        "vocabularioClaveEs": [
+          "Manoplas",
+          "Gorro puesto, gorro fuera",
+          "pan"
         ]
       }
     ],
@@ -7596,6 +7999,28 @@
           "Sound asleep",
           "Owl hoot"
         ]
+      },
+      {
+        "numero": 6,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_inverno_2",
+        "extra": true,
+        "texto": {
+          "gl": "Antes de durmir, Antón dá un bocado á mazá: “Bite!”.",
+          "es": "Antes de dormir, Antón da un mordisco a la manzana: “Bite!”."
+        },
+        "palabras": [
+          "Bite!"
+        ],
+        "vocabularioClave": [
+          "trabar, dar unha trabada"
+        ],
+        "vocabularioClaveEs": [
+          "morder, dar un mordisco"
+        ]
       }
     ],
     "preguntasGraduadas": [
@@ -7896,6 +8321,34 @@
           "Frilly",
           "Face paint",
           "Party blower"
+        ]
+      },
+      {
+        "numero": 6,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_cores_2",
+        "extra": true,
+        "texto": {
+          "gl": "A mestra salta coma unha ra: “Jump, jump, green frog! Ribbit!”. Logo mia: “The cat says meow”. E Olalla está quentiña: “Warm!”.",
+          "es": "La maestra salta como una rana: “Jump, jump, green frog! Ribbit!”. Luego maúlla: “The cat says meow”. Y Olalla está calentita: “Warm!”."
+        },
+        "palabras": [
+          "Jump, jump, green frog! Ribbit!",
+          "The cat says meow",
+          "Warm!"
+        ],
+        "vocabularioClave": [
+          "Salta, salta, ra verde! Cróac!",
+          "O gato di miau",
+          "morno, quentiño"
+        ],
+        "vocabularioClaveEs": [
+          "¡Salta, salta, rana verde! ¡Croac!",
+          "El gato dice miau",
+          "templado, calentito"
         ]
       }
     ],
@@ -8198,6 +8651,31 @@
           "Cradle song",
           "Rock-a-bye, baby"
         ]
+      },
+      {
+        "numero": 6,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_cores_2",
+        "extra": true,
+        "texto": {
+          "gl": "Un paxaro canta na fiestra: “Tweet, tweet!”. Tomé toca o vidro: “Cold!”.",
+          "es": "Un pájaro canta en la ventana: “Tweet, tweet!”. Tomé toca el cristal: “Cold!”."
+        },
+        "palabras": [
+          "Tweet, tweet!",
+          "Cold!"
+        ],
+        "vocabularioClave": [
+          "Pío, pío!",
+          "Frío, fría"
+        ],
+        "vocabularioClaveEs": [
+          "¡Pío, pío!",
+          "Frío, fría"
+        ]
       }
     ],
     "preguntasGraduadas": [
@@ -8498,6 +8976,28 @@
           "Here I am!",
           "Surprising",
           "Peekaboo!"
+        ]
+      },
+      {
+        "numero": 6,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_cores_2",
+        "extra": true,
+        "texto": {
+          "gl": "Luz atopa o osiño e van saltando xuntos: “Hop along”.",
+          "es": "Luz encuentra al osito y van saltando juntos: “Hop along”."
+        },
+        "palabras": [
+          "Hop along"
+        ],
+        "vocabularioClave": [
+          "Ir a saltiños"
+        ],
+        "vocabularioClaveEs": [
+          "Ir a saltitos"
         ]
       }
     ],
@@ -9101,6 +9601,31 @@
           "Rainbow ribbon",
           "Rainbow-coloured"
         ]
+      },
+      {
+        "numero": 6,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_cores_2",
+        "extra": true,
+        "texto": {
+          "gl": "Un círculo amarelo roda: “Roll, roll, yellow circle!”. Despois, a lavar as mans: “Wash!”.",
+          "es": "Un círculo amarillo rueda: “Roll, roll, yellow circle!”. Después, a lavar las manos: “Wash!”."
+        },
+        "palabras": [
+          "Roll, roll, yellow circle!",
+          "Wash!"
+        ],
+        "vocabularioClave": [
+          "Roda, roda, círculo amarelo!",
+          "lavar"
+        ],
+        "vocabularioClaveEs": [
+          "¡Rueda, rueda, círculo amarillo!",
+          "lavar"
+        ]
       }
     ],
     "preguntasGraduadas": [
@@ -9401,6 +9926,31 @@
           "Scrumptious",
           "Raisin",
           "Honey"
+        ]
+      },
+      {
+        "numero": 6,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_cores_2",
+        "extra": true,
+        "texto": {
+          "gl": "Duarte pide a pelota: “Roll it to me”, e despois lava as mans co xabón, “Soap”.",
+          "es": "Duarte pide la pelota: “Roll it to me”, y después se lava las manos con el jabón, “Soap”."
+        },
+        "palabras": [
+          "Roll it to me",
+          "Soap"
+        ],
+        "vocabularioClave": [
+          "Ródaa cara a min",
+          "xabón"
+        ],
+        "vocabularioClaveEs": [
+          "Ruédala hacia mí",
+          "jabón"
         ]
       }
     ],
@@ -9703,6 +10253,31 @@
           "Ball run",
           "Rolling pin"
         ]
+      },
+      {
+        "numero": 6,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_cores_2",
+        "extra": true,
+        "texto": {
+          "gl": "Xandre axita a pelota: “Shake, shake, shake!”, e sécaa coa toalla, “Towel”.",
+          "es": "Xandre agita la pelota: “Shake, shake, shake!”, y la seca con la toalla, “Towel”."
+        },
+        "palabras": [
+          "Shake, shake, shake!",
+          "Towel"
+        ],
+        "vocabularioClave": [
+          "Axita, axita, axita!",
+          "toalla"
+        ],
+        "vocabularioClaveEs": [
+          "¡Agita, agita, agita!",
+          "toalla"
+        ]
       }
     ],
     "preguntasGraduadas": [
@@ -10004,6 +10579,28 @@
           "Mmm, orange!",
           "Full of pips"
         ]
+      },
+      {
+        "numero": 6,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_cores_2",
+        "extra": true,
+        "texto": {
+          "gl": "Despois da laranxa, Mariña frota as mans: “Rub!”.",
+          "es": "Después de la naranja, Mariña se frota las manos: “Rub!”."
+        },
+        "palabras": [
+          "Rub!"
+        ],
+        "vocabularioClave": [
+          "fregar, frotar"
+        ],
+        "vocabularioClaveEs": [
+          "frotar"
+        ]
       }
     ],
     "preguntasGraduadas": [
@@ -10304,6 +10901,34 @@
           "Blossom",
           "Daisy",
           "Smell the flower"
+        ]
+      },
+      {
+        "numero": 6,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_primavera_2",
+        "extra": true,
+        "texto": {
+          "gl": "Chove no tulipán: “Rain, rain, little drops, tap, tap, tap”. Logo sae o sol: “The sun comes up!”. O pétalo é suave: “Soft!”.",
+          "es": "Llueve en el tulipán: “Rain, rain, little drops, tap, tap, tap”. Luego sale el sol: “The sun comes up!”. El pétalo es suave: “Soft!”."
+        },
+        "palabras": [
+          "Rain, rain, little drops, tap, tap, tap",
+          "The sun comes up!",
+          "Soft!"
+        ],
+        "vocabularioClave": [
+          "Choiva, choiva, pingas pequenas, tap, tap, tap",
+          "Sae o sol!",
+          "suave, brando"
+        ],
+        "vocabularioClaveEs": [
+          "Lluvia, lluvia, gotitas, tap, tap, tap",
+          "¡Sale el sol!",
+          "suave, blando"
         ]
       }
     ],
@@ -11509,6 +12134,34 @@
           "Dripping wet",
           "All wet!"
         ]
+      },
+      {
+        "numero": 6,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_auga_2",
+        "extra": true,
+        "texto": {
+          "gl": "Na piscina, Cibrán canta: “Wash, wash, clean hands!”. Pasa un can, “Dog”, e un gato: “Cat!”.",
+          "es": "En la piscina, Cibrán canta: “Wash, wash, clean hands!”. Pasa un perro, “Dog”, y un gato: “Cat!”."
+        },
+        "palabras": [
+          "Wash, wash, clean hands!",
+          "Dog",
+          "Cat!"
+        ],
+        "vocabularioClave": [
+          "Lava, lava, mans limpas!",
+          "can",
+          "gato"
+        ],
+        "vocabularioClaveEs": [
+          "¡Lava, lava, manos limpias!",
+          "perro",
+          "gato"
+        ]
       }
     ],
     "preguntasGraduadas": [
@@ -11810,6 +12463,34 @@
           "Bath towel",
           "Sweet-smelling baby"
         ]
+      },
+      {
+        "numero": 6,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_auga_2",
+        "extra": true,
+        "texto": {
+          "gl": "Lara queda toda mollada: “All wet!”. Xabón e auga, “Soap and water”, e logo corre a secarse: “Run!”.",
+          "es": "Lara se queda toda mojada: “All wet!”. Jabón y agua, “Soap and water”, y luego corre a secarse: “Run!”."
+        },
+        "palabras": [
+          "All wet!",
+          "Soap and water",
+          "Run!"
+        ],
+        "vocabularioClave": [
+          "Todo mollado!",
+          "Xabón e auga",
+          "correr"
+        ],
+        "vocabularioClaveEs": [
+          "¡Todo mojado!",
+          "Jabón y agua",
+          "correr"
+        ]
       }
     ],
     "preguntasGraduadas": [
@@ -12110,6 +12791,31 @@
           "All clean now",
           "Clean hands, happy baby",
           "Wet wipe"
+        ]
+      },
+      {
+        "numero": 6,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_auga_2",
+        "extra": true,
+        "texto": {
+          "gl": "“Bath time!”: Tiago atrapa o xabón. Despois, a durmir: “Sleep!”.",
+          "es": "“Bath time!”: Tiago atrapa el jabón. Después, a dormir: “Sleep!”."
+        },
+        "palabras": [
+          "Bath time!",
+          "Sleep!"
+        ],
+        "vocabularioClave": [
+          "Hora do baño!",
+          "durmir"
+        ],
+        "vocabularioClaveEs": [
+          "¡Hora del baño!",
+          "dormir"
         ]
       }
     ],
@@ -12713,6 +13419,34 @@
           "Gritty",
           "Salty lips"
         ]
+      },
+      {
+        "numero": 6,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_mar_2",
+        "extra": true,
+        "texto": {
+          "gl": "Aroa mira o mar: “Waves go up, waves go down, blue sea”. Na area hai unha pelota, “Ball”, e unha caixa, “Box”.",
+          "es": "Aroa mira el mar: “Waves go up, waves go down, blue sea”. En la arena hay una pelota, “Ball”, y una caja, “Box”."
+        },
+        "palabras": [
+          "Waves go up, waves go down, blue sea",
+          "Ball",
+          "Box"
+        ],
+        "vocabularioClave": [
+          "As ondas soben, as ondas baixan, mar azul",
+          "pelota",
+          "caixa"
+        ],
+        "vocabularioClaveEs": [
+          "Las olas suben, las olas bajan, mar azul",
+          "pelota",
+          "caja"
+        ]
       }
     ],
     "preguntasGraduadas": [
@@ -13013,6 +13747,28 @@
           "One fish, two fish",
           "Over the waves",
           "Fishing net"
+        ]
+      },
+      {
+        "numero": 6,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_mar_2",
+        "extra": true,
+        "texto": {
+          "gl": "Pedro saúda o mar: “Hello, sea!”.",
+          "es": "Pedro saluda al mar: “Hello, sea!”."
+        },
+        "palabras": [
+          "Hello, sea!"
+        ],
+        "vocabularioClave": [
+          "Ola, mar!"
+        ],
+        "vocabularioClaveEs": [
+          "¡Hola, mar!"
         ]
       }
     ],
@@ -13315,6 +14071,28 @@
           "Nap",
           "Sleepyhead"
         ]
+      },
+      {
+        "numero": 6,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_mar_2",
+        "extra": true,
+        "texto": {
+          "gl": "Sira despídese da escola: “Bye-bye, nursery!”.",
+          "es": "Sira se despide de la escuela: “Bye-bye, nursery!”."
+        },
+        "palabras": [
+          "Bye-bye, nursery!"
+        ],
+        "vocabularioClave": [
+          "Adeus, escola!"
+        ],
+        "vocabularioClaveEs": [
+          "¡Adiós, escuela!"
+        ]
       }
     ],
     "preguntasGraduadas": [
@@ -13615,6 +14393,28 @@
           "Bye-bye, nursery!",
           "See you after summer",
           "Together again"
+        ]
+      },
+      {
+        "numero": 6,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_benvida_2",
+        "extra": true,
+        "texto": {
+          "gl": "No último día, Uxía fai rodar a pelota: “Roll! / Ball!”.",
+          "es": "En el último día, Uxía hace rodar la pelota: “Roll! / Ball!”."
+        },
+        "palabras": [
+          "Roll! / Ball!"
+        ],
+        "vocabularioClave": [
+          "Rodar / Pelota"
+        ],
+        "vocabularioClaveEs": [
+          "Rodar / Pelota"
         ]
       }
     ],
@@ -13943,6 +14743,28 @@
           "Back in the box",
           "Line up"
         ]
+      },
+      {
+        "numero": 7,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_benvida_3",
+        "extra": true,
+        "texto": {
+          "gl": "Na asemblea, a mestra di: “Everybody stand up!”, e Xiana levántase coa súa percha.",
+          "es": "En la asamblea, la maestra dice: “Everybody stand up!”, y Xiana se levanta con su percha."
+        },
+        "palabras": [
+          "Everybody stand up!"
+        ],
+        "vocabularioClave": [
+          "Todo o mundo de pé!"
+        ],
+        "vocabularioClaveEs": [
+          "¡Todo el mundo de pie!"
+        ]
       }
     ],
     "preguntasGraduadas": [
@@ -14270,6 +15092,31 @@
           "Pour tea",
           "Play dough"
         ]
+      },
+      {
+        "numero": 7,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_cores_3",
+        "extra": true,
+        "texto": {
+          "gl": "Despois da torre: “Everybody sit down!”. Antón saúda ao seu amigo: “Hello, friend!”.",
+          "es": "Después de la torre: “Everybody sit down!”. Antón saluda a su amigo: “Hello, friend!”."
+        },
+        "palabras": [
+          "Everybody sit down!",
+          "Hello, friend!"
+        ],
+        "vocabularioClave": [
+          "Todo o mundo sentado!",
+          "Ola, amigo!"
+        ],
+        "vocabularioClaveEs": [
+          "¡Todo el mundo sentado!",
+          "¡Hola, amigo!"
+        ]
       }
     ],
     "preguntasGraduadas": [
@@ -14596,6 +15443,28 @@
           "Clear table",
           "Helpful",
           "Good job!"
+        ]
+      },
+      {
+        "numero": 7,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_cores_3",
+        "extra": true,
+        "texto": {
+          "gl": "O coche aparece e todos xogan en círculo: “Friends in a circle”.",
+          "es": "El coche aparece y todos juegan en círculo: “Friends in a circle”."
+        },
+        "palabras": [
+          "Friends in a circle"
+        ],
+        "vocabularioClave": [
+          "Amigos en círculo"
+        ],
+        "vocabularioClaveEs": [
+          "Amigos en círculo"
         ]
       }
     ],
@@ -15251,6 +16120,31 @@
           "Hips",
           "Bendy"
         ]
+      },
+      {
+        "numero": 7,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_corpo_3",
+        "extra": true,
+        "texto": {
+          "gl": "Na cama elástica, Iago canta: “Head, shoulders, knees and toes”, e logo: “Shake your hands!”.",
+          "es": "En la cama elástica, Iago canta: “Head, shoulders, knees and toes”, y luego: “Shake your hands!”."
+        },
+        "palabras": [
+          "Head, shoulders, knees and toes",
+          "Shake your hands!"
+        ],
+        "vocabularioClave": [
+          "Cabeza, ombreiros, xeonllos e pés",
+          "Abanea as mans!"
+        ],
+        "vocabularioClaveEs": [
+          "Cabeza, hombros, rodillas y pies",
+          "¡Agita las manos!"
+        ]
       }
     ],
     "preguntasGraduadas": [
@@ -15578,6 +16472,31 @@
           "Roll on the floor",
           "Turn to the door"
         ]
+      },
+      {
+        "numero": 7,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_cores_3",
+        "extra": true,
+        "texto": {
+          "gl": "Pío xira ata que a mestra di: “FREEZE!”. Logo: “Touch your knees”.",
+          "es": "Pío gira hasta que la maestra dice: “FREEZE!”. Luego: “Touch your knees”."
+        },
+        "palabras": [
+          "FREEZE!",
+          "Touch your knees"
+        ],
+        "vocabularioClave": [
+          "Estátuas!",
+          "Toca os xeonllos"
+        ],
+        "vocabularioClaveEs": [
+          "¡Estatuas!",
+          "Tócate las rodillas"
+        ]
       }
     ],
     "preguntasGraduadas": [
@@ -15904,6 +16823,28 @@
         "palabras": [
           "Catch up",
           "Out of breath"
+        ]
+      },
+      {
+        "numero": 7,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_corpo_3",
+        "extra": true,
+        "texto": {
+          "gl": "Por fin Bruno aprende: baila e para, “Dance and freeze”.",
+          "es": "Por fin Bruno aprende: baila y para, “Dance and freeze”."
+        },
+        "palabras": [
+          "Dance and freeze"
+        ],
+        "vocabularioClave": [
+          "Baila e conxélate"
+        ],
+        "vocabularioClaveEs": [
+          "Baila y congélate"
         ]
       }
     ],
@@ -16559,6 +17500,31 @@
           "Kick a leaf",
           "Leaves on my shoes"
         ]
+      },
+      {
+        "numero": 7,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_follas_3",
+        "extra": true,
+        "texto": {
+          "gl": "Nos patos, sopra o vento: “The wind blows! Whoosh!”. Lois pisa as follas: “Crunch your leaves!”.",
+          "es": "En los patos, sopla el viento: “The wind blows! Whoosh!”. Lois pisa las hojas: “Crunch your leaves!”."
+        },
+        "palabras": [
+          "The wind blows! Whoosh!",
+          "Crunch your leaves!"
+        ],
+        "vocabularioClave": [
+          "Sopra o vento! Fiuuu!",
+          "Esmaga as túas follas!"
+        ],
+        "vocabularioClaveEs": [
+          "¡Sopla el viento! ¡Fiuuu!",
+          "¡Pisa tus hojas!"
+        ]
       }
     ],
     "preguntasGraduadas": [
@@ -16886,6 +17852,28 @@
           "Hold on",
           "Bend in the wind"
         ]
+      },
+      {
+        "numero": 7,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_follas_3",
+        "extra": true,
+        "texto": {
+          "gl": "O chapeu de Irene cae nunhas follas crocantes, “Crunchy leaves”.",
+          "es": "El sombrero de Irene cae en unas hojas crujientes, “Crunchy leaves”."
+        },
+        "palabras": [
+          "Crunchy leaves"
+        ],
+        "vocabularioClave": [
+          "Follas que renxen"
+        ],
+        "vocabularioClaveEs": [
+          "Hojas crujientes"
+        ]
       }
     ],
     "preguntasGraduadas": [
@@ -17212,6 +18200,28 @@
         "palabras": [
           "Walk like an elephant",
           "Big steps and little steps"
+        ]
+      },
+      {
+        "numero": 7,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_follas_3",
+        "extra": true,
+        "texto": {
+          "gl": "Rosa dá un pontapé suave a unha folla, “Kick a leaf”, lonxe do ourizo.",
+          "es": "Rosa da una patadita suave a una hoja, “Kick a leaf”, lejos del erizo."
+        },
+        "palabras": [
+          "Kick a leaf"
+        ],
+        "vocabularioClave": [
+          "Chutar unha folla"
+        ],
+        "vocabularioClaveEs": [
+          "Chutar una hoja"
         ]
       }
     ],
@@ -17867,6 +18877,31 @@
           "Wade",
           "Jump out"
         ]
+      },
+      {
+        "numero": 7,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_choiva_3",
+        "extra": true,
+        "texto": {
+          "gl": "Coas botas, Olalla axita as campás: “Loud bells! Shake fast!”. Logo baixiño: “Quiet bells... sleep”.",
+          "es": "Con las botas, Olalla agita las campanas: “Loud bells! Shake fast!”. Luego bajito: “Quiet bells... sleep”."
+        },
+        "palabras": [
+          "Loud bells! Shake fast!",
+          "Quiet bells... sleep"
+        ],
+        "vocabularioClave": [
+          "Campás fortes! Abanea rápido!",
+          "Campás caladas... a durmir"
+        ],
+        "vocabularioClaveEs": [
+          "¡Campanas fuertes! ¡Agita rápido!",
+          "Campanas calladas... a dormir"
+        ]
       }
     ],
     "preguntasGraduadas": [
@@ -18194,6 +19229,31 @@
           "Pour down",
           "Dripping"
         ]
+      },
+      {
+        "numero": 7,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_choiva_3",
+        "extra": true,
+        "texto": {
+          "gl": "Despois do trono, a mamá di: “Wake up!”, e xogan de forte a baixiño: “From loud to quiet”.",
+          "es": "Después del trueno, mamá dice: “Wake up!”, y juegan de fuerte a bajito: “From loud to quiet”."
+        },
+        "palabras": [
+          "Wake up!",
+          "From loud to quiet"
+        ],
+        "vocabularioClave": [
+          "Esperta!",
+          "De forte a baixiño"
+        ],
+        "vocabularioClaveEs": [
+          "¡Despierta!",
+          "De fuerte a bajito"
+        ]
       }
     ],
     "preguntasGraduadas": [
@@ -18520,6 +19580,28 @@
           "Hat pompom",
           "Pocket",
           "Hands in pockets"
+        ]
+      },
+      {
+        "numero": 7,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_inverno_3",
+        "extra": true,
+        "texto": {
+          "gl": "Nerea vístese en silencio: “Shh, baby's sleeping”.",
+          "es": "Nerea se viste en silencio: “Shh, baby's sleeping”."
+        },
+        "palabras": [
+          "Shh, baby's sleeping"
+        ],
+        "vocabularioClave": [
+          "Shh, o bebé dorme"
+        ],
+        "vocabularioClaveEs": [
+          "Shh, el bebé duerme"
         ]
       }
     ],
@@ -19175,6 +20257,31 @@
           "On the bus",
           "Up and down the city"
         ]
+      },
+      {
+        "numero": 7,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_choiva_3",
+        "extra": true,
+        "texto": {
+          "gl": "Antes de saír: “Put on your coat!”. Fóra: “Stomp your boots in the puddles!”.",
+          "es": "Antes de salir: “Put on your coat!”. Fuera: “Stomp your boots in the puddles!”."
+        },
+        "palabras": [
+          "Put on your coat!",
+          "Stomp your boots in the puddles!"
+        ],
+        "vocabularioClave": [
+          "Pon o abrigo!",
+          "Pisa forte coas botas nas pozas!"
+        ],
+        "vocabularioClaveEs": [
+          "¡Ponte el abrigo!",
+          "¡Pisa fuerte con las botas en los charcos!"
+        ]
       }
     ],
     "preguntasGraduadas": [
@@ -19502,6 +20609,31 @@
           "Quiet car",
           "Nee-naw, nee-naw!"
         ]
+      },
+      {
+        "numero": 7,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_cores_3",
+        "extra": true,
+        "texto": {
+          "gl": "Antes do triciclo: “Zip it up!”. Roi leva as botas de auga, “Wellington boots”.",
+          "es": "Antes del triciclo: “Zip it up!”. Roi lleva las botas de agua, “Wellington boots”."
+        },
+        "palabras": [
+          "Zip it up!",
+          "Wellington boots"
+        ],
+        "vocabularioClave": [
+          "Sobe a cremalleira!",
+          "Botas de goma"
+        ],
+        "vocabularioClaveEs": [
+          "¡Sube la cremallera!",
+          "Botas de goma"
+        ]
       }
     ],
     "preguntasGraduadas": [
@@ -19828,6 +20960,28 @@
           "Bakery",
           "Nearby shop",
           "Here's the shop"
+        ]
+      },
+      {
+        "numero": 7,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_cores_3",
+        "extra": true,
+        "texto": {
+          "gl": "Ao chegar, Candela colga o abrigo: “Coat on the peg”.",
+          "es": "Al llegar, Candela cuelga el abrigo: “Coat on the peg”."
+        },
+        "palabras": [
+          "Coat on the peg"
+        ],
+        "vocabularioClave": [
+          "Abrigo na percha"
+        ],
+        "vocabularioClaveEs": [
+          "Abrigo en la percha"
         ]
       }
     ],
@@ -20483,6 +21637,31 @@
           "Zebra",
           "Mane"
         ]
+      },
+      {
+        "numero": 7,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_animais_3",
+        "extra": true,
+        "texto": {
+          "gl": "Despois do tigre, Aldara voa: “Fly like a bird!”, e pisa forte coma un oso: “Big heavy bear! Stomp!”.",
+          "es": "Después del tigre, Aldara vuela: “Fly like a bird!”, y pisa fuerte como un oso: “Big heavy bear! Stomp!”."
+        },
+        "palabras": [
+          "Fly like a bird!",
+          "Big heavy bear! Stomp!"
+        ],
+        "vocabularioClave": [
+          "Voa coma un paxaro!",
+          "Oso grande e pesado! Pum!"
+        ],
+        "vocabularioClaveEs": [
+          "¡Vuela como un pájaro!",
+          "¡Oso grande y pesado! ¡Pum!"
+        ]
       }
     ],
     "preguntasGraduadas": [
@@ -20809,6 +21988,31 @@
           "Palm tree",
           "Up the palm tree",
           "Parrot feather"
+        ]
+      },
+      {
+        "numero": 7,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_animais_3",
+        "extra": true,
+        "texto": {
+          "gl": "No Entroido, todos quedan quietos: “Carnival Freeze!”. Logo Xián bate as ás: “Flap wings”.",
+          "es": "En Carnaval, todos se quedan quietos: “Carnival Freeze!”. Luego Xián bate las alas: “Flap wings”."
+        },
+        "palabras": [
+          "Carnival Freeze!",
+          "Flap wings"
+        ],
+        "vocabularioClave": [
+          "Conxelados de Entroido!",
+          "Bater as ás"
+        ],
+        "vocabularioClaveEs": [
+          "¡Congelados de Carnaval!",
+          "Batir las alas"
         ]
       }
     ],
@@ -21791,6 +22995,28 @@
           "Heart shape",
           "A heart with my hands"
         ]
+      },
+      {
+        "numero": 7,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_cores_3",
+        "extra": true,
+        "texto": {
+          "gl": "Adrián xoga: “Find a red circle! Touch it with your foot!”.",
+          "es": "Adrián juega: “Find a red circle! Touch it with your foot!”."
+        },
+        "palabras": [
+          "Find a red circle! Touch it with your foot!"
+        ],
+        "vocabularioClave": [
+          "Busca un círculo vermello! Tócao co pé!"
+        ],
+        "vocabularioClaveEs": [
+          "¡Busca un círculo rojo! ¡Tócalo con el pie!"
+        ]
       }
     ],
     "preguntasGraduadas": [
@@ -22117,6 +23343,31 @@
           "I like mango",
           "Share the fruit",
           "Fruit in a bowl"
+        ]
+      },
+      {
+        "numero": 7,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_primavera_3",
+        "extra": true,
+        "texto": {
+          "gl": "Ánxela ensina unha tarxeta vermella, “Red card”, e un tomate vermello, “A red tomato”.",
+          "es": "Ánxela enseña una tarjeta roja, “Red card”, y un tomate rojo, “A red tomato”."
+        },
+        "palabras": [
+          "Red card",
+          "A red tomato"
+        ],
+        "vocabularioClave": [
+          "Tarxeta vermella",
+          "Un tomate vermello"
+        ],
+        "vocabularioClaveEs": [
+          "Tarjeta roja",
+          "Un tomate rojo"
         ]
       }
     ],
@@ -23099,6 +24350,31 @@
           "Lie on the grass",
           "On the grass"
         ]
+      },
+      {
+        "numero": 7,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_primavera_3",
+        "extra": true,
+        "texto": {
+          "gl": "Na herba, Mauro e a mamá son sementes: “We are tiny seeds under the ground”. E logo: “Bloom! Big bright flowers!”.",
+          "es": "En la hierba, Mauro y mamá son semillas: “We are tiny seeds under the ground”. Y luego: “Bloom! Big bright flowers!”."
+        },
+        "palabras": [
+          "We are tiny seeds under the ground",
+          "Bloom! Big bright flowers!"
+        ],
+        "vocabularioClave": [
+          "Somos sementes pequeniñas debaixo da terra",
+          "Florece! Flores grandes e brillantes!"
+        ],
+        "vocabularioClaveEs": [
+          "Somos semillas pequeñitas bajo la tierra",
+          "¡Florece! ¡Flores grandes y brillantes!"
+        ]
       }
     ],
     "preguntasGraduadas": [
@@ -23426,6 +24702,31 @@
           "Wings up, wings down",
           "Fly away, bird!"
         ]
+      },
+      {
+        "numero": 7,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_primavera_3",
+        "extra": true,
+        "texto": {
+          "gl": "Lucas sopra as sementes, “Blow seeds”, que son moi suaves, “Fluffy seeds”.",
+          "es": "Lucas sopla las semillas, “Blow seeds”, que son muy suaves, “Fluffy seeds”."
+        },
+        "palabras": [
+          "Blow seeds",
+          "Fluffy seeds"
+        ],
+        "vocabularioClave": [
+          "Soprar sementes",
+          "Sementes peludas"
+        ],
+        "vocabularioClaveEs": [
+          "Soplar semillas",
+          "Semillas algodonosas"
+        ]
       }
     ],
     "preguntasGraduadas": [
@@ -23752,6 +25053,28 @@
           "Breathe in slowly",
           "Lie still",
           "Restful"
+        ]
+      },
+      {
+        "numero": 7,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_benvida_3",
+        "extra": true,
+        "texto": {
+          "gl": "O bebé esperta e Martina pregunta: “Where's the sun?”.",
+          "es": "El bebé se despierta y Martina pregunta: “Where's the sun?”."
+        },
+        "palabras": [
+          "Where's the sun?"
+        ],
+        "vocabularioClave": [
+          "Onde está o sol?"
+        ],
+        "vocabularioClaveEs": [
+          "¿Dónde está el sol?"
         ]
       }
     ],
@@ -24407,6 +25730,31 @@
           "Spotless",
           "Bin"
         ]
+      },
+      {
+        "numero": 7,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_auga_3",
+        "extra": true,
+        "texto": {
+          "gl": "Nela segue: “Wash your face!”, e despois: “Wash your belly!”.",
+          "es": "Nela sigue: “Wash your face!”, y después: “Wash your belly!”."
+        },
+        "palabras": [
+          "Wash your face!",
+          "Wash your belly!"
+        ],
+        "vocabularioClave": [
+          "Lava a cara!",
+          "Lava a barriga!"
+        ],
+        "vocabularioClaveEs": [
+          "¡Lávate la cara!",
+          "¡Lávate la barriga!"
+        ]
       }
     ],
     "preguntasGraduadas": [
@@ -24734,6 +26082,31 @@
           "Swish",
           "Gargle"
         ]
+      },
+      {
+        "numero": 7,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_corpo_3",
+        "extra": true,
+        "texto": {
+          "gl": "Despois do baño: “Dry your toes!”. E Anxo canta: “Soap, rub, rinse”.",
+          "es": "Después del baño: “Dry your toes!”. Y Anxo canta: “Soap, rub, rinse”."
+        },
+        "palabras": [
+          "Dry your toes!",
+          "Soap, rub, rinse"
+        ],
+        "vocabularioClave": [
+          "Seca os dedos dos pés!",
+          "Xabón, fregar, aclarar"
+        ],
+        "vocabularioClaveEs": [
+          "¡Sécate los dedos de los pies!",
+          "Jabón, frotar, aclarar"
+        ]
       }
     ],
     "preguntasGraduadas": [
@@ -25060,6 +26433,28 @@
           "Float or sink",
           "Will it float?",
           "Bubbly water"
+        ]
+      },
+      {
+        "numero": 7,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_auga_3",
+        "extra": true,
+        "texto": {
+          "gl": "Paula sacode as mans para secalas: “Shake dry”.",
+          "es": "Paula sacude las manos para secarlas: “Shake dry”."
+        },
+        "palabras": [
+          "Shake dry"
+        ],
+        "vocabularioClave": [
+          "Sacudir para secar"
+        ],
+        "vocabularioClaveEs": [
+          "Sacudir para secar"
         ]
       }
     ],
@@ -25715,6 +27110,31 @@
           "Sailing along",
           "Gently down the stream"
         ]
+      },
+      {
+        "numero": 7,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_mar_3",
+        "extra": true,
+        "texto": {
+          "gl": "No mar, Noel ve ondas suaves, “Gentle waves”, e despois ondas xigantes: “Giant waves!”.",
+          "es": "En el mar, Noel ve olas suaves, “Gentle waves”, y después olas gigantes: “Giant waves!”."
+        },
+        "palabras": [
+          "Gentle waves",
+          "Giant waves!"
+        ],
+        "vocabularioClave": [
+          "Ondas suaves",
+          "Ondas xigantes!"
+        ],
+        "vocabularioClaveEs": [
+          "Olas suaves",
+          "¡Olas gigantes!"
+        ]
       }
     ],
     "preguntasGraduadas": [
@@ -26042,6 +27462,31 @@
           "Pebble path",
           "Footprints in sand"
         ]
+      },
+      {
+        "numero": 7,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_mar_3",
+        "extra": true,
+        "texto": {
+          "gl": "Duarte imaxina: “Little fish swimming under the sea!”. Hoxe o mar está tranquilo, “Calm sea”.",
+          "es": "Duarte imagina: “Little fish swimming under the sea!”. Hoy el mar está tranquilo, “Calm sea”."
+        },
+        "palabras": [
+          "Little fish swimming under the sea!",
+          "Calm sea"
+        ],
+        "vocabularioClave": [
+          "Peixiños nadando baixo o mar!",
+          "Mar tranquilo"
+        ],
+        "vocabularioClaveEs": [
+          "¡Pececitos nadando bajo el mar!",
+          "Mar tranquilo"
+        ]
       }
     ],
     "preguntasGraduadas": [
@@ -26368,6 +27813,28 @@
           "Line them up",
           "Shells in the bag",
           "Salty shell"
+        ]
+      },
+      {
+        "numero": 7,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_mar_3",
+        "extra": true,
+        "texto": {
+          "gl": "Rut despide o caramuxo coa man: “Wave goodbye”.",
+          "es": "Rut despide al caracol con la mano: “Wave goodbye”."
+        },
+        "palabras": [
+          "Wave goodbye"
+        ],
+        "vocabularioClave": [
+          "Acenar para despedirse"
+        ],
+        "vocabularioClaveEs": [
+          "Decir adiós con la mano"
         ]
       }
     ],
@@ -27023,6 +28490,28 @@
           "Hand in hand",
           "Bye-bye"
         ]
+      },
+      {
+        "numero": 7,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_benvida_3",
+        "extra": true,
+        "texto": {
+          "gl": "Brais escribe o seu nome enriba dun bloque, “block”.",
+          "es": "Brais escribe su nombre encima de un bloque, “block”."
+        },
+        "palabras": [
+          "block"
+        ],
+        "vocabularioClave": [
+          "bloque"
+        ],
+        "vocabularioClaveEs": [
+          "bloque"
+        ]
       }
     ],
     "preguntasGraduadas": [
@@ -27349,6 +28838,34 @@
           "Crayon",
           "Ball",
           "Tidy up!"
+        ]
+      },
+      {
+        "numero": 7,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_mar_3",
+        "extra": true,
+        "texto": {
+          "gl": "Uxía toca os xeonllos, “Knees”, e a mestra di: “Stand up and clap your hands”. Despois xogan ao tren, “train”.",
+          "es": "Uxía se toca las rodillas, “Knees”, y la maestra dice: “Stand up and clap your hands”. Después juegan al tren, “train”."
+        },
+        "palabras": [
+          "Knees",
+          "Stand up and clap your hands",
+          "train"
+        ],
+        "vocabularioClave": [
+          "Xeonllos",
+          "Ponte de pé e dá palmas",
+          "tren"
+        ],
+        "vocabularioClaveEs": [
+          "Rodillas",
+          "Ponte de pie y da palmas",
+          "tren"
         ]
       }
     ],
@@ -27677,6 +29194,34 @@
           "I love you",
           "Thank you"
         ]
+      },
+      {
+        "numero": 7,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_benvida_3",
+        "extra": true,
+        "texto": {
+          "gl": "Na casa, Martiño ensina: “Walk to the circle and sit down”. Logo: “Touch your knees and freeze!”. E di: “My turn”.",
+          "es": "En casa, Martiño enseña: “Walk to the circle and sit down”. Luego: “Touch your knees and freeze!”. Y dice: “My turn”."
+        },
+        "palabras": [
+          "Walk to the circle and sit down",
+          "Touch your knees and freeze!",
+          "My turn"
+        ],
+        "vocabularioClave": [
+          "Camiña ata o círculo e senta",
+          "Toca os xeonllos e estátua!",
+          "A miña quenda"
+        ],
+        "vocabularioClaveEs": [
+          "Camina hasta el círculo y siéntate",
+          "Tócate las rodillas y ¡estatua!",
+          "Mi turno"
+        ]
       }
     ],
     "preguntasGraduadas": [
@@ -28003,6 +29548,31 @@
           "Sing",
           "Funny",
           "Wave and smile"
+        ]
+      },
+      {
+        "numero": 7,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_cores_3",
+        "extra": true,
+        "texto": {
+          "gl": "Pola mañá, Olivia di: “Good morning!”. Nico préstalle o carriño e ela responde: “Thank you”.",
+          "es": "Por la mañana, Olivia dice: “Good morning!”. Nico le presta el carrito y ella responde: “Thank you”."
+        },
+        "palabras": [
+          "Good morning!",
+          "Thank you"
+        ],
+        "vocabularioClave": [
+          "Bos días!",
+          "Grazas"
+        ],
+        "vocabularioClaveEs": [
+          "¡Buenos días!",
+          "Gracias"
         ]
       }
     ],
@@ -28331,6 +29901,34 @@
           "Jump",
           "Clap"
         ]
+      },
+      {
+        "numero": 7,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_corpo_3",
+        "extra": true,
+        "texto": {
+          "gl": "Antía sopra, “Blow”, dá a volta, “Turn around”, e déixase caer, “fall”, coma unha folla.",
+          "es": "Antía sopla, “Blow”, se da la vuelta, “Turn around”, y se deja caer, “fall”, como una hoja."
+        },
+        "palabras": [
+          "Blow",
+          "Turn around",
+          "fall"
+        ],
+        "vocabularioClave": [
+          "Soprar",
+          "Dá a volta",
+          "caer"
+        ],
+        "vocabularioClaveEs": [
+          "Soplar",
+          "Date la vuelta",
+          "caer"
+        ]
       }
     ],
     "preguntasGraduadas": [
@@ -28658,6 +30256,34 @@
           "Touch your head",
           "Shake hands"
         ]
+      },
+      {
+        "numero": 7,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_corpo_3",
+        "extra": true,
+        "texto": {
+          "gl": "Na caixa misteriosa hai follas: “Fall down”. Lola sopra: “Blow like the autumn wind”, e pásalla: “Your turn”.",
+          "es": "En la caja misteriosa hay hojas: “Fall down”. Lola sopla: “Blow like the autumn wind”, y se la pasa: “Your turn”."
+        },
+        "palabras": [
+          "Fall down",
+          "Blow like the autumn wind",
+          "Your turn"
+        ],
+        "vocabularioClave": [
+          "Déixate caer",
+          "Sopra coma o vento de outono",
+          "A túa quenda"
+        ],
+        "vocabularioClaveEs": [
+          "Déjate caer",
+          "Sopla como el viento de otoño",
+          "Tu turno"
+        ]
       }
     ],
     "preguntasGraduadas": [
@@ -28984,6 +30610,34 @@
           "Fast",
           "Slow",
           "Fast and slow"
+        ]
+      },
+      {
+        "numero": 7,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_corpo_3",
+        "extra": true,
+        "texto": {
+          "gl": "Despois de Samaín: “Spin around and fall down like a leaf”. Logo: “Pick up two acorns and put them in the basket”. E Antía fai, “make”, un colar.",
+          "es": "Después de Samaín: “Spin around and fall down like a leaf”. Luego: “Pick up two acorns and put them in the basket”. Y Antía hace, “make”, un collar."
+        },
+        "palabras": [
+          "Spin around and fall down like a leaf",
+          "Pick up two acorns and put them in the basket",
+          "make"
+        ],
+        "vocabularioClave": [
+          "Dá voltas e cae coma unha folla",
+          "Colle dúas landras e ponas no cesto",
+          "facer"
+        ],
+        "vocabularioClaveEs": [
+          "Da vueltas y cae como una hoja",
+          "Coge dos bellotas y ponlas en la cesta",
+          "hacer"
         ]
       }
     ],
@@ -29639,6 +31293,37 @@
           "Fall down",
           "Crunch leaves"
         ]
+      },
+      {
+        "numero": 7,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_follas_3",
+        "extra": true,
+        "texto": {
+          "gl": "Iker atopa unha castaña, “Chestnut”, e unha cabaza, “Pumpkin”. Salta, “Jump”, e pide: “Help me, please”.",
+          "es": "Iker encuentra una castaña, “Chestnut”, y una calabaza, “Pumpkin”. Salta, “Jump”, y pide: “Help me, please”."
+        },
+        "palabras": [
+          "Chestnut",
+          "Pumpkin",
+          "Jump",
+          "Help me, please"
+        ],
+        "vocabularioClave": [
+          "Castaña",
+          "Cabaza",
+          "Chimpar",
+          "Axúdame, por favor"
+        ],
+        "vocabularioClaveEs": [
+          "Castaña",
+          "Calabaza",
+          "Saltar",
+          "Ayúdame, por favor"
+        ]
       }
     ],
     "preguntasGraduadas": [
@@ -29965,6 +31650,34 @@
         "palabras": [
           "Peel",
           "Hot"
+        ]
+      },
+      {
+        "numero": 7,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_follas_3",
+        "extra": true,
+        "texto": {
+          "gl": "A castaña roda, “Roll”. No lume: “The chestnut pops in the fire: jump!”. Alma atopa unha cuncha rota, “broken”.",
+          "es": "La castaña rueda, “Roll”. En el fuego: “The chestnut pops in the fire: jump!”. Alma encuentra una cáscara rota, “broken”."
+        },
+        "palabras": [
+          "Roll",
+          "The chestnut pops in the fire: jump!",
+          "broken"
+        ],
+        "vocabularioClave": [
+          "Rodar",
+          "A castaña estoura no lume: salta!",
+          "roto"
+        ],
+        "vocabularioClaveEs": [
+          "Rodar",
+          "La castaña estalla en el fuego: ¡salta!",
+          "roto"
         ]
       }
     ],
@@ -30293,6 +32006,34 @@
           "Hedgehog",
           "Boar"
         ]
+      },
+      {
+        "numero": 7,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_animais_3",
+        "extra": true,
+        "texto": {
+          "gl": "Tito xoga: “Roll the pumpkin on the floor”. Logo: “Warm your hands and rub them fast”. E queda firme, “steady”.",
+          "es": "Tito juega: “Roll the pumpkin on the floor”. Luego: “Warm your hands and rub them fast”. Y se queda firme, “steady”."
+        },
+        "palabras": [
+          "Roll the pumpkin on the floor",
+          "Warm your hands and rub them fast",
+          "steady"
+        ],
+        "vocabularioClave": [
+          "Fai rodar a cabaza polo chan",
+          "Quenta as mans e frégaas rápido",
+          "firme"
+        ],
+        "vocabularioClaveEs": [
+          "Haz rodar la calabaza por el suelo",
+          "Calienta las manos y frótalas rápido",
+          "firme"
+        ]
       }
     ],
     "preguntasGraduadas": [
@@ -30619,6 +32360,31 @@
           "More, please",
           "Ripe",
           "Crunchy"
+        ]
+      },
+      {
+        "numero": 7,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_follas_3",
+        "extra": true,
+        "texto": {
+          "gl": "A avoa dálle pan a Uxío: “Here you are!”. El ensínalle o prato: “Look at this!”.",
+          "es": "La abuela le da pan a Uxío: “Here you are!”. Él le enseña el plato: “Look at this!”."
+        },
+        "palabras": [
+          "Here you are!",
+          "Look at this!"
+        ],
+        "vocabularioClave": [
+          "Aquí tes!",
+          "Mira isto!"
+        ],
+        "vocabularioClaveEs": [
+          "¡Toma!",
+          "¡Mira esto!"
         ]
       }
     ],
@@ -30947,6 +32713,34 @@
           "Snowflake",
           "Catch the snowflake"
         ]
+      },
+      {
+        "numero": 7,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_inverno_3",
+        "extra": true,
+        "texto": {
+          "gl": "Pedro pon as botas, “Boots”, pisa forte, “Stomp”, e empuxa, “push”, a bóla de neve.",
+          "es": "Pedro se pone las botas, “Boots”, pisa fuerte, “Stomp”, y empuja, “push”, la bola de nieve."
+        },
+        "palabras": [
+          "Boots",
+          "Stomp",
+          "push"
+        ],
+        "vocabularioClave": [
+          "Botas",
+          "Patear",
+          "empurrar"
+        ],
+        "vocabularioClaveEs": [
+          "Botas",
+          "Pisotear",
+          "empujar"
+        ]
       }
     ],
     "preguntasGraduadas": [
@@ -31273,6 +33067,34 @@
           "Unwrap",
           "Candle",
           "Merry Christmas!"
+        ]
+      },
+      {
+        "numero": 7,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_inverno_3",
+        "extra": true,
+        "texto": {
+          "gl": "Lía camiña de puntillas, “Tiptoe”. Antes: “Put on your winter boots”. E volve facer, “rebuild”, a estrela.",
+          "es": "Lía camina de puntillas, “Tiptoe”. Antes: “Put on your winter boots”. Y vuelve a hacer, “rebuild”, la estrella."
+        },
+        "palabras": [
+          "Tiptoe",
+          "Put on your winter boots",
+          "rebuild"
+        ],
+        "vocabularioClave": [
+          "Andar de puntas",
+          "Pon as botas de inverno",
+          "reconstruír"
+        ],
+        "vocabularioClaveEs": [
+          "Andar de puntillas",
+          "Ponte las botas de invierno",
+          "reconstruir"
         ]
       }
     ],
@@ -31601,6 +33423,34 @@
           "Sleep tight",
           "Wake up"
         ]
+      },
+      {
+        "numero": 7,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_inverno_3",
+        "extra": true,
+        "texto": {
+          "gl": "Xan xoga: “Stomp in the snow”. Logo: “Tiptoe quietly to blow out the light”. E di: “The car is on the block.”",
+          "es": "Xan juega: “Stomp in the snow”. Luego: “Tiptoe quietly to blow out the light”. Y dice: “The car is on the block.”"
+        },
+        "palabras": [
+          "Stomp in the snow",
+          "Tiptoe quietly to blow out the light",
+          "The car is on the block."
+        ],
+        "vocabularioClave": [
+          "Pisa forte na neve",
+          "Vai de puntillas, en silencio, a apagar a luz",
+          "O coche está enriba do bloque."
+        ],
+        "vocabularioClaveEs": [
+          "Pisa fuerte en la nieve",
+          "Ve de puntillas, en silencio, a apagar la luz",
+          "El coche está encima del bloque."
+        ]
       }
     ],
     "preguntasGraduadas": [
@@ -31927,6 +33777,28 @@
           "Chocolate",
           "Delicious",
           "Happy New Year!"
+        ]
+      },
+      {
+        "numero": 7,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_inverno_3",
+        "extra": true,
+        "texto": {
+          "gl": "Ana garda o globo novo: “Put it under the bridge.”",
+          "es": "Ana guarda el globo nuevo: “Put it under the bridge.”"
+        },
+        "palabras": [
+          "Put it under the bridge."
+        ],
+        "vocabularioClave": [
+          "Ponno debaixo da ponte."
+        ],
+        "vocabularioClaveEs": [
+          "Ponlo debajo del puente."
         ]
       }
     ],
@@ -32255,6 +34127,37 @@
           "Put on your hat!",
           "Ready to go!"
         ]
+      },
+      {
+        "numero": 7,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_inverno_3",
+        "extra": true,
+        "texto": {
+          "gl": "Fóra chove, “Rain”, hai un charco, “Puddle”, e Roque abre o paraugas, “Umbrella”. Empuxa a porta: “I push and it falls.”",
+          "es": "Fuera llueve, “Rain”, hay un charco, “Puddle”, y Roque abre el paraguas, “Umbrella”. Empuja la puerta: “I push and it falls.”"
+        },
+        "palabras": [
+          "Rain",
+          "Puddle",
+          "Umbrella",
+          "I push and it falls."
+        ],
+        "vocabularioClave": [
+          "Chuvia",
+          "Poza",
+          "Paraugas",
+          "Empurro e cae."
+        ],
+        "vocabularioClaveEs": [
+          "Lluvia",
+          "Charco",
+          "Paraguas",
+          "Empujo y se cae."
+        ]
       }
     ],
     "preguntasGraduadas": [
@@ -32581,6 +34484,28 @@
           "Jump in the puddle",
           "Stomp",
           "Stomp your boots"
+        ]
+      },
+      {
+        "numero": 7,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_choiva_3",
+        "extra": true,
+        "texto": {
+          "gl": "Baixo o paraugas, Xiana xoga: “Tap your knees like rain falling fast”.",
+          "es": "Bajo el paraguas, Xiana juega: “Tap your knees like rain falling fast”."
+        },
+        "palabras": [
+          "Tap your knees like rain falling fast"
+        ],
+        "vocabularioClave": [
+          "Dá golpiños nos xeonllos coma a choiva que cae rápido"
+        ],
+        "vocabularioClaveEs": [
+          "Da golpecitos en las rodillas como la lluvia que cae rápido"
         ]
       }
     ],
@@ -32909,6 +34834,31 @@
           "Seat belt on!",
           "Plane"
         ]
+      },
+      {
+        "numero": 7,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_cores_3",
+        "extra": true,
+        "texto": {
+          "gl": "Coa bicicleta: “Jump over the big puddle”. E se chove: “Open your umbrella”.",
+          "es": "Con la bicicleta: “Jump over the big puddle”. Y si llueve: “Open your umbrella”."
+        },
+        "palabras": [
+          "Jump over the big puddle",
+          "Open your umbrella"
+        ],
+        "vocabularioClave": [
+          "Salta por riba da poza grande",
+          "Abre o paraugas"
+        ],
+        "vocabularioClaveEs": [
+          "Salta por encima del charco grande",
+          "Abre el paraguas"
+        ]
       }
     ],
     "preguntasGraduadas": [
@@ -33235,6 +35185,28 @@
           "Draw",
           "Rest",
           "Comfy"
+        ]
+      },
+      {
+        "numero": 7,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_cores_3",
+        "extra": true,
+        "texto": {
+          "gl": "Uxía atopa o calcetín e dállo ao monstro: “Here you go”.",
+          "es": "Uxía encuentra el calcetín y se lo da al monstruo: “Here you go”."
+        },
+        "palabras": [
+          "Here you go"
+        ],
+        "vocabularioClave": [
+          "Toma"
+        ],
+        "vocabularioClaveEs": [
+          "Toma"
         ]
       }
     ],
@@ -33563,6 +35535,34 @@
           "Parrot",
           "Bird"
         ]
+      },
+      {
+        "numero": 7,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_animais_3",
+        "extra": true,
+        "texto": {
+          "gl": "O can ladra forte, “Loud”, e o gato queda calado, “Quiet”. Irea pon un prato, “plate”, para cada un.",
+          "es": "El perro ladra fuerte, “Loud”, y el gato se queda callado, “Quiet”. Irea pone un plato, “plate”, para cada uno."
+        },
+        "palabras": [
+          "Loud",
+          "Quiet",
+          "plate"
+        ],
+        "vocabularioClave": [
+          "Forte (son)",
+          "Calado, calada",
+          "prato"
+        ],
+        "vocabularioClaveEs": [
+          "Fuerte (sonido)",
+          "Callado, callada",
+          "plato"
+        ]
       }
     ],
     "preguntasGraduadas": [
@@ -33889,6 +35889,37 @@
         ],
         "palabras": [
           "Plough"
+        ]
+      },
+      {
+        "numero": 7,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_animais_3",
+        "extra": true,
+        "texto": {
+          "gl": "Carlos pon unha máscara, “Mask”, e ruxe, “Roar”. Logo: “Shake your bells loudly”. O porco come cunha culler, “spoon”.",
+          "es": "Carlos se pone una máscara, “Mask”, y ruge, “Roar”. Luego: “Shake your bells loudly”. El cerdo come con una cuchara, “spoon”."
+        },
+        "palabras": [
+          "Mask",
+          "Roar",
+          "Shake your bells loudly",
+          "spoon"
+        ],
+        "vocabularioClave": [
+          "Máscara",
+          "Ruxir",
+          "Toca forte as túas campás",
+          "culler"
+        ],
+        "vocabularioClaveEs": [
+          "Máscara",
+          "Rugir",
+          "Toca fuerte tus campanas",
+          "cuchara"
         ]
       }
     ],
@@ -34217,6 +36248,34 @@
         "palabras": [
           "Where's the monkey?"
         ]
+      },
+      {
+        "numero": 7,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_animais_3",
+        "extra": true,
+        "texto": {
+          "gl": "Lolo xoga: “Quiet: hands on your tummy”. Logo: “Put on your animal mask and roar”. E pregunta: “What do you want?”.",
+          "es": "Lolo juega: “Quiet: hands on your tummy”. Luego: “Put on your animal mask and roar”. Y pregunta: “What do you want?”."
+        },
+        "palabras": [
+          "Quiet: hands on your tummy",
+          "Put on your animal mask and roar",
+          "What do you want?"
+        ],
+        "vocabularioClave": [
+          "Silencio: mans na barriga",
+          "Ponte a máscara de animal e ruxe",
+          "Que queres?"
+        ],
+        "vocabularioClaveEs": [
+          "Silencio: manos en la barriga",
+          "Ponte la máscara de animal y ruge",
+          "¿Qué quieres?"
+        ]
       }
     ],
     "preguntasGraduadas": [
@@ -34543,6 +36602,28 @@
           "Flap",
           "Fly like a bird",
           "Leap"
+        ]
+      },
+      {
+        "numero": 7,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_cores_3",
+        "extra": true,
+        "texto": {
+          "gl": "Na festa, Mar come o bolo cun garfo, “fork”.",
+          "es": "En la fiesta, Mar come el pastel con un tenedor, “fork”."
+        },
+        "palabras": [
+          "fork"
+        ],
+        "vocabularioClave": [
+          "garfo"
+        ],
+        "vocabularioClaveEs": [
+          "tenedor"
         ]
       }
     ],
@@ -34871,6 +36952,31 @@
           "Find something red",
           "Show"
         ]
+      },
+      {
+        "numero": 7,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_cores_3",
+        "extra": true,
+        "texto": {
+          "gl": "Paulo planta unha semente, “Seed”, e bebe un zume, “juice”.",
+          "es": "Paulo planta una semilla, “Seed”, y bebe un zumo, “juice”."
+        },
+        "palabras": [
+          "Seed",
+          "juice"
+        ],
+        "vocabularioClave": [
+          "Semente",
+          "zume"
+        ],
+        "vocabularioClaveEs": [
+          "Semilla",
+          "zumo"
+        ]
       }
     ],
     "preguntasGraduadas": [
@@ -35197,6 +37303,34 @@
           "Trace",
           "Dot",
           "Fold"
+        ]
+      },
+      {
+        "numero": 7,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_cores_3",
+        "extra": true,
+        "texto": {
+          "gl": "Noa cava, “Dig”, na terra, “Soil”, e xoga: “Curl up small like a tiny seed”.",
+          "es": "Noa cava, “Dig”, en la tierra, “Soil”, y juega: “Curl up small like a tiny seed”."
+        },
+        "palabras": [
+          "Dig",
+          "Soil",
+          "Curl up small like a tiny seed"
+        ],
+        "vocabularioClave": [
+          "Cavar",
+          "Terra",
+          "Enróscate pequeniño coma unha semente"
+        ],
+        "vocabularioClaveEs": [
+          "Cavar",
+          "Tierra",
+          "Acurrúcate pequeñito como una semilla"
         ]
       }
     ],
@@ -35525,6 +37659,31 @@
           "Tasty",
           "I like apples"
         ]
+      },
+      {
+        "numero": 7,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_primavera_3",
+        "extra": true,
+        "texto": {
+          "gl": "De volta do mercado, Rubén xoga: “Grow tall into a sunflower”, e logo: “Dig the soil with your hands”.",
+          "es": "De vuelta del mercado, Rubén juega: “Grow tall into a sunflower”, y luego: “Dig the soil with your hands”."
+        },
+        "palabras": [
+          "Grow tall into a sunflower",
+          "Dig the soil with your hands"
+        ],
+        "vocabularioClave": [
+          "Medra alto ata ser un xirasol",
+          "Cava a terra coas mans"
+        ],
+        "vocabularioClaveEs": [
+          "Crece alto hasta ser un girasol",
+          "Cava la tierra con las manos"
+        ]
       }
     ],
     "preguntasGraduadas": [
@@ -35851,6 +38010,34 @@
           "Bagpipes",
           "Shaky",
           "Let's sing!"
+        ]
+      },
+      {
+        "numero": 7,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_cores_3",
+        "extra": true,
+        "texto": {
+          "gl": "Na merenda, Vera di: “Yes, please” ás mazás e “No, thank you” ao queixo. Está delicioso, “delicious”.",
+          "es": "En la merienda, Vera dice: “Yes, please” a las manzanas y “No, thank you” al queso. Está delicioso, “delicious”."
+        },
+        "palabras": [
+          "Yes, please",
+          "No, thank you",
+          "delicious"
+        ],
+        "vocabularioClave": [
+          "Si, por favor",
+          "Non, grazas",
+          "delicioso"
+        ],
+        "vocabularioClaveEs": [
+          "Sí, por favor",
+          "No, gracias",
+          "delicioso"
         ]
       }
     ],
@@ -36179,6 +38366,34 @@
           "Sunshine",
           "Open"
         ]
+      },
+      {
+        "numero": 7,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_primavera_3",
+        "extra": true,
+        "texto": {
+          "gl": "Desde o papaventos, Ánxel ve un cabalo, “Horse”, unha vaca, “Cow”, e unha ovella, “Sheep”.",
+          "es": "Desde la cometa, Ánxel ve un caballo, “Horse”, una vaca, “Cow”, y una oveja, “Sheep”."
+        },
+        "palabras": [
+          "Horse",
+          "Cow",
+          "Sheep"
+        ],
+        "vocabularioClave": [
+          "Cabalo",
+          "Vaca",
+          "Ovella"
+        ],
+        "vocabularioClaveEs": [
+          "Caballo",
+          "Vaca",
+          "Oveja"
+        ]
       }
     ],
     "preguntasGraduadas": [
@@ -36505,6 +38720,37 @@
           "Bloom",
           "Open like a flower",
           "From seed to flower"
+        ]
+      },
+      {
+        "numero": 7,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_primavera_3",
+        "extra": true,
+        "texto": {
+          "gl": "Xulia galopa, “Gallop”, e camiña, “Walk”: “Gallop like a horse in the meadow”. Despois ten fame, “hungry”.",
+          "es": "Xulia galopa, “Gallop”, y camina, “Walk”: “Gallop like a horse in the meadow”. Después tiene hambre, “hungry”."
+        },
+        "palabras": [
+          "Gallop",
+          "Walk",
+          "Gallop like a horse in the meadow",
+          "hungry"
+        ],
+        "vocabularioClave": [
+          "Galopar",
+          "Camiñar",
+          "Galopa coma un cabalo no prado",
+          "con fame"
+        ],
+        "vocabularioClaveEs": [
+          "Galopar",
+          "Caminar",
+          "Galopa como un caballo en el prado",
+          "con hambre"
         ]
       }
     ],
@@ -36833,6 +39079,34 @@
           "Land",
           "Delicate"
         ]
+      },
+      {
+        "numero": 7,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_primavera_3",
+        "extra": true,
+        "texto": {
+          "gl": "Bieito xoga: “Walk heavily like a big cow”, e logo: “Graze like a gentle sheep”. O prato queda baleiro, “empty”.",
+          "es": "Bieito juega: “Walk heavily like a big cow”, y luego: “Graze like a gentle sheep”. El plato se queda vacío, “empty”."
+        },
+        "palabras": [
+          "Walk heavily like a big cow",
+          "Graze like a gentle sheep",
+          "empty"
+        ],
+        "vocabularioClave": [
+          "Camiña pesado coma unha vaca grande",
+          "Pace coma unha ovella mansa",
+          "baleiro"
+        ],
+        "vocabularioClaveEs": [
+          "Camina pesado como una vaca grande",
+          "Pasta como una oveja mansa",
+          "vacío"
+        ]
       }
     ],
     "preguntasGraduadas": [
@@ -37159,6 +39433,28 @@
           "Nest",
           "Egg",
           "Hatch"
+        ]
+      },
+      {
+        "numero": 7,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_primavera_3",
+        "extra": true,
+        "texto": {
+          "gl": "Óscar deixa pasar ao amigo, que lle dá as grazas, e el responde: “You are welcome”.",
+          "es": "Óscar deja pasar a su amigo, que le da las gracias, y él responde: “You are welcome”."
+        },
+        "palabras": [
+          "You are welcome"
+        ],
+        "vocabularioClave": [
+          "De nada"
+        ],
+        "vocabularioClaveEs": [
+          "De nada"
         ]
       }
     ],
@@ -37487,6 +39783,34 @@
           "Wash, then dry",
           "Wash"
         ]
+      },
+      {
+        "numero": 7,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_auga_3",
+        "extra": true,
+        "texto": {
+          "gl": "Pablo bate as palmas, “Clap your hands”, moi alto, “High”, e o vaso queda cheo, “full”.",
+          "es": "Pablo da palmas, “Clap your hands”, muy alto, “High”, y el vaso se queda lleno, “full”."
+        },
+        "palabras": [
+          "Clap your hands",
+          "High",
+          "full"
+        ],
+        "vocabularioClave": [
+          "Bate as palmas",
+          "Agudo, aguda",
+          "cheo"
+        ],
+        "vocabularioClaveEs": [
+          "Da palmas",
+          "Agudo, aguda",
+          "lleno"
+        ]
       }
     ],
     "preguntasGraduadas": [
@@ -37813,6 +40137,28 @@
           "Comb",
           "Toothbrush",
           "Brush your teeth"
+        ]
+      },
+      {
+        "numero": 7,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_auga_3",
+        "extra": true,
+        "texto": {
+          "gl": "Na bañeira, Samuel xoga: “Clap the rhythm on your chest”.",
+          "es": "En la bañera, Samuel juega: “Clap the rhythm on your chest”."
+        },
+        "palabras": [
+          "Clap the rhythm on your chest"
+        ],
+        "vocabularioClave": [
+          "Marca o ritmo con palmadas no peito"
+        ],
+        "vocabularioClaveEs": [
+          "Marca el ritmo con palmadas en el pecho"
         ]
       }
     ],
@@ -38141,6 +40487,34 @@
           "Salty",
           "All gone!"
         ]
+      },
+      {
+        "numero": 7,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_cores_3",
+        "extra": true,
+        "texto": {
+          "gl": "No comedor, Sofía xoga: “Cross your hands and clap with your friend”, e “Clap high, clap low”. E pide: “More juice in my cup.”",
+          "es": "En el comedor, Sofía juega: “Cross your hands and clap with your friend”, y “Clap high, clap low”. Y pide: “More juice in my cup.”"
+        },
+        "palabras": [
+          "Cross your hands and clap with your friend",
+          "Clap high, clap low",
+          "More juice in my cup."
+        ],
+        "vocabularioClave": [
+          "Cruza as mans e dá palmas co teu amigo",
+          "Palmas arriba, palmas abaixo",
+          "Máis zume na miña cunca."
+        ],
+        "vocabularioClaveEs": [
+          "Cruza las manos y da palmas con tu amigo",
+          "Palmas arriba, palmas abajo",
+          "Más zumo en mi taza."
+        ]
       }
     ],
     "preguntasGraduadas": [
@@ -38467,6 +40841,28 @@
           "The end",
           "Great",
           "Remember"
+        ]
+      },
+      {
+        "numero": 7,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_cores_3",
+        "extra": true,
+        "texto": {
+          "gl": "O dragón deixa un prato cheo na mesa: “A full plate on the table.”",
+          "es": "El dragón deja un plato lleno en la mesa: “A full plate on the table.”"
+        },
+        "palabras": [
+          "A full plate on the table."
+        ],
+        "vocabularioClave": [
+          "Un prato cheo enriba da mesa."
+        ],
+        "vocabularioClaveEs": [
+          "Un plato lleno encima de la mesa."
         ]
       }
     ],
@@ -39122,6 +41518,31 @@
           "Wonderful",
           "Sunbathe"
         ]
+      },
+      {
+        "numero": 7,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_mar_3",
+        "extra": true,
+        "texto": {
+          "gl": "Laura pon unha cuncha, “Shell”, no castelo, e xoga: “Row your boat through the big waves”.",
+          "es": "Laura pone una concha, “Shell”, en el castillo, y juega: “Row your boat through the big waves”."
+        },
+        "palabras": [
+          "Shell",
+          "Row your boat through the big waves"
+        ],
+        "vocabularioClave": [
+          "Cuncha",
+          "Rema na barca entre as ondas grandes"
+        ],
+        "vocabularioClaveEs": [
+          "Concha",
+          "Rema en la barca entre las olas grandes"
+        ]
       }
     ],
     "preguntasGraduadas": [
@@ -39448,6 +41869,31 @@
           "Whale",
           "Breathe",
           "Look, a shell!"
+        ]
+      },
+      {
+        "numero": 7,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_mar_3",
+        "extra": true,
+        "texto": {
+          "gl": "Cris xoga: “Swim like a fast fish in the ría”, e logo: “Dive deep and find a white shell”.",
+          "es": "Cris juega: “Swim like a fast fish in the ría”, y luego: “Dive deep and find a white shell”."
+        },
+        "palabras": [
+          "Swim like a fast fish in the ría",
+          "Dive deep and find a white shell"
+        ],
+        "vocabularioClave": [
+          "Nada coma un peixe rápido na ría",
+          "Mergúllate fondo e busca unha cuncha branca"
+        ],
+        "vocabularioClaveEs": [
+          "Nada como un pez rápido en la ría",
+          "Bucea hondo y busca una concha blanca"
         ]
       }
     ],
@@ -56408,6 +58854,31 @@
           "Fairest",
           "Choose together"
         ]
+      },
+      {
+        "numero": 9,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_benvida_2",
+        "extra": true,
+        "texto": {
+          "gl": "Despois da votación, Sabela colga o cartel, “Hang”, e pinta, “paint”, unha estrela.",
+          "es": "Después de la votación, Sabela cuelga el cartel, “Hang”, y pinta, “paint”, una estrella."
+        },
+        "palabras": [
+          "Hang",
+          "paint"
+        ],
+        "vocabularioClave": [
+          "Pendurar",
+          "pintura"
+        ],
+        "vocabularioClaveEs": [
+          "Colgar",
+          "pintura"
+        ]
       }
     ],
     "preguntasGraduadas": [
@@ -56786,6 +59257,37 @@
         "palabras": [
           "Celebrate as a team",
           "Together we are stronger"
+        ]
+      },
+      {
+        "numero": 9,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_benvida_2",
+        "extra": true,
+        "texto": {
+          "gl": "Iago reparte unha tarxeta, “Card”, verde, “Green”. É responsable, “Responsible”, e garda o papel, “paper”.",
+          "es": "Iago reparte una tarjeta, “Card”, verde, “Green”. Es responsable, “Responsible”, y guarda el papel, “paper”."
+        },
+        "palabras": [
+          "Card",
+          "Green",
+          "Responsible",
+          "paper"
+        ],
+        "vocabularioClave": [
+          "Postal",
+          "Verde",
+          "Responsable",
+          "papel"
+        ],
+        "vocabularioClaveEs": [
+          "Postal",
+          "Verde",
+          "Responsable",
+          "papel"
         ]
       }
     ],
@@ -57166,6 +59668,37 @@
           "Solved",
           "We solved it together!"
         ]
+      },
+      {
+        "numero": 9,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_benvida_2",
+        "extra": true,
+        "texto": {
+          "gl": "Noa xoga: “Walk to the hook and hang up your coat”. Logo: “Take the smock, turn around and give it to Noa”. Despois: “Sit on the green mat and freeze!”. E pregunta: “Can we trade?”.",
+          "es": "Noa juega: “Walk to the hook and hang up your coat”. Luego: “Take the smock, turn around and give it to Noa”. Después: “Sit on the green mat and freeze!”. Y pregunta: “Can we trade?”."
+        },
+        "palabras": [
+          "Walk to the hook and hang up your coat",
+          "Take the smock, turn around and give it to Noa",
+          "Sit on the green mat and freeze!",
+          "Can we trade?"
+        ],
+        "vocabularioClave": [
+          "Camiña ata o colgadoiro e colga o abrigo",
+          "Colle o mandil, dá a volta e dállo a Noa",
+          "Senta na esterilla verde e estátua!",
+          "Facemos un troco?"
+        ],
+        "vocabularioClaveEs": [
+          "Camina hasta el perchero y cuelga el abrigo",
+          "Coge el babi, date la vuelta y dáselo a Noa",
+          "Siéntate en la colchoneta verde y ¡estatua!",
+          "¿Hacemos un cambio?"
+        ]
       }
     ],
     "preguntasGraduadas": [
@@ -57544,6 +60077,28 @@
           "Trustworthy",
           "It's a deal!",
           "Peaceful solution"
+        ]
+      },
+      {
+        "numero": 9,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_benvida_2",
+        "extra": true,
+        "texto": {
+          "gl": "Mencía recorta unha bandeira coas tesoiras, “scissors”, para o triciclo.",
+          "es": "Mencía recorta una bandera con las tijeras, “scissors”, para el triciclo."
+        },
+        "palabras": [
+          "scissors"
+        ],
+        "vocabularioClave": [
+          "tesoiras"
+        ],
+        "vocabularioClaveEs": [
+          "tijeras"
         ]
       }
     ],
@@ -57924,6 +60479,34 @@
         "palabras": [
           "Sense"
         ]
+      },
+      {
+        "numero": 9,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_corpo_2",
+        "extra": true,
+        "texto": {
+          "gl": "Na bolsa hai un aro, “Hoop”. Duarte conta, “Count”, e corta, “cut”, unha cinta.",
+          "es": "En la bolsa hay un aro, “Hoop”. Duarte cuenta, “Count”, y corta, “cut”, una cinta."
+        },
+        "palabras": [
+          "Hoop",
+          "Count",
+          "cut"
+        ],
+        "vocabularioClave": [
+          "Aro",
+          "Contar",
+          "cortar"
+        ],
+        "vocabularioClaveEs": [
+          "Aro",
+          "Contar",
+          "cortar"
+        ]
       }
     ],
     "preguntasGraduadas": [
@@ -58302,6 +60885,37 @@
         "palabras": [
           "Flex",
           "Muscular"
+        ]
+      },
+      {
+        "numero": 9,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_corpo_2",
+        "extra": true,
+        "texto": {
+          "gl": "Olalla toca unha folla áspera, “Rough”, e outra lisa, “Smooth”, marrón, “Brown”. E di: “I am not finished yet”.",
+          "es": "Olalla toca una hoja áspera, “Rough”, y otra lisa, “Smooth”, marrón, “Brown”. Y dice: “I am not finished yet”."
+        },
+        "palabras": [
+          "Rough",
+          "Smooth",
+          "Brown",
+          "I am not finished yet"
+        ],
+        "vocabularioClave": [
+          "Bravo, brava (mar)",
+          "Liso, lisa",
+          "Marrón",
+          "Aínda non rematei"
+        ],
+        "vocabularioClaveEs": [
+          "Bravo, brava (mar)",
+          "Liso, lisa",
+          "Marrón",
+          "Todavía no he terminado"
         ]
       }
     ],
@@ -58682,6 +61296,37 @@
           "Shake out",
           "Shake it all out!"
         ]
+      },
+      {
+        "numero": 9,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_corpo_2",
+        "extra": true,
+        "texto": {
+          "gl": "Bieito xoga: “Take a rough leaf and put it in the brown ring”. Logo: “Noa, walk slowly and give the smooth leaf to your friend”. Despois: “Count three leaves and jump over the ring”. E debuxa, “draw”, a súa árbore.",
+          "es": "Bieito juega: “Take a rough leaf and put it in the brown ring”. Luego: “Noa, walk slowly and give the smooth leaf to your friend”. Después: “Count three leaves and jump over the ring”. Y dibuja, “draw”, su árbol."
+        },
+        "palabras": [
+          "Take a rough leaf and put it in the brown ring",
+          "Noa, walk slowly and give the smooth leaf to your friend",
+          "Count three leaves and jump over the ring",
+          "draw"
+        ],
+        "vocabularioClave": [
+          "Colle unha folla áspera e ponna no aro marrón",
+          "Noa, camiña amodo e dálle a folla lisa ao teu amigo",
+          "Conta tres follas e salta por riba do aro",
+          "debuxar"
+        ],
+        "vocabularioClaveEs": [
+          "Coge una hoja áspera y ponla en el aro marrón",
+          "Noa, camina despacio y dale la hoja lisa a tu amigo",
+          "Cuenta tres hojas y salta por encima del aro",
+          "dibujar"
+        ]
       }
     ],
     "preguntasGraduadas": [
@@ -59060,6 +61705,28 @@
         ],
         "palabras": [
           "Rested and happy"
+        ]
+      },
+      {
+        "numero": 9,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_corpo_2",
+        "extra": true,
+        "texto": {
+          "gl": "Por fin chega o soño, cunha lúa moi brillante, “bright”.",
+          "es": "Por fin llega el sueño, con una luna muy brillante, “bright”."
+        },
+        "palabras": [
+          "bright"
+        ],
+        "vocabularioClave": [
+          "vivo, brillante"
+        ],
+        "vocabularioClaveEs": [
+          "vivo, brillante"
         ]
       }
     ],
@@ -59440,6 +62107,37 @@
         "palabras": [
           "Drop a light feather"
         ]
+      },
+      {
+        "numero": 9,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_follas_2",
+        "extra": true,
+        "texto": {
+          "gl": "Icía busca, “Find”, e toca sen mirar, “Feel without looking”, na bolsa misteriosa, “Mystery bag”. E di: “It is fair to share”.",
+          "es": "Icía busca, “Find”, y toca sin mirar, “Feel without looking”, en la bolsa misteriosa, “Mystery bag”. Y dice: “It is fair to share”."
+        },
+        "palabras": [
+          "Find",
+          "Feel without looking",
+          "Mystery bag",
+          "It is fair to share"
+        ],
+        "vocabularioClave": [
+          "Atopar",
+          "Tocar sen mirar",
+          "Bolsa misteriosa",
+          "É xusto compartir"
+        ],
+        "vocabularioClaveEs": [
+          "Encontrar",
+          "Tocar sin mirar",
+          "Bolsa misteriosa",
+          "Es justo compartir"
+        ]
       }
     ],
     "preguntasGraduadas": [
@@ -59818,6 +62516,34 @@
         "palabras": [
           "If I take one away, there are four",
           "Even number"
+        ]
+      },
+      {
+        "numero": 9,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_follas_2",
+        "extra": true,
+        "texto": {
+          "gl": "Anxo dá unha orde, “Command”: unha castaña redonda, “Round”, e pegañenta, “sticky”.",
+          "es": "Anxo da una orden, “Command”: una castaña redonda, “Round”, y pegajosa, “sticky”."
+        },
+        "palabras": [
+          "Command",
+          "Round",
+          "sticky"
+        ],
+        "vocabularioClave": [
+          "Orde",
+          "Redondo, redonda",
+          "pegañento"
+        ],
+        "vocabularioClaveEs": [
+          "Orden",
+          "Redondo, redonda",
+          "pegajoso"
         ]
       }
     ],
@@ -60198,6 +62924,37 @@
         "palabras": [
           "Scientific"
         ]
+      },
+      {
+        "numero": 9,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_follas_2",
+        "extra": true,
+        "texto": {
+          "gl": "Xoana xoga: “Mateo, find a round cold chestnut”. Logo: “Put the rough one here and the smooth one there”. Despois: “Your turn: give the command to your friend”. É moi creativa, “creative”.",
+          "es": "Xoana juega: “Mateo, find a round cold chestnut”. Luego: “Put the rough one here and the smooth one there”. Después: “Your turn: give the command to your friend”. Es muy creativa, “creative”."
+        },
+        "palabras": [
+          "Mateo, find a round cold chestnut",
+          "Put the rough one here and the smooth one there",
+          "Your turn: give the command to your friend",
+          "creative"
+        ],
+        "vocabularioClave": [
+          "Mateo, busca unha castaña redonda e fría",
+          "Pon a áspera aquí e a lisa alí",
+          "Tócache: dálle a orde ao teu amigo",
+          "creativo"
+        ],
+        "vocabularioClaveEs": [
+          "Mateo, busca una castaña redonda y fría",
+          "Pon la áspera aquí y la lisa allí",
+          "Te toca: dale la orden a tu amigo",
+          "creativo"
+        ]
       }
     ],
     "preguntasGraduadas": [
@@ -60576,6 +63333,28 @@
         "palabras": [
           "Chestnut tree",
           "Seasonal"
+        ]
+      },
+      {
+        "numero": 9,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_follas_2",
+        "extra": true,
+        "texto": {
+          "gl": "Ao final da colleita, Antón di: “I feel proud of our work”.",
+          "es": "Al final de la cosecha, Antón dice: “I feel proud of our work”."
+        },
+        "palabras": [
+          "I feel proud of our work"
+        ],
+        "vocabularioClave": [
+          "Que orgullo do noso traballo"
+        ],
+        "vocabularioClaveEs": [
+          "Qué orgullo de nuestro trabajo"
         ]
       }
     ],
@@ -60956,6 +63735,37 @@
         "palabras": [
           "Good night, Moon"
         ]
+      },
+      {
+        "numero": 9,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_inverno_2",
+        "extra": true,
+        "texto": {
+          "gl": "Carme e o avó van da man, “Hand in hand”, xiran á esquerda, “Turn left”, e acenden unha vela, “Candle”. Mesturan, “blend”, as cores do ceo.",
+          "es": "Carme y el abuelo van de la mano, “Hand in hand”, giran a la izquierda, “Turn left”, y encienden una vela, “Candle”. Mezclan, “blend”, los colores del cielo."
+        },
+        "palabras": [
+          "Hand in hand",
+          "Turn left",
+          "Candle",
+          "blend"
+        ],
+        "vocabularioClave": [
+          "Da man",
+          "Xirar á esquerda",
+          "Vela",
+          "mesturar"
+        ],
+        "vocabularioClaveEs": [
+          "De la mano",
+          "Girar a la izquierda",
+          "Vela",
+          "mezclar"
+        ]
       }
     ],
     "preguntasGraduadas": [
@@ -61334,6 +64144,34 @@
           "Float in space",
           "Weightless",
           "Comet"
+        ]
+      },
+      {
+        "numero": 9,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_inverno_2",
+        "extra": true,
+        "texto": {
+          "gl": "Cibrán camiña amodo, “Slow”, xira á esquerda, “Left”, e ten coidado, “careful”, coa luz.",
+          "es": "Cibrán camina despacio, “Slow”, gira a la izquierda, “Left”, y tiene cuidado, “careful”, con la luz."
+        },
+        "palabras": [
+          "Slow",
+          "Left",
+          "careful"
+        ],
+        "vocabularioClave": [
+          "Lento, lenta",
+          "Esquerdo",
+          "coidadoso"
+        ],
+        "vocabularioClaveEs": [
+          "Lento, lenta",
+          "Izquierdo",
+          "cuidadoso"
         ]
       }
     ],
@@ -61714,6 +64552,34 @@
         "palabras": [
           "Next month"
         ]
+      },
+      {
+        "numero": 9,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_inverno_2",
+        "extra": true,
+        "texto": {
+          "gl": "Ledicia xoga: “Walk slowly and hold your friend's hand”. Logo: “Turn left and step over the rope”. E: “Here you go: give the light to the next pair”.",
+          "es": "Ledicia juega: “Walk slowly and hold your friend's hand”. Luego: “Turn left and step over the rope”. Y: “Here you go: give the light to the next pair”."
+        },
+        "palabras": [
+          "Walk slowly and hold your friend's hand",
+          "Turn left and step over the rope",
+          "Here you go: give the light to the next pair"
+        ],
+        "vocabularioClave": [
+          "Camiña amodo e colle a man do teu amigo",
+          "Xira á esquerda e pasa por riba da corda",
+          "Aquí tes: dálle a luz á parella seguinte"
+        ],
+        "vocabularioClaveEs": [
+          "Camina despacio y coge la mano de tu amigo",
+          "Gira a la izquierda y pasa por encima de la cuerda",
+          "Toma: dale la luz a la pareja siguiente"
+        ]
       }
     ],
     "preguntasGraduadas": [
@@ -62092,6 +64958,28 @@
           "Joyous",
           "Make a resolution",
           "Next year I will read more books"
+        ]
+      },
+      {
+        "numero": 9,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_inverno_2",
+        "extra": true,
+        "texto": {
+          "gl": "Xabier pinta a postal: “I am blending yellow and blue because I want to make green.”",
+          "es": "Xabier pinta la postal: “I am blending yellow and blue because I want to make green.”"
+        },
+        "palabras": [
+          "I am blending yellow and blue because I want to make green."
+        ],
+        "vocabularioClave": [
+          "Estou mesturando amarelo e azul porque quero facer verde."
+        ],
+        "vocabularioClaveEs": [
+          "Estoy mezclando amarillo y azul porque quiero hacer verde."
         ]
       }
     ],
@@ -62472,6 +65360,37 @@
           "Museum",
           "Stone statue"
         ]
+      },
+      {
+        "numero": 9,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_follas_2",
+        "extra": true,
+        "texto": {
+          "gl": "Ánxela mantén o equilibrio, “Balance”, pasa por riba, “Step across”, e leva un prato en equilibrio, “Balance a plate”. E di: “The brush is between the cup and the paper.”",
+          "es": "Ánxela mantiene el equilibrio, “Balance”, pasa por encima, “Step across”, y lleva un plato en equilibrio, “Balance a plate”. Y dice: “The brush is between the cup and the paper.”"
+        },
+        "palabras": [
+          "Balance",
+          "Step across",
+          "Balance a plate",
+          "The brush is between the cup and the paper."
+        ],
+        "vocabularioClave": [
+          "Manter o equilibrio",
+          "Pasar por riba",
+          "Equilibrar o prato",
+          "O pincel está entre a cunca e o papel."
+        ],
+        "vocabularioClaveEs": [
+          "Mantener el equilibrio",
+          "Pasar por encima",
+          "Equilibrar el plato",
+          "El pincel está entre la taza y el papel."
+        ]
       }
     ],
     "preguntasGraduadas": [
@@ -62850,6 +65769,31 @@
         ],
         "palabras": [
           "Vigo was small, but now it is big"
+        ]
+      },
+      {
+        "numero": 9,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_mar_2",
+        "extra": true,
+        "texto": {
+          "gl": "Paulo camiña pola trabe, “Balance beam”, mirando o mar azul, “Blue”.",
+          "es": "Paulo camina por la barra, “Balance beam”, mirando el mar azul, “Blue”."
+        },
+        "palabras": [
+          "Balance beam",
+          "Blue"
+        ],
+        "vocabularioClave": [
+          "Barra de equilibrio",
+          "Azul"
+        ],
+        "vocabularioClaveEs": [
+          "Barra de equilibrio",
+          "Azul"
         ]
       }
     ],
@@ -63230,6 +66174,34 @@
           "Birthday",
           "Age"
         ]
+      },
+      {
+        "numero": 9,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_benvida_2",
+        "extra": true,
+        "texto": {
+          "gl": "Aroa xoga: “Step slowly and don't spill the water into the river”. Logo: “Ready, steady, go: pass the tray to your friend”. E: “If the water is cold, walk to the blue mat”.",
+          "es": "Aroa juega: “Step slowly and don't spill the water into the river”. Luego: “Ready, steady, go: pass the tray to your friend”. Y: “If the water is cold, walk to the blue mat”."
+        },
+        "palabras": [
+          "Step slowly and don't spill the water into the river",
+          "Ready, steady, go: pass the tray to your friend",
+          "If the water is cold, walk to the blue mat"
+        ],
+        "vocabularioClave": [
+          "Pisa amodo e non deixes caer a auga no río",
+          "Preparados, listos, xa: pásalle a bandexa ao teu amigo",
+          "Se a auga está fría, camiña ata a esterilla azul"
+        ],
+        "vocabularioClaveEs": [
+          "Pisa despacio y no derrames el agua en el río",
+          "Preparados, listos, ya: pásale la bandeja a tu amigo",
+          "Si el agua está fría, camina hasta la colchoneta azul"
+        ]
       }
     ],
     "preguntasGraduadas": [
@@ -63608,6 +66580,28 @@
         ],
         "palabras": [
           "Surprise ending"
+        ]
+      },
+      {
+        "numero": 9,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_mar_2",
+        "extra": true,
+        "texto": {
+          "gl": "Ao final do conto, Lara di: “If it's hot, we play with water”.",
+          "es": "Al final del cuento, Lara dice: “If it's hot, we play with water”."
+        },
+        "palabras": [
+          "If it's hot, we play with water"
+        ],
+        "vocabularioClave": [
+          "Se vai calor, xogamos con auga"
+        ],
+        "vocabularioClaveEs": [
+          "Si hace calor, jugamos con agua"
         ]
       }
     ],
@@ -63988,6 +66982,37 @@
           "Freeze on command",
           "Guess who's behind the mask"
         ]
+      },
+      {
+        "numero": 9,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_cores_2",
+        "extra": true,
+        "texto": {
+          "gl": "No Entroido: “Arms up!”. Mariña fai unha forma, “Shape”, de estatua, “Statue”, e despois dun avión, “plane”.",
+          "es": "En Carnaval: “Arms up!”. Mariña hace una forma, “Shape”, de estatua, “Statue”, y después de un avión, “plane”."
+        },
+        "palabras": [
+          "Arms up!",
+          "Shape",
+          "Statue",
+          "plane"
+        ],
+        "vocabularioClave": [
+          "Brazos arriba!",
+          "Forma",
+          "Estatua",
+          "avión"
+        ],
+        "vocabularioClaveEs": [
+          "¡Brazos arriba!",
+          "Forma",
+          "Estatua",
+          "avión"
+        ]
       }
     ],
     "preguntasGraduadas": [
@@ -64366,6 +67391,31 @@
         ],
         "palabras": [
           "Clear voice"
+        ]
+      },
+      {
+        "numero": 9,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_cores_2",
+        "extra": true,
+        "texto": {
+          "gl": "Hugo di: “Copy my movements”, moi dramático, “Dramatic”.",
+          "es": "Hugo dice: “Copy my movements”, muy dramático, “Dramatic”."
+        },
+        "palabras": [
+          "Copy my movements",
+          "Dramatic"
+        ],
+        "vocabularioClave": [
+          "Copia os meus movementos",
+          "Dramático"
+        ],
+        "vocabularioClaveEs": [
+          "Copia mis movimientos",
+          "Dramático"
         ]
       }
     ],
@@ -64746,6 +67796,37 @@
           "Solo",
           "First the solo, then the choir"
         ]
+      },
+      {
+        "numero": 9,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_cores_2",
+        "extra": true,
+        "texto": {
+          "gl": "Xoán xoga: “Put your arms up and your left foot forward”. Logo: “Your turn: now you are the sculptor”. Despois: “Look at the card and copy the shape”. E saúda: “Welcome aboard!”.",
+          "es": "Xoán juega: “Put your arms up and your left foot forward”. Luego: “Your turn: now you are the sculptor”. Después: “Look at the card and copy the shape”. Y saluda: “Welcome aboard!”."
+        },
+        "palabras": [
+          "Put your arms up and your left foot forward",
+          "Your turn: now you are the sculptor",
+          "Look at the card and copy the shape",
+          "Welcome aboard!"
+        ],
+        "vocabularioClave": [
+          "Brazos arriba e o pé esquerdo adiante",
+          "Tócache: agora ti es o escultor",
+          "Mira a tarxeta e copia a forma",
+          "Benvidos a bordo!"
+        ],
+        "vocabularioClaveEs": [
+          "Brazos arriba y el pie izquierdo adelante",
+          "Te toca: ahora tú eres el escultor",
+          "Mira la tarjeta y copia la forma",
+          "¡Bienvenidos a bordo!"
+        ]
       }
     ],
     "preguntasGraduadas": [
@@ -65124,6 +68205,28 @@
         ],
         "palabras": [
           "Run home"
+        ]
+      },
+      {
+        "numero": 9,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_cores_2",
+        "extra": true,
+        "texto": {
+          "gl": "O lobo cédelle o paso a Simón: “It's your turn to direct”.",
+          "es": "El lobo le cede el paso a Simón: “It's your turn to direct”."
+        },
+        "palabras": [
+          "It's your turn to direct"
+        ],
+        "vocabularioClave": [
+          "Tócache dirixir"
+        ],
+        "vocabularioClaveEs": [
+          "Te toca dirigir"
         ]
       }
     ],
@@ -65504,6 +68607,31 @@
           "Stripes",
           "Zigzag"
         ]
+      },
+      {
+        "numero": 9,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_cores_2",
+        "extra": true,
+        "texto": {
+          "gl": "Erea enche, “Fill”, a caixa de contas e garda o billete, “ticket”.",
+          "es": "Erea llena, “Fill”, la caja de cuentas y guarda el billete, “ticket”."
+        },
+        "palabras": [
+          "Fill",
+          "ticket"
+        ],
+        "vocabularioClave": [
+          "Encher",
+          "billete"
+        ],
+        "vocabularioClaveEs": [
+          "Llenar",
+          "billete"
+        ]
       }
     ],
     "preguntasGraduadas": [
@@ -65882,6 +69010,31 @@
           "Reflection game",
           "Mirror a friend",
           "Copy my movements"
+        ]
+      },
+      {
+        "numero": 9,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_primavera_2",
+        "extra": true,
+        "texto": {
+          "gl": "Gael rega as plantas, “Water the plants”, e no autobús preguntan: “May I see your ticket?”.",
+          "es": "Gael riega las plantas, “Water the plants”, y en el autobús preguntan: “May I see your ticket?”."
+        },
+        "palabras": [
+          "Water the plants",
+          "May I see your ticket?"
+        ],
+        "vocabularioClave": [
+          "Regar as plantas",
+          "Podo ver o teu billete?"
+        ],
+        "vocabularioClaveEs": [
+          "Regar las plantas",
+          "¿Puedo ver tu billete?"
         ]
       }
     ],
@@ -66262,6 +69415,37 @@
           "Six-sided",
           "Bees build hexagons because they fit together"
         ]
+      },
+      {
+        "numero": 9,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_primavera_2",
+        "extra": true,
+        "texto": {
+          "gl": "Candela xoga: “Fill the pot, plant the seed and water it”. Logo: “Here you go: pass the soil to your friend”. E: “If the seed is big, put it in the brown pot”. Despois prepara a maleta, “suitcase”.",
+          "es": "Candela juega: “Fill the pot, plant the seed and water it”. Luego: “Here you go: pass the soil to your friend”. Y: “If the seed is big, put it in the brown pot”. Después prepara la maleta, “suitcase”."
+        },
+        "palabras": [
+          "Fill the pot, plant the seed and water it",
+          "Here you go: pass the soil to your friend",
+          "If the seed is big, put it in the brown pot",
+          "suitcase"
+        ],
+        "vocabularioClave": [
+          "Enche o testo, planta a semente e rega",
+          "Aquí tes: pásalle a terra ao teu amigo",
+          "Se a semente é grande, ponna no testo marrón",
+          "maleta"
+        ],
+        "vocabularioClaveEs": [
+          "Llena la maceta, planta la semilla y riégala",
+          "Toma: pásale la tierra a tu amigo",
+          "Si la semilla es grande, ponla en la maceta marrón",
+          "maleta"
+        ]
       }
     ],
     "preguntasGraduadas": [
@@ -66640,6 +69824,28 @@
         "palabras": [
           "Rotate a piece",
           "Fill a space"
+        ]
+      },
+      {
+        "numero": 9,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_cores_2",
+        "extra": true,
+        "texto": {
+          "gl": "Roque lembra a viaxe, “journey”, ao mar verde.",
+          "es": "Roque recuerda el viaje, “journey”, al mar verde."
+        },
+        "palabras": [
+          "journey"
+        ],
+        "vocabularioClave": [
+          "viaxe"
+        ],
+        "vocabularioClaveEs": [
+          "viaje"
         ]
       }
     ],
@@ -67020,6 +70226,34 @@
           "Give a thumbs up",
           "Thumbs up for a clean sea!"
         ]
+      },
+      {
+        "numero": 9,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_mar_2",
+        "extra": true,
+        "texto": {
+          "gl": "Na praia, Sara ve unha serpe, “Snake”, que repta, “Slither”. No coche: “Fasten your seatbelts”.",
+          "es": "En la playa, Sara ve una serpiente, “Snake”, que repta, “Slither”. En el coche: “Fasten your seatbelts”."
+        },
+        "palabras": [
+          "Snake",
+          "Slither",
+          "Fasten your seatbelts"
+        ],
+        "vocabularioClave": [
+          "Serpe",
+          "Arrastrarse",
+          "Abrochade os cintos"
+        ],
+        "vocabularioClaveEs": [
+          "Serpiente",
+          "Reptar",
+          "Abrochaos los cinturones"
+        ]
       }
     ],
     "preguntasGraduadas": [
@@ -67398,6 +70632,34 @@
           "Long-legged",
           "Most crabs walk sideways, but the spider crab walks forwards",
           "Ecological"
+        ]
+      },
+      {
+        "numero": 9,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_mar_2",
+        "extra": true,
+        "texto": {
+          "gl": "Na foto, un cangrexo gatea, “Crawl”, cunhas patas puntiagudas, “Pointy”. Xián marca o destino, “destination”.",
+          "es": "En la foto, un cangrejo gatea, “Crawl”, con unas patas puntiagudas, “Pointy”. Xián marca el destino, “destination”."
+        },
+        "palabras": [
+          "Crawl",
+          "Pointy",
+          "destination"
+        ],
+        "vocabularioClave": [
+          "Gatear",
+          "Aguzado, aguzada",
+          "destino"
+        ],
+        "vocabularioClaveEs": [
+          "Gatear",
+          "Puntiagudo, puntiaguda",
+          "destino"
         ]
       }
     ],
@@ -67778,6 +71040,37 @@
           "Plant a tree",
           "Greener"
         ]
+      },
+      {
+        "numero": 9,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_primavera_2",
+        "extra": true,
+        "texto": {
+          "gl": "Mateo xoga: “Where does the fox hide? Point with your elbows”. Logo: “Under the stones! Slither like a snake”. E: “If it climbs the chestnut tree, crawl to the green mat”. Despois amosa o pasaporte, “passport”.",
+          "es": "Mateo juega: “Where does the fox hide? Point with your elbows”. Luego: “Under the stones! Slither like a snake”. Y: “If it climbs the chestnut tree, crawl to the green mat”. Después enseña el pasaporte, “passport”."
+        },
+        "palabras": [
+          "Where does the fox hide? Point with your elbows",
+          "Under the stones! Slither like a snake",
+          "If it climbs the chestnut tree, crawl to the green mat",
+          "passport"
+        ],
+        "vocabularioClave": [
+          "Onde se agocha o raposo? Sinala cos cóbados",
+          "Debaixo das pedras! Arrástrate coma unha serpe",
+          "Se sobe ao castiñeiro, gatea ata a esterilla verde",
+          "pasaporte"
+        ],
+        "vocabularioClaveEs": [
+          "¿Dónde se esconde el zorro? Señala con los codos",
+          "¡Debajo de las piedras! Arrástrate como una serpiente",
+          "Si sube al castaño, gatea hasta la colchoneta verde",
+          "pasaporte"
+        ]
       }
     ],
     "preguntasGraduadas": [
@@ -68156,6 +71449,28 @@
           "The mother swims next to her calf",
           "Flipper",
           "Tail fin"
+        ]
+      },
+      {
+        "numero": 9,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_mar_2",
+        "extra": true,
+        "texto": {
+          "gl": "Ao baixar do barco, despídense de Noela: “Have a safe trip!”.",
+          "es": "Al bajar del barco, se despiden de Noela: “Have a safe trip!”."
+        },
+        "palabras": [
+          "Have a safe trip!"
+        ],
+        "vocabularioClave": [
+          "Boa viaxe!"
+        ],
+        "vocabularioClaveEs": [
+          "¡Buen viaje!"
         ]
       }
     ],
@@ -68536,6 +71851,34 @@
           "Satisfied",
           "Hopeful"
         ]
+      },
+      {
+        "numero": 9,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_benvida_2",
+        "extra": true,
+        "texto": {
+          "gl": "Breixo toca o bote, “Tap-tap”, seguindo un patrón, “Pattern”, lonxe do perigoso, “dangerous”.",
+          "es": "Breixo toca el bote, “Tap-tap”, siguiendo un patrón, “Pattern”, lejos de lo peligroso, “dangerous”."
+        },
+        "palabras": [
+          "Tap-tap",
+          "Pattern",
+          "dangerous"
+        ],
+        "vocabularioClave": [
+          "Plic, plic",
+          "Patrón",
+          "perigoso"
+        ],
+        "vocabularioClaveEs": [
+          "Plic, plic",
+          "Patrón",
+          "peligroso"
+        ]
       }
     ],
     "preguntasGraduadas": [
@@ -68914,6 +72257,59 @@
           "Open hands to agree",
           "Understanding",
           "Open-minded"
+        ]
+      },
+      {
+        "numero": 9,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_auga_2",
+        "extra": true,
+        "texto": {
+          "gl": "Fan un círculo, “Circle”, rítmico, “Rhythmic”: máis rápido, “Faster”, e máis lento, “Slower”.",
+          "es": "Hacen un círculo, “Circle”, rítmico, “Rhythmic”: más rápido, “Faster”, y más lento, “Slower”."
+        },
+        "palabras": [
+          "Circle",
+          "Rhythmic",
+          "Faster",
+          "Slower"
+        ],
+        "vocabularioClave": [
+          "Círculo",
+          "Rítmico",
+          "Máis rápido",
+          "Máis amodo"
+        ],
+        "vocabularioClaveEs": [
+          "Círculo",
+          "Rítmico",
+          "Más rápido",
+          "Más despacio"
+        ]
+      },
+      {
+        "numero": 10,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_auga_2",
+        "extra": true,
+        "texto": {
+          "gl": "Saen a explorar, “explore”.",
+          "es": "Salen a explorar, “explore”."
+        },
+        "palabras": [
+          "explore"
+        ],
+        "vocabularioClave": [
+          "explorar"
+        ],
+        "vocabularioClaveEs": [
+          "explorar"
         ]
       }
     ],
@@ -69294,6 +72690,37 @@
           "Compassionate",
           "Gentle-hearted"
         ]
+      },
+      {
+        "numero": 9,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_benvida_2",
+        "extra": true,
+        "texto": {
+          "gl": "Celia xoga: “Make your pattern: clap, jump, tap”. Logo: “Now the group copies your pattern”. E: “Pass the rhythm stick around the circle”. Por fin chegan, “arrive”.",
+          "es": "Celia juega: “Make your pattern: clap, jump, tap”. Luego: “Now the group copies your pattern”. Y: “Pass the rhythm stick around the circle”. Por fin llegan, “arrive”."
+        },
+        "palabras": [
+          "Make your pattern: clap, jump, tap",
+          "Now the group copies your pattern",
+          "Pass the rhythm stick around the circle",
+          "arrive"
+        ],
+        "vocabularioClave": [
+          "Fai a túa serie: palma, salto, golpe",
+          "Agora o grupo copia a túa serie",
+          "Pasa o pau do ritmo arredor do círculo",
+          "chegar"
+        ],
+        "vocabularioClaveEs": [
+          "Haz tu serie: palmada, salto, golpe",
+          "Ahora el grupo copia tu serie",
+          "Pasa el palo del ritmo alrededor del círculo",
+          "llegar"
+        ]
       }
     ],
     "preguntasGraduadas": [
@@ -69672,6 +73099,28 @@
           "Thank you for helping me",
           "Write a thank-you note",
           "Thank-you note"
+        ]
+      },
+      {
+        "numero": 9,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_primavera_2",
+        "extra": true,
+        "texto": {
+          "gl": "Amaro corre: “We have to hurry because the train is leaving in front of us.”",
+          "es": "Amaro corre: “We have to hurry because the train is leaving in front of us.”"
+        },
+        "palabras": [
+          "We have to hurry because the train is leaving in front of us."
+        ],
+        "vocabularioClave": [
+          "Temos que darnos présa porque o tren sae diante de nós."
+        ],
+        "vocabularioClaveEs": [
+          "Tenemos que darnos prisa porque el tren sale delante de nosotros."
         ]
       }
     ],
@@ -70052,6 +73501,31 @@
           "Hug Lúa goodbye",
           "Thank you, Lúa!"
         ]
+      },
+      {
+        "numero": 9,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_benvida_2",
+        "extra": true,
+        "texto": {
+          "gl": "Sabela leva un cesto, “Basket”, e conta os pasos, “Steps”, do camiño.",
+          "es": "Sabela lleva una cesta, “Basket”, y cuenta los pasos, “Steps”, del camino."
+        },
+        "palabras": [
+          "Basket",
+          "Steps"
+        ],
+        "vocabularioClave": [
+          "Cesto",
+          "Escaleiras"
+        ],
+        "vocabularioClaveEs": [
+          "Cesta",
+          "Escalones"
+        ]
       }
     ],
     "preguntasGraduadas": [
@@ -70431,6 +73905,31 @@
           "I'm ready for Primary!",
           "Next year I will learn to read books by myself"
         ]
+      },
+      {
+        "numero": 9,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_benvida_2",
+        "extra": true,
+        "texto": {
+          "gl": "No patio da escola grande, Adrián berra: “Look, a shell!”. É branca, “White”.",
+          "es": "En el patio de la escuela grande, Adrián grita: “Look, a shell!”. Es blanca, “White”."
+        },
+        "palabras": [
+          "Look, a shell!",
+          "White"
+        ],
+        "vocabularioClave": [
+          "Mira, unha cuncha!",
+          "Branco, branca"
+        ],
+        "vocabularioClaveEs": [
+          "¡Mira, una concha!",
+          "Blanco, blanca"
+        ]
       }
     ],
     "preguntasGraduadas": [
@@ -70809,6 +74308,34 @@
           "Wave your graduation cap",
           "Throw caps in the air",
           "Unstoppable"
+        ]
+      },
+      {
+        "numero": 9,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_benvida_2",
+        "extra": true,
+        "texto": {
+          "gl": "Despois do discurso, Olaia xoga: “Noa, walk five steps and take the white shell”. Logo: “If the shell is smooth, put it in the blue basket”. E: “Here you go. Thank you! Your turn”.",
+          "es": "Después del discurso, Olaia juega: “Noa, walk five steps and take the white shell”. Luego: “If the shell is smooth, put it in the blue basket”. Y: “Here you go. Thank you! Your turn”."
+        },
+        "palabras": [
+          "Noa, walk five steps and take the white shell",
+          "If the shell is smooth, put it in the blue basket",
+          "Here you go. Thank you! Your turn"
+        ],
+        "vocabularioClave": [
+          "Noa, dá cinco pasos e colle a cuncha branca",
+          "Se a cuncha é lisa, ponna no cesto azul",
+          "Aquí tes. Grazas! Tócache"
+        ],
+        "vocabularioClaveEs": [
+          "Noa, da cinco pasos y coge la concha blanca",
+          "Si la concha es lisa, ponla en la cesta azul",
+          "Toma. ¡Gracias! Te toca"
         ]
       }
     ],

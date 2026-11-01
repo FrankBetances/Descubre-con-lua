@@ -55,7 +55,14 @@
       "es": "Atomizador con agua tibia y tela de tul translúcido amarillo"
     }
   ],
-  "contraste": null,
+  "contraste": {
+    "a": "0_2.xaneiro.s3.beak",
+    "b": "0_2.abril.s3.bean",
+    "nota": {
+      "gl": "«Beak» remata cun golpe na gorxa, «k»; «bean» remata pola nariz, «n». Dilas ti, unha detrás da outra.",
+      "es": "«Beak» acaba con un golpe en la garganta, «k»; «bean» acaba por la nariz, «n». Dilas tú, una detrás de otra."
+    }
+  },
   "queObservar": [
     {
       "gl": "Mira as pingas na man e queda quieto un momento",

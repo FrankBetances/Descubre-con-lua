@@ -55,7 +55,14 @@
       "es": "Gorros y manoplas de lana, y el espejo de la asamblea"
     }
   ],
-  "contraste": null,
+  "contraste": {
+    "a": "0_2.xaneiro.s3.nibble",
+    "b": "0_2.abril.s4.nimble",
+    "nota": {
+      "gl": "«Nibble» leva unha «b» suave; «nimble», unha «m» que soa pola nariz. Dilas ti, amodo e cantando.",
+      "es": "«Nibble» lleva una «b» suave; «nimble», una «m» que suena por la nariz. Dilas tú, despacio y cantando."
+    }
+  },
   "queObservar": [
     {
       "gl": "Mírase no espello co gorro posto",

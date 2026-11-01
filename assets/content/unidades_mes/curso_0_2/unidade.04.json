@@ -65,7 +65,14 @@
       "es": "Una toalla tibia"
     }
   ],
-  "contraste": null,
+  "contraste": {
+    "a": "0_2.decembro.s3.dim",
+    "b": "0_2.maio.s1.dip",
+    "nota": {
+      "gl": "«Dim» pecha cos beizos e soa pola nariz; «dip» pecha cos beizos e sae cun golpe de aire. Dilas ti, unha detrás da outra.",
+      "es": "«Dim» cierra con los labios y suena por la nariz; «dip» cierra con los labios y sale con un golpe de aire. Dilas tú, una detrás de otra."
+    }
+  },
   "queObservar": [
     {
       "gl": "Move as pernas para facer soar os cascabeis",

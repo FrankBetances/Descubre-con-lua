@@ -55,7 +55,14 @@
       "es": "Cesta de mimbre con hojas de roble y castaño lavadas"
     }
   ],
-  "contraste": null,
+  "contraste": {
+    "a": "0_2.novembro.s2.rake",
+    "b": "0_2.abril.s1.wake",
+    "nota": {
+      "gl": "A «r» inglesa non vibra, a lingua queda atrás; a «w» de «wake» sae cos beizos en círculo. Dilas ti, en parentese.",
+      "es": "La «r» inglesa no vibra, la lengua se queda atrás; la «w» de «wake» sale con los labios en círculo. Dilas tú, en parentese."
+    }
+  },
   "queObservar": [
     {
       "gl": "Segue coa mirada as follas que caen",

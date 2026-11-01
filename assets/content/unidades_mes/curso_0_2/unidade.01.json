@@ -62,7 +62,14 @@
       "es": "Muñeco blando de fieltro"
     }
   ],
-  "contraste": null,
+  "contraste": {
+    "a": "0_2.setembro.s1.cot",
+    "b": "0_2.setembro.s1.coo",
+    "nota": {
+      "gl": "«Cot» é curta e remata en «t»; «coo» é unha «u» longa, coma o arrolo dunha pomba. Dilas ti, en parentese, unha detrás da outra.",
+      "es": "«Cot» es corta y acaba en «t»; «coo» es una «u» larga, como el arrullo de una paloma. Dilas tú, en parentese, una detrás de otra."
+    }
+  },
   "queObservar": [
     {
       "gl": "Mira a túa cara cando lle dis «Hello, little one!»",

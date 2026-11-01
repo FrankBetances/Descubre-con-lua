@@ -51,7 +51,14 @@
       "es": "Tela extensa de lycra azul brillante"
     }
   ],
-  "contraste": null,
+  "contraste": {
+    "a": "0_2.xuno.s2.fin",
+    "b": "0_2.xuno.s3.fan",
+    "nota": {
+      "gl": "«Fin» leva unha «i» curta; «fan», unha «a» moi aberta, coma un sorriso grande. Dilas ti, en parentese.",
+      "es": "«Fin» lleva una «i» corta; «fan», una «a» muy abierta, como una sonrisa grande. Dilas tú, en parentese."
+    }
+  },
   "queObservar": [
     {
       "gl": "Estira as mans cara á tea que ondea",
