@@ -105,7 +105,7 @@ La opción A, tal como se le propuso: diez temas propios para 2-3 años, palabra
 - [x] Todo conecta, en las cinco edades: el STEAM del mes es el eje (se ve en Hoy); el lunes, las palabras nuevas; el martes, el reto con una de ellas; el miércoles, la frase de la unidad de las 48 dicha dentro del STEAM; el jueves, un paso del STEAM; el viernes, el cuento de esa semana con las palabras que salen en él. Ningún día se repite en el curso · evidencia: test/features/leccions/leccions_test.dart («cada mes co seu STEAM e ningún día repetido no curso»)
 - [x] Un gate tumba CI si vuelve a repetirse un tema o una palabra entre edades, o si una semana no trae nada nuevo · evidencia: tools/gen_leccions.py (--check, en tools/gates.sh)
 - [ ] Visto en la app de escritorio por Na casa → Hoy en las cinco edades, en gl y es · evidencia:
-- [ ] Mergeado en main con CI en verde · evidencia:
+- [x] Mergeado en main con CI en verde · evidencia: docs/ORDENES.md (PR #39, run 40778207068 en verde, merge 0c7f550f)
 - [x] Cada palabra nueva sale en una actividad de su semana (el lunes, todas; el viernes, las que trae el cuento) · evidencia: tools/gen_leccions.py (revisar: falla si una palabra nueva no sale en ningún día)
 - [x] La unidad de gramática manda en las palabras: en las 128 semanas cuya unidad trabaja una clase de palabra (nombres, verbos, adjetivos), al menos una palabra nueva es de esa clase · evidencia: tools/gen_leccions.py (revisar: falla si una semana no la trae)
 - [x] Cada semana dice cómo hablar: parentese, habla paralela, espera, expansión o recast, una técnica por fase · evidencia: test/features/leccions/leccions_test.dart («cada semana di como falar, catro técnicas distintas no mes»)
@@ -130,4 +130,17 @@ Estado: abierta
 - [x] La clase de palabra de la unidad entra en cada semana que la pide · evidencia: tools/gen_leccions.py (revisar: falla si una semana no la trae)
 - [x] Se ve cómo se avanza: antes, ahora y después en Hoy, y la unidad de cada tema en el camino · evidencia: test/features/leccions/leccions_test.dart («dónde estamos e o de hoxe, sen baixar» y «o camiño dos 10 temas, coa lección de agora»)
 - [x] Las frases nuevas tienen su voz · evidencia: tools/check_voice_coverage.py (run 107 de Generate Voice Assets en verde)
+- [x] Mergeado en main con CI en verde · evidencia: docs/ORDENES.md (PR #39, run 40778207068 en verde, merge 0c7f550f)
+
+## O-20261101-1 · Terminar lo pendiente y rehacer la UX de casa y del aula
+Estado: abierta
+> Termina todo el trabajo pendiente además queda pendiente completar las mayorías ux UI de casa y también reformar y mejorar la del aula porque también es horrible
+
+- [ ] 0-2 años: los 10 temas con su contraste de sonido (par del banco y nota en gl y es). Pendiente de Frank: el documento de currículo empieza a los 18 meses y el gate deja 0-2 sin contraste a propósito · evidencia:
+- [x] Cada frase de la unidad comparte al menos una palabra con su STEAM, en las 200 semanas · evidencia: tools/gen_gramatica.py (revisar: falla si una frase no nombra nada de su STEAM; 21 frases reescritas)
+- [ ] Cada palabra nueva sale en el cuento de su semana, en las 200 semanas. Hecho en 4-5 años (142 de 142, gate en tools/gen_leccions.py); las otras cuatro edades, después de que Frank dé 4-5 por buena (R∞.6) · evidencia:
+- [x] Hoy (casa y aula): franja con antes · AHORA · después, tema y STEAM; tarjeta de hoy con el día, qué hacer, la frase con voz y las palabras nuevas; todo eso sin bajar a 412×915 en gl y es; «Ya debería saber», «Cómo hablar» y «Guía» como tres botones que abren una hoja (aprobado por Frank, 1/11) · evidencia: test/features/ux_l3_test.dart («a semana enteira, sen baixar, a 412×915») y docs/capturas/escritorio/ux-casa-gl.png, ux-casa-es.png, ux-aula-es.png
+- [x] Aula → Hoy: debajo de la lección, solo «Sesión de 45 min» y «Asamblea del día»; el resto del material, plegado al final en «Más material del día» (no en Recursos: así no se pierde nada de lo que había) · evidencia: test/features/tpr_pantallas_test.dart y docs/capturas/escritorio/ux-aula-es.png
+- [x] Calendario (casa y aula): un solo selector de edad, los 10 meses en una fila y las 4 semanas de cada mes como tarjetas con su unidad, su STEAM y sus palabras; tocar una semana abre esa lección, la misma que Hoy · evidencia: test/features/leccions/leccions_test.dart («o calendario abre a mesma lección que Hoxe») y docs/capturas/escritorio/ux-cal-casa-gl.png, ux-cal-casa-es.png, ux-cal-aula-es.png, ux-leccion-cal-gl.png
+- [x] Capturas en escritorio de casa y aula, en gl y es, por Inicio → Na casa / Na escola · evidencia: docs/capturas/escritorio/ux-casa-gl.png, ux-casa-es.png, ux-aula-es.png, ux-cal-casa-gl.png, ux-cal-aula-es.png
 - [ ] Mergeado en main con CI en verde · evidencia:

@@ -305,43 +305,61 @@ class _HoxeDocentesScreenState extends State<HoxeDocentesScreen> {
           key: const Key('hoxe_docentes'),
           padding: const EdgeInsets.fromLTRB(16, 14, 16, 28),
           children: [
-            Align(
-              alignment: Alignment.centerLeft,
-              child: SelectorIdade(
+            // O-20261101-1: la edad, la fecha y el título en una fila.
+            // Con letra normal, en una fila; con letra grande, el título
+            // baja debajo del selector en vez de estrecharse.
+            Builder(builder: (context) {
+              final grande = MediaQuery.textScalerOf(context).scale(1) > 1.3;
+              final selector = SelectorIdade(
                 cursoId: widget.cursoId,
                 language: lang,
                 onCambiar: widget.onCambiarCurso,
                 paraAula: true,
-              ),
-            ),
-            const SizedBox(height: 18),
-            Text(
-              _data(lang).toUpperCase(),
-              key: const Key('hoxe_aula_data'),
-              style: const TextStyle(
-                fontSize: 12.5,
-                fontWeight: FontWeight.w800,
-                letterSpacing: 0.8,
-                color: AppTheme.textSecondary,
-              ),
-            ),
-            const SizedBox(height: 4),
-            Semantics(
-              header: true,
-              child: Text(
-                _titulo(lang),
-                key: const Key('hoxe_aula_titulo'),
-                style: const TextStyle(
-                  fontSize: 26,
-                  fontWeight: FontWeight.w800,
-                  color: AppTheme.textPrimary,
-                  height: 1.15,
-                ),
-              ),
-            ),
+              );
+              final titulo = Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    _data(lang).toUpperCase(),
+                    key: const Key('hoxe_aula_data'),
+                    style: const TextStyle(
+                      fontSize: 12,
+                      fontWeight: FontWeight.w800,
+                      letterSpacing: 0.6,
+                      color: AppTheme.textSecondary,
+                    ),
+                  ),
+                  Semantics(
+                    header: true,
+                    child: Text(
+                      _titulo(lang),
+                      key: const Key('hoxe_aula_titulo'),
+                      style: const TextStyle(
+                        fontSize: 17,
+                        fontWeight: FontWeight.w800,
+                        color: AppTheme.textPrimary,
+                        height: 1.2,
+                      ),
+                    ),
+                  ),
+                ],
+              );
+              return grande
+                  ? Wrap(
+                      spacing: 12,
+                      runSpacing: 6,
+                      crossAxisAlignment: WrapCrossAlignment.center,
+                      children: [selector, titulo],
+                    )
+                  : Row(children: [
+                      selector,
+                      const SizedBox(width: 12),
+                      Expanded(child: titulo),
+                    ]);
+            }),
             // P11: lo primero, la lección de la semana del plan curricular,
             // la misma que ven las familias.
-            const SizedBox(height: 16),
+            const SizedBox(height: 12),
             LeccionDaSemanaCargada(
               cursoId: widget.cursoId,
               mesCalendario: _toca.dia.mesCalendario,
@@ -391,202 +409,220 @@ class _HoxeDocentesScreenState extends State<HoxeDocentesScreen> {
                 ),
               )),
             ),
-            Padding(
-              padding: const EdgeInsets.only(top: 26, bottom: 4),
-              child: Text(
-                isGl ? 'MATERIAL COMPLEMENTARIO' : 'MATERIAL COMPLEMENTARIO',
-                key: const Key('hoxe_aula_complementario'),
-                style: const TextStyle(
-                  fontSize: 13,
-                  fontWeight: FontWeight.w800,
-                  letterSpacing: 0.8,
-                  color: AppTheme.textSecondary,
-                ),
-              ),
-            ),
-            Text(
-              isGl
-                  ? 'A asemblea antiga, as palabras do banco e o plan do mes enteiro, para consultar.'
-                  : 'La asamblea antigua, las palabras del banco y el plan del mes entero, para consultar.',
-              style: const TextStyle(
-                fontSize: 14,
-                color: AppTheme.textSecondary,
-                height: 1.35,
-              ),
-            ),
-            const SizedBox(height: 10),
+            // O-20261101-1 (aprobado por Frank): debajo de la lección, solo la
+            // sesión de 45 minutos y la asamblea del día; el resto del
+            // material, plegado al final.
             if (grupo != null)
-              _TarxetaAsemblea(
-                grupo: grupo,
-                repository: widget.repository,
-                toca: _toca,
-                language: lang,
-                onComezar: () => _comezar(grupo),
-              )
-            else
-              Container(
-                key: const Key('hoxe_aula_sen_asemblea'),
-                padding: const EdgeInsets.all(18),
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(20),
-                  border: Border.all(color: AppTheme.border),
-                ),
-                child: Text(
-                  isGl
-                      ? 'Este mes non ten asemblea escrita para este grupo.'
-                      : 'Este mes no tiene asamblea escrita para este grupo.',
-                  style: const TextStyle(
-                    fontSize: 15.5,
-                    color: AppTheme.textSecondary,
-                  ),
-                ),
+              FilaPaso(
+                claveFila: const Key('paso_asemblea_do_dia'),
+                icona: Icons.groups_rounded,
+                rotulo: isGl ? 'ASEMBLEA DO DÍA' : 'ASAMBLEA DEL DÍA',
+                titulo: isGl ? 'Comezar a asemblea' : 'Comenzar la asamblea',
+                onTap: () => _comezar(grupo),
               ),
-            if (plan != null && curso != null && programa != null) ...[
-              const SizedBox(height: 14),
-              Card(
-                key: const Key('hoxe_aula_palabras'),
-                margin: EdgeInsets.zero,
-                child: Padding(
-                  padding: const EdgeInsets.fromLTRB(16, 16, 16, 8),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.stretch,
-                    children: [
-                      // M3.10 (D1): el núcleo del mes delante; las cinco
-                      // del día, plegadas debajo, para que la tarjeta no
-                      // crezca. Sin núcleo leído, la tarjeta de siempre.
-                      if (nucleo.isNotEmpty) ...[
-                        NucleoDeHoxe(
-                          nucleo: nucleo,
-                          language: lang,
-                          audioService: widget.audioService,
-                        ),
-                        const SizedBox(height: 10),
-                        PalabrasDoDiaPlegadas(
-                          titulo: tituloPalabras,
-                          language: lang,
-                          child: PalabrasDoDia(
-                            plan: plan,
-                            modeloDoDia: curso.modelo.dia(_toca.dia.dia),
-                            semana: curso.semana(
-                                _toca.dia.mesCalendario, _toca.dia.semana),
-                            language: lang,
-                            audioService: widget.audioService,
-                            detalle: false,
-                          ),
-                        ),
-                      ] else ...[
-                        Text(
-                          tituloPalabras,
-                          style: const TextStyle(
-                            fontSize: 12.5,
-                            fontWeight: FontWeight.w800,
-                            letterSpacing: 0.8,
-                            color: AppTheme.textSecondary,
-                          ),
-                        ),
-                        const SizedBox(height: 6),
-                        PalabrasDoDia(
-                          plan: plan,
-                          modeloDoDia: curso.modelo.dia(_toca.dia.dia),
-                          semana: curso.semana(
-                              _toca.dia.mesCalendario, _toca.dia.semana),
-                          language: lang,
-                          audioService: widget.audioService,
-                          detalle: false,
-                        ),
-                      ],
-                      Align(
-                        alignment: Alignment.centerLeft,
-                        child: TextButton(
-                          key: const Key('boton_ver_palabras_do_curso'),
-                          onPressed: () => _verPalabras(programa),
-                          child: Text(isGl
-                              ? 'Ver as ${formatarMiles(programa.totalPalabras)} palabras'
-                              : 'Ver las ${formatarMiles(programa.totalPalabras)} palabras'),
+            const SizedBox(height: 18),
+            Material(
+              color: Colors.white,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(AppTheme.radiusCard),
+                side: const BorderSide(color: AppTheme.border),
+              ),
+              clipBehavior: Clip.antiAlias,
+              child: ExpansionTile(
+                key: const Key('hoxe_complementario'),
+                title: Text(
+                  isGl ? 'Máis material do día' : 'Más material del día',
+                  key: const Key('hoxe_aula_complementario'),
+                  style: const TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.w700,
+                      color: AppTheme.textPrimary),
+                ),
+                subtitle: Text(
+                  isGl
+                      ? 'A asemblea antiga, as palabras do banco e o plan do mes, para consultar.'
+                      : 'La asamblea antigua, las palabras del banco y el plan del mes, para consultar.',
+                  style: const TextStyle(
+                      fontSize: 14, color: AppTheme.textSecondary),
+                ),
+                childrenPadding: const EdgeInsets.fromLTRB(12, 0, 12, 12),
+                expandedCrossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  if (grupo != null)
+                    _TarxetaAsemblea(
+                      grupo: grupo,
+                      repository: widget.repository,
+                      toca: _toca,
+                      language: lang,
+                      onComezar: () => _comezar(grupo),
+                    )
+                  else
+                    Container(
+                      key: const Key('hoxe_aula_sen_asemblea'),
+                      padding: const EdgeInsets.all(18),
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(20),
+                        border: Border.all(color: AppTheme.border),
+                      ),
+                      child: Text(
+                        isGl
+                            ? 'Este mes non ten asemblea escrita para este grupo.'
+                            : 'Este mes no tiene asamblea escrita para este grupo.',
+                        style: const TextStyle(
+                          fontSize: 15.5,
+                          color: AppTheme.textSecondary,
                         ),
                       ),
-                    ],
-                  ),
-                ),
-              ),
-            ],
-            const SizedBox(height: 14),
-            TarxetaCurricular(
-              cursoId: widget.cursoId,
-              mesCalendario: _toca.dia.mesCalendario,
-              language: lang,
-              audioService: widget.audioService,
-              conAccesos: false,
-            ),
-            PasosDoMes(
-              cursoId: widget.cursoId,
-              mesCalendario: _toca.dia.mesCalendario,
-              semana: _toca.dia.semana,
-              language: lang,
-              audioService: widget.audioService,
-            ),
-            if (_conto case final conto?) ...[
-              const SizedBox(height: 6),
-              _FilaRecurso(
-                clave: 'hoxe_aula_conto',
-                icona: Icons.auto_stories_rounded,
-                rotulo: isGl
-                    ? 'CONTO LONGO DA SEMANA'
-                    : 'CUENTO LARGO DE LA SEMANA',
-                titulo: conto.titulo.resolve(lang),
-                onTap: () => _abrirConto(conto),
-              ),
-            ],
-            if (_dinamica case final d?) ...[
-              const SizedBox(height: 10),
-              _FilaRecurso(
-                clave: 'hoxe_aula_dinamica',
-                icona: Icons.groups_rounded,
-                rotulo: 'DINÁMICA · ${d.duracionMinutos} MIN',
-                titulo: d.titulo.resolve(lang),
-                onTap: () => Navigator.of(context).push(
-                  RutaLua(
-                    de: context,
-                    builder: (_) => DinamicasScreen(
-                      repository: widget.repository,
-                      audioService: widget.audioService,
-                      initialLanguage: lang,
-                      onLanguageChanged: widget.onLanguageChanged,
                     ),
+                  if (plan != null && curso != null && programa != null) ...[
+                    const SizedBox(height: 14),
+                    Card(
+                      key: const Key('hoxe_aula_palabras'),
+                      margin: EdgeInsets.zero,
+                      child: Padding(
+                        padding: const EdgeInsets.fromLTRB(16, 16, 16, 8),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.stretch,
+                          children: [
+                            // M3.10 (D1): el núcleo del mes delante; las cinco
+                            // del día, plegadas debajo, para que la tarjeta no
+                            // crezca. Sin núcleo leído, la tarjeta de siempre.
+                            if (nucleo.isNotEmpty) ...[
+                              NucleoDeHoxe(
+                                nucleo: nucleo,
+                                language: lang,
+                                audioService: widget.audioService,
+                              ),
+                              const SizedBox(height: 10),
+                              PalabrasDoDiaPlegadas(
+                                titulo: tituloPalabras,
+                                language: lang,
+                                child: PalabrasDoDia(
+                                  plan: plan,
+                                  modeloDoDia: curso.modelo.dia(_toca.dia.dia),
+                                  semana: curso.semana(_toca.dia.mesCalendario,
+                                      _toca.dia.semana),
+                                  language: lang,
+                                  audioService: widget.audioService,
+                                  detalle: false,
+                                ),
+                              ),
+                            ] else ...[
+                              Text(
+                                tituloPalabras,
+                                style: const TextStyle(
+                                  fontSize: 12.5,
+                                  fontWeight: FontWeight.w800,
+                                  letterSpacing: 0.8,
+                                  color: AppTheme.textSecondary,
+                                ),
+                              ),
+                              const SizedBox(height: 6),
+                              PalabrasDoDia(
+                                plan: plan,
+                                modeloDoDia: curso.modelo.dia(_toca.dia.dia),
+                                semana: curso.semana(
+                                    _toca.dia.mesCalendario, _toca.dia.semana),
+                                language: lang,
+                                audioService: widget.audioService,
+                                detalle: false,
+                              ),
+                            ],
+                            Align(
+                              alignment: Alignment.centerLeft,
+                              child: TextButton(
+                                key: const Key('boton_ver_palabras_do_curso'),
+                                onPressed: () => _verPalabras(programa),
+                                child: Text(isGl
+                                    ? 'Ver as ${formatarMiles(programa.totalPalabras)} palabras'
+                                    : 'Ver las ${formatarMiles(programa.totalPalabras)} palabras'),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ],
+                  const SizedBox(height: 14),
+                  TarxetaCurricular(
+                    cursoId: widget.cursoId,
+                    mesCalendario: _toca.dia.mesCalendario,
+                    language: lang,
+                    audioService: widget.audioService,
+                    conAccesos: false,
                   ),
-                ),
+                  PasosDoMes(
+                    cursoId: widget.cursoId,
+                    mesCalendario: _toca.dia.mesCalendario,
+                    semana: _toca.dia.semana,
+                    language: lang,
+                    audioService: widget.audioService,
+                  ),
+                  if (_conto case final conto?) ...[
+                    const SizedBox(height: 6),
+                    _FilaRecurso(
+                      clave: 'hoxe_aula_conto',
+                      icona: Icons.auto_stories_rounded,
+                      rotulo: isGl
+                          ? 'CONTO LONGO DA SEMANA'
+                          : 'CUENTO LARGO DE LA SEMANA',
+                      titulo: conto.titulo.resolve(lang),
+                      onTap: () => _abrirConto(conto),
+                    ),
+                  ],
+                  if (_dinamica case final d?) ...[
+                    const SizedBox(height: 10),
+                    _FilaRecurso(
+                      clave: 'hoxe_aula_dinamica',
+                      icona: Icons.groups_rounded,
+                      rotulo: 'DINÁMICA · ${d.duracionMinutos} MIN',
+                      titulo: d.titulo.resolve(lang),
+                      onTap: () => Navigator.of(context).push(
+                        RutaLua(
+                          de: context,
+                          builder: (_) => DinamicasScreen(
+                            repository: widget.repository,
+                            audioService: widget.audioService,
+                            initialLanguage: lang,
+                            onLanguageChanged: widget.onLanguageChanged,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ],
+                  if (_steam case final steam?) ...[
+                    const SizedBox(height: 10),
+                    FilaSteamDoDia(
+                      unidade: steam,
+                      audiencia: SteamAudiencia.aula,
+                      language: lang,
+                      onTap: () => _abrirSteam(steam),
+                    ),
+                  ] else if (_steamDoCurso case final steam?) ...[
+                    const SizedBox(height: 10),
+                    _FilaRecurso(
+                      clave: 'hoxe_aula_ciencia',
+                      icona: Icons.science_rounded,
+                      rotulo: isGl
+                          ? 'CIENCIA COAS MANS · STEAM'
+                          : 'CIENCIA CON LAS MANOS · STEAM',
+                      titulo: _candoToca(steam.diaNoCalendario!, lang),
+                      onTap: () => _abrirSteam(steam),
+                    ),
+                  ],
+                  if (widget.calendario case final cal?) ...[
+                    const SizedBox(height: 18),
+                    ListaDePracticaCard(
+                      store: cal,
+                      perfil: 'aula',
+                      dia: widget.agora ?? DateTime.now(),
+                      language: lang,
+                    ),
+                  ],
+                ],
               ),
-            ],
-            if (_steam case final steam?) ...[
-              const SizedBox(height: 10),
-              FilaSteamDoDia(
-                unidade: steam,
-                audiencia: SteamAudiencia.aula,
-                language: lang,
-                onTap: () => _abrirSteam(steam),
-              ),
-            ] else if (_steamDoCurso case final steam?) ...[
-              const SizedBox(height: 10),
-              _FilaRecurso(
-                clave: 'hoxe_aula_ciencia',
-                icona: Icons.science_rounded,
-                rotulo: isGl
-                    ? 'CIENCIA COAS MANS · STEAM'
-                    : 'CIENCIA CON LAS MANOS · STEAM',
-                titulo: _candoToca(steam.diaNoCalendario!, lang),
-                onTap: () => _abrirSteam(steam),
-              ),
-            ],
-            if (widget.calendario case final cal?) ...[
-              const SizedBox(height: 18),
-              ListaDePracticaCard(
-                store: cal,
-                perfil: 'aula',
-                dia: widget.agora ?? DateTime.now(),
-                language: lang,
-              ),
-            ],
+            ),
           ],
         ),
       ),

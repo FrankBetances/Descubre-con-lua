@@ -91,6 +91,8 @@ void main() {
           reason: 'A lección queda baixo a barra de pestanas');
 
       // La asamblea sigue, en el material complementario.
+      // O-20261101-1: el material del día va plegado al final.
+      await Pasarela.abrirMaisParaCasa(tester);
       final boton = find.byKey(const Key('boton_asemblea_de_hoxe'));
       await tester.scrollUntilVisible(boton, 300,
           scrollable: find.byType(Scrollable).first);
@@ -122,6 +124,8 @@ void main() {
     testWidgets('as fases da tarxeta son as que abre o botón (${lang.code})',
         (tester) async {
       await abrir(tester, portal(lang, venres));
+      // O-20261101-1: el material del día va plegado al final.
+      await Pasarela.abrirMaisParaCasa(tester);
       final boton = find.byKey(const Key('boton_asemblea_de_hoxe'));
       await tester.scrollUntilVisible(boton, 300,
           scrollable: find.byType(Scrollable).first);
@@ -152,6 +156,8 @@ void main() {
     testWidgets('a ciencia: cando toca, os días que non toca (${lang.code})',
         (tester) async {
       await abrir(tester, portal(lang, venres));
+      // O-20261101-1: el material del día va plegado al final.
+      await Pasarela.abrirMaisParaCasa(tester);
       final fila = find.byKey(const ValueKey('hoxe_aula_ciencia'));
       await tester.dragUntilVisible(
           fila, find.byKey(const Key('hoxe_docentes')), const Offset(0, -200));
@@ -189,6 +195,16 @@ void main() {
       await tester.tap(find.byKey(const ValueKey('idade_curso_2_3')));
       await Pasarela.asentar(tester);
       await tester.tap(find.byKey(const Key('pestana_calendario')));
+      // O-20261101-1: el calendario de lecciones; el de antes, dentro.
+      await esperarA(tester, find.byKey(const Key('calendario_leccions')));
+      final completo = find.byKey(const Key('calendario_completo'));
+      await tester.scrollUntilVisible(completo, 200,
+          scrollable: find
+              .descendant(
+                  of: find.byKey(const Key('calendario_leccions')),
+                  matching: find.byType(Scrollable))
+              .first);
+      await tester.tap(completo);
       await esperarA(tester, find.byKey(const Key('paginas_meses')));
       final calendario =
           tester.widget<CalendarioScreen>(find.byType(CalendarioScreen));

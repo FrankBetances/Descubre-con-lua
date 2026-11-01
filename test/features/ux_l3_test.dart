@@ -107,6 +107,26 @@ void main() {
           findsOneWidget);
     });
 
+    testWidgets('a semana enteira, sen baixar, a 412×915 (${lang.code})',
+        (tester) async {
+      // O-20261101-1: la franja, lo de hoy, la frase y lo nuevo, a la vista.
+      await abrirPortal(tester, lang, agora: venres);
+      tester.view.physicalSize = const Size(412, 915);
+      await Pasarela.asentar(tester);
+      final barra = tester.getRect(find.byType(NavigationBar)).top;
+      for (final k in [
+        'leccion_ruta_gramatica',
+        'leccion_steam',
+        'leccion_dias',
+        'leccion_gramatica',
+        'leccion_novas',
+      ]) {
+        expect(
+            tester.getRect(find.byKey(Key(k))).bottom, lessThanOrEqualTo(barra),
+            reason: k);
+      }
+    });
+
     testWidgets('«Máis para casa» vai pregado, ao final (${lang.code})',
         (tester) async {
       await abrirPortal(tester, lang, agora: venres);

@@ -248,8 +248,10 @@ Future<void> comprobar(
   final nucleo = repo.nucleoSync(repo.unidadeDoMesSync(curso, 10)!);
   expect(nucleo, isNotEmpty);
 
+  // O-20261101-1: en casa y en el aula, lo complementario va plegado.
   if (find.byKey(const Key('hoxe_complementario')).evaluate().isNotEmpty ||
-      find.byKey(const Key('hoxe_familias')).evaluate().isNotEmpty) {
+      find.byKey(const Key('hoxe_familias')).evaluate().isNotEmpty ||
+      find.byKey(const Key('hoxe_docentes')).evaluate().isNotEmpty) {
     await Pasarela.abrirMaisParaCasa(tester);
   }
   await tester.dragUntilVisible(tarxeta, lista, const Offset(0, -150));

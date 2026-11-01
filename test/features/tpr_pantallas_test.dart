@@ -257,6 +257,8 @@ void main() {
             );
 
         Future<void> baixarAsPalabras(WidgetTester tester) async {
+          // O-20261101-1: el material del día va plegado al final.
+          await Pasarela.abrirMaisParaCasa(tester);
           await tester.dragUntilVisible(palabras, lista, const Offset(0, -150));
           await tester.pumpAndSettle();
         }
@@ -574,6 +576,7 @@ void main() {
       const hoxe = (mesCalendario: 9, semana: 4, dia: 3);
       final lista = find.byKey(const Key('hoxe_docentes'));
       final palabras = find.byKey(const Key('hoxe_aula_palabras'));
+      await Pasarela.abrirMaisParaCasa(tester);
       await tester.dragUntilVisible(palabras, lista, const Offset(0, -150));
       await tester.pumpAndSettle();
       await abrirPliegue(tester, palabras);
@@ -615,6 +618,7 @@ void main() {
         await tester.pumpAndSettle();
         await tester.tap(find.byKey(ValueKey('idade_$cursoId')));
         await tester.pumpAndSettle();
+        await Pasarela.abrirMaisParaCasa(tester);
         await tester.dragUntilVisible(palabras, lista, const Offset(0, -150));
         await tester.pumpAndSettle();
         await abrirPliegue(tester, palabras);

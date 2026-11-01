@@ -3531,9 +3531,9 @@
         "es": "Esta semana, que lo use solo, jugando, sin que se lo pidas."
        },
        "fraseGramatica": {
-        "en": "Two stones.",
-        "gl": "Dúas pedras.",
-        "es": "Dos piedras."
+        "en": "Two big stones.",
+        "gl": "Dúas pedras grandes.",
+        "es": "Dos piedras grandes."
        },
        "comoFalar": {
         "clave": "recast",
@@ -3796,12 +3796,12 @@
           "es": "Miércoles"
          },
          "texto": {
-          "gl": "STEAM «A folla baila, a pedra cae»: mentres o facedes, di ti a frase da unidade 2: «Two stones.».",
-          "es": "STEAM «La hoja baila, la piedra cae»: mientras lo hacéis, di tú la frase de la unidad 2: «Two stones.»."
+          "gl": "STEAM «A folla baila, a pedra cae»: mentres o facedes, di ti a frase da unidade 2: «Two big stones.».",
+          "es": "STEAM «La hoja baila, la piedra cae»: mientras lo hacéis, di tú la frase de la unidad 2: «Two big stones.»."
          },
-         "en": "Two stones.",
-         "gl": "Dúas pedras.",
-         "es": "Dos piedras."
+         "en": "Two big stones.",
+         "gl": "Dúas pedras grandes.",
+         "es": "Dos piedras grandes."
         },
         {
          "dia": {
@@ -15728,9 +15728,9 @@
         "es": "Esta semana, que lo diga contigo, en una rutina o en una canción."
        },
        "fraseGramatica": {
-        "en": "They were in two piles.",
-        "gl": "Estaban en dous montóns.",
-        "es": "Estaban en dos montones."
+        "en": "The stones were in two piles.",
+        "gl": "As pedras estaban en dous montóns.",
+        "es": "Las piedras estaban en dos montones."
        },
        "comoFalar": {
         "clave": "expansion",
@@ -15977,12 +15977,12 @@
           "es": "Miércoles"
          },
          "texto": {
-          "gl": "STEAM «Grande aquí, pequeno alí»: mentres o facedes, di ti a frase da unidade 12: «They were in two piles.».",
-          "es": "STEAM «Grande aquí, pequeño allí»: mientras lo hacéis, di tú la frase de la unidad 12: «They were in two piles.»."
+          "gl": "STEAM «Grande aquí, pequeno alí»: mentres o facedes, di ti a frase da unidade 12: «The stones were in two piles.».",
+          "es": "STEAM «Grande aquí, pequeño allí»: mientras lo hacéis, di tú la frase de la unidad 12: «The stones were in two piles.»."
          },
-         "en": "They were in two piles.",
-         "gl": "Estaban en dous montóns.",
-         "es": "Estaban en dos montones."
+         "en": "The stones were in two piles.",
+         "gl": "As pedras estaban en dous montóns.",
+         "es": "Las piedras estaban en dos montones."
         },
         {
          "dia": {
@@ -16019,9 +16019,9 @@
         "es": "Esta semana, que lo use solo, jugando, sin que se lo pidas."
        },
        "fraseGramatica": {
-        "en": "Was it the biggest?",
-        "gl": "Era a máis grande?",
-        "es": "¿Era la más grande?"
+        "en": "Was the stone the biggest?",
+        "gl": "Era a pedra a máis grande?",
+        "es": "¿Era la piedra la más grande?"
        },
        "comoFalar": {
         "clave": "recast",
@@ -16296,12 +16296,12 @@
           "es": "Miércoles"
          },
          "texto": {
-          "gl": "STEAM «Grande aquí, pequeno alí»: mentres o facedes, di ti a frase da unidade 12: «Was it the biggest?».",
-          "es": "STEAM «Grande aquí, pequeño allí»: mientras lo hacéis, di tú la frase de la unidad 12: «Was it the biggest?»."
+          "gl": "STEAM «Grande aquí, pequeno alí»: mentres o facedes, di ti a frase da unidade 12: «Was the stone the biggest?».",
+          "es": "STEAM «Grande aquí, pequeño allí»: mientras lo hacéis, di tú la frase de la unidad 12: «Was the stone the biggest?»."
          },
-         "en": "Was it the biggest?",
-         "gl": "Era a máis grande?",
-         "es": "¿Era la más grande?"
+         "en": "Was the stone the biggest?",
+         "gl": "Era a pedra a máis grande?",
+         "es": "¿Era la piedra la más grande?"
         },
         {
          "dia": {
@@ -19760,9 +19760,9 @@
         "es": "Esta semana, que lo use solo, jugando, sin que se lo pidas."
        },
        "fraseGramatica": {
-        "en": "Show it to me!",
-        "gl": "Ensínama!",
-        "es": "¡Enséñamela!"
+        "en": "Show me the star!",
+        "gl": "Ensíname a estrela!",
+        "es": "¡Enséñame la estrella!"
        },
        "comoFalar": {
         "clave": "recast",
@@ -20037,12 +20037,12 @@
           "es": "Miércoles"
          },
          "texto": {
-          "gl": "STEAM «A estrela da mazá»: mentres o facedes, di ti a frase da unidade 15: «Show it to me!».",
-          "es": "STEAM «La estrella de la manzana»: mientras lo hacéis, di tú la frase de la unidad 15: «Show it to me!»."
+          "gl": "STEAM «A estrela da mazá»: mentres o facedes, di ti a frase da unidade 15: «Show me the star!».",
+          "es": "STEAM «La estrella de la manzana»: mientras lo hacéis, di tú la frase de la unidad 15: «Show me the star!»."
          },
-         "en": "Show it to me!",
-         "gl": "Ensínama!",
-         "es": "¡Enséñamela!"
+         "en": "Show me the star!",
+         "gl": "Ensíname a estrela!",
+         "es": "¡Enséñame la estrella!"
         },
         {
          "dia": {
@@ -27979,9 +27979,9 @@
         "es": "Esta semana, que lo haga sin que le hagas el gesto."
        },
        "fraseGramatica": {
-        "en": "Yesterday it went slowly.",
-        "gl": "Onte foi amodo.",
-        "es": "Ayer fue despacio."
+        "en": "Yesterday the train went slowly.",
+        "gl": "Onte o tren foi amodo.",
+        "es": "Ayer el tren fue despacio."
        },
        "comoFalar": {
         "clave": "espera",
@@ -28192,12 +28192,12 @@
           "es": "Miércoles"
          },
          "texto": {
-          "gl": "STEAM «O tren baixa a costa»: mentres o facedes, di ti a frase da unidade 22: «Yesterday it went slowly.».",
-          "es": "STEAM «El tren baja la cuesta»: mientras lo hacéis, di tú la frase de la unidad 22: «Yesterday it went slowly.»."
+          "gl": "STEAM «O tren baixa a costa»: mentres o facedes, di ti a frase da unidade 22: «Yesterday the train went slowly.».",
+          "es": "STEAM «El tren baja la cuesta»: mientras lo hacéis, di tú la frase de la unidad 22: «Yesterday the train went slowly.»."
          },
-         "en": "Yesterday it went slowly.",
-         "gl": "Onte foi amodo.",
-         "es": "Ayer fue despacio."
+         "en": "Yesterday the train went slowly.",
+         "gl": "Onte o tren foi amodo.",
+         "es": "Ayer el tren fue despacio."
         },
         {
          "dia": {
@@ -29842,9 +29842,9 @@
         "es": "Esta semana, que lo use solo, jugando, sin que se lo pidas."
        },
        "fraseGramatica": {
-        "en": "Have you been waiting?",
-        "gl": "Levas tempo agardando?",
-        "es": "¿Llevas rato esperando?"
+        "en": "Have you been holding the cup?",
+        "gl": "Levas tempo suxeitando o vaso?",
+        "es": "¿Llevas rato sujetando el vaso?"
        },
        "comoFalar": {
         "clave": "recast",
@@ -30107,12 +30107,12 @@
           "es": "Miércoles"
          },
          "texto": {
-          "gl": "STEAM «O teléfono de vasos»: mentres o facedes, di ti a frase da unidade 23: «Have you been waiting?».",
-          "es": "STEAM «El teléfono de vasos»: mientras lo hacéis, di tú la frase de la unidad 23: «Have you been waiting?»."
+          "gl": "STEAM «O teléfono de vasos»: mentres o facedes, di ti a frase da unidade 23: «Have you been holding the cup?».",
+          "es": "STEAM «El teléfono de vasos»: mientras lo hacéis, di tú la frase de la unidad 23: «Have you been holding the cup?»."
          },
-         "en": "Have you been waiting?",
-         "gl": "Levas tempo agardando?",
-         "es": "¿Llevas rato esperando?"
+         "en": "Have you been holding the cup?",
+         "gl": "Levas tempo suxeitando o vaso?",
+         "es": "¿Llevas rato sujetando el vaso?"
         },
         {
          "dia": {
@@ -31141,9 +31141,9 @@
         "es": "Esta semana, que lo use solo, jugando, sin que se lo pidas."
        },
        "fraseGramatica": {
-        "en": "Had you seen it before?",
-        "gl": "Vírala antes?",
-        "es": "¿La habías visto antes?"
+        "en": "Had you seen the shadow before?",
+        "gl": "Viras a sombra antes?",
+        "es": "¿Habías visto la sombra antes?"
        },
        "comoFalar": {
         "clave": "recast",
@@ -31414,12 +31414,12 @@
           "es": "Miércoles"
          },
          "texto": {
-          "gl": "STEAM «A sombra da torre»: mentres o facedes, di ti a frase da unidade 24: «Had you seen it before?».",
-          "es": "STEAM «La sombra de la torre»: mientras lo hacéis, di tú la frase de la unidad 24: «Had you seen it before?»."
+          "gl": "STEAM «A sombra da torre»: mentres o facedes, di ti a frase da unidade 24: «Had you seen the shadow before?».",
+          "es": "STEAM «La sombra de la torre»: mientras lo hacéis, di tú la frase de la unidad 24: «Had you seen the shadow before?»."
          },
-         "en": "Had you seen it before?",
-         "gl": "Vírala antes?",
-         "es": "¿La habías visto antes?"
+         "en": "Had you seen the shadow before?",
+         "gl": "Viras a sombra antes?",
+         "es": "¿Habías visto la sombra antes?"
         },
         {
          "dia": {
@@ -32099,9 +32099,9 @@
         "es": "Esta semana, que lo diga contigo, en una rutina o en una canción."
        },
        "fraseGramatica": {
-        "en": "Stirring could help.",
-        "gl": "Remexer podería axudar.",
-        "es": "Remover podría ayudar."
+        "en": "The spoon could help.",
+        "gl": "A culler podería axudar.",
+        "es": "La cuchara podría ayudar."
        },
        "comoFalar": {
         "clave": "expansion",
@@ -32350,12 +32350,12 @@
           "es": "Miércoles"
          },
          "texto": {
-          "gl": "STEAM «O xeo no zume»: mentres o facedes, di ti a frase da unidade 25: «Stirring could help.».",
-          "es": "STEAM «El hielo en el zumo»: mientras lo hacéis, di tú la frase de la unidad 25: «Stirring could help.»."
+          "gl": "STEAM «O xeo no zume»: mentres o facedes, di ti a frase da unidade 25: «The spoon could help.».",
+          "es": "STEAM «El hielo en el zumo»: mientras lo hacéis, di tú la frase de la unidad 25: «The spoon could help.»."
          },
-         "en": "Stirring could help.",
-         "gl": "Remexer podería axudar.",
-         "es": "Remover podría ayudar."
+         "en": "The spoon could help.",
+         "gl": "A culler podería axudar.",
+         "es": "La cuchara podría ayudar."
         },
         {
          "dia": {
@@ -32768,9 +32768,9 @@
         "es": "Esta semana basta con que lo entienda con tu gesto."
        },
        "fraseGramatica": {
-        "en": "There might be more plates.",
-        "gl": "Pode que haxa máis pratos.",
-        "es": "Puede que haya más platos."
+        "en": "There might be more spoons.",
+        "gl": "Pode que haxa máis culleres.",
+        "es": "Puede que haya más cucharas."
        },
        "comoFalar": {
         "clave": "parentese",
@@ -33029,12 +33029,12 @@
           "es": "Miércoles"
          },
          "texto": {
-          "gl": "STEAM «Un prato para cada un»: mentres o facedes, di ti a frase da unidade 25: «There might be more plates.».",
-          "es": "STEAM «Un plato para cada uno»: mientras lo hacéis, di tú la frase de la unidad 25: «There might be more plates.»."
+          "gl": "STEAM «Un prato para cada un»: mentres o facedes, di ti a frase da unidade 25: «There might be more spoons.».",
+          "es": "STEAM «Un plato para cada uno»: mientras lo hacéis, di tú la frase de la unidad 25: «There might be more spoons.»."
          },
-         "en": "There might be more plates.",
-         "gl": "Pode que haxa máis pratos.",
-         "es": "Puede que haya más platos."
+         "en": "There might be more spoons.",
+         "gl": "Pode que haxa máis culleres.",
+         "es": "Puede que haya más cucharas."
         },
         {
          "dia": {
@@ -36061,9 +36061,9 @@
         "es": "Esta semana, que lo use solo, jugando, sin que se lo pidas."
        },
        "fraseGramatica": {
-        "en": "What would happen if we tapped harder?",
-        "gl": "Que pasaría se petásemos máis forte?",
-        "es": "¿Qué pasaría si golpeáramos más fuerte?"
+        "en": "What would happen if we hit the glass harder?",
+        "gl": "Que pasaría se petásemos o vaso máis forte?",
+        "es": "¿Qué pasaría si golpeáramos el vaso más fuerte?"
        },
        "comoFalar": {
         "clave": "recast",
@@ -36322,12 +36322,12 @@
           "es": "Miércoles"
          },
          "texto": {
-          "gl": "STEAM «A música dos vasos»: mentres o facedes, di ti a frase da unidade 27: «What would happen if we tapped harder?».",
-          "es": "STEAM «La música de los vasos»: mientras lo hacéis, di tú la frase de la unidad 27: «What would happen if we tapped harder?»."
+          "gl": "STEAM «A música dos vasos»: mentres o facedes, di ti a frase da unidade 27: «What would happen if we hit the glass harder?».",
+          "es": "STEAM «La música de los vasos»: mientras lo hacéis, di tú la frase de la unidad 27: «What would happen if we hit the glass harder?»."
          },
-         "en": "What would happen if we tapped harder?",
-         "gl": "Que pasaría se petásemos máis forte?",
-         "es": "¿Qué pasaría si golpeáramos más fuerte?"
+         "en": "What would happen if we hit the glass harder?",
+         "gl": "Que pasaría se petásemos o vaso máis forte?",
+         "es": "¿Qué pasaría si golpeáramos el vaso más fuerte?"
         },
         {
          "dia": {
@@ -37284,9 +37284,9 @@
         "es": "Esta semana, que lo use solo, jugando, sin que se lo pidas."
        },
        "fraseGramatica": {
-        "en": "The faces were made by us!",
-        "gl": "As caras fixémolas nós!",
-        "es": "¡Las caras las hicimos nosotros!"
+        "en": "The faces in the spoon were made by us!",
+        "gl": "As caras da culler fixémolas nós!",
+        "es": "¡Las caras de la cuchara las hicimos nosotros!"
        },
        "comoFalar": {
         "clave": "recast",
@@ -37561,12 +37561,12 @@
           "es": "Miércoles"
          },
          "texto": {
-          "gl": "STEAM «A cara na culler»: mentres o facedes, di ti a frase da unidade 28: «The faces were made by us!».",
-          "es": "STEAM «La cara en la cuchara»: mientras lo hacéis, di tú la frase de la unidad 28: «The faces were made by us!»."
+          "gl": "STEAM «A cara na culler»: mentres o facedes, di ti a frase da unidade 28: «The faces in the spoon were made by us!».",
+          "es": "STEAM «La cara en la cuchara»: mientras lo hacéis, di tú la frase de la unidad 28: «The faces in the spoon were made by us!»."
          },
-         "en": "The faces were made by us!",
-         "gl": "As caras fixémolas nós!",
-         "es": "¡Las caras las hicimos nosotros!"
+         "en": "The faces in the spoon were made by us!",
+         "gl": "As caras da culler fixémolas nós!",
+         "es": "¡Las caras de la cuchara las hicimos nosotros!"
         },
         {
          "dia": {
@@ -38045,8 +38045,8 @@
           "es": "Viernes"
          },
          "texto": {
-          "gl": "Lede o conto da semana, «Antía e a voz que non saía»: nel saen «Team», «Rule», «Classroom job».",
-          "es": "Leed el cuento de la semana, «Antía y la voz que no salía»: en él salen «Team», «Rule», «Classroom job»."
+          "gl": "Lede o conto da semana, «Antía e a voz que non saía»: nel saen «Backpack», «Bell», «Bear».",
+          "es": "Leed el cuento de la semana, «Antía y la voz que no salía»: en él salen «Backpack», «Bell», «Bear»."
          }
         }
        ]
@@ -38308,8 +38308,8 @@
           "es": "Viernes"
          },
          "texto": {
-          "gl": "Lede o conto da semana, «Xurxo e a ponte»: nel saen «Construction site», «Hard hat», «Wooden plank».",
-          "es": "Leed el cuento de la semana, «Xurxo y el puente»: en él salen «Construction site», «Hard hat», «Wooden plank»."
+          "gl": "Lede o conto da semana, «Xurxo e a ponte»: nel saen «School», «Heavy bag», «Sleepy».",
+          "es": "Leed el cuento de la semana, «Xurxo y el puente»: en él salen «School», «Heavy bag», «Sleepy»."
          }
         }
        ]
@@ -38623,8 +38623,8 @@
           "es": "Viernes"
          },
          "texto": {
-          "gl": "Lede o conto da semana, «Nela e os xermes que non se ven»: nel saen «Lunch time», «Queue up», «Wash your hands before lunch».",
-          "es": "Leed el cuento de la semana, «Nela y los gérmenes que no se ven»: en él salen «Lunch time», «Queue up», «Wash your hands before lunch»."
+          "gl": "Lede o conto da semana, «Nela e os xermes que non se ven»: nel saen «Walk like a sleepy bear with your heavy bag», «The bell rings: run to the circle and freeze!», «Open your bag, take out your smock and smile».",
+          "es": "Leed el cuento de la semana, «Nela y los gérmenes que no se ven»: en él salen «Walk like a sleepy bear with your heavy bag», «The bell rings: run to the circle and freeze!», «Open your bag, take out your smock and smile»."
          }
         }
        ]
@@ -38639,9 +38639,9 @@
         "es": "Esta semana, que lo use solo, jugando, sin que se lo pidas."
        },
        "fraseGramatica": {
-        "en": "Which is the one that works?",
-        "gl": "Cal é o que funciona?",
-        "es": "¿Cuál es el que funciona?"
+        "en": "Which is the cloth that works?",
+        "gl": "Cal é o pano que funciona?",
+        "es": "¿Cuál es el paño que funciona?"
        },
        "comoFalar": {
         "clave": "recast",
@@ -38908,12 +38908,12 @@
           "es": "Miércoles"
          },
          "texto": {
-          "gl": "STEAM «Que venda absorbe?»: mentres o facedes, di ti a frase da unidade 29: «Which is the one that works?».",
-          "es": "STEAM «¿Qué venda absorbe?»: mientras lo hacéis, di tú la frase de la unidad 29: «Which is the one that works?»."
+          "gl": "STEAM «Que venda absorbe?»: mentres o facedes, di ti a frase da unidade 29: «Which is the cloth that works?».",
+          "es": "STEAM «¿Qué venda absorbe?»: mientras lo hacéis, di tú la frase de la unidad 29: «Which is the cloth that works?»."
          },
-         "en": "Which is the one that works?",
-         "gl": "Cal é o que funciona?",
-         "es": "¿Cuál es el que funciona?"
+         "en": "Which is the cloth that works?",
+         "gl": "Cal é o pano que funciona?",
+         "es": "¿Cuál es el paño que funciona?"
         },
         {
          "dia": {
@@ -38934,8 +38934,8 @@
           "es": "Viernes"
          },
          "texto": {
-          "gl": "Lede o conto da semana, «Bruno e a respiración do oso»: nel saen «Feelings chart», «How do you feel?», «Cheerful face».",
-          "es": "Leed el cuento de la semana, «Bruno y la respiración del oso»: en él salen «Feelings chart», «How do you feel?», «Cheerful face»."
+          "gl": "Lede o conto da semana, «Bruno e a respiración do oso»: nel saen «Wait your turn, please», «Put your feet into the boots.», «hurt».",
+          "es": "Leed el cuento de la semana, «Bruno y la respiración del oso»: en él salen «Wait your turn, please», «Put your feet into the boots.», «hurt»."
          }
         }
        ]
@@ -39328,8 +39328,8 @@
           "es": "Viernes"
          },
          "texto": {
-          "gl": "Lede o conto da semana, «Uxío e o xogo de Simón di»: nel saen «Reaction», «Signal», «Command».",
-          "es": "Leed el cuento de la semana, «Uxío y el juego de Simón dice»: en él salen «Reaction», «Signal», «Command»."
+          "gl": "Lede o conto da semana, «Uxío e o xogo de Simón di»: nel saen «Squirrel», «Boar», «Climb».",
+          "es": "Leed el cuento de la semana, «Uxío y el juego de Simón dice»: en él salen «Squirrel», «Boar», «Climb»."
          }
         }
        ]
@@ -39611,8 +39611,8 @@
           "es": "Viernes"
          },
          "texto": {
-          "gl": "Lede o conto da semana, «Martín, o raposiño astuto»: nel saen «Sly», «Nimble-footed».",
-          "es": "Leed el cuento de la semana, «Martín, el zorrito astuto»: en él salen «Sly», «Nimble-footed»."
+          "gl": "Lede o conto da semana, «Martín, o raposiño astuto»: nel saen «Hide», «Sly», «Nimble-footed».",
+          "es": "Leed el cuento de la semana, «Martín, el zorrito astuto»: en él salen «Hide», «Sly», «Nimble-footed»."
          }
         }
        ]
@@ -39932,8 +39932,8 @@
           "es": "Viernes"
          },
          "texto": {
-          "gl": "Lede o conto da semana, «Pío e a postura do flamenco»: nel saen «Balance beam», «Stepping stones», «Tightrope».",
-          "es": "Leed el cuento de la semana, «Pío y la postura del flamenco»: en él salen «Balance beam», «Stepping stones», «Tightrope»."
+          "gl": "Lede o conto da semana, «Pío e a postura do flamenco»: nel saen «Hop like a squirrel and collect the chestnuts», «The wild boar is coming: FREEZE!», «Climb the oak tree and hide your nuts».",
+          "es": "Leed el cuento de la semana, «Pío y la postura del flamenco»: en él salen «Hop like a squirrel and collect the chestnuts», «The wild boar is coming: FREEZE!», «Climb the oak tree and hide your nuts»."
          }
         }
        ]
@@ -40239,8 +40239,8 @@
           "es": "Viernes"
          },
          "texto": {
-          "gl": "Lede o conto da semana, «Xiana e o xogo do eco»: nel saen «Stopwatch».",
-          "es": "Leed el cuento de la semana, «Xiana y el juego del eco»: en él salen «Stopwatch»."
+          "gl": "Lede o conto da semana, «Xiana e o xogo do eco»: nel saen «The dog is behind the tree.», «gentle», «Stopwatch».",
+          "es": "Leed el cuento de la semana, «Xiana y el juego del eco»: en él salen «The dog is behind the tree.», «gentle», «Stopwatch»."
          }
         }
        ]
@@ -40615,8 +40615,8 @@
           "es": "Viernes"
          },
          "texto": {
-          "gl": "Lede o conto da semana, «Tomé sobe ao Monte da Guía»: nel saen «Hilltop».",
-          "es": "Leed el cuento de la semana, «Tomé sube al Monte de A Guía»: en él salen «Hilltop»."
+          "gl": "Lede o conto da semana, «Tomé sobe ao Monte da Guía»: nel saen «Hedgehog», «Wait for me», «Hilltop».",
+          "es": "Leed el cuento de la semana, «Tomé sube al Monte de A Guía»: en él salen «Hedgehog», «Wait for me», «Hilltop»."
          }
         }
        ]
@@ -40884,8 +40884,8 @@
           "es": "Viernes"
          },
          "texto": {
-          "gl": "Lede o conto da semana, «Breixo e o carballo vello»: nel saen «Ancient», «Mighty», «Canopy».",
-          "es": "Leed el cuento de la semana, «Breixo y el roble viejo»: en él salen «Ancient», «Mighty», «Canopy»."
+          "gl": "Lede o conto da semana, «Breixo e o carballo vello»: nel saen «Curl into a ball», «Downhill», «Steep».",
+          "es": "Leed el cuento de la semana, «Breixo y el roble viejo»: en él salen «Curl into a ball», «Downhill», «Steep»."
          }
         }
        ]
@@ -41205,8 +41205,8 @@
           "es": "Viernes"
          },
          "texto": {
-          "gl": "Lede o conto da semana, «Nela e o hotel dos bechos»: nel saen «Magnifying glass», «Leaf litter», «Look closely».",
-          "es": "Leed el cuento de la semana, «Nela y el hotel de los bichos»: en él salen «Magnifying glass», «Leaf litter», «Look closely»."
+          "gl": "Lede o conto da semana, «Nela e o hotel dos bechos»: nel saen «Roll down the hill like a chestnut», «The hedgehog wakes up: FREEZE and curl up small!», «Pop out and dance around the fire».",
+          "es": "Leed el cuento de la semana, «Nela y el hotel de los bichos»: en él salen «Roll down the hill like a chestnut», «The hedgehog wakes up: FREEZE and curl up small!», «Pop out and dance around the fire»."
          }
         }
        ]
@@ -41512,8 +41512,8 @@
           "es": "Viernes"
          },
          "texto": {
-          "gl": "Lede o conto da semana, «Martiño e a folla máis vermella»: nel saen «Crimson leaf».",
-          "es": "Leed el cuento de la semana, «Martiño y la hoja más roja»: en él salen «Crimson leaf»."
+          "gl": "Lede o conto da semana, «Martiño e a folla máis vermella»: nel saen «First we wash, then we eat.», «Do not worry, be gentle», «Crimson leaf».",
+          "es": "Leed el cuento de la semana, «Martiño y la hoja más roja»: en él salen «First we wash, then we eat.», «Do not worry, be gentle», «Crimson leaf»."
          }
         }
        ]
@@ -41906,8 +41906,8 @@
           "es": "Viernes"
          },
          "texto": {
-          "gl": "Lede o conto da semana, «Lucía e o xeo que fuxía»: nel saen «Experiment», «Freezer», «Ice cube».",
-          "es": "Leed el cuento de la semana, «Lucía y el hielo que se escapaba»: en él salen «Experiment», «Freezer», «Ice cube»."
+          "gl": "Lede o conto da semana, «Lucía e o xeo que fuxía»: nel saen «Drum», «Night», «Winter».",
+          "es": "Leed el cuento de la semana, «Lucía y el hielo que se escapaba»: en él salen «Drum», «Night», «Winter»."
          }
         }
        ]
@@ -42179,8 +42179,8 @@
           "es": "Viernes"
          },
          "texto": {
-          "gl": "Lede o conto da semana, «Iago, Sara e a torta»: nel saen «Weigh», «Scale», «Ruler».",
-          "es": "Leed el cuento de la semana, «Iago, Sara y la tarta»: en él salen «Weigh», «Scale», «Ruler»."
+          "gl": "Lede o conto da semana, «Iago, Sara e a torta»: nel saen «Colder», «Frozen solid», «Brightest».",
+          "es": "Leed el cuento de la semana, «Iago, Sara y la tarta»: en él salen «Colder», «Frozen solid», «Brightest»."
          }
         }
        ]
@@ -42504,8 +42504,8 @@
           "es": "Viernes"
          },
          "texto": {
-          "gl": "Lede o conto da semana, «Bruno e a bufanda perdida»: nel saen «City lights», «Festive», «Multicoloured».",
-          "es": "Leed el cuento de la semana, «Bruno y la bufanda perdida»: en él salen «City lights», «Festive», «Multicoloured»."
+          "gl": "Lede o conto da semana, «Bruno e a bufanda perdida»: nel saen «Dance freely while the drum sings», «Cold winter night: curl up and do not move», «Sunlight! Stand up and stretch tall».",
+          "es": "Leed el cuento de la semana, «Bruno y la bufanda perdida»: en él salen «Dance freely while the drum sings», «Cold winter night: curl up and do not move», «Sunlight! Stand up and stretch tall»."
          }
         }
        ]
@@ -42811,8 +42811,8 @@
           "es": "Viernes"
          },
          "texto": {
-          "gl": "Lede o conto da semana, «Rosa e o abrigo vermello»: nel saen «Thank you so much!».",
-          "es": "Leed el cuento de la semana, «Rosa y el abrigo rojo»: en él salen «Thank you so much!»."
+          "gl": "Lede o conto da semana, «Rosa e o abrigo vermello»: nel saen «Thank you so much!», «I put on my boots because it is raining.», «First we check the heart, then we wrap the bandage.».",
+          "es": "Leed el cuento de la semana, «Rosa y el abrigo rojo»: en él salen «Thank you so much!», «I put on my boots because it is raining.», «First we check the heart, then we wrap the bandage.»."
          }
         }
        ]
@@ -43191,8 +43191,8 @@
           "es": "Viernes"
          },
          "texto": {
-          "gl": "Lede o conto da semana, «Xiana e o mapa do tesouro»: nel saen «Map».",
-          "es": "Leed el cuento de la semana, «Xiana y el mapa del tesoro»: en él salen «Map»."
+          "gl": "Lede o conto da semana, «Xiana e o mapa do tesouro»: nel saen «Cloud», «Shake», «Map».",
+          "es": "Leed el cuento de la semana, «Xiana y el mapa del tesoro»: en él salen «Cloud», «Shake», «Map»."
          }
         }
        ]
@@ -43440,8 +43440,8 @@
           "es": "Viernes"
          },
          "texto": {
-          "gl": "Lede o conto da semana, «Tomé e a ponte de cordas»: nel saen «Underpass».",
-          "es": "Leed el cuento de la semana, «Tomé y el puente de cuerdas»: en él salen «Underpass»."
+          "gl": "Lede o conto da semana, «Tomé e a ponte de cordas»: nel saen «Showery», «Cloudy», «Underpass».",
+          "es": "Leed el cuento de la semana, «Tomé y el puente de cuerdas»: en él salen «Showery», «Cloudy», «Underpass»."
          }
         }
        ]
@@ -43731,8 +43731,8 @@
           "es": "Viernes"
          },
          "texto": {
-          "gl": "Lede o conto da semana, «Daniela e o tren de Porto»: nel saen «Timetable», «Depart», «On time».",
-          "es": "Leed el cuento de la semana, «Daniela y el tren de Oporto»: en él salen «Timetable», «Depart», «On time»."
+          "gl": "Lede o conto da semana, «Daniela e o tren de Porto»: nel saen «Walk together like one big cloud», «The storm is here: run and hide under the umbrella!», «The sun comes back: shake the water off».",
+          "es": "Leed el cuento de la semana, «Daniela y el tren de Oporto»: en él salen «Walk together like one big cloud», «The storm is here: run and hide under the umbrella!», «The sun comes back: shake the water off»."
          }
         }
        ]
@@ -44442,8 +44442,8 @@
           "es": "Viernes"
          },
          "texto": {
-          "gl": "Lede o conto da semana, «Uxía, o rei misterioso»: nel saen «Stage».",
-          "es": "Leed el cuento de la semana, «Uxía, el rey misterioso»: en él salen «Stage»."
+          "gl": "Lede o conto da semana, «Uxía, o rei misterioso»: nel saen «Wolf», «Fox», «Stage».",
+          "es": "Leed el cuento de la semana, «Uxía, el rey misterioso»: en él salen «Wolf», «Fox», «Stage»."
          }
         }
        ]
@@ -44691,8 +44691,8 @@
           "es": "Viernes"
          },
          "texto": {
-          "gl": "Lede o conto da semana, «Martiño, a fada valente»: nel saen «Knight».",
-          "es": "Leed el cuento de la semana, «Martiño, el hada valiente»: en él salen «Knight»."
+          "gl": "Lede o conto da semana, «Martiño, a fada valente»: nel saen «Sneak», «Mysterious», «Knight».",
+          "es": "Leed el cuento de la semana, «Martiño, el hada valiente»: en él salen «Sneak», «Mysterious», «Knight»."
          }
         }
        ]
@@ -44992,8 +44992,8 @@
           "es": "Viernes"
          },
          "texto": {
-          "gl": "Lede o conto da semana, «Nela non quere perder»: nel saen «Musical chairs», «Referee», «Win».",
-          "es": "Leed el cuento de la semana, «Nela no quiere perder»: en él salen «Musical chairs», «Referee», «Win»."
+          "gl": "Lede o conto da semana, «Nela non quere perder»: nel saen «Gallop like a wild horse», «The wolf is watching: FREEZE!», «Sneak quietly like a fox in the woods».",
+          "es": "Leed el cuento de la semana, «Nela no quiere perder»: en él salen «Gallop like a wild horse», «The wolf is watching: FREEZE!», «Sneak quietly like a fox in the woods»."
          }
         }
        ]
@@ -45303,8 +45303,8 @@
           "es": "Viernes"
          },
          "texto": {
-          "gl": "Lede o conto da semana, «Bruno e Calcetín»: nel saen «Sock puppet», «Handmade», «Hello, I'm Sock!».",
-          "es": "Leed el cuento de la semana, «Bruno y Calcetín»: en él salen «Sock puppet», «Handmade», «Hello, I'm Sock!»."
+          "gl": "Lede o conto da semana, «Bruno e Calcetín»: nel saen «Whose turn is it?», «We walk across the bridge.», «coat».",
+          "es": "Leed el cuento de la semana, «Bruno y Calcetín»: en él salen «Whose turn is it?», «We walk across the bridge.», «coat»."
          }
         }
        ]
@@ -45701,8 +45701,8 @@
           "es": "Viernes"
          },
          "texto": {
-          "gl": "Lede o conto da semana, «Lois e a proba dos sabores»: nel saen «Taste test», «Flavour», «Tasting spoon».",
-          "es": "Leed el cuento de la semana, «Lois y la cata de sabores»: en él salen «Taste test», «Flavour», «Tasting spoon»."
+          "gl": "Lede o conto da semana, «Lois e a proba dos sabores»: nel saen «Bee», «Fly», «Flower».",
+          "es": "Leed el cuento de la semana, «Lois y la cata de sabores»: en él salen «Bee», «Fly», «Flower»."
          }
         }
        ]
@@ -45960,8 +45960,8 @@
           "es": "Viernes"
          },
          "texto": {
-          "gl": "Lede o conto da semana, «Lía, a máis pequena»: nel saen «Size», «Order», «Line up by size».",
-          "es": "Leed el cuento de la semana, «Lía, la más pequeña»: en él salen «Size», «Order», «Line up by size»."
+          "gl": "Lede o conto da semana, «Lía, a máis pequena»: nel saen «Red», «Sweeter», «It is raining hard».",
+          "es": "Leed el cuento de la semana, «Lía, la más pequeña»: en él salen «Red», «Sweeter», «It is raining hard»."
          }
         }
        ]
@@ -46271,8 +46271,8 @@
           "es": "Viernes"
          },
          "texto": {
-          "gl": "Lede o conto da semana, «Uxía e as árbores verdes»: nel saen «Vegetables», «Leafy green», «Broccoli».",
-          "es": "Leed el cuento de la semana, «Uxía y los árboles verdes»: en él salen «Vegetables», «Leafy green», «Broccoli»."
+          "gl": "Lede o conto da semana, «Uxía e as árbores verdes»: nel saen «Fly like a busy bee», «Find the red flower and land softly», «Sleep in the flower until the sun wakes up».",
+          "es": "Leed el cuento de la semana, «Uxía y los árboles verdes»: en él salen «Fly like a busy bee», «Find the red flower and land softly», «Sleep in the flower until the sun wakes up»."
          }
         }
        ]
@@ -46578,8 +46578,8 @@
           "es": "Viernes"
          },
          "texto": {
-          "gl": "Lede o conto da semana, «Telmo paga no mercado»: nel saen «Market stall», «Shopping list».",
-          "es": "Leed el cuento de la semana, «Telmo paga en el mercado»: en él salen «Market stall», «Shopping list»."
+          "gl": "Lede o conto da semana, «Telmo paga no mercado»: nel saen «windy», «Market stall», «Shopping list».",
+          "es": "Leed el cuento de la semana, «Telmo paga en el mercado»: en él salen «windy», «Market stall», «Shopping list»."
          }
         }
        ]
@@ -46954,8 +46954,8 @@
           "es": "Viernes"
          },
          "texto": {
-          "gl": "Lede o conto da semana, «Alba e os prismáticos»: nel saen «Seabird», «Cliff».",
-          "es": "Leed el cuento de la semana, «Alba y los prismáticos»: en él salen «Seabird», «Cliff»."
+          "gl": "Lede o conto da semana, «Alba e os prismáticos»: nel saen «Come under my umbrella», «Seabird», «Cliff».",
+          "es": "Leed el cuento de la semana, «Alba y los prismáticos»: en él salen «Come under my umbrella», «Seabird», «Cliff»."
          }
         }
        ]
@@ -47195,8 +47195,8 @@
           "es": "Viernes"
          },
          "texto": {
-          "gl": "Lede o conto da semana, «Negriño, o corvo mariño»: nel saen «Gull chick».",
-          "es": "Leed el cuento de la semana, «Negriño, el cormorán»: en él salen «Gull chick»."
+          "gl": "Lede o conto da semana, «Negriño, o corvo mariño»: nel saen «Calm», «stormy», «Gull chick».",
+          "es": "Leed el cuento de la semana, «Negriño, el cormorán»: en él salen «Calm», «stormy», «Gull chick»."
          }
         }
        ]
@@ -47488,8 +47488,8 @@
           "es": "Viernes"
          },
          "texto": {
-          "gl": "Lede o conto da semana, «Xoel e as lentes de bucear»: nel saen «Goggles», «Snorkel», «Swim underwater».",
-          "es": "Leed el cuento de la semana, «Xoel y las gafas de bucear»: en él salen «Goggles», «Snorkel», «Swim underwater»."
+          "gl": "Lede o conto da semana, «Xoel e as lentes de bucear»: nel saen «Walk calmly like a sheep in the field», «The hungry wolf wakes up: FREEZE!», «The wolf sleeps again: tiptoe away».",
+          "es": "Leed el cuento de la semana, «Xoel y las gafas de bucear»: en él salen «Walk calmly like a sheep in the field», «The hungry wolf wakes up: FREEZE!», «The wolf sleeps again: tiptoe away»."
          }
         }
        ]
@@ -47795,8 +47795,8 @@
           "es": "Viernes"
          },
          "texto": {
-          "gl": "Lede o conto da semana, «Hugo e a praia limpa»: nel saen «Litter», «Recycling bin».",
-          "es": "Leed el cuento de la semana, «Hugo y la playa limpia»: en él salen «Litter», «Recycling bin»."
+          "gl": "Lede o conto da semana, «Hugo e a praia limpa»: nel saen «Are you ready?», «Litter», «Recycling bin».",
+          "es": "Leed el cuento de la semana, «Hugo y la playa limpia»: en él salen «Are you ready?», «Litter», «Recycling bin»."
          }
         }
        ]
@@ -48203,8 +48203,8 @@
           "es": "Viernes"
          },
          "texto": {
-          "gl": "Lede o conto da semana, «Brais e o barco que se afundía»: nel saen «Tank», «Test», «Does it float or sink?».",
-          "es": "Leed el cuento de la semana, «Brais y el barco que se hundía»: en él salen «Tank», «Test», «Does it float or sink?»."
+          "gl": "Lede o conto da semana, «Brais e o barco que se afundía»: nel saen «Pull», «Help», «Whisper».",
+          "es": "Leed el cuento de la semana, «Brais y el barco que se hundía»: en él salen «Pull», «Help», «Whisper»."
          }
         }
        ]
@@ -48500,8 +48500,8 @@
           "es": "Viernes"
          },
          "texto": {
-          "gl": "Lede o conto da semana, «Sabela e a carreira de barcos»: nel saen «Paper boat race», «Water pipe», «Channel».",
-          "es": "Leed el cuento de la semana, «Sabela y la carrera de barcos»: en él salen «Paper boat race», «Water pipe», «Channel»."
+          "gl": "Lede o conto da semana, «Sabela e a carreira de barcos»: nel saen «All together», «Fair», «Sturdy».",
+          "es": "Leed el cuento de la semana, «Sabela y la carrera de barcos»: en él salen «All together», «Fair», «Sturdy»."
          }
         }
        ]
@@ -48516,9 +48516,9 @@
         "es": "Esta semana, que lo diga contigo, en una rutina o en una canción."
        },
        "fraseGramatica": {
-        "en": "We should have come earlier.",
-        "gl": "Debiamos vir antes.",
-        "es": "Deberíamos haber venido antes."
+        "en": "We should have looked at the shadow earlier.",
+        "gl": "Debiamos mirar a sombra antes.",
+        "es": "Deberíamos haber mirado la sombra antes."
        },
        "comoFalar": {
         "clave": "expansion",
@@ -48809,12 +48809,12 @@
           "es": "Miércoles"
          },
          "texto": {
-          "gl": "STEAM «A sombra e o sol»: mentres o facedes, di ti a frase da unidade 37: «We should have come earlier.».",
-          "es": "STEAM «La sombra y el sol»: mientras lo hacéis, di tú la frase de la unidad 37: «We should have come earlier.»."
+          "gl": "STEAM «A sombra e o sol»: mentres o facedes, di ti a frase da unidade 37: «We should have looked at the shadow earlier.».",
+          "es": "STEAM «La sombra y el sol»: mientras lo hacéis, di tú la frase de la unidad 37: «We should have looked at the shadow earlier.»."
          },
-         "en": "We should have come earlier.",
-         "gl": "Debiamos vir antes.",
-         "es": "Deberíamos haber venido antes."
+         "en": "We should have looked at the shadow earlier.",
+         "gl": "Debiamos mirar a sombra antes.",
+         "es": "Deberíamos haber mirado la sombra antes."
         },
         {
          "dia": {
@@ -48835,8 +48835,8 @@
           "es": "Viernes"
          },
          "texto": {
-          "gl": "Lede o conto da semana, «Antía e a pregunta da choiva»: nel saen «Evaporate».",
-          "es": "Leed el cuento de la semana, «Antía y la pregunta de la lluvia»: en él salen «Evaporate»."
+          "gl": "Lede o conto da semana, «Antía e a pregunta da choiva»: nel saen «Pull the rope together: one, two, three!», «Call your friend: come and help us!», «Whisper the secret word to your friend».",
+          "es": "Leed el cuento de la semana, «Antía y la pregunta de la lluvia»: en él salen «Pull the rope together: one, two, three!», «Call your friend: come and help us!», «Whisper the secret word to your friend»."
          }
         }
        ]
@@ -48851,9 +48851,9 @@
         "es": "Esta semana, que lo use solo, jugando, sin que se lo pidas."
        },
        "fraseGramatica": {
-        "en": "It can't have been a cloud.",
-        "gl": "Non puido ser unha nube.",
-        "es": "No puede haber sido una nube."
+        "en": "The sun can't have gone.",
+        "gl": "O sol non puido marchar.",
+        "es": "El sol no puede haberse ido."
        },
        "comoFalar": {
         "clave": "recast",
@@ -49120,12 +49120,12 @@
           "es": "Miércoles"
          },
          "texto": {
-          "gl": "STEAM «A sombra e o sol»: mentres o facedes, di ti a frase da unidade 37: «It can't have been a cloud.».",
-          "es": "STEAM «La sombra y el sol»: mientras lo hacéis, di tú la frase de la unidad 37: «It can't have been a cloud.»."
+          "gl": "STEAM «A sombra e o sol»: mentres o facedes, di ti a frase da unidade 37: «The sun can't have gone.».",
+          "es": "STEAM «La sombra y el sol»: mientras lo hacéis, di tú la frase de la unidad 37: «The sun can't have gone.»."
          },
-         "en": "It can't have been a cloud.",
-         "gl": "Non puido ser unha nube.",
-         "es": "No puede haber sido una nube."
+         "en": "The sun can't have gone.",
+         "gl": "O sol non puido marchar.",
+         "es": "El sol no puede haberse ido."
         },
         {
          "dia": {
@@ -49783,8 +49783,8 @@
           "es": "Viernes"
          },
          "texto": {
-          "gl": "Lede o conto da semana, «Martiño lembra o curso»: nel saen «Photo book».",
-          "es": "Leed el cuento de la semana, «Martiño recuerda el curso»: en él salen «Photo book»."
+          "gl": "Lede o conto da semana, «Martiño lembra o curso»: nel saen «Rushing», «Deep blue», «Photo book».",
+          "es": "Leed el cuento de la semana, «Martiño recuerda el curso»: en él salen «Rushing», «Deep blue», «Photo book»."
          }
         }
        ]
@@ -50074,8 +50074,8 @@
           "es": "Viernes"
          },
          "texto": {
-          "gl": "Lede o conto da semana, «Nela e o diploma»: nel saen «Ceremony», «Diploma», «Cheering crowd».",
-          "es": "Leed el cuento de la semana, «Nela y el diploma»: en él salen «Ceremony», «Diploma», «Cheering crowd»."
+          "gl": "Lede o conto da semana, «Nela e o diploma»: nel saen «Calm sea: move the cloth very slowly», «Storm! Shake the sea with all your strength», «The sea sleeps: put the cloth down and lie still».",
+          "es": "Leed el cuento de la semana, «Nela y el diploma»: en él salen «Calm sea: move the cloth very slowly», «Storm! Shake the sea with all your strength», «The sea sleeps: put the cloth down and lie still»."
          }
         }
        ]
@@ -50393,8 +50393,8 @@
           "es": "Viernes"
          },
          "texto": {
-          "gl": "Lede o conto da semana, «Leo e o disco na árbore»: nel saen «Frisbee», «Water balloon».",
-          "es": "Leed el cuento de la semana, «Leo y el disco en el árbol»: en él salen «Frisbee», «Water balloon»."
+          "gl": "Lede o conto da semana, «Leo e o disco na árbore»: nel saen «Thank you for everything», «Frisbee», «Water balloon».",
+          "es": "Leed el cuento de la semana, «Leo y el disco en el árbol»: en él salen «Thank you for everything», «Frisbee», «Water balloon»."
          }
         }
        ]
@@ -54003,9 +54003,9 @@
         "es": "Esta semana, que lo use solo, jugando, sin que se lo pidas."
        },
        "fraseGramatica": {
-        "en": "Had you been waiting long?",
-        "gl": "Estiveras agardando moito?",
-        "es": "¿Habías estado esperando mucho?"
+        "en": "Had you been folding the paper long?",
+        "gl": "Estiveras moito tempo dobrando o papel?",
+        "es": "¿Habías estado mucho rato doblando el papel?"
        },
        "comoFalar": {
         "clave": "recast",
@@ -54268,12 +54268,12 @@
           "es": "Miércoles"
          },
          "texto": {
-          "gl": "STEAM «A bolboreta igual»: mentres o facedes, di ti a frase da unidade 41: «Had you been waiting long?».",
-          "es": "STEAM «La mariposa igual»: mientras lo hacéis, di tú la frase de la unidad 41: «Had you been waiting long?»."
+          "gl": "STEAM «A bolboreta igual»: mentres o facedes, di ti a frase da unidade 41: «Had you been folding the paper long?».",
+          "es": "STEAM «La mariposa igual»: mientras lo hacéis, di tú la frase de la unidad 41: «Had you been folding the paper long?»."
          },
-         "en": "Had you been waiting long?",
-         "gl": "Estiveras agardando moito?",
-         "es": "¿Habías estado esperando mucho?"
+         "en": "Had you been folding the paper long?",
+         "gl": "Estiveras moito tempo dobrando o papel?",
+         "es": "¿Habías estado mucho rato doblando el papel?"
         },
         {
          "dia": {
@@ -55298,9 +55298,9 @@
         "es": "Esta semana, que lo use solo, jugando, sin que se lo pidas."
        },
        "fraseGramatica": {
-        "en": "He admitted it was hard.",
-        "gl": "El recoñeceu que era difícil.",
-        "es": "Él reconoció que era difícil."
+        "en": "He admitted the circle was hard to spin.",
+        "gl": "El recoñeceu que o círculo era difícil de xirar.",
+        "es": "Él reconoció que el círculo era difícil de girar."
        },
        "comoFalar": {
         "clave": "recast",
@@ -55567,12 +55567,12 @@
           "es": "Miércoles"
          },
          "texto": {
-          "gl": "STEAM «O círculo que xira»: mentres o facedes, di ti a frase da unidade 42: «He admitted it was hard.».",
-          "es": "STEAM «El círculo que gira»: mientras lo hacéis, di tú la frase de la unidad 42: «He admitted it was hard.»."
+          "gl": "STEAM «O círculo que xira»: mentres o facedes, di ti a frase da unidade 42: «He admitted the circle was hard to spin.».",
+          "es": "STEAM «El círculo que gira»: mientras lo hacéis, di tú la frase de la unidad 42: «He admitted the circle was hard to spin.»."
          },
-         "en": "He admitted it was hard.",
-         "gl": "El recoñeceu que era difícil.",
-         "es": "Él reconoció que era difícil."
+         "en": "He admitted the circle was hard to spin.",
+         "gl": "El recoñeceu que o círculo era difícil de xirar.",
+         "es": "Él reconoció que el círculo era difícil de girar."
         },
         {
          "dia": {
@@ -57854,9 +57854,9 @@
         "es": "Esta semana, que lo use solo, jugando, sin que se lo pidas."
        },
        "fraseGramatica": {
-        "en": "Changed a little, it flew further.",
-        "gl": "Cambiado un pouco, voou máis lonxe.",
-        "es": "Cambiado un poco, voló más lejos."
+        "en": "Changed a little, the plane flew further.",
+        "gl": "Cambiado un pouco, o avión voou máis lonxe.",
+        "es": "Cambiado un poco, el avión voló más lejos."
        },
        "comoFalar": {
         "clave": "recast",
@@ -58123,12 +58123,12 @@
           "es": "Miércoles"
          },
          "texto": {
-          "gl": "STEAM «Avións de papel»: mentres o facedes, di ti a frase da unidade 44: «Changed a little, it flew further.».",
-          "es": "STEAM «Aviones de papel»: mientras lo hacéis, di tú la frase de la unidad 44: «Changed a little, it flew further.»."
+          "gl": "STEAM «Avións de papel»: mentres o facedes, di ti a frase da unidade 44: «Changed a little, the plane flew further.».",
+          "es": "STEAM «Aviones de papel»: mientras lo hacéis, di tú la frase de la unidad 44: «Changed a little, the plane flew further.»."
          },
-         "en": "Changed a little, it flew further.",
-         "gl": "Cambiado un pouco, voou máis lonxe.",
-         "es": "Cambiado un poco, voló más lejos."
+         "en": "Changed a little, the plane flew further.",
+         "gl": "Cambiado un pouco, o avión voou máis lonxe.",
+         "es": "Cambiado un poco, el avión voló más lejos."
         },
         {
          "dia": {
@@ -58238,9 +58238,9 @@
         "es": "Esta semana basta con que lo entienda con tu gesto."
        },
        "fraseGramatica": {
-        "en": "Never have we hidden it so well!",
-        "gl": "Nunca o escondemos tan ben!",
-        "es": "¡Nunca lo habíamos escondido tan bien!"
+        "en": "Never have we hidden the treasure so well!",
+        "gl": "Nunca escondemos o tesouro tan ben!",
+        "es": "¡Nunca habíamos escondido el tesoro tan bien!"
        },
        "comoFalar": {
         "clave": "parentese",
@@ -58507,12 +58507,12 @@
           "es": "Miércoles"
          },
          "texto": {
-          "gl": "STEAM «O mapa do tesouro»: mentres o facedes, di ti a frase da unidade 45: «Never have we hidden it so well!».",
-          "es": "STEAM «El mapa del tesoro»: mientras lo hacéis, di tú la frase de la unidad 45: «Never have we hidden it so well!»."
+          "gl": "STEAM «O mapa do tesouro»: mentres o facedes, di ti a frase da unidade 45: «Never have we hidden the treasure so well!».",
+          "es": "STEAM «El mapa del tesoro»: mientras lo hacéis, di tú la frase de la unidad 45: «Never have we hidden the treasure so well!»."
          },
-         "en": "Never have we hidden it so well!",
-         "gl": "Nunca o escondemos tan ben!",
-         "es": "¡Nunca lo habíamos escondido tan bien!"
+         "en": "Never have we hidden the treasure so well!",
+         "gl": "Nunca escondemos o tesouro tan ben!",
+         "es": "¡Nunca habíamos escondido el tesoro tan bien!"
         },
         {
          "dia": {
@@ -58790,9 +58790,9 @@
         "es": "Esta semana, que lo diga contigo, en una rutina o en una canción."
        },
        "fraseGramatica": {
-        "en": "Not once did you get lost.",
-        "gl": "Nin unha soa vez te perdiches.",
-        "es": "Ni una sola vez te perdiste."
+        "en": "Not once did you lose the map.",
+        "gl": "Nin unha soa vez perdiches o mapa.",
+        "es": "Ni una sola vez perdiste el mapa."
        },
        "comoFalar": {
         "clave": "expansion",
@@ -59041,12 +59041,12 @@
           "es": "Miércoles"
          },
          "texto": {
-          "gl": "STEAM «O mapa do tesouro»: mentres o facedes, di ti a frase da unidade 45: «Not once did you get lost.».",
-          "es": "STEAM «El mapa del tesoro»: mientras lo hacéis, di tú la frase de la unidad 45: «Not once did you get lost.»."
+          "gl": "STEAM «O mapa do tesouro»: mentres o facedes, di ti a frase da unidade 45: «Not once did you lose the map.».",
+          "es": "STEAM «El mapa del tesoro»: mientras lo hacéis, di tú la frase de la unidad 45: «Not once did you lose the map.»."
          },
-         "en": "Not once did you get lost.",
-         "gl": "Nin unha soa vez te perdiches.",
-         "es": "Ni una sola vez te perdiste."
+         "en": "Not once did you lose the map.",
+         "gl": "Nin unha soa vez perdiches o mapa.",
+         "es": "Ni una sola vez perdiste el mapa."
         },
         {
          "dia": {
@@ -61248,9 +61248,9 @@
         "es": "Esta semana, que lo diga contigo, en una rutina o en una canción."
        },
        "fraseGramatica": {
-        "en": "It's time we turned it off.",
-        "gl": "Xa é hora de que a apaguemos.",
-        "es": "Ya es hora de que la apaguemos."
+        "en": "It's time we turned the torch off.",
+        "gl": "Xa é hora de que apaguemos a lanterna.",
+        "es": "Ya es hora de que apaguemos la linterna."
        },
        "comoFalar": {
         "clave": "expansion",
@@ -61527,12 +61527,12 @@
           "es": "Miércoles"
          },
          "texto": {
-          "gl": "STEAM «Mensaxes de luz»: mentres o facedes, di ti a frase da unidade 47: «It's time we turned it off.».",
-          "es": "STEAM «Mensajes de luz»: mientras lo hacéis, di tú la frase de la unidad 47: «It's time we turned it off.»."
+          "gl": "STEAM «Mensaxes de luz»: mentres o facedes, di ti a frase da unidade 47: «It's time we turned the torch off.».",
+          "es": "STEAM «Mensajes de luz»: mientras lo hacéis, di tú la frase de la unidad 47: «It's time we turned the torch off.»."
          },
-         "en": "It's time we turned it off.",
-         "gl": "Xa é hora de que a apaguemos.",
-         "es": "Ya es hora de que la apaguemos."
+         "en": "It's time we turned the torch off.",
+         "gl": "Xa é hora de que apaguemos a lanterna.",
+         "es": "Ya es hora de que apaguemos la linterna."
         },
         {
          "dia": {
@@ -61569,9 +61569,9 @@
         "es": "Esta semana, que lo use solo, jugando, sin que se lo pidas."
        },
        "fraseGramatica": {
-        "en": "As if it were a secret!",
-        "gl": "Coma se fose un segredo!",
-        "es": "¡Como si fuera un secreto!"
+        "en": "As if the light were a secret!",
+        "gl": "Coma se a luz fose un segredo!",
+        "es": "¡Como si la luz fuera un secreto!"
        },
        "comoFalar": {
         "clave": "recast",
@@ -61834,12 +61834,12 @@
           "es": "Miércoles"
          },
          "texto": {
-          "gl": "STEAM «Mensaxes de luz»: mentres o facedes, di ti a frase da unidade 47: «As if it were a secret!».",
-          "es": "STEAM «Mensajes de luz»: mientras lo hacéis, di tú la frase de la unidad 47: «As if it were a secret!»."
+          "gl": "STEAM «Mensaxes de luz»: mentres o facedes, di ti a frase da unidade 47: «As if the light were a secret!».",
+          "es": "STEAM «Mensajes de luz»: mientras lo hacéis, di tú la frase de la unidad 47: «As if the light were a secret!»."
          },
-         "en": "As if it were a secret!",
-         "gl": "Coma se fose un segredo!",
-         "es": "¡Como si fuera un secreto!"
+         "en": "As if the light were a secret!",
+         "gl": "Coma se a luz fose un segredo!",
+         "es": "¡Como si la luz fuera un secreto!"
         },
         {
          "dia": {

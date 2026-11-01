@@ -9,6 +9,7 @@ import 'package:descubre_con_lua/core/localization/app_language.dart';
 import 'package:descubre_con_lua/core/theme/app_theme.dart';
 import 'package:descubre_con_lua/data/models/leccion_model.dart';
 import 'package:descubre_con_lua/data/models/xogos_fogar_model.dart';
+import 'package:descubre_con_lua/features/leccions/views/calendario_de_leccions_screen.dart';
 import 'package:descubre_con_lua/features/leccions/views/camino_do_curso_screen.dart';
 import 'package:descubre_con_lua/features/leccions/views/gramatica_screen.dart';
 import 'package:descubre_con_lua/features/leccions/widgets/leccion_da_semana.dart';
@@ -336,7 +337,7 @@ void main() {
           expect(find.text(t), findsOneWidget, reason: t);
         }
         // La barra es la del curso, y lo dice: tema 2, lección 4 = semana 8.
-        expect(find.text('Curso: semana 8 de 40'), findsOneWidget);
+        expect(find.text('Curso: 8/40'), findsOneWidget);
         // El STEAM del mes, a la vista: el eje de la semana.
         expect(find.byKey(const Key('leccion_steam')), findsOneWidget);
         // Cómo hablar esta semana: la 4.ª, la de consolidar, el recast.
@@ -409,6 +410,40 @@ void main() {
       for (final p in l.novas) {
         expect(find.text(p.en), findsWidgets, reason: p.en);
       }
+      expect(tester.takeException(), isNull);
+    });
+  }
+
+  for (final lang in AppLanguage.deInterfaz) {
+    testWidgets('o calendario abre a mesma lección que Hoxe, en ${lang.code}',
+        (tester) async {
+      Leccions.sembrar(leccions);
+      await tester.binding.setSurfaceSize(const Size(412, 915));
+      addTearDown(() => tester.binding.setSurfaceSize(null));
+      await tester.pumpWidget(MaterialApp(
+        theme: AppTheme.temaFamilias,
+        home: CalendarioDeLeccionsScreen(
+          cursoId: 'curso_4_5',
+          onCambiarCurso: (_) {},
+          language: lang,
+          onLanguageChanged: (_) {},
+          audioService: MockOfflineAudioService(),
+          agora: DateTime(2026, 11, 2),
+        ),
+      ));
+      await tester.pumpAndSettle();
+      expect(tester.takeException(), isNull);
+      // Noviembre: cuatro semanas, cada una con su frase de la unidad.
+      for (var s = 1; s <= 4; s++) {
+        final (_, l) = leccions.da('curso_4_5', 11, s)!;
+        expect(find.text(l.fraseGramatica!.en), findsOneWidget, reason: '$s');
+      }
+      await tester.tap(find.byKey(const ValueKey('calendario_mes_10')));
+      await tester.pumpAndSettle();
+      await tester.tap(find.byKey(const ValueKey('calendario_semana_2')));
+      await tester.pumpAndSettle();
+      final (_, l) = leccions.da('curso_4_5', 10, 2)!;
+      expect(find.byKey(ValueKey('leccion_${l.id}')), findsOneWidget);
       expect(tester.takeException(), isNull);
     });
   }

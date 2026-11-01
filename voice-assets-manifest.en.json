@@ -3,8 +3,8 @@
  "voice": "LJSpeech (en-US) · rhasspy/piper-voices",
  "peakDbfs": -3.0,
  "entries": 13601,
- "totalBytes": 150762481,
- "totalSeconds": 26245.82,
+ "totalBytes": 150793345,
+ "totalSeconds": 26251.82,
  "files": [
   {
    "id": "en_slow_000840c5_4",
@@ -16795,12 +16795,6 @@
    "bytes": 10382
   },
   {
-   "id": "en_tutor_0912ed47_32",
-   "file": "en_tutor_0912ed47_32.m4a",
-   "seconds": 1.88,
-   "bytes": 10808
-  },
-  {
    "id": "en_tutor_0913b2eb_45",
    "file": "en_tutor_0913b2eb_45.m4a",
    "seconds": 2.68,
@@ -17605,12 +17599,6 @@
    "bytes": 11537
   },
   {
-   "id": "en_tutor_0c712b5a_23",
-   "file": "en_tutor_0c712b5a_23.m4a",
-   "seconds": 1.32,
-   "bytes": 8103
-  },
-  {
    "id": "en_tutor_0c8d5df0_66",
    "file": "en_tutor_0c8d5df0_66.m4a",
    "seconds": 5.06,
@@ -18161,12 +18149,6 @@
    "file": "en_tutor_0e9f0b9c_34.m4a",
    "seconds": 2.14,
    "bytes": 12036
-  },
-  {
-   "id": "en_tutor_0e9f5472_25",
-   "file": "en_tutor_0e9f5472_25.m4a",
-   "seconds": 1.52,
-   "bytes": 8982
   },
   {
    "id": "en_tutor_0e9f90a7_12",
@@ -19231,12 +19213,6 @@
    "bytes": 20096
   },
   {
-   "id": "en_tutor_1274a6a1_20",
-   "file": "en_tutor_1274a6a1_20.m4a",
-   "seconds": 1.0,
-   "bytes": 6372
-  },
-  {
    "id": "en_tutor_1282eeaf_34",
    "file": "en_tutor_1282eeaf_34.m4a",
    "seconds": 2.11,
@@ -19991,12 +19967,6 @@
    "file": "en_tutor_14e85e1d_32.m4a",
    "seconds": 2.1,
    "bytes": 12064
-  },
-  {
-   "id": "en_tutor_14f150f6_23",
-   "file": "en_tutor_14f150f6_23.m4a",
-   "seconds": 1.42,
-   "bytes": 8439
   },
   {
    "id": "en_tutor_14fc6602_40",
@@ -22973,12 +22943,6 @@
    "file": "en_tutor_215f1d58_42.m4a",
    "seconds": 3.19,
    "bytes": 17496
-  },
-  {
-   "id": "en_tutor_21652251_26",
-   "file": "en_tutor_21652251_26.m4a",
-   "seconds": 1.47,
-   "bytes": 8787
   },
   {
    "id": "en_tutor_21700bfd_45",
@@ -27427,6 +27391,12 @@
    "bytes": 13125
   },
   {
+   "id": "en_tutor_321b941f_26",
+   "file": "en_tutor_321b941f_26.m4a",
+   "seconds": 1.46,
+   "bytes": 8718
+  },
+  {
    "id": "en_tutor_32245219_9",
    "file": "en_tutor_32245219_9.m4a",
    "seconds": 0.93,
@@ -28489,6 +28459,12 @@
    "bytes": 17937
   },
   {
+   "id": "en_tutor_365b9592_36",
+   "file": "en_tutor_365b9592_36.m4a",
+   "seconds": 1.72,
+   "bytes": 9935
+  },
+  {
    "id": "en_tutor_365c268f_14",
    "file": "en_tutor_365c268f_14.m4a",
    "seconds": 0.95,
@@ -28601,6 +28577,12 @@
    "file": "en_tutor_36eaf6c3_19.m4a",
    "seconds": 1.5,
    "bytes": 8978
+  },
+  {
+   "id": "en_tutor_36fa5c04_40",
+   "file": "en_tutor_36fa5c04_40.m4a",
+   "seconds": 2.18,
+   "bytes": 12285
   },
   {
    "id": "en_tutor_37051f2b_32",
@@ -30703,12 +30685,6 @@
    "bytes": 7260
   },
   {
-   "id": "en_tutor_3f030d01_26",
-   "file": "en_tutor_3f030d01_26.m4a",
-   "seconds": 1.97,
-   "bytes": 11361
-  },
-  {
    "id": "en_tutor_3f084fc2_38",
    "file": "en_tutor_3f084fc2_38.m4a",
    "seconds": 2.07,
@@ -30893,12 +30869,6 @@
    "file": "en_tutor_3fc2dc29_9.m4a",
    "seconds": 0.84,
    "bytes": 5401
-  },
-  {
-   "id": "en_tutor_3fcad192_22",
-   "file": "en_tutor_3fcad192_22.m4a",
-   "seconds": 1.17,
-   "bytes": 7320
   },
   {
    "id": "en_tutor_3fce41f1_15",
@@ -33181,12 +33151,6 @@
    "bytes": 9412
   },
   {
-   "id": "en_tutor_48a1528f_34",
-   "file": "en_tutor_48a1528f_34.m4a",
-   "seconds": 2.12,
-   "bytes": 12029
-  },
-  {
    "id": "en_tutor_48a17182_36",
    "file": "en_tutor_48a17182_36.m4a",
    "seconds": 2.33,
@@ -33761,12 +33725,6 @@
    "file": "en_tutor_4ad4c2e6_37.m4a",
    "seconds": 2.14,
    "bytes": 12095
-  },
-  {
-   "id": "en_tutor_4adf39c6_19",
-   "file": "en_tutor_4adf39c6_19.m4a",
-   "seconds": 1.13,
-   "bytes": 7111
   },
   {
    "id": "en_tutor_4adf5ca8_37",
@@ -35309,12 +35267,6 @@
    "file": "en_tutor_517efc4b_18.m4a",
    "seconds": 1.3,
    "bytes": 7694
-  },
-  {
-   "id": "en_tutor_5196339f_27",
-   "file": "en_tutor_5196339f_27.m4a",
-   "seconds": 1.74,
-   "bytes": 10165
   },
   {
    "id": "en_tutor_51993914_26",
@@ -37177,12 +37129,6 @@
    "bytes": 14118
   },
   {
-   "id": "en_tutor_58d1366c_38",
-   "file": "en_tutor_58d1366c_38.m4a",
-   "seconds": 1.8,
-   "bytes": 10340
-  },
-  {
    "id": "en_tutor_58d19f39_34",
    "file": "en_tutor_58d19f39_34.m4a",
    "seconds": 2.48,
@@ -37817,12 +37763,6 @@
    "file": "en_tutor_5b18cb67_21.m4a",
    "seconds": 1.53,
    "bytes": 8960
-  },
-  {
-   "id": "en_tutor_5b1bd435_23",
-   "file": "en_tutor_5b1bd435_23.m4a",
-   "seconds": 1.39,
-   "bytes": 8240
   },
   {
    "id": "en_tutor_5b21f1e8_37",
@@ -41563,6 +41503,12 @@
    "bytes": 14289
   },
   {
+   "id": "en_tutor_68944c30_27",
+   "file": "en_tutor_68944c30_27.m4a",
+   "seconds": 1.85,
+   "bytes": 10734
+  },
+  {
    "id": "en_tutor_6896fde0_31",
    "file": "en_tutor_6896fde0_31.m4a",
    "seconds": 1.73,
@@ -41687,12 +41633,6 @@
    "file": "en_tutor_6914b042_36.m4a",
    "seconds": 2.39,
    "bytes": 13491
-  },
-  {
-   "id": "en_tutor_6925fdfb_14",
-   "file": "en_tutor_6925fdfb_14.m4a",
-   "seconds": 0.91,
-   "bytes": 5858
   },
   {
    "id": "en_tutor_69269811_41",
@@ -43867,12 +43807,6 @@
    "bytes": 16266
   },
   {
-   "id": "en_tutor_711657b0_28",
-   "file": "en_tutor_711657b0_28.m4a",
-   "seconds": 1.42,
-   "bytes": 8488
-  },
-  {
    "id": "en_tutor_71187376_38",
    "file": "en_tutor_71187376_38.m4a",
    "seconds": 2.03,
@@ -44819,12 +44753,6 @@
    "file": "en_tutor_7466ef2c_38.m4a",
    "seconds": 2.24,
    "bytes": 12780
-  },
-  {
-   "id": "en_tutor_7467f259_28",
-   "file": "en_tutor_7467f259_28.m4a",
-   "seconds": 1.6,
-   "bytes": 9437
   },
   {
    "id": "en_tutor_746d0ff3_36",
@@ -50467,6 +50395,12 @@
    "bytes": 12299
   },
   {
+   "id": "en_tutor_88b48a5c_24",
+   "file": "en_tutor_88b48a5c_24.m4a",
+   "seconds": 1.4,
+   "bytes": 8541
+  },
+  {
    "id": "en_tutor_88b589fd_34",
    "file": "en_tutor_88b589fd_34.m4a",
    "seconds": 2.28,
@@ -53551,12 +53485,6 @@
    "bytes": 7040
   },
   {
-   "id": "en_tutor_944550d5_27",
-   "file": "en_tutor_944550d5_27.m4a",
-   "seconds": 1.71,
-   "bytes": 9875
-  },
-  {
    "id": "en_tutor_9448f4b9_13",
    "file": "en_tutor_9448f4b9_13.m4a",
    "seconds": 1.02,
@@ -56395,6 +56323,12 @@
    "bytes": 10200
   },
   {
+   "id": "en_tutor_9eec0956_17",
+   "file": "en_tutor_9eec0956_17.m4a",
+   "seconds": 1.22,
+   "bytes": 7612
+  },
+  {
    "id": "en_tutor_9eed86cc_34",
    "file": "en_tutor_9eed86cc_34.m4a",
    "seconds": 2.24,
@@ -56885,6 +56819,12 @@
    "file": "en_tutor_a0b47ba7_24.m4a",
    "seconds": 1.53,
    "bytes": 8902
+  },
+  {
+   "id": "en_tutor_a0c5d2a8_30",
+   "file": "en_tutor_a0c5d2a8_30.m4a",
+   "seconds": 1.65,
+   "bytes": 9723
   },
   {
    "id": "en_tutor_a0c84b81_39",
@@ -57745,12 +57685,6 @@
    "bytes": 5217
   },
   {
-   "id": "en_tutor_a41d08d3_27",
-   "file": "en_tutor_a41d08d3_27.m4a",
-   "seconds": 1.6,
-   "bytes": 9396
-  },
-  {
    "id": "en_tutor_a421882e_29",
    "file": "en_tutor_a421882e_29.m4a",
    "seconds": 3.04,
@@ -57989,6 +57923,12 @@
    "file": "en_tutor_a4f94b8f_13.m4a",
    "seconds": 0.99,
    "bytes": 6177
+  },
+  {
+   "id": "en_tutor_a4fa708d_31",
+   "file": "en_tutor_a4fa708d_31.m4a",
+   "seconds": 1.7,
+   "bytes": 9963
   },
   {
    "id": "en_tutor_a50435a9_12",
@@ -61657,6 +61597,12 @@
    "bytes": 10838
   },
   {
+   "id": "en_tutor_b36745f4_44",
+   "file": "en_tutor_b36745f4_44.m4a",
+   "seconds": 1.99,
+   "bytes": 11304
+  },
+  {
    "id": "en_tutor_b36842ad_21",
    "file": "en_tutor_b36842ad_21.m4a",
    "seconds": 1.17,
@@ -63299,6 +63245,12 @@
    "file": "en_tutor_ba69decd_33.m4a",
    "seconds": 1.82,
    "bytes": 10661
+  },
+  {
+   "id": "en_tutor_ba6a9153_15",
+   "file": "en_tutor_ba6a9153_15.m4a",
+   "seconds": 1.25,
+   "bytes": 7509
   },
   {
    "id": "en_tutor_ba79cf27_29",
@@ -65857,6 +65809,12 @@
    "bytes": 7322
   },
   {
+   "id": "en_tutor_c37e1067_21",
+   "file": "en_tutor_c37e1067_21.m4a",
+   "seconds": 1.07,
+   "bytes": 6651
+  },
+  {
    "id": "en_tutor_c381c0b8_28",
    "file": "en_tutor_c381c0b8_28.m4a",
    "seconds": 1.7,
@@ -66691,6 +66649,12 @@
    "bytes": 15408
   },
   {
+   "id": "en_tutor_c691a4b1_29",
+   "file": "en_tutor_c691a4b1_29.m4a",
+   "seconds": 1.87,
+   "bytes": 10724
+  },
+  {
    "id": "en_tutor_c6926fb5_31",
    "file": "en_tutor_c6926fb5_31.m4a",
    "seconds": 1.99,
@@ -67103,6 +67067,12 @@
    "file": "en_tutor_c814ba5d_36.m4a",
    "seconds": 2.77,
    "bytes": 15355
+  },
+  {
+   "id": "en_tutor_c81d56ce_45",
+   "file": "en_tutor_c81d56ce_45.m4a",
+   "seconds": 2.11,
+   "bytes": 11994
   },
   {
    "id": "en_tutor_c820a744_13",
@@ -68653,6 +68623,12 @@
    "bytes": 10565
   },
   {
+   "id": "en_tutor_cd9b1a07_30",
+   "file": "en_tutor_cd9b1a07_30.m4a",
+   "seconds": 2.08,
+   "bytes": 11782
+  },
+  {
    "id": "en_tutor_cdaf06db_11",
    "file": "en_tutor_cdaf06db_11.m4a",
    "seconds": 0.79,
@@ -69305,6 +69281,12 @@
    "file": "en_tutor_d0242569_37.m4a",
    "seconds": 2.28,
    "bytes": 12883
+  },
+  {
+   "id": "en_tutor_d02969f5_34",
+   "file": "en_tutor_d02969f5_34.m4a",
+   "seconds": 2.05,
+   "bytes": 11898
   },
   {
    "id": "en_tutor_d02f2aed_47",
@@ -70699,6 +70681,12 @@
    "bytes": 13964
   },
   {
+   "id": "en_tutor_d524f3c4_32",
+   "file": "en_tutor_d524f3c4_32.m4a",
+   "seconds": 1.79,
+   "bytes": 10396
+  },
+  {
    "id": "en_tutor_d52e9dad_40",
    "file": "en_tutor_d52e9dad_40.m4a",
    "seconds": 2.54,
@@ -70871,12 +70859,6 @@
    "file": "en_tutor_d58ee0f9_74.m4a",
    "seconds": 5.83,
    "bytes": 31122
-  },
-  {
-   "id": "en_tutor_d59508fd_11",
-   "file": "en_tutor_d59508fd_11.m4a",
-   "seconds": 1.04,
-   "bytes": 6542
   },
   {
    "id": "en_tutor_d5993064_50",
@@ -71207,6 +71189,12 @@
    "file": "en_tutor_d708af9e_11.m4a",
    "seconds": 0.79,
    "bytes": 5209
+  },
+  {
+   "id": "en_tutor_d713c5c5_30",
+   "file": "en_tutor_d713c5c5_30.m4a",
+   "seconds": 1.6,
+   "bytes": 9390
   },
   {
    "id": "en_tutor_d71d3aa3_30",
@@ -71995,12 +71983,6 @@
    "bytes": 16089
   },
   {
-   "id": "en_tutor_da61c3fd_24",
-   "file": "en_tutor_da61c3fd_24.m4a",
-   "seconds": 1.4,
-   "bytes": 8523
-  },
-  {
    "id": "en_tutor_da625b6e_15",
    "file": "en_tutor_da625b6e_15.m4a",
    "seconds": 0.99,
@@ -72509,6 +72491,12 @@
    "file": "en_tutor_dc98b812_49.m4a",
    "seconds": 2.83,
    "bytes": 15609
+  },
+  {
+   "id": "en_tutor_dc9f3c08_42",
+   "file": "en_tutor_dc9f3c08_42.m4a",
+   "seconds": 2.19,
+   "bytes": 12539
   },
   {
    "id": "en_tutor_dca60841_9",
@@ -74285,6 +74273,12 @@
    "file": "en_tutor_e394ab80_50.m4a",
    "seconds": 3.18,
    "bytes": 17501
+  },
+  {
+   "id": "en_tutor_e39bd01d_39",
+   "file": "en_tutor_e39bd01d_39.m4a",
+   "seconds": 2.35,
+   "bytes": 13328
   },
   {
    "id": "en_tutor_e39c8032_13",
@@ -77491,6 +77485,12 @@
    "bytes": 5160
   },
   {
+   "id": "en_tutor_f02813b7_30",
+   "file": "en_tutor_f02813b7_30.m4a",
+   "seconds": 1.5,
+   "bytes": 8960
+  },
+  {
    "id": "en_tutor_f0331b10_26",
    "file": "en_tutor_f0331b10_26.m4a",
    "seconds": 1.5,
@@ -77951,12 +77951,6 @@
    "file": "en_tutor_f1c3434c_32.m4a",
    "seconds": 2.18,
    "bytes": 12242
-  },
-  {
-   "id": "en_tutor_f1cb69da_26",
-   "file": "en_tutor_f1cb69da_26.m4a",
-   "seconds": 1.89,
-   "bytes": 10898
   },
   {
    "id": "en_tutor_f1cc7af1_11",
@@ -80999,6 +80993,12 @@
    "file": "en_tutor_fdda4e9c_30.m4a",
    "seconds": 2.09,
    "bytes": 11779
+  },
+  {
+   "id": "en_tutor_fdeb844b_41",
+   "file": "en_tutor_fdeb844b_41.m4a",
+   "seconds": 2.47,
+   "bytes": 13952
   },
   {
    "id": "en_tutor_fdec9f97_35",

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../leccions/views/calendario_de_leccions_screen.dart';
+
 import '../../../core/audio/offline_audio_service.dart';
 import '../../../core/localization/app_language.dart';
 import '../../../core/storage/calendario_store.dart';
@@ -100,19 +102,29 @@ class _PortalDocentesScreenState extends State<PortalDocentesScreen> {
           premios: widget.premios,
           calendario: _store,
         ),
-        // Con clave: cambiar el grupo en Hoxe abre el calendario de ese curso.
-        CalendarioScreen(
-          key: ValueKey('calendario_aula_$_curso'),
-          store: _store,
-          contenido: widget.calendarioContenido,
-          initialLanguage: lang,
+        // O-20261101-1: el calendario de lecciones; el de antes, dentro.
+        CalendarioDeLeccionsScreen(
+          key: ValueKey('calendario_leccions_$_curso'),
+          cursoId: _curso,
+          onCambiarCurso: _cambiarCurso,
+          language: lang,
           onLanguageChanged: _cambiarLingua,
-          repository: widget.repository,
           audioService: widget.audioService,
-          premios: widget.premios,
-          esDocenteInicial: true,
-          cursoInicial: _curso,
-          conIntroducion: false,
+          paraAula: true,
+          agora: widget.agora,
+          calendarioCompleto: (_) => CalendarioScreen(
+            key: ValueKey('calendario_aula_$_curso'),
+            store: _store,
+            contenido: widget.calendarioContenido,
+            initialLanguage: lang,
+            onLanguageChanged: _cambiarLingua,
+            repository: widget.repository,
+            audioService: widget.audioService,
+            premios: widget.premios,
+            esDocenteInicial: true,
+            cursoInicial: _curso,
+            conIntroducion: false,
+          ),
         ),
         RecursosDocentesScreen(
           repository: widget.repository,

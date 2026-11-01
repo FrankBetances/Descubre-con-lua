@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-28T20:49:17Z",
+ "generatedAt": "2026-11-01T16:56:47Z",
  "entries": 37062,
  "byStyle": {
   "slow": 5956,
@@ -57117,15 +57117,6 @@
    "pack": false
   },
   {
-   "id": "en_tutor_0912ed47_32",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Never have we hidden it so well!",
-   "speech": "Never have we hidden it so well!",
-   "source": "gramatica/curso_5_6/3",
-   "pack": false
-  },
-  {
    "id": "en_tutor_0913b2eb_45",
    "lang": "en",
    "style": "tutor",
@@ -58332,15 +58323,6 @@
    "pack": false
   },
   {
-   "id": "en_tutor_0c712b5a_23",
-   "lang": "en",
-   "style": "tutor",
-   "text": "As if it were a secret!",
-   "speech": "As if it were a secret!",
-   "source": "gramatica/curso_5_6/5",
-   "pack": false
-  },
-  {
    "id": "en_tutor_0c8d5df0_66",
    "lang": "en",
    "style": "tutor",
@@ -59166,15 +59148,6 @@
    "text": "A band played music in the square.",
    "speech": "A band played music in the square.",
    "source": "corpus/1070/frase",
-   "pack": false
-  },
-  {
-   "id": "en_tutor_0e9f5472_25",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Yesterday it went slowly.",
-   "speech": "Yesterday it went slowly.",
-   "source": "gramatica/curso_3_4/11",
    "pack": false
   },
   {
@@ -60771,15 +60744,6 @@
    "pack": false
   },
   {
-   "id": "en_tutor_1274a6a1_20",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Stirring could help.",
-   "speech": "Stirring could help.",
-   "source": "gramatica/curso_3_4/2",
-   "pack": false
-  },
-  {
    "id": "en_tutor_1282eeaf_34",
    "lang": "en",
    "style": "tutor",
@@ -61911,15 +61875,6 @@
    "text": "Yes, help! Lúa and the dog help!",
    "speech": "Yes, help! Lúa and the dog help!",
    "source": "microcuento.curso_4_5.09/2/recast.unhaPalabra",
-   "pack": false
-  },
-  {
-   "id": "en_tutor_14f150f6_23",
-   "lang": "en",
-   "style": "tutor",
-   "text": "They were in two piles.",
-   "speech": "They were in two piles.",
-   "source": "gramatica/curso_2_3/11",
    "pack": false
   },
   {
@@ -66384,15 +66339,6 @@
    "text": "Yes! Warm chestnuts! Yummy warm chestnuts!",
    "speech": "Yes! Warm chestnuts! Yummy warm chestnuts!",
    "source": "microcuento.curso_3_4.03/3/recast.sinala",
-   "pack": false
-  },
-  {
-   "id": "en_tutor_21652251_26",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Had you been waiting long?",
-   "speech": "Had you been waiting long?",
-   "source": "gramatica/curso_5_6/11",
    "pack": false
   },
   {
@@ -73065,6 +73011,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_321b941f_26",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Was the stone the biggest?",
+   "speech": "Was the stone the biggest?",
+   "source": "gramatica/curso_2_3/11",
+   "pack": false
+  },
+  {
    "id": "en_tutor_32245219_9",
    "lang": "en",
    "style": "tutor",
@@ -74658,6 +74613,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_365b9592_36",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Had you been folding the paper long?",
+   "speech": "Had you been folding the paper long?",
+   "source": "gramatica/curso_5_6/11",
+   "pack": false
+  },
+  {
    "id": "en_tutor_365c268f_14",
    "lang": "en",
    "style": "tutor",
@@ -74826,6 +74790,15 @@
    "text": "Look! A dog shadow!",
    "speech": "Look! A dog shadow!",
    "source": "registro/frase.steam_mes.STEAM-0_2-05.01",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_36fa5c04_40",
+   "lang": "en",
+   "style": "tutor",
+   "text": "He admitted the circle was hard to spin.",
+   "speech": "He admitted the circle was hard to spin.",
+   "source": "gramatica/curso_5_6/12",
    "pack": false
   },
   {
@@ -77979,15 +77952,6 @@
    "pack": false
   },
   {
-   "id": "en_tutor_3f030d01_26",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Not once did you get lost.",
-   "speech": "Not once did you get lost.",
-   "source": "gramatica/curso_5_6/3",
-   "pack": false
-  },
-  {
    "id": "en_tutor_3f084fc2_38",
    "lang": "en",
    "style": "tutor",
@@ -78264,15 +78228,6 @@
    "text": "Buy bread",
    "speech": "Buy bread",
    "source": "tpr.2_3.xaneiro/s3/2_3.xaneiro.s3.buy-bread",
-   "pack": false
-  },
-  {
-   "id": "en_tutor_3fcad192_22",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Have you been waiting?",
-   "speech": "Have you been waiting?",
-   "source": "gramatica/curso_3_4/12",
    "pack": false
   },
   {
@@ -81696,15 +81651,6 @@
    "pack": false
   },
   {
-   "id": "en_tutor_48a1528f_34",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Changed a little, it flew further.",
-   "speech": "Changed a little, it flew further.",
-   "source": "gramatica/curso_5_6/2",
-   "pack": false
-  },
-  {
    "id": "en_tutor_48a17182_36",
    "lang": "en",
    "style": "tutor",
@@ -82566,15 +82512,6 @@
    "text": "The children chased the soap bubbles.",
    "speech": "The children chased the soap bubbles.",
    "source": "corpus/3118/frase",
-   "pack": false
-  },
-  {
-   "id": "en_tutor_4adf39c6_19",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Was it the biggest?",
-   "speech": "Was it the biggest?",
-   "source": "gramatica/curso_2_3/11",
    "pack": false
   },
   {
@@ -84888,15 +84825,6 @@
    "text": "Look at old photos",
    "speech": "Look at old photos",
    "source": "tpr.5_6.xaneiro/s3/5_6.xaneiro.s3.look-at-old-photos",
-   "pack": false
-  },
-  {
-   "id": "en_tutor_5196339f_27",
-   "lang": "en",
-   "style": "tutor",
-   "text": "It can't have been a cloud.",
-   "speech": "It can't have been a cloud.",
-   "source": "gramatica/curso_4_5/5",
    "pack": false
   },
   {
@@ -87690,15 +87618,6 @@
    "pack": false
   },
   {
-   "id": "en_tutor_58d1366c_38",
-   "lang": "en",
-   "style": "tutor",
-   "text": "What would happen if we tapped harder?",
-   "speech": "What would happen if we tapped harder?",
-   "source": "gramatica/curso_3_4/5",
-   "pack": false
-  },
-  {
    "id": "en_tutor_58d19f39_34",
    "lang": "en",
    "style": "tutor",
@@ -88650,15 +88569,6 @@
    "text": "One plate, one spoon!",
    "speech": "One plate, one spoon!",
    "source": "registro/frase.steam_mes.STEAM-3_4-03.01",
-   "pack": false
-  },
-  {
-   "id": "en_tutor_5b1bd435_23",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Had you seen it before?",
-   "speech": "Had you seen it before?",
-   "source": "gramatica/curso_3_4/1",
    "pack": false
   },
   {
@@ -94269,6 +94179,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_68944c30_27",
+   "lang": "en",
+   "style": "tutor",
+   "text": "There might be more spoons.",
+   "speech": "There might be more spoons.",
+   "source": "gramatica/curso_3_4/3",
+   "pack": false
+  },
+  {
    "id": "en_tutor_6896fde0_31",
    "lang": "en",
    "style": "tutor",
@@ -94455,15 +94374,6 @@
    "text": "Dad drew a funny cartoon of our cat.",
    "speech": "Dad drew a funny cartoon of our cat.",
    "source": "corpus/3142/frase",
-   "pack": false
-  },
-  {
-   "id": "en_tutor_6925fdfb_14",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Show it to me!",
-   "speech": "Show it to me!",
-   "source": "gramatica/curso_2_3/2",
    "pack": false
   },
   {
@@ -97725,15 +97635,6 @@
    "pack": false
   },
   {
-   "id": "en_tutor_711657b0_28",
-   "lang": "en",
-   "style": "tutor",
-   "text": "We should have come earlier.",
-   "speech": "We should have come earlier.",
-   "source": "gramatica/curso_4_5/5",
-   "pack": false
-  },
-  {
    "id": "en_tutor_71187376_38",
    "lang": "en",
    "style": "tutor",
@@ -99153,15 +99054,6 @@
    "text": "The baby said mama for the first time.",
    "speech": "The baby said mama for the first time.",
    "source": "corpus/1536/frase",
-   "pack": false
-  },
-  {
-   "id": "en_tutor_7467f259_28",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Which is the one that works?",
-   "speech": "Which is the one that works?",
-   "source": "gramatica/curso_4_5/9",
    "pack": false
   },
   {
@@ -107625,6 +107517,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_88b48a5c_24",
+   "lang": "en",
+   "style": "tutor",
+   "text": "The sun can't have gone.",
+   "speech": "The sun can't have gone.",
+   "source": "gramatica/curso_4_5/5",
+   "pack": false
+  },
+  {
    "id": "en_tutor_88b589fd_34",
    "lang": "en",
    "style": "tutor",
@@ -112251,15 +112152,6 @@
    "pack": false
   },
   {
-   "id": "en_tutor_944550d5_27",
-   "lang": "en",
-   "style": "tutor",
-   "text": "There might be more plates.",
-   "speech": "There might be more plates.",
-   "source": "gramatica/curso_3_4/3",
-   "pack": false
-  },
-  {
    "id": "en_tutor_9448f4b9_13",
    "lang": "en",
    "style": "tutor",
@@ -116517,6 +116409,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_9eec0956_17",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Show me the star!",
+   "speech": "Show me the star!",
+   "source": "gramatica/curso_2_3/2",
+   "pack": false
+  },
+  {
    "id": "en_tutor_9eed86cc_34",
    "lang": "en",
    "style": "tutor",
@@ -117252,6 +117153,15 @@
    "text": "What grows on the ropes?",
    "speech": "What grows on the ropes?",
    "source": "tpr.4_5.xuno/s1/4_5.xuno.s1.what-grows-on-the-ropes",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_a0c5d2a8_30",
+   "lang": "en",
+   "style": "tutor",
+   "text": "As if the light were a secret!",
+   "speech": "As if the light were a secret!",
+   "source": "gramatica/curso_5_6/5",
    "pack": false
   },
   {
@@ -118542,15 +118452,6 @@
    "pack": false
   },
   {
-   "id": "en_tutor_a41d08d3_27",
-   "lang": "en",
-   "style": "tutor",
-   "text": "It's time we turned it off.",
-   "speech": "It's time we turned it off.",
-   "source": "gramatica/curso_5_6/5",
-   "pack": false
-  },
-  {
    "id": "en_tutor_a421882e_29",
    "lang": "en",
    "style": "tutor",
@@ -118908,6 +118809,15 @@
    "text": "Match colours",
    "speech": "Match colours",
    "source": "tpr.4_5.novembro/s4/4_5.novembro.s4.match-colours",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_a4fa708d_31",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Had you seen the shadow before?",
+   "speech": "Had you seen the shadow before?",
+   "source": "gramatica/curso_3_4/1",
    "pack": false
   },
   {
@@ -124410,6 +124320,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_b36745f4_44",
+   "lang": "en",
+   "style": "tutor",
+   "text": "We should have looked at the shadow earlier.",
+   "speech": "We should have looked at the shadow earlier.",
+   "source": "gramatica/curso_4_5/5",
+   "pack": false
+  },
+  {
    "id": "en_tutor_b36842ad_21",
    "lang": "en",
    "style": "tutor",
@@ -126873,6 +126792,15 @@
    "text": "Do you see squirrels in the park?",
    "speech": "Do you see squirrels in the park?",
    "source": "microcuento.curso_4_5.02/3/triada.achegar",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_ba6a9153_15",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Two big stones.",
+   "speech": "Two big stones.",
+   "source": "gramatica/curso_0_2/11",
    "pack": false
   },
   {
@@ -130710,6 +130638,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_c37e1067_21",
+   "lang": "en",
+   "style": "tutor",
+   "text": "The spoon could help.",
+   "speech": "The spoon could help.",
+   "source": "gramatica/curso_3_4/2",
+   "pack": false
+  },
+  {
    "id": "en_tutor_c381c0b8_28",
    "lang": "en",
    "style": "tutor",
@@ -131961,6 +131898,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_c691a4b1_29",
+   "lang": "en",
+   "style": "tutor",
+   "text": "The stones were in two piles.",
+   "speech": "The stones were in two piles.",
+   "source": "gramatica/curso_2_3/11",
+   "pack": false
+  },
+  {
    "id": "en_tutor_c6926fb5_31",
    "lang": "en",
    "style": "tutor",
@@ -132579,6 +132525,15 @@
    "text": "Yes! A sleepy bear! He is so sleepy!",
    "speech": "Yes! A sleepy bear! He is so sleepy!",
    "source": "microcuento.curso_4_5.01/1/recast.linguaCasa",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_c81d56ce_45",
+   "lang": "en",
+   "style": "tutor",
+   "text": "What would happen if we hit the glass harder?",
+   "speech": "What would happen if we hit the glass harder?",
+   "source": "gramatica/curso_3_4/5",
    "pack": false
   },
   {
@@ -134904,6 +134859,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_cd9b1a07_30",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Not once did you lose the map.",
+   "speech": "Not once did you lose the map.",
+   "source": "gramatica/curso_5_6/3",
+   "pack": false
+  },
+  {
    "id": "en_tutor_cdaf06db_11",
    "lang": "en",
    "style": "tutor",
@@ -135882,6 +135846,15 @@
    "text": "Yes, a friend! A little green friend!",
    "speech": "Yes, a friend! A little green friend!",
    "source": "microcuento.curso_3_4.09/3/recast.unhaPalabra",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_d02969f5_34",
+   "lang": "en",
+   "style": "tutor",
+   "text": "It's time we turned the torch off.",
+   "speech": "It's time we turned the torch off.",
+   "source": "gramatica/curso_5_6/5",
    "pack": false
   },
   {
@@ -137973,6 +137946,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_d524f3c4_32",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Yesterday the train went slowly.",
+   "speech": "Yesterday the train went slowly.",
+   "source": "gramatica/curso_3_4/11",
+   "pack": false
+  },
+  {
    "id": "en_tutor_d52e9dad_40",
    "lang": "en",
    "style": "tutor",
@@ -138231,15 +138213,6 @@
    "text": "Look, Lúa touches the water. Splash, splash! A little fish, swimming fast.",
    "speech": "Look, Lúa touches the water. Splash, splash! A little fish, swimming fast.",
    "source": "biblioteca/HIS-006",
-   "pack": false
-  },
-  {
-   "id": "en_tutor_d59508fd_11",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Two stones.",
-   "speech": "Two stones.",
-   "source": "gramatica/curso_0_2/11",
    "pack": false
   },
   {
@@ -138735,6 +138708,15 @@
    "text": "Yellow duck",
    "speech": "Yellow duck",
    "source": "tpr.0_2.marzo/s1/0_2.marzo.s1.yellow-duck",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_d713c5c5_30",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Which is the cloth that works?",
+   "speech": "Which is the cloth that works?",
+   "source": "gramatica/curso_4_5/9",
    "pack": false
   },
   {
@@ -139917,15 +139899,6 @@
    "pack": false
   },
   {
-   "id": "en_tutor_da61c3fd_24",
-   "lang": "en",
-   "style": "tutor",
-   "text": "He admitted it was hard.",
-   "speech": "He admitted it was hard.",
-   "source": "gramatica/curso_5_6/12",
-   "pack": false
-  },
-  {
    "id": "en_tutor_da625b6e_15",
    "lang": "en",
    "style": "tutor",
@@ -140688,6 +140661,15 @@
    "text": "The king showed mercy and set the prisoners free.",
    "speech": "The king showed mercy and set the prisoners free.",
    "source": "corpus/3594/frase",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_dc9f3c08_42",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Never have we hidden the treasure so well!",
+   "speech": "Never have we hidden the treasure so well!",
+   "source": "gramatica/curso_5_6/3",
    "pack": false
   },
   {
@@ -143352,6 +143334,15 @@
    "text": "Good morning, dog! Good morning, cat! Wait for me!",
    "speech": "Good morning, dog! Good morning, cat! Wait for me!",
    "source": "biblioteca/HIS-009",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_e39bd01d_39",
+   "lang": "en",
+   "style": "tutor",
+   "text": "The faces in the spoon were made by us!",
+   "speech": "The faces in the spoon were made by us!",
+   "source": "gramatica/curso_3_4/6",
    "pack": false
   },
   {
@@ -148161,6 +148152,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_f02813b7_30",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Have you been holding the cup?",
+   "speech": "Have you been holding the cup?",
+   "source": "gramatica/curso_3_4/12",
+   "pack": false
+  },
+  {
    "id": "en_tutor_f0331b10_26",
    "lang": "en",
    "style": "tutor",
@@ -148851,15 +148851,6 @@
    "text": "Scientists work in a laboratory.",
    "speech": "Scientists work in a laboratory.",
    "source": "corpus/1499/frase",
-   "pack": false
-  },
-  {
-   "id": "en_tutor_f1cb69da_26",
-   "lang": "en",
-   "style": "tutor",
-   "text": "The faces were made by us!",
-   "speech": "The faces were made by us!",
-   "source": "gramatica/curso_3_4/6",
    "pack": false
   },
   {
@@ -153426,6 +153417,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_fdeb844b_41",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Changed a little, the plane flew further.",
+   "speech": "Changed a little, the plane flew further.",
+   "source": "gramatica/curso_5_6/2",
+   "pack": false
+  },
+  {
    "id": "en_tutor_fdec9f97_35",
    "lang": "en",
    "style": "tutor",
@@ -156921,6 +156921,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_0630e5c5_40",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Ya es hora de que apaguemos la linterna.",
+   "speech": "Ya es hora de que apaguemos la linterna.",
+   "source": "gramatica/curso_5_6/5/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_06313d15_15",
    "lang": "es",
    "style": "tutor",
@@ -156937,15 +156946,6 @@
    "speech": "¡Tic, tac!",
    "source": "tpr.3_4.xaneiro/s4/3_4.xaneiro.s4.tick-tock/significado",
    "pack": true
-  },
-  {
-   "id": "es_tutor_063cfe57_12",
-   "lang": "es",
-   "style": "tutor",
-   "text": "¡Enséñamela!",
-   "speech": "¡Enséñamela!",
-   "source": "gramatica/curso_2_3/2/significado",
-   "pack": false
   },
   {
    "id": "es_tutor_063dcb39_16",
@@ -158940,6 +158940,15 @@
    "speech": "Melocotón blando",
    "source": "tpr.0_2.marzo/s4/0_2.marzo.s4.mushy-peach/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_0bb03ea5_22",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Enséñame la estrella!",
+   "speech": "¡Enséñame la estrella!",
+   "source": "gramatica/curso_2_3/2/significado",
+   "pack": false
   },
   {
    "id": "es_tutor_0bb301e1_18",
@@ -162056,15 +162065,6 @@
    "pack": true
   },
   {
-   "id": "es_tutor_14bd3fb3_33",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Cambiado un poco, voló más lejos.",
-   "speech": "Cambiado un poco, voló más lejos.",
-   "source": "gramatica/curso_5_6/2/significado",
-   "pack": false
-  },
-  {
    "id": "es_tutor_14c7ba06_32",
    "lang": "es",
    "style": "tutor",
@@ -162819,6 +162819,15 @@
    "speech": "Perder",
    "source": "tpr.4_5.febreiro/s3/4_5.febreiro.s3.lose/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_16e24d00_30",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¿Cuál es el paño que funciona?",
+   "speech": "¿Cuál es el paño que funciona?",
+   "source": "gramatica/curso_4_5/9/significado",
+   "pack": false
   },
   {
    "id": "es_tutor_16e29a1d_29",
@@ -167763,6 +167772,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_24ca1a67_46",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Las caras de la cuchara las hicimos nosotros!",
+   "speech": "¡Las caras de la cuchara las hicimos nosotros!",
+   "source": "gramatica/curso_3_4/6/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_24cd5770_36",
    "lang": "es",
    "style": "tutor",
@@ -170520,15 +170538,6 @@
    "text": "¡Sí! ¡Jabón! ¡Chap, chap!",
    "speech": "¡Sí! ¡Jabón! ¡Chap, chap!",
    "source": "biblioteca/HIS-031/significado",
-   "pack": false
-  },
-  {
-   "id": "es_tutor_2c1cd930_31",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Ya es hora de que la apaguemos.",
-   "speech": "Ya es hora de que la apaguemos.",
-   "source": "gramatica/curso_5_6/5/significado",
    "pack": false
   },
   {
@@ -176340,15 +176349,6 @@
    "pack": false
   },
   {
-   "id": "es_tutor_3d71ace0_22",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Remover podría ayudar.",
-   "speech": "Remover podría ayudar.",
-   "source": "gramatica/curso_3_4/2/significado",
-   "pack": false
-  },
-  {
    "id": "es_tutor_3d792082_21",
    "lang": "es",
    "style": "tutor",
@@ -176734,15 +176734,6 @@
    "speech": "Estuche",
    "source": "tpr.5_6.xuno/s2/5_6.xuno.s2.pencil-case/significado",
    "pack": true
-  },
-  {
-   "id": "es_tutor_3e7f85c1_28",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Ni una sola vez te perdiste.",
-   "speech": "Ni una sola vez te perdiste.",
-   "source": "gramatica/curso_5_6/3/significado",
-   "pack": false
   },
   {
    "id": "es_tutor_3e806c45_33",
@@ -177805,6 +177796,15 @@
    "speech": "Lectura de verano",
    "source": "tpr.5_6.xuno/s4/5_6.xuno.s4.summer-reading/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_41ac9e24_30",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¿Habías visto la sombra antes?",
+   "speech": "¿Habías visto la sombra antes?",
+   "source": "gramatica/curso_3_4/1/significado",
+   "pack": false
   },
   {
    "id": "es_tutor_41c1dc9f_15",
@@ -180534,6 +180534,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_48c3ecde_33",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Como si la luz fuera un secreto!",
+   "speech": "¡Como si la luz fuera un secreto!",
+   "source": "gramatica/curso_5_6/5/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_48c53899_83",
    "lang": "es",
    "style": "tutor",
@@ -180837,6 +180846,15 @@
    "text": "Y · Amarillo brillante",
    "speech": "Y · Amarillo brillante",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_49d62d57_42",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Cambiado un poco, el avión voló más lejos.",
+   "speech": "Cambiado un poco, el avión voló más lejos.",
+   "source": "gramatica/curso_5_6/2/significado",
    "pack": false
   },
   {
@@ -183675,15 +183693,6 @@
    "pack": true
   },
   {
-   "id": "es_tutor_518aa47f_24",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Estaban en dos montones.",
-   "speech": "Estaban en dos montones.",
-   "source": "gramatica/curso_2_3/11/significado",
-   "pack": false
-  },
-  {
    "id": "es_tutor_518d76b3_66",
    "lang": "es",
    "style": "tutor",
@@ -185121,6 +185130,15 @@
    "text": "¡Cógeme las manos! ¿Podemos tirar juntos? ¡Tira!",
    "speech": "¡Cógeme las manos! ¿Podemos tirar juntos? ¡Tira!",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_55fe3b91_47",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¿Qué pasaría si golpeáramos el vaso más fuerte?",
+   "speech": "¿Qué pasaría si golpeáramos el vaso más fuerte?",
+   "source": "gramatica/curso_3_4/5/significado",
    "pack": false
   },
   {
@@ -188128,15 +188146,6 @@
    "speech": "Verso",
    "source": "tpr.5_6.febreiro/s1/5_6.febreiro.s1.verse/significado",
    "pack": true
-  },
-  {
-   "id": "es_tutor_5e888c07_23",
-   "lang": "es",
-   "style": "tutor",
-   "text": "¿Llevas rato esperando?",
-   "speech": "¿Llevas rato esperando?",
-   "source": "gramatica/curso_3_4/12/significado",
-   "pack": false
   },
   {
    "id": "es_tutor_5e9053ff_5",
@@ -192104,15 +192113,6 @@
    "pack": true
   },
   {
-   "id": "es_tutor_69f87dba_19",
-   "lang": "es",
-   "style": "tutor",
-   "text": "¿Era la más grande?",
-   "speech": "¿Era la más grande?",
-   "source": "gramatica/curso_2_3/11/significado",
-   "pack": false
-  },
-  {
    "id": "es_tutor_69f9eb34_53",
    "lang": "es",
    "style": "tutor",
@@ -194516,15 +194516,6 @@
    "pack": true
   },
   {
-   "id": "es_tutor_706d54ae_32",
-   "lang": "es",
-   "style": "tutor",
-   "text": "¡Las caras las hicimos nosotros!",
-   "speech": "¡Las caras las hicimos nosotros!",
-   "source": "gramatica/curso_3_4/6/significado",
-   "pack": false
-  },
-  {
    "id": "es_tutor_70705229_50",
    "lang": "es",
    "style": "tutor",
@@ -194586,15 +194577,6 @@
    "speech": "¡Di patata!",
    "source": "tpr.2_3.xuno/s4/2_3.xuno.s4.say-cheese/significado",
    "pack": true
-  },
-  {
-   "id": "es_tutor_708f8868_26",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Puede que haya más platos.",
-   "speech": "Puede que haya más platos.",
-   "source": "gramatica/curso_3_4/3/significado",
-   "pack": false
   },
   {
    "id": "es_tutor_70935eb8_18",
@@ -200605,15 +200587,6 @@
    "speech": "¿Quién quiere ser capitán?",
    "source": "tpr.4_5.setembro/s1/4_5.setembro.s1.who-wants-to-be-captain/significado",
    "pack": true
-  },
-  {
-   "id": "es_tutor_818d2ca5_39",
-   "lang": "es",
-   "style": "tutor",
-   "text": "¿Qué pasaría si golpeáramos más fuerte?",
-   "speech": "¿Qué pasaría si golpeáramos más fuerte?",
-   "source": "gramatica/curso_3_4/5/significado",
-   "pack": false
   },
   {
    "id": "es_tutor_81952c4f_56",
@@ -207939,6 +207912,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_9657635f_44",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¿Habías estado mucho rato doblando el papel?",
+   "speech": "¿Habías estado mucho rato doblando el papel?",
+   "source": "gramatica/curso_5_6/11/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_96820fb6_49",
    "lang": "es",
    "style": "tutor",
@@ -212588,6 +212570,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_a3c4fef7_36",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Las piedras estaban en dos montones.",
+   "speech": "Las piedras estaban en dos montones.",
+   "source": "gramatica/curso_2_3/11/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_a3ce5c52_55",
    "lang": "es",
    "style": "tutor",
@@ -213200,15 +213191,6 @@
    "pack": false
   },
   {
-   "id": "es_tutor_a53820ae_26",
-   "lang": "es",
-   "style": "tutor",
-   "text": "¡Como si fuera un secreto!",
-   "speech": "¡Como si fuera un secreto!",
-   "source": "gramatica/curso_5_6/5/significado",
-   "pack": false
-  },
-  {
    "id": "es_tutor_a53911f9_38",
    "lang": "es",
    "style": "tutor",
@@ -213665,15 +213647,6 @@
    "text": "Aunque cerramos los ojos, adivinamos.",
    "speech": "Aunque cerramos los ojos, adivinamos.",
    "source": "gramatica/curso_5_6/1/significado",
-   "pack": false
-  },
-  {
-   "id": "es_tutor_a671e918_38",
-   "lang": "es",
-   "style": "tutor",
-   "text": "¡Nunca lo habíamos escondido tan bien!",
-   "speech": "¡Nunca lo habíamos escondido tan bien!",
-   "source": "gramatica/curso_5_6/3/significado",
    "pack": false
   },
   {
@@ -215897,6 +215870,15 @@
    "text": "barco",
    "speech": "barco",
    "source": "curriculo/T2.U1/vocabulario/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_ad014320_25",
+   "lang": "es",
+   "style": "tutor",
+   "text": "La cuchara podría ayudar.",
+   "speech": "La cuchara podría ayudar.",
+   "source": "gramatica/curso_3_4/2/significado",
    "pack": false
   },
   {
@@ -218912,6 +218894,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_b49e9f30_33",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Ni una sola vez perdiste el mapa.",
+   "speech": "Ni una sola vez perdiste el mapa.",
+   "source": "gramatica/curso_5_6/3/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_b4a306ab_18",
    "lang": "es",
    "style": "tutor",
@@ -220957,15 +220948,6 @@
    "text": "¿Dónde juegas con la tierra?",
    "speech": "¿Dónde juegas con la tierra?",
    "source": "significados/significado",
-   "pack": false
-  },
-  {
-   "id": "es_tutor_ba62f9ca_18",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Ayer fue despacio.",
-   "speech": "Ayer fue despacio.",
-   "source": "gramatica/curso_3_4/11/significado",
    "pack": false
   },
   {
@@ -223642,15 +223624,6 @@
    "pack": false
   },
   {
-   "id": "es_tutor_c271bee8_23",
-   "lang": "es",
-   "style": "tutor",
-   "text": "¿La habías visto antes?",
-   "speech": "¿La habías visto antes?",
-   "source": "gramatica/curso_3_4/1/significado",
-   "pack": false
-  },
-  {
    "id": "es_tutor_c2751ec7_8",
    "lang": "es",
    "style": "tutor",
@@ -224245,6 +224218,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_c42a3dec_45",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Nunca habíamos escondido el tesoro tan bien!",
+   "speech": "¡Nunca habíamos escondido el tesoro tan bien!",
+   "source": "gramatica/curso_5_6/3/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_c42fcf27_24",
    "lang": "es",
    "style": "tutor",
@@ -224279,6 +224261,15 @@
    "speech": "Chanclas",
    "source": "tpr.2_3.xuno/s4/2_3.xuno.s4.flip-flops/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_c4625d08_26",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Ayer el tren fue despacio.",
+   "speech": "Ayer el tren fue despacio.",
+   "source": "gramatica/curso_3_4/11/significado",
+   "pack": false
   },
   {
    "id": "es_tutor_c4697dbd_35",
@@ -227238,15 +227229,6 @@
    "pack": true
   },
   {
-   "id": "es_tutor_cce401ae_31",
-   "lang": "es",
-   "style": "tutor",
-   "text": "¿Habías estado esperando mucho?",
-   "speech": "¿Habías estado esperando mucho?",
-   "source": "gramatica/curso_5_6/11/significado",
-   "pack": false
-  },
-  {
    "id": "es_tutor_cce4a583_18",
    "lang": "es",
    "style": "tutor",
@@ -228271,6 +228253,15 @@
    "speech": "Refrescarse",
    "source": "tpr.0_2.xuno/s3/0_2.xuno.s3.cool-down/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_cfe6d946_49",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Él reconoció que el círculo era difícil de girar.",
+   "speech": "Él reconoció que el círculo era difícil de girar.",
+   "source": "gramatica/curso_5_6/12/significado",
+   "pack": false
   },
   {
    "id": "es_tutor_cfe9639e_11",
@@ -229925,6 +229916,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_d53f11bb_31",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¿Llevas rato sujetando el vaso?",
+   "speech": "¿Llevas rato sujetando el vaso?",
+   "source": "gramatica/curso_3_4/12/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_d542783f_48",
    "lang": "es",
    "style": "tutor",
@@ -230048,6 +230048,15 @@
    "text": "¡Sí, caja! ¿Una pelota en la caja?",
    "speech": "¡Sí, caja! ¿Una pelota en la caja?",
    "source": "biblioteca/HIS-048/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_d5a419b1_28",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Puede que haya más cucharas.",
+   "speech": "Puede que haya más cucharas.",
+   "source": "gramatica/curso_3_4/3/significado",
    "pack": false
   },
   {
@@ -231551,15 +231560,6 @@
    "speech": "¡Corre a la madriguera!",
    "source": "tpr.4_5.outubro/s2/4_5.outubro.s2.run-to-the-den/significado",
    "pack": true
-  },
-  {
-   "id": "es_tutor_da61a48c_30",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Deberíamos haber venido antes.",
-   "speech": "Deberíamos haber venido antes.",
-   "source": "gramatica/curso_4_5/5/significado",
-   "pack": false
   },
   {
    "id": "es_tutor_da61e450_41",
@@ -235441,6 +235441,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_e646df40_29",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¿Era la piedra la más grande?",
+   "speech": "¿Era la piedra la más grande?",
+   "source": "gramatica/curso_2_3/11/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_e648d241_81",
    "lang": "es",
    "style": "tutor",
@@ -235929,15 +235938,6 @@
    "text": "Violín",
    "speech": "Violín",
    "source": "significados/significado",
-   "pack": false
-  },
-  {
-   "id": "es_tutor_e7902d20_29",
-   "lang": "es",
-   "style": "tutor",
-   "text": "No puede haber sido una nube.",
-   "speech": "No puede haber sido una nube.",
-   "source": "gramatica/curso_4_5/5/significado",
    "pack": false
   },
   {
@@ -237702,15 +237702,6 @@
    "text": "Mira: un caracol. Shhh... un caracolito dormido.",
    "speech": "Mira: un caracol. Shhh... un caracolito dormido.",
    "source": "biblioteca/HIS-057/significado",
-   "pack": false
-  },
-  {
-   "id": "es_tutor_ec793fbf_25",
-   "lang": "es",
-   "style": "tutor",
-   "text": "¿Cuál es el que funciona?",
-   "speech": "¿Cuál es el que funciona?",
-   "source": "gramatica/curso_4_5/9/significado",
    "pack": false
   },
   {
@@ -239969,6 +239960,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_f36b3953_20",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Dos piedras grandes.",
+   "speech": "Dos piedras grandes.",
+   "source": "gramatica/curso_0_2/11/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_f3724cff_55",
    "lang": "es",
    "style": "tutor",
@@ -240236,15 +240236,6 @@
    "text": "Envuelve los hombros en una toalla cálida y susurra.",
    "speech": "Envuelve los hombros en una toalla cálida y susurra.",
    "source": "asamblea.primeiro_ciclo.decembro.0_2_anos/fase/4/consigna",
-   "pack": false
-  },
-  {
-   "id": "es_tutor_f435bac1_12",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Dos piedras.",
-   "speech": "Dos piedras.",
-   "source": "gramatica/curso_0_2/11/significado",
    "pack": false
   },
   {
@@ -241634,15 +241625,6 @@
    "pack": true
   },
   {
-   "id": "es_tutor_f8845486_29",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Él reconoció que era difícil.",
-   "speech": "Él reconoció que era difícil.",
-   "source": "gramatica/curso_5_6/12/significado",
-   "pack": false
-  },
-  {
    "id": "es_tutor_f887bb90_13",
    "lang": "es",
    "style": "tutor",
@@ -242552,6 +242534,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_fb1e8bcc_28",
+   "lang": "es",
+   "style": "tutor",
+   "text": "El sol no puede haberse ido.",
+   "speech": "El sol no puede haberse ido.",
+   "source": "gramatica/curso_4_5/5/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_fb241a0f_70",
    "lang": "es",
    "style": "tutor",
@@ -242567,6 +242558,15 @@
    "text": "¡Espérame! Tiptoe, tiptoe... despacio, perrito.",
    "speech": "¡Espérame! Tiptoe, tiptoe... despacio, perrito.",
    "source": "biblioteca/HIS-071/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_fb2bf25e_40",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Deberíamos haber mirado la sombra antes.",
+   "speech": "Deberíamos haber mirado la sombra antes.",
+   "source": "gramatica/curso_4_5/5/significado",
    "pack": false
   },
   {
@@ -245519,15 +245519,6 @@
    "text": "Onde está o patiño? Toca o pato da bota!",
    "speech": "Onde está o patiño? Toca o pato da bota!",
    "source": "significados/significado",
-   "pack": false
-  },
-  {
-   "id": "gl_tutor_02dc57d0_21",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Cal é o que funciona?",
-   "speech": "Cal é o que funciona?",
-   "source": "gramatica/curso_4_5/9/significado",
    "pack": false
   },
   {
@@ -248726,15 +248717,6 @@
    "pack": false
   },
   {
-   "id": "gl_tutor_0bcc1423_36",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Que pasaría se petásemos máis forte?",
-   "speech": "Que pasaría se petásemos máis forte?",
-   "source": "gramatica/curso_3_4/5/significado",
-   "pack": false
-  },
-  {
    "id": "gl_tutor_0bcd1d20_5",
    "lang": "gl",
    "style": "tutor",
@@ -249707,6 +249689,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_0e586fb5_43",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Cambiado un pouco, o avión voou máis lonxe.",
+   "speech": "Cambiado un pouco, o avión voou máis lonxe.",
+   "source": "gramatica/curso_5_6/2/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_0e5a6db4_8",
    "lang": "gl",
    "style": "tutor",
@@ -249723,15 +249714,6 @@
    "speech": "Soarse",
    "source": "tpr.0_2.maio/s3/0_2.maio.s3.blow-nose/significado",
    "pack": true
-  },
-  {
-   "id": "gl_tutor_0e752df1_24",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Non puido ser unha nube.",
-   "speech": "Non puido ser unha nube.",
-   "source": "gramatica/curso_4_5/5/significado",
-   "pack": false
   },
   {
    "id": "gl_tutor_0e7acc5e_54",
@@ -249840,15 +249822,6 @@
    "speech": "Cruzar a rúa",
    "source": "tpr.2_3.xaneiro/s3/2_3.xaneiro.s3.cross-the-road/significado",
    "pack": true
-  },
-  {
-   "id": "gl_tutor_0ec86276_29",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Xa é hora de que a apaguemos.",
-   "speech": "Xa é hora de que a apaguemos.",
-   "source": "gramatica/curso_5_6/5/significado",
-   "pack": false
   },
   {
    "id": "gl_tutor_0ed19bb6_62",
@@ -252503,15 +252476,6 @@
    "pack": true
   },
   {
-   "id": "gl_tutor_15cdcaa8_13",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Vírala antes?",
-   "speech": "Vírala antes?",
-   "source": "gramatica/curso_3_4/1/significado",
-   "pack": false
-  },
-  {
    "id": "gl_tutor_15d4184e_52",
    "lang": "gl",
    "style": "tutor",
@@ -254285,15 +254249,6 @@
    "pack": false
   },
   {
-   "id": "gl_tutor_1ab093bb_26",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Estiveras agardando moito?",
-   "speech": "Estiveras agardando moito?",
-   "source": "gramatica/curso_5_6/11/significado",
-   "pack": false
-  },
-  {
    "id": "gl_tutor_1ab82275_17",
    "lang": "gl",
    "style": "tutor",
@@ -255662,6 +255617,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_1e8984d0_30",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Levas tempo suxeitando o vaso?",
+   "speech": "Levas tempo suxeitando o vaso?",
+   "source": "gramatica/curso_3_4/12/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_1e90c0b4_12",
    "lang": "gl",
    "style": "tutor",
@@ -255677,15 +255641,6 @@
    "text": "Podes camiñar cos dedos coma a xoaniña pequeniña? Tap, tap, tap!",
    "speech": "Podes camiñar cos dedos coma a xoaniña pequeniña? Tap, tap, tap!",
    "source": "biblioteca/HIS-092/significado",
-   "pack": false
-  },
-  {
-   "id": "gl_tutor_1e99faa8_30",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Nin unha soa vez te perdiches.",
-   "speech": "Nin unha soa vez te perdiches.",
-   "source": "gramatica/curso_5_6/3/significado",
    "pack": false
   },
   {
@@ -261557,15 +261512,6 @@
    "pack": false
   },
   {
-   "id": "gl_tutor_2f581dee_27",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Nunca o escondemos tan ben!",
-   "speech": "Nunca o escondemos tan ben!",
-   "source": "gramatica/curso_5_6/3/significado",
-   "pack": false
-  },
-  {
    "id": "gl_tutor_2f639952_28",
    "lang": "gl",
    "style": "tutor",
@@ -263461,6 +263407,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_3402092e_30",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Debiamos mirar a sombra antes.",
+   "speech": "Debiamos mirar a sombra antes.",
+   "source": "gramatica/curso_4_5/5/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_3402898a_30",
    "lang": "gl",
    "style": "tutor",
@@ -264260,6 +264215,15 @@
    "speech": "Copa da árbore",
    "source": "tpr.2_3.novembro/s2/2_3.novembro.s2.treetop/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_3654bf2c_34",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "As pedras estaban en dous montóns.",
+   "speech": "As pedras estaban en dous montóns.",
+   "source": "gramatica/curso_2_3/11/significado",
+   "pack": false
   },
   {
    "id": "gl_tutor_36576a07_35",
@@ -265232,15 +265196,6 @@
    "speech": "Suave e amodo",
    "source": "tpr.0_2.xaneiro/s4/0_2.xaneiro.s4.soft-and-slow/significado",
    "pack": true
-  },
-  {
-   "id": "gl_tutor_3937a9b2_18",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Era a máis grande?",
-   "speech": "Era a máis grande?",
-   "source": "gramatica/curso_2_3/11/significado",
-   "pack": false
   },
   {
    "id": "gl_tutor_394fd1d6_39",
@@ -267049,6 +267004,15 @@
    "text": "Mira, un polbo tímido detrás da pedra. Shhh... asoma.",
    "speech": "Mira, un polbo tímido detrás da pedra. Shhh... asoma.",
    "source": "biblioteca/HIS-089/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_3f37292e_24",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "A culler podería axudar.",
+   "speech": "A culler podería axudar.",
+   "source": "gramatica/curso_3_4/2/significado",
    "pack": false
   },
   {
@@ -269376,15 +269340,6 @@
    "text": "Mira, unha pelota vermella debaixo da mesa. Tap, tap! Agora ti.",
    "speech": "Mira, unha pelota vermella debaixo da mesa. Tap, tap! Agora ti.",
    "source": "biblioteca/HIS-078/significado",
-   "pack": false
-  },
-  {
-   "id": "gl_tutor_45e88565_22",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Levas tempo agardando?",
-   "speech": "Levas tempo agardando?",
-   "source": "gramatica/curso_3_4/12/significado",
    "pack": false
   },
   {
@@ -275414,6 +275369,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_565fc290_48",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "El recoñeceu que o círculo era difícil de xirar.",
+   "speech": "El recoñeceu que o círculo era difícil de xirar.",
+   "source": "gramatica/curso_5_6/12/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_5665d0c0_4",
    "lang": "gl",
    "style": "tutor",
@@ -275690,15 +275654,6 @@
    "text": "Pequenos tremores de pulso.",
    "speech": "Pequenos tremores de pulso.",
    "source": "asamblea.primeiro_ciclo.xuno.2_3_anos/fase/3/cmd/cmd.xuno.2_3.01/accionFisica",
-   "pack": false
-  },
-  {
-   "id": "gl_tutor_574a481e_12",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Dúas pedras.",
-   "speech": "Dúas pedras.",
-   "source": "gramatica/curso_0_2/11/significado",
    "pack": false
   },
   {
@@ -277860,15 +277815,6 @@
    "text": "Si, porque está quente! O caldo está quente de máis para o gato.",
    "speech": "Si, porque está quente! O caldo está quente de máis para o gato.",
    "source": "biblioteca/HIS-074/significado",
-   "pack": false
-  },
-  {
-   "id": "gl_tutor_5d0aa6df_24",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Estaban en dous montóns.",
-   "speech": "Estaban en dous montóns.",
-   "source": "gramatica/curso_2_3/11/significado",
    "pack": false
   },
   {
@@ -280145,6 +280091,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_63285a91_39",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Estiveras moito tempo dobrando o papel?",
+   "speech": "Estiveras moito tempo dobrando o papel?",
+   "source": "gramatica/curso_5_6/11/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_6330e899_16",
    "lang": "gl",
    "style": "tutor",
@@ -281549,6 +281504,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_67682a2e_24",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "O sol non puido marchar.",
+   "speech": "O sol non puido marchar.",
+   "source": "gramatica/curso_4_5/5/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_676b2f16_6",
    "lang": "gl",
    "style": "tutor",
@@ -282482,15 +282446,6 @@
    "text": "Abrir e pechar dous dedos",
    "speech": "Abrir e pechar dous dedos",
    "source": "significados/significado",
-   "pack": false
-  },
-  {
-   "id": "gl_tutor_6a852a97_15",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Onte foi amodo.",
-   "speech": "Onte foi amodo.",
-   "source": "gramatica/curso_3_4/11/significado",
    "pack": false
   },
   {
@@ -283715,6 +283670,15 @@
    "text": "Só supervisa a quenda; a fórmula dina os escolares.",
    "speech": "Só supervisa a quenda; a fórmula dina os escolares.",
    "source": "asamblea.segundo_ciclo.decembro.6_infantil/fase/3/cmd/cmd.decembro.6i.03/modeladoDocente",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_6df2f1c9_34",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Nin unha soa vez perdiches o mapa.",
+   "speech": "Nin unha soa vez perdiches o mapa.",
+   "source": "gramatica/curso_5_6/3/significado",
    "pack": false
   },
   {
@@ -288934,15 +288898,6 @@
    "pack": true
   },
   {
-   "id": "gl_tutor_7cb3af1c_9",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Ensínama!",
-   "speech": "Ensínama!",
-   "source": "gramatica/curso_2_3/2/significado",
-   "pack": false
-  },
-  {
    "id": "gl_tutor_7cbaddd1_25",
    "lang": "gl",
    "style": "tutor",
@@ -289993,6 +289948,15 @@
    "text": "Tes un abrigo para os días de vento? De que cor é?",
    "speech": "Tes un abrigo para os días de vento? De que cor é?",
    "source": "biblioteca/HIS-077/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_803b737a_33",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "As caras da culler fixémolas nós!",
+   "speech": "As caras da culler fixémolas nós!",
+   "source": "gramatica/curso_3_4/6/significado",
    "pack": false
   },
   {
@@ -292544,15 +292508,6 @@
    "speech": "Darse a man",
    "source": "tpr.2_3.setembro/s4/2_3.setembro.s4.hold-hands/significado",
    "pack": true
-  },
-  {
-   "id": "gl_tutor_87761894_23",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Remexer podería axudar.",
-   "speech": "Remexer podería axudar.",
-   "source": "gramatica/curso_3_4/2/significado",
-   "pack": false
   },
   {
    "id": "gl_tutor_87836aa5_19",
@@ -298434,15 +298389,6 @@
    "pack": false
   },
   {
-   "id": "gl_tutor_96480448_23",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "As caras fixémolas nós!",
-   "speech": "As caras fixémolas nós!",
-   "source": "gramatica/curso_3_4/6/significado",
-   "pack": false
-  },
-  {
    "id": "gl_tutor_965b70ec_41",
    "lang": "gl",
    "style": "tutor",
@@ -298992,12 +298938,12 @@
    "pack": true
   },
   {
-   "id": "gl_tutor_979fce8f_35",
+   "id": "gl_tutor_97a64297_28",
    "lang": "gl",
    "style": "tutor",
-   "text": "Cambiado un pouco, voou máis lonxe.",
-   "speech": "Cambiado un pouco, voou máis lonxe.",
-   "source": "gramatica/curso_5_6/2/significado",
+   "text": "Pode que haxa máis culleres.",
+   "speech": "Pode que haxa máis culleres.",
+   "source": "gramatica/curso_3_4/3/significado",
    "pack": false
   },
   {
@@ -301824,6 +301770,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_9fd0e093_19",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Ensíname a estrela!",
+   "speech": "Ensíname a estrela!",
+   "source": "gramatica/curso_2_3/2/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_9fd1689f_75",
    "lang": "gl",
    "style": "tutor",
@@ -303825,6 +303780,15 @@
    "text": "Podes soprar unha castaña quente? Sopra, sopra… aquí tes!",
    "speech": "Podes soprar unha castaña quente? Sopra, sopra… aquí tes!",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_a5e834e3_22",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Onte o tren foi amodo.",
+   "speech": "Onte o tren foi amodo.",
+   "source": "gramatica/curso_3_4/11/significado",
    "pack": false
   },
   {
@@ -307887,15 +307851,6 @@
    "pack": true
   },
   {
-   "id": "gl_tutor_b1b42d8d_29",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "El recoñeceu que era difícil.",
-   "speech": "El recoñeceu que era difícil.",
-   "source": "gramatica/curso_5_6/12/significado",
-   "pack": false
-  },
-  {
    "id": "gl_tutor_b1c2a8a3_53",
    "lang": "gl",
    "style": "tutor",
@@ -308487,6 +308442,15 @@
    "text": "Si, o oso quedou quieto!",
    "speech": "Si, o oso quedou quieto!",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_b361f0a7_21",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Viras a sombra antes?",
+   "speech": "Viras a sombra antes?",
+   "source": "gramatica/curso_3_4/1/significado",
    "pack": false
   },
   {
@@ -315184,6 +315148,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_c7d702ff_26",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Era a pedra a máis grande?",
+   "speech": "Era a pedra a máis grande?",
+   "source": "gramatica/curso_2_3/11/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_c7ddd7a7_59",
    "lang": "gl",
    "style": "tutor",
@@ -317866,6 +317839,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_cfb3a1e3_30",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Coma se a luz fose un segredo!",
+   "speech": "Coma se a luz fose un segredo!",
+   "source": "gramatica/curso_5_6/5/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_cfb5a606_17",
    "lang": "gl",
    "style": "tutor",
@@ -320121,15 +320103,6 @@
    "pack": false
   },
   {
-   "id": "gl_tutor_d5e7da99_26",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Pode que haxa máis pratos.",
-   "speech": "Pode que haxa máis pratos.",
-   "source": "gramatica/curso_3_4/3/significado",
-   "pack": false
-  },
-  {
    "id": "gl_tutor_d5ea9395_18",
    "lang": "gl",
    "style": "tutor",
@@ -320794,6 +320767,15 @@
    "speech": "Horario",
    "source": "tpr.4_5.xaneiro/s3/4_5.xaneiro.s3.timetable/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_d7d5bce3_43",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Que pasaría se petásemos o vaso máis forte?",
+   "speech": "Que pasaría se petásemos o vaso máis forte?",
+   "source": "gramatica/curso_3_4/5/significado",
+   "pack": false
   },
   {
    "id": "gl_tutor_d7d6ae31_9",
@@ -322998,6 +322980,15 @@
    "text": "Envolve os ombreiros nunha toalla morna e susurra.",
    "speech": "Envolve os ombreiros nunha toalla morna e susurra.",
    "source": "asamblea.primeiro_ciclo.decembro.0_2_anos/fase/4/consigna",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_de8176c7_38",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Xa é hora de que apaguemos a lanterna.",
+   "speech": "Xa é hora de que apaguemos a lanterna.",
+   "source": "gramatica/curso_5_6/5/significado",
    "pack": false
   },
   {
@@ -327736,15 +327727,6 @@
    "pack": false
   },
   {
-   "id": "gl_tutor_ec7f76b3_19",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Debiamos vir antes.",
-   "speech": "Debiamos vir antes.",
-   "source": "gramatica/curso_4_5/5/significado",
-   "pack": false
-  },
-  {
    "id": "gl_tutor_ec89f66e_11",
    "lang": "gl",
    "style": "tutor",
@@ -329299,6 +329281,15 @@
    "text": "Si, un ruxido baixiño! Grrr!",
    "speech": "Si, un ruxido baixiño! Grrr!",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_f0f71484_20",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Dúas pedras grandes.",
+   "speech": "Dúas pedras grandes.",
+   "source": "gramatica/curso_0_2/11/significado",
    "pack": false
   },
   {
@@ -330922,15 +330913,6 @@
    "pack": true
   },
   {
-   "id": "gl_tutor_f5713603_24",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Coma se fose un segredo!",
-   "speech": "Coma se fose un segredo!",
-   "source": "gramatica/curso_5_6/5/significado",
-   "pack": false
-  },
-  {
    "id": "gl_tutor_f57288d6_10",
    "lang": "gl",
    "style": "tutor",
@@ -331693,6 +331675,15 @@
    "text": "Baixa o pulso do pandeiro e camiña pesadamente.",
    "speech": "Baixa o pulso do pandeiro e camiña pesadamente.",
    "source": "asamblea.segundo_ciclo.abril.4_infantil/fase/3/cmd/cmd.abril.4i.02/modeladoDocente",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_f7818266_26",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Cal é o pano que funciona?",
+   "speech": "Cal é o pano que funciona?",
+   "source": "gramatica/curso_4_5/9/significado",
    "pack": false
   },
   {
@@ -333961,6 +333952,15 @@
    "text": "Mira, Lúa sopra. Sopra, sopra!",
    "speech": "Mira, Lúa sopra. Sopra, sopra!",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_fe5147a5_35",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Nunca escondemos o tesouro tan ben!",
+   "speech": "Nunca escondemos o tesouro tan ben!",
+   "source": "gramatica/curso_5_6/3/significado",
    "pack": false
   },
   {

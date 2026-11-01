@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../leccions/views/calendario_de_leccions_screen.dart';
+
 import '../../../core/audio/offline_audio_service.dart';
 import '../../../core/localization/app_language.dart';
 import '../../../core/storage/calendario_store.dart';
@@ -92,16 +94,26 @@ class _PortalFamiliasScreenState extends State<PortalFamiliasScreen> {
           audioService: widget.audioService,
           agora: widget.agora,
         ),
-        // Con clave: cambiar a idade en Hoxe abre o calendario desa idade.
-        CalendarioFogarScreen(
-          key: ValueKey('calendario_$_curso'),
-          repository: widget.repository,
-          store: _store,
-          initialLanguage: lang,
+        // O-20261101-1: el calendario de lecciones; el de antes, dentro.
+        CalendarioDeLeccionsScreen(
+          key: ValueKey('calendario_leccions_$_curso'),
+          cursoId: _curso,
+          onCambiarCurso: _cambiarCurso,
+          language: lang,
           onLanguageChanged: _cambiarLingua,
           audioService: widget.audioService,
-          initialCursoId: _curso,
+          paraAula: false,
           agora: widget.agora,
+          calendarioCompleto: (_) => CalendarioFogarScreen(
+            key: ValueKey('calendario_$_curso'),
+            repository: widget.repository,
+            store: _store,
+            initialLanguage: lang,
+            onLanguageChanged: _cambiarLingua,
+            audioService: widget.audioService,
+            initialCursoId: _curso,
+            agora: widget.agora,
+          ),
         ),
         ExplorarFamiliasScreen(
           repository: widget.repository,
