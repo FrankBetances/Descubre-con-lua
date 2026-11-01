@@ -1029,9 +1029,9 @@
       "es": "La hoja cae."
      },
      {
-      "en": "Two stones.",
-      "gl": "Dúas pedras.",
-      "es": "Dos piedras."
+      "en": "Two big stones.",
+      "gl": "Dúas pedras grandes.",
+      "es": "Dos piedras grandes."
      }
     ]
    },
@@ -1276,14 +1276,14 @@
       "es": "La hoja era pequeña."
      },
      {
-      "en": "They were in two piles.",
-      "gl": "Estaban en dous montóns.",
-      "es": "Estaban en dos montones."
+      "en": "The stones were in two piles.",
+      "gl": "As pedras estaban en dous montóns.",
+      "es": "Las piedras estaban en dos montones."
      },
      {
-      "en": "Was it the biggest?",
-      "gl": "Era a máis grande?",
-      "es": "¿Era la más grande?"
+      "en": "Was the stone the biggest?",
+      "gl": "Era a pedra a máis grande?",
+      "es": "¿Era la piedra la más grande?"
      }
     ]
    },
@@ -1356,9 +1356,9 @@
       "es": "Encontré la estrella yo solo."
      },
      {
-      "en": "Show it to me!",
-      "gl": "Ensínama!",
-      "es": "¡Enséñamela!"
+      "en": "Show me the star!",
+      "gl": "Ensíname a estrela!",
+      "es": "¡Enséñame la estrella!"
      }
     ]
    },
@@ -1523,9 +1523,9 @@
       "es": "El tren ha bajado."
      },
      {
-      "en": "Yesterday it went slowly.",
-      "gl": "Onte foi amodo.",
-      "es": "Ayer fue despacio."
+      "en": "Yesterday the train went slowly.",
+      "gl": "Onte o tren foi amodo.",
+      "es": "Ayer el tren fue despacio."
      },
      {
       "en": "Today it has gone fast!",
@@ -1558,9 +1558,9 @@
       "es": "Llevo un rato tirando del hilo."
      },
      {
-      "en": "Have you been waiting?",
-      "gl": "Levas tempo agardando?",
-      "es": "¿Llevas rato esperando?"
+      "en": "Have you been holding the cup?",
+      "gl": "Levas tempo suxeitando o vaso?",
+      "es": "¿Llevas rato sujetando el vaso?"
      }
     ]
    },
@@ -1583,9 +1583,9 @@
       "es": "La habíamos dibujado antes de cenar."
      },
      {
-      "en": "Had you seen it before?",
-      "gl": "Vírala antes?",
-      "es": "¿La habías visto antes?"
+      "en": "Had you seen the shadow before?",
+      "gl": "Viras a sombra antes?",
+      "es": "¿Habías visto la sombra antes?"
      }
     ]
    },
@@ -1603,9 +1603,9 @@
       "es": "Tiene que estar frío."
      },
      {
-      "en": "Stirring could help.",
-      "gl": "Remexer podería axudar.",
-      "es": "Remover podría ayudar."
+      "en": "The spoon could help.",
+      "gl": "A culler podería axudar.",
+      "es": "La cuchara podría ayudar."
      },
      {
       "en": "It can't be warm.",
@@ -1618,9 +1618,9 @@
     "punto": 25,
     "frases": [
      {
-      "en": "There might be more plates.",
-      "gl": "Pode que haxa máis pratos.",
-      "es": "Puede que haya más platos."
+      "en": "There might be more spoons.",
+      "gl": "Pode que haxa máis culleres.",
+      "es": "Puede que haya más cucharas."
      },
      {
       "en": "This must be your spoon.",
@@ -1683,9 +1683,9 @@
       "es": "Si tuviera una cuchara, tocaría."
      },
      {
-      "en": "What would happen if we tapped harder?",
-      "gl": "Que pasaría se petásemos máis forte?",
-      "es": "¿Qué pasaría si golpeáramos más fuerte?"
+      "en": "What would happen if we hit the glass harder?",
+      "gl": "Que pasaría se petásemos o vaso máis forte?",
+      "es": "¿Qué pasaría si golpeáramos el vaso más fuerte?"
      }
     ]
    },
@@ -1708,9 +1708,9 @@
       "es": "Las cucharas se guardan."
      },
      {
-      "en": "The faces were made by us!",
-      "gl": "As caras fixémolas nós!",
-      "es": "¡Las caras las hicimos nosotros!"
+      "en": "The faces in the spoon were made by us!",
+      "gl": "As caras da culler fixémolas nós!",
+      "es": "¡Las caras de la cuchara las hicimos nosotros!"
      }
     ]
    }
@@ -1735,9 +1735,9 @@
       "es": "El peluche que se hizo daño en la pierna está bien."
      },
      {
-      "en": "Which is the one that works?",
-      "gl": "Cal é o que funciona?",
-      "es": "¿Cuál es el que funciona?"
+      "en": "Which is the cloth that works?",
+      "gl": "Cal é o pano que funciona?",
+      "es": "¿Cuál es el paño que funciona?"
      }
     ]
    },
@@ -1930,14 +1930,14 @@
       "es": "Tu sombra puede haber crecido."
      },
      {
-      "en": "We should have come earlier.",
-      "gl": "Debiamos vir antes.",
-      "es": "Deberíamos haber venido antes."
+      "en": "We should have looked at the shadow earlier.",
+      "gl": "Debiamos mirar a sombra antes.",
+      "es": "Deberíamos haber mirado la sombra antes."
      },
      {
-      "en": "It can't have been a cloud.",
-      "gl": "Non puido ser unha nube.",
-      "es": "No puede haber sido una nube."
+      "en": "The sun can't have gone.",
+      "gl": "O sol non puido marchar.",
+      "es": "El sol no puede haberse ido."
      }
     ]
    },
@@ -2037,9 +2037,9 @@
       "es": "Habías estado buscando el lado igual."
      },
      {
-      "en": "Had you been waiting long?",
-      "gl": "Estiveras agardando moito?",
-      "es": "¿Habías estado esperando mucho?"
+      "en": "Had you been folding the paper long?",
+      "gl": "Estiveras moito tempo dobrando o papel?",
+      "es": "¿Habías estado mucho rato doblando el papel?"
      }
     ]
    },
@@ -2062,9 +2062,9 @@
       "es": "Ella explicó que los colores se mezclan."
      },
      {
-      "en": "He admitted it was hard.",
-      "gl": "El recoñeceu que era difícil.",
-      "es": "Él reconoció que era difícil."
+      "en": "He admitted the circle was hard to spin.",
+      "gl": "El recoñeceu que o círculo era difícil de xirar.",
+      "es": "Él reconoció que el círculo era difícil de girar."
      }
     ]
    },
@@ -2112,9 +2112,9 @@
       "es": "Contando los pasos, lo medimos."
      },
      {
-      "en": "Changed a little, it flew further.",
-      "gl": "Cambiado un pouco, voou máis lonxe.",
-      "es": "Cambiado un poco, voló más lejos."
+      "en": "Changed a little, the plane flew further.",
+      "gl": "Cambiado un pouco, o avión voou máis lonxe.",
+      "es": "Cambiado un poco, el avión voló más lejos."
      }
     ]
    },
@@ -2122,9 +2122,9 @@
     "punto": 45,
     "frases": [
      {
-      "en": "Never have we hidden it so well!",
-      "gl": "Nunca o escondemos tan ben!",
-      "es": "¡Nunca lo habíamos escondido tan bien!"
+      "en": "Never have we hidden the treasure so well!",
+      "gl": "Nunca escondemos o tesouro tan ben!",
+      "es": "¡Nunca habíamos escondido el tesoro tan bien!"
      },
      {
       "en": "Only on the map can you find it.",
@@ -2132,9 +2132,9 @@
       "es": "Solo en el mapa puedes encontrarlo."
      },
      {
-      "en": "Not once did you get lost.",
-      "gl": "Nin unha soa vez te perdiches.",
-      "es": "Ni una sola vez te perdiste."
+      "en": "Not once did you lose the map.",
+      "gl": "Nin unha soa vez perdiches o mapa.",
+      "es": "Ni una sola vez perdiste el mapa."
      },
      {
       "en": "Rarely is a treasure so close!",
@@ -2182,14 +2182,14 @@
       "es": "Imagina que ves una luz: ¿qué dirías?"
      },
      {
-      "en": "It's time we turned it off.",
-      "gl": "Xa é hora de que a apaguemos.",
-      "es": "Ya es hora de que la apaguemos."
+      "en": "It's time we turned the torch off.",
+      "gl": "Xa é hora de que apaguemos a lanterna.",
+      "es": "Ya es hora de que apaguemos la linterna."
      },
      {
-      "en": "As if it were a secret!",
-      "gl": "Coma se fose un segredo!",
-      "es": "¡Como si fuera un secreto!"
+      "en": "As if the light were a secret!",
+      "gl": "Coma se a luz fose un segredo!",
+      "es": "¡Como si la luz fuera un secreto!"
      }
     ]
    },

@@ -354,6 +354,37 @@ def revisar(d):
         for m, x in ms.items():
             if len(x["frases"]) != 4:
                 fallos.append(f"{c} {m}: {len(x['frases'])} frases")
+    # O-20261101-1: cada frase habla de su STEAM: comparte al menos una
+    # palabra con lo que el experimento pone en juego (STEAM_EN y sus órdenes).
+    import re
+    from ruta_48 import STEAM_EN
+    steam = {(x["curso"], x["mes"]): x for x in
+             json.loads((C / "steam" / "steam_do_mes.json").read_text())["experimentos"]}
+    vacias = set("a an the is are am it its i you we they he she my your our this that these those to of "
+                 "in on at and or but be was were will can do did not no yes so then now some many one "
+                 "two very what who where how which with for from by as if".split())
+
+    def raiz(w):
+        for suf in ("ing", "ed", "es", "s"):
+            if w.endswith(suf) and len(w) - len(suf) >= 3:
+                return w[:-len(suf)]
+        return w
+
+    def pal(t):
+        # La palabra, sin la -s del plural y sin su terminación: «stones»
+        # casa con «stone» y «stirring» con «stir».
+        out = set()
+        for w in re.findall(r"[a-z]+", t.lower()):
+            if w not in vacias and len(w) > 2:
+                out |= {w, raiz(w), w[:-1] if w.endswith("s") else w}
+        return out
+    for c, ms in d["ruta"].items():
+        for m, x in ms.items():
+            st = steam[(c, int(m))]
+            sv = pal(" ".join(o["en"] for o in st["ordes"]) + " " + STEAM_EN[c][int(m)])
+            for k, f in enumerate(x["frases"]):
+                if not pal(f["en"]) & sv:
+                    fallos.append(f"{c} {m} semana {k + 1}: «{f['en']}» no habla de su STEAM")
     # Progresión real: a lo largo de los 50 meses, de 0-2 en septiembre a
     # 5-6 en junio, la unidad nunca vuelve atrás.
     seq = [d["ruta"][c][str(m)]["punto"] for c in RUTA_48 for m in MESES]

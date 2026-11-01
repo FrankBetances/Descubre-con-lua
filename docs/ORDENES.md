@@ -131,3 +131,14 @@ Estado: abierta
 - [x] Se ve cómo se avanza: antes, ahora y después en Hoy, y la unidad de cada tema en el camino · evidencia: test/features/leccions/leccions_test.dart («dónde estamos e o de hoxe, sen baixar» y «o camiño dos 10 temas, coa lección de agora»)
 - [x] Las frases nuevas tienen su voz · evidencia: tools/check_voice_coverage.py (run 107 de Generate Voice Assets en verde)
 - [x] Mergeado en main con CI en verde · evidencia: docs/ORDENES.md (PR #39, run 40778207068 en verde, merge 0c7f550f)
+
+## O-20261101-1 · Terminar lo pendiente y rehacer la UX de casa y del aula
+Estado: abierta
+> Termina todo el trabajo pendiente además queda pendiente completar las mayorías ux UI de casa y también reformar y mejorar la del aula porque también es horrible
+
+- [ ] 0-2 años: los 10 temas con su contraste de sonido (par del banco y nota en gl y es). Pendiente de Frank: el documento de currículo empieza a los 18 meses y el gate deja 0-2 sin contraste a propósito · evidencia:
+- [x] Cada frase de la unidad comparte al menos una palabra con su STEAM, en las 200 semanas · evidencia: tools/gen_gramatica.py (revisar: falla si una frase no nombra nada de su STEAM; 21 frases reescritas)
+- [ ] Cada palabra nueva sale en el cuento de su semana, en las 200 semanas. Hecho en 4-5 años (142 de 142, gate en tools/gen_leccions.py); las otras cuatro edades, después de que Frank dé 4-5 por buena (R∞.6) · evidencia:
+- [ ] Na casa → Hoy, rehecho: lo de la semana sin bajar a 412×915, una sola columna clara, sin ruido; capturas gl y es en escritorio · evidencia:
+- [ ] Na escola → Hoy y el Modo Aula, rehechos con la misma lección de la semana, la unidad y el STEAM; capturas gl y es en escritorio · evidencia:
+- [ ] Mergeado en main con CI en verde · evidencia:

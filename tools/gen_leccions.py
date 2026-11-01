@@ -25,6 +25,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import sys
 from pathlib import Path
 
@@ -365,6 +366,17 @@ def peza_de(item, que, sig):
     return p
 
 
+# Edades en las que cada palabra nueva ya sale en el cuento de su semana
+# (O-20261101-1). Se entregan de una en una (R∞.6): primero 4-5 años.
+CONTO_COMPLETO = {"curso_4_5"}
+# El texto de cada cuento de la semana, por lección, para revisar.
+CONTO_TEXTO = {}
+
+
+def sen_puntos(t):
+    return re.sub(r"[!.?¡¿,]", "", t).strip().lower()
+
+
 def revisar(saida):
     """Lo que tumba el gate: un tema con el título de otro, una palabra nueva
     en dos edades o una semana sin nada nuevo."""
@@ -381,6 +393,10 @@ def revisar(saida):
                     fallos.append(f"{l['id']}: ninguna palabra nueva es de la clase de su unidad ({cu})")
                 if len(l["novas"]) < MINIMO_NOVAS:
                     fallos.append(f"{l['id']}: {len(l['novas'])} palabras nuevas")
+                if curso in CONTO_COMPLETO:
+                    for p in l["novas"]:
+                        if sen_puntos(p["en"]) not in CONTO_TEXTO.get(l["id"], ""):
+                            fallos.append(f"{l['id']}: «{p['en']}» no sale en el cuento de su semana")
                 dias = " ".join(d["texto"]["gl"] for d in l["dias"])
                 for p in l["novas"]:
                     if f"«{p['en']}»" not in dias:
@@ -601,6 +617,7 @@ def main():
                 if r.get("frase"):
                     r["frase"] = con_significado(r["frase"], idx)
                 lid = f"{curso}.{n_mes:02d}.{semana}"
+                CONTO_TEXTO[lid] = sen_puntos(json.dumps((cs or {}).get("paginas", []), ensure_ascii=False))
                 leccions.append({
                     "id": lid,
                     "numero": semana,

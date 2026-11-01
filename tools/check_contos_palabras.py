@@ -54,6 +54,16 @@ def main() -> int:
         for s in t['semanas']:
             semanas[(t['curso'], t['orden'], s['semana'])] = s['palabras']
 
+    # O-20261101-1: la página «Y además» (extra) cuenta, además, las palabras
+    # nuevas de la lección de esa semana que no son del banco.
+    lec = json.loads((RAIZ / 'assets/content/leccions/leccions.json').read_text(encoding='utf-8'))['cursos']
+    novas = {}
+    for cur, v in lec.items():
+        for i, u in enumerate(v['unidades']):
+            for l in u['leccions']:
+                novas[(cur, i + 1, l['numero'])] = {
+                    clave(p['en']): {'gl': p.get('gl'), 'es': p.get('es'), 'en': p['en']} for p in l['novas']}
+
     contos = json.loads(CONTOS.read_text(encoding='utf-8'))
     semanais = [c for c in contos if c.get('semanaSugerida')]
     erros: list[str] = []
@@ -68,12 +78,15 @@ def main() -> int:
         usadas: list[str] = []
         for p in c['paginas']:
             pt = f"{tag} p{p.get('numero')}"
+            por_clave_p = por_clave
+            if p.get('extra'):
+                por_clave_p = {**novas.get((c['cursoId'], c['mesNumero'], c['semanaSugerida']), {}), **por_clave}
             declaradas = p.get('palabras') or []
             if not 1 <= len(declaradas) <= MAX_POR_PAXINA:
                 erros.append(f'{pt}: {len(declaradas)} palabras; van de 1 a {MAX_POR_PAXINA}')
             claves = [clave(d) for d in declaradas]
             for d, kd in zip(declaradas, claves):
-                if kd not in por_clave:
+                if kd not in por_clave_p:
                     erros.append(f'{pt}: «{d}» non é da semana')
             for lang in ('gl', 'es'):
                 texto = p['texto'].get(lang, '')
@@ -85,7 +98,7 @@ def main() -> int:
                     if kd not in no_texto:
                         erros.append(f'{pt} {lang}: «{d}» está declarada e non vai entre “…”')
             for campo, lang in (('vocabularioClave', 'gl'), ('vocabularioClaveEs', 'es')):
-                esperado = [por_clave[kd][lang] for kd in claves if kd in por_clave]
+                esperado = [por_clave_p[kd][lang] for kd in claves if kd in por_clave_p]
                 if p.get(campo) != esperado:
                     erros.append(f'{pt}: {campo} {p.get(campo)} non é {esperado}')
             usadas += claves
