@@ -282,8 +282,10 @@ class _HoxeFamiliasScreenState extends State<HoxeFamiliasScreen> {
           children: [
             // O-20261028-4: la edad, la fecha y el título en una fila, para
             // que la lección entre en la primera pantalla.
-            Row(
-              crossAxisAlignment: CrossAxisAlignment.center,
+            Wrap(
+              spacing: 12,
+              runSpacing: 6,
+              crossAxisAlignment: WrapCrossAlignment.center,
               children: [
                 SelectorIdade(
                   cursoId: widget.cursoId,
@@ -291,58 +293,56 @@ class _HoxeFamiliasScreenState extends State<HoxeFamiliasScreen> {
                   onCambiar: widget.onCambiarCurso,
                 ),
                 const SizedBox(width: 12),
-                Expanded(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        _data(lang).toUpperCase(),
-                        key: const Key('hoxe_data'),
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      _data(lang).toUpperCase(),
+                      key: const Key('hoxe_data'),
+                      style: const TextStyle(
+                        fontSize: 12,
+                        fontWeight: FontWeight.w800,
+                        letterSpacing: 0.6,
+                        color: AppTheme.textSecondary,
+                      ),
+                    ),
+                    Semantics(
+                      header: true,
+                      child: Text(
+                        _titulo(lang),
+                        key: const Key('hoxe_titulo'),
                         style: const TextStyle(
-                          fontSize: 12,
+                          fontSize: 17,
                           fontWeight: FontWeight.w800,
-                          letterSpacing: 0.6,
-                          color: AppTheme.textSecondary,
+                          color: AppTheme.textPrimary,
+                          height: 1.2,
                         ),
                       ),
-                      Semantics(
-                        header: true,
-                        child: Text(
-                          _titulo(lang),
-                          key: const Key('hoxe_titulo'),
-                          style: const TextStyle(
-                            fontSize: 17,
-                            fontWeight: FontWeight.w800,
-                            color: AppTheme.textPrimary,
-                            height: 1.2,
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
+                    ),
+                  ],
                 ),
               ],
             ),
             if (_toca.finDeSemana || _toca.prevista) ...[
-              const SizedBox(height: 6),
+              const SizedBox(height: 4),
               Text(
                 _toca.prevista
                     ? (lang == AppLanguage.gl
-                        ? 'En xullo e agosto non hai escola. Esta é a primeira lección do curso.'
-                        : 'En julio y agosto no hay escuela. Esta es la primera lección del curso.')
+                        ? 'Xullo e agosto: a primeira lección do curso.'
+                        : 'Julio y agosto: la primera lección del curso.')
                     : (lang == AppLanguage.gl
-                        ? 'Hoxe é fin de semana: bo momento para repasar a lección.'
-                        : 'Hoy es fin de semana: buen momento para repasar la lección.'),
+                        ? 'Fin de semana: bo momento para repasala.'
+                        : 'Fin de semana: buen momento para repasarla.'),
+                key: const Key('hoxe_fin_de_semana'),
                 style: const TextStyle(
-                  fontSize: 14.5,
+                  fontSize: 13,
                   color: AppTheme.textSecondary,
-                  height: 1.35,
                 ),
               ),
             ],
             // P11: lo primero, la lección de la semana del plan curricular.
             // Lo demás, el juego de tres minutos incluido, es complementario.
-            const SizedBox(height: 16),
+            const SizedBox(height: 10),
             LeccionDaSemanaCargada(
               cursoId: widget.cursoId,
               mesCalendario: _toca.dia.mesCalendario,

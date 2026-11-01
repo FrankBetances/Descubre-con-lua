@@ -139,6 +139,8 @@ Estado: abierta
 - [ ] 0-2 años: los 10 temas con su contraste de sonido (par del banco y nota en gl y es). Pendiente de Frank: el documento de currículo empieza a los 18 meses y el gate deja 0-2 sin contraste a propósito · evidencia:
 - [x] Cada frase de la unidad comparte al menos una palabra con su STEAM, en las 200 semanas · evidencia: tools/gen_gramatica.py (revisar: falla si una frase no nombra nada de su STEAM; 21 frases reescritas)
 - [ ] Cada palabra nueva sale en el cuento de su semana, en las 200 semanas. Hecho en 4-5 años (142 de 142, gate en tools/gen_leccions.py); las otras cuatro edades, después de que Frank dé 4-5 por buena (R∞.6) · evidencia:
-- [ ] Na casa → Hoy, rehecho: lo de la semana sin bajar a 412×915, una sola columna clara, sin ruido; capturas gl y es en escritorio · evidencia:
-- [ ] Na escola → Hoy y el Modo Aula, rehechos con la misma lección de la semana, la unidad y el STEAM; capturas gl y es en escritorio · evidencia:
+- [ ] Hoy (casa y aula): franja con antes · AHORA · después, tema y STEAM; tarjeta de hoy con el día, qué hacer, la frase con voz y las palabras nuevas; todo eso sin bajar a 412×915 en gl y es; «Ya debería saber», «Cómo hablar» y «Guía» como tres botones que abren una hoja (aprobado por Frank, 1/11) · evidencia:
+- [ ] Aula → Hoy: debajo de la lección, solo «Sesión de 45 min» y «Asamblea del día»; el resto del material, fuera de Hoy · evidencia:
+- [ ] Calendario (casa y aula): un solo selector de edad, los 10 meses en una fila y las 4 semanas de cada mes como tarjetas con su unidad, su STEAM y sus palabras; tocar una semana abre esa lección, la misma que Hoy · evidencia:
+- [ ] Capturas en escritorio de casa y aula, en gl y es, por Inicio → Na casa / Na escola · evidencia:
 - [ ] Mergeado en main con CI en verde · evidencia:

@@ -4,6 +4,8 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
+import 'package:descubre_con_lua/features/leccions/views/calendario_de_leccions_screen.dart';
+
 import 'package:descubre_con_lua/core/audio/mock_offline_audio_service.dart';
 import 'package:descubre_con_lua/core/audio/widgets/boton_escuchar.dart';
 import 'package:descubre_con_lua/core/brand/ilustracion_portal.dart';
@@ -272,7 +274,9 @@ void main() {
       // Calendario: o curso mes a mes, nunha pestana.
       await tester.tap(find.byKey(const Key('pestana_calendario')));
       await tester.pumpAndSettle();
-      expect(find.byType(CalendarioFogarScreen), findsOneWidget);
+      // O-20261101-1: el calendario de lecciones; el de antes, dentro.
+      expect(find.byType(CalendarioDeLeccionsScreen), findsOneWidget);
+      expect(find.byKey(const Key('calendario_completo')), findsOneWidget);
     });
   });
 
@@ -472,7 +476,11 @@ void main() {
       expect(contos, hasLength(303));
       for (final c in contos) {
         final (min, max) = paxinasPorCurso[c.cursoId]!;
-        expect(c.paginas.length, inInclusiveRange(min, max), reason: c.id);
+        // O-20261101-1: la página «Y además» con las palabras de la lección
+        // de la semana no cuenta para el tamaño del cuento de su edad.
+        final propias =
+            c.paginas.where((p) => p.tituloPagina?.es != 'Y además').length;
+        expect(propias, inInclusiveRange(min, max), reason: c.id);
         for (final pg in c.paginas) {
           expect(pg.texto.gl.trim(), isNotEmpty,
               reason: '${c.id}/${pg.numero}');
