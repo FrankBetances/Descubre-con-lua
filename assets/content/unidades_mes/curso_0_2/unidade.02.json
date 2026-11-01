@@ -62,7 +62,14 @@
       "es": "Plumas de avestruz de colores claros"
     }
   ],
-  "contraste": null,
+  "contraste": {
+    "a": "0_2.outubro.s2.heel",
+    "b": "0_2.novembro.s1.feel",
+    "nota": {
+      "gl": "A «h» de «heel» é só un alento; a «f» de «feel» sae co labio de abaixo nos dentes. Dilas ti, amodo.",
+      "es": "La «h» de «heel» es solo un aliento; la «f» de «feel» sale con el labio de abajo en los dientes. Dilas tú, despacio."
+    }
+  },
   "queObservar": [
     {
       "gl": "Ri ou encóllese coa pluma na barriga",

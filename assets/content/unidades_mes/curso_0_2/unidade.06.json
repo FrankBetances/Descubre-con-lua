@@ -53,7 +53,14 @@
       "es": "Títeres de mano de tela suave: rana, pájaro y gato"
     }
   ],
-  "contraste": null,
+  "contraste": {
+    "a": "0_2.febreiro.s1.boo",
+    "b": "0_2.febreiro.s2.bob",
+    "nota": {
+      "gl": "«Boo» é unha «u» longa, de sorpresa; «bob» é curta e remata cos beizos pechados. Dilas ti, xogando.",
+      "es": "«Boo» es una «u» larga, de sorpresa; «bob» es corta y acaba con los labios cerrados. Dilas tú, jugando."
+    }
+  },
   "queObservar": [
     {
       "gl": "Dobra as pernas cando a ra salta nos seus xeonllos",

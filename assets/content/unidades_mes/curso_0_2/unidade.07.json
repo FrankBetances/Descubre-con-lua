@@ -49,7 +49,14 @@
       "es": "Botellas sensoriales selladas con agua teñida y aros de silicona"
     }
   ],
-  "contraste": null,
+  "contraste": {
+    "a": "0_2.marzo.s3.ramp",
+    "b": "0_2.abril.s2.damp",
+    "nota": {
+      "gl": "A «r» de «ramp» non vibra; a «d» de «damp» sae coa lingua detrás dos dentes. Dilas ti, en parentese.",
+      "es": "La «r» de «ramp» no vibra; la «d» de «damp» sale con la lengua detrás de los dientes. Dilas tú, en parentese."
+    }
+  },
   "queObservar": [
     {
       "gl": "Sacode a botella e mira como se move a cor",

@@ -58,7 +58,14 @@
       "es": "Una bandeja con agua templada"
     }
   ],
-  "contraste": null,
+  "contraste": {
+    "a": "0_2.febreiro.s3.tunnel",
+    "b": "0_2.maio.s1.funnel",
+    "nota": {
+      "gl": "A «t» de «tunnel» é un golpe da lingua; a «f» de «funnel» é aire co beizo nos dentes. Dilas ti, amodo.",
+      "es": "La «t» de «tunnel» es un golpe de la lengua; la «f» de «funnel» es aire con el labio en los dientes. Dilas tú, despacio."
+    }
+  },
   "queObservar": [
     {
       "gl": "Deixa que lle frotes as mans sen retiralas",

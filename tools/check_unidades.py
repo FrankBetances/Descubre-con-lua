@@ -207,7 +207,9 @@ def revisar(curso: str, orden: int, u: dict, existentes: set[str],
     contraste = u.get("contraste")
     # F4: desde 2-3 cada mes trae su contraste de sonido. En 0-2 no, porque el
     # contraste empieza a los 18 meses y el curso arranca antes (M3.4).
-    if not contraste and curso != "curso_0_2":
+    # O-20261101-3 (Frank, 1/11): también 0-2 lleva su contraste, que la
+    # persona adulta dice en parentese.
+    if not contraste:
         fallos.append(f"{donde}: falta el contraste de sonido (F4)")
     if contraste and contraste.get("a") == contraste.get("b"):
         fallos.append(f"{donde}: el contraste compara una palabra consigo misma")

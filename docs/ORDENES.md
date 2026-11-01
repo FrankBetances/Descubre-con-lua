@@ -151,3 +151,9 @@ Estado: abierta
 
 - [x] 0-2, 2-3, 3-4 y 5-6 años: cada palabra nueva sale en el cuento de su semana, en las 160 semanas (129/129, 120/120, 132/132, 140/140; con 4-5, 663/663) · evidencia: tools/gen_leccions.py (revisar con CONTO_COMPLETO en las cinco edades) y tools/check_contos_palabras.py
 - [ ] Mergeado en main con CI en verde · evidencia:
+
+## O-20261101-3 · Contraste de sonido en 0-2 años
+Estado: abierta
+> Queda una decisión tuya: el contraste de sonido en 0-2 años. [...] ¿Lo añado? Ok
+
+- [x] Los 10 meses de 0-2 años tienen su contraste de sonido: dos palabras del banco de 0-2 que solo cambian en un sonido, con su nota en gl y es para que la persona adulta las diga en parentese · evidencia: tools/check_unidades.py (--estricto: falla si un mes de cualquier edad no trae contraste)
