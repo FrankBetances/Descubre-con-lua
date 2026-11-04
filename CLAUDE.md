@@ -390,6 +390,7 @@ Las URLs legales de esta app son estas, y no otras. Salen del sitio de GitHub Pa
 
 ```
 https://frankbetances.github.io/Descubre-con-lua/privacy.html   ← política de privacidad
+https://frankbetances.github.io/Descubre-con-lua/terms.html     ← términos del servicio
 https://frankbetances.github.io/Descubre-con-lua/
 ```
 

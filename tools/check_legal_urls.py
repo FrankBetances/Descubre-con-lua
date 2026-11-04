@@ -39,6 +39,11 @@ PAGES = [
         "mark": "Política de Privacidad",
     },
     {
+        "file": "terms.html",
+        "label": "Términos del servicio",
+        "mark": "Términos del Servicio",
+    },
+    {
         "file": "index.html",
         "label": "Página del proyecto",
         "mark": "Descubre con Lúa",
