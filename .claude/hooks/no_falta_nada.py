@@ -41,7 +41,10 @@ AFIRMA = re.compile(
     r"orden cumplida|completad[ao] entera",
     re.IGNORECASE,
 )
-if not AFIRMA.search(ultimo):
+# Lo citado entre comillas («…») no es una afirmación propia: citar el
+# «no falta nada» de antes para reconocer el fallo no debe bloquear.
+propio = re.sub(r"«[^»]*»|“[^”]*”|\"[^\"]*\"", "", ultimo)
+if not AFIRMA.search(propio):
     sys.exit(0)
 
 raiz = Path(datos.get("cwd") or ".")
