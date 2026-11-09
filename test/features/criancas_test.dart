@@ -150,6 +150,14 @@ void main() {
             of: find.byKey(const Key('resultados_entende')),
             matching: find.text('0')),
         findsOneWidget);
+    final lista = find
+        .descendant(
+            of: find.byKey(const Key('resultados_crianza')),
+            matching: find.byType(Scrollable))
+        .first;
+    await tester.scrollUntilVisible(
+        find.textContaining('Todavía no has marcado ninguna palabra'), 300,
+        scrollable: lista);
     expect(find.textContaining('Todavía no has marcado ninguna palabra'),
         findsOneWidget);
 

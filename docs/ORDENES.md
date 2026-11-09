@@ -204,11 +204,11 @@ Estado: abierta
 > Decisión de Frank (9/11): «evidentemente lo gana el maldito niño joder el padre es un fucking avatar»: los premios los gana el niño; la persona adulta actúa en su nombre.
 Fuente: FrankBetances/Valeria:src/components/lua/ValeriaCatInteractiveCard.tsx (y src/ValeriaPixelAwards.tsx, src/ValeriaAwardsSheet.tsx, src/valeriaGamification.ts, src/components/lua/luaPixelSegments.ts)
 
-- [ ] La tarjeta de Lúa de Valeria, portada: la gata de cuerpo entero que respira, mueve la cola, parpadea y reacciona al tocarla, con su nivel, su barra de progreso y la racha en la misma tarjeta, en Hoy de casa · evidencia:
-- [ ] La colección de premios de Valeria (hoja de premios) abierta desde la tarjeta · evidencia:
-- [ ] Los premios son del niño: XP, 12 niveles con nombre, racha y las 18 insignias de Valeria, por niño registrado; se ganan cuando la persona adulta marca en su nombre el juego del día y lo que entiende o dice · evidencia:
+- [x] La tarjeta de Lúa de Valeria, portada: la gata de cuerpo entero que respira, mueve la cola, parpadea y reacciona al tocarla, con su nivel, su barra de progreso y la racha en la misma tarjeta, en Hoy de casa · evidencia: test/features/criancas_test.dart («Lúa de Valeria en Hoy: xogar dá XP e a primeira insignia, e a folla de premios a mostra»)
+- [x] La colección de premios de Valeria (hoja de premios) abierta desde la tarjeta · evidencia: test/features/criancas_test.dart («Lúa de Valeria en Hoy: xogar dá XP e a primeira insignia, e a folla de premios a mostra»)
+- [x] Los premios son del niño: XP, 12 niveles con nombre, racha y las 18 insignias de Valeria, por niño registrado; se ganan cuando la persona adulta marca en su nombre el juego del día y lo que entiende o dice · evidencia: test/features/criancas_test.dart («o xogo de Valeria: racha, insignias e obxectos»)
 - [ ] La tarjeta en Hoy de casa (debajo de la lección) y arriba en Resultados, en gl y es, con captura · evidencia:
-- [ ] Privacidad: lo nuevo se guarda en criancas.json, sin hora; gate, política y CLAUDE.md al día · evidencia:
+- [x] Privacidad: lo nuevo se guarda en criancas.json, sin hora; gate, política y CLAUDE.md al día · evidencia: test/core/criancas_privacidad_test.dart, docs/privacy.html y CLAUDE.md
 - [ ] Mergeado en main con CI en verde · evidencia:
 
 ## O-20261109-4 · Las consideraciones de ACOPROS

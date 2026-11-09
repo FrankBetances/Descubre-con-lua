@@ -227,15 +227,20 @@ class _TarxetaLuaState extends State<TarxetaLua> {
                     ),
                   ),
                   const SizedBox(height: 4),
-                  Text(
-                    c.humor[humor]?.resolve(lang) ?? '',
-                    key: const Key('lua_humor'),
-                    style: TextStyle(
-                      fontSize: 12,
-                      fontWeight: FontWeight.w900,
-                      color: humor == 'luaPatShort'
-                          ? AppTheme.textSecondary
-                          : acento,
+                  SizedBox(
+                    width: 88,
+                    child: Text(
+                      c.humor[humor]?.resolve(lang) ?? '',
+                      textAlign: TextAlign.center,
+                      maxLines: 2,
+                      key: const Key('lua_humor'),
+                      style: TextStyle(
+                        fontSize: 12,
+                        fontWeight: FontWeight.w900,
+                        color: humor == 'luaPatShort'
+                            ? AppTheme.textSecondary
+                            : acento,
+                      ),
                     ),
                   ),
                 ],
@@ -287,7 +292,7 @@ class _TarxetaLuaState extends State<TarxetaLua> {
                                   style: const TextStyle(
                                       fontSize: 16,
                                       fontWeight: FontWeight.w900,
-                                      color: Color(0xFFC2571E))),
+                                      color: Color(0xFFB4530F))),
                             ],
                           ),
                         ),
@@ -321,17 +326,29 @@ class _TarxetaLuaState extends State<TarxetaLua> {
             ],
           ),
           const SizedBox(height: 10),
-          Row(
+          Wrap(
+            alignment: WrapAlignment.spaceBetween,
+            crossAxisAlignment: WrapCrossAlignment.center,
+            spacing: 8,
+            runSpacing: 4,
             children: [
               if (g.obxectos.contains('snack_fish'))
-                OutlinedButton.icon(
+                OutlinedButton(
                   key: const Key('lua_peixe'),
                   onPressed: _comendo ? null : _darPeixe,
-                  icon: const ObxectoLuaIcona(id: 'snack_fish', alto: 12),
-                  label: Text(c.humor['luaFeedFish']!.resolve(lang),
-                      style: const TextStyle(fontWeight: FontWeight.w900)),
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      const ObxectoLuaIcona(id: 'snack_fish', alto: 12),
+                      const SizedBox(width: 6),
+                      Flexible(
+                        child: Text(c.humor['luaFeedFish']!.resolve(lang),
+                            style:
+                                const TextStyle(fontWeight: FontWeight.w900)),
+                      ),
+                    ],
+                  ),
                 ),
-              const Spacer(),
               TextButton(
                 key: const Key('lua_premios'),
                 onPressed: () => abrirPremiosLua(context,
@@ -346,15 +363,14 @@ class _TarxetaLuaState extends State<TarxetaLua> {
             ],
           ),
           const SizedBox(height: 6),
-          FilledButton.icon(
+          FilledButton(
             key: const Key('lua_xogar'),
             style: FilledButton.styleFrom(
               backgroundColor: acento,
               minimumSize: const Size.fromHeight(48),
             ),
             onPressed: feito ? null : () => _xogar(c),
-            icon: Icon(feito ? Icons.check_rounded : Icons.star_rounded),
-            label: Text(
+            child: Text(
               feito
                   ? (isGl
                       ? 'O xogo de hoxe xa está feito'
@@ -362,6 +378,7 @@ class _TarxetaLuaState extends State<TarxetaLua> {
                   : (isGl
                       ? 'Xogamos hoxe con ${widget.crianza.nome}'
                       : 'Hoy jugamos con ${widget.crianza.nome}'),
+              textAlign: TextAlign.center,
               style: const TextStyle(fontWeight: FontWeight.w900),
             ),
           ),

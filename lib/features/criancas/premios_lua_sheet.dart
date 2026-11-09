@@ -222,7 +222,7 @@ class _Coleccion extends StatelessWidget {
                             textAlign: TextAlign.center,
                             maxLines: 3,
                             style: const TextStyle(
-                                fontSize: 11.5,
+                                fontSize: 12,
                                 height: 1.25,
                                 color: AppTheme.textSecondary)),
                       ],
