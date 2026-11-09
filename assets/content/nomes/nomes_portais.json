@@ -247,7 +247,7 @@
         }
       ],
       "idades": {
-        "nota": "Las cinco edades, con la clave de su curso. La elegida vive mientras la app está abierta: la app no guarda nada de ninguna criatura.",
+        "nota": "Las cinco edades, con la clave de su curso. En casa, la elegida se guarda en el registro del niño (O-20261109-1); en el aula, no.",
         "lista": [
           {
             "id": "curso_0_2",

@@ -2,13 +2,15 @@ import 'package:flutter/material.dart';
 
 import '../../../core/localization/app_language.dart';
 import '../../../core/theme/app_theme.dart';
+import '../../criancas/crianza_da_casa.dart';
 import '../nomes_familias.dart';
 
 /// La edad de la criatura, en un solo chip: «0-2 anos ▾».
 ///
 /// Antes eran cinco pastillas en fila en cada pantalla, y la portada empezaba
 /// por elegir. Se elige una vez, arriba, y vale para Hoxe, el calendario y
-/// Explorar. No se guarda: dura mientras la app está abierta.
+/// Explorar. En casa (O-20261109-1) va con el nombre del niño registrado y
+/// abre su hoja; en el aula sigue siendo el grupo y no se guarda.
 class SelectorIdade extends StatelessWidget {
   const SelectorIdade({
     super.key,
@@ -29,12 +31,14 @@ class SelectorIdade extends StatelessWidget {
   Widget build(BuildContext context) {
     final isGl = language == AppLanguage.gl;
     final idade = NomesFamilias.idade(cursoId).resolve(language);
+    final nome =
+        paraAula ? null : CrianzaDaCasa.maybeOf(context)?.store.activa?.nome;
     return Semantics(
       container: true,
       button: true,
       label: paraAula
           ? 'Grupo: $idade. Cambiar'
-          : (isGl ? 'Idade: $idade. Cambiar' : 'Edad: $idade. Cambiar'),
+          : '${isGl ? 'Idade' : 'Edad'}: $idade${nome == null ? '' : ', $nome'}. Cambiar',
       // Excluir a los hijos quita también la acción del InkWell.
       onTap: () => _abrir(context),
       excludeSemantics: true,
@@ -57,6 +61,25 @@ class SelectorIdade extends StatelessWidget {
                   Icon(Icons.child_care_rounded,
                       size: 20, color: context.acento),
                   const SizedBox(width: 6),
+                  if (nome != null)
+                    // Con letra grande el nombre se recorta antes que la
+                    // edad: la edad dice qué lección sale; el nombre, de quién.
+                    Flexible(
+                      child: ConstrainedBox(
+                        constraints: const BoxConstraints(maxWidth: 130),
+                        child: Text(
+                          '$nome · ',
+                          key: const Key('selector_nome'),
+                          maxLines: 1,
+                          overflow: TextOverflow.ellipsis,
+                          style: TextStyle(
+                            fontSize: 15,
+                            fontWeight: FontWeight.w800,
+                            color: context.acento,
+                          ),
+                        ),
+                      ),
+                    ),
                   Text(
                     idade,
                     style: TextStyle(
@@ -77,6 +100,10 @@ class SelectorIdade extends StatelessWidget {
   }
 
   Future<void> _abrir(BuildContext context) async {
+    if (!paraAula && CrianzaDaCasa.maybeOf(context)?.store.activa != null) {
+      return abrirFollaCrianza(context,
+          language: language, onCambiarCurso: onCambiar);
+    }
     final isGl = language == AppLanguage.gl;
     final elixido = await showModalBottomSheet<String>(
       context: context,

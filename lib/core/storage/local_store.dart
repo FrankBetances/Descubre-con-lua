@@ -6,11 +6,11 @@ import 'package:flutter/services.dart';
 
 /// Guarda un puñado de contadores en la carpeta privada de la app.
 ///
-/// **Lo que guarda y lo que no.** Aquí solo caben números y fechas: cuántas
-/// asambleas se dirigieron, cuántas cápsulas se leyeron, qué días seguidos y
-/// qué insignias se ganaron. No hay nombre, ni edad, ni nada de ninguna
-/// criatura, ni identificador de aparato. Un fichero de este tipo no permite
-/// saber quién usó la app, solo cuánto se usó.
+/// **Lo que guarda y lo que no.** Cada fichero dice lo suyo y tiene su gate:
+/// `premios.json` y `user_progress.json`, solo números y fechas sin hora del
+/// uso de la persona adulta; `criancas.json` (O-20261109-1), además, el
+/// nombre, la edad y el curso que la familia escribe de cada niño. Ninguno
+/// lleva identificador de aparato.
 ///
 /// **Dónde.** `getFilesDir()` de Android, que es privada de la app, la borra el
 /// sistema al desinstalar y ninguna otra app puede leer. Se pide por el

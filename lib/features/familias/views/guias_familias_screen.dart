@@ -34,6 +34,7 @@ class GuiasFamiliasScreen extends StatelessWidget {
     this.premios,
     this.calendario,
     this.audioService,
+    this.onResultados,
   });
 
   final ContentRepository repository;
@@ -42,6 +43,9 @@ class GuiasFamiliasScreen extends StatelessWidget {
   final PremiosRepository? premios;
   final CalendarioStore? calendario;
   final OfflineAudioService? audioService;
+
+  /// Los resultados del niño de la casa (O-20261109-1).
+  final VoidCallback? onResultados;
 
   void _abrir(BuildContext context, WidgetBuilder builder) {
     Navigator.of(context).push(RutaLua(de: context, builder: builder));
@@ -138,6 +142,18 @@ class GuiasFamiliasScreen extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 14),
+            if (onResultados case final f?) ...[
+              FilaPortal(
+                clave: 'guia_resultados',
+                icona: Icons.insights_rounded,
+                nome: language == AppLanguage.gl ? 'Resultados' : 'Resultados',
+                di: language == AppLanguage.gl
+                    ? 'O que entende e di, semana a semana, e as vosas medallas.'
+                    : 'Lo que entiende y dice, semana a semana, y vuestras medallas.',
+                onTap: f,
+              ),
+              const SizedBox(height: 10),
+            ],
             for (final (clave, icona, nome, di, abrir) in guias) ...[
               FilaPortal(
                 clave: clave,

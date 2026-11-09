@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
 
 import '../leccions/views/calendario_de_leccions_screen.dart';
+import '../criancas/crianza_da_casa.dart';
+import '../criancas/criancas_store.dart';
+import '../criancas/resultados_crianza_screen.dart';
+import '../criancas/rexistro_crianza_screen.dart';
+import '../../../core/navigation/ruta_lua.dart';
 
 import '../../../core/audio/offline_audio_service.dart';
 import '../../../core/localization/app_language.dart';
@@ -35,6 +40,9 @@ class PortalFamiliasScreen extends StatefulWidget {
   final VoidCallback onToggleLanguage;
   final ValueChanged<AppLanguage>? onLanguageChanged;
 
+  /// Los niños de la casa (O-20261109-1). Por defecto, [CriancasStore.crear].
+  final CriancasStore? criancas;
+
   /// Para os tests: o día que se quere ver. Por defecto, hoxe.
   final DateTime? agora;
 
@@ -47,6 +55,7 @@ class PortalFamiliasScreen extends StatefulWidget {
     this.onLanguageChanged,
     this.premios,
     this.calendario,
+    this.criancas,
     this.agora,
   });
 
@@ -64,9 +73,42 @@ class _PortalFamiliasScreenState extends State<PortalFamiliasScreen> {
   /// mucho contenido, y la portada no tiene por qué esperarlos.
   final Set<int> _visitadas = {0};
 
-  /// A idade da crianza. Só mentres a app está aberta: non se garda nada
-  /// dunha crianza.
-  String _curso = NomesFamilias.idades.first.$1;
+  /// Los niños de la casa: el curso de Hoy es el del último que se vio, y
+  /// así no se pregunta cada vez que se abre la app (O-20261109-1).
+  late final CriancasStore _criancas = widget.criancas ?? CriancasStore.crear();
+
+  String get _curso => _criancas.activa?.curso ?? NomesFamilias.idades.first.$1;
+
+  @override
+  void initState() {
+    super.initState();
+    _criancas.addListener(_cambioCriancas);
+    if (!_criancas.cargado) _criancas.cargar();
+  }
+
+  @override
+  void dispose() {
+    _criancas.removeListener(_cambioCriancas);
+    super.dispose();
+  }
+
+  void _cambioCriancas() {
+    if (mounted) setState(() {});
+  }
+
+  void _abrirResultados(BuildContext context) {
+    Navigator.of(context).push(RutaLua(
+      de: context,
+      builder: (_) => ResultadosCrianzaScreen(
+        store: _criancas,
+        language: _language,
+        onLanguageChanged: _cambiarLingua,
+        calendario: _store,
+        premios: widget.premios,
+        agora: widget.agora,
+      ),
+    ));
+  }
 
   @override
   void didUpdateWidget(covariant PortalFamiliasScreen oldWidget) {
@@ -81,7 +123,11 @@ class _PortalFamiliasScreenState extends State<PortalFamiliasScreen> {
     widget.onLanguageChanged?.call(lingua);
   }
 
-  void _cambiarCurso(String curso) => setState(() => _curso = curso);
+  void _cambiarCurso(String curso) {
+    if (_criancas.activa case final c?) {
+      _criancas.actualizar(c.id, curso: curso);
+    }
+  }
 
   List<Widget> _pestanas(AppLanguage lang) => [
         HoxeFamiliasScreen(
@@ -131,12 +177,37 @@ class _PortalFamiliasScreenState extends State<PortalFamiliasScreen> {
           premios: widget.premios,
           calendario: _store,
           audioService: widget.audioService,
+          onResultados:
+              _criancas.activa == null ? null : () => _abrirResultados(context),
         ),
       ];
 
   @override
   Widget build(BuildContext context) {
     final lang = _language;
+    if (!_criancas.cargado) {
+      return const Scaffold(body: Center(child: CircularProgressIndicator()));
+    }
+    // La primera vez: quién va a aprender. Después, nunca más.
+    if (_criancas.activa == null) {
+      return RexistroCrianzaScreen(
+        key: const Key('rexistro_primeira'),
+        store: _criancas,
+        language: lang,
+        onLanguageChanged: _cambiarLingua,
+        primeira: true,
+        onGardado: (_) {},
+      );
+    }
+    return CrianzaDaCasa(
+      store: _criancas,
+      onLanguageChanged: _cambiarLingua,
+      abrirResultados: _abrirResultados,
+      child: _portal(context, lang),
+    );
+  }
+
+  Widget _portal(BuildContext context, AppLanguage lang) {
     return Scaffold(
       body: IndexedStack(
         index: _pestana,

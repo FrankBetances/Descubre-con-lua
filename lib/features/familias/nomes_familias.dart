@@ -94,8 +94,8 @@ class NomesFamilias {
       LocalizedString(gl: '4. Pares mínimos', es: '4. Pares mínimos');
 
   // ------------------------------------------------------------------ idades
-  /// Las cinco edades, con la clave de su curso. La elegida vive mientras la
-  /// app está abierta: la app no guarda nada de ninguna criatura.
+  /// Las cinco edades, con la clave de su curso. En casa, la elegida se guarda
+  /// en el registro del niño (O-20261109-1); en el aula, no.
   static const idades = <(String, LocalizedString)>[
     ('curso_0_2', LocalizedString(gl: '0-2 anos', es: '0-2 años')),
     ('curso_2_3', LocalizedString(gl: '2-3 anos', es: '2-3 años')),

@@ -54,6 +54,9 @@ import 'package:descubre_con_lua/data/models/steam_model.dart';
 import 'package:descubre_con_lua/features/docentes/views/hoxe_docentes_screen.dart';
 import 'package:descubre_con_lua/features/docentes/portal_docentes_screen.dart';
 import 'package:descubre_con_lua/features/familias/portal_familias_screen.dart';
+import 'package:descubre_con_lua/features/criancas/criancas_store.dart';
+import 'package:descubre_con_lua/features/criancas/resultados_crianza_screen.dart';
+import 'package:descubre_con_lua/features/criancas/rexistro_crianza_screen.dart';
 import 'package:descubre_con_lua/features/steam/views/steam_hub_screen.dart';
 import 'package:descubre_con_lua/features/steam/views/steam_sesion_guiada_screen.dart';
 import 'package:descubre_con_lua/data/models/cuento_model.dart';
@@ -354,6 +357,64 @@ void main() {
           onToggleLanguage: () {},
           calendario: CalendarioStore(overrideDirectory: tmp.path),
           agora: venres,
+        ),
+        tema: AppTheme.temaFamilias,
+      );
+    });
+
+    // O-20261109-1: el registro de la primera vez, ya relleno.
+    testWidgets('na casa · rexistro · $l', (tester) async {
+      await capturar(
+        tester,
+        'rexistro-crianza-$l',
+        RexistroCrianzaScreen(
+          store: CriancasStore.enMemoria(const []),
+          language: lang,
+          onLanguageChanged: (_) {},
+          primeira: true,
+          onGardado: (_) {},
+        ),
+        tema: AppTheme.temaFamilias,
+        antesDeRetratar: (t) async {
+          await t.enterText(find.byKey(const Key('rexistro_nome')), 'Uxía');
+          await t.tap(find.byKey(const ValueKey('rexistro_idade_4')));
+        },
+      );
+    });
+
+    // O-20261109-1: los resultados, con tres semanas observadas.
+    testWidgets('na casa · resultados · $l', (tester) async {
+      final store = CriancasStore.enMemoria(const [
+        Crianza(id: 'c1', nome: 'Uxía', idade: 4, curso: 'curso_4_5'),
+      ]);
+      final lec = Leccions.lidas!;
+      Future<void> marcar(int mes, int semana, int entende, int di) async {
+        final k = CriancasStore.semana('curso_4_5', mes, semana);
+        final novas = lec.da('curso_4_5', mes, semana)!.$2.novas;
+        for (final (i, p) in novas.indexed) {
+          if (i < di) {
+            await store.observar('c1', k, p.en, Observacion.di);
+          } else if (i < di + entende) {
+            await store.observar('c1', k, p.en, Observacion.entende);
+          }
+        }
+      }
+
+      await tester.runAsync(() async {
+        await marcar(9, 2, 2, 0);
+        await marcar(9, 3, 2, 1);
+        await marcar(9, 4, 2, 2);
+        await marcar(10, 1, 1, 1);
+      });
+      await capturar(
+        tester,
+        'resultados-crianza-$l',
+        ResultadosCrianzaScreen(
+          store: store,
+          language: lang,
+          onLanguageChanged: (_) {},
+          calendario: CalendarioStore(overrideDirectory: tmp.path),
+          agora: DateTime(2026, 10, 2, 10),
         ),
         tema: AppTheme.temaFamilias,
       );
