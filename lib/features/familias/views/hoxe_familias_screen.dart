@@ -31,6 +31,8 @@ import '../../leccions/widgets/leccion_da_semana.dart';
 import '../../criancas/crianza_da_casa.dart';
 import '../../criancas/criancas_store.dart';
 import '../../criancas/tarxeta_lua.dart';
+import '../widgets/learn_duolingo.dart';
+import '../../../core/brand/lua_valeria.dart';
 import '../../../data/models/leccion_model.dart';
 import '../../steam/widgets/steam_no_calendario.dart';
 import '../nomes_familias.dart';
@@ -353,8 +355,81 @@ class _HoxeFamiliasScreenState extends State<HoxeFamiliasScreen> {
                 ),
               ),
             ],
-            // P11: lo primero, la lección de la semana del plan curricular.
-            // Lo demás, el juego de tres minutos incluido, es complementario.
+            // O-20261109-5: la pantalla «Learn» de duolingo-clone: puntos y
+            // racha del niño, la unidad en su caja verde y el camino de los
+            // cinco días en nodos; el nodo de hoy abre la lección paso a paso.
+            const SizedBox(height: 10),
+            FutureBuilder<Leccions?>(
+              future: Leccions.cargar()
+                  .then<Leccions?>((l) => l, onError: (_) => null),
+              builder: (context, snap) {
+                final da = snap.data?.da(
+                    widget.cursoId, _toca.dia.mesCalendario, _toca.dia.semana);
+                if (da == null) return const SizedBox.shrink();
+                final (u, lec) = da;
+                final casa = CrianzaDaCasa.maybeOf(context);
+                final neno = casa?.store.activa;
+                final xogo = neno == null ? null : casa!.store.xogo(neno.id);
+                final agora = widget.agora ?? DateTime.now();
+                final semanaKey = CriancasStore.semana(
+                    widget.cursoId, _toca.dia.mesCalendario, _toca.dia.semana);
+                final actual = _toca.prevista
+                    ? 0
+                    : _toca.finDeSemana
+                        ? 4
+                        : _toca.dia.dia - 1;
+                void abrir(int i) => abrirLeccionDuolingo(context,
+                    leccion: lec,
+                    dia: i + 1,
+                    language: lang,
+                    semana: semanaKey,
+                    audioService: widget.audioService,
+                    store: casa?.store,
+                    crianza: neno,
+                    agora: widget.agora);
+                return Column(
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: [
+                    if (xogo != null)
+                      CabeceraLearn(
+                        curso: Text(neno!.nome,
+                            overflow: TextOverflow.ellipsis,
+                            style: const TextStyle(
+                                fontSize: 15,
+                                fontWeight: FontWeight.w800,
+                                color: AppTheme.textPrimary)),
+                        xp: xogo.xp,
+                        racha: xogo.rachaViva(agora),
+                      ),
+                    const SizedBox(height: 10),
+                    BannerUnidade(
+                      titulo: u.titulo.resolve(lang),
+                      descricion: u.steam?.resolve(lang) ?? '',
+                      continuar:
+                          lang == AppLanguage.gl ? 'Continuar' : 'Continuar',
+                      onContinuar: () => abrir(actual),
+                    ),
+                    CaminoNodos(
+                      etiquetas: [
+                        for (var d = 0; d < 5; d++) _semana[d].resolve(lang),
+                      ],
+                      actual: actual,
+                      feitoHoxe: xogo?.xogouHoxe(agora) ?? false,
+                      empezar: lang == AppLanguage.gl ? 'Empezar' : 'Empezar',
+                      onNodo: abrir,
+                      lua: xogo == null
+                          ? null
+                          : LuaValeria(
+                              ancho: 64,
+                              cabeza: xogo.cabeza,
+                              pescozo: xogo.pescozo),
+                    ),
+                    const SizedBox(height: 16),
+                  ],
+                );
+              },
+            ),
+            // P11: debajo, la lección de la semana entera, para consultar.
             const SizedBox(height: 10),
             LeccionDaSemanaCargada(
               cursoId: widget.cursoId,

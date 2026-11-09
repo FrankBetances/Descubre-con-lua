@@ -55,6 +55,7 @@ import 'package:descubre_con_lua/features/docentes/views/hoxe_docentes_screen.da
 import 'package:descubre_con_lua/features/docentes/portal_docentes_screen.dart';
 import 'package:descubre_con_lua/features/familias/portal_familias_screen.dart';
 import 'package:descubre_con_lua/features/criancas/criancas_store.dart';
+import 'package:descubre_con_lua/features/familias/widgets/learn_duolingo.dart';
 import 'package:descubre_con_lua/features/leccions/views/calendario_de_leccions_screen.dart';
 import 'package:descubre_con_lua/features/criancas/resultados_crianza_screen.dart';
 import 'package:descubre_con_lua/features/criancas/rexistro_crianza_screen.dart';
@@ -408,6 +409,49 @@ void main() {
         },
       );
     });
+
+    // O-20261109-5: la lección de Duolingo, un paso y el fin.
+    for (final fin in [false, true]) {
+      testWidgets('leccion duolingo · ${fin ? 'fin' : 'paso'} · $l',
+          (tester) async {
+        final lec = Leccions.lidas!.da('curso_4_5', 10, 1)!.$2;
+        await capturar(
+          tester,
+          'leccion-duolingo-${fin ? 'fin' : 'paso'}-$l',
+          LeccionDuolingoScreen(
+            pasos: pasosDoDia(lec, 2, lang),
+            language: lang,
+            semana: CriancasStore.semana('curso_4_5', 10, 1),
+            palabrasDaSemana: [for (final p in lec.novas) p.en],
+            store: CriancasStore.enMemoria(const [
+              Crianza(id: 'c1', nome: 'Uxía', idade: 4, curso: 'curso_4_5'),
+            ]),
+            crianza: const Crianza(
+                id: 'c1', nome: 'Uxía', idade: 4, curso: 'curso_4_5'),
+            agora: DateTime(2026, 10, 6, 18),
+          ),
+          tema: AppTheme.temaFamilias,
+          antesDeRetratar: (t) async {
+            await t.tap(find.byKey(const Key('leccion_continuar')));
+            if (fin) {
+              for (var i = 0; i < 12; i++) {
+                if (find
+                    .byKey(const Key('leccion_fin'))
+                    .evaluate()
+                    .isNotEmpty) {
+                  break;
+                }
+                await t.runAsync(() async {
+                  await t.tap(find.byKey(const Key('leccion_continuar')));
+                  await Future<void>.delayed(const Duration(milliseconds: 20));
+                });
+                await t.pumpAndSettle();
+              }
+            }
+          },
+        );
+      });
+    }
 
     // O-20261109-3: la hoja de premios de Lúa, abierta desde la tarjeta.
     testWidgets('na casa · premios de Lúa · $l', (tester) async {

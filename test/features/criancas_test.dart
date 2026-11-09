@@ -299,4 +299,35 @@ void main() {
     expect(mesmo.xogo.xp, g.xp);
     expect(mesmo.recompensa.xaXogouHoxe, isTrue);
   });
+
+  testWidgets(
+      'Learn de Duolingo: o nodo de hoxe abre a lección paso a paso e o fin dá XP',
+      (tester) async {
+    final store = CriancasStore.enMemoria(const [
+      Crianza(id: 'c1', nome: 'Uxía', idade: 4, curso: 'curso_4_5'),
+    ]);
+    await abrir(tester, store);
+    expect(find.byKey(const Key('learn_banner')), findsOneWidget);
+    expect(find.byKey(const Key('learn_empezar')), findsOneWidget);
+    expect(find.byKey(const Key('learn_xp')), findsOneWidget);
+
+    // martes: o nodo de hoxe é o segundo.
+    await tester.tap(find.byKey(const ValueKey('learn_nodo_1')));
+    await Pasarela.asentar(tester);
+    expect(find.byKey(const Key('leccion_progreso')), findsOneWidget);
+    for (var i = 0; i < 20; i++) {
+      if (find.byKey(const Key('leccion_fin')).evaluate().isNotEmpty) break;
+      await tester.runAsync(() async {
+        await tester.tap(find.byKey(const Key('leccion_continuar')));
+        await Future<void>.delayed(const Duration(milliseconds: 20));
+      });
+      await Pasarela.asentar(tester);
+    }
+    expect(find.byKey(const Key('leccion_fin')), findsOneWidget);
+    expect(find.byKey(const Key('leccion_fin_xp')), findsOneWidget);
+    expect(store.xogo('c1').xp, greaterThan(0));
+    await tester.tap(find.byKey(const Key('leccion_continuar')));
+    await Pasarela.asentar(tester);
+    expect(find.byKey(const Key('learn_banner')), findsOneWidget);
+  });
 }

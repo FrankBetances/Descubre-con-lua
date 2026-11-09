@@ -60,8 +60,16 @@ void main() {
   String texto(WidgetTester tester, String clave) =>
       tester.widget<Text>(find.byKey(Key(clave))).data ?? '';
 
-  // P11: arriba va la lección de la semana; el juego de tres minutos, en el
-  // material complementario.
+  // O-20261109-5: arriba va la pantalla «Learn» de Duolingo; debajo, la
+  // lección de la semana para consultar.
+  Future<void> verLeccion(WidgetTester tester) async {
+    await tester.scrollUntilVisible(
+        find.byKey(const Key('leccion_cabeceira')), 300,
+        scrollable: find.byType(Scrollable).first);
+    await tester.pumpAndSettle();
+  }
+
+  // P11: el juego de tres minutos, en el material complementario.
   Future<void> irAoXogo(WidgetTester tester) async {
     await Pasarela.abrirMaisParaCasa(tester);
     final comezar = find.byKey(const Key('hoxe_comezar'));
@@ -82,6 +90,7 @@ void main() {
           gl ? 'A lección desta semana' : 'La lección de esta semana');
       expect(texto(tester, 'hoxe_data'),
           gl ? 'VENRES, 2 DE OUTUBRO' : 'VIERNES, 2 DE OCTUBRE');
+      await verLeccion(tester);
       expect(find.byKey(const Key('leccion_cabeceira')), findsOneWidget);
       await irAoXogo(tester);
 
@@ -107,24 +116,22 @@ void main() {
           findsOneWidget);
     });
 
-    testWidgets('a semana enteira, sen baixar, a 412×915 (${lang.code})',
+    testWidgets('Learn de Duolingo, sen baixar, a 412×915 (${lang.code})',
         (tester) async {
-      // O-20261101-1: la franja, lo de hoy, la frase y lo nuevo, a la vista.
+      // O-20261109-5: como en duolingo-clone, la primera pantalla es la
+      // unidad en su caja y el camino con los nodos de la semana.
       await abrirPortal(tester, lang, agora: venres);
       tester.view.physicalSize = const Size(412, 915);
       await Pasarela.asentar(tester);
       final barra = tester.getRect(find.byType(NavigationBar)).top;
-      for (final k in [
-        'leccion_ruta_gramatica',
-        'leccion_steam',
-        'leccion_dias',
-        'leccion_gramatica',
-        'leccion_novas',
-      ]) {
+      for (final k in ['learn_banner', 'learn_nodo_0', 'learn_nodo_3']) {
         expect(
             tester.getRect(find.byKey(Key(k))).bottom, lessThanOrEqualTo(barra),
             reason: k);
       }
+      // Debajo, la lección de la semana entera.
+      await verLeccion(tester);
+      expect(find.byKey(const Key('leccion_cabeceira')), findsOneWidget);
     });
 
     testWidgets('«Máis para casa» vai pregado, ao final (${lang.code})',
@@ -235,6 +242,7 @@ void main() {
               (w.key as ValueKey<String>).value.startsWith('leccion_$curso.'))
           .evaluate()
           .isNotEmpty;
+      await verLeccion(tester);
       expect(leccionDe('curso_0_2'), isTrue);
       await irAoXogo(tester);
       final antes = texto(tester, 'hoxe_xogo_texto');
@@ -244,7 +252,8 @@ void main() {
       await tester.pumpAndSettle();
       await tester.tap(find.byKey(const ValueKey('idade_curso_5_6')));
       await Pasarela.asentar(tester);
-      // P11: la lección de arriba es la del curso elegido.
+      // P11: la lección es la del curso elegido.
+      await verLeccion(tester);
       expect(leccionDe('curso_5_6'), isTrue);
       await irAoXogo(tester);
       final despois = texto(tester, 'hoxe_xogo_texto');
