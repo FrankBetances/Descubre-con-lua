@@ -28,6 +28,10 @@ import '../../cuentos/widgets/boton_microcuento.dart';
 import '../../docentes/widgets/hoxe_na_aula.dart';
 import '../../juega/widgets/aula_ciclo_panel.dart' show nomeDoMes;
 import '../../leccions/widgets/leccion_da_semana.dart';
+import '../../criancas/crianza_da_casa.dart';
+import '../../criancas/criancas_store.dart';
+import '../../criancas/tarxeta_lua.dart';
+import '../../../data/models/leccion_model.dart';
 import '../../steam/widgets/steam_no_calendario.dart';
 import '../nomes_familias.dart';
 import '../widgets/reto_da_semana.dart';
@@ -360,6 +364,33 @@ class _HoxeFamiliasScreenState extends State<HoxeFamiliasScreen> {
               language: lang,
               audioService: widget.audioService,
             ),
+            // O-20261109-3: Lúa de Valeria, con los premios del niño.
+            if (CrianzaDaCasa.maybeOf(context) case final casa?)
+              if (casa.store.activa case final neno?) ...[
+                const SizedBox(height: 16),
+                FutureBuilder<Leccions?>(
+                  future: Leccions.cargar()
+                      .then<Leccions?>((l) => l, onError: (_) => null),
+                  builder: (context, snap) => TarxetaLua(
+                    key: ValueKey('tarxeta_lua_${neno.id}'),
+                    store: casa.store,
+                    crianza: neno,
+                    language: lang,
+                    agora: widget.agora,
+                    semana: CriancasStore.semana(
+                        neno.curso, _toca.dia.mesCalendario, _toca.dia.semana),
+                    palabrasDaSemana: [
+                      for (final p in snap.data
+                              ?.da(neno.curso, _toca.dia.mesCalendario,
+                                  _toca.dia.semana)
+                              ?.$2
+                              .novas ??
+                          const <PezaDaLeccion>[])
+                        if (p.en.isNotEmpty) p.en,
+                    ],
+                  ),
+                ),
+              ],
             const SizedBox(height: 16),
             // O-20261028-4: Hoxe es la lección. Todo lo demás —el código de
             // la escuela, el juego de tres minutos, las palabras del banco, el

@@ -1,6 +1,7 @@
 import 'package:flutter/foundation.dart';
 
 import '../../core/storage/local_store.dart';
+import 'xogo_lua.dart';
 
 /// Una criatura de la casa, tal como la registra la persona adulta.
 @immutable
@@ -84,6 +85,9 @@ class CriancasStore extends ChangeNotifier {
   /// niño → semana (`curso/mes/semana`) → palabra → 1 entiende · 2 dice.
   final Map<String, Map<String, Map<String, int>>> _obs = {};
 
+  /// niño → su juego con Lúa (O-20261109-3): XP, racha, insignias y armario.
+  final Map<String, XogoLua> _xogo = {};
+
   bool _cargado = false;
   bool get cargado => _cargado;
 
@@ -100,7 +104,13 @@ class CriancasStore extends ChangeNotifier {
     final j = await _store.read();
     _criancas.clear();
     _obs.clear();
+    _xogo.clear();
     if (j != null) {
+      if (j['xogo'] case final Map x) {
+        for (final e in x.entries) {
+          _xogo[e.key.toString()] = XogoLua.fromJson(e.value);
+        }
+      }
       for (final c in (j['criancas'] as List? ?? const [])) {
         final cr = Crianza.fromJson(c);
         if (cr != null) _criancas.add(cr);
@@ -137,6 +147,10 @@ class CriancasStore extends ChangeNotifier {
                 for (final s in e.value.entries)
                   if (s.value.isNotEmpty) s.key: s.value,
               },
+        },
+        'xogo': {
+          for (final e in _xogo.entries)
+            if (_criancas.any((c) => c.id == e.key)) e.key: e.value.toJson(),
         },
       };
 
@@ -192,6 +206,7 @@ class CriancasStore extends ChangeNotifier {
   Future<void> borrar(String id) async {
     _criancas.removeWhere((c) => c.id == id);
     _obs.remove(id);
+    _xogo.remove(id);
     if (_activa == id) _activa = _criancas.isEmpty ? null : _criancas.first.id;
     await _gardar();
   }
@@ -259,5 +274,61 @@ class CriancasStore extends ChangeNotifier {
       entende: mellor.length,
       di: mellor.values.where((v) => v == 2).length,
     );
+  }
+
+  // ── El juego con Lúa ──────────────────────────────────────────────────
+
+  XogoLua xogo(String id) => _xogo[id] ?? const XogoLua();
+
+  /// El juego del día, hecho: la persona adulta lo marca en nombre del niño.
+  /// Cuentan las palabras nuevas de [semana] que ya marcó como «la entiende»
+  /// (2) o «la dice» (3), sobre las [palabrasDaSemana] de la lección.
+  Future<RecompensaLua> xogarHoxe(
+    String id,
+    CatalogoLua c, {
+    required DateTime agora,
+    required String semana,
+    required List<String> palabrasDaSemana,
+  }) async {
+    final marcas = _obs[id]?[semana] ?? const <String, int>{};
+    final vistas = [
+      for (final p in palabrasDaSemana)
+        if (marcas[p] != null) marcas[p]! + 1,
+    ];
+    final media =
+        vistas.isEmpty ? 0.0 : vistas.reduce((a, b) => a + b) / vistas.length;
+    final perfecta = palabrasDaSemana.isNotEmpty &&
+        palabrasDaSemana.every((p) => marcas[p] == 2);
+    final r = rexistrarSesion(xogo(id), c,
+        agora: agora,
+        palabras: vistas.length,
+        media: media,
+        perfecta: perfecta);
+    _xogo[id] = r.xogo;
+    await _gardar();
+    return r.recompensa;
+  }
+
+  Future<void> acariciar(String id) async {
+    final g = xogo(id);
+    _xogo[id] = g.copyWith(caricias: g.caricias + 1);
+    await _gardar();
+  }
+
+  Future<void> darPeixe(String id, DateTime agora) async {
+    _xogo[id] = xogo(id).copyWith(comeu: XogoLua.dia(agora));
+    await _gardar();
+  }
+
+  /// Pone (o quita, si ya lo lleva) un accesorio desbloqueado.
+  Future<void> porObxecto(String id, ObxectoLua o) async {
+    final g = xogo(id);
+    if (!g.obxectos.contains(o.id)) return;
+    _xogo[id] = switch (o.slot) {
+      'head' => g.copyWith(cabeza: () => g.cabeza == o.id ? null : o.id),
+      'neck' => g.copyWith(pescozo: () => g.pescozo == o.id ? null : o.id),
+      _ => g,
+    };
+    await _gardar();
   }
 }
