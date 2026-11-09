@@ -56,6 +56,11 @@ for m in re.finditer(r"\{\s*id: '(\w+)',[^}]*?slot: '(\w+)',[^}]*?(required\w+):
                      "requiredStreak": "racha", "requiredLevel": "nivel"}[req], "n": int(n),
                      "nome": {"gl": gl["obxecto"][i], "es": es["obxecto"][i]},
                      "condicion": {"gl": gl["obxectoCondicion"][i], "es": es["obxectoCondicion"][i]}})
+# «3★»: el gate de emoji (CLAUDE.md, regla 5) no deja la estrella del
+# sistema; se escribe con letras.
+for i in insignias:
+    for k in ("gl", "es"):
+        i["di"][k] = i["di"][k].replace("3★", "3 estrelas" if k == "gl" else "3 estrellas")
 out = {
     "fuente": "FrankBetances/Valeria:src/valeriaGamification.ts, src/types/valeriaLua.ts y src/i18n/strings.{gl,es}.ts",
     "xpPorNivel": int(re.search(r"XP_PER_LEVEL = (\d+)", gam).group(1)),
