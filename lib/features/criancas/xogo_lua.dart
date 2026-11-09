@@ -48,8 +48,6 @@ class CatalogoLua {
   static LocalizedString _t(Object? v) => LocalizedString.fromJson(
       Map<String, dynamic>.from(v is Map ? v : const {}));
 
-  factory CatalogoLua.fromRaw(String raw) => fromRaw(raw);
-
   static CatalogoLua fromRaw(String raw) {
     final j = json.decode(raw) as Map<String, dynamic>;
     return CatalogoLua(

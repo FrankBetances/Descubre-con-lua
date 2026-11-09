@@ -38,3 +38,8 @@ Formato de cada entrada (una por fallo):
 - Qué pasó: Frank dio duolingo-clone y react-duolingo como modelo para la UX de familia (O-20261028-5). Claude Code hizo una adaptación libre (días como nodos, franja de unidades) y la dio por cumplida; el 9/11 Frank dice que Hoy es «horrible» y que pidió copiar el sistema. Lo hizo Claude Code.
 - Causa raíz: se tomó «es un ejemplo, no a rajatabla» como permiso para no seguir el modelo, y nunca se puso una captura de la fuente al lado de la propia para que Frank comparase.
 - Guarda: .claude/hooks/orden_fuente.py (ahora también salta con «duolingo», «UX», «diseño» y nombres de repositorio, y exige captura de la fuente al lado de la propia antes de dar por buena una copia de UX)
+
+## F-20261109-6 · Push con un error de analyze a la vista
+- Qué pasó: Claude Code empujó a pedagogia (PR #46) un commit con `flutter analyze` diciendo «1 issue found», sin mirarlo: un error de compilación en lib/features/criancas/xogo_lua.dart. El CI iba a caer. Lo hizo Claude Code.
+- Causa raíz: el comando encadenaba analyze y push sin cortar si analyze fallaba (contra R000).
+- Guarda: tools/push_seguro.sh (dart format, flutter analyze y los gates de órdenes y fallos; si alguno falla, no hace commit ni push)
