@@ -409,6 +409,27 @@ void main() {
       );
     });
 
+    // O-20261109-3: la hoja de premios de Lúa, abierta desde la tarjeta.
+    testWidgets('na casa · premios de Lúa · $l', (tester) async {
+      await capturar(
+        tester,
+        'premios-lua-$l',
+        ResultadosCrianzaScreen(
+          store: CriancasStore.enMemoria(const [
+            Crianza(id: 'c1', nome: 'Uxía', idade: 4, curso: 'curso_4_5'),
+          ]),
+          language: lang,
+          onLanguageChanged: (_) {},
+          calendario: CalendarioStore(overrideDirectory: tmp.path),
+          agora: DateTime(2026, 10, 2, 10),
+        ),
+        tema: AppTheme.temaFamilias,
+        antesDeRetratar: (t) async {
+          await t.tap(find.byKey(const Key('lua_premios')));
+        },
+      );
+    });
+
     // O-20261109-1: el registro de la primera vez, ya relleno.
     testWidgets('na casa · rexistro · $l', (tester) async {
       await capturar(
