@@ -6,6 +6,7 @@ import 'package:descubre_con_lua/core/localization/app_language.dart';
 import 'package:descubre_con_lua/core/storage/local_store.dart';
 import 'package:descubre_con_lua/core/theme/app_theme.dart';
 import 'package:descubre_con_lua/features/criancas/criancas_store.dart';
+import 'package:descubre_con_lua/features/criancas/xogo_lua.dart';
 import 'package:descubre_con_lua/features/familias/portal_familias_screen.dart';
 import '../helpers/pasarela.dart';
 
@@ -141,7 +142,7 @@ void main() {
     await tester.tap(find.byKey(const Key('crianza_resultados')));
     await Pasarela.asentar(tester);
 
-    expect(find.byKey(const Key('resultados_lua')), findsOneWidget);
+    expect(find.byKey(const Key('tarxeta_lua')), findsOneWidget);
     expect(find.text('Resultados de Uxía'), findsOneWidget);
     // Sin marcas: ni una cifra que no exista, y la evolución lo dice.
     expect(
@@ -215,5 +216,79 @@ void main() {
         File('${d.path}/${CriancasStore.nomeFicheiro}').readAsStringSync();
     expect(raw.contains('Iria'), isFalse);
     expect(raw.contains('leaf'), isFalse);
+  });
+
+  testWidgets(
+      'Lúa de Valeria en Hoy: xogar dá XP e a primeira insignia, e a folla de premios a mostra',
+      (tester) async {
+    final store = CriancasStore.enMemoria(const [
+      Crianza(id: 'c1', nome: 'Uxía', idade: 4, curso: 'curso_4_5'),
+    ]);
+    await abrir(tester, store);
+    final tarxeta = find.byKey(const Key('tarxeta_lua'));
+    await tester.scrollUntilVisible(tarxeta, 300,
+        scrollable: find.byType(Scrollable).first);
+    expect(find.text('Nivel 1 · Gatiña'), findsOneWidget);
+    expect(find.byKey(const Key('lua_racha')), findsOneWidget);
+
+    await tester.tap(find.byKey(const Key('lua_acariciar')));
+    await tester.pump();
+    expect(find.text('Ronroneo!'), findsOneWidget);
+    await tester.pump(const Duration(seconds: 2));
+
+    await tester.ensureVisible(find.byKey(const Key('lua_xogar')));
+    await tester.tap(find.byKey(const Key('lua_xogar')));
+    await Pasarela.asentar(tester);
+    expect(find.byKey(const Key('recompensa_lua')), findsOneWidget);
+    expect(find.text('Primeiro paso de Lúa'), findsOneWidget);
+    expect(store.xogo('c1').xp, greaterThan(0));
+    expect(store.xogo('c1').insignias, contains('primera'));
+    await tester.tap(find.byKey(const Key('recompensa_continuar')));
+    await Pasarela.asentar(tester);
+
+    // Unha vez ao día.
+    expect(
+        tester
+            .widget<FilledButton>(find.byKey(const Key('lua_xogar')))
+            .onPressed,
+        isNull);
+
+    await tester.ensureVisible(find.byKey(const Key('lua_premios')));
+    await tester.tap(find.byKey(const Key('lua_premios')));
+    await Pasarela.asentar(tester);
+    expect(find.byKey(const Key('premios_lua')), findsOneWidget);
+    expect(find.text('INSIGNIAS · 1 DE 18'), findsOneWidget);
+    await tester.scrollUntilVisible(find.text('Lazo Escarlata'), 300,
+        scrollable: find
+            .descendant(
+                of: find.byKey(const Key('premios_lua')),
+                matching: find.byType(Scrollable))
+            .first);
+    expect(find.text('Lazo Escarlata'), findsOneWidget);
+  });
+
+  test('o xogo de Valeria: racha, insignias e obxectos', () {
+    final c = CatalogoLua.lido!;
+    var g = const XogoLua();
+    for (var d = 1; d <= 3; d++) {
+      g = rexistrarSesion(g, c,
+              agora: DateTime(2026, 10, d, 12),
+              palabras: 2,
+              media: 3,
+              perfecta: true)
+          .xogo;
+    }
+    expect(g.racha, 3);
+    expect(g.insignias, containsAll(['primera', 'racha3', 'perfecta']));
+    expect(
+        g.obxectos, containsAll(['snack_fish', 'neck_red_bow', 'head_flower']));
+    // El mismo día no suma dos veces.
+    final mesmo = rexistrarSesion(g, c,
+        agora: DateTime(2026, 10, 3, 18),
+        palabras: 2,
+        media: 3,
+        perfecta: true);
+    expect(mesmo.xogo.xp, g.xp);
+    expect(mesmo.recompensa.xaXogouHoxe, isTrue);
   });
 }
