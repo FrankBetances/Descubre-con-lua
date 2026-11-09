@@ -1,5 +1,17 @@
 {
   "permissions": {
     "deny": ["Agent", "Workflow"]
+  },
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"$CLAUDE_PROJECT_DIR/.claude/hooks/orden_fuente.py\""
+          }
+        ]
+      }
+    ]
   }
 }

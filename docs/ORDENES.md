@@ -183,3 +183,25 @@ Estado: cumplida
 - [x] Manual actualizado (PDF y Word regenerados) · evidencia: docs/manual-casos-de-uso.html (6 · «Quién aprende» y «Resultados»; 10) y tools/check_manual_build.py
 - [x] Todas las capturas del manual son de la app actual (corrección del 9/11: 16 estaban viejas y el calendario de lecciones no salía): regeneradas las 34 pantallas en gl y es, y añadidas el calendario de lecciones (casa y aula) y la hoja del chip · evidencia: test/capturas_test.dart («calendario de leccions» y «folla do neno») y docs/Descubre-con-Lua-Manual-Casos-de-Uso.pdf (42 páginas, miradas en hoja de contactos)
 - [x] Mergeado en main con CI en verde · evidencia: docs/ORDENES.md (PR #43, run 42630292325 en verde, merge 29362552)
+
+## O-20261109-2 · Automejora: que no vuelva a pasar
+Estado: abierta
+> Lo que yo no veo, fue lo que te ordené, y fui bastante claro porque te dije que lo copiaras de Valeria, me has traicionado, analiza de nuevo por qué ha fallado y pon un Hook o lo que sea a mí eso no me importa, pero esto no puede pasar nunca más ya estoy cansado de que no hagas lo que te pido, tienes que cumplir las reglas, sí o sí, pon un Hook para hacerlo
+>
+> La orden suprema, que es cumplir con mis órdenes, no lo haces. Yo necesito que sea recursivo y que mejores automáticamente, ejecuta mi orden de automejora. Ejecuta y Mergea ahora la orden de auto mejora ya
+Fuente: ninguna: contenido nuevo (las reglas R∞ y R1 de CLAUDE.md)
+
+- [x] En cada mensaje de Frank, un hook recuerda R∞; si pide copiar, traer o imitar algo (o nombra Valeria, la mascota, los premios u otro producto), obliga a abrir la fuente y escribir «Fuente:» antes de programar · evidencia: .claude/hooks/orden_fuente.py y .claude/settings.json (UserPromptSubmit)
+- [x] Cuando Frank señala un fallo, el hook inyecta el protocolo de automejora: comprobar, registrar la causa raíz, crear la guarda, corregir y mergear · evidencia: .claude/hooks/orden_fuente.py
+- [x] Cada fallo queda en docs/FALLOS.md con su causa raíz y su guarda; CI cae si una entrada no tiene guarda que exista · evidencia: tools/check_fallos.py (en tools/gates.sh) y docs/FALLOS.md
+- [x] Ninguna orden nueva sin «Fuente:»; CI cae si falta · evidencia: tools/check_ordenes.py
+- [ ] Mergeado en main con CI en verde · evidencia:
+
+## O-20261109-3 · Lúa y el sistema de premios de Valeria, en casa
+Estado: abierta
+> te dije que lo copiaras de Valeria
+Fuente: FrankBetances/Valeria:src/components/lua/ValeriaCatInteractiveCard.tsx (y src/ValeriaPixelAwards.tsx, src/ValeriaAwardsSheet.tsx, src/valeriaGamification.ts, src/components/lua/luaPixelSegments.ts)
+
+- [ ] La tarjeta de Lúa de Valeria, portada: la gata de cuerpo entero que respira, mueve la cola, parpadea y reacciona al tocarla, con su nivel, su barra de progreso y la racha en la misma tarjeta, en Hoy de casa · evidencia:
+- [ ] La colección de premios de Valeria (hoja de premios) abierta desde la tarjeta · evidencia:
+- [ ] Mergeado en main con CI en verde · evidencia:

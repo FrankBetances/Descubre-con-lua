@@ -71,6 +71,9 @@ run_gate "flutter test" flutter test --exclude-tags capturas
 # evidencia de cada criterio.
 run_gate "every order marked done has evidence for each criterion" \
   python3 tools/check_ordenes.py
+# Automejora (Frank, 9/11/2026, O-20261109-2): cada fallo que señala Frank,
+# con su causa raíz y una guarda que exista.
+run_gate "every failure Frank reported has its guard" python3 tools/check_fallos.py
 run_gate "contact address" python3 tools/check_contact_email.py
 # Nace del Calendario, que llegó al aparato como un disco girando para siempre
 # porque `assets/content/calendario/` no estaba en pubspec.yaml. Un asset que

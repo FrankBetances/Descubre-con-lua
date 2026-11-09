@@ -15,6 +15,15 @@ La dictó Frank el 28/10/2026: «necesito una solución y regla suprema para que
    3. **Primero se entrega una sola edad entera** (4-5 años, 40 semanas). Frank la abre en la app y mira tres semanas al azar. Las otras edades no se hacen hasta que Frank dé esa por buena.
    4. **Cada informe empieza por lo que falta, con números**: «de 40 semanas, hechas 40; sin cuento propio, 0». Nunca por lo que se hizo.
 
+## R∞+ · AUTOMEJORA: CADA FALLO DEJA UNA GUARDA
+
+La dictó Frank el 9/11/2026 (O-20261109-2): «necesito que sea recursivo y que mejores automáticamente». Nació de dos fallos de Claude Code el mismo día: no copiar de Valeria la Lúa y los premios que Frank pidió, y dar por actualizado un manual con capturas viejas.
+
+1. **Cada fallo que Frank señala entra en `docs/FALLOS.md`**, con qué pasó, la causa raíz y la guarda que lo habría parado.
+2. **La guarda se crea en el mismo cambio**: un hook en `.claude/hooks/`, un gate en `tools/` o un test. `tools/check_fallos.py` tumba CI si una entrada no tiene guarda que exista.
+3. **El hook `.claude/hooks/orden_fuente.py` corre en cada mensaje de Frank**: recuerda R∞, obliga a abrir y escribir la «Fuente:» de lo que se copia, y cuando Frank señala un fallo inyecta este protocolo.
+4. **Ninguna orden desde O-20261109-2 sin «Fuente:»** en `docs/ORDENES.md`: de dónde sale lo que se hace. Lo comprueba `tools/check_ordenes.py`.
+
 ## R0 · PROHIBIDO JUSTIFICARSE. AQUÍ SE VIENE A HACER LAS COSAS BIEN, SÍ O SÍ
 
 La dictó Frank el 21/10/2026: «hay que agregar aquí la regla cero: prohibido justificarse, aquí se viene a hacer las cosas bien sí o sí». Va antes que todo lo demás.
