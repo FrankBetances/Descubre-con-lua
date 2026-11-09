@@ -146,14 +146,14 @@ Estado: abierta
 - [x] Mergeado en main con CI en verde · evidencia: docs/ORDENES.md (PR #40, run 41344504153 en verde, merge bdff495d)
 
 ## O-20261101-2 · Las otras cuatro edades, completas
-Estado: abierta
+Estado: cumplida
 > la evaluación de 4-5 años ya se hizo joder y te dije que la di por buena [...] yo te orden hacer el trabajo completo, cuando termines Mergea y push
 
 - [x] 0-2, 2-3, 3-4 y 5-6 años: cada palabra nueva sale en el cuento de su semana, en las 160 semanas (129/129, 120/120, 132/132, 140/140; con 4-5, 663/663) · evidencia: tools/gen_leccions.py (revisar con CONTO_COMPLETO en las cinco edades) y tools/check_contos_palabras.py
-- [ ] Mergeado en main con CI en verde · evidencia:
+- [x] Mergeado en main con CI en verde · evidencia: docs/ORDENES.md (PR #41, run 41357557391 en verde, merge 0c5bf406)
 
 ## O-20261101-3 · Contraste de sonido en 0-2 años
-Estado: abierta
+Estado: cumplida
 > Queda una decisión tuya: el contraste de sonido en 0-2 años. [...] ¿Lo añado? Ok
 
 - [x] Los 10 meses de 0-2 años tienen su contraste de sonido: dos palabras del banco de 0-2 que solo cambian en un sonido, con su nota en gl y es para que la persona adulta las diga en parentese · evidencia: tools/check_unidades.py (--estricto: falla si un mes de cualquier edad no trae contraste)
