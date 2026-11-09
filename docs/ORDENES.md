@@ -168,7 +168,7 @@ Estado: cumplida
 
 
 ## O-20261109-1 · Registro de cada niño, Lúa y premios, y pantalla de resultados (casa)
-Estado: abierta
+Estado: cumplida
 > Necesito agregar una pequeña pantalla de registro donde se coloque el nombre del niño, edad y curso en que está para no repetir lo mismo cada vez que se abre la app, además incorporar la mascota lua y el diseño de premios, y una pantalla de resultados para ver evolución y animar a los padres y profesores, cuando termines, actualiza el manual y luego Mergea y push al main
 >
 > Decisiones de Frank (9/11): «Poner nombre porque pueden ser varios niños en una misma casa, modifica la página legal además el dato no sale del móvil»; resultados: «lo que hizo el adulto + observación del adulto»; registro: «Solo en casa».
@@ -181,4 +181,4 @@ Estado: abierta
 - [x] El aula no cambia (sin registro de niños) · evidencia: lib/features/familias/widgets/selector_idade.dart (con paraAula, ni nombre ni hoja del niño; CrianzaDaCasa solo existe en el Portal Familias) y la suite de aula en verde (test/features/tpr_pantallas_test.dart, test/features/ux_l8_test.dart)
 - [x] Privacidad: el nombre, la edad, el curso y las observaciones se guardan solo en el móvil (`criancas.json`), sin hora; un gate falla si aparece una clave nueva o una hora; la política de privacidad (gl y es) y CLAUDE.md lo dicen · evidencia: test/core/criancas_privacidad_test.dart, docs/privacy.html (apartados 2, 4, 5 y 6; gl 2, 4 y 4 bis; en 2), docs/terms.html y CLAUDE.md (apartado de privacidad declarada)
 - [x] Manual actualizado (PDF y Word regenerados) · evidencia: docs/manual-casos-de-uso.html (6 · «Quién aprende» y «Resultados»; 10) y tools/check_manual_build.py
-- [ ] Mergeado en main con CI en verde · evidencia:
+- [x] Mergeado en main con CI en verde · evidencia: docs/ORDENES.md (PR #43, run 42630292325 en verde, merge 29362552)
