@@ -372,8 +372,9 @@ lo detecta. La app no puede enseñar un texto y reproducir otro.
 
 ## Privacidad
 
-Cero datos personales, cero analítica, cero SDK de terceros, y ningún permiso
-de red. `pubspec.yaml` no tiene una sola dependencia externa: la reproducción de
+Ningún dato sale del aparato: cero analítica, cero SDK de terceros y ningún
+permiso de red. En casa, el nombre, la edad y el curso de cada niño, y lo que la
+familia marca de sus palabras, se guardan solo en el móvil. `pubspec.yaml` no tiene una sola dependencia externa: la reproducción de
 audio va por un `MethodChannel` contra el `MediaPlayer` de Android.
 
 **Lo único que la app guarda**, en el almacenamiento privado del aparato: los

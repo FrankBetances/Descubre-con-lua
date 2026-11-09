@@ -160,7 +160,7 @@ Coste propio: en el 2.º ciclo se entregaron tres asambleas de un curso de trein
 Este archivo importaba `.agents/rules/01-producto.md`, `02-flutter-android.md` y `03-contenido.md`. **Esos tres ficheros no existen en el repositorio**, así que las importaciones se han retirado: un import roto no es una regla, es una regla que nadie lee. Estas son las reglas, sin depender de ningún import:
 
 - el niño no usa la pantalla;
-- cero datos personales (los premios guardan contadores del adulto, nunca nada de una crianza: ver abajo);
+- ningún dato sale del aparato. Los premios guardan contadores del adulto. Desde el 9/11/2026, por decisión de Frank (O-20261109-1), en casa se guarda en el móvil el nombre o apodo, la edad y el curso de cada niño, y lo que la persona adulta observa de sus palabras. Ver abajo;
 - sin permiso INTERNET en release;
 - nada con finalidad sanitaria;
 - contenido en JSON, nunca escrito en los widgets.
@@ -379,12 +379,14 @@ Si la app se publica en Google Play, la política de privacidad y el formulario 
 
 Cualquier cambio en lo que la app recoge (un permiso, un paquete, un campo guardado) obliga a actualizar **en el mismo cambio** la política y el formulario de Play Console.
 
-**Lo que la app guarda hoy**, y nada más, en **dos** ficheros del almacenamiento privado de la app (`getFilesDir()`):
+**Lo que la app guarda hoy**, y nada más, en **tres** ficheros del almacenamiento privado de la app (`getFilesDir()`):
 
 - `premios.json`: la cuenta de uso de la persona adulta para los premios de Lúa —asambleas dirigidas, cápsulas leídas, racha actual y mejor racha, fecha del último día **sin hora**, e identificadores de insignias ganadas—.
 - `user_progress.json`: los mismos contadores del recorrido de la persona adulta (XP, rachas, fecha del último día **sin hora**, qué asambleas y cápsulas completó, y una casilla aula/hogar **por día**, no por momento) y, además, **una tarjeta de repaso espaciado por palabra inglesa**: la palabra, sus números de FSRS (dificultad, estabilidad, repasos, fallos) y las dos fechas del repaso, **en día, sin hora**.
 
-Ninguno de los dos identifica a nadie, ninguno contiene nada de ninguna crianza y ninguno puede salir del aparato porque no hay permiso de red. Que una hora no se cuele —ni escrita, ni en milisegundos desde 1970— no es una promesa: lo comprueban dos gates, y hacen falta los dos, porque cada uno mira su fichero: `test/features/premios_test.dart` y `test/core/progreso_privacidad_test.dart`. Cualquiera de los dos falla si aparece una clave nueva en el fichero que vigila.
+- `criancas.json` (O-20261109-1, decidido por Frank el 9/11/2026: «el dato no sale del móvil»): solo en casa, de cada niño el nombre o apodo que escribe la familia, la edad en años y el curso; cuál se vio el último; y, por semana del curso (`curso/mes/semana`, **sin fecha ni hora**), qué palabras inglesas la persona adulta marcó como «la entiende» o «la dice». Se borra desde la app o al desinstalar. En el aula no se registra a ningún niño.
+
+Los dos primeros no identifican a nadie ni contienen nada de ninguna crianza; el tercero lleva el nombre que la familia escribe, y por eso la política de privacidad lo declara. Ninguno puede salir del aparato porque no hay permiso de red. Que una hora no se cuele —ni escrita, ni en milisegundos desde 1970— no es una promesa: lo comprueban tres gates, uno por fichero: `test/features/premios_test.dart`, `test/core/progreso_privacidad_test.dart` y `test/core/criancas_privacidad_test.dart`. Cualquiera falla si aparece una clave nueva en el fichero que vigila.
 
 Las URLs legales de esta app son estas, y no otras. Salen del sitio de GitHub Pages que publica `docs/`:
 

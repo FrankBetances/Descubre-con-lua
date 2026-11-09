@@ -166,3 +166,19 @@ Estado: cumplida
 - [x] Enlazada desde docs/index.html y docs/privacy.html · evidencia: docs/index.html («terms.html») y docs/privacy.html
 - [x] Vigilada por el gate tools/check_legal_urls.py (offline en gates.sh y online por red contra https://frankbetances.github.io/Descubre-con-lua/terms.html) · evidencia: tools/check_legal_urls.py («terms.html»)
 
+
+## O-20261109-1 · Registro de cada niño, Lúa y premios, y pantalla de resultados (casa)
+Estado: abierta
+> Necesito agregar una pequeña pantalla de registro donde se coloque el nombre del niño, edad y curso en que está para no repetir lo mismo cada vez que se abre la app, además incorporar la mascota lua y el diseño de premios, y una pantalla de resultados para ver evolución y animar a los padres y profesores, cuando termines, actualiza el manual y luego Mergea y push al main
+>
+> Decisiones de Frank (9/11): «Poner nombre porque pueden ser varios niños en una misma casa, modifica la página legal además el dato no sale del móvil»; resultados: «lo que hizo el adulto + observación del adulto»; registro: «Solo en casa».
+
+- [x] Inicio → Na casa, la primera vez: pantalla de registro con Lúa, nombre, edad (0 a 6 años) y curso (las cinco edades de la app); al guardar se entra en Hoy con ese curso · evidencia: test/features/criancas_test.dart («a primeira vez pide nome, idade e curso con Lúa; a segunda xa non») y docs/capturas/rexistro-crianza-gl.png, rexistro-crianza-es.png
+- [x] Al volver a abrir la app no se pregunta nada: Hoy abre con el último niño y su curso, y el chip de arriba dice «Nombre · curso» · evidencia: test/features/criancas_test.dart (misma prueba: segunda apertura sobre el mismo fichero) y docs/capturas/hoxe-familias-gl.png, hoxe-familias-es.png
+- [x] Varios niños en una casa: desde el chip se cambia de niño, se añade otro, se cambia su curso y se borra uno · evidencia: test/features/criancas_test.dart («varios nenos: cambiar de neno, de curso e borrar»)
+- [x] Pantalla de resultados del niño (chip → Ver resultados, y Guías → Resultados): Lúa con un mensaje de ánimo hecho con números reales, lo que hizo la persona adulta (días de juego en casa, racha) con las medallas del diseño de premios, la observación de la semana (cada palabra nueva: «aún no» / «la entiende» / «la dice») y la evolución semana a semana de esas observaciones · evidencia: test/features/criancas_test.dart («resultados: Lúa, sen evolución inventada, e a observación da semana conta» y «Guías leva aos resultados») y docs/capturas/resultados-crianza-gl.png, resultados-crianza-es.png
+- [x] Nada inventado: si no hay observaciones, la pantalla lo dice y no pinta evolución · evidencia: test/features/criancas_test.dart (cifras a 0 y «Todavía no has marcado ninguna palabra» antes de marcar)
+- [x] El aula no cambia (sin registro de niños) · evidencia: lib/features/familias/widgets/selector_idade.dart (con paraAula, ni nombre ni hoja del niño; CrianzaDaCasa solo existe en el Portal Familias) y la suite de aula en verde (test/features/tpr_pantallas_test.dart, test/features/ux_l8_test.dart)
+- [x] Privacidad: el nombre, la edad, el curso y las observaciones se guardan solo en el móvil (`criancas.json`), sin hora; un gate falla si aparece una clave nueva o una hora; la política de privacidad (gl y es) y CLAUDE.md lo dicen · evidencia: test/core/criancas_privacidad_test.dart, docs/privacy.html (apartados 2, 4, 5 y 6; gl 2, 4 y 4 bis; en 2), docs/terms.html y CLAUDE.md (apartado de privacidad declarada)
+- [x] Manual actualizado (PDF y Word regenerados) · evidencia: docs/manual-casos-de-uso.html (6 · «Quién aprende» y «Resultados»; 10) y tools/check_manual_build.py
+- [ ] Mergeado en main con CI en verde · evidencia:
