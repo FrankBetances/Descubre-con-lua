@@ -55,6 +55,7 @@ import 'package:descubre_con_lua/features/docentes/views/hoxe_docentes_screen.da
 import 'package:descubre_con_lua/features/docentes/portal_docentes_screen.dart';
 import 'package:descubre_con_lua/features/familias/portal_familias_screen.dart';
 import 'package:descubre_con_lua/features/criancas/criancas_store.dart';
+import 'package:descubre_con_lua/features/leccions/views/calendario_de_leccions_screen.dart';
 import 'package:descubre_con_lua/features/criancas/resultados_crianza_screen.dart';
 import 'package:descubre_con_lua/features/criancas/rexistro_crianza_screen.dart';
 import 'package:descubre_con_lua/features/steam/views/steam_hub_screen.dart';
@@ -359,6 +360,52 @@ void main() {
           agora: venres,
         ),
         tema: AppTheme.temaFamilias,
+      );
+    });
+
+    // O-20261101-1: la pestaña Calendario de hoy, casa y aula (octubre).
+    for (final aula in [false, true]) {
+      testWidgets('calendario de leccions · ${aula ? 'aula' : 'casa'} · $l',
+          (tester) async {
+        await capturar(
+          tester,
+          'calendario-leccions-${aula ? 'aula' : 'casa'}-$l',
+          CalendarioDeLeccionsScreen(
+            cursoId: 'curso_4_5',
+            onCambiarCurso: (_) {},
+            language: lang,
+            onLanguageChanged: (_) {},
+            paraAula: aula,
+            agora: DateTime(2026, 10, 2, 10),
+            calendarioCompleto: (_) => const SizedBox(),
+          ),
+          tema: aula ? AppTheme.lightTheme : AppTheme.temaFamilias,
+        );
+      });
+    }
+
+    // O-20261109-1: la hoja del chip, con dos niños en casa.
+    testWidgets('na casa · folla do neno · $l', (tester) async {
+      await contidoDeHoxe(tester);
+      await capturar(
+        tester,
+        'folla-crianza-$l',
+        PortalFamiliasScreen(
+          repository: contenido,
+          audioService: MockOfflineAudioService(),
+          currentLanguage: lang,
+          onToggleLanguage: () {},
+          calendario: CalendarioStore(overrideDirectory: tmp.path),
+          criancas: CriancasStore.enMemoria(const [
+            Crianza(id: 'c1', nome: 'Uxía', idade: 4, curso: 'curso_4_5'),
+            Crianza(id: 'c2', nome: 'Antón', idade: 2, curso: 'curso_2_3'),
+          ]),
+          agora: venres,
+        ),
+        tema: AppTheme.temaFamilias,
+        antesDeRetratar: (t) async {
+          await t.tap(find.byKey(const ValueKey('selector_idade')));
+        },
       );
     });
 
