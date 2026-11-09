@@ -157,3 +157,12 @@ Estado: cumplida
 > Queda una decisión tuya: el contraste de sonido en 0-2 años. [...] ¿Lo añado? Ok
 
 - [x] Los 10 meses de 0-2 años tienen su contraste de sonido: dos palabras del banco de 0-2 que solo cambian en un sonido, con su nota en gl y es para que la persona adulta las diga en parentese · evidencia: tools/check_unidades.py (--estricto: falla si un mes de cualquier edad no trae contraste)
+
+## O-20261104-1 · Página de Términos del Servicio para Google Play Console
+Estado: cumplida
+> Necesito crear la pagina para el playstore de google, me piden :Términos del Servicio. Si está disponible, proporciona una URL de los Términos del Servicio. Este enlace se mostrará a los usuarios de Google Play de todo el mundo. Asegúrate de que la URL de tus Términos del Servicio: Se aloja en una URL activa y de acceso público (que empieza por http:// o https://) con un certificado SSL válido; Es accesible en todo el mundo sin restricciones geográficas, geoperimetraje ni requisitos de inicio de sesión; Se muestra en una página web estándar no editable (no en un PDF ni en un archivo descargable); Se aplica específicamente a tu aplicación
+
+- [x] Página web estándar HTML no editable en docs/terms.html específica para Descubre con Lúa (com.earlify.descubreconlua), en castellano, galego e inglés, con correo oficial frank.alberto.betances.reinoso@gmail.com · evidencia: docs/terms.html («Términos del Servicio» y «com.earlify.descubreconlua»)
+- [x] Enlazada desde docs/index.html y docs/privacy.html · evidencia: docs/index.html («terms.html») y docs/privacy.html
+- [x] Vigilada por el gate tools/check_legal_urls.py (offline en gates.sh y online por red contra https://frankbetances.github.io/Descubre-con-lua/terms.html) · evidencia: tools/check_legal_urls.py («terms.html»)
+

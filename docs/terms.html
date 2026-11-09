@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Términos del Servicio · Descubre con Lúa</title>
+  <meta name="description" content="Términos del Servicio y Condiciones de Uso oficiales para la aplicación Descubre con Lúa (com.earlify.descubreconlua) en Google Play.">
+  <style>
+    :root {
+      --primary: #1B4965;
+      --secondary: #62B6CB;
+      --accent: #5FA8D3;
+      --bg: #F4F1DE;
+      --card-bg: #FFFFFF;
+      --text: #2B2D42;
+      --text-muted: #4A4E69;
+      --border: #E0DDCF;
+      --badge-bg: #E8F4F8;
+      --badge-text: #1B4965;
+      --success: #2A9D8F;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      padding: 24px 16px;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      background: var(--card-bg);
+      border-radius: 16px;
+      padding: 40px 32px;
+      box-shadow: 0 4px 20px rgba(27, 73, 101, 0.08);
+      border: 1px solid var(--border);
+    }
+
+    header {
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 24px;
+      margin-bottom: 32px;
+    }
+
+    .brand-tag {
+      display: inline-block;
+      background: var(--badge-bg);
+      color: var(--badge-text);
+      font-weight: 700;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 6px 12px;
+      border-radius: 6px;
+      margin-bottom: 12px;
+    }
+
+    h1 {
+      color: var(--primary);
+      font-size: 2.1rem;
+      line-height: 1.25;
+      margin-bottom: 8px;
+    }
+
+    .meta-info {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    .lang-switcher {
+      display: flex;
+      gap: 8px;
+      margin-top: 16px;
+      flex-wrap: wrap;
+    }
+
+    .lang-btn {
+      background: #EAE6D6;
+      border: 1px solid var(--border);
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+      color: var(--text);
+      transition: all 0.2s ease;
+    }
+
+    .lang-btn.active, .lang-btn:hover {
+      background: var(--primary);
+      color: #FFFFFF;
+      border-color: var(--primary);
+    }
+
+    .highlight-card {
+      background: #EEF8F6;
+      border-left: 5px solid var(--success);
+      padding: 16px 20px;
+      border-radius: 8px;
+      margin: 24px 0;
+    }
+
+    .highlight-card h3 {
+      color: var(--success);
+      font-size: 1.15rem;
+      margin-bottom: 6px;
+    }
+
+    h2 {
+      color: var(--primary);
+      font-size: 1.35rem;
+      margin-top: 32px;
+      margin-bottom: 12px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    p {
+      margin-bottom: 14px;
+      font-size: 1.02rem;
+    }
+
+    ul {
+      margin-left: 24px;
+      margin-bottom: 18px;
+    }
+
+    li {
+      margin-bottom: 6px;
+    }
+
+    strong {
+      color: var(--primary);
+    }
+
+    a {
+      color: var(--primary);
+    }
+
+    code {
+      background: var(--badge-bg);
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 0.9em;
+    }
+
+    .spec-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      font-size: 0.95rem;
+    }
+
+    .spec-table th, .spec-table td {
+      border: 1px solid var(--border);
+      padding: 10px 14px;
+      text-align: left;
+    }
+
+    .spec-table th {
+      background: #F8F7F0;
+      color: var(--primary);
+    }
+
+    footer {
+      margin-top: 48px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 24px 18px;
+      }
+      h1 {
+        font-size: 1.7rem;
+      }
+      h2 {
+        font-size: 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <header style="display: flex; gap: 24px; align-items: center; flex-wrap: wrap;">
+    <img src="app_icon.png" alt="Icono oficial de Lúa (Descubre con Lúa)" style="width: 96px; height: 96px; border-radius: 20px; box-shadow: 0 4px 14px rgba(27, 73, 101, 0.18); flex-shrink: 0;" />
+    <div style="flex: 1; min-width: 260px;">
+      <div class="brand-tag">Earlify Health · Condiciones Legales Oficiales</div>
+      <h1 id="title">Términos del Servicio</h1>
+      <div class="meta-info">
+        <strong>Aplicación:</strong> Descubre con Lúa (<code id="pkg">com.earlify.descubreconlua</code>)<br>
+        <strong>Titular:</strong> Earlify Health S.L. · Dr. Frank Alberto Betances Reinoso<br>
+        <strong>Fecha de vigencia:</strong> 4 de noviembre de 2026
+      </div>
+
+      <div class="lang-switcher">
+        <button class="lang-btn active" onclick="setLanguage('es', this)">Castellano</button>
+        <button class="lang-btn" onclick="setLanguage('gl', this)">Galego</button>
+        <button class="lang-btn" onclick="setLanguage('en', this)">English</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- CONTENIDO EN ESPAÑOL -->
+  <div id="content-es" class="lang-section">
+    <div class="highlight-card">
+      <h3>Resumen de Uso: Recurso Educativo 100% Offline para Adultos</h3>
+      <p>Estos Términos del Servicio regulan específicamente la descarga, instalación y uso de la aplicación Android <strong>Descubre con Lúa</strong> (identificador de paquete <code>com.earlify.descubreconlua</code>). La aplicación tiene una <strong>finalidad exclusivamente educativa</strong>, funciona <strong>100% sin conexión a Internet</strong>, no requiere creación de cuentas ni inicio de sesión, y está diseñada para ser manejada únicamente por la persona adulta (docente o familia), sin que el menor interactúe con la pantalla.</p>
+    </div>
+
+    <h2>1. Titularidad e Identificación del Prestador</h2>
+    <p>El presente documento establece los Términos del Servicio y Condiciones de Uso aplicables a la aplicación móvil <strong>Descubre con Lúa · Edición Vigo</strong> (<code>com.earlify.descubreconlua</code>), puesta a disposición de los usuarios en Google Play por:</p>
+    <ul>
+      <li><strong>Entidad titular y desarrolladora:</strong> Earlify Health S.L.</li>
+      <li><strong>Representante legal:</strong> Dr. Frank Alberto Betances Reinoso</li>
+      <li><strong>Correo electrónico oficial de contacto:</strong> <a href="mailto:frank.alberto.betances.reinoso@gmail.com">frank.alberto.betances.reinoso@gmail.com</a></li>
+      <li><strong>Domicilio operativo:</strong> Vigo, Galicia, España</li>
+    </ul>
+    <p>Al descargar, instalar o utilizar la aplicación <strong>Descubre con Lúa</strong>, la persona usuaria acepta quedar vinculada por los presentes Términos del Servicio.</p>
+
+    <h2>2. Objeto y Finalidad Exclusivamente Educativa</h2>
+    <p><strong>Descubre con Lúa</strong> es un recurso pedagógico bilingüe (gallego y castellano) con inmersión temprana en inglés oral y actividades STEAM para educación infantil (de 0 a 6 años), estructurado en dos ámbitos de uso:</p>
+    <ul>
+      <li><strong>Modo Aula (Juega con Lúa):</strong> Dirigido al personal docente de educación infantil para guiar asambleas, canciones con pulso visual, cuentos dialogados, dinámicas de respuesta física total (TPR) y talleres de exploración sensorial y STEAM.</li>
+      <li><strong>Modo Hogar (Academy / Na casa):</strong> Dirigido a padres, madres y tutores legales con pautas semanales, cápsulas formativas breves, microcuentos y actividades cotidianas en familia.</li>
+    </ul>
+    <p><strong>Exclusión de finalidad sanitaria:</strong> La aplicación tiene carácter <strong>exclusivamente educativo y pedagógico</strong>. No es un dispositivo médico ni un producto sanitario (no es SaMD), no realiza cribados clínicos, no evalúa, no diagnostica, no previene ni trata ningún trastorno del lenguaje, de la audición ni del neurodesarrollo, y en ningún caso sustituye la valoración de profesionales sanitarios o educativos.</p>
+
+    <h2>3. Condiciones de Uso: Operación por Personas Adultas</h2>
+    <p>El diseño pedagógico y técnico de <strong>Descubre con Lúa</strong> se rige por las siguientes reglas esenciales de utilización:</p>
+    <ul>
+      <li><strong>El niño no usa la pantalla:</strong> La aplicación está concebida para ser operada exclusivamente por la persona adulta (docente o familiar), quien lee el guion, escucha el modelo acústico y dirige la actividad en el mundo físico.</li>
+      <li><strong>Supervisión adulta en actividades manipulativas:</strong> Todas las propuestas sensoriales, juegos en casa y talleres de ciencia cotidiana (<em>STEAM do mes</em>) deben realizarse siempre bajo la presencia, criterio y supervisión directa de una persona adulta responsable, verificando que los materiales físicos del entorno sean seguros para la edad de cada criatura.</li>
+      <li><strong>Uso lícito y educativo:</strong> Queda prohibido el uso de la aplicación con fines ilícitos, comerciales no autorizados o contrarios a la dignidad y bienestar de la infancia.</li>
+    </ul>
+
+    <h2>4. Funcionamiento 100% Offline, Sin Cuentas y Sin Compras</h2>
+    <table class="spec-table">
+      <thead>
+        <tr>
+          <th>Característica</th>
+          <th>Condición en Descubre con Lúa</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Conectividad a Internet</strong></td>
+          <td>100% sin conexión (el APK de distribución excluye el permiso <code>android.permission.INTERNET</code>).</td>
+        </tr>
+        <tr>
+          <td><strong>Registro o inicio de sesión</strong></td>
+          <td>No requiere cuenta de usuario, contraseña, correo ni autenticación de ningún tipo.</td>
+        </tr>
+        <tr>
+          <td><strong>Compras integradas y anuncios</strong></td>
+          <td>Sin compras dentro de la aplicación (in-app purchases), sin suscripciones de pago y sin publicidad.</td>
+        </tr>
+        <tr>
+          <td><strong>Acceso geográfico</strong></td>
+          <td>Funcionalidad completa en cualquier lugar del mundo sin restricciones geográficas ni bloqueos de red.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>5. Licencia de Uso y Propiedad Intelectual</h2>
+    <p>Earlify Health S.L. otorga a la persona usuaria una licencia <strong>limitada, no exclusiva, intransferible, gratuita y revocable</strong> para instalar y ejecutar la aplicación <strong>Descubre con Lúa</strong> en dispositivos Android compatibles, con fines estrictamente educativos, docentes o familiares.</p>
+    <p>Todos los derechos de propiedad intelectual e industrial sobre la aplicación —incluyendo su código fuente, arquitectura en Flutter, diseño de interfaz, la mascota oficial <strong>Lúa</strong>, las láminas vectoriales y en pixel art, el corpus de locuciones de voz en gallego, castellano e inglés, las canciones con pulso visual y los textos curriculares— pertenecen a Earlify Health S.L. o se utilizan bajo las correspondientes licencias abiertas declaradas en la documentación del proyecto. No se permite descompilar, redistribuir comercialmente ni suprimir los avisos de autoría de la aplicación.</p>
+
+    <h2>6. Privacidad, Datos y Almacenamiento Local</h2>
+    <p>El tratamiento de la privacidad se rige por nuestra <a href="privacy.html">Política de Privacidad oficial</a>, que forma parte integrante de estos Términos:</p>
+    <ul>
+      <li><strong>Cero recopilación de datos personales:</strong> La aplicación no recoge, no procesa ni transmite datos personales de adultos ni de menores.</li>
+      <li><strong>Datos locales de progreso del adulto:</strong> Los contadores de uso (asambleas dirigidas, cápsulas leídas, insignias de Lúa, días marcados en el Calendario Escuela · Hogar, puntos marcados en «Hoy hice» y tarjetas de repaso de vocabulario inglés) se almacenan únicamente en la carpeta privada interna del dispositivo, registrando las fechas exclusivamente por día (<code>aaaa-mm-dd</code>, sin hora). Esta información nunca sale del aparato y se elimina por completo al desinstalar la aplicación o al restablecer los datos desde los ajustes del dispositivo.</li>
+    </ul>
+
+    <h2>7. Disponibilidad, Actualizaciones y Limitación de Responsabilidad</h2>
+    <p>La aplicación se ofrece «tal cual» (<em>as is</em>), con todos sus recursos pedagógicos y de voz empaquetados para funcionar sin conexión desde el momento de su instalación. Earlify Health S.L. podrá publicar actualizaciones en Google Play para ampliar contenidos, mejorar la accesibilidad o mantener la compatibilidad con nuevas versiones de Android.</p>
+    <p>En la máxima medida permitida por la legislación aplicable, Earlify Health S.L. no será responsable de daños indirectos derivados del uso inadecuado del dispositivo móvil o de la falta de supervisión adulta durante las actividades físicas o manipulativas realizadas en el aula o en el hogar.</p>
+
+    <h2>8. Modificaciones de estos Términos</h2>
+    <p>Cualquier actualización futura de estos Términos del Servicio motivada por mejoras funcionales o cambios normativos será publicada en esta misma dirección web pública, actualizando la fecha de vigencia en el encabezado.</p>
+
+    <h2>9. Legislación Aplicable y Contacto Oficial</h2>
+    <p>Estos Términos del Servicio se rigen por la legislación española y la normativa de la Unión Europea aplicable, respetando en todo caso los derechos irrenunciables que correspondan a las personas consumidoras y usuarias según su lugar de residencia.</p>
+    <p>Para cualquier consulta legal, soporte o comunicación sobre estos Términos del Servicio, puede dirigirse en cualquier momento a:</p>
+    <p><strong>Dr. Frank Alberto Betances Reinoso · Earlify Health S.L.</strong><br>
+    Correo electrónico: <a href="mailto:frank.alberto.betances.reinoso@gmail.com">frank.alberto.betances.reinoso@gmail.com</a><br>
+    Documentos relacionados: <a href="index.html">Página principal del proyecto</a> · <a href="privacy.html">Política de Privacidad</a><br>
+    Vigo, Galicia, España.</p>
+  </div>
+
+  <!-- CONTENIDO EN GALEGO -->
+  <div id="content-gl" class="lang-section" style="display: none;">
+    <div class="highlight-card">
+      <h3>Resumo de Uso: Recurso Educativo 100% Sen Conexión para Persoas Adultas</h3>
+      <p>Estes Termos do Servizo regulan especificamente a descarga, instalación e uso da aplicación Android <strong>Descubre con Lúa</strong> (identificador de paquete <code>com.earlify.descubreconlua</code>). A aplicación ten unha <strong>finalidade exclusivamente educativa</strong>, funciona <strong>100% fóra de liña (offline)</strong>, non require contas nin inicio de sesión, e está deseñada para ser manexada unicamente pola persoa adulta (docente ou familia), sen que a crianza toque a pantalla.</p>
+    </div>
+
+    <h2>1. Titularidade e Identificación do Prestador</h2>
+    <p>O presente documento establece os Termos do Servizo e Condicións de Uso aplicables á aplicación móbil <strong>Descubre con Lúa · Edición Vigo</strong> (<code>com.earlify.descubreconlua</code>), posta á disposición das persoas usuarias en Google Play por:</p>
+    <ul>
+      <li><strong>Entidade titular e desenvolvedora:</strong> Earlify Health S.L.</li>
+      <li><strong>Representante legal:</strong> Dr. Frank Alberto Betances Reinoso</li>
+      <li><strong>Correo electrónico oficial de contacto:</strong> <a href="mailto:frank.alberto.betances.reinoso@gmail.com">frank.alberto.betances.reinoso@gmail.com</a></li>
+      <li><strong>Localización:</strong> Vigo, Galicia, España</li>
+    </ul>
+    <p>Ao descargar, instalar ou utilizar a aplicación <strong>Descubre con Lúa</strong>, a persoa usuaria acepta quedar vinculada polos presentes Termos do Servizo.</p>
+
+    <h2>2. Obxecto e Finalidade Exclusivamente Educativa</h2>
+    <p><strong>Descubre con Lúa</strong> é un recurso pedagóxico bilingüe (galego e castelán) con inmersión temperá en inglés oral e actividades STEAM para educación infantil (de 0 a 6 anos), estruturado en dous ámbitos:</p>
+    <ul>
+      <li><strong>Modo Aula (Xoga con Lúa):</strong> Dirixido ao persoal docente de educación infantil para guiar asembleas, cancións con pulso visual, contos dialogados, dinámicas TPR e obradoiros de exploración sensorial e STEAM.</li>
+      <li><strong>Modo Fogar (Academy / Na casa):</strong> Dirixido ás familias con pautas semanais, cápsulas formativas breves, microcontos e actividades cotiás na casa.</li>
+    </ul>
+    <p><strong>Exclusión de finalidade sanitaria:</strong> A aplicación ten carácter <strong>exclusivamente educativo e pedagóxico</strong>. Non é un produto sanitario nin un dispositivo médico (non é SaMD), non avalía, non diagnostica, non prevén nin trata ningunha condición médica nin do desenvolvemento, e non substitúe o xuízo de profesionais sanitarios ou educativos.</p>
+
+    <h2>3. Condicións de Uso: Operación por Persoas Adultas</h2>
+    <ul>
+      <li><strong>A crianza non usa a pantalla:</strong> A aplicación está pensada para ser operada exclusivamente pola persoa adulta (docente ou familiar), quen le o guión, escoita o modelo acústico e guía a actividade no mundo físico.</li>
+      <li><strong>Supervisión adulta nas actividades manipulativas:</strong> Todas as propostas sensoriais, xogos na casa e obradoiros de ciencia cotiá (<em>STEAM do mes</em>) deben realizarse sempre baixo a presenza e supervisión directa dunha persoa adulta responsable, comprobando que os materiais físicos da contorna sexan seguros para a idade de cada crianza.</li>
+      <li><strong>Uso lícito e educativo:</strong> Queda prohibido o uso da aplicación con fins ilícitos, comerciais non autorizados ou contrarios ao benestar da infancia.</li>
+    </ul>
+
+    <h2>4. Funcionamento 100% Sen Conexión, Sen Contas e Sen Compras</h2>
+    <ul>
+      <li><strong>Sen conexión a Internet:</strong> O paquete de distribución exclúe o permiso <code>android.permission.INTERNET</code>.</li>
+      <li><strong>Sen rexistro nin inicio de sesión:</strong> Non pide conta de usuario, contrasinal nin autenticación.</li>
+      <li><strong>Sen compras integradas nin publicidade:</strong> Non inclúe pagamentos dentro da app, subscricións nin anuncios comerciais.</li>
+      <li><strong>Dispoñibilidade global:</strong> Funciona integramente en calquera lugar sen restricións xeográficas.</li>
+    </ul>
+
+    <h2>5. Licenza de Uso e Propiedade Intelectual</h2>
+    <p>Earlify Health S.L. outorga á persoa usuaria unha licenza <strong>limitada, non exclusiva, intransferible, gratuíta e revocable</strong> para instalar e empregar <strong>Descubre con Lúa</strong> en dispositivos Android compatibles con fins educativos, docentes ou familiares. Todos os dereitos sobre o código, o deseño, a mascota oficial <strong>Lúa</strong>, as láminas, as locucións de voz e os textos pedagóxicos pertencen a Earlify Health S.L.</p>
+
+    <h2>6. Privacidade e Almacenamento Local</h2>
+    <p>O tratamento da privacidade réxese pola nosa <a href="privacy.html">Política de Privacidade oficial</a>. A aplicación non recolle nin transmite datos persoais (0 datos). Os contadores locais de uso da persoa adulta gárdanse unicamente no almacenamento privado do propio aparello, con datas en formato día (<code>aaaa-mm-dd</code>, sen hora), non saen nunca do dispositivo e bórranse ao desinstalar a aplicación.</p>
+
+    <h2>7. Dispoñibilidade e Limitación de Responsabilidade</h2>
+    <p>A aplicación fornécese «tal cal» para uso educativo sen conexión. Earlify Health S.L. non será responsable do uso inadecuado do dispositivo nin da ausencia de supervisión adulta durante as actividades físicas ou manipulativas realizadas na aula ou no fogar.</p>
+
+    <h2>8. Lexislación Aplicable e Contacto</h2>
+    <p>Estes Termos réxense pola lexislación española e europea aplicable. Para calquera consulta: <a href="mailto:frank.alberto.betances.reinoso@gmail.com">frank.alberto.betances.reinoso@gmail.com</a> · <a href="index.html">Páxina principal</a> · <a href="privacy.html">Política de Privacidade</a>.</p>
+  </div>
+
+  <!-- CONTENIDO EN INGLÉS -->
+  <div id="content-en" class="lang-section" style="display: none;">
+    <div class="highlight-card">
+      <h3>Terms Summary: 100% Offline Educational Resource for Adults</h3>
+      <p>These Terms of Service specifically govern the download, installation, and use of the <strong>Descubre con Lúa</strong> Android application (package identifier <code>com.earlify.descubreconlua</code>). The application is designed for <strong>exclusively educational purposes</strong>, operates <strong>100% offline</strong> without internet access, requires no user accounts or login, and is intended to be operated solely by adults (early childhood educators and parents/guardians), with children never interacting with the screen.</p>
+    </div>
+
+    <h2>1. Provider and Scope of Application</h2>
+    <p>These Terms of Service constitute a binding agreement governing the use of the mobile application <strong>Descubre con Lúa · Edición Vigo</strong> (<code>com.earlify.descubreconlua</code>), published on Google Play by:</p>
+    <ul>
+      <li><strong>Developer / Legal Entity:</strong> Earlify Health S.L.</li>
+      <li><strong>Legal Representative:</strong> Dr. Frank Alberto Betances Reinoso</li>
+      <li><strong>Official Contact Email:</strong> <a href="mailto:frank.alberto.betances.reinoso@gmail.com">frank.alberto.betances.reinoso@gmail.com</a></li>
+      <li><strong>Location:</strong> Vigo, Galicia, Spain</li>
+    </ul>
+    <p>By downloading, installing, or using <strong>Descubre con Lúa</strong>, you agree to these Terms of Service.</p>
+
+    <h2>2. Exclusively Educational Purpose (Not a Medical Device)</h2>
+    <p><strong>Descubre con Lúa</strong> is a bilingual (Galician and Spanish) pedagogical resource with early oral English immersion and STEAM activities for early childhood education (ages 0 to 6), comprising classroom assembly guides for teachers (<em>Juega con Lúa</em>) and home guidance for families (<em>Academy</em>).</p>
+    <p><strong>Medical Disclaimer:</strong> The application is strictly an educational and pedagogical tool. It is <strong>not a medical device (not SaMD)</strong>, does not perform clinical screening, and does not evaluate, diagnose, prevent, or treat any medical, speech, hearing, or developmental condition.</p>
+
+    <h2>3. Conditions of Use: Adult-Operated Experience</h2>
+    <ul>
+      <li><strong>Children do not touch the screen:</strong> The application is designed to be operated exclusively by an adult educator or parent/guardian who mediates real-world, spoken, and hands-on activities.</li>
+      <li><strong>Adult supervision for hands-on activities:</strong> All sensory explorations, home games, and monthly STEAM experiments must be conducted under the direct supervision of a responsible adult who ensures that all physical household or classroom materials are safe and age-appropriate.</li>
+    </ul>
+
+    <h2>4. 100% Offline Operation, No Accounts, No In-App Purchases</h2>
+    <ul>
+      <li><strong>Zero Network Access:</strong> The release APK excludes <code>android.permission.INTERNET</code> and functions completely offline worldwide.</li>
+      <li><strong>No Registration or Login:</strong> No user accounts, passwords, or sign-in gates are required.</li>
+      <li><strong>No Monetization or Ads:</strong> Free of in-app purchases, subscriptions, paywalls, and third-party advertising.</li>
+    </ul>
+
+    <h2>5. License and Intellectual Property</h2>
+    <p>Earlify Health S.L. grants you a limited, non-exclusive, non-transferable, revocable, royalty-free license to install and use <strong>Descubre con Lúa</strong> on compatible Android devices for educational, classroom, or family use. All intellectual property rights in the software, interface design, the official <strong>Lúa</strong> mascot, custom illustrations, voice recordings, and educational texts belong to Earlify Health S.L.</p>
+
+    <h2>6. Privacy and Local Storage</h2>
+    <p>Please refer to our <a href="privacy.html">Official Privacy Policy</a>. The application collects <strong>zero personal data</strong>. Anonymous adult usage counters (completed assemblies, read capsules, streaks, badges, calendar dates stored as <code>yyyy-mm-dd</code> without timestamps, and English vocabulary review cards) are stored exclusively in the app's private local folder on the device, never leave the device, and are permanently deleted upon uninstalling the application.</p>
+
+    <h2>7. Disclaimer of Warranties and Limitation of Liability</h2>
+    <p>The application is provided on an "as is" basis for educational support. To the maximum extent permitted by applicable law, Earlify Health S.L. shall not be liable for any indirect damages arising from misuse of the mobile device or lack of adult supervision during physical classroom or home activities.</p>
+
+    <h2>8. Governing Law and Contact Information</h2>
+    <p>These Terms of Service are governed by the laws of Spain and applicable European Union regulations, without prejudice to mandatory consumer protection laws in your country of residence.</p>
+    <p>Contact: <a href="mailto:frank.alberto.betances.reinoso@gmail.com">frank.alberto.betances.reinoso@gmail.com</a> · <a href="index.html">Project Home</a> · <a href="privacy.html">Privacy Policy</a>.</p>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Earlify Health S.L. · Todos os dereitos reservados / Todos los derechos reservados.<br>
+    Descubre con Lúa · <code>com.earlify.descubreconlua</code> · <a href="index.html">Inicio</a> · <a href="privacy.html">Política de Privacidad</a> · <a href="terms.html">Términos del Servicio</a></p>
+  </footer>
+</div>
+
+<script>
+  function setLanguage(lang, btnEl) {
+    document.querySelectorAll('.lang-section').forEach(el => el.style.display = 'none');
+    document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+
+    const target = document.getElementById('content-' + lang);
+    if (target) target.style.display = 'block';
+    document.documentElement.lang = lang;
+
+    if (btnEl) {
+      btnEl.classList.add('active');
+    }
+  }
+</script>
+
+</body>
+</html>
