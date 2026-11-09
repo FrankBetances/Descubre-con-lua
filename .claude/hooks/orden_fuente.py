@@ -22,7 +22,7 @@ PISTAS = re.compile(
     r"cop(ia|ie|iar|ies|iá)|cópia|igual que|como en|como el de|como la de|"
     r"diseño de|dise[ñn]o del|el de valeria|valeria|via\+|earlify|"
     r"otro producto|otra app|del otro|trae(r)? |imita|clona|porta(r)? |"
-    r"sistema de premios|mascota",
+    r"sistema de premios|mascota|duolingo|ux|ui|repositorio|repo",
     re.IGNORECASE,
 )
 
@@ -42,7 +42,9 @@ if PISTAS.search(texto):
         "y qué se copia de ella; 3) si la fuente no está clara, PREGUNTAR a "
         "Frank en la primera línea, sin sustituirla por lo que ya hay en este "
         "repositorio. Usar lo que ya existe aquí en lugar de la fuente pedida "
-        "es incumplir la orden."
+        "es incumplir la orden. Si es UX o diseño: antes de darlo por bueno, "
+        "captura de la FUENTE al lado de la captura propia, en el mismo "
+        "documento, para que Frank compare."
     )
 QUEJA = re.compile(
     r"falso|mentira|engañ|traicion|no (lo )?has hecho|no hiciste|no está|"

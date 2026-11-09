@@ -353,7 +353,7 @@ Nada de emoji del sistema como iconografía: cambian entre fabricantes y nunca f
 
 - Es el mismo personaje que en el proyecto anterior de la casa, donde el sprite vive como rejilla de caracteres y de ella salen icono, icono adaptativo y splash.
 - Aquí se **porta la rejilla**, no se redibuja a ojo. Vive en `assets/brand/lua_head.txt`, y de ahí salen icono, icono adaptativo y splash mediante `tools/build_launcher_icons.py`. Icono y splash deben salir de la misma fuente.
-- **El sistema de premios existe, pero premia al ADULTO.** Frank lo pidió así. Lo que NO se hereda es el sujeto: allí los gana quien juega, que es la criatura; aquí el niño no toca la pantalla, así que premiar su «progreso» sería inventarse un dato que nadie ha medido. Hay dos recorridos separados: la docente por asambleas dirigidas, la familia por cápsulas leídas. Sigue sin heredarse el desfile ni el espejo con el periférico Lúa. Lúa aparece para la docente y la familia, nunca para captar la atención infantil.
+- **Los premios los gana el NIÑO** (decisión de Frank, 9/11/2026, O-20261109-3: «evidentemente lo gana el niño; el padre es un avatar»). Se copian de Valeria: la tarjeta de Lúa animada, 12 niveles, racha y 18 insignias, por niño registrado en casa. La persona adulta actúa en su nombre: marca el juego del día y lo que entiende o dice, y eso es lo que da los puntos, así que ningún premio sale de un dato inventado. Los contadores del adulto (asambleas, cápsulas) siguen existiendo aparte. Antes (hasta el 9/11) premiaba solo al adulto.
 - Los premios viven en `lib/features/premios/` y su contenido —niveles e insignias— en `assets/content/premios/premios.json`, nunca escrito en los widgets.
 
 ### 6. Rediseñar, no parchear

@@ -200,8 +200,45 @@ Fuente: ninguna: contenido nuevo (las reglas R∞ y R1 de CLAUDE.md)
 ## O-20261109-3 · Lúa y el sistema de premios de Valeria, en casa
 Estado: abierta
 > te dije que lo copiaras de Valeria
+>
+> Decisión de Frank (9/11): «evidentemente lo gana el maldito niño joder el padre es un fucking avatar»: los premios los gana el niño; la persona adulta actúa en su nombre.
 Fuente: FrankBetances/Valeria:src/components/lua/ValeriaCatInteractiveCard.tsx (y src/ValeriaPixelAwards.tsx, src/ValeriaAwardsSheet.tsx, src/valeriaGamification.ts, src/components/lua/luaPixelSegments.ts)
 
 - [ ] La tarjeta de Lúa de Valeria, portada: la gata de cuerpo entero que respira, mueve la cola, parpadea y reacciona al tocarla, con su nivel, su barra de progreso y la racha en la misma tarjeta, en Hoy de casa · evidencia:
 - [ ] La colección de premios de Valeria (hoja de premios) abierta desde la tarjeta · evidencia:
+- [ ] Los premios son del niño: XP, 12 niveles con nombre, racha y las 18 insignias de Valeria, por niño registrado; se ganan cuando la persona adulta marca en su nombre el juego del día y lo que entiende o dice · evidencia:
+- [ ] La tarjeta en Hoy de casa (debajo de la lección) y arriba en Resultados, en gl y es, con captura · evidencia:
+- [ ] Privacidad: lo nuevo se guarda en criancas.json, sin hora; gate, política y CLAUDE.md al día · evidencia:
+- [ ] Mergeado en main con CI en verde · evidencia:
+
+## O-20261109-4 · Las consideraciones de ACOPROS
+Estado: abierta
+> Completa la mascota y Además Además, las compañeras de Acopros han enviado un informe con todos los cambios necesarios: CONSIDERACIONES DESCUBRE CON LÚA […] (el informe entero, literal, en la fuente)
+Fuente: referencias/acopros/consideraciones-2026-11-09.md
+
+Primero una edad entera, 0-2 años (R∞.6.3), que es la que revisaron; las demás después de que Frank la dé por buena.
+
+Decisiones de Frank (9/11), a tres preguntas de Claude Code: 0-2 con unas 20 palabras por tema (el gate de las 4.000 deja de contar 0-2; las demás edades, después); sin gramática en 0-2: las 48 unidades empiezan en 2-3 y se reparten en sus 40 meses; el cuento de 0-2, rimas y canciones inglesas tradicionales de dominio público, una por tema, con voz más lenta.
+
+- [ ] 0-2: cada unidad (proyecto del mes) empieza por su vocabulario base y su canción; ninguna frase usa una palabra que no se haya presentado antes (no «leaves are falling» sin «tree», «leaf», «brown») · evidencia:
+- [ ] 0-2: «Ya debería saber» sin verbo to be ni frases: palabras sueltas (holofrase) · evidencia:
+- [ ] 0-2: «Cómo hablar» con frases de 2 elementos como mucho y su gesto («wash hands») · evidencia:
+- [ ] 0-2: la guía, sencilla: canta la canción del tema, repasa su vocabulario · evidencia:
+- [ ] 0-2: unas 20 palabras bien escogidas por tema, en vez del vocabulario núcleo de miles · evidencia:
+- [ ] El plan curricular, por proyectos, como trabajan las escuelas infantiles · evidencia:
+- [ ] 0-2: el cuento de la semana con vocabulario de la edad y audio más lento · evidencia:
+- [ ] Gates que lo midan: frases de 0-2 de 2 elementos como mucho, palabra nueva solo tras presentarla, 20 por tema · evidencia:
+- [ ] Mergeado en main con CI en verde · evidencia:
+
+## O-20261109-5 · La UX de familia, copiando el sistema de Duolingo
+Estado: abierta
+> Por cierto la ux UI de familia es cuestionable te ordené copiar el sistema de duolingo te di el repositorio y te di varios más y lo de hoy es horrible
+Fuente: docs/ORDENES.md (O-20261028-5: duolingo-clone y react-duolingo, los repositorios que dio Frank)
+
+Antes (28/10) Frank dijo «es un ejemplo, no a rajatabla» y se adaptó; el 9/11 dice que el resultado es horrible y pide copiar el sistema. Se copia la UX visible de Duolingo (duolingo-clone, MIT): el camino de lecciones en nodos, la lección a pantalla completa con su barra de progreso y botón «Comprobar/Continuar», la pantalla de fin con XP, la racha y la tienda/premios, adaptado a que la usa la persona adulta en nombre del niño.
+
+- [ ] Hoy de casa como la pantalla «Learn» de duolingo-clone: cabecera con racha y XP del niño, el camino de la unidad en nodos con la lección actual resaltada y un botón grande para empezar · evidencia:
+- [ ] Al tocar la lección, pantalla completa paso a paso como un ejercicio de Duolingo (barra de progreso arriba, un paso por pantalla, botón Continuar), con la voz de cada palabra · evidencia:
+- [ ] Al acabar, la pantalla de fin de Duolingo: XP ganado, racha y premio de Lúa · evidencia:
+- [ ] Capturas en gl y es comparadas lado a lado con las de duolingo-clone · evidencia:
 - [ ] Mergeado en main con CI en verde · evidencia:

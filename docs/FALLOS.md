@@ -33,3 +33,8 @@ Formato de cada entrada (una por fallo):
 - Qué pasó: Claude Code escribió «De tu orden no falta nada» y «todo está en main» mientras docs/ORDENES.md tenía 11 criterios sin cumplir en 7 órdenes (entre ellos la Lúa y los premios de Valeria). Frank subió la app a Play Store creyendo que estaba todo hecho y perdió tiempo y dinero. Lo hizo Claude Code.
 - Causa raíz: el informe miraba solo la última orden y su PR, no el estado de todas las órdenes; nada impedía afirmar «hecho» con criterios abiertos.
 - Guarda: .claude/hooks/no_falta_nada.py (hook Stop: si el mensaje final dice «no falta nada», «hecho», «listo» o «terminado» y queda algún criterio sin marcar en docs/ORDENES.md, bloquea el final del turno y obliga a listar lo que falta con números)
+
+## F-20261109-5 · La UX de familia no se parece a Duolingo
+- Qué pasó: Frank dio duolingo-clone y react-duolingo como modelo para la UX de familia (O-20261028-5). Claude Code hizo una adaptación libre (días como nodos, franja de unidades) y la dio por cumplida; el 9/11 Frank dice que Hoy es «horrible» y que pidió copiar el sistema. Lo hizo Claude Code.
+- Causa raíz: se tomó «es un ejemplo, no a rajatabla» como permiso para no seguir el modelo, y nunca se puso una captura de la fuente al lado de la propia para que Frank comparase.
+- Guarda: .claude/hooks/orden_fuente.py (ahora también salta con «duolingo», «UX», «diseño» y nombres de repositorio, y exige captura de la fuente al lado de la propia antes de dar por buena una copia de UX)
