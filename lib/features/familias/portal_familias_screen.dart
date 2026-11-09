@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../core/audio/local_audio_player.dart';
+
 import '../leccions/views/calendario_de_leccions_screen.dart';
 import '../criancas/crianza_da_casa.dart';
 import '../criancas/criancas_store.dart';
@@ -77,7 +79,12 @@ class _PortalFamiliasScreenState extends State<PortalFamiliasScreen> {
   /// así no se pregunta cada vez que se abre la app (O-20261109-1).
   late final CriancasStore _criancas = widget.criancas ?? CriancasStore.crear();
 
-  String get _curso => _criancas.activa?.curso ?? NomesFamilias.idades.first.$1;
+  String get _curso {
+    final c = _criancas.activa?.curso ?? NomesFamilias.idades.first.$1;
+    // O-20261109-4: la voz, más lenta en 0-2 años.
+    velocidadeVoz = velocidadeDoCurso(c);
+    return c;
+  }
 
   @override
   void initState() {

@@ -226,7 +226,7 @@ Decisiones de Frank (9/11), a tres preguntas de Claude Code: 0-2 con unas 20 pal
 - [ ] 0-2: la guía, sencilla: canta la canción del tema, repasa su vocabulario · evidencia:
 - [ ] 0-2: unas 20 palabras bien escogidas por tema, en vez del vocabulario núcleo de miles · evidencia:
 - [ ] El plan curricular, por proyectos, como trabajan las escuelas infantiles · evidencia:
-- [ ] 0-2: el cuento de la semana con vocabulario de la edad y audio más lento · evidencia:
+- [ ] 0-2: el cuento de la semana con vocabulario de la edad y audio más lento (hecho: la voz a 0,8 en 0-2, en casa y en el aula; falta: las rimas tradicionales) · evidencia:
 - [ ] Gates que lo midan: frases de 0-2 de 2 elementos como mucho, palabra nueva solo tras presentarla, 20 por tema · evidencia:
 - [ ] Mergeado en main con CI en verde · evidencia:
 

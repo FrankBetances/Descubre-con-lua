@@ -35,7 +35,7 @@ class MainActivity : FlutterActivity() {
                     if (asset.isNullOrBlank()) {
                         result.error("EMPTY_ASSET", "Asset path cannot be empty", null)
                     } else {
-                        play(asset, result)
+                        play(asset, call.argument<Double>("speed") ?: 1.0, result)
                     }
                 }
                 "pause" -> {
@@ -61,7 +61,7 @@ class MainActivity : FlutterActivity() {
         }
     }
 
-    private fun play(assetPath: String, result: MethodChannel.Result) {
+    private fun play(assetPath: String, speed: Double, result: MethodChannel.Result) {
         // Resuming the same recording must not restart it from the beginning:
         // a teacher pausing mid-verse expects the pulse to continue.
         val current = player
@@ -93,6 +93,13 @@ class MainActivity : FlutterActivity() {
                 )
                 setOnCompletionListener { channel?.invokeMethod("onCompleted", null) }
                 prepare()
+                // O-20261109-4 (ACOPROS): en 0-2 años la voz va más lenta.
+                // setSpeed existe desde Android 6; antes, a velocidad normal.
+                if (speed != 1.0 && android.os.Build.VERSION.SDK_INT >= 23) {
+                    runCatching {
+                        playbackParams = playbackParams.setSpeed(speed.toFloat())
+                    }
+                }
                 start()
             }
             player = mediaPlayer
