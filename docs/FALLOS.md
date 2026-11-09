@@ -28,3 +28,8 @@ Formato de cada entrada (una por fallo):
 - Qué pasó: Frank tuvo que repetir las mismas reglas muchas veces; un fallo corregido no dejaba nada que impidiera el siguiente.
 - Causa raíz: las reglas vivían solo como texto en CLAUDE.md, sin nada que las ejecutara.
 - Guarda: tools/check_fallos.py (cada fallo de este fichero con su guarda existente) y .claude/hooks/orden_fuente.py (cuando Frank señala un fallo, inyecta el protocolo de automejora)
+
+## F-20261109-4 · «No falta nada» con 11 criterios abiertos; Frank subió a Play Store
+- Qué pasó: Claude Code escribió «De tu orden no falta nada» y «todo está en main» mientras docs/ORDENES.md tenía 11 criterios sin cumplir en 7 órdenes (entre ellos la Lúa y los premios de Valeria). Frank subió la app a Play Store creyendo que estaba todo hecho y perdió tiempo y dinero. Lo hizo Claude Code.
+- Causa raíz: el informe miraba solo la última orden y su PR, no el estado de todas las órdenes; nada impedía afirmar «hecho» con criterios abiertos.
+- Guarda: .claude/hooks/no_falta_nada.py (hook Stop: si el mensaje final dice «no falta nada», «hecho», «listo» o «terminado» y queda algún criterio sin marcar en docs/ORDENES.md, bloquea el final del turno y obliga a listar lo que falta con números)
