@@ -1,14 +1,14 @@
 {
- "generatedAt": "2026-11-10T06:06:25Z",
- "entries": 37071,
+ "generatedAt": "2026-11-10T06:24:42Z",
+ "entries": 37090,
  "byStyle": {
   "slow": 5956,
-  "tutor": 31115
+  "tutor": 31134
  },
  "byLang": {
   "en": 17157,
-  "es": 9957,
-  "gl": 9957
+  "es": 9966,
+  "gl": 9967
  },
  "corpus": [
   {
@@ -155877,6 +155877,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_034ea406_43",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Dando vueltas por el jardín, como un osito.",
+   "speech": "Dando vueltas por el jardín, como un osito.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_0350fc6a_48",
    "lang": "es",
    "style": "tutor",
@@ -177618,6 +177627,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_40ec028f_33",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Así es como nos ponemos el gorro.",
+   "speech": "Así es como nos ponemos el gorro.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_40ed295c_44",
    "lang": "es",
    "style": "tutor",
@@ -189549,6 +189567,15 @@
    "text": "¡Un plato lleno! ¡Munch, crunch! ¡Aquí tienes!",
    "speech": "¡Un plato lleno! ¡Munch, crunch! ¡Aquí tienes!",
    "source": "biblioteca/HIS-065/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_6253e0bc_36",
+   "lang": "es",
+   "style": "tutor",
+   "text": "El viejo MacDonald tenía una granja.",
+   "speech": "El viejo MacDonald tenía una granja.",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -212741,6 +212768,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_a40d1b90_57",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Palmas, palmitas, panadero! Hazme una torta muy deprisa.",
+   "speech": "¡Palmas, palmitas, panadero! Hazme una torta muy deprisa.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_a40df004_17",
    "lang": "es",
    "style": "tutor",
@@ -219786,6 +219822,15 @@
    "style": "tutor",
    "text": "¡Sí! ¡Los pájaros! ¡Tres pajaritos beben!",
    "speech": "¡Sí! ¡Los pájaros! ¡Tres pajaritos beben!",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_b7417ce8_44",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Corro de rosas, el bolsillo lleno de flores.",
+   "speech": "Corro de rosas, el bolsillo lleno de flores.",
    "source": "significados/significado",
    "pack": false
   },
@@ -234622,6 +234667,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_e37c7551_33",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Cabeza, hombros, rodillas y pies.",
+   "speech": "Cabeza, hombros, rodillas y pies.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_e38e7f9e_52",
    "lang": "es",
    "style": "tutor",
@@ -237525,6 +237579,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_eb468fa7_34",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Así es como nos lavamos las manos.",
+   "speech": "Así es como nos lavamos las manos.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_eb57adcf_9",
    "lang": "es",
    "style": "tutor",
@@ -238790,12 +238853,30 @@
    "pack": false
   },
   {
+   "id": "es_tutor_ef7b9cfb_43",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Rema, rema, rema tu barco, suave río abajo.",
+   "speech": "Rema, rema, rema tu barco, suave río abajo.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_ef7e9ca3_71",
    "lang": "es",
    "style": "tutor",
    "text": "¡Mira al gatito como Lúa! ¡Tócale las orejas, las patitas... y la cola!",
    "speech": "¡Mira al gatito como Lúa! ¡Tócale las orejas, las patitas... y la cola!",
    "source": "biblioteca/HIS-072/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_ef8012c1_51",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Brilla, brilla, estrellita, qué serás, me pregunto.",
+   "speech": "Brilla, brilla, estrellita, qué serás, me pregunto.",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -251336,6 +251417,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_12a74268_43",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Roda, roda de rosas, o peto cheo de flores.",
+   "speech": "Roda, roda de rosas, o peto cheo de flores.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_12a91ab3_29",
    "lang": "gl",
    "style": "tutor",
@@ -252602,6 +252692,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_15eb7770_34",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Cabeza, ombreiros, xeonllos e pés.",
+   "speech": "Cabeza, ombreiros, xeonllos e pés.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_15f66089_15",
    "lang": "gl",
    "style": "tutor",
@@ -253149,6 +253248,15 @@
    "speech": "Bisbado",
    "source": "tpr.2_3.abril/s3/2_3.abril.s3.whispery/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_17972076_50",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Brilla, brilla, estreliña, que serás, pregunto eu.",
+   "speech": "Brilla, brilla, estreliña, que serás, pregunto eu.",
+   "source": "significados/significado",
+   "pack": false
   },
   {
    "id": "gl_tutor_17a07852_36",
@@ -258629,6 +258737,15 @@
    "text": "Podes facer pintas cun dedo? Tap, tap, tap!",
    "speech": "Podes facer pintas cun dedo? Tap, tap, tap!",
    "source": "biblioteca/HIS-092/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_27243bc2_40",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Dando voltas polo xardín, coma un osiño.",
+   "speech": "Dando voltas polo xardín, coma un osiño.",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -271445,6 +271562,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_4b76bdd7_25",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Así é como pomos o gorro.",
+   "speech": "Así é como pomos o gorro.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_4b873ec7_34",
    "lang": "gl",
    "style": "tutor",
@@ -274305,6 +274431,15 @@
    "speech": "Pecha os ollos e escoita",
    "source": "tpr.3_4.outubro/s2/3_4.outubro.s2.close-your-eyes-and-listen/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_5358c2ed_27",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Así é como lavamos as mans.",
+   "speech": "Así é como lavamos as mans.",
+   "source": "significados/significado",
+   "pack": false
   },
   {
    "id": "gl_tutor_53591df9_452",
@@ -287113,6 +287248,15 @@
    "text": "Grazas por ser xenerosa ou xeneroso e compartir.",
    "speech": "Grazas por ser xenerosa ou xeneroso e compartir.",
    "source": "curriculo/T3.U5.1/frasesAdulta/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_778971b6_42",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Chuvia, chuvia, vaite xa, volve outro día.",
+   "speech": "Chuvia, chuvia, vaite xa, volve outro día.",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -310695,6 +310839,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_b972f5f9_35",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "O vello MacDonald tiña unha granxa.",
+   "speech": "O vello MacDonald tiña unha granxa.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_b97aac28_28",
    "lang": "gl",
    "style": "tutor",
@@ -324644,6 +324797,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_e32673bb_55",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Bate, bate palmiñas, panadeiro! Faime unha torta axiña.",
+   "speech": "Bate, bate palmiñas, panadeiro! Faime unha torta axiña.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_e32dbcb9_8",
    "lang": "gl",
    "style": "tutor",
@@ -327741,6 +327903,15 @@
    "style": "tutor",
    "text": "Salta por riba da poza grande",
    "speech": "Salta por riba da poza grande",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_ec4d48d8_47",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Rema, rema, rema o teu barco, suave río abaixo.",
+   "speech": "Rema, rema, rema o teu barco, suave río abaixo.",
    "source": "significados/significado",
    "pack": false
   },

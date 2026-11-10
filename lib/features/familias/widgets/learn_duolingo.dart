@@ -11,6 +11,7 @@ import '../../../core/theme/app_theme.dart';
 import '../../../data/models/leccion_model.dart';
 import '../../criancas/criancas_store.dart';
 import '../../criancas/xogo_lua.dart';
+import '../../leccions/widgets/proxecto_0_2.dart';
 
 /// La pantalla «Learn» de duolingo-clone, copiada (O-20261109-5).
 ///
@@ -417,6 +418,30 @@ List<PasoLeccion> pasosDoDia(Leccion l, int dia, AppLanguage lang) {
   ];
 }
 
+/// Los pasos de 0-2 (ACOPROS): las cinco palabras de la semana con su gesto,
+/// la canción y la rima tradicional. Sin frase de gramática.
+List<PasoLeccion> pasosDoProxecto(Proxecto02 p, int semana, AppLanguage lang) {
+  final isGl = lang == AppLanguage.gl;
+  return [
+    for (final w in p.daSemana(semana))
+      PasoLeccion(
+        titulo: isGl ? 'Escoita e fai o xesto' : 'Escucha y haz el gesto',
+        texto: w.xesto.resolve(lang),
+        peza: PezaDaLeccion(
+            tipo: 'palabra', en: w.en, significado: w.significado),
+      ),
+    PasoLeccion(
+      titulo: isGl ? 'A canción do proxecto' : 'La canción del proyecto',
+      texto: '«${p.cancion.resolve(lang)}»',
+    ),
+    PasoLeccion(
+      titulo: isGl ? 'Rima tradicional' : 'Rima tradicional',
+      texto: '',
+      peza: PezaDaLeccion(tipo: 'frase', en: p.rimaEn, significado: p.rima),
+    ),
+  ];
+}
+
 /// `app/lesson`: la X, la barra de progreso, un paso por pantalla y el botón
 /// «Continuar» abajo. Al final, `quiz.tsx`: «¡Muy bien! Lección completada»
 /// con las tarjetas de XP y de racha, y Lúa.
@@ -749,24 +774,33 @@ void abrirLeccionDuolingo(
   required int dia,
   required AppLanguage language,
   required String semana,
+  String cursoId = '',
+  int mesCalendario = 0,
+  int semanaN = 1,
   OfflineAudioService? audioService,
   CriancasStore? store,
   Crianza? crianza,
   DateTime? agora,
 }) {
+  final proxecto =
+      cursoId == 'curso_0_2' ? Proxectos02.lidos?.doMes(mesCalendario) : null;
   Navigator.of(context).push(RutaLua(
     de: context,
     builder: (_) => LeccionDuolingoScreen(
-      pasos: pasosDoDia(leccion, dia, language),
+      pasos: proxecto != null
+          ? pasosDoProxecto(proxecto, semanaN, language)
+          : pasosDoDia(leccion, dia, language),
       language: language,
       audioService: audioService,
       store: store,
       crianza: crianza,
       semana: semana,
-      palabrasDaSemana: [
-        for (final p in leccion.novas)
-          if (p.en.isNotEmpty) p.en,
-      ],
+      palabrasDaSemana: proxecto != null
+          ? [for (final w in proxecto.daSemana(semanaN)) w.en]
+          : [
+              for (final p in leccion.novas)
+                if (p.en.isNotEmpty) p.en,
+            ],
       agora: agora,
     ),
   ));

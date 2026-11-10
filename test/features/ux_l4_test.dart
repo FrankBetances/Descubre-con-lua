@@ -82,13 +82,14 @@ void main() {
       expect(texto(tester, 'hoxe_aula_data'),
           gl ? 'VENRES, 2 DE OUTUBRO' : 'VIERNES, 2 DE OCTUBRE');
 
-      // O-20261028-6: la unidad de gramática de la semana, entera, por encima
-      // de la barra de pestañas: sin bajar.
-      final cabeceira = find.byKey(const Key('leccion_ruta_gramatica'));
+      // O-20261109-4 (ACOPROS): en 0-2 no hay gramática; arriba, el
+      // proyecto del mes, que empieza antes de la barra de pestañas.
+      expect(find.byKey(const Key('leccion_ruta_gramatica')), findsNothing);
+      final cabeceira = find.byKey(const Key('proxecto_0_2'));
       expect(cabeceira, findsOneWidget);
       final barra = tester.getRect(find.byType(NavigationBar));
-      expect(tester.getRect(cabeceira).bottom, lessThanOrEqualTo(barra.top),
-          reason: 'A lección queda baixo a barra de pestanas');
+      expect(tester.getRect(cabeceira).top, lessThan(barra.top),
+          reason: 'O proxecto queda baixo a barra de pestanas');
 
       // La asamblea sigue, en el material complementario.
       // O-20261101-1: el material del día va plegado al final.
@@ -183,7 +184,7 @@ void main() {
       await abrir(tester, portal(lang, domingo));
       expect(texto(tester, 'hoxe_aula_titulo'),
           gl ? 'A lección desta semana' : 'La lección de esta semana');
-      expect(find.byKey(const Key('leccion_cabeceira')), findsOneWidget);
+      expect(find.byKey(const Key('proxecto_0_2')), findsOneWidget);
     });
 
     testWidgets(

@@ -32,6 +32,7 @@ import '../../criancas/crianza_da_casa.dart';
 import '../../criancas/criancas_store.dart';
 import '../../criancas/tarxeta_lua.dart';
 import '../widgets/learn_duolingo.dart';
+import '../../leccions/widgets/proxecto_0_2.dart';
 import '../../../core/brand/lua_valeria.dart';
 import '../../../data/models/leccion_model.dart';
 import '../../steam/widgets/steam_no_calendario.dart';
@@ -383,6 +384,9 @@ class _HoxeFamiliasScreenState extends State<HoxeFamiliasScreen> {
                     dia: i + 1,
                     language: lang,
                     semana: semanaKey,
+                    cursoId: widget.cursoId,
+                    mesCalendario: _toca.dia.mesCalendario,
+                    semanaN: _toca.dia.semana,
                     audioService: widget.audioService,
                     store: casa?.store,
                     crianza: neno,
@@ -454,15 +458,23 @@ class _HoxeFamiliasScreenState extends State<HoxeFamiliasScreen> {
                     agora: widget.agora,
                     semana: CriancasStore.semana(
                         neno.curso, _toca.dia.mesCalendario, _toca.dia.semana),
-                    palabrasDaSemana: [
-                      for (final p in snap.data
-                              ?.da(neno.curso, _toca.dia.mesCalendario,
-                                  _toca.dia.semana)
-                              ?.$2
-                              .novas ??
-                          const <PezaDaLeccion>[])
-                        if (p.en.isNotEmpty) p.en,
-                    ],
+                    palabrasDaSemana: neno.curso == 'curso_0_2'
+                        ? [
+                            for (final w in Proxectos02.lidos
+                                    ?.doMes(_toca.dia.mesCalendario)
+                                    ?.daSemana(_toca.dia.semana) ??
+                                const <PalabraProxecto>[])
+                              w.en,
+                          ]
+                        : [
+                            for (final p in snap.data
+                                    ?.da(neno.curso, _toca.dia.mesCalendario,
+                                        _toca.dia.semana)
+                                    ?.$2
+                                    .novas ??
+                                const <PezaDaLeccion>[])
+                              if (p.en.isNotEmpty) p.en,
+                          ],
                   ),
                 ),
               ],

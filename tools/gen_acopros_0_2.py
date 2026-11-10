@@ -196,11 +196,23 @@ def main() -> int:
     fallos = revisar(d)
     texto = json.dumps(d, ensure_ascii=False, indent=1) + "\n"
     if "--check" in sys.argv:
+        sig = json.loads((RAIZ / "assets/content/significados/significados.json").read_text(encoding="utf-8"))["significados"]
+        for p in d["proxectos"]:
+            if p["rima"]["en"] not in sig:
+                fallos.append(f"mes {p['mesCalendario']}: a rima sen significado en significados.json")
         if not SAIDA.exists() or SAIDA.read_text(encoding="utf-8") != texto:
             fallos.append(f"{SAIDA.relative_to(RAIZ)} non está ao día: python3 tools/gen_acopros_0_2.py")
     else:
         SAIDA.parent.mkdir(parents=True, exist_ok=True)
         SAIDA.write_text(texto, encoding="utf-8")
+        # Las rimas, con su significado en el diccionario de la app (el
+        # doble toque en una frase inglesa enseña lo que quiere decir).
+        sp = RAIZ / "assets/content/significados/significados.json"
+        sig = json.loads(sp.read_text(encoding="utf-8"))
+        for p in d["proxectos"]:
+            r = p["rima"]
+            sig["significados"].setdefault(r["en"], {"gl": r["gl"], "es": r["es"]})
+        sp.write_text(json.dumps(sig, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     if fallos:
         print("FALLO (ACOPROS 0-2):\n  " + "\n  ".join(fallos))
         return 1

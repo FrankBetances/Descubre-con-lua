@@ -11,6 +11,7 @@ import '../premios/premios_model.dart';
 import '../premios/premios_repository.dart';
 import 'criancas_store.dart';
 import 'tarxeta_lua.dart';
+import '../leccions/widgets/proxecto_0_2.dart';
 
 /// Los resultados de un niño de la casa (O-20261109-1).
 ///
@@ -106,10 +107,20 @@ class _ResultadosCrianzaScreenState extends State<ResultadosCrianzaScreen> {
     final semanaKey =
         CriancasStore.semana(c.curso, toca.dia.mesCalendario, toca.dia.semana);
     final lec = l?.da(c.curso, toca.dia.mesCalendario, toca.dia.semana)?.$2;
-    final palabras = [
-      for (final p in lec?.novas ?? const <PezaDaLeccion>[])
-        if (p.en.isNotEmpty) p,
-    ];
+    // O-20261109-4: en 0-2, las cinco palabras de la semana del proyecto.
+    final proxecto = c.curso == 'curso_0_2'
+        ? Proxectos02.lidos?.doMes(toca.dia.mesCalendario)
+        : null;
+    final palabras = proxecto != null
+        ? [
+            for (final w in proxecto.daSemana(toca.dia.semana))
+              PezaDaLeccion(
+                  tipo: 'palabra', en: w.en, significado: w.significado),
+          ]
+        : [
+            for (final p in lec?.novas ?? const <PezaDaLeccion>[])
+              if (p.en.isNotEmpty) p,
+          ];
     final totais = store.totais(c.id);
     final evolucion = store.evolucion(c.id);
     final contadores = widget.calendario?.contadores;

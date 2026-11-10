@@ -18,6 +18,7 @@ import '../../../data/models/steam_do_mes_model.dart';
 import '../../../data/models/xogos_fogar_model.dart';
 import '../../familias/widgets/reto_da_semana.dart';
 import '../../juega/widgets/pasos_do_dia.dart';
+import 'proxecto_0_2.dart';
 
 /// La lección de la semana (P11): una sola pieza, en casa y en el aula.
 ///
@@ -1135,6 +1136,15 @@ class _LeccionFamiliaState extends State<LeccionFamilia> {
 
   @override
   Widget build(BuildContext context) {
+    // O-20261109-4 (ACOPROS): 0-2 años trabaja por proyectos, sin gramática.
+    if (widget.cursoId == 'curso_0_2') {
+      return LeccionProxecto02(
+        mesCalendario: widget.mesCalendario,
+        semana: widget.semana,
+        language: widget.language,
+        audioService: widget.audioService,
+      );
+    }
     final lang = widget.language;
     final isGl = lang == AppLanguage.gl;
     final g = widget.leccions;

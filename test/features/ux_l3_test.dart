@@ -62,9 +62,12 @@ void main() {
 
   // O-20261109-5: arriba va la pantalla «Learn» de Duolingo; debajo, la
   // lección de la semana para consultar.
+  // En 0-2 (O-20261109-4, ACOPROS) la lección es el proyecto del mes.
+  final leccion = find.byWidgetPredicate((w) =>
+      w.key == const Key('leccion_cabeceira') ||
+      w.key == const Key('proxecto_0_2'));
   Future<void> verLeccion(WidgetTester tester) async {
-    await tester.scrollUntilVisible(
-        find.byKey(const Key('leccion_cabeceira')), 300,
+    await tester.scrollUntilVisible(leccion, 300,
         scrollable: find.byType(Scrollable).first);
     await tester.pumpAndSettle();
   }
@@ -91,7 +94,7 @@ void main() {
       expect(texto(tester, 'hoxe_data'),
           gl ? 'VENRES, 2 DE OUTUBRO' : 'VIERNES, 2 DE OCTUBRE');
       await verLeccion(tester);
-      expect(find.byKey(const Key('leccion_cabeceira')), findsOneWidget);
+      expect(leccion, findsOneWidget);
       await irAoXogo(tester);
 
       // El título es el momento del día, no el nombre de la asamblea (A6).
@@ -138,7 +141,7 @@ void main() {
       }
       // Debajo, la lección de la semana entera.
       await verLeccion(tester);
-      expect(find.byKey(const Key('leccion_cabeceira')), findsOneWidget);
+      expect(leccion, findsOneWidget);
     });
 
     testWidgets('«Máis para casa» vai pregado, ao final (${lang.code})',
@@ -147,8 +150,8 @@ void main() {
       final mais = find.byKey(const Key('hoxe_complementario'));
       await tester.scrollUntilVisible(mais, 300,
           scrollable: find.byType(Scrollable).first);
-      // Debajo de la guía de la lección: lo último de Hoy.
-      final guia = find.byKey(const Key('leccion_como_e_por_que'));
+      // Debajo de la lección (en 0-2, el proyecto del mes): lo último de Hoy.
+      final guia = find.byKey(const Key('proxecto_0_2'));
       expect(
           tester.getTopLeft(mais).dy, greaterThan(tester.getTopLeft(guia).dy));
       // Plegado: el juego y el código no están hasta que se abre.
@@ -250,7 +253,7 @@ void main() {
           .evaluate()
           .isNotEmpty;
       await verLeccion(tester);
-      expect(leccionDe('curso_0_2'), isTrue);
+      expect(find.byKey(const Key('proxecto_0_2')), findsOneWidget);
       await irAoXogo(tester);
       final antes = texto(tester, 'hoxe_xogo_texto');
       await tester.drag(find.byType(Scrollable).first, const Offset(0, 30000));

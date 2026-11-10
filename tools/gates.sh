@@ -74,6 +74,10 @@ run_gate "every order marked done has evidence for each criterion" \
 # Automejora (Frank, 9/11/2026, O-20261109-2): cada fallo que señala Frank,
 # con su causa raíz y una guarda que exista.
 run_gate "every failure Frank reported has its guard" python3 tools/check_fallos.py
+# ACOPROS (O-20261109-4): 0-2 por proyectos, ~20 palabras, frases de dos
+# elementos como mucho, sin to be, ya debería saber en holofrase, canción y
+# rima, y las cuatro semanas empiezan por el vocabulario y la canción.
+run_gate "0-2 by projects, as ACOPROS asked" python3 tools/gen_acopros_0_2.py --check
 run_gate "contact address" python3 tools/check_contact_email.py
 # Nace del Calendario, que llegó al aparato como un disco girando para siempre
 # porque `assets/content/calendario/` no estaba en pubspec.yaml. Un asset que
