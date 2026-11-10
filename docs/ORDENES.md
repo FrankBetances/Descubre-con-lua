@@ -230,7 +230,7 @@ Decisiones de Frank (9/11), a tres preguntas de Claude Code: 0-2 con unas 20 pal
 - [x] Gates que lo midan: frases de 0-2 de 2 elementos como mucho, palabra nueva solo tras presentarla, 20 por tema · evidencia: tools/gen_acopros_0_2.py (en tools/gates.sh) y test/features/acopros_0_2_test.dart; tools/check_ordenes.py exige ese gate o test en cada criterio marcado
 - [ ] Mergeado en main con CI en verde · evidencia:
 
-Pendiente, decisión de Frank del 9/11 que no es criterio de esta orden: repartir las 48 unidades en los 40 meses de 2-3 a 5-6. Hoy 0-2 ya no enseña gramática, pero las unidades 1-9 siguen asignadas a los meses de 0-2 en tools/ruta_48.py; moverlas exige reescribir las frases de cada mes y su voz.
+Pendiente de decidir (Frank, 10/11/2026: «este trabajo se decidirá en una siguiente iteración»): si repartir las 48 unidades en los 40 meses de 2-3 a 5-6. En 0-2 ya no se enseña gramática, pero las unidades 1 a 9 siguen asignadas a esos meses (tools/ruta_48.py). Moverlas obliga a reescribir las frases de cada mes y su voz. No es criterio de esta orden.
 
 ## O-20261109-5 · La UX de familia, copiando el sistema de Duolingo
 Estado: abierta
