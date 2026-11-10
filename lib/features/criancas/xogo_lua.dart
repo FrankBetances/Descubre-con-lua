@@ -279,8 +279,12 @@ class RecompensaLua {
   final List<InsigniaLua> insigniasNovas;
   final List<ObxectoLua> obxectosNovos;
   final bool xaXogouHoxe;
+
+  /// Días seguidos de juego tras esta sesión.
+  final int racha;
   const RecompensaLua({
     required this.xpGanado,
+    this.racha = 0,
     required this.nivel,
     required this.subeNivel,
     required this.insigniasNovas,
@@ -313,6 +317,7 @@ class RecompensaLua {
         insigniasNovas: const [],
         obxectosNovos: const [],
         xaXogouHoxe: true,
+        racha: g.racha,
       ),
     );
   }
@@ -390,6 +395,7 @@ class RecompensaLua {
     ),
     recompensa: RecompensaLua(
       xpGanado: xpGanado,
+      racha: racha,
       nivel: nivel,
       subeNivel: nivel > c.nivel(g.xp),
       insigniasNovas: novas,

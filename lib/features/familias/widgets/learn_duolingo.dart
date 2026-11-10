@@ -93,38 +93,44 @@ class BannerUnidade extends StatelessWidget {
   });
 
   @override
-  Widget build(BuildContext context) => Container(
-        key: const Key('learn_banner'),
-        padding: const EdgeInsets.all(18),
-        decoration: BoxDecoration(
-          color: DuoCores.verde,
-          borderRadius: BorderRadius.circular(12),
-        ),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text(titulo,
-                style: const TextStyle(
-                    fontSize: 21,
-                    fontWeight: FontWeight.w800,
-                    color: Colors.white)),
-            const SizedBox(height: 6),
-            Text(descricion,
-                style: const TextStyle(
-                    fontSize: 15.5, height: 1.3, color: Colors.white)),
-            if (onContinuar != null) ...[
-              const SizedBox(height: 12),
-              _BotonDuo(
-                key: const Key('learn_banner_continuar'),
-                texto: continuar,
-                fondo: Colors.white,
-                borde: const Color(0xFFD4D4D4),
-                cor: DuoCores.textoVerde,
-                onTap: onContinuar,
-                icono: Icons.menu_book_rounded,
-              ),
+  Widget build(BuildContext context) => GestureDetector(
+        onTap: onContinuar,
+        child: Container(
+          key: const Key('learn_banner'),
+          padding: const EdgeInsets.all(16),
+          decoration: BoxDecoration(
+            color: DuoCores.verde,
+            borderRadius: BorderRadius.circular(12),
+          ),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(titulo,
+                  style: const TextStyle(
+                      fontSize: 19,
+                      fontWeight: FontWeight.w800,
+                      color: Colors.white)),
+              const SizedBox(height: 6),
+              Text(descricion,
+                  style: const TextStyle(
+                      fontSize: 15.5, height: 1.3, color: Colors.white)),
+              // En la fuente el botón va `hidden ... xl:flex`: en el móvil no
+              // sale, y la caja entera se toca.
+              if (onContinuar != null &&
+                  MediaQuery.sizeOf(context).width >= 600) ...[
+                const SizedBox(height: 12),
+                _BotonDuo(
+                  key: const Key('learn_banner_continuar'),
+                  texto: continuar,
+                  fondo: Colors.white,
+                  borde: const Color(0xFFD4D4D4),
+                  cor: DuoCores.textoVerde,
+                  onTap: onContinuar,
+                  icono: Icons.menu_book_rounded,
+                ),
+              ],
             ],
-          ],
+          ),
         ),
       );
 }
@@ -245,7 +251,7 @@ class CaminoNodos extends StatelessWidget {
             children: [
               for (var i = 0; i < etiquetas.length; i++)
                 Padding(
-                  padding: EdgeInsets.only(top: i == 0 ? 36 : 22),
+                  padding: EdgeInsets.only(top: i == 0 ? 12 : 6),
                   child: Transform.translate(
                     // `right: ${rightPosition}px` de la fuente.
                     offset: Offset(-sangria(i), 0),
@@ -290,15 +296,15 @@ class _Nodo extends StatelessWidget {
   Widget build(BuildContext context) {
     final bloq = estado == EstadoNodo.bloqueado;
     final boton = Container(
-      width: 70,
-      height: 70,
+      width: 60,
+      height: 60,
       decoration: BoxDecoration(
         shape: BoxShape.circle,
         color: bloq ? DuoCores.bloqueado : DuoCores.verde,
         border: Border(
           bottom: BorderSide(
               color: bloq ? DuoCores.bloqueadoBorde : DuoCores.verdeBorde,
-              width: 8),
+              width: 6),
         ),
       ),
       child: Icon(
@@ -307,7 +313,7 @@ class _Nodo extends StatelessWidget {
             : ultimo
                 ? Icons.workspace_premium_rounded
                 : Icons.star_rounded,
-        size: 40,
+        size: 32,
         color: bloq ? DuoCores.bloqueadoBorde : Colors.white,
       ),
     );
@@ -320,8 +326,8 @@ class _Nodo extends StatelessWidget {
           children: [
             if (estado == EstadoNodo.actual)
               SizedBox(
-                width: 102,
-                height: 130,
+                width: 88,
+                height: 116,
                 child: Stack(
                   alignment: Alignment.center,
                   clipBehavior: Clip.none,
@@ -329,8 +335,8 @@ class _Nodo extends StatelessWidget {
                     const Positioned(
                       top: 28,
                       child: SizedBox(
-                        width: 102,
-                        height: 102,
+                        width: 88,
+                        height: 88,
                         child: CircularProgressIndicator(
                           value: 0,
                           strokeWidth: 8,
@@ -339,7 +345,7 @@ class _Nodo extends StatelessWidget {
                         ),
                       ),
                     ),
-                    Positioned(top: 44, child: boton),
+                    Positioned(top: 42, child: boton),
                     Positioned(
                       top: 0,
                       child: Container(
@@ -363,7 +369,7 @@ class _Nodo extends StatelessWidget {
               )
             else
               boton,
-            const SizedBox(height: 4),
+            const SizedBox(height: 2),
             Text(etiqueta,
                 style: TextStyle(
                     fontSize: 13,
@@ -636,17 +642,27 @@ class _Fin extends StatelessWidget {
             ),
             const SizedBox(width: 12),
             Expanded(
+              // Donde duolingo-clone pone los corazones, la racha.
               child: _Resultado(
-                titulo: isGl ? 'Nivel' : 'Nivel',
-                valor: '${r?.nivel ?? 1}',
+                key: const Key('leccion_fin_racha'),
+                titulo: isGl ? 'Racha' : 'Racha',
+                valor: '${r?.racha ?? 0}',
                 cor: DuoCores.rosa,
                 texto: DuoCores.rosaTexto,
-                icono: AwardGlyph.crown,
+                icono: AwardGlyph.flame,
               ),
             ),
           ],
         ),
         if (r != null && c != null) ...[
+          const SizedBox(height: 12),
+          Text('Nivel ${r!.nivel} · ${c.nomeNivel(r!.nivel).resolve(lang)}',
+              key: const Key('leccion_fin_nivel'),
+              textAlign: TextAlign.center,
+              style: const TextStyle(
+                  fontSize: 16,
+                  fontWeight: FontWeight.w800,
+                  color: AppTheme.textPrimary)),
           for (final i in r!.insigniasNovas) ...[
             const SizedBox(height: 14),
             Center(child: PixelAward(glyph: i.glyph, tier: i.tier, size: 48)),

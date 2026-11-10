@@ -325,6 +325,13 @@ void main() {
     }
     expect(find.byKey(const Key('leccion_fin')), findsOneWidget);
     expect(find.byKey(const Key('leccion_fin_xp')), findsOneWidget);
+    // XP, racha e premio de Lúa, como o fin de duolingo-clone.
+    expect(
+        find.descendant(
+            of: find.byKey(const Key('leccion_fin_racha')),
+            matching: find.text('1')),
+        findsOneWidget);
+    expect(find.text('Primeiro paso de Lúa'), findsOneWidget);
     expect(store.xogo('c1').xp, greaterThan(0));
     await tester.tap(find.byKey(const Key('leccion_continuar')));
     await Pasarela.asentar(tester);

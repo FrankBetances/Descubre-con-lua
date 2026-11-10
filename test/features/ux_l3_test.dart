@@ -124,7 +124,14 @@ void main() {
       tester.view.physicalSize = const Size(412, 915);
       await Pasarela.asentar(tester);
       final barra = tester.getRect(find.byType(NavigationBar)).top;
-      for (final k in ['learn_banner', 'learn_nodo_0', 'learn_nodo_3']) {
+      for (final k in [
+        'learn_banner',
+        'learn_nodo_0',
+        'learn_nodo_3',
+        // O-20261110-1: el camino entero, con el viernes y «Empezar».
+        'learn_nodo_4',
+        'learn_empezar',
+      ]) {
         expect(
             tester.getRect(find.byKey(Key(k))).bottom, lessThanOrEqualTo(barra),
             reason: k);

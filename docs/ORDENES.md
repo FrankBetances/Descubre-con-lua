@@ -242,3 +242,13 @@ Antes (28/10) Frank dijo «es un ejemplo, no a rajatabla» y se adaptó; el 9/11
 - [x] Al acabar, la pantalla de fin de Duolingo: XP ganado, racha y premio de Lúa · evidencia: test/features/criancas_test.dart («Learn de Duolingo: o nodo de hoxe abre a lección paso a paso e o fin dá XP») y docs/capturas/leccion-duolingo-fin-gl.png, leccion-duolingo-fin-es.png
 - [x] Capturas en gl y es comparadas lado a lado con las de duolingo-clone · evidencia: docs/comparativa-duolingo.html y docs/capturas/fuente-duolingo-learn.png
 - [ ] Mergeado en main con CI en verde · evidencia:
+
+## O-20261110-1 · Terminar O-3, O-5 y O-4 y mergear con CI en verde
+Estado: abierta
+> Autorización de Frank (10 nov 2026): termina todo completo y, cuando el CI esté en verde, haz merge a `main` y push. Sin preguntarme nada más. [...] 1. O-20261109-5 (UX Duolingo): la pantalla de fin de lección debe mostrar XP ganado, racha y premio de Lúa; hoy falta la racha. Añádela con test. Comprueba que el camino en nodos de Hoy cabe entero (nodo del viernes y «Empezar»). [...] 2. O-20261109-4 (ACOPROS 0-2): cumple los 9 criterios que siguen en `[ ]` [...] No inventes contenido pedagógico sin base en la fuente. [...] 4. Cuando los gates del PR estén en verde y no queden criterios abiertos de O-3, O-5 y O-4, haz merge del PR #47 a `main` y push. Si queda algún criterio abierto o un gate en rojo, NO hagas merge: dime cuál y por qué, y para.
+Fuente: docs/ORDENES.md (criterios abiertos de O-20261109-3, O-20261109-4 y O-20261109-5) y referencias/acopros/consideraciones-2026-11-09.md
+
+- [x] La pantalla de fin de la lección enseña el XP ganado, la racha y el premio de Lúa · evidencia: test/features/criancas_test.dart («Learn de Duolingo: o nodo de hoxe abre a lección paso a paso e o fin dá XP») y docs/capturas/leccion-duolingo-fin-gl.png, leccion-duolingo-fin-es.png
+- [x] En Hoy a 412×915, el camino entero cabe sin bajar: los cinco nodos y «Empezar» del día · evidencia: test/features/ux_l3_test.dart («Learn de Duolingo, sen baixar, a 412×915») y docs/capturas/hoxe-familias-gl.png, hoxe-familias-es.png
+- [ ] Los criterios abiertos de O-20261109-4 cumplidos con su gate · evidencia:
+- [ ] Cuerpo del PR #47 al día y merge en main con CI en verde · evidencia:
