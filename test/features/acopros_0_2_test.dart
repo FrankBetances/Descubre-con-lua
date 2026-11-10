@@ -88,4 +88,46 @@ void main() {
       }
     });
   }
+
+  testWidgets(
+      'Máis material do día en 0-2: as palabras do proxecto, non o banco',
+      (tester) async {
+    tester.view.physicalSize = const Size(412, 915);
+    tester.view.devicePixelRatio = 1.0;
+    addTearDown(tester.view.reset);
+    await tester.pumpWidget(MaterialApp(
+      theme: AppTheme.temaFamilias,
+      home: PortalFamiliasScreen(
+        repository: p.contenido,
+        audioService: p.audio,
+        currentLanguage: AppLanguage.gl,
+        onToggleLanguage: () {},
+        premios: p.premios,
+        calendario: p.store,
+        criancas: CriancasStore.enMemoria(const [
+          Crianza(id: 'c1', nome: 'Uxía', idade: 1, curso: 'curso_0_2'),
+        ]),
+        agora: DateTime(2026, 10, 6, 10),
+      ),
+    ));
+    await Pasarela.asentar(tester);
+    await Pasarela.abrirMaisParaCasa(tester);
+    await tester.scrollUntilVisible(
+        find.byKey(const Key('tarxeta_ingles_de_hoxe_fogar')), 300,
+        scrollable: find.byType(Scrollable).first);
+    await tester.pumpAndSettle();
+    final palabras =
+        find.byKey(const Key('palabras_proxecto_0_2'), skipOffstage: false);
+    expect(palabras, findsOneWidget);
+    final pr = Proxectos02.lidos!.doMes(10)!;
+    for (final w in pr.daSemana(1)) {
+      expect(
+          find.descendant(
+              of: palabras,
+              matching: find.text(w.en, skipOffstage: false),
+              skipOffstage: false),
+          findsOneWidget,
+          reason: w.en);
+    }
+  });
 }

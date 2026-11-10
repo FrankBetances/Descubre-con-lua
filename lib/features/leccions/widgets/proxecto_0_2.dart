@@ -321,3 +321,54 @@ class _LeccionProxecto02State extends State<LeccionProxecto02> {
     );
   }
 }
+
+/// Las palabras de la semana del proyecto de 0-2, para «Más material del
+/// día» (ACOPROS: «20 palabras bien escogidas», no el banco diario).
+class PalabrasProxecto02 extends StatelessWidget {
+  final int mesCalendario;
+  final int semana;
+  final AppLanguage language;
+  final OfflineAudioService? audioService;
+
+  const PalabrasProxecto02({
+    super.key,
+    required this.mesCalendario,
+    required this.semana,
+    required this.language,
+    this.audioService,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final pr = Proxectos02.lidos?.doMes(mesCalendario);
+    if (pr == null) return const SizedBox.shrink();
+    final isGl = language == AppLanguage.gl;
+    return Column(
+      key: const Key('palabras_proxecto_0_2'),
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(
+            isGl
+                ? 'As palabras desta semana, das ${pr.palabras.length} do proxecto'
+                : 'Las palabras de esta semana, de las ${pr.palabras.length} del proyecto',
+            style:
+                const TextStyle(fontSize: 14, color: AppTheme.textSecondary)),
+        const SizedBox(height: 8),
+        Wrap(spacing: 8, runSpacing: 8, children: [
+          for (final p in pr.daSemana(semana))
+            BotonEscuchar(
+              audioService: audioService,
+              texto: p.en,
+              language: AppLanguage.en,
+              interfaz: language,
+              style: estiloIngles(p.en),
+              comoChip: true,
+              colorChip: context.acento,
+              descripcion: p.en,
+              significado: p.significado,
+            ),
+        ]),
+      ],
+    );
+  }
+}

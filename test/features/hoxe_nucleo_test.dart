@@ -30,7 +30,7 @@ void main() {
 
   // Un lunes de la semana 3 de octubre: el día que se ve en las capturas.
   final lunes = DateTime(2026, 10, 19);
-  const cursos = ['curso_0_2', 'curso_5_6'];
+  const cursos = ['curso_2_3', 'curso_5_6'];
 
   setUpAll(() async {
     Future<String> ler(String p) => File(p).readAsString();
@@ -128,7 +128,7 @@ void main() {
           store: store,
           language: lang,
           onLanguageChanged: (_) {},
-          cursoId: 'curso_0_2',
+          cursoId: 'curso_2_3',
           onCambiarCurso: (_) {},
           audioService: MockOfflineAudioService(),
           agora: agora,
@@ -143,6 +143,8 @@ void main() {
       final abrir = find.descendant(
           of: tarxeta,
           matching: find.byKey(const Key('abrir_palabras_do_dia')));
+      // O-20261109-4: en 0-2, las palabras del proyecto, sin pliegue que abrir.
+      if (abrir.evaluate().isEmpty) return;
       await tester.ensureVisible(abrir);
       await tester.pumpAndSettle();
       await tester.tap(abrir);
@@ -154,7 +156,7 @@ void main() {
       await pintar(tester, casa(lunes));
       await abrirPalabras(tester);
       final tarxeta = find.byKey(const Key('tarxeta_ingles_de_hoxe_fogar'));
-      final curso = repo.cursoTprSync('curso_0_2')!;
+      final curso = repo.cursoTprSync('curso_2_3')!;
       for (final p in curso.planDoDia(10, 3, 1)!.newWords) {
         expect(find.descendant(of: tarxeta, matching: find.text(p.en)),
             findsOneWidget,
@@ -171,12 +173,12 @@ void main() {
 
     testWidgets('Hoxe da casa en agosto: as do primeiro día (${lang.code})',
         (tester) async {
-      await tester.runAsync(() => repo.loadUnidadeDoMes('curso_0_2', 9));
+      await tester.runAsync(() => repo.loadUnidadeDoMes('curso_2_3', 9));
       await pintar(tester, casa(DateTime(2026, 8, 3)));
       await abrirPalabras(tester);
       final tarxeta = find.byKey(const Key('tarxeta_ingles_de_hoxe_fogar'));
       for (final p
-          in repo.cursoTprSync('curso_0_2')!.planDoDia(9, 1, 1)!.newWords) {
+          in repo.cursoTprSync('curso_2_3')!.planDoDia(9, 1, 1)!.newWords) {
         expect(find.descendant(of: tarxeta, matching: find.text(p.en)),
             findsOneWidget,
             reason: p.en);
@@ -275,6 +277,17 @@ Future<void> comprobar(
           matching: find.text(gl ? 'PALABRAS DE HOXE' : 'PALABRAS DE HOY')),
       findsOneWidget);
 
+  // O-20261109-4 (ACOPROS): en 0-2, las palabras de la semana del proyecto.
+  if (find
+      .descendant(
+          of: tarxeta,
+          matching: find.byKey(const Key('palabras_proxecto_0_2'),
+              skipOffstage: false),
+          skipOffstage: false)
+      .evaluate()
+      .isNotEmpty) {
+    return;
+  }
   final abrir = find.descendant(
       of: tarxeta, matching: find.byKey(const Key('abrir_palabras_do_dia')));
   await tester.ensureVisible(abrir);

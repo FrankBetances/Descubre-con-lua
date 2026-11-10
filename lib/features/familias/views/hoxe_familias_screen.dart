@@ -605,6 +605,9 @@ class _HoxeFamiliasScreenState extends State<HoxeFamiliasScreen> {
                     if (plan != null && curso != null) ...[
                       const SizedBox(height: 14),
                       _TarxetaPalabras(
+                        proxecto02: widget.cursoId == 'curso_0_2'
+                            ? (_toca.dia.mesCalendario, _toca.dia.semana)
+                            : null,
                         plan: plan,
                         modeloDoDia: curso.modelo.dia(_toca.dia.dia),
                         nucleo: switch (widget.repository.unidadeDoMesSync(
@@ -863,7 +866,11 @@ class _TarxetaPalabras extends StatelessWidget {
     required this.nucleo,
     required this.language,
     required this.audioService,
+    this.proxecto02,
   });
+
+  /// Mes y semana del proyecto de 0-2; `null` en el resto de edades.
+  final (int, int)? proxecto02;
 
   final DailyTprPlan plan;
   final List<PezaDaUnidade> nucleo;
@@ -876,14 +883,22 @@ class _TarxetaPalabras extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final palabras = PalabrasDoDia(
-      plan: plan,
-      modeloDoDia: modeloDoDia,
-      language: language,
-      audioService: audioService,
-      paraFogar: true,
-      detalle: false,
-    );
+    // O-20261109-4 (ACOPROS): en 0-2, las del proyecto, no el banco diario.
+    final Widget palabras = proxecto02 != null
+        ? PalabrasProxecto02(
+            mesCalendario: proxecto02!.$1,
+            semana: proxecto02!.$2,
+            language: language,
+            audioService: audioService,
+          )
+        : PalabrasDoDia(
+            plan: plan,
+            modeloDoDia: modeloDoDia,
+            language: language,
+            audioService: audioService,
+            paraFogar: true,
+            detalle: false,
+          );
     return Card(
       key: const Key('tarxeta_ingles_de_hoxe_fogar'),
       margin: EdgeInsets.zero,
@@ -913,8 +928,9 @@ class _TarxetaPalabras extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 6),
-            // M3.10 (D1): sin núcleo leído, la tarjeta de siempre.
-            if (nucleo.isEmpty)
+            // M3.10 (D1): sin núcleo leído, la tarjeta de siempre. En 0-2
+            // (ACOPROS), las palabras del proyecto, a la vista.
+            if (nucleo.isEmpty || proxecto02 != null)
               palabras
             else ...[
               const SizedBox(height: 4),
