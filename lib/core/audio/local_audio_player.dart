@@ -4,6 +4,14 @@ import 'package:flutter/services.dart';
 
 import 'offline_audio_service.dart';
 
+/// Velocidad de la voz (O-20261109-4, ACOPROS): 0,8 cuando el curso que se
+/// ve es 0-2 años, 1,0 en el resto. La ponen el Portal Familias y el Portal
+/// Docentes al cambiar de curso.
+double velocidadeVoz = 1.0;
+
+/// La velocidad para un curso.
+double velocidadeDoCurso(String cursoId) => cursoId == 'curso_0_2' ? 0.8 : 1.0;
+
 /// Plays bundled recordings through Android's own MediaPlayer.
 ///
 /// This is the implementation the app runs. Until now `main.dart` wired
@@ -61,7 +69,10 @@ class LocalAudioPlayer implements OfflineAudioService {
     }
     _currentAssetPath = assetPath;
     try {
-      await _platform.invokeMethod<void>('play', {'asset': assetPath});
+      await _platform.invokeMethod<void>('play', {
+        'asset': assetPath,
+        if (velocidadeVoz != 1.0) 'speed': velocidadeVoz,
+      });
       _emit(true);
     } on PlatformException catch (e) {
       // A missing recording must not look like a recording that played. The

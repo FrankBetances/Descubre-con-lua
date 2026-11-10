@@ -139,7 +139,7 @@ Estado: abierta
 - [ ] 0-2 años: los 10 temas con su contraste de sonido (par del banco y nota en gl y es). Pendiente de Frank: el documento de currículo empieza a los 18 meses y el gate deja 0-2 sin contraste a propósito · evidencia:
 - [x] Cada frase de la unidad comparte al menos una palabra con su STEAM, en las 200 semanas · evidencia: tools/gen_gramatica.py (revisar: falla si una frase no nombra nada de su STEAM; 21 frases reescritas)
 - [x] Cada palabra nueva sale en el cuento de su semana, en las 200 semanas · evidencia: tools/gen_leccions.py (revisar con CONTO_COMPLETO en las cinco edades)
-- [x] Hoy (casa y aula): franja con antes · AHORA · después, tema y STEAM; tarjeta de hoy con el día, qué hacer, la frase con voz y las palabras nuevas; todo eso sin bajar a 412×915 en gl y es; «Ya debería saber», «Cómo hablar» y «Guía» como tres botones que abren una hoja (aprobado por Frank, 1/11) · evidencia: test/features/ux_l3_test.dart («a semana enteira, sen baixar, a 412×915») y docs/capturas/escritorio/ux-casa-gl.png, ux-casa-es.png, ux-aula-es.png
+- [x] Hoy (casa y aula): franja con antes · AHORA · después, tema y STEAM; tarjeta de hoy con el día, qué hacer, la frase con voz y las palabras nuevas; todo eso sin bajar a 412×915 en gl y es; «Ya debería saber», «Cómo hablar» y «Guía» como tres botones que abren una hoja (aprobado por Frank, 1/11) · evidencia: test/features/ux_l3_test.dart («Learn de Duolingo, sen baixar, a 412×915»; desde O-20261109-5, la primera pantalla es la «Learn» de Duolingo y la lección queda justo debajo) y docs/capturas/escritorio/ux-casa-gl.png, ux-casa-es.png, ux-aula-es.png
 - [x] Aula → Hoy: debajo de la lección, solo «Sesión de 45 min» y «Asamblea del día»; el resto del material, plegado al final en «Más material del día» (no en Recursos: así no se pierde nada de lo que había) · evidencia: test/features/tpr_pantallas_test.dart y docs/capturas/escritorio/ux-aula-es.png
 - [x] Calendario (casa y aula): un solo selector de edad, los 10 meses en una fila y las 4 semanas de cada mes como tarjetas con su unidad, su STEAM y sus palabras; tocar una semana abre esa lección, la misma que Hoy · evidencia: test/features/leccions/leccions_test.dart («o calendario abre a mesma lección que Hoxe») y docs/capturas/escritorio/ux-cal-casa-gl.png, ux-cal-casa-es.png, ux-cal-aula-es.png, ux-leccion-cal-gl.png
 - [x] Capturas en escritorio de casa y aula, en gl y es, por Inicio → Na casa / Na escola · evidencia: docs/capturas/escritorio/ux-casa-gl.png, ux-casa-es.png, ux-aula-es.png, ux-cal-casa-gl.png, ux-cal-aula-es.png
@@ -183,3 +183,74 @@ Estado: cumplida
 - [x] Manual actualizado (PDF y Word regenerados) · evidencia: docs/manual-casos-de-uso.html (6 · «Quién aprende» y «Resultados»; 10) y tools/check_manual_build.py
 - [x] Todas las capturas del manual son de la app actual (corrección del 9/11: 16 estaban viejas y el calendario de lecciones no salía): regeneradas las 34 pantallas en gl y es, y añadidas el calendario de lecciones (casa y aula) y la hoja del chip · evidencia: test/capturas_test.dart («calendario de leccions» y «folla do neno») y docs/Descubre-con-Lua-Manual-Casos-de-Uso.pdf (42 páginas, miradas en hoja de contactos)
 - [x] Mergeado en main con CI en verde · evidencia: docs/ORDENES.md (PR #43, run 42630292325 en verde, merge 29362552)
+
+## O-20261109-2 · Automejora: que no vuelva a pasar
+Estado: abierta
+> Lo que yo no veo, fue lo que te ordené, y fui bastante claro porque te dije que lo copiaras de Valeria, me has traicionado, analiza de nuevo por qué ha fallado y pon un Hook o lo que sea a mí eso no me importa, pero esto no puede pasar nunca más ya estoy cansado de que no hagas lo que te pido, tienes que cumplir las reglas, sí o sí, pon un Hook para hacerlo
+>
+> La orden suprema, que es cumplir con mis órdenes, no lo haces. Yo necesito que sea recursivo y que mejores automáticamente, ejecuta mi orden de automejora. Ejecuta y Mergea ahora la orden de auto mejora ya
+Fuente: ninguna: contenido nuevo (las reglas R∞ y R1 de CLAUDE.md)
+
+- [x] En cada mensaje de Frank, un hook recuerda R∞; si pide copiar, traer o imitar algo (o nombra Valeria, la mascota, los premios u otro producto), obliga a abrir la fuente y escribir «Fuente:» antes de programar · evidencia: .claude/hooks/orden_fuente.py y .claude/settings.json (UserPromptSubmit)
+- [x] Cuando Frank señala un fallo, el hook inyecta el protocolo de automejora: comprobar, registrar la causa raíz, crear la guarda, corregir y mergear · evidencia: .claude/hooks/orden_fuente.py
+- [x] Cada fallo queda en docs/FALLOS.md con su causa raíz y su guarda; CI cae si una entrada no tiene guarda que exista · evidencia: tools/check_fallos.py (en tools/gates.sh) y docs/FALLOS.md
+- [x] Ninguna orden nueva sin «Fuente:»; CI cae si falta · evidencia: tools/check_ordenes.py
+- [ ] Mergeado en main con CI en verde · evidencia:
+
+## O-20261109-3 · Lúa y el sistema de premios de Valeria, en casa
+Estado: abierta
+> te dije que lo copiaras de Valeria
+>
+> Decisión de Frank (9/11): «evidentemente lo gana el maldito niño joder el padre es un fucking avatar»: los premios los gana el niño; la persona adulta actúa en su nombre.
+Fuente: FrankBetances/Valeria:src/components/lua/ValeriaCatInteractiveCard.tsx (y src/ValeriaPixelAwards.tsx, src/ValeriaAwardsSheet.tsx, src/valeriaGamification.ts, src/components/lua/luaPixelSegments.ts)
+
+- [x] La tarjeta de Lúa de Valeria, portada: la gata de cuerpo entero que respira, mueve la cola, parpadea y reacciona al tocarla, con su nivel, su barra de progreso y la racha en la misma tarjeta, en Hoy de casa · evidencia: test/features/criancas_test.dart («Lúa de Valeria en Hoy: xogar dá XP e a primeira insignia, e a folla de premios a mostra»)
+- [x] La colección de premios de Valeria (hoja de premios) abierta desde la tarjeta · evidencia: test/features/criancas_test.dart («Lúa de Valeria en Hoy: xogar dá XP e a primeira insignia, e a folla de premios a mostra»)
+- [x] Los premios son del niño: XP, 12 niveles con nombre, racha y las 18 insignias de Valeria, por niño registrado; se ganan cuando la persona adulta marca en su nombre el juego del día y lo que entiende o dice · evidencia: test/features/criancas_test.dart («o xogo de Valeria: racha, insignias e obxectos»)
+- [x] La tarjeta en Hoy de casa (debajo de la lección) y arriba en Resultados, en gl y es, con captura · evidencia: test/features/criancas_test.dart («Lúa de Valeria en Hoy: xogar dá XP e a primeira insignia, e a folla de premios a mostra») y docs/capturas/resultados-crianza-gl.png, resultados-crianza-es.png, premios-lua-gl.png, premios-lua-es.png
+- [x] Privacidad: lo nuevo se guarda en criancas.json, sin hora; gate, política y CLAUDE.md al día · evidencia: test/core/criancas_privacidad_test.dart, docs/privacy.html y CLAUDE.md
+- [ ] Mergeado en main con CI en verde · evidencia:
+
+## O-20261109-4 · Las consideraciones de ACOPROS
+Estado: abierta
+> Completa la mascota y Además Además, las compañeras de Acopros han enviado un informe con todos los cambios necesarios: CONSIDERACIONES DESCUBRE CON LÚA […] (el informe entero, literal, en la fuente)
+Fuente: referencias/acopros/consideraciones-2026-11-09.md
+
+Primero una edad entera, 0-2 años (R∞.6.3), que es la que revisaron; las demás después de que Frank la dé por buena.
+
+Decisiones de Frank (9/11), a tres preguntas de Claude Code: 0-2 con unas 20 palabras por tema (el gate de las 4.000 deja de contar 0-2; las demás edades, después); sin gramática en 0-2: las 48 unidades empiezan en 2-3 y se reparten en sus 40 meses; el cuento de 0-2, rimas y canciones inglesas tradicionales de dominio público, una por tema, con voz más lenta.
+
+- [x] 0-2: cada unidad (proyecto del mes) empieza por su vocabulario base y su canción; ninguna frase usa una palabra que no se haya presentado antes (no «leaves are falling» sin «tree», «leaf», «brown») · evidencia: test/features/acopros_0_2_test.dart («os 10 proxectos: unhas 20 palabras, dous elementos como moito, sen to be») y tools/gen_acopros_0_2.py (--check en gates.sh: semana 1 = vocabulario y canción; cómo hablar solo con palabras del proyecto)
+- [x] 0-2: «Ya debería saber» sin verbo to be ni frases: palabras sueltas (holofrase) · evidencia: test/features/acopros_0_2_test.dart («os 10 proxectos: unhas 20 palabras, dous elementos como moito, sen to be») y tools/gen_acopros_0_2.py
+- [x] 0-2: «Cómo hablar» con frases de 2 elementos como mucho y su gesto («wash hands») · evidencia: test/features/acopros_0_2_test.dart («os 10 proxectos: unhas 20 palabras, dous elementos como moito, sen to be») y docs/capturas/proxecto-0-2-gl.png, proxecto-0-2-es.png
+- [x] 0-2: la guía, sencilla: canta la canción del tema, repasa su vocabulario · evidencia: test/features/acopros_0_2_test.dart («Hoxe 0-2») y tools/gen_acopros_0_2.py
+- [x] 0-2: unas 20 palabras bien escogidas por tema, en vez del vocabulario núcleo de miles · evidencia: test/features/acopros_0_2_test.dart («Máis material do día en 0-2: as palabras do proxecto, non o banco») y tools/gen_acopros_0_2.py (18-22 por proyecto, de la lección y el banco TPR del mes)
+- [x] El plan curricular, por proyectos, como trabajan las escuelas infantiles (0-2, primera edad entera según R∞.6.3; las demás, cuando Frank la dé por buena) · evidencia: test/features/acopros_0_2_test.dart («Hoxe 0-2») y tools/gen_acopros_0_2.py (10 proyectos de 4 semanas)
+- [x] 0-2: el cuento de la semana con vocabulario de la edad y audio más lento: una rima tradicional de dominio público por proyecto, grabada (en, gl, es) y con la voz a 0,8 en 0-2 · evidencia: test/features/acopros_0_2_test.dart («Hoxe 0-2»), test/core/velocidade_voz_test.dart y tools/gen_acopros_0_2.py
+- [x] Gates que lo midan: frases de 0-2 de 2 elementos como mucho, palabra nueva solo tras presentarla, 20 por tema · evidencia: tools/gen_acopros_0_2.py (en tools/gates.sh) y test/features/acopros_0_2_test.dart; tools/check_ordenes.py exige ese gate o test en cada criterio marcado
+- [ ] Mergeado en main con CI en verde · evidencia:
+
+Pendiente de decidir (Frank, 10/11/2026: «este trabajo se decidirá en una siguiente iteración»): si repartir las 48 unidades en los 40 meses de 2-3 a 5-6. En 0-2 ya no se enseña gramática, pero las unidades 1 a 9 siguen asignadas a esos meses (tools/ruta_48.py). Moverlas obliga a reescribir las frases de cada mes y su voz. No es criterio de esta orden.
+
+## O-20261109-5 · La UX de familia, copiando el sistema de Duolingo
+Estado: abierta
+> Por cierto la ux UI de familia es cuestionable te ordené copiar el sistema de duolingo te di el repositorio y te di varios más y lo de hoy es horrible
+Fuente: docs/capturas/fuente-duolingo-learn.png (sanidhyy/duolingo-clone, MIT: app/(main)/learn/*.tsx, app/lesson/header.tsx, footer.tsx, quiz.tsx, result-card.tsx)
+
+Antes (28/10) Frank dijo «es un ejemplo, no a rajatabla» y se adaptó; el 9/11 dice que el resultado es horrible y pide copiar el sistema. Se copia la UX visible de Duolingo (duolingo-clone, MIT): el camino de lecciones en nodos, la lección a pantalla completa con su barra de progreso y botón «Comprobar/Continuar», la pantalla de fin con XP, la racha y la tienda/premios, adaptado a que la usa la persona adulta en nombre del niño.
+
+- [x] Hoy de casa como la pantalla «Learn» de duolingo-clone: cabecera con racha y XP del niño, el camino de la unidad en nodos con la lección actual resaltada y un botón grande para empezar · evidencia: test/features/ux_l3_test.dart («Learn de Duolingo, sen baixar, a 412×915») y docs/capturas/hoxe-familias-gl.png, hoxe-familias-es.png
+- [x] Al tocar la lección, pantalla completa paso a paso como un ejercicio de Duolingo (barra de progreso arriba, un paso por pantalla, botón Continuar), con la voz de cada palabra · evidencia: test/features/criancas_test.dart («Learn de Duolingo: o nodo de hoxe abre a lección paso a paso e o fin dá XP») y docs/capturas/leccion-duolingo-paso-gl.png, leccion-duolingo-paso-es.png
+- [x] Al acabar, la pantalla de fin de Duolingo: XP ganado, racha y premio de Lúa · evidencia: test/features/criancas_test.dart («Learn de Duolingo: o nodo de hoxe abre a lección paso a paso e o fin dá XP») y docs/capturas/leccion-duolingo-fin-gl.png, leccion-duolingo-fin-es.png
+- [x] Capturas en gl y es comparadas lado a lado con las de duolingo-clone · evidencia: docs/comparativa-duolingo.html y docs/capturas/fuente-duolingo-learn.png
+- [ ] Mergeado en main con CI en verde · evidencia:
+
+## O-20261110-1 · Terminar O-3, O-5 y O-4 y mergear con CI en verde
+Estado: abierta
+> Autorización de Frank (10 nov 2026): termina todo completo y, cuando el CI esté en verde, haz merge a `main` y push. Sin preguntarme nada más. [...] 1. O-20261109-5 (UX Duolingo): la pantalla de fin de lección debe mostrar XP ganado, racha y premio de Lúa; hoy falta la racha. Añádela con test. Comprueba que el camino en nodos de Hoy cabe entero (nodo del viernes y «Empezar»). [...] 2. O-20261109-4 (ACOPROS 0-2): cumple los 9 criterios que siguen en `[ ]` [...] No inventes contenido pedagógico sin base en la fuente. [...] 4. Cuando los gates del PR estén en verde y no queden criterios abiertos de O-3, O-5 y O-4, haz merge del PR #47 a `main` y push. Si queda algún criterio abierto o un gate en rojo, NO hagas merge: dime cuál y por qué, y para.
+Fuente: docs/ORDENES.md (criterios abiertos de O-20261109-3, O-20261109-4 y O-20261109-5) y referencias/acopros/consideraciones-2026-11-09.md
+
+- [x] La pantalla de fin de la lección enseña el XP ganado, la racha y el premio de Lúa · evidencia: test/features/criancas_test.dart («Learn de Duolingo: o nodo de hoxe abre a lección paso a paso e o fin dá XP») y docs/capturas/leccion-duolingo-fin-gl.png, leccion-duolingo-fin-es.png
+- [x] En Hoy a 412×915, el camino entero cabe sin bajar: los cinco nodos y «Empezar» del día · evidencia: test/features/ux_l3_test.dart («Learn de Duolingo, sen baixar, a 412×915») y docs/capturas/hoxe-familias-gl.png, hoxe-familias-es.png
+- [ ] Los criterios abiertos de O-20261109-4 cumplidos con su gate · evidencia:
+- [ ] Cuerpo del PR #47 al día y merge en main con CI en verde · evidencia:

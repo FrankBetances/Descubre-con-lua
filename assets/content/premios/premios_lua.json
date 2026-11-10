@@ -1,0 +1,414 @@
+{
+ "fuente": "FrankBetances/Valeria:src/valeriaGamification.ts, src/types/valeriaLua.ts y src/i18n/strings.{gl,es}.ts",
+ "xpPorNivel": 100,
+ "niveis": [
+  {
+   "gl": "Gatiña",
+   "es": "Gatita"
+  },
+  {
+   "gl": "Gata Curiosa",
+   "es": "Gata Curiosa"
+  },
+  {
+   "gl": "Gata Xoguetona",
+   "es": "Gata Juguetona"
+  },
+  {
+   "gl": "Gata Valente",
+   "es": "Gata Valiente"
+  },
+  {
+   "gl": "Gata Exploradora",
+   "es": "Gata Exploradora"
+  },
+  {
+   "gl": "Gata Saltareira",
+   "es": "Gata Saltarina"
+  },
+  {
+   "gl": "Gata Sabia",
+   "es": "Gata Sabia"
+  },
+  {
+   "gl": "Gata Sixilosa",
+   "es": "Gata Sigilosa"
+  },
+  {
+   "gl": "Gata Estrela",
+   "es": "Gata Estrella"
+  },
+  {
+   "gl": "Gran Gata",
+   "es": "Gran Gata"
+  },
+  {
+   "gl": "Gata Lunar",
+   "es": "Gata Lunar"
+  },
+  {
+   "gl": "Gata Lendaria",
+   "es": "Gata Legendaria"
+  }
+ ],
+ "insignias": [
+  {
+   "id": "primera",
+   "glyph": "paw",
+   "tier": "bronze",
+   "nome": {
+    "gl": "Primeiro paso de Lúa",
+    "es": "Primer paso de Lúa"
+   },
+   "di": {
+    "gl": "Completa a túa primeira sesión con Lúa.",
+    "es": "Completa tu primera sesión con Lúa."
+   }
+  },
+  {
+   "id": "ses10",
+   "glyph": "paw",
+   "tier": "silver",
+   "nome": {
+    "gl": "Paseo amigo",
+    "es": "Paseo amigo"
+   },
+   "di": {
+    "gl": "10 sesións de camiño xuntos.",
+    "es": "10 sesiones de camino juntos."
+   }
+  },
+  {
+   "id": "ses25",
+   "glyph": "paw",
+   "tier": "gold",
+   "nome": {
+    "gl": "Gran exploradora",
+    "es": "Gran exploradora"
+   },
+   "di": {
+    "gl": "25 sesións descubrindo palabras.",
+    "es": "25 sesiones descubriendo palabras."
+   }
+  },
+  {
+   "id": "ses50",
+   "glyph": "paw",
+   "tier": "teal",
+   "nome": {
+    "gl": "Guía do carreiro",
+    "es": "Guía del sendero"
+   },
+   "di": {
+    "gl": "50 sesións: Lúa sabe o camiño.",
+    "es": "50 sesiones: Lúa sabe el camino."
+   }
+  },
+  {
+   "id": "ses100",
+   "glyph": "paw",
+   "tier": "violet",
+   "nome": {
+    "gl": "Pacto centenario",
+    "es": "Pacto centenario"
+   },
+   "di": {
+    "gl": "100 sesións. Un vínculo para sempre.",
+    "es": "100 sesiones. Un vínculo para siempre."
+   }
+  },
+  {
+   "id": "racha3",
+   "glyph": "flame",
+   "tier": "bronze",
+   "nome": {
+    "gl": "Axóuxere sonoro",
+    "es": "Cascabel sonoro"
+   },
+   "di": {
+    "gl": "3 días seguidos practicando.",
+    "es": "3 días seguidos practicando."
+   }
+  },
+  {
+   "id": "racha7",
+   "glyph": "flame",
+   "tier": "silver",
+   "nome": {
+    "gl": "Semana cantareira",
+    "es": "Semana cantarina"
+   },
+   "di": {
+    "gl": "7 días seguidos practicando.",
+    "es": "7 días seguidos practicando."
+   }
+  },
+  {
+   "id": "racha14",
+   "glyph": "flame",
+   "tier": "gold",
+   "nome": {
+    "gl": "Melodía constante",
+    "es": "Melodía constante"
+   },
+   "di": {
+    "gl": "14 días seguidos practicando.",
+    "es": "14 días seguidos practicando."
+   }
+  },
+  {
+   "id": "racha30",
+   "glyph": "flame",
+   "tier": "teal",
+   "nome": {
+    "gl": "Campá de ouro",
+    "es": "Campana de oro"
+   },
+   "di": {
+    "gl": "30 días seguidos practicando.",
+    "es": "30 días seguidos practicando."
+   }
+  },
+  {
+   "id": "perfecta",
+   "glyph": "star",
+   "tier": "bronze",
+   "nome": {
+    "gl": "Oído de lince",
+    "es": "Oído de lince"
+   },
+   "di": {
+    "gl": "Consegue 3 estrelas en todos os exercicios dunha sesión.",
+    "es": "Logra 3 estrellas en todos los ejercicios de una sesión."
+   }
+  },
+  {
+   "id": "perf5",
+   "glyph": "star",
+   "tier": "gold",
+   "nome": {
+    "gl": "Radar máxico",
+    "es": "Radar mágico"
+   },
+   "di": {
+    "gl": "Consegue 5 sesións perfectas.",
+    "es": "Logra 5 sesiones perfectas."
+   }
+  },
+  {
+   "id": "perf10",
+   "glyph": "star",
+   "tier": "violet",
+   "nome": {
+    "gl": "Antena de cristal",
+    "es": "Antena de cristal"
+   },
+   "di": {
+    "gl": "Consegue 10 sesións perfectas.",
+    "es": "Logra 10 sesiones perfectas."
+   }
+  },
+  {
+   "id": "madrugadora",
+   "glyph": "sunrise",
+   "tier": "gold",
+   "nome": {
+    "gl": "Almorzo sonoro",
+    "es": "Desayuno sonoro"
+   },
+   "di": {
+    "gl": "Practica antes das 10 da mañá.",
+    "es": "Practica antes de las 10 de la mañana."
+   }
+  },
+  {
+   "id": "nocturna",
+   "glyph": "moon",
+   "tier": "silver",
+   "nome": {
+    "gl": "Conto de lúa",
+    "es": "Cuento de luna"
+   },
+   "di": {
+    "gl": "Practica despois das 8 da tarde.",
+    "es": "Practica después de las 8 de la tarde."
+   }
+  },
+  {
+   "id": "finde",
+   "glyph": "home",
+   "tier": "teal",
+   "nome": {
+    "gl": "Mochila de fin de semana",
+    "es": "Mochila de finde"
+   },
+   "di": {
+    "gl": "Practica un sábado ou un domingo.",
+    "es": "Practica un sábado o un domingo."
+   }
+  },
+  {
+   "id": "maraton",
+   "glyph": "yarn",
+   "tier": "gold",
+   "nome": {
+    "gl": "Nobelo de historias",
+    "es": "Ovillo de historias"
+   },
+   "di": {
+    "gl": "Seis exercicios ou máis nunha soa sesión.",
+    "es": "Seis ejercicios o más en una sola sesión."
+   }
+  },
+  {
+   "id": "regreso",
+   "glyph": "heart",
+   "tier": "teal",
+   "nome": {
+    "gl": "Aperta de benvida",
+    "es": "Abrazo de bienvenida"
+   },
+   "di": {
+    "gl": "Volve practicar tras unha semana de pausa.",
+    "es": "Vuelve a practicar tras una semana de pausa."
+   }
+  },
+  {
+   "id": "nivel10",
+   "glyph": "crown",
+   "tier": "violet",
+   "nome": {
+    "gl": "Raíña da linguaxe",
+    "es": "Reina del lenguaje"
+   },
+   "di": {
+    "gl": "Acada o nivel 10 e a súa coroa.",
+    "es": "Alcanza el nivel 10 y su corona."
+   }
+  }
+ ],
+ "obxectos": [
+  {
+   "id": "snack_fish",
+   "slot": "snack",
+   "require": "sesions",
+   "n": 1,
+   "nome": {
+    "gl": "Peixiño Saboroso",
+    "es": "Pescadito Sabroso"
+   },
+   "condicion": {
+    "gl": "Dispoñible desde o principio",
+    "es": "Disponible desde el principio"
+   }
+  },
+  {
+   "id": "neck_red_bow",
+   "slot": "neck",
+   "require": "sesions",
+   "n": 3,
+   "nome": {
+    "gl": "Lazo Escarlata",
+    "es": "Pajarita Escarlata"
+   },
+   "condicion": {
+    "gl": "Completa 3 sesións de exercicios",
+    "es": "Completa 3 sesiones de ejercicios"
+   }
+  },
+  {
+   "id": "head_flower",
+   "slot": "head",
+   "require": "racha",
+   "n": 3,
+   "nome": {
+    "gl": "Flor Turquesa Valeria",
+    "es": "Flor Turquesa Valeria"
+   },
+   "condicion": {
+    "gl": "Acada unha racha de 3 días",
+    "es": "Alcanza una racha de 3 días"
+   }
+  },
+  {
+   "id": "neck_bell",
+   "slot": "neck",
+   "require": "sesions",
+   "n": 10,
+   "nome": {
+    "gl": "Axóuxere Relucente",
+    "es": "Cascabel Reluciente"
+   },
+   "condicion": {
+    "gl": "Completa 10 sesións de exercicios",
+    "es": "Completa 10 sesiones de ejercicios"
+   }
+  },
+  {
+   "id": "head_wizard",
+   "slot": "head",
+   "require": "nivel",
+   "n": 5,
+   "nome": {
+    "gl": "Gorro de Maga Estelar",
+    "es": "Gorro de Maga Estelar"
+   },
+   "condicion": {
+    "gl": "Acada o Nivel 5 de Lúa",
+    "es": "Alcanza el Nivel 5 de Lúa"
+   }
+  }
+ ],
+ "textos": {
+  "titulo": {
+   "gl": "Os premios de Lúa",
+   "es": "Los premios de Lúa"
+  },
+  "subtitulo": {
+   "gl": "O que conseguiches e o que che falta.",
+   "es": "Lo que has conseguido y lo que te falta."
+  },
+  "maxNivel": {
+   "gl": "Nivel máximo acadado!",
+   "es": "¡Nivel máximo alcanzado!"
+  },
+  "escaleira": {
+   "gl": "Escaleira de niveis",
+   "es": "Escalera de niveles"
+  },
+  "armario": {
+   "gl": "O armario e premios de Lúa",
+   "es": "El armario y premios de Lúa"
+  },
+  "posto": {
+   "gl": "Posto en Lúa",
+   "es": "Puesto en Lúa"
+  },
+  "poñer": {
+   "gl": "Toca para poñer",
+   "es": "Toca para poner"
+  }
+ },
+ "humor": {
+  "luaPurring": {
+   "gl": "Ronroneo!",
+   "es": "¡Ronroneo!"
+  },
+  "luaEating": {
+   "gl": "Que rico!",
+   "es": "¡Qué rico!"
+  },
+  "luaCraving": {
+   "gl": "Ten antollo",
+   "es": "Tiene antojo"
+  },
+  "luaPatShort": {
+   "gl": "Acariñame",
+   "es": "Acaríciame"
+  },
+  "luaFeedFish": {
+   "gl": "Dar peixiño",
+   "es": "Dar pescadito"
+  }
+ }
+}

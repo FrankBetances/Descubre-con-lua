@@ -1,5 +1,30 @@
 {
   "permissions": {
-    "deny": ["Agent", "Workflow"]
+    "deny": [
+      "Agent",
+      "Workflow"
+    ]
+  },
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"$CLAUDE_PROJECT_DIR/.claude/hooks/orden_fuente.py\""
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"$CLAUDE_PROJECT_DIR/.claude/hooks/no_falta_nada.py\""
+          }
+        ]
+      }
+    ]
   }
 }

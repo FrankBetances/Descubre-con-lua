@@ -15,6 +15,15 @@ La dictó Frank el 28/10/2026: «necesito una solución y regla suprema para que
    3. **Primero se entrega una sola edad entera** (4-5 años, 40 semanas). Frank la abre en la app y mira tres semanas al azar. Las otras edades no se hacen hasta que Frank dé esa por buena.
    4. **Cada informe empieza por lo que falta, con números**: «de 40 semanas, hechas 40; sin cuento propio, 0». Nunca por lo que se hizo.
 
+## R∞+ · AUTOMEJORA: CADA FALLO DEJA UNA GUARDA
+
+La dictó Frank el 9/11/2026 (O-20261109-2): «necesito que sea recursivo y que mejores automáticamente». Nació de dos fallos de Claude Code el mismo día: no copiar de Valeria la Lúa y los premios que Frank pidió, y dar por actualizado un manual con capturas viejas.
+
+1. **Cada fallo que Frank señala entra en `docs/FALLOS.md`**, con qué pasó, la causa raíz y la guarda que lo habría parado.
+2. **La guarda se crea en el mismo cambio**: un hook en `.claude/hooks/`, un gate en `tools/` o un test. `tools/check_fallos.py` tumba CI si una entrada no tiene guarda que exista.
+3. **El hook `.claude/hooks/orden_fuente.py` corre en cada mensaje de Frank**: recuerda R∞, obliga a abrir y escribir la «Fuente:» de lo que se copia, y cuando Frank señala un fallo inyecta este protocolo.
+4. **Ninguna orden desde O-20261109-2 sin «Fuente:»** en `docs/ORDENES.md`: de dónde sale lo que se hace. Lo comprueba `tools/check_ordenes.py`.
+
 ## R0 · PROHIBIDO JUSTIFICARSE. AQUÍ SE VIENE A HACER LAS COSAS BIEN, SÍ O SÍ
 
 La dictó Frank el 21/10/2026: «hay que agregar aquí la regla cero: prohibido justificarse, aquí se viene a hacer las cosas bien sí o sí». Va antes que todo lo demás.
@@ -344,7 +353,7 @@ Nada de emoji del sistema como iconografía: cambian entre fabricantes y nunca f
 
 - Es el mismo personaje que en el proyecto anterior de la casa, donde el sprite vive como rejilla de caracteres y de ella salen icono, icono adaptativo y splash.
 - Aquí se **porta la rejilla**, no se redibuja a ojo. Vive en `assets/brand/lua_head.txt`, y de ahí salen icono, icono adaptativo y splash mediante `tools/build_launcher_icons.py`. Icono y splash deben salir de la misma fuente.
-- **El sistema de premios existe, pero premia al ADULTO.** Frank lo pidió así. Lo que NO se hereda es el sujeto: allí los gana quien juega, que es la criatura; aquí el niño no toca la pantalla, así que premiar su «progreso» sería inventarse un dato que nadie ha medido. Hay dos recorridos separados: la docente por asambleas dirigidas, la familia por cápsulas leídas. Sigue sin heredarse el desfile ni el espejo con el periférico Lúa. Lúa aparece para la docente y la familia, nunca para captar la atención infantil.
+- **Los premios los gana el NIÑO** (decisión de Frank, 9/11/2026, O-20261109-3: «evidentemente lo gana el niño; el padre es un avatar»). Se copian de Valeria: la tarjeta de Lúa animada, 12 niveles, racha y 18 insignias, por niño registrado en casa. La persona adulta actúa en su nombre: marca el juego del día y lo que entiende o dice, y eso es lo que da los puntos, así que ningún premio sale de un dato inventado. Los contadores del adulto (asambleas, cápsulas) siguen existiendo aparte. Antes (hasta el 9/11) premiaba solo al adulto.
 - Los premios viven en `lib/features/premios/` y su contenido —niveles e insignias— en `assets/content/premios/premios.json`, nunca escrito en los widgets.
 
 ### 6. Rediseñar, no parchear
@@ -384,7 +393,7 @@ Cualquier cambio en lo que la app recoge (un permiso, un paquete, un campo guard
 - `premios.json`: la cuenta de uso de la persona adulta para los premios de Lúa —asambleas dirigidas, cápsulas leídas, racha actual y mejor racha, fecha del último día **sin hora**, e identificadores de insignias ganadas—.
 - `user_progress.json`: los mismos contadores del recorrido de la persona adulta (XP, rachas, fecha del último día **sin hora**, qué asambleas y cápsulas completó, y una casilla aula/hogar **por día**, no por momento) y, además, **una tarjeta de repaso espaciado por palabra inglesa**: la palabra, sus números de FSRS (dificultad, estabilidad, repasos, fallos) y las dos fechas del repaso, **en día, sin hora**.
 
-- `criancas.json` (O-20261109-1, decidido por Frank el 9/11/2026: «el dato no sale del móvil»): solo en casa, de cada niño el nombre o apodo que escribe la familia, la edad en años y el curso; cuál se vio el último; y, por semana del curso (`curso/mes/semana`, **sin fecha ni hora**), qué palabras inglesas la persona adulta marcó como «la entiende» o «la dice». Se borra desde la app o al desinstalar. En el aula no se registra a ningún niño.
+- `criancas.json` (O-20261109-1, decidido por Frank el 9/11/2026: «el dato no sale del móvil»): solo en casa, de cada niño el nombre o apodo que escribe la familia, la edad en años y el curso; cuál se vio el último; y, por semana del curso (`curso/mes/semana`, **sin fecha ni hora**), qué palabras inglesas la persona adulta marcó como «la entiende» o «la dice»; y los premios del niño con Lúa (O-20261109-3): XP, nivel, racha, insignias, accesorios, caricias y dos fechas en día sin hora (último juego y último pescadito). Se borra desde la app o al desinstalar. En el aula no se registra a ningún niño.
 
 Los dos primeros no identifican a nadie ni contienen nada de ninguna crianza; el tercero lleva el nombre que la familia escribe, y por eso la política de privacidad lo declara. Ninguno puede salir del aparato porque no hay permiso de red. Que una hora no se cuele —ni escrita, ni en milisegundos desde 1970— no es una promesa: lo comprueban tres gates, uno por fichero: `test/features/premios_test.dart`, `test/core/progreso_privacidad_test.dart` y `test/core/criancas_privacidad_test.dart`. Cualquiera falla si aparece una clave nueva en el fichero que vigila.
 

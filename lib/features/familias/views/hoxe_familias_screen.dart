@@ -28,6 +28,13 @@ import '../../cuentos/widgets/boton_microcuento.dart';
 import '../../docentes/widgets/hoxe_na_aula.dart';
 import '../../juega/widgets/aula_ciclo_panel.dart' show nomeDoMes;
 import '../../leccions/widgets/leccion_da_semana.dart';
+import '../../criancas/crianza_da_casa.dart';
+import '../../criancas/criancas_store.dart';
+import '../../criancas/tarxeta_lua.dart';
+import '../widgets/learn_duolingo.dart';
+import '../../leccions/widgets/proxecto_0_2.dart';
+import '../../../core/brand/lua_valeria.dart';
+import '../../../data/models/leccion_model.dart';
 import '../../steam/widgets/steam_no_calendario.dart';
 import '../nomes_familias.dart';
 import '../widgets/reto_da_semana.dart';
@@ -349,8 +356,84 @@ class _HoxeFamiliasScreenState extends State<HoxeFamiliasScreen> {
                 ),
               ),
             ],
-            // P11: lo primero, la lección de la semana del plan curricular.
-            // Lo demás, el juego de tres minutos incluido, es complementario.
+            // O-20261109-5: la pantalla «Learn» de duolingo-clone: puntos y
+            // racha del niño, la unidad en su caja verde y el camino de los
+            // cinco días en nodos; el nodo de hoy abre la lección paso a paso.
+            const SizedBox(height: 10),
+            FutureBuilder<Leccions?>(
+              future: Leccions.cargar()
+                  .then<Leccions?>((l) => l, onError: (_) => null),
+              builder: (context, snap) {
+                final da = snap.data?.da(
+                    widget.cursoId, _toca.dia.mesCalendario, _toca.dia.semana);
+                if (da == null) return const SizedBox.shrink();
+                final (u, lec) = da;
+                final casa = CrianzaDaCasa.maybeOf(context);
+                final neno = casa?.store.activa;
+                final xogo = neno == null ? null : casa!.store.xogo(neno.id);
+                final agora = widget.agora ?? DateTime.now();
+                final semanaKey = CriancasStore.semana(
+                    widget.cursoId, _toca.dia.mesCalendario, _toca.dia.semana);
+                final actual = _toca.prevista
+                    ? 0
+                    : _toca.finDeSemana
+                        ? 4
+                        : _toca.dia.dia - 1;
+                void abrir(int i) => abrirLeccionDuolingo(context,
+                    leccion: lec,
+                    dia: i + 1,
+                    language: lang,
+                    semana: semanaKey,
+                    cursoId: widget.cursoId,
+                    mesCalendario: _toca.dia.mesCalendario,
+                    semanaN: _toca.dia.semana,
+                    audioService: widget.audioService,
+                    store: casa?.store,
+                    crianza: neno,
+                    agora: widget.agora);
+                return Column(
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: [
+                    if (xogo != null)
+                      CabeceraLearn(
+                        curso: Text(neno!.nome,
+                            overflow: TextOverflow.ellipsis,
+                            style: const TextStyle(
+                                fontSize: 15,
+                                fontWeight: FontWeight.w800,
+                                color: AppTheme.textPrimary)),
+                        xp: xogo.xp,
+                        racha: xogo.rachaViva(agora),
+                      ),
+                    const SizedBox(height: 10),
+                    BannerUnidade(
+                      titulo: u.titulo.resolve(lang),
+                      descricion: u.steam?.resolve(lang) ?? '',
+                      continuar:
+                          lang == AppLanguage.gl ? 'Continuar' : 'Continuar',
+                      onContinuar: () => abrir(actual),
+                    ),
+                    CaminoNodos(
+                      etiquetas: [
+                        for (var d = 0; d < 5; d++) _semana[d].resolve(lang),
+                      ],
+                      actual: actual,
+                      feitoHoxe: xogo?.xogouHoxe(agora) ?? false,
+                      empezar: lang == AppLanguage.gl ? 'Empezar' : 'Empezar',
+                      onNodo: abrir,
+                      lua: xogo == null
+                          ? null
+                          : LuaValeria(
+                              ancho: 64,
+                              cabeza: xogo.cabeza,
+                              pescozo: xogo.pescozo),
+                    ),
+                    const SizedBox(height: 16),
+                  ],
+                );
+              },
+            ),
+            // P11: debajo, la lección de la semana entera, para consultar.
             const SizedBox(height: 10),
             LeccionDaSemanaCargada(
               cursoId: widget.cursoId,
@@ -360,6 +443,41 @@ class _HoxeFamiliasScreenState extends State<HoxeFamiliasScreen> {
               language: lang,
               audioService: widget.audioService,
             ),
+            // O-20261109-3: Lúa de Valeria, con los premios del niño.
+            if (CrianzaDaCasa.maybeOf(context) case final casa?)
+              if (casa.store.activa case final neno?) ...[
+                const SizedBox(height: 16),
+                FutureBuilder<Leccions?>(
+                  future: Leccions.cargar()
+                      .then<Leccions?>((l) => l, onError: (_) => null),
+                  builder: (context, snap) => TarxetaLua(
+                    key: ValueKey('tarxeta_lua_${neno.id}'),
+                    store: casa.store,
+                    crianza: neno,
+                    language: lang,
+                    agora: widget.agora,
+                    semana: CriancasStore.semana(
+                        neno.curso, _toca.dia.mesCalendario, _toca.dia.semana),
+                    palabrasDaSemana: neno.curso == 'curso_0_2'
+                        ? [
+                            for (final w in Proxectos02.lidos
+                                    ?.doMes(_toca.dia.mesCalendario)
+                                    ?.daSemana(_toca.dia.semana) ??
+                                const <PalabraProxecto>[])
+                              w.en,
+                          ]
+                        : [
+                            for (final p in snap.data
+                                    ?.da(neno.curso, _toca.dia.mesCalendario,
+                                        _toca.dia.semana)
+                                    ?.$2
+                                    .novas ??
+                                const <PezaDaLeccion>[])
+                              if (p.en.isNotEmpty) p.en,
+                          ],
+                  ),
+                ),
+              ],
             const SizedBox(height: 16),
             // O-20261028-4: Hoxe es la lección. Todo lo demás —el código de
             // la escuela, el juego de tres minutos, las palabras del banco, el
@@ -487,6 +605,9 @@ class _HoxeFamiliasScreenState extends State<HoxeFamiliasScreen> {
                     if (plan != null && curso != null) ...[
                       const SizedBox(height: 14),
                       _TarxetaPalabras(
+                        proxecto02: widget.cursoId == 'curso_0_2'
+                            ? (_toca.dia.mesCalendario, _toca.dia.semana)
+                            : null,
                         plan: plan,
                         modeloDoDia: curso.modelo.dia(_toca.dia.dia),
                         nucleo: switch (widget.repository.unidadeDoMesSync(
@@ -745,7 +866,11 @@ class _TarxetaPalabras extends StatelessWidget {
     required this.nucleo,
     required this.language,
     required this.audioService,
+    this.proxecto02,
   });
+
+  /// Mes y semana del proyecto de 0-2; `null` en el resto de edades.
+  final (int, int)? proxecto02;
 
   final DailyTprPlan plan;
   final List<PezaDaUnidade> nucleo;
@@ -758,14 +883,22 @@ class _TarxetaPalabras extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final palabras = PalabrasDoDia(
-      plan: plan,
-      modeloDoDia: modeloDoDia,
-      language: language,
-      audioService: audioService,
-      paraFogar: true,
-      detalle: false,
-    );
+    // O-20261109-4 (ACOPROS): en 0-2, las del proyecto, no el banco diario.
+    final Widget palabras = proxecto02 != null
+        ? PalabrasProxecto02(
+            mesCalendario: proxecto02!.$1,
+            semana: proxecto02!.$2,
+            language: language,
+            audioService: audioService,
+          )
+        : PalabrasDoDia(
+            plan: plan,
+            modeloDoDia: modeloDoDia,
+            language: language,
+            audioService: audioService,
+            paraFogar: true,
+            detalle: false,
+          );
     return Card(
       key: const Key('tarxeta_ingles_de_hoxe_fogar'),
       margin: EdgeInsets.zero,
@@ -795,8 +928,9 @@ class _TarxetaPalabras extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 6),
-            // M3.10 (D1): sin núcleo leído, la tarjeta de siempre.
-            if (nucleo.isEmpty)
+            // M3.10 (D1): sin núcleo leído, la tarjeta de siempre. En 0-2
+            // (ACOPROS), las palabras del proyecto, a la vista.
+            if (nucleo.isEmpty || proxecto02 != null)
               palabras
             else ...[
               const SizedBox(height: 4),

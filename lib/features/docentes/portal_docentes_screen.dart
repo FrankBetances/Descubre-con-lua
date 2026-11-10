@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../core/audio/local_audio_player.dart';
+
 import '../leccions/views/calendario_de_leccions_screen.dart';
 
 import '../../../core/audio/offline_audio_service.dart';
@@ -88,7 +90,10 @@ class _PortalDocentesScreenState extends State<PortalDocentesScreen> {
     widget.onLanguageChanged?.call(lingua);
   }
 
-  void _cambiarCurso(String curso) => setState(() => _curso = curso);
+  void _cambiarCurso(String curso) => setState(() {
+        _curso = curso;
+        velocidadeVoz = velocidadeDoCurso(curso);
+      });
 
   List<Widget> _pestanas(AppLanguage lang) => [
         HoxeDocentesScreen(
@@ -149,6 +154,7 @@ class _PortalDocentesScreenState extends State<PortalDocentesScreen> {
 
   @override
   Widget build(BuildContext context) {
+    velocidadeVoz = velocidadeDoCurso(_curso);
     final lang = _language;
     return Scaffold(
       body: IndexedStack(

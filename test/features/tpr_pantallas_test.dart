@@ -149,6 +149,18 @@ void main() {
   }
 
   void compruebaPalabras(Finder dentro, DailyTprPlan plan, AppLanguage lang) {
+    // O-20261109-4 (ACOPROS): en Hoy de 0-2, casa y aula, las palabras son
+    // las de la semana del proyecto, no el banco diario.
+    final proxecto = find.descendant(
+        of: dentro,
+        matching:
+            find.byKey(const Key('palabras_proxecto_0_2'), skipOffstage: false),
+        skipOffstage: false);
+    if (proxecto.evaluate().isNotEmpty) {
+      expect(find.descendant(of: dentro, matching: find.byType(PalabrasDoDia)),
+          findsNothing);
+      return;
+    }
     expect(
       find.descendant(
           of: dentro, matching: find.text(PalabrasDoDia.resumo(plan, lang))),
@@ -324,8 +336,13 @@ void main() {
           expect(plan.reviewWords, hasLength(20));
           await abrirPliegue(tester, palabras);
           compruebaPalabras(palabras, plan, lang);
-          // As vinte, por bloques: o reto xógase así.
-          for (final p in plan.reviewWords) {
+          // As vinte, por bloques: o reto xógase así (no en 0-2, que trabaja
+          // por proyectos: O-20261109-4).
+          final cero2 = find
+              .byKey(const Key('palabras_proxecto_0_2'), skipOffstage: false)
+              .evaluate()
+              .isNotEmpty;
+          for (final p in cero2 ? const <TprWord>[] : plan.reviewWords) {
             expect(
                 find.descendant(
                     of: palabras, matching: find.textContaining(p.en)),

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../leccions/widgets/proxecto_0_2.dart';
+
 import '../../formacion/widgets/lista_de_practica.dart';
 import '../../juega/views/sesion45_screen.dart';
 import '../../juega/widgets/pasos_do_dia.dart';
@@ -488,7 +490,8 @@ class _HoxeDocentesScreenState extends State<HoxeDocentesScreen> {
                             // M3.10 (D1): el núcleo del mes delante; las cinco
                             // del día, plegadas debajo, para que la tarjeta no
                             // crezca. Sin núcleo leído, la tarjeta de siempre.
-                            if (nucleo.isNotEmpty) ...[
+                            if (nucleo.isNotEmpty &&
+                                widget.cursoId != 'curso_0_2') ...[
                               NucleoDeHoxe(
                                 nucleo: nucleo,
                                 language: lang,
@@ -498,15 +501,24 @@ class _HoxeDocentesScreenState extends State<HoxeDocentesScreen> {
                               PalabrasDoDiaPlegadas(
                                 titulo: tituloPalabras,
                                 language: lang,
-                                child: PalabrasDoDia(
-                                  plan: plan,
-                                  modeloDoDia: curso.modelo.dia(_toca.dia.dia),
-                                  semana: curso.semana(_toca.dia.mesCalendario,
-                                      _toca.dia.semana),
-                                  language: lang,
-                                  audioService: widget.audioService,
-                                  detalle: false,
-                                ),
+                                child: widget.cursoId == 'curso_0_2'
+                                    ? PalabrasProxecto02(
+                                        mesCalendario: _toca.dia.mesCalendario,
+                                        semana: _toca.dia.semana,
+                                        language: lang,
+                                        audioService: widget.audioService,
+                                      )
+                                    : PalabrasDoDia(
+                                        plan: plan,
+                                        modeloDoDia:
+                                            curso.modelo.dia(_toca.dia.dia),
+                                        semana: curso.semana(
+                                            _toca.dia.mesCalendario,
+                                            _toca.dia.semana),
+                                        language: lang,
+                                        audioService: widget.audioService,
+                                        detalle: false,
+                                      ),
                               ),
                             ] else ...[
                               Text(
@@ -519,15 +531,23 @@ class _HoxeDocentesScreenState extends State<HoxeDocentesScreen> {
                                 ),
                               ),
                               const SizedBox(height: 6),
-                              PalabrasDoDia(
-                                plan: plan,
-                                modeloDoDia: curso.modelo.dia(_toca.dia.dia),
-                                semana: curso.semana(
-                                    _toca.dia.mesCalendario, _toca.dia.semana),
-                                language: lang,
-                                audioService: widget.audioService,
-                                detalle: false,
-                              ),
+                              if (widget.cursoId == 'curso_0_2')
+                                PalabrasProxecto02(
+                                  mesCalendario: _toca.dia.mesCalendario,
+                                  semana: _toca.dia.semana,
+                                  language: lang,
+                                  audioService: widget.audioService,
+                                )
+                              else
+                                PalabrasDoDia(
+                                  plan: plan,
+                                  modeloDoDia: curso.modelo.dia(_toca.dia.dia),
+                                  semana: curso.semana(_toca.dia.mesCalendario,
+                                      _toca.dia.semana),
+                                  language: lang,
+                                  audioService: widget.audioService,
+                                  detalle: false,
+                                ),
                             ],
                             Align(
                               alignment: Alignment.centerLeft,

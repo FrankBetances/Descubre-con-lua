@@ -1,0 +1,3033 @@
+{
+ "_doc": "Xerado por tools/gen_acopros_0_2.py (O-20261109-4, ACOPROS). Non se edita a man.",
+ "fonte": "referencias/acopros/consideraciones-2026-11-09.md",
+ "proxectos": [
+  {
+   "mesCalendario": 9,
+   "proxecto": {
+    "gl": "A acollida e o vínculo afectivo co grupo",
+    "es": "La acogida y el vínculo afectivo con el grupo"
+   },
+   "steam": {
+    "id": "STEAM-0_2-09",
+    "titulo": {
+     "gl": "Mollado e seco",
+     "es": "Mojado y seco"
+    }
+   },
+   "cancion": {
+    "id": "cancion.benvida",
+    "gl": "Bos días, ola!",
+    "es": "¡Buenos días, hola!"
+   },
+   "rima": {
+    "en": "Pat-a-cake, pat-a-cake, baker's man! Bake me a cake as fast as you can.",
+    "gl": "Bate, bate palmiñas, panadeiro! Faime unha torta axiña.",
+    "es": "¡Palmas, palmitas, panadero! Hazme una torta muy deprisa."
+   },
+   "palabras": [
+    {
+     "en": "Up",
+     "gl": "Arriba",
+     "es": "Arriba",
+     "xesto": {
+      "gl": "Eleva as mans do bebé cara arriba.",
+      "es": "Eleva las manos del bebé hacia arriba."
+     },
+     "orixe": "leccion"
+    },
+    {
+     "en": "Down",
+     "gl": "Abaixo",
+     "es": "Abajo",
+     "xesto": {
+      "gl": "Baixa as mans e apóiaas nos seus muslos.",
+      "es": "Baja las manos y apóyalas en sus muslos."
+     },
+     "orixe": "leccion"
+    },
+    {
+     "en": "Water",
+     "gl": "auga",
+     "es": "agua",
+     "xesto": {
+      "gl": "",
+      "es": ""
+     },
+     "orixe": "leccion"
+    },
+    {
+     "en": "Greet",
+     "gl": "Saudar",
+     "es": "Saludar",
+     "xesto": {
+      "gl": "Inclinar a cabeza e sorrir ao bebé",
+      "es": "Inclinar la cabeza y sonreír al bebé"
+     },
+     "orixe": "leccion"
+    },
+    {
+     "en": "Clap",
+     "gl": "aplaudir, dar palmas",
+     "es": "aplaudir, dar palmas",
+     "xesto": {
+      "gl": "Guía dúas palmadas lentas.",
+      "es": "Guía dos palmadas lentas."
+     },
+     "orixe": "leccion"
+    },
+    {
+     "en": "Splash!",
+     "gl": "salpicar, bater na auga",
+     "es": "chapotear, salpicar",
+     "xesto": {
+      "gl": "Bater na auga coas mans abertas.",
+      "es": "Chapotear en el agua con las manos abiertas."
+     },
+     "orixe": "leccion"
+    },
+    {
+     "en": "Kiss goodbye",
+     "gl": "Bicar ao despedirse",
+     "es": "Besar al despedirse",
+     "xesto": {
+      "gl": "Mandar un bico coa man",
+      "es": "Mandar un beso con la mano"
+     },
+     "orixe": "leccion"
+    },
+    {
+     "en": "Boat",
+     "gl": "barco",
+     "es": "barco",
+     "xesto": {
+      "gl": "",
+      "es": ""
+     },
+     "orixe": "leccion"
+    },
+    {
+     "en": "Beam",
+     "gl": "Sorrir de orella a orella",
+     "es": "Sonreír de oreja a oreja",
+     "xesto": {
+      "gl": "Sorrir moi grande ao bebé",
+      "es": "Sonreír muy grande al bebé"
+     },
+     "orixe": "leccion"
+    },
+    {
+     "en": "Wet",
+     "gl": "mollado",
+     "es": "mojado",
+     "xesto": {
+      "gl": "",
+      "es": ""
+     },
+     "orixe": "leccion"
+    },
+    {
+     "en": "Change",
+     "gl": "Cambiar",
+     "es": "Cambiar",
+     "xesto": {
+      "gl": "Cambiar o cueiro contando «un, dous»",
+      "es": "Cambiar el pañal contando «uno, dos»"
+     },
+     "orixe": "leccion"
+    },
+    {
+     "en": "Lift",
+     "gl": "Erguer",
+     "es": "Alzar",
+     "xesto": {
+      "gl": "Erguer o bebé por riba da cabeza",
+      "es": "Alzar al bebé por encima de la cabeza"
+     },
+     "orixe": "leccion"
+    },
+    {
+     "en": "Nursery",
+     "gl": "Escola infantil",
+     "es": "Escuela infantil",
+     "xesto": {
+      "gl": "Sinalar a porta da escola ao chegar",
+      "es": "Señalar la puerta de la escuela al llegar"
+     },
+     "orixe": "tpr"
+    },
+    {
+     "en": "Cot",
+     "gl": "Berce",
+     "es": "Cuna",
+     "xesto": {
+      "gl": "Pousar o bebé no berce con coidado",
+      "es": "Dejar al bebé en la cuna con cuidado"
+     },
+     "orixe": "tpr"
+    },
+    {
+     "en": "Nappy",
+     "gl": "Cueiro",
+     "es": "Pañal",
+     "xesto": {
+      "gl": "Palmear suave o cueiro ao cambialo",
+      "es": "Dar palmaditas suaves al pañal al cambiarlo"
+     },
+     "orixe": "tpr"
+    },
+    {
+     "en": "Bib",
+     "gl": "Babeiro",
+     "es": "Babero",
+     "xesto": {
+      "gl": "Atar o babeiro ao pescozo amodo",
+      "es": "Atar el babero al cuello despacio"
+     },
+     "orixe": "tpr"
+    },
+    {
+     "en": "Dummy",
+     "gl": "Chupete",
+     "es": "Chupete",
+     "xesto": {
+      "gl": "Achegar o chupete e retiralo xogando",
+      "es": "Acercar el chupete y retirarlo jugando"
+     },
+     "orixe": "tpr"
+    },
+    {
+     "en": "Lap",
+     "gl": "Colo",
+     "es": "Regazo",
+     "xesto": {
+      "gl": "Sentar o bebé no colo",
+      "es": "Sentar al bebé en el regazo"
+     },
+     "orixe": "tpr"
+    },
+    {
+     "en": "Coat hook",
+     "gl": "Colgadoiro",
+     "es": "Perchero",
+     "xesto": {
+      "gl": "Colgar a chaqueta no colgadoiro xuntos",
+      "es": "Colgar la chaqueta en el perchero juntos"
+     },
+     "orixe": "tpr"
+    },
+    {
+     "en": "Grandad",
+     "gl": "Avó",
+     "es": "Abuelo",
+     "xesto": {
+      "gl": "Sinalar a foto do avó",
+      "es": "Señalar la foto del abuelo"
+     },
+     "orixe": "tpr"
+    }
+   ],
+   "semanas": [
+    {
+     "semana": 1,
+     "fase": {
+      "gl": "Descubrimos: as primeiras palabras e a canción",
+      "es": "Descubrimos: las primeras palabras y la canción"
+     },
+     "palabras": [
+      "Up",
+      "Down",
+      "Water",
+      "Greet",
+      "Clap"
+     ]
+    },
+    {
+     "semana": 2,
+     "fase": {
+      "gl": "Xogamos coas palabras e coa canción",
+      "es": "Jugamos con las palabras y con la canción"
+     },
+     "palabras": [
+      "Splash!",
+      "Kiss goodbye",
+      "Boat",
+      "Beam",
+      "Wet"
+     ]
+    },
+    {
+     "semana": 3,
+     "fase": {
+      "gl": "A rima tradicional, coas palabras do tema",
+      "es": "La rima tradicional, con las palabras del tema"
+     },
+     "palabras": [
+      "Change",
+      "Lift",
+      "Nursery",
+      "Cot",
+      "Nappy"
+     ]
+    },
+    {
+     "semana": 4,
+     "fase": {
+      "gl": "Repasamos todo o proxecto",
+      "es": "Repasamos todo el proyecto"
+     },
+     "palabras": [
+      "Bib",
+      "Dummy",
+      "Lap",
+      "Coat hook",
+      "Grandad"
+     ]
+    }
+   ],
+   "comoFalar": [
+    "Kiss goodbye",
+    "Coat hook"
+   ],
+   "xaSabe": [],
+   "guia": {
+    "gl": "Canta «Bos días, ola!» co xesto. Repasa as palabras do proxecto, unha a unha, mentres xogades.",
+    "es": "Canta «¡Buenos días, hola!» con el gesto. Repasa las palabras del proyecto, una a una, mientras jugáis."
+   }
+  },
+  {
+   "mesCalendario": 10,
+   "proxecto": {
+    "gl": "A conciencia do propio corpo e a propiocepción",
+    "es": "La conciencia del propio cuerpo y la propiocepción"
+   },
+   "steam": {
+    "id": "STEAM-0_2-10",
+    "titulo": {
+     "gl": "A música da auga",
+     "es": "La música del agua"
+    }
+   },
+   "cancion": {
+    "id": "cancion.corpo",
+    "gl": "Cabeza, ombreiros, xeonllos e pés",
+    "es": "Cabeza, hombros, rodillas y pies"
+   },
+   "rima": {
+    "en": "Head, shoulders, knees and toes, knees and toes.",
+    "gl": "Cabeza, ombreiros, xeonllos e pés.",
+    "es": "Cabeza, hombros, rodillas y pies."
+   },
+   "palabras": [
+    {
+     "en": "Head",
+     "gl": "Cabeza",
+     "es": "Cabeza",
+     "xesto": {
+      "gl": "Roza suavemente a coroniña.",
+      "es": "Roza suavemente la coronilla."
+     },
+     "orixe": "leccion"
+    },
+    {
+     "en": "Tummy",
+     "gl": "Barriga",
+     "es": "Barriga",
+     "xesto": {
+      "gl": "Acaricia a barriga con movementos circulares.",
+      "es": "Acaricia la tripita con movimientos circulares."
+     },
+     "orixe": "leccion"
+    },
+    {
+     "en": "Stop!",
+     "gl": "parar",
+     "es": "parar",
+     "xesto": {
+      "gl": "Quedar quieto de golpe, coas mans no alto.",
+      "es": "Quedarse quieto de golpe, con las manos en alto."
+     },
+     "orixe": "leccion"
+    },
+    {
+     "en": "Pat-a-cake",
+     "gl": "Bater palmiñas",
+     "es": "Palmitas",
+     "xesto": {
+      "gl": "Bater palmiñas co bebé",
+      "es": "Hacer palmitas con el bebé"
+     },
+     "orixe": "leccion"
+    },
+    {
+     "en": "Toes",
+     "gl": "Dedos dos pés",
+     "es": "Dedos de los pies",
+     "xesto": {
+      "gl": "Cóxegas lixeiras nos dedos dos pés.",
+      "es": "Leve cosquilleo en los dedos de los pies."
+     },
+     "orixe": "leccion"
+    },
+    {
+     "en": "Tiny toes",
+     "gl": "Dedos pequenos dos pés",
+     "es": "Deditos pequeños",
+     "xesto": {
+      "gl": "Contar os dedos dos pés",
+      "es": "Contar los deditos de los pies"
+     },
+     "orixe": "leccion"
+    },
+    {
+     "en": "Fish!",
+     "gl": "peixe",
+     "es": "pez",
+     "xesto": {
+      "gl": "Nadar cos brazos estirados, imitando o camiño dun peixe.",
+      "es": "Nadar con los brazos estirados, imitando el recorrido de un pez."
+     },
+     "orixe": "leccion"
+    },
+    {
+     "en": "Caress",
+     "gl": "Acariñar",
+     "es": "Acariciar",
+     "xesto": {
+      "gl": "Pasar a man moi amodo polo brazo",
+      "es": "Pasar la mano muy despacio por el brazo"
+     },
+     "orixe": "leccion"
+    },
+    {
+     "en": "Make faces",
+     "gl": "Facer carantoñas",
+     "es": "Hacer muecas",
+     "xesto": {
+      "gl": "Facer caras divertidas no espello",
+      "es": "Hacer caras divertidas en el espejo"
+     },
+     "orixe": "leccion"
+    },
+    {
+     "en": "Copy",
+     "gl": "Imitar",
+     "es": "Imitar",
+     "xesto": {
+      "gl": "Repetir o xesto que fai o bebé",
+      "es": "Repetir el gesto que hace el bebé"
+     },
+     "orixe": "leccion"
+    },
+    {
+     "en": "Grasp",
+     "gl": "Agarrar",
+     "es": "Agarrar",
+     "xesto": {
+      "gl": "Deixar que o bebé agarre o dedo",
+      "es": "Dejar que el bebé agarre el dedo"
+     },
+     "orixe": "leccion"
+    },
+    {
+     "en": "Let go",
+     "gl": "Soltar",
+     "es": "Soltar",
+     "xesto": {
+      "gl": "Abrir a man e soltar o xoguete",
+      "es": "Abrir la mano y soltar el juguete"
+     },
+     "orixe": "leccion"
+    },
+    {
+     "en": "Forehead",
+     "gl": "Fronte",
+     "es": "Frente",
+     "xesto": {
+      "gl": "Bicar a fronte do bebé",
+      "es": "Besar la frente del bebé"
+     },
+     "orixe": "tpr"
+    },
+    {
+     "en": "Eyebrows",
+     "gl": "Cellas",
+     "es": "Cejas",
+     "xesto": {
+      "gl": "Pasar o dedo polas cellas",
+      "es": "Pasar el dedo por las cejas"
+     },
+     "orixe": "tpr"
+    },
+    {
+     "en": "Lips",
+     "gl": "Beizos",
+     "es": "Labios",
+     "xesto": {
+      "gl": "Tocar os beizos cun dedo",
+      "es": "Tocar los labios con un dedo"
+     },
+     "orixe": "tpr"
+    },
+    {
+     "en": "Toenails",
+     "gl": "Unllas dos pés",
+     "es": "Uñas de los pies",
+     "xesto": {
+      "gl": "Contar as unllas dos pés",
+      "es": "Contar las uñas de los pies"
+     },
+     "orixe": "tpr"
+    },
+    {
+     "en": "Palm",
+     "gl": "Palma",
+     "es": "Palma",
+     "xesto": {
+      "gl": "Facer cóxegas na palma da man",
+      "es": "Hacer cosquillas en la palma de la mano"
+     },
+     "orixe": "tpr"
+    },
+    {
+     "en": "Wrist",
+     "gl": "Boneca",
+     "es": "Muñeca",
+     "xesto": {
+      "gl": "Rodear a boneca cos dedos",
+      "es": "Rodear la muñeca con los dedos"
+     },
+     "orixe": "tpr"
+    },
+    {
+     "en": "Massage",
+     "gl": "Masaxe",
+     "es": "Masaje",
+     "xesto": {
+      "gl": "Facer masaxe suave nas pernas",
+      "es": "Dar un masaje suave en las piernas"
+     },
+     "orixe": "tpr"
+    },
+    {
+     "en": "Baby oil",
+     "gl": "Aceite de bebé",
+     "es": "Aceite de bebé",
+     "xesto": {
+      "gl": "Fregar as mans con aceite",
+      "es": "Frotar las manos con aceite"
+     },
+     "orixe": "tpr"
+    }
+   ],
+   "semanas": [
+    {
+     "semana": 1,
+     "fase": {
+      "gl": "Descubrimos: as primeiras palabras e a canción",
+      "es": "Descubrimos: las primeras palabras y la canción"
+     },
+     "palabras": [
+      "Head",
+      "Tummy",
+      "Stop!",
+      "Pat-a-cake",
+      "Toes"
+     ]
+    },
+    {
+     "semana": 2,
+     "fase": {
+      "gl": "Xogamos coas palabras e coa canción",
+      "es": "Jugamos con las palabras y con la canción"
+     },
+     "palabras": [
+      "Tiny toes",
+      "Fish!",
+      "Caress",
+      "Make faces",
+      "Copy"
+     ]
+    },
+    {
+     "semana": 3,
+     "fase": {
+      "gl": "A rima tradicional, coas palabras do tema",
+      "es": "La rima tradicional, con las palabras del tema"
+     },
+     "palabras": [
+      "Grasp",
+      "Let go",
+      "Forehead",
+      "Eyebrows",
+      "Lips"
+     ]
+    },
+    {
+     "semana": 4,
+     "fase": {
+      "gl": "Repasamos todo o proxecto",
+      "es": "Repasamos todo el proyecto"
+     },
+     "palabras": [
+      "Toenails",
+      "Palm",
+      "Wrist",
+      "Massage",
+      "Baby oil"
+     ]
+    }
+   ],
+   "comoFalar": [
+    "Tiny toes",
+    "Make faces",
+    "Let go",
+    "Baby oil"
+   ],
+   "xaSabe": [
+    "Up",
+    "Down",
+    "Water",
+    "Greet",
+    "Clap",
+    "Splash!",
+    "Boat",
+    "Beam"
+   ],
+   "guia": {
+    "gl": "Canta «Cabeza, ombreiros, xeonllos e pés» co xesto. Repasa as palabras do proxecto, unha a unha, mentres xogades.",
+    "es": "Canta «Cabeza, hombros, rodillas y pies» con el gesto. Repasa las palabras del proyecto, una a una, mientras jugáis."
+   }
+  },
+  {
+   "mesCalendario": 11,
+   "proxecto": {
+    "gl": "O outono galego e as texturas do bosque",
+    "es": "El otoño gallego y las texturas del bosque"
+   },
+   "steam": {
+    "id": "STEAM-0_2-11",
+    "titulo": {
+     "gl": "A folla baila, a pedra cae",
+     "es": "La hoja baila, la piedra cae"
+    }
+   },
+   "cancion": {
+    "id": "cancion.follas",
+    "gl": "Follas que caen",
+    "es": "Hojas que caen"
+   },
+   "rima": {
+    "en": "Round and round the garden, like a teddy bear.",
+    "gl": "Dando voltas polo xardín, coma un osiño.",
+    "es": "Dando vueltas por el jardín, como un osito."
+   },
+   "palabras": [
+    {
+     "en": "Crunch, crunch!",
+     "gl": "Cranch, cranch!",
+     "es": "¡Cranch, cranch!",
+     "xesto": {
+      "gl": "Apertar unha folla seca xunto ao oído do neno.",
+      "es": "Apretar una hoja seca junto al oído del niño."
+     },
+     "orixe": "leccion"
+    },
+    {
+     "en": "Leaf",
+     "gl": "folla",
+     "es": "hoja",
+     "xesto": {
+      "gl": "",
+      "es": ""
+     },
+     "orixe": "leccion"
+    },
+    {
+     "en": "Feel this!",
+     "gl": "Toca isto!",
+     "es": "¡Toca esto!",
+     "xesto": {
+      "gl": "Achegar un obxecto á man",
+      "es": "Acercar un objeto a la mano"
+     },
+     "orixe": "leccion"
+    },
+    {
+     "en": "Stone",
+     "gl": "pedra",
+     "es": "piedra",
+     "xesto": {
+      "gl": "",
+      "es": ""
+     },
+     "orixe": "leccion"
+    },
+    {
+     "en": "Pick up!",
+     "gl": "Apañar",
+     "es": "Recoger",
+     "xesto": {
+      "gl": "Agacharse ata o chan para coller as cousas.",
+      "es": "Agacharse hasta el suelo para recoger las cosas."
+     },
+     "orixe": "leccion"
+    },
+    {
+     "en": "Roasting pan",
+     "gl": "Tixola de asar",
+     "es": "Sartén de asar",
+     "xesto": {
+      "gl": "Amosar a tixola de lonxe",
+      "es": "Enseñar la sartén de lejos"
+     },
+     "orixe": "leccion"
+    },
+    {
+     "en": "Smoke",
+     "gl": "Fume",
+     "es": "Humo",
+     "xesto": {
+      "gl": "Subir as mans coma o fume",
+      "es": "Subir las manos como el humo"
+     },
+     "orixe": "leccion"
+    },
+    {
+     "en": "Drop!",
+     "gl": "Pinga",
+     "es": "Gota",
+     "xesto": {
+      "gl": "Abrir as mans á altura dos ombros e deixar que a cousa caia con forza ao chan.",
+      "es": "Abrir las manos a la altura de los hombros y dejar que la cosa caiga con fuerza al suelo."
+     },
+     "orixe": "leccion"
+    },
+    {
+     "en": "Sensory bag",
+     "gl": "Bolsa sensorial",
+     "es": "Bolsa sensorial",
+     "xesto": {
+      "gl": "Premer a bolsa sensorial",
+      "es": "Apretar la bolsa sensorial"
+     },
+     "orixe": "leccion"
+    },
+    {
+     "en": "Jelly",
+     "gl": "Xelatina",
+     "es": "Gelatina",
+     "xesto": {
+      "gl": "Tocar a xelatina que treme",
+      "es": "Tocar la gelatina que tiembla"
+     },
+     "orixe": "leccion"
+    },
+    {
+     "en": "Chestnut husk",
+     "gl": "Ourizo",
+     "es": "Erizo de castaña",
+     "xesto": {
+      "gl": "Amosar o ourizo sen tocalo",
+      "es": "Enseñar el erizo sin tocarlo"
+     },
+     "orixe": "tpr"
+    },
+    {
+     "en": "Moss",
+     "gl": "Musgo",
+     "es": "Musgo",
+     "xesto": {
+      "gl": "Acariñar o musgo co bebé",
+      "es": "Acariciar el musgo con el bebé"
+     },
+     "orixe": "tpr"
+    },
+    {
+     "en": "Tree bark",
+     "gl": "Cortiza",
+     "es": "Corteza",
+     "xesto": {
+      "gl": "Pasar a man pola cortiza",
+      "es": "Pasar la mano por la corteza"
+     },
+     "orixe": "tpr"
+    },
+    {
+     "en": "Twig",
+     "gl": "Ramiña",
+     "es": "Ramita",
+     "xesto": {
+      "gl": "Dar unha ramiña pequena",
+      "es": "Dar una ramita pequeña"
+     },
+     "orixe": "tpr"
+    },
+    {
+     "en": "Pebble",
+     "gl": "Pedriña",
+     "es": "Piedrecita",
+     "xesto": {
+      "gl": "Poñer unha pedriña na man",
+      "es": "Poner una piedrecita en la mano"
+     },
+     "orixe": "tpr"
+    },
+    {
+     "en": "Wool",
+     "gl": "La",
+     "es": "Lana",
+     "xesto": {
+      "gl": "Acariñar a la dunha manta",
+      "es": "Acariciar la lana de una manta"
+     },
+     "orixe": "tpr"
+    },
+    {
+     "en": "Cotton",
+     "gl": "Algodón",
+     "es": "Algodón",
+     "xesto": {
+      "gl": "Pasar un algodón pola meixela",
+      "es": "Pasar un algodón por la mejilla"
+     },
+     "orixe": "tpr"
+    },
+    {
+     "en": "Leaf pile",
+     "gl": "Morea de follas",
+     "es": "Montón de hojas",
+     "xesto": {
+      "gl": "Facer unha morea de follas",
+      "es": "Hacer un montón de hojas"
+     },
+     "orixe": "tpr"
+    },
+    {
+     "en": "Garden",
+     "gl": "Xardín",
+     "es": "Jardín",
+     "xesto": {
+      "gl": "Saír ao xardín da escola",
+      "es": "Salir al jardín de la escuela"
+     },
+     "orixe": "tpr"
+    },
+    {
+     "en": "Rake",
+     "gl": "Angazo",
+     "es": "Rastrillo",
+     "xesto": {
+      "gl": "Pasar un angazo de xoguete",
+      "es": "Pasar un rastrillo de juguete"
+     },
+     "orixe": "tpr"
+    }
+   ],
+   "semanas": [
+    {
+     "semana": 1,
+     "fase": {
+      "gl": "Descubrimos: as primeiras palabras e a canción",
+      "es": "Descubrimos: las primeras palabras y la canción"
+     },
+     "palabras": [
+      "Crunch, crunch!",
+      "Leaf",
+      "Feel this!",
+      "Stone",
+      "Pick up!"
+     ]
+    },
+    {
+     "semana": 2,
+     "fase": {
+      "gl": "Xogamos coas palabras e coa canción",
+      "es": "Jugamos con las palabras y con la canción"
+     },
+     "palabras": [
+      "Roasting pan",
+      "Smoke",
+      "Drop!",
+      "Sensory bag",
+      "Jelly"
+     ]
+    },
+    {
+     "semana": 3,
+     "fase": {
+      "gl": "A rima tradicional, coas palabras do tema",
+      "es": "La rima tradicional, con las palabras del tema"
+     },
+     "palabras": [
+      "Chestnut husk",
+      "Moss",
+      "Tree bark",
+      "Twig",
+      "Pebble"
+     ]
+    },
+    {
+     "semana": 4,
+     "fase": {
+      "gl": "Repasamos todo o proxecto",
+      "es": "Repasamos todo el proyecto"
+     },
+     "palabras": [
+      "Wool",
+      "Cotton",
+      "Leaf pile",
+      "Garden",
+      "Rake"
+     ]
+    }
+   ],
+   "comoFalar": [
+    "Crunch, crunch!",
+    "Feel this!",
+    "Pick up!",
+    "Roasting pan"
+   ],
+   "xaSabe": [
+    "Head",
+    "Tummy",
+    "Stop!",
+    "Pat-a-cake",
+    "Toes",
+    "Fish!",
+    "Caress",
+    "Copy"
+   ],
+   "guia": {
+    "gl": "Canta «Follas que caen» co xesto. Repasa as palabras do proxecto, unha a unha, mentres xogades.",
+    "es": "Canta «Hojas que caen» con el gesto. Repasa las palabras del proyecto, una a una, mientras jugáis."
+   }
+  },
+  {
+   "mesCalendario": 12,
+   "proxecto": {
+    "gl": "O contraste entre o frío de fóra e a calor do colo",
+    "es": "El contraste entre el frío de fuera y el calor del regazo"
+   },
+   "steam": {
+    "id": "STEAM-0_2-12",
+    "titulo": {
+     "gl": "Follas ao trasluz",
+     "es": "Hojas a contraluz"
+    }
+   },
+   "cancion": {
+    "id": "cancion.inverno",
+    "gl": "Soa o cascabel",
+    "es": "Suena el cascabel"
+   },
+   "rima": {
+    "en": "Twinkle, twinkle, little star, how I wonder what you are.",
+    "gl": "Brilla, brilla, estreliña, que serás, pregunto eu.",
+    "es": "Brilla, brilla, estrellita, qué serás, me pregunto."
+   },
+   "palabras": [
+    {
+     "en": "Big!",
+     "gl": "grande",
+     "es": "grande",
+     "xesto": {
+      "gl": "Estirar os brazos facendo un círculo grande co corpo.",
+      "es": "Estirar los brazos haciendo un círculo grande con el cuerpo."
+     },
+     "orixe": "leccion"
+    },
+    {
+     "en": "Jingle bell",
+     "gl": "Cascabel",
+     "es": "Cascabel",
+     "xesto": {
+      "gl": "Axitar un cascabel",
+      "es": "Agitar un cascabel"
+     },
+     "orixe": "leccion"
+    },
+    {
+     "en": "Small!",
+     "gl": "pequeno",
+     "es": "pequeño",
+     "xesto": {
+      "gl": "Encollerse no chan coma unha bóla.",
+      "es": "Encogerse en el suelo como una bola."
+     },
+     "orixe": "leccion"
+    },
+    {
+     "en": "Big hug",
+     "gl": "Aperta grande",
+     "es": "Abrazo grande",
+     "xesto": {
+      "gl": "Dar unha aperta grande",
+      "es": "Dar un abrazo grande"
+     },
+     "orixe": "leccion"
+    },
+    {
+     "en": "Fairy lights",
+     "gl": "Luciñas",
+     "es": "Lucecitas",
+     "xesto": {
+      "gl": "Sinalar as luciñas que brillan",
+      "es": "Señalar las lucecitas que brillan"
+     },
+     "orixe": "leccion"
+    },
+    {
+     "en": "Torch",
+     "gl": "Lanterna",
+     "es": "Linterna",
+     "xesto": {
+      "gl": "Acender e apagar a lanterna",
+      "es": "Encender y apagar la linterna"
+     },
+     "orixe": "leccion"
+    },
+    {
+     "en": "Present",
+     "gl": "Agasallo",
+     "es": "Regalo",
+     "xesto": {
+      "gl": "Dar un paquete pequeno",
+      "es": "Dar un paquete pequeño"
+     },
+     "orixe": "leccion"
+    },
+    {
+     "en": "Wrapping paper",
+     "gl": "Papel de agasallo",
+     "es": "Papel de regalo",
+     "xesto": {
+      "gl": "Engurrar papel de agasallo",
+      "es": "Arrugar papel de regalo"
+     },
+     "orixe": "leccion"
+    },
+    {
+     "en": "Stocking",
+     "gl": "Calcetín de Nadal",
+     "es": "Calcetín de Navidad",
+     "xesto": {
+      "gl": "Meter a man no calcetín",
+      "es": "Meter la mano en el calcetín"
+     },
+     "orixe": "leccion"
+    },
+    {
+     "en": "Mittens",
+     "gl": "Manoplas",
+     "es": "Manoplas",
+     "xesto": {
+      "gl": "Poñer as luvas ao bebé",
+      "es": "Poner las manoplas al bebé"
+     },
+     "orixe": "tpr"
+    },
+    {
+     "en": "Snowsuit",
+     "gl": "Buzo de neve",
+     "es": "Buzo de nieve",
+     "xesto": {
+      "gl": "Meter as pernas no buzo",
+      "es": "Meter las piernas en el buzo"
+     },
+     "orixe": "tpr"
+    },
+    {
+     "en": "Hood",
+     "gl": "Carapucha",
+     "es": "Capucha",
+     "xesto": {
+      "gl": "Poñer a carapucha e sorrir",
+      "es": "Poner la capucha y sonreír"
+     },
+     "orixe": "tpr"
+    },
+    {
+     "en": "Frost",
+     "gl": "Xeada",
+     "es": "Escarcha",
+     "xesto": {
+      "gl": "Sinalar a xeada na fiestra",
+      "es": "Señalar la escarcha en la ventana"
+     },
+     "orixe": "tpr"
+    },
+    {
+     "en": "Fireplace",
+     "gl": "Lareira",
+     "es": "Chimenea",
+     "xesto": {
+      "gl": "Sinalar a lareira de lonxe",
+      "es": "Señalar la chimenea de lejos"
+     },
+     "orixe": "tpr"
+    },
+    {
+     "en": "Breath",
+     "gl": "Alento",
+     "es": "Aliento",
+     "xesto": {
+      "gl": "Botar o alento no cristal",
+      "es": "Echar el aliento en el cristal"
+     },
+     "orixe": "tpr"
+    },
+    {
+     "en": "Quilt",
+     "gl": "Edredón",
+     "es": "Edredón",
+     "xesto": {
+      "gl": "Tapar o bebé co edredón",
+      "es": "Tapar al bebé con el edredón"
+     },
+     "orixe": "tpr"
+    },
+    {
+     "en": "Cushion",
+     "gl": "Coxín",
+     "es": "Cojín",
+     "xesto": {
+      "gl": "Apoiar a cabeza nun coxín",
+      "es": "Apoyar la cabeza en un cojín"
+     },
+     "orixe": "tpr"
+    },
+    {
+     "en": "Slippers",
+     "gl": "Zapatillas",
+     "es": "Zapatillas",
+     "xesto": {
+      "gl": "Poñer as zapatillas ao bebé",
+      "es": "Poner las zapatillas al bebé"
+     },
+     "orixe": "tpr"
+    },
+    {
+     "en": "Cardigan",
+     "gl": "Chaqueta de punto",
+     "es": "Rebeca",
+     "xesto": {
+      "gl": "Abotoar a chaqueta de punto",
+      "es": "Abotonar la rebeca"
+     },
+     "orixe": "tpr"
+    },
+    {
+     "en": "Warm milk",
+     "gl": "Leite morno",
+     "es": "Leche templada",
+     "xesto": {
+      "gl": "Achegar o biberón morno",
+      "es": "Acercar el biberón templado"
+     },
+     "orixe": "tpr"
+    }
+   ],
+   "semanas": [
+    {
+     "semana": 1,
+     "fase": {
+      "gl": "Descubrimos: as primeiras palabras e a canción",
+      "es": "Descubrimos: las primeras palabras y la canción"
+     },
+     "palabras": [
+      "Big!",
+      "Jingle bell",
+      "Small!",
+      "Big hug",
+      "Fairy lights"
+     ]
+    },
+    {
+     "semana": 2,
+     "fase": {
+      "gl": "Xogamos coas palabras e coa canción",
+      "es": "Jugamos con las palabras y con la canción"
+     },
+     "palabras": [
+      "Torch",
+      "Present",
+      "Wrapping paper",
+      "Stocking",
+      "Mittens"
+     ]
+    },
+    {
+     "semana": 3,
+     "fase": {
+      "gl": "A rima tradicional, coas palabras do tema",
+      "es": "La rima tradicional, con las palabras del tema"
+     },
+     "palabras": [
+      "Snowsuit",
+      "Hood",
+      "Frost",
+      "Fireplace",
+      "Breath"
+     ]
+    },
+    {
+     "semana": 4,
+     "fase": {
+      "gl": "Repasamos todo o proxecto",
+      "es": "Repasamos todo el proyecto"
+     },
+     "palabras": [
+      "Quilt",
+      "Cushion",
+      "Slippers",
+      "Cardigan",
+      "Warm milk"
+     ]
+    }
+   ],
+   "comoFalar": [
+    "Jingle bell",
+    "Big hug",
+    "Fairy lights",
+    "Wrapping paper"
+   ],
+   "xaSabe": [
+    "Leaf",
+    "Stone",
+    "Smoke",
+    "Drop!",
+    "Jelly",
+    "Moss",
+    "Twig",
+    "Pebble"
+   ],
+   "guia": {
+    "gl": "Canta «Soa o cascabel» co xesto. Repasa as palabras do proxecto, unha a unha, mentres xogades.",
+    "es": "Canta «Suena el cascabel» con el gesto. Repasa las palabras del proyecto, una a una, mientras jugáis."
+   }
+  },
+  {
+   "mesCalendario": 1,
+   "proxecto": {
+    "gl": "As rutinas de abrigo e a autonomía ao vestirse",
+    "es": "Las rutinas de abrigo y la autonomía al vestirse"
+   },
+   "steam": {
+    "id": "STEAM-0_2-01",
+    "titulo": {
+     "gl": "Cada cousa na súa cesta",
+     "es": "Cada cosa en su cesta"
+    }
+   },
+   "cancion": {
+    "id": "cancion.choiva",
+    "gl": "Poño o gorro, poño as botas",
+    "es": "Me pongo el gorro, me pongo las botas"
+   },
+   "rima": {
+    "en": "This is the way we put on our hat, put on our hat, put on our hat.",
+    "gl": "Así é como pomos o gorro.",
+    "es": "Así es como nos ponemos el gorro."
+   },
+   "palabras": [
+    {
+     "en": "Apple",
+     "gl": "mazá",
+     "es": "manzana",
+     "xesto": {
+      "gl": "",
+      "es": ""
+     },
+     "orixe": "leccion"
+    },
+    {
+     "en": "Stroke gently",
+     "gl": "Acariñar suave",
+     "es": "Acariciar suave",
+     "xesto": {
+      "gl": "Acariñar o peluche dunha soa dirección",
+      "es": "Acariciar el peluche en una sola dirección"
+     },
+     "orixe": "leccion"
+    },
+    {
+     "en": "Mittens",
+     "gl": "Manoplas",
+     "es": "Manoplas",
+     "xesto": {
+      "gl": "Poñer as luvas ao bebé",
+      "es": "Poner las manoplas al bebé"
+     },
+     "orixe": "leccion"
+    },
+    {
+     "en": "Bread",
+     "gl": "pan",
+     "es": "pan",
+     "xesto": {
+      "gl": "",
+      "es": ""
+     },
+     "orixe": "leccion"
+    },
+    {
+     "en": "Baa",
+     "gl": "Balar",
+     "es": "Balar",
+     "xesto": {
+      "gl": "Facer «beee» coma un año",
+      "es": "Hacer «beee» como un cordero"
+     },
+     "orixe": "leccion"
+    },
+    {
+     "en": "Eat!",
+     "gl": "comer",
+     "es": "comer",
+     "xesto": {
+      "gl": "Levar as mans á boca imitando comer con culler.",
+      "es": "Llevarse las manos a la boca imitando comer con cuchara."
+     },
+     "orixe": "leccion"
+    },
+    {
+     "en": "Tweet",
+     "gl": "Chiar",
+     "es": "Piar",
+     "xesto": {
+      "gl": "Facer «pío pío» baixiño",
+      "es": "Hacer «pío pío» bajito"
+     },
+     "orixe": "leccion"
+    },
+    {
+     "en": "Flutter",
+     "gl": "Revoar",
+     "es": "Revolotear",
+     "xesto": {
+      "gl": "Mover os dedos coma ás",
+      "es": "Mover los dedos como alas"
+     },
+     "orixe": "leccion"
+    },
+    {
+     "en": "Bite!",
+     "gl": "trabar, dar unha trabada",
+     "es": "morder, dar un mordisco",
+     "xesto": {
+      "gl": "Facer como que se dá unha trabada grande, abrindo e pechando a boca e batendo os dentes.",
+      "es": "Hacer como que se da un mordisco grande, abriendo y cerrando la boca y chocando los dientes."
+     },
+     "orixe": "leccion"
+    },
+    {
+     "en": "Shush",
+     "gl": "Mandar calar",
+     "es": "Chistar",
+     "xesto": {
+      "gl": "Facer «shh» moi suave",
+      "es": "Hacer «shh» muy suave"
+     },
+     "orixe": "leccion"
+    },
+    {
+     "en": "Kitten",
+     "gl": "Gatiño",
+     "es": "Gatito",
+     "xesto": {
+      "gl": "Acariñar un gatiño de peluche",
+      "es": "Acariciar un gatito de peluche"
+     },
+     "orixe": "tpr"
+    },
+    {
+     "en": "Puppy",
+     "gl": "Canciño",
+     "es": "Cachorro",
+     "xesto": {
+      "gl": "Acariñar un canciño de peluche",
+      "es": "Acariciar un cachorro de peluche"
+     },
+     "orixe": "tpr"
+    },
+    {
+     "en": "Paw",
+     "gl": "Pata",
+     "es": "Pata",
+     "xesto": {
+      "gl": "Amosar a man coma unha pata",
+      "es": "Enseñar la mano como una pata"
+     },
+     "orixe": "tpr"
+    },
+    {
+     "en": "Whiskers",
+     "gl": "Bigotes",
+     "es": "Bigotes",
+     "xesto": {
+      "gl": "Debuxar bigotes na cara co dedo",
+      "es": "Dibujar bigotes en la cara con el dedo"
+     },
+     "orixe": "tpr"
+    },
+    {
+     "en": "Collar",
+     "gl": "Colar",
+     "es": "Collar",
+     "xesto": {
+      "gl": "Tocar o colar do peluche",
+      "es": "Tocar el collar del peluche"
+     },
+     "orixe": "tpr"
+    },
+    {
+     "en": "Dog bowl",
+     "gl": "Cunca do can",
+     "es": "Cuenco del perro",
+     "xesto": {
+      "gl": "Amosar a cunca baleira",
+      "es": "Enseñar el cuenco vacío"
+     },
+     "orixe": "tpr"
+    },
+    {
+     "en": "Kennel",
+     "gl": "Caseta",
+     "es": "Caseta",
+     "xesto": {
+      "gl": "Facer un tellado coas mans",
+      "es": "Hacer un tejado con las manos"
+     },
+     "orixe": "tpr"
+    },
+    {
+     "en": "Lamb",
+     "gl": "Año",
+     "es": "Cordero",
+     "xesto": {
+      "gl": "Facer «beee» baixiño",
+      "es": "Hacer «beee» bajito"
+     },
+     "orixe": "tpr"
+    },
+    {
+     "en": "Chick",
+     "gl": "Pitiño",
+     "es": "Pollito",
+     "xesto": {
+      "gl": "Facer «pío pío» cos dedos",
+      "es": "Hacer «pío pío» con los dedos"
+     },
+     "orixe": "tpr"
+    },
+    {
+     "en": "Goat",
+     "gl": "Cabra",
+     "es": "Cabra",
+     "xesto": {
+      "gl": "Poñer os dedos coma cornos",
+      "es": "Poner los dedos como cuernos"
+     },
+     "orixe": "tpr"
+    }
+   ],
+   "semanas": [
+    {
+     "semana": 1,
+     "fase": {
+      "gl": "Descubrimos: as primeiras palabras e a canción",
+      "es": "Descubrimos: las primeras palabras y la canción"
+     },
+     "palabras": [
+      "Apple",
+      "Stroke gently",
+      "Mittens",
+      "Bread",
+      "Baa"
+     ]
+    },
+    {
+     "semana": 2,
+     "fase": {
+      "gl": "Xogamos coas palabras e coa canción",
+      "es": "Jugamos con las palabras y con la canción"
+     },
+     "palabras": [
+      "Eat!",
+      "Tweet",
+      "Flutter",
+      "Bite!",
+      "Shush"
+     ]
+    },
+    {
+     "semana": 3,
+     "fase": {
+      "gl": "A rima tradicional, coas palabras do tema",
+      "es": "La rima tradicional, con las palabras del tema"
+     },
+     "palabras": [
+      "Kitten",
+      "Puppy",
+      "Paw",
+      "Whiskers",
+      "Collar"
+     ]
+    },
+    {
+     "semana": 4,
+     "fase": {
+      "gl": "Repasamos todo o proxecto",
+      "es": "Repasamos todo el proyecto"
+     },
+     "palabras": [
+      "Dog bowl",
+      "Kennel",
+      "Lamb",
+      "Chick",
+      "Goat"
+     ]
+    }
+   ],
+   "comoFalar": [
+    "Stroke gently",
+    "Dog bowl"
+   ],
+   "xaSabe": [
+    "Big!",
+    "Small!",
+    "Torch",
+    "Present",
+    "Stocking",
+    "Mittens",
+    "Snowsuit",
+    "Hood"
+   ],
+   "guia": {
+    "gl": "Canta «Poño o gorro, poño as botas» co xesto. Repasa as palabras do proxecto, unha a unha, mentres xogades.",
+    "es": "Canta «Me pongo el gorro, me pongo las botas» con el gesto. Repasa las palabras del proyecto, una a una, mientras jugáis."
+   }
+  },
+  {
+   "mesCalendario": 2,
+   "proxecto": {
+    "gl": "A motricidade zoomorfa e as onomatopeas",
+    "es": "La motricidad zoomorfa y las onomatopeyas"
+   },
+   "steam": {
+    "id": "STEAM-0_2-02",
+    "titulo": {
+     "gl": "Morno e frío",
+     "es": "Templado y frío"
+    }
+   },
+   "cancion": {
+    "id": "cancion.animais",
+    "gl": "Salta a ra, voa o paxaro",
+    "es": "Salta la rana, vuela el pájaro"
+   },
+   "rima": {
+    "en": "Old MacDonald had a farm, E-I-E-I-O.",
+    "gl": "O vello MacDonald tiña unha granxa.",
+    "es": "El viejo MacDonald tenía una granja."
+   },
+   "palabras": [
+    {
+     "en": "Warm!",
+     "gl": "morno, quentiño",
+     "es": "templado, calentito",
+     "xesto": {
+      "gl": "Abrazarse o peito, coma quen está quentiño.",
+      "es": "Abrazarse el pecho, como quien está calentito."
+     },
+     "orixe": "leccion"
+    },
+    {
+     "en": "Tweet, tweet!",
+     "gl": "Pío, pío!",
+     "es": "¡Pío, pío!",
+     "xesto": {
+      "gl": "Abrir e pechar os dedos coma un bico",
+      "es": "Abrir y cerrar los dedos como un pico"
+     },
+     "orixe": "leccion"
+    },
+    {
+     "en": "Cold!",
+     "gl": "Frío, fría",
+     "es": "Frío, fría",
+     "xesto": {
+      "gl": "Fregar os brazos coas mans, coma quen ten frío.",
+      "es": "Frotarse los brazos con las manos, como quien tiene frío."
+     },
+     "orixe": "leccion"
+    },
+    {
+     "en": "Hammock",
+     "gl": "Hamaca",
+     "es": "Hamaca",
+     "xesto": {
+      "gl": "Randear o bebé nunha manta coma hamaca",
+      "es": "Mecer al bebé en una manta como hamaca"
+     },
+     "orixe": "leccion"
+    },
+    {
+     "en": "Hop along",
+     "gl": "Ir a saltiños",
+     "es": "Ir a saltitos",
+     "xesto": {
+      "gl": "Dar saltiños cos dedos",
+      "es": "Dar saltitos con los dedos"
+     },
+     "orixe": "leccion"
+    },
+    {
+     "en": "Blanket fort",
+     "gl": "Cabana de mantas",
+     "es": "Cabaña de mantas",
+     "xesto": {
+      "gl": "Facer unha cabana cunha manta",
+      "es": "Hacer una cabaña con una manta"
+     },
+     "orixe": "leccion"
+    },
+    {
+     "en": "Cardboard box",
+     "gl": "Caixa de cartón",
+     "es": "Caja de cartón",
+     "xesto": {
+      "gl": "Meter e sacar un xoguete da caixa",
+      "es": "Meter y sacar un juguete de la caja"
+     },
+     "orixe": "leccion"
+    },
+    {
+     "en": "Shaker",
+     "gl": "Axóuxere",
+     "es": "Sonajero",
+     "xesto": {
+      "gl": "Axitar o axóuxere ao ritmo",
+      "es": "Agitar el sonajero al ritmo"
+     },
+     "orixe": "leccion"
+    },
+    {
+     "en": "Xylophone",
+     "gl": "Xilófono",
+     "es": "Xilófono",
+     "xesto": {
+      "gl": "Bater nas teclas do xilófono",
+      "es": "Golpear las teclas del xilófono"
+     },
+     "orixe": "leccion"
+    },
+    {
+     "en": "Toy tambourine",
+     "gl": "Pandeireta de xoguete",
+     "es": "Pandereta de juguete",
+     "xesto": {
+      "gl": "Bater na pandeireta coa palma",
+      "es": "Golpear la pandereta con la palma"
+     },
+     "orixe": "leccion"
+    },
+    {
+     "en": "Clown nose",
+     "gl": "Nariz de pallaso",
+     "es": "Nariz de payaso",
+     "xesto": {
+      "gl": "Poñer un nariz vermello e sorrir",
+      "es": "Ponerse una nariz roja y sonreír"
+     },
+     "orixe": "tpr"
+    },
+    {
+     "en": "Silly hat",
+     "gl": "Gorro gracioso",
+     "es": "Gorro gracioso",
+     "xesto": {
+      "gl": "Poñer un gorro gracioso ao bebé",
+      "es": "Poner un gorro gracioso al bebé"
+     },
+     "orixe": "tpr"
+    },
+    {
+     "en": "Pom-pom",
+     "gl": "Pompón",
+     "es": "Pompón",
+     "xesto": {
+      "gl": "Axitar un pompón de cores",
+      "es": "Agitar un pompón de colores"
+     },
+     "orixe": "tpr"
+    },
+    {
+     "en": "Party blower",
+     "gl": "Matasogras",
+     "es": "Matasuegras",
+     "xesto": {
+      "gl": "Soprar o matasogras preto do bebé",
+      "es": "Soplar el matasuegras cerca del bebé"
+     },
+     "orixe": "tpr"
+    },
+    {
+     "en": "Streamer",
+     "gl": "Serpentina",
+     "es": "Serpentina",
+     "xesto": {
+      "gl": "Lanzar unha serpentina ao aire",
+      "es": "Lanzar una serpentina al aire"
+     },
+     "orixe": "tpr"
+    },
+    {
+     "en": "Confetti",
+     "gl": "Confeti",
+     "es": "Confeti",
+     "xesto": {
+      "gl": "Axitar un bote pechado con confeti",
+      "es": "Agitar un bote cerrado con confeti"
+     },
+     "orixe": "tpr"
+    },
+    {
+     "en": "Face paint",
+     "gl": "Pintura de cara",
+     "es": "Pintura de cara",
+     "xesto": {
+      "gl": "Pintar un punto na meixela",
+      "es": "Pintar un punto en la mejilla"
+     },
+     "orixe": "tpr"
+    },
+    {
+     "en": "Rocking horse",
+     "gl": "Cabalo de balancín",
+     "es": "Caballito balancín",
+     "xesto": {
+      "gl": "Randear no cabalo de balancín",
+      "es": "Mecerse en el caballito balancín"
+     },
+     "orixe": "tpr"
+    },
+    {
+     "en": "Seesaw",
+     "gl": "Balancín",
+     "es": "Balancín",
+     "xesto": {
+      "gl": "Subir e baixar coas mans",
+      "es": "Subir y bajar con las manos"
+     },
+     "orixe": "tpr"
+    },
+    {
+     "en": "Cradle song",
+     "gl": "Cantiga de arrolo",
+     "es": "Canción de cuna",
+     "xesto": {
+      "gl": "Cantar mentres se randea",
+      "es": "Cantar mientras se mece"
+     },
+     "orixe": "tpr"
+    }
+   ],
+   "semanas": [
+    {
+     "semana": 1,
+     "fase": {
+      "gl": "Descubrimos: as primeiras palabras e a canción",
+      "es": "Descubrimos: las primeras palabras y la canción"
+     },
+     "palabras": [
+      "Warm!",
+      "Tweet, tweet!",
+      "Cold!",
+      "Hammock",
+      "Hop along"
+     ]
+    },
+    {
+     "semana": 2,
+     "fase": {
+      "gl": "Xogamos coas palabras e coa canción",
+      "es": "Jugamos con las palabras y con la canción"
+     },
+     "palabras": [
+      "Blanket fort",
+      "Cardboard box",
+      "Shaker",
+      "Xylophone",
+      "Toy tambourine"
+     ]
+    },
+    {
+     "semana": 3,
+     "fase": {
+      "gl": "A rima tradicional, coas palabras do tema",
+      "es": "La rima tradicional, con las palabras del tema"
+     },
+     "palabras": [
+      "Clown nose",
+      "Silly hat",
+      "Pom-pom",
+      "Party blower",
+      "Streamer"
+     ]
+    },
+    {
+     "semana": 4,
+     "fase": {
+      "gl": "Repasamos todo o proxecto",
+      "es": "Repasamos todo el proyecto"
+     },
+     "palabras": [
+      "Confetti",
+      "Face paint",
+      "Rocking horse",
+      "Seesaw",
+      "Cradle song"
+     ]
+    }
+   ],
+   "comoFalar": [
+    "Tweet, tweet!",
+    "Hop along",
+    "Blanket fort",
+    "Cardboard box"
+   ],
+   "xaSabe": [
+    "Apple",
+    "Mittens",
+    "Bread",
+    "Baa",
+    "Eat!",
+    "Tweet",
+    "Flutter",
+    "Bite!"
+   ],
+   "guia": {
+    "gl": "Canta «Salta a ra, voa o paxaro» co xesto. Repasa as palabras do proxecto, unha a unha, mentres xogades.",
+    "es": "Canta «Salta la rana, vuela el pájaro» con el gesto. Repasa las palabras del proyecto, una a una, mientras jugáis."
+   }
+  },
+  {
+   "mesCalendario": 3,
+   "proxecto": {
+    "gl": "A categorización sensorial e a discriminación de cor",
+    "es": "La categorización sensorial y la discriminación de color"
+   },
+   "steam": {
+    "id": "STEAM-0_2-03",
+    "titulo": {
+     "gl": "Burbullas que voan",
+     "es": "Burbujas que vuelan"
+    }
+   },
+   "cancion": {
+    "id": "cancion.cores",
+    "gl": "Busca a cor",
+    "es": "Busca el color"
+   },
+   "rima": {
+    "en": "Ring-a-ring o' roses, a pocket full of posies.",
+    "gl": "Roda, roda de rosas, o peto cheo de flores.",
+    "es": "Corro de rosas, el bolsillo lleno de flores."
+   },
+   "palabras": [
+    {
+     "en": "Sunny yellow",
+     "gl": "Amarelo sol",
+     "es": "Amarillo sol",
+     "xesto": {
+      "gl": "Abrir as mans coma o sol",
+      "es": "Abrir las manos como el sol"
+     },
+     "orixe": "leccion"
+    },
+    {
+     "en": "Wash!",
+     "gl": "lavar",
+     "es": "lavar",
+     "xesto": {
+      "gl": "Fregar as palmas das mans facendo círculos sen parar.",
+      "es": "Frotarse las palmas de las manos haciendo círculos sin parar."
+     },
+     "orixe": "leccion"
+    },
+    {
+     "en": "Red ball",
+     "gl": "Pelota vermella",
+     "es": "Pelota roja",
+     "xesto": {
+      "gl": "Rodar a pelota vermella",
+      "es": "Rodar la pelota roja"
+     },
+     "orixe": "leccion"
+    },
+    {
+     "en": "Soap",
+     "gl": "xabón",
+     "es": "jabón",
+     "xesto": {
+      "gl": "",
+      "es": ""
+     },
+     "orixe": "leccion"
+    },
+    {
+     "en": "Honey",
+     "gl": "Mel",
+     "es": "Miel",
+     "xesto": {
+      "gl": "Amosar o bote de mel e cheiralo",
+      "es": "Mostrar el bote de miel y olerlo"
+     },
+     "orixe": "leccion"
+    },
+    {
+     "en": "Towel",
+     "gl": "toalla",
+     "es": "toalla",
+     "xesto": {
+      "gl": "",
+      "es": ""
+     },
+     "orixe": "leccion"
+    },
+    {
+     "en": "Beach ball",
+     "gl": "Pelota de praia",
+     "es": "Pelota de playa",
+     "xesto": {
+      "gl": "Rodar a pelota grande",
+      "es": "Rodar la pelota grande"
+     },
+     "orixe": "leccion"
+    },
+    {
+     "en": "Rub!",
+     "gl": "fregar, frotar",
+     "es": "frotar",
+     "xesto": {
+      "gl": "Pasar os dedos polos brazos ou polas pernas fregando.",
+      "es": "Pasar los dedos por los brazos o por las piernas frotando."
+     },
+     "orixe": "leccion"
+    },
+    {
+     "en": "Orange slice",
+     "gl": "Gallo de laranxa",
+     "es": "Gajo de naranja",
+     "xesto": {
+      "gl": "Amosar un gallo de laranxa",
+      "es": "Enseñar un gajo de naranja"
+     },
+     "orixe": "leccion"
+    },
+    {
+     "en": "Blueberry",
+     "gl": "Arando",
+     "es": "Arándano",
+     "xesto": {
+      "gl": "Esmagar un arando e amosalo",
+      "es": "Aplastar un arándano y mostrarlo"
+     },
+     "orixe": "leccion"
+    },
+    {
+     "en": "Blue cup",
+     "gl": "Vaso azul",
+     "es": "Vaso azul",
+     "xesto": {
+      "gl": "Amosar o vaso azul",
+      "es": "Enseñar el vaso azul"
+     },
+     "orixe": "tpr"
+    },
+    {
+     "en": "Yellow duck",
+     "gl": "Pato amarelo",
+     "es": "Pato amarillo",
+     "xesto": {
+      "gl": "Flotar o pato amarelo",
+      "es": "Flotar el pato amarillo"
+     },
+     "orixe": "tpr"
+    },
+    {
+     "en": "Colour card",
+     "gl": "Tarxeta de cor",
+     "es": "Tarjeta de color",
+     "xesto": {
+      "gl": "Amosar unha tarxeta de cor",
+      "es": "Enseñar una tarjeta de color"
+     },
+     "orixe": "tpr"
+    },
+    {
+     "en": "Scarves",
+     "gl": "Panos de cores",
+     "es": "Pañuelos de colores",
+     "xesto": {
+      "gl": "Lanzar os panos ao aire",
+      "es": "Lanzar los pañuelos al aire"
+     },
+     "orixe": "tpr"
+    },
+    {
+     "en": "Rainbow ribbon",
+     "gl": "Cinta de cores",
+     "es": "Cinta de colores",
+     "xesto": {
+      "gl": "Mover a cinta en ondas",
+      "es": "Mover la cinta en ondas"
+     },
+     "orixe": "tpr"
+    },
+    {
+     "en": "Stacking cups",
+     "gl": "Vasos para empillar",
+     "es": "Vasos apilables",
+     "xesto": {
+      "gl": "Empillar os vasos de cores",
+      "es": "Apilar los vasos de colores"
+     },
+     "orixe": "tpr"
+    },
+    {
+     "en": "Yoghurt",
+     "gl": "Iogur",
+     "es": "Yogur",
+     "xesto": {
+      "gl": "Dar unha culleriña de iogur",
+      "es": "Dar una cucharadita de yogur"
+     },
+     "orixe": "tpr"
+    },
+    {
+     "en": "Custard",
+     "gl": "Crema",
+     "es": "Natillas",
+     "xesto": {
+      "gl": "Mover a culler na crema",
+      "es": "Mover la cuchara en las natillas"
+     },
+     "orixe": "tpr"
+    },
+    {
+     "en": "Mashed banana",
+     "gl": "Plátano esmagado",
+     "es": "Plátano chafado",
+     "xesto": {
+      "gl": "Esmagar o plátano cun garfo",
+      "es": "Chafar el plátano con un tenedor"
+     },
+     "orixe": "tpr"
+    },
+    {
+     "en": "Biscuit",
+     "gl": "Galleta",
+     "es": "Galleta",
+     "xesto": {
+      "gl": "Partir unha galleta en dous",
+      "es": "Partir una galleta en dos"
+     },
+     "orixe": "tpr"
+    }
+   ],
+   "semanas": [
+    {
+     "semana": 1,
+     "fase": {
+      "gl": "Descubrimos: as primeiras palabras e a canción",
+      "es": "Descubrimos: las primeras palabras y la canción"
+     },
+     "palabras": [
+      "Sunny yellow",
+      "Wash!",
+      "Red ball",
+      "Soap",
+      "Honey"
+     ]
+    },
+    {
+     "semana": 2,
+     "fase": {
+      "gl": "Xogamos coas palabras e coa canción",
+      "es": "Jugamos con las palabras y con la canción"
+     },
+     "palabras": [
+      "Towel",
+      "Beach ball",
+      "Rub!",
+      "Orange slice",
+      "Blueberry"
+     ]
+    },
+    {
+     "semana": 3,
+     "fase": {
+      "gl": "A rima tradicional, coas palabras do tema",
+      "es": "La rima tradicional, con las palabras del tema"
+     },
+     "palabras": [
+      "Blue cup",
+      "Yellow duck",
+      "Colour card",
+      "Scarves",
+      "Rainbow ribbon"
+     ]
+    },
+    {
+     "semana": 4,
+     "fase": {
+      "gl": "Repasamos todo o proxecto",
+      "es": "Repasamos todo el proyecto"
+     },
+     "palabras": [
+      "Stacking cups",
+      "Yoghurt",
+      "Custard",
+      "Mashed banana",
+      "Biscuit"
+     ]
+    }
+   ],
+   "comoFalar": [
+    "Sunny yellow",
+    "Red ball",
+    "Beach ball",
+    "Orange slice"
+   ],
+   "xaSabe": [
+    "Warm!",
+    "Cold!",
+    "Hammock",
+    "Shaker",
+    "Xylophone",
+    "Pom-pom",
+    "Streamer",
+    "Confetti"
+   ],
+   "guia": {
+    "gl": "Canta «Busca a cor» co xesto. Repasa as palabras do proxecto, unha a unha, mentres xogades.",
+    "es": "Canta «Busca el color» con el gesto. Repasa las palabras del proyecto, una a una, mientras jugáis."
+   }
+  },
+  {
+   "mesCalendario": 4,
+   "proxecto": {
+    "gl": "O orballo e o espertar biolóxico da primavera",
+    "es": "El orballo y el despertar biológico de la primavera"
+   },
+   "steam": {
+    "id": "STEAM-0_2-04",
+    "titulo": {
+     "gl": "Fregar fai son",
+     "es": "Frotar hace sonido"
+    }
+   },
+   "cancion": {
+    "id": "cancion.primavera",
+    "gl": "Semente pequena",
+    "es": "Semilla pequeña"
+   },
+   "rima": {
+    "en": "Rain, rain, go away, come again another day.",
+    "gl": "Chuvia, chuvia, vaite xa, volve outro día.",
+    "es": "Lluvia, lluvia, vete ya, vuelve otro día."
+   },
+   "palabras": [
+    {
+     "en": "Soft!",
+     "gl": "suave, brando",
+     "es": "suave, blando",
+     "xesto": {
+      "gl": "Tocar as meixelas suavemente.",
+      "es": "Tocarse las mejillas suavemente."
+     },
+     "orixe": "leccion"
+    },
+    {
+     "en": "Drip, drop!",
+     "gl": "Pinga, pinga!",
+     "es": "¡Gota, gota!",
+     "xesto": {
+      "gl": "Tocar a man dúas veces",
+      "es": "Tocar la mano dos veces"
+     },
+     "orixe": "leccion"
+    },
+    {
+     "en": "Pitter-patter",
+     "gl": "Tamborilar",
+     "es": "Repiquetear",
+     "xesto": {
+      "gl": "Bater cos dedos na mesa coma a choiva",
+      "es": "Golpear con los dedos en la mesa como la lluvia"
+     },
+     "orixe": "leccion"
+    },
+    {
+     "en": "Drizzle",
+     "gl": "Orballo",
+     "es": "Llovizna",
+     "xesto": {
+      "gl": "Mover os dedos coma pingas finas",
+      "es": "Mover los dedos como gotas finas"
+     },
+     "orixe": "leccion"
+    },
+    {
+     "en": "Plant pot",
+     "gl": "Testo",
+     "es": "Maceta",
+     "xesto": {
+      "gl": "Encher o vaso con terra",
+      "es": "Llenar la maceta con tierra"
+     },
+     "orixe": "leccion"
+    },
+    {
+     "en": "Earth",
+     "gl": "Terra",
+     "es": "Tierra",
+     "xesto": {
+      "gl": "Tocar a terra coa punta dos dedos",
+      "es": "Tocar la tierra con la punta de los dedos"
+     },
+     "orixe": "leccion"
+    },
+    {
+     "en": "Bean",
+     "gl": "Feixón",
+     "es": "Judía",
+     "xesto": {
+      "gl": "Enterrar un feixón no vaso",
+      "es": "Enterrar una judía en la maceta"
+     },
+     "orixe": "leccion"
+    },
+    {
+     "en": "Finger puppet",
+     "gl": "Monicreque de dedo",
+     "es": "Títere de dedo",
+     "xesto": {
+      "gl": "Mover un monicreque no dedo",
+      "es": "Mover un títere en el dedo"
+     },
+     "orixe": "leccion"
+    },
+    {
+     "en": "Knuckles",
+     "gl": "Artellos",
+     "es": "Nudillos",
+     "xesto": {
+      "gl": "Bater amodo cos artellos",
+      "es": "Golpear despacio con los nudillos"
+     },
+     "orixe": "leccion"
+    },
+    {
+     "en": "Daisy",
+     "gl": "Margarida",
+     "es": "Margarita",
+     "xesto": {
+      "gl": "Amosar unha margarida",
+      "es": "Enseñar una margarita"
+     },
+     "orixe": "tpr"
+    },
+    {
+     "en": "Tulip",
+     "gl": "Tulipán",
+     "es": "Tulipán",
+     "xesto": {
+      "gl": "Abrir as mans coma un tulipán",
+      "es": "Abrir las manos como un tulipán"
+     },
+     "orixe": "tpr"
+    },
+    {
+     "en": "Bud",
+     "gl": "Botón de flor",
+     "es": "Capullo",
+     "xesto": {
+      "gl": "Pechar a man coma un botón",
+      "es": "Cerrar la mano como un capullo"
+     },
+     "orixe": "tpr"
+    },
+    {
+     "en": "Petal",
+     "gl": "Pétalo",
+     "es": "Pétalo",
+     "xesto": {
+      "gl": "Pasar un pétalo pola meixela",
+      "es": "Pasar un pétalo por la mejilla"
+     },
+     "orixe": "tpr"
+    },
+    {
+     "en": "Blossom",
+     "gl": "Flor de árbore",
+     "es": "Flor de árbol",
+     "xesto": {
+      "gl": "Sinalar as flores da árbore",
+      "es": "Señalar las flores del árbol"
+     },
+     "orixe": "tpr"
+    },
+    {
+     "en": "Sunbeam",
+     "gl": "Raio de sol",
+     "es": "Rayo de sol",
+     "xesto": {
+      "gl": "Pousar a man no raio de sol",
+      "es": "Posar la mano en el rayo de sol"
+     },
+     "orixe": "tpr"
+    },
+    {
+     "en": "Green shoot",
+     "gl": "Gromo",
+     "es": "Brote",
+     "xesto": {
+      "gl": "Subir un dedo dende o puño",
+      "es": "Subir un dedo desde el puño"
+     },
+     "orixe": "tpr"
+    },
+    {
+     "en": "Raindrop",
+     "gl": "Pinga",
+     "es": "Gota",
+     "xesto": {
+      "gl": "Tocar a man cun dedo coma unha pinga",
+      "es": "Tocar la mano con un dedo como una gota"
+     },
+     "orixe": "tpr"
+    },
+    {
+     "en": "Window pane",
+     "gl": "Cristal",
+     "es": "Cristal",
+     "xesto": {
+      "gl": "Seguir unha pinga no cristal",
+      "es": "Seguir una gota en el cristal"
+     },
+     "orixe": "tpr"
+    },
+    {
+     "en": "Wellies",
+     "gl": "Botas de auga",
+     "es": "Botas de agua",
+     "xesto": {
+      "gl": "Poñer as botiñas ao bebé",
+      "es": "Poner las botitas al bebé"
+     },
+     "orixe": "tpr"
+    },
+    {
+     "en": "Rain cover",
+     "gl": "Plástico do carriño",
+     "es": "Plástico del cochecito",
+     "xesto": {
+      "gl": "Tapar o carriño co plástico",
+      "es": "Tapar el cochecito con el plástico"
+     },
+     "orixe": "tpr"
+    }
+   ],
+   "semanas": [
+    {
+     "semana": 1,
+     "fase": {
+      "gl": "Descubrimos: as primeiras palabras e a canción",
+      "es": "Descubrimos: las primeras palabras y la canción"
+     },
+     "palabras": [
+      "Soft!",
+      "Drip, drop!",
+      "Pitter-patter",
+      "Drizzle",
+      "Plant pot"
+     ]
+    },
+    {
+     "semana": 2,
+     "fase": {
+      "gl": "Xogamos coas palabras e coa canción",
+      "es": "Jugamos con las palabras y con la canción"
+     },
+     "palabras": [
+      "Earth",
+      "Bean",
+      "Finger puppet",
+      "Knuckles",
+      "Daisy"
+     ]
+    },
+    {
+     "semana": 3,
+     "fase": {
+      "gl": "A rima tradicional, coas palabras do tema",
+      "es": "La rima tradicional, con las palabras del tema"
+     },
+     "palabras": [
+      "Tulip",
+      "Bud",
+      "Petal",
+      "Blossom",
+      "Sunbeam"
+     ]
+    },
+    {
+     "semana": 4,
+     "fase": {
+      "gl": "Repasamos todo o proxecto",
+      "es": "Repasamos todo el proyecto"
+     },
+     "palabras": [
+      "Green shoot",
+      "Raindrop",
+      "Window pane",
+      "Wellies",
+      "Rain cover"
+     ]
+    }
+   ],
+   "comoFalar": [
+    "Drip, drop!",
+    "Plant pot",
+    "Finger puppet",
+    "Green shoot"
+   ],
+   "xaSabe": [
+    "Wash!",
+    "Soap",
+    "Honey",
+    "Towel",
+    "Rub!",
+    "Blueberry",
+    "Scarves",
+    "Yoghurt"
+   ],
+   "guia": {
+    "gl": "Canta «Semente pequena» co xesto. Repasa as palabras do proxecto, unha a unha, mentres xogades.",
+    "es": "Canta «Semilla pequeña» con el gesto. Repasa las palabras del proyecto, una a una, mientras jugáis."
+   }
+  },
+  {
+   "mesCalendario": 5,
+   "proxecto": {
+    "gl": "Os hábitos de hixiene e o pracer de lavarse",
+    "es": "Los hábitos de higiene y el placer de lavarse"
+   },
+   "steam": {
+    "id": "STEAM-0_2-05",
+    "titulo": {
+     "gl": "Sombras de animais",
+     "es": "Sombras de animales"
+    }
+   },
+   "cancion": {
+    "id": "cancion.auga",
+    "gl": "Lava, lava as mans",
+    "es": "Lava, lava las manos"
+   },
+   "rima": {
+    "en": "This is the way we wash our hands, wash our hands, wash our hands.",
+    "gl": "Así é como lavamos as mans.",
+    "es": "Así es como nos lavamos las manos."
+   },
+   "palabras": [
+    {
+     "en": "Splish, splash!",
+     "gl": "Chis, chas!",
+     "es": "¡Chis, chas!",
+     "xesto": {
+      "gl": "Bater na auga dúas veces",
+      "es": "Golpear el agua dos veces"
+     },
+     "orixe": "leccion"
+    },
+    {
+     "en": "Dog",
+     "gl": "can",
+     "es": "perro",
+     "xesto": {
+      "gl": "",
+      "es": ""
+     },
+     "orixe": "leccion"
+    },
+    {
+     "en": "Cat!",
+     "gl": "gato",
+     "es": "gato",
+     "xesto": {
+      "gl": "Poñerse a catro patas e arquear o lombo coma un gato.",
+      "es": "Ponerse a cuatro patas y arquear el lomo como un gato."
+     },
+     "orixe": "leccion"
+    },
+    {
+     "en": "All wet!",
+     "gl": "Todo mollado!",
+     "es": "¡Todo mojado!",
+     "xesto": {
+      "gl": "Amosar as mans molladas",
+      "es": "Enseñar las manos mojadas"
+     },
+     "orixe": "leccion"
+    },
+    {
+     "en": "Run!",
+     "gl": "correr",
+     "es": "correr",
+     "xesto": {
+      "gl": "Correr levantando os xeonllos no sitio ou dando voltas en círculo.",
+      "es": "Correr levantando las rodillas en el sitio o dando vueltas en círculo."
+     },
+     "orixe": "leccion"
+    },
+    {
+     "en": "Bath time!",
+     "gl": "Hora do baño!",
+     "es": "¡Hora del baño!",
+     "xesto": {
+      "gl": "Amosar a bañeira",
+      "es": "Enseñar la bañera"
+     },
+     "orixe": "leccion"
+    },
+    {
+     "en": "Sleep!",
+     "gl": "durmir",
+     "es": "dormir",
+     "xesto": {
+      "gl": "Apoiar a cabeza nas mans xuntas, pechar os ollos e respirar fondo de mentira.",
+      "es": "Apoyar la cabeza en las manos juntas, cerrar los ojos y respirar hondo de mentira."
+     },
+     "orixe": "leccion"
+    },
+    {
+     "en": "Hand towel",
+     "gl": "Toalla de mans",
+     "es": "Toalla de manos",
+     "xesto": {
+      "gl": "Secar as mans na toalla",
+      "es": "Secar las manos en la toalla"
+     },
+     "orixe": "leccion"
+    },
+    {
+     "en": "Bubble wand",
+     "gl": "Variña de burbullas",
+     "es": "Varita de burbujas",
+     "xesto": {
+      "gl": "Soprar pola variña",
+      "es": "Soplar por la varita"
+     },
+     "orixe": "leccion"
+    },
+    {
+     "en": "Bubble mixture",
+     "gl": "Auga con xabón",
+     "es": "Agua con jabón",
+     "xesto": {
+      "gl": "Mollar a variña no bote",
+      "es": "Mojar la varita en el bote"
+     },
+     "orixe": "leccion"
+    },
+    {
+     "en": "Big bubble",
+     "gl": "Burbulla grande",
+     "es": "Burbuja grande",
+     "xesto": {
+      "gl": "Abrir os brazos coma unha burbulla",
+      "es": "Abrir los brazos como una burbuja"
+     },
+     "orixe": "leccion"
+    },
+    {
+     "en": "Paddling pool",
+     "gl": "Piscina pequena",
+     "es": "Piscina hinchable",
+     "xesto": {
+      "gl": "Meter os pés na piscina",
+      "es": "Meter los pies en la piscina"
+     },
+     "orixe": "tpr"
+    },
+    {
+     "en": "Bath toy",
+     "gl": "Xoguete de baño",
+     "es": "Juguete de baño",
+     "xesto": {
+      "gl": "Flotar un xoguete na auga",
+      "es": "Flotar un juguete en el agua"
+     },
+     "orixe": "tpr"
+    },
+    {
+     "en": "Ripples",
+     "gl": "Ondiñas",
+     "es": "Ondas pequeñas",
+     "xesto": {
+      "gl": "Mover un dedo na auga",
+      "es": "Mover un dedo en el agua"
+     },
+     "orixe": "tpr"
+    },
+    {
+     "en": "Water tray",
+     "gl": "Bandexa de auga",
+     "es": "Bandeja de agua",
+     "xesto": {
+      "gl": "Pousar as mans na bandexa",
+      "es": "Posar las manos en la bandeja"
+     },
+     "orixe": "tpr"
+    },
+    {
+     "en": "Jug",
+     "gl": "Xerra",
+     "es": "Jarra",
+     "xesto": {
+      "gl": "Encher a xerra e baleirala",
+      "es": "Llenar la jarra y vaciarla"
+     },
+     "orixe": "tpr"
+    },
+    {
+     "en": "Funnel",
+     "gl": "Funil",
+     "es": "Embudo",
+     "xesto": {
+      "gl": "Verter auga polo funil",
+      "es": "Verter agua por el embudo"
+     },
+     "orixe": "tpr"
+    },
+    {
+     "en": "Baby bath",
+     "gl": "Bañeira de bebé",
+     "es": "Bañera de bebé",
+     "xesto": {
+      "gl": "Meter o bebé na bañeira amodo",
+      "es": "Meter al bebé en la bañera despacio"
+     },
+     "orixe": "tpr"
+    },
+    {
+     "en": "Washcloth",
+     "gl": "Manopla de baño",
+     "es": "Manopla de baño",
+     "xesto": {
+      "gl": "Pasar a manopla polo brazo",
+      "es": "Pasar la manopla por el brazo"
+     },
+     "orixe": "tpr"
+    },
+    {
+     "en": "Bath towel",
+     "gl": "Toalla de baño",
+     "es": "Toalla de baño",
+     "xesto": {
+      "gl": "Envolver o bebé na toalla",
+      "es": "Envolver al bebé en la toalla"
+     },
+     "orixe": "tpr"
+    }
+   ],
+   "semanas": [
+    {
+     "semana": 1,
+     "fase": {
+      "gl": "Descubrimos: as primeiras palabras e a canción",
+      "es": "Descubrimos: las primeras palabras y la canción"
+     },
+     "palabras": [
+      "Splish, splash!",
+      "Dog",
+      "Cat!",
+      "All wet!",
+      "Run!"
+     ]
+    },
+    {
+     "semana": 2,
+     "fase": {
+      "gl": "Xogamos coas palabras e coa canción",
+      "es": "Jugamos con las palabras y con la canción"
+     },
+     "palabras": [
+      "Bath time!",
+      "Sleep!",
+      "Hand towel",
+      "Bubble wand",
+      "Bubble mixture"
+     ]
+    },
+    {
+     "semana": 3,
+     "fase": {
+      "gl": "A rima tradicional, coas palabras do tema",
+      "es": "La rima tradicional, con las palabras del tema"
+     },
+     "palabras": [
+      "Big bubble",
+      "Paddling pool",
+      "Bath toy",
+      "Ripples",
+      "Water tray"
+     ]
+    },
+    {
+     "semana": 4,
+     "fase": {
+      "gl": "Repasamos todo o proxecto",
+      "es": "Repasamos todo el proyecto"
+     },
+     "palabras": [
+      "Jug",
+      "Funnel",
+      "Baby bath",
+      "Washcloth",
+      "Bath towel"
+     ]
+    }
+   ],
+   "comoFalar": [
+    "Splish, splash!",
+    "All wet!",
+    "Bath time!",
+    "Hand towel"
+   ],
+   "xaSabe": [
+    "Soft!",
+    "Pitter-patter",
+    "Drizzle",
+    "Earth",
+    "Bean",
+    "Knuckles",
+    "Daisy",
+    "Tulip"
+   ],
+   "guia": {
+    "gl": "Canta «Lava, lava as mans» co xesto. Repasa as palabras do proxecto, unha a unha, mentres xogades.",
+    "es": "Canta «Lava, lava las manos» con el gesto. Repasa las palabras del proyecto, una a una, mientras jugáis."
+   }
+  },
+  {
+   "mesCalendario": 6,
+   "proxecto": {
+    "gl": "O Atlántico, as rías de Vigo e a despedida do curso",
+    "es": "El Atlántico, las rías de Vigo y la despedida del curso"
+   },
+   "steam": {
+    "id": "STEAM-0_2-06",
+    "titulo": {
+     "gl": "Rodar ou non rodar",
+     "es": "Rodar o no rodar"
+    }
+   },
+   "cancion": {
+    "id": "cancion.mar",
+    "gl": "As ondas da nosa ría",
+    "es": "Las olas de nuestra ría"
+   },
+   "rima": {
+    "en": "Row, row, row your boat, gently down the stream.",
+    "gl": "Rema, rema, rema o teu barco, suave río abaixo.",
+    "es": "Rema, rema, rema tu barco, suave río abajo."
+   },
+   "palabras": [
+    {
+     "en": "Ball",
+     "gl": "pelota",
+     "es": "pelota",
+     "xesto": {
+      "gl": "",
+      "es": ""
+     },
+     "orixe": "leccion"
+    },
+    {
+     "en": "Box",
+     "gl": "caixa",
+     "es": "caja",
+     "xesto": {
+      "gl": "",
+      "es": ""
+     },
+     "orixe": "leccion"
+    },
+    {
+     "en": "Hello, sea!",
+     "gl": "Ola, mar!",
+     "es": "¡Hola, mar!",
+     "xesto": {
+      "gl": "Acenar ao mar",
+      "es": "Saludar al mar"
+     },
+     "orixe": "leccion"
+    },
+    {
+     "en": "Go!",
+     "gl": "ir, adiante",
+     "es": "ir, adelante",
+     "xesto": {
+      "gl": "Botar a andar con forza, movendo os brazos.",
+      "es": "Echar a andar con fuerza, moviendo los brazos."
+     },
+     "orixe": "leccion"
+    },
+    {
+     "en": "Bye-bye, nursery!",
+     "gl": "Adeus, escola!",
+     "es": "¡Adiós, escuela!",
+     "xesto": {
+      "gl": "Acenar á porta da escola",
+      "es": "Saludar a la puerta de la escuela"
+     },
+     "orixe": "leccion"
+    },
+    {
+     "en": "Sun cream",
+     "gl": "Crema solar",
+     "es": "Crema solar",
+     "xesto": {
+      "gl": "Estender a crema no brazo",
+      "es": "Extender la crema en el brazo"
+     },
+     "orixe": "leccion"
+    },
+    {
+     "en": "Sunshade",
+     "gl": "Parasol do carriño",
+     "es": "Parasol del cochecito",
+     "xesto": {
+      "gl": "Poñer o parasol no carriño",
+      "es": "Poner el parasol en el cochecito"
+     },
+     "orixe": "leccion"
+    },
+    {
+     "en": "Roll! / Ball!",
+     "gl": "Rodar / Pelota",
+     "es": "Rodar / Pelota",
+     "xesto": {
+      "gl": "Facer rodar unha cousa polo chan coas dúas mans.",
+      "es": "Hacer rodar una cosa por el suelo con las dos manos."
+     },
+     "orixe": "leccion"
+    },
+    {
+     "en": "Memory box",
+     "gl": "Caixa dos recordos",
+     "es": "Caja de los recuerdos",
+     "xesto": {
+      "gl": "Gardar un debuxo na caixa",
+      "es": "Guardar un dibujo en la caja"
+     },
+     "orixe": "leccion"
+    },
+    {
+     "en": "Footprint",
+     "gl": "Pegada",
+     "es": "Huella",
+     "xesto": {
+      "gl": "Pisar pintura e deixar a pegada",
+      "es": "Pisar pintura y dejar la huella"
+     },
+     "orixe": "leccion"
+    },
+    {
+     "en": "Samil beach",
+     "gl": "Praia de Samil",
+     "es": "Playa de Samil",
+     "xesto": {
+      "gl": "Sinalar o mar dende a area",
+      "es": "Señalar el mar desde la arena"
+     },
+     "orixe": "tpr"
+    },
+    {
+     "en": "Seaside",
+     "gl": "Beira do mar",
+     "es": "Orilla del mar",
+     "xesto": {
+      "gl": "Achegarse á beira co bebé",
+      "es": "Acercarse a la orilla con el bebé"
+     },
+     "orixe": "tpr"
+    },
+    {
+     "en": "Tide",
+     "gl": "Marea",
+     "es": "Marea",
+     "xesto": {
+      "gl": "Mover a man adiante e atrás",
+      "es": "Mover la mano adelante y atrás"
+     },
+     "orixe": "tpr"
+    },
+    {
+     "en": "Seaweed",
+     "gl": "Algas",
+     "es": "Algas",
+     "xesto": {
+      "gl": "Tocar unha alga mollada",
+      "es": "Tocar un alga mojada"
+     },
+     "orixe": "tpr"
+    },
+    {
+     "en": "Beach towel",
+     "gl": "Toalla de praia",
+     "es": "Toalla de playa",
+     "xesto": {
+      "gl": "Tender a toalla na area",
+      "es": "Extender la toalla en la arena"
+     },
+     "orixe": "tpr"
+    },
+    {
+     "en": "Parasol",
+     "gl": "Parasol",
+     "es": "Sombrilla",
+     "xesto": {
+      "gl": "Facer sombra coa man",
+      "es": "Hacer sombra con la mano"
+     },
+     "orixe": "tpr"
+    },
+    {
+     "en": "Salty air",
+     "gl": "Aire do mar",
+     "es": "Aire del mar",
+     "xesto": {
+      "gl": "Inspirar polo nariz",
+      "es": "Inspirar por la nariz"
+     },
+     "orixe": "tpr"
+    },
+    {
+     "en": "Little fish",
+     "gl": "Peixiño",
+     "es": "Pececito",
+     "xesto": {
+      "gl": "Mover a man coma un peixiño",
+      "es": "Mover la mano como un pececito"
+     },
+     "orixe": "tpr"
+    },
+    {
+     "en": "Seahorse",
+     "gl": "Cabaliño de mar",
+     "es": "Caballito de mar",
+     "xesto": {
+      "gl": "Facer un S co dedo",
+      "es": "Hacer una S con el dedo"
+     },
+     "orixe": "tpr"
+    },
+    {
+     "en": "Jellyfish",
+     "gl": "Augamar",
+     "es": "Medusa",
+     "xesto": {
+      "gl": "Abrir e pechar a man coma unha augamar",
+      "es": "Abrir y cerrar la mano como una medusa"
+     },
+     "orixe": "tpr"
+    }
+   ],
+   "semanas": [
+    {
+     "semana": 1,
+     "fase": {
+      "gl": "Descubrimos: as primeiras palabras e a canción",
+      "es": "Descubrimos: las primeras palabras y la canción"
+     },
+     "palabras": [
+      "Ball",
+      "Box",
+      "Hello, sea!",
+      "Go!",
+      "Bye-bye, nursery!"
+     ]
+    },
+    {
+     "semana": 2,
+     "fase": {
+      "gl": "Xogamos coas palabras e coa canción",
+      "es": "Jugamos con las palabras y con la canción"
+     },
+     "palabras": [
+      "Sun cream",
+      "Sunshade",
+      "Roll! / Ball!",
+      "Memory box",
+      "Footprint"
+     ]
+    },
+    {
+     "semana": 3,
+     "fase": {
+      "gl": "A rima tradicional, coas palabras do tema",
+      "es": "La rima tradicional, con las palabras del tema"
+     },
+     "palabras": [
+      "Samil beach",
+      "Seaside",
+      "Tide",
+      "Seaweed",
+      "Beach towel"
+     ]
+    },
+    {
+     "semana": 4,
+     "fase": {
+      "gl": "Repasamos todo o proxecto",
+      "es": "Repasamos todo el proyecto"
+     },
+     "palabras": [
+      "Parasol",
+      "Salty air",
+      "Little fish",
+      "Seahorse",
+      "Jellyfish"
+     ]
+    }
+   ],
+   "comoFalar": [
+    "Hello, sea!",
+    "Bye-bye, nursery!",
+    "Sun cream",
+    "Roll! / Ball!"
+   ],
+   "xaSabe": [
+    "Dog",
+    "Cat!",
+    "Run!",
+    "Sleep!",
+    "Ripples",
+    "Jug",
+    "Funnel",
+    "Washcloth"
+   ],
+   "guia": {
+    "gl": "Canta «As ondas da nosa ría» co xesto. Repasa as palabras do proxecto, unha a unha, mentres xogades.",
+    "es": "Canta «Las olas de nuestra ría» con el gesto. Repasa las palabras del proyecto, una a una, mientras jugáis."
+   }
+  }
+ ]
+}
