@@ -830,6 +830,18 @@ def collect_locutions(content_dir: Path = CONTENT_DIR) -> list[Locution]:
                     _one(texto, "en", estilo_ingles(texto),
                          f"modelo/{clave}/{campo}", seen)
 
+    # O-20261109-4 (ACOPROS): las rimas tradicionales de 0-2, en inglés y
+    # leídas despacio; las palabras de los proyectos ya están en el corpus
+    # porque salen de la lección y del banco TPR del mes.
+    acopros = content_dir / "acopros" / "proxectos_0_2.json"
+    if acopros.exists():
+        for p in json.loads(acopros.read_text(encoding="utf-8")).get("proxectos", []):
+            rima = (p.get("rima") or {}).get("en", "")
+            if rima:
+                _one(rima, "en", estilo_ingles(rima), "acopros/rima", seen)
+            for w in p.get("palabras", []):
+                _one(w.get("en", ""), "en", estilo_ingles(w.get("en", "")), "acopros/palabra", seen)
+
     return sorted(seen.values(), key=lambda e: (e.lang, e.style, e.id))
 
 

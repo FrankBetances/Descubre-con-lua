@@ -1,12 +1,12 @@
 {
- "generatedAt": "2026-11-01T16:56:47Z",
- "entries": 37062,
+ "generatedAt": "2026-11-10T06:06:25Z",
+ "entries": 37071,
  "byStyle": {
   "slow": 5956,
-  "tutor": 31106
+  "tutor": 31115
  },
  "byLang": {
-  "en": 17148,
+  "en": 17157,
   "es": 9957,
   "gl": 9957
  },
@@ -68133,6 +68133,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_2632fd8c_57",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Twinkle, twinkle, little star, how I wonder what you are.",
+   "speech": "Twinkle, twinkle, little star, how I wonder what you are.",
+   "source": "acopros/rima",
+   "pack": false
+  },
+  {
    "id": "en_tutor_26387ef0_17",
    "lang": "en",
    "style": "tutor",
@@ -101820,6 +101829,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_7b083ed4_71",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Pat-a-cake, pat-a-cake, baker's man! Bake me a cake as fast as you can.",
+   "speech": "Pat a cake, pat a cake, baker's man! Bake me a cake as fast as you can.",
+   "source": "acopros/rima",
+   "pack": false
+  },
+  {
    "id": "en_tutor_7b170991_12",
    "lang": "en",
    "style": "tutor",
@@ -105285,6 +105303,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_836a05c8_46",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Ring-a-ring o' roses, a pocket full of posies.",
+   "speech": "Ring a ring o' roses, a pocket full of posies.",
+   "source": "acopros/rima",
+   "pack": false
+  },
+  {
    "id": "en_tutor_836c8df8_42",
    "lang": "en",
    "style": "tutor",
@@ -105804,6 +105831,15 @@
    "text": "Use a quiet voice in the library.",
    "speech": "Use a quiet voice in the library.",
    "source": "english/colocacion/col-49/naturalContext",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_8490a0a8_66",
+   "lang": "en",
+   "style": "tutor",
+   "text": "This is the way we put on our hat, put on our hat, put on our hat.",
+   "speech": "This is the way we put on our hat, put on our hat, put on our hat.",
+   "source": "acopros/rima",
    "pack": false
   },
   {
@@ -107064,6 +107100,15 @@
    "text": "Do you bring leaves home from the park?",
    "speech": "Do you bring leaves home from the park?",
    "source": "biblioteca/HIS-024",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_878e929c_36",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Old MacDonald had a farm, E-I-E-I-O.",
+   "speech": "Old MacDonald had a farm, E I E I O.",
+   "source": "acopros/rima",
    "pack": false
   },
   {
@@ -111432,6 +111477,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_923dad1e_66",
+   "lang": "en",
+   "style": "tutor",
+   "text": "This is the way we wash our hands, wash our hands, wash our hands.",
+   "speech": "This is the way we wash our hands, wash our hands, wash our hands.",
+   "source": "acopros/rima",
+   "pack": false
+  },
+  {
    "id": "en_tutor_92439e4f_56",
    "lang": "en",
    "style": "tutor",
@@ -111600,6 +111654,15 @@
    "text": "What do you think can grow from a seed?",
    "speech": "What do you think can grow from a seed?",
    "source": "microcuento.curso_5_6.07/4/casa",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_92d5b0e4_46",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Round and round the garden, like a teddy bear.",
+   "speech": "Round and round the garden, like a teddy bear.",
+   "source": "acopros/rima",
    "pack": false
   },
   {
@@ -132897,6 +132960,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_c8ce10be_48",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Row, row, row your boat, gently down the stream.",
+   "speech": "Row, row, row your boat, gently down the stream.",
+   "source": "acopros/rima",
+   "pack": false
+  },
+  {
    "id": "en_tutor_c8d547a1_29",
    "lang": "en",
    "style": "tutor",
@@ -150084,6 +150156,15 @@
    "text": "The travel agent booked our holiday.",
    "speech": "The travel agent booked our holiday.",
    "source": "corpus/1019/frase",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_f512811e_48",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Head, shoulders, knees and toes, knees and toes.",
+   "speech": "Head, shoulders, knees and toes, knees and toes.",
+   "source": "acopros/rima",
    "pack": false
   },
   {
