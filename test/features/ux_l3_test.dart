@@ -164,36 +164,23 @@ void main() {
           findsOneWidget);
     });
 
-    testWidgets('o venres, as 20 do reto soan (${lang.code})', (tester) async {
+    testWidgets(
+        'o venres en 0-2: as do proxecto, sen o reto das 20 (${lang.code})',
+        (tester) async {
+      // O-20261109-4 (ACOPROS): 0-2 no usa el banco diario ni su reto de los
+      // viernes; en «Máis para casa» salen las palabras de la semana del
+      // proyecto.
       await abrirPortal(tester, lang, agora: venres);
-      // M3.10: las del día van plegadas bajo el núcleo del mes; el reto está
-      // dentro. Desde O-20261028-4, todo eso va en «Máis para casa».
       await Pasarela.abrirMaisParaCasa(tester);
-      final abrir = find.byKey(const Key('abrir_palabras_do_dia'));
-      await tester.scrollUntilVisible(abrir, 200,
+      final tarxeta = find.byKey(const Key('tarxeta_ingles_de_hoxe_fogar'));
+      await tester.scrollUntilVisible(tarxeta, 200,
           scrollable: find.byType(Scrollable).first);
-      // Que no quede debajo de la barra de abajo, donde el toque no llega.
-      await tester.ensureVisible(abrir);
       await tester.pumpAndSettle();
-      await tester.tap(abrir);
-      await tester.pumpAndSettle();
-      final reto = find.byKey(const Key('reto_con_voz'));
-      await tester.scrollUntilVisible(reto, 200,
-          scrollable: find.byType(Scrollable).first);
-      expect(reto, findsOneWidget);
-      // Veinte palabras, cada una con su botón de escuchar.
-      final palabras = p.programa
-          .curso('curso_0_2')!
-          .planDoDia(10, 1, 5)!
-          .reviewWords
-          .map((w) => w.en)
-          .toList();
-      expect(palabras, hasLength(20));
-      for (final en in palabras) {
-        expect(
-            find.descendant(of: reto, matching: find.text(en)), findsOneWidget,
-            reason: en);
-      }
+      expect(
+          find.byKey(const Key('palabras_proxecto_0_2'), skipOffstage: false),
+          findsOneWidget);
+      expect(find.byKey(const Key('reto_con_voz'), skipOffstage: false),
+          findsNothing);
     });
 
     testWidgets('fin de semana: o xogo do luns, sen marcalo (${lang.code})',

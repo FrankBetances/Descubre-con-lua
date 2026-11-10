@@ -97,7 +97,9 @@ class Proxectos02 {
         Proxecto02(
           mesCalendario: p['mesCalendario'] as int,
           titulo: _t(p['proxecto']),
-          steam: p['steam'] is Map ? _t(p['steam']) : null,
+          steam: p['steam'] is Map
+              ? _t((p['steam'] as Map)['titulo'] ?? p['steam'])
+              : null,
           cancion: _t(p['cancion']),
           rimaEn: (p['rima'] as Map)['en'] as String,
           rima: _t(p['rima']),

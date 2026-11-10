@@ -56,6 +56,7 @@ import 'package:descubre_con_lua/features/docentes/portal_docentes_screen.dart';
 import 'package:descubre_con_lua/features/familias/portal_familias_screen.dart';
 import 'package:descubre_con_lua/features/criancas/criancas_store.dart';
 import 'package:descubre_con_lua/features/familias/widgets/learn_duolingo.dart';
+import 'package:descubre_con_lua/features/leccions/widgets/proxecto_0_2.dart';
 import 'package:descubre_con_lua/features/leccions/views/calendario_de_leccions_screen.dart';
 import 'package:descubre_con_lua/features/criancas/resultados_crianza_screen.dart';
 import 'package:descubre_con_lua/features/criancas/rexistro_crianza_screen.dart';
@@ -407,6 +408,31 @@ void main() {
         antesDeRetratar: (t) async {
           await t.tap(find.byKey(const ValueKey('selector_idade')));
         },
+      );
+    });
+
+    // O-20261109-4 (ACOPROS): la lección de 0-2, por proyectos.
+    testWidgets('proxecto 0-2 · $l', (tester) async {
+      Proxectos02.sembrar(
+          Proxectos02.fromRaw(File(Proxectos02.assetPath).readAsStringSync()));
+      await capturar(
+        tester,
+        'proxecto-0-2-$l',
+        Scaffold(
+          body: SafeArea(
+            child: ListView(
+              padding: const EdgeInsets.all(16),
+              children: [
+                LeccionProxecto02(
+                  mesCalendario: 10,
+                  semana: 1,
+                  language: lang,
+                ),
+              ],
+            ),
+          ),
+        ),
+        tema: AppTheme.temaFamilias,
       );
     });
 

@@ -220,15 +220,17 @@ Primero una edad entera, 0-2 años (R∞.6.3), que es la que revisaron; las dem�
 
 Decisiones de Frank (9/11), a tres preguntas de Claude Code: 0-2 con unas 20 palabras por tema (el gate de las 4.000 deja de contar 0-2; las demás edades, después); sin gramática en 0-2: las 48 unidades empiezan en 2-3 y se reparten en sus 40 meses; el cuento de 0-2, rimas y canciones inglesas tradicionales de dominio público, una por tema, con voz más lenta.
 
-- [ ] 0-2: cada unidad (proyecto del mes) empieza por su vocabulario base y su canción; ninguna frase usa una palabra que no se haya presentado antes (no «leaves are falling» sin «tree», «leaf», «brown») · evidencia:
-- [ ] 0-2: «Ya debería saber» sin verbo to be ni frases: palabras sueltas (holofrase) · evidencia:
-- [ ] 0-2: «Cómo hablar» con frases de 2 elementos como mucho y su gesto («wash hands») · evidencia:
-- [ ] 0-2: la guía, sencilla: canta la canción del tema, repasa su vocabulario · evidencia:
-- [ ] 0-2: unas 20 palabras bien escogidas por tema, en vez del vocabulario núcleo de miles · evidencia:
-- [ ] El plan curricular, por proyectos, como trabajan las escuelas infantiles · evidencia:
-- [ ] 0-2: el cuento de la semana con vocabulario de la edad y audio más lento (hecho: la voz a 0,8 en 0-2, en casa y en el aula; falta: las rimas tradicionales) · evidencia:
-- [ ] Gates que lo midan: frases de 0-2 de 2 elementos como mucho, palabra nueva solo tras presentarla, 20 por tema · evidencia:
+- [x] 0-2: cada unidad (proyecto del mes) empieza por su vocabulario base y su canción; ninguna frase usa una palabra que no se haya presentado antes (no «leaves are falling» sin «tree», «leaf», «brown») · evidencia: test/features/acopros_0_2_test.dart («os 10 proxectos: unhas 20 palabras, dous elementos como moito, sen to be») y tools/gen_acopros_0_2.py (--check en gates.sh: semana 1 = vocabulario y canción; cómo hablar solo con palabras del proyecto)
+- [x] 0-2: «Ya debería saber» sin verbo to be ni frases: palabras sueltas (holofrase) · evidencia: test/features/acopros_0_2_test.dart («os 10 proxectos: unhas 20 palabras, dous elementos como moito, sen to be») y tools/gen_acopros_0_2.py
+- [x] 0-2: «Cómo hablar» con frases de 2 elementos como mucho y su gesto («wash hands») · evidencia: test/features/acopros_0_2_test.dart («os 10 proxectos: unhas 20 palabras, dous elementos como moito, sen to be») y docs/capturas/proxecto-0-2-gl.png, proxecto-0-2-es.png
+- [x] 0-2: la guía, sencilla: canta la canción del tema, repasa su vocabulario · evidencia: test/features/acopros_0_2_test.dart («Hoxe 0-2») y tools/gen_acopros_0_2.py
+- [x] 0-2: unas 20 palabras bien escogidas por tema, en vez del vocabulario núcleo de miles · evidencia: test/features/acopros_0_2_test.dart («Máis material do día en 0-2: as palabras do proxecto, non o banco») y tools/gen_acopros_0_2.py (18-22 por proyecto, de la lección y el banco TPR del mes)
+- [x] El plan curricular, por proyectos, como trabajan las escuelas infantiles (0-2, primera edad entera según R∞.6.3; las demás, cuando Frank la dé por buena) · evidencia: test/features/acopros_0_2_test.dart («Hoxe 0-2») y tools/gen_acopros_0_2.py (10 proyectos de 4 semanas)
+- [x] 0-2: el cuento de la semana con vocabulario de la edad y audio más lento: una rima tradicional de dominio público por proyecto, grabada (en, gl, es) y con la voz a 0,8 en 0-2 · evidencia: test/features/acopros_0_2_test.dart («Hoxe 0-2»), test/core/velocidade_voz_test.dart y tools/gen_acopros_0_2.py
+- [x] Gates que lo midan: frases de 0-2 de 2 elementos como mucho, palabra nueva solo tras presentarla, 20 por tema · evidencia: tools/gen_acopros_0_2.py (en tools/gates.sh) y test/features/acopros_0_2_test.dart; tools/check_ordenes.py exige ese gate o test en cada criterio marcado
 - [ ] Mergeado en main con CI en verde · evidencia:
+
+Pendiente, decisión de Frank del 9/11 que no es criterio de esta orden: repartir las 48 unidades en los 40 meses de 2-3 a 5-6. Hoy 0-2 ya no enseña gramática, pero las unidades 1-9 siguen asignadas a los meses de 0-2 en tools/ruta_48.py; moverlas exige reescribir las frases de cada mes y su voz.
 
 ## O-20261109-5 · La UX de familia, copiando el sistema de Duolingo
 Estado: abierta

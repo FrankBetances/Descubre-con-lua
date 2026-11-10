@@ -63,6 +63,16 @@ def main() -> int:
             for nome in re.findall(r"«([^»]+?)(?:…)?»", ev):
                 if ruta.is_file() and nome.rstrip(".") not in ruta.read_text(encoding="utf-8"):
                     fallos.append(f"{orden}: {fichero} no tiene el test «{nome}»")
+    # O-20261110-1: los criterios de ACOPROS (O-20261109-4) solo se marcan con
+    # la evidencia de su gate o de su test, no con cualquier fichero.
+    texto = ORDENES.read_text(encoding="utf-8")
+    if "## O-20261109-4" in texto:
+        bloque = texto.split("## O-20261109-4", 1)[1].split("\n## ", 1)[0]
+        for linea in bloque.splitlines():
+            m = re.match(r"- \[x\] (.+?) · evidencia:(.*)$", linea)
+            if m and "Mergeado" not in m.group(1) and not any(
+                    e in m.group(2) for e in ("tools/gen_acopros_0_2.py", "test/features/acopros_0_2_test.dart")):
+                fallos.append(f"O-20261109-4: «{m.group(1)[:60]}» marcado sin el gate ni el test de ACOPROS")
     for o, f in fuentes.items():
         if o < "O-20261109-2":
             continue
