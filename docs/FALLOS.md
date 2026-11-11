@@ -48,3 +48,8 @@ Formato de cada entrada (una por fallo):
 - Qué pasó: los retos de cada semana describen su escena («Un vaso de plástico e unha esponxa») y la app la enseñaba solo en texto, sin imagen. Frank: «las imágenes son esenciales». Lo hizo Claude Code.
 - Causa raíz: el campo `escena` se añadió en aa8d7fdb (F5) como texto, sin pedir su lámina, y ningún gate comprobaba que cada escena tuviera imagen.
 - Guarda: tools/check_imagenes_escenas.py (en tools/gates.sh: falla si una escena del contenido no tiene lámina, si la lámina no existe o si su carpeta no está en pubspec.yaml)
+
+## F-20261111-2 · Orden de las imágenes cerrada sin cumplirla
+- Qué pasó: O-20261111-1 se marcó cumplida y se mergeó con solo 12 imágenes de escena de reto. La imagen salía solo en el primer paso de la lección, y la del peluche y el pañuelo aparecía en pasos de palabras con las que no tiene que ver («Curl into a ball», «Downhill», «Steep»). Las palabras, que es lo que se enseña, seguían sin dibujo. Lo hizo Claude Code.
+- Causa raíz: Claude Code redujo «los ejercicios» a «la escena del reto» sin preguntarlo (contra R1 y R∞.2), escribió criterios que solo medían ese recorte, y el gate comprobaba las 12 escenas y no las piezas enseñadas.
+- Guarda: tools/check_laminas_leccion.py (en tools/gates.sh: falla si una pieza enseñada en la lección, el TPR del día o el proyecto 0-2 no tiene lámina, si el fichero no existe o si usa una lámina de escena de reto; sin listas de exclusión)

@@ -188,6 +188,7 @@ run_gate "manual PDF and Word match their source" python3 tools/check_manual_bui
 # eso no lo caza un gate que solo corre cuando alguien empuja.
 run_gate "legal pages are what Play Console declares" python3 tools/check_legal_urls.py --offline
 run_gate "every scene has its image (O-20261111-1)" python3 tools/check_imagenes_escenas.py
+run_gate "every taught piece has its own picture (O-20261111-2)" python3 tools/check_laminas_leccion.py --resumo
 
 # --------------------------------------------------------------- binary gates
 if [[ $FAST -eq 0 ]]; then
