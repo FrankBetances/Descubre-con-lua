@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../../../core/audio/offline_audio_service.dart';
 import '../../../core/audio/voice_id.dart';
 import '../../../core/audio/widgets/boton_escuchar.dart';
+import '../../../core/brand/imaxe_escena.dart';
 import '../../../core/localization/app_language.dart';
 import '../../../core/localization/localized_string.dart';
 import '../../../core/theme/app_theme.dart';
@@ -159,6 +160,10 @@ class _RetoDaSemanaState extends State<RetoDaSemana> {
                   gl: '${h.momento.gl} · ${h.minutos} min',
                   es: '${h.momento.es} · ${h.minutos} min',
                 )),
+            if (h.escena.resolve(lang).isNotEmpty) ...[
+              const SizedBox(height: 8),
+              ImaxeEscena(escena: h.escena, lang: lang),
+            ],
             linea(_con, h.escena),
             linea(_facer, reto.queFacer),
             linea(_mans, reto.mans),

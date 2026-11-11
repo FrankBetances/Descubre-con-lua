@@ -187,6 +187,7 @@ run_gate "manual PDF and Word match their source" python3 tools/check_manual_bui
 # despliegue y despliegue es cuando un sitio de Pages se apaga sin avisar, y
 # eso no lo caza un gate que solo corre cuando alguien empuja.
 run_gate "legal pages are what Play Console declares" python3 tools/check_legal_urls.py --offline
+run_gate "every scene has its image (O-20261111-1)" python3 tools/check_imagenes_escenas.py
 
 # --------------------------------------------------------------- binary gates
 if [[ $FAST -eq 0 ]]; then

@@ -3,9 +3,11 @@ import 'package:flutter/material.dart';
 import '../../../core/audio/offline_audio_service.dart';
 import '../../../core/audio/voice_id.dart';
 import '../../../core/audio/widgets/boton_escuchar.dart';
+import '../../../core/brand/imaxe_escena.dart';
 import '../../../core/brand/lua_valeria.dart';
 import '../../../core/brand/pixel_award.dart';
 import '../../../core/localization/app_language.dart';
+import '../../../core/localization/localized_string.dart';
 import '../../../core/navigation/ruta_lua.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../data/models/leccion_model.dart';
@@ -388,7 +390,11 @@ class PasoLeccion {
   final String titulo;
   final String texto;
   final PezaDaLeccion? peza;
-  const PasoLeccion({required this.titulo, required this.texto, this.peza});
+
+  /// O-20261111-1: la escena del reto, con su imagen encima del texto.
+  final LocalizedString? escena;
+  const PasoLeccion(
+      {required this.titulo, required this.texto, this.peza, this.escena});
 }
 
 /// Los pasos del día: qué se hace, cada palabra nueva con su voz y la frase.
@@ -397,9 +403,18 @@ List<PasoLeccion> pasosDoDia(Leccion l, int dia, AppLanguage lang) {
   final d =
       l.dias.isEmpty ? null : l.dias[(dia - 1).clamp(0, l.dias.length - 1)];
   final pezas = l.repaso ? l.repasa : l.novas;
+  final escena = l.escena.resolve(lang).isEmpty ? null : l.escena;
   return [
     if (d != null)
-      PasoLeccion(titulo: d.dia.resolve(lang), texto: d.texto.resolve(lang)),
+      PasoLeccion(
+          titulo: d.dia.resolve(lang),
+          texto: d.texto.resolve(lang),
+          escena: escena)
+    else if (escena != null)
+      PasoLeccion(
+          titulo: isGl ? 'Preparade a escena' : 'Preparad la escena',
+          texto: '',
+          escena: escena),
     for (final p in pezas)
       if (p.en.isNotEmpty)
         PasoLeccion(
@@ -613,6 +628,18 @@ class _PasoVista extends StatelessWidget {
               ),
             ],
             const SizedBox(height: 20),
+          ],
+          if (paso.escena case final e?) ...[
+            ImaxeEscena(escena: e, lang: lang, ancho: 260),
+            const SizedBox(height: 8),
+            Text(e.resolve(lang),
+                key: const Key('leccion_paso_escena'),
+                textAlign: TextAlign.center,
+                style: const TextStyle(
+                    fontSize: 16,
+                    fontWeight: FontWeight.w700,
+                    color: AppTheme.textSecondary)),
+            const SizedBox(height: 16),
           ],
           if (paso.texto.isNotEmpty)
             Text(paso.texto,

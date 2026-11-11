@@ -93,6 +93,7 @@ flutter:
     # Las lecciones semanales del plan curricular (P11).
     - assets/content/leccions/
     - assets/content/acopros/
+    - assets/content/escenas/
     - assets/content/gramatica/
     - assets/audio/
     # Las rejillas de Lúa. Hasta ahora solo las leía tools/build_launcher_icons.py

@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../../../core/audio/offline_audio_service.dart';
 import '../../../core/audio/voice_id.dart';
 import '../../../core/audio/widgets/boton_escuchar.dart';
+import '../../../core/brand/imaxe_escena.dart';
 import '../../../core/localization/app_language.dart';
 import '../../../core/localization/localized_string.dart';
 import '../../../core/navigation/ruta_lua.dart';
@@ -498,11 +499,14 @@ class _LeccionDaSemanaState extends State<LeccionDaSemana> {
               key: const Key('leccion_momento'),
               style: forte,
             ),
-            if (leccion.escena.resolve(lang).isNotEmpty)
+            if (leccion.escena.resolve(lang).isNotEmpty) ...[
+              const SizedBox(height: 8),
+              ImaxeEscena(escena: leccion.escena, lang: lang),
               Padding(
-                padding: const EdgeInsets.only(top: 2),
+                padding: const EdgeInsets.only(top: 6),
                 child: Text(leccion.escena.resolve(lang), style: lectura),
               ),
+            ],
             const SizedBox(height: 10),
             BotonEscuchar(
               audioService: widget.audioService,

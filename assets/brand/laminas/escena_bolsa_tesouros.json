@@ -1,0 +1,30 @@
+{
+ "vb": 160,
+ "vh": 100,
+ "nota": "Escena do reto: Unha bolsa de tea para os tesouros / Una bolsa de tela para los tesoros. Obxectos: 1 bolsa de tela con asas. Sen texto.",
+ "formas": [
+  {
+   "t": "ruta",
+   "d": "M62.64 42.32 C62.64 15.44 93.36 15.44 93.36 42.32",
+   "s": "#8b6b3e",
+   "sw": 4.8
+  },
+  {
+   "t": "rrect",
+   "x": 49.2,
+   "y": 40.4,
+   "w": 57.6,
+   "h": 48.0,
+   "r": 7.68,
+   "f": "#ecdcb8",
+   "s": "#8b6b3e",
+   "sw": 3.84
+  },
+  {
+   "t": "ruta",
+   "d": "M54.96 48.08 L101.04 48.08",
+   "s": "#c9ad7c",
+   "sw": 2.88
+  }
+ ]
+}

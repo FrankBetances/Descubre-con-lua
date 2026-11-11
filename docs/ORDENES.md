@@ -254,3 +254,17 @@ Fuente: docs/ORDENES.md (criterios abiertos de O-20261109-3, O-20261109-4 y O-20
 - [x] En Hoy a 412×915, el camino entero cabe sin bajar: los cinco nodos y «Empezar» del día · evidencia: test/features/ux_l3_test.dart («Learn de Duolingo, sen baixar, a 412×915») y docs/capturas/hoxe-familias-gl.png, hoxe-familias-es.png
 - [ ] Los criterios abiertos de O-20261109-4 cumplidos con su gate · evidencia:
 - [ ] Cuerpo del PR #47 al día y merge en main con CI en verde · evidencia:
+
+## O-20261111-1 · Las escenas de los ejercicios, con su imagen
+Estado: abierta
+> Orden de Frank (11 nov 2026): los ejercicios de Descubre con Lúa muestran la descripción de la escena solo en texto, sin imagen. Las imágenes son esenciales y deben coincidir exactamente con la escena. Hazlo completo; no recortes alcance. [...] 1. Diagnóstico [...] 2. Si las imágenes existen en el historial y coinciden con su escena, recupéralas [...] 3. Si no existen o no coinciden, créalas nuevas: una por cada escena descrita en el contenido, en un estilo coherente con Lúa (infantil 0-6, claro, sin texto dentro de la imagen, sin emojis del sistema). Cada imagen debe mostrar exactamente lo que dice la descripción [...] 4. Muestra la imagen en el ejercicio, encima del texto, con semanticsLabel en gl y es. [...] 5. Gate [...] 6. [...] Capturas gl/es [...] 7. Con todo en verde y sin criterios abiertos, merge a main y push.
+Fuente: assets/content/leccions/leccions.json (campo reto.escena, 12 escenas distintas, las mismas que en assets/content/unidades_mes) y assets/brand/laminas/ (el set propio de láminas vectoriales)
+
+Diagnóstico: `git log -S` sobre `escena`, `imaxe`, `Image.asset`, `pubspec.yaml` y los assets borrados no da ninguna imagen de estas escenas. El campo `escena` entró en aa8d7fdb (F5, la casa guiada) solo como texto y nunca tuvo imagen: no hay nada que recuperar, se crean las 12.
+
+- [x] Una imagen por cada una de las 12 escenas, con exactamente los objetos que dice su texto, en el set de láminas vectoriales (sin texto ni emoji), compuesta de las láminas que ya existían y de dibujos nuevos en el mismo estilo · evidencia: tools/gen_escenas_retos.py escribe las 12 assets/brand/laminas/escena_*.json (lienzo 160×100, unos 1-6 KB cada una); revisadas una a una en una hoja de contacto renderizada (tres corregidas: la manta salía sobre una cama, la toalla y las cucharas se salían del borde). Recuperadas: 0; nuevas: 12
+- [x] Un fichero de control con la escena, su texto gl/es, la lámina y la comprobación de qué objetos lleva · evidencia: docs/imagenes-escenas.md y assets/content/escenas/escenas.json, generados por tools/gen_escenas_retos.py
+- [x] La imagen encima del texto de la escena, con semanticsLabel gl/es, en el reto de la lección (casa y aula), en el reto de la semana y en la lección paso a paso de Duolingo · evidencia: test/features/imaxes_escenas_test.dart, «o reto da semana pinta a imaxe encima do texto», «a lección de Duolingo pinta a imaxe da escena» y «a etiqueta para o lector de pantalla vai na lingua», en gl y es; lib/core/brand/imaxe_escena.dart
+- [x] Gate: falla si una escena del contenido no tiene imagen, si la lámina no existe o si no está en pubspec · evidencia: tools/check_imagenes_escenas.py, en tools/gates.sh
+- [x] Capturas gl/es de varios ejercicios con su imagen · evidencia: test/capturas_test.dart, «escena ·», escribe docs/capturas/escena-duolingo-gl.png y -es, escena-leccion-casa-gl/-es y escena-leccion-aula-gl/-es; más reto-semana-gl/-es
+- [ ] Mergeado en main con CI en verde · evidencia:
