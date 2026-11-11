@@ -1,0 +1,50 @@
+{
+ "_doc": "Xerado por tools/gen_laminas_palabras.py (O-20261111-2). Non se edita a man.",
+ "pezas": {
+  "bandage": {
+   "clave": "pal_venda",
+   "orixe": "nova",
+   "porque": "Un rollo de venda con la tira a medio desenrollar y su cierre."
+  },
+  "bright orange": {
+   "clave": "pal_laranxa_vivo",
+   "orixe": "nova",
+   "porque": "Un niño enseña en alto una pelota de color naranja vivo: el gesto."
+  },
+  "curl into a ball": {
+   "clave": "pal_bola",
+   "orixe": "nova",
+   "porque": "Un niño enroscado en el suelo, hecho una bola, abrazándose las piernas: el gesto."
+  },
+  "downhill": {
+   "clave": "pal_costa_abaixo",
+   "orixe": "nova",
+   "porque": "Un niño camina cuesta abajo y una flecha marca la bajada."
+  },
+  "hedgehog": {
+   "clave": "pal_ourizo",
+   "orixe": "nova",
+   "porque": "Un erizo de perfil, con sus púas, el hocico y las patas."
+  },
+  "hilltop": {
+   "clave": "pal_cima",
+   "orixe": "nova",
+   "porque": "Un niño en lo más alto del monte, con los brazos estirados hacia arriba: el gesto."
+  },
+  "i said the bird had two": {
+   "clave": "pal_paxaro_duas_patas",
+   "orixe": "nova",
+   "porque": "Un pájaro de pie sobre sus dos patas, bien visibles."
+  },
+  "steep": {
+   "clave": "pal_empinado",
+   "orixe": "nova",
+   "porque": "Una cuesta muy empinada y, abajo, un niño pequeño que la señala hacia arriba."
+  },
+  "wait for me": {
+   "clave": "pal_esperame",
+   "orixe": "nova",
+   "porque": "Un niño corre detrás con la mano tendida y la de delante se gira a mirarlo."
+  }
+ }
+}

@@ -501,7 +501,8 @@
           "tprAction": {
             "gl": "Facerse unha bóla no chan",
             "es": "Hacerse una bola en el suelo"
-          }
+          },
+          "lamina": "pal_ourizo"
         },
         {
           "id": "3_4.novembro.s3.deer",

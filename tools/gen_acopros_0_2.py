@@ -27,6 +27,9 @@ RAIZ = Path(__file__).resolve().parent.parent
 SAIDA = RAIZ / "assets/content/acopros/proxectos_0_2.json"
 MESES = [9, 10, 11, 12, 1, 2, 3, 4, 5, 6]
 POR_PROXECTO = 20
+# O-20261111-2: cada palabra, con su lámina (tools/gen_laminas_palabras.py).
+_MAPA = RAIZ / "assets/content/laminas/palabras_laminas.json"
+LAMINAS_PAL = json.loads(_MAPA.read_text(encoding="utf-8"))["pezas"] if _MAPA.exists() else {}
 TO_BE = re.compile(r"\b(is|are|am|was|were|be|it's|i'm|you're|we're|they're)\b", re.I)
 
 # Rimas tradicionales inglesas de dominio público, la primera estrofa. Una
@@ -108,7 +111,8 @@ def construir() -> dict:
                 return
             vistas.add(k)
             palabras.append({"en": en, "gl": gl, "es": es,
-                             "xesto": {"gl": xesto_gl, "es": xesto_es}, "orixe": orixe})
+                             "xesto": {"gl": xesto_gl, "es": xesto_es}, "orixe": orixe,
+                             **({"lamina": LAMINAS_PAL[k]["clave"]} if k in LAMINAS_PAL else {})})
 
         for l in u["leccions"]:
             for p in l["novas"]:

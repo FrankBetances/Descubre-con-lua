@@ -21,12 +21,16 @@ class PezaDaLeccion {
   /// Qué es, dicho para una familia: «Verbo: unha acción».
   final LocalizedString? que;
 
+  /// O-20261111-2: la lámina que dibuja ESTA palabra y su gesto.
+  final String? lamina;
+
   const PezaDaLeccion({
     required this.tipo,
     required this.en,
     this.significado,
     this.xesto,
     this.que,
+    this.lamina,
   });
 
   factory PezaDaLeccion.fromJson(Map<String, dynamic> j) {
@@ -37,6 +41,7 @@ class PezaDaLeccion {
       significado: s.hasParity ? s : null,
       xesto: j['xesto'] is Map ? _t(j['xesto']) : null,
       que: j['que'] is Map ? _t(j['que']) : null,
+      lamina: j['lamina'] as String?,
     );
   }
 }

@@ -24,6 +24,9 @@ class TprWord {
   /// `noun`, `verb`, `adjective`, `phrase` o `complex`.
   final String category;
 
+  /// O-20261111-2: la lámina que dibuja ESTA palabra y su gesto.
+  final String? lamina;
+
   const TprWord({
     required this.id,
     required this.en,
@@ -31,6 +34,7 @@ class TprWord {
     required this.es,
     required this.tprAction,
     required this.category,
+    this.lamina,
   });
 
   factory TprWord.fromJson(Map<String, dynamic> json) {
@@ -44,6 +48,7 @@ class TprWord {
           ? LocalizedString.fromJson(Map<String, dynamic>.from(accion))
           : const LocalizedString(gl: '', es: ''),
       category: json['category'] as String? ?? 'noun',
+      lamina: json['lamina'] as String?,
     );
   }
 

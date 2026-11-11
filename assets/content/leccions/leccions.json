@@ -40464,7 +40464,8 @@
          "xesto": {
           "gl": "Facerse unha bóla no chan",
           "es": "Hacerse una bola en el suelo"
-         }
+         },
+         "lamina": "pal_ourizo"
         },
         {
          "tipo": "formula",
@@ -40474,7 +40475,8 @@
           "es": "Frase para relacionarse"
          },
          "gl": "Agárdame",
-         "es": "Espérame"
+         "es": "Espérame",
+         "lamina": "pal_esperame"
         },
         {
          "tipo": "noun",
@@ -40488,7 +40490,8 @@
          "xesto": {
           "gl": "Estirar os brazos no alto",
           "es": "Estirar los brazos en lo alto"
-         }
+         },
+         "lamina": "pal_cima"
         }
        ],
        "repasa": [],
@@ -40633,7 +40636,8 @@
        "fraseGramatica": {
         "en": "I said the bird had two.",
         "gl": "Eu dixen que o paxaro tiña dúas.",
-        "es": "Yo dije que el pájaro tenía dos."
+        "es": "Yo dije que el pájaro tenía dos.",
+        "lamina": "pal_paxaro_duas_patas"
        },
        "comoFalar": {
         "clave": "espera",
@@ -40665,7 +40669,8 @@
          "xesto": {
           "gl": "Facerse unha bóla no chan",
           "es": "Hacerse una bola en el suelo"
-         }
+         },
+         "lamina": "pal_ourizo"
         },
         {
          "tipo": "formula",
@@ -40675,7 +40680,8 @@
           "es": "Frase para relacionarse"
          },
          "gl": "Agárdame",
-         "es": "Espérame"
+         "es": "Espérame",
+         "lamina": "pal_esperame"
         },
         {
          "tipo": "noun",
@@ -40689,7 +40695,8 @@
          "xesto": {
           "gl": "Estirar os brazos no alto",
           "es": "Estirar los brazos en lo alto"
-         }
+         },
+         "lamina": "pal_cima"
         }
        ],
        "novas": [
@@ -40705,7 +40712,8 @@
          "xesto": {
           "gl": "Enroscarse no chan",
           "es": "Enroscarse en el suelo"
-         }
+         },
+         "lamina": "pal_bola"
         },
         {
          "tipo": "adjective",
@@ -40719,7 +40727,8 @@
          "xesto": {
           "gl": "Camiñar lixeiro cara abaixo",
           "es": "Caminar ligero hacia abajo"
-         }
+         },
+         "lamina": "pal_costa_abaixo"
         },
         {
          "tipo": "adjective",
@@ -40733,7 +40742,8 @@
          "xesto": {
           "gl": "Inclinar moito a man",
           "es": "Inclinar mucho la mano"
-         }
+         },
+         "lamina": "pal_empinado"
         },
         {
          "tipo": "adjective",
@@ -40747,7 +40757,8 @@
          "xesto": {
           "gl": "Amosar algo laranxa",
           "es": "Enseñar algo naranja"
-         }
+         },
+         "lamina": "pal_laranxa_vivo"
         },
         {
          "tipo": "palabra",
@@ -40757,7 +40768,8 @@
           "es": "Palabra nueva"
          },
          "gl": "venda",
-         "es": "venda"
+         "es": "venda",
+         "lamina": "pal_venda"
         }
        ],
        "repasa": [],
@@ -40934,7 +40946,8 @@
          "xesto": {
           "gl": "Facerse unha bóla no chan",
           "es": "Hacerse una bola en el suelo"
-         }
+         },
+         "lamina": "pal_ourizo"
         },
         {
          "tipo": "formula",
@@ -40944,7 +40957,8 @@
           "es": "Frase para relacionarse"
          },
          "gl": "Agárdame",
-         "es": "Espérame"
+         "es": "Espérame",
+         "lamina": "pal_esperame"
         },
         {
          "tipo": "noun",
@@ -40958,7 +40972,8 @@
          "xesto": {
           "gl": "Estirar os brazos no alto",
           "es": "Estirar los brazos en lo alto"
-         }
+         },
+         "lamina": "pal_cima"
         },
         {
          "tipo": "verb",
@@ -40972,7 +40987,8 @@
          "xesto": {
           "gl": "Enroscarse no chan",
           "es": "Enroscarse en el suelo"
-         }
+         },
+         "lamina": "pal_bola"
         },
         {
          "tipo": "adjective",
@@ -40986,7 +41002,8 @@
          "xesto": {
           "gl": "Camiñar lixeiro cara abaixo",
           "es": "Caminar ligero hacia abajo"
-         }
+         },
+         "lamina": "pal_costa_abaixo"
         },
         {
          "tipo": "adjective",
@@ -41000,7 +41017,8 @@
          "xesto": {
           "gl": "Inclinar moito a man",
           "es": "Inclinar mucho la mano"
-         }
+         },
+         "lamina": "pal_empinado"
         },
         {
          "tipo": "adjective",
@@ -41014,7 +41032,8 @@
          "xesto": {
           "gl": "Amosar algo laranxa",
           "es": "Enseñar algo naranja"
-         }
+         },
+         "lamina": "pal_laranxa_vivo"
         },
         {
          "tipo": "palabra",
@@ -41024,7 +41043,8 @@
           "es": "Palabra nueva"
          },
          "gl": "venda",
-         "es": "venda"
+         "es": "venda",
+         "lamina": "pal_venda"
         }
        ],
        "novas": [
@@ -41255,7 +41275,8 @@
          "xesto": {
           "gl": "Camiñar lixeiro cara abaixo",
           "es": "Caminar ligero hacia abajo"
-         }
+         },
+         "lamina": "pal_costa_abaixo"
         },
         {
          "tipo": "adjective",
@@ -41269,7 +41290,8 @@
          "xesto": {
           "gl": "Inclinar moito a man",
           "es": "Inclinar mucho la mano"
-         }
+         },
+         "lamina": "pal_empinado"
         },
         {
          "tipo": "adjective",
@@ -41283,7 +41305,8 @@
          "xesto": {
           "gl": "Amosar algo laranxa",
           "es": "Enseñar algo naranja"
-         }
+         },
+         "lamina": "pal_laranxa_vivo"
         },
         {
          "tipo": "palabra",
@@ -41293,7 +41316,8 @@
           "es": "Palabra nueva"
          },
          "gl": "venda",
-         "es": "venda"
+         "es": "venda",
+         "lamina": "pal_venda"
         },
         {
          "tipo": "orde",
@@ -41631,7 +41655,8 @@
           "es": "Palabra nueva"
          },
          "gl": "venda",
-         "es": "venda"
+         "es": "venda",
+         "lamina": "pal_venda"
         },
         {
          "tipo": "orde",

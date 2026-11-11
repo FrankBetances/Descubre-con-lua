@@ -21,7 +21,8 @@
             "gl": "Estirar os brazos no alto",
             "es": "Estirar los brazos en lo alto"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_cima"
         },
         {
           "id": "4_5.novembro.s1.chapel",
@@ -153,7 +154,8 @@
             "gl": "Inclinar moito a man",
             "es": "Inclinar mucho la mano"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_empinado"
         },
         {
           "id": "4_5.novembro.s1.breathtaking",
@@ -186,7 +188,8 @@
             "gl": "Camiñar lixeiro cara abaixo",
             "es": "Caminar ligero hacia abajo"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_costa_abaixo"
         },
         {
           "id": "4_5.novembro.s1.almost-at-the-top",
@@ -567,7 +570,8 @@
             "gl": "Enroscarse no chan",
             "es": "Enroscarse en el suelo"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_bola"
         },
         {
           "id": "4_5.novembro.s3.lift-a-log",
@@ -873,7 +877,8 @@
             "gl": "Amosar algo laranxa",
             "es": "Enseñar algo naranja"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_laranxa_vivo"
         },
         {
           "id": "4_5.novembro.s4.this-one-is-darker-than-that-one",

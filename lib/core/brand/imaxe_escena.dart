@@ -96,3 +96,42 @@ class _ImaxeEscenaState extends State<ImaxeEscena> {
     );
   }
 }
+
+/// O-20261111-2: la lámina de UNA palabra o frase, encima de ella, con su
+/// etiqueta gl/es para el lector de pantalla. Nunca una lámina de escena de
+/// reto (lo impide tools/check_laminas_leccion.py).
+class LaminaPalabra extends StatelessWidget {
+  final String clave;
+
+  /// Lo que la palabra quiere decir, en la lengua de la interfaz.
+  final String significado;
+  final AppLanguage lang;
+  final double ancho;
+
+  const LaminaPalabra({
+    super.key,
+    required this.clave,
+    required this.significado,
+    required this.lang,
+    this.ancho = 240,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Semantics(
+      key: Key('lamina_palabra_$clave'),
+      image: true,
+      label: lang == AppLanguage.gl
+          ? 'Imaxe: $significado'
+          : 'Imagen: $significado',
+      excludeSemantics: true,
+      child: ClipRRect(
+        borderRadius: BorderRadius.circular(14),
+        child: ColoredBox(
+          color: const Color(0xFFFFF8EC),
+          child: LaminaEscena(clave: clave, ancho: ancho),
+        ),
+      ),
+    );
+  }
+}

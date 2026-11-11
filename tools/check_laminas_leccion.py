@@ -7,7 +7,7 @@ Recorre, sin listas de exclusión:
   «palabras do día»);
 - assets/content/tpr/**/*.json: las palabras del banco (el TPR del día);
 - assets/content/acopros/proxectos_0_2.json: las palabras de cada proyecto
-  de 0-2.
+  de 0-2, y su canción y su rima (los otros dos pasos de esa lección).
 
 Falla si una pieza no tiene "lamina", si assets/brand/laminas/<lamina>.json
 no existe, o si la lámina es de escena de reto (escena_*): esas solo valen
@@ -47,6 +47,9 @@ def pezas():
     for p in ac["proxectos"]:
         for w in p["palabras"]:
             yield "0-2", f"proxecto mes {p['mesCalendario']}", w.get("en", ""), w.get("lamina")
+        # los otros dos pasos de la lección de 0-2: la canción y la rima
+        yield "0-2", f"proxecto mes {p['mesCalendario']} canción", p["cancion"].get("es", ""), p["cancion"].get("lamina")
+        yield "0-2", f"proxecto mes {p['mesCalendario']} rima", p["rima"].get("en", ""), p["rima"].get("lamina")
 
 
 def main() -> int:

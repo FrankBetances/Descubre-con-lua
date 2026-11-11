@@ -411,8 +411,16 @@ class PasoLeccion {
 
   /// O-20261111-1: la escena del reto, con su imagen encima del texto.
   final LocalizedString? escena;
+
+  /// O-20261111-2: las láminas de lo que nombra un paso sin pieza propia
+  /// (las palabras nuevas de la semana, la canción): clave y significado.
+  final List<({String clave, String significado})> laminas;
   const PasoLeccion(
-      {required this.titulo, required this.texto, this.peza, this.escena});
+      {required this.titulo,
+      required this.texto,
+      this.peza,
+      this.escena,
+      this.laminas = const []});
 }
 
 /// Los pasos del día: qué se hace, cada palabra nueva con su voz y la frase.
@@ -421,18 +429,23 @@ List<PasoLeccion> pasosDoDia(Leccion l, int dia, AppLanguage lang) {
   final d =
       l.dias.isEmpty ? null : l.dias[(dia - 1).clamp(0, l.dias.length - 1)];
   final pezas = l.repaso ? l.repasa : l.novas;
-  final escena = l.escena.resolve(lang).isEmpty ? null : l.escena;
+  // O-20261111-2: la lámina de la escena solo va en el paso del reto (el día
+  // cuyo inglés es la frase del reto). Los demás días enseñan los dibujos de
+  // las palabras de la semana, que son las que ese paso nombra.
+  final eReto = d != null && d.en != null && d.en == l.reto.frase.en;
+  final escena = eReto && l.escena.resolve(lang).isNotEmpty ? l.escena : null;
+  final daSemana = [
+    for (final p in pezas)
+      if (p.lamina case final c?)
+        (clave: c, significado: p.significado?.resolve(lang) ?? p.en),
+  ];
   return [
     if (d != null)
       PasoLeccion(
           titulo: d.dia.resolve(lang),
           texto: d.texto.resolve(lang),
-          escena: escena)
-    else if (escena != null)
-      PasoLeccion(
-          titulo: isGl ? 'Preparade a escena' : 'Preparad la escena',
-          texto: '',
-          escena: escena),
+          escena: escena,
+          laminas: escena == null ? daSemana : const []),
     for (final p in pezas)
       if (p.en.isNotEmpty)
         PasoLeccion(
@@ -461,16 +474,27 @@ List<PasoLeccion> pasosDoProxecto(Proxecto02 p, int semana, AppLanguage lang) {
         titulo: isGl ? 'Escoita e fai o xesto' : 'Escucha y haz el gesto',
         texto: w.xesto.resolve(lang),
         peza: PezaDaLeccion(
-            tipo: 'palabra', en: w.en, significado: w.significado),
+            tipo: 'palabra',
+            en: w.en,
+            significado: w.significado,
+            lamina: w.lamina),
       ),
     PasoLeccion(
       titulo: isGl ? 'A canción do proxecto' : 'La canción del proyecto',
       texto: '«${p.cancion.resolve(lang)}»',
+      laminas: [
+        if (p.cancionLamina case final c?)
+          (clave: c, significado: p.cancion.resolve(lang)),
+      ],
     ),
     PasoLeccion(
       titulo: isGl ? 'Rima tradicional' : 'Rima tradicional',
       texto: '',
-      peza: PezaDaLeccion(tipo: 'frase', en: p.rimaEn, significado: p.rima),
+      peza: PezaDaLeccion(
+          tipo: 'frase',
+          en: p.rimaEn,
+          significado: p.rima,
+          lamina: p.rimaLamina),
     ),
   ];
 }
@@ -623,7 +647,33 @@ class _PasoVista extends StatelessWidget {
                   fontWeight: FontWeight.w900,
                   color: Color(0xFF334155))),
           const SizedBox(height: 24),
+          if (paso.laminas.isNotEmpty) ...[
+            Wrap(
+              key: const Key('leccion_paso_laminas'),
+              alignment: WrapAlignment.center,
+              spacing: 8,
+              runSpacing: 8,
+              children: [
+                for (final l in paso.laminas)
+                  LaminaPalabra(
+                      clave: l.clave,
+                      significado: l.significado,
+                      lang: lang,
+                      ancho: paso.laminas.length == 1 ? 240 : 104),
+              ],
+            ),
+            const SizedBox(height: 16),
+          ],
           if (paso.peza case final p?) ...[
+            if (p.lamina case final c?) ...[
+              Center(
+                child: LaminaPalabra(
+                    clave: c,
+                    significado: p.significado?.resolve(lang) ?? p.en,
+                    lang: lang),
+              ),
+              const SizedBox(height: 16),
+            ],
             Center(
               child: BotonEscuchar(
                 audioService: audioService,

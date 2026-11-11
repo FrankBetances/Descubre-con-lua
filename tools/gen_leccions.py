@@ -676,6 +676,20 @@ def main():
         saida["cursos"][curso] = {"unidades": unidades, "calendario": calendario}
         ensinado_antes |= ensinado
         ultimas_do_curso = (anterior or [])[-8:]
+    # O-20261111-2: cada pieza enseñada, con su lámina (tools/gen_laminas_palabras.py).
+    mapa_laminas = json.loads((Path(__file__).resolve().parent.parent / "assets/content/laminas/palabras_laminas.json").read_text(encoding="utf-8"))["pezas"] \
+        if (Path(__file__).resolve().parent.parent / "assets/content/laminas/palabras_laminas.json").exists() else {}
+    for c in saida["cursos"].values():
+        for u in c["unidades"]:
+            for l in u["leccions"]:
+                pezas = [p for k in ("xaSabe", "novas", "repasa") for p in l.get(k) or []]
+                if l.get("fraseGramatica"):
+                    l["fraseGramatica"] = dict(l["fraseGramatica"])
+                    pezas.append(l["fraseGramatica"])
+                for p in pezas:
+                    m = mapa_laminas.get(p["en"].lower().strip(" .!?"))
+                    if m:
+                        p["lamina"] = m["clave"]
     fallos = revisar(saida)
     if fallos:
         print("FALLO (O-20261028-7):\n  " + "\n  ".join(fallos[:20]))

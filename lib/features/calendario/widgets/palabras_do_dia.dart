@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../core/brand/imaxe_escena.dart';
 import '../../../core/audio/offline_audio_service.dart';
 import '../../../core/audio/voice_id.dart';
 import '../../../core/audio/widgets/boton_escuchar.dart';
@@ -317,6 +318,16 @@ class PalabraConXesto extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
+          // O-20261111-2: el dibujo de la palabra, encima de ella.
+          if (palabra.lamina case final c?)
+            Padding(
+              padding: const EdgeInsets.only(bottom: 6),
+              child: LaminaPalabra(
+                  clave: c,
+                  significado: palabra.significado(language),
+                  lang: language,
+                  ancho: 150),
+            ),
           if (marca == null)
             _Pastilla(
                 palabra: palabra,

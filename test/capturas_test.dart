@@ -489,7 +489,7 @@ void main() {
         tester,
         'escena-duolingo-$l',
         LeccionDuolingoScreen(
-          pasos: pasosDoDia(lec, 1, lang),
+          pasos: pasosDoDia(lec, 2, lang),
           language: lang,
           semana: CriancasStore.semana('curso_4_5', 11, 1),
           palabrasDaSemana: [for (final p in lec.novas) p.en],
@@ -536,6 +536,74 @@ void main() {
         );
       });
     }
+
+    // O-20261111-2: cada paso de la lección, con el dibujo de SU palabra
+    // (4-5 años, unidad 3, lección 2, lunes), y el aviso de un día futuro.
+    for (final (n, nome) in [
+      (1, 'curl'),
+      (2, 'downhill'),
+      (3, 'steep'),
+      (4, 'bright-orange'),
+      (6, 'frase'),
+    ]) {
+      testWidgets('lamina do paso · $nome · $l', (tester) async {
+        final lec = Leccions.lidas!.porId('curso_4_5', 'curso_4_5.03.2')!.$2;
+        await capturar(
+          tester,
+          'leccion-paso-$nome-$l',
+          LeccionDuolingoScreen(
+            pasos: pasosDoDia(lec, 1, lang),
+            language: lang,
+            semana: CriancasStore.semana('curso_4_5', 11, 2),
+            palabrasDaSemana: [for (final p in lec.novas) p.en],
+            store: CriancasStore.enMemoria(const [
+              Crianza(id: 'c1', nome: 'Uxía', idade: 4, curso: 'curso_4_5'),
+            ]),
+            crianza: const Crianza(
+                id: 'c1', nome: 'Uxía', idade: 4, curso: 'curso_4_5'),
+            agora: DateTime(2026, 11, 9, 18),
+          ),
+          tema: AppTheme.temaFamilias,
+          antesDeRetratar: (t) async {
+            for (var i = 0; i < n; i++) {
+              await t.runAsync(() async {
+                await t.tap(find.byKey(const Key('leccion_continuar')));
+                await Future<void>.delayed(const Duration(milliseconds: 40));
+              });
+              await t.pumpAndSettle();
+            }
+            await t.runAsync(
+                () => Future<void>.delayed(const Duration(milliseconds: 120)));
+          },
+        );
+      });
+    }
+    testWidgets('na casa · aviso dun día futuro · $l', (tester) async {
+      await contidoDeHoxe(tester);
+      // Noviembre se lee antes, con reloj de verdad: si lo pide la pantalla
+      // bajo el reloj falso, esa lectura no termina y cuelga al que venga.
+      await tester.runAsync(() => contenido.loadUnidadeDoMes('curso_0_2', 11));
+      await capturar(
+        tester,
+        'hoxe-aviso-dia-futuro-$l',
+        PortalFamiliasScreen(
+          repository: contenido,
+          audioService: MockOfflineAudioService(),
+          currentLanguage: lang,
+          onToggleLanguage: () {},
+          calendario: CalendarioStore(overrideDirectory: tmp.path),
+          agora: DateTime(2026, 11, 11, 18),
+        ),
+        tema: AppTheme.temaFamilias,
+        antesDeRetratar: (t) async {
+          final xoves = find.byKey(const ValueKey('learn_nodo_3'));
+          await Scrollable.ensureVisible(t.element(xoves), alignment: 0.5);
+          await t.pumpAndSettle();
+          await t.tap(xoves);
+          await t.pump(const Duration(milliseconds: 600));
+        },
+      );
+    });
 
     // O-20261109-3: la hoja de premios de Lúa, abierta desde la tarjeta.
     testWidgets('na casa · premios de Lúa · $l', (tester) async {
