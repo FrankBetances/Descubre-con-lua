@@ -379,7 +379,27 @@ class _HoxeFamiliasScreenState extends State<HoxeFamiliasScreen> {
                     : _toca.finDeSemana
                         ? 4
                         : _toca.dia.dia - 1;
-                void abrir(int i) => abrirLeccionDuolingo(context,
+                // O-20261111-2 (B): un día que aún no ha llegado no se abre,
+                // pero lo dice: nunca un toque sin respuesta.
+                void avisar(int i) {
+                  const dias = [
+                    LocalizedString(gl: 'o luns', es: 'el lunes'),
+                    LocalizedString(gl: 'o martes', es: 'el martes'),
+                    LocalizedString(gl: 'o mércores', es: 'el miércoles'),
+                    LocalizedString(gl: 'o xoves', es: 'el jueves'),
+                    LocalizedString(gl: 'o venres', es: 'el viernes'),
+                  ];
+                  ScaffoldMessenger.of(context)
+                    ..hideCurrentSnackBar()
+                    ..showSnackBar(SnackBar(
+                      key: const Key('learn_aviso_futuro'),
+                      content: Text(lang == AppLanguage.gl
+                          ? 'Este día ábrese ${dias[i].gl}'
+                          : 'Este día se abre ${dias[i].es}'),
+                    ));
+                }
+
+                void abrirLeccion(int i) => abrirLeccionDuolingo(context,
                     leccion: lec,
                     dia: i + 1,
                     language: lang,
@@ -391,6 +411,7 @@ class _HoxeFamiliasScreenState extends State<HoxeFamiliasScreen> {
                     store: casa?.store,
                     crianza: neno,
                     agora: widget.agora);
+                void abrir(int i) => i > actual ? avisar(i) : abrirLeccion(i);
                 return Column(
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [

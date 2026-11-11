@@ -249,30 +249,39 @@ class CaminoNodos extends StatelessWidget {
         alignment: Alignment.topCenter,
         children: [
           if (lua != null) Positioned(right: 4, top: 90, child: lua!),
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              for (var i = 0; i < etiquetas.length; i++)
-                Padding(
-                  padding: EdgeInsets.only(top: i == 0 ? 12 : 6),
-                  child: Transform.translate(
-                    // `right: ${rightPosition}px` de la fuente.
-                    offset: Offset(-sangria(i), 0),
-                    child: _Nodo(
-                      key: ValueKey('learn_nodo_$i'),
-                      etiqueta: etiquetas[i],
-                      estado: i < actual || (i == actual && feitoHoxe)
-                          ? EstadoNodo.feito
-                          : i == actual
-                              ? EstadoNodo.actual
-                              : EstadoNodo.bloqueado,
-                      ultimo: i == etiquetas.length - 1,
-                      empezar: empezar,
-                      onTap: () => onNodo(i),
+          SizedBox(
+            width: double.infinity,
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                for (var i = 0; i < etiquetas.length; i++)
+                  Padding(
+                    padding: EdgeInsets.only(top: i == 0 ? 12 : 6),
+                    // `right: ${rightPosition}px` de la fuente. Con relleno y
+                    // no con Transform.translate: un nodo trasladado solo al
+                    // pintar queda fuera de la caja de su padre y no recibe el
+                    // toque (O-20261111-2, B: el miércoles no respondía).
+                    child: Padding(
+                      padding: EdgeInsets.only(
+                        right: sangria(i) > 0 ? 2 * sangria(i) : 0,
+                        left: sangria(i) < 0 ? -2 * sangria(i) : 0,
+                      ),
+                      child: _Nodo(
+                        key: ValueKey('learn_nodo_$i'),
+                        etiqueta: etiquetas[i],
+                        estado: i < actual || (i == actual && feitoHoxe)
+                            ? EstadoNodo.feito
+                            : i == actual
+                                ? EstadoNodo.actual
+                                : EstadoNodo.bloqueado,
+                        ultimo: i == etiquetas.length - 1,
+                        empezar: empezar,
+                        onTap: () => onNodo(i),
+                      ),
                     ),
                   ),
-                ),
-            ],
+              ],
+            ),
           ),
         ],
       ),
@@ -320,65 +329,74 @@ class _Nodo extends StatelessWidget {
         color: bloq ? DuoCores.bloqueadoBorde : Colors.white,
       ),
     );
+    // O-20261111-2 (B): los cinco nodos responden siempre. Quien los pinta
+    // decide si abre la lección o avisa de cuándo se abre; aquí nunca hay un
+    // toque mudo. El área de toque cubre el nodo y su etiqueta (≥ 48 px).
     return Semantics(
-      button: !bloq,
+      button: true,
       label: etiqueta,
       child: GestureDetector(
-        onTap: bloq ? null : onTap,
-        child: Column(
-          children: [
-            if (estado == EstadoNodo.actual)
-              SizedBox(
-                width: 88,
-                height: 116,
-                child: Stack(
-                  alignment: Alignment.center,
-                  clipBehavior: Clip.none,
-                  children: [
-                    const Positioned(
-                      top: 28,
-                      child: SizedBox(
-                        width: 88,
-                        height: 88,
-                        child: CircularProgressIndicator(
-                          value: 0,
-                          strokeWidth: 8,
-                          backgroundColor: DuoCores.trilla,
-                          color: DuoCores.verdeClaro,
+        behavior: HitTestBehavior.opaque,
+        onTap: onTap,
+        child: ConstrainedBox(
+          constraints: const BoxConstraints(minWidth: 88, minHeight: 48),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              if (estado == EstadoNodo.actual)
+                SizedBox(
+                  width: 88,
+                  height: 116,
+                  child: Stack(
+                    alignment: Alignment.center,
+                    clipBehavior: Clip.none,
+                    children: [
+                      const Positioned(
+                        top: 28,
+                        child: SizedBox(
+                          width: 88,
+                          height: 88,
+                          child: CircularProgressIndicator(
+                            value: 0,
+                            strokeWidth: 8,
+                            backgroundColor: DuoCores.trilla,
+                            color: DuoCores.verdeClaro,
+                          ),
                         ),
                       ),
-                    ),
-                    Positioned(top: 42, child: boton),
-                    Positioned(
-                      top: 0,
-                      child: Container(
-                        key: const Key('learn_empezar'),
-                        padding: const EdgeInsets.symmetric(
-                            horizontal: 12, vertical: 8),
-                        decoration: BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.circular(12),
-                          border: Border.all(color: DuoCores.trilla, width: 2),
+                      Positioned(top: 42, child: boton),
+                      Positioned(
+                        top: 0,
+                        child: Container(
+                          key: const Key('learn_empezar'),
+                          padding: const EdgeInsets.symmetric(
+                              horizontal: 12, vertical: 8),
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(12),
+                            border:
+                                Border.all(color: DuoCores.trilla, width: 2),
+                          ),
+                          child: Text(empezar.toUpperCase(),
+                              style: const TextStyle(
+                                  fontWeight: FontWeight.w900,
+                                  letterSpacing: 0.6,
+                                  color: DuoCores.textoVerde)),
                         ),
-                        child: Text(empezar.toUpperCase(),
-                            style: const TextStyle(
-                                fontWeight: FontWeight.w900,
-                                letterSpacing: 0.6,
-                                color: DuoCores.textoVerde)),
                       ),
-                    ),
-                  ],
-                ),
-              )
-            else
-              boton,
-            const SizedBox(height: 2),
-            Text(etiqueta,
-                style: TextStyle(
-                    fontSize: 13,
-                    fontWeight: FontWeight.w800,
-                    color: bloq ? AppTheme.textMuted : DuoCores.textoVerde)),
-          ],
+                    ],
+                  ),
+                )
+              else
+                boton,
+              const SizedBox(height: 2),
+              Text(etiqueta,
+                  style: TextStyle(
+                      fontSize: 13,
+                      fontWeight: FontWeight.w800,
+                      color: bloq ? AppTheme.textMuted : DuoCores.textoVerde)),
+            ],
+          ),
         ),
       ),
     );
