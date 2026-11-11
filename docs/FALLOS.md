@@ -43,3 +43,8 @@ Formato de cada entrada (una por fallo):
 - Qué pasó: Claude Code empujó a pedagogia (PR #46) un commit con `flutter analyze` diciendo «1 issue found», sin mirarlo: un error de compilación en lib/features/criancas/xogo_lua.dart. El CI iba a caer. Lo hizo Claude Code.
 - Causa raíz: el comando encadenaba analyze y push sin cortar si analyze fallaba (contra R000).
 - Guarda: tools/push_seguro.sh (dart format, flutter analyze y los gates de órdenes y fallos; si alguno falla, no hace commit ni push)
+
+## F-20261111-1 · Las escenas de los ejercicios, solo en texto
+- Qué pasó: los retos de cada semana describen su escena («Un vaso de plástico e unha esponxa») y la app la enseñaba solo en texto, sin imagen. Frank: «las imágenes son esenciales». Lo hizo Claude Code.
+- Causa raíz: el campo `escena` se añadió en aa8d7fdb (F5) como texto, sin pedir su lámina, y ningún gate comprobaba que cada escena tuviera imagen.
+- Guarda: tools/check_imagenes_escenas.py (en tools/gates.sh: falla si una escena del contenido no tiene lámina, si la lámina no existe o si su carpeta no está en pubspec.yaml)

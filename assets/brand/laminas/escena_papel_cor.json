@@ -1,0 +1,75 @@
+{
+ "vb": 160,
+ "vh": 100,
+ "nota": "Escena do reto: Un papel grande e unha soa cor para compartir / Un papel grande y un solo color para compartir. Obxectos: 1 papel grande en blanco, 1 cera de un solo color (azul). Sen texto.",
+ "formas": [
+  {
+   "t": "rrect",
+   "x": 17.68,
+   "y": 15.44,
+   "w": 80.64,
+   "h": 69.12,
+   "r": 2.88,
+   "f": "#ffffff",
+   "s": "#94a3b8",
+   "sw": 2.88
+  },
+  {
+   "t": "poli",
+   "p": [
+    [
+     86.8,
+     84.56
+    ],
+    [
+     98.32,
+     84.56
+    ],
+    [
+     98.32,
+     73.04
+    ]
+   ],
+   "f": "#e2e8f0",
+   "s": "#94a3b8",
+   "sw": 2.88
+  },
+  {
+   "t": "rrect",
+   "x": 114.4,
+   "y": 51.84,
+   "w": 29.12,
+   "h": 8.32,
+   "r": 2.08,
+   "f": "#2563eb",
+   "s": "#1e3a8a",
+   "sw": 2.08
+  },
+  {
+   "t": "poli",
+   "p": [
+    [
+     143.52,
+     51.84
+    ],
+    [
+     151.84,
+     56.0
+    ],
+    [
+     143.52,
+     60.16
+    ]
+   ],
+   "f": "#1d4ed8",
+   "s": "#1e3a8a",
+   "sw": 2.08
+  },
+  {
+   "t": "ruta",
+   "d": "M119.6 51.84 L119.6 60.16 M137.28 51.84 L137.28 60.16",
+   "s": "#93c5fd",
+   "sw": 1.56
+  }
+ ]
+}

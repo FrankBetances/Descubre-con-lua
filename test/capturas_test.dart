@@ -9,7 +9,9 @@ import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 import 'package:descubre_con_lua/core/audio/mock_offline_audio_service.dart';
+import 'package:descubre_con_lua/core/brand/imaxe_escena.dart';
 import 'package:descubre_con_lua/core/brand/lua_pixel.dart';
+import 'package:descubre_con_lua/features/leccions/widgets/leccion_da_semana.dart';
 import 'package:descubre_con_lua/core/localization/app_language.dart';
 import 'package:descubre_con_lua/core/storage/local_store.dart';
 import 'package:descubre_con_lua/core/theme/app_theme.dart';
@@ -474,6 +476,62 @@ void main() {
                 await t.pumpAndSettle();
               }
             }
+          },
+        );
+      });
+    }
+
+    // O-20261111-1: la imagen de la escena encima de su texto, en el primer
+    // paso de la lección de Duolingo y en la lección de la semana (casa y aula).
+    testWidgets('escena · leccion duolingo · $l', (tester) async {
+      final lec = Leccions.lidas!.da('curso_4_5', 11, 1)!.$2;
+      await capturar(
+        tester,
+        'escena-duolingo-$l',
+        LeccionDuolingoScreen(
+          pasos: pasosDoDia(lec, 1, lang),
+          language: lang,
+          semana: CriancasStore.semana('curso_4_5', 11, 1),
+          palabrasDaSemana: [for (final p in lec.novas) p.en],
+          store: CriancasStore.enMemoria(const [
+            Crianza(id: 'c1', nome: 'Uxía', idade: 4, curso: 'curso_4_5'),
+          ]),
+          crianza: const Crianza(
+              id: 'c1', nome: 'Uxía', idade: 4, curso: 'curso_4_5'),
+          agora: DateTime(2026, 11, 2, 18),
+        ),
+        tema: AppTheme.temaFamilias,
+      );
+    });
+    for (final aula in [false, true]) {
+      testWidgets('escena · leccion da semana · ${aula ? 'aula' : 'casa'} · $l',
+          (tester) async {
+        XogosFogar.sembrar(
+            XogosFogar.fromRaw(File(XogosFogar.assetPath).readAsStringSync()));
+        SteamDoMes.sembrar(
+            SteamDoMes.fromRaw(File(SteamDoMes.assetPath).readAsStringSync()));
+        await capturar(
+          tester,
+          'escena-leccion-${aula ? 'aula' : 'casa'}-$l',
+          Scaffold(
+            backgroundColor: AppTheme.pageBg,
+            body: SafeArea(
+              child: SingleChildScrollView(
+                child: LeccionDaSemana(
+                  leccions: Leccions.lidas!,
+                  cursoId: 'curso_3_4',
+                  mesCalendario: 1,
+                  semana: 2,
+                  language: lang,
+                  enAula: aula,
+                ),
+              ),
+            ),
+          ),
+          tema: aula ? AppTheme.lightTheme : AppTheme.temaFamilias,
+          antesDeRetratar: (t) async {
+            await Scrollable.ensureVisible(t.element(find.byType(ImaxeEscena)),
+                alignment: 0.25);
           },
         );
       });

@@ -1,0 +1,241 @@
+{
+ "_doc": "Xerado por tools/gen_escenas_retos.py (O-20261111-1). Non se edita a man.",
+ "escenas": [
+  {
+   "clave": "escena_vaso_esponxa",
+   "escena": {
+    "gl": "Un vaso de plástico e unha esponxa",
+    "es": "Un vaso de plástico y una esponja"
+   },
+   "etiqueta": {
+    "gl": "Imaxe: Un vaso de plástico e unha esponxa",
+    "es": "Imagen: Un vaso de plástico y una esponja"
+   },
+   "obxectos": [
+    "1 vaso de plástico",
+    "1 esponja"
+   ],
+   "pezas": [
+    "vaso",
+    "esponxa"
+   ]
+  },
+  {
+   "clave": "escena_bolsa_tesouros",
+   "escena": {
+    "gl": "Unha bolsa de tea para os tesouros",
+    "es": "Una bolsa de tela para los tesoros"
+   },
+   "etiqueta": {
+    "gl": "Imaxe: Unha bolsa de tea para os tesouros",
+    "es": "Imagen: Una bolsa de tela para los tesoros"
+   },
+   "obxectos": [
+    "1 bolsa de tela con asas"
+   ],
+   "pezas": [
+    "bolsa_tea"
+   ]
+  },
+  {
+   "clave": "escena_froita_merenda",
+   "escena": {
+    "gl": "A froita da merenda",
+    "es": "La fruta de la merienda"
+   },
+   "etiqueta": {
+    "gl": "Imaxe: A froita da merenda",
+    "es": "Imagen: La fruta de la merienda"
+   },
+   "obxectos": [
+    "1 manzana",
+    "1 naranja"
+   ],
+   "pezas": [
+    "mazan",
+    "laranxa"
+   ]
+  },
+  {
+   "clave": "escena_xabon_toalla",
+   "escena": {
+    "gl": "O xabón e a toalla",
+    "es": "El jabón y la toalla"
+   },
+   "etiqueta": {
+    "gl": "Imaxe: O xabón e a toalla",
+    "es": "Imagen: El jabón y la toalla"
+   },
+   "obxectos": [
+    "1 jabón",
+    "1 toalla"
+   ],
+   "pezas": [
+    "xabon",
+    "toalla"
+   ]
+  },
+  {
+   "clave": "escena_peluche_manta",
+   "escena": {
+    "gl": "Un peluche de animal e unha manta",
+    "es": "Un peluche de animal y una manta"
+   },
+   "etiqueta": {
+    "gl": "Imaxe: Un peluche de animal e unha manta",
+    "es": "Imagen: Un peluche de animal y una manta"
+   },
+   "obxectos": [
+    "1 peluche de oso",
+    "1 manta doblada"
+   ],
+   "pezas": [
+    "peluche_corpo",
+    "oso",
+    "manta_dobrada"
+   ]
+  },
+  {
+   "clave": "escena_caixa_pelota",
+   "escena": {
+    "gl": "Unha caixa de cartón e unha pelota",
+    "es": "Una caja de cartón y una pelota"
+   },
+   "etiqueta": {
+    "gl": "Imaxe: Unha caixa de cartón e unha pelota",
+    "es": "Imagen: Una caja de cartón y una pelota"
+   },
+   "obxectos": [
+    "1 caja de cartón",
+    "1 pelota"
+   ],
+   "pezas": [
+    "caixa",
+    "pelota"
+   ]
+  },
+  {
+   "clave": "escena_amorear",
+   "escena": {
+    "gl": "Bloques, caixas ou envases baleiros para amorear",
+    "es": "Bloques, cajas o envases vacíos para apilar"
+   },
+   "etiqueta": {
+    "gl": "Imaxe: Bloques, caixas ou envases baleiros para amorear",
+    "es": "Imagen: Bloques, cajas o envases vacíos para apilar"
+   },
+   "obxectos": [
+    "2 bloques apilados (rojo y azul)",
+    "1 caja de cartón",
+    "1 envase vacío"
+   ],
+   "pezas": [
+    "bloque_vermello",
+    "bloque_azul",
+    "caixa",
+    "envase"
+   ]
+  },
+  {
+   "clave": "escena_pratos_vasos_culleres",
+   "escena": {
+    "gl": "Pratos, vasos e culleres de verdade",
+    "es": "Platos, vasos y cucharas de verdad"
+   },
+   "etiqueta": {
+    "gl": "Imaxe: Pratos, vasos e culleres de verdade",
+    "es": "Imagen: Platos, vasos y cucharas de verdad"
+   },
+   "obxectos": [
+    "2 platos",
+    "2 vasos",
+    "2 cucharas"
+   ],
+   "pezas": [
+    "prato",
+    "prato",
+    "vaso_verdade",
+    "vaso_verdade",
+    "culler",
+    "culler"
+   ]
+  },
+  {
+   "clave": "escena_peluche_pano",
+   "escena": {
+    "gl": "Un peluche e unha venda ou un pano",
+    "es": "Un peluche y una venda o un pañuelo"
+   },
+   "etiqueta": {
+    "gl": "Imaxe: Un peluche e unha venda ou un pano",
+    "es": "Imagen: Un peluche y una venda o un pañuelo"
+   },
+   "obxectos": [
+    "1 peluche de oso",
+    "1 pañuelo"
+   ],
+   "pezas": [
+    "peluche_corpo",
+    "oso",
+    "pano"
+   ]
+  },
+  {
+   "clave": "escena_chuvasqueiro_botas",
+   "escena": {
+    "gl": "O chuvasqueiro e as botas",
+    "es": "El chubasquero y las botas"
+   },
+   "etiqueta": {
+    "gl": "Imaxe: O chuvasqueiro e as botas",
+    "es": "Imagen: El chubasquero y las botas"
+   },
+   "obxectos": [
+    "1 chubasquero amarillo con capucha",
+    "1 par de botas de agua"
+   ],
+   "pezas": [
+    "abrigo",
+    "botas"
+   ]
+  },
+  {
+   "clave": "escena_papel_cor",
+   "escena": {
+    "gl": "Un papel grande e unha soa cor para compartir",
+    "es": "Un papel grande y un solo color para compartir"
+   },
+   "etiqueta": {
+    "gl": "Imaxe: Un papel grande e unha soa cor para compartir",
+    "es": "Imagen: Un papel grande y un solo color para compartir"
+   },
+   "obxectos": [
+    "1 papel grande en blanco",
+    "1 cera de un solo color (azul)"
+   ],
+   "pezas": [
+    "papel",
+    "cera"
+   ]
+  },
+  {
+   "clave": "escena_mochila_billete",
+   "escena": {
+    "gl": "Unha mochila e un billete feito por vós",
+    "es": "Una mochila y un billete hecho por vosotros"
+   },
+   "etiqueta": {
+    "gl": "Imaxe: Unha mochila e un billete feito por vós",
+    "es": "Imagen: Una mochila y un billete hecho por vosotros"
+   },
+   "obxectos": [
+    "1 mochila",
+    "1 billete hecho a mano, sin letras"
+   ],
+   "pezas": [
+    "mochila",
+    "billete"
+   ]
+  }
+ ]
+}
