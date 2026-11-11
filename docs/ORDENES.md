@@ -268,3 +268,12 @@ Diagnóstico: `git log -S` sobre `escena`, `imaxe`, `Image.asset`, `pubspec.yaml
 - [x] Gate: falla si una escena del contenido no tiene imagen, si la lámina no existe o si no está en pubspec · evidencia: tools/check_imagenes_escenas.py, en tools/gates.sh
 - [x] Capturas gl/es de varios ejercicios con su imagen · evidencia: test/capturas_test.dart, «escena ·», escribe docs/capturas/escena-duolingo-gl.png y -es, escena-leccion-casa-gl/-es y escena-leccion-aula-gl/-es; más reto-semana-gl/-es
 - [x] Mergeado en main con CI en verde · evidencia: tools/check_imagenes_escenas.py ya corre en main: PR #48 mergeado (merge f83d8233, 11/11/2026) con el run 42957693645 de gates en verde sobre 49579fb5
+
+## O-20261111-3 · El arreglo de los días de Hoy, solo, a main
+Estado: abierta
+> Orden de Frank (11 nov 2026): Opción 2. Hazlo ahora, sin preguntarme más: 1. Crea la rama fix/dias-hoy desde origin/main (89691006). 2. git cherry-pick 303be16e (solo el arreglo de los días de Hoy y su test test/features/ux_l3_test.dart). Si hay conflicto, PARA y dímelo. 3. Corre en local: dart format --output=none --set-exit-if-changed . && flutter analyze && flutter test --exclude-tags capturas && tools/gates.sh --fast. Todo debe salir en verde. 4. Push de fix/dias-hoy, abre el PR contra main y espera a que el CI salga en verde. Con el CI en verde, autorizo el merge a main y el push. Si el CI sale rojo, NO mergees: pégame el error. 5. Registra la evidencia en docs/ORDENES.md (PR, SHA del merge y run en verde), dentro del mismo PR o en uno aparte de solo documentación. 6. NO toques feat/laminas-ejercicios ni empieces la orden del banco Fluent/Iconify: las láminas las hace otro agente desde esa rama. Entrégame: URL del PR, SHA del merge, run de CI en verde y lo que no hayas verificado.
+Fuente: lib/features/familias/widgets/learn_duolingo.dart (y hoxe_familias_screen.dart, ux_l3_test.dart y criancas_test.dart), tal como quedan en el commit 303be16e de la rama feat/laminas-ejercicios: la parte B de O-20261111-2
+
+- [ ] Los cinco nodos de los días de Hoy responden al toque: lunes y hoy abren su lección y un día futuro avisa en gl y es, sin tocar el banner · evidencia:
+- [ ] En local, dart format, flutter analyze, flutter test y tools/gates.sh --fast en verde · evidencia:
+- [ ] PR contra main mergeado con el CI en verde · evidencia:
