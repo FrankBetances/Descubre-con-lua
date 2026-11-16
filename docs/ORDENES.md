@@ -268,3 +268,15 @@ Diagnóstico: `git log -S` sobre `escena`, `imaxe`, `Image.asset`, `pubspec.yaml
 - [x] Gate: falla si una escena del contenido no tiene imagen, si la lámina no existe o si no está en pubspec · evidencia: tools/check_imagenes_escenas.py, en tools/gates.sh
 - [x] Capturas gl/es de varios ejercicios con su imagen · evidencia: test/capturas_test.dart, «escena ·», escribe docs/capturas/escena-duolingo-gl.png y -es, escena-leccion-casa-gl/-es y escena-leccion-aula-gl/-es; más reto-semana-gl/-es
 - [x] Mergeado en main con CI en verde · evidencia: tools/check_imagenes_escenas.py ya corre en main: PR #48 mergeado (merge f83d8233, 11/11/2026) con el run 42957693645 de gates en verde sobre 49579fb5
+
+## O-20261116-1 · Revisión del código y plan para que la app pese menos
+Estado: abierta
+> ayudame a realizar un revision del codigo y hacer un /plan de mejoras para que las ejecute sonnet , quiero optimizar la app y que sea menos pesada
+Fuente: tools/voice_corpus.py (las 37.090 locuciones, medidas en 89691006 con du, ffprobe y una muestra de 300 recodificadas con libopus); android/app/build.gradle, android/voice_pack/build.gradle, lib/data/repositories/content_repository.dart
+
+- [x] Un plan escrito, ejecutable por otra sesión sin contexto, con el peso de partida medido por categoría y en números · evidencia: docs/PLAN_OPTIMIZACION_PESO.md, §1 «Dónde está el peso»
+- [x] Cada mejora con su ahorro esperado medido (no supuesto), los ficheros que toca, el gate que la protege y su criterio de aceptación · evidencia: docs/PLAN_OPTIMIZACION_PESO.md, §3 lotes L0-L5
+- [x] Lo que solo puede decidir Frank (calidad de voz, voz lenta, coste de CI) escrito como pregunta, no como hecho · evidencia: docs/PLAN_OPTIMIZACION_PESO.md, §2 «Decisiones de Frank»
+- [ ] Tamaño de descarga del AAB medido con bundletool antes y después, y el «después» al menos un 40 % menor · evidencia:
+- [ ] La voz suena igual de clara en un Android real, en gl, es y en, tras el cambio de códec · evidencia:
+- [ ] Mergeado en main con CI en verde · evidencia:
