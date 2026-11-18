@@ -309,3 +309,13 @@ Opción A, tal como la eligió Frank: estimulación del lenguaje universal y edu
 - [ ] Gate: falla si una semana del piloto no tiene los tres pasos, si un par no difiere en un solo fonema, si una palabra no tiene imagen o voz, o si aparece «logopedia», «terapia» o «trastorno» en assets/, lib/ o docs/ públicos · evidencia:
 - [ ] Revisado por una logopeda o por Frank: los pares son válidos y adecuados a 4-5 años · evidencia:
 - [ ] Frank lo ve en la app (Na casa → Hoy → día → Continuar) en tres semanas y da el piloto por bueno antes de extenderlo a otras unidades o edades · evidencia:
+
+## O-20261118-4 · Un único plan que registre cada commit, para auditar paso a paso
+Estado: abierta
+> Por cierto genera un único plan que vaya guardando cada Commit para poder ir auditando al trabajo, paso por paso
+Fuente: docs/PLAN_ANTIGRAVITY.md (el plan de O-20261118-2 y O-20261118-3, ahora el único plan de lo pendiente)
+
+- [x] Un único plan con todos los pasos numerados (P0.1…P5.4), cada uno con su bloque y si para a esperar a Frank · evidencia: docs/PLAN_ANTIGRAVITY.md, «Pasos»
+- [x] Un registro de commits en el plan: paso, SHA, fecha, qué cambia en la app, gates, evidencia y revisión · evidencia: docs/PLAN_ANTIGRAVITY.md, «Registro de commits»
+- [x] Gate que tumba si un commit desde la base no empieza por su paso o no tiene fila, si una fila no tiene SHA, fecha, gates o evidencia, o si un SHA no está en la rama · evidencia: tools/check_registro_commits.py, en tools/gates.sh; probado el 18/11/2026 en una copia desde caca7cb5: falla sin fila, pasa con fila, falla con un commit sin paso. En CI (clon sin historia) solo comprueba la tabla, y lo dice
+- [ ] Usado por Antigravity en cada commit y auditado por Claude Code fila a fila · evidencia:

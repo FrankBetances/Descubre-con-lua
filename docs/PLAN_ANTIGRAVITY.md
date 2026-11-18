@@ -32,6 +32,33 @@ referencia del bloque 2 es esa cifra nueva, no la de caca7cb5.
 `origin/feat/laminas-ejercicios`. Ningún otro agente toca esos ficheros
 mientras Antigravity trabaja. Claude Code no empuja nada a esa rama.
 
+## Pasos (el único plan; cada commit lleva el identificador de su paso)
+
+Este fichero es **el único plan** de lo pendiente. Cada commit empieza por el
+identificador de su paso (`P2.1: …`) y deja su fila en el «Registro de
+commits» del final. Así Frank y Claude Code auditan el trabajo commit a
+commit. Lo vigila `tools/check_registro_commits.py`, dentro de `tools/gates.sh`.
+
+| Paso | Qué | Bloque | Para y espera a Frank |
+| --- | --- | --- | --- |
+| P0.1 | Rescate: detectar y conservar el trabajo local sin subir | 0 | si aparece algo sin subir |
+| P0.2 | Crear `antigravity/pendiente` desde `origin/feat/laminas-ejercicios` e integrar lo útil del rescate | 0 | no |
+| P0.3 | Integrar O-20261118-1 (Lúa más grande, junto al camino y con accesorios) | 0 | no |
+| P0.4 | Cerrar O-20261111-3 como absorbida | 0 | no |
+| P1.1 | Preguntar y anotar la fuente de las imágenes, con su licencia | 1 | **sí** |
+| P2.1 | Las 12 escenas de reto con la fuente nueva, capturas gl/es | 2 | **sí**: mira tres y aprueba el estilo |
+| P2.2 | Imágenes de todas las palabras y frases de 4-5 años (40 semanas) | 2 | **sí**: mira tres semanas al azar |
+| P2.3 | Resto de edades y banco TPR, hasta 0 piezas sin lámina | 2 | no |
+| P2.4 | `docs/laminas-ejercicios.md` con una fila por pieza | 2 | no |
+| P3.1 | Unidades 21-48 con su material semanal completo | 3 | si falta base en `referencias/` |
+| P3.2 | Capturas de escritorio de Hoy en las cinco edades, gl y es | 3 | no |
+| P3.3 | 4-5 años: lo de hoy en la primera pantalla de 412×915 | 3 | no |
+| P4.1 | Cierres de papeleo con PR, SHA y run en verde | 4 | no |
+| P5.1 | Proponer la unidad y los pares del piloto de escucha y palabras | 5 | **sí** |
+| P5.2 | Revisión de los pares por Frank o una logopeda | 5 | **sí** |
+| P5.3 | Construir el piloto con su gate y capturas gl/es | 5 | no |
+| P5.4 | Frank lo ve en la app y aprueba extenderlo | 5 | **sí** |
+
 ## Bloque 0 · Rescate e integración
 
 1. Ejecuta el «BLOQUE 0 · RESCATE» que Frank te dio el 18/11, tal cual, en la
@@ -196,7 +223,9 @@ Falla si:
   mira la diferencia y se dice qué cambió.
 - `test/failures/` y `.dart_tool/` están en el repositorio: no los borres ni
   los incluyas en un commit.
-- Un commit por bloque, solo a `antigravity/pendiente`. Ni merge ni PR a
+- Un commit por paso (no por bloque), que empieza por su identificador
+  (`P2.1: …`) y añade su fila al «Registro de commits». Solo a
+  `antigravity/pendiente`. Ni merge ni PR a
   `main` hasta que Claude Code haya revisado y Frank diga sí.
 - Cada fallo que Frank señale va a `docs/FALLOS.md` con su guarda (R∞+).
 
@@ -209,8 +238,10 @@ verificado.
 
 ## Revisión de Claude Code (lo que se comprobará)
 
-1. `git log origin/main..origin/antigravity/pendiente`: que cada commit
-   corresponde a un bloque y no toca lo que no se pidió (regla 0a).
+1. El «Registro de commits», fila a fila contra
+   `git log caca7cb5..origin/antigravity/pendiente`: que cada commit es su
+   paso, que su diff solo toca lo de ese paso (regla 0a) y que la evidencia
+   existe. Claude Code rellena la columna «Revisión».
 2. Corre en limpio `dart format`, `flutter analyze`, `flutter test` y
    `tools/gates.sh`. Se pega la salida.
 3. `check_laminas_leccion.py --resumo` = 0, y 20 piezas al azar abiertas una a
@@ -219,3 +250,16 @@ verificado.
    → día → Continuar, en tres semanas al azar de 4-5 años.
 5. Cada criterio de `docs/ORDENES.md` con su evidencia existente.
 6. Informe a Frank, empezando por lo que falta.
+
+## Registro de commits
+
+Una fila por commit, en orden, en el mismo commit que registra. Como un
+commit no puede llevar su propio SHA, la última fila pone «este» y el commit
+siguiente lo cambia por el SHA real. «Gates» es la línea final de
+`tools/gates.sh` (p. ej. «0 failed»); «Revisión» la rellena Claude Code al
+auditar («ok» o qué falla).
+
+Base: `caca7cb5`
+
+| Paso | Commit | Fecha | Qué cambia en la app | Gates | Evidencia | Revisión |
+| --- | --- | --- | --- | --- | --- | --- |
