@@ -277,11 +277,20 @@ Fuente: ninguna: los repositorios de imágenes que Frank dice haber dado no est�
 
 Camino: Na casa → Hoy (camino de días a la izquierda, Lúa a la derecha) → nodo del día (lección paso a paso) → Continuar.
 
-- [ ] Na casa → Hoy: se conserva el diseño de días a la izquierda y Lúa a la derecha, sin el hueco vacío entre los dos (Lúa junto al camino, a 412×915), en gl y es · evidencia:
-- [ ] Lúa más grande en Hoy (de 64 a 112 de ancho) · evidencia:
-- [ ] Lúa con un accesorio en Hoy (cómo, pendiente de Frank: en casa los accesorios se ganan) · evidencia:
+- [x] Na casa → Hoy: se conserva el diseño de días a la izquierda y Lúa a la derecha, sin el hueco vacío entre los dos (Lúa junto al camino, a 412×915), en gl y es · evidencia: test/features/ux_l3_test.dart («Lúa, grande, ao lado do camiño e con accesorios», gl y es) y docs/capturas/hoxe-familias-gl.png, hoxe-familias-es.png
+- [x] Lúa más grande en Hoy (de 64 a 112 de ancho) · evidencia: test/features/ux_l3_test.dart («Lúa, grande, ao lado do camiño e con accesorios», gl y es) y docs/capturas/hoxe-familias-gl.png, hoxe-familias-es.png
+> (18/11/2026) primero que nada arreglemos la pantalla, agrega accesorios al gato
+- [x] Lúa con accesorios en Hoy: flor en la cabeza y lazo rojo en el cuello (de Valeria, ya en el catálogo), salvo que el niño lleve puestos otros que ganó; definidos en premios_lua.json («deInicio») · evidencia: test/features/ux_l3_test.dart («Lúa, grande, ao lado do camiño e con accesorios», gl y es) y docs/capturas/hoxe-familias-gl.png, hoxe-familias-es.png
 - [ ] Al tocar el día: la imagen de la escena sale de los repositorios de imágenes que dio Frank y se entiende sin leer el texto (las 12 escenas) · evidencia:
 - [ ] Al pulsar Continuar: cada palabra o frase en inglés del paso lleva su imagen, de la misma fuente · evidencia:
 - [ ] Gate: falla si un paso de la lección con palabra o frase no tiene imagen · evidencia:
 - [ ] Capturas gl/es de Hoy, la escena y un paso con frase, al lado de la fuente · evidencia:
 - [ ] Mergeado en main con CI en verde · evidencia:
+
+## O-20261118-2 · Plan para que Antigravity ejecute lo pendiente; Claude Code lo revisa
+Estado: abierta
+> cuando termines, necesito que generes un plan para que antigravity ejecute todo el trabajo pendiente, tanto de las imagenes y el resto de trabajo pendiente, tu te encargaras de revisarlo cuando este listo
+Fuente: docs/ORDENES.md (criterios abiertos en main y en origin/feat/laminas-ejercicios), docs/FALLOS.md y las ramas de origin con trabajo fuera de main (feat/laminas-ejercicios, fix/dias-hoy, claude/charming-euler-9i23cj, claude/upbeat-fermi-3d0utp)
+
+- [x] docs/PLAN_ANTIGRAVITY.md: cada criterio abierto de cada orden, con su rama, sus pasos, su gate y cómo se da por hecho · evidencia: docs/PLAN_ANTIGRAVITY.md
+- [ ] Revisión de Claude Code de lo que entregue Antigravity, criterio por criterio, con los gates corridos y las capturas miradas · evidencia:

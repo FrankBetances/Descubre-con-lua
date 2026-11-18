@@ -69,6 +69,9 @@ out = {
     "obxectos": obxectos,
     "textos": {k: {"gl": gl[k], "es": es[k]} for k in ("titulo", "subtitulo", "maxNivel", "escaleira", "armario", "posto", "poñer")},
     "humor": {k: {"gl": gl["humor"][k], "es": es["humor"][k]} for k in gl["humor"]},
+    # O-20261118-1 (Frank, 18/11/2026: «agrega accesorios al gato»): en Hoy
+    # Lúa sale con flor y lazo mientras el niño no se ponga otros que ganó.
+    "deInicio": {"head": "head_flower", "neck": "neck_red_bow"},
 }
 Path("assets/content/premios/premios_lua.json").write_text(json.dumps(out, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
 print(f"escrito: {len(out['niveis'])} niveis, {len(insignias)} insignias, {len(obxectos)} obxectos")

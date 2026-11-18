@@ -4,6 +4,7 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
+import 'package:descubre_con_lua/core/brand/lua_valeria.dart';
 import 'package:descubre_con_lua/core/localization/app_language.dart';
 import 'package:descubre_con_lua/core/storage/calendario_store.dart';
 import 'package:descubre_con_lua/core/theme/app_theme.dart';
@@ -142,6 +143,27 @@ void main() {
       // Debajo, la lección de la semana entera.
       await verLeccion(tester);
       expect(leccion, findsOneWidget);
+    });
+
+    testWidgets(
+        'Lúa, grande, ao lado do camiño e con accesorios (${lang.code})',
+        (tester) async {
+      // O-20261118-1: sin hueco entre los días y Lúa, más grande y con la
+      // flor y el lazo de inicio del catálogo (deInicio).
+      await abrirPortal(tester, lang, agora: venres);
+      tester.view.physicalSize = const Size(412, 915);
+      await Pasarela.asentar(tester);
+      final lua = find.byKey(const Key('hoxe_lua'));
+      expect(lua, findsOneWidget);
+      final w = tester.widget<LuaValeria>(lua);
+      expect(w.ancho, 112);
+      expect(w.cabeza, 'head_flower');
+      expect(w.pescozo, 'neck_red_bow');
+      final rl = tester.getRect(lua);
+      final martes = tester.getRect(find.byKey(const Key('learn_nodo_1')));
+      expect(rl.left - martes.right, lessThan(80),
+          reason: 'Lúa pegada al camino, no contra el borde');
+      expect(rl.right, lessThanOrEqualTo(412));
     });
 
     testWidgets('«Máis para casa» vai pregado, ao final (${lang.code})',
