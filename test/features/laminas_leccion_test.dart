@@ -17,7 +17,9 @@ void main() {
       Leccions.fromRaw(File(Leccions.assetPath).readAsStringSync());
 
   bool existe(String clave) =>
-      File(LaminaVectorial.assetDe(clave)).existsSync();
+      File(LaminaVectorial.assetDe(clave)).existsSync() ||
+      LaminasRaster.extensiones
+          .any((ext) => File('assets/brand/laminas/$clave.$ext').existsSync());
 
   /// Lo que le falta a un paso para tener su dibujo; vacío si lo tiene.
   String? falta(PasoLeccion p) {

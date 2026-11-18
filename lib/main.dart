@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'core/audio/local_audio_player.dart';
 import 'core/audio/offline_audio_service.dart';
+import 'core/brand/licenzas_terceiros.dart';
 import 'core/localization/app_language.dart';
 import 'core/localization/significados.dart';
 import 'core/theme/app_theme.dart';
@@ -14,6 +15,7 @@ import 'features/docentes/portal_docentes_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  registrarLicenzasTerceiros();
   final repository = ContentRepository();
   await repository.initialize();
   // El inglés del curso —cinco palabras al día— lo usan el portal, el

@@ -291,7 +291,7 @@ Estado: abierta
 > Prohibido: Play, release, otros repos, git reset --hard, borrar stashes.
 >
 > Respuesta final breve: láminas nuevas y reutilizadas, piezas sin lámina (debe ser 0), SHA del merge, run de CI y lo no verificado en móvil real.
-Fuente: microsoft/fluentui-emoji:assets/<Nombre>/Color, MIT, Copyright (c) Microsoft Corporation
+Fuente: microsoft/fluentui-emoji:assets/<Nombre>/Flat, MIT, Copyright (c) Microsoft Corporation
 Base de contenido: assets/content/leccions/leccions.json (xaSabe, novas, repasa y fraseGramatica de cada lección), assets/content/tpr/**/*.json (las 4.000 palabras del banco, con su tprAction), assets/content/acopros/proxectos_0_2.json (200 palabras de 0-2) y assets/brand/laminas/ (el set propio, 349 láminas + 12 de escena, solo como respaldo donde Fluent no tenga coincidencia). Medido el 11/11/2026: 4.378 palabras y frases distintas (actualizado a 4.389 en check_laminas_leccion.py).
 Regla fija de licencias (Frank, 18/11/2026): Descubre con Lúa **tiene ánimo de lucro**. Ninguna imagen, fuente, sonido, paquete ni contenido de terceros puede tener licencia no comercial (`NC`) ni sin derivadas (`ND`). Quedan descartadas ARASAAC (`CC BY-NC-SA`) y cualquier `CC BY-NC`. Solo valen `MIT`, `Apache 2.0`, `BSD`, `CC0`, `CC BY` y `OFL`. Fluent Emoji (`MIT`, composición de 2-3 emojis para las 97 piezas de `(b)`) sigue valiendo.
 

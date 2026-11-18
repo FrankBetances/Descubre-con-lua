@@ -1,50 +1,95 @@
 {
- "_doc": "Xerado por tools/gen_laminas_palabras.py (O-20261111-2). Non se edita a man.",
+ "_doc": "Xerado por tools/gen_laminas_palabras.py e ferramentas do banco (O-20261111-2 / O-20261111-4). Non se edita a man.",
  "pezas": {
   "bandage": {
    "clave": "pal_venda",
    "orixe": "nova",
-   "porque": "Un rollo de venda con la tira a medio desenrollar y su cierre."
+   "porque": "Un rollo de venda con la tira a medio desenrollar y su cierre.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_palabras.py#venda",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
   },
   "bright orange": {
    "clave": "pal_laranxa_vivo",
    "orixe": "nova",
-   "porque": "Un niño enseña en alto una pelota de color naranja vivo: el gesto."
+   "porque": "Un niño enseña en alto una pelota de color naranja vivo: el gesto.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_palabras.py#laranxa_vivo",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
   },
   "curl into a ball": {
    "clave": "pal_bola",
    "orixe": "nova",
-   "porque": "Un niño enroscado en el suelo, hecho una bola, abrazándose las piernas: el gesto."
+   "porque": "Un niño enroscado en el suelo, hecho una bola, abrazándose las piernas: el gesto.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_palabras.py#bola",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
   },
   "downhill": {
    "clave": "pal_costa_abaixo",
    "orixe": "nova",
-   "porque": "Un niño camina cuesta abajo y una flecha marca la bajada."
+   "porque": "Un niño camina cuesta abajo y una flecha marca la bajada.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_palabras.py#costa_abaixo",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
   },
   "hedgehog": {
    "clave": "pal_ourizo",
    "orixe": "nova",
-   "porque": "Un erizo de perfil, con sus púas, el hocico y las patas."
+   "porque": "Un erizo de perfil, con sus púas, el hocico y las patas.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_palabras.py#ourizo",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
   },
   "hilltop": {
    "clave": "pal_cima",
    "orixe": "nova",
-   "porque": "Un niño en lo más alto del monte, con los brazos estirados hacia arriba: el gesto."
+   "porque": "Un niño en lo más alto del monte, con los brazos estirados hacia arriba: el gesto.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_palabras.py#cima",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
   },
   "i said the bird had two": {
    "clave": "pal_paxaro_duas_patas",
    "orixe": "nova",
-   "porque": "Un pájaro de pie sobre sus dos patas, bien visibles."
+   "porque": "Un pájaro de pie sobre sus dos patas, bien visibles.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_palabras.py#paxaro_duas_patas",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
   },
   "steep": {
    "clave": "pal_empinado",
    "orixe": "nova",
-   "porque": "Una cuesta muy empinada y, abajo, un niño pequeño que la señala hacia arriba."
+   "porque": "Una cuesta muy empinada y, abajo, un niño pequeño que la señala hacia arriba.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_palabras.py#empinado",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
   },
   "wait for me": {
    "clave": "pal_esperame",
    "orixe": "nova",
-   "porque": "Un niño corre detrás con la mano tendida y la de delante se gira a mirarlo."
+   "porque": "Un niño corre detrás con la mano tendida y la de delante se gira a mirarlo.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_palabras.py#esperame",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
   }
  }
 }

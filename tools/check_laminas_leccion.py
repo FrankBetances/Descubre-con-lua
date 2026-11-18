@@ -64,9 +64,9 @@ def main() -> int:
         elif lamina.startswith("escena_"):
             sen[conxunto] += 1
             fallos.append(f"{onde}: «{en}» usa a lámina de escena de reto {lamina}")
-        elif not (LAMINAS / f"{lamina}.json").is_file():
+        elif not any((LAMINAS / f"{lamina}.{ext}").is_file() for ext in ("json", "webp", "jpg", "jpeg", "png")):
             sen[conxunto] += 1
-            fallos.append(f"{onde}: «{en}» → {lamina}.json non existe")
+            fallos.append(f"{onde}: «{en}» → {lamina} non existe")
     for k in total:
         print(f"  {k}: {total[k]} pezas, {sen[k]} sen lámina válida")
     if fallos:

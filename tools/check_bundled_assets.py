@@ -140,6 +140,10 @@ def literals_in_content() -> dict[str, set[str]]:
                 candidatos = [
                     f"assets/brand/laminas/{clave}.json",
                     f"assets/brand/laminas/{clave}.txt",
+                    f"assets/brand/laminas/{clave}.webp",
+                    f"assets/brand/laminas/{clave}.jpg",
+                    f"assets/brand/laminas/{clave}.jpeg",
+                    f"assets/brand/laminas/{clave}.png",
                 ]
                 elegido = next(
                     (c for c in candidatos if (ROOT / c).is_file()),

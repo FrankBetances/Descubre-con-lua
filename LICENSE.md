@@ -129,11 +129,16 @@ queda fuera del alcance de este documento:
 | Celtia · Proxecto Nós | Modelo de voz en gallego, usado en compilación | Términos del modelo en su repositorio de origen |
 | Sharvard · rhasspy/piper-voices | Modelo de voz en castellano, usado en compilación | Términos del modelo en su repositorio de origen |
 | LJSpeech · rhasspy/piper-voices | Modelo de voz en inglés, usado en compilación | Términos del modelo en su repositorio de origen |
+| Microsoft Fluent Emoji (Flat) | Banco base de ilustraciones vectoriales | MIT (`assets/third_party/fluentui-emoji/LICENSE` y `tools/banco/fluentui-emoji/`) |
+| Iconify (sets MIT/Apache/CC0) y Game Icons | Pictogramas de apoyo convertidos en compilación | MIT, Apache 2.0, CC0 1.0 y CC BY 3.0 (`tools/banco/iconify-icon-sets/` y `ATTRIBUTION.md`) |
+| Vocabulary Flashcard Dataset (dnizfor) | Ilustraciones raster de vocabulario (sin marcas ni personajes) | MIT (`tools/banco/dnizfor-vocabulary-flashcard/` y `ATTRIBUTION.md`) |
+| PB Image Bank (global-asp/pb-imagebank) | Escenas de apoyo de Pratham Books / StoryWeaver | CC BY 4.0 con crédito al ilustrador (`tools/banco/pb-imagebank/` y `ATTRIBUTION.md`) |
 
-Los modelos de voz **no viajan en la aplicación y no se ejecutan en el
-dispositivo**: solo se usan en tiempo de compilación para producir los ficheros
-de audio que sí viajan. Quien vaya a hacer uso institucional o comercial debe
-comprobar por su cuenta que los términos de cada modelo amparan ese uso.
+Los modelos de voz y los repositorios originales de imágenes **no viajan en la
+aplicación y no se ejecutan en el dispositivo**: solo se usan en tiempo de
+compilación para producir los ficheros de audio y las láminas que sí viajan.
+Quien vaya a hacer uso institucional o comercial debe comprobar por su cuenta que
+los términos de cada componente amparan ese uso.
 
 ## 9. Sin garantía
 
@@ -204,9 +209,12 @@ author's crest to identify a third party's products or services.
 
 **Third-party components keep their own licences** and fall outside this
 document: the Nunito typeface (SIL OFL 1.1, `assets/fonts/OFL.txt`), Flutter,
-Dart and their packages, and the Celtia, Sharvard and LJSpeech voice models,
-which run only at build time and never on the device. The institutional logos
-shown in the credits are their owners' marks and are not licensed here.
+Dart and their packages, the Celtia, Sharvard and LJSpeech voice models, and
+the image banks listed in section 8 and `ATTRIBUTION.md` — Microsoft Fluent Emoji
+(Flat, MIT), Iconify open sets (MIT, Apache 2.0, CC0) and Game Icons (CC BY 3.0),
+Vocabulary Flashcard Dataset (dnizfor, MIT), and PB Image Bank (CC BY 4.0,
+illustrators credited). Voice models and upstream image repositories run only at
+build time and never travel inside the APK.
 
 **No warranty.** The app is provided "as is", without warranty of any kind.
 

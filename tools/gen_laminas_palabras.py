@@ -257,9 +257,23 @@ def pezas_ensinadas():
 
 def construir():
     laminas, mapa = {}, {}
+    if MAPA.exists():
+        anterior = json.loads(MAPA.read_text(encoding="utf-8")).get("pezas") or {}
+        for k, v in anterior.items():
+            if k not in DEBUXOS:
+                mapa[k] = v
     for k, (slug, debuxo, porque) in sorted(DEBUXOS.items()):
         if debuxo is None:
-            mapa[k] = {"clave": slug, "orixe": "reutilizada", "porque": porque}
+            mapa[k] = {
+                "clave": slug,
+                "orixe": "reutilizada",
+                "porque": porque,
+                "fuente": "propia",
+                "asset": f"assets/brand/laminas/{slug}.json",
+                "sha": "1973cc64",
+                "licencia": "Propia",
+                "revisado": True,
+            }
             continue
         clave = f"pal_{slug}"
         formas = []
@@ -271,9 +285,18 @@ def construir():
                 f["p"] = [[round(a, 1), round(b, 1)] for a, b in f["p"]]
             formas.append(f)
         laminas[clave] = {"vb": 160, "vh": 100, "nota": f"«{k}»: {porque} Sen texto.", "formas": formas}
-        mapa[k] = {"clave": clave, "orixe": "nova", "porque": porque}
-    return laminas, {"_doc": "Xerado por tools/gen_laminas_palabras.py (O-20261111-2). Non se edita a man.",
-                     "pezas": mapa}
+        mapa[k] = {
+            "clave": clave,
+            "orixe": "nova",
+            "porque": porque,
+            "fuente": "propia",
+            "asset": f"tools/gen_laminas_palabras.py#{slug}",
+            "sha": "1973cc64",
+            "licencia": "Propia",
+            "revisado": True,
+        }
+    return laminas, {"_doc": "Xerado por tools/gen_laminas_palabras.py e ferramentas do banco (O-20261111-2 / O-20261111-4). Non se edita a man.",
+                     "pezas": dict(sorted(mapa.items()))}
 
 
 def texto_control(mapa) -> str:

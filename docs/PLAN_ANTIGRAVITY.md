@@ -47,13 +47,18 @@ commit. Lo vigila `tools/check_registro_commits.py`, dentro de `tools/gates.sh`.
 | P0.2 | Crear `antigravity/pendiente` desde `origin/feat/laminas-ejercicios` e integrar lo útil del rescate | 0 | no |
 | P0.3 | `git merge origin/main` (trae O-20261118-1, el plan y CI) y poner su SHA en «Base:» del registro | 0 | no |
 | P0.4 | Cerrar O-20261111-3 como absorbida | 0 | no |
-| P1.1 | Preguntar y anotar la fuente de las imágenes, con su licencia | 1 | **sí** |
+| P1.1 | Anotar la fuente de las imágenes y corregir a estilo Flat (`O-20261111-4`), con su licencia | 1 | **sí** |
 | P2.0 | Medir cobertura real en Fluent Emoji (`docs/cobertura-fluent.md`) antes de copiar | 2 | **sí** |
 | P2.01 | P2.0b: medir cobertura sobre (c) con fuentes compatibles con uso comercial y derivadas | 2 | **sí** |
-| P2.1 | Las 12 escenas de reto con la fuente nueva, capturas gl/es | 2 | **sí**: mira tres y aprueba el estilo |
-| P2.2 | Imágenes de todas las palabras y frases de 4-5 años (40 semanas) | 2 | **sí**: mira tres semanas al azar |
-| P2.3 | Resto de edades y banco TPR, hasta 0 piezas sin lámina | 2 | no |
-| P2.4 | `docs/laminas-ejercicios.md` con una fila por pieza | 2 | no |
+| P2.1 | Conversor `banco_a_lamina.py`, reparación `lamina_vector.dart`, mapa ampliado, créditos/licencias y gate `check_banco_laminas.py` | 2 | no |
+| P2.2 | 4-5 años completo (U/R/C/D): 0 piezas sin lámina en 4-5, cifras, hoja de contactos y nota de capturas gl/es | 2 | **sí**: mira tres semanas al azar |
+| P2.3 | 0-2 años completo a 0 piezas sin lámina | 2 | **sí** |
+| P2.4 | 2-3 años completo a 0 piezas sin lámina | 2 | **sí** |
+| P2.5 | 3-4 años completo a 0 piezas sin lámina | 2 | **sí** |
+| P2.6 | 5-6 años completo a 0 piezas sin lámina | 2 | **sí** |
+| P2.7 | 6-7 años completo a 0 piezas sin lámina | 2 | **sí** |
+| P2.8 | Banco TPR (4.000 piezas) cubierto, agrupado por gesto | 2 | no |
+| P2.9 | Cierre bloque 2: `check_laminas_leccion.py` = 0 en todo, tests de pasos en verde, `docs/ORDENES.md` al día | 2 | no |
 | P3.1 | Unidades 21-48 con su material semanal completo | 3 | si falta base en `referencias/` |
 | P3.2 | Capturas de escritorio de Hoy en las cinco edades, gl y es | 3 | no |
 | P3.3 | 4-5 años: lo de hoy en la primera pantalla de 412×915 | 3 | no |
@@ -274,4 +279,5 @@ Base: `6be3d38b`
 | P0.4 | 1995e81c | 2026-11-18 | Nada visible: base del registro y cierre de O-20261111-3 | OK ordenes/fallos/registro; FALLO laminas: 6351/6382 sen lámina (sin flutter) | docs/PLAN_ANTIGRAVITY.md | |
 | P1.1 | 4170a15b | 2026-11-18 | Créditos: Fluent Emoji (MIT) en gl/es y licencia en el paquete | sin flutter; ordenes/fallos/registro/bundled/no_emoji OK; laminas 6351/6382 | docs/ORDENES.md, assets/third_party/fluentui-emoji/LICENSE, lib/features/creditos/credits_screen.dart | |
 | P2.0 | e5c2ff3b | 2026-11-18 | Nada visible: medición de cobertura Fluent Emoji en docs/cobertura-fluent.md | sin flutter; ordenes/fallos/registro/bundled/no_emoji OK; laminas 6351/6382 | docs/cobertura-fluent.md, docs/PLAN_ANTIGRAVITY.md | |
-| P2.01 | este | 2026-11-18 | Nada visible: P2.0b, cobertura de 6 fuentes comerciales/derivadas sobre (c) y regla de licencias | sin flutter; ordenes/fallos/registro/bundled/no_emoji OK; laminas 6351/6382 | docs/ORDENES.md, docs/cobertura-fluent.md, docs/PLAN_ANTIGRAVITY.md | |
+| P2.01 | 66280a3d | 2026-11-18 | Nada visible: P2.0b, cobertura de 6 fuentes comerciales/derivadas sobre (c) y regla de licencias | sin flutter; ordenes/fallos/registro/bundled/no_emoji OK; laminas 6351/6382 | docs/ORDENES.md, docs/cobertura-fluent.md, docs/PLAN_ANTIGRAVITY.md | |
+| P2.1 | este | 2026-11-18 | Créditos y renderer: Fluent Emoji Flat, LicenseRegistry, _parsearRuta con implícitas/evenodd/raster; conversor, gate y 3 CSV | sin flutter; ordenes/fallos/registro/banco_laminas/email/bundled/no_emoji/banco_a_lamina --test OK; laminas 6351/6382 | tools/banco_a_lamina.py, tools/check_banco_laminas.py, lib/core/brand/lamina_vector.dart, lib/core/brand/licenzas_terceiros.dart, ATTRIBUTION.md, LICENSE.md | |
