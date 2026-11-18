@@ -62,6 +62,16 @@ if QUEJA.search(texto):
         "4) corregir el fallo; 5) mergear. tools/check_fallos.py tumba CI si "
         "una entrada no tiene guarda existente."
     )
+# F-20261118-2: una respuesta corta de Frank sobre algo legal o de licencia
+# («no tiene ánimo de lucro») se leyó al revés. Antes de actuar se repite.
+if re.search(r"lucro|comercial|licencia|gratis|de pago|cobrar", texto, re.IGNORECASE):
+    mensaje += (
+        "\nDECISIÓN LEGAL O DE LICENCIA: antes de actuar o de escribir un prompt "
+        "con ella, repite en UNA línea cómo la has entendido (p. ej. «Entiendo: "
+        "TIENE ánimo de lucro → fuera licencias NC») y pide a Frank que lo "
+        "confirme. Si la frase admite dos lecturas (falta una coma, un «no» "
+        "suelto), pregunta cuál es, sin elegir tú."
+    )
 if re.search(r"manual", texto, re.IGNORECASE):
     mensaje += (
         "\nSI TOCA EL MANUAL: regenerar TODAS las capturas (flutter test --tags "
