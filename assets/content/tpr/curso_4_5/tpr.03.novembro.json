@@ -712,7 +712,8 @@
             "gl": "Amosar unha folla vermella escura",
             "es": "Enseñar una hoja rojo oscuro"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_crimson_leaf"
         },
         {
           "id": "4_5.novembro.s4.bracken",

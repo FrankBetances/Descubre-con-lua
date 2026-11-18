@@ -65,7 +65,8 @@
           "tprAction": {
             "gl": "Abrazarse a un mesmo con frío",
             "es": "Abrazarse a uno mismo con frío"
-          }
+          },
+          "lamina": "pal_winter"
         },
         {
           "id": "3_4.decembro.s1.mountain",
@@ -250,7 +251,8 @@
           "tprAction": {
             "gl": "Mover o puño dun lado a outro coma unha campá",
             "es": "Mover el puño de un lado a otro como una campana"
-          }
+          },
+          "lamina": "pal_bell"
         },
         {
           "id": "3_4.decembro.s2.light",
@@ -479,7 +481,8 @@
           "tprAction": {
             "gl": "Pechar as mans diante dos ollos coma cortinas",
             "es": "Cerrar las manos delante de los ojos como cortinas"
-          }
+          },
+          "lamina": "pal_night"
         },
         {
           "id": "3_4.decembro.s3.moon",
@@ -611,7 +614,8 @@
           "tprAction": {
             "gl": "Deixar caer a cabeza amodo cara a un lado",
             "es": "Dejar caer la cabeza despacio hacia un lado"
-          }
+          },
+          "lamina": "pal_sleepy"
         },
         {
           "id": "3_4.decembro.s3.tired",

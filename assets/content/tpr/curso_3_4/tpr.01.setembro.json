@@ -54,7 +54,8 @@
           "tprAction": {
             "gl": "Debuxar no aire o tellado da escola coas mans",
             "es": "Dibujar en el aire el tejado de la escuela con las manos"
-          }
+          },
+          "lamina": "pal_school"
         },
         {
           "id": "3_4.setembro.s1.door",
@@ -305,7 +306,8 @@
           "tprAction": {
             "gl": "Poñer unha mochila imaxinaria ás costas",
             "es": "Ponerse una mochila imaginaria a la espalda"
-          }
+          },
+          "lamina": "pal_backpack"
         },
         {
           "id": "3_4.setembro.s2.box",
@@ -371,7 +373,8 @@
           "tprAction": {
             "gl": "Levantar entre dous un obxecto imaxinario pesado",
             "es": "Levantar entre dos un objeto imaginario pesado"
-          }
+          },
+          "lamina": "pal_help"
         },
         {
           "id": "3_4.setembro.s2.little",
@@ -459,7 +462,8 @@
           "tprAction": {
             "gl": "Dar as mans en círculo e subilas á vez",
             "es": "Darse las manos en círculo y subirlas a la vez"
-          }
+          },
+          "lamina": "pal_all_together"
         }
       ]
     },
@@ -622,7 +626,8 @@
           "tprAction": {
             "gl": "Pasar a man con agarimo polo ombro do compañeiro",
             "es": "Pasar la mano con cariño por el hombro del compañero"
-          }
+          },
+          "lamina": "pal_gentle"
         },
         {
           "id": "3_4.setembro.s3.calm",
@@ -633,7 +638,8 @@
           "tprAction": {
             "gl": "Respirar fondo e deixar caer os ombros",
             "es": "Respirar hondo y dejar caer los hombros"
-          }
+          },
+          "lamina": "pal_calm"
         },
         {
           "id": "3_4.setembro.s3.shy",
@@ -818,7 +824,8 @@
           "tprAction": {
             "gl": "Tirar dunha corda imaxinaria cara a un mesmo",
             "es": "Tirar de una cuerda imaginaria hacia uno mismo"
-          }
+          },
+          "lamina": "pal_pull"
         },
         {
           "id": "3_4.setembro.s4.build",

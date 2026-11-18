@@ -382,8 +382,8 @@ Estado: abierta
 > (18/11/2026) No me hagas perder más tiempo que ya esto se discutió y se repartió en otra sesión y quedó todo apuntado
 Fuente: ninguna: orden literal recuperada del historial de la sesión session_01JWGSxXCBGSNhrehHwDcMph (11/11/2026 17:48 UTC); los CSV que cita (docs/revision_4_5_lecciones.csv, docs/cobertura_fluent_distintas.csv, docs/candidatos_banco.csv) no están en ninguna rama de GitHub
 
-- [ ] Solo las cuatro fuentes permitidas; Fluent en estilo Flat (no Color); BY-SA, NC, Flaticon, Freepik y Envato fuera · evidencia:
-- [ ] SHA y LICENSE de cada fuente en tools/banco/<fuente>/<sha>/; créditos con LicenseRegistry, ATTRIBUTION.md y LICENSE.md · evidencia:
-- [ ] tools/banco_a_lamina.py, assets/content/laminas/palabras_laminas.json y tools/check_banco_laminas.py en tools/gates.sh · evidencia:
+- [x] Solo las cuatro fuentes permitidas; Fluent en estilo Flat (no Color); BY-SA, NC, Flaticon, Freepik y Envato fuera · evidencia: tools/check_banco_laminas.py y tools/check_licencias.py (en tools/gates.sh); assets/content/laminas/palabras_laminas.json (solo fluent-flat, composta, propia y dnizfor en P2.2)
+- [x] SHA y LICENSE de cada fuente en tools/banco/<fuente>/<sha>/; créditos con LicenseRegistry, ATTRIBUTION.md y LICENSE.md · evidencia: tools/banco/fluentui-emoji/1ffb34c752ecf5d402f04cfb4b392c77f57c54bc/LICENSE, tools/banco/iconify-icon-sets/81ad501f19cc13e548e4cb6a9c63a3873c87262a/LICENSE, tools/banco/vocabulary-flashcard-dataset/eae41b7c6cd85da0ca4171ce79eb115971b533de/LICENSE, tools/banco/pb-imagebank/7f6a3b2d0213e05c25a088413a487178a4209234/LICENSE, lib/core/brand/licenzas_terceiros.dart, ATTRIBUTION.md y LICENSE.md
+- [x] tools/banco_a_lamina.py, assets/content/laminas/palabras_laminas.json y tools/check_banco_laminas.py en tools/gates.sh · evidencia: tools/banco_a_lamina.py (--test OK), assets/content/laminas/palabras_laminas.json (190 piezas revisadas), tools/check_banco_laminas.py en tools/gates.sh
 - [ ] Cada edad completa a 0 piezas sin lámina, en el orden 4-5, 0-2, 2-3, 3-4, 5-6, 6-7, con hoja de contactos y capturas gl/es · evidencia:
 - [ ] Banco TPR (4.000) cubierto, agrupado por gesto · evidencia:

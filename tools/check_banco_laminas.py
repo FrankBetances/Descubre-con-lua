@@ -63,7 +63,7 @@ PROHIBIDO = re.compile(
     re.IGNORECASE,
 )
 
-PISO_MINIMO_PIEZAS = 9
+PISO_MINIMO_PIEZAS = 190
 
 
 def _existe_lamina(clave: str) -> bool:

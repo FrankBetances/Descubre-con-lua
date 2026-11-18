@@ -382,7 +382,8 @@
             "gl": "Mover as mans moi rápido",
             "es": "Mover las manos muy rápido"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_rushing"
         },
         {
           "id": "4_5.maio.s2.trickling",
@@ -556,7 +557,8 @@
             "gl": "Subir amodo coma vapor",
             "es": "Subir despacio como vapor"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_evaporate"
         },
         {
           "id": "4_5.maio.s3.condense",
@@ -611,7 +613,8 @@
             "gl": "Mover os dedos coma choiva",
             "es": "Mover los dedos como lluvia"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_showery"
         },
         {
           "id": "4_5.maio.s3.humid",
@@ -785,7 +788,8 @@
             "gl": "Remar cara adiante",
             "es": "Remar hacia delante"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_paddle_across"
         },
         {
           "id": "4_5.maio.s4.meet-the-sea",
@@ -796,7 +800,8 @@
             "gl": "Xuntar as mans",
             "es": "Juntar las manos"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_meet_the_sea"
         },
         {
           "id": "4_5.maio.s4.wade-in",
@@ -807,7 +812,8 @@
             "gl": "Levantar os xeonllos",
             "es": "Levantar las rodillas"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_wade_in"
         },
         {
           "id": "4_5.maio.s4.stand-like-a-heron",

@@ -796,7 +796,8 @@
           "tprAction": {
             "gl": "Achegarse á orella de quen está ao lado e falar moi baixiño, coa boca á vista",
             "es": "Acercarse a la oreja de quien está al lado y hablar muy bajito, con la boca a la vista"
-          }
+          },
+          "lamina": "pal_whisper"
         },
         {
           "id": "3_4.maio.s4.guess",
@@ -873,7 +874,8 @@
           "tprAction": {
             "gl": "Levar o dedo aos beizos e chiscar un ollo",
             "es": "Llevarse el dedo a los labios y guiñar un ojo"
-          }
+          },
+          "lamina": "pal_secret"
         },
         {
           "id": "3_4.maio.s4.once-upon-a-time",

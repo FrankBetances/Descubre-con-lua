@@ -84,7 +84,7 @@ def main() -> int:
                            capture_output=True).returncode == 0
     )
     if es_ancestro:
-        rango = git("log", "--no-merges", "--format=%H %s", f"{base}..HEAD") or ""
+        rango = git("log", "--first-parent", "--no-merges", "--format=%H %s", f"{base}..HEAD") or ""
         en_rango = set()
         pasos_registro = {f[0] for f in filas if f}
         for linea in rango.splitlines():

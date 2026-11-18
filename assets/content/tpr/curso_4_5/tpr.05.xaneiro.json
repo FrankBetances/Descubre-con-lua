@@ -21,7 +21,8 @@
             "gl": "Abrir un mapa imaxinario",
             "es": "Abrir un mapa imaginario"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_map"
         },
         {
           "id": "4_5.xaneiro.s1.compass",
@@ -250,7 +251,8 @@
             "gl": "Pasar agachado por debaixo",
             "es": "Pasar agachado por debajo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_underpass"
         },
         {
           "id": "4_5.xaneiro.s2.overpass",
@@ -708,7 +710,8 @@
             "gl": "Apuntar unha mangueira",
             "es": "Apuntar una manguera"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_firefighter"
         },
         {
           "id": "4_5.xaneiro.s4.police-officer",
@@ -719,7 +722,8 @@
             "gl": "Facer o xesto de parar",
             "es": "Hacer el gesto de parar"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_police_officer"
         },
         {
           "id": "4_5.xaneiro.s4.baker",
@@ -730,7 +734,8 @@
             "gl": "Amasar pan no aire",
             "es": "Amasar pan en el aire"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_baker"
         },
         {
           "id": "4_5.xaneiro.s4.postman",

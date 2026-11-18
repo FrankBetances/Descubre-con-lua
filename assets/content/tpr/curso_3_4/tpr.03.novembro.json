@@ -186,7 +186,8 @@
           "tprAction": {
             "gl": "Abanear o corpo coma se empurrase o vento",
             "es": "Balancear el cuerpo como si lo empujara el viento"
-          }
+          },
+          "lamina": "pal_windy"
         },
         {
           "id": "3_4.novembro.s1.crunch-leaves",
@@ -283,7 +284,8 @@
           "tprAction": {
             "gl": "Encoller as mans diante do peito e dar pequenos brincos",
             "es": "Encoger las manos delante del pecho y dar saltitos"
-          }
+          },
+          "lamina": "pal_squirrel"
         },
         {
           "id": "3_4.novembro.s2.acorn",
@@ -349,7 +351,8 @@
           "tprAction": {
             "gl": "Agochar algo imaxinario detrás das costas",
             "es": "Esconder algo imaginario detrás de la espalda"
-          }
+          },
+          "lamina": "pal_hide"
         },
         {
           "id": "3_4.novembro.s2.find",
@@ -371,7 +374,8 @@
           "tprAction": {
             "gl": "Mover brazos e pernas coma se rubísemos a unha árbore",
             "es": "Mover brazos y piernas como si trepáramos a un árbol"
-          }
+          },
+          "lamina": "pal_climb"
         },
         {
           "id": "3_4.novembro.s2.hot",
@@ -490,7 +494,8 @@
           "tprAction": {
             "gl": "Poñer as mans sobre a cabeza coma orellas en punta",
             "es": "Poner las manos sobre la cabeza como orejas en punta"
-          }
+          },
+          "lamina": "pal_fox"
         },
         {
           "id": "3_4.novembro.s3.hedgehog",
@@ -535,7 +540,8 @@
           "tprAction": {
             "gl": "Camiñar a catro patas amodo",
             "es": "Caminar a cuatro patas despacio"
-          }
+          },
+          "lamina": "pal_wolf"
         },
         {
           "id": "3_4.novembro.s3.boar",
@@ -546,7 +552,8 @@
           "tprAction": {
             "gl": "Facer un fociño co nariz e fozar no chan",
             "es": "Hacer un hocico con la nariz y hozar en el suelo"
-          }
+          },
+          "lamina": "pal_boar"
         },
         {
           "id": "3_4.novembro.s3.sniff",

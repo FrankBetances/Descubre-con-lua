@@ -479,7 +479,8 @@
           "tprAction": {
             "gl": "Camiñar pesado a catro patas",
             "es": "Caminar pesado a cuatro patas"
-          }
+          },
+          "lamina": "pal_bear"
         },
         {
           "id": "3_4.febreiro.s3.lion",
@@ -785,7 +786,8 @@
           "tprAction": {
             "gl": "Voar pola aula cos brazos abertos, amodo",
             "es": "Volar por el aula con los brazos abiertos, despacio"
-          }
+          },
+          "lamina": "pal_fly_action"
         },
         {
           "id": "3_4.febreiro.s4.flap",

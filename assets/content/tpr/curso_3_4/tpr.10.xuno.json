@@ -250,7 +250,8 @@
           "tprAction": {
             "gl": "Pisar amodo coma sobre area quente",
             "es": "Pisar despacio como sobre arena caliente"
-          }
+          },
+          "lamina": "pal_sand"
         },
         {
           "id": "3_4.xuno.s2.beach",
@@ -490,7 +491,8 @@
           "tprAction": {
             "gl": "Abrir e pechar os dedos coma pinzas",
             "es": "Abrir y cerrar los dedos como pinzas"
-          }
+          },
+          "lamina": "pal_crab"
         },
         {
           "id": "3_4.xuno.s3.octopus",
@@ -708,7 +710,8 @@
           "tprAction": {
             "gl": "Abanarse cun abano imaxinario",
             "es": "Abanicarse con un abanico imaginario"
-          }
+          },
+          "lamina": "pal_summer"
         },
         {
           "id": "3_4.xuno.s4.holiday",
@@ -719,7 +722,8 @@
           "tprAction": {
             "gl": "Saltar de ledicia cos brazos arriba",
             "es": "Saltar de alegría con los brazos arriba"
-          }
+          },
+          "lamina": "pal_holiday"
         },
         {
           "id": "3_4.xuno.s4.ice-cream",
@@ -884,7 +888,8 @@
           "tprAction": {
             "gl": "Acenar amodo coa man mentres se camiña cara atrás",
             "es": "Decir adiós despacio con la mano mientras se camina hacia atrás"
-          }
+          },
+          "lamina": "pal_goodbye"
         },
         {
           "id": "3_4.xuno.s4.see-you-soon",

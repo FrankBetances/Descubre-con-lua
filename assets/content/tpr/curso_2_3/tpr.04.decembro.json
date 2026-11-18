@@ -382,7 +382,8 @@
             "gl": "Mover as mans con forza",
             "es": "Mover las manos con fuerza"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_stormy"
         },
         {
           "id": "2_3.decembro.s2.gloomy",

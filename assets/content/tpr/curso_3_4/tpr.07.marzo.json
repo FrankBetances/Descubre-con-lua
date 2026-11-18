@@ -153,7 +153,8 @@
           "tprAction": {
             "gl": "Sinalar algo vermello na aula",
             "es": "Señalar algo rojo en el aula"
-          }
+          },
+          "lamina": "vermello"
         },
         {
           "id": "3_4.marzo.s1.yellow",
@@ -708,7 +709,8 @@
           "tprAction": {
             "gl": "Tocar un tambor imaxinario nas pernas",
             "es": "Tocar un tambor imaginario en las piernas"
-          }
+          },
+          "lamina": "pal_drum"
         },
         {
           "id": "3_4.marzo.s4.maraca",
@@ -785,7 +787,8 @@
           "tprAction": {
             "gl": "Axitar todo o corpo coma unha maraca",
             "es": "Agitar todo el cuerpo como una maraca"
-          }
+          },
+          "lamina": "pal_shake"
         },
         {
           "id": "3_4.marzo.s4.bang",

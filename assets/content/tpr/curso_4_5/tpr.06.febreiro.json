@@ -21,7 +21,8 @@
             "gl": "Subir a un escenario imaxinario",
             "es": "Subir a un escenario imaginario"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_stage"
         },
         {
           "id": "4_5.febreiro.s1.audience",
@@ -175,7 +176,8 @@
             "gl": "Camiñar amodo e mirar aos lados",
             "es": "Caminar despacio y mirar a los lados"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_mysterious"
         },
         {
           "id": "4_5.febreiro.s1.theatrical",
@@ -250,7 +252,8 @@
             "gl": "Suxeitar un escudo imaxinario",
             "es": "Sostener un escudo imaginario"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_knight"
         },
         {
           "id": "4_5.febreiro.s2.princess",
@@ -655,7 +658,8 @@
             "gl": "Mirar arredor",
             "es": "Mirar alrededor"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_whose_turn"
         },
         {
           "id": "4_5.febreiro.s3.it-s-a-draw",

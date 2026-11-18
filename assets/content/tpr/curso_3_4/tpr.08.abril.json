@@ -32,7 +32,8 @@
           "tprAction": {
             "gl": "Abrir os dedos das mans coma raios de sol",
             "es": "Abrir los dedos de las manos como rayos de sol"
-          }
+          },
+          "lamina": "pal_sun"
         },
         {
           "id": "3_4.abril.s1.spring",
@@ -164,7 +165,8 @@
           "tprAction": {
             "gl": "Tapar o sol cunha man e poñer cara seria",
             "es": "Tapar el sol con una mano y poner cara seria"
-          }
+          },
+          "lamina": "pal_cloudy"
         },
         {
           "id": "3_4.abril.s1.foggy",
@@ -272,7 +274,8 @@
           "tprAction": {
             "gl": "Xuntar os pulsos e abrir os dedos coma pétalos",
             "es": "Juntar las muñecas y abrir los dedos como pétalos"
-          }
+          },
+          "lamina": "pal_flower"
         },
         {
           "id": "3_4.abril.s2.plant",
@@ -479,7 +482,8 @@
           "tprAction": {
             "gl": "Mover os brazos pegados ao corpo moi rápido",
             "es": "Mover los brazos pegados al cuerpo muy rápido"
-          }
+          },
+          "lamina": "pal_bee"
         },
         {
           "id": "3_4.abril.s3.butterfly",
@@ -578,7 +582,8 @@
           "tprAction": {
             "gl": "Baixar os brazos amodo e pousarse no chan",
             "es": "Bajar los brazos despacio y posarse en el suelo"
-          }
+          },
+          "lamina": "pal_land_action"
         },
         {
           "id": "3_4.abril.s3.tickle",

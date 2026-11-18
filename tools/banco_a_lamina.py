@@ -528,21 +528,48 @@ def _n(v: float) -> int | float:
 
 
 def _collect_gradients(root: ET.Element) -> dict[str, str]:
-    grads: dict[str, str] = {}
+    raw_stops: dict[str, list[tuple[str, float]]] = {}
+    hrefs: dict[str, str] = {}
     for el in root.iter():
         tag = el.tag.split("}")[-1]
         if tag in ("linearGradient", "radialGradient") and "id" in el.attrib:
             gid = el.attrib["id"]
+            href = el.attrib.get("href") or el.attrib.get("{http://www.w3.org/1999/xlink}href")
+            if href and href.startswith("#"):
+                hrefs[gid] = href[1:]
+            stops: list[tuple[str, float]] = []
             for child in el:
                 if child.tag.split("}")[-1] == "stop":
-                    sc = child.attrib.get("stop-color")
-                    if not sc and "style" in child.attrib:
-                        for part in child.attrib["style"].split(";"):
-                            if part.strip().startswith("stop-color:"):
-                                sc = part.split(":", 1)[1].strip()
+                    st = _parse_style_attr(child)
+                    sc = st.get("stop-color")
+                    try:
+                        so = float(st.get("stop-opacity", "1"))
+                    except ValueError:
+                        so = 1.0
                     if sc:
-                        grads[gid] = sc
-                        break
+                        stops.append((sc, max(0.0, min(1.0, so))))
+            raw_stops[gid] = stops
+
+    def get_stops(gid: str, seen: set[str]) -> list[tuple[str, float]]:
+        if gid in seen:
+            return []
+        seen.add(gid)
+        if raw_stops.get(gid):
+            return raw_stops[gid]
+        if gid in hrefs:
+            return get_stops(hrefs[gid], seen)
+        return []
+
+    grads: dict[str, str] = {}
+    for gid in raw_stops:
+        stops = get_stops(gid, set())
+        visibles = [(c, o) for c, o in stops if o > 0.02] or stops
+        if not visibles:
+            continue
+        sc, so = visibles[len(visibles) // 2]
+        norm = normalizar_color(sc, opacity=so, paleta="exacta")
+        if norm:
+            grads[gid] = norm
     return grads
 
 

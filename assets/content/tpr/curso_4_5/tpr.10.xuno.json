@@ -21,7 +21,8 @@
             "gl": "Facer un cadrado plano coas mans",
             "es": "Hacer un cuadrado plano con las manos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_mussel_raft"
         },
         {
           "id": "4_5.xuno.s1.rope-line",
@@ -32,7 +33,8 @@
             "gl": "Baixar unha corda imaxinaria",
             "es": "Bajar una cuerda imaginaria"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_rope_line"
         },
         {
           "id": "4_5.xuno.s1.fishing-boat",
@@ -43,7 +45,8 @@
             "gl": "Remar con forza",
             "es": "Remar con fuerza"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_fishing_boat"
         },
         {
           "id": "4_5.xuno.s1.harbour-wall",
@@ -250,7 +253,8 @@
             "gl": "Pasar as páxinas",
             "es": "Pasar las páginas"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_photo_book"
         },
         {
           "id": "4_5.xuno.s2.memory",
@@ -633,7 +637,8 @@
             "gl": "Poñer o puño e despois a man aberta",
             "es": "Poner el puño y luego la mano abierta"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_brave_and_kind"
         },
         {
           "id": "4_5.xuno.s3.excited-for-next-year",
@@ -688,7 +693,8 @@
             "gl": "Pousar a man no peito",
             "es": "Poner la mano en el pecho"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_thank_you_everything"
         }
       ]
     },
@@ -708,7 +714,8 @@
             "gl": "Lanzar un disco imaxinario",
             "es": "Lanzar un disco imaginario"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_frisbee"
         },
         {
           "id": "4_5.xuno.s4.water-balloon",
@@ -719,7 +726,8 @@
             "gl": "Pasar un globo con coidado",
             "es": "Pasar un globo con cuidado"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_water_balloon"
         },
         {
           "id": "4_5.xuno.s4.hopscotch",

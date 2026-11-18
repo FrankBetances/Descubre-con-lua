@@ -21,7 +21,8 @@
           "tprAction": {
             "gl": "Meter os brazos nun abrigo imaxinario",
             "es": "Meter los brazos en un abrigo imaginario"
-          }
+          },
+          "lamina": "pal_coat"
         },
         {
           "id": "3_4.xaneiro.s1.hat",
@@ -32,7 +33,8 @@
           "tprAction": {
             "gl": "Poñer un gorro imaxinario ata as orellas",
             "es": "Ponerse un gorro imaginario hasta las orejas"
-          }
+          },
+          "lamina": "pal_hat"
         },
         {
           "id": "3_4.xaneiro.s1.boots",
@@ -272,7 +274,8 @@
           "tprAction": {
             "gl": "Facer unha nube grande e mol cos brazos",
             "es": "Hacer una nube grande y blandita con los brazos"
-          }
+          },
+          "lamina": "pal_cloud"
         },
         {
           "id": "3_4.xaneiro.s2.raincoat",
@@ -415,7 +418,8 @@
           "tprAction": {
             "gl": "Mirar as botas imaxinarias con cara de sorpresa",
             "es": "Mirarse las botas imaginarias con cara de sorpresa"
-          }
+          },
+          "lamina": "pal_muddy"
         },
         {
           "id": "3_4.xaneiro.s2.put-up-the-umbrella",

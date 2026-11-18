@@ -21,7 +21,8 @@
             "gl": "Planear cos brazos abertos",
             "es": "Planear con los brazos abiertos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "gaivota"
         },
         {
           "id": "4_5.abril.s1.cliff",
@@ -32,7 +33,8 @@
             "gl": "Poñer a man vertical",
             "es": "Poner la mano vertical"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_cliff"
         },
         {
           "id": "4_5.abril.s1.dune",
@@ -120,7 +122,8 @@
             "gl": "Cubrir algo coas mans",
             "es": "Cubrir algo con las manos"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_protect"
         },
         {
           "id": "4_5.abril.s1.spot-a-bird",
@@ -250,7 +253,8 @@
             "gl": "Encollerse pequeno",
             "es": "Acurrucarse pequeño"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_gull_chick"
         },
         {
           "id": "4_5.abril.s2.cormorant",
@@ -633,7 +637,8 @@
             "gl": "Baixar amodo",
             "es": "Bajar despacio"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_deep_blue"
         },
         {
           "id": "4_5.abril.s3.spiny",
@@ -708,7 +713,8 @@
             "gl": "Coller lixo do chan",
             "es": "Coger basura del suelo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_litter"
         },
         {
           "id": "4_5.abril.s4.recycling-bin",
@@ -719,7 +725,8 @@
             "gl": "Botar algo no colector",
             "es": "Echar algo en el contenedor"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_recycling_bin"
         },
         {
           "id": "4_5.abril.s4.plastic",

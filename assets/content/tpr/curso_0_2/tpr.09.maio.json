@@ -153,7 +153,8 @@
             "gl": "Salpicar un pouco de auga",
             "es": "Salpicar un poco de agua"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_splashy"
         },
         {
           "id": "0_2.maio.s1.dripping-wet",

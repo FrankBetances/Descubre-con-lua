@@ -164,7 +164,8 @@
             "gl": "Abrir moito os ollos",
             "es": "Abrir mucho los ojos"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_alert"
         },
         {
           "id": "4_5.outubro.s1.motionless",
@@ -175,7 +176,8 @@
             "gl": "Quedar sen moverse",
             "es": "Quedarse sin moverse"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_motionless"
         },
         {
           "id": "4_5.outubro.s1.sudden",
@@ -338,7 +340,8 @@
             "gl": "Camiñar en silencio agachado",
             "es": "Caminar en silencio agachado"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_sneak"
         },
         {
           "id": "4_5.outubro.s2.tag",
@@ -382,7 +385,8 @@
             "gl": "Poñer cara de pillo",
             "es": "Poner cara de pillo"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_sly"
         },
         {
           "id": "4_5.outubro.s2.nimble-footed",
@@ -393,7 +397,8 @@
             "gl": "Mover os pés moi rápido",
             "es": "Mover los pies muy rápido"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_nimble_footed"
         },
         {
           "id": "4_5.outubro.s2.out-of-sight",
@@ -708,7 +713,8 @@
             "gl": "Premer o botón do cronómetro",
             "es": "Pulsar el botón del cronómetro"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_stopwatch"
         },
         {
           "id": "4_5.outubro.s4.metronome",

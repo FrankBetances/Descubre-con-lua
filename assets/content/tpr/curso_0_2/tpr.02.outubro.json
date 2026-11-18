@@ -719,7 +719,8 @@
             "gl": "Estirar unha perna e despois a outra",
             "es": "Estirar una pierna y luego la otra"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_leg"
         },
         {
           "id": "0_2.outubro.s4.foot",

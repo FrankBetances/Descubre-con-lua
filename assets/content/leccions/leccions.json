@@ -36836,7 +36836,8 @@
          "xesto": {
           "gl": "Flexo-extensión alternada do tronco en parella, collidos das mans.",
           "es": "Flexo-extensión alternada del tronco en pareja, cogidos de las manos."
-         }
+         },
+         "lamina": "pal_row_boat_waves"
         },
         {
          "tipo": "noun",
@@ -36850,7 +36851,8 @@
          "xesto": {
           "gl": "Pisar amodo coma sobre area quente",
           "es": "Pisar despacio como sobre arena caliente"
-         }
+         },
+         "lamina": "pal_sand"
         }
        ],
        "repasa": [],
@@ -37083,7 +37085,8 @@
          "xesto": {
           "gl": "Flexo-extensión alternada do tronco en parella, collidos das mans.",
           "es": "Flexo-extensión alternada del tronco en pareja, cogidos de las manos."
-         }
+         },
+         "lamina": "pal_row_boat_waves"
         },
         {
          "tipo": "noun",
@@ -37097,7 +37100,8 @@
          "xesto": {
           "gl": "Pisar amodo coma sobre area quente",
           "es": "Pisar despacio como sobre arena caliente"
-         }
+         },
+         "lamina": "pal_sand"
         }
        ],
        "novas": [
@@ -37113,7 +37117,8 @@
          "xesto": {
           "gl": "Desprazamento polo chan con brazada alternada de peito.",
           "es": "Desplazamiento por el suelo con brazada alternada de pecho."
-         }
+         },
+         "lamina": "pal_swim_fast_fish"
         },
         {
          "tipo": "orde",
@@ -37127,7 +37132,8 @@
          "xesto": {
           "gl": "Inmersión simulada e recollida dunha cuncha do chan.",
           "es": "Inmersión simulada y recogida de una concha del suelo."
-         }
+         },
+         "lamina": "pal_dive_white_shell"
         },
         {
          "tipo": "noun",
@@ -37141,7 +37147,8 @@
          "xesto": {
           "gl": "Abrir e pechar os dedos coma pinzas",
           "es": "Abrir y cerrar los dedos como pinzas"
-         }
+         },
+         "lamina": "pal_crab"
         }
        ],
        "repasa": [],
@@ -37360,7 +37367,8 @@
          "xesto": {
           "gl": "Flexo-extensión alternada do tronco en parella, collidos das mans.",
           "es": "Flexo-extensión alternada del tronco en pareja, cogidos de las manos."
-         }
+         },
+         "lamina": "pal_row_boat_waves"
         },
         {
          "tipo": "noun",
@@ -37374,7 +37382,8 @@
          "xesto": {
           "gl": "Pisar amodo coma sobre area quente",
           "es": "Pisar despacio como sobre arena caliente"
-         }
+         },
+         "lamina": "pal_sand"
         },
         {
          "tipo": "orde",
@@ -37388,7 +37397,8 @@
          "xesto": {
           "gl": "Desprazamento polo chan con brazada alternada de peito.",
           "es": "Desplazamiento por el suelo con brazada alternada de pecho."
-         }
+         },
+         "lamina": "pal_swim_fast_fish"
         },
         {
          "tipo": "orde",
@@ -37402,7 +37412,8 @@
          "xesto": {
           "gl": "Inmersión simulada e recollida dunha cuncha do chan.",
           "es": "Inmersión simulada y recogida de una concha del suelo."
-         }
+         },
+         "lamina": "pal_dive_white_shell"
         },
         {
          "tipo": "noun",
@@ -37416,7 +37427,8 @@
          "xesto": {
           "gl": "Abrir e pechar os dedos coma pinzas",
           "es": "Abrir y cerrar los dedos como pinzas"
-         }
+         },
+         "lamina": "pal_crab"
         }
        ],
        "novas": [
@@ -37432,7 +37444,8 @@
          "xesto": {
           "gl": "Acenar amodo coa man mentres se camiña cara atrás",
           "es": "Decir adiós despacio con la mano mientras se camina hacia atrás"
-         }
+         },
+         "lamina": "pal_goodbye"
         },
         {
          "tipo": "noun",
@@ -37446,7 +37459,8 @@
          "xesto": {
           "gl": "Abanarse cun abano imaxinario",
           "es": "Abanicarse con un abanico imaginario"
-         }
+         },
+         "lamina": "pal_summer"
         },
         {
          "tipo": "noun",
@@ -37460,7 +37474,8 @@
          "xesto": {
           "gl": "Saltar de ledicia cos brazos arriba",
           "es": "Saltar de alegría con los brazos arriba"
-         }
+         },
+         "lamina": "pal_holiday"
         }
        ],
        "repasa": [],
@@ -37744,7 +37759,8 @@
        "fraseGramatica": {
         "en": "This is the cloth that drinks water.",
         "gl": "Este é o pano que bebe a auga.",
-        "es": "Este es el paño que bebe el agua."
+        "es": "Este es el paño que bebe el agua.",
+        "lamina": "pal_cloth_drinks_water"
        },
        "comoFalar": {
         "clave": "parentese",
@@ -37776,7 +37792,8 @@
          "xesto": {
           "gl": "Flexo-extensión alternada do tronco en parella, collidos das mans.",
           "es": "Flexo-extensión alternada del tronco en pareja, cogidos de las manos."
-         }
+         },
+         "lamina": "pal_row_boat_waves"
         },
         {
          "tipo": "noun",
@@ -37790,7 +37807,8 @@
          "xesto": {
           "gl": "Pisar amodo coma sobre area quente",
           "es": "Pisar despacio como sobre arena caliente"
-         }
+         },
+         "lamina": "pal_sand"
         },
         {
          "tipo": "orde",
@@ -37804,7 +37822,8 @@
          "xesto": {
           "gl": "Desprazamento polo chan con brazada alternada de peito.",
           "es": "Desplazamiento por el suelo con brazada alternada de pecho."
-         }
+         },
+         "lamina": "pal_swim_fast_fish"
         },
         {
          "tipo": "orde",
@@ -37818,7 +37837,8 @@
          "xesto": {
           "gl": "Inmersión simulada e recollida dunha cuncha do chan.",
           "es": "Inmersión simulada y recogida de una concha del suelo."
-         }
+         },
+         "lamina": "pal_dive_white_shell"
         },
         {
          "tipo": "noun",
@@ -37832,7 +37852,8 @@
          "xesto": {
           "gl": "Abrir e pechar os dedos coma pinzas",
           "es": "Abrir y cerrar los dedos como pinzas"
-         }
+         },
+         "lamina": "pal_crab"
         },
         {
          "tipo": "phrase",
@@ -37846,7 +37867,8 @@
          "xesto": {
           "gl": "Acenar amodo coa man mentres se camiña cara atrás",
           "es": "Decir adiós despacio con la mano mientras se camina hacia atrás"
-         }
+         },
+         "lamina": "pal_goodbye"
         },
         {
          "tipo": "noun",
@@ -37860,7 +37882,8 @@
          "xesto": {
           "gl": "Abanarse cun abano imaxinario",
           "es": "Abanicarse con un abanico imaginario"
-         }
+         },
+         "lamina": "pal_summer"
         },
         {
          "tipo": "noun",
@@ -37874,7 +37897,8 @@
          "xesto": {
           "gl": "Saltar de ledicia cos brazos arriba",
           "es": "Saltar de alegría con los brazos arriba"
-         }
+         },
+         "lamina": "pal_holiday"
         }
        ],
        "novas": [
@@ -37890,7 +37914,8 @@
          "xesto": {
           "gl": "Poñer unha mochila imaxinaria ás costas",
           "es": "Ponerse una mochila imaginaria a la espalda"
-         }
+         },
+         "lamina": "pal_backpack"
         },
         {
          "tipo": "noun",
@@ -37904,7 +37929,8 @@
          "xesto": {
           "gl": "Mover o puño dun lado a outro coma unha campá",
           "es": "Mover el puño de un lado a otro como una campana"
-         }
+         },
+         "lamina": "pal_bell"
         },
         {
          "tipo": "noun",
@@ -37918,7 +37944,8 @@
          "xesto": {
           "gl": "Camiñar pesado a catro patas",
           "es": "Caminar pesado a cuatro patas"
-         }
+         },
+         "lamina": "pal_bear"
         }
        ],
        "repasa": [],
@@ -38063,7 +38090,8 @@
        "fraseGramatica": {
         "en": "The bag that we used stayed dry.",
         "gl": "A bolsa que usamos quedou seca.",
-        "es": "La bolsa que usamos se quedó seca."
+        "es": "La bolsa que usamos se quedó seca.",
+        "lamina": "pal_bag_stayed_dry"
        },
        "comoFalar": {
         "clave": "espera",
@@ -38095,7 +38123,8 @@
          "xesto": {
           "gl": "Poñer unha mochila imaxinaria ás costas",
           "es": "Ponerse una mochila imaginaria a la espalda"
-         }
+         },
+         "lamina": "pal_backpack"
         },
         {
          "tipo": "noun",
@@ -38109,7 +38138,8 @@
          "xesto": {
           "gl": "Mover o puño dun lado a outro coma unha campá",
           "es": "Mover el puño de un lado a otro como una campana"
-         }
+         },
+         "lamina": "pal_bell"
         },
         {
          "tipo": "noun",
@@ -38123,7 +38153,8 @@
          "xesto": {
           "gl": "Camiñar pesado a catro patas",
           "es": "Caminar pesado a cuatro patas"
-         }
+         },
+         "lamina": "pal_bear"
         }
        ],
        "novas": [
@@ -38139,7 +38170,8 @@
          "xesto": {
           "gl": "Debuxar no aire o tellado da escola coas mans",
           "es": "Dibujar en el aire el tejado de la escuela con las manos"
-         }
+         },
+         "lamina": "pal_school"
         },
         {
          "tipo": "adjective",
@@ -38153,7 +38185,8 @@
          "xesto": {
           "gl": "Levar unha bolsa con esforzo",
           "es": "Llevar una bolsa con esfuerzo"
-         }
+         },
+         "lamina": "pal_heavy_bag"
         },
         {
          "tipo": "adjective",
@@ -38167,7 +38200,8 @@
          "xesto": {
           "gl": "Deixar caer a cabeza amodo cara a un lado",
           "es": "Dejar caer la cabeza despacio hacia un lado"
-         }
+         },
+         "lamina": "pal_sleepy"
         },
         {
          "tipo": "adjective",
@@ -38181,7 +38215,8 @@
          "xesto": {
           "gl": "Quedar sen moverse",
           "es": "Quedarse sin moverse"
-         }
+         },
+         "lamina": "pal_motionless"
         }
        ],
        "repasa": [],
@@ -38326,7 +38361,8 @@
        "fraseGramatica": {
         "en": "The teddy who hurt his leg is fine.",
         "gl": "O peluche que mancou a perna está ben.",
-        "es": "El peluche que se hizo daño en la pierna está bien."
+        "es": "El peluche que se hizo daño en la pierna está bien.",
+        "lamina": "pal_teddy_hurt_leg_fine"
        },
        "comoFalar": {
         "clave": "expansion",
@@ -38358,7 +38394,8 @@
          "xesto": {
           "gl": "Poñer unha mochila imaxinaria ás costas",
           "es": "Ponerse una mochila imaginaria a la espalda"
-         }
+         },
+         "lamina": "pal_backpack"
         },
         {
          "tipo": "noun",
@@ -38372,7 +38409,8 @@
          "xesto": {
           "gl": "Mover o puño dun lado a outro coma unha campá",
           "es": "Mover el puño de un lado a otro como una campana"
-         }
+         },
+         "lamina": "pal_bell"
         },
         {
          "tipo": "noun",
@@ -38386,7 +38424,8 @@
          "xesto": {
           "gl": "Camiñar pesado a catro patas",
           "es": "Caminar pesado a cuatro patas"
-         }
+         },
+         "lamina": "pal_bear"
         },
         {
          "tipo": "noun",
@@ -38400,7 +38439,8 @@
          "xesto": {
           "gl": "Debuxar no aire o tellado da escola coas mans",
           "es": "Dibujar en el aire el tejado de la escuela con las manos"
-         }
+         },
+         "lamina": "pal_school"
         },
         {
          "tipo": "adjective",
@@ -38414,7 +38454,8 @@
          "xesto": {
           "gl": "Levar unha bolsa con esforzo",
           "es": "Llevar una bolsa con esfuerzo"
-         }
+         },
+         "lamina": "pal_heavy_bag"
         },
         {
          "tipo": "adjective",
@@ -38428,7 +38469,8 @@
          "xesto": {
           "gl": "Deixar caer a cabeza amodo cara a un lado",
           "es": "Dejar caer la cabeza despacio hacia un lado"
-         }
+         },
+         "lamina": "pal_sleepy"
         },
         {
          "tipo": "adjective",
@@ -38442,7 +38484,8 @@
          "xesto": {
           "gl": "Quedar sen moverse",
           "es": "Quedarse sin moverse"
-         }
+         },
+         "lamina": "pal_motionless"
         }
        ],
        "novas": [
@@ -38458,7 +38501,8 @@
          "xesto": {
           "gl": "Camiñar con pasos lentos e balanceo de ombros imitando levar unha mochila moi pesada.",
           "es": "Caminar con pasos lentos y balanceo de hombros imitando llevar una mochila muy pesada."
-         }
+         },
+         "lamina": "pal_walk_sleepy_bear_bag"
         },
         {
          "tipo": "orde",
@@ -38472,7 +38516,8 @@
          "xesto": {
           "gl": "Trote rápido cara ao centro da alfombra e parada instantánea inmóbil coma unha estatua.",
           "es": "Trote rápido hacia el centro de la alfombra y parada instantánea inmóvil como una estatua."
-         }
+         },
+         "lamina": "pal_bell_run_circle_freeze"
         },
         {
          "tipo": "orde",
@@ -38486,7 +38531,8 @@
          "xesto": {
           "gl": "Mímica de abrir a cremalleira, sacar o babi e amosar un sorriso amplo aos compañeiros.",
           "es": "Mímica de abrir la cremallera, sacar el babi y mostrar una amplia sonrisa a los compañeros."
-         }
+         },
+         "lamina": "pal_open_bag_smock_smile"
         },
         {
          "tipo": "formula",
@@ -38496,7 +38542,8 @@
           "es": "Frase para relacionarse"
          },
          "gl": "Podo axudarte?",
-         "es": "¿Puedo ayudarte?"
+         "es": "¿Puedo ayudarte?",
+         "lamina": "pal_can_i_help_you"
         }
        ],
        "repasa": [],
@@ -38641,7 +38688,8 @@
        "fraseGramatica": {
         "en": "Which is the cloth that works?",
         "gl": "Cal é o pano que funciona?",
-        "es": "¿Cuál es el paño que funciona?"
+        "es": "¿Cuál es el paño que funciona?",
+        "lamina": "pal_which_cloth_works"
        },
        "comoFalar": {
         "clave": "recast",
@@ -38673,7 +38721,8 @@
          "xesto": {
           "gl": "Debuxar no aire o tellado da escola coas mans",
           "es": "Dibujar en el aire el tejado de la escuela con las manos"
-         }
+         },
+         "lamina": "pal_school"
         },
         {
          "tipo": "adjective",
@@ -38687,7 +38736,8 @@
          "xesto": {
           "gl": "Levar unha bolsa con esforzo",
           "es": "Llevar una bolsa con esfuerzo"
-         }
+         },
+         "lamina": "pal_heavy_bag"
         },
         {
          "tipo": "adjective",
@@ -38701,7 +38751,8 @@
          "xesto": {
           "gl": "Deixar caer a cabeza amodo cara a un lado",
           "es": "Dejar caer la cabeza despacio hacia un lado"
-         }
+         },
+         "lamina": "pal_sleepy"
         },
         {
          "tipo": "adjective",
@@ -38715,7 +38766,8 @@
          "xesto": {
           "gl": "Quedar sen moverse",
           "es": "Quedarse sin moverse"
-         }
+         },
+         "lamina": "pal_motionless"
         },
         {
          "tipo": "orde",
@@ -38729,7 +38781,8 @@
          "xesto": {
           "gl": "Camiñar con pasos lentos e balanceo de ombros imitando levar unha mochila moi pesada.",
           "es": "Caminar con pasos lentos y balanceo de hombros imitando llevar una mochila muy pesada."
-         }
+         },
+         "lamina": "pal_walk_sleepy_bear_bag"
         },
         {
          "tipo": "orde",
@@ -38743,7 +38796,8 @@
          "xesto": {
           "gl": "Trote rápido cara ao centro da alfombra e parada instantánea inmóbil coma unha estatua.",
           "es": "Trote rápido hacia el centro de la alfombra y parada instantánea inmóvil como una estatua."
-         }
+         },
+         "lamina": "pal_bell_run_circle_freeze"
         },
         {
          "tipo": "orde",
@@ -38757,7 +38811,8 @@
          "xesto": {
           "gl": "Mímica de abrir a cremalleira, sacar o babi e amosar un sorriso amplo aos compañeiros.",
           "es": "Mímica de abrir la cremallera, sacar el babi y mostrar una amplia sonrisa a los compañeros."
-         }
+         },
+         "lamina": "pal_open_bag_smock_smile"
         },
         {
          "tipo": "formula",
@@ -38767,7 +38822,8 @@
           "es": "Frase para relacionarse"
          },
          "gl": "Podo axudarte?",
-         "es": "¿Puedo ayudarte?"
+         "es": "¿Puedo ayudarte?",
+         "lamina": "pal_can_i_help_you"
         }
        ],
        "novas": [
@@ -38783,7 +38839,8 @@
          "xesto": {
           "gl": "Pousar as mans no colo e agardar",
           "es": "Poner las manos en el regazo y esperar"
-         }
+         },
+         "lamina": "pal_wait_your_turn"
         },
         {
          "tipo": "estructura",
@@ -38797,7 +38854,8 @@
          "xesto": {
           "gl": "Meter os pés nas botas",
           "es": "Meter los pies en las botas"
-         }
+         },
+         "lamina": "pal_put_feet_into_boots"
         },
         {
          "tipo": "palabra",
@@ -38807,7 +38865,8 @@
           "es": "Palabra nueva"
          },
          "gl": "doer, facer dano",
-         "es": "doler, hacer daño"
+         "es": "doler, hacer daño",
+         "lamina": "pal_hurt"
         }
        ],
        "repasa": [],
@@ -39025,7 +39084,8 @@
        "fraseGramatica": {
         "en": "I like listening to your heart.",
         "gl": "Gústame escoitar o teu corazón.",
-        "es": "Me gusta escuchar tu corazón."
+        "es": "Me gusta escuchar tu corazón.",
+        "lamina": "pal_listening_to_heart"
        },
        "comoFalar": {
         "clave": "parentese",
@@ -39057,7 +39117,8 @@
          "xesto": {
           "gl": "Quedar sen moverse",
           "es": "Quedarse sin moverse"
-         }
+         },
+         "lamina": "pal_motionless"
         },
         {
          "tipo": "orde",
@@ -39071,7 +39132,8 @@
          "xesto": {
           "gl": "Camiñar con pasos lentos e balanceo de ombros imitando levar unha mochila moi pesada.",
           "es": "Caminar con pasos lentos y balanceo de hombros imitando llevar una mochila muy pesada."
-         }
+         },
+         "lamina": "pal_walk_sleepy_bear_bag"
         },
         {
          "tipo": "orde",
@@ -39085,7 +39147,8 @@
          "xesto": {
           "gl": "Trote rápido cara ao centro da alfombra e parada instantánea inmóbil coma unha estatua.",
           "es": "Trote rápido hacia el centro de la alfombra y parada instantánea inmóvil como una estatua."
-         }
+         },
+         "lamina": "pal_bell_run_circle_freeze"
         },
         {
          "tipo": "orde",
@@ -39099,7 +39162,8 @@
          "xesto": {
           "gl": "Mímica de abrir a cremalleira, sacar o babi e amosar un sorriso amplo aos compañeiros.",
           "es": "Mímica de abrir la cremallera, sacar el babi y mostrar una amplia sonrisa a los compañeros."
-         }
+         },
+         "lamina": "pal_open_bag_smock_smile"
         },
         {
          "tipo": "formula",
@@ -39109,7 +39173,8 @@
           "es": "Frase para relacionarse"
          },
          "gl": "Podo axudarte?",
-         "es": "¿Puedo ayudarte?"
+         "es": "¿Puedo ayudarte?",
+         "lamina": "pal_can_i_help_you"
         },
         {
          "tipo": "phrase",
@@ -39123,7 +39188,8 @@
          "xesto": {
           "gl": "Pousar as mans no colo e agardar",
           "es": "Poner las manos en el regazo y esperar"
-         }
+         },
+         "lamina": "pal_wait_your_turn"
         },
         {
          "tipo": "estructura",
@@ -39137,7 +39203,8 @@
          "xesto": {
           "gl": "Meter os pés nas botas",
           "es": "Meter los pies en las botas"
-         }
+         },
+         "lamina": "pal_put_feet_into_boots"
         },
         {
          "tipo": "palabra",
@@ -39147,7 +39214,8 @@
           "es": "Palabra nueva"
          },
          "gl": "doer, facer dano",
-         "es": "doler, hacer daño"
+         "es": "doler, hacer daño",
+         "lamina": "pal_hurt"
         }
        ],
        "novas": [
@@ -39163,7 +39231,8 @@
          "xesto": {
           "gl": "Encoller as mans diante do peito e dar pequenos brincos",
           "es": "Encoger las manos delante del pecho y dar saltitos"
-         }
+         },
+         "lamina": "pal_squirrel"
         },
         {
          "tipo": "noun",
@@ -39177,7 +39246,8 @@
          "xesto": {
           "gl": "Facer un fociño co nariz e fozar no chan",
           "es": "Hacer un hocico con la nariz y hozar en el suelo"
-         }
+         },
+         "lamina": "pal_boar"
         },
         {
          "tipo": "verb",
@@ -39191,7 +39261,8 @@
          "xesto": {
           "gl": "Mover brazos e pernas coma se rubísemos a unha árbore",
           "es": "Mover brazos y piernas como si trepáramos a un árbol"
-         }
+         },
+         "lamina": "pal_climb"
         },
         {
          "tipo": "noun",
@@ -39201,7 +39272,8 @@
           "es": "Nombre: una cosa"
          },
          "gl": "perna",
-         "es": "pierna"
+         "es": "pierna",
+         "lamina": "pal_leg"
         }
        ],
        "repasa": [],
@@ -39346,7 +39418,8 @@
        "fraseGramatica": {
         "en": "We want to run.",
         "gl": "Queremos correr.",
-        "es": "Queremos correr."
+        "es": "Queremos correr.",
+        "lamina": "pal_we_want_to_run"
        },
        "comoFalar": {
         "clave": "espera",
@@ -39378,7 +39451,8 @@
          "xesto": {
           "gl": "Encoller as mans diante do peito e dar pequenos brincos",
           "es": "Encoger las manos delante del pecho y dar saltitos"
-         }
+         },
+         "lamina": "pal_squirrel"
         },
         {
          "tipo": "noun",
@@ -39392,7 +39466,8 @@
          "xesto": {
           "gl": "Facer un fociño co nariz e fozar no chan",
           "es": "Hacer un hocico con la nariz y hozar en el suelo"
-         }
+         },
+         "lamina": "pal_boar"
         },
         {
          "tipo": "verb",
@@ -39406,7 +39481,8 @@
          "xesto": {
           "gl": "Mover brazos e pernas coma se rubísemos a unha árbore",
           "es": "Mover brazos y piernas como si trepáramos a un árbol"
-         }
+         },
+         "lamina": "pal_climb"
         },
         {
          "tipo": "noun",
@@ -39416,7 +39492,8 @@
           "es": "Nombre: una cosa"
          },
          "gl": "perna",
-         "es": "pierna"
+         "es": "pierna",
+         "lamina": "pal_leg"
         }
        ],
        "novas": [
@@ -39432,7 +39509,8 @@
          "xesto": {
           "gl": "Agochar algo imaxinario detrás das costas",
           "es": "Esconder algo imaginario detrás de la espalda"
-         }
+         },
+         "lamina": "pal_hide"
         },
         {
          "tipo": "adjective",
@@ -39446,7 +39524,8 @@
          "xesto": {
           "gl": "Poñer cara de pillo",
           "es": "Poner cara de pillo"
-         }
+         },
+         "lamina": "pal_sly"
         },
         {
          "tipo": "adjective",
@@ -39460,7 +39539,8 @@
          "xesto": {
           "gl": "Mover os pés moi rápido",
           "es": "Mover los pies muy rápido"
-         }
+         },
+         "lamina": "pal_nimble_footed"
         },
         {
          "tipo": "adjective",
@@ -39474,7 +39554,8 @@
          "xesto": {
           "gl": "Abrir moito os ollos",
           "es": "Abrir mucho los ojos"
-         }
+         },
+         "lamina": "pal_alert"
         },
         {
          "tipo": "formula",
@@ -39484,7 +39565,8 @@
           "es": "Frase para relacionarse"
          },
          "gl": "Onde che doe?",
-         "es": "¿Dónde te duele?"
+         "es": "¿Dónde te duele?",
+         "lamina": "pal_where_does_it_hurt"
         }
        ],
        "repasa": [],
@@ -39629,7 +39711,8 @@
        "fraseGramatica": {
         "en": "Running makes it beat fast.",
         "gl": "Correr faino latexar rápido.",
-        "es": "Correr hace que lata rápido."
+        "es": "Correr hace que lata rápido.",
+        "lamina": "pal_running_beats_fast"
        },
        "comoFalar": {
         "clave": "expansion",
@@ -39661,7 +39744,8 @@
          "xesto": {
           "gl": "Facer un fociño co nariz e fozar no chan",
           "es": "Hacer un hocico con la nariz y hozar en el suelo"
-         }
+         },
+         "lamina": "pal_boar"
         },
         {
          "tipo": "verb",
@@ -39675,7 +39759,8 @@
          "xesto": {
           "gl": "Mover brazos e pernas coma se rubísemos a unha árbore",
           "es": "Mover brazos y piernas como si trepáramos a un árbol"
-         }
+         },
+         "lamina": "pal_climb"
         },
         {
          "tipo": "noun",
@@ -39685,7 +39770,8 @@
           "es": "Nombre: una cosa"
          },
          "gl": "perna",
-         "es": "pierna"
+         "es": "pierna",
+         "lamina": "pal_leg"
         },
         {
          "tipo": "verb",
@@ -39699,7 +39785,8 @@
          "xesto": {
           "gl": "Agochar algo imaxinario detrás das costas",
           "es": "Esconder algo imaginario detrás de la espalda"
-         }
+         },
+         "lamina": "pal_hide"
         },
         {
          "tipo": "adjective",
@@ -39713,7 +39800,8 @@
          "xesto": {
           "gl": "Poñer cara de pillo",
           "es": "Poner cara de pillo"
-         }
+         },
+         "lamina": "pal_sly"
         },
         {
          "tipo": "adjective",
@@ -39727,7 +39815,8 @@
          "xesto": {
           "gl": "Mover os pés moi rápido",
           "es": "Mover los pies muy rápido"
-         }
+         },
+         "lamina": "pal_nimble_footed"
         },
         {
          "tipo": "adjective",
@@ -39741,7 +39830,8 @@
          "xesto": {
           "gl": "Abrir moito os ollos",
           "es": "Abrir mucho los ojos"
-         }
+         },
+         "lamina": "pal_alert"
         },
         {
          "tipo": "formula",
@@ -39751,7 +39841,8 @@
           "es": "Frase para relacionarse"
          },
          "gl": "Onde che doe?",
-         "es": "¿Dónde te duele?"
+         "es": "¿Dónde te duele?",
+         "lamina": "pal_where_does_it_hurt"
         }
        ],
        "novas": [
@@ -39767,7 +39858,8 @@
          "xesto": {
           "gl": "Saltos curtos con pés xuntos e recollida rápida de castañas do chan.",
           "es": "Saltos cortos con pies juntos y recogida rápida de castañas del suelo."
-         }
+         },
+         "lamina": "pal_hop_squirrel_chestnuts"
         },
         {
          "tipo": "orde",
@@ -39781,7 +39873,8 @@
          "xesto": {
           "gl": "Parada tónica inmediata na postura exacta en que se estaba.",
           "es": "Parada tónica inmediata en la postura exacta en que se estaba."
-         }
+         },
+         "lamina": "pal_wild_boar_freeze"
         },
         {
          "tipo": "orde",
@@ -39795,7 +39888,8 @@
          "xesto": {
           "gl": "Trepa simulada con brazos alternos e agachada final agochando as mans.",
           "es": "Trepa simulada con brazos alternos y agachada final escondiendo las manos."
-         }
+         },
+         "lamina": "pal_climb_oak_hide_nuts"
         },
         {
          "tipo": "palabra",
@@ -39805,7 +39899,8 @@
           "es": "Palabra nueva"
          },
          "gl": "doutor / veterinario",
-         "es": "doctor / veterinario"
+         "es": "doctor / veterinario",
+         "lamina": "pal_doctor_vet"
         }
        ],
        "repasa": [],
@@ -39950,7 +40045,8 @@
        "fraseGramatica": {
         "en": "Let's stop to listen.",
         "gl": "Paremos para escoitar.",
-        "es": "Paremos para escuchar."
+        "es": "Paremos para escuchar.",
+        "lamina": "pal_stop_to_listen"
        },
        "comoFalar": {
         "clave": "recast",
@@ -39982,7 +40078,8 @@
          "xesto": {
           "gl": "Poñer cara de pillo",
           "es": "Poner cara de pillo"
-         }
+         },
+         "lamina": "pal_sly"
         },
         {
          "tipo": "adjective",
@@ -39996,7 +40093,8 @@
          "xesto": {
           "gl": "Mover os pés moi rápido",
           "es": "Mover los pies muy rápido"
-         }
+         },
+         "lamina": "pal_nimble_footed"
         },
         {
          "tipo": "adjective",
@@ -40010,7 +40108,8 @@
          "xesto": {
           "gl": "Abrir moito os ollos",
           "es": "Abrir mucho los ojos"
-         }
+         },
+         "lamina": "pal_alert"
         },
         {
          "tipo": "formula",
@@ -40020,7 +40119,8 @@
           "es": "Frase para relacionarse"
          },
          "gl": "Onde che doe?",
-         "es": "¿Dónde te duele?"
+         "es": "¿Dónde te duele?",
+         "lamina": "pal_where_does_it_hurt"
         },
         {
          "tipo": "orde",
@@ -40034,7 +40134,8 @@
          "xesto": {
           "gl": "Saltos curtos con pés xuntos e recollida rápida de castañas do chan.",
           "es": "Saltos cortos con pies juntos y recogida rápida de castañas del suelo."
-         }
+         },
+         "lamina": "pal_hop_squirrel_chestnuts"
         },
         {
          "tipo": "orde",
@@ -40048,7 +40149,8 @@
          "xesto": {
           "gl": "Parada tónica inmediata na postura exacta en que se estaba.",
           "es": "Parada tónica inmediata en la postura exacta en que se estaba."
-         }
+         },
+         "lamina": "pal_wild_boar_freeze"
         },
         {
          "tipo": "orde",
@@ -40062,7 +40164,8 @@
          "xesto": {
           "gl": "Trepa simulada con brazos alternos e agachada final agochando as mans.",
           "es": "Trepa simulada con brazos alternos y agachada final escondiendo las manos."
-         }
+         },
+         "lamina": "pal_climb_oak_hide_nuts"
         },
         {
          "tipo": "palabra",
@@ -40072,7 +40175,8 @@
           "es": "Palabra nueva"
          },
          "gl": "doutor / veterinario",
-         "es": "doctor / veterinario"
+         "es": "doctor / veterinario",
+         "lamina": "pal_doctor_vet"
         }
        ],
        "novas": [
@@ -40088,7 +40192,8 @@
          "xesto": {
           "gl": "Agochar o can detrás da árbore",
           "es": "Esconder el perro detrás del árbol"
-         }
+         },
+         "lamina": "pal_dog_behind_tree"
         },
         {
          "tipo": "adjective",
@@ -40098,7 +40203,8 @@
           "es": "Adjetivo: cómo es"
          },
          "gl": "con delicadeza",
-         "es": "con delicadeza"
+         "es": "con delicadeza",
+         "lamina": "pal_gentle"
         },
         {
          "tipo": "noun",
@@ -40112,7 +40218,8 @@
          "xesto": {
           "gl": "Premer o botón do cronómetro",
           "es": "Pulsar el botón del cronómetro"
-         }
+         },
+         "lamina": "pal_stopwatch"
         }
        ],
        "repasa": [],
@@ -40330,7 +40437,8 @@
        "fraseGramatica": {
         "en": "You said the cat had four legs.",
         "gl": "Dixeches que o gato tiña catro patas.",
-        "es": "Dijiste que el gato tenía cuatro patas."
+        "es": "Dijiste que el gato tenía cuatro patas.",
+        "lamina": "pal_cat_four_legs"
        },
        "comoFalar": {
         "clave": "parentese",
@@ -40358,7 +40466,8 @@
           "es": "Frase para relacionarse"
          },
          "gl": "Onde che doe?",
-         "es": "¿Dónde te duele?"
+         "es": "¿Dónde te duele?",
+         "lamina": "pal_where_does_it_hurt"
         },
         {
          "tipo": "orde",
@@ -40372,7 +40481,8 @@
          "xesto": {
           "gl": "Saltos curtos con pés xuntos e recollida rápida de castañas do chan.",
           "es": "Saltos cortos con pies juntos y recogida rápida de castañas del suelo."
-         }
+         },
+         "lamina": "pal_hop_squirrel_chestnuts"
         },
         {
          "tipo": "orde",
@@ -40386,7 +40496,8 @@
          "xesto": {
           "gl": "Parada tónica inmediata na postura exacta en que se estaba.",
           "es": "Parada tónica inmediata en la postura exacta en que se estaba."
-         }
+         },
+         "lamina": "pal_wild_boar_freeze"
         },
         {
          "tipo": "orde",
@@ -40400,7 +40511,8 @@
          "xesto": {
           "gl": "Trepa simulada con brazos alternos e agachada final agochando as mans.",
           "es": "Trepa simulada con brazos alternos y agachada final escondiendo las manos."
-         }
+         },
+         "lamina": "pal_climb_oak_hide_nuts"
         },
         {
          "tipo": "palabra",
@@ -40410,7 +40522,8 @@
           "es": "Palabra nueva"
          },
          "gl": "doutor / veterinario",
-         "es": "doctor / veterinario"
+         "es": "doctor / veterinario",
+         "lamina": "pal_doctor_vet"
         },
         {
          "tipo": "estructura",
@@ -40424,7 +40537,8 @@
          "xesto": {
           "gl": "Agochar o can detrás da árbore",
           "es": "Esconder el perro detrás del árbol"
-         }
+         },
+         "lamina": "pal_dog_behind_tree"
         },
         {
          "tipo": "adjective",
@@ -40434,7 +40548,8 @@
           "es": "Adjetivo: cómo es"
          },
          "gl": "con delicadeza",
-         "es": "con delicadeza"
+         "es": "con delicadeza",
+         "lamina": "pal_gentle"
         },
         {
          "tipo": "noun",
@@ -40448,7 +40563,8 @@
          "xesto": {
           "gl": "Premer o botón do cronómetro",
           "es": "Pulsar el botón del cronómetro"
-         }
+         },
+         "lamina": "pal_stopwatch"
         }
        ],
        "novas": [
@@ -40914,7 +41030,8 @@
        "fraseGramatica": {
         "en": "She asked where the snake went.",
         "gl": "Ela preguntou onde ía a serpe.",
-        "es": "Ella preguntó dónde iba la serpiente."
+        "es": "Ella preguntó dónde iba la serpiente.",
+        "lamina": "pal_where_snake_went"
        },
        "comoFalar": {
         "clave": "expansion",
@@ -41060,7 +41177,8 @@
          "xesto": {
           "gl": "Rodadura lateral controlada sobre colchoneta cos brazos xunto ao corpo.",
           "es": "Rodadura lateral controlada sobre colchoneta con los brazos junto al cuerpo."
-         }
+         },
+         "lamina": "pal_roll_down_hill_chestnut"
         },
         {
          "tipo": "orde",
@@ -41074,7 +41192,8 @@
          "xesto": {
           "gl": "Parada inmediata e encollemento en ovelo protexendo a cabeza.",
           "es": "Parada inmediata y encogimiento en ovillo protegiendo la cabeza."
-         }
+         },
+         "lamina": "pal_hedgehog_curl_small"
         },
         {
          "tipo": "orde",
@@ -41088,7 +41207,8 @@
          "xesto": {
           "gl": "Estirada explosiva e baile circular arredor dun punto central.",
           "es": "Estirada explosiva y baile circular alrededor de un punto central."
-         }
+         },
+         "lamina": "pal_dance_around_fire"
         },
         {
          "tipo": "palabra",
@@ -41098,7 +41218,8 @@
           "es": "Palabra nueva"
          },
          "gl": "examinar",
-         "es": "examinar"
+         "es": "examinar",
+         "lamina": "pal_examine"
         }
        ],
        "repasa": [],
@@ -41243,7 +41364,8 @@
        "fraseGramatica": {
         "en": "You told me it didn't fit.",
         "gl": "Dixéchesme que non cabía.",
-        "es": "Me dijiste que no cabía."
+        "es": "Me dijiste que no cabía.",
+        "lamina": "pal_didnt_fit"
        },
        "comoFalar": {
         "clave": "recast",
@@ -41331,7 +41453,8 @@
          "xesto": {
           "gl": "Rodadura lateral controlada sobre colchoneta cos brazos xunto ao corpo.",
           "es": "Rodadura lateral controlada sobre colchoneta con los brazos junto al cuerpo."
-         }
+         },
+         "lamina": "pal_roll_down_hill_chestnut"
         },
         {
          "tipo": "orde",
@@ -41345,7 +41468,8 @@
          "xesto": {
           "gl": "Parada inmediata e encollemento en ovelo protexendo a cabeza.",
           "es": "Parada inmediata y encogimiento en ovillo protegiendo la cabeza."
-         }
+         },
+         "lamina": "pal_hedgehog_curl_small"
         },
         {
          "tipo": "orde",
@@ -41359,7 +41483,8 @@
          "xesto": {
           "gl": "Estirada explosiva e baile circular arredor dun punto central.",
           "es": "Estirada explosiva y baile circular alrededor de un punto central."
-         }
+         },
+         "lamina": "pal_dance_around_fire"
         },
         {
          "tipo": "palabra",
@@ -41369,7 +41494,8 @@
           "es": "Palabra nueva"
          },
          "gl": "examinar",
-         "es": "examinar"
+         "es": "examinar",
+         "lamina": "pal_examine"
         }
        ],
        "novas": [
@@ -41385,7 +41511,8 @@
          "xesto": {
           "gl": "Fregar as mans e despois levar a culler á boca",
           "es": "Frotarse las manos y después llevar la cuchara a la boca"
-         }
+         },
+         "lamina": "pal_first_wash_then_eat"
         },
         {
          "tipo": "formula",
@@ -41395,7 +41522,8 @@
           "es": "Frase para relacionarse"
          },
          "gl": "Non te preocupes, con delicadeza",
-         "es": "No te preocupes, con delicadeza"
+         "es": "No te preocupes, con delicadeza",
+         "lamina": "pal_do_not_worry_gentle"
         },
         {
          "tipo": "noun",
@@ -41409,7 +41537,8 @@
          "xesto": {
           "gl": "Amosar unha folla vermella escura",
           "es": "Enseñar una hoja rojo oscuro"
-         }
+         },
+         "lamina": "pal_crimson_leaf"
         }
        ],
        "repasa": [],
@@ -41627,7 +41756,8 @@
        "fraseGramatica": {
         "en": "Look at the stone closely.",
         "gl": "Mira a pedra de preto.",
-        "es": "Mira la piedra de cerca."
+        "es": "Mira la piedra de cerca.",
+        "lamina": "pal_look_stone_closely"
        },
        "comoFalar": {
         "clave": "parentese",
@@ -41670,7 +41800,8 @@
          "xesto": {
           "gl": "Rodadura lateral controlada sobre colchoneta cos brazos xunto ao corpo.",
           "es": "Rodadura lateral controlada sobre colchoneta con los brazos junto al cuerpo."
-         }
+         },
+         "lamina": "pal_roll_down_hill_chestnut"
         },
         {
          "tipo": "orde",
@@ -41684,7 +41815,8 @@
          "xesto": {
           "gl": "Parada inmediata e encollemento en ovelo protexendo a cabeza.",
           "es": "Parada inmediata y encogimiento en ovillo protegiendo la cabeza."
-         }
+         },
+         "lamina": "pal_hedgehog_curl_small"
         },
         {
          "tipo": "orde",
@@ -41698,7 +41830,8 @@
          "xesto": {
           "gl": "Estirada explosiva e baile circular arredor dun punto central.",
           "es": "Estirada explosiva y baile circular alrededor de un punto central."
-         }
+         },
+         "lamina": "pal_dance_around_fire"
         },
         {
          "tipo": "palabra",
@@ -41708,7 +41841,8 @@
           "es": "Palabra nueva"
          },
          "gl": "examinar",
-         "es": "examinar"
+         "es": "examinar",
+         "lamina": "pal_examine"
         },
         {
          "tipo": "estructura",
@@ -41722,7 +41856,8 @@
          "xesto": {
           "gl": "Fregar as mans e despois levar a culler á boca",
           "es": "Frotarse las manos y después llevar la cuchara a la boca"
-         }
+         },
+         "lamina": "pal_first_wash_then_eat"
         },
         {
          "tipo": "formula",
@@ -41732,7 +41867,8 @@
           "es": "Frase para relacionarse"
          },
          "gl": "Non te preocupes, con delicadeza",
-         "es": "No te preocupes, con delicadeza"
+         "es": "No te preocupes, con delicadeza",
+         "lamina": "pal_do_not_worry_gentle"
         },
         {
          "tipo": "noun",
@@ -41746,7 +41882,8 @@
          "xesto": {
           "gl": "Amosar unha folla vermella escura",
           "es": "Enseñar una hoja rojo oscuro"
-         }
+         },
+         "lamina": "pal_crimson_leaf"
         }
        ],
        "novas": [
@@ -41762,7 +41899,8 @@
          "xesto": {
           "gl": "Tocar un tambor imaxinario nas pernas",
           "es": "Tocar un tambor imaginario en las piernas"
-         }
+         },
+         "lamina": "pal_drum"
         },
         {
          "tipo": "noun",
@@ -41776,7 +41914,8 @@
          "xesto": {
           "gl": "Pechar as mans diante dos ollos coma cortinas",
           "es": "Cerrar las manos delante de los ojos como cortinas"
-         }
+         },
+         "lamina": "pal_night"
         },
         {
          "tipo": "noun",
@@ -41790,7 +41929,8 @@
          "xesto": {
           "gl": "Abrazarse a un mesmo con frío",
           "es": "Abrazarse a uno mismo con frío"
-         }
+         },
+         "lamina": "pal_winter"
         },
         {
          "tipo": "noun",
@@ -41804,7 +41944,8 @@
          "xesto": {
           "gl": "Abrir os dedos das mans coma raios de sol",
           "es": "Abrir los dedos de las manos como rayos de sol"
-         }
+         },
+         "lamina": "pal_sun"
         }
        ],
        "repasa": [],
@@ -41949,7 +42090,8 @@
        "fraseGramatica": {
         "en": "Pick up the lens.",
         "gl": "Colle a lupa.",
-        "es": "Coge la lupa."
+        "es": "Coge la lupa.",
+        "lamina": "pal_pick_up_lens"
        },
        "comoFalar": {
         "clave": "espera",
@@ -41981,7 +42123,8 @@
          "xesto": {
           "gl": "Tocar un tambor imaxinario nas pernas",
           "es": "Tocar un tambor imaginario en las piernas"
-         }
+         },
+         "lamina": "pal_drum"
         },
         {
          "tipo": "noun",
@@ -41995,7 +42138,8 @@
          "xesto": {
           "gl": "Pechar as mans diante dos ollos coma cortinas",
           "es": "Cerrar las manos delante de los ojos como cortinas"
-         }
+         },
+         "lamina": "pal_night"
         },
         {
          "tipo": "noun",
@@ -42009,7 +42153,8 @@
          "xesto": {
           "gl": "Abrazarse a un mesmo con frío",
           "es": "Abrazarse a uno mismo con frío"
-         }
+         },
+         "lamina": "pal_winter"
         },
         {
          "tipo": "noun",
@@ -42023,7 +42168,8 @@
          "xesto": {
           "gl": "Abrir os dedos das mans coma raios de sol",
           "es": "Abrir los dedos de las manos como rayos de sol"
-         }
+         },
+         "lamina": "pal_sun"
         }
        ],
        "novas": [
@@ -42039,7 +42185,8 @@
          "xesto": {
           "gl": "Tremer máis",
           "es": "Temblar más"
-         }
+         },
+         "lamina": "pal_colder"
         },
         {
          "tipo": "adjective",
@@ -42053,7 +42200,8 @@
          "xesto": {
           "gl": "Quedar ríxido",
           "es": "Quedarse rígido"
-         }
+         },
+         "lamina": "pal_frozen_solid"
         },
         {
          "tipo": "adjective",
@@ -42067,7 +42215,8 @@
          "xesto": {
           "gl": "Sinalar a luz máis brillante",
           "es": "Señalar la luz más brillante"
-         }
+         },
+         "lamina": "pal_brightest"
         },
         {
          "tipo": "palabra",
@@ -42077,7 +42226,8 @@
           "es": "Palabra nueva"
          },
          "gl": "temperatura",
-         "es": "temperatura"
+         "es": "temperatura",
+         "lamina": "pal_temperature"
         }
        ],
        "repasa": [],
@@ -42222,7 +42372,8 @@
        "fraseGramatica": {
         "en": "Look for a hair.",
         "gl": "Busca un pelo.",
-        "es": "Busca un pelo."
+        "es": "Busca un pelo.",
+        "lamina": "pal_look_for_hair"
        },
        "comoFalar": {
         "clave": "expansion",
@@ -42254,7 +42405,8 @@
          "xesto": {
           "gl": "Tocar un tambor imaxinario nas pernas",
           "es": "Tocar un tambor imaginario en las piernas"
-         }
+         },
+         "lamina": "pal_drum"
         },
         {
          "tipo": "noun",
@@ -42268,7 +42420,8 @@
          "xesto": {
           "gl": "Pechar as mans diante dos ollos coma cortinas",
           "es": "Cerrar las manos delante de los ojos como cortinas"
-         }
+         },
+         "lamina": "pal_night"
         },
         {
          "tipo": "noun",
@@ -42282,7 +42435,8 @@
          "xesto": {
           "gl": "Abrazarse a un mesmo con frío",
           "es": "Abrazarse a uno mismo con frío"
-         }
+         },
+         "lamina": "pal_winter"
         },
         {
          "tipo": "noun",
@@ -42296,7 +42450,8 @@
          "xesto": {
           "gl": "Abrir os dedos das mans coma raios de sol",
           "es": "Abrir los dedos de las manos como rayos de sol"
-         }
+         },
+         "lamina": "pal_sun"
         },
         {
          "tipo": "adjective",
@@ -42310,7 +42465,8 @@
          "xesto": {
           "gl": "Tremer máis",
           "es": "Temblar más"
-         }
+         },
+         "lamina": "pal_colder"
         },
         {
          "tipo": "adjective",
@@ -42324,7 +42480,8 @@
          "xesto": {
           "gl": "Quedar ríxido",
           "es": "Quedarse rígido"
-         }
+         },
+         "lamina": "pal_frozen_solid"
         },
         {
          "tipo": "adjective",
@@ -42338,7 +42495,8 @@
          "xesto": {
           "gl": "Sinalar a luz máis brillante",
           "es": "Señalar la luz más brillante"
-         }
+         },
+         "lamina": "pal_brightest"
         },
         {
          "tipo": "palabra",
@@ -42348,7 +42506,8 @@
           "es": "Palabra nueva"
          },
          "gl": "temperatura",
-         "es": "temperatura"
+         "es": "temperatura",
+         "lamina": "pal_temperature"
         }
        ],
        "novas": [
@@ -42364,7 +42523,8 @@
          "xesto": {
           "gl": "Desprazamento libre polo espazo seguindo o pulso do pandeiro.",
           "es": "Desplazamiento libre por el espacio siguiendo el pulso del pandero."
-         }
+         },
+         "lamina": "pal_dance_drum_sings"
         },
         {
          "tipo": "orde",
@@ -42378,7 +42538,8 @@
          "xesto": {
           "gl": "Acurruchamento no chan, inmóbil, coas mans baixo a meixela.",
           "es": "Acurrucamiento en el suelo, inmóvil, con las manos bajo la mejilla."
-         }
+         },
+         "lamina": "pal_cold_winter_night_curl"
         },
         {
          "tipo": "orde",
@@ -42392,7 +42553,8 @@
          "xesto": {
           "gl": "Incorporación lenta e extensión axial completa cos brazos arriba.",
           "es": "Incorporación lenta y extensión axial completa con los brazos arriba."
-         }
+         },
+         "lamina": "pal_sunlight_stretch_tall"
         },
         {
          "tipo": "estructura",
@@ -42402,7 +42564,8 @@
           "es": "Estructura de frase"
          },
          "gl": "Por que lle pos a venda? Porque o gato está malo.",
-         "es": "¿Por qué le pones la venda? Porque el gato está malito."
+         "es": "¿Por qué le pones la venda? Porque el gato está malito.",
+         "lamina": "pal_why_bandage_cat_sick"
         }
        ],
        "repasa": [],
@@ -42547,7 +42710,8 @@
        "fraseGramatica": {
         "en": "Put the lens down gently.",
         "gl": "Deixa a lupa con coidado.",
-        "es": "Deja la lupa con cuidado."
+        "es": "Deja la lupa con cuidado.",
+        "lamina": "pal_put_lens_down"
        },
        "comoFalar": {
         "clave": "recast",
@@ -42579,7 +42743,8 @@
          "xesto": {
           "gl": "Tremer máis",
           "es": "Temblar más"
-         }
+         },
+         "lamina": "pal_colder"
         },
         {
          "tipo": "adjective",
@@ -42593,7 +42758,8 @@
          "xesto": {
           "gl": "Quedar ríxido",
           "es": "Quedarse rígido"
-         }
+         },
+         "lamina": "pal_frozen_solid"
         },
         {
          "tipo": "adjective",
@@ -42607,7 +42773,8 @@
          "xesto": {
           "gl": "Sinalar a luz máis brillante",
           "es": "Señalar la luz más brillante"
-         }
+         },
+         "lamina": "pal_brightest"
         },
         {
          "tipo": "palabra",
@@ -42617,7 +42784,8 @@
           "es": "Palabra nueva"
          },
          "gl": "temperatura",
-         "es": "temperatura"
+         "es": "temperatura",
+         "lamina": "pal_temperature"
         },
         {
          "tipo": "orde",
@@ -42631,7 +42799,8 @@
          "xesto": {
           "gl": "Desprazamento libre polo espazo seguindo o pulso do pandeiro.",
           "es": "Desplazamiento libre por el espacio siguiendo el pulso del pandero."
-         }
+         },
+         "lamina": "pal_dance_drum_sings"
         },
         {
          "tipo": "orde",
@@ -42645,7 +42814,8 @@
          "xesto": {
           "gl": "Acurruchamento no chan, inmóbil, coas mans baixo a meixela.",
           "es": "Acurrucamiento en el suelo, inmóvil, con las manos bajo la mejilla."
-         }
+         },
+         "lamina": "pal_cold_winter_night_curl"
         },
         {
          "tipo": "orde",
@@ -42659,7 +42829,8 @@
          "xesto": {
           "gl": "Incorporación lenta e extensión axial completa cos brazos arriba.",
           "es": "Incorporación lenta y extensión axial completa con los brazos arriba."
-         }
+         },
+         "lamina": "pal_sunlight_stretch_tall"
         },
         {
          "tipo": "estructura",
@@ -42669,7 +42840,8 @@
           "es": "Estructura de frase"
          },
          "gl": "Por que lle pos a venda? Porque o gato está malo.",
-         "es": "¿Por qué le pones la venda? Porque el gato está malito."
+         "es": "¿Por qué le pones la venda? Porque el gato está malito.",
+         "lamina": "pal_why_bandage_cat_sick"
         }
        ],
        "novas": [
@@ -42685,7 +42857,8 @@
          "xesto": {
           "gl": "Xuntar as mans e sorrir",
           "es": "Juntar las manos y sonreír"
-         }
+         },
+         "lamina": "pal_thank_you_so_much"
         },
         {
          "tipo": "estructura",
@@ -42699,7 +42872,8 @@
          "xesto": {
           "gl": "Calzar as botas e sinalar a chuvia pola fiestra",
           "es": "Calzarse las botas y señalar la lluvia por la ventana"
-         }
+         },
+         "lamina": "pal_boots_because_raining"
         },
         {
          "tipo": "estructura",
@@ -42709,7 +42883,8 @@
           "es": "Estructura de frase"
          },
          "gl": "Primeiro miramos o corazón e despois poñemos a venda.",
-         "es": "Primero miramos el corazón y después ponemos la venda."
+         "es": "Primero miramos el corazón y después ponemos la venda.",
+         "lamina": "pal_first_heart_then_bandage"
         }
        ],
        "repasa": [],
@@ -42927,7 +43102,8 @@
        "fraseGramatica": {
         "en": "It's heavy, isn't it?",
         "gl": "Pesa, verdade?",
-        "es": "Pesa, ¿verdad?"
+        "es": "Pesa, ¿verdad?",
+        "lamina": "pal_its_heavy_isnt_it"
        },
        "comoFalar": {
         "clave": "parentese",
@@ -42955,7 +43131,8 @@
           "es": "Palabra nueva"
          },
          "gl": "temperatura",
-         "es": "temperatura"
+         "es": "temperatura",
+         "lamina": "pal_temperature"
         },
         {
          "tipo": "orde",
@@ -42969,7 +43146,8 @@
          "xesto": {
           "gl": "Desprazamento libre polo espazo seguindo o pulso do pandeiro.",
           "es": "Desplazamiento libre por el espacio siguiendo el pulso del pandero."
-         }
+         },
+         "lamina": "pal_dance_drum_sings"
         },
         {
          "tipo": "orde",
@@ -42983,7 +43161,8 @@
          "xesto": {
           "gl": "Acurruchamento no chan, inmóbil, coas mans baixo a meixela.",
           "es": "Acurrucamiento en el suelo, inmóvil, con las manos bajo la mejilla."
-         }
+         },
+         "lamina": "pal_cold_winter_night_curl"
         },
         {
          "tipo": "orde",
@@ -42997,7 +43176,8 @@
          "xesto": {
           "gl": "Incorporación lenta e extensión axial completa cos brazos arriba.",
           "es": "Incorporación lenta y extensión axial completa con los brazos arriba."
-         }
+         },
+         "lamina": "pal_sunlight_stretch_tall"
         },
         {
          "tipo": "estructura",
@@ -43007,7 +43187,8 @@
           "es": "Estructura de frase"
          },
          "gl": "Por que lle pos a venda? Porque o gato está malo.",
-         "es": "¿Por qué le pones la venda? Porque el gato está malito."
+         "es": "¿Por qué le pones la venda? Porque el gato está malito.",
+         "lamina": "pal_why_bandage_cat_sick"
         },
         {
          "tipo": "phrase",
@@ -43021,7 +43202,8 @@
          "xesto": {
           "gl": "Xuntar as mans e sorrir",
           "es": "Juntar las manos y sonreír"
-         }
+         },
+         "lamina": "pal_thank_you_so_much"
         },
         {
          "tipo": "estructura",
@@ -43035,7 +43217,8 @@
          "xesto": {
           "gl": "Calzar as botas e sinalar a chuvia pola fiestra",
           "es": "Calzarse las botas y señalar la lluvia por la ventana"
-         }
+         },
+         "lamina": "pal_boots_because_raining"
         },
         {
          "tipo": "estructura",
@@ -43045,7 +43228,8 @@
           "es": "Estructura de frase"
          },
          "gl": "Primeiro miramos o corazón e despois poñemos a venda.",
-         "es": "Primero miramos el corazón y después ponemos la venda."
+         "es": "Primero miramos el corazón y después ponemos la venda.",
+         "lamina": "pal_first_heart_then_bandage"
         }
        ],
        "novas": [
@@ -43061,7 +43245,8 @@
          "xesto": {
           "gl": "Facer unha nube grande e mol cos brazos",
           "es": "Hacer una nube grande y blandita con los brazos"
-         }
+         },
+         "lamina": "pal_cloud"
         },
         {
          "tipo": "verb",
@@ -43075,7 +43260,8 @@
          "xesto": {
           "gl": "Axitar todo o corpo coma unha maraca",
           "es": "Agitar todo el cuerpo como una maraca"
-         }
+         },
+         "lamina": "pal_shake"
         },
         {
          "tipo": "noun",
@@ -43089,7 +43275,8 @@
          "xesto": {
           "gl": "Abrir un mapa imaxinario",
           "es": "Abrir un mapa imaginario"
-         }
+         },
+         "lamina": "pal_map"
         }
        ],
        "repasa": [],
@@ -43234,7 +43421,8 @@
        "fraseGramatica": {
         "en": "You can carry it, can't you?",
         "gl": "Podes levalo, verdade?",
-        "es": "Puedes llevarlo, ¿verdad?"
+        "es": "Puedes llevarlo, ¿verdad?",
+        "lamina": "pal_you_can_carry_it"
        },
        "comoFalar": {
         "clave": "espera",
@@ -43266,7 +43454,8 @@
          "xesto": {
           "gl": "Facer unha nube grande e mol cos brazos",
           "es": "Hacer una nube grande y blandita con los brazos"
-         }
+         },
+         "lamina": "pal_cloud"
         },
         {
          "tipo": "verb",
@@ -43280,7 +43469,8 @@
          "xesto": {
           "gl": "Axitar todo o corpo coma unha maraca",
           "es": "Agitar todo el cuerpo como una maraca"
-         }
+         },
+         "lamina": "pal_shake"
         },
         {
          "tipo": "noun",
@@ -43294,7 +43484,8 @@
          "xesto": {
           "gl": "Abrir un mapa imaxinario",
           "es": "Abrir un mapa imaginario"
-         }
+         },
+         "lamina": "pal_map"
         }
        ],
        "novas": [
@@ -43310,7 +43501,8 @@
          "xesto": {
           "gl": "Mover os dedos coma choiva",
           "es": "Mover los dedos como lluvia"
-         }
+         },
+         "lamina": "pal_showery"
         },
         {
          "tipo": "adjective",
@@ -43324,7 +43516,8 @@
          "xesto": {
           "gl": "Tapar o sol cunha man e poñer cara seria",
           "es": "Tapar el sol con una mano y poner cara seria"
-         }
+         },
+         "lamina": "pal_cloudy"
         },
         {
          "tipo": "noun",
@@ -43338,7 +43531,8 @@
          "xesto": {
           "gl": "Pasar agachado por debaixo",
           "es": "Pasar agachado por debajo"
-         }
+         },
+         "lamina": "pal_underpass"
         }
        ],
        "repasa": [],
@@ -43483,7 +43677,8 @@
        "fraseGramatica": {
         "en": "Do you know who is holding it?",
         "gl": "Sabes quen o está a suxeitar?",
-        "es": "¿Sabes quién lo está sujetando?"
+        "es": "¿Sabes quién lo está sujetando?",
+        "lamina": "pal_who_is_holding_it"
        },
        "comoFalar": {
         "clave": "expansion",
@@ -43515,7 +43710,8 @@
          "xesto": {
           "gl": "Facer unha nube grande e mol cos brazos",
           "es": "Hacer una nube grande y blandita con los brazos"
-         }
+         },
+         "lamina": "pal_cloud"
         },
         {
          "tipo": "verb",
@@ -43529,7 +43725,8 @@
          "xesto": {
           "gl": "Axitar todo o corpo coma unha maraca",
           "es": "Agitar todo el cuerpo como una maraca"
-         }
+         },
+         "lamina": "pal_shake"
         },
         {
          "tipo": "noun",
@@ -43543,7 +43740,8 @@
          "xesto": {
           "gl": "Abrir un mapa imaxinario",
           "es": "Abrir un mapa imaginario"
-         }
+         },
+         "lamina": "pal_map"
         },
         {
          "tipo": "adjective",
@@ -43557,7 +43755,8 @@
          "xesto": {
           "gl": "Mover os dedos coma choiva",
           "es": "Mover los dedos como lluvia"
-         }
+         },
+         "lamina": "pal_showery"
         },
         {
          "tipo": "adjective",
@@ -43571,7 +43770,8 @@
          "xesto": {
           "gl": "Tapar o sol cunha man e poñer cara seria",
           "es": "Tapar el sol con una mano y poner cara seria"
-         }
+         },
+         "lamina": "pal_cloudy"
         },
         {
          "tipo": "noun",
@@ -43585,7 +43785,8 @@
          "xesto": {
           "gl": "Pasar agachado por debaixo",
           "es": "Pasar agachado por debajo"
-         }
+         },
+         "lamina": "pal_underpass"
         }
        ],
        "novas": [
@@ -43601,7 +43802,8 @@
          "xesto": {
           "gl": "Marcha en grupo compacto, ombro con ombro, a ritmo lento.",
           "es": "Marcha en grupo compacto, hombro con hombro, a ritmo lento."
-         }
+         },
+         "lamina": "pal_walk_together_cloud"
         },
         {
          "tipo": "orde",
@@ -43615,7 +43817,8 @@
          "xesto": {
           "gl": "Dispersión rápida e agachada baixo un paraugas imaxinario.",
           "es": "Dispersión rápida y agachada bajo un paraguas imaginario."
-         }
+         },
+         "lamina": "pal_storm_hide_umbrella"
         },
         {
          "tipo": "orde",
@@ -43629,7 +43832,8 @@
          "xesto": {
           "gl": "Sacudida de brazos e tronco como quen escorre a auga.",
           "es": "Sacudida de brazos y tronco como quien escurre el agua."
-         }
+         },
+         "lamina": "pal_sun_back_shake_water"
         }
        ],
        "repasa": [],
@@ -43774,7 +43978,8 @@
        "fraseGramatica": {
         "en": "It didn't fall, did it?",
         "gl": "Non caeu, verdade?",
-        "es": "No se cayó, ¿verdad?"
+        "es": "No se cayó, ¿verdad?",
+        "lamina": "pal_didnt_fall"
        },
        "comoFalar": {
         "clave": "recast",
@@ -43806,7 +44011,8 @@
          "xesto": {
           "gl": "Axitar todo o corpo coma unha maraca",
           "es": "Agitar todo el cuerpo como una maraca"
-         }
+         },
+         "lamina": "pal_shake"
         },
         {
          "tipo": "noun",
@@ -43820,7 +44026,8 @@
          "xesto": {
           "gl": "Abrir un mapa imaxinario",
           "es": "Abrir un mapa imaginario"
-         }
+         },
+         "lamina": "pal_map"
         },
         {
          "tipo": "adjective",
@@ -43834,7 +44041,8 @@
          "xesto": {
           "gl": "Mover os dedos coma choiva",
           "es": "Mover los dedos como lluvia"
-         }
+         },
+         "lamina": "pal_showery"
         },
         {
          "tipo": "adjective",
@@ -43848,7 +44056,8 @@
          "xesto": {
           "gl": "Tapar o sol cunha man e poñer cara seria",
           "es": "Tapar el sol con una mano y poner cara seria"
-         }
+         },
+         "lamina": "pal_cloudy"
         },
         {
          "tipo": "noun",
@@ -43862,7 +44071,8 @@
          "xesto": {
           "gl": "Pasar agachado por debaixo",
           "es": "Pasar agachado por debajo"
-         }
+         },
+         "lamina": "pal_underpass"
         },
         {
          "tipo": "orde",
@@ -43876,7 +44086,8 @@
          "xesto": {
           "gl": "Marcha en grupo compacto, ombro con ombro, a ritmo lento.",
           "es": "Marcha en grupo compacto, hombro con hombro, a ritmo lento."
-         }
+         },
+         "lamina": "pal_walk_together_cloud"
         },
         {
          "tipo": "orde",
@@ -43890,7 +44101,8 @@
          "xesto": {
           "gl": "Dispersión rápida e agachada baixo un paraugas imaxinario.",
           "es": "Dispersión rápida y agachada bajo un paraguas imaginario."
-         }
+         },
+         "lamina": "pal_storm_hide_umbrella"
         },
         {
          "tipo": "orde",
@@ -43904,7 +44116,8 @@
          "xesto": {
           "gl": "Sacudida de brazos e tronco como quen escorre a auga.",
           "es": "Sacudida de brazos y tronco como quien escurre el agua."
-         }
+         },
+         "lamina": "pal_sun_back_shake_water"
         }
        ],
        "novas": [
@@ -43920,7 +44133,8 @@
          "xesto": {
           "gl": "Apuntar unha mangueira",
           "es": "Apuntar una manguera"
-         }
+         },
+         "lamina": "pal_firefighter"
         },
         {
          "tipo": "noun",
@@ -43934,7 +44148,8 @@
          "xesto": {
           "gl": "Facer o xesto de parar",
           "es": "Hacer el gesto de parar"
-         }
+         },
+         "lamina": "pal_police_officer"
         },
         {
          "tipo": "noun",
@@ -43948,7 +44163,8 @@
          "xesto": {
           "gl": "Amasar pan no aire",
           "es": "Amasar pan en el aire"
-         }
+         },
+         "lamina": "pal_baker"
         }
        ],
        "repasa": [],
@@ -44166,7 +44382,8 @@
        "fraseGramatica": {
         "en": "If it had rained, we would have found mud.",
         "gl": "Se chovese, atopariamos barro.",
-        "es": "Si hubiera llovido, habríamos encontrado barro."
+        "es": "Si hubiera llovido, habríamos encontrado barro.",
+        "lamina": "pal_if_rained_mud"
        },
        "comoFalar": {
         "clave": "parentese",
@@ -44198,7 +44415,8 @@
          "xesto": {
           "gl": "Tapar o sol cunha man e poñer cara seria",
           "es": "Tapar el sol con una mano y poner cara seria"
-         }
+         },
+         "lamina": "pal_cloudy"
         },
         {
          "tipo": "noun",
@@ -44212,7 +44430,8 @@
          "xesto": {
           "gl": "Pasar agachado por debaixo",
           "es": "Pasar agachado por debajo"
-         }
+         },
+         "lamina": "pal_underpass"
         },
         {
          "tipo": "orde",
@@ -44226,7 +44445,8 @@
          "xesto": {
           "gl": "Marcha en grupo compacto, ombro con ombro, a ritmo lento.",
           "es": "Marcha en grupo compacto, hombro con hombro, a ritmo lento."
-         }
+         },
+         "lamina": "pal_walk_together_cloud"
         },
         {
          "tipo": "orde",
@@ -44240,7 +44460,8 @@
          "xesto": {
           "gl": "Dispersión rápida e agachada baixo un paraugas imaxinario.",
           "es": "Dispersión rápida y agachada bajo un paraguas imaginario."
-         }
+         },
+         "lamina": "pal_storm_hide_umbrella"
         },
         {
          "tipo": "orde",
@@ -44254,7 +44475,8 @@
          "xesto": {
           "gl": "Sacudida de brazos e tronco como quen escorre a auga.",
           "es": "Sacudida de brazos y tronco como quien escurre el agua."
-         }
+         },
+         "lamina": "pal_sun_back_shake_water"
         },
         {
          "tipo": "noun",
@@ -44268,7 +44490,8 @@
          "xesto": {
           "gl": "Apuntar unha mangueira",
           "es": "Apuntar una manguera"
-         }
+         },
+         "lamina": "pal_firefighter"
         },
         {
          "tipo": "noun",
@@ -44282,7 +44505,8 @@
          "xesto": {
           "gl": "Facer o xesto de parar",
           "es": "Hacer el gesto de parar"
-         }
+         },
+         "lamina": "pal_police_officer"
         },
         {
          "tipo": "noun",
@@ -44296,7 +44520,8 @@
          "xesto": {
           "gl": "Amasar pan no aire",
           "es": "Amasar pan en el aire"
-         }
+         },
+         "lamina": "pal_baker"
         }
        ],
        "novas": [
@@ -44312,7 +44537,8 @@
          "xesto": {
           "gl": "Camiñar a catro patas amodo",
           "es": "Caminar a cuatro patas despacio"
-         }
+         },
+         "lamina": "pal_wolf"
         },
         {
          "tipo": "noun",
@@ -44326,7 +44552,8 @@
          "xesto": {
           "gl": "Poñer as mans sobre a cabeza coma orellas en punta",
           "es": "Poner las manos sobre la cabeza como orejas en punta"
-         }
+         },
+         "lamina": "pal_fox"
         },
         {
          "tipo": "noun",
@@ -44340,7 +44567,8 @@
          "xesto": {
           "gl": "Subir a un escenario imaxinario",
           "es": "Subir a un escenario imaginario"
-         }
+         },
+         "lamina": "pal_stage"
         }
        ],
        "repasa": [],
@@ -44485,7 +44713,8 @@
        "fraseGramatica": {
         "en": "If we had used boots, we would have stayed clean.",
         "gl": "Se levásemos botas, quedariamos limpos.",
-        "es": "Si hubiéramos llevado botas, nos habríamos quedado limpios."
+        "es": "Si hubiéramos llevado botas, nos habríamos quedado limpios.",
+        "lamina": "pal_boots_stayed_clean"
        },
        "comoFalar": {
         "clave": "espera",
@@ -44517,7 +44746,8 @@
          "xesto": {
           "gl": "Camiñar a catro patas amodo",
           "es": "Caminar a cuatro patas despacio"
-         }
+         },
+         "lamina": "pal_wolf"
         },
         {
          "tipo": "noun",
@@ -44531,7 +44761,8 @@
          "xesto": {
           "gl": "Poñer as mans sobre a cabeza coma orellas en punta",
           "es": "Poner las manos sobre la cabeza como orejas en punta"
-         }
+         },
+         "lamina": "pal_fox"
         },
         {
          "tipo": "noun",
@@ -44545,7 +44776,8 @@
          "xesto": {
           "gl": "Subir a un escenario imaxinario",
           "es": "Subir a un escenario imaginario"
-         }
+         },
+         "lamina": "pal_stage"
         }
        ],
        "novas": [
@@ -44561,7 +44793,8 @@
          "xesto": {
           "gl": "Camiñar en silencio agachado",
           "es": "Caminar en silencio agachado"
-         }
+         },
+         "lamina": "pal_sneak"
         },
         {
          "tipo": "adjective",
@@ -44575,7 +44808,8 @@
          "xesto": {
           "gl": "Camiñar amodo e mirar aos lados",
           "es": "Caminar despacio y mirar a los lados"
-         }
+         },
+         "lamina": "pal_mysterious"
         },
         {
          "tipo": "noun",
@@ -44589,7 +44823,8 @@
          "xesto": {
           "gl": "Suxeitar un escudo imaxinario",
           "es": "Sostener un escudo imaginario"
-         }
+         },
+         "lamina": "pal_knight"
         }
        ],
        "repasa": [],
@@ -44734,7 +44969,8 @@
        "fraseGramatica": {
         "en": "If you had jumped, it would have splashed.",
         "gl": "Se saltases, salpicaría.",
-        "es": "Si hubieras saltado, habría salpicado."
+        "es": "Si hubieras saltado, habría salpicado.",
+        "lamina": "pal_jumped_splashed"
        },
        "comoFalar": {
         "clave": "expansion",
@@ -44766,7 +45002,8 @@
          "xesto": {
           "gl": "Camiñar a catro patas amodo",
           "es": "Caminar a cuatro patas despacio"
-         }
+         },
+         "lamina": "pal_wolf"
         },
         {
          "tipo": "noun",
@@ -44780,7 +45017,8 @@
          "xesto": {
           "gl": "Poñer as mans sobre a cabeza coma orellas en punta",
           "es": "Poner las manos sobre la cabeza como orejas en punta"
-         }
+         },
+         "lamina": "pal_fox"
         },
         {
          "tipo": "noun",
@@ -44794,7 +45032,8 @@
          "xesto": {
           "gl": "Subir a un escenario imaxinario",
           "es": "Subir a un escenario imaginario"
-         }
+         },
+         "lamina": "pal_stage"
         },
         {
          "tipo": "verb",
@@ -44808,7 +45047,8 @@
          "xesto": {
           "gl": "Camiñar en silencio agachado",
           "es": "Caminar en silencio agachado"
-         }
+         },
+         "lamina": "pal_sneak"
         },
         {
          "tipo": "adjective",
@@ -44822,7 +45062,8 @@
          "xesto": {
           "gl": "Camiñar amodo e mirar aos lados",
           "es": "Caminar despacio y mirar a los lados"
-         }
+         },
+         "lamina": "pal_mysterious"
         },
         {
          "tipo": "noun",
@@ -44836,7 +45077,8 @@
          "xesto": {
           "gl": "Suxeitar un escudo imaxinario",
           "es": "Sostener un escudo imaginario"
-         }
+         },
+         "lamina": "pal_knight"
         }
        ],
        "novas": [
@@ -44852,7 +45094,8 @@
          "xesto": {
           "gl": "Galope rítmico con cambio de apoio e brazos recollidos.",
           "es": "Galope rítmico con cambio de apoyo y brazos recogidos."
-         }
+         },
+         "lamina": "pal_gallop_wild_horse"
         },
         {
          "tipo": "orde",
@@ -44866,7 +45109,8 @@
          "xesto": {
           "gl": "Parada tónica inmediata mantendo a postura do animal.",
           "es": "Parada tónica inmediata manteniendo la postura del animal."
-         }
+         },
+         "lamina": "pal_wolf_watching_freeze"
         },
         {
          "tipo": "orde",
@@ -44880,7 +45124,8 @@
          "xesto": {
           "gl": "Marcha silenciosa sobre metatarsos co tronco lixeiramente baixo.",
           "es": "Marcha silenciosa sobre metatarsos con el tronco ligeramente bajo."
-         }
+         },
+         "lamina": "pal_sneak_fox_woods"
         },
         {
          "tipo": "formula",
@@ -44890,7 +45135,8 @@
           "es": "Frase para relacionarse"
          },
          "gl": "Mira fóra!",
-         "es": "¡Mira fuera!"
+         "es": "¡Mira fuera!",
+         "lamina": "pal_look_outside"
         }
        ],
        "repasa": [],
@@ -45035,7 +45281,8 @@
        "fraseGramatica": {
         "en": "What would have happened without water?",
         "gl": "Que pasaría sen auga?",
-        "es": "¿Qué habría pasado sin agua?"
+        "es": "¿Qué habría pasado sin agua?",
+        "lamina": "pal_without_water"
        },
        "comoFalar": {
         "clave": "recast",
@@ -45067,7 +45314,8 @@
          "xesto": {
           "gl": "Subir a un escenario imaxinario",
           "es": "Subir a un escenario imaginario"
-         }
+         },
+         "lamina": "pal_stage"
         },
         {
          "tipo": "verb",
@@ -45081,7 +45329,8 @@
          "xesto": {
           "gl": "Camiñar en silencio agachado",
           "es": "Caminar en silencio agachado"
-         }
+         },
+         "lamina": "pal_sneak"
         },
         {
          "tipo": "adjective",
@@ -45095,7 +45344,8 @@
          "xesto": {
           "gl": "Camiñar amodo e mirar aos lados",
           "es": "Caminar despacio y mirar a los lados"
-         }
+         },
+         "lamina": "pal_mysterious"
         },
         {
          "tipo": "noun",
@@ -45109,7 +45359,8 @@
          "xesto": {
           "gl": "Suxeitar un escudo imaxinario",
           "es": "Sostener un escudo imaginario"
-         }
+         },
+         "lamina": "pal_knight"
         },
         {
          "tipo": "orde",
@@ -45123,7 +45374,8 @@
          "xesto": {
           "gl": "Galope rítmico con cambio de apoio e brazos recollidos.",
           "es": "Galope rítmico con cambio de apoyo y brazos recogidos."
-         }
+         },
+         "lamina": "pal_gallop_wild_horse"
         },
         {
          "tipo": "orde",
@@ -45137,7 +45389,8 @@
          "xesto": {
           "gl": "Parada tónica inmediata mantendo a postura do animal.",
           "es": "Parada tónica inmediata manteniendo la postura del animal."
-         }
+         },
+         "lamina": "pal_wolf_watching_freeze"
         },
         {
          "tipo": "orde",
@@ -45151,7 +45404,8 @@
          "xesto": {
           "gl": "Marcha silenciosa sobre metatarsos co tronco lixeiramente baixo.",
           "es": "Marcha silenciosa sobre metatarsos con el tronco ligeramente bajo."
-         }
+         },
+         "lamina": "pal_sneak_fox_woods"
         },
         {
          "tipo": "formula",
@@ -45161,7 +45415,8 @@
           "es": "Frase para relacionarse"
          },
          "gl": "Mira fóra!",
-         "es": "¡Mira fuera!"
+         "es": "¡Mira fuera!",
+         "lamina": "pal_look_outside"
         }
        ],
        "novas": [
@@ -45177,7 +45432,8 @@
          "xesto": {
           "gl": "Mirar arredor",
           "es": "Mirar alrededor"
-         }
+         },
+         "lamina": "pal_whose_turn"
         },
         {
          "tipo": "estructura",
@@ -45191,7 +45447,8 @@
          "xesto": {
           "gl": "Camiñar dun lado ao outro dunha liña no chan",
           "es": "Caminar de un lado al otro de una línea en el suelo"
-         }
+         },
+         "lamina": "pal_walk_across_bridge"
         },
         {
          "tipo": "noun",
@@ -45201,7 +45458,8 @@
           "es": "Nombre: una cosa"
          },
          "gl": "abrigo",
-         "es": "abrigo"
+         "es": "abrigo",
+         "lamina": "pal_coat"
         }
        ],
        "repasa": [],
@@ -45419,7 +45677,8 @@
        "fraseGramatica": {
         "en": "If we had made it bigger, it would spin faster now.",
         "gl": "Se o fixésemos máis grande, agora xiraría máis rápido.",
-        "es": "Si lo hubiéramos hecho más grande, ahora giraría más rápido."
+        "es": "Si lo hubiéramos hecho más grande, ahora giraría más rápido.",
+        "lamina": "pal_bigger_spin_faster"
        },
        "comoFalar": {
         "clave": "parentese",
@@ -45451,7 +45710,8 @@
          "xesto": {
           "gl": "Suxeitar un escudo imaxinario",
           "es": "Sostener un escudo imaginario"
-         }
+         },
+         "lamina": "pal_knight"
         },
         {
          "tipo": "orde",
@@ -45465,7 +45725,8 @@
          "xesto": {
           "gl": "Galope rítmico con cambio de apoio e brazos recollidos.",
           "es": "Galope rítmico con cambio de apoyo y brazos recogidos."
-         }
+         },
+         "lamina": "pal_gallop_wild_horse"
         },
         {
          "tipo": "orde",
@@ -45479,7 +45740,8 @@
          "xesto": {
           "gl": "Parada tónica inmediata mantendo a postura do animal.",
           "es": "Parada tónica inmediata manteniendo la postura del animal."
-         }
+         },
+         "lamina": "pal_wolf_watching_freeze"
         },
         {
          "tipo": "orde",
@@ -45493,7 +45755,8 @@
          "xesto": {
           "gl": "Marcha silenciosa sobre metatarsos co tronco lixeiramente baixo.",
           "es": "Marcha silenciosa sobre metatarsos con el tronco ligeramente bajo."
-         }
+         },
+         "lamina": "pal_sneak_fox_woods"
         },
         {
          "tipo": "formula",
@@ -45503,7 +45766,8 @@
           "es": "Frase para relacionarse"
          },
          "gl": "Mira fóra!",
-         "es": "¡Mira fuera!"
+         "es": "¡Mira fuera!",
+         "lamina": "pal_look_outside"
         },
         {
          "tipo": "phrase",
@@ -45517,7 +45781,8 @@
          "xesto": {
           "gl": "Mirar arredor",
           "es": "Mirar alrededor"
-         }
+         },
+         "lamina": "pal_whose_turn"
         },
         {
          "tipo": "estructura",
@@ -45531,7 +45796,8 @@
          "xesto": {
           "gl": "Camiñar dun lado ao outro dunha liña no chan",
           "es": "Caminar de un lado al otro de una línea en el suelo"
-         }
+         },
+         "lamina": "pal_walk_across_bridge"
         },
         {
          "tipo": "noun",
@@ -45541,7 +45807,8 @@
           "es": "Nombre: una cosa"
          },
          "gl": "abrigo",
-         "es": "abrigo"
+         "es": "abrigo",
+         "lamina": "pal_coat"
         }
        ],
        "novas": [
@@ -45557,7 +45824,8 @@
          "xesto": {
           "gl": "Mover os brazos pegados ao corpo moi rápido",
           "es": "Mover los brazos pegados al cuerpo muy rápido"
-         }
+         },
+         "lamina": "pal_bee"
         },
         {
          "tipo": "verb",
@@ -45571,7 +45839,8 @@
          "xesto": {
           "gl": "Voar pola aula cos brazos abertos, amodo",
           "es": "Volar por el aula con los brazos abiertos, despacio"
-         }
+         },
+         "lamina": "pal_fly_action"
         },
         {
          "tipo": "noun",
@@ -45585,7 +45854,8 @@
          "xesto": {
           "gl": "Xuntar os pulsos e abrir os dedos coma pétalos",
           "es": "Juntar las muñecas y abrir los dedos como pétalos"
-         }
+         },
+         "lamina": "pal_flower"
         },
         {
          "tipo": "verb",
@@ -45599,7 +45869,8 @@
          "xesto": {
           "gl": "Baixar os brazos amodo e pousarse no chan",
           "es": "Bajar los brazos despacio y posarse en el suelo"
-         }
+         },
+         "lamina": "pal_land_action"
         }
        ],
        "repasa": [],
@@ -45744,7 +46015,8 @@
        "fraseGramatica": {
         "en": "If it weren't windy, it wouldn't have moved.",
         "gl": "Se non fixese vento, non se movería.",
-        "es": "Si no hiciera viento, no se habría movido."
+        "es": "Si no hiciera viento, no se habría movido.",
+        "lamina": "pal_if_not_windy_moved"
        },
        "comoFalar": {
         "clave": "espera",
@@ -45776,7 +46048,8 @@
          "xesto": {
           "gl": "Mover os brazos pegados ao corpo moi rápido",
           "es": "Mover los brazos pegados al cuerpo muy rápido"
-         }
+         },
+         "lamina": "pal_bee"
         },
         {
          "tipo": "verb",
@@ -45790,7 +46063,8 @@
          "xesto": {
           "gl": "Voar pola aula cos brazos abertos, amodo",
           "es": "Volar por el aula con los brazos abiertos, despacio"
-         }
+         },
+         "lamina": "pal_fly_action"
         },
         {
          "tipo": "noun",
@@ -45804,7 +46078,8 @@
          "xesto": {
           "gl": "Xuntar os pulsos e abrir os dedos coma pétalos",
           "es": "Juntar las muñecas y abrir los dedos como pétalos"
-         }
+         },
+         "lamina": "pal_flower"
         },
         {
          "tipo": "verb",
@@ -45818,7 +46093,8 @@
          "xesto": {
           "gl": "Baixar os brazos amodo e pousarse no chan",
           "es": "Bajar los brazos despacio y posarse en el suelo"
-         }
+         },
+         "lamina": "pal_land_action"
         }
        ],
        "novas": [
@@ -45834,7 +46110,8 @@
          "xesto": {
           "gl": "Sinalar algo vermello na aula",
           "es": "Señalar algo rojo en el aula"
-         }
+         },
+         "lamina": "vermello"
         },
         {
          "tipo": "adjective",
@@ -45848,7 +46125,8 @@
          "xesto": {
           "gl": "Sorrir máis",
           "es": "Sonreír más"
-         }
+         },
+         "lamina": "pal_sweeter"
         },
         {
          "tipo": "formula",
@@ -45858,7 +46136,8 @@
           "es": "Frase para relacionarse"
          },
          "gl": "Chove con forza",
-         "es": "Llueve con fuerza"
+         "es": "Llueve con fuerza",
+         "lamina": "pal_raining_hard"
         }
        ],
        "repasa": [],
@@ -46003,7 +46282,8 @@
        "fraseGramatica": {
         "en": "If you had blown, it would be turning.",
         "gl": "Se soprases, estaría xirando.",
-        "es": "Si hubieras soplado, estaría girando."
+        "es": "Si hubieras soplado, estaría girando.",
+        "lamina": "pal_if_blown_turning"
        },
        "comoFalar": {
         "clave": "expansion",
@@ -46035,7 +46315,8 @@
          "xesto": {
           "gl": "Mover os brazos pegados ao corpo moi rápido",
           "es": "Mover los brazos pegados al cuerpo muy rápido"
-         }
+         },
+         "lamina": "pal_bee"
         },
         {
          "tipo": "verb",
@@ -46049,7 +46330,8 @@
          "xesto": {
           "gl": "Voar pola aula cos brazos abertos, amodo",
           "es": "Volar por el aula con los brazos abiertos, despacio"
-         }
+         },
+         "lamina": "pal_fly_action"
         },
         {
          "tipo": "noun",
@@ -46063,7 +46345,8 @@
          "xesto": {
           "gl": "Xuntar os pulsos e abrir os dedos coma pétalos",
           "es": "Juntar las muñecas y abrir los dedos como pétalos"
-         }
+         },
+         "lamina": "pal_flower"
         },
         {
          "tipo": "verb",
@@ -46077,7 +46360,8 @@
          "xesto": {
           "gl": "Baixar os brazos amodo e pousarse no chan",
           "es": "Bajar los brazos despacio y posarse en el suelo"
-         }
+         },
+         "lamina": "pal_land_action"
         },
         {
          "tipo": "adjective",
@@ -46091,7 +46375,8 @@
          "xesto": {
           "gl": "Sinalar algo vermello na aula",
           "es": "Señalar algo rojo en el aula"
-         }
+         },
+         "lamina": "vermello"
         },
         {
          "tipo": "adjective",
@@ -46105,7 +46390,8 @@
          "xesto": {
           "gl": "Sorrir máis",
           "es": "Sonreír más"
-         }
+         },
+         "lamina": "pal_sweeter"
         },
         {
          "tipo": "formula",
@@ -46115,7 +46401,8 @@
           "es": "Frase para relacionarse"
          },
          "gl": "Chove con forza",
-         "es": "Llueve con fuerza"
+         "es": "Llueve con fuerza",
+         "lamina": "pal_raining_hard"
         }
        ],
        "novas": [
@@ -46131,7 +46418,8 @@
          "xesto": {
           "gl": "Desprazamento rápido cos brazos en batido curto e continuo.",
           "es": "Desplazamiento rápido con los brazos en batido corto y continuo."
-         }
+         },
+         "lamina": "pal_fly_busy_bee"
         },
         {
          "tipo": "orde",
@@ -46145,7 +46433,8 @@
          "xesto": {
           "gl": "Aterraxe suave sobre a marca vermella, axeonllado.",
           "es": "Aterrizaje suave sobre la marca roja, arrodillado."
-         }
+         },
+         "lamina": "pal_red_flower_land_softly"
         },
         {
          "tipo": "orde",
@@ -46159,7 +46448,8 @@
          "xesto": {
           "gl": "Quietude total sobre a marca ata escoitar a orde de espertar.",
           "es": "Quietud total sobre la marca hasta escuchar la orden de despertar."
-         }
+         },
+         "lamina": "pal_sleep_flower_sun_wakes"
         },
         {
          "tipo": "noun",
@@ -46169,7 +46459,8 @@
           "es": "Nombre: una cosa"
          },
          "gl": "sombreiro",
-         "es": "sombrero"
+         "es": "sombrero",
+         "lamina": "pal_hat"
         }
        ],
        "repasa": [],
@@ -46314,7 +46605,8 @@
        "fraseGramatica": {
         "en": "If we had put it outside, it would be spinning now.",
         "gl": "Se o puxésemos fóra, agora xiraría.",
-        "es": "Si lo hubiéramos puesto fuera, ahora estaría girando."
+        "es": "Si lo hubiéramos puesto fuera, ahora estaría girando.",
+        "lamina": "pal_put_outside_spinning"
        },
        "comoFalar": {
         "clave": "recast",
@@ -46346,7 +46638,8 @@
          "xesto": {
           "gl": "Baixar os brazos amodo e pousarse no chan",
           "es": "Bajar los brazos despacio y posarse en el suelo"
-         }
+         },
+         "lamina": "pal_land_action"
         },
         {
          "tipo": "adjective",
@@ -46360,7 +46653,8 @@
          "xesto": {
           "gl": "Sinalar algo vermello na aula",
           "es": "Señalar algo rojo en el aula"
-         }
+         },
+         "lamina": "vermello"
         },
         {
          "tipo": "adjective",
@@ -46374,7 +46668,8 @@
          "xesto": {
           "gl": "Sorrir máis",
           "es": "Sonreír más"
-         }
+         },
+         "lamina": "pal_sweeter"
         },
         {
          "tipo": "formula",
@@ -46384,7 +46679,8 @@
           "es": "Frase para relacionarse"
          },
          "gl": "Chove con forza",
-         "es": "Llueve con fuerza"
+         "es": "Llueve con fuerza",
+         "lamina": "pal_raining_hard"
         },
         {
          "tipo": "orde",
@@ -46398,7 +46694,8 @@
          "xesto": {
           "gl": "Desprazamento rápido cos brazos en batido curto e continuo.",
           "es": "Desplazamiento rápido con los brazos en batido corto y continuo."
-         }
+         },
+         "lamina": "pal_fly_busy_bee"
         },
         {
          "tipo": "orde",
@@ -46412,7 +46709,8 @@
          "xesto": {
           "gl": "Aterraxe suave sobre a marca vermella, axeonllado.",
           "es": "Aterrizaje suave sobre la marca roja, arrodillado."
-         }
+         },
+         "lamina": "pal_red_flower_land_softly"
         },
         {
          "tipo": "orde",
@@ -46426,7 +46724,8 @@
          "xesto": {
           "gl": "Quietude total sobre a marca ata escoitar a orde de espertar.",
           "es": "Quietud total sobre la marca hasta escuchar la orden de despertar."
-         }
+         },
+         "lamina": "pal_sleep_flower_sun_wakes"
         },
         {
          "tipo": "noun",
@@ -46436,7 +46735,8 @@
           "es": "Nombre: una cosa"
          },
          "gl": "sombreiro",
-         "es": "sombrero"
+         "es": "sombrero",
+         "lamina": "pal_hat"
         }
        ],
        "novas": [
@@ -46448,7 +46748,8 @@
           "es": "Adjetivo: cómo es"
          },
          "gl": "con vento",
-         "es": "con viento"
+         "es": "con viento",
+         "lamina": "pal_windy"
         },
         {
          "tipo": "noun",
@@ -46462,7 +46763,8 @@
          "xesto": {
           "gl": "Colocar froita no posto",
           "es": "Colocar fruta en el puesto"
-         }
+         },
+         "lamina": "pal_market_stall"
         },
         {
          "tipo": "noun",
@@ -46476,7 +46778,8 @@
          "xesto": {
           "gl": "Ler unha lista imaxinaria",
           "es": "Leer una lista imaginaria"
-         }
+         },
+         "lamina": "pal_shopping_list"
         }
        ],
        "repasa": [],
@@ -46694,7 +46997,8 @@
        "fraseGramatica": {
         "en": "I wish it would thunder!",
         "gl": "Oxalá trone!",
-        "es": "¡Ojalá truene!"
+        "es": "¡Ojalá truene!",
+        "lamina": "pal_wish_thunder"
        },
        "comoFalar": {
         "clave": "parentese",
@@ -46722,7 +47026,8 @@
           "es": "Frase para relacionarse"
          },
          "gl": "Chove con forza",
-         "es": "Llueve con fuerza"
+         "es": "Llueve con fuerza",
+         "lamina": "pal_raining_hard"
         },
         {
          "tipo": "orde",
@@ -46736,7 +47041,8 @@
          "xesto": {
           "gl": "Desprazamento rápido cos brazos en batido curto e continuo.",
           "es": "Desplazamiento rápido con los brazos en batido corto y continuo."
-         }
+         },
+         "lamina": "pal_fly_busy_bee"
         },
         {
          "tipo": "orde",
@@ -46750,7 +47056,8 @@
          "xesto": {
           "gl": "Aterraxe suave sobre a marca vermella, axeonllado.",
           "es": "Aterrizaje suave sobre la marca roja, arrodillado."
-         }
+         },
+         "lamina": "pal_red_flower_land_softly"
         },
         {
          "tipo": "orde",
@@ -46764,7 +47071,8 @@
          "xesto": {
           "gl": "Quietude total sobre a marca ata escoitar a orde de espertar.",
           "es": "Quietud total sobre la marca hasta escuchar la orden de despertar."
-         }
+         },
+         "lamina": "pal_sleep_flower_sun_wakes"
         },
         {
          "tipo": "noun",
@@ -46774,7 +47082,8 @@
           "es": "Nombre: una cosa"
          },
          "gl": "sombreiro",
-         "es": "sombrero"
+         "es": "sombrero",
+         "lamina": "pal_hat"
         },
         {
          "tipo": "adjective",
@@ -46784,7 +47093,8 @@
           "es": "Adjetivo: cómo es"
          },
          "gl": "con vento",
-         "es": "con viento"
+         "es": "con viento",
+         "lamina": "pal_windy"
         },
         {
          "tipo": "noun",
@@ -46798,7 +47108,8 @@
          "xesto": {
           "gl": "Colocar froita no posto",
           "es": "Colocar fruta en el puesto"
-         }
+         },
+         "lamina": "pal_market_stall"
         },
         {
          "tipo": "noun",
@@ -46812,7 +47123,8 @@
          "xesto": {
           "gl": "Ler unha lista imaxinaria",
           "es": "Leer una lista imaginaria"
-         }
+         },
+         "lamina": "pal_shopping_list"
         }
        ],
        "novas": [
@@ -46824,7 +47136,8 @@
           "es": "Frase para relacionarse"
          },
          "gl": "Ven debaixo do meu paraugas",
-         "es": "Ven debajo de mi paraguas"
+         "es": "Ven debajo de mi paraguas",
+         "lamina": "pal_come_under_umbrella"
         },
         {
          "tipo": "noun",
@@ -46838,7 +47151,8 @@
          "xesto": {
           "gl": "Planear cos brazos abertos",
           "es": "Planear con los brazos abiertos"
-         }
+         },
+         "lamina": "gaivota"
         },
         {
          "tipo": "noun",
@@ -46852,7 +47166,8 @@
          "xesto": {
           "gl": "Poñer a man vertical",
           "es": "Poner la mano vertical"
-         }
+         },
+         "lamina": "pal_cliff"
         }
        ],
        "repasa": [],
@@ -46997,7 +47312,8 @@
        "fraseGramatica": {
         "en": "I wish we had more rice.",
         "gl": "Oxalá tivésemos máis arroz.",
-        "es": "Ojalá tuviéramos más arroz."
+        "es": "Ojalá tuviéramos más arroz.",
+        "lamina": "pal_wish_more_rice"
        },
        "comoFalar": {
         "clave": "espera",
@@ -47025,7 +47341,8 @@
           "es": "Frase para relacionarse"
          },
          "gl": "Ven debaixo do meu paraugas",
-         "es": "Ven debajo de mi paraguas"
+         "es": "Ven debajo de mi paraguas",
+         "lamina": "pal_come_under_umbrella"
         },
         {
          "tipo": "noun",
@@ -47039,7 +47356,8 @@
          "xesto": {
           "gl": "Planear cos brazos abertos",
           "es": "Planear con los brazos abiertos"
-         }
+         },
+         "lamina": "gaivota"
         },
         {
          "tipo": "noun",
@@ -47053,7 +47371,8 @@
          "xesto": {
           "gl": "Poñer a man vertical",
           "es": "Poner la mano vertical"
-         }
+         },
+         "lamina": "pal_cliff"
         }
        ],
        "novas": [
@@ -47069,7 +47388,8 @@
          "xesto": {
           "gl": "Respirar fondo e deixar caer os ombros",
           "es": "Respirar hondo y dejar caer los hombros"
-         }
+         },
+         "lamina": "pal_calm"
         },
         {
          "tipo": "adjective",
@@ -47079,7 +47399,8 @@
           "es": "Adjetivo: cómo es"
          },
          "gl": "de treboada",
-         "es": "de tormenta"
+         "es": "de tormenta",
+         "lamina": "pal_stormy"
         },
         {
          "tipo": "noun",
@@ -47093,7 +47414,8 @@
          "xesto": {
           "gl": "Encollerse pequeno",
           "es": "Acurrucarse pequeño"
-         }
+         },
+         "lamina": "pal_gull_chick"
         }
        ],
        "repasa": [],
@@ -47238,7 +47560,8 @@
        "fraseGramatica": {
         "en": "If only the storm were louder!",
         "gl": "Se a tormenta fose máis forte!",
-        "es": "¡Si la tormenta fuera más fuerte!"
+        "es": "¡Si la tormenta fuera más fuerte!",
+        "lamina": "pal_storm_louder"
        },
        "comoFalar": {
         "clave": "expansion",
@@ -47266,7 +47589,8 @@
           "es": "Frase para relacionarse"
          },
          "gl": "Ven debaixo do meu paraugas",
-         "es": "Ven debajo de mi paraguas"
+         "es": "Ven debajo de mi paraguas",
+         "lamina": "pal_come_under_umbrella"
         },
         {
          "tipo": "noun",
@@ -47280,7 +47604,8 @@
          "xesto": {
           "gl": "Planear cos brazos abertos",
           "es": "Planear con los brazos abiertos"
-         }
+         },
+         "lamina": "gaivota"
         },
         {
          "tipo": "noun",
@@ -47294,7 +47619,8 @@
          "xesto": {
           "gl": "Poñer a man vertical",
           "es": "Poner la mano vertical"
-         }
+         },
+         "lamina": "pal_cliff"
         },
         {
          "tipo": "adjective",
@@ -47308,7 +47634,8 @@
          "xesto": {
           "gl": "Respirar fondo e deixar caer os ombros",
           "es": "Respirar hondo y dejar caer los hombros"
-         }
+         },
+         "lamina": "pal_calm"
         },
         {
          "tipo": "adjective",
@@ -47318,7 +47645,8 @@
           "es": "Adjetivo: cómo es"
          },
          "gl": "de treboada",
-         "es": "de tormenta"
+         "es": "de tormenta",
+         "lamina": "pal_stormy"
         },
         {
          "tipo": "noun",
@@ -47332,7 +47660,8 @@
          "xesto": {
           "gl": "Encollerse pequeno",
           "es": "Acurrucarse pequeño"
-         }
+         },
+         "lamina": "pal_gull_chick"
         }
        ],
        "novas": [
@@ -47348,7 +47677,8 @@
          "xesto": {
           "gl": "Marcha tranquila e dispersa polo espazo, sen présa.",
           "es": "Marcha tranquila y dispersa por el espacio, sin prisa."
-         }
+         },
+         "lamina": "pal_walk_calmly_sheep"
         },
         {
          "tipo": "orde",
@@ -47362,7 +47692,8 @@
          "xesto": {
           "gl": "Conxelación inmediata na postura en que se estaba.",
           "es": "Congelación inmediata en la postura en que se estaba."
-         }
+         },
+         "lamina": "pal_hungry_wolf_wakes_freeze"
         },
         {
          "tipo": "orde",
@@ -47376,7 +47707,8 @@
          "xesto": {
           "gl": "Marcha silenciosa en puntas afastándose do centro.",
           "es": "Marcha silenciosa de puntillas alejándose del centro."
-         }
+         },
+         "lamina": "pal_wolf_sleeps_tiptoe_away"
         },
         {
          "tipo": "adjective",
@@ -47386,7 +47718,8 @@
           "es": "Adjetivo: cómo es"
          },
          "gl": "enlamado",
-         "es": "embarrado"
+         "es": "embarrado",
+         "lamina": "pal_muddy"
         }
        ],
        "repasa": [],
@@ -47531,7 +47864,8 @@
        "fraseGramatica": {
         "en": "I wish I had made a longer tube.",
         "gl": "Oxalá fixese un tubo máis longo.",
-        "es": "Ojalá hubiera hecho un tubo más largo."
+        "es": "Ojalá hubiera hecho un tubo más largo.",
+        "lamina": "pal_longer_tube"
        },
        "comoFalar": {
         "clave": "recast",
@@ -47563,7 +47897,8 @@
          "xesto": {
           "gl": "Poñer a man vertical",
           "es": "Poner la mano vertical"
-         }
+         },
+         "lamina": "pal_cliff"
         },
         {
          "tipo": "adjective",
@@ -47577,7 +47912,8 @@
          "xesto": {
           "gl": "Respirar fondo e deixar caer os ombros",
           "es": "Respirar hondo y dejar caer los hombros"
-         }
+         },
+         "lamina": "pal_calm"
         },
         {
          "tipo": "adjective",
@@ -47587,7 +47923,8 @@
           "es": "Adjetivo: cómo es"
          },
          "gl": "de treboada",
-         "es": "de tormenta"
+         "es": "de tormenta",
+         "lamina": "pal_stormy"
         },
         {
          "tipo": "noun",
@@ -47601,7 +47938,8 @@
          "xesto": {
           "gl": "Encollerse pequeno",
           "es": "Acurrucarse pequeño"
-         }
+         },
+         "lamina": "pal_gull_chick"
         },
         {
          "tipo": "orde",
@@ -47615,7 +47953,8 @@
          "xesto": {
           "gl": "Marcha tranquila e dispersa polo espazo, sen présa.",
           "es": "Marcha tranquila y dispersa por el espacio, sin prisa."
-         }
+         },
+         "lamina": "pal_walk_calmly_sheep"
         },
         {
          "tipo": "orde",
@@ -47629,7 +47968,8 @@
          "xesto": {
           "gl": "Conxelación inmediata na postura en que se estaba.",
           "es": "Congelación inmediata en la postura en que se estaba."
-         }
+         },
+         "lamina": "pal_hungry_wolf_wakes_freeze"
         },
         {
          "tipo": "orde",
@@ -47643,7 +47983,8 @@
          "xesto": {
           "gl": "Marcha silenciosa en puntas afastándose do centro.",
           "es": "Marcha silenciosa de puntillas alejándose del centro."
-         }
+         },
+         "lamina": "pal_wolf_sleeps_tiptoe_away"
         },
         {
          "tipo": "adjective",
@@ -47653,7 +47994,8 @@
           "es": "Adjetivo: cómo es"
          },
          "gl": "enlamado",
-         "es": "embarrado"
+         "es": "embarrado",
+         "lamina": "pal_muddy"
         }
        ],
        "novas": [
@@ -47665,7 +48007,8 @@
           "es": "Frase para relacionarse"
          },
          "gl": "Preparados?",
-         "es": "¿Preparados?"
+         "es": "¿Preparados?",
+         "lamina": "pal_are_you_ready"
         },
         {
          "tipo": "noun",
@@ -47679,7 +48022,8 @@
          "xesto": {
           "gl": "Coller lixo do chan",
           "es": "Coger basura del suelo"
-         }
+         },
+         "lamina": "pal_litter"
         },
         {
          "tipo": "noun",
@@ -47693,7 +48037,8 @@
          "xesto": {
           "gl": "Botar algo no colector",
           "es": "Echar algo en el contenedor"
-         }
+         },
+         "lamina": "pal_recycling_bin"
         }
        ],
        "repasa": [],
@@ -47911,7 +48256,8 @@
        "fraseGramatica": {
         "en": "The sun must have moved.",
         "gl": "O sol debeu moverse.",
-        "es": "El sol debe de haberse movido."
+        "es": "El sol debe de haberse movido.",
+        "lamina": "pal_sun_must_have_moved"
        },
        "comoFalar": {
         "clave": "parentese",
@@ -47943,7 +48289,8 @@
          "xesto": {
           "gl": "Encollerse pequeno",
           "es": "Acurrucarse pequeño"
-         }
+         },
+         "lamina": "pal_gull_chick"
         },
         {
          "tipo": "orde",
@@ -47957,7 +48304,8 @@
          "xesto": {
           "gl": "Marcha tranquila e dispersa polo espazo, sen présa.",
           "es": "Marcha tranquila y dispersa por el espacio, sin prisa."
-         }
+         },
+         "lamina": "pal_walk_calmly_sheep"
         },
         {
          "tipo": "orde",
@@ -47971,7 +48319,8 @@
          "xesto": {
           "gl": "Conxelación inmediata na postura en que se estaba.",
           "es": "Congelación inmediata en la postura en que se estaba."
-         }
+         },
+         "lamina": "pal_hungry_wolf_wakes_freeze"
         },
         {
          "tipo": "orde",
@@ -47985,7 +48334,8 @@
          "xesto": {
           "gl": "Marcha silenciosa en puntas afastándose do centro.",
           "es": "Marcha silenciosa de puntillas alejándose del centro."
-         }
+         },
+         "lamina": "pal_wolf_sleeps_tiptoe_away"
         },
         {
          "tipo": "adjective",
@@ -47995,7 +48345,8 @@
           "es": "Adjetivo: cómo es"
          },
          "gl": "enlamado",
-         "es": "embarrado"
+         "es": "embarrado",
+         "lamina": "pal_muddy"
         },
         {
          "tipo": "formula",
@@ -48005,7 +48356,8 @@
           "es": "Frase para relacionarse"
          },
          "gl": "Preparados?",
-         "es": "¿Preparados?"
+         "es": "¿Preparados?",
+         "lamina": "pal_are_you_ready"
         },
         {
          "tipo": "noun",
@@ -48019,7 +48371,8 @@
          "xesto": {
           "gl": "Coller lixo do chan",
           "es": "Coger basura del suelo"
-         }
+         },
+         "lamina": "pal_litter"
         },
         {
          "tipo": "noun",
@@ -48033,7 +48386,8 @@
          "xesto": {
           "gl": "Botar algo no colector",
           "es": "Echar algo en el contenedor"
-         }
+         },
+         "lamina": "pal_recycling_bin"
         }
        ],
        "novas": [
@@ -48049,7 +48403,8 @@
          "xesto": {
           "gl": "Tirar dunha corda imaxinaria cara a un mesmo",
           "es": "Tirar de una cuerda imaginaria hacia uno mismo"
-         }
+         },
+         "lamina": "pal_pull"
         },
         {
          "tipo": "verb",
@@ -48063,7 +48418,8 @@
          "xesto": {
           "gl": "Levantar entre dous un obxecto imaxinario pesado",
           "es": "Levantar entre dos un objeto imaginario pesado"
-         }
+         },
+         "lamina": "pal_help"
         },
         {
          "tipo": "verb",
@@ -48077,7 +48433,8 @@
          "xesto": {
           "gl": "Achegarse á orella de quen está ao lado e falar moi baixiño, coa boca á vista",
           "es": "Acercarse a la oreja de quien está al lado y hablar muy bajito, con la boca a la vista"
-         }
+         },
+         "lamina": "pal_whisper"
         },
         {
          "tipo": "adjective",
@@ -48091,7 +48448,8 @@
          "xesto": {
           "gl": "Levar o dedo aos beizos e chiscar un ollo",
           "es": "Llevarse el dedo a los labios y guiñar un ojo"
-         }
+         },
+         "lamina": "pal_secret"
         },
         {
          "tipo": "adjective",
@@ -48101,7 +48459,8 @@
           "es": "Adjetivo: cómo es"
          },
          "gl": "que salpica",
-         "es": "que salpica"
+         "es": "que salpica",
+         "lamina": "pal_splashy"
         }
        ],
        "repasa": [],
@@ -48246,7 +48605,8 @@
        "fraseGramatica": {
         "en": "Your shadow might have grown.",
         "gl": "A túa sombra puido medrar.",
-        "es": "Tu sombra puede haber crecido."
+        "es": "Tu sombra puede haber crecido.",
+        "lamina": "pal_shadow_grown"
        },
        "comoFalar": {
         "clave": "espera",
@@ -48278,7 +48638,8 @@
          "xesto": {
           "gl": "Tirar dunha corda imaxinaria cara a un mesmo",
           "es": "Tirar de una cuerda imaginaria hacia uno mismo"
-         }
+         },
+         "lamina": "pal_pull"
         },
         {
          "tipo": "verb",
@@ -48292,7 +48653,8 @@
          "xesto": {
           "gl": "Levantar entre dous un obxecto imaxinario pesado",
           "es": "Levantar entre dos un objeto imaginario pesado"
-         }
+         },
+         "lamina": "pal_help"
         },
         {
          "tipo": "verb",
@@ -48306,7 +48668,8 @@
          "xesto": {
           "gl": "Achegarse á orella de quen está ao lado e falar moi baixiño, coa boca á vista",
           "es": "Acercarse a la oreja de quien está al lado y hablar muy bajito, con la boca a la vista"
-         }
+         },
+         "lamina": "pal_whisper"
         },
         {
          "tipo": "adjective",
@@ -48320,7 +48683,8 @@
          "xesto": {
           "gl": "Levar o dedo aos beizos e chiscar un ollo",
           "es": "Llevarse el dedo a los labios y guiñar un ojo"
-         }
+         },
+         "lamina": "pal_secret"
         },
         {
          "tipo": "adjective",
@@ -48330,7 +48694,8 @@
           "es": "Adjetivo: cómo es"
          },
          "gl": "que salpica",
-         "es": "que salpica"
+         "es": "que salpica",
+         "lamina": "pal_splashy"
         }
        ],
        "novas": [
@@ -48346,7 +48711,8 @@
          "xesto": {
           "gl": "Dar as mans en círculo e subilas á vez",
           "es": "Darse las manos en círculo y subirlas a la vez"
-         }
+         },
+         "lamina": "pal_all_together"
         },
         {
          "tipo": "adjective",
@@ -48360,7 +48726,8 @@
          "xesto": {
           "gl": "Repartir en partes iguais",
           "es": "Repartir en partes iguales"
-         }
+         },
+         "lamina": "pal_fair"
         },
         {
          "tipo": "adjective",
@@ -48374,7 +48741,8 @@
          "xesto": {
           "gl": "Empurrar a torre sen que caia",
           "es": "Empujar la torre sin que caiga"
-         }
+         },
+         "lamina": "pal_sturdy"
         },
         {
          "tipo": "adjective",
@@ -48388,7 +48756,8 @@
          "xesto": {
           "gl": "Poñer o puño e despois a man aberta",
           "es": "Poner el puño y luego la mano abierta"
-         }
+         },
+         "lamina": "pal_brave_and_kind"
         },
         {
          "tipo": "verb",
@@ -48398,7 +48767,8 @@
           "es": "Verbo: una acción"
          },
          "gl": "protexer",
-         "es": "proteger"
+         "es": "proteger",
+         "lamina": "pal_protect"
         }
        ],
        "repasa": [],
@@ -48543,7 +48913,8 @@
        "fraseGramatica": {
         "en": "We should have looked at the shadow earlier.",
         "gl": "Debiamos mirar a sombra antes.",
-        "es": "Deberíamos haber mirado la sombra antes."
+        "es": "Deberíamos haber mirado la sombra antes.",
+        "lamina": "pal_looked_shadow_earlier"
        },
        "comoFalar": {
         "clave": "expansion",
@@ -48575,7 +48946,8 @@
          "xesto": {
           "gl": "Achegarse á orella de quen está ao lado e falar moi baixiño, coa boca á vista",
           "es": "Acercarse a la oreja de quien está al lado y hablar muy bajito, con la boca a la vista"
-         }
+         },
+         "lamina": "pal_whisper"
         },
         {
          "tipo": "adjective",
@@ -48589,7 +48961,8 @@
          "xesto": {
           "gl": "Levar o dedo aos beizos e chiscar un ollo",
           "es": "Llevarse el dedo a los labios y guiñar un ojo"
-         }
+         },
+         "lamina": "pal_secret"
         },
         {
          "tipo": "adjective",
@@ -48599,7 +48972,8 @@
           "es": "Adjetivo: cómo es"
          },
          "gl": "que salpica",
-         "es": "que salpica"
+         "es": "que salpica",
+         "lamina": "pal_splashy"
         },
         {
          "tipo": "complex",
@@ -48613,7 +48987,8 @@
          "xesto": {
           "gl": "Dar as mans en círculo e subilas á vez",
           "es": "Darse las manos en círculo y subirlas a la vez"
-         }
+         },
+         "lamina": "pal_all_together"
         },
         {
          "tipo": "adjective",
@@ -48627,7 +49002,8 @@
          "xesto": {
           "gl": "Repartir en partes iguais",
           "es": "Repartir en partes iguales"
-         }
+         },
+         "lamina": "pal_fair"
         },
         {
          "tipo": "adjective",
@@ -48641,7 +49017,8 @@
          "xesto": {
           "gl": "Empurrar a torre sen que caia",
           "es": "Empujar la torre sin que caiga"
-         }
+         },
+         "lamina": "pal_sturdy"
         },
         {
          "tipo": "adjective",
@@ -48655,7 +49032,8 @@
          "xesto": {
           "gl": "Poñer o puño e despois a man aberta",
           "es": "Poner el puño y luego la mano abierta"
-         }
+         },
+         "lamina": "pal_brave_and_kind"
         },
         {
          "tipo": "verb",
@@ -48665,7 +49043,8 @@
           "es": "Verbo: una acción"
          },
          "gl": "protexer",
-         "es": "proteger"
+         "es": "proteger",
+         "lamina": "pal_protect"
         }
        ],
        "novas": [
@@ -48681,7 +49060,8 @@
          "xesto": {
           "gl": "Tracción cooperativa da corda coordinada ao conteo.",
           "es": "Tracción cooperativa de la cuerda coordinada al conteo."
-         }
+         },
+         "lamina": "pal_pull_rope_together"
         },
         {
          "tipo": "orde",
@@ -48695,7 +49075,8 @@
          "xesto": {
           "gl": "Xesto amplo de chamada e incorporación dun novo neno á corda.",
           "es": "Gesto amplio de llamada e incorporación de un nuevo niño a la cuerda."
-         }
+         },
+         "lamina": "pal_call_friend_help"
         },
         {
          "tipo": "orde",
@@ -48709,7 +49090,8 @@
          "xesto": {
           "gl": "Murmurio ao oído do compañeiro sen que o escoite o resto.",
           "es": "Susurro al oído del compañero sin que lo escuche el resto."
-         }
+         },
+         "lamina": "pal_whisper_secret_friend"
         },
         {
          "tipo": "estructura",
@@ -48719,7 +49101,8 @@
           "es": "Estructura de frase"
          },
          "gl": "Cando chove, necesitamos botas.",
-         "es": "Cuando llueve, necesitamos botas."
+         "es": "Cuando llueve, necesitamos botas.",
+         "lamina": "pal_when_rains_need_boots"
         },
         {
          "tipo": "verb",
@@ -48733,7 +49116,8 @@
          "xesto": {
           "gl": "Subir amodo coma vapor",
           "es": "Subir despacio como vapor"
-         }
+         },
+         "lamina": "pal_evaporate"
         }
        ],
        "repasa": [],
@@ -48878,7 +49262,8 @@
        "fraseGramatica": {
         "en": "The sun can't have gone.",
         "gl": "O sol non puido marchar.",
-        "es": "El sol no puede haberse ido."
+        "es": "El sol no puede haberse ido.",
+        "lamina": "pal_sun_cant_have_gone"
        },
        "comoFalar": {
         "clave": "recast",
@@ -48910,7 +49295,8 @@
          "xesto": {
           "gl": "Empurrar a torre sen que caia",
           "es": "Empujar la torre sin que caiga"
-         }
+         },
+         "lamina": "pal_sturdy"
         },
         {
          "tipo": "adjective",
@@ -48924,7 +49310,8 @@
          "xesto": {
           "gl": "Poñer o puño e despois a man aberta",
           "es": "Poner el puño y luego la mano abierta"
-         }
+         },
+         "lamina": "pal_brave_and_kind"
         },
         {
          "tipo": "verb",
@@ -48934,7 +49321,8 @@
           "es": "Verbo: una acción"
          },
          "gl": "protexer",
-         "es": "proteger"
+         "es": "proteger",
+         "lamina": "pal_protect"
         },
         {
          "tipo": "orde",
@@ -48948,7 +49336,8 @@
          "xesto": {
           "gl": "Tracción cooperativa da corda coordinada ao conteo.",
           "es": "Tracción cooperativa de la cuerda coordinada al conteo."
-         }
+         },
+         "lamina": "pal_pull_rope_together"
         },
         {
          "tipo": "orde",
@@ -48962,7 +49351,8 @@
          "xesto": {
           "gl": "Xesto amplo de chamada e incorporación dun novo neno á corda.",
           "es": "Gesto amplio de llamada e incorporación de un nuevo niño a la cuerda."
-         }
+         },
+         "lamina": "pal_call_friend_help"
         },
         {
          "tipo": "orde",
@@ -48976,7 +49366,8 @@
          "xesto": {
           "gl": "Murmurio ao oído do compañeiro sen que o escoite o resto.",
           "es": "Susurro al oído del compañero sin que lo escuche el resto."
-         }
+         },
+         "lamina": "pal_whisper_secret_friend"
         },
         {
          "tipo": "estructura",
@@ -48986,7 +49377,8 @@
           "es": "Estructura de frase"
          },
          "gl": "Cando chove, necesitamos botas.",
-         "es": "Cuando llueve, necesitamos botas."
+         "es": "Cuando llueve, necesitamos botas.",
+         "lamina": "pal_when_rains_need_boots"
         },
         {
          "tipo": "verb",
@@ -49000,7 +49392,8 @@
          "xesto": {
           "gl": "Subir amodo coma vapor",
           "es": "Subir despacio como vapor"
-         }
+         },
+         "lamina": "pal_evaporate"
         }
        ],
        "novas": [
@@ -49016,7 +49409,8 @@
          "xesto": {
           "gl": "Remar cara adiante",
           "es": "Remar hacia delante"
-         }
+         },
+         "lamina": "pal_paddle_across"
         },
         {
          "tipo": "verb",
@@ -49030,7 +49424,8 @@
          "xesto": {
           "gl": "Xuntar as mans",
           "es": "Juntar las manos"
-         }
+         },
+         "lamina": "pal_meet_the_sea"
         },
         {
          "tipo": "verb",
@@ -49044,7 +49439,8 @@
          "xesto": {
           "gl": "Levantar os xeonllos",
           "es": "Levantar las rodillas"
-         }
+         },
+         "lamina": "pal_wade_in"
         }
        ],
        "repasa": [],
@@ -49262,7 +49658,8 @@
        "fraseGramatica": {
         "en": "The weather was checked every morning.",
         "gl": "O tempo mirábase cada mañá.",
-        "es": "El tiempo se miraba cada mañana."
+        "es": "El tiempo se miraba cada mañana.",
+        "lamina": "pal_weather_checked_morning"
        },
        "comoFalar": {
         "clave": "parentese",
@@ -49294,7 +49691,8 @@
          "xesto": {
           "gl": "Tracción cooperativa da corda coordinada ao conteo.",
           "es": "Tracción cooperativa de la cuerda coordinada al conteo."
-         }
+         },
+         "lamina": "pal_pull_rope_together"
         },
         {
          "tipo": "orde",
@@ -49308,7 +49706,8 @@
          "xesto": {
           "gl": "Xesto amplo de chamada e incorporación dun novo neno á corda.",
           "es": "Gesto amplio de llamada e incorporación de un nuevo niño a la cuerda."
-         }
+         },
+         "lamina": "pal_call_friend_help"
         },
         {
          "tipo": "orde",
@@ -49322,7 +49721,8 @@
          "xesto": {
           "gl": "Murmurio ao oído do compañeiro sen que o escoite o resto.",
           "es": "Susurro al oído del compañero sin que lo escuche el resto."
-         }
+         },
+         "lamina": "pal_whisper_secret_friend"
         },
         {
          "tipo": "estructura",
@@ -49332,7 +49732,8 @@
           "es": "Estructura de frase"
          },
          "gl": "Cando chove, necesitamos botas.",
-         "es": "Cuando llueve, necesitamos botas."
+         "es": "Cuando llueve, necesitamos botas.",
+         "lamina": "pal_when_rains_need_boots"
         },
         {
          "tipo": "verb",
@@ -49346,7 +49747,8 @@
          "xesto": {
           "gl": "Subir amodo coma vapor",
           "es": "Subir despacio como vapor"
-         }
+         },
+         "lamina": "pal_evaporate"
         },
         {
          "tipo": "verb",
@@ -49360,7 +49762,8 @@
          "xesto": {
           "gl": "Remar cara adiante",
           "es": "Remar hacia delante"
-         }
+         },
+         "lamina": "pal_paddle_across"
         },
         {
          "tipo": "verb",
@@ -49374,7 +49777,8 @@
          "xesto": {
           "gl": "Xuntar as mans",
           "es": "Juntar las manos"
-         }
+         },
+         "lamina": "pal_meet_the_sea"
         },
         {
          "tipo": "verb",
@@ -49388,7 +49792,8 @@
          "xesto": {
           "gl": "Levantar os xeonllos",
           "es": "Levantar las rodillas"
-         }
+         },
+         "lamina": "pal_wade_in"
         }
        ],
        "novas": [
@@ -49404,7 +49809,8 @@
          "xesto": {
           "gl": "Facer un cadrado plano coas mans",
           "es": "Hacer un cuadrado plano con las manos"
-         }
+         },
+         "lamina": "pal_mussel_raft"
         },
         {
          "tipo": "noun",
@@ -49418,7 +49824,8 @@
          "xesto": {
           "gl": "Baixar unha corda imaxinaria",
           "es": "Bajar una cuerda imaginaria"
-         }
+         },
+         "lamina": "pal_rope_line"
         },
         {
          "tipo": "noun",
@@ -49432,7 +49839,8 @@
          "xesto": {
           "gl": "Remar con forza",
           "es": "Remar con fuerza"
-         }
+         },
+         "lamina": "pal_fishing_boat"
         }
        ],
        "repasa": [],
@@ -49577,7 +49985,8 @@
        "fraseGramatica": {
         "en": "We had the boots put by the door.",
         "gl": "Puxemos as botas xunto á porta.",
-        "es": "Hicimos poner las botas junto a la puerta."
+        "es": "Hicimos poner las botas junto a la puerta.",
+        "lamina": "pal_boots_by_door"
        },
        "comoFalar": {
         "clave": "espera",
@@ -49609,7 +50018,8 @@
          "xesto": {
           "gl": "Facer un cadrado plano coas mans",
           "es": "Hacer un cuadrado plano con las manos"
-         }
+         },
+         "lamina": "pal_mussel_raft"
         },
         {
          "tipo": "noun",
@@ -49623,7 +50033,8 @@
          "xesto": {
           "gl": "Baixar unha corda imaxinaria",
           "es": "Bajar una cuerda imaginaria"
-         }
+         },
+         "lamina": "pal_rope_line"
         },
         {
          "tipo": "noun",
@@ -49637,7 +50048,8 @@
          "xesto": {
           "gl": "Remar con forza",
           "es": "Remar con fuerza"
-         }
+         },
+         "lamina": "pal_fishing_boat"
         }
        ],
        "novas": [
@@ -49653,7 +50065,8 @@
          "xesto": {
           "gl": "Mover as mans moi rápido",
           "es": "Mover las manos muy rápido"
-         }
+         },
+         "lamina": "pal_rushing"
         },
         {
          "tipo": "adjective",
@@ -49667,7 +50080,8 @@
          "xesto": {
           "gl": "Baixar amodo",
           "es": "Bajar despacio"
-         }
+         },
+         "lamina": "pal_deep_blue"
         },
         {
          "tipo": "noun",
@@ -49681,7 +50095,8 @@
          "xesto": {
           "gl": "Pasar as páxinas",
           "es": "Pasar las páginas"
-         }
+         },
+         "lamina": "pal_photo_book"
         }
        ],
        "repasa": [],
@@ -49826,7 +50241,8 @@
        "fraseGramatica": {
         "en": "The hat is chosen by you.",
         "gl": "O gorro escólleo ti.",
-        "es": "El gorro lo eliges tú."
+        "es": "El gorro lo eliges tú.",
+        "lamina": "pal_hat_chosen_by_you"
        },
        "comoFalar": {
         "clave": "expansion",
@@ -49858,7 +50274,8 @@
          "xesto": {
           "gl": "Facer un cadrado plano coas mans",
           "es": "Hacer un cuadrado plano con las manos"
-         }
+         },
+         "lamina": "pal_mussel_raft"
         },
         {
          "tipo": "noun",
@@ -49872,7 +50289,8 @@
          "xesto": {
           "gl": "Baixar unha corda imaxinaria",
           "es": "Bajar una cuerda imaginaria"
-         }
+         },
+         "lamina": "pal_rope_line"
         },
         {
          "tipo": "noun",
@@ -49886,7 +50304,8 @@
          "xesto": {
           "gl": "Remar con forza",
           "es": "Remar con fuerza"
-         }
+         },
+         "lamina": "pal_fishing_boat"
         },
         {
          "tipo": "adjective",
@@ -49900,7 +50319,8 @@
          "xesto": {
           "gl": "Mover as mans moi rápido",
           "es": "Mover las manos muy rápido"
-         }
+         },
+         "lamina": "pal_rushing"
         },
         {
          "tipo": "adjective",
@@ -49914,7 +50334,8 @@
          "xesto": {
           "gl": "Baixar amodo",
           "es": "Bajar despacio"
-         }
+         },
+         "lamina": "pal_deep_blue"
         },
         {
          "tipo": "noun",
@@ -49928,7 +50349,8 @@
          "xesto": {
           "gl": "Pasar as páxinas",
           "es": "Pasar las páginas"
-         }
+         },
+         "lamina": "pal_photo_book"
         }
        ],
        "novas": [
@@ -49944,7 +50366,8 @@
          "xesto": {
           "gl": "Ondulación lenta e sostida da tea azul con ambas as mans.",
           "es": "Ondulación lenta y sostenida de la tela azul con ambas manos."
-         }
+         },
+         "lamina": "pal_calm_sea_cloth"
         },
         {
          "tipo": "orde",
@@ -49958,7 +50381,8 @@
          "xesto": {
           "gl": "Axitación enérxica da tea con movemento amplo de brazos.",
           "es": "Agitación enérgica de la tela con movimiento amplio de brazos."
-         }
+         },
+         "lamina": "pal_storm_shake_sea"
         },
         {
          "tipo": "orde",
@@ -49972,7 +50396,8 @@
          "xesto": {
           "gl": "Depositar a tea no chan e deitarse inmóbil debaixo ou ao lado.",
           "es": "Depositar la tela en el suelo y tumbarse inmóvil debajo o al lado."
-         }
+         },
+         "lamina": "pal_sea_sleeps_lie_still"
         }
        ],
        "repasa": [],
@@ -50117,7 +50542,8 @@
        "fraseGramatica": {
         "en": "Get your coat zipped!",
         "gl": "Pecha o abrigo!",
-        "es": "¡Cierra el abrigo!"
+        "es": "¡Cierra el abrigo!",
+        "lamina": "pal_coat_zipped"
        },
        "comoFalar": {
         "clave": "recast",
@@ -50149,7 +50575,8 @@
          "xesto": {
           "gl": "Baixar unha corda imaxinaria",
           "es": "Bajar una cuerda imaginaria"
-         }
+         },
+         "lamina": "pal_rope_line"
         },
         {
          "tipo": "noun",
@@ -50163,7 +50590,8 @@
          "xesto": {
           "gl": "Remar con forza",
           "es": "Remar con fuerza"
-         }
+         },
+         "lamina": "pal_fishing_boat"
         },
         {
          "tipo": "adjective",
@@ -50177,7 +50605,8 @@
          "xesto": {
           "gl": "Mover as mans moi rápido",
           "es": "Mover las manos muy rápido"
-         }
+         },
+         "lamina": "pal_rushing"
         },
         {
          "tipo": "adjective",
@@ -50191,7 +50620,8 @@
          "xesto": {
           "gl": "Baixar amodo",
           "es": "Bajar despacio"
-         }
+         },
+         "lamina": "pal_deep_blue"
         },
         {
          "tipo": "noun",
@@ -50205,7 +50635,8 @@
          "xesto": {
           "gl": "Pasar as páxinas",
           "es": "Pasar las páginas"
-         }
+         },
+         "lamina": "pal_photo_book"
         },
         {
          "tipo": "orde",
@@ -50219,7 +50650,8 @@
          "xesto": {
           "gl": "Ondulación lenta e sostida da tea azul con ambas as mans.",
           "es": "Ondulación lenta y sostenida de la tela azul con ambas manos."
-         }
+         },
+         "lamina": "pal_calm_sea_cloth"
         },
         {
          "tipo": "orde",
@@ -50233,7 +50665,8 @@
          "xesto": {
           "gl": "Axitación enérxica da tea con movemento amplo de brazos.",
           "es": "Agitación enérgica de la tela con movimiento amplio de brazos."
-         }
+         },
+         "lamina": "pal_storm_shake_sea"
         },
         {
          "tipo": "orde",
@@ -50247,7 +50680,8 @@
          "xesto": {
           "gl": "Depositar a tea no chan e deitarse inmóbil debaixo ou ao lado.",
           "es": "Depositar la tela en el suelo y tumbarse inmóvil debajo o al lado."
-         }
+         },
+         "lamina": "pal_sea_sleeps_lie_still"
         }
        ],
        "novas": [
@@ -50263,7 +50697,8 @@
          "xesto": {
           "gl": "Pousar a man no peito",
           "es": "Poner la mano en el pecho"
-         }
+         },
+         "lamina": "pal_thank_you_everything"
         },
         {
          "tipo": "noun",
@@ -50277,7 +50712,8 @@
          "xesto": {
           "gl": "Lanzar un disco imaxinario",
           "es": "Lanzar un disco imaginario"
-         }
+         },
+         "lamina": "pal_frisbee"
         },
         {
          "tipo": "noun",
@@ -50291,7 +50727,8 @@
          "xesto": {
           "gl": "Pasar un globo con coidado",
           "es": "Pasar un globo con cuidado"
-         }
+         },
+         "lamina": "pal_water_balloon"
         }
        ],
        "repasa": [],
@@ -50607,7 +51044,8 @@
          "xesto": {
           "gl": "Baixar amodo",
           "es": "Bajar despacio"
-         }
+         },
+         "lamina": "pal_deep_blue"
         },
         {
          "tipo": "noun",
@@ -50621,7 +51059,8 @@
          "xesto": {
           "gl": "Pasar as páxinas",
           "es": "Pasar las páginas"
-         }
+         },
+         "lamina": "pal_photo_book"
         },
         {
          "tipo": "orde",
@@ -50635,7 +51074,8 @@
          "xesto": {
           "gl": "Ondulación lenta e sostida da tea azul con ambas as mans.",
           "es": "Ondulación lenta y sostenida de la tela azul con ambas manos."
-         }
+         },
+         "lamina": "pal_calm_sea_cloth"
         },
         {
          "tipo": "orde",
@@ -50649,7 +51089,8 @@
          "xesto": {
           "gl": "Axitación enérxica da tea con movemento amplo de brazos.",
           "es": "Agitación enérgica de la tela con movimiento amplio de brazos."
-         }
+         },
+         "lamina": "pal_storm_shake_sea"
         },
         {
          "tipo": "orde",
@@ -50663,7 +51104,8 @@
          "xesto": {
           "gl": "Depositar a tea no chan e deitarse inmóbil debaixo ou ao lado.",
           "es": "Depositar la tela en el suelo y tumbarse inmóvil debajo o al lado."
-         }
+         },
+         "lamina": "pal_sea_sleeps_lie_still"
         },
         {
          "tipo": "phrase",
@@ -50677,7 +51119,8 @@
          "xesto": {
           "gl": "Pousar a man no peito",
           "es": "Poner la mano en el pecho"
-         }
+         },
+         "lamina": "pal_thank_you_everything"
         },
         {
          "tipo": "noun",
@@ -50691,7 +51134,8 @@
          "xesto": {
           "gl": "Lanzar un disco imaxinario",
           "es": "Lanzar un disco imaginario"
-         }
+         },
+         "lamina": "pal_frisbee"
         },
         {
          "tipo": "noun",
@@ -50705,7 +51149,8 @@
          "xesto": {
           "gl": "Pasar un globo con coidado",
           "es": "Pasar un globo con cuidado"
-         }
+         },
+         "lamina": "pal_water_balloon"
         }
        ],
        "novas": [
