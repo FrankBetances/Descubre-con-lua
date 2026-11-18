@@ -179,7 +179,8 @@
           "tprAction": {
             "gl": "Sinalar algo branco na aula",
             "es": "Señalar algo blanco en el aula"
-          }
+          },
+          "lamina": "pal_white"
         },
         {
           "id": "3_4.decembro.s1.slippery",
@@ -300,7 +301,8 @@
           "tprAction": {
             "gl": "Soprar amodo unha vela imaxinaria",
             "es": "Soplar despacio una vela imaginaria"
-          }
+          },
+          "lamina": "pal_pal_candle"
         },
         {
           "id": "3_4.decembro.s2.ribbon",
@@ -377,7 +379,8 @@
           "tprAction": {
             "gl": "Pendurar unha estrela imaxinaria no alto",
             "es": "Colgar una estrella imaginaria en lo alto"
-          }
+          },
+          "lamina": "pal_hang"
         },
         {
           "id": "3_4.decembro.s2.golden",
@@ -831,7 +834,8 @@
           "tprAction": {
             "gl": "Contar cos dedos ata cinco",
             "es": "Contar con los dedos hasta cinco"
-          }
+          },
+          "lamina": "pal_count"
         },
         {
           "id": "3_4.decembro.s4.cheer",

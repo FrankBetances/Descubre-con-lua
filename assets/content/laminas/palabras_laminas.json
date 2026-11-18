@@ -81,6 +81,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "although we closed our eyes, we guessed": {
+   "clave": "pal_closed_eyes_guessed",
+   "orixe": "composta",
+   "porque": "Adivinando qué objeto es con los ojos cerrados.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#closed_eyes_guessed",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
   "animal parade": {
    "clave": "pal_animal_parade",
    "orixe": "composta",
@@ -119,6 +129,36 @@
    "asset": "tools/gen_laminas_4_5.py#are_you_ready",
    "sha": "6be3d38b",
    "licencia": "Propia",
+   "revisado": true
+  },
+  "arms up": {
+   "clave": "pal_arms_up",
+   "orixe": "composta",
+   "porque": "Niño levantando bien alto los dos brazos.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#arms_up",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "arrive": {
+   "clave": "pal_arrive",
+   "orixe": "composta",
+   "porque": "Llegando por fin a la meta o estación.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#arrive",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "as if the light were a secret": {
+   "clave": "pal_as_if_the_light_were_a_secret",
+   "orixe": "composta",
+   "porque": "Luz guardada en secreto dentro de una caja.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#as_if_the_light_were_a_secret",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
    "revisado": true
   },
   "at bath time, the box stops": {
@@ -191,6 +231,36 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "balance": {
+   "clave": "pal_balance",
+   "orixe": "composta",
+   "porque": "Niño manteniendo el equilibrio sobre una línea o viga.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#balance",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "balance a plate": {
+   "clave": "pal_balance_a_plate",
+   "orixe": "composta",
+   "porque": "Niño equilibrando un plato plano sobre la palma de la mano.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#balance_a_plate",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "balance beam": {
+   "clave": "pal_balance_beam",
+   "orixe": "nova",
+   "porque": "Barra horizontal de equilibrio apoyada sobre dos soportes.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_5_6.py#balance_beam",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "ball": {
    "clave": "vocab_45",
    "orixe": "reutilizada",
@@ -219,6 +289,16 @@
    "asset": "tools/gen_laminas_palabras.py#venda",
    "sha": "1973cc64",
    "licencia": "Propia",
+   "revisado": true
+  },
+  "basket": {
+   "clave": "pal_pal_basket",
+   "orixe": "banco",
+   "porque": "Cesta tejida vacía.",
+   "fuente": "fluent-flat",
+   "asset": "fluentui-emoji:assets/Basket/Flat",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
    "revisado": true
   },
   "bath time": {
@@ -317,6 +397,16 @@
    "porque": "Abeja con rayas y alas, coincidencia directa.",
    "fuente": "fluent-flat",
    "asset": "fluentui-emoji:assets/Honeybee/Flat",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "beginning": {
+   "clave": "pal_beginning",
+   "orixe": "composta",
+   "porque": "Punto de partida e inicio de un camino o actividad.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#beginning",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
    "revisado": true
@@ -421,6 +511,16 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "blend": {
+   "clave": "pal_blend",
+   "orixe": "composta",
+   "porque": "Dos colores superponiéndose y mezclándose en verde.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#blend",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
   "block": {
    "clave": "pal_block",
    "orixe": "nova",
@@ -491,6 +591,26 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "blowhole": {
+   "clave": "pal_blowhole",
+   "orixe": "composta",
+   "porque": "Ballena soltando agua por el espiráculo en la parte superior.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#blowhole",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "blue": {
+   "clave": "pal_blue",
+   "orixe": "nova",
+   "porque": "Mancha/círculo azul intenso.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_5_6.py#blue",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "blue cup": {
    "clave": "pal_blue_cup",
    "orixe": "nova",
@@ -499,6 +619,16 @@
    "asset": "tools/gen_laminas_0_2.py#blue_cup",
    "sha": "6be3d38b",
    "licencia": "Propia",
+   "revisado": true
+  },
+  "blue, which is cold, makes green": {
+   "clave": "pal_blue_cold_makes_green",
+   "orixe": "composta",
+   "porque": "Color azul frío convirtiéndose en verde.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#blue_cold_makes_green",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
    "revisado": true
   },
   "blueberry": {
@@ -591,6 +721,16 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "bright": {
+   "clave": "pal_bright",
+   "orixe": "composta",
+   "porque": "Luz muy viva y brillante con destellos.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#bright",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
   "bright orange": {
    "clave": "pal_laranxa_vivo",
    "orixe": "nova",
@@ -617,6 +757,16 @@
    "porque": "Pieza partida por la mitad mostrando rotura clara.",
    "fuente": "propia",
    "asset": "tools/gen_laminas_3_4.py#broken",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "brown": {
+   "clave": "pal_brown",
+   "orixe": "nova",
+   "porque": "Mancha/círculo marrón sólido.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_5_6.py#brown",
    "sha": "6be3d38b",
    "licencia": "Propia",
    "revisado": true
@@ -701,6 +851,26 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "by bedtime, we will have seen every colour": {
+   "clave": "pal_bedtime_seen_every_colour",
+   "orixe": "composta",
+   "porque": "Cama de dormir junto a arcoíris completo de colores.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#bedtime_seen_every_colour",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "by friday, the room will have turned red": {
+   "clave": "pal_friday_room_turned_red",
+   "orixe": "composta",
+   "porque": "Habitación teñida de rojo con calendario semanal.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#friday_room_turned_red",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
   "bye-bye, nursery": {
    "clave": "pal_bye_bye_nursery",
    "orixe": "composta",
@@ -781,6 +951,36 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "can we trade": {
+   "clave": "pal_can_we_trade",
+   "orixe": "composta",
+   "porque": "Flechas cruzadas proponiendo intercambiar un objeto por otro.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#can_we_trade",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "candle": {
+   "clave": "pal_pal_candle",
+   "orixe": "banco",
+   "porque": "Vela encendida con llama amarilla.",
+   "fuente": "fluent-flat",
+   "asset": "fluentui-emoji:assets/Candle/Flat",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "card": {
+   "clave": "pal_card",
+   "orixe": "composta",
+   "porque": "Postal o tarjeta escrita con sello en la esquina.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#card",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
   "cardboard box": {
    "clave": "pal_cardboard_box",
    "orixe": "composta",
@@ -797,6 +997,16 @@
    "porque": "Rebeca abotonada de manga larga.",
    "fuente": "composta",
    "asset": "tools/gen_laminas_0_2.py#cardigan",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "careful": {
+   "clave": "pal_careful",
+   "orixe": "composta",
+   "porque": "Niño llevando un vaso lleno con mucho cuidado.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#careful",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
    "revisado": true
@@ -841,6 +1051,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "changed a little, the plane flew further": {
+   "clave": "pal_changed_plane_flew_further",
+   "orixe": "composta",
+   "porque": "Avión ajustado volando aún más lejos.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#changed_plane_flew_further",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
   "chestnut": {
    "clave": "pal_pal_chestnut",
    "orixe": "banco",
@@ -869,6 +1089,16 @@
    "asset": "fluentui-emoji:assets/Baby chick/Flat",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "circle": {
+   "clave": "pal_circle",
+   "orixe": "nova",
+   "porque": "Círculo geométrico perfecto y bien trazado.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_5_6.py#circle",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
    "revisado": true
   },
   "clap": {
@@ -929,6 +1159,16 @@
    "asset": "tools/gen_laminas_4_5.py#climb",
    "sha": "6be3d38b",
    "licencia": "Propia",
+   "revisado": true
+  },
+  "climb a ladder": {
+   "clave": "pal_climb_a_ladder",
+   "orixe": "composta",
+   "porque": "Escalera vertical con flecha indicando subir peldaño a peldaño.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#climb_a_ladder",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
    "revisado": true
   },
   "climb the oak tree and hide your nuts": {
@@ -1081,6 +1321,26 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "command": {
+   "clave": "pal_command",
+   "orixe": "composta",
+   "porque": "Niño dando una indicación clara con gesto de mano.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#command",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "compromise": {
+   "clave": "pal_compromise",
+   "orixe": "composta",
+   "porque": "Balanza equilibrada y acuerdo justo entre dos personas.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#compromise",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
   "confetti": {
    "clave": "pal_confetti",
    "orixe": "banco",
@@ -1097,6 +1357,16 @@
    "porque": "Dos niños haciendo exactamente el mismo gesto con los brazos en alto: imitar.",
    "fuente": "composta",
    "asset": "tools/gen_laminas_0_2.py#copy",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "copy my movements": {
+   "clave": "pal_copy_my_movements",
+   "orixe": "composta",
+   "porque": "Dos niños haciendo exactamente el mismo movimiento en espejo.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#copy_my_movements",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
    "revisado": true
@@ -1129,6 +1399,66 @@
    "asset": "tools/gen_laminas_0_2.py#cotton",
    "sha": "6be3d38b",
    "licencia": "Propia",
+   "revisado": true
+  },
+  "count": {
+   "clave": "pal_count",
+   "orixe": "nova",
+   "porque": "Fichas alineadas contándose una por una.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_5_6.py#count",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "count in twos": {
+   "clave": "pal_count_in_twos",
+   "orixe": "nova",
+   "porque": "Parejas agrupadas de dos en dos para contar.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_5_6.py#count_in_twos",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "count the days": {
+   "clave": "pal_count_the_days",
+   "orixe": "composta",
+   "porque": "Calendario y marcas contando cuántos días quedan.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#count_the_days",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "count three leaves and jump over the ring": {
+   "clave": "pal_count_3_leaves_jump_ring",
+   "orixe": "composta",
+   "porque": "Tres hojas contadas antes de saltar por encima del aro.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#count_3_leaves_jump_ring",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "countdown to midnight": {
+   "clave": "pal_countdown_to_midnight",
+   "orixe": "composta",
+   "porque": "Reloj marcando la cuenta atrás hasta medianoche.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#countdown_to_midnight",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "counting the steps, we measured it": {
+   "clave": "pal_counting_steps_measured",
+   "orixe": "composta",
+   "porque": "Huellas midiendo la distancia en pasos.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#counting_steps_measured",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
    "revisado": true
   },
   "cow": {
@@ -1167,6 +1497,26 @@
    "porque": "Luna nocturna y notas musicales suaves acunando al bebé.",
    "fuente": "composta",
    "asset": "tools/gen_laminas_0_2.py#cradle_song",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "crawl": {
+   "clave": "pal_crawl",
+   "orixe": "composta",
+   "porque": "Niño gateando a cuatro patas por el suelo.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#crawl",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "creative": {
+   "clave": "pal_creative",
+   "orixe": "composta",
+   "porque": "Paleta de colores, pincel y chispas de imaginación.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#creative",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
    "revisado": true
@@ -1301,6 +1651,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "cut": {
+   "clave": "pal_cut",
+   "orixe": "composta",
+   "porque": "Tijeras cortando una hoja de papel por la línea.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#cut",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
   "cut it for me": {
    "clave": "pal_cut_it_for_me",
    "orixe": "composta",
@@ -1351,12 +1711,32 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "dangerous": {
+   "clave": "pal_dangerous",
+   "orixe": "nova",
+   "porque": "Triángulo amarillo de peligro con borde rojo.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_5_6.py#dangerous",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "dash": {
    "clave": "pal_dash",
    "orixe": "composta",
    "porque": "Niño saliendo disparado corriendo muy rápido hacia delante.",
    "fuente": "composta",
    "asset": "tools/gen_laminas_2_3.py#dash",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "deal": {
+   "clave": "pal_deal_handshake",
+   "orixe": "composta",
+   "porque": "Apretón de manos cerrando un buen trato.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#deal_handshake",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
    "revisado": true
@@ -1377,6 +1757,26 @@
    "porque": "Comida apetitosa y sabrosa sobre la mesa.",
    "fuente": "composta",
    "asset": "tools/gen_laminas_3_4.py#delicious",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "despite the noise, we listened": {
+   "clave": "pal_despite_noise_listened",
+   "orixe": "composta",
+   "porque": "Oreja atenta escuchando a pesar del ruido de fondo.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#despite_noise_listened",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "destination": {
+   "clave": "pal_destination",
+   "orixe": "composta",
+   "porque": "Brújula apuntando a la bandera de destino al final del viaje.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#destination",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
    "revisado": true
@@ -1407,6 +1807,16 @@
    "porque": "Manos excavando y removiendo la tierra.",
    "fuente": "composta",
    "asset": "tools/gen_laminas_3_4.py#dig_the_soil_with_your_hands",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "director": {
+   "clave": "pal_director",
+   "orixe": "composta",
+   "porque": "Director guiando el ritmo del grupo.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#director",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
    "revisado": true
@@ -1471,6 +1881,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "dolphin pod": {
+   "clave": "pal_dolphin_pod",
+   "orixe": "composta",
+   "porque": "Grupo de tres delfines saltando juntos en el mar.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#dolphin_pod",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
   "down": {
    "clave": "pal_down",
    "orixe": "composta",
@@ -1489,6 +1909,26 @@
    "asset": "tools/gen_laminas_palabras.py#costa_abaixo",
    "sha": "1973cc64",
    "licencia": "Propia",
+   "revisado": true
+  },
+  "dramatic": {
+   "clave": "pal_dramatic",
+   "orixe": "composta",
+   "porque": "Máscaras de teatro expresando escenas dramáticas.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#dramatic",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "draw": {
+   "clave": "pal_draw",
+   "orixe": "composta",
+   "porque": "Pincel dibujando trazos de colores en un papel blanco.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#draw",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
    "revisado": true
   },
   "driftwood": {
@@ -1651,6 +2091,26 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "exchange gifts": {
+   "clave": "pal_exchange_gifts",
+   "orixe": "composta",
+   "porque": "Dos amigos intercambiando paquetes de regalo.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#exchange_gifts",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "explore": {
+   "clave": "pal_explore",
+   "orixe": "composta",
+   "porque": "Lupa y brújula explorando objetos y caminos nuevos.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#explore",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
   "eyebrows": {
    "clave": "pal_eyebrows",
    "orixe": "composta",
@@ -1701,6 +2161,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "fairy tale": {
+   "clave": "pal_fairy_tale",
+   "orixe": "composta",
+   "porque": "Libro abierto de cuentos mágicos con estrellas brillantes.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#fairy_tale",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
   "fall": {
    "clave": "pal_fall",
    "orixe": "composta",
@@ -1731,12 +2201,92 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "fasten your seatbelts": {
+   "clave": "pal_fasten_your_seatbelts",
+   "orixe": "composta",
+   "porque": "Cinturón de seguridad abrochado firmemente al asiento.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#fasten_your_seatbelts",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "faster": {
+   "clave": "pal_faster",
+   "orixe": "composta",
+   "porque": "Doble flecha roja impulsando velocidad aún mayor.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#faster",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "faster? yes, faster": {
+   "clave": "pal_faster_yes_faster",
+   "orixe": "composta",
+   "porque": "Tren acelerando cada vez más rápido.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#faster_yes_faster",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
   "feel this": {
    "clave": "pal_feel_this",
    "orixe": "composta",
    "porque": "Mano abierta tocando un peluche suave para sentir la textura.",
    "fuente": "composta",
    "asset": "tools/gen_laminas_0_2.py#feel_this",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "feel without looking": {
+   "clave": "pal_feel_without_looking",
+   "orixe": "composta",
+   "porque": "Ojos tapados tocando y reconociendo con las manos.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#feel_without_looking",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "feel your heartbeat": {
+   "clave": "pal_feel_your_heartbeat",
+   "orixe": "composta",
+   "porque": "Mano sobre el pecho sintiendo el latido del corazón.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#feel_your_heartbeat",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "fill": {
+   "clave": "pal_fill",
+   "orixe": "composta",
+   "porque": "Jarra echando líquido hasta llenar el recipiente.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#fill",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "fill the pot, plant the seed and water it": {
+   "clave": "pal_fill_pot_plant_seed",
+   "orixe": "composta",
+   "porque": "Maceta con tierra, semilla plantada y gotas de riego.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#fill_pot_plant_seed",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "find": {
+   "clave": "pal_find",
+   "orixe": "composta",
+   "porque": "Lupa encontrando exactamente el objeto escondido.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#find",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
    "revisado": true
@@ -1857,6 +2407,16 @@
    "porque": "Barco pesquero navegando en el agua acompañado de un pez.",
    "fuente": "composta",
    "asset": "tools/gen_laminas_4_5.py#fishing_boat",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "fishing village": {
+   "clave": "pal_fishing_village",
+   "orixe": "composta",
+   "porque": "Casitas junto al puerto y velero de aldea marinera.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#fishing_village",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
    "revisado": true
@@ -2271,6 +2831,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "green": {
+   "clave": "pal_green",
+   "orixe": "nova",
+   "porque": "Mancha/círculo verde intenso.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_5_6.py#green",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "green shoot": {
    "clave": "semente",
    "orixe": "reutilizada",
@@ -2311,6 +2881,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "had you been folding the paper long": {
+   "clave": "pal_folding_paper_long",
+   "orixe": "composta",
+   "porque": "Hoja doblándose y cronómetro preguntando cuánto tiempo.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#folding_paper_long",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
   "had you seen the shadow before": {
    "clave": "pal_seen_the_shadow_before",
    "orixe": "composta",
@@ -2341,6 +2921,16 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "hand in hand": {
+   "clave": "pal_hand_in_hand",
+   "orixe": "composta",
+   "porque": "Dos niños caminando cogidos de la mano.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#hand_in_hand",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
   "hand towel": {
    "clave": "pal_hand_towel",
    "orixe": "composta",
@@ -2351,12 +2941,32 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "hang": {
+   "clave": "pal_hang",
+   "orixe": "composta",
+   "porque": "Prenda colgada en su gancho en lo alto.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#hang",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
   "hang out": {
    "clave": "pal_hang_out",
    "orixe": "composta",
    "porque": "Ropa y toallas tendidas en el tendedero al sol.",
    "fuente": "composta",
    "asset": "tools/gen_laminas_2_3.py#hang_out",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "harvest fruit": {
+   "clave": "pal_harvest_fruit",
+   "orixe": "composta",
+   "porque": "Fruta recién cogida metiéndose dentro de la cesta.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#harvest_fruit",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
    "revisado": true
@@ -2377,6 +2987,16 @@
    "porque": "Gorro y bebé con flecha indicando ponerse y quitarse el gorro.",
    "fuente": "composta",
    "asset": "tools/gen_laminas_0_2.py#hat_on_hat_off",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "have a safe trip": {
+   "clave": "pal_have_a_safe_trip",
+   "orixe": "composta",
+   "porque": "Avión despegando y mano despidiendo deseando buen viaje.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#have_a_safe_trip",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
    "revisado": true
@@ -2407,6 +3027,26 @@
    "porque": "Niño junto a caja y signo de pregunta sobre empujarla.",
    "fuente": "composta",
    "asset": "tools/gen_laminas_3_4.py#have_you_pushed_it",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "having folded the plane, we threw it": {
+   "clave": "pal_folded_plane_threw_it",
+   "orixe": "composta",
+   "porque": "Avión de papel doblado volando lanzado al aire.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#folded_plane_threw_it",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "he admitted the circle was hard to spin": {
+   "clave": "pal_he_admitted_the_circle_was_hard_to_spin",
+   "orixe": "composta",
+   "porque": "Círculo pesado que cuesta hacer girar.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#he_admitted_the_circle_was_hard_to_spin",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
    "revisado": true
@@ -2571,6 +3211,36 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "here you go. thank you! your turn": {
+   "clave": "pal_here_you_go_thank_you_turn",
+   "orixe": "composta",
+   "porque": "Intercambio amable pasando el objeto y el turno.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#here_you_go_thank_you_turn",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "here you go: give the light to the next pair": {
+   "clave": "pal_give_light_next_pair",
+   "orixe": "composta",
+   "porque": "Pasando la linterna encendida a la siguiente pareja.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#give_light_next_pair",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "here you go: pass the soil to your friend": {
+   "clave": "pal_pass_soil_friend",
+   "orixe": "composta",
+   "porque": "Pasando el recipiente con tierra al compañero.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#pass_soil_friend",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
   "hide": {
    "clave": "pal_hide",
    "orixe": "nova",
@@ -2671,6 +3341,16 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "hoop": {
+   "clave": "pal_hoop",
+   "orixe": "nova",
+   "porque": "Aro grande de psicomotricidad de color rojo.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_5_6.py#hoop",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "hop": {
    "clave": "pal_hop",
    "orixe": "composta",
@@ -2711,6 +3391,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "however, the gift paper was the loudest": {
+   "clave": "pal_gift_paper_loudest",
+   "orixe": "composta",
+   "porque": "Papel de regalo haciendo muchísimo ruido al arrugarse.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#gift_paper_loudest",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
   "hum a tune": {
    "clave": "pal_hum_a_tune",
    "orixe": "composta",
@@ -2741,12 +3431,52 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "i am blending yellow and blue because i want to make green": {
+   "clave": "pal_blending_yellow_blue_green",
+   "orixe": "composta",
+   "porque": "Amarillo más azul producen color verde nuevo.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#blending_yellow_blue_green",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "i am not finished yet": {
+   "clave": "pal_i_am_not_finished_yet",
+   "orixe": "composta",
+   "porque": "Trabajo a medio completar junto a reloj de arena en marcha.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#i_am_not_finished_yet",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
   "i am wet": {
    "clave": "pal_i_am_wet",
    "orixe": "composta",
    "porque": "Niño empapado con gotas cayendo alrededor: ¡estoy mojado!",
    "fuente": "composta",
    "asset": "tools/gen_laminas_0_2.py#i_am_wet",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "i can blow harder, and so can you": {
+   "clave": "pal_blow_harder_so_can_you",
+   "orixe": "composta",
+   "porque": "Dos niños soplando con igual fuerza.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#blow_harder_so_can_you",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "i feel proud of our work": {
+   "clave": "pal_i_feel_proud_of_our_work",
+   "orixe": "composta",
+   "porque": "Niño satisfecho mostrando un trabajo terminado con estrella.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#i_feel_proud_of_our_work",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
    "revisado": true
@@ -2831,6 +3561,16 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "i suggested painting three colours": {
+   "clave": "pal_suggested_painting_3_colours",
+   "orixe": "composta",
+   "porque": "Pincel señalando tres franjas de pintura distintas.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#suggested_painting_3_colours",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
   "i wish i had made a longer tube": {
    "clave": "pal_longer_tube",
    "orixe": "nova",
@@ -2867,6 +3607,26 @@
    "porque": "Cuchara lista para golpear suavemente el vaso musical.",
    "fuente": "composta",
    "asset": "tools/gen_laminas_3_4.py#spoon_would_play",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "if i were you, i would flash twice": {
+   "clave": "pal_if_i_were_you_flash_twice",
+   "orixe": "composta",
+   "porque": "Linterna haciendo dos destellos seguidos en la oscuridad.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#if_i_were_you_flash_twice",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "if it climbs the chestnut tree, crawl to the green mat": {
+   "clave": "pal_climbs_chestnut_green_mat",
+   "orixe": "composta",
+   "porque": "Si toca castaño, gatear hasta la colchoneta verde.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#climbs_chestnut_green_mat",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
    "revisado": true
@@ -2911,12 +3671,52 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "if it's hot, we play with water": {
+   "clave": "pal_hot_play_with_water",
+   "orixe": "composta",
+   "porque": "Sol caluroso y juego refrescante con agua.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#hot_play_with_water",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
   "if only the storm were louder": {
    "clave": "pal_storm_louder",
    "orixe": "composta",
    "porque": "Gran nube con rayo y lluvia intensa entre ondas sonoras fuertes.",
    "fuente": "composta",
    "asset": "tools/gen_laminas_4_5.py#storm_louder",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "if the seed is big, put it in the brown pot": {
+   "clave": "pal_big_seed_brown_pot",
+   "orixe": "composta",
+   "porque": "Semilla grande yendo hacia la maceta marrón.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#big_seed_brown_pot",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "if the shell is smooth, put it in the blue basket": {
+   "clave": "pal_smooth_shell_blue_basket",
+   "orixe": "composta",
+   "porque": "Concha lisa entrando en la cesta azul.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#smooth_shell_blue_basket",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "if the water is cold, walk to the blue mat": {
+   "clave": "pal_cold_water_blue_mat",
+   "orixe": "composta",
+   "porque": "Agua fría señalando caminar hacia la colchoneta azul.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#cold_water_blue_mat",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
    "revisado": true
@@ -3031,6 +3831,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "investigate": {
+   "clave": "pal_investigate",
+   "orixe": "composta",
+   "porque": "Lupa observando de cerca para investigar detalles.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#investigate",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
   "invite": {
    "clave": "pal_invite",
    "orixe": "composta",
@@ -3121,6 +3931,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "it is fair to share": {
+   "clave": "pal_it_is_fair_to_share",
+   "orixe": "composta",
+   "porque": "Reparto justo de la fruta entre dos compañeros.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#it_is_fair_to_share",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
   "it is raining hard": {
    "clave": "pal_raining_hard",
    "orixe": "composta",
@@ -3161,6 +3981,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "it was you who packed it": {
+   "clave": "pal_it_was_you_who_packed_it",
+   "orixe": "composta",
+   "porque": "Niño preparando y cerrando su propia maleta.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#it_was_you_who_packed_it",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
   "it will be dry tomorrow": {
    "clave": "pal_it_will_be_dry_tomorrow",
    "orixe": "composta",
@@ -3177,6 +4007,36 @@
    "porque": "Niño esforzándose con gotas de sudor mientras levanta una gran piedra pesada.",
    "fuente": "composta",
    "asset": "tools/gen_laminas_4_5.py#its_heavy_isnt_it",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "it's the books that make it heavy": {
+   "clave": "pal_books_make_it_heavy",
+   "orixe": "composta",
+   "porque": "Mochila pesando mucho por los libros dentro.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#books_make_it_heavy",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "it's time we turned the torch off": {
+   "clave": "pal_time_turned_torch_off",
+   "orixe": "composta",
+   "porque": "Linterna tachada indicando hora de apagarla.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#time_turned_torch_off",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "it's your turn to direct": {
+   "clave": "pal_it_s_your_turn_to_direct",
+   "orixe": "composta",
+   "porque": "Flecha señalando al niño al que le toca dirigir.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#it_s_your_turn_to_direct",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
    "revisado": true
@@ -3209,6 +4069,16 @@
    "asset": "assets/brand/laminas/cascabel.json",
    "sha": "6be3d38b",
    "licencia": "Propia",
+   "revisado": true
+  },
+  "journey": {
+   "clave": "pal_journey",
+   "orixe": "composta",
+   "porque": "Mapa del mundo y avión trazando la ruta de un viaje.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#journey",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
    "revisado": true
   },
   "jug": {
@@ -3441,6 +4311,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "left": {
+   "clave": "pal_left",
+   "orixe": "composta",
+   "porque": "Flecha gruesa señalando claramente hacia la izquierda.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#left",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
   "leg": {
    "clave": "pal_leg",
    "orixe": "banco",
@@ -3561,6 +4441,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "look at the card and copy the shape": {
+   "clave": "pal_look_card_copy_shape",
+   "orixe": "composta",
+   "porque": "Tarjeta modelo con triángulo y figura copiada igual.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#look_card_copy_shape",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
   "look at the stone closely": {
    "clave": "pal_look_stone_closely",
    "orixe": "composta",
@@ -3597,6 +4487,16 @@
    "porque": "Niño mirando hacia fuera a través de una ventana abierta al sol y los árboles.",
    "fuente": "composta",
    "asset": "tools/gen_laminas_4_5.py#look_outside",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "look, a shell": {
+   "clave": "pal_look_a_shell",
+   "orixe": "composta",
+   "porque": "Mirando con asombro una concha encontrada.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#look_a_shell",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
    "revisado": true
@@ -3647,6 +4547,16 @@
    "porque": "Caras divertidas haciendo muecas juguetonas.",
    "fuente": "composta",
    "asset": "tools/gen_laminas_0_2.py#make_faces",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "make your pattern: clap, jump, tap": {
+   "clave": "pal_pattern_clap_jump_tap",
+   "orixe": "composta",
+   "porque": "Serie de tres acciones: palma, salto, toque.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#pattern_clap_jump_tap",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
    "revisado": true
@@ -3711,6 +4621,26 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "mateo, find a round cold chestnut": {
+   "clave": "pal_mateo_round_cold_chestnut",
+   "orixe": "composta",
+   "porque": "Lupa buscando una castaña fría y redonda.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#mateo_round_cold_chestnut",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "may i see your ticket": {
+   "clave": "pal_may_i_see_your_ticket",
+   "orixe": "composta",
+   "porque": "Mostrando el billete de viaje para revisarlo.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#may_i_see_your_ticket",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
   "me pongo el gorro, me pongo las botas": {
    "clave": "pal_cancion_gorro_botas",
    "orixe": "composta",
@@ -3737,6 +4667,26 @@
    "porque": "Caja de tesoros y recuerdos del set propio.",
    "fuente": "propia",
    "asset": "assets/brand/laminas/vocab_56.json",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "memory lane": {
+   "clave": "pal_memory_lane",
+   "orixe": "composta",
+   "porque": "Camino lleno de fotos y recuerdos del curso.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#memory_lane",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "middle": {
+   "clave": "pal_middle",
+   "orixe": "nova",
+   "porque": "Pieza central señalada en mitad de otras dos.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_5_6.py#middle",
    "sha": "6be3d38b",
    "licencia": "Propia",
    "revisado": true
@@ -3769,6 +4719,16 @@
    "asset": "tools/gen_laminas_3_4.py#more_please",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "mosaic": {
+   "clave": "pal_mosaic",
+   "orixe": "nova",
+   "porque": "Mosaico de teselas cuadradas de colores variados.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_5_6.py#mosaic",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
    "revisado": true
   },
   "moss": {
@@ -3861,6 +4821,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "mystery bag": {
+   "clave": "pal_mystery_bag",
+   "orixe": "nova",
+   "porque": "Bolsa cerrada opaca con interrogación misteriosa.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_5_6.py#mystery_bag",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "nappy": {
    "clave": "vocab_61",
    "orixe": "reutilizada",
@@ -3877,6 +4847,16 @@
    "porque": "Nido de ramitas tejido y redondo.",
    "fuente": "composta",
    "asset": "tools/gen_laminas_3_4.py#nest",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "never have we hidden the treasure so well": {
+   "clave": "pal_never_hidden_treasure",
+   "orixe": "composta",
+   "porque": "Caja del tesoro dorada muy bien escondida.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#never_hidden_treasure",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
    "revisado": true
@@ -3911,6 +4891,46 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "noa, walk five steps and take the white shell": {
+   "clave": "pal_noa_5_steps_shell",
+   "orixe": "composta",
+   "porque": "Caminar cinco pasos hasta coger la concha blanca.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#noa_5_steps_shell",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "noa, walk slowly and give the smooth leaf to your friend": {
+   "clave": "pal_noa_slowly_leaf_friend",
+   "orixe": "composta",
+   "porque": "Caminar despacio y entregar la hoja lisa a un amigo.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#noa_slowly_leaf_friend",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "not once did you lose the map": {
+   "clave": "pal_not_once_lose_map",
+   "orixe": "composta",
+   "porque": "Mapa bien cuidado sin haberse perdido ni una vez.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#not_once_lose_map",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "now the group copies your pattern": {
+   "clave": "pal_group_copies_pattern",
+   "orixe": "composta",
+   "porque": "Todo el grupo repitiendo el patrón marcado.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#group_copies_pattern",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
   "nursery": {
    "clave": "pal_nursery",
    "orixe": "composta",
@@ -3937,6 +4957,16 @@
    "porque": "Niño empujando la pelota hacia delante.",
    "fuente": "composta",
    "asset": "tools/gen_laminas_0_2.py#on_monday_we_push_the_ball",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "only on the map can you find it": {
+   "clave": "pal_only_on_the_map",
+   "orixe": "composta",
+   "porque": "Estrella del tesoro marcada únicamente en el mapa.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#only_on_the_map",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
    "revisado": true
@@ -3971,6 +5001,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "orange, which we made, is new": {
+   "clave": "pal_orange_which_we_made_is_new",
+   "orixe": "composta",
+   "porque": "Círculo naranja brillante recién creado.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#orange_which_we_made_is_new",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
   "paddle across": {
    "clave": "pal_paddle_across",
    "orixe": "composta",
@@ -4001,12 +5041,32 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "paint": {
+   "clave": "pal_pal_paint",
+   "orixe": "banco",
+   "porque": "Paleta de artista con varios colores.",
+   "fuente": "fluent-flat",
+   "asset": "fluentui-emoji:assets/Artist palette/Flat",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
   "palm": {
    "clave": "pal_palm",
    "orixe": "composta",
    "porque": "Palma de la mano abierta señalando el centro.",
    "fuente": "composta",
    "asset": "tools/gen_laminas_0_2.py#palm",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "paper": {
+   "clave": "pal_pal_paper",
+   "orixe": "banco",
+   "porque": "Hoja de papel blanca limpia.",
+   "fuente": "fluent-flat",
+   "asset": "fluentui-emoji:assets/Page facing up/Flat",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
    "revisado": true
@@ -4041,6 +5101,26 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "pass the rhythm stick around the circle": {
+   "clave": "pal_pass_rhythm_stick_circle",
+   "orixe": "composta",
+   "porque": "Palo de madera circulando alrededor de todo el corro.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#pass_rhythm_stick_circle",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "passport": {
+   "clave": "pal_passport",
+   "orixe": "nova",
+   "porque": "Libreta azul de pasaporte con globo dorado.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_5_6.py#passport",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "pat-a-cake": {
    "clave": "pal_pat_a_cake",
    "orixe": "composta",
@@ -4059,6 +5139,16 @@
    "asset": "tools/gen_laminas_0_2.py#rima_pat_a_cake",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "pattern": {
+   "clave": "pal_pattern",
+   "orixe": "nova",
+   "porque": "Serie repetida: círculo rojo, cuadrado azul, círculo rojo, cuadrado azul.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_5_6.py#pattern",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
    "revisado": true
   },
   "paw": {
@@ -4161,6 +5251,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "plane": {
+   "clave": "pal_pal_plane",
+   "orixe": "banco",
+   "porque": "Avión volando en ángulo.",
+   "fuente": "fluent-flat",
+   "asset": "fluentui-emoji:assets/Airplane/Flat",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
   "plant pot": {
    "clave": "pal_plant_pot",
    "orixe": "banco",
@@ -4187,6 +5287,16 @@
    "porque": "Forma triangular acabada en punta afilada arriba.",
    "fuente": "propia",
    "asset": "tools/gen_laminas_2_3.py#pointed",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "pointy": {
+   "clave": "pal_pointy",
+   "orixe": "nova",
+   "porque": "Punta triangular afilada señalada arriba.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_5_6.py#pointy",
    "sha": "6be3d38b",
    "licencia": "Propia",
    "revisado": true
@@ -4241,6 +5351,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "pot": {
+   "clave": "pal_pot",
+   "orixe": "composta",
+   "porque": "Olla o cazuela honda sobre la mesa.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#pot",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
   "pour": {
    "clave": "pal_pour",
    "orixe": "composta",
@@ -4277,6 +5397,16 @@
    "porque": "Regalo envuelto con lazo.",
    "fuente": "fluent-flat",
    "asset": "fluentui-emoji:assets/Wrapped gift/Flat",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "primary school": {
+   "clave": "pal_primary_school",
+   "orixe": "composta",
+   "porque": "Edificio grande de colegio de Primaria.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#primary_school",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
    "revisado": true
@@ -4461,6 +5591,26 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "put the rough one here and the smooth one there": {
+   "clave": "pal_rough_here_smooth_there",
+   "orixe": "composta",
+   "porque": "Piedra áspera en un lado y superficie lisa en el otro.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#rough_here_smooth_there",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "put your arms up and your left foot forward": {
+   "clave": "pal_arms_up_left_foot",
+   "orixe": "composta",
+   "porque": "Niño con brazos arriba y pie izquierdo adelantado.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#arms_up_left_foot",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
   "put your feet into the boots": {
    "clave": "pal_put_feet_into_boots",
    "orixe": "composta",
@@ -4487,6 +5637,16 @@
    "porque": "Campanillas en silencio mientras todo duerme tranquilo.",
    "fuente": "composta",
    "asset": "tools/gen_laminas_2_3.py#quiet_bells_sleep",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "quiet time": {
+   "clave": "pal_quiet_time",
+   "orixe": "composta",
+   "porque": "Rato tranquilo de calma, lectura y descanso.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#quiet_time",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
    "revisado": true
@@ -4591,12 +5751,42 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "rarely is a treasure so close": {
+   "clave": "pal_rarely_treasure_close",
+   "orixe": "composta",
+   "porque": "Brújula muy cerquita del tesoro dorado.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#rarely_treasure_close",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "ready, steady, go: pass the tray to your friend": {
+   "clave": "pal_ready_steady_pass_tray",
+   "orixe": "composta",
+   "porque": "Pasando la bandeja al amigo con ritmo.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#ready_steady_pass_tray",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
   "rebuild": {
    "clave": "pal_rebuild",
    "orixe": "composta",
    "porque": "Piezas caídas volviéndose a levantar en una torre nueva.",
    "fuente": "composta",
    "asset": "tools/gen_laminas_3_4.py#rebuild",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "recharge": {
+   "clave": "pal_recharge",
+   "orixe": "composta",
+   "porque": "Pila recargándose con símbolo de energía.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#recharge",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
    "revisado": true
@@ -4639,6 +5829,36 @@
    "asset": "tools/gen_laminas_2_3.py#red_card",
    "sha": "6be3d38b",
    "licencia": "Propia",
+   "revisado": true
+  },
+  "red, which is warm, mixes with yellow": {
+   "clave": "pal_red_warm_yellow",
+   "orixe": "composta",
+   "porque": "Rojo cálido y amarillo dando naranja.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#red_warm_yellow",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "responsible": {
+   "clave": "pal_responsible",
+   "orixe": "composta",
+   "porque": "Recogiendo y cuidando las cosas con responsabilidad.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#responsible",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "rhythmic": {
+   "clave": "pal_rhythmic",
+   "orixe": "composta",
+   "porque": "Tambor acompañado de compases rítmicos regulares.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#rhythmic",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
    "revisado": true
   },
   "ring the bells": {
@@ -4777,6 +5997,26 @@
    "porque": "Cuerda vertical sumergida en el mar con racimos de mejillones sujetos.",
    "fuente": "propia",
    "asset": "tools/gen_laminas_4_5.py#rope_line",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "rough": {
+   "clave": "pal_rough",
+   "orixe": "composta",
+   "porque": "Olas altas y movidas representando textura o mar bravo.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#rough",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "round": {
+   "clave": "pal_round",
+   "orixe": "nova",
+   "porque": "Forma completamente redonda sin esquinas.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_5_6.py#round",
    "sha": "6be3d38b",
    "licencia": "Propia",
    "revisado": true
@@ -4951,6 +6191,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "scissors": {
+   "clave": "pal_pal_scissors",
+   "orixe": "banco",
+   "porque": "Tijeras rojas abiertas.",
+   "fuente": "fluent-flat",
+   "asset": "fluentui-emoji:assets/Scissors/Flat",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
   "sea": {
    "clave": "pal_sea",
    "orixe": "composta",
@@ -5061,6 +6311,16 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "self-care": {
+   "clave": "pal_self_care",
+   "orixe": "composta",
+   "porque": "Cuidarse lavando dientes y manos con cariño.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#self_care",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
   "semilla pequeña": {
    "clave": "pal_cancion_semilla",
    "orixe": "composta",
@@ -5141,12 +6401,32 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "shape": {
+   "clave": "pal_shape",
+   "orixe": "nova",
+   "porque": "Círculo, cuadrado y triángulo mostrando formas geométricas.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_5_6.py#shape",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "she asked where the snake went": {
    "clave": "pal_where_snake_went",
    "orixe": "composta",
    "porque": "Niño señalando hacia la hierba por donde se desliza la serpiente.",
    "fuente": "composta",
    "asset": "tools/gen_laminas_4_5.py#where_snake_went",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "she explained that the colours mix": {
+   "clave": "pal_she_explained_colours_mix",
+   "orixe": "composta",
+   "porque": "Rojo y amarillo mezclándose claramente en naranja.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#she_explained_colours_mix",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
    "revisado": true
@@ -5261,6 +6541,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "sit on the green mat and freeze": {
+   "clave": "pal_sit_green_mat_freeze",
+   "orixe": "composta",
+   "porque": "Niño sentado quieto como estatua en la colchoneta verde.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#sit_green_mat_freeze",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
   "sleep": {
    "clave": "pal_sleep",
    "orixe": "banco",
@@ -5301,6 +6591,36 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "slither": {
+   "clave": "pal_slither",
+   "orixe": "composta",
+   "porque": "Serpiente reptando pegada al suelo.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#slither",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "slow": {
+   "clave": "pal_slow",
+   "orixe": "composta",
+   "porque": "Tortuga avanzando con flecha corta y tranquila.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#slow",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "slower": {
+   "clave": "pal_slower",
+   "orixe": "composta",
+   "porque": "Tortuga frenando aún más despacio.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#slower",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
   "sly": {
    "clave": "pal_sly",
    "orixe": "composta",
@@ -5327,6 +6647,26 @@
    "porque": "Humo gris subiendo desde la madera hacia arriba.",
    "fuente": "composta",
    "asset": "tools/gen_laminas_0_2.py#smoke",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "smooth": {
+   "clave": "pal_smooth",
+   "orixe": "nova",
+   "porque": "Superficie pulida, suave y perfectamente lisa.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_5_6.py#smooth",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "snake": {
+   "clave": "pal_pal_snake",
+   "orixe": "banco",
+   "porque": "Serpiente verde ondulada.",
+   "fuente": "fluent-flat",
+   "asset": "fluentui-emoji:assets/Snake/Flat",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
    "revisado": true
@@ -5611,6 +6951,26 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "stargaze": {
+   "clave": "pal_stargaze",
+   "orixe": "composta",
+   "porque": "Telescopio apuntando al cielo estrellado nocturno.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#stargaze",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "statue": {
+   "clave": "pal_statue",
+   "orixe": "composta",
+   "porque": "Figura completamente inmóvil sobre un pedestal.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#statue",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
   "steady": {
    "clave": "pal_steady",
    "orixe": "nova",
@@ -5631,6 +6991,16 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "step across": {
+   "clave": "pal_step_across",
+   "orixe": "composta",
+   "porque": "Niño dando una zancada amplia por encima de un obstáculo.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#step_across",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
   "step forward": {
    "clave": "pal_step_forward",
    "orixe": "composta",
@@ -5639,6 +7009,36 @@
    "asset": "tools/gen_laminas_2_3.py#step_forward",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "step slowly and don't spill the water into the river": {
+   "clave": "pal_step_slowly_no_spill",
+   "orixe": "composta",
+   "porque": "Paso lento llevando agua sin derramar una gota.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#step_slowly_no_spill",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "steps": {
+   "clave": "pal_steps",
+   "orixe": "nova",
+   "porque": "Escalones ascendentes en perspectiva lateral.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_5_6.py#steps",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "sticky": {
+   "clave": "pal_sticky",
+   "orixe": "nova",
+   "porque": "Sustancia espesa pegajosa con hilos colgando.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_5_6.py#sticky",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
    "revisado": true
   },
   "stir": {
@@ -5821,6 +7221,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "suitcase": {
+   "clave": "pal_pal_suitcase",
+   "orixe": "banco",
+   "porque": "Maleta de viaje con asa y ruedas.",
+   "fuente": "fluent-flat",
+   "asset": "fluentui-emoji:assets/Luggage/Flat",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
   "summer": {
    "clave": "pal_summer",
    "orixe": "banco",
@@ -5837,6 +7247,16 @@
    "porque": "Sombrero amplio de ala ancha bajo el sol del verano.",
    "fuente": "composta",
    "asset": "tools/gen_laminas_2_3.py#summer_hat",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "summer holidays": {
+   "clave": "pal_summer_holidays",
+   "orixe": "composta",
+   "porque": "Playa, sombrilla y sol radiante de vacaciones de verano.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#summer_holidays",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
    "revisado": true
@@ -5871,6 +7291,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "suncream bottle": {
+   "clave": "pal_suncream_bottle",
+   "orixe": "composta",
+   "porque": "Bote de crema solar protectora bajo el sol.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#suncream_bottle",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
   "sunlight! stand up and stretch tall": {
    "clave": "pal_sunlight_stretch_tall",
    "orixe": "composta",
@@ -5897,6 +7327,16 @@
    "porque": "Parasol abierto dando sombra.",
    "fuente": "fluent-flat",
    "asset": "fluentui-emoji:assets/Beach with umbrella/Flat",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "suppose you saw a light: what would you say": {
+   "clave": "pal_suppose_saw_light",
+   "orixe": "composta",
+   "porque": "Luz brillante inesperada en la oscuridad con interrogación.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#suppose_saw_light",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
    "revisado": true
@@ -5941,12 +7381,42 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "symmetry": {
+   "clave": "pal_symmetry",
+   "orixe": "nova",
+   "porque": "Alas simétricas idénticas a ambos lados de un eje central.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_5_6.py#symmetry",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "take a rough leaf and put it in the brown ring": {
+   "clave": "pal_rough_leaf_brown_ring",
+   "orixe": "composta",
+   "porque": "Hoja entrando en el aro marrón del suelo.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#rough_leaf_brown_ring",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
   "take it off": {
    "clave": "pal_take_it_off",
    "orixe": "composta",
    "porque": "Gorro levantándose con flecha hacia arriba: quitárselo.",
    "fuente": "composta",
    "asset": "tools/gen_laminas_0_2.py#take_it_off",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "take the smock, turn around and give it to noa": {
+   "clave": "pal_take_smock_give_noa",
+   "orixe": "composta",
+   "porque": "Babi/bata pasando tras darse la vuelta a su compañera.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#take_smock_give_noa",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
    "revisado": true
@@ -5977,6 +7447,16 @@
    "porque": "Manos dando golpecitos rápidos en las rodillas como lluvia.",
    "fuente": "composta",
    "asset": "tools/gen_laminas_3_4.py#tap_knees_like_rain",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "tap-tap": {
+   "clave": "pal_tap_tap",
+   "orixe": "composta",
+   "porque": "Dos golpecitos suaves con baquetas sobre superficie.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#tap_tap",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
    "revisado": true
@@ -6117,6 +7597,16 @@
    "porque": "Barra de pan endureciéndose tanto como una piedra.",
    "fuente": "composta",
    "asset": "tools/gen_laminas_2_3.py#the_bread_was_getting_hard",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "the brush is between the cup and the paper": {
+   "clave": "pal_brush_between_cup_paper",
+   "orixe": "composta",
+   "porque": "Pincel colocado justo en medio de la taza y la hoja.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#brush_between_cup_paper",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
    "revisado": true
@@ -6281,12 +7771,52 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "the long straw sounds low, and the short one high": {
+   "clave": "pal_long_straw_low_short_high",
+   "orixe": "composta",
+   "porque": "Pajita larga con nota grave abajo y corta con nota aguda arriba.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#long_straw_low_short_high",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "the newspaper is loud, whereas the tissue is soft": {
+   "clave": "pal_newspaper_loud_tissue_soft",
+   "orixe": "composta",
+   "porque": "Periódico ruidoso frente a pañuelo suave y silencioso.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#newspaper_loud_tissue_soft",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
   "the nut dropped": {
    "clave": "pal_the_nut_dropped",
    "orixe": "composta",
    "porque": "Fruto seco cayendo hacia abajo hasta el suelo.",
    "fuente": "composta",
    "asset": "tools/gen_laminas_2_3.py#the_nut_dropped",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "the paint had been drying all morning": {
+   "clave": "pal_paint_drying_all_morning",
+   "orixe": "composta",
+   "porque": "Cuadro recién pintado secándose toda la mañana al aire.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#paint_drying_all_morning",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "the rainbow, which we painted, is big": {
+   "clave": "pal_rainbow_painted_big",
+   "orixe": "composta",
+   "porque": "Arcoíris grande recién pintado con pincel.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#rainbow_painted_big",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
    "revisado": true
@@ -6511,6 +8041,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "the train starts slow, then fast, then stops": {
+   "clave": "pal_train_slow_fast_stops",
+   "orixe": "composta",
+   "porque": "Tren cambiando de despacio a rápido y parando.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#train_slow_fast_stops",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
   "the weather was checked every morning": {
    "clave": "pal_weather_checked_morning",
    "orixe": "composta",
@@ -6671,6 +8211,36 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "this time tomorrow, we will be using the torch": {
+   "clave": "pal_tomorrow_using_torch",
+   "orixe": "composta",
+   "porque": "Calendario de mañana junto a linterna iluminando.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#tomorrow_using_torch",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "thrown gently, it flew far": {
+   "clave": "pal_thrown_gently_it_flew_far",
+   "orixe": "composta",
+   "porque": "Avión planeando lejos con suavidad por el cielo.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#thrown_gently_it_flew_far",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "ticket": {
+   "clave": "pal_pal_ticket",
+   "orixe": "banco",
+   "porque": "Billete o entrada de colores.",
+   "fuente": "fluent-flat",
+   "asset": "fluentui-emoji:assets/Ticket/Flat",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
   "tide": {
    "clave": "pal_tide",
    "orixe": "composta",
@@ -6699,6 +8269,16 @@
    "asset": "fluentui-emoji:assets/Tiger/Flat",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "tile": {
+   "clave": "pal_tile",
+   "orixe": "nova",
+   "porque": "Azulejo cuadrado esmaltado con dibujo geométrico.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_5_6.py#tile",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
    "revisado": true
   },
   "tiny toes": {
@@ -6831,6 +8411,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "travel map": {
+   "clave": "pal_travel_map",
+   "orixe": "composta",
+   "porque": "Mapa extendido de viaje con ruta marcada y brújula.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#travel_map",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
   "tread": {
    "clave": "pal_tread",
    "orixe": "composta",
@@ -6877,6 +8467,26 @@
    "porque": "Flecha circular rodeando al niño para darse la vuelta.",
    "fuente": "composta",
    "asset": "tools/gen_laminas_3_4.py#turn_around",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "turn left": {
+   "clave": "pal_turn_left",
+   "orixe": "composta",
+   "porque": "Flecha curva girando hacia la izquierda.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#turn_left",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "turn left and step over the rope": {
+   "clave": "pal_turn_left_step_rope",
+   "orixe": "composta",
+   "porque": "Giro a la izquierda pasando por encima de la cuerda.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#turn_left_step_rope",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
    "revisado": true
@@ -6961,6 +8571,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "under the stones! slither like a snake": {
+   "clave": "pal_under_stones_slither",
+   "orixe": "composta",
+   "porque": "Serpiente deslizándose por debajo de la piedra.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#under_stones_slither",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
   "underpass": {
    "clave": "pal_underpass",
    "orixe": "nova",
@@ -6971,12 +8591,32 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "unwind": {
+   "clave": "pal_unwind",
+   "orixe": "composta",
+   "porque": "Relajarse y desconectar suavemente al final del día.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#unwind",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
   "up": {
    "clave": "pal_up",
    "orixe": "composta",
    "porque": "Niño levantando los brazos hacia arriba con flecha ascendente.",
    "fuente": "composta",
    "asset": "tools/gen_laminas_0_2.py#up",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "vote": {
+   "clave": "pal_pal_vote",
+   "orixe": "banco",
+   "porque": "Urna con papeleta entrando.",
+   "fuente": "fluent-flat",
+   "asset": "fluentui-emoji:assets/Ballot box with ballot/Flat",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
    "revisado": true
@@ -7061,12 +8701,32 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "walk slowly and hold your friend's hand": {
+   "clave": "pal_walk_slowly_hold_hand",
+   "orixe": "composta",
+   "porque": "Dos amigos caminando despacio cogidos de la mano.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#walk_slowly_hold_hand",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
   "walk to the circle and sit down": {
    "clave": "pal_walk_to_the_circle_and_sit_down",
    "orixe": "composta",
    "porque": "Niño caminando hacia el círculo azul para sentarse.",
    "fuente": "composta",
    "asset": "tools/gen_laminas_3_4.py#walk_to_the_circle_and_sit_down",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "walk to the hook and hang up your coat": {
+   "clave": "pal_walk_hook_hang_coat",
+   "orixe": "composta",
+   "porque": "Acercarse al perchero y colgar el abrigo.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#walk_hook_hang_coat",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
    "revisado": true
@@ -7221,6 +8881,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "water the plants": {
+   "clave": "pal_water_the_plants",
+   "orixe": "composta",
+   "porque": "Gotas de agua regando las macetas con plantas.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#water_the_plants",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
   "water tray": {
    "clave": "pal_water_tray",
    "orixe": "nova",
@@ -7321,6 +8991,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "we had been painting before we folded it": {
+   "clave": "pal_painting_before_folded",
+   "orixe": "composta",
+   "porque": "Primero pintar la hoja y luego doblarla en avión.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#painting_before_folded",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
   "we had drawn it before dinner": {
    "clave": "pal_we_had_drawn_it_before_dinner",
    "orixe": "composta",
@@ -7357,6 +9037,16 @@
    "porque": "Cuatro piezas colocadas ordenadamente en fila.",
    "fuente": "composta",
    "asset": "tools/gen_laminas_3_4.py#we_have_made_a_row",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "we have to hurry because the train is leaving in front of us": {
+   "clave": "pal_hurry_train_leaving",
+   "orixe": "composta",
+   "porque": "Niño corriendo deprisa al ver partir el tren delante.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#hurry_train_leaving",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
    "revisado": true
@@ -7431,6 +9121,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "welcome aboard": {
+   "clave": "pal_welcome_aboard",
+   "orixe": "composta",
+   "porque": "Bienvenida sonriente al subir a bordo del viaje.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#welcome_aboard",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
   "wellies": {
    "clave": "botas",
    "orixe": "reutilizada",
@@ -7481,12 +9181,32 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "what matters is the coat": {
+   "clave": "pal_what_matters_is_the_coat",
+   "orixe": "composta",
+   "porque": "Abrigo cálido como pieza más importante contra el frío.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#what_matters_is_the_coat",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
   "what was happening to the bread": {
    "clave": "pal_what_was_happening_to_the_bread",
    "orixe": "composta",
    "porque": "Observando cómo cambia la rebanada de pan al mojarse.",
    "fuente": "composta",
    "asset": "tools/gen_laminas_2_3.py#what_was_happening_to_the_bread",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "what we need is water": {
+   "clave": "pal_what_we_need_is_water",
+   "orixe": "composta",
+   "porque": "Vaso de agua limpia que se necesita.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#what_we_need_is_water",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
    "revisado": true
@@ -7527,6 +9247,16 @@
    "porque": "Niño con estetoscopio señalando al peluche para preguntar dónde le duele.",
    "fuente": "composta",
    "asset": "tools/gen_laminas_4_5.py#where_does_it_hurt",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "where does the fox hide? point with your elbows": {
+   "clave": "pal_fox_hide_point_elbows",
+   "orixe": "composta",
+   "porque": "Zorro escondido y niño señalando con los codos.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#fox_hide_point_elbows",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
    "revisado": true
@@ -7611,6 +9341,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "white": {
+   "clave": "pal_white",
+   "orixe": "nova",
+   "porque": "Mancha/círculo blanco con contorno nítido.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_5_6.py#white",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "who runs": {
    "clave": "pal_who_runs",
    "orixe": "composta",
@@ -7647,6 +9387,16 @@
    "porque": "Pluma ligerísima flotando suavemente hacia arriba.",
    "fuente": "composta",
    "asset": "tools/gen_laminas_2_3.py#will_it_be_light",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "will you have tried blue by then": {
+   "clave": "pal_tried_blue_by_then",
+   "orixe": "composta",
+   "porque": "Paleta de pintura con bote azul y pregunta.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#tried_blue_by_then",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
    "revisado": true
@@ -7697,6 +9447,16 @@
    "porque": "Lobo gris de frente con orejas en punta, coincidencia directa.",
    "fuente": "fluent-flat",
    "asset": "fluentui-emoji:assets/Wolf/Flat",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "wolf costume": {
+   "clave": "pal_wolf_costume",
+   "orixe": "composta",
+   "porque": "Disfraz de lobo preparado para representar el cuento.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#wolf_costume",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
    "revisado": true
@@ -7831,6 +9591,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "you had been looking for the same side": {
+   "clave": "pal_looking_same_side",
+   "orixe": "composta",
+   "porque": "Dos cuadrados idénticos encontrados con lupa.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#looking_same_side",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
   "you have been listening": {
    "clave": "pal_you_have_been_listening",
    "orixe": "composta",
@@ -7867,6 +9637,16 @@
    "porque": "Señal de stop indicando que hay que detenerse.",
    "fuente": "composta",
    "asset": "tools/gen_laminas_2_3.py#you_must_stop",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "you promised to spin it fast": {
+   "clave": "pal_you_promised_to_spin_it_fast",
+   "orixe": "composta",
+   "porque": "Disco girando muy rápido sobre su centro.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#you_promised_to_spin_it_fast",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
    "revisado": true
@@ -7957,6 +9737,26 @@
    "porque": "Flecha señalando al compañero indicando que es su turno.",
    "fuente": "composta",
    "asset": "tools/gen_laminas_3_4.py#your_turn",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "your turn: give the command to your friend": {
+   "clave": "pal_your_turn_give_command",
+   "orixe": "composta",
+   "porque": "Turno para dar una indicación clara al compañero.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#your_turn_give_command",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "your turn: now you are the sculptor": {
+   "clave": "pal_your_turn_sculptor",
+   "orixe": "composta",
+   "porque": "Niño escultor dando postura de estatua a su amigo.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_5_6.py#your_turn_sculptor",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
    "revisado": true

@@ -340,7 +340,8 @@
             "gl": "Xirar as mans coma unha batedora",
             "es": "Girar las manos como una batidora"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_blend"
         },
         {
           "id": "2_3.marzo.s2.slice",

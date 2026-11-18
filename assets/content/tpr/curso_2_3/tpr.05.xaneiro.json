@@ -43,7 +43,8 @@
             "gl": "Dar o billete ao condutor",
             "es": "Dar el billete al conductor"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_pal_ticket"
         },
         {
           "id": "2_3.xaneiro.s1.handle",

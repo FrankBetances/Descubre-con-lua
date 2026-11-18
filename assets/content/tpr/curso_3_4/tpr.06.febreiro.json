@@ -541,7 +541,8 @@
           "tprAction": {
             "gl": "Mover un brazo en zigzag coma unha serpe",
             "es": "Mover un brazo en zigzag como una serpiente"
-          }
+          },
+          "lamina": "pal_pal_snake"
         },
         {
           "id": "3_4.febreiro.s3.crocodile",
@@ -586,7 +587,8 @@
           "tprAction": {
             "gl": "Arrastrarse polo chan coma unha serpe",
             "es": "Arrastrarse por el suelo como una serpiente"
-          }
+          },
+          "lamina": "pal_slither"
         },
         {
           "id": "3_4.febreiro.s3.snap",
@@ -630,7 +632,8 @@
           "tprAction": {
             "gl": "Sinalar algo verde na aula",
             "es": "Señalar algo verde en el aula"
-          }
+          },
+          "lamina": "pal_green"
         },
         {
           "id": "3_4.febreiro.s3.wrinkly",

@@ -708,7 +708,8 @@
             "gl": "Saltar xuntos coas mans en arco",
             "es": "Saltar juntos con las manos en arco"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_dolphin_pod"
         },
         {
           "id": "5_6.abril.s4.blowhole",
@@ -719,7 +720,8 @@
             "gl": "Soprar cara arriba",
             "es": "Soplar hacia arriba"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_blowhole"
         },
         {
           "id": "5_6.abril.s4.flipper",

@@ -200,7 +200,8 @@
           "tprAction": {
             "gl": "Petar co dedo na palma ao pulso da chuvia",
             "es": "Tocar con el dedo en la palma al pulso de la lluvia"
-          }
+          },
+          "lamina": "pal_tap_tap"
         },
         {
           "id": "3_4.abril.s1.hello-sun",
@@ -574,7 +575,8 @@
           "tprAction": {
             "gl": "Gatear polo chan un anaco",
             "es": "Gatear por el suelo un rato"
-          }
+          },
+          "lamina": "pal_crawl"
         },
         {
           "id": "3_4.abril.s3.land",
@@ -807,7 +809,8 @@
           "tprAction": {
             "gl": "Manterse nun pé cos brazos abertos e a man dunha persoa adulta preto",
             "es": "Mantenerse en un pie con los brazos abiertos y la mano de una persona adulta cerca"
-          }
+          },
+          "lamina": "pal_balance"
         },
         {
           "id": "3_4.abril.s4.hatch",
@@ -829,7 +832,8 @@
           "tprAction": {
             "gl": "Camiñar amodo mirándoo todo con curiosidade",
             "es": "Caminar despacio mirándolo todo con curiosidad"
-          }
+          },
+          "lamina": "pal_explore"
         },
         {
           "id": "3_4.abril.s4.race",

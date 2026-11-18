@@ -156,7 +156,8 @@
           "tprAction": {
             "gl": "Sinalar algo marrón na aula",
             "es": "Señalar algo marrón en el aula"
-          }
+          },
+          "lamina": "pal_brown"
         },
         {
           "id": "3_4.novembro.s1.orange",
@@ -267,7 +268,8 @@
           "tprAction": {
             "gl": "Facer un cesto cos brazos diante do corpo",
             "es": "Hacer una cesta con los brazos delante del cuerpo"
-          }
+          },
+          "lamina": "pal_pal_basket"
         },
         {
           "id": "3_4.novembro.s2.mushroom",
@@ -368,7 +370,8 @@
           "tprAction": {
             "gl": "Buscar coa man sobre os ollos e sinalar ao atopar",
             "es": "Buscar con la mano sobre los ojos y señalar al encontrar"
-          }
+          },
+          "lamina": "pal_find"
         },
         {
           "id": "3_4.novembro.s2.climb",
@@ -791,7 +794,8 @@
           "tprAction": {
             "gl": "Facer unha pota grande coas mans e mirar dentro",
             "es": "Hacer una olla grande con las manos y mirar dentro"
-          }
+          },
+          "lamina": "pal_pot"
         },
         {
           "id": "3_4.novembro.s4.stir",
@@ -836,7 +840,8 @@
           "tprAction": {
             "gl": "Encher un cesto imaxinario ata arriba",
             "es": "Llenar una cesta imaginaria hasta arriba"
-          }
+          },
+          "lamina": "pal_fill"
         },
         {
           "id": "3_4.novembro.s4.knock",
@@ -891,7 +896,8 @@
           "tprAction": {
             "gl": "Separar as mans coma se estivesen pegadas",
             "es": "Separar las manos como si estuvieran pegadas"
-          }
+          },
+          "lamina": "pal_sticky"
         },
         {
           "id": "3_4.novembro.s4.it-smells-good",

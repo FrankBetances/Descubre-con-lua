@@ -914,7 +914,8 @@
             "gl": "Abanarse e salpicar",
             "es": "Abanicarse y salpicar"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_hot_play_with_water"
         },
         {
           "id": "4_5.xuno.s4.throw-it-higher-than-the-tree",

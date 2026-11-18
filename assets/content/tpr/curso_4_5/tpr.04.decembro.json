@@ -766,7 +766,8 @@
             "gl": "Entregar unha postal",
             "es": "Entregar una postal"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_card"
         },
         {
           "id": "4_5.decembro.s4.community",

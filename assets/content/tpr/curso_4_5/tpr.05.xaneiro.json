@@ -110,7 +110,8 @@
             "gl": "Xirar cara á esquerda",
             "es": "Girar hacia la izquierda"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_turn_left"
         },
         {
           "id": "4_5.xaneiro.s1.turn-right",
@@ -154,7 +155,8 @@
             "gl": "Levantar a man esquerda",
             "es": "Levantar la mano izquierda"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_left"
         },
         {
           "id": "4_5.xaneiro.s1.right-hand",
@@ -580,7 +582,8 @@
             "gl": "Parar e abrir os brazos",
             "es": "Parar y abrir los brazos"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_arrive"
         },
         {
           "id": "4_5.xaneiro.s3.depart",

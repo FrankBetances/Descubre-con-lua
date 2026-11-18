@@ -385,7 +385,8 @@
           "tprAction": {
             "gl": "Abrir as mans de golpe coma un raio de luz",
             "es": "Abrir las manos de golpe como un rayo de luz"
-          }
+          },
+          "lamina": "pal_bright"
         },
         {
           "id": "3_4.outubro.s2.dark",
@@ -626,7 +627,8 @@
           "tprAction": {
             "gl": "Mover as mans moi amodo",
             "es": "Mover las manos muy despacio"
-          }
+          },
+          "lamina": "pal_slow"
         },
         {
           "id": "3_4.outubro.s3.strong",
@@ -670,7 +672,8 @@
           "tprAction": {
             "gl": "Subir os dous brazos de golpe",
             "es": "Subir los dos brazos de golpe"
-          }
+          },
+          "lamina": "pal_arms_up"
         },
         {
           "id": "3_4.outubro.s3.wiggle-your-fingers",

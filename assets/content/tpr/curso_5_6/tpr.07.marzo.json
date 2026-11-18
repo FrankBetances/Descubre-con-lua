@@ -21,7 +21,8 @@
             "gl": "Bater palma, pé, palma, pé",
             "es": "Dar palma, pie, palma, pie"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_pattern"
         },
         {
           "id": "5_6.marzo.s1.repeat",
@@ -250,7 +251,8 @@
             "gl": "Mover as dúas mans igual",
             "es": "Mover las dos manos igual"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_symmetry"
         },
         {
           "id": "5_6.marzo.s2.mirror-line",
@@ -426,7 +428,8 @@
             "gl": "Moverse e agardar a copia",
             "es": "Moverse y esperar la copia"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_copy_my_movements"
         },
         {
           "id": "5_6.marzo.s2.is-it-the-same-on-both-sides",
@@ -708,7 +711,8 @@
             "gl": "Poñer pezas unha ao lado doutra",
             "es": "Poner piezas una al lado de otra"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_mosaic"
         },
         {
           "id": "5_6.marzo.s4.tile",
@@ -719,7 +723,8 @@
             "gl": "Pousar a man plana",
             "es": "Posar la mano plana"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_tile"
         },
         {
           "id": "5_6.marzo.s4.tangram",

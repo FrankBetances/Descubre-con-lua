@@ -165,7 +165,8 @@
             "gl": "Coidar a planta da clase",
             "es": "Cuidar la planta de la clase"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_responsible"
         },
         {
           "id": "4_5.setembro.s1.honest",

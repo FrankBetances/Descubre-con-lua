@@ -21,7 +21,8 @@
             "gl": "Levantar a man para votar",
             "es": "Levantar la mano para votar"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_pal_vote"
         },
         {
           "id": "5_6.setembro.s1.ballot-box",
@@ -708,7 +709,8 @@
             "gl": "Darse a man",
             "es": "Darse la mano"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_deal_handshake"
         },
         {
           "id": "5_6.setembro.s4.compromise",
@@ -719,7 +721,8 @@
             "gl": "Xuntar as mans no medio",
             "es": "Juntar las manos en el medio"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_compromise"
         },
         {
           "id": "5_6.setembro.s4.pinky-promise",

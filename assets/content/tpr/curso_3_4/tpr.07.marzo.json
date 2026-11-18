@@ -99,7 +99,8 @@
           "tprAction": {
             "gl": "Pintar unha parede imaxinaria con pinceladas grandes",
             "es": "Pintar una pared imaginaria con pinceladas grandes"
-          }
+          },
+          "lamina": "pal_pal_paint"
         },
         {
           "id": "3_4.marzo.s1.mix",
@@ -252,7 +253,8 @@
           "tprAction": {
             "gl": "Debuxar un círculo grande co dedo",
             "es": "Dibujar un círculo grande con el dedo"
-          }
+          },
+          "lamina": "pal_circle"
         },
         {
           "id": "3_4.marzo.s2.square",
@@ -296,7 +298,8 @@
           "tprAction": {
             "gl": "Facer un aro cos brazos por riba da cabeza",
             "es": "Hacer un aro con los brazos por encima de la cabeza"
-          }
+          },
+          "lamina": "pal_hoop"
         },
         {
           "id": "3_4.marzo.s2.shape",
@@ -307,7 +310,8 @@
           "tprAction": {
             "gl": "Facer unha forma co corpo e quedar quietos",
             "es": "Hacer una forma con el cuerpo y quedarse quietos"
-          }
+          },
+          "lamina": "pal_shape"
         },
         {
           "id": "3_4.marzo.s2.dot",
@@ -385,7 +389,8 @@
           "tprAction": {
             "gl": "Mover a man facendo círculos pequenos",
             "es": "Mover la mano haciendo círculos pequeños"
-          }
+          },
+          "lamina": "pal_round"
         },
         {
           "id": "3_4.marzo.s2.straight",
@@ -407,7 +412,8 @@
           "tprAction": {
             "gl": "Xuntar as mans en punta por riba da cabeza",
             "es": "Juntar las manos en punta por encima de la cabeza"
-          }
+          },
+          "lamina": "pal_pointy"
         },
         {
           "id": "3_4.marzo.s2.flat",
@@ -639,7 +645,8 @@
           "tprAction": {
             "gl": "Pasar a man moi suave por unha mazá imaxinaria",
             "es": "Pasar la mano muy suave por una manzana imaginaria"
-          }
+          },
+          "lamina": "pal_smooth"
         },
         {
           "id": "3_4.marzo.s3.tasty",

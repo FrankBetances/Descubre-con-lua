@@ -538,7 +538,8 @@
           "tprAction": {
             "gl": "Abrir os brazos coma ás e voar amodo",
             "es": "Abrir los brazos como alas y volar despacio"
-          }
+          },
+          "lamina": "pal_pal_plane"
         },
         {
           "id": "3_4.xaneiro.s3.wheel",
@@ -661,7 +662,8 @@
           "tprAction": {
             "gl": "Camiñar amodo mirando a un lado e ao outro",
             "es": "Caminar despacio mirando a un lado y al otro"
-          }
+          },
+          "lamina": "pal_careful"
         },
         {
           "id": "3_4.xaneiro.s3.beep-beep",
@@ -837,7 +839,8 @@
           "tprAction": {
             "gl": "Debuxar no aire unha casa co dedo",
             "es": "Dibujar en el aire una casa con el dedo"
-          }
+          },
+          "lamina": "pal_draw"
         },
         {
           "id": "3_4.xaneiro.s4.read",

@@ -87,7 +87,8 @@
             "gl": "Meter a man sen mirar",
             "es": "Meter la mano sin mirar"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_mystery_bag"
         },
         {
           "id": "5_6.outubro.s1.notice",
@@ -131,7 +132,8 @@
             "gl": "Tocar cos ollos pechados",
             "es": "Tocar con los ojos cerrados"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_feel_without_looking"
         },
         {
           "id": "5_6.outubro.s1.tune-in",
@@ -327,7 +329,8 @@
             "gl": "Pousar a man no peito e esperar",
             "es": "Poner la mano en el pecho y esperar"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_feel_your_heartbeat"
         },
         {
           "id": "5_6.outubro.s2.sprint-fast",
@@ -785,7 +788,8 @@
             "gl": "Encollerse e despois estirarse",
             "es": "Encogerse y luego estirarse"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_recharge"
         },
         {
           "id": "5_6.outubro.s4.unwind",
@@ -796,7 +800,8 @@
             "gl": "Soltar os ombros",
             "es": "Soltar los hombros"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_unwind"
         },
         {
           "id": "5_6.outubro.s4.get-ready-for-bed",

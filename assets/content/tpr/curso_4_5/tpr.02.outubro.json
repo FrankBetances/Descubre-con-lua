@@ -43,7 +43,8 @@
             "gl": "Quedar quieto coma unha estatua",
             "es": "Quedarse quieto como una estatua"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_statue"
         },
         {
           "id": "4_5.outubro.s1.reaction",
@@ -76,7 +77,8 @@
             "gl": "Levantar un dedo antes da orde",
             "es": "Levantar un dedo antes de la orden"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_command"
         },
         {
           "id": "4_5.outubro.s1.target",
@@ -484,7 +486,8 @@
             "gl": "Camiñar pola barra cos brazos abertos",
             "es": "Caminar por la barra con los brazos abiertos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_balance_beam"
         },
         {
           "id": "4_5.outubro.s3.stepping-stones",
@@ -583,7 +586,8 @@
             "gl": "Dar un paso longo",
             "es": "Dar un paso largo"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_step_across"
         },
         {
           "id": "4_5.outubro.s3.lean-forward",
@@ -846,7 +850,8 @@
             "gl": "Mover a cabeza ao ritmo",
             "es": "Mover la cabeza al ritmo"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_rhythmic"
         },
         {
           "id": "4_5.outubro.s4.steady-beat",
@@ -868,7 +873,8 @@
             "gl": "Bater máis rápido",
             "es": "Golpear más rápido"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_faster"
         },
         {
           "id": "4_5.outubro.s4.slower",
@@ -879,7 +885,8 @@
             "gl": "Bater máis amodo",
             "es": "Golpear más despacio"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_slower"
         },
         {
           "id": "4_5.outubro.s4.clap-after-me",

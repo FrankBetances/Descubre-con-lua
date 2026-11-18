@@ -601,7 +601,8 @@
             "gl": "Repartir cores no prato",
             "es": "Repartir colores en el plato"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_balance_a_plate"
         },
         {
           "id": "4_5.marzo.s3.nutritious",

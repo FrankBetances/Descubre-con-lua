@@ -66,7 +66,8 @@
             "gl": "Subir chanzos no sitio",
             "es": "Subir escalones en el sitio"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_steps"
         },
         {
           "id": "4_5.novembro.s1.panorama",

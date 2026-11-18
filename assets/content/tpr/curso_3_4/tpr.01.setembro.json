@@ -237,7 +237,8 @@
           "tprAction": {
             "gl": "Coller a man do compañeiro e camiñar xuntos",
             "es": "Coger la mano del compañero y caminar juntos"
-          }
+          },
+          "lamina": "pal_hand_in_hand"
         }
       ]
     },
