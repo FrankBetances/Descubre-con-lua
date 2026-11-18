@@ -268,3 +268,62 @@ Diagnóstico: `git log -S` sobre `escena`, `imaxe`, `Image.asset`, `pubspec.yaml
 - [x] Gate: falla si una escena del contenido no tiene imagen, si la lámina no existe o si no está en pubspec · evidencia: tools/check_imagenes_escenas.py, en tools/gates.sh
 - [x] Capturas gl/es de varios ejercicios con su imagen · evidencia: test/capturas_test.dart, «escena ·», escribe docs/capturas/escena-duolingo-gl.png y -es, escena-leccion-casa-gl/-es y escena-leccion-aula-gl/-es; más reto-semana-gl/-es
 - [x] Mergeado en main con CI en verde · evidencia: tools/check_imagenes_escenas.py ya corre en main: PR #48 mergeado (merge f83d8233, 11/11/2026) con el run 42957693645 de gates en verde sobre 49579fb5
+
+## O-20261118-1 · Hoy sin vacío, escenas que se entiendan y frases con apoyo visual
+Estado: abierta
+> Aqui hay un error ya te habia explicado que me gusto el diseño ux nuevo con los dias de la semana a la izquierda y el gato a la derecha, aunque me parece que se puede mejorar porque hay mucho espacio entre el gato y los días y da la sensación de vacio, luego cuando le doy clic al ejercicio, aparece un dibujo cutre que se entiende mal y cuando le doy a continuar las frases aparecen sin apoyo visual, a eso me refiero , ademas creo que te di una serie de repositorios para sacar imagenes
+> (mismo día, durante el trabajo) quizas hay que hacer mas grade el gato ya agregar algun accesorio
+Fuente: ninguna: los repositorios de imágenes que Frank dice haber dado no están escritos en este repositorio (buscado en docs/, referencias/, STATUS.md y git log); pendiente de que Frank los nombre. Estado actual mirado en docs/capturas/hoxe-familias-gl.png, escena-duolingo-gl.png y leccion-duolingo-paso-gl.png
+
+Camino: Na casa → Hoy (camino de días a la izquierda, Lúa a la derecha) → nodo del día (lección paso a paso) → Continuar.
+
+- [x] Na casa → Hoy: se conserva el diseño de días a la izquierda y Lúa a la derecha, sin el hueco vacío entre los dos (Lúa junto al camino, a 412×915), en gl y es · evidencia: test/features/ux_l3_test.dart («Lúa, grande, ao lado do camiño e con accesorios», gl y es) y docs/capturas/hoxe-familias-gl.png, hoxe-familias-es.png
+- [x] Lúa más grande en Hoy (de 64 a 112 de ancho) · evidencia: test/features/ux_l3_test.dart («Lúa, grande, ao lado do camiño e con accesorios», gl y es) y docs/capturas/hoxe-familias-gl.png, hoxe-familias-es.png
+> (18/11/2026) primero que nada arreglemos la pantalla, agrega accesorios al gato
+- [x] Lúa con accesorios en Hoy: flor en la cabeza y lazo rojo en el cuello (de Valeria, ya en el catálogo), salvo que el niño lleve puestos otros que ganó; definidos en premios_lua.json («deInicio») · evidencia: test/features/ux_l3_test.dart («Lúa, grande, ao lado do camiño e con accesorios», gl y es) y docs/capturas/hoxe-familias-gl.png, hoxe-familias-es.png
+- [ ] Al tocar el día: la imagen de la escena sale de los repositorios de imágenes que dio Frank y se entiende sin leer el texto (las 12 escenas) · evidencia:
+- [ ] Al pulsar Continuar: cada palabra o frase en inglés del paso lleva su imagen, de la misma fuente · evidencia:
+- [ ] Gate: falla si un paso de la lección con palabra o frase no tiene imagen · evidencia:
+- [ ] Capturas gl/es de Hoy, la escena y un paso con frase, al lado de la fuente · evidencia:
+- [ ] Mergeado en main con CI en verde · evidencia:
+
+## O-20261118-2 · Plan para que Antigravity ejecute lo pendiente; Claude Code lo revisa
+Estado: abierta
+> cuando termines, necesito que generes un plan para que antigravity ejecute todo el trabajo pendiente, tanto de las imagenes y el resto de trabajo pendiente, tu te encargaras de revisarlo cuando este listo
+Fuente: docs/ORDENES.md (criterios abiertos en main y en origin/feat/laminas-ejercicios), docs/FALLOS.md y las ramas de origin con trabajo fuera de main (feat/laminas-ejercicios, fix/dias-hoy, claude/charming-euler-9i23cj, claude/upbeat-fermi-3d0utp)
+
+- [x] docs/PLAN_ANTIGRAVITY.md: cada criterio abierto de cada orden, con su rama, sus pasos, su gate y cómo se da por hecho · evidencia: docs/PLAN_ANTIGRAVITY.md
+- [ ] Revisión de Claude Code de lo que entregue Antigravity, criterio por criterio, con los gates corridos y las capturas miradas · evidencia:
+
+## O-20261118-3 · Juegos de escucha y palabras (opción A), dentro de la lección y unidos al STEAM
+Estado: abierta
+> Por cierto me gustaría explorar la posibilidad de que descubre con lua integre ejercicios de logopedia como pares mínimos y expansión semántica mezclados con steam y el aprendizaje de inglés
+> Me gusta la opción A prepara el plan para que también lo asuma antigravity ahora
+Fuente: assets/content/unidades_mes/curso_4_5/unidade.01.json (campo «contraste»: un par mínimo por unidad con su nota gl/es, p. ej. pear/bear) y referencias/base/estrategias-apoyo-linguistico.txt (Estrategia 2: modelado sintáctico y expansión). Plan: docs/PLAN_ANTIGRAVITY.md, bloque 5
+
+Opción A, tal como la eligió Frank: estimulación del lenguaje universal y educativa, sin finalidad sanitaria (regla de producto de CLAUDE.md). Ni «logopedia», ni «terapia», ni «trastorno» en la app, en la ficha ni en documentos públicos.
+
+- [ ] Piloto en una unidad de 4-5 años (4 semanas): cada semana lleva un paso de pares mínimos en inglés con las dos imágenes, la voz de cada palabra y la nota para el adulto en gl/es, con palabras del STEAM de esa semana · evidencia:
+- [ ] Cada semana del piloto lleva un paso de expansión semántica de una palabra del STEAM: categoría, función, atributo y lugar, en inglés con significado gl/es y voz · evidencia:
+- [ ] Cada semana del piloto lleva un modelo de expansión gramatical para el adulto (el niño dice una palabra, el adulto la amplía), grabado · evidencia:
+- [ ] Gate: falla si una semana del piloto no tiene los tres pasos, si un par no difiere en un solo fonema, si una palabra no tiene imagen o voz, o si aparece «logopedia», «terapia» o «trastorno» en assets/, lib/ o docs/ públicos · evidencia:
+- [ ] Revisado por una logopeda o por Frank: los pares son válidos y adecuados a 4-5 años · evidencia:
+- [ ] Frank lo ve en la app (Na casa → Hoy → día → Continuar) en tres semanas y da el piloto por bueno antes de extenderlo a otras unidades o edades · evidencia:
+
+## O-20261118-4 · Un único plan que registre cada commit, para auditar paso a paso
+Estado: abierta
+> Por cierto genera un único plan que vaya guardando cada Commit para poder ir auditando al trabajo, paso por paso
+Fuente: docs/PLAN_ANTIGRAVITY.md (el plan de O-20261118-2 y O-20261118-3, ahora el único plan de lo pendiente)
+
+- [x] Un único plan con todos los pasos numerados (P0.1…P5.4), cada uno con su bloque y si para a esperar a Frank · evidencia: docs/PLAN_ANTIGRAVITY.md, «Pasos»
+- [x] Un registro de commits en el plan: paso, SHA, fecha, qué cambia en la app, gates, evidencia y revisión · evidencia: docs/PLAN_ANTIGRAVITY.md, «Registro de commits»
+- [x] Gate que tumba si un commit desde la base no empieza por su paso o no tiene fila, si una fila no tiene SHA, fecha, gates o evidencia, o si un SHA no está en la rama · evidencia: tools/check_registro_commits.py, en tools/gates.sh; probado el 18/11/2026 en una copia desde caca7cb5: falla sin fila, pasa con fila, falla con un commit sin paso. En CI (clon sin historia) solo comprueba la tabla, y lo dice
+- [ ] Usado por Antigravity en cada commit y auditado por Claude Code fila a fila · evidencia:
+
+## O-20261118-5 · Merge y push a main de lo de hoy
+Estado: abierta
+> mergea y push al main
+Fuente: ninguna: es la orden de integrar en main los commits de claude/upbeat-fermi-3d0utp (O-20261118-1 a O-20261118-4)
+
+- [ ] Rama subida, PR contra main y CI en verde antes del merge (primer run, 44322296728, rojo por Flutter 3.50.0; versión fijada a 3.47.9 en ci.yml) · evidencia:
+- [ ] Merge en main con su SHA · evidencia:

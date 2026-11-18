@@ -22,6 +22,10 @@ class CatalogoLua {
   final Map<String, LocalizedString> textos;
   final Map<String, LocalizedString> humor;
 
+  /// Accesorios con los que Lúa sale en Hoy si el niño no lleva otros
+  /// (O-20261118-1). Ranura (`head`, `neck`) → id del objeto.
+  final Map<String, String> deInicio;
+
   const CatalogoLua({
     required this.xpPorNivel,
     required this.niveis,
@@ -29,6 +33,7 @@ class CatalogoLua {
     required this.obxectos,
     required this.textos,
     required this.humor,
+    this.deInicio = const {},
   });
 
   static const assetPath = 'assets/content/premios/premios_lua.json';
@@ -81,6 +86,10 @@ class CatalogoLua {
       humor: {
         for (final e in (j['humor'] as Map).entries)
           e.key.toString(): _t(e.value),
+      },
+      deInicio: {
+        for (final e in ((j['deInicio'] as Map?) ?? const {}).entries)
+          e.key.toString(): e.value.toString(),
       },
     );
   }
