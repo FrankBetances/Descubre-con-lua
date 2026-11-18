@@ -62,6 +62,15 @@ if QUEJA.search(texto):
         "4) corregir el fallo; 5) mergear. tools/check_fallos.py tumba CI si "
         "una entrada no tiene guarda existente."
     )
+# F-20261118-3: una orden dada en otra sesión no estaba escrita y se repitió.
+if re.search(r"ya (se|lo|te) (discuti|habl|dij|apunt|repart)|otra sesi[oó]n|qued[oó] (todo )?apuntad|mil veces", texto, re.IGNORECASE):
+    mensaje += (
+        "\nFRANK DICE QUE YA SE HABLÓ: antes de responder o preguntar nada, "
+        "busca la orden en docs/ORDENES.md de todas las ramas y en el historial "
+        "de sesiones (list_sessions + list_events con kinds [\"user\"]). Si "
+        "la encuentras fuera del repo, cópiala literal en docs/ORDENES.md. No "
+        "le hagas repetir a Frank una decisión ya tomada."
+    )
 # F-20261118-2: una respuesta corta de Frank sobre algo legal o de licencia
 # («no tiene ánimo de lucro») se leyó al revés. Antes de actuar se repite.
 if re.search(r"lucro|comercial|licencia|gratis|de pago|cobrar", texto, re.IGNORECASE):
