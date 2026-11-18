@@ -290,14 +290,11 @@ FLUENT_DIRECTOS: dict[str, tuple[str, str, str, str]] = {
 # ── Banco directo dnizfor MIT (inspeccionadas una a una sin marcas/personajes)
 DNIZFOR_DIRECTOS: dict[str, tuple[str, str, str, str]] = {
     # clave_en: (slug, dnizfor_word, clasificacion, porque)
-    "sand": ("sand", "sand", "U", "Montículo de arena en la playa con pala y conchas."),
     "summer": ("summer", "summer", "U", "Escena de verano en la playa con sol brillante y niños bañándose."),
     "winter": ("winter", "winter", "U", "Paisaje de invierno con nieve, muñeco de nieve y niños abrigados."),
-    "temperature": ("temperature", "temperature", "U", "Termómetro contrastando calor y frío para enseñar temperatura."),
     "examine": ("examine", "examine", "U", "Niño examinando de cerca una mariquita con una lupa."),
     "stage": ("stage", "stage", "U", "Escenario de teatro con telón abierto y foco central."),
     "cliff": ("cliff", "cliff", "U", "Acantilado rocoso alto junto al mar."),
-    "protect": ("protect", "protect", "U", "Escudo protegiendo con cuidado una flor en el centro."),
     "muddy": ("muddy", "mud", "R", "Charco grande de barro salpicando: embarrado."),
     "windy": ("windy", "wind", "R", "Viento fuerte agitando árbol, cometa, molinillo y velero."),
 }
@@ -1420,6 +1417,48 @@ def _escenas_4_5() -> dict[str, tuple[str, str, list[dict], str]]:
         + fl("Coat", 42, 14, 68)
         + frecha((120, 72), (120, 24), VERDE_OSCURO, 4),
         "Abrigo cerrado con flecha hacia arriba indicando subir la cremallera.",
+    )
+    m["sand"] = (
+        "sand", "C",
+        [
+            R(0, 0, 160, 100, 0, "#e0f2fe"),
+            R(0, 54, 160, 22, 0, AGUA),
+            L("M0 57 Q20 51 40 57 Q60 63 80 57 Q100 51 120 57 Q140 63 160 57", AGUA_OSCURO, 2),
+            F("M0 68 Q75 56 160 66 L160 100 L0 100 Z", "#fde68a", "#d97706", 2.2),
+            F("M42 84 Q78 38 114 84 Z", "#fcd34d", "#d97706", 2.2),
+            E(68, 70, 1.5, 1.5, TIERRA),
+            E(84, 64, 1.5, 1.5, TIERRA),
+            E(92, 76, 1.5, 1.5, TIERRA),
+            E(20, 82, 1.5, 1.5, TIERRA),
+            E(136, 80, 1.5, 1.5, TIERRA),
+        ]
+        + fl("Sun", 12, 8, 22)
+        + fl("Spiral shell", 18, 60, 26)
+        + fl("Bucket", 104, 48, 34),
+        "Montículo de arena dorada en la playa con concha y cubo junto al mar, sin personajes.",
+    )
+    m["temperature"] = (
+        "temperature", "C",
+        [
+            R(0, 0, 80, 100, 0, "#fee2e2"),
+            R(80, 0, 80, 100, 0, "#e0f2fe"),
+            L("M80 0 L80 100", "#cbd5e1", 1.5),
+        ]
+        + fl("Sun", 14, 12, 26)
+        + fl("Fire", 14, 52, 30)
+        + fl("Snowflake", 120, 12, 26)
+        + fl("Ice", 116, 52, 30)
+        + fl("Thermometer", 48, 16, 64),
+        "Termómetro central entre calor (sol y fuego) y frío (copo de nieve y hielo): temperatura.",
+    )
+    m["protect"] = (
+        "protect", "C",
+        fondo_prado()
+        + gotas([(14, 18), (22, 42), (38, 12)])
+        + fl("Shield", 26, 18, 56)
+        + fl("Seedling", 88, 38, 36)
+        + fl("Blossom", 116, 48, 26),
+        "Escudo protegiendo un brote y una flor bajo la lluvia lateral, sin caras ni personajes.",
     )
     return m
 

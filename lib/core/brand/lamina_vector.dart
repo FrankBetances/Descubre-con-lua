@@ -116,7 +116,8 @@ class FormaLamina {
   }
 
   static PathFillType _reglaDe(Map<String, dynamic> m) {
-    final raw = (m['fr'] ?? m['regla'] ?? m['fillRule'])?.toString().toLowerCase();
+    final raw =
+        (m['fr'] ?? m['regla'] ?? m['fillRule'])?.toString().toLowerCase();
     return raw == 'evenodd' ? PathFillType.evenOdd : PathFillType.nonZero;
   }
 

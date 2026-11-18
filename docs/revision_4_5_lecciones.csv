@@ -1,6 +1,6 @@
 leccion_id,bloque,en,es,gl,gesto_es,clave,lamina_actual,categoria_fluent,fluent_flat,clasificacion,estado
 curso_4_5.01.1,xaSabe,Row your boat through the big waves,Rema en la barca entre las olas grandes,Rema na barca entre as ondas grandes,"Flexo-extensión alternada del tronco en pareja, cogidos de las manos.",row your boat through the big waves,pal_row_boat_waves,c,,C,revisado
-curso_4_5.01.1,xaSabe,Sand,Arena,Area,Pisar despacio como sobre arena caliente,sand,pal_sand,c,,U,revisado
+curso_4_5.01.1,xaSabe,Sand,Arena,Area,Pisar despacio como sobre arena caliente,sand,pal_sand,c,,C,revisado
 curso_4_5.01.1,xaSabe,Swim like a fast fish in the ría,Nada como un pez rápido en la ría,Nada coma un peixe rápido na ría,Desplazamiento por el suelo con brazada alternada de pecho.,swim like a fast fish in the ría,pal_swim_fast_fish,c,,C,revisado
 curso_4_5.01.1,xaSabe,Dive deep and find a white shell,Bucea hondo y busca una concha blanca,Mergúllate fondo e busca unha cuncha branca,Inmersión simulada y recogida de una concha del suelo.,dive deep and find a white shell,pal_dive_white_shell,c,,C,revisado
 curso_4_5.01.1,xaSabe,Crab,Cangrejo,Cangrexo,Abrir y cerrar los dedos como pinzas,crab,pal_crab,a,Crab,U,revisado
@@ -157,7 +157,7 @@ curso_4_5.04.2,xaSabe,Sun,Sol,Sol,Abrir los dedos de las manos como rayos de sol
 curso_4_5.04.2,novas,Colder,Más frío,Máis frío,Temblar más,colder,pal_colder,c,,C,revisado
 curso_4_5.04.2,novas,Frozen solid,Congelado del todo,Conxelado de todo,Quedarse rígido,frozen solid,pal_frozen_solid,c,,C,revisado
 curso_4_5.04.2,novas,Brightest,El más brillante,O máis brillante,Señalar la luz más brillante,brightest,pal_brightest,c,,C,revisado
-curso_4_5.04.2,novas,temperature,temperatura,temperatura,,temperature,pal_temperature,c,,U,revisado
+curso_4_5.04.2,novas,temperature,temperatura,temperatura,,temperature,pal_temperature,c,,C,revisado
 curso_4_5.04.2,fraseGramatica,Pick up the lens.,Coge la lupa.,Colle a lupa.,,pick up the lens,pal_pick_up_lens,b,Raised hand` + `Magnifying glass tilted left,C,revisado
 curso_4_5.04.3,xaSabe,Drum,Tambor,Tambor,Tocar un tambor imaginario en las piernas,drum,pal_drum,a,Drum,U,revisado
 curso_4_5.04.3,xaSabe,Night,Noche,Noite,Cerrar las manos delante de los ojos como cortinas,night,pal_night,a,Night with stars,R,revisado
@@ -166,7 +166,7 @@ curso_4_5.04.3,xaSabe,Sun,Sol,Sol,Abrir los dedos de las manos como rayos de sol
 curso_4_5.04.3,xaSabe,Colder,Más frío,Máis frío,Temblar más,colder,pal_colder,c,,C,revisado
 curso_4_5.04.3,xaSabe,Frozen solid,Congelado del todo,Conxelado de todo,Quedarse rígido,frozen solid,pal_frozen_solid,c,,C,revisado
 curso_4_5.04.3,xaSabe,Brightest,El más brillante,O máis brillante,Señalar la luz más brillante,brightest,pal_brightest,c,,C,revisado
-curso_4_5.04.3,xaSabe,temperature,temperatura,temperatura,,temperature,pal_temperature,c,,U,revisado
+curso_4_5.04.3,xaSabe,temperature,temperatura,temperatura,,temperature,pal_temperature,c,,C,revisado
 curso_4_5.04.3,novas,Dance freely while the drum sings,Baila libre mientras canta el tambor,Baila libre mentres canta o tambor,Desplazamiento libre por el espacio siguiendo el pulso del pandero.,dance freely while the drum sings,pal_dance_drum_sings,c,,C,revisado
 curso_4_5.04.3,novas,Cold winter night: curl up and do not move,Noche fría de invierno: acurrúcate y no te muevas,Noite fría de inverno: enróscate e non te movas,"Acurrucamiento en el suelo, inmóvil, con las manos bajo la mejilla.",cold winter night: curl up and do not move,pal_cold_winter_night_curl,c,,C,revisado
 curso_4_5.04.3,novas,Sunlight! Stand up and stretch tall,¡Luz del sol! Ponte de pie y estírate bien alto,Luz do sol! Ponte de pé e estírate ben alto,Incorporación lenta y extensión axial completa con los brazos arriba.,sunlight! stand up and stretch tall,pal_sunlight_stretch_tall,c,,C,revisado
@@ -175,7 +175,7 @@ curso_4_5.04.3,fraseGramatica,Look for a hair.,Busca un pelo.,Busca un pelo.,,lo
 curso_4_5.04.4,xaSabe,Colder,Más frío,Máis frío,Temblar más,colder,pal_colder,c,,C,revisado
 curso_4_5.04.4,xaSabe,Frozen solid,Congelado del todo,Conxelado de todo,Quedarse rígido,frozen solid,pal_frozen_solid,c,,C,revisado
 curso_4_5.04.4,xaSabe,Brightest,El más brillante,O máis brillante,Señalar la luz más brillante,brightest,pal_brightest,c,,C,revisado
-curso_4_5.04.4,xaSabe,temperature,temperatura,temperatura,,temperature,pal_temperature,c,,U,revisado
+curso_4_5.04.4,xaSabe,temperature,temperatura,temperatura,,temperature,pal_temperature,c,,C,revisado
 curso_4_5.04.4,xaSabe,Dance freely while the drum sings,Baila libre mientras canta el tambor,Baila libre mentres canta o tambor,Desplazamiento libre por el espacio siguiendo el pulso del pandero.,dance freely while the drum sings,pal_dance_drum_sings,c,,C,revisado
 curso_4_5.04.4,xaSabe,Cold winter night: curl up and do not move,Noche fría de invierno: acurrúcate y no te muevas,Noite fría de inverno: enróscate e non te movas,"Acurrucamiento en el suelo, inmóvil, con las manos bajo la mejilla.",cold winter night: curl up and do not move,pal_cold_winter_night_curl,c,,C,revisado
 curso_4_5.04.4,xaSabe,Sunlight! Stand up and stretch tall,¡Luz del sol! Ponte de pie y estírate bien alto,Luz do sol! Ponte de pé e estírate ben alto,Incorporación lenta y extensión axial completa con los brazos arriba.,sunlight! stand up and stretch tall,pal_sunlight_stretch_tall,c,,C,revisado
@@ -184,7 +184,7 @@ curso_4_5.04.4,novas,Thank you so much!,¡Muchísimas gracias!,Moitísimas graza
 curso_4_5.04.4,novas,I put on my boots because it is raining.,Me pongo las botas porque está lloviendo.,Poño as botas porque está chovendo.,Calzarse las botas y señalar la lluvia por la ventana,i put on my boots because it is raining,pal_boots_because_raining,c,,C,revisado
 curso_4_5.04.4,novas,"First we check the heart, then we wrap the bandage.",Primero miramos el corazón y después ponemos la venda.,Primeiro miramos o corazón e despois poñemos a venda.,,"first we check the heart, then we wrap the bandage",pal_first_heart_then_bandage,c,,C,revisado
 curso_4_5.04.4,fraseGramatica,Put the lens down gently.,Deja la lupa con cuidado.,Deixa a lupa con coidado.,,put the lens down gently,pal_put_lens_down,c,,C,revisado
-curso_4_5.05.1,xaSabe,temperature,temperatura,temperatura,,temperature,pal_temperature,c,,U,revisado
+curso_4_5.05.1,xaSabe,temperature,temperatura,temperatura,,temperature,pal_temperature,c,,C,revisado
 curso_4_5.05.1,xaSabe,Dance freely while the drum sings,Baila libre mientras canta el tambor,Baila libre mentres canta o tambor,Desplazamiento libre por el espacio siguiendo el pulso del pandero.,dance freely while the drum sings,pal_dance_drum_sings,c,,C,revisado
 curso_4_5.05.1,xaSabe,Cold winter night: curl up and do not move,Noche fría de invierno: acurrúcate y no te muevas,Noite fría de inverno: enróscate e non te movas,"Acurrucamiento en el suelo, inmóvil, con las manos bajo la mejilla.",cold winter night: curl up and do not move,pal_cold_winter_night_curl,c,,C,revisado
 curso_4_5.05.1,xaSabe,Sunlight! Stand up and stretch tall,¡Luz del sol! Ponte de pie y estírate bien alto,Luz do sol! Ponte de pé e estírate ben alto,Incorporación lenta y extensión axial completa con los brazos arriba.,sunlight! stand up and stretch tall,pal_sunlight_stretch_tall,c,,C,revisado
@@ -377,7 +377,7 @@ curso_4_5.09.2,novas,All together,Todos juntos,Todos xuntos,Darse las manos en c
 curso_4_5.09.2,novas,Fair,Justo,Xusto,Repartir en partes iguales,fair,pal_fair,c,,C,revisado
 curso_4_5.09.2,novas,Sturdy,Resistente,Resistente,Empujar la torre sin que caiga,sturdy,pal_sturdy,c,,D,revisado
 curso_4_5.09.2,novas,Brave and kind,Valiente y amable,Valente e amable,Poner el puño y luego la mano abierta,brave and kind,pal_brave_and_kind,c,,C,revisado
-curso_4_5.09.2,novas,protect,proteger,protexer,,protect,pal_protect,c,,U,revisado
+curso_4_5.09.2,novas,protect,proteger,protexer,,protect,pal_protect,c,,C,revisado
 curso_4_5.09.2,fraseGramatica,Your shadow might have grown.,Tu sombra puede haber crecido.,A túa sombra puido medrar.,,your shadow might have grown,pal_shadow_grown,c,,C,revisado
 curso_4_5.09.3,xaSabe,Whisper,Susurrar,Musitar,"Acercarse a la oreja de quien está al lado y hablar muy bajito, con la boca a la vista",whisper,pal_whisper,c,,D,revisado
 curso_4_5.09.3,xaSabe,Secret,"Secreto, secreta","Secreto, secreta",Llevarse el dedo a los labios y guiñar un ojo,secret,pal_secret,c,,R,revisado
@@ -386,7 +386,7 @@ curso_4_5.09.3,xaSabe,All together,Todos juntos,Todos xuntos,Darse las manos en 
 curso_4_5.09.3,xaSabe,Fair,Justo,Xusto,Repartir en partes iguales,fair,pal_fair,c,,C,revisado
 curso_4_5.09.3,xaSabe,Sturdy,Resistente,Resistente,Empujar la torre sin que caiga,sturdy,pal_sturdy,c,,D,revisado
 curso_4_5.09.3,xaSabe,Brave and kind,Valiente y amable,Valente e amable,Poner el puño y luego la mano abierta,brave and kind,pal_brave_and_kind,c,,C,revisado
-curso_4_5.09.3,xaSabe,protect,proteger,protexer,,protect,pal_protect,c,,U,revisado
+curso_4_5.09.3,xaSabe,protect,proteger,protexer,,protect,pal_protect,c,,C,revisado
 curso_4_5.09.3,novas,"Pull the rope together: one, two, three!","¡Tirad juntos de la cuerda: uno, dos, tres!","Tirade xuntos da corda: un, dous, tres!",Tracción cooperativa de la cuerda coordinada al conteo.,"pull the rope together: one, two, three",pal_pull_rope_together,c,,D,revisado
 curso_4_5.09.3,novas,Call your friend: come and help us!,Llama a tu amigo: ¡ven a ayudarnos!,Chama ao teu amigo: ven axudarnos!,Gesto amplio de llamada e incorporación de un nuevo niño a la cuerda.,call your friend: come and help us,pal_call_friend_help,c,,D,revisado
 curso_4_5.09.3,novas,Whisper the secret word to your friend,Dile al oído a tu amigo la palabra secreta,Dille ao oído ao teu amigo a palabra secreta,Susurro al oído del compañero sin que lo escuche el resto.,whisper the secret word to your friend,pal_whisper_secret_friend,c,,C,revisado
@@ -395,7 +395,7 @@ curso_4_5.09.3,novas,Evaporate,Evaporarse,Evaporarse,Subir despacio como vapor,e
 curso_4_5.09.3,fraseGramatica,We should have looked at the shadow earlier.,Deberíamos haber mirado la sombra antes.,Debiamos mirar a sombra antes.,,we should have looked at the shadow earlier,pal_looked_shadow_earlier,c,,C,revisado
 curso_4_5.09.4,xaSabe,Sturdy,Resistente,Resistente,Empujar la torre sin que caiga,sturdy,pal_sturdy,c,,D,revisado
 curso_4_5.09.4,xaSabe,Brave and kind,Valiente y amable,Valente e amable,Poner el puño y luego la mano abierta,brave and kind,pal_brave_and_kind,c,,C,revisado
-curso_4_5.09.4,xaSabe,protect,proteger,protexer,,protect,pal_protect,c,,U,revisado
+curso_4_5.09.4,xaSabe,protect,proteger,protexer,,protect,pal_protect,c,,C,revisado
 curso_4_5.09.4,xaSabe,"Pull the rope together: one, two, three!","¡Tirad juntos de la cuerda: uno, dos, tres!","Tirade xuntos da corda: un, dous, tres!",Tracción cooperativa de la cuerda coordinada al conteo.,"pull the rope together: one, two, three",pal_pull_rope_together,c,,D,revisado
 curso_4_5.09.4,xaSabe,Call your friend: come and help us!,Llama a tu amigo: ¡ven a ayudarnos!,Chama ao teu amigo: ven axudarnos!,Gesto amplio de llamada e incorporación de un nuevo niño a la cuerda.,call your friend: come and help us,pal_call_friend_help,c,,D,revisado
 curso_4_5.09.4,xaSabe,Whisper the secret word to your friend,Dile al oído a tu amigo la palabra secreta,Dille ao oído ao teu amigo a palabra secreta,Susurro al oído del compañero sin que lo escuche el resto.,whisper the secret word to your friend,pal_whisper_secret_friend,c,,C,revisado

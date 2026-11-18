@@ -54,7 +54,8 @@ void main() {
     expect(path.contains(const Offset(50, 50)), isFalse);
   });
 
-  test('registrarLicenzasTerceiros añade Fluent Emoji Flat e Iconify', () async {
+  test('registrarLicenzasTerceiros añade Fluent Emoji Flat e Iconify',
+      () async {
     registrarLicenzasTerceiros();
     final entries = await LicenseRegistry.licenses.toList();
     final pkgs = entries.expand((e) => e.packages).toSet();

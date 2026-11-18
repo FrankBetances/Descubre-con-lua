@@ -578,6 +578,48 @@ void main() {
         );
       });
     }
+
+    // O-20261111-4 (P2.21): 5 pasos de lección de curso_4_5 (3 compuestas,
+    // 1 Fluent directo y 1 frase de gramática), en gl y es.
+    for (final (n, nome) in [
+      (1, 'busy-bee'),
+      (2, 'land-softly'),
+      (3, 'sun-wakes'),
+      (4, 'hat'),
+      (5, 'if-blown'),
+    ]) {
+      testWidgets('lamina 4-5 · $nome · $l', (tester) async {
+        final lec = Leccions.lidas!.porId('curso_4_5', 'curso_4_5.07.3')!.$2;
+        await capturar(
+          tester,
+          'leccion-4-5-$nome-$l',
+          LeccionDuolingoScreen(
+            pasos: pasosDoDia(lec, 1, lang),
+            language: lang,
+            semana: CriancasStore.semana('curso_4_5', 3, 3),
+            palabrasDaSemana: [for (final p in lec.novas) p.en],
+            store: CriancasStore.enMemoria(const [
+              Crianza(id: 'c1', nome: 'Uxía', idade: 4, curso: 'curso_4_5'),
+            ]),
+            crianza: const Crianza(
+                id: 'c1', nome: 'Uxía', idade: 4, curso: 'curso_4_5'),
+            agora: DateTime(2026, 3, 16, 18),
+          ),
+          tema: AppTheme.temaFamilias,
+          antesDeRetratar: (t) async {
+            for (var i = 0; i < n; i++) {
+              await t.runAsync(() async {
+                await t.tap(find.byKey(const Key('leccion_continuar')));
+                await Future<void>.delayed(const Duration(milliseconds: 40));
+              });
+              await t.pumpAndSettle();
+            }
+            await t.runAsync(
+                () => Future<void>.delayed(const Duration(milliseconds: 120)));
+          },
+        );
+      });
+    }
     testWidgets('na casa · aviso dun día futuro · $l', (tester) async {
       await contidoDeHoxe(tester);
       // Noviembre se lee antes, con reloj de verdad: si lo pide la pantalla

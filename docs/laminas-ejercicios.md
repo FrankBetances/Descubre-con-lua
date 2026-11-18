@@ -111,7 +111,7 @@ Con lámina: 190. **Sin lámina todavía: 4188** (las cuenta y las nombra `pytho
 | Pick up the lens. | Colle a lupa. | Coge la lupa. | — | `pal_pick_up_lens` | composta | Lupa elevándose sobre la mesa con flecha hacia arriba: coge la lupa. |
 | Police officer | Policía | Policía | Hacer el gesto de parar | `pal_police_officer` | banco | Persona policía con gorra y uniforme, coincidencia directa. |
 | Pop out and dance around the fire | Sae e baila arredor do lume | Sal y baila alrededor del fuego | Estirada explosiva y baile circular alrededor de un punto central. | `pal_dance_around_fire` | composta | Dos niños bailando alegres con los brazos en alto alrededor de una hoguera. |
-| protect | protexer | proteger | — | `pal_protect` | banco | Escudo protegiendo con cuidado una flor en el centro. |
+| protect | protexer | proteger | — | `pal_protect` | composta | Escudo protegiendo un brote y una flor bajo la lluvia lateral, sin caras ni personajes. |
 | Pull the rope together: one, two, three! | Tirade xuntos da corda: un, dous, tres! | ¡Tirad juntos de la cuerda: uno, dos, tres! | Tracción cooperativa de la cuerda coordinada al conteo. | `pal_pull_rope_together` | nova | Tres niños alineados tirando juntos hacia la izquierda de una misma cuerda. |
 | Pull | Tirar de | Tirar de | Tirar de una cuerda imaginaria hacia uno mismo | `pal_pull` | nova | Niño inclinado hacia atrás agarrando y tirando con fuerza de una cuerda hacia sí. |
 | Put the lens down gently. | Deixa a lupa con coidado. | Deja la lupa con cuidado. | — | `pal_put_lens_down` | composta | Flecha suave hacia abajo indicando dejar la lupa sobre la mesa. |
@@ -123,7 +123,7 @@ Con lámina: 190. **Sin lámina todavía: 4188** (las cuenta y las nombra `pytho
 | Row your boat through the big waves | Rema na barca entre as ondas grandes | Rema en la barca entre las olas grandes | Flexo-extensión alternada del tronco en pareja, cogidos de las manos. | `pal_row_boat_waves` | composta | Persona remando en barca en medio de grandes olas (Fluent Flat combinado). |
 | Running makes it beat fast. | Correr faino latexar rápido. | Correr hace que lata rápido. | — | `pal_running_beats_fast` | composta | Niño corriendo acompañado de un corazón latiendo rápido. |
 | Rushing | Rápido e forte | Rápido y fuerte | Mover las manos muy rápido | `pal_rushing` | nova | Corriente rápida con espumas y flechas veloces avanzando con fuerza. |
-| Sand | Area | Arena | Pisar despacio como sobre arena caliente | `pal_sand` | banco | Montículo de arena en la playa con pala y conchas. |
+| Sand | Area | Arena | Pisar despacio como sobre arena caliente | `pal_sand` | composta | Montículo de arena dorada en la playa con concha y cubo junto al mar, sin personajes. |
 | School | Escola | Escuela | Dibujar en el aire el tejado de la escuela con las manos | `pal_school` | banco | Edificio de escuela con reloj y bandera, coincidencia directa. |
 | Seabird | Ave mariña | Ave marina | Planear con los brazos abiertos | `gaivota` | reutilizada | Gaviota de perfil del set propio sobre fondo marino: ave marina. |
 | Secret | Secreto, secreta | Secreto, secreta | Llevarse el dedo a los labios y guiñar un ojo | `pal_secret` | banco | Cara llevándose el dedo a los labios: secreto, igual que el gesto. |
@@ -149,7 +149,7 @@ Con lámina: 190. **Sin lámina todavía: 4188** (las cuenta y las nombra `pytho
 | Sunlight! Stand up and stretch tall | Luz do sol! Ponte de pé e estírate ben alto | ¡Luz del sol! Ponte de pie y estírate bien alto | Incorporación lenta y extensión axial completa con los brazos arriba. | `pal_sunlight_stretch_tall` | composta | Sol brillante iluminando al niño de pie estirando los brazos bien arriba. |
 | Sweeter | Máis doce | Más dulce | Sonreír más | `pal_sweeter` | composta | Tarro de miel y fresa madura juntos: más dulce. |
 | Swim like a fast fish in the ría | Nada coma un peixe rápido na ría | Nada como un pez rápido en la ría | Desplazamiento por el suelo con brazada alternada de pecho. | `pal_swim_fast_fish` | composta | Niño nadando a brazadas junto a un pez rápido en la ría. |
-| temperature | temperatura | temperatura | — | `pal_temperature` | banco | Termómetro contrastando calor y frío para enseñar temperatura. |
+| temperature | temperatura | temperatura | — | `pal_temperature` | composta | Termómetro central entre calor (sol y fuego) y frío (copo de nieve y hielo): temperatura. |
 | Thank you for everything | Grazas por todo | Gracias por todo | Poner la mano en el pecho | `pal_thank_you_everything` | composta | Niño llevando la mano al pecho junto a un gran corazón rojo: gracias por todo. |
 | Thank you so much! | Moitísimas grazas! | ¡Muchísimas gracias! | Juntar las manos y sonreír | `pal_thank_you_so_much` | banco | Dos manos juntas en señal de gratitud: coincide con el gesto. |
 | The bag that we used stayed dry. | A bolsa que usamos quedou seca. | La bolsa que usamos se quedó seca. | — | `pal_bag_stayed_dry` | composta | Mochila protegida bajo paraguas mientras la lluvia cae a los lados: se quedó seca. |
