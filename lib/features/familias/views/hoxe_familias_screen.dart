@@ -424,7 +424,7 @@ class _HoxeFamiliasScreenState extends State<HoxeFamiliasScreen> {
                       lua: xogo == null
                           ? null
                           : LuaValeria(
-                              ancho: 64,
+                              ancho: 112,
                               cabeza: xogo.cabeza,
                               pescozo: xogo.pescozo),
                     ),
