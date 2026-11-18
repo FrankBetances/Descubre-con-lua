@@ -285,7 +285,7 @@ Camino: Na casa → Hoy (camino de días a la izquierda, Lúa a la derecha) → 
 - [ ] Al pulsar Continuar: cada palabra o frase en inglés del paso lleva su imagen, de la misma fuente · evidencia:
 - [ ] Gate: falla si un paso de la lección con palabra o frase no tiene imagen · evidencia:
 - [ ] Capturas gl/es de Hoy, la escena y un paso con frase, al lado de la fuente · evidencia:
-- [ ] Mergeado en main con CI en verde · evidencia:
+- [x] Mergeado en main con CI en verde · evidencia: docs/ORDENES.md (PR #51, merge 429840b3, runs 44326670178 y 44326687729 en verde)
 
 ## O-20261118-2 · Plan para que Antigravity ejecute lo pendiente; Claude Code lo revisa
 Estado: abierta
@@ -321,9 +321,9 @@ Fuente: docs/PLAN_ANTIGRAVITY.md (el plan de O-20261118-2 y O-20261118-3, ahora 
 - [ ] Usado por Antigravity en cada commit y auditado por Claude Code fila a fila · evidencia:
 
 ## O-20261118-5 · Merge y push a main de lo de hoy
-Estado: abierta
+Estado: cumplida
 > mergea y push al main
 Fuente: ninguna: es la orden de integrar en main los commits de claude/upbeat-fermi-3d0utp (O-20261118-1 a O-20261118-4)
 
-- [ ] Rama subida, PR contra main y CI en verde antes del merge (primer run, 44322296728, rojo por Flutter 3.50.0; versión fijada a 3.47.9 en ci.yml) · evidencia:
-- [ ] Merge en main con su SHA · evidencia:
+- [x] Rama subida, PR contra main y CI en verde antes del merge (primer run, 44322296728, rojo por Flutter 3.50.0; versión fijada a 3.47.9 en ci.yml) · evidencia: .github/workflows/ci.yml (PR #51, runs 44326670178 (push) y 44326687729 (pull_request) en verde sobre 6d5303db)
+- [x] Merge en main con su SHA · evidencia: docs/ORDENES.md (merge 429840b3 del PR #51, 18/11/2026)
