@@ -29,7 +29,9 @@ referencia del bloque 2 es esa cifra nueva, no la de caca7cb5.
 | `claude/charming-euler-9i23cj` | 3653cacd | O-20261116-1: plan para que la app pese menos. Es solo un documento |
 
 **Una sola rama de trabajo:** `antigravity/pendiente`, creada desde
-`origin/feat/laminas-ejercicios`. Ningún otro agente toca esos ficheros
+`origin/feat/laminas-ejercicios` y con `origin/main` mezclado encima en P0.3
+(así trae el plan, lo de Lúa, la versión de Flutter fijada en CI y el gate del
+registro, que entran en `main` con el PR #51). Ningún otro agente toca esos ficheros
 mientras Antigravity trabaja. Claude Code no empuja nada a esa rama.
 
 ## Pasos (el único plan; cada commit lleva el identificador de su paso)
@@ -43,7 +45,7 @@ commit. Lo vigila `tools/check_registro_commits.py`, dentro de `tools/gates.sh`.
 | --- | --- | --- | --- |
 | P0.1 | Rescate: detectar y conservar el trabajo local sin subir | 0 | si aparece algo sin subir |
 | P0.2 | Crear `antigravity/pendiente` desde `origin/feat/laminas-ejercicios` e integrar lo útil del rescate | 0 | no |
-| P0.3 | Integrar O-20261118-1 (Lúa más grande, junto al camino y con accesorios) | 0 | no |
+| P0.3 | `git merge origin/main` (trae O-20261118-1, el plan y CI) y poner su SHA en «Base:» del registro | 0 | no |
 | P0.4 | Cerrar O-20261111-3 como absorbida | 0 | no |
 | P1.1 | Preguntar y anotar la fuente de las imágenes, con su licencia | 1 | **sí** |
 | P2.1 | Las 12 escenas de reto con la fuente nueva, capturas gl/es | 2 | **sí**: mira tres y aprueba el estilo |
@@ -66,8 +68,8 @@ commit. Lo vigila `tools/check_registro_commits.py`, dentro de `tools/gates.sh`.
 2. Crea `antigravity/pendiente` desde `origin/feat/laminas-ejercicios` y mete
    ahí lo útil del rescate, con los JSON de contenido regenerados con sus
    generadores, nunca copiados a mano.
-3. Mete los commits de O-20261118-1 desde `origin/claude/upbeat-fermi-3d0utp`
-   (`git log origin/main..origin/claude/upbeat-fermi-3d0utp`). **Choque
+3. Con el PR #51 ya en `main`, `git merge origin/main` en
+   `antigravity/pendiente` (merge, no rebase ni cherry-pick). **Choque
    esperado** en `lib/features/familias/widgets/learn_duolingo.dart`: 303be16e
    cambia cómo recibe el toque cada nodo y O-20261118-1 coloca a Lúa. Hay que
    quedarse con las dos cosas:
@@ -239,7 +241,7 @@ verificado.
 ## Revisión de Claude Code (lo que se comprobará)
 
 1. El «Registro de commits», fila a fila contra
-   `git log caca7cb5..origin/antigravity/pendiente`: que cada commit es su
+   `git log <Base>..origin/antigravity/pendiente`: que cada commit es su
    paso, que su diff solo toca lo de ese paso (regla 0a) y que la evidencia
    existe. Claude Code rellena la columna «Revisión».
 2. Corre en limpio `dart format`, `flutter analyze`, `flutter test` y
@@ -258,6 +260,10 @@ commit no puede llevar su propio SHA, la última fila pone «este» y el commit
 siguiente lo cambia por el SHA real. «Gates» es la línea final de
 `tools/gates.sh` (p. ej. «0 failed»); «Revisión» la rellena Claude Code al
 auditar («ok» o qué falla).
+
+La base es el commit de merge de P0.3: Antigravity cambia esta línea por su
+SHA en el primer commit después del merge. Desde ahí, cada commit lleva su
+paso y su fila; P0.1-P0.3 se cuentan en la entrega del bloque 0.
 
 Base: `caca7cb5`
 
