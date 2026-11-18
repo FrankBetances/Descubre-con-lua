@@ -130,14 +130,26 @@ def construir() -> dict:
             semanas.append({"semana": s + 1, "fase": FASES[s], "palabras": [w["en"] for w in sw]})
         frases = [w for w in palabras if elementos(w["en"]) == 2]
         cn = cancions[i]
-        canc = {"id": cn["id"], "gl": cn["titulo"]["gl"], "es": cn["titulo"]["es"]}
+        ck = cn["titulo"]["es"].lower().strip("!?. ")
+        canc = {
+            "id": cn["id"],
+            "gl": cn["titulo"]["gl"],
+            "es": cn["titulo"]["es"],
+            **({"lamina": LAMINAS_PAL[ck]["clave"]} if ck in LAMINAS_PAL else {}),
+        }
         en, gl, es = RIMAS[mes]
+        rk = en.lower().strip("!?. ")
         proxectos.append({
             "mesCalendario": mes,
             "proxecto": u["titulo"],
             "steam": u.get("steam"),
             "cancion": canc,
-            "rima": {"en": en, "gl": gl, "es": es},
+            "rima": {
+                "en": en,
+                "gl": gl,
+                "es": es,
+                **({"lamina": LAMINAS_PAL[rk]["clave"]} if rk in LAMINAS_PAL else {}),
+            },
             "palabras": palabras,
             "semanas": semanas,
             # Como falar: frases de dous elementos do propio proxecto, co seu

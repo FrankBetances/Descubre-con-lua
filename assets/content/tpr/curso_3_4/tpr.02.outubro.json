@@ -21,7 +21,8 @@
           "tprAction": {
             "gl": "Tocar a cabeza coas dúas mans",
             "es": "Tocar la cabeza con las dos manos"
-          }
+          },
+          "lamina": "cabeza"
         },
         {
           "id": "3_4.outubro.s1.shoulders",
@@ -54,7 +55,8 @@
           "tprAction": {
             "gl": "Tocar os dedos dos pés",
             "es": "Tocar los dedos de los pies"
-          }
+          },
+          "lamina": "pes"
         },
         {
           "id": "3_4.outubro.s1.freeze",
@@ -164,7 +166,8 @@
           "tprAction": {
             "gl": "Parar de golpe coas mans diante",
             "es": "Parar de golpe con las manos delante"
-          }
+          },
+          "lamina": "pal_stop"
         },
         {
           "id": "3_4.outubro.s1.turn",
@@ -186,7 +189,8 @@
           "tprAction": {
             "gl": "Abrir os brazos facéndose xigantes",
             "es": "Abrir los brazos haciéndose gigantes"
-          }
+          },
+          "lamina": "pal_big"
         },
         {
           "id": "3_4.outubro.s1.small",
@@ -197,7 +201,8 @@
           "tprAction": {
             "gl": "Encollerse coma unha formiguiña",
             "es": "Encogerse como una hormiguita"
-          }
+          },
+          "lamina": "pal_small"
         },
         {
           "id": "3_4.outubro.s1.up",
@@ -208,7 +213,8 @@
           "tprAction": {
             "gl": "Levantar as mans cara ao ceo",
             "es": "Alzar las manos hacia el cielo"
-          }
+          },
+          "lamina": "pal_up"
         },
         {
           "id": "3_4.outubro.s1.down",
@@ -219,7 +225,8 @@
           "tprAction": {
             "gl": "Agacharse ata tocar o chan",
             "es": "Agacharse hasta tocar el suelo"
-          }
+          },
+          "lamina": "pal_down"
         },
         {
           "id": "3_4.outubro.s1.clap",
@@ -230,7 +237,8 @@
           "tprAction": {
             "gl": "Bater as palmas ao pulso da asemblea",
             "es": "Dar palmadas al pulso de la asamblea"
-          }
+          },
+          "lamina": "pal_clap"
         }
       ]
     },
@@ -250,7 +258,8 @@
           "tprAction": {
             "gl": "Tocar a barriga cun dedo e rir",
             "es": "Tocarse la barriga con un dedo y reír"
-          }
+          },
+          "lamina": "barriga"
         },
         {
           "id": "3_4.outubro.s2.cheeks",

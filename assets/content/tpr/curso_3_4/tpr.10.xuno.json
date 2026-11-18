@@ -43,7 +43,8 @@
           "tprAction": {
             "gl": "Balancearse sentados coma nun barco",
             "es": "Balancearse sentados como en un barco"
-          }
+          },
+          "lamina": "barco"
         },
         {
           "id": "3_4.xuno.s1.fish",
@@ -54,7 +55,8 @@
           "tprAction": {
             "gl": "Abrir e pechar a boca coma un peixe",
             "es": "Abrir y cerrar la boca como un pez"
-          }
+          },
+          "lamina": "pal_fish"
         },
         {
           "id": "3_4.xuno.s1.seagull",

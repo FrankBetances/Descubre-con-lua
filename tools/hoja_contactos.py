@@ -197,14 +197,43 @@ def render_clave(clave: str, target_w: int = 200, target_h: int = 125) -> Image.
     return out
 
 
-def main() -> int:
-    curso = sys.argv[1] if len(sys.argv) > 1 else "curso_4_5"
-    lec = json.loads(LECCIONS_PATH.read_text(encoding="utf-8"))
-    mapa = json.loads(MAPA_PATH.read_text(encoding="utf-8"))["pezas"]
+def _recoger_items(modo: str) -> list[tuple[str, str, str]]:
+    items: list[tuple[str, str, str]] = []
+    seen: set[str] = set()
+    if modo == "acopros_0_2":
+        ac = json.loads((RAIZ / "assets/content/acopros/proxectos_0_2.json").read_text(encoding="utf-8"))
+        for p in ac["proxectos"]:
+            m = f"m{p['mesCalendario']:02d}"
+            for w in p["palabras"]:
+                k = w["en"].lower().strip(" .!?")
+                if k not in seen:
+                    seen.add(k)
+                    items.append((m, w["en"], w.get("lamina", "")))
+            ck = p["cancion"]["es"].lower().strip(" .!?")
+            if ck not in seen:
+                seen.add(ck)
+                items.append((f"{m}c", p["cancion"]["es"], p["cancion"].get("lamina", "")))
+            rk = p["rima"]["en"].lower().strip(" .!?")
+            if rk not in seen:
+                seen.add(rk)
+                items.append((f"{m}r", p["rima"]["en"], p["rima"].get("lamina", "")))
+        return items
+    if modo == "tpr" or modo.startswith("tpr_"):
+        tpr_dir = RAIZ / "assets/content/tpr"
+        sub = modo.replace("tpr_", "curso_") if modo.startswith("tpr_") else ""
+        files = sorted((tpr_dir / sub).glob("*.json")) if sub else sorted(tpr_dir.rglob("*.json"))
+        for fich in files:
+            d = json.loads(fich.read_text(encoding="utf-8"))
+            for s in d.get("semanas") or []:
+                for w in s.get("palabras") or []:
+                    k = w["en"].lower().strip(" .!?")
+                    if k not in seen:
+                        seen.add(k)
+                        items.append((w.get("id", "tpr")[-4:], w["en"], w.get("lamina", "")))
+        return items
 
-    items = []
-    seen = set()
-    for u in lec["cursos"][curso]["unidades"]:
+    lec = json.loads(LECCIONS_PATH.read_text(encoding="utf-8"))
+    for u in lec["cursos"][modo]["unidades"]:
         for l in u["leccions"]:
             for b in ("xaSabe", "novas", "repasa"):
                 for p in l.get(b) or []:
@@ -218,12 +247,18 @@ def main() -> int:
                 if k not in seen:
                     seen.add(k)
                     items.append((l["id"], f["en"], f.get("lamina", "")))
+    return items
+
+
+def main() -> int:
+    modo = sys.argv[1] if len(sys.argv) > 1 else "curso_4_5"
+    mapa = json.loads(MAPA_PATH.read_text(encoding="utf-8"))["pezas"]
+    items = _recoger_items(modo)
 
     cols = 10
     per_page = 100
     tile_w, tile_h = 220, 170
     font = ImageFont.load_default()
-    out_paths = []
     for pg_idx in range(0, len(items), per_page):
         chunk = items[pg_idx:pg_idx + per_page]
         rows = (len(chunk) + cols - 1) // cols
@@ -233,7 +268,7 @@ def main() -> int:
             c = idx % cols
             r = idx // cols
             x0, y0 = c * tile_w, r * tile_h
-            thumb = render_clave(clave, 200, 125)
+            thumb = render_clave(clave, 200, 125) if clave else Image.new("RGB", (200, 125), "#fee2e2")
             sheet.paste(thumb, (x0 + 10, y0 + 8))
             dr.rectangle([x0 + 2, y0 + 2, x0 + tile_w - 3, y0 + tile_h - 3], outline="#cbd5e1", width=1)
             m = mapa.get(en.lower().strip(" .!?"), {})
@@ -242,10 +277,9 @@ def main() -> int:
             dr.text((x0 + 8, y0 + 136), lbl1, fill="#0f172a", font=font)
             dr.text((x0 + 8, y0 + 150), lbl2, fill="#475569", font=font)
         pno = pg_idx // per_page + 1
-        out_p = RAIZ / f"docs/capturas/hoja_contactos_{curso}_p{pno}.png"
+        out_p = RAIZ / f"docs/capturas/hoja_contactos_{modo}_p{pno}.png"
         out_p.parent.mkdir(parents=True, exist_ok=True)
         sheet.save(out_p)
-        out_paths.append(str(out_p.relative_to(RAIZ)))
         print(f"OK {out_p.relative_to(RAIZ)} ({len(chunk)} láminas)")
     return 0
 

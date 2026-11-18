@@ -21,7 +21,8 @@
           "tprAction": {
             "gl": "Mover as mans coma se tocasen auga",
             "es": "Mover las manos como si tocaran agua"
-          }
+          },
+          "lamina": "auga"
         },
         {
           "id": "3_4.maio.s1.soap",
@@ -32,7 +33,8 @@
           "tprAction": {
             "gl": "Fregar un xabón imaxinario entre as mans",
             "es": "Frotar un jabón imaginario entre las manos"
-          }
+          },
+          "lamina": "pal_soap"
         },
         {
           "id": "3_4.maio.s1.towel",
@@ -43,7 +45,8 @@
           "tprAction": {
             "gl": "Secar as mans cunha toalla imaxinaria",
             "es": "Secarse las manos con una toalla imaginaria"
-          }
+          },
+          "lamina": "toalla"
         },
         {
           "id": "3_4.maio.s1.tap",
@@ -98,7 +101,8 @@
           "tprAction": {
             "gl": "Lavar unha boneca imaxinaria con coidado",
             "es": "Lavar una muñeca imaginaria con cuidado"
-          }
+          },
+          "lamina": "pal_wash"
         },
         {
           "id": "3_4.maio.s1.rub",
@@ -109,7 +113,8 @@
           "tprAction": {
             "gl": "Fregar as palmas unha contra a outra",
             "es": "Frotar las palmas una contra otra"
-          }
+          },
+          "lamina": "pal_rub"
         },
         {
           "id": "3_4.maio.s1.splash",
@@ -120,7 +125,8 @@
           "tprAction": {
             "gl": "Salpicar auga imaxinaria coas mans",
             "es": "Salpicar agua imaginaria con las manos"
-          }
+          },
+          "lamina": "charco"
         },
         {
           "id": "3_4.maio.s1.rinse",
@@ -479,7 +485,8 @@
           "tprAction": {
             "gl": "Partir un pan imaxinario coas dúas mans",
             "es": "Partir un pan imaginario con las dos manos"
-          }
+          },
+          "lamina": "pal_bread"
         },
         {
           "id": "3_4.maio.s3.milk",
@@ -556,7 +563,8 @@
           "tprAction": {
             "gl": "Comer cunha culler imaxinaria",
             "es": "Comer con una cuchara imaginaria"
-          }
+          },
+          "lamina": "pal_eat"
         },
         {
           "id": "3_4.maio.s3.drink",

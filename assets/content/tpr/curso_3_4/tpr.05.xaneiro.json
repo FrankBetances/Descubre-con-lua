@@ -199,7 +199,8 @@
           "tprAction": {
             "gl": "Poñer un gorro imaxinario ao escoitar a orde",
             "es": "Ponerse un gorro imaginario al oír la orden"
-          }
+          },
+          "lamina": "pal_put_on_your_hat"
         },
         {
           "id": "3_4.xaneiro.s1.zip-your-coat",
@@ -308,7 +309,8 @@
           "tprAction": {
             "gl": "Deixar caer unha pinga desde a punta do dedo",
             "es": "Dejar caer una gota desde la punta del dedo"
-          }
+          },
+          "lamina": "pal_drop"
         },
         {
           "id": "3_4.xaneiro.s2.street",
@@ -385,7 +387,8 @@
           "tprAction": {
             "gl": "Sacudir as mans coma se estivesen molladas",
             "es": "Sacudir las manos como si estuvieran mojadas"
-          }
+          },
+          "lamina": "pal_wet"
         },
         {
           "id": "3_4.xaneiro.s2.rainy",
@@ -582,7 +585,8 @@
           "tprAction": {
             "gl": "Dar un paso adiante ao escoitar a palabra",
             "es": "Dar un paso adelante al oír la palabra"
-          }
+          },
+          "lamina": "pal_go"
         },
         {
           "id": "3_4.xaneiro.s3.beep",

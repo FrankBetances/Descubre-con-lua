@@ -21,7 +21,8 @@
           "tprAction": {
             "gl": "Baixar as mans abaneando coma unha folla",
             "es": "Bajar las manos balanceándolas como una hoja"
-          }
+          },
+          "lamina": "pal_leaf"
         },
         {
           "id": "3_4.novembro.s1.tree",
@@ -131,7 +132,8 @@
           "tprAction": {
             "gl": "Agacharse e apañar algo do chan",
             "es": "Agacharse y recoger algo del suelo"
-          }
+          },
+          "lamina": "pal_pick_up"
         },
         {
           "id": "3_4.novembro.s1.sweep",
@@ -575,7 +577,8 @@
           "tprAction": {
             "gl": "Correr no sitio moi rápido",
             "es": "Correr en el sitio muy rápido"
-          }
+          },
+          "lamina": "pal_run"
         },
         {
           "id": "3_4.novembro.s3.creep",

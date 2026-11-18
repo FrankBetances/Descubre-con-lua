@@ -21,7 +21,8 @@
             "gl": "Sinalar a porta da escola ao chegar",
             "es": "Señalar la puerta de la escuela al llegar"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_nursery"
         },
         {
           "id": "0_2.setembro.s1.cot",
@@ -32,7 +33,8 @@
             "gl": "Pousar o bebé no berce con coidado",
             "es": "Dejar al bebé en la cuna con cuidado"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "vocab_60"
         },
         {
           "id": "0_2.setembro.s1.nappy",
@@ -43,7 +45,8 @@
             "gl": "Palmear suave o cueiro ao cambialo",
             "es": "Dar palmaditas suaves al pañal al cambiarlo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "vocab_61"
         },
         {
           "id": "0_2.setembro.s1.bib",
@@ -54,7 +57,8 @@
             "gl": "Atar o babeiro ao pescozo amodo",
             "es": "Atar el babero al cuello despacio"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_bib"
         },
         {
           "id": "0_2.setembro.s1.dummy",
@@ -65,7 +69,8 @@
             "gl": "Achegar o chupete e retiralo xogando",
             "es": "Acercar el chupete y retirarlo jugando"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_dummy"
         },
         {
           "id": "0_2.setembro.s1.lap",
@@ -76,7 +81,8 @@
             "gl": "Sentar o bebé no colo",
             "es": "Sentar al bebé en el regazo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_lap"
         },
         {
           "id": "0_2.setembro.s1.coat-hook",
@@ -87,7 +93,8 @@
             "gl": "Colgar a chaqueta no colgadoiro xuntos",
             "es": "Colgar la chaqueta en el perchero juntos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_coat_hook"
         },
         {
           "id": "0_2.setembro.s1.greet",
@@ -98,7 +105,8 @@
             "gl": "Inclinar a cabeza e sorrir ao bebé",
             "es": "Inclinar la cabeza y sonreír al bebé"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_greet"
         },
         {
           "id": "0_2.setembro.s1.cradle",
@@ -197,7 +205,8 @@
             "gl": "Acenar preto da cara do bebé",
             "es": "Saludar cerca de la cara del bebé"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_hello_little_one"
         },
         {
           "id": "0_2.setembro.s1.welcome",
@@ -230,7 +239,8 @@
             "gl": "Coller o bebé en brazos",
             "es": "Coger al bebé en brazos"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_in_my_arms"
         }
       ]
     },
@@ -250,7 +260,8 @@
             "gl": "Sinalar a foto do avó",
             "es": "Señalar la foto del abuelo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_grandad"
         },
         {
           "id": "0_2.setembro.s2.nanny",
@@ -327,7 +338,8 @@
             "gl": "Mandar un bico coa man",
             "es": "Mandar un beso con la mano"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_kiss_goodbye"
         },
         {
           "id": "0_2.setembro.s2.pick-up-baby",
@@ -556,7 +568,8 @@
             "gl": "Sorrir moi grande ao bebé",
             "es": "Sonreír muy grande al bebé"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "vocab_66"
         },
         {
           "id": "0_2.setembro.s3.gaze",
@@ -785,7 +798,8 @@
             "gl": "Cambiar o cueiro contando «un, dous»",
             "es": "Cambiar el pañal contando «uno, dos»"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_change"
         },
         {
           "id": "0_2.setembro.s4.lift",
@@ -796,7 +810,8 @@
             "gl": "Erguer o bebé por riba da cabeza",
             "es": "Alzar al bebé por encima de la cabeza"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_lift"
         },
         {
           "id": "0_2.setembro.s4.lay-down",

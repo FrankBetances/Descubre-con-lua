@@ -21,7 +21,8 @@
             "gl": "Sinalar o mar dende a area",
             "es": "Señalar el mar desde la arena"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "vigo_nat_99"
         },
         {
           "id": "0_2.xuno.s1.seaside",
@@ -32,7 +33,8 @@
             "gl": "Achegarse á beira co bebé",
             "es": "Acercarse a la orilla con el bebé"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_seaside"
         },
         {
           "id": "0_2.xuno.s1.tide",
@@ -43,7 +45,8 @@
             "gl": "Mover a man adiante e atrás",
             "es": "Mover la mano adelante y atrás"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_tide"
         },
         {
           "id": "0_2.xuno.s1.seaweed",
@@ -54,7 +57,8 @@
             "gl": "Tocar unha alga mollada",
             "es": "Tocar un alga mojada"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_seaweed"
         },
         {
           "id": "0_2.xuno.s1.beach-towel",
@@ -65,7 +69,8 @@
             "gl": "Tender a toalla na area",
             "es": "Extender la toalla en la arena"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_beach_towel"
         },
         {
           "id": "0_2.xuno.s1.parasol",
@@ -76,7 +81,8 @@
             "gl": "Facer sombra coa man",
             "es": "Hacer sombra con la mano"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_parasol"
         },
         {
           "id": "0_2.xuno.s1.salty-air",
@@ -87,7 +93,8 @@
             "gl": "Inspirar polo nariz",
             "es": "Inspirar por la nariz"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_salty_air"
         },
         {
           "id": "0_2.xuno.s1.paddle-in",
@@ -197,7 +204,8 @@
             "gl": "Acenar ao mar",
             "es": "Saludar al mar"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_hello_sea"
         },
         {
           "id": "0_2.xuno.s1.here-comes-a-wave",
@@ -208,7 +216,8 @@
             "gl": "Levantar os brazos coma unha onda",
             "es": "Levantar los brazos como una ola"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_here_comes_a_wave"
         },
         {
           "id": "0_2.xuno.s1.sand-on-my-feet",
@@ -250,7 +259,8 @@
             "gl": "Mover a man coma un peixiño",
             "es": "Mover la mano como un pececito"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_little_fish"
         },
         {
           "id": "0_2.xuno.s2.seahorse",
@@ -261,7 +271,8 @@
             "gl": "Facer un S co dedo",
             "es": "Hacer una S con el dedo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_seahorse"
         },
         {
           "id": "0_2.xuno.s2.jellyfish",
@@ -272,7 +283,8 @@
             "gl": "Abrir e pechar a man coma unha augamar",
             "es": "Abrir y cerrar la mano como una medusa"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_jellyfish"
         },
         {
           "id": "0_2.xuno.s2.fishing-net",
@@ -426,7 +438,8 @@
             "gl": "Mover a man coma un peixe",
             "es": "Mover la mano como un pez"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_swim_little_fish"
         },
         {
           "id": "0_2.xuno.s2.blub-blub-blub",
@@ -479,7 +492,8 @@
             "gl": "Estender a crema no brazo",
             "es": "Extender la crema en el brazo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_sun_cream"
         },
         {
           "id": "0_2.xuno.s3.sunshade",
@@ -490,7 +504,8 @@
             "gl": "Poñer o parasol no carriño",
             "es": "Poner el parasol en el cochecito"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_sunshade"
         },
         {
           "id": "0_2.xuno.s3.water-bottle",
@@ -708,7 +723,8 @@
             "gl": "Gardar un debuxo na caixa",
             "es": "Guardar un dibujo en la caja"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "vocab_56"
         },
         {
           "id": "0_2.xuno.s4.footprint",
@@ -719,7 +735,8 @@
             "gl": "Pisar pintura e deixar a pegada",
             "es": "Pisar pintura y dejar la huella"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_footprint"
         },
         {
           "id": "0_2.xuno.s4.handprint",
@@ -884,7 +901,8 @@
             "gl": "Acenar á porta da escola",
             "es": "Saludar a la puerta de la escuela"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_bye_bye_nursery"
         },
         {
           "id": "0_2.xuno.s4.see-you-after-summer",

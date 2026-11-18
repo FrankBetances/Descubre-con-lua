@@ -154,7 +154,8 @@
           "tprAction": {
             "gl": "Fregar os brazos coas mans cruzadas",
             "es": "Frotarse los brazos con las manos cruzadas"
-          }
+          },
+          "lamina": "pal_cold"
         },
         {
           "id": "3_4.decembro.s1.warm",
@@ -165,7 +166,8 @@
           "tprAction": {
             "gl": "Soprar nas mans e pousalas nas meixelas",
             "es": "Soplarse en las manos y ponerlas en las mejillas"
-          }
+          },
+          "lamina": "quente"
         },
         {
           "id": "3_4.decembro.s1.white",
@@ -559,7 +561,8 @@
           "tprAction": {
             "gl": "Tombar no chan e pechar os ollos",
             "es": "Tumbarse en el suelo y cerrar los ojos"
-          }
+          },
+          "lamina": "pal_sleep"
         },
         {
           "id": "3_4.decembro.s3.yawn",

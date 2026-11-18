@@ -273,7 +273,8 @@
           "tprAction": {
             "gl": "Facer unha bóla grande coas mans e rodala",
             "es": "Hacer una pelota grande con las manos y hacerla rodar"
-          }
+          },
+          "lamina": "vocab_45"
         },
         {
           "id": "3_4.setembro.s2.book",
@@ -318,7 +319,8 @@
           "tprAction": {
             "gl": "Debuxar unha caixa no aire e abrir a tapa",
             "es": "Dibujar una caja en el aire y abrir la tapa"
-          }
+          },
+          "lamina": "pal_box"
         },
         {
           "id": "3_4.setembro.s2.look",
@@ -615,7 +617,8 @@
           "tprAction": {
             "gl": "Acariñar o propio brazo moi amodo",
             "es": "Acariciarse el brazo muy despacio"
-          }
+          },
+          "lamina": "pal_soft"
         },
         {
           "id": "3_4.setembro.s3.gentle",

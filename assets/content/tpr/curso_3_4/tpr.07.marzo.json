@@ -480,7 +480,8 @@
           "tprAction": {
             "gl": "Coller unha mazá imaxinaria dunha póla alta",
             "es": "Coger una manzana imaginaria de una rama alta"
-          }
+          },
+          "lamina": "pal_apple"
         },
         {
           "id": "3_4.marzo.s3.banana",
@@ -557,7 +558,8 @@
           "tprAction": {
             "gl": "Dar unha trabadela pequena a unha mazá imaxinaria",
             "es": "Dar un mordisco pequeño a una manzana imaginaria"
-          }
+          },
+          "lamina": "pal_bite"
         },
         {
           "id": "3_4.marzo.s3.squeeze",

@@ -21,7 +21,8 @@
             "gl": "Meter os pés na piscina",
             "es": "Meter los pies en la piscina"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_paddling_pool"
         },
         {
           "id": "0_2.maio.s1.watering-pot",
@@ -43,7 +44,8 @@
             "gl": "Flotar un xoguete na auga",
             "es": "Flotar un juguete en el agua"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_bath_toy"
         },
         {
           "id": "0_2.maio.s1.ripples",
@@ -54,7 +56,8 @@
             "gl": "Mover un dedo na auga",
             "es": "Mover un dedo en el agua"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_ripples"
         },
         {
           "id": "0_2.maio.s1.water-tray",
@@ -65,7 +68,8 @@
             "gl": "Pousar as mans na bandexa",
             "es": "Posar las manos en la bandeja"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_water_tray"
         },
         {
           "id": "0_2.maio.s1.jug",
@@ -76,7 +80,8 @@
             "gl": "Encher a xerra e baleirala",
             "es": "Llenar la jarra y vaciarla"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_jug"
         },
         {
           "id": "0_2.maio.s1.funnel",
@@ -87,7 +92,8 @@
             "gl": "Verter auga polo funil",
             "es": "Verter agua por el embudo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_funnel"
         },
         {
           "id": "0_2.maio.s1.splash-about",
@@ -198,7 +204,8 @@
             "gl": "Bater na auga dúas veces",
             "es": "Golpear el agua dos veces"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_splish_splash"
         },
         {
           "id": "0_2.maio.s1.pour-it-out",
@@ -220,7 +227,8 @@
             "gl": "Amosar as mans molladas",
             "es": "Enseñar las manos mojadas"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_all_wet"
         },
         {
           "id": "0_2.maio.s1.water-on-my-toes",
@@ -251,7 +259,8 @@
             "gl": "Meter o bebé na bañeira amodo",
             "es": "Meter al bebé en la bañera despacio"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_baby_bath"
         },
         {
           "id": "0_2.maio.s2.washcloth",
@@ -262,7 +271,8 @@
             "gl": "Pasar a manopla polo brazo",
             "es": "Pasar la manopla por el brazo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_washcloth"
         },
         {
           "id": "0_2.maio.s2.bath-towel",
@@ -273,7 +283,8 @@
             "gl": "Envolver o bebé na toalla",
             "es": "Envolver al bebé en la toalla"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_bath_towel"
         },
         {
           "id": "0_2.maio.s2.hooded-towel",
@@ -427,7 +438,8 @@
             "gl": "Amosar a bañeira",
             "es": "Enseñar la bañera"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_bath_time"
         },
         {
           "id": "0_2.maio.s2.where-are-your-toes",
@@ -480,7 +492,8 @@
             "gl": "Secar as mans na toalla",
             "es": "Secar las manos en la toalla"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_hand_towel"
         },
         {
           "id": "0_2.maio.s3.soap-bar",
@@ -689,7 +702,8 @@
             "gl": "Amosar o xabón e logo a auga",
             "es": "Enseñar el jabón y luego el agua"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_soap_and_water"
         }
       ]
     },
@@ -709,7 +723,8 @@
             "gl": "Soprar pola variña",
             "es": "Soplar por la varita"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_bubble_wand"
         },
         {
           "id": "0_2.maio.s4.bubble-mixture",
@@ -720,7 +735,8 @@
             "gl": "Mollar a variña no bote",
             "es": "Mojar la varita en el bote"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_bubble_mixture"
         },
         {
           "id": "0_2.maio.s4.big-bubble",
@@ -731,7 +747,8 @@
             "gl": "Abrir os brazos coma unha burbulla",
             "es": "Abrir los brazos como una burbuja"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_big_bubble"
         },
         {
           "id": "0_2.maio.s4.bubble-machine",

@@ -779,7 +779,8 @@
           "tprAction": {
             "gl": "Coller unha pedra imaxinaria e pousala amodo",
             "es": "Coger una piedra imaginaria y dejarla despacio"
-          }
+          },
+          "lamina": "vigo_nat_118"
         },
         {
           "id": "3_4.abril.s4.chase",

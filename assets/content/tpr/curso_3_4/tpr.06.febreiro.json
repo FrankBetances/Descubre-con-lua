@@ -21,7 +21,8 @@
           "tprAction": {
             "gl": "Andar a catro patas arqueando as costas",
             "es": "Andar a cuatro patas arqueando la espalda"
-          }
+          },
+          "lamina": "pal_cat"
         },
         {
           "id": "3_4.febreiro.s1.dog",
@@ -32,7 +33,8 @@
           "tprAction": {
             "gl": "Poñer as mans coma orellas caídas",
             "es": "Poner las manos como orejas caídas"
-          }
+          },
+          "lamina": "pal_dog"
         },
         {
           "id": "3_4.febreiro.s1.rabbit",
