@@ -58,3 +58,13 @@ Formato de cada entrada (una por fallo):
 - Qué pasó: el run 44322296728 del PR #51 cayó en `flutter analyze` (186 avisos de `material.dart` obsoleto) y en la compilación del APK (Gradle 8.14.3 frente al mínimo 9.3.1) porque CI tomó Flutter 3.50.0, publicada después del último run en verde. El cambio del PR no tocaba nada de eso. `channel: stable` sin versión está en ci.yml desde d8b3de1b (22/9/2026, commit de github-actions[bot]); no consta quién lo escribió en origen.
 - Causa raíz: `.github/workflows/ci.yml` pedía «la última estable» sin versión, así que cualquier publicación de Flutter podía tumbar CI sin ningún commit.
 - Guarda: .github/workflows/ci.yml (flutter-version: 3.47.9 fijada, con el motivo escrito al lado; subir de versión pasa a ser una migración propia)
+
+## F-20261118-2 · Una respuesta de Frank sobre el ánimo de lucro, leída al revés
+- Qué pasó: Frank contestó «no tiene animo de lucro» a la pregunta de si Descubre con Lúa es no comercial. Claude Code lo tomó como «es no comercial», dio por válida ARASAAC (CC BY-NC-SA) y escribió un prompt para Antigravity con ese dato. Frank quería decir que sí tiene ánimo de lucro. Lo hizo Claude Code.
+- Causa raíz: Frank lo había dicho muchas veces, pero no estaba escrito en ningún fichero del repositorio, así que Claude Code lo preguntó otra vez; y la respuesta, que admitía dos lecturas, se ejecutó sin repetirla ni confirmarla.
+- Guarda: tools/check_licencias.py (en tools/gates.sh: falla si aparece una licencia NC/ND o ARASAAC en lo empaquetado, los créditos o pubspec; el ánimo de lucro queda escrito en CLAUDE.md como regla de producto) y .claude/hooks/orden_fuente.py (si el mensaje habla de lucro, comercial, licencia, gratis, de pago o cobrar, obliga a repetir en una línea cómo se ha entendido y pedir confirmación antes de actuar)
+
+## F-20261118-3 · La orden del banco de imágenes no estaba escrita y se volvió a discutir
+- Qué pasó: el 11/11 Frank dio la orden completa del banco de imágenes (cuatro fuentes, Fluent Flat, método U/R/C/D, bloques por edad) en otra sesión, que se cortó sin copiarla a docs/ORDENES.md. El 18/11 Claude Code no la buscó en el historial, propuso Fluent Color, ARASAAC y otras fuentes, y le hizo repetir decisiones ya tomadas. Lo hizo Claude Code.
+- Causa raíz: una orden dictada en una sesión que se corta no queda en el repositorio, y nada obligaba a buscar en el historial de sesiones antes de preguntar a Frank.
+- Guarda: .claude/hooks/orden_fuente.py (si Frank dice que algo ya se habló, se repartió o quedó apuntado, obliga a buscar la orden en docs/ORDENES.md y en el historial de sesiones con list_sessions/list_events antes de responder o preguntar)

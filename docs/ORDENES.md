@@ -333,7 +333,7 @@ Camino: Na casa → Hoy (camino de días a la izquierda, Lúa a la derecha) → 
 - [ ] Al pulsar Continuar: cada palabra o frase en inglés del paso lleva su imagen, de la misma fuente · evidencia:
 - [ ] Gate: falla si un paso de la lección con palabra o frase no tiene imagen · evidencia:
 - [ ] Capturas gl/es de Hoy, la escena y un paso con frase, al lado de la fuente · evidencia:
-- [ ] Mergeado en main con CI en verde · evidencia:
+- [x] Mergeado en main con CI en verde · evidencia: docs/ORDENES.md (PR #51, merge 429840b3, runs 44326670178 y 44326687729 en verde)
 
 ## O-20261118-2 · Plan para que Antigravity ejecute lo pendiente; Claude Code lo revisa
 Estado: abierta
@@ -369,9 +369,21 @@ Fuente: docs/PLAN_ANTIGRAVITY.md (el plan de O-20261118-2 y O-20261118-3, ahora 
 - [ ] Usado por Antigravity en cada commit y auditado por Claude Code fila a fila · evidencia:
 
 ## O-20261118-5 · Merge y push a main de lo de hoy
-Estado: abierta
+Estado: cumplida
 > mergea y push al main
 Fuente: ninguna: es la orden de integrar en main los commits de claude/upbeat-fermi-3d0utp (O-20261118-1 a O-20261118-4)
 
-- [ ] Rama subida, PR contra main y CI en verde antes del merge (primer run, 44322296728, rojo por Flutter 3.50.0; versión fijada a 3.47.9 en ci.yml) · evidencia:
-- [ ] Merge en main con su SHA · evidencia:
+- [x] Rama subida, PR contra main y CI en verde antes del merge (primer run, 44322296728, rojo por Flutter 3.50.0; versión fijada a 3.47.9 en ci.yml) · evidencia: .github/workflows/ci.yml (PR #51, runs 44326670178 (push) y 44326687729 (pull_request) en verde sobre 6d5303db)
+- [x] Merge en main con su SHA · evidencia: docs/ORDENES.md (merge 429840b3 del PR #51, 18/11/2026)
+
+## O-20261111-4 · El banco de imágenes: fuentes permitidas y método (orden dada en otra sesión)
+Estado: abierta
+> (Frank, 11/11/2026, sesión «Análisis de rama pedagógica») Sigue O-20261111-1 en feat/laminas-ejercicios (caca7cb5). ALCANCE: las 6.382 piezas de TODAS las edades (0-2, 2-3, 3-4, 4-5, 5-6, 6-7), las frases de gramática y el banco TPR. [...] FUENTES PERMITIDAS (solo estas): 1. Fluent Emoji Flat (MIT), la base. 2. Iconify, solo sets MIT, Apache o CC0; game-icons (CC BY 3.0) con crédito. 3. dnizfor/vocabulary-flashcard-dataset (MIT). Excluye cualquier imagen que se parezca a un personaje o marca. 4. Solo para escenas de apoyo: global-asp/pb-imagebank (CC BY 4.0), con crédito al ilustrador. Prohibido: BY-SA, NC, Flaticon, Freepik, Envato y emojis en los JSON. Fija el SHA de cada repo de origen y guarda su LICENSE en tools/banco/<fuente>/<sha>/. Los originales solo se usan al compilar y no van en el APK. MÉTODO, igual para cada edad: a) Banco: lo que existe tal cual o eligiendo otro dibujo (U/R). b) Composición: objetos del banco más pose de Fluent o la figura articulada en estilo plano (C). c) Propias: dibujo vectorial en estilo Lúa (D). [...] BLOQUE 1 · Conversor, mapa y gate (tools/banco_a_lamina.py, assets/content/laminas/palabras_laminas.json, créditos con LicenseRegistry, tools/check_banco_laminas.py). BLOQUES 2 a 7 · Una edad completa por bloque: 4-5, 0-2, 2-3, 3-4, 5-6 y 6-7. BLOQUE 8 · Banco TPR (4.000), agrupado por gesto. BLOQUE 9 · Cierre a 0 piezas sin lámina.
+> (18/11/2026) No me hagas perder más tiempo que ya esto se discutió y se repartió en otra sesión y quedó todo apuntado
+Fuente: ninguna: orden literal recuperada del historial de la sesión session_01JWGSxXCBGSNhrehHwDcMph (11/11/2026 17:48 UTC); los CSV que cita (docs/revision_4_5_lecciones.csv, docs/cobertura_fluent_distintas.csv, docs/candidatos_banco.csv) no están en ninguna rama de GitHub
+
+- [ ] Solo las cuatro fuentes permitidas; Fluent en estilo Flat (no Color); BY-SA, NC, Flaticon, Freepik y Envato fuera · evidencia:
+- [ ] SHA y LICENSE de cada fuente en tools/banco/<fuente>/<sha>/; créditos con LicenseRegistry, ATTRIBUTION.md y LICENSE.md · evidencia:
+- [ ] tools/banco_a_lamina.py, assets/content/laminas/palabras_laminas.json y tools/check_banco_laminas.py en tools/gates.sh · evidencia:
+- [ ] Cada edad completa a 0 piezas sin lámina, en el orden 4-5, 0-2, 2-3, 3-4, 5-6, 6-7, con hoja de contactos y capturas gl/es · evidencia:
+- [ ] Banco TPR (4.000) cubierto, agrupado por gesto · evidencia:
