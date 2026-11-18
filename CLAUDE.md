@@ -173,6 +173,7 @@ Este archivo importaba `.agents/rules/01-producto.md`, `02-flutter-android.md` y
 - sin permiso INTERNET en release;
 - nada con finalidad sanitaria;
 - contenido en JSON, nunca escrito en los widgets.
+- **la app tiene ánimo de lucro** (Frank, 18/11/2026). Ninguna imagen, fuente, sonido, paquete ni contenido de terceros con licencia no comercial (NC) o sin derivadas (ND): ni ARASAAC ni ningún CC BY-NC. Valen MIT, Apache 2.0, BSD, CC0, CC BY y OFL. No se le vuelve a preguntar a Frank. Lo comprueba `tools/check_licencias.py`.
 
 No edites `.agents/` sin autorización: es la configuración de Antigravity.
 
