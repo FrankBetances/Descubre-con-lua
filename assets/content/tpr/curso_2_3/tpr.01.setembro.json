@@ -98,7 +98,8 @@
             "gl": "Gardar un bloque no seu sitio",
             "es": "Guardar un bloque en su sitio"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_put_away"
         },
         {
           "id": "2_3.setembro.s1.line-up",
@@ -219,7 +220,8 @@
             "gl": "Colgar o abrigo",
             "es": "Colgar el abrigo"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_coat_on_the_peg"
         },
         {
           "id": "2_3.setembro.s1.back-in-the-box",
@@ -327,7 +329,8 @@
             "gl": "Pasar o xoguete ao seguinte",
             "es": "Pasar el juguete al siguiente"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_take_turns"
         },
         {
           "id": "2_3.setembro.s2.stack-up",
@@ -556,7 +559,8 @@
             "gl": "Agacharse e coller un xoguete",
             "es": "Agacharse y coger un juguete"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_pick_up_toys"
         },
         {
           "id": "2_3.setembro.s3.roll-up",
@@ -567,7 +571,8 @@
             "gl": "Enrolar a esteira amodo",
             "es": "Enrollar la esterilla despacio"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_roll_up"
         },
         {
           "id": "2_3.setembro.s3.wipe-the-table",
@@ -785,7 +790,8 @@
             "gl": "Collerse das mans en círculo",
             "es": "Cogerse de las manos en círculo"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_hold_hands"
         },
         {
           "id": "2_3.setembro.s4.pass-the-ball",
@@ -796,7 +802,8 @@
             "gl": "Pasar a pelota ao da beira",
             "es": "Pasar la pelota al de al lado"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_pass_the_ball"
         },
         {
           "id": "2_3.setembro.s4.invite",
@@ -807,7 +814,8 @@
             "gl": "Chamar a un amigo coa man",
             "es": "Llamar a un amigo con la mano"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_invite"
         },
         {
           "id": "2_3.setembro.s4.help-a-friend",
@@ -884,7 +892,8 @@
             "gl": "Acenar a un compañeiro",
             "es": "Saludar a un compañero"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_hello_friend"
         },
         {
           "id": "2_3.setembro.s4.sit-with-me",
@@ -917,7 +926,8 @@
             "gl": "Facer un círculo coas mans",
             "es": "Hacer un círculo con las manos"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_friends_in_a_circle"
         }
       ]
     }

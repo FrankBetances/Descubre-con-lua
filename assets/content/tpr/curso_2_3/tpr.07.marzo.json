@@ -109,7 +109,8 @@
             "gl": "Buscar un círculo na sala",
             "es": "Buscar un círculo en la sala"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_find_the_shape"
         },
         {
           "id": "2_3.marzo.s1.slot-in",
@@ -153,7 +154,8 @@
             "gl": "Tocar a punta dun triángulo",
             "es": "Tocar la punta de un triángulo"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_pointed"
         },
         {
           "id": "2_3.marzo.s1.curved",
@@ -382,7 +384,8 @@
             "gl": "Cheirar e sorrir",
             "es": "Oler y sonreír"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_fruity"
         },
         {
           "id": "2_3.marzo.s2.refreshing",
@@ -611,7 +614,8 @@
             "gl": "Bater no cubo",
             "es": "Golpear el cubo"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_solid"
         },
         {
           "id": "2_3.marzo.s3.hollow",
@@ -622,7 +626,8 @@
             "gl": "Mirar dentro do tubo",
             "es": "Mirar dentro del tubo"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_hollow"
         },
         {
           "id": "2_3.marzo.s3.rolly",
@@ -688,7 +693,8 @@
             "gl": "Amosar unha bóla e unha táboa",
             "es": "Enseñar una bola y una tabla"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_round_and_flat"
         }
       ]
     },
@@ -840,7 +846,8 @@
             "gl": "Sinalar as cores do prato",
             "es": "Señalar los colores del plato"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_colourful_plate"
         },
         {
           "id": "2_3.marzo.s4.crispy",
@@ -851,7 +858,8 @@
             "gl": "Morder algo crocante",
             "es": "Morder algo crujiente"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_crispy"
         },
         {
           "id": "2_3.marzo.s4.healthy",
@@ -862,7 +870,8 @@
             "gl": "Tocar a barriga e sorrir",
             "es": "Tocar la barriga y sonreír"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_healthy"
         },
         {
           "id": "2_3.marzo.s4.leftover",
@@ -906,7 +915,8 @@
             "gl": "Amosar o tomate",
             "es": "Enseñar el tomate"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_red_tomato"
         },
         {
           "id": "2_3.marzo.s4.carrots-and-cucumbers",

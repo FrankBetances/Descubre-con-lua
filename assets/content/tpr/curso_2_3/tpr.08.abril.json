@@ -98,7 +98,8 @@
             "gl": "Deitarse e mirar o ceo",
             "es": "Tumbarse y mirar el cielo"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_lie_on_the_grass"
         },
         {
           "id": "2_3.abril.s1.roll-down",
@@ -131,7 +132,8 @@
             "gl": "Soprar un dente de león",
             "es": "Soplar un diente de león"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_blow_seeds"
         },
         {
           "id": "2_3.abril.s1.tickle-toes",
@@ -175,7 +177,8 @@
             "gl": "Soprar suave",
             "es": "Soplar suave"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_fluffy_seeds"
         },
         {
           "id": "2_3.abril.s1.fresh-green",
@@ -327,7 +330,8 @@
             "gl": "Asubiar baixiño",
             "es": "Silbar bajito"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_whistle_a_tune"
         },
         {
           "id": "2_3.abril.s2.perch",
@@ -556,7 +560,8 @@
             "gl": "Dicir unha palabra moi baixo",
             "es": "Decir una palabra muy bajo"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_speak_softly"
         },
         {
           "id": "2_3.abril.s3.tiptoe-around",
@@ -567,7 +572,8 @@
             "gl": "Camiñar de puntas arredor",
             "es": "Caminar de puntillas alrededor"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_tiptoe_around"
         },
         {
           "id": "2_3.abril.s3.close-the-book",
@@ -655,7 +661,8 @@
             "gl": "Poñer o dedo nos beizos",
             "es": "Poner el dedo en los labios"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_shh_baby_s_sleeping"
         },
         {
           "id": "2_3.abril.s3.whisper-to-me",
@@ -688,7 +695,8 @@
             "gl": "Falar forte e despois baixo",
             "es": "Hablar fuerte y luego bajo"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_from_loud_to_quiet"
         }
       ]
     },
@@ -785,7 +793,8 @@
             "gl": "Entrelazar os dedos",
             "es": "Entrelazar los dedos"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_build_a_nest"
         },
         {
           "id": "2_3.abril.s4.crack-out",
@@ -796,7 +805,8 @@
             "gl": "Saír dunha bóla co corpo",
             "es": "Salir de una bola con el cuerpo"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_come_out_of_the_egg"
         },
         {
           "id": "2_3.abril.s4.keep-warm",
@@ -807,7 +817,8 @@
             "gl": "Tapar o ovo coas mans",
             "es": "Tapar el huevo con las manos"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_keep_warm"
         },
         {
           "id": "2_3.abril.s4.chirp",

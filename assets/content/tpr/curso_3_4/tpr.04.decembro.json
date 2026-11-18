@@ -595,7 +595,8 @@
           "tprAction": {
             "gl": "Abrir os ollos de golpe e sentar",
             "es": "Abrir los ojos de golpe y sentarse"
-          }
+          },
+          "lamina": "pal_wake_up"
         },
         {
           "id": "3_4.decembro.s3.cuddle",

@@ -98,7 +98,8 @@
             "gl": "Agacharse dobrando os xeonllos",
             "es": "Agacharse doblando las rodillas"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_bend_knees"
         },
         {
           "id": "2_3.outubro.s1.jump-up-high",
@@ -197,7 +198,8 @@
             "gl": "Tocar os xeonllos",
             "es": "Tocar las rodillas"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_touch_your_knees"
         },
         {
           "id": "2_3.outubro.s1.how-high-can-you-jump",
@@ -327,7 +329,8 @@
             "gl": "Xirar sobre un pé",
             "es": "Girar sobre un pie"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_spin_around"
         },
         {
           "id": "2_3.outubro.s2.turn-back",
@@ -512,7 +515,8 @@
             "gl": "Parar ao ver a tarxeta vermella",
             "es": "Parar al ver la tarjeta roja"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_red_card"
         },
         {
           "id": "2_3.outubro.s3.green-card",
@@ -556,7 +560,8 @@
             "gl": "Correr uns pasos rápidos",
             "es": "Correr unos pasos rápidos"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_dash"
         },
         {
           "id": "2_3.outubro.s3.halt",
@@ -567,7 +572,8 @@
             "gl": "Parar coas mans arriba",
             "es": "Pararse con las manos arriba"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_halt"
         },
         {
           "id": "2_3.outubro.s3.zoom",
@@ -785,7 +791,8 @@
             "gl": "Arrastrar os pés bailando",
             "es": "Arrastrar los pies bailando"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_shuffle"
         },
         {
           "id": "2_3.outubro.s4.sway-hips",
@@ -796,7 +803,8 @@
             "gl": "Mover as cadeiras ao ritmo",
             "es": "Mover las caderas al ritmo"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_sway_hips"
         },
         {
           "id": "2_3.outubro.s4.step-forward",
@@ -807,7 +815,8 @@
             "gl": "Dar un paso cara adiante",
             "es": "Dar un paso hacia adelante"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_step_forward"
         },
         {
           "id": "2_3.outubro.s4.step-back",
@@ -906,7 +915,8 @@
             "gl": "Bailar e parar de súpeto",
             "es": "Bailar y parar de golpe"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_dance_and_freeze"
         },
         {
           "id": "2_3.outubro.s4.one-step-two-steps",

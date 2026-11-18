@@ -21,7 +21,8 @@
             "gl": "Poñer as mans coma poutas de tigre",
             "es": "Poner las manos como garras de tigre"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_tiger"
         },
         {
           "id": "2_3.febreiro.s1.zebra",
@@ -250,7 +251,8 @@
             "gl": "Apartar follas coas mans",
             "es": "Apartar hojas con las manos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_jungle"
         },
         {
           "id": "2_3.febreiro.s2.hippo",
@@ -479,7 +481,8 @@
             "gl": "Camiñar pesado e amodo",
             "es": "Caminar pesado y despacio"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_polar_bear"
         },
         {
           "id": "2_3.febreiro.s3.seal",
@@ -490,7 +493,8 @@
             "gl": "Bater as mans coma aletas",
             "es": "Golpear las manos como aletas"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_seal"
         },
         {
           "id": "2_3.febreiro.s3.walrus",
@@ -501,7 +505,8 @@
             "gl": "Poñer dous dedos coma cairos",
             "es": "Poner dos dedos como colmillos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_walrus"
         },
         {
           "id": "2_3.febreiro.s3.arctic-fox",
@@ -708,7 +713,8 @@
             "gl": "Camiñar en fila coma animais",
             "es": "Caminar en fila como animales"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_animal_parade"
         },
         {
           "id": "2_3.febreiro.s4.face-mask",
@@ -719,7 +725,8 @@
             "gl": "Poñer e quitar a careta",
             "es": "Poner y quitar la careta"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "careta"
         },
         {
           "id": "2_3.febreiro.s4.animal-tail",
@@ -730,7 +737,8 @@
             "gl": "Menear o rabo do disfrace",
             "es": "Menear la cola del disfraz"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_animal_tail"
         },
         {
           "id": "2_3.febreiro.s4.horns",
@@ -818,7 +826,8 @@
             "gl": "Bater os brazos coma ás",
             "es": "Batir los brazos como alas"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_flap_wings"
         },
         {
           "id": "2_3.febreiro.s4.wiggle-a-tail",

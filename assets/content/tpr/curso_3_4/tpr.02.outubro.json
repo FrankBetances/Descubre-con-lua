@@ -67,7 +67,8 @@
           "tprAction": {
             "gl": "Parar en seco e quedar inmóbiles coma estatuas",
             "es": "Parar en seco y quedarse inmóviles como estatuas"
-          }
+          },
+          "lamina": "pal_freeze"
         },
         {
           "id": "3_4.outubro.s1.eyes",

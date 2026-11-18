@@ -21,7 +21,8 @@
             "gl": "Facer unha vela coas mans",
             "es": "Hacer una vela con las manos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_sailing_boat"
         },
         {
           "id": "2_3.xuno.s1.rowing-boat",
@@ -175,7 +176,8 @@
             "gl": "Pasar a man plana",
             "es": "Pasar la mano plana"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_calm_sea"
         },
         {
           "id": "2_3.xuno.s1.sailing-along",
@@ -250,7 +252,8 @@
             "gl": "Sentarse no areeiro",
             "es": "Sentarse en el arenero"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_sandpit"
         },
         {
           "id": "2_3.xuno.s2.mould",
@@ -479,7 +482,8 @@
             "gl": "Mirar un cristal á luz",
             "es": "Mirar un cristal a la luz"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_sea_glass"
         },
         {
           "id": "2_3.xuno.s3.driftwood",
@@ -490,7 +494,8 @@
             "gl": "Coller un pau da praia",
             "es": "Coger un palo de la playa"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_driftwood"
         },
         {
           "id": "2_3.xuno.s3.cockle",
@@ -708,7 +713,8 @@
             "gl": "Poñer o chapeu e sorrir",
             "es": "Ponerse el sombrero y sonreír"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_summer_hat"
         },
         {
           "id": "2_3.xuno.s4.flip-flops",
@@ -719,7 +725,8 @@
             "gl": "Camiñar facendo «flip flop»",
             "es": "Caminar haciendo «flip flop»"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_flip_flops"
         },
         {
           "id": "2_3.xuno.s4.beach-ball-game",
@@ -730,7 +737,8 @@
             "gl": "Pasar a pelota a un amigo",
             "es": "Pasar la pelota a un amigo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_beach_ball_game"
         },
         {
           "id": "2_3.xuno.s4.ice-lolly",
@@ -785,7 +793,8 @@
             "gl": "Acenar dende a porta",
             "es": "Saludar desde la puerta"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_wave_goodbye"
         },
         {
           "id": "2_3.xuno.s4.give-a-card",

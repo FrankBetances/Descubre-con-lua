@@ -921,7 +921,8 @@
           "tprAction": {
             "gl": "Correr amodo cos brazos abertos coma un paxaro",
             "es": "Correr despacio con los brazos abiertos como un pájaro"
-          }
+          },
+          "lamina": "pal_fly_like_a_bird"
         }
       ]
     }

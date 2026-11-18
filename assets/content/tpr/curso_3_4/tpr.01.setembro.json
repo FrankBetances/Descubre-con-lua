@@ -21,7 +21,8 @@
           "tprAction": {
             "gl": "Saudar coa man aberta ao entrar no círculo",
             "es": "Saludar con la mano abierta al entrar en el círculo"
-          }
+          },
+          "lamina": "pal_hello"
         },
         {
           "id": "3_4.setembro.s1.friend",

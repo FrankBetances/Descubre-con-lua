@@ -199,7 +199,8 @@
           "tprAction": {
             "gl": "Balancear as mans moi suave, de lado a lado",
             "es": "Balancear las manos muy suave, de lado a lado"
-          }
+          },
+          "lamina": "pal_gentle_waves"
         },
         {
           "id": "3_4.xuno.s1.big-waves",

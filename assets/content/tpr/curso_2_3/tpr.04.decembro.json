@@ -32,7 +32,8 @@
             "gl": "Poñer as botas de goma",
             "es": "Ponerse las botas de goma"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "botas"
         },
         {
           "id": "2_3.decembro.s1.rain-hat",
@@ -98,7 +99,8 @@
             "gl": "Saltar dentro da poza",
             "es": "Saltar dentro del charco"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_jump_in"
         },
         {
           "id": "2_3.decembro.s1.jump-out",
@@ -327,7 +329,8 @@
             "gl": "Baixar os brazos rápido",
             "es": "Bajar los brazos rápido"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_pour_down"
         },
         {
           "id": "2_3.decembro.s2.rumble",
@@ -449,7 +452,8 @@
             "gl": "Buscar coa man na fronte",
             "es": "Buscar con la mano en la frente"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_wheres_the_sun"
         },
         {
           "id": "2_3.decembro.s2.under-the-table",
@@ -557,7 +561,8 @@
             "gl": "Tirar do xersei cara abaixo",
             "es": "Tirar del jersey hacia abajo"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_pull_on"
         },
         {
           "id": "2_3.decembro.s3.zip-up",
@@ -568,7 +573,8 @@
             "gl": "Subir a cremalleira ata arriba",
             "es": "Subir la cremallera hasta arriba"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_zip_up"
         },
         {
           "id": "2_3.decembro.s3.put-arms-in",
@@ -678,7 +684,8 @@
             "gl": "Subir a cremalleira",
             "es": "Subir la cremallera"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_zip_it_up"
         },
         {
           "id": "2_3.decembro.s3.hands-in-pockets",
@@ -786,7 +793,8 @@
             "gl": "Fregar as mans preto do radiador",
             "es": "Frotar las manos cerca del radiador"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_get_warm"
         },
         {
           "id": "2_3.decembro.s4.sip-slowly",
@@ -797,7 +805,8 @@
             "gl": "Beber a grolos pequenos",
             "es": "Beber a sorbos pequeños"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_sip_slowly"
         },
         {
           "id": "2_3.decembro.s4.curl-up-on-the-sofa",
@@ -808,7 +817,8 @@
             "gl": "Encollerse no sofá",
             "es": "Acurrucarse en el sofá"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_curl_up_on_the_sofa"
         },
         {
           "id": "2_3.decembro.s4.turn-the-page",

@@ -443,7 +443,8 @@
           "tprAction": {
             "gl": "Lavar a cara con auga imaxinaria",
             "es": "Lavarse la cara con agua imaginaria"
-          }
+          },
+          "lamina": "pal_wash_your_face"
         },
         {
           "id": "3_4.maio.s2.in-the-bath",
