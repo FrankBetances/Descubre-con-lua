@@ -150,6 +150,18 @@ class _CreditsScreenState extends State<CreditsScreen> {
         'La licencia viaja en el paquete, en assets/fonts/OFL.txt.',
   );
 
+  static const _imagesKicker = LocalizedString(
+    gl: 'AS IMAXES',
+    es: 'LAS IMÁGENES',
+  );
+
+  static const _fluentEmojiDesc = LocalizedString(
+    gl: 'Copyright (c) Microsoft Corporation. Licenza MIT. '
+        'Licenza no paquete: assets/third_party/fluentui-emoji/LICENSE.',
+    es: 'Copyright (c) Microsoft Corporation. Licencia MIT. '
+        'Licencia en el paquete: assets/third_party/fluentui-emoji/LICENSE.',
+  );
+
   static const _contactKicker = LocalizedString(gl: 'CONTACTO', es: 'CONTACTO');
 
   @override
@@ -324,6 +336,15 @@ class _CreditsScreenState extends State<CreditsScreen> {
                     child: _Entry(
                       name: 'Nunito',
                       detail: _nunitoDesc.resolve(currentLanguage),
+                    ),
+                  ),
+                  const SizedBox(height: AppTheme.spaceXl),
+                  _Kicker(_imagesKicker.resolve(currentLanguage)),
+                  const SizedBox(height: AppTheme.spaceMd),
+                  _GlassCard(
+                    child: _Entry(
+                      name: 'Fluent Emoji',
+                      detail: _fluentEmojiDesc.resolve(currentLanguage),
                     ),
                   ),
                   const SizedBox(height: AppTheme.spaceXl),

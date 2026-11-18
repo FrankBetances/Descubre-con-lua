@@ -269,4 +269,5 @@ Base: `6be3d38b`
 
 | Paso | Commit | Fecha | Qué cambia en la app | Gates | Evidencia | Revisión |
 | --- | --- | --- | --- | --- | --- | --- |
-| P0.4 | este | 2026-11-18 | Nada visible: base del registro y cierre de O-20261111-3 | OK ordenes/fallos/registro; FALLO laminas: 6351/6382 sen lámina (sin flutter) | docs/PLAN_ANTIGRAVITY.md | |
+| P0.4 | 1995e81c | 2026-11-18 | Nada visible: base del registro y cierre de O-20261111-3 | OK ordenes/fallos/registro; FALLO laminas: 6351/6382 sen lámina (sin flutter) | docs/PLAN_ANTIGRAVITY.md | |
+| P1.1 | este | 2026-11-18 | Créditos: Fluent Emoji (MIT) en gl/es y licencia en el paquete | sin flutter; ordenes/fallos/registro/bundled/no_emoji OK; laminas 6351/6382 | docs/ORDENES.md, assets/third_party/fluentui-emoji/LICENSE, lib/features/creditos/credits_screen.dart | |

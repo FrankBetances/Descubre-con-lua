@@ -291,7 +291,8 @@ Estado: abierta
 > Prohibido: Play, release, otros repos, git reset --hard, borrar stashes.
 >
 > Respuesta final breve: láminas nuevas y reutilizadas, piezas sin lámina (debe ser 0), SHA del merge, run de CI y lo no verificado en móvil real.
-Fuente: assets/content/leccions/leccions.json (xaSabe, novas, repasa y fraseGramatica de cada lección), assets/content/tpr/**/*.json (las 4.000 palabras del banco, con su tprAction), assets/content/acopros/proxectos_0_2.json (200 palabras de 0-2) y assets/brand/laminas/ (el set propio, 349 láminas + 12 de escena). Medido el 11/11/2026: 4.378 palabras y frases distintas
+Fuente: microsoft/fluentui-emoji:assets/<Nombre>/Color, MIT, Copyright (c) Microsoft Corporation
+Base de contenido: assets/content/leccions/leccions.json (xaSabe, novas, repasa y fraseGramatica de cada lección), assets/content/tpr/**/*.json (las 4.000 palabras del banco, con su tprAction), assets/content/acopros/proxectos_0_2.json (200 palabras de 0-2) y assets/brand/laminas/ (el set propio, 349 láminas + 12 de escena, solo como respaldo donde Fluent no tenga coincidencia). Medido el 11/11/2026: 4.378 palabras y frases distintas (actualizado a 4.389 en check_laminas_leccion.py).
 
 - [ ] A1 · El campo `lamina` existe en PezaDaLeccion, TprWord y PalabraProxecto y está relleno en leccions.json, tpr/**/*.json y proxectos_0_2.json: 0 piezas sin lámina · evidencia:
 - [ ] A2 · Cada lámina representa ESA palabra y su gesto; ninguna pieza usa una lámina de escena de reto; reutilizada solo si coincide de verdad, si no, nueva en el set vectorial, sin texto ni emoji · evidencia:

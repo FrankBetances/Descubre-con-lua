@@ -78,9 +78,12 @@ def main() -> int:
             continue
         if not f:
             fallos.append(f"{o}: sin línea «Fuente:» (de dónde sale lo que se hace)")
-        elif not (f.startswith("ninguna") or re.match(r"FrankBetances/[\w.-]+:\S+", f)
+        elif not (f.startswith("ninguna")
+                  or re.match(r"FrankBetances/[\w.-]+:\S+", f)
+                  or (f.startswith("microsoft/fluentui-emoji:assets/")
+                      and (RAIZ / "assets/third_party/fluentui-emoji/LICENSE").is_file())
                   or (RAIZ / f.split(" ")[0].rstrip(",;")).exists()):
-            fallos.append(f"{o}: la fuente «{f}» no es un fichero, un «FrankBetances/<repo>:<ruta>» ni «ninguna: …»")
+            fallos.append(f"{o}: la fuente «{f}» no es un fichero, un «FrankBetances/<repo>:<ruta>», «microsoft/fluentui-emoji:assets/…» con licencia local ni «ninguna: …»")
     if fallos:
         print("FALLO (regla R∞):\n  " + "\n  ".join(fallos))
         return 1

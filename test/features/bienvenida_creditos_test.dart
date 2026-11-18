@@ -176,6 +176,9 @@ void main() {
       expect(body, contains('LJSpeech'));
       expect(body, contains('Nunito'));
       expect(body, contains('SIL Open Font License'));
+      expect(body, contains('Fluent Emoji'));
+      expect(body, contains('Microsoft Corporation'));
+      expect(body, contains('MIT'));
     });
 
     testWidgets('lleva el correo de contacto del proyecto', (tester) async {
