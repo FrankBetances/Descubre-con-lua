@@ -294,3 +294,18 @@ Fuente: docs/ORDENES.md (criterios abiertos en main y en origin/feat/laminas-eje
 
 - [x] docs/PLAN_ANTIGRAVITY.md: cada criterio abierto de cada orden, con su rama, sus pasos, su gate y cómo se da por hecho · evidencia: docs/PLAN_ANTIGRAVITY.md
 - [ ] Revisión de Claude Code de lo que entregue Antigravity, criterio por criterio, con los gates corridos y las capturas miradas · evidencia:
+
+## O-20261118-3 · Juegos de escucha y palabras (opción A), dentro de la lección y unidos al STEAM
+Estado: abierta
+> Por cierto me gustaría explorar la posibilidad de que descubre con lua integre ejercicios de logopedia como pares mínimos y expansión semántica mezclados con steam y el aprendizaje de inglés
+> Me gusta la opción A prepara el plan para que también lo asuma antigravity ahora
+Fuente: assets/content/unidades_mes/curso_4_5/unidade.01.json (campo «contraste»: un par mínimo por unidad con su nota gl/es, p. ej. pear/bear) y referencias/base/estrategias-apoyo-linguistico.txt (Estrategia 2: modelado sintáctico y expansión). Plan: docs/PLAN_ANTIGRAVITY.md, bloque 5
+
+Opción A, tal como la eligió Frank: estimulación del lenguaje universal y educativa, sin finalidad sanitaria (regla de producto de CLAUDE.md). Ni «logopedia», ni «terapia», ni «trastorno» en la app, en la ficha ni en documentos públicos.
+
+- [ ] Piloto en una unidad de 4-5 años (4 semanas): cada semana lleva un paso de pares mínimos en inglés con las dos imágenes, la voz de cada palabra y la nota para el adulto en gl/es, con palabras del STEAM de esa semana · evidencia:
+- [ ] Cada semana del piloto lleva un paso de expansión semántica de una palabra del STEAM: categoría, función, atributo y lugar, en inglés con significado gl/es y voz · evidencia:
+- [ ] Cada semana del piloto lleva un modelo de expansión gramatical para el adulto (el niño dice una palabra, el adulto la amplía), grabado · evidencia:
+- [ ] Gate: falla si una semana del piloto no tiene los tres pasos, si un par no difiere en un solo fonema, si una palabra no tiene imagen o voz, o si aparece «logopedia», «terapia» o «trastorno» en assets/, lib/ o docs/ públicos · evidencia:
+- [ ] Revisado por una logopeda o por Frank: los pares son válidos y adecuados a 4-5 años · evidencia:
+- [ ] Frank lo ve en la app (Na casa → Hoy → día → Continuar) en tres semanas y da el piloto por bueno antes de extenderlo a otras unidades o edades · evidencia:

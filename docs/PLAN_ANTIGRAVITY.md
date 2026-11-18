@@ -1,4 +1,4 @@
-# Plan para Antigravity · todo lo pendiente (O-20261118-2)
+# Plan para Antigravity · todo lo pendiente (O-20261118-2 y O-20261118-3)
 
 Lo ejecuta Antigravity. Lo revisa Claude Code cuando Antigravity diga «listo»,
 criterio por criterio, con los gates corridos y las capturas miradas. Escrito
@@ -131,6 +131,58 @@ O-20261109-2, -3, -4, -5, O-20261110-1) se marca **solo** con el PR, el SHA del
 merge y el número de run en verde, mirados en GitHub. Si no hay run en verde,
 se queda abierto y se dice. O-20261028-9 tiene todos sus criterios con
 evidencia: se pasa a «cumplida».
+
+## Bloque 5 · Juegos de escucha y palabras (O-20261118-3, opción A)
+
+Frank eligió el 18/11/2026 integrar pares mínimos y expansión semántica,
+unidos al STEAM y al inglés, **como estimulación del lenguaje para todos los
+niños, no como logopedia**. La app sigue sin finalidad sanitaria (regla de
+producto de `CLAUDE.md`). Nada de diagnóstico, puntuación de errores,
+niveles de dificultad por niño ni cribado.
+
+**Depende del bloque 2.** Un par mínimo sin sus dos imágenes no funciona: el
+piloto usa las imágenes de la fuente que Frank confirme en el bloque 1. Se
+puede redactar el contenido mientras tanto, pero no se da por hecho sin
+imágenes.
+
+### Qué se construye: tres pasos nuevos en la lección de la semana
+
+| Paso | Qué hace el adulto | De dónde sale |
+| --- | --- | --- |
+| **Escucha y señala** (pares mínimos) | Dice una de las dos palabras; el niño señala su imagen; el adulto confirma. Nota gl/es de cómo se nota la diferencia (como la de pear/bear: «coa man diante da boca») | El campo `contraste` que ya tiene cada unidad (`assets/content/unidades_mes/`); si el par del mes no encaja con el STEAM de la semana, se propone otro del banco y se marca para revisión |
+| **¿Qué sabemos de…?** (expansión semántica) | Con una palabra del STEAM de la semana: qué es (categoría), para qué sirve (función), cómo es (atributo) y dónde está (lugar). Ejemplo: *sponge — it's soft, it drinks water, it's in the bathroom* | Las palabras del STEAM de esa semana en `leccions.json` |
+| **Tú lo amplías** (expansión gramatical) | Modelo grabado: el niño dice «water», el adulto responde «yes, cold water». Sin corregir ni pedir que repita | `referencias/base/estrategias-apoyo-linguistico.txt`, Estrategia 2 |
+
+Todo en JSON de contenido, con texto gl/es, voz en/gl/es regenerada en el
+mismo commit (regla 1b) e imagen en cada palabra.
+
+### Orden de trabajo
+
+1. **Piloto: una unidad de 4-5 años, sus 4 semanas.** Antes de escribir,
+   Antigravity propone en `docs/ORDENES.md` qué unidad y qué pares, y para.
+2. Frank (o una logopeda que él designe) revisa que los pares difieren en un
+   solo fonema y son adecuados a 4-5 años.
+3. Se construye el piloto, con su gate y sus capturas gl/es.
+4. Frank lo abre en la app (Na casa → Hoy → día → Continuar) en tres semanas.
+   **Solo con su sí** se extiende a otras unidades y edades (R∞.6.3).
+
+### Gate nuevo: `tools/check_escoita_palabras.py`, en `tools/gates.sh`
+
+Falla si:
+
+- una semana del piloto no tiene los tres pasos;
+- un par mínimo no difiere en un solo fonema (se comprueba contra una
+  transcripción escrita en el JSON, no a ojo);
+- una palabra de los tres pasos no tiene imagen o voz;
+- aparece «logopedia», «terapia», «terapéutico» o «trastorno» en `assets/`,
+  `lib/`, `docs/privacy.html`, `docs/terms.html`, `README.md` o la ficha.
+
+### Lo que no se hace
+
+- Ningún registro nuevo de lo que el niño acierta o falla. Si en el futuro se
+  quiere, cambia lo que se guarda: obliga a actualizar la política de
+  privacidad y su gate (`CLAUDE.md`, privacidad declarada) y lo decide Frank.
+- Nada del otro producto de la casa: ni código, ni pantallas, ni módulos.
 
 ## Reglas de ejecución
 
