@@ -21,7 +21,8 @@
           "tprAction": {
             "gl": "Mover os dedos por riba da cabeza coma chuvia miúda",
             "es": "Mover los dedos por encima de la cabeza como lluvia fina"
-          }
+          },
+          "lamina": "pal_rain"
         },
         {
           "id": "3_4.abril.s1.sun",
@@ -252,7 +253,8 @@
           "tprAction": {
             "gl": "Pechar o puño coma unha semente pechada",
             "es": "Cerrar el puño como una semilla cerrada"
-          }
+          },
+          "lamina": "pal_seed"
         },
         {
           "id": "3_4.abril.s2.soil",
@@ -263,7 +265,8 @@
           "tprAction": {
             "gl": "Tocar o chan e refregar as mans coma con terra",
             "es": "Tocar el suelo y frotar las manos como con tierra"
-          }
+          },
+          "lamina": "pal_soil"
         },
         {
           "id": "3_4.abril.s2.flower",
@@ -713,7 +716,8 @@
           "tprAction": {
             "gl": "Pasar as mans polo chan coma se acariñasemos herba",
             "es": "Pasar las manos por el suelo como si acariciáramos hierba"
-          }
+          },
+          "lamina": "pal_grass"
         },
         {
           "id": "3_4.abril.s4.nest",
@@ -724,7 +728,8 @@
           "tprAction": {
             "gl": "Facer un niño coas mans en forma de cunca",
             "es": "Hacer un nido con las manos en forma de cuenco"
-          }
+          },
+          "lamina": "pal_nest"
         },
         {
           "id": "3_4.abril.s4.egg",

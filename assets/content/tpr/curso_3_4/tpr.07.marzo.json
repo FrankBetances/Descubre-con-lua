@@ -21,7 +21,8 @@
           "tprAction": {
             "gl": "Mover un pincel imaxinario de arriba abaixo",
             "es": "Mover un pincel imaginario de arriba abajo"
-          }
+          },
+          "lamina": "pal_brush"
         },
         {
           "id": "3_4.marzo.s1.rainbow",
@@ -328,7 +329,8 @@
           "tprAction": {
             "gl": "Rodar polo chan coma unha croqueta",
             "es": "Rodar por el suelo como una croqueta"
-          }
+          },
+          "lamina": "pal_roll"
         },
         {
           "id": "3_4.marzo.s2.trace",
@@ -492,7 +494,8 @@
           "tprAction": {
             "gl": "Pelar un plátano imaxinario de arriba abaixo",
             "es": "Pelar un plátano imaginario de arriba abajo"
-          }
+          },
+          "lamina": "pal_pal_banana"
         },
         {
           "id": "3_4.marzo.s3.pear",
@@ -669,7 +672,8 @@
           "tprAction": {
             "gl": "Asentir coa cabeza e estender a man",
             "es": "Asentir con la cabeza y extender la mano"
-          }
+          },
+          "lamina": "pal_yes_please"
         },
         {
           "id": "3_4.marzo.s3.no-thank-you",
@@ -680,7 +684,8 @@
           "tprAction": {
             "gl": "Negar coa cabeza amodo e sorrir",
             "es": "Negar con la cabeza despacio y sonreír"
-          }
+          },
+          "lamina": "pal_no_thank_you"
         },
         {
           "id": "3_4.marzo.s3.apples-and-pears",
@@ -845,7 +850,8 @@
           "tprAction": {
             "gl": "Subir a man ao cantar unha nota aguda",
             "es": "Subir la mano al cantar una nota aguda"
-          }
+          },
+          "lamina": "pal_high"
         },
         {
           "id": "3_4.marzo.s4.low",
@@ -856,7 +862,8 @@
           "tprAction": {
             "gl": "Baixar a man ao cantar unha nota grave",
             "es": "Bajar la mano al cantar una nota grave"
-          }
+          },
+          "lamina": "pal_low"
         },
         {
           "id": "3_4.marzo.s4.musical",

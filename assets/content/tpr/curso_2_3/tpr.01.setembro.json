@@ -429,7 +429,8 @@
             "gl": "Tocar o peito e sorrir",
             "es": "Tocar el pecho y sonreír"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_my_turn"
         },
         {
           "id": "2_3.setembro.s2.can-i-play",
@@ -451,7 +452,8 @@
             "gl": "Dar o xoguete a un amigo",
             "es": "Dar el juguete a un amigo"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_here_you_go"
         },
         {
           "id": "2_3.setembro.s2.one-for-you-one-for-me",

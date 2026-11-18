@@ -427,7 +427,8 @@
             "gl": "Suxeitar o bebé ben firme",
             "es": "Sujetar al bebé bien firme"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_steady"
         },
         {
           "id": "0_2.febreiro.s2.rock-a-bye-baby",

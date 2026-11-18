@@ -21,7 +21,8 @@
           "tprAction": {
             "gl": "Mover os brazos en ondas longas diante do corpo",
             "es": "Mover los brazos en ondas largas delante del cuerpo"
-          }
+          },
+          "lamina": "pal_sea"
         },
         {
           "id": "3_4.xuno.s1.waves",
@@ -32,7 +33,8 @@
           "tprAction": {
             "gl": "Subir e baixar as mans coma ondas",
             "es": "Subir y bajar las manos como olas"
-          }
+          },
+          "lamina": "pal_waves"
         },
         {
           "id": "3_4.xuno.s1.boat",
@@ -111,7 +113,8 @@
           "tprAction": {
             "gl": "Remar sentados cun remo imaxinario",
             "es": "Remar sentados con un remo imaginario"
-          }
+          },
+          "lamina": "pal_row"
         },
         {
           "id": "3_4.xuno.s1.sail",
@@ -483,7 +486,8 @@
           "tprAction": {
             "gl": "Pousar unha cuncha imaxinaria na orella e escoitar",
             "es": "Poner una concha imaginaria en la oreja y escuchar"
-          }
+          },
+          "lamina": "pal_pal_shell"
         },
         {
           "id": "3_4.xuno.s3.crab",

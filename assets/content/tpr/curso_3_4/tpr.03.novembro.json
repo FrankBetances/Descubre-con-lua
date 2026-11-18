@@ -110,7 +110,8 @@
           "tprAction": {
             "gl": "Soprar forte unha folla imaxinaria",
             "es": "Soplar fuerte una hoja imaginaria"
-          }
+          },
+          "lamina": "pal_blow"
         },
         {
           "id": "3_4.novembro.s1.crunch",
@@ -211,7 +212,8 @@
           "tprAction": {
             "gl": "Deixarse caer amodo ata sentar no chan",
             "es": "Dejarse caer despacio hasta sentarse en el suelo"
-          }
+          },
+          "lamina": "pal_fall_down"
         },
         {
           "id": "3_4.novembro.s1.walk-softly",
@@ -253,7 +255,8 @@
           "tprAction": {
             "gl": "Facer unha castaña coas mans pechadas",
             "es": "Hacer una castaña con las manos cerradas"
-          }
+          },
+          "lamina": "pal_pal_chestnut"
         },
         {
           "id": "3_4.novembro.s2.basket",
@@ -566,7 +569,8 @@
           "tprAction": {
             "gl": "Ulir o aire coma un raposo",
             "es": "Olfatear el aire como un zorro"
-          }
+          },
+          "lamina": "pal_sniff"
         },
         {
           "id": "3_4.novembro.s3.run",
@@ -600,7 +604,8 @@
           "tprAction": {
             "gl": "Cavar no chan coas mans",
             "es": "Cavar en el suelo con las manos"
-          }
+          },
+          "lamina": "pal_dig"
         },
         {
           "id": "3_4.novembro.s3.howl",
@@ -719,7 +724,8 @@
           "tprAction": {
             "gl": "Facer unha cabaza grande cos brazos en círculo",
             "es": "Hacer una calabaza grande con los brazos en círculo"
-          }
+          },
+          "lamina": "pal_pumpkin"
         },
         {
           "id": "3_4.novembro.s4.grapes",
@@ -796,7 +802,8 @@
           "tprAction": {
             "gl": "Remexer o caldo cunha culler grande imaxinaria",
             "es": "Remover el caldo con una cuchara grande imaginaria"
-          }
+          },
+          "lamina": "pal_stir"
         },
         {
           "id": "3_4.novembro.s4.cook",
@@ -906,7 +913,8 @@
           "tprAction": {
             "gl": "Xuntar as puntas dos dedos das dúas mans",
             "es": "Juntar las puntas de los dedos de las dos manos"
-          }
+          },
+          "lamina": "pal_more_please"
         },
         {
           "id": "3_4.novembro.s4.stir-then-taste",

@@ -344,7 +344,8 @@
           "tprAction": {
             "gl": "Verter auga imaxinaria dun vaso a outro",
             "es": "Echar agua imaginaria de un vaso a otro"
-          }
+          },
+          "lamina": "pal_pour"
         },
         {
           "id": "3_4.maio.s2.paddle",
@@ -520,7 +521,8 @@
           "tprAction": {
             "gl": "Suxeitar unha culler imaxinaria e amosala",
             "es": "Sostener una cuchara imaginaria y enseñarla"
-          }
+          },
+          "lamina": "pal_pal_spoon"
         },
         {
           "id": "3_4.maio.s3.plate",
@@ -531,7 +533,8 @@
           "tprAction": {
             "gl": "Debuxar un prato redondo no aire",
             "es": "Dibujar un plato redondo en el aire"
-          }
+          },
+          "lamina": "pal_plate"
         },
         {
           "id": "3_4.maio.s3.bowl",
@@ -717,7 +720,8 @@
           "tprAction": {
             "gl": "Abrir un libro imaxinario e mirar o grupo",
             "es": "Abrir un libro imaginario y mirar al grupo"
-          }
+          },
+          "lamina": "pal_story"
         },
         {
           "id": "3_4.maio.s4.page",
@@ -728,7 +732,8 @@
           "tprAction": {
             "gl": "Pasar unha páxina imaxinaria cun dedo",
             "es": "Pasar una página imaginaria con un dedo"
-          }
+          },
+          "lamina": "pal_page"
         },
         {
           "id": "3_4.maio.s4.word",
