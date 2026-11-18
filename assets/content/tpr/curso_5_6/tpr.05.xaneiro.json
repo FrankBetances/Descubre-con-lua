@@ -21,7 +21,8 @@
             "gl": "Estirar os brazos coma pólas vellas",
             "es": "Estirar los brazos como ramas viejas"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_olive_tree"
         },
         {
           "id": "5_6.xaneiro.s1.symbol",
@@ -32,7 +33,8 @@
             "gl": "Debuxar un círculo e sinalalo",
             "es": "Dibujar un círculo y señalarlo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_symbol"
         },
         {
           "id": "5_6.xaneiro.s1.history",
@@ -43,7 +45,8 @@
             "gl": "Sinalar cara atrás",
             "es": "Señalar hacia atrás"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_history"
         },
         {
           "id": "5_6.xaneiro.s1.old-town",
@@ -54,7 +57,8 @@
             "gl": "Camiñar por rúas estreitas",
             "es": "Caminar por calles estrechas"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_old_town"
         },
         {
           "id": "5_6.xaneiro.s1.stone-wall",
@@ -65,7 +69,8 @@
             "gl": "Poñer as mans coma un muro",
             "es": "Poner las manos como un muro"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_stone_wall"
         },
         {
           "id": "5_6.xaneiro.s1.stone-statue",
@@ -76,7 +81,8 @@
             "gl": "Quedar quieto coma unha estatua",
             "es": "Quedarse quieto como una estatua"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_stone_statue"
         },
         {
           "id": "5_6.xaneiro.s1.museum",
@@ -87,7 +93,8 @@
             "gl": "Camiñar amodo mirando",
             "es": "Caminar despacio mirando"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_museum"
         },
         {
           "id": "5_6.xaneiro.s1.hold-up-one-finger-for-first",
@@ -98,7 +105,8 @@
             "gl": "Levantar un dedo",
             "es": "Levantar un dedo"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_hold_up_one_finger_for_first"
         },
         {
           "id": "5_6.xaneiro.s1.visit",
@@ -109,7 +117,8 @@
             "gl": "Camiñar e mirar arredor",
             "es": "Caminar y mirar alrededor"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_visit"
         },
         {
           "id": "5_6.xaneiro.s1.remember-the-past",
@@ -120,7 +129,8 @@
             "gl": "Sinalar atrás",
             "es": "Señalar atrás"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_remember_the_past"
         },
         {
           "id": "5_6.xaneiro.s1.tell-in-order",
@@ -131,7 +141,8 @@
             "gl": "Levantar un, dous, tres dedos",
             "es": "Levantar uno, dos, tres dedos"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_tell_in_order"
         },
         {
           "id": "5_6.xaneiro.s1.imagine-long-ago",
@@ -142,7 +153,8 @@
             "gl": "Pechar os ollos e pensar",
             "es": "Cerrar los ojos y pensar"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_imagine_long_ago"
         },
         {
           "id": "5_6.xaneiro.s1.historic",
@@ -153,7 +165,8 @@
             "gl": "Tocar unha pedra vella",
             "es": "Tocar una piedra vieja"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_historic"
         },
         {
           "id": "5_6.xaneiro.s1.very-old",
@@ -164,7 +177,8 @@
             "gl": "Camiñar amodo e encorvado",
             "es": "Caminar despacio y encorvado"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_very_old"
         },
         {
           "id": "5_6.xaneiro.s1.famous",
@@ -175,7 +189,8 @@
             "gl": "Sinalar orgullosos",
             "es": "Señalar orgullosos"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_famous"
         },
         {
           "id": "5_6.xaneiro.s1.stony",
@@ -186,7 +201,8 @@
             "gl": "Bater nunha pedra",
             "es": "Golpear una piedra"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_stony"
         },
         {
           "id": "5_6.xaneiro.s1.long-long-ago",
@@ -197,7 +213,8 @@
             "gl": "Sinalar moi atrás",
             "es": "Señalar muy atrás"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_long_long_ago"
         },
         {
           "id": "5_6.xaneiro.s1.this-tree-is-older-than-our-grandparents",
@@ -208,7 +225,8 @@
             "gl": "Sinalar e comparar",
             "es": "Señalar y comparar"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_this_tree_is_older_than_our_grandparents"
         },
         {
           "id": "5_6.xaneiro.s1.first-then-finally",
@@ -219,7 +237,8 @@
             "gl": "Levantar un, dous e tres dedos",
             "es": "Levantar uno, dos y tres dedos"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_first_then_finally"
         },
         {
           "id": "5_6.xaneiro.s1.what-happened-next",
@@ -230,7 +249,8 @@
             "gl": "Sinalar adiante",
             "es": "Señalar adelante"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_what_happened_next"
         }
       ]
     },
@@ -262,7 +282,8 @@
             "gl": "Poñer os brazos coma murallas",
             "es": "Poner los brazos como murallas"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_fortress"
         },
         {
           "id": "5_6.xaneiro.s2.castle-wall",
@@ -273,7 +294,8 @@
             "gl": "Camiñar rozando unha parede",
             "es": "Caminar rozando una pared"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_castle_wall"
         },
         {
           "id": "5_6.xaneiro.s2.sailing-ship",
@@ -284,7 +306,8 @@
             "gl": "Balancearse coma un barco grande",
             "es": "Balancearse como un barco grande"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_sailing_ship"
         },
         {
           "id": "5_6.xaneiro.s2.canon",
@@ -295,7 +318,8 @@
             "gl": "Facer un tubo cos brazos",
             "es": "Hacer un tubo con los brazos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_cannon"
         },
         {
           "id": "5_6.xaneiro.s2.cobbles",
@@ -306,7 +330,8 @@
             "gl": "Pisar con coidado",
             "es": "Pisar con cuidado"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_cobbles"
         },
         {
           "id": "5_6.xaneiro.s2.lantern-light",
@@ -317,7 +342,8 @@
             "gl": "Suxeitar unha luz pequena",
             "es": "Sostener una luz pequeña"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_lantern_light"
         },
         {
           "id": "5_6.xaneiro.s2.sail-across-the-ocean",
@@ -328,7 +354,8 @@
             "gl": "Remar e mirar lonxe",
             "es": "Remar y mirar lejos"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_sail_across_the_ocean"
         },
         {
           "id": "5_6.xaneiro.s2.defend",
@@ -339,7 +366,8 @@
             "gl": "Poñer un escudo imaxinario",
             "es": "Ponerse un escudo imaginario"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_defend"
         },
         {
           "id": "5_6.xaneiro.s2.grow-bigger",
@@ -350,7 +378,8 @@
             "gl": "Abrir os brazos amodo",
             "es": "Abrir los brazos despacio"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_grow_bigger"
         },
         {
           "id": "5_6.xaneiro.s2.fish-for-a-living",
@@ -361,7 +390,8 @@
             "gl": "Lanzar a rede",
             "es": "Lanzar la red"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_fish_for_a_living"
         },
         {
           "id": "5_6.xaneiro.s2.travel-by-boat",
@@ -372,7 +402,8 @@
             "gl": "Balancearse sentados",
             "es": "Balancearse sentados"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_travel_by_boat"
         },
         {
           "id": "5_6.xaneiro.s2.ancient-town",
@@ -383,7 +414,8 @@
             "gl": "Camiñar amodo",
             "es": "Caminar despacio"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_ancient_town"
         },
         {
           "id": "5_6.xaneiro.s2.tiny-village",
@@ -394,7 +426,8 @@
             "gl": "Xuntar as mans",
             "es": "Juntar las manos"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_tiny_village"
         },
         {
           "id": "5_6.xaneiro.s2.busy-city",
@@ -405,7 +438,8 @@
             "gl": "Moverse rápido",
             "es": "Moverse rápido"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_busy_city"
         },
         {
           "id": "5_6.xaneiro.s2.modern",
@@ -416,7 +450,8 @@
             "gl": "Estirarse alto coma un edificio",
             "es": "Estirarse alto como un edificio"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_modern"
         },
         {
           "id": "5_6.xaneiro.s2.was-vigo-always-big",
@@ -427,7 +462,8 @@
             "gl": "Abrir e pechar as mans",
             "es": "Abrir y cerrar las manos"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_was_vigo_always_big"
         },
         {
           "id": "5_6.xaneiro.s2.vigo-was-small-but-now-it-is-big",
@@ -438,7 +474,8 @@
             "gl": "Xuntar as mans e abrilas",
             "es": "Juntar las manos y abrirlas"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_vigo_was_small_but_now_it_is_big"
         },
         {
           "id": "5_6.xaneiro.s2.before-people-travelled-by-boat",
@@ -449,7 +486,8 @@
             "gl": "Remar sentados",
             "es": "Remar sentados"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_in_the_past_people_travelled_by_boat"
         },
         {
           "id": "5_6.xaneiro.s2.imagine-the-old-ships",
@@ -460,7 +498,8 @@
             "gl": "Pechar os ollos",
             "es": "Cerrar los ojos"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_imagine_the_old_ships"
         }
       ]
     },
@@ -480,7 +519,8 @@
             "gl": "Arrolar un bebé imaxinario",
             "es": "Acunar un bebé imaginario"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_baby_photo"
         },
         {
           "id": "5_6.xaneiro.s3.family-tree",
@@ -491,7 +531,8 @@
             "gl": "Debuxar pólas no aire",
             "es": "Dibujar ramas en el aire"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_family_tree"
         },
         {
           "id": "5_6.xaneiro.s3.great-grandparents",
@@ -502,7 +543,8 @@
             "gl": "Sinalar moi atrás",
             "es": "Señalar muy atrás"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_great_grandparents"
         },
         {
           "id": "5_6.xaneiro.s3.birthday",
@@ -513,7 +555,8 @@
             "gl": "Soprar velas imaxinarias",
             "es": "Soplar velas imaginarias"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_birthday"
         },
         {
           "id": "5_6.xaneiro.s3.age",
@@ -524,7 +567,8 @@
             "gl": "Amosar os anos cos dedos",
             "es": "Enseñar los años con los dedos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_age"
         },
         {
           "id": "5_6.xaneiro.s3.childhood",
@@ -535,7 +579,8 @@
             "gl": "Encollerse pequeno",
             "es": "Encogerse pequeño"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_childhood"
         },
         {
           "id": "5_6.xaneiro.s3.life-story",
@@ -546,7 +591,8 @@
             "gl": "Mover a man de atrás a adiante",
             "es": "Mover la mano de atrás a adelante"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_life_story"
         },
         {
           "id": "5_6.xaneiro.s3.grow-up",
@@ -557,7 +603,8 @@
             "gl": "Erguerse amodo",
             "es": "Levantarse despacio"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_grow_up"
         },
         {
           "id": "5_6.xaneiro.s3.learn-to-walk",
@@ -568,7 +615,8 @@
             "gl": "Dar pasiños inseguros",
             "es": "Dar pasitos inseguros"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_learn_to_walk"
         },
         {
           "id": "5_6.xaneiro.s3.look-at-old-photos",
@@ -579,7 +627,8 @@
             "gl": "Pasar follas dun álbum",
             "es": "Pasar hojas de un álbum"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_look_at_old_photos"
         },
         {
           "id": "5_6.xaneiro.s3.change-over-time",
@@ -590,7 +639,8 @@
             "gl": "Pasar dun xesto pequeno a un grande",
             "es": "Pasar de un gesto pequeño a uno grande"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_change_over_time"
         },
         {
           "id": "5_6.xaneiro.s3.share-memories",
@@ -601,7 +651,8 @@
             "gl": "Falar mirando a un amigo",
             "es": "Hablar mirando a un amigo"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_share_memories"
         },
         {
           "id": "5_6.xaneiro.s3.younger",
@@ -612,7 +663,8 @@
             "gl": "Encollerse",
             "es": "Encogerse"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_younger"
         },
         {
           "id": "5_6.xaneiro.s3.oldest",
@@ -623,7 +675,8 @@
             "gl": "Sinalar arriba no álbum",
             "es": "Señalar arriba en el álbum"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_oldest"
         },
         {
           "id": "5_6.xaneiro.s3.first-ever",
@@ -634,7 +687,8 @@
             "gl": "Levantar un dedo",
             "es": "Levantar un dedo"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_first_ever"
         },
         {
           "id": "5_6.xaneiro.s3.newborn-baby",
@@ -645,7 +699,8 @@
             "gl": "Arrolar nos brazos",
             "es": "Acunar en los brazos"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_newborn_baby"
         },
         {
           "id": "5_6.xaneiro.s3.how-old-are-you",
@@ -656,7 +711,8 @@
             "gl": "Amosar os dedos",
             "es": "Enseñar los dedos"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_how_old_are_you"
         },
         {
           "id": "5_6.xaneiro.s3.when-i-was-a-baby-i-couldn-t-walk",
@@ -667,7 +723,8 @@
             "gl": "Gatear e logo camiñar",
             "es": "Gatear y luego caminar"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_when_i_was_a_baby_i_couldn_t_walk"
         },
         {
           "id": "5_6.xaneiro.s3.i-m-five-and-a-half",
@@ -678,7 +735,8 @@
             "gl": "Amosar cinco dedos e medio",
             "es": "Enseñar cinco dedos y medio"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_i_m_five_and_a_half"
         },
         {
           "id": "5_6.xaneiro.s3.my-grandma-is-older-than-my-mum",
@@ -689,7 +747,8 @@
             "gl": "Sinalar alto e menos alto",
             "es": "Señalar alto y menos alto"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_my_grandma_is_older_than_my_mum"
         }
       ]
     },
@@ -733,7 +792,8 @@
             "gl": "Pechar un libro",
             "es": "Cerrar un libro"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_ending"
         },
         {
           "id": "5_6.xaneiro.s4.hero",
@@ -744,7 +804,8 @@
             "gl": "Poñer as mans na cadeira",
             "es": "Poner las manos en la cadera"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_hero"
         },
         {
           "id": "5_6.xaneiro.s4.plot-twist",
@@ -755,7 +816,8 @@
             "gl": "Xirar e abrir a boca",
             "es": "Girar y abrir la boca"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_plot_twist"
         },
         {
           "id": "5_6.xaneiro.s4.setting",
@@ -766,7 +828,8 @@
             "gl": "Abrir os brazos coma un escenario",
             "es": "Abrir los brazos como un escenario"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_setting"
         },
         {
           "id": "5_6.xaneiro.s4.storyboard",
@@ -777,7 +840,8 @@
             "gl": "Debuxar tres cadros no aire",
             "es": "Dibujar tres cuadros en el aire"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_storyboard"
         },
         {
           "id": "5_6.xaneiro.s4.retell",
@@ -788,7 +852,8 @@
             "gl": "Contar cos dedos",
             "es": "Contar con los dedos"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_retell"
         },
         {
           "id": "5_6.xaneiro.s4.sequence",
@@ -799,7 +864,8 @@
             "gl": "Poñer tarxetas en fila",
             "es": "Poner tarjetas en fila"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_sequence"
         },
         {
           "id": "5_6.xaneiro.s4.invent",
@@ -810,7 +876,8 @@
             "gl": "Tocar a cabeza e abrir a man",
             "es": "Tocar la cabeza y abrir la mano"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_invent"
         },
         {
           "id": "5_6.xaneiro.s4.illustrate",
@@ -821,7 +888,8 @@
             "gl": "Debuxar no aire",
             "es": "Dibujar en el aire"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_illustrate"
         },
         {
           "id": "5_6.xaneiro.s4.act-it-out",
@@ -832,7 +900,8 @@
             "gl": "Facer a historia co corpo",
             "es": "Hacer la historia con el cuerpo"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_act_it_out"
         },
         {
           "id": "5_6.xaneiro.s4.exciting",
@@ -843,7 +912,8 @@
             "gl": "Abrir moito os ollos",
             "es": "Abrir mucho los ojos"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_exciting"
         },
         {
           "id": "5_6.xaneiro.s4.surprising-end",
@@ -854,7 +924,8 @@
             "gl": "Abrir a boca",
             "es": "Abrir la boca"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_surprise_ending"
         },
         {
           "id": "5_6.xaneiro.s4.happy-ending",
@@ -865,7 +936,8 @@
             "gl": "Sorrir e abrazar",
             "es": "Sonreír y abrazar"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_happy_ending"
         },
         {
           "id": "5_6.xaneiro.s4.imaginary",
@@ -876,7 +948,8 @@
             "gl": "Mover os dedos máxicos",
             "es": "Mover los dedos mágicos"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_imaginary"
         },
         {
           "id": "5_6.xaneiro.s4.how-does-the-story-begin",
@@ -887,7 +960,8 @@
             "gl": "Levantar un dedo",
             "es": "Levantar un dedo"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_how_does_the_story_begin"
         },
         {
           "id": "5_6.xaneiro.s4.and-then-what-happened",
@@ -898,7 +972,8 @@
             "gl": "Sinalar adiante",
             "es": "Señalar adelante"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_and_then_what_happened"
         },
         {
           "id": "5_6.xaneiro.s4.they-lived-happily-ever-after",
@@ -909,7 +984,8 @@
             "gl": "Abrazarse",
             "es": "Abrazarse"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_they_lived_happily_ever_after"
         },
         {
           "id": "5_6.xaneiro.s4.first-the-hero-was-lost-then-she-found-the-way-home",
@@ -920,7 +996,8 @@
             "gl": "Mirar arredor e logo camiñar",
             "es": "Mirar alrededor y luego caminar"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_first_the_hero_was_lost_then_she_found_her_way_h"
         }
       ]
     }

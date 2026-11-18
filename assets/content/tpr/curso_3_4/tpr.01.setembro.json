@@ -45,7 +45,8 @@
           "tprAction": {
             "gl": "Sinalar con suavidade á persoa docente",
             "es": "Señalar con suavidad a la persona docente"
-          }
+          },
+          "lamina": "pal_teacher"
         },
         {
           "id": "3_4.setembro.s1.school",
@@ -68,7 +69,8 @@
           "tprAction": {
             "gl": "Abrir e pechar unha porta imaxinaria",
             "es": "Abrir y cerrar una puerta imaginaria"
-          }
+          },
+          "lamina": "pal_door"
         },
         {
           "id": "3_4.setembro.s1.chair",
@@ -79,7 +81,8 @@
           "tprAction": {
             "gl": "Tocar a cadeira e sentar nela amodo",
             "es": "Tocar la silla y sentarse en ella despacio"
-          }
+          },
+          "lamina": "pal_chair"
         },
         {
           "id": "3_4.setembro.s1.rug",
@@ -90,7 +93,8 @@
           "tprAction": {
             "gl": "Pousar as dúas mans na alfombra do círculo",
             "es": "Apoyar las dos manos en la alfombra del círculo"
-          }
+          },
+          "lamina": "pal_rug"
         },
         {
           "id": "3_4.setembro.s1.name",
@@ -101,7 +105,8 @@
           "tprAction": {
             "gl": "Pousar a man no peito ao dicir o propio nome",
             "es": "Poner la mano en el pecho al decir el propio nombre"
-          }
+          },
+          "lamina": "pal_name"
         },
         {
           "id": "3_4.setembro.s1.wave",
@@ -112,7 +117,8 @@
           "tprAction": {
             "gl": "Mover a man dun lado a outro para saudar",
             "es": "Mover la mano de un lado a otro para saludar"
-          }
+          },
+          "lamina": "pal_wave"
         },
         {
           "id": "3_4.setembro.s1.smile",
@@ -123,7 +129,8 @@
           "tprAction": {
             "gl": "Sorrir amplamente mirando ao grupo",
             "es": "Sonreír ampliamente mirando al grupo"
-          }
+          },
+          "lamina": "pal_smile"
         },
         {
           "id": "3_4.setembro.s1.sit",
@@ -146,7 +153,8 @@
           "tprAction": {
             "gl": "Chamar co brazo para que se acheguen",
             "es": "Llamar con el brazo para que se acerquen"
-          }
+          },
+          "lamina": "pal_come"
         },
         {
           "id": "3_4.setembro.s1.listen",
@@ -157,7 +165,8 @@
           "tprAction": {
             "gl": "Levar a man á orella e quedar en silencio",
             "es": "Llevarse la mano a la oreja y quedarse en silencio"
-          }
+          },
+          "lamina": "pal_listen"
         },
         {
           "id": "3_4.setembro.s1.happy",
@@ -168,7 +177,8 @@
           "tprAction": {
             "gl": "Abrir os brazos cun sorriso grande",
             "es": "Abrir los brazos con una sonrisa grande"
-          }
+          },
+          "lamina": "pal_happy"
         },
         {
           "id": "3_4.setembro.s1.new",
@@ -179,7 +189,8 @@
           "tprAction": {
             "gl": "Amosar algo coas mans como se fose un agasallo",
             "es": "Mostrar algo con las manos como si fuera un regalo"
-          }
+          },
+          "lamina": "pal_new"
         },
         {
           "id": "3_4.setembro.s1.quiet",
@@ -226,7 +237,8 @@
           "tprAction": {
             "gl": "Acenar coa man e lanzar un bico ao aire",
             "es": "Decir adiós con la mano y lanzar un beso al aire"
-          }
+          },
+          "lamina": "pal_bye_bye"
         },
         {
           "id": "3_4.setembro.s1.hand-in-hand",
@@ -258,7 +270,8 @@
           "tprAction": {
             "gl": "Pousar as palmas das mans enriba da mesa",
             "es": "Apoyar las palmas de las manos encima de la mesa"
-          }
+          },
+          "lamina": "pal_table"
         },
         {
           "id": "3_4.setembro.s2.window",
@@ -269,7 +282,8 @@
           "tprAction": {
             "gl": "Debuxar un cadrado no aire e mirar a través",
             "es": "Dibujar un cuadrado en el aire y mirar a través"
-          }
+          },
+          "lamina": "pal_window"
         },
         {
           "id": "3_4.setembro.s2.ball",
@@ -292,7 +306,8 @@
           "tprAction": {
             "gl": "Xuntar as palmas e abrilas como un libro",
             "es": "Juntar las palmas y abrirlas como un libro"
-          }
+          },
+          "lamina": "pal_book"
         },
         {
           "id": "3_4.setembro.s2.crayon",
@@ -303,7 +318,8 @@
           "tprAction": {
             "gl": "Coller unha cera imaxinaria e pintar no aire",
             "es": "Coger una cera imaginaria y pintar en el aire"
-          }
+          },
+          "lamina": "pal_crayon"
         },
         {
           "id": "3_4.setembro.s2.backpack",
@@ -338,7 +354,8 @@
           "tprAction": {
             "gl": "Facer anteollos cos dedos e mirar arredor",
             "es": "Hacer gafas con los dedos y mirar alrededor"
-          }
+          },
+          "lamina": "pal_look"
         },
         {
           "id": "3_4.setembro.s2.point",
@@ -349,7 +366,8 @@
           "tprAction": {
             "gl": "Sinalar co dedo algo que está preto",
             "es": "Señalar con el dedo algo que está cerca"
-          }
+          },
+          "lamina": "pal_point"
         },
         {
           "id": "3_4.setembro.s2.give",
@@ -360,7 +378,8 @@
           "tprAction": {
             "gl": "Estender a man aberta cara a outra persoa",
             "es": "Extender la mano abierta hacia otra persona"
-          }
+          },
+          "lamina": "pal_give"
         },
         {
           "id": "3_4.setembro.s2.share",
@@ -371,7 +390,8 @@
           "tprAction": {
             "gl": "Partir un obxecto imaxinario e dar a metade",
             "es": "Partir un objeto imaginario y dar la mitad"
-          }
+          },
+          "lamina": "pal_share"
         },
         {
           "id": "3_4.setembro.s2.help",
@@ -394,7 +414,8 @@
           "tprAction": {
             "gl": "Xuntar o polgar e o índice deixando un oco pequeno",
             "es": "Juntar el pulgar y el índice dejando un hueco pequeño"
-          }
+          },
+          "lamina": "pal_little"
         },
         {
           "id": "3_4.setembro.s2.ready",
@@ -405,7 +426,8 @@
           "tprAction": {
             "gl": "Pousar as mans nos xeonllos e mirar á persoa docente",
             "es": "Poner las manos en las rodillas y mirar a la persona docente"
-          }
+          },
+          "lamina": "pal_ready"
         },
         {
           "id": "3_4.setembro.s2.empty",
@@ -440,7 +462,8 @@
           "tprAction": {
             "gl": "Recoller xoguetes imaxinarios e gardalos nunha caixa",
             "es": "Recoger juguetes imaginarios y guardarlos en una caja"
-          }
+          },
+          "lamina": "pal_tidy_up"
         },
         {
           "id": "3_4.setembro.s2.your-turn",
@@ -463,7 +486,8 @@
           "tprAction": {
             "gl": "Tocar o ombro de cada criatura, dunha en unha",
             "es": "Tocar el hombro de cada criatura, de una en una"
-          }
+          },
+          "lamina": "pal_one_by_one"
         },
         {
           "id": "3_4.setembro.s2.all-together",
@@ -495,7 +519,8 @@
           "tprAction": {
             "gl": "Abrir os brazos e pechalos nunha aperta grande",
             "es": "Abrir los brazos y cerrarlos en un gran abrazo"
-          }
+          },
+          "lamina": "pal_family"
         },
         {
           "id": "3_4.setembro.s3.home",
@@ -506,7 +531,8 @@
           "tprAction": {
             "gl": "Xuntar as mans por riba da cabeza como un tellado",
             "es": "Juntar las manos por encima de la cabeza como un tejado"
-          }
+          },
+          "lamina": "pal_home"
         },
         {
           "id": "3_4.setembro.s3.mummy",
@@ -517,7 +543,8 @@
           "tprAction": {
             "gl": "Pousar a man no corazón ao dicir mamá",
             "es": "Poner la mano en el corazón al decir mamá"
-          }
+          },
+          "lamina": "pal_mummy"
         },
         {
           "id": "3_4.setembro.s3.daddy",
@@ -528,7 +555,8 @@
           "tprAction": {
             "gl": "Dar dúas palmadiñas suaves no peito ao dicir papá",
             "es": "Darse dos palmaditas suaves en el pecho al decir papá"
-          }
+          },
+          "lamina": "pal_daddy"
         },
         {
           "id": "3_4.setembro.s3.baby",
@@ -539,7 +567,8 @@
           "tprAction": {
             "gl": "Arrolar un bebé imaxinario nos brazos",
             "es": "Acunar un bebé imaginario en los brazos"
-          }
+          },
+          "lamina": "pal_baby"
         },
         {
           "id": "3_4.setembro.s3.grandma",
@@ -550,7 +579,8 @@
           "tprAction": {
             "gl": "Pousar as mans nas meixelas con agarimo",
             "es": "Poner las manos en las mejillas con cariño"
-          }
+          },
+          "lamina": "pal_grandma"
         },
         {
           "id": "3_4.setembro.s3.grandpa",
@@ -561,7 +591,8 @@
           "tprAction": {
             "gl": "Acenar lonxe coma se chegase o avó",
             "es": "Saludar a lo lejos como si llegara el abuelo"
-          }
+          },
+          "lamina": "pal_grandpa"
         },
         {
           "id": "3_4.setembro.s3.hug",
@@ -572,7 +603,8 @@
           "tprAction": {
             "gl": "Rodearse cos propios brazos nunha aperta",
             "es": "Rodearse con los propios brazos en un abrazo"
-          }
+          },
+          "lamina": "pal_hug"
         },
         {
           "id": "3_4.setembro.s3.kiss",
@@ -583,7 +615,8 @@
           "tprAction": {
             "gl": "Levar os dedos aos beizos e soltar un bico",
             "es": "Llevarse los dedos a los labios y soltar un beso"
-          }
+          },
+          "lamina": "pal_kiss"
         },
         {
           "id": "3_4.setembro.s3.hold",
@@ -594,7 +627,8 @@
           "tprAction": {
             "gl": "Suxeitar unha pelota imaxinaria coas dúas mans sen deixala caer",
             "es": "Sostener una pelota imaginaria con las dos manos sin dejarla caer"
-          }
+          },
+          "lamina": "pal_hold"
         },
         {
           "id": "3_4.setembro.s3.rock",
@@ -605,7 +639,8 @@
           "tprAction": {
             "gl": "Balancearse amodo dun lado a outro",
             "es": "Balancearse despacio de un lado a otro"
-          }
+          },
+          "lamina": "pal_rock"
         },
         {
           "id": "3_4.setembro.s3.wait",
@@ -616,7 +651,8 @@
           "tprAction": {
             "gl": "Cruzar as mans no colo e contar ata tres en silencio",
             "es": "Cruzar las manos en el regazo y contar hasta tres en silencio"
-          }
+          },
+          "lamina": "pal_wait"
         },
         {
           "id": "3_4.setembro.s3.soft",
@@ -663,7 +699,8 @@
           "tprAction": {
             "gl": "Tapar a cara coas mans e asomar un ollo",
             "es": "Taparse la cara con las manos y asomar un ojo"
-          }
+          },
+          "lamina": "pal_shy"
         },
         {
           "id": "3_4.setembro.s3.what-s-your-name",
@@ -674,7 +711,8 @@
           "tprAction": {
             "gl": "Pousar a man no peito e logo sinalar a outra persoa",
             "es": "Poner la mano en el pecho y luego señalar a otra persona"
-          }
+          },
+          "lamina": "pal_what_s_your_name"
         },
         {
           "id": "3_4.setembro.s3.i-love-you",
@@ -685,7 +723,8 @@
           "tprAction": {
             "gl": "Facer un corazón coas mans",
             "es": "Hacer un corazón con las manos"
-          }
+          },
+          "lamina": "pal_i_love_you"
         },
         {
           "id": "3_4.setembro.s3.thank-you",
@@ -708,7 +747,8 @@
           "tprAction": {
             "gl": "Dar unhas palmadiñas no chan ao lado dun mesmo",
             "es": "Dar unas palmaditas en el suelo al lado de uno mismo"
-          }
+          },
+          "lamina": "pal_next_to_me"
         }
       ]
     },
@@ -728,7 +768,8 @@
           "tprAction": {
             "gl": "Coller un xoguete imaxinario e amosalo ao grupo",
             "es": "Coger un juguete imaginario y enseñarlo al grupo"
-          }
+          },
+          "lamina": "pal_toy"
         },
         {
           "id": "3_4.setembro.s4.doll",
@@ -739,7 +780,8 @@
           "tprAction": {
             "gl": "Peitear con agarimo unha boneca imaxinaria",
             "es": "Peinar con cariño una muñeca imaginaria"
-          }
+          },
+          "lamina": "pal_doll"
         },
         {
           "id": "3_4.setembro.s4.teddy",
@@ -750,7 +792,8 @@
           "tprAction": {
             "gl": "Abrazar un osiño imaxinario contra o peito",
             "es": "Abrazar un osito imaginario contra el pecho"
-          }
+          },
+          "lamina": "pal_teddy"
         },
         {
           "id": "3_4.setembro.s4.blocks",
@@ -761,7 +804,8 @@
           "tprAction": {
             "gl": "Poñer unha man enriba da outra como bloques",
             "es": "Poner una mano encima de la otra como bloques"
-          }
+          },
+          "lamina": "pal_blocks"
         },
         {
           "id": "3_4.setembro.s4.song",
@@ -772,7 +816,8 @@
           "tprAction": {
             "gl": "Mover as mans coma se dirixise unha canción",
             "es": "Mover las manos como si dirigiera una canción"
-          }
+          },
+          "lamina": "pal_song"
         },
         {
           "id": "3_4.setembro.s4.cup",
@@ -795,7 +840,8 @@
           "tprAction": {
             "gl": "Levar á boca un anaco de froita imaxinaria",
             "es": "Llevarse a la boca un trozo de fruta imaginaria"
-          }
+          },
+          "lamina": "pal_snack"
         },
         {
           "id": "3_4.setembro.s4.play",
@@ -806,7 +852,8 @@
           "tprAction": {
             "gl": "Mover o corpo con ledicia no sitio",
             "es": "Mover el cuerpo con alegría en el sitio"
-          }
+          },
+          "lamina": "pal_play"
         },
         {
           "id": "3_4.setembro.s4.sing",
@@ -817,7 +864,8 @@
           "tprAction": {
             "gl": "Abrir a boca e cantar un «la, la, la» suave",
             "es": "Abrir la boca y cantar un «la, la, la» suave"
-          }
+          },
+          "lamina": "pal_sing"
         },
         {
           "id": "3_4.setembro.s4.push",
@@ -852,7 +900,8 @@
           "tprAction": {
             "gl": "Amorear bloques imaxinarios cada vez máis altos",
             "es": "Apilar bloques imaginarios cada vez más altos"
-          }
+          },
+          "lamina": "pal_build"
         },
         {
           "id": "3_4.setembro.s4.funny",
@@ -863,7 +912,8 @@
           "tprAction": {
             "gl": "Facer unha cara divertida e rir",
             "es": "Poner una cara divertida y reír"
-          }
+          },
+          "lamina": "pal_funny"
         },
         {
           "id": "3_4.setembro.s4.friendly",
@@ -874,7 +924,8 @@
           "tprAction": {
             "gl": "Ofrecer a man aberta a quen está ao lado",
             "es": "Ofrecer la mano abierta a quien está al lado"
-          }
+          },
+          "lamina": "pal_friendly"
         },
         {
           "id": "3_4.setembro.s4.hungry",
@@ -897,7 +948,8 @@
           "tprAction": {
             "gl": "Facer o xesto de beber coa man en forma de vaso",
             "es": "Hacer el gesto de beber con la mano en forma de vaso"
-          }
+          },
+          "lamina": "pal_thirsty"
         },
         {
           "id": "3_4.setembro.s4.give-me-five",
@@ -908,7 +960,8 @@
           "tprAction": {
             "gl": "Chocar a palma da man coa dunha compañeira",
             "es": "Chocar la palma de la mano con la de una compañera"
-          }
+          },
+          "lamina": "pal_give_me_five"
         },
         {
           "id": "3_4.setembro.s4.let-s-play",
@@ -919,7 +972,8 @@
           "tprAction": {
             "gl": "Levantar os brazos e botar a andar xuntos",
             "es": "Levantar los brazos y echar a andar juntos"
-          }
+          },
+          "lamina": "pal_let_s_play"
         },
         {
           "id": "3_4.setembro.s4.wave-and-smile",
@@ -930,7 +984,8 @@
           "tprAction": {
             "gl": "Acenar coa man e sorrir ao mesmo tempo",
             "es": "Saludar con la mano y sonreír a la vez"
-          }
+          },
+          "lamina": "pal_wave_and_smile"
         },
         {
           "id": "3_4.setembro.s4.you-and-me",
@@ -941,7 +996,8 @@
           "tprAction": {
             "gl": "Sinalar a outra persoa e logo a un mesmo",
             "es": "Señalar a otra persona y luego a uno mismo"
-          }
+          },
+          "lamina": "pal_you_and_me"
         }
       ]
     }

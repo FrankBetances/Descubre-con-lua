@@ -21,7 +21,8 @@
             "gl": "Tocar a rótula dúas veces",
             "es": "Tocar la rótula dos veces"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_kneecap"
         },
         {
           "id": "2_3.outubro.s1.ankle",
@@ -32,7 +33,8 @@
             "gl": "Xirar o nocello amodo",
             "es": "Girar el tobillo despacio"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_ankle"
         },
         {
           "id": "2_3.outubro.s1.hips",
@@ -43,7 +45,8 @@
             "gl": "Mover as cadeiras dun lado a outro",
             "es": "Mover las caderas de un lado a otro"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_hips"
         },
         {
           "id": "2_3.outubro.s1.trampoline",
@@ -54,7 +57,8 @@
             "gl": "Brincar sobre a cama elástica",
             "es": "Saltar sobre la cama elástica"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_trampoline"
         },
         {
           "id": "2_3.outubro.s1.jump-rope",
@@ -65,7 +69,8 @@
             "gl": "Pasar a corda polo chan",
             "es": "Pasar la comba por el suelo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_jump_rope"
         },
         {
           "id": "2_3.outubro.s1.cushion-jump",
@@ -76,7 +81,8 @@
             "gl": "Saltar enriba dun coxín",
             "es": "Saltar encima de un cojín"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_cushion_jump"
         },
         {
           "id": "2_3.outubro.s1.footsteps",
@@ -87,7 +93,8 @@
             "gl": "Pisar as pegadas do chan",
             "es": "Pisar las huellas del suelo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_footsteps"
         },
         {
           "id": "2_3.outubro.s1.bend-knees",
@@ -110,7 +117,8 @@
             "gl": "Saltar cos brazos arriba",
             "es": "Saltar con los brazos arriba"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_jump_up_high"
         },
         {
           "id": "2_3.outubro.s1.land-softly",
@@ -121,7 +129,8 @@
             "gl": "Caer dobrando os xeonllos",
             "es": "Caer doblando las rodillas"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_land_softly"
         },
         {
           "id": "2_3.outubro.s1.squat",
@@ -132,7 +141,8 @@
             "gl": "Baixar en crequenas",
             "es": "Bajar en cuclillas"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_squat"
         },
         {
           "id": "2_3.outubro.s1.bounce-up-and-down",
@@ -143,7 +153,8 @@
             "gl": "Brincar no sitio",
             "es": "Botar en el sitio"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_bounce_up_and_down"
         },
         {
           "id": "2_3.outubro.s1.springy-legs",
@@ -154,7 +165,8 @@
             "gl": "Brincar coma unha mola",
             "es": "Botar como un muelle"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_springy_legs"
         },
         {
           "id": "2_3.outubro.s1.bendy",
@@ -165,7 +177,8 @@
             "gl": "Dobrarse cara adiante",
             "es": "Doblarse hacia adelante"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_bendy"
         },
         {
           "id": "2_3.outubro.s1.jumpy",
@@ -176,7 +189,8 @@
             "gl": "Dar saltiños rápidos",
             "es": "Dar saltitos rápidos"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_jumping"
         },
         {
           "id": "2_3.outubro.s1.wobbly-legs",
@@ -187,7 +201,8 @@
             "gl": "Tremer as pernas",
             "es": "Temblar las piernas"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_wobbly_legs"
         },
         {
           "id": "2_3.outubro.s1.touch-your-knees",
@@ -210,7 +225,8 @@
             "gl": "Saltar o máis alto posible",
             "es": "Saltar lo más alto posible"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_how_high_can_you_jump"
         },
         {
           "id": "2_3.outubro.s1.knees-up-knees-down",
@@ -221,7 +237,8 @@
             "gl": "Levantar e baixar os xeonllos",
             "es": "Subir y bajar las rodillas"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_knees_up_knees_down"
         },
         {
           "id": "2_3.outubro.s1.jump-and-land",
@@ -232,7 +249,8 @@
             "gl": "Saltar e caer suave",
             "es": "Saltar y caer suave"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_jump_and_land"
         }
       ]
     },
@@ -252,7 +270,8 @@
             "gl": "Xirar en círculo coas mans estiradas",
             "es": "Girar en círculo con las manos estiradas"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_merry_go_round"
         },
         {
           "id": "2_3.outubro.s2.spin-top",
@@ -263,7 +282,8 @@
             "gl": "Facer xirar o trompo",
             "es": "Hacer girar el trompo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_wooden_top"
         },
         {
           "id": "2_3.outubro.s2.pinwheel",
@@ -274,7 +294,8 @@
             "gl": "Soprar o muíño de vento",
             "es": "Soplar el molinillo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_pinwheel"
         },
         {
           "id": "2_3.outubro.s2.ribbon-stick",
@@ -285,7 +306,8 @@
             "gl": "Facer círculos coa cinta",
             "es": "Hacer círculos con la cinta"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_ribbon_stick"
         },
         {
           "id": "2_3.outubro.s2.swivel-chair",
@@ -296,7 +318,8 @@
             "gl": "Xirar amodo na cadeira",
             "es": "Girar despacio en la silla"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_swivel_chair"
         },
         {
           "id": "2_3.outubro.s2.corner",
@@ -307,7 +330,8 @@
             "gl": "Camiñar ata a esquina",
             "es": "Caminar hasta la esquina"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_corner"
         },
         {
           "id": "2_3.outubro.s2.direction",
@@ -318,7 +342,8 @@
             "gl": "Sinalar cara a onde se vai",
             "es": "Señalar hacia dónde se va"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_direction"
         },
         {
           "id": "2_3.outubro.s2.spin-around",
@@ -341,7 +366,8 @@
             "gl": "Dar a volta e camiñar de volta",
             "es": "Darse la vuelta y caminar de vuelta"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_turn_back"
         },
         {
           "id": "2_3.outubro.s2.roll-on-the-floor",
@@ -352,7 +378,8 @@
             "gl": "Rodar de lado na alfombra",
             "es": "Rodar de lado en la alfombra"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_roll_on_the_floor"
         },
         {
           "id": "2_3.outubro.s2.swirl",
@@ -363,7 +390,8 @@
             "gl": "Facer remuíños cos brazos",
             "es": "Hacer remolinos con los brazos"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_swirl"
         },
         {
           "id": "2_3.outubro.s2.rotate",
@@ -374,7 +402,8 @@
             "gl": "Xirar as mans amodo",
             "es": "Girar las manos despacio"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_rotate"
         },
         {
           "id": "2_3.outubro.s2.dizzy-dizzy",
@@ -385,7 +414,8 @@
             "gl": "Parar e bambear rindo",
             "es": "Parar y tambalearse riendo"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_very_dizzy"
         },
         {
           "id": "2_3.outubro.s2.whirly",
@@ -396,7 +426,8 @@
             "gl": "Xirar un dedo no aire",
             "es": "Girar un dedo en el aire"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_whirling"
         },
         {
           "id": "2_3.outubro.s2.circular",
@@ -407,7 +438,8 @@
             "gl": "Debuxar un círculo grande",
             "es": "Dibujar un círculo grande"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_circular"
         },
         {
           "id": "2_3.outubro.s2.backwards",
@@ -418,7 +450,8 @@
             "gl": "Dar dous pasos cara atrás",
             "es": "Dar dos pasos hacia atrás"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_backwards"
         },
         {
           "id": "2_3.outubro.s2.spin-like-a-top",
@@ -429,7 +462,8 @@
             "gl": "Xirar cos brazos pegados",
             "es": "Girar con los brazos pegados"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_spin_like_a_top"
         },
         {
           "id": "2_3.outubro.s2.turn-to-the-door",
@@ -440,7 +474,8 @@
             "gl": "Virarse cara á porta",
             "es": "Girarse hacia la puerta"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_turn_to_the_door"
         },
         {
           "id": "2_3.outubro.s2.stop-spinning",
@@ -451,7 +486,8 @@
             "gl": "Parar de súpeto",
             "es": "Parar de golpe"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_stop_spinning"
         },
         {
           "id": "2_3.outubro.s2.round-the-chair",
@@ -462,7 +498,8 @@
             "gl": "Camiñar arredor da cadeira",
             "es": "Caminar alrededor de la silla"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_round_the_chair"
         }
       ]
     },
@@ -482,7 +519,8 @@
             "gl": "Correr pola pista pintada",
             "es": "Correr por la pista pintada"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_race_track"
         },
         {
           "id": "2_3.outubro.s3.finish-line",
@@ -493,7 +531,8 @@
             "gl": "Pasar a liña de meta",
             "es": "Pasar la línea de meta"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_finish_line"
         },
         {
           "id": "2_3.outubro.s3.whistle-blow",
@@ -504,7 +543,8 @@
             "gl": "Parar ao oír o asubío",
             "es": "Parar al oír el pitido"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_referee_s_whistle"
         },
         {
           "id": "2_3.outubro.s3.red-card",
@@ -527,7 +567,8 @@
             "gl": "Correr ao ver a tarxeta verde",
             "es": "Correr al ver la tarjeta verde"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_green_card"
         },
         {
           "id": "2_3.outubro.s3.cone",
@@ -538,7 +579,8 @@
             "gl": "Rodear o cono correndo",
             "es": "Rodear el cono corriendo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_cone"
         },
         {
           "id": "2_3.outubro.s3.playground",
@@ -549,7 +591,8 @@
             "gl": "Saír correndo ao patio",
             "es": "Salir corriendo al patio"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_playground"
         },
         {
           "id": "2_3.outubro.s3.dash",
@@ -584,7 +627,8 @@
             "gl": "Mover os brazos coma un coche rápido",
             "es": "Mover los brazos como un coche rápido"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_zoom"
         },
         {
           "id": "2_3.outubro.s3.jog",
@@ -595,7 +639,8 @@
             "gl": "Correr amodo no sitio",
             "es": "Correr despacio en el sitio"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_jog"
         },
         {
           "id": "2_3.outubro.s3.catch-up",
@@ -606,7 +651,8 @@
             "gl": "Correr detrás e tocar o ombro",
             "es": "Correr detrás y tocar el hombro"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_catch_up"
         },
         {
           "id": "2_3.outubro.s3.speedy",
@@ -617,7 +663,8 @@
             "gl": "Mover os pés moi rápido",
             "es": "Mover los pies muy rápido"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_speedy"
         },
         {
           "id": "2_3.outubro.s3.still",
@@ -628,7 +675,8 @@
             "gl": "Quedar quieto coma unha pedra",
             "es": "Quedarse quieto como una piedra"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_still"
         },
         {
           "id": "2_3.outubro.s3.out-of-breath",
@@ -639,7 +687,8 @@
             "gl": "Respirar forte despois de correr",
             "es": "Respirar fuerte después de correr"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_out_of_breath"
         },
         {
           "id": "2_3.outubro.s3.sporty",
@@ -650,7 +699,8 @@
             "gl": "Facer un saúdo deportivo",
             "es": "Hacer un saludo deportivo"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_sporty"
         },
         {
           "id": "2_3.outubro.s3.ready-go",
@@ -661,7 +711,8 @@
             "gl": "Saír correndo ao oír «xa»",
             "es": "Salir corriendo al oír «ya»"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_ready_go"
         },
         {
           "id": "2_3.outubro.s3.stop-right-there",
@@ -672,7 +723,8 @@
             "gl": "Parar e quedar quieto",
             "es": "Parar y quedarse quieto"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_stop_right_there"
         },
         {
           "id": "2_3.outubro.s3.run-run-run",
@@ -683,7 +735,8 @@
             "gl": "Correr no sitio",
             "es": "Correr en el sitio"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_run_run_run"
         },
         {
           "id": "2_3.outubro.s3.run-to-the-cone",
@@ -694,7 +747,8 @@
             "gl": "Correr e tocar o cono",
             "es": "Correr y tocar el cono"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_run_to_the_cone"
         }
       ]
     },
@@ -714,7 +768,8 @@
             "gl": "Bailar no medio da sala",
             "es": "Bailar en medio de la sala"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_dance_floor"
         },
         {
           "id": "2_3.outubro.s4.tap-shoes",
@@ -725,7 +780,8 @@
             "gl": "Bater cos talóns no chan",
             "es": "Golpear con los talones en el suelo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_tap_shoes"
         },
         {
           "id": "2_3.outubro.s4.ballet",
@@ -736,7 +792,8 @@
             "gl": "Poñerse de puntas cos brazos en arco",
             "es": "Ponerse de puntillas con los brazos en arco"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_ballet"
         },
         {
           "id": "2_3.outubro.s4.conga-line",
@@ -747,7 +804,8 @@
             "gl": "Bailar en fila coas mans nos ombros",
             "es": "Bailar en fila con las manos en los hombros"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_conga_line"
         },
         {
           "id": "2_3.outubro.s4.disco",
@@ -758,7 +816,8 @@
             "gl": "Sinalar arriba e abaixo bailando",
             "es": "Señalar arriba y abajo bailando"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_disco"
         },
         {
           "id": "2_3.outubro.s4.beat",
@@ -769,7 +828,8 @@
             "gl": "Bater palmas ao compás",
             "es": "Dar palmas al compás"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_beat"
         },
         {
           "id": "2_3.outubro.s4.sole",
@@ -780,7 +840,8 @@
             "gl": "Tocar a planta do pé",
             "es": "Tocar la planta del pie"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_sole"
         },
         {
           "id": "2_3.outubro.s4.shuffle",
@@ -827,7 +888,8 @@
             "gl": "Dar un paso cara atrás",
             "es": "Dar un paso hacia atrás"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_step_back"
         },
         {
           "id": "2_3.outubro.s4.wiggle-hips",
@@ -838,7 +900,8 @@
             "gl": "Menear as cadeiras rindo",
             "es": "Menear las caderas riendo"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_wiggle_hips"
         },
         {
           "id": "2_3.outubro.s4.groovy",
@@ -849,7 +912,8 @@
             "gl": "Bailar con moita marcha",
             "es": "Bailar con mucha marcha"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_groovy"
         },
         {
           "id": "2_3.outubro.s4.graceful-steps",
@@ -860,7 +924,8 @@
             "gl": "Camiñar de puntas amodo",
             "es": "Caminar de puntillas despacio"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_graceful_steps"
         },
         {
           "id": "2_3.outubro.s4.stompy",
@@ -871,7 +936,8 @@
             "gl": "Pisar forte ao ritmo",
             "es": "Pisar fuerte al ritmo"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_stomping"
         },
         {
           "id": "2_3.outubro.s4.lively",
@@ -882,7 +948,8 @@
             "gl": "Bailar con enerxía",
             "es": "Bailar con energía"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_lively"
         },
         {
           "id": "2_3.outubro.s4.let-s-dance",
@@ -893,7 +960,8 @@
             "gl": "Empezar a bailar",
             "es": "Empezar a bailar"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_let_s_dance"
         },
         {
           "id": "2_3.outubro.s4.feet-on-the-floor",
@@ -904,7 +972,8 @@
             "gl": "Pousar os pés no chan",
             "es": "Posar los pies en el suelo"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_feet_on_the_floor"
         },
         {
           "id": "2_3.outubro.s4.dance-and-freeze",
@@ -927,7 +996,8 @@
             "gl": "Dar un paso e logo dous",
             "es": "Dar un paso y luego dos"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_one_step_two_steps"
         }
       ]
     }

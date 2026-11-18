@@ -45,7 +45,8 @@
             "gl": "Debuxar unha onda de area",
             "es": "Dibujar una ola de arena"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_dune"
         },
         {
           "id": "4_5.abril.s1.nature-reserve",
@@ -56,7 +57,8 @@
             "gl": "Abrazar o aire con coidado",
             "es": "Abrazar el aire con cuidado"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_nature_reserve"
         },
         {
           "id": "4_5.abril.s1.binoculars",
@@ -67,7 +69,8 @@
             "gl": "Facer prismáticos coas mans",
             "es": "Hacer prismáticos con las manos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_binoculars"
         },
         {
           "id": "4_5.abril.s1.boat-trip",
@@ -78,7 +81,8 @@
             "gl": "Balancearse coma no barco",
             "es": "Balancearse como en el barco"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_boat_trip"
         },
         {
           "id": "4_5.abril.s1.campsite",
@@ -89,7 +93,8 @@
             "gl": "Facer unha tenda coas mans",
             "es": "Hacer una tienda con las manos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_campsite"
         },
         {
           "id": "4_5.abril.s1.fly-with-wings",
@@ -100,7 +105,8 @@
             "gl": "Estirar os brazos e voar",
             "es": "Estirar los brazos y volar"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_fly_with_wings"
         },
         {
           "id": "4_5.abril.s1.watch-the-sky",
@@ -111,7 +117,8 @@
             "gl": "Mirar cara arriba en silencio",
             "es": "Mirar hacia arriba en silencio"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_watch_the_sky"
         },
         {
           "id": "4_5.abril.s1.protect",
@@ -134,7 +141,8 @@
             "gl": "Sinalar co prismático",
             "es": "Señalar con los prismáticos"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_spot_a_bird"
         },
         {
           "id": "4_5.abril.s1.keep-the-path",
@@ -145,7 +153,8 @@
             "gl": "Camiñar pola liña",
             "es": "Caminar por la línea"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_keep_to_the_path"
         },
         {
           "id": "4_5.abril.s1.wild-and-free",
@@ -156,7 +165,8 @@
             "gl": "Correr cos brazos abertos",
             "es": "Correr con los brazos abiertos"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_wild_and_free"
         },
         {
           "id": "4_5.abril.s1.protected",
@@ -167,7 +177,8 @@
             "gl": "Facer unha cúpula coas mans",
             "es": "Hacer una cúpula con las manos"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_protected"
         },
         {
           "id": "4_5.abril.s1.rocky",
@@ -178,7 +189,8 @@
             "gl": "Tocar unha superficie dura",
             "es": "Tocar una superficie dura"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_rocky"
         },
         {
           "id": "4_5.abril.s1.remote",
@@ -189,7 +201,8 @@
             "gl": "Sinalar moi lonxe",
             "es": "Señalar muy lejos"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_remote"
         },
         {
           "id": "4_5.abril.s1.look-through-the-binoculars",
@@ -200,7 +213,8 @@
             "gl": "Levar as mans aos ollos",
             "es": "Llevar las manos a los ojos"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_look_through_the_binoculars"
         },
         {
           "id": "4_5.abril.s1.what-bird-is-that",
@@ -211,7 +225,8 @@
             "gl": "Sinalar o ceo",
             "es": "Señalar el cielo"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_what_bird_is_that"
         },
         {
           "id": "4_5.abril.s1.we-walk-on-the-path-so-the-plants-can-grow",
@@ -222,7 +237,8 @@
             "gl": "Camiñar pola liña",
             "es": "Caminar por la línea"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_we_walk_on_the_path_so_the_plants_can_grow"
         },
         {
           "id": "4_5.abril.s1.islands-in-the-sea",
@@ -233,7 +249,8 @@
             "gl": "Facer montes coas mans",
             "es": "Hacer montes con las manos"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_islands_in_the_sea"
         }
       ]
     },
@@ -265,7 +282,8 @@
             "gl": "Abrir os brazos a secar",
             "es": "Abrir los brazos a secar"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_cormorant"
         },
         {
           "id": "4_5.abril.s2.wingspan",
@@ -276,7 +294,8 @@
             "gl": "Estirar os brazos ao máximo",
             "es": "Estirar los brazos al máximo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_wingspan"
         },
         {
           "id": "4_5.abril.s2.feathers",
@@ -287,7 +306,8 @@
             "gl": "Acariñar os brazos coma plumas",
             "es": "Acariciar los brazos como plumas"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_feathers"
         },
         {
           "id": "4_5.abril.s2.cliff-nest",
@@ -298,7 +318,8 @@
             "gl": "Facer un niño na parede",
             "es": "Hacer un nido en la pared"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_cliff_nest"
         },
         {
           "id": "4_5.abril.s2.webbed-feet",
@@ -309,7 +330,8 @@
             "gl": "Abrir os dedos das mans",
             "es": "Abrir los dedos de las manos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_webbed_feet"
         },
         {
           "id": "4_5.abril.s2.fish-supper",
@@ -320,7 +342,8 @@
             "gl": "Facer que se colle un peixe co bico",
             "es": "Hacer que se coge un pez con el pico"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_fish_supper"
         },
         {
           "id": "4_5.abril.s2.soar",
@@ -331,7 +354,8 @@
             "gl": "Abrir os brazos e xirar amodo",
             "es": "Abrir los brazos y girar despacio"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_soar"
         },
         {
           "id": "4_5.abril.s2.dive-for-fish",
@@ -342,7 +366,8 @@
             "gl": "Baixar as mans xuntas en picado",
             "es": "Bajar las manos juntas en picado"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_dive_for_fish"
         },
         {
           "id": "4_5.abril.s2.dry-wings",
@@ -353,7 +378,8 @@
             "gl": "Abrir os brazos ao sol",
             "es": "Abrir los brazos al sol"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_dry_wings"
         },
         {
           "id": "4_5.abril.s2.squawk",
@@ -364,7 +390,8 @@
             "gl": "Facer «cuac» forte",
             "es": "Hacer «cuac» fuerte"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_squawk"
         },
         {
           "id": "4_5.abril.s2.hover",
@@ -375,7 +402,8 @@
             "gl": "Quedar cos brazos abertos quietos",
             "es": "Quedarse con los brazos abiertos quietos"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_hover"
         },
         {
           "id": "4_5.abril.s2.soaring",
@@ -386,7 +414,8 @@
             "gl": "Voar amodo",
             "es": "Volar despacio"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_soaring"
         },
         {
           "id": "4_5.abril.s2.webbed",
@@ -397,7 +426,8 @@
             "gl": "Abrir os dedos",
             "es": "Abrir los dedos"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_webbed"
         },
         {
           "id": "4_5.abril.s2.graceful-flight",
@@ -408,7 +438,8 @@
             "gl": "Mover os brazos suave",
             "es": "Mover los brazos suave"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_graceful_flight"
         },
         {
           "id": "4_5.abril.s2.glossy-black",
@@ -419,7 +450,8 @@
             "gl": "Pasar a man polo cabelo",
             "es": "Pasar la mano por el pelo"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_glossy_black"
         },
         {
           "id": "4_5.abril.s2.look-how-high-it-flies",
@@ -430,7 +462,8 @@
             "gl": "Sinalar moi alto",
             "es": "Señalar muy alto"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_look_how_high_it_flies"
         },
         {
           "id": "4_5.abril.s2.the-gull-flies-higher-than-the-cormorant",
@@ -441,7 +474,8 @@
             "gl": "Voar alto e baixo",
             "es": "Volar alto y bajo"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_the_gull_flies_higher_than_the_cormorant"
         },
         {
           "id": "4_5.abril.s2.squawk-like-a-seagull",
@@ -452,7 +486,8 @@
             "gl": "Facer «cuac»",
             "es": "Hacer «cuac»"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_squawk_like_a_seagull"
         },
         {
           "id": "4_5.abril.s2.dive-catch-fly",
@@ -463,7 +498,8 @@
             "gl": "Baixar, coller e subir",
             "es": "Bajar, coger y subir"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_dive_catch_fly"
         }
       ]
     },
@@ -483,7 +519,8 @@
             "gl": "Baixar as mans ata o chan",
             "es": "Bajar las manos hasta el suelo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_seabed"
         },
         {
           "id": "4_5.abril.s3.kelp",
@@ -494,7 +531,8 @@
             "gl": "Moverse ondulando coma alga",
             "es": "Moverse ondulando como un alga"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_kelp"
         },
         {
           "id": "4_5.abril.s3.sea-urchin",
@@ -505,7 +543,8 @@
             "gl": "Abrir os dedos coma púas",
             "es": "Abrir los dedos como púas"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_sea_urchin"
         },
         {
           "id": "4_5.abril.s3.anemone",
@@ -516,7 +555,8 @@
             "gl": "Abrir e pechar os dedos amodo",
             "es": "Abrir y cerrar los dedos despacio"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_anemone"
         },
         {
           "id": "4_5.abril.s3.snorkel",
@@ -527,7 +567,8 @@
             "gl": "Poñer un tubo imaxinario",
             "es": "Ponerse un tubo imaginario"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_snorkel"
         },
         {
           "id": "4_5.abril.s3.goggles",
@@ -538,7 +579,8 @@
             "gl": "Facer lentes coas mans",
             "es": "Hacer gafas con las manos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_goggles"
         },
         {
           "id": "4_5.abril.s3.shoal",
@@ -549,7 +591,8 @@
             "gl": "Moverse todos xuntos",
             "es": "Moverse todos juntos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_shoal"
         },
         {
           "id": "4_5.abril.s3.swim-underwater",
@@ -560,7 +603,8 @@
             "gl": "Aguantar o aire e nadar",
             "es": "Aguantar el aire y nadar"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_swim_underwater"
         },
         {
           "id": "4_5.abril.s3.hold-your-breath",
@@ -571,7 +615,8 @@
             "gl": "Inchar as meixelas",
             "es": "Inflar las mejillas"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_hold_your_breath"
         },
         {
           "id": "4_5.abril.s3.sway-with-the-current",
@@ -582,7 +627,8 @@
             "gl": "Balancearse amodo",
             "es": "Balancearse despacio"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_sway_with_the_current"
         },
         {
           "id": "4_5.abril.s3.explore-the-seabed",
@@ -593,7 +639,8 @@
             "gl": "Gatear mirando o chan",
             "es": "Gatear mirando el suelo"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_explore_the_seabed"
         },
         {
           "id": "4_5.abril.s3.swim-in-a-group",
@@ -604,7 +651,8 @@
             "gl": "Moverse xuntos coma peixes",
             "es": "Moverse juntos como peces"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_swim_in_a_group"
         },
         {
           "id": "4_5.abril.s3.murky",
@@ -615,7 +663,8 @@
             "gl": "Mover as mans diante dos ollos",
             "es": "Mover las manos delante de los ojos"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_murky"
         },
         {
           "id": "4_5.abril.s3.crystal-clear",
@@ -626,7 +675,8 @@
             "gl": "Mirar a través dos dedos",
             "es": "Mirar a través de los dedos"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_crystal_clear"
         },
         {
           "id": "4_5.abril.s3.deep-blue",
@@ -649,7 +699,8 @@
             "gl": "Tocar con coidado",
             "es": "Tocar con cuidado"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_spiny"
         },
         {
           "id": "4_5.abril.s3.what-lives-on-the-seabed",
@@ -660,7 +711,8 @@
             "gl": "Mirar abaixo",
             "es": "Mirar abajo"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_what_lives_on_the_seabed"
         },
         {
           "id": "4_5.abril.s3.don-t-touch-just-look",
@@ -671,7 +723,8 @@
             "gl": "Poñer as mans detrás",
             "es": "Poner las manos detrás"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_don_t_touch_just_look"
         },
         {
           "id": "4_5.abril.s3.the-deeper-you-go-the-darker-it-gets",
@@ -682,7 +735,8 @@
             "gl": "Baixar e pechar os ollos",
             "es": "Bajar y cerrar los ojos"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_the_deeper_you_go_the_darker_it_gets"
         },
         {
           "id": "4_5.abril.s3.fish-swim-together-in-a-shoal",
@@ -693,7 +747,8 @@
             "gl": "Moverse todos xuntos",
             "es": "Moverse todos juntos"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_fish_swim_together_in_a_shoal"
         }
       ]
     },
@@ -737,7 +792,8 @@
             "gl": "Engurrar un plástico",
             "es": "Arrugar un plástico"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_plastic"
         },
         {
           "id": "4_5.abril.s4.glass-jar",
@@ -748,7 +804,8 @@
             "gl": "Suxeitar un bote con coidado",
             "es": "Sostener un tarro con cuidado"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_glass_jar"
         },
         {
           "id": "4_5.abril.s4.reusable-bag",
@@ -759,7 +816,8 @@
             "gl": "Dobrar e gardar a bolsa",
             "es": "Doblar y guardar la bolsa"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_reusable_bag"
         },
         {
           "id": "4_5.abril.s4.compost",
@@ -770,7 +828,8 @@
             "gl": "Botar restos de froita",
             "es": "Echar restos de fruta"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_compost"
         },
         {
           "id": "4_5.abril.s4.nature",
@@ -781,7 +840,8 @@
             "gl": "Abrir os brazos ao aire libre",
             "es": "Abrir los brazos al aire libre"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_nature"
         },
         {
           "id": "4_5.abril.s4.pick-up-litter",
@@ -792,7 +852,8 @@
             "gl": "Agacharse e coller",
             "es": "Agacharse y coger"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_pick_up_litter"
         },
         {
           "id": "4_5.abril.s4.recycle",
@@ -803,7 +864,8 @@
             "gl": "Facer un círculo con frechas",
             "es": "Hacer un círculo con flechas"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_recycle"
         },
         {
           "id": "4_5.abril.s4.reuse",
@@ -814,7 +876,8 @@
             "gl": "Usar outra vez a bolsa",
             "es": "Usar otra vez la bolsa"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_reuse"
         },
         {
           "id": "4_5.abril.s4.save-water",
@@ -825,7 +888,8 @@
             "gl": "Pechar a billa",
             "es": "Cerrar el grifo"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_save_water"
         },
         {
           "id": "4_5.abril.s4.turn-off-lights",
@@ -836,7 +900,8 @@
             "gl": "Premer un interruptor",
             "es": "Pulsar un interruptor"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_turn_off_lights"
         },
         {
           "id": "4_5.abril.s4.tidy-beach",
@@ -847,7 +912,8 @@
             "gl": "Amosar a man baleira",
             "es": "Enseñar la mano vacía"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_clean_beach"
         },
         {
           "id": "4_5.abril.s4.eco-friendly",
@@ -858,7 +924,8 @@
             "gl": "Abrazar unha bóla do mundo",
             "es": "Abrazar una bola del mundo"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_eco_friendly"
         },
         {
           "id": "4_5.abril.s4.wasteful",
@@ -869,7 +936,8 @@
             "gl": "Deixar caer auga e parar",
             "es": "Dejar caer agua y parar"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_wasteful"
         },
         {
           "id": "4_5.abril.s4.careful-with-nature",
@@ -880,7 +948,8 @@
             "gl": "Pousar a man suave",
             "es": "Posar la mano suave"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_careful_with_nature"
         },
         {
           "id": "4_5.abril.s4.plastic-goes-in-the-yellow-bin",
@@ -891,7 +960,8 @@
             "gl": "Botar e sinalar o amarelo",
             "es": "Echar y señalar el amarillo"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_plastic_goes_in_the_yellow_bin"
         },
         {
           "id": "4_5.abril.s4.leave-only-footprints",
@@ -902,7 +972,8 @@
             "gl": "Pisar e mirar a pegada",
             "es": "Pisar y mirar la huella"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_leave_only_footprints"
         },
         {
           "id": "4_5.abril.s4.thumbs-up-for-a-clean-beach",
@@ -913,7 +984,8 @@
             "gl": "Levantar o polgar",
             "es": "Levantar el pulgar"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_thumbs_up_for_a_clean_beach"
         },
         {
           "id": "4_5.abril.s4.turn-off-the-tap",
@@ -924,7 +996,8 @@
             "gl": "Xirar a billa",
             "es": "Girar el grifo"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_turn_off_the_tap"
         }
       ]
     }

@@ -33,7 +33,8 @@
             "gl": "Debuxar raias no brazo",
             "es": "Dibujar rayas en el brazo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_zebra"
         },
         {
           "id": "2_3.febreiro.s1.penguin",
@@ -44,7 +45,8 @@
             "gl": "Camiñar con pasiños de pingüín",
             "es": "Caminar con pasitos de pingüino"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_penguin"
         },
         {
           "id": "2_3.febreiro.s1.kangaroo",
@@ -55,7 +57,8 @@
             "gl": "Saltar cos pés xuntos",
             "es": "Saltar con los pies juntos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_kangaroo"
         },
         {
           "id": "2_3.febreiro.s1.animal-ears",
@@ -66,7 +69,8 @@
             "gl": "Poñer as mans coma orellas",
             "es": "Poner las manos como orejas"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_animal_ears"
         },
         {
           "id": "2_3.febreiro.s1.paws",
@@ -77,7 +81,8 @@
             "gl": "Camiñar a catro patas",
             "es": "Caminar a cuatro patas"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_paws"
         },
         {
           "id": "2_3.febreiro.s1.mane",
@@ -88,7 +93,8 @@
             "gl": "Axitar o pelo coma un león",
             "es": "Agitar el pelo como un león"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_mane"
         },
         {
           "id": "2_3.febreiro.s1.prowl",
@@ -99,7 +105,8 @@
             "gl": "Camiñar agachado amodo",
             "es": "Caminar agachado despacio"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_prowl"
         },
         {
           "id": "2_3.febreiro.s1.pounce",
@@ -110,7 +117,8 @@
             "gl": "Saltar cara adiante coas mans",
             "es": "Saltar hacia adelante con las manos"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_pounce"
         },
         {
           "id": "2_3.febreiro.s1.growl",
@@ -121,7 +129,8 @@
             "gl": "Facer «grrr» baixiño",
             "es": "Hacer «grrr» bajito"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_growl"
         },
         {
           "id": "2_3.febreiro.s1.stripe",
@@ -132,7 +141,8 @@
             "gl": "Pintar raias na cara co dedo",
             "es": "Pintar rayas en la cara con el dedo"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_paint_stripes"
         },
         {
           "id": "2_3.febreiro.s1.hop-around",
@@ -143,7 +153,8 @@
             "gl": "Saltar dando unha volta",
             "es": "Saltar dando una vuelta"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_hop_around"
         },
         {
           "id": "2_3.febreiro.s1.stripy",
@@ -154,7 +165,8 @@
             "gl": "Tocar un pano de raias",
             "es": "Tocar un pañuelo de rayas"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_stripy"
         },
         {
           "id": "2_3.febreiro.s1.fierce",
@@ -165,7 +177,8 @@
             "gl": "Poñer cara de feroz rindo",
             "es": "Poner cara de feroz riendo"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_fierce"
         },
         {
           "id": "2_3.febreiro.s1.waddly",
@@ -176,7 +189,8 @@
             "gl": "Bambearse coma un pingüín",
             "es": "Bambolearse como un pingüino"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_waddling"
         },
         {
           "id": "2_3.febreiro.s1.hoppy",
@@ -187,7 +201,8 @@
             "gl": "Brincar sen parar",
             "es": "Brincar sin parar"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_hopping"
         },
         {
           "id": "2_3.febreiro.s1.i-m-a-tiger",
@@ -198,7 +213,8 @@
             "gl": "Poñer as poutas e rir",
             "es": "Poner las garras y reír"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_i_m_a_tiger"
         },
         {
           "id": "2_3.febreiro.s1.grrr-grrr",
@@ -209,7 +225,8 @@
             "gl": "Rosmar e sorrir",
             "es": "Gruñir y sonreír"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_grrr_grrr"
         },
         {
           "id": "2_3.febreiro.s1.hop-like-a-kangaroo",
@@ -220,7 +237,8 @@
             "gl": "Saltar cos pés xuntos",
             "es": "Saltar con los pies juntos"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_hop_like_a_kangaroo"
         },
         {
           "id": "2_3.febreiro.s1.walk-like-a-penguin",
@@ -231,7 +249,8 @@
             "gl": "Camiñar con pasiños curtos",
             "es": "Caminar con pasitos cortos"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_walk_like_a_penguin"
         }
       ]
     },
@@ -263,7 +282,8 @@
             "gl": "Abrir moito a boca",
             "es": "Abrir mucho la boca"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_hippo"
         },
         {
           "id": "2_3.febreiro.s2.gorilla",
@@ -274,7 +294,8 @@
             "gl": "Bater no peito suave",
             "es": "Golpear el pecho suave"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_gorilla"
         },
         {
           "id": "2_3.febreiro.s2.parrot-feather",
@@ -285,7 +306,8 @@
             "gl": "Mover unha pluma de cores",
             "es": "Mover una pluma de colores"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_parrot_feather"
         },
         {
           "id": "2_3.febreiro.s2.vine",
@@ -296,7 +318,8 @@
             "gl": "Agarrarse a unha liana imaxinaria",
             "es": "Agarrarse a una liana imaginaria"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_vine"
         },
         {
           "id": "2_3.febreiro.s2.palm-tree",
@@ -307,7 +330,8 @@
             "gl": "Estirar os brazos coma unha palmeira",
             "es": "Estirar los brazos como una palmera"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_palm_tree"
         },
         {
           "id": "2_3.febreiro.s2.tiger-cub",
@@ -318,7 +342,8 @@
             "gl": "Encollerse coma un tigriño",
             "es": "Acurrucarse como un cachorro de tigre"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_tiger_cub"
         },
         {
           "id": "2_3.febreiro.s2.swing-from",
@@ -329,7 +354,8 @@
             "gl": "Balancear os brazos coma un mono",
             "es": "Balancear los brazos como un mono"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_swing_from_a_vine"
         },
         {
           "id": "2_3.febreiro.s2.beat-chest",
@@ -340,7 +366,8 @@
             "gl": "Bater no peito coma un gorila",
             "es": "Golpear el pecho como un gorila"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_beat_your_chest"
         },
         {
           "id": "2_3.febreiro.s2.tiptoe-past",
@@ -351,7 +378,8 @@
             "gl": "Pasar de puntas en silencio",
             "es": "Pasar de puntillas en silencio"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_tiptoe_past"
         },
         {
           "id": "2_3.febreiro.s2.peer",
@@ -362,7 +390,8 @@
             "gl": "Mirar entre as follas",
             "es": "Mirar entre las hojas"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_peer"
         },
         {
           "id": "2_3.febreiro.s2.yawn-wide",
@@ -373,7 +402,8 @@
             "gl": "Bocexar coma un hipopótamo",
             "es": "Bostezar como un hipopótamo"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_yawn_wide"
         },
         {
           "id": "2_3.febreiro.s2.jungly",
@@ -384,7 +414,8 @@
             "gl": "Mover as mans coma herba alta",
             "es": "Mover las manos como hierba alta"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_tropical"
         },
         {
           "id": "2_3.febreiro.s2.enormous",
@@ -395,7 +426,8 @@
             "gl": "Abrir os brazos moi grandes",
             "es": "Abrir los brazos muy grandes"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_enormous"
         },
         {
           "id": "2_3.febreiro.s2.hot-and-sticky",
@@ -406,7 +438,8 @@
             "gl": "Abanarse coa man",
             "es": "Abanicarse con la mano"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_hot_and_sticky"
         },
         {
           "id": "2_3.febreiro.s2.leafy-jungle",
@@ -417,7 +450,8 @@
             "gl": "Mover os dedos coma follas",
             "es": "Mover los dedos como hojas"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_leafy_jungle"
         },
         {
           "id": "2_3.febreiro.s2.who-lives-here",
@@ -428,7 +462,8 @@
             "gl": "Mirar arredor sorprendido",
             "es": "Mirar alrededor sorprendido"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_who_lives_here"
         },
         {
           "id": "2_3.febreiro.s2.big-mouth-hippo",
@@ -439,7 +474,8 @@
             "gl": "Abrir a boca moito",
             "es": "Abrir mucho la boca"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_big_mouth_hippo"
         },
         {
           "id": "2_3.febreiro.s2.through-the-jungle",
@@ -450,7 +486,8 @@
             "gl": "Camiñar apartando follas",
             "es": "Caminar apartando hojas"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_through_the_jungle"
         },
         {
           "id": "2_3.febreiro.s2.up-the-palm-tree",
@@ -461,7 +498,8 @@
             "gl": "Subir os brazos coma trepando",
             "es": "Subir los brazos como trepando"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_up_the_palm_tree"
         }
       ]
     },
@@ -517,7 +555,8 @@
             "gl": "Enroscarse coma un raposo",
             "es": "Enroscarse como un zorro"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_arctic_fox"
         },
         {
           "id": "2_3.febreiro.s3.iceberg",
@@ -528,7 +567,8 @@
             "gl": "Facer un pico coas mans",
             "es": "Hacer un pico con las manos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_iceberg"
         },
         {
           "id": "2_3.febreiro.s3.igloo",
@@ -539,7 +579,8 @@
             "gl": "Facer unha cúpula cos brazos",
             "es": "Hacer una cúpula con los brazos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_igloo"
         },
         {
           "id": "2_3.febreiro.s3.fishing-hole",
@@ -550,7 +591,8 @@
             "gl": "Facer un círculo no chan",
             "es": "Hacer un círculo en el suelo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_fishing_hole"
         },
         {
           "id": "2_3.febreiro.s3.clap-flippers",
@@ -561,7 +603,8 @@
             "gl": "Bater palmas coma unha foca",
             "es": "Dar palmas como una foca"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_clap_flippers"
         },
         {
           "id": "2_3.febreiro.s3.slide-on-ice",
@@ -572,7 +615,8 @@
             "gl": "Esvarar cos calcetíns",
             "es": "Deslizarse con los calcetines"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_slide_on_ice"
         },
         {
           "id": "2_3.febreiro.s3.waddle-along",
@@ -583,7 +627,8 @@
             "gl": "Bambearse dun lado a outro",
             "es": "Bambolearse de un lado a otro"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_waddle_along"
         },
         {
           "id": "2_3.febreiro.s3.belly-slide",
@@ -594,7 +639,8 @@
             "gl": "Deitarse de barriga e esvarar",
             "es": "Tumbarse de barriga y deslizarse"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_belly_slide"
         },
         {
           "id": "2_3.febreiro.s3.huddle-together",
@@ -605,7 +651,8 @@
             "gl": "Apertarse todos xuntos",
             "es": "Apretarse todos juntos"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_huddle_together"
         },
         {
           "id": "2_3.febreiro.s3.icy",
@@ -616,7 +663,8 @@
             "gl": "Tremer coma no xeo",
             "es": "Temblar como en el hielo"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_icy"
         },
         {
           "id": "2_3.febreiro.s3.snowy-white",
@@ -627,7 +675,8 @@
             "gl": "Sinalar algo branco",
             "es": "Señalar algo blanco"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_snowy_white"
         },
         {
           "id": "2_3.febreiro.s3.furry-coat",
@@ -638,7 +687,8 @@
             "gl": "Acariñar un peluche grosiño",
             "es": "Acariciar un peluche gordito"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_furry_coat"
         },
         {
           "id": "2_3.febreiro.s3.arctic",
@@ -649,7 +699,8 @@
             "gl": "Abrazarse polo frío",
             "es": "Abrazarse por el frío"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_arctic"
         },
         {
           "id": "2_3.febreiro.s3.brr-the-arctic",
@@ -660,7 +711,8 @@
             "gl": "Tremer e sorrir",
             "es": "Temblar y sonreír"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_brr_the_arctic"
         },
         {
           "id": "2_3.febreiro.s3.slide-like-a-penguin",
@@ -671,7 +723,8 @@
             "gl": "Esvarar cos brazos pegados",
             "es": "Deslizarse con los brazos pegados"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_slide_like_a_penguin"
         },
         {
           "id": "2_3.febreiro.s3.seals-and-bears",
@@ -682,7 +735,8 @@
             "gl": "Bater palmas e camiñar pesado",
             "es": "Dar palmas y caminar pesado"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_seals_and_bears"
         },
         {
           "id": "2_3.febreiro.s3.on-the-ice",
@@ -693,7 +747,8 @@
             "gl": "Camiñar con coidado",
             "es": "Caminar con cuidado"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_on_the_ice"
         }
       ]
     },
@@ -749,7 +804,8 @@
             "gl": "Poñer os dedos coma cornos",
             "es": "Poner los dedos como cuernos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_horns"
         },
         {
           "id": "2_3.febreiro.s4.paw-prints",
@@ -760,7 +816,8 @@
             "gl": "Pisar as pegadas pintadas",
             "es": "Pisar las huellas pintadas"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_paw_prints"
         },
         {
           "id": "2_3.febreiro.s4.big-drum",
@@ -771,7 +828,8 @@
             "gl": "Bater no bombo ao marchar",
             "es": "Golpear el bombo al marchar"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_big_drum"
         },
         {
           "id": "2_3.febreiro.s4.cape",
@@ -782,7 +840,8 @@
             "gl": "Xirar coa capa posta",
             "es": "Girar con la capa puesta"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_cape"
         },
         {
           "id": "2_3.febreiro.s4.parade-around",
@@ -793,7 +852,8 @@
             "gl": "Camiñar levantando os xeonllos",
             "es": "Caminar levantando las rodillas"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_parade_around"
         },
         {
           "id": "2_3.febreiro.s4.show-off",
@@ -804,7 +864,8 @@
             "gl": "Xirar e amosar o disfrace",
             "es": "Girar y enseñar el disfraz"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_show_off"
         },
         {
           "id": "2_3.febreiro.s4.roar-loudly",
@@ -815,7 +876,8 @@
             "gl": "Ruxir coas mans abertas",
             "es": "Rugir con las manos abiertas"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_roar_loudly"
         },
         {
           "id": "2_3.febreiro.s4.flap-wings",
@@ -838,7 +900,8 @@
             "gl": "Menear o rabo do disfrace",
             "es": "Menear la cola del disfraz"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_wiggle_your_tail"
         },
         {
           "id": "2_3.febreiro.s4.dressed-up",
@@ -849,7 +912,8 @@
             "gl": "Amosar o disfrace",
             "es": "Enseñar el disfraz"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_dressed_up"
         },
         {
           "id": "2_3.febreiro.s4.silly-monster",
@@ -860,7 +924,8 @@
             "gl": "Poñer cara de monstro rindo",
             "es": "Poner cara de monstruo riendo"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_silly_monster"
         },
         {
           "id": "2_3.febreiro.s4.feathery-tail",
@@ -871,7 +936,8 @@
             "gl": "Mover o rabo de plumas",
             "es": "Mover la cola de plumas"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_feathery_tail"
         },
         {
           "id": "2_3.febreiro.s4.proud-peacock",
@@ -882,7 +948,8 @@
             "gl": "Abrir os brazos coma un pavo real",
             "es": "Abrir los brazos como un pavo real"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_proud_peacock"
         },
         {
           "id": "2_3.febreiro.s4.what-animal-are-you",
@@ -893,7 +960,8 @@
             "gl": "Sinalar o disfrace dun amigo",
             "es": "Señalar el disfraz de un amigo"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_what_animal_are_you"
         },
         {
           "id": "2_3.febreiro.s4.i-m-a-lion",
@@ -904,7 +972,8 @@
             "gl": "Ruxir e sacudir a melena",
             "es": "Rugir y sacudir la melena"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_i_m_a_lion"
         },
         {
           "id": "2_3.febreiro.s4.let-s-parade",
@@ -915,7 +984,8 @@
             "gl": "Poñerse en fila e marchar",
             "es": "Ponerse en fila y marchar"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_let_s_parade"
         },
         {
           "id": "2_3.febreiro.s4.tails-and-wings",
@@ -926,7 +996,8 @@
             "gl": "Menear o rabo e bater as ás",
             "es": "Menear la cola y batir las alas"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_tails_and_wings"
         }
       ]
     }

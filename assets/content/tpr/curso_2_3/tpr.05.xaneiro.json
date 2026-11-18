@@ -21,7 +21,8 @@
             "gl": "Esperar de pé na parada",
             "es": "Esperar de pie en la parada"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_bus_stop"
         },
         {
           "id": "2_3.xaneiro.s1.driver",
@@ -32,7 +33,8 @@
             "gl": "Xirar o volante imaxinario",
             "es": "Girar el volante imaginario"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_driver"
         },
         {
           "id": "2_3.xaneiro.s1.ticket",
@@ -55,7 +57,8 @@
             "gl": "Agarrarse á asa",
             "es": "Agarrarse al asidero"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_handle"
         },
         {
           "id": "2_3.xaneiro.s1.window-seat",
@@ -66,7 +69,8 @@
             "gl": "Sentarse e mirar pola xanela",
             "es": "Sentarse y mirar por la ventanilla"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_window_seat"
         },
         {
           "id": "2_3.xaneiro.s1.bell-button",
@@ -77,7 +81,8 @@
             "gl": "Premer o botón de parada",
             "es": "Pulsar el botón de parada"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_bell_button"
         },
         {
           "id": "2_3.xaneiro.s1.wipers",
@@ -88,7 +93,8 @@
             "gl": "Mover os brazos coma limpaparabrisas",
             "es": "Mover los brazos como limpiaparabrisas"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_wipers"
         },
         {
           "id": "2_3.xaneiro.s1.get-on",
@@ -111,7 +117,8 @@
             "gl": "Dar un paso cara abaixo",
             "es": "Dar un paso hacia abajo"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_get_off"
         },
         {
           "id": "2_3.xaneiro.s1.wait-in-line",
@@ -122,7 +129,8 @@
             "gl": "Agardar un detrás doutro",
             "es": "Esperar uno detrás de otro"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_wait_in_line"
         },
         {
           "id": "2_3.xaneiro.s1.press-the-bell",
@@ -133,7 +141,8 @@
             "gl": "Premer un botón no aire",
             "es": "Pulsar un botón en el aire"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_press_the_bell"
         },
         {
           "id": "2_3.xaneiro.s1.look-out",
@@ -144,7 +153,8 @@
             "gl": "Mirar pola xanela co dedo",
             "es": "Mirar por la ventanilla con el dedo"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_look_out_of_the_window"
         },
         {
           "id": "2_3.xaneiro.s1.bumpy-ride",
@@ -155,7 +165,8 @@
             "gl": "Brincar na cadeira",
             "es": "Botar en la silla"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_bumpy_ride"
         },
         {
           "id": "2_3.xaneiro.s1.crowded",
@@ -166,7 +177,8 @@
             "gl": "Apertarse todos xuntos",
             "es": "Apretarse todos juntos"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_crowded"
         },
         {
           "id": "2_3.xaneiro.s1.next-stop",
@@ -177,7 +189,8 @@
             "gl": "Sinalar adiante",
             "es": "Señalar adelante"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_next_stop"
         },
         {
           "id": "2_3.xaneiro.s1.rumbly-bus",
@@ -188,7 +201,8 @@
             "gl": "Facer «brrrr» coa boca",
             "es": "Hacer «brrrr» con la boca"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_rumbly_bus"
         },
         {
           "id": "2_3.xaneiro.s1.the-wheels-go-round",
@@ -199,7 +213,8 @@
             "gl": "Xirar os brazos coma rodas",
             "es": "Girar los brazos como ruedas"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_the_wheels_go_round"
         },
         {
           "id": "2_3.xaneiro.s1.beep-beep-bus",
@@ -210,7 +225,8 @@
             "gl": "Premer unha bucina imaxinaria",
             "es": "Pulsar una bocina imaginaria"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_beep_beep_bus"
         },
         {
           "id": "2_3.xaneiro.s1.on-the-bus",
@@ -221,7 +237,8 @@
             "gl": "Sentarse coma no autobús",
             "es": "Sentarse como en el autobús"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_on_the_bus"
         },
         {
           "id": "2_3.xaneiro.s1.up-and-down-the-city",
@@ -232,7 +249,8 @@
             "gl": "Mover o volante e inclinarse",
             "es": "Mover el volante e inclinarse"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_up_and_down_the_city"
         }
       ]
     },
@@ -252,7 +270,8 @@
             "gl": "Xirar o puño coma unha moto",
             "es": "Girar el puño como una moto"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_motorbike"
         },
         {
           "id": "2_3.xaneiro.s2.fire-engine",
@@ -263,7 +282,8 @@
             "gl": "Facer «nii-noo» coa voz",
             "es": "Hacer «nii-noo» con la voz"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_fire_engine"
         },
         {
           "id": "2_3.xaneiro.s2.scooter",
@@ -274,7 +294,8 @@
             "gl": "Empurrar co pé coma nun patinete",
             "es": "Empujar con el pie como en un patinete"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_scooter"
         },
         {
           "id": "2_3.xaneiro.s2.tricycle",
@@ -285,7 +306,8 @@
             "gl": "Pedalear no aire",
             "es": "Pedalear en el aire"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_tricycle"
         },
         {
           "id": "2_3.xaneiro.s2.horn",
@@ -296,7 +318,8 @@
             "gl": "Premer a bucina",
             "es": "Tocar la bocina"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_horn"
         },
         {
           "id": "2_3.xaneiro.s2.speed-bump",
@@ -307,7 +330,8 @@
             "gl": "Saltar un pouco no sitio",
             "es": "Saltar un poco en el sitio"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_speed_bump"
         },
         {
           "id": "2_3.xaneiro.s2.crossing",
@@ -318,7 +342,8 @@
             "gl": "Camiñar polas raias",
             "es": "Caminar por las rayas"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_crossing"
         },
         {
           "id": "2_3.xaneiro.s2.speed-up",
@@ -341,7 +366,8 @@
             "gl": "Mover os brazos cada vez máis amodo",
             "es": "Mover los brazos cada vez más despacio"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_slow_down"
         },
         {
           "id": "2_3.xaneiro.s2.brake",
@@ -352,7 +378,8 @@
             "gl": "Parar e botar o corpo atrás",
             "es": "Parar y echar el cuerpo atrás"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_brake"
         },
         {
           "id": "2_3.xaneiro.s2.steer",
@@ -363,7 +390,8 @@
             "gl": "Xirar o volante á dereita e á esquerda",
             "es": "Girar el volante a derecha e izquierda"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_steer"
         },
         {
           "id": "2_3.xaneiro.s2.honk",
@@ -374,7 +402,8 @@
             "gl": "Facer «mec mec»",
             "es": "Hacer «mec mec»"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_honk"
         },
         {
           "id": "2_3.xaneiro.s2.zippy",
@@ -385,7 +414,8 @@
             "gl": "Pasar a man moi rápido",
             "es": "Pasar la mano muy rápido"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_zippy"
         },
         {
           "id": "2_3.xaneiro.s2.sluggish",
@@ -396,7 +426,8 @@
             "gl": "Mover a man moi amodo",
             "es": "Mover la mano muy despacio"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_sluggish"
         },
         {
           "id": "2_3.xaneiro.s2.noisy-engine",
@@ -407,7 +438,8 @@
             "gl": "Facer «brum» moi alto",
             "es": "Hacer «brum» muy alto"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_noisy_engine"
         },
         {
           "id": "2_3.xaneiro.s2.quiet-car",
@@ -418,7 +450,8 @@
             "gl": "Mover a man sen facer ruído",
             "es": "Mover la mano sin hacer ruido"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_quiet_car"
         },
         {
           "id": "2_3.xaneiro.s2.go-fast",
@@ -429,7 +462,8 @@
             "gl": "Correr no sitio",
             "es": "Correr en el sitio"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_go_fast"
         },
         {
           "id": "2_3.xaneiro.s2.go-slow",
@@ -440,7 +474,8 @@
             "gl": "Camiñar moi amodo",
             "es": "Caminar muy despacio"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_go_slow"
         },
         {
           "id": "2_3.xaneiro.s2.nee-naw-nee-naw",
@@ -451,7 +486,8 @@
             "gl": "Facer a sirena e correr",
             "es": "Hacer la sirena y correr"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_nee_naw_nee_naw"
         },
         {
           "id": "2_3.xaneiro.s2.faster-and-faster",
@@ -462,7 +498,8 @@
             "gl": "Acelerar os pasos",
             "es": "Acelerar los pasos"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_faster_and_faster"
         }
       ]
     },
@@ -482,7 +519,8 @@
             "gl": "Camiñar pola beirarrúa",
             "es": "Caminar por la acera"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_pavement"
         },
         {
           "id": "2_3.xaneiro.s3.shop",
@@ -493,7 +531,8 @@
             "gl": "Facer que se abre a porta da tenda",
             "es": "Hacer que se abre la puerta de la tienda"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_shop"
         },
         {
           "id": "2_3.xaneiro.s3.market",
@@ -504,7 +543,8 @@
             "gl": "Coller froita imaxinaria",
             "es": "Coger fruta imaginaria"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_market"
         },
         {
           "id": "2_3.xaneiro.s3.bakery",
@@ -515,7 +555,8 @@
             "gl": "Cheirar o pan quente",
             "es": "Oler el pan caliente"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_bakery"
         },
         {
           "id": "2_3.xaneiro.s3.postbox",
@@ -526,7 +567,8 @@
             "gl": "Meter unha carta no buzón",
             "es": "Meter una carta en el buzón"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_postbox"
         },
         {
           "id": "2_3.xaneiro.s3.lamp-post",
@@ -537,7 +579,8 @@
             "gl": "Estirarse alto coma un farol",
             "es": "Estirarse alto como una farola"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_lamp_post"
         },
         {
           "id": "2_3.xaneiro.s3.roundabout",
@@ -548,7 +591,8 @@
             "gl": "Camiñar en círculo",
             "es": "Caminar en círculo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_roundabout"
         },
         {
           "id": "2_3.xaneiro.s3.cross-the-road",
@@ -583,7 +627,8 @@
             "gl": "Meter unha folla por unha raña",
             "es": "Meter una hoja por una ranura"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_post_a_letter"
         },
         {
           "id": "2_3.xaneiro.s3.buy-bread",
@@ -594,7 +639,8 @@
             "gl": "Dar unha moeda imaxinaria",
             "es": "Dar una moneda imaginaria"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_buy_bread"
         },
         {
           "id": "2_3.xaneiro.s3.walk-along",
@@ -605,7 +651,8 @@
             "gl": "Camiñar en fila",
             "es": "Caminar en fila"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_walk_along"
         },
         {
           "id": "2_3.xaneiro.s3.busy-street",
@@ -616,7 +663,8 @@
             "gl": "Mirar a un lado e a outro",
             "es": "Mirar a un lado y a otro"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_busy_street"
         },
         {
           "id": "2_3.xaneiro.s3.tall-buildings",
@@ -627,7 +675,8 @@
             "gl": "Mirar cara arriba moi alto",
             "es": "Mirar hacia arriba muy alto"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_tall_buildings"
         },
         {
           "id": "2_3.xaneiro.s3.narrow-street",
@@ -638,7 +687,8 @@
             "gl": "Xuntar as mans preto",
             "es": "Juntar las manos cerca"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_narrow_street"
         },
         {
           "id": "2_3.xaneiro.s3.nearby-shop",
@@ -649,7 +699,8 @@
             "gl": "Sinalar preto",
             "es": "Señalar cerca"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_nearby_shop"
         },
         {
           "id": "2_3.xaneiro.s3.look-left-look-right",
@@ -660,7 +711,8 @@
             "gl": "Mirar aos dous lados",
             "es": "Mirar a los dos lados"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_look_left_look_right"
         },
         {
           "id": "2_3.xaneiro.s3.wait-for-green",
@@ -671,7 +723,8 @@
             "gl": "Parar e agardar",
             "es": "Parar y esperar"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_wait_for_green"
         },
         {
           "id": "2_3.xaneiro.s3.here-s-the-shop",
@@ -682,7 +735,8 @@
             "gl": "Sinalar a tenda",
             "es": "Señalar la tienda"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_here_s_the_shop"
         },
         {
           "id": "2_3.xaneiro.s3.across-the-road",
@@ -693,7 +747,8 @@
             "gl": "Camiñar dun lado ao outro",
             "es": "Caminar de un lado al otro"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_across_the_road"
         }
       ]
     },
@@ -713,7 +768,8 @@
             "gl": "Sinalar os barcos do porto",
             "es": "Señalar los barcos del puerto"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_harbour"
         },
         {
           "id": "2_3.xaneiro.s4.ferry",
@@ -724,7 +780,8 @@
             "gl": "Balancearse coma no barco",
             "es": "Balancearse como en el barco"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_ferry"
         },
         {
           "id": "2_3.xaneiro.s4.crane",
@@ -735,7 +792,8 @@
             "gl": "Levantar o brazo coma unha grúa",
             "es": "Levantar el brazo como una grúa"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_crane"
         },
         {
           "id": "2_3.xaneiro.s4.anchor",
@@ -746,7 +804,8 @@
             "gl": "Baixar os brazos coma unha áncora",
             "es": "Bajar los brazos como un ancla"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_anchor"
         },
         {
           "id": "2_3.xaneiro.s4.rope",
@@ -757,7 +816,8 @@
             "gl": "Tirar dunha corda imaxinaria",
             "es": "Tirar de una cuerda imaginaria"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_rope"
         },
         {
           "id": "2_3.xaneiro.s4.sailor",
@@ -768,7 +828,8 @@
             "gl": "Facer o saúdo de mariñeiro",
             "es": "Hacer el saludo de marinero"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_sailor"
         },
         {
           "id": "2_3.xaneiro.s4.pier",
@@ -779,7 +840,8 @@
             "gl": "Camiñar ata o final do peirao",
             "es": "Caminar hasta el final del muelle"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_pier"
         },
         {
           "id": "2_3.xaneiro.s4.tie-up",
@@ -826,7 +888,8 @@
             "gl": "Facer «tuuu» coma o barco",
             "es": "Hacer «tuuu» como el barco"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_toot_the_horn"
         },
         {
           "id": "2_3.xaneiro.s4.load",
@@ -837,7 +900,8 @@
             "gl": "Meter caixas imaxinarias",
             "es": "Meter cajas imaginarias"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_load"
         },
         {
           "id": "2_3.xaneiro.s4.salty-wind",
@@ -848,7 +912,8 @@
             "gl": "Respirar o aire do mar",
             "es": "Respirar el aire del mar"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_salty_wind"
         },
         {
           "id": "2_3.xaneiro.s4.floating-boat",
@@ -859,7 +924,8 @@
             "gl": "Mover a man coma un barco",
             "es": "Mover la mano como un barco"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_floating_boat"
         },
         {
           "id": "2_3.xaneiro.s4.rusty",
@@ -870,7 +936,8 @@
             "gl": "Tocar unha cadea vella",
             "es": "Tocar una cadena vieja"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_rusty"
         },
         {
           "id": "2_3.xaneiro.s4.busy-port",
@@ -881,7 +948,8 @@
             "gl": "Mover os brazos traballando",
             "es": "Mover los brazos trabajando"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_busy_port"
         },
         {
           "id": "2_3.xaneiro.s4.toot-toot",
@@ -892,7 +960,8 @@
             "gl": "Facer a serea do barco",
             "es": "Hacer la sirena del barco"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_toot_toot"
         },
         {
           "id": "2_3.xaneiro.s4.bye-bye-boat",
@@ -903,7 +972,8 @@
             "gl": "Acenar ao barco",
             "es": "Saludar al barco"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_bye_bye_boat"
         },
         {
           "id": "2_3.xaneiro.s4.hello-sailor",
@@ -914,7 +984,8 @@
             "gl": "Facer o saúdo de mariñeiro",
             "es": "Hacer el saludo de marinero"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_hello_sailor"
         },
         {
           "id": "2_3.xaneiro.s4.up-with-the-crane",
@@ -925,7 +996,8 @@
             "gl": "Levantar o brazo amodo",
             "es": "Levantar el brazo despacio"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_up_with_the_crane"
         }
       ]
     }

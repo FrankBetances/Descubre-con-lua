@@ -105,7 +105,8 @@
             "gl": "Mollar os pés na beira",
             "es": "Mojar los pies en la orilla"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_paddle_in"
         },
         {
           "id": "0_2.xuno.s1.scoop-sand",
@@ -116,7 +117,8 @@
             "gl": "Coller area coa man",
             "es": "Coger arena con la mano"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_scoop_sand"
         },
         {
           "id": "0_2.xuno.s1.let-sand-run",
@@ -127,7 +129,8 @@
             "gl": "Abrir a man e deixar caer area",
             "es": "Abrir la mano y dejar caer arena"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_let_sand_run"
         },
         {
           "id": "0_2.xuno.s1.wriggle-toes",
@@ -138,7 +141,8 @@
             "gl": "Menear os dedos dos pés na area",
             "es": "Mover los deditos en la arena"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_wriggle_toes"
         },
         {
           "id": "0_2.xuno.s1.watch-the-waves",
@@ -149,7 +153,8 @@
             "gl": "Mirar o mar en silencio",
             "es": "Mirar el mar en silencio"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_watch_the_waves"
         },
         {
           "id": "0_2.xuno.s1.salty-lips",
@@ -160,7 +165,8 @@
             "gl": "Tocar os beizos despois do mar",
             "es": "Tocar los labios después del mar"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_salty_lips"
         },
         {
           "id": "0_2.xuno.s1.warm-sand",
@@ -171,7 +177,8 @@
             "gl": "Pousar a man na area morna",
             "es": "Posar la mano en la arena templada"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_warm_sand"
         },
         {
           "id": "0_2.xuno.s1.sparkling-sea",
@@ -182,7 +189,8 @@
             "gl": "Abrir e pechar os dedos coma o sol no mar",
             "es": "Abrir y cerrar los dedos como el sol en el mar"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_sparkling_sea"
         },
         {
           "id": "0_2.xuno.s1.gritty",
@@ -193,7 +201,8 @@
             "gl": "Fregar area entre os dedos",
             "es": "Frotar arena entre los dedos"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_gritty"
         },
         {
           "id": "0_2.xuno.s1.hello-sea",
@@ -228,7 +237,8 @@
             "gl": "Botar area nos pés",
             "es": "Echar arena en los pies"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_sand_on_my_feet"
         },
         {
           "id": "0_2.xuno.s1.by-the-sea",
@@ -239,7 +249,8 @@
             "gl": "Sentarse xuntos mirando o mar",
             "es": "Sentarse juntos mirando el mar"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_by_the_sea"
         }
       ]
     },
@@ -295,7 +306,8 @@
             "gl": "Entrecruzar os dedos coma unha rede",
             "es": "Entrecruzar los dedos como una red"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_fishing_net"
         },
         {
           "id": "0_2.xuno.s2.bubble-trail",
@@ -306,7 +318,8 @@
             "gl": "Facer burbullas coa boca",
             "es": "Hacer burbujas con la boca"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_bubble_trail"
         },
         {
           "id": "0_2.xuno.s2.fin",
@@ -317,7 +330,8 @@
             "gl": "Poñer a man no lombo coma aleta",
             "es": "Poner la mano en la espalda como aleta"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_fin"
         },
         {
           "id": "0_2.xuno.s2.coral",
@@ -328,7 +342,8 @@
             "gl": "Abrir os dedos coma coral",
             "es": "Abrir los dedos como coral"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_coral"
         },
         {
           "id": "0_2.xuno.s2.swim-along",
@@ -339,7 +354,8 @@
             "gl": "Mover as dúas mans coma peixes",
             "es": "Mover las dos manos como peces"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_swim_along"
         },
         {
           "id": "0_2.xuno.s2.glide",
@@ -350,7 +366,8 @@
             "gl": "Pasar a man plana polo aire",
             "es": "Pasar la mano plana por el aire"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_glide"
         },
         {
           "id": "0_2.xuno.s2.blow-bubbles-in-water",
@@ -361,7 +378,8 @@
             "gl": "Soprar na auga cos beizos",
             "es": "Soplar en el agua con los labios"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_blow_bubbles_in_water"
         },
         {
           "id": "0_2.xuno.s2.rise-and-fall",
@@ -372,7 +390,8 @@
             "gl": "Subir e baixar coma as ondas",
             "es": "Subir y bajar como las olas"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_rise_and_fall"
         },
         {
           "id": "0_2.xuno.s2.hug-a-fish",
@@ -383,7 +402,8 @@
             "gl": "Abrazar un peixe de peluche",
             "es": "Abrazar un pez de peluche"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_hug_a_fish"
         },
         {
           "id": "0_2.xuno.s2.slippery-fish",
@@ -394,7 +414,8 @@
             "gl": "Esvarar as mans unha sobre outra",
             "es": "Resbalar las manos una sobre otra"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_slippery_fish"
         },
         {
           "id": "0_2.xuno.s2.swishy",
@@ -405,7 +426,8 @@
             "gl": "Mover a cadeira coma unha cola",
             "es": "Mover la cadera como una cola"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_swishing"
         },
         {
           "id": "0_2.xuno.s2.silvery",
@@ -416,7 +438,8 @@
             "gl": "Amosar un papel prateado",
             "es": "Enseñar un papel plateado"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_silvery"
         },
         {
           "id": "0_2.xuno.s2.glassy",
@@ -427,7 +450,8 @@
             "gl": "Pasar a man plana",
             "es": "Pasar la mano plana"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_glassy"
         },
         {
           "id": "0_2.xuno.s2.swim-little-fish",
@@ -450,7 +474,8 @@
             "gl": "Abrir e pechar a boca coma un peixe",
             "es": "Abrir y cerrar la boca como un pez"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_blub_blub_blub"
         },
         {
           "id": "0_2.xuno.s2.one-fish-two-fish",
@@ -461,7 +486,8 @@
             "gl": "Amosar unha man e despois as dúas",
             "es": "Enseñar una mano y luego las dos"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_one_fish_two_fish"
         },
         {
           "id": "0_2.xuno.s2.over-the-waves",
@@ -472,7 +498,8 @@
             "gl": "Pasar a man por riba en ondas",
             "es": "Pasar la mano por encima en ondas"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_over_the_waves"
         }
       ]
     },
@@ -516,7 +543,8 @@
             "gl": "Dar un grolo de auga",
             "es": "Dar un sorbo de agua"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_water_bottle"
         },
         {
           "id": "0_2.xuno.s3.shade",
@@ -527,7 +555,8 @@
             "gl": "Poñerse á sombra",
             "es": "Ponerse a la sombra"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_shade"
         },
         {
           "id": "0_2.xuno.s3.straw-hat",
@@ -538,7 +567,8 @@
             "gl": "Poñer o chapeu de palla",
             "es": "Poner el sombrero de paja"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_straw_hat"
         },
         {
           "id": "0_2.xuno.s3.fan",
@@ -549,7 +579,8 @@
             "gl": "Abanar o bebé suavemente",
             "es": "Abanicar al bebé suavemente"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_fan"
         },
         {
           "id": "0_2.xuno.s3.sunrise",
@@ -560,7 +591,8 @@
             "gl": "Subir as mans dende o chan",
             "es": "Subir las manos desde el suelo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_sunrise"
         },
         {
           "id": "0_2.xuno.s3.cool-down",
@@ -571,7 +603,8 @@
             "gl": "Mollar a caluga con auga",
             "es": "Mojar la nuca con agua"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_cool_down"
         },
         {
           "id": "0_2.xuno.s3.fan-yourself",
@@ -582,7 +615,8 @@
             "gl": "Abanarse coa man",
             "es": "Abanicarse con la mano"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_fan_yourself"
         },
         {
           "id": "0_2.xuno.s3.rub-in",
@@ -593,7 +627,8 @@
             "gl": "Estender a crema en círculos",
             "es": "Extender la crema en círculos"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_rub_in"
         },
         {
           "id": "0_2.xuno.s3.shade-your-eyes",
@@ -604,7 +639,8 @@
             "gl": "Poñer a man sobre os ollos",
             "es": "Poner la mano sobre los ojos"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_shade_your_eyes"
         },
         {
           "id": "0_2.xuno.s3.nap",
@@ -615,7 +651,8 @@
             "gl": "Pousar a cabeza nas mans",
             "es": "Apoyar la cabeza en las manos"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_nap"
         },
         {
           "id": "0_2.xuno.s3.sun-kissed",
@@ -626,7 +663,8 @@
             "gl": "Tocar as meixelas",
             "es": "Tocar las mejillas"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_sun_kissed"
         },
         {
           "id": "0_2.xuno.s3.summery",
@@ -637,7 +675,8 @@
             "gl": "Abanarse sorrindo",
             "es": "Abanicarse sonriendo"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_summery"
         },
         {
           "id": "0_2.xuno.s3.cool-shade",
@@ -648,7 +687,8 @@
             "gl": "Sentarse á sombra",
             "es": "Sentarse a la sombra"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_cool_shade"
         },
         {
           "id": "0_2.xuno.s3.sleepyhead",
@@ -659,7 +699,8 @@
             "gl": "Pechar os ollos e roncar suave",
             "es": "Cerrar los ojos y roncar suave"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_sleepyhead"
         },
         {
           "id": "0_2.xuno.s3.hat-on-please",
@@ -670,7 +711,8 @@
             "gl": "Poñer o chapeu ao bebé",
             "es": "Poner el sombrero al bebé"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_hat_on_please"
         },
         {
           "id": "0_2.xuno.s3.time-for-a-drink",
@@ -681,7 +723,8 @@
             "gl": "Achegar a botella",
             "es": "Acercar la botella"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_time_for_a_drink"
         },
         {
           "id": "0_2.xuno.s3.in-the-shade",
@@ -692,7 +735,8 @@
             "gl": "Levar o bebé á sombra",
             "es": "Llevar al bebé a la sombra"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_in_the_shade"
         },
         {
           "id": "0_2.xuno.s3.sun-and-water",
@@ -703,7 +747,8 @@
             "gl": "Sinalar o sol e despois a auga",
             "es": "Señalar el sol y luego el agua"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_sun_and_water"
         }
       ]
     },
@@ -747,7 +792,8 @@
             "gl": "Pousar a man con pintura no papel",
             "es": "Posar la mano con pintura en el papel"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_handprint"
         },
         {
           "id": "0_2.xuno.s4.farewell-song",
@@ -758,7 +804,8 @@
             "gl": "Cantar e acenar a todos",
             "es": "Cantar y saludar a todos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_farewell_song"
         },
         {
           "id": "0_2.xuno.s4.keepsake",
@@ -769,7 +816,8 @@
             "gl": "Amosar un recordo pequeno",
             "es": "Enseñar un recuerdo pequeño"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_keepsake"
         },
         {
           "id": "0_2.xuno.s4.last-day",
@@ -780,7 +828,8 @@
             "gl": "Amosar un dedo e despedirse",
             "es": "Enseñar un dedo y despedirse"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_last_day"
         },
         {
           "id": "0_2.xuno.s4.group-hug",
@@ -791,7 +840,8 @@
             "gl": "Abrazarse todos xuntos",
             "es": "Abrazarse todos juntos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_group_hug"
         },
         {
           "id": "0_2.xuno.s4.say-goodbye",
@@ -802,7 +852,8 @@
             "gl": "Acenar coa man á porta",
             "es": "Saludar con la mano en la puerta"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_say_goodbye"
         },
         {
           "id": "0_2.xuno.s4.hug-goodbye",
@@ -813,7 +864,8 @@
             "gl": "Dar unha aperta ao marchar",
             "es": "Dar un abrazo al irse"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_hug_goodbye"
         },
         {
           "id": "0_2.xuno.s4.press-hands",
@@ -824,7 +876,8 @@
             "gl": "Premer a man no papel",
             "es": "Presionar la mano en el papel"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_press_hands"
         },
         {
           "id": "0_2.xuno.s4.keep",
@@ -835,7 +888,8 @@
             "gl": "Gardar o recordo na caixa",
             "es": "Guardar el recuerdo en la caja"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_keep"
         },
         {
           "id": "0_2.xuno.s4.look-back",
@@ -846,7 +900,8 @@
             "gl": "Mirar as fotos do curso",
             "es": "Mirar las fotos del curso"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_look_back"
         },
         {
           "id": "0_2.xuno.s4.bigger-now",
@@ -857,7 +912,8 @@
             "gl": "Medir o bebé coa man",
             "es": "Medir al bebé con la mano"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_bigger_now"
         },
         {
           "id": "0_2.xuno.s4.thankful",
@@ -868,7 +924,8 @@
             "gl": "Pousar a man no peito",
             "es": "Poner la mano en el pecho"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_thankful"
         },
         {
           "id": "0_2.xuno.s4.bittersweet",
@@ -879,7 +936,8 @@
             "gl": "Sorrir e abrazar",
             "es": "Sonreír y abrazar"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_bittersweet"
         },
         {
           "id": "0_2.xuno.s4.treasured",
@@ -890,7 +948,8 @@
             "gl": "Abrazar a caixa dos recordos",
             "es": "Abrazar la caja de los recuerdos"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_treasured"
         },
         {
           "id": "0_2.xuno.s4.bye-bye-nursery",
@@ -913,7 +972,8 @@
             "gl": "Mandar un bico e acenar",
             "es": "Mandar un beso y saludar"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_see_you_after_summer"
         },
         {
           "id": "0_2.xuno.s4.hand-on-paper",
@@ -924,7 +984,8 @@
             "gl": "Pousar a man no papel",
             "es": "Posar la mano en el papel"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_hand_on_paper"
         },
         {
           "id": "0_2.xuno.s4.together-again",
@@ -935,7 +996,8 @@
             "gl": "Abrazarse de novo",
             "es": "Abrazarse de nuevo"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_together_again"
         }
       ]
     }

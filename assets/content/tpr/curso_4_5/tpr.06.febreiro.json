@@ -33,7 +33,8 @@
             "gl": "Sentarse e mirar ao escenario",
             "es": "Sentarse y mirar al escenario"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_audience"
         },
         {
           "id": "4_5.febreiro.s1.script",
@@ -44,7 +45,8 @@
             "gl": "Ler un papel imaxinario",
             "es": "Leer un papel imaginario"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_script"
         },
         {
           "id": "4_5.febreiro.s1.character",
@@ -55,7 +57,8 @@
             "gl": "Poñer a cara dun personaxe",
             "es": "Poner la cara de un personaje"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_character"
         },
         {
           "id": "4_5.febreiro.s1.spotlight",
@@ -66,7 +69,8 @@
             "gl": "Facer un círculo de luz coas mans",
             "es": "Hacer un círculo de luz con las manos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_spotlight"
         },
         {
           "id": "4_5.febreiro.s1.applause",
@@ -77,7 +81,8 @@
             "gl": "Aplaudir forte",
             "es": "Aplaudir fuerte"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_applause"
         },
         {
           "id": "4_5.febreiro.s1.curtain-call",
@@ -88,7 +93,8 @@
             "gl": "Facer unha reverencia",
             "es": "Hacer una reverencia"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_curtain_call"
         },
         {
           "id": "4_5.febreiro.s1.act",
@@ -99,7 +105,8 @@
             "gl": "Facer un personaxe con todo o corpo",
             "es": "Hacer un personaje con todo el cuerpo"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_act"
         },
         {
           "id": "4_5.febreiro.s1.rehearse",
@@ -110,7 +117,8 @@
             "gl": "Repetir un xesto varias veces",
             "es": "Repetir un gesto varias veces"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_rehearse"
         },
         {
           "id": "4_5.febreiro.s1.take-a-bow",
@@ -121,7 +129,8 @@
             "gl": "Inclinarse diante do público",
             "es": "Inclinarse delante del público"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_take_a_bow"
         },
         {
           "id": "4_5.febreiro.s1.walk-heavily",
@@ -132,7 +141,8 @@
             "gl": "Camiñar coma un xigante",
             "es": "Caminar como un gigante"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_walk_heavily"
         },
         {
           "id": "4_5.febreiro.s1.hide-quietly",
@@ -143,7 +153,8 @@
             "gl": "Agocharse sen facer ruído",
             "es": "Esconderse sin hacer ruido"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_hide_quietly"
         },
         {
           "id": "4_5.febreiro.s1.dramatic",
@@ -166,7 +177,8 @@
             "gl": "Facer unha careta graciosa",
             "es": "Hacer una mueca graciosa"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_comical"
         },
         {
           "id": "4_5.febreiro.s1.mysterious",
@@ -189,7 +201,8 @@
             "gl": "Abrir os brazos exaxerando",
             "es": "Abrir los brazos exagerando"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_theatrical"
         },
         {
           "id": "4_5.febreiro.s1.lights-camera-action",
@@ -200,7 +213,8 @@
             "gl": "Bater palmas unha vez",
             "es": "Dar una palmada"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_lights_camera_action"
         },
         {
           "id": "4_5.febreiro.s1.everyone-take-a-bow",
@@ -211,7 +225,8 @@
             "gl": "Inclinarse xuntos",
             "es": "Inclinarse juntos"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_everyone_take_a_bow"
         },
         {
           "id": "4_5.febreiro.s1.when-the-music-stops-hide",
@@ -222,7 +237,8 @@
             "gl": "Bailar e esconderse",
             "es": "Bailar y esconderse"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_when_the_music_stops_hide"
         },
         {
           "id": "4_5.febreiro.s1.if-you-are-the-king-walk-slowly",
@@ -233,7 +249,8 @@
             "gl": "Camiñar amodo e erguido",
             "es": "Caminar despacio y erguido"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_if_you_are_the_king_walk_slowly"
         }
       ]
     },
@@ -265,7 +282,8 @@
             "gl": "Facer unha reverencia elegante",
             "es": "Hacer una reverencia elegante"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_princess"
         },
         {
           "id": "4_5.febreiro.s2.pirate",
@@ -276,7 +294,8 @@
             "gl": "Tapar un ollo coa man",
             "es": "Taparse un ojo con la mano"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_pirate"
         },
         {
           "id": "4_5.febreiro.s2.wizard",
@@ -287,7 +306,8 @@
             "gl": "Mover unha variña",
             "es": "Mover una varita"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_wizard"
         },
         {
           "id": "4_5.febreiro.s2.robot",
@@ -298,7 +318,8 @@
             "gl": "Moverse con movementos ríxidos",
             "es": "Moverse con movimientos rígidos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_robot"
         },
         {
           "id": "4_5.febreiro.s2.superhero",
@@ -309,7 +330,8 @@
             "gl": "Poñer os puños na cadeira",
             "es": "Poner los puños en la cadera"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_superhero"
         },
         {
           "id": "4_5.febreiro.s2.fairy",
@@ -320,7 +342,8 @@
             "gl": "Bater as mans coma ás pequenas",
             "es": "Batir las manos como alas pequeñas"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_fairy"
         },
         {
           "id": "4_5.febreiro.s2.march-like-a-knight",
@@ -331,7 +354,8 @@
             "gl": "Marchar dereito",
             "es": "Marchar recto"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_march_like_a_knight"
         },
         {
           "id": "4_5.febreiro.s2.cast-a-spell",
@@ -342,7 +366,8 @@
             "gl": "Mover a variña e dicir «abracadabra»",
             "es": "Mover la varita y decir «abracadabra»"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_cast_a_spell"
         },
         {
           "id": "4_5.febreiro.s2.move-like-a-robot",
@@ -353,7 +378,8 @@
             "gl": "Mover os brazos a golpes",
             "es": "Mover los brazos a golpes"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_move_like_a_robot"
         },
         {
           "id": "4_5.febreiro.s2.search-for-treasure",
@@ -364,7 +390,8 @@
             "gl": "Mirar arredor cun catalexo",
             "es": "Mirar alrededor con un catalejo"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_search_for_treasure"
         },
         {
           "id": "4_5.febreiro.s2.fly-to-the-rescue",
@@ -375,7 +402,8 @@
             "gl": "Correr cos brazos estirados",
             "es": "Correr con los brazos estirados"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_fly_to_the_rescue"
         },
         {
           "id": "4_5.febreiro.s2.brave-knight",
@@ -386,7 +414,8 @@
             "gl": "Levantar o peito",
             "es": "Levantar el pecho"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_brave_knight"
         },
         {
           "id": "4_5.febreiro.s2.magical",
@@ -397,7 +426,8 @@
             "gl": "Abrir os dedos de súpeto",
             "es": "Abrir los dedos de golpe"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_magical"
         },
         {
           "id": "4_5.febreiro.s2.robotic",
@@ -408,7 +438,8 @@
             "gl": "Falar coma un robot",
             "es": "Hablar como un robot"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_robotic"
         },
         {
           "id": "4_5.febreiro.s2.royal",
@@ -419,7 +450,8 @@
             "gl": "Poñer unha coroa imaxinaria",
             "es": "Ponerse una corona imaginaria"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_royal"
         },
         {
           "id": "4_5.febreiro.s2.who-are-you-today",
@@ -430,7 +462,8 @@
             "gl": "Sinalar o disfrace",
             "es": "Señalar el disfraz"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_who_are_you_today"
         },
         {
           "id": "4_5.febreiro.s2.abracadabra",
@@ -441,7 +474,8 @@
             "gl": "Mover a variña",
             "es": "Mover la varita"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_abracadabra"
         },
         {
           "id": "4_5.febreiro.s2.ahoy-pirates",
@@ -452,7 +486,8 @@
             "gl": "Saudar coa man na fronte",
             "es": "Saludar con la mano en la frente"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_ahoy_pirates"
         },
         {
           "id": "4_5.febreiro.s2.the-robot-walks-slowly-but-the-hero-runs-fast",
@@ -463,7 +498,8 @@
             "gl": "Camiñar ríxido e logo correr",
             "es": "Caminar rígido y luego correr"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_the_robot_walks_slowly_but_the_hero_runs_fast"
         }
       ]
     },
@@ -483,7 +519,8 @@
             "gl": "Camiñar arredor das cadeiras",
             "es": "Caminar alrededor de las sillas"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_musical_chairs"
         },
         {
           "id": "4_5.febreiro.s3.referee",
@@ -494,7 +531,8 @@
             "gl": "Asubiar e levantar a man",
             "es": "Silbar y levantar la mano"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_referee"
         },
         {
           "id": "4_5.febreiro.s3.score-point",
@@ -505,7 +543,8 @@
             "gl": "Levantar un dedo por cada punto do marcador",
             "es": "Levantar un dedo por cada punto del marcador"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_scoreboard"
         },
         {
           "id": "4_5.febreiro.s3.winner",
@@ -516,7 +555,8 @@
             "gl": "Levantar os brazos contentos",
             "es": "Levantar los brazos contentos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_winner"
         },
         {
           "id": "4_5.febreiro.s3.turn-order",
@@ -527,7 +567,8 @@
             "gl": "Sinalar quen vai primeiro",
             "es": "Señalar quién va primero"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_turn_order"
         },
         {
           "id": "4_5.febreiro.s3.board-game",
@@ -538,7 +579,8 @@
             "gl": "Mover unha ficha",
             "es": "Mover una ficha"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_board_game"
         },
         {
           "id": "4_5.febreiro.s3.counter",
@@ -549,7 +591,8 @@
             "gl": "Mover a ficha dúas casas",
             "es": "Mover la ficha dos casillas"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_counter"
         },
         {
           "id": "4_5.febreiro.s3.play-fair",
@@ -560,7 +603,8 @@
             "gl": "Darse a man antes de xogar",
             "es": "Darse la mano antes de jugar"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_play_fair"
         },
         {
           "id": "4_5.febreiro.s3.win",
@@ -571,7 +615,8 @@
             "gl": "Levantar os brazos",
             "es": "Levantar los brazos"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_win"
         },
         {
           "id": "4_5.febreiro.s3.lose",
@@ -582,7 +627,8 @@
             "gl": "Encoller os ombros e sorrir",
             "es": "Encoger los hombros y sonreír"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_lose"
         },
         {
           "id": "4_5.febreiro.s3.keep-score",
@@ -593,7 +639,8 @@
             "gl": "Contar puntos cos dedos",
             "es": "Contar puntos con los dedos"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_keep_score"
         },
         {
           "id": "4_5.febreiro.s3.move-forward",
@@ -604,7 +651,8 @@
             "gl": "Dar un paso adiante",
             "es": "Dar un paso adelante"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_move_forward"
         },
         {
           "id": "4_5.febreiro.s3.good-sport",
@@ -615,7 +663,8 @@
             "gl": "Darse a man ao final",
             "es": "Darse la mano al final"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_good_sport"
         },
         {
           "id": "4_5.febreiro.s3.equal",
@@ -626,7 +675,8 @@
             "gl": "Poñer as mans á mesma altura",
             "es": "Poner las manos a la misma altura"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_equal"
         },
         {
           "id": "4_5.febreiro.s3.tied",
@@ -637,7 +687,8 @@
             "gl": "Xuntar as dúas mans",
             "es": "Juntar las dos manos"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_tied"
         },
         {
           "id": "4_5.febreiro.s3.winning",
@@ -648,7 +699,8 @@
             "gl": "Sorrir e bater palmas",
             "es": "Sonreír y dar palmas"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_winning"
         },
         {
           "id": "4_5.febreiro.s3.whose-turn-is-it",
@@ -671,7 +723,8 @@
             "gl": "Xuntar as mans",
             "es": "Juntar las manos"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_it_s_a_draw"
         },
         {
           "id": "4_5.febreiro.s3.if-you-roll-a-six-go-again",
@@ -682,7 +735,8 @@
             "gl": "Lanzar un dado imaxinario",
             "es": "Tirar un dado imaginario"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_if_you_roll_a_six_go_again"
         },
         {
           "id": "4_5.febreiro.s3.win-or-lose-we-have-fun",
@@ -693,7 +747,8 @@
             "gl": "Sorrir e darse a man",
             "es": "Sonreír y darse la mano"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_win_or_lose_we_have_fun"
         }
       ]
     },
@@ -713,7 +768,8 @@
             "gl": "Facer unha xanela coas mans",
             "es": "Hacer una ventana con las manos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_puppet_theatre"
         },
         {
           "id": "4_5.febreiro.s4.sock-puppet",
@@ -724,7 +780,8 @@
             "gl": "Abrir e pechar a man coma unha boca",
             "es": "Abrir y cerrar la mano como una boca"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_sock_puppet"
         },
         {
           "id": "4_5.febreiro.s4.strings",
@@ -735,7 +792,8 @@
             "gl": "Mover os dedos coma fíos",
             "es": "Mover los dedos como hilos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_strings"
         },
         {
           "id": "4_5.febreiro.s4.puppeteer",
@@ -746,7 +804,8 @@
             "gl": "Mover un monicreque dende arriba",
             "es": "Mover un títere desde arriba"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_puppeteer"
         },
         {
           "id": "4_5.febreiro.s4.voice",
@@ -757,7 +816,8 @@
             "gl": "Falar cunha voz distinta",
             "es": "Hablar con una voz distinta"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_voice"
         },
         {
           "id": "4_5.febreiro.s4.dialogue",
@@ -768,7 +828,8 @@
             "gl": "Falar e responder con dúas mans",
             "es": "Hablar y responder con dos manos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_dialogue"
         },
         {
           "id": "4_5.febreiro.s4.puppet-show",
@@ -779,7 +840,8 @@
             "gl": "Abrir unha cortina imaxinaria",
             "es": "Abrir una cortina imaginaria"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_puppet_show"
         },
         {
           "id": "4_5.febreiro.s4.pull-the-strings",
@@ -790,7 +852,8 @@
             "gl": "Mover os dedos cara arriba",
             "es": "Mover los dedos hacia arriba"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_pull_the_strings"
         },
         {
           "id": "4_5.febreiro.s4.talk-back",
@@ -801,7 +864,8 @@
             "gl": "Facer que o monicreque responda",
             "es": "Hacer que el títere responde"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_reply"
         },
         {
           "id": "4_5.febreiro.s4.change-voices",
@@ -812,7 +876,8 @@
             "gl": "Falar grave e despois agudo",
             "es": "Hablar grave y luego agudo"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_change_voices"
         },
         {
           "id": "4_5.febreiro.s4.pop-out-from-behind",
@@ -823,7 +888,8 @@
             "gl": "Asomar a man de súpeto",
             "es": "Asomar la mano de golpe"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_pop_out_from_behind"
         },
         {
           "id": "4_5.febreiro.s4.bow-to-the-audience",
@@ -834,7 +900,8 @@
             "gl": "Inclinar o monicreque",
             "es": "Inclinar el títere"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_bow_to_the_audience"
         },
         {
           "id": "4_5.febreiro.s4.squeaky-voice",
@@ -845,7 +912,8 @@
             "gl": "Falar moi agudo",
             "es": "Hablar muy agudo"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_squeaky_voice"
         },
         {
           "id": "4_5.febreiro.s4.deep-voice",
@@ -856,7 +924,8 @@
             "gl": "Falar moi grave",
             "es": "Hablar muy grave"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_deep_voice"
         },
         {
           "id": "4_5.febreiro.s4.talkative",
@@ -867,7 +936,8 @@
             "gl": "Abrir e pechar a boca do monicreque",
             "es": "Abrir y cerrar la boca del títere"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_talkative"
         },
         {
           "id": "4_5.febreiro.s4.handmade",
@@ -878,7 +948,8 @@
             "gl": "Amosar as mans",
             "es": "Enseñar las manos"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_handmade"
         },
         {
           "id": "4_5.febreiro.s4.hello-i-m-sock",
@@ -889,7 +960,8 @@
             "gl": "Mover a boca do monicreque",
             "es": "Mover la boca del títere"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_hello_i_m_sock"
         },
         {
           "id": "4_5.febreiro.s4.where-did-he-go",
@@ -900,7 +972,8 @@
             "gl": "Esconder o monicreque",
             "es": "Esconder el títere"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_where_did_he_go"
         },
         {
           "id": "4_5.febreiro.s4.look-behind-you",
@@ -911,7 +984,8 @@
             "gl": "Sinalar detrás",
             "es": "Señalar detrás"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_look_behind_you"
         },
         {
           "id": "4_5.febreiro.s4.first-he-whispers-then-he-shouts",
@@ -922,7 +996,8 @@
             "gl": "Falar baixo e logo alto",
             "es": "Hablar bajo y luego alto"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_first_he_whispers_then_he_shouts"
         }
       ]
     }

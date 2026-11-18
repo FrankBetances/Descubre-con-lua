@@ -21,7 +21,8 @@
             "gl": "Botar unha cortiza e mirala flotar",
             "es": "Echar un corcho y mirarlo flotar"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_cork"
         },
         {
           "id": "4_5.maio.s1.marble",
@@ -32,7 +33,8 @@
             "gl": "Deixar caer unha bóla de vidro",
             "es": "Dejar caer una canica"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_marble"
         },
         {
           "id": "4_5.maio.s1.feather-boat",
@@ -43,7 +45,8 @@
             "gl": "Dobrar un barco de papel",
             "es": "Doblar un barco de papel"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_paper_boat"
         },
         {
           "id": "4_5.maio.s1.tank",
@@ -54,7 +57,8 @@
             "gl": "Sinalar o tanque",
             "es": "Señalar el tanque"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_tank"
         },
         {
           "id": "4_5.maio.s1.prediction",
@@ -65,7 +69,8 @@
             "gl": "Tocar a cabeza pensando",
             "es": "Tocar la cabeza pensando"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_prediction"
         },
         {
           "id": "4_5.maio.s1.result",
@@ -76,7 +81,8 @@
             "gl": "Amosar o resultado cos dedos",
             "es": "Enseñar el resultado con los dedos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_result"
         },
         {
           "id": "4_5.maio.s1.chart",
@@ -87,7 +93,8 @@
             "gl": "Marcar un sinal nunha táboa",
             "es": "Marcar una señal en una tabla"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_chart"
         },
         {
           "id": "4_5.maio.s1.sink-down",
@@ -98,7 +105,8 @@
             "gl": "Baixar amodo ata o chan",
             "es": "Bajar despacio hasta el suelo"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_sink_down"
         },
         {
           "id": "4_5.maio.s1.float-on-top",
@@ -109,7 +117,8 @@
             "gl": "Quedar arriba cos brazos abertos",
             "es": "Quedarse arriba con los brazos abiertos"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_float_on_top"
         },
         {
           "id": "4_5.maio.s1.drop-a-stone",
@@ -120,7 +129,8 @@
             "gl": "Soltar a pedra e mirar",
             "es": "Soltar la piedra y mirar"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_drop_a_stone"
         },
         {
           "id": "4_5.maio.s1.test",
@@ -131,7 +141,8 @@
             "gl": "Probar un obxecto na auga",
             "es": "Probar un objeto en el agua"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_test"
         },
         {
           "id": "4_5.maio.s1.record",
@@ -142,7 +153,8 @@
             "gl": "Facer unha marca na táboa",
             "es": "Hacer una marca en la tabla"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_record"
         },
         {
           "id": "4_5.maio.s1.buoyant",
@@ -153,7 +165,8 @@
             "gl": "Subir as mans amodo",
             "es": "Subir las manos despacio"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_buoyant"
         },
         {
           "id": "4_5.maio.s1.waterlogged",
@@ -164,7 +177,8 @@
             "gl": "Baixar o corpo pesado",
             "es": "Bajar el cuerpo pesado"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_waterlogged"
         },
         {
           "id": "4_5.maio.s1.heavier-than-water",
@@ -175,7 +189,8 @@
             "gl": "Baixar a man",
             "es": "Bajar la mano"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_heavier_than_water"
         },
         {
           "id": "4_5.maio.s1.lighter-than-water",
@@ -186,7 +201,8 @@
             "gl": "Subir a man",
             "es": "Subir la mano"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_lighter_than_water"
         },
         {
           "id": "4_5.maio.s1.does-it-float-or-sink",
@@ -197,7 +213,8 @@
             "gl": "Sinalar arriba ou abaixo",
             "es": "Señalar arriba o abajo"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_does_it_float_or_sink"
         },
         {
           "id": "4_5.maio.s1.i-think-it-will-sink",
@@ -208,7 +225,8 @@
             "gl": "Baixar a man pensando",
             "es": "Bajar la mano pensando"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_i_think_it_will_sink"
         },
         {
           "id": "4_5.maio.s1.it-floats-because-it-s-light",
@@ -219,7 +237,8 @@
             "gl": "Subir as mans",
             "es": "Subir las manos"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_it_floats_because_it_s_light"
         },
         {
           "id": "4_5.maio.s1.the-stone-sinks-but-the-cork-floats",
@@ -230,7 +249,8 @@
             "gl": "Baixar unha man e subir a outra",
             "es": "Bajar una mano y subir la otra"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_the_stone_sinks_but_the_cork_floats"
         }
       ]
     },
@@ -250,7 +270,8 @@
             "gl": "Mover a man en ondas pequenas",
             "es": "Mover la mano en olas pequeñas"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_stream"
         },
         {
           "id": "4_5.maio.s2.waterfall",
@@ -261,7 +282,8 @@
             "gl": "Baixar os brazos de golpe",
             "es": "Bajar los brazos de golpe"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_waterfall"
         },
         {
           "id": "4_5.maio.s2.dam",
@@ -272,7 +294,8 @@
             "gl": "Poñer as mans coma un muro",
             "es": "Poner las manos como un muro"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_dam"
         },
         {
           "id": "4_5.maio.s2.channel",
@@ -283,7 +306,8 @@
             "gl": "Facer unha canle coas mans",
             "es": "Hacer un canal con las manos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_channel"
         },
         {
           "id": "4_5.maio.s2.current",
@@ -294,7 +318,8 @@
             "gl": "Moverse levado pola auga",
             "es": "Moverse llevado por el agua"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_current"
         },
         {
           "id": "4_5.maio.s2.paper-boat-race",
@@ -305,7 +330,8 @@
             "gl": "Soprar un barco de papel",
             "es": "Soplar un barco de papel"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_paper_boat_race"
         },
         {
           "id": "4_5.maio.s2.water-pipe",
@@ -316,7 +342,8 @@
             "gl": "Facer un tubo cos brazos",
             "es": "Hacer un tubo con los brazos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_water_pipe"
         },
         {
           "id": "4_5.maio.s2.flow",
@@ -327,7 +354,8 @@
             "gl": "Mover as mans suaves",
             "es": "Mover las manos suaves"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_flow"
         },
         {
           "id": "4_5.maio.s2.block-the-water",
@@ -338,7 +366,8 @@
             "gl": "Poñer as mans diante",
             "es": "Poner las manos delante"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_block_the_water"
         },
         {
           "id": "4_5.maio.s2.splash-down",
@@ -349,7 +378,8 @@
             "gl": "Baixar as mans e abrilas",
             "es": "Bajar las manos y abrirlas"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_splash_down"
         },
         {
           "id": "4_5.maio.s2.blow-the-boat",
@@ -360,7 +390,8 @@
             "gl": "Soprar forte",
             "es": "Soplar fuerte"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_blow_the_boat"
         },
         {
           "id": "4_5.maio.s2.drain-away",
@@ -371,7 +402,8 @@
             "gl": "Abrir as mans cara abaixo",
             "es": "Abrir las manos hacia abajo"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_drain_away"
         },
         {
           "id": "4_5.maio.s2.rushing",
@@ -394,7 +426,8 @@
             "gl": "Mover un dedo amodo",
             "es": "Mover un dedo despacio"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_trickling"
         },
         {
           "id": "4_5.maio.s2.downstream",
@@ -405,7 +438,8 @@
             "gl": "Mover a man cara abaixo",
             "es": "Mover la mano hacia abajo"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_downstream"
         },
         {
           "id": "4_5.maio.s2.upstream",
@@ -416,7 +450,8 @@
             "gl": "Mover a man cara arriba con esforzo",
             "es": "Mover la mano hacia arriba con esfuerzo"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_upstream"
         },
         {
           "id": "4_5.maio.s2.which-boat-is-faster",
@@ -427,7 +462,8 @@
             "gl": "Soprar e comparar",
             "es": "Soplar y comparar"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_which_boat_is_faster"
         },
         {
           "id": "4_5.maio.s2.blow-harder",
@@ -438,7 +474,8 @@
             "gl": "Soprar con forza",
             "es": "Soplar con fuerza"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_blow_harder"
         },
         {
           "id": "4_5.maio.s2.water-always-flows-downhill",
@@ -449,7 +486,8 @@
             "gl": "Mover as mans de arriba abaixo",
             "es": "Mover las manos de arriba abajo"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_water_always_flows_downhill"
         },
         {
           "id": "4_5.maio.s2.ready-set-blow",
@@ -460,7 +498,8 @@
             "gl": "Soprar ao sinal",
             "es": "Soplar a la señal"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_ready_set_blow"
         }
       ]
     },
@@ -480,7 +519,8 @@
             "gl": "Facer un círculo co dedo",
             "es": "Hacer un círculo con el dedo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_water_cycle"
         },
         {
           "id": "4_5.maio.s3.steam",
@@ -491,7 +531,8 @@
             "gl": "Subir os dedos coma vapor",
             "es": "Subir los dedos como vapor"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_steam"
         },
         {
           "id": "4_5.maio.s3.evaporation",
@@ -502,7 +543,8 @@
             "gl": "Subir amodo as mans",
             "es": "Subir despacio las manos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_evaporation"
         },
         {
           "id": "4_5.maio.s3.rain-gauge",
@@ -513,7 +555,8 @@
             "gl": "Encher un vaso de choiva",
             "es": "Llenar un vaso de lluvia"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_rain_gauge"
         },
         {
           "id": "4_5.maio.s3.prism",
@@ -524,7 +567,8 @@
             "gl": "Mirar a luz nun cristal",
             "es": "Mirar la luz en un cristal"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_prism"
         },
         {
           "id": "4_5.maio.s3.weather-station",
@@ -535,7 +579,8 @@
             "gl": "Sinalar o sol, a choiva e o vento",
             "es": "Señalar el sol, la lluvia y el viento"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_weather_station"
         },
         {
           "id": "4_5.maio.s3.droplet",
@@ -546,7 +591,8 @@
             "gl": "Tocar a man cun dedo",
             "es": "Tocar la mano con un dedo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_droplet"
         },
         {
           "id": "4_5.maio.s3.evaporate",
@@ -569,7 +615,8 @@
             "gl": "Xuntar as mans en nube",
             "es": "Juntar las manos en nube"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_condense"
         },
         {
           "id": "4_5.maio.s3.fall-as-rain",
@@ -580,7 +627,8 @@
             "gl": "Baixar os dedos",
             "es": "Bajar los dedos"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_fall_as_rain"
         },
         {
           "id": "4_5.maio.s3.collect-rain",
@@ -591,7 +639,8 @@
             "gl": "Poñer un vaso fóra",
             "es": "Poner un vaso fuera"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_collect_rain"
         },
         {
           "id": "4_5.maio.s3.refract",
@@ -602,7 +651,8 @@
             "gl": "Abrir a man en abano",
             "es": "Abrir la mano en abanico"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_refract"
         },
         {
           "id": "4_5.maio.s3.rainy-season",
@@ -625,7 +675,8 @@
             "gl": "Abanarse",
             "es": "Abanicarse"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_humid"
         },
         {
           "id": "4_5.maio.s3.colour-striped",
@@ -636,7 +687,8 @@
             "gl": "Debuxar un arco de cores",
             "es": "Dibujar un arco de colores"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_rainbow_striped"
         },
         {
           "id": "4_5.maio.s3.sun-and-rain-together",
@@ -647,7 +699,8 @@
             "gl": "Abrir unha man e mover a outra",
             "es": "Abrir una mano y mover la otra"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_sun_and_rain_together"
         },
         {
           "id": "4_5.maio.s3.where-does-rain-come-from",
@@ -658,7 +711,8 @@
             "gl": "Sinalar as nubes",
             "es": "Señalar las nubes"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_where_does_rain_come_from"
         },
         {
           "id": "4_5.maio.s3.when-the-sun-shines-through-the-rain-we-see-a-rainbow",
@@ -669,7 +723,8 @@
             "gl": "Debuxar un arco",
             "es": "Dibujar un arco"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_when_the_sun_shines_through_the_rain_we_see_a_ra"
         },
         {
           "id": "4_5.maio.s3.up-as-steam-down-as-rain",
@@ -680,7 +735,8 @@
             "gl": "Subir e baixar as mans",
             "es": "Subir y bajar las manos"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_up_as_steam_down_as_rain"
         },
         {
           "id": "4_5.maio.s3.look-a-rainbow",
@@ -691,7 +747,8 @@
             "gl": "Sinalar o ceo",
             "es": "Señalar el cielo"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_look_a_rainbow"
         }
       ]
     },
@@ -711,7 +768,8 @@
             "gl": "Abrir as mans ao chegar ao mar",
             "es": "Abrir las manos al llegar al mar"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_river_mouth"
         },
         {
           "id": "4_5.maio.s4.estuary",
@@ -722,7 +780,8 @@
             "gl": "Debuxar a ría co dedo",
             "es": "Dibujar la ría con el dedo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_estuary"
         },
         {
           "id": "4_5.maio.s4.riverbank",
@@ -733,7 +792,8 @@
             "gl": "Sentarse na beira",
             "es": "Sentarse en la orilla"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_riverbank"
         },
         {
           "id": "4_5.maio.s4.fresh-water",
@@ -744,7 +804,8 @@
             "gl": "Beber de mentira",
             "es": "Beber de mentira"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_fresh_water"
         },
         {
           "id": "4_5.maio.s4.salt-water",
@@ -755,7 +816,8 @@
             "gl": "Poñer cara de salgado",
             "es": "Poner cara de salado"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_salt_water"
         },
         {
           "id": "4_5.maio.s4.otter",
@@ -766,7 +828,8 @@
             "gl": "Nadar de costas coas mans na barriga",
             "es": "Nadar de espaldas con las manos en la barriga"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_otter"
         },
         {
           "id": "4_5.maio.s4.heron",
@@ -777,7 +840,8 @@
             "gl": "Suxeitarse nun pé quieto",
             "es": "Sostenerse en un pie quieto"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_heron"
         },
         {
           "id": "4_5.maio.s4.paddle-across",
@@ -824,7 +888,8 @@
             "gl": "Suxeitarse nun pé",
             "es": "Sostenerse en un pie"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_stand_like_a_heron"
         },
         {
           "id": "4_5.maio.s4.float-on-your-back",
@@ -835,7 +900,8 @@
             "gl": "Deitarse cos brazos abertos",
             "es": "Tumbarse con los brazos abiertos"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_float_on_your_back"
         },
         {
           "id": "4_5.maio.s4.brackish",
@@ -846,7 +912,8 @@
             "gl": "Probar e dubidar",
             "es": "Probar y dudar"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_brackish"
         },
         {
           "id": "4_5.maio.s4.winding",
@@ -857,7 +924,8 @@
             "gl": "Mover a man en zigzag",
             "es": "Mover la mano en zigzag"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_winding"
         },
         {
           "id": "4_5.maio.s4.muddy-bank",
@@ -868,7 +936,8 @@
             "gl": "Pisar con coidado",
             "es": "Pisar con cuidado"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_muddy_bank"
         },
         {
           "id": "4_5.maio.s4.tidal",
@@ -879,7 +948,8 @@
             "gl": "Mover a man adiante e atrás",
             "es": "Mover la mano adelante y atrás"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_tidal"
         },
         {
           "id": "4_5.maio.s4.where-does-the-river-go",
@@ -890,7 +960,8 @@
             "gl": "Seguir co dedo",
             "es": "Seguir con el dedo"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_where_does_the_river_go"
         },
         {
           "id": "4_5.maio.s4.the-river-runs-into-the-sea",
@@ -901,7 +972,8 @@
             "gl": "Mover a man ata abrila",
             "es": "Mover la mano hasta abrirla"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_the_river_runs_into_the_sea"
         },
         {
           "id": "4_5.maio.s4.shh-a-heron",
@@ -912,7 +984,8 @@
             "gl": "Poñer o dedo nos beizos",
             "es": "Poner el dedo en los labios"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_shh_a_heron"
         },
         {
           "id": "4_5.maio.s4.float-like-an-otter",
@@ -923,7 +996,8 @@
             "gl": "Deitarse e flotar",
             "es": "Tumbarse y flotar"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_float_like_an_otter"
         }
       ]
     }

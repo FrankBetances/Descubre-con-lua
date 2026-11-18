@@ -33,7 +33,8 @@
           "tprAction": {
             "gl": "Tocar os ombros",
             "es": "Tocar los hombros"
-          }
+          },
+          "lamina": "pal_shoulders"
         },
         {
           "id": "3_4.outubro.s1.knees",
@@ -80,7 +81,8 @@
           "tprAction": {
             "gl": "Sinalar os ollos con suavidade",
             "es": "Señalar los ojos con suavidad"
-          }
+          },
+          "lamina": "pal_eyes"
         },
         {
           "id": "3_4.outubro.s1.ears",
@@ -91,7 +93,8 @@
           "tprAction": {
             "gl": "Tocar as orellas e escoitar",
             "es": "Tocar las orejas y escuchar"
-          }
+          },
+          "lamina": "pal_ears"
         },
         {
           "id": "3_4.outubro.s1.mouth",
@@ -102,7 +105,8 @@
           "tprAction": {
             "gl": "Abrir e pechar a boca amodo",
             "es": "Abrir y cerrar la boca despacio"
-          }
+          },
+          "lamina": "pal_mouth"
         },
         {
           "id": "3_4.outubro.s1.nose",
@@ -113,7 +117,8 @@
           "tprAction": {
             "gl": "Tocar a punta do nariz",
             "es": "Tocar la punta de la nariz"
-          }
+          },
+          "lamina": "pal_nose"
         },
         {
           "id": "3_4.outubro.s1.jump",
@@ -136,7 +141,8 @@
           "tprAction": {
             "gl": "Abrir e xirar as dúas mans",
             "es": "Abrir y girar las dos manos"
-          }
+          },
+          "lamina": "pal_hands"
         },
         {
           "id": "3_4.outubro.s1.feet",
@@ -147,7 +153,8 @@
           "tprAction": {
             "gl": "Pisar suave marcando o pulso",
             "es": "Pisar suave marcando el pulso"
-          }
+          },
+          "lamina": "pal_feet"
         },
         {
           "id": "3_4.outubro.s1.walk",
@@ -182,7 +189,8 @@
           "tprAction": {
             "gl": "Dar unha volta sobre un mesmo",
             "es": "Dar una vuelta sobre uno mismo"
-          }
+          },
+          "lamina": "pal_turn"
         },
         {
           "id": "3_4.outubro.s1.big",
@@ -274,7 +282,8 @@
           "tprAction": {
             "gl": "Inflar as meixelas e tocalas cos dedos",
             "es": "Inflar las mejillas y tocarlas con los dedos"
-          }
+          },
+          "lamina": "pal_cheeks"
         },
         {
           "id": "3_4.outubro.s2.chin",
@@ -285,7 +294,8 @@
           "tprAction": {
             "gl": "Tocar o queixo co dedo índice",
             "es": "Tocarse la barbilla con el dedo índice"
-          }
+          },
+          "lamina": "pal_chin"
         },
         {
           "id": "3_4.outubro.s2.hair",
@@ -296,7 +306,8 @@
           "tprAction": {
             "gl": "Pasar as mans polo pelo coma se o peiteasemos",
             "es": "Pasarse las manos por el pelo como si nos peináramos"
-          }
+          },
+          "lamina": "pal_hair"
         },
         {
           "id": "3_4.outubro.s2.teeth",
@@ -307,7 +318,8 @@
           "tprAction": {
             "gl": "Amosar os dentes cun sorriso grande",
             "es": "Enseñar los dientes con una sonrisa grande"
-          }
+          },
+          "lamina": "pal_teeth"
         },
         {
           "id": "3_4.outubro.s2.tongue",
@@ -318,7 +330,8 @@
           "tprAction": {
             "gl": "Sacar a lingua e movela dun lado a outro",
             "es": "Sacar la lengua y moverla de un lado a otro"
-          }
+          },
+          "lamina": "pal_tongue"
         },
         {
           "id": "3_4.outubro.s2.see",
@@ -341,7 +354,8 @@
           "tprAction": {
             "gl": "Cheirar unha flor imaxinaria preto do nariz",
             "es": "Oler una flor imaginaria cerca de la nariz"
-          }
+          },
+          "lamina": "pal_smell"
         },
         {
           "id": "3_4.outubro.s2.taste",
@@ -352,7 +366,8 @@
           "tprAction": {
             "gl": "Levar unha culler imaxinaria á boca amodo",
             "es": "Llevarse una cuchara imaginaria a la boca despacio"
-          }
+          },
+          "lamina": "pal_taste"
         },
         {
           "id": "3_4.outubro.s2.touch",
@@ -363,7 +378,8 @@
           "tprAction": {
             "gl": "Tocar suavemente algo que estea preto",
             "es": "Tocar suavemente algo que esté cerca"
-          }
+          },
+          "lamina": "pal_touch"
         },
         {
           "id": "3_4.outubro.s2.blink",
@@ -374,7 +390,8 @@
           "tprAction": {
             "gl": "Pechar e abrir os ollos moi rápido",
             "es": "Cerrar y abrir los ojos muy rápido"
-          }
+          },
+          "lamina": "pal_blink"
         },
         {
           "id": "3_4.outubro.s2.bright",
@@ -397,7 +414,8 @@
           "tprAction": {
             "gl": "Tapar os ollos coas mans",
             "es": "Taparse los ojos con las manos"
-          }
+          },
+          "lamina": "pal_dark"
         },
         {
           "id": "3_4.outubro.s2.yummy",
@@ -408,7 +426,8 @@
           "tprAction": {
             "gl": "Lamber os beizos e dicir «mmm»",
             "es": "Relamerse y decir «mmm»"
-          }
+          },
+          "lamina": "pal_yummy"
         },
         {
           "id": "3_4.outubro.s2.sour",
@@ -419,7 +438,8 @@
           "tprAction": {
             "gl": "Poñer cara de limón, pechando os ollos e engurrando a boca",
             "es": "Poner cara de limón, cerrando los ojos y arrugando la boca"
-          }
+          },
+          "lamina": "pal_sour"
         },
         {
           "id": "3_4.outubro.s2.tickly",
@@ -430,7 +450,8 @@
           "tprAction": {
             "gl": "Facer cóxegas suaves no propio brazo",
             "es": "Hacerse cosquillas suaves en el brazo"
-          }
+          },
+          "lamina": "pal_tickly"
         },
         {
           "id": "3_4.outubro.s2.touch-your-head",
@@ -441,7 +462,8 @@
           "tprAction": {
             "gl": "Tocar a cabeza coas dúas mans ao escoitar a orde",
             "es": "Tocarse la cabeza con las dos manos al oír la orden"
-          }
+          },
+          "lamina": "pal_touch_your_head"
         },
         {
           "id": "3_4.outubro.s2.shake-hands",
@@ -452,7 +474,8 @@
           "tprAction": {
             "gl": "Darlle a man a quen está ao lado e movela",
             "es": "Dar la mano a quien está al lado y moverla"
-          }
+          },
+          "lamina": "pal_shake_hands"
         },
         {
           "id": "3_4.outubro.s2.hands-on-your-tummy",
@@ -463,7 +486,8 @@
           "tprAction": {
             "gl": "Pousar as mans na barriga e notar como sobe e baixa",
             "es": "Poner las manos en la barriga y notar cómo sube y baja"
-          }
+          },
+          "lamina": "pal_hands_on_your_tummy"
         },
         {
           "id": "3_4.outubro.s2.close-your-eyes-and-listen",
@@ -474,7 +498,8 @@
           "tprAction": {
             "gl": "Pechar os ollos e quedar quietos escoitando",
             "es": "Cerrar los ojos y quedarse quietos escuchando"
-          }
+          },
+          "lamina": "pal_close_your_eyes_and_listen"
         }
       ]
     },
@@ -494,7 +519,8 @@
           "tprAction": {
             "gl": "Abrir os brazos en cruz",
             "es": "Abrir los brazos en cruz"
-          }
+          },
+          "lamina": "pal_arms"
         },
         {
           "id": "3_4.outubro.s3.legs",
@@ -505,7 +531,8 @@
           "tprAction": {
             "gl": "Dar unhas palmadas suaves nas pernas",
             "es": "Darse unas palmadas suaves en las piernas"
-          }
+          },
+          "lamina": "pal_legs"
         },
         {
           "id": "3_4.outubro.s3.fingers",
@@ -516,7 +543,8 @@
           "tprAction": {
             "gl": "Abrir e pechar os dedos das dúas mans",
             "es": "Abrir y cerrar los dedos de las dos manos"
-          }
+          },
+          "lamina": "pal_fingers"
         },
         {
           "id": "3_4.outubro.s3.thumb",
@@ -527,7 +555,8 @@
           "tprAction": {
             "gl": "Levantar o polgar cara arriba",
             "es": "Levantar el pulgar hacia arriba"
-          }
+          },
+          "lamina": "pal_thumb"
         },
         {
           "id": "3_4.outubro.s3.elbow",
@@ -538,7 +567,8 @@
           "tprAction": {
             "gl": "Tocar un cóbado coa man contraria",
             "es": "Tocarse un codo con la mano contraria"
-          }
+          },
+          "lamina": "pal_elbow"
         },
         {
           "id": "3_4.outubro.s3.back",
@@ -549,7 +579,8 @@
           "tprAction": {
             "gl": "Tocar as costas coas dúas mans por detrás",
             "es": "Tocarse la espalda con las dos manos por detrás"
-          }
+          },
+          "lamina": "pal_back"
         },
         {
           "id": "3_4.outubro.s3.stretch",
@@ -572,7 +603,8 @@
           "tprAction": {
             "gl": "Dobrar os xeonllos e baixar un pouco",
             "es": "Flexionar las rodillas y bajar un poco"
-          }
+          },
+          "lamina": "pal_bend"
         },
         {
           "id": "3_4.outubro.s3.reach",
@@ -583,7 +615,8 @@
           "tprAction": {
             "gl": "Estirar o brazo para coller algo alto",
             "es": "Estirar el brazo para coger algo alto"
-          }
+          },
+          "lamina": "pal_reach"
         },
         {
           "id": "3_4.outubro.s3.wiggle",
@@ -594,7 +627,8 @@
           "tprAction": {
             "gl": "Menear as cadeiras dun lado a outro",
             "es": "Menear las caderas de un lado a otro"
-          }
+          },
+          "lamina": "pal_wiggle"
         },
         {
           "id": "3_4.outubro.s3.kick",
@@ -605,7 +639,8 @@
           "tprAction": {
             "gl": "Dar unha patada suave a unha pelota imaxinaria",
             "es": "Dar una patada suave a una pelota imaginaria"
-          }
+          },
+          "lamina": "pal_kick"
         },
         {
           "id": "3_4.outubro.s3.fast",
@@ -616,7 +651,8 @@
           "tprAction": {
             "gl": "Mover as mans moi rápido",
             "es": "Mover las manos muy rápido"
-          }
+          },
+          "lamina": "pal_fast"
         },
         {
           "id": "3_4.outubro.s3.slow",
@@ -639,7 +675,8 @@
           "tprAction": {
             "gl": "Dobrar os brazos amosando forza",
             "es": "Doblar los brazos mostrando fuerza"
-          }
+          },
+          "lamina": "pal_strong"
         },
         {
           "id": "3_4.outubro.s3.long",
@@ -650,7 +687,8 @@
           "tprAction": {
             "gl": "Separar moito as mans para amosar algo longo",
             "es": "Separar mucho las manos para mostrar algo largo"
-          }
+          },
+          "lamina": "pal_long"
         },
         {
           "id": "3_4.outubro.s3.stand-up",
@@ -661,7 +699,8 @@
           "tprAction": {
             "gl": "Poñerse de pé amodo desde o chan",
             "es": "Ponerse de pie despacio desde el suelo"
-          }
+          },
+          "lamina": "pal_stand_up"
         },
         {
           "id": "3_4.outubro.s3.arms-up",
@@ -684,7 +723,8 @@
           "tprAction": {
             "gl": "Mover os dedos no aire coma se tocasen o piano",
             "es": "Mover los dedos en el aire como si tocaran el piano"
-          }
+          },
+          "lamina": "pal_wiggle_your_fingers"
         },
         {
           "id": "3_4.outubro.s3.fast-and-slow",
@@ -695,7 +735,8 @@
           "tprAction": {
             "gl": "Camiñar rápido e logo moi amodo",
             "es": "Caminar rápido y luego muy despacio"
-          }
+          },
+          "lamina": "pal_fast_and_slow"
         },
         {
           "id": "3_4.outubro.s3.up-and-down",
@@ -706,7 +747,8 @@
           "tprAction": {
             "gl": "Subir e baixar os brazos ao pulso",
             "es": "Subir y bajar los brazos al pulso"
-          }
+          },
+          "lamina": "pal_up_and_down"
         }
       ]
     },
@@ -726,7 +768,8 @@
           "tprAction": {
             "gl": "Mover a cabeza amodo dun lado a outro",
             "es": "Mover la cabeza despacio de un lado a otro"
-          }
+          },
+          "lamina": "pal_neck"
         },
         {
           "id": "3_4.outubro.s4.heart",
@@ -737,7 +780,8 @@
           "tprAction": {
             "gl": "Pousar a man no corazón e sentir o latexo",
             "es": "Poner la mano en el corazón y sentir el latido"
-          }
+          },
+          "lamina": "pal_heart"
         },
         {
           "id": "3_4.outubro.s4.body",
@@ -748,7 +792,8 @@
           "tprAction": {
             "gl": "Tocar todo o corpo de arriba abaixo",
             "es": "Tocar todo el cuerpo de arriba abajo"
-          }
+          },
+          "lamina": "pal_body"
         },
         {
           "id": "3_4.outubro.s4.face",
@@ -759,7 +804,8 @@
           "tprAction": {
             "gl": "Rodear a cara coas mans",
             "es": "Rodearse la cara con las manos"
-          }
+          },
+          "lamina": "pal_face"
         },
         {
           "id": "3_4.outubro.s4.belly-button",
@@ -770,7 +816,8 @@
           "tprAction": {
             "gl": "Buscar o embigo cun dedo",
             "es": "Buscarse el ombligo con un dedo"
-          }
+          },
+          "lamina": "pal_belly_button"
         },
         {
           "id": "3_4.outubro.s4.shadow",
@@ -781,7 +828,8 @@
           "tprAction": {
             "gl": "Moverse imitando a sombra doutra persoa",
             "es": "Moverse imitando la sombra de otra persona"
-          }
+          },
+          "lamina": "pal_shadow"
         },
         {
           "id": "3_4.outubro.s4.dance",
@@ -816,7 +864,8 @@
           "tprAction": {
             "gl": "Marchar no sitio levantando os xeonllos",
             "es": "Marchar en el sitio levantando las rodillas"
-          }
+          },
+          "lamina": "pal_march"
         },
         {
           "id": "3_4.outubro.s4.tiptoe",
@@ -851,7 +900,8 @@
           "tprAction": {
             "gl": "Agacharse e facerse baixiño",
             "es": "Agacharse y hacerse bajito"
-          }
+          },
+          "lamina": "pal_short"
         },
         {
           "id": "3_4.outubro.s4.heavy",
@@ -862,7 +912,8 @@
           "tprAction": {
             "gl": "Levantar unha pedra imaxinaria moi pesada",
             "es": "Levantar una piedra imaginaria muy pesada"
-          }
+          },
+          "lamina": "pal_heavy"
         },
         {
           "id": "3_4.outubro.s4.stiff",
@@ -873,7 +924,8 @@
           "tprAction": {
             "gl": "Moverse teso coma un robot",
             "es": "Moverse tieso como un robot"
-          }
+          },
+          "lamina": "pal_stiff"
         },
         {
           "id": "3_4.outubro.s4.floppy",
@@ -884,7 +936,8 @@
           "tprAction": {
             "gl": "Deixar caer os brazos frouxos coma un monicreque",
             "es": "Dejar caer los brazos flojos como una marioneta"
-          }
+          },
+          "lamina": "pal_floppy"
         },
         {
           "id": "3_4.outubro.s4.look-at-me",
@@ -895,7 +948,8 @@
           "tprAction": {
             "gl": "Sinalar os propios ollos e logo o grupo",
             "es": "Señalarse los ojos y luego al grupo"
-          }
+          },
+          "lamina": "pal_look_at_me"
         },
         {
           "id": "3_4.outubro.s4.turn-around",
@@ -930,7 +984,8 @@
           "tprAction": {
             "gl": "Xirar as mans unha arredor da outra",
             "es": "Girar las manos una alrededor de la otra"
-          }
+          },
+          "lamina": "pal_round_and_round"
         },
         {
           "id": "3_4.outubro.s4.stop-and-go",
@@ -941,7 +996,8 @@
           "tprAction": {
             "gl": "Camiñar, parar ao sinal e volver camiñar",
             "es": "Caminar, parar a la señal y volver a caminar"
-          }
+          },
+          "lamina": "pal_stop_and_go"
         }
       ]
     }

@@ -21,7 +21,8 @@
             "gl": "Sinalar o parque no mapa",
             "es": "Señalar el parque en el mapa"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_castrelos_park"
         },
         {
           "id": "2_3.novembro.s1.oak-tree",
@@ -32,7 +33,8 @@
             "gl": "Estirar os brazos coma un carballo",
             "es": "Estirar los brazos como un roble"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_oak_tree"
         },
         {
           "id": "2_3.novembro.s1.pond-duck",
@@ -43,7 +45,8 @@
             "gl": "Camiñar coma un pato",
             "es": "Caminar como un pato"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_pond_duck"
         },
         {
           "id": "2_3.novembro.s1.fountain",
@@ -54,7 +57,8 @@
             "gl": "Subir as mans coma a auga da fonte",
             "es": "Subir las manos como el agua de la fuente"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_fountain"
         },
         {
           "id": "2_3.novembro.s1.footpath",
@@ -65,7 +69,8 @@
             "gl": "Camiñar polo carreiro",
             "es": "Caminar por el sendero"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_footpath"
         },
         {
           "id": "2_3.novembro.s1.park-bench",
@@ -76,7 +81,8 @@
             "gl": "Sentarse no banco",
             "es": "Sentarse en el banco"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_park_bench"
         },
         {
           "id": "2_3.novembro.s1.gate",
@@ -87,7 +93,8 @@
             "gl": "Abrir o portal do parque",
             "es": "Abrir la verja del parque"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_gate"
         },
         {
           "id": "2_3.novembro.s1.stroll",
@@ -110,7 +117,8 @@
             "gl": "Estender a man con comida para patos",
             "es": "Extender la mano con comida para patos"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_feed_the_ducks"
         },
         {
           "id": "2_3.novembro.s1.kick-a-leaf",
@@ -133,7 +141,8 @@
             "gl": "Esconderse detrás dunha árbore",
             "es": "Esconderse detrás de un árbol"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_hide_behind"
         },
         {
           "id": "2_3.novembro.s1.point-at",
@@ -144,7 +153,8 @@
             "gl": "Sinalar un paxaro",
             "es": "Señalar un pájaro"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_point_at"
         },
         {
           "id": "2_3.novembro.s1.leaf-covered",
@@ -155,7 +165,8 @@
             "gl": "Tapar os pés con follas",
             "es": "Tapar los pies con hojas"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_leaf_covered"
         },
         {
           "id": "2_3.novembro.s1.russet",
@@ -166,7 +177,8 @@
             "gl": "Amosar unha folla avermellada",
             "es": "Enseñar una hoja rojiza"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_russet"
         },
         {
           "id": "2_3.novembro.s1.misty",
@@ -177,7 +189,8 @@
             "gl": "Mover as mans coma néboa",
             "es": "Mover las manos como niebla"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_misty"
         },
         {
           "id": "2_3.novembro.s1.peaceful-park",
@@ -188,7 +201,8 @@
             "gl": "Respirar fondo no parque",
             "es": "Respirar hondo en el parque"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_peaceful_park"
         },
         {
           "id": "2_3.novembro.s1.let-s-go-to-the-park",
@@ -199,7 +213,8 @@
             "gl": "Coller a man e camiñar",
             "es": "Coger la mano y caminar"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_let_s_go_to_the_park"
         },
         {
           "id": "2_3.novembro.s1.look-at-the-ducks",
@@ -210,7 +225,8 @@
             "gl": "Sinalar os patos",
             "es": "Señalar los patos"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_look_at_the_ducks"
         },
         {
           "id": "2_3.novembro.s1.along-the-path",
@@ -221,7 +237,8 @@
             "gl": "Camiñar en fila polo carreiro",
             "es": "Caminar en fila por el sendero"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_along_the_path"
         },
         {
           "id": "2_3.novembro.s1.leaves-on-my-shoes",
@@ -232,7 +249,8 @@
             "gl": "Sinalar as follas nos pés",
             "es": "Señalar las hojas en los pies"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_leaves_on_my_shoes"
         }
       ]
     },
@@ -252,7 +270,8 @@
             "gl": "Soprar forte unha vez",
             "es": "Soplar fuerte una vez"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_gust"
         },
         {
           "id": "2_3.novembro.s2.weather-vane",
@@ -263,7 +282,8 @@
             "gl": "Xirar un brazo coma o catavento",
             "es": "Girar un brazo como la veleta"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_weather_vane"
         },
         {
           "id": "2_3.novembro.s2.paper-bag",
@@ -274,7 +294,8 @@
             "gl": "Encher a bolsa de follas",
             "es": "Llenar la bolsa de hojas"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_paper_bag"
         },
         {
           "id": "2_3.novembro.s2.scarecrow",
@@ -285,7 +306,8 @@
             "gl": "Abrir os brazos coma un espantallo",
             "es": "Abrir los brazos como un espantapájaros"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_scarecrow"
         },
         {
           "id": "2_3.novembro.s2.windmill",
@@ -296,7 +318,8 @@
             "gl": "Xirar os brazos coma un muíño",
             "es": "Girar los brazos como un molino"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_windmill"
         },
         {
           "id": "2_3.novembro.s2.hat-brim",
@@ -307,7 +330,8 @@
             "gl": "Suxeitar o chapeu co vento",
             "es": "Sujetar el sombrero con el viento"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_hat_brim"
         },
         {
           "id": "2_3.novembro.s2.treetop",
@@ -318,7 +342,8 @@
             "gl": "Sinalar a copa da árbore",
             "es": "Señalar la copa del árbol"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_treetop"
         },
         {
           "id": "2_3.novembro.s2.blow-away",
@@ -341,7 +366,8 @@
             "gl": "Bater os brazos coma o vento",
             "es": "Batir los brazos como el viento"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_flap_arms"
         },
         {
           "id": "2_3.novembro.s2.hold-on",
@@ -352,7 +378,8 @@
             "gl": "Agarrarse ao banco",
             "es": "Agarrarse al banco"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_hold_on"
         },
         {
           "id": "2_3.novembro.s2.whoosh-around",
@@ -363,7 +390,8 @@
             "gl": "Correr en círculo facendo «fiuuu»",
             "es": "Correr en círculo haciendo «fiuuu»"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_whoosh_around"
         },
         {
           "id": "2_3.novembro.s2.bend-in-the-wind",
@@ -374,7 +402,8 @@
             "gl": "Inclinarse dun lado a outro",
             "es": "Inclinarse de un lado a otro"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_bend_in_the_wind"
         },
         {
           "id": "2_3.novembro.s2.blustery",
@@ -385,7 +414,8 @@
             "gl": "Mover o corpo co vento",
             "es": "Mover el cuerpo con el viento"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_blustery"
         },
         {
           "id": "2_3.novembro.s2.swirly",
@@ -396,7 +426,8 @@
             "gl": "Facer un remuíño co dedo",
             "es": "Hacer un remolino con el dedo"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_swirly"
         },
         {
           "id": "2_3.novembro.s2.chilly-wind",
@@ -407,7 +438,8 @@
             "gl": "Abrazarse polo frío",
             "es": "Abrazarse por el frío"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_chilly_wind"
         },
         {
           "id": "2_3.novembro.s2.wild-wind",
@@ -418,7 +450,8 @@
             "gl": "Mover os brazos con forza",
             "es": "Mover los brazos con fuerza"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_wild_wind"
         },
         {
           "id": "2_3.novembro.s2.hold-your-hat",
@@ -429,7 +462,8 @@
             "gl": "Pousar as mans na cabeza",
             "es": "Posar las manos en la cabeza"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_hold_your_hat"
         },
         {
           "id": "2_3.novembro.s2.the-wind-is-blowing",
@@ -452,7 +486,8 @@
             "gl": "Lanzar a folla cara arriba",
             "es": "Lanzar la hoja hacia arriba"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_up_and_away"
         },
         {
           "id": "2_3.novembro.s2.with-the-wind",
@@ -463,7 +498,8 @@
             "gl": "Correr cos brazos abertos",
             "es": "Correr con los brazos abiertos"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_with_the_wind"
         }
       ]
     },
@@ -483,7 +519,8 @@
             "gl": "Pisar na terra e mirar a pegada",
             "es": "Pisar en la tierra y mirar la huella"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_boot_print"
         },
         {
           "id": "2_3.novembro.s3.giant-steps",
@@ -494,7 +531,8 @@
             "gl": "Dar pasos moi longos",
             "es": "Dar pasos muy largos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_giant_steps"
         },
         {
           "id": "2_3.novembro.s3.ant-steps",
@@ -505,7 +543,8 @@
             "gl": "Dar pasos moi curtos",
             "es": "Dar pasos muy cortos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_ant_steps"
         },
         {
           "id": "2_3.novembro.s3.crunchy-path",
@@ -516,7 +555,8 @@
             "gl": "Pisar sobre follas secas",
             "es": "Pisar sobre hojas secas"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_crunchy_path"
         },
         {
           "id": "2_3.novembro.s3.pile-of-leaves",
@@ -527,7 +567,8 @@
             "gl": "Saltar enriba do monte de follas",
             "es": "Saltar encima de la pila de hojas"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_pile_of_leaves"
         },
         {
           "id": "2_3.novembro.s3.puddle-edge",
@@ -538,7 +579,8 @@
             "gl": "Camiñar pola beira da poza",
             "es": "Caminar por el borde del charco"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_puddle_edge"
         },
         {
           "id": "2_3.novembro.s3.log",
@@ -549,7 +591,8 @@
             "gl": "Camiñar por riba dun tronco",
             "es": "Caminar por encima de un tronco"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_log"
         },
         {
           "id": "2_3.novembro.s3.stomp-around",
@@ -584,7 +627,8 @@
             "gl": "Bater os pés no chan",
             "es": "Patalear en el suelo"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_stamp_feet"
         },
         {
           "id": "2_3.novembro.s3.walk-heavy",
@@ -595,7 +639,8 @@
             "gl": "Camiñar coma un elefante",
             "es": "Caminar como un elefante"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_walk_like_an_elephant"
         },
         {
           "id": "2_3.novembro.s3.walk-light",
@@ -606,7 +651,8 @@
             "gl": "Camiñar de puntas",
             "es": "Caminar de puntillas"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_walk_lightly"
         },
         {
           "id": "2_3.novembro.s3.crunchy-leaves",
@@ -629,7 +675,8 @@
             "gl": "Pisar moi forte",
             "es": "Pisar muy fuerte"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_heavy_steps"
         },
         {
           "id": "2_3.novembro.s3.light-steps",
@@ -640,7 +687,8 @@
             "gl": "Pisar moi suave",
             "es": "Pisar muy suave"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_light_steps"
         },
         {
           "id": "2_3.novembro.s3.thumping",
@@ -651,7 +699,8 @@
             "gl": "Bater co pé e escoitar",
             "es": "Golpear con el pie y escuchar"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_thumping"
         },
         {
           "id": "2_3.novembro.s3.stomp-stomp-stomp",
@@ -662,7 +711,8 @@
             "gl": "Pisar forte tres veces",
             "es": "Pisar fuerte tres veces"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_stomp_stomp_stomp"
         },
         {
           "id": "2_3.novembro.s3.listen-to-the-crunch",
@@ -673,7 +723,8 @@
             "gl": "Pisar e levar a man á orella",
             "es": "Pisar y llevar la mano a la oreja"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_listen_to_the_crunch"
         },
         {
           "id": "2_3.novembro.s3.big-steps-and-little-steps",
@@ -684,7 +735,8 @@
             "gl": "Alternar pasos longos e curtos",
             "es": "Alternar pasos largos y cortos"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_big_steps_and_little_steps"
         },
         {
           "id": "2_3.novembro.s3.over-the-log",
@@ -695,7 +747,8 @@
             "gl": "Pasar a perna por riba",
             "es": "Pasar la pierna por encima"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_over_the_log"
         }
       ]
     },
@@ -715,7 +768,8 @@
             "gl": "Sinalar o posto de castañas",
             "es": "Señalar el puesto de castañas"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_chestnut_stall"
         },
         {
           "id": "2_3.novembro.s4.picnic-blanket",
@@ -726,7 +780,8 @@
             "gl": "Estender a manta na herba",
             "es": "Extender la manta en la hierba"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_picnic_blanket"
         },
         {
           "id": "2_3.novembro.s4.napkin",
@@ -737,7 +792,8 @@
             "gl": "Limpar a boca coa servilleta",
             "es": "Limpiar la boca con la servilleta"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_napkin"
         },
         {
           "id": "2_3.novembro.s4.thermos",
@@ -748,7 +804,8 @@
             "gl": "Servir algo quente do termo",
             "es": "Servir algo caliente del termo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_thermos"
         },
         {
           "id": "2_3.novembro.s4.bonfire-smoke",
@@ -759,7 +816,8 @@
             "gl": "Subir as mans en espiral",
             "es": "Subir las manos en espiral"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_bonfire_smoke"
         },
         {
           "id": "2_3.novembro.s4.warm-chestnut",
@@ -770,7 +828,8 @@
             "gl": "Soprar a castaña antes de tocala",
             "es": "Soplar la castaña antes de tocarla"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_warm_chestnut"
         },
         {
           "id": "2_3.novembro.s4.shell-pieces",
@@ -781,7 +840,8 @@
             "gl": "Xuntar as cascas nun montón",
             "es": "Juntar las cáscaras en un montón"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_shell_pieces"
         },
         {
           "id": "2_3.novembro.s4.crack-open",
@@ -828,7 +888,8 @@
             "gl": "Soprar a comida quente",
             "es": "Soplar la comida caliente"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_blow_to_cool"
         },
         {
           "id": "2_3.novembro.s4.sit-around",
@@ -839,7 +900,8 @@
             "gl": "Sentarse todos arredor da manta",
             "es": "Sentarse todos alrededor de la manta"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_sit_around"
         },
         {
           "id": "2_3.novembro.s4.steaming",
@@ -850,7 +912,8 @@
             "gl": "Sinalar o vapor que sobe",
             "es": "Señalar el vapor que sube"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_steaming"
         },
         {
           "id": "2_3.novembro.s4.crackly-shell",
@@ -861,7 +924,8 @@
             "gl": "Romper a casca e escoitar",
             "es": "Romper la cáscara y escuchar"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_crackly_shell"
         },
         {
           "id": "2_3.novembro.s4.autumn-coloured",
@@ -872,7 +936,8 @@
             "gl": "Sinalar follas e castañas",
             "es": "Señalar hojas y castañas"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_autumn_coloured"
         },
         {
           "id": "2_3.novembro.s4.filling",
@@ -883,7 +948,8 @@
             "gl": "Tocar a barriga chea",
             "es": "Tocar la barriga llena"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_filling"
         },
         {
           "id": "2_3.novembro.s4.careful-it-s-hot",
@@ -894,7 +960,8 @@
             "gl": "Soprar e abanar a man",
             "es": "Soplar y abanicar la mano"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_careful_it_s_hot"
         },
         {
           "id": "2_3.novembro.s4.can-i-have-one",
@@ -905,7 +972,8 @@
             "gl": "Estender a man pedindo",
             "es": "Extender la mano pidiendo"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_can_i_have_one"
         },
         {
           "id": "2_3.novembro.s4.yummy-chestnut",
@@ -916,7 +984,8 @@
             "gl": "Tocar a barriga e sorrir",
             "es": "Tocar la barriga y sonreír"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_yummy_chestnut"
         },
         {
           "id": "2_3.novembro.s4.on-the-blanket",
@@ -927,7 +996,8 @@
             "gl": "Sentarse na manta",
             "es": "Sentarse en la manta"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_on_the_blanket"
         }
       ]
     }

@@ -21,7 +21,8 @@
             "gl": "Facer unha bóla coas mans",
             "es": "Hacer una bola con las manos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_planet_earth"
         },
         {
           "id": "5_6.decembro.s1.planet",
@@ -32,7 +33,8 @@
             "gl": "Xirar arredor dun amigo",
             "es": "Girar alrededor de un amigo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_planet"
         },
         {
           "id": "5_6.decembro.s1.orbit",
@@ -43,7 +45,8 @@
             "gl": "Camiñar en círculo arredor",
             "es": "Caminar en círculo alrededor"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_orbit"
         },
         {
           "id": "5_6.decembro.s1.solar-system",
@@ -54,7 +57,8 @@
             "gl": "Xirar todos arredor do centro",
             "es": "Girar todos alrededor del centro"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_solar_system"
         },
         {
           "id": "5_6.decembro.s1.sunlight",
@@ -65,7 +69,8 @@
             "gl": "Abrir as mans coma raios",
             "es": "Abrir las manos como rayos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_sunlight"
         },
         {
           "id": "5_6.decembro.s1.moonlight",
@@ -76,7 +81,8 @@
             "gl": "Mover as mans amodo e suave",
             "es": "Mover las manos despacio y suave"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_moonlight"
         },
         {
           "id": "5_6.decembro.s1.globe",
@@ -87,7 +93,8 @@
             "gl": "Xirar unha bóla imaxinaria",
             "es": "Girar una bola imaginaria"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_globe"
         },
         {
           "id": "5_6.decembro.s1.spin-like-the-earth",
@@ -98,7 +105,8 @@
             "gl": "Xirar amodo sobre si",
             "es": "Girar despacio sobre sí mismo"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_spin_like_the_earth"
         },
         {
           "id": "5_6.decembro.s1.shine-like-the-sun",
@@ -109,7 +117,8 @@
             "gl": "Abrir os brazos de golpe",
             "es": "Abrir los brazos de golpe"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_shine_like_the_sun"
         },
         {
           "id": "5_6.decembro.s1.sleep-like-the-moon",
@@ -120,7 +129,8 @@
             "gl": "Pousar a cabeza e pechar os ollos",
             "es": "Apoyar la cabeza y cerrar los ojos"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_sleep_like_the_moon"
         },
         {
           "id": "5_6.decembro.s1.circle-around",
@@ -131,7 +141,8 @@
             "gl": "Camiñar arredor dun amigo",
             "es": "Caminar alrededor de un amigo"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_circle_around"
         },
         {
           "id": "5_6.decembro.s1.point-to-the-sky",
@@ -142,7 +153,8 @@
             "gl": "Sinalar arriba",
             "es": "Señalar arriba"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_point_to_the_sky"
         },
         {
           "id": "5_6.decembro.s1.round-like-a-ball",
@@ -153,7 +165,8 @@
             "gl": "Facer unha bóla coas mans",
             "es": "Hacer una bola con las manos"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_round_like_a_ball"
         },
         {
           "id": "5_6.decembro.s1.faraway",
@@ -164,7 +177,8 @@
             "gl": "Sinalar moi lonxe",
             "es": "Señalar muy lejos"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_faraway"
         },
         {
           "id": "5_6.decembro.s1.glowing-moon",
@@ -175,7 +189,8 @@
             "gl": "Facer un círculo luminoso",
             "es": "Hacer un círculo luminoso"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_glowing_moon"
         },
         {
           "id": "5_6.decembro.s1.spinning-earth",
@@ -186,7 +201,8 @@
             "gl": "Xirar amodo",
             "es": "Girar despacio"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_spinning_earth"
         },
         {
           "id": "5_6.decembro.s1.the-earth-goes-around-the-sun",
@@ -197,7 +213,8 @@
             "gl": "Camiñar arredor dun amigo",
             "es": "Caminar alrededor de un amigo"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_the_earth_goes_around_the_sun"
         },
         {
           "id": "5_6.decembro.s1.day-and-night",
@@ -208,7 +225,8 @@
             "gl": "Abrir os ollos e pechalos",
             "es": "Abrir los ojos y cerrarlos"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_day_and_night"
         },
         {
           "id": "5_6.decembro.s1.good-morning-sun",
@@ -219,7 +237,8 @@
             "gl": "Abrir os brazos",
             "es": "Abrir los brazos"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_good_morning_sun"
         },
         {
           "id": "5_6.decembro.s1.good-night-moon",
@@ -230,7 +249,8 @@
             "gl": "Pechar os ollos",
             "es": "Cerrar los ojos"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_good_night_moon"
         }
       ]
     },
@@ -250,7 +270,8 @@
             "gl": "Unir puntos no aire",
             "es": "Unir puntos en el aire"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_constellation"
         },
         {
           "id": "5_6.decembro.s2.telescope",
@@ -261,7 +282,8 @@
             "gl": "Mirar por un tubo imaxinario",
             "es": "Mirar por un tubo imaginario"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_telescope"
         },
         {
           "id": "5_6.decembro.s2.comet",
@@ -272,7 +294,8 @@
             "gl": "Correr cun brazo detrás",
             "es": "Correr con un brazo detrás"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_comet"
         },
         {
           "id": "5_6.decembro.s2.shooting-star",
@@ -283,7 +306,8 @@
             "gl": "Cruzar o brazo rápido",
             "es": "Cruzar el brazo rápido"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_shooting_star"
         },
         {
           "id": "5_6.decembro.s2.astronaut",
@@ -294,7 +318,8 @@
             "gl": "Camiñar amodo coma sen gravidade",
             "es": "Caminar despacio como sin gravedad"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_astronaut"
         },
         {
           "id": "5_6.decembro.s2.rocket",
@@ -305,7 +330,8 @@
             "gl": "Xuntar as mans en punta e saltar",
             "es": "Juntar las manos en punta y saltar"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_rocket"
         },
         {
           "id": "5_6.decembro.s2.space",
@@ -316,7 +342,8 @@
             "gl": "Flotar cos brazos abertos",
             "es": "Flotar con los brazos abiertos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_space"
         },
         {
           "id": "5_6.decembro.s2.stargaze",
@@ -339,7 +366,8 @@
             "gl": "Unir puntos co dedo",
             "es": "Unir puntos con el dedo"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_connect_the_dots"
         },
         {
           "id": "5_6.decembro.s2.blast-off",
@@ -350,7 +378,8 @@
             "gl": "Saltar cos brazos arriba",
             "es": "Saltar con los brazos arriba"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_blast_off"
         },
         {
           "id": "5_6.decembro.s2.float-in-space",
@@ -361,7 +390,8 @@
             "gl": "Moverse moi amodo",
             "es": "Moverse muy despacio"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_float_in_space"
         },
         {
           "id": "5_6.decembro.s2.zoom-through-space",
@@ -372,7 +402,8 @@
             "gl": "Correr cos brazos estirados",
             "es": "Correr con los brazos estirados"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_zoom_through_space"
         },
         {
           "id": "5_6.decembro.s2.starry",
@@ -383,7 +414,8 @@
             "gl": "Abrir e pechar os dedos",
             "es": "Abrir y cerrar los dedos"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_starry"
         },
         {
           "id": "5_6.decembro.s2.weightless",
@@ -394,7 +426,8 @@
             "gl": "Moverse flotando",
             "es": "Moverse flotando"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_weightless"
         },
         {
           "id": "5_6.decembro.s2.distant",
@@ -405,7 +438,8 @@
             "gl": "Sinalar lonxe",
             "es": "Señalar lejos"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_distant"
         },
         {
           "id": "5_6.decembro.s2.brightest-star",
@@ -416,7 +450,8 @@
             "gl": "Sinalar unha estrela",
             "es": "Señalar una estrella"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_brightest_star"
         },
         {
           "id": "5_6.decembro.s2.ten-nine-eight-blast-off",
@@ -427,7 +462,8 @@
             "gl": "Contar e saltar",
             "es": "Contar y saltar"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_ten_nine_eight_blast_off"
         },
         {
           "id": "5_6.decembro.s2.make-a-wish-on-a-star",
@@ -438,7 +474,8 @@
             "gl": "Pechar os ollos e sorrir",
             "es": "Cerrar los ojos y sonreír"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_make_a_wish_on_a_star"
         },
         {
           "id": "5_6.decembro.s2.can-you-see-the-plough",
@@ -449,7 +486,8 @@
             "gl": "Unir puntos no aire",
             "es": "Unir puntos en el aire"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_can_you_see_the_plough"
         },
         {
           "id": "5_6.decembro.s2.stars-are-further-away-than-the-moon",
@@ -460,7 +498,8 @@
             "gl": "Sinalar preto e lonxe",
             "es": "Señalar cerca y lejos"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_stars_are_further_away_than_the_moon"
         }
       ]
     },
@@ -480,7 +519,8 @@
             "gl": "Pasar follas dun calendario",
             "es": "Pasar hojas de un calendario"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_calendar"
         },
         {
           "id": "5_6.decembro.s3.month",
@@ -491,7 +531,8 @@
             "gl": "Sinalar un mes",
             "es": "Señalar un mes"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_month"
         },
         {
           "id": "5_6.decembro.s3.week",
@@ -502,7 +543,8 @@
             "gl": "Contar sete dedos",
             "es": "Contar siete dedos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_week"
         },
         {
           "id": "5_6.decembro.s3.yesterday",
@@ -513,7 +555,8 @@
             "gl": "Sinalar cara atrás",
             "es": "Señalar hacia atrás"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_yesterday"
         },
         {
           "id": "5_6.decembro.s3.tomorrow",
@@ -524,7 +567,8 @@
             "gl": "Sinalar cara adiante",
             "es": "Señalar hacia delante"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_tomorrow"
         },
         {
           "id": "5_6.decembro.s3.today",
@@ -535,7 +579,8 @@
             "gl": "Sinalar o chan",
             "es": "Señalar el suelo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_today"
         },
         {
           "id": "5_6.decembro.s3.solstice",
@@ -546,7 +591,8 @@
             "gl": "Estirar os brazos ao máximo",
             "es": "Estirar los brazos al máximo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_solstice"
         },
         {
           "id": "5_6.decembro.s3.count-the-days",
@@ -569,7 +615,8 @@
             "gl": "Pasar unha folla",
             "es": "Pasar una hoja"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_turn_the_page_of_the_calendar"
         },
         {
           "id": "5_6.decembro.s3.mark-the-date",
@@ -580,7 +627,8 @@
             "gl": "Facer un círculo co dedo",
             "es": "Hacer un círculo con el dedo"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_mark_the_date"
         },
         {
           "id": "5_6.decembro.s3.wait-for",
@@ -591,7 +639,8 @@
             "gl": "Mirar o reloxo",
             "es": "Mirar el reloj"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_wait_for"
         },
         {
           "id": "5_6.decembro.s3.plan-ahead",
@@ -602,7 +651,8 @@
             "gl": "Sinalar adiante no calendario",
             "es": "Señalar adelante en el calendario"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_plan_ahead"
         },
         {
           "id": "5_6.decembro.s3.shortest-day",
@@ -613,7 +663,8 @@
             "gl": "Xuntar as mans",
             "es": "Juntar las manos"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_shortest_day"
         },
         {
           "id": "5_6.decembro.s3.longest-night",
@@ -624,7 +675,8 @@
             "gl": "Separar moito as mans",
             "es": "Separar mucho las manos"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_longest_night"
         },
         {
           "id": "5_6.decembro.s3.next-month",
@@ -635,7 +687,8 @@
             "gl": "Sinalar adiante",
             "es": "Señalar adelante"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_next_month"
         },
         {
           "id": "5_6.decembro.s3.last-week",
@@ -646,7 +699,8 @@
             "gl": "Sinalar atrás",
             "es": "Señalar atrás"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_last_week"
         },
         {
           "id": "5_6.decembro.s3.what-day-is-it-today",
@@ -657,7 +711,8 @@
             "gl": "Sinalar o calendario",
             "es": "Señalar el calendario"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_what_day_is_it_today"
         },
         {
           "id": "5_6.decembro.s3.yesterday-was-monday-today-is-tuesday",
@@ -668,7 +723,8 @@
             "gl": "Sinalar atrás e ao chan",
             "es": "Señalar atrás y al suelo"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_yesterday_was_monday_today_is_tuesday"
         },
         {
           "id": "5_6.decembro.s3.how-many-days-until-the-party",
@@ -679,7 +735,8 @@
             "gl": "Contar cos dedos",
             "es": "Contar con los dedos"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_how_many_days_until_the_party"
         },
         {
           "id": "5_6.decembro.s3.one-more-sleep",
@@ -690,7 +747,8 @@
             "gl": "Amosar un dedo",
             "es": "Enseñar un dedo"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_one_more_sleep"
         }
       ]
     },
@@ -710,7 +768,8 @@
             "gl": "Xuntar as mans en círculo",
             "es": "Juntar las manos en círculo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_tradition"
         },
         {
           "id": "5_6.decembro.s4.celebration",
@@ -721,7 +780,8 @@
             "gl": "Bater palmas contentos",
             "es": "Dar palmas contentos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_celebration"
         },
         {
           "id": "5_6.decembro.s4.card-making",
@@ -732,7 +792,8 @@
             "gl": "Dobrar e pintar no aire",
             "es": "Doblar y pintar en el aire"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_card_making"
         },
         {
           "id": "5_6.decembro.s4.wreath",
@@ -743,7 +804,8 @@
             "gl": "Facer un círculo coas mans",
             "es": "Hacer un círculo con las manos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_wreath"
         },
         {
           "id": "5_6.decembro.s4.carol-singers",
@@ -754,7 +816,8 @@
             "gl": "Cantar en grupo",
             "es": "Cantar en grupo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_carol_singers"
         },
         {
           "id": "5_6.decembro.s4.ornament",
@@ -765,7 +828,8 @@
             "gl": "Colgar un adorno",
             "es": "Colgar un adorno"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_ornament"
         },
         {
           "id": "5_6.decembro.s4.new-year",
@@ -776,7 +840,8 @@
             "gl": "Saltar ao dicir «ano novo»",
             "es": "Saltar al decir «año nuevo»"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_new_year"
         },
         {
           "id": "5_6.decembro.s4.countdown-to-midnight",
@@ -811,7 +876,8 @@
             "gl": "Dobrar un papel",
             "es": "Doblar un papel"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_make_a_card"
         },
         {
           "id": "5_6.decembro.s4.hang-ornaments",
@@ -822,7 +888,8 @@
             "gl": "Estirarse a colgar",
             "es": "Estirarse a colgar"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_hang_ornaments"
         },
         {
           "id": "5_6.decembro.s4.make-a-resolution",
@@ -833,7 +900,8 @@
             "gl": "Pousar a man no peito",
             "es": "Poner la mano en el pecho"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_make_a_resolution"
         },
         {
           "id": "5_6.decembro.s4.traditional",
@@ -844,7 +912,8 @@
             "gl": "Bailar coma antes",
             "es": "Bailar como antes"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_traditional"
         },
         {
           "id": "5_6.decembro.s4.joyous",
@@ -855,7 +924,8 @@
             "gl": "Saltar contentos",
             "es": "Saltar contentos"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_joyous"
         },
         {
           "id": "5_6.decembro.s4.handwritten",
@@ -866,7 +936,8 @@
             "gl": "Escribir no aire",
             "es": "Escribir en el aire"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_handwritten"
         },
         {
           "id": "5_6.decembro.s4.glittering",
@@ -877,7 +948,8 @@
             "gl": "Mover os dedos brillando",
             "es": "Mover los dedos brillando"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_glittering"
         },
         {
           "id": "5_6.decembro.s4.happy-holidays",
@@ -888,7 +960,8 @@
             "gl": "Acenar a todos",
             "es": "Saludar a todos"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_happy_holidays"
         },
         {
           "id": "5_6.decembro.s4.this-card-is-for-my-grandma",
@@ -899,7 +972,8 @@
             "gl": "Amosar a postal",
             "es": "Enseñar la postal"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_this_card_is_for_my_grandma"
         },
         {
           "id": "5_6.decembro.s4.next-year-i-will-read-more-books",
@@ -910,7 +984,8 @@
             "gl": "Abrir un libro imaxinario",
             "es": "Abrir un libro imaginario"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_next_year_i_will_read_more_books"
         },
         {
           "id": "5_6.decembro.s4.three-two-one-happy-new-year",
@@ -921,7 +996,8 @@
             "gl": "Contar e saltar",
             "es": "Contar y saltar"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_three_two_one_happy_new_year"
         }
       ]
     }

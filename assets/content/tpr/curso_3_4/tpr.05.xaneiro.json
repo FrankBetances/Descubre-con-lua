@@ -57,7 +57,8 @@
           "tprAction": {
             "gl": "Enrolar unha bufanda imaxinaria no pescozo",
             "es": "Enrollarse una bufanda imaginaria en el cuello"
-          }
+          },
+          "lamina": "pal_scarf"
         },
         {
           "id": "3_4.xaneiro.s1.gloves",
@@ -68,7 +69,8 @@
           "tprAction": {
             "gl": "Meter os dedos un a un nunhas luvas imaxinarias",
             "es": "Meter los dedos uno a uno en unos guantes imaginarios"
-          }
+          },
+          "lamina": "pal_gloves"
         },
         {
           "id": "3_4.xaneiro.s1.socks",
@@ -79,7 +81,8 @@
           "tprAction": {
             "gl": "Tirar dos calcetíns imaxinarios cara arriba",
             "es": "Subirse los calcetines imaginarios"
-          }
+          },
+          "lamina": "pal_socks"
         },
         {
           "id": "3_4.xaneiro.s1.shoe",
@@ -90,7 +93,8 @@
           "tprAction": {
             "gl": "Sinalar un zapato e logo o outro",
             "es": "Señalar un zapato y luego el otro"
-          }
+          },
+          "lamina": "pal_shoe"
         },
         {
           "id": "3_4.xaneiro.s1.put-on",
@@ -113,7 +117,8 @@
           "tprAction": {
             "gl": "Quitar unha prenda imaxinaria e sacudila",
             "es": "Quitarse una prenda imaginaria y sacudirla"
-          }
+          },
+          "lamina": "pal_take_off"
         },
         {
           "id": "3_4.xaneiro.s1.zip",
@@ -124,7 +129,8 @@
           "tprAction": {
             "gl": "Subir unha cremalleira imaxinaria de abaixo arriba",
             "es": "Subir una cremallera imaginaria de abajo arriba"
-          }
+          },
+          "lamina": "pal_zip"
         },
         {
           "id": "3_4.xaneiro.s1.button",
@@ -135,7 +141,8 @@
           "tprAction": {
             "gl": "Abotoar botóns imaxinarios no peito",
             "es": "Abrochar botones imaginarios en el pecho"
-          }
+          },
+          "lamina": "pal_button"
         },
         {
           "id": "3_4.xaneiro.s1.tie",
@@ -146,7 +153,8 @@
           "tprAction": {
             "gl": "Facer un lazo cos dedos coma nos cordóns",
             "es": "Hacer un lazo con los dedos como en los cordones"
-          }
+          },
+          "lamina": "pal_tie"
         },
         {
           "id": "3_4.xaneiro.s1.woolly",
@@ -157,7 +165,8 @@
           "tprAction": {
             "gl": "Acariñar unha prenda de la imaxinaria",
             "es": "Acariciar una prenda de lana imaginaria"
-          }
+          },
+          "lamina": "pal_woolly"
         },
         {
           "id": "3_4.xaneiro.s1.striped",
@@ -168,7 +177,8 @@
           "tprAction": {
             "gl": "Debuxar raias no aire cun dedo",
             "es": "Dibujar rayas en el aire con un dedo"
-          }
+          },
+          "lamina": "pal_striped"
         },
         {
           "id": "3_4.xaneiro.s1.spotty",
@@ -179,7 +189,8 @@
           "tprAction": {
             "gl": "Tocar puntos por todo o corpo cun dedo",
             "es": "Tocar puntos por todo el cuerpo con un dedo"
-          }
+          },
+          "lamina": "pal_spotty"
         },
         {
           "id": "3_4.xaneiro.s1.tight",
@@ -190,7 +201,8 @@
           "tprAction": {
             "gl": "Apertar os brazos contra o corpo",
             "es": "Apretar los brazos contra el cuerpo"
-          }
+          },
+          "lamina": "pal_tight"
         },
         {
           "id": "3_4.xaneiro.s1.put-on-your-hat",
@@ -213,7 +225,8 @@
           "tprAction": {
             "gl": "Subir a cremalleira do abrigo imaxinario",
             "es": "Subir la cremallera del abrigo imaginario"
-          }
+          },
+          "lamina": "pal_zip_your_coat"
         },
         {
           "id": "3_4.xaneiro.s1.ready-to-go",
@@ -224,7 +237,8 @@
           "tprAction": {
             "gl": "Poñerse de pé e colocar as mans nas correas da mochila",
             "es": "Ponerse de pie y colocar las manos en las correas de la mochila"
-          }
+          },
+          "lamina": "pal_ready_to_go"
         },
         {
           "id": "3_4.xaneiro.s1.inside-out",
@@ -235,7 +249,8 @@
           "tprAction": {
             "gl": "Dar a volta a unha prenda imaxinaria",
             "es": "Dar la vuelta a una prenda imaginaria"
-          }
+          },
+          "lamina": "pal_inside_out"
         }
       ]
     },
@@ -303,7 +318,8 @@
           "tprAction": {
             "gl": "Pisar amodo coma se os pés se pegasen á lama",
             "es": "Pisar despacio como si los pies se pegaran al barro"
-          }
+          },
+          "lamina": "pal_mud"
         },
         {
           "id": "3_4.xaneiro.s2.drop",
@@ -326,7 +342,8 @@
           "tprAction": {
             "gl": "Camiñar en fila coma pola rúa",
             "es": "Caminar en fila como por la calle"
-          }
+          },
+          "lamina": "pal_street"
         },
         {
           "id": "3_4.xaneiro.s2.stomp",
@@ -361,7 +378,8 @@
           "tprAction": {
             "gl": "Camiñar rápido no sitio coa cabeza tapada",
             "es": "Caminar rápido en el sitio con la cabeza tapada"
-          }
+          },
+          "lamina": "pal_hurry"
         },
         {
           "id": "3_4.xaneiro.s2.close",
@@ -372,7 +390,8 @@
           "tprAction": {
             "gl": "Pechar un paraugas imaxinario xuntando as mans",
             "es": "Cerrar un paraguas imaginario juntando las manos"
-          }
+          },
+          "lamina": "pal_close"
         },
         {
           "id": "3_4.xaneiro.s2.wipe",
@@ -383,7 +402,8 @@
           "tprAction": {
             "gl": "Enxugar a cara cunha toalla imaxinaria",
             "es": "Secarse la cara con una toalla imaginaria"
-          }
+          },
+          "lamina": "pal_wipe"
         },
         {
           "id": "3_4.xaneiro.s2.wet",
@@ -406,7 +426,8 @@
           "tprAction": {
             "gl": "Baixar os dedos coma chuvia e mirar arriba",
             "es": "Bajar los dedos como lluvia y mirar arriba"
-          }
+          },
+          "lamina": "pal_rainy"
         },
         {
           "id": "3_4.xaneiro.s2.grey",
@@ -417,7 +438,8 @@
           "tprAction": {
             "gl": "Sinalar algo gris na aula",
             "es": "Señalar algo gris en el aula"
-          }
+          },
+          "lamina": "pal_grey"
         },
         {
           "id": "3_4.xaneiro.s2.muddy",
@@ -440,7 +462,8 @@
           "tprAction": {
             "gl": "Abrir un paraugas imaxinario de golpe",
             "es": "Abrir un paraguas imaginario de golpe"
-          }
+          },
+          "lamina": "pal_put_up_the_umbrella"
         },
         {
           "id": "3_4.xaneiro.s2.stomp-your-boots",
@@ -451,7 +474,8 @@
           "tprAction": {
             "gl": "Pisar forte coas botas imaxinarias: pum, pum",
             "es": "Pisar fuerte con las botas imaginarias: pum, pum"
-          }
+          },
+          "lamina": "pal_stomp_your_boots"
         },
         {
           "id": "3_4.xaneiro.s2.jump-in-the-puddle",
@@ -462,7 +486,8 @@
           "tprAction": {
             "gl": "Saltar cos dous pés dentro dunha poza imaxinaria",
             "es": "Saltar con los dos pies dentro de un charco imaginario"
-          }
+          },
+          "lamina": "pal_jump_in_the_puddle"
         },
         {
           "id": "3_4.xaneiro.s2.under-the-umbrella",
@@ -473,7 +498,8 @@
           "tprAction": {
             "gl": "Xuntarse varias criaturas debaixo dun paraugas imaxinario",
             "es": "Juntarse varias criaturas debajo de un paraguas imaginario"
-          }
+          },
+          "lamina": "pal_under_the_umbrella"
         }
       ]
     },
@@ -493,7 +519,8 @@
           "tprAction": {
             "gl": "Facer o ruído dun motor: brrrum",
             "es": "Hacer el ruido de un motor: brrrum"
-          }
+          },
+          "lamina": "pal_car"
         },
         {
           "id": "3_4.xaneiro.s3.bus",
@@ -504,7 +531,8 @@
           "tprAction": {
             "gl": "Sentar en fila coma nos asentos do autobús",
             "es": "Sentarse en fila como en los asientos del autobús"
-          }
+          },
+          "lamina": "pal_bus"
         },
         {
           "id": "3_4.xaneiro.s3.bike",
@@ -515,7 +543,8 @@
           "tprAction": {
             "gl": "Suxeitar un guiador imaxinario e tocar o timbre",
             "es": "Sujetar un manillar imaginario y tocar el timbre"
-          }
+          },
+          "lamina": "pal_bike"
         },
         {
           "id": "3_4.xaneiro.s3.train",
@@ -550,7 +579,8 @@
           "tprAction": {
             "gl": "Debuxar unha roda grande no aire",
             "es": "Dibujar una rueda grande en el aire"
-          }
+          },
+          "lamina": "pal_wheel"
         },
         {
           "id": "3_4.xaneiro.s3.traffic-light",
@@ -561,7 +591,8 @@
           "tprAction": {
             "gl": "Levantar a man para parar e baixala para seguir",
             "es": "Levantar la mano para parar y bajarla para seguir"
-          }
+          },
+          "lamina": "pal_traffic_light"
         },
         {
           "id": "3_4.xaneiro.s3.drive",
@@ -584,7 +615,8 @@
           "tprAction": {
             "gl": "Montar nunha bici imaxinaria no sitio",
             "es": "Montar en una bici imaginaria en el sitio"
-          }
+          },
+          "lamina": "pal_ride"
         },
         {
           "id": "3_4.xaneiro.s3.go",
@@ -607,7 +639,8 @@
           "tprAction": {
             "gl": "Tocar unha bucina imaxinaria coa palma",
             "es": "Tocar un claxon imaginario con la palma"
-          }
+          },
+          "lamina": "pal_beep"
         },
         {
           "id": "3_4.xaneiro.s3.pedal",
@@ -618,7 +651,8 @@
           "tprAction": {
             "gl": "Tombar de costas e pedalear no aire",
             "es": "Tumbarse boca arriba y pedalear en el aire"
-          }
+          },
+          "lamina": "pal_pedal"
         },
         {
           "id": "3_4.xaneiro.s3.near",
@@ -629,7 +663,8 @@
           "tprAction": {
             "gl": "Achegar as mans ata case tocarse",
             "es": "Acercar las manos hasta casi tocarse"
-          }
+          },
+          "lamina": "pal_near"
         },
         {
           "id": "3_4.xaneiro.s3.far",
@@ -640,7 +675,8 @@
           "tprAction": {
             "gl": "Sinalar moi lonxe co brazo estirado",
             "es": "Señalar muy lejos con el brazo estirado"
-          }
+          },
+          "lamina": "pal_far"
         },
         {
           "id": "3_4.xaneiro.s3.safe",
@@ -651,7 +687,8 @@
           "tprAction": {
             "gl": "Abrazarse a un mesmo e sorrir tranquilos",
             "es": "Abrazarse a uno mismo y sonreír tranquilos"
-          }
+          },
+          "lamina": "pal_safe"
         },
         {
           "id": "3_4.xaneiro.s3.careful",
@@ -674,7 +711,8 @@
           "tprAction": {
             "gl": "Premer unha bucina imaxinaria dúas veces",
             "es": "Apretar un claxon imaginario dos veces"
-          }
+          },
+          "lamina": "pal_beep_beep"
         },
         {
           "id": "3_4.xaneiro.s3.all-aboard",
@@ -685,7 +723,8 @@
           "tprAction": {
             "gl": "Subir a un tren imaxinario cun paso grande",
             "es": "Subir a un tren imaginario con un paso grande"
-          }
+          },
+          "lamina": "pal_all_aboard"
         },
         {
           "id": "3_4.xaneiro.s3.seat-belt-on",
@@ -696,7 +735,8 @@
           "tprAction": {
             "gl": "Cruzar un cinto de seguridade imaxinario polo peito",
             "es": "Cruzar un cinturón de seguridad imaginario por el pecho"
-          }
+          },
+          "lamina": "pal_seat_belt_on"
         },
         {
           "id": "3_4.xaneiro.s3.stop-look-and-listen",
@@ -707,7 +747,8 @@
           "tprAction": {
             "gl": "Parar, mirar a ambos lados e levar a man á orella",
             "es": "Parar, mirar a ambos lados y llevarse la mano a la oreja"
-          }
+          },
+          "lamina": "pal_stop_look_and_listen"
         }
       ]
     },
@@ -727,7 +768,8 @@
           "tprAction": {
             "gl": "Poñer a mesa con pratos imaxinarios",
             "es": "Poner la mesa con platos imaginarios"
-          }
+          },
+          "lamina": "pal_kitchen"
         },
         {
           "id": "3_4.xaneiro.s4.sofa",
@@ -738,7 +780,8 @@
           "tprAction": {
             "gl": "Deixarse caer amodo sobre un sofá imaxinario",
             "es": "Dejarse caer despacio sobre un sofá imaginario"
-          }
+          },
+          "lamina": "pal_sofa"
         },
         {
           "id": "3_4.xaneiro.s4.lamp",
@@ -749,7 +792,8 @@
           "tprAction": {
             "gl": "Premer un botón imaxinario e abrir as mans coma luz",
             "es": "Pulsar un botón imaginario y abrir las manos como luz"
-          }
+          },
+          "lamina": "pal_lamp"
         },
         {
           "id": "3_4.xaneiro.s4.stairs",
@@ -760,7 +804,8 @@
           "tprAction": {
             "gl": "Subir chanzos imaxinarios levantando os xeonllos",
             "es": "Subir escalones imaginarios levantando las rodillas"
-          }
+          },
+          "lamina": "pal_stairs"
         },
         {
           "id": "3_4.xaneiro.s4.key",
@@ -771,7 +816,8 @@
           "tprAction": {
             "gl": "Meter unha chave imaxinaria na pechadura e xirala",
             "es": "Meter una llave imaginaria en la cerradura y girarla"
-          }
+          },
+          "lamina": "pal_key"
         },
         {
           "id": "3_4.xaneiro.s4.clock",
@@ -782,7 +828,8 @@
           "tprAction": {
             "gl": "Mover un brazo coma a agulla dun reloxo",
             "es": "Mover un brazo como la aguja de un reloj"
-          }
+          },
+          "lamina": "pal_clock"
         },
         {
           "id": "3_4.xaneiro.s4.floor",
@@ -793,7 +840,8 @@
           "tprAction": {
             "gl": "Tocar o chan coas palmas das mans",
             "es": "Tocar el suelo con las palmas de las manos"
-          }
+          },
+          "lamina": "pal_floor"
         },
         {
           "id": "3_4.xaneiro.s4.turn-on",
@@ -828,7 +876,8 @@
           "tprAction": {
             "gl": "Pousar a cabeza nos brazos e respirar amodo",
             "es": "Apoyar la cabeza en los brazos y respirar despacio"
-          }
+          },
+          "lamina": "pal_rest"
         },
         {
           "id": "3_4.xaneiro.s4.draw",
@@ -851,7 +900,8 @@
           "tprAction": {
             "gl": "Abrir un libro imaxinario e seguir as liñas co dedo",
             "es": "Abrir un libro imaginario y seguir las líneas con el dedo"
-          }
+          },
+          "lamina": "pal_read"
         },
         {
           "id": "3_4.xaneiro.s4.tidy",
@@ -862,7 +912,8 @@
           "tprAction": {
             "gl": "Aliñar xoguetes imaxinarios en fila",
             "es": "Alinear juguetes imaginarios en fila"
-          }
+          },
+          "lamina": "pal_tidy"
         },
         {
           "id": "3_4.xaneiro.s4.messy",
@@ -873,7 +924,8 @@
           "tprAction": {
             "gl": "Mover as mans cara a todos os lados coma un remuíño",
             "es": "Mover las manos hacia todos lados como un remolino"
-          }
+          },
+          "lamina": "pal_messy"
         },
         {
           "id": "3_4.xaneiro.s4.comfy",
@@ -884,7 +936,8 @@
           "tprAction": {
             "gl": "Acomodarse no chan cun sorriso",
             "es": "Acomodarse en el suelo con una sonrisa"
-          }
+          },
+          "lamina": "pal_comfy"
         },
         {
           "id": "3_4.xaneiro.s4.busy",
@@ -895,7 +948,8 @@
           "tprAction": {
             "gl": "Mover as mans moi rápido coma quen traballa moito",
             "es": "Mover las manos muy rápido como quien trabaja mucho"
-          }
+          },
+          "lamina": "pal_busy"
         },
         {
           "id": "3_4.xaneiro.s4.tick-tock",
@@ -906,7 +960,8 @@
           "tprAction": {
             "gl": "Mover a cabeza dun lado a outro ao pulso",
             "es": "Mover la cabeza de un lado a otro al pulso"
-          }
+          },
+          "lamina": "pal_tick_tock"
         },
         {
           "id": "3_4.xaneiro.s4.knock-knock",
@@ -917,7 +972,8 @@
           "tprAction": {
             "gl": "Petar dúas veces no aire e agardar",
             "es": "Llamar dos veces en el aire y esperar"
-          }
+          },
+          "lamina": "pal_knock_knock"
         },
         {
           "id": "3_4.xaneiro.s4.upstairs-and-downstairs",
@@ -928,7 +984,8 @@
           "tprAction": {
             "gl": "Subir e baixar chanzos imaxinarios no sitio",
             "es": "Subir y bajar escalones imaginarios en el sitio"
-          }
+          },
+          "lamina": "pal_upstairs_and_downstairs"
         },
         {
           "id": "3_4.xaneiro.s4.on-the-sofa",
@@ -939,7 +996,8 @@
           "tprAction": {
             "gl": "Sentar nun sofá imaxinario e estirar as pernas",
             "es": "Sentarse en un sofá imaginario y estirar las piernas"
-          }
+          },
+          "lamina": "pal_on_the_sofa"
         }
       ]
     }
