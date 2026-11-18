@@ -265,7 +265,8 @@ La base es el commit de merge de P0.3: Antigravity cambia esta línea por su
 SHA en el primer commit después del merge. Desde ahí, cada commit lleva su
 paso y su fila; P0.1-P0.3 se cuentan en la entrega del bloque 0.
 
-Base: `caca7cb5`
+Base: `6be3d38b`
 
 | Paso | Commit | Fecha | Qué cambia en la app | Gates | Evidencia | Revisión |
 | --- | --- | --- | --- | --- | --- | --- |
+| P0.4 | este | 2026-11-18 | Nada visible: base del registro y cierre de O-20261111-3 | OK ordenes/fallos/registro; FALLO laminas: 6351/6382 sen lámina (sin flutter) | docs/PLAN_ANTIGRAVITY.md | |

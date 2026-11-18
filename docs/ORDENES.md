@@ -305,6 +305,16 @@ Fuente: assets/content/leccions/leccions.json (xaSabe, novas, repasa y fraseGram
 - [x] C2 · Capturas gl/es de 5 pasos distintos con su dibujo (Curl, Downhill y Steep incluidos) y del aviso de un día futuro · evidencia: test/capturas_test.dart, «lamina do paso ·» y «na casa · aviso dun día futuro ·», escriben docs/capturas/leccion-paso-curl, -downhill, -steep, -bright-orange y -frase (gl y es) y docs/capturas/hoxe-aviso-dia-futuro-gl y -es
 - [ ] C3 · PR, merge a main con CI en verde, con 0 piezas sin lámina · evidencia:
 
+## O-20261111-3 · El arreglo de los días de Hoy, solo, a main
+Estado: abierta
+Absorbida por antigravity/pendiente: el arreglo de los días va en 303be16e, mergeado con main en 6be3d38b; se cumple con el merge de esa rama a main.
+> Orden de Frank (11 nov 2026): Opción 2. Hazlo ahora, sin preguntarme más: 1. Crea la rama fix/dias-hoy desde origin/main (89691006). 2. git cherry-pick 303be16e (solo el arreglo de los días de Hoy y su test test/features/ux_l3_test.dart). Si hay conflicto, PARA y dímelo. 3. Corre en local: dart format --output=none --set-exit-if-changed . && flutter analyze && flutter test --exclude-tags capturas && tools/gates.sh --fast. Todo debe salir en verde. 4. Push de fix/dias-hoy, abre el PR contra main y espera a que el CI salga en verde. Con el CI en verde, autorizo el merge a main y el push. Si el CI sale rojo, NO mergees: pégame el error. 5. Registra la evidencia en docs/ORDENES.md (PR, SHA del merge y run en verde), dentro del mismo PR o en uno aparte de solo documentación. 6. NO toques feat/laminas-ejercicios ni empieces la orden del banco Fluent/Iconify: las láminas las hace otro agente desde esa rama. Entrégame: URL del PR, SHA del merge, run de CI en verde y lo que no hayas verificado.
+Fuente: lib/features/familias/widgets/learn_duolingo.dart (y hoxe_familias_screen.dart, ux_l3_test.dart y criancas_test.dart), tal como quedan en el commit 303be16e de la rama feat/laminas-ejercicios: la parte B de O-20261111-2
+
+- [x] Los cinco nodos de los días de Hoy responden al toque: lunes y hoy abren su lección y un día futuro avisa en gl y es, sin tocar el banner · evidencia: test/features/ux_l3_test.dart («os nodos dos días responden sempre, sen tocar o banner»)
+- [ ] En local, dart format, flutter analyze, flutter test y tools/gates.sh --fast en verde · evidencia:
+- [ ] PR contra main mergeado con el CI en verde · evidencia:
+
 ## O-20261118-1 · Hoy sin vacío, escenas que se entiendan y frases con apoyo visual
 Estado: abierta
 > Aqui hay un error ya te habia explicado que me gusto el diseño ux nuevo con los dias de la semana a la izquierda y el gato a la derecha, aunque me parece que se puede mejorar porque hay mucho espacio entre el gato y los días y da la sensación de vacio, luego cuando le doy clic al ejercicio, aparece un dibujo cutre que se entiende mal y cuando le doy a continuar las frases aparecen sin apoyo visual, a eso me refiero , ademas creo que te di una serie de repositorios para sacar imagenes
