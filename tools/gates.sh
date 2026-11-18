@@ -75,6 +75,7 @@ run_gate "every order marked done has evidence for each criterion" \
 # con su causa raíz y una guarda que exista.
 run_gate "every failure Frank reported has its guard" python3 tools/check_fallos.py
 run_gate "every plan commit is in the audit log (O-20261118-4)" python3 tools/check_registro_commits.py
+run_gate "no non-commercial licence in a for-profit app (F-20261118-2)" python3 tools/check_licencias.py
 # ACOPROS (O-20261109-4): 0-2 por proyectos, ~20 palabras, frases de dos
 # elementos como mucho, sin to be, ya debería saber en holofrase, canción y
 # rima, y las cuatro semanas empiezan por el vocabulario y la canción.

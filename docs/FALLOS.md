@@ -56,5 +56,5 @@ Formato de cada entrada (una por fallo):
 
 ## F-20261118-2 · Una respuesta de Frank sobre el ánimo de lucro, leída al revés
 - Qué pasó: Frank contestó «no tiene animo de lucro» a la pregunta de si Descubre con Lúa es no comercial. Claude Code lo tomó como «es no comercial», dio por válida ARASAAC (CC BY-NC-SA) y escribió un prompt para Antigravity con ese dato. Frank quería decir que sí tiene ánimo de lucro. Lo hizo Claude Code.
-- Causa raíz: una respuesta corta que decide algo legal (la licencia de miles de imágenes) se ejecutó sin repetirla ni confirmarla, y la frase admitía dos lecturas.
-- Guarda: .claude/hooks/orden_fuente.py (si el mensaje habla de lucro, comercial, licencia, gratis, de pago o cobrar, obliga a repetir en una línea cómo se ha entendido y pedir confirmación antes de actuar)
+- Causa raíz: Frank lo había dicho muchas veces, pero no estaba escrito en ningún fichero del repositorio, así que Claude Code lo preguntó otra vez; y la respuesta, que admitía dos lecturas, se ejecutó sin repetirla ni confirmarla.
+- Guarda: tools/check_licencias.py (en tools/gates.sh: falla si aparece una licencia NC/ND o ARASAAC en lo empaquetado, los créditos o pubspec; el ánimo de lucro queda escrito en CLAUDE.md como regla de producto) y .claude/hooks/orden_fuente.py (si el mensaje habla de lucro, comercial, licencia, gratis, de pago o cobrar, obliga a repetir en una línea cómo se ha entendido y pedir confirmación antes de actuar)
