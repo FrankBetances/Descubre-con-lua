@@ -242,48 +242,58 @@ class CaminoNodos extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      key: const Key('learn_camino'),
-      width: double.infinity,
-      child: Stack(
-        alignment: Alignment.topCenter,
-        children: [
-          if (lua != null) Positioned(right: 4, top: 90, child: lua!),
-          SizedBox(
-            width: double.infinity,
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                for (var i = 0; i < etiquetas.length; i++)
-                  Padding(
-                    padding: EdgeInsets.only(top: i == 0 ? 12 : 6),
-                    // `right: ${rightPosition}px` de la fuente. Con relleno y
-                    // no con Transform.translate: un nodo trasladado solo al
-                    // pintar queda fuera de la caja de su padre y no recibe el
-                    // toque (O-20261111-2, B: el miércoles no respondía).
-                    child: Padding(
-                      padding: EdgeInsets.only(
-                        right: sangria(i) > 0 ? 2 * sangria(i) : 0,
-                        left: sangria(i) < 0 ? -2 * sangria(i) : 0,
-                      ),
-                      child: _Nodo(
-                        key: ValueKey('learn_nodo_$i'),
-                        etiqueta: etiquetas[i],
-                        estado: i < actual || (i == actual && feitoHoxe)
-                            ? EstadoNodo.feito
-                            : i == actual
-                                ? EstadoNodo.actual
-                                : EstadoNodo.bloqueado,
-                        ultimo: i == etiquetas.length - 1,
-                        empezar: empezar,
-                        onTap: () => onNodo(i),
+    // O-20261118-1: Lúa va pegada al camino, en el hueco que deja el zigzag
+    // al irse a la izquierda (nodos 1-3), no contra el borde de la pantalla.
+    return LayoutBuilder(
+      builder: (context, c) => SizedBox(
+        key: const Key('learn_camino'),
+        width: double.infinity,
+        child: Stack(
+          alignment: Alignment.topCenter,
+          children: [
+            if (lua != null)
+              Positioned(
+                key: const Key('learn_lua'),
+                left: c.maxWidth / 2 + 28,
+                top: 96,
+                child: lua!,
+              ),
+            SizedBox(
+              width: double.infinity,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  for (var i = 0; i < etiquetas.length; i++)
+                    Padding(
+                      padding: EdgeInsets.only(top: i == 0 ? 12 : 6),
+                      // `right: ${rightPosition}px` de la fuente. Con relleno y
+                      // no con Transform.translate: un nodo trasladado solo al
+                      // pintar queda fuera de la caja de su padre y no recibe el
+                      // toque (O-20261111-2, B: el miércoles no respondía).
+                      child: Padding(
+                        padding: EdgeInsets.only(
+                          right: sangria(i) > 0 ? 2 * sangria(i) : 0,
+                          left: sangria(i) < 0 ? -2 * sangria(i) : 0,
+                        ),
+                        child: _Nodo(
+                          key: ValueKey('learn_nodo_$i'),
+                          etiqueta: etiquetas[i],
+                          estado: i < actual || (i == actual && feitoHoxe)
+                              ? EstadoNodo.feito
+                              : i == actual
+                                  ? EstadoNodo.actual
+                                  : EstadoNodo.bloqueado,
+                          ultimo: i == etiquetas.length - 1,
+                          empezar: empezar,
+                          onTap: () => onNodo(i),
+                        ),
                       ),
                     ),
-                  ),
-              ],
+                ],
+              ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }

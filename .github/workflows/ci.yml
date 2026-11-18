@@ -128,7 +128,13 @@ jobs:
       - name: Set up Flutter
         uses: subosito/flutter-action@v2
         with:
+          # Fijada: Flutter 3.50.0 (estable desde el 18/11/2026) marca
+          # obsoleto package:flutter/material.dart (186 avisos en analyze) y
+          # exige Gradle 9.3.1. Con 3.47.9 analyze sale limpio. Subir de
+          # versión es una migración aparte (Gradle y material_ui), no un
+          # efecto secundario de otro cambio.
           channel: stable
+          flutter-version: 3.47.9
           cache: true
 
       - name: Set up Python

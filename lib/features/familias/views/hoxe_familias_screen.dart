@@ -6,6 +6,7 @@ import '../../juega/widgets/tarxeta_curricular.dart';
 
 import '../../../core/audio/offline_audio_service.dart';
 import '../../../core/brand/lua_pixel.dart';
+import '../../criancas/xogo_lua.dart' show CatalogoLua;
 import '../../../core/localization/app_language.dart';
 import '../../../core/localization/localized_string.dart';
 import '../../../core/navigation/ruta_lua.dart';
@@ -444,10 +445,17 @@ class _HoxeFamiliasScreenState extends State<HoxeFamiliasScreen> {
                       onNodo: abrir,
                       lua: xogo == null
                           ? null
-                          : LuaValeria(
-                              ancho: 64,
-                              cabeza: xogo.cabeza,
-                              pescozo: xogo.pescozo),
+                          : FutureBuilder<CatalogoLua>(
+                              future: CatalogoLua.cargar(),
+                              initialData: CatalogoLua.lido,
+                              builder: (context, cat) {
+                                final ini = cat.data?.deInicio ?? const {};
+                                return LuaValeria(
+                                    key: const Key('hoxe_lua'),
+                                    ancho: 112,
+                                    cabeza: xogo.cabeza ?? ini['head'],
+                                    pescozo: xogo.pescozo ?? ini['neck']);
+                              }),
                     ),
                     const SizedBox(height: 16),
                   ],

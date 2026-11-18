@@ -53,3 +53,8 @@ Formato de cada entrada (una por fallo):
 - Qué pasó: O-20261111-1 se marcó cumplida y se mergeó con solo 12 imágenes de escena de reto. La imagen salía solo en el primer paso de la lección, y la del peluche y el pañuelo aparecía en pasos de palabras con las que no tiene que ver («Curl into a ball», «Downhill», «Steep»). Las palabras, que es lo que se enseña, seguían sin dibujo. Lo hizo Claude Code.
 - Causa raíz: Claude Code redujo «los ejercicios» a «la escena del reto» sin preguntarlo (contra R1 y R∞.2), escribió criterios que solo medían ese recorte, y el gate comprobaba las 12 escenas y no las piezas enseñadas.
 - Guarda: tools/check_laminas_leccion.py (en tools/gates.sh: falla si una pieza enseñada en la lección, el TPR del día o el proyecto 0-2 no tiene lámina, si el fichero no existe o si usa una lámina de escena de reto; sin listas de exclusión)
+
+## F-20261118-1 · CI dependía de la última estable de Flutter y cayó sin cambio de código
+- Qué pasó: el run 44322296728 del PR #51 cayó en `flutter analyze` (186 avisos de `material.dart` obsoleto) y en la compilación del APK (Gradle 8.14.3 frente al mínimo 9.3.1) porque CI tomó Flutter 3.50.0, publicada después del último run en verde. El cambio del PR no tocaba nada de eso. `channel: stable` sin versión está en ci.yml desde d8b3de1b (22/9/2026, commit de github-actions[bot]); no consta quién lo escribió en origen.
+- Causa raíz: `.github/workflows/ci.yml` pedía «la última estable» sin versión, así que cualquier publicación de Flutter podía tumbar CI sin ningún commit.
+- Guarda: .github/workflows/ci.yml (flutter-version: 3.47.9 fijada, con el motivo escrito al lado; subir de versión pasa a ser una migración propia)
