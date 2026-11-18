@@ -49,6 +49,7 @@ commit. Lo vigila `tools/check_registro_commits.py`, dentro de `tools/gates.sh`.
 | P0.4 | Cerrar O-20261111-3 como absorbida | 0 | no |
 | P1.1 | Preguntar y anotar la fuente de las imágenes, con su licencia | 1 | **sí** |
 | P2.0 | Medir cobertura real en Fluent Emoji (`docs/cobertura-fluent.md`) antes de copiar | 2 | **sí** |
+| P2.01 | P2.0b: medir cobertura sobre (c) con fuentes compatibles con uso comercial y derivadas | 2 | **sí** |
 | P2.1 | Las 12 escenas de reto con la fuente nueva, capturas gl/es | 2 | **sí**: mira tres y aprueba el estilo |
 | P2.2 | Imágenes de todas las palabras y frases de 4-5 años (40 semanas) | 2 | **sí**: mira tres semanas al azar |
 | P2.3 | Resto de edades y banco TPR, hasta 0 piezas sin lámina | 2 | no |
@@ -272,4 +273,5 @@ Base: `6be3d38b`
 | --- | --- | --- | --- | --- | --- | --- |
 | P0.4 | 1995e81c | 2026-11-18 | Nada visible: base del registro y cierre de O-20261111-3 | OK ordenes/fallos/registro; FALLO laminas: 6351/6382 sen lámina (sin flutter) | docs/PLAN_ANTIGRAVITY.md | |
 | P1.1 | 4170a15b | 2026-11-18 | Créditos: Fluent Emoji (MIT) en gl/es y licencia en el paquete | sin flutter; ordenes/fallos/registro/bundled/no_emoji OK; laminas 6351/6382 | docs/ORDENES.md, assets/third_party/fluentui-emoji/LICENSE, lib/features/creditos/credits_screen.dart | |
-| P2.0 | este | 2026-11-18 | Nada visible: medición de cobertura Fluent Emoji en docs/cobertura-fluent.md | sin flutter; ordenes/fallos/registro/bundled/no_emoji OK; laminas 6351/6382 | docs/cobertura-fluent.md, docs/PLAN_ANTIGRAVITY.md | |
+| P2.0 | e5c2ff3b | 2026-11-18 | Nada visible: medición de cobertura Fluent Emoji en docs/cobertura-fluent.md | sin flutter; ordenes/fallos/registro/bundled/no_emoji OK; laminas 6351/6382 | docs/cobertura-fluent.md, docs/PLAN_ANTIGRAVITY.md | |
+| P2.01 | este | 2026-11-18 | Nada visible: P2.0b, cobertura de 6 fuentes comerciales/derivadas sobre (c) y regla de licencias | sin flutter; ordenes/fallos/registro/bundled/no_emoji OK; laminas 6351/6382 | docs/ORDENES.md, docs/cobertura-fluent.md, docs/PLAN_ANTIGRAVITY.md | |

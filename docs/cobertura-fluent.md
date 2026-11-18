@@ -4419,3 +4419,553 @@ Criterio aplicado:
 | Zoom | Ir a toda velocidad | tpr | Mover los brazos como un coche rápido |
 | Zoom through space | Volar por el espacio | tpr | Correr con los brazos estirados |
 | ¡Buenos días, hola! | ¡Buenos días, hola! | 0-2-cancion | — |
+
+---
+
+## Fuentes candidatas para `(c)` compatibles con uso comercial y derivadas (`P2.0b`)
+
+Regla fija dictada por Frank (18/11/2026) y anotada en `docs/ORDENES.md` (`O-20261111-2`):
+
+- **Descubre con Lúa tiene ánimo de lucro.** Ninguna imagen, fuente, sonido, paquete ni contenido de terceros puede tener licencia no comercial (`NC`) ni sin derivadas (`ND`).
+- Quedan descartadas `ARASAAC` (`CC BY-NC-SA`), `Sclera Symbols` (`CC BY-NC`), y bancos bajo `CC BY-SA` (`Mulberry Symbols`, `Global Symbols`, `OpenMoji`) al no figurar en la lista de licencias permitidas.
+- **Licencias permitidas exclusivamente:** `MIT`, `Apache 2.0`, `BSD`, `CC0`, `CC BY` y `OFL`. `Fluent Emoji` (`MIT`, composición de 2-3 emojis para las 97 piezas de `(b)`) sigue siendo válido.
+
+Criterio aplicado sobre las **3.860** piezas distintas de `(c)` (sin copiar todavía ninguna imagen al repositorio):
+
+- Se descartan logotipos de marcas, simbología clínica de hospital o violenta/gore, iconos abstractos de interfaz (reproductor media, nodos de compartir, cursores, atajos de teclado) y cualquier emparejamiento por homonimia (`mummy` *Mamá* no usa momia egipcia; `rock` *Mecer* no usa piedra; `tap` *Grifo* solo acepta grifo de agua; `dress` *Vestirse* no acepta un vestido estático; `palm` *Palma de la mano* no acepta palmera; `spade` *Pala* no acepta palo de picas; `lighter` *Más claro* no acepta mechero; `flutter` *Revolotear* no usa el logotipo de Flutter).
+
+### Licencias oficiales comprobadas (copia literal de repositorio o web oficial)
+
+1. **CocoMaterial** — web oficial `https://cocomaterial.com/license` y componente oficial `coco-material/coco-material-front` (`src/views/CocoLicense/CocoLicense.html`):
+```html
+<div class="license">
+  <h3 class="title">License</h3>
+  <p>
+    The illustrations in CocoMaterial are under
+    CC0 1.0 Universal (CC0 1.0) Public Domain Dedication.
+  </p>
+  <p>
+    This means that all illustrations published on CocoMaterial can be used for free. You can use
+    them for commercial and non-commercial purposes. You do not need to ask permission from or
+    provide credit to CocoMaterial, although it is appreciated when possible. CocoMaterial grants
+    you an irrevocable, nonexclusive, worldwide copyright license to download, copy, modify,
+    distribute, perform, and use creations made on CocoMaterial for free, including for commercial
+    purposes, without permission from or attributing the illustrator.
+  </p>
+</div>
+```
+
+2. **Game-icons.net** — repositorio oficial `game-icons/icons` (`license.txt`):
+```text
+Icons provided under the Creative Commons 3.0 BY or CC0 if mentioned below.
+
+Each sub-folders in this archive correspond to a different contributor :
+
+- Lorc, http://lorcblog.blogspot.com
+- Delapouite, http://delapouite.com
+- John Colburn, http://ninmunanmu.com
+- Felbrigg, http://blackdogofdoom.blogspot.co.uk
+- John Redman, http://www.uniquedicetowers.com
+- Carl Olsen, https://twitter.com/unstoppableCarl
+- Sbed, http://opengameart.org/content/95-game-icons
+- PriorBlue
+- Willdabeast, http://wjbstories.blogspot.com
+- Viscious Speed, http://viscious-speed.deviantart.com - CC0
+- Lord Berandas, http://berandas.deviantart.com
+- Irongamer, http://ecesisllc.wix.com/home
+- HeavenlyDog, http://www.gnomosygoblins.blogspot.com
+- Lucas
+- Faithtoken, http://fungustoken.deviantart.com
+- Skoll
+- Andy Meneely, http://www.se.rit.edu/~andy/
+- Cathelineau
+- Kier Heyl
+- Aussiesim
+- Sparker, http://citizenparker.com
+- Zeromancer - CC0
+- Rihlsul
+- Quoting
+- Guard13007, https://guard13007.com
+- DarkZaitzev, http://darkzaitzev.deviantart.com
+- SpencerDub
+- GeneralAce135
+- Zajkonur
+- Catsu
+- Starseeker
+- Pepijn Poolman
+- Pierre Leducq
+- Caro Asercion
+- SeregaCthtuf
+
+Please, include a mention "Icons made by {author}" in your derivative work.
+
+If you use them in one of your project, don't hesitate to drop a message to [correo omitido por tools/check_contact_email.py] or ping @GameIcons on twitter.
+
+More info and icons available at https://game-icons.net
+```
+
+3. **Streamline Vectors (packs abiertos)** — repositorio oficial `webalys-hq/streamline-vectors` (`README.md`; la web comercial `streamlinehq.com/free/license` devolvió comprobación antibot, por lo que se cita el texto oficial del propio repositorio en GitHub):
+```markdown
+### Open-source license
+Creative commons license: Attribution 4.0 International (CC BY 4.0).
+
+**You are free to:**
+- Share: copy and redistribute the material in any medium or format.
+- Adapt: remix, transform, and build upon the material for any purpose, even commercially.
+
+**Attribution:** 
+- Attribution: You must give appropriate credit and provide a link to the Streamline website (http://streamlinehq.com).
+- Redistribution: Redistribution is encouraged as long as you follow the [license terms](https://streamlinehq.com/free/license?utm_source=github&utm_medium=free-file&utm_campaign=ui-line).
+```
+
+4. **Google Material Symbols** — repositorio oficial `google/material-design-icons` (`LICENSE`, Apache License 2.0 completa en el repositorio origen; se reproducen literalmente encabezado, cláusula 2 de concesión y apéndice):
+```text
+Apache License
+                           Version 2.0, January 2004
+                        http://www.apache.org/licenses/
+
+   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+[...]
+   2. Grant of Copyright License. Subject to the terms and conditions of
+      this License, each Contributor hereby grants to You a perpetual,
+      worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+      copyright license to reproduce, prepare Derivative Works of,
+      publicly display, publicly perform, sublicense, and distribute the
+      Work and such Derivative Works in Source or Object form.
+
+[...]
+   END OF TERMS AND CONDITIONS
+
+   APPENDIX: How to apply the Apache License to your work.
+
+      To apply the Apache License to your work, attach the following
+      boilerplate notice, with the fields enclosed by brackets "[]"
+      replaced with your own identifying information. (Don't include
+      the brackets!)  The text should be enclosed in the appropriate
+      comment syntax for the file format. We also recommend that a
+      file or class name and description of purpose be included on the
+      same "printed page" as the copyright notice for easier
+      identification within third-party archives.
+
+   Copyright [yyyy] [name of copyright owner]
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+```
+
+5. **Tabler Icons** — repositorio oficial `tabler/tabler-icons` (`LICENSE`):
+```text
+MIT License
+
+Copyright (c) 2020-2026 Paweł Kuna
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
+
+6. **Health Icons** — repositorio oficial `resolvetosavelives/healthicons` (`LICENSE`, licencia dual donde los iconos de `public/icons` son `CC0 1.0 Universal` y solo el código web es `MIT`; se reproducen literalmente encabezado y cláusula 2):
+```text
+Health Icons is made of two parts with different licenses:
+
+- The icons (the SVG and PNG files in public/icons) and the npm packages
+  (healthicons, and @healthicons/core, react, vue and svelte in packages/) are
+  in the public domain under CC0 1.0 Universal, below.
+- The code for the healthicons.org website is under the MIT License, below.
+
+
+================================================================================
+Icons: CC0 1.0 Universal
+================================================================================
+
+Creative Commons Legal Code
+
+CC0 1.0 Universal
+
+[...]
+2. Waiver. To the greatest extent permitted by, but not in contravention
+of, applicable law, Affirmer hereby overtly, fully, permanently,
+irrevocably and unconditionally waives, abandons, and surrenders all of
+Affirmer's Copyright and Related Rights and associated claims and causes
+of action, whether now known or unknown (including existing as well as
+future claims and causes of action), in the Work (i) in all territories
+worldwide, (ii) for the maximum duration provided by applicable law or
+treaty (including future time extensions), (iii) in any current or future
+medium and for any number of copies, and (iv) for any purpose whatsoever,
+including without limitation commercial, advertising or promotional
+purposes (the "Waiver"). Affirmer makes the Waiver for the benefit of each
+member of the public at large and to the detriment of Affirmer's heirs and
+successors, fully intending that such Waiver shall not be subject to
+revocation, rescission, cancellation, termination, or any other legal or
+equitable action to disrupt the quiet enjoyment of the Work by the public
+as contemplated by Affirmer's express Statement of Purpose.
+```
+
+### Cobertura medida sobre las 3.860 piezas de `(c)`
+
+| Fuente candidata | Licencia | Catálogo útil evaluado | Cubiertas en `(c)` | % sobre 3.860 | Sin cubrir en `(c)` |
+| --- | --- | ---: | ---: | ---: | ---: |
+| **CocoMaterial** | `CC0 1.0` | 1.835 conceptos (de 3.386 SVGs) | **222** | 5,8% | 3.638 |
+| **Game-icons.net** | `CC BY 3.0` / `CC0` | 3.882 SVGs (de 4.239 SVGs) | **212** | 5,5% | 3.648 |
+| **Streamline Vectors** (packs abiertos) | `CC BY 4.0` | 2.475 conceptos (de 30.547 SVGs) | **94** | 2,4% | 3.766 |
+| **Google Material Symbols** | `Apache 2.0` | 3.118 símbolos (de 4.304) | **81** | 2,1% | 3.779 |
+| **Tabler Icons** | `MIT` | 2.486 SVGs (de 5.491 SVGs) | **75** | 1,9% | 3.785 |
+| **Health Icons** (`public/icons`) | `CC0 1.0` | 548 SVGs outline (de 776) | **22** | 0,6% | 3.838 |
+
+*Nota de referencia:* la unión conjunta de las 6 fuentes sobre `(c)` cubre **415 / 3.860 (10,8%)**, quedando **3.445** piezas de `(c)` sin cobertura directa en bancos externos de iconos comerciales (principalmente verbos TPR motores específicos, adjetivos táctiles/sonoros de aula y frases completas de la lección).
+
+### Cifras SOLO de 4-5 años (`curso_4_5`: lecciones + su TPR)
+
+Medición exacta con el mismo criterio de `tools/check_laminas_leccion.py`:
+
+- **`leccions.json` (`curso_4_5`, 407 palabras + 40 `fraseGramatica`)**: **447** ocurrencias totales (`25` ya tienen lámina válida propia; **422** ocurrencias sin lámina = **181** piezas distintas). Fluent `(a+b)` cubre `91` ocurrencias (`37` distintas); quedan en `(c)` `331` ocurrencias (`144` distintas).
+- **`assets/content/tpr/curso_4_5/*.json` (10 ficheros)**: **800** ocurrencias totales (`5` ya tienen lámina válida propia; **795** ocurrencias / distintas sin lámina). Fluent `(a+b)` cubre `54` ocurrencias/distintas; quedan en `(c)` `741` ocurrencias/distintas.
+- **Total 4-5 años (`curso_4_5` completo)**: **1.247** ocurrencias totales (`30` ya con lámina válida propia; **1.217** ocurrencias sin lámina = **928** piezas distintas sin lámina). Fluent `(a+b)` cubre **145** ocurrencias (**83** distintas: `69` de `(a)` + `14` de `(b)`). Quedan en `(c)` **1.072** ocurrencias (**845** piezas distintas).
+
+| Fuente candidata (sobre `(c)` de 4-5 años) | Ocurrencias cubiertas (de 1.072) | Ocurrencias sin nada (de 1.247 totales) | Distintas cubiertas (de 845) | Distintas sin nada (de 928 sin lámina) | Desglose lecciones+frases / TPR (distintas) |
+| --- | ---: | ---: | ---: | ---: | --- |
+| **Game-icons.net** (`CC BY 3.0` / `CC0`) | **46** | 1.026 | **37** | 808 | 5 lecc. / 34 TPR |
+| **CocoMaterial** (`CC0 1.0`) | **45** | 1.027 | **33** | 812 | 7 lecc. / 26 TPR |
+| **Streamline Vectors** (`CC BY 4.0`) | **25** | 1.047 | **19** | 826 | 3 lecc. / 17 TPR |
+| **Google Material Symbols** (`Apache 2.0`) | **20** | 1.052 | **17** | 828 | 2 lecc. / 15 TPR |
+| **Tabler Icons** (`MIT`) | **13** | 1.059 | **9** | 836 | 2 lecc. / 7 TPR |
+| **Health Icons** (`CC0 1.0`) | **7** | 1.065 | **3** | 842 | 2 lecc. / 2 TPR |
+
+*(La suma `5 + 34` o `7 + 26` excede ligeramente el distinto total `37` o `33` porque dos piezas aparecen tanto en lecciones como en el banco TPR).*
+
+### 20 ejemplos cubiertos y 20 no cubiertos por cada candidata
+
+#### CocoMaterial (`CC0 1.0 Universal`)
+
+**20 ejemplos cubiertos (de 222):**
+
+| En `(c)` (`en`) | Español (`es`) | Icono / vector candidato |
+| --- | --- | --- |
+| Armchair | Sillón | `coco#1251:Armchair` |
+| Blow like the autumn wind | Sopla como el viento de otoño | `coco#572:Blow` |
+| Calm | Tranquilo, tranquila | `coco#239:Calm face` |
+| Clover | Trébol | `coco#110:Clover` |
+| dangerous | peligroso | `coco#1353:Dangerous alert` |
+| Dune | Duna | `coco#712:Dune` |
+| Flow | Fluir | `coco#2338:Flow 7` |
+| Grass | Hierba | `coco#1091:Grass` |
+| Hopping | Dando brincos | `coco#1369:Hop 2` |
+| Lantern light | Luz de candil | `coco#379:Lantern 1` |
+| Masked | Enmascarado | `coco#1109:Costume mask 1` |
+| Paper in the bin | Papel en la papelera | `coco#451:Paper bin` |
+| Play | Jugar | `coco#1499:Play 6` |
+| Relax | Relajarse | `coco#38:Relax` |
+| Seaweed | Algas | `coco#3241:Seaweed` |
+| Snorkel | Tubo de buceo | `coco#2480:Snorkel` |
+| Straight | Recto, recta | `coco#1193:Straight road` |
+| temperature | temperatura | `coco#1873:Temperature` |
+| Upside-down | Del revés | `coco#1627:Wearing clothes upside down 3` |
+| Whisper | Susurrar | `coco#3072:Whisper` |
+
+**20 ejemplos no cubiertos (de 3638):**
+
+| En `(c)` (`en`) | Español (`es`) | Gesto / nota |
+| --- | --- | --- |
+| A big stone. | Una piedra grande. | — |
+| Blindfold | Venda | Taparse los ojos con las manos |
+| Centre | Centro | Señalar el centro del cuerpo |
+| Crackly shell | Cáscara que cruje | Romper la cáscara y escuchar |
+| Easy to roll | Fácil de rodar | Rodar las manos |
+| Flower in my hand | Flor en mi mano | Poner la flor en la palma |
+| Grown-up | Mayor | Estirarse muy alto |
+| How can we help the planet? | ¿Cómo podemos ayudar al planeta? | Abrir las manos |
+| journey | viaje | — |
+| Look into the distance | Mirar a lo lejos | Mirar con la mano en la frente |
+| New | Nuevo, nueva | Mostrar algo con las manos como si fuera un regalo |
+| Pick up! | Recoger | Agacharse y recoger algo del suelo |
+| Ready, set, blow! | ¡Preparados, listos, sopla! | Soplar a la señal |
+| Save water | Ahorrar agua | Cerrar el grifo |
+| Skip | Saltar a la comba | Saltar la comba imaginaria |
+| Squishy | Blandito | Apretar algo blando y soltarlo |
+| Take turns | Turnarse | Pasar el juguete al siguiente |
+| Tickly | Que hace cosquillas | Hacerse cosquillas suaves en el brazo |
+| Very old | Muy viejo | Caminar despacio y encorvado |
+| What shape is this? | ¿Qué forma es? | Enseñar una forma y esperar |
+
+#### Game-icons.net (`CC BY 3.0 / CC0`)
+
+**20 ejemplos cubiertos (de 212):**
+
+| En `(c)` (`en`) | Español (`es`) | Icono / vector candidato |
+| --- | --- | --- |
+| Acorn | Bellota | `lorc/acorn.svg` |
+| Beach ball game | Juego de pelota | `delapouite/beach-ball.svg` |
+| broken | roto | `delapouite/broken-pottery.svg` |
+| Clapperboard | Claqueta | `delapouite/clapperboard.svg` |
+| Desk | Pupitre | `delapouite/desk.svg` |
+| Echo | Repetir como el eco | `lorc/echo-ripples.svg` |
+| Feathered | Emplumado | `lorc/feather.svg` |
+| Front teeth | Dientes de delante | `lorc/front-teeth.svg` |
+| Grass | Hierba | `delapouite/grass.svg` |
+| Idea | Idea | `delapouite/idea.svg` |
+| Lamp | Lámpara | `delapouite/bed-lamp.svg` |
+| Necklace | Collar de cuentas | `lucasms/necklace.svg` |
+| Plant a seed | Plantar | `delapouite/plant-seed.svg` |
+| Pumpkin | Calabaza | `delapouite/pumpkin.svg` |
+| Roots | Raíces | `delapouite/plant-roots.svg` |
+| Seahorse | Caballito de mar | `delapouite/seahorse.svg` |
+| Slow | Lento, lenta | `sbed/slow-blob.svg` |
+| Stairs | Escaleras | `delapouite/stairs.svg` |
+| Surprising | Sorprendente | `lorc/surprised.svg` |
+| Tightrope | Cuerda floja | `delapouite/tightrope.svg` |
+
+**20 ejemplos no cubiertos (de 3648):**
+
+| En `(c)` (`en`) | Español (`es`) | Gesto / nota |
+| --- | --- | --- |
+| A big stone. | Una piedra grande. | — |
+| Blow a raspberry | Hacer pedorretas | Hacer una pedorreta en la barriga |
+| Chalk | Tiza | Dibujar en el suelo con la tiza |
+| Crackly | Crujiente al tacto | Arrugar papel para que suene |
+| Early-rising | Madrugador | Desperezarse temprano |
+| Flutter | Revolotear | Mover los dedos como alas |
+| Gull chick | Pollo de gaviota | Acurrucarse pequeño |
+| How many chestnuts? | ¿Cuántas castañas? | Contar con los dedos |
+| Jump out | Saltar fuera | Saltar fuera del charco |
+| Look under the log | Mira debajo del tronco | Levantar y mirar |
+| Next in line | El siguiente | Señalar adelante |
+| Picnic | Pícnic | Extender un mantel imaginario y sentarse alrededor |
+| Recharge | Recargar | Encogerse y luego estirarse |
+| Say please | Decir por favor | Juntar las manos pidiendo |
+| Slide like a penguin | Deslízate como un pingüino | Deslizarse con los brazos pegados |
+| Stand up and clap your hands | Ponte de pie y da palmas | — |
+| Tap along | Seguir el ritmo | Dar golpecitos al ritmo |
+| Timer song | Canción de dos minutos | Cantar mientras se cepilla |
+| Wade | Caminar por el agua | Levantar mucho las piernas |
+| When I was a baby, I couldn't walk | Cuando era bebé, no sabía caminar | Gatear y luego caminar |
+
+#### Streamline Vectors (packs abiertos) (`CC BY 4.0`)
+
+**20 ejemplos cubiertos (de 94):**
+
+| En `(c)` (`en`) | Español (`es`) | Icono / vector candidato |
+| --- | --- | --- |
+| Acrobatic | Acrobático | `ultimate/colors/sports/gymnastics-acrobatic-1.svg` |
+| Cable car | Teleférico | `kameleon/colors/map-travel/cable-car.svg` |
+| Clapping | Dando palmas | `freebies-freemojis/smiley-people/smiley-people/clapping-hands-1.svg` |
+| Diploma | Diploma | `ultimate/bold/social-medias-rewards-rating/certified-diploma.svg` |
+| Farm | Granja | `kameleon/colors/ecology/farm.svg` |
+| fork | tenedor | `core/duo/food-drink/fork-knife.svg` |
+| Hard hat | Casco de obra | `guidance/indication/indication/wear-hard-hat.svg` |
+| Hush | Silencio | `freebies-freemojis/smiley-people/smiley-people/hushed-face-1.svg` |
+| Library | Biblioteca | `guidance/entertainment/entertainment/library.svg` |
+| Museum | Museo | `guidance/places/places/museum.svg` |
+| passport | pasaporte | `core/duo/map-travel/passport.svg` |
+| Pull on | Ponerse tirando | `guidance/indication/indication/pull.svg` |
+| Raise a hand | Levantar la mano | `freebies-freemojis/smiley-people/smiley-people/raised-hand-1.svg` |
+| Reindeer | Reno | `kameleon/colors/entertainment/reindeer.svg` |
+| Sailing ship | Galeón | `freebies-freemojis/travel-places/travel-places/sailboat.svg` |
+| Slice | Cortar en rodajas | `core/duo/food-drink/cake-slice.svg` |
+| Sprouting | Brotando | `core/duo/nature-ecology/sprout.svg` |
+| Stream | Arroyo | `core/duo/entertainment/stream.svg` |
+| Tambourine | Pandereta | `ultimate/bold/music-audio/instrument-tambourine.svg` |
+| Traffic light game | Juego del semáforo | `kameleon/colors/map-travel/traffic-light.svg` |
+
+**20 ejemplos no cubiertos (de 3766):**
+
+| En `(c)` (`en`) | Español (`es`) | Gesto / nota |
+| --- | --- | --- |
+| A big stone. | Una piedra grande. | — |
+| Blink | Parpadear | Cerrar y abrir los ojos muy rápido |
+| Catch the snowflake | Atrapa el copo | Estirar la mano y cerrarla suave sobre un copo |
+| Counting the steps, we measured it. | Contando los pasos, lo medimos. | — |
+| Drum fingers | Tamborilear | Tamborilear en la mesa |
+| Float down | Bajar flotando | Bajar la mano despacio como una hoja |
+| Groovy | Marchoso | Bailar con mucha marcha |
+| Hop to number three, then turn around | Salta hasta el tres y date la vuelta | Saltar y girar |
+| Jack-in-the-box | Caja sorpresa | Abrir la caja y decir «¡oh!» |
+| Look at this! | ¡Mira esto! | — |
+| Nearly dry | Casi seco | Sacudir las manos sobre el lavabo |
+| Photo album | Álbum de fotos | Pasar las hojas del álbum juntos |
+| Read me a story | Léeme un cuento | Traer un libro |
+| Sand on my feet | Arena en mis pies | Echar arena en los pies |
+| Size | Tamaño | Abrir las manos a distinto tamaño |
+| Stack | Apilar | Poner un vaso encima de otro |
+| Take turns directing | Dirigir por turnos | Pasar la claqueta |
+| Tide | Marea | Mover la mano adelante y atrás |
+| Waddle | Anadear | Caminar balanceándose como un pato |
+| When I was two, I couldn't write my name, but now I can | Cuando tenía dos años no sabía escribir mi nombre, pero ahora sí | Escribir en el aire |
+
+#### Google Material Symbols (`Apache 2.0`)
+
+**20 ejemplos cubiertos (de 81):**
+
+| En `(c)` (`en`) | Español (`es`) | Icono / vector candidato |
+| --- | --- | --- |
+| Balance | Mantener el equilibrio | `balance` |
+| Cable car | Teleférico | `cable_car` |
+| Cheer | Animar | `cheer` |
+| cut | cortar | `cut` |
+| empty | vacío | `hourglass_empty` |
+| Eyebrows | Cejas | `eyebrow` |
+| Frustrated | Frustrado | `sentiment_frustrated` |
+| Hand wave | Saludo con la mano | `waving_hand` |
+| Hexagon | Hexágono | `hexagon` |
+| Museum | Museo | `museum` |
+| Pattern | Patrón | `pattern` |
+| Quiet time | Tiempo tranquilo | `quiet_time` |
+| Relaxed | Relajado, relajada | `relax` |
+| Satisfied | Satisfecho | `sentiment_satisfied` |
+| Skeleton | Esqueleto | `skeleton` |
+| Steps | Escalones | `steps` |
+| Straight | Recto, recta | `straight` |
+| Switch off lights | Apagar las luces | `light_off` |
+| Turn left | Girar a la izquierda | `turn_left` |
+| Wash! | lavar | `wash` |
+
+**20 ejemplos no cubiertos (de 3779):**
+
+| En `(c)` (`en`) | Español (`es`) | Gesto / nota |
+| --- | --- | --- |
+| A big stone. | Una piedra grande. | — |
+| block | bloque | — |
+| Catch the snowflake | Atrapa el copo | Estirar la mano y cerrarla suave sobre un copo |
+| Countless | Incontable | Abrir las manos muchas veces |
+| Drumbeat | Golpe de tambor | Parar con el golpe de tambor |
+| Float or sink | Flotar o hundirse | Echar un objeto y mirar |
+| Grow bigger | Hacerse más grande | Abrir los brazos despacio |
+| Hot and sticky | Caluroso y húmedo | Abanicarse con la mano |
+| Jog | Trotar | Correr despacio en el sitio |
+| Look back | Mirar atrás | Mirar las fotos del curso |
+| Nearly dry | Casi seco | Sacudir las manos sobre el lavabo |
+| Petal count | Cuenta de pétalos | Contar pétalos con los dedos |
+| Reach up | Estirarse hacia arriba | Levantar los brazos al sol |
+| Salty wind | Viento salado | Respirar el aire del mar |
+| Sit up | Incorporarse | Ayudar al bebé a sentarse |
+| Squeeze | Exprimir | Apretar una naranja imaginaria con las dos manos |
+| Take the smock, turn around and give it to Noa | Coge el babi, date la vuelta y dáselo a Noa | — |
+| Tickly | Que hace cosquillas | Hacerse cosquillas suaves en el brazo |
+| Viewpoint | Mirador | Mirar lejos con la mano en la frente |
+| What would happen if we hit the glass harder? | ¿Qué pasaría si golpeáramos el vaso más fuerte? | — |
+
+#### Tabler Icons (`MIT`)
+
+**20 ejemplos cubiertos (de 75):**
+
+| En `(c)` (`en`) | Español (`es`) | Icono / vector candidato |
+| --- | --- | --- |
+| Acorn | Bellota | `icons/outline/acorn.svg` |
+| Binoculars | Prismáticos | `icons/outline/binoculars.svg` |
+| Campfire | Hoguera de campamento | `icons/outline/campfire.svg` |
+| Cone | Cono | `icons/outline/cone-2.svg` |
+| cut | cortar | `icons/outline/cut.svg` |
+| Dive | Zambullirse | `icons/outline/scuba-diving.svg` |
+| Face mask | Careta | `icons/outline/face-mask.svg` |
+| Feathered | Emplumado | `icons/outline/feather.svg` |
+| Footsteps | Pasos | `icons/outline/footsteps.svg` |
+| Heavy | Pesado, pesada | `icons/outline/weight.svg` |
+| Iceberg | Iceberg | `icons/outline/iceberg.svg` |
+| Library | Biblioteca | `icons/outline/library.svg` |
+| Metronome | Metrónomo | `icons/outline/metronome.svg` |
+| Orbit | Órbita | `icons/outline/orbit.svg` |
+| Pillow | Almohada | `icons/outline/pillow.svg` |
+| Question mark | Signo de interrogación | `icons/outline/question-mark.svg` |
+| Ripples | Ondas pequeñas | `icons/outline/ripple.svg` |
+| Sailing ship | Galeón | `icons/outline/sailboat-2.svg` |
+| Sphere | Esfera | `icons/outline/sphere-2.svg` |
+| Stack | Apilar | `icons/outline/stack.svg` |
+
+**20 ejemplos no cubiertos (de 3785):**
+
+| En `(c)` (`en`) | Español (`es`) | Gesto / nota |
+| --- | --- | --- |
+| A big stone. | Una piedra grande. | — |
+| Bloom | Florecer | Abrir los brazos de golpe como una flor que se abre |
+| Celebrate | Celebrar | Dar palmas y bailar juntos |
+| Cover with soil | Tapar con tierra | Tapar la semilla con las manos |
+| Dry wings | Secar las alas | Abrir los brazos al sol |
+| Floating raft | Batea flotante | Balancearse |
+| Growing | Creciendo | Estirar los brazos hacia arriba |
+| Hot, hot, hot! | ¡Caliente, caliente, caliente! | Abanicar la mano como si quemara |
+| Joyous | Gozoso | Saltar contentos |
+| Look left, look right | Mira a la izquierda, mira a la derecha | Mirar a los dos lados |
+| New Year | Año nuevo | Saltar al decir «año nuevo» |
+| Picnic basket | Cesta de merienda | Abrir la cesta |
+| Ready, steady, go! | ¡Preparados, listos, ya! | Agacharse, prepararse y salir al decir «go» |
+| Say cheese! | ¡Di patata! | Sonreír para la foto |
+| Sleek | Liso y rápido | Pasar la mano plana |
+| Stamp | Pisotear | Mover los pies del bebé como pisando |
+| Tall tower | Torre alta | Estirar el brazo hasta la punta |
+| Tightrope | Cuerda floja | Caminar por la línea con los brazos en cruz |
+| Wade in | Entrar caminando en el agua | Levantar las rodillas |
+| When I was two, I couldn't write my name, but now I can | Cuando tenía dos años no sabía escribir mi nombre, pero ahora sí | Escribir en el aire |
+
+#### Health Icons (iconos SVG/PNG) (`CC0 1.0 Universal`)
+
+**20 ejemplos cubiertos (de 22):**
+
+| En `(c)` (`en`) | Español (`es`) | Icono / vector candidato |
+| --- | --- | --- |
+| Arms | Brazos | `public/icons/svg/outline/body/arm.svg` |
+| Body | Cuerpo | `public/icons/svg/outline/body/body.svg` |
+| Calm | Tranquilo, tranquila | `public/icons/svg/outline/emotions/face-calm.svg` |
+| Clean | Limpio, limpia | `public/icons/svg/outline/objects/cleaning.svg` |
+| Hair | Pelo | `public/icons/svg/outline/body/hair.svg` |
+| Head | Cabeza | `public/icons/svg/outline/body/head.svg` |
+| Heavy | Pesado, pesada | `public/icons/svg/outline/devices/weight.svg` |
+| Market stall | Puesto del mercado | `public/icons/svg/outline/places/market-stall.svg` |
+| Nappy | Pañal | `public/icons/svg/outline/symbols/nappy-diaper.svg` |
+| Old | Viejo, vieja | `public/icons/svg/outline/people/old-man.svg` |
+| Question mark | Signo de interrogación | `public/icons/svg/outline/symbols/question.svg` |
+| Skeleton | Esqueleto | `public/icons/svg/outline/body/skeleton.svg` |
+| Spine | Columna | `public/icons/svg/outline/body/spine.svg` |
+| Stop and go | Parar y seguir | `public/icons/svg/outline/symbols/stop.svg` |
+| Stop! | parar | `public/icons/svg/outline/symbols/stop.svg` |
+| Tissue | Pañuelo de papel | `public/icons/svg/outline/body/tissue.svg` |
+| Travel | Viajar | `public/icons/svg/outline/people/travel.svg` |
+| Vegetables | Verduras | `public/icons/svg/outline/nutrition/vegetables.svg` |
+| Very old | Muy viejo | `public/icons/svg/outline/people/old-man.svg` |
+| Wash! | lavar | `public/icons/svg/outline/people/wash-hands.svg` |
+
+**20 ejemplos no cubiertos (de 3838):**
+
+| En `(c)` (`en`) | Español (`es`) | Gesto / nota |
+| --- | --- | --- |
+| A big stone. | Una piedra grande. | — |
+| Block the water | Parar el agua | Poner las manos delante |
+| Celebrate | Celebrar | Dar palmas y bailar juntos |
+| Cover with soil | Tapar con tierra | Tapar la semilla con las manos |
+| Drumbeat | Golpe de tambor | Parar con el golpe de tambor |
+| Float down | Bajar flotando | Bajar la mano despacio como una hoja |
+| Gritty | Arenoso | Frotar arena entre los dedos |
+| Hop to number three, then turn around | Salta hasta el tres y date la vuelta | Saltar y girar |
+| Jingle | Tintinear | Hacer sonar el cascabel |
+| Look at this! | ¡Mira esto! | — |
+| Neatly folded | Bien doblado | Enseñar el pañuelo doblado |
+| Photo wall | Mural de fotos | Buscar la propia foto en el mural |
+| React | Reaccionar | Moverse rápido a la señal |
+| Salty lips | Labios salados | Tocar los labios después del mar |
+| Sit | Sentarse | Bajar despacio hasta sentarse en el suelo |
+| Squeeze | Exprimir | Apretar una naranja imaginaria con las dos manos |
+| Take down | Descolgar | Quitar la ropa de la cuerda |
+| Tickle | Hacer cosquillas | Caminar con los dedos por el brazo haciendo cosquillas |
+| Verse | Verso | Marcar el ritmo de un verso |
+| What will happen if it gets warm? | ¿Qué pasará si hace calor? | Encoger los hombros |
