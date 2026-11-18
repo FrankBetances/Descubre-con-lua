@@ -319,3 +319,11 @@ Fuente: docs/PLAN_ANTIGRAVITY.md (el plan de O-20261118-2 y O-20261118-3, ahora 
 - [x] Un registro de commits en el plan: paso, SHA, fecha, qué cambia en la app, gates, evidencia y revisión · evidencia: docs/PLAN_ANTIGRAVITY.md, «Registro de commits»
 - [x] Gate que tumba si un commit desde la base no empieza por su paso o no tiene fila, si una fila no tiene SHA, fecha, gates o evidencia, o si un SHA no está en la rama · evidencia: tools/check_registro_commits.py, en tools/gates.sh; probado el 18/11/2026 en una copia desde caca7cb5: falla sin fila, pasa con fila, falla con un commit sin paso. En CI (clon sin historia) solo comprueba la tabla, y lo dice
 - [ ] Usado por Antigravity en cada commit y auditado por Claude Code fila a fila · evidencia:
+
+## O-20261118-5 · Merge y push a main de lo de hoy
+Estado: abierta
+> mergea y push al main
+Fuente: ninguna: es la orden de integrar en main los commits de claude/upbeat-fermi-3d0utp (O-20261118-1 a O-20261118-4)
+
+- [ ] Rama subida, PR contra main y CI en verde antes del merge · evidencia:
+- [ ] Merge en main con su SHA · evidencia:
