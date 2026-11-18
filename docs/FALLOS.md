@@ -48,3 +48,8 @@ Formato de cada entrada (una por fallo):
 - Qué pasó: los retos de cada semana describen su escena («Un vaso de plástico e unha esponxa») y la app la enseñaba solo en texto, sin imagen. Frank: «las imágenes son esenciales». Lo hizo Claude Code.
 - Causa raíz: el campo `escena` se añadió en aa8d7fdb (F5) como texto, sin pedir su lámina, y ningún gate comprobaba que cada escena tuviera imagen.
 - Guarda: tools/check_imagenes_escenas.py (en tools/gates.sh: falla si una escena del contenido no tiene lámina, si la lámina no existe o si su carpeta no está en pubspec.yaml)
+
+## F-20261118-1 · CI dependía de la última estable de Flutter y cayó sin cambio de código
+- Qué pasó: el run 44322296728 del PR #51 cayó en `flutter analyze` (186 avisos de `material.dart` obsoleto) y en la compilación del APK (Gradle 8.14.3 frente al mínimo 9.3.1) porque CI tomó Flutter 3.50.0, publicada después del último run en verde. El cambio del PR no tocaba nada de eso. `channel: stable` sin versión está en ci.yml desde d8b3de1b (22/9/2026, commit de github-actions[bot]); no consta quién lo escribió en origen.
+- Causa raíz: `.github/workflows/ci.yml` pedía «la última estable» sin versión, así que cualquier publicación de Flutter podía tumbar CI sin ningún commit.
+- Guarda: .github/workflows/ci.yml (flutter-version: 3.47.9 fijada, con el motivo escrito al lado; subir de versión pasa a ser una migración propia)

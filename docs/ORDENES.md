@@ -325,5 +325,5 @@ Estado: abierta
 > mergea y push al main
 Fuente: ninguna: es la orden de integrar en main los commits de claude/upbeat-fermi-3d0utp (O-20261118-1 a O-20261118-4)
 
-- [ ] Rama subida, PR contra main y CI en verde antes del merge · evidencia:
+- [ ] Rama subida, PR contra main y CI en verde antes del merge (primer run, 44322296728, rojo por Flutter 3.50.0; versión fijada a 3.47.9 en ci.yml) · evidencia:
 - [ ] Merge en main con su SHA · evidencia:
