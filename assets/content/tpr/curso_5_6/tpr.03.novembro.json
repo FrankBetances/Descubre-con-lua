@@ -33,7 +33,8 @@
             "gl": "Baixar unha man pesada",
             "es": "Bajar una mano pesada"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_weight"
         },
         {
           "id": "5_6.novembro.s1.gram",
@@ -79,7 +80,8 @@
             "gl": "Poñer pesas imaxinarias",
             "es": "Poner pesas imaginarias"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_set_of_weights"
         },
         {
           "id": "5_6.novembro.s1.heavy-side",
@@ -113,7 +115,8 @@
             "gl": "Baixar un brazo",
             "es": "Bajar un brazo"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_tip_the_scale"
         },
         {
           "id": "5_6.novembro.s1.weigh-up",
@@ -258,7 +261,8 @@
             "gl": "Facer pauciños no aire",
             "es": "Hacer palitos en el aire"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_tally"
         },
         {
           "id": "5_6.novembro.s2.number-line",
@@ -362,7 +366,8 @@
             "gl": "Quitar un dedo",
             "es": "Quitar un dedo"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_take_away"
         },
         {
           "id": "5_6.novembro.s2.share-equally",
@@ -600,7 +605,8 @@
             "gl": "Premer un cronómetro",
             "es": "Pulsar un cronómetro"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_time_it"
         },
         {
           "id": "5_6.novembro.s3.compare-results",
@@ -746,7 +752,8 @@
             "gl": "Estirarse a coller froita",
             "es": "Estirarse a coger fruta"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_orchard"
         },
         {
           "id": "5_6.novembro.s4.ladder",
@@ -781,7 +788,8 @@
             "gl": "Coller un marmelo",
             "es": "Coger un membrillo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_quince"
         },
         {
           "id": "5_6.novembro.s4.chestnut-tree",
@@ -851,7 +859,8 @@
             "gl": "Gardar a caixa",
             "es": "Guardar la caja"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_store"
         },
         {
           "id": "5_6.novembro.s4.shake-the-tree",

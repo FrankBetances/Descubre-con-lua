@@ -153,7 +153,8 @@
           "tprAction": {
             "gl": "Varrer follas cunha vasoira imaxinaria",
             "es": "Barrer hojas con una escoba imaginaria"
-          }
+          },
+          "lamina": "pal_sweep"
         },
         {
           "id": "3_4.novembro.s1.brown",
@@ -870,7 +871,8 @@
           "tprAction": {
             "gl": "Esmagar uvas imaxinarias cos pés no sitio",
             "es": "Aplastar uvas imaginarias con los pies en el sitio"
-          }
+          },
+          "lamina": "pal_squash"
         },
         {
           "id": "3_4.novembro.s4.fill",
@@ -893,7 +895,8 @@
           "tprAction": {
             "gl": "Petar na cabaza cos nós dos dedos: toc, toc",
             "es": "Llamar a la calabaza con los nudillos: toc, toc"
-          }
+          },
+          "lamina": "pal_knock"
         },
         {
           "id": "3_4.novembro.s4.juicy",

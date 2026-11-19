@@ -21,7 +21,8 @@
             "gl": "Premer o dosificador",
             "es": "Apretar el dosificador"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_soap_pump"
         },
         {
           "id": "2_3.maio.s1.tap-water",
@@ -44,7 +45,8 @@
             "gl": "Coller un papel e secar",
             "es": "Coger un papel y secar"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_paper_towel"
         },
         {
           "id": "2_3.maio.s1.bin",
@@ -79,7 +81,8 @@
             "gl": "Poñer un pouco de pasta",
             "es": "Poner un poco de pasta"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_toothpaste"
         },
         {
           "id": "2_3.maio.s1.hairband",
@@ -150,7 +153,8 @@
             "gl": "Botar o papel á papeleira",
             "es": "Tirar el papel a la papelera"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_throw_away"
         },
         {
           "id": "2_3.maio.s1.all-by-myself",
@@ -230,7 +234,8 @@
             "gl": "Botar o papel",
             "es": "Tirar el papel"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_paper_in_the_bin"
         },
         {
           "id": "2_3.maio.s1.front-and-back",
@@ -322,7 +327,8 @@
             "gl": "Poñer e quitar o tapón",
             "es": "Poner y quitar el tapón"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_sink_plug"
         },
         {
           "id": "2_3.maio.s2.timer-song",
@@ -487,7 +493,8 @@
             "gl": "Cuspir no lavabo",
             "es": "Escupir en el lavabo"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_spit_in_the_sink"
         }
       ]
     },
@@ -531,7 +538,8 @@
             "gl": "Encher ata a raia",
             "es": "Llenar hasta la raya"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_measuring_cup"
         },
         {
           "id": "2_3.maio.s3.water-wheel",
@@ -578,7 +586,8 @@
             "gl": "Espremer a esponxa",
             "es": "Escurrir la esponja"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_wet_sponge"
         },
         {
           "id": "2_3.maio.s3.pour-carefully",
@@ -637,7 +646,8 @@
             "gl": "Retorcer un pano mollado",
             "es": "Retorcer un paño mojado"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_wring_out"
         },
         {
           "id": "2_3.maio.s3.sploshy",
@@ -660,7 +670,8 @@
             "gl": "Encher o vaso ata que rebose",
             "es": "Llenar el vaso hasta que rebose"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_overflowing"
         },
         {
           "id": "2_3.maio.s3.leaky",
@@ -751,7 +762,8 @@
             "gl": "Estirar unha corda imaxinaria",
             "es": "Estirar una cuerda imaginaria"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_washing_line"
         },
         {
           "id": "2_3.maio.s4.peg-bag",
@@ -762,7 +774,8 @@
             "gl": "Coller unha pinza",
             "es": "Coger una pinza"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_peg_bag"
         },
         {
           "id": "2_3.maio.s4.clothes-peg",
@@ -869,7 +882,8 @@
             "gl": "Quitar a roupa da corda",
             "es": "Quitar la ropa de la cuerda"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_take_down"
         },
         {
           "id": "2_3.maio.s4.fold-up",
@@ -963,7 +977,8 @@
             "gl": "Colgar dous calcetíns",
             "es": "Colgar dos calcetines"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_socks_on_the_line"
         },
         {
           "id": "2_3.maio.s4.one-peg-two-pegs",
@@ -974,7 +989,8 @@
             "gl": "Poñer unha pinza e logo outra",
             "es": "Poner una pinza y luego otra"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_one_peg_two_pegs"
         }
       ]
     }

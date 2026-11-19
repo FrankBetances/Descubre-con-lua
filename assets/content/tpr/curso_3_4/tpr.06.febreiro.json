@@ -105,7 +105,8 @@
           "tprAction": {
             "gl": "Dar palmadiñas suaves nun animal imaxinario",
             "es": "Dar palmaditas suaves a un animal imaginario"
-          }
+          },
+          "lamina": "pal_pat"
         },
         {
           "id": "3_4.febreiro.s1.feed",
@@ -646,7 +647,8 @@
           "tprAction": {
             "gl": "Rañar a cabeza cun dedo",
             "es": "Rascarse la cabeza con un dedo"
-          }
+          },
+          "lamina": "pal_scratch"
         },
         {
           "id": "3_4.febreiro.s3.huge",
@@ -681,7 +683,8 @@
           "tprAction": {
             "gl": "Engurrar o nariz e a fronte",
             "es": "Arrugar la nariz y la frente"
-          }
+          },
+          "lamina": "pal_wrinkly"
         },
         {
           "id": "3_4.febreiro.s3.proud",
@@ -831,7 +834,8 @@
           "tprAction": {
             "gl": "Desfilar en fila levantando os xeonllos",
             "es": "Desfilar en fila levantando las rodillas"
-          }
+          },
+          "lamina": "pal_parade"
         },
         {
           "id": "3_4.febreiro.s4.fly",
@@ -889,7 +893,8 @@
           "tprAction": {
             "gl": "Dar un brinco longo cara adiante",
             "es": "Dar un brinco largo hacia delante"
-          }
+          },
+          "lamina": "pal_leap"
         },
         {
           "id": "3_4.febreiro.s4.magic",
@@ -923,7 +928,8 @@
           "tprAction": {
             "gl": "Copiar o xesto dunha compañeira coma nun espello",
             "es": "Copiar el gesto de una compañera como en un espejo"
-          }
+          },
+          "lamina": "pal_same"
         },
         {
           "id": "3_4.febreiro.s4.hidden",

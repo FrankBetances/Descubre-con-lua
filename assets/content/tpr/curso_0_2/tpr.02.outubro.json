@@ -117,7 +117,8 @@
             "gl": "Beliscar suave a meixela",
             "es": "Pellizcar suave la mejilla"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_pinch_softly"
         },
         {
           "id": "0_2.outubro.s1.point-to",
@@ -328,7 +329,8 @@
             "gl": "Pasar a man polo ombro",
             "es": "Pasar la mano por el hombro"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_shoulder_blade"
         },
         {
           "id": "0_2.outubro.s2.skin",
@@ -385,7 +387,8 @@
             "gl": "Premer suave a planta dos pés",
             "es": "Presionar suave la planta de los pies"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_massage_feet"
         },
         {
           "id": "0_2.outubro.s2.draw-circles",
@@ -617,7 +620,8 @@
             "gl": "Sacar a lingua e agardar a copia",
             "es": "Sacar la lengua y esperar la copia"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_stick_out_your_tongue"
         },
         {
           "id": "0_2.outubro.s3.pull-faces",
@@ -652,7 +656,8 @@
             "gl": "Poñer unha cara graciosa",
             "es": "Poner una cara graciosa"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_silly_face"
         },
         {
           "id": "0_2.outubro.s3.wide-eyed",
@@ -801,7 +806,8 @@
             "gl": "Enganchar o dedo meniñeiro",
             "es": "Enganchar el meñique"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_little_finger"
         },
         {
           "id": "0_2.outubro.s4.tooth",
@@ -884,7 +890,8 @@
             "gl": "Dar o mordedor ao bebé",
             "es": "Dar el mordedor al bebé"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_teethe"
         },
         {
           "id": "0_2.outubro.s4.wiggly",

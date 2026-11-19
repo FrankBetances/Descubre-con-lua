@@ -33,7 +33,8 @@
             "gl": "Colgar a mochila na súa percha",
             "es": "Colgar la mochila en su percha"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_peg"
         },
         {
           "id": "2_3.setembro.s1.lunchbox",
@@ -80,7 +81,8 @@
             "gl": "Meter un xoguete na caixa",
             "es": "Meter un juguete en la caja"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_toy_box"
         },
         {
           "id": "2_3.setembro.s1.shelf",
@@ -91,7 +93,8 @@
             "gl": "Pousar un libro no estante",
             "es": "Dejar un libro en el estante"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_shelf"
         },
         {
           "id": "2_3.setembro.s1.put-away",
@@ -162,7 +165,8 @@
             "gl": "Aliñar os zapatos xuntos",
             "es": "Alinear los zapatos juntos"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_neat"
         },
         {
           "id": "2_3.setembro.s1.nearby",
@@ -274,7 +278,8 @@
             "gl": "Facer unha torre alta",
             "es": "Hacer una torre alta"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_tower"
         },
         {
           "id": "2_3.setembro.s2.train-set",
@@ -321,7 +326,8 @@
             "gl": "Encaixar unha peza",
             "es": "Encajar una pieza"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_puzzle"
         },
         {
           "id": "2_3.setembro.s2.tea-set",
@@ -332,7 +338,8 @@
             "gl": "Servir té de xoguete",
             "es": "Servir té de juguete"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_tea_set"
         },
         {
           "id": "2_3.setembro.s2.take-turns",
@@ -413,7 +420,8 @@
             "gl": "Estirar o brazo ata a punta",
             "es": "Estirar el brazo hasta la punta"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_tall_tower"
         },
         {
           "id": "2_3.setembro.s2.sharing",
@@ -561,7 +569,8 @@
             "gl": "Enrolar a esteira",
             "es": "Enrollar la esterilla"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_mat"
         },
         {
           "id": "2_3.setembro.s3.place",
@@ -608,7 +617,8 @@
             "gl": "Pasar o pano pola mesa",
             "es": "Pasar el paño por la mesa"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_wipe_the_table"
         },
         {
           "id": "2_3.setembro.s3.carry-carefully",
@@ -780,7 +790,8 @@
             "gl": "Pegar un adhesivo na táboa",
             "es": "Pegar una pegatina en la tabla"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_sticker_chart"
         },
         {
           "id": "2_3.setembro.s4.hand-wave",
@@ -920,7 +931,8 @@
             "gl": "Xuntar as mans de todos",
             "es": "Juntar las manos de todos"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_together"
         },
         {
           "id": "2_3.setembro.s4.hello-friend",

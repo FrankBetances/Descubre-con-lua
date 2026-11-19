@@ -296,7 +296,8 @@
             "gl": "Seguir unha liña no chan",
             "es": "Seguir una línea en el suelo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_trail"
         },
         {
           "id": "4_5.outubro.s2.tag-game",
@@ -331,7 +332,8 @@
             "gl": "Pasar o testemuño",
             "es": "Pasar el testigo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_relay_race"
         },
         {
           "id": "4_5.outubro.s2.run-like-a-fox",
@@ -390,7 +392,8 @@
             "gl": "Dar o pau ao seguinte",
             "es": "Dar el palo al siguiente"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_pass_the_baton"
         },
         {
           "id": "4_5.outubro.s2.sly",
@@ -634,7 +637,8 @@
             "gl": "Estirar os brazos en cruz",
             "es": "Estirar los brazos en cruz"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_stretch_out_your_arms"
         },
         {
           "id": "4_5.outubro.s3.balanced",
@@ -657,7 +661,8 @@
             "gl": "Bambear e recuperarse",
             "es": "Tambalearse y recuperarse"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_unsteady"
         },
         {
           "id": "4_5.outubro.s3.focused",
@@ -679,7 +684,8 @@
             "gl": "Poñer os brazos á mesma altura",
             "es": "Poner los brazos a la misma altura"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_level"
         },
         {
           "id": "4_5.outubro.s3.look-at-one-spot",
@@ -874,7 +880,8 @@
             "gl": "Dar golpiños coa man",
             "es": "Dar golpecitos con la mano"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_tap_the_rhythm"
         },
         {
           "id": "4_5.outubro.s4.rhythmic",

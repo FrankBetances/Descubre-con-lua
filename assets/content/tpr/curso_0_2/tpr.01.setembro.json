@@ -338,7 +338,8 @@
             "gl": "Pasar as follas do álbum xuntos",
             "es": "Pasar las hojas del álbum juntos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_photo_album"
         },
         {
           "id": "0_2.setembro.s2.kiss-goodbye",
@@ -361,7 +362,8 @@
             "gl": "Levantar o bebé do chan amodo",
             "es": "Levantar al bebé del suelo despacio"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_pick_up_baby"
         },
         {
           "id": "0_2.setembro.s2.settle",
@@ -784,7 +786,8 @@
             "gl": "Achegar o vaso aos beizos",
             "es": "Acercar el vaso a los labios"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_sippy_cup"
         },
         {
           "id": "0_2.setembro.s4.soft-toy",
@@ -795,7 +798,8 @@
             "gl": "Dar o peluche ao bebé",
             "es": "Dar el peluche al bebé"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_soft_toy"
         },
         {
           "id": "0_2.setembro.s4.playmat",
@@ -865,7 +869,8 @@
             "gl": "Facer un grolo pequeno do vaso",
             "es": "Dar un sorbo pequeño del vaso"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_sip"
         },
         {
           "id": "0_2.setembro.s4.burp",

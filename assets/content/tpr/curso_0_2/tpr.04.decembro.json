@@ -105,7 +105,8 @@
             "gl": "Envolver o bebé na manta",
             "es": "Envolver al bebé en la manta"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_wrap_up"
         },
         {
           "id": "0_2.decembro.s1.rub-hands",
@@ -140,7 +141,8 @@
             "gl": "Meter a manta baixo o bebé",
             "es": "Meter la manta bajo el bebé"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_tuck_in"
         },
         {
           "id": "0_2.decembro.s1.huddle",
@@ -400,7 +402,8 @@
             "gl": "Apoiar o bebé no ombro",
             "es": "Apoyar al bebé en el hombro"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_lean_on"
         },
         {
           "id": "0_2.decembro.s2.snuggly",
@@ -483,7 +486,8 @@
             "gl": "Meterse baixo o edredón",
             "es": "Meterse bajo el edredón"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_under_the_quilt"
         },
         {
           "id": "0_2.decembro.s2.cheek-to-cheek",
@@ -743,7 +747,8 @@
             "gl": "Acender e apagar dúas veces",
             "es": "Encender y apagar dos veces"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_on_and_off"
         }
       ]
     },
@@ -799,7 +804,8 @@
             "gl": "Poñer as mans coma cornos",
             "es": "Poner las manos como cuernos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_reindeer"
         },
         {
           "id": "0_2.decembro.s4.carol",
@@ -939,7 +945,8 @@
             "gl": "Facer soar o papel brillante",
             "es": "Hacer sonar el papel brillante"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_shiny_paper"
         },
         {
           "id": "0_2.decembro.s4.what-s-inside",

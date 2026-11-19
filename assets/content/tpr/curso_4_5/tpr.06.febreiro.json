@@ -67,7 +67,8 @@
             "gl": "Facer un círculo de luz coas mans",
             "es": "Hacer un círculo de luz con las manos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_spotlight"
         },
         {
           "id": "4_5.febreiro.s1.applause",
@@ -207,7 +208,8 @@
             "gl": "Bater palmas unha vez",
             "es": "Dar una palmada"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_lights_camera_action"
         },
         {
           "id": "4_5.febreiro.s1.everyone-take-a-bow",
@@ -286,7 +288,8 @@
             "gl": "Tapar un ollo coa man",
             "es": "Taparse un ojo con la mano"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_pirate"
         },
         {
           "id": "4_5.febreiro.s2.wizard",
@@ -530,7 +533,8 @@
             "gl": "Levantar un dedo por cada punto do marcador",
             "es": "Levantar un dedo por cada punto del marcador"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_scoreboard"
         },
         {
           "id": "4_5.febreiro.s3.winner",
@@ -633,7 +637,8 @@
             "gl": "Dar un paso adiante",
             "es": "Dar un paso adelante"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_move_forward"
         },
         {
           "id": "4_5.febreiro.s3.good-sport",
@@ -745,7 +750,8 @@
             "gl": "Facer unha xanela coas mans",
             "es": "Hacer una ventana con las manos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_puppet_theatre"
         },
         {
           "id": "4_5.febreiro.s4.sock-puppet",

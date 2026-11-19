@@ -176,7 +176,8 @@
             "gl": "Facer unha cúpula coas mans",
             "es": "Hacer una cúpula con las manos"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_protected"
         },
         {
           "id": "4_5.abril.s1.rocky",
@@ -289,7 +290,8 @@
             "gl": "Estirar os brazos ao máximo",
             "es": "Estirar los brazos al máximo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_wingspan"
         },
         {
           "id": "4_5.abril.s2.feathers",
@@ -407,7 +409,8 @@
             "gl": "Voar amodo",
             "es": "Volar despacio"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_soaring"
         },
         {
           "id": "4_5.abril.s2.webbed",
@@ -477,7 +480,8 @@
             "gl": "Facer «cuac»",
             "es": "Hacer «cuac»"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_squawk_like_a_seagull"
         },
         {
           "id": "4_5.abril.s2.dive-catch-fly",
@@ -508,7 +512,8 @@
             "gl": "Baixar as mans ata o chan",
             "es": "Bajar las manos hasta el suelo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_seabed"
         },
         {
           "id": "4_5.abril.s3.kelp",
@@ -519,7 +524,8 @@
             "gl": "Moverse ondulando coma alga",
             "es": "Moverse ondulando como un alga"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_kelp"
         },
         {
           "id": "4_5.abril.s3.sea-urchin",
@@ -554,7 +560,8 @@
             "gl": "Poñer un tubo imaxinario",
             "es": "Ponerse un tubo imaginario"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_snorkel"
         },
         {
           "id": "4_5.abril.s3.goggles",
@@ -637,7 +644,8 @@
             "gl": "Moverse xuntos coma peixes",
             "es": "Moverse juntos como peces"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_swim_in_a_group"
         },
         {
           "id": "4_5.abril.s3.murky",
@@ -775,7 +783,8 @@
             "gl": "Engurrar un plástico",
             "es": "Arrugar un plástico"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_plastic"
         },
         {
           "id": "4_5.abril.s4.glass-jar",
@@ -798,7 +807,8 @@
             "gl": "Dobrar e gardar a bolsa",
             "es": "Doblar y guardar la bolsa"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_reusable_bag"
         },
         {
           "id": "4_5.abril.s4.compost",
@@ -845,7 +855,8 @@
             "gl": "Facer un círculo con frechas",
             "es": "Hacer un círculo con flechas"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_recycle"
         },
         {
           "id": "4_5.abril.s4.reuse",

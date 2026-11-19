@@ -43,7 +43,8 @@
             "gl": "Xuntar as mans no centro",
             "es": "Juntar las manos en el centro"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_team"
         },
         {
           "id": "4_5.setembro.s1.captain",
@@ -78,7 +79,8 @@
             "gl": "Pasar o pau a quen fala",
             "es": "Pasar el palo a quien habla"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_talking_stick"
         },
         {
           "id": "4_5.setembro.s1.classroom-job",
@@ -366,7 +368,8 @@
             "gl": "Medir cos palmos",
             "es": "Medir con los palmos"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_measure"
         },
         {
           "id": "4_5.setembro.s2.connect",
@@ -537,7 +540,8 @@
             "gl": "Coller un pano da caixa",
             "es": "Coger un pañuelo de la caja"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_tissue_box"
         },
         {
           "id": "4_5.setembro.s3.healthy-snack",
@@ -619,7 +623,8 @@
             "gl": "Poñerse en fila para o lavabo",
             "es": "Ponerse en fila para el lavabo"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_queue_up"
         },
         {
           "id": "4_5.setembro.s3.drink-water",

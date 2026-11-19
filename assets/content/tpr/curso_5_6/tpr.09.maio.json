@@ -43,7 +43,8 @@
             "gl": "Subir e baixar o brazo",
             "es": "Subir y bajar el brazo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_mood_meter"
         },
         {
           "id": "5_6.maio.s1.face-card",
@@ -498,7 +499,8 @@
             "gl": "Meter un papel no bote",
             "es": "Meter un papel en el bote"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_kindness_jar"
         },
         {
           "id": "5_6.maio.s3.compliment",

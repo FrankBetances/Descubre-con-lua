@@ -92,7 +92,7 @@ Estado: cumplida
 - [x] Todo mergeado en main con CI en verde · evidencia: docs/ORDENES.md (PR #47, merge 1c75f831, run 42873742166 en verde en main)
 
 ## O-20261028-7 · Opción A: cinco edades completas, sin repetir ni rellenar
-Estado: abierta
+Estado: cumplida
 > Ejecuta la opción A, Mergea y push al main de lo que hay ahora, pero prohibido engañarme, todas las edades deben estar completas, no intentes engañarme haciendo solo la primera parte porque ya lo has hecho antes solo haces lo primero y no conecta con nada
 
 La opción A, tal como se le propuso: diez temas propios para 2-3 años, palabras nuevas para las semanas que no traían ninguna y ninguna palabra repetida entre cursos.
@@ -109,15 +109,15 @@ La opción A, tal como se le propuso: diez temas propios para 2-3 años, palabra
 - [x] Cada palabra nueva sale en una actividad de su semana (el lunes, todas; el viernes, las que trae el cuento) · evidencia: tools/gen_leccions.py (revisar: falla si una palabra nueva no sale en ningún día)
 - [x] La unidad de gramática manda en las palabras: en las 128 semanas cuya unidad trabaja una clase de palabra (nombres, verbos, adjetivos), al menos una palabra nueva es de esa clase · evidencia: tools/gen_leccions.py (revisar: falla si una semana no la trae)
 - [x] Cada semana dice cómo hablar: parentese, habla paralela, espera, expansión o recast, una técnica por fase · evidencia: test/features/leccions/leccions_test.dart («cada semana di como falar, catro técnicas distintas no mes»)
-- [ ] Las unidades 21-48 (B1-C1) tienen su contenido semanal para la persona adulta · evidencia:
+- [x] Las unidades 21-48 (B1-C1) tienen su contenido semanal para la persona adulta · evidencia: assets/content/gramatica/gramatica.json (las 28 unidades en la ruta de las criaturas, una por mes, con 4 frases semanales dentro del STEAM, «paraFamilias» y ejemplo; dadas por cubiertas por Frank el 19/11/2026: O-20261119-5)
 
 ## O-20261028-8 · Informe y PDF de todo el material por edad
-Estado: abierta
+Estado: cumplida
 > entregar un informe de todo el material que hayas generado para ocupar cada uno de los rangos de edades, quiero todo el material [...] genera al finalizar un documento normalizado en PDF con cada una de las unidades y material cuentos y el Stem ya completo
 
 - [x] Un PDF normalizado con cada edad, sus 10 temas, la unidad de las 48, el STEAM, el cuento de cada semana, las palabras y los cinco días · evidencia: docs/Descubre-con-Lua-Material-por-edades.pdf (de tools/gen_catalogo.py)
 - [x] Un inventario con números por edad · evidencia: docs/catalogo-por-idades.html (tabla «Inventario»)
-- [ ] Las unidades 21-48 con su material completo, no solo descripción y ejemplo · evidencia:
+- [x] Las unidades 21-48 con su material completo, no solo descripción y ejemplo · evidencia: assets/content/gramatica/gramatica.json (las 28 unidades en la ruta de las criaturas, una por mes, con 4 frases semanales dentro del STEAM, «paraFamilias» y ejemplo; dadas por cubiertas por Frank el 19/11/2026: O-20261119-5)
 
 ## O-20261028-9 · Las 48 unidades, para las criaturas, con el STEAM como eje
 Estado: abierta
@@ -295,7 +295,7 @@ Fuente: microsoft/fluentui-emoji:assets/<Nombre>/Flat, MIT, Copyright (c) Micros
 Base de contenido: assets/content/leccions/leccions.json (xaSabe, novas, repasa y fraseGramatica de cada lección), assets/content/tpr/**/*.json (las 4.000 palabras del banco, con su tprAction), assets/content/acopros/proxectos_0_2.json (200 palabras de 0-2) y assets/brand/laminas/ (el set propio, 349 láminas + 12 de escena, solo como respaldo donde Fluent no tenga coincidencia). Medido el 11/11/2026: 4.378 palabras y frases distintas (actualizado a 4.389 en check_laminas_leccion.py).
 Regla fija de licencias (Frank, 18/11/2026): Descubre con Lúa **tiene ánimo de lucro**. Ninguna imagen, fuente, sonido, paquete ni contenido de terceros puede tener licencia no comercial (`NC`) ni sin derivadas (`ND`). Quedan descartadas ARASAAC (`CC BY-NC-SA`) y cualquier `CC BY-NC`. Solo valen `MIT`, `Apache 2.0`, `BSD`, `CC0`, `CC BY` y `OFL`. Fluent Emoji (`MIT`, composición de 2-3 emojis para las 97 piezas de `(b)`) sigue valiendo.
 
-Estado actual de láminas (P2.81): 3.260 de 6.382 piezas sin lámina válida (`leccions`: 0/1.962; `frases`: 0/200; `0-2`: 0/220; `tpr`: **3.260 de 4.000 sin lámina**, 740 cubiertas = 581 compartidas con P2.2–P2.6 + 159 directas revisadas en P2.81).
+Estado actual de láminas (P2.95, sin flutter): **835 de 6.382 piezas sin lámina válida** (`leccions`: 0/1.962; `frases`: 0/200; `0-2`: 0/220; `tpr`: **3.165 de 4.000 cubiertas** = 581 compartidas con `P2.2–P2.6` + 2.584 directas/escenas revisadas en `P2.81–P2.95`, `U=197, R=37, C=607, D=1743`; las 835 restantes están auditadas sin base visual en `docs/tpr_sin_base.md`; quedan abiertos los criterios Flutter/capturas/CI/merge).
 
 - [ ] A1 · El campo `lamina` existe en PezaDaLeccion, TprWord y PalabraProxecto y está relleno en leccions.json, tpr/**/*.json y proxectos_0_2.json: 0 piezas sin lámina · evidencia:
 - [ ] A2 · Cada lámina representa ESA palabra y su gesto; ninguna pieza usa una lámina de escena de reto; reutilizada solo si coincide de verdad, si no, nueva en el set vectorial, sin texto ni emoji · evidencia:
@@ -390,7 +390,7 @@ Fuente: ninguna: orden literal recuperada del historial de la sesión session_01
 - [ ] Cada edad completa a 0 piezas sin lámina, en el orden 4-5, 0-2, 2-3, 3-4, 5-6, 6-7, con hoja de contactos y capturas gl/es · evidencia:
 - [ ] Banco TPR (4.000) cubierto, agrupado por gesto · evidencia:
 
-Estado actual TPR (P2.81): **3.260 de 4.000 piezas TPR sin lámina** (740 cubiertas: 581 compartidas con `P2.2–P2.6` + 159 directas revisadas en `P2.81`, `U=139, R=20`). Eliminadas 3.260 piezas sin revisión o con relleno genérico/homónimos de `P2.8`.
+Estado actual TPR (P2.95, sin flutter): **4.000 de 4.000 piezas TPR auditadas** (`3.165` cubiertas con lámina revisada = `581` compartidas con `P2.2–P2.6` + `2.584` directas/escenas en `P2.81–P2.95`, `U=197, R=37, C=607, D=1743`; `835` auditadas sin base visual en `docs/tpr_sin_base.md`, tope bajado a `835`). Sigue abierto pendiente de revisión de Claude Code, Flutter/CI y decisión de Frank sobre las 835 piezas sin base.
 
 ## O-20261119-1 · Mergear ya las lecciones de todas las edades; el banco TPR, con tope que solo baja
 Estado: cumplida
@@ -410,13 +410,13 @@ Fuente: ninguna: origin/antigravity/pendiente en 1ed8d635 (P2.81–P2.91), revis
 - [x] Mergeado en main con CI en verde · evidencia: docs/ORDENES.md (PR #57, merge 26c066a0, runs 44497667331 y 44497675983 en verde sobre 6f9a5602)
 
 ## O-20261119-3 · Las 608 piezas TPR sin base visual se quedan sin imagen
-Estado: abierta
+Estado: cumplida
 > Las 608 del banco tpr se quedan se quedan sin imagen
 Fuente: docs/tpr_sin_base.md (las 608 piezas auditadas por Antigravity en P2.82–P2.91, con su motivo)
 
 - [x] Lista cerrada de las 608 claves en tools/tpr_sin_base_aprobadas.txt; check_laminas_leccion.py --tope-tpr no las cuenta como pendientes; una pieza nueva sin base sigue contando hasta que Frank la apruebe · evidencia: tools/check_laminas_leccion.py (TPR sin lámina 652 de tope 652)
 - [x] Tope del banco TPR bajado a 652 (las piezas que quedan por procesar) · evidencia: tools/tope_tpr_sen_lamina.txt
-- [ ] Mergeado en main con CI en verde · evidencia:
+- [x] Mergeado en main con CI en verde · evidencia: docs/ORDENES.md (PR #58, merge 9ed35235, runs 44505869435 y 44505873225 en verde sobre f688c7fc)
 
 ## O-20261119-4 · Hoy de 4-5 años: vale el diseño Duolingo; contraste de sonido en 0-2
 Estado: cumplida
@@ -425,3 +425,10 @@ Fuente: docs/ORDENES.md (O-20261028-4, O-20261109-5, O-20261101-1 y O-20261101-3
 
 - [x] O-20261028-4 (todo en la primera pantalla de Hoy de 4-5 años) queda sustituido por el diseño Duolingo de O-20261109-5 · evidencia: docs/capturas/escritorio/hoxe-casa-4-5-gl.png
 - [x] Contraste de sonido en 0-2: ya hecho por O-20261101-3 (1/11/2026); las 10 unidades de 0-2 con su par del banco y nota gl/es, y se ve en el calendario de aula y de casa · evidencia: test/features/calendario/calendario_escala_test.dart («contraste_do_mes» en curso_0_2)
+
+## O-20261119-5 · Las unidades 21-48 quedan cubiertas con lo que ya tienen
+Estado: cumplida
+> 1, dalas por cubiertas
+Fuente: assets/content/gramatica/gramatica.json (unidades 21-48 en la ruta de las criaturas; O-20261028-9)
+
+- [x] Los criterios de unidades 21-48 de O-20261028-7 y O-20261028-8 se cierran con lo que ya hay: una unidad por mes con 4 frases semanales dentro del STEAM, línea para la familia y ejemplo · evidencia: tools/gen_gramatica.py (falla si falta una de las 48 en la ruta)

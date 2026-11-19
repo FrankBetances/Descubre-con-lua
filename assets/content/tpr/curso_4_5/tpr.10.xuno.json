@@ -153,7 +153,8 @@
             "gl": "Facer prismáticos coas mans",
             "es": "Hacer prismáticos con las manos"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_look_through_binoculars"
         },
         {
           "id": "4_5.xuno.s1.wooden",
@@ -371,7 +372,8 @@
             "gl": "Poñerse contra a parede",
             "es": "Ponerse contra la pared"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_measure_height"
         },
         {
           "id": "4_5.xuno.s2.tell-a-story",
@@ -585,7 +587,8 @@
             "gl": "Estender as mans e coller",
             "es": "Extender las manos y coger"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_receive"
         },
         {
           "id": "4_5.xuno.s3.cheer-hooray",
@@ -618,7 +621,8 @@
             "gl": "Estirarse dereito",
             "es": "Estirarse recto"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_stand_tall"
         },
         {
           "id": "4_5.xuno.s3.wave-to-families",

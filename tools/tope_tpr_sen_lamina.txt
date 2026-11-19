@@ -1,2 +1,2 @@
-652
+227
 # Piezas del banco TPR sin lámina permitidas (O-20261119-1). Solo se baja, nunca se sube.

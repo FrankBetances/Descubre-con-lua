@@ -189,7 +189,8 @@
           "tprAction": {
             "gl": "Dar unha volta sobre un mesmo",
             "es": "Dar una vuelta sobre uno mismo"
-          }
+          },
+          "lamina": "pal_turn"
         },
         {
           "id": "3_4.outubro.s1.big",
@@ -472,7 +473,8 @@
           "tprAction": {
             "gl": "Darlle a man a quen está ao lado e movela",
             "es": "Dar la mano a quien está al lado y moverla"
-          }
+          },
+          "lamina": "pal_shake_hands"
         },
         {
           "id": "3_4.outubro.s2.hands-on-your-tummy",
@@ -528,7 +530,8 @@
           "tprAction": {
             "gl": "Dar unhas palmadas suaves nas pernas",
             "es": "Darse unas palmadas suaves en las piernas"
-          }
+          },
+          "lamina": "pal_legs"
         },
         {
           "id": "3_4.outubro.s3.fingers",
@@ -551,7 +554,8 @@
           "tprAction": {
             "gl": "Levantar o polgar cara arriba",
             "es": "Levantar el pulgar hacia arriba"
-          }
+          },
+          "lamina": "pal_thumb"
         },
         {
           "id": "3_4.outubro.s3.elbow",
@@ -610,7 +614,8 @@
           "tprAction": {
             "gl": "Estirar o brazo para coller algo alto",
             "es": "Estirar el brazo para coger algo alto"
-          }
+          },
+          "lamina": "pal_reach"
         },
         {
           "id": "3_4.outubro.s3.wiggle",
@@ -632,7 +637,8 @@
           "tprAction": {
             "gl": "Dar unha patada suave a unha pelota imaxinaria",
             "es": "Dar una patada suave a una pelota imaginaria"
-          }
+          },
+          "lamina": "pal_kick"
         },
         {
           "id": "3_4.outubro.s3.fast",
@@ -690,7 +696,8 @@
           "tprAction": {
             "gl": "Poñerse de pé amodo desde o chan",
             "es": "Ponerse de pie despacio desde el suelo"
-          }
+          },
+          "lamina": "pal_stand_up"
         },
         {
           "id": "3_4.outubro.s3.arms-up",
@@ -737,7 +744,8 @@
           "tprAction": {
             "gl": "Subir e baixar os brazos ao pulso",
             "es": "Subir y bajar los brazos al pulso"
-          }
+          },
+          "lamina": "pal_up_and_down"
         }
       ]
     },
@@ -817,7 +825,8 @@
           "tprAction": {
             "gl": "Moverse imitando a sombra doutra persoa",
             "es": "Moverse imitando la sombra de otra persona"
-          }
+          },
+          "lamina": "pal_shadow"
         },
         {
           "id": "3_4.outubro.s4.dance",
@@ -912,7 +921,8 @@
           "tprAction": {
             "gl": "Moverse teso coma un robot",
             "es": "Moverse tieso como un robot"
-          }
+          },
+          "lamina": "pal_stiff"
         },
         {
           "id": "3_4.outubro.s4.floppy",
