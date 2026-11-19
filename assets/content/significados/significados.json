@@ -10184,6 +10184,10 @@
   "Row, row, row your boat, gently down the stream.": {
    "gl": "Rema, rema, rema o teu barco, suave río abaixo.",
    "es": "Rema, rema, rema tu barco, suave río abajo."
+  },
+  "taut": {
+   "gl": "tenso",
+   "es": "tenso"
   }
  }
 }
