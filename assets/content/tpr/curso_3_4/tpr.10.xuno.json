@@ -80,7 +80,8 @@
           "tprAction": {
             "gl": "Sentar no medio e abrazar os xeonllos coma unha illa",
             "es": "Sentarse en el centro y abrazarse las rodillas como una isla"
-          }
+          },
+          "lamina": "pal_island"
         },
         {
           "id": "3_4.xuno.s1.lighthouse",
@@ -362,7 +363,8 @@
           "tprAction": {
             "gl": "Tombar de costas cos ollos pechados",
             "es": "Tumbarse boca arriba con los ojos cerrados"
-          }
+          },
+          "lamina": "pal_sunbathe"
         },
         {
           "id": "3_4.xuno.s2.knock-down",
@@ -450,7 +452,8 @@
           "tprAction": {
             "gl": "Poñer o sombreiro ao escoitar a orde",
             "es": "Ponerse el sombrero al oír la orden"
-          }
+          },
+          "lamina": "pal_put_on_your_sun_hat"
         },
         {
           "id": "3_4.xuno.s2.it-s-hot",
@@ -472,7 +475,8 @@
           "tprAction": {
             "gl": "Sentar e debuxar círculos na area imaxinaria",
             "es": "Sentarse y dibujar círculos en la arena imaginaria"
-          }
+          },
+          "lamina": "pal_in_the_sand"
         }
       ]
     },
@@ -763,7 +767,8 @@
           "tprAction": {
             "gl": "Estender un mantel imaxinario e sentar arredor",
             "es": "Extender un mantel imaginario y sentarse alrededor"
-          }
+          },
+          "lamina": "pal_picnic"
         },
         {
           "id": "3_4.xuno.s4.suitcase",

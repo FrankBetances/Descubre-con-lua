@@ -67,7 +67,8 @@
             "gl": "Sentarse e mirar pola xanela",
             "es": "Sentarse y mirar por la ventanilla"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_window_seat"
         },
         {
           "id": "2_3.xaneiro.s1.bell-button",
@@ -123,7 +124,8 @@
             "gl": "Agardar un detrás doutro",
             "es": "Esperar uno detrás de otro"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_wait_in_line"
         },
         {
           "id": "2_3.xaneiro.s1.press-the-bell",
@@ -222,7 +224,8 @@
             "gl": "Sentarse coma no autobús",
             "es": "Sentarse como en el autobús"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_on_the_bus"
         },
         {
           "id": "2_3.xaneiro.s1.up-and-down-the-city",
@@ -519,7 +522,8 @@
             "gl": "Cheirar o pan quente",
             "es": "Oler el pan caliente"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_bakery"
         },
         {
           "id": "2_3.xaneiro.s3.postbox",

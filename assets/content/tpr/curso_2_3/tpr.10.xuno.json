@@ -649,7 +649,8 @@
             "gl": "Cheirar a cuncha",
             "es": "Oler la concha"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_salty_shell"
         },
         {
           "id": "2_3.xuno.s3.look-what-i-found",

@@ -133,7 +133,8 @@
             "gl": "Sentarse e respirar",
             "es": "Sentarse y respirar"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_rest_at_the_top"
         },
         {
           "id": "4_5.novembro.s1.look-into-the-distance",
@@ -441,7 +442,8 @@
             "gl": "Bater co dedo e escoitar",
             "es": "Golpear con el dedo y escuchar"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_listen_to_the_woodpecker"
         },
         {
           "id": "4_5.novembro.s2.an-oak-grows-from-an-acorn",
@@ -452,7 +454,8 @@
             "gl": "Encoller e erguerse amodo",
             "es": "Encogerse y levantarse despacio"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_an_oak_grows_from_an_acorn"
         },
         {
           "id": "4_5.novembro.s2.roots-under-the-ground",
@@ -494,7 +497,8 @@
             "gl": "Facer unha bóla co corpo",
             "es": "Hacer una bola con el cuerpo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_woodlouse"
         },
         {
           "id": "4_5.novembro.s3.centipede",
@@ -516,7 +520,8 @@
             "gl": "Estirar e encoller o corpo",
             "es": "Estirar y encoger el cuerpo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_earthworm"
         },
         {
           "id": "4_5.novembro.s3.magnifying-glass",
@@ -759,7 +764,8 @@
             "gl": "Sinalar as bolas vermellas",
             "es": "Señalar las bolas rojas"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_holly"
         },
         {
           "id": "4_5.novembro.s4.colour-hunt",

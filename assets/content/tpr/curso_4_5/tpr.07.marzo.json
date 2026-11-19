@@ -210,7 +210,8 @@
             "gl": "Pechar os ollos",
             "es": "Cerrar los ojos"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_close_your_eyes_and_taste"
         },
         {
           "id": "4_5.marzo.s1.honey-is-sweeter-than-lemon",
@@ -783,7 +784,8 @@
             "gl": "Atender detrás dun mostrador",
             "es": "Atender detrás de un mostrador"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_shopkeeper"
         },
         {
           "id": "4_5.marzo.s4.pay",
@@ -871,7 +873,8 @@
             "gl": "Cheirar unha froita",
             "es": "Oler una fruta"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_fresh_from_the_farm"
         },
         {
           "id": "4_5.marzo.s4.heavy-bag",

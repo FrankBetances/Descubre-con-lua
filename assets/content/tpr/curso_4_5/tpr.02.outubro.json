@@ -201,7 +201,8 @@
             "gl": "Bailar e parar co silencio",
             "es": "Bailar y parar con el silencio"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_when_the_drum_stops_freeze"
         },
         {
           "id": "4_5.outubro.s1.ready-steady-stop",
@@ -276,7 +277,8 @@
             "gl": "Agacharse nun recuncho",
             "es": "Agacharse en un rincón"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_den"
         },
         {
           "id": "4_5.outubro.s2.trail",
@@ -309,7 +311,8 @@
             "gl": "Esconderse detrás dunha cadeira",
             "es": "Esconderse detrás de una silla"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_hiding_spot"
         },
         {
           "id": "4_5.outubro.s2.relay-race",

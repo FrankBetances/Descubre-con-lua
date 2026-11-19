@@ -236,7 +236,8 @@
           "tprAction": {
             "gl": "Agacharse baixo os brazos dunha compañeira que fai de árbore",
             "es": "Agacharse bajo los brazos de una compañera que hace de árbol"
-          }
+          },
+          "lamina": "pal_under_the_tree"
         }
       ]
     },
@@ -304,7 +305,8 @@
           "tprAction": {
             "gl": "Coller unha landra imaxinaria cos dedos",
             "es": "Coger una bellota imaginaria con los dedos"
-          }
+          },
+          "lamina": "pal_acorn"
         },
         {
           "id": "3_4.novembro.s2.pinecone",
@@ -472,7 +474,8 @@
           "tprAction": {
             "gl": "Agocharse detrás dunha compañeira que fai de árbore",
             "es": "Esconderse detrás de una compañera que hace de árbol"
-          }
+          },
+          "lamina": "pal_behind_the_tree"
         }
       ]
     },
@@ -700,7 +703,8 @@
           "tprAction": {
             "gl": "Levar o dedo aos beizos e logo a man á orella",
             "es": "Llevarse el dedo a los labios y luego la mano a la oreja"
-          }
+          },
+          "lamina": "pal_shh_listen"
         },
         {
           "id": "3_4.novembro.s3.quiet-as-a-mouse",
@@ -914,7 +918,8 @@
           "tprAction": {
             "gl": "Cheirar o aire con cara de gusto",
             "es": "Oler el aire con cara de gusto"
-          }
+          },
+          "lamina": "pal_it_smells_good"
         },
         {
           "id": "3_4.novembro.s4.more-please",

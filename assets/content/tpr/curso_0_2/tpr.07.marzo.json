@@ -515,7 +515,8 @@
             "gl": "Meter as mans nas bólas",
             "es": "Meter las manos en las bolas"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_ball_pit"
         },
         {
           "id": "0_2.marzo.s3.ramp",
@@ -559,7 +560,8 @@
             "gl": "Seguir a bóla co dedo",
             "es": "Seguir la bola con el dedo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_ball_run"
         },
         {
           "id": "0_2.marzo.s3.roll-back",
@@ -581,7 +583,8 @@
             "gl": "Gatear detrás da pelota",
             "es": "Gatear detrás de la pelota"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_chase_after"
         },
         {
           "id": "0_2.marzo.s3.sit-up",
@@ -592,7 +595,8 @@
             "gl": "Axudar ao bebé a sentarse",
             "es": "Ayudar al bebé a sentarse"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_sit_up"
         },
         {
           "id": "0_2.marzo.s3.pat-the-ball",
@@ -915,7 +919,8 @@
             "gl": "Cheirar a laranxa e sorrir",
             "es": "Oler la naranja y sonreír"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_mmm_orange"
         },
         {
           "id": "0_2.marzo.s4.juice-in-a-cup",

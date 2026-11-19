@@ -160,7 +160,8 @@
           "tprAction": {
             "gl": "Levar a man á orella e quedar en silencio",
             "es": "Llevarse la mano a la oreja y quedarse en silencio"
-          }
+          },
+          "lamina": "pal_listen"
         },
         {
           "id": "3_4.setembro.s1.happy",
@@ -544,7 +545,8 @@
           "tprAction": {
             "gl": "Arrolar un bebé imaxinario nos brazos",
             "es": "Acunar un bebé imaginario en los brazos"
-          }
+          },
+          "lamina": "pal_baby"
         },
         {
           "id": "3_4.setembro.s3.grandma",
@@ -621,7 +623,8 @@
           "tprAction": {
             "gl": "Cruzar as mans no colo e contar ata tres en silencio",
             "es": "Cruzar las manos en el regazo y contar hasta tres en silencio"
-          }
+          },
+          "lamina": "pal_wait"
         },
         {
           "id": "3_4.setembro.s3.soft",

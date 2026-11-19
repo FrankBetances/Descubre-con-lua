@@ -204,7 +204,8 @@
           "tprAction": {
             "gl": "Facer o xesto de lavar as mans ao escoitar a orde",
             "es": "Hacer el gesto de lavarse las manos al oír la orden"
-          }
+          },
+          "lamina": "pal_wash_your_hands"
         },
         {
           "id": "3_4.maio.s1.rub-your-hands",
@@ -257,7 +258,8 @@
           "tprAction": {
             "gl": "Sentar no chan e mover as mans coma na auga",
             "es": "Sentarse en el suelo y mover las manos como en el agua"
-          }
+          },
+          "lamina": "pal_bath"
         },
         {
           "id": "3_4.maio.s2.sponge",
@@ -280,7 +282,8 @@
           "tprAction": {
             "gl": "Masaxear a cabeza coas puntas dos dedos",
             "es": "Masajear la cabeza con las puntas de los dedos"
-          }
+          },
+          "lamina": "pal_shampoo"
         },
         {
           "id": "3_4.maio.s2.rubber-duck",
@@ -337,7 +340,8 @@
           "tprAction": {
             "gl": "Tombar de costas cos brazos abertos coma na auga",
             "es": "Tumbarse boca arriba con los brazos abiertos como en el agua"
-          }
+          },
+          "lamina": "pal_float"
         },
         {
           "id": "3_4.maio.s2.pour",
@@ -629,7 +633,8 @@
           "tprAction": {
             "gl": "Poñer cara de sorpresa e beber auga",
             "es": "Poner cara de sorpresa y beber agua"
-          }
+          },
+          "lamina": "pal_salty"
         },
         {
           "id": "3_4.maio.s3.creamy",

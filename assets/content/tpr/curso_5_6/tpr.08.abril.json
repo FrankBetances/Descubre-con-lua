@@ -54,7 +54,8 @@
             "gl": "Agacharse a recoller",
             "es": "Agacharse a recoger"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_beach_clean_up"
         },
         {
           "id": "5_6.abril.s1.microplastic",
@@ -98,7 +99,8 @@
             "gl": "Agacharse e coller",
             "es": "Agacharse y coger"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_pick_up_trash"
         },
         {
           "id": "5_6.abril.s1.swim-like-a-dolphin",
@@ -360,7 +362,8 @@
             "gl": "Agacharse ondulando",
             "es": "Agacharse ondulando"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_hide_in_the_seagrass"
         },
         {
           "id": "5_6.abril.s2.surface",
@@ -382,7 +385,8 @@
             "gl": "Abrazar unha bóla",
             "es": "Abrazar una bola"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_ecological"
         },
         {
           "id": "5_6.abril.s2.long-legged",
@@ -479,7 +483,8 @@
             "gl": "Abrazar unha bóla do mundo",
             "es": "Abrazar una bola del mundo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_planet_care"
         },
         {
           "id": "5_6.abril.s3.solar-panel",
@@ -633,7 +638,8 @@
             "gl": "Negar coa cabeza",
             "es": "Negar con la cabeza"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_wasteful_habit"
         },
         {
           "id": "5_6.abril.s3.sustainable",

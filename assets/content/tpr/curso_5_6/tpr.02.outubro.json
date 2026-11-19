@@ -121,7 +121,8 @@
             "gl": "Cheirar e sinalar",
             "es": "Oler y señalar"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_sniff_out"
         },
         {
           "id": "5_6.outubro.s1.feel-without-looking",
@@ -177,7 +178,8 @@
             "gl": "Poñer o dedo nos beizos",
             "es": "Poner el dedo en los labios"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_silent_room"
         },
         {
           "id": "5_6.outubro.s1.sharp-eyed",
@@ -319,7 +321,8 @@
             "gl": "Escoitar o peito dun amigo cun tubo de cartón",
             "es": "Escuchar el pecho de un amigo con un tubo de cartón"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_listening_tube"
         },
         {
           "id": "5_6.outubro.s2.feel-your-heartbeat",
@@ -397,7 +400,8 @@
             "gl": "Deitarse tranquilos",
             "es": "Tumbarse tranquilos"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_resting"
         },
         {
           "id": "5_6.outubro.s2.strong-muscled",
@@ -505,7 +509,8 @@
             "gl": "Sentarse ben dereito",
             "es": "Sentarse bien recto"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_posture"
         },
         {
           "id": "5_6.outubro.s3.warm-up-exercise",
@@ -712,7 +717,8 @@
             "gl": "Pousar a cabeza nas mans",
             "es": "Apoyar la cabeza en las manos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_rest_time"
         },
         {
           "id": "5_6.outubro.s4.energy",
@@ -825,7 +831,8 @@
             "gl": "Espreguizarse e sentarse",
             "es": "Desperezarse y sentarse"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_wake_up_early"
         },
         {
           "id": "5_6.outubro.s4.tell-a-dream",
@@ -924,7 +931,8 @@
             "gl": "Apagar e pechar os ollos",
             "es": "Apagar y cerrar los ojos"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_lights_out_eyes_closed"
         }
       ]
     }

@@ -351,7 +351,8 @@
             "gl": "Randear o bebé moi amodo",
             "es": "Mecer al bebé muy despacio"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_rock_gently"
         },
         {
           "id": "0_2.decembro.s2.cover-up",
@@ -428,7 +429,8 @@
             "gl": "Pechar os ollos amodo",
             "es": "Cerrar los ojos despacio"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_sleepy_eyed"
         },
         {
           "id": "0_2.decembro.s2.come-here-for-a-hug",
@@ -527,7 +529,8 @@
             "gl": "Axitar a bóla de neve",
             "es": "Agitar la bola de nieve"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_snow_globe"
         },
         {
           "id": "0_2.decembro.s3.lantern",
@@ -771,7 +774,8 @@
             "gl": "Cantar unha panxoliña baixiño",
             "es": "Cantar un villancico bajito"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_carol"
         },
         {
           "id": "0_2.decembro.s4.jingle-bell",
@@ -794,7 +798,8 @@
             "gl": "Sentar o bebé á mesa con todos",
             "es": "Sentar al bebé a la mesa con todos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_family_table"
         },
         {
           "id": "0_2.decembro.s4.open-up",
@@ -827,7 +832,8 @@
             "gl": "Randear o bebé cantando",
             "es": "Mecer al bebé cantando"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_rock_and_sing"
         },
         {
           "id": "0_2.decembro.s4.pass-around",

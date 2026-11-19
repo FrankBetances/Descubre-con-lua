@@ -734,7 +734,8 @@
             "gl": "Sentarse na beira",
             "es": "Sentarse en la orilla"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_riverbank"
         },
         {
           "id": "4_5.maio.s4.fresh-water",
@@ -837,7 +838,8 @@
             "gl": "Deitarse cos brazos abertos",
             "es": "Tumbarse con los brazos abiertos"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_float_on_your_back"
         },
         {
           "id": "4_5.maio.s4.brackish",
@@ -914,7 +916,8 @@
             "gl": "Poñer o dedo nos beizos",
             "es": "Poner el dedo en los labios"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_shh_a_heron"
         },
         {
           "id": "4_5.maio.s4.float-like-an-otter",
@@ -925,7 +928,8 @@
             "gl": "Deitarse e flotar",
             "es": "Tumbarse y flotar"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_float_like_an_otter"
         }
       ]
     }

@@ -263,7 +263,8 @@
             "gl": "Sentarse ben na mesa",
             "es": "Sentarse bien en la mesa"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_desk"
         },
         {
           "id": "5_6.xuno.s2.timetable-board",
@@ -769,7 +770,8 @@
             "gl": "Sentarse arredor",
             "es": "Sentarse alrededor"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_campfire"
         },
         {
           "id": "5_6.xuno.s4.starry-night",
@@ -824,7 +826,8 @@
             "gl": "Sentarse e abrir un libro",
             "es": "Sentarse y abrir un libro"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_read_in_the_shade"
         },
         {
           "id": "5_6.xuno.s4.keep-in-touch",
@@ -857,7 +860,8 @@
             "gl": "Deitarse a descansar",
             "es": "Tumbarse a descansar"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_relaxed_summer"
         },
         {
           "id": "5_6.xuno.s4.sun-soaked",

@@ -871,7 +871,8 @@
             "gl": "Cheirar a froita",
             "es": "Oler la fruta"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_freshly_picked"
         },
         {
           "id": "5_6.novembro.s4.ripest",

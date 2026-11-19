@@ -623,7 +623,8 @@
           "tprAction": {
             "gl": "Tombar de costas e pedalear no aire",
             "es": "Tumbarse boca arriba y pedalear en el aire"
-          }
+          },
+          "lamina": "pal_pedal"
         },
         {
           "id": "3_4.xaneiro.s3.near",
@@ -712,7 +713,8 @@
           "tprAction": {
             "gl": "Parar, mirar a ambos lados e levar a man á orella",
             "es": "Parar, mirar a ambos lados y llevarse la mano a la oreja"
-          }
+          },
+          "lamina": "pal_stop_look_and_listen"
         }
       ]
     },
@@ -945,7 +947,8 @@
           "tprAction": {
             "gl": "Sentar nun sofá imaxinario e estirar as pernas",
             "es": "Sentarse en un sofá imaginario y estirar las piernas"
-          }
+          },
+          "lamina": "pal_on_the_sofa"
         }
       ]
     }

@@ -428,7 +428,8 @@
             "gl": "Cheirar a cabeza do bebé",
             "es": "Oler la cabeza del bebé"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_sweet_smelling_baby"
         },
         {
           "id": "0_2.maio.s2.bath-time",

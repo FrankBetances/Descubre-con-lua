@@ -122,7 +122,8 @@
             "gl": "Levar a man á orella",
             "es": "Llevar la mano a la oreja"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_listen_with_a_hand_to_the_ear"
         },
         {
           "id": "5_6.setembro.s1.shake-on-it",
@@ -636,7 +637,8 @@
             "gl": "Parar e encoller os ombros",
             "es": "Parar y encoger los hombros"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_stuck"
         },
         {
           "id": "5_6.setembro.s3.solved",

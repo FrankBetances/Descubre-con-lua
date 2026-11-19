@@ -93,7 +93,8 @@
           "tprAction": {
             "gl": "Sentar e baixar un monte imaxinario cos brazos arriba",
             "es": "Sentarse y bajar una montaña imaginaria con los brazos arriba"
-          }
+          },
+          "lamina": "pal_sledge"
         },
         {
           "id": "3_4.decembro.s1.shiver",
@@ -206,7 +207,8 @@
           "tprAction": {
             "gl": "Encoller os ombros e tremer dicindo «brrr»",
             "es": "Encoger los hombros y temblar diciendo «brrr»"
-          }
+          },
+          "lamina": "pal_brrr_it_s_cold"
         },
         {
           "id": "3_4.decembro.s1.let-s-build-a-snowman",
@@ -217,7 +219,8 @@
           "tprAction": {
             "gl": "Amasar bólas de neve imaxinarias entre todos",
             "es": "Amasar bolas de nieve imaginarias entre todos"
-          }
+          },
+          "lamina": "pal_let_s_build_a_snowman"
         },
         {
           "id": "3_4.decembro.s1.catch-the-snowflake",
@@ -529,7 +532,8 @@
           "tprAction": {
             "gl": "Afundir a cabeza nunha almofada imaxinaria",
             "es": "Hundir la cabeza en una almohada imaginaria"
-          }
+          },
+          "lamina": "pal_pillow"
         },
         {
           "id": "3_4.decembro.s3.blanket",
@@ -562,7 +566,8 @@
           "tprAction": {
             "gl": "Pousar a cabeza nas mans e sorrir cos ollos pechados",
             "es": "Apoyar la cabeza en las manos y sonreír con los ojos cerrados"
-          }
+          },
+          "lamina": "pal_dream"
         },
         {
           "id": "3_4.decembro.s3.sleep",
@@ -620,7 +625,8 @@
           "tprAction": {
             "gl": "Encollerse e aconchegarse no propio colo",
             "es": "Encogerse y acurrucarse en el propio regazo"
-          }
+          },
+          "lamina": "pal_cuddle"
         },
         {
           "id": "3_4.decembro.s3.sleepy",
@@ -709,7 +715,8 @@
           "tprAction": {
             "gl": "Agocharse debaixo dunha manta imaxinaria",
             "es": "Esconderse debajo de una manta imaginaria"
-          }
+          },
+          "lamina": "pal_under_the_blanket"
         }
       ]
     },
@@ -787,7 +794,8 @@
           "tprAction": {
             "gl": "Mover a cabeza ao pulso da música",
             "es": "Mover la cabeza al pulso de la música"
-          }
+          },
+          "lamina": "pal_music"
         },
         {
           "id": "3_4.decembro.s4.chocolate",

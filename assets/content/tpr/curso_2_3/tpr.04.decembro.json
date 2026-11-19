@@ -738,7 +738,8 @@
             "gl": "Sentarse na alfombra",
             "es": "Sentarse en la alfombra"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_rug_by_the_fire"
         },
         {
           "id": "2_3.decembro.s4.picture-book",
@@ -782,7 +783,8 @@
             "gl": "Sentarse na butaca",
             "es": "Sentarse en el sillón"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_armchair"
         },
         {
           "id": "2_3.decembro.s4.get-warm",
@@ -840,7 +842,8 @@
             "gl": "Sinalar a casa e sentarse",
             "es": "Señalar la casa y sentarse"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_stay_in"
         },
         {
           "id": "2_3.decembro.s4.cosy-corner",
@@ -851,7 +854,8 @@
             "gl": "Sentarse no recuncho con coxíns",
             "es": "Sentarse en el rincón con cojines"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_cosy_corner"
         },
         {
           "id": "2_3.decembro.s4.steamy",

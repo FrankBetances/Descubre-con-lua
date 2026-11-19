@@ -236,7 +236,8 @@
           "tprAction": {
             "gl": "Agocharse detrás dos brazos e asomar de novo",
             "es": "Esconderse detrás de los brazos y asomarse de nuevo"
-          }
+          },
+          "lamina": "pal_behind_the_clouds"
         }
       ]
     },
@@ -402,7 +403,8 @@
           "tprAction": {
             "gl": "Cheirar unha flor e suspirar de gusto",
             "es": "Oler una flor y suspirar de gusto"
-          }
+          },
+          "lamina": "pal_fragrant"
         },
         {
           "id": "3_4.abril.s2.alive",
@@ -457,7 +459,8 @@
           "tprAction": {
             "gl": "Pasar de bóla no chan a flor aberta",
             "es": "Pasar de bola en el suelo a flor abierta"
-          }
+          },
+          "lamina": "pal_from_seed_to_flower"
         },
         {
           "id": "3_4.abril.s2.slowly-slowly",
@@ -683,7 +686,8 @@
           "tprAction": {
             "gl": "Sinalar arriba con sorpresa e seguir o voo",
             "es": "Señalar arriba con sorpresa y seguir el vuelo"
-          }
+          },
+          "lamina": "pal_look_a_butterfly"
         },
         {
           "id": "3_4.abril.s3.where-are-you-going",
@@ -772,7 +776,8 @@
           "tprAction": {
             "gl": "Sentar nun banco imaxinario e descansar",
             "es": "Sentarse en un banco imaginario y descansar"
-          }
+          },
+          "lamina": "pal_bench"
         },
         {
           "id": "3_4.abril.s4.pond",

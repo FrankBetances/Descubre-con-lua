@@ -116,7 +116,8 @@
             "gl": "Fregar a cortiza e escoitar",
             "es": "Frotar la corteza y escuchar"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_rub_gently"
         },
         {
           "id": "0_2.novembro.s1.scrunch",
@@ -660,7 +661,8 @@
             "gl": "Cheirar unha noz aberta",
             "es": "Oler una nuez abierta"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_nutty"
         },
         {
           "id": "0_2.novembro.s3.mmm-chestnuts",

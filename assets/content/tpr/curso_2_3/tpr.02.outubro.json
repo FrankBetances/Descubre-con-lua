@@ -504,7 +504,8 @@
             "gl": "Parar ao oír o asubío",
             "es": "Parar al oír el pitido"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_referee_s_whistle"
         },
         {
           "id": "2_3.outubro.s3.red-card",

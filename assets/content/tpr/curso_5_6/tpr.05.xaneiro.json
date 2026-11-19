@@ -460,7 +460,8 @@
             "gl": "Pechar os ollos",
             "es": "Cerrar los ojos"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_imagine_the_old_ships"
         }
       ]
     },
@@ -480,7 +481,8 @@
             "gl": "Arrolar un bebé imaxinario",
             "es": "Acunar un bebé imaginario"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_baby_photo"
         },
         {
           "id": "5_6.xaneiro.s3.family-tree",
@@ -646,7 +648,8 @@
             "gl": "Arrolar nos brazos",
             "es": "Acunar en los brazos"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_newborn_baby"
         },
         {
           "id": "5_6.xaneiro.s3.how-old-are-you",

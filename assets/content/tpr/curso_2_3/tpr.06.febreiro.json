@@ -124,7 +124,8 @@
             "gl": "Facer «grrr» baixiño",
             "es": "Hacer «grrr» bajito"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_growl"
         },
         {
           "id": "2_3.febreiro.s1.stripe",
@@ -356,7 +357,8 @@
             "gl": "Pasar de puntas en silencio",
             "es": "Pasar de puntillas en silencio"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_tiptoe_past"
         },
         {
           "id": "2_3.febreiro.s2.peer",
@@ -599,7 +601,8 @@
             "gl": "Deitarse de barriga e esvarar",
             "es": "Tumbarse de barriga y deslizarse"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_belly_slide"
         },
         {
           "id": "2_3.febreiro.s3.huddle-together",

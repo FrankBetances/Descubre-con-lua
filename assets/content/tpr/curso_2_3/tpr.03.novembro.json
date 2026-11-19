@@ -77,7 +77,8 @@
             "gl": "Sentarse no banco",
             "es": "Sentarse en el banco"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_park_bench"
         },
         {
           "id": "2_3.novembro.s1.gate",
@@ -134,7 +135,8 @@
             "gl": "Esconderse detrás dunha árbore",
             "es": "Esconderse detrás de un árbol"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_hide_behind"
         },
         {
           "id": "2_3.novembro.s1.point-at",
@@ -652,7 +654,8 @@
             "gl": "Bater co pé e escoitar",
             "es": "Golpear con el pie y escuchar"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_thumping"
         },
         {
           "id": "2_3.novembro.s3.stomp-stomp-stomp",
@@ -674,7 +677,8 @@
             "gl": "Pisar e levar a man á orella",
             "es": "Pisar y llevar la mano a la oreja"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_listen_to_the_crunch"
         },
         {
           "id": "2_3.novembro.s3.big-steps-and-little-steps",
@@ -840,7 +844,8 @@
             "gl": "Sentarse todos arredor da manta",
             "es": "Sentarse todos alrededor de la manta"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_sit_around"
         },
         {
           "id": "2_3.novembro.s4.steaming",
@@ -862,7 +867,8 @@
             "gl": "Romper a casca e escoitar",
             "es": "Romper la cáscara y escuchar"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_crackly_shell"
         },
         {
           "id": "2_3.novembro.s4.autumn-coloured",
@@ -928,7 +934,8 @@
             "gl": "Sentarse na manta",
             "es": "Sentarse en la manta"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_on_the_blanket"
         }
       ]
     }

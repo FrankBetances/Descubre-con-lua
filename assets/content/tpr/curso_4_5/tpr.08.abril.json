@@ -111,7 +111,8 @@
             "gl": "Mirar cara arriba en silencio",
             "es": "Mirar hacia arriba en silencio"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_watch_the_sky"
         },
         {
           "id": "4_5.abril.s1.protect",
@@ -683,7 +684,8 @@
             "gl": "Baixar e pechar os ollos",
             "es": "Bajar y cerrar los ojos"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_the_deeper_you_go_the_darker_it_gets"
         },
         {
           "id": "4_5.abril.s3.fish-swim-together-in-a-shoal",
@@ -793,7 +795,8 @@
             "gl": "Agacharse e coller",
             "es": "Agacharse y coger"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_pick_up_litter"
         },
         {
           "id": "4_5.abril.s4.recycle",
@@ -859,7 +862,8 @@
             "gl": "Abrazar unha bóla do mundo",
             "es": "Abrazar una bola del mundo"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_eco_friendly"
         },
         {
           "id": "4_5.abril.s4.wasteful",

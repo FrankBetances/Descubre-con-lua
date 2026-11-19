@@ -149,7 +149,8 @@
             "gl": "Mirar o mar en silencio",
             "es": "Mirar el mar en silencio"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_watch_the_waves"
         },
         {
           "id": "0_2.xuno.s1.salty-lips",
@@ -239,7 +240,8 @@
             "gl": "Sentarse xuntos mirando o mar",
             "es": "Sentarse juntos mirando el mar"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_by_the_sea"
         }
       ]
     },
@@ -617,7 +619,8 @@
             "gl": "Pousar a cabeza nas mans",
             "es": "Apoyar la cabeza en las manos"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_nap"
         },
         {
           "id": "0_2.xuno.s3.sun-kissed",
@@ -650,7 +653,8 @@
             "gl": "Sentarse á sombra",
             "es": "Sentarse a la sombra"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_cool_shade"
         },
         {
           "id": "0_2.xuno.s3.sleepyhead",
@@ -661,7 +665,8 @@
             "gl": "Pechar os ollos e roncar suave",
             "es": "Cerrar los ojos y roncar suave"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_sleepyhead"
         },
         {
           "id": "0_2.xuno.s3.hat-on-please",

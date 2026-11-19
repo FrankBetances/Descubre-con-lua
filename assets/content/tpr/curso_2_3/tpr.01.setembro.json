@@ -110,7 +110,8 @@
             "gl": "Poñerse un detrás doutro",
             "es": "Ponerse uno detrás de otro"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_line_up"
         },
         {
           "id": "2_3.setembro.s1.hang-up",
@@ -165,7 +166,8 @@
             "gl": "Sentarse preto dun amigo",
             "es": "Sentarse cerca de un amigo"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_nearby"
         },
         {
           "id": "2_3.setembro.s1.welcome-back",
@@ -296,7 +298,8 @@
             "gl": "Facer unha bóla de plastilina",
             "es": "Hacer una bola de plastilina"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_play_dough"
         },
         {
           "id": "2_3.setembro.s2.puzzle",
@@ -726,7 +729,8 @@
             "gl": "Sentarse en círculo",
             "es": "Sentarse en círculo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_circle_time"
         },
         {
           "id": "2_3.setembro.s4.helper",
@@ -781,7 +785,8 @@
             "gl": "Sentarse cada un no seu coxín",
             "es": "Sentarse cada uno en su cojín"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_cushion_circle"
         },
         {
           "id": "2_3.setembro.s4.hold-hands",

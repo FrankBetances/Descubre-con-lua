@@ -65,7 +65,8 @@
             "gl": "Susurrar a unha boneca",
             "es": "Susurrar a una muñeca"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_worry_doll"
         },
         {
           "id": "5_6.maio.s1.calm-jar",
@@ -272,7 +273,8 @@
             "gl": "Sentarse fronte a fronte",
             "es": "Sentarse frente a frente"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_peace_table"
         },
         {
           "id": "5_6.maio.s2.fair-solution",
@@ -512,7 +514,8 @@
             "gl": "Sentarse e facer sitio",
             "es": "Sentarse y hacer sitio"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_buddy_bench"
         },
         {
           "id": "5_6.maio.s3.helping-hand",

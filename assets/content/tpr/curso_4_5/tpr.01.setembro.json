@@ -319,7 +319,8 @@
             "gl": "Debuxar un plano no aire",
             "es": "Dibujar un plano en el aire"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_blueprint"
         },
         {
           "id": "4_5.setembro.s2.build-high",
@@ -549,7 +550,8 @@
             "gl": "Sentarse á mesa",
             "es": "Sentarse a la mesa"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_lunch_time"
         },
         {
           "id": "4_5.setembro.s3.wash-thoroughly",
@@ -659,7 +661,8 @@
             "gl": "Lavar as mans e sentarse",
             "es": "Lavarse las manos y sentarse"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_wash_your_hands_before_lunch"
         },
         {
           "id": "4_5.setembro.s3.why-do-we-wash-our-hands",
@@ -723,7 +726,8 @@
             "gl": "Sentarse no recuncho",
             "es": "Sentarse en el rincón"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_calm_down_corner"
         },
         {
           "id": "4_5.setembro.s4.deep-breath",

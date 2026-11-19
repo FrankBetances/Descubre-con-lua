@@ -127,7 +127,8 @@
             "gl": "Asomar a cabeza detrás dun pano",
             "es": "Asomar la cabeza detrás de un pañuelo"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_peep_out"
         },
         {
           "id": "0_2.febreiro.s1.toot",
@@ -204,7 +205,8 @@
             "gl": "Descubrir a cara de súpeto e sorrir",
             "es": "Descubrir la cara de repente y sonreír"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_boo"
         },
         {
           "id": "0_2.febreiro.s1.ha-ha-ha",
@@ -339,7 +341,8 @@
             "gl": "Randear o bebé adiante e atrás",
             "es": "Mecer al bebé adelante y atrás"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_rock_to_and_fro"
         },
         {
           "id": "0_2.febreiro.s2.wobble",
@@ -372,7 +375,8 @@
             "gl": "Xirar amodo co bebé en brazos",
             "es": "Girar despacio con el bebé en brazos"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_whirl"
         },
         {
           "id": "0_2.febreiro.s2.bob",
@@ -516,7 +520,8 @@
             "gl": "Esconderse detrás da cortina",
             "es": "Esconderse detrás de la cortina"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_curtain"
         },
         {
           "id": "0_2.febreiro.s3.tunnel",
@@ -549,7 +554,8 @@
             "gl": "Abrir a caixa e dicir «oh!»",
             "es": "Abrir la caja y decir «¡oh!»"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_jack_in_the_box"
         },
         {
           "id": "0_2.febreiro.s3.hiding-place",
@@ -582,7 +588,8 @@
             "gl": "Erguerse de súpeto detrás do sofá",
             "es": "Aparecer de golpe detrás del sofá"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_pop_up"
         },
         {
           "id": "0_2.febreiro.s3.uncover",
@@ -670,7 +677,8 @@
             "gl": "Tapar a cara e descubrila",
             "es": "Tapar la cara y descubrirla"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_peekaboo"
         },
         {
           "id": "0_2.febreiro.s3.where-s-teddy",

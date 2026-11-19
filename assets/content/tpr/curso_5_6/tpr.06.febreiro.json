@@ -208,7 +208,8 @@
             "gl": "Tapar a cara e descubrila",
             "es": "Tapar la cara y descubrirla"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_guess_who_s_behind_the_mask"
         },
         {
           "id": "5_6.febreiro.s1.bee-rhymes-with-tree",
@@ -636,7 +637,8 @@
             "gl": "Repetir baixiño",
             "es": "Repetir bajito"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_echoing"
         },
         {
           "id": "5_6.febreiro.s3.loudest",
@@ -779,7 +781,8 @@
             "gl": "Facer unha bóla grande",
             "es": "Hacer una bola grande"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_pumpkin_coach"
         },
         {
           "id": "5_6.febreiro.s4.huff-and-puff",

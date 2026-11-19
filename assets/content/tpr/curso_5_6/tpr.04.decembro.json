@@ -21,7 +21,8 @@
             "gl": "Facer unha bóla coas mans",
             "es": "Hacer una bola con las manos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_planet_earth"
         },
         {
           "id": "5_6.decembro.s1.planet",
@@ -121,7 +122,8 @@
             "gl": "Pousar a cabeza e pechar os ollos",
             "es": "Apoyar la cabeza y cerrar los ojos"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_sleep_like_the_moon"
         },
         {
           "id": "5_6.decembro.s1.circle-around",
@@ -154,7 +156,8 @@
             "gl": "Facer unha bóla coas mans",
             "es": "Hacer una bola con las manos"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_round_like_a_ball"
         },
         {
           "id": "5_6.decembro.s1.faraway",
@@ -231,7 +234,8 @@
             "gl": "Pechar os ollos",
             "es": "Cerrar los ojos"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_good_night_moon"
         }
       ]
     },
@@ -444,7 +448,8 @@
             "gl": "Pechar os ollos e sorrir",
             "es": "Cerrar los ojos y sonreír"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_make_a_wish_on_a_star"
         },
         {
           "id": "5_6.decembro.s2.can-you-see-the-plough",

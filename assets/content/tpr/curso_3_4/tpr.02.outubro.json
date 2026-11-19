@@ -92,7 +92,8 @@
           "tprAction": {
             "gl": "Tocar as orellas e escoitar",
             "es": "Tocar las orejas y escuchar"
-          }
+          },
+          "lamina": "pal_ears"
         },
         {
           "id": "3_4.outubro.s1.mouth",
@@ -345,7 +346,8 @@
           "tprAction": {
             "gl": "Cheirar unha flor imaxinaria preto do nariz",
             "es": "Oler una flor imaginaria cerca de la nariz"
-          }
+          },
+          "lamina": "pal_smell"
         },
         {
           "id": "3_4.outubro.s2.taste",
@@ -445,7 +447,8 @@
           "tprAction": {
             "gl": "Tocar a cabeza coas dúas mans ao escoitar a orde",
             "es": "Tocarse la cabeza con las dos manos al oír la orden"
-          }
+          },
+          "lamina": "pal_touch_your_head"
         },
         {
           "id": "3_4.outubro.s2.shake-hands",
@@ -478,7 +481,8 @@
           "tprAction": {
             "gl": "Pechar os ollos e quedar quietos escoitando",
             "es": "Cerrar los ojos y quedarse quietos escuchando"
-          }
+          },
+          "lamina": "pal_close_your_eyes_and_listen"
         }
       ]
     },
@@ -855,7 +859,8 @@
           "tprAction": {
             "gl": "Agacharse e facerse baixiño",
             "es": "Agacharse y hacerse bajito"
-          }
+          },
+          "lamina": "pal_short"
         },
         {
           "id": "3_4.outubro.s4.heavy",

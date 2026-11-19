@@ -222,7 +222,8 @@
             "gl": "Sentarse na herba",
             "es": "Sentarse en la hierba"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_on_the_grass"
         },
         {
           "id": "2_3.abril.s1.up-the-hill-and-down",
@@ -288,7 +289,8 @@
             "gl": "Escoitar coa man na orella",
             "es": "Escuchar con la mano en la oreja"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_bird_song"
         },
         {
           "id": "2_3.abril.s2.birdseed",
@@ -344,7 +346,8 @@
             "gl": "Agacharse coma un paxaro nunha póla",
             "es": "Agacharse como un pájaro en una rama"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_perch"
         },
         {
           "id": "2_3.abril.s2.fly-off",
@@ -432,7 +435,8 @@
             "gl": "Levar a man á orella",
             "es": "Llevar la mano a la oreja"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_listen_to_the_birds"
         },
         {
           "id": "2_3.abril.s2.fly-away-bird",
@@ -507,7 +511,8 @@
             "gl": "Sentarse no recuncho",
             "es": "Sentarse en el rincón"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_quiet_corner"
         },
         {
           "id": "2_3.abril.s3.finger-on-lips",
@@ -518,7 +523,8 @@
             "gl": "Pousar o dedo nos beizos",
             "es": "Posar el dedo en los labios"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_finger_on_lips"
         },
         {
           "id": "2_3.abril.s3.sleeping-animal",
@@ -529,7 +535,8 @@
             "gl": "Pousar a cabeza nas mans",
             "es": "Apoyar la cabeza en las manos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_sleeping_animal"
         },
         {
           "id": "2_3.abril.s3.soft-voice",
@@ -551,7 +558,8 @@
             "gl": "Deitarse na esteira",
             "es": "Tumbarse en la esterilla"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_nap_time"
         },
         {
           "id": "2_3.abril.s3.speak-softly",
@@ -597,7 +605,8 @@
             "gl": "Deitarse sen moverse",
             "es": "Tumbarse sin moverse"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_lie_still"
         },
         {
           "id": "2_3.abril.s3.breathe-in-slowly",
@@ -773,7 +782,8 @@
             "gl": "Pousar a cabeza nunha almofada",
             "es": "Apoyar la cabeza en una almohada"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_feather_bed"
         },
         {
           "id": "2_3.abril.s4.twigs",

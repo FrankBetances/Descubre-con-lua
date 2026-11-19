@@ -689,7 +689,8 @@
           "tprAction": {
             "gl": "Encoller as pernas de golpe e rir",
             "es": "Encoger las piernas de golpe y reír"
-          }
+          },
+          "lamina": "pal_watch_out_crocodile"
         },
         {
           "id": "3_4.febreiro.s3.stomp-like-a-bear",
@@ -901,7 +902,8 @@
           "tprAction": {
             "gl": "Agocharse detrás das mans e quedar quietos",
             "es": "Esconderse detrás de las manos y quedarse quietos"
-          }
+          },
+          "lamina": "pal_hidden"
         },
         {
           "id": "3_4.febreiro.s4.who-am-i",

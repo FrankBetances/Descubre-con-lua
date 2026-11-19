@@ -149,7 +149,8 @@
             "gl": "Mover as pernas do bebé coma en bici",
             "es": "Mover las piernas del bebé como en bici"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_kick_legs"
         },
         {
           "id": "0_2.outubro.s1.rosy",
@@ -491,7 +492,8 @@
             "gl": "Sinalar o bebé no espello",
             "es": "Señalar al bebé en el espejo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_reflection"
         },
         {
           "id": "0_2.outubro.s3.hairbrush",
@@ -524,7 +526,8 @@
             "gl": "Tapar a cara cunha muselina e descubrila",
             "es": "Tapar la cara con una muselina y descubrirla"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_muslin_cloth"
         },
         {
           "id": "0_2.outubro.s3.hands-and-feet",
@@ -557,7 +560,8 @@
             "gl": "Poñer o bebé boca abaixo na alfombra",
             "es": "Poner al bebé boca abajo en la alfombra"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_tummy_time"
         },
         {
           "id": "0_2.outubro.s3.make-faces",
@@ -614,7 +618,8 @@
             "gl": "Animar o bebé a erguer a cabeza boca abaixo",
             "es": "Animar al bebé a levantar la cabeza boca abajo"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_lift_head"
         },
         {
           "id": "0_2.outubro.s3.silly-face",
@@ -658,7 +663,8 @@
             "gl": "Sentar o bebé dereito",
             "es": "Sentar al bebé derecho"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_upright"
         },
         {
           "id": "0_2.outubro.s3.who-s-in-the-mirror",
@@ -691,7 +697,8 @@
             "gl": "Tapar a cara e descubrila",
             "es": "Tapar la cara y descubrirla"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_peekaboo_i_see_you"
         },
         {
           "id": "0_2.outubro.s3.behind-my-hands",
@@ -702,7 +709,8 @@
             "gl": "Esconderse detrás das mans",
             "es": "Esconderse detrás de las manos"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_behind_my_hands"
         }
       ]
     },
@@ -790,7 +798,8 @@
             "gl": "Masaxear as enxivas cun mordedor",
             "es": "Masajear las encías con un mordedor"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_gums"
         },
         {
           "id": "0_2.outubro.s4.grasp",

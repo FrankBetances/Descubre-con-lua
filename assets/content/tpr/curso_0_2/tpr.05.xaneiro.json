@@ -139,7 +139,8 @@
             "gl": "Facer «miau» baixiño",
             "es": "Hacer «miau» bajito"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_mew"
         },
         {
           "id": "0_2.xaneiro.s1.woof",
@@ -506,7 +507,8 @@
             "gl": "Arrular e mover a cabeza",
             "es": "Arrullar y mover la cabeza"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_pigeon"
         },
         {
           "id": "0_2.xaneiro.s3.sparrow",
@@ -730,7 +732,8 @@
             "gl": "Cantar unha nana baixiño",
             "es": "Cantar una nana bajito"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_lullaby"
         },
         {
           "id": "0_2.xaneiro.s4.hush",
@@ -741,7 +744,8 @@
             "gl": "Poñer o dedo nos beizos",
             "es": "Poner el dedo en los labios"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_hush"
         },
         {
           "id": "0_2.xaneiro.s4.heartbeat",
@@ -797,7 +801,8 @@
             "gl": "Facer «uuu» baixiño",
             "es": "Hacer «uuu» bajito"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_owl_hoot"
         },
         {
           "id": "0_2.xaneiro.s4.shush",
@@ -832,7 +837,8 @@
             "gl": "Levar a man á orella",
             "es": "Llevar la mano a la oreja"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_listen_close"
         },
         {
           "id": "0_2.xaneiro.s4.breathe-slowly",
@@ -854,7 +860,8 @@
             "gl": "Pechar os ollos e inclinar a cabeza",
             "es": "Cerrar los ojos e inclinar la cabeza"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_drift_off"
         },
         {
           "id": "0_2.xaneiro.s4.hushed",
@@ -920,7 +927,8 @@
             "gl": "Randear e cantar baixiño",
             "es": "Mecer y cantar bajito"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_hush_little_baby"
         },
         {
           "id": "0_2.xaneiro.s4.soft-and-slow",
@@ -942,7 +950,8 @@
             "gl": "Pousar a cabeza nas mans xuntas",
             "es": "Apoyar la cabeza en las manos juntas"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_sound_asleep"
         }
       ]
     }

@@ -289,7 +289,8 @@
           "tprAction": {
             "gl": "Poñerse en liña, unha criatura detrás doutra",
             "es": "Ponerse en línea, una criatura detrás de otra"
-          }
+          },
+          "lamina": "pal_line"
         },
         {
           "id": "3_4.marzo.s2.hoop",
@@ -426,7 +427,8 @@
           "tprAction": {
             "gl": "Tombar no chan moi estirados",
             "es": "Tumbarse en el suelo muy estirados"
-          }
+          },
+          "lamina": "pal_flat"
         },
         {
           "id": "3_4.marzo.s2.roll-the-circle",
@@ -664,7 +666,8 @@
           "tprAction": {
             "gl": "Asentir coa cabeza mentres se mastiga",
             "es": "Asentir con la cabeza mientras se mastica"
-          }
+          },
+          "lamina": "pal_tasty"
         },
         {
           "id": "3_4.marzo.s3.i-like-apples",
@@ -798,7 +801,8 @@
           "tprAction": {
             "gl": "Axitar un axóuxere imaxinario xunto á orella",
             "es": "Agitar un sonajero imaginario junto a la oreja"
-          }
+          },
+          "lamina": "pal_rattle"
         },
         {
           "id": "3_4.marzo.s4.shake",

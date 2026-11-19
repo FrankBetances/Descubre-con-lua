@@ -33,7 +33,8 @@
             "gl": "Sentarse e mirar ao escenario",
             "es": "Sentarse y mirar al escenario"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_audience"
         },
         {
           "id": "4_5.febreiro.s1.script",
@@ -143,7 +144,8 @@
             "gl": "Agocharse sen facer ruído",
             "es": "Esconderse sin hacer ruido"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_hide_quietly"
         },
         {
           "id": "4_5.febreiro.s1.dramatic",
@@ -222,7 +224,8 @@
             "gl": "Bailar e esconderse",
             "es": "Bailar y esconderse"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_when_the_music_stops_hide"
         },
         {
           "id": "4_5.febreiro.s1.if-you-are-the-king-walk-slowly",
