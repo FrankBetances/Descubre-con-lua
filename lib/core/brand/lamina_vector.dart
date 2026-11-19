@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'dart:typed_data';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show rootBundle;
@@ -88,6 +89,7 @@ class FormaLamina {
   final Color? relleno;
   final Color? contorno;
   final double grosor;
+  final PathFillType regla;
 
   const FormaLamina({
     required this.tipo,
@@ -95,6 +97,7 @@ class FormaLamina {
     this.relleno,
     this.contorno,
     this.grosor = 0,
+    this.regla = PathFillType.nonZero,
   });
 
   static Color? _color(Object? valor) {
@@ -112,6 +115,12 @@ class FormaLamina {
     return n == null ? null : Color(n);
   }
 
+  static PathFillType _reglaDe(Map<String, dynamic> m) {
+    final raw =
+        (m['fr'] ?? m['regla'] ?? m['fillRule'])?.toString().toLowerCase();
+    return raw == 'evenodd' ? PathFillType.evenOdd : PathFillType.nonZero;
+  }
+
   factory FormaLamina.desde(Map<String, dynamic> m) => FormaLamina(
         tipo: m['t']?.toString() ?? '',
         datos: m,
@@ -123,6 +132,7 @@ class FormaLamina {
         // silencio. Resultado: la barra de la toalla no se pintaba y nadie
         // podía saber por qué mirando el fichero.
         grosor: (m['sw'] as num?)?.toDouble() ?? 0,
+        regla: _reglaDe(m),
       );
 
   Path? aPath() {
@@ -145,7 +155,7 @@ class FormaLamina {
       case 'poli':
         final puntos = (datos['p'] as List?) ?? const [];
         if (puntos.length < 2) return null;
-        final path = Path();
+        final path = Path()..fillType = regla;
         for (var i = 0; i < puntos.length; i++) {
           final par = List<num>.from(puntos[i] as List);
           final p = Offset(par[0].toDouble(), par[1].toDouble());
@@ -153,7 +163,7 @@ class FormaLamina {
         }
         return path..close();
       case 'ruta':
-        return _parsearRuta(datos['d']?.toString() ?? '');
+        return _parsearRuta(datos['d']?.toString() ?? '', regla: regla);
     }
     return null;
   }
@@ -164,32 +174,62 @@ class FormaLamina {
 /// coordenadas absolutas: las relativas ahorran teclas y cuestan errores.
 final RegExp _token = RegExp(r'[MLQCZmlqcz]|-?\d*\.?\d+');
 
-Path? _parsearRuta(String d) {
+Path? _parsearRuta(String d, {PathFillType regla = PathFillType.nonZero}) {
   if (d.trim().isEmpty) return null;
-  final path = Path()..fillType = PathFillType.nonZero;
+  final path = Path()..fillType = regla;
   final piezas = _token.allMatches(d).map((m) => m.group(0)!).toList();
   var i = 0;
+  String? ultima;
   double num_() => double.parse(piezas[i++]);
+  bool hay(int n) {
+    if (i + n > piezas.length) return false;
+    for (var k = 0; k < n; k++) {
+      if (RegExp(r'^[A-Za-z]$').hasMatch(piezas[i + k])) return false;
+    }
+    return true;
+  }
 
   while (i < piezas.length) {
-    final orden = piezas[i];
-    if (RegExp(r'^[A-Za-z]$').hasMatch(orden)) {
+    final pieza = piezas[i];
+    if (RegExp(r'^[A-Za-z]$').hasMatch(pieza)) {
       i++;
-      switch (orden.toUpperCase()) {
-        case 'M':
-          path.moveTo(num_(), num_());
-        case 'L':
-          path.lineTo(num_(), num_());
-        case 'Q':
-          path.quadraticBezierTo(num_(), num_(), num_(), num_());
-        case 'C':
-          path.cubicTo(num_(), num_(), num_(), num_(), num_(), num_());
-        case 'Z':
-          path.close();
-      }
-    } else {
-      // Números sueltos tras una orden: se repite la última, como en SVG.
+      ultima = pieza.toUpperCase();
+    } else if (ultima == null) {
       i++;
+      continue;
+    } else if (ultima == 'M') {
+      // En SVG, tras M las coordenadas sueltas se interpretan como L implícitas.
+      ultima = 'L';
+    }
+
+    switch (ultima) {
+      case 'M':
+        if (!hay(2)) {
+          i = piezas.length;
+          break;
+        }
+        path.moveTo(num_(), num_());
+      case 'L':
+        if (!hay(2)) {
+          i = piezas.length;
+          break;
+        }
+        path.lineTo(num_(), num_());
+      case 'Q':
+        if (!hay(4)) {
+          i = piezas.length;
+          break;
+        }
+        path.quadraticBezierTo(num_(), num_(), num_(), num_());
+      case 'C':
+        if (!hay(6)) {
+          i = piezas.length;
+          break;
+        }
+        path.cubicTo(num_(), num_(), num_(), num_(), num_(), num_());
+      case 'Z':
+        path.close();
+        ultima = null;
     }
   }
   return path;
@@ -245,7 +285,8 @@ class LaminasVectoriales {
   static bool seIntento(String clave) => _cache.containsKey(clave);
 
   /// Devuelve la lámina, o `null` si no hay fichero vectorial para esa clave.
-  /// No es un error: las claves que aún no están redibujadas caen al píxel art.
+  /// No es un error: las claves que aún no están redibujadas caen al píxel art
+  /// o a una lámina raster del banco (.webp/.jpg).
   static Future<LaminaVectorial?> cargar(String clave) async {
     if (_cache.containsKey(clave)) return _cache[clave];
     try {
@@ -257,6 +298,29 @@ class LaminasVectoriales {
       _cache[clave] = null;
       return null;
     }
+  }
+}
+
+/// Carga y cachea láminas raster (.webp/.jpg/.png) de dnizfor y pb-imagebank.
+class LaminasRaster {
+  static const extensiones = ['webp', 'jpg', 'jpeg', 'png'];
+  static final Map<String, Uint8List?> _cache = {};
+
+  static Uint8List? enCache(String clave) => _cache[clave];
+
+  static Future<Uint8List?> cargar(String clave) async {
+    if (_cache.containsKey(clave)) return _cache[clave];
+    for (final ext in extensiones) {
+      final ruta = 'assets/brand/laminas/$clave.$ext';
+      try {
+        final data = await rootBundle.load(ruta);
+        final bytes = data.buffer.asUint8List();
+        _cache[clave] = bytes;
+        return bytes;
+      } catch (_) {}
+    }
+    _cache[clave] = null;
+    return null;
   }
 }
 
@@ -287,6 +351,7 @@ class LaminaEscena extends StatefulWidget {
 
 class _LaminaEscenaState extends State<LaminaEscena> {
   LaminaVectorial? _lamina;
+  Uint8List? _raster;
   bool _buscada = false;
 
   @override
@@ -303,9 +368,11 @@ class _LaminaEscenaState extends State<LaminaEscena> {
 
   Future<void> _cargar() async {
     final l = await LaminasVectoriales.cargar(widget.clave);
+    final r = l == null ? await LaminasRaster.cargar(widget.clave) : null;
     if (!mounted) return;
     setState(() {
       _lamina = l;
+      _raster = r;
       _buscada = true;
     });
   }
@@ -313,19 +380,32 @@ class _LaminaEscenaState extends State<LaminaEscena> {
   @override
   Widget build(BuildContext context) {
     final lamina = _lamina;
-    if (lamina == null) {
-      return _buscada
-          ? (widget.mentres ?? const SizedBox.shrink())
-          : const SizedBox.shrink();
+    if (lamina != null) {
+      return SizedBox(
+        width: widget.ancho,
+        height: widget.ancho / lamina.proporcion,
+        child: CustomPaint(
+          painter: LaminaVectorPainter(lamina),
+          isComplex: true,
+          willChange: false,
+        ),
+      );
     }
-    return SizedBox(
-      width: widget.ancho,
-      height: widget.ancho / lamina.proporcion,
-      child: CustomPaint(
-        painter: LaminaVectorPainter(lamina),
-        isComplex: true,
-        willChange: false,
-      ),
-    );
+    final raster = _raster;
+    if (raster != null) {
+      return SizedBox(
+        width: widget.ancho,
+        height: widget.ancho,
+        child: Image.memory(
+          raster,
+          width: widget.ancho,
+          height: widget.ancho,
+          fit: BoxFit.contain,
+        ),
+      );
+    }
+    return _buscada
+        ? (widget.mentres ?? const SizedBox.shrink())
+        : const SizedBox.shrink();
   }
 }

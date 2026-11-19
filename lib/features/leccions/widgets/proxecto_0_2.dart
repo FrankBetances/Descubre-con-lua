@@ -20,8 +20,14 @@ class PalabraProxecto {
   final String en;
   final LocalizedString significado;
   final LocalizedString xesto;
+
+  /// O-20261111-2: la lámina que dibuja ESTA palabra y su gesto.
+  final String? lamina;
   const PalabraProxecto(
-      {required this.en, required this.significado, required this.xesto});
+      {required this.en,
+      required this.significado,
+      required this.xesto,
+      this.lamina});
 }
 
 class Proxecto02 {
@@ -31,6 +37,10 @@ class Proxecto02 {
   final LocalizedString cancion;
   final String rimaEn;
   final LocalizedString rima;
+
+  /// O-20261111-2: las láminas de la canción y de la rima.
+  final String? cancionLamina;
+  final String? rimaLamina;
   final List<PalabraProxecto> palabras;
   final List<({int semana, LocalizedString fase, List<String> palabras})>
       semanas;
@@ -45,6 +55,8 @@ class Proxecto02 {
     required this.cancion,
     required this.rimaEn,
     required this.rima,
+    this.cancionLamina,
+    this.rimaLamina,
     required this.palabras,
     required this.semanas,
     required this.comoFalar,
@@ -103,12 +115,15 @@ class Proxectos02 {
           cancion: _t(p['cancion']),
           rimaEn: (p['rima'] as Map)['en'] as String,
           rima: _t(p['rima']),
+          cancionLamina: (p['cancion'] as Map)['lamina'] as String?,
+          rimaLamina: (p['rima'] as Map)['lamina'] as String?,
           palabras: [
             for (final w in p['palabras'] as List)
               PalabraProxecto(
                 en: w['en'] as String,
                 significado: _t(w),
                 xesto: _t(w['xesto']),
+                lamina: w['lamina'] as String?,
               ),
           ],
           semanas: [

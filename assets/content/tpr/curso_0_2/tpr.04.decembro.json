@@ -21,7 +21,8 @@
             "gl": "Poñer as luvas ao bebé",
             "es": "Poner las manoplas al bebé"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_mittens"
         },
         {
           "id": "0_2.decembro.s1.snowsuit",
@@ -32,7 +33,8 @@
             "gl": "Meter as pernas no buzo",
             "es": "Meter las piernas en el buzo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_snowsuit"
         },
         {
           "id": "0_2.decembro.s1.hood",
@@ -43,7 +45,8 @@
             "gl": "Poñer a carapucha e sorrir",
             "es": "Poner la capucha y sonreír"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_hood"
         },
         {
           "id": "0_2.decembro.s1.hot-water-bottle",
@@ -65,7 +68,8 @@
             "gl": "Sinalar a xeada na fiestra",
             "es": "Señalar la escarcha en la ventana"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_frost"
         },
         {
           "id": "0_2.decembro.s1.fireplace",
@@ -76,7 +80,8 @@
             "gl": "Sinalar a lareira de lonxe",
             "es": "Señalar la chimenea de lejos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_fireplace"
         },
         {
           "id": "0_2.decembro.s1.breath",
@@ -87,7 +92,8 @@
             "gl": "Botar o alento no cristal",
             "es": "Echar el aliento en el cristal"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_breath"
         },
         {
           "id": "0_2.decembro.s1.wrap-up",
@@ -197,7 +203,8 @@
             "gl": "Tremer e fregar os brazos",
             "es": "Temblar y frotar los brazos"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_brr_so_cold"
         },
         {
           "id": "0_2.decembro.s1.let-s-get-cosy",
@@ -250,7 +257,8 @@
             "gl": "Dar unha aperta grande",
             "es": "Dar un abrazo grande"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "aperta"
         },
         {
           "id": "0_2.decembro.s2.quilt",
@@ -261,7 +269,8 @@
             "gl": "Tapar o bebé co edredón",
             "es": "Tapar al bebé con el edredón"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_quilt"
         },
         {
           "id": "0_2.decembro.s2.cushion",
@@ -272,7 +281,8 @@
             "gl": "Apoiar a cabeza nun coxín",
             "es": "Apoyar la cabeza en un cojín"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_cushion"
         },
         {
           "id": "0_2.decembro.s2.slippers",
@@ -283,7 +293,8 @@
             "gl": "Poñer as zapatillas ao bebé",
             "es": "Poner las zapatillas al bebé"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_slippers"
         },
         {
           "id": "0_2.decembro.s2.cardigan",
@@ -294,7 +305,8 @@
             "gl": "Abotoar a chaqueta de punto",
             "es": "Abotonar la rebeca"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_cardigan"
         },
         {
           "id": "0_2.decembro.s2.warm-milk",
@@ -305,7 +317,8 @@
             "gl": "Achegar o biberón morno",
             "es": "Acercar el biberón templado"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "vocab_62"
         },
         {
           "id": "0_2.decembro.s2.heater",
@@ -479,7 +492,8 @@
             "gl": "Sinalar as luciñas que brillan",
             "es": "Señalar las lucecitas que brillan"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_fairy_lights"
         },
         {
           "id": "0_2.decembro.s3.torch",
@@ -490,7 +504,8 @@
             "gl": "Acender e apagar a lanterna",
             "es": "Encender y apagar la linterna"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_torch"
         },
         {
           "id": "0_2.decembro.s3.glitter",
@@ -708,7 +723,8 @@
             "gl": "Dar un paquete pequeno",
             "es": "Dar un paquete pequeño"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_present"
         },
         {
           "id": "0_2.decembro.s4.wrapping-paper",
@@ -719,7 +735,8 @@
             "gl": "Engurrar papel de agasallo",
             "es": "Arrugar papel de regalo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_wrapping_paper"
         },
         {
           "id": "0_2.decembro.s4.stocking",
@@ -730,7 +747,8 @@
             "gl": "Meter a man no calcetín",
             "es": "Meter la mano en el calcetín"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_stocking"
         },
         {
           "id": "0_2.decembro.s4.reindeer",
@@ -763,7 +781,8 @@
             "gl": "Axitar un cascabel",
             "es": "Agitar un cascabel"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "cascabel"
         },
         {
           "id": "0_2.decembro.s4.family-table",

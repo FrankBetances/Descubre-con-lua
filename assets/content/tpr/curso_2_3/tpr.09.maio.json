@@ -98,7 +98,8 @@
             "gl": "Premer unha vez o dosificador",
             "es": "Apretar una vez el dosificador"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_pump_the_soap"
         },
         {
           "id": "2_3.maio.s1.rub-palms",
@@ -131,7 +132,8 @@
             "gl": "Sacudir as mans tres veces",
             "es": "Sacudir las manos tres veces"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_shake_dry"
         },
         {
           "id": "2_3.maio.s1.throw-away",
@@ -208,7 +210,8 @@
             "gl": "Facer os tres xestos",
             "es": "Hacer los tres gestos"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_soap_rub_rinse"
         },
         {
           "id": "2_3.maio.s1.paper-in-the-bin",
@@ -327,7 +330,8 @@
             "gl": "Mover o cepillo arriba e abaixo",
             "es": "Mover el cepillo arriba y abajo"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_brush_up_and_down"
         },
         {
           "id": "2_3.maio.s2.spit-out",
@@ -556,7 +560,8 @@
             "gl": "Verter amodo dun vaso a outro",
             "es": "Verter despacio de un vaso a otro"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_pour_carefully"
         },
         {
           "id": "2_3.maio.s3.squirt",
@@ -567,7 +572,8 @@
             "gl": "Premer e botar un chorro",
             "es": "Apretar y echar un chorro"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_squirt"
         },
         {
           "id": "2_3.maio.s3.strain",
@@ -785,7 +791,8 @@
             "gl": "Colgar a roupa na corda",
             "es": "Colgar la ropa en la cuerda"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_hang_out"
         },
         {
           "id": "2_3.maio.s4.peg-up",
@@ -796,7 +803,8 @@
             "gl": "Pór unha pinza na roupa",
             "es": "Poner una pinza en la ropa"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_peg_up"
         },
         {
           "id": "2_3.maio.s4.soak",
@@ -807,7 +815,8 @@
             "gl": "Meter a roupa na auga",
             "es": "Meter la ropa en el agua"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_soak"
         },
         {
           "id": "2_3.maio.s4.take-down",

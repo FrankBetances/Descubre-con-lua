@@ -43,7 +43,8 @@
             "gl": "Dar o billete ao condutor",
             "es": "Dar el billete al conductor"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_pal_ticket"
         },
         {
           "id": "2_3.xaneiro.s1.handle",
@@ -98,7 +99,8 @@
             "gl": "Dar un paso cara arriba",
             "es": "Dar un paso hacia arriba"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_get_on"
         },
         {
           "id": "2_3.xaneiro.s1.get-off",
@@ -327,7 +329,8 @@
             "gl": "Mover os brazos cada vez máis rápido",
             "es": "Mover los brazos cada vez más rápido"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_speed_up"
         },
         {
           "id": "2_3.xaneiro.s2.slow-down",
@@ -556,7 +559,8 @@
             "gl": "Mirar aos lados e camiñar",
             "es": "Mirar a los lados y caminar"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_cross_the_road"
         },
         {
           "id": "2_3.xaneiro.s3.hold-my-hand",
@@ -567,7 +571,8 @@
             "gl": "Coller a man da persoa adulta",
             "es": "Coger la mano de la persona adulta"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_hold_my_hand"
         },
         {
           "id": "2_3.xaneiro.s3.post-a-letter",
@@ -785,7 +790,8 @@
             "gl": "Facer un nó no aire",
             "es": "Hacer un nudo en el aire"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_tie_up"
         },
         {
           "id": "2_3.xaneiro.s4.lift-up",
@@ -796,7 +802,8 @@
             "gl": "Levantar unha caixa coma a grúa",
             "es": "Levantar una caja como la grúa"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_lift_up"
         },
         {
           "id": "2_3.xaneiro.s4.wave-to-the-boat",
@@ -807,7 +814,8 @@
             "gl": "Acenar cara ao mar",
             "es": "Saludar hacia el mar"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_wave_to_the_boat"
         },
         {
           "id": "2_3.xaneiro.s4.toot-the-horn",

@@ -98,7 +98,8 @@
             "gl": "Camiñar amodo de man",
             "es": "Caminar despacio de la mano"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_stroll"
         },
         {
           "id": "2_3.novembro.s1.feed-the-ducks",
@@ -120,7 +121,8 @@
             "gl": "Chutar unha folla seca",
             "es": "Chutar una hoja seca"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_kick_a_leaf"
         },
         {
           "id": "2_3.novembro.s1.hide-behind",
@@ -327,7 +329,8 @@
             "gl": "Soprar e deixar voar unha folla",
             "es": "Soplar y dejar volar una hoja"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_blow_away"
         },
         {
           "id": "2_3.novembro.s2.flap-arms",
@@ -437,7 +440,8 @@
             "gl": "Soprar e mover os brazos",
             "es": "Soplar y mover los brazos"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_the_wind_is_blowing"
         },
         {
           "id": "2_3.novembro.s2.up-and-away",
@@ -556,7 +560,8 @@
             "gl": "Pisar forte dando unha volta",
             "es": "Pisar fuerte dando una vuelta"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_stomp_around"
         },
         {
           "id": "2_3.novembro.s3.tread",
@@ -567,7 +572,8 @@
             "gl": "Pisar amodo unha folla",
             "es": "Pisar despacio una hoja"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_tread"
         },
         {
           "id": "2_3.novembro.s3.stamp-feet",
@@ -611,7 +617,8 @@
             "gl": "Esmagar follas na man",
             "es": "Aplastar hojas en la mano"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_crunchy_leaves"
         },
         {
           "id": "2_3.novembro.s3.heavy-steps",
@@ -785,7 +792,8 @@
             "gl": "Premer a castaña para abrila",
             "es": "Apretar la castaña para abrirla"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_crack_open"
         },
         {
           "id": "2_3.novembro.s4.spread-out",
@@ -796,7 +804,8 @@
             "gl": "Estender a manta con todos",
             "es": "Extender la manta con todos"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_spread_out"
         },
         {
           "id": "2_3.novembro.s4.munch",
@@ -807,7 +816,8 @@
             "gl": "Mastigar contentos",
             "es": "Masticar contentos"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_munch"
         },
         {
           "id": "2_3.novembro.s4.blow-to-cool",

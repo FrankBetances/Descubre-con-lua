@@ -21,7 +21,8 @@
           "tprAction": {
             "gl": "Tocar a cabeza coas dúas mans",
             "es": "Tocar la cabeza con las dos manos"
-          }
+          },
+          "lamina": "cabeza"
         },
         {
           "id": "3_4.outubro.s1.shoulders",
@@ -43,7 +44,8 @@
           "tprAction": {
             "gl": "Tocar os xeonllos",
             "es": "Tocar las rodillas"
-          }
+          },
+          "lamina": "pal_knees"
         },
         {
           "id": "3_4.outubro.s1.toes",
@@ -54,7 +56,8 @@
           "tprAction": {
             "gl": "Tocar os dedos dos pés",
             "es": "Tocar los dedos de los pies"
-          }
+          },
+          "lamina": "pes"
         },
         {
           "id": "3_4.outubro.s1.freeze",
@@ -65,7 +68,8 @@
           "tprAction": {
             "gl": "Parar en seco e quedar inmóbiles coma estatuas",
             "es": "Parar en seco y quedarse inmóviles como estatuas"
-          }
+          },
+          "lamina": "pal_freeze"
         },
         {
           "id": "3_4.outubro.s1.eyes",
@@ -120,7 +124,8 @@
           "tprAction": {
             "gl": "Saltar cos dous pés á vez",
             "es": "Saltar con los dos pies a la vez"
-          }
+          },
+          "lamina": "pal_jump"
         },
         {
           "id": "3_4.outubro.s1.hands",
@@ -153,7 +158,8 @@
           "tprAction": {
             "gl": "Camiñar amodo en círculo",
             "es": "Caminar despacio en círculo"
-          }
+          },
+          "lamina": "pal_walk"
         },
         {
           "id": "3_4.outubro.s1.stop",
@@ -164,7 +170,8 @@
           "tprAction": {
             "gl": "Parar de golpe coas mans diante",
             "es": "Parar de golpe con las manos delante"
-          }
+          },
+          "lamina": "pal_stop"
         },
         {
           "id": "3_4.outubro.s1.turn",
@@ -186,7 +193,8 @@
           "tprAction": {
             "gl": "Abrir os brazos facéndose xigantes",
             "es": "Abrir los brazos haciéndose gigantes"
-          }
+          },
+          "lamina": "pal_big"
         },
         {
           "id": "3_4.outubro.s1.small",
@@ -197,7 +205,8 @@
           "tprAction": {
             "gl": "Encollerse coma unha formiguiña",
             "es": "Encogerse como una hormiguita"
-          }
+          },
+          "lamina": "pal_small"
         },
         {
           "id": "3_4.outubro.s1.up",
@@ -208,7 +217,8 @@
           "tprAction": {
             "gl": "Levantar as mans cara ao ceo",
             "es": "Alzar las manos hacia el cielo"
-          }
+          },
+          "lamina": "pal_up"
         },
         {
           "id": "3_4.outubro.s1.down",
@@ -219,7 +229,8 @@
           "tprAction": {
             "gl": "Agacharse ata tocar o chan",
             "es": "Agacharse hasta tocar el suelo"
-          }
+          },
+          "lamina": "pal_down"
         },
         {
           "id": "3_4.outubro.s1.clap",
@@ -230,7 +241,8 @@
           "tprAction": {
             "gl": "Bater as palmas ao pulso da asemblea",
             "es": "Dar palmadas al pulso de la asamblea"
-          }
+          },
+          "lamina": "pal_clap"
         }
       ]
     },
@@ -250,7 +262,8 @@
           "tprAction": {
             "gl": "Tocar a barriga cun dedo e rir",
             "es": "Tocarse la barriga con un dedo y reír"
-          }
+          },
+          "lamina": "barriga"
         },
         {
           "id": "3_4.outubro.s2.cheeks",
@@ -316,7 +329,8 @@
           "tprAction": {
             "gl": "Facer prismáticos coas mans e mirar lonxe",
             "es": "Hacer prismáticos con las manos y mirar a lo lejos"
-          }
+          },
+          "lamina": "pal_see"
         },
         {
           "id": "3_4.outubro.s2.smell",
@@ -371,7 +385,8 @@
           "tprAction": {
             "gl": "Abrir as mans de golpe coma un raio de luz",
             "es": "Abrir las manos de golpe como un rayo de luz"
-          }
+          },
+          "lamina": "pal_bright"
         },
         {
           "id": "3_4.outubro.s2.dark",
@@ -545,7 +560,8 @@
           "tprAction": {
             "gl": "Estirar todo o corpo cara ao teito",
             "es": "Estirar todo el cuerpo hacia el techo"
-          }
+          },
+          "lamina": "pal_stretch"
         },
         {
           "id": "3_4.outubro.s3.bend",
@@ -611,7 +627,8 @@
           "tprAction": {
             "gl": "Mover as mans moi amodo",
             "es": "Mover las manos muy despacio"
-          }
+          },
+          "lamina": "pal_slow"
         },
         {
           "id": "3_4.outubro.s3.strong",
@@ -655,7 +672,8 @@
           "tprAction": {
             "gl": "Subir os dous brazos de golpe",
             "es": "Subir los dos brazos de golpe"
-          }
+          },
+          "lamina": "pal_arms_up"
         },
         {
           "id": "3_4.outubro.s3.wiggle-your-fingers",
@@ -774,7 +792,8 @@
           "tprAction": {
             "gl": "Bailar libremente no sitio",
             "es": "Bailar libremente en el sitio"
-          }
+          },
+          "lamina": "pal_dance"
         },
         {
           "id": "3_4.outubro.s4.hop",
@@ -785,7 +804,8 @@
           "tprAction": {
             "gl": "Saltar a pé coxo agarrados da man",
             "es": "Saltar a la pata coja cogidos de la mano"
-          }
+          },
+          "lamina": "pal_hop"
         },
         {
           "id": "3_4.outubro.s4.march",
@@ -807,7 +827,8 @@
           "tprAction": {
             "gl": "Camiñar de puntas moi calados",
             "es": "Caminar de puntillas muy callados"
-          }
+          },
+          "lamina": "pal_tiptoe"
         },
         {
           "id": "3_4.outubro.s4.tall",
@@ -818,7 +839,8 @@
           "tprAction": {
             "gl": "Estirarse todo o posible cos brazos arriba",
             "es": "Estirarse todo lo posible con los brazos arriba"
-          }
+          },
+          "lamina": "pal_tall"
         },
         {
           "id": "3_4.outubro.s4.short",
@@ -884,7 +906,8 @@
           "tprAction": {
             "gl": "Dar unha volta enteira e mirar ao grupo",
             "es": "Dar una vuelta entera y mirar al grupo"
-          }
+          },
+          "lamina": "pal_turn_around"
         },
         {
           "id": "3_4.outubro.s4.clap-your-hands",
@@ -895,7 +918,8 @@
           "tprAction": {
             "gl": "Bater as palmas tres veces ao escoitar a orde",
             "es": "Dar tres palmadas al oír la orden"
-          }
+          },
+          "lamina": "pal_clap_your_hands"
         },
         {
           "id": "3_4.outubro.s4.round-and-round",

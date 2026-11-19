@@ -21,7 +21,8 @@
             "gl": "Camiñar mirando atrás",
             "es": "Caminar mirando atrás"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_memory_lane"
         },
         {
           "id": "5_6.xuno.s1.scrapbook",
@@ -250,7 +251,8 @@
             "gl": "Sinalar un edificio grande",
             "es": "Señalar un edificio grande"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_primary_school"
         },
         {
           "id": "5_6.xuno.s2.desk",
@@ -708,7 +710,8 @@
             "gl": "Abanarse contentos",
             "es": "Abanicarse contentos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_summer_holidays"
         },
         {
           "id": "5_6.xuno.s4.travel-map",
@@ -719,7 +722,8 @@
             "gl": "Sinalar un sitio no mapa",
             "es": "Señalar un sitio en el mapa"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_travel_map"
         },
         {
           "id": "5_6.xuno.s4.suncream-bottle",
@@ -730,7 +734,8 @@
             "gl": "Estender crema",
             "es": "Extender crema"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_suncream_bottle"
         },
         {
           "id": "5_6.xuno.s4.summer-reading",

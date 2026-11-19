@@ -11,6 +11,7 @@ import 'package:descubre_con_lua/core/theme/app_theme.dart';
 import 'package:descubre_con_lua/data/models/calendario_model.dart';
 import 'package:descubre_con_lua/features/cuentos/views/cuentos_list_screen.dart';
 import 'package:descubre_con_lua/features/familias/portal_familias_screen.dart';
+import 'package:descubre_con_lua/features/familias/views/hoxe_familias_screen.dart';
 import 'package:descubre_con_lua/features/familias/views/xogo_de_hoxe_screen.dart';
 
 import '../helpers/pasarela.dart';
@@ -146,6 +147,44 @@ void main() {
     });
 
     testWidgets(
+        'os nodos dos días responden sempre, sen tocar o banner (${lang.code})',
+        (tester) async {
+      // O-20261111-2 (B): mércores 11/11/2026. O luns e o mércores abren a
+      // súa lección; o xoves aínda non chegou e avisa, nunca cala.
+      await abrirPortal(tester, lang, agora: DateTime(2026, 11, 11, 18));
+      expect(find.byType(HoxeFamiliasScreen), findsOneWidget);
+      for (final i in [0, 2]) {
+        final nodo = find.byKey(ValueKey('learn_nodo_$i'));
+        expect(tester.getSize(nodo).height, greaterThanOrEqualTo(48));
+        expect(tester.getSize(nodo).width, greaterThanOrEqualTo(48));
+        await Scrollable.ensureVisible(tester.element(nodo), alignment: 0.5);
+        await Pasarela.asentar(tester);
+        await tester.tap(nodo);
+        await Pasarela.asentar(tester);
+        expect(find.byKey(const Key('leccion_progreso')), findsOneWidget,
+            reason: 'nodo $i');
+        Navigator.of(tester.element(find.byKey(const Key('leccion_progreso'))))
+            .pop();
+        await Pasarela.asentar(tester);
+        expect(find.byKey(const Key('leccion_progreso')), findsNothing);
+      }
+      final xoves = find.byKey(const ValueKey('learn_nodo_3'));
+      expect(tester.getSize(xoves).height, greaterThanOrEqualTo(48));
+      await Scrollable.ensureVisible(tester.element(xoves), alignment: 0.5);
+      await Pasarela.asentar(tester);
+      // No texto da etiqueta, non só no círculo.
+      await tester
+          .tapAt(tester.getRect(xoves).bottomCenter - const Offset(0, 6));
+      await tester.pump();
+      await tester.pump(const Duration(milliseconds: 400));
+      expect(find.byKey(const Key('leccion_progreso')), findsNothing);
+      expect(
+          find.text(
+              gl ? 'Este día ábrese o xoves' : 'Este día se abre el jueves'),
+          findsOneWidget);
+    });
+
+    testWidgets(
         'Lúa, grande, ao lado do camiño e con accesorios (${lang.code})',
         (tester) async {
       // O-20261118-1: sin hueco entre los días y Lúa, más grande y con la
@@ -160,8 +199,9 @@ void main() {
       expect(w.cabeza, 'head_flower');
       expect(w.pescozo, 'neck_red_bow');
       final rl = tester.getRect(lua);
-      final martes = tester.getRect(find.byKey(const Key('learn_nodo_1')));
-      expect(rl.left - martes.right, lessThan(80),
+      final martes = find.byKey(const Key('learn_nodo_1'));
+      final rm = tester.getRect(martes);
+      expect(rl.left - rm.right, lessThan(80),
           reason: 'Lúa pegada al camino, no contra el borde');
       expect(rl.right, lessThanOrEqualTo(412));
     });

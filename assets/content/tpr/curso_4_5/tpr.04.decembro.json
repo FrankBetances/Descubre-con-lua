@@ -153,7 +153,8 @@
             "gl": "Tremer máis",
             "es": "Temblar más"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_colder"
         },
         {
           "id": "4_5.decembro.s1.warmer",
@@ -175,7 +176,8 @@
             "gl": "Quedar ríxido",
             "es": "Quedarse rígido"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_frozen_solid"
         },
         {
           "id": "4_5.decembro.s1.melty",
@@ -644,7 +646,8 @@
             "gl": "Sinalar a luz máis brillante",
             "es": "Señalar la luz más brillante"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_brightest"
         },
         {
           "id": "4_5.decembro.s3.look-at-all-the-lights",
@@ -763,7 +766,8 @@
             "gl": "Entregar unha postal",
             "es": "Entregar una postal"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_card"
         },
         {
           "id": "4_5.decembro.s4.community",
@@ -906,7 +910,8 @@
             "gl": "Xuntar as mans e sorrir",
             "es": "Juntar las manos y sonreír"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_thank_you_so_much"
         },
         {
           "id": "4_5.decembro.s4.warm-hands-warm-heart",

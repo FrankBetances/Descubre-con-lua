@@ -153,7 +153,8 @@
             "gl": "Sorrir máis",
             "es": "Sonreír más"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_sweeter"
         },
         {
           "id": "4_5.marzo.s1.sourer",
@@ -600,7 +601,8 @@
             "gl": "Repartir cores no prato",
             "es": "Repartir colores en el plato"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_balance_a_plate"
         },
         {
           "id": "4_5.marzo.s3.nutritious",
@@ -708,7 +710,8 @@
             "gl": "Colocar froita no posto",
             "es": "Colocar fruta en el puesto"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_market_stall"
         },
         {
           "id": "4_5.marzo.s4.shopping-list",
@@ -719,7 +722,8 @@
             "gl": "Ler unha lista imaxinaria",
             "es": "Leer una lista imaginaria"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_shopping_list"
         },
         {
           "id": "4_5.marzo.s4.coin",
@@ -873,7 +877,8 @@
             "gl": "Levar unha bolsa con esforzo",
             "es": "Llevar una bolsa con esfuerzo"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_heavy_bag"
         },
         {
           "id": "4_5.marzo.s4.how-much-is-it",

@@ -250,7 +250,8 @@
             "gl": "Tirar dunha rede",
             "es": "Tirar de una red"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_fishing_village"
         },
         {
           "id": "5_6.xaneiro.s2.fortress",
@@ -708,7 +709,8 @@
             "gl": "Levantar un dedo",
             "es": "Levantar un dedo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_beginning"
         },
         {
           "id": "5_6.xaneiro.s4.middle",
@@ -719,7 +721,8 @@
             "gl": "Sinalar o centro",
             "es": "Señalar el centro"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_middle"
         },
         {
           "id": "5_6.xaneiro.s4.ending",

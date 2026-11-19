@@ -122,6 +122,7 @@ flutter:
     # (regular/semibold/bold/extrabold). Se empaquetan en
     # la app, no se piden por red: el APK no tiene permiso de INTERNET.
     - assets/fonts/
+    - assets/third_party/fluentui-emoji/
 
   fonts:
     - family: Nunito

@@ -27,6 +27,9 @@ RAIZ = Path(__file__).resolve().parent.parent
 SAIDA = RAIZ / "assets/content/acopros/proxectos_0_2.json"
 MESES = [9, 10, 11, 12, 1, 2, 3, 4, 5, 6]
 POR_PROXECTO = 20
+# O-20261111-2: cada palabra, con su lámina (tools/gen_laminas_palabras.py).
+_MAPA = RAIZ / "assets/content/laminas/palabras_laminas.json"
+LAMINAS_PAL = json.loads(_MAPA.read_text(encoding="utf-8"))["pezas"] if _MAPA.exists() else {}
 TO_BE = re.compile(r"\b(is|are|am|was|were|be|it's|i'm|you're|we're|they're)\b", re.I)
 
 # Rimas tradicionales inglesas de dominio público, la primera estrofa. Una
@@ -108,7 +111,8 @@ def construir() -> dict:
                 return
             vistas.add(k)
             palabras.append({"en": en, "gl": gl, "es": es,
-                             "xesto": {"gl": xesto_gl, "es": xesto_es}, "orixe": orixe})
+                             "xesto": {"gl": xesto_gl, "es": xesto_es}, "orixe": orixe,
+                             **({"lamina": LAMINAS_PAL[k]["clave"]} if k in LAMINAS_PAL else {})})
 
         for l in u["leccions"]:
             for p in l["novas"]:
@@ -126,14 +130,26 @@ def construir() -> dict:
             semanas.append({"semana": s + 1, "fase": FASES[s], "palabras": [w["en"] for w in sw]})
         frases = [w for w in palabras if elementos(w["en"]) == 2]
         cn = cancions[i]
-        canc = {"id": cn["id"], "gl": cn["titulo"]["gl"], "es": cn["titulo"]["es"]}
+        ck = cn["titulo"]["es"].lower().strip("!?. ")
+        canc = {
+            "id": cn["id"],
+            "gl": cn["titulo"]["gl"],
+            "es": cn["titulo"]["es"],
+            **({"lamina": LAMINAS_PAL[ck]["clave"]} if ck in LAMINAS_PAL else {}),
+        }
         en, gl, es = RIMAS[mes]
+        rk = en.lower().strip("!?. ")
         proxectos.append({
             "mesCalendario": mes,
             "proxecto": u["titulo"],
             "steam": u.get("steam"),
             "cancion": canc,
-            "rima": {"en": en, "gl": gl, "es": es},
+            "rima": {
+                "en": en,
+                "gl": gl,
+                "es": es,
+                **({"lamina": LAMINAS_PAL[rk]["clave"]} if rk in LAMINAS_PAL else {}),
+            },
             "palabras": palabras,
             "semanas": semanas,
             # Como falar: frases de dous elementos do propio proxecto, co seu

@@ -21,7 +21,8 @@
             "gl": "Amosar o ourizo sen tocalo",
             "es": "Enseñar el erizo sin tocarlo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_chestnut_husk"
         },
         {
           "id": "0_2.novembro.s1.moss",
@@ -32,7 +33,8 @@
             "gl": "Acariñar o musgo co bebé",
             "es": "Acariciar el musgo con el bebé"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_moss"
         },
         {
           "id": "0_2.novembro.s1.tree-bark",
@@ -43,7 +45,8 @@
             "gl": "Pasar a man pola cortiza",
             "es": "Pasar la mano por la corteza"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_tree_bark"
         },
         {
           "id": "0_2.novembro.s1.twig",
@@ -54,7 +57,8 @@
             "gl": "Dar unha ramiña pequena",
             "es": "Dar una ramita pequeña"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_twig"
         },
         {
           "id": "0_2.novembro.s1.pebble",
@@ -65,7 +69,8 @@
             "gl": "Poñer unha pedriña na man",
             "es": "Poner una piedrecita en la mano"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_pebble"
         },
         {
           "id": "0_2.novembro.s1.wool",
@@ -76,7 +81,8 @@
             "gl": "Acariñar a la dunha manta",
             "es": "Acariciar la lana de una manta"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_wool"
         },
         {
           "id": "0_2.novembro.s1.cotton",
@@ -87,7 +93,8 @@
             "gl": "Pasar un algodón pola meixela",
             "es": "Pasar un algodón por la mejilla"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_cotton"
         },
         {
           "id": "0_2.novembro.s1.feel",
@@ -219,7 +226,8 @@
             "gl": "Achegar un obxecto á man",
             "es": "Acercar un objeto a la mano"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_feel_this"
         },
         {
           "id": "0_2.novembro.s1.out-of-the-basket",
@@ -250,7 +258,8 @@
             "gl": "Facer unha morea de follas",
             "es": "Hacer un montón de hojas"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_leaf_pile"
         },
         {
           "id": "0_2.novembro.s2.garden",
@@ -261,7 +270,8 @@
             "gl": "Saír ao xardín da escola",
             "es": "Salir al jardín de la escuela"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_garden"
         },
         {
           "id": "0_2.novembro.s2.rake",
@@ -272,7 +282,8 @@
             "gl": "Pasar un angazo de xoguete",
             "es": "Pasar un rastrillo de juguete"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_rake"
         },
         {
           "id": "0_2.novembro.s2.wheelbarrow",
@@ -426,7 +437,8 @@
             "gl": "Baixar os dedos coma follas",
             "es": "Bajar los dedos como hojas"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_leaves_are_falling"
         },
         {
           "id": "0_2.novembro.s2.whoosh",
@@ -479,7 +491,8 @@
             "gl": "Amosar a tixola de lonxe",
             "es": "Enseñar la sartén de lejos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_roasting_pan"
         },
         {
           "id": "0_2.novembro.s3.smoke",
@@ -490,7 +503,8 @@
             "gl": "Subir as mans coma o fume",
             "es": "Subir las manos como el humo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_smoke"
         },
         {
           "id": "0_2.novembro.s3.fire",
@@ -708,7 +722,8 @@
             "gl": "Premer a bolsa sensorial",
             "es": "Apretar la bolsa sensorial"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_sensory_bag"
         },
         {
           "id": "0_2.novembro.s4.jelly",
@@ -719,7 +734,8 @@
             "gl": "Tocar a xelatina que treme",
             "es": "Tocar la gelatina que tiembla"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_jelly"
         },
         {
           "id": "0_2.novembro.s4.dough",

@@ -47,11 +47,20 @@ commit. Lo vigila `tools/check_registro_commits.py`, dentro de `tools/gates.sh`.
 | P0.2 | Crear `antigravity/pendiente` desde `origin/feat/laminas-ejercicios` e integrar lo útil del rescate | 0 | no |
 | P0.3 | `git merge origin/main` (trae O-20261118-1, el plan y CI) y poner su SHA en «Base:» del registro | 0 | no |
 | P0.4 | Cerrar O-20261111-3 como absorbida | 0 | no |
-| P1.1 | Preguntar y anotar la fuente de las imágenes, con su licencia | 1 | **sí** |
-| P2.1 | Las 12 escenas de reto con la fuente nueva, capturas gl/es | 2 | **sí**: mira tres y aprueba el estilo |
-| P2.2 | Imágenes de todas las palabras y frases de 4-5 años (40 semanas) | 2 | **sí**: mira tres semanas al azar |
-| P2.3 | Resto de edades y banco TPR, hasta 0 piezas sin lámina | 2 | no |
-| P2.4 | `docs/laminas-ejercicios.md` con una fila por pieza | 2 | no |
+| P1.1 | Anotar la fuente de las imágenes y corregir a estilo Flat (`O-20261111-4`), con su licencia | 1 | **sí** |
+| P2.0 | Medir cobertura real en Fluent Emoji (`docs/cobertura-fluent.md`) antes de copiar | 2 | **sí** |
+| P2.01 | P2.0b: medir cobertura sobre (c) con fuentes compatibles con uso comercial y derivadas | 2 | **sí** |
+| P2.1 | Conversor `banco_a_lamina.py`, reparación `lamina_vector.dart`, mapa ampliado, créditos/licencias y gate `check_banco_laminas.py` | 2 | no |
+| P2.2 | 4-5 años completo (U/R/C/D): 0 piezas sin lámina en 4-5, cifras, hoja de contactos y nota de capturas gl/es | 2 | **sí**: mira tres semanas al azar |
+| P2.21 | Revisión P2.2: dart format en lamina_vector/test, sustituir pal_sand/protect/temperature (sin caras) y 5 pasos de curso_4_5 en test/capturas_test.dart | 2 | no |
+| P2.3 | 0-2 años completo a 0 piezas sin lámina | 2 | no (aprobado estilo 4-5) |
+| P2.4 | 2-3 años completo a 0 piezas sin lámina | 2 | **sí** |
+| P2.5 | 3-4 años completo a 0 piezas sin lámina | 2 | **sí** |
+| P2.6 | 5-6 años completo a 0 piezas sin lámina | 2 | **sí** |
+| P2.7 | Verificación 6-7 años: la app solo tiene 5 cursos (0-2..5-6 = 6.º Infantil); no existe curso_6_7 | 2 | no |
+| P2.71 | Claude Code: lecciones P2.1–P2.7 a main; gate TPR con tope que solo baja (O-20261119-1) | 2 | no |
+| P2.8 | Banco TPR (4.000 piezas) cubierto, agrupado por gesto | 2 | no |
+| P2.9 | Cierre bloque 2: `check_laminas_leccion.py` = 0 en todo, tests de pasos en verde, `docs/ORDENES.md` al día | 2 | no |
 | P3.1 | Unidades 21-48 con su material semanal completo | 3 | si falta base en `referencias/` |
 | P3.2 | Capturas de escritorio de Hoy en las cinco edades, gl y es | 3 | no |
 | P3.3 | 4-5 años: lo de hoy en la primera pantalla de 412×915 | 3 | no |
@@ -265,7 +274,20 @@ La base es el commit de merge de P0.3: Antigravity cambia esta línea por su
 SHA en el primer commit después del merge. Desde ahí, cada commit lleva su
 paso y su fila; P0.1-P0.3 se cuentan en la entrega del bloque 0.
 
-Base: `caca7cb5`
+Base: `6be3d38b`
 
 | Paso | Commit | Fecha | Qué cambia en la app | Gates | Evidencia | Revisión |
 | --- | --- | --- | --- | --- | --- | --- |
+| P0.4 | 1995e81c | 2026-11-18 | Nada visible: base del registro y cierre de O-20261111-3 | OK ordenes/fallos/registro; FALLO laminas: 6351/6382 sen lámina (sin flutter) | docs/PLAN_ANTIGRAVITY.md | |
+| P1.1 | 4170a15b | 2026-11-18 | Créditos: Fluent Emoji (MIT) en gl/es y licencia en el paquete | sin flutter; ordenes/fallos/registro/bundled/no_emoji OK; laminas 6351/6382 | docs/ORDENES.md, assets/third_party/fluentui-emoji/LICENSE, lib/features/creditos/credits_screen.dart | |
+| P2.0 | e5c2ff3b | 2026-11-18 | Nada visible: medición de cobertura Fluent Emoji en docs/cobertura-fluent.md | sin flutter; ordenes/fallos/registro/bundled/no_emoji OK; laminas 6351/6382 | docs/cobertura-fluent.md, docs/PLAN_ANTIGRAVITY.md | |
+| P2.01 | 66280a3d | 2026-11-18 | Nada visible: P2.0b, cobertura de 6 fuentes comerciales/derivadas sobre (c) y regla de licencias | sin flutter; ordenes/fallos/registro/bundled/no_emoji OK; laminas 6351/6382 | docs/ORDENES.md, docs/cobertura-fluent.md, docs/PLAN_ANTIGRAVITY.md | |
+| P2.1 | a773038c | 2026-11-18 | Créditos y renderer: Fluent Emoji Flat, LicenseRegistry, _parsearRuta con implícitas/evenodd/raster; conversor, gate y 3 CSV | sin flutter; ordenes/fallos/registro/banco_laminas/email/bundled/no_emoji/banco_a_lamina --test OK; laminas 6351/6382 | tools/banco_a_lamina.py, tools/check_banco_laminas.py, lib/core/brand/lamina_vector.dart, lib/core/brand/licenzas_terceiros.dart, ATTRIBUTION.md, LICENSE.md | |
+| P2.2 | 6e89a446 | 2026-11-18 | 4-5 años: 190 piezas únicas (447 entradas de lecciones curso_4_5) a 0 sin lámina; U=25, R=19, C=106, D=40; hoja de contactos p1/p2 | sin flutter; ordenes/fallos/registro/licencias/banco_laminas/bundled/laminas/no_emoji OK; curso_4_5=0; total 5816/6382 | tools/gen_laminas_4_5.py, tools/hoja_contactos.py, docs/revision_4_5_lecciones.csv, docs/capturas/hoja_contactos_curso_4_5_p1.png, docs/capturas/hoja_contactos_curso_4_5_p2.png | |
+| P2.21 | 13e29f0c | 2026-11-18 | Revisión 4-5 años: dart format (lamina_vector + test), sustitución de pal_sand/protect/temperature sin caras (U=22, R=19, C=109, D=40; curso_4_5=0) y 5 pasos de curso_4_5 en test/capturas_test.dart (gl/es) | sin flutter; ordenes/fallos/registro/licencias/banco_laminas/bundled/laminas/no_emoji OK; curso_4_5=0; total 5816/6382 | lib/core/brand/lamina_vector.dart, test/core/lamina_vector_test.dart, test/capturas_test.dart, tools/gen_laminas_4_5.py, docs/capturas/hoja_contactos_curso_4_5_p1.png, docs/capturas/hoja_contactos_curso_4_5_p2.png | |
+| P2.3 | d13512b9 | 2026-11-18 | 0-2 años completo: 285 claves únicas (426 entradas curso_0_2 + 220 ACOPROS incl. canciones/rimas) a 0 sin lámina; U=18, R=65, C=158, D=44; hojas de contactos | sin flutter; ordenes/fallos/registro/licencias/banco_laminas/bundled/laminas/no_emoji OK; curso_0_2=0, acopros=0; total 4949/6382 | tools/banco_comun.py, tools/gen_laminas_0_2.py, tools/gen_acopros_0_2.py, docs/capturas/hoja_contactos_curso_0_2_p1.png, docs/capturas/hoja_contactos_curso_0_2_p2.png, docs/capturas/hoja_contactos_acopros_0_2_p1.png, docs/capturas/hoja_contactos_acopros_0_2_p2.png, docs/capturas/hoja_contactos_acopros_0_2_p3.png | |
+| P2.4 | a6bb9081 | 2026-11-18 | 2-3 años completo: 168 claves únicas (410 entradas curso_2_3: 160 nuevas + 8 ya cubiertas) a 0 sin lámina; U=4, R=4, C=134, D=18 nuevas; hojas de contactos p1/p2 | sin flutter; ordenes/fallos/registro/licencias/banco_laminas/bundled/laminas/no_emoji OK; curso_2_3=0; total 4438/6382 | tools/gen_laminas_2_3.py, docs/capturas/hoja_contactos_curso_2_3_p1.png, docs/capturas/hoja_contactos_curso_2_3_p2.png | |
+| P2.5 | a7ec6289 | 2026-11-18 | 3-4 años completo: 180 claves únicas (434 entradas curso_3_4: 164 nuevas + 16 ya cubiertas) a 0 sin lámina; U=8, R=3, C=138, D=15 nuevas; hojas de contactos p1/p2 | sin flutter; ordenes/fallos/registro/licencias/banco_laminas/bundled/laminas/no_emoji OK; curso_3_4=0; total 3947/6382 | tools/gen_laminas_3_4.py, docs/capturas/hoja_contactos_curso_3_4_p1.png, docs/capturas/hoja_contactos_curso_3_4_p2.png | |
+| P2.6 | 5e12576f | 2026-11-18 | 5-6 años completo: 188 claves únicas (445 entradas curso_5_6: 180 nuevas + 8 ya cubiertas) a 0 sin lámina; U=5, R=5, C=147, D=23 nuevas; lecciones=0 (1962), frases=0 (200), acopros=0 (220); hojas de contactos p1/p2 | sin flutter; ordenes/fallos/registro/licencias/banco_laminas/bundled/laminas/no_emoji OK; curso_5_6=0; total 3419/6382 | tools/gen_laminas_5_6.py, docs/capturas/hoja_contactos_curso_5_6_p1.png, docs/capturas/hoja_contactos_curso_5_6_p2.png | |
+| P2.7 | ef209a9c | 2026-11-18 | Verificación 6-7 años (nada que generar): comprobado en leccions.json, assets/content/tpr/ y lib/ (calendario_fogar_screen.dart, tpr_curriculum_scheduler.dart) que el currículo infantil termina en 6.º Infantil (curso_5_6, 5 cursos); todos los cursos 0-2..5-6 y ACOPROS a 0 sin lámina | sin flutter; ordenes/fallos/registro/licencias/banco_laminas/bundled/laminas/no_emoji OK; 5 cursos=0; total 3419/6382 | docs/PLAN_ANTIGRAVITY.md, assets/content/leccions/leccions.json, lib/features/calendario/views/calendario_fogar_screen.dart | |
+| P2.71 | este | 2026-11-19 | Nada nuevo en pantalla respecto a P2.1–P2.7: las lecciones de las 5 edades pasan a main. check_laminas_leccion.py --tope-tpr: lecciones, frases y 0-2 a 0; TPR con tope 3419 que solo baja | flutter 3.47.9: format, analyze y flutter test en verde; gates de Python OK | tools/check_laminas_leccion.py, tools/tope_tpr_sen_lamina.txt, docs/ORDENES.md (O-20261119-1) | |

@@ -327,7 +327,8 @@
             "gl": "Saltar dous pasos cada vez",
             "es": "Saltar dos pasos cada vez"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_count_in_twos"
         },
         {
           "id": "5_6.novembro.s2.add-up",
@@ -556,7 +557,8 @@
             "gl": "Mirar de preto con atención",
             "es": "Mirar de cerca con atención"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_investigate"
         },
         {
           "id": "5_6.novembro.s3.write-down",
@@ -785,7 +787,8 @@
             "gl": "Coller froita imaxinaria",
             "es": "Coger fruta imaginaria"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_harvest_fruit"
         },
         {
           "id": "5_6.novembro.s4.climb-a-ladder",
@@ -796,7 +799,8 @@
             "gl": "Subir alternando mans e pés",
             "es": "Subir alternando manos y pies"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_climb_a_ladder"
         },
         {
           "id": "5_6.novembro.s4.fill-a-crate",

@@ -153,7 +153,8 @@
             "gl": "Repartir en partes iguais",
             "es": "Repartir en partes iguales"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_fair"
         },
         {
           "id": "4_5.setembro.s1.responsible",
@@ -164,7 +165,8 @@
             "gl": "Coidar a planta da clase",
             "es": "Cuidar la planta de la clase"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_responsible"
         },
         {
           "id": "4_5.setembro.s1.honest",
@@ -197,7 +199,8 @@
             "gl": "Pousar as mans no colo e agardar",
             "es": "Poner las manos en el regazo y esperar"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_wait_your_turn"
         },
         {
           "id": "4_5.setembro.s1.we-listen-because-we-care",
@@ -382,7 +385,8 @@
             "gl": "Empurrar a torre sen que caia",
             "es": "Empujar la torre sin que caiga"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_sturdy"
         },
         {
           "id": "4_5.setembro.s2.taller",

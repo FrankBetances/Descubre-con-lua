@@ -21,7 +21,8 @@
           "tprAction": {
             "gl": "Baixar os dedos amodo coma neve que cae",
             "es": "Bajar los dedos despacio como nieve que cae"
-          }
+          },
+          "lamina": "pal_pal_snow"
         },
         {
           "id": "3_4.decembro.s1.ice",
@@ -65,7 +66,8 @@
           "tprAction": {
             "gl": "Abrazarse a un mesmo con frío",
             "es": "Abrazarse a uno mismo con frío"
-          }
+          },
+          "lamina": "pal_winter"
         },
         {
           "id": "3_4.decembro.s1.mountain",
@@ -153,7 +155,8 @@
           "tprAction": {
             "gl": "Fregar os brazos coas mans cruzadas",
             "es": "Frotarse los brazos con las manos cruzadas"
-          }
+          },
+          "lamina": "pal_cold"
         },
         {
           "id": "3_4.decembro.s1.warm",
@@ -164,7 +167,8 @@
           "tprAction": {
             "gl": "Soprar nas mans e pousalas nas meixelas",
             "es": "Soplarse en las manos y ponerlas en las mejillas"
-          }
+          },
+          "lamina": "quente"
         },
         {
           "id": "3_4.decembro.s1.white",
@@ -175,7 +179,8 @@
           "tprAction": {
             "gl": "Sinalar algo branco na aula",
             "es": "Señalar algo blanco en el aula"
-          }
+          },
+          "lamina": "pal_white"
         },
         {
           "id": "3_4.decembro.s1.slippery",
@@ -250,7 +255,8 @@
           "tprAction": {
             "gl": "Mover o puño dun lado a outro coma unha campá",
             "es": "Mover el puño de un lado a otro como una campana"
-          }
+          },
+          "lamina": "pal_bell"
         },
         {
           "id": "3_4.decembro.s2.light",
@@ -261,7 +267,8 @@
           "tprAction": {
             "gl": "Abrir de golpe as mans coma unha luz que se acende",
             "es": "Abrir de golpe las manos como una luz que se enciende"
-          }
+          },
+          "lamina": "pal_light"
         },
         {
           "id": "3_4.decembro.s2.star",
@@ -294,7 +301,8 @@
           "tprAction": {
             "gl": "Soprar amodo unha vela imaxinaria",
             "es": "Soplar despacio una vela imaginaria"
-          }
+          },
+          "lamina": "pal_pal_candle"
         },
         {
           "id": "3_4.decembro.s2.ribbon",
@@ -371,7 +379,8 @@
           "tprAction": {
             "gl": "Pendurar unha estrela imaxinaria no alto",
             "es": "Colgar una estrella imaginaria en lo alto"
-          }
+          },
+          "lamina": "pal_hang"
         },
         {
           "id": "3_4.decembro.s2.golden",
@@ -479,7 +488,8 @@
           "tprAction": {
             "gl": "Pechar as mans diante dos ollos coma cortinas",
             "es": "Cerrar las manos delante de los ojos como cortinas"
-          }
+          },
+          "lamina": "pal_night"
         },
         {
           "id": "3_4.decembro.s3.moon",
@@ -556,7 +566,8 @@
           "tprAction": {
             "gl": "Tombar no chan e pechar os ollos",
             "es": "Tumbarse en el suelo y cerrar los ojos"
-          }
+          },
+          "lamina": "pal_sleep"
         },
         {
           "id": "3_4.decembro.s3.yawn",
@@ -567,7 +578,8 @@
           "tprAction": {
             "gl": "Abrir moito a boca e estirar os brazos",
             "es": "Abrir mucho la boca y estirar los brazos"
-          }
+          },
+          "lamina": "pal_yawn"
         },
         {
           "id": "3_4.decembro.s3.snore",
@@ -589,7 +601,8 @@
           "tprAction": {
             "gl": "Abrir os ollos de golpe e sentar",
             "es": "Abrir los ojos de golpe y sentarse"
-          }
+          },
+          "lamina": "pal_wake_up"
         },
         {
           "id": "3_4.decembro.s3.cuddle",
@@ -611,7 +624,8 @@
           "tprAction": {
             "gl": "Deixar caer a cabeza amodo cara a un lado",
             "es": "Dejar caer la cabeza despacio hacia un lado"
-          }
+          },
+          "lamina": "pal_sleepy"
         },
         {
           "id": "3_4.decembro.s3.tired",
@@ -785,7 +799,8 @@
           "tprAction": {
             "gl": "Xuntar as mans de golpe: pum!",
             "es": "Juntar las manos de golpe: ¡pum!"
-          }
+          },
+          "lamina": "pal_pop"
         },
         {
           "id": "3_4.decembro.s4.wish",
@@ -796,7 +811,8 @@
           "tprAction": {
             "gl": "Pechar os ollos e cruzar os dedos",
             "es": "Cerrar los ojos y cruzar los dedos"
-          }
+          },
+          "lamina": "pal_wish"
         },
         {
           "id": "3_4.decembro.s4.bow",
@@ -818,7 +834,8 @@
           "tprAction": {
             "gl": "Contar cos dedos ata cinco",
             "es": "Contar con los dedos hasta cinco"
-          }
+          },
+          "lamina": "pal_count"
         },
         {
           "id": "3_4.decembro.s4.cheer",
@@ -873,7 +890,8 @@
           "tprAction": {
             "gl": "Bicar as puntas dos dedos con cara de gusto",
             "es": "Besarse las puntas de los dedos con cara de gusto"
-          }
+          },
+          "lamina": "pal_delicious"
         },
         {
           "id": "3_4.decembro.s4.happy-new-year",

@@ -1,0 +1,81 @@
+clave,en,es,fuente,asset_candidato,licencia,estado
+acorn,Acorn,Bellota,iconify:game-icons,lorc/acorn.svg,CC-BY-3.0,candidato_sin_revisar
+beach ball game,Beach ball game,Juego de pelota,iconify:game-icons,delapouite/beach-ball.svg,CC-BY-3.0,candidato_sin_revisar
+broken,broken,roto,iconify:game-icons,delapouite/broken-pottery.svg,CC-BY-3.0,candidato_sin_revisar
+clapperboard,Clapperboard,Claqueta,iconify:game-icons,delapouite/clapperboard.svg,CC-BY-3.0,candidato_sin_revisar
+desk,Desk,Pupitre,iconify:game-icons,delapouite/desk.svg,CC-BY-3.0,candidato_sin_revisar
+echo,Echo,Repetir como el eco,iconify:game-icons,lorc/echo-ripples.svg,CC-BY-3.0,candidato_sin_revisar
+feathered,Feathered,Emplumado,iconify:game-icons,lorc/feather.svg,CC-BY-3.0,candidato_sin_revisar
+front teeth,Front teeth,Dientes de delante,iconify:game-icons,lorc/front-teeth.svg,CC-BY-3.0,candidato_sin_revisar
+grass,Grass,Hierba,iconify:game-icons,delapouite/grass.svg,CC-BY-3.0,candidato_sin_revisar
+idea,Idea,Idea,iconify:game-icons,delapouite/idea.svg,CC-BY-3.0,candidato_sin_revisar
+lamp,Lamp,Lámpara,iconify:game-icons,delapouite/bed-lamp.svg,CC-BY-3.0,candidato_sin_revisar
+necklace,Necklace,Collar de cuentas,iconify:game-icons,lucasms/necklace.svg,CC-BY-3.0,candidato_sin_revisar
+plant a seed,Plant a seed,Plantar,iconify:game-icons,delapouite/plant-seed.svg,CC-BY-3.0,candidato_sin_revisar
+pumpkin,Pumpkin,Calabaza,iconify:game-icons,delapouite/pumpkin.svg,CC-BY-3.0,candidato_sin_revisar
+roots,Roots,Raíces,iconify:game-icons,delapouite/plant-roots.svg,CC-BY-3.0,candidato_sin_revisar
+seahorse,Seahorse,Caballito de mar,iconify:game-icons,delapouite/seahorse.svg,CC-BY-3.0,candidato_sin_revisar
+slow,Slow,"Lento, lenta",iconify:game-icons,sbed/slow-blob.svg,CC-BY-3.0,candidato_sin_revisar
+stairs,Stairs,Escaleras,iconify:game-icons,delapouite/stairs.svg,CC-BY-3.0,candidato_sin_revisar
+surprising,Surprising,Sorprendente,iconify:game-icons,lorc/surprised.svg,CC-BY-3.0,candidato_sin_revisar
+tightrope,Tightrope,Cuerda floja,iconify:game-icons,delapouite/tightrope.svg,CC-BY-3.0,candidato_sin_revisar
+balance,Balance,Mantener el equilibrio,iconify:material-symbols,balance,Apache-2.0,candidato_sin_revisar
+cable car,Cable car,Teleférico,iconify:material-symbols,cable_car,Apache-2.0,candidato_sin_revisar
+cheer,Cheer,Animar,iconify:material-symbols,cheer,Apache-2.0,candidato_sin_revisar
+cut,cut,cortar,iconify:material-symbols,cut,Apache-2.0,candidato_sin_revisar
+empty,empty,vacío,iconify:material-symbols,hourglass_empty,Apache-2.0,candidato_sin_revisar
+eyebrows,Eyebrows,Cejas,iconify:material-symbols,eyebrow,Apache-2.0,candidato_sin_revisar
+frustrated,Frustrated,Frustrado,iconify:material-symbols,sentiment_frustrated,Apache-2.0,candidato_sin_revisar
+hand wave,Hand wave,Saludo con la mano,iconify:material-symbols,waving_hand,Apache-2.0,candidato_sin_revisar
+hexagon,Hexagon,Hexágono,iconify:material-symbols,hexagon,Apache-2.0,candidato_sin_revisar
+museum,Museum,Museo,iconify:material-symbols,museum,Apache-2.0,candidato_sin_revisar
+pattern,Pattern,Patrón,iconify:material-symbols,pattern,Apache-2.0,candidato_sin_revisar
+quiet time,Quiet time,Tiempo tranquilo,iconify:material-symbols,quiet_time,Apache-2.0,candidato_sin_revisar
+relaxed,Relaxed,"Relajado, relajada",iconify:material-symbols,relax,Apache-2.0,candidato_sin_revisar
+satisfied,Satisfied,Satisfecho,iconify:material-symbols,sentiment_satisfied,Apache-2.0,candidato_sin_revisar
+skeleton,Skeleton,Esqueleto,iconify:material-symbols,skeleton,Apache-2.0,candidato_sin_revisar
+steps,Steps,Escalones,iconify:material-symbols,steps,Apache-2.0,candidato_sin_revisar
+straight,Straight,"Recto, recta",iconify:material-symbols,straight,Apache-2.0,candidato_sin_revisar
+switch off lights,Switch off lights,Apagar las luces,iconify:material-symbols,light_off,Apache-2.0,candidato_sin_revisar
+turn left,Turn left,Girar a la izquierda,iconify:material-symbols,turn_left,Apache-2.0,candidato_sin_revisar
+wash,Wash!,lavar,iconify:material-symbols,wash,Apache-2.0,candidato_sin_revisar
+acorn,Acorn,Bellota,iconify:tabler,icons/outline/acorn.svg,MIT,candidato_sin_revisar
+binoculars,Binoculars,Prismáticos,iconify:tabler,icons/outline/binoculars.svg,MIT,candidato_sin_revisar
+campfire,Campfire,Hoguera de campamento,iconify:tabler,icons/outline/campfire.svg,MIT,candidato_sin_revisar
+cone,Cone,Cono,iconify:tabler,icons/outline/cone-2.svg,MIT,candidato_sin_revisar
+cut,cut,cortar,iconify:tabler,icons/outline/cut.svg,MIT,candidato_sin_revisar
+dive,Dive,Zambullirse,iconify:tabler,icons/outline/scuba-diving.svg,MIT,candidato_sin_revisar
+face mask,Face mask,Careta,iconify:tabler,icons/outline/face-mask.svg,MIT,candidato_sin_revisar
+feathered,Feathered,Emplumado,iconify:tabler,icons/outline/feather.svg,MIT,candidato_sin_revisar
+footsteps,Footsteps,Pasos,iconify:tabler,icons/outline/footsteps.svg,MIT,candidato_sin_revisar
+heavy,Heavy,"Pesado, pesada",iconify:tabler,icons/outline/weight.svg,MIT,candidato_sin_revisar
+iceberg,Iceberg,Iceberg,iconify:tabler,icons/outline/iceberg.svg,MIT,candidato_sin_revisar
+library,Library,Biblioteca,iconify:tabler,icons/outline/library.svg,MIT,candidato_sin_revisar
+metronome,Metronome,Metrónomo,iconify:tabler,icons/outline/metronome.svg,MIT,candidato_sin_revisar
+orbit,Orbit,Órbita,iconify:tabler,icons/outline/orbit.svg,MIT,candidato_sin_revisar
+pillow,Pillow,Almohada,iconify:tabler,icons/outline/pillow.svg,MIT,candidato_sin_revisar
+question mark,Question mark,Signo de interrogación,iconify:tabler,icons/outline/question-mark.svg,MIT,candidato_sin_revisar
+ripples,Ripples,Ondas pequeñas,iconify:tabler,icons/outline/ripple.svg,MIT,candidato_sin_revisar
+sailing ship,Sailing ship,Galeón,iconify:tabler,icons/outline/sailboat-2.svg,MIT,candidato_sin_revisar
+sphere,Sphere,Esfera,iconify:tabler,icons/outline/sphere-2.svg,MIT,candidato_sin_revisar
+stack,Stack,Apilar,iconify:tabler,icons/outline/stack.svg,MIT,candidato_sin_revisar
+arms,Arms,Brazos,iconify:healthicons,public/icons/svg/outline/body/arm.svg,CC0-1.0,candidato_sin_revisar
+body,Body,Cuerpo,iconify:healthicons,public/icons/svg/outline/body/body.svg,CC0-1.0,candidato_sin_revisar
+calm,Calm,"Tranquilo, tranquila",iconify:healthicons,public/icons/svg/outline/emotions/face-calm.svg,CC0-1.0,candidato_sin_revisar
+clean,Clean,"Limpio, limpia",iconify:healthicons,public/icons/svg/outline/objects/cleaning.svg,CC0-1.0,candidato_sin_revisar
+hair,Hair,Pelo,iconify:healthicons,public/icons/svg/outline/body/hair.svg,CC0-1.0,candidato_sin_revisar
+head,Head,Cabeza,iconify:healthicons,public/icons/svg/outline/body/head.svg,CC0-1.0,candidato_sin_revisar
+heavy,Heavy,"Pesado, pesada",iconify:healthicons,public/icons/svg/outline/devices/weight.svg,CC0-1.0,candidato_sin_revisar
+market stall,Market stall,Puesto del mercado,iconify:healthicons,public/icons/svg/outline/places/market-stall.svg,CC0-1.0,candidato_sin_revisar
+nappy,Nappy,Pañal,iconify:healthicons,public/icons/svg/outline/symbols/nappy-diaper.svg,CC0-1.0,candidato_sin_revisar
+old,Old,"Viejo, vieja",iconify:healthicons,public/icons/svg/outline/people/old-man.svg,CC0-1.0,candidato_sin_revisar
+question mark,Question mark,Signo de interrogación,iconify:healthicons,public/icons/svg/outline/symbols/question.svg,CC0-1.0,candidato_sin_revisar
+skeleton,Skeleton,Esqueleto,iconify:healthicons,public/icons/svg/outline/body/skeleton.svg,CC0-1.0,candidato_sin_revisar
+spine,Spine,Columna,iconify:healthicons,public/icons/svg/outline/body/spine.svg,CC0-1.0,candidato_sin_revisar
+stop and go,Stop and go,Parar y seguir,iconify:healthicons,public/icons/svg/outline/symbols/stop.svg,CC0-1.0,candidato_sin_revisar
+stop,Stop!,parar,iconify:healthicons,public/icons/svg/outline/symbols/stop.svg,CC0-1.0,candidato_sin_revisar
+tissue,Tissue,Pañuelo de papel,iconify:healthicons,public/icons/svg/outline/body/tissue.svg,CC0-1.0,candidato_sin_revisar
+travel,Travel,Viajar,iconify:healthicons,public/icons/svg/outline/people/travel.svg,CC0-1.0,candidato_sin_revisar
+vegetables,Vegetables,Verduras,iconify:healthicons,public/icons/svg/outline/nutrition/vegetables.svg,CC0-1.0,candidato_sin_revisar
+very old,Very old,Muy viejo,iconify:healthicons,public/icons/svg/outline/people/old-man.svg,CC0-1.0,candidato_sin_revisar
+wash,Wash!,lavar,iconify:healthicons,public/icons/svg/outline/people/wash-hands.svg,CC0-1.0,candidato_sin_revisar

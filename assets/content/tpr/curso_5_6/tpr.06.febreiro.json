@@ -250,7 +250,8 @@
             "gl": "Dar unha palmada de claqueta",
             "es": "Dar una palmada de claqueta"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_director"
         },
         {
           "id": "5_6.febreiro.s2.clapperboard",
@@ -448,7 +449,8 @@
             "gl": "Pasar a claqueta",
             "es": "Pasar la claqueta"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_it_s_your_turn_to_direct"
         },
         {
           "id": "5_6.febreiro.s2.enter-on-the-left-and-exit-on-the-right",
@@ -708,7 +710,8 @@
             "gl": "Abrir un libro grande",
             "es": "Abrir un libro grande"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_fairy_tale"
         },
         {
           "id": "5_6.febreiro.s4.wolf-costume",
@@ -719,7 +722,8 @@
             "gl": "Poñer as orellas de lobo",
             "es": "Ponerse las orejas de lobo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_wolf_costume"
         },
         {
           "id": "5_6.febreiro.s4.three-pigs",

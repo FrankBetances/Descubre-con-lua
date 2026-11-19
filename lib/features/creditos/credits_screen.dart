@@ -150,6 +150,33 @@ class _CreditsScreenState extends State<CreditsScreen> {
         'La licencia viaja en el paquete, en assets/fonts/OFL.txt.',
   );
 
+  static const _imagesKicker = LocalizedString(
+    gl: 'AS IMAXES',
+    es: 'LAS IMÁGENES',
+  );
+
+  static const _fluentEmojiDesc = LocalizedString(
+    gl: 'Microsoft Fluent Emoji (estilo Flat). Copyright (c) Microsoft Corporation. '
+        'Licenza MIT (assets/third_party/fluentui-emoji/LICENSE).',
+    es: 'Microsoft Fluent Emoji (estilo Flat). Copyright (c) Microsoft Corporation. '
+        'Licencia MIT (assets/third_party/fluentui-emoji/LICENSE).',
+  );
+
+  static const _iconifyDesc = LocalizedString(
+    gl: 'Iconify (sets MIT, Apache 2.0 e CC0) e Game Icons (CC BY 3.0, con atribución por autor en ATTRIBUTION.md).',
+    es: 'Iconify (sets MIT, Apache 2.0 y CC0) y Game Icons (CC BY 3.0, con atribución por autor en ATTRIBUTION.md).',
+  );
+
+  static const _dnizforDesc = LocalizedString(
+    gl: 'dnizfor/vocabulary-flashcard-dataset. Copyright (c) 2026 Dnizfor. Licenza MIT.',
+    es: 'dnizfor/vocabulary-flashcard-dataset. Copyright (c) 2026 Dnizfor. Licencia MIT.',
+  );
+
+  static const _pbImageBankDesc = LocalizedString(
+    gl: 'Pratham Books / StoryWeaver (global-asp/pb-imagebank). Licenza CC BY 4.0, só para escenas de apoio co seu ilustrador en ATTRIBUTION.md.',
+    es: 'Pratham Books / StoryWeaver (global-asp/pb-imagebank). Licencia CC BY 4.0, solo para escenas de apoyo con su ilustrador en ATTRIBUTION.md.',
+  );
+
   static const _contactKicker = LocalizedString(gl: 'CONTACTO', es: 'CONTACTO');
 
   @override
@@ -324,6 +351,35 @@ class _CreditsScreenState extends State<CreditsScreen> {
                     child: _Entry(
                       name: 'Nunito',
                       detail: _nunitoDesc.resolve(currentLanguage),
+                    ),
+                  ),
+                  const SizedBox(height: AppTheme.spaceXl),
+                  _Kicker(_imagesKicker.resolve(currentLanguage)),
+                  const SizedBox(height: AppTheme.spaceMd),
+                  _GlassCard(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        _Entry(
+                          name: 'Fluent Emoji (Flat)',
+                          detail: _fluentEmojiDesc.resolve(currentLanguage),
+                        ),
+                        const SizedBox(height: AppTheme.spaceMd),
+                        _Entry(
+                          name: 'Iconify & Game Icons',
+                          detail: _iconifyDesc.resolve(currentLanguage),
+                        ),
+                        const SizedBox(height: AppTheme.spaceMd),
+                        _Entry(
+                          name: 'Vocabulary Flashcard Dataset',
+                          detail: _dnizforDesc.resolve(currentLanguage),
+                        ),
+                        const SizedBox(height: AppTheme.spaceMd),
+                        _Entry(
+                          name: 'PB Image Bank',
+                          detail: _pbImageBankDesc.resolve(currentLanguage),
+                        ),
+                      ],
                     ),
                   ),
                   const SizedBox(height: AppTheme.spaceXl),

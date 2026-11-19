@@ -21,7 +21,8 @@
             "gl": "Poñer un nariz vermello e sorrir",
             "es": "Ponerse una nariz roja y sonreír"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_clown_nose"
         },
         {
           "id": "0_2.febreiro.s1.silly-hat",
@@ -32,7 +33,8 @@
             "gl": "Poñer un gorro gracioso ao bebé",
             "es": "Poner un gorro gracioso al bebé"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_silly_hat"
         },
         {
           "id": "0_2.febreiro.s1.pom-pom",
@@ -43,7 +45,8 @@
             "gl": "Axitar un pompón de cores",
             "es": "Agitar un pompón de colores"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_pom_pom"
         },
         {
           "id": "0_2.febreiro.s1.party-blower",
@@ -54,7 +57,8 @@
             "gl": "Soprar o matasogras preto do bebé",
             "es": "Soplar el matasuegras cerca del bebé"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_party_blower"
         },
         {
           "id": "0_2.febreiro.s1.streamer",
@@ -65,7 +69,8 @@
             "gl": "Lanzar unha serpentina ao aire",
             "es": "Lanzar una serpentina al aire"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_streamer"
         },
         {
           "id": "0_2.febreiro.s1.confetti",
@@ -76,7 +81,8 @@
             "gl": "Axitar un bote pechado con confeti",
             "es": "Agitar un bote cerrado con confeti"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_confetti"
         },
         {
           "id": "0_2.febreiro.s1.face-paint",
@@ -87,7 +93,8 @@
             "gl": "Pintar un punto na meixela",
             "es": "Pintar un punto en la mejilla"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_face_paint"
         },
         {
           "id": "0_2.febreiro.s1.laugh",
@@ -230,7 +237,8 @@
             "gl": "Poñer e quitar o gorro",
             "es": "Poner y quitar el gorro"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_hat_on_hat_off"
         }
       ]
     },
@@ -250,7 +258,8 @@
             "gl": "Randear o bebé nunha manta coma hamaca",
             "es": "Mecer al bebé en una manta como hamaca"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_hammock"
         },
         {
           "id": "0_2.febreiro.s2.rocking-horse",
@@ -261,7 +270,8 @@
             "gl": "Randear no cabalo de balancín",
             "es": "Mecerse en el caballito balancín"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_rocking_horse"
         },
         {
           "id": "0_2.febreiro.s2.seesaw",
@@ -272,7 +282,8 @@
             "gl": "Subir e baixar coas mans",
             "es": "Subir y bajar con las manos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_seesaw"
         },
         {
           "id": "0_2.febreiro.s2.cradle-song",
@@ -283,7 +294,8 @@
             "gl": "Cantar mentres se randea",
             "es": "Cantar mientras se mece"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_cradle_song"
         },
         {
           "id": "0_2.febreiro.s2.swing-seat",
@@ -415,7 +427,8 @@
             "gl": "Suxeitar o bebé ben firme",
             "es": "Sujetar al bebé bien firme"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_steady"
         },
         {
           "id": "0_2.febreiro.s2.rock-a-bye-baby",
@@ -479,7 +492,8 @@
             "gl": "Facer unha cabana cunha manta",
             "es": "Hacer una cabaña con una manta"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_blanket_fort"
         },
         {
           "id": "0_2.febreiro.s3.cardboard-box",
@@ -490,7 +504,8 @@
             "gl": "Meter e sacar un xoguete da caixa",
             "es": "Meter y sacar un juguete de la caja"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_cardboard_box"
         },
         {
           "id": "0_2.febreiro.s3.curtain",
@@ -708,7 +723,8 @@
             "gl": "Axitar o axóuxere ao ritmo",
             "es": "Agitar el sonajero al ritmo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_shaker"
         },
         {
           "id": "0_2.febreiro.s4.xylophone",
@@ -719,7 +735,8 @@
             "gl": "Bater nas teclas do xilófono",
             "es": "Golpear las teclas del xilófono"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_xylophone"
         },
         {
           "id": "0_2.febreiro.s4.tambourine-bells",
@@ -730,7 +747,8 @@
             "gl": "Bater na pandeireta coa palma",
             "es": "Golpear la pandereta con la palma"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_toy_tambourine"
         },
         {
           "id": "0_2.febreiro.s4.egg-shaker",
@@ -884,7 +902,8 @@
             "gl": "Axitar o axóuxere tres veces",
             "es": "Agitar el sonajero tres veces"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_shake_shake_shake"
         },
         {
           "id": "0_2.febreiro.s4.let-s-make-music",

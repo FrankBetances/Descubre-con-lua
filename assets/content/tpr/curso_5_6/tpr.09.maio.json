@@ -708,7 +708,8 @@
             "gl": "Abrazarse a si mesmo",
             "es": "Abrazarse a sí mismo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_self_care"
         },
         {
           "id": "5_6.maio.s4.quiet-time",
@@ -719,7 +720,8 @@
             "gl": "Sentarse en silencio",
             "es": "Sentarse en silencio"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_quiet_time"
         },
         {
           "id": "5_6.maio.s4.hobby",
@@ -818,7 +820,8 @@
             "gl": "Inclinar un regador",
             "es": "Inclinar una regadera"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_water_the_plants"
         },
         {
           "id": "5_6.maio.s4.write-a-thank-you-note",

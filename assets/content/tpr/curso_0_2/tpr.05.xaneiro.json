@@ -21,7 +21,8 @@
             "gl": "Acariñar un gatiño de peluche",
             "es": "Acariciar un gatito de peluche"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_kitten"
         },
         {
           "id": "0_2.xaneiro.s1.puppy",
@@ -32,7 +33,8 @@
             "gl": "Acariñar un canciño de peluche",
             "es": "Acariciar un cachorro de peluche"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_puppy"
         },
         {
           "id": "0_2.xaneiro.s1.paw",
@@ -43,7 +45,8 @@
             "gl": "Amosar a man coma unha pata",
             "es": "Enseñar la mano como una pata"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_paw"
         },
         {
           "id": "0_2.xaneiro.s1.whiskers",
@@ -54,7 +57,8 @@
             "gl": "Debuxar bigotes na cara co dedo",
             "es": "Dibujar bigotes en la cara con el dedo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_whiskers"
         },
         {
           "id": "0_2.xaneiro.s1.collar",
@@ -65,7 +69,8 @@
             "gl": "Tocar o colar do peluche",
             "es": "Tocar el collar del peluche"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_collar"
         },
         {
           "id": "0_2.xaneiro.s1.dog-bowl",
@@ -76,7 +81,8 @@
             "gl": "Amosar a cunca baleira",
             "es": "Enseñar el cuenco vacío"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_dog_bowl"
         },
         {
           "id": "0_2.xaneiro.s1.kennel",
@@ -87,7 +93,8 @@
             "gl": "Facer un tellado coas mans",
             "es": "Hacer un tejado con las manos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_kennel"
         },
         {
           "id": "0_2.xaneiro.s1.stroke-gently",
@@ -98,7 +105,8 @@
             "gl": "Acariñar o peluche dunha soa dirección",
             "es": "Acariciar el peluche en una sola dirección"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_stroke_gently"
         },
         {
           "id": "0_2.xaneiro.s1.slurp",
@@ -219,7 +227,8 @@
             "gl": "Sinalar o gato e facer «miau»",
             "es": "Señalar al gato y hacer «miau»"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_the_cat_says_meow"
         },
         {
           "id": "0_2.xaneiro.s1.soft-like-a-cat",
@@ -250,7 +259,8 @@
             "gl": "Facer «beee» baixiño",
             "es": "Hacer «beee» bajito"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_lamb"
         },
         {
           "id": "0_2.xaneiro.s2.chick",
@@ -261,7 +271,8 @@
             "gl": "Facer «pío pío» cos dedos",
             "es": "Hacer «pío pío» con los dedos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_chick"
         },
         {
           "id": "0_2.xaneiro.s2.goat",
@@ -272,7 +283,8 @@
             "gl": "Poñer os dedos coma cornos",
             "es": "Poner los dedos como cuernos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_goat"
         },
         {
           "id": "0_2.xaneiro.s2.donkey",
@@ -327,7 +339,8 @@
             "gl": "Facer «beee» coma un año",
             "es": "Hacer «beee» como un cordero"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_baa"
         },
         {
           "id": "0_2.xaneiro.s2.chomp",
@@ -556,7 +569,8 @@
             "gl": "Facer «pío pío» baixiño",
             "es": "Hacer «pío pío» bajito"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_tweet"
         },
         {
           "id": "0_2.xaneiro.s3.flutter",
@@ -567,7 +581,8 @@
             "gl": "Mover os dedos coma ás",
             "es": "Mover los dedos como alas"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_flutter"
         },
         {
           "id": "0_2.xaneiro.s3.nibble",
@@ -600,7 +615,8 @@
             "gl": "Dar saltiños cos dedos",
             "es": "Dar saltitos con los dedos"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_hop_along"
         },
         {
           "id": "0_2.xaneiro.s3.feathery",
@@ -655,7 +671,8 @@
             "gl": "Abrir e pechar os dedos coma un bico",
             "es": "Abrir y cerrar los dedos como un pico"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_tweet_tweet"
         },
         {
           "id": "0_2.xaneiro.s3.where-s-the-birdie",
@@ -785,7 +802,8 @@
             "gl": "Facer «shh» moi suave",
             "es": "Hacer «shh» muy suave"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_shush"
         },
         {
           "id": "0_2.xaneiro.s4.hum-a-tune",
@@ -796,7 +814,8 @@
             "gl": "Cantaruxar cos beizos pechados",
             "es": "Tararear con los labios cerrados"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_hum_a_tune"
         },
         {
           "id": "0_2.xaneiro.s4.listen-close",

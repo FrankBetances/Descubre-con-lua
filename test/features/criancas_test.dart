@@ -239,6 +239,8 @@ void main() {
     expect(find.text('Nivel 1 · Gatiña'), findsOneWidget);
     expect(find.byKey(const Key('lua_racha')), findsOneWidget);
 
+    await tester.ensureVisible(find.byKey(const Key('lua_acariciar')));
+    await tester.pump();
     await tester.tap(find.byKey(const Key('lua_acariciar')));
     await tester.pump();
     expect(find.text('Ronroneo!'), findsOneWidget);

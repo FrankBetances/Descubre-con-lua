@@ -21,7 +21,8 @@
           "tprAction": {
             "gl": "Saudar coa man aberta ao entrar no círculo",
             "es": "Saludar con la mano abierta al entrar en el círculo"
-          }
+          },
+          "lamina": "pal_hello"
         },
         {
           "id": "3_4.setembro.s1.friend",
@@ -32,7 +33,8 @@
           "tprAction": {
             "gl": "Dar a man á persoa que está ao lado",
             "es": "Dar la mano a la persona que está al lado"
-          }
+          },
+          "lamina": "pal_friend"
         },
         {
           "id": "3_4.setembro.s1.teacher",
@@ -54,7 +56,8 @@
           "tprAction": {
             "gl": "Debuxar no aire o tellado da escola coas mans",
             "es": "Dibujar en el aire el tejado de la escuela con las manos"
-          }
+          },
+          "lamina": "pal_school"
         },
         {
           "id": "3_4.setembro.s1.door",
@@ -131,7 +134,8 @@
           "tprAction": {
             "gl": "Baixar amodo ata sentar no chan",
             "es": "Bajar despacio hasta sentarse en el suelo"
-          }
+          },
+          "lamina": "pal_sit"
         },
         {
           "id": "3_4.setembro.s1.come",
@@ -186,7 +190,8 @@
           "tprAction": {
             "gl": "Levar o dedo aos beizos e baixar a voz",
             "es": "Llevarse el dedo a los labios y bajar la voz"
-          }
+          },
+          "lamina": "pal_quiet"
         },
         {
           "id": "3_4.setembro.s1.loud",
@@ -197,7 +202,8 @@
           "tprAction": {
             "gl": "Bater as palmas con forza e logo parar",
             "es": "Dar palmadas con fuerza y luego parar"
-          }
+          },
+          "lamina": "pal_loud"
         },
         {
           "id": "3_4.setembro.s1.good-morning",
@@ -208,7 +214,8 @@
           "tprAction": {
             "gl": "Estirar os brazos cara ao ceo como ao espertar",
             "es": "Estirar los brazos hacia el cielo como al despertar"
-          }
+          },
+          "lamina": "pal_good_morning"
         },
         {
           "id": "3_4.setembro.s1.bye-bye",
@@ -230,7 +237,8 @@
           "tprAction": {
             "gl": "Coller a man do compañeiro e camiñar xuntos",
             "es": "Coger la mano del compañero y caminar juntos"
-          }
+          },
+          "lamina": "pal_hand_in_hand"
         }
       ]
     },
@@ -272,7 +280,8 @@
           "tprAction": {
             "gl": "Facer unha bóla grande coas mans e rodala",
             "es": "Hacer una pelota grande con las manos y hacerla rodar"
-          }
+          },
+          "lamina": "vocab_45"
         },
         {
           "id": "3_4.setembro.s2.book",
@@ -305,7 +314,8 @@
           "tprAction": {
             "gl": "Poñer unha mochila imaxinaria ás costas",
             "es": "Ponerse una mochila imaginaria a la espalda"
-          }
+          },
+          "lamina": "pal_backpack"
         },
         {
           "id": "3_4.setembro.s2.box",
@@ -316,7 +326,8 @@
           "tprAction": {
             "gl": "Debuxar unha caixa no aire e abrir a tapa",
             "es": "Dibujar una caja en el aire y abrir la tapa"
-          }
+          },
+          "lamina": "pal_box"
         },
         {
           "id": "3_4.setembro.s2.look",
@@ -371,7 +382,8 @@
           "tprAction": {
             "gl": "Levantar entre dous un obxecto imaxinario pesado",
             "es": "Levantar entre dos un objeto imaginario pesado"
-          }
+          },
+          "lamina": "pal_help"
         },
         {
           "id": "3_4.setembro.s2.little",
@@ -404,7 +416,8 @@
           "tprAction": {
             "gl": "Virar unha cunca imaxinaria e mirar dentro",
             "es": "Dar la vuelta a un cuenco imaginario y mirar dentro"
-          }
+          },
+          "lamina": "pal_empty"
         },
         {
           "id": "3_4.setembro.s2.full",
@@ -415,7 +428,8 @@
           "tprAction": {
             "gl": "Encher as meixelas de aire e abrir os brazos",
             "es": "Hinchar los mofletes de aire y abrir los brazos"
-          }
+          },
+          "lamina": "pal_full"
         },
         {
           "id": "3_4.setembro.s2.tidy-up",
@@ -437,7 +451,8 @@
           "tprAction": {
             "gl": "Sinalar con amabilidade a quen lle toca",
             "es": "Señalar con amabilidad a quien le toca"
-          }
+          },
+          "lamina": "pal_your_turn"
         },
         {
           "id": "3_4.setembro.s2.one-by-one",
@@ -459,7 +474,8 @@
           "tprAction": {
             "gl": "Dar as mans en círculo e subilas á vez",
             "es": "Darse las manos en círculo y subirlas a la vez"
-          }
+          },
+          "lamina": "pal_all_together"
         }
       ]
     },
@@ -611,7 +627,8 @@
           "tprAction": {
             "gl": "Acariñar o propio brazo moi amodo",
             "es": "Acariciarse el brazo muy despacio"
-          }
+          },
+          "lamina": "pal_soft"
         },
         {
           "id": "3_4.setembro.s3.gentle",
@@ -622,7 +639,8 @@
           "tprAction": {
             "gl": "Pasar a man con agarimo polo ombro do compañeiro",
             "es": "Pasar la mano con cariño por el hombro del compañero"
-          }
+          },
+          "lamina": "pal_gentle"
         },
         {
           "id": "3_4.setembro.s3.calm",
@@ -633,7 +651,8 @@
           "tprAction": {
             "gl": "Respirar fondo e deixar caer os ombros",
             "es": "Respirar hondo y dejar caer los hombros"
-          }
+          },
+          "lamina": "pal_calm"
         },
         {
           "id": "3_4.setembro.s3.shy",
@@ -677,7 +696,8 @@
           "tprAction": {
             "gl": "Pousar a man no peito e inclinar a cabeza",
             "es": "Poner la mano en el pecho e inclinar la cabeza"
-          }
+          },
+          "lamina": "pal_thank_you"
         },
         {
           "id": "3_4.setembro.s3.next-to-me",
@@ -763,7 +783,8 @@
           "tprAction": {
             "gl": "Beber dun vaso imaxinario a pequenos grolos",
             "es": "Beber de un vaso imaginario a pequeños sorbos"
-          }
+          },
+          "lamina": "pal_cup"
         },
         {
           "id": "3_4.setembro.s4.snack",
@@ -807,7 +828,8 @@
           "tprAction": {
             "gl": "Empurrar coas dúas mans unha parede imaxinaria",
             "es": "Empujar con las dos manos una pared imaginaria"
-          }
+          },
+          "lamina": "pal_push"
         },
         {
           "id": "3_4.setembro.s4.pull",
@@ -818,7 +840,8 @@
           "tprAction": {
             "gl": "Tirar dunha corda imaxinaria cara a un mesmo",
             "es": "Tirar de una cuerda imaginaria hacia uno mismo"
-          }
+          },
+          "lamina": "pal_pull"
         },
         {
           "id": "3_4.setembro.s4.build",
@@ -862,7 +885,8 @@
           "tprAction": {
             "gl": "Fregar a barriga en círculos",
             "es": "Frotarse la barriga en círculos"
-          }
+          },
+          "lamina": "pal_hungry"
         },
         {
           "id": "3_4.setembro.s4.thirsty",

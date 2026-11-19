@@ -1,0 +1,6 @@
+PB Image Bank (global-asp/pb-imagebank @ 7f6a3b2d0213e05c25a088413a487178a4209234)
+Source: https://github.com/global-asp/pb-imagebank
+Usage in Descubre con Lúa: ONLY support scenes (escenas de apoyo), with mandatory attribution to each illustrator.
+
+--- Verbatim License section from README.md ---
+All images in this repository have been released under a Creative Commons license (CC BY 4.0: https://creativecommons.org/licenses/by/4.0/), with the exception of about 40 or so images which are Public Domain. The license for each image can be found in the appropriate file in the `metadata` folder.

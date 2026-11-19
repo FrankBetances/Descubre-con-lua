@@ -21,7 +21,8 @@
           "tprAction": {
             "gl": "Andar a catro patas arqueando as costas",
             "es": "Andar a cuatro patas arqueando la espalda"
-          }
+          },
+          "lamina": "pal_cat"
         },
         {
           "id": "3_4.febreiro.s1.dog",
@@ -32,7 +33,8 @@
           "tprAction": {
             "gl": "Poñer as mans coma orellas caídas",
             "es": "Poner las manos como orejas caídas"
-          }
+          },
+          "lamina": "pal_dog"
         },
         {
           "id": "3_4.febreiro.s1.rabbit",
@@ -250,7 +252,8 @@
           "tprAction": {
             "gl": "Facer cornos pequenos cos índices e camiñar amodo",
             "es": "Hacer cuernos pequeños con los índices y caminar despacio"
-          }
+          },
+          "lamina": "pal_pal_cow"
         },
         {
           "id": "3_4.febreiro.s2.pig",
@@ -294,7 +297,8 @@
           "tprAction": {
             "gl": "Trotar no sitio suxeitando unhas rendas imaxinarias",
             "es": "Trotar en el sitio sujetando unas riendas imaginarias"
-          }
+          },
+          "lamina": "pal_pal_horse"
         },
         {
           "id": "3_4.febreiro.s2.sheep",
@@ -305,7 +309,8 @@
           "tprAction": {
             "gl": "Facer rizos no aire arredor da cabeza",
             "es": "Hacer rizos en el aire alrededor de la cabeza"
-          }
+          },
+          "lamina": "pal_pal_sheep"
         },
         {
           "id": "3_4.febreiro.s2.farm",
@@ -327,7 +332,8 @@
           "tprAction": {
             "gl": "Galopar no sitio cunha perna diante",
             "es": "Galopar en el sitio con una pierna delante"
-          }
+          },
+          "lamina": "pal_gallop"
         },
         {
           "id": "3_4.febreiro.s2.waddle",
@@ -479,7 +485,8 @@
           "tprAction": {
             "gl": "Camiñar pesado a catro patas",
             "es": "Caminar pesado a cuatro patas"
-          }
+          },
+          "lamina": "pal_bear"
         },
         {
           "id": "3_4.febreiro.s3.lion",
@@ -534,7 +541,8 @@
           "tprAction": {
             "gl": "Mover un brazo en zigzag coma unha serpe",
             "es": "Mover un brazo en zigzag como una serpiente"
-          }
+          },
+          "lamina": "pal_pal_snake"
         },
         {
           "id": "3_4.febreiro.s3.crocodile",
@@ -556,7 +564,8 @@
           "tprAction": {
             "gl": "Abrir moito a boca e rugir suave: grrr",
             "es": "Abrir mucho la boca y rugir suave: grrr"
-          }
+          },
+          "lamina": "pal_roar"
         },
         {
           "id": "3_4.febreiro.s3.swing",
@@ -578,7 +587,8 @@
           "tprAction": {
             "gl": "Arrastrarse polo chan coma unha serpe",
             "es": "Arrastrarse por el suelo como una serpiente"
-          }
+          },
+          "lamina": "pal_slither"
         },
         {
           "id": "3_4.febreiro.s3.snap",
@@ -622,7 +632,8 @@
           "tprAction": {
             "gl": "Sinalar algo verde na aula",
             "es": "Señalar algo verde en el aula"
-          }
+          },
+          "lamina": "pal_green"
         },
         {
           "id": "3_4.febreiro.s3.wrinkly",
@@ -708,7 +719,8 @@
           "tprAction": {
             "gl": "Poñer unha máscara imaxinaria diante dos ollos",
             "es": "Ponerse una máscara imaginaria delante de los ojos"
-          }
+          },
+          "lamina": "pal_mask"
         },
         {
           "id": "3_4.febreiro.s4.frog",
@@ -719,7 +731,8 @@
           "tprAction": {
             "gl": "Agacharse coas mans no chan coma unha ra",
             "es": "Agacharse con las manos en el suelo como una rana"
-          }
+          },
+          "lamina": "pal_pal_frog"
         },
         {
           "id": "3_4.febreiro.s4.costume",
@@ -730,7 +743,8 @@
           "tprAction": {
             "gl": "Vestir un disfrace imaxinario e dar unha volta",
             "es": "Ponerse un disfraz imaginario y dar una vuelta"
-          }
+          },
+          "lamina": "pal_costume"
         },
         {
           "id": "3_4.febreiro.s4.tail",
@@ -785,7 +799,8 @@
           "tprAction": {
             "gl": "Voar pola aula cos brazos abertos, amodo",
             "es": "Volar por el aula con los brazos abiertos, despacio"
-          }
+          },
+          "lamina": "pal_fly_action"
         },
         {
           "id": "3_4.febreiro.s4.flap",
@@ -917,7 +932,8 @@
           "tprAction": {
             "gl": "Correr amodo cos brazos abertos coma un paxaro",
             "es": "Correr despacio con los brazos abiertos como un pájaro"
-          }
+          },
+          "lamina": "pal_fly_like_a_bird"
         }
       ]
     }

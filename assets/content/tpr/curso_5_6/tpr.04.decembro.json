@@ -327,7 +327,8 @@
             "gl": "Deitarse e mirar arriba",
             "es": "Tumbarse y mirar arriba"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_stargaze"
         },
         {
           "id": "5_6.decembro.s2.connect-the-dots",
@@ -556,7 +557,8 @@
             "gl": "Contar cos dedos",
             "es": "Contar con los dedos"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_count_the_days"
         },
         {
           "id": "5_6.decembro.s3.turn-the-page-of-the-calendar",
@@ -785,7 +787,8 @@
             "gl": "Baixar os dedos",
             "es": "Bajar los dedos"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_countdown_to_midnight"
         },
         {
           "id": "5_6.decembro.s4.exchange-gifts",
@@ -796,7 +799,8 @@
             "gl": "Dar e recibir un paquete",
             "es": "Dar y recibir un paquete"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_exchange_gifts"
         },
         {
           "id": "5_6.decembro.s4.make-a-card",

@@ -21,7 +21,8 @@
           "tprAction": {
             "gl": "Mover os brazos en ondas longas diante do corpo",
             "es": "Mover los brazos en ondas largas delante del cuerpo"
-          }
+          },
+          "lamina": "pal_sea"
         },
         {
           "id": "3_4.xuno.s1.waves",
@@ -32,7 +33,8 @@
           "tprAction": {
             "gl": "Subir e baixar as mans coma ondas",
             "es": "Subir y bajar las manos como olas"
-          }
+          },
+          "lamina": "pal_waves"
         },
         {
           "id": "3_4.xuno.s1.boat",
@@ -43,7 +45,8 @@
           "tprAction": {
             "gl": "Balancearse sentados coma nun barco",
             "es": "Balancearse sentados como en un barco"
-          }
+          },
+          "lamina": "barco"
         },
         {
           "id": "3_4.xuno.s1.fish",
@@ -54,7 +57,8 @@
           "tprAction": {
             "gl": "Abrir e pechar a boca coma un peixe",
             "es": "Abrir y cerrar la boca como un pez"
-          }
+          },
+          "lamina": "pal_fish"
         },
         {
           "id": "3_4.xuno.s1.seagull",
@@ -109,7 +113,8 @@
           "tprAction": {
             "gl": "Remar sentados cun remo imaxinario",
             "es": "Remar sentados con un remo imaginario"
-          }
+          },
+          "lamina": "pal_row"
         },
         {
           "id": "3_4.xuno.s1.sail",
@@ -153,7 +158,8 @@
           "tprAction": {
             "gl": "Sinalar algo azul na aula",
             "es": "Señalar algo azul en el aula"
-          }
+          },
+          "lamina": "pal_blue"
         },
         {
           "id": "3_4.xuno.s1.wavy",
@@ -175,7 +181,8 @@
           "tprAction": {
             "gl": "Moverse con forza coma un mar bravo",
             "es": "Moverse con fuerza como un mar bravo"
-          }
+          },
+          "lamina": "pal_rough"
         },
         {
           "id": "3_4.xuno.s1.breezy",
@@ -197,7 +204,8 @@
           "tprAction": {
             "gl": "Balancear as mans moi suave, de lado a lado",
             "es": "Balancear las manos muy suave, de lado a lado"
-          }
+          },
+          "lamina": "pal_gentle_waves"
         },
         {
           "id": "3_4.xuno.s1.big-waves",
@@ -250,7 +258,8 @@
           "tprAction": {
             "gl": "Pisar amodo coma sobre area quente",
             "es": "Pisar despacio como sobre arena caliente"
-          }
+          },
+          "lamina": "pal_sand"
         },
         {
           "id": "3_4.xuno.s2.beach",
@@ -479,7 +488,8 @@
           "tprAction": {
             "gl": "Pousar unha cuncha imaxinaria na orella e escoitar",
             "es": "Poner una concha imaginaria en la oreja y escuchar"
-          }
+          },
+          "lamina": "pal_pal_shell"
         },
         {
           "id": "3_4.xuno.s3.crab",
@@ -490,7 +500,8 @@
           "tprAction": {
             "gl": "Abrir e pechar os dedos coma pinzas",
             "es": "Abrir y cerrar los dedos como pinzas"
-          }
+          },
+          "lamina": "pal_crab"
         },
         {
           "id": "3_4.xuno.s3.octopus",
@@ -655,7 +666,8 @@
           "tprAction": {
             "gl": "Agacharse e sinalar o chan con alegría",
             "es": "Agacharse y señalar el suelo con alegría"
-          }
+          },
+          "lamina": "pal_look_a_shell"
         },
         {
           "id": "3_4.xuno.s3.can-you-swim",
@@ -708,7 +720,8 @@
           "tprAction": {
             "gl": "Abanarse cun abano imaxinario",
             "es": "Abanicarse con un abanico imaginario"
-          }
+          },
+          "lamina": "pal_summer"
         },
         {
           "id": "3_4.xuno.s4.holiday",
@@ -719,7 +732,8 @@
           "tprAction": {
             "gl": "Saltar de ledicia cos brazos arriba",
             "es": "Saltar de alegría con los brazos arriba"
-          }
+          },
+          "lamina": "pal_holiday"
         },
         {
           "id": "3_4.xuno.s4.ice-cream",
@@ -752,7 +766,8 @@
           "tprAction": {
             "gl": "Arrastrar unha maleta imaxinaria cunha man",
             "es": "Arrastrar una maleta imaginaria con una mano"
-          }
+          },
+          "lamina": "pal_pal_suitcase"
         },
         {
           "id": "3_4.xuno.s4.photo",
@@ -884,7 +899,8 @@
           "tprAction": {
             "gl": "Acenar amodo coa man mentres se camiña cara atrás",
             "es": "Decir adiós despacio con la mano mientras se camina hacia atrás"
-          }
+          },
+          "lamina": "pal_goodbye"
         },
         {
           "id": "3_4.xuno.s4.see-you-soon",

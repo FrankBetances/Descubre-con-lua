@@ -21,7 +21,8 @@
           "tprAction": {
             "gl": "Mover os dedos por riba da cabeza coma chuvia miúda",
             "es": "Mover los dedos por encima de la cabeza como lluvia fina"
-          }
+          },
+          "lamina": "pal_rain"
         },
         {
           "id": "3_4.abril.s1.sun",
@@ -32,7 +33,8 @@
           "tprAction": {
             "gl": "Abrir os dedos das mans coma raios de sol",
             "es": "Abrir los dedos de las manos como rayos de sol"
-          }
+          },
+          "lamina": "pal_sun"
         },
         {
           "id": "3_4.abril.s1.spring",
@@ -164,7 +166,8 @@
           "tprAction": {
             "gl": "Tapar o sol cunha man e poñer cara seria",
             "es": "Tapar el sol con una mano y poner cara seria"
-          }
+          },
+          "lamina": "pal_cloudy"
         },
         {
           "id": "3_4.abril.s1.foggy",
@@ -197,7 +200,8 @@
           "tprAction": {
             "gl": "Petar co dedo na palma ao pulso da chuvia",
             "es": "Tocar con el dedo en la palma al pulso de la lluvia"
-          }
+          },
+          "lamina": "pal_tap_tap"
         },
         {
           "id": "3_4.abril.s1.hello-sun",
@@ -250,7 +254,8 @@
           "tprAction": {
             "gl": "Pechar o puño coma unha semente pechada",
             "es": "Cerrar el puño como una semilla cerrada"
-          }
+          },
+          "lamina": "pal_seed"
         },
         {
           "id": "3_4.abril.s2.soil",
@@ -261,7 +266,8 @@
           "tprAction": {
             "gl": "Tocar o chan e refregar as mans coma con terra",
             "es": "Tocar el suelo y frotar las manos como con tierra"
-          }
+          },
+          "lamina": "pal_soil"
         },
         {
           "id": "3_4.abril.s2.flower",
@@ -272,7 +278,8 @@
           "tprAction": {
             "gl": "Xuntar os pulsos e abrir os dedos coma pétalos",
             "es": "Juntar las muñecas y abrir los dedos como pétalos"
-          }
+          },
+          "lamina": "pal_flower"
         },
         {
           "id": "3_4.abril.s2.plant",
@@ -479,7 +486,8 @@
           "tprAction": {
             "gl": "Mover os brazos pegados ao corpo moi rápido",
             "es": "Mover los brazos pegados al cuerpo muy rápido"
-          }
+          },
+          "lamina": "pal_bee"
         },
         {
           "id": "3_4.abril.s3.butterfly",
@@ -567,7 +575,8 @@
           "tprAction": {
             "gl": "Gatear polo chan un anaco",
             "es": "Gatear por el suelo un rato"
-          }
+          },
+          "lamina": "pal_crawl"
         },
         {
           "id": "3_4.abril.s3.land",
@@ -578,7 +587,8 @@
           "tprAction": {
             "gl": "Baixar os brazos amodo e pousarse no chan",
             "es": "Bajar los brazos despacio y posarse en el suelo"
-          }
+          },
+          "lamina": "pal_land_action"
         },
         {
           "id": "3_4.abril.s3.tickle",
@@ -708,7 +718,8 @@
           "tprAction": {
             "gl": "Pasar as mans polo chan coma se acariñasemos herba",
             "es": "Pasar las manos por el suelo como si acariciáramos hierba"
-          }
+          },
+          "lamina": "pal_grass"
         },
         {
           "id": "3_4.abril.s4.nest",
@@ -719,7 +730,8 @@
           "tprAction": {
             "gl": "Facer un niño coas mans en forma de cunca",
             "es": "Hacer un nido con las manos en forma de cuenco"
-          }
+          },
+          "lamina": "pal_nest"
         },
         {
           "id": "3_4.abril.s4.egg",
@@ -774,7 +786,8 @@
           "tprAction": {
             "gl": "Coller unha pedra imaxinaria e pousala amodo",
             "es": "Coger una piedra imaginaria y dejarla despacio"
-          }
+          },
+          "lamina": "vigo_nat_118"
         },
         {
           "id": "3_4.abril.s4.chase",
@@ -796,7 +809,8 @@
           "tprAction": {
             "gl": "Manterse nun pé cos brazos abertos e a man dunha persoa adulta preto",
             "es": "Mantenerse en un pie con los brazos abiertos y la mano de una persona adulta cerca"
-          }
+          },
+          "lamina": "pal_balance"
         },
         {
           "id": "3_4.abril.s4.hatch",
@@ -818,7 +832,8 @@
           "tprAction": {
             "gl": "Camiñar amodo mirándoo todo con curiosidade",
             "es": "Caminar despacio mirándolo todo con curiosidad"
-          }
+          },
+          "lamina": "pal_explore"
         },
         {
           "id": "3_4.abril.s4.race",

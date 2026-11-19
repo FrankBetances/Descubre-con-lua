@@ -21,7 +21,8 @@
           "tprAction": {
             "gl": "Mover as mans coma se tocasen auga",
             "es": "Mover las manos como si tocaran agua"
-          }
+          },
+          "lamina": "auga"
         },
         {
           "id": "3_4.maio.s1.soap",
@@ -32,7 +33,8 @@
           "tprAction": {
             "gl": "Fregar un xabón imaxinario entre as mans",
             "es": "Frotar un jabón imaginario entre las manos"
-          }
+          },
+          "lamina": "pal_soap"
         },
         {
           "id": "3_4.maio.s1.towel",
@@ -43,7 +45,8 @@
           "tprAction": {
             "gl": "Secar as mans cunha toalla imaxinaria",
             "es": "Secarse las manos con una toalla imaginaria"
-          }
+          },
+          "lamina": "toalla"
         },
         {
           "id": "3_4.maio.s1.tap",
@@ -98,7 +101,8 @@
           "tprAction": {
             "gl": "Lavar unha boneca imaxinaria con coidado",
             "es": "Lavar una muñeca imaginaria con cuidado"
-          }
+          },
+          "lamina": "pal_wash"
         },
         {
           "id": "3_4.maio.s1.rub",
@@ -109,7 +113,8 @@
           "tprAction": {
             "gl": "Fregar as palmas unha contra a outra",
             "es": "Frotar las palmas una contra otra"
-          }
+          },
+          "lamina": "pal_rub"
         },
         {
           "id": "3_4.maio.s1.splash",
@@ -120,7 +125,8 @@
           "tprAction": {
             "gl": "Salpicar auga imaxinaria coas mans",
             "es": "Salpicar agua imaginaria con las manos"
-          }
+          },
+          "lamina": "charco"
         },
         {
           "id": "3_4.maio.s1.rinse",
@@ -338,7 +344,8 @@
           "tprAction": {
             "gl": "Verter auga imaxinaria dun vaso a outro",
             "es": "Echar agua imaginaria de un vaso a otro"
-          }
+          },
+          "lamina": "pal_pour"
         },
         {
           "id": "3_4.maio.s2.paddle",
@@ -437,7 +444,8 @@
           "tprAction": {
             "gl": "Lavar a cara con auga imaxinaria",
             "es": "Lavarse la cara con agua imaginaria"
-          }
+          },
+          "lamina": "pal_wash_your_face"
         },
         {
           "id": "3_4.maio.s2.in-the-bath",
@@ -479,7 +487,8 @@
           "tprAction": {
             "gl": "Partir un pan imaxinario coas dúas mans",
             "es": "Partir un pan imaginario con las dos manos"
-          }
+          },
+          "lamina": "pal_bread"
         },
         {
           "id": "3_4.maio.s3.milk",
@@ -512,7 +521,8 @@
           "tprAction": {
             "gl": "Suxeitar unha culler imaxinaria e amosala",
             "es": "Sostener una cuchara imaginaria y enseñarla"
-          }
+          },
+          "lamina": "pal_pal_spoon"
         },
         {
           "id": "3_4.maio.s3.plate",
@@ -523,7 +533,8 @@
           "tprAction": {
             "gl": "Debuxar un prato redondo no aire",
             "es": "Dibujar un plato redondo en el aire"
-          }
+          },
+          "lamina": "pal_plate"
         },
         {
           "id": "3_4.maio.s3.bowl",
@@ -556,7 +567,8 @@
           "tprAction": {
             "gl": "Comer cunha culler imaxinaria",
             "es": "Comer con una cuchara imaginaria"
-          }
+          },
+          "lamina": "pal_eat"
         },
         {
           "id": "3_4.maio.s3.drink",
@@ -708,7 +720,8 @@
           "tprAction": {
             "gl": "Abrir un libro imaxinario e mirar o grupo",
             "es": "Abrir un libro imaginario y mirar al grupo"
-          }
+          },
+          "lamina": "pal_story"
         },
         {
           "id": "3_4.maio.s4.page",
@@ -719,7 +732,8 @@
           "tprAction": {
             "gl": "Pasar unha páxina imaxinaria cun dedo",
             "es": "Pasar una página imaginaria con un dedo"
-          }
+          },
+          "lamina": "pal_page"
         },
         {
           "id": "3_4.maio.s4.word",
@@ -796,7 +810,8 @@
           "tprAction": {
             "gl": "Achegarse á orella de quen está ao lado e falar moi baixiño, coa boca á vista",
             "es": "Acercarse a la oreja de quien está al lado y hablar muy bajito, con la boca a la vista"
-          }
+          },
+          "lamina": "pal_whisper"
         },
         {
           "id": "3_4.maio.s4.guess",
@@ -873,7 +888,8 @@
           "tprAction": {
             "gl": "Levar o dedo aos beizos e chiscar un ollo",
             "es": "Llevarse el dedo a los labios y guiñar un ojo"
-          }
+          },
+          "lamina": "pal_secret"
         },
         {
           "id": "3_4.maio.s4.once-upon-a-time",

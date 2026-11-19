@@ -21,7 +21,8 @@
             "gl": "Bicar a fronte do bebé",
             "es": "Besar la frente del bebé"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_forehead"
         },
         {
           "id": "0_2.outubro.s1.eyebrows",
@@ -32,7 +33,8 @@
             "gl": "Pasar o dedo polas cellas",
             "es": "Pasar el dedo por las cejas"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_eyebrows"
         },
         {
           "id": "0_2.outubro.s1.lips",
@@ -43,7 +45,8 @@
             "gl": "Tocar os beizos cun dedo",
             "es": "Tocar los labios con un dedo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_lips"
         },
         {
           "id": "0_2.outubro.s1.ears-and-nose",
@@ -65,7 +68,8 @@
             "gl": "Contar as unllas dos pés",
             "es": "Contar las uñas de los pies"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_toenails"
         },
         {
           "id": "0_2.outubro.s1.palm",
@@ -76,7 +80,8 @@
             "gl": "Facer cóxegas na palma da man",
             "es": "Hacer cosquillas en la palma de la mano"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_palm"
         },
         {
           "id": "0_2.outubro.s1.wrist",
@@ -87,7 +92,8 @@
             "gl": "Rodear a boneca cos dedos",
             "es": "Rodear la muñeca con los dedos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_wrist"
         },
         {
           "id": "0_2.outubro.s1.pat-a-cake",
@@ -98,7 +104,8 @@
             "gl": "Bater palmiñas co bebé",
             "es": "Hacer palmitas con el bebé"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_pat_a_cake"
         },
         {
           "id": "0_2.outubro.s1.pinch-softly",
@@ -164,7 +171,8 @@
             "gl": "Contar os dedos dos pés",
             "es": "Contar los deditos de los pies"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_tiny_toes"
         },
         {
           "id": "0_2.outubro.s1.button-nose",
@@ -250,7 +258,8 @@
             "gl": "Facer masaxe suave nas pernas",
             "es": "Dar un masaje suave en las piernas"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_massage"
         },
         {
           "id": "0_2.outubro.s2.baby-oil",
@@ -261,7 +270,8 @@
             "gl": "Fregar as mans con aceite",
             "es": "Frotar las manos con aceite"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_baby_oil"
         },
         {
           "id": "0_2.outubro.s2.belly",
@@ -327,7 +337,8 @@
             "gl": "Pasar a man moi amodo polo brazo",
             "es": "Pasar la mano muy despacio por el brazo"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_caress"
         },
         {
           "id": "0_2.outubro.s2.pat-softly",
@@ -459,7 +470,8 @@
             "gl": "Acariñar dende a cabeza ata os pés",
             "es": "Acariciar desde la cabeza hasta los pies"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_head_to_toes"
         }
       ]
     },
@@ -556,7 +568,8 @@
             "gl": "Facer caras divertidas no espello",
             "es": "Hacer caras divertidas en el espejo"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_make_faces"
         },
         {
           "id": "0_2.outubro.s3.copy",
@@ -567,7 +580,8 @@
             "gl": "Repetir o xesto que fai o bebé",
             "es": "Repetir el gesto que hace el bebé"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_copy"
         },
         {
           "id": "0_2.outubro.s3.stick-out",
@@ -719,7 +733,8 @@
             "gl": "Estirar unha perna e despois a outra",
             "es": "Estirar una pierna y luego la otra"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_leg"
         },
         {
           "id": "0_2.outubro.s4.foot",
@@ -785,7 +800,8 @@
             "gl": "Deixar que o bebé agarre o dedo",
             "es": "Dejar que el bebé agarre el dedo"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_grasp"
         },
         {
           "id": "0_2.outubro.s4.let-go",
@@ -796,7 +812,8 @@
             "gl": "Abrir a man e soltar o xoguete",
             "es": "Abrir la mano y soltar el juguete"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_let_go"
         },
         {
           "id": "0_2.outubro.s4.bounce-on-knee",
@@ -807,7 +824,8 @@
             "gl": "Brincar o bebé no xeonllo",
             "es": "Hacer botar al bebé en la rodilla"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_bounce_on_knee"
         },
         {
           "id": "0_2.outubro.s4.roll-over",

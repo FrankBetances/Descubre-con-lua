@@ -21,7 +21,8 @@
           "tprAction": {
             "gl": "Meter os brazos nun abrigo imaxinario",
             "es": "Meter los brazos en un abrigo imaginario"
-          }
+          },
+          "lamina": "pal_coat"
         },
         {
           "id": "3_4.xaneiro.s1.hat",
@@ -32,7 +33,8 @@
           "tprAction": {
             "gl": "Poñer un gorro imaxinario ata as orellas",
             "es": "Ponerse un gorro imaginario hasta las orejas"
-          }
+          },
+          "lamina": "pal_hat"
         },
         {
           "id": "3_4.xaneiro.s1.boots",
@@ -43,7 +45,8 @@
           "tprAction": {
             "gl": "Meter os pés en botas imaxinarias e pisar forte",
             "es": "Meter los pies en botas imaginarias y pisar fuerte"
-          }
+          },
+          "lamina": "pal_boots"
         },
         {
           "id": "3_4.xaneiro.s1.scarf",
@@ -98,7 +101,8 @@
           "tprAction": {
             "gl": "Poñer unha prenda imaxinaria pola cabeza",
             "es": "Ponerse una prenda imaginaria por la cabeza"
-          }
+          },
+          "lamina": "pal_put_on"
         },
         {
           "id": "3_4.xaneiro.s1.take-off",
@@ -197,7 +201,8 @@
           "tprAction": {
             "gl": "Poñer un gorro imaxinario ao escoitar a orde",
             "es": "Ponerse un gorro imaginario al oír la orden"
-          }
+          },
+          "lamina": "pal_put_on_your_hat"
         },
         {
           "id": "3_4.xaneiro.s1.zip-your-coat",
@@ -250,7 +255,8 @@
           "tprAction": {
             "gl": "Suxeitar un paraugas imaxinario por riba da cabeza",
             "es": "Sostener un paraguas imaginario por encima de la cabeza"
-          }
+          },
+          "lamina": "pal_pal_umbrella"
         },
         {
           "id": "3_4.xaneiro.s2.puddle",
@@ -261,7 +267,8 @@
           "tprAction": {
             "gl": "Debuxar unha poza redonda no chan co pé",
             "es": "Dibujar un charco redondo en el suelo con el pie"
-          }
+          },
+          "lamina": "pal_puddle"
         },
         {
           "id": "3_4.xaneiro.s2.cloud",
@@ -272,7 +279,8 @@
           "tprAction": {
             "gl": "Facer unha nube grande e mol cos brazos",
             "es": "Hacer una nube grande y blandita con los brazos"
-          }
+          },
+          "lamina": "pal_cloud"
         },
         {
           "id": "3_4.xaneiro.s2.raincoat",
@@ -283,7 +291,8 @@
           "tprAction": {
             "gl": "Poñer a carapucha dun chuvasqueiro imaxinario",
             "es": "Ponerse la capucha de un chubasquero imaginario"
-          }
+          },
+          "lamina": "pal_raincoat"
         },
         {
           "id": "3_4.xaneiro.s2.mud",
@@ -305,7 +314,8 @@
           "tprAction": {
             "gl": "Deixar caer unha pinga desde a punta do dedo",
             "es": "Dejar caer una gota desde la punta del dedo"
-          }
+          },
+          "lamina": "pal_drop"
         },
         {
           "id": "3_4.xaneiro.s2.street",
@@ -327,7 +337,8 @@
           "tprAction": {
             "gl": "Pisar forte cos dous pés no sitio",
             "es": "Pisar fuerte con los dos pies en el sitio"
-          }
+          },
+          "lamina": "pal_stomp"
         },
         {
           "id": "3_4.xaneiro.s2.drip",
@@ -338,7 +349,8 @@
           "tprAction": {
             "gl": "Tocar o chan cos dedos: pin, pin, pin",
             "es": "Tocar el suelo con los dedos: plin, plin, plin"
-          }
+          },
+          "lamina": "pal_drip"
         },
         {
           "id": "3_4.xaneiro.s2.hurry",
@@ -382,7 +394,8 @@
           "tprAction": {
             "gl": "Sacudir as mans coma se estivesen molladas",
             "es": "Sacudir las manos como si estuvieran mojadas"
-          }
+          },
+          "lamina": "pal_wet"
         },
         {
           "id": "3_4.xaneiro.s2.rainy",
@@ -415,7 +428,8 @@
           "tprAction": {
             "gl": "Mirar as botas imaxinarias con cara de sorpresa",
             "es": "Mirarse las botas imaginarias con cara de sorpresa"
-          }
+          },
+          "lamina": "pal_muddy"
         },
         {
           "id": "3_4.xaneiro.s2.put-up-the-umbrella",
@@ -512,7 +526,8 @@
           "tprAction": {
             "gl": "Facer un tren poñendo as mans nos ombros de quen vai diante",
             "es": "Hacer un tren poniendo las manos en los hombros de quien va delante"
-          }
+          },
+          "lamina": "pal_pal_train"
         },
         {
           "id": "3_4.xaneiro.s3.plane",
@@ -523,7 +538,8 @@
           "tprAction": {
             "gl": "Abrir os brazos coma ás e voar amodo",
             "es": "Abrir los brazos como alas y volar despacio"
-          }
+          },
+          "lamina": "pal_pal_plane"
         },
         {
           "id": "3_4.xaneiro.s3.wheel",
@@ -556,7 +572,8 @@
           "tprAction": {
             "gl": "Xirar un volante imaxinario",
             "es": "Girar un volante imaginario"
-          }
+          },
+          "lamina": "pal_drive"
         },
         {
           "id": "3_4.xaneiro.s3.ride",
@@ -578,7 +595,8 @@
           "tprAction": {
             "gl": "Dar un paso adiante ao escoitar a palabra",
             "es": "Dar un paso adelante al oír la palabra"
-          }
+          },
+          "lamina": "pal_go"
         },
         {
           "id": "3_4.xaneiro.s3.beep",
@@ -644,7 +662,8 @@
           "tprAction": {
             "gl": "Camiñar amodo mirando a un lado e ao outro",
             "es": "Caminar despacio mirando a un lado y al otro"
-          }
+          },
+          "lamina": "pal_careful"
         },
         {
           "id": "3_4.xaneiro.s3.beep-beep",
@@ -785,7 +804,8 @@
           "tprAction": {
             "gl": "Premer un interruptor imaxinario e abrir os ollos",
             "es": "Pulsar un interruptor imaginario y abrir los ojos"
-          }
+          },
+          "lamina": "pal_turn_on"
         },
         {
           "id": "3_4.xaneiro.s4.turn-off",
@@ -796,7 +816,8 @@
           "tprAction": {
             "gl": "Premer o interruptor e pechar os ollos",
             "es": "Pulsar el interruptor y cerrar los ojos"
-          }
+          },
+          "lamina": "pal_turn_off"
         },
         {
           "id": "3_4.xaneiro.s4.rest",
@@ -818,7 +839,8 @@
           "tprAction": {
             "gl": "Debuxar no aire unha casa co dedo",
             "es": "Dibujar en el aire una casa con el dedo"
-          }
+          },
+          "lamina": "pal_draw"
         },
         {
           "id": "3_4.xaneiro.s4.read",

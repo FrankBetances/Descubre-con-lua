@@ -256,18 +256,66 @@ Fuente: docs/ORDENES.md (criterios abiertos de O-20261109-3, O-20261109-4 y O-20
 - [ ] Cuerpo del PR #47 al día y merge en main con CI en verde · evidencia:
 
 ## O-20261111-1 · Las escenas de los ejercicios, con su imagen
-Estado: cumplida
+Estado: abierta
 > Orden de Frank (11 nov 2026): los ejercicios de Descubre con Lúa muestran la descripción de la escena solo en texto, sin imagen. Las imágenes son esenciales y deben coincidir exactamente con la escena. Hazlo completo; no recortes alcance. [...] 1. Diagnóstico [...] 2. Si las imágenes existen en el historial y coinciden con su escena, recupéralas [...] 3. Si no existen o no coinciden, créalas nuevas: una por cada escena descrita en el contenido, en un estilo coherente con Lúa (infantil 0-6, claro, sin texto dentro de la imagen, sin emojis del sistema). Cada imagen debe mostrar exactamente lo que dice la descripción [...] 4. Muestra la imagen en el ejercicio, encima del texto, con semanticsLabel en gl y es. [...] 5. Gate [...] 6. [...] Capturas gl/es [...] 7. Con todo en verde y sin criterios abiertos, merge a main y push.
 Fuente: assets/content/leccions/leccions.json (campo reto.escena, 12 escenas distintas, las mismas que en assets/content/unidades_mes) y assets/brand/laminas/ (el set propio de láminas vectoriales)
 
 Diagnóstico: `git log -S` sobre `escena`, `imaxe`, `Image.asset`, `pubspec.yaml` y los assets borrados no da ninguna imagen de estas escenas. El campo `escena` entró en aa8d7fdb (F5, la casa guiada) solo como texto y nunca tuvo imagen: no hay nada que recuperar, se crean las 12.
 
-- [x] Una imagen por cada una de las 12 escenas, con exactamente los objetos que dice su texto, en el set de láminas vectoriales (sin texto ni emoji), compuesta de las láminas que ya existían y de dibujos nuevos en el mismo estilo · evidencia: tools/gen_escenas_retos.py escribe las 12 assets/brand/laminas/escena_*.json (lienzo 160×100, unos 1-6 KB cada una); revisadas una a una en una hoja de contacto renderizada (tres corregidas: la manta salía sobre una cama, la toalla y las cucharas se salían del borde). Recuperadas: 0; nuevas: 12
+- [ ] (REABIERTO por Frank el 11/11/2026: «está MAL cerrada». Recorté el alcance a las 12 escenas de reto y la imagen solo salía en el primer paso; lo que falta está en O-20261111-2) Una imagen por cada una de las 12 escenas, con exactamente los objetos que dice su texto, en el set de láminas vectoriales (sin texto ni emoji), compuesta de las láminas que ya existían y de dibujos nuevos en el mismo estilo · evidencia: tools/gen_escenas_retos.py escribe las 12 assets/brand/laminas/escena_*.json (lienzo 160×100, unos 1-6 KB cada una); revisadas una a una en una hoja de contacto renderizada (tres corregidas: la manta salía sobre una cama, la toalla y las cucharas se salían del borde). Recuperadas: 0; nuevas: 12
 - [x] Un fichero de control con la escena, su texto gl/es, la lámina y la comprobación de qué objetos lleva · evidencia: docs/imagenes-escenas.md y assets/content/escenas/escenas.json, generados por tools/gen_escenas_retos.py
-- [x] La imagen encima del texto de la escena, con semanticsLabel gl/es, en el reto de la lección (casa y aula), en el reto de la semana y en la lección paso a paso de Duolingo · evidencia: test/features/imaxes_escenas_test.dart, «o reto da semana pinta a imaxe encima do texto», «a lección de Duolingo pinta a imaxe da escena» y «a etiqueta para o lector de pantalla vai na lingua», en gl y es; lib/core/brand/imaxe_escena.dart
+- [ ] (REABIERTO: la imagen del peluche salía en pasos de palabras con las que no coincide; ver O-20261111-2) La imagen encima del texto de la escena, con semanticsLabel gl/es, en el reto de la lección (casa y aula), en el reto de la semana y en la lección paso a paso de Duolingo · evidencia: test/features/imaxes_escenas_test.dart, «o reto da semana pinta a imaxe encima do texto», «a lección de Duolingo pinta a imaxe da escena» y «a etiqueta para o lector de pantalla vai na lingua», en gl y es; lib/core/brand/imaxe_escena.dart
 - [x] Gate: falla si una escena del contenido no tiene imagen, si la lámina no existe o si no está en pubspec · evidencia: tools/check_imagenes_escenas.py, en tools/gates.sh
 - [x] Capturas gl/es de varios ejercicios con su imagen · evidencia: test/capturas_test.dart, «escena ·», escribe docs/capturas/escena-duolingo-gl.png y -es, escena-leccion-casa-gl/-es y escena-leccion-aula-gl/-es; más reto-semana-gl/-es
 - [x] Mergeado en main con CI en verde · evidencia: tools/check_imagenes_escenas.py ya corre en main: PR #48 mergeado (merge f83d8233, 11/11/2026) con el run 42957693645 de gates en verde sobre 49579fb5
+
+## O-20261111-2 · Una lámina por cada palabra enseñada, en todos los pasos, y los días de Hoy que no responden
+Estado: abierta
+> Orden de Frank (11 nov 2026). La O-20261111-1 está MAL cerrada: reábrela en docs/ORDENES.md y registra en docs/FALLOS.md el fallo de este turno. Causa: recorte de alcance (solo 12 escenas de reto, imagen solo en el primer paso, imagen del peluche que no coincide con la palabra), gate prometido check_laminas_leccion.py no creado, orden marcada cumplida sin cumplirla. No recortes alcance ni marques nada como cumplido sin prueba. Lee CLAUDE.md, ORDENES.md y FALLOS.md. Commit y push por bloque.
+>
+> A. Imágenes en TODOS los pasos
+> 1. Añade el campo "lamina" a PezaDaLeccion, TprWord y PalabraProxecto, y rellénalo en assets/content/leccions/leccions.json (xaSabe, novas, repasa), tpr/**/*.json y acopros/proxectos_0_2.json. Son 1962 piezas y 200 palabras 0-2.
+> 2. Cada lámina debe representar ESA palabra y su gesto, no la escena del reto. Ejemplos: Curl into a ball = niño enroscado en el suelo; Downhill = niño caminando cuesta abajo; Steep = cuesta muy empinada. Reutiliza una de las 349 de assets/brand/laminas/ solo si coincide de verdad. Si no, crea una nueva en el mismo formato vectorial JSON (LaminaEscena) y con el estilo Lúa, sin texto ni emojis. La lámina de reto (escena_peluche_pano, etc.) solo puede ir en el paso del reto, nunca como imagen de una palabra.
+> 3. Pinta LaminaEscena encima de la palabra en _PasoVista (learn_duolingo.dart) en todos los pasos (pasosDoDia y pasosDoProxecto), en PalabraConXesto (palabras_do_dia.dart) y en la frase de gramática, con semanticsLabel gl/es.
+> 4. Crea docs/laminas-ejercicios.md con una fila por pieza: palabra en/gl/es, gesto, clave, nueva o reutilizada, y por qué coincide.
+> 5. Crea tools/check_laminas_leccion.py y llámalo desde tools/gates.sh. Debe fallar si cualquier pieza enseñada (lección Duolingo, TPR del día, proyecto 0-2, palabras do día) no tiene "lamina", si el fichero no existe, o si una pieza usa una lámina de escena de reto. Sin listas de exclusión.
+> 6. Test de widget: lección curso_4_5.03.2. Pulsa «Continuar» paso a paso y exige un LaminaEscena en cada paso. En Curl, Downhill y Steep la clave no puede ser escena_peluche_pano. Otro test recorre todas las lecciones y todos los pasos de 0-2 y exige lámina.
+>
+> B. Bug de los días en Hoy
+> 1. Que tocar cualquiera de los 5 nodos (learn_nodo_0..4) responda. Los pasados y el de hoy abren su lección. Los futuros abren su lección o muestran un aviso claro en gl/es («Este día ábrese o xoves»); nunca onTap null en silencio. Área de toque ≥ 48 px en el nodo y su etiqueta, sin depender del banner verde.
+> 2. Test: HoxeFamiliasScreen con agora: DateTime(2026, 11, 11). Pulsa learn_nodo_0, learn_nodo_2 y learn_nodo_3 y comprueba la navegación o el aviso, sin tocar learn_banner.
+>
+> C. Cierre
+> dart format, flutter analyze, flutter test y tools/gates.sh en verde. Capturas gl/es en docs/capturas/ de 5 pasos distintos con su dibujo, incluidos Curl, Downhill y Steep, y del aviso de un día futuro. Marca en ORDENES.md solo lo verificado. Con todo verde y 0 piezas sin lámina, abre PR, merge a main y push. Si queda una sola pieza sin lámina o un criterio abierto, NO hagas merge: dime cuántas y cuáles.
+>
+> Prohibido: Play, release, otros repos, git reset --hard, borrar stashes.
+>
+> Respuesta final breve: láminas nuevas y reutilizadas, piezas sin lámina (debe ser 0), SHA del merge, run de CI y lo no verificado en móvil real.
+Fuente: microsoft/fluentui-emoji:assets/<Nombre>/Flat, MIT, Copyright (c) Microsoft Corporation
+Base de contenido: assets/content/leccions/leccions.json (xaSabe, novas, repasa y fraseGramatica de cada lección), assets/content/tpr/**/*.json (las 4.000 palabras del banco, con su tprAction), assets/content/acopros/proxectos_0_2.json (200 palabras de 0-2) y assets/brand/laminas/ (el set propio, 349 láminas + 12 de escena, solo como respaldo donde Fluent no tenga coincidencia). Medido el 11/11/2026: 4.378 palabras y frases distintas (actualizado a 4.389 en check_laminas_leccion.py).
+Regla fija de licencias (Frank, 18/11/2026): Descubre con Lúa **tiene ánimo de lucro**. Ninguna imagen, fuente, sonido, paquete ni contenido de terceros puede tener licencia no comercial (`NC`) ni sin derivadas (`ND`). Quedan descartadas ARASAAC (`CC BY-NC-SA`) y cualquier `CC BY-NC`. Solo valen `MIT`, `Apache 2.0`, `BSD`, `CC0`, `CC BY` y `OFL`. Fluent Emoji (`MIT`, composición de 2-3 emojis para las 97 piezas de `(b)`) sigue valiendo.
+
+- [ ] A1 · El campo `lamina` existe en PezaDaLeccion, TprWord y PalabraProxecto y está relleno en leccions.json, tpr/**/*.json y proxectos_0_2.json: 0 piezas sin lámina · evidencia:
+- [ ] A2 · Cada lámina representa ESA palabra y su gesto; ninguna pieza usa una lámina de escena de reto; reutilizada solo si coincide de verdad, si no, nueva en el set vectorial, sin texto ni emoji · evidencia:
+- [ ] A3 · LaminaEscena encima de la palabra, con semanticsLabel gl/es, en todos los pasos de _PasoVista (pasosDoDia y pasosDoProxecto), en PalabraConXesto y en la frase de gramática · evidencia:
+- [ ] A4 · docs/laminas-ejercicios.md con una fila por pieza: en/gl/es, gesto, clave, nueva o reutilizada, y por qué coincide · evidencia:
+- [x] A5 · tools/check_laminas_leccion.py, llamado desde tools/gates.sh, falla si una pieza enseñada no tiene lámina, si el fichero no existe o si usa una lámina de escena de reto; sin listas de exclusión · evidencia: tools/check_laminas_leccion.py, en tools/gates.sh; ejecutado el 11/11/2026 falla, como debe: 6.351 de 6.382 piezas sin lámina (cuenta también la canción y la rima de cada proyecto de 0-2)
+- [ ] A6 · Test de widget de curso_4_5.03.2 paso a paso (LaminaEscena en cada paso; Curl, Downhill y Steep sin escena_peluche_pano) y test que recorre todas las lecciones y todos los pasos de 0-2 · evidencia:
+- [x] B1 · Los 5 nodos learn_nodo_0..4 responden al toque: pasados y hoy abren su lección; los futuros abren o avisan en gl/es; área de toque ≥ 48 px en nodo y etiqueta, sin depender del banner · evidencia: test/features/ux_l3_test.dart, «os nodos dos días responden sempre, sen tocar o banner», en gl y es; lib/features/familias/widgets/learn_duolingo.dart (causa: Transform.translate dejaba el nodo fuera de la caja que recibe el toque)
+- [x] B2 · Test con HoxeFamiliasScreen y agora 11/11/2026 que pulsa learn_nodo_0, learn_nodo_2 y learn_nodo_3 sin tocar learn_banner · evidencia: test/features/ux_l3_test.dart, «os nodos dos días responden sempre, sen tocar o banner» (monta el portal de casa, comprueba que HoxeFamiliasScreen está, y pulsa los tres nodos)
+- [ ] C1 · dart format, flutter analyze, flutter test y tools/gates.sh en verde · evidencia:
+- [x] C2 · Capturas gl/es de 5 pasos distintos con su dibujo (Curl, Downhill y Steep incluidos) y del aviso de un día futuro · evidencia: test/capturas_test.dart, «lamina do paso ·» y «na casa · aviso dun día futuro ·», escriben docs/capturas/leccion-paso-curl, -downhill, -steep, -bright-orange y -frase (gl y es) y docs/capturas/hoxe-aviso-dia-futuro-gl y -es
+- [ ] C3 · PR, merge a main con CI en verde, con 0 piezas sin lámina · evidencia:
+
+## O-20261111-3 · El arreglo de los días de Hoy, solo, a main
+Estado: abierta
+Absorbida por antigravity/pendiente: el arreglo de los días va en 303be16e, mergeado con main en 6be3d38b; se cumple con el merge de esa rama a main.
+> Orden de Frank (11 nov 2026): Opción 2. Hazlo ahora, sin preguntarme más: 1. Crea la rama fix/dias-hoy desde origin/main (89691006). 2. git cherry-pick 303be16e (solo el arreglo de los días de Hoy y su test test/features/ux_l3_test.dart). Si hay conflicto, PARA y dímelo. 3. Corre en local: dart format --output=none --set-exit-if-changed . && flutter analyze && flutter test --exclude-tags capturas && tools/gates.sh --fast. Todo debe salir en verde. 4. Push de fix/dias-hoy, abre el PR contra main y espera a que el CI salga en verde. Con el CI en verde, autorizo el merge a main y el push. Si el CI sale rojo, NO mergees: pégame el error. 5. Registra la evidencia en docs/ORDENES.md (PR, SHA del merge y run en verde), dentro del mismo PR o en uno aparte de solo documentación. 6. NO toques feat/laminas-ejercicios ni empieces la orden del banco Fluent/Iconify: las láminas las hace otro agente desde esa rama. Entrégame: URL del PR, SHA del merge, run de CI en verde y lo que no hayas verificado.
+Fuente: lib/features/familias/widgets/learn_duolingo.dart (y hoxe_familias_screen.dart, ux_l3_test.dart y criancas_test.dart), tal como quedan en el commit 303be16e de la rama feat/laminas-ejercicios: la parte B de O-20261111-2
+
+- [x] Los cinco nodos de los días de Hoy responden al toque: lunes y hoy abren su lección y un día futuro avisa en gl y es, sin tocar el banner · evidencia: test/features/ux_l3_test.dart («os nodos dos días responden sempre, sen tocar o banner»)
+- [ ] En local, dart format, flutter analyze, flutter test y tools/gates.sh --fast en verde · evidencia:
+- [ ] PR contra main mergeado con el CI en verde · evidencia:
 
 ## O-20261118-1 · Hoy sin vacío, escenas que se entiendan y frases con apoyo visual
 Estado: abierta
@@ -312,7 +360,7 @@ Opción A, tal como la eligió Frank: estimulación del lenguaje universal y edu
 
 ## O-20261118-4 · Un único plan que registre cada commit, para auditar paso a paso
 Estado: abierta
-> Por cierto genera un único plan que vaya guardando cada Commit para poder ir auditando al trabajo, paso por paso
+> Por cierto genera un único plan que vaya guardando cada Commit para poder ir auditando al trabajo, paso a paso
 Fuente: docs/PLAN_ANTIGRAVITY.md (el plan de O-20261118-2 y O-20261118-3, ahora el único plan de lo pendiente)
 
 - [x] Un único plan con todos los pasos numerados (P0.1…P5.4), cada uno con su bloque y si para a esperar a Frank · evidencia: docs/PLAN_ANTIGRAVITY.md, «Pasos»
@@ -334,8 +382,17 @@ Estado: abierta
 > (18/11/2026) No me hagas perder más tiempo que ya esto se discutió y se repartió en otra sesión y quedó todo apuntado
 Fuente: ninguna: orden literal recuperada del historial de la sesión session_01JWGSxXCBGSNhrehHwDcMph (11/11/2026 17:48 UTC); los CSV que cita (docs/revision_4_5_lecciones.csv, docs/cobertura_fluent_distintas.csv, docs/candidatos_banco.csv) no están en ninguna rama de GitHub
 
-- [ ] Solo las cuatro fuentes permitidas; Fluent en estilo Flat (no Color); BY-SA, NC, Flaticon, Freepik y Envato fuera · evidencia:
-- [ ] SHA y LICENSE de cada fuente en tools/banco/<fuente>/<sha>/; créditos con LicenseRegistry, ATTRIBUTION.md y LICENSE.md · evidencia:
-- [ ] tools/banco_a_lamina.py, assets/content/laminas/palabras_laminas.json y tools/check_banco_laminas.py en tools/gates.sh · evidencia:
+- [x] Solo las cuatro fuentes permitidas; Fluent en estilo Flat (no Color); BY-SA, NC, Flaticon, Freepik y Envato fuera · evidencia: tools/check_banco_laminas.py y tools/check_licencias.py (en tools/gates.sh); assets/content/laminas/palabras_laminas.json (solo fluent-flat, composta, propia y dnizfor en P2.2)
+- [x] SHA y LICENSE de cada fuente en tools/banco/<fuente>/<sha>/; créditos con LicenseRegistry, ATTRIBUTION.md y LICENSE.md · evidencia: tools/banco/fluentui-emoji/1ffb34c752ecf5d402f04cfb4b392c77f57c54bc/LICENSE, tools/banco/iconify-icon-sets/81ad501f19cc13e548e4cb6a9c63a3873c87262a/LICENSE, tools/banco/vocabulary-flashcard-dataset/eae41b7c6cd85da0ca4171ce79eb115971b533de/LICENSE, tools/banco/pb-imagebank/7f6a3b2d0213e05c25a088413a487178a4209234/LICENSE, lib/core/brand/licenzas_terceiros.dart, ATTRIBUTION.md y LICENSE.md
+- [x] tools/banco_a_lamina.py, assets/content/laminas/palabras_laminas.json y tools/check_banco_laminas.py en tools/gates.sh · evidencia: tools/banco_a_lamina.py (--test OK), assets/content/laminas/palabras_laminas.json (190 piezas revisadas), tools/check_banco_laminas.py en tools/gates.sh
 - [ ] Cada edad completa a 0 piezas sin lámina, en el orden 4-5, 0-2, 2-3, 3-4, 5-6, 6-7, con hoja de contactos y capturas gl/es · evidencia:
 - [ ] Banco TPR (4.000) cubierto, agrupado por gesto · evidencia:
+
+## O-20261119-1 · Mergear ya las lecciones de todas las edades; el banco TPR, con tope que solo baja
+Estado: abierta
+> (Claude Code) ¿Mergeo ya las lecciones de todas las edades a main mientras Antigravity rehace el banco TPR? — (Frank) Si
+> (Claude Code) propongo partir ese gate en dos: lecciones, frases y 0-2 a 0; banco TPR con tope que solo baja — (Frank) Ok
+Fuente: ninguna: origin/antigravity/pendiente en ef209a9c (P2.1–P2.7, revisado por Claude Code el 19/11/2026); P2.8 y P2.9 quedan fuera, rechazadas en revisión
+
+- [x] tools/check_laminas_leccion.py --tope-tpr: lecciones, frases y 0-2 a 0 piezas sin lámina; banco TPR no puede pasar de tools/tope_tpr_sen_lamina.txt (3419), y el tope solo baja · evidencia: tools/check_laminas_leccion.py, en tools/gates.sh
+- [ ] Mergeado en main con CI en verde · evidencia:

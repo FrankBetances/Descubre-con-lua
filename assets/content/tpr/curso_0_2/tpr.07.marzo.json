@@ -21,7 +21,8 @@
             "gl": "Rodar a pelota vermella",
             "es": "Rodar la pelota roja"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_red_ball"
         },
         {
           "id": "0_2.marzo.s1.blue-cup",
@@ -32,7 +33,8 @@
             "gl": "Amosar o vaso azul",
             "es": "Enseñar el vaso azul"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_blue_cup"
         },
         {
           "id": "0_2.marzo.s1.yellow-duck",
@@ -43,7 +45,8 @@
             "gl": "Flotar o pato amarelo",
             "es": "Flotar el pato amarillo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_yellow_duck"
         },
         {
           "id": "0_2.marzo.s1.colour-card",
@@ -54,7 +57,8 @@
             "gl": "Amosar unha tarxeta de cor",
             "es": "Enseñar una tarjeta de color"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_colour_card"
         },
         {
           "id": "0_2.marzo.s1.scarves",
@@ -65,7 +69,8 @@
             "gl": "Lanzar os panos ao aire",
             "es": "Lanzar los pañuelos al aire"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_scarves"
         },
         {
           "id": "0_2.marzo.s1.rainbow-ribbon",
@@ -76,7 +81,8 @@
             "gl": "Mover a cinta en ondas",
             "es": "Mover la cinta en ondas"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_rainbow_ribbon"
         },
         {
           "id": "0_2.marzo.s1.stacking-cups",
@@ -87,7 +93,8 @@
             "gl": "Empillar os vasos de cores",
             "es": "Apilar los vasos de colores"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_stacking_cups"
         },
         {
           "id": "0_2.marzo.s1.stack",
@@ -175,7 +182,8 @@
             "gl": "Abrir as mans coma o sol",
             "es": "Abrir las manos como el sol"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_sunny_yellow"
         },
         {
           "id": "0_2.marzo.s1.rainbow-coloured",
@@ -250,7 +258,8 @@
             "gl": "Amosar o bote de mel e cheiralo",
             "es": "Mostrar el bote de miel y olerlo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_honey"
         },
         {
           "id": "0_2.marzo.s2.yoghurt",
@@ -261,7 +270,8 @@
             "gl": "Dar unha culleriña de iogur",
             "es": "Dar una cucharadita de yogur"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_yoghurt"
         },
         {
           "id": "0_2.marzo.s2.custard",
@@ -272,7 +282,8 @@
             "gl": "Mover a culler na crema",
             "es": "Mover la cuchara en las natillas"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_custard"
         },
         {
           "id": "0_2.marzo.s2.mashed-banana",
@@ -283,7 +294,8 @@
             "gl": "Esmagar o plátano cun garfo",
             "es": "Chafar el plátano con un tenedor"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_mashed_banana"
         },
         {
           "id": "0_2.marzo.s2.biscuit",
@@ -294,7 +306,8 @@
             "gl": "Partir unha galleta en dous",
             "es": "Partir una galleta en dos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_biscuit"
         },
         {
           "id": "0_2.marzo.s2.raisin",
@@ -479,7 +492,8 @@
             "gl": "Rodar a pelota grande",
             "es": "Rodar la pelota grande"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_beach_ball"
         },
         {
           "id": "0_2.marzo.s3.sensory-ball",
@@ -655,7 +669,8 @@
             "gl": "Abrir as mans para recibila",
             "es": "Abrir las manos para recibirla"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_roll_it_to_me"
         },
         {
           "id": "0_2.marzo.s3.here-it-comes",
@@ -708,7 +723,8 @@
             "gl": "Amosar un gallo de laranxa",
             "es": "Enseñar un gajo de naranja"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_orange_slice"
         },
         {
           "id": "0_2.marzo.s4.blueberry",
@@ -719,7 +735,8 @@
             "gl": "Esmagar un arando e amosalo",
             "es": "Aplastar un arándano y mostrarlo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_blueberry"
         },
         {
           "id": "0_2.marzo.s4.watermelon",

@@ -258,30 +258,39 @@ class CaminoNodos extends StatelessWidget {
                 top: 96,
                 child: lua!,
               ),
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                for (var i = 0; i < etiquetas.length; i++)
-                  Padding(
-                    padding: EdgeInsets.only(top: i == 0 ? 12 : 6),
-                    child: Transform.translate(
-                      // `right: ${rightPosition}px` de la fuente.
-                      offset: Offset(-sangria(i), 0),
-                      child: _Nodo(
-                        key: ValueKey('learn_nodo_$i'),
-                        etiqueta: etiquetas[i],
-                        estado: i < actual || (i == actual && feitoHoxe)
-                            ? EstadoNodo.feito
-                            : i == actual
-                                ? EstadoNodo.actual
-                                : EstadoNodo.bloqueado,
-                        ultimo: i == etiquetas.length - 1,
-                        empezar: empezar,
-                        onTap: () => onNodo(i),
+            SizedBox(
+              width: double.infinity,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  for (var i = 0; i < etiquetas.length; i++)
+                    Padding(
+                      padding: EdgeInsets.only(top: i == 0 ? 12 : 6),
+                      // `right: ${rightPosition}px` de la fuente. Con relleno y
+                      // no con Transform.translate: un nodo trasladado solo al
+                      // pintar queda fuera de la caja de su padre y no recibe el
+                      // toque (O-20261111-2, B: el miércoles no respondía).
+                      child: Padding(
+                        padding: EdgeInsets.only(
+                          right: sangria(i) > 0 ? 2 * sangria(i) : 0,
+                          left: sangria(i) < 0 ? -2 * sangria(i) : 0,
+                        ),
+                        child: _Nodo(
+                          key: ValueKey('learn_nodo_$i'),
+                          etiqueta: etiquetas[i],
+                          estado: i < actual || (i == actual && feitoHoxe)
+                              ? EstadoNodo.feito
+                              : i == actual
+                                  ? EstadoNodo.actual
+                                  : EstadoNodo.bloqueado,
+                          ultimo: i == etiquetas.length - 1,
+                          empezar: empezar,
+                          onTap: () => onNodo(i),
+                        ),
                       ),
                     ),
-                  ),
-              ],
+                ],
+              ),
             ),
           ],
         ),
@@ -330,65 +339,74 @@ class _Nodo extends StatelessWidget {
         color: bloq ? DuoCores.bloqueadoBorde : Colors.white,
       ),
     );
+    // O-20261111-2 (B): los cinco nodos responden siempre. Quien los pinta
+    // decide si abre la lección o avisa de cuándo se abre; aquí nunca hay un
+    // toque mudo. El área de toque cubre el nodo y su etiqueta (≥ 48 px).
     return Semantics(
-      button: !bloq,
+      button: true,
       label: etiqueta,
       child: GestureDetector(
-        onTap: bloq ? null : onTap,
-        child: Column(
-          children: [
-            if (estado == EstadoNodo.actual)
-              SizedBox(
-                width: 88,
-                height: 116,
-                child: Stack(
-                  alignment: Alignment.center,
-                  clipBehavior: Clip.none,
-                  children: [
-                    const Positioned(
-                      top: 28,
-                      child: SizedBox(
-                        width: 88,
-                        height: 88,
-                        child: CircularProgressIndicator(
-                          value: 0,
-                          strokeWidth: 8,
-                          backgroundColor: DuoCores.trilla,
-                          color: DuoCores.verdeClaro,
+        behavior: HitTestBehavior.opaque,
+        onTap: onTap,
+        child: ConstrainedBox(
+          constraints: const BoxConstraints(minWidth: 88, minHeight: 48),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              if (estado == EstadoNodo.actual)
+                SizedBox(
+                  width: 88,
+                  height: 116,
+                  child: Stack(
+                    alignment: Alignment.center,
+                    clipBehavior: Clip.none,
+                    children: [
+                      const Positioned(
+                        top: 28,
+                        child: SizedBox(
+                          width: 88,
+                          height: 88,
+                          child: CircularProgressIndicator(
+                            value: 0,
+                            strokeWidth: 8,
+                            backgroundColor: DuoCores.trilla,
+                            color: DuoCores.verdeClaro,
+                          ),
                         ),
                       ),
-                    ),
-                    Positioned(top: 42, child: boton),
-                    Positioned(
-                      top: 0,
-                      child: Container(
-                        key: const Key('learn_empezar'),
-                        padding: const EdgeInsets.symmetric(
-                            horizontal: 12, vertical: 8),
-                        decoration: BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.circular(12),
-                          border: Border.all(color: DuoCores.trilla, width: 2),
+                      Positioned(top: 42, child: boton),
+                      Positioned(
+                        top: 0,
+                        child: Container(
+                          key: const Key('learn_empezar'),
+                          padding: const EdgeInsets.symmetric(
+                              horizontal: 12, vertical: 8),
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(12),
+                            border:
+                                Border.all(color: DuoCores.trilla, width: 2),
+                          ),
+                          child: Text(empezar.toUpperCase(),
+                              style: const TextStyle(
+                                  fontWeight: FontWeight.w900,
+                                  letterSpacing: 0.6,
+                                  color: DuoCores.textoVerde)),
                         ),
-                        child: Text(empezar.toUpperCase(),
-                            style: const TextStyle(
-                                fontWeight: FontWeight.w900,
-                                letterSpacing: 0.6,
-                                color: DuoCores.textoVerde)),
                       ),
-                    ),
-                  ],
-                ),
-              )
-            else
-              boton,
-            const SizedBox(height: 2),
-            Text(etiqueta,
-                style: TextStyle(
-                    fontSize: 13,
-                    fontWeight: FontWeight.w800,
-                    color: bloq ? AppTheme.textMuted : DuoCores.textoVerde)),
-          ],
+                    ],
+                  ),
+                )
+              else
+                boton,
+              const SizedBox(height: 2),
+              Text(etiqueta,
+                  style: TextStyle(
+                      fontSize: 13,
+                      fontWeight: FontWeight.w800,
+                      color: bloq ? AppTheme.textMuted : DuoCores.textoVerde)),
+            ],
+          ),
         ),
       ),
     );
@@ -403,8 +421,16 @@ class PasoLeccion {
 
   /// O-20261111-1: la escena del reto, con su imagen encima del texto.
   final LocalizedString? escena;
+
+  /// O-20261111-2: las láminas de lo que nombra un paso sin pieza propia
+  /// (las palabras nuevas de la semana, la canción): clave y significado.
+  final List<({String clave, String significado})> laminas;
   const PasoLeccion(
-      {required this.titulo, required this.texto, this.peza, this.escena});
+      {required this.titulo,
+      required this.texto,
+      this.peza,
+      this.escena,
+      this.laminas = const []});
 }
 
 /// Los pasos del día: qué se hace, cada palabra nueva con su voz y la frase.
@@ -413,18 +439,23 @@ List<PasoLeccion> pasosDoDia(Leccion l, int dia, AppLanguage lang) {
   final d =
       l.dias.isEmpty ? null : l.dias[(dia - 1).clamp(0, l.dias.length - 1)];
   final pezas = l.repaso ? l.repasa : l.novas;
-  final escena = l.escena.resolve(lang).isEmpty ? null : l.escena;
+  // O-20261111-2: la lámina de la escena solo va en el paso del reto (el día
+  // cuyo inglés es la frase del reto). Los demás días enseñan los dibujos de
+  // las palabras de la semana, que son las que ese paso nombra.
+  final eReto = d != null && d.en != null && d.en == l.reto.frase.en;
+  final escena = eReto && l.escena.resolve(lang).isNotEmpty ? l.escena : null;
+  final daSemana = [
+    for (final p in pezas)
+      if (p.lamina case final c?)
+        (clave: c, significado: p.significado?.resolve(lang) ?? p.en),
+  ];
   return [
     if (d != null)
       PasoLeccion(
           titulo: d.dia.resolve(lang),
           texto: d.texto.resolve(lang),
-          escena: escena)
-    else if (escena != null)
-      PasoLeccion(
-          titulo: isGl ? 'Preparade a escena' : 'Preparad la escena',
-          texto: '',
-          escena: escena),
+          escena: escena,
+          laminas: escena == null ? daSemana : const []),
     for (final p in pezas)
       if (p.en.isNotEmpty)
         PasoLeccion(
@@ -453,16 +484,27 @@ List<PasoLeccion> pasosDoProxecto(Proxecto02 p, int semana, AppLanguage lang) {
         titulo: isGl ? 'Escoita e fai o xesto' : 'Escucha y haz el gesto',
         texto: w.xesto.resolve(lang),
         peza: PezaDaLeccion(
-            tipo: 'palabra', en: w.en, significado: w.significado),
+            tipo: 'palabra',
+            en: w.en,
+            significado: w.significado,
+            lamina: w.lamina),
       ),
     PasoLeccion(
       titulo: isGl ? 'A canción do proxecto' : 'La canción del proyecto',
       texto: '«${p.cancion.resolve(lang)}»',
+      laminas: [
+        if (p.cancionLamina case final c?)
+          (clave: c, significado: p.cancion.resolve(lang)),
+      ],
     ),
     PasoLeccion(
       titulo: isGl ? 'Rima tradicional' : 'Rima tradicional',
       texto: '',
-      peza: PezaDaLeccion(tipo: 'frase', en: p.rimaEn, significado: p.rima),
+      peza: PezaDaLeccion(
+          tipo: 'frase',
+          en: p.rimaEn,
+          significado: p.rima,
+          lamina: p.rimaLamina),
     ),
   ];
 }
@@ -615,7 +657,33 @@ class _PasoVista extends StatelessWidget {
                   fontWeight: FontWeight.w900,
                   color: Color(0xFF334155))),
           const SizedBox(height: 24),
+          if (paso.laminas.isNotEmpty) ...[
+            Wrap(
+              key: const Key('leccion_paso_laminas'),
+              alignment: WrapAlignment.center,
+              spacing: 8,
+              runSpacing: 8,
+              children: [
+                for (final l in paso.laminas)
+                  LaminaPalabra(
+                      clave: l.clave,
+                      significado: l.significado,
+                      lang: lang,
+                      ancho: paso.laminas.length == 1 ? 240 : 104),
+              ],
+            ),
+            const SizedBox(height: 16),
+          ],
           if (paso.peza case final p?) ...[
+            if (p.lamina case final c?) ...[
+              Center(
+                child: LaminaPalabra(
+                    clave: c,
+                    significado: p.significado?.resolve(lang) ?? p.en,
+                    lang: lang),
+              ),
+              const SizedBox(height: 16),
+            ],
             Center(
               child: BotonEscuchar(
                 audioService: audioService,
