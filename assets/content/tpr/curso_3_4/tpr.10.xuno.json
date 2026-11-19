@@ -402,7 +402,8 @@
           "tprAction": {
             "gl": "Escribir o propio nome no chan co dedo",
             "es": "Escribir el propio nombre en el suelo con el dedo"
-          }
+          },
+          "lamina": "pal_write"
         },
         {
           "id": "3_4.xuno.s2.sandy",
@@ -636,7 +637,8 @@
           "tprAction": {
             "gl": "Retorcer os brazos coma os dun polbo",
             "es": "Retorcer los brazos como los de un pulpo"
-          }
+          },
+          "lamina": "pal_wriggle"
         },
         {
           "id": "3_4.xuno.s3.flip",

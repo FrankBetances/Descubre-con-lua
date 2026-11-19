@@ -295,7 +295,7 @@ Fuente: microsoft/fluentui-emoji:assets/<Nombre>/Flat, MIT, Copyright (c) Micros
 Base de contenido: assets/content/leccions/leccions.json (xaSabe, novas, repasa y fraseGramatica de cada lección), assets/content/tpr/**/*.json (las 4.000 palabras del banco, con su tprAction), assets/content/acopros/proxectos_0_2.json (200 palabras de 0-2) y assets/brand/laminas/ (el set propio, 349 láminas + 12 de escena, solo como respaldo donde Fluent no tenga coincidencia). Medido el 11/11/2026: 4.378 palabras y frases distintas (actualizado a 4.389 en check_laminas_leccion.py).
 Regla fija de licencias (Frank, 18/11/2026): Descubre con Lúa **tiene ánimo de lucro**. Ninguna imagen, fuente, sonido, paquete ni contenido de terceros puede tener licencia no comercial (`NC`) ni sin derivadas (`ND`). Quedan descartadas ARASAAC (`CC BY-NC-SA`) y cualquier `CC BY-NC`. Solo valen `MIT`, `Apache 2.0`, `BSD`, `CC0`, `CC BY` y `OFL`. Fluent Emoji (`MIT`, composición de 2-3 emojis para las 97 piezas de `(b)`) sigue valiendo.
 
-Estado actual de láminas (P2.81): 3.260 de 6.382 piezas sin lámina válida (`leccions`: 0/1.962; `frases`: 0/200; `0-2`: 0/220; `tpr`: **3.260 de 4.000 sin lámina**, 740 cubiertas = 581 compartidas con P2.2–P2.6 + 159 directas revisadas en P2.81).
+Estado actual de láminas (P2.95, sin flutter): **835 de 6.382 piezas sin lámina válida** (`leccions`: 0/1.962; `frases`: 0/200; `0-2`: 0/220; `tpr`: **3.165 de 4.000 cubiertas** = 581 compartidas con `P2.2–P2.6` + 2.584 directas/escenas revisadas en `P2.81–P2.95`, `U=197, R=37, C=607, D=1743`; las 835 restantes están auditadas sin base visual en `docs/tpr_sin_base.md`; quedan abiertos los criterios Flutter/capturas/CI/merge).
 
 - [ ] A1 · El campo `lamina` existe en PezaDaLeccion, TprWord y PalabraProxecto y está relleno en leccions.json, tpr/**/*.json y proxectos_0_2.json: 0 piezas sin lámina · evidencia:
 - [ ] A2 · Cada lámina representa ESA palabra y su gesto; ninguna pieza usa una lámina de escena de reto; reutilizada solo si coincide de verdad, si no, nueva en el set vectorial, sin texto ni emoji · evidencia:
@@ -390,7 +390,7 @@ Fuente: ninguna: orden literal recuperada del historial de la sesión session_01
 - [ ] Cada edad completa a 0 piezas sin lámina, en el orden 4-5, 0-2, 2-3, 3-4, 5-6, 6-7, con hoja de contactos y capturas gl/es · evidencia:
 - [ ] Banco TPR (4.000) cubierto, agrupado por gesto · evidencia:
 
-Estado actual TPR (P2.81): **3.260 de 4.000 piezas TPR sin lámina** (740 cubiertas: 581 compartidas con `P2.2–P2.6` + 159 directas revisadas en `P2.81`, `U=139, R=20`). Eliminadas 3.260 piezas sin revisión o con relleno genérico/homónimos de `P2.8`.
+Estado actual TPR (P2.95, sin flutter): **4.000 de 4.000 piezas TPR auditadas** (`3.165` cubiertas con lámina revisada = `581` compartidas con `P2.2–P2.6` + `2.584` directas/escenas en `P2.81–P2.95`, `U=197, R=37, C=607, D=1743`; `835` auditadas sin base visual en `docs/tpr_sin_base.md`, tope bajado a `835`). Sigue abierto pendiente de revisión de Claude Code, Flutter/CI y decisión de Frank sobre las 835 piezas sin base.
 
 ## O-20261119-1 · Mergear ya las lecciones de todas las edades; el banco TPR, con tope que solo baja
 Estado: cumplida

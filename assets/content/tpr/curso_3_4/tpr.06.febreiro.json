@@ -683,7 +683,8 @@
           "tprAction": {
             "gl": "Engurrar o nariz e a fronte",
             "es": "Arrugar la nariz y la frente"
-          }
+          },
+          "lamina": "pal_wrinkly"
         },
         {
           "id": "3_4.febreiro.s3.proud",

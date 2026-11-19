@@ -589,7 +589,8 @@
             "gl": "Limpar as mans cunha toalliña",
             "es": "Limpiar las manos con una toallita"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_wet_wipe"
         },
         {
           "id": "0_2.maio.s3.wash-up",

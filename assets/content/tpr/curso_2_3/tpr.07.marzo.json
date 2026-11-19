@@ -584,7 +584,8 @@
             "gl": "Poñer unha peza enriba doutra",
             "es": "Poner una pieza encima de otra"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_wooden_block"
         },
         {
           "id": "2_3.marzo.s3.throw-the-dice",
@@ -878,7 +879,8 @@
             "gl": "Limpar as mans cunha servilleta",
             "es": "Limpiarse las manos con una servilleta"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_wipe_hands"
         },
         {
           "id": "2_3.marzo.s4.say-please",

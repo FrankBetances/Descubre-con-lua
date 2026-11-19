@@ -617,7 +617,8 @@
             "gl": "Pasar o pano pola mesa",
             "es": "Pasar el paño por la mesa"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_wipe_the_table"
         },
         {
           "id": "2_3.setembro.s3.carry-carefully",

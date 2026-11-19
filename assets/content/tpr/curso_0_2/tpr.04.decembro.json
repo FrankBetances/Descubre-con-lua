@@ -105,7 +105,8 @@
             "gl": "Envolver o bebé na manta",
             "es": "Envolver al bebé en la manta"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_wrap_up"
         },
         {
           "id": "0_2.decembro.s1.rub-hands",

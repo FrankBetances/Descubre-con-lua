@@ -496,7 +496,8 @@
             "gl": "Subir e baixar os brazos",
             "es": "Subir y bajar los brazos"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_wings_up_wings_down"
         }
       ]
     },

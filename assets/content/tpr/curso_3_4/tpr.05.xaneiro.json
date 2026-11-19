@@ -129,7 +129,8 @@
           "tprAction": {
             "gl": "Subir unha cremalleira imaxinaria de abaixo arriba",
             "es": "Subir una cremallera imaginaria de abajo arriba"
-          }
+          },
+          "lamina": "pal_zip"
         },
         {
           "id": "3_4.xaneiro.s1.button",
@@ -224,7 +225,8 @@
           "tprAction": {
             "gl": "Subir a cremalleira do abrigo imaxinario",
             "es": "Subir la cremallera del abrigo imaginario"
-          }
+          },
+          "lamina": "pal_zip_your_coat"
         },
         {
           "id": "3_4.xaneiro.s1.ready-to-go",

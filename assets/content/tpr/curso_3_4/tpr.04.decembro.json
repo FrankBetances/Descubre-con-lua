@@ -378,7 +378,8 @@
           "tprAction": {
             "gl": "Embrullar un agasallo imaxinario con papel",
             "es": "Envolver un regalo imaginario con papel"
-          }
+          },
+          "lamina": "pal_wrap"
         },
         {
           "id": "3_4.decembro.s2.unwrap",

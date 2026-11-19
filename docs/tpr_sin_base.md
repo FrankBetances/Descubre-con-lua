@@ -5,7 +5,7 @@ auditadas manualmente contra su palabra (`en`/`es`) y su gesto (`tprAction`) y
 se dejan **sin lámina** para no inventar contenido ni usar pictogramas abstractos
 o engañosos (R∞.3).
 
-Total piezas auditadas sin base visual hasta ahora: **801**.
+Total piezas auditadas sin base visual hasta ahora: **835**.
 
 | Tanda | Pieza (`en`) | `es` | Categoría | Gesto TPR | Motivo sin lámina |
 | --- | --- | --- | --- | --- | --- |
@@ -738,8 +738,12 @@ Total piezas auditadas sin base visual hasta ahora: **801**.
 | P2.94 | We solved it together! | ¡Lo resolvimos juntos! | phrase | Chocar las manos | Exclamación de logro grupal duplicada de `solve` / `together`. |
 | P2.83 | We walk on the path so the plants can grow | Caminamos por el camino para que crezcan las plantas | complex | Caminar por la línea | Oración causal normativa demasiado larga para un pictograma sin texto. |
 | P2.87 | Week | Semana | noun | Contar siete dedos | Concepto temporal abstracto («Semana»); sin nombres de días se confunde con calendario. |
+| P2.95 | Weightless | Ingrávido | adjective | Moverse flotando | Sensación física abstracta (`ingrávido`) difícil de mostrar sin escena espacial explícita. |
 | P2.85 | Welcome back | De vuelta | adjective | Abrir los brazos contentos | Fórmula social temporal («De vuelta»); indiferenciable de «welcome» sin texto. |
 | P2.85 | Welcoming | Acogedor | adjective | Abrir los brazos | Adjetivo social abstracto («Acogedor»); redundante con «welcome». |
+| P2.95 | Well done, explorer! | ¡Muy bien, explorador! | phrase | Levantar el pulgar | Fórmula verbal de ánimo (`¡muy bien, explorador!`) duplicada de `thumbs up`. |
+| P2.95 | Well-rehearsed | Bien ensayado | adjective | Repetir un gesto perfecto | Adjetivo participial abstracto (`bien ensayado`) dependiente del contexto. |
+| P2.95 | Well-rested | Descansado | adjective | Estirarse después de descansar | Estado interno tras descansar (`descansado`) duplicado de despertar/dormir. |
 | P2.87 | What a colour! | ¡Qué color! | phrase | Enseñar la fruta a la luz | Exclamación conversacional («¡Qué color!»); sin objeto concreto ni signo escrito. |
 | P2.89 | What animal are you? | ¿Qué animal eres? | phrase | Señalar el disfraz de un amigo | Pregunta conversacional («¿Qué animal eres?»). |
 | P2.89 | What bird is that? | ¿Qué pájaro es ese? | phrase | Señalar el cielo | Pregunta conversacional («¿Qué pájaro es ese?»). |
@@ -750,6 +754,7 @@ Total piezas auditadas sin base visual hasta ahora: **801**.
 | P2.89 | What comes next? | ¿Qué viene después? | phrase | Señalar y esperar | Pregunta secuencial («¿Qué viene después?»). |
 | P2.89 | What day is it today? | ¿Qué día es hoy? | phrase | Señalar el calendario | Pregunta temporal de calendario («¿Qué día es hoy?»). |
 | P2.88 | What did you dream about? | ¿Qué soñaste? | phrase | Tocar la cabeza | Pregunta conversacional («¿Qué soñaste?»). |
+| P2.95 | What do you do to feel calm? | ¿Qué haces para estar tranquilo? | phrase | Respirar hondo | Pregunta conversacional completa (`¿qué haces para estar tranquilo?`). |
 | P2.88 | What do you think will happen? | ¿Qué crees que pasará? | phrase | Tocar la cabeza | Pregunta predictiva («¿Qué crees que pasará?»). |
 | P2.89 | What do you want to be? | ¿Qué quieres ser? | phrase | Señalar varios oficios | Pregunta vocacional conversacional («¿Qué quieres ser?»). |
 | P2.87 | What does the cow say? | ¿Qué dice la vaca? | phrase | Enseñar la vaca y esperar | Pregunta lúdica verbal («¿Qué dice la vaca?»); sin texto no se distingue de «cow» o «moo». |
@@ -761,10 +766,15 @@ Total piezas auditadas sin base visual hasta ahora: **801**.
 | P2.89 | What lives on the seabed? | ¿Qué vive en el fondo del mar? | phrase | Mirar abajo | Pregunta biológica abierta («¿Qué vive en el fondo del mar?»). |
 | P2.87 | What shape is this? | ¿Qué forma es? | phrase | Enseñar una forma y esperar | Pregunta abierta de formas («¿Qué forma es?»); indistinguible de mostrar una figura. |
 | P2.82 | What will happen if it gets warm? | ¿Qué pasará si hace calor? | complex | Encoger los hombros | Pregunta hipotética abstracta. |
+| P2.95 | What's in the bag? | ¿Qué hay en la bolsa? | phrase | Meter la mano y adivinar | Pregunta verbal de adivinanza (`¿qué hay en la bolsa?`). |
 | P2.89 | What's in the basket? | ¿Qué hay en la cesta? | phrase | Asomarse dentro de la cesta | Pregunta conversacional («¿Qué hay en la cesta?»). |
 | P2.82 | What's inside? | ¿Qué hay dentro? | phrase | Agitar la caja y escuchar | Pregunta abierta sobre contenido oculto. |
 | P2.84 | What's your name? | ¿Cómo te llamas? | phrase | Poner la mano en el pecho y luego señalar a otra persona | Pregunta conversacional («¿Cómo te llamas?»). |
+| P2.95 | Whee! | ¡Uiii! | phrase | Levantar al bebé y bajarlo | Interjección exclamativa hablada (`¡uiii!`) sin referente único propio. |
+| P2.95 | When I feel angry, I breathe slowly | Cuando me enfado, respiro despacio | complex | Apretar los puños y respirar | Oración emocional compleja de autorregulación dependiente de texto. |
 | P2.86 | When I say freeze, don't move | Cuando diga «freeze», no te muevas | complex | Pararse como estatua | Regla condicional con palabra citada («Cuando diga freeze, no te muevas»). |
+| P2.95 | When I was two, I couldn't write my name, but now I can | Cuando tenía dos años no sabía escribir mi nombre, pero ahora sí | complex | Escribir en el aire | Oración temporal autobiográfica compleja imposible sin texto. |
+| P2.95 | When the bell rings, we line up | Cuando suena el timbre, nos ponemos en fila | complex | Ponerse en fila | Regla escolar en dos tiempos duplicada de `line up at the bell`. |
 | P2.86 | When the conductor stops, we stop | Cuando el director para, nosotros paramos | complex | Parar con la mano | Regla condicional grupal («Cuando el director para, nosotros paramos»). |
 | P2.89 | When the timer rings, we swap | Cuando suene el temporizador, cambiamos | complex | Cambiar a la señal | Regla condicional con alarma sonora («Cuando suene el temporizador, cambiamos»). |
 | P2.89 | Where are we on the map? | ¿Dónde estamos en el mapa? | phrase | Señalar el mapa | Pregunta espacial sobre el mapa («¿Dónde estamos en el mapa?»). |
@@ -774,22 +784,27 @@ Total piezas auditadas sin base visual hasta ahora: **801**.
 | P2.82 | Where did I go? | ¿Dónde estoy? | phrase | Esconderse detrás de una almohada | Pregunta conversacional abierta («¿Dónde estoy?»). |
 | P2.89 | Where does it go? | ¿Dónde va? | phrase | Coger un juguete y mirar alrededor | Pregunta de clasificación («¿Dónde va?»). |
 | P2.89 | Where does rain come from? | ¿De dónde viene la lluvia? | phrase | Señalar las nubes | Pregunta científica conversacional («¿De dónde viene la lluvia?»). |
+| P2.95 | Where does the river go? | ¿Adónde va el río? | phrase | Seguir con el dedo | Pregunta geográfica verbal (`¿adónde va el río?`). |
 | P2.89 | Where is the squirrel? | ¿Dónde está la ardilla? | phrase | Mirar alrededor con las manos sobre las cejas | Pregunta conversacional de búsqueda («¿Dónde está la ardilla?»). |
 | P2.89 | Where will you go this summer? | ¿Adónde irás este verano? | phrase | Señalar el mapa | Pregunta futura sobre vacaciones («¿Adónde irás este verano?»). |
 | P2.89 | Where's teddy? | ¿Dónde está el osito? | phrase | Buscar el osito debajo de la manta | Pregunta conversacional («¿Dónde está el osito?»). |
 | P2.89 | Where's the birdie? | ¿Dónde está el pajarito? | phrase | Buscar el pájaro con la mano en la frente | Pregunta conversacional («¿Dónde está el pajarito?»). |
 | P2.89 | Where's the monkey? | ¿Dónde está el mono? | phrase | Mirar arriba y abajo buscando un mono | Pregunta conversacional («¿Dónde está el mono?»). |
 | P2.87 | Where's the smile? | ¿Dónde está la sonrisa? | phrase | Tapar y destapar la boca sonriendo | Pregunta lúdica verbal («¿Dónde está la sonrisa?»). |
+| P2.95 | Where's your hand? | ¿Dónde está tu mano? | phrase | Sacar la mano por la manga | Pregunta lúdica de escondite verbal (`¿dónde está tu mano?`). |
 | P2.89 | Where's your nose? | ¿Dónde está tu nariz? | phrase | Buscar la nariz con el dedo | Pregunta conversacional («¿Dónde está tu nariz?»). |
 | P2.86 | Which boat is faster? | ¿Qué barco es más rápido? | phrase | Soplar y comparar | Pregunta comparativa («¿Qué barco es más rápido?»); requiere lectura comparativa. |
 | P2.89 | Which bus goes to the beach? | ¿Qué autobús va a la playa? | phrase | Señalar el horario | Pregunta conversacional sobre rutas («¿Qué autobús va a la playa?»). |
 | P2.86 | Which is the biggest? | ¿Cuál es el más grande? | phrase | Comparar tres cosas | Pregunta comparativa («¿Cuál es el más grande?»). |
 | P2.89 | Which light is the brightest? | ¿Cuál es la luz más brillante? | phrase | Señalar y comparar | Pregunta comparativa («¿Cuál es la luz más brillante?»). |
 | P2.87 | Which one is blue? | ¿Cuál es el azul? | phrase | Enseñar dos objetos y esperar | Pregunta verbal de elección («¿Cuál es el azul?»); requiere frase hablada para distinguirla. |
+| P2.95 | Which one is heavier? | ¿Cuál pesa más? | phrase | Levantar uno en cada mano | Pregunta comparativa verbal (`¿cuál pesa más?`). |
 | P2.89 | Which piece goes here? | ¿Qué pieza va aquí? | phrase | Señalar el hueco | Pregunta de puzle («¿Qué pieza va aquí?»). |
 | P2.89 | Which sense do we use? | ¿Qué sentido usamos? | phrase | Señalar un sentido | Pregunta clasificatoria sobre los sentidos («¿Qué sentido usamos?»). |
 | P2.89 | Which side goes down? | ¿Qué lado baja? | phrase | Señalar un lado | Pregunta sobre balanza («¿Qué lado baja?»). |
+| P2.95 | Whisper to me | Dímelo bajito | phrase | Acercar la oreja | Petición verbal duplicada de `whisper`. |
 | P2.87 | Whispery | Susurrante | adjective | Hablar con la voz muy bajita | Cualidad acústica invisible («Susurrante»). |
+| P2.95 | Whistle sound | Silbido de delfín | noun | Silbar agudo | Sensación auditiva (`silbido de delfín`) imposible de distinguir visualmente. |
 | P2.85 | Who agrees? | ¿Quién está de acuerdo? | phrase | Levantar la mano | Pregunta asamblearia («¿Quién está de acuerdo?»); votación verbal dependiente del habla. |
 | P2.89 | Who am I? | ¿Quién soy yo? | phrase | Señalarse a uno mismo con cara de misterio | Pregunta de adivinanza conversacional («¿Quién soy yo?»). |
 | P2.89 | Who are you today? | ¿Quién eres hoy? | phrase | Señalar el disfraz | Pregunta conversacional de juego («¿Quién eres hoy?»). |
@@ -800,13 +815,32 @@ Total piezas auditadas sin base visual hasta ahora: **801**.
 | P2.89 | Who's this? | ¿Quién es este? | phrase | Señalar una foto y esperar | Pregunta deíctica («¿Quién es este?»). |
 | P2.88 | Wholesome | Sano y bueno | adjective | Tocar la barriga contentos | Cualidad nutricional abstracta («Sano y bueno»). |
 | P2.82 | Why do we wash our hands? | ¿Por qué nos lavamos las manos? | phrase | Encoger los hombros preguntando | Pregunta causal abstracta. |
+| P2.95 | Wiggle | Menear | verb | Menear las caderas de un lado a otro | Duplicada directa de `wiggle hips`. |
 | P2.90 | Wiggly | Inquieto | adjective | Mover todo el cuerpo | Adjetivo abstracto de inquietud corporal sin referente único. |
+| P2.95 | Wild | Salvaje | adjective | Moverse con fuerza como un animal del monte | Adjetivo abstracto (`salvaje`) ambiguo frente a un animal concreto. |
+| P2.95 | Will it float? | ¿Flotará? | phrase | Echar un objeto y esperar | Pregunta predictiva verbal (`¿flotará?`). |
+| P2.95 | Wipe | Secar | verb | Secarse la cara con una toalla imaginaria | Verbo genérico duplicado de `wipe hands` / `wipe the table`. |
+| P2.95 | Wipe clean | Limpiar | verb | Pasar el paño por la cara | Duplicada directa de `wipe the table`. |
+| P2.95 | With Grandma | Con la abuela | complex | Coger la mano de la abuela | Sintagma relacional (`con la abuela`) ambiguo sin historia verbal. |
+| P2.95 | With music | Con música | complex | Bailar únicamente mientras suena la música | Condición temporal (`mientras suena la música`) dependiente de audio. |
+| P2.95 | Wobble and hold | Tambalearse y aguantar | verb | Tambalearse sin caer | Consigna motriz compuesta duplicada de `wobble`. |
+| P2.95 | Wobbly | Bamboleante | adjective | Bambolear todo el cuerpo como una medusa | Adjetivo duplicado de `wobble`. |
 | P2.85 | Wonderful | Maravilloso, maravillosa | adjective | Abrir los brazos y mirar alrededor con admiración | Adjetivo valorativo genérico («Maravilloso»). |
+| P2.95 | Woof | Ladrar | verb | Hacer «guau» con suavidad | Onomatopeya sonora (`ladrar`) imposible sin sonido ni bocadillo de texto. |
 | P2.86 | Word | Palabra | noun | Llevar la mano de la boca hacia delante al decir una palabra | Unidad lingüística abstracta («Palabra»); no se representa sin texto ni letras. |
+| P2.95 | Wriggly | Que se retuerce | adjective | Retorcer el cuerpo | Adjetivo duplicado de `wriggle`. |
+| P2.95 | Write a thank-you note | Escribir una nota de agradecimiento | verb | Escribir en el aire | Variante textual duplicada de `write a card`. |
+| P2.95 | Write down | Anotar | verb | Escribir en el aire | Verbo genérico duplicado de `write`. |
+| P2.95 | Write your name | Escribir tu nombre | verb | Escribir en el aire | Consigna alfabética (`escribir tu nombre`) dependiente de texto. |
 | P2.89 | Yesterday | Ayer | noun | Señalar hacia atrás | Adverbio temporal pasado («Ayer»). |
 | P2.89 | Yesterday was Monday, today is Tuesday | Ayer fue lunes, hoy es martes | complex | Señalar atrás y al suelo | Oración sobre nombres escritos de días de la semana («Ayer fue lunes, hoy es martes»). |
 | P2.89 | You and me | Tú y yo | complex | Señalar a otra persona y luego a uno mismo | Pronombres deícticos conversacionales («Tú y yo»). |
+| P2.95 | You can do it! | ¡Tú puedes! | phrase | Levantar el pulgar | Exclamación motivacional (`¡tú puedes!`) duplicada de `thumbs up`. |
 | P2.89 | You first, then me | Tú primero, luego yo | phrase | Señalar al amigo y a sí mismo | Regla conversacional de turno («Tú primero, luego yo»). |
 | P2.89 | You think this, but I think that | Tú piensas esto, pero yo pienso aquello | complex | Señalar a uno y a sí | Contraste mental abstracto («Tú piensas esto, pero yo pienso aquello»). |
+| P2.95 | You're a great friend | Eres un gran amigo | phrase | Levantar el pulgar | Cumplido verbal afectivo (`eres un gran amigo`). |
 | P2.82 | Younger | Más joven | adjective | Encogerse | Adjetivo comparativo abstracto («Más joven») sin pareja fija. |
+| P2.95 | Your hand in mine | Tu mano en la mía | complex | Coger la mano del bebé | Expresión afectiva relacional (`tu mano en la mía`). |
+| P2.95 | Yuck or yum? | ¿Puaj o ñam? | phrase | Poner dos caras | Pregunta dicotómica conversacional (`¿puaj o ñam?`). |
 | P2.87 | Yum yum! | ¡Ñam ñam! | phrase | Hacer «ñam ñam» abriendo la boca | Exclamación onomatopéyica pura («¡Ñam ñam!»); indistinguible de «delicious» sin texto. |
+| P2.95 | Zippy | Rapidísimo | adjective | Pasar la mano muy rápido | Adjetivo coloquial de velocidad (`rapidísimo`) ambiguo frente a correr. |

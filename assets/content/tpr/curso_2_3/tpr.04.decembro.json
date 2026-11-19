@@ -553,7 +553,8 @@
             "gl": "Coller o tirador e subilo",
             "es": "Coger el tirador y subirlo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_zipper_pull"
         },
         {
           "id": "2_3.decembro.s3.sleeve",

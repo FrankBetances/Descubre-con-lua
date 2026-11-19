@@ -337,7 +337,8 @@
             "gl": "Xuntar as dúas metades",
             "es": "Juntar las dos mitades"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_whole"
         },
         {
           "id": "4_5.decembro.s2.weigh",
@@ -884,7 +885,8 @@
             "gl": "Facer que se escribe",
             "es": "Hacer que se escribe"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_write_a_card"
         },
         {
           "id": "4_5.decembro.s4.generous",

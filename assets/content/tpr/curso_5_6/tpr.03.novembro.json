@@ -33,7 +33,8 @@
             "gl": "Baixar unha man pesada",
             "es": "Bajar una mano pesada"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_weight"
         },
         {
           "id": "5_6.novembro.s1.gram",

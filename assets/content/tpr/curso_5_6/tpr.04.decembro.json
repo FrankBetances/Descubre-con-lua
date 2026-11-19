@@ -786,7 +786,8 @@
             "gl": "Facer un círculo coas mans",
             "es": "Hacer un círculo con las manos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_wreath"
         },
         {
           "id": "5_6.decembro.s4.carol-singers",

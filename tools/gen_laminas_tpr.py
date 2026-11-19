@@ -275,6 +275,7 @@ from tpr_tandas import (  # noqa: E402
     tanda_10,
     tanda_11,
     tanda_12,
+    tanda_13,
 )
 
 TANDAS: list[tuple[str, object]] = [
@@ -290,6 +291,7 @@ TANDAS: list[tuple[str, object]] = [
     ("P2.91", tanda_10),
     ("P2.93", tanda_11),
     ("P2.94", tanda_12),
+    ("P2.95", tanda_13),
 ]
 
 TANDA_FLUENT_DIRECTOS: dict[str, tuple[str, str, str]] = {}

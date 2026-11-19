@@ -399,7 +399,8 @@
             "gl": "Bocexar coma un hipopótamo",
             "es": "Bostezar como un hipopótamo"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_yawn_wide"
         },
         {
           "id": "2_3.febreiro.s2.jungly",
@@ -895,7 +896,8 @@
             "gl": "Menear o rabo do disfrace",
             "es": "Menear la cola del disfraz"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_wiggle_your_tail"
         },
         {
           "id": "2_3.febreiro.s4.dressed-up",

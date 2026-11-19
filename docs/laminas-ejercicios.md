@@ -2,7 +2,7 @@
 
 Generado por `tools/gen_laminas_palabras.py`. Una fila por palabra o frase que se enseña (lección paso a paso, palabras del día, TPR y proyecto de 0-2) y que ya tiene su lámina.
 
-Con lámina: 3518. **Sin lámina todavía: 860** (las cuenta y las nombra `python3 tools/check_laminas_leccion.py`).
+Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `python3 tools/check_laminas_leccion.py`).
 
 | Palabra (en) | gl | es | Gesto | Lámina | Nueva o reutilizada | Por qué coincide |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -3386,11 +3386,14 @@ Con lámina: 3518. **Sin lámina todavía: 860** (las cuenta y las nombra `pytho
 | Webbed | Palmeado | Palmeado | Abrir los dedos | `pal_webbed` | nova | Pata palmeada de pato abierta mostrando las membranas entre los tres dedos. |
 | Weigh up | Pesar e comparar | Pesar y comparar | Sostener dos cosas y comparar | `pal_weigh_up` | nova | Niño sopesando una manzana pesada y una pluma ligera con las manos. |
 | Weigh | Pesar | Pesar | Levantar dos objetos y comparar | `pal_weigh` | composta | Balanza comparando el peso de una manzana y una pluma ligera. |
+| Weight | Peso | Peso | Bajar una mano pesada | `pal_weight` | nova | Pesa maciza de hierro sobre la mesa con flecha descendente de peso. |
 | Welcome aboard! | Benvidos a bordo! | ¡Bienvenidos a bordo! | — | `pal_welcome_aboard` | composta | Bienvenida sonriente al subir a bordo del viaje. |
 | Welcome! | Benvido! | ¡Bienvenido! | Abrir los brazos al recibirlo | `pal_welcome` | composta | Puerta abierta recibiendo con los brazos extendidos en bienvenida. |
 | Well-cared-for | Ben coidado | Bien cuidado | Acariciar una planta | `pal_well_cared_for` | composta | Planta cuidada con mimo acariciada suavemente por un niño. |
 | Wellies | Botas de auga | Botas de agua | Poner las botitas al bebé | `botas` | reutilizada | Par de botas de agua amarillas del set propio. |
 | Wellington boots | Botas de goma | Botas de goma | Ponerse las botas de goma | `botas` | reutilizada | Botas de agua altas para la lluvia del set propio. |
+| Wet sponge | Esponxa mollada | Esponja mojada | Escurrir la esponja | `pal_wet_sponge` | nova | Esponja amarilla porosa goteando agua sobre un charco azul. |
+| Wet wipe | Toalliña húmida | Toallita húmeda | Limpiar las manos con una toallita | `pal_wet_wipe` | nova | Paquete azul de toallitas húmedas con una toallita blanca saliendo y gotitas. |
 | Wet | mollado | mojado | — | `pal_wet` | composta | Gotas grandes de agua cubriendo la escena: mojado. |
 | Whale | Balea | Ballena | Echar agua hacia arriba con las manos desde la cabeza | `pal_whale` | banco | Ballena azul soltando chorro de agua. |
 | What do you want? | Que queres? | ¿Qué quieres? | — | `pal_what_do_you_want` | composta | Signo de pregunta junto a dos opciones para elegir. |
@@ -3426,6 +3429,7 @@ Con lámina: 3518. **Sin lámina todavía: 860** (las cuenta y las nombra `pytho
 | White sail | Vela branca | Vela blanca | Abrir los brazos como una vela | `pal_white_sail` | nova | Vela triangular blanca bien desplegada sobre el barco en el agua. |
 | White | Branco, branca | Blanco, blanca | Señalar algo blanco en el aula | `pal_white` | nova | Mancha/círculo blanco con contorno nítido. |
 | Who runs? | Quen corre? | ¿Quién corre? | — | `pal_who_runs` | composta | Niño corriendo rápido con flecha. |
+| Whole | Enteiro | Entero | Juntar las dos mitades | `pal_whole` | nova | Naranja entera cerrada con dos flechas convergiendo hacia el centro. |
 | Whoosh around | Correr coma o vento | Correr como el viento | Correr en círculo haciendo «fiuuu» | `pal_whoosh_around` | nova | Niño corriendo rápido en círculo con líneas de viento. |
 | Whoosh! | Fiuuu! | ¡Fiuuu! | Mover los brazos como el viento | `pal_whoosh` | nova | Ráfaga rápida de viento barriendo hojas en curva ascendente. |
 | Whose turn is it? | De quen é a quenda? | ¿De quién es el turno? | Mirar alrededor | `pal_whose_turn` | composta | Dos niños mirándose alternando el turno con la pelota en medio. |
@@ -3434,7 +3438,9 @@ Con lámina: 3518. **Sin lámina todavía: 860** (las cuenta y las nombra `pytho
 | Wide | Ancho, ancha | Ancho, ancha | Abrir mucho las piernas y los brazos | `pal_wide` | nova | Niño abriendo mucho brazos y piernas con flechas hacia lo ancho. |
 | Wide-eyed | Cos ollos abertos | Con los ojos abiertos | Abrir mucho los ojos sorprendidos | `pal_wide_eyed` | nova | Cara asombrada con los ojos redondos abiertos de par en par. |
 | Wider | Máis ancho | Más ancho | Abrir los brazos más | `pal_wider` | nova | Comparación visual de un rectángulo estrecho frente a otro más ancho. |
+| Wiggle hips | Menear as cadeiras | Menear las caderas | Menear las caderas riendo | `pal_wiggle_hips` | nova | Niño con manos en la cintura moviendo las caderas de un lado a otro. |
 | Wiggle your fingers | Move os dedos | Mueve los dedos | Mover los dedos en el aire como si tocaran el piano | `pal_wiggle_your_fingers` | nova | Dos manos moviendo rápidamente las puntas de los dedos. |
+| Wiggle your tail | Menear o rabo | Menear la cola | Menear la cola del disfraz | `pal_wiggle_your_tail` | nova | Perrito marrón moviendo alegremente la cola de un lado a otro. |
 | Wild and free | Salvaxe e libre | Salvaje y libre | Correr con los brazos abiertos | `pal_wild_and_free` | composta | Niño corriendo libre con los brazos bien abiertos en el campo. |
 | Wild wind | Vento forte | Viento fuerte | Mover los brazos con fuerza | `pal_wild_wind` | nova | Viento fuerte en ráfagas doblando un árbol y arrastrando hojas. |
 | Will it be light? | Será lixeira? | ¿Será ligera? | — | `pal_will_it_be_light` | composta | Pluma ligerísima flotando suavemente hacia arriba. |
@@ -3452,16 +3458,21 @@ Con lámina: 3518. **Sin lámina todavía: 860** (las cuenta y las nombra `pytho
 | Window | Fiestra | Ventana | Dibujar un cuadrado en el aire y mirar a través | `pal_window` | banco | Ventana abierta mirando al cielo azul. |
 | windy | con vento | con viento | — | `pal_windy` | banco | Viento fuerte agitando árbol, cometa, molinillo y velero. |
 | Wing | Á | Ala | Abrir un brazo como un ala | `pal_wing` | banco | Ala blanca emplumada. |
+| Wings up, wings down | Ás arriba, ás abaixo | Alas arriba, alas abajo | Subir y bajar los brazos | `pal_wings_up_wings_down` | nova | Pájaro batiendo las alas con flechas vertical hacia arriba y hacia abajo. |
 | Wings | Ás | Alas | Abrir los brazos amplios como alas grandes | `pal_wings` | composta | Par de alas blancas grandes desplegadas a ambos lados. |
+| Wingspan | Envergadura | Envergadura | Estirar los brazos al máximo | `pal_wingspan` | nova | Ave con las alas abiertas de extremo a extremo y flecha doble midiendo su envergadura. |
 | Winner | Gañador | Ganador | Levantar los brazos contentos | `pal_winner` | composta | Trofeo de premio y ganador en el podio con los brazos levantados. |
 | Winning | Gañando | Ganando | Sonreír y dar palmas | `pal_winning` | composta | Trofeo brillante dorado y niño sonriendo y aplaudiendo contento. |
 | Winter | Inverno | Invierno | Abrazarse a uno mismo con frío | `pal_winter` | banco | Paisaje de invierno con nieve, muñeco de nieve y niños abrigados. |
+| Wipe hands | Limpar as mans | Limpiarse las manos | Limpiarse las manos con una servilleta | `pal_wipe_hands` | nova | Dos manos sujetando una servilleta para secarse y limpiarse. |
+| Wipe the table | Limpar a mesa | Limpiar la mesa | Pasar el paño por la mesa | `pal_wipe_the_table` | nova | Paño amarillo deslizándose sobre la superficie de la mesa para limpiarla. |
 | Wipers | Limpaparabrisas | Limpiaparabrisas | Mover los brazos como limpiaparabrisas | `pal_wipers` | nova | Parabrisas con dos limpiaparabrisas barriendo en arco las gotas. |
 | Wish | Desexar | Desear | Cerrar los ojos y cruzar los dedos | `pal_wish` | composta | Estrella brillante en la noche al pedir un deseo. |
 | With the drum | Co tambor | Con el tambor | Caminar al pulso de un tambor imaginario | `pal_with_the_drum` | composta | Tambor marcando el pulso mientras el niño camina al ritmo. |
 | With the wind | Co vento | Con el viento | Correr con los brazos abiertos | `pal_with_the_wind` | composta | Viento soplando fuerte empujando al niño que corre con brazos abiertos. |
 | Wizard | Mago | Mago | Mover una varita | `pal_wizard` | nova | Sombrero azul estrellado de mago junto a varita mágica brillante. |
 | Wobble board | Táboa de equilibrio | Tabla de equilibrio | Balancearse encima de la tabla | `pal_wobble_board` | nova | Tabla curva de equilibrio con niño encima abriendo los brazos. |
+| Wobble | Bambear | Tambalearse | Tambalearse como una gelatina | `pal_wobble` | nova | Gelatina rosa sobre plato tambaleándose con ondas laterales. |
 | Wobbly bridge | Ponte que bambea | Puente que se tambalea | Caminar con equilibrio | `pal_wobbly_bridge` | nova | Puente ondulado que se mueve y niño cruzando en equilibrio con brazos en cruz. |
 | Wobbly bubble | Burbulla que treme | Burbuja temblorosa | Mover las manos temblando | `pal_wobbly_bubble` | nova | Pompa grande ovalada deformándose y temblando en el aire. |
 | Wobbly jelly | Xelatina que treme | Gelatina temblorosa | Mover el plato para que tiemble | `pal_wobbly_jelly` | nova | Gelatina rosa temblando sobre un plato blanco con ondas de vibración. |
@@ -3470,6 +3481,7 @@ Con lámina: 3518. **Sin lámina todavía: 860** (las cuenta y las nombra `pytho
 | Wobbly tower | Torre que bambea | Torre que se tambalea | Mover la torre con cuidado | `pal_wobbly_tower` | nova | Torre alta de bloques inclinada tambaleándose a punto de caer. |
 | Wolf costume | Disfrace de lobo | Disfraz de lobo | Ponerse las orejas de lobo | `pal_wolf_costume` | composta | Disfraz de lobo preparado para representar el cuento. |
 | Wolf | Lobo | Lobo | Caminar a cuatro patas despacio | `pal_wolf` | banco | Lobo gris de frente con orejas en punta, coincidencia directa. |
+| Wooden block | Bloque de madeira | Bloque de madera | Poner una pieza encima de otra | `pal_wooden_block` | nova | Bloques de madera natural con veta apilados sobre la mesa. |
 | Wooden plank | Táboa de madeira | Tabla de madera | Llevar una tabla entre dos | `pal_wooden_plank` | nova | Dos niños llevando juntos una tabla larga de madera entre los dos. |
 | Wooden spoon | Culler de madeira | Cuchara de madera | Golpear la cuchara de madera en una olla | `pal_wooden_spoon` | nova | Cuchara de madera golpeando el borde de una olla metálica. |
 | Wooden top | Trompo de madeira | Trompo de madera | Hacer girar el trompo | `pal_wooden_top` | nova | Trompo clásico de madera con raya roja girando en la mesa. |
@@ -3484,15 +3496,25 @@ Con lámina: 3518. **Sin lámina todavía: 860** (las cuenta y las nombra `pytho
 | Worm | Miñoca | Lombriz | Mover un dedo en ondas como una lombriz | `pal_worm` | banco | Lombriz rosada ondulada. |
 | Worry doll | Boneca quitapesares | Muñeca quitapenas | Susurrar a una muñeca | `pal_worry_doll` | nova | Muñeca quitapenas tradicional vestida con franjas de colores vivos. |
 | Wrap in a towel | Envolver na toalla | Envolver en la toalla | Envolver al bebé y abrazarlo | `pal_wrap_in_a_towel` | composta | Envolver suavemente al bebé en su toalla y darle un abrazo. |
+| Wrap up | Abrigar | Abrigar | Envolver al bebé en la manta | `pal_wrap_up` | nova | Bebé abrigado y arropado dentro de una manta azul cálida. |
+| Wrap | Embrullar | Envolver | Envolver un regalo imaginario con papel | `pal_wrap` | nova | Caja amarilla siendo envuelta con papel rosa desde ambos lados. |
 | Wrapping paper | Papel de agasallo | Papel de regalo | Arrugar papel de regalo | `pal_wrapping_paper` | composta | Paquete envuelto con papel de colores y lazo. |
+| Wreath | Coroa de flores | Corona de flores | Hacer un círculo con las manos | `pal_wreath` | nova | Corona circular de hojas verdes decorada con flores y lazo rojo. |
 | Wriggle toes | Menear os dedos dos pés | Mover los deditos | Mover los deditos en la arena | `pal_wriggle_toes` | nova | Dos pies descalzos en la arena moviendo los deditos con ondas. |
+| Wriggle | Retorcerse | Retorcerse | Retorcer los brazos como los de un pulpo | `pal_wriggle` | nova | Oruga verde retorciéndose en curvas sinuosas sobre la hierba. |
+| Wring out | Espremer | Escurrir | Retorcer un paño mojado | `pal_wring_out` | nova | Paño mojado retorcido escurriendo gotas de agua hacia el suelo. |
+| Wrinkly | Engurrado, engurrada | Arrugado, arrugada | Arrugar la nariz y la frente | `pal_wrinkly` | nova | Hoja de papel muy arrugada con pliegues marcados en zigzag. |
 | Wrist | Boneca | Muñeca | Rodear la muñeca con los dedos | `pal_wrist` | composta | Mano señalando la muñeca rodeada por pulsera. |
+| Write a card | Escribir unha postal | Escribir una postal | Hacer que se escribe | `pal_write_a_card` | nova | Tarjeta abierta decorada con lápiz azul escribiendo dentro. |
+| Write | Escribir | Escribir | Escribir el propio nombre en el suelo con el dedo | `pal_write` | nova | Lápiz amarillo escribiendo un trazo ondulado sobre una hoja blanca. |
 | Xylophone | Xilófono | Xilófono | Golpear las teclas del xilófono | `pal_xylophone` | nova | Xilófono infantil de láminas de colores con baqueta. |
+| Yawn wide | Bocexar moito | Bostezar mucho | Bostezar como un hipopótamo | `pal_yawn_wide` | nova | Cara con los ojos cerrados y la boca muy abierta bostezando. |
 | Yawn | Bocexar | Bostezar | Abrir mucho la boca y estirar los brazos | `pal_yawn` | composta | Niño abriendo mucho la boca en un bostezo de sueño. |
 | Yellow duck | Pato amarelo | Pato amarillo | Flotar el pato amarillo | `pal_yellow_duck` | banco | Pato amarillo de agua. |
 | Yellow | Amarelo, amarela | Amarillo, amarilla | Señalar algo amarillo en el aula | `pal_yellow` | nova | Objetos de color amarillo vivo señalados sobre la mesa. |
 | Yes, please | Si, por favor | Sí, por favor | Asentir con la cabeza y extender la mano | `pal_yes_please` | composta | Pulgar hacia arriba aceptando con gusto. |
 | Yesterday the train went slowly. | Onte o tren foi amodo. | Ayer el tren fue despacio. | — | `pal_yesterday_the_train_went_slowly` | composta | Tren avanzando despacio al ritmo de una tortuga. |
+| Yoga mat | Esteira de ioga | Esterilla de yoga | Extender la esterilla | `pal_yoga_mat` | nova | Esterilla morada extendida en el suelo con un extremo enrollado. |
 | Yoghurt | Iogur | Yogur | Dar una cucharadita de yogur | `pal_yoghurt` | banco | Cuenco de yogur con cucharita. |
 | You are blowing softly. | Estás soprando suave. | Estás soplando suave. | — | `pal_you_are_blowing_softly` | composta | Soplando un aire suave capaz de mover una pluma ligera. |
 | You are happy! | Estás contento! | ¡Estás contento! | — | `pal_you_are_happy` | composta | Cara muy sonriente y contenta. |
@@ -3522,5 +3544,8 @@ Con lámina: 3518. **Sin lámina todavía: 860** (las cuenta y las nombra `pytho
 | Zigzag | Zigzag | Zigzag | Dibujar un zigzag | `pal_zigzag` | nova | Trazo continuo en zigzag con ángulos marcados de punta a punta. |
 | Zip it up! | Sobe a cremalleira! | ¡Sube la cremallera! | Subir la cremallera | `pal_zip_it_up` | nova | Cremallera del abrigo cerrándose completamente hasta arriba. |
 | Zip up | Subir a cremalleira | Subir la cremallera | Subir la cremallera hasta arriba | `pal_zip_up` | nova | Subiendo la cremallera abierta de la chaqueta hacia arriba. |
+| Zip your coat | Pecha o abrigo | Cierra el abrigo | Subir la cremallera del abrigo imaginario | `pal_zip_your_coat` | nova | Abrigo rojo cerrando su cremallera central hacia arriba con flecha verde. |
+| Zip | Pechar a cremalleira | Subir la cremallera | Subir una cremallera imaginaria de abajo arriba | `pal_zip` | nova | Cremallera cerrándose de abajo hacia arriba con flecha verde ascendente. |
+| Zipper pull | Tirador da cremalleira | Tirador de la cremallera | Coger el tirador y subirlo | `pal_zipper_pull` | nova | Primer plano del tirador metálico dorado de una cremallera subiendo. |
 | Zoom through space | Voar polo espazo | Volar por el espacio | Correr con los brazos estirados | `pal_zoom_through_space` | composta | Niño corriendo con los brazos extendidos volando entre estrellas y cohete. |
 | Zoom | Ir a toda velocidade | Ir a toda velocidad | Mover los brazos como un coche rápido | `pal_zoom` | nova | Coche de carreras avanzando a gran velocidad con estelas largas. |

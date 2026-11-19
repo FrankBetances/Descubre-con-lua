@@ -894,7 +894,8 @@
             "gl": "Menear as cadeiras rindo",
             "es": "Menear las caderas riendo"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_wiggle_hips"
         },
         {
           "id": "2_3.outubro.s4.groovy",

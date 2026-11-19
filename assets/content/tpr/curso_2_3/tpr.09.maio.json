@@ -586,7 +586,8 @@
             "gl": "Espremer a esponxa",
             "es": "Escurrir la esponja"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_wet_sponge"
         },
         {
           "id": "2_3.maio.s3.pour-carefully",
@@ -645,7 +646,8 @@
             "gl": "Retorcer un pano mollado",
             "es": "Retorcer un paño mojado"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_wring_out"
         },
         {
           "id": "2_3.maio.s3.sploshy",

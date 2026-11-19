@@ -33996,6 +33996,16 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "weight": {
+   "clave": "pal_weight",
+   "orixe": "nova",
+   "porque": "Pesa maciza de hierro sobre la mesa con flecha descendente de peso.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#weight",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "welcome": {
    "clave": "pal_welcome",
    "orixe": "composta",
@@ -34054,6 +34064,26 @@
    "asset": "tools/gen_laminas_0_2.py#wet",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "wet sponge": {
+   "clave": "pal_wet_sponge",
+   "orixe": "nova",
+   "porque": "Esponja amarilla porosa goteando agua sobre un charco azul.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#wet_sponge",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "wet wipe": {
+   "clave": "pal_wet_wipe",
+   "orixe": "nova",
+   "porque": "Paquete azul de toallitas húmedas con una toallita blanca saliendo y gotitas.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#wet_wipe",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
    "revisado": true
   },
   "whale": {
@@ -34396,6 +34426,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "whole": {
+   "clave": "pal_whole",
+   "orixe": "nova",
+   "porque": "Naranja entera cerrada con dos flechas convergiendo hacia el centro.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#whole",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "whoosh": {
    "clave": "pal_whoosh",
    "orixe": "nova",
@@ -34476,12 +34516,32 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "wiggle hips": {
+   "clave": "pal_wiggle_hips",
+   "orixe": "nova",
+   "porque": "Niño con manos en la cintura moviendo las caderas de un lado a otro.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#wiggle_hips",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "wiggle your fingers": {
    "clave": "pal_wiggle_your_fingers",
    "orixe": "nova",
    "porque": "Dos manos moviendo rápidamente las puntas de los dedos.",
    "fuente": "propia",
    "asset": "tools/gen_laminas_tpr.py#wiggle_your_fingers",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "wiggle your tail": {
+   "clave": "pal_wiggle_your_tail",
+   "orixe": "nova",
+   "porque": "Perrito marrón moviendo alegremente la cola de un lado a otro.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#wiggle_your_tail",
    "sha": "6be3d38b",
    "licencia": "Propia",
    "revisado": true
@@ -34666,6 +34726,26 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "wings up, wings down": {
+   "clave": "pal_wings_up_wings_down",
+   "orixe": "nova",
+   "porque": "Pájaro batiendo las alas con flechas vertical hacia arriba y hacia abajo.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#wings_up_wings_down",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "wingspan": {
+   "clave": "pal_wingspan",
+   "orixe": "nova",
+   "porque": "Ave con las alas abiertas de extremo a extremo y flecha doble midiendo su envergadura.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#wingspan",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "winner": {
    "clave": "pal_winner",
    "orixe": "composta",
@@ -34694,6 +34774,26 @@
    "asset": "images/4861-iZrQUYh.webp",
    "sha": "eae41b7c6cd85da0ca4171ce79eb115971b533de",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "wipe hands": {
+   "clave": "pal_wipe_hands",
+   "orixe": "nova",
+   "porque": "Dos manos sujetando una servilleta para secarse y limpiarse.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#wipe_hands",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "wipe the table": {
+   "clave": "pal_wipe_the_table",
+   "orixe": "nova",
+   "porque": "Paño amarillo deslizándose sobre la superficie de la mesa para limpiarla.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#wipe_the_table",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
    "revisado": true
   },
   "wipers": {
@@ -34742,6 +34842,16 @@
    "porque": "Sombrero azul estrellado de mago junto a varita mágica brillante.",
    "fuente": "propia",
    "asset": "tools/gen_laminas_tpr.py#wizard",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "wobble": {
+   "clave": "pal_wobble",
+   "orixe": "nova",
+   "porque": "Gelatina rosa sobre plato tambaleándose con ondas laterales.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#wobble",
    "sha": "6be3d38b",
    "licencia": "Propia",
    "revisado": true
@@ -34842,6 +34952,16 @@
    "porque": "Superficie de madera con vetas recibiendo un golpe firme.",
    "fuente": "propia",
    "asset": "tools/gen_laminas_tpr.py#wooden",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "wooden block": {
+   "clave": "pal_wooden_block",
+   "orixe": "nova",
+   "porque": "Bloques de madera natural con veta apilados sobre la mesa.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#wooden_block",
    "sha": "6be3d38b",
    "licencia": "Propia",
    "revisado": true
@@ -34966,6 +35086,16 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "wrap": {
+   "clave": "pal_wrap",
+   "orixe": "nova",
+   "porque": "Caja amarilla siendo envuelta con papel rosa desde ambos lados.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#wrap",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "wrap in a towel": {
    "clave": "pal_wrap_in_a_towel",
    "orixe": "composta",
@@ -34974,6 +35104,16 @@
    "asset": "tools/gen_laminas_tpr.py#wrap_in_a_towel",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "wrap up": {
+   "clave": "pal_wrap_up",
+   "orixe": "nova",
+   "porque": "Bebé abrigado y arropado dentro de una manta azul cálida.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#wrap_up",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
    "revisado": true
   },
   "wrapping paper": {
@@ -34986,12 +35126,52 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "wreath": {
+   "clave": "pal_wreath",
+   "orixe": "nova",
+   "porque": "Corona circular de hojas verdes decorada con flores y lazo rojo.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#wreath",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "wriggle": {
+   "clave": "pal_wriggle",
+   "orixe": "nova",
+   "porque": "Oruga verde retorciéndose en curvas sinuosas sobre la hierba.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#wriggle",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "wriggle toes": {
    "clave": "pal_wriggle_toes",
    "orixe": "nova",
    "porque": "Dos pies descalzos en la arena moviendo los deditos con ondas.",
    "fuente": "propia",
    "asset": "tools/gen_laminas_tpr.py#wriggle_toes",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "wring out": {
+   "clave": "pal_wring_out",
+   "orixe": "nova",
+   "porque": "Paño mojado retorcido escurriendo gotas de agua hacia el suelo.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#wring_out",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "wrinkly": {
+   "clave": "pal_wrinkly",
+   "orixe": "nova",
+   "porque": "Hoja de papel muy arrugada con pliegues marcados en zigzag.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#wrinkly",
    "sha": "6be3d38b",
    "licencia": "Propia",
    "revisado": true
@@ -35004,6 +35184,26 @@
    "asset": "tools/gen_laminas_0_2.py#wrist",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "write": {
+   "clave": "pal_write",
+   "orixe": "nova",
+   "porque": "Lápiz amarillo escribiendo un trazo ondulado sobre una hoja blanca.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#write",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "write a card": {
+   "clave": "pal_write_a_card",
+   "orixe": "nova",
+   "porque": "Tarjeta abierta decorada con lápiz azul escribiendo dentro.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#write_a_card",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
    "revisado": true
   },
   "xylophone": {
@@ -35024,6 +35224,16 @@
    "asset": "tools/gen_laminas_3_4.py#yawn",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "yawn wide": {
+   "clave": "pal_yawn_wide",
+   "orixe": "nova",
+   "porque": "Cara con los ojos cerrados y la boca muy abierta bostezando.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#yawn_wide",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
    "revisado": true
   },
   "yellow": {
@@ -35064,6 +35274,16 @@
    "asset": "tools/gen_laminas_3_4.py#yesterday_the_train_went_slowly",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "yoga mat": {
+   "clave": "pal_yoga_mat",
+   "orixe": "nova",
+   "porque": "Esterilla morada extendida en el suelo con un extremo enrollado.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#yoga_mat",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
    "revisado": true
   },
   "yoghurt": {
@@ -35336,6 +35556,16 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "zip": {
+   "clave": "pal_zip",
+   "orixe": "nova",
+   "porque": "Cremallera cerrándose de abajo hacia arriba con flecha verde ascendente.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#zip",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "zip it up": {
    "clave": "pal_zip_it_up",
    "orixe": "nova",
@@ -35352,6 +35582,26 @@
    "porque": "Subiendo la cremallera abierta de la chaqueta hacia arriba.",
    "fuente": "propia",
    "asset": "tools/gen_laminas_2_3.py#zip_up",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "zip your coat": {
+   "clave": "pal_zip_your_coat",
+   "orixe": "nova",
+   "porque": "Abrigo rojo cerrando su cremallera central hacia arriba con flecha verde.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#zip_your_coat",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "zipper pull": {
+   "clave": "pal_zipper_pull",
+   "orixe": "nova",
+   "porque": "Primer plano del tirador metálico dorado de una cremallera subiendo.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#zipper_pull",
    "sha": "6be3d38b",
    "licencia": "Propia",
    "revisado": true

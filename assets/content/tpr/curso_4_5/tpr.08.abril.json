@@ -290,7 +290,8 @@
             "gl": "Estirar os brazos ao máximo",
             "es": "Estirar los brazos al máximo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_wingspan"
         },
         {
           "id": "4_5.abril.s2.feathers",

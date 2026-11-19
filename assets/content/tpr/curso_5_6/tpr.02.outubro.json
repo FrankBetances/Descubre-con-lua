@@ -568,7 +568,8 @@
             "gl": "Estender a esteira",
             "es": "Extender la esterilla"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_yoga_mat"
         },
         {
           "id": "5_6.outubro.s3.tree-pose",

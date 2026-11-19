@@ -365,7 +365,8 @@
             "gl": "Bambear coma unha xelatina",
             "es": "Tambalearse como una gelatina"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_wobble"
         },
         {
           "id": "0_2.febreiro.s2.tip-over",
