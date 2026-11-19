@@ -45,6 +45,19 @@ void main() {
     });
   }
 
+  testWidgets('o GL/ES cambia a lingua da pantalla aberta', (t) async {
+    AppLanguage? pedida;
+    await t.pumpWidget(MaterialApp(
+        home: XogosEscoitaScreen(
+            language: AppLanguage.gl, onLanguageChanged: (l) => pedida = l)));
+    await t.pumpAndSettle();
+    expect(find.text('Escoita e sinala'), findsOneWidget);
+    await t.tap(find.text('ES'));
+    await t.pumpAndSettle();
+    expect(find.text('Escucha y señala'), findsOneWidget);
+    expect(pedida, AppLanguage.es);
+  });
+
   testWidgets('xogo do par: acerto dá a misión; erro dá a pista', (t) async {
     final par = bancos[AppLanguage.es]!.pares.first; // rana · lana
     await t.pumpWidget(MaterialApp(

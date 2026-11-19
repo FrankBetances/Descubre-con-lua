@@ -19,7 +19,7 @@ import '../../../data/models/escoita_model.dart';
 /// de Valeria, en la lengua de la app. Adaptado: el niño no habla a la
 /// pantalla; la app dice una palabra, el niño señala el dibujo y la persona
 /// adulta toca el que señaló. Juego educativo, sin finalidad sanitaria.
-class XogosEscoitaScreen extends StatelessWidget {
+class XogosEscoitaScreen extends StatefulWidget {
   final AppLanguage language;
   final ValueChanged<AppLanguage> onLanguageChanged;
   final OfflineAudioService? audioService;
@@ -35,15 +35,29 @@ class XogosEscoitaScreen extends StatelessWidget {
       LocalizedString(gl: 'Xogos de escoita', es: 'Juegos de escucha');
 
   @override
+  State<XogosEscoitaScreen> createState() => _XogosEscoitaScreenState();
+}
+
+class _XogosEscoitaScreenState extends State<XogosEscoitaScreen> {
+  // La lengua cambia aquí mismo al tocar GL/ES, como en las demás pantallas
+  // que se abren desde Explorar.
+  late AppLanguage _lang = widget.language;
+
+  @override
   Widget build(BuildContext context) {
-    final lang = language == AppLanguage.es ? AppLanguage.es : AppLanguage.gl;
+    final lang = _lang == AppLanguage.es ? AppLanguage.es : AppLanguage.gl;
+    final audioService = widget.audioService;
+    const titulo = XogosEscoitaScreen.titulo;
     final isGl = lang == AppLanguage.gl;
     return Scaffold(
       backgroundColor: AppTheme.pageBg,
       appBar: Cabecera(
         titulo: titulo.resolve(lang),
-        language: language,
-        onLanguageChanged: onLanguageChanged,
+        language: _lang,
+        onLanguageChanged: (l) {
+          setState(() => _lang = l);
+          widget.onLanguageChanged(l);
+        },
       ),
       body: FutureBuilder<BancoEscoita>(
         future: BancoEscoita.cargar(lang),
@@ -183,6 +197,8 @@ class _TarxetaSeccion extends StatelessWidget {
           child: Container(
             padding: const EdgeInsets.all(16),
             decoration: BoxDecoration(
+              // Fondo propio: sin él, la sombra de color se ve a través.
+              color: Colors.white,
               borderRadius: BorderRadius.circular(AppTheme.radiusCard),
               border: Border.all(color: AppTheme.border),
               // El canto de abajo de Valeria: el botón en relieve.
