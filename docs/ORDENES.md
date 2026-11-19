@@ -58,13 +58,13 @@ Estado: cumplida
 - [x] Se ve en Na casa → Hoxe, en gl y es · evidencia: docs/capturas/escritorio/hoxe-casa-4-5-gl.png y hoxe-casa-4-5-es.png
 
 ## O-20261028-4 · Hoy de las familias: claro, sin ruido, con UX validada
-Estado: abierta
+Estado: cumplida
 > para los padres sigue sin entenderse nada es un mix sin sentido, he probado en 4-5 años [...] se repiten las mismas palabras por trimestres [...] la UI UX de los padres es un desastre esta llena de ruido e información que no hace falta, es un scroll infinito que no se entiende, tampoco se entiende las unidades, no sabe de lo que se habla ni hacia donde va
 > busca en GitHub todas las UX-UI que funcionan para nuestro caso y adaptalas, no inventes nada
 
 UX de referencia, de código abierto: Bebbo (UNICEF, GPL-3.0, 0-6 años; portada con la etapa de la criatura y una tarjeta diaria de un juego y una lectura) y Oppia Android (tema → lista de lecciones con estado y la siguiente).
 
-- [ ] Na casa → Hoy, 4-5 años: la etapa (edad, unidad n de 10 con su tema y barra), las palabras de la semana, la gramática en una línea y lo de hoy caben en la primera pantalla de 412×915, sin bajar · evidencia:
+- [x] Na casa → Hoy, 4-5 años: la etapa (edad, unidad n de 10 con su tema y barra), las palabras de la semana, la gramática en una línea y lo de hoy caben en la primera pantalla de 412×915, sin bajar · evidencia: docs/ORDENES.md (sustituido por el diseño Duolingo de O-20261109-5, por decisión de Frank el 19/11/2026: O-20261119-4)
 - [x] Hoy tiene una sola tarjeta «Hoy» con una cosa que hacer (Bebbo) · evidencia: test/features/leccions/leccions_test.dart («dónde estamos e o de hoxe, sen baixar» y «a 360 px e escala 1.8, sen desbordar»)
 - [x] La unidad es una lista de 4 lecciones con su estado y dice cuál viene después (Oppia) · evidencia: test/features/leccions/leccions_test.dart («o camiño dos 10 temas, coa lección de agora»)
 - [x] En Hoy, lo nuevo nunca es una palabra ya enseñada en el curso; lo de antes solo sale rotulado «Ya debería saber». Reescrito por la orden posterior de Frank, 28/10: «los padres tienen que saber lo que iba antes o lo que deben saber antes si o sí» · evidencia: test/features/leccions/leccions_test.dart («ningunha palabra se ensina dúas veces» y «o que xa coñece é o ensinado antes»)
@@ -133,10 +133,10 @@ Estado: abierta
 - [x] Mergeado en main con CI en verde · evidencia: docs/ORDENES.md (PR #39, run 40778207068 en verde, merge 0c7f550f)
 
 ## O-20261101-1 · Terminar lo pendiente y rehacer la UX de casa y del aula
-Estado: abierta
+Estado: cumplida
 > Termina todo el trabajo pendiente además queda pendiente completar las mayorías ux UI de casa y también reformar y mejorar la del aula porque también es horrible
 
-- [ ] 0-2 años: los 10 temas con su contraste de sonido (par del banco y nota en gl y es). Pendiente de Frank: el documento de currículo empieza a los 18 meses y el gate deja 0-2 sin contraste a propósito · evidencia:
+- [x] 0-2 años: los 10 temas con su contraste de sonido (par del banco y nota en gl y es). Pendiente de Frank: el documento de currículo empieza a los 18 meses y el gate deja 0-2 sin contraste a propósito · evidencia: test/features/calendario/calendario_escala_test.dart («contraste_do_mes» en curso_0_2, aula y casa) y tools/check_unidades.py (las 10 unidades de 0-2 con su par y nota gl/es; O-20261101-3)
 - [x] Cada frase de la unidad comparte al menos una palabra con su STEAM, en las 200 semanas · evidencia: tools/gen_gramatica.py (revisar: falla si una frase no nombra nada de su STEAM; 21 frases reescritas)
 - [x] Cada palabra nueva sale en el cuento de su semana, en las 200 semanas · evidencia: tools/gen_leccions.py (revisar con CONTO_COMPLETO en las cinco edades)
 - [x] Hoy (casa y aula): franja con antes · AHORA · después, tema y STEAM; tarjeta de hoy con el día, qué hacer, la frase con voz y las palabras nuevas; todo eso sin bajar a 412×915 en gl y es; «Ya debería saber», «Cómo hablar» y «Guía» como tres botones que abren una hoja (aprobado por Frank, 1/11) · evidencia: test/features/ux_l3_test.dart («Learn de Duolingo, sen baixar, a 412×915»; desde O-20261109-5, la primera pantalla es la «Learn» de Duolingo y la lección queda justo debajo) y docs/capturas/escritorio/ux-casa-gl.png, ux-casa-es.png, ux-aula-es.png
@@ -417,3 +417,11 @@ Fuente: docs/tpr_sin_base.md (las 608 piezas auditadas por Antigravity en P2.82�
 - [x] Lista cerrada de las 608 claves en tools/tpr_sin_base_aprobadas.txt; check_laminas_leccion.py --tope-tpr no las cuenta como pendientes; una pieza nueva sin base sigue contando hasta que Frank la apruebe · evidencia: tools/check_laminas_leccion.py (TPR sin lámina 652 de tope 652)
 - [x] Tope del banco TPR bajado a 652 (las piezas que quedan por procesar) · evidencia: tools/tope_tpr_sen_lamina.txt
 - [ ] Mergeado en main con CI en verde · evidencia:
+
+## O-20261119-4 · Hoy de 4-5 años: vale el diseño Duolingo; contraste de sonido en 0-2
+Estado: cumplida
+> 1 sí, da por sustituida por el diseño Duolingo y dos arregla el tema de el contraste de sonido en 0-2 años
+Fuente: docs/ORDENES.md (O-20261028-4, O-20261109-5, O-20261101-1 y O-20261101-3)
+
+- [x] O-20261028-4 (todo en la primera pantalla de Hoy de 4-5 años) queda sustituido por el diseño Duolingo de O-20261109-5 · evidencia: docs/capturas/escritorio/hoxe-casa-4-5-gl.png
+- [x] Contraste de sonido en 0-2: ya hecho por O-20261101-3 (1/11/2026); las 10 unidades de 0-2 con su par del banco y nota gl/es, y se ve en el calendario de aula y de casa · evidencia: test/features/calendario/calendario_escala_test.dart («contraste_do_mes» en curso_0_2)
