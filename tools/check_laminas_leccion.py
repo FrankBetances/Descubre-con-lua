@@ -52,6 +52,9 @@ def pezas():
         yield "0-2", f"proxecto mes {p['mesCalendario']} rima", p["rima"].get("en", ""), p["rima"].get("lamina")
 
 
+TOPE_TPR = Path(__file__).with_name("tope_tpr_sen_lamina.txt")
+
+
 def main() -> int:
     total, sen, fallos = Counter(), Counter(), []
     distintas_sen: set[str] = set()
@@ -69,6 +72,22 @@ def main() -> int:
             fallos.append(f"{onde}: «{en}» → {lamina} non existe")
     for k in total:
         print(f"  {k}: {total[k]} pezas, {sen[k]} sen lámina válida")
+    # O-20261119-1 (Frank, 19/11/2026): lecciones, frases y 0-2 tienen que
+    # estar a 0; el banco TPR, mientras Antigravity lo cubre por tandas, no
+    # puede subir de su tope (tools/tope_tpr_sen_lamina.txt), que solo baja.
+    # El criterio del banco TPR de O-20261111-4 sigue abierto hasta llegar a 0.
+    if "--tope-tpr" in sys.argv:
+        tope = int(TOPE_TPR.read_text(encoding="utf-8").split()[0])
+        resto = [f for f in fallos if not f.startswith("tpr/")]
+        if resto or sen["tpr"] > tope:
+            print(f"FALLO: {len(resto)} piezas de lección, frase o 0-2 sin lámina; "
+                  f"TPR sin lámina {sen['tpr']} (tope {tope}).")
+            for f in resto[:40]:
+                print("  " + f)
+            return 1
+        print(f"OK: lecciones, frases y 0-2 a 0; TPR sin lámina {sen['tpr']} de tope {tope} "
+              "(el tope solo baja; criterio TPR de O-20261111-4 abierto).")
+        return 0
     if fallos:
         print(f"FALLO (láminas das pezas): {len(fallos)} de {sum(total.values())} pezas sen lámina válida "
               f"({len(distintas_sen)} palabras ou frases distintas).")
