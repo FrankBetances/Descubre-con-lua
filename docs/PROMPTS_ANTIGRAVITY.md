@@ -84,3 +84,31 @@ python3 tools/export_voice_corpus.py
 ENTREGA: rama, SHA, cuántas piezas has cambiado y cuáles, la tabla de las 40 con su STEAM, las
 láminas nuevas y lo que no hayas podido hacer y por qué. Claude Code lo revisa antes de integrar.
 ```
+
+## P7.9 · Los 16 pares con una palabra fuera del STEAM (19/11/2026)
+
+```text
+P7.9 · REHACER 16 PARES PARA QUE LAS DOS PALABRAS NOMBREN EL STEAM (R-STEAM, regla suprema)
+Rama: antigravity/escoita (sigue desde 1853a189). Antes: git fetch origin && git merge
+origin/claude/upbeat-fermi-3d0utp (trae el gate nuevo y el paso P7.9). Commit y push SOLO ahí,
+con «P7.9:» y su fila en el registro. NO toques lib/, test/ ni .claude/. No borres láminas.
+
+Mi prompt anterior decía «al menos una palabra del experimento»: era un error mío. R-STEAM exige
+que CADA palabra nombre el experimento STEAM de su mes. El gate tools/check_plan_escoita.py ya lo
+comprueba: falla si una palabra no dice qué parte del experimento nombra o si su "steam" la
+describe como contraste ajeno.
+
+Rehaz el par (las dos palabras, o solo la segunda) en estas 16 piezas, con un solo fonema
+distinto en CMUdict y las reglas de edad de P7.6:
+curso_2_3 meses 1 (boot: basta reescribir su "steam" para que nombre el objeto que se hunde),
+2, 3, 4, 5, 6, 7, 9, 10; curso_3_4 meses 1, 4, 6, 7, 8, 10; curso_5_6 mes 10.
+Ejemplo de lo que vale: «¿Flota o se hunde?» → boat/boot, con boot = la bota que pesa y se hunde.
+Si para una pieza no existe un par de un solo fonema con las DOS palabras del experimento, para
+y dímelo con la lista de lo que has probado; no metas una palabra ajena.
+Actualiza nota, misiones, pista y modelo si cambia el par; láminas nuevas solo si hacen falta,
+y docs/escoita-control.md.
+ANTES DEL PUSH, en verde: check_plan_escoita, check_pares_en, check_escoita, check_laminas,
+check_bundled_assets, check_licencias, check_no_emoji, check_registro_commits, check_ordenes.
+ENTREGA: SHA y la tabla de los 16 pares nuevos con qué parte del experimento nombra cada palabra.
+```
+

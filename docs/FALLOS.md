@@ -109,3 +109,8 @@ Formato de cada entrada (una por fallo):
 - Causa raíz: Claude Code aplicó por su cuenta la entrega «primero una edad» y redujo el alcance de la orden en los criterios, sin preguntar (contra R1: recortar es preguntar), y nada comparaba los criterios con las palabras de Frank.
 - Guarda: tools/check_ordenes.py (falla si un criterio dice «piloto», «de prueba», «una sola edad», «solo 4-5», «primero 4-5»… y esas palabras no están en la cita literal de Frank de esa orden)
 
+## F-20261119-9 · El prompt de Claude Code dejaba media pareja fuera del STEAM
+- Qué pasó: el prompt integral de Antigravity decía «al menos una [palabra del par] nombre algo del experimento». Antigravity lo cumplió al pie de la letra y 16 pares llevaron una segunda palabra descrita como «contraste» ajeno al experimento (kite, soup, bug, pie…), contra R-STEAM, que exige que cada palabra nombre el STEAM del mes. Lo hizo Claude Code.
+- Causa raíz: Claude Code escribió en el prompt un criterio más laxo que la regla de Frank, y el gate del plan no miraba el STEAM de cada palabra.
+- Guarda: tools/check_plan_escoita.py (falla si la pieza no lleva el STEAM de su mes, si una palabra no dice qué parte del experimento nombra o si se describe como contraste ajeno)
+

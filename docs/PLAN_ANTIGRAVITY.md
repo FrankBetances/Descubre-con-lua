@@ -95,11 +95,13 @@ commit. Lo vigila `tools/check_registro_commits.py`, dentro de `tools/gates.sh`.
 | P7.6 | Antigravity: rehacer las 40 piezas de plan_mensual.json orientadas al STEAM de su mes, con campos steam (docs/PROMPTS_ANTIGRAVITY.md) | 7 | no |
 | P7.7 | Antigravity: láminas de las palabras nuevas de P7.6 y de las que faltan en el banco de Valeria | 7 | no |
 | P7.8 | Antigravity: control de las 40 piezas con qué del STEAM nombra cada palabra, y hoja de contactos | 7 | sí: Claude Code revisa |
+| P7.9 | Antigravity: los 16 pares cuya segunda palabra no nombra el STEAM, rehechos (las dos palabras del experimento) | 7 | sí: Claude Code revisa |
 | P8.1 | Claude Code: frenos corregidos y probados (F-20261119-5 y 6), R-ENTREGA, lectura de plan_mensual con «piezas», voz solo del banco que la app enseña | 8 | no |
 | P8.2 | Claude Code: pasos P7.6–P7.8 en la tabla, prompts de Antigravity guardados en el repositorio y su gate (F-20261119-7) | 8 | no |
 | P8.3 | Claude Code: O-20261118-3 vuelve a su alcance (todas las edades, STEAM), sin el piloto que Frank no pidió, y gate contra recortes en los criterios (F-20261119-8) | 8 | no |
 | P8.4 | Claude Code: Modo Aula como camino con banner, igual que casa (O-20261119-7) | 8 | no |
 | P8.5 | Claude Code: Juegos de escucha con tarjetas blancas y GL/ES que cambia la pantalla abierta; insignias comparadas con Valeria; capturas y evidencias de O-20261119-8 | 8 | no |
+| P8.6 | Claude Code: gate de STEAM por palabra en plan_mensual (F-20261119-9) y prompt P7.9 | 8 | no |
 | P5.1 | Proponer la unidad y los pares del piloto de escucha y palabras | 5 | **sí** |
 | P5.2 | Revisión de los pares por Frank o una logopeda | 5 | **sí** |
 | P5.3 | Construir el piloto con su gate y capturas gl/es | 5 | no |
@@ -359,4 +361,5 @@ Base: `6be3d38b`
 | P8.3 | 9c50f978 | 2026-11-19 | Nada visible: los criterios de los juegos de escucha dejan el piloto de 4-5 años y vuelven a todas las edades con lección y todos los meses; check_ordenes tumba un criterio que encoja la orden sin que Frank lo diga | check_ordenes (y prueba negativa), check_fallos, check_registro_commits OK | docs/ORDENES.md (O-20261118-3), tools/check_ordenes.py, docs/FALLOS.md (F-20261119-8) | |
 | P8.3 | 57443a79 | 2026-11-19 | Nada visible: el freno R-ENTREGA solo salta cuando Frank pide un texto («dame/pásame/necesito el prompt»), no cuando lo nombra («ya entregué el prompt») | check_hooks OK (dos casos nuevos) | tools/check_hooks.py | |
 | P8.4 | ee5c9378 | 2026-11-19 | Na escola → Hoy: el banner verde de la unidad y el camino de los cinco días con Lúa, igual que en casa, en 2-3, 3-4, 4-5 y 5-6; el día de hoy abre la lección paso a paso; debajo, todo lo del aula como estaba | flutter 3.47.9: analyze limpio; tpr_pantallas_test («camino con banner», 8 casos) OK | test/features/tpr_pantallas_test.dart, docs/capturas/escritorio/aula-camino-4-5-gl.png y -es.png | |
-| P8.5 | este | 2026-11-19 | Juegos de escucha: las tarjetas ya no salen teñidas de marrón y el GL/ES cambia la lengua de la pantalla abierta; insignias comparadas con Valeria (todas iguales); capturas de Juegos de escucha en gl y es; cinco criterios de O-20261119-8 con su evidencia | xogos_escoita_test (5 casos) OK, check_ordenes OK | test/features/xogos_escoita_test.dart, docs/capturas/escritorio/escoita-*.png | |
+| P8.5 | 901988bd | 2026-11-19 | Juegos de escucha: las tarjetas ya no salen teñidas de marrón y el GL/ES cambia la lengua de la pantalla abierta; insignias comparadas con Valeria (todas iguales); capturas de Juegos de escucha en gl y es; cinco criterios de O-20261119-8 con su evidencia | xogos_escoita_test (5 casos) OK, check_ordenes OK | test/features/xogos_escoita_test.dart, docs/capturas/escritorio/escoita-*.png | |
+| P8.6 | este | 2026-11-19 | Nada visible: check_plan_escoita exige el STEAM del mes en la pieza y en cada palabra, y tumba las descritas como contraste ajeno; prompt P7.9 para que Antigravity rehaga esos 16 pares | check_plan_escoita (sobre la entrega de Antigravity: 16 fallos de STEAM, como debe), check_fallos, check_registro_commits OK | tools/check_plan_escoita.py, docs/PROMPTS_ANTIGRAVITY.md, docs/FALLOS.md (F-20261119-9) | |
