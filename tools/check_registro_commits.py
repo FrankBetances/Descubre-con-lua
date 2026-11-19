@@ -40,6 +40,14 @@ def main() -> int:
     if not pasos:
         fallos.append("la tabla de pasos no tiene ningún P<n>.<m>")
 
+    # F-20261119-7: cada paso que nombra un prompt de Antigravity existe en la
+    # tabla; si no, su primer commit tumbaría este mismo gate.
+    prompts = Path("docs/PROMPTS_ANTIGRAVITY.md")
+    if prompts.exists():
+        for p in sorted(set(re.findall(r"\bP\d+\.\d+\b", prompts.read_text(encoding="utf-8")))):
+            if p not in pasos:
+                fallos.append(f"docs/PROMPTS_ANTIGRAVITY.md nombra el paso {p}, que no está en la tabla de pasos")
+
     m = re.search(r"^Base: `?([0-9a-f]{7,40})`?", texto, re.M)
     base = m.group(1) if m else None
     if not base:
@@ -84,7 +92,11 @@ def main() -> int:
                            capture_output=True).returncode == 0
     )
     if es_ancestro:
-        rango = git("log", "--first-parent", "--no-merges", "--format=%H %s", f"{base}..HEAD") or ""
+        # Los commits del bot de voz del CI (github-actions[bot]) no son trabajo
+        # de un agente: no llevan paso ni fila.
+        rango = git("log", "--first-parent", "--no-merges", "--format=%H %s",
+                    "--perl-regexp", "--author=^(?!github-actions\\[bot\\]).*$",
+                    f"{base}..HEAD") or ""
         en_rango = set()
         pasos_registro = {f[0] for f in filas if f}
         for linea in rango.splitlines():

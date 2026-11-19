@@ -98,3 +98,9 @@ Formato de cada entrada (una por fallo):
 - Qué pasó: Frank pidió «dame el trabajo que tiene que hacer de forma integral antigravity, y mergea ya». Claude Code lanzó primero herramientas para mirar tests y gates, sin dar el prompt; Frank tuvo que pararlo y pedirlo dos veces más, y una de las respuestas salió cortada. Lo hizo Claude Code.
 - Causa raíz: nada obligaba a entregar primero el texto pedido; Claude Code antepuso su propio plan (subir y mergear) a lo que Frank pidió en primer lugar.
 - Guarda: .claude/hooks/freno_herramientas.py (con la marca pide_texto que pone .claude/hooks/stop_freno.py cuando Frank pide un prompt, texto o mensaje: bloquea toda herramienta hasta su siguiente mensaje; probado en tools/check_hooks.py)
+
+## F-20261119-7 · El prompt de Antigravity nombraba pasos que no estaban en la tabla
+- Qué pasó: el prompt integral de Antigravity mandaba commits «P7.6», «P7.7» y «P7.8», pero esos pasos no estaban en la tabla de docs/PLAN_ANTIGRAVITY.md, así que su primer commit habría tumbado tools/check_registro_commits.py. Antigravity lo detectó y paró. Lo hizo Claude Code.
+- Causa raíz: los prompts vivían solo en el chat, no en el repositorio, y ningún gate cruzaba los pasos que nombran con la tabla.
+- Guarda: tools/check_registro_commits.py (falla si docs/PROMPTS_ANTIGRAVITY.md nombra un paso que no está en la tabla de pasos; los prompts se guardan ahí)
+
