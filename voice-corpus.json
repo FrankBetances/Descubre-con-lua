@@ -1,12 +1,12 @@
 {
- "generatedAt": "2026-11-19T17:54:30Z",
- "entries": 37481,
+ "generatedAt": "2026-11-19T19:25:07Z",
+ "entries": 37624,
  "byStyle": {
-  "slow": 5956,
-  "tutor": 31525
+  "slow": 6019,
+  "tutor": 31605
  },
  "byLang": {
-  "en": 17157,
+  "en": 17300,
   "es": 10162,
   "gl": 10162
  },
@@ -768,6 +768,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_0365104f_9",
+   "lang": "en",
+   "style": "slow",
+   "text": "Pinwheel.",
+   "speech": "Pinwheel.",
+   "source": "escoita/plan_mensual",
+   "pack": false
+  },
+  {
    "id": "en_slow_036a71e3_6",
    "lang": "en",
    "style": "slow",
@@ -1323,6 +1332,15 @@
    "text": "Repeat",
    "speech": "Repeat",
    "source": "tpr.5_6.marzo/s1/5_6.marzo.s1.repeat",
+   "pack": false
+  },
+  {
+   "id": "en_slow_066bf71e_10",
+   "lang": "en",
+   "style": "slow",
+   "text": "Butterfly.",
+   "speech": "Butterfly.",
+   "source": "escoita/plan_mensual",
    "pack": false
   },
   {
@@ -3774,6 +3792,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_11b785f6_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "Top.",
+   "speech": "Top.",
+   "source": "escoita/plan_mensual",
+   "pack": false
+  },
+  {
    "id": "en_slow_11bd3353_7",
    "lang": "en",
    "style": "slow",
@@ -4782,6 +4809,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_17088bc6_9",
+   "lang": "en",
+   "style": "slow",
+   "text": "Suitcase.",
+   "speech": "Suitcase.",
+   "source": "escoita/plan_mensual",
+   "pack": false
+  },
+  {
    "id": "en_slow_17278db5_6",
    "lang": "en",
    "style": "slow",
@@ -5256,6 +5292,15 @@
    "text": "Surprising",
    "speech": "Surprising",
    "source": "tpr.0_2.febreiro/s3/0_2.febreiro.s3.surprising",
+   "pack": false
+  },
+  {
+   "id": "en_slow_198c2f47_6",
+   "lang": "en",
+   "style": "slow",
+   "text": "Paint.",
+   "speech": "Paint.",
+   "source": "escoita/plan_mensual",
    "pack": false
   },
   {
@@ -6609,6 +6654,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_20064cc9_10",
+   "lang": "en",
+   "style": "slow",
+   "text": "Stretcher.",
+   "speech": "Stretcher.",
+   "source": "escoita/plan_mensual",
+   "pack": false
+  },
+  {
    "id": "en_slow_20093d88_9",
    "lang": "en",
    "style": "slow",
@@ -6966,6 +7020,15 @@
    "text": "sponsor",
    "speech": "sponsor",
    "source": "corpus/2869/lemma",
+   "pack": false
+  },
+  {
+   "id": "en_slow_21a41868_3",
+   "lang": "en",
+   "style": "slow",
+   "text": "nip",
+   "speech": "nip",
+   "source": "escoita/plan_mensual",
    "pack": false
   },
   {
@@ -8085,6 +8148,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_2704992f_5",
+   "lang": "en",
+   "style": "slow",
+   "text": "Lamp.",
+   "speech": "Lamp.",
+   "source": "escoita/plan_mensual",
+   "pack": false
+  },
+  {
    "id": "en_slow_2704b730_7",
    "lang": "en",
    "style": "slow",
@@ -8172,6 +8244,15 @@
    "text": "overlap",
    "speech": "overlap",
    "source": "corpus/3661/lemma",
+   "pack": false
+  },
+  {
+   "id": "en_slow_27a19de2_6",
+   "lang": "en",
+   "style": "slow",
+   "text": "Towel.",
+   "speech": "Towel.",
+   "source": "escoita/plan_mensual",
    "pack": false
   },
   {
@@ -8820,6 +8901,15 @@
    "text": "absurd",
    "speech": "absurd",
    "source": "corpus/3005/lemma",
+   "pack": false
+  },
+  {
+   "id": "en_slow_2aabed19_5",
+   "lang": "en",
+   "style": "slow",
+   "text": "Drum.",
+   "speech": "Drum.",
+   "source": "escoita/plan_mensual",
    "pack": false
   },
   {
@@ -10551,6 +10641,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_32ec3830_8",
+   "lang": "en",
+   "style": "slow",
+   "text": "raincoat",
+   "speech": "raincoat",
+   "source": "escoita/plan_mensual",
+   "pack": false
+  },
+  {
    "id": "en_slow_32ffac7b_6",
    "lang": "en",
    "style": "slow",
@@ -11271,6 +11370,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_36d457a3_6",
+   "lang": "en",
+   "style": "slow",
+   "text": "Juice.",
+   "speech": "Juice.",
+   "source": "escoita/plan_mensual",
+   "pack": false
+  },
+  {
    "id": "en_slow_36d9d961_10",
    "lang": "en",
    "style": "slow",
@@ -11520,6 +11628,15 @@
    "text": "room",
    "speech": "room",
    "source": "corpus/705/lemma",
+   "pack": false
+  },
+  {
+   "id": "en_slow_37ff6889_10",
+   "lang": "en",
+   "style": "slow",
+   "text": "Rainstick.",
+   "speech": "Rainstick.",
+   "source": "escoita/plan_mensual",
    "pack": false
   },
   {
@@ -11790,6 +11907,15 @@
    "text": "Upstream",
    "speech": "Upstream",
    "source": "tpr.4_5.maio/s2/4_5.maio.s2.upstream",
+   "pack": false
+  },
+  {
+   "id": "en_slow_39468795_7",
+   "lang": "en",
+   "style": "slow",
+   "text": "Funnel.",
+   "speech": "Funnel.",
+   "source": "escoita/plan_mensual",
    "pack": false
   },
   {
@@ -12627,6 +12753,15 @@
    "text": "literacy",
    "speech": "literacy",
    "source": "corpus/3569/lemma",
+   "pack": false
+  },
+  {
+   "id": "en_slow_3dadb0f8_5",
+   "lang": "en",
+   "style": "slow",
+   "text": "chalk",
+   "speech": "chalk",
+   "source": "escoita/plan_mensual",
    "pack": false
   },
   {
@@ -14088,6 +14223,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_44c15b85_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "Dog.",
+   "speech": "Dog.",
+   "source": "escoita/plan_mensual",
+   "pack": false
+  },
+  {
    "id": "en_slow_44cdeaf1_7",
    "lang": "en",
    "style": "slow",
@@ -14643,6 +14787,15 @@
    "text": "rib",
    "speech": "rib",
    "source": "corpus/3764/lemma",
+   "pack": false
+  },
+  {
+   "id": "en_slow_47150688_5",
+   "lang": "en",
+   "style": "slow",
+   "text": "shiny",
+   "speech": "shiny",
+   "source": "escoita/plan_mensual",
    "pack": false
   },
   {
@@ -16617,6 +16770,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_5009a914_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "Jar.",
+   "speech": "Jar.",
+   "source": "escoita/plan_mensual",
+   "pack": false
+  },
+  {
    "id": "en_slow_501be1a9_11",
    "lang": "en",
    "style": "slow",
@@ -16749,6 +16911,15 @@
    "text": "bid",
    "speech": "bid",
    "source": "corpus/2096/lemma",
+   "pack": false
+  },
+  {
+   "id": "en_slow_50dc808e_5",
+   "lang": "en",
+   "style": "slow",
+   "text": "Sail.",
+   "speech": "Sail.",
+   "source": "escoita/plan_mensual",
    "pack": false
   },
   {
@@ -17145,6 +17316,15 @@
    "text": "applicant",
    "speech": "applicant",
    "source": "corpus/3044/lemma",
+   "pack": false
+  },
+  {
+   "id": "en_slow_53248bfd_9",
+   "lang": "en",
+   "style": "slow",
+   "text": "stretcher",
+   "speech": "stretcher",
+   "source": "escoita/plan_mensual",
    "pack": false
   },
   {
@@ -19380,6 +19560,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_5d3ee683_8",
+   "lang": "en",
+   "style": "slow",
+   "text": "colorful",
+   "speech": "colorful",
+   "source": "escoita/plan_mensual",
+   "pack": false
+  },
+  {
    "id": "en_slow_5d46df62_9",
    "lang": "en",
    "style": "slow",
@@ -21108,6 +21297,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_6556ea41_5",
+   "lang": "en",
+   "style": "slow",
+   "text": "Leaf.",
+   "speech": "Leaf.",
+   "source": "escoita/plan_mensual",
+   "pack": false
+  },
+  {
    "id": "en_slow_6557a98d_12",
    "lang": "en",
    "style": "slow",
@@ -22167,6 +22365,15 @@
    "text": "Look",
    "speech": "Look",
    "source": "tpr.3_4.setembro/s2/3_4.setembro.s2.look",
+   "pack": false
+  },
+  {
+   "id": "en_slow_699b6bcd_6",
+   "lang": "en",
+   "style": "slow",
+   "text": "Flute.",
+   "speech": "Flute.",
+   "source": "escoita/plan_mensual",
    "pack": false
   },
   {
@@ -24654,6 +24861,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_773611af_5",
+   "lang": "en",
+   "style": "slow",
+   "text": "phone",
+   "speech": "phone",
+   "source": "escoita/plan_mensual",
+   "pack": false
+  },
+  {
    "id": "en_slow_7739f22d_4",
    "lang": "en",
    "style": "slow",
@@ -25320,6 +25536,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_7ad5987a_3",
+   "lang": "en",
+   "style": "slow",
+   "text": "bun",
+   "speech": "bun",
+   "source": "escoita/plan_mensual",
+   "pack": false
+  },
+  {
    "id": "en_slow_7afa5b33_4",
    "lang": "en",
    "style": "slow",
@@ -25524,6 +25749,15 @@
    "text": "carve",
    "speech": "carve",
    "source": "corpus/2116/lemma",
+   "pack": false
+  },
+  {
+   "id": "en_slow_7c305f10_3",
+   "lang": "en",
+   "style": "slow",
+   "text": "vet",
+   "speech": "vet",
+   "source": "escoita/plan_mensual",
    "pack": false
   },
   {
@@ -25914,6 +26148,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_7e082065_6",
+   "lang": "en",
+   "style": "slow",
+   "text": "Train.",
+   "speech": "Train.",
+   "source": "escoita/plan_mensual",
+   "pack": false
+  },
+  {
    "id": "en_slow_7e0911a1_5",
    "lang": "en",
    "style": "slow",
@@ -26262,6 +26505,15 @@
    "text": "wrap",
    "speech": "wrap",
    "source": "corpus/1999/lemma",
+   "pack": false
+  },
+  {
+   "id": "en_slow_7fe2042d_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "lash",
+   "speech": "lash",
+   "source": "escoita/plan_mensual",
    "pack": false
   },
   {
@@ -26631,6 +26883,15 @@
    "text": "afraid",
    "speech": "afraid",
    "source": "corpus/15/lemma",
+   "pack": false
+  },
+  {
+   "id": "en_slow_82503be8_6",
+   "lang": "en",
+   "style": "slow",
+   "text": "Spoon.",
+   "speech": "Spoon.",
+   "source": "escoita/plan_mensual",
    "pack": false
   },
   {
@@ -27723,6 +27984,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_87c4c744_6",
+   "lang": "en",
+   "style": "slow",
+   "text": "Tower.",
+   "speech": "Tower.",
+   "source": "escoita/plan_mensual",
+   "pack": false
+  },
+  {
    "id": "en_slow_881bb2f2_7",
    "lang": "en",
    "style": "slow",
@@ -28542,6 +28812,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_8b893325_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "snip",
+   "speech": "snip",
+   "source": "escoita/plan_mensual",
+   "pack": false
+  },
+  {
    "id": "en_slow_8b8e7f5b_4",
    "lang": "en",
    "style": "slow",
@@ -28755,6 +29034,15 @@
    "text": "bizarre",
    "speech": "bizarre",
    "source": "corpus/3095/lemma",
+   "pack": false
+  },
+  {
+   "id": "en_slow_8c81fcdb_8",
+   "lang": "en",
+   "style": "slow",
+   "text": "pinwheel",
+   "speech": "pinwheel",
+   "source": "escoita/plan_mensual",
    "pack": false
   },
   {
@@ -28989,6 +29277,15 @@
    "text": "helmet",
    "speech": "helmet",
    "source": "corpus/3468/lemma",
+   "pack": false
+  },
+  {
+   "id": "en_slow_8d8512e3_6",
+   "lang": "en",
+   "style": "slow",
+   "text": "sleepy",
+   "speech": "sleepy",
+   "source": "escoita/plan_mensual",
    "pack": false
   },
   {
@@ -29421,6 +29718,15 @@
    "text": "tournament",
    "speech": "tournament",
    "source": "corpus/2936/lemma",
+   "pack": false
+  },
+  {
+   "id": "en_slow_8fa11057_6",
+   "lang": "en",
+   "style": "slow",
+   "text": "Heart.",
+   "speech": "Heart.",
+   "source": "escoita/plan_mensual",
    "pack": false
   },
   {
@@ -30198,6 +30504,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_935f97ed_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "Map.",
+   "speech": "Map.",
+   "source": "escoita/plan_mensual",
+   "pack": false
+  },
+  {
    "id": "en_slow_938122f7_7",
    "lang": "en",
    "style": "slow",
@@ -30573,6 +30888,15 @@
    "text": "Wing",
    "speech": "Wing",
    "source": "tpr.2_3.abril/s2/2_3.abril.s2.wing",
+   "pack": false
+  },
+  {
+   "id": "en_slow_95447e31_6",
+   "lang": "en",
+   "style": "slow",
+   "text": "Bread.",
+   "speech": "Bread.",
+   "source": "escoita/plan_mensual",
    "pack": false
   },
   {
@@ -31242,6 +31566,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_9864fd3d_9",
+   "lang": "en",
+   "style": "slow",
+   "text": "rainstick",
+   "speech": "rainstick",
+   "source": "escoita/plan_mensual",
+   "pack": false
+  },
+  {
    "id": "en_slow_9865b509_5",
    "lang": "en",
    "style": "slow",
@@ -31266,6 +31599,15 @@
    "text": "Sing",
    "speech": "Sing",
    "source": "tpr.3_4.setembro/s4/3_4.setembro.s4.sing",
+   "pack": false
+  },
+  {
+   "id": "en_slow_987994b3_6",
+   "lang": "en",
+   "style": "slow",
+   "text": "Phone.",
+   "speech": "Phone.",
+   "source": "escoita/plan_mensual",
    "pack": false
   },
   {
@@ -31611,6 +31953,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_99fb195c_6",
+   "lang": "en",
+   "style": "slow",
+   "text": "Stone.",
+   "speech": "Stone.",
+   "source": "escoita/plan_mensual",
+   "pack": false
+  },
+  {
    "id": "en_slow_9a164979_9",
    "lang": "en",
    "style": "slow",
@@ -31899,6 +32250,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_9b34ef82_6",
+   "lang": "en",
+   "style": "slow",
+   "text": "Chalk.",
+   "speech": "Chalk.",
+   "source": "escoita/plan_mensual",
+   "pack": false
+  },
+  {
    "id": "en_slow_9b396add_7",
    "lang": "en",
    "style": "slow",
@@ -31968,6 +32328,15 @@
    "text": "Hero",
    "speech": "Hero",
    "source": "tpr.5_6.xaneiro/s4/5_6.xaneiro.s4.hero",
+   "pack": false
+  },
+  {
+   "id": "en_slow_9b7030f9_6",
+   "lang": "en",
+   "style": "slow",
+   "text": "funnel",
+   "speech": "funnel",
+   "source": "escoita/plan_mensual",
    "pack": false
   },
   {
@@ -32787,6 +33156,15 @@
    "text": "Bigger",
    "speech": "Bigger",
    "source": "tpr.4_5.marzo/s2/4_5.marzo.s2.bigger",
+   "pack": false
+  },
+  {
+   "id": "en_slow_9f0c8b7d_7",
+   "lang": "en",
+   "style": "slow",
+   "text": "Shadow.",
+   "speech": "Shadow.",
+   "source": "escoita/plan_mensual",
    "pack": false
   },
   {
@@ -35895,6 +36273,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_adba4295_8",
+   "lang": "en",
+   "style": "slow",
+   "text": "Bandage.",
+   "speech": "Bandage.",
+   "source": "escoita/plan_mensual",
+   "pack": false
+  },
+  {
    "id": "en_slow_adc649b8_4",
    "lang": "en",
    "style": "slow",
@@ -36243,6 +36630,15 @@
    "text": "guitar",
    "speech": "guitar",
    "source": "corpus/2460/lemma",
+   "pack": false
+  },
+  {
+   "id": "en_slow_af4b45e3_6",
+   "lang": "en",
+   "style": "slow",
+   "text": "Apple.",
+   "speech": "Apple.",
+   "source": "escoita/plan_mensual",
    "pack": false
   },
   {
@@ -36873,6 +37269,15 @@
    "text": "Pinecone",
    "speech": "Pinecone",
    "source": "tpr.3_4.novembro/s2/3_4.novembro.s2.pinecone",
+   "pack": false
+  },
+  {
+   "id": "en_slow_b23a3fb5_5",
+   "lang": "en",
+   "style": "slow",
+   "text": "Foot.",
+   "speech": "Foot.",
+   "source": "escoita/plan_mensual",
    "pack": false
   },
   {
@@ -37764,6 +38169,15 @@
    "text": "dead",
    "speech": "dead",
    "source": "corpus/210/lemma",
+   "pack": false
+  },
+  {
+   "id": "en_slow_b5ed4791_5",
+   "lang": "en",
+   "style": "slow",
+   "text": "flute",
+   "speech": "flute",
+   "source": "escoita/plan_mensual",
    "pack": false
   },
   {
@@ -39024,6 +39438,15 @@
    "text": "duck",
    "speech": "duck",
    "source": "english/fonema/ph_ck/exemplo",
+   "pack": false
+  },
+  {
+   "id": "en_slow_bb357f55_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "feet",
+   "speech": "feet",
+   "source": "escoita/plan_mensual",
    "pack": false
   },
   {
@@ -40518,6 +40941,15 @@
    "text": "sustain",
    "speech": "sustain",
    "source": "corpus/2906/lemma",
+   "pack": false
+  },
+  {
+   "id": "en_slow_c1d2cb71_5",
+   "lang": "en",
+   "style": "slow",
+   "text": "twirl",
+   "speech": "twirl",
+   "source": "escoita/plan_mensual",
    "pack": false
   },
   {
@@ -42591,6 +43023,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_cb288619_5",
+   "lang": "en",
+   "style": "slow",
+   "text": "Lens.",
+   "speech": "Lens.",
+   "source": "escoita/plan_mensual",
+   "pack": false
+  },
+  {
    "id": "en_slow_cb29a2bb_7",
    "lang": "en",
    "style": "slow",
@@ -42687,6 +43128,15 @@
    "text": "Leftover",
    "speech": "Leftover",
    "source": "tpr.2_3.marzo/s4/2_3.marzo.s4.leftover",
+   "pack": false
+  },
+  {
+   "id": "en_slow_cbecfec1_6",
+   "lang": "en",
+   "style": "slow",
+   "text": "Plane.",
+   "speech": "Plane.",
+   "source": "escoita/plan_mensual",
    "pack": false
   },
   {
@@ -44679,6 +45129,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_d5982a5a_9",
+   "lang": "en",
+   "style": "slow",
+   "text": "Raincoat.",
+   "speech": "Raincoat.",
+   "source": "escoita/plan_mensual",
+   "pack": false
+  },
+  {
    "id": "en_slow_d5accdd1_4",
    "lang": "en",
    "style": "slow",
@@ -45741,6 +46200,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_da567083_6",
+   "lang": "en",
+   "style": "slow",
+   "text": "Table.",
+   "speech": "Table.",
+   "source": "escoita/plan_mensual",
+   "pack": false
+  },
+  {
    "id": "en_slow_da5e70c6_7",
    "lang": "en",
    "style": "slow",
@@ -45768,6 +46236,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_da88a2e5_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "Mud.",
+   "speech": "Mud.",
+   "source": "escoita/plan_mensual",
+   "pack": false
+  },
+  {
    "id": "en_slow_da90dffc_4",
    "lang": "en",
    "style": "slow",
@@ -45783,6 +46260,15 @@
    "text": "Gentle",
    "speech": "Gentle",
    "source": "tpr.3_4.setembro/s3/3_4.setembro.s3.gentle",
+   "pack": false
+  },
+  {
+   "id": "en_slow_daa631d5_6",
+   "lang": "en",
+   "style": "slow",
+   "text": "Paper.",
+   "speech": "Paper.",
+   "source": "escoita/plan_mensual",
    "pack": false
   },
   {
@@ -46038,6 +46524,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_dbfbe216_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "kite",
+   "speech": "kite",
+   "source": "escoita/plan_mensual",
+   "pack": false
+  },
+  {
    "id": "en_slow_dc07f8a9_7",
    "lang": "en",
    "style": "slow",
@@ -46269,6 +46764,15 @@
    "text": "Price",
    "speech": "Price",
    "source": "tpr.4_5.marzo/s4/4_5.marzo.s4.price",
+   "pack": false
+  },
+  {
+   "id": "en_slow_dd404b6a_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "cone",
+   "speech": "cone",
+   "source": "escoita/plan_mensual",
    "pack": false
   },
   {
@@ -46731,6 +47235,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_df92e232_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "zoom",
+   "speech": "zoom",
+   "source": "escoita/plan_mensual",
+   "pack": false
+  },
+  {
    "id": "en_slow_dfa2efb1_3",
    "lang": "en",
    "style": "slow",
@@ -46827,6 +47340,15 @@
    "text": "son",
    "speech": "son",
    "source": "corpus/785/lemma",
+   "pack": false
+  },
+  {
+   "id": "en_slow_e03a633b_7",
+   "lang": "en",
+   "style": "slow",
+   "text": "Filter.",
+   "speech": "Filter.",
+   "source": "escoita/plan_mensual",
    "pack": false
   },
   {
@@ -47748,6 +48270,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_e4d44e2a_5",
+   "lang": "en",
+   "style": "slow",
+   "text": "Hand.",
+   "speech": "Hand.",
+   "source": "escoita/plan_mensual",
+   "pack": false
+  },
+  {
    "id": "en_slow_e4eb258c_5",
    "lang": "en",
    "style": "slow",
@@ -48162,6 +48693,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_e7060113_10",
+   "lang": "en",
+   "style": "slow",
+   "text": "flashlight",
+   "speech": "flashlight",
+   "source": "escoita/plan_mensual",
+   "pack": false
+  },
+  {
    "id": "en_slow_e7252e76_5",
    "lang": "en",
    "style": "slow",
@@ -48285,6 +48825,15 @@
    "text": "Brilliant",
    "speech": "Brilliant",
    "source": "tpr.3_4.xuno/s4/3_4.xuno.s4.brilliant",
+   "pack": false
+  },
+  {
+   "id": "en_slow_e776cba5_8",
+   "lang": "en",
+   "style": "slow",
+   "text": "Pattern.",
+   "speech": "Pattern.",
+   "source": "escoita/plan_mensual",
    "pack": false
   },
   {
@@ -49077,6 +49626,15 @@
    "text": "bridge",
    "speech": "bridge",
    "source": "corpus/1124/lemma",
+   "pack": false
+  },
+  {
+   "id": "en_slow_eabc3f6d_3",
+   "lang": "en",
+   "style": "slow",
+   "text": "jug",
+   "speech": "jug",
+   "source": "escoita/plan_mensual",
    "pack": false
   },
   {
@@ -50346,6 +50904,15 @@
    "text": "ease",
    "speech": "ease",
    "source": "corpus/1309/lemma",
+   "pack": false
+  },
+  {
+   "id": "en_slow_f155bba7_11",
+   "lang": "en",
+   "style": "slow",
+   "text": "Flashlight.",
+   "speech": "Flashlight.",
+   "source": "escoita/plan_mensual",
    "pack": false
   },
   {
@@ -55614,6 +56181,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_05f3f576_10",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Windy day.",
+   "speech": "Windy day.",
+   "source": "escoita/plan_mensual",
+   "pack": false
+  },
+  {
    "id": "en_tutor_05f8079d_37",
    "lang": "en",
    "style": "tutor",
@@ -57045,6 +57621,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_08eaa6cc_30",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Wash the clean hand with soap.",
+   "speech": "Wash the clean hand with soap.",
+   "source": "escoita/plan_mensual",
+   "pack": false
+  },
+  {
    "id": "en_tutor_08f723eb_48",
    "lang": "en",
    "style": "tutor",
@@ -57108,6 +57693,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_0911caa2_10",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Dark room.",
+   "speech": "Dark room.",
+   "source": "escoita/plan_mensual",
+   "pack": false
+  },
+  {
    "id": "en_tutor_0911e4a8_34",
    "lang": "en",
    "style": "tutor",
@@ -57159,6 +57753,15 @@
    "text": "Yes! The fish! A yellow fish with the shell!",
    "speech": "Yes! The fish! A yellow fish with the shell!",
    "source": "microcuento.curso_3_4.10/3/recast.sinala",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_09367d36_31",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Smile in the shiny metal spoon.",
+   "speech": "Smile in the shiny metal spoon.",
+   "source": "escoita/plan_mensual",
    "pack": false
   },
   {
@@ -57969,6 +58572,15 @@
    "text": "We listen because we care",
    "speech": "We listen because we care",
    "source": "tpr.4_5.setembro/s1/4_5.setembro.s1.we-listen-because-we-care",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_0b58502a_50",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Blend two filters for a colorful glow on the wall.",
+   "speech": "Blend two filters for a colorful glow on the wall.",
+   "source": "escoita/plan_mensual",
    "pack": false
   },
   {
@@ -59058,6 +59670,15 @@
    "text": "Quiet… quiet now.",
    "speech": "Quiet… quiet now.",
    "source": "registro/frase.lua.3_4.06.2",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_0e6c3449_35",
+   "lang": "en",
+   "style": "tutor",
+   "text": "The fast train rolls down the ramp.",
+   "speech": "The fast train rolls down the ramp.",
+   "source": "escoita/plan_mensual",
    "pack": false
   },
   {
@@ -61887,6 +62508,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_1500d6ea_14",
+   "lang": "en",
+   "style": "tutor",
+   "text": "A secret spot.",
+   "speech": "A secret spot.",
+   "source": "escoita/plan_mensual",
+   "pack": false
+  },
+  {
    "id": "en_tutor_1500e838_13",
    "lang": "en",
    "style": "tutor",
@@ -63723,6 +64353,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_192e1d39_45",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Draw the shadow with chalk in the bright sun.",
+   "speech": "Draw the shadow with chalk in the bright sun.",
+   "source": "escoita/plan_mensual",
+   "pack": false
+  },
+  {
    "id": "en_tutor_1936b296_13",
    "lang": "en",
    "style": "tutor",
@@ -64398,6 +65037,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_1b39f1c5_15",
+   "lang": "en",
+   "style": "tutor",
+   "text": "A tight string.",
+   "speech": "A tight string.",
+   "source": "escoita/plan_mensual",
+   "pack": false
+  },
+  {
    "id": "en_tutor_1b4a7bc7_35",
    "lang": "en",
    "style": "tutor",
@@ -64665,6 +65313,15 @@
    "text": "Merry tune",
    "speech": "Merry tune",
    "source": "tpr.0_2.febreiro/s4/0_2.febreiro.s4.merry-tune",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_1c028ec5_46",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Twirl the round cardboard top to blend colors.",
+   "speech": "Twirl the round cardboard top to blend colors.",
+   "source": "escoita/plan_mensual",
    "pack": false
   },
   {
@@ -66081,6 +66738,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_2080c851_40",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Feel your heart beat fast in your chest.",
+   "speech": "Feel your heart beat fast in your chest.",
+   "source": "escoita/plan_mensual",
+   "pack": false
+  },
+  {
    "id": "en_tutor_208eab43_59",
    "lang": "en",
    "style": "tutor",
@@ -66474,6 +67140,15 @@
    "text": "Hot soup! Stir it slow!",
    "speech": "Hot soup! Stir it slow!",
    "source": "biblioteca/HIS-010",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_21db34d6_42",
+   "lang": "en",
+   "style": "tutor",
+   "text": "The white plane glides from the nose fold.",
+   "speech": "The white plane glides from the nose fold.",
+   "source": "escoita/plan_mensual",
    "pack": false
   },
   {
@@ -67437,6 +68112,15 @@
    "text": "Oh no! A big muddy puddle! My shoes...",
    "speech": "Oh no! A big muddy puddle! My shoes...",
    "source": "biblioteca/HIS-076",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_24870ec0_14",
+   "lang": "en",
+   "style": "tutor",
+   "text": "A shiny spoon.",
+   "speech": "A shiny spoon.",
+   "source": "escoita/plan_mensual",
    "pack": false
   },
   {
@@ -69096,6 +69780,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_2832446d_12",
+   "lang": "en",
+   "style": "tutor",
+   "text": "A low straw.",
+   "speech": "A low straw.",
+   "source": "escoita/plan_mensual",
+   "pack": false
+  },
+  {
    "id": "en_tutor_283d7616_12",
    "lang": "en",
    "style": "tutor",
@@ -69312,6 +70005,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_28b9960a_17",
+   "lang": "en",
+   "style": "tutor",
+   "text": "A heavy suitcase.",
+   "speech": "A heavy suitcase.",
+   "source": "escoita/plan_mensual",
+   "pack": false
+  },
+  {
    "id": "en_tutor_28c4a733_25",
    "lang": "en",
    "style": "tutor",
@@ -69336,6 +70038,15 @@
    "text": "Yes! It is so heavy! A heavy backpack!",
    "speech": "Yes! It is so heavy! A heavy backpack!",
    "source": "microcuento.curso_4_5.01/2/recast.linguaCasa",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_28d086e2_12",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Green paint.",
+   "speech": "Green paint.",
+   "source": "escoita/plan_mensual",
    "pack": false
   },
   {
@@ -70842,6 +71553,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_2cb71122_38",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Serve one plate so the table is ready.",
+   "speech": "Serve one plate so the table is ready.",
+   "source": "escoita/plan_mensual",
+   "pack": false
+  },
+  {
    "id": "en_tutor_2cb94ea9_30",
    "lang": "en",
    "style": "tutor",
@@ -71145,6 +71865,15 @@
    "text": "Neighbours did some guerilla gardening on the empty lot.",
    "speech": "Neighbours did some guerilla gardening on the empty lot.",
    "source": "corpus/3451/frase",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_2d7c460b_11",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Cold juice.",
+   "speech": "Cold juice.",
+   "source": "escoita/plan_mensual",
    "pack": false
   },
   {
@@ -73197,6 +73926,15 @@
    "text": "Yes, your grandpa! Grandpa gives food to the cat.",
    "speech": "Yes, your grandpa! Grandpa gives food to the cat.",
    "source": "biblioteca/HIS-074",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_32775966_32",
+   "lang": "en",
+   "style": "tutor",
+   "text": "The wet towel drips in the sink.",
+   "speech": "The wet towel drips in the sink.",
+   "source": "escoita/plan_mensual",
    "pack": false
   },
   {
@@ -75288,6 +76026,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_383db316_12",
+   "lang": "en",
+   "style": "tutor",
+   "text": "A loud drum.",
+   "speech": "A loud drum.",
+   "source": "escoita/plan_mensual",
+   "pack": false
+  },
+  {
    "id": "en_tutor_38566893_22",
    "lang": "en",
    "style": "tutor",
@@ -76107,6 +76854,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_3a7c85bb_47",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Pack light things so the suitcase is not heavy.",
+   "speech": "Pack light things so the suitcase is not heavy.",
+   "source": "escoita/plan_mensual",
+   "pack": false
+  },
+  {
    "id": "en_tutor_3a8afca9_34",
    "lang": "en",
    "style": "tutor",
@@ -76899,6 +77655,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_3c9c8c92_13",
+   "lang": "en",
+   "style": "tutor",
+   "text": "A thin sheet.",
+   "speech": "A thin sheet.",
+   "source": "escoita/plan_mensual",
+   "pack": false
+  },
+  {
    "id": "en_tutor_3ca38f2e_37",
    "lang": "en",
    "style": "tutor",
@@ -77187,6 +77952,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_3d68f6fa_15",
+   "lang": "en",
+   "style": "tutor",
+   "text": "A round circle.",
+   "speech": "A round circle.",
+   "source": "escoita/plan_mensual",
+   "pack": false
+  },
+  {
    "id": "en_tutor_3d6d64c3_32",
    "lang": "en",
    "style": "tutor",
@@ -77256,6 +78030,15 @@
    "text": "Have you ever seen a horse? Where was it?",
    "speech": "Have you ever seen a horse? Where was it?",
    "source": "microcuento.curso_4_5.06/3/triada.achegar",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_3d9daa27_12",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Equal wings.",
+   "speech": "Equal wings.",
+   "source": "escoita/plan_mensual",
    "pack": false
   },
   {
@@ -79068,6 +79851,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_41b849c0_44",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Wear the raincoat with the hood to stay dry.",
+   "speech": "Wear the raincoat with the hood to stay dry.",
+   "source": "escoita/plan_mensual",
+   "pack": false
+  },
+  {
    "id": "en_tutor_41c3473f_30",
    "lang": "en",
    "style": "tutor",
@@ -79110,6 +79902,15 @@
    "text": "The dog likes to chase its tail.",
    "speech": "The dog likes to chase its tail.",
    "source": "corpus/1169/frase",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_41ec1b4e_13",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Warm and dry.",
+   "speech": "Warm and dry.",
+   "source": "escoita/plan_mensual",
    "pack": false
   },
   {
@@ -82929,6 +83730,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_4c701d97_14",
+   "lang": "en",
+   "style": "tutor",
+   "text": "A ready table.",
+   "speech": "A ready table.",
+   "source": "escoita/plan_mensual",
+   "pack": false
+  },
+  {
    "id": "en_tutor_4c7aab72_37",
    "lang": "en",
    "style": "tutor",
@@ -83025,6 +83835,15 @@
    "text": "Salmon swim up rivers to lay their eggs.",
    "speech": "Salmon swim up rivers to lay their eggs.",
    "source": "corpus/3782/frase",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_4ca98df5_26",
+   "lang": "en",
+   "style": "tutor",
+   "text": "We mix the wet sticky mud.",
+   "speech": "We mix the wet sticky mud.",
+   "source": "escoita/plan_mensual",
    "pack": false
   },
   {
@@ -84087,6 +84906,15 @@
    "text": "Can you thread the beads onto the string?",
    "speech": "Can you thread the beads onto the string?",
    "source": "corpus/3918/frase",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_4fb30083_14",
+   "lang": "en",
+   "style": "tutor",
+   "text": "A clear blink.",
+   "speech": "A clear blink.",
+   "source": "escoita/plan_mensual",
    "pack": false
   },
   {
@@ -85206,6 +86034,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_5282e93f_25",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Sort the small leaf here.",
+   "speech": "Sort the small leaf here.",
+   "source": "escoita/plan_mensual",
+   "pack": false
+  },
+  {
    "id": "en_tutor_52872972_42",
    "lang": "en",
    "style": "tutor",
@@ -85599,6 +86436,15 @@
    "text": "Lock the door when you go out.",
    "speech": "Lock the door when you go out.",
    "source": "corpus/489/frase",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_53704971_11",
+   "lang": "en",
+   "style": "tutor",
+   "text": "A high jar.",
+   "speech": "A high jar.",
+   "source": "escoita/plan_mensual",
    "pack": false
   },
   {
@@ -88002,6 +88848,15 @@
    "text": "Look! The red apple! Lúa wants a bite. Mmm, apple!",
    "speech": "Look! The red apple! Lúa wants a bite. Mmm, apple!",
    "source": "biblioteca/HIS-002",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_59c2de52_40",
+   "lang": "en",
+   "style": "tutor",
+   "text": "The pinwheel blades spin on a windy day.",
+   "speech": "The pinwheel blades spin on a windy day.",
+   "source": "escoita/plan_mensual",
    "pack": false
   },
   {
@@ -92208,6 +93063,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_641bebe5_8",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Wet mud.",
+   "speech": "Wet mud.",
+   "source": "escoita/plan_mensual",
+   "pack": false
+  },
+  {
    "id": "en_tutor_6422af18_33",
    "lang": "en",
    "style": "tutor",
@@ -93999,6 +94863,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_681faebd_48",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Blow the long straw on the flute for a low note.",
+   "speech": "Blow the long straw on the flute for a low note.",
+   "source": "escoita/plan_mensual",
+   "pack": false
+  },
+  {
    "id": "en_tutor_6822c12a_36",
    "lang": "en",
    "style": "tutor",
@@ -94584,6 +95457,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_69a3f5cd_36",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Match the blue piece in the pattern.",
+   "speech": "Match the blue piece in the pattern.",
+   "source": "escoita/plan_mensual",
+   "pack": false
+  },
+  {
    "id": "en_tutor_69a5b397_48",
    "lang": "en",
    "style": "tutor",
@@ -95151,6 +96033,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_6b35afef_11",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Soft bread.",
+   "speech": "Soft bread.",
+   "source": "escoita/plan_mensual",
+   "pack": false
+  },
+  {
    "id": "en_tutor_6b3bdc39_42",
    "lang": "en",
    "style": "tutor",
@@ -95211,6 +96102,15 @@
    "text": "The puppy trembled in the cold.",
    "speech": "The puppy trembled in the cold.",
    "source": "corpus/3938/frase",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_6b694fef_29",
+   "lang": "en",
+   "style": "tutor",
+   "text": "We blow the light paper sail.",
+   "speech": "We blow the light paper sail.",
+   "source": "escoita/plan_mensual",
    "pack": false
   },
   {
@@ -96123,6 +97023,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_6d92accd_39",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Cut the thin sheet of paper and listen.",
+   "speech": "Cut the thin sheet of paper and listen.",
+   "source": "escoita/plan_mensual",
+   "pack": false
+  },
+  {
    "id": "en_tutor_6d940d59_46",
    "lang": "en",
    "style": "tutor",
@@ -96147,6 +97056,15 @@
    "text": "Yes! The wolf is awake! He is hungry!",
    "speech": "Yes! The wolf is awake! He is hungry!",
    "source": "microcuento.curso_4_5.08/3/recast.sinala",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_6d9c92df_16",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Colorful filter.",
+   "speech": "Colorful filter.",
+   "source": "escoita/plan_mensual",
    "pack": false
   },
   {
@@ -99516,6 +100434,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_75698129_25",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Drop it on the loud drum.",
+   "speech": "Drop it on the loud drum.",
+   "source": "escoita/plan_mensual",
+   "pack": false
+  },
+  {
    "id": "en_tutor_756ad103_60",
    "lang": "en",
    "style": "tutor",
@@ -99981,6 +100908,15 @@
    "text": "Touch Lúa's finger on her lips!",
    "speech": "Touch Lúa's finger on her lips!",
    "source": "biblioteca/HIS-081",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_768d5d96_13",
+   "lang": "en",
+   "style": "tutor",
+   "text": "A fast train.",
+   "speech": "A fast train.",
+   "source": "escoita/plan_mensual",
    "pack": false
   },
   {
@@ -102684,6 +103620,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_7d769fc8_14",
+   "lang": "en",
+   "style": "tutor",
+   "text": "A long shadow.",
+   "speech": "A long shadow.",
+   "source": "escoita/plan_mensual",
+   "pack": false
+  },
+  {
    "id": "en_tutor_7d7a94dc_19",
    "lang": "en",
    "style": "tutor",
@@ -103320,6 +104265,15 @@
    "text": "Stomp your boots in the puddles!",
    "speech": "Stomp your boots in the puddles!",
    "source": "asamblea.primeiro_ciclo.xaneiro.2_3_anos/fase/3/cmd/cmd.xaneiro.2_3.02/ingles",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_7f0acddc_32",
+   "lang": "en",
+   "style": "tutor",
+   "text": "The ice melts in the cold juice.",
+   "speech": "The ice melts in the cold juice.",
+   "source": "escoita/plan_mensual",
    "pack": false
   },
   {
@@ -104025,6 +104979,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_808b769b_47",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Carry the cloth stretcher steady past the cone.",
+   "speech": "Carry the cloth stretcher steady past the cone.",
+   "source": "escoita/plan_mensual",
+   "pack": false
+  },
+  {
    "id": "en_tutor_808f6e7e_28",
    "lang": "en",
    "style": "tutor",
@@ -104589,6 +105552,15 @@
    "text": "Where is the tall flower? Touch the flower!",
    "speech": "Where is the tall flower? Touch the flower!",
    "source": "microcuento.curso_3_4.07/3/triada.sinalar",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_81d56ee4_43",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Shake the rice rainstick for a stormy boom.",
+   "speech": "Shake the rice rainstick for a stormy boom.",
+   "source": "escoita/plan_mensual",
    "pack": false
   },
   {
@@ -106824,6 +107796,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_86d38003_11",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Clean hand.",
+   "speech": "Clean hand.",
+   "source": "escoita/plan_mensual",
+   "pack": false
+  },
+  {
    "id": "en_tutor_86d38b1f_30",
    "lang": "en",
    "style": "tutor",
@@ -106974,6 +107955,15 @@
    "text": "The storm caused great destruction.",
    "speech": "The storm caused great destruction.",
    "source": "corpus/2275/frase",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_874095f4_13",
+   "lang": "en",
+   "style": "tutor",
+   "text": "A blue piece.",
+   "speech": "A blue piece.",
+   "source": "escoita/plan_mensual",
    "pack": false
   },
   {
@@ -108246,6 +109236,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_8a5ef590_31",
+   "lang": "en",
+   "style": "tutor",
+   "text": "The heavy stone sinks in water.",
+   "speech": "The heavy stone sinks in water.",
+   "source": "escoita/plan_mensual",
+   "pack": false
+  },
+  {
    "id": "en_tutor_8a61b6c7_17",
    "lang": "en",
    "style": "tutor",
@@ -108648,6 +109647,15 @@
    "text": "We built an extension at the back of the house.",
    "speech": "We built an extension at the back of the house.",
    "source": "corpus/2382/frase",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_8b743236_12",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Soft cotton.",
+   "speech": "Soft cotton.",
+   "source": "escoita/plan_mensual",
    "pack": false
   },
   {
@@ -110316,6 +111324,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_8f501b50_13",
+   "lang": "en",
+   "style": "tutor",
+   "text": "A tall tower.",
+   "speech": "A tall tower.",
+   "source": "escoita/plan_mensual",
+   "pack": false
+  },
+  {
    "id": "en_tutor_8f582d63_35",
    "lang": "en",
    "style": "tutor",
@@ -111216,6 +112233,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_91958c8b_40",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Pour water through the funnel very slow.",
+   "speech": "Pour water through the funnel very slow.",
+   "source": "escoita/plan_mensual",
+   "pack": false
+  },
+  {
    "id": "en_tutor_9197b917_54",
    "lang": "en",
    "style": "tutor",
@@ -111555,6 +112581,15 @@
    "text": "Pictures give context to the new words.",
    "speech": "Pictures give context to the new words.",
    "source": "corpus/2207/frase",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_927b91e0_13",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Carry steady.",
+   "speech": "Carry steady.",
+   "source": "escoita/plan_mensual",
    "pack": false
   },
   {
@@ -114159,6 +115194,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_995bf70f_14",
+   "lang": "en",
+   "style": "tutor",
+   "text": "A white plane.",
+   "speech": "A white plane.",
+   "source": "escoita/plan_mensual",
+   "pack": false
+  },
+  {
    "id": "en_tutor_9967a523_54",
    "lang": "en",
    "style": "tutor",
@@ -115563,6 +116607,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_9ce3e38a_38",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Zoom in with the lens to see it large.",
+   "speech": "Zoom in with the lens to see it large.",
+   "source": "escoita/plan_mensual",
+   "pack": false
+  },
+  {
    "id": "en_tutor_9ce4d3d8_24",
    "lang": "en",
    "style": "tutor",
@@ -115866,6 +116919,15 @@
    "text": "The newspaper interviewed a liberal and a conservative.",
    "speech": "The newspaper interviewed a liberal and a conservative.",
    "source": "corpus/2557/frase",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_9d629047_13",
+   "lang": "en",
+   "style": "tutor",
+   "text": "A paper sail.",
+   "speech": "A paper sail.",
+   "source": "escoita/plan_mensual",
    "pack": false
   },
   {
@@ -116265,6 +117327,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_9e691ed7_12",
+   "lang": "en",
+   "style": "tutor",
+   "text": "A wet towel.",
+   "speech": "A wet towel.",
+   "source": "escoita/plan_mensual",
+   "pack": false
+  },
+  {
    "id": "en_tutor_9e6d99ae_23",
    "lang": "en",
    "style": "tutor",
@@ -116586,6 +117657,15 @@
    "text": "Whose cup is red? And whose cup is blue? Touch them!",
    "speech": "Whose cup is red? And whose cup is blue? Touch them!",
    "source": "biblioteca/HIS-060",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_9f384ce1_13",
+   "lang": "en",
+   "style": "tutor",
+   "text": "A quick foot.",
+   "speech": "A quick foot.",
+   "source": "escoita/plan_mensual",
    "pack": false
   },
   {
@@ -117669,6 +118749,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_a1dc6024_49",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Press the switch so the lamp gives a clear blink.",
+   "speech": "Press the switch so the lamp gives a clear blink.",
+   "source": "escoita/plan_mensual",
+   "pack": false
+  },
+  {
    "id": "en_tutor_a1df18bf_12",
    "lang": "en",
    "style": "tutor",
@@ -118395,6 +119484,15 @@
    "text": "It's hard to gauge how deep the water is.",
    "speech": "It's hard to gauge how deep the water is.",
    "source": "corpus/3423/frase",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_a3ddc470_10",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Four legs.",
+   "speech": "Four legs.",
+   "source": "escoita/plan_mensual",
    "pack": false
   },
   {
@@ -119550,6 +120648,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_a71d7c8d_35",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Look at the tiny seed in the apple.",
+   "speech": "Look at the tiny seed in the apple.",
+   "source": "escoita/plan_mensual",
+   "pack": false
+  },
+  {
    "id": "en_tutor_a71dbae7_24",
    "lang": "en",
    "style": "tutor",
@@ -119673,6 +120780,15 @@
    "text": "She scraped her knee on the pavement.",
    "speech": "She scraped her knee on the pavement.",
    "source": "corpus/3795/frase",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_a76f72de_43",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Search the map grid to find the secret box.",
+   "speech": "Search the map grid to find the secret box.",
+   "source": "escoita/plan_mensual",
    "pack": false
   },
   {
@@ -120153,6 +121269,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_a83f1c4f_25",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Press the soft bread now.",
+   "speech": "Press the soft bread now.",
+   "source": "escoita/plan_mensual",
+   "pack": false
+  },
+  {
    "id": "en_tutor_a841b3b6_28",
    "lang": "en",
    "style": "tutor",
@@ -120303,6 +121428,15 @@
    "text": "Do you sleep with something soft?",
    "speech": "Do you sleep with something soft?",
    "source": "biblioteca/HIS-036",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_a8c539e2_40",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Move the light to stretch a long shadow.",
+   "speech": "Move the light to stretch a long shadow.",
+   "source": "escoita/plan_mensual",
    "pack": false
   },
   {
@@ -120987,6 +122121,15 @@
    "text": "Catch me!",
    "speech": "Catch me!",
    "source": "tpr.3_4.abril/s4/3_4.abril.s4.catch-me",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_aaafddbd_13",
+   "lang": "en",
+   "style": "tutor",
+   "text": "A large leaf.",
+   "speech": "A large leaf.",
+   "source": "escoita/plan_mensual",
    "pack": false
   },
   {
@@ -122040,6 +123183,15 @@
    "text": "Can you hear the birds singing?",
    "speech": "Can you hear the birds singing?",
    "source": "corpus/384/frase",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_ad8f5cff_31",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Count four legs on the toy dog.",
+   "speech": "Count four legs on the toy dog.",
+   "source": "escoita/plan_mensual",
    "pack": false
   },
   {
@@ -124869,6 +126021,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_b4f25906_38",
+   "lang": "en",
+   "style": "tutor",
+   "text": "We build a tall tower with big blocks.",
+   "speech": "We build a tall tower with big blocks.",
+   "source": "escoita/plan_mensual",
+   "pack": false
+  },
+  {
    "id": "en_tutor_b4f2875a_42",
    "lang": "en",
    "style": "tutor",
@@ -125562,6 +126723,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_b6acb283_12",
+   "lang": "en",
+   "style": "tutor",
+   "text": "A tiny seed.",
+   "speech": "A tiny seed.",
+   "source": "escoita/plan_mensual",
+   "pack": false
+  },
+  {
    "id": "en_tutor_b6b0af1e_35",
    "lang": "en",
    "style": "tutor",
@@ -125658,6 +126828,15 @@
    "text": "A dog! Woof? Yes, woof!",
    "speech": "A dog! Woof? Yes, woof!",
    "source": "academy.turnos_atencion_conjunta.01/luaEn",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_b70038d5_13",
+   "lang": "en",
+   "style": "tutor",
+   "text": "A small leaf.",
+   "speech": "A small leaf.",
+   "source": "escoita/plan_mensual",
    "pack": false
   },
   {
@@ -125856,6 +127035,15 @@
    "text": "Can you sniff like the horse? Sniff, sniff!",
    "speech": "Can you sniff like the horse? Sniff, sniff!",
    "source": "biblioteca/HIS-025",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_b77e63c2_10",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Pour slow.",
+   "speech": "Pour slow.",
+   "source": "escoita/plan_mensual",
    "pack": false
   },
   {
@@ -128748,6 +129936,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_bec2ec5b_11",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Bright sun.",
+   "speech": "Bright sun.",
+   "source": "escoita/plan_mensual",
+   "pack": false
+  },
+  {
    "id": "en_tutor_bec5af2f_41",
    "lang": "en",
    "style": "tutor",
@@ -131274,6 +132471,15 @@
    "text": "Yes, an apple! A red apple at our destination.",
    "speech": "Yes, an apple! A red apple at our destination.",
    "source": "biblioteca/HIS-094",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_c4dc88ec_36",
+   "lang": "en",
+   "style": "tutor",
+   "text": "The soft bandage soaks up the water.",
+   "speech": "The soft bandage soaks up the water.",
+   "source": "escoita/plan_mensual",
    "pack": false
   },
   {
@@ -138099,6 +139305,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_d546d180_14",
+   "lang": "en",
+   "style": "tutor",
+   "text": "A heavy stone.",
+   "speech": "A heavy stone.",
+   "source": "escoita/plan_mensual",
+   "pack": false
+  },
+  {
    "id": "en_tutor_d54766a2_36",
    "lang": "en",
    "style": "tutor",
@@ -138780,6 +139995,15 @@
    "text": "Yellow duck",
    "speech": "Yellow duck",
    "source": "tpr.0_2.marzo/s1/0_2.marzo.s1.yellow-duck",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_d70eaf21_37",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Run when the drum beats, then sleepy.",
+   "speech": "Run when the drum beats, then sleepy.",
+   "source": "escoita/plan_mensual",
    "pack": false
   },
   {
@@ -140520,6 +141744,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_dc1d2cc6_38",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Tap the glass jar to hear a high note.",
+   "speech": "Tap the glass jar to hear a high note.",
+   "source": "escoita/plan_mensual",
+   "pack": false
+  },
+  {
    "id": "en_tutor_dc1f9833_25",
    "lang": "en",
    "style": "tutor",
@@ -141687,6 +142920,15 @@
    "text": "Sleep and good mood often correlate.",
    "speech": "Sleep and good mood often correlate.",
    "source": "corpus/2220/frase",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_ded4a205_44",
+   "lang": "en",
+   "style": "tutor",
+   "text": "The flashlight makes stars glow in the dark.",
+   "speech": "The flashlight makes stars glow in the dark.",
+   "source": "escoita/plan_mensual",
    "pack": false
   },
   {
@@ -143253,6 +144495,15 @@
    "text": "The teacher wrote a nice comment on my drawing.",
    "speech": "The teacher wrote a nice comment on my drawing.",
    "source": "corpus/1197/frase",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_e330940f_11",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Fast heart.",
+   "speech": "Fast heart.",
+   "source": "escoita/plan_mensual",
    "pack": false
   },
   {
@@ -147774,6 +149025,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_ee7d2e2f_41",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Mix the paint with a brush to make green.",
+   "speech": "Mix the paint with a brush to make green.",
+   "source": "escoita/plan_mensual",
+   "pack": false
+  },
+  {
    "id": "en_tutor_ee8a45b5_78",
    "lang": "en",
    "style": "tutor",
@@ -150618,6 +151878,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_f65fc532_49",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Fold the paper so the butterfly wings stay equal.",
+   "speech": "Fold the paper so the butterfly wings stay equal.",
+   "source": "escoita/plan_mensual",
+   "pack": false
+  },
+  {
    "id": "en_tutor_f663e5bf_35",
    "lang": "en",
    "style": "tutor",
@@ -152064,6 +153333,15 @@
    "text": "Let's paint a rainbow.",
    "speech": "Let's paint a rainbow.",
    "source": "corpus/608/frase",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_fa086edc_13",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Stormy music.",
+   "speech": "Stormy music.",
+   "source": "escoita/plan_mensual",
    "pack": false
   },
   {
@@ -154062,6 +155340,15 @@
    "text": "Read the text and answer the questions.",
    "speech": "Read the text and answer the questions.",
    "source": "corpus/2925/frase",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_ff407a0e_50",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Listen through the phone when the string is tight.",
+   "speech": "Listen through the phone when the string is tight.",
+   "source": "escoita/plan_mensual",
    "pack": false
   },
   {
