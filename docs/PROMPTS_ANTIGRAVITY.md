@@ -107,6 +107,11 @@ Si para una pieza no existe un par de un solo fonema con las DOS palabras del ex
 y dímelo con la lista de lo que has probado; no metas una palabra ajena.
 Actualiza nota, misiones, pista y modelo si cambia el par; láminas nuevas solo si hacen falta,
 y docs/escoita-control.md.
+En plan_mensual.json, Claude Code ha marcado esos 16 pares con "par.pendiente" (la lección no los
+enseña) y ha añadido "modelo.significado" (gl/es de las tres frases del adulto) y una frase
+corregida en curso_2_3 mes 9 y curso_5_6 mes 10. Conserva todo eso: si regeneras con
+tools/gen_plan_escoita.py, pásalo antes al script. Al rehacer un par, QUITA su "pendiente"; si
+cambias una frase del modelo, cambia también su "significado".
 ANTES DEL PUSH, en verde: check_plan_escoita, check_pares_en, check_escoita, check_laminas,
 check_bundled_assets, check_licencias, check_no_emoji, check_registro_commits, check_ordenes.
 ENTREGA: SHA y la tabla de los 16 pares nuevos con qué parte del experimento nombra cada palabra.

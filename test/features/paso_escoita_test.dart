@@ -96,4 +96,31 @@ void main() {
       }
     });
   }
+
+  // Con el plan de verdad (las 40 piezas orientadas al STEAM): en 2-3, 3-4,
+  // 4-5 y 5-6, cada semana de cada mes lleva su actividad de escucha; la del
+  // par (semanas 1 y 4) solo falta donde el par está pendiente de P7.9.
+  test('o plan real: as catro idades, os dez meses, coas súas actividades', () {
+    final real =
+        PlanEscoita.fromRaw(File(PlanEscoita.assetPath).readAsStringSync());
+    PlanEscoita.sembrar(real);
+    var semPar = 0;
+    for (final curso in ['curso_2_3', 'curso_3_4', 'curso_4_5', 'curso_5_6']) {
+      for (var mes = 1; mes <= 10; mes++) {
+        final peza = real.de(curso, mes);
+        expect(peza, isNotNull, reason: '$curso mes $mes sen peza');
+        for (var s = 1; s <= 4; s++) {
+          final id = '$curso.${mes.toString().padLeft(2, '0')}.$s';
+          final e = PasoEscoita.para(id, real);
+          if (peza!.parPendiente && (s == 1 || s == 4)) {
+            expect(e, isNull);
+            semPar++;
+          } else {
+            expect(e?.semana, s, reason: '$id sen actividade de escoita');
+          }
+        }
+      }
+    }
+    expect(semPar, lessThanOrEqualTo(32));
+  });
 }

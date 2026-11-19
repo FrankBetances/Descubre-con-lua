@@ -43,6 +43,7 @@ def main() -> int:
         return 0
     fallos = [f"vocabulario prohibido «{m.group(0)}»" for m in PROHIBIDAS.finditer(texto)]
     cursos = json.loads(LECCIONS.read_text(encoding="utf-8"))["cursos"]
+    pendentes = []
     vistos, pares, progs = set(), {}, {}
     for p in pezas:
         k = (p["curso"], p["mes"])
@@ -69,7 +70,13 @@ def main() -> int:
         progs[con] = sitio
         if len(p["modelo"]["adulto"]) != 3:
             fallos.append(f"{sitio}: el modelo del adulto no tiene tres frases")
-        palabras = [p["par"]["a"], p["par"]["b"], *fases]
+        # Un par marcado "pendiente" (P7.9) no se enseña en la lección: se
+        # lista aquí y no se le exige el STEAM hasta que se rehaga.
+        if p["par"].get("pendiente"):
+            pendentes.append(sitio)
+            palabras = list(fases)
+        else:
+            palabras = [p["par"]["a"], p["par"]["b"], *fases]
         for w in palabras:
             st = w.get("steam") or {}
             if not all(st.get(l) for l in ("gl", "es")):
@@ -91,7 +98,8 @@ def main() -> int:
     if fallos:
         print("\n".join(f"FALLA: {x}" for x in fallos))
         return 1
-    print(f"OK: {len(pezas)} piezas de escucha, una por mes y edad, sin repetir.")
+    extra = f" Pares pendientes de rehacer (P7.9): {len(pendentes)}: {', '.join(pendentes)}." if pendentes else ""
+    print(f"OK: {len(pezas)} piezas de escucha, una por mes y edad, sin repetir.{extra}")
     return 0
 
 

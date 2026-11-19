@@ -65,8 +65,15 @@ class PezaMensual {
   final LocalizedString pista;
   final LocalizedString tema;
   final List<FaseEscoita> fases;
+
+  /// P7.9 (F-20261119-9): el par no se enseña hasta que se rehaga, porque
+  /// una de sus palabras no nombra el STEAM del mes.
+  final bool parPendiente;
   final String neno;
   final List<String> adulto;
+
+  /// El significado gl/es de cada frase del modelo, para el doble toque.
+  final List<LocalizedString> adultoSignificado;
   final LocalizedString notaModelo;
 
   const PezaMensual({
@@ -81,8 +88,10 @@ class PezaMensual {
     required this.pista,
     required this.tema,
     required this.fases,
+    this.parPendiente = false,
     required this.neno,
     required this.adulto,
+    this.adultoSignificado = const [],
     required this.notaModelo,
   });
 
@@ -105,8 +114,13 @@ class PezaMensual {
         for (final f in (prog['fases'] as List).cast<Map<String, dynamic>>())
           FaseEscoita.fromJson(f),
       ],
+      parPendiente: par['pendiente'] != null,
       neno: mod['neno'] as String,
       adulto: (mod['adulto'] as List).cast<String>(),
+      adultoSignificado: [
+        for (final x in (mod['significado'] as List?) ?? const [])
+          LocalizedString.fromJson(x),
+      ],
       notaModelo: LocalizedString.fromJson(mod['nota']),
     );
   }

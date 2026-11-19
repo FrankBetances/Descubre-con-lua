@@ -864,15 +864,26 @@ def collect_locutions(content_dir: Path = CONTENT_DIR) -> list[Locution]:
                     _one(texto, lang, estilo, f"escoita/valeria_{lang}", seen)
 
     # La pieza de escucha del mes (plan_mensual.json): sus palabras inglesas y
-    # las tres frases del modelo para el adulto suenan en el paso de la lección.
+    # las tres frases del modelo para el adulto suenan en el paso de la lección,
+    # cada una con su significado gl/es para el doble toque (F7).
     plan = content_dir / "escoita" / "plan_mensual.json"
     if plan.exists():
         d = json.loads(plan.read_text(encoding="utf-8"))
         for p in d if isinstance(d, list) else (d.get("piezas") or d.get("pezas") or []):
-            textos = [p["par"]["a"]["en"], p["par"]["b"]["en"], *p["modelo"]["adulto"]]
-            textos += [f["en"] for f in p["progresion"]["fases"]]
-            for texto in textos:
-                _one(texto, "en", estilo_ingles(texto), "escoita/plan_mensual", seen)
+            base = f"escoita/{p['curso']}/{p['mes']}"
+            palabras = list(p["progresion"]["fases"])
+            if not p["par"].get("pendiente"):
+                palabras += [p["par"]["a"], p["par"]["b"]]
+            for w in palabras:
+                fonte = f"{base}/{w['en']}"
+                _one(w["en"], "en", estilo_ingles(w["en"]), fonte, seen)
+                _add({"gl": w.get("gl", ""), "es": w.get("es", "")}, "tutor", f"{fonte}/significado", seen)
+            sig = p["modelo"].get("significado") or []
+            for k, frase in enumerate(p["modelo"]["adulto"]):
+                fonte = f"{base}/modelo/{k}"
+                _one(frase, "en", estilo_ingles(frase), fonte, seen)
+                if k < len(sig):
+                    _add(sig[k], "tutor", f"{fonte}/significado", seen)
 
     return sorted(seen.values(), key=lambda e: (e.lang, e.style, e.id))
 

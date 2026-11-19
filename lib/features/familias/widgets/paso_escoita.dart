@@ -23,6 +23,8 @@ class PasoEscoita {
     final peza = plan.de(m.group(1)!, int.parse(m.group(2)!));
     final semana = int.parse(m.group(3)!);
     if (peza == null || semana < 1 || semana > 4) return null;
+    // Las semanas 1 y 4 son del par: si está pendiente (P7.9), no se enseña.
+    if (peza.parPendiente && (semana == 1 || semana == 4)) return null;
     return PasoEscoita(semana: semana, peza: peza);
   }
 
@@ -149,6 +151,9 @@ class VistaPasoEscoita extends StatelessWidget {
                   style: estiloIngles(p.adulto[i]),
                   comoChip: true,
                   descripcion: p.adulto[i],
+                  significado: i < p.adultoSignificado.length
+                      ? p.adultoSignificado[i]
+                      : null,
                 ),
               ),
             ),
