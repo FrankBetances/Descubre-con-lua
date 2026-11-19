@@ -418,7 +418,8 @@
             "gl": "Bater as palmas amodo",
             "es": "Dar palmas despacio"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_glad"
         },
         {
           "id": "0_2.setembro.s2.safe-and-sound",
@@ -429,7 +430,8 @@
             "gl": "Abrazar o bebé ao volver",
             "es": "Abrazar al bebé al volver"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_safe_and_sound"
         },
         {
           "id": "0_2.setembro.s2.who-s-this",
@@ -607,7 +609,8 @@
             "gl": "Tocar o nariz do bebé co nariz",
             "es": "Tocar la nariz del bebé con la nariz"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_nuzzle"
         },
         {
           "id": "0_2.setembro.s3.coax",

@@ -172,7 +172,8 @@
             "gl": "Acariñar unha manta peluda",
             "es": "Acariciar una manta peluda"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_fuzzy"
         },
         {
           "id": "0_2.novembro.s1.prickly",
@@ -608,7 +609,8 @@
             "gl": "Bater palmas co ritmo da canción",
             "es": "Dar palmas al ritmo de la canción"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_clap_along"
         },
         {
           "id": "0_2.novembro.s3.sway",
@@ -787,7 +789,8 @@
             "gl": "Bater a culler de madeira nunha pota",
             "es": "Golpear la cuchara de madera en una olla"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_wooden_spoon"
         },
         {
           "id": "0_2.novembro.s4.rattle-toy",

@@ -395,7 +395,8 @@
             "gl": "Xuntar as palmas",
             "es": "Juntar las palmas"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_identical"
         },
         {
           "id": "5_6.marzo.s2.lopsided",

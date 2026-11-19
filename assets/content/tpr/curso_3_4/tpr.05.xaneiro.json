@@ -306,7 +306,8 @@
           "tprAction": {
             "gl": "Pisar amodo coma se os pés se pegasen á lama",
             "es": "Pisar despacio como si los pies se pegaran al barro"
-          }
+          },
+          "lamina": "pal_mud"
         },
         {
           "id": "3_4.xaneiro.s2.drop",
@@ -329,7 +330,8 @@
           "tprAction": {
             "gl": "Camiñar en fila coma pola rúa",
             "es": "Caminar en fila como por la calle"
-          }
+          },
+          "lamina": "pal_street"
         },
         {
           "id": "3_4.xaneiro.s2.stomp",
@@ -455,7 +457,8 @@
           "tprAction": {
             "gl": "Pisar forte coas botas imaxinarias: pum, pum",
             "es": "Pisar fuerte con las botas imaginarias: pum, pum"
-          }
+          },
+          "lamina": "pal_stomp_your_boots"
         },
         {
           "id": "3_4.xaneiro.s2.jump-in-the-puddle",
@@ -803,7 +806,8 @@
           "tprAction": {
             "gl": "Tocar o chan coas palmas das mans",
             "es": "Tocar el suelo con las palmas de las manos"
-          }
+          },
+          "lamina": "pal_floor"
         },
         {
           "id": "3_4.xaneiro.s4.turn-on",

@@ -427,7 +427,8 @@
           "tprAction": {
             "gl": "Xuntar as palmas moi estiradas cara arriba",
             "es": "Juntar las palmas muy estiradas hacia arriba"
-          }
+          },
+          "lamina": "pal_thin"
         },
         {
           "id": "3_4.abril.s2.be-a-little-seed",
@@ -438,7 +439,8 @@
           "tprAction": {
             "gl": "Encollerse no chan coma unha semente",
             "es": "Encogerse en el suelo como una semilla"
-          }
+          },
+          "lamina": "pal_be_a_little_seed"
         },
         {
           "id": "3_4.abril.s2.open-your-flower",
@@ -610,7 +612,8 @@
           "tprAction": {
             "gl": "Camiñar cos dedos polo brazo facendo cóxegas",
             "es": "Caminar con los dedos por el brazo haciendo cosquillas"
-          }
+          },
+          "lamina": "pal_tickle"
         },
         {
           "id": "3_4.abril.s3.search",
@@ -789,7 +792,8 @@
           "tprAction": {
             "gl": "Mirar ao chan coma se nos vísemos reflectidos",
             "es": "Mirar al suelo como si nos viéramos reflejados"
-          }
+          },
+          "lamina": "pal_pond"
         },
         {
           "id": "3_4.abril.s4.stone",

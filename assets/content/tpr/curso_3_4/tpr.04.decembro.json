@@ -478,7 +478,8 @@
           "tprAction": {
             "gl": "Estirarse de puntas ata tocar unha estrela imaxinaria",
             "es": "Estirarse de puntillas hasta tocar una estrella imaginaria"
-          }
+          },
+          "lamina": "pal_up_to_the_star"
         }
       ]
     },
@@ -661,7 +662,8 @@
           "tprAction": {
             "gl": "Abrazar unha manta imaxinaria con cara de gusto",
             "es": "Abrazar una manta imaginaria con cara de gusto"
-          }
+          },
+          "lamina": "pal_cosy"
         },
         {
           "id": "3_4.decembro.s3.awake",
@@ -705,7 +707,8 @@
           "tprAction": {
             "gl": "Abrazarse forte e quedar quietos",
             "es": "Abrazarse fuerte y quedarse quietos"
-          }
+          },
+          "lamina": "pal_sleep_tight"
         },
         {
           "id": "3_4.decembro.s3.under-the-blanket",
@@ -784,7 +787,8 @@
           "tprAction": {
             "gl": "Camiñar dereitos e solemnes coma un rei",
             "es": "Caminar erguidos y solemnes como un rey"
-          }
+          },
+          "lamina": "pal_king"
         },
         {
           "id": "3_4.decembro.s4.music",
@@ -888,7 +892,8 @@
           "tprAction": {
             "gl": "Bater os pés no chan e logo parar",
             "es": "Golpear el suelo con los pies y luego parar"
-          }
+          },
+          "lamina": "pal_noisy"
         },
         {
           "id": "3_4.decembro.s4.colourful",
@@ -922,7 +927,8 @@
           "tprAction": {
             "gl": "Abrazar a quen está ao lado e sorrir",
             "es": "Abrazar a quien está al lado y sonreír"
-          }
+          },
+          "lamina": "pal_happy_new_year"
         },
         {
           "id": "3_4.decembro.s4.happy-birthday",

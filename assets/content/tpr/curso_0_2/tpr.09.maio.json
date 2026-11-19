@@ -104,7 +104,8 @@
             "gl": "Bater na auga coas palmas",
             "es": "Golpear el agua con las palmas"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_splash_about"
         },
         {
           "id": "0_2.maio.s1.kick-water",

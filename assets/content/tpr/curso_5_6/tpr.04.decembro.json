@@ -45,7 +45,8 @@
             "gl": "Camiñar en círculo arredor",
             "es": "Caminar en círculo alrededor"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_orbit"
         },
         {
           "id": "5_6.decembro.s1.solar-system",
@@ -206,7 +207,8 @@
             "gl": "Camiñar arredor dun amigo",
             "es": "Caminar alrededor de un amigo"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_the_earth_goes_around_the_sun"
         },
         {
           "id": "5_6.decembro.s1.day-and-night",
@@ -740,7 +742,8 @@
             "gl": "Bater palmas contentos",
             "es": "Dar palmas contentos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_celebration"
         },
         {
           "id": "5_6.decembro.s4.card-making",

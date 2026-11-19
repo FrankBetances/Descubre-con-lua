@@ -91,7 +91,8 @@
             "gl": "Camiñar apoiándose nun caxato",
             "es": "Caminar apoyándose en un bastón"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_walking_stick"
         },
         {
           "id": "4_5.novembro.s1.hike",
@@ -126,7 +127,8 @@
             "gl": "Camiñar inclinado cara atrás",
             "es": "Caminar inclinado hacia atrás"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_walk_down"
         },
         {
           "id": "4_5.novembro.s1.rest-at-the-top",
@@ -183,7 +185,8 @@
             "gl": "Camiñar con esforzo",
             "es": "Caminar con esfuerzo"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_uphill"
         },
         {
           "id": "4_5.novembro.s1.downhill",
@@ -314,7 +317,8 @@
             "gl": "Bater co dedo coma un peto",
             "es": "Golpear con el dedo como un pájaro carpintero"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_woodpecker"
         },
         {
           "id": "4_5.novembro.s2.hollow-trunk",
@@ -370,7 +374,8 @@
             "gl": "Abrazar un tronco",
             "es": "Abrazar un tronco"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_hug_a_tree"
         },
         {
           "id": "4_5.novembro.s2.tap-on-wood",
@@ -381,7 +386,8 @@
             "gl": "Bater amodo na madeira",
             "es": "Golpear despacio la madera"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_tap_on_wood"
         },
         {
           "id": "4_5.novembro.s2.ancient",
@@ -638,7 +644,8 @@
             "gl": "Bater suave nas costas",
             "es": "Golpear suave en la espalda"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_hard_shelled"
         },
         {
           "id": "4_5.novembro.s3.wriggly",

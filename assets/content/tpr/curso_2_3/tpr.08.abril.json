@@ -123,7 +123,8 @@
             "gl": "Camiñar de puntas pola herba",
             "es": "Caminar de puntillas por la hierba"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_tiptoe_through"
         },
         {
           "id": "2_3.abril.s1.blow-seeds",
@@ -416,7 +417,8 @@
             "gl": "Acariñar unha pluma",
             "es": "Acariciar una pluma"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_feathered"
         },
         {
           "id": "2_3.abril.s2.high-up",
@@ -664,7 +666,8 @@
             "gl": "Camiñar de puntas",
             "es": "Caminar de puntillas"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_on_tiptoe"
         },
         {
           "id": "2_3.abril.s3.shh-baby-s-sleeping",
@@ -752,7 +755,8 @@
             "gl": "Encollerse coma un pitiño",
             "es": "Acurrucarse como un polluelo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_hatchling"
         },
         {
           "id": "2_3.abril.s4.straw",
@@ -866,7 +870,8 @@
             "gl": "Encollerse moi pequeno",
             "es": "Acurrucarse muy pequeño"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_newborn"
         },
         {
           "id": "2_3.abril.s4.fragile",
@@ -888,7 +893,8 @@
             "gl": "Abrazarse a si mesmo",
             "es": "Abrazarse a sí mismo"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_cosy_nest"
         },
         {
           "id": "2_3.abril.s4.twiggy",
@@ -921,7 +927,8 @@
             "gl": "Acariñar un pitiño imaxinario",
             "es": "Acariciar un pollito imaginario"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_hello_little_chick"
         },
         {
           "id": "2_3.abril.s4.careful-with-the-egg",

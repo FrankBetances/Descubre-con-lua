@@ -152,7 +152,8 @@
           "tprAction": {
             "gl": "Pisar suave marcando o pulso",
             "es": "Pisar suave marcando el pulso"
-          }
+          },
+          "lamina": "pal_feet"
         },
         {
           "id": "3_4.outubro.s1.walk",
@@ -954,7 +955,8 @@
           "tprAction": {
             "gl": "Camiñar, parar ao sinal e volver camiñar",
             "es": "Caminar, parar a la señal y volver a caminar"
-          }
+          },
+          "lamina": "pal_stop_and_go"
         }
       ]
     }

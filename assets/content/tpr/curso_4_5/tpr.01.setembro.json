@@ -421,7 +421,8 @@
             "gl": "Camiñar con equilibrio",
             "es": "Caminar con equilibrio"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_wobbly_bridge"
         },
         {
           "id": "4_5.setembro.s2.can-you-help-me-build",
@@ -761,7 +762,8 @@
             "gl": "Abrazar un peluche",
             "es": "Abrazar un peluche"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_hug_buddy"
         },
         {
           "id": "4_5.setembro.s4.kind-words",
@@ -816,7 +818,8 @@
             "gl": "Pousar a man no ombro dun amigo",
             "es": "Poner la mano en el hombro de un amigo"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_comfort"
         },
         {
           "id": "4_5.setembro.s4.apologise",
@@ -904,7 +907,8 @@
             "gl": "Sorrir e bater palmas",
             "es": "Sonreír y dar palmas"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_i_feel_happy_because_we_play"
         },
         {
           "id": "4_5.setembro.s4.i-m-sorry",

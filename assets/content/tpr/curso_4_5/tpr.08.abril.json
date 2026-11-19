@@ -147,7 +147,8 @@
             "gl": "Camiñar pola liña",
             "es": "Caminar por la línea"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_keep_to_the_path"
         },
         {
           "id": "4_5.abril.s1.wild-and-free",
@@ -290,7 +291,8 @@
             "gl": "Acariñar os brazos coma plumas",
             "es": "Acariciar los brazos como plumas"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_feathers"
         },
         {
           "id": "4_5.abril.s2.cliff-nest",

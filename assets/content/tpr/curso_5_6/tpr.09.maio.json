@@ -231,7 +231,8 @@
             "gl": "Abrazarse",
             "es": "Abrazarse"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_i_feel_better_after_a_hug"
         }
       ]
     },
@@ -846,7 +847,8 @@
             "gl": "Abrazar un peluche",
             "es": "Abrazar un peluche"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_caring_for_others"
         },
         {
           "id": "5_6.maio.s4.well-cared-for",

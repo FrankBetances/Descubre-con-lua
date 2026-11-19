@@ -330,7 +330,8 @@
             "gl": "Camiñar diante sinalando",
             "es": "Caminar delante señalando"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_lead_the_way"
         },
         {
           "id": "5_6.setembro.s2.encourage",

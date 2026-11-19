@@ -327,7 +327,8 @@
             "gl": "Acariñar a pel do brazo",
             "es": "Acariciar la piel del brazo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_skin"
         },
         {
           "id": "0_2.outubro.s2.caress",
@@ -416,7 +417,8 @@
             "gl": "Acariñar a meixela co dorso da man",
             "es": "Acariciar la mejilla con el dorso de la mano"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_smooth_skin"
         },
         {
           "id": "0_2.outubro.s2.warm-hands",

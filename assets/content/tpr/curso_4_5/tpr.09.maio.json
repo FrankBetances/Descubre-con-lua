@@ -872,7 +872,8 @@
             "gl": "Pisar con coidado",
             "es": "Pisar con cuidado"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_muddy_bank"
         },
         {
           "id": "4_5.maio.s4.tidal",

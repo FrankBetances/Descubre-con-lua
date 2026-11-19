@@ -132,7 +132,8 @@
             "gl": "Abrazar un peluche",
             "es": "Abrazar un peluche"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_hug_l_a_goodbye"
         },
         {
           "id": "5_6.xuno.s1.laugh-together",
@@ -538,7 +539,8 @@
             "gl": "Aplaudir forte",
             "es": "Aplaudir fuerte"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_proud_parents"
         },
         {
           "id": "5_6.xuno.s3.class-song",
@@ -582,7 +584,8 @@
             "gl": "Camiñar erguido",
             "es": "Caminar erguido"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_walk_on_stage"
         },
         {
           "id": "5_6.xuno.s3.give-a-speech",

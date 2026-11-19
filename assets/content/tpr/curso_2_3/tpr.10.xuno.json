@@ -322,7 +322,8 @@
             "gl": "Pisar e mirar a pegada",
             "es": "Pisar y mirar la huella"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_footprints_in_sand"
         },
         {
           "id": "2_3.xuno.s2.pat-the-sand",
@@ -642,7 +643,8 @@
             "gl": "Acariñar unha pedra lisa",
             "es": "Acariciar una piedra lisa"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_smooth_pebble"
         },
         {
           "id": "2_3.xuno.s3.salty-shell",

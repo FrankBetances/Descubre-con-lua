@@ -66,7 +66,8 @@
             "gl": "Pisar amodo coma sobre xeo",
             "es": "Pisar despacio como sobre hielo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_puddle_ice"
         },
         {
           "id": "4_5.decembro.s1.melted-water",
@@ -605,7 +606,8 @@
             "gl": "Camiñar mirando arriba",
             "es": "Caminar mirando arriba"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_walk_through"
         },
         {
           "id": "4_5.decembro.s3.dazzling",

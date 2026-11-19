@@ -120,7 +120,8 @@
             "gl": "Dar pasos cara atrás con coidado",
             "es": "Dar pasos hacia atrás con cuidado"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_walk_backwards"
         },
         {
           "id": "5_6.febreiro.s1.find-a-rhyme",
@@ -564,7 +565,8 @@
             "gl": "Mover a batuta ao ritmo",
             "es": "Mover la batuta al ritmo"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_conduct"
         },
         {
           "id": "5_6.febreiro.s3.sing-in-tune",
@@ -830,7 +832,8 @@
             "gl": "Bater tres veces",
             "es": "Golpear tres veces"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_knock_on_the_door"
         },
         {
           "id": "5_6.febreiro.s4.run-home",

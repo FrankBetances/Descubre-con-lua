@@ -846,7 +846,8 @@
             "gl": "Dar unha aperta suave",
             "es": "Dar un abrazo suave"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_hug_a_friend"
         },
         {
           "id": "2_3.setembro.s4.kind-hearted",

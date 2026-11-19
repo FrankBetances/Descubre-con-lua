@@ -145,7 +145,8 @@
             "gl": "Abrazar o aire",
             "es": "Abrazar el aire"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_care_for_the_sea"
         },
         {
           "id": "5_6.abril.s1.polluted",
@@ -298,7 +299,8 @@
             "gl": "Camiñar de lado con patas longas",
             "es": "Caminar de lado con patas largas"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_spider_crab"
         },
         {
           "id": "5_6.abril.s2.diver",
@@ -576,7 +578,8 @@
             "gl": "Camiñar no sitio",
             "es": "Caminar en el sitio"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_walk_to_school"
         },
         {
           "id": "5_6.abril.s3.plant-a-tree",
@@ -786,7 +789,8 @@
             "gl": "Aconchegarse xunto a un amigo",
             "es": "Acurrucarse junto a un amigo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_calf"
         },
         {
           "id": "5_6.abril.s4.leap-out-of-the-water",

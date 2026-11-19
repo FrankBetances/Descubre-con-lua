@@ -160,7 +160,8 @@
           "tprAction": {
             "gl": "Acariñar un coello imaxinario moi fofo",
             "es": "Acariciar un conejo imaginario muy esponjoso"
-          }
+          },
+          "lamina": "pal_fluffy"
         },
         {
           "id": "3_4.febreiro.s1.cute",
@@ -171,7 +172,8 @@
           "tprAction": {
             "gl": "Xuntar as mans baixo o queixo e sorrir",
             "es": "Juntar las manos bajo la barbilla y sonreír"
-          }
+          },
+          "lamina": "pal_cute"
         },
         {
           "id": "3_4.febreiro.s1.clever",
@@ -237,7 +239,8 @@
           "tprAction": {
             "gl": "Estirarse no chan coma un gato ao espertar",
             "es": "Estirarse en el suelo como un gato al despertar"
-          }
+          },
+          "lamina": "pal_like_a_cat"
         }
       ]
     },
@@ -351,7 +354,8 @@
           "tprAction": {
             "gl": "Camiñar balanceándose coma un pato",
             "es": "Caminar balanceándose como un pato"
-          }
+          },
+          "lamina": "pal_waddle"
         },
         {
           "id": "3_4.febreiro.s2.peck",
@@ -461,7 +465,8 @@
           "tprAction": {
             "gl": "Poñerse por parellas e camiñar da man",
             "es": "Ponerse por parejas y caminar de la mano"
-          }
+          },
+          "lamina": "pal_two_by_two"
         },
         {
           "id": "3_4.febreiro.s2.in-the-barn",
@@ -702,7 +707,8 @@
           "tprAction": {
             "gl": "Pisar forte e amodo coma un oso",
             "es": "Pisar fuerte y despacio como un oso"
-          }
+          },
+          "lamina": "pal_stomp_like_a_bear"
         },
         {
           "id": "3_4.febreiro.s3.tall-like-a-giraffe",
@@ -713,7 +719,8 @@
           "tprAction": {
             "gl": "Poñerse de puntas co pescozo estirado",
             "es": "Ponerse de puntillas con el cuello estirado"
-          }
+          },
+          "lamina": "pal_tall_like_a_giraffe"
         }
       ]
     },

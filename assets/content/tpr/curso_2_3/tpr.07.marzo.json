@@ -65,7 +65,8 @@
             "gl": "Facer un corazón coas mans",
             "es": "Hacer un corazón con las manos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_heart_shape"
         },
         {
           "id": "2_3.marzo.s1.shape-sorter",
@@ -232,7 +233,8 @@
             "gl": "Facer un corazón coas mans",
             "es": "Hacer un corazón con las manos"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_a_heart_with_my_hands"
         }
       ]
     },
@@ -276,7 +278,8 @@
             "gl": "Acariñar a pel do albaricoque",
             "es": "Acariciar la piel del albaricoque"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_apricot"
         },
         {
           "id": "2_3.marzo.s2.grape-bunch",

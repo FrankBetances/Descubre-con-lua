@@ -54,7 +54,8 @@
             "gl": "Camiñar por rúas estreitas",
             "es": "Caminar por calles estrechas"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_old_town"
         },
         {
           "id": "5_6.xaneiro.s1.stone-wall",
@@ -87,7 +88,8 @@
             "gl": "Camiñar amodo mirando",
             "es": "Caminar despacio mirando"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_museum"
         },
         {
           "id": "5_6.xaneiro.s1.hold-up-one-finger-for-first",
@@ -164,7 +166,8 @@
             "gl": "Camiñar amodo e encorvado",
             "es": "Caminar despacio y encorvado"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_very_old"
         },
         {
           "id": "5_6.xaneiro.s1.famous",
@@ -186,7 +189,8 @@
             "gl": "Bater nunha pedra",
             "es": "Golpear una piedra"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_stony"
         },
         {
           "id": "5_6.xaneiro.s1.long-long-ago",
@@ -308,7 +312,8 @@
             "gl": "Pisar con coidado",
             "es": "Pisar con cuidado"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_cobbles"
         },
         {
           "id": "5_6.xaneiro.s2.lantern-light",
@@ -575,7 +580,8 @@
             "gl": "Dar pasiños inseguros",
             "es": "Dar pasitos inseguros"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_learn_to_walk"
         },
         {
           "id": "5_6.xaneiro.s3.look-at-old-photos",
@@ -675,7 +681,8 @@
             "gl": "Gatear e logo camiñar",
             "es": "Gatear y luego caminar"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_when_i_was_a_baby_i_couldn_t_walk"
         },
         {
           "id": "5_6.xaneiro.s3.i-m-five-and-a-half",

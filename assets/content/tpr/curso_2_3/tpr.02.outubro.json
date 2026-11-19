@@ -90,7 +90,8 @@
             "gl": "Pisar as pegadas do chan",
             "es": "Pisar las huellas del suelo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_footsteps"
         },
         {
           "id": "2_3.outubro.s1.bend-knees",
@@ -350,7 +351,8 @@
             "gl": "Dar a volta e camiñar de volta",
             "es": "Darse la vuelta y caminar de vuelta"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_turn_back"
         },
         {
           "id": "2_3.outubro.s2.roll-on-the-floor",
@@ -477,7 +479,8 @@
             "gl": "Camiñar arredor da cadeira",
             "es": "Caminar alrededor de la silla"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_round_the_chair"
         }
       ]
     },
@@ -749,7 +752,8 @@
             "gl": "Bater cos talóns no chan",
             "es": "Golpear con los talones en el suelo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_tap_shoes"
         },
         {
           "id": "2_3.outubro.s4.ballet",
@@ -794,7 +798,8 @@
             "gl": "Bater palmas ao compás",
             "es": "Dar palmas al compás"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_beat"
         },
         {
           "id": "2_3.outubro.s4.sole",
@@ -897,7 +902,8 @@
             "gl": "Pisar forte ao ritmo",
             "es": "Pisar fuerte al ritmo"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_stomping"
         },
         {
           "id": "2_3.outubro.s4.lively",

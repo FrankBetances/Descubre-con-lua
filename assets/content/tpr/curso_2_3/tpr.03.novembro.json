@@ -43,7 +43,8 @@
             "gl": "Camiñar coma un pato",
             "es": "Caminar como un pato"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_pond_duck"
         },
         {
           "id": "2_3.novembro.s1.fountain",
@@ -203,7 +204,8 @@
             "gl": "Coller a man e camiñar",
             "es": "Coger la mano y caminar"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_let_s_go_to_the_park"
         },
         {
           "id": "2_3.novembro.s1.look-at-the-ducks",
@@ -416,7 +418,8 @@
             "gl": "Abrazarse polo frío",
             "es": "Abrazarse por el frío"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_chilly_wind"
         },
         {
           "id": "2_3.novembro.s2.wild-wind",
@@ -529,7 +532,8 @@
             "gl": "Pisar sobre follas secas",
             "es": "Pisar sobre hojas secas"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_crunchy_path"
         },
         {
           "id": "2_3.novembro.s3.pile-of-leaves",
@@ -552,7 +556,8 @@
             "gl": "Camiñar pola beira da poza",
             "es": "Caminar por el borde del charco"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_puddle_edge"
         },
         {
           "id": "2_3.novembro.s3.log",
@@ -563,7 +568,8 @@
             "gl": "Camiñar por riba dun tronco",
             "es": "Caminar por encima de un tronco"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_log"
         },
         {
           "id": "2_3.novembro.s3.stomp-around",
@@ -609,7 +615,8 @@
             "gl": "Camiñar coma un elefante",
             "es": "Caminar como un elefante"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_walk_like_an_elephant"
         },
         {
           "id": "2_3.novembro.s3.walk-light",
@@ -620,7 +627,8 @@
             "gl": "Camiñar de puntas",
             "es": "Caminar de puntillas"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_walk_lightly"
         },
         {
           "id": "2_3.novembro.s3.crunchy-leaves",
@@ -643,7 +651,8 @@
             "gl": "Pisar moi forte",
             "es": "Pisar muy fuerte"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_heavy_steps"
         },
         {
           "id": "2_3.novembro.s3.light-steps",
@@ -654,7 +663,8 @@
             "gl": "Pisar moi suave",
             "es": "Pisar muy suave"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_light_steps"
         },
         {
           "id": "2_3.novembro.s3.thumping",
@@ -677,7 +687,8 @@
             "gl": "Pisar forte tres veces",
             "es": "Pisar fuerte tres veces"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_stomp_stomp_stomp"
         },
         {
           "id": "2_3.novembro.s3.listen-to-the-crunch",

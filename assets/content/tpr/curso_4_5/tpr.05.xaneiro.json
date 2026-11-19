@@ -215,7 +215,8 @@
             "gl": "Camiñar e xirar á esquerda",
             "es": "Caminar y girar a la izquierda"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_turn_left_at_the_square"
         },
         {
           "id": "4_5.xaneiro.s1.straight-on-then-right",
@@ -226,7 +227,8 @@
             "gl": "Camiñar recto e xirar",
             "es": "Caminar recto y girar"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_straight_on_then_right"
         },
         {
           "id": "4_5.xaneiro.s1.we-found-it",
@@ -313,7 +315,8 @@
             "gl": "Camiñar polos colchóns",
             "es": "Caminar por las colchonetas"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_mat_path"
         },
         {
           "id": "4_5.xaneiro.s2.rope-bridge",
@@ -324,7 +327,8 @@
             "gl": "Camiñar agarrándose",
             "es": "Caminar agarrándose"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_rope_bridge"
         },
         {
           "id": "4_5.xaneiro.s2.walk-across",
@@ -335,7 +339,8 @@
             "gl": "Camiñar dun lado ao outro",
             "es": "Caminar de un lado al otro"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_walk_across"
         },
         {
           "id": "4_5.xaneiro.s2.step-between",
@@ -346,7 +351,8 @@
             "gl": "Pisar entre dous aros",
             "es": "Pisar entre dos aros"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_step_between"
         },
         {
           "id": "4_5.xaneiro.s2.crawl-under",
@@ -448,7 +454,8 @@
             "gl": "Pisar entre os aros",
             "es": "Pisar entre los aros"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_step_between_the_hoops"
         },
         {
           "id": "4_5.xaneiro.s2.over-or-under",
@@ -827,7 +834,8 @@
             "gl": "Amasar coas palmas",
             "es": "Amasar con las palmas"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_knead"
         },
         {
           "id": "4_5.xaneiro.s4.look-after-animals",

@@ -184,7 +184,8 @@
             "gl": "Acariñar moi amodo",
             "es": "Acariciar muy despacio"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_gentle_hands"
         },
         {
           "id": "0_2.xaneiro.s1.purry",
@@ -206,7 +207,8 @@
             "gl": "Acariñar o gatiño e sorrir",
             "es": "Acariciar al gatito y sonreír"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_nice_kitty"
         },
         {
           "id": "0_2.xaneiro.s1.here-doggy",
@@ -217,7 +219,8 @@
             "gl": "Chamar co dedo e bater nos xeonllos",
             "es": "Llamar con el dedo y golpear las rodillas"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_here_doggy"
         },
         {
           "id": "0_2.xaneiro.s1.the-cat-says-meow",
@@ -411,7 +414,8 @@
             "gl": "Acariñar unha pluma amarela",
             "es": "Acariciar una pluma amarilla"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_fluffy_chick"
         },
         {
           "id": "0_2.xaneiro.s2.noisy-farm",

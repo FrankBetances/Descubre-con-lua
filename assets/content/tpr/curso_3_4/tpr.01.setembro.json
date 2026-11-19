@@ -262,7 +262,8 @@
           "tprAction": {
             "gl": "Pousar as palmas das mans enriba da mesa",
             "es": "Apoyar las palmas de las manos encima de la mesa"
-          }
+          },
+          "lamina": "pal_table"
         },
         {
           "id": "3_4.setembro.s2.window",
@@ -297,7 +298,8 @@
           "tprAction": {
             "gl": "Xuntar as palmas e abrilas como un libro",
             "es": "Juntar las palmas y abrirlas como un libro"
-          }
+          },
+          "lamina": "pal_book"
         },
         {
           "id": "3_4.setembro.s2.crayon",
@@ -579,7 +581,8 @@
           "tprAction": {
             "gl": "Rodearse cos propios brazos nunha aperta",
             "es": "Rodearse con los propios brazos en un abrazo"
-          }
+          },
+          "lamina": "pal_hug"
         },
         {
           "id": "3_4.setembro.s3.kiss",
@@ -694,7 +697,8 @@
           "tprAction": {
             "gl": "Facer un corazón coas mans",
             "es": "Hacer un corazón con las manos"
-          }
+          },
+          "lamina": "pal_i_love_you"
         },
         {
           "id": "3_4.setembro.s3.thank-you",

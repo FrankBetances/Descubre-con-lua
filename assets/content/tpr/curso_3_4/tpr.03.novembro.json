@@ -99,7 +99,8 @@
           "tprAction": {
             "gl": "Baixar amodo ata o chan coma unha folla que cae",
             "es": "Bajar despacio hasta el suelo como una hoja que cae"
-          }
+          },
+          "lamina": "pal_falling"
         },
         {
           "id": "3_4.novembro.s1.blow",
@@ -122,7 +123,8 @@
           "tprAction": {
             "gl": "Pisar forte no sitio coma sobre follas secas",
             "es": "Pisar fuerte en el sitio como sobre hojas secas"
-          }
+          },
+          "lamina": "pal_crunch"
         },
         {
           "id": "3_4.novembro.s1.pick-up",
@@ -226,7 +228,8 @@
           "tprAction": {
             "gl": "Camiñar moi suave para non facer ruído",
             "es": "Caminar muy suave para no hacer ruido"
-          }
+          },
+          "lamina": "pal_walk_softly"
         },
         {
           "id": "3_4.novembro.s1.under-the-tree",
@@ -330,7 +333,8 @@
           "tprAction": {
             "gl": "Camiñar en fila por un camiño imaxinario",
             "es": "Caminar en fila por un camino imaginario"
-          }
+          },
+          "lamina": "pal_path"
         },
         {
           "id": "3_4.novembro.s2.peel",
@@ -639,7 +643,8 @@
           "tprAction": {
             "gl": "Acariñar un pelo moi mol imaxinario",
             "es": "Acariciar un pelo muy suave imaginario"
-          }
+          },
+          "lamina": "pal_furry"
         },
         {
           "id": "3_4.novembro.s3.wild",
@@ -717,7 +722,8 @@
           "tprAction": {
             "gl": "Andar de puntas sen facer nin un ruído",
             "es": "Andar de puntillas sin hacer ni un ruido"
-          }
+          },
+          "lamina": "pal_quiet_as_a_mouse"
         }
       ]
     },

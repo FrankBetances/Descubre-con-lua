@@ -156,7 +156,8 @@
             "gl": "Bater na mesa",
             "es": "Golpear la mesa"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_wooden"
         },
         {
           "id": "4_5.xuno.s1.floating-raft",
@@ -542,7 +543,8 @@
             "gl": "Aplaudir forte",
             "es": "Aplaudir fuerte"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_cheering_crowd"
         },
         {
           "id": "4_5.xuno.s3.farewell-hug",
@@ -553,7 +555,8 @@
             "gl": "Abrazar a un amigo",
             "es": "Abrazar a un amigo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_farewell_hug"
         },
         {
           "id": "4_5.xuno.s3.receive",

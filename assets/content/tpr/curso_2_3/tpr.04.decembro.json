@@ -124,7 +124,8 @@
             "gl": "Pisar forte na poza",
             "es": "Pisar fuerte en el charco"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_splash_around"
         },
         {
           "id": "2_3.decembro.s1.wade",
@@ -168,7 +169,8 @@
             "gl": "Pisar e facer «chof»",
             "es": "Pisar y hacer «chof»"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_squelchy"
         },
         {
           "id": "2_3.decembro.s1.rubbery",
@@ -213,7 +215,8 @@
             "gl": "Pisar forte cara á porta",
             "es": "Pisar fuerte hacia la puerta"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_boots_on_let_s_go"
         },
         {
           "id": "2_3.decembro.s1.in-the-puddle",
@@ -268,7 +271,8 @@
             "gl": "Bater nas pernas moi forte",
             "es": "Golpear en las piernas muy fuerte"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_thunder"
         },
         {
           "id": "2_3.decembro.s2.lightning",
@@ -379,7 +383,8 @@
             "gl": "Bater cos dedos no chan",
             "es": "Golpear con los dedos en el suelo"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_pitter_pat"
         },
         {
           "id": "2_3.decembro.s2.stormy",
@@ -435,7 +440,8 @@
             "gl": "Bater nas pernas unha vez forte",
             "es": "Golpear en las piernas una vez fuerte"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_boom_goes_the_thunder"
         },
         {
           "id": "2_3.decembro.s2.it-s-pouring",
@@ -926,7 +932,8 @@
             "gl": "Abrazarse dentro da casa",
             "es": "Abrazarse dentro de casa"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_inside_is_warm"
         },
         {
           "id": "2_3.decembro.s4.blanket-and-a-book",

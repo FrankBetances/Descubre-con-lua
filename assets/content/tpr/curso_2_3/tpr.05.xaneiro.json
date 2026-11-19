@@ -499,7 +499,8 @@
             "gl": "Camiñar pola beirarrúa",
             "es": "Caminar por la acera"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_pavement"
         },
         {
           "id": "2_3.xaneiro.s3.shop",
@@ -567,7 +568,8 @@
             "gl": "Camiñar en círculo",
             "es": "Caminar en círculo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_roundabout"
         },
         {
           "id": "2_3.xaneiro.s3.cross-the-road",
@@ -624,7 +626,8 @@
             "gl": "Camiñar en fila",
             "es": "Caminar en fila"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_walk_along"
         },
         {
           "id": "2_3.xaneiro.s3.busy-street",
@@ -801,7 +804,8 @@
             "gl": "Camiñar ata o final do peirao",
             "es": "Caminar hasta el final del muelle"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_pier"
         },
         {
           "id": "2_3.xaneiro.s4.tie-up",

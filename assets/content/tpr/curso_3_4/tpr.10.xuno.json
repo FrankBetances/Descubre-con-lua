@@ -442,7 +442,8 @@
           "tprAction": {
             "gl": "Coller a mochila imaxinaria e camiñar contentos",
             "es": "Coger la mochila imaginaria y caminar contentos"
-          }
+          },
+          "lamina": "pal_let_s_go_to_the_beach"
         },
         {
           "id": "3_4.xuno.s2.put-on-your-sun-hat",
@@ -533,7 +534,8 @@
           "tprAction": {
             "gl": "Pegar a man aberta ao chan coma unha estrela de mar",
             "es": "Pegar la mano abierta al suelo como una estrella de mar"
-          }
+          },
+          "lamina": "pal_starfish"
         },
         {
           "id": "3_4.xuno.s3.mussel",
@@ -544,7 +546,8 @@
           "tprAction": {
             "gl": "Abrir e pechar as palmas xuntas coma un mexillón",
             "es": "Abrir y cerrar las palmas juntas como un mejillón"
-          }
+          },
+          "lamina": "pal_mussel"
         },
         {
           "id": "3_4.xuno.s3.whale",
@@ -623,7 +626,8 @@
           "tprAction": {
             "gl": "Dar a volta ás mans: palmas arriba, palmas abaixo",
             "es": "Dar la vuelta a las manos: palmas arriba, palmas abajo"
-          }
+          },
+          "lamina": "pal_flip"
         },
         {
           "id": "3_4.xuno.s3.wobbly",
@@ -701,7 +705,8 @@
           "tprAction": {
             "gl": "Camiñar de lado cos dedos en pinza",
             "es": "Caminar de lado con los dedos en pinza"
-          }
+          },
+          "lamina": "pal_walk_sideways_like_a_crab"
         },
         {
           "id": "3_4.xuno.s3.under-the-sea",
@@ -847,7 +852,8 @@
           "tprAction": {
             "gl": "Bater palmas e bailar xuntos",
             "es": "Dar palmas y bailar juntos"
-          }
+          },
+          "lamina": "pal_celebrate"
         },
         {
           "id": "3_4.xuno.s4.return",
@@ -858,7 +864,8 @@
           "tprAction": {
             "gl": "Dar a volta e camiñar de novo cara ao círculo",
             "es": "Dar la vuelta y caminar de nuevo hacia el círculo"
-          }
+          },
+          "lamina": "pal_return"
         },
         {
           "id": "3_4.xuno.s4.older",

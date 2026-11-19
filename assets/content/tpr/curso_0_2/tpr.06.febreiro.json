@@ -217,7 +217,8 @@
             "gl": "Rir e bater palmas",
             "es": "Reír y dar palmas"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_ha_ha_ha"
         },
         {
           "id": "0_2.febreiro.s1.where-did-i-go",
@@ -783,7 +784,8 @@
             "gl": "Bater dúas tapas amodo",
             "es": "Golpear dos tapas despacio"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_pot_lid"
         },
         {
           "id": "0_2.febreiro.s4.rhythm",
@@ -794,7 +796,8 @@
             "gl": "Bater nas pernas ao ritmo",
             "es": "Golpear en las piernas al ritmo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_rhythm"
         },
         {
           "id": "0_2.febreiro.s4.nursery-rhyme",
@@ -816,7 +819,8 @@
             "gl": "Bater no tambor coas mans",
             "es": "Tocar el tambor con las manos"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_bang_the_drum"
         },
         {
           "id": "0_2.febreiro.s4.tap-along",
@@ -827,7 +831,8 @@
             "gl": "Dar golpiños ao ritmo",
             "es": "Dar golpecitos al ritmo"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_tap_along"
         },
         {
           "id": "0_2.febreiro.s4.twirl",
@@ -894,7 +899,8 @@
             "gl": "Bater forte no tambor unha vez",
             "es": "Golpear fuerte el tambor una vez"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_booming"
         },
         {
           "id": "0_2.febreiro.s4.merry-tune",
@@ -939,7 +945,8 @@
             "gl": "Bater forte e despois suave",
             "es": "Golpear fuerte y luego suave"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_loud_and_soft"
         },
         {
           "id": "0_2.febreiro.s4.clap-and-stop",
@@ -950,7 +957,8 @@
             "gl": "Bater palmas e parar de súpeto",
             "es": "Dar palmas y parar de golpe"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_clap_and_stop"
         }
       ]
     }

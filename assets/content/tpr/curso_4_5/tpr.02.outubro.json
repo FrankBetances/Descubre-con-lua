@@ -67,7 +67,8 @@
             "gl": "Parar co golpe de tambor",
             "es": "Parar con el golpe de tambor"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_drumbeat"
         },
         {
           "id": "4_5.outubro.s1.command",
@@ -520,7 +521,8 @@
             "gl": "Camiñar pola liña cos brazos en cruz",
             "es": "Caminar por la línea con los brazos en cruz"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_tightrope"
         },
         {
           "id": "4_5.outubro.s3.beanbag-balance",
@@ -755,7 +757,8 @@
             "gl": "Bater unha serie de palmas",
             "es": "Dar una serie de palmas"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_clap_pattern"
         },
         {
           "id": "4_5.outubro.s4.echo-game",
@@ -777,7 +780,8 @@
             "gl": "Bater rápido e despois amodo",
             "es": "Golpear rápido y luego despacio"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_tempo"
         },
         {
           "id": "4_5.outubro.s4.pause",
@@ -810,7 +814,8 @@
             "gl": "Bater nas pernas ao ritmo",
             "es": "Golpear las piernas al ritmo"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_keep_the_beat"
         },
         {
           "id": "4_5.outubro.s4.echo",
@@ -832,7 +837,8 @@
             "gl": "Bater máis rápido e máis amodo",
             "es": "Golpear más rápido y más despacio"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_speed_up_and_slow_down"
         },
         {
           "id": "4_5.outubro.s4.count-down",
@@ -877,7 +883,8 @@
             "gl": "Bater igual todo o tempo",
             "es": "Golpear igual todo el tiempo"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_steady_beat"
         },
         {
           "id": "4_5.outubro.s4.faster",
@@ -934,7 +941,8 @@
             "gl": "Bater amodo e logo rápido",
             "es": "Golpear despacio y luego rápido"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_first_slow_then_fast"
         },
         {
           "id": "4_5.outubro.s4.clap-clap-stamp",
@@ -945,7 +953,8 @@
             "gl": "Bater dúas palmas e pisar",
             "es": "Dar dos palmas y pisar"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_clap_clap_stamp"
         }
       ]
     }

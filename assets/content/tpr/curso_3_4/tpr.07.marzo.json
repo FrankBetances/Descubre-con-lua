@@ -681,7 +681,8 @@
           "tprAction": {
             "gl": "Abrazar unha mazá imaxinaria e sorrir",
             "es": "Abrazar una manzana imaginaria y sonreír"
-          }
+          },
+          "lamina": "pal_i_like_apples"
         },
         {
           "id": "3_4.marzo.s3.yes-please",
@@ -828,7 +829,8 @@
           "tprAction": {
             "gl": "Bater nas pernas coas palmas: pum, pum",
             "es": "Golpear las piernas con las palmas: pum, pum"
-          }
+          },
+          "lamina": "pal_bang"
         },
         {
           "id": "3_4.marzo.s4.strum",
@@ -940,7 +942,8 @@
           "tprAction": {
             "gl": "Bater forte nas pernas e logo moi suave",
             "es": "Golpear fuerte las piernas y luego muy suave"
-          }
+          },
+          "lamina": "pal_loud_then_quiet"
         },
         {
           "id": "3_4.marzo.s4.with-the-drum",
@@ -951,7 +954,8 @@
           "tprAction": {
             "gl": "Camiñar ao pulso dun tambor imaxinario",
             "es": "Caminar al pulso de un tambor imaginario"
-          }
+          },
+          "lamina": "pal_with_the_drum"
         }
       ]
     }

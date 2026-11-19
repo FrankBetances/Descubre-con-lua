@@ -31,6 +31,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "a heart with my hands": {
+   "clave": "pal_a_heart_with_my_hands",
+   "orixe": "banco",
+   "porque": "Dos manos formando un corazón.",
+   "fuente": "fluent-flat",
+   "asset": "fluentui-emoji:assets/Heart hands/Flat",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
   "a leaf": {
    "clave": "folla",
    "orixe": "reutilizada",
@@ -251,12 +261,42 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "applause": {
+   "clave": "pal_applause",
+   "orixe": "banco",
+   "porque": "Dos manos aplaudiendo fuerte.",
+   "fuente": "fluent-flat",
+   "asset": "fluentui-emoji:assets/Clapping hands/Flat",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
   "apple": {
    "clave": "pal_apple",
    "orixe": "banco",
    "porque": "Manzana roja brillante con hoja verde.",
    "fuente": "fluent-flat",
    "asset": "fluentui-emoji:assets/Red apple/Flat",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "apricot": {
+   "clave": "pal_apricot",
+   "orixe": "composta",
+   "porque": "Fruta aterciopelada de albaricoque acariciada suavemente.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#apricot",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "arctic": {
+   "clave": "pal_arctic",
+   "orixe": "composta",
+   "porque": "Frío ártico con nieve y oso polar mientras el niño se abraza para calentarse.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#arctic",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
    "revisado": true
@@ -601,6 +641,26 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "bang": {
+   "clave": "pal_bang",
+   "orixe": "nova",
+   "porque": "Niño golpeando con las palmas las piernas haciendo pum, pum.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#bang",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "bang the drum": {
+   "clave": "pal_bang_the_drum",
+   "orixe": "composta",
+   "porque": "Tambor sonando al golpear encima con las manos.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#bang_the_drum",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
   "basket": {
    "clave": "pal_pal_basket",
    "orixe": "banco",
@@ -647,6 +707,16 @@
    "porque": "Patito y barquito flotando en el agua como juguetes de baño.",
    "fuente": "composta",
    "asset": "tools/gen_laminas_0_2.py#bath_toy",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "be a little seed": {
+   "clave": "pal_be_a_little_seed",
+   "orixe": "composta",
+   "porque": "Semilla pequeña en la tierra y niño encogido en el suelo como ella.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#be_a_little_seed",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
    "revisado": true
@@ -757,6 +827,26 @@
    "porque": "Oso pardo de frente, coincidencia directa.",
    "fuente": "fluent-flat",
    "asset": "fluentui-emoji:assets/Bear/Flat",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "beat": {
+   "clave": "pal_beat",
+   "orixe": "composta",
+   "porque": "Metrónomo marcando el compás junto a las palmas.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#beat",
+   "sha": "81ad501f19cc13e548e4cb6a9c63a3873c87262a",
+   "licencia": "Apache-2.0",
+   "revisado": true
+  },
+  "beat your chest": {
+   "clave": "pal_beat_your_chest",
+   "orixe": "composta",
+   "porque": "Gorila fuerte y niño golpeándose el pecho suavemente como él.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#beat_your_chest",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
    "revisado": true
@@ -1251,6 +1341,46 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "book": {
+   "clave": "pal_book",
+   "orixe": "composta",
+   "porque": "Manos abiertas juntándose y abriéndose como un libro.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#book",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "boom goes the thunder": {
+   "clave": "pal_boom_goes_the_thunder",
+   "orixe": "composta",
+   "porque": "Nube con rayo de trueno y niño dando una palmada fuerte en las piernas.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#boom_goes_the_thunder",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "boom-boom, boom-boom": {
+   "clave": "pal_boom_boom_boom_boom",
+   "orixe": "composta",
+   "porque": "Corazón latiendo pum-pum y niño tocando suavemente su pecho.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#boom_boom_boom_boom",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "booming": {
+   "clave": "pal_booming",
+   "orixe": "composta",
+   "porque": "Tambor retumbando con grandes ondas de sonido al golpear fuerte.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#booming",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
   "boot print": {
    "clave": "pal_boot_print",
    "orixe": "composta",
@@ -1269,6 +1399,16 @@
    "asset": "tools/gen_laminas_3_4.py#boots",
    "sha": "6be3d38b",
    "licencia": "Propia",
+   "revisado": true
+  },
+  "boots on, let's go": {
+   "clave": "pal_boots_on_let_s_go",
+   "orixe": "composta",
+   "porque": "Botas puestas caminando con paso firme hacia la puerta.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#boots_on_let_s_go",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
    "revisado": true
   },
   "bounce on knee": {
@@ -1631,6 +1771,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "calf": {
+   "clave": "pal_calf",
+   "orixe": "composta",
+   "porque": "Vaca con cría tierna mientras dos amigos se acurrucan juntos.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#calf",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
   "call your friend: come and help us": {
    "clave": "pal_call_friend_help",
    "orixe": "nova",
@@ -1721,6 +1871,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "can you feel your heart": {
+   "clave": "pal_can_you_feel_your_heart",
+   "orixe": "composta",
+   "porque": "Corazón latiendo y niño sintiendo su pecho con la mano.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#can_you_feel_your_heart",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
   "candle": {
    "clave": "pal_pal_candle",
    "orixe": "banco",
@@ -1772,6 +1932,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "care for the sea": {
+   "clave": "pal_care_for_the_sea",
+   "orixe": "composta",
+   "porque": "Cuidar el mar abrazando y protegiendo la vida marina.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#care_for_the_sea",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
   "careful": {
    "clave": "pal_careful",
    "orixe": "composta",
@@ -1788,6 +1958,16 @@
    "porque": "Mano abierta acariciando despacio.",
    "fuente": "composta",
    "asset": "tools/gen_laminas_0_2.py#caress",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "caring for others": {
+   "clave": "pal_caring_for_others",
+   "orixe": "composta",
+   "porque": "Peluche cuidado con cariño y niño dando un abrazo tierno.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#caring_for_others",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
    "revisado": true
@@ -1862,6 +2042,26 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "celebrate": {
+   "clave": "pal_celebrate",
+   "orixe": "composta",
+   "porque": "Niños celebrando contentos con confeti y palmas.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#celebrate",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "celebration": {
+   "clave": "pal_celebration",
+   "orixe": "composta",
+   "porque": "Bola de confeti brillante y palmas de celebración.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#celebration",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
   "chair": {
    "clave": "pal_chair",
    "orixe": "banco",
@@ -1922,6 +2122,16 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "cheering crowd": {
+   "clave": "pal_cheering_crowd",
+   "orixe": "nova",
+   "porque": "Varios niños juntos animando y aplaudiendo como un público alegre.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#cheering_crowd",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "cheese": {
    "clave": "pal_cheese",
    "orixe": "banco",
@@ -1940,6 +2150,16 @@
    "asset": "fluentui-emoji:assets/Cherries/Flat",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "chest": {
+   "clave": "pal_chest",
+   "orixe": "nova",
+   "porque": "Niño con la mano sobre el centro del pecho y flecha señalándolo.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#chest",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
    "revisado": true
   },
   "chestnut": {
@@ -1968,6 +2188,16 @@
    "porque": "Pollito amarillo.",
    "fuente": "fluent-flat",
    "asset": "fluentui-emoji:assets/Baby chick/Flat",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "chilly wind": {
+   "clave": "pal_chilly_wind",
+   "orixe": "composta",
+   "porque": "Viento frío soplando y niño abrazándose el cuerpo para entrar en calor.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#chilly_wind",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
    "revisado": true
@@ -2022,12 +2252,52 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "clap along": {
+   "clave": "pal_clap_along",
+   "orixe": "composta",
+   "porque": "Manos aplaudiendo al ritmo alegre de las notas musicales.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#clap_along",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "clap and stop": {
+   "clave": "pal_clap_and_stop",
+   "orixe": "composta",
+   "porque": "Manos dando palmas y señal octogonal de parar de golpe.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#clap_and_stop",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "clap flippers": {
+   "clave": "pal_clap_flippers",
+   "orixe": "composta",
+   "porque": "Foca marina batiendo aletas y niño dando palmas igual.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#clap_flippers",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
   "clap high, clap low": {
    "clave": "pal_clap_high_clap_low",
    "orixe": "composta",
    "porque": "Manos dando palmas arriba y abajo.",
    "fuente": "composta",
    "asset": "tools/gen_laminas_3_4.py#clap_high_clap_low",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "clap pattern": {
+   "clave": "pal_clap_pattern",
+   "orixe": "composta",
+   "porque": "Serie repetida de palmas marcando una secuencia rítmica visual.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#clap_pattern",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
    "revisado": true
@@ -2048,6 +2318,16 @@
    "porque": "Dos manos chocando al aplaudir con ritmo.",
    "fuente": "composta",
    "asset": "tools/gen_laminas_3_4.py#clap_your_hands",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "clap, clap, stamp": {
+   "clave": "pal_clap_clap_stamp",
+   "orixe": "composta",
+   "porque": "Dar dos palmadas sonoras seguidas de una pisada fuerte.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#clap_clap_stamp",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
    "revisado": true
@@ -2182,6 +2462,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "cobbles": {
+   "clave": "pal_cobbles",
+   "orixe": "nova",
+   "porque": "Suelo empedrado con adoquines redondeados y niño pisando con cuidado.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#cobbles",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "coin": {
    "clave": "pal_coin",
    "orixe": "banco",
@@ -2292,6 +2582,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "comfort": {
+   "clave": "pal_comfort",
+   "orixe": "nova",
+   "porque": "Niño consolando a su compañero apoyando la mano amable en su hombro.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#comfort",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "comfortable": {
    "clave": "pal_comfortable",
    "orixe": "composta",
@@ -2330,6 +2630,16 @@
    "asset": "tools/gen_laminas_5_6.py#compromise",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "conduct": {
+   "clave": "pal_conduct",
+   "orixe": "nova",
+   "porque": "Niño dirigiendo la música moviendo la batuta al compás de las notas.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#conduct",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
    "revisado": true
   },
   "confetti": {
@@ -2402,12 +2712,32 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "cosy": {
+   "clave": "pal_cosy",
+   "orixe": "composta",
+   "porque": "Niño arropado dentro de una manta suave y acogedora.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#cosy",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
   "cosy corner": {
    "clave": "pal_cosy_corner",
    "orixe": "composta",
    "porque": "Rincón acogedor con cojines suaves y manta doblada.",
    "fuente": "composta",
    "asset": "tools/gen_laminas_tpr.py#cosy_corner",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "cosy nest": {
+   "clave": "pal_cosy_nest",
+   "orixe": "composta",
+   "porque": "Nido cálido de pajarito y niño acurrucado recogido en sí mismo.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#cosy_nest",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
    "revisado": true
@@ -2682,6 +3012,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "crunch": {
+   "clave": "pal_crunch",
+   "orixe": "composta",
+   "porque": "Pisar fuerte en el sitio haciendo crujir hojas secas bajo los pies.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#crunch",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
   "crunch leaves": {
    "clave": "pal_crunch_leaves",
    "orixe": "composta",
@@ -2718,6 +3058,16 @@
    "porque": "Hojas secas y quebradizas haciendo ruido al crujir.",
    "fuente": "composta",
    "asset": "tools/gen_laminas_2_3.py#crunchy_leaves",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "crunchy path": {
+   "clave": "pal_crunchy_path",
+   "orixe": "composta",
+   "porque": "Camino cubierto de hojas secas crujientes al pisar.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#crunchy_path",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
    "revisado": true
@@ -2848,6 +3198,16 @@
    "porque": "Manzana y cuchillo de cocina listos para cortarla.",
    "fuente": "composta",
    "asset": "tools/gen_laminas_2_3.py#cut_it_for_me",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "cute": {
+   "clave": "pal_cute",
+   "orixe": "composta",
+   "porque": "Pollito tierno y niño juntando las manos bajo la barbilla con sonrisa dulce.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#cute",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
    "revisado": true
@@ -3322,6 +3682,26 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "drum fingers": {
+   "clave": "pal_drum_fingers",
+   "orixe": "nova",
+   "porque": "Mano con dedos tamborileando sobre la superficie de la mesa con ritmo.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#drum_fingers",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "drumbeat": {
+   "clave": "pal_drumbeat",
+   "orixe": "composta",
+   "porque": "Golpe fuerte de tambor acompañado de la señal de parar al instante.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#drumbeat",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
   "dry your toes": {
    "clave": "pal_dry_your_toes",
    "orixe": "composta",
@@ -3692,6 +4072,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "falling": {
+   "clave": "pal_falling",
+   "orixe": "composta",
+   "porque": "Hoja cayendo suavemente y niño bajando despacio hasta el suelo.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#falling",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
   "falling, falling, falling down": {
    "clave": "pal_falling_falling_falling_down",
    "orixe": "composta",
@@ -3710,6 +4100,16 @@
    "asset": "tools/gen_laminas_tpr.py#family_table",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "farewell hug": {
+   "clave": "pal_farewell_hug",
+   "orixe": "nova",
+   "porque": "Dos amigos abrazándose cálidamente mientras uno agita la mano al despedirse.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#farewell_hug",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
    "revisado": true
   },
   "farmer": {
@@ -3782,6 +4182,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "favourite": {
+   "clave": "pal_favourite",
+   "orixe": "composta",
+   "porque": "Plato favorito elegido con sonrisa y abrazo alegre.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#favourite",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
   "feather": {
    "clave": "pal_feather",
    "orixe": "banco",
@@ -3798,6 +4208,26 @@
    "porque": "Cama mullida junto a pluma suave cayendo encima.",
    "fuente": "composta",
    "asset": "tools/gen_laminas_tpr.py#feather_bed",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "feathered": {
+   "clave": "pal_feathered",
+   "orixe": "composta",
+   "porque": "Pluma suave acariciada ligeramente con los dedos.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#feathered",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "feathers": {
+   "clave": "pal_feathers",
+   "orixe": "composta",
+   "porque": "Plumas ligeras y niño acariciando suavemente sus propios brazos.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#feathers",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
    "revisado": true
@@ -3830,6 +4260,16 @@
    "asset": "tools/gen_laminas_5_6.py#feel_your_heartbeat",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "feet": {
+   "clave": "pal_feet",
+   "orixe": "nova",
+   "porque": "Dos pies descalzos pisando suave al ritmo del pulso.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#feet",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
    "revisado": true
   },
   "ferry": {
@@ -3972,6 +4412,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "first slow, then fast": {
+   "clave": "pal_first_slow_then_fast",
+   "orixe": "composta",
+   "porque": "Primero ritmo muy despacio como la tortuga y después rápido como el conejo.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#first_slow_then_fast",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
   "first the big box, then the cup": {
    "clave": "pal_first_the_big_box_then_the_cup",
    "orixe": "composta",
@@ -4052,6 +4502,26 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "fleecy": {
+   "clave": "pal_fleecy",
+   "orixe": "composta",
+   "porque": "Chaqueta afelpada suave acariciada con la mano.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#fleecy",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "flip": {
+   "clave": "pal_flip",
+   "orixe": "nova",
+   "porque": "Manos girando arriba y abajo mostrando primero palma y luego dorso.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#flip",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "flip-flops": {
    "clave": "pal_flip_flops",
    "orixe": "banco",
@@ -4102,12 +4572,42 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "floor": {
+   "clave": "pal_floor",
+   "orixe": "nova",
+   "porque": "Niño inclinado tocando con las dos palmas el suelo de madera.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#floor",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "flower": {
    "clave": "pal_flower",
    "orixe": "banco",
    "porque": "Flor abierta con pétalos claros y centro dorado.",
    "fuente": "fluent-flat",
    "asset": "fluentui-emoji:assets/Blossom/Flat",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "fluffy": {
+   "clave": "pal_fluffy",
+   "orixe": "composta",
+   "porque": "Conejito esponjoso y suave acariciado con ternura.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#fluffy",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "fluffy chick": {
+   "clave": "pal_fluffy_chick",
+   "orixe": "composta",
+   "porque": "Pollito amarillo muy esponjoso y suave.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#fluffy_chick",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
    "revisado": true
@@ -4228,6 +4728,26 @@
    "porque": "Huellas de pies descalzos.",
    "fuente": "fluent-flat",
    "asset": "fluentui-emoji:assets/Footprints/Flat",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "footprints in sand": {
+   "clave": "pal_footprints_in_sand",
+   "orixe": "composta",
+   "porque": "Huellas marcadas en la arena de la playa mientras el niño mira sus pisadas.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#footprints_in_sand",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "footsteps": {
+   "clave": "pal_footsteps",
+   "orixe": "composta",
+   "porque": "Sucesión de huellas en el suelo mostrando los pasos al caminar.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#footsteps",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
    "revisado": true
@@ -4432,6 +4952,36 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "furry": {
+   "clave": "pal_furry",
+   "orixe": "composta",
+   "porque": "Pelaje muy suave de animal peludo acariciado despacio.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#furry",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "furry coat": {
+   "clave": "pal_furry_coat",
+   "orixe": "composta",
+   "porque": "Abrigo peludo y esponjoso abrazado con cariño.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#furry_coat",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "fuzzy": {
+   "clave": "pal_fuzzy",
+   "orixe": "composta",
+   "porque": "Manta peludita muy suave acariciada con la mano.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#fuzzy",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
   "gallop": {
    "clave": "pal_gallop",
    "orixe": "composta",
@@ -4478,6 +5028,16 @@
    "porque": "Niño acariciando suavemente a un gato con cuidado y cariño.",
    "fuente": "composta",
    "asset": "tools/gen_laminas_4_5.py#gentle",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "gentle hands": {
+   "clave": "pal_gentle_hands",
+   "orixe": "composta",
+   "porque": "Manos abiertas moviéndose despacio con máxima suavidad.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#gentle_hands",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
    "revisado": true
@@ -4558,6 +5118,16 @@
    "porque": "Jirafa alta de cuello largo.",
    "fuente": "fluent-flat",
    "asset": "fluentui-emoji:assets/Giraffe/Flat",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "glad": {
+   "clave": "pal_glad",
+   "orixe": "composta",
+   "porque": "Niño contento sonriendo y dando palmas despacio.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#glad",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
    "revisado": true
@@ -4812,6 +5382,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "group hug": {
+   "clave": "pal_group_hug",
+   "orixe": "nova",
+   "porque": "Tres amigos abrazándose juntos formando un gran abrazo de grupo.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#group_hug",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "grow tall into a sunflower": {
    "clave": "pal_grow_tall_into_a_sunflower",
    "orixe": "composta",
@@ -4888,6 +5468,16 @@
    "porque": "Boca abierta mostrando las encías rosadas junto a un mordedor infantil.",
    "fuente": "propia",
    "asset": "tools/gen_laminas_tpr.py#gums",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "ha, ha, ha": {
+   "clave": "pal_ha_ha_ha",
+   "orixe": "nova",
+   "porque": "Niño riéndose alegremente mientras da palmas.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#ha_ha_ha",
    "sha": "6be3d38b",
    "licencia": "Propia",
    "revisado": true
@@ -4992,6 +5582,26 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "happy new year": {
+   "clave": "pal_happy_new_year",
+   "orixe": "composta",
+   "porque": "Confeti festivo de Año Nuevo con amigos abrazándose sonrientes.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#happy_new_year",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "hard-shelled": {
+   "clave": "pal_hard_shelled",
+   "orixe": "composta",
+   "porque": "Cangrejo con caparazón duro y flecha señalando su concha rígida.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#hard_shelled",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
   "hare": {
    "clave": "pal_hare",
    "orixe": "composta",
@@ -5028,6 +5638,16 @@
    "porque": "Gorro y bebé con flecha indicando ponerse y quitarse el gorro.",
    "fuente": "composta",
    "asset": "tools/gen_laminas_0_2.py#hat_on_hat_off",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "hatchling": {
+   "clave": "pal_hatchling",
+   "orixe": "composta",
+   "porque": "Polluelo saliendo del cascarón y niño acurrucado pequeñito.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#hatchling",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
    "revisado": true
@@ -5142,6 +5762,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "heart shape": {
+   "clave": "pal_heart_shape",
+   "orixe": "nova",
+   "porque": "Manos dibujando con cuidado la forma de un corazón rojo.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#heart_shape",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "heavy bag": {
    "clave": "pal_heavy_bag",
    "orixe": "composta",
@@ -5150,6 +5780,16 @@
    "asset": "tools/gen_laminas_4_5.py#heavy_bag",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "heavy steps": {
+   "clave": "pal_heavy_steps",
+   "orixe": "nova",
+   "porque": "Niño levantando bien la pierna para dar pasos muy pesados.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#heavy_steps",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
    "revisado": true
   },
   "hedgehog": {
@@ -5178,6 +5818,16 @@
    "porque": "Dos amigos levantando la mano para saludarse.",
    "fuente": "composta",
    "asset": "tools/gen_laminas_2_3.py#hello_friend",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "hello, little chick": {
+   "clave": "pal_hello_little_chick",
+   "orixe": "composta",
+   "porque": "Pollito pequeño acariciado mientras se le saluda con ternura.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#hello_little_chick",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
    "revisado": true
@@ -5278,6 +5928,16 @@
    "porque": "Pasando el recipiente con tierra al compañero.",
    "fuente": "composta",
    "asset": "tools/gen_laminas_5_6.py#pass_soil_friend",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "here, doggy": {
+   "clave": "pal_here_doggy",
+   "orixe": "composta",
+   "porque": "Perrito viniendo contento mientras el niño le llama y golpea las rodillas.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#here_doggy",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
    "revisado": true
@@ -5592,6 +6252,86 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "huddle": {
+   "clave": "pal_huddle",
+   "orixe": "composta",
+   "porque": "Dos niños muy juntitos acurrucados bajo la misma manta cálida.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#huddle",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "hug": {
+   "clave": "pal_hug",
+   "orixe": "nova",
+   "porque": "Niño rodeándose el torso con sus propios brazos en un abrazo.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#hug",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "hug a fish": {
+   "clave": "pal_hug_a_fish",
+   "orixe": "composta",
+   "porque": "Pez de peluche abrazado con ternura.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#hug_a_fish",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "hug a friend": {
+   "clave": "pal_hug_a_friend",
+   "orixe": "banco",
+   "porque": "Dos amigos dándose un abrazo suave.",
+   "fuente": "fluent-flat",
+   "asset": "fluentui-emoji:assets/People hugging/Flat",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "hug a tree": {
+   "clave": "pal_hug_a_tree",
+   "orixe": "composta",
+   "porque": "Niño abrazando con los brazos el tronco de un árbol grande.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#hug_a_tree",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "hug buddy": {
+   "clave": "pal_hug_buddy",
+   "orixe": "composta",
+   "porque": "Osito compañero de abrazos y niños abrazándose contentos.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#hug_buddy",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "hug goodbye": {
+   "clave": "pal_hug_goodbye",
+   "orixe": "composta",
+   "porque": "Niños dándose un abrazo junto a la puerta antes de marcharse.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#hug_goodbye",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "hug lúa goodbye": {
+   "clave": "pal_hug_l_a_goodbye",
+   "orixe": "composta",
+   "porque": "Despedida cariñosa abrazando a Lúa el lobito de peluche.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#hug_l_a_goodbye",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
   "hum a tune": {
    "clave": "pal_hum_a_tune",
    "orixe": "composta",
@@ -5692,6 +6432,26 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "i feel better after a hug": {
+   "clave": "pal_i_feel_better_after_a_hug",
+   "orixe": "composta",
+   "porque": "Niño sonriendo aliviado y feliz después de darse un abrazo.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#i_feel_better_after_a_hug",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "i feel happy because we play": {
+   "clave": "pal_i_feel_happy_because_we_play",
+   "orixe": "composta",
+   "porque": "Dos niños felices jugando juntos a la pelota y dando palmas.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#i_feel_happy_because_we_play",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
   "i feel proud of our work": {
    "clave": "pal_i_feel_proud_of_our_work",
    "orixe": "composta",
@@ -5732,6 +6492,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "i like apples": {
+   "clave": "pal_i_like_apples",
+   "orixe": "composta",
+   "porque": "Manzana roja brillante y niño abrazándola contento con sonrisa.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#i_like_apples",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
   "i like bread": {
    "clave": "pal_i_like_bread",
    "orixe": "composta",
@@ -5748,6 +6518,16 @@
    "porque": "Niño escuchando el pecho de su compañero mientras late un gran corazón.",
    "fuente": "composta",
    "asset": "tools/gen_laminas_4_5.py#listening_to_heart",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "i love you": {
+   "clave": "pal_i_love_you",
+   "orixe": "composta",
+   "porque": "Gesto de corazón con las manos y corazón rojo latiendo de cariño.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#i_love_you",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
    "revisado": true
@@ -5850,6 +6630,16 @@
    "asset": "fluentui-emoji:assets/Ice cream/Flat",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "identical": {
+   "clave": "pal_identical",
+   "orixe": "nova",
+   "porque": "Dos formas exactamente iguales y simétricas una frente a la otra.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#identical",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
    "revisado": true
   },
   "if i had a spoon, i would play": {
@@ -6118,6 +6908,16 @@
    "porque": "Niño caminando por la nieve levantando bien los pies.",
    "fuente": "composta",
    "asset": "tools/gen_laminas_tpr.py#in_the_snow",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "inside is warm": {
+   "clave": "pal_inside_is_warm",
+   "orixe": "composta",
+   "porque": "Casita protegida por dentro donde hace calorcito al abrazarse.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#inside_is_warm",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
    "revisado": true
@@ -6552,6 +7352,26 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "keep the beat": {
+   "clave": "pal_keep_the_beat",
+   "orixe": "composta",
+   "porque": "Metrónomo y niño golpeando sus piernas al ritmo constante.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#keep_the_beat",
+   "sha": "81ad501f19cc13e548e4cb6a9c63a3873c87262a",
+   "licencia": "Apache-2.0",
+   "revisado": true
+  },
+  "keep to the path": {
+   "clave": "pal_keep_to_the_path",
+   "orixe": "nova",
+   "porque": "Niño caminando con orden justo por encima de la línea del sendero.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#keep_to_the_path",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "keep warm": {
    "clave": "pal_keep_warm",
    "orixe": "composta",
@@ -6602,6 +7422,16 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "king": {
+   "clave": "pal_king",
+   "orixe": "composta",
+   "porque": "Niño caminando recto y erguido con su corona dorada puesta como un rey.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#king",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
   "kiss goodbye": {
    "clave": "pal_kiss_goodbye",
    "orixe": "banco",
@@ -6642,6 +7472,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "knead": {
+   "clave": "pal_knead",
+   "orixe": "composta",
+   "porque": "Manos apretando y amasando masa blanda encima de la mesa.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#knead",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
   "knees": {
    "clave": "pal_knees",
    "orixe": "composta",
@@ -6658,6 +7498,16 @@
    "porque": "Niño con casco con penacho sosteniendo un gran escudo de caballero.",
    "fuente": "composta",
    "asset": "tools/gen_laminas_4_5.py#knight",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "knock on the door": {
+   "clave": "pal_knock_on_the_door",
+   "orixe": "composta",
+   "porque": "Puerta de madera con ondas de sonido al llamar con los nudillos.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#knock_on_the_door",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
    "revisado": true
@@ -6762,6 +7612,16 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "lead the way": {
+   "clave": "pal_lead_the_way",
+   "orixe": "nova",
+   "porque": "Niño caminando delante guiando el paso mientras señala el camino.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#lead_the_way",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "leaf": {
    "clave": "pal_leaf",
    "orixe": "banco",
@@ -6800,6 +7660,16 @@
    "asset": "tools/gen_laminas_tpr.py#leap_out_of_the_water",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "learn to walk": {
+   "clave": "pal_learn_to_walk",
+   "orixe": "nova",
+   "porque": "Bebé dando sus primeros pasitos inseguros con los brazos abiertos.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#learn_to_walk",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
    "revisado": true
   },
   "leaves are falling": {
@@ -6860,6 +7730,46 @@
    "asset": "tools/gen_laminas_tpr.py#let_s_build_a_snowman",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "let's get cosy": {
+   "clave": "pal_let_s_get_cosy",
+   "orixe": "composta",
+   "porque": "Niño abrazándose calentito arropado bajo una manta amarilla.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#let_s_get_cosy",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "let's go to the beach": {
+   "clave": "pal_let_s_go_to_the_beach",
+   "orixe": "composta",
+   "porque": "Niño contento con su mochila caminando hacia la playa con sombrilla.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#let_s_go_to_the_beach",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "let's go to the park": {
+   "clave": "pal_let_s_go_to_the_park",
+   "orixe": "composta",
+   "porque": "Dos niños caminando juntos cogidos de la mano rumbo al parque.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#let_s_go_to_the_park",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "let's parade": {
+   "clave": "pal_let_s_parade",
+   "orixe": "nova",
+   "porque": "Tres niños en fila marchando alegremente en desfile.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#let_s_parade",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
    "revisado": true
   },
   "let's stop to listen": {
@@ -6942,6 +7852,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "light steps": {
+   "clave": "pal_light_steps",
+   "orixe": "composta",
+   "porque": "Pluma ligera indicando pisadas muy suaves sin apenas ruido.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#light_steps",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
   "lighthouse": {
    "clave": "pal_lighthouse",
    "orixe": "banco",
@@ -6958,6 +7878,16 @@
    "porque": "Bombilla apagada con señal roja y cara con ojos cerrados durmiendo.",
    "fuente": "composta",
    "asset": "tools/gen_laminas_tpr.py#lights_out_eyes_closed",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "like a cat": {
+   "clave": "pal_like_a_cat",
+   "orixe": "composta",
+   "porque": "Gato estirando el lomo y niño estirándose en el suelo como él.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#like_a_cat",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
    "revisado": true
@@ -7112,6 +8042,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "log": {
+   "clave": "pal_log",
+   "orixe": "nova",
+   "porque": "Tronco caído marrón en el suelo con niño caminando por encima en equilibrio.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#log",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "look at it": {
    "clave": "pal_look_at_it",
    "orixe": "composta",
@@ -7222,6 +8162,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "loud and soft": {
+   "clave": "pal_loud_and_soft",
+   "orixe": "nova",
+   "porque": "Golpe fuerte con ondas sonoras grandes frente a toque suave con onda pequeña.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#loud_and_soft",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "loud bells! shake fast": {
    "clave": "pal_loud_bells_shake_fast",
    "orixe": "composta",
@@ -7230,6 +8180,16 @@
    "asset": "tools/gen_laminas_2_3.py#loud_bells_shake_fast",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "loud, then quiet": {
+   "clave": "pal_loud_then_quiet",
+   "orixe": "nova",
+   "porque": "Golpe fuerte en las piernas seguido de gesto suave y silencioso.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#loud_then_quiet",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
    "revisado": true
   },
   "low": {
@@ -7362,6 +8322,17 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "march like a knight": {
+   "clave": "pal_march_like_a_knight",
+   "orixe": "composta",
+   "porque": "Yelmo de caballero y niño marchando muy recto y firme.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#march_like_a_knight",
+   "sha": "81ad501f19cc13e548e4cb6a9c63a3873c87262a",
+   "licencia": "CC-BY-3.0",
+   "revisado": true,
+   "autor": "GameIcons contributors"
+  },
   "market stall": {
    "clave": "pal_market_stall",
    "orixe": "composta",
@@ -7400,6 +8371,16 @@
    "asset": "tools/gen_laminas_0_2.py#massage",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "mat path": {
+   "clave": "pal_mat_path",
+   "orixe": "nova",
+   "porque": "Camino de tres colchonetas de colores en el suelo con niño andando por encima.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#mat_path",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
    "revisado": true
   },
   "mateo, find a round cold chestnut": {
@@ -7652,6 +8633,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "mud": {
+   "clave": "pal_mud",
+   "orixe": "nova",
+   "porque": "Charco de barro marrón con niño pisando despacio con dificultad.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#mud",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "muddy": {
    "clave": "pal_muddy",
    "orixe": "banco",
@@ -7662,12 +8653,32 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "muddy bank": {
+   "clave": "pal_muddy_bank",
+   "orixe": "nova",
+   "porque": "Orilla de barro junto al agua con niño caminando despacio por el borde.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#muddy_bank",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "munch": {
    "clave": "pal_munch",
    "orixe": "composta",
    "porque": "Niño dando un bocado grande a una manzana roja.",
    "fuente": "composta",
    "asset": "tools/gen_laminas_2_3.py#munch",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "museum": {
+   "clave": "pal_museum",
+   "orixe": "composta",
+   "porque": "Edificio clásico de museo y niño paseando despacio observando.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#museum",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
    "revisado": true
@@ -7692,12 +8703,32 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "musical chairs": {
+   "clave": "pal_musical_chairs",
+   "orixe": "composta",
+   "porque": "Silla en el centro con notas musicales y niño caminando alrededor.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#musical_chairs",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
   "muslin cloth": {
    "clave": "pal_muslin_cloth",
    "orixe": "nova",
    "porque": "Muselina suave y ligera doblada para jugar al cucú.",
    "fuente": "propia",
    "asset": "tools/gen_laminas_tpr.py#muslin_cloth",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "mussel": {
+   "clave": "pal_mussel",
+   "orixe": "nova",
+   "porque": "Concha bivalva de mejillón azul oscuro abriéndose y cerrándose como dos palmas.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#mussel",
    "sha": "6be3d38b",
    "licencia": "Propia",
    "revisado": true
@@ -7852,6 +8883,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "newborn": {
+   "clave": "pal_newborn",
+   "orixe": "composta",
+   "porque": "Bebé recién nacido muy pequeñito envuelto con suavidad.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#newborn",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
   "newborn baby": {
    "clave": "pal_newborn_baby",
    "orixe": "nova",
@@ -7860,6 +8901,16 @@
    "asset": "tools/gen_laminas_tpr.py#newborn_baby",
    "sha": "6be3d38b",
    "licencia": "Propia",
+   "revisado": true
+  },
+  "nice kitty": {
+   "clave": "pal_nice_kitty",
+   "orixe": "composta",
+   "porque": "Gatito tranquilo recibiendo una caricia suave en el lomo.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#nice_kitty",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
    "revisado": true
   },
   "night": {
@@ -7918,6 +8969,16 @@
    "porque": "Niño asintiendo arriba y abajo con flecha vertical doble junto a la cabeza.",
    "fuente": "propia",
    "asset": "tools/gen_laminas_tpr.py#nod",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "noisy": {
+   "clave": "pal_noisy",
+   "orixe": "nova",
+   "porque": "Niño golpeando fuerte el suelo haciendo mucho ruido.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#noisy",
    "sha": "6be3d38b",
    "licencia": "Propia",
    "revisado": true
@@ -7982,6 +9043,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "nuzzle": {
+   "clave": "pal_nuzzle",
+   "orixe": "nova",
+   "porque": "Dos niños acercando suavemente nariz con nariz con ternura.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#nuzzle",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "octopus": {
    "clave": "pal_octopus",
    "orixe": "banco",
@@ -7998,6 +9069,16 @@
    "porque": "Animales de la granja juntos en el prado.",
    "fuente": "composta",
    "asset": "tools/gen_laminas_0_2.py#rima_old_macdonald",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "old town": {
+   "clave": "pal_old_town",
+   "orixe": "composta",
+   "porque": "Calle estrecha entre casitas antiguas con niño paseando por medio.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#old_town",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
    "revisado": true
@@ -8052,6 +9133,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "on the ice": {
+   "clave": "pal_on_the_ice",
+   "orixe": "composta",
+   "porque": "Superficie helada azul claro con niño caminando con brazos abiertos para no resbalar.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#on_the_ice",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
   "on the sofa": {
    "clave": "pal_on_the_sofa",
    "orixe": "composta",
@@ -8060,6 +9151,16 @@
    "asset": "tools/gen_laminas_tpr.py#on_the_sofa",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "on tiptoe": {
+   "clave": "pal_on_tiptoe",
+   "orixe": "nova",
+   "porque": "Niño levantando los talones para caminar muy alto de puntillas.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#on_tiptoe",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
    "revisado": true
   },
   "only on the map can you find it": {
@@ -8108,6 +9209,16 @@
    "porque": "Círculo naranja brillante recién creado.",
    "fuente": "composta",
    "asset": "tools/gen_laminas_5_6.py#orange_which_we_made_is_new",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "orbit": {
+   "clave": "pal_orbit",
+   "orixe": "composta",
+   "porque": "Planeta azul siguiendo su órbita en círculo alrededor del Sol.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#orbit",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
    "revisado": true
@@ -8242,6 +9353,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "parade around": {
+   "clave": "pal_parade_around",
+   "orixe": "nova",
+   "porque": "Niños desfilando en círculo levantando bien las rodillas.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#parade_around",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "parasol": {
    "clave": "pal_parasol",
    "orixe": "nova",
@@ -8342,12 +9463,32 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "path": {
+   "clave": "pal_path",
+   "orixe": "nova",
+   "porque": "Sendero marcado en el prado con dos niños caminando en fila.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#path",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "pattern": {
    "clave": "pal_pattern",
    "orixe": "nova",
    "porque": "Serie repetida: círculo rojo, cuadrado azul, círculo rojo, cuadrado azul.",
    "fuente": "propia",
    "asset": "tools/gen_laminas_5_6.py#pattern",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "pavement": {
+   "clave": "pal_pavement",
+   "orixe": "nova",
+   "porque": "Acera gris elevada por donde camina ordenadamente el niño.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#pavement",
    "sha": "6be3d38b",
    "licencia": "Propia",
    "revisado": true
@@ -8368,6 +9509,16 @@
    "porque": "Dos huellas de pata de animal.",
    "fuente": "fluent-flat",
    "asset": "fluentui-emoji:assets/Paw prints/Flat",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "paws": {
+   "clave": "pal_paws",
+   "orixe": "composta",
+   "porque": "Huellas de zarpas y niño caminando a cuatro patas como un animal.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#paws",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
    "revisado": true
@@ -8582,6 +9733,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "pier": {
+   "clave": "pal_pier",
+   "orixe": "nova",
+   "porque": "Muelle de madera sobre el agua con niño caminando hasta el borde.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#pier",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "pig": {
    "clave": "pal_pig",
    "orixe": "banco",
@@ -8648,6 +9809,16 @@
    "porque": "Piña marrón de pino girando como al hacerla rodar entre las manos.",
    "fuente": "propia",
    "asset": "tools/gen_laminas_tpr.py#pinecone",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "pitter-pat": {
+   "clave": "pal_pitter_pat",
+   "orixe": "nova",
+   "porque": "Gotitas de lluvia repiqueteando suavemente sobre el suelo.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#pitter_pat",
    "sha": "6be3d38b",
    "licencia": "Propia",
    "revisado": true
@@ -8802,6 +9973,26 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "pond": {
+   "clave": "pal_pond",
+   "orixe": "composta",
+   "porque": "Estanque azul en el prado con niño agachado al borde mirando su reflejo.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#pond",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "pond duck": {
+   "clave": "pal_pond_duck",
+   "orixe": "composta",
+   "porque": "Pato del estanque y niño caminando balanceándose agachado como él.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#pond_duck",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
   "pop": {
    "clave": "pal_pop",
    "orixe": "composta",
@@ -8860,6 +10051,16 @@
    "asset": "tools/gen_laminas_5_6.py#pot",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "pot lid": {
+   "clave": "pal_pot_lid",
+   "orixe": "nova",
+   "porque": "Dos tapas metálicas de olla chocando una contra otra con brillo metálico.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#pot_lid",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
    "revisado": true
   },
   "potato": {
@@ -8962,6 +10163,26 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "proud parents": {
+   "clave": "pal_proud_parents",
+   "orixe": "composta",
+   "porque": "Dos personas adultas aplaudiendo sonrientes y orgullosas.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#proud_parents",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "prowl": {
+   "clave": "pal_prowl",
+   "orixe": "composta",
+   "porque": "Tigre acechando sigiloso y niño caminando agachado y despacio.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#prowl",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
   "puddle": {
    "clave": "pal_puddle",
    "orixe": "nova",
@@ -8970,6 +10191,26 @@
    "asset": "tools/gen_laminas_3_4.py#puddle",
    "sha": "6be3d38b",
    "licencia": "Propia",
+   "revisado": true
+  },
+  "puddle edge": {
+   "clave": "pal_puddle_edge",
+   "orixe": "nova",
+   "porque": "Borde exterior del charco y niño caminando alrededor sin mojarse.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#puddle_edge",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "puddle ice": {
+   "clave": "pal_puddle_ice",
+   "orixe": "composta",
+   "porque": "Charco helado y niño pisando muy despacio con cuidado encima.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#puddle_ice",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
    "revisado": true
   },
   "puddle jump": {
@@ -9212,6 +10453,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "quiet as a mouse": {
+   "clave": "pal_quiet_as_a_mouse",
+   "orixe": "composta",
+   "porque": "Ratón silencioso y niño andando de puntillas sin hacer ruido.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#quiet_as_a_mouse",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
   "quiet bells... sleep": {
    "clave": "pal_quiet_bells_sleep",
    "orixe": "composta",
@@ -9282,6 +10533,16 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "racing heart": {
+   "clave": "pal_racing_heart",
+   "orixe": "composta",
+   "porque": "Corazón latiendo acelerado y mano marcando sus latidos rápidos en el pecho.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#racing_heart",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
   "rain": {
    "clave": "pal_rain",
    "orixe": "composta",
@@ -9292,12 +10553,32 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "rain boots": {
+   "clave": "pal_rain_boots",
+   "orixe": "composta",
+   "porque": "Par de botas pisando alegremente bajo la lluvia en un charco.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#rain_boots",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
   "rain cover": {
    "clave": "pal_rain_cover",
    "orixe": "composta",
    "porque": "Cubierta transparente protegiendo al bebé de la lluvia.",
    "fuente": "composta",
    "asset": "tools/gen_laminas_0_2.py#rain_cover",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "rain on the window": {
+   "clave": "pal_rain_on_the_window",
+   "orixe": "composta",
+   "porque": "Ventana con gotitas de lluvia y dedo golpeando suave el cristal.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#rain_on_the_window",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
    "revisado": true
@@ -9560,6 +10841,26 @@
    "asset": "tools/gen_laminas_tpr.py#resting",
    "sha": "6be3d38b",
    "licencia": "Propia",
+   "revisado": true
+  },
+  "return": {
+   "clave": "pal_return",
+   "orixe": "nova",
+   "porque": "Niño dando la vuelta para caminar de regreso hacia el círculo.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#return",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "rhythm": {
+   "clave": "pal_rhythm",
+   "orixe": "composta",
+   "porque": "Pentagrama musical con ritmo y manos acompañando a compás.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#rhythm",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
    "revisado": true
   },
   "rhythmic": {
@@ -9902,6 +11203,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "rope bridge": {
+   "clave": "pal_rope_bridge",
+   "orixe": "nova",
+   "porque": "Puente colgante de cuerdas sobre el río con niño cruzando agarrado.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#rope_bridge",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "rope line": {
    "clave": "pal_rope_line",
    "orixe": "nova",
@@ -9988,6 +11299,26 @@
    "porque": "Pelota redonda rodeada de arco circular mostrando la forma redonda.",
    "fuente": "propia",
    "asset": "tools/gen_laminas_tpr.py#round_like_a_ball",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "round the chair": {
+   "clave": "pal_round_the_chair",
+   "orixe": "composta",
+   "porque": "Silla en el centro y niño caminando alrededor dando la vuelta.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#round_the_chair",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "roundabout": {
+   "clave": "pal_roundabout",
+   "orixe": "nova",
+   "porque": "Rotonda circular con flechas indicando la vuelta alrededor.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#roundabout",
    "sha": "6be3d38b",
    "licencia": "Propia",
    "revisado": true
@@ -10140,6 +11471,16 @@
    "asset": "tools/gen_laminas_4_5.py#rushing",
    "sha": "6be3d38b",
    "licencia": "Propia",
+   "revisado": true
+  },
+  "safe and sound": {
+   "clave": "pal_safe_and_sound",
+   "orixe": "composta",
+   "porque": "Dentro de casa sano y salvo dándose un abrazo tranquilo.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#safe_and_sound",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
    "revisado": true
   },
   "sailing along": {
@@ -10378,6 +11719,16 @@
    "porque": "Foca simpática de perfil.",
    "fuente": "fluent-flat",
    "asset": "fluentui-emoji:assets/Seal/Flat",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "seals and bears": {
+   "clave": "pal_seals_and_bears",
+   "orixe": "composta",
+   "porque": "Foca aplaudiendo y oso caminando pesado uno junto al otro.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#seals_and_bears",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
    "revisado": true
@@ -10802,6 +12153,16 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "skin": {
+   "clave": "pal_skin",
+   "orixe": "nova",
+   "porque": "Mano acariciando suavemente la piel lisa del antebrazo.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#skin",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "skip": {
    "clave": "pal_skip",
    "orixe": "composta",
@@ -10859,6 +12220,16 @@
    "porque": "Luna creciente acompañando al niño que duerme sereno.",
    "fuente": "composta",
    "asset": "tools/gen_laminas_tpr.py#sleep_like_the_moon",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "sleep tight": {
+   "clave": "pal_sleep_tight",
+   "orixe": "composta",
+   "porque": "Noche tranquila arropado fuerte y con los ojos cerrados para dormir bien.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#sleep_tight",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
    "revisado": true
@@ -10999,6 +12370,26 @@
    "porque": "Superficie pulida, suave y perfectamente lisa.",
    "fuente": "propia",
    "asset": "tools/gen_laminas_5_6.py#smooth",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "smooth pebble": {
+   "clave": "pal_smooth_pebble",
+   "orixe": "composta",
+   "porque": "Piedra lisa redondeada acariciada suavemente con los dedos.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#smooth_pebble",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "smooth skin": {
+   "clave": "pal_smooth_skin",
+   "orixe": "nova",
+   "porque": "Niño acariciándose suavemente la mejilla con el dorso de la mano.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#smooth_skin",
    "sha": "6be3d38b",
    "licencia": "Propia",
    "revisado": true
@@ -11293,6 +12684,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "speed up and slow down": {
+   "clave": "pal_speed_up_and_slow_down",
+   "orixe": "composta",
+   "porque": "Conejo veloz acelerando frente a tortuga despacio frenando el ritmo.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#speed_up_and_slow_down",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
   "sphere": {
    "clave": "pal_sphere",
    "orixe": "nova",
@@ -11309,6 +12710,16 @@
    "porque": "Araña negra con ocho patas.",
    "fuente": "fluent-flat",
    "asset": "fluentui-emoji:assets/Spider/Flat",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "spider crab": {
+   "clave": "pal_spider_crab",
+   "orixe": "composta",
+   "porque": "Centolla marina de patas largas y niño caminando de lado con brazos abiertos.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#spider_crab",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
    "revisado": true
@@ -11415,6 +12826,26 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "splash about": {
+   "clave": "pal_splash_about",
+   "orixe": "nova",
+   "porque": "Manos golpeando el agua de la bañera salpicando gotas alrededor.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#splash_about",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "splash around": {
+   "clave": "pal_splash_around",
+   "orixe": "nova",
+   "porque": "Niño pisando fuerte en el charco salpicando gotas alrededor.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#splash_around",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "splash, splash": {
    "clave": "pal_splash_splash",
    "orixe": "nova",
@@ -11475,6 +12906,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "spring-like": {
+   "clave": "pal_spring_like",
+   "orixe": "composta",
+   "porque": "Prado primaveral con flor, mariposa y niño dando pasitos alegres.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#spring_like",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
   "sprinkler": {
    "clave": "pal_sprinkler",
    "orixe": "composta",
@@ -11491,6 +12932,16 @@
    "porque": "Niño esprintando a toda velocidad hacia la derecha.",
    "fuente": "propia",
    "asset": "tools/gen_laminas_tpr.py#sprint_fast",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "squelchy": {
+   "clave": "pal_squelchy",
+   "orixe": "nova",
+   "porque": "Pisadas en el barro blando salpicando con ruido chapoteante.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#squelchy",
    "sha": "6be3d38b",
    "licencia": "Propia",
    "revisado": true
@@ -11555,6 +13006,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "starfish": {
+   "clave": "pal_starfish",
+   "orixe": "nova",
+   "porque": "Estrella de mar naranja en la arena y niño pegando la mano abierta al suelo.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#starfish",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "stargaze": {
    "clave": "pal_stargaze",
    "orixe": "composta",
@@ -11595,6 +13056,16 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "steady beat": {
+   "clave": "pal_steady_beat",
+   "orixe": "composta",
+   "porque": "Tambor acompañado de cuatro pulsos constantes y regulares.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#steady_beat",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
   "steep": {
    "clave": "pal_empinado",
    "orixe": "nova",
@@ -11633,6 +13104,26 @@
    "asset": "tools/gen_laminas_5_6.py#step_across",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "step between": {
+   "clave": "pal_step_between",
+   "orixe": "nova",
+   "porque": "Dos aros en el suelo y niño pisando con precisión justo en medio.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#step_between",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "step between the hoops": {
+   "clave": "pal_step_between_the_hoops",
+   "orixe": "nova",
+   "porque": "Tres aros alineados en el suelo y niño pasando entre ellos.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#step_between_the_hoops",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
    "revisado": true
   },
   "step forward": {
@@ -11735,6 +13226,26 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "stomp like a bear": {
+   "clave": "pal_stomp_like_a_bear",
+   "orixe": "composta",
+   "porque": "Oso grande y niño dando pisadas fuertes y lentas como él.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#stomp_like_a_bear",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "stomp your boots": {
+   "clave": "pal_stomp_your_boots",
+   "orixe": "composta",
+   "porque": "Botas grandes pisando fuerte el suelo pum, pum.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#stomp_your_boots",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
   "stomp your boots in the puddles": {
    "clave": "pal_stomp_boots_puddles",
    "orixe": "composta",
@@ -11743,6 +13254,26 @@
    "asset": "tools/gen_laminas_2_3.py#stomp_boots_puddles",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "stomp, stomp, stomp": {
+   "clave": "pal_stomp_stomp_stomp",
+   "orixe": "nova",
+   "porque": "Tres pisadas rítmicas bien fuertes marcadas en el suelo.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#stomp_stomp_stomp",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "stomping": {
+   "clave": "pal_stomping",
+   "orixe": "nova",
+   "porque": "Niño pisando fuerte el suelo al ritmo con los pies alternos.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#stomping",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
    "revisado": true
   },
   "stone": {
@@ -11765,12 +13296,32 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "stony": {
+   "clave": "pal_stony",
+   "orixe": "composta",
+   "porque": "Piedra dura gris recibiendo un golpecito que suena firme.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#stony",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
   "stop": {
    "clave": "pal_stop",
    "orixe": "composta",
    "porque": "Señal de stop y niño quieto con las manos en alto.",
    "fuente": "composta",
    "asset": "tools/gen_laminas_0_2.py#stop",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "stop and go": {
+   "clave": "pal_stop_and_go",
+   "orixe": "composta",
+   "porque": "Señal roja de parar alternada con el paso adelante al seguir.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#stop_and_go",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
    "revisado": true
@@ -11825,6 +13376,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "straight on, then right": {
+   "clave": "pal_straight_on_then_right",
+   "orixe": "nova",
+   "porque": "Niño caminando primero recto y luego doblando hacia la derecha.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#straight_on_then_right",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "strawberry": {
    "clave": "pal_strawberry",
    "orixe": "banco",
@@ -11843,6 +13404,16 @@
    "asset": "fluentui-emoji:assets/Ribbon/Flat",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "street": {
+   "clave": "pal_street",
+   "orixe": "nova",
+   "porque": "Calle urbana por donde caminan en fila los niños.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#street",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
    "revisado": true
   },
   "stretch": {
@@ -12245,6 +13816,16 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "table": {
+   "clave": "pal_table",
+   "orixe": "nova",
+   "porque": "Mesa de madera con las dos manos apoyadas con firmeza encima.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#table",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "take a bow": {
    "clave": "pal_take_a_bow",
    "orixe": "nova",
@@ -12301,6 +13882,46 @@
    "porque": "Planta alta y flecha vertical midiendo gran altura.",
    "fuente": "composta",
    "asset": "tools/gen_laminas_3_4.py#tall",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "tall like a giraffe": {
+   "clave": "pal_tall_like_a_giraffe",
+   "orixe": "composta",
+   "porque": "Jirafa muy alta y niño estirándose de puntillas todo lo posible.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#tall_like_a_giraffe",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "tap along": {
+   "clave": "pal_tap_along",
+   "orixe": "nova",
+   "porque": "Golpecitos suaves con el dedo sobre bloque musical de madera siguiendo la música.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#tap_along",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "tap on wood": {
+   "clave": "pal_tap_on_wood",
+   "orixe": "composta",
+   "porque": "Madera natural y sonido claro al darle golpecitos encima.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#tap_on_wood",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "tap shoes": {
+   "clave": "pal_tap_shoes",
+   "orixe": "composta",
+   "porque": "Zapatos dando golpecitos con los talones sobre el suelo.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#tap_shoes",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
    "revisado": true
@@ -12383,6 +14004,16 @@
    "asset": "tools/gen_laminas_4_5.py#temperature",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "tempo": {
+   "clave": "pal_tempo",
+   "orixe": "composta",
+   "porque": "Metrónomo en movimiento marcando cambios rápidos y lentos de tempo.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#tempo",
+   "sha": "81ad501f19cc13e548e4cb6a9c63a3873c87262a",
+   "licencia": "Apache-2.0",
    "revisado": true
   },
   "thank you": {
@@ -12605,6 +14236,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "the earth goes around the sun": {
+   "clave": "pal_the_earth_goes_around_the_sun",
+   "orixe": "composta",
+   "porque": "La Tierra dando la vuelta entera alrededor del Sol.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#the_earth_goes_around_the_sun",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
   "the faces in the spoon were made by us": {
    "clave": "pal_faces_in_the_spoon",
    "orixe": "composta",
@@ -12753,6 +14394,16 @@
    "asset": "tools/gen_laminas_5_6.py#rainbow_painted_big",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "the robot walks slowly, but the hero runs fast": {
+   "clave": "pal_the_robot_walks_slowly_but_the_hero_runs_fast",
+   "orixe": "composta",
+   "porque": "Robot caminando rígido y despacio frente al héroe corriendo rápido.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#the_robot_walks_slowly_but_the_hero_runs_fast",
+   "sha": "81ad501f19cc13e548e4cb6a9c63a3873c87262a",
+   "licencia": "Apache-2.0",
    "revisado": true
   },
   "the sea sleeps: put the cloth down and lie still": {
@@ -13105,6 +14756,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "thin": {
+   "clave": "pal_thin",
+   "orixe": "nova",
+   "porque": "Forma alta y muy estrecha estirada entre las palmas juntas.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#thin",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "this is the best soap": {
    "clave": "pal_this_is_the_best_soap",
    "orixe": "composta",
@@ -13175,6 +14836,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "through the jungle": {
+   "clave": "pal_through_the_jungle",
+   "orixe": "composta",
+   "porque": "Niño abriéndose paso entre grandes hojas y árboles de la selva.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#through_the_jungle",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
   "thrown gently, it flew far": {
    "clave": "pal_thrown_gently_it_flew_far",
    "orixe": "composta",
@@ -13205,6 +14876,16 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "thunder": {
+   "clave": "pal_thunder",
+   "orixe": "composta",
+   "porque": "Nube de tormenta con relámpago amarillo y estruendo de trueno.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#thunder",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
   "ticket": {
    "clave": "pal_pal_ticket",
    "orixe": "banco",
@@ -13213,6 +14894,16 @@
    "asset": "fluentui-emoji:assets/Ticket/Flat",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "tickle": {
+   "clave": "pal_tickle",
+   "orixe": "nova",
+   "porque": "Dedos caminando suavemente por el brazo haciendo cosquillas alegres.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#tickle",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
    "revisado": true
   },
   "tide": {
@@ -13243,6 +14934,16 @@
    "asset": "fluentui-emoji:assets/Tiger/Flat",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "tightrope": {
+   "clave": "pal_tightrope",
+   "orixe": "nova",
+   "porque": "Niño caminando en equilibrio por una línea fina con los brazos en cruz.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#tightrope",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
    "revisado": true
   },
   "tile": {
@@ -13313,6 +15014,16 @@
    "asset": "tools/gen_laminas_3_4.py#tiptoe_quietly_blow_light",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "tiptoe through": {
+   "clave": "pal_tiptoe_through",
+   "orixe": "nova",
+   "porque": "Niño pasando con cuidado de puntillas por entre la hierba alta.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#tiptoe_through",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
    "revisado": true
   },
   "today it has gone fast": {
@@ -13595,6 +15306,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "turn back": {
+   "clave": "pal_turn_back",
+   "orixe": "nova",
+   "porque": "Flecha de giro en U mostrando cómo darse la vuelta para caminar hacia atrás.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#turn_back",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "turn left": {
    "clave": "pal_turn_left",
    "orixe": "composta",
@@ -13613,6 +15334,16 @@
    "asset": "tools/gen_laminas_5_6.py#turn_left_step_rope",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "turn left at the square": {
+   "clave": "pal_turn_left_at_the_square",
+   "orixe": "nova",
+   "porque": "Plaza cuadrada con fuente central y flecha girando a la izquierda.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#turn_left_at_the_square",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
    "revisado": true
   },
   "turn off": {
@@ -13745,6 +15476,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "two by two": {
+   "clave": "pal_two_by_two",
+   "orixe": "nova",
+   "porque": "Niños caminando emparejados de dos en dos.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#two_by_two",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "umbrella": {
    "clave": "pal_pal_umbrella",
    "orixe": "banco",
@@ -13825,6 +15566,26 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "up to the star": {
+   "clave": "pal_up_to_the_star",
+   "orixe": "composta",
+   "porque": "Estrella brillante arriba y niño estirándose de puntillas para alcanzarla.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#up_to_the_star",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "uphill": {
+   "clave": "pal_uphill",
+   "orixe": "nova",
+   "porque": "Subida pronunciada por una cuesta caminando inclinado con esfuerzo.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#uphill",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "upright": {
    "clave": "pal_upright",
    "orixe": "nova",
@@ -13835,12 +15596,32 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "very old": {
+   "clave": "pal_very_old",
+   "orixe": "composta",
+   "porque": "Bastón de apoyo y figura caminando muy despacio ligeramente encorvada.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#very_old",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
   "vote": {
    "clave": "pal_pal_vote",
    "orixe": "banco",
    "porque": "Urna con papeleta entrando.",
    "fuente": "fluent-flat",
    "asset": "fluentui-emoji:assets/Ballot box with ballot/Flat",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "waddle": {
+   "clave": "pal_waddle",
+   "orixe": "composta",
+   "porque": "Pato caminando y niño anadeando balanceando su cuerpo de un lado a otro.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#waddle",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
    "revisado": true
@@ -13925,12 +15706,72 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "walk across": {
+   "clave": "pal_walk_across",
+   "orixe": "nova",
+   "porque": "Niño cruzando caminando de un lado al otro.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#walk_across",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "walk along": {
+   "clave": "pal_walk_along",
+   "orixe": "nova",
+   "porque": "Niños caminando en fila a lo largo de todo el recorrido.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#walk_along",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "walk backwards": {
+   "clave": "pal_walk_backwards",
+   "orixe": "nova",
+   "porque": "Niño dando pasos hacia atrás con cuidado mirando de frente.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#walk_backwards",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "walk calmly like a sheep in the field": {
    "clave": "pal_walk_calmly_sheep",
    "orixe": "composta",
    "porque": "Oveja tranquila en el prado junto a niño caminando despacio y en calma.",
    "fuente": "composta",
    "asset": "tools/gen_laminas_4_5.py#walk_calmly_sheep",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "walk down": {
+   "clave": "pal_walk_down",
+   "orixe": "nova",
+   "porque": "Niño bajando caminando despacio por la pendiente de la cuesta.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#walk_down",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "walk fingers": {
+   "clave": "pal_walk_fingers",
+   "orixe": "nova",
+   "porque": "Dos dedos caminando como patitas a lo largo del antebrazo.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#walk_fingers",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "walk heavily": {
+   "clave": "pal_walk_heavily",
+   "orixe": "composta",
+   "porque": "Elefante pesando mucho y niño caminando con pisadas pesadas.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#walk_heavily",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
    "revisado": true
@@ -13945,6 +15786,26 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "walk lightly": {
+   "clave": "pal_walk_lightly",
+   "orixe": "composta",
+   "porque": "Mariposa suave y niño caminando muy ligero de puntillas.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#walk_lightly",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "walk like a penguin": {
+   "clave": "pal_walk_like_a_penguin",
+   "orixe": "composta",
+   "porque": "Pingüino dando pasitos cortos y niño imitándolo con brazos pegados.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#walk_like_a_penguin",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
   "walk like a sleepy bear with your heavy bag": {
    "clave": "pal_walk_sleepy_bear_bag",
    "orixe": "composta",
@@ -13955,12 +15816,72 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "walk like an elephant": {
+   "clave": "pal_walk_like_an_elephant",
+   "orixe": "composta",
+   "porque": "Elefante con su larga trompa y niño caminando balanceando un brazo como trompa.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#walk_like_an_elephant",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "walk on stage": {
+   "clave": "pal_walk_on_stage",
+   "orixe": "nova",
+   "porque": "Niño subiendo caminando erguido al escenario con telón rojo.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#walk_on_stage",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "walk sideways like a crab": {
+   "clave": "pal_walk_sideways_like_a_crab",
+   "orixe": "composta",
+   "porque": "Cangrejo andando de lado y niño caminando lateralmente con manos en pinza.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#walk_sideways_like_a_crab",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
   "walk slowly and hold your friend's hand": {
    "clave": "pal_walk_slowly_hold_hand",
    "orixe": "composta",
    "porque": "Dos amigos caminando despacio cogidos de la mano.",
    "fuente": "composta",
    "asset": "tools/gen_laminas_5_6.py#walk_slowly_hold_hand",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "walk softly": {
+   "clave": "pal_walk_softly",
+   "orixe": "nova",
+   "porque": "Nube blanda indicando pisadas muy suaves y silenciosas sin ruido.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#walk_softly",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "walk through": {
+   "clave": "pal_walk_through",
+   "orixe": "composta",
+   "porque": "Niño paseando tranquilo por en medio de dos árboles altos.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#walk_through",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "walk to school": {
+   "clave": "pal_walk_to_school",
+   "orixe": "composta",
+   "porque": "Niño caminando contento de camino hacia el colegio.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#walk_to_school",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
    "revisado": true
@@ -13991,6 +15912,16 @@
    "porque": "Tres niños caminando juntos cogidos bajo una gran nube blanca.",
    "fuente": "composta",
    "asset": "tools/gen_laminas_4_5.py#walk_together_cloud",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "walking stick": {
+   "clave": "pal_walking_stick",
+   "orixe": "composta",
+   "porque": "Bastón de paseo acompañando al niño al caminar.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#walking_stick",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
    "revisado": true
@@ -14625,6 +16556,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "when i was a baby, i couldn't walk": {
+   "clave": "pal_when_i_was_a_baby_i_couldn_t_walk",
+   "orixe": "nova",
+   "porque": "Bebé gateando antes de aprender y niño ya caminando erguido.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#when_i_was_a_baby_i_couldn_t_walk",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "when it rains, we need boots": {
    "clave": "pal_when_rains_need_boots",
    "orixe": "composta",
@@ -14935,6 +16876,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "winning": {
+   "clave": "pal_winning",
+   "orixe": "composta",
+   "porque": "Trofeo brillante dorado y niño sonriendo y aplaudiendo contento.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#winning",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
   "winter": {
    "clave": "pal_winter",
    "orixe": "banco",
@@ -14951,6 +16902,16 @@
    "porque": "Estrella brillante en la noche al pedir un deseo.",
    "fuente": "composta",
    "asset": "tools/gen_laminas_3_4.py#wish",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "with the drum": {
+   "clave": "pal_with_the_drum",
+   "orixe": "composta",
+   "porque": "Tambor marcando el pulso mientras el niño camina al ritmo.",
+   "fuente": "composta",
+   "asset": "tools/gen_laminas_tpr.py#with_the_drum",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
    "revisado": true
@@ -14975,6 +16936,16 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "wobbly bridge": {
+   "clave": "pal_wobbly_bridge",
+   "orixe": "nova",
+   "porque": "Puente ondulado que se mueve y niño cruzando en equilibrio con brazos en cruz.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#wobbly_bridge",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "wolf": {
    "clave": "pal_wolf",
    "orixe": "banco",
@@ -14995,6 +16966,26 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "wooden": {
+   "clave": "pal_wooden",
+   "orixe": "nova",
+   "porque": "Superficie de madera con vetas recibiendo un golpe firme.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#wooden",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "wooden spoon": {
+   "clave": "pal_wooden_spoon",
+   "orixe": "nova",
+   "porque": "Cuchara de madera golpeando el borde de una olla metálica.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#wooden_spoon",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "wooden top": {
    "clave": "pal_wooden_top",
    "orixe": "nova",
@@ -15011,6 +17002,16 @@
    "porque": "Cochinilla segmentada junto a su forma enrollada hecha bola.",
    "fuente": "propia",
    "asset": "tools/gen_laminas_tpr.py#woodlouse",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "woodpecker": {
+   "clave": "pal_woodpecker",
+   "orixe": "nova",
+   "porque": "Pájaro carpintero de cresta roja y vientre blanco picoteando rápido el tronco.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#woodpecker",
    "sha": "6be3d38b",
    "licencia": "Propia",
    "revisado": true

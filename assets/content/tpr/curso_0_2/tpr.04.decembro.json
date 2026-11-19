@@ -148,7 +148,8 @@
             "gl": "Xuntarse todos baixo unha manta",
             "es": "Juntarse todos bajo una manta"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_huddle"
         },
         {
           "id": "0_2.decembro.s1.freezing",
@@ -181,7 +182,8 @@
             "gl": "Acariñar a chaqueta de forro",
             "es": "Acariciar la chaqueta afelpada"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_fleecy"
         },
         {
           "id": "0_2.decembro.s1.frosty",
@@ -215,7 +217,8 @@
             "gl": "Abrazarse baixo a manta",
             "es": "Abrazarse bajo la manta"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_let_s_get_cosy"
         },
         {
           "id": "0_2.decembro.s1.hat-and-mittens",

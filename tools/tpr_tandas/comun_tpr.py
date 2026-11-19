@@ -431,3 +431,103 @@ def charco_prop(cx: float, cy: float, rx: float = 28, ry: float = 8) -> list[dic
     ]
 
 
+def nino_aplaudiendo(
+    cx: float,
+    cy: float,
+    camisa: tuple[str, str] = (ROJO, ROJO_OSCURO),
+    ondas: bool = True,
+) -> list[dict]:
+    """Niño aplaudiendo con las dos palmas juntas delante del pecho."""
+    o = nino(
+        (cx, cy),
+        (cx, cy + 12),
+        (cx, cy + 32),
+        [[(cx - 10, cy + 18), (cx - 2, cy + 18)], [(cx + 10, cy + 18), (cx + 2, cy + 18)]],
+        [[(cx - 6, cy + 54)], [(cx + 6, cy + 54)]],
+        camisa=camisa,
+    )
+    o += [E(cx, cy + 18, 4.2, 4.5, PEL, PELB, 1.6)]
+    if ondas:
+        o += [
+            L(f"M{cx - 9:.1f} {cy + 14:.1f} L{cx - 14:.1f} {cy + 10:.1f}", ROJO, 1.8),
+            L(f"M{cx + 9:.1f} {cy + 14:.1f} L{cx + 14:.1f} {cy + 10:.1f}", ROJO, 1.8),
+        ]
+    return o
+
+
+def nino_abrazando(
+    cx: float,
+    cy: float,
+    camisa: tuple[str, str] = (ROJO, ROJO_OSCURO),
+) -> list[dict]:
+    """Niño abrazándose a sí mismo con los brazos cruzados delante del torso."""
+    o = nino(
+        (cx, cy),
+        (cx, cy + 12),
+        (cx, cy + 32),
+        [[], []],
+        [[(cx - 6, cy + 54)], [(cx + 6, cy + 54)]],
+        camisa=camisa,
+    )
+    o += [
+        L(f"M{cx - 8:.1f} {cy + 14:.1f} Q{cx:.1f} {cy + 20:.1f} {cx + 8:.1f} {cy + 22:.1f}", PELB, 4.6),
+        L(f"M{cx - 8:.1f} {cy + 14:.1f} Q{cx:.1f} {cy + 20:.1f} {cx + 8:.1f} {cy + 22:.1f}", PEL, 2.6),
+        L(f"M{cx + 8:.1f} {cy + 14:.1f} Q{cx:.1f} {cy + 22:.1f} {cx - 8:.1f} {cy + 20:.1f}", PELB, 4.6),
+        L(f"M{cx + 8:.1f} {cy + 14:.1f} Q{cx:.1f} {cy + 22:.1f} {cx - 8:.1f} {cy + 20:.1f}", PEL, 2.6),
+    ]
+    return o
+
+
+def abrazo_dos(
+    cx: float,
+    cy: float,
+    c1: tuple[str, str] = (ROJO, ROJO_OSCURO),
+    c2: tuple[str, str] = (AZUL, AZUL_OSCURO),
+) -> list[dict]:
+    """Dos niños juntos dándose un abrazo cálido."""
+    o = nino(
+        (cx - 9, cy),
+        (cx - 9, cy + 12),
+        (cx - 9, cy + 32),
+        [[], []],
+        [[(cx - 14, cy + 54)], [(cx - 4, cy + 54)]],
+        camisa=c1,
+        mira=1,
+    )
+    o += nino(
+        (cx + 9, cy + 1),
+        (cx + 9, cy + 13),
+        (cx + 9, cy + 33),
+        [[], []],
+        [[(cx + 4, cy + 54)], [(cx + 14, cy + 54)]],
+        camisa=c2,
+        mira=-1,
+    )
+    o += [
+        L(f"M{cx - 14:.1f} {cy + 16:.1f} Q{cx:.1f} {cy + 20:.1f} {cx + 13:.1f} {cy + 18:.1f}", PELB, 4.4),
+        L(f"M{cx - 14:.1f} {cy + 16:.1f} Q{cx:.1f} {cy + 20:.1f} {cx + 13:.1f} {cy + 18:.1f}", PEL, 2.4),
+        L(f"M{cx + 14:.1f} {cy + 22:.1f} Q{cx:.1f} {cy + 26:.1f} {cx - 13:.1f} {cy + 22:.1f}", PELB, 4.4),
+        L(f"M{cx + 14:.1f} {cy + 22:.1f} Q{cx:.1f} {cy + 26:.1f} {cx - 13:.1f} {cy + 22:.1f}", PEL, 2.4),
+    ]
+    return o
+
+
+def nino_caminando(
+    cx: float,
+    cy: float,
+    mira: int = 1,
+    camisa: tuple[str, str] = (ROJO, ROJO_OSCURO),
+    paso: float = 9,
+) -> list[dict]:
+    """Niño caminando erguido con paso claro."""
+    return nino(
+        (cx, cy),
+        (cx, cy + 12),
+        (cx, cy + 32),
+        [[(cx + 10 * mira, cy + 20)], [(cx - 10 * mira, cy + 22)]],
+        [[(cx - paso, cy + 54)], [(cx + paso, cy + 54)]],
+        camisa=camisa,
+        mira=mira,
+    )
+
+

@@ -386,7 +386,8 @@
             "gl": "Abrazar un peixe de peluche",
             "es": "Abrazar un pez de peluche"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_hug_a_fish"
         },
         {
           "id": "0_2.xuno.s2.slippery-fish",
@@ -798,7 +799,8 @@
             "gl": "Abrazarse todos xuntos",
             "es": "Abrazarse todos juntos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_group_hug"
         },
         {
           "id": "0_2.xuno.s4.say-goodbye",
@@ -820,7 +822,8 @@
             "gl": "Dar unha aperta ao marchar",
             "es": "Dar un abrazo al irse"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_hug_goodbye"
         },
         {
           "id": "0_2.xuno.s4.press-hands",

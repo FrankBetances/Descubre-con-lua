@@ -171,7 +171,8 @@
             "gl": "Dar pasiños alegres",
             "es": "Dar pasitos alegres"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_spring_like"
         },
         {
           "id": "0_2.abril.s1.sweet-smelling",
@@ -329,7 +330,8 @@
             "gl": "Bater as botas no chan",
             "es": "Golpear las botas en el suelo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_rain_boots"
         },
         {
           "id": "0_2.abril.s2.pitter-patter",
@@ -463,7 +465,8 @@
             "gl": "Bater amodo no cristal",
             "es": "Golpear despacio en el cristal"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_rain_on_the_window"
         },
         {
           "id": "0_2.abril.s2.drop-by-drop",
@@ -810,7 +813,8 @@
             "gl": "Tamborilar na mesa",
             "es": "Tamborilear en la mesa"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_drum_fingers"
         },
         {
           "id": "0_2.abril.s4.open-and-shut",
@@ -843,7 +847,8 @@
             "gl": "Camiñar cos dedos polo brazo",
             "es": "Caminar con los dedos por el brazo"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_walk_fingers"
         },
         {
           "id": "0_2.abril.s4.hide-thumbs",

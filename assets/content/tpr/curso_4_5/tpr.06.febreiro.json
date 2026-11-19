@@ -78,7 +78,8 @@
             "gl": "Aplaudir forte",
             "es": "Aplaudir fuerte"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_applause"
         },
         {
           "id": "4_5.febreiro.s1.curtain-call",
@@ -134,7 +135,8 @@
             "gl": "Camiñar coma un xigante",
             "es": "Caminar como un gigante"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_walk_heavily"
         },
         {
           "id": "4_5.febreiro.s1.hide-quietly",
@@ -340,7 +342,8 @@
             "gl": "Marchar dereito",
             "es": "Marchar recto"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_march_like_a_knight"
         },
         {
           "id": "4_5.febreiro.s2.cast-a-spell",
@@ -473,7 +476,8 @@
             "gl": "Camiñar ríxido e logo correr",
             "es": "Caminar rígido y luego correr"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_the_robot_walks_slowly_but_the_hero_runs_fast"
         }
       ]
     },
@@ -493,7 +497,8 @@
             "gl": "Camiñar arredor das cadeiras",
             "es": "Caminar alrededor de las sillas"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_musical_chairs"
         },
         {
           "id": "4_5.febreiro.s3.referee",
@@ -658,7 +663,8 @@
             "gl": "Sorrir e bater palmas",
             "es": "Sonreír y dar palmas"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_winning"
         },
         {
           "id": "4_5.febreiro.s3.whose-turn-is-it",

@@ -668,7 +668,8 @@
           "tprAction": {
             "gl": "Abrazar un prato imaxinario e sorrir",
             "es": "Abrazar un plato imaginario y sonreír"
-          }
+          },
+          "lamina": "pal_favourite"
         },
         {
           "id": "3_4.maio.s3.i-m-hungry",
