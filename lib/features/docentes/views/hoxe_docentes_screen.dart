@@ -364,15 +364,18 @@ class _HoxeDocentesScreenState extends State<HoxeDocentesScreen> {
                     ]);
             }),
             // O-20261119-7: el camino de los cinco días con el banner de la
-            // unidad, igual que en casa. Debajo sigue todo lo del aula.
-            const SizedBox(height: 10),
-            _CaminoDoAula(
-              cursoId: widget.cursoId,
-              toca: _toca,
-              language: lang,
-              audioService: widget.audioService,
-              agora: widget.agora,
-            ),
+            // unidad, igual que en casa. Debajo sigue todo lo del aula. En
+            // 0-2 (ACOPROS) el proyecto del mes va primero y el camino debajo.
+            if (widget.cursoId != 'curso_0_2') ...[
+              const SizedBox(height: 10),
+              _CaminoDoAula(
+                cursoId: widget.cursoId,
+                toca: _toca,
+                language: lang,
+                audioService: widget.audioService,
+                agora: widget.agora,
+              ),
+            ],
             // P11: lo primero, la lección de la semana del plan curricular,
             // la misma que ven las familias.
             const SizedBox(height: 12),
@@ -385,6 +388,16 @@ class _HoxeDocentesScreenState extends State<HoxeDocentesScreen> {
               audioService: widget.audioService,
               enAula: true,
             ),
+            if (widget.cursoId == 'curso_0_2') ...[
+              const SizedBox(height: 10),
+              _CaminoDoAula(
+                cursoId: widget.cursoId,
+                toca: _toca,
+                language: lang,
+                audioService: widget.audioService,
+                agora: widget.agora,
+              ),
+            ],
             // Sin número: los pasos 1-3 de la lección antigua ya no están.
             Padding(
               padding: const EdgeInsets.only(top: 22, bottom: 10),
