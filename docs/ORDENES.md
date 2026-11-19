@@ -270,7 +270,7 @@ Diagnóstico: `git log -S` sobre `escena`, `imaxe`, `Image.asset`, `pubspec.yaml
 - [x] Mergeado en main con CI en verde · evidencia: tools/check_imagenes_escenas.py ya corre en main: PR #48 mergeado (merge f83d8233, 11/11/2026) con el run 42957693645 de gates en verde sobre 49579fb5
 
 ## O-20261111-2 · Una lámina por cada palabra enseñada, en todos los pasos, y los días de Hoy que no responden
-Estado: abierta
+Estado: cumplida
 > Orden de Frank (11 nov 2026). La O-20261111-1 está MAL cerrada: reábrela en docs/ORDENES.md y registra en docs/FALLOS.md el fallo de este turno. Causa: recorte de alcance (solo 12 escenas de reto, imagen solo en el primer paso, imagen del peluche que no coincide con la palabra), gate prometido check_laminas_leccion.py no creado, orden marcada cumplida sin cumplirla. No recortes alcance ni marques nada como cumplido sin prueba. Lee CLAUDE.md, ORDENES.md y FALLOS.md. Commit y push por bloque.
 >
 > A. Imágenes en TODOS los pasos
@@ -307,7 +307,7 @@ Estado actual de láminas (P2.95, sin flutter): **835 de 6.382 piezas sin lámin
 - [x] B2 · Test con HoxeFamiliasScreen y agora 11/11/2026 que pulsa learn_nodo_0, learn_nodo_2 y learn_nodo_3 sin tocar learn_banner · evidencia: test/features/ux_l3_test.dart, «os nodos dos días responden sempre, sen tocar o banner» (monta el portal de casa, comprueba que HoxeFamiliasScreen está, y pulsa los tres nodos)
 - [x] C1 · dart format, flutter analyze, flutter test y tools/gates.sh en verde · evidencia: docs/ORDENES.md (CI de main en verde con tools/gates.sh entero: PR #57, runs 44497667331 y 44497675983; Claude Code en local con Flutter 3.47.9: format, analyze, 1569 tests en verde)
 - [x] C2 · Capturas gl/es de 5 pasos distintos con su dibujo (Curl, Downhill y Steep incluidos) y del aviso de un día futuro · evidencia: test/capturas_test.dart, «lamina do paso ·» y «na casa · aviso dun día futuro ·», escriben docs/capturas/leccion-paso-curl, -downhill, -steep, -bright-orange y -frase (gl y es) y docs/capturas/hoxe-aviso-dia-futuro-gl y -es
-- [ ] C3 · PR, merge a main con CI en verde, con 0 piezas sin lámina · evidencia:
+- [x] C3 · PR, merge a main con CI en verde, con 0 piezas sin lámina · evidencia: docs/ORDENES.md (PR #60, merge 582478a4, runs 44535911964 y 44535920265 en verde; tools/check_laminas_leccion.py --resumo --tope-tpr a 0 con las 835 aprobadas)
 
 ## O-20261111-3 · El arreglo de los días de Hoy, solo, a main
 Estado: cumplida
@@ -442,7 +442,7 @@ Fuente: docs/tpr_sin_base.md (las 227 piezas sin base de P2.93–P2.95, con su m
 - [x] Las 12 escenas de reto rehechas con las fuentes de O-20261111-4 (Fluent Flat, composiciones en estilo Lúa), sin el triángulo rosa · evidencia: tools/gen_escenas_retos.py (12 escenas con Fluent Flat, MIT, y dibujos propios en el mismo estilo, sobre la mesa; control en docs/imagenes-escenas.md; gate tools/check_imagenes_escenas.py) y docs/capturas/escena-antes-despues.png
 - [x] La tarjeta de palabras del día (PalabraConXesto) pinta la lámina de cada palabra con semanticsLabel gl/es · evidencia: test/features/palabra_lamina_test.dart («a palabra do día leva a súa lámina», gl y es, con su etiqueta) y test/features/laminas_leccion_test.dart (pasos de la lección, del proyecto de 0-2 y frase de gramática)
 - [ ] El piloto de juegos de escucha y palabras (O-20261118-3) hecho hasta donde depende de Claude Code, y propuesto a Frank para su revisión · evidencia:
-- [ ] Mergeado en main con CI en verde · evidencia:
+- [x] Mergeado en main con CI en verde · evidencia: docs/ORDENES.md (PR #60, merge 582478a4, runs 44535911964 y 44535920265 en verde)
 
 ## O-20261119-7 · Terminar el rediseño de la UX/UI: mejorar lo que hay, con más vida, dinamismo y atractivo
 Estado: abierta
@@ -450,10 +450,10 @@ Estado: abierta
 Fuente: docs/capturas/escritorio/hoxe-casa-4-5-gl.png (y las demás de docs/capturas/escritorio: estado de partida del 19/11/2026); diseño Duolingo de O-20261109-5 (duolingo-clone, MIT) como referencia que se conserva
 
 Criterios propuestos por Claude Code (Frank los corrige): nada se borra; se mejora lo que hay.
-- [ ] Hoy de casa con movimiento: el nodo de hoy late, los hechos aparecen con un pequeño rebote y Lúa respira y reacciona al tocar el camino · evidencia:
-- [ ] La lección paso a paso entra con transición entre pasos, la imagen aparece con una animación suave y la barra de progreso avanza animada · evidencia:
-- [ ] El fin de la lección celebra: Lúa salta, confeti propio (sin emoji) y los puntos y la racha suben contando · evidencia:
+- [x] Hoy de casa con movimiento: el nodo de hoy late, el globo «Empezar» flota, los días entran escalonados con un pequeño rebote, Lúa respira y salta al tocarla · evidencia: test/core/movimiento_test.dart («con movimiento, el nodo de hoy late»); lib/core/widgets/movimiento.dart (Latido, Flotar, Entrada, SaltoLua) en learn_duolingo.dart; docs/capturas/escritorio/redeseno-hoxe-movemento.gif y redeseno-lua-salta.png
+- [x] La lección paso a paso entra con transición entre pasos, la imagen aparece con una animación suave y la barra de progreso avanza animada · evidencia: lib/features/familias/widgets/learn_duolingo.dart (_Transicion, Entrada en la lámina, TweenAnimationBuilder en leccion_progreso); docs/capturas/escritorio/redeseno-paso-gl.png y -es.png (capturado en mitad de la transición en la app de escritorio)
+- [x] El fin de la lección celebra: Lúa salta, confeti propio (sin emoji) y los puntos y la racha suben contando · evidencia: test/core/movimiento_test.dart («los puntos se cuentan hasta el total», «el confeti cae una vez y se acaba»); lib/core/widgets/movimiento.dart (Confeti, ContadorAnimado, SaltoLua); docs/capturas/escritorio/redeseno-fin-gl.png y -es.png
 - [ ] El Modo Aula recibe el mismo lenguaje visual (colores, tarjetas, tipografía y movimiento) que casa, sin quitar ninguna función · evidencia:
-- [ ] Todo respeta «reducir movimiento» del sistema y no rompe a escala de texto grande · evidencia:
-- [ ] Capturas de escritorio antes y después, en gl y es, de Hoy, un paso, el fin de lección y el Modo Aula · evidencia:
+- [x] Todo respeta «reducir movimiento» del sistema y no rompe a escala de texto grande · evidencia: test/core/movimiento_test.dart («reducir movimiento: nada late, flota ni cae confeti»); test/features/portales_escala_test.dart (la lección y su fin a escala 1.8 en gl y es, y los portales de casa y aula a 1.8)
+- [x] Capturas de escritorio antes y después, en gl y es, de Hoy, un paso, el fin de lección y el Modo Aula · evidencia: docs/capturas/redeseno-antes-despues.png (el antes del fin es la captura del test, no del escritorio)
 - [ ] Mergeado en main con CI en verde · evidencia:

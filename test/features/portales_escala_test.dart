@@ -19,6 +19,7 @@ import 'package:descubre_con_lua/features/cuentos/views/cuento_viewer_screen.dar
 import 'package:descubre_con_lua/features/docentes/portal_docentes_screen.dart';
 import 'package:descubre_con_lua/features/familias/portal_familias_screen.dart';
 import 'package:descubre_con_lua/features/familias/views/xogos_fogar_screen.dart';
+import 'package:descubre_con_lua/features/familias/widgets/learn_duolingo.dart';
 import 'package:descubre_con_lua/features/lectura/views/aprender_a_ler_screen.dart';
 import 'package:descubre_con_lua/features/premios/premios_repository.dart';
 import 'package:descubre_con_lua/features/bienvenida/welcome_screen.dart';
@@ -425,6 +426,42 @@ void main() {
             }
           }
         }
+      });
+    }
+  }
+
+  // O-20261119-7: a lección paso a paso, coa barra animada e a transición, e
+  // o seu fin co confeti e os puntos que contan, a escala grande.
+  for (final lang in AppLanguage.deInterfaz) {
+    for (final escala in [1.0, 1.8]) {
+      testWidgets(
+          'a lección e o seu fin caben en ${lang.code} a escala $escala',
+          (tester) async {
+        await pintar(
+          tester,
+          LeccionDuolingoScreen(
+            language: lang,
+            semana: 'curso_4_5/1/1',
+            palabrasDaSemana: const [],
+            pasos: const [
+              PasoLeccion(
+                  titulo: 'Escoitade a canción da semana',
+                  texto: 'Cantade xuntos con xestos, e repetide a palabra.'),
+              PasoLeccion(
+                  titulo: 'A palabra nova',
+                  texto: 'Dicide a palabra en voz alta.'),
+            ],
+          ),
+          escala,
+        );
+        for (var i = 0; i < 2; i++) {
+          await tester.tap(find.byKey(const Key('leccion_continuar')));
+          await tester.pumpAndSettle();
+        }
+        expect(find.byKey(const Key('leccion_fin')), findsOneWidget);
+        await recorrer(tester);
+        expect(erroresDe(tester), isEmpty,
+            reason: 'A lección desborda en ${lang.code} a escala $escala.');
       });
     }
   }

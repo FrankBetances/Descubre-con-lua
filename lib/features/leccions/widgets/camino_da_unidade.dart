@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../../core/localization/app_language.dart';
 import '../../../core/theme/app_theme.dart';
+import '../../../core/widgets/movimiento.dart';
 import '../../../data/models/leccion_model.dart';
 
 /// El camino de una unidad, como en duolingo-clone (github.com/sanidhyy/
@@ -167,7 +168,8 @@ class _Nodo extends StatelessWidget {
         : ultima
             ? Icons.emoji_events_rounded
             : Icons.star_rounded;
-    final boton = GestureDetector(
+    final boton = Pulsable(
+        child: GestureDetector(
       onTap: onTap,
       child: Container(
         width: 70,
@@ -191,7 +193,7 @@ class _Nodo extends StatelessWidget {
           color: bloqueada ? const Color(0xFF9CA3AF) : Colors.white,
         ),
       ),
-    );
+    ));
     return Semantics(
       button: true,
       selected: elixida,
@@ -217,11 +219,13 @@ class _Nodo extends StatelessWidget {
                   backgroundColor: const Color(0xFFE5E7EB),
                 ),
               ),
-            boton,
+            // O-20261119-7: la lección de esta semana late; el globo flota.
+            if (actual) Latido(child: boton) else boton,
             if (actual)
               Positioned(
                 top: -34,
-                child: Container(
+                child: Flotar(
+                    child: Container(
                   key: const Key('leccion_globo'),
                   padding:
                       const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
@@ -239,7 +243,7 @@ class _Nodo extends StatelessWidget {
                       color: acento,
                     ),
                   ),
-                ),
+                )),
               ),
           ],
         ),
