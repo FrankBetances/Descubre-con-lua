@@ -55,7 +55,8 @@
             "gl": "Mover un remo imaxinario",
             "es": "Mover un remo imaginario"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_oar"
         },
         {
           "id": "2_3.xuno.s1.boat-sail",
@@ -216,7 +217,8 @@
             "gl": "Subir ao barco imaxinario",
             "es": "Subir al barco imaginario"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_all_aboard_the_boat"
         },
         {
           "id": "2_3.xuno.s1.gently-down-the-river",
@@ -315,7 +317,8 @@
             "gl": "Cavar coa pa",
             "es": "Cavar con la pala"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_beach_spade"
         },
         {
           "id": "2_3.xuno.s2.footprints-in-sand",
@@ -360,7 +363,8 @@
             "gl": "Mover a peneira",
             "es": "Mover el tamiz"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_sift"
         },
         {
           "id": "2_3.xuno.s2.dig-a-hole",
@@ -538,7 +542,8 @@
             "gl": "Meter tesouros na bolsa",
             "es": "Meter tesoros en la bolsa"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_beach_bag"
         },
         {
           "id": "2_3.xuno.s3.rock-pool",
@@ -801,7 +806,8 @@
             "gl": "Xuntarse todos para a foto",
             "es": "Juntarse todos para la foto"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_class_photo"
         },
         {
           "id": "2_3.xuno.s4.wave-goodbye",

@@ -198,7 +198,8 @@
             "gl": "Mover a cinta de cores",
             "es": "Mover la cinta de colores"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_rainbow_coloured"
         },
         {
           "id": "0_2.marzo.s1.red-red-red",
@@ -475,7 +476,8 @@
             "gl": "Dar a culler ao bebé",
             "es": "Dar la cuchara al bebé"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_a_spoon_for_you"
         },
         {
           "id": "0_2.marzo.s2.one-more-bite",

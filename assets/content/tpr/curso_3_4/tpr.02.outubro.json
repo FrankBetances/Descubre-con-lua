@@ -596,7 +596,8 @@
           "tprAction": {
             "gl": "Dobrar os xeonllos e baixar un pouco",
             "es": "Flexionar las rodillas y bajar un poco"
-          }
+          },
+          "lamina": "pal_bend"
         },
         {
           "id": "3_4.outubro.s3.reach",
@@ -710,7 +711,8 @@
           "tprAction": {
             "gl": "Mover os dedos no aire coma se tocasen o piano",
             "es": "Mover los dedos en el aire como si tocaran el piano"
-          }
+          },
+          "lamina": "pal_wiggle_your_fingers"
         },
         {
           "id": "3_4.outubro.s3.fast-and-slow",
@@ -753,7 +755,8 @@
           "tprAction": {
             "gl": "Mover a cabeza amodo dun lado a outro",
             "es": "Mover la cabeza despacio de un lado a otro"
-          }
+          },
+          "lamina": "pal_neck"
         },
         {
           "id": "3_4.outubro.s4.heart",

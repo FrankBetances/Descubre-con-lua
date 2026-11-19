@@ -101,7 +101,8 @@
             "gl": "Facer un personaxe con todo o corpo",
             "es": "Hacer un personaje con todo el cuerpo"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_act"
         },
         {
           "id": "4_5.febreiro.s1.rehearse",
@@ -295,7 +296,8 @@
             "gl": "Mover unha variña",
             "es": "Mover una varita"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_wizard"
         },
         {
           "id": "4_5.febreiro.s2.robot",
@@ -366,7 +368,8 @@
             "gl": "Mover os brazos a golpes",
             "es": "Mover los brazos a golpes"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_move_like_a_robot"
         },
         {
           "id": "4_5.febreiro.s2.search-for-treasure",
@@ -401,7 +404,8 @@
             "gl": "Levantar o peito",
             "es": "Levantar el pecho"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_brave_knight"
         },
         {
           "id": "4_5.febreiro.s2.magical",
@@ -762,7 +766,8 @@
             "gl": "Mover os dedos coma fíos",
             "es": "Mover los dedos como hilos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_strings"
         },
         {
           "id": "4_5.febreiro.s4.puppeteer",
@@ -773,7 +778,8 @@
             "gl": "Mover un monicreque dende arriba",
             "es": "Mover un títere desde arriba"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_puppeteer"
         },
         {
           "id": "4_5.febreiro.s4.voice",
@@ -819,7 +825,8 @@
             "gl": "Mover os dedos cara arriba",
             "es": "Mover los dedos hacia arriba"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_pull_the_strings"
         },
         {
           "id": "4_5.febreiro.s4.talk-back",

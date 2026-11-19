@@ -245,7 +245,8 @@
             "gl": "Achegar o bebé ao peito",
             "es": "Acercar al bebé al pecho"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_close_to_me"
         }
       ]
     },
@@ -373,7 +374,8 @@
             "gl": "Tapar os pés coa manta",
             "es": "Tapar los pies con la manta"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_cover_up"
         },
         {
           "id": "0_2.decembro.s2.warm-feet",
@@ -489,7 +491,8 @@
             "gl": "Xuntar meixela con meixela",
             "es": "Juntar mejilla con mejilla"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_cheek_to_cheek"
         }
       ]
     },
@@ -665,7 +668,8 @@
             "gl": "Mover os dedos coma luces",
             "es": "Mover los dedos como luces"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_twinkly"
         },
         {
           "id": "0_2.decembro.s3.glittery",

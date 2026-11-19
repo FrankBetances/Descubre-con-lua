@@ -67,7 +67,8 @@
             "gl": "Mover un dedo coma unha agulla",
             "es": "Mover un dedo como una aguja"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_pointer"
         },
         {
           "id": "5_6.novembro.s1.weights-set",
@@ -100,7 +101,8 @@
             "gl": "Poñer os brazos á mesma altura",
             "es": "Poner los brazos a la misma altura"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_balance_arms"
         },
         {
           "id": "5_6.novembro.s1.tip-the-scale",
@@ -156,7 +158,8 @@
             "gl": "Quedar cos brazos iguais",
             "es": "Quedarse con los brazos iguales"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_balanced_scale"
         },
         {
           "id": "5_6.novembro.s1.heaviest",
@@ -345,7 +348,8 @@
             "gl": "Xuntar dous grupos",
             "es": "Juntar dos grupos"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_add_up"
         },
         {
           "id": "5_6.novembro.s2.take-away",
@@ -784,7 +788,8 @@
             "gl": "Estirar os brazos coma pólas",
             "es": "Estirar los brazos como ramas"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_chestnut_tree"
         },
         {
           "id": "5_6.novembro.s4.season",

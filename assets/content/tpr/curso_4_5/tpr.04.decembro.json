@@ -376,7 +376,8 @@
             "gl": "Poñer outro bloque",
             "es": "Poner otro bloque"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_add_one_more"
         },
         {
           "id": "4_5.decembro.s2.take-one-away",
@@ -810,7 +811,8 @@
             "gl": "Collerse todos das mans",
             "es": "Cogerse todos de las manos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_community"
         },
         {
           "id": "4_5.decembro.s4.donate",

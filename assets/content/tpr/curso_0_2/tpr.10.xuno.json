@@ -139,7 +139,8 @@
             "gl": "Menear os dedos dos pés na area",
             "es": "Mover los deditos en la arena"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_wriggle_toes"
         },
         {
           "id": "0_2.xuno.s1.watch-the-waves",
@@ -348,7 +349,8 @@
             "gl": "Mover as dúas mans coma peixes",
             "es": "Mover las dos manos como peces"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_swim_along"
         },
         {
           "id": "0_2.xuno.s2.glide",
@@ -416,7 +418,8 @@
             "gl": "Mover a cadeira coma unha cola",
             "es": "Mover la cadera como una cola"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_swishing"
         },
         {
           "id": "0_2.xuno.s2.silvery",
@@ -885,7 +888,8 @@
             "gl": "Medir o bebé coa man",
             "es": "Medir al bebé con la mano"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_bigger_now"
         },
         {
           "id": "0_2.xuno.s4.thankful",

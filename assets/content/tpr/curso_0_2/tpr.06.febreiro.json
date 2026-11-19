@@ -326,7 +326,8 @@
             "gl": "Afundir o bebé no pufe",
             "es": "Hundir al bebé en el puf"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_beanbag"
         },
         {
           "id": "0_2.febreiro.s2.spinning-top",
@@ -395,7 +396,8 @@
             "gl": "Subir e baixar o bebé suavemente",
             "es": "Subir y bajar al bebé suavemente"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_bob"
         },
         {
           "id": "0_2.febreiro.s2.swaying",
@@ -406,7 +408,8 @@
             "gl": "Mover o corpo dun lado a outro",
             "es": "Mover el cuerpo de un lado a otro"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_swaying"
         },
         {
           "id": "0_2.febreiro.s2.dizzy",
@@ -868,7 +871,8 @@
             "gl": "Mover os pés do bebé coma pisando",
             "es": "Mover los pies del bebé como pisando"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_stamp"
         },
         {
           "id": "0_2.febreiro.s4.jingle-jangle",

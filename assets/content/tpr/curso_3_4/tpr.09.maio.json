@@ -177,7 +177,8 @@
           "tprAction": {
             "gl": "Mover as mans coma se esvarasen de xabón",
             "es": "Mover las manos como si resbalaran de jabón"
-          }
+          },
+          "lamina": "pal_soapy"
         },
         {
           "id": "3_4.maio.s1.bubbly",
@@ -328,7 +329,8 @@
           "tprAction": {
             "gl": "Peitear o pelo cun peite imaxinario",
             "es": "Peinarse con un peine imaginario"
-          }
+          },
+          "lamina": "pal_comb"
         },
         {
           "id": "3_4.maio.s2.toothbrush",
@@ -457,7 +459,8 @@
           "tprAction": {
             "gl": "Cepillar os dentes cun cepillo imaxinario",
             "es": "Cepillarse los dientes con un cepillo imaginario"
-          }
+          },
+          "lamina": "pal_brush_your_teeth"
         },
         {
           "id": "3_4.maio.s2.wash-your-face",

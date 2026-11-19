@@ -149,7 +149,8 @@
             "gl": "Traer un xoguete á alfombra",
             "es": "Traer un juguete a la alfombra"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_bring"
         },
         {
           "id": "2_3.setembro.s1.neat",
@@ -239,7 +240,8 @@
             "gl": "Meter o xoguete na caixa",
             "es": "Meter el juguete en la caja"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_back_in_the_box"
         }
       ]
     },
@@ -396,7 +398,8 @@
             "gl": "Mover a torre con coidado",
             "es": "Mover la torre con cuidado"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_wobbly_tower"
         },
         {
           "id": "2_3.setembro.s2.tall-tower",

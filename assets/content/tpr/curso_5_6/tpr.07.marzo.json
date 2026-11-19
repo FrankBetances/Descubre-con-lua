@@ -56,7 +56,8 @@
             "gl": "Enfiar unha conta imaxinaria",
             "es": "Ensartar una cuenta imaginaria"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_bead"
         },
         {
           "id": "5_6.marzo.s1.necklace",
@@ -103,7 +104,8 @@
             "gl": "Palma, palma, pé",
             "es": "Palma, palma, pie"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_clap_a_pattern"
         },
         {
           "id": "5_6.marzo.s1.predict-what-s-next",
@@ -169,7 +171,8 @@
             "gl": "Man arriba, man abaixo",
             "es": "Mano arriba, mano abajo"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_alternating"
         },
         {
           "id": "5_6.marzo.s1.regular",
@@ -371,7 +374,8 @@
             "gl": "Mover as dúas mans iguais",
             "es": "Mover las dos manos iguales"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_match_both_sides"
         },
         {
           "id": "5_6.marzo.s2.cut-out",
@@ -705,7 +709,8 @@
             "gl": "Xuntar as mans en hexágono",
             "es": "Juntar las manos en hexágono"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_bees_build_hexagons_because_they_fit_together"
         },
         {
           "id": "5_6.marzo.s3.this-flower-has-more-petals-than-that-one",
@@ -819,7 +824,8 @@
             "gl": "Remexer co dedo",
             "es": "Remover con el dedo"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_mix_colours"
         },
         {
           "id": "5_6.marzo.s4.arrange-tiles",
@@ -830,7 +836,8 @@
             "gl": "Pousar pezas en fila",
             "es": "Poner piezas en fila"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_arrange_tiles"
         },
         {
           "id": "5_6.marzo.s4.create-a-picture",
@@ -922,7 +929,8 @@
             "gl": "Xuntar dúas mans",
             "es": "Juntar dos manos"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_blue_and_yellow_make_green"
         },
         {
           "id": "5_6.marzo.s4.which-piece-goes-here",

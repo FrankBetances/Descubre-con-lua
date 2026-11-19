@@ -302,7 +302,8 @@
             "gl": "Facer un tubo cos brazos",
             "es": "Hacer un tubo con los brazos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_cannon"
         },
         {
           "id": "5_6.xaneiro.s2.cobbles",
@@ -419,7 +420,8 @@
             "gl": "Moverse rápido",
             "es": "Moverse rápido"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_busy_city"
         },
         {
           "id": "5_6.xaneiro.s2.modern",
@@ -609,7 +611,8 @@
             "gl": "Pasar dun xesto pequeno a un grande",
             "es": "Pasar de un gesto pequeño a uno grande"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_change_over_time"
         },
         {
           "id": "5_6.xaneiro.s3.share-memories",

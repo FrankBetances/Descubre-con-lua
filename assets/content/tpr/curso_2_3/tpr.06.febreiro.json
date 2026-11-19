@@ -69,7 +69,8 @@
             "gl": "Poñer as mans coma orellas",
             "es": "Poner las manos como orejas"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_animal_ears"
         },
         {
           "id": "2_3.febreiro.s1.paws",
@@ -302,7 +303,8 @@
             "gl": "Mover unha pluma de cores",
             "es": "Mover una pluma de colores"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_parrot_feather"
         },
         {
           "id": "2_3.febreiro.s2.vine",
@@ -407,7 +409,8 @@
             "gl": "Mover as mans coma herba alta",
             "es": "Mover las manos como hierba alta"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_tropical"
         },
         {
           "id": "2_3.febreiro.s2.enormous",
@@ -544,7 +547,8 @@
             "gl": "Enroscarse coma un raposo",
             "es": "Enroscarse como un zorro"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_arctic_fox"
         },
         {
           "id": "2_3.febreiro.s3.iceberg",

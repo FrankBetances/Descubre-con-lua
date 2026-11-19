@@ -344,7 +344,8 @@
             "gl": "Picar coa man plana",
             "es": "Trocear con la mano plana"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_chop"
         },
         {
           "id": "2_3.marzo.s2.blend",
@@ -481,7 +482,8 @@
             "gl": "Repartir rodas",
             "es": "Repartir rodajas"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_a_slice_for_each"
         }
       ]
     },
@@ -618,7 +620,8 @@
             "gl": "Pousar a pirámide enriba do cubo",
             "es": "Poner la pirámide encima del cubo"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_balance_on_top"
         },
         {
           "id": "2_3.marzo.s3.topple",
@@ -766,7 +769,8 @@
             "gl": "Facer que se mastiga un pau de cenoria",
             "es": "Hacer como que se mastica un palito de zanahoria"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_carrot_stick"
         },
         {
           "id": "2_3.marzo.s4.cucumber",

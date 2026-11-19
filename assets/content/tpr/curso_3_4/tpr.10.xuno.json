@@ -105,7 +105,8 @@
           "tprAction": {
             "gl": "Mover os brazos coma se nadásemos",
             "es": "Mover los brazos como si nadáramos"
-          }
+          },
+          "lamina": "pal_swim"
         },
         {
           "id": "3_4.xuno.s1.row",
@@ -223,7 +224,8 @@
           "tprAction": {
             "gl": "Subir os brazos moi alto e baixalos de golpe",
             "es": "Subir los brazos muy alto y bajarlos de golpe"
-          }
+          },
+          "lamina": "pal_big_waves"
         },
         {
           "id": "3_4.xuno.s1.swim-like-a-fish",
@@ -246,7 +248,8 @@
           "tprAction": {
             "gl": "Remar ata o outro lado da aula",
             "es": "Remar hasta el otro lado del aula"
-          }
+          },
+          "lamina": "pal_across_the_sea"
         }
       ]
     },
@@ -347,7 +350,8 @@
           "tprAction": {
             "gl": "Tapar os pés con area imaxinaria",
             "es": "Taparse los pies con arena imaginaria"
-          }
+          },
+          "lamina": "pal_bury"
         },
         {
           "id": "3_4.xuno.s2.collect",
@@ -603,7 +607,8 @@
           "tprAction": {
             "gl": "Encher de aire a barriga e soltalo amodo",
             "es": "Llenar de aire la barriga y soltarlo despacio"
-          }
+          },
+          "lamina": "pal_breathe"
         },
         {
           "id": "3_4.xuno.s3.grab",

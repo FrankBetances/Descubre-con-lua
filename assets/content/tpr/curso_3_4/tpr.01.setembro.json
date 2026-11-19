@@ -790,7 +790,8 @@
           "tprAction": {
             "gl": "Poñer unha man enriba da outra como bloques",
             "es": "Poner una mano encima de la otra como bloques"
-          }
+          },
+          "lamina": "pal_blocks"
         },
         {
           "id": "3_4.setembro.s4.song",
@@ -801,7 +802,8 @@
           "tprAction": {
             "gl": "Mover as mans coma se dirixise unha canción",
             "es": "Mover las manos como si dirigiera una canción"
-          }
+          },
+          "lamina": "pal_song"
         },
         {
           "id": "3_4.setembro.s4.cup",
@@ -883,7 +885,8 @@
           "tprAction": {
             "gl": "Amorear bloques imaxinarios cada vez máis altos",
             "es": "Apilar bloques imaginarios cada vez más altos"
-          }
+          },
+          "lamina": "pal_build"
         },
         {
           "id": "3_4.setembro.s4.funny",

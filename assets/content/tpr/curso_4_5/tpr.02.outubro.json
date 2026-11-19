@@ -125,7 +125,8 @@
             "gl": "Bater dúas palmas",
             "es": "Dar dos palmadas"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_clap_twice"
         },
         {
           "id": "4_5.outubro.s1.switch",
@@ -755,7 +756,8 @@
             "gl": "Mover o brazo coma un metrónomo",
             "es": "Mover el brazo como un metrónomo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_metronome"
         },
         {
           "id": "4_5.outubro.s4.clap-pattern",

@@ -68,7 +68,8 @@
             "gl": "Subir e baixar coma unha boia",
             "es": "Subir y bajar como una boya"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_buoy"
         },
         {
           "id": "4_5.xuno.s1.fisherman",
@@ -103,7 +104,8 @@
             "gl": "Dar un paso grande",
             "es": "Dar un paso grande"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_climb_aboard"
         },
         {
           "id": "4_5.xuno.s1.pull-up-the-rope",
@@ -138,7 +140,8 @@
             "gl": "Subir e baixar amodo",
             "es": "Subir y bajar despacio"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_bob_on_the_water"
         },
         {
           "id": "4_5.xuno.s1.look-through-binoculars",
@@ -184,7 +187,8 @@
             "gl": "Moverse traballando",
             "es": "Moverse trabajando"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_busy_harbour"
         },
         {
           "id": "4_5.xuno.s1.seafaring",
@@ -353,7 +357,8 @@
             "gl": "Pasar follas amodo",
             "es": "Pasar hojas despacio"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_browse"
         },
         {
           "id": "4_5.xuno.s2.measure-height",
@@ -911,7 +916,8 @@
             "gl": "Abanarse amodo",
             "es": "Abanicarse despacio"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_breezy_evening"
         },
         {
           "id": "4_5.xuno.s4.catch-the-frisbee",
@@ -922,7 +928,8 @@
             "gl": "Estender as mans",
             "es": "Extender las manos"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_catch_the_frisbee"
         },
         {
           "id": "4_5.xuno.s4.hop-to-number-three-then-turn-around",

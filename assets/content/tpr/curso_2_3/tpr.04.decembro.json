@@ -324,7 +324,8 @@
             "gl": "Mover todo o corpo forte",
             "es": "Mover todo el cuerpo fuerte"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_storm"
         },
         {
           "id": "2_3.decembro.s2.shelter",
@@ -677,7 +678,8 @@
             "gl": "Poñer o gorro ao revés rindo",
             "es": "Poner el gorro al revés riendo"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_back_to_front"
         },
         {
           "id": "2_3.decembro.s3.arms-up-high",

@@ -510,7 +510,8 @@
             "gl": "Recibir un papel coas dúas mans",
             "es": "Recibir un papel con las dos manos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_certificate"
         },
         {
           "id": "5_6.xuno.s3.speech",

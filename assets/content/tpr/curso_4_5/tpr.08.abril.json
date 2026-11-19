@@ -68,7 +68,8 @@
             "gl": "Facer prismáticos coas mans",
             "es": "Hacer prismáticos con las manos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_binoculars"
         },
         {
           "id": "4_5.abril.s1.boat-trip",
@@ -91,7 +92,8 @@
             "gl": "Facer unha tenda coas mans",
             "es": "Hacer una tienda con las manos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_campsite"
         },
         {
           "id": "4_5.abril.s1.fly-with-wings",
@@ -308,7 +310,8 @@
             "gl": "Facer un niño na parede",
             "es": "Hacer un nido en la pared"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_cliff_nest"
         },
         {
           "id": "4_5.abril.s2.webbed-feet",
@@ -800,7 +803,8 @@
             "gl": "Botar restos de froita",
             "es": "Echar restos de fruta"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_compost"
         },
         {
           "id": "4_5.abril.s4.nature",
@@ -915,7 +919,8 @@
             "gl": "Pousar a man suave",
             "es": "Posar la mano suave"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_careful_with_nature"
         },
         {
           "id": "4_5.abril.s4.plastic-goes-in-the-yellow-bin",

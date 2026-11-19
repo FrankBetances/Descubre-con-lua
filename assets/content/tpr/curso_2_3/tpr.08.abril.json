@@ -57,7 +57,8 @@
             "gl": "Coller unha folla de herba",
             "es": "Coger una brizna de hierba"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_blade_of_grass"
         },
         {
           "id": "2_3.abril.s1.buttercup",
@@ -68,7 +69,8 @@
             "gl": "Pousar unha flor amarela no queixo",
             "es": "Poner una flor amarilla en la barbilla"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_buttercup"
         },
         {
           "id": "2_3.abril.s1.grasshopper",
@@ -313,7 +315,8 @@
             "gl": "Botar alpiste na man",
             "es": "Echar alpiste en la mano"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_birdseed"
         },
         {
           "id": "2_3.abril.s2.bird-bath",
@@ -336,7 +339,8 @@
             "gl": "Encher o comedeiro con sementes",
             "es": "Llenar el comedero con semillas"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_bird_feeder"
         },
         {
           "id": "2_3.abril.s2.whistle-a-tune",
@@ -867,7 +871,8 @@
             "gl": "Facer «pío» cos beizos",
             "es": "Hacer «pío» con los labios"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_chirp"
         },
         {
           "id": "2_3.abril.s4.open-beak",
@@ -961,7 +966,8 @@
             "gl": "Coller o ovo con moito coidado",
             "es": "Coger el huevo con mucho cuidado"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_careful_with_the_egg"
         },
         {
           "id": "2_3.abril.s4.out-of-the-egg",

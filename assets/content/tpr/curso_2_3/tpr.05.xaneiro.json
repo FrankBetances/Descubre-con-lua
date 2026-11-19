@@ -80,7 +80,8 @@
             "gl": "Premer o botón de parada",
             "es": "Pulsar el botón de parada"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_bell_button"
         },
         {
           "id": "2_3.xaneiro.s1.wipers",
@@ -91,7 +92,8 @@
             "gl": "Mover os brazos coma limpaparabrisas",
             "es": "Mover los brazos como limpiaparabrisas"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_wipers"
         },
         {
           "id": "2_3.xaneiro.s1.get-on",
@@ -160,7 +162,8 @@
             "gl": "Brincar na cadeira",
             "es": "Botar en la silla"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_bumpy_ride"
         },
         {
           "id": "2_3.xaneiro.s1.crowded",
@@ -219,7 +222,8 @@
             "gl": "Premer unha bucina imaxinaria",
             "es": "Pulsar una bocina imaginaria"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_beep_beep_bus"
         },
         {
           "id": "2_3.xaneiro.s1.on-the-bus",
@@ -622,7 +626,8 @@
             "gl": "Dar unha moeda imaxinaria",
             "es": "Dar una moneda imaginaria"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_buy_bread"
         },
         {
           "id": "2_3.xaneiro.s3.walk-along",
@@ -772,7 +777,8 @@
             "gl": "Levantar o brazo coma unha grúa",
             "es": "Levantar el brazo como una grúa"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_crane"
         },
         {
           "id": "2_3.xaneiro.s4.anchor",

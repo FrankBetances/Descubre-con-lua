@@ -159,7 +159,8 @@
             "gl": "Subir as mans amodo",
             "es": "Subir las manos despacio"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_buoyant"
         },
         {
           "id": "4_5.maio.s1.waterlogged",
@@ -290,7 +291,8 @@
             "gl": "Facer unha canle coas mans",
             "es": "Hacer un canal con las manos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_channel"
         },
         {
           "id": "4_5.maio.s2.current",
@@ -348,7 +350,8 @@
             "gl": "Poñer as mans diante",
             "es": "Poner las manos delante"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_block_the_water"
         },
         {
           "id": "4_5.maio.s2.splash-down",
@@ -407,7 +410,8 @@
             "gl": "Mover un dedo amodo",
             "es": "Mover un dedo despacio"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_trickling"
         },
         {
           "id": "4_5.maio.s2.downstream",
@@ -465,7 +469,8 @@
             "gl": "Mover as mans de arriba abaixo",
             "es": "Mover las manos de arriba abajo"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_water_always_flows_downhill"
         },
         {
           "id": "4_5.maio.s2.ready-set-blow",
@@ -589,7 +594,8 @@
             "gl": "Xuntar as mans en nube",
             "es": "Juntar las manos en nube"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_condense"
         },
         {
           "id": "4_5.maio.s3.fall-as-rain",
@@ -612,7 +618,8 @@
             "gl": "Poñer un vaso fóra",
             "es": "Poner un vaso fuera"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_collect_rain"
         },
         {
           "id": "4_5.maio.s3.refract",

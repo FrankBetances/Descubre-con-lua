@@ -55,7 +55,8 @@
             "gl": "Botar o papel na papeleira",
             "es": "Tirar el papel a la papelera"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_bin"
         },
         {
           "id": "2_3.maio.s1.mirror-check",

@@ -2,7 +2,7 @@
 
 Generado por `tools/gen_laminas_palabras.py`. Una fila por palabra o frase que se enseña (lección paso a paso, palabras del día, TPR y proyecto de 0-2) y que ya tiene su lámina.
 
-Con lámina: 2718. **Sin lámina todavía: 1660** (las cuenta y las nombra `python3 tools/check_laminas_leccion.py`).
+Con lámina: 2918. **Sin lámina todavía: 1460** (las cuenta y las nombra `python3 tools/check_laminas_leccion.py`).
 
 | Palabra (en) | gl | es | Gesto | Lámina | Nueva o reutilizada | Por qué coincide |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -12,26 +12,39 @@ Con lámina: 2718. **Sin lámina todavía: 1660** (las cuenta y las nombra `pyth
 | A heart with my hands | Un corazón coas mans | Un corazón con las manos | Hacer un corazón con las manos | `pal_a_heart_with_my_hands` | banco | Dos manos formando un corazón. |
 | A leaf. | Unha folla. | Una hoja. | — | `folla` | reutilizada | Hoja otoñal del set propio. |
 | A red tomato | Un tomate vermello | Un tomate rojo | Enseñar el tomate | `pal_red_tomato` | banco | Tomate rojo brillante con hojita verde. |
+| A slice for each | Unha roda para cada un | Una rodaja para cada uno | Repartir rodajas | `pal_a_slice_for_each` | nova | Dos platos iguales, cada uno con una rodaja repartida. |
+| A spoon for you | Unha culler para ti | Una cuchara para ti | Dar la cuchara al bebé | `pal_a_spoon_for_you` | nova | Bebé sentado recibiendo la cuchara que le ofrecen. |
 | Above | Por riba | Por encima | Señalar por encima de la cabeza | `pal_above` | nova | Pelota flotando por encima del estante con flecha señalando hacia arriba. |
+| Acorn cap | Carapucha da landra | Capuchón de la bellota | Poner un dedo como un sombrero | `pal_acorn_cap` | nova | Bellota con su sombrerete marrón oscuro destacado arriba. |
 | Acorn | Landra | Bellota | Coger una bellota imaginaria con los dedos | `pal_acorn` | banco | Bellota clara con su capuchón. |
 | Acrobatic | Acrobático | Acrobático | Girar en el sitio | `pal_acrobatic` | nova | Niño haciendo acrobacias y girando sobre sí mismo. |
 | Across the road | Ao outro lado da rúa | Al otro lado de la calle | Caminar de un lado al otro | `pal_across_the_road` | nova | Niño cruzando de un lado al otro de la calle por las rayas. |
+| Across the sea | A través do mar | A través del mar | Remar hasta el otro lado del aula | `pal_across_the_sea` | nova | Barquito cruzando el mar de un extremo al otro con flecha larga. |
+| Act | Actuar | Actuar | Hacer un personaje con todo el cuerpo | `pal_act` | banco | Máscaras teatrales para actuar un personaje. |
 | Action! | Acción! | ¡Acción! | Cerrar la claqueta | `pal_action` | nova | Niño dando una palmada con los brazos frente a una claqueta de cine abierta que se cierra. |
+| Add one more | Engadir un máis | Añadir uno más | Poner otro bloque | `pal_add_one_more` | nova | Dos bloques apilados recibiendo un bloque rojo adicional encima. |
+| Add up | Sumar | Sumar | Juntar dos grupos | `pal_add_up` | nova | Dos grupos de manzanas juntándose en el centro para sumar. |
 | After running, the heart beats faster | Despois de correr, o corazón latexa máis rápido | Después de correr, el corazón late más rápido | Correr y poner la mano en el pecho | `pal_after_running_the_heart_beats_faster` | composta | Niño corriendo y corazón latiendo rápido tras el ejercicio. |
+| Agreement | Acordo | Acuerdo | Darse la mano con el compañero | `pal_agreement` | banco | Dos manos dándose la mano en señal de acuerdo. |
 | Ahoy, pirates! | Ei, piratas! | ¡Ah del barco, piratas! | Saludar con la mano en la frente | `pal_ahoy_pirates` | composta | Bandera pirata y niño haciendo saludo marinero en la frente. |
 | Air | Aire | Aire | Mover la mano en el aire | `pal_air` | composta | Corriente invisible de aire mostrada por ráfagas limpias en el cielo. |
 | Alarm clock | Espertador | Despertador | Hacer «ring ring» | `pal_alarm_clock` | banco | Despertador rojo con dos campanas arriba. |
 | Alert | Atento | Alerta | Abrir mucho los ojos | `pal_alert` | banco | Ojos bien abiertos mirando atento: coincide con el gesto de abrir mucho los ojos. |
+| All aboard the boat! | Todos ao barco! | ¡Todos al barco! | Subir al barco imaginario | `pal_all_aboard_the_boat` | nova | Barco en el agua con niños subiendo a cubierta. |
+| All aboard! | Todos a bordo! | ¡Todos a bordo! | Subir a un tren imaginario con un paso grande | `pal_all_aboard` | nova | Tren azul en el andén con flecha subiendo a bordo. |
 | All hands on deck! | Todos a cuberta! | ¡Todos a cubierta! | Correr al barco | `pal_all_hands_on_deck` | composta | Niños corriendo hacia la cubierta del barco. |
 | All together | Todos xuntos | Todos juntos | Darse las manos en círculo y subirlas a la vez | `pal_all_together` | nova | Tres niños cogidos de la mano levantando todos los brazos juntos. |
 | All wet! | Todo mollado! | ¡Todo mojado! | Enseñar las manos mojadas | `pal_all_wet` | composta | Manos abiertas cubiertas de gotas de agua: todo mojado. |
+| Almost at the top! | Xa case estamos arriba! | ¡Ya casi estamos arriba! | Estirar la mano hacia arriba | `pal_almost_at_the_top` | nova | Niño cerca de la cima de la montaña estirando la mano hacia la cumbre. |
 | Along the path | Polo carreiro | Por el sendero | Caminar en fila por el sendero | `pal_along_the_path` | nova | Niños caminando uno detrás de otro por el sendero marcado. |
+| Alternating | Alterno | Alterno | Mano arriba, mano abajo | `pal_alternating` | nova | Niño alternando un brazo arriba y el otro abajo. |
 | Although we closed our eyes, we guessed. | Aínda que pechamos os ollos, adiviñamos. | Aunque cerramos los ojos, adivinamos. | — | `pal_closed_eyes_guessed` | composta | Adivinando qué objeto es con los ojos cerrados. |
 | Ambulance | Ambulancia | Ambulancia | Hacer la sirena con la voz | `pal_ambulance` | banco | Ambulancia blanca con luz azul y cruz roja. |
 | An oak grows from an acorn | Un carballo nace dunha landra | Un roble nace de una bellota | Encogerse y levantarse despacio | `pal_an_oak_grows_from_an_acorn` | composta | Bellota pequeña junto a flecha de crecimiento hacia un roble grande. |
 | Anchor | Áncora | Ancla | Bajar los brazos como un ancla | `pal_anchor` | banco | Ancla metálica de barco. |
 | Ancient town | Vila antiga | Villa antigua | Caminar despacio | `pal_ancient_town` | composta | Niño paseando despacio frente a las murallas de una villa antigua. |
 | Anemone | Anémona | Anémona | Abrir y cerrar los dedos despacio | `pal_anemone` | nova | Anémona marina sobre roca abriendo y meciendo sus tentáculos como pétalos en el fondo del mar. |
+| Animal ears | Orellas de animal | Orejas de animal | Poner las manos como orejas | `pal_animal_ears` | nova | Niño con largas orejas de conejo colocadas sobre la cabeza. |
 | Animal parade | Desfile de animais | Desfile de animales | Caminar en fila como animales | `pal_animal_parade` | composta | Animales caminando en fila desfilando uno detrás de otro. |
 | Animal tail | Rabo de disfrace | Cola de disfraz | Menear la cola del disfraz | `pal_animal_tail` | nova | Cola larga de disfraz de animal señalada con flecha. |
 | Ankle | Nocello | Tobillo | Girar el tobillo despacio | `pal_ankle` | nova | Pierna y pie descalzo con flechas circulares girando el tobillo. |
@@ -39,7 +52,10 @@ Con lámina: 2718. **Sin lámina todavía: 1660** (las cuenta y las nombra `pyth
 | Ant | Formiga | Hormiga | Caminar en fila muy pequeñitos | `pal_ant` | banco | Hormiga de perfil con seis patas. |
 | Applause | Aplauso | Aplauso | Aplaudir fuerte | `pal_applause` | banco | Dos manos aplaudiendo fuerte. |
 | Apple | mazá | manzana | — | `pal_apple` | banco | Manzana roja brillante con hoja verde. |
+| Apples and pears | Mazás e peras | Manzanas y peras | Coger una fruta con cada mano | `pal_apples_and_pears` | nova | Manzana roja y pera verde juntas sobre la mesa. |
 | Apricot | Albaricoque | Albaricoque | Acariciar la piel del albaricoque | `pal_apricot` | composta | Fruta aterciopelada de albaricoque acariciada suavemente. |
+| Arch your back | Arquear as costas | Arquear la espalda | Hacer un gato con la espalda | `pal_arch_your_back` | nova | Gato arqueando bien alto el lomo con flecha curva encima. |
+| Arctic fox | Raposo ártico | Zorro ártico | Enroscarse como un zorro | `pal_arctic_fox` | nova | Zorro ártico blanco acurrucado sobre la nieve. |
 | Arctic | Ártico | Ártico | Abrazarse por el frío | `pal_arctic` | composta | Frío ártico con nieve y oso polar mientras el niño se abraza para calentarse. |
 | Are you ready? | Preparados? | ¿Preparados? | — | `pal_are_you_ready` | nova | Dos niños en postura atenta sobre la línea de salida preparados para empezar. |
 | Armchair | Butaca | Sillón | Sentarse en el sillón | `pal_armchair` | banco | Sillón para sentarse. |
@@ -49,14 +65,17 @@ Con lámina: 2718. **Sin lámina todavía: 1660** (las cuenta y las nombra `pyth
 | Arms | Brazos | Brazos | Abrir los brazos en cruz | `pal_arms` | nova | Niño abriendo los dos brazos rectos en cruz señalados hacia fuera. |
 | Around the fire | Arredor do lume | Alrededor del fuego | Caminar en círculo con el bebé | `pal_around_the_fire` | composta | Niños caminando en círculo alrededor de la hoguera cálida. |
 | Around the square | Arredor do cadrado | Alrededor del cuadrado | Caminar alrededor de un cuadrado imaginario | `pal_around_the_square` | nova | Recorrido siguiendo los cuatro lados de un cuadrado en el suelo. |
+| Arrange tiles | Colocar baldosas | Colocar azulejos | Poner piezas en fila | `pal_arrange_tiles` | nova | Azulejos de colores colocados en fila ordenadamente. |
 | arrive | chegar | llegar | — | `pal_arrive` | composta | Llegando por fin a la meta o estación. |
 | As if the light were a secret! | Coma se a luz fose un segredo! | ¡Como si la luz fuera un secreto! | — | `pal_as_if_the_light_were_a_secret` | composta | Luz guardada en secreto dentro de una caja. |
+| Ask for | Pedir | Pedir | Extender la mano pidiendo | `pal_ask_for` | nova | Niño extendiendo la palma hacia delante para pedir la pelota. |
 | Astronaut | Astronauta | Astronauta | Caminar despacio como sin gravedad | `pal_astronaut` | banco | Astronauta con casco espacial. |
 | At bath time, the box stops. | Á hora do baño, a caixa para. | A la hora del baño, la caja se para. | — | `pal_at_bath_time_the_box_stops` | composta | Bañera y caja detenida junto a la señal de parar. |
 | At night, the ball sleeps in the box. | Á noite, a pelota dorme na caixa. | Por la noche, la pelota duerme en la caja. | — | `pal_at_night_the_ball_sleeps_in_the_box` | composta | De noche bajo la luna, la pelota duerme guardada en la caja. |
 | Audience | Público | Público | Sentarse y mirar al escenario | `pal_audience` | nova | Niños sentados como público mirando el escenario. |
 | Aunt | Tía | Tía | Señalar la foto de la tía | `pal_aunt` | nova | Retrato enmarcado de una tía sonriente señalado con el dedo índice. |
 | Autumn walk | Paseo de outono | Paseo de otoño | Pasear con el bebé entre hojas | `pal_autumn_walk` | composta | Paseo otoñal acunando al bebé entre hojas caídas. |
+| Autumn | Outono | Otoño | Dejar caer hojas imaginarias desde arriba | `pal_autumn` | nova | Árbol otoñal con hojas naranjas, rojas y doradas cayendo al suelo. |
 | Autumn-coloured | Da cor do outono | Color otoño | Señalar hojas y castañas | `pal_autumn_coloured` | nova | Hojas naranjas, rojas y doradas junto a una castaña en colores cálidos de otoño. |
 | Awake | Esperto, esperta | Despierto, despierta | Abrir mucho los ojos y mirar alrededor | `pal_awake` | nova | Niño bien despierto en la cama por la mañana con los ojos muy abiertos. |
 | Baa | Balar | Balar | Hacer «beee» como un cordero | `pal_baa` | composta | Oveja/cordero balando en el prado. |
@@ -66,16 +85,23 @@ Con lámina: 2718. **Sin lámina todavía: 1660** (las cuenta y las nombra `pyth
 | Baby spoon | Culleriña | Cucharita | Acercar la cucharita a la boca | `pal_baby_spoon` | nova | Cucharita infantil de punta redondeada y suave sobre la mesa. |
 | Baby | Bebé | Bebé | Acunar un bebé imaginario en los brazos | `pal_baby` | banco | Bebé en primer plano; corresponde al sustantivo y cuidado del bebé. |
 | Back and forth | Adiante e atrás | Adelante y atrás | Mover al bebé adelante y atrás | `pal_back_and_forth` | nova | Cuna balancín meciendo suavemente al bebé adelante y atrás. |
+| Back in the box | Outra vez na caixa | Otra vez en la caja | Meter el juguete en la caja | `pal_back_in_the_box` | nova | Pelota bajando con flecha para guardarse dentro de la caja. |
 | Back teeth | Moas | Muelas | Señalar las muelas | `pal_back_teeth` | nova | Boca abierta señalando las muelas anchas situadas al fondo. |
+| Back to front | Ao revés | Al revés | Poner el gorro al revés riendo | `pal_back_to_front` | nova | Niño con la gorra puesta al revés, con la visera hacia atrás. |
 | Back | Costas | Espalda | Tocarse la espalda con las dos manos por detrás | `pal_back` | nova | Niño visto de espaldas llevando ambas manos hacia su espalda. |
 | Backpack | Mochila | Mochila | Ponerse una mochila imaginaria a la espalda | `pal_backpack` | banco | Mochila escolar de frente con asas y bolsillo, coincidencia directa. |
 | Backwards | De costas | Hacia atrás | Dar dos pasos hacia atrás | `pal_backwards` | nova | Niño mirando al frente mientras camina pasos hacia atrás. |
+| Badge | Insignia | Insignia | Poner una insignia en el pecho | `pal_badge` | nova | Insignia dorada con estrella y cintas prendida en el pecho. |
+| Bagpipes | Gaita | Gaita | Apretar el fuelle de una gaita imaginaria bajo el brazo | `pal_bagpipes` | nova | Gaita con saco a cuadros y tres punteros sonoros. |
 | Baker | Panadeiro | Panadero | Amasar pan en el aire | `pal_baker` | composta | Panadero con gorro blanco junto a hogaza de pan recién horneada. |
 | Bakery | Panadaría | Panadería | Oler el pan caliente | `pal_bakery` | composta | Pan y cruasán recién horneados echando aroma tibio. |
 | Balance a plate | Equilibrar o prato | Equilibrar el plato | Repartir colores en el plato | `pal_balance_a_plate` | composta | Niño equilibrando un plato plano sobre la palma de la mano. |
+| Balance arms | Equilibrar os brazos | Equilibrar los brazos | Poner los brazos a la misma altura | `pal_balance_arms` | nova | Niño manteniendo ambos brazos extendidos perfectamente horizontales. |
 | Balance beam | Barra de equilibrio | Barra de equilibrio | Caminar por la barra con los brazos abiertos | `pal_balance_beam` | nova | Barra horizontal de equilibrio apoyada sobre dos soportes. |
+| Balance on top | Equilibrar enriba | Equilibrar encima | Poner la pirámide encima del cubo | `pal_balance_on_top` | nova | Pirámide amarilla equilibrada con precisión encima de un cubo azul. |
 | Balance scale | Balanza de pratos | Balanza de platos | Poner los brazos como platos | `pal_balance_scale` | banco | Balanza clásica de dos platillos. |
 | Balance | Manter o equilibrio | Mantener el equilibrio | Mantenerse en un pie con los brazos abiertos y la mano de una persona adulta cerca | `pal_balance` | composta | Niño manteniendo el equilibrio sobre una línea o viga. |
+| Balanced scale | Balanza equilibrada | Balanza equilibrada | Quedarse con los brazos iguales | `pal_balanced_scale` | nova | Balanza completamente horizontal con pesos idénticos en ambos platillos. |
 | Balanced | Equilibrado | Equilibrado | Quedarse quieto en un pie | `pal_balanced` | nova | Niño equilibrado sobre un solo pie con los brazos en cruz. |
 | Ball pit | Piscina de bólas | Piscina de bolas | Meter las manos en las bolas | `pal_ball_pit` | nova | Piscina infantil llena de bolas de colores con niño dentro. |
 | Ball run | Circuíto de bólas | Circuito de bolas | Seguir la bola con el dedo | `pal_ball_run` | nova | Circuito en zigzag con rampa y bola bajando por él. |
@@ -90,44 +116,64 @@ Con lámina: 2718. **Sin lámina todavía: 1660** (las cuenta y las nombra `pyth
 | Bang | Bater | Golpear | Golpear las piernas con las palmas: pum, pum | `pal_bang` | nova | Niño golpeando con las palmas las piernas haciendo pum, pum. |
 | Barefoot | Descalzo, descalza | Descalzo, descalza | Mover los dedos de los pies descalzos | `pal_barefoot` | nova | Pies descalzos sobre la hierba verde moviendo libremente los dedos. |
 | Bark | Ladrar | Ladrar | Abrir y cerrar la boca como un perro que ladra | `pal_bark` | nova | Perro abriendo el hocico y ladrando con ondas de sonido hacia delante. |
+| Barn | Corte | Establo | Hacer un tejado con las manos | `pal_barn` | nova | Establo rojo de tejado picudo con puerta blanca cruzada en aspa. |
+| Base | Base | Base | Poner las piezas grandes abajo | `pal_base` | nova | Bloque ancho en la parte inferior destacando la base de la torre. |
 | Basket | Cesto | Cesta | Hacer una cesta con los brazos delante del cuerpo | `pal_pal_basket` | banco | Cesta tejida vacía. |
+| Bath foam | Escuma de baño | Espuma de baño | Posar espuma en la mano | `pal_bath_foam` | nova | Bañera llena de espuma esponjosa blanca y pompas arriba. |
 | Bath time! | Hora do baño! | ¡Hora del baño! | Enseñar la bañera | `pal_bath_time` | composta | Bañera llena con pompas lista para la hora del baño. |
 | Bath towel | Toalla de baño | Toalla de baño | Envolver al bebé en la toalla | `pal_bath_towel` | composta | Toalla suave envolviendo al bebé tras el baño. |
 | Bath toy | Xoguete de baño | Juguete de baño | Flotar un juguete en el agua | `pal_bath_toy` | composta | Patito y barquito flotando en el agua como juguetes de baño. |
 | Bath | Baño | Baño | Sentarse en el suelo y mover las manos como en el agua | `pal_bath` | composta | Bañera llena con pompas de baño. |
 | Be a little seed | Sé unha semente pequena | Sé una semillita | Encogerse en el suelo como una semilla | `pal_be_a_little_seed` | composta | Semilla pequeña en la tierra y niño encogido en el suelo como ella. |
+| Be gentle with bugs | Coidado cos bechos | Cuidado con los bichos | Posar la mano muy despacio | `pal_be_gentle_with_bugs` | nova | Mano posándose suavemente junto a una mariquita sobre una hoja. |
+| Beach bag | Bolsa de praia | Bolsa de playa | Meter tesoros en la bolsa | `pal_beach_bag` | nova | Bolsa de playa a rayas azules y blancas con toalla asomando. |
 | Beach ball game | Xogo de pelota | Juego de pelota | Pasar la pelota a un amigo | `pal_beach_ball_game` | composta | Dos niños pasándose la pelota de playa por el aire. |
 | Beach ball | Pelota de praia | Pelota de playa | Rodar la pelota grande | `pal_beach_ball` | nova | Pelota grande de playa dividida en gajos de colores vivos. |
 | Beach clean-up | Limpeza da praia | Limpieza de la playa | Agacharse a recoger | `pal_beach_clean_up` | composta | Niño agachado recogiendo desperdicios en la playa hacia la papelera. |
+| Beach spade | Pa de praia | Pala de playa | Cavar con la pala | `pal_beach_spade` | nova | Pala infantil azul y roja clavada en la arena de la playa. |
 | Beach towel | Toalla de praia | Toalla de playa | Extender la toalla en la arena | `pal_beach_towel` | composta | Toalla de colores extendida sobre la arena bajo el sol. |
 | Beach | Praia | Playa | Extender una toalla imaginaria en el suelo | `pal_beach` | banco | Playa de arena con sombrilla junto al mar. |
 | Beachcomb | Buscar tesouros | Buscar tesoros | Caminar mirando el suelo | `pal_beachcomb` | composta | Niño caminando por la arena buscando conchas y tesoros del mar. |
+| Bead | Conta | Cuenta | Ensartar una cuenta imaginaria | `pal_bead` | nova | Cuentas de madera de colores ensartadas en un cordón. |
 | Beak | Bico | Pico | Juntar los dedos como un pico | `pal_beak` | nova | Pájaro de perfil destacando claramente su pico naranja afilado. |
 | Beam | Sorrir de orella a orella | Sonreír de oreja a oreja | Sonreír muy grande al bebé | `vocab_66` | reutilizada | Sonrisa grande y alegre del set propio. |
 | Bean | Feixón | Judía | Enterrar una judía en la maceta | `pal_bean` | banco | Judías marrones en primer plano. |
 | Beanbag balance | Saquiño na cabeza | Saquito en la cabeza | Caminar con el saquito en la cabeza | `pal_beanbag_balance` | nova | Niño caminando equilibrando un saquito rojo sobre la cabeza. |
+| Beanbag | Pufe | Puf | Hundir al bebé en el puf | `pal_beanbag` | nova | Puf morado mullido con asiento hundido para recostarse. |
 | Beans | Fabas | Alubias | Contar alubias | `pal_beans` | banco | Alubias marrones agrupadas. |
 | Bear | Oso | Oso | Caminar pesado a cuatro patas | `pal_bear` | banco | Oso pardo de frente, coincidencia directa. |
 | Beat your chest | Bater no peito | Golpear el pecho | Golpear el pecho como un gorila | `pal_beat_your_chest` | composta | Gorila fuerte y niño golpeándose el pecho suavemente como él. |
 | Beat | Compás | Compás | Dar palmas al compás | `pal_beat` | composta | Metrónomo marcando el compás junto a las palmas. |
 | Bed | Cama | Cama | Juntar las manos bajo la mejilla como una cama | `pal_bed` | banco | Cama infantil con almohada y manta. |
+| Bedtime routine | Rutina de noite | Rutina de noche | Hacer los gestos de la noche en orden | `pal_bedtime_routine` | nova | Tres pasos de noche en orden: cepillo de dientes, cuento y cama. |
 | Bedtime story | Conto de noite | Cuento para dormir | Abrir un libro en el regazo | `pal_bedtime_story` | nova | Cuento ilustrado abierto bajo la noche estrellada a la hora de dormir. |
 | Bee | Abella | Abeja | Mover los brazos pegados al cuerpo muy rápido | `pal_bee` | banco | Abeja con rayas y alas, coincidencia directa. |
+| Beep beep, nose! | Pi pi, nariz! | ¡Pi pi, nariz! | Apretar la nariz haciendo «pi pi» | `pal_beep_beep_nose` | nova | Cara sonriente con dedo apretando suavemente la nariz divertida. |
 | Beep | Pitar | Pitar | Tocar un claxon imaginario con la palma | `pal_beep` | composta | Claxon rojo pulsado junto al autobús emitiendo pitido sonoro. |
+| Beep, beep! | Pi, pi! | ¡Pi, pi! | Apretar un claxon imaginario dos veces | `pal_beep_beep` | nova | Volante de coche con bocina roja central y ondas de sonido. |
+| Beep, beep, bus! | Pi, pi, autobús! | ¡Pi, pi, autobús! | Pulsar una bocina imaginaria | `pal_beep_beep_bus` | nova | Autobús escolar amarillo tocando la bocina con ondas delante. |
+| Bees build hexagons because they fit together | As abellas fan hexágonos porque encaixan | Las abejas hacen hexágonos porque encajan | Juntar las manos en hexágono | `pal_bees_build_hexagons_because_they_fit_together` | nova | Abeja junto a tres hexágonos de panal que encajan sin huecos. |
 | Beetle | Escaravello | Escarabajo | Caminar con los dedos por la pierna | `pal_beetle` | banco | Escarabajo de perfil con patas. |
 | Before and after | Antes e despois | Antes y después | Señalar el pañal sucio y luego el limpio | `pal_before_and_after` | nova | Comparación visual de una bota manchada de barro antes pasando con flecha a limpia después. |
 | Beginning | Comezo | Comienzo | Levantar un dedo | `pal_beginning` | composta | Punto de partida e inicio de un camino o actividad. |
 | Behind my hands | Detrás das miñas mans | Detrás de mis manos | Esconderse detrás de las manos | `pal_behind_my_hands` | nova | Niño escondiendo la cara detrás de sus dos manos. |
 | Behind the clouds | Detrás das nubes | Detrás de las nubes | Esconderse detrás de los brazos y asomarse de nuevo | `pal_behind_the_clouds` | composta | Sol escondido asomándose detrás de las nubes. |
 | Behind the tree | Detrás da árbore | Detrás del árbol | Esconderse detrás de una compañera que hace de árbol | `pal_behind_the_tree` | composta | Niño asomándose escondido detrás del tronco de un árbol. |
+| Bell button | Botón de parada | Botón de parada | Pulsar el botón de parada | `pal_bell_button` | nova | Botón rojo de parada en barra amarilla con dedo pulsándolo. |
 | Bell | Campá | Campana | Mover el puño de un lado a otro como una campana | `pal_bell` | banco | Campana dorada, coincidencia directa con el timbre o campana. |
 | Belly button | Embigo | Ombligo | Buscarse el ombligo con un dedo | `pal_belly_button` | nova | Camiseta subida dejando visible el ombligo en la barriga señalado. |
 | Belly slide | Esvarar de barriga | Deslizarse de barriga | Tumbarse de barriga y deslizarse | `pal_belly_slide` | nova | Niño tumbado de barriga deslizándose por la cuesta nevada. |
+| Belly | Barriga | Barriga | Hacer círculos en la barriga | `pal_belly` | nova | Niño destacando la barriga redondeada al rodearla. |
 | Below | Por debaixo | Por debajo | Señalar debajo de la mesa | `pal_below` | nova | Pelota colocada por debajo de la mesa con flecha señalando hacia abajo. |
 | Bench | Banco | Banco | Sentarse en un banco imaginario y descansar | `pal_bench` | banco | Banco de madera con respaldo para sentarse. |
 | Bend in the wind | Dobrarse co vento | Doblarse con el viento | Inclinarse de un lado a otro | `pal_bend_in_the_wind` | composta | Niño inclinándose de lado igual que los árboles doblados por el viento. |
 | Bend knees | Dobrar os xeonllos | Doblar las rodillas | Agacharse doblando las rodillas | `pal_bend_knees` | composta | Niño flexionando ambas rodillas hacia abajo. |
+| Bend | Dobrar | Flexionar | Flexionar las rodillas y bajar un poco | `pal_bend` | nova | Niño flexionando ambas rodillas bajando hacia el suelo. |
+| Bendy | Flexible | Flexible | Doblarse hacia adelante | `pal_bendy` | nova | Barra verde muy flexible doblada en forma de arco U. |
+| Berry | Baga | Baya | Coger una baya imaginaria | `pal_berry` | nova | Ramita con bayas rojas y moradas brillantes colgando. |
+| Beside | Ao lado | Al lado | Ponerse al lado de un amigo | `pal_beside` | nova | Dos amigos de pie colocados juntos lado a lado. |
 | Between your fingers too! | Tamén entre os dedos! | ¡También entre los dedos! | Frotar entre los dedos | `pal_between_your_fingers_too` | nova | Dos manos entrelazadas con espuma limpiando entre los dedos. |
+| Between | Entre medias | En medio | Ponerse entre dos amigos | `pal_between` | nova | Tres niños en fila con el del medio señalado entre los dos. |
 | Bib | Babeiro | Babero | Atar el babero al cuello despacio | `pal_bib` | nova | Babero de tela con abertura para el cuello. |
 | Big bubble | Burbulla grande | Burbuja grande | Abrir los brazos como una burbuja | `pal_big_bubble` | composta | Una burbuja muy grande y brillante ocupando el centro. |
 | Big drum | Bombo | Bombo | Golpear el bombo al marchar | `pal_big_drum` | composta | Bombo sonando al paso de marcha del niño. |
@@ -139,28 +185,40 @@ Con lámina: 2718. **Sin lámina todavía: 1660** (las cuenta y las nombra `pyth
 | Big smile | Sorriso grande | Sonrisa grande | Sonreír enseñando los dientes | `pal_big_smile` | nova | Sonrisa enorme enseñando todos los dientes blancos con alegría. |
 | Big steps and little steps | Pasos grandes e pequenos | Pasos grandes y pequeños | Alternar pasos largos y cortos | `pal_big_steps_and_little_steps` | nova | Niño dando un paso muy largo frente a otro dando pasos cortos. |
 | Big toe | Dedo gordo | Dedo gordo | Mover el dedo gordo del pie | `pal_big_toe` | nova | Pie resaltando en rojo el dedo gordo mientras se mueve de lado. |
+| Big waves! | Ondas grandes! | ¡Olas grandes! | Subir los brazos muy alto y bajarlos de golpe | `pal_big_waves` | nova | Olas altas del mar crestadas de espuma blanca subiendo alto. |
 | Big wheel | Noria | Noria | Girar los brazos como una noria | `pal_big_wheel` | banco | Noria de feria con radios girando. |
 | Big! | grande | grande | Estirar los brazos haciendo un círculo grande con el cuerpo. | `pal_big` | composta | Niño abriendo mucho los brazos hacia fuera para mostrar grande. |
 | Big, bigger, biggest | Grande, máis grande, o máis grande | Grande, más grande, el más grande | Abrir los brazos en tres pasos | `pal_big_bigger_biggest` | nova | Tres formas creciendo progresivamente: grande, más grande y el más grande. |
 | Bigger and bigger | Cada vez máis grande | Cada vez más grande | Abrir las manos cada vez más | `pal_bigger_and_bigger` | nova | Serie progresiva de cuatro globos creciendo cada vez más. |
+| Bigger now | Máis grande agora | Más grande ahora | Medir al bebé con la mano | `pal_bigger_now` | nova | Comparación de un brote pequeño creciendo a una planta mucho mayor. |
 | Bigger than an ant, smaller than a mouse | Maior ca unha formiga, menor ca un rato | Más grande que una hormiga, más pequeño que un ratón | Abrir los dedos poco y luego más | `pal_bigger_than_an_ant_smaller_than_a_mouse` | nova | Escala visual mostrando algo mayor que una hormiga y menor que un ratón. |
 | Bigger | Máis grande | Más grande | Abrir más los brazos | `pal_bigger` | nova | Círculo pequeño pasando por flecha a otro círculo notablemente más grande. |
+| Bike ride | Paseo en bici | Paseo en bici | Pedalear en el aire | `pal_bike_ride` | nova | Niño paseando en bicicleta roja por el camino verde. |
 | Bike | Bicicleta | Bici | Sujetar un manillar imaginario y tocar el timbre | `pal_bike` | banco | Bicicleta infantil con manillar y dos ruedas. |
+| Bin | Papeleira | Papelera | Tirar el papel a la papelera | `pal_bin` | nova | Papelera verde con bola de papel entrando arriba. |
+| Binoculars | Prismáticos | Prismáticos | Hacer prismáticos con las manos | `pal_binoculars` | nova | Prismáticos azules con lentes brillantes para mirar lejos. |
 | Bird bath | Bebedoiro de paxaros | Bebedero de pájaros | Mojar los dedos como un pájaro | `pal_bird_bath` | composta | Bebedero de piedra lleno de agua en el jardín con un pájaro refrescándose. |
+| Bird feeder | Comedeiro de paxaros | Comedero de pájaros | Llenar el comedero con semillas | `pal_bird_feeder` | nova | Comedero colgante de madera con semillas y un pajarito comiendo. |
 | Bird song | Canto dos paxaros | Canto de los pájaros | Escuchar con la mano en la oreja | `pal_bird_song` | composta | Pájaro cantando notas musicales desde la rama. |
 | Bird | Paxaro | Pájaro | Abrir y cerrar los brazos despacio como alas | `pal_bird` | banco | Pájaro azul de perfil. |
+| Birdhouse | Casiña de paxaros | Casita de pájaros | Hacer una casita con las manos | `pal_birdhouse` | nova | Casita de madera con tejado verde y agujero redondo para pájaros. |
+| Birdseed | Alpiste | Alpiste | Echar alpiste en la mano | `pal_birdseed` | nova | Montoncito de granos dorados de alpiste en un cuenco abierto. |
 | Birthday | Aniversario | Cumpleaños | Soplar velas imaginarias | `pal_birthday` | banco | Tarta de cumpleaños con velas encendidas. |
 | Biscuit | Galleta | Galleta | Partir una galleta en dos | `pal_biscuit` | banco | Galleta redonda con pepitas. |
 | Bite! | trabar, dar unha trabada | morder, dar un mordisco | Hacer como que se da un mordisco grande, abriendo y cerrando la boca y chocando los dientes. | `pal_bite` | composta | Manzana con marca de mordisco. |
 | Black | Negro, negra | Negro, negra | Señalar algo negro en el aula | `pal_black` | nova | Muestra de color negro puro y silueta de gato negro señalados con el dedo. |
 | Blackbird | Merlo | Mirlo | Silbar como un mirlo | `pal_blackbird` | banco | Mirlo negro con pico naranja. |
+| Blade of grass | Folla de herba | Brizna de hierba | Coger una brizna de hierba | `pal_blade_of_grass` | nova | Una única brizna alta y esbelta de hierba verde con gotita. |
 | Blanket and a book | Manta e un libro | Manta y un libro | Taparse y abrir un libro | `pal_blanket_and_a_book` | nova | Manta abrigada doblada junto a un cuento abierto. |
 | Blanket fort | Cabana de mantas | Cabaña de mantas | Hacer una cabaña con una manta | `pal_blanket_fort` | nova | Cabaña triangular hecha con manta sobre el suelo. |
+| Blanket | Manta | Manta | Taparse con una manta imaginaria hasta la barbilla | `pal_blanket` | nova | Manta cálida a cuadros doblada suavemente para taparse. |
 | Blast off | Despegar | Despegar | Saltar con los brazos arriba | `pal_blast_off` | composta | Cohete despegando hacia el espacio y niño saltando con los brazos arriba. |
 | blend | mesturar | mezclar | — | `pal_blend` | composta | Dos colores superponiéndose y mezclándose en verde. |
 | Blindfold | Venda | Venda | Taparse los ojos con las manos | `pal_blindfold` | nova | Rostro infantil con una venda de tela morada cubriendo los ojos. |
 | Blink | Pestanexar | Parpadear | Cerrar y abrir los ojos muy rápido | `pal_blink` | nova | Dos ojos: uno abierto y el otro cerrándose rápido al parpadear. |
+| Block the water | Parar a auga | Parar el agua | Poner las manos delante | `pal_block_the_water` | nova | Barrera de madera conteniendo el agua azul para frenar su paso. |
 | block | bloque | bloque | — | `pal_block` | nova | Bloque de construcción rojo de madera sobre mesa. |
+| Blocks | Bloques | Bloques | Poner una mano encima de la otra como bloques | `pal_blocks` | nova | Bloques de madera de colores vivos apilados en pirámide. |
 | Bloom | Florecer | Florecer | Abrir los brazos de golpe como una flor que se abre | `pal_bloom` | composta | Flor abierta y niño desplegando los brazos hacia arriba como pétalos. |
 | Bloom! Big bright flowers! | Florece! Flores grandes e brillantes! | ¡Florece! ¡Flores grandes y brillantes! | Erguirse milímetro a milímetro hasta las puntas de los pies con los brazos en abanico. | `pal_bloom_big_bright_flowers` | composta | Flores grandes y vistosas abriéndose al sol. |
 | Blooming | En flor | En flor | Abrir los brazos grandes | `pal_blooming` | composta | Flores abiertas coloridas y niño abriendo grande los brazos en el prado. |
@@ -175,9 +233,11 @@ Con lámina: 2718. **Sin lámina todavía: 1660** (las cuenta y las nombra `pyth
 | Blow seeds | Soprar sementes | Soplar semillas | Soplar un diente de león | `pal_blow_seeds` | composta | Niño soplando semillas blancas ligeras por el aire. |
 | Blow the boat | Soprar o barco | Soplar el barco | Soplar fuerte | `pal_blow_the_boat` | composta | Niño soplando directo hacia la vela del barquito sobre el agua. |
 | Blow to cool | Soprar para arrefriar | Soplar para enfriar | Soplar la comida caliente | `pal_blow_to_cool` | composta | Corriente suave de aire enfriando un plato de comida humeante. |
+| Blow your nose | Soarse | Sonarse | Sonarse la nariz con un pañuelo | `pal_blow_your_nose` | nova | Niño sujetando un pañuelo blanco limpio sobre la nariz para sonarse. |
 | Blow | Soprar | Soplar | Soplar fuerte una hoja imaginaria | `pal_blow` | composta | Niño soplando chorro de aire hacia delante. |
 | Blowhole | Espiráculo | Espiráculo | Soplar hacia arriba | `pal_blowhole` | composta | Ballena soltando agua por el espiráculo en la parte superior. |
 | Blub, blub, blub | Glu, glu, glu | Glu, glu, glu | Abrir y cerrar la boca como un pez | `pal_blub_blub_blub` | nova | Pez naranja abriendo la boca bajo el agua y soltando tres burbujas hacia arriba. |
+| Blue and yellow make green | Azul e amarelo fan verde | Azul y amarillo hacen verde | Juntar dos manos | `pal_blue_and_yellow_make_green` | nova | Mancha azul y mancha amarilla superpuestas formando verde en el centro. |
 | Blue and yellow | Azul e amarelo | Azul y amarillo | Enseñar un objeto azul y otro amarillo | `pal_blue_and_yellow` | nova | Un bloque azul y una esfera amarilla mostrados uno junto al otro. |
 | Blue cup | Vaso azul | Vaso azul | Enseñar el vaso azul | `pal_blue_cup` | nova | Vaso de color azul sobre la mesa. |
 | Blue | Azul | Azul | Señalar algo azul en el aula | `pal_blue` | nova | Mancha/círculo azul intenso. |
@@ -190,9 +250,14 @@ Con lámina: 2718. **Sin lámina todavía: 1660** (las cuenta y las nombra `pyth
 | Boat trip | Viaxe en barco | Viaje en barco | Balancearse como en el barco | `pal_boat_trip` | composta | Barco de vela balanceándose sobre las olas en viaje por el mar. |
 | Boat | barco | barco | — | `barco` | reutilizada | Barco de la ría del set propio. |
 | Boats on the water | Barcos na auga | Barcos en el agua | Mover las manos como barcos | `pal_boats_on_the_water` | nova | Dos barquitos de vela balanceándose sobre las olas del agua. |
+| Bob on the water | Flotar subindo e baixando | Flotar subiendo y bajando | Subir y bajar despacio | `pal_bob_on_the_water` | nova | Corcho rojo y blanco flotando subiendo y bajando sobre las olas. |
+| Bob | Subir e baixar | Subir y bajar | Subir y bajar al bebé suavemente | `pal_bob` | nova | Bebé subiendo y bajando suavemente con flechas verticales. |
 | Body | Corpo | Cuerpo | Tocar todo el cuerpo de arriba abajo | `pal_body` | nova | Cuerpo humano completo de pie mostrando cabeza, tronco, brazos y piernas. |
+| Boil | Cocer | Hervir | Hacer burbujas con las manos | `pal_boil` | nova | Olla al fuego hirviendo con burbujas subiendo por arriba. |
 | Bones | Ósos | Huesos | Tocar los huesos del brazo | `pal_bones` | composta | Antebrazo mostrando el hueso blanco en su interior como radiografía. |
+| Bonfire smoke | Fume da fogueira | Humo de la hoguera | Subir las manos en espiral | `pal_bonfire_smoke` | nova | Hoguera nocturna encendida con espiral gris de humo ascendiendo. |
 | Bonfire | Fogueira | Hoguera | Acercar las manos a una hoguera imaginaria sin tocarla | `pal_bonfire` | composta | Hoguera cálida de troncos ardiendo con las manos acercándose al calor. |
+| Bonnet | Gorriño | Gorrito | Poner y quitar un gorrito ante el espejo | `pal_bonnet` | nova | Gorrito infantil de bebé con visera festoneada y cintas colgantes. |
 | Bony | Osudo | Huesudo | Tocar el tobillo | `pal_bony` | nova | Tobillo perfilado señalando con el dedo el hueso sobresaliente. |
 | Boo! | Bu! | ¡Bu! | Descubrir la cara de repente y sonreír | `pal_boo` | composta | Cara descubriendo el ojo de golpe para decir ¡bu! |
 | Book | Libro | Libro | Juntar las palmas y abrirlas como un libro | `pal_book` | composta | Manos abiertas juntándose y abriéndose como un libro. |
@@ -205,34 +270,47 @@ Con lámina: 2718. **Sin lámina todavía: 1660** (las cuenta y las nombra `pyth
 | Both sides | As dúas partes | Las dos partes | Señalar a uno y a otro | `pal_both_sides` | nova | Dos flechas simétricas señalando tanto el lado izquierdo como el derecho. |
 | Bottle | Botella | Botella | Sujetar una botella imaginaria con las dos manos | `pal_bottle` | nova | Dos manos sujetando firmemente una botella transparente. |
 | Bounce on knee | Brincar no xeonllo | Saltar en la rodilla | Hacer botar al bebé en la rodilla | `pal_bounce_on_knee` | composta | Adulto haciendo botar suavemente al bebé en la rodilla. |
+| Bounce up and down | Rebotar | Rebotar | Botar en el sitio | `pal_bounce_up_and_down` | nova | Niño rebotando arriba y abajo sobre colchoneta elástica. |
+| Bounce | Botar | Botar | Botar una pelota imaginaria con la mano | `pal_bounce` | nova | Pelota naranja botando en el suelo en trayectoria de V. |
 | Bow to the audience | Saudar ao público | Saludar al público | Inclinar el títere | `pal_bow_to_the_audience` | nova | Actor inclinándose en el escenario saludando al público. |
 | Bow | Facer unha reverencia | Hacer una reverencia | Inclinar el cuerpo hacia delante con una mano en el pecho | `pal_bow` | nova | Niño inclinando el tronco hacia delante haciendo una reverencia. |
 | Bowl | Cunca | Cuenco | Sostener un cuenco imaginario con las dos manos | `pal_bowl` | banco | Cuenco azul con cuchara. |
 | Box lid | Tapa da caixa | Tapa de la caja | Cerrar la tapa de la caja | `pal_box_lid` | nova | Caja de cartón con su tapa superior bajando para cerrarla. |
 | Box | caixa | caja | — | `pal_box` | banco | Caja de cartón cerrada. |
+| Bracken | Fento | Helecho | Extender la mano como un helecho | `pal_bracken` | nova | Fronda amplia de helecho verde simétrico en el prado. |
 | Brake | Frear | Frenar | Parar y echar el cuerpo atrás | `pal_brake` | nova | Frenando la bicicleta con el cuerpo echado atrás y marcas de frenada. |
 | Branch | Póla | Rama | Extender un brazo y mover los dedos como hojas | `pal_branch` | nova | Rama de árbol extendida con brotes de hojas verdes al viento. |
 | Brave and kind | Valente e amable | Valiente y amable | Poner el puño y luego la mano abierta | `pal_brave_and_kind` | composta | Escudo protector junto a corazón cálido: valiente y amable. |
+| Brave knight | Cabaleiro valente | Caballero valiente | Levantar el pecho | `pal_brave_knight` | nova | Yelmo plateado con pluma roja y escudo de caballero. |
 | Bread and cheese | Pan e queixo | Pan y queso | Juntar las dos manos como un bocadillo | `pal_bread_and_cheese` | composta | Rebanada de pan y cuña de queso servidas juntas en el plato. |
 | Bread | pan | pan | — | `pal_bread` | banco | Rebanada de pan tierno. |
 | Breath | Alento | Aliento | Echar el aliento en el cristal | `pal_breath` | nova | Vaho tibio del aliento empañando el cristal frío de la ventana. |
+| Breathe in, breathe out | Colle aire, bota aire | Coge aire, echa aire | Inflar y desinflar el pecho | `pal_breathe_in_breathe_out` | nova | Niño cogiendo aire por un lado y echando aire por el otro. |
+| Breathe | Respirar | Respirar | Llenar de aire la barriga y soltarlo despacio | `pal_breathe` | nova | Niño respirando serenamente con flujo suave de aire entrando y saliendo. |
+| Breathing buddy | Compañeiro de respiración | Compañero de respiración | Poner un peluche en la barriga | `pal_breathing_buddy` | nova | Niño tumbado con un osito peluche subiendo sobre su barriga al respirar. |
 | Breeze | Brisa | Brisa | Soplar suave en la cara del bebé | `pal_breeze` | composta | Brisa suave haciendo ondear las hojitas en el aire. |
+| Breezy evening | Tarde fresca | Tarde fresca | Abanicarse despacio | `pal_breezy_evening` | nova | Atardecer anaranjado con brisa fresca meciendo las hojas. |
 | Breezy | Con brisa | Con brisa | Mover suavemente los brazos como la brisa | `pal_breezy` | nova | Brisa suave haciendo ondear ligeramente una cometa celeste en el cielo. |
+| Brick house | Casa de ladrillo | Casa de ladrillo | Poner las manos firmes | `pal_brick_house` | nova | Casita sólida hecha de ladrillos rojos con puerta de madera. |
+| Bridge | Ponte | Puente | Hacer un puente con los cuerpos | `pal_bridge` | nova | Puente de piedra en arco tendido sobre el río azul. |
 | Bright orange | Laranxa vivo | Naranja vivo | Enseñar algo naranja | `pal_laranxa_vivo` | nova | Un niño enseña en alto una pelota de color naranja vivo: el gesto. |
 | Bright red | Vermello vivo | Rojo vivo | Señalar algo rojo vivo | `pal_bright_red` | nova | Círculo rojo muy vivo y brillante destacado y señalado con el dedo. |
 | bright | vivo, brillante | vivo, brillante | — | `pal_bright` | composta | Luz muy viva y brillante con destellos. |
 | Brightest star | A estrela máis brillante | La estrella más brillante | Señalar una estrella | `pal_brightest_star` | nova | Estrella mucho más grande y brillante entre otras pequeñas en el cielo nocturno. |
 | Brightest | O máis brillante | El más brillante | Señalar la luz más brillante | `pal_brightest` | composta | Sol deslumbrante con rayos largos sobre fondo oscuro: el más brillante. |
+| Bring | Traer | Traer | Traer un juguete a la alfombra | `pal_bring` | nova | Niño llevando un balón hacia la alfombra con flecha indicativa. |
 | Broccoli | Brócoli | Brócoli | Hacer un árbol con la mano | `pal_broccoli` | banco | Ramillete de brócoli verde. |
 | broken | roto | roto | — | `pal_broken` | nova | Pieza partida por la mitad mostrando rotura clara. |
 | Brother | Irmán | Hermano | Señalar al hermano y sonreír | `pal_brother` | nova | Hermano mayor señalado junto a su hermano menor en el prado. |
 | Brown | Marrón | Marrón | Señalar algo marrón en el aula | `pal_brown` | nova | Mancha/círculo marrón sólido. |
+| Browse | Follear | Hojear | Pasar hojas despacio | `pal_browse` | nova | Libro ilustrado abierto pasando lentamente una página hacia la izquierda. |
 | Brr, freezing hands! | Brr, mans xeadas! | ¡Brr, manos heladas! | Soplar en las manos | `pal_brr_freezing_hands` | composta | Manos heladas entre copos recibiendo soplido tibio para calentarlas. |
 | Brr, so cold! | Brr, que frío! | ¡Brr, qué frío! | Temblar y frotar los brazos | `pal_brr_so_cold` | composta | Cara temblando de frío rodeada de copos de nieve. |
 | Brr, the Arctic! | Brr, o Ártico! | ¡Brr, el Ártico! | Temblar y sonreír | `pal_brr_the_arctic` | composta | Oso polar en un glaciar nevado del Ártico entre copos de nieve. |
 | Brrr, it's cold! | Brrr, que frío! | ¡Brrr, qué frío! | Encoger los hombros y temblar diciendo «brrr» | `pal_brrr_it_s_cold` | composta | Cara tiritando de frío rodeada de copos de nieve. |
 | Brush head | Cabeza do cepillo | Cabeza del cepillo | Enseñar la cabeza del cepillo | `pal_brush_head` | nova | Detalle ampliado de la cabeza y cerdas de un cepillo de dientes. |
 | Brush up and down | Cepillar arriba e abaixo | Cepillar arriba y abajo | Mover el cepillo arriba y abajo | `pal_brush_up_and_down` | composta | Cepillo moviéndose arriba y abajo para limpiar. |
+| Brush your teeth | Lava os dentes | Lávate los dientes | Cepillarse los dientes con un cepillo imaginario | `pal_brush_your_teeth` | nova | Cepillo azul con espuma limpiando una fila de dientes blancos. |
 | Brush | Pincel | Pincel | Mover un pincel imaginario de arriba abajo | `pal_brush` | composta | Pincel de pintura limpio en primer plano. |
 | Brush, brush, brush | Cepilla, cepilla, cepilla | Cepilla, cepilla, cepilla | Mover el cepillo en el aire | `pal_brush_brush_brush` | nova | Cepillo de madera barriendo de un lado a otro con trazos de movimiento. |
 | Bubble machine | Máquina de burbullas | Máquina de burbujas | Señalar las burbujas que salen | `pal_bubble_machine` | nova | Máquina azul soplando un chorro continuo de pompas de jabón. |
@@ -246,20 +324,35 @@ Con lámina: 2718. **Sin lámina todavía: 1660** (las cuenta y las nombra `pyth
 | Bubbly | Con burbullas | Burbujeante | Abrir y cerrar los dedos como burbujas que estallan | `pal_bubbly` | nova | Recipiente burbujeante rebosando pompas y burbujas en el aire. |
 | Bucket of water | Balde de auga | Cubo de agua | Llevar el cubo con cuidado | `pal_bucket_of_water` | composta | Cubo lleno hasta arriba con agua fresca para transportar con cuidado. |
 | Bucket | Balde | Cubo | Llevar un cubo imaginario por el asa | `pal_bucket` | banco | Cubo azul con asa. |
+| Buckle up | Poñer o cinto | Abrocharse el cinturón | Cruzar el cinturón en el pecho | `pal_buckle_up` | nova | Cinturón de seguridad abrochándose con hebilla roja y metálica. |
 | Bud | Botón de flor | Capullo | Cerrar la mano como un capullo | `pal_bud` | nova | Capullo de flor cerrado a punto de abrirse en el tallo. |
 | Buddy bench | Banco dos amigos | Banco de los amigos | Sentarse y hacer sitio | `pal_buddy_bench` | composta | Dos amigos sentados juntos en el banco de la amistad. |
 | Bug hotel | Hotel de insectos | Hotel de insectos | Construir un hotel con ramas | `pal_bug_hotel` | composta | Casita de madera rellena de ramitas y tubos para refugio de insectos. |
 | Build a nest | Facer un niño | Hacer un nido | Entrelazar los dedos | `pal_build_a_nest` | composta | Pajarito construyendo su nido de ramitas. |
+| Build high | Construír alto | Construir alto | Poner bloques hasta arriba | `pal_build_high` | nova | Torre muy alta de bloques con gran flecha vertical hacia arriba. |
+| Build | Construír | Construir | Apilar bloques imaginarios cada vez más altos | `pal_build` | nova | Bloques apilándose unos sobre otros para construir una estructura. |
+| Builder | Albanel | Albañil | Poner ladrillos imaginarios | `pal_builder` | nova | Albañil con casco amarillo colocando ladrillos rojos. |
+| Bumpy ride | Viaxe con saltos | Viaje con baches | Botar en la silla | `pal_bumpy_ride` | nova | Cochecito dando saltos sobre un camino ondulado lleno de baches. |
 | Bumpy walnut | Noz rugosa | Nuez rugosa | Rodar una nuez entre las manos | `pal_bumpy_walnut` | composta | Nuez rugosa rodando entre flechas circulares. |
 | Bumpy | Rugoso, rugosa | Rugoso, rugosa | Tocarse el brazo con pequeños golpecitos | `pal_bumpy` | nova | Mano palpando una superficie claramente rugosa de bultos y ondas. |
+| Buoy | Boia | Boya | Subir y bajar como una boya | `pal_buoy` | nova | Boya marítima roja y blanca flotando sobre las olas del mar. |
+| Buoyant | Que flota | Que flota | Subir las manos despacio | `pal_buoyant` | nova | Pelota ligera flotando muy arriba sobre la superficie del agua. |
 | Burp | Arrotar | Eructar | Dar palmaditas en la espalda después de comer | `pal_burp` | composta | Palmaditas suaves en la espalda del bebé tras tomar su biberón. |
 | Burst | Rebentar | Reventar | Tocar una burbuja con el dedo | `pal_burst` | nova | Dedo tocando una pompa de jabón en el momento en que revienta. |
+| Bury | Enterrar | Enterrar | Taparse los pies con arena imaginaria | `pal_bury` | nova | Piernas con los pies enterrados bajo un montículo de arena dorada. |
 | Bus stop | Parada do autobús | Parada del autobús | Esperar de pie en la parada | `pal_bus_stop` | banco | Poste de parada de autobús. |
 | Bus | Autobús | Autobús | Sentarse en fila como en los asientos del autobús | `pal_bus` | banco | Autobús escolar amarillo con ruedas. |
+| Busy city | Cidade con vida | Ciudad con vida | Moverse rápido | `pal_busy_city` | banco | Ciudad con edificios iluminados y actividad. |
+| Busy harbour | Porto activo | Puerto activo | Moverse trabajando | `pal_busy_harbour` | nova | Puerto activo con grúa en el muelle y barcos entrando y saliendo. |
 | Busy port | Porto con traballo | Puerto con trabajo | Mover los brazos trabajando | `pal_busy_port` | nova | Puerto activo con grúa cargando contenedores sobre un barco mercante. |
 | Busy street | Rúa con xente | Calle con gente | Mirar a un lado y a otro | `pal_busy_street` | nova | Calle con tráfico de coches y peatones mirando a ambos lados. |
+| Buttercup | Botón de ouro | Botón de oro | Poner una flor amarilla en la barbilla | `pal_buttercup` | nova | Flor amarilla brillante botón de oro de cinco pétalos sobre su tallo. |
 | Butterfly print | Estampa de bolboreta | Estampa de mariposa | Pintar y doblar el papel | `pal_butterfly_print` | nova | Papel doblado abierto mostrando una mariposa simétrica estampada con pintura. |
 | Butterfly | Bolboreta | Mariposa | Enganchar los pulgares y mover las manos como alas | `pal_butterfly` | banco | Mariposa azul de alas simétricas. |
+| Button nose | Nariz de botón | Nariz de botón | Apretar la nariz como un botón | `pal_button_nose` | nova | Cara alegre destacando una naricita redonda como un botón. |
+| Button | Abotoar | Abrochar | Abrochar botones imaginarios en el pecho | `pal_button` | nova | Camisa azul con botones blancos de cuatro agujeros y ojal. |
+| Buy bread | Mercar pan | Comprar pan | Dar una moneda imaginaria | `pal_buy_bread` | nova | Moneda dorada ofrecida a cambio de una hogaza de pan recién hecho. |
+| Buzz | Zumbar | Zumbar | Hacer «bzzz» con los labios | `pal_buzz` | nova | Abeja volando en bucle dejando estela zumbante tras de sí. |
 | By bedtime, we will have seen every colour. | Á hora de durmir, teremos visto todas as cores. | A la hora de dormir, habremos visto todos los colores. | — | `pal_bedtime_seen_every_colour` | composta | Cama de dormir junto a arcoíris completo de colores. |
 | By Friday, the room will have turned red. | O venres, o cuarto xa estará vermello. | El viernes, la habitación se habrá vuelto roja. | — | `pal_friday_room_turned_red` | composta | Habitación teñida de rojo con calendario semanal. |
 | By the sea | Á beira do mar | A la orilla del mar | Sentarse juntos mirando el mar | `pal_by_the_sea` | composta | Niño sentado a la orilla del mar mirando las olas. |
@@ -268,29 +361,37 @@ Con lámina: 2718. **Sin lámina todavía: 1660** (las cuenta y las nombra `pyth
 | Bye-bye, boat! | Adeus, barco! | ¡Adiós, barco! | Saludar al barco | `pal_bye_bye_boat` | composta | Barco navegando y niño en la orilla diciendo adiós con la mano. |
 | Bye-bye, friends! | Adeus, amigos! | ¡Adiós, amigos! | Saludar a todos | `pal_bye_bye_friends` | nova | Niño despidiéndose agitando la mano mientras sus amigos se alejan. |
 | Bye-bye, nursery! | Adeus, escola! | ¡Adiós, escuela! | Saludar a la puerta de la escuela | `pal_bye_bye_nursery` | composta | Edificio de la escuela y mano saludando adiós. |
+| Cable car | Teleférico | Teleférico | Subir la mano despacio | `pal_cable_car` | banco | Cabina de teleférico subiendo por la montaña. |
 | Cake | Bolo | Tarta | Dibujar una tarta redonda y soplar las velas | `pal_cake` | nova | Tarta redonda con tres velas encendidas soplándose. |
 | Calendar | Calendario | Calendario | Pasar hojas de un calendario | `pal_calendar` | banco | Calendario de hojas mensuales. |
 | Calf | Cría | Cría | Acurrucarse junto a un amigo | `pal_calf` | composta | Vaca con cría tierna mientras dos amigos se acurrucan juntos. |
 | Call your friend: come and help us! | Chama ao teu amigo: ven axudarnos! | Llama a tu amigo: ¡ven a ayudarnos! | Gesto amplio de llamada e incorporación de un nuevo niño a la cuerda. | `pal_call_friend_help` | nova | Niño haciendo amplio gesto de llamada para que su amigo se acerque a ayudar. |
+| Calm down | Acougar | Calmarse | Respirar despacio con las manos en la barriga | `pal_calm_down` | nova | Niño sereno rodeado de halo suave bajando los hombros para calmarse. |
 | Calm jar | Bote da calma | Bote de la calma | Agitar y mirar cómo baja | `pal_calm_jar` | nova | Frasco transparente de la calma con agua azul y brillos reposando al fondo. |
 | Calm sea | Mar tranquilo | Mar tranquilo | Pasar la mano plana | `pal_calm_sea` | nova | Mar tranquilo con agua en calma bajo el sol. |
 | Calm sea: move the cloth very slowly | Mar en calma: move o pano moi amodo | Mar en calma: mueve la tela muy despacio | Ondulación lenta y sostenida de la tela azul con ambas manos. | `pal_calm_sea_cloth` | nova | Dos niños sujetando y ondulando suavemente una tela azul como mar en calma. |
 | Calm | Tranquilo, tranquila | Tranquilo, tranquila | Respirar hondo y dejar caer los hombros | `pal_calm` | nova | Niño con ojos cerrados, hombros caídos y respiración tranquila: calma. |
 | Calm-down corner | Recuncho da calma | Rincón de la calma | Sentarse en el rincón | `pal_calm_down_corner` | nova | Rincón de la calma con cojines suaves y niño respirando tranquilo. |
 | Campfire | Fogueira de campamento | Hoguera de campamento | Sentarse alrededor | `pal_campfire` | composta | Hoguera de campamento sobre troncos cruzados en la noche. |
+| Campsite | Cámping | Camping | Hacer una tienda con las manos | `pal_campsite` | nova | Tienda de campaña naranja acampada junto a pinos y fogata. |
 | Can I help you? | Podo axudarte? | ¿Puedo ayudarte? | — | `pal_can_i_help_you` | composta | Niño tendiendo la mano para ayudar a otro que sostiene una caja. |
 | Can the stone float? | Pode flotar a pedra? | ¿Puede flotar la piedra? | — | `pal_can_the_stone_float` | composta | Piedra en el agua preguntando si puede flotar. |
 | Can we trade? | Facemos un troco? | ¿Hacemos un cambio? | — | `pal_can_we_trade` | composta | Flechas cruzadas proponiendo intercambiar un objeto por otro. |
 | Can you feel your heart? | Sentes o corazón? | ¿Sientes el corazón? | Poner la mano en el pecho | `pal_can_you_feel_your_heart` | composta | Corazón latiendo y niño sintiendo su pecho con la mano. |
 | Can you swim? | Sabes nadar? | ¿Sabes nadar? | Nadar con los brazos y mirar a otra persona | `pal_can_you_swim` | nova | Niño nadando en el mar dando brazadas hacia delante. |
 | Candle | Vela | Vela | Soplar despacio una vela imaginaria | `pal_pal_candle` | banco | Vela encendida con llama amarilla. |
+| Cannon | Canón | Cañón | Hacer un tubo con los brazos | `pal_cannon` | nova | Cañón oscuro de rueda de madera apuntando hacia lo alto. |
 | Canopy | Copa das árbores | Copa de los árboles | Abrir los brazos por encima de la cabeza | `pal_canopy` | composta | Árbol frondoso y niño curvando los brazos por encima imitando su copa. |
 | Cape | Capa | Capa | Girar con la capa puesta | `pal_cape` | composta | Capa ondeando al girar dando vueltas. |
+| Captain | Capitán | Capitán | Ponerse delante del grupo | `pal_captain` | nova | Gorra blanca de capitán sobre un timón de madera de barco. |
+| Car | Coche | Coche | Hacer el ruido de un motor: brrrum | `pal_car` | banco | Coche rojo de perfil sobre el camino. |
 | Card making | Facer postais | Hacer postales | Doblar y pintar en el aire | `pal_card_making` | composta | Postal doblada decorada con una flor junto al pincel de pintar. |
 | Card | Postal | Postal | Entregar una postal | `pal_card` | composta | Postal o tarjeta escrita con sello en la esquina. |
 | Cardboard box | Caixa de cartón | Caja de cartón | Meter y sacar un juguete de la caja | `pal_cardboard_box` | composta | Caja de cartón junto a un peluche para meter y sacar. |
 | Cardigan | Chaqueta de punto | Rebeca | Abotonar la rebeca | `pal_cardigan` | composta | Rebeca abotonada de manga larga. |
 | Care for the sea | Coidar o mar | Cuidar el mar | Abrazar el aire | `pal_care_for_the_sea` | composta | Cuidar el mar abrazando y protegiendo la vida marina. |
+| Careful with nature | Coidadoso coa natureza | Cuidadoso con la naturaleza | Posar la mano suave | `pal_careful_with_nature` | nova | Dos manos ahuecadas cuidando con delicadeza un brote verde. |
+| Careful with the egg | Coidado co ovo | Cuidado con el huevo | Coger el huevo con mucho cuidado | `pal_careful_with_the_egg` | nova | Manos sosteniendo un huevo entero con mucho cuidado. |
 | careful | coidadoso | cuidadoso | — | `pal_careful` | composta | Niño llevando un vaso lleno con mucho cuidado. |
 | Careful, it's hot | Coidado, queima | Cuidado, quema | Soplar y abanicar la mano | `pal_careful_it_s_hot` | composta | Olla muy caliente con ondas de calor y mano apartándose mientras se sopla. |
 | Caress | Acariñar | Acariciar | Pasar la mano muy despacio por el brazo | `pal_caress` | composta | Mano abierta acariciando despacio. |
@@ -299,6 +400,7 @@ Con lámina: 2718. **Sin lámina todavía: 1660** (las cuenta y las nombra `pyth
 | Carnival Freeze! | Conxelados de Entroido! | ¡Congelados de Carnaval! | Congelar la postura del animal predilecto en silencio. | `pal_carnival_freeze` | composta | Fiesta de carnaval con niño quieto como estatua ante señal de parar. |
 | Carol singers | Cantores de panxoliñas | Cantantes de villancicos | Cantar en grupo | `pal_carol_singers` | nova | Tres niños abrigados cantando villancicos juntos bajo la farola nocturna. |
 | Carol | Panxoliña | Villancico | Cantar un villancico bajito | `pal_carol` | composta | Árbol de Navidad y notas musicales brillantes de un villancico. |
+| Carrot stick | Pau de cenoria | Palito de zanahoria | Hacer como que se mastica un palito de zanahoria | `pal_carrot_stick` | nova | Palitos frescos de zanahoria naranja servidos sobre plato blanco. |
 | Carrots and cucumbers | Cenorias e cogombros | Zanahorias y pepinos | Enseñar uno y luego el otro | `pal_carrots_and_cucumbers` | composta | Zanahoria naranja y pepino verde mostrados juntos sobre la mesa. |
 | Carry carefully | Levar con coidado | Llevar con cuidado | Llevar la bandeja despacio | `pal_carry_carefully` | nova | Niño caminando despacito llevando una bandeja con un vaso sin derramar. |
 | Carry | Levar | Llevar | Llevar una cesta imaginaria con el brazo doblado | `pal_carry` | composta | Niño llevando una cesta colgada en el brazo doblado. |
@@ -309,24 +411,31 @@ Con lámina: 2718. **Sin lámina todavía: 1660** (las cuenta y las nombra `pyth
 | Cat! | gato | gato | Ponerse a cuatro patas y arquear el lomo como un gato. | `pal_cat` | banco | Gato de cuerpo entero. |
 | Catch drops | Coller pingas | Coger gotas | Abrir la mano bajo la lluvia fina | `pal_catch_drops` | nova | Mano abierta hacia arriba recogiendo gotas finas de lluvia. |
 | Catch me! | Atrápame! | ¡Atrápame! | Alejarse despacio y dejarse atrapar | `pal_catch_me` | nova | Un niño corriendo delante y otro extendiendo los brazos para atraparlo. |
+| Catch the frisbee! | Colle o disco! | ¡Coge el disco! | Extender las manos | `pal_catch_the_frisbee` | nova | Niño estirando ambas manos para atrapar un disco rojo que vuela. |
 | Catch the snowflake | Atrapa a folerpa | Atrapa el copo | Estirar la mano y cerrarla suave sobre un copo | `pal_catch_the_snowflake` | nova | Manopla estirada esperando atrapar suavemente un copo de nieve que cae. |
 | Catch up | Alcanzar | Alcanzar | Correr detrás y tocar el hombro | `pal_catch_up` | nova | Niño corriendo detrás para alcanzar a su compañero. |
 | Catch | Atrapar | Atrapar | Cerrar las manos en el aire como si atrapáramos algo | `pal_catch` | nova | Ambas manos abiertas cerrándose en el aire para atrapar una pelota. |
 | Caterpillar | Eiruga | Oruga | Arrastrar el dedo despacio por el brazo | `pal_caterpillar` | banco | Oruga verde segmentada avanzando. |
 | Ceiling | Teito | Techo | Señalar el techo | `pal_ceiling` | nova | Habitación señalando directamente arriba hacia el techo y la lámpara colgante. |
+| Celebrate as a team | Celebrar en equipo | Celebrar en equipo | Chocar las manos todos | `pal_celebrate_as_a_team` | nova | Tres niños chocando y alzando manos en equipo celebrando juntos. |
 | Celebrate | Celebrar | Celebrar | Dar palmas y bailar juntos | `pal_celebrate` | composta | Niños celebrando contentos con confeti y palmas. |
 | Celebration | Celebración | Celebración | Dar palmas contentos | `pal_celebration` | composta | Bola de confeti brillante y palmas de celebración. |
 | Centipede | Cempés | Ciempiés | Mover muchos dedos despacio | `pal_centipede` | nova | Ciempiés naranja largo con muchos pares de patitas caminando. |
 | Centre | Centro | Centro | Señalar el centro del cuerpo | `pal_centre` | nova | Diana circular señalando exactamente el punto rojo del centro. |
+| Certificate | Certificado | Certificado | Recibir un papel con las dos manos | `pal_certificate` | nova | Diploma o certificado oficial con sello rojo y cintas colgantes. |
 | Chair | Cadeira | Silla | Tocar la silla y sentarse en ella despacio | `pal_chair` | banco | Silla de madera de cuatro patas. |
 | Chalk | Xiz | Tiza | Dibujar en el suelo con la tiza | `pal_chalk` | nova | Mano sujetando una tiza blanca que traza líneas sobre la pizarra oscura del suelo. |
 | Chalky | De xiz | De tiza | Soplar el polvo de las manos | `pal_chalky` | nova | Barritas de tiza sobre pizarra soltando polvo blanco al soplar. |
+| Change over time | Cambiar co tempo | Cambiar con el tiempo | Pasar de un gesto pequeño a uno grande | `pal_change_over_time` | nova | Tres etapas mostrando el crecimiento de semilla a brote y flor. |
 | Change | Cambiar | Cambiar | Cambiar el pañal contando «uno, dos» | `pal_change` | composta | Bebé junto a un pañal limpio con cierres para cambiar. |
 | Changed a little, the plane flew further. | Cambiado un pouco, o avión voou máis lonxe. | Cambiado un poco, el avión voló más lejos. | — | `pal_changed_plane_flew_further` | composta | Avión ajustado volando aún más lejos. |
 | Changing mat | Cambiador | Cambiador | Tumbar al bebé en el cambiador | `pal_changing_mat` | nova | Cambiador acolchado con el bebé tumbado y un pañal limpio al lado. |
+| Channel | Canle | Canal | Hacer un canal con las manos | `pal_channel` | nova | Canal estrecho de agua azul excavado entre dos orillas de arena. |
+| Chapel | Capela | Capilla | Hacer un tejado en punta con las manos | `pal_chapel` | nova | Pequeña capilla blanca de pueblo con campanario arriba y puerta en arco. |
 | Chart | Táboa | Tabla | Marcar una señal en una tabla | `pal_chart` | nova | Tabla gráfica con barras de colores señalada con el índice. |
 | Chase after | Ir detrás | Ir detrás | Gatear detrás de la pelota | `pal_chase_after` | nova | Niño gateando rápido detrás de una pelota que rueda. |
 | Chase | Perseguir | Perseguir | Caminar rápido detrás de una compañera sin tocarla | `pal_chase` | nova | Dos niños persiguiéndose a paso rápido uno detrás del otro. |
+| Cheek to cheek | Meixela con meixela | Mejilla con mejilla | Juntar mejilla con mejilla | `pal_cheek_to_cheek` | nova | Dos caras sonrientes pegando suavemente mejilla con mejilla. |
 | Cheeks | Meixelas | Mejillas | Inflar las mejillas y tocarlas con los dedos | `pal_cheeks` | nova | Dos dedos tocando las mejillas sonrosadas e infladas de una cara. |
 | Cheerful face | Cara alegre | Cara alegre | Sonreír muy grande | `pal_cheerful_face` | banco | Cara radiante con sonrisa abierta y ojos alegres. |
 | Cheerful | Alegre | Alegre | Abrir los ojos y sonreír mucho | `pal_cheerful` | nova | Niño radiante y alegre levantando los brazos con una sonrisa bajo el sol. |
@@ -336,19 +445,25 @@ Con lámina: 2718. **Sin lámina todavía: 1660** (las cuenta y las nombra `pyth
 | Chest | Peito | Pecho | Poner la mano en el pecho | `pal_chest` | nova | Niño con la mano sobre el centro del pecho y flecha señalándolo. |
 | Chestnut husk | Ourizo | Erizo de castaña | Enseñar el erizo sin tocarlo | `pal_chestnut_husk` | banco | Castaña con su cubierta. |
 | Chestnut stall | Posto de castañas | Puesto de castañas | Señalar el puesto de castañas | `pal_chestnut_stall` | nova | Puesto ambulante de castañas asadas humeando señalado en la calle. |
+| Chestnut tree | Castiñeiro | Castaño | Estirar los brazos como ramas | `pal_chestnut_tree` | nova | Árbol castaño de copa frondosa con castañas marrones en las ramas. |
 | Chestnut | Castaña | Castaña | Hacer una castaña con las manos cerradas | `pal_pal_chestnut` | banco | Castaña brillante de otoño. |
+| Chew on | Morder | Mordisquear | Dejar morder el mordedor limpio | `pal_chew_on` | nova | Bebé mordisqueando un anillo mordedor azul seguro y limpio. |
 | Chew | Mastigar | Masticar | Masticar despacio con la boca cerrada | `pal_chew` | composta | Criatura con el carrillo lleno masticando despacio un bocado de manzana. |
 | Chick | Pitiño | Pollito | Hacer «pío pío» con los dedos | `pal_chick` | banco | Pollito amarillo. |
 | Chilly wind | Vento fresco | Viento fresco | Abrazarse por el frío | `pal_chilly_wind` | composta | Viento frío soplando y niño abrazándose el cuerpo para entrar en calor. |
 | Chilly | Fresquiño | Fresquito | Frotar los brazos como con frío | `pal_chilly` | nova | Niño abrigado frotándose los brazos ante la brisa fresca. |
 | Chin | Queixo | Barbilla | Tocarse la barbilla con el dedo índice | `pal_chin` | nova | Dedo índice tocando directamente la barbilla bajo la boca. |
+| Chirp | Piar | Piar | Hacer «pío» con los labios | `pal_chirp` | nova | Pollito amarillo con pico abierto piando con ondas de sonido. |
 | Chirpy | Cantareiro | Cantarín | Silbar y sonreír | `pal_chirpy` | composta | Pajarito cantarín y alegre piando notas musicales. |
 | Chocolate | Chocolate | Chocolate | Beber de una taza caliente con cuidado | `pal_chocolate` | nova | Taza caliente de chocolate humeante bebida con cuidado. |
 | Chocolatey | Achocolatado | Achocolatado | Relamerse | `pal_chocolatey` | composta | Cara feliz con bigote de chocolate relamiéndose junto a una galleta. |
 | Choir | Coro | Coro | Cantar juntos en fila | `pal_choir` | nova | Cuatro niños en fila cantando al unísono en coro con notas musicales. |
 | Chomp | Mastigar | Masticar | Mover la boca como una vaca comiendo hierba | `pal_chomp` | nova | Vaca moteada masticando con apetito un manojo de hierba fresca. |
 | Choose fruit | Escoller froita | Escoger fruta | Mirar y escoger una | `pal_choose_fruit` | nova | Frutero variado mientras la mano elige la manzana roja. |
+| Chop | Picar | Trocear | Trocear con la mano plana | `pal_chop` | nova | Tabla de cortar con zanahoria partida en rodajas y cuchillo bajando. |
 | Choppy | Picado | Picado | Mover las manos en olas pequeñas | `pal_choppy` | nova | Mar picado lleno de olas puntiagudas agitando una barquita. |
+| Chore | Tarefa da casa | Tarea de casa | Barrer en el aire | `pal_chore` | nova | Escoba barriendo el suelo en las tareas de casa. |
+| Chubby cheeks | Meixelas gordiñas | Mofletes | Inflar los mofletes y soltar el aire | `pal_chubby_cheeks` | nova | Cara risueña con mofletes grandes, redondos y rosados inflados. |
 | Chuckle | Rir baixiño | Reír bajito | Reír bajito cerca de la oreja | `pal_chuckle` | nova | Niño tapándose un poco la boca riéndose bajito. |
 | Chunky | Groso | Grueso | Tocar un jersey grueso | `pal_chunky` | nova | Jersey grueso de punto con trenzas de lana colgado en una percha. |
 | Circle around | Dar voltas arredor | Dar vueltas alrededor | Caminar alrededor de un amigo | `pal_circle_around` | nova | Caminar dando toda la vuelta alrededor de un compañero. |
@@ -356,33 +471,42 @@ Con lámina: 2718. **Sin lámina todavía: 1660** (las cuenta y las nombra `pyth
 | Circle | Círculo | Círculo | Dibujar un círculo grande con el dedo | `pal_circle` | nova | Círculo geométrico perfecto y bien trazado. |
 | Circular | Circular | Circular | Dibujar un círculo grande | `pal_circular` | nova | Círculo grande y perfecto trazado con el dedo sobre la mesa. |
 | City lights | Luces da cidade | Luces de la ciudad | Abrir y cerrar las manos en el aire | `pal_city_lights` | nova | Edificios de la ciudad de noche con muchas ventanas iluminadas brillando. |
+| Clap a pattern | Bater un patrón | Dar palmas en patrón | Palma, palma, pie | `pal_clap_a_pattern` | nova | Patrón rítmico visual: dos palmas seguidas de un pisotón de zapato. |
 | Clap along | Acompañar con palmas | Acompañar con palmas | Dar palmas al ritmo de la canción | `pal_clap_along` | composta | Manos aplaudiendo al ritmo alegre de las notas musicales. |
 | Clap and stop | Palma e para | Palmada y para | Dar palmas y parar de golpe | `pal_clap_and_stop` | composta | Manos dando palmas y señal octogonal de parar de golpe. |
 | Clap flippers | Bater as aletas | Batir las aletas | Dar palmas como una foca | `pal_clap_flippers` | composta | Foca marina batiendo aletas y niño dando palmas igual. |
 | Clap high, clap low | Palmas arriba, palmas abaixo | Palmas arriba, palmas abajo | Palmada encima de la cabeza y palmada abajo cerca del suelo. | `pal_clap_high_clap_low` | composta | Manos dando palmas arriba y abajo. |
 | Clap pattern | Serie de palmas | Serie de palmas | Dar una serie de palmas | `pal_clap_pattern` | composta | Serie repetida de palmas marcando una secuencia rítmica visual. |
 | Clap the rhythm on your chest | Marca o ritmo con palmadas no peito | Marca el ritmo con palmadas en el pecho | Palmadas sobre el pecho marcando el pulso regular. | `pal_clap_the_rhythm_on_your_chest` | composta | Niño marcando el ritmo con palmadas sobre su pecho. |
+| Clap twice | Bater palmas dúas veces | Dar dos palmadas | Dar dos palmadas | `pal_clap_twice` | nova | Dos pares iguales de manos aplaudiendo dos veces. |
 | Clap your hands | Bate as palmas | Da palmas | Dar tres palmadas al oír la orden | `pal_clap_your_hands` | composta | Dos manos chocando al aplaudir con ritmo. |
 | Clap | aplaudir, dar palmas | aplaudir, dar palmas | Guía dos palmadas lentas. | `pal_clap` | composta | Dos manos dando palmas: aplaudir. |
 | Clap, clap, stamp! | Palma, palma, pisada! | ¡Palma, palma, pisada! | Dar dos palmas y pisar | `pal_clap_clap_stamp` | composta | Dar dos palmadas sonoras seguidas de una pisada fuerte. |
 | Clapperboard | Claqueta | Claqueta | Cerrar los brazos como una claqueta | `pal_clapperboard` | banco | Claqueta de cine abierta y lista para cerrarse de golpe. |
+| Clapping | Batendo palmas | Dando palmas | Dar palmitas | `pal_clapping` | banco | Manos dando palmas con ondas. |
+| Class photo | Foto da clase | Foto de la clase | Juntarse todos para la foto | `pal_class_photo` | nova | Fotografía escolar enmarcada con tres compañeros posando sonrientes. |
 | Class song | Canción da clase | Canción de la clase | Cantar todos juntos | `pal_class_song` | nova | Grupo de clase cantando con alegría y los brazos arriba. |
 | Classmate | Compañeiro | Compañero | Señalar a un compañero | `pal_classmate` | nova | Dos compañeros de clase juntos en sus pupitres señalándose amistosamente. |
 | Classroom job | Encargo da clase | Encargo de la clase | Señalar el propio encargo en el panel | `pal_classroom_job` | nova | Panel de encargos de la clase con tareas ilustradas señalado por una mano. |
 | Classroom | Aula | Aula | Abrir los brazos dentro del aula | `pal_classroom` | nova | Pizarra verde del aula y niño abriendo los brazos dentro de la clase. |
+| Clean and shiny | Limpo e brillante | Limpio y brillante | Hacer brillar el espejo con el paño | `pal_clean_and_shiny` | nova | Espejo brillante destellando limpio junto a un paño verde. |
 | Clean beach | Praia limpa | Playa limpia | Enseñar la mano vacía | `pal_clean_beach` | nova | Playa de arena dorada reluciente y limpia junto al mar azul. |
 | Clean face | Cara limpa | Cara limpia | Enseñar la cara limpia en el espejo | `pal_clean_face` | nova | Cara limpia y sonriente reflejada junto a un espejo reluciente. |
 | Clean hands, happy baby | Mans limpas, bebé contento | Manos limpias, bebé contento | Enseñar las manos y sonreír | `pal_clean_hands_happy_baby` | composta | Bebé contento enseñando unas manos limpias y brillantes. |
 | Clean up, clean up | A recoller, a recoller | A recoger, a recoger | Cantar y recoger | `pal_clean_up_clean_up` | composta | Notas alegres de canción mientras se recogen juguetes en la caja. |
 | Clean | Limpo, limpa | Limpio, limpia | Enseñar las manos limpias y sonreír | `pal_clean` | composta | Manos limpias y relucientes tras lavarse bien. |
 | Clear | Despexado, despexada | Despejado, despejada | Abrir las manos como si apartaran las nubes | `pal_clear` | nova | Cielo completamente despejado apartando las nubes hacia los lados. |
+| Cliff nest | Niño no cantil | Nido en el acantilado | Hacer un nido en la pared | `pal_cliff_nest` | nova | Nido de ramas con huevos posado en repisa alta de un acantilado. |
 | Cliff | Cantil | Acantilado | Poner la mano vertical | `pal_cliff` | banco | Acantilado rocoso alto junto al mar. |
 | Climb a ladder | Subir unha escada | Subir una escalera | Subir alternando manos y pies | `pal_climb_a_ladder` | composta | Escalera vertical con flecha indicando subir peldaño a peldaño. |
+| Climb aboard | Subir a bordo | Subir a bordo | Dar un paso grande | `pal_climb_aboard` | nova | Niño subiendo por la pasarela de madera para embarcar en el barco. |
+| Climb over | Pasar por riba | Pasar por encima | Pasar la pierna por encima | `pal_climb_over` | nova | Niño pasando por encima de un tronco con flecha en arco. |
 | Climb the oak tree and hide your nuts | Sobe ao carballo e agocha as túas noces | Sube al roble y esconde tus nueces | Trepa simulada con brazos alternos y agachada final escondiendo las manos. | `pal_climb_oak_hide_nuts` | composta | Niño trepando al roble junto a las castañas escondidas en la copa. |
 | Climb up the hill | Subir o monte | Subir el monte | Caminar inclinado hacia delante | `pal_climb_up_the_hill` | nova | Niño inclinado hacia delante subiendo caminando la colina. |
 | Climb | Rubir | Trepar | Mover brazos y piernas como si trepáramos a un árbol | `pal_climb` | nova | Niño trepando por el tronco de un árbol con flecha ascendente. |
 | Clock | Reloxo | Reloj | Mover un brazo como la aguja de un reloj | `pal_clock` | nova | Reloj redondo de pared sin números mostrando las agujas girando. |
 | Close the book | Pechar o libro | Cerrar el libro | Cerrar el libro despacio | `pal_close_the_book` | nova | Libro abierto doblándose su cubierta hacia la izquierda para cerrarse. |
+| Close to me | Preto de min | Cerca de mí | Acercar al bebé al pecho | `pal_close_to_me` | nova | Niño abrazando muy cerquita del pecho al bebé. |
 | Close your eyes and listen | Pecha os ollos e escoita | Cierra los ojos y escucha | Cerrar los ojos y quedarse quietos escuchando | `pal_close_your_eyes_and_listen` | nova | Niño con ojos cerrados escuchando notas musicales. |
 | Close your eyes and taste | Pecha os ollos e proba | Cierra los ojos y prueba | Cerrar los ojos | `pal_close_your_eyes_and_taste` | nova | Niño con ojos cerrados probando el sabor de una fresa. |
 | Close | Pechar | Cerrar | Cerrar un paraguas imaginario juntando las manos | `pal_close` | composta | Paraguas plegado cerrándose con flechas hacia dentro. |
@@ -404,6 +528,8 @@ Con lámina: 2718. **Sin lámina todavía: 1660** (las cuenta y las nombra `pyth
 | Cold! | Frío, fría | Frío, fría | Frotarse los brazos con las manos, como quien tiene frío. | `pal_cold` | banco | Cara tiritando de frío. |
 | Colder | Máis frío | Más frío | Temblar más | `pal_colder` | composta | Cara tiritando rodeada de copos de nieve: más frío. |
 | Collar | Colar | Collar | Tocar el collar del peluche | `pal_collar` | composta | Perro junto a su collar con chapita. |
+| Collect leaves | Coleccionar follas | Coleccionar hojas | Meter hojas en una bolsa | `pal_collect_leaves` | nova | Hojas de otoño entrando dentro de una bolsa de papel marrón. |
+| Collect rain | Recoller choiva | Recoger lluvia | Poner un vaso fuera | `pal_collect_rain` | nova | Vaso colocado fuera recogiendo gotas de lluvia del cielo. |
 | Collect | Xuntar | Juntar | Recoger conchas imaginarias y guardarlas en la mano | `pal_collect` | composta | Manos recogiendo conchas marinas bonitas de la orilla de arena. |
 | Colour by colour | Cor a cor | Color a color | Tocar cosas del aula de un color cada vez | `pal_colour_by_colour` | nova | Cuatro bloques de colores distintos señalados uno tras otro por turnos. |
 | Colour card | Tarxeta de cor | Tarjeta de color | Enseñar una tarjeta de color | `pal_colour_card` | nova | Tarjetas de colores vivos rojo, amarillo y azul. |
@@ -413,22 +539,36 @@ Con lámina: 2718. **Sin lámina todavía: 1660** (las cuenta y las nombra `pyth
 | Colourful plate | Prato de cores | Plato de colores | Señalar los colores del plato | `pal_colourful_plate` | nova | Plato lleno de alimentos coloridos rojo, amarillo y verde. |
 | Colourful reef | Arrecife de cores | Arrecife de colores | Mover las manos de colores | `pal_colourful_reef` | nova | Arrecife marino multicolor con corales rosados, naranjas, morados y peces. |
 | Colourful | De cores | De colores | Señalar cosas de muchos colores en el aula | `pal_colourful` | nova | Ramillete de globos muy colorido con muchos tonos brillantes juntos. |
+| Comb | Peite | Peine | Peinarse con un peine imaginario | `pal_comb` | nova | Peine azul de dientes uniformes para peinar el pelo. |
 | Come here for a hug | Ven que te aperte | Ven que te abrazo | Abrir los brazos y esperar | `pal_come_here_for_a_hug` | nova | Niño esperando con los brazos abiertos a su amigo que se acerca. |
+| Come here, puppy | Ven aquí, cachorriño | Ven aquí, cachorrito | Llamar con un gesto suave y dar palmadas en las rodillas | `pal_come_here_puppy` | nova | Perrito trotando alegremente hacia quien lo llama con la mano. |
 | Come out of the egg | Saír do ovo | Salir del huevo | Salir de una bola con el cuerpo | `pal_come_out_of_the_egg` | composta | Pollito saliendo al romperse el cascarón del huevo. |
 | Come under my umbrella | Ven debaixo do meu paraugas | Ven debajo de mi paraguas | — | `pal_come_under_umbrella` | composta | Dos niños acercándose juntos debajo del paraguas bajo la lluvia. |
 | Comet | Cometa | Cometa | Correr con un brazo detrás | `pal_comet` | banco | Cometa celeste con estela luminosa. |
 | Comfort | Consolar | Consolar | Poner la mano en el hombro de un amigo | `pal_comfort` | nova | Niño consolando a su compañero apoyando la mano amable en su hombro. |
 | Comfortable | Cómodo | Cómodo | Colocar un cojín detrás de la espalda | `pal_comfortable` | composta | Cojín suave apoyando cómodamente la espalda del niño. |
 | Command | Orde | Orden | Levantar un dedo antes de la orden | `pal_command` | composta | Niño dando una indicación clara con gesto de mano. |
+| Community | Comunidade | Comunidad | Cogerse todos de las manos | `pal_community` | nova | Grupo de tres compañeros unidos de la mano formando comunidad. |
+| Compare | Comparar | Comparar | Poner dos hojas lado a lado | `pal_compare` | nova | Dos hojas de diferente tamaño colocadas lado a lado para comparar. |
 | Compass | Compás | Brújula | Girar señalando el norte | `pal_compass` | banco | Brújula con aguja señalando el norte. |
+| Compost | Composto | Compost | Echar restos de fruta | `pal_compost` | nova | Cajón de compostaje de madera recibiendo restos de fruta y hojas. |
 | Compromise | Termo medio | Término medio | Juntar las manos en el medio | `pal_compromise` | composta | Balanza equilibrada y acuerdo justo entre dos personas. |
+| Condense | Condensarse | Condensarse | Juntar las manos en nube | `pal_condense` | nova | Vapor juntándose arriba para condensarse en nube gris con gotitas. |
 | Conduct | Dirixir a música | Dirigir la música | Mover la batuta al ritmo | `pal_conduct` | nova | Niño dirigiendo la música moviendo la batuta al compás de las notas. |
 | Conductor | Director de orquestra | Director de orquesta | Mover una batuta | `pal_conductor` | nova | Director de orquesta moviendo la batuta en el aire entre notas musicales. |
+| Cone | Cono | Cono | Rodear el cono corriendo | `pal_cone` | nova | Cono naranja y blanco de psicomotricidad sobre el suelo. |
 | Confetti cannon | Canón de confeti | Cañón de confeti | Abrir las manos de golpe | `pal_confetti_cannon` | nova | Tubo de fiesta lanzando confeti de colores al abrirse de golpe. |
 | Confetti | Confeti | Confeti | Agitar un bote cerrado con confeti | `pal_confetti` | banco | Bola de confeti de colores. |
+| Conga line | Fila de conga | Fila de conga | Bailar en fila con las manos en los hombros | `pal_conga_line` | nova | Tres niños bailando en fila de conga con manos sobre los hombros. |
+| Connect the dots | Unir os puntos | Unir los puntos | Unir puntos con el dedo | `pal_connect_the_dots` | nova | Puntos rojos unidos en orden formando una figura con trazos. |
+| Connect | Conectar | Conectar | Unir dos piezas | `pal_connect` | nova | Dos piezas de colores acercándose para encajar y conectarse. |
+| Constellation | Constelación | Constelación | Unir puntos en el aire | `pal_constellation` | nova | Constelación de siete estrellas unidas por finas líneas en el cielo nocturno. |
+| Construction site | Obra | Obra | Ponerse un casco imaginario | `pal_construction_site` | banco | Señal de obras con valla amarilla y negra. |
 | Coo coo | Arrulo | Arrullo | Arrullar como una paloma | `pal_coo_coo` | composta | Paloma blanca arrullando con ondas suaves de sonido. |
+| Cook | Cociñar | Cocinar | Echar ingredientes imaginarios en la olla | `pal_cook` | nova | Olla roja cocinando verduras con cuchara de madera y vapor. |
 | Cool down | Refrescarse | Refrescarse | Mojar la nuca con agua | `pal_cool_down` | composta | Gota de agua fresca aplicada en la nuca y frente para quitar el calor. |
 | Cool shade | Sombra fresca | Sombra fresca | Sentarse a la sombra | `pal_cool_shade` | composta | Árbol dando sombra fresca con niño sentado debajo. |
+| Cool to touch | Fresco ao tacto | Fresco al tacto | Posar la mano en una piedra fresca | `pal_cool_to_touch` | nova | Mano posada sobre una piedra fresca con brisa y frío suave. |
 | Cool | Fresquiño, fresquiña | Fresquito, fresquita | Soplar suave en la palma de la mano | `pal_cool` | composta | Soplo suave y fresquito pasando sobre las palmas abiertas. |
 | Cooperate | Colaborar | Colaborar | Llevar una caja entre dos | `pal_cooperate` | nova | Dos niños sujetando cada uno un lado para llevar juntos la caja. |
 | Copy my movements | Copia os meus movementos | Copia mis movimientos | Moverse y esperar la copia | `pal_copy_my_movements` | composta | Dos niños haciendo exactamente el mismo movimiento en espejo. |
@@ -436,6 +576,7 @@ Con lámina: 2718. **Sin lámina todavía: 1660** (las cuenta y las nombra `pyth
 | Coral | Coral | Coral | Abrir los dedos como coral | `pal_coral` | banco | Rama de coral marino rojo. |
 | Cork | Cortiza | Corcho | Echar un corcho y mirarlo flotar | `pal_cork` | nova | Tapón de corcho ligero flotando arriba en la superficie del agua. |
 | Cormorant | Corvo mariño | Cormorán | Abrir los brazos a secar | `pal_cormorant` | nova | Cormorán oscuro posado en roca extendiendo sus alas para secarlas al sol. |
+| Corn | Millo | Maíz | Desgranar una mazorca de maíz imaginaria | `pal_corn` | banco | Mazorca de maíz dorada con hojas. |
 | Corner piece | Peza da esquina | Pieza de la esquina | Señalar la esquina de la pieza | `pal_corner_piece` | nova | Pieza de puzle con dos bordes rectos y su esquina resaltada señalada. |
 | Corner | Esquina | Esquina | Caminar hasta la esquina | `pal_corner` | nova | Esquina en ángulo recto y niño caminando hasta ella. |
 | Costume | Disfrace | Disfraz | Ponerse un disfraz imaginario y dar una vuelta | `pal_costume` | composta | Capa y disfraz festivo colgados en la sala. |
@@ -443,6 +584,7 @@ Con lámina: 2718. **Sin lámina todavía: 1660** (las cuenta y las nombra `pyth
 | Cosy nest | Niño acolledor | Nido acogedor | Abrazarse a sí mismo | `pal_cosy_nest` | composta | Nido cálido de pajarito y niño acurrucado recogido en sí mismo. |
 | Cosy | Acolledor, acolledora | Acogedor, acogedora | Abrazar una manta imaginaria con cara de gusto | `pal_cosy` | composta | Niño arropado dentro de una manta suave y acogedora. |
 | Cot | Berce | Cuna | Dejar al bebé en la cuna con cuidado | `vocab_60` | reutilizada | Cuna segura del set propio. |
+| Cotton wool | Algodón | Algodón | Limpiar la cara con un algodón | `pal_cotton_wool` | nova | Bolitas suaves y esponjosas de algodón blanco en un cuenco azul. |
 | Cotton | Algodón | Algodón | Pasar un algodón por la mejilla | `pal_cotton` | nova | Copo de algodón blanco muy esponjoso. |
 | Count coins | Contar moedas | Contar monedas | Contar con los dedos | `pal_count_coins` | composta | Dedo contando tres monedas doradas alineadas sobre la mesa. |
 | Count in twos | Contar de dous en dous | Contar de dos en dos | Saltar dos pasos cada vez | `pal_count_in_twos` | nova | Parejas agrupadas de dos en dos para contar. |
@@ -455,13 +597,17 @@ Con lámina: 2718. **Sin lámina todavía: 1660** (las cuenta y las nombra `pyth
 | Countdown to midnight | Contar ata a medianoite | Contar hasta la medianoche | Bajar los dedos | `pal_countdown_to_midnight` | composta | Reloj marcando la cuenta atrás hasta medianoche. |
 | Counter | Ficha | Ficha | Mover la ficha dos casillas | `pal_counter` | nova | Ficha redonda roja saltando dos casillas sobre el tablero. |
 | Counting the steps, we measured it. | Contando os pasos, medímolo. | Contando los pasos, lo medimos. | — | `pal_counting_steps_measured` | composta | Huellas midiendo la distancia en pasos. |
+| Cover up | Tapar | Tapar | Tapar los pies con la manta | `pal_cover_up` | nova | Manta morada cubriendo los pies de la persona tumbada. |
+| Cover with soil | Tapar con terra | Tapar con tierra | Tapar la semilla con las manos | `pal_cover_with_soil` | nova | Dos manos echando tierra oscura sobre una semilla en el huerto. |
 | Cow | Vaca | Vaca | Hacer cuernos pequeños con los índices y caminar despacio | `pal_pal_cow` | banco | Vaca blanca y negra de perfil. |
 | Crab | Cangrexo | Cangrejo | Abrir y cerrar los dedos como pinzas | `pal_crab` | banco | Cangrejo rojo con pinzas abiertas, en estilo Fluent Flat. |
 | Crack open | Abrir rompendo | Abrir rompiendo | Apretar la castaña para abrirla | `pal_crack_open` | composta | Cáscara agrietándose para abrirse hacia los dos lados. |
 | Crack, crack! | Crac, crac! | ¡Crac, crac! | Abrir las manos despacio | `pal_crack_crack` | nova | Cáscara agrietándose en zigzag con chasquidos al abrirse. |
 | Crackly shell | Casca que estala | Cáscara que cruje | Romper la cáscara y escuchar | `pal_crackly_shell` | composta | Cáscara agrietándose con líneas de crujido y sonido. |
+| Crackly | Que estala | Crujiente al tacto | Arrugar papel para que suene | `pal_crackly` | nova | Papel o lámina arrugada con pliegues marcados y líneas crujientes. |
 | Cradle song | Cantiga de arrolo | Canción de cuna | Cantar mientras se mece | `pal_cradle_song` | composta | Luna nocturna y notas musicales suaves acunando al bebé. |
 | Cradle | Arrolar | Acunar | Acunar al bebé en los brazos | `pal_cradle` | nova | Cuna de madera con dosel y el bebé descansando dentro. |
+| Crane | Guindastre | Grúa | Levantar el brazo como una grúa | `pal_crane` | nova | Grúa amarilla alta levantando una carga roja colgante. |
 | Crate | Caixa de froita | Caja de fruta | Llevar una caja | `pal_crate` | composta | Caja de madera de listones cargada de manzanas y naranjas. |
 | Crawl through | Gatear a través | Gatear a través | Gatear por el túnel junto al bebé | `pal_crawl_through` | nova | Niño gateando para atravesar el túnel de juego infantil. |
 | Crawl under the table | Gatea debaixo da mesa | Gatea debajo de la mesa | Gatear bajo la mesa | `pal_crawl_under_the_table` | nova | Niño gateando directamente debajo de la mesa. |
@@ -1318,6 +1464,7 @@ Con lámina: 2718. **Sin lámina todavía: 1660** (las cuenta y las nombra `pyth
 | Masked | Enmascarado | Enmascarado | Taparse los ojos con las manos | `pal_masked` | nova | Persona con antifaz de colores cubriendo los ojos en juego de disfraz. |
 | Massage | Masaxe | Masaje | Dar un masaje suave en las piernas | `pal_massage` | composta | Manos realizando un masaje circular muy suave. |
 | Mat path | Camiño de colchóns | Camino de colchonetas | Caminar por las colchonetas | `pal_mat_path` | nova | Camino de tres colchonetas de colores en el suelo con niño andando por encima. |
+| Match both sides | Igualar os dous lados | Igualar los dos lados | Mover las dos manos iguales | `pal_match_both_sides` | nova | Eje de simetría con piezas idénticas igualadas a ambos lados. |
 | Matching | A xogo | A juego | Enseñar dos guantes iguales | `pal_matching` | nova | Dos manoplas azules exactamente iguales haciendo juego una con otra. |
 | Mateo, find a round cold chestnut | Mateo, busca unha castaña redonda e fría | Mateo, busca una castaña redonda y fría | Búsqueda táctil dentro de la bolsa hasta encontrar una castaña redonda y fría. | `pal_mateo_round_cold_chestnut` | composta | Lupa buscando una castaña fría y redonda. |
 | May I see your ticket? | Podo ver o teu billete? | ¿Puedo ver tu billete? | — | `pal_may_i_see_your_ticket` | composta | Mostrando el billete de viaje para revisarlo. |
@@ -1331,6 +1478,8 @@ Con lámina: 2718. **Sin lámina todavía: 1660** (las cuenta y las nombra `pyth
 | Meow! | Miau! | ¡Miau! | Hacer bigotes con los dedos y decir «miau» | `pal_meow` | composta | Gato maullando suavemente con ondas de sonido. |
 | Merry Christmas! | Bo Nadal! | ¡Feliz Navidad! | Abrir los brazos y desear feliz Navidad al grupo | `pal_merry_christmas` | composta | Árbol de Navidad iluminado y niño con los brazos abiertos deseando alegría. |
 | Merry-go-round | Carrusel | Tiovivo | Girar en círculo con las manos estiradas | `pal_merry_go_round` | banco | Caballito giratorio de tiovivo. |
+| Messy | Desordenado, desordenada | Desordenado, desordenada | Mover las manos hacia todos lados como un remolino | `pal_messy` | nova | Juguetes, papeles y ceras esparcidos y torcidos en desorden. |
+| Metronome | Metrónomo | Metrónomo | Mover el brazo como un metrónomo | `pal_metronome` | nova | Metrónomo de madera con varilla oscilando rítmicamente de lado a lado. |
 | Mew | Miañar | Maullar | Hacer «miau» bajito | `pal_mew` | composta | Gato maullando suavemente con notas. |
 | Microphone | Micrófono | Micrófono | Sostener un micro imaginario | `pal_microphone` | banco | Micrófono de mano. |
 | Microplastic | Microplástico | Microplástico | Juntar dos dedos muy poco | `pal_microplastic` | composta | Lupa observando diminutos trocitos de microplástico de colores en el agua. |
@@ -1339,7 +1488,10 @@ Con lámina: 2718. **Sin lámina todavía: 1660** (las cuenta y las nombra `pyth
 | Minty | De menta | De menta | Soplar aliento fresco | `pal_minty` | composta | Hojitas verdes de menta con aire fresco y aroma limpio. |
 | Mirror check | Mirada ao espello | Mirada al espejo | Mirarse en el espejo | `pal_mirror_check` | nova | Espejo ovalado donde se refleja el rostro para mirarse. |
 | Mirror | Espello | Espejo | Mirarse en un espejo imaginario y sonreír | `pal_mirror` | banco | Espejo de mano ovalado. |
+| Misty | Neboento | Brumoso | Mover las manos como niebla | `pal_misty` | nova | Bandas densas de bruma flotando sobre las colinas verdes. |
 | Mittens | Manoplas | Manoplas | Poner las manoplas al bebé | `pal_mittens` | banco | Manoplas cálidas de invierno. |
+| Mix colours | Mesturar cores | Mezclar colores | Remover con el dedo | `pal_mix_colours` | nova | Pintura azul y amarilla mezclándose en el centro en verde brillante. |
+| Mix | Mesturar | Mezclar | Mezclar pinturas imaginarias moviendo la mano en círculos | `pal_mix` | nova | Cuenco con masa y cuchara removiendo en círculo para mezclar. |
 | Mmm, chestnuts! | Mmm, castañas! | ¡Mmm, castañas! | Tocar la barriga contentos | `pal_mmm_chestnuts` | nova | Plato lleno de castañas asadas junto a niño feliz tocándose la barriga. |
 | Mmm, orange! | Mmm, laranxa! | ¡Mmm, naranja! | Oler la naranja y sonreír | `pal_mmm_orange` | composta | Naranja fresca con aroma cítrico hacia niño contento. |
 | Mobile | Móbil de berce | Móvil de cuna | Hacer girar el móvil de la cuna | `pal_mobile` | nova | Móvil infantil de cuna con colgantes de colores girando arriba. |
@@ -1347,6 +1499,7 @@ Con lámina: 2718. **Sin lámina todavía: 1660** (las cuenta y las nombra `pyth
 | Month | Mes | Mes | Señalar un mes | `pal_month` | nova | Hoja mensual completa de calendario señalada en la pared. |
 | Moo! | Muuu! | ¡Muuu! | Hacer cuernos con los dedos y decir «muuu» | `pal_moo` | composta | Vaca mugiendo en el prado con ondas sonoras visibles. |
 | Moon | Lúa | Luna | Dibujar una luna redonda en el aire | `pal_moon` | banco | Luna llena amarilla y redonda brillando en la noche. |
+| Moonlight | Luz da lúa | Luz de la luna | Mover las manos despacio y suave | `pal_moonlight` | nova | Media luna nocturna bañando las colinas con un haz de luz pálida. |
 | More juice in my cup. | Máis zume na miña cunca. | Más zumo en mi taza. | — | `pal_more_juice_in_my_cup` | composta | Más zumo subiendo de nivel dentro del vaso. |
 | More, please | Máis, por favor | Más, por favor | Juntar las puntas de los dedos de las dos manos | `pal_more_please` | composta | Vaso medio vacío pidiendo un poco más de forma amable. |
 | Morning | Mañá | Mañana | Desperezarse y abrir los ojos despacio | `pal_morning` | nova | Amanecer luminoso de mañana con el sol saliendo y niño desperezándose. |
@@ -1359,6 +1512,7 @@ Con lámina: 2718. **Sin lámina todavía: 1660** (las cuenta y las nombra `pyth
 | Mountain | Montaña | Montaña | Dibujar una montaña grande en el aire con los brazos | `pal_mountain` | banco | Montaña alta con cumbre nevada. |
 | Mouse | Rato | Ratón | Mover la nariz rápido y hacer bigotes con los dedos | `pal_mouse` | banco | Ratón blanco de orejas redondas. |
 | Mouth | Boca | Boca | Abrir y cerrar la boca despacio | `pal_mouth` | banco | Boca roja entreabierta. |
+| Move like a robot | Moverse coma un robot | Moverse como un robot | Mover los brazos a golpes | `pal_move_like_a_robot` | nova | Niño moviendo brazos rígidos en ángulo recto como un robot de juguete. |
 | Mud | Lama | Barro | Pisar despacio como si los pies se pegaran al barro | `pal_mud` | nova | Charco de barro marrón con niño pisando despacio con dificultad. |
 | Muddy bank | Beira lamacenta | Orilla embarrada | Pisar con cuidado | `pal_muddy_bank` | nova | Orilla de barro junto al agua con niño caminando despacio por el borde. |
 | muddy | enlamado | embarrado | — | `pal_muddy` | banco | Charco grande de barro salpicando: embarrado. |
@@ -1373,6 +1527,7 @@ Con lámina: 2718. **Sin lámina todavía: 1660** (las cuenta y las nombra `pyth
 | Mushroom | Cogomelo | Seta | Poner las manos en forma de sombrero sobre la cabeza | `pal_mushroom` | banco | Seta roja con lunares blancos. |
 | Music | Música | Música | Mover la cabeza al pulso de la música | `pal_music` | composta | Notas musicales junto a auriculares. |
 | Musical chairs | Xogo das cadeiras | Juego de las sillas | Caminar alrededor de las sillas | `pal_musical_chairs` | composta | Silla en el centro con notas musicales y niño caminando alrededor. |
+| Musical | Musical | Musical | Mover el cuerpo como si fuera un instrumento | `pal_musical` | nova | Niño bailando con notas musicales coloridas y tambor. |
 | Muslin cloth | Muselina | Muselina | Tapar la cara con una muselina y descubrirla | `pal_muslin_cloth` | nova | Muselina suave y ligera doblada para jugar al cucú. |
 | Mussel raft | Batea | Batea | Hacer un cuadrado plano con las manos | `pal_mussel_raft` | nova | Batea flotante de madera sobre la ría con cuerdas sumergidas llenas de mejillones. |
 | Mussel | Mexillón | Mejillón | Abrir y cerrar las palmas juntas como un mejillón | `pal_mussel` | nova | Concha bivalva de mejillón azul oscuro abriéndose y cerrándose como dos palmas. |
@@ -1397,6 +1552,7 @@ Con lámina: 2718. **Sin lámina todavía: 1660** (las cuenta y las nombra `pyth
 | Nearby | Preto | Cerca | Sentarse cerca de un amigo | `pal_nearby` | nova | Dos niños sentados muy cerca el uno del otro. |
 | Nearly dry | Case seco | Casi seco | Sacudir las manos sobre el lavabo | `pal_nearly_dry` | composta | Manos casi secas sobre el lavabo con una sola gotita final. |
 | Neatly folded | Ben dobrado | Bien doblado | Enseñar el pañuelo doblado | `pal_neatly_folded` | nova | Pila de pañuelos y ropa bien doblada con bordes rectos y ordenados. |
+| Neck | Pescozo | Cuello | Mover la cabeza despacio de un lado a otro | `pal_neck` | nova | Primer plano de cabeza y hombros destacando el cuello al moverlo. |
 | Necklace | Colar de contas | Collar de cuentas | Dibujar un collar en el cuello | `pal_necklace` | nova | Collar circular de cuentas de colores brillantes ensartadas. |
 | Nee-naw, nee-naw! | Ni-no, ni-no! | ¡Ni-no, ni-no! | Hacer la sirena y correr | `pal_nee_naw_nee_naw` | composta | Sirena luminosa de emergencia y niño corriendo haciendo de coche de bomberos. |
 | Neighbour | Veciño | Vecino | Saludar al vecino | `pal_neighbour` | composta | Dos vecinos en casas contiguas saludándose alegres de ventana a puerta. |
@@ -1428,6 +1584,7 @@ Con lámina: 2718. **Sin lámina todavía: 1660** (las cuenta y las nombra `pyth
 | Nutty | Con sabor a noz | Con sabor a nuez | Oler una nuez abierta | `pal_nutty` | composta | Fruto seco de cáscara marrón soltando aroma tostado. |
 | Nuzzle | Aloumiñar co nariz | Acariciar con la nariz | Tocar la nariz del bebé con la nariz | `pal_nuzzle` | nova | Dos niños acercando suavemente nariz con nariz con ternura. |
 | Oak leaf | Folla de carballo | Hoja de roble | Dibujar el borde ondulado | `pal_oak_leaf` | nova | Hoja de roble verde con su borde característico de lóbulos ondulados. |
+| Oar | Remo | Remo | Mover un remo imaginario | `pal_oar` | nova | Remo de madera hundiéndose en el agua con salpicaduras al remar. |
 | Observation | Observación | Observación | Mirar con una lupa | `pal_observation` | nova | Lupa observando con detalle una mariquita roja sobre la hoja. |
 | Observe | Observar | Observar | Mirar sin tocar | `pal_observe` | nova | Niño quieto observando con atención una mariposa sin tocarla. |
 | Ocean | Océano | Océano | Abrir los brazos muy grandes | `pal_ocean` | composta | Gran océano azul abierto mostrado por las olas extensas y la ballena. |
@@ -1489,6 +1646,7 @@ Con lámina: 2718. **Sin lámina todavía: 1660** (las cuenta y las nombra `pyth
 | Parasol | Parasol | Sombrilla | Hacer sombra con la mano | `pal_parasol` | nova | Sombrilla abierta de jardín dando sombra sobre la hierba. |
 | Park bench | Banco do parque | Banco del parque | Sentarse en el banco | `pal_park_bench` | composta | Banco de madera del parque bajo un árbol verde. |
 | Park | Parque | Parque | Abrir los brazos y mirar alrededor contentos | `pal_park` | composta | Parque infantil amplio con tobogán y árbol verde. |
+| Parrot feather | Pluma de loro | Pluma de loro | Mover una pluma de colores | `pal_parrot_feather` | nova | Pluma tricolor brillante de loro flotando suavemente en el aire. |
 | Parrot | Papagaio | Loro | Repetir con un gesto lo que dice la persona adulta | `pal_parrot` | banco | Loro de plumaje colorido. |
 | Party blower | Matasogras | Matasuegras | Soplar el matasuegras cerca del bebé | `pal_party_blower` | banco | Accesorio festivo de soplar. |
 | Party | Festa | Fiesta | Dar vueltas en el sitio moviendo las manos | `pal_party` | banco | Cañón de fiesta con confeti. |
@@ -1574,6 +1732,7 @@ Con lámina: 2718. **Sin lámina todavía: 1660** (las cuenta y las nombra `pyth
 | Point to | Sinalar | Señalar | Señalar la nariz del bebé | `pal_point_to` | nova | Mano señalando suavemente la nariz del bebé sonriente. |
 | Point | Sinalar | Señalar | Señalar con el dedo algo que está cerca | `pal_point` | nova | Dedo índice extendido señalando directamente una pelota cercana. |
 | Pointed | Con punta | Con punta | Tocar la punta de un triángulo | `pal_pointed` | nova | Forma triangular acabada en punta afilada arriba. |
+| Pointer | Agulla | Aguja | Mover un dedo como una aguja | `pal_pointer` | nova | Esfera con aguja roja destacada girando como puntero. |
 | Pointy | Aguzado, aguzada | Puntiagudo, puntiaguda | Juntar las manos en punta por encima de la cabeza | `pal_pointy` | nova | Punta triangular afilada señalada arriba. |
 | Poke | Tocar co dedo | Tocar con el dedo | Tocar la masa con el dedo índice | `pal_poke` | nova | Dedo índice apretando y marcando un hoyito sobre una bola de masa blanda. |
 | Polar bear | Oso polar | Oso polar | Caminar pesado y despacio | `pal_polar_bear` | banco | Oso polar blanco de perfil. |
@@ -1619,6 +1778,7 @@ Con lámina: 2718. **Sin lámina todavía: 1660** (las cuenta y las nombra `pyth
 | Pull on boots | Calzar as botas | Calzarse las botas | Tirar de las botas hacia arriba | `pal_pull_on_boots` | composta | Bota fuerte tirada de las orejetas hacia arriba para calzarse. |
 | Pull on | Poñer tirando | Ponerse tirando | Tirar del jersey hacia abajo | `pal_pull_on` | composta | Tirando de un calcetín o bota hacia arriba para ponérselo. |
 | Pull the rope together: one, two, three! | Tirade xuntos da corda: un, dous, tres! | ¡Tirad juntos de la cuerda: uno, dos, tres! | Tracción cooperativa de la cuerda coordinada al conteo. | `pal_pull_rope_together` | nova | Tres niños alineados tirando juntos hacia la izquierda de una misma cuerda. |
+| Pull the strings | Mover os fíos | Mover los hilos | Mover los dedos hacia arriba | `pal_pull_the_strings` | nova | Cruz de madera arriba tirando de los hilos verticales de un títere. |
 | Pull up the rope | Tirar da corda | Tirar de la cuerda | Tirar de la cuerda hacia arriba | `pal_pull_up_the_rope` | nova | Niño agarrando una cuerda vertical y tirando fuerte hacia arriba. |
 | Pull | Tirar de | Tirar de | Tirar de una cuerda imaginaria hacia uno mismo | `pal_pull` | nova | Niño inclinado hacia atrás agarrando y tirando con fuerza de una cuerda hacia sí. |
 | Pull, pull, pull! | Tira, tira, tira! | ¡Tira, tira, tira! | Tirar de la cuerda | `pal_pull_pull_pull` | nova | Niño inclinado hacia atrás tirando con fuerza de la cuerda horizontal. |
@@ -1628,6 +1788,7 @@ Con lámina: 2718. **Sin lámina todavía: 1660** (las cuenta y las nombra `pyth
 | Pumpkin | Cabaza | Calabaza | Hacer una calabaza grande con los brazos en círculo | `pal_pumpkin` | nova | Calabaza naranja redonda de otoño sin cara. |
 | Puppet show | Función | Función | Abrir una cortina imaginaria | `pal_puppet_show` | nova | Teatrillo de guiñol con cortinas rojas abiertas y dos títeres actuando. |
 | Puppet | Monicreque | Títere | Hacer hablar a la mano como un títere | `pal_puppet` | nova | Marioneta simpática articulada suspendida de una cruceta con hilos. |
+| Puppeteer | Monicrequeiro | Titiritero | Mover un títere desde arriba | `pal_puppeteer` | nova | Titiritero manejando desde arriba con cruceta e hilos a una marioneta. |
 | Puppy | Canciño | Cachorro | Acariciar un cachorro de peluche | `pal_puppy` | banco | Cachorro tierno. |
 | Purple | Morado, morada | Morado, morada | Señalar algo morado en el aula | `pal_purple` | nova | Tres piezas moradas señaladas para identificar el color morado. |
 | Purr | Ronronar | Ronronear | Frotar la mejilla en la mano como un gato contento | `pal_purr` | nova | Gato contento con los ojos entrecerrados frotando su mejilla contra una mano y ronroneando. |
@@ -1640,6 +1801,7 @@ Con lámina: 2718. **Sin lámina todavía: 1660** (las cuenta y las nombra `pyth
 | Put on your sun hat | Pon o sombreiro | Ponte el sombrero | Ponerse el sombrero al oír la orden | `pal_put_on_your_sun_hat` | composta | Sombrero de sol bajando hacia la cabeza del niño. |
 | Put on your winter boots | Pon as botas de inverno | Ponte las botas de invierno | Sentarse, flexionar la pierna y mímica de calzar una bota pesada. | `pal_put_on_your_winter_boots` | composta | Botas de invierno colocándose en los pies. |
 | Put on | Poñer | Ponerse | Ponerse una prenda imaginaria por la cabeza | `pal_put_on` | composta | Gesto de ponerse una prenda encima del cuerpo. |
+| Put out a fire | Apagar un lume | Apagar un fuego | Mover la manguera | `pal_put_out_a_fire` | nova | Manguera proyectando agua a presión sobre llamas de fuego para apagarlas. |
 | Put the boat in the water! | Pon o barco na auga! | ¡Pon el barco en el agua! | — | `pal_put_the_boat_in_the_water` | composta | Colocando el barco desde arriba dentro del agua. |
 | Put the lens down gently. | Deixa a lupa con coidado. | Deja la lupa con cuidado. | — | `pal_put_lens_down` | composta | Flecha suave hacia abajo indicando dejar la lupa sobre la mesa. |
 | Put the rough one here and the smooth one there | Pon a áspera aquí e a lisa alí | Pon la áspera aquí y la lisa allí | Clasificación en dos aros según la textura percibida con la mano. | `pal_rough_here_smooth_there` | composta | Piedra áspera en un lado y superficie lisa en el otro. |
@@ -1669,6 +1831,7 @@ Con lámina: 2718. **Sin lámina todavía: 1660** (las cuenta y las nombra `pyth
 | Rainbow bubble | Burbulla de cores | Burbuja de colores | Señalar los colores de la burbuja | `pal_rainbow_bubble` | nova | Gran pompa de jabón con franjas de arcoíris señalada en el aire. |
 | Rainbow ribbon | Cinta de cores | Cinta de colores | Mover la cinta en ondas | `pal_rainbow_ribbon` | banco | Arcoíris de cintas de colores. |
 | Rainbow | Arco da vella | Arcoíris | Dibujar un arco grande en el aire con los dos brazos | `pal_rainbow` | banco | Arcoíris de siete colores. |
+| Rainbow-coloured | De mil cores | Multicolor | Mover la cinta de colores | `pal_rainbow_coloured` | nova | Cinta ondulante con franjas de los seis colores del arcoíris. |
 | Rainbow-striped | De raias de cores | De rayas de colores | Dibujar un arco de colores | `pal_rainbow_striped` | nova | Bandera o tela blanca decorada con seis franjas paralelas arcoíris. |
 | Raincoat | Chuvasqueiro | Chubasquero | Ponerse la capucha de un chubasquero imaginario | `pal_raincoat` | nova | Chubasquero impermeable amarillo con capucha bajo la lluvia. |
 | Raindrop | Pinga | Gota | Tocar la mano con un dedo como una gota | `pal_raindrop` | banco | Gota de lluvia azul. |
@@ -1798,6 +1961,7 @@ Con lámina: 2718. **Sin lámina todavía: 1660** (las cuenta y las nombra `pyth
 | Running makes it beat fast. | Correr faino latexar rápido. | Correr hace que lata rápido. | — | `pal_running_beats_fast` | composta | Niño corriendo acompañado de un corazón latiendo rápido. |
 | Rushing | Rápido e forte | Rápido y fuerte | Mover las manos muy rápido | `pal_rushing` | nova | Corriente rápida con espumas y flechas veloces avanzando con fuerza. |
 | Russet | Avermellado | Rojizo | Enseñar una hoja rojiza | `pal_russet` | nova | Hoja de roble de color cobrizo rojizo intenso de otoño. |
+| Rustle | Renxer | Crujir | Mover las hojas para que suenen | `pal_rustle` | nova | Hojas secas crujiendo con ondas sonoras al moverlas. |
 | Rusty | Ferruxento | Oxidado | Tocar una cadena vieja | `pal_rusty` | nova | Cadena metálica vieja con manchas rojizas de óxido tocada con el dedo. |
 | Safe and sound | San e salvo | Sano y salvo | Abrazar al bebé al volver | `pal_safe_and_sound` | composta | Dentro de casa sano y salvo dándose un abrazo tranquilo. |
 | Sail across the ocean | Cruzar o océano | Cruzar el océano | Remar y mirar lejos | `pal_sail_across_the_ocean` | nova | Velero navegando a través del océano abierto hacia adelante. |
@@ -1915,6 +2079,7 @@ Con lámina: 2718. **Sin lámina todavía: 1660** (las cuenta y las nombra `pyth
 | Shy | Tímido, tímida | Tímido, tímida | Taparse la cara con las manos y asomar un ojo | `pal_shy` | nova | Niño tímido tapando parte de la cara con las manos con mejillas sonrojadas. |
 | Side to side | Dun lado a outro | De un lado a otro | Balancear al bebé de un lado a otro | `pal_side_to_side` | nova | Movimiento de balanceo de un lado a otro indicado por flechas opuestas. |
 | Sieve | Coador | Colador | Dejar escurrir agua por el colador | `pal_sieve` | nova | Colador con rejilla reteniendo piedrecitas mientras caen las gotas de agua. |
+| Sift | Peneirar | Tamizar | Mover el tamiz | `pal_sift` | nova | Colador tamizando lluvia fina de harina sobre un cuenco rojo. |
 | Sight | Vista | Vista | Señalar los ojos | `pal_sight` | nova | Ojo abierto con rayos visuales señalado para representar el sentido de la vista. |
 | Silent room | Sala en silencio | Sala en silencio | Poner el dedo en los labios | `pal_silent_room` | composta | Sala en silencio representada por dedo en los labios y altavoz silenciado. |
 | Silent | En silencio | En silencio | Taparse la boca con las manos | `pal_silent` | nova | Rostro en calma con el dedo índice en los labios pidiendo silencio. |
@@ -1947,6 +2112,7 @@ Con lámina: 2718. **Sin lámina todavía: 1660** (las cuenta y las nombra `pyth
 | Sleepyhead | Durmiñón | Dormilón | Cerrar los ojos y roncar suave | `pal_sleepyhead` | composta | Persona acurrucada en la cama bien arropada. |
 | Slimy | Baboso, babosa | Viscoso, viscosa | Tocar algo imaginario y sacudir la mano | `pal_slimy` | nova | Sustancia verde viscosa y pegajosa con hilos colgando al retirar la mano. |
 | Slippers | Zapatillas | Zapatillas | Poner las zapatillas al bebé | `pal_slippers` | nova | Par de zapatillas suaves de casa. |
+| Slippery | Esvaradío, esvaradía | Resbaladizo, resbaladiza | Mover los pies como si resbalaran, sin caerse | `pal_slippery` | nova | Niño resbalando sobre un charco brillante manteniendo el equilibrio. |
 | Slither | Arrastrarse | Reptar | Arrastrarse por el suelo como una serpiente | `pal_slither` | composta | Serpiente reptando pegada al suelo. |
 | Slope | Costa | Cuesta | Inclinar la mano como una cuesta | `pal_slope` | nova | Cuesta inclinada con pendiente descendente señalada con flecha. |
 | Slow | Lento, lenta | Lento, lenta | Mover las manos muy despacio | `pal_slow` | composta | Tortuga avanzando con flecha corta y tranquila. |
@@ -1991,6 +2157,7 @@ Con lámina: 2718. **Sin lámina todavía: 1660** (las cuenta y las nombra `pyth
 | Soap and water | Xabón e auga | Jabón y agua | Enseñar el jabón y luego el agua | `pal_soap_and_water` | composta | Pastilla de jabón y gota de agua juntas. |
 | Soap | xabón | jabón | — | `pal_soap` | banco | Pastilla de jabón con espuma. |
 | Soap, rub, rinse | Xabón, fregar, aclarar | Jabón, frotar, aclarar | Hacer los tres gestos | `pal_soap_rub_rinse` | composta | Secuencia de jabón, frotar las manos y aclarar bajo el agua. |
+| Soapy | Con xabón | Enjabonado, enjabonada | Mover las manos como si resbalaran de jabón | `pal_soapy` | nova | Manos cubiertas de espuma jabonosa blanca y pompas flotando. |
 | Soar | Planear alto | Planear alto | Abrir los brazos y girar despacio | `pal_soar` | composta | Pájaro planeando alto y niño girando despacio con brazos abiertos. |
 | Sock puppet | Monicreque de calcetín | Títere de calcetín | Abrir y cerrar la mano como una boca | `pal_sock_puppet` | nova | Mano metida dentro de un títere de calcetín con ojos de botón abriendo la boca. |
 | Socks | Calcetíns | Calcetines | Subirse los calcetines imaginarios | `pal_socks` | banco | Par de calcetines de rayas. |
@@ -2005,6 +2172,7 @@ Con lámina: 2718. **Sin lámina todavía: 1660** (las cuenta y las nombra `pyth
 | Solo | Solo | Solo | Dar un paso adelante y cantar | `pal_solo` | composta | Un solo niño iluminado por un foco cantando ante el micrófono. |
 | Some soap. | Un pouco de xabón. | Un poco de jabón. | — | `xabon` | reutilizada | Pastilla de jabón con espuma. |
 | Some water. | Un pouco de auga. | Un poco de agua. | — | `auga` | reutilizada | Un poco de agua en el vaso. |
+| Song | Canción | Canción | Mover las manos como si dirigiera una canción | `pal_song` | nova | Niño moviendo las manos dirigiendo una canción rodeado de notas. |
 | Soothing | Calmante | Relajante | Acariciar la espalda en círculos | `pal_soothing` | nova | Caricia suave y circular en la espalda que calma y relaja. |
 | Sound asleep | Profundamente durmido | Profundamente dormido | Apoyar la cabeza en las manos juntas | `pal_sound_asleep` | composta | Cama con persona profundamente dormida bajo la luna. |
 | Soup | Caldo | Caldo | Soplar una cuchara de caldo caliente | `pal_soup` | composta | Cuenco de caldo caliente con cuchara enfriándose con un soplido. |
@@ -2062,6 +2230,7 @@ Con lámina: 2718. **Sin lámina todavía: 1660** (las cuenta y las nombra `pyth
 | Spread | Untar | Untar | Untar una rebanada imaginaria con un dedo | `pal_spread` | composta | Rebanada de pan untándose suavemente con mantequilla. |
 | Spring | Primavera | Primavera | Respirar hondo y sonreír con el sol en la cara | `pal_spring` | composta | Prado primaveral con tulipán, mariposa, árbol verde y sol cálido. |
 | Spring-like | Primaveral | Primaveral | Dar pasitos alegres | `pal_spring_like` | composta | Prado primaveral con flor, mariposa y niño dando pasitos alegres. |
+| Sprinkle spice | Botar especias por riba | Espolvorear | Mover los dedos por encima del plato | `pal_sprinkle_spice` | nova | Bote especiero espolvoreando granitos dorados sobre un plato. |
 | Sprinkle | Regar | Regar | Regar una planta imaginaria con los dedos | `pal_sprinkle` | composta | Gotitas ligeras cayendo sobre la planta en su maceta para regarla. |
 | Sprinkler | Aspersor | Aspersor | Girar echando agua | `pal_sprinkler` | composta | Aspersor girando mientras riega el césped con agua. |
 | Sprint fast | Esprintar | Esprintar | Correr muy rápido en el sitio | `pal_sprint_fast` | nova | Niño esprintando a toda velocidad hacia la derecha. |
@@ -2077,6 +2246,7 @@ Con lámina: 2718. **Sin lámina todavía: 1660** (las cuenta y las nombra `pyth
 | Stacking cups | Vasos para empillar | Vasos apilables | Apilar los vasos de colores | `pal_stacking_cups` | nova | Torre de vasos apilables de colores del grande al pequeño. |
 | Stag beetle | Vacaloura | Ciervo volante | Poner los dedos como cuernos | `pal_stag_beetle` | nova | Escarabajo ciervo volante marrón oscuro con sus dos grandes cuernos. |
 | Stage | Escenario | Escenario | Subir a un escenario imaginario | `pal_stage` | banco | Escenario de teatro con telón abierto y foco central. |
+| Stamp | Pisar forte | Pisotear | Mover los pies del bebé como pisando | `pal_stamp` | nova | Niño pisoteando fuerte con el pie contra el suelo con líneas de impacto. |
 | Stand like a heron | Quedar coma unha garza | Quedarse como una garza | Sostenerse en un pie | `pal_stand_like_a_heron` | composta | Criatura sosteniéndose en un pie imitando a la garza del agua. |
 | Stand on one leg | Suxeitarse nun pé | Sostenerse en un pie | Levantar un pie y contar | `pal_stand_on_one_leg` | nova | Niño manteniendo el equilibrio sobre una sola pierna con brazos abiertos. |
 | Stand up and clap your hands | Ponte de pé e dá palmas | Ponte de pie y da palmas | Levantarse despacio de la alfombra y dar dos palmadas. | `pal_stand_up_and_clap_your_hands` | composta | Niño de pie dando palmas con alegría. |
@@ -2108,6 +2278,7 @@ Con lámina: 2718. **Sin lámina todavía: 1660** (las cuenta y las nombra `pyth
 | sticky | pegañento | pegajoso | — | `pal_sticky` | nova | Sustancia espesa pegajosa con hilos colgando. |
 | Still | Quieto | Quieto | Quedarse quieto como una piedra | `pal_still` | nova | Niño completamente quieto de pie junto a una piedra firme. |
 | Stir | Remexer | Remover | Remover el caldo con una cuchara grande imaginaria | `pal_stir` | composta | Cuchara dando vueltas en círculo dentro de un cuenco. |
+| Stir, then taste | Remexer e logo probar | Remover y luego probar | Remover con el brazo y luego probar de la cuchara | `pal_stir_then_taste` | nova | Secuencia de remover en el cuenco y luego probar con la cuchara. |
 | Stocking | Calcetín de Nadal | Calcetín de Navidad | Meter la mano en el calcetín | `pal_stocking` | banco | Calcetín cálido de invierno. |
 | Stomp around | Pisar forte arredor | Pisar fuerte alrededor | Pisar fuerte dando una vuelta | `pal_stomp_around` | composta | Niño dando pisadas fuertes levantando la rodilla. |
 | Stomp in the snow | Pisa forte na neve | Pisa fuerte en la nieve | Marcha con pisadas marcadas y sonoras sobre la alfombra. | `pal_stomp_in_the_snow` | composta | Bota pisando fuerte en la nieve blanca. |
@@ -2125,6 +2296,7 @@ Con lámina: 2718. **Sin lámina todavía: 1660** (las cuenta y las nombra `pyth
 | Stop! | parar | parar | Quedarse quieto de golpe, con las manos en alto. | `pal_stop` | composta | Señal de stop y niño quieto con las manos en alto. |
 | Stop, look and listen | Para, mira e escoita | Para, mira y escucha | Parar, mirar a ambos lados y llevarse la mano a la oreja | `pal_stop_look_and_listen` | composta | Señal de parar, ojos mirando y oreja escuchando. |
 | Stopwatch | Cronómetro | Cronómetro | Pulsar el botón del cronómetro | `pal_stopwatch` | banco | Cronómetro con botón superior y aguja roja, coincidencia directa. |
+| Storm | Treboada | Tormenta | Mover todo el cuerpo fuerte | `pal_storm` | nova | Nube oscura de tormenta con rayo amarillo y lluvia intensa. |
 | Storm! Shake the sea with all your strength | Tormenta! Abanea o mar con toda a túa forza | ¡Tormenta! Agita el mar con toda tu fuerza | Agitación enérgica de la tela con movimiento amplio de brazos. | `pal_storm_shake_sea` | nova | Dos niños agitando con fuerza una tela azul formando grandes olas de tormenta. |
 | stormy | de treboada | de tormenta | — | `pal_stormy` | banco | Nube oscura de tormenta con rayo y lluvia. |
 | Story | Conto | Cuento | Abrir un libro imaginario y mirar al grupo | `pal_story` | composta | Libro de cuentos abierto mostrando imágenes y páginas. |
@@ -2138,6 +2310,7 @@ Con lámina: 2718. **Sin lámina todavía: 1660** (las cuenta y las nombra `pyth
 | Street | Rúa | Calle | Caminar en fila como por la calle | `pal_street` | nova | Calle urbana por donde caminan en fila los niños. |
 | Stretch time | Volta á calma | Vuelta a la calma | Estirar despacio | `pal_stretch_time` | nova | Niño sobre la esterilla estirando despacio los brazos hacia arriba en calma. |
 | Stretch | Estirar | Estirar | Estirar todo el cuerpo hacia el techo | `pal_stretch` | composta | Niño estirándose hacia arriba todo lo posible. |
+| Strings | Fíos | Hilos | Mover los dedos como hilos | `pal_strings` | nova | Hilos largos de colores colgando y ondulando suavemente. |
 | Striped | Raiado, raiada | De rayas | Dibujar rayas en el aire con un dedo | `pal_striped` | nova | Tela blanca decorada con rayas azules horizontales bien definidas. |
 | Stripes | Raias | Rayas | Dibujar rayas en el aire | `pal_stripes` | nova | Lámina de rayas verticales de colores brillantes paralelas entre sí. |
 | Stripy | Raiado | Rayado | Tocar un pañuelo de rayas | `pal_stripy` | nova | Bufanda o pañuelo con franjas de rayas horizontales tocada con la mano. |
@@ -2182,22 +2355,27 @@ Con lámina: 2718. **Sin lámina todavía: 1660** (las cuenta y las nombra `pyth
 | Sway like an oak | Abanearse coma un carballo | Mecerse como un roble | Mecer los brazos despacio | `pal_sway_like_an_oak` | composta | Roble frondoso y niño meciendo los brazos despacio como sus ramas. |
 | Sway with the current | Moverse coa corrente | Moverse con la corriente | Balancearse despacio | `pal_sway_with_the_current` | composta | Algas marinas balanceándose al ritmo de la corriente del mar. |
 | Sway | Abanearse | Balancearse | Balancear al bebé al son de la música | `pal_sway` | nova | Balancearse suavemente meciendo al bebé al son de la música. |
+| Swaying | Balanceante | Balanceante | Mover el cuerpo de un lado a otro | `pal_swaying` | nova | Tallos altos balanceándose de un lado a otro con flechas de vaivén. |
 | Sweet dreams | Felices soños | Dulces sueños | Lanzar un beso al aire con los ojos cerrados | `pal_sweet_dreams` | composta | Ojos cerrados bajo la luna mandando un beso suave de buenas noches. |
 | Sweet potato | Pataca doce | Boniato | Tocar el boniato templado | `pal_sweet_potato` | banco | Boniato asado partido. |
 | Sweet | Doce | Dulce | Sonreír y pasar la lengua por los labios | `pal_sweet` | composta | Caramelo y pastelito dulce para saborear con una sonrisa. |
 | Sweet-smelling baby | Bebé recendente | Bebé oloroso | Oler la cabeza del bebé | `pal_sweet_smelling_baby` | composta | Bebé limpio con aroma dulce de flor. |
 | Sweet-smelling | Recendente | Oloroso | Oler y suspirar | `pal_sweet_smelling` | composta | Flor de hibisco desprendiendo aroma dulce. |
 | Sweeter | Máis doce | Más dulce | Sonreír más | `pal_sweeter` | composta | Tarro de miel y fresa madura juntos: más dulce. |
+| Swim along | Nadar xuntos | Nadar juntos | Mover las dos manos como peces | `pal_swim_along` | nova | Niño nadando junto a un pececito en el agua. |
 | Swim in a pod | Nadar en grupo | Nadar en grupo | Moverse todos juntos | `pal_swim_in_a_pod` | composta | Manada de delfines nadando juntos en grupo sobre las olas. |
 | Swim like a dolphin | Nadar coma un golfiño | Nadar como un delfín | Saltar con las manos juntas | `pal_swim_like_a_dolphin` | composta | Delfín arqueado fuera del agua y niño imitando su salto. |
 | Swim like a fast fish in the ría | Nada coma un peixe rápido na ría | Nada como un pez rápido en la ría | Desplazamiento por el suelo con brazada alternada de pecho. | `pal_swim_fast_fish` | composta | Niño nadando a brazadas junto a un pez rápido en la ría. |
 | Swim like a fish | Nada coma un peixe | Nada como un pez | Nadar con las manos juntas delante del cuerpo | `pal_swim_like_a_fish` | composta | Pez tropical y criatura nadando juntos con las manos delante bajo el agua. |
 | Swim underwater | Nadar baixo a auga | Nadar bajo el agua | Aguantar el aire y nadar | `pal_swim_underwater` | nova | Criatura con gafas buceando por debajo de la línea de las olas con burbujas. |
+| Swim | Nadar | Nadar | Mover los brazos como si nadáramos | `pal_swim` | banco | Persona nadando en el agua con los brazos. |
 | Swim, little fish | Nada, peixiño | Nada, pececito | Mover la mano como un pez | `pal_swim_little_fish` | composta | Pececito nadando ágil por el agua. |
 | Swing from a vine | Colgarse dunha liana | Colgarse de una liana | Balancear los brazos como un mono | `pal_swing_from_a_vine` | composta | Niño agarrado de una liana balanceándose como un mono. |
 | Swing seat | Randeeira de bebé | Columpio de bebé | Empujar el columpio despacio | `pal_swing_seat` | nova | Asiento de columpio suspendido por dos cuerdas al empujarlo suave. |
 | Swing | Randearse | Columpiarse | Balancear los brazos como colgados de una rama | `pal_swing` | nova | Columpio balanceándose hacia delante y arriba. |
+| Swirl | Facer remuíños | Arremolinar | Hacer remolinos con los brazos | `pal_swirl` | nova | Espiral amplia con flecha girando en remolino. |
 | Swish | Enxaugar | Enjuagar | Mover el agua en la boca | `pal_swish` | nova | Carrillos hinchados enjuagando el agua de un lado a otro junto al vaso. |
+| Swishing | Axitado | Ondulante | Mover la cadera como una cola | `pal_swishing` | nova | Cola esponjosa ondulando de lado a lado con arco de movimiento. |
 | Switch off | Apagar | Apagar | Apagar la luz y decir «ooh» | `pal_switch_off` | nova | Dedo apretando la parte inferior de un interruptor para apagar la luz. |
 | Switch on | Acender | Encender | Pulsar el interruptor y ver la luz | `pal_switch_on` | nova | Interruptor activado en verde junto a bombilla amarilla recién encendida. |
 | Swivel chair | Cadeira xiratoria | Silla giratoria | Girar despacio en la silla | `pal_swivel_chair` | composta | Silla giratoria dando vueltas despacio sobre su base. |
@@ -2206,6 +2384,8 @@ Con lámina: 2718. **Sin lámina todavía: 1660** (las cuenta y las nombra `pyth
 | Table | Mesa | Mesa | Apoyar las palmas de las manos encima de la mesa | `pal_table` | nova | Mesa de madera con las dos manos apoyadas con firmeza encima. |
 | Tag game | Xogo de pillar | Juego de pillar | Tocar un hombro y huir | `pal_tag_game` | nova | Varios niños corriendo por el parque jugando al juego de pillar. |
 | Tag | Pillar | Pillar | Tocar el hombro de un amigo | `pal_tag` | nova | Un niño corriendo alcanza y toca el hombro de su amigo para pillarlo. |
+| Tail fin | Aleta caudal | Aleta caudal | Mover los pies juntos | `pal_tail_fin` | nova | Aleta caudal en forma de V saliendo sobre la superficie del mar. |
+| Tail | Rabo | Cola | Mover una cola imaginaria con las manos detrás | `pal_tail` | nova | Parte trasera de animal destacando la cola larga que se mueve. |
 | Tail-wagging | Que move o rabo | Que mueve el rabo | Mover la mano como un rabo | `pal_tail_wagging` | composta | Perro contento moviendo el rabo de un lado a otro con ondas. |
 | Take a bow | Facer unha reverencia | Hacer una reverencia | Inclinarse delante del público | `pal_take_a_bow` | nova | Niño inclinando el cuerpo entre cortinas rojas al terminar la función. |
 | Take a break | Facer unha pausa | Hacer una pausa | Parar y respirar | `pal_take_a_break` | nova | Criatura sentada en un banco descansando tranquila en una pausa. |
@@ -2314,6 +2494,7 @@ Con lámina: 2718. **Sin lámina todavía: 1660** (las cuenta y las nombra `pyth
 | The towel will be heavy. | A toalla vai pesar. | La toalla va a pesar. | — | `pal_the_towel_will_be_heavy` | composta | Toalla muy mojada tirando hacia abajo por el peso del agua. |
 | The train has gone down. | O tren baixou. | El tren ha bajado. | — | `pal_the_train_has_gone_down` | composta | Tren descendiendo por una pendiente hacia abajo. |
 | The train starts slow, then fast, then stops. | O tren empeza amodo, logo rápido, logo para. | El tren empieza despacio, luego rápido, luego para. | — | `pal_train_slow_fast_stops` | composta | Tren cambiando de despacio a rápido y parando. |
+| The tram is faster than the bus | O tranvía é máis rápido ca o autobús | El tranvía es más rápido que el autobús | Mover las manos rápido y despacio | `pal_the_tram_is_faster_than_the_bus` | nova | Tranvía verde adelantando con estelas de velocidad al autobús amarillo. |
 | The vet helps animals because she loves them | A veterinaria axuda aos animais porque os quere | La veterinaria ayuda a los animales porque los quiere | Acariciar un peluche | `pal_the_vet_helps_animals_because_she_loves_them` | composta | Veterinaria cuidando con estetoscopio y cariño a los animales. |
 | The weather was checked every morning. | O tempo mirábase cada mañá. | El tiempo se miraba cada mañana. | — | `pal_weather_checked_morning` | composta | Niño mirando el tiempo atmosférico cada mañana por la ventana. |
 | The wheels go round | As rodas xiran | Las ruedas giran | Girar los brazos como ruedas | `pal_the_wheels_go_round` | composta | Autobús con sus dos ruedas girando en círculos. |
@@ -2349,6 +2530,7 @@ Con lámina: 2718. **Sin lámina todavía: 1660** (las cuenta y las nombra `pyth
 | Thumbs up | Polgar arriba | Pulgar arriba | Levantar el pulgar | `pal_thumbs_up` | banco | Mano haciendo el gesto del pulgar arriba. |
 | Thumping | Retumbante | Que retumba | Golpear con el pie y escuchar | `pal_thumping` | nova | Pie golpeando fuerte en el suelo con ondas de retumbo. |
 | Thunder | Trono | Trueno | Golpear en las piernas muy fuerte | `pal_thunder` | composta | Nube de tormenta con relámpago amarillo y estruendo de trueno. |
+| Tick, tock! | Tic, tac! | ¡Tic, tac! | Mover la cabeza de un lado a otro al pulso | `pal_tick_tock` | nova | Reloj de péndulo oscilando en arco rítmico de un lado a otro. |
 | ticket | billete | billete | — | `pal_pal_ticket` | banco | Billete o entrada de colores. |
 | Tickle | Facer cóxegas | Hacer cosquillas | Caminar con los dedos por el brazo haciendo cosquillas | `pal_tickle` | nova | Dedos caminando suavemente por el brazo haciendo cosquillas alegres. |
 | Ticklish | Con cóxegas | Cosquilloso, cosquillosa | Reír encogidos cuando alguien se acerca con los dedos | `pal_ticklish` | nova | Niño riendo encogido mientras una pluma suave le hace cosquillas. |
@@ -2418,6 +2600,8 @@ Con lámina: 2718. **Sin lámina todavía: 1660** (las cuenta y las nombra `pyth
 | Tree trunk | Tronco | Tronco | Abrazar un tronco con el bebé | `pal_tree_trunk` | composta | Tronco de árbol grande abrazado con el bebé al lado. |
 | Tree | Árbore | Árbol | Ponerse de pie con los brazos abiertos como ramas | `pal_tree` | composta | Árbol frondoso y niño erguido con brazos abiertos como sus ramas. |
 | Treetop | Copa da árbore | Copa del árbol | Señalar la copa del árbol | `pal_treetop` | nova | Árbol frondoso señalando claramente la punta alta de su copa. |
+| Trickling | Pingando | Goteando | Mover un dedo despacio | `pal_trickling` | nova | Hilo fino de agua goteando suavemente por la roca hacia el charco. |
+| Tropical | Tropical | Tropical | Mover las manos como hierba alta | `pal_tropical` | nova | Palmera tropical con hojas amplias, flor de hibisco y sol cálido. |
 | Trot | Trotar | Trotar | Hacer trotar al bebé en la rodilla como un caballo | `pal_trot` | composta | Caballo trotando y niño imitando su trote. |
 | Tube | Tubo | Tubo | Mirar a través de un tubo | `pal_tube` | nova | Tubo cilíndrico hueco de cartón abierto por los dos extremos. |
 | Tulip | Tulipán | Tulipán | Abrir las manos como un tulipán | `pal_tulip` | banco | Tulipán rojo con tallo y hojas. |
@@ -2441,6 +2625,7 @@ Con lámina: 2718. **Sin lámina todavía: 1660** (las cuenta y las nombra `pyth
 | Twiggy | De pólas | De ramitas | Tocar un nido de ramitas | `pal_twiggy` | nova | Nido tejido con ramitas secas entrelazadas tocado con la mano. |
 | Twinkle | Escintilar | Titilar | Abrir y cerrar los dedos muy rápido por encima de la cabeza | `pal_twinkle` | nova | Estrella luminosa titilando con destellos intermitentes en el cielo nocturno. |
 | Twinkling | Titilante | Titilante | Abrir y cerrar los dedos despacio | `pal_twinkling` | nova | Luces estelares titilantes reflejándose como chispas sobre el agua tranquila. |
+| Twinkly | Escintilante | Centelleante | Mover los dedos como luces | `pal_twinkly` | nova | Cielo nocturno lleno de estrellas titilantes de varios tamaños. |
 | Twirl | Dar voltas | Girar | Girar un pañuelo en el aire | `pal_twirl` | composta | Niño haciendo girar un pañuelo colorido en el aire. |
 | Two apples, please | Dúas mazás, por favor | Dos manzanas, por favor | Enseñar dos dedos | `pal_two_apples_please` | composta | Mano abierta extendida pidiendo con educación dos manzanas rojas. |
 | Two big stones. | Dúas pedras grandes. | Dos piedras grandes. | — | `pal_two_big_stones` | composta | Dos piedras grandes una al lado de la otra. |
@@ -2474,6 +2659,7 @@ Con lámina: 2718. **Sin lámina todavía: 1660** (las cuenta y las nombra `pyth
 | Vote | Voto | Voto | Levantar la mano para votar | `pal_pal_vote` | banco | Urna con papeleta entrando. |
 | Waddle | Bambearse | Anadear | Caminar balanceándose como un pato | `pal_waddle` | composta | Pato caminando y niño anadeando balanceando su cuerpo de un lado a otro. |
 | Wade in | Entrar camiñando na auga | Entrar caminando en el agua | Levantar las rodillas | `pal_wade_in` | nova | Niño entrando en el agua poco profunda levantando las rodillas al caminar. |
+| Wag | Abanar o rabo | Mover la cola | Mover las caderas como una cola contenta | `pal_wag` | nova | Perrito contento moviendo la cola de lado a lado con arco de meneo. |
 | Wait for green | Agarda polo verde | Espera al verde | Parar y esperar | `pal_wait_for_green` | nova | Semáforo iluminado en verde abajo mientras el niño espera. |
 | Wait for me | Agárdame | Espérame | — | `pal_esperame` | nova | Un niño corre detrás con la mano tendida y la de delante se gira a mirarlo. |
 | Wait for | Agardar por | Esperar a | Mirar el reloj | `pal_wait_for` | nova | Niño sentado esperando tranquilo mientras mira la hora en el reloj. |
@@ -2515,6 +2701,7 @@ Con lámina: 2718. **Sin lámina todavía: 1660** (las cuenta y las nombra `pyth
 | Warm hands, warm heart | Mans quentes, corazón quente | Manos calientes, corazón caliente | Frotar las manos y posarlas en el pecho | `pal_warm_hands_warm_heart` | nova | Niño posando ambas manos calientes con ternura sobre el pecho. |
 | Warm milk | Leite morno | Leche templada | Acercar el biberón templado | `vocab_62` | reutilizada | Biberón morno del set propio. |
 | Warm up hands | Quentar as mans | Calentar las manos | Soplar en las manos del bebé | `pal_warm_up_hands` | composta | Manos juntitas recibiendo aliento cálido para entrar en calor. |
+| Warm up your body | Quenta o corpo | Calienta el cuerpo | Mover todo el cuerpo | `pal_warm_up_your_body` | nova | Niño sobre esterilla estirando brazos arriba para calentar el cuerpo. |
 | Warm up | Quentarse | Calentarse | Frotarse las manos y el cuerpo para entrar en calor | `pal_warm_up` | nova | Niño moviéndose con energía y balanceando brazos para entrar en calor. |
 | Warm with breath | Quentar co alento | Calentar con el aliento | Soplar en las manos | `pal_warm_with_breath` | composta | Niño soplando vaho tibio directamente sobre las manos frías. |
 | Warm your hands and rub them fast | Quenta as mans e frégaas rápido | Calienta las manos y frótalas rápido | Frotar las palmas rápidamente y acercarlas a la cara sintiendo el calor. | `pal_warm_hands_rub_fast` | composta | Manos frotándose rápido para entrar en calor. |
@@ -2543,6 +2730,7 @@ Con lámina: 2718. **Sin lámina todavía: 1660** (las cuenta y las nombra `pyth
 | Watch the rain | Mirar a choiva | Mirar la lluvia | Mirar por la ventana con el bebé | `pal_watch_the_rain` | nova | Bebé contemplando a través de la ventana cómo caen las gotas de lluvia. |
 | Watch the sky | Mirar o ceo | Mirar el cielo | Mirar hacia arriba en silencio | `pal_watch_the_sky` | composta | Niño mirando hacia arriba al cielo con sol y nubes. |
 | Watch the waves | Mirar as ondas | Mirar las olas | Mirar el mar en silencio | `pal_watch_the_waves` | composta | Niño sentado mirando tranquilamente las olas del mar. |
+| Water always flows downhill | A auga sempre baixa | El agua siempre baja | Mover las manos de arriba abajo | `pal_water_always_flows_downhill` | nova | Agua fluyendo cuesta abajo por la ladera verde con flecha descendente. |
 | Water balloon | Globo de auga | Globo de agua | Pasar un globo con cuidado | `pal_water_balloon` | composta | Globo rodeado de gotas de agua: globo de agua. |
 | Water bottle | Botella de auga | Botella de agua | Dar un sorbo de agua | `pal_water_bottle` | composta | Botella reutilizable de agua junto a una criatura dispuesta a dar un sorbo. |
 | Water break | Pausa para beber | Pausa para beber | Beber un sorbo | `pal_water_break` | composta | Pausa tras correr para hidratarse bebiendo agua de la botella. |
@@ -2561,6 +2749,7 @@ Con lámina: 2718. **Sin lámina todavía: 1660** (las cuenta y las nombra `pyth
 | Watermelon | Sandía | Sandía | Dibujar una tajada con las manos | `pal_watermelon` | banco | Tajada roja de sandía con pepitas. |
 | Waterproof | Impermeable | Impermeable | Dejar resbalar agua por el impermeable | `pal_waterproof` | nova | Chubasquero amarillo impermeable haciendo resbalar las gotas de lluvia. |
 | Wave and smile | Acenar e sorrir | Saludar y sonreír | Saludar con la mano y sonreír a la vez | `pal_wave_and_smile` | composta | Niño sonriendo ampliamente junto a una mano abierta saludando. |
+| Wave fingers | Mover os dedos | Mover los dedos | Mover los dedos como hierba | `pal_wave_fingers` | nova | Mano abierta moviendo los dedos suavemente de lado a lado. |
 | Wave goodbye | Acenar para despedirse | Decir adiós con la mano | Saludar desde la puerta | `pal_wave_goodbye` | composta | Niño levantando la mano abierta para despedirse diciendo adiós. |
 | Wave to the boat | Acenar ao barco | Saludar al barco | Saludar hacia el mar | `pal_wave_to_the_boat` | composta | Niño saludando con la mano al barco que navega. |
 | Wave your graduation cap | Axitar o birrete | Agitar el birrete | Agitar la mano en el aire | `pal_wave_your_graduation_cap` | composta | Niño sosteniendo en alto y agitando alegre el birrete en el aire. |
@@ -2638,13 +2827,16 @@ Con lámina: 2718. **Sin lámina todavía: 1660** (las cuenta y las nombra `pyth
 | White | Branco, branca | Blanco, blanca | Señalar algo blanco en el aula | `pal_white` | nova | Mancha/círculo blanco con contorno nítido. |
 | Who runs? | Quen corre? | ¿Quién corre? | — | `pal_who_runs` | composta | Niño corriendo rápido con flecha. |
 | Whoosh around | Correr coma o vento | Correr como el viento | Correr en círculo haciendo «fiuuu» | `pal_whoosh_around` | nova | Niño corriendo rápido en círculo con líneas de viento. |
+| Whoosh! | Fiuuu! | ¡Fiuuu! | Mover los brazos como el viento | `pal_whoosh` | nova | Ráfaga rápida de viento barriendo hojas en curva ascendente. |
 | Whose turn is it? | De quen é a quenda? | ¿De quién es el turno? | Mirar alrededor | `pal_whose_turn` | composta | Dos niños mirándose alternando el turno con la pelota en medio. |
 | Why are you putting the bandage? Because the cat is sick. | Por que lle pos a venda? Porque o gato está malo. | ¿Por qué le pones la venda? Porque el gato está malito. | — | `pal_why_bandage_cat_sick` | composta | Gato malito con termómetro mientras se le acerca una venda. |
 | Wide awake | Ben esperto | Bien despierto | Abrir mucho los ojos | `pal_wide_awake` | nova | Niño en la cama de noche con los ojos muy abiertos completamente despierto. |
 | Wide | Ancho, ancha | Ancho, ancha | Abrir mucho las piernas y los brazos | `pal_wide` | nova | Niño abriendo mucho brazos y piernas con flechas hacia lo ancho. |
 | Wide-eyed | Cos ollos abertos | Con los ojos abiertos | Abrir mucho los ojos sorprendidos | `pal_wide_eyed` | nova | Cara asombrada con los ojos redondos abiertos de par en par. |
 | Wider | Máis ancho | Más ancho | Abrir los brazos más | `pal_wider` | nova | Comparación visual de un rectángulo estrecho frente a otro más ancho. |
+| Wiggle your fingers | Move os dedos | Mueve los dedos | Mover los dedos en el aire como si tocaran el piano | `pal_wiggle_your_fingers` | nova | Dos manos moviendo rápidamente las puntas de los dedos. |
 | Wild and free | Salvaxe e libre | Salvaje y libre | Correr con los brazos abiertos | `pal_wild_and_free` | composta | Niño corriendo libre con los brazos bien abiertos en el campo. |
+| Wild wind | Vento forte | Viento fuerte | Mover los brazos con fuerza | `pal_wild_wind` | nova | Viento fuerte en ráfagas doblando un árbol y arrastrando hojas. |
 | Will it be light? | Será lixeira? | ¿Será ligera? | — | `pal_will_it_be_light` | composta | Pluma ligerísima flotando suavemente hacia arriba. |
 | Will it roll? | Rodará? | ¿Rodará? | Empujar y mirar | `pal_will_it_roll` | nova | Pelota en lo alto de una rampa recibiendo un empujón para ver si rueda. |
 | Will you have tried blue by then? | Terás probado o azul para entón? | ¿Habrás probado el azul para entonces? | — | `pal_tried_blue_by_then` | composta | Paleta de pintura con bote azul y pregunta. |
@@ -2652,6 +2844,7 @@ Con lámina: 2718. **Sin lámina todavía: 1660** (las cuenta y las nombra `pyth
 | Win | Gañar | Ganar | Levantar los brazos | `pal_win` | composta | Medalla de oro y niño alzando los dos brazos en señal de triunfo. |
 | Wind chime | Campaíñas de vento | Campanillas de viento | Mover las campanitas despacio | `pal_wind_chime` | banco | Campanillas de viento colgantes. |
 | Wind turbine | Muíño eólico | Aerogenerador | Girar los brazos | `pal_wind_turbine` | banco | Aerogenerador de aspas giratorias. |
+| Wind | Vento | Viento | Soplar y mover los brazos de un lado a otro | `pal_wind` | nova | Brisa de aire dibujada en rizos de viento surcando el cielo. |
 | Winding | Serpenteante | Serpenteante | Mover la mano en zigzag | `pal_winding` | nova | Camino sinuoso en curvas en zigzag marcado por el campo. |
 | Windmill | Muíño | Molino | Girar los brazos como un molino | `pal_windmill` | banco | Molino de viento con aspas que giran. |
 | Window pane | Cristal | Cristal | Seguir una gota en el cristal | `vocab_51` | reutilizada | Ventana con cristal y sol del set propio. |
@@ -2663,13 +2856,18 @@ Con lámina: 2718. **Sin lámina todavía: 1660** (las cuenta y las nombra `pyth
 | Winner | Gañador | Ganador | Levantar los brazos contentos | `pal_winner` | composta | Trofeo de premio y ganador en el podio con los brazos levantados. |
 | Winning | Gañando | Ganando | Sonreír y dar palmas | `pal_winning` | composta | Trofeo brillante dorado y niño sonriendo y aplaudiendo contento. |
 | Winter | Inverno | Invierno | Abrazarse a uno mismo con frío | `pal_winter` | banco | Paisaje de invierno con nieve, muñeco de nieve y niños abrigados. |
+| Wipers | Limpaparabrisas | Limpiaparabrisas | Mover los brazos como limpiaparabrisas | `pal_wipers` | nova | Parabrisas con dos limpiaparabrisas barriendo en arco las gotas. |
 | Wish | Desexar | Desear | Cerrar los ojos y cruzar los dedos | `pal_wish` | composta | Estrella brillante en la noche al pedir un deseo. |
 | With the drum | Co tambor | Con el tambor | Caminar al pulso de un tambor imaginario | `pal_with_the_drum` | composta | Tambor marcando el pulso mientras el niño camina al ritmo. |
 | With the wind | Co vento | Con el viento | Correr con los brazos abiertos | `pal_with_the_wind` | composta | Viento soplando fuerte empujando al niño que corre con brazos abiertos. |
+| Wizard | Mago | Mago | Mover una varita | `pal_wizard` | nova | Sombrero azul estrellado de mago junto a varita mágica brillante. |
 | Wobble board | Táboa de equilibrio | Tabla de equilibrio | Balancearse encima de la tabla | `pal_wobble_board` | nova | Tabla curva de equilibrio con niño encima abriendo los brazos. |
 | Wobbly bridge | Ponte que bambea | Puente que se tambalea | Caminar con equilibrio | `pal_wobbly_bridge` | nova | Puente ondulado que se mueve y niño cruzando en equilibrio con brazos en cruz. |
+| Wobbly bubble | Burbulla que treme | Burbuja temblorosa | Mover las manos temblando | `pal_wobbly_bubble` | nova | Pompa grande ovalada deformándose y temblando en el aire. |
+| Wobbly jelly | Xelatina que treme | Gelatina temblorosa | Mover el plato para que tiemble | `pal_wobbly_jelly` | nova | Gelatina rosa temblando sobre un plato blanco con ondas de vibración. |
 | Wobbly legs | Pernas que tremen | Piernas temblorosas | Temblar las piernas | `pal_wobbly_legs` | nova | Piernas arqueadas temblando como flan de lado a lado. |
 | Wobbly tooth | Dente que se move | Diente que se mueve | Tocar un diente con la lengua | `pal_wobbly_tooth` | nova | Boca abierta destacando un diente flojo torcido con líneas de movimiento. |
+| Wobbly tower | Torre que bambea | Torre que se tambalea | Mover la torre con cuidado | `pal_wobbly_tower` | nova | Torre alta de bloques inclinada tambaleándose a punto de caer. |
 | Wolf costume | Disfrace de lobo | Disfraz de lobo | Ponerse las orejas de lobo | `pal_wolf_costume` | composta | Disfraz de lobo preparado para representar el cuento. |
 | Wolf | Lobo | Lobo | Caminar a cuatro patas despacio | `pal_wolf` | banco | Lobo gris de frente con orejas en punta, coincidencia directa. |
 | Wooden plank | Táboa de madeira | Tabla de madera | Llevar una tabla entre dos | `pal_wooden_plank` | nova | Dos niños llevando juntos una tabla larga de madera entre los dos. |
@@ -2687,6 +2885,7 @@ Con lámina: 2718. **Sin lámina todavía: 1660** (las cuenta y las nombra `pyth
 | Worry doll | Boneca quitapesares | Muñeca quitapenas | Susurrar a una muñeca | `pal_worry_doll` | nova | Muñeca quitapenas tradicional vestida con franjas de colores vivos. |
 | Wrap in a towel | Envolver na toalla | Envolver en la toalla | Envolver al bebé y abrazarlo | `pal_wrap_in_a_towel` | composta | Envolver suavemente al bebé en su toalla y darle un abrazo. |
 | Wrapping paper | Papel de agasallo | Papel de regalo | Arrugar papel de regalo | `pal_wrapping_paper` | composta | Paquete envuelto con papel de colores y lazo. |
+| Wriggle toes | Menear os dedos dos pés | Mover los deditos | Mover los deditos en la arena | `pal_wriggle_toes` | nova | Dos pies descalzos en la arena moviendo los deditos con ondas. |
 | Wrist | Boneca | Muñeca | Rodear la muñeca con los dedos | `pal_wrist` | composta | Mano señalando la muñeca rodeada por pulsera. |
 | Xylophone | Xilófono | Xilófono | Golpear las teclas del xilófono | `pal_xylophone` | nova | Xilófono infantil de láminas de colores con baqueta. |
 | Yawn | Bocexar | Bostezar | Abrir mucho la boca y estirar los brazos | `pal_yawn` | composta | Niño abriendo mucho la boca en un bostezo de sueño. |
@@ -2724,3 +2923,4 @@ Con lámina: 2718. **Sin lámina todavía: 1660** (las cuenta y las nombra `pyth
 | Zip it up! | Sobe a cremalleira! | ¡Sube la cremallera! | Subir la cremallera | `pal_zip_it_up` | nova | Cremallera del abrigo cerrándose completamente hasta arriba. |
 | Zip up | Subir a cremalleira | Subir la cremallera | Subir la cremallera hasta arriba | `pal_zip_up` | nova | Subiendo la cremallera abierta de la chaqueta hacia arriba. |
 | Zoom through space | Voar polo espazo | Volar por el espacio | Correr con los brazos estirados | `pal_zoom_through_space` | composta | Niño corriendo con los brazos extendidos volando entre estrellas y cohete. |
+| Zoom | Ir a toda velocidade | Ir a toda velocidad | Mover los brazos como un coche rápido | `pal_zoom` | nova | Coche de carreras avanzando a gran velocidad con estelas largas. |

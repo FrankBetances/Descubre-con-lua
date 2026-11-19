@@ -151,7 +151,8 @@
           "tprAction": {
             "gl": "Mover as cadeiras coma un rabo contento",
             "es": "Mover las caderas como una cola contenta"
-          }
+          },
+          "lamina": "pal_wag"
         },
         {
           "id": "3_4.febreiro.s1.fluffy",
@@ -232,7 +233,8 @@
           "tprAction": {
             "gl": "Chamar cun aceno suave e dar palmadas nos xeonllos",
             "es": "Llamar con un gesto suave y dar palmadas en las rodillas"
-          }
+          },
+          "lamina": "pal_come_here_puppy"
         },
         {
           "id": "3_4.febreiro.s1.like-a-cat",
@@ -789,7 +791,8 @@
           "tprAction": {
             "gl": "Mover un rabo imaxinario coas mans detrás",
             "es": "Mover una cola imaginaria con las manos detrás"
-          }
+          },
+          "lamina": "pal_tail"
         },
         {
           "id": "3_4.febreiro.s4.wings",

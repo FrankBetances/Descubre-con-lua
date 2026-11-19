@@ -33,7 +33,8 @@
             "gl": "Facer un tellado en punta coas mans",
             "es": "Hacer un tejado en punta con las manos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_chapel"
         },
         {
           "id": "4_5.novembro.s1.viewpoint",
@@ -211,7 +212,8 @@
             "gl": "Estirar a man cara arriba",
             "es": "Estirar la mano hacia arriba"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_almost_at_the_top"
         },
         {
           "id": "4_5.novembro.s1.what-can-you-see-from-here",
@@ -277,7 +279,8 @@
             "gl": "Poñer un dedo coma un chapeu",
             "es": "Poner un dedo como un sombrero"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_acorn_cap"
         },
         {
           "id": "4_5.novembro.s2.tree-rings",
@@ -707,7 +710,8 @@
             "gl": "Pousar a man moi amodo",
             "es": "Posar la mano muy despacio"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_be_gentle_with_bugs"
         },
         {
           "id": "4_5.novembro.s3.look-under-the-log",
@@ -763,7 +767,8 @@
             "gl": "Estender a man coma un fento",
             "es": "Extender la mano como un helecho"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_bracken"
         },
         {
           "id": "4_5.novembro.s4.toadstool",
@@ -785,7 +790,8 @@
             "gl": "Coller unha baga imaxinaria",
             "es": "Coger una baya imaginaria"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_berry"
         },
         {
           "id": "4_5.novembro.s4.holly",
@@ -832,7 +838,8 @@
             "gl": "Poñer dúas follas lado a lado",
             "es": "Poner dos hojas lado a lado"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_compare"
         },
         {
           "id": "4_5.novembro.s4.match-colours",
@@ -877,7 +884,8 @@
             "gl": "Meter follas nunha bolsa",
             "es": "Meter hojas en una bolsa"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_collect_leaves"
         },
         {
           "id": "4_5.novembro.s4.darker",

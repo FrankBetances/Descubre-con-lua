@@ -485,7 +485,8 @@
             "gl": "Inchar e desinchar o peito",
             "es": "Inflar y desinflar el pecho"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_breathe_in_breathe_out"
         }
       ]
     },
@@ -607,7 +608,8 @@
             "gl": "Facer un gato coas costas",
             "es": "Hacer un gato con la espalda"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_arch_your_back"
         },
         {
           "id": "5_6.outubro.s3.lunge",
@@ -685,7 +687,8 @@
             "gl": "Mover todo o corpo",
             "es": "Mover todo el cuerpo"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_warm_up_your_body"
         },
         {
           "id": "5_6.outubro.s3.stand-like-a-tree",
@@ -762,7 +765,8 @@
             "gl": "Facer os xestos da noite en orde",
             "es": "Hacer los gestos de la noche en orden"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_bedtime_routine"
         },
         {
           "id": "5_6.outubro.s4.alarm-clock",

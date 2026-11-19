@@ -627,7 +627,8 @@
             "gl": "Tapar a semente coas mans",
             "es": "Tapar la semilla con las manos"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_cover_with_soil"
         },
         {
           "id": "0_2.abril.s3.watch-it-grow",
@@ -858,7 +859,8 @@
             "gl": "Mover os dedos coma herba",
             "es": "Mover los dedos como hierba"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_wave_fingers"
         },
         {
           "id": "0_2.abril.s4.walk-fingers",
@@ -927,7 +929,8 @@
             "gl": "Bater palmiñas",
             "es": "Dar palmitas"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_clapping"
         },
         {
           "id": "0_2.abril.s4.tap-tap-tap",

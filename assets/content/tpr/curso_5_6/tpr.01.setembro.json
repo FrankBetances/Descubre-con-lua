@@ -311,7 +311,8 @@
             "gl": "Pousar unha insignia no peito",
             "es": "Poner una insignia en el pecho"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_badge"
         },
         {
           "id": "5_6.setembro.s2.team-circle",
@@ -378,7 +379,8 @@
             "gl": "Chocar as mans todos",
             "es": "Chocar las manos todos"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_celebrate_as_a_team"
         },
         {
           "id": "5_6.setembro.s2.supportive",

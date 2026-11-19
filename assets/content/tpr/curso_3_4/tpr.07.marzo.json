@@ -115,7 +115,8 @@
           "tprAction": {
             "gl": "Mesturar pinturas imaxinarias movendo a man en círculos",
             "es": "Mezclar pinturas imaginarias moviendo la mano en círculos"
-          }
+          },
+          "lamina": "pal_mix"
         },
         {
           "id": "3_4.marzo.s1.stick",
@@ -369,7 +370,8 @@
           "tprAction": {
             "gl": "Botar unha pelota imaxinaria coa man",
             "es": "Botar una pelota imaginaria con la mano"
-          }
+          },
+          "lamina": "pal_bounce"
         },
         {
           "id": "3_4.marzo.s2.fold",
@@ -730,7 +732,8 @@
           "tprAction": {
             "gl": "Coller unha froita con cada man",
             "es": "Coger una fruta con cada mano"
-          }
+          },
+          "lamina": "pal_apples_and_pears"
         }
       ]
     },
@@ -810,7 +813,8 @@
           "tprAction": {
             "gl": "Apertar un fol imaxinario baixo o brazo e soprar",
             "es": "Apretar el fuelle de una gaita imaginaria bajo el brazo"
-          }
+          },
+          "lamina": "pal_bagpipes"
         },
         {
           "id": "3_4.marzo.s4.rattle",
@@ -916,7 +920,8 @@
           "tprAction": {
             "gl": "Mover o corpo coma se fose un instrumento",
             "es": "Mover el cuerpo como si fuera un instrumento"
-          }
+          },
+          "lamina": "pal_musical"
         },
         {
           "id": "3_4.marzo.s4.shaky",

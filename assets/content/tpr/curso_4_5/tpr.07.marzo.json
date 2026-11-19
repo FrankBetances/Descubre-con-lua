@@ -137,7 +137,8 @@
             "gl": "Mover os dedos por riba do prato",
             "es": "Mover los dedos por encima del plato"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_sprinkle_spice"
         },
         {
           "id": "4_5.marzo.s1.pull-a-face",
@@ -602,7 +603,8 @@
             "gl": "Facer burbullas coas mans",
             "es": "Hacer burbujas con las manos"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_boil"
         },
         {
           "id": "4_5.marzo.s3.grate",
@@ -864,7 +866,8 @@
             "gl": "Estender a man pedindo",
             "es": "Extender la mano pidiendo"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_ask_for"
         },
         {
           "id": "4_5.marzo.s4.cheap",

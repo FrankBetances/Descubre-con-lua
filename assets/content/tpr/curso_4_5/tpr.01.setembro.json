@@ -54,7 +54,8 @@
             "gl": "Poñerse diante do grupo",
             "es": "Ponerse delante del grupo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_captain"
         },
         {
           "id": "4_5.setembro.s1.agreement",
@@ -65,7 +66,8 @@
             "gl": "Darse a man co compañeiro",
             "es": "Darse la mano con el compañero"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_agreement"
         },
         {
           "id": "4_5.setembro.s1.talking-stick",
@@ -257,7 +259,8 @@
             "gl": "Poñer un casco imaxinario",
             "es": "Ponerse un casco imaginario"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_construction_site"
         },
         {
           "id": "4_5.setembro.s2.wooden-plank",
@@ -280,7 +283,8 @@
             "gl": "Facer unha ponte cos corpos",
             "es": "Hacer un puente con los cuerpos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_bridge"
         },
         {
           "id": "4_5.setembro.s2.plan",
@@ -314,7 +318,8 @@
             "gl": "Poñer as pezas grandes abaixo",
             "es": "Poner las piezas grandes abajo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_base"
         },
         {
           "id": "4_5.setembro.s2.blueprint",
@@ -337,7 +342,8 @@
             "gl": "Poñer bloques ata arriba",
             "es": "Poner bloques hasta arriba"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_build_high"
         },
         {
           "id": "4_5.setembro.s2.hold-steady",
@@ -371,7 +377,8 @@
             "gl": "Unir dúas pezas",
             "es": "Unir dos piezas"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_connect"
         },
         {
           "id": "4_5.setembro.s2.share-blocks",
@@ -817,7 +824,8 @@
             "gl": "Respirar amodo coas mans na barriga",
             "es": "Respirar despacio con las manos en la barriga"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_calm_down"
         },
         {
           "id": "4_5.setembro.s4.express",

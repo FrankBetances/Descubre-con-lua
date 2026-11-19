@@ -315,7 +315,8 @@
             "gl": "Pousar escuma na man",
             "es": "Posar espuma en la mano"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_bath_foam"
         },
         {
           "id": "0_2.maio.s2.lotion",
@@ -338,7 +339,8 @@
             "gl": "Limpar a cara cun algodón",
             "es": "Limpiar la cara con un algodón"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_cotton_wool"
         },
         {
           "id": "0_2.maio.s2.soap-up",
@@ -622,7 +624,8 @@
             "gl": "Soarse o nariz cun pano",
             "es": "Sonarse la nariz con un pañuelo"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_blow_your_nose"
         },
         {
           "id": "0_2.maio.s3.dry-off",
@@ -911,7 +914,8 @@
             "gl": "Mover as mans tremendo",
             "es": "Mover las manos temblando"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_wobbly_bubble"
         },
         {
           "id": "0_2.maio.s4.rainbow-bubble",

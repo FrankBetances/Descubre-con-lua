@@ -151,7 +151,8 @@
             "gl": "Brincar no sitio",
             "es": "Botar en el sitio"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_bounce_up_and_down"
         },
         {
           "id": "2_3.outubro.s1.springy-legs",
@@ -173,7 +174,8 @@
             "gl": "Dobrarse cara adiante",
             "es": "Doblarse hacia adelante"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_bendy"
         },
         {
           "id": "2_3.outubro.s1.jumpy",
@@ -381,7 +383,8 @@
             "gl": "Facer remuíños cos brazos",
             "es": "Hacer remolinos con los brazos"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_swirl"
         },
         {
           "id": "2_3.outubro.s2.rotate",
@@ -567,7 +570,8 @@
             "gl": "Rodear o cono correndo",
             "es": "Rodear el cono corriendo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_cone"
         },
         {
           "id": "2_3.outubro.s3.playground",
@@ -614,7 +618,8 @@
             "gl": "Mover os brazos coma un coche rápido",
             "es": "Mover los brazos como un coche rápido"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_zoom"
         },
         {
           "id": "2_3.outubro.s3.jog",
@@ -785,7 +790,8 @@
             "gl": "Bailar en fila coas mans nos ombros",
             "es": "Bailar en fila con las manos en los hombros"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_conga_line"
         },
         {
           "id": "2_3.outubro.s4.disco",

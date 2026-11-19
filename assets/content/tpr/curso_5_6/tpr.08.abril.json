@@ -556,7 +556,8 @@
             "gl": "Pedalear no aire",
             "es": "Pedalear en el aire"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_bike_ride"
         },
         {
           "id": "5_6.abril.s3.tree-planting",
@@ -770,7 +771,8 @@
             "gl": "Mover os pés xuntos",
             "es": "Mover los pies juntos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_tail_fin"
         },
         {
           "id": "5_6.abril.s4.whistle-sound",

@@ -199,7 +199,8 @@
           "tprAction": {
             "gl": "Mover os pés coma se esvarasen, sen caer",
             "es": "Mover los pies como si resbalaran, sin caerse"
-          }
+          },
+          "lamina": "pal_slippery"
         },
         {
           "id": "3_4.decembro.s1.brrr-it-s-cold",
@@ -558,7 +559,8 @@
           "tprAction": {
             "gl": "Taparse cunha manta imaxinaria ata o queixo",
             "es": "Taparse con una manta imaginaria hasta la barbilla"
-          }
+          },
+          "lamina": "pal_blanket"
         },
         {
           "id": "3_4.decembro.s3.pyjamas",

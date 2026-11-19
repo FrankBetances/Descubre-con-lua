@@ -188,7 +188,8 @@
             "gl": "Premer o nariz coma un botón",
             "es": "Apretar la nariz como un botón"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_button_nose"
         },
         {
           "id": "0_2.outubro.s1.chubby-cheeks",
@@ -199,7 +200,8 @@
             "gl": "Inchar as meixelas e soltar o aire",
             "es": "Inflar los mofletes y soltar el aire"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_chubby_cheeks"
         },
         {
           "id": "0_2.outubro.s1.where-s-your-nose",
@@ -221,7 +223,8 @@
             "gl": "Premer o nariz facendo «pi pi»",
             "es": "Apretar la nariz haciendo «pi pi»"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_beep_beep_nose"
         },
         {
           "id": "0_2.outubro.s1.one-two-toes",
@@ -289,7 +292,8 @@
             "gl": "Facer círculos na barriga",
             "es": "Hacer círculos en la barriga"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_belly"
         },
         {
           "id": "0_2.outubro.s2.knee",
@@ -527,7 +531,8 @@
             "gl": "Poñer e quitar un gorriño ante o espello",
             "es": "Poner y quitar un gorrito ante el espejo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_bonnet"
         },
         {
           "id": "0_2.outubro.s3.muslin-cloth",
@@ -668,7 +673,8 @@
             "gl": "Facer brillar o espello co pano",
             "es": "Hacer brillar el espejo con el paño"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_clean_and_shiny"
         },
         {
           "id": "0_2.outubro.s3.upright",

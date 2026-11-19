@@ -185,7 +185,8 @@
             "gl": "Mover as mans coma néboa",
             "es": "Mover las manos como niebla"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_misty"
         },
         {
           "id": "2_3.novembro.s1.peaceful-park",
@@ -440,7 +441,8 @@
             "gl": "Mover os brazos con forza",
             "es": "Mover los brazos con fuerza"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_wild_wind"
         },
         {
           "id": "2_3.novembro.s2.hold-your-hat",
@@ -800,7 +802,8 @@
             "gl": "Subir as mans en espiral",
             "es": "Subir las manos en espiral"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_bonfire_smoke"
         },
         {
           "id": "2_3.novembro.s4.warm-chestnut",

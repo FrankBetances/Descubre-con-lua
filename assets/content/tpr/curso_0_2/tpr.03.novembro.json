@@ -371,7 +371,8 @@
             "gl": "Mover as follas para que soen",
             "es": "Mover las hojas para que suenen"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_rustle"
         },
         {
           "id": "0_2.novembro.s2.kick-leaves",
@@ -464,7 +465,8 @@
             "gl": "Mover os brazos coma o vento",
             "es": "Mover los brazos como el viento"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_whoosh"
         },
         {
           "id": "0_2.novembro.s2.one-leaf-two-leaves",
@@ -864,7 +866,8 @@
             "gl": "Deixar morder o mordedor limpo",
             "es": "Dejar morder el mordedor limpio"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_chew_on"
         },
         {
           "id": "0_2.novembro.s4.hand-over",
@@ -897,7 +900,8 @@
             "gl": "Mover o prato para que trema",
             "es": "Mover el plato para que tiemble"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_wobbly_jelly"
         },
         {
           "id": "0_2.novembro.s4.crackly",
@@ -908,7 +912,8 @@
             "gl": "Engurrar papel para que soe",
             "es": "Arrugar papel para que suene"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_crackly"
         },
         {
           "id": "0_2.novembro.s4.cool-to-touch",
@@ -919,7 +924,8 @@
             "gl": "Pousar a man nunha pedra fresca",
             "es": "Posar la mano en una piedra fresca"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_cool_to_touch"
         },
         {
           "id": "0_2.novembro.s4.squeeze-and-let-go",

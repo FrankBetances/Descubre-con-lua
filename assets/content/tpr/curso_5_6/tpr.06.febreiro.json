@@ -777,7 +777,8 @@
             "gl": "Poñer as mans firmes",
             "es": "Poner las manos firmes"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_brick_house"
         },
         {
           "id": "5_6.febreiro.s4.glass-slipper",

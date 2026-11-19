@@ -593,7 +593,8 @@
           "tprAction": {
             "gl": "Facer «bzzz» cos beizos",
             "es": "Hacer «bzzz» con los labios"
-          }
+          },
+          "lamina": "pal_buzz"
         },
         {
           "id": "3_4.abril.s3.crawl",

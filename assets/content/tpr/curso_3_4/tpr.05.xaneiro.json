@@ -140,7 +140,8 @@
           "tprAction": {
             "gl": "Abotoar botóns imaxinarios no peito",
             "es": "Abrochar botones imaginarios en el pecho"
-          }
+          },
+          "lamina": "pal_button"
         },
         {
           "id": "3_4.xaneiro.s1.tie",
@@ -513,7 +514,8 @@
           "tprAction": {
             "gl": "Facer o ruído dun motor: brrrum",
             "es": "Hacer el ruido de un motor: brrrum"
-          }
+          },
+          "lamina": "pal_car"
         },
         {
           "id": "3_4.xaneiro.s3.bus",
@@ -702,7 +704,8 @@
           "tprAction": {
             "gl": "Premer unha bucina imaxinaria dúas veces",
             "es": "Apretar un claxon imaginario dos veces"
-          }
+          },
+          "lamina": "pal_beep_beep"
         },
         {
           "id": "3_4.xaneiro.s3.all-aboard",
@@ -713,7 +716,8 @@
           "tprAction": {
             "gl": "Subir a un tren imaxinario cun paso grande",
             "es": "Subir a un tren imaginario con un paso grande"
-          }
+          },
+          "lamina": "pal_all_aboard"
         },
         {
           "id": "3_4.xaneiro.s3.seat-belt-on",
@@ -907,7 +911,8 @@
           "tprAction": {
             "gl": "Mover as mans cara a todos os lados coma un remuíño",
             "es": "Mover las manos hacia todos lados como un remolino"
-          }
+          },
+          "lamina": "pal_messy"
         },
         {
           "id": "3_4.xaneiro.s4.comfy",
@@ -940,7 +945,8 @@
           "tprAction": {
             "gl": "Mover a cabeza dun lado a outro ao pulso",
             "es": "Mover la cabeza de un lado a otro al pulso"
-          }
+          },
+          "lamina": "pal_tick_tock"
         },
         {
           "id": "3_4.xaneiro.s4.knock-knock",

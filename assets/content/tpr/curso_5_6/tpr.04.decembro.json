@@ -81,7 +81,8 @@
             "gl": "Mover as mans amodo e suave",
             "es": "Mover las manos despacio y suave"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_moonlight"
         },
         {
           "id": "5_6.decembro.s1.globe",
@@ -268,7 +269,8 @@
             "gl": "Unir puntos no aire",
             "es": "Unir puntos en el aire"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_constellation"
         },
         {
           "id": "5_6.decembro.s2.telescope",
@@ -363,7 +365,8 @@
             "gl": "Unir puntos co dedo",
             "es": "Unir puntos con el dedo"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_connect_the_dots"
         },
         {
           "id": "5_6.decembro.s2.blast-off",

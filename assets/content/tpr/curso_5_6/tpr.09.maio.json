@@ -90,7 +90,8 @@
             "gl": "Poñer un peluche na barriga",
             "es": "Poner un peluche en la barriga"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_breathing_buddy"
         },
         {
           "id": "5_6.maio.s1.name-a-feeling",
@@ -774,7 +775,8 @@
             "gl": "Varrer no aire",
             "es": "Barrer en el aire"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_chore"
         },
         {
           "id": "5_6.maio.s4.thank-you-note",

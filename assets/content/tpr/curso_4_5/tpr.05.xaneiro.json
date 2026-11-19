@@ -381,7 +381,8 @@
             "gl": "Pasar a perna por riba",
             "es": "Pasar la pierna por encima"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_climb_over"
         },
         {
           "id": "4_5.xaneiro.s2.go-around",
@@ -404,7 +405,8 @@
             "gl": "Poñerse entre dous amigos",
             "es": "Ponerse entre dos amigos"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_between"
         },
         {
           "id": "4_5.xaneiro.s2.above",
@@ -439,7 +441,8 @@
             "gl": "Poñerse ao lado dun amigo",
             "es": "Ponerse al lado de un amigo"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_beside"
         },
         {
           "id": "4_5.xaneiro.s2.crawl-under-the-table",
@@ -552,7 +555,8 @@
             "gl": "Subir a man amodo",
             "es": "Subir la mano despacio"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_cable_car"
         },
         {
           "id": "4_5.xaneiro.s3.escalator",
@@ -598,7 +602,8 @@
             "gl": "Cruzar o cinto no peito",
             "es": "Cruzar el cinturón en el pecho"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_buckle_up"
         },
         {
           "id": "4_5.xaneiro.s3.arrive",
@@ -711,7 +716,8 @@
             "gl": "Mover as mans rápido e amodo",
             "es": "Mover las manos rápido y despacio"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_the_tram_is_faster_than_the_bus"
         },
         {
           "id": "4_5.xaneiro.s3.next-stop-please",
@@ -814,7 +820,8 @@
             "gl": "Poñer ladrillos imaxinarios",
             "es": "Poner ladrillos imaginarios"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_builder"
         },
         {
           "id": "4_5.xaneiro.s4.put-out-a-fire",
@@ -825,7 +832,8 @@
             "gl": "Mover a mangueira",
             "es": "Mover la manguera"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_put_out_a_fire"
         },
         {
           "id": "4_5.xaneiro.s4.deliver",

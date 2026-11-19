@@ -45,7 +45,8 @@
           "tprAction": {
             "gl": "Soprar e mover os brazos dun lado a outro",
             "es": "Soplar y mover los brazos de un lado a otro"
-          }
+          },
+          "lamina": "pal_wind"
         },
         {
           "id": "3_4.novembro.s1.branch",
@@ -68,7 +69,8 @@
           "tprAction": {
             "gl": "Deixar caer follas imaxinarias desde arriba",
             "es": "Dejar caer hojas imaginarias desde arriba"
-          }
+          },
+          "lamina": "pal_autumn"
         },
         {
           "id": "3_4.novembro.s1.sky",
@@ -790,7 +792,8 @@
           "tprAction": {
             "gl": "Debullar unha espiga de millo imaxinaria",
             "es": "Desgranar una mazorca de maíz imaginaria"
-          }
+          },
+          "lamina": "pal_corn"
         },
         {
           "id": "3_4.novembro.s4.potato",
@@ -849,7 +852,8 @@
           "tprAction": {
             "gl": "Botar ingredientes imaxinarios na pota",
             "es": "Echar ingredientes imaginarios en la olla"
-          }
+          },
+          "lamina": "pal_cook"
         },
         {
           "id": "3_4.novembro.s4.squash",
@@ -964,7 +968,8 @@
           "tprAction": {
             "gl": "Remexer co brazo e logo probar da culler",
             "es": "Remover con el brazo y luego probar de la cuchara"
-          }
+          },
+          "lamina": "pal_stir_then_taste"
         },
         {
           "id": "3_4.novembro.s4.in-the-pot",

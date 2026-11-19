@@ -325,7 +325,8 @@
             "gl": "Facer un tellado coas mans",
             "es": "Hacer un tejado con las manos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_barn"
         },
         {
           "id": "0_2.xaneiro.s2.tractor",
@@ -556,7 +557,8 @@
             "gl": "Facer unha casiña coas mans",
             "es": "Hacer una casita con las manos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_birdhouse"
         },
         {
           "id": "0_2.xaneiro.s3.beetle",
