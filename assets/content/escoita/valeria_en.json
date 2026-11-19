@@ -33,7 +33,7 @@
    },
    "b": {
     "palabra": "lock",
-    "lamina": null
+    "lamina": "pal_lock"
    },
    "fonema": "/r/ → /l/",
    "pista": "For /l/ the tongue touches behind your teeth. For /r/ it pulls back and never touches.",
@@ -48,7 +48,7 @@
    },
    "b": {
     "palabra": "tea",
-    "lamina": null
+    "lamina": "pal_tea"
    },
    "fonema": "/k/ → /t/",
    "pista": "Keep the tip of your tongue down and lift the BACK of it: k, k, k.",
@@ -74,7 +74,7 @@
    "id": "sip-ship",
    "a": {
     "palabra": "ship",
-    "lamina": null
+    "lamina": "pal_ship"
    },
    "b": {
     "palabra": "sip",
@@ -93,7 +93,7 @@
    },
    "b": {
     "palabra": "nail",
-    "lamina": null
+    "lamina": "pal_nail"
    },
    "fonema": "/sn-/ → /n-/",
    "pista": "Start with a long ssss and slide into the n: ssss-nail.",
@@ -104,7 +104,7 @@
    "id": "seat-sea",
    "a": {
     "palabra": "seat",
-    "lamina": null
+    "lamina": "pal_seat"
    },
    "b": {
     "palabra": "sea",
@@ -138,7 +138,7 @@
    },
    "b": {
     "palabra": "ship",
-    "lamina": null
+    "lamina": "pal_ship"
    },
    "fonema": "/i/ → /ɪ/",
    "pista": "Stretch it out and smile wide: sheeeep. The short one is quick: ship.",
@@ -330,7 +330,7 @@
     },
     {
      "palabra": "track",
-     "lamina": null,
+     "lamina": "pal_track",
      "tipo": "parte",
      "frase": "The train rolls along the metal track.",
      "accion": "Draw two parallel lines with both index fingers on the floor."
@@ -371,7 +371,7 @@
     },
     {
      "palabra": "fly",
-     "lamina": null,
+     "lamina": "pal_fly",
      "tipo": "accion",
      "frase": "The bird takes off and starts to fly.",
      "accion": "Soar with outstretched arms across the living room."
@@ -398,7 +398,7 @@
     },
     {
      "palabra": "crust",
-     "lamina": null,
+     "lamina": "pal_crust",
      "tipo": "parte",
      "frase": "The outside edge is the crunchy crust.",
      "accion": "Tap your knuckles together making a crunchy sound."
@@ -412,7 +412,7 @@
     },
     {
      "palabra": "warm",
-     "lamina": null,
+     "lamina": "pal_warm",
      "tipo": "cualidad",
      "frase": "Fresh from the toaster, it feels warm.",
      "accion": "Blow warm breath onto your cupped hands."
@@ -432,7 +432,7 @@
     },
     {
      "palabra": "string",
-     "lamina": null,
+     "lamina": "pal_string",
      "tipo": "parte",
      "frase": "Hold tight to the long string.",
      "accion": "Pinch two fingers tight and pull down gently."
@@ -557,13 +557,13 @@
    "voltas": [
     {
      "palabra": "on",
-     "lamina": null,
+     "lamina": "pal_on",
      "frase": "It is dark in here. What do we do to the light?",
      "accion": "Your child flips the switch on and you both cheer."
     },
     {
      "palabra": "off",
-     "lamina": null,
+     "lamina": "pal_off",
      "frase": "Now time for bed. What do we do to the light?",
      "accion": "Turn the light off and whisper goodnight together."
     }
@@ -595,13 +595,13 @@
    "voltas": [
     {
      "palabra": "in",
-     "lamina": null,
+     "lamina": "pal_in",
      "frase": "Time to pack away the toys. Where do they go?",
      "accion": "Drop a toy into the bin on each word and clap."
     },
     {
      "palabra": "out",
-     "lamina": null,
+     "lamina": "pal_out",
      "frase": "Time to play! What do we do with the toys?",
      "accion": "Dump the toys out gently on the rug."
     }
@@ -634,7 +634,7 @@
     },
     {
      "palabra": "breakfast",
-     "lamina": null,
+     "lamina": "pal_breakfast",
      "frase": "Last we eat breakfast.",
      "accion": "Pretend to drink a glass of milk together with both hands."
     }
@@ -690,13 +690,13 @@
     },
     {
      "palabra": "water",
-     "lamina": null,
+     "lamina": "pal_water",
      "frase": "Next we rinse off.",
      "accion": "Let your fingers fall on your child's head like raindrops."
     },
     {
      "palabra": "towel",
-     "lamina": null,
+     "lamina": "pal_towel",
      "frase": "Last we dry off.",
      "accion": "Wrap your child in a towel (or in your arms) and dry them."
     }
@@ -709,7 +709,7 @@
    "items": [
     {
      "palabra": "shoes",
-     "lamina": null,
+     "lamina": "pal_shoes",
      "frase": "First we put on our shoes.",
      "accion": "Point to your child's shoes and touch them together."
     },
@@ -740,7 +740,7 @@
    "items": [
     {
      "palabra": "pajamas",
-     "lamina": null,
+     "lamina": "pal_pajamas",
      "frase": "First we put on pajamas.",
      "accion": "Point to your child's pajamas and touch the buttons together."
     },
@@ -859,13 +859,13 @@
     },
     {
      "palabra": "sock",
-     "lamina": null,
+     "lamina": "pal_sock",
      "frase": "It goes on before the shoe.",
      "accion": "Pull one onto your child’s foot while they say it, then swap."
     },
     {
      "palabra": "jacket",
-     "lamina": null,
+     "lamina": "pal_jacket",
      "frase": "We zip it up when it gets cold.",
      "accion": "Zip an imaginary one all the way up to the chin, both of you."
     },
@@ -884,7 +884,7 @@
    "items": [
     {
      "palabra": "red",
-     "lamina": null,
+     "lamina": "pal_red",
      "frase": "The color of a fire truck.",
      "accion": "Race to touch something of that color in the room before your child does."
     },
@@ -921,7 +921,7 @@
    "items": [
     {
      "palabra": "hand",
-     "lamina": null,
+     "lamina": "pal_hand",
      "frase": "Five fingers, and we wave with it.",
      "accion": "Press your palms together and count the fingers out loud."
     },
@@ -939,13 +939,13 @@
     },
     {
      "palabra": "tummy",
-     "lamina": null,
+     "lamina": "pal_tummy",
      "frase": "It rumbles when you are hungry.",
      "accion": "Rub your bellies in circles and make a rumbling noise together."
     },
     {
      "palabra": "shoulder",
-     "lamina": null,
+     "lamina": "pal_shoulder",
      "frase": "It is where your arm joins the rest of you.",
      "accion": "Shrug them up to your ears and drop them down, three times each."
     }

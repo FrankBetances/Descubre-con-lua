@@ -34699,10 +34699,10 @@
     "windy": {
       "clave": "pal_windy",
       "orixe": "banco",
-      "porque": "Viento fuerte agitando árbol, cometa, molinillo y velero.",
-      "fuente": "dnizfor",
-      "asset": "images/4856-fLvUdfc.webp",
-      "sha": "eae41b7c6cd85da0ca4171ce79eb115971b533de",
+      "porque": "Escena de viento fuerte soplando espirales de aire y hojas.",
+      "fuente": "fluent-flat",
+      "asset": "fluentui-emoji:assets/Wind face/Flat",
+      "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
       "licencia": "MIT",
       "revisado": true
     },
@@ -36392,6 +36392,496 @@
       "porque": "Zoológico con león, elefante y cebra tras una valla de madera.",
       "fuente": "composta",
       "asset": "tools/gen_laminas_escoita.py#zoo",
+      "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+      "licencia": "MIT",
+      "revisado": true
+    },
+    "escoita:bandage": {
+      "clave": "pal_bandage",
+      "orixe": "banco",
+      "porque": "Tirita adhesiva plana limpia para vendar.",
+      "fuente": "fluent-flat",
+      "asset": "fluentui-emoji:assets/Adhesive bandage/Flat",
+      "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+      "licencia": "MIT",
+      "revisado": true
+    },
+    "boy": {
+      "clave": "pal_boy",
+      "orixe": "banco",
+      "porque": "Niño sonriente en primer plano.",
+      "fuente": "fluent-flat",
+      "asset": "fluentui-emoji:assets/Boy/Flat",
+      "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+      "licencia": "MIT",
+      "revisado": true
+    },
+    "bubble": {
+      "clave": "pal_bubble",
+      "orixe": "banco",
+      "porque": "Burbujas de jabón iridiscentes flotando.",
+      "fuente": "fluent-flat",
+      "asset": "fluentui-emoji:assets/Bubbles/Flat",
+      "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+      "licencia": "MIT",
+      "revisado": true
+    },
+    "bug": {
+      "clave": "pal_bug",
+      "orixe": "banco",
+      "porque": "Oruga verde simpática de perfil.",
+      "fuente": "fluent-flat",
+      "asset": "fluentui-emoji:assets/Bug/Flat",
+      "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+      "licencia": "MIT",
+      "revisado": true
+    },
+    "bulb": {
+      "clave": "pal_bulb",
+      "orixe": "banco",
+      "porque": "Bombilla amarilla encendida.",
+      "fuente": "fluent-flat",
+      "asset": "fluentui-emoji:assets/Light bulb/Flat",
+      "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+      "licencia": "MIT",
+      "revisado": true
+    },
+    "flashlight": {
+      "clave": "pal_flashlight",
+      "orixe": "banco",
+      "porque": "Linterna clásica encendida.",
+      "fuente": "fluent-flat",
+      "asset": "fluentui-emoji:assets/Flashlight/Flat",
+      "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+      "licencia": "MIT",
+      "revisado": true
+    },
+    "flute": {
+      "clave": "pal_flute",
+      "orixe": "banco",
+      "porque": "Flauta horizontal dorada.",
+      "fuente": "fluent-flat",
+      "asset": "fluentui-emoji:assets/Flute/Flat",
+      "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+      "licencia": "MIT",
+      "revisado": true
+    },
+    "frame": {
+      "clave": "pal_frame",
+      "orixe": "banco",
+      "porque": "Marco dorado rodeando un paisaje.",
+      "fuente": "fluent-flat",
+      "asset": "fluentui-emoji:assets/Framed picture/Flat",
+      "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+      "licencia": "MIT",
+      "revisado": true
+    },
+    "jar": {
+      "clave": "pal_jar",
+      "orixe": "banco",
+      "porque": "Bote de cristal transparente con tapa.",
+      "fuente": "fluent-flat",
+      "asset": "fluentui-emoji:assets/Jar/Flat",
+      "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+      "licencia": "MIT",
+      "revisado": true
+    },
+    "phone": {
+      "clave": "pal_phone",
+      "orixe": "banco",
+      "porque": "Teléfono clásico rojo.",
+      "fuente": "fluent-flat",
+      "asset": "fluentui-emoji:assets/Telephone/Flat",
+      "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+      "licencia": "MIT",
+      "revisado": true
+    },
+    "pie": {
+      "clave": "pal_pie",
+      "orixe": "banco",
+      "porque": "Tarta redonda horneada.",
+      "fuente": "fluent-flat",
+      "asset": "fluentui-emoji:assets/Pie/Flat",
+      "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+      "licencia": "MIT",
+      "revisado": true
+    },
+    "piece": {
+      "clave": "pal_piece",
+      "orixe": "banco",
+      "porque": "Pieza verde de puzle encajable.",
+      "fuente": "fluent-flat",
+      "asset": "fluentui-emoji:assets/Puzzle piece/Flat",
+      "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+      "licencia": "MIT",
+      "revisado": true
+    },
+    "sock": {
+      "clave": "pal_sock",
+      "orixe": "banco",
+      "porque": "Par de calcetines de rayas.",
+      "fuente": "fluent-flat",
+      "asset": "fluentui-emoji:assets/Socks/Flat",
+      "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+      "licencia": "MIT",
+      "revisado": true
+    },
+    "escoita:stone": {
+      "clave": "pal_stone",
+      "orixe": "banco",
+      "porque": "Piedra gris redondeada y pesada.",
+      "fuente": "fluent-flat",
+      "asset": "fluentui-emoji:assets/Rock/Flat",
+      "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+      "licencia": "MIT",
+      "revisado": true
+    },
+    "bit": {
+      "clave": "pal_bit",
+      "orixe": "nova",
+      "porque": "Galleta entera a la izquierda y un trocito diminuto separado dentro de un círculo.",
+      "fuente": "propia",
+      "asset": "tools/gen_laminas_escoita_2.py#bit",
+      "sha": "6be3d38b",
+      "licencia": "Propia",
+      "revisado": true
+    },
+    "blade": {
+      "clave": "pal_blade",
+      "orixe": "nova",
+      "porque": "Molinillo con tres aspas suaves y una aspa roja destacada con aro dorado.",
+      "fuente": "propia",
+      "asset": "tools/gen_laminas_escoita_2.py#blade",
+      "sha": "6be3d38b",
+      "licencia": "Propia",
+      "revisado": true
+    },
+    "bush": {
+      "clave": "pal_bush",
+      "orixe": "nova",
+      "porque": "Arbusto verde frondoso con bayas rojas sobre el prado.",
+      "fuente": "propia",
+      "asset": "tools/gen_laminas_escoita_2.py#bush",
+      "sha": "6be3d38b",
+      "licencia": "Propia",
+      "revisado": true
+    },
+    "cloth": {
+      "clave": "pal_cloth",
+      "orixe": "nova",
+      "porque": "Tela cuadrada azul doblada con textura de tejido.",
+      "fuente": "propia",
+      "asset": "tools/gen_laminas_escoita_2.py#cloth",
+      "sha": "6be3d38b",
+      "licencia": "Propia",
+      "revisado": true
+    },
+    "colorful": {
+      "clave": "pal_colorful",
+      "orixe": "composta",
+      "porque": "Arcoíris y cinco círculos de colores brillantes sin texto.",
+      "fuente": "composta",
+      "asset": "tools/gen_laminas_escoita_2.py#colorful",
+      "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+      "licencia": "MIT",
+      "revisado": true
+    },
+    "dish": {
+      "clave": "pal_dish",
+      "orixe": "nova",
+      "porque": "Plato hondo ancho de cerámica blanca y azul visto desde arriba.",
+      "fuente": "propia",
+      "asset": "tools/gen_laminas_escoita_2.py#dish",
+      "sha": "6be3d38b",
+      "licencia": "Propia",
+      "revisado": true
+    },
+    "dust": {
+      "clave": "pal_dust",
+      "orixe": "composta",
+      "porque": "Tizas de colores soltando nubes y partículas de polvo colorido.",
+      "fuente": "composta",
+      "asset": "tools/gen_laminas_escoita_2.py#dust",
+      "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+      "licencia": "MIT",
+      "revisado": true
+    },
+    "filter": {
+      "clave": "pal_filter",
+      "orixe": "composta",
+      "porque": "Linterna proyectando haz blanco que se vuelve rojo al pasar por un filtro transparente.",
+      "fuente": "composta",
+      "asset": "tools/gen_laminas_escoita_2.py#filter",
+      "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+      "licencia": "MIT",
+      "revisado": true
+    },
+    "four": {
+      "clave": "pal_four",
+      "orixe": "nova",
+      "porque": "Exactamente cuatro bloques de madera de colores en 2x2 sin dígitos.",
+      "fuente": "propia",
+      "asset": "tools/gen_laminas_escoita_2.py#four",
+      "sha": "6be3d38b",
+      "licencia": "Propia",
+      "revisado": true
+    },
+    "fun": {
+      "clave": "pal_fun",
+      "orixe": "composta",
+      "porque": "Lanzador de confeti, globo y chispas celebrando el juego.",
+      "fuente": "composta",
+      "asset": "tools/gen_laminas_escoita_2.py#fun",
+      "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+      "licencia": "MIT",
+      "revisado": true
+    },
+    "grid": {
+      "clave": "pal_grid",
+      "orixe": "nova",
+      "porque": "Mapa en cuadrícula de 4x3 casillas con una marca roja en una celda.",
+      "fuente": "propia",
+      "asset": "tools/gen_laminas_escoita_2.py#grid",
+      "sha": "6be3d38b",
+      "licencia": "Propia",
+      "revisado": true
+    },
+    "jacket": {
+      "clave": "pal_jacket",
+      "orixe": "nova",
+      "porque": "Chaqueta azul con cuello amarillo, cremallera central y dos bolsillos.",
+      "fuente": "propia",
+      "asset": "tools/gen_laminas_escoita_2.py#jacket",
+      "sha": "6be3d38b",
+      "licencia": "Propia",
+      "revisado": true
+    },
+    "large": {
+      "clave": "pal_large",
+      "orixe": "composta",
+      "porque": "Hoja pequeña a la izquierda ampliada en grande dentro de una lupa a la derecha.",
+      "fuente": "composta",
+      "asset": "tools/gen_laminas_escoita_2.py#large",
+      "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+      "licencia": "MIT",
+      "revisado": true
+    },
+    "lash": {
+      "clave": "pal_lash",
+      "orixe": "nova",
+      "porque": "Ojo en primer plano con las pestañas superiores largas resaltadas.",
+      "fuente": "propia",
+      "asset": "tools/gen_laminas_escoita_2.py#lash",
+      "sha": "6be3d38b",
+      "licencia": "Propia",
+      "revisado": true
+    },
+    "lens": {
+      "clave": "pal_lens",
+      "orixe": "composta",
+      "porque": "Lupa de plástico enfocada con brillo azul en el cristal.",
+      "fuente": "composta",
+      "asset": "tools/gen_laminas_escoita_2.py#lens",
+      "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+      "licencia": "MIT",
+      "revisado": true
+    },
+    "lid": {
+      "clave": "pal_lid",
+      "orixe": "nova",
+      "porque": "Bote de cristal abierto con la tapa roja levantada encima.",
+      "fuente": "propia",
+      "asset": "tools/gen_laminas_escoita_2.py#lid",
+      "sha": "6be3d38b",
+      "licencia": "Propia",
+      "revisado": true
+    },
+    "nip": {
+      "clave": "pal_nip",
+      "orixe": "composta",
+      "porque": "Mano en pinza dando un pellizco suave a la esquina de una hoja.",
+      "fuente": "composta",
+      "asset": "tools/gen_laminas_escoita_2.py#nip",
+      "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+      "licencia": "MIT",
+      "revisado": true
+    },
+    "outline": {
+      "clave": "pal_outline",
+      "orixe": "nova",
+      "porque": "Bloque sólido a la izquierda y solo su contorno dibujado en rojo a la derecha.",
+      "fuente": "propia",
+      "asset": "tools/gen_laminas_escoita_2.py#outline",
+      "sha": "6be3d38b",
+      "licencia": "Propia",
+      "revisado": true
+    },
+    "pile": {
+      "clave": "pal_pile",
+      "orixe": "nova",
+      "porque": "Montón apilado en pirámide de seis bloques de colores.",
+      "fuente": "propia",
+      "asset": "tools/gen_laminas_escoita_2.py#pile",
+      "sha": "6be3d38b",
+      "licencia": "Propia",
+      "revisado": true
+    },
+    "pole": {
+      "clave": "pal_pole",
+      "orixe": "nova",
+      "porque": "Palo largo de madera apoyado en diagonal sobre la hierba.",
+      "fuente": "propia",
+      "asset": "tools/gen_laminas_escoita_2.py#pole",
+      "sha": "6be3d38b",
+      "licencia": "Propia",
+      "revisado": true
+    },
+    "press": {
+      "clave": "pal_press",
+      "orixe": "composta",
+      "porque": "Mano apretando hacia abajo un bollo blando con flecha de presión.",
+      "fuente": "composta",
+      "asset": "tools/gen_laminas_escoita_2.py#press",
+      "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+      "licencia": "MIT",
+      "revisado": true
+    },
+    "rail": {
+      "clave": "pal_rail",
+      "orixe": "nova",
+      "porque": "Barandilla horizontal de madera sobre dos postes en la sala.",
+      "fuente": "propia",
+      "asset": "tools/gen_laminas_escoita_2.py#rail",
+      "sha": "6be3d38b",
+      "licencia": "Propia",
+      "revisado": true
+    },
+    "rainstick": {
+      "clave": "pal_rainstick",
+      "orixe": "composta",
+      "porque": "Tubo palo de lluvia con granos blancos dentro y gotas alrededor.",
+      "fuente": "composta",
+      "asset": "tools/gen_laminas_escoita_2.py#rainstick",
+      "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+      "licencia": "MIT",
+      "revisado": true
+    },
+    "ready": {
+      "clave": "pal_ready",
+      "orixe": "composta",
+      "porque": "Mesa lista con plato, cuchara y marca verde de verificación.",
+      "fuente": "composta",
+      "asset": "tools/gen_laminas_escoita_2.py#ready",
+      "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+      "licencia": "MIT",
+      "revisado": true
+    },
+    "sale": {
+      "clave": "pal_sale",
+      "orixe": "composta",
+      "porque": "Bolsas, etiqueta lisa sin texto y monedas de tienda.",
+      "fuente": "composta",
+      "asset": "tools/gen_laminas_escoita_2.py#sale",
+      "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+      "licencia": "MIT",
+      "revisado": true
+    },
+    "sheet": {
+      "clave": "pal_sheet",
+      "orixe": "nova",
+      "porque": "Hoja de papel blanca con esquina doblada sobre la mesa.",
+      "fuente": "propia",
+      "asset": "tools/gen_laminas_escoita_2.py#sheet",
+      "sha": "6be3d38b",
+      "licencia": "Propia",
+      "revisado": true
+    },
+    "shoulder": {
+      "clave": "pal_shoulder",
+      "orixe": "nova",
+      "porque": "Niño en primer plano con un aro dorado y flecha señalando su hombro.",
+      "fuente": "propia",
+      "asset": "tools/gen_laminas_escoita_2.py#shoulder",
+      "sha": "6be3d38b",
+      "licencia": "Propia",
+      "revisado": true
+    },
+    "six": {
+      "clave": "pal_six",
+      "orixe": "nova",
+      "porque": "Seis fichas circulares de colores en dos filas de tres sin números.",
+      "fuente": "propia",
+      "asset": "tools/gen_laminas_escoita_2.py#six",
+      "sha": "6be3d38b",
+      "licencia": "Propia",
+      "revisado": true
+    },
+    "snip": {
+      "clave": "pal_snip",
+      "orixe": "composta",
+      "porque": "Tijeras recortando una hoja de papel por una línea discontinua.",
+      "fuente": "composta",
+      "asset": "tools/gen_laminas_escoita_2.py#snip",
+      "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+      "licencia": "MIT",
+      "revisado": true
+    },
+    "stretcher": {
+      "clave": "pal_stretcher",
+      "orixe": "composta",
+      "porque": "Camilla de tela azul con mangos de madera llevando un osito paciente.",
+      "fuente": "composta",
+      "asset": "tools/gen_laminas_escoita_2.py#stretcher",
+      "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+      "licencia": "MIT",
+      "revisado": true
+    },
+    "tip": {
+      "clave": "pal_tip",
+      "orixe": "nova",
+      "porque": "Punta de una tela destacada con un aro rojo y una flecha.",
+      "fuente": "propia",
+      "asset": "tools/gen_laminas_escoita_2.py#tip",
+      "sha": "6be3d38b",
+      "licencia": "Propia",
+      "revisado": true
+    },
+    "tone": {
+      "clave": "pal_tone",
+      "orixe": "composta",
+      "porque": "Campana emitiendo ondas sonoras suaves y notas musicales.",
+      "fuente": "composta",
+      "asset": "tools/gen_laminas_escoita_2.py#tone",
+      "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+      "licencia": "MIT",
+      "revisado": true
+    },
+    "top": {
+      "clave": "pal_top",
+      "orixe": "nova",
+      "porque": "Peonza de cartón rojo y amarillo con eje de lápiz girando.",
+      "fuente": "propia",
+      "asset": "tools/gen_laminas_escoita_2.py#top",
+      "sha": "6be3d38b",
+      "licencia": "Propia",
+      "revisado": true
+    },
+    "escoita:tummy": {
+      "clave": "pal_tummy",
+      "orixe": "nova",
+      "porque": "Muñeco con camiseta verde y un círculo destacando su barriga.",
+      "fuente": "propia",
+      "asset": "tools/gen_laminas_escoita_2.py#tummy",
+      "sha": "6be3d38b",
+      "licencia": "Propia",
+      "revisado": true
+    },
+    "wear": {
+      "clave": "pal_wear",
+      "orixe": "composta",
+      "porque": "Niño poniéndose una prenda amarilla con flecha clara.",
+      "fuente": "composta",
+      "asset": "tools/gen_laminas_escoita_2.py#wear",
       "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
       "licencia": "MIT",
       "revisado": true
