@@ -84,6 +84,11 @@ def main() -> int:
         mensaje("vale, sigue")
         if bloquea(leer):
             fallos.append(f"tras «{t}», el mensaje siguiente debería desbloquear")
+    for t in ["Ya entregué el prompt a antigravity, continúa con tu parte",
+              "el prompt ya lo tiene Antigravity"]:
+        mensaje(t)
+        if bloquea(leer):
+            fallos.append(f"«{t}» nombra un prompt pero no lo pide: no debería bloquear")
 
     hook("registro_acciones.py", {"tool_name": "Bash", "tool_input": {"command": "ls"}})
     if "ls" not in mensaje("qué has hecho"):

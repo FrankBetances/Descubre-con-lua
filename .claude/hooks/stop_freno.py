@@ -46,7 +46,7 @@ avisos = []
 # R-ENTREGA (F-20261119-6): si Frank pide un texto para pegar, la respuesta
 # empieza por ese texto, entero y solo, sin herramientas antes. La marca (no
 # vacía) bloquea las herramientas hasta su siguiente mensaje, que la vacía.
-PIDE = re.compile(r"\b(dame|d[aá]me|p[aá]same|quiero|escr[ií]beme|el)\b[^.?!\n]{0,25}\b(prompt|texto|mensaje)\b")
+PIDE = re.compile(r"\b(dame|d[aá]me|p[aá]same|escr[ií]beme|necesito|quiero)\b[^.?!\n]{0,25}\b(prompt|texto|mensaje)\b|\bd[oó]nde est[aá] el prompt")
 if PIDE.search(t):
     PIDE_TEXTO.write_text(texto[:300], encoding="utf-8")
     avisos.append("R-ENTREGA: Frank pide un texto. Tu respuesta EMPIEZA por ese texto, completo y solo, sin ninguna herramienta antes. Las herramientas están bloqueadas en esta respuesta.")
