@@ -151,7 +151,8 @@
             "gl": "Coller unha flor con coidado",
             "es": "Coger una flor con cuidado"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_pick_a_daisy"
         },
         {
           "id": "0_2.abril.s1.blooming",
@@ -597,7 +598,8 @@
             "gl": "Afundir un dedo na terra",
             "es": "Hundir un dedo en la tierra"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_plant_a_seed"
         },
         {
           "id": "0_2.abril.s3.water-it",
@@ -620,7 +622,8 @@
             "gl": "Sacar un dedo do puño",
             "es": "Sacar un dedo del puño"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_pop_out"
         },
         {
           "id": "0_2.abril.s3.cover-with-soil",

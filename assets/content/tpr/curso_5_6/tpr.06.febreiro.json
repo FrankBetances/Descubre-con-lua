@@ -54,7 +54,8 @@
             "gl": "Recortar unha máscara no aire",
             "es": "Recortar una máscara en el aire"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_mask_maker"
         },
         {
           "id": "5_6.febreiro.s1.feather-mask",

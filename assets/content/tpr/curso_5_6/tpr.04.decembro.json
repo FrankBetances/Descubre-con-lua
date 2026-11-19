@@ -617,7 +617,8 @@
             "gl": "Facer un círculo co dedo",
             "es": "Hacer un círculo con el dedo"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_mark_the_date"
         },
         {
           "id": "5_6.decembro.s3.wait-for",
@@ -807,7 +808,8 @@
             "gl": "Colgar un adorno",
             "es": "Colgar un adorno"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_ornament"
         },
         {
           "id": "5_6.decembro.s4.new-year",
@@ -854,7 +856,8 @@
             "gl": "Dobrar un papel",
             "es": "Doblar un papel"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_make_a_card"
         },
         {
           "id": "5_6.decembro.s4.hang-ornaments",

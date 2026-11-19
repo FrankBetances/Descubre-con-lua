@@ -33,7 +33,8 @@
             "gl": "Remar sentados no chan",
             "es": "Remar sentados en el suelo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_rowing_boat"
         },
         {
           "id": "2_3.xuno.s1.paddle-boat",
@@ -44,7 +45,8 @@
             "gl": "Pedalear sentados",
             "es": "Pedalear sentados"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_paddle_boat"
         },
         {
           "id": "2_3.xuno.s1.oar",
@@ -79,7 +81,8 @@
             "gl": "Poñer un chaleco imaxinario",
             "es": "Ponerse un chaleco imaginario"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_life_jacket"
         },
         {
           "id": "2_3.xuno.s1.mast",
@@ -90,7 +93,8 @@
             "gl": "Estirarse moi dereito",
             "es": "Estirarse muy recto"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_mast"
         },
         {
           "id": "2_3.xuno.s1.row-the-boat",
@@ -101,7 +105,8 @@
             "gl": "Remar adiante e atrás",
             "es": "Remar adelante y atrás"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_row_the_boat"
         },
         {
           "id": "2_3.xuno.s1.set-sail",
@@ -275,7 +280,8 @@
             "gl": "Encher un molde de area",
             "es": "Llenar un molde de arena"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_mould"
         },
         {
           "id": "2_3.xuno.s2.sieve-toy",
@@ -297,7 +303,8 @@
             "gl": "Virar o molde e levantalo",
             "es": "Volcar el molde y levantarlo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_sand_pie"
         },
         {
           "id": "2_3.xuno.s2.pebble-path",
@@ -308,7 +315,8 @@
             "gl": "Poñer pedriñas en fila",
             "es": "Poner piedrecitas en fila"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_pebble_path"
         },
         {
           "id": "2_3.xuno.s2.beach-spade",
@@ -343,7 +351,8 @@
             "gl": "Palmear a area coa man",
             "es": "Palmear la arena con la mano"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_pat_the_sand"
         },
         {
           "id": "2_3.xuno.s2.turn-out",
@@ -471,7 +480,8 @@
             "gl": "Botar area no balde",
             "es": "Echar arena en el cubo"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_sand_in_the_bucket"
         },
         {
           "id": "2_3.xuno.s2.deeper-and-deeper",
@@ -539,7 +549,8 @@
             "gl": "Estirar a man longa e fina",
             "es": "Estirar la mano larga y fina"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_razor_clam"
         },
         {
           "id": "2_3.xuno.s3.beach-bag",
@@ -574,7 +585,8 @@
             "gl": "Facer unha espiral co dedo",
             "es": "Hacer una espiral con el dedo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_periwinkle"
         },
         {
           "id": "2_3.xuno.s3.beachcomb",
@@ -632,7 +644,8 @@
             "gl": "Poñer os tesouros en fila",
             "es": "Poner los tesoros en fila"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_line_them_up"
         },
         {
           "id": "2_3.xuno.s3.glinting",
@@ -655,7 +668,8 @@
             "gl": "Pasar o dedo polas raias da cuncha",
             "es": "Pasar el dedo por las estrías de la concha"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_ridged"
         },
         {
           "id": "2_3.xuno.s3.smooth-pebble",
@@ -804,7 +818,8 @@
             "gl": "Colgar a mochila ao ombro",
             "es": "Colgar la mochila al hombro"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_school_bag"
         },
         {
           "id": "2_3.xuno.s4.class-photo",

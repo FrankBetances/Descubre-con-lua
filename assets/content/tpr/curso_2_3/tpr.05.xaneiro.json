@@ -141,7 +141,8 @@
             "gl": "Premer un botón no aire",
             "es": "Pulsar un botón en el aire"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_press_the_bell"
         },
         {
           "id": "2_3.xaneiro.s1.look-out",
@@ -433,7 +434,8 @@
             "gl": "Facer «brum» moi alto",
             "es": "Hacer «brum» muy alto"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_noisy_engine"
         },
         {
           "id": "2_3.xaneiro.s2.quiet-car",
@@ -536,7 +538,8 @@
             "gl": "Coller froita imaxinaria",
             "es": "Coger fruta imaginaria"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_market"
         },
         {
           "id": "2_3.xaneiro.s3.bakery",
@@ -571,7 +574,8 @@
             "gl": "Estirarse alto coma un farol",
             "es": "Estirarse alto como una farola"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_lamp_post"
         },
         {
           "id": "2_3.xaneiro.s3.roundabout",
@@ -618,7 +622,8 @@
             "gl": "Meter unha folla por unha raña",
             "es": "Meter una hoja por una ranura"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_post_a_letter"
         },
         {
           "id": "2_3.xaneiro.s3.buy-bread",
@@ -677,7 +682,8 @@
             "gl": "Xuntar as mans preto",
             "es": "Juntar las manos cerca"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_narrow_street"
         },
         {
           "id": "2_3.xaneiro.s3.nearby-shop",
@@ -816,7 +822,8 @@
             "gl": "Facer o saúdo de mariñeiro",
             "es": "Hacer el saludo de marinero"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_sailor"
         },
         {
           "id": "2_3.xaneiro.s4.pier",
@@ -886,7 +893,8 @@
             "gl": "Meter caixas imaxinarias",
             "es": "Meter cajas imaginarias"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_load"
         },
         {
           "id": "2_3.xaneiro.s4.salty-wind",

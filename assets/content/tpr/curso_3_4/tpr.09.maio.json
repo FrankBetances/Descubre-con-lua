@@ -637,7 +637,8 @@
           "tprAction": {
             "gl": "Pasar un prato imaxinario a quen está ao lado",
             "es": "Pasar un plato imaginario a quien está al lado"
-          }
+          },
+          "lamina": "pal_pass"
         },
         {
           "id": "3_4.maio.s3.serve",

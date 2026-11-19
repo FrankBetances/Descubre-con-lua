@@ -866,7 +866,8 @@
             "gl": "Ruxir coas mans abertas",
             "es": "Rugir con las manos abiertas"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_roar_loudly"
         },
         {
           "id": "2_3.febreiro.s4.flap-wings",

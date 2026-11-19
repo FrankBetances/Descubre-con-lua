@@ -387,7 +387,8 @@
             "gl": "Picar coa man coma un bico",
             "es": "Picotear con la mano como un pico"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_peck_at_seeds"
         },
         {
           "id": "2_3.abril.s2.swoop",
@@ -523,7 +524,8 @@
             "gl": "Pasar un libro amodo",
             "es": "Pasar un libro despacio"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_library"
         },
         {
           "id": "2_3.abril.s3.quiet-corner",
@@ -753,7 +755,8 @@
             "gl": "Facer un niño coas mans",
             "es": "Hacer un nido con las manos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_robin_s_nest"
         },
         {
           "id": "2_3.abril.s4.eggshell",
@@ -978,7 +981,8 @@
             "gl": "Saír encollido e estirarse",
             "es": "Salir encogido y estirarse"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_out_of_the_egg"
         }
       ]
     }

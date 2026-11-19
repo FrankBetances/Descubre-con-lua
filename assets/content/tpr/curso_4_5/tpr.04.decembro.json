@@ -277,7 +277,8 @@
             "gl": "Medir cunha regra",
             "es": "Medir con una regla"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_ruler"
         },
         {
           "id": "4_5.decembro.s2.tape-measure",
@@ -311,7 +312,8 @@
             "gl": "Xuntar dous calcetíns",
             "es": "Juntar dos calcetines"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_pair_of_socks"
         },
         {
           "id": "4_5.decembro.s2.half",
@@ -357,7 +359,8 @@
             "gl": "Medir a palmos",
             "es": "Medir a palmos"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_measure_with_hands"
         },
         {
           "id": "4_5.decembro.s2.split-in-half",
@@ -865,7 +868,8 @@
             "gl": "Apertarse todos",
             "es": "Apretarse todos"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_keep_warm_together"
         },
         {
           "id": "4_5.decembro.s4.write-a-card",

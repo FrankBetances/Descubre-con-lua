@@ -33,7 +33,8 @@
             "gl": "Colgar a mochila na súa percha",
             "es": "Colgar la mochila en su percha"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_peg"
         },
         {
           "id": "2_3.setembro.s1.lunchbox",
@@ -162,7 +163,8 @@
             "gl": "Aliñar os zapatos xuntos",
             "es": "Alinear los zapatos juntos"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_neat"
         },
         {
           "id": "2_3.setembro.s1.nearby",
@@ -321,7 +323,8 @@
             "gl": "Encaixar unha peza",
             "es": "Encajar una pieza"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_puzzle"
         },
         {
           "id": "2_3.setembro.s2.tea-set",
@@ -561,7 +564,8 @@
             "gl": "Enrolar a esteira",
             "es": "Enrollar la esterilla"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_mat"
         },
         {
           "id": "2_3.setembro.s3.place",

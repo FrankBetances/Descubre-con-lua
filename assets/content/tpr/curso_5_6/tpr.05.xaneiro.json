@@ -21,7 +21,8 @@
             "gl": "Estirar os brazos coma pólas vellas",
             "es": "Estirar los brazos como ramas viejas"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_olive_tree"
         },
         {
           "id": "5_6.xaneiro.s1.symbol",
@@ -603,7 +604,8 @@
             "gl": "Pasar follas dun álbum",
             "es": "Pasar hojas de un álbum"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_look_at_old_photos"
         },
         {
           "id": "5_6.xaneiro.s3.change-over-time",

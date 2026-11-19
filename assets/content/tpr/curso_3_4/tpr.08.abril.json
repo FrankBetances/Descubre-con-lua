@@ -536,7 +536,8 @@
           "tprAction": {
             "gl": "Facer puntiños no dorso da man cun dedo",
             "es": "Hacer puntitos en el dorso de la mano con un dedo"
-          }
+          },
+          "lamina": "pal_ladybird"
         },
         {
           "id": "3_4.abril.s3.worm",
@@ -970,7 +971,8 @@
           "tprAction": {
             "gl": "Pasar por riba dunha pedra imaxinaria cun paso longo",
             "es": "Pasar por encima de una piedra imaginaria con un paso largo"
-          }
+          },
+          "lamina": "pal_over_the_stone"
         },
         {
           "id": "3_4.abril.s4.through-the-grass",

@@ -366,7 +366,8 @@
             "gl": "Medir cos palmos",
             "es": "Medir con los palmos"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_measure"
         },
         {
           "id": "4_5.setembro.s2.connect",
@@ -619,7 +620,8 @@
             "gl": "Poñerse en fila para o lavabo",
             "es": "Ponerse en fila para el lavabo"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_queue_up"
         },
         {
           "id": "4_5.setembro.s3.drink-water",

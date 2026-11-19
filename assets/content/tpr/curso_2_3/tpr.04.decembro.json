@@ -45,7 +45,8 @@
             "gl": "Poñer o chapeu de choiva",
             "es": "Ponerse el gorro de lluvia"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_rain_hat"
         },
         {
           "id": "2_3.decembro.s1.rainwater",
@@ -267,7 +268,8 @@
             "gl": "Facer unha nube cos brazos",
             "es": "Hacer una nube con los brazos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_rain_cloud"
         },
         {
           "id": "2_3.decembro.s2.thunder",
@@ -302,7 +304,8 @@
             "gl": "Poñer a chaqueta e a carapucha",
             "es": "Ponerse la chaqueta y la capucha"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_rain_jacket"
         },
         {
           "id": "2_3.decembro.s2.weather-chart",
@@ -578,7 +581,8 @@
             "gl": "Meter as mans nos petos",
             "es": "Meter las manos en los bolsillos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_pocket"
         },
         {
           "id": "2_3.decembro.s3.pull-on",
@@ -613,7 +617,8 @@
             "gl": "Meter un brazo e despois o outro",
             "es": "Meter un brazo y luego el otro"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_put_arms_in"
         },
         {
           "id": "2_3.decembro.s3.fasten",
@@ -763,7 +768,8 @@
             "gl": "Coller a cunca coas dúas mans",
             "es": "Coger la taza con las dos manos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_mug"
         },
         {
           "id": "2_3.decembro.s4.rug-by-the-fire",
@@ -786,7 +792,8 @@
             "gl": "Pasar as páxinas",
             "es": "Pasar las páginas"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_picture_book"
         },
         {
           "id": "2_3.decembro.s4.radiator",
@@ -797,7 +804,8 @@
             "gl": "Achegar as mans ao radiador",
             "es": "Acercar las manos al radiador"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_radiator"
         },
         {
           "id": "2_3.decembro.s4.bedtime-story",

@@ -317,7 +317,8 @@
           "tprAction": {
             "gl": "Amorear area imaxinaria e darlle palmadiñas",
             "es": "Amontonar arena imaginaria y darle palmaditas"
-          }
+          },
+          "lamina": "pal_sandcastle"
         },
         {
           "id": "3_4.xuno.s2.sun-hat",
@@ -387,7 +388,8 @@
           "tprAction": {
             "gl": "Derrubar un castelo de area imaxinario cun dedo",
             "es": "Derribar un castillo de arena imaginario con un dedo"
-          }
+          },
+          "lamina": "pal_knock_down"
         },
         {
           "id": "3_4.xuno.s2.write",
@@ -817,7 +819,8 @@
           "tprAction": {
             "gl": "Facer unha foto cunha cámara imaxinaria: clic!",
             "es": "Hacer una foto con una cámara imaginaria: ¡clic!"
-          }
+          },
+          "lamina": "pal_photo"
         },
         {
           "id": "3_4.xuno.s4.bonfire",
@@ -840,7 +843,8 @@
           "tprAction": {
             "gl": "Meter roupa imaxinaria nunha maleta",
             "es": "Meter ropa imaginaria en una maleta"
-          }
+          },
+          "lamina": "pal_pack"
         },
         {
           "id": "3_4.xuno.s4.travel",

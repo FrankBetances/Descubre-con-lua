@@ -105,7 +105,8 @@
             "gl": "Mollar os pés na beira",
             "es": "Mojar los pies en la orilla"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_paddle_in"
         },
         {
           "id": "0_2.xuno.s1.scoop-sand",
@@ -116,7 +117,8 @@
             "gl": "Coller area coa man",
             "es": "Coger arena con la mano"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_scoop_sand"
         },
         {
           "id": "0_2.xuno.s1.let-sand-run",
@@ -234,7 +236,8 @@
             "gl": "Botar area nos pés",
             "es": "Echar arena en los pies"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_sand_on_my_feet"
         },
         {
           "id": "0_2.xuno.s1.by-the-sea",
@@ -386,7 +389,8 @@
             "gl": "Subir e baixar coma as ondas",
             "es": "Subir y bajar como las olas"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_rise_and_fall"
         },
         {
           "id": "0_2.xuno.s2.hug-a-fish",
@@ -492,7 +496,8 @@
             "gl": "Pasar a man por riba en ondas",
             "es": "Pasar la mano por encima en ondas"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_over_the_waves"
         }
       ]
     },
@@ -618,7 +623,8 @@
             "gl": "Estender a crema en círculos",
             "es": "Extender la crema en círculos"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_rub_in"
         },
         {
           "id": "0_2.xuno.s3.shade-your-eyes",
@@ -861,7 +867,8 @@
             "gl": "Premer a man no papel",
             "es": "Presionar la mano en el papel"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_press_hands"
         },
         {
           "id": "0_2.xuno.s4.keep",
@@ -872,7 +879,8 @@
             "gl": "Gardar o recordo na caixa",
             "es": "Guardar el recuerdo en la caja"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_keep"
         },
         {
           "id": "0_2.xuno.s4.look-back",

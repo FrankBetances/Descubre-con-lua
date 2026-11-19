@@ -377,7 +377,8 @@
             "gl": "Secar a pel a palmadiñas",
             "es": "Secar la piel a toquecitos"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_pat_dry"
         },
         {
           "id": "0_2.maio.s2.wrap-in-a-towel",
@@ -594,7 +595,8 @@
             "gl": "Enxaugar as mans baixo a billa",
             "es": "Enjuagarse las manos bajo el grifo"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_rinse_your_hands"
         },
         {
           "id": "0_2.maio.s3.turn-the-tap",

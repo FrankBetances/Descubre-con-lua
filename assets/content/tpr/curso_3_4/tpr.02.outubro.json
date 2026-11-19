@@ -528,7 +528,8 @@
           "tprAction": {
             "gl": "Dar unhas palmadas suaves nas pernas",
             "es": "Darse unas palmadas suaves en las piernas"
-          }
+          },
+          "lamina": "pal_legs"
         },
         {
           "id": "3_4.outubro.s3.fingers",
@@ -610,7 +611,8 @@
           "tprAction": {
             "gl": "Estirar o brazo para coller algo alto",
             "es": "Estirar el brazo para coger algo alto"
-          }
+          },
+          "lamina": "pal_reach"
         },
         {
           "id": "3_4.outubro.s3.wiggle",
@@ -632,7 +634,8 @@
           "tprAction": {
             "gl": "Dar unha patada suave a unha pelota imaxinaria",
             "es": "Dar una patada suave a una pelota imaginaria"
-          }
+          },
+          "lamina": "pal_kick"
         },
         {
           "id": "3_4.outubro.s3.fast",

@@ -400,7 +400,8 @@
             "gl": "Apoiar o bebé no ombro",
             "es": "Apoyar al bebé en el hombro"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_lean_on"
         },
         {
           "id": "0_2.decembro.s2.snuggly",
@@ -743,7 +744,8 @@
             "gl": "Acender e apagar dúas veces",
             "es": "Encender y apagar dos veces"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_on_and_off"
         }
       ]
     },
@@ -799,7 +801,8 @@
             "gl": "Poñer as mans coma cornos",
             "es": "Poner las manos como cuernos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_reindeer"
         },
         {
           "id": "0_2.decembro.s4.carol",

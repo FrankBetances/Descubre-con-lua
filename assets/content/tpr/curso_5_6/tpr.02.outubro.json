@@ -391,7 +391,8 @@
             "gl": "Soltar os brazos",
             "es": "Soltar los brazos"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_relax"
         },
         {
           "id": "5_6.outubro.s2.racing-heart",
@@ -588,7 +589,8 @@
             "gl": "Facer círculos cos brazos",
             "es": "Hacer círculos con los brazos"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_rotate_arms"
         },
         {
           "id": "5_6.outubro.s3.touch-toes",
@@ -622,7 +624,8 @@
             "gl": "Avanzar unha perna e dobrala",
             "es": "Avanzar una pierna y doblarla"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_lunge"
         },
         {
           "id": "5_6.outubro.s3.shake-out",
@@ -668,7 +671,8 @@
             "gl": "Soltar os brazos",
             "es": "Soltar los brazos"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_loose"
         },
         {
           "id": "5_6.outubro.s3.stretchy",
@@ -792,7 +796,8 @@
             "gl": "Facer unha luz pequena coas mans",
             "es": "Hacer una luz pequeña con las manos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_night_light"
         },
         {
           "id": "5_6.outubro.s4.dream-journal",

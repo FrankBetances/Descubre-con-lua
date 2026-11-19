@@ -129,7 +129,8 @@
             "gl": "Caer dobrando os xeonllos",
             "es": "Caer doblando las rodillas"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_land_softly"
         },
         {
           "id": "2_3.outubro.s1.squat",
@@ -187,7 +188,8 @@
             "gl": "Dar saltiños rápidos",
             "es": "Dar saltitos rápidos"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_jumping"
         },
         {
           "id": "2_3.outubro.s1.wobbly-legs",
@@ -233,7 +235,8 @@
             "gl": "Levantar e baixar os xeonllos",
             "es": "Subir y bajar las rodillas"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_knees_up_knees_down"
         },
         {
           "id": "2_3.outubro.s1.jump-and-land",
@@ -301,7 +304,8 @@
             "gl": "Facer círculos coa cinta",
             "es": "Hacer círculos con la cinta"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_ribbon_stick"
         },
         {
           "id": "2_3.outubro.s2.swivel-chair",

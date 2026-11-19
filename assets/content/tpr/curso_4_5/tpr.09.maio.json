@@ -33,7 +33,8 @@
             "gl": "Deixar caer unha bóla de vidro",
             "es": "Dejar caer una canica"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_marble"
         },
         {
           "id": "4_5.maio.s1.feather-boat",
@@ -44,7 +45,8 @@
             "gl": "Dobrar un barco de papel",
             "es": "Doblar un barco de papel"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_paper_boat"
         },
         {
           "id": "4_5.maio.s1.tank",
@@ -538,7 +540,8 @@
             "gl": "Encher un vaso de choiva",
             "es": "Llenar un vaso de lluvia"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_rain_gauge"
         },
         {
           "id": "4_5.maio.s3.prism",
@@ -795,7 +798,8 @@
             "gl": "Poñer cara de salgado",
             "es": "Poner cara de salado"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_salt_water"
         },
         {
           "id": "4_5.maio.s4.otter",

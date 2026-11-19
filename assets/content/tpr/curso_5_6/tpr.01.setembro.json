@@ -214,7 +214,8 @@
             "gl": "Meter un papel na urna",
             "es": "Meter un papel en la urna"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_let_s_vote"
         },
         {
           "id": "5_6.setembro.s1.most-of-us-chose-the-park",
@@ -488,7 +489,8 @@
             "gl": "Rascar a cabeza pensando",
             "es": "Rascarse la cabeza pensando"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_problem"
         },
         {
           "id": "5_6.setembro.s3.solution",
@@ -745,7 +747,8 @@
             "gl": "Enganchar os meniñeiros",
             "es": "Enganchar los meñiques"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_pinky_promise"
         },
         {
           "id": "5_6.setembro.s4.timer",

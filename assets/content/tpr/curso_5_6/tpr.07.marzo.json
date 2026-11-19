@@ -217,7 +217,8 @@
             "gl": "Alternar mans",
             "es": "Alternar manos"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_red_blue_red_blue"
         },
         {
           "id": "5_6.marzo.s1.clap-stamp-clap-stamp-what-comes-next",
@@ -271,7 +272,8 @@
             "gl": "Trazar unha liña no medio",
             "es": "Trazar una línea en el medio"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_mirror_line"
         },
         {
           "id": "5_6.marzo.s2.butterfly-print",
@@ -329,7 +331,8 @@
             "gl": "Dobrar e recortar no aire",
             "es": "Doblar y recortar en el aire"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_paper_snowflake"
         },
         {
           "id": "5_6.marzo.s2.fold-paper",
@@ -352,7 +355,8 @@
             "gl": "Copiar os xestos de fronte",
             "es": "Copiar los gestos de frente"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_mirror_a_friend"
         },
         {
           "id": "5_6.marzo.s2.open-up-the-fold",

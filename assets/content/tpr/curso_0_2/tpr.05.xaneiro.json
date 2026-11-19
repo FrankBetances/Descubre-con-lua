@@ -386,7 +386,8 @@
             "gl": "Facer «hiii» e galopar sentados",
             "es": "Hacer «hiii» y galopar sentados"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_neigh"
         },
         {
           "id": "0_2.xaneiro.s2.trot",
@@ -433,7 +434,8 @@
             "gl": "Facer moitos sons de animais",
             "es": "Hacer muchos sonidos de animales"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_noisy_farm"
         },
         {
           "id": "0_2.xaneiro.s2.muddy-pig",
@@ -444,7 +446,8 @@
             "gl": "Palmear as mans coma no barro",
             "es": "Palmear las manos como en el barro"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_muddy_pig"
         },
         {
           "id": "0_2.xaneiro.s2.old-macdonald-had-a-farm",
@@ -618,7 +621,8 @@
             "gl": "Facer que un peluche rilla a man",
             "es": "Hacer que un peluche mordisquee la mano"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_nibble"
         },
         {
           "id": "0_2.xaneiro.s3.creep-up",
@@ -805,7 +809,8 @@
             "gl": "Darlle corda á caixa de música",
             "es": "Dar cuerda a la caja de música"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_music_box"
         },
         {
           "id": "0_2.xaneiro.s4.wind-chime",

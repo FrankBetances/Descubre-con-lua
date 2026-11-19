@@ -117,7 +117,8 @@
             "gl": "Beliscar suave a meixela",
             "es": "Pellizcar suave la mejilla"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_pinch_softly"
         },
         {
           "id": "0_2.outubro.s1.point-to",
@@ -385,7 +386,8 @@
             "gl": "Premer suave a planta dos pés",
             "es": "Presionar suave la planta de los pies"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_massage_feet"
         },
         {
           "id": "0_2.outubro.s2.draw-circles",
@@ -801,7 +803,8 @@
             "gl": "Enganchar o dedo meniñeiro",
             "es": "Enganchar el meñique"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_little_finger"
         },
         {
           "id": "0_2.outubro.s4.tooth",

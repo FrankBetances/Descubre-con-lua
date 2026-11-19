@@ -746,7 +746,8 @@
             "gl": "Estirarse a coller froita",
             "es": "Estirarse a coger fruta"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_orchard"
         },
         {
           "id": "5_6.novembro.s4.ladder",
@@ -781,7 +782,8 @@
             "gl": "Coller un marmelo",
             "es": "Coger un membrillo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_quince"
         },
         {
           "id": "5_6.novembro.s4.chestnut-tree",

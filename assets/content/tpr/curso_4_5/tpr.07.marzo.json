@@ -149,7 +149,8 @@
             "gl": "Arrugar o nariz",
             "es": "Arrugar la nariz"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_pull_a_face"
         },
         {
           "id": "4_5.marzo.s1.sweeter",
@@ -272,7 +273,8 @@
             "gl": "Aliñar de pequena a grande",
             "es": "Alinear de pequeña a grande"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_row_of_dolls"
         },
         {
           "id": "4_5.marzo.s2.nesting-dolls",
@@ -329,7 +331,8 @@
             "gl": "Poñer tres cousas en fila",
             "es": "Poner tres cosas en fila"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_order"
         },
         {
           "id": "4_5.marzo.s2.line-up-by-size",
@@ -340,7 +343,8 @@
             "gl": "Poñerse do máis baixo ao máis alto",
             "es": "Ponerse del más bajo al más alto"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_line_up_by_size"
         },
         {
           "id": "4_5.marzo.s2.show-big-arms",
@@ -548,7 +552,8 @@
             "gl": "Botar lentellas nun bote",
             "es": "Echar lentejas en un bote"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_lentils"
         },
         {
           "id": "4_5.marzo.s3.egg-cup",
@@ -595,7 +600,8 @@
             "gl": "Pelar no aire",
             "es": "Pelar en el aire"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_peel_a_carrot"
         },
         {
           "id": "4_5.marzo.s3.boil",
@@ -642,7 +648,8 @@
             "gl": "Poñer os brazos fortes",
             "es": "Poner los brazos fuertes"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_nutritious"
         },
         {
           "id": "4_5.marzo.s3.leafy-green",
@@ -823,7 +830,8 @@
             "gl": "Dar moedas imaxinarias",
             "es": "Dar monedas imaginarias"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_pay"
         },
         {
           "id": "4_5.marzo.s4.choose-fruit",
@@ -858,7 +866,8 @@
             "gl": "Meter cousas na bolsa",
             "es": "Meter cosas en la bolsa"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_pack_the_bag"
         },
         {
           "id": "4_5.marzo.s4.ask-for",

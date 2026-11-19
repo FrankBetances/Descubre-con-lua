@@ -176,7 +176,8 @@
             "gl": "Facer unha cúpula coas mans",
             "es": "Hacer una cúpula con las manos"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_protected"
         },
         {
           "id": "4_5.abril.s1.rocky",
@@ -519,7 +520,8 @@
             "gl": "Moverse ondulando coma alga",
             "es": "Moverse ondulando como un alga"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_kelp"
         },
         {
           "id": "4_5.abril.s3.sea-urchin",
@@ -775,7 +777,8 @@
             "gl": "Engurrar un plástico",
             "es": "Arrugar un plástico"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_plastic"
         },
         {
           "id": "4_5.abril.s4.glass-jar",
@@ -798,7 +801,8 @@
             "gl": "Dobrar e gardar a bolsa",
             "es": "Doblar y guardar la bolsa"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_reusable_bag"
         },
         {
           "id": "4_5.abril.s4.compost",
@@ -845,7 +849,8 @@
             "gl": "Facer un círculo con frechas",
             "es": "Hacer un círculo con flechas"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_recycle"
         },
         {
           "id": "4_5.abril.s4.reuse",

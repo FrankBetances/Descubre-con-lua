@@ -466,7 +466,8 @@
           "tprAction": {
             "gl": "Dar as mans e formar un círculo entre todos",
             "es": "Darse las manos y formar un círculo entre todos"
-          }
+          },
+          "lamina": "pal_make_a_circle"
         },
         {
           "id": "3_4.marzo.s2.inside-the-hoop",
@@ -617,7 +618,8 @@
           "tprAction": {
             "gl": "Estirarse para coller froita dunha árbore",
             "es": "Estirarse para coger fruta de un árbol"
-          }
+          },
+          "lamina": "pal_pick"
         },
         {
           "id": "3_4.marzo.s3.chew",

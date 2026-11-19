@@ -441,7 +441,8 @@
             "gl": "Premer suave o mango",
             "es": "Apretar suave el mango"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_ripe_mango"
         },
         {
           "id": "2_3.marzo.s2.i-like-mango",
@@ -531,7 +532,8 @@
             "gl": "Xuntar as mans en punta",
             "es": "Juntar las manos en punta"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_pyramid"
         },
         {
           "id": "2_3.marzo.s3.cylinder",
@@ -823,7 +825,8 @@
             "gl": "Estender o mantel",
             "es": "Extender el mantel"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_lunch_mat"
         },
         {
           "id": "2_3.marzo.s4.unpack",
@@ -845,7 +848,8 @@
             "gl": "Pasar o prato ao seguinte",
             "es": "Pasar el plato al siguiente"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_pass_the_plate"
         },
         {
           "id": "2_3.marzo.s4.crunch-a-carrot",

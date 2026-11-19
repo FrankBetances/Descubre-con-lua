@@ -128,7 +128,8 @@
           "tprAction": {
             "gl": "Derreterse amodo ata quedar tombados",
             "es": "Derretirse despacio hasta quedar tumbados"
-          }
+          },
+          "lamina": "pal_melt"
         },
         {
           "id": "3_4.decembro.s1.throw",
@@ -352,7 +353,8 @@
           "tprAction": {
             "gl": "Facer soar unha campá imaxinaria: din, don",
             "es": "Hacer sonar una campana imaginaria: din, don"
-          }
+          },
+          "lamina": "pal_ring"
         },
         {
           "id": "3_4.decembro.s2.twinkle",
@@ -468,7 +470,8 @@
           "tprAction": {
             "gl": "Facer soar campás imaxinarias coas dúas mans",
             "es": "Hacer sonar campanas imaginarias con las dos manos"
-          }
+          },
+          "lamina": "pal_ring_bells"
         },
         {
           "id": "3_4.decembro.s2.on-the-tree",
@@ -479,7 +482,8 @@
           "tprAction": {
             "gl": "Pendurar adornos nunha árbore que fai unha compañeira",
             "es": "Colgar adornos en un árbol que hace una compañera"
-          }
+          },
+          "lamina": "pal_on_the_tree"
         },
         {
           "id": "3_4.decembro.s2.up-to-the-star",
@@ -571,7 +575,8 @@
           "tprAction": {
             "gl": "Meter un brazo e logo o outro nun pixama imaxinario",
             "es": "Meter un brazo y luego el otro en un pijama imaginario"
-          }
+          },
+          "lamina": "pal_pyjamas"
         },
         {
           "id": "3_4.decembro.s3.dream",

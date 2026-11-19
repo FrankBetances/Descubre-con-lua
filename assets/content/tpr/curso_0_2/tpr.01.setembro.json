@@ -338,7 +338,8 @@
             "gl": "Pasar as follas do álbum xuntos",
             "es": "Pasar las hojas del álbum juntos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_photo_album"
         },
         {
           "id": "0_2.setembro.s2.kiss-goodbye",
@@ -361,7 +362,8 @@
             "gl": "Levantar o bebé do chan amodo",
             "es": "Levantar al bebé del suelo despacio"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_pick_up_baby"
         },
         {
           "id": "0_2.setembro.s2.settle",

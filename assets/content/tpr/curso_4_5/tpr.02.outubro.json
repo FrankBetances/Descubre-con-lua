@@ -331,7 +331,8 @@
             "gl": "Pasar o testemuño",
             "es": "Pasar el testigo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_relay_race"
         },
         {
           "id": "4_5.outubro.s2.run-like-a-fox",
@@ -390,7 +391,8 @@
             "gl": "Dar o pau ao seguinte",
             "es": "Dar el palo al siguiente"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_pass_the_baton"
         },
         {
           "id": "4_5.outubro.s2.sly",
@@ -679,7 +681,8 @@
             "gl": "Poñer os brazos á mesma altura",
             "es": "Poner los brazos a la misma altura"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_level"
         },
         {
           "id": "4_5.outubro.s3.look-at-one-spot",

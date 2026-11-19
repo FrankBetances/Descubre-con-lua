@@ -597,7 +597,8 @@
             "gl": "Achegar a lupa",
             "es": "Acercar la lupa"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_look_closely"
         },
         {
           "id": "4_5.novembro.s3.curl-into-a-ball",
@@ -620,7 +621,8 @@
             "gl": "Levantar un tronco con coidado",
             "es": "Levantar un tronco con cuidado"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_lift_a_log"
         },
         {
           "id": "4_5.novembro.s3.dig-tunnels",
@@ -852,7 +854,8 @@
             "gl": "Xuntar dúas follas da mesma cor",
             "es": "Juntar dos hojas del mismo color"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_match_colours"
         },
         {
           "id": "4_5.novembro.s4.rub-a-leaf",

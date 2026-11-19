@@ -45,7 +45,8 @@
             "gl": "Coller e botar na bolsa",
             "es": "Coger y echar en la bolsa"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_rubbish"
         },
         {
           "id": "5_6.abril.s1.beach-clean-up",
@@ -91,7 +92,8 @@
             "gl": "Poñer luvas imaxinarias",
             "es": "Ponerse guantes imaginarios"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_rubber_gloves"
         },
         {
           "id": "5_6.abril.s1.pick-up-trash",
@@ -160,7 +162,8 @@
             "gl": "Tapar o nariz",
             "es": "Taparse la nariz"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_polluted"
         },
         {
           "id": "5_6.abril.s1.clean-and-clear",
@@ -270,7 +273,8 @@
             "gl": "Facer formas coas mans",
             "es": "Hacer formas con las manos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_reef"
         },
         {
           "id": "5_6.abril.s2.scallop",
@@ -616,7 +620,8 @@
             "gl": "Unir dúas pezas",
             "es": "Unir dos piezas"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_mend"
         },
         {
           "id": "5_6.abril.s3.share-toys",
@@ -960,7 +965,8 @@
             "gl": "Estirar o brazo",
             "es": "Estirar el brazo"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_keep_your_distance"
         }
       ]
     }
