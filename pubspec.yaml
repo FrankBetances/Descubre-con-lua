@@ -83,6 +83,7 @@ flutter:
     - assets/content/modelo/
     # La sesión de 45 minutos (F3): lo fijo de sus cuatro fases.
     - assets/content/sesion45/
+    - assets/content/escoita/
     # El plan curricular de Frank (F11): las 12 unidades y su calendario.
     - assets/content/curriculo/
     # Los 100 cuentos dialogados HIS-001…HIS-100 (F12).
@@ -135,3 +136,11 @@ flutter:
           weight: 700
         - asset: assets/fonts/Nunito-ExtraBold.ttf
           weight: 800
+    # O-20261119-8: Fredoka en los títulos, como en Valeria (src/ui/fonts.ts).
+    # Instancias fijas de 600 y 700 sacadas de la variable de google/fonts (OFL).
+    - family: Fredoka
+      fonts:
+        - asset: assets/fonts/Fredoka-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Fredoka-Bold.ttf
+          weight: 700

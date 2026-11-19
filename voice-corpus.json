@@ -1,14 +1,14 @@
 {
- "generatedAt": "2026-11-10T06:24:42Z",
- "entries": 37090,
+ "generatedAt": "2026-11-19T17:54:30Z",
+ "entries": 37481,
  "byStyle": {
   "slow": 5956,
-  "tutor": 31134
+  "tutor": 31525
  },
  "byLang": {
   "en": 17157,
-  "es": 9966,
-  "gl": 9967
+  "es": 10162,
+  "gl": 10162
  },
  "corpus": [
   {
@@ -156129,6 +156129,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_03d57db5_15",
+   "lang": "es",
+   "style": "tutor",
+   "text": "El coche corre.",
+   "speech": "El coche corre.",
+   "source": "escoita/valeria_es",
+   "pack": false
+  },
+  {
    "id": "es_tutor_03d89d91_74",
    "lang": "es",
    "style": "tutor",
@@ -156306,6 +156315,15 @@
    "text": "¡Sí! ¡Ahí! ¡La manzana está en la paja!",
    "speech": "¡Sí! ¡Ahí! ¡La manzana está en la paja!",
    "source": "biblioteca/HIS-025/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_044784be_16",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Esto es la vaca.",
+   "speech": "Esto es la vaca.",
+   "source": "escoita/valeria_es",
    "pack": false
   },
   {
@@ -156549,6 +156567,15 @@
    "text": "luna",
    "speech": "luna",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_05037b1c_5",
+   "lang": "es",
+   "style": "tutor",
+   "text": "vagón",
+   "speech": "vagón",
+   "source": "escoita/valeria_es",
    "pack": false
   },
   {
@@ -156946,6 +156973,15 @@
    "speech": "Dos, cuatro, seis, ocho",
    "source": "tpr.5_6.novembro/s2/5_6.novembro.s2.two-four-six-eight/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_060b4dde_16",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Esto es la mano.",
+   "speech": "Esto es la mano.",
+   "source": "escoita/valeria_es",
+   "pack": false
   },
   {
    "id": "es_tutor_060ed090_44",
@@ -158084,6 +158120,15 @@
    "text": "¿Puedes ser una ovejita? ¡Mee, mee!",
    "speech": "¿Puedes ser una ovejita? ¡Mee, mee!",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_093752f4_5",
+   "lang": "es",
+   "style": "tutor",
+   "text": "globo",
+   "speech": "globo",
+   "source": "escoita/valeria_es",
    "pack": false
   },
   {
@@ -159599,6 +159644,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_0d4a46c7_30",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Soplamos para inflar el globo.",
+   "speech": "Soplamos para inflar el globo.",
+   "source": "escoita/valeria_es",
+   "pack": false
+  },
+  {
    "id": "es_tutor_0d4a90ca_7",
    "lang": "es",
    "style": "tutor",
@@ -160031,6 +160085,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_0e7b78cc_18",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Esto es el pájaro.",
+   "speech": "Esto es el pájaro.",
+   "source": "escoita/valeria_es",
+   "pack": false
+  },
+  {
    "id": "es_tutor_0e854561_8",
    "lang": "es",
    "style": "tutor",
@@ -160127,6 +160190,15 @@
    "text": "¿Por qué ha saltado la sopa de la olla?",
    "speech": "¿Por qué ha saltado la sopa de la olla?",
    "source": "biblioteca/HIS-010/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_0ed0d71c_5",
+   "lang": "es",
+   "style": "tutor",
+   "text": "queso",
+   "speech": "queso",
+   "source": "escoita/valeria_es",
    "pack": false
   },
   {
@@ -160517,6 +160589,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_10329d3e_5",
+   "lang": "es",
+   "style": "tutor",
+   "text": "sopla",
+   "speech": "sopla",
+   "source": "escoita/valeria_es",
+   "pack": false
+  },
+  {
    "id": "es_tutor_1036f4f3_15",
    "lang": "es",
    "style": "tutor",
@@ -160542,6 +160623,15 @@
    "speech": "Impecable",
    "source": "tpr.2_3.maio/s1/2_3.maio.s1.spotless/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_103f079c_26",
+   "lang": "es",
+   "style": "tutor",
+   "text": "El gato duerme en su cama.",
+   "speech": "El gato duerme en su cama.",
+   "source": "escoita/valeria_es",
+   "pack": false
   },
   {
    "id": "es_tutor_10455038_13",
@@ -161075,6 +161165,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_11c8c301_21",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Este color es morado.",
+   "speech": "Este color es morado.",
+   "source": "escoita/valeria_es",
+   "pack": false
+  },
+  {
    "id": "es_tutor_11c90749_10",
    "lang": "es",
    "style": "tutor",
@@ -161315,6 +161414,15 @@
    "text": "Mira: una hormiga pequeñita. Tiptoe, tiptoe... ¡una hoja grande!",
    "speech": "Mira: una hormiga pequeñita. Tiptoe, tiptoe... ¡una hoja grande!",
    "source": "biblioteca/HIS-007/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_12467974_4",
+   "lang": "es",
+   "style": "tutor",
+   "text": "moto",
+   "speech": "moto",
+   "source": "escoita/valeria_es",
    "pack": false
   },
   {
@@ -161876,6 +161984,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_13f246a4_7",
+   "lang": "es",
+   "style": "tutor",
+   "text": "recoger",
+   "speech": "recoger",
+   "source": "escoita/valeria_es",
+   "pack": false
+  },
+  {
    "id": "es_tutor_13f54727_14",
    "lang": "es",
    "style": "tutor",
@@ -162350,6 +162467,15 @@
    "text": "Mover todos los dedos ágilmente como tentáculos blandos.",
    "speech": "Mover todos los dedos ágilmente como tentáculos blandos.",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_152bcde9_32",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Después nos lavamos los dientes.",
+   "speech": "Después nos lavamos los dientes.",
+   "source": "escoita/valeria_es",
    "pack": false
   },
   {
@@ -163592,6 +163718,15 @@
    "text": "¡Sí! ¡La concha grande! ¡Una casa nueva para el cangrejo!",
    "speech": "¡Sí! ¡La concha grande! ¡Una casa nueva para el cangrejo!",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_191a6b83_33",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Primero nos metemos en la bañera.",
+   "speech": "Primero nos metemos en la bañera.",
+   "source": "escoita/valeria_es",
    "pack": false
   },
   {
@@ -165026,6 +165161,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_1cd686a0_4",
+   "lang": "es",
+   "style": "tutor",
+   "text": "vaca",
+   "speech": "vaca",
+   "source": "escoita/valeria_es",
+   "pack": false
+  },
+  {
    "id": "es_tutor_1cdb6b39_11",
    "lang": "es",
    "style": "tutor",
@@ -165176,6 +165320,15 @@
    "text": "¡Un abrazo! ¡Un abrazo grande de la abuela Búho!",
    "speech": "¡Un abrazo! ¡Un abrazo grande de la abuela Búho!",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_1d512f9b_4",
+   "lang": "es",
+   "style": "tutor",
+   "text": "piel",
+   "speech": "piel",
+   "source": "escoita/valeria_es",
    "pack": false
   },
   {
@@ -165791,6 +165944,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_1ed34a12_6",
+   "lang": "es",
+   "style": "tutor",
+   "text": "rápido",
+   "speech": "rápido",
+   "source": "escoita/valeria_es",
+   "pack": false
+  },
+  {
    "id": "es_tutor_1ed5588f_10",
    "lang": "es",
    "style": "tutor",
@@ -165833,6 +165995,15 @@
    "text": "¿Qué sopa te gusta: la naranja, la verde o la roja? ¿Qué sopa comes en casa?",
    "speech": "¿Qué sopa te gusta: la naranja, la verde o la roja? ¿Qué sopa comes en casa?",
    "source": "biblioteca/HIS-010/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_1ee26308_4",
+   "lang": "es",
+   "style": "tutor",
+   "text": "piña",
+   "speech": "piña",
+   "source": "escoita/valeria_es",
    "pack": false
   },
   {
@@ -166620,6 +166791,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_21403a2e_16",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Esto es un gato.",
+   "speech": "Esto es un gato.",
+   "source": "escoita/valeria_es",
+   "pack": false
+  },
+  {
    "id": "es_tutor_21496987_21",
    "lang": "es",
    "style": "tutor",
@@ -166635,6 +166815,15 @@
    "text": "Yes, the big brown bear! Coge el oso, walk like an elephant, put it in the box.",
    "speech": "Yes, the big brown bear! Coge el oso, walk like an elephant, put it in the box.",
    "source": "asamblea.segundo_ciclo.abril.4_infantil/microRutina/pauta/0/modeladoIndirecto",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_215a8de0_19",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Esto es una cereza.",
+   "speech": "Esto es una cereza.",
+   "source": "escoita/valeria_es",
    "pack": false
   },
   {
@@ -166870,6 +167059,15 @@
    "speech": "Asentir",
    "source": "tpr.0_2.setembro/s1/0_2.setembro.s1.nod/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_2237ec13_19",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Esto es una jirafa.",
+   "speech": "Esto es una jirafa.",
+   "source": "escoita/valeria_es",
+   "pack": false
   },
   {
    "id": "es_tutor_2238160e_6",
@@ -167999,6 +168197,15 @@
    "text": "Va, va, va... ¡para! ¡Bota, bota!",
    "speech": "Va, va, va... ¡para! ¡Bota, bota!",
    "source": "biblioteca/HIS-053/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_252667a4_21",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Este color es marrón.",
+   "speech": "Este color es marrón.",
+   "source": "escoita/valeria_es",
    "pack": false
   },
   {
@@ -169290,6 +169497,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_2881ed2b_6",
+   "lang": "es",
+   "style": "tutor",
+   "text": "apagar",
+   "speech": "apagar",
+   "source": "escoita/valeria_es",
+   "pack": false
+  },
+  {
    "id": "es_tutor_28841522_5",
    "lang": "es",
    "style": "tutor",
@@ -170577,6 +170793,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_2bf29a28_30",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Primero nos lavamos las manos.",
+   "speech": "Primero nos lavamos las manos.",
+   "source": "escoita/valeria_es",
+   "pack": false
+  },
+  {
    "id": "es_tutor_2bf9ae27_18",
    "lang": "es",
    "style": "tutor",
@@ -171288,6 +171513,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_2ebb5f16_17",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Esto es una pera.",
+   "speech": "Esto es una pera.",
+   "source": "escoita/valeria_es",
+   "pack": false
+  },
+  {
    "id": "es_tutor_2ebe5b0c_55",
    "lang": "es",
    "style": "tutor",
@@ -171963,6 +172197,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_30b6438f_29",
+   "lang": "es",
+   "style": "tutor",
+   "text": "El gato tiene bigotes largos.",
+   "speech": "El gato tiene bigotes largos.",
+   "source": "escoita/valeria_es",
+   "pack": false
+  },
+  {
    "id": "es_tutor_30b81cdf_21",
    "lang": "es",
    "style": "tutor",
@@ -172143,6 +172386,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_315cdda7_6",
+   "lang": "es",
+   "style": "tutor",
+   "text": "duerme",
+   "speech": "duerme",
+   "source": "escoita/valeria_es",
+   "pack": false
+  },
+  {
    "id": "es_tutor_3165d0d0_19",
    "lang": "es",
    "style": "tutor",
@@ -172303,6 +172555,15 @@
    "speech": "Darlo",
    "source": "tpr.2_3.setembro/s2/2_3.setembro.s2.hand-it-over/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_31e7cc11_41",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¿Cuál es el osito GRANDE? ¡Dámelo y dilo!",
+   "speech": "¿Cuál es el osito GRANDE? ¡Dámelo y dilo!",
+   "source": "escoita/valeria_es",
+   "pack": false
   },
   {
    "id": "es_tutor_31e8d533_27",
@@ -172806,6 +173067,15 @@
    "text": "Tómate tu tiempo para tomar una buena decisión.",
    "speech": "Tómate tu tiempo para tomar una buena decisión.",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_334bb4d6_4",
+   "lang": "es",
+   "style": "tutor",
+   "text": "ocho",
+   "speech": "ocho",
+   "source": "escoita/valeria_es",
    "pack": false
   },
   {
@@ -173685,6 +173955,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_35b508e0_7",
+   "lang": "es",
+   "style": "tutor",
+   "text": "naranja",
+   "speech": "naranja",
+   "source": "escoita/valeria_es",
+   "pack": false
+  },
+  {
    "id": "es_tutor_35c29813_91",
    "lang": "es",
    "style": "tutor",
@@ -173709,6 +173988,15 @@
    "text": "¡Sí, el perro corre! ¡Para, perro!",
    "speech": "¡Sí, el perro corre! ¡Para, perro!",
    "source": "biblioteca/HIS-046/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_35d663ce_8",
+   "lang": "es",
+   "style": "tutor",
+   "text": "caliente",
+   "speech": "caliente",
+   "source": "escoita/valeria_es",
    "pack": false
   },
   {
@@ -173746,6 +174034,15 @@
    "speech": "Profundamente dormido",
    "source": "tpr.0_2.xaneiro/s4/0_2.xaneiro.s4.sound-asleep/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_35fb238b_5",
+   "lang": "es",
+   "style": "tutor",
+   "text": "coche",
+   "speech": "coche",
+   "source": "escoita/valeria_es",
+   "pack": false
   },
   {
    "id": "es_tutor_35fbf6f2_58",
@@ -174324,6 +174621,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_3752c77a_28",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Al final nos vamos a dormir.",
+   "speech": "Al final nos vamos a dormir.",
+   "source": "escoita/valeria_es",
+   "pack": false
+  },
+  {
    "id": "es_tutor_3758a141_38",
    "lang": "es",
    "style": "tutor",
@@ -174603,6 +174909,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_383256d6_4",
+   "lang": "es",
+   "style": "tutor",
+   "text": "foca",
+   "speech": "foca",
+   "source": "escoita/valeria_es",
+   "pack": false
+  },
+  {
    "id": "es_tutor_383580e9_19",
    "lang": "es",
    "style": "tutor",
@@ -174718,6 +175033,15 @@
    "speech": "Congelador",
    "source": "tpr.4_5.decembro/s1/4_5.decembro.s1.freezer/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_38906aba_5",
+   "lang": "es",
+   "style": "tutor",
+   "text": "sucio",
+   "speech": "sucio",
+   "source": "escoita/valeria_es",
+   "pack": false
   },
   {
    "id": "es_tutor_38930d28_6",
@@ -176241,6 +176565,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_3cef2b0f_19",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Este color es azul.",
+   "speech": "Este color es azul.",
+   "source": "escoita/valeria_es",
+   "pack": false
+  },
+  {
    "id": "es_tutor_3cf24e34_16",
    "lang": "es",
    "style": "tutor",
@@ -176580,6 +176913,15 @@
    "text": "Mira, un avión de papel. ¡Fuuu, fuuu! Tu mano también vuela.",
    "speech": "Mira, un avión de papel. ¡Fuuu, fuuu! Tu mano también vuela.",
    "source": "biblioteca/HIS-098/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_3dce0ab4_25",
+   "lang": "es",
+   "style": "tutor",
+   "text": "El pájaro es muy pequeño.",
+   "speech": "El pájaro es muy pequeño.",
+   "source": "escoita/valeria_es",
    "pack": false
   },
   {
@@ -177312,6 +177654,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_40099cba_29",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Luego bajamos por el tobogán.",
+   "speech": "Luego bajamos por el tobogán.",
+   "source": "escoita/valeria_es",
+   "pack": false
+  },
+  {
    "id": "es_tutor_4009e47e_12",
    "lang": "es",
    "style": "tutor",
@@ -177544,6 +177895,15 @@
    "speech": "Deja solo huellas",
    "source": "tpr.4_5.abril/s4/4_5.abril.s4.leave-only-footprints/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_40ad9083_35",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Al final nos secamos con la toalla.",
+   "speech": "Al final nos secamos con la toalla.",
+   "source": "escoita/valeria_es",
+   "pack": false
   },
   {
    "id": "es_tutor_40ae1d42_14",
@@ -177903,6 +178263,15 @@
    "text": "¿Habías visto la sombra antes?",
    "speech": "¿Habías visto la sombra antes?",
    "source": "gramatica/curso_3_4/1/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_41acc838_6",
+   "lang": "es",
+   "style": "tutor",
+   "text": "peludo",
+   "speech": "peludo",
+   "source": "escoita/valeria_es",
    "pack": false
   },
   {
@@ -179454,6 +179823,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_45b0d8fe_4",
+   "lang": "es",
+   "style": "tutor",
+   "text": "cero",
+   "speech": "cero",
+   "source": "escoita/valeria_es",
+   "pack": false
+  },
+  {
    "id": "es_tutor_45b5b413_43",
    "lang": "es",
    "style": "tutor",
@@ -179497,6 +179875,15 @@
    "speech": "¿Cómo te sientes?",
    "source": "tpr.4_5.setembro/s4/4_5.setembro.s4.how-do-you-feel/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_45d02442_5",
+   "lang": "es",
+   "style": "tutor",
+   "text": "largo",
+   "speech": "largo",
+   "source": "escoita/valeria_es",
+   "pack": false
   },
   {
    "id": "es_tutor_45e05ede_32",
@@ -179742,6 +180129,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_46853fee_5",
+   "lang": "es",
+   "style": "tutor",
+   "text": "cerro",
+   "speech": "cerro",
+   "source": "escoita/valeria_es",
+   "pack": false
+  },
+  {
    "id": "es_tutor_468a17e5_13",
    "lang": "es",
    "style": "tutor",
@@ -179776,6 +180172,15 @@
    "speech": "¡Arriba va!",
    "source": "tpr.0_2.marzo/s1/0_2.marzo.s1.up-it-goes/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_469f26ff_15",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Esto es el ojo.",
+   "speech": "Esto es el ojo.",
+   "source": "escoita/valeria_es",
+   "pack": false
   },
   {
    "id": "es_tutor_46a04b3b_55",
@@ -180327,6 +180732,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_47c3638b_25",
+   "lang": "es",
+   "style": "tutor",
+   "text": "De la vaca sale la leche.",
+   "speech": "De la vaca sale la leche.",
+   "source": "escoita/valeria_es",
+   "pack": false
+  },
+  {
    "id": "es_tutor_47c92c35_66",
    "lang": "es",
    "style": "tutor",
@@ -180450,6 +180864,15 @@
    "text": "¡Sí, la castaña rueda hacia abajo!",
    "speech": "¡Sí, la castaña rueda hacia abajo!",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_485147df_36",
+   "lang": "es",
+   "style": "tutor",
+   "text": "El perro salta para coger la pelota.",
+   "speech": "El perro salta para coger la pelota.",
+   "source": "escoita/valeria_es",
    "pack": false
   },
   {
@@ -180705,6 +181128,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_49019a1b_4",
+   "lang": "es",
+   "style": "tutor",
+   "text": "azul",
+   "speech": "azul",
+   "source": "escoita/valeria_es",
+   "pack": false
+  },
+  {
    "id": "es_tutor_490bbb83_13",
    "lang": "es",
    "style": "tutor",
@@ -180783,6 +181215,15 @@
    "text": "¡Tap-tap! ¡Tap-tap! ¡Una serie!",
    "speech": "¡Taptap! ¡Taptap! ¡Una serie!",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_494be814_20",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Esto es una manzana.",
+   "speech": "Esto es una manzana.",
+   "source": "escoita/valeria_es",
    "pack": false
   },
   {
@@ -181596,12 +182037,30 @@
    "pack": false
   },
   {
+   "id": "es_tutor_4b7472ac_20",
+   "lang": "es",
+   "style": "tutor",
+   "text": "El globo es redondo.",
+   "speech": "El globo es redondo.",
+   "source": "escoita/valeria_es",
+   "pack": false
+  },
+  {
    "id": "es_tutor_4b7c3268_58",
    "lang": "es",
    "style": "tutor",
    "text": "¿Preparado? ¡La tormenta se acabó! ¡Un abrazo con la cola!",
    "speech": "¿Preparado? ¡La tormenta se acabó! ¡Un abrazo con la cola!",
    "source": "biblioteca/HIS-083/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_4b7c7fcb_17",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Esto es un perro.",
+   "speech": "Esto es un perro.",
+   "source": "escoita/valeria_es",
    "pack": false
   },
   {
@@ -182469,6 +182928,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_4e0d5192_16",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Esto es el codo.",
+   "speech": "Esto es el codo.",
+   "source": "escoita/valeria_es",
+   "pack": false
+  },
+  {
    "id": "es_tutor_4e0f8d0f_24",
    "lang": "es",
    "style": "tutor",
@@ -182854,6 +183322,15 @@
    "speech": "Desordenado, desordenada",
    "source": "tpr.3_4.xaneiro/s4/3_4.xaneiro.s4.messy/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_4f248fcb_20",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Esto es un elefante.",
+   "speech": "Esto es un elefante.",
+   "source": "escoita/valeria_es",
+   "pack": false
   },
   {
    "id": "es_tutor_4f297870_21",
@@ -184276,6 +184753,15 @@
    "speech": "Zambullirse",
    "source": "tpr.3_4.xuno/s1/3_4.xuno.s1.dive/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_5317ebd4_6",
+   "lang": "es",
+   "style": "tutor",
+   "text": "vestir",
+   "speech": "vestir",
+   "source": "escoita/valeria_es",
+   "pack": false
   },
   {
    "id": "es_tutor_531d68f4_22",
@@ -186555,6 +187041,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_59c9ea42_6",
+   "lang": "es",
+   "style": "tutor",
+   "text": "marrón",
+   "speech": "marrón",
+   "source": "escoita/valeria_es",
+   "pack": false
+  },
+  {
    "id": "es_tutor_59dc818b_12",
    "lang": "es",
    "style": "tutor",
@@ -187086,6 +187581,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_5b6183fa_51",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Y esta otra cuchara, ¿cómo está? ¡Mira cómo brilla!",
+   "speech": "Y esta otra cuchara, ¿cómo está? ¡Mira cómo brilla!",
+   "source": "escoita/valeria_es",
+   "pack": false
+  },
+  {
    "id": "es_tutor_5b6ae3f6_33",
    "lang": "es",
    "style": "tutor",
@@ -187155,6 +187659,15 @@
    "text": "¡Tócate los hombros Y da dos vueltas!",
    "speech": "¡Tócate los hombros Y da dos vueltas!",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_5ba51194_5",
+   "lang": "es",
+   "style": "tutor",
+   "text": "vuela",
+   "speech": "vuela",
+   "source": "escoita/valeria_es",
    "pack": false
   },
   {
@@ -187308,6 +187821,15 @@
    "text": "Marca la cuadrícula en el suelo y pon el peluche en una esquina. Tú te colocas en la esquina contraria: eres el robot.",
    "speech": "Marca la cuadrícula en el suelo y pon el peluche en una esquina. Tú te colocas en la esquina contraria: eres el robot.",
    "source": "steam/I5-LOGICA-001/hogar/observa/planteamiento",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_5bf8ab3f_28",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Al final recogemos el plato.",
+   "speech": "Al final recogemos el plato.",
+   "source": "escoita/valeria_es",
    "pack": false
   },
   {
@@ -187527,6 +188049,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_5cc6b5a0_5",
+   "lang": "es",
+   "style": "tutor",
+   "text": "salta",
+   "speech": "salta",
+   "source": "escoita/valeria_es",
+   "pack": false
+  },
+  {
    "id": "es_tutor_5cc760a6_32",
    "lang": "es",
    "style": "tutor",
@@ -187659,6 +188190,15 @@
    "text": "¡Toca el sol amarillo brillante! ¡Ahora toca la hierba verde!",
    "speech": "¡Toca el sol amarillo brillante! ¡Ahora toca la hierba verde!",
    "source": "biblioteca/HIS-085/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_5d046aeb_28",
+   "lang": "es",
+   "style": "tutor",
+   "text": "El tren para en la estación.",
+   "speech": "El tren para en la estación.",
+   "source": "escoita/valeria_es",
    "pack": false
   },
   {
@@ -188445,6 +188985,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_5f2d1257_21",
+   "lang": "es",
+   "style": "tutor",
+   "text": "El tren es muy largo.",
+   "speech": "El tren es muy largo.",
+   "source": "escoita/valeria_es",
+   "pack": false
+  },
+  {
    "id": "es_tutor_5f36eec7_14",
    "lang": "es",
    "style": "tutor",
@@ -188730,6 +189279,15 @@
    "text": "¡Sí, burbujas! ¡Burbujas en el aire!",
    "speech": "¡Sí, burbujas! ¡Burbujas en el aire!",
    "source": "biblioteca/HIS-039/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_5ff8064b_29",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Y este otro vaso, ¿cómo está?",
+   "speech": "Y este otro vaso, ¿cómo está?",
+   "source": "escoita/valeria_es",
    "pack": false
   },
   {
@@ -190137,6 +190695,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_643415fd_10",
+   "lang": "es",
+   "style": "tutor",
+   "text": "quiero pan",
+   "speech": "quiero pan",
+   "source": "escoita/valeria_es",
+   "pack": false
+  },
+  {
    "id": "es_tutor_64392ff8_37",
    "lang": "es",
    "style": "tutor",
@@ -191168,6 +191735,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_66c05d26_5",
+   "lang": "es",
+   "style": "tutor",
+   "text": "corre",
+   "speech": "corre",
+   "source": "escoita/valeria_es",
+   "pack": false
+  },
+  {
    "id": "es_tutor_66cddb35_59",
    "lang": "es",
    "style": "tutor",
@@ -191310,6 +191886,15 @@
    "speech": "Dientes de delante",
    "source": "tpr.2_3.maio/s2/2_3.maio.s2.front-teeth/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_6743fba1_5",
+   "lang": "es",
+   "style": "tutor",
+   "text": "suave",
+   "speech": "suave",
+   "source": "escoita/valeria_es",
+   "pack": false
   },
   {
    "id": "es_tutor_67481e3f_14",
@@ -191570,6 +192155,15 @@
    "text": "¡Sí, hojas! ¡Hojas que hacen cranch!",
    "speech": "¡Sí, hojas! ¡Hojas que hacen cranch!",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_67fc0e13_7",
+   "lang": "es",
+   "style": "tutor",
+   "text": "zapatos",
+   "speech": "zapatos",
+   "source": "escoita/valeria_es",
    "pack": false
   },
   {
@@ -192041,6 +192635,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_6978182b_4",
+   "lang": "es",
+   "style": "tutor",
+   "text": "para",
+   "speech": "para",
+   "source": "escoita/valeria_es",
+   "pack": false
+  },
+  {
    "id": "es_tutor_697beb51_18",
    "lang": "es",
    "style": "tutor",
@@ -192275,6 +192878,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_6a1528af_25",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Tienes hambre y lo pides.",
+   "speech": "Tienes hambre y lo pides.",
+   "source": "escoita/valeria_es",
+   "pack": false
+  },
+  {
    "id": "es_tutor_6a1674a4_10",
    "lang": "es",
    "style": "tutor",
@@ -192380,6 +192992,15 @@
    "text": "¿Puedes caminar como la vaca? Despacio… camina, camina.",
    "speech": "¿Puedes caminar como la vaca? Despacio… camina, camina.",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_6a40feb5_3",
+   "lang": "es",
+   "style": "tutor",
+   "text": "pie",
+   "speech": "pie",
+   "source": "escoita/valeria_es",
    "pack": false
   },
   {
@@ -192662,6 +193283,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_6aea31e3_4",
+   "lang": "es",
+   "style": "tutor",
+   "text": "lana",
+   "speech": "lana",
+   "source": "escoita/valeria_es",
+   "pack": false
+  },
+  {
    "id": "es_tutor_6aeeabd0_48",
    "lang": "es",
    "style": "tutor",
@@ -192722,6 +193352,15 @@
    "text": "¿Hoy hace viento fuera?",
    "speech": "¿Hoy hace viento fuera?",
    "source": "biblioteca/HIS-019/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_6b26fbe1_5",
+   "lang": "es",
+   "style": "tutor",
+   "text": "bajar",
+   "speech": "bajar",
+   "source": "escoita/valeria_es",
    "pack": false
   },
   {
@@ -193841,6 +194480,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_6e50acdc_31",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Después nos sentamos a la mesa.",
+   "speech": "Después nos sentamos a la mesa.",
+   "source": "escoita/valeria_es",
+   "pack": false
+  },
+  {
    "id": "es_tutor_6e50b473_79",
    "lang": "es",
    "style": "tutor",
@@ -194468,6 +195116,15 @@
    "text": "El arcoíris, que pintamos, es grande.",
    "speech": "El arcoíris, que pintamos, es grande.",
    "source": "gramatica/curso_5_6/9/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_6ffaf17d_30",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Primero nos ponemos el pijama.",
+   "speech": "Primero nos ponemos el pijama.",
+   "source": "escoita/valeria_es",
    "pack": false
   },
   {
@@ -195281,6 +195938,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_7224923d_4",
+   "lang": "es",
+   "style": "tutor",
+   "text": "tubo",
+   "speech": "tubo",
+   "source": "escoita/valeria_es",
+   "pack": false
+  },
+  {
    "id": "es_tutor_7225459d_6",
    "lang": "es",
    "style": "tutor",
@@ -195428,6 +196094,15 @@
    "speech": "Caminar a lo largo",
    "source": "tpr.2_3.xaneiro/s3/2_3.xaneiro.s3.walk-along/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_72893c75_24",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Después vamos al parque.",
+   "speech": "Después vamos al parque.",
+   "source": "escoita/valeria_es",
+   "pack": false
   },
   {
    "id": "es_tutor_728b3cb4_4",
@@ -196691,6 +197366,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_76039689_24",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Después nos enjabonamos.",
+   "speech": "Después nos enjabonamos.",
+   "source": "escoita/valeria_es",
+   "pack": false
+  },
+  {
    "id": "es_tutor_7617b7ba_23",
    "lang": "es",
    "style": "tutor",
@@ -197258,6 +197942,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_77e45e26_32",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Primero nos ponemos los zapatos.",
+   "speech": "Primero nos ponemos los zapatos.",
+   "source": "escoita/valeria_es",
+   "pack": false
+  },
+  {
    "id": "es_tutor_77eb7b71_57",
    "lang": "es",
    "style": "tutor",
@@ -197589,6 +198282,15 @@
    "speech": "Bajo el mar",
    "source": "tpr.3_4.xuno/s3/3_4.xuno.s3.under-the-sea/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_78b7024d_30",
+   "lang": "es",
+   "style": "tutor",
+   "text": "El perro es blandito y peludo.",
+   "speech": "El perro es blandito y peludo.",
+   "source": "escoita/valeria_es",
+   "pack": false
   },
   {
    "id": "es_tutor_78baf7d4_13",
@@ -198149,6 +198851,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_7a471230_28",
+   "lang": "es",
+   "style": "tutor",
+   "text": "El perro tiene cuatro patas.",
+   "speech": "El perro tiene cuatro patas.",
+   "source": "escoita/valeria_es",
+   "pack": false
+  },
+  {
    "id": "es_tutor_7a54260f_17",
    "lang": "es",
    "style": "tutor",
@@ -198192,6 +198903,15 @@
    "speech": "Plantar un árbol",
    "source": "tpr.5_6.abril/s3/5_6.abril.s3.plant-a-tree/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_7a69ada9_66",
+   "lang": "es",
+   "style": "tutor",
+   "text": "El juguete está dentro. ¿Qué hacemos para sacarlo? ¡Vamos a ABRIR!",
+   "speech": "El juguete está dentro. ¿Qué hacemos para sacarlo? ¡Vamos a ABRIR!",
+   "source": "escoita/valeria_es",
+   "pack": false
   },
   {
    "id": "es_tutor_7a7316c6_6",
@@ -198826,6 +199546,15 @@
    "text": "¡Un erizo! ¡Y una castaña!",
    "speech": "¡Un erizo! ¡Y una castaña!",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_7c17e7b1_9",
+   "lang": "es",
+   "style": "tutor",
+   "text": "despertar",
+   "speech": "despertar",
+   "source": "escoita/valeria_es",
    "pack": false
   },
   {
@@ -199639,6 +200368,24 @@
    "pack": false
   },
   {
+   "id": "es_tutor_7e72644c_20",
+   "lang": "es",
+   "style": "tutor",
+   "text": "La vaca come hierba.",
+   "speech": "La vaca come hierba.",
+   "source": "escoita/valeria_es",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_7e79d902_23",
+   "lang": "es",
+   "style": "tutor",
+   "text": "El pájaro tiene plumas.",
+   "speech": "El pájaro tiene plumas.",
+   "source": "escoita/valeria_es",
+   "pack": false
+  },
+  {
    "id": "es_tutor_7e7b19f6_15",
    "lang": "es",
    "style": "tutor",
@@ -199936,6 +200683,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_7f6c1e73_6",
+   "lang": "es",
+   "style": "tutor",
+   "text": "limpio",
+   "speech": "limpio",
+   "source": "escoita/valeria_es",
+   "pack": false
+  },
+  {
    "id": "es_tutor_7f6c3145_33",
    "lang": "es",
    "style": "tutor",
@@ -200015,6 +200771,15 @@
    "speech": "Ponerse en cuclillas",
    "source": "tpr.2_3.outubro/s1/2_3.outubro.s1.squat/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_7f853729_50",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Está oscuro… ¿Qué hacemos con la luz? ¡A ENCENDER!",
+   "speech": "Está oscuro… ¿Qué hacemos con la luz? ¡A ENCENDER!",
+   "source": "escoita/valeria_es",
+   "pack": false
   },
   {
    "id": "es_tutor_7f87e57b_20",
@@ -200150,6 +200915,15 @@
    "speech": "Gota",
    "source": "tpr.0_2.abril/s2/0_2.abril.s2.raindrop/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_7fe67f2b_6",
+   "lang": "es",
+   "style": "tutor",
+   "text": "sierra",
+   "speech": "sierra",
+   "source": "escoita/valeria_es",
+   "pack": false
   },
   {
    "id": "es_tutor_7feed587_26",
@@ -200294,6 +201068,15 @@
    "speech": "Aparecer de golpe",
    "source": "tpr.0_2.febreiro/s3/0_2.febreiro.s3.pop-up/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_80647364_6",
+   "lang": "es",
+   "style": "tutor",
+   "text": "fuente",
+   "speech": "fuente",
+   "source": "escoita/valeria_es",
+   "pack": false
   },
   {
    "id": "es_tutor_80653cbb_5",
@@ -200670,6 +201453,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_817bf290_8",
+   "lang": "es",
+   "style": "tutor",
+   "text": "amarillo",
+   "speech": "amarillo",
+   "source": "escoita/valeria_es",
+   "pack": false
+  },
+  {
    "id": "es_tutor_817d6670_285",
    "lang": "es",
    "style": "tutor",
@@ -200987,6 +201779,15 @@
    "text": "¡Barriga suave, cosquillas en los pies!",
    "speech": "¡Barriga suave, cosquillas en los pies!",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_82462f0f_17",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Esto es un coche.",
+   "speech": "Esto es un coche.",
+   "source": "escoita/valeria_es",
    "pack": false
   },
   {
@@ -201404,6 +202205,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_839db9a0_18",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Esto es un camión.",
+   "speech": "Esto es un camión.",
+   "source": "escoita/valeria_es",
+   "pack": false
+  },
+  {
    "id": "es_tutor_83a1e5d6_25",
    "lang": "es",
    "style": "tutor",
@@ -201566,6 +202376,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_8429f25d_4",
+   "lang": "es",
+   "style": "tutor",
+   "text": "nube",
+   "speech": "nube",
+   "source": "escoita/valeria_es",
+   "pack": false
+  },
+  {
    "id": "es_tutor_8451b4e7_14",
    "lang": "es",
    "style": "tutor",
@@ -201627,6 +202446,15 @@
    "speech": "Planta del pie",
    "source": "tpr.2_3.outubro/s4/2_3.outubro.s4.sole/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_8470f3c4_56",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Ahora al revés. ¿Qué hacemos con los juguetes? ¡A SACAR!",
+   "speech": "Ahora al revés. ¿Qué hacemos con los juguetes? ¡A SACAR!",
+   "source": "escoita/valeria_es",
+   "pack": false
   },
   {
    "id": "es_tutor_847c59fb_8",
@@ -201716,6 +202544,15 @@
    "text": "¡Aquí está tu mamá! ¡Un abrazo grande y calentito!",
    "speech": "¡Aquí está tu mamá! ¡Un abrazo grande y calentito!",
    "source": "biblioteca/HIS-077/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_84b08d27_15",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Esto es el pie.",
+   "speech": "Esto es el pie.",
+   "source": "escoita/valeria_es",
    "pack": false
   },
   {
@@ -201989,6 +202826,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_8578af9a_4",
+   "lang": "es",
+   "style": "tutor",
+   "text": "miel",
+   "speech": "miel",
+   "source": "escoita/valeria_es",
+   "pack": false
+  },
+  {
    "id": "es_tutor_857d8d45_35",
    "lang": "es",
    "style": "tutor",
@@ -202013,6 +202859,15 @@
    "text": "Mira la piedra de cerca.",
    "speech": "Mira la piedra de cerca.",
    "source": "gramatica/curso_4_5/12/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_857f6412_4",
+   "lang": "es",
+   "style": "tutor",
+   "text": "beso",
+   "speech": "beso",
+   "source": "escoita/valeria_es",
    "pack": false
   },
   {
@@ -202094,6 +202949,15 @@
    "text": "¿Puedes estar inmóvil como una piedra? Uno, dos, tres… ¡ni un movimiento!",
    "speech": "¿Puedes estar inmóvil como una piedra? Uno, dos, tres… ¡ni un movimiento!",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_85d024b5_17",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Esto es el perro.",
+   "speech": "Esto es el perro.",
+   "source": "escoita/valeria_es",
    "pack": false
   },
   {
@@ -202510,6 +203374,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_86db536d_4",
+   "lang": "es",
+   "style": "tutor",
+   "text": "lata",
+   "speech": "lata",
+   "source": "escoita/valeria_es",
+   "pack": false
+  },
+  {
    "id": "es_tutor_86e9596e_43",
    "lang": "es",
    "style": "tutor",
@@ -202660,6 +203533,15 @@
    "text": "La habíamos dibujado antes de cenar.",
    "speech": "La habíamos dibujado antes de cenar.",
    "source": "gramatica/curso_3_4/1/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_874cbac7_4",
+   "lang": "es",
+   "style": "tutor",
+   "text": "palo",
+   "speech": "palo",
+   "source": "escoita/valeria_es",
    "pack": false
   },
   {
@@ -204121,6 +205003,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_8bb93ca7_17",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Esto es una vaca.",
+   "speech": "Esto es una vaca.",
+   "source": "escoita/valeria_es",
+   "pack": false
+  },
+  {
    "id": "es_tutor_8bbdfafd_21",
    "lang": "es",
    "style": "tutor",
@@ -204244,6 +205135,15 @@
    "text": "ponte de pie",
    "speech": "ponte de pie",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_8c14de0b_7",
+   "lang": "es",
+   "style": "tutor",
+   "text": "dientes",
+   "speech": "dientes",
+   "source": "escoita/valeria_es",
    "pack": false
   },
   {
@@ -204634,6 +205534,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_8d7f1899_22",
+   "lang": "es",
+   "style": "tutor",
+   "text": "La vaca es muy grande.",
+   "speech": "La vaca es muy grande.",
+   "source": "escoita/valeria_es",
+   "pack": false
+  },
+  {
    "id": "es_tutor_8d7f72cc_5",
    "lang": "es",
    "style": "tutor",
@@ -204658,6 +205567,15 @@
    "text": "En el baño, cada noche la misma secuencia: «Agua calentita... (mete el pie) ...¡calentita! Ahora las manos. Una mano... y la otra mano. ¡Y ahora, la barriga! Fuera el agua, dentro la toalla.» A la tercera noche estirará el pie antes de que digas «calentita».",
    "speech": "En el baño, cada noche la misma secuencia: «Agua calentita... (mete el pie) ...¡calentita! Ahora las manos. Una mano... y la otra mano. ¡Y ahora, la barriga! Fuera el agua, dentro la toalla.» A la tercera noche estirará el pie antes de que digas «calentita».",
    "source": "academy.rutinas_bano_de_lenguaje.01/ejemploCotidiano",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_8d875b61_4",
+   "lang": "es",
+   "style": "tutor",
+   "text": "pata",
+   "speech": "pata",
+   "source": "escoita/valeria_es",
    "pack": false
   },
   {
@@ -204892,6 +205810,15 @@
    "text": "¿Dónde está el caracolito? ¡Toca el caracol!",
    "speech": "¿Dónde está el caracolito? ¡Toca el caracol!",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_8dfe04a4_22",
+   "lang": "es",
+   "style": "tutor",
+   "text": "El agua cae del cielo.",
+   "speech": "El agua cae del cielo.",
+   "source": "escoita/valeria_es",
    "pack": false
   },
   {
@@ -205796,6 +206723,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_9072c832_5",
+   "lang": "es",
+   "style": "tutor",
+   "text": "subir",
+   "speech": "subir",
+   "source": "escoita/valeria_es",
+   "pack": false
+  },
+  {
    "id": "es_tutor_9077fe35_47",
    "lang": "es",
    "style": "tutor",
@@ -205991,6 +206927,15 @@
    "text": "¡Una hoja! ¿Cae…?",
    "speech": "¡Una hoja! ¿Cae…?",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_911d75c0_5",
+   "lang": "es",
+   "style": "tutor",
+   "text": "rueda",
+   "speech": "rueda",
+   "source": "escoita/valeria_es",
    "pack": false
   },
   {
@@ -206543,6 +207488,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_928bcba1_4",
+   "lang": "es",
+   "style": "tutor",
+   "text": "frío",
+   "speech": "frío",
+   "source": "escoita/valeria_es",
+   "pack": false
+  },
+  {
    "id": "es_tutor_928dae58_35",
    "lang": "es",
    "style": "tutor",
@@ -206567,6 +207521,15 @@
    "text": "¿Tú das palmas en casa?",
    "speech": "¿Tú das palmas en casa?",
    "source": "biblioteca/HIS-054/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_929ca228_16",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Esto es la boca.",
+   "speech": "Esto es la boca.",
+   "source": "escoita/valeria_es",
    "pack": false
   },
   {
@@ -206678,6 +207641,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_9313e2f8_4",
+   "lang": "es",
+   "style": "tutor",
+   "text": "caza",
+   "speech": "caza",
+   "source": "escoita/valeria_es",
+   "pack": false
+  },
+  {
    "id": "es_tutor_9316943d_41",
    "lang": "es",
    "style": "tutor",
@@ -206786,6 +207758,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_93644fa0_16",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Esto es el gato.",
+   "speech": "Esto es el gato.",
+   "source": "escoita/valeria_es",
+   "pack": false
+  },
+  {
    "id": "es_tutor_9371a905_44",
    "lang": "es",
    "style": "tutor",
@@ -206801,6 +207782,15 @@
    "text": "¿Dónde duerme el bebé?",
    "speech": "¿Dónde duerme el bebé?",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_937e39d5_23",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Luego leemos un cuento.",
+   "speech": "Luego leemos un cuento.",
+   "source": "escoita/valeria_es",
    "pack": false
   },
   {
@@ -209217,6 +210207,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_99c12e14_39",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Toca los vasos. ¿Cuál está FRÍO? ¡Brrr!",
+   "speech": "Toca los vasos. ¿Cuál está FRÍO? ¡Brrr!",
+   "source": "escoita/valeria_es",
+   "pack": false
+  },
+  {
    "id": "es_tutor_99c3041a_32",
    "lang": "es",
    "style": "tutor",
@@ -209331,6 +210330,15 @@
    "text": "¿Dónde está el agua? ¡Toca el agua azul!",
    "speech": "¿Dónde está el agua? ¡Toca el agua azul!",
    "source": "biblioteca/HIS-014/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_99f63e40_6",
+   "lang": "es",
+   "style": "tutor",
+   "text": "tierra",
+   "speech": "tierra",
+   "source": "escoita/valeria_es",
    "pack": false
   },
   {
@@ -210459,6 +211467,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_9d6c1fbe_5",
+   "lang": "es",
+   "style": "tutor",
+   "text": "pluma",
+   "speech": "pluma",
+   "source": "escoita/valeria_es",
+   "pack": false
+  },
+  {
    "id": "es_tutor_9d746fdd_23",
    "lang": "es",
    "style": "tutor",
@@ -210466,6 +211483,15 @@
    "speech": "¡Luces, cámara, acción!",
    "source": "tpr.4_5.febreiro/s1/4_5.febreiro.s1.lights-camera-action/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_9d74e524_17",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Esto es el globo.",
+   "speech": "Esto es el globo.",
+   "source": "escoita/valeria_es",
+   "pack": false
   },
   {
    "id": "es_tutor_9d7a70d8_4",
@@ -210900,6 +211926,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_9e8eb007_47",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Señala la cuchara SUCIA. ¿Cómo está esta? Dilo.",
+   "speech": "Señala la cuchara SUCIA. ¿Cómo está esta? Dilo.",
+   "source": "escoita/valeria_es",
+   "pack": false
+  },
+  {
    "id": "es_tutor_9e9e99ba_43",
    "lang": "es",
    "style": "tutor",
@@ -211107,6 +212142,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_9f253efd_4",
+   "lang": "es",
+   "style": "tutor",
+   "text": "casa",
+   "speech": "casa",
+   "source": "escoita/valeria_es",
+   "pack": false
+  },
+  {
    "id": "es_tutor_9f3870f6_44",
    "lang": "es",
    "style": "tutor",
@@ -211132,6 +212176,15 @@
    "speech": "Puerto activo",
    "source": "tpr.4_5.xuno/s1/4_5.xuno.s1.busy-harbour/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_9f541c5d_29",
+   "lang": "es",
+   "style": "tutor",
+   "text": "El tren lleva muchos vagones.",
+   "speech": "El tren lleva muchos vagones.",
+   "source": "escoita/valeria_es",
+   "pack": false
   },
   {
    "id": "es_tutor_9f5e0be3_165",
@@ -211302,6 +212355,15 @@
    "text": "¡Sí! ¡El cangrejo! ¡En su concha blanca nueva!",
    "speech": "¡Sí! ¡El cangrejo! ¡En su concha blanca nueva!",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_9fb4180a_6",
+   "lang": "es",
+   "style": "tutor",
+   "text": "cerrar",
+   "speech": "cerrar",
+   "source": "escoita/valeria_es",
    "pack": false
   },
   {
@@ -213461,6 +214523,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_a5d74fba_23",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Este color es amarillo.",
+   "speech": "Este color es amarillo.",
+   "source": "escoita/valeria_es",
+   "pack": false
+  },
+  {
    "id": "es_tutor_a5db79e9_61",
    "lang": "es",
    "style": "tutor",
@@ -213845,6 +214916,15 @@
    "text": "¡Mira bien! ¿Cuántas zanahorias de papel hay ahora en la mesa? ¡Tócalas!",
    "speech": "¡Mira bien! ¿Cuántas zanahorias de papel hay ahora en la mesa? ¡Tócalas!",
    "source": "biblioteca/HIS-090/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_a69b94b5_4",
+   "lang": "es",
+   "style": "tutor",
+   "text": "rana",
+   "speech": "rana",
+   "source": "escoita/valeria_es",
    "pack": false
   },
   {
@@ -214613,6 +215693,24 @@
    "pack": false
   },
   {
+   "id": "es_tutor_a8ca4b1d_5",
+   "lang": "es",
+   "style": "tutor",
+   "text": "sacar",
+   "speech": "sacar",
+   "source": "escoita/valeria_es",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_a8cf8cd4_5",
+   "lang": "es",
+   "style": "tutor",
+   "text": "leche",
+   "speech": "leche",
+   "source": "escoita/valeria_es",
+   "pack": false
+  },
+  {
    "id": "es_tutor_a8d0b0a6_44",
    "lang": "es",
    "style": "tutor",
@@ -215171,6 +216269,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_aa83961b_4",
+   "lang": "es",
+   "style": "tutor",
+   "text": "rata",
+   "speech": "rata",
+   "source": "escoita/valeria_es",
+   "pack": false
+  },
+  {
    "id": "es_tutor_aa87d303_45",
    "lang": "es",
    "style": "tutor",
@@ -215312,6 +216419,15 @@
    "text": "Puedes llevarlo, ¿verdad?",
    "speech": "Puedes llevarlo, ¿verdad?",
    "source": "gramatica/curso_4_5/1/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_ab18fa4f_30",
+   "lang": "es",
+   "style": "tutor",
+   "text": "El pelo del gato es muy suave.",
+   "speech": "El pelo del gato es muy suave.",
+   "source": "escoita/valeria_es",
    "pack": false
   },
   {
@@ -215591,6 +216707,15 @@
    "text": "¿Dónde está el agujero del puente? ¡Toca la parte rota!",
    "speech": "¿Dónde está el agujero del puente? ¡Toca la parte rota!",
    "source": "biblioteca/HIS-056/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_abd7243d_22",
+   "lang": "es",
+   "style": "tutor",
+   "text": "El coche tiene ruedas.",
+   "speech": "El coche tiene ruedas.",
+   "source": "escoita/valeria_es",
    "pack": false
   },
   {
@@ -215951,6 +217076,15 @@
    "text": "¡Toca los ojos cerrados de Lúa!",
    "speech": "¡Toca los ojos cerrados de Lúa!",
    "source": "biblioteca/HIS-045/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_acf02d1f_4",
+   "lang": "es",
+   "style": "tutor",
+   "text": "pera",
+   "speech": "pera",
+   "source": "escoita/valeria_es",
    "pack": false
   },
   {
@@ -216638,6 +217772,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_aedf269a_19",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Esto es la rodilla.",
+   "speech": "Esto es la rodilla.",
+   "source": "escoita/valeria_es",
+   "pack": false
+  },
+  {
    "id": "es_tutor_aee5b418_20",
    "lang": "es",
    "style": "tutor",
@@ -216833,6 +217976,15 @@
    "text": "¡Pasos descalzos en la hierba verde!",
    "speech": "¡Pasos descalzos en la hierba verde!",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_af4cb483_17",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Esto es una moto.",
+   "speech": "Esto es una moto.",
+   "source": "escoita/valeria_es",
    "pack": false
   },
   {
@@ -218309,6 +219461,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_b2ccca14_7",
+   "lang": "es",
+   "style": "tutor",
+   "text": "plátano",
+   "speech": "plátano",
+   "source": "escoita/valeria_es",
+   "pack": false
+  },
+  {
    "id": "es_tutor_b2cfc1d2_52",
    "lang": "es",
    "style": "tutor",
@@ -218396,6 +219557,15 @@
    "text": "Quietud total sobre la marca hasta escuchar la orden de despertar.",
    "speech": "Quietud total sobre la marca hasta escuchar la orden de despertar.",
    "source": "asamblea.segundo_ciclo.marzo.5_infantil/fase/3/cmd/cmd.marzo.5i.03/accionFisica",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_b2fcc195_6",
+   "lang": "es",
+   "style": "tutor",
+   "text": "morado",
+   "speech": "morado",
+   "source": "escoita/valeria_es",
    "pack": false
   },
   {
@@ -218750,6 +219920,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_b413cd88_16",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Esto es el tren.",
+   "speech": "Esto es el tren.",
+   "source": "escoita/valeria_es",
+   "pack": false
+  },
+  {
    "id": "es_tutor_b4141684_5",
    "lang": "es",
    "style": "tutor",
@@ -218775,6 +219954,15 @@
    "speech": "Edredón",
    "source": "tpr.0_2.decembro/s2/0_2.decembro.s2.quilt/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_b4217197_8",
+   "lang": "es",
+   "style": "tutor",
+   "text": "elefante",
+   "speech": "elefante",
+   "source": "escoita/valeria_es",
+   "pack": false
   },
   {
    "id": "es_tutor_b42732de_10",
@@ -218892,6 +220080,15 @@
    "speech": "De piedra en piedra",
    "source": "tpr.4_5.outubro/s3/4_5.outubro.s3.stone-to-stone/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_b465fa73_5",
+   "lang": "es",
+   "style": "tutor",
+   "text": "abrir",
+   "speech": "abrir",
+   "source": "escoita/valeria_es",
+   "pack": false
   },
   {
    "id": "es_tutor_b467da56_7",
@@ -219544,6 +220741,15 @@
    "text": "En tu casa, ¿quién se despierta primero por la mañana?",
    "speech": "En tu casa, ¿quién se despierta primero por la mañana?",
    "source": "biblioteca/HIS-009/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_b645c467_7",
+   "lang": "es",
+   "style": "tutor",
+   "text": "tobogán",
+   "speech": "tobogán",
+   "source": "escoita/valeria_es",
    "pack": false
   },
   {
@@ -220744,6 +221950,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_b97be043_16",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Esto es un pato.",
+   "speech": "Esto es un pato.",
+   "source": "escoita/valeria_es",
+   "pack": false
+  },
+  {
    "id": "es_tutor_b981c401_41",
    "lang": "es",
    "style": "tutor",
@@ -221014,6 +222229,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_ba2f31bb_7",
+   "lang": "es",
+   "style": "tutor",
+   "text": "tostado",
+   "speech": "tostado",
+   "source": "escoita/valeria_es",
+   "pack": false
+  },
+  {
    "id": "es_tutor_ba3219f5_24",
    "lang": "es",
    "style": "tutor",
@@ -221156,6 +222380,15 @@
    "speech": "Primavera",
    "source": "tpr.3_4.abril/s1/3_4.abril.s1.spring/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_bacac5ac_14",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Luego comemos.",
+   "speech": "Luego comemos.",
+   "source": "escoita/valeria_es",
+   "pack": false
   },
   {
    "id": "es_tutor_bace8a25_7",
@@ -222013,6 +223246,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_bd1d2ee9_20",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Esto es una naranja.",
+   "speech": "Esto es una naranja.",
+   "source": "escoita/valeria_es",
+   "pack": false
+  },
+  {
    "id": "es_tutor_bd1fcdb7_7",
    "lang": "es",
    "style": "tutor",
@@ -222148,6 +223390,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_bd8a69e8_20",
+   "lang": "es",
+   "style": "tutor",
+   "text": "El pan está tostado.",
+   "speech": "El pan está tostado.",
+   "source": "escoita/valeria_es",
+   "pack": false
+  },
+  {
    "id": "es_tutor_bd8f97a2_23",
    "lang": "es",
    "style": "tutor",
@@ -222190,6 +223441,15 @@
    "text": "¡Sí, agua! ¡Chap, chap! ¡Agua para la oveja!",
    "speech": "¡Sí, agua! ¡Chap, chap! ¡Agua para la oveja!",
    "source": "biblioteca/HIS-014/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_bdaa90cb_32",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Ahora el coche baja! ¿Qué hace?",
+   "speech": "¡Ahora el coche baja! ¿Qué hace?",
+   "source": "escoita/valeria_es",
    "pack": false
   },
   {
@@ -222814,6 +224074,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_bf664574_25",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Al final volvemos a casa.",
+   "speech": "Al final volvemos a casa.",
+   "source": "escoita/valeria_es",
+   "pack": false
+  },
+  {
    "id": "es_tutor_bf67cb27_58",
    "lang": "es",
    "style": "tutor",
@@ -223010,6 +224279,15 @@
    "speech": "Trotar",
    "source": "tpr.0_2.xaneiro/s2/0_2.xaneiro.s2.trot/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_c0119d34_7",
+   "lang": "es",
+   "style": "tutor",
+   "text": "redondo",
+   "speech": "redondo",
+   "source": "escoita/valeria_es",
+   "pack": false
   },
   {
    "id": "es_tutor_c01446e0_9",
@@ -223262,6 +224540,15 @@
    "speech": "Arcoíris",
    "source": "tpr.3_4.marzo/s1/3_4.marzo.s1.rainbow/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_c0e7efba_58",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Guardamos el juguete. ¿Qué hacemos con la tapa? ¡A CERRAR!",
+   "speech": "Guardamos el juguete. ¿Qué hacemos con la tapa? ¡A CERRAR!",
+   "source": "escoita/valeria_es",
+   "pack": false
   },
   {
    "id": "es_tutor_c0f6dd4a_16",
@@ -223831,12 +225118,30 @@
    "pack": false
   },
   {
+   "id": "es_tutor_c2a5db5a_6",
+   "lang": "es",
+   "style": "tutor",
+   "text": "puente",
+   "speech": "puente",
+   "source": "escoita/valeria_es",
+   "pack": false
+  },
+  {
    "id": "es_tutor_c2afcdd7_68",
    "lang": "es",
    "style": "tutor",
    "text": "Tres órdenes motrices con el material del mes. No pidas que repitan.",
    "speech": "Tres órdenes motrices con el material del mes. No pidas que repitan.",
    "source": "asamblea.primeiro_ciclo.abril.0_2_anos/fase/3/consigna",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_c2b3d4a9_21",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Al final desayunamos.",
+   "speech": "Al final desayunamos.",
+   "source": "escoita/valeria_es",
    "pack": false
   },
   {
@@ -224200,6 +225505,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_c3b10f72_4",
+   "lang": "es",
+   "style": "tutor",
+   "text": "boca",
+   "speech": "boca",
+   "source": "escoita/valeria_es",
+   "pack": false
+  },
+  {
    "id": "es_tutor_c3b552d2_24",
    "lang": "es",
    "style": "tutor",
@@ -224317,6 +225631,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_c4206de8_3",
+   "lang": "es",
+   "style": "tutor",
+   "text": "oso",
+   "speech": "oso",
+   "source": "escoita/valeria_es",
+   "pack": false
+  },
+  {
    "id": "es_tutor_c421e930_33",
    "lang": "es",
    "style": "tutor",
@@ -224359,6 +225682,15 @@
    "text": "Tijeras de punta redonda",
    "speech": "Tijeras de punta redonda",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_c431b709_3",
+   "lang": "es",
+   "style": "tutor",
+   "text": "ojo",
+   "speech": "ojo",
+   "source": "escoita/valeria_es",
    "pack": false
   },
   {
@@ -224422,6 +225754,15 @@
    "text": "¡Sí, pelota! ¡Para, pelota! Entre las hierbas.",
    "speech": "¡Sí, pelota! ¡Para, pelota! Entre las hierbas.",
    "source": "biblioteca/HIS-055/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_c46fd1f8_24",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Primero nos despertamos.",
+   "speech": "Primero nos despertamos.",
+   "source": "escoita/valeria_es",
    "pack": false
   },
   {
@@ -224704,6 +226045,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_c55be5ee_17",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Esto es un avión.",
+   "speech": "Esto es un avión.",
+   "source": "escoita/valeria_es",
+   "pack": false
+  },
+  {
    "id": "es_tutor_c55d142e_51",
    "lang": "es",
    "style": "tutor",
@@ -224720,6 +226070,15 @@
    "speech": "Cerca de mí",
    "source": "tpr.0_2.decembro/s1/0_2.decembro.s1.close-to-me/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_c5611fe2_5",
+   "lang": "es",
+   "style": "tutor",
+   "text": "meter",
+   "speech": "meter",
+   "source": "escoita/valeria_es",
+   "pack": false
   },
   {
    "id": "es_tutor_c56ad64d_40",
@@ -225154,6 +226513,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_c6a87254_34",
+   "lang": "es",
+   "style": "tutor",
+   "text": "En el desayuno bebemos de la taza.",
+   "speech": "En el desayuno bebemos de la taza.",
+   "source": "escoita/valeria_es",
+   "pack": false
+  },
+  {
    "id": "es_tutor_c6a911b2_6",
    "lang": "es",
    "style": "tutor",
@@ -225250,6 +226618,15 @@
    "text": "¿Puedes volar como una abeja? Rápido, rápido… ¡bzzz!",
    "speech": "¿Puedes volar como una abeja? Rápido, rápido… ¡bzzz!",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_c6ebdb5e_6",
+   "lang": "es",
+   "style": "tutor",
+   "text": "camión",
+   "speech": "camión",
+   "source": "escoita/valeria_es",
    "pack": false
   },
   {
@@ -226504,6 +227881,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_ca56d1e4_51",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Los juguetes van a su casa. ¿Qué hacemos? ¡A METER!",
+   "speech": "Los juguetes van a su casa. ¿Qué hacemos? ¡A METER!",
+   "source": "escoita/valeria_es",
+   "pack": false
+  },
+  {
    "id": "es_tutor_ca5923fa_52",
    "lang": "es",
    "style": "tutor",
@@ -226646,6 +228032,15 @@
    "speech": "Arrecife",
    "source": "tpr.5_6.abril/s2/5_6.abril.s2.reef/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_cadbfbfd_6",
+   "lang": "es",
+   "style": "tutor",
+   "text": "cereza",
+   "speech": "cereza",
+   "source": "escoita/valeria_es",
+   "pack": false
   },
   {
    "id": "es_tutor_cade7ddb_82",
@@ -226873,6 +228268,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_cb976d00_4",
+   "lang": "es",
+   "style": "tutor",
+   "text": "mano",
+   "speech": "mano",
+   "source": "escoita/valeria_es",
+   "pack": false
+  },
+  {
    "id": "es_tutor_cb99ba1f_33",
    "lang": "es",
    "style": "tutor",
@@ -227083,6 +228487,15 @@
    "speech": "Arquear la espalda",
    "source": "tpr.5_6.outubro/s3/5_6.outubro.s3.arch-back/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_cc21d98f_6",
+   "lang": "es",
+   "style": "tutor",
+   "text": "cuento",
+   "speech": "cuento",
+   "source": "escoita/valeria_es",
+   "pack": false
   },
   {
    "id": "es_tutor_cc2b0289_7",
@@ -228363,12 +229776,30 @@
    "pack": false
   },
   {
+   "id": "es_tutor_cfc8945e_19",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Esto es un plátano.",
+   "speech": "Esto es un plátano.",
+   "source": "escoita/valeria_es",
+   "pack": false
+  },
+  {
    "id": "es_tutor_cfc89c44_70",
    "lang": "es",
    "style": "tutor",
    "text": "¡Dobla las rodillas y los codos, y después ponte alto como un gigante!",
    "speech": "¡Dobla las rodillas y los codos, y después ponte alto como un gigante!",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_cfcd4512_51",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¿Cuál es la cesta LLENA de cosas? ¡Señálala y dilo!",
+   "speech": "¿Cuál es la cesta LLENA de cosas? ¡Señálala y dilo!",
+   "source": "escoita/valeria_es",
    "pack": false
   },
   {
@@ -228720,6 +230151,15 @@
    "text": "Mira, Lúa sopla. ¡Sopla, sopla!",
    "speech": "Mira, Lúa sopla. ¡Sopla, sopla!",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_d10f7027_17",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Esto es una piña.",
+   "speech": "Esto es una piña.",
+   "source": "escoita/valeria_es",
    "pack": false
   },
   {
@@ -229272,6 +230712,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_d2a54155_5",
+   "lang": "es",
+   "style": "tutor",
+   "text": "verde",
+   "speech": "verde",
+   "source": "escoita/valeria_es",
+   "pack": false
+  },
+  {
    "id": "es_tutor_d2ad3196_7",
    "lang": "es",
    "style": "tutor",
@@ -229341,6 +230790,15 @@
    "text": "Remar con los brazos hacia adelante y hacia atrás.",
    "speech": "Remar con los brazos hacia adelante y hacia atrás.",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_d2ff737b_4",
+   "lang": "es",
+   "style": "tutor",
+   "text": "pelo",
+   "speech": "pelo",
+   "source": "escoita/valeria_es",
    "pack": false
   },
   {
@@ -229449,6 +230907,15 @@
    "text": "¡Toca la lengua rosa del gato!",
    "speech": "¡Toca la lengua rosa del gato!",
    "source": "biblioteca/HIS-043/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_d36287d2_20",
+   "lang": "es",
+   "style": "tutor",
+   "text": "La mano está mojada.",
+   "speech": "La mano está mojada.",
+   "source": "escoita/valeria_es",
    "pack": false
   },
   {
@@ -230240,6 +231707,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_d5dfd309_6",
+   "lang": "es",
+   "style": "tutor",
+   "text": "pijama",
+   "speech": "pijama",
+   "source": "escoita/valeria_es",
+   "pack": false
+  },
+  {
    "id": "es_tutor_d5e0c864_113",
    "lang": "es",
    "style": "tutor",
@@ -230552,6 +232028,15 @@
    "text": "¡Una serpiente! ¡Una serpiente verde simpática!",
    "speech": "¡Una serpiente! ¡Una serpiente verde simpática!",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_d6a6ef07_20",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Después nos lavamos.",
+   "speech": "Después nos lavamos.",
+   "source": "escoita/valeria_es",
    "pack": false
   },
   {
@@ -231470,6 +232955,15 @@
    "speech": "Bostezar",
    "source": "tpr.3_4.decembro/s3/3_4.decembro.s3.yawn/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_d9ce4d3c_26",
+   "lang": "es",
+   "style": "tutor",
+   "text": "El globo tiene una cuerda.",
+   "speech": "El globo tiene una cuerda.",
+   "source": "escoita/valeria_es",
+   "pack": false
   },
   {
    "id": "es_tutor_d9cf4aab_159",
@@ -232579,6 +234073,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_dcd7e5c1_20",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Este color es verde.",
+   "speech": "Este color es verde.",
+   "source": "escoita/valeria_es",
+   "pack": false
+  },
+  {
    "id": "es_tutor_dce59d59_13",
    "lang": "es",
    "style": "tutor",
@@ -232669,6 +234172,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_dd2b95c4_29",
+   "lang": "es",
+   "style": "tutor",
+   "text": "El pájaro vuela por el cielo.",
+   "speech": "El pájaro vuela por el cielo.",
+   "source": "escoita/valeria_es",
+   "pack": false
+  },
+  {
    "id": "es_tutor_dd3c9b1b_64",
    "lang": "es",
    "style": "tutor",
@@ -232729,6 +234241,15 @@
    "text": "Un plato, una cuchara... pero ¿dónde está el tenedor?",
    "speech": "Un plato, una cuchara... pero ¿dónde está el tenedor?",
    "source": "biblioteca/HIS-066/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_dd773b4f_8",
+   "lang": "es",
+   "style": "tutor",
+   "text": "encender",
+   "speech": "encender",
+   "source": "escoita/valeria_es",
    "pack": false
   },
   {
@@ -233515,6 +235036,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_e0153786_17",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Esto es un barco.",
+   "speech": "Esto es un barco.",
+   "source": "escoita/valeria_es",
+   "pack": false
+  },
+  {
    "id": "es_tutor_e017e568_14",
    "lang": "es",
    "style": "tutor",
@@ -234098,6 +235628,15 @@
    "speech": "Volver a contar",
    "source": "tpr.5_6.xaneiro/s4/5_6.xaneiro.s4.retell/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_e1c2d7bc_51",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Ahora al revés. ¿Qué hacemos con la luz? ¡A APAGAR!",
+   "speech": "Ahora al revés. ¿Qué hacemos con la luz? ¡A APAGAR!",
+   "source": "escoita/valeria_es",
+   "pack": false
   },
   {
    "id": "es_tutor_e1cb77db_42",
@@ -235842,6 +237381,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_e6e2a381_44",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Y esta otra cesta, ¿cómo está? ¡Mira dentro!",
+   "speech": "Y esta otra cesta, ¿cómo está? ¡Mira dentro!",
+   "source": "escoita/valeria_es",
+   "pack": false
+  },
+  {
    "id": "es_tutor_e6e5f26f_23",
    "lang": "es",
    "style": "tutor",
@@ -235929,6 +237477,15 @@
    "text": "¡Cuenta los platos! Uno, dos, tres. ¿Cuál es el plato del ratoncito?",
    "speech": "¡Cuenta los platos! Uno, dos, tres. ¿Cuál es el plato del ratoncito?",
    "source": "biblioteca/HIS-064/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_e748ad1e_16",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Esto es un tren.",
+   "speech": "Esto es un tren.",
+   "source": "escoita/valeria_es",
    "pack": false
   },
   {
@@ -236292,6 +237849,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_e82fd094_6",
+   "lang": "es",
+   "style": "tutor",
+   "text": "pájaro",
+   "speech": "pájaro",
+   "source": "escoita/valeria_es",
+   "pack": false
+  },
+  {
    "id": "es_tutor_e8318c0c_10",
    "lang": "es",
    "style": "tutor",
@@ -236389,6 +237955,15 @@
    "speech": "Darse cuenta",
    "source": "tpr.5_6.outubro/s1/5_6.outubro.s1.notice/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_e86074a1_9",
+   "lang": "es",
+   "style": "tutor",
+   "text": "desayunar",
+   "speech": "desayunar",
+   "source": "escoita/valeria_es",
+   "pack": false
   },
   {
    "id": "es_tutor_e86a8afc_15",
@@ -236613,6 +238188,15 @@
    "text": "¿Puedes caminar despacio y cansado como Lúa? Bostezo... paso... paso...",
    "speech": "¿Puedes caminar despacio y cansado como Lúa? Bostezo... paso... paso...",
    "source": "biblioteca/HIS-097/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_e8f6b38a_50",
+   "lang": "es",
+   "style": "tutor",
+   "text": "El coche va a la montaña. ¿Qué hace? ¡SUBE arriba!",
+   "speech": "El coche va a la montaña. ¿Qué hace? ¡SUBE arriba!",
+   "source": "escoita/valeria_es",
    "pack": false
   },
   {
@@ -237867,6 +239451,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_ec8463b1_17",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Esto es el coche.",
+   "speech": "Esto es el coche.",
+   "source": "escoita/valeria_es",
+   "pack": false
+  },
+  {
    "id": "es_tutor_ec8506ac_8",
    "lang": "es",
    "style": "tutor",
@@ -238551,6 +240144,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_eec8dc6a_23",
+   "lang": "es",
+   "style": "tutor",
+   "text": "El coche es muy rápido.",
+   "speech": "El coche es muy rápido.",
+   "source": "escoita/valeria_es",
+   "pack": false
+  },
+  {
    "id": "es_tutor_eec9d849_4",
    "lang": "es",
    "style": "tutor",
@@ -239069,6 +240671,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_f01ffc87_6",
+   "lang": "es",
+   "style": "tutor",
+   "text": "bañera",
+   "speech": "bañera",
+   "source": "escoita/valeria_es",
+   "pack": false
+  },
+  {
    "id": "es_tutor_f02c6408_49",
    "lang": "es",
    "style": "tutor",
@@ -239247,6 +240858,15 @@
    "speech": "Dar vueltas",
    "source": "tpr.0_2.febreiro/s2/0_2.febreiro.s2.whirl/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_f0eb83bc_8",
+   "lang": "es",
+   "style": "tutor",
+   "text": "sentarse",
+   "speech": "sentarse",
+   "source": "escoita/valeria_es",
+   "pack": false
   },
   {
    "id": "es_tutor_f0f8a96a_71",
@@ -240005,6 +241625,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_f3316382_4",
+   "lang": "es",
+   "style": "tutor",
+   "text": "codo",
+   "speech": "codo",
+   "source": "escoita/valeria_es",
+   "pack": false
+  },
+  {
    "id": "es_tutor_f33a8235_13",
    "lang": "es",
    "style": "tutor",
@@ -240164,6 +241793,15 @@
    "text": "Mira, una zanahoria de papel. Solo una. Izquierda... derecha... ¿dónde?",
    "speech": "Mira, una zanahoria de papel. Solo una. Izquierda... derecha... ¿dónde?",
    "source": "biblioteca/HIS-090/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_f381fccd_4",
+   "lang": "es",
+   "style": "tutor",
+   "text": "bota",
+   "speech": "bota",
+   "source": "escoita/valeria_es",
    "pack": false
   },
   {
@@ -240590,6 +242228,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_f4ab7d39_16",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Esto es el agua.",
+   "speech": "Esto es el agua.",
+   "source": "escoita/valeria_es",
+   "pack": false
+  },
+  {
    "id": "es_tutor_f4c69d72_26",
    "lang": "es",
    "style": "tutor",
@@ -240716,6 +242363,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_f50ce6d5_19",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Este color es rojo.",
+   "speech": "Este color es rojo.",
+   "source": "escoita/valeria_es",
+   "pack": false
+  },
+  {
    "id": "es_tutor_f50ed3cb_44",
    "lang": "es",
    "style": "tutor",
@@ -240731,6 +242387,15 @@
    "text": "¿Puedes comer como la ardilla? ¡Ñam, ñam, cranch!",
    "speech": "¿Puedes comer como la ardilla? ¡Ñam, ñam, cranch!",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_f517889d_6",
+   "lang": "es",
+   "style": "tutor",
+   "text": "parque",
+   "speech": "parque",
+   "source": "escoita/valeria_es",
    "pack": false
   },
   {
@@ -240858,6 +242523,15 @@
    "speech": "Graduación",
    "source": "tpr.5_6.xuno/s3/5_6.xuno.s3.graduation/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_f5744144_3",
+   "lang": "es",
+   "style": "tutor",
+   "text": "cae",
+   "speech": "cae",
+   "source": "escoita/valeria_es",
+   "pack": false
   },
   {
    "id": "es_tutor_f5766f49_13",
@@ -241490,6 +243164,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_f7a5fd2c_29",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Luego nos aclaramos con agua.",
+   "speech": "Luego nos aclaramos con agua.",
+   "source": "escoita/valeria_es",
+   "pack": false
+  },
+  {
    "id": "es_tutor_f7adca33_8",
    "lang": "es",
    "style": "tutor",
@@ -241913,6 +243596,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_f8ded2c5_6",
+   "lang": "es",
+   "style": "tutor",
+   "text": "bigote",
+   "speech": "bigote",
+   "source": "escoita/valeria_es",
+   "pack": false
+  },
+  {
    "id": "es_tutor_f8e49f01_14",
    "lang": "es",
    "style": "tutor",
@@ -242210,6 +243902,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_f98dbe98_15",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Esto es el pan.",
+   "speech": "Esto es el pan.",
+   "source": "escoita/valeria_es",
+   "pack": false
+  },
+  {
    "id": "es_tutor_f98e4627_37",
    "lang": "es",
    "style": "tutor",
@@ -242370,6 +244071,15 @@
    "speech": "Orden de turnos",
    "source": "tpr.4_5.febreiro/s3/4_5.febreiro.s3.turn-order/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_f9ffc73c_6",
+   "lang": "es",
+   "style": "tutor",
+   "text": "jirafa",
+   "speech": "jirafa",
+   "source": "escoita/valeria_es",
+   "pack": false
   },
   {
    "id": "es_tutor_fa065ae2_17",
@@ -242801,6 +244511,15 @@
    "text": "¡Sí, sin botas! Lúa no tiene botas en los pies.",
    "speech": "¡Sí, sin botas! Lúa no tiene botas en los pies.",
    "source": "biblioteca/HIS-079/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_fb744cdd_58",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Ahora al revés: ¿cuál es el osito PEQUEÑO? ¡Dámelo y dilo!",
+   "speech": "Ahora al revés: ¿cuál es el osito PEQUEÑO? ¡Dámelo y dilo!",
+   "source": "escoita/valeria_es",
    "pack": false
   },
   {
@@ -243353,6 +245072,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_fcf0d33c_7",
+   "lang": "es",
+   "style": "tutor",
+   "text": "rodilla",
+   "speech": "rodilla",
+   "source": "escoita/valeria_es",
+   "pack": false
+  },
+  {
    "id": "es_tutor_fcf457a7_40",
    "lang": "es",
    "style": "tutor",
@@ -243513,6 +245241,15 @@
    "speech": "Titiritero",
    "source": "tpr.4_5.febreiro/s4/4_5.febreiro.s4.puppeteer/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_fd42bc61_4",
+   "lang": "es",
+   "style": "tutor",
+   "text": "come",
+   "speech": "come",
+   "source": "escoita/valeria_es",
+   "pack": false
   },
   {
    "id": "es_tutor_fd488aeb_15",
@@ -244172,6 +245909,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_fef43c57_19",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Luego nos vestimos.",
+   "speech": "Luego nos vestimos.",
+   "source": "escoita/valeria_es",
+   "pack": false
+  },
+  {
    "id": "es_tutor_fefa2440_15",
    "lang": "es",
    "style": "tutor",
@@ -244424,6 +246170,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_ffa31fa4_4",
+   "lang": "es",
+   "style": "tutor",
+   "text": "gota",
+   "speech": "gota",
+   "source": "escoita/valeria_es",
+   "pack": false
+  },
+  {
    "id": "es_tutor_ffa5f6ac_51",
    "lang": "es",
    "style": "tutor",
@@ -244521,6 +246276,15 @@
    "speech": "Bee rima con tree",
    "source": "tpr.5_6.febreiro/s1/5_6.febreiro.s1.bee-rhymes-with-tree/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_ffdfd1a5_24",
+   "lang": "es",
+   "style": "tutor",
+   "text": "El agua sale de la nube.",
+   "speech": "El agua sale de la nube.",
+   "source": "escoita/valeria_es",
+   "pack": false
   },
   {
    "id": "es_tutor_ffe2728f_16",
@@ -244809,6 +246573,15 @@
    "speech": "Quitar a area",
    "source": "tpr.2_3.xuno/s3/2_3.xuno.s3.rinse-off-sand/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_0055c647_14",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Isto é o tren.",
+   "speech": "Isto é o tren.",
+   "source": "escoita/valeria_gl",
+   "pack": false
   },
   {
    "id": "gl_tutor_00572523_22",
@@ -246449,6 +248222,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_05037b1c_5",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "vagón",
+   "speech": "vagón",
+   "source": "escoita/valeria_gl",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_0509839f_18",
    "lang": "gl",
    "style": "tutor",
@@ -246473,6 +248255,15 @@
    "text": "Onde está o peixe? Toca a cola do peixiño!",
    "speech": "Onde está o peixe? Toca a cola do peixiño!",
    "source": "biblioteca/HIS-001/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_05154b79_6",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "ananás",
+   "speech": "ananás",
+   "source": "escoita/valeria_gl",
    "pack": false
   },
   {
@@ -246635,6 +248426,15 @@
    "text": "Cucú, onde estás?",
    "speech": "Cucú, onde estás?",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_058785e4_26",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Despois lavamos os dentes.",
+   "speech": "Despois lavamos os dentes.",
+   "source": "escoita/valeria_gl",
    "pack": false
   },
   {
@@ -247592,6 +249392,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_07966021_19",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "O pan está torrado.",
+   "speech": "O pan está torrado.",
+   "source": "escoita/valeria_gl",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_07a662fe_4",
    "lang": "gl",
    "style": "tutor",
@@ -248123,6 +249932,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_093752f4_5",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "globo",
+   "speech": "globo",
+   "source": "escoita/valeria_gl",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_09480220_27",
    "lang": "gl",
    "style": "tutor",
@@ -248381,6 +250199,15 @@
    "text": "Mover patas dianteiras",
    "speech": "Mover patas dianteiras",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_0a11ddb4_28",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Primeiro poñemos os zapatos.",
+   "speech": "Primeiro poñemos os zapatos.",
+   "source": "escoita/valeria_gl",
    "pack": false
   },
   {
@@ -248679,6 +250506,15 @@
    "speech": "Crocodilo",
    "source": "tpr.3_4.febreiro/s3/3_4.febreiro.s3.crocodile/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_0b15dc40_7",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "laranxa",
+   "speech": "laranxa",
+   "source": "escoita/valeria_gl",
+   "pack": false
   },
   {
    "id": "gl_tutor_0b28fcf2_7",
@@ -250085,6 +251921,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_0f249697_8",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "espertar",
+   "speech": "espertar",
+   "source": "escoita/valeria_gl",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_0f24f461_33",
    "lang": "gl",
    "style": "tutor",
@@ -250175,6 +252020,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_0f5c9956_5",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "leite",
+   "speech": "leite",
+   "source": "escoita/valeria_gl",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_0f5eb31f_27",
    "lang": "gl",
    "style": "tutor",
@@ -250200,6 +252054,15 @@
    "speech": "Brazos arriba!",
    "source": "tpr.2_3.decembro/s3/2_3.decembro.s3.arms-up-high/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_0f6a42e1_4",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "soia",
+   "speech": "soia",
+   "source": "escoita/valeria_gl",
+   "pack": false
   },
   {
    "id": "gl_tutor_0f7444bd_19",
@@ -250841,6 +252704,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_1149f68a_18",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Despois lavámonos.",
+   "speech": "Despois lavámonos.",
+   "source": "escoita/valeria_gl",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_114adea8_16",
    "lang": "gl",
    "style": "tutor",
@@ -251261,6 +253133,15 @@
    "text": "Si, o interruptor! Chegas ao interruptor de puntas.",
    "speech": "Si, o interruptor! Chegas ao interruptor de puntas.",
    "source": "biblioteca/HIS-061/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_12467974_4",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "moto",
+   "speech": "moto",
+   "source": "escoita/valeria_gl",
    "pack": false
   },
   {
@@ -252170,6 +254051,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_14cb48b8_14",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Isto é a auga.",
+   "speech": "Isto é a auga.",
+   "source": "escoita/valeria_gl",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_14cf1f83_31",
    "lang": "gl",
    "style": "tutor",
@@ -252392,6 +254282,15 @@
    "text": "Que levas á escola na mochila?",
    "speech": "Que levas á escola na mochila?",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_15458191_16",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Isto é un avión.",
+   "speech": "Isto é un avión.",
+   "source": "escoita/valeria_gl",
    "pack": false
   },
   {
@@ -253070,6 +254969,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_16e36b74_5",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "longo",
+   "speech": "longo",
+   "source": "escoita/valeria_gl",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_16ebd34e_47",
    "lang": "gl",
    "style": "tutor",
@@ -253421,6 +255329,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_1806701d_17",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Isto é o xeonllo.",
+   "speech": "Isto é o xeonllo.",
+   "source": "escoita/valeria_gl",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_1807feb1_35",
    "lang": "gl",
    "style": "tutor",
@@ -253445,6 +255362,15 @@
    "text": "Si! O abrigo! Un abrigo verde novo!",
    "speech": "Si! O abrigo! Un abrigo verde novo!",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_182d0b3d_13",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Isto é o pan.",
+   "speech": "Isto é o pan.",
+   "source": "escoita/valeria_gl",
    "pack": false
   },
   {
@@ -255302,6 +257228,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_1cd686a0_4",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "vaca",
+   "speech": "vaca",
+   "source": "escoita/valeria_gl",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_1ce1051b_16",
    "lang": "gl",
    "style": "tutor",
@@ -255344,6 +257279,15 @@
    "text": "Exacto: a pausa atenta é a invitación máis respectuosa para que a crianza intente comunicarse cos seus propios recursos.",
    "speech": "Exacto: a pausa atenta é a invitación máis respectuosa para que a crianza intente comunicarse cos seus propios recursos.",
    "source": "academy.como_se_aprende_a_hablar.01/afirmaciones/afirmacion_01/explicacion",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_1d1242b2_6",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "pechar",
+   "speech": "pechar",
+   "source": "escoita/valeria_gl",
    "pack": false
   },
   {
@@ -255408,6 +257352,15 @@
    "speech": "Dar voltas",
    "source": "tpr.0_2.febreiro/s4/0_2.febreiro.s4.twirl/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_1d4b6d63_14",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Isto é a boca.",
+   "speech": "Isto é a boca.",
+   "source": "escoita/valeria_gl",
+   "pack": false
   },
   {
    "id": "gl_tutor_1d4e7373_35",
@@ -255896,6 +257849,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_1ed34a12_6",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "rápido",
+   "speech": "rápido",
+   "source": "escoita/valeria_gl",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_1ed5588f_10",
    "lang": "gl",
    "style": "tutor",
@@ -255903,6 +257865,15 @@
    "speech": "Torre alta",
    "source": "tpr.2_3.setembro/s2/2_3.setembro.s2.tall-tower/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_1eddf17c_18",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Tes fame e pídelo.",
+   "speech": "Tes fame e pídelo.",
+   "source": "escoita/valeria_gl",
+   "pack": false
   },
   {
    "id": "gl_tutor_1edf20a4_35",
@@ -256515,6 +258486,15 @@
    "speech": "Ondulado, ondulada",
    "source": "tpr.3_4.xuno/s1/3_4.xuno.s1.wavy/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_20a8c364_48",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Está escuro… Que facemos coa luz do interruptor?",
+   "speech": "Está escuro… Que facemos coa luz do interruptor?",
+   "source": "escoita/valeria_gl",
+   "pack": false
   },
   {
    "id": "gl_tutor_20aa0ba2_35",
@@ -257813,6 +259793,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_24554efc_5",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "sopra",
+   "speech": "sopra",
+   "source": "escoita/valeria_gl",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_245bd8d3_38",
    "lang": "gl",
    "style": "tutor",
@@ -258443,6 +260432,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_26732a6a_27",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "O pelo do gato é moi suave.",
+   "speech": "O pelo do gato é moi suave.",
+   "source": "escoita/valeria_gl",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_267a5321_50",
    "lang": "gl",
    "style": "tutor",
@@ -259046,6 +261044,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_280afa43_14",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Isto é o gato.",
+   "speech": "Isto é o gato.",
+   "source": "escoita/valeria_gl",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_280c3dcc_31",
    "lang": "gl",
    "style": "tutor",
@@ -259143,6 +261150,15 @@
    "speech": "Comunicarse",
    "source": "tpr.5_6.abril/s4/5_6.abril.s4.communicate/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_2881ed2b_6",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "apagar",
+   "speech": "apagar",
+   "source": "escoita/valeria_gl",
+   "pack": false
   },
   {
    "id": "gl_tutor_28935665_49",
@@ -259577,6 +261593,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_29d5532e_16",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Isto é o cóbado.",
+   "speech": "Isto é o cóbado.",
+   "source": "escoita/valeria_gl",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_29d72c12_26",
    "lang": "gl",
    "style": "tutor",
@@ -259754,6 +261779,15 @@
    "text": "Podes bater as ás e quedar quieto? Flap, flap… estátua!",
    "speech": "Podes bater as ás e quedar quieto? Flap, flap… estátua!",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_2a810410_23",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "O paxaro é moi pequeno.",
+   "speech": "O paxaro é moi pequeno.",
+   "source": "escoita/valeria_gl",
    "pack": false
   },
   {
@@ -260918,6 +262952,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_2d3e31dd_49",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "E esta outra culler, como está? Mira como brilla!",
+   "speech": "E esta outra culler, como está? Mira como brilla!",
+   "source": "escoita/valeria_gl",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_2d44b959_6",
    "lang": "gl",
    "style": "tutor",
@@ -261194,6 +263237,15 @@
    "text": "Evitar esixir a tradución: non dicir «Dilo en inglés». O adulto modela a fórmula con calidez no fluxo natural da acción.",
    "speech": "Evitar esixir a tradución: non dicir «Dilo en inglés». O adulto modela a fórmula con calidez no fluxo natural da acción.",
    "source": "asamblea.segundo_ciclo.setembro.6_infantil/microRutina/pauta/0/consejoEvitar",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_2de6e363_19",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "A man está mollada.",
+   "speech": "A man está mollada.",
+   "source": "escoita/valeria_gl",
    "pack": false
   },
   {
@@ -262000,6 +264052,15 @@
    "text": "Mírao!",
    "speech": "Mírao!",
    "source": "gramatica/curso_2_3/2/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_30209744_16",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Isto é un coche.",
+   "speech": "Isto é un coche.",
+   "source": "escoita/valeria_gl",
    "pack": false
   },
   {
@@ -263317,6 +265378,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_33448759_12",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Isto é o pé.",
+   "speech": "Isto é o pé.",
+   "source": "escoita/valeria_gl",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_334718df_28",
    "lang": "gl",
    "style": "tutor",
@@ -263659,6 +265729,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_3428cd7a_6",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "baixar",
+   "speech": "baixar",
+   "source": "escoita/valeria_gl",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_3429748c_57",
    "lang": "gl",
    "style": "tutor",
@@ -263902,6 +265981,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_34df7d87_25",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Ao final volvemos á casa.",
+   "speech": "Ao final volvemos á casa.",
+   "source": "escoita/valeria_gl",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_34ef8fb2_13",
    "lang": "gl",
    "style": "tutor",
@@ -264073,6 +266161,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_356ad979_3",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "lei",
+   "speech": "lei",
+   "source": "escoita/valeria_gl",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_356cd139_52",
    "lang": "gl",
    "style": "tutor",
@@ -264235,6 +266332,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_35cbf7f8_15",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Isto é o coche.",
+   "speech": "Isto é o coche.",
+   "source": "escoita/valeria_gl",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_35cd9193_28",
    "lang": "gl",
    "style": "tutor",
@@ -264287,6 +266393,15 @@
    "speech": "Recoller xoguetes",
    "source": "tpr.2_3.setembro/s3/2_3.setembro.s3.pick-up-toys/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_35fb238b_5",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "coche",
+   "speech": "coche",
+   "source": "escoita/valeria_gl",
+   "pack": false
   },
   {
    "id": "gl_tutor_36073687_18",
@@ -265099,6 +267214,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_382aa163_18",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "A auga cae do ceo.",
+   "speech": "A auga cae do ceo.",
+   "source": "escoita/valeria_gl",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_383c82af_30",
    "lang": "gl",
    "style": "tutor",
@@ -265187,6 +267311,15 @@
    "speech": "Escaleira mecánica",
    "source": "tpr.4_5.xaneiro/s3/4_5.xaneiro.s3.escalator/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_38906aba_5",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "sucio",
+   "speech": "sucio",
+   "source": "escoita/valeria_gl",
+   "pack": false
   },
   {
    "id": "gl_tutor_3897b421_56",
@@ -265492,6 +267625,15 @@
    "text": "Onde está o ratiño? Enriba do pan ou debaixo do pan? Tócao!",
    "speech": "Onde está o ratiño? Enriba do pan ou debaixo do pan? Tócao!",
    "source": "biblioteca/HIS-064/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_39a3e8b4_6",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "dentes",
+   "speech": "dentes",
+   "source": "escoita/valeria_gl",
    "pack": false
   },
   {
@@ -266215,6 +268357,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_3be1fb83_15",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Isto é un tren.",
+   "speech": "Isto é un tren.",
+   "source": "escoita/valeria_gl",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_3bf1fabb_26",
    "lang": "gl",
    "style": "tutor",
@@ -266707,6 +268858,15 @@
    "text": "Imos estar moi caladiños coma Lúa: o dedo nos labios... Shhh...!",
    "speech": "Imos estar moi caladiños coma Lúa: o dedo nos labios... Shhh...!",
    "source": "biblioteca/HIS-081/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_3da0fef4_5",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "limpo",
+   "speech": "limpo",
+   "source": "escoita/valeria_gl",
    "pack": false
   },
   {
@@ -268101,6 +270261,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_41acc838_6",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "peludo",
+   "speech": "peludo",
+   "source": "escoita/valeria_gl",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_41aef1e1_49",
    "lang": "gl",
    "style": "tutor",
@@ -268242,6 +270411,15 @@
    "text": "Xogo de palmas por quendas, marcando o pulso coa voz.",
    "speech": "Xogo de palmas por quendas, marcando o pulso coa voz.",
    "source": "asamblea.segundo_ciclo.maio.4_infantil/microRutina/objetivoAutonomia",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_4221c7a5_18",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Esta cor é morada.",
+   "speech": "Esta cor é morada.",
+   "source": "escoita/valeria_gl",
    "pack": false
   },
   {
@@ -269010,6 +271188,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_44130bad_4",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "roda",
+   "speech": "roda",
+   "source": "escoita/valeria_gl",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_4414be40_18",
    "lang": "gl",
    "style": "tutor",
@@ -269109,6 +271296,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_445c75f0_17",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Isto é unha moto.",
+   "speech": "Isto é unha moto.",
+   "source": "escoita/valeria_gl",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_445f1b90_4",
    "lang": "gl",
    "style": "tutor",
@@ -269196,6 +271392,15 @@
    "text": "Só a voz e un toque",
    "speech": "Só a voz e un toque",
    "source": "progresion.primeiro_ciclo.0_2/s4/d1/foco",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_44d620cd_14",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Isto é a vaca.",
+   "speech": "Isto é a vaca.",
+   "source": "escoita/valeria_gl",
    "pack": false
   },
   {
@@ -269314,6 +271519,15 @@
    "speech": "Globo de auga",
    "source": "tpr.4_5.xuno/s4/4_5.xuno.s4.water-balloon/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_452ee25c_28",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "No almorzo bebemos da cunca.",
+   "speech": "No almorzo bebemos da cunca.",
+   "source": "escoita/valeria_gl",
+   "pack": false
   },
   {
    "id": "gl_tutor_453331d0_17",
@@ -269592,6 +271806,15 @@
    "text": "Que temos que facer co xoguete para que a sombra sexa pequena coma un rato?",
    "speech": "Que temos que facer co xoguete para que a sombra sexa pequena coma un rato?",
    "source": "steam/I4-OPTICA-001/hogar/observa/preguntaIndagacion",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_45f488bb_3",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "rei",
+   "speech": "rei",
+   "source": "escoita/valeria_gl",
    "pack": false
   },
   {
@@ -270617,6 +272840,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_49019a1b_4",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "azul",
+   "speech": "azul",
+   "source": "escoita/valeria_gl",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_49030410_30",
    "lang": "gl",
    "style": "tutor",
@@ -270653,6 +272885,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_490e53cd_5",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "ponte",
+   "speech": "ponte",
+   "source": "escoita/valeria_gl",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_49130812_8",
    "lang": "gl",
    "style": "tutor",
@@ -270677,6 +272918,15 @@
    "text": "Onde está a ovella? Toca a ovella!",
    "speech": "Onde está a ovella? Toca a ovella!",
    "source": "biblioteca/HIS-037/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_4922b2cc_5",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "testa",
+   "speech": "testa",
+   "source": "escoita/valeria_gl",
    "pack": false
   },
   {
@@ -270821,6 +273071,15 @@
    "text": "Néboa imperceptible sobre o dorso das mans, con cadencia suave.",
    "speech": "Néboa imperceptible sobre o dorso das mans, con cadencia suave.",
    "source": "asamblea.primeiro_ciclo.abril.0_2_anos/fase/2/consigna",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_497d3fed_18",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "A vaca come herba.",
+   "speech": "A vaca come herba.",
+   "source": "escoita/valeria_gl",
    "pack": false
   },
   {
@@ -271751,6 +274010,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_4be55b64_3",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "óso",
+   "speech": "óso",
+   "source": "escoita/valeria_gl",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_4be76814_30",
    "lang": "gl",
    "style": "tutor",
@@ -272289,6 +274557,15 @@
    "speech": "Cando pare o tambor, conxélate",
    "source": "tpr.4_5.outubro/s1/4_5.outubro.s1.when-the-drum-stops-freeze/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_4d7307eb_14",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "O coche corre.",
+   "speech": "O coche corre.",
+   "source": "escoita/valeria_gl",
+   "pack": false
   },
   {
    "id": "gl_tutor_4d7a9053_7",
@@ -273002,6 +275279,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_4f7e26b0_50",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Agora ao revés: cal é o osiño PEQUENO? Dámo e dío!",
+   "speech": "Agora ao revés: cal é o osiño PEQUENO? Dámo e dío!",
+   "source": "escoita/valeria_gl",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_4f7f7152_30",
    "lang": "gl",
    "style": "tutor",
@@ -273416,6 +275702,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_50adb4b8_57",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Os xoguetes van á súa casa, dentro da caixa. Que facemos?",
+   "speech": "Os xoguetes van á súa casa, dentro da caixa. Que facemos?",
+   "source": "escoita/valeria_gl",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_50bc543a_53",
    "lang": "gl",
    "style": "tutor",
@@ -273596,6 +275891,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_511f23d6_14",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Isto é un can.",
+   "speech": "Isto é un can.",
+   "source": "escoita/valeria_gl",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_5121cd54_15",
    "lang": "gl",
    "style": "tutor",
@@ -273692,6 +275996,15 @@
    "text": "Si, o gorro está detrás da árbore!",
    "speech": "Si, o gorro está detrás da árbore!",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_5160f9e6_5",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "conto",
+   "speech": "conto",
+   "source": "escoita/valeria_gl",
    "pack": false
   },
   {
@@ -274361,6 +276674,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_5317ebd4_6",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "vestir",
+   "speech": "vestir",
+   "source": "escoita/valeria_gl",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_5318562d_50",
    "lang": "gl",
    "style": "tutor",
@@ -274448,6 +276770,15 @@
    "text": "A diferenza non está en que a pantalla sexa mala: está en que non devolve. Un vídeo di «casa» tanto se o neno mira como se marcha. Unha persoa fai unha pausa, repite, sinala, celebra. Esa resposta continxente —chega porque el fixo algo— é a que non se pode substituír. As recomendacións pediátricas internacionais coinciden en desaconsellar o uso de pantallas antes dos 2 anos e limitalo despois; consulta co teu pediatra o que corresponda ao teu caso.",
    "speech": "A diferenza non está en que a pantalla sexa mala: está en que non devolve. Un vídeo di «casa» tanto se o neno mira como se marcha. Unha persoa fai unha pausa, repite, sinala, celebra. Esa resposta continxente —chega porque el fixo algo— é a que non se pode substituír. As recomendacións pediátricas internacionais coinciden en desaconsellar o uso de pantallas antes dos 2 anos e limitalo despois; consulta co teu pediatra o que corresponda ao teu caso.",
    "source": "academy.juego_movimiento_sin_pantallas.01/porQueImporta",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_535d4cb2_13",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Isto é o can.",
+   "speech": "Isto é o can.",
+   "source": "escoita/valeria_gl",
    "pack": false
   },
   {
@@ -275684,6 +278015,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_56cc9fad_17",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Isto é un camión.",
+   "speech": "Isto é un camión.",
+   "source": "escoita/valeria_gl",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_56cd7129_18",
    "lang": "gl",
    "style": "tutor",
@@ -275691,6 +278031,15 @@
    "speech": "Que podemos facer?",
    "source": "tpr.5_6.setembro/s3/5_6.setembro.s3.what-can-we-do/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_56d52b6b_24",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Despois sentamos á mesa.",
+   "speech": "Despois sentamos á mesa.",
+   "source": "escoita/valeria_gl",
+   "pack": false
   },
   {
    "id": "gl_tutor_56e34bc2_15",
@@ -275855,6 +278204,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_572f97d4_3",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "rúa",
+   "speech": "rúa",
+   "source": "escoita/valeria_gl",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_573567ea_7",
    "lang": "gl",
    "style": "tutor",
@@ -275862,6 +278220,15 @@
    "speech": "Lembrar",
    "source": "tpr.3_4.maio/s4/3_4.maio.s4.remember/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_573611f6_19",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Isto é unha xirafa.",
+   "speech": "Isto é unha xirafa.",
+   "source": "escoita/valeria_gl",
+   "pack": false
   },
   {
    "id": "gl_tutor_57406a94_27",
@@ -275873,6 +278240,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_574df0cc_27",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Logo baixamos polo tobogán.",
+   "speech": "Logo baixamos polo tobogán.",
+   "source": "escoita/valeria_gl",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_57551f24_5",
    "lang": "gl",
    "style": "tutor",
@@ -275880,6 +278256,15 @@
    "speech": "Avión",
    "source": "tpr.3_4.xaneiro/s3/3_4.xaneiro.s3.plane/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_575aead5_20",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Primeiro espertamos.",
+   "speech": "Primeiro espertamos.",
+   "source": "escoita/valeria_gl",
+   "pack": false
   },
   {
    "id": "gl_tutor_576d5bf2_15",
@@ -276432,6 +278817,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_5906aac2_13",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Isto é a man.",
+   "speech": "Isto é a man.",
+   "source": "escoita/valeria_gl",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_591228ff_44",
    "lang": "gl",
    "style": "tutor",
@@ -276756,6 +279150,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_59c9ea42_6",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "marrón",
+   "speech": "marrón",
+   "source": "escoita/valeria_gl",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_59cb36e6_36",
    "lang": "gl",
    "style": "tutor",
@@ -276960,6 +279363,15 @@
    "text": "Si! Castañas! Castañas quentes e ricas!",
    "speech": "Si! Castañas! Castañas quentes e ricas!",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_5a39946b_24",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "O coche ten catro rodas.",
+   "speech": "O coche ten catro rodas.",
+   "source": "escoita/valeria_gl",
    "pack": false
   },
   {
@@ -277186,6 +279598,15 @@
    "speech": "Agridoce",
    "source": "tpr.0_2.xuno/s4/0_2.xuno.s4.bittersweet/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_5adaeaa1_25",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "O gato dorme na súa cama.",
+   "speech": "O gato dorme na súa cama.",
+   "source": "escoita/valeria_gl",
+   "pack": false
   },
   {
    "id": "gl_tutor_5ae36956_52",
@@ -277944,6 +280365,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_5cc6b5a0_5",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "salta",
+   "speech": "salta",
+   "source": "escoita/valeria_gl",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_5cce951c_39",
    "lang": "gl",
    "style": "tutor",
@@ -278058,6 +280488,15 @@
    "text": "Baila, baila… estátua!",
    "speech": "Baila, baila… estátua!",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_5d2254f9_16",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Esta cor é azul.",
+   "speech": "Esta cor é azul.",
+   "source": "escoita/valeria_gl",
    "pack": false
   },
   {
@@ -278815,6 +281254,15 @@
    "speech": "Pide un desexo!",
    "source": "tpr.2_3.abril/s1/2_3.abril.s1.make-a-wish/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_5efbb902_18",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Esta cor é marrón.",
+   "speech": "Esta cor é marrón.",
+   "source": "escoita/valeria_gl",
+   "pack": false
   },
   {
    "id": "gl_tutor_5effc4c8_41",
@@ -280235,6 +282683,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_62cb0988_20",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Isto é unha cereixa.",
+   "speech": "Isto é unha cereixa.",
+   "source": "escoita/valeria_gl",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_62d51ef4_12",
    "lang": "gl",
    "style": "tutor",
@@ -280649,6 +283106,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_6438cea8_17",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Isto é un ananás.",
+   "speech": "Isto é un ananás.",
+   "source": "escoita/valeria_gl",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_6440d0e8_6",
    "lang": "gl",
    "style": "tutor",
@@ -280781,6 +283247,15 @@
    "text": "Si, un abrigo azul!",
    "speech": "Si, un abrigo azul!",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_64b97993_4",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "ollo",
+   "speech": "ollo",
+   "source": "escoita/valeria_gl",
    "pack": false
   },
   {
@@ -281114,6 +283589,15 @@
    "text": "Onde están os paxariños? Toca un paxaro!",
    "speech": "Onde están os paxariños? Toca un paxaro!",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_65a3ff75_35",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Toca os vasos. Cal está FRÍO? Brrr!",
+   "speech": "Toca os vasos. Cal está FRÍO? Brrr!",
+   "source": "escoita/valeria_gl",
    "pack": false
   },
   {
@@ -281504,6 +283988,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_66c05d26_5",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "corre",
+   "speech": "corre",
+   "source": "escoita/valeria_gl",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_66c24baa_29",
    "lang": "gl",
    "style": "tutor",
@@ -281681,6 +284174,15 @@
    "text": "Ai, non! Unha poza grande e enlamada! Os meus zapatos...",
    "speech": "Ai, non! Unha poza grande e enlamada! Os meus zapatos...",
    "source": "biblioteca/HIS-076/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_6743fba1_5",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "suave",
+   "speech": "suave",
+   "source": "escoita/valeria_gl",
    "pack": false
   },
   {
@@ -281891,6 +284393,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_67fc0e13_7",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "zapatos",
+   "speech": "zapatos",
+   "source": "escoita/valeria_gl",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_680155f3_77",
    "lang": "gl",
    "style": "tutor",
@@ -281943,6 +284454,15 @@
    "speech": "Que paxaro é ese?",
    "source": "tpr.4_5.abril/s1/4_5.abril.s1.what-bird-is-that/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_6812052c_20",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Ao final almorzamos.",
+   "speech": "Ao final almorzamos.",
+   "source": "escoita/valeria_gl",
+   "pack": false
   },
   {
    "id": "gl_tutor_68136700_39",
@@ -282357,6 +284877,15 @@
    "speech": "Sinalar",
    "source": "tpr.0_2.outubro/s1/0_2.outubro.s1.point-to/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_6978182b_4",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "para",
+   "speech": "para",
+   "source": "escoita/valeria_gl",
+   "pack": false
   },
   {
    "id": "gl_tutor_6978f9ae_15",
@@ -282833,6 +285362,15 @@
    "text": "Enrosquémonos coma os dous gatos! Os brazos arredor... shhh... purr, purr...",
    "speech": "Enrosquémonos coma os dous gatos! Os brazos arredor... shhh... purr, purr...",
    "source": "biblioteca/HIS-072/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_6af6ea56_21",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Despois enxaboámonos.",
+   "speech": "Despois enxaboámonos.",
+   "source": "escoita/valeria_gl",
    "pack": false
   },
   {
@@ -283385,6 +285923,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_6cbbb9cc_17",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Isto é unha vaca.",
+   "speech": "Isto é unha vaca.",
+   "source": "escoita/valeria_gl",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_6cbe2e60_25",
    "lang": "gl",
    "style": "tutor",
@@ -283835,6 +286382,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_6dd517bd_18",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "O globo é redondo.",
+   "speech": "O globo é redondo.",
+   "source": "escoita/valeria_gl",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_6dd8e79a_41",
    "lang": "gl",
    "style": "tutor",
@@ -284246,6 +286802,15 @@
    "text": "Si! O raposo! Un raposo laranxa coas orellas en punta!",
    "speech": "Si! O raposo! Un raposo laranxa coas orellas en punta!",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_6eea18cc_26",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "O tren leva moitos vagóns.",
+   "speech": "O tren leva moitos vagóns.",
+   "source": "escoita/valeria_gl",
    "pack": false
   },
   {
@@ -284699,6 +287264,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_701ebcea_22",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "O paxaro voa polo ceo.",
+   "speech": "O paxaro voa polo ceo.",
+   "source": "escoita/valeria_gl",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_702653b0_17",
    "lang": "gl",
    "style": "tutor",
@@ -285095,6 +287669,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_714b9716_3",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "pel",
+   "speech": "pel",
+   "source": "escoita/valeria_gl",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_7154611c_27",
    "lang": "gl",
    "style": "tutor",
@@ -285417,6 +288000,15 @@
    "speech": "Galeón",
    "source": "tpr.5_6.xaneiro/s2/5_6.xaneiro.s2.sailing-ship/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_7224923d_4",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "tubo",
+   "speech": "tubo",
+   "source": "escoita/valeria_gl",
+   "pack": false
   },
   {
    "id": "gl_tutor_72251e8e_33",
@@ -285908,6 +288500,15 @@
    "speech": "Mover as cadeiras",
    "source": "tpr.2_3.outubro/s4/2_3.outubro.s4.sway-hips/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_734870b1_4",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "bóla",
+   "speech": "bóla",
+   "source": "escoita/valeria_gl",
+   "pack": false
   },
   {
    "id": "gl_tutor_73539f08_82",
@@ -286837,6 +289438,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_76440881_22",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "O can ten catro patas.",
+   "speech": "O can ten catro patas.",
+   "source": "escoita/valeria_gl",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_765038b2_17",
    "lang": "gl",
    "style": "tutor",
@@ -286963,6 +289573,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_76997847_51",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Agora ao revés. Que facemos coa luz do interruptor?",
+   "speech": "Agora ao revés. Que facemos coa luz do interruptor?",
+   "source": "escoita/valeria_gl",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_76a384e2_25",
    "lang": "gl",
    "style": "tutor",
@@ -287059,6 +289678,15 @@
    "text": "Si, un sombreiro! Un sombreiro de palla para o sol.",
    "speech": "Si, un sombreiro! Un sombreiro de palla para o sol.",
    "source": "biblioteca/HIS-084/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_76f9929d_20",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Esta cor é vermella.",
+   "speech": "Esta cor é vermella.",
+   "source": "escoita/valeria_gl",
    "pack": false
   },
   {
@@ -287392,6 +290020,15 @@
    "text": "Si, vas de puntillas! De puntillas, de puntillas…",
    "speech": "Si, vas de puntillas! De puntillas, de puntillas…",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_77e56c45_16",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Logo vestímonos.",
+   "speech": "Logo vestímonos.",
+   "source": "escoita/valeria_gl",
    "pack": false
   },
   {
@@ -288157,6 +290794,15 @@
    "text": "Mira, a folla cae. Abaixo, abaixo, abaixo!",
    "speech": "Mira, a folla cae. Abaixo, abaixo, abaixo!",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_7a29ec91_26",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Primeiro poñemos o pixama.",
+   "speech": "Primeiro poñemos o pixama.",
+   "source": "escoita/valeria_gl",
    "pack": false
   },
   {
@@ -289303,6 +291949,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_7d4cab09_4",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "pala",
+   "speech": "pala",
+   "source": "escoita/valeria_gl",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_7d4f4c72_46",
    "lang": "gl",
    "style": "tutor",
@@ -289480,6 +292135,15 @@
    "text": "Mira, Lúa tócaa co pé. Plana!",
    "speech": "Mira, Lúa tócaa co pé. Plana!",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_7de4348b_6",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "cóbado",
+   "speech": "cóbado",
+   "source": "escoita/valeria_gl",
    "pack": false
   },
   {
@@ -290029,6 +292693,15 @@
    "text": "Se vai calor, regamos as plantas!",
    "speech": "Se vai calor, regamos as plantas!",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_7fd1b58a_19",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "O tren é moi longo.",
+   "speech": "O tren é moi longo.",
+   "source": "escoita/valeria_gl",
    "pack": false
   },
   {
@@ -290662,6 +293335,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_816de960_43",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "E esta outra cesta, como está? Mira dentro!",
+   "speech": "E esta outra cesta, como está? Mira dentro!",
+   "source": "escoita/valeria_gl",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_817b6a8e_30",
    "lang": "gl",
    "style": "tutor",
@@ -290938,6 +293620,15 @@
    "text": "Hai burbullas.",
    "speech": "Hai burbullas.",
    "source": "gramatica/curso_0_2/4/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_8246384e_21",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Ao final imos durmir.",
+   "speech": "Ao final imos durmir.",
+   "source": "escoita/valeria_gl",
    "pack": false
   },
   {
@@ -291490,6 +294181,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_8429f25d_4",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "nube",
+   "speech": "nube",
+   "source": "escoita/valeria_gl",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_842bbc62_14",
    "lang": "gl",
    "style": "tutor",
@@ -291775,6 +294475,15 @@
    "text": "Onde está a xoaniña? Toca a xoaniña vermella pequena!",
    "speech": "Onde está a xoaniña? Toca a xoaniña vermella pequena!",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_84c411de_50",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Agora ao revés. Que facemos cos xoguetes da caixa?",
+   "speech": "Agora ao revés. Que facemos cos xoguetes da caixa?",
+   "source": "escoita/valeria_gl",
    "pack": false
   },
   {
@@ -292741,6 +295450,15 @@
    "text": "Corre, can! Rápido!",
    "speech": "Corre, can! Rápido!",
    "source": "steam/STEAM-2_3-05/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_878751ef_4",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "pato",
+   "speech": "pato",
+   "source": "escoita/valeria_gl",
    "pack": false
   },
   {
@@ -293978,6 +296696,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_8a74cca1_17",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Isto é unha pera.",
+   "speech": "Isto é unha pera.",
+   "source": "escoita/valeria_gl",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_8a7646e9_6",
    "lang": "gl",
    "style": "tutor",
@@ -294968,6 +297695,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_8d216f49_3",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "voa",
+   "speech": "voa",
+   "source": "escoita/valeria_gl",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_8d22d31d_27",
    "lang": "gl",
    "style": "tutor",
@@ -295118,6 +297854,15 @@
    "text": "polgar",
    "speech": "polgar",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_8d875b61_4",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "pata",
+   "speech": "pata",
+   "source": "escoita/valeria_gl",
    "pack": false
   },
   {
@@ -296449,6 +299194,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_9072c832_5",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "subir",
+   "speech": "subir",
+   "source": "escoita/valeria_gl",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_907edea8_7",
    "lang": "gl",
    "style": "tutor",
@@ -296537,6 +299291,15 @@
    "speech": "Afastado",
    "source": "tpr.4_5.abril/s1/4_5.abril.s1.remote/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_90be69fd_16",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Isto é un barco.",
+   "speech": "Isto é un barco.",
+   "source": "escoita/valeria_gl",
+   "pack": false
   },
   {
    "id": "gl_tutor_90cb948b_79",
@@ -297061,6 +299824,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_924aea38_7",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "cereixa",
+   "speech": "cereixa",
+   "source": "escoita/valeria_gl",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_924b6585_112",
    "lang": "gl",
    "style": "tutor",
@@ -297158,6 +299930,15 @@
    "speech": "Pomba",
    "source": "tpr.0_2.xaneiro/s3/0_2.xaneiro.s3.pigeon/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_928bcba1_4",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "frío",
+   "speech": "frío",
+   "source": "escoita/valeria_gl",
+   "pack": false
   },
   {
    "id": "gl_tutor_92932c62_20",
@@ -297367,6 +300148,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_92f3a906_17",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Isto é unha mazá.",
+   "speech": "Isto é unha mazá.",
+   "source": "escoita/valeria_gl",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_92fdd1bc_52",
    "lang": "gl",
    "style": "tutor",
@@ -297418,6 +300208,15 @@
    "text": "Mira, Lúa voa coma un paxaro. Flap, flap!",
    "speech": "Mira, Lúa voa coma un paxaro. Flap, flap!",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_9313e2f8_4",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "caza",
+   "speech": "caza",
+   "source": "escoita/valeria_gl",
    "pack": false
   },
   {
@@ -299398,6 +302197,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_9858184d_33",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Cal é o osiño GRANDE? Dámo e dío!",
+   "speech": "Cal é o osiño GRANDE? Dámo e dío!",
+   "source": "escoita/valeria_gl",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_9861d1b7_19",
    "lang": "gl",
    "style": "tutor",
@@ -300546,6 +303354,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_9ba00e81_21",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "O coche é moi rápido.",
+   "speech": "O coche é moi rápido.",
+   "source": "escoita/valeria_gl",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_9ba5801e_11",
    "lang": "gl",
    "style": "tutor",
@@ -300580,6 +303397,15 @@
    "speech": "Emoción",
    "source": "tpr.5_6.maio/s1/5_6.maio.s1.emotion/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_9bdb0f4b_30",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Ao final secámonos coa toalla.",
+   "speech": "Ao final secámonos coa toalla.",
+   "source": "escoita/valeria_gl",
+   "pack": false
   },
   {
    "id": "gl_tutor_9be31e19_8",
@@ -301185,6 +304011,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_9d6c1fbe_5",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "pluma",
+   "speech": "pluma",
+   "source": "escoita/valeria_gl",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_9d6e58df_35",
    "lang": "gl",
    "style": "tutor",
@@ -301354,6 +304189,15 @@
    "speech": "Chiar",
    "source": "tpr.0_2.xaneiro/s3/0_2.xaneiro.s3.tweet/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_9dcdc8a3_50",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Gardamos o xoguete na caixa. Que facemos coa tapa?",
+   "speech": "Gardamos o xoguete na caixa. Que facemos coa tapa?",
+   "source": "escoita/valeria_gl",
+   "pack": false
   },
   {
    "id": "gl_tutor_9dd6e33b_26",
@@ -301671,6 +304515,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_9e9f8c20_20",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Isto é unha laranxa.",
+   "speech": "Isto é unha laranxa.",
+   "source": "escoita/valeria_gl",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_9ea713b4_45",
    "lang": "gl",
    "style": "tutor",
@@ -301785,6 +304638,15 @@
    "text": "Simular poñer uns pantalóns pesados, unha perna e logo a outra.",
    "speech": "Simular poñer uns pantalóns pesados, unha perna e logo a outra.",
    "source": "asamblea.primeiro_ciclo.xaneiro.2_3_anos/fase/2/consigna",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_9f253efd_4",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "casa",
+   "speech": "casa",
+   "source": "escoita/valeria_gl",
    "pack": false
   },
   {
@@ -302464,6 +305326,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_a14bdd04_24",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "O tren para na estación.",
+   "speech": "O tren para na estación.",
+   "source": "escoita/valeria_gl",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_a1509cab_7",
    "lang": "gl",
    "style": "tutor",
@@ -302707,6 +305578,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_a1fdc4da_39",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Agora o coche vai cara abaixo! Que fai?",
+   "speech": "Agora o coche vai cara abaixo! Que fai?",
+   "source": "escoita/valeria_gl",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_a201f3ea_58",
    "lang": "gl",
    "style": "tutor",
@@ -302821,6 +305701,15 @@
    "text": "Esponxa grande! Hop, hop, para... abaixo!",
    "speech": "Esponxa grande! Hop, hop, para... abaixo!",
    "source": "biblioteca/HIS-023/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_a28bd69a_20",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Logo lemos un conto.",
+   "speech": "Logo lemos un conto.",
+   "source": "escoita/valeria_gl",
    "pack": false
   },
   {
@@ -303927,6 +306816,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_a5a07fd2_14",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Isto é o ollo.",
+   "speech": "Isto é o ollo.",
+   "source": "escoita/valeria_gl",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_a5a11e24_20",
    "lang": "gl",
    "style": "tutor",
@@ -304503,6 +307401,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_a787663e_7",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "amarelo",
+   "speech": "amarelo",
+   "source": "escoita/valeria_gl",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_a78d8f05_12",
    "lang": "gl",
    "style": "tutor",
@@ -304717,6 +307624,15 @@
    "speech": "Rede de pesca",
    "source": "tpr.0_2.xuno/s2/0_2.xuno.s2.fishing-net/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_a82650b2_15",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Isto é un pato.",
+   "speech": "Isto é un pato.",
+   "source": "escoita/valeria_gl",
+   "pack": false
   },
   {
    "id": "gl_tutor_a835cd48_5",
@@ -304995,6 +307911,15 @@
    "text": "Si, grande! Un charco grande, non pequeno!",
    "speech": "Si, grande! Un charco grande, non pequeno!",
    "source": "biblioteca/HIS-004/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_a8ca4b1d_5",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "sacar",
+   "speech": "sacar",
+   "source": "escoita/valeria_gl",
    "pack": false
   },
   {
@@ -306427,6 +309352,15 @@
    "speech": "Burbullas",
    "source": "tpr.3_4.maio/s1/3_4.maio.s1.bubbles/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_acf02d1f_4",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "pera",
+   "speech": "pera",
+   "source": "escoita/valeria_gl",
+   "pack": false
   },
   {
    "id": "gl_tutor_acf04bbc_23",
@@ -308256,6 +311190,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_b2285f82_6",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "xirafa",
+   "speech": "xirafa",
+   "source": "escoita/valeria_gl",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_b22b38cf_66",
    "lang": "gl",
    "style": "tutor",
@@ -308463,6 +311406,24 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_b2ccca14_7",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "plátano",
+   "speech": "plátano",
+   "source": "escoita/valeria_gl",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_b2df7781_48",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "O coche vai á montaña. Que fai? Vai cara arriba!",
+   "speech": "O coche vai á montaña. Que fai? Vai cara arriba!",
+   "source": "escoita/valeria_gl",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_b2ed1618_20",
    "lang": "gl",
    "style": "tutor",
@@ -308487,6 +311448,15 @@
    "text": "Mira, Lúa dorme co seu can. Chis…",
    "speech": "Mira, Lúa dorme co seu can. Chis…",
    "source": "biblioteca/HIS-044/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_b2fcc195_6",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "morado",
+   "speech": "morado",
+   "source": "escoita/valeria_gl",
    "pack": false
   },
   {
@@ -308958,6 +311928,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_b4217197_8",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "elefante",
+   "speech": "elefante",
+   "source": "escoita/valeria_gl",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_b42732de_10",
    "lang": "gl",
    "style": "tutor",
@@ -309036,6 +312015,15 @@
    "text": "Follas verdes. Verde vivo. Que calma…",
    "speech": "Follas verdes. Verde vivo. Que calma…",
    "source": "biblioteca/HIS-087/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_b465fa73_5",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "abrir",
+   "speech": "abrir",
+   "source": "escoita/valeria_gl",
    "pack": false
   },
   {
@@ -309207,6 +312195,15 @@
    "text": "Si! A abella está na flor vermella!",
    "speech": "Si! A abella está na flor vermella!",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_b4dc75c6_4",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "xoia",
+   "speech": "xoia",
+   "source": "escoita/valeria_gl",
    "pack": false
   },
   {
@@ -309765,6 +312762,15 @@
    "text": "Onde está o pan? Toca o pan rico!",
    "speech": "Onde está o pan? Toca o pan rico!",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_b645c467_7",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "tobogán",
+   "speech": "tobogán",
+   "source": "escoita/valeria_gl",
    "pack": false
   },
   {
@@ -310587,6 +313593,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_b8a23910_23",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Despois imos ao parque.",
+   "speech": "Despois imos ao parque.",
+   "source": "escoita/valeria_gl",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_b8b032f3_34",
    "lang": "gl",
    "style": "tutor",
@@ -310792,6 +313807,15 @@
    "speech": "Deterse",
    "source": "tpr.2_3.outubro/s3/2_3.outubro.s3.halt/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_b95cb30b_3",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "xeo",
+   "speech": "xeo",
+   "source": "escoita/valeria_gl",
+   "pack": false
   },
   {
    "id": "gl_tutor_b9608349_43",
@@ -311788,6 +314812,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_bc77fc41_29",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "E este outro vaso, como está?",
+   "speech": "E este outro vaso, como está?",
+   "source": "escoita/valeria_gl",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_bc83034b_34",
    "lang": "gl",
    "style": "tutor",
@@ -311959,6 +314992,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_bd047277_6",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "quente",
+   "speech": "quente",
+   "source": "escoita/valeria_gl",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_bd0678b0_8",
    "lang": "gl",
    "style": "tutor",
@@ -311966,6 +315008,15 @@
    "speech": "Carreiro",
    "source": "tpr.2_3.novembro/s1/2_3.novembro.s1.footpath/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_bd0cfad3_6",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "pixama",
+   "speech": "pixama",
+   "source": "escoita/valeria_gl",
+   "pack": false
   },
   {
    "id": "gl_tutor_bd1fcdb7_7",
@@ -312846,6 +315897,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_c0119d34_7",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "redondo",
+   "speech": "redondo",
+   "source": "escoita/valeria_gl",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_c0122c77_55",
    "lang": "gl",
    "style": "tutor",
@@ -312906,6 +315966,15 @@
    "text": "Mira, Lúa ten unha semente. Unha semente pequena!",
    "speech": "Mira, Lúa ten unha semente. Unha semente pequena!",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_c03f5e1e_6",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "paxaro",
+   "speech": "paxaro",
+   "source": "escoita/valeria_gl",
    "pack": false
   },
   {
@@ -313773,6 +316842,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_c2ed7930_20",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "A vaca é moi grande.",
+   "speech": "A vaca é moi grande.",
+   "source": "escoita/valeria_gl",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_c2edd44d_102",
    "lang": "gl",
    "style": "tutor",
@@ -314087,6 +317165,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_c3b10f72_4",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "boca",
+   "speech": "boca",
+   "source": "escoita/valeria_gl",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_c3bb1f12_8",
    "lang": "gl",
    "style": "tutor",
@@ -314177,6 +317264,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_c40935b5_28",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Ao final recollemos o prato.",
+   "speech": "Ao final recollemos o prato.",
+   "source": "escoita/valeria_gl",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_c40fa211_28",
    "lang": "gl",
    "style": "tutor",
@@ -314201,6 +317297,15 @@
    "text": "Plop! A pelota na auga!",
    "speech": "Plop! A pelota na auga!",
    "source": "biblioteca/HIS-052/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_c4206de8_3",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "oso",
+   "speech": "oso",
+   "source": "escoita/valeria_gl",
    "pack": false
   },
   {
@@ -314567,6 +317672,15 @@
    "speech": "Primeiro cantamos, despois recollemos os certificados e por último celebramos",
    "source": "tpr.5_6.xuno/s3/5_6.xuno.s3.first-we-sing-then-we-get-our-certificates-and-finally-we-celebrate/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_c5611fe2_5",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "meter",
+   "speech": "meter",
+   "source": "escoita/valeria_gl",
+   "pack": false
   },
   {
    "id": "gl_tutor_c58b1966_15",
@@ -315085,6 +318199,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_c6ebdb5e_6",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "camión",
+   "speech": "camión",
+   "source": "escoita/valeria_gl",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_c6f8f404_31",
    "lang": "gl",
    "style": "tutor",
@@ -315382,6 +318505,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_c7c13558_6",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "sentar",
+   "speech": "sentar",
+   "source": "escoita/valeria_gl",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_c7d702ff_26",
    "lang": "gl",
    "style": "tutor",
@@ -315442,6 +318574,15 @@
    "text": "Si, a cuncha é demasiado pequena!",
    "speech": "Si, a cuncha é demasiado pequena!",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_c805aa5b_30",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Primeiro metémonos na bañeira.",
+   "speech": "Primeiro metémonos na bañeira.",
+   "source": "escoita/valeria_gl",
    "pack": false
   },
   {
@@ -315569,6 +318710,15 @@
    "speech": "Acenar",
    "source": "tpr.3_4.setembro/s1/3_4.setembro.s1.wave/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_c84d8272_2",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "pé",
+   "speech": "pé",
+   "source": "escoita/valeria_gl",
+   "pack": false
   },
   {
    "id": "gl_tutor_c8529461_9",
@@ -315775,6 +318925,15 @@
    "text": "Mira: o paxariño dorme. Shhh...",
    "speech": "Mira: o paxariño dorme. Shhh...",
    "source": "biblioteca/HIS-062/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_c8b73503_17",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Esta cor é verde.",
+   "speech": "Esta cor é verde.",
+   "source": "escoita/valeria_gl",
    "pack": false
   },
   {
@@ -316768,6 +319927,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_cbad5d91_3",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "mel",
+   "speech": "mel",
+   "source": "escoita/valeria_gl",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_cbad73c4_12",
    "lang": "gl",
    "style": "tutor",
@@ -316828,6 +319996,15 @@
    "text": "Onde está o can marrón? E o gato gris? Tócalle o rabo ao can!",
    "speech": "Onde está o can marrón? E o gato gris? Tócalle o rabo ao can!",
    "source": "biblioteca/HIS-009/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_cbcc50e1_5",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "palla",
+   "speech": "palla",
+   "source": "escoita/valeria_gl",
    "pack": false
   },
   {
@@ -317416,6 +320593,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_cdad8119_16",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Isto é o paxaro.",
+   "speech": "Isto é o paxaro.",
+   "source": "escoita/valeria_gl",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_cdad9dfa_85",
    "lang": "gl",
    "style": "tutor",
@@ -317638,6 +320824,15 @@
    "text": "Como se sente agora o paxariño?",
    "speech": "Como se sente agora o paxariño?",
    "source": "biblioteca/HIS-062/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_ce8874f3_43",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Sinala a culler SUCIA. Como está esta? Dío.",
+   "speech": "Sinala a culler SUCIA. Como está esta? Dío.",
+   "source": "escoita/valeria_gl",
    "pack": false
   },
   {
@@ -318197,6 +321392,15 @@
    "speech": "Quentar os pés",
    "source": "tpr.0_2.decembro/s2/0_2.decembro.s2.warm-feet/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_cff3f689_5",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "cesta",
+   "speech": "cesta",
+   "source": "escoita/valeria_gl",
+   "pack": false
   },
   {
    "id": "gl_tutor_cff45ad0_5",
@@ -318816,6 +322020,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_d178e7fe_7",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "torrado",
+   "speech": "torrado",
+   "source": "escoita/valeria_gl",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_d1827ab6_35",
    "lang": "gl",
    "style": "tutor",
@@ -319347,6 +322560,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_d2a54155_5",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "verde",
+   "speech": "verde",
+   "source": "escoita/valeria_gl",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_d2af06be_28",
    "lang": "gl",
    "style": "tutor",
@@ -319426,6 +322648,15 @@
    "speech": "Defender",
    "source": "tpr.5_6.xaneiro/s2/5_6.xaneiro.s2.defend/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_d2faf993_44",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Cal é a cesta CHEA de cousas? Sinálaa e dío!",
+   "speech": "Cal é a cesta CHEA de cousas? Sinálaa e dío!",
+   "source": "escoita/valeria_gl",
+   "pack": false
   },
   {
    "id": "gl_tutor_d2fbb559_7",
@@ -319579,6 +322810,15 @@
    "speech": "Suxeitar firme",
    "source": "tpr.4_5.setembro/s2/4_5.setembro.s2.hold-steady/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_d3743798_5",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "dorme",
+   "speech": "dorme",
+   "source": "escoita/valeria_gl",
+   "pack": false
   },
   {
    "id": "gl_tutor_d37edd59_37",
@@ -319794,6 +323034,15 @@
    "text": "Si, debaixo da mesa! A pelota vermella está debaixo da mesa.",
    "speech": "Si, debaixo da mesa! A pelota vermella está debaixo da mesa.",
    "source": "biblioteca/HIS-078/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_d42ac8cc_19",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Esta cor é amarela.",
+   "speech": "Esta cor é amarela.",
+   "source": "escoita/valeria_gl",
    "pack": false
   },
   {
@@ -320058,6 +323307,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_d4e7d7af_5",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "fonte",
+   "speech": "fonte",
+   "source": "escoita/valeria_gl",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_d4f3ae4e_16",
    "lang": "gl",
    "style": "tutor",
@@ -320082,6 +323340,15 @@
    "text": "Fago unha torre alta... pero onde está o meu último bloque?",
    "speech": "Fago unha torre alta... pero onde está o meu último bloque?",
    "source": "biblioteca/HIS-061/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_d50f1b32_20",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Da vaca sae o leite.",
+   "speech": "Da vaca sae o leite.",
+   "source": "escoita/valeria_gl",
    "pack": false
   },
   {
@@ -320436,6 +323703,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_d625373e_19",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "A auga sae da nube.",
+   "speech": "A auga sae da nube.",
+   "source": "escoita/valeria_gl",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_d628bed3_49",
    "lang": "gl",
    "style": "tutor",
@@ -320613,6 +323889,15 @@
    "text": "Mira ben! Está o pincel no papel? Toca o papel!",
    "speech": "Mira ben! Está o pincel no papel? Toca o papel!",
    "source": "biblioteca/HIS-088/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_d6b7383f_15",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Isto é un gato.",
+   "speech": "Isto é un gato.",
+   "source": "escoita/valeria_gl",
    "pack": false
   },
   {
@@ -323433,6 +326718,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_df04f252_56",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "O xoguete está dentro da caixa. Que facemos para sacalo?",
+   "speech": "O xoguete está dentro da caixa. Que facemos para sacalo?",
+   "source": "escoita/valeria_gl",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_df073cdb_47",
    "lang": "gl",
    "style": "tutor",
@@ -323638,6 +326932,15 @@
    "speech": "Nariz de pallaso",
    "source": "tpr.0_2.febreiro/s1/0_2.febreiro.s1.clown-nose/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_dfc6dc46_33",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "O can salta para coller a pelota.",
+   "speech": "O can salta para coller a pelota.",
+   "source": "escoita/valeria_gl",
+   "pack": false
   },
   {
    "id": "gl_tutor_dfd7f3e9_14",
@@ -324896,6 +328199,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_e37a81b5_8",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "recoller",
+   "speech": "recoller",
+   "source": "escoita/valeria_gl",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_e37e8de9_63",
    "lang": "gl",
    "style": "tutor",
@@ -324932,6 +328244,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_e396fe55_4",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "bola",
+   "speech": "bola",
+   "source": "escoita/valeria_gl",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_e39e7700_66",
    "lang": "gl",
    "style": "tutor",
@@ -324947,6 +328268,15 @@
    "text": "Brazos adiante e atrás en vaivén",
    "speech": "Brazos adiante e atrás en vaivén",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_e3affcd7_13",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Logo comemos.",
+   "speech": "Logo comemos.",
+   "source": "escoita/valeria_gl",
    "pack": false
   },
   {
@@ -325454,6 +328784,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_e5677f37_29",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Sopramos para inflar o globo.",
+   "speech": "Sopramos para inflar o globo.",
+   "source": "escoita/valeria_gl",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_e569c0b9_75",
    "lang": "gl",
    "style": "tutor",
@@ -325928,6 +329267,15 @@
    "text": "Shhh... descansa agora, canciño. Durme.",
    "speech": "Shhh... descansa agora, canciño. Durme.",
    "source": "biblioteca/HIS-071/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_e6747319_15",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Isto é o globo.",
+   "speech": "Isto é o globo.",
+   "source": "escoita/valeria_gl",
    "pack": false
   },
   {
@@ -326480,6 +329828,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_e7f90c5c_26",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Logo aclarámonos con auga.",
+   "speech": "Logo aclarámonos con auga.",
+   "source": "escoita/valeria_gl",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_e7f93b46_44",
    "lang": "gl",
    "style": "tutor",
@@ -326531,6 +329888,15 @@
    "text": "Si! O paraugas! Un paraugas verde grande!",
    "speech": "Si! O paraugas! Un paraugas verde grande!",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_e825d56d_23",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "O globo ten unha corda.",
+   "speech": "O globo ten unha corda.",
+   "source": "escoita/valeria_gl",
    "pack": false
   },
   {
@@ -326786,6 +330152,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_e8d5f1c8_25",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Primeiro lavamos as mans.",
+   "speech": "Primeiro lavamos as mans.",
+   "source": "escoita/valeria_gl",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_e8dcad8b_55",
    "lang": "gl",
    "style": "tutor",
@@ -326921,6 +330296,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_e949265b_27",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "O paxaro ten moitas plumas.",
+   "speech": "O paxaro ten moitas plumas.",
+   "source": "escoita/valeria_gl",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_e94c6dd0_31",
    "lang": "gl",
    "style": "tutor",
@@ -327036,6 +330420,15 @@
    "speech": "Autocoidado",
    "source": "tpr.5_6.maio/s4/5_6.maio.s4.self-care/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_e9a2ff6f_3",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "man",
+   "speech": "man",
+   "source": "escoita/valeria_gl",
+   "pack": false
   },
   {
    "id": "gl_tutor_e9a423eb_17",
@@ -328606,6 +331999,15 @@
    "text": "Vestir o abrigo por pasos, nomeando cada peza sen pedir que repita.",
    "speech": "Vestir o abrigo por pasos, nomeando cada peza sen pedir que repita.",
    "source": "asamblea.segundo_ciclo.decembro.4_infantil/microRutina/objetivoAutonomia",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_ee5b817f_26",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "O can é brandiño e peludo.",
+   "speech": "O can é brandiño e peludo.",
+   "source": "escoita/valeria_gl",
    "pack": false
   },
   {
@@ -330481,6 +333883,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_f315d734_7",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "bañeira",
+   "speech": "bañeira",
+   "source": "escoita/valeria_gl",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_f31fb935_49",
    "lang": "gl",
    "style": "tutor",
@@ -330542,6 +333953,15 @@
    "speech": "Auga con burbullas",
    "source": "tpr.2_3.maio/s3/2_3.maio.s3.bubbly-water/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_f35e0610_7",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "xeonllo",
+   "speech": "xeonllo",
+   "source": "escoita/valeria_gl",
+   "pack": false
   },
   {
    "id": "gl_tutor_f3611822_43",
@@ -330607,12 +334027,39 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_f37aa20e_9",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "quero pan",
+   "speech": "quero pan",
+   "source": "escoita/valeria_gl",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_f381fccd_4",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "bota",
+   "speech": "bota",
+   "source": "escoita/valeria_gl",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_f383ae79_51",
    "lang": "gl",
    "style": "tutor",
    "text": "Lembras cando onte choveu moito? Como te sentiches?",
    "speech": "Lembras cando onte choveu moito? Como te sentiches?",
    "source": "curriculo/T3.U4.1/frasesAdulta/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_f3908e8f_8",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "almorzar",
+   "speech": "almorzar",
+   "source": "escoita/valeria_gl",
    "pack": false
   },
   {
@@ -331084,6 +334531,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_f517889d_6",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "parque",
+   "speech": "parque",
+   "source": "escoita/valeria_gl",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_f518ad15_34",
    "lang": "gl",
    "style": "tutor",
@@ -331172,6 +334628,15 @@
    "speech": "Graduación",
    "source": "tpr.5_6.xuno/s3/5_6.xuno.s3.graduation/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_f5744144_3",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "cae",
+   "speech": "cae",
+   "source": "escoita/valeria_gl",
+   "pack": false
   },
   {
    "id": "gl_tutor_f592e5d6_9",
@@ -331378,6 +334843,15 @@
    "text": "Mira: a ponte está rota. Un burato! Para, tren.",
    "speech": "Mira: a ponte está rota. Un burato! Para, tren.",
    "source": "biblioteca/HIS-056/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_f64e5bc5_18",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Isto é un plátano.",
+   "speech": "Isto é un plátano.",
+   "source": "escoita/valeria_gl",
    "pack": false
   },
   {
@@ -332389,6 +335863,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_f8ded2c5_6",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "bigote",
+   "speech": "bigote",
+   "source": "escoita/valeria_gl",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_f8dfebff_79",
    "lang": "gl",
    "style": "tutor",
@@ -333118,6 +336601,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_faf841b6_19",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Isto é un elefante.",
+   "speech": "Isto é un elefante.",
+   "source": "escoita/valeria_gl",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_fafdaaf2_17",
    "lang": "gl",
    "style": "tutor",
@@ -333730,6 +337222,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_fcdd889f_30",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "O gato ten uns bigotes longos.",
+   "speech": "O gato ten uns bigotes longos.",
+   "source": "escoita/valeria_gl",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_fcde9dc4_15",
    "lang": "gl",
    "style": "tutor",
@@ -333901,6 +337402,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_fd42bc61_4",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "come",
+   "speech": "come",
+   "source": "escoita/valeria_gl",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_fd488aeb_15",
    "lang": "gl",
    "style": "tutor",
@@ -333971,6 +337481,15 @@
    "speech": "Funil",
    "source": "tpr.0_2.maio/s1/0_2.maio.s1.funnel/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_fd7cd255_7",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "acender",
+   "speech": "acender",
+   "source": "escoita/valeria_gl",
+   "pack": false
   },
   {
    "id": "gl_tutor_fd7d7cd8_41",

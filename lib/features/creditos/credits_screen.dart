@@ -150,6 +150,13 @@ class _CreditsScreenState extends State<CreditsScreen> {
         'La licencia viaja en el paquete, en assets/fonts/OFL.txt.',
   );
 
+  static const _fredokaDesc = LocalizedString(
+    gl: 'The Fredoka Project Authors. SIL Open Font License 1.1. Os títulos, '
+        'como en Valeria. A licenza viaxa no paquete, en assets/fonts/OFL-Fredoka.txt.',
+    es: 'The Fredoka Project Authors. SIL Open Font License 1.1. Los títulos, '
+        'como en Valeria. La licencia viaja en el paquete, en assets/fonts/OFL-Fredoka.txt.',
+  );
+
   static const _imagesKicker = LocalizedString(
     gl: 'AS IMAXES',
     es: 'LAS IMÁGENES',
@@ -348,9 +355,19 @@ class _CreditsScreenState extends State<CreditsScreen> {
                   _Kicker(_typeKicker.resolve(currentLanguage)),
                   const SizedBox(height: AppTheme.spaceMd),
                   _GlassCard(
-                    child: _Entry(
-                      name: 'Nunito',
-                      detail: _nunitoDesc.resolve(currentLanguage),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        _Entry(
+                          name: 'Nunito',
+                          detail: _nunitoDesc.resolve(currentLanguage),
+                        ),
+                        const SizedBox(height: AppTheme.spaceMd),
+                        _Entry(
+                          name: 'Fredoka',
+                          detail: _fredokaDesc.resolve(currentLanguage),
+                        ),
+                      ],
                     ),
                   ),
                   const SizedBox(height: AppTheme.spaceXl),

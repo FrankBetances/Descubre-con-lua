@@ -19,6 +19,7 @@ import '../../steam/views/steam_do_ano_screen.dart';
 import '../../steam/views/steam_hub_screen.dart';
 import '../nomes_familias.dart';
 import '../widgets/selector_idade.dart';
+import 'xogos_escoita_screen.dart';
 import 'xogos_fogar_screen.dart';
 
 /// «Explorar»: los seis módulos de casa de un vistazo, con su nombre de casa.
@@ -154,6 +155,19 @@ class ExplorarFamiliasScreen extends StatelessWidget {
           audioService: audioService,
         ),
       ),
+      // O-20261119-8: los juegos de escucha y palabras de Valeria.
+      _Modulo(
+        clave: 'explorar_xogos_escoita',
+        icona: Icons.hearing_rounded,
+        nome: XogosEscoitaScreen.titulo,
+        di: const LocalizedString(
+            gl: 'Escoitar, sinalar e xogar', es: 'Escuchar, señalar y jugar'),
+        abrir: (_) => XogosEscoitaScreen(
+          language: language,
+          onLanguageChanged: onLanguageChanged,
+          audioService: audioService,
+        ),
+      ),
       _Modulo(
         clave: 'explorar_steam_do_ano',
         icona: Icons.biotech_rounded,
@@ -209,12 +223,17 @@ class ExplorarFamiliasScreen extends StatelessWidget {
                       ),
                     ),
                     const SizedBox(width: 12),
+                    // Con un número impar de módulos, la última fila lleva
+                    // un hueco en vez de salirse de la lista.
                     Expanded(
-                      child: _Tesela(
-                        modulo: modulos[i + 1],
-                        language: language,
-                        onTap: () => _abrir(context, modulos[i + 1].abrir),
-                      ),
+                      child: i + 1 < modulos.length
+                          ? _Tesela(
+                              modulo: modulos[i + 1],
+                              language: language,
+                              onTap: () =>
+                                  _abrir(context, modulos[i + 1].abrir),
+                            )
+                          : const SizedBox.shrink(),
                     ),
                   ],
                 ),

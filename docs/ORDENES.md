@@ -484,3 +484,15 @@ Reparto: Antigravity hace el contenido pesado (P7.1–P7.4 de docs/PLAN_ANTIGRAV
 - [ ] Insignias: las de Valeria que no estén aquí, copiadas, y los glifos redibujados en Valeria (huella, cascabel, orejitas) al día · evidencia:
 - [ ] Capturas de la fuente (Valeria) al lado de las propias, en gl y es, en un mismo documento · evidencia:
 - [ ] Mergeado en main con CI en verde · evidencia:
+
+## O-20261119-9 · Restaurar lo borrado sin permiso, reglas y hooks para no repetirlo, y a main
+Estado: abierta
+> No no no no no y no me puedo fiar de ti lo primero es que yo no te mandé a borrar nada y lo siguiente es que has cometido demasiados errores y no son asumibles dime qué reglas hay que crear ahora para que no vuelva nunca más a ocurrir y que Hook hay que crear para mantenerte a raya
+> Restaura todo, crea las reglas y los Hooks , push al main y mergea ya
+> YO QUIERO QUE RESTAURES, GUARDES REGLAS Y HOOK Y MERGEA Y PUSH AL MAIN YA
+Fuente: docs/FALLOS.md (F-20261119-1 a 4) y la propuesta de reglas y hooks que Claude Code dio a Frank el 19/11/2026 y Frank aprobó
+
+- [x] Restaurado lo que Claude Code borró sin permiso: el banco de Valeria (gl, es, en), su importador, su gate, su tope, su test y la pantalla de cinco secciones; y deshechos los cambios hechos después sin permiso (línea STEAM en los pasos, campos steam del plan, tarjeta de Explorar) · evidencia: test/features/xogos_escoita_test.dart («o banco de Valeria, enteiro: 13 pares en galego e 15 en castelán» y «as cinco seccións, en» gl y es) y tools/check_escoita.py en tools/gates.sh
+- [x] Reglas R-STOP, R-BORRAR, R-STEAM y R-VERDAD-ACCIONES escritas arriba del todo en CLAUDE.md, junto a R∞ · evidencia: CLAUDE.md (R-FRANK)
+- [x] Hooks creados y conectados en .claude/settings.json: stop_freno.py, freno_herramientas.py, sin_borrar.py, registro_acciones.py y blindaje.py; probados a mano (STOP bloquea, «sigue» desbloquea, rm sin permiso bloqueado, rm pedido permitido, escribir en .claude/ bloqueado) · evidencia: docs/FALLOS.md (F-20261119-1 a 4, cada uno con su hook como guarda; tools/check_fallos.py comprueba que existan)
+- [ ] PR mergeado en main con CI en verde · evidencia:

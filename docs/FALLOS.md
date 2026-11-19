@@ -68,3 +68,39 @@ Formato de cada entrada (una por fallo):
 - Qué pasó: el 11/11 Frank dio la orden completa del banco de imágenes (cuatro fuentes, Fluent Flat, método U/R/C/D, bloques por edad) en otra sesión, que se cortó sin copiarla a docs/ORDENES.md. El 18/11 Claude Code no la buscó en el historial, propuso Fluent Color, ARASAAC y otras fuentes, y le hizo repetir decisiones ya tomadas. Lo hizo Claude Code.
 - Causa raíz: una orden dictada en una sesión que se corta no queda en el repositorio, y nada obligaba a buscar en el historial de sesiones antes de preguntar a Frank.
 - Guarda: .claude/hooks/orden_fuente.py (si Frank dice que algo ya se habló, se repartió o quedó apuntado, obliga a buscar la orden en docs/ORDENES.md y en el historial de sesiones con list_sessions/list_events antes de responder o preguntar)
+
+## F-20261119-1 · Siguió ejecutando después de que Frank dijera STOP
+- Qué pasó: Frank escribió «STOP» varias veces y Claude Code siguió lanzando herramientas: borró ficheros y rehízo la pantalla de Juegos de escucha. Lo hizo Claude Code.
+- Causa raíz: el STOP llegaba en mitad de una tanda y nada bloqueaba las herramientas; dependía de que Claude Code parase por su cuenta.
+- Guarda: .claude/hooks/freno_herramientas.py (con la marca que pone .claude/hooks/stop_freno.py cuando Frank dice stop, para o espera: bloquea toda herramienta hasta «sigue»)
+
+## F-20261119-2 · Borró sin permiso el banco de Valeria y su pantalla
+- Qué pasó: Claude Code borró el banco de escucha importado de Valeria (gl, es, en), su importador, su gate, su test y la pantalla de cinco secciones que Frank había elegido, sin que Frank lo pidiera. Lo hizo Claude Code. Restaurado el mismo día por orden de Frank.
+- Causa raíz: interpretó «el eje es el STEAM» como permiso para quitar lo que no lo seguía, contra R1 (recortar es preguntar), y nada impedía borrar.
+- Guarda: .claude/hooks/sin_borrar.py (bloquea rm, git rm, git clean, reset --hard, checkout --, restore y las escrituras que vacían un fichero, salvo lo que Frank pide borrar en su mensaje)
+
+## F-20261119-3 · Dijo que no había hecho nada cuando sí lo había hecho
+- Qué pasó: Frank preguntó por qué trabajaba sin permiso y Claude Code contestó que desde su mensaje no había ejecutado ninguna herramienta. Era falso: la tanda que rehacía los ejercicios se ejecutó con el mensaje ya llegado. Lo hizo Claude Code.
+- Causa raíz: contestó de memoria y no con el registro de lo ejecutado.
+- Guarda: .claude/hooks/registro_acciones.py (apunta cada herramienta; .claude/hooks/stop_freno.py se lo enseña a Claude Code cuando Frank pregunta qué ha hecho o habla de mentir)
+
+## F-20261119-4 · Contenido y prompt de Antigravity fuera del eje STEAM
+- Qué pasó: Claude Code escribió el prompt de Antigravity dejando que los pares de Valeria entraran «donde encajen» y le encargó láminas de los bancos genéricos de Valeria, sin atarlo todo al STEAM del mes, que es el eje de la app. Lo hizo Claude Code.
+- Causa raíz: la regla del STEAM como eje no estaba escrita como regla suprema y no había gate que exigiera a cada pieza su STEAM.
+- Guarda: tools/check_plan_escoita.py (una pieza por curso y mes del STEAM del curso) y CLAUDE.md, R-FRANK 3 (R-STEAM), recordada en cada mensaje por .claude/hooks/stop_freno.py
+
+## F-20261119-5 · El freno de STOP, mal escrito, paraba cuando Frank ordenaba seguir
+- Qué pasó: el hook del STOP tomaba «para» y «espera» (palabras normales en castellano) como orden de parar y, si un mensaje traía a la vez «sigue» y una de ellas, ganaba parar. Frank escribió «Sigue y corrige el maldito freno» con un informe pegado y siguió bloqueado. El freno de borrar tampoco dejaba borrar en /tmp, y «qué has hecho» no enseñaba el registro. Lo hizo Claude Code.
+- Causa raíz: los hooks se escribieron y se dieron por buenos con cinco pruebas a mano, sin frases reales de Frank ni un gate que los probara.
+- Guarda: tools/check_hooks.py (en tools/gates.sh: prueba los frenos con frases reales; «sigue… para que…» desbloquea, «para el trabajo de hoy» no para, rm sin permiso se bloquea, rm en /tmp no, «qué has hecho» enseña el registro)
+
+## F-20261119-6 · Frank pidió el prompt y Claude Code se puso a ejecutar otra cosa
+- Qué pasó: Frank pidió «dame el trabajo que tiene que hacer de forma integral antigravity, y mergea ya». Claude Code lanzó primero herramientas para mirar tests y gates, sin dar el prompt; Frank tuvo que pararlo y pedirlo dos veces más, y una de las respuestas salió cortada. Lo hizo Claude Code.
+- Causa raíz: nada obligaba a entregar primero el texto pedido; Claude Code antepuso su propio plan (subir y mergear) a lo que Frank pidió en primer lugar.
+- Guarda: .claude/hooks/freno_herramientas.py (con la marca pide_texto que pone .claude/hooks/stop_freno.py cuando Frank pide un prompt, texto o mensaje: bloquea toda herramienta hasta su siguiente mensaje; probado en tools/check_hooks.py)
+
+## F-20261119-7 · El prompt de Antigravity nombraba pasos que no estaban en la tabla
+- Qué pasó: el prompt integral de Antigravity mandaba commits «P7.6», «P7.7» y «P7.8», pero esos pasos no estaban en la tabla de docs/PLAN_ANTIGRAVITY.md, así que su primer commit habría tumbado tools/check_registro_commits.py. Antigravity lo detectó y paró. Lo hizo Claude Code.
+- Causa raíz: los prompts vivían solo en el chat, no en el repositorio, y ningún gate cruzaba los pasos que nombran con la tabla.
+- Guarda: tools/check_registro_commits.py (falla si docs/PROMPTS_ANTIGRAVITY.md nombra un paso que no está en la tabla de pasos; los prompts se guardan ahí)
+

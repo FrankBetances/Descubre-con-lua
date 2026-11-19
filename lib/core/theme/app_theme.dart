@@ -121,6 +121,10 @@ class AppTheme {
 
   static const String fontFamily = 'Nunito';
 
+  /// O-20261119-8: los títulos en Fredoka, redonda y amable, como en Valeria
+  /// (src/ui/fonts.ts: Fredoka para títulos, Nunito para texto).
+  static const String fontTitulos = 'Fredoka';
+
   // -------------------------------------------------------------- sombras
   /// Sombra de tarjeta. Suave y neutra: la tarjeta se separa del fondo sin
   /// pesar.
@@ -198,36 +202,42 @@ class AppTheme {
       fontFamily: fontFamily,
       textTheme: const TextTheme(
         headlineLarge: TextStyle(
+          fontFamily: fontTitulos,
           fontSize: 30.0,
           fontWeight: FontWeight.w800,
           color: textPrimary,
           height: 1.25,
         ),
         headlineMedium: TextStyle(
+          fontFamily: fontTitulos,
           fontSize: 24.0,
           fontWeight: FontWeight.w800,
           color: textPrimary,
           height: 1.3,
         ),
         headlineSmall: TextStyle(
+          fontFamily: fontTitulos,
           fontSize: 20.0,
           fontWeight: FontWeight.w700,
           color: textPrimary,
           height: 1.35,
         ),
         titleLarge: TextStyle(
+          fontFamily: fontTitulos,
           fontSize: 22.0,
           fontWeight: FontWeight.w800,
           color: textPrimary,
           height: 1.3,
         ),
         titleMedium: TextStyle(
+          fontFamily: fontTitulos,
           fontSize: 18.0,
           fontWeight: FontWeight.w700,
           color: textPrimary,
           height: 1.35,
         ),
         titleSmall: TextStyle(
+          fontFamily: fontTitulos,
           fontSize: 16.0,
           fontWeight: FontWeight.w700,
           color: textPrimary,
@@ -272,7 +282,7 @@ class AppTheme {
         centerTitle: false,
         titleSpacing: 4,
         titleTextStyle: const TextStyle(
-          fontFamily: fontFamily,
+          fontFamily: fontTitulos,
           fontSize: 20.0,
           fontWeight: FontWeight.w800,
           color: Colors.white,
