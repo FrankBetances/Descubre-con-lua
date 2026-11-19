@@ -191,7 +191,7 @@ run_gate "manual PDF and Word match their source" python3 tools/check_manual_bui
 run_gate "legal pages are what Play Console declares" python3 tools/check_legal_urls.py --offline
 run_gate "every scene has its image (O-20261111-1)" python3 tools/check_imagenes_escenas.py
 run_gate "allowed image banks, pinned SHAs, licences and credits (O-20261111-4)" python3 tools/check_banco_laminas.py
-run_gate "every taught piece has its own picture (O-20261111-2)" python3 tools/check_laminas_leccion.py --resumo
+run_gate "every taught piece has its own picture (O-20261111-2)" python3 tools/check_laminas_leccion.py --resumo --tope-tpr
 
 # --------------------------------------------------------------- binary gates
 if [[ $FAST -eq 0 ]]; then
