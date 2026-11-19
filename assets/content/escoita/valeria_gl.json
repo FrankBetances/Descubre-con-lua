@@ -33,7 +33,7 @@
    },
    "b": {
     "palabra": "lei",
-    "lamina": null
+    "lamina": "pal_law"
    },
    "fonema": "r̄ → l",
    "pista": "Punta da lingua arriba, e que trema.",
@@ -44,11 +44,11 @@
    "id": "gl-casa-caza",
    "a": {
     "palabra": "casa",
-    "lamina": null
+    "lamina": "pal_house"
    },
    "b": {
     "palabra": "caza",
-    "lamina": null
+    "lamina": "pal_hunt"
    },
    "fonema": "s → θ",
    "pista": "Dentes xuntos, sorriso, e a serpe sopra por detrás: sss.",
@@ -94,7 +94,7 @@
    },
    "b": {
     "palabra": "bota",
-    "lamina": null
+    "lamina": "pal_boot"
    },
    "fonema": "k → t",
    "pista": "Boca moi aberta de león: a lingua vaise soa para atrás.",
@@ -135,11 +135,11 @@
    "id": "gl-xoia-soia",
    "a": {
     "palabra": "xoia",
-    "lamina": null
+    "lamina": "pal_jewel"
    },
    "b": {
     "palabra": "soia",
-    "lamina": null
+    "lamina": "pal_soy"
    },
    "fonema": "ʃ → s",
    "pista": "Bico de peixe cos beizos e a lingua recuada: xxx, non sss.",
@@ -150,7 +150,7 @@
    "id": "gl-oso-aberto",
    "a": {
     "palabra": "óso",
-    "lamina": null
+    "lamina": "pal_bone"
    },
    "b": {
     "palabra": "oso",
@@ -165,11 +165,11 @@
    "id": "gl-bola-aberta",
    "a": {
     "palabra": "bóla",
-    "lamina": null
+    "lamina": "pal_bun"
    },
    "b": {
     "palabra": "bola",
-    "lamina": null
+    "lamina": "pal_ball"
    },
    "fonema": "ɔ → o",
    "pista": "Boca máis aberta e queixo máis baixo: bóóóla.",
@@ -184,7 +184,7 @@
    },
    "b": {
     "palabra": "pala",
-    "lamina": null
+    "lamina": "pal_shovel"
    },
    "fonema": "ʎ → l",
    "pista": "Pega toda a lingua ao paladar e deixa saír o aire polos lados: lla.",
@@ -350,7 +350,7 @@
    "fases": [
     {
      "palabra": "auga",
-     "lamina": null,
+     "lamina": "pal_water",
      "tipo": "concepto",
      "frase": "Isto é a auga.",
      "accion": "Mollade un dedo en auga real e tocádevos a man notando o frío mentres dicides “auga”."
@@ -391,7 +391,7 @@
     },
     {
      "palabra": "vagón",
-     "lamina": null,
+     "lamina": "pal_wagon",
      "tipo": "parte",
      "frase": "O tren leva moitos vagóns.",
      "accion": "Poñede en fila tres caixas ou coxíns coma vagóns e enganchádeos dicindo “vagón” en cada un."
@@ -432,7 +432,7 @@
     },
     {
      "palabra": "voa",
-     "lamina": null,
+     "lamina": "pal_fly",
      "tipo": "accion",
      "frase": "O paxaro voa polo ceo.",
      "accion": "Abride os brazos coma ás e dade unha volta polo cuarto “voando” ao dicir “voa”."
@@ -473,7 +473,7 @@
     },
     {
      "palabra": "torrado",
-     "lamina": null,
+     "lamina": "pal_toast",
      "tipo": "cualidad",
      "frase": "O pan está torrado.",
      "accion": "Comparade unha rebanda branda e unha torrada tocándoas: a torrada crequena ao apertala."
@@ -656,13 +656,13 @@
    "voltas": [
     {
      "palabra": "meter",
-     "lamina": null,
+     "lamina": "pal_put_in",
      "frase": "Os xoguetes van á súa casa, dentro da caixa. Que facemos?",
      "accion": "A nena mete un xoguete na caixa con cada palabra; celebrade o último cun “todos dentro!”."
     },
     {
      "palabra": "sacar",
-     "lamina": null,
+     "lamina": "pal_take_out",
      "frase": "Agora ao revés. Que facemos cos xoguetes da caixa?",
      "accion": "A nena saca os xoguetes un a un; contádeos en fila ao saír: “un, dous e tres fóra!”."
     }
@@ -689,13 +689,13 @@
     },
     {
      "palabra": "vestir",
-     "lamina": null,
+     "lamina": "pal_get_dressed",
      "frase": "Logo vestímonos.",
      "accion": "Pasa unha camiseta pola cabeza do neno e celebrádeo ao asomar."
     },
     {
      "palabra": "almorzar",
-     "lamina": null,
+     "lamina": "pal_breakfast",
      "frase": "Ao final almorzamos.",
      "accion": "Simulade xuntos que bebedes un vaso de leite coas dúas mans."
     }
@@ -714,7 +714,7 @@
     },
     {
      "palabra": "sentar",
-     "lamina": null,
+     "lamina": "pal_sit_down",
      "frase": "Despois sentamos á mesa.",
      "accion": "Sentádevos xuntos en dúas cadeiras, un fronte ao outro."
     },
@@ -739,7 +739,7 @@
    "items": [
     {
      "palabra": "zapatos",
-     "lamina": null,
+     "lamina": "pal_shoes",
      "frase": "Primeiro poñemos os zapatos.",
      "accion": "Sinalade os zapatos do neno e tocádeos xuntos."
     },
@@ -757,7 +757,7 @@
     },
     {
      "palabra": "casa",
-     "lamina": null,
+     "lamina": "pal_house",
      "frase": "Ao final volvemos á casa.",
      "accion": "Xuntade as mans sobre a cabeza formando un tellado."
     }
@@ -770,7 +770,7 @@
    "items": [
     {
      "palabra": "bañeira",
-     "lamina": null,
+     "lamina": "pal_bathtub",
      "frase": "Primeiro metémonos na bañeira.",
      "accion": "Levantade xuntos unha perna coma se entrasedes na bañeira."
     },
@@ -782,13 +782,13 @@
     },
     {
      "palabra": "auga",
-     "lamina": null,
+     "lamina": "pal_water",
      "frase": "Logo aclarámonos con auga.",
      "accion": "Deixade caer os dedos sobre a cabeza do neno coma pingas."
     },
     {
      "palabra": "toalla",
-     "lamina": null,
+     "lamina": "pal_towel",
      "frase": "Ao final secámonos coa toalla.",
      "accion": "Envolvede o neno nunha toalla (ou nos teus brazos) e secádeo."
     }
@@ -801,7 +801,7 @@
    "items": [
     {
      "palabra": "pixama",
-     "lamina": null,
+     "lamina": "pal_pajamas",
      "frase": "Primeiro poñemos o pixama.",
      "accion": "Sinalade o pixama do neno e tocade os botóns xuntos."
     },
@@ -938,7 +938,7 @@
     },
     {
      "palabra": "barco",
-     "lamina": null,
+     "lamina": "pal_boat",
      "frase": "Isto é un barco.",
      "accion": "Sentade no chan e abaneádevos coma se o barco subise e baixase coas ondas."
     },
@@ -950,7 +950,7 @@
     },
     {
      "palabra": "camión",
-     "lamina": null,
+     "lamina": "pal_truck",
      "frase": "Isto é un camión.",
      "accion": "Cargade tres xoguetes nunha caixa e arrastrádea xuntos coma se fose o remolque."
     }
@@ -963,7 +963,7 @@
    "items": [
     {
      "palabra": "vermello",
-     "lamina": null,
+     "lamina": "pal_red",
      "frase": "Esta cor é vermella.",
      "accion": "Buscade xuntos tres cousas vermellas polo cuarto e tocádeas nomeando a cor."
     },
@@ -1006,7 +1006,7 @@
    "items": [
     {
      "palabra": "man",
-     "lamina": null,
+     "lamina": "pal_hand",
      "frase": "Isto é a man.",
      "accion": "Chocade as palmas tres veces, unha por cada golpe, mirándovos aos ollos."
     },
@@ -1024,7 +1024,7 @@
     },
     {
      "palabra": "ollo",
-     "lamina": null,
+     "lamina": "pal_eye",
      "frase": "Isto é o ollo.",
      "accion": "Xogade a taparvos os ollos e destapalos cun “cucú!” cada vez que dicides a palabra."
     },
