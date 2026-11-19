@@ -10,6 +10,7 @@ import '../../../core/localization/app_language.dart';
 import '../../../core/localization/localized_string.dart';
 import '../../../core/navigation/ruta_lua.dart';
 import '../../../core/theme/app_theme.dart';
+import '../../../core/widgets/movimiento.dart';
 import '../../../data/models/leccion_model.dart';
 import '../../criancas/criancas_store.dart';
 import '../../criancas/xogo_lua.dart';
@@ -96,44 +97,85 @@ class BannerUnidade extends StatelessWidget {
   });
 
   @override
-  Widget build(BuildContext context) => GestureDetector(
-        onTap: onContinuar,
-        child: Container(
-          key: const Key('learn_banner'),
-          padding: const EdgeInsets.all(16),
-          decoration: BoxDecoration(
-            color: DuoCores.verde,
-            borderRadius: BorderRadius.circular(12),
-          ),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(titulo,
-                  style: const TextStyle(
-                      fontSize: 19,
-                      fontWeight: FontWeight.w800,
-                      color: Colors.white)),
-              const SizedBox(height: 6),
-              Text(descricion,
-                  style: const TextStyle(
-                      fontSize: 15.5, height: 1.3, color: Colors.white)),
-              // En la fuente el botón va `hidden ... xl:flex`: en el móvil no
-              // sale, y la caja entera se toca.
-              if (onContinuar != null &&
-                  MediaQuery.sizeOf(context).width >= 600) ...[
-                const SizedBox(height: 12),
-                _BotonDuo(
-                  key: const Key('learn_banner_continuar'),
-                  texto: continuar,
-                  fondo: Colors.white,
-                  borde: const Color(0xFFD4D4D4),
-                  cor: DuoCores.textoVerde,
-                  onTap: onContinuar,
-                  icono: Icons.menu_book_rounded,
+  Widget build(BuildContext context) => Entrada(
+        child: Pulsable(
+          child: GestureDetector(
+            onTap: onContinuar,
+            child: Container(
+              key: const Key('learn_banner'),
+              clipBehavior: Clip.antiAlias,
+              decoration: BoxDecoration(
+                color: DuoCores.verde,
+                // O-20261119-7: el verde de siempre, que se oscurece hacia abajo; nunca más claro, para que el blanco pase AA.
+                gradient: const LinearGradient(
+                  begin: Alignment.topLeft,
+                  end: Alignment.bottomRight,
+                  colors: [DuoCores.verde, DuoCores.verdeBorde],
                 ),
-              ],
-            ],
+                borderRadius: BorderRadius.circular(16),
+                border: const Border(
+                    bottom: BorderSide(color: DuoCores.verdeBorde, width: 4)),
+              ),
+              child: Stack(
+                children: [
+                  // Dos lunas de adorno, sin texto ni toque.
+                  const Positioned(
+                      right: -26, top: -30, child: _Circulo(diametro: 110)),
+                  const Positioned(
+                      right: 46, bottom: -38, child: _Circulo(diametro: 70)),
+                  Padding(
+                    padding: const EdgeInsets.all(16),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(titulo,
+                            style: const TextStyle(
+                                fontSize: 19,
+                                fontWeight: FontWeight.w800,
+                                color: Colors.white)),
+                        const SizedBox(height: 6),
+                        Text(descricion,
+                            style: const TextStyle(
+                                fontSize: 15.5,
+                                height: 1.3,
+                                color: Colors.white)),
+                        // En la fuente el botón va `hidden ... xl:flex`: en el móvil no
+                        // sale, y la caja entera se toca.
+                        if (onContinuar != null &&
+                            MediaQuery.sizeOf(context).width >= 600) ...[
+                          const SizedBox(height: 12),
+                          _BotonDuo(
+                            key: const Key('learn_banner_continuar'),
+                            texto: continuar,
+                            fondo: Colors.white,
+                            borde: const Color(0xFFD4D4D4),
+                            cor: DuoCores.textoVerde,
+                            onTap: onContinuar,
+                            icono: Icons.menu_book_rounded,
+                          ),
+                        ],
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+            ),
           ),
+        ),
+      );
+}
+
+class _Circulo extends StatelessWidget {
+  final double diametro;
+  const _Circulo({required this.diametro});
+
+  @override
+  Widget build(BuildContext context) => Container(
+        width: diametro,
+        height: diametro,
+        decoration: const BoxDecoration(
+          shape: BoxShape.circle,
+          color: Color(0x1FFFFFFF),
         ),
       );
 }
@@ -163,41 +205,43 @@ class _BotonDuo extends StatelessWidget {
     final off = onTap == null;
     return Semantics(
       button: true,
-      child: GestureDetector(
-        onTap: onTap,
-        child: Container(
-          width: ancho ? double.infinity : null,
-          constraints: const BoxConstraints(minHeight: 48),
-          padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 10),
-          decoration: BoxDecoration(
-            color: off ? DuoCores.bloqueado : fondo,
-            borderRadius: BorderRadius.circular(14),
-            border: Border(
-              bottom: BorderSide(
-                  color: off ? DuoCores.bloqueadoBorde : borde, width: 4),
-              top: BorderSide(color: off ? DuoCores.bloqueado : borde),
-              left: BorderSide(color: off ? DuoCores.bloqueado : borde),
-              right: BorderSide(color: off ? DuoCores.bloqueado : borde),
-            ),
-          ),
-          child: Row(
-            mainAxisSize: ancho ? MainAxisSize.max : MainAxisSize.min,
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              if (icono != null) ...[
-                Icon(icono, color: off ? Colors.white : cor, size: 20),
-                const SizedBox(width: 8),
-              ],
-              Flexible(
-                child: Text(texto.toUpperCase(),
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                        fontSize: 15,
-                        letterSpacing: 0.6,
-                        fontWeight: FontWeight.w900,
-                        color: off ? Colors.white : cor)),
+      child: Pulsable(
+        child: GestureDetector(
+          onTap: onTap,
+          child: Container(
+            width: ancho ? double.infinity : null,
+            constraints: const BoxConstraints(minHeight: 48),
+            padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 10),
+            decoration: BoxDecoration(
+              color: off ? DuoCores.bloqueado : fondo,
+              borderRadius: BorderRadius.circular(14),
+              border: Border(
+                bottom: BorderSide(
+                    color: off ? DuoCores.bloqueadoBorde : borde, width: 4),
+                top: BorderSide(color: off ? DuoCores.bloqueado : borde),
+                left: BorderSide(color: off ? DuoCores.bloqueado : borde),
+                right: BorderSide(color: off ? DuoCores.bloqueado : borde),
               ),
-            ],
+            ),
+            child: Row(
+              mainAxisSize: ancho ? MainAxisSize.max : MainAxisSize.min,
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                if (icono != null) ...[
+                  Icon(icono, color: off ? Colors.white : cor, size: 20),
+                  const SizedBox(width: 8),
+                ],
+                Flexible(
+                  child: Text(texto.toUpperCase(),
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                          fontSize: 15,
+                          letterSpacing: 0.6,
+                          fontWeight: FontWeight.w900,
+                          color: off ? Colors.white : cor)),
+                ),
+              ],
+            ),
           ),
         ),
       ),
@@ -256,7 +300,8 @@ class CaminoNodos extends StatelessWidget {
                 key: const Key('learn_lua'),
                 left: c.maxWidth / 2 + 28,
                 top: 96,
-                child: lua!,
+                // O-20261119-7: Lúa entra, y salta si se la toca.
+                child: Entrada(orden: 6, child: SaltoLua(child: lua!)),
               ),
             SizedBox(
               width: double.infinity,
@@ -275,17 +320,20 @@ class CaminoNodos extends StatelessWidget {
                           right: sangria(i) > 0 ? 2 * sangria(i) : 0,
                           left: sangria(i) < 0 ? -2 * sangria(i) : 0,
                         ),
-                        child: _Nodo(
-                          key: ValueKey('learn_nodo_$i'),
-                          etiqueta: etiquetas[i],
-                          estado: i < actual || (i == actual && feitoHoxe)
-                              ? EstadoNodo.feito
-                              : i == actual
-                                  ? EstadoNodo.actual
-                                  : EstadoNodo.bloqueado,
-                          ultimo: i == etiquetas.length - 1,
-                          empezar: empezar,
-                          onTap: () => onNodo(i),
+                        child: Entrada(
+                          orden: i + 1,
+                          child: _Nodo(
+                            key: ValueKey('learn_nodo_$i'),
+                            etiqueta: etiquetas[i],
+                            estado: i < actual || (i == actual && feitoHoxe)
+                                ? EstadoNodo.feito
+                                : i == actual
+                                    ? EstadoNodo.actual
+                                    : EstadoNodo.bloqueado,
+                            ultimo: i == etiquetas.length - 1,
+                            empezar: empezar,
+                            onTap: () => onNodo(i),
+                          ),
                         ),
                       ),
                     ),
@@ -345,67 +393,73 @@ class _Nodo extends StatelessWidget {
     return Semantics(
       button: true,
       label: etiqueta,
-      child: GestureDetector(
-        behavior: HitTestBehavior.opaque,
-        onTap: onTap,
-        child: ConstrainedBox(
-          constraints: const BoxConstraints(minWidth: 88, minHeight: 48),
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              if (estado == EstadoNodo.actual)
-                SizedBox(
-                  width: 88,
-                  height: 116,
-                  child: Stack(
-                    alignment: Alignment.center,
-                    clipBehavior: Clip.none,
-                    children: [
-                      const Positioned(
-                        top: 28,
-                        child: SizedBox(
-                          width: 88,
-                          height: 88,
-                          child: CircularProgressIndicator(
-                            value: 0,
-                            strokeWidth: 8,
-                            backgroundColor: DuoCores.trilla,
-                            color: DuoCores.verdeClaro,
+      child: Pulsable(
+        child: GestureDetector(
+          behavior: HitTestBehavior.opaque,
+          onTap: onTap,
+          child: ConstrainedBox(
+            constraints: const BoxConstraints(minWidth: 88, minHeight: 48),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                if (estado == EstadoNodo.actual)
+                  SizedBox(
+                    width: 88,
+                    height: 116,
+                    child: Stack(
+                      alignment: Alignment.center,
+                      clipBehavior: Clip.none,
+                      children: [
+                        const Positioned(
+                          top: 28,
+                          child: SizedBox(
+                            width: 88,
+                            height: 88,
+                            child: CircularProgressIndicator(
+                              value: 0,
+                              strokeWidth: 8,
+                              backgroundColor: DuoCores.trilla,
+                              color: DuoCores.verdeClaro,
+                            ),
                           ),
                         ),
-                      ),
-                      Positioned(top: 42, child: boton),
-                      Positioned(
-                        top: 0,
-                        child: Container(
-                          key: const Key('learn_empezar'),
-                          padding: const EdgeInsets.symmetric(
-                              horizontal: 12, vertical: 8),
-                          decoration: BoxDecoration(
-                            color: Colors.white,
-                            borderRadius: BorderRadius.circular(12),
-                            border:
-                                Border.all(color: DuoCores.trilla, width: 2),
+                        // O-20261119-7: el de hoy late, para que se vea qué toca.
+                        Positioned(top: 42, child: Latido(child: boton)),
+                        Positioned(
+                          top: 0,
+                          child: Flotar(
+                            child: Container(
+                              key: const Key('learn_empezar'),
+                              padding: const EdgeInsets.symmetric(
+                                  horizontal: 12, vertical: 8),
+                              decoration: BoxDecoration(
+                                color: Colors.white,
+                                borderRadius: BorderRadius.circular(12),
+                                border: Border.all(
+                                    color: DuoCores.trilla, width: 2),
+                              ),
+                              child: Text(empezar.toUpperCase(),
+                                  style: const TextStyle(
+                                      fontWeight: FontWeight.w900,
+                                      letterSpacing: 0.6,
+                                      color: DuoCores.textoVerde)),
+                            ),
                           ),
-                          child: Text(empezar.toUpperCase(),
-                              style: const TextStyle(
-                                  fontWeight: FontWeight.w900,
-                                  letterSpacing: 0.6,
-                                  color: DuoCores.textoVerde)),
                         ),
-                      ),
-                    ],
-                  ),
-                )
-              else
-                boton,
-              const SizedBox(height: 2),
-              Text(etiqueta,
-                  style: TextStyle(
-                      fontSize: 13,
-                      fontWeight: FontWeight.w800,
-                      color: bloq ? AppTheme.textMuted : DuoCores.textoVerde)),
-            ],
+                      ],
+                    ),
+                  )
+                else
+                  boton,
+                const SizedBox(height: 2),
+                Text(etiqueta,
+                    style: TextStyle(
+                        fontSize: 13,
+                        fontWeight: FontWeight.w800,
+                        color:
+                            bloq ? AppTheme.textMuted : DuoCores.textoVerde)),
+              ],
+            ),
           ),
         ),
       ),
@@ -591,12 +645,20 @@ class _LeccionDuolingoScreenState extends State<LeccionDuolingoScreen> {
                   Expanded(
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(8),
-                      child: LinearProgressIndicator(
-                        key: const Key('leccion_progreso'),
-                        value: _fin ? 1 : (_i + 1) / total,
-                        minHeight: 16,
-                        backgroundColor: DuoCores.trilla,
-                        color: DuoCores.verde,
+                      // O-20261119-7: la barra corre hasta su sitio.
+                      child: TweenAnimationBuilder<double>(
+                        tween: Tween(end: _fin ? 1 : (_i + 1) / total),
+                        duration: movimientoQuieto(context)
+                            ? Duration.zero
+                            : const Duration(milliseconds: 450),
+                        curve: Curves.easeOutCubic,
+                        builder: (context, v, _) => LinearProgressIndicator(
+                          key: const Key('leccion_progreso'),
+                          value: v,
+                          minHeight: 16,
+                          backgroundColor: DuoCores.trilla,
+                          color: DuoCores.verde,
+                        ),
                       ),
                     ),
                   ),
@@ -604,15 +666,18 @@ class _LeccionDuolingoScreenState extends State<LeccionDuolingoScreen> {
               ),
             ),
             Expanded(
-              child: _fin
-                  ? _Fin(r: _r, lang: lang, nome: widget.crianza?.nome)
-                  : _PasoVista(
-                      paso: widget.pasos.isEmpty
-                          ? const PasoLeccion(titulo: '', texto: '')
-                          : widget.pasos[_i],
-                      lang: lang,
-                      audioService: widget.audioService,
-                    ),
+              child: _Transicion(
+                clave: _fin ? -1 : _i,
+                child: _fin
+                    ? _Fin(r: _r, lang: lang, nome: widget.crianza?.nome)
+                    : _PasoVista(
+                        paso: widget.pasos.isEmpty
+                            ? const PasoLeccion(titulo: '', texto: '')
+                            : widget.pasos[_i],
+                        lang: lang,
+                        audioService: widget.audioService,
+                      ),
+              ),
             ),
             // footer.tsx: la franja de abajo con el botón.
             Container(
@@ -639,6 +704,37 @@ class _LeccionDuolingoScreenState extends State<LeccionDuolingoScreen> {
   }
 }
 
+/// O-20261119-7: cada paso entra por la derecha y el anterior se va por la
+/// izquierda, como al pasar página. Con movimiento reducido, el paso cambia
+/// sin más.
+class _Transicion extends StatelessWidget {
+  final int clave;
+  final Widget child;
+  const _Transicion({required this.clave, required this.child});
+
+  @override
+  Widget build(BuildContext context) {
+    if (movimientoQuieto(context)) return child;
+    return AnimatedSwitcher(
+      duration: const Duration(milliseconds: 320),
+      switchInCurve: Curves.easeOutCubic,
+      switchOutCurve: Curves.easeInCubic,
+      transitionBuilder: (child, a) {
+        final entra = child.key == ValueKey(clave);
+        final desde = Offset(entra ? 0.35 : -0.35, 0);
+        return FadeTransition(
+          opacity: a,
+          child: SlideTransition(
+            position: Tween(begin: desde, end: Offset.zero).animate(a),
+            child: child,
+          ),
+        );
+      },
+      child: KeyedSubtree(key: ValueKey(clave), child: child),
+    );
+  }
+}
+
 class _PasoVista extends StatelessWidget {
   final PasoLeccion paso;
   final AppLanguage lang;
@@ -658,29 +754,35 @@ class _PasoVista extends StatelessWidget {
                   color: Color(0xFF334155))),
           const SizedBox(height: 24),
           if (paso.laminas.isNotEmpty) ...[
-            Wrap(
-              key: const Key('leccion_paso_laminas'),
-              alignment: WrapAlignment.center,
-              spacing: 8,
-              runSpacing: 8,
-              children: [
-                for (final l in paso.laminas)
-                  LaminaPalabra(
-                      clave: l.clave,
-                      significado: l.significado,
-                      lang: lang,
-                      ancho: paso.laminas.length == 1 ? 240 : 104),
-              ],
+            Entrada(
+              orden: 2,
+              child: Wrap(
+                key: const Key('leccion_paso_laminas'),
+                alignment: WrapAlignment.center,
+                spacing: 8,
+                runSpacing: 8,
+                children: [
+                  for (final l in paso.laminas)
+                    LaminaPalabra(
+                        clave: l.clave,
+                        significado: l.significado,
+                        lang: lang,
+                        ancho: paso.laminas.length == 1 ? 240 : 104),
+                ],
+              ),
             ),
             const SizedBox(height: 16),
           ],
           if (paso.peza case final p?) ...[
             if (p.lamina case final c?) ...[
-              Center(
-                child: LaminaPalabra(
-                    clave: c,
-                    significado: p.significado?.resolve(lang) ?? p.en,
-                    lang: lang),
+              Entrada(
+                orden: 2,
+                child: Center(
+                  child: LaminaPalabra(
+                      clave: c,
+                      significado: p.significado?.resolve(lang) ?? p.en,
+                      lang: lang),
+                ),
               ),
               const SizedBox(height: 16),
             ],
@@ -708,7 +810,9 @@ class _PasoVista extends StatelessWidget {
             const SizedBox(height: 20),
           ],
           if (paso.escena case final e?) ...[
-            ImaxeEscena(escena: e, lang: lang, ancho: 260),
+            Entrada(
+                orden: 2,
+                child: ImaxeEscena(escena: e, lang: lang, ancho: 260)),
             const SizedBox(height: 8),
             Text(e.resolve(lang),
                 key: const Key('leccion_paso_escena'),
@@ -737,11 +841,16 @@ class _Fin extends StatelessWidget {
   Widget build(BuildContext context) {
     final isGl = lang == AppLanguage.gl;
     final c = CatalogoLua.lido;
-    return ListView(
+    final lista = ListView(
       key: const Key('leccion_fin'),
       padding: const EdgeInsets.fromLTRB(24, 24, 24, 24),
       children: [
-        const Center(child: LuaValeria(ancho: 110, cara: CaraLua.love)),
+        // O-20261119-7: Lúa salta de alegría al llegar, y otra vez si se la
+        // toca.
+        const Center(
+            child: SaltoLua(
+                alEntrar: true,
+                child: LuaValeria(ancho: 120, cara: CaraLua.love))),
         const SizedBox(height: 16),
         Text(
           r?.xaXogouHoxe == true
@@ -758,31 +867,34 @@ class _Fin extends StatelessWidget {
               color: Color(0xFF334155)),
         ),
         const SizedBox(height: 20),
-        Row(
-          children: [
-            Expanded(
-              child: _Resultado(
-                key: const Key('leccion_fin_xp'),
-                titulo: 'Total XP',
-                valor: '${r?.xpGanado ?? 0}',
-                cor: DuoCores.laranxa,
-                texto: DuoCores.laranxaTexto,
-                icono: AwardGlyph.star,
+        Entrada(
+          orden: 2,
+          child: Row(
+            children: [
+              Expanded(
+                child: _Resultado(
+                  key: const Key('leccion_fin_xp'),
+                  titulo: 'Total XP',
+                  valor: r?.xpGanado ?? 0,
+                  cor: DuoCores.laranxa,
+                  texto: DuoCores.laranxaTexto,
+                  icono: AwardGlyph.star,
+                ),
               ),
-            ),
-            const SizedBox(width: 12),
-            Expanded(
-              // Donde duolingo-clone pone los corazones, la racha.
-              child: _Resultado(
-                key: const Key('leccion_fin_racha'),
-                titulo: isGl ? 'Racha' : 'Racha',
-                valor: '${r?.racha ?? 0}',
-                cor: DuoCores.rosa,
-                texto: DuoCores.rosaTexto,
-                icono: AwardGlyph.flame,
+              const SizedBox(width: 12),
+              Expanded(
+                // Donde duolingo-clone pone los corazones, la racha.
+                child: _Resultado(
+                  key: const Key('leccion_fin_racha'),
+                  titulo: isGl ? 'Racha' : 'Racha',
+                  valor: r?.racha ?? 0,
+                  cor: DuoCores.rosa,
+                  texto: DuoCores.rosaTexto,
+                  icono: AwardGlyph.flame,
+                ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
         if (r != null && c != null) ...[
           const SizedBox(height: 12),
@@ -795,7 +907,14 @@ class _Fin extends StatelessWidget {
                   color: AppTheme.textPrimary)),
           for (final i in r!.insigniasNovas) ...[
             const SizedBox(height: 14),
-            Center(child: PixelAward(glyph: i.glyph, tier: i.tier, size: 48)),
+            Entrada(
+                orden: 4,
+                desde: 30,
+                child: Center(
+                    child: Latido(
+                        escala: 1.1,
+                        child: PixelAward(
+                            glyph: i.glyph, tier: i.tier, size: 48)))),
             Text(i.nome.resolve(lang),
                 textAlign: TextAlign.center,
                 style: const TextStyle(fontWeight: FontWeight.w800)),
@@ -811,13 +930,29 @@ class _Fin extends StatelessWidget {
         ],
       ],
     );
+    // Confeti propio por encima, solo si la lección se acaba de completar.
+    if (r?.xaXogouHoxe == true) return lista;
+    return Stack(
+      children: [
+        lista,
+        const Positioned.fill(
+          child: Confeti(cores: [
+            DuoCores.verde,
+            DuoCores.laranxa,
+            DuoCores.rosa,
+            Color(0xFF1CB0F6),
+            Color(0xFFFFC800),
+          ]),
+        ),
+      ],
+    );
   }
 }
 
 /// `result-card.tsx`: la cabecera de color y el valor dentro.
 class _Resultado extends StatelessWidget {
   final String titulo;
-  final String valor;
+  final int valor;
   final Color cor;
   final Color texto;
   final AwardGlyph icono;
@@ -859,7 +994,8 @@ class _Resultado extends StatelessWidget {
                 children: [
                   PixelAward(glyph: icono, tier: AwardTier.gold, size: 26),
                   const SizedBox(width: 8),
-                  Text(valor,
+                  ContadorAnimado(
+                      valor: valor,
                       style: TextStyle(
                           fontSize: 20,
                           fontWeight: FontWeight.w900,

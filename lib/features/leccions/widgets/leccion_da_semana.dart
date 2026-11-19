@@ -8,6 +8,7 @@ import '../../../core/localization/app_language.dart';
 import '../../../core/localization/localized_string.dart';
 import '../../../core/navigation/ruta_lua.dart';
 import '../../../core/theme/app_theme.dart';
+import '../../../core/widgets/movimiento.dart';
 import '../../../core/widgets/espera_visible.dart';
 import '../../../data/models/conto_dialogado_model.dart';
 import '../../../data/models/hogar_model.dart';
@@ -1404,15 +1405,18 @@ class _LeccionFamiliaState extends State<LeccionFamilia> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   for (var i = 1; i <= leccion.dias.length; i++)
-                    _NodoDoDia(
-                      clave: 'leccion_dia_$i',
-                      icona: _iconas[(i - 1) % _iconas.length],
-                      dia: leccion.dias[i - 1].dia.resolve(lang),
-                      feito: i < hoxeN,
-                      hoxe: i == hoxeN,
-                      elixido: i == nDia,
-                      onTap: () =>
-                          setState(() => _diaElixido = i == hoxeN ? null : i),
+                    Entrada(
+                      orden: i,
+                      child: _NodoDoDia(
+                        clave: 'leccion_dia_$i',
+                        icona: _iconas[(i - 1) % _iconas.length],
+                        dia: leccion.dias[i - 1].dia.resolve(lang),
+                        feito: i < hoxeN,
+                        hoxe: i == hoxeN,
+                        elixido: i == nDia,
+                        onTap: () =>
+                            setState(() => _diaElixido = i == hoxeN ? null : i),
+                      ),
                     ),
                 ],
               ),
@@ -1627,56 +1631,65 @@ class _NodoDoDia extends StatelessWidget {
       selected: elixido,
       label: dia,
       excludeSemantics: true,
-      child: InkWell(
-        key: ValueKey(clave),
-        onTap: onTap,
-        borderRadius: BorderRadius.circular(30),
-        child: SizedBox(
-          width: 58,
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              Container(
-                width: 44,
-                height: 44,
-                alignment: Alignment.center,
-                decoration: BoxDecoration(
-                  shape: BoxShape.circle,
-                  border: Border.all(
-                    color: elixido ? acento : Colors.transparent,
-                    width: 3,
+      child: Pulsable(
+        child: InkWell(
+          key: ValueKey(clave),
+          onTap: onTap,
+          borderRadius: BorderRadius.circular(30),
+          child: SizedBox(
+            width: 58,
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                // O-20261119-7: el día de hoy late, como en casa.
+                if (hoxe && !feito)
+                  Latido(child: _circulo(acento, cor, canto, activo))
+                else
+                  _circulo(acento, cor, canto, activo),
+                const SizedBox(height: 4),
+                Text(
+                  dia.length > 3 ? dia.substring(0, 3) : dia,
+                  style: TextStyle(
+                    fontSize: 13,
+                    fontWeight: hoxe ? FontWeight.w800 : FontWeight.w600,
+                    color: hoxe ? acento : AppTheme.textSecondary,
                   ),
                 ),
-                child: Container(
-                  width: 36,
-                  height: 36,
-                  decoration: BoxDecoration(
-                    color: cor,
-                    shape: BoxShape.circle,
-                    border: Border(bottom: BorderSide(color: canto, width: 5)),
-                  ),
-                  child: Icon(
-                    feito ? Icons.check_rounded : icona,
-                    size: 22,
-                    color: activo ? Colors.white : const Color(0xFF9CA3AF),
-                  ),
-                ),
-              ),
-              const SizedBox(height: 4),
-              Text(
-                dia.length > 3 ? dia.substring(0, 3) : dia,
-                style: TextStyle(
-                  fontSize: 13,
-                  fontWeight: hoxe ? FontWeight.w800 : FontWeight.w600,
-                  color: hoxe ? acento : AppTheme.textSecondary,
-                ),
-              ),
-            ],
+              ],
+            ),
           ),
         ),
       ),
     );
   }
+
+  Widget _circulo(Color acento, Color cor, Color canto, bool activo) =>
+      Container(
+        width: 44,
+        height: 44,
+        alignment: Alignment.center,
+        decoration: BoxDecoration(
+          shape: BoxShape.circle,
+          border: Border.all(
+            color: elixido ? acento : Colors.transparent,
+            width: 3,
+          ),
+        ),
+        child: Container(
+          width: 36,
+          height: 36,
+          decoration: BoxDecoration(
+            color: cor,
+            shape: BoxShape.circle,
+            border: Border(bottom: BorderSide(color: canto, width: 5)),
+          ),
+          child: Icon(
+            feito ? Icons.check_rounded : icona,
+            size: 22,
+            color: activo ? Colors.white : const Color(0xFF9CA3AF),
+          ),
+        ),
+      );
 }
 
 /// La unidad de gramática de la semana, arriba y en grande (Frank,
