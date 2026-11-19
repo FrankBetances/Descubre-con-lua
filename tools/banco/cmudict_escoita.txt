@@ -36,41 +36,36 @@
 # OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 ball B AO1 L
-bat B AE1 T
 beat B IY1 T
 bee B IY1
-big B IH1 G
-bin B IH1 N
 bit B IH1 T
 bite B AY1 T
+blow B L OW1
 boat B OW1 T
 boom B UW1 M
 boot B UW1 T
-bowl B OW1 L
 boy B OY1
-bug B AH1 G
-bun B AH1 N
 bush B UH1 SH
 cap K AE1 P
 cat K AE1 T
 cold K OW1 L D
 cone K OW1 N
-cup K AH1 P
 dip D IH1 P
 dish D IH1 SH
 dot D AA1 T
-down D AW1 N
 eye AY1
 fan F AE1 N
 feet F IY1 T
+fill F IH1 L
 fish F IH1 SH
 flash F L AE1 SH
+full F UH1 L
 fun F AH1 N
 glow G L OW1
 gold G OW1 L D
 hat HH AE1 T
-jug JH AH1 G
-kite K AY1 T
+heap HH IY1 P
+hoop HH UW1 P
 lane L EY1 N
 lash L AE1 SH
 light L AY1 T
@@ -79,37 +74,39 @@ mix M IH1 K S
 nip N IH1 P
 pat P AE1 T
 pie P AY1
-pig P IH1 G
 pile P AY1 L
 pin P IH1 N
+pip P IH1 P
+pit P IH1 T
 plane P L EY1 N
-pole P OW1 L
 pot P AA1 T
-pup P AH1 P
 push P UH1 SH
 rail R EY1 L
-rain R EY1 N
 right R AY1 T
 sale S EY1 L
 scale S K EY1 L
+seat S IY1 T
 see S IY1
+set S EH1 T
 six S IH1 K S
 snip S N IH1 P
+soak S OW1 K
 soap S OW1 P
-soup S UW1 P
 spin S P IH1 N
 spot S P AA1 T
 sun S AH1 N
+talk T AO1 K
 tall T AO1 L
 tap T AE1 P
+taut T AO1 T
 tile T AY1 L
 tip T IH1 P
 tone T OW1 N
-town T AW1 N
 toy T OY1
 trail T R EY1 L
-train T R EY1 N
 van V AE1 N
 vet V EH1 T
 wet W EH1 T
+wide W AY1 D
+wood W UH1 D
 zoom Z UW1 M

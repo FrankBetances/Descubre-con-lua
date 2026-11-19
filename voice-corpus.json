@@ -1,14 +1,14 @@
 {
- "generatedAt": "2026-11-19T20:02:29Z",
- "entries": 38152,
+ "generatedAt": "2026-11-19T23:25:04Z",
+ "entries": 38175,
  "byStyle": {
-  "slow": 6016,
-  "tutor": 32136
+  "slow": 6018,
+  "tutor": 32157
  },
  "byLang": {
-  "en": 17297,
-  "es": 10428,
-  "gl": 10427
+  "en": 17299,
+  "es": 10439,
+  "gl": 10437
  },
  "corpus": [
   {
@@ -1503,6 +1503,15 @@
    "text": "Bead",
    "speech": "Bead",
    "source": "tpr.5_6.marzo/s1/5_6.marzo.s1.bead",
+   "pack": false
+  },
+  {
+   "id": "en_slow_07429627_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "taut",
+   "speech": "taut",
+   "source": "escoita/curso_3_4/4/taut",
    "pack": false
   },
   {
@@ -37701,6 +37710,15 @@
    "text": "utilise",
    "speech": "utilise",
    "source": "corpus/3957/lemma",
+   "pack": false
+  },
+  {
+   "id": "en_slow_b3cd0eef_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "hoop",
+   "speech": "hoop",
+   "source": "escoita/curso_2_3/3/hoop",
    "pack": false
   },
   {
@@ -159626,6 +159644,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_09b48899_6",
+   "lang": "es",
+   "style": "tutor",
+   "text": "llenar",
+   "speech": "llenar",
+   "source": "escoita/curso_3_4/8/fill/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_09baa056_36",
    "lang": "es",
    "style": "tutor",
@@ -164756,6 +164783,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_180188ca_13",
+   "lang": "es",
+   "style": "tutor",
+   "text": "poner la mesa",
+   "speech": "poner la mesa",
+   "source": "escoita/curso_3_4/7/set/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_18117f05_51",
    "lang": "es",
    "style": "tutor",
@@ -166248,6 +166284,15 @@
    "speech": "Frío y fresco",
    "source": "tpr.0_2.marzo/s4/0_2.marzo.s4.cold-and-fresh/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_1bb36bed_6",
+   "lang": "es",
+   "style": "tutor",
+   "text": "madera",
+   "speech": "madera",
+   "source": "escoita/curso_3_4/1/wood/significado",
+   "pack": false
   },
   {
    "id": "es_tutor_1bb68df4_61",
@@ -170667,6 +170712,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_2730f03a_7",
+   "lang": "es",
+   "style": "tutor",
+   "text": "asiento",
+   "speech": "asiento",
+   "source": "escoita/curso_3_4/7/seat/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_273311ab_25",
    "lang": "es",
    "style": "tutor",
@@ -172580,7 +172634,7 @@
    "style": "tutor",
    "text": "montón",
    "speech": "montón",
-   "source": "escoita/curso_3_4/2/pile/significado",
+   "source": "escoita/curso_2_3/3/heap/significado",
    "pack": false
   },
   {
@@ -173679,6 +173733,15 @@
    "text": "Esperar en silencio durante unos segundos después de hablar ayuda a que el niño tome la iniciativa comunicativa.",
    "speech": "Esperar en silencio durante unos segundos después de hablar ayuda a que el niño tome la iniciativa comunicativa.",
    "source": "academy.como_se_aprende_a_hablar.01/afirmaciones/afirmacion_01/enunciado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_30104397_6",
+   "lang": "es",
+   "style": "tutor",
+   "text": "hablar",
+   "speech": "hablar",
+   "source": "escoita/curso_3_4/4/talk/significado",
    "pack": false
   },
   {
@@ -175995,6 +176058,15 @@
    "text": "¡Tócate las rodillas y salta bien alto! ¡Ahora para!",
    "speech": "¡Tócate las rodillas y salta bien alto! ¡Ahora para!",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_366f248f_3",
+   "lang": "es",
+   "style": "tutor",
+   "text": "aro",
+   "speech": "aro",
+   "source": "escoita/curso_2_3/3/hoop/significado",
    "pack": false
   },
   {
@@ -185373,6 +185445,15 @@
    "text": "Un plato lleno encima de la mesa.",
    "speech": "Un plato lleno encima de la mesa.",
    "source": "curriculo/T3.U3.2/estructuras/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_4f3c74cd_7",
+   "lang": "es",
+   "style": "tutor",
+   "text": "trocito",
+   "speech": "trocito",
+   "source": "escoita/curso_2_3/5/bit/significado",
    "pack": false
   },
   {
@@ -198788,6 +198869,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_7381811c_5",
+   "lang": "es",
+   "style": "tutor",
+   "text": "ancha",
+   "speech": "ancha",
+   "source": "escoita/curso_3_4/1/wide/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_7389097c_6",
    "lang": "es",
    "style": "tutor",
@@ -208756,6 +208846,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_8f1f5442_5",
+   "lang": "es",
+   "style": "tutor",
+   "text": "mojar",
+   "speech": "mojar",
+   "source": "escoita/curso_2_3/7/soak/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_8f366a53_26",
    "lang": "es",
    "style": "tutor",
@@ -214623,6 +214722,15 @@
    "text": "Señala la cuchara SUCIA. ¿Cómo está esta? Dilo.",
    "speech": "Señala la cuchara SUCIA. ¿Cómo está esta? Dilo.",
    "source": "escoita/valeria_es",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_9e9390a4_9",
+   "lang": "es",
+   "style": "tutor",
+   "text": "palmadita",
+   "speech": "palmadita",
+   "source": "escoita/curso_2_3/9/pat/significado",
    "pack": false
   },
   {
@@ -238762,6 +238870,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_e0ee86d9_8",
+   "lang": "es",
+   "style": "tutor",
+   "text": "mordisco",
+   "speech": "mordisco",
+   "source": "escoita/curso_2_3/5/bite/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_e0eeebf0_24",
    "lang": "es",
    "style": "tutor",
@@ -255089,6 +255206,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_0d43ffc6_7",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "madeira",
+   "speech": "madeira",
+   "source": "escoita/curso_3_4/1/wood/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_0d474cd9_13",
    "lang": "gl",
    "style": "tutor",
@@ -256788,6 +256914,15 @@
    "speech": "Farol",
    "source": "tpr.0_2.decembro/s3/0_2.decembro.s3.lantern/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_11d984bf_5",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "falar",
+   "speech": "falar",
+   "source": "escoita/curso_3_4/4/talk/significado",
+   "pack": false
   },
   {
    "id": "gl_tutor_11d9dd67_32",
@@ -258810,6 +258945,15 @@
    "speech": "Devolver rodando",
    "source": "tpr.0_2.marzo/s3/0_2.marzo.s3.roll-back/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_16ca8ab2_6",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "encher",
+   "speech": "encher",
+   "source": "escoita/curso_3_4/8/fill/significado",
+   "pack": false
   },
   {
    "id": "gl_tutor_16cc2ef2_35",
@@ -270751,6 +270895,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_366f248f_3",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "aro",
+   "speech": "aro",
+   "source": "escoita/curso_2_3/3/hoop/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_3670bc24_48",
    "lang": "gl",
    "style": "tutor",
@@ -273618,7 +273771,7 @@
    "style": "tutor",
    "text": "morea",
    "speech": "morea",
-   "source": "escoita/curso_3_4/2/pile/significado",
+   "source": "escoita/curso_2_3/3/heap/significado",
    "pack": false
   },
   {
@@ -281711,6 +281864,15 @@
    "text": "Sen tradución. A acción é a tradución.",
    "speech": "Sen tradución. A acción é a tradución.",
    "source": "formacion.docente/paso/3/clave",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_54a27cc7_5",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "anaco",
+   "speech": "anaco",
+   "source": "escoita/curso_2_3/5/bit/significado",
    "pack": false
   },
   {
@@ -293396,6 +293558,15 @@
    "speech": "Tirar da corda",
    "source": "tpr.4_5.xuno/s1/4_5.xuno.s1.pull-up-the-rope/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_7381811c_5",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "ancha",
+   "speech": "ancha",
+   "source": "escoita/curso_3_4/1/wide/significado",
+   "pack": false
   },
   {
    "id": "gl_tutor_739650c4_9",
@@ -307687,6 +307858,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_999adb0b_12",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "poñer a mesa",
+   "speech": "poñer a mesa",
+   "source": "escoita/curso_3_4/7/set/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_999cee82_13",
    "lang": "gl",
    "style": "tutor",
@@ -311394,6 +311574,15 @@
    "text": "Cama grande! Lúa pequena!",
    "speech": "Cama grande! Lúa pequena!",
    "source": "biblioteca/HIS-022/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_a3c3ff7d_9",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "palmadiña",
+   "speech": "palmadiña",
+   "source": "escoita/curso_2_3/9/pat/significado",
    "pack": false
   },
   {
@@ -320527,6 +320716,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_bd186b4c_7",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "dentada",
+   "speech": "dentada",
+   "source": "escoita/curso_2_3/5/bite/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_bd1fcdb7_7",
    "lang": "gl",
    "style": "tutor",
@@ -325892,6 +326090,15 @@
    "speech": "Especial",
    "source": "tpr.3_4.xuno/s4/3_4.xuno.s4.special/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_ccbd36b7_6",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "asento",
+   "speech": "asento",
+   "source": "escoita/curso_3_4/7/seat/significado",
+   "pack": false
   },
   {
    "id": "gl_tutor_ccc0de55_30",
@@ -338928,7 +339135,7 @@
    "style": "tutor",
    "text": "mollar",
    "speech": "mollar",
-   "source": "escoita/curso_2_3/8/dip/significado",
+   "source": "escoita/curso_2_3/7/soak/significado",
    "pack": false
   },
   {
