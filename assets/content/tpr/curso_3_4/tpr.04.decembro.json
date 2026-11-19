@@ -33,7 +33,8 @@
           "tprAction": {
             "gl": "Quedar ríxidos coma o xeo",
             "es": "Quedarse rígidos como el hielo"
-          }
+          },
+          "lamina": "pal_ice"
         },
         {
           "id": "3_4.decembro.s1.snowman",
@@ -44,7 +45,8 @@
           "tprAction": {
             "gl": "Facer tres bólas no aire, unha enriba doutra",
             "es": "Hacer tres bolas en el aire, una encima de otra"
-          }
+          },
+          "lamina": "pal_snowman"
         },
         {
           "id": "3_4.decembro.s1.snowflake",
@@ -55,7 +57,8 @@
           "tprAction": {
             "gl": "Xirar un dedo no aire mentres baixa",
             "es": "Girar un dedo en el aire mientras baja"
-          }
+          },
+          "lamina": "pal_snowflake"
         },
         {
           "id": "3_4.decembro.s1.winter",
@@ -78,7 +81,8 @@
           "tprAction": {
             "gl": "Debuxar unha montaña grande no aire cos brazos",
             "es": "Dibujar una montaña grande en el aire con los brazos"
-          }
+          },
+          "lamina": "pal_mountain"
         },
         {
           "id": "3_4.decembro.s1.sledge",
@@ -89,7 +93,8 @@
           "tprAction": {
             "gl": "Sentar e baixar un monte imaxinario cos brazos arriba",
             "es": "Sentarse y bajar una montaña imaginaria con los brazos arriba"
-          }
+          },
+          "lamina": "pal_sledge"
         },
         {
           "id": "3_4.decembro.s1.shiver",
@@ -100,7 +105,8 @@
           "tprAction": {
             "gl": "Tremer todo o corpo coma se fixese moito frío",
             "es": "Temblar todo el cuerpo como si hiciera mucho frío"
-          }
+          },
+          "lamina": "pal_shiver"
         },
         {
           "id": "3_4.decembro.s1.slide",
@@ -133,7 +139,8 @@
           "tprAction": {
             "gl": "Lanzar unha bóla de neve imaxinaria moi suave",
             "es": "Lanzar una bola de nieve imaginaria muy suave"
-          }
+          },
+          "lamina": "pal_throw"
         },
         {
           "id": "3_4.decembro.s1.catch",
@@ -144,7 +151,8 @@
           "tprAction": {
             "gl": "Pechar as mans no aire coma se atrapásemos algo",
             "es": "Cerrar las manos en el aire como si atrapáramos algo"
-          }
+          },
+          "lamina": "pal_catch"
         },
         {
           "id": "3_4.decembro.s1.cold",
@@ -191,7 +199,8 @@
           "tprAction": {
             "gl": "Mover os pés coma se esvarasen, sen caer",
             "es": "Mover los pies como si resbalaran, sin caerse"
-          }
+          },
+          "lamina": "pal_slippery"
         },
         {
           "id": "3_4.decembro.s1.brrr-it-s-cold",
@@ -202,7 +211,8 @@
           "tprAction": {
             "gl": "Encoller os ombros e tremer dicindo «brrr»",
             "es": "Encoger los hombros y temblar diciendo «brrr»"
-          }
+          },
+          "lamina": "pal_brrr_it_s_cold"
         },
         {
           "id": "3_4.decembro.s1.let-s-build-a-snowman",
@@ -213,7 +223,8 @@
           "tprAction": {
             "gl": "Amasar bólas de neve imaxinarias entre todos",
             "es": "Amasar bolas de nieve imaginarias entre todos"
-          }
+          },
+          "lamina": "pal_let_s_build_a_snowman"
         },
         {
           "id": "3_4.decembro.s1.catch-the-snowflake",
@@ -224,7 +235,8 @@
           "tprAction": {
             "gl": "Estirar a man e pechala suave sobre unha folerpa",
             "es": "Estirar la mano y cerrarla suave sobre un copo"
-          }
+          },
+          "lamina": "pal_catch_the_snowflake"
         },
         {
           "id": "3_4.decembro.s1.in-the-snow",
@@ -235,7 +247,8 @@
           "tprAction": {
             "gl": "Camiñar levantando moito os pés coma na neve",
             "es": "Caminar levantando mucho los pies como en la nieve"
-          }
+          },
+          "lamina": "pal_in_the_snow"
         }
       ]
     },
@@ -279,7 +292,8 @@
           "tprAction": {
             "gl": "Abrir brazos e pernas en forma de estrela",
             "es": "Abrir brazos y piernas en forma de estrella"
-          }
+          },
+          "lamina": "pal_star"
         },
         {
           "id": "3_4.decembro.s2.gift",
@@ -290,7 +304,8 @@
           "tprAction": {
             "gl": "Entregar unha caixa imaxinaria coas dúas mans",
             "es": "Entregar una caja imaginaria con las dos manos"
-          }
+          },
+          "lamina": "pal_gift"
         },
         {
           "id": "3_4.decembro.s2.candle",
@@ -313,7 +328,8 @@
           "tprAction": {
             "gl": "Facer un lazo no aire cos dedos",
             "es": "Hacer un lazo en el aire con los dedos"
-          }
+          },
+          "lamina": "pal_ribbon"
         },
         {
           "id": "3_4.decembro.s2.tambourine",
@@ -324,7 +340,8 @@
           "tprAction": {
             "gl": "Tocar unha pandeireta imaxinaria ao pulso",
             "es": "Tocar una pandereta imaginaria al pulso"
-          }
+          },
+          "lamina": "pal_tambourine"
         },
         {
           "id": "3_4.decembro.s2.ring",
@@ -346,7 +363,8 @@
           "tprAction": {
             "gl": "Abrir e pechar os dedos moi rápido por riba da cabeza",
             "es": "Abrir y cerrar los dedos muy rápido por encima de la cabeza"
-          }
+          },
+          "lamina": "pal_twinkle"
         },
         {
           "id": "3_4.decembro.s2.wrap",
@@ -391,7 +409,8 @@
           "tprAction": {
             "gl": "Sinalar algo dourado ou amarelo brillante",
             "es": "Señalar algo dorado o amarillo brillante"
-          }
+          },
+          "lamina": "pal_golden"
         },
         {
           "id": "3_4.decembro.s2.silver",
@@ -402,7 +421,8 @@
           "tprAction": {
             "gl": "Sinalar algo prateado que reluza",
             "es": "Señalar algo plateado que reluzca"
-          }
+          },
+          "lamina": "pal_silver"
         },
         {
           "id": "3_4.decembro.s2.beautiful",
@@ -424,7 +444,8 @@
           "tprAction": {
             "gl": "Abrir moito os ollos e a boca con sorpresa",
             "es": "Abrir mucho los ojos y la boca con sorpresa"
-          }
+          },
+          "lamina": "pal_surprised"
         },
         {
           "id": "3_4.decembro.s2.merry-christmas",
@@ -435,7 +456,8 @@
           "tprAction": {
             "gl": "Abrir os brazos e desexar bo Nadal ao grupo",
             "es": "Abrir los brazos y desear feliz Navidad al grupo"
-          }
+          },
+          "lamina": "pal_merry_christmas"
         },
         {
           "id": "3_4.decembro.s2.ring-bells",
@@ -468,7 +490,8 @@
           "tprAction": {
             "gl": "Estirarse de puntas ata tocar unha estrela imaxinaria",
             "es": "Estirarse de puntillas hasta tocar una estrella imaginaria"
-          }
+          },
+          "lamina": "pal_up_to_the_star"
         }
       ]
     },
@@ -500,7 +523,8 @@
           "tprAction": {
             "gl": "Debuxar unha lúa redonda no aire",
             "es": "Dibujar una luna redonda en el aire"
-          }
+          },
+          "lamina": "pal_moon"
         },
         {
           "id": "3_4.decembro.s3.bed",
@@ -511,7 +535,8 @@
           "tprAction": {
             "gl": "Xuntar as mans baixo a meixela coma unha cama",
             "es": "Juntar las manos bajo la mejilla como una cama"
-          }
+          },
+          "lamina": "pal_bed"
         },
         {
           "id": "3_4.decembro.s3.pillow",
@@ -522,7 +547,8 @@
           "tprAction": {
             "gl": "Afundir a cabeza nunha almofada imaxinaria",
             "es": "Hundir la cabeza en una almohada imaginaria"
-          }
+          },
+          "lamina": "pal_pillow"
         },
         {
           "id": "3_4.decembro.s3.blanket",
@@ -533,7 +559,8 @@
           "tprAction": {
             "gl": "Taparse cunha manta imaxinaria ata o queixo",
             "es": "Taparse con una manta imaginaria hasta la barbilla"
-          }
+          },
+          "lamina": "pal_blanket"
         },
         {
           "id": "3_4.decembro.s3.pyjamas",
@@ -555,7 +582,8 @@
           "tprAction": {
             "gl": "Pousar a cabeza nas mans e sorrir cos ollos pechados",
             "es": "Apoyar la cabeza en las manos y sonreír con los ojos cerrados"
-          }
+          },
+          "lamina": "pal_dream"
         },
         {
           "id": "3_4.decembro.s3.sleep",
@@ -590,7 +618,8 @@
           "tprAction": {
             "gl": "Facer «rrr» moi suave cos ollos pechados",
             "es": "Hacer «rrr» muy suave con los ojos cerrados"
-          }
+          },
+          "lamina": "pal_snore"
         },
         {
           "id": "3_4.decembro.s3.wake-up",
@@ -613,7 +642,8 @@
           "tprAction": {
             "gl": "Encollerse e aconchegarse no propio colo",
             "es": "Encogerse y acurrucarse en el propio regazo"
-          }
+          },
+          "lamina": "pal_cuddle"
         },
         {
           "id": "3_4.decembro.s3.sleepy",
@@ -647,7 +677,8 @@
           "tprAction": {
             "gl": "Abrazar unha manta imaxinaria con cara de gusto",
             "es": "Abrazar una manta imaginaria con cara de gusto"
-          }
+          },
+          "lamina": "pal_cosy"
         },
         {
           "id": "3_4.decembro.s3.awake",
@@ -658,7 +689,8 @@
           "tprAction": {
             "gl": "Abrir moito os ollos e mirar arredor",
             "es": "Abrir mucho los ojos y mirar alrededor"
-          }
+          },
+          "lamina": "pal_awake"
         },
         {
           "id": "3_4.decembro.s3.good-night",
@@ -669,7 +701,8 @@
           "tprAction": {
             "gl": "Acenar amodo e xuntar as mans baixo a meixela",
             "es": "Decir adiós despacio y juntar las manos bajo la mejilla"
-          }
+          },
+          "lamina": "pal_good_night"
         },
         {
           "id": "3_4.decembro.s3.sweet-dreams",
@@ -680,7 +713,8 @@
           "tprAction": {
             "gl": "Lanzar un bico ao aire cos ollos pechados",
             "es": "Lanzar un beso al aire con los ojos cerrados"
-          }
+          },
+          "lamina": "pal_sweet_dreams"
         },
         {
           "id": "3_4.decembro.s3.sleep-tight",
@@ -691,7 +725,8 @@
           "tprAction": {
             "gl": "Abrazarse forte e quedar quietos",
             "es": "Abrazarse fuerte y quedarse quietos"
-          }
+          },
+          "lamina": "pal_sleep_tight"
         },
         {
           "id": "3_4.decembro.s3.under-the-blanket",
@@ -702,7 +737,8 @@
           "tprAction": {
             "gl": "Agocharse debaixo dunha manta imaxinaria",
             "es": "Esconderse debajo de una manta imaginaria"
-          }
+          },
+          "lamina": "pal_under_the_blanket"
         }
       ]
     },
@@ -722,7 +758,8 @@
           "tprAction": {
             "gl": "Dar voltas no sitio movendo as mans",
             "es": "Dar vueltas en el sitio moviendo las manos"
-          }
+          },
+          "lamina": "pal_party"
         },
         {
           "id": "3_4.decembro.s4.cake",
@@ -733,7 +770,8 @@
           "tprAction": {
             "gl": "Debuxar un bolo redondo e soprar as velas",
             "es": "Dibujar una tarta redonda y soplar las velas"
-          }
+          },
+          "lamina": "pal_cake"
         },
         {
           "id": "3_4.decembro.s4.balloon",
@@ -744,7 +782,8 @@
           "tprAction": {
             "gl": "Inflar un globo imaxinario coas meixelas",
             "es": "Inflar un globo imaginario con los mofletes"
-          }
+          },
+          "lamina": "pal_balloon"
         },
         {
           "id": "3_4.decembro.s4.crown",
@@ -755,7 +794,8 @@
           "tprAction": {
             "gl": "Poñer unha coroa imaxinaria na cabeza",
             "es": "Ponerse una corona imaginaria en la cabeza"
-          }
+          },
+          "lamina": "pal_crown"
         },
         {
           "id": "3_4.decembro.s4.king",
@@ -766,7 +806,8 @@
           "tprAction": {
             "gl": "Camiñar dereitos e solemnes coma un rei",
             "es": "Caminar erguidos y solemnes como un rey"
-          }
+          },
+          "lamina": "pal_king"
         },
         {
           "id": "3_4.decembro.s4.music",
@@ -777,7 +818,8 @@
           "tprAction": {
             "gl": "Mover a cabeza ao pulso da música",
             "es": "Mover la cabeza al pulso de la música"
-          }
+          },
+          "lamina": "pal_music"
         },
         {
           "id": "3_4.decembro.s4.chocolate",
@@ -788,7 +830,8 @@
           "tprAction": {
             "gl": "Beber dunha cunca quente con coidado",
             "es": "Beber de una taza caliente con cuidado"
-          }
+          },
+          "lamina": "pal_chocolate"
         },
         {
           "id": "3_4.decembro.s4.pop",
@@ -823,7 +866,8 @@
           "tprAction": {
             "gl": "Inclinar o corpo cara adiante cunha man no peito",
             "es": "Inclinar el cuerpo hacia delante con una mano en el pecho"
-          }
+          },
+          "lamina": "pal_bow"
         },
         {
           "id": "3_4.decembro.s4.count",
@@ -868,7 +912,8 @@
           "tprAction": {
             "gl": "Bater os pés no chan e logo parar",
             "es": "Golpear el suelo con los pies y luego parar"
-          }
+          },
+          "lamina": "pal_noisy"
         },
         {
           "id": "3_4.decembro.s4.colourful",
@@ -879,7 +924,8 @@
           "tprAction": {
             "gl": "Sinalar cousas de moitas cores na aula",
             "es": "Señalar cosas de muchos colores en el aula"
-          }
+          },
+          "lamina": "pal_colourful"
         },
         {
           "id": "3_4.decembro.s4.delicious",
@@ -902,7 +948,8 @@
           "tprAction": {
             "gl": "Abrazar a quen está ao lado e sorrir",
             "es": "Abrazar a quien está al lado y sonreír"
-          }
+          },
+          "lamina": "pal_happy_new_year"
         },
         {
           "id": "3_4.decembro.s4.happy-birthday",
@@ -913,7 +960,8 @@
           "tprAction": {
             "gl": "Dar palmas suaves e soprar unha vela imaxinaria",
             "es": "Dar palmas suaves y soplar una vela imaginaria"
-          }
+          },
+          "lamina": "pal_happy_birthday"
         },
         {
           "id": "3_4.decembro.s4.with-music",
@@ -935,7 +983,8 @@
           "tprAction": {
             "gl": "Subir as mans e animar todos á vez",
             "es": "Subir las manos y animar todos a la vez"
-          }
+          },
+          "lamina": "pal_hands_up_and_cheer"
         }
       ]
     }

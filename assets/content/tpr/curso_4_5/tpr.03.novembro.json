@@ -33,7 +33,8 @@
             "gl": "Facer un tellado en punta coas mans",
             "es": "Hacer un tejado en punta con las manos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_chapel"
         },
         {
           "id": "4_5.novembro.s1.viewpoint",
@@ -44,7 +45,8 @@
             "gl": "Mirar lonxe coa man na fronte",
             "es": "Mirar lejos con la mano en la frente"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_viewpoint"
         },
         {
           "id": "4_5.novembro.s1.slope",
@@ -55,7 +57,8 @@
             "gl": "Inclinar a man coma unha costa",
             "es": "Inclinar la mano como una cuesta"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_slope"
         },
         {
           "id": "4_5.novembro.s1.steps",
@@ -78,7 +81,8 @@
             "gl": "Xirar mirando arredor",
             "es": "Girar mirando alrededor"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_panorama"
         },
         {
           "id": "4_5.novembro.s1.walking-stick",
@@ -89,7 +93,8 @@
             "gl": "Camiñar apoiándose nun caxato",
             "es": "Caminar apoyándose en un bastón"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_walking_stick"
         },
         {
           "id": "4_5.novembro.s1.hike",
@@ -100,7 +105,8 @@
             "gl": "Camiñar levantando os xeonllos",
             "es": "Caminar levantando las rodillas"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_hike"
         },
         {
           "id": "4_5.novembro.s1.climb-up-the-hill",
@@ -111,7 +117,8 @@
             "gl": "Camiñar inclinado cara adiante",
             "es": "Caminar inclinado hacia delante"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_climb_up_the_hill"
         },
         {
           "id": "4_5.novembro.s1.walk-down",
@@ -122,7 +129,8 @@
             "gl": "Camiñar inclinado cara atrás",
             "es": "Caminar inclinado hacia atrás"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_walk_down"
         },
         {
           "id": "4_5.novembro.s1.rest-at-the-top",
@@ -133,7 +141,8 @@
             "gl": "Sentarse e respirar",
             "es": "Sentarse y respirar"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_rest_at_the_top"
         },
         {
           "id": "4_5.novembro.s1.look-into-the-distance",
@@ -144,7 +153,8 @@
             "gl": "Mirar coa man na fronte",
             "es": "Mirar con la mano en la frente"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_look_into_the_distance"
         },
         {
           "id": "4_5.novembro.s1.steep",
@@ -178,7 +188,8 @@
             "gl": "Camiñar con esforzo",
             "es": "Caminar con esfuerzo"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_uphill"
         },
         {
           "id": "4_5.novembro.s1.downhill",
@@ -201,7 +212,8 @@
             "gl": "Estirar a man cara arriba",
             "es": "Estirar la mano hacia arriba"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_almost_at_the_top"
         },
         {
           "id": "4_5.novembro.s1.what-can-you-see-from-here",
@@ -234,7 +246,8 @@
             "gl": "Levantar a man por riba",
             "es": "Levantar la mano por encima"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_higher_than_the_houses"
         }
       ]
     },
@@ -254,7 +267,8 @@
             "gl": "Debuxar o bordo ondulado",
             "es": "Dibujar el borde ondulado"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_oak_leaf"
         },
         {
           "id": "4_5.novembro.s2.acorn-cap",
@@ -265,7 +279,8 @@
             "gl": "Poñer un dedo coma un chapeu",
             "es": "Poner un dedo como un sombrero"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_acorn_cap"
         },
         {
           "id": "4_5.novembro.s2.tree-rings",
@@ -276,7 +291,8 @@
             "gl": "Debuxar círculos cada vez máis grandes",
             "es": "Dibujar círculos cada vez más grandes"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_tree_rings"
         },
         {
           "id": "4_5.novembro.s2.roots",
@@ -287,7 +303,8 @@
             "gl": "Estender os dedos cara abaixo",
             "es": "Extender los dedos hacia abajo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_roots"
         },
         {
           "id": "4_5.novembro.s2.canopy",
@@ -298,7 +315,8 @@
             "gl": "Abrir os brazos por riba da cabeza",
             "es": "Abrir los brazos por encima de la cabeza"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_canopy"
         },
         {
           "id": "4_5.novembro.s2.woodpecker",
@@ -309,7 +327,8 @@
             "gl": "Bater co dedo coma un peto",
             "es": "Golpear con el dedo como un pájaro carpintero"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_woodpecker"
         },
         {
           "id": "4_5.novembro.s2.hollow-trunk",
@@ -320,7 +339,8 @@
             "gl": "Facer un oco coas mans",
             "es": "Hacer un hueco con las manos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_hollow_trunk"
         },
         {
           "id": "4_5.novembro.s2.sway-like-an-oak",
@@ -331,7 +351,8 @@
             "gl": "Abanear os brazos amodo",
             "es": "Mecer los brazos despacio"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_sway_like_an_oak"
         },
         {
           "id": "4_5.novembro.s2.gather-acorns",
@@ -342,7 +363,8 @@
             "gl": "Coller landras do chan",
             "es": "Coger bellotas del suelo"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_gather_acorns"
         },
         {
           "id": "4_5.novembro.s2.count-rings",
@@ -353,7 +375,8 @@
             "gl": "Contar círculos co dedo",
             "es": "Contar círculos con el dedo"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_count_rings"
         },
         {
           "id": "4_5.novembro.s2.hug-a-tree",
@@ -364,7 +387,8 @@
             "gl": "Abrazar un tronco",
             "es": "Abrazar un tronco"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_hug_a_tree"
         },
         {
           "id": "4_5.novembro.s2.tap-on-wood",
@@ -375,7 +399,8 @@
             "gl": "Bater amodo na madeira",
             "es": "Golpear despacio la madera"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_tap_on_wood"
         },
         {
           "id": "4_5.novembro.s2.ancient",
@@ -408,7 +433,8 @@
             "gl": "Debuxar ondas co dedo",
             "es": "Dibujar ondas con el dedo"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_wavy_edged"
         },
         {
           "id": "4_5.novembro.s2.knobbly",
@@ -419,7 +445,8 @@
             "gl": "Tocar os nós da madeira",
             "es": "Tocar los nudos de la madera"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_knobbly"
         },
         {
           "id": "4_5.novembro.s2.how-old-is-this-tree",
@@ -441,7 +468,8 @@
             "gl": "Bater co dedo e escoitar",
             "es": "Golpear con el dedo y escuchar"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_listen_to_the_woodpecker"
         },
         {
           "id": "4_5.novembro.s2.an-oak-grows-from-an-acorn",
@@ -452,7 +480,8 @@
             "gl": "Encoller e erguerse amodo",
             "es": "Encogerse y levantarse despacio"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_an_oak_grows_from_an_acorn"
         },
         {
           "id": "4_5.novembro.s2.roots-under-the-ground",
@@ -463,7 +492,8 @@
             "gl": "Baixar os dedos cara ao chan",
             "es": "Bajar los dedos hacia el suelo"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_roots_under_the_ground"
         }
       ]
     },
@@ -483,7 +513,8 @@
             "gl": "Poñer os dedos coma cornos",
             "es": "Poner los dedos como cuernos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_stag_beetle"
         },
         {
           "id": "4_5.novembro.s3.woodlouse",
@@ -494,7 +525,8 @@
             "gl": "Facer unha bóla co corpo",
             "es": "Hacer una bola con el cuerpo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_woodlouse"
         },
         {
           "id": "4_5.novembro.s3.centipede",
@@ -505,7 +537,8 @@
             "gl": "Mover moitos dedos amodo",
             "es": "Mover muchos dedos despacio"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_centipede"
         },
         {
           "id": "4_5.novembro.s3.earthworm",
@@ -516,7 +549,8 @@
             "gl": "Estirar e encoller o corpo",
             "es": "Estirar y encoger el cuerpo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_earthworm"
         },
         {
           "id": "4_5.novembro.s3.magnifying-glass",
@@ -527,7 +561,8 @@
             "gl": "Mirar a través dunha lupa",
             "es": "Mirar a través de una lupa"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_magnifying_glass"
         },
         {
           "id": "4_5.novembro.s3.bug-hotel",
@@ -538,7 +573,8 @@
             "gl": "Construír un hotel con pólas",
             "es": "Construir un hotel con ramas"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_bug_hotel"
         },
         {
           "id": "4_5.novembro.s3.leaf-litter",
@@ -549,7 +585,8 @@
             "gl": "Remexer as follas amodo",
             "es": "Remover las hojas despacio"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_leaf_litter"
         },
         {
           "id": "4_5.novembro.s3.look-closely",
@@ -594,7 +631,8 @@
             "gl": "Mover as mans coma cavando",
             "es": "Mover las manos como cavando"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_dig_tunnels"
         },
         {
           "id": "4_5.novembro.s3.put-it-back-gently",
@@ -616,7 +654,8 @@
             "gl": "Mover todos os dedos",
             "es": "Mover todos los dedos"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_many_legged"
         },
         {
           "id": "4_5.novembro.s3.hard-shelled",
@@ -627,7 +666,8 @@
             "gl": "Bater suave nas costas",
             "es": "Golpear suave en la espalda"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_hard_shelled"
         },
         {
           "id": "4_5.novembro.s3.wriggly",
@@ -649,7 +689,8 @@
             "gl": "Levantar a man e mirar debaixo",
             "es": "Levantar la mano y mirar debajo"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_hidden_under"
         },
         {
           "id": "4_5.novembro.s3.how-many-legs-has-it-got",
@@ -671,7 +712,8 @@
             "gl": "Pousar a man moi amodo",
             "es": "Posar la mano muy despacio"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_be_gentle_with_bugs"
         },
         {
           "id": "4_5.novembro.s3.look-under-the-log",
@@ -682,7 +724,8 @@
             "gl": "Levantar e mirar",
             "es": "Levantar y mirar"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_look_under_the_log"
         },
         {
           "id": "4_5.novembro.s3.bigger-than-an-ant-smaller-than-a-mouse",
@@ -693,7 +736,8 @@
             "gl": "Abrir os dedos pouco e logo máis",
             "es": "Abrir los dedos poco y luego más"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_bigger_than_an_ant_smaller_than_a_mouse"
         }
       ]
     },
@@ -725,7 +769,8 @@
             "gl": "Estender a man coma un fento",
             "es": "Extender la mano como un helecho"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_bracken"
         },
         {
           "id": "4_5.novembro.s4.toadstool",
@@ -747,7 +792,8 @@
             "gl": "Coller unha baga imaxinaria",
             "es": "Coger una baya imaginaria"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_berry"
         },
         {
           "id": "4_5.novembro.s4.holly",
@@ -758,7 +804,8 @@
             "gl": "Sinalar as bolas vermellas",
             "es": "Señalar las bolas rojas"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_holly"
         },
         {
           "id": "4_5.novembro.s4.colour-hunt",
@@ -769,7 +816,8 @@
             "gl": "Buscar algo verde",
             "es": "Buscar algo verde"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_colour_hunt"
         },
         {
           "id": "4_5.novembro.s4.leaf-rubbing",
@@ -780,7 +828,8 @@
             "gl": "Fregar unha cera sobre o papel",
             "es": "Frotar una cera sobre el papel"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_leaf_rubbing"
         },
         {
           "id": "4_5.novembro.s4.compare",
@@ -791,7 +840,8 @@
             "gl": "Poñer dúas follas lado a lado",
             "es": "Poner dos hojas lado a lado"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_compare"
         },
         {
           "id": "4_5.novembro.s4.match-colours",
@@ -813,7 +863,8 @@
             "gl": "Fregar a cera sobre a folla",
             "es": "Frotar la cera sobre la hoja"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_rub_a_leaf"
         },
         {
           "id": "4_5.novembro.s4.spot",
@@ -835,7 +886,8 @@
             "gl": "Meter follas nunha bolsa",
             "es": "Meter hojas en una bolsa"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_collect_leaves"
         },
         {
           "id": "4_5.novembro.s4.darker",
@@ -846,7 +898,8 @@
             "gl": "Sinalar a folla máis escura",
             "es": "Señalar la hoja más oscura"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_darker"
         },
         {
           "id": "4_5.novembro.s4.lighter",
@@ -857,7 +910,8 @@
             "gl": "Sinalar a folla máis clara",
             "es": "Señalar la hoja más clara"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_lighter"
         },
         {
           "id": "4_5.novembro.s4.reddish",
@@ -868,7 +922,8 @@
             "gl": "Amosar unha folla avermellada",
             "es": "Enseñar una hoja rojiza"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_reddish"
         },
         {
           "id": "4_5.novembro.s4.bright-orange",
@@ -891,7 +946,8 @@
             "gl": "Comparar dúas follas",
             "es": "Comparar dos hojas"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_this_one_is_darker_than_that_one"
         },
         {
           "id": "4_5.novembro.s4.can-you-find-something-red",
@@ -913,7 +969,8 @@
             "gl": "Amosar tres follas",
             "es": "Enseñar tres hojas"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_red_orange_and_brown"
         },
         {
           "id": "4_5.novembro.s4.found-one",

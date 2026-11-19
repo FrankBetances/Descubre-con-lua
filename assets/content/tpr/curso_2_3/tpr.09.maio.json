@@ -32,7 +32,8 @@
             "gl": "Pór as mans baixo a auga",
             "es": "Poner las manos bajo el agua"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_tap_water"
         },
         {
           "id": "2_3.maio.s1.paper-towel",
@@ -54,7 +55,8 @@
             "gl": "Botar o papel na papeleira",
             "es": "Tirar el papel a la papelera"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_bin"
         },
         {
           "id": "2_3.maio.s1.mirror-check",
@@ -65,7 +67,8 @@
             "gl": "Mirarse no espello",
             "es": "Mirarse en el espejo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_mirror_check"
         },
         {
           "id": "2_3.maio.s1.toothpaste",
@@ -87,7 +90,8 @@
             "gl": "Recoller o pelo cunha goma",
             "es": "Recoger el pelo con una goma"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_hair_tie"
         },
         {
           "id": "2_3.maio.s1.pump-the-soap",
@@ -110,7 +114,8 @@
             "gl": "Fregar palma con palma",
             "es": "Frotar palma con palma"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_rub_palms"
         },
         {
           "id": "2_3.maio.s1.scrub-nails",
@@ -121,7 +126,8 @@
             "gl": "Fregar as puntas dos dedos",
             "es": "Frotar las puntas de los dedos"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_scrub_nails"
         },
         {
           "id": "2_3.maio.s1.shake-dry",
@@ -166,7 +172,8 @@
             "gl": "Amosar as mans limpas",
             "es": "Enseñar las manos limpias"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_spotless"
         },
         {
           "id": "2_3.maio.s1.minty",
@@ -177,7 +184,8 @@
             "gl": "Soprar alento fresco",
             "es": "Soplar aliento fresco"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_minty"
         },
         {
           "id": "2_3.maio.s1.independent",
@@ -233,7 +241,8 @@
             "gl": "Fregar a palma e o dorso",
             "es": "Frotar la palma y el dorso"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_front_and_back"
         }
       ]
     },
@@ -253,7 +262,8 @@
             "gl": "Amosar a cabeza do cepillo",
             "es": "Enseñar la cabeza del cepillo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_brush_head"
         },
         {
           "id": "2_3.maio.s2.rinse-cup",
@@ -264,7 +274,8 @@
             "gl": "Encher o vaso de auga",
             "es": "Llenar el vaso de agua"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_rinse_cup"
         },
         {
           "id": "2_3.maio.s2.smile-teeth",
@@ -275,7 +286,8 @@
             "gl": "Sorrir amosando os dentes",
             "es": "Sonreír enseñando los dientes"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_big_smile"
         },
         {
           "id": "2_3.maio.s2.back-teeth",
@@ -286,7 +298,8 @@
             "gl": "Sinalar as moas",
             "es": "Señalar las muelas"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_back_teeth"
         },
         {
           "id": "2_3.maio.s2.front-teeth",
@@ -297,7 +310,8 @@
             "gl": "Sinalar os dentes de diante",
             "es": "Señalar los dientes de delante"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_front_teeth"
         },
         {
           "id": "2_3.maio.s2.sink-plug",
@@ -319,7 +333,8 @@
             "gl": "Cantar mentres se cepilla",
             "es": "Cantar mientras se cepilla"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_timer_song"
         },
         {
           "id": "2_3.maio.s2.brush-up-and-down",
@@ -353,7 +368,8 @@
             "gl": "Facer gárgaras con auga",
             "es": "Hacer gárgaras con agua"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_gargle"
         },
         {
           "id": "2_3.maio.s2.swish",
@@ -364,7 +380,8 @@
             "gl": "Mover a auga na boca",
             "es": "Mover el agua en la boca"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_swish"
         },
         {
           "id": "2_3.maio.s2.open-the-mouth-wide",
@@ -375,7 +392,8 @@
             "gl": "Abrir a boca coma un león",
             "es": "Abrir la boca como un león"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_open_your_mouth_wide"
         },
         {
           "id": "2_3.maio.s2.sparkly-teeth",
@@ -386,7 +404,8 @@
             "gl": "Sorrir con todos os dentes",
             "es": "Sonreír con todos los dientes"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_sparkly_teeth"
         },
         {
           "id": "2_3.maio.s2.foamy-mouth",
@@ -397,7 +416,8 @@
             "gl": "Sinalar a escuma",
             "es": "Señalar la espuma"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_foamy_mouth"
         },
         {
           "id": "2_3.maio.s2.fresh-breath",
@@ -419,7 +439,8 @@
             "gl": "Tocar un dente coa lingua",
             "es": "Tocar un diente con la lengua"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_wobbly_tooth"
         },
         {
           "id": "2_3.maio.s2.brush-brush-brush",
@@ -430,7 +451,8 @@
             "gl": "Mover o cepillo no aire",
             "es": "Mover el cepillo en el aire"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_brush_brush_brush"
         },
         {
           "id": "2_3.maio.s2.show-me-your-teeth",
@@ -441,7 +463,8 @@
             "gl": "Sorrir moito",
             "es": "Sonreír mucho"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_show_me_your_teeth"
         },
         {
           "id": "2_3.maio.s2.top-and-bottom",
@@ -452,7 +475,8 @@
             "gl": "Sinalar os dentes de arriba e abaixo",
             "es": "Señalar los dientes de arriba y abajo"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_top_and_bottom"
         },
         {
           "id": "2_3.maio.s2.spit-in-the-sink",
@@ -483,7 +507,8 @@
             "gl": "Pousar as mans na mesa de auga",
             "es": "Posar las manos en la mesa de agua"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_water_table"
         },
         {
           "id": "2_3.maio.s3.sieve",
@@ -494,7 +519,8 @@
             "gl": "Deixar escorrer auga polo coador",
             "es": "Dejar escurrir agua por el colador"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_sieve"
         },
         {
           "id": "2_3.maio.s3.measuring-cup",
@@ -516,7 +542,8 @@
             "gl": "Botar auga na roda",
             "es": "Echar agua en la rueda"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_water_wheel"
         },
         {
           "id": "2_3.maio.s3.pipette",
@@ -527,7 +554,8 @@
             "gl": "Coller auga coa pipeta",
             "es": "Coger agua con la pipeta"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_pipette"
         },
         {
           "id": "2_3.maio.s3.squirter",
@@ -538,7 +566,8 @@
             "gl": "Premer e botar auga",
             "es": "Apretar y echar agua"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_water_pistol"
         },
         {
           "id": "2_3.maio.s3.sponge-squeeze",
@@ -584,7 +613,8 @@
             "gl": "Pasar auga polo coador",
             "es": "Pasar agua por el colador"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_strain"
         },
         {
           "id": "2_3.maio.s3.float-or-sink",
@@ -595,7 +625,8 @@
             "gl": "Botar un obxecto e mirar",
             "es": "Echar un objeto y mirar"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_float_or_sink"
         },
         {
           "id": "2_3.maio.s3.wring-out",
@@ -617,7 +648,8 @@
             "gl": "Chapotear coas mans",
             "es": "Chapotear con las manos"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_splashing"
         },
         {
           "id": "2_3.maio.s3.overflowing",
@@ -639,7 +671,8 @@
             "gl": "Botar auga nun vaso con burato",
             "es": "Echar agua en un vaso con agujero"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_leaky"
         },
         {
           "id": "2_3.maio.s3.bubbly-water",
@@ -650,7 +683,8 @@
             "gl": "Soprar na auga cunha palla",
             "es": "Soplar en el agua con una pajita"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_bubbly_water"
         },
         {
           "id": "2_3.maio.s3.will-it-float",
@@ -672,7 +706,8 @@
             "gl": "Sinalar a auga e rir",
             "es": "Señalar el agua y reír"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_oops_it_spilled"
         },
         {
           "id": "2_3.maio.s3.from-cup-to-cup",
@@ -683,7 +718,8 @@
             "gl": "Verter dun vaso a outro",
             "es": "Verter de un vaso a otro"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_from_cup_to_cup"
         },
         {
           "id": "2_3.maio.s3.full-to-the-top",
@@ -694,7 +730,8 @@
             "gl": "Encher ata o bordo",
             "es": "Llenar hasta el borde"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_full_to_the_top"
         }
       ]
     },
@@ -736,7 +773,8 @@
             "gl": "Abrir e pechar a pinza",
             "es": "Abrir y cerrar la pinza"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_clothes_peg"
         },
         {
           "id": "2_3.maio.s4.laundry-basket",
@@ -747,7 +785,8 @@
             "gl": "Levar o cesto coas dúas mans",
             "es": "Llevar el cesto con las dos manos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_laundry_basket"
         },
         {
           "id": "2_3.maio.s4.washing-machine",
@@ -758,7 +797,8 @@
             "gl": "Xirar as mans coma a lavadora",
             "es": "Girar las manos como la lavadora"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_washing_machine"
         },
         {
           "id": "2_3.maio.s4.doll-clothes",
@@ -769,7 +809,8 @@
             "gl": "Lavar a roupa da boneca",
             "es": "Lavar la ropa de la muñeca"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_doll_clothes"
         },
         {
           "id": "2_3.maio.s4.bucket-of-water",
@@ -780,7 +821,8 @@
             "gl": "Levar o balde con coidado",
             "es": "Llevar el cubo con cuidado"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_bucket_of_water"
         },
         {
           "id": "2_3.maio.s4.hang-out",
@@ -838,7 +880,8 @@
             "gl": "Dobrar un pano pola metade",
             "es": "Doblar un pañuelo por la mitad"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_fold_up"
         },
         {
           "id": "2_3.maio.s4.dripping-clothes",
@@ -849,7 +892,8 @@
             "gl": "Sacudir a roupa mollada",
             "es": "Sacudir la ropa mojada"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_dripping_clothes"
         },
         {
           "id": "2_3.maio.s4.sun-dried",
@@ -860,7 +904,8 @@
             "gl": "Cheirar a roupa seca",
             "es": "Oler la ropa seca"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_sun_dried"
         },
         {
           "id": "2_3.maio.s4.crumpled",
@@ -871,7 +916,8 @@
             "gl": "Engurrar un pano",
             "es": "Arrugar un pañuelo"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_crumpled"
         },
         {
           "id": "2_3.maio.s4.neatly-folded",
@@ -882,7 +928,8 @@
             "gl": "Amosar o pano dobrado",
             "es": "Enseñar el pañuelo doblado"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_neatly_folded"
         },
         {
           "id": "2_3.maio.s4.wash-wash-the-socks",
@@ -893,7 +940,8 @@
             "gl": "Fregar un calcetín",
             "es": "Frotar un calcetín"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_wash_wash_the_socks"
         },
         {
           "id": "2_3.maio.s4.pass-me-a-peg",

@@ -44,7 +44,8 @@
             "gl": "Sinalar de esquerda a dereita",
             "es": "Señalar de izquierda a derecha"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_sequence_strip"
         },
         {
           "id": "5_6.marzo.s1.bead",
@@ -55,7 +56,8 @@
             "gl": "Enfiar unha conta imaxinaria",
             "es": "Ensartar una cuenta imaginaria"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_bead"
         },
         {
           "id": "5_6.marzo.s1.necklace",
@@ -66,7 +68,8 @@
             "gl": "Debuxar un colar no pescozo",
             "es": "Dibujar un collar en el cuello"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_necklace"
         },
         {
           "id": "5_6.marzo.s1.stripes",
@@ -77,7 +80,8 @@
             "gl": "Debuxar raias no aire",
             "es": "Dibujar rayas en el aire"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_stripes"
         },
         {
           "id": "5_6.marzo.s1.zigzag",
@@ -88,7 +92,8 @@
             "gl": "Debuxar un zigzag",
             "es": "Dibujar un zigzag"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_zigzag"
         },
         {
           "id": "5_6.marzo.s1.clap-a-pattern",
@@ -99,7 +104,8 @@
             "gl": "Palma, palma, pé",
             "es": "Palma, palma, pie"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_clap_a_pattern"
         },
         {
           "id": "5_6.marzo.s1.predict-what-s-next",
@@ -165,7 +171,8 @@
             "gl": "Man arriba, man abaixo",
             "es": "Mano arriba, mano abajo"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_alternating"
         },
         {
           "id": "5_6.marzo.s1.regular",
@@ -187,7 +194,8 @@
             "gl": "Sinalar adiante",
             "es": "Señalar adelante"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_next_in_line"
         },
         {
           "id": "5_6.marzo.s1.what-comes-next",
@@ -274,7 +282,8 @@
             "gl": "Pintar e dobrar o papel",
             "es": "Pintar y doblar el papel"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_butterfly_print"
         },
         {
           "id": "5_6.marzo.s2.reflection-game",
@@ -296,7 +305,8 @@
             "gl": "Sinalar o lado esquerdo",
             "es": "Señalar el lado izquierdo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_left_side"
         },
         {
           "id": "5_6.marzo.s2.right-side",
@@ -307,7 +317,8 @@
             "gl": "Sinalar o lado dereito",
             "es": "Señalar el lado derecho"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_right_side"
         },
         {
           "id": "5_6.marzo.s2.snowflake-cut",
@@ -329,7 +340,8 @@
             "gl": "Dobrar unha folla pola metade",
             "es": "Doblar una hoja por la mitad"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_fold_paper"
         },
         {
           "id": "5_6.marzo.s2.mirror-a-friend",
@@ -351,7 +363,8 @@
             "gl": "Abrir a folla amodo",
             "es": "Abrir la hoja despacio"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_open_up_the_fold"
         },
         {
           "id": "5_6.marzo.s2.match-both-sides",
@@ -362,7 +375,8 @@
             "gl": "Mover as dúas mans iguais",
             "es": "Mover las dos manos iguales"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_match_both_sides"
         },
         {
           "id": "5_6.marzo.s2.cut-out",
@@ -373,7 +387,8 @@
             "gl": "Facer tesoiras cos dedos",
             "es": "Hacer tijeras con los dedos"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_cut_out"
         },
         {
           "id": "5_6.marzo.s2.symmetrical",
@@ -384,7 +399,8 @@
             "gl": "Abrir os brazos iguais",
             "es": "Abrir los brazos iguales"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_symmetrical"
         },
         {
           "id": "5_6.marzo.s2.identical",
@@ -395,7 +411,8 @@
             "gl": "Xuntar as palmas",
             "es": "Juntar las palmas"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_identical"
         },
         {
           "id": "5_6.marzo.s2.lopsided",
@@ -406,7 +423,8 @@
             "gl": "Inclinarse dun lado",
             "es": "Inclinarse de un lado"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_lopsided"
         },
         {
           "id": "5_6.marzo.s2.mirrored",
@@ -462,7 +480,8 @@
             "gl": "Sinalar os dous lados",
             "es": "Señalar los dos lados"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_the_left_side_is_the_same_as_the_right_side"
         }
       ]
     },
@@ -482,7 +501,8 @@
             "gl": "Contar pétalos cos dedos",
             "es": "Contar pétalos con los dedos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_petal_count"
         },
         {
           "id": "5_6.marzo.s3.spiral",
@@ -493,7 +513,8 @@
             "gl": "Debuxar unha espiral co dedo",
             "es": "Dibujar una espiral con el dedo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_spiral"
         },
         {
           "id": "5_6.marzo.s3.honeycomb",
@@ -504,7 +525,8 @@
             "gl": "Facer hexágonos coas mans",
             "es": "Hacer hexágonos con las manos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_honeycomb"
         },
         {
           "id": "5_6.marzo.s3.hexagon",
@@ -515,7 +537,8 @@
             "gl": "Contar seis lados",
             "es": "Contar seis lados"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_hexagon"
         },
         {
           "id": "5_6.marzo.s3.snail-shell",
@@ -537,7 +560,8 @@
             "gl": "Tocar as escamas",
             "es": "Tocar las escamas"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_pinecone_scales"
         },
         {
           "id": "5_6.marzo.s3.ladybird-spots",
@@ -548,7 +572,8 @@
             "gl": "Contar pintas",
             "es": "Contar puntos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_ladybird_spots"
         },
         {
           "id": "5_6.marzo.s3.count-petals",
@@ -559,7 +584,8 @@
             "gl": "Contar ata cinco",
             "es": "Contar hasta cinco"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_count_petals"
         },
         {
           "id": "5_6.marzo.s3.trace-a-spiral",
@@ -581,7 +607,8 @@
             "gl": "Mirar arredor coa lupa",
             "es": "Mirar alrededor con la lupa"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_look_for_patterns"
         },
         {
           "id": "5_6.marzo.s3.sort-by-number",
@@ -603,7 +630,8 @@
             "gl": "Medir con dedos",
             "es": "Medir con dedos"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_measure_a_leaf"
         },
         {
           "id": "5_6.marzo.s3.six-sided",
@@ -614,7 +642,8 @@
             "gl": "Amosar seis dedos",
             "es": "Enseñar seis dedos"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_six_sided"
         },
         {
           "id": "5_6.marzo.s3.spiralling",
@@ -625,7 +654,8 @@
             "gl": "Xirar o dedo",
             "es": "Girar el dedo"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_spiralling"
         },
         {
           "id": "5_6.marzo.s3.countless",
@@ -669,7 +699,8 @@
             "gl": "Debuxar a espiral",
             "es": "Dibujar la espiral"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_look_a_spiral"
         },
         {
           "id": "5_6.marzo.s3.bees-build-hexagons-because-they-fit-together",
@@ -680,7 +711,8 @@
             "gl": "Xuntar as mans en hexágono",
             "es": "Juntar las manos en hexágono"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_bees_build_hexagons_because_they_fit_together"
         },
         {
           "id": "5_6.marzo.s3.this-flower-has-more-petals-than-that-one",
@@ -691,7 +723,8 @@
             "gl": "Sinalar e comparar",
             "es": "Señalar y comparar"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_this_flower_has_more_petals_than_that_one"
         }
       ]
     },
@@ -746,7 +779,8 @@
             "gl": "Xirar a man en círculo",
             "es": "Girar la mano en círculo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_colour_wheel"
         },
         {
           "id": "5_6.marzo.s4.shade-card",
@@ -768,7 +802,8 @@
             "gl": "Amosar tres dedos",
             "es": "Enseñar tres dedos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_primary_colours"
         },
         {
           "id": "5_6.marzo.s4.palette",
@@ -779,7 +814,8 @@
             "gl": "Suxeitar unha paleta",
             "es": "Sostener una paleta"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_palette"
         },
         {
           "id": "5_6.marzo.s4.mix-colours",
@@ -790,7 +826,8 @@
             "gl": "Remexer co dedo",
             "es": "Remover con el dedo"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_mix_colours"
         },
         {
           "id": "5_6.marzo.s4.arrange-tiles",
@@ -801,7 +838,8 @@
             "gl": "Pousar pezas en fila",
             "es": "Poner piezas en fila"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_arrange_tiles"
         },
         {
           "id": "5_6.marzo.s4.create-a-picture",
@@ -812,7 +850,8 @@
             "gl": "Debuxar un marco",
             "es": "Dibujar un marco"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_create_a_picture"
         },
         {
           "id": "5_6.marzo.s4.rotate-a-piece",
@@ -823,7 +862,8 @@
             "gl": "Xirar a man",
             "es": "Girar la mano"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_rotate_a_piece"
         },
         {
           "id": "5_6.marzo.s4.fill-a-space",
@@ -834,7 +874,8 @@
             "gl": "Encaixar a man nun oco",
             "es": "Encajar la mano en un hueco"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_fill_a_space"
         },
         {
           "id": "5_6.marzo.s4.pastel",
@@ -867,7 +908,8 @@
             "gl": "Debuxar un triángulo",
             "es": "Dibujar un triángulo"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_geometric"
         },
         {
           "id": "5_6.marzo.s4.darkest-shade",
@@ -878,7 +920,8 @@
             "gl": "Sinalar o máis escuro",
             "es": "Señalar el más oscuro"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_darkest_shade"
         },
         {
           "id": "5_6.marzo.s4.blue-and-yellow-make-green",
@@ -889,7 +932,8 @@
             "gl": "Xuntar dúas mans",
             "es": "Juntar dos manos"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_blue_and_yellow_make_green"
         },
         {
           "id": "5_6.marzo.s4.which-piece-goes-here",
@@ -922,7 +966,8 @@
             "gl": "Mover a man de arriba abaixo",
             "es": "Mover la mano de arriba abajo"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_from_light_to_dark"
         }
       ]
     }

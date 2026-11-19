@@ -21,7 +21,8 @@
             "gl": "Abrir os brazos dentro da aula",
             "es": "Abrir los brazos dentro del aula"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_classroom"
         },
         {
           "id": "2_3.setembro.s1.peg",
@@ -43,7 +44,8 @@
             "gl": "Abrir e pechar a fiambreira",
             "es": "Abrir y cerrar la fiambrera"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_lunchbox"
         },
         {
           "id": "2_3.setembro.s1.water-cup",
@@ -54,7 +56,8 @@
             "gl": "Beber do propio vaso",
             "es": "Beber del propio vaso"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_water_cup"
         },
         {
           "id": "2_3.setembro.s1.name-tag",
@@ -65,7 +68,8 @@
             "gl": "Sinalar a etiqueta co nome",
             "es": "Señalar la etiqueta con el nombre"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_name_tag"
         },
         {
           "id": "2_3.setembro.s1.toy-box",
@@ -110,7 +114,8 @@
             "gl": "Poñerse un detrás doutro",
             "es": "Ponerse uno detrás de otro"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_line_up"
         },
         {
           "id": "2_3.setembro.s1.hang-up",
@@ -121,7 +126,8 @@
             "gl": "Colgar o abrigo na percha",
             "es": "Colgar el abrigo en la percha"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_hang_up"
         },
         {
           "id": "2_3.setembro.s1.say-hello",
@@ -132,7 +138,8 @@
             "gl": "Acenar a un compañeiro",
             "es": "Saludar a un compañero"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_say_hello"
         },
         {
           "id": "2_3.setembro.s1.bring",
@@ -143,7 +150,8 @@
             "gl": "Traer un xoguete á alfombra",
             "es": "Traer un juguete a la alfombra"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_bring"
         },
         {
           "id": "2_3.setembro.s1.neat",
@@ -165,7 +173,8 @@
             "gl": "Sentarse preto dun amigo",
             "es": "Sentarse cerca de un amigo"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_nearby"
         },
         {
           "id": "2_3.setembro.s1.welcome-back",
@@ -187,7 +196,8 @@
             "gl": "Estirarse moi alto",
             "es": "Estirarse muy alto"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_grown_up"
         },
         {
           "id": "2_3.setembro.s1.where-does-it-go",
@@ -232,7 +242,8 @@
             "gl": "Meter o xoguete na caixa",
             "es": "Meter el juguete en la caja"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_back_in_the_box"
         }
       ]
     },
@@ -274,7 +285,8 @@
             "gl": "Empurrar o tren pola vía",
             "es": "Empujar el tren por la vía"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_train_set"
         },
         {
           "id": "2_3.setembro.s2.toy-car",
@@ -285,7 +297,8 @@
             "gl": "Rodar o coche pola mesa",
             "es": "Rodar el cochecito por la mesa"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_toy_car"
         },
         {
           "id": "2_3.setembro.s2.play-dough",
@@ -296,7 +309,8 @@
             "gl": "Facer unha bóla de plastilina",
             "es": "Hacer una bola de plastilina"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_play_dough"
         },
         {
           "id": "2_3.setembro.s2.puzzle",
@@ -352,7 +366,8 @@
             "gl": "Meter a peza no seu oco",
             "es": "Meter la pieza en su hueco"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_fit"
         },
         {
           "id": "2_3.setembro.s2.pour-tea",
@@ -363,7 +378,8 @@
             "gl": "Inclinar a teteira de xoguete",
             "es": "Inclinar la tetera de juguete"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_pour_tea"
         },
         {
           "id": "2_3.setembro.s2.hand-it-over",
@@ -385,7 +401,8 @@
             "gl": "Mover a torre con coidado",
             "es": "Mover la torre con cuidado"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_wobbly_tower"
         },
         {
           "id": "2_3.setembro.s2.tall-tower",
@@ -484,7 +501,8 @@
             "gl": "Cantar mentres se recolle",
             "es": "Cantar mientras se recoge"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_tidy_up_song"
         },
         {
           "id": "2_3.setembro.s3.box-lid",
@@ -495,7 +513,8 @@
             "gl": "Pechar a tapa da caixa",
             "es": "Cerrar la tapa de la caja"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_box_lid"
         },
         {
           "id": "2_3.setembro.s3.drawer",
@@ -506,7 +525,8 @@
             "gl": "Abrir e pechar o caixón",
             "es": "Abrir y cerrar el cajón"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_drawer"
         },
         {
           "id": "2_3.setembro.s3.crayon-pot",
@@ -517,7 +537,8 @@
             "gl": "Meter as ceras no bote",
             "es": "Meter las ceras en el bote"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_crayon_pot"
         },
         {
           "id": "2_3.setembro.s3.tray",
@@ -528,7 +549,8 @@
             "gl": "Levar a bandexa coas dúas mans",
             "es": "Llevar la bandeja con las dos manos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_tray"
         },
         {
           "id": "2_3.setembro.s3.mat",
@@ -550,7 +572,8 @@
             "gl": "Sinalar o sitio de cada cousa",
             "es": "Señalar el sitio de cada cosa"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_place"
         },
         {
           "id": "2_3.setembro.s3.pick-up-toys",
@@ -596,7 +619,8 @@
             "gl": "Levar a bandexa amodo",
             "es": "Llevar la bandeja despacio"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_carry_carefully"
         },
         {
           "id": "2_3.setembro.s3.shut-the-drawer",
@@ -607,7 +631,8 @@
             "gl": "Empurrar o caixón",
             "es": "Empujar el cajón"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_shut_the_drawer"
         },
         {
           "id": "2_3.setembro.s3.sorted",
@@ -640,7 +665,8 @@
             "gl": "Axudar a un amigo a recoller",
             "es": "Ayudar a un amigo a recoger"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_helpful"
         },
         {
           "id": "2_3.setembro.s3.in-order",
@@ -651,7 +677,8 @@
             "gl": "Pousar tres cousas en fila",
             "es": "Poner tres cosas en fila"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_in_order"
         },
         {
           "id": "2_3.setembro.s3.clean-up-clean-up",
@@ -662,7 +689,8 @@
             "gl": "Cantar e recoller",
             "es": "Cantar y recoger"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_clean_up_clean_up"
         },
         {
           "id": "2_3.setembro.s3.good-job",
@@ -695,7 +723,8 @@
             "gl": "Recoller en dúas quendas",
             "es": "Recoger en dos turnos"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_first_the_blocks_then_the_cars"
         }
       ]
     },
@@ -715,7 +744,8 @@
             "gl": "Sinalar a un compañeiro",
             "es": "Señalar a un compañero"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_classmate"
         },
         {
           "id": "2_3.setembro.s4.circle-time",
@@ -726,7 +756,8 @@
             "gl": "Sentarse en círculo",
             "es": "Sentarse en círculo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_circle_time"
         },
         {
           "id": "2_3.setembro.s4.helper",
@@ -737,7 +768,8 @@
             "gl": "Poñer unha medalla de axudante",
             "es": "Ponerse una medalla de ayudante"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_helper"
         },
         {
           "id": "2_3.setembro.s4.sticker-chart",
@@ -759,7 +791,8 @@
             "gl": "Acenar a todos",
             "es": "Saludar a todos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_hand_wave"
         },
         {
           "id": "2_3.setembro.s4.photo-wall",
@@ -770,7 +803,8 @@
             "gl": "Buscar a propia foto no mural",
             "es": "Buscar la propia foto en el mural"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_photo_wall"
         },
         {
           "id": "2_3.setembro.s4.cushion-circle",
@@ -781,7 +815,8 @@
             "gl": "Sentarse cada un no seu coxín",
             "es": "Sentarse cada uno en su cojín"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_cushion_circle"
         },
         {
           "id": "2_3.setembro.s4.hold-hands",
@@ -828,7 +863,8 @@
             "gl": "Dar a man a un amigo para erguerse",
             "es": "Dar la mano a un amigo para levantarse"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_help_a_friend"
         },
         {
           "id": "2_3.setembro.s4.hug-a-friend",
@@ -839,7 +875,8 @@
             "gl": "Dar unha aperta suave",
             "es": "Dar un abrazo suave"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_hug_a_friend"
         },
         {
           "id": "2_3.setembro.s4.kind-hearted",

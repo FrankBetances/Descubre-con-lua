@@ -32,7 +32,8 @@
             "gl": "Sinalar os ollos",
             "es": "Señalar los ojos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_sight"
         },
         {
           "id": "5_6.outubro.s1.hearing",
@@ -43,7 +44,8 @@
             "gl": "Sinalar as orellas",
             "es": "Señalar las orejas"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_hearing"
         },
         {
           "id": "5_6.outubro.s1.smell-sense",
@@ -54,7 +56,8 @@
             "gl": "Sinalar o nariz",
             "es": "Señalar la nariz"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_sense_of_smell"
         },
         {
           "id": "5_6.outubro.s1.taste-sense",
@@ -65,7 +68,8 @@
             "gl": "Sinalar a lingua",
             "es": "Señalar la lengua"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_sense_of_taste"
         },
         {
           "id": "5_6.outubro.s1.touch-sense",
@@ -76,7 +80,8 @@
             "gl": "Amosar as mans abertas",
             "es": "Enseñar las manos abiertas"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_sense_of_touch"
         },
         {
           "id": "5_6.outubro.s1.mystery-bag",
@@ -121,7 +126,8 @@
             "gl": "Cheirar e sinalar",
             "es": "Oler y señalar"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_sniff_out"
         },
         {
           "id": "5_6.outubro.s1.feel-without-looking",
@@ -155,7 +161,8 @@
             "gl": "Tocar varias texturas",
             "es": "Tocar varias texturas"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_sensory"
         },
         {
           "id": "5_6.outubro.s1.aromatic",
@@ -177,7 +184,8 @@
             "gl": "Poñer o dedo nos beizos",
             "es": "Poner el dedo en los labios"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_silent_room"
         },
         {
           "id": "5_6.outubro.s1.sharp-eyed",
@@ -221,7 +229,8 @@
             "gl": "Sinalar nariz e lingua",
             "es": "Señalar nariz y lengua"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_we_smell_with_our_nose_and_taste_with_our_tongue"
         },
         {
           "id": "5_6.outubro.s1.listen-with-your-eyes-closed",
@@ -252,7 +261,8 @@
             "gl": "Pousar dous dedos na boneca",
             "es": "Poner dos dedos en la muñeca"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_pulse"
         },
         {
           "id": "5_6.outubro.s2.chest",
@@ -263,7 +273,8 @@
             "gl": "Pousar a man no peito",
             "es": "Poner la mano en el pecho"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_chest"
         },
         {
           "id": "5_6.outubro.s2.lungs",
@@ -274,7 +285,8 @@
             "gl": "Inchar o peito de aire",
             "es": "Inflar el pecho de aire"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_lungs"
         },
         {
           "id": "5_6.outubro.s2.muscles",
@@ -285,7 +297,8 @@
             "gl": "Amosar o brazo forte",
             "es": "Enseñar el brazo fuerte"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_muscles"
         },
         {
           "id": "5_6.outubro.s2.bones",
@@ -296,7 +309,8 @@
             "gl": "Tocar os ósos do brazo",
             "es": "Tocar los huesos del brazo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_bones"
         },
         {
           "id": "5_6.outubro.s2.skeleton",
@@ -318,7 +332,8 @@
             "gl": "Escoitar o peito dun amigo cun tubo de cartón",
             "es": "Escuchar el pecho de un amigo con un tubo de cartón"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_listening_tube"
         },
         {
           "id": "5_6.outubro.s2.feel-your-heartbeat",
@@ -341,7 +356,8 @@
             "gl": "Correr moi rápido no sitio",
             "es": "Correr muy rápido en el sitio"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_sprint_fast"
         },
         {
           "id": "5_6.outubro.s2.breathe-slow",
@@ -363,7 +379,8 @@
             "gl": "Tensar o brazo",
             "es": "Tensar el brazo"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_flex"
         },
         {
           "id": "5_6.outubro.s2.relax",
@@ -385,7 +402,8 @@
             "gl": "Bater rápido no peito",
             "es": "Golpear rápido en el pecho"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_racing_heart"
         },
         {
           "id": "5_6.outubro.s2.resting",
@@ -396,7 +414,8 @@
             "gl": "Deitarse tranquilos",
             "es": "Tumbarse tranquilos"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_resting"
         },
         {
           "id": "5_6.outubro.s2.strong-muscled",
@@ -407,7 +426,8 @@
             "gl": "Amosar os dous brazos fortes",
             "es": "Enseñar los dos brazos fuertes"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_muscular"
         },
         {
           "id": "5_6.outubro.s2.bony",
@@ -418,7 +438,8 @@
             "gl": "Tocar o nocello",
             "es": "Tocar el tobillo"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_bony"
         },
         {
           "id": "5_6.outubro.s2.can-you-feel-your-heart",
@@ -429,7 +450,8 @@
             "gl": "Pousar a man no peito",
             "es": "Poner la mano en el pecho"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_can_you_feel_your_heart"
         },
         {
           "id": "5_6.outubro.s2.boom-boom-boom-boom",
@@ -440,7 +462,8 @@
             "gl": "Bater suave no peito",
             "es": "Golpear suave en el pecho"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_boom_boom_boom_boom"
         },
         {
           "id": "5_6.outubro.s2.after-running-the-heart-beats-faster",
@@ -451,7 +474,8 @@
             "gl": "Correr e pousar a man no peito",
             "es": "Correr y poner la mano en el pecho"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_after_running_the_heart_beats_faster"
         },
         {
           "id": "5_6.outubro.s2.breathe-in-breathe-out",
@@ -462,7 +486,8 @@
             "gl": "Inchar e desinchar o peito",
             "es": "Inflar y desinflar el pecho"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_breathe_in_breathe_out"
         }
       ]
     },
@@ -482,7 +507,8 @@
             "gl": "Dobrar o cóbado",
             "es": "Doblar el codo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_joint"
         },
         {
           "id": "5_6.outubro.s3.spine",
@@ -504,7 +530,8 @@
             "gl": "Sentarse ben dereito",
             "es": "Sentarse bien recto"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_posture"
         },
         {
           "id": "5_6.outubro.s3.warm-up-exercise",
@@ -526,7 +553,8 @@
             "gl": "Estirar amodo",
             "es": "Estirar despacio"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_stretch_time"
         },
         {
           "id": "5_6.outubro.s3.yoga-mat",
@@ -548,7 +576,8 @@
             "gl": "Poñer un pé no xeonllo",
             "es": "Poner un pie en la rodilla"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_tree_pose"
         },
         {
           "id": "5_6.outubro.s3.rotate-arms",
@@ -581,7 +610,8 @@
             "gl": "Facer un gato coas costas",
             "es": "Hacer un gato con la espalda"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_arch_your_back"
         },
         {
           "id": "5_6.outubro.s3.lunge",
@@ -603,7 +633,8 @@
             "gl": "Sacudir todo o corpo",
             "es": "Sacudir todo el cuerpo"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_shake_out"
         },
         {
           "id": "5_6.outubro.s3.flexible-body",
@@ -614,7 +645,8 @@
             "gl": "Dobrarse amodo",
             "es": "Doblarse despacio"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_flexible_body"
         },
         {
           "id": "5_6.outubro.s3.upright-posture",
@@ -658,7 +690,8 @@
             "gl": "Mover todo o corpo",
             "es": "Mover todo el cuerpo"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_warm_up_your_body"
         },
         {
           "id": "5_6.outubro.s3.stand-like-a-tree",
@@ -691,7 +724,8 @@
             "gl": "Sacudir o corpo",
             "es": "Sacudir el cuerpo"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_shake_it_all_out"
         }
       ]
     },
@@ -711,7 +745,8 @@
             "gl": "Pousar a cabeza nas mans",
             "es": "Apoyar la cabeza en las manos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_rest_time"
         },
         {
           "id": "5_6.outubro.s4.energy",
@@ -733,7 +768,8 @@
             "gl": "Facer os xestos da noite en orde",
             "es": "Hacer los gestos de la noche en orden"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_bedtime_routine"
         },
         {
           "id": "5_6.outubro.s4.alarm-clock",
@@ -744,7 +780,8 @@
             "gl": "Facer «ring ring»",
             "es": "Hacer «ring ring»"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_alarm_clock"
         },
         {
           "id": "5_6.outubro.s4.night-light",
@@ -766,7 +803,8 @@
             "gl": "Debuxar no aire",
             "es": "Dibujar en el aire"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_dream_journal"
         },
         {
           "id": "5_6.outubro.s4.hours-of-sleep",
@@ -812,7 +850,8 @@
             "gl": "Poñer o pixama imaxinario",
             "es": "Ponerse el pijama imaginario"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_get_ready_for_bed"
         },
         {
           "id": "5_6.outubro.s4.wake-up-early",
@@ -823,7 +862,8 @@
             "gl": "Espreguizarse e sentarse",
             "es": "Desperezarse y sentarse"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_wake_up_early"
         },
         {
           "id": "5_6.outubro.s4.tell-a-dream",
@@ -856,7 +896,8 @@
             "gl": "Inclinar a cabeza",
             "es": "Inclinar la cabeza"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_drowsy"
         },
         {
           "id": "5_6.outubro.s4.wide-awake",
@@ -867,7 +908,8 @@
             "gl": "Abrir moito os ollos",
             "es": "Abrir mucho los ojos"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_wide_awake"
         },
         {
           "id": "5_6.outubro.s4.well-slept",
@@ -878,7 +920,8 @@
             "gl": "Estirar os brazos contentos",
             "es": "Estirar los brazos contentos"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_rested_and_happy"
         },
         {
           "id": "5_6.outubro.s4.what-did-you-dream-about",
@@ -922,7 +965,8 @@
             "gl": "Apagar e pechar os ollos",
             "es": "Apagar y cerrar los ojos"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_lights_out_eyes_closed"
         }
       ]
     }

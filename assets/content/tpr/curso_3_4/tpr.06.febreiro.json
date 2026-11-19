@@ -45,7 +45,8 @@
           "tprAction": {
             "gl": "Poñer dous dedos na cabeza coma orellas longas",
             "es": "Poner dos dedos en la cabeza como orejas largas"
-          }
+          },
+          "lamina": "pal_rabbit"
         },
         {
           "id": "3_4.febreiro.s1.bird",
@@ -56,7 +57,8 @@
           "tprAction": {
             "gl": "Abrir e pechar os brazos amodo coma ás",
             "es": "Abrir y cerrar los brazos despacio como alas"
-          }
+          },
+          "lamina": "pal_bird"
         },
         {
           "id": "3_4.febreiro.s1.turtle",
@@ -67,7 +69,8 @@
           "tprAction": {
             "gl": "Encoller a cabeza entre os ombros moi amodo",
             "es": "Encoger la cabeza entre los hombros muy despacio"
-          }
+          },
+          "lamina": "pal_turtle"
         },
         {
           "id": "3_4.febreiro.s1.parrot",
@@ -78,7 +81,8 @@
           "tprAction": {
             "gl": "Repetir cun xesto o que di a persoa adulta",
             "es": "Repetir con un gesto lo que dice la persona adulta"
-          }
+          },
+          "lamina": "pal_parrot"
         },
         {
           "id": "3_4.febreiro.s1.hamster",
@@ -89,7 +93,8 @@
           "tprAction": {
             "gl": "Inflar as meixelas coma se gardasemos comida",
             "es": "Inflar los mofletes como si guardáramos comida"
-          }
+          },
+          "lamina": "pal_hamster"
         },
         {
           "id": "3_4.febreiro.s1.pat",
@@ -111,7 +116,8 @@
           "tprAction": {
             "gl": "Estender a man aberta cunha comida imaxinaria",
             "es": "Extender la mano abierta con comida imaginaria"
-          }
+          },
+          "lamina": "pal_feed"
         },
         {
           "id": "3_4.febreiro.s1.bark",
@@ -122,7 +128,8 @@
           "tprAction": {
             "gl": "Abrir e pechar a boca coma un can que ladra",
             "es": "Abrir y cerrar la boca como un perro que ladra"
-          }
+          },
+          "lamina": "pal_bark"
         },
         {
           "id": "3_4.febreiro.s1.purr",
@@ -133,7 +140,8 @@
           "tprAction": {
             "gl": "Fregar a meixela na man coma un gato contento",
             "es": "Frotar la mejilla en la mano como un gato contento"
-          }
+          },
+          "lamina": "pal_purr"
         },
         {
           "id": "3_4.febreiro.s1.wag",
@@ -144,7 +152,8 @@
           "tprAction": {
             "gl": "Mover as cadeiras coma un rabo contento",
             "es": "Mover las caderas como una cola contenta"
-          }
+          },
+          "lamina": "pal_wag"
         },
         {
           "id": "3_4.febreiro.s1.fluffy",
@@ -155,7 +164,8 @@
           "tprAction": {
             "gl": "Acariñar un coello imaxinario moi fofo",
             "es": "Acariciar un conejo imaginario muy esponjoso"
-          }
+          },
+          "lamina": "pal_fluffy"
         },
         {
           "id": "3_4.febreiro.s1.cute",
@@ -166,7 +176,8 @@
           "tprAction": {
             "gl": "Xuntar as mans baixo o queixo e sorrir",
             "es": "Juntar las manos bajo la barbilla y sonreír"
-          }
+          },
+          "lamina": "pal_cute"
         },
         {
           "id": "3_4.febreiro.s1.clever",
@@ -199,7 +210,8 @@
           "tprAction": {
             "gl": "Facer bigotes cos dedos e dicir «miau»",
             "es": "Hacer bigotes con los dedos y decir «miau»"
-          }
+          },
+          "lamina": "pal_meow"
         },
         {
           "id": "3_4.febreiro.s1.woof-woof",
@@ -210,7 +222,8 @@
           "tprAction": {
             "gl": "Poñer as mans coma patas e dicir «guau, guau»",
             "es": "Poner las manos como patas y decir «guau, guau»"
-          }
+          },
+          "lamina": "pal_woof_woof"
         },
         {
           "id": "3_4.febreiro.s1.come-here-puppy",
@@ -221,7 +234,8 @@
           "tprAction": {
             "gl": "Chamar cun aceno suave e dar palmadas nos xeonllos",
             "es": "Llamar con un gesto suave y dar palmadas en las rodillas"
-          }
+          },
+          "lamina": "pal_come_here_puppy"
         },
         {
           "id": "3_4.febreiro.s1.like-a-cat",
@@ -232,7 +246,8 @@
           "tprAction": {
             "gl": "Estirarse no chan coma un gato ao espertar",
             "es": "Estirarse en el suelo como un gato al despertar"
-          }
+          },
+          "lamina": "pal_like_a_cat"
         }
       ]
     },
@@ -264,7 +279,8 @@
           "tprAction": {
             "gl": "Empurrar a punta do nariz cara arriba cun dedo",
             "es": "Empujar la punta de la nariz hacia arriba con un dedo"
-          }
+          },
+          "lamina": "pal_pig"
         },
         {
           "id": "3_4.febreiro.s2.hen",
@@ -275,7 +291,8 @@
           "tprAction": {
             "gl": "Dobrar os brazos coma ás e movelos",
             "es": "Doblar los brazos como alas y moverlos"
-          }
+          },
+          "lamina": "pal_hen"
         },
         {
           "id": "3_4.febreiro.s2.duck",
@@ -286,7 +303,8 @@
           "tprAction": {
             "gl": "Xuntar as mans diante da boca coma un pico",
             "es": "Juntar las manos delante de la boca como un pico"
-          }
+          },
+          "lamina": "pal_duck"
         },
         {
           "id": "3_4.febreiro.s2.horse",
@@ -321,7 +339,8 @@
           "tprAction": {
             "gl": "Debuxar un valado no aire cos brazos",
             "es": "Dibujar una valla en el aire con los brazos"
-          }
+          },
+          "lamina": "pal_farm"
         },
         {
           "id": "3_4.febreiro.s2.gallop",
@@ -344,7 +363,8 @@
           "tprAction": {
             "gl": "Camiñar balanceándose coma un pato",
             "es": "Caminar balanceándose como un pato"
-          }
+          },
+          "lamina": "pal_waddle"
         },
         {
           "id": "3_4.febreiro.s2.peck",
@@ -355,7 +375,8 @@
           "tprAction": {
             "gl": "Picar no chan cos dedos xuntos coma un pico",
             "es": "Picotear el suelo con los dedos juntos como un pico"
-          }
+          },
+          "lamina": "pal_peck"
         },
         {
           "id": "3_4.febreiro.s2.plough",
@@ -366,7 +387,8 @@
           "tprAction": {
             "gl": "Empurrar un arado imaxinario camiñando amodo",
             "es": "Empujar un arado imaginario caminando despacio"
-          }
+          },
+          "lamina": "pal_plough"
         },
         {
           "id": "3_4.febreiro.s2.graze",
@@ -377,7 +399,8 @@
           "tprAction": {
             "gl": "Baixar a cabeza e mover a boca coma quen come herba",
             "es": "Bajar la cabeza y mover la boca como quien come hierba"
-          }
+          },
+          "lamina": "pal_graze"
         },
         {
           "id": "3_4.febreiro.s2.pink",
@@ -388,7 +411,8 @@
           "tprAction": {
             "gl": "Sinalar algo rosa na aula",
             "es": "Señalar algo rosa en el aula"
-          }
+          },
+          "lamina": "pal_pink"
         },
         {
           "id": "3_4.febreiro.s2.dirty",
@@ -399,7 +423,8 @@
           "tprAction": {
             "gl": "Mirar as mans con cara de noxo divertido",
             "es": "Mirarse las manos con cara de asco divertido"
-          }
+          },
+          "lamina": "pal_dirty"
         },
         {
           "id": "3_4.febreiro.s2.lazy",
@@ -432,7 +457,8 @@
           "tprAction": {
             "gl": "Facer cornos cos dedos e dicir «muuu»",
             "es": "Hacer cuernos con los dedos y decir «muuu»"
-          }
+          },
+          "lamina": "pal_moo"
         },
         {
           "id": "3_4.febreiro.s2.oink-oink",
@@ -443,7 +469,8 @@
           "tprAction": {
             "gl": "Levantar o nariz cun dedo e dicir «oinc, oinc»",
             "es": "Levantar la nariz con un dedo y decir «oinc, oinc»"
-          }
+          },
+          "lamina": "pal_oink_oink"
         },
         {
           "id": "3_4.febreiro.s2.two-by-two",
@@ -454,7 +481,8 @@
           "tprAction": {
             "gl": "Poñerse por parellas e camiñar da man",
             "es": "Ponerse por parejas y caminar de la mano"
-          }
+          },
+          "lamina": "pal_two_by_two"
         },
         {
           "id": "3_4.febreiro.s2.in-the-barn",
@@ -465,7 +493,8 @@
           "tprAction": {
             "gl": "Entrar agachados nunha corte imaxinaria",
             "es": "Entrar agachados en un establo imaginario"
-          }
+          },
+          "lamina": "pal_in_the_barn"
         }
       ]
     },
@@ -497,7 +526,8 @@
           "tprAction": {
             "gl": "Abrir as mans arredor da cara coma unha melena",
             "es": "Abrir las manos alrededor de la cara como una melena"
-          }
+          },
+          "lamina": "pal_lion"
         },
         {
           "id": "3_4.febreiro.s3.elephant",
@@ -508,7 +538,8 @@
           "tprAction": {
             "gl": "Estender un brazo diante do nariz coma unha tromba",
             "es": "Extender un brazo delante de la nariz como una trompa"
-          }
+          },
+          "lamina": "pal_elephant"
         },
         {
           "id": "3_4.febreiro.s3.monkey",
@@ -519,7 +550,8 @@
           "tprAction": {
             "gl": "Dar pequenos brincos coas mans nas axilas",
             "es": "Dar saltitos con las manos en las axilas"
-          }
+          },
+          "lamina": "pal_monkey"
         },
         {
           "id": "3_4.febreiro.s3.giraffe",
@@ -530,7 +562,8 @@
           "tprAction": {
             "gl": "Estirar moito o pescozo cara arriba",
             "es": "Estirar mucho el cuello hacia arriba"
-          }
+          },
+          "lamina": "pal_giraffe"
         },
         {
           "id": "3_4.febreiro.s3.snake",
@@ -553,7 +586,8 @@
           "tprAction": {
             "gl": "Abrir e pechar os brazos estirados coma unha boca grande",
             "es": "Abrir y cerrar los brazos estirados como una boca grande"
-          }
+          },
+          "lamina": "pal_crocodile"
         },
         {
           "id": "3_4.febreiro.s3.roar",
@@ -576,7 +610,8 @@
           "tprAction": {
             "gl": "Balancear os brazos coma colgados dunha póla",
             "es": "Balancear los brazos como colgados de una rama"
-          }
+          },
+          "lamina": "pal_swing"
         },
         {
           "id": "3_4.febreiro.s3.slither",
@@ -599,7 +634,8 @@
           "tprAction": {
             "gl": "Xuntar as palmas de golpe coma unha boca que se pecha",
             "es": "Juntar las palmas de golpe como una boca que se cierra"
-          }
+          },
+          "lamina": "pal_snap"
         },
         {
           "id": "3_4.febreiro.s3.scratch",
@@ -621,7 +657,8 @@
           "tprAction": {
             "gl": "Estirarse cara arriba e cara aos lados á vez",
             "es": "Estirarse hacia arriba y hacia los lados a la vez"
-          }
+          },
+          "lamina": "pal_huge"
         },
         {
           "id": "3_4.febreiro.s3.green",
@@ -677,7 +714,8 @@
           "tprAction": {
             "gl": "Encoller as pernas de golpe e rir",
             "es": "Encoger las piernas de golpe y reír"
-          }
+          },
+          "lamina": "pal_watch_out_crocodile"
         },
         {
           "id": "3_4.febreiro.s3.stomp-like-a-bear",
@@ -688,7 +726,8 @@
           "tprAction": {
             "gl": "Pisar forte e amodo coma un oso",
             "es": "Pisar fuerte y despacio como un oso"
-          }
+          },
+          "lamina": "pal_stomp_like_a_bear"
         },
         {
           "id": "3_4.febreiro.s3.tall-like-a-giraffe",
@@ -699,7 +738,8 @@
           "tprAction": {
             "gl": "Poñerse de puntas co pescozo estirado",
             "es": "Ponerse de puntillas con el cuello estirado"
-          }
+          },
+          "lamina": "pal_tall_like_a_giraffe"
         }
       ]
     },
@@ -755,7 +795,8 @@
           "tprAction": {
             "gl": "Mover un rabo imaxinario coas mans detrás",
             "es": "Mover una cola imaginaria con las manos detrás"
-          }
+          },
+          "lamina": "pal_tail"
         },
         {
           "id": "3_4.febreiro.s4.wings",
@@ -766,7 +807,8 @@
           "tprAction": {
             "gl": "Abrir os brazos amplos coma ás grandes",
             "es": "Abrir los brazos amplios como alas grandes"
-          }
+          },
+          "lamina": "pal_wings"
         },
         {
           "id": "3_4.febreiro.s4.feather",
@@ -777,7 +819,8 @@
           "tprAction": {
             "gl": "Soprar unha pluma imaxinaria e seguila cos ollos",
             "es": "Soplar una pluma imaginaria y seguirla con los ojos"
-          }
+          },
+          "lamina": "pal_feather"
         },
         {
           "id": "3_4.febreiro.s4.parade",
@@ -811,7 +854,8 @@
           "tprAction": {
             "gl": "Mover os brazos moi rápido coma ás pequenas",
             "es": "Mover los brazos muy rápido como alas pequeñas"
-          }
+          },
+          "lamina": "pal_flap"
         },
         {
           "id": "3_4.febreiro.s4.pretend",
@@ -833,7 +877,8 @@
           "tprAction": {
             "gl": "Inflar as meixelas e dicir «cróac»",
             "es": "Inflar los mofletes y decir «croac»"
-          }
+          },
+          "lamina": "pal_croak"
         },
         {
           "id": "3_4.febreiro.s4.leap",
@@ -866,7 +911,8 @@
           "tprAction": {
             "gl": "Facer un xesto distinto ao da compañeira",
             "es": "Hacer un gesto distinto al de la compañera"
-          }
+          },
+          "lamina": "pal_different"
         },
         {
           "id": "3_4.febreiro.s4.same",
@@ -888,7 +934,8 @@
           "tprAction": {
             "gl": "Agocharse detrás das mans e quedar quietos",
             "es": "Esconderse detrás de las manos y quedarse quietos"
-          }
+          },
+          "lamina": "pal_hidden"
         },
         {
           "id": "3_4.febreiro.s4.who-am-i",
@@ -910,7 +957,8 @@
           "tprAction": {
             "gl": "Quitar a máscara imaxinaria e sorrir",
             "es": "Quitarse la máscara imaginaria y sonreír"
-          }
+          },
+          "lamina": "pal_take_off_your_mask"
         },
         {
           "id": "3_4.febreiro.s4.jump-like-a-frog",
@@ -921,7 +969,8 @@
           "tprAction": {
             "gl": "Saltar desde agachados coma unha ra",
             "es": "Saltar desde agachados como una rana"
-          }
+          },
+          "lamina": "pal_jump_like_a_frog"
         },
         {
           "id": "3_4.febreiro.s4.fly-like-a-bird",

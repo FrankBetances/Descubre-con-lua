@@ -57,7 +57,8 @@
           "tprAction": {
             "gl": "Abrir e pechar unha billa imaxinaria",
             "es": "Abrir y cerrar un grifo imaginario"
-          }
+          },
+          "lamina": "pal_tap"
         },
         {
           "id": "3_4.maio.s1.bubbles",
@@ -68,7 +69,8 @@
           "tprAction": {
             "gl": "Soprar burbullas imaxinarias e tocalas cun dedo",
             "es": "Soplar burbujas imaginarias y tocarlas con un dedo"
-          }
+          },
+          "lamina": "pal_bubbles"
         },
         {
           "id": "3_4.maio.s1.sink",
@@ -79,7 +81,8 @@
           "tprAction": {
             "gl": "Inclinarse sobre un lavabo imaxinario",
             "es": "Inclinarse sobre un lavabo imaginario"
-          }
+          },
+          "lamina": "pal_sink"
         },
         {
           "id": "3_4.maio.s1.nails",
@@ -90,7 +93,8 @@
           "tprAction": {
             "gl": "Mirar as unllas cos dedos estirados",
             "es": "Mirarse las uñas con los dedos estirados"
-          }
+          },
+          "lamina": "pal_nails"
         },
         {
           "id": "3_4.maio.s1.wash",
@@ -137,7 +141,8 @@
           "tprAction": {
             "gl": "Pasar as mans baixo unha auga imaxinaria",
             "es": "Pasar las manos bajo un agua imaginaria"
-          }
+          },
+          "lamina": "pal_rinse"
         },
         {
           "id": "3_4.maio.s1.scrub",
@@ -148,7 +153,8 @@
           "tprAction": {
             "gl": "Refregar o dorso das mans con forza",
             "es": "Restregar el dorso de las manos con fuerza"
-          }
+          },
+          "lamina": "pal_scrub"
         },
         {
           "id": "3_4.maio.s1.clean",
@@ -159,7 +165,8 @@
           "tprAction": {
             "gl": "Amosar as mans limpas e sorrir",
             "es": "Enseñar las manos limpias y sonreír"
-          }
+          },
+          "lamina": "pal_clean"
         },
         {
           "id": "3_4.maio.s1.soapy",
@@ -170,7 +177,8 @@
           "tprAction": {
             "gl": "Mover as mans coma se esvarasen de xabón",
             "es": "Mover las manos como si resbalaran de jabón"
-          }
+          },
+          "lamina": "pal_soapy"
         },
         {
           "id": "3_4.maio.s1.bubbly",
@@ -181,7 +189,8 @@
           "tprAction": {
             "gl": "Abrir e pechar os dedos coma burbullas que estouran",
             "es": "Abrir y cerrar los dedos como burbujas que estallan"
-          }
+          },
+          "lamina": "pal_bubbly"
         },
         {
           "id": "3_4.maio.s1.cool",
@@ -192,7 +201,8 @@
           "tprAction": {
             "gl": "Soprar suave na palma da man",
             "es": "Soplar suave en la palma de la mano"
-          }
+          },
+          "lamina": "pal_cool"
         },
         {
           "id": "3_4.maio.s1.wash-your-hands",
@@ -203,7 +213,8 @@
           "tprAction": {
             "gl": "Facer o xesto de lavar as mans ao escoitar a orde",
             "es": "Hacer el gesto de lavarse las manos al oír la orden"
-          }
+          },
+          "lamina": "pal_wash_your_hands"
         },
         {
           "id": "3_4.maio.s1.rub-your-hands",
@@ -214,7 +225,8 @@
           "tprAction": {
             "gl": "Fregar as mans moi rápido para quentalas",
             "es": "Frotarse las manos muy rápido para calentarlas"
-          }
+          },
+          "lamina": "pal_rub_your_hands"
         },
         {
           "id": "3_4.maio.s1.wash-then-dry",
@@ -225,7 +237,8 @@
           "tprAction": {
             "gl": "Lavar as mans imaxinarias e logo secalas",
             "es": "Lavarse las manos imaginarias y luego secarlas"
-          }
+          },
+          "lamina": "pal_wash_then_dry"
         },
         {
           "id": "3_4.maio.s1.under-the-tap",
@@ -256,7 +269,8 @@
           "tprAction": {
             "gl": "Sentar no chan e mover as mans coma na auga",
             "es": "Sentarse en el suelo y mover las manos como en el agua"
-          }
+          },
+          "lamina": "pal_bath"
         },
         {
           "id": "3_4.maio.s2.sponge",
@@ -267,7 +281,8 @@
           "tprAction": {
             "gl": "Apertar unha esponxa imaxinaria sobre o brazo",
             "es": "Apretar una esponja imaginaria sobre el brazo"
-          }
+          },
+          "lamina": "pal_sponge"
         },
         {
           "id": "3_4.maio.s2.shampoo",
@@ -278,7 +293,8 @@
           "tprAction": {
             "gl": "Masaxear a cabeza coas puntas dos dedos",
             "es": "Masajear la cabeza con las puntas de los dedos"
-          }
+          },
+          "lamina": "pal_shampoo"
         },
         {
           "id": "3_4.maio.s2.rubber-duck",
@@ -289,7 +305,8 @@
           "tprAction": {
             "gl": "Facer flotar un patiño imaxinario sobre a palma",
             "es": "Hacer flotar un patito imaginario sobre la palma"
-          }
+          },
+          "lamina": "pal_rubber_duck"
         },
         {
           "id": "3_4.maio.s2.mirror",
@@ -300,7 +317,8 @@
           "tprAction": {
             "gl": "Mirarse nun espello imaxinario e sorrir",
             "es": "Mirarse en un espejo imaginario y sonreír"
-          }
+          },
+          "lamina": "pal_mirror"
         },
         {
           "id": "3_4.maio.s2.comb",
@@ -311,7 +329,8 @@
           "tprAction": {
             "gl": "Peitear o pelo cun peite imaxinario",
             "es": "Peinarse con un peine imaginario"
-          }
+          },
+          "lamina": "pal_comb"
         },
         {
           "id": "3_4.maio.s2.toothbrush",
@@ -322,7 +341,8 @@
           "tprAction": {
             "gl": "Suxeitar un cepillo de dentes imaxinario",
             "es": "Sujetar un cepillo de dientes imaginario"
-          }
+          },
+          "lamina": "pal_toothbrush"
         },
         {
           "id": "3_4.maio.s2.float",
@@ -333,7 +353,8 @@
           "tprAction": {
             "gl": "Tombar de costas cos brazos abertos coma na auga",
             "es": "Tumbarse boca arriba con los brazos abiertos como en el agua"
-          }
+          },
+          "lamina": "pal_float"
         },
         {
           "id": "3_4.maio.s2.pour",
@@ -356,7 +377,8 @@
           "tprAction": {
             "gl": "Chapotear cos pés, sentados, nunha auga imaxinaria",
             "es": "Chapotear con los pies, sentados, en un agua imaginaria"
-          }
+          },
+          "lamina": "pal_paddle"
         },
         {
           "id": "3_4.maio.s2.dress",
@@ -367,7 +389,8 @@
           "tprAction": {
             "gl": "Meter a cabeza por unha camiseta imaxinaria",
             "es": "Meter la cabeza por una camiseta imaginaria"
-          }
+          },
+          "lamina": "pal_dress"
         },
         {
           "id": "3_4.maio.s2.shower",
@@ -378,7 +401,8 @@
           "tprAction": {
             "gl": "Deixar caer auga imaxinaria desde a cabeza cos dedos",
             "es": "Dejar caer agua imaginaria desde la cabeza con los dedos"
-          }
+          },
+          "lamina": "pal_shower"
         },
         {
           "id": "3_4.maio.s2.deep",
@@ -389,7 +413,8 @@
           "tprAction": {
             "gl": "Baixar a man moi abaixo coma nunha auga fonda",
             "es": "Bajar la mano muy abajo como en un agua profunda"
-          }
+          },
+          "lamina": "pal_deep"
         },
         {
           "id": "3_4.maio.s2.shallow",
@@ -400,7 +425,8 @@
           "tprAction": {
             "gl": "Tocar a auga imaxinaria só coa punta dos pés",
             "es": "Tocar el agua imaginaria solo con la punta de los pies"
-          }
+          },
+          "lamina": "pal_shallow"
         },
         {
           "id": "3_4.maio.s2.relaxed",
@@ -422,7 +448,8 @@
           "tprAction": {
             "gl": "Rir encollidos cando alguén se achega cos dedos",
             "es": "Reír encogidos cuando alguien se acerca con los dedos"
-          }
+          },
+          "lamina": "pal_ticklish"
         },
         {
           "id": "3_4.maio.s2.brush-your-teeth",
@@ -433,7 +460,8 @@
           "tprAction": {
             "gl": "Cepillar os dentes cun cepillo imaxinario",
             "es": "Cepillarse los dientes con un cepillo imaginario"
-          }
+          },
+          "lamina": "pal_brush_your_teeth"
         },
         {
           "id": "3_4.maio.s2.wash-your-face",
@@ -456,7 +484,8 @@
           "tprAction": {
             "gl": "Meter un pé e logo o outro nunha bañeira imaxinaria",
             "es": "Meter un pie y luego el otro en una bañera imaginaria"
-          }
+          },
+          "lamina": "pal_in_the_bath"
         },
         {
           "id": "3_4.maio.s2.top-to-toe",
@@ -467,7 +496,8 @@
           "tprAction": {
             "gl": "Tocar da cabeza aos pés coas dúas mans",
             "es": "Tocar de la cabeza a los pies con las dos manos"
-          }
+          },
+          "lamina": "pal_top_to_toe"
         }
       ]
     },
@@ -499,7 +529,8 @@
           "tprAction": {
             "gl": "Beber un vaso de leite imaxinario e limpar o bigote",
             "es": "Beber un vaso de leche imaginario y limpiarse el bigote"
-          }
+          },
+          "lamina": "pal_milk"
         },
         {
           "id": "3_4.maio.s3.cheese",
@@ -510,7 +541,8 @@
           "tprAction": {
             "gl": "Facer un triángulo cos dedos coma un anaco de queixo",
             "es": "Hacer un triángulo con los dedos como un trozo de queso"
-          }
+          },
+          "lamina": "pal_cheese"
         },
         {
           "id": "3_4.maio.s3.spoon",
@@ -545,7 +577,8 @@
           "tprAction": {
             "gl": "Suxeitar unha cunca imaxinaria coas dúas mans",
             "es": "Sostener un cuenco imaginario con las dos manos"
-          }
+          },
+          "lamina": "pal_bowl"
         },
         {
           "id": "3_4.maio.s3.rice",
@@ -556,7 +589,8 @@
           "tprAction": {
             "gl": "Deixar caer grans de arroz imaxinarios entre os dedos",
             "es": "Dejar caer granos de arroz imaginarios entre los dedos"
-          }
+          },
+          "lamina": "pal_rice"
         },
         {
           "id": "3_4.maio.s3.eat",
@@ -579,7 +613,8 @@
           "tprAction": {
             "gl": "Beber auga imaxinaria e dicir «aaah»",
             "es": "Beber agua imaginaria y decir «aaah»"
-          }
+          },
+          "lamina": "pal_drink"
         },
         {
           "id": "3_4.maio.s3.spread",
@@ -590,7 +625,8 @@
           "tprAction": {
             "gl": "Untar unha rebanda imaxinaria cun dedo",
             "es": "Untar una rebanada imaginaria con un dedo"
-          }
+          },
+          "lamina": "pal_spread"
         },
         {
           "id": "3_4.maio.s3.pass",
@@ -623,7 +659,8 @@
           "tprAction": {
             "gl": "Poñer cara de sorpresa e beber auga",
             "es": "Poner cara de sorpresa y beber agua"
-          }
+          },
+          "lamina": "pal_salty"
         },
         {
           "id": "3_4.maio.s3.creamy",
@@ -634,7 +671,8 @@
           "tprAction": {
             "gl": "Mover a man amodo coma se remexese nata",
             "es": "Mover la mano despacio como si removiera nata"
-          }
+          },
+          "lamina": "pal_creamy"
         },
         {
           "id": "3_4.maio.s3.thick",
@@ -656,7 +694,8 @@
           "tprAction": {
             "gl": "Abrazar un prato imaxinario e sorrir",
             "es": "Abrazar un plato imaginario y sonreír"
-          }
+          },
+          "lamina": "pal_favourite"
         },
         {
           "id": "3_4.maio.s3.i-m-hungry",
@@ -667,7 +706,8 @@
           "tprAction": {
             "gl": "Tocar a barriga e abrir a boca",
             "es": "Tocarse la barriga y abrir la boca"
-          }
+          },
+          "lamina": "pal_i_m_hungry"
         },
         {
           "id": "3_4.maio.s3.enjoy-your-meal",
@@ -700,7 +740,8 @@
           "tprAction": {
             "gl": "Xuntar as dúas mans coma un bocadillo",
             "es": "Juntar las dos manos como un bocadillo"
-          }
+          },
+          "lamina": "pal_bread_and_cheese"
         }
       ]
     },
@@ -755,7 +796,8 @@
           "tprAction": {
             "gl": "Facer falar a man coma un monicreque",
             "es": "Hacer hablar a la mano como un títere"
-          }
+          },
+          "lamina": "pal_puppet"
         },
         {
           "id": "3_4.maio.s4.castle",
@@ -766,7 +808,8 @@
           "tprAction": {
             "gl": "Levantar os brazos coma torres dun castelo",
             "es": "Levantar los brazos como torres de un castillo"
-          }
+          },
+          "lamina": "pal_castle"
         },
         {
           "id": "3_4.maio.s4.giant",
@@ -777,7 +820,8 @@
           "tprAction": {
             "gl": "Poñer voz grave e dar pasos pesados",
             "es": "Poner voz grave y dar pasos pesados"
-          }
+          },
+          "lamina": "pal_giant"
         },
         {
           "id": "3_4.maio.s4.dragon",
@@ -788,7 +832,8 @@
           "tprAction": {
             "gl": "Abrir as ás e soprar suave: fuuu",
             "es": "Abrir las alas y soplar suave: fuuu"
-          }
+          },
+          "lamina": "pal_dragon"
         },
         {
           "id": "3_4.maio.s4.imagine",
@@ -855,7 +900,8 @@
           "tprAction": {
             "gl": "Soprar o po dun libro vello imaxinario",
             "es": "Soplar el polvo de un libro viejo imaginario"
-          }
+          },
+          "lamina": "pal_old"
         },
         {
           "id": "3_4.maio.s4.kind",
@@ -866,7 +912,8 @@
           "tprAction": {
             "gl": "Ofrecer algo cun sorriso",
             "es": "Ofrecer algo con una sonrisa"
-          }
+          },
+          "lamina": "pal_kind"
         },
         {
           "id": "3_4.maio.s4.great",
@@ -900,7 +947,8 @@
           "tprAction": {
             "gl": "Abrir os brazos amodo coma quen abre un conto",
             "es": "Abrir los brazos despacio como quien abre un cuento"
-          }
+          },
+          "lamina": "pal_once_upon_a_time"
         },
         {
           "id": "3_4.maio.s4.the-end",
@@ -933,7 +981,8 @@
           "tprAction": {
             "gl": "Estirarse moito e camiñar a pasos grandes",
             "es": "Estirarse mucho y caminar a pasos grandes"
-          }
+          },
+          "lamina": "pal_big_like_a_giant"
         }
       ]
     }

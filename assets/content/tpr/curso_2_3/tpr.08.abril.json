@@ -21,7 +21,8 @@
             "gl": "Abrir os brazos no prado",
             "es": "Abrir los brazos en el prado"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_meadow"
         },
         {
           "id": "2_3.abril.s1.dandelion",
@@ -32,7 +33,8 @@
             "gl": "Soprar un dente de león",
             "es": "Soplar un diente de león"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_dandelion"
         },
         {
           "id": "2_3.abril.s1.clover",
@@ -43,7 +45,8 @@
             "gl": "Amosar tres dedos coma un trevo",
             "es": "Enseñar tres dedos como un trébol"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_clover"
         },
         {
           "id": "2_3.abril.s1.blade-of-grass",
@@ -54,7 +57,8 @@
             "gl": "Coller unha folla de herba",
             "es": "Coger una brizna de hierba"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_blade_of_grass"
         },
         {
           "id": "2_3.abril.s1.buttercup",
@@ -65,7 +69,8 @@
             "gl": "Pousar unha flor amarela no queixo",
             "es": "Poner una flor amarilla en la barbilla"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_buttercup"
         },
         {
           "id": "2_3.abril.s1.grasshopper",
@@ -76,7 +81,8 @@
             "gl": "Saltar coma un saltón",
             "es": "Saltar como un saltamontes"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_grasshopper"
         },
         {
           "id": "2_3.abril.s1.picnic-spot",
@@ -87,7 +93,8 @@
             "gl": "Sinalar un bo sitio",
             "es": "Señalar un buen sitio"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_picnic_spot"
         },
         {
           "id": "2_3.abril.s1.lie-on-the-grass",
@@ -110,7 +117,8 @@
             "gl": "Rodar de lado",
             "es": "Rodar de lado"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_roll_down"
         },
         {
           "id": "2_3.abril.s1.tiptoe-through",
@@ -121,7 +129,8 @@
             "gl": "Camiñar de puntas pola herba",
             "es": "Caminar de puntillas por la hierba"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_tiptoe_through"
         },
         {
           "id": "2_3.abril.s1.blow-seeds",
@@ -155,7 +164,8 @@
             "gl": "Tocar a herba coa palma",
             "es": "Tocar la hierba con la palma"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_grassy"
         },
         {
           "id": "2_3.abril.s1.tickly-grass",
@@ -166,7 +176,8 @@
             "gl": "Rir ao tocar a herba",
             "es": "Reír al tocar la hierba"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_tickly_grass"
         },
         {
           "id": "2_3.abril.s1.fluffy-seeds",
@@ -189,7 +200,8 @@
             "gl": "Sinalar a herba nova",
             "es": "Señalar la hierba nueva"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_fresh_green"
         },
         {
           "id": "2_3.abril.s1.make-a-wish",
@@ -200,7 +212,8 @@
             "gl": "Soprar o dente de león",
             "es": "Soplar el diente de león"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_make_a_wish"
         },
         {
           "id": "2_3.abril.s1.the-grass-tickles",
@@ -211,7 +224,8 @@
             "gl": "Rir tocando a herba",
             "es": "Reír tocando la hierba"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_the_grass_tickles"
         },
         {
           "id": "2_3.abril.s1.on-the-grass",
@@ -222,7 +236,8 @@
             "gl": "Sentarse na herba",
             "es": "Sentarse en la hierba"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_on_the_grass"
         },
         {
           "id": "2_3.abril.s1.up-the-hill-and-down",
@@ -253,7 +268,8 @@
             "gl": "Asubiar coma un merlo",
             "es": "Silbar como un mirlo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_blackbird"
         },
         {
           "id": "2_3.abril.s2.swallow",
@@ -275,7 +291,8 @@
             "gl": "Abrir un brazo coma unha á",
             "es": "Abrir un brazo como un ala"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_wing"
         },
         {
           "id": "2_3.abril.s2.bird-song",
@@ -286,7 +303,8 @@
             "gl": "Escoitar coa man na orella",
             "es": "Escuchar con la mano en la oreja"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_bird_song"
         },
         {
           "id": "2_3.abril.s2.birdseed",
@@ -297,7 +315,8 @@
             "gl": "Botar alpiste na man",
             "es": "Echar alpiste en la mano"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_birdseed"
         },
         {
           "id": "2_3.abril.s2.bird-bath",
@@ -308,7 +327,8 @@
             "gl": "Mollar os dedos coma un paxaro",
             "es": "Mojar los dedos como un pájaro"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_bird_bath"
         },
         {
           "id": "2_3.abril.s2.branch-perch",
@@ -319,7 +339,8 @@
             "gl": "Encher o comedeiro con sementes",
             "es": "Llenar el comedero con semillas"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_bird_feeder"
         },
         {
           "id": "2_3.abril.s2.whistle-a-tune",
@@ -342,7 +363,8 @@
             "gl": "Agacharse coma un paxaro nunha póla",
             "es": "Agacharse como un pájaro en una rama"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_perch"
         },
         {
           "id": "2_3.abril.s2.fly-off",
@@ -353,7 +375,8 @@
             "gl": "Estirar os brazos e correr",
             "es": "Estirar los brazos y correr"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_fly_off"
         },
         {
           "id": "2_3.abril.s2.peck-at-seeds",
@@ -408,7 +431,8 @@
             "gl": "Acariñar unha pluma",
             "es": "Acariciar una pluma"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_feathered"
         },
         {
           "id": "2_3.abril.s2.high-up",
@@ -419,7 +443,8 @@
             "gl": "Sinalar moi arriba",
             "es": "Señalar muy arriba"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_high_up"
         },
         {
           "id": "2_3.abril.s2.listen-to-the-birds",
@@ -430,7 +455,8 @@
             "gl": "Levar a man á orella",
             "es": "Llevar la mano a la oreja"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_listen_to_the_birds"
         },
         {
           "id": "2_3.abril.s2.fly-away-bird",
@@ -441,7 +467,8 @@
             "gl": "Abrir as mans cara arriba",
             "es": "Abrir las manos hacia arriba"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_fly_away_bird"
         },
         {
           "id": "2_3.abril.s2.in-the-tree",
@@ -452,7 +479,8 @@
             "gl": "Sinalar a árbore",
             "es": "Señalar el árbol"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_in_the_tree"
         },
         {
           "id": "2_3.abril.s2.wings-up-wings-down",
@@ -483,7 +511,8 @@
             "gl": "Dicir algo á orella",
             "es": "Decir algo al oído"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_whisper_game"
         },
         {
           "id": "2_3.abril.s3.library",
@@ -505,7 +534,8 @@
             "gl": "Sentarse no recuncho",
             "es": "Sentarse en el rincón"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_quiet_corner"
         },
         {
           "id": "2_3.abril.s3.finger-on-lips",
@@ -516,7 +546,8 @@
             "gl": "Pousar o dedo nos beizos",
             "es": "Posar el dedo en los labios"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_finger_on_lips"
         },
         {
           "id": "2_3.abril.s3.sleeping-animal",
@@ -527,7 +558,8 @@
             "gl": "Pousar a cabeza nas mans",
             "es": "Apoyar la cabeza en las manos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_sleeping_animal"
         },
         {
           "id": "2_3.abril.s3.soft-voice",
@@ -549,7 +581,8 @@
             "gl": "Deitarse na esteira",
             "es": "Tumbarse en la esterilla"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_nap_time"
         },
         {
           "id": "2_3.abril.s3.speak-softly",
@@ -584,7 +617,8 @@
             "gl": "Pechar o libro amodo",
             "es": "Cerrar el libro despacio"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_close_the_book"
         },
         {
           "id": "2_3.abril.s3.lie-still",
@@ -595,7 +629,8 @@
             "gl": "Deitarse sen moverse",
             "es": "Tumbarse sin moverse"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_lie_still"
         },
         {
           "id": "2_3.abril.s3.breathe-in-slowly",
@@ -628,7 +663,8 @@
             "gl": "Pechar a boca coas mans",
             "es": "Taparse la boca con las manos"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_silent"
         },
         {
           "id": "2_3.abril.s3.restful",
@@ -650,7 +686,8 @@
             "gl": "Camiñar de puntas",
             "es": "Caminar de puntillas"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_on_tiptoe"
         },
         {
           "id": "2_3.abril.s3.shh-baby-s-sleeping",
@@ -727,7 +764,8 @@
             "gl": "Abrir as mans coma unha casca",
             "es": "Abrir las manos como una cáscara"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_eggshell"
         },
         {
           "id": "2_3.abril.s4.hatchling",
@@ -738,7 +776,8 @@
             "gl": "Encollerse coma un pitiño",
             "es": "Acurrucarse como un polluelo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_hatchling"
         },
         {
           "id": "2_3.abril.s4.straw",
@@ -749,7 +788,8 @@
             "gl": "Tecer palla cos dedos",
             "es": "Tejer paja con los dedos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_straw"
         },
         {
           "id": "2_3.abril.s4.mother-bird",
@@ -760,7 +800,8 @@
             "gl": "Abrir os brazos coma ás que protexen",
             "es": "Abrir los brazos como alas que protegen"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_mother_bird"
         },
         {
           "id": "2_3.abril.s4.feather-bed",
@@ -771,7 +812,8 @@
             "gl": "Pousar a cabeza nunha almofada",
             "es": "Apoyar la cabeza en una almohada"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_feather_bed"
         },
         {
           "id": "2_3.abril.s4.twigs",
@@ -829,7 +871,8 @@
             "gl": "Facer «pío» cos beizos",
             "es": "Hacer «pío» con los labios"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_chirp"
         },
         {
           "id": "2_3.abril.s4.open-beak",
@@ -840,7 +883,8 @@
             "gl": "Abrir moito a boca",
             "es": "Abrir mucho la boca"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_open_your_beak"
         },
         {
           "id": "2_3.abril.s4.newborn",
@@ -851,7 +895,8 @@
             "gl": "Encollerse moi pequeno",
             "es": "Acurrucarse muy pequeño"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_newborn"
         },
         {
           "id": "2_3.abril.s4.fragile",
@@ -873,7 +918,8 @@
             "gl": "Abrazarse a si mesmo",
             "es": "Abrazarse a sí mismo"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_cosy_nest"
         },
         {
           "id": "2_3.abril.s4.twiggy",
@@ -884,7 +930,8 @@
             "gl": "Tocar un niño de pólas",
             "es": "Tocar un nido de ramitas"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_twiggy"
         },
         {
           "id": "2_3.abril.s4.crack-crack",
@@ -895,7 +942,8 @@
             "gl": "Abrir as mans amodo",
             "es": "Abrir las manos despacio"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_crack_crack"
         },
         {
           "id": "2_3.abril.s4.hello-little-chick",
@@ -906,7 +954,8 @@
             "gl": "Acariñar un pitiño imaxinario",
             "es": "Acariciar un pollito imaginario"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_hello_little_chick"
         },
         {
           "id": "2_3.abril.s4.careful-with-the-egg",
@@ -917,7 +966,8 @@
             "gl": "Coller o ovo con moito coidado",
             "es": "Coger el huevo con mucho cuidado"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_careful_with_the_egg"
         },
         {
           "id": "2_3.abril.s4.out-of-the-egg",

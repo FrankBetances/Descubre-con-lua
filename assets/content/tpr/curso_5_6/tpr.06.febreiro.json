@@ -65,7 +65,8 @@
             "gl": "Poñer a máscara coas mans",
             "es": "Ponerse la máscara con las manos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_feather_mask"
         },
         {
           "id": "5_6.febreiro.s1.carnival-float",
@@ -76,7 +77,8 @@
             "gl": "Saudar dende unha carroza",
             "es": "Saludar desde una carroza"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_carnival_float"
         },
         {
           "id": "5_6.febreiro.s1.confetti-cannon",
@@ -87,7 +89,8 @@
             "gl": "Abrir as mans de golpe",
             "es": "Abrir las manos de golpe"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_confetti_cannon"
         },
         {
           "id": "5_6.febreiro.s1.recite",
@@ -120,7 +123,8 @@
             "gl": "Dar pasos cara atrás con coidado",
             "es": "Dar pasos hacia atrás con cuidado"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_walk_backwards"
         },
         {
           "id": "5_6.febreiro.s1.find-a-rhyme",
@@ -175,7 +179,8 @@
             "gl": "Taparse os ollos coas mans",
             "es": "Taparse los ojos con las manos"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_masked"
         },
         {
           "id": "5_6.febreiro.s1.sparkling-costume",
@@ -186,7 +191,8 @@
             "gl": "Xirar amosando o disfrace",
             "es": "Girar enseñando el disfraz"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_sparkling_costume"
         },
         {
           "id": "5_6.febreiro.s1.cat-and-hat-rhyme",
@@ -208,7 +214,8 @@
             "gl": "Tapar a cara e descubrila",
             "es": "Tapar la cara y descubrirla"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_guess_who_s_behind_the_mask"
         },
         {
           "id": "5_6.febreiro.s1.bee-rhymes-with-tree",
@@ -262,7 +269,8 @@
             "gl": "Pechar os brazos coma unha claqueta",
             "es": "Cerrar los brazos como una claqueta"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_clapperboard"
         },
         {
           "id": "5_6.febreiro.s2.scene",
@@ -361,7 +369,8 @@
             "gl": "Dar pasos cara ao centro",
             "es": "Dar pasos hacia el centro"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_enter_the_stage"
         },
         {
           "id": "5_6.febreiro.s2.exit-the-stage",
@@ -372,7 +381,8 @@
             "gl": "Camiñar cara ao lado",
             "es": "Caminar hacia el lado"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_exit_the_stage"
         },
         {
           "id": "5_6.febreiro.s2.well-rehearsed",
@@ -394,7 +404,8 @@
             "gl": "Respirar fondo e sorrir",
             "es": "Respirar hondo y sonreír"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_nervous_but_ready"
         },
         {
           "id": "5_6.febreiro.s2.clear-voice",
@@ -427,7 +438,8 @@
             "gl": "Pechar a claqueta",
             "es": "Cerrar la claqueta"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_action"
         },
         {
           "id": "5_6.febreiro.s2.cut-once-more-please",
@@ -461,7 +473,8 @@
             "gl": "Camiñar dun lado a outro",
             "es": "Caminar de un lado a otro"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_enter_on_the_left_and_exit_on_the_right"
         }
       ]
     },
@@ -481,7 +494,8 @@
             "gl": "Cantar xuntos en fila",
             "es": "Cantar juntos en fila"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_choir"
         },
         {
           "id": "5_6.febreiro.s3.conductor",
@@ -492,7 +506,8 @@
             "gl": "Mover unha batuta",
             "es": "Mover una batuta"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_conductor"
         },
         {
           "id": "5_6.febreiro.s3.solo",
@@ -503,7 +518,8 @@
             "gl": "Dar un paso adiante e cantar",
             "es": "Dar un paso adelante y cantar"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_solo"
         },
         {
           "id": "5_6.febreiro.s3.chorus",
@@ -547,7 +563,8 @@
             "gl": "Suxeitar un micro imaxinario",
             "es": "Sostener un micro imaginario"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_microphone"
         },
         {
           "id": "5_6.febreiro.s3.conduct",
@@ -558,7 +575,8 @@
             "gl": "Mover a batuta ao ritmo",
             "es": "Mover la batuta al ritmo"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_conduct"
         },
         {
           "id": "5_6.febreiro.s3.sing-in-tune",
@@ -580,7 +598,8 @@
             "gl": "Cantaruxar coa boca pechada",
             "es": "Tararear con la boca cerrada"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_hum_along"
         },
         {
           "id": "5_6.febreiro.s3.sing-louder",
@@ -591,7 +610,8 @@
             "gl": "Abrir máis a boca",
             "es": "Abrir más la boca"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_sing_louder"
         },
         {
           "id": "5_6.febreiro.s3.sing-softer",
@@ -635,7 +655,8 @@
             "gl": "Repetir baixiño",
             "es": "Repetir bajito"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_echoing"
         },
         {
           "id": "5_6.febreiro.s3.loudest",
@@ -734,7 +755,8 @@
             "gl": "Amosar tres dedos",
             "es": "Enseñar tres dedos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_three_little_pigs"
         },
         {
           "id": "5_6.febreiro.s4.straw-house",
@@ -756,7 +778,8 @@
             "gl": "Poñer as mans firmes",
             "es": "Poner las manos firmes"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_brick_house"
         },
         {
           "id": "5_6.febreiro.s4.glass-slipper",
@@ -767,7 +790,8 @@
             "gl": "Probar un zapato imaxinario",
             "es": "Probarse un zapato imaginario"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_glass_slipper"
         },
         {
           "id": "5_6.febreiro.s4.pumpkin-coach",
@@ -778,7 +802,8 @@
             "gl": "Facer unha bóla grande",
             "es": "Hacer una bola grande"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_pumpkin_coach"
         },
         {
           "id": "5_6.febreiro.s4.huff-and-puff",
@@ -789,7 +814,8 @@
             "gl": "Soprar moi forte",
             "es": "Soplar muy fuerte"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_huff_and_puff"
         },
         {
           "id": "5_6.febreiro.s4.swap-roles",
@@ -822,7 +848,8 @@
             "gl": "Bater tres veces",
             "es": "Golpear tres veces"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_knock_on_the_door"
         },
         {
           "id": "5_6.febreiro.s4.run-home",
@@ -833,7 +860,8 @@
             "gl": "Correr ao recuncho",
             "es": "Correr al rincón"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_run_home"
         },
         {
           "id": "5_6.febreiro.s4.upside-down",
@@ -855,7 +883,8 @@
             "gl": "Sorrir coas orellas de lobo",
             "es": "Sonreír con las orejas de lobo"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_friendly_wolf"
         },
         {
           "id": "5_6.febreiro.s4.strongest-house",
@@ -921,7 +950,8 @@
             "gl": "Soprar dúas veces",
             "es": "Soplar dos veces"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_he_huffed_and_he_puffed"
         }
       ]
     }

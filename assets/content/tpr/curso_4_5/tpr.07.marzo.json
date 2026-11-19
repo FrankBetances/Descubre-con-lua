@@ -43,7 +43,8 @@
             "gl": "Achegar a culler á boca",
             "es": "Acercar la cuchara a la boca"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_tasting_spoon"
         },
         {
           "id": "4_5.marzo.s1.blindfold",
@@ -54,7 +55,8 @@
             "gl": "Tapar os ollos coas mans",
             "es": "Taparse los ojos con las manos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_blindfold"
         },
         {
           "id": "4_5.marzo.s1.spice",
@@ -65,7 +67,8 @@
             "gl": "Botar un pouco de especia cos dedos",
             "es": "Espolvorear algo con los dedos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_spice"
         },
         {
           "id": "4_5.marzo.s1.vinegar",
@@ -87,7 +90,8 @@
             "gl": "Coller unha oliva cos dedos",
             "es": "Coger una aceituna con los dedos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_olive"
         },
         {
           "id": "4_5.marzo.s1.taste-sweet",
@@ -98,7 +102,8 @@
             "gl": "Sorrir ao probar",
             "es": "Sonreír al probar"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_taste_sweet"
         },
         {
           "id": "4_5.marzo.s1.guess-the-taste",
@@ -120,7 +125,8 @@
             "gl": "Mastigar amodo pechando os ollos",
             "es": "Masticar despacio cerrando los ojos"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_savour"
         },
         {
           "id": "4_5.marzo.s1.sprinkle-spice",
@@ -131,7 +137,8 @@
             "gl": "Mover os dedos por riba do prato",
             "es": "Mover los dedos por encima del plato"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_sprinkle_spice"
         },
         {
           "id": "4_5.marzo.s1.pull-a-face",
@@ -176,7 +183,8 @@
             "gl": "Abanar a boca",
             "es": "Abanicarse la boca"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_spicy"
         },
         {
           "id": "4_5.marzo.s1.mild",
@@ -209,7 +217,8 @@
             "gl": "Pechar os ollos",
             "es": "Cerrar los ojos"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_close_your_eyes_and_taste"
         },
         {
           "id": "4_5.marzo.s1.honey-is-sweeter-than-lemon",
@@ -220,7 +229,8 @@
             "gl": "Sorrir e logo arrugar a cara",
             "es": "Sonreír y luego arrugar la cara"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_honey_is_sweeter_than_lemon"
         },
         {
           "id": "4_5.marzo.s1.yuck-or-yum",
@@ -273,7 +283,8 @@
             "gl": "Meter unha man dentro da outra",
             "es": "Meter una mano dentro de la otra"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_nesting_dolls"
         },
         {
           "id": "4_5.marzo.s2.staircase",
@@ -295,7 +306,8 @@
             "gl": "Abrir moito as mans",
             "es": "Abrir mucho las manos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_giant_shoe"
         },
         {
           "id": "4_5.marzo.s2.tiny-shoe",
@@ -339,7 +351,8 @@
             "gl": "Abrir os brazos moito",
             "es": "Abrir los brazos mucho"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_show_big_arms"
         },
         {
           "id": "4_5.marzo.s2.show-small-fingers",
@@ -350,7 +363,8 @@
             "gl": "Xuntar dous dedos",
             "es": "Juntar dos dedos"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_show_small_fingers"
         },
         {
           "id": "4_5.marzo.s2.grow-taller",
@@ -361,7 +375,8 @@
             "gl": "Estirarse de puntas",
             "es": "Estirarse de puntillas"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_grow_taller"
         },
         {
           "id": "4_5.marzo.s2.shrink",
@@ -383,7 +398,8 @@
             "gl": "Abrir máis os brazos",
             "es": "Abrir más los brazos"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_bigger"
         },
         {
           "id": "4_5.marzo.s2.biggest",
@@ -416,7 +432,8 @@
             "gl": "Xuntar as mans ata tocarse",
             "es": "Juntar las manos hasta tocarse"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_smallest"
         },
         {
           "id": "4_5.marzo.s2.which-is-the-biggest",
@@ -438,7 +455,8 @@
             "gl": "Abrir os brazos en tres pasos",
             "es": "Abrir los brazos en tres pasos"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_big_bigger_biggest"
         },
         {
           "id": "4_5.marzo.s2.from-small-to-big",
@@ -449,7 +467,8 @@
             "gl": "Crecer amodo dende o chan",
             "es": "Crecer despacio desde el suelo"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_from_small_to_big"
         },
         {
           "id": "4_5.marzo.s2.i-m-taller-than-you",
@@ -460,7 +479,8 @@
             "gl": "Poñerse de puntas rindo",
             "es": "Ponerse de puntillas riendo"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_i_m_taller_than_you"
         }
       ]
     },
@@ -480,7 +500,8 @@
             "gl": "Amosar unha cesta de verduras",
             "es": "Enseñar una cesta de verduras"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_vegetables"
         },
         {
           "id": "4_5.marzo.s3.broccoli",
@@ -491,7 +512,8 @@
             "gl": "Facer unha árbore coa man",
             "es": "Hacer un árbol con la mano"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_broccoli"
         },
         {
           "id": "4_5.marzo.s3.peas",
@@ -502,7 +524,8 @@
             "gl": "Coller chícharos cos dedos",
             "es": "Coger guisantes con los dedos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_peas"
         },
         {
           "id": "4_5.marzo.s3.beans",
@@ -513,7 +536,8 @@
             "gl": "Contar fabas",
             "es": "Contar alubias"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_beans"
         },
         {
           "id": "4_5.marzo.s3.lentils",
@@ -535,7 +559,8 @@
             "gl": "Pousar un ovo na oveira",
             "es": "Poner un huevo en la huevera"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_egg_cup"
         },
         {
           "id": "4_5.marzo.s3.food-plate",
@@ -546,7 +571,8 @@
             "gl": "Dividir un prato imaxinario",
             "es": "Dividir un plato imaginario"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_food_plate"
         },
         {
           "id": "4_5.marzo.s3.wash-vegetables",
@@ -557,7 +583,8 @@
             "gl": "Fregar unha verdura baixo a auga",
             "es": "Frotar una verdura bajo el agua"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_wash_vegetables"
         },
         {
           "id": "4_5.marzo.s3.peel-a-carrot",
@@ -579,7 +606,8 @@
             "gl": "Facer burbullas coas mans",
             "es": "Hacer burbujas con las manos"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_boil"
         },
         {
           "id": "4_5.marzo.s3.grate",
@@ -590,7 +618,8 @@
             "gl": "Mover a man arriba e abaixo",
             "es": "Mover la mano arriba y abajo"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_grate"
         },
         {
           "id": "4_5.marzo.s3.balance-a-plate",
@@ -624,7 +653,8 @@
             "gl": "Mover as mans coma follas",
             "es": "Mover las manos como hojas"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_leafy_green"
         },
         {
           "id": "4_5.marzo.s3.homemade",
@@ -657,7 +687,8 @@
             "gl": "Levar o garfo á boca",
             "es": "Llevar el tenedor a la boca"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_eat_your_greens"
         },
         {
           "id": "4_5.marzo.s3.what-colour-is-broccoli",
@@ -734,7 +765,8 @@
             "gl": "Contar moedas na palma",
             "es": "Contar monedas en la palma"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_coin"
         },
         {
           "id": "4_5.marzo.s4.price",
@@ -756,7 +788,8 @@
             "gl": "Levar a bolsa ao ombro",
             "es": "Llevar la bolsa al hombro"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_shopping_bag"
         },
         {
           "id": "4_5.marzo.s4.kilo",
@@ -778,7 +811,8 @@
             "gl": "Atender detrás dun mostrador",
             "es": "Atender detrás de un mostrador"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_shopkeeper"
         },
         {
           "id": "4_5.marzo.s4.pay",
@@ -800,7 +834,8 @@
             "gl": "Mirar e escoller unha",
             "es": "Mirar y escoger una"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_choose_fruit"
         },
         {
           "id": "4_5.marzo.s4.count-coins",
@@ -811,7 +846,8 @@
             "gl": "Contar cos dedos",
             "es": "Contar con los dedos"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_count_coins"
         },
         {
           "id": "4_5.marzo.s4.pack-the-bag",
@@ -833,7 +869,8 @@
             "gl": "Estender a man pedindo",
             "es": "Extender la mano pidiendo"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_ask_for"
         },
         {
           "id": "4_5.marzo.s4.cheap",
@@ -866,7 +903,8 @@
             "gl": "Cheirar unha froita",
             "es": "Oler una fruta"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_fresh_from_the_farm"
         },
         {
           "id": "4_5.marzo.s4.heavy-bag",
@@ -900,7 +938,8 @@
             "gl": "Amosar dous dedos",
             "es": "Enseñar dos dedos"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_two_apples_please"
         },
         {
           "id": "4_5.marzo.s4.here-s-your-change",
@@ -911,7 +950,8 @@
             "gl": "Dar unha moeda",
             "es": "Dar una moneda"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_here_s_your_change"
         },
         {
           "id": "4_5.marzo.s4.the-bag-is-heavier-with-potatoes",

@@ -45,7 +45,8 @@
           "tprAction": {
             "gl": "Respirar fondo e sorrir co sol na cara",
             "es": "Respirar hondo y sonreír con el sol en la cara"
-          }
+          },
+          "lamina": "pal_spring"
         },
         {
           "id": "3_4.abril.s1.weather",
@@ -56,7 +57,8 @@
           "tprAction": {
             "gl": "Mirar pola fiestra e sinalar o ceo",
             "es": "Mirar por la ventana y señalar el cielo"
-          }
+          },
+          "lamina": "pal_weather"
         },
         {
           "id": "3_4.abril.s1.sunshine",
@@ -78,7 +80,8 @@
           "tprAction": {
             "gl": "Suxeitar un fío imaxinario e mirar arriba",
             "es": "Sujetar un hilo imaginario y mirar arriba"
-          }
+          },
+          "lamina": "pal_kite"
         },
         {
           "id": "3_4.abril.s1.morning",
@@ -89,7 +92,8 @@
           "tprAction": {
             "gl": "Espreguizarse e abrir os ollos amodo",
             "es": "Desperezarse y abrir los ojos despacio"
-          }
+          },
+          "lamina": "pal_morning"
         },
         {
           "id": "3_4.abril.s1.shine",
@@ -100,7 +104,8 @@
           "tprAction": {
             "gl": "Abrir os brazos de golpe coma un sol que sae",
             "es": "Abrir los brazos de golpe como un sol que sale"
-          }
+          },
+          "lamina": "pal_shine"
         },
         {
           "id": "3_4.abril.s1.open",
@@ -111,7 +116,8 @@
           "tprAction": {
             "gl": "Abrir as mans amodo coma unha flor",
             "es": "Abrir las manos despacio como una flor"
-          }
+          },
+          "lamina": "pal_open"
         },
         {
           "id": "3_4.abril.s1.look-up",
@@ -122,7 +128,8 @@
           "tprAction": {
             "gl": "Levantar a cabeza e mirar ao ceo",
             "es": "Levantar la cabeza y mirar al cielo"
-          }
+          },
+          "lamina": "pal_look_up"
         },
         {
           "id": "3_4.abril.s1.warm-up",
@@ -133,7 +140,8 @@
           "tprAction": {
             "gl": "Fregar as mans e o corpo para quentarse",
             "es": "Frotarse las manos y el cuerpo para entrar en calor"
-          }
+          },
+          "lamina": "pal_warm_up"
         },
         {
           "id": "3_4.abril.s1.peek",
@@ -144,7 +152,8 @@
           "tprAction": {
             "gl": "Espreitar por un burato feito cos dedos",
             "es": "Asomarse por un agujero hecho con los dedos"
-          }
+          },
+          "lamina": "pal_peek"
         },
         {
           "id": "3_4.abril.s1.sunny",
@@ -155,7 +164,8 @@
           "tprAction": {
             "gl": "Sorrir cos brazos abertos cara ao sol",
             "es": "Sonreír con los brazos abiertos hacia el sol"
-          }
+          },
+          "lamina": "pal_sunny"
         },
         {
           "id": "3_4.abril.s1.cloudy",
@@ -178,7 +188,8 @@
           "tprAction": {
             "gl": "Camiñar amodo coas mans diante coma entre néboa",
             "es": "Caminar despacio con las manos delante como entre niebla"
-          }
+          },
+          "lamina": "pal_foggy"
         },
         {
           "id": "3_4.abril.s1.clear",
@@ -189,7 +200,8 @@
           "tprAction": {
             "gl": "Abrir as mans coma se apartasen as nubes",
             "es": "Abrir las manos como si apartaran las nubes"
-          }
+          },
+          "lamina": "pal_clear"
         },
         {
           "id": "3_4.abril.s1.tap-tap",
@@ -212,7 +224,8 @@
           "tprAction": {
             "gl": "Acenar cara arriba e sorrir",
             "es": "Saludar hacia arriba y sonreír"
-          }
+          },
+          "lamina": "pal_hello_sun"
         },
         {
           "id": "3_4.abril.s1.rain-then-sun",
@@ -223,7 +236,8 @@
           "tprAction": {
             "gl": "Facer chuvia cos dedos e logo abrir as mans coma o sol",
             "es": "Hacer lluvia con los dedos y luego abrir las manos como el sol"
-          }
+          },
+          "lamina": "pal_rain_then_sun"
         },
         {
           "id": "3_4.abril.s1.behind-the-clouds",
@@ -234,7 +248,8 @@
           "tprAction": {
             "gl": "Agocharse detrás dos brazos e asomar de novo",
             "es": "Esconderse detrás de los brazos y asomarse de nuevo"
-          }
+          },
+          "lamina": "pal_behind_the_clouds"
         }
       ]
     },
@@ -290,7 +305,8 @@
           "tprAction": {
             "gl": "Poñerse de pé amodo cos brazos arriba coma unha planta",
             "es": "Ponerse de pie despacio con los brazos arriba como una planta"
-          }
+          },
+          "lamina": "pal_plant"
         },
         {
           "id": "3_4.abril.s2.flowerpot",
@@ -301,7 +317,8 @@
           "tprAction": {
             "gl": "Pousar unha planta imaxinaria nun testo",
             "es": "Poner una planta imaginaria en una maceta"
-          }
+          },
+          "lamina": "pal_flowerpot"
         },
         {
           "id": "3_4.abril.s2.watering-can",
@@ -312,7 +329,8 @@
           "tprAction": {
             "gl": "Inclinar unha regadeira imaxinaria",
             "es": "Inclinar una regadera imaginaria"
-          }
+          },
+          "lamina": "pal_watering_can"
         },
         {
           "id": "3_4.abril.s2.stem",
@@ -334,7 +352,8 @@
           "tprAction": {
             "gl": "Pasar de agachados a estirados moi amodo",
             "es": "Pasar de agachados a estirados muy despacio"
-          }
+          },
+          "lamina": "pal_grow"
         },
         {
           "id": "3_4.abril.s2.sow",
@@ -356,7 +375,8 @@
           "tprAction": {
             "gl": "Regar unha planta imaxinaria cos dedos",
             "es": "Regar una planta imaginaria con los dedos"
-          }
+          },
+          "lamina": "pal_sprinkle"
         },
         {
           "id": "3_4.abril.s2.bloom",
@@ -367,7 +387,8 @@
           "tprAction": {
             "gl": "Abrir os brazos de golpe coma unha flor que se abre",
             "es": "Abrir los brazos de golpe como una flor que se abre"
-          }
+          },
+          "lamina": "pal_bloom"
         },
         {
           "id": "3_4.abril.s2.sprout",
@@ -400,7 +421,8 @@
           "tprAction": {
             "gl": "Cheirar unha flor e suspirar de gusto",
             "es": "Oler una flor y suspirar de gusto"
-          }
+          },
+          "lamina": "pal_fragrant"
         },
         {
           "id": "3_4.abril.s2.alive",
@@ -422,7 +444,8 @@
           "tprAction": {
             "gl": "Xuntar as palmas moi estiradas cara arriba",
             "es": "Juntar las palmas muy estiradas hacia arriba"
-          }
+          },
+          "lamina": "pal_thin"
         },
         {
           "id": "3_4.abril.s2.be-a-little-seed",
@@ -433,7 +456,8 @@
           "tprAction": {
             "gl": "Encollerse no chan coma unha semente",
             "es": "Encogerse en el suelo como una semilla"
-          }
+          },
+          "lamina": "pal_be_a_little_seed"
         },
         {
           "id": "3_4.abril.s2.open-your-flower",
@@ -444,7 +468,8 @@
           "tprAction": {
             "gl": "Desde agachados, abrir brazos e mans amodo",
             "es": "Desde agachados, abrir brazos y manos despacio"
-          }
+          },
+          "lamina": "pal_open_like_a_flower"
         },
         {
           "id": "3_4.abril.s2.from-seed-to-flower",
@@ -455,7 +480,8 @@
           "tprAction": {
             "gl": "Pasar de bóla no chan a flor aberta",
             "es": "Pasar de bola en el suelo a flor abierta"
-          }
+          },
+          "lamina": "pal_from_seed_to_flower"
         },
         {
           "id": "3_4.abril.s2.slowly-slowly",
@@ -498,7 +524,8 @@
           "tprAction": {
             "gl": "Enganchar os polgares e mover as mans coma ás",
             "es": "Enganchar los pulgares y mover las manos como alas"
-          }
+          },
+          "lamina": "pal_butterfly"
         },
         {
           "id": "3_4.abril.s3.ladybird",
@@ -520,7 +547,8 @@
           "tprAction": {
             "gl": "Mover un dedo en ondas coma unha miñoca",
             "es": "Mover un dedo en ondas como una lombriz"
-          }
+          },
+          "lamina": "pal_worm"
         },
         {
           "id": "3_4.abril.s3.snail",
@@ -531,7 +559,8 @@
           "tprAction": {
             "gl": "Facer unha espiral no aire co dedo",
             "es": "Hacer una espiral en el aire con el dedo"
-          }
+          },
+          "lamina": "pal_snail"
         },
         {
           "id": "3_4.abril.s3.ant",
@@ -542,7 +571,8 @@
           "tprAction": {
             "gl": "Camiñar en fila moi pequeniños",
             "es": "Caminar en fila muy pequeñitos"
-          }
+          },
+          "lamina": "pal_ant"
         },
         {
           "id": "3_4.abril.s3.spider",
@@ -553,7 +583,8 @@
           "tprAction": {
             "gl": "Mover os dedos coma patas de araña",
             "es": "Mover los dedos como patas de araña"
-          }
+          },
+          "lamina": "pal_spider"
         },
         {
           "id": "3_4.abril.s3.buzz",
@@ -564,7 +595,8 @@
           "tprAction": {
             "gl": "Facer «bzzz» cos beizos",
             "es": "Hacer «bzzz» con los labios"
-          }
+          },
+          "lamina": "pal_buzz"
         },
         {
           "id": "3_4.abril.s3.crawl",
@@ -599,7 +631,8 @@
           "tprAction": {
             "gl": "Camiñar cos dedos polo brazo facendo cóxegas",
             "es": "Caminar con los dedos por el brazo haciendo cosquillas"
-          }
+          },
+          "lamina": "pal_tickle"
         },
         {
           "id": "3_4.abril.s3.search",
@@ -610,7 +643,8 @@
           "tprAction": {
             "gl": "Buscar debaixo de follas imaxinarias",
             "es": "Buscar debajo de hojas imaginarias"
-          }
+          },
+          "lamina": "pal_search"
         },
         {
           "id": "3_4.abril.s3.slimy",
@@ -621,7 +655,8 @@
           "tprAction": {
             "gl": "Tocar algo imaxinario e sacudir a man",
             "es": "Tocar algo imaginario y sacudir la mano"
-          }
+          },
+          "lamina": "pal_slimy"
         },
         {
           "id": "3_4.abril.s3.delicate",
@@ -632,7 +667,8 @@
           "tprAction": {
             "gl": "Coller algo moi fráxil coa punta dos dedos",
             "es": "Coger algo muy frágil con la punta de los dedos"
-          }
+          },
+          "lamina": "pal_delicate"
         },
         {
           "id": "3_4.abril.s3.hard-working",
@@ -643,7 +679,8 @@
           "tprAction": {
             "gl": "Levar cargas imaxinarias dun lado a outro",
             "es": "Llevar cargas imaginarias de un lado a otro"
-          }
+          },
+          "lamina": "pal_hard_working"
         },
         {
           "id": "3_4.abril.s3.curious",
@@ -676,7 +713,8 @@
           "tprAction": {
             "gl": "Sinalar arriba con sorpresa e seguir o voo",
             "es": "Señalar arriba con sorpresa y seguir el vuelo"
-          }
+          },
+          "lamina": "pal_look_a_butterfly"
         },
         {
           "id": "3_4.abril.s3.where-are-you-going",
@@ -742,7 +780,8 @@
           "tprAction": {
             "gl": "Suxeitar un ovo imaxinario con moito coidado",
             "es": "Sostener un huevo imaginario con mucho cuidado"
-          }
+          },
+          "lamina": "pal_egg"
         },
         {
           "id": "3_4.abril.s4.park",
@@ -753,7 +792,8 @@
           "tprAction": {
             "gl": "Abrir os brazos e mirar arredor contentos",
             "es": "Abrir los brazos y mirar alrededor contentos"
-          }
+          },
+          "lamina": "pal_park"
         },
         {
           "id": "3_4.abril.s4.bench",
@@ -764,7 +804,8 @@
           "tprAction": {
             "gl": "Sentar nun banco imaxinario e descansar",
             "es": "Sentarse en un banco imaginario y descansar"
-          }
+          },
+          "lamina": "pal_bench"
         },
         {
           "id": "3_4.abril.s4.pond",
@@ -775,7 +816,8 @@
           "tprAction": {
             "gl": "Mirar ao chan coma se nos vísemos reflectidos",
             "es": "Mirar al suelo como si nos viéramos reflejados"
-          }
+          },
+          "lamina": "pal_pond"
         },
         {
           "id": "3_4.abril.s4.stone",
@@ -798,7 +840,8 @@
           "tprAction": {
             "gl": "Camiñar rápido detrás dunha compañeira sen tocala",
             "es": "Caminar rápido detrás de una compañera sin tocarla"
-          }
+          },
+          "lamina": "pal_chase"
         },
         {
           "id": "3_4.abril.s4.balance",
@@ -821,7 +864,8 @@
           "tprAction": {
             "gl": "Saír amodo dun ovo imaxinario rompendo a casca",
             "es": "Salir despacio de un huevo imaginario rompiendo la cáscara"
-          }
+          },
+          "lamina": "pal_hatch"
         },
         {
           "id": "3_4.abril.s4.explore",
@@ -844,7 +888,8 @@
           "tprAction": {
             "gl": "Poñerse na liña de saída e contar ata tres",
             "es": "Ponerse en la línea de salida y contar hasta tres"
-          }
+          },
+          "lamina": "pal_race"
         },
         {
           "id": "3_4.abril.s4.wide",
@@ -855,7 +900,8 @@
           "tprAction": {
             "gl": "Abrir moito as pernas e os brazos",
             "es": "Abrir mucho las piernas y los brazos"
-          }
+          },
+          "lamina": "pal_wide"
         },
         {
           "id": "3_4.abril.s4.free",
@@ -877,7 +923,8 @@
           "tprAction": {
             "gl": "Levantar un dedo e dar un paso adiante",
             "es": "Levantar un dedo y dar un paso adelante"
-          }
+          },
+          "lamina": "pal_first"
         },
         {
           "id": "3_4.abril.s4.last",
@@ -888,7 +935,8 @@
           "tprAction": {
             "gl": "Poñerse ao final da fila e sorrir",
             "es": "Ponerse al final de la fila y sonreír"
-          }
+          },
+          "lamina": "pal_last"
         },
         {
           "id": "3_4.abril.s4.catch-me",
@@ -899,7 +947,8 @@
           "tprAction": {
             "gl": "Afastarse amodo e deixarse atrapar",
             "es": "Alejarse despacio y dejarse atrapar"
-          }
+          },
+          "lamina": "pal_catch_me"
         },
         {
           "id": "3_4.abril.s4.ready-steady-go",
@@ -932,7 +981,8 @@
           "tprAction": {
             "gl": "Abrir paso coas mans entre herba alta",
             "es": "Abrirse paso con las manos entre hierba alta"
-          }
+          },
+          "lamina": "pal_through_the_grass"
         }
       ]
     }

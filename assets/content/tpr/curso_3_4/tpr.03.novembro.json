@@ -33,7 +33,8 @@
           "tprAction": {
             "gl": "Poñerse de pé cos brazos abertos coma pólas",
             "es": "Ponerse de pie con los brazos abiertos como ramas"
-          }
+          },
+          "lamina": "pal_tree"
         },
         {
           "id": "3_4.novembro.s1.wind",
@@ -44,7 +45,8 @@
           "tprAction": {
             "gl": "Soprar e mover os brazos dun lado a outro",
             "es": "Soplar y mover los brazos de un lado a otro"
-          }
+          },
+          "lamina": "pal_wind"
         },
         {
           "id": "3_4.novembro.s1.branch",
@@ -55,7 +57,8 @@
           "tprAction": {
             "gl": "Estender un brazo e mover os dedos coma follas",
             "es": "Extender un brazo y mover los dedos como hojas"
-          }
+          },
+          "lamina": "pal_branch"
         },
         {
           "id": "3_4.novembro.s1.autumn",
@@ -66,7 +69,8 @@
           "tprAction": {
             "gl": "Deixar caer follas imaxinarias desde arriba",
             "es": "Dejar caer hojas imaginarias desde arriba"
-          }
+          },
+          "lamina": "pal_autumn"
         },
         {
           "id": "3_4.novembro.s1.sky",
@@ -77,7 +81,8 @@
           "tprAction": {
             "gl": "Sinalar o ceo e mirar cara arriba",
             "es": "Señalar el cielo y mirar hacia arriba"
-          }
+          },
+          "lamina": "pal_sky"
         },
         {
           "id": "3_4.novembro.s1.forest",
@@ -88,7 +93,8 @@
           "tprAction": {
             "gl": "Facer moitas árbores cos brazos, entre todos",
             "es": "Hacer muchos árboles con los brazos, entre todos"
-          }
+          },
+          "lamina": "pal_forest"
         },
         {
           "id": "3_4.novembro.s1.falling",
@@ -99,7 +105,8 @@
           "tprAction": {
             "gl": "Baixar amodo ata o chan coma unha folla que cae",
             "es": "Bajar despacio hasta el suelo como una hoja que cae"
-          }
+          },
+          "lamina": "pal_falling"
         },
         {
           "id": "3_4.novembro.s1.blow",
@@ -122,7 +129,8 @@
           "tprAction": {
             "gl": "Pisar forte no sitio coma sobre follas secas",
             "es": "Pisar fuerte en el sitio como sobre hojas secas"
-          }
+          },
+          "lamina": "pal_crunch"
         },
         {
           "id": "3_4.novembro.s1.pick-up",
@@ -168,7 +176,8 @@
           "tprAction": {
             "gl": "Sinalar algo laranxa na aula",
             "es": "Señalar algo naranja en el aula"
-          }
+          },
+          "lamina": "pal_orange"
         },
         {
           "id": "3_4.novembro.s1.dry",
@@ -179,7 +188,8 @@
           "tprAction": {
             "gl": "Esfarelar unha folla seca imaxinaria entre as mans",
             "es": "Desmenuzar una hoja seca imaginaria entre las manos"
-          }
+          },
+          "lamina": "pal_dry"
         },
         {
           "id": "3_4.novembro.s1.windy",
@@ -202,7 +212,8 @@
           "tprAction": {
             "gl": "Pisar follas imaxinarias facendo «cranch, cranch»",
             "es": "Pisar hojas imaginarias haciendo «cranch, cranch»"
-          }
+          },
+          "lamina": "pal_crunch_leaves"
         },
         {
           "id": "3_4.novembro.s1.fall-down",
@@ -225,7 +236,8 @@
           "tprAction": {
             "gl": "Camiñar moi suave para non facer ruído",
             "es": "Caminar muy suave para no hacer ruido"
-          }
+          },
+          "lamina": "pal_walk_softly"
         },
         {
           "id": "3_4.novembro.s1.under-the-tree",
@@ -236,7 +248,8 @@
           "tprAction": {
             "gl": "Agacharse baixo os brazos dunha compañeira que fai de árbore",
             "es": "Agacharse bajo los brazos de una compañera que hace de árbol"
-          }
+          },
+          "lamina": "pal_under_the_tree"
         }
       ]
     },
@@ -280,7 +293,8 @@
           "tprAction": {
             "gl": "Poñer as mans en forma de sombreiro sobre a cabeza",
             "es": "Poner las manos en forma de sombrero sobre la cabeza"
-          }
+          },
+          "lamina": "pal_mushroom"
         },
         {
           "id": "3_4.novembro.s2.squirrel",
@@ -303,7 +317,8 @@
           "tprAction": {
             "gl": "Coller unha landra imaxinaria cos dedos",
             "es": "Coger una bellota imaginaria con los dedos"
-          }
+          },
+          "lamina": "pal_acorn"
         },
         {
           "id": "3_4.novembro.s2.pinecone",
@@ -314,7 +329,8 @@
           "tprAction": {
             "gl": "Amosar unha piña imaxinaria e rodala entre as mans",
             "es": "Enseñar una piña imaginaria y hacerla rodar entre las manos"
-          }
+          },
+          "lamina": "pal_pinecone"
         },
         {
           "id": "3_4.novembro.s2.path",
@@ -325,7 +341,8 @@
           "tprAction": {
             "gl": "Camiñar en fila por un camiño imaxinario",
             "es": "Caminar en fila por un camino imaginario"
-          }
+          },
+          "lamina": "pal_path"
         },
         {
           "id": "3_4.novembro.s2.peel",
@@ -336,7 +353,8 @@
           "tprAction": {
             "gl": "Pelar unha castaña imaxinaria coas puntas dos dedos",
             "es": "Pelar una castaña imaginaria con las puntas de los dedos"
-          }
+          },
+          "lamina": "pal_peel"
         },
         {
           "id": "3_4.novembro.s2.carry",
@@ -347,7 +365,8 @@
           "tprAction": {
             "gl": "Levar un cesto imaxinario co brazo dobrado",
             "es": "Llevar una cesta imaginaria con el brazo doblado"
-          }
+          },
+          "lamina": "pal_carry"
         },
         {
           "id": "3_4.novembro.s2.hide",
@@ -394,7 +413,8 @@
           "tprAction": {
             "gl": "Soprar os dedos coma se queimasen un pouco",
             "es": "Soplarse los dedos como si quemaran un poco"
-          }
+          },
+          "lamina": "pal_hot"
         },
         {
           "id": "3_4.novembro.s2.spiky",
@@ -405,7 +425,8 @@
           "tprAction": {
             "gl": "Tocar cun dedo moi amodo algo que pica e retirar a man",
             "es": "Tocar con un dedo muy despacio algo que pincha y retirar la mano"
-          }
+          },
+          "lamina": "pal_spiky"
         },
         {
           "id": "3_4.novembro.s2.shiny",
@@ -416,7 +437,8 @@
           "tprAction": {
             "gl": "Abrir e pechar as mans coma estreliñas que relocen",
             "es": "Abrir y cerrar las manos como estrellitas que relucen"
-          }
+          },
+          "lamina": "pal_shiny"
         },
         {
           "id": "3_4.novembro.s2.hard",
@@ -427,7 +449,8 @@
           "tprAction": {
             "gl": "Apertar unha castaña imaxinaria que non se esmaga",
             "es": "Apretar una castaña imaginaria que no se aplasta"
-          }
+          },
+          "lamina": "pal_hard"
         },
         {
           "id": "3_4.novembro.s2.where-is-the-squirrel",
@@ -460,7 +483,8 @@
           "tprAction": {
             "gl": "Meter castañas imaxinarias no cesto dos brazos",
             "es": "Meter castañas imaginarias en la cesta de los brazos"
-          }
+          },
+          "lamina": "pal_in_the_basket"
         },
         {
           "id": "3_4.novembro.s2.behind-the-tree",
@@ -471,7 +495,8 @@
           "tprAction": {
             "gl": "Agocharse detrás dunha compañeira que fai de árbore",
             "es": "Esconderse detrás de una compañera que hace de árbol"
-          }
+          },
+          "lamina": "pal_behind_the_tree"
         }
       ]
     },
@@ -491,7 +516,8 @@
           "tprAction": {
             "gl": "Facer grandes ollos redondos cos dedos",
             "es": "Hacer grandes ojos redondos con los dedos"
-          }
+          },
+          "lamina": "pal_owl"
         },
         {
           "id": "3_4.novembro.s3.fox",
@@ -526,7 +552,8 @@
           "tprAction": {
             "gl": "Poñer as mans abertas na cabeza coma a galla dun cervo",
             "es": "Poner las manos abiertas en la cabeza como la cornamenta de un ciervo"
-          }
+          },
+          "lamina": "pal_deer"
         },
         {
           "id": "3_4.novembro.s3.mouse",
@@ -537,7 +564,8 @@
           "tprAction": {
             "gl": "Mover o nariz rápido e facer bigotes cos dedos",
             "es": "Mover la nariz rápido y hacer bigotes con los dedos"
-          }
+          },
+          "lamina": "pal_mouse"
         },
         {
           "id": "3_4.novembro.s3.wolf",
@@ -596,7 +624,8 @@
           "tprAction": {
             "gl": "Avanzar ás agachadas moi amodo",
             "es": "Avanzar agachados muy despacio"
-          }
+          },
+          "lamina": "pal_creep"
         },
         {
           "id": "3_4.novembro.s3.dig",
@@ -619,7 +648,8 @@
           "tprAction": {
             "gl": "Levantar a cabeza e facer «auuu» moi suave",
             "es": "Levantar la cabeza y hacer «auuu» muy suave"
-          }
+          },
+          "lamina": "pal_howl"
         },
         {
           "id": "3_4.novembro.s3.furry",
@@ -630,7 +660,8 @@
           "tprAction": {
             "gl": "Acariñar un pelo moi mol imaxinario",
             "es": "Acariciar un pelo muy suave imaginario"
-          }
+          },
+          "lamina": "pal_furry"
         },
         {
           "id": "3_4.novembro.s3.wild",
@@ -652,7 +683,8 @@
           "tprAction": {
             "gl": "Amosar algo diminuto entre dous dedos",
             "es": "Mostrar algo diminuto entre dos dedos"
-          }
+          },
+          "lamina": "pal_tiny"
         },
         {
           "id": "3_4.novembro.s3.brave",
@@ -685,7 +717,8 @@
           "tprAction": {
             "gl": "Facer un moucho coas mans e dicir «hu, hu»",
             "es": "Hacer un búho con las manos y decir «uh, uh»"
-          }
+          },
+          "lamina": "pal_hoot_hoot"
         },
         {
           "id": "3_4.novembro.s3.shh-listen",
@@ -696,7 +729,8 @@
           "tprAction": {
             "gl": "Levar o dedo aos beizos e logo a man á orella",
             "es": "Llevarse el dedo a los labios y luego la mano a la oreja"
-          }
+          },
+          "lamina": "pal_shh_listen"
         },
         {
           "id": "3_4.novembro.s3.quiet-as-a-mouse",
@@ -707,7 +741,8 @@
           "tprAction": {
             "gl": "Andar de puntas sen facer nin un ruído",
             "es": "Andar de puntillas sin hacer ni un ruido"
-          }
+          },
+          "lamina": "pal_quiet_as_a_mouse"
         }
       ]
     },
@@ -739,7 +774,8 @@
           "tprAction": {
             "gl": "Coller uvas imaxinarias dun acio e levalas á boca",
             "es": "Coger uvas imaginarias de un racimo y llevarlas a la boca"
-          }
+          },
+          "lamina": "pal_grapes"
         },
         {
           "id": "3_4.novembro.s4.walnut",
@@ -750,7 +786,8 @@
           "tprAction": {
             "gl": "Abrir unha noz imaxinaria coas dúas mans",
             "es": "Abrir una nuez imaginaria con las dos manos"
-          }
+          },
+          "lamina": "pal_walnut"
         },
         {
           "id": "3_4.novembro.s4.corn",
@@ -761,7 +798,8 @@
           "tprAction": {
             "gl": "Debullar unha espiga de millo imaxinaria",
             "es": "Desgranar una mazorca de maíz imaginaria"
-          }
+          },
+          "lamina": "pal_corn"
         },
         {
           "id": "3_4.novembro.s4.potato",
@@ -772,7 +810,8 @@
           "tprAction": {
             "gl": "Sacar unha pataca da terra tirando con forza",
             "es": "Sacar una patata de la tierra tirando con fuerza"
-          }
+          },
+          "lamina": "pal_potato"
         },
         {
           "id": "3_4.novembro.s4.soup",
@@ -783,7 +822,8 @@
           "tprAction": {
             "gl": "Soprar unha culler de caldo quente",
             "es": "Soplar una cuchara de caldo caliente"
-          }
+          },
+          "lamina": "pal_soup"
         },
         {
           "id": "3_4.novembro.s4.pot",
@@ -818,7 +858,8 @@
           "tprAction": {
             "gl": "Botar ingredientes imaxinarios na pota",
             "es": "Echar ingredientes imaginarios en la olla"
-          }
+          },
+          "lamina": "pal_cook"
         },
         {
           "id": "3_4.novembro.s4.squash",
@@ -863,7 +904,8 @@
           "tprAction": {
             "gl": "Espremer un acio de uvas imaxinario entre as mans",
             "es": "Exprimir un racimo de uvas imaginario entre las manos"
-          }
+          },
+          "lamina": "pal_juicy"
         },
         {
           "id": "3_4.novembro.s4.ripe",
@@ -885,7 +927,8 @@
           "tprAction": {
             "gl": "Mastigar moi forte cunha cara divertida",
             "es": "Masticar muy fuerte con una cara divertida"
-          }
+          },
+          "lamina": "pal_crunchy"
         },
         {
           "id": "3_4.novembro.s4.sticky",
@@ -908,7 +951,8 @@
           "tprAction": {
             "gl": "Cheirar o aire con cara de gusto",
             "es": "Oler el aire con cara de gusto"
-          }
+          },
+          "lamina": "pal_it_smells_good"
         },
         {
           "id": "3_4.novembro.s4.more-please",
@@ -931,7 +975,8 @@
           "tprAction": {
             "gl": "Remexer co brazo e logo probar da culler",
             "es": "Remover con el brazo y luego probar de la cuchara"
-          }
+          },
+          "lamina": "pal_stir_then_taste"
         },
         {
           "id": "3_4.novembro.s4.in-the-pot",
@@ -942,7 +987,8 @@
           "tprAction": {
             "gl": "Botar dentro da pota imaxinaria o que collemos",
             "es": "Echar dentro de la olla imaginaria lo que cogimos"
-          }
+          },
+          "lamina": "pal_in_the_pot"
         }
       ]
     }

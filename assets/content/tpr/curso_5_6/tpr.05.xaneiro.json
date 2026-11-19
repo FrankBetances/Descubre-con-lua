@@ -54,7 +54,8 @@
             "gl": "Camiñar por rúas estreitas",
             "es": "Caminar por calles estrechas"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_old_town"
         },
         {
           "id": "5_6.xaneiro.s1.stone-wall",
@@ -76,7 +77,8 @@
             "gl": "Quedar quieto coma unha estatua",
             "es": "Quedarse quieto como una estatua"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_stone_statue"
         },
         {
           "id": "5_6.xaneiro.s1.museum",
@@ -87,7 +89,8 @@
             "gl": "Camiñar amodo mirando",
             "es": "Caminar despacio mirando"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_museum"
         },
         {
           "id": "5_6.xaneiro.s1.hold-up-one-finger-for-first",
@@ -164,7 +167,8 @@
             "gl": "Camiñar amodo e encorvado",
             "es": "Caminar despacio y encorvado"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_very_old"
         },
         {
           "id": "5_6.xaneiro.s1.famous",
@@ -186,7 +190,8 @@
             "gl": "Bater nunha pedra",
             "es": "Golpear una piedra"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_stony"
         },
         {
           "id": "5_6.xaneiro.s1.long-long-ago",
@@ -262,7 +267,8 @@
             "gl": "Poñer os brazos coma murallas",
             "es": "Poner los brazos como murallas"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_fortress"
         },
         {
           "id": "5_6.xaneiro.s2.castle-wall",
@@ -273,7 +279,8 @@
             "gl": "Camiñar rozando unha parede",
             "es": "Caminar rozando una pared"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_castle_wall"
         },
         {
           "id": "5_6.xaneiro.s2.sailing-ship",
@@ -284,7 +291,8 @@
             "gl": "Balancearse coma un barco grande",
             "es": "Balancearse como un barco grande"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_sailing_ship"
         },
         {
           "id": "5_6.xaneiro.s2.canon",
@@ -295,7 +303,8 @@
             "gl": "Facer un tubo cos brazos",
             "es": "Hacer un tubo con los brazos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_cannon"
         },
         {
           "id": "5_6.xaneiro.s2.cobbles",
@@ -306,7 +315,8 @@
             "gl": "Pisar con coidado",
             "es": "Pisar con cuidado"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_cobbles"
         },
         {
           "id": "5_6.xaneiro.s2.lantern-light",
@@ -317,7 +327,8 @@
             "gl": "Suxeitar unha luz pequena",
             "es": "Sostener una luz pequeña"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_lantern_light"
         },
         {
           "id": "5_6.xaneiro.s2.sail-across-the-ocean",
@@ -328,7 +339,8 @@
             "gl": "Remar e mirar lonxe",
             "es": "Remar y mirar lejos"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_sail_across_the_ocean"
         },
         {
           "id": "5_6.xaneiro.s2.defend",
@@ -339,7 +351,8 @@
             "gl": "Poñer un escudo imaxinario",
             "es": "Ponerse un escudo imaginario"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_defend"
         },
         {
           "id": "5_6.xaneiro.s2.grow-bigger",
@@ -350,7 +363,8 @@
             "gl": "Abrir os brazos amodo",
             "es": "Abrir los brazos despacio"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_grow_bigger"
         },
         {
           "id": "5_6.xaneiro.s2.fish-for-a-living",
@@ -361,7 +375,8 @@
             "gl": "Lanzar a rede",
             "es": "Lanzar la red"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_fish_for_a_living"
         },
         {
           "id": "5_6.xaneiro.s2.travel-by-boat",
@@ -372,7 +387,8 @@
             "gl": "Balancearse sentados",
             "es": "Balancearse sentados"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_travel_by_boat"
         },
         {
           "id": "5_6.xaneiro.s2.ancient-town",
@@ -383,7 +399,8 @@
             "gl": "Camiñar amodo",
             "es": "Caminar despacio"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_ancient_town"
         },
         {
           "id": "5_6.xaneiro.s2.tiny-village",
@@ -405,7 +422,8 @@
             "gl": "Moverse rápido",
             "es": "Moverse rápido"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_busy_city"
         },
         {
           "id": "5_6.xaneiro.s2.modern",
@@ -460,7 +478,8 @@
             "gl": "Pechar os ollos",
             "es": "Cerrar los ojos"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_imagine_the_old_ships"
         }
       ]
     },
@@ -480,7 +499,8 @@
             "gl": "Arrolar un bebé imaxinario",
             "es": "Acunar un bebé imaginario"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_baby_photo"
         },
         {
           "id": "5_6.xaneiro.s3.family-tree",
@@ -491,7 +511,8 @@
             "gl": "Debuxar pólas no aire",
             "es": "Dibujar ramas en el aire"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_family_tree"
         },
         {
           "id": "5_6.xaneiro.s3.great-grandparents",
@@ -513,7 +534,8 @@
             "gl": "Soprar velas imaxinarias",
             "es": "Soplar velas imaginarias"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_birthday"
         },
         {
           "id": "5_6.xaneiro.s3.age",
@@ -557,7 +579,8 @@
             "gl": "Erguerse amodo",
             "es": "Levantarse despacio"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_grow_up"
         },
         {
           "id": "5_6.xaneiro.s3.learn-to-walk",
@@ -568,7 +591,8 @@
             "gl": "Dar pasiños inseguros",
             "es": "Dar pasitos inseguros"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_learn_to_walk"
         },
         {
           "id": "5_6.xaneiro.s3.look-at-old-photos",
@@ -590,7 +614,8 @@
             "gl": "Pasar dun xesto pequeno a un grande",
             "es": "Pasar de un gesto pequeño a uno grande"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_change_over_time"
         },
         {
           "id": "5_6.xaneiro.s3.share-memories",
@@ -645,7 +670,8 @@
             "gl": "Arrolar nos brazos",
             "es": "Acunar en los brazos"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_newborn_baby"
         },
         {
           "id": "5_6.xaneiro.s3.how-old-are-you",
@@ -667,7 +693,8 @@
             "gl": "Gatear e logo camiñar",
             "es": "Gatear y luego caminar"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_when_i_was_a_baby_i_couldn_t_walk"
         },
         {
           "id": "5_6.xaneiro.s3.i-m-five-and-a-half",
@@ -744,7 +771,8 @@
             "gl": "Poñer as mans na cadeira",
             "es": "Poner las manos en la cadera"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_hero"
         },
         {
           "id": "5_6.xaneiro.s4.plot-twist",
@@ -777,7 +805,8 @@
             "gl": "Debuxar tres cadros no aire",
             "es": "Dibujar tres cuadros en el aire"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_storyboard"
         },
         {
           "id": "5_6.xaneiro.s4.retell",
@@ -821,7 +850,8 @@
             "gl": "Debuxar no aire",
             "es": "Dibujar en el aire"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_illustrate"
         },
         {
           "id": "5_6.xaneiro.s4.act-it-out",

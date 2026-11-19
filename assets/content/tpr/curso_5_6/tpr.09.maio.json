@@ -54,7 +54,8 @@
             "gl": "Amosar unha cara",
             "es": "Enseñar una cara"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_emotion_card"
         },
         {
           "id": "5_6.maio.s1.worry-doll",
@@ -65,7 +66,8 @@
             "gl": "Susurrar a unha boneca",
             "es": "Susurrar a una muñeca"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_worry_doll"
         },
         {
           "id": "5_6.maio.s1.calm-jar",
@@ -76,7 +78,8 @@
             "gl": "Axitar e mirar como baixa",
             "es": "Agitar y mirar cómo baja"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_calm_jar"
         },
         {
           "id": "5_6.maio.s1.breathing-buddy",
@@ -87,7 +90,8 @@
             "gl": "Poñer un peluche na barriga",
             "es": "Poner un peluche en la barriga"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_breathing_buddy"
         },
         {
           "id": "5_6.maio.s1.name-a-feeling",
@@ -142,7 +146,8 @@
             "gl": "Axitar e agardar",
             "es": "Agitar y esperar"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_watch_the_glitter_settle"
         },
         {
           "id": "5_6.maio.s1.content-feeling",
@@ -230,7 +235,8 @@
             "gl": "Abrazarse",
             "es": "Abrazarse"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_i_feel_better_after_a_hug"
         }
       ]
     },
@@ -272,7 +278,8 @@
             "gl": "Sentarse fronte a fronte",
             "es": "Sentarse frente a frente"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_peace_table"
         },
         {
           "id": "5_6.maio.s2.fair-solution",
@@ -294,7 +301,8 @@
             "gl": "Sinalar a un e a outro",
             "es": "Señalar a uno y a otro"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_both_sides"
         },
         {
           "id": "5_6.maio.s2.feelings-words",
@@ -512,7 +520,8 @@
             "gl": "Sentarse e facer sitio",
             "es": "Sentarse y hacer sitio"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_buddy_bench"
         },
         {
           "id": "5_6.maio.s3.helping-hand",
@@ -743,7 +752,8 @@
             "gl": "Cavar no aire",
             "es": "Cavar en el aire"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_garden_plot"
         },
         {
           "id": "5_6.maio.s4.pet-care",
@@ -754,7 +764,8 @@
             "gl": "Acariñar e dar de comer",
             "es": "Acariciar y dar de comer"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_pet_care"
         },
         {
           "id": "5_6.maio.s4.chore",
@@ -765,7 +776,8 @@
             "gl": "Varrer no aire",
             "es": "Barrer en el aire"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_chore"
         },
         {
           "id": "5_6.maio.s4.thank-you-note",
@@ -787,7 +799,8 @@
             "gl": "Parar e respirar",
             "es": "Parar y respirar"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_take_a_break"
         },
         {
           "id": "5_6.maio.s4.look-after",
@@ -809,7 +822,8 @@
             "gl": "Recoller xoguetes",
             "es": "Recoger juguetes"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_tidy_your_room"
         },
         {
           "id": "5_6.maio.s4.water-the-plants",
@@ -843,7 +857,8 @@
             "gl": "Abrazar un peluche",
             "es": "Abrazar un peluche"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_caring_for_others"
         },
         {
           "id": "5_6.maio.s4.well-cared-for",
@@ -854,7 +869,8 @@
             "gl": "Acariñar unha planta",
             "es": "Acariciar una planta"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_well_cared_for"
         },
         {
           "id": "5_6.maio.s4.useful-helper",
@@ -898,7 +914,8 @@
             "gl": "Poñer pratos imaxinarios",
             "es": "Poner platos imaginarios"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_i_help_at_home_by_setting_the_table"
         },
         {
           "id": "5_6.maio.s4.when-i-look-after-my-plant-it-grows",
@@ -909,7 +926,8 @@
             "gl": "Regar e subir a man",
             "es": "Regar y subir la mano"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_when_i_look_after_my_plant_it_grows"
         },
         {
           "id": "5_6.maio.s4.thank-you-for-helping-me",

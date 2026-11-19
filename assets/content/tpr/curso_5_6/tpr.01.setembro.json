@@ -33,7 +33,8 @@
             "gl": "Meter un papel na urna",
             "es": "Meter un papel en la urna"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_ballot_box"
         },
         {
           "id": "5_6.setembro.s1.leader",
@@ -44,7 +45,8 @@
             "gl": "Poñerse diante e sinalar o camiño",
             "es": "Ponerse delante y señalar el camino"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_leader"
         },
         {
           "id": "5_6.setembro.s1.idea",
@@ -55,7 +57,8 @@
             "gl": "Tocar a cabeza e abrir a man",
             "es": "Tocar la cabeza y abrir la mano"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_idea"
         },
         {
           "id": "5_6.setembro.s1.opinion",
@@ -121,7 +124,8 @@
             "gl": "Levar a man á orella",
             "es": "Llevar la mano a la oreja"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_listen_with_a_hand_to_the_ear"
         },
         {
           "id": "5_6.setembro.s1.shake-on-it",
@@ -143,7 +147,8 @@
             "gl": "Contar mans cos dedos",
             "es": "Contar manos con los dedos"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_count_votes"
         },
         {
           "id": "5_6.setembro.s1.democratic",
@@ -306,7 +311,8 @@
             "gl": "Pousar unha insignia no peito",
             "es": "Poner una insignia en el pecho"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_badge"
         },
         {
           "id": "5_6.setembro.s2.team-circle",
@@ -328,7 +334,8 @@
             "gl": "Camiñar diante sinalando",
             "es": "Caminar delante señalando"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_lead_the_way"
         },
         {
           "id": "5_6.setembro.s2.encourage",
@@ -372,7 +379,8 @@
             "gl": "Chocar as mans todos",
             "es": "Chocar las manos todos"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_celebrate_as_a_team"
         },
         {
           "id": "5_6.setembro.s2.supportive",
@@ -502,7 +510,8 @@
             "gl": "Sinalar algo cunha lupa",
             "es": "Señalar algo con una lupa"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_clue"
         },
         {
           "id": "5_6.setembro.s3.puzzle-piece",
@@ -513,7 +522,8 @@
             "gl": "Encaixar unha peza",
             "es": "Encajar una pieza"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_puzzle_piece"
         },
         {
           "id": "5_6.setembro.s3.plan-b",
@@ -535,7 +545,8 @@
             "gl": "Debuxar un signo no aire",
             "es": "Dibujar un signo en el aire"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_question_mark"
         },
         {
           "id": "5_6.setembro.s3.answer",
@@ -634,7 +645,8 @@
             "gl": "Parar e encoller os ombros",
             "es": "Parar y encoger los hombros"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_stuck"
         },
         {
           "id": "5_6.setembro.s3.solved",
@@ -744,7 +756,8 @@
             "gl": "Xirar un reloxo imaxinario",
             "es": "Girar un reloj imaginario"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_timer"
         },
         {
           "id": "5_6.setembro.s4.swap",

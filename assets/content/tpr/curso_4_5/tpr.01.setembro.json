@@ -54,7 +54,8 @@
             "gl": "Poñerse diante do grupo",
             "es": "Ponerse delante del grupo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_captain"
         },
         {
           "id": "4_5.setembro.s1.agreement",
@@ -65,7 +66,8 @@
             "gl": "Darse a man co compañeiro",
             "es": "Darse la mano con el compañero"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_agreement"
         },
         {
           "id": "4_5.setembro.s1.talking-stick",
@@ -87,7 +89,8 @@
             "gl": "Sinalar o propio encargo no panel",
             "es": "Señalar el propio encargo en el panel"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_classroom_job"
         },
         {
           "id": "4_5.setembro.s1.agree",
@@ -109,7 +112,8 @@
             "gl": "Levantar a man e agardar",
             "es": "Levantar la mano y esperar"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_raise_a_hand"
         },
         {
           "id": "4_5.setembro.s1.take-a-turn",
@@ -131,7 +135,8 @@
             "gl": "Camiñar pola liña marcada",
             "es": "Caminar por la línea marcada"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_follow_the_rules"
         },
         {
           "id": "4_5.setembro.s1.cooperate",
@@ -142,7 +147,8 @@
             "gl": "Levar unha caixa entre dous",
             "es": "Llevar una caja entre dos"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_cooperate"
         },
         {
           "id": "4_5.setembro.s1.fair",
@@ -253,7 +259,8 @@
             "gl": "Poñer un casco imaxinario",
             "es": "Ponerse un casco imaginario"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_construction_site"
         },
         {
           "id": "4_5.setembro.s2.wooden-plank",
@@ -264,7 +271,8 @@
             "gl": "Levar unha táboa entre dous",
             "es": "Llevar una tabla entre dos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_wooden_plank"
         },
         {
           "id": "4_5.setembro.s2.bridge",
@@ -275,7 +283,8 @@
             "gl": "Facer unha ponte cos corpos",
             "es": "Hacer un puente con los cuerpos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_bridge"
         },
         {
           "id": "4_5.setembro.s2.plan",
@@ -297,7 +306,8 @@
             "gl": "Tocar o casco na cabeza",
             "es": "Tocar el casco en la cabeza"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_hard_hat"
         },
         {
           "id": "4_5.setembro.s2.base",
@@ -308,7 +318,8 @@
             "gl": "Poñer as pezas grandes abaixo",
             "es": "Poner las piezas grandes abajo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_base"
         },
         {
           "id": "4_5.setembro.s2.blueprint",
@@ -319,7 +330,8 @@
             "gl": "Debuxar un plano no aire",
             "es": "Dibujar un plano en el aire"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_blueprint"
         },
         {
           "id": "4_5.setembro.s2.build-high",
@@ -330,7 +342,8 @@
             "gl": "Poñer bloques ata arriba",
             "es": "Poner bloques hasta arriba"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_build_high"
         },
         {
           "id": "4_5.setembro.s2.hold-steady",
@@ -341,7 +354,8 @@
             "gl": "Suxeitar a torre coas dúas mans",
             "es": "Sujetar la torre con las dos manos"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_hold_steady"
         },
         {
           "id": "4_5.setembro.s2.measure",
@@ -363,7 +377,8 @@
             "gl": "Unir dúas pezas",
             "es": "Unir dos piezas"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_connect"
         },
         {
           "id": "4_5.setembro.s2.share-blocks",
@@ -397,7 +412,8 @@
             "gl": "Comparar dúas torres coa man",
             "es": "Comparar dos torres con la mano"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_taller"
         },
         {
           "id": "4_5.setembro.s2.wider",
@@ -408,7 +424,8 @@
             "gl": "Abrir os brazos máis",
             "es": "Abrir los brazos más"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_wider"
         },
         {
           "id": "4_5.setembro.s2.wobbly-bridge",
@@ -419,7 +436,8 @@
             "gl": "Camiñar con equilibrio",
             "es": "Caminar con equilibrio"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_wobbly_bridge"
         },
         {
           "id": "4_5.setembro.s2.can-you-help-me-build",
@@ -483,7 +501,8 @@
             "gl": "Fregar as mans para quitalos",
             "es": "Frotar las manos para quitarlos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_germs"
         },
         {
           "id": "4_5.setembro.s3.nail-brush",
@@ -494,7 +513,8 @@
             "gl": "Fregar as unllas co cepillo",
             "es": "Frotar las uñas con el cepillo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_nail_brush"
         },
         {
           "id": "4_5.setembro.s3.hand-gel",
@@ -505,7 +525,8 @@
             "gl": "Fregar as mans co xel",
             "es": "Frotar las manos con el gel"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_hand_gel"
         },
         {
           "id": "4_5.setembro.s3.tissue-box",
@@ -527,7 +548,8 @@
             "gl": "Amosar unha froita",
             "es": "Enseñar una fruta"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_healthy_snack"
         },
         {
           "id": "4_5.setembro.s3.water-break",
@@ -538,7 +560,8 @@
             "gl": "Beber un grolo",
             "es": "Beber un sorbo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_water_break"
         },
         {
           "id": "4_5.setembro.s3.lunch-time",
@@ -549,7 +572,8 @@
             "gl": "Sentarse á mesa",
             "es": "Sentarse a la mesa"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_lunch_time"
         },
         {
           "id": "4_5.setembro.s3.wash-thoroughly",
@@ -560,7 +584,8 @@
             "gl": "Fregar entre os dedos",
             "es": "Frotar entre los dedos"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_wash_thoroughly"
         },
         {
           "id": "4_5.setembro.s3.rinse-well",
@@ -571,7 +596,8 @@
             "gl": "Pasar as mans baixo a auga",
             "es": "Pasar las manos bajo el agua"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_rinse_well"
         },
         {
           "id": "4_5.setembro.s3.count-to-twenty",
@@ -604,7 +630,8 @@
             "gl": "Levar o vaso á boca",
             "es": "Llevar el vaso a la boca"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_drink_water"
         },
         {
           "id": "4_5.setembro.s3.germ-free",
@@ -615,7 +642,8 @@
             "gl": "Amosar as mans limpas",
             "es": "Enseñar las manos limpias"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_germ_free"
         },
         {
           "id": "4_5.setembro.s3.well-rested",
@@ -648,7 +676,8 @@
             "gl": "Beber e sorrir",
             "es": "Beber y sonreír"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_hydrated"
         },
         {
           "id": "4_5.setembro.s3.wash-your-hands-before-lunch",
@@ -659,7 +688,8 @@
             "gl": "Lavar as mans e sentarse",
             "es": "Lavarse las manos y sentarse"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_wash_your_hands_before_lunch"
         },
         {
           "id": "4_5.setembro.s3.why-do-we-wash-our-hands",
@@ -692,7 +722,8 @@
             "gl": "Fregar entre os dedos",
             "es": "Frotar entre los dedos"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_between_your_fingers_too"
         }
       ]
     },
@@ -712,7 +743,8 @@
             "gl": "Sinalar unha cara no panel",
             "es": "Señalar una cara en el panel"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_feelings_chart"
         },
         {
           "id": "4_5.setembro.s4.calm-down-corner",
@@ -723,7 +755,8 @@
             "gl": "Sentarse no recuncho",
             "es": "Sentarse en el rincón"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_calm_down_corner"
         },
         {
           "id": "4_5.setembro.s4.deep-breath",
@@ -734,7 +767,8 @@
             "gl": "Inchar a barriga de aire",
             "es": "Inflar la barriga de aire"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_deep_breath"
         },
         {
           "id": "4_5.setembro.s4.feeling",
@@ -756,7 +790,8 @@
             "gl": "Abrazar un peluche",
             "es": "Abrazar un peluche"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_hug_buddy"
         },
         {
           "id": "4_5.setembro.s4.kind-words",
@@ -778,7 +813,8 @@
             "gl": "Xuntar os dedos índices",
             "es": "Juntar los dedos índices"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_friendship"
         },
         {
           "id": "4_5.setembro.s4.calm-down",
@@ -789,7 +825,8 @@
             "gl": "Respirar amodo coas mans na barriga",
             "es": "Respirar despacio con las manos en la barriga"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_calm_down"
         },
         {
           "id": "4_5.setembro.s4.express",
@@ -811,7 +848,8 @@
             "gl": "Pousar a man no ombro dun amigo",
             "es": "Poner la mano en el hombro de un amigo"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_comfort"
         },
         {
           "id": "4_5.setembro.s4.apologise",
@@ -844,7 +882,8 @@
             "gl": "Sorrir moi grande",
             "es": "Sonreír muy grande"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_cheerful_face"
         },
         {
           "id": "4_5.setembro.s4.grumpy",
@@ -855,7 +894,8 @@
             "gl": "Cruzar os brazos e logo rir",
             "es": "Cruzar los brazos y luego reír"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_grumpy"
         },
         {
           "id": "4_5.setembro.s4.frustrated",
@@ -899,7 +939,8 @@
             "gl": "Sorrir e bater palmas",
             "es": "Sonreír y dar palmas"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_i_feel_happy_because_we_play"
         },
         {
           "id": "4_5.setembro.s4.i-m-sorry",

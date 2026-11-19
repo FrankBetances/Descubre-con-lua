@@ -57,7 +57,8 @@
             "gl": "Estirar o brazo longo",
             "es": "Estirar el brazo largo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_harbour_wall"
         },
         {
           "id": "4_5.xuno.s1.buoy",
@@ -68,7 +69,8 @@
             "gl": "Subir e baixar coma unha boia",
             "es": "Subir y bajar como una boya"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_buoy"
         },
         {
           "id": "4_5.xuno.s1.fisherman",
@@ -79,7 +81,8 @@
             "gl": "Lanzar unha rede",
             "es": "Lanzar una red"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_fisherman"
         },
         {
           "id": "4_5.xuno.s1.fish-market",
@@ -90,7 +93,8 @@
             "gl": "Sinalar caixas de peixe",
             "es": "Señalar cajas de pescado"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_fish_market"
         },
         {
           "id": "4_5.xuno.s1.climb-aboard",
@@ -101,7 +105,8 @@
             "gl": "Dar un paso grande",
             "es": "Dar un paso grande"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_climb_aboard"
         },
         {
           "id": "4_5.xuno.s1.pull-up-the-rope",
@@ -112,7 +117,8 @@
             "gl": "Tirar da corda cara arriba",
             "es": "Tirar de la cuerda hacia arriba"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_pull_up_the_rope"
         },
         {
           "id": "4_5.xuno.s1.cast-a-net",
@@ -123,7 +129,8 @@
             "gl": "Abrir os brazos lanzando",
             "es": "Abrir los brazos lanzando"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_cast_a_net"
         },
         {
           "id": "4_5.xuno.s1.bob-on-the-water",
@@ -134,7 +141,8 @@
             "gl": "Subir e baixar amodo",
             "es": "Subir y bajar despacio"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_bob_on_the_water"
         },
         {
           "id": "4_5.xuno.s1.look-through-binoculars",
@@ -156,7 +164,8 @@
             "gl": "Bater na mesa",
             "es": "Golpear la mesa"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_wooden"
         },
         {
           "id": "4_5.xuno.s1.floating-raft",
@@ -167,7 +176,8 @@
             "gl": "Balancearse",
             "es": "Balancearse"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_floating_raft"
         },
         {
           "id": "4_5.xuno.s1.busy-harbour",
@@ -178,7 +188,8 @@
             "gl": "Moverse traballando",
             "es": "Moverse trabajando"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_busy_harbour"
         },
         {
           "id": "4_5.xuno.s1.seafaring",
@@ -211,7 +222,8 @@
             "gl": "Baixar os dedos",
             "es": "Bajar los dedos"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_mussels_grow_on_ropes_under_the_raft"
         },
         {
           "id": "4_5.xuno.s1.pull-pull-pull",
@@ -222,7 +234,8 @@
             "gl": "Tirar da corda",
             "es": "Tirar de la cuerda"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_pull_pull_pull"
         },
         {
           "id": "4_5.xuno.s1.all-hands-on-deck",
@@ -233,7 +246,8 @@
             "gl": "Correr ao barco",
             "es": "Correr al barco"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_all_hands_on_deck"
         }
       ]
     },
@@ -276,7 +290,8 @@
             "gl": "Abrir a carpeta",
             "es": "Abrir la carpeta"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_drawing_folder"
         },
         {
           "id": "4_5.xuno.s2.timeline",
@@ -287,7 +302,8 @@
             "gl": "Sinalar dunha punta a outra",
             "es": "Señalar de una punta a otra"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_timeline"
         },
         {
           "id": "4_5.xuno.s2.favourite-day",
@@ -309,7 +325,8 @@
             "gl": "Medirse na parede",
             "es": "Medirse en la pared"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_growth_chart"
         },
         {
           "id": "4_5.xuno.s2.achievement",
@@ -342,7 +359,8 @@
             "gl": "Pasar follas amodo",
             "es": "Pasar hojas despacio"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_browse"
         },
         {
           "id": "4_5.xuno.s2.measure-height",
@@ -375,7 +393,8 @@
             "gl": "Saltar cos brazos arriba",
             "es": "Saltar con los brazos arriba"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_jump_for_joy"
         },
         {
           "id": "4_5.xuno.s2.proud-of-myself",
@@ -419,7 +438,8 @@
             "gl": "Poñerse de puntas",
             "es": "Ponerse de puntillas"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_grown_up_now"
         },
         {
           "id": "4_5.xuno.s2.do-you-remember",
@@ -483,7 +503,8 @@
             "gl": "Sinalar lonxe",
             "es": "Señalar lejos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_big_school"
         },
         {
           "id": "4_5.xuno.s3.next-year",
@@ -505,7 +526,8 @@
             "gl": "Sinalar un punto lonxe",
             "es": "Señalar un punto lejos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_goal"
         },
         {
           "id": "4_5.xuno.s3.diploma",
@@ -516,7 +538,8 @@
             "gl": "Recibir un papel coas dúas mans",
             "es": "Recibir un papel con las dos manos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_diploma"
         },
         {
           "id": "4_5.xuno.s3.ceremony",
@@ -538,7 +561,8 @@
             "gl": "Aplaudir forte",
             "es": "Aplaudir fuerte"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_cheering_crowd"
         },
         {
           "id": "4_5.xuno.s3.farewell-hug",
@@ -549,7 +573,8 @@
             "gl": "Abrazar a un amigo",
             "es": "Abrazar a un amigo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_farewell_hug"
         },
         {
           "id": "4_5.xuno.s3.receive",
@@ -738,7 +763,8 @@
             "gl": "Saltar a pé coxo nos cadros",
             "es": "Saltar a la pata coja en los cuadros"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_hopscotch"
         },
         {
           "id": "4_5.xuno.s4.skipping-rope",
@@ -749,7 +775,8 @@
             "gl": "Saltar cos pés xuntos",
             "es": "Saltar con los pies juntos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_skipping_rope"
         },
         {
           "id": "4_5.xuno.s4.chalk",
@@ -760,7 +787,8 @@
             "gl": "Debuxar no chan co xiz",
             "es": "Dibujar en el suelo con la tiza"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_chalk"
         },
         {
           "id": "4_5.xuno.s4.garden-hose",
@@ -771,7 +799,8 @@
             "gl": "Apuntar e mollar as plantas",
             "es": "Apuntar y mojar las plantas"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_garden_hose"
         },
         {
           "id": "4_5.xuno.s4.sprinkler",
@@ -782,7 +811,8 @@
             "gl": "Xirar botando auga",
             "es": "Girar echando agua"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_sprinkler"
         },
         {
           "id": "4_5.xuno.s4.hop-on-one-foot",
@@ -793,7 +823,8 @@
             "gl": "Saltar nun pé",
             "es": "Saltar en un pie"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_hop_on_one_foot"
         },
         {
           "id": "4_5.xuno.s4.skip",
@@ -804,7 +835,8 @@
             "gl": "Saltar a corda imaxinaria",
             "es": "Saltar la comba imaginaria"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_skip"
         },
         {
           "id": "4_5.xuno.s4.throw-and-catch",
@@ -815,7 +847,8 @@
             "gl": "Lanzar e coller unha pelota",
             "es": "Lanzar y coger una pelota"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_throw_and_catch"
         },
         {
           "id": "4_5.xuno.s4.run-through-the-sprinkler",
@@ -826,7 +859,8 @@
             "gl": "Correr rindo",
             "es": "Correr riendo"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_run_through_the_sprinkler"
         },
         {
           "id": "4_5.xuno.s4.draw-with-chalk",
@@ -837,7 +871,8 @@
             "gl": "Debuxar no chan",
             "es": "Dibujar en el suelo"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_draw_with_chalk"
         },
         {
           "id": "4_5.xuno.s4.refreshing-splash",
@@ -848,7 +883,8 @@
             "gl": "Sacudir as mans molladas",
             "es": "Sacudir las manos mojadas"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_refreshing_splash"
         },
         {
           "id": "4_5.xuno.s4.playful-summer",
@@ -859,7 +895,8 @@
             "gl": "Bailar contentos",
             "es": "Bailar contentos"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_playful_summer"
         },
         {
           "id": "4_5.xuno.s4.chalky",
@@ -870,7 +907,8 @@
             "gl": "Soprar o po das mans",
             "es": "Soplar el polvo de las manos"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_chalky"
         },
         {
           "id": "4_5.xuno.s4.breezy-evening",
@@ -881,7 +919,8 @@
             "gl": "Abanarse amodo",
             "es": "Abanicarse despacio"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_breezy_evening"
         },
         {
           "id": "4_5.xuno.s4.catch-the-frisbee",
@@ -892,7 +931,8 @@
             "gl": "Estender as mans",
             "es": "Extender las manos"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_catch_the_frisbee"
         },
         {
           "id": "4_5.xuno.s4.hop-to-number-three-then-turn-around",
@@ -903,7 +943,8 @@
             "gl": "Saltar e xirar",
             "es": "Saltar y girar"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_hop_to_number_three_then_turn_around"
         },
         {
           "id": "4_5.xuno.s4.if-it-s-hot-we-play-with-water",
@@ -926,7 +967,8 @@
             "gl": "Lanzar moi alto",
             "es": "Lanzar muy alto"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_throw_it_higher_than_the_tree"
         }
       ]
     }

@@ -105,7 +105,8 @@
             "gl": "Abrir os dedos amodo coma unha flor",
             "es": "Abrir los dedos despacio como una flor"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_unfold"
         },
         {
           "id": "0_2.abril.s1.wake",
@@ -127,7 +128,8 @@
             "gl": "Levantar os brazos ao sol",
             "es": "Levantar los brazos al sol"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_reach_up"
         },
         {
           "id": "0_2.abril.s1.sniff-a-flower",
@@ -160,7 +162,8 @@
             "gl": "Abrir os brazos grandes",
             "es": "Abrir los brazos grandes"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_blooming"
         },
         {
           "id": "0_2.abril.s1.springy",
@@ -171,7 +174,8 @@
             "gl": "Dar pasiños alegres",
             "es": "Dar pasitos alegres"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_spring_like"
         },
         {
           "id": "0_2.abril.s1.sweet-smelling",
@@ -182,7 +186,8 @@
             "gl": "Cheirar e suspirar",
             "es": "Oler y suspirar"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_sweet_smelling"
         },
         {
           "id": "0_2.abril.s1.leafy",
@@ -193,7 +198,8 @@
             "gl": "Mover as mans coma follas verdes",
             "es": "Mover las manos como hojas verdes"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_leafy"
         },
         {
           "id": "0_2.abril.s1.hello-flower",
@@ -204,7 +210,8 @@
             "gl": "Saudar a unha flor",
             "es": "Saludar a una flor"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_hello_flower"
         },
         {
           "id": "0_2.abril.s1.smell-the-flower",
@@ -237,7 +244,8 @@
             "gl": "Poñer a flor na palma",
             "es": "Poner la flor en la palma"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_flower_in_my_hand"
         }
       ]
     },
@@ -317,7 +325,8 @@
             "gl": "Tocar a herba mollada",
             "es": "Tocar la hierba mojada"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_dewdrop"
         },
         {
           "id": "0_2.abril.s2.rain-boots",
@@ -328,7 +337,8 @@
             "gl": "Bater as botas no chan",
             "es": "Golpear las botas en el suelo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_rain_boots"
         },
         {
           "id": "0_2.abril.s2.pitter-patter",
@@ -362,7 +372,8 @@
             "gl": "Mirar pola fiestra co bebé",
             "es": "Mirar por la ventana con el bebé"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_watch_the_rain"
         },
         {
           "id": "0_2.abril.s2.catch-drops",
@@ -373,7 +384,8 @@
             "gl": "Abrir a man baixo a choiva fina",
             "es": "Abrir la mano bajo la lluvia fina"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_catch_drops"
         },
         {
           "id": "0_2.abril.s2.shake-off",
@@ -384,7 +396,8 @@
             "gl": "Sacudir as mans molladas",
             "es": "Sacudir las manos mojadas"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_shake_off"
         },
         {
           "id": "0_2.abril.s2.drizzly",
@@ -395,7 +408,8 @@
             "gl": "Mover os dedos amodo",
             "es": "Mover los dedos despacio"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_drizzly"
         },
         {
           "id": "0_2.abril.s2.damp",
@@ -406,7 +420,8 @@
             "gl": "Tocar a roupa húmida",
             "es": "Tocar la ropa húmeda"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_damp"
         },
         {
           "id": "0_2.abril.s2.dewy",
@@ -417,7 +432,8 @@
             "gl": "Pasar a man pola herba",
             "es": "Pasar la mano por la hierba"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_dewy"
         },
         {
           "id": "0_2.abril.s2.drippy",
@@ -428,7 +444,8 @@
             "gl": "Deixar pingar auga da esponxa",
             "es": "Dejar gotear agua de la esponja"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_drippy"
         },
         {
           "id": "0_2.abril.s2.drip-drop",
@@ -451,7 +468,8 @@
             "gl": "Mover os dedos de arriba abaixo",
             "es": "Mover los dedos de arriba abajo"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_it_s_raining"
         },
         {
           "id": "0_2.abril.s2.rain-on-the-window",
@@ -462,7 +480,8 @@
             "gl": "Bater amodo no cristal",
             "es": "Golpear despacio en el cristal"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_rain_on_the_window"
         },
         {
           "id": "0_2.abril.s2.drop-by-drop",
@@ -473,7 +492,8 @@
             "gl": "Deixar caer pingas unha a unha",
             "es": "Dejar caer gotas una a una"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_drop_by_drop"
         }
       ]
     },
@@ -529,7 +549,8 @@
             "gl": "Baixar os dedos coma raíces",
             "es": "Bajar los dedos como raíces"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_root"
         },
         {
           "id": "0_2.abril.s3.sunflower",
@@ -540,7 +561,8 @@
             "gl": "Xirar a cara coma un xirasol",
             "es": "Girar la cara como un girasol"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_sunflower"
         },
         {
           "id": "0_2.abril.s3.garden-trowel",
@@ -551,7 +573,8 @@
             "gl": "Coller terra coa pa",
             "es": "Coger tierra con la pala"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_garden_trowel"
         },
         {
           "id": "0_2.abril.s3.sprout-bag",
@@ -562,7 +585,8 @@
             "gl": "Mirar a semente dentro da bolsa",
             "es": "Mirar la semilla dentro de la bolsa"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_seed_bag"
         },
         {
           "id": "0_2.abril.s3.plant-a-seed",
@@ -584,7 +608,8 @@
             "gl": "Botar auga co regador",
             "es": "Echar agua con la regadera"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_water_it"
         },
         {
           "id": "0_2.abril.s3.pop-out",
@@ -606,7 +631,8 @@
             "gl": "Tapar a semente coas mans",
             "es": "Tapar la semilla con las manos"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_cover_with_soil"
         },
         {
           "id": "0_2.abril.s3.watch-it-grow",
@@ -628,7 +654,8 @@
             "gl": "Cheirar a terra",
             "es": "Oler la tierra"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_earthy"
         },
         {
           "id": "0_2.abril.s3.tall-and-green",
@@ -650,7 +677,8 @@
             "gl": "Abrir un dedo e logo outro",
             "es": "Abrir un dedo y luego otro"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_sprouting"
         },
         {
           "id": "0_2.abril.s3.crumbly",
@@ -661,7 +689,8 @@
             "gl": "Esfarelar terra entre os dedos",
             "es": "Desmenuzar tierra entre los dedos"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_crumbly"
         },
         {
           "id": "0_2.abril.s3.little-seed-sleep",
@@ -672,7 +701,8 @@
             "gl": "Encoller o corpo coma unha semente",
             "es": "Encoger el cuerpo como una semilla"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_little_seed_sleep"
         },
         {
           "id": "0_2.abril.s3.grow-grow-grow",
@@ -705,7 +735,8 @@
             "gl": "Abrir as mans cada vez máis",
             "es": "Abrir las manos cada vez más"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_bigger_and_bigger"
         }
       ]
     },
@@ -761,7 +792,8 @@
             "gl": "Pechar a man en puño",
             "es": "Cerrar la mano en puño"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_fist"
         },
         {
           "id": "0_2.abril.s4.glove-puppet",
@@ -772,7 +804,8 @@
             "gl": "Facer falar ao monicreque",
             "es": "Hacer hablar al títere"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_glove_puppet"
         },
         {
           "id": "0_2.abril.s4.thumbs-up",
@@ -783,7 +816,8 @@
             "gl": "Levantar o polgar",
             "es": "Levantar el pulgar"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_thumbs_up"
         },
         {
           "id": "0_2.abril.s4.tapping-game",
@@ -805,7 +839,8 @@
             "gl": "Tamborilar na mesa",
             "es": "Tamborilear en la mesa"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_drum_fingers"
         },
         {
           "id": "0_2.abril.s4.open-and-shut",
@@ -816,7 +851,8 @@
             "gl": "Abrir e pechar as mans",
             "es": "Abrir y cerrar las manos"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_open_and_shut"
         },
         {
           "id": "0_2.abril.s4.wave-fingers",
@@ -827,7 +863,8 @@
             "gl": "Mover os dedos coma herba",
             "es": "Mover los dedos como hierba"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_wave_fingers"
         },
         {
           "id": "0_2.abril.s4.walk-fingers",
@@ -838,7 +875,8 @@
             "gl": "Camiñar cos dedos polo brazo",
             "es": "Caminar con los dedos por el brazo"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_walk_fingers"
         },
         {
           "id": "0_2.abril.s4.hide-thumbs",
@@ -849,7 +887,8 @@
             "gl": "Esconder os polgares no puño",
             "es": "Esconder los pulgares en el puño"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_hide_thumbs"
         },
         {
           "id": "0_2.abril.s4.fiddly",
@@ -882,7 +921,8 @@
             "gl": "Abrir e pechar os dedos amodo",
             "es": "Abrir y cerrar los dedos despacio"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_twinkling"
         },
         {
           "id": "0_2.abril.s4.clappy",
@@ -893,7 +933,8 @@
             "gl": "Bater palmiñas",
             "es": "Dar palmitas"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_clapping"
         },
         {
           "id": "0_2.abril.s4.tap-tap-tap",
@@ -926,7 +967,8 @@
             "gl": "Amosar os dez dedos",
             "es": "Enseñar los diez dedos"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_ten_little_fingers"
         },
         {
           "id": "0_2.abril.s4.finger-on-your-nose",
@@ -937,7 +979,8 @@
             "gl": "Pousar un dedo no nariz",
             "es": "Posar un dedo en la nariz"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_finger_on_your_nose"
         }
       ]
     }

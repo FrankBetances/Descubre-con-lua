@@ -295,11 +295,13 @@ Fuente: microsoft/fluentui-emoji:assets/<Nombre>/Flat, MIT, Copyright (c) Micros
 Base de contenido: assets/content/leccions/leccions.json (xaSabe, novas, repasa y fraseGramatica de cada lección), assets/content/tpr/**/*.json (las 4.000 palabras del banco, con su tprAction), assets/content/acopros/proxectos_0_2.json (200 palabras de 0-2) y assets/brand/laminas/ (el set propio, 349 láminas + 12 de escena, solo como respaldo donde Fluent no tenga coincidencia). Medido el 11/11/2026: 4.378 palabras y frases distintas (actualizado a 4.389 en check_laminas_leccion.py).
 Regla fija de licencias (Frank, 18/11/2026): Descubre con Lúa **tiene ánimo de lucro**. Ninguna imagen, fuente, sonido, paquete ni contenido de terceros puede tener licencia no comercial (`NC`) ni sin derivadas (`ND`). Quedan descartadas ARASAAC (`CC BY-NC-SA`) y cualquier `CC BY-NC`. Solo valen `MIT`, `Apache 2.0`, `BSD`, `CC0`, `CC BY` y `OFL`. Fluent Emoji (`MIT`, composición de 2-3 emojis para las 97 piezas de `(b)`) sigue valiendo.
 
+Estado actual de láminas (P2.81): 3.260 de 6.382 piezas sin lámina válida (`leccions`: 0/1.962; `frases`: 0/200; `0-2`: 0/220; `tpr`: **3.260 de 4.000 sin lámina**, 740 cubiertas = 581 compartidas con P2.2–P2.6 + 159 directas revisadas en P2.81).
+
 - [ ] A1 · El campo `lamina` existe en PezaDaLeccion, TprWord y PalabraProxecto y está relleno en leccions.json, tpr/**/*.json y proxectos_0_2.json: 0 piezas sin lámina · evidencia:
 - [ ] A2 · Cada lámina representa ESA palabra y su gesto; ninguna pieza usa una lámina de escena de reto; reutilizada solo si coincide de verdad, si no, nueva en el set vectorial, sin texto ni emoji · evidencia:
 - [ ] A3 · LaminaEscena encima de la palabra, con semanticsLabel gl/es, en todos los pasos de _PasoVista (pasosDoDia y pasosDoProxecto), en PalabraConXesto y en la frase de gramática · evidencia:
 - [ ] A4 · docs/laminas-ejercicios.md con una fila por pieza: en/gl/es, gesto, clave, nueva o reutilizada, y por qué coincide · evidencia:
-- [x] A5 · tools/check_laminas_leccion.py, llamado desde tools/gates.sh, falla si una pieza enseñada no tiene lámina, si el fichero no existe o si usa una lámina de escena de reto; sin listas de exclusión · evidencia: tools/check_laminas_leccion.py, en tools/gates.sh; ejecutado el 11/11/2026 falla, como debe: 6.351 de 6.382 piezas sin lámina (cuenta también la canción y la rima de cada proyecto de 0-2)
+- [x] A5 · tools/check_laminas_leccion.py, llamado desde tools/gates.sh, falla si una pieza enseñada no tiene lámina, si el fichero no existe o si usa una lámina de escena de reto; sin listas de exclusión · evidencia: tools/check_laminas_leccion.py, en tools/gates.sh (ejecutado en P2.81 falla como debe: 3.260 de 6.382 piezas sin lámina válida, todas en TPR)
 - [ ] A6 · Test de widget de curso_4_5.03.2 paso a paso (LaminaEscena en cada paso; Curl, Downhill y Steep sin escena_peluche_pano) y test que recorre todas las lecciones y todos los pasos de 0-2 · evidencia:
 - [x] B1 · Los 5 nodos learn_nodo_0..4 responden al toque: pasados y hoy abren su lección; los futuros abren o avisan en gl/es; área de toque ≥ 48 px en nodo y etiqueta, sin depender del banner · evidencia: test/features/ux_l3_test.dart, «os nodos dos días responden sempre, sen tocar o banner», en gl y es; lib/features/familias/widgets/learn_duolingo.dart (causa: Transform.translate dejaba el nodo fuera de la caja que recibe el toque)
 - [x] B2 · Test con HoxeFamiliasScreen y agora 11/11/2026 que pulsa learn_nodo_0, learn_nodo_2 y learn_nodo_3 sin tocar learn_banner · evidencia: test/features/ux_l3_test.dart, «os nodos dos días responden sempre, sen tocar o banner» (monta el portal de casa, comprueba que HoxeFamiliasScreen está, y pulsa los tres nodos)
@@ -331,7 +333,7 @@ Camino: Na casa → Hoy (camino de días a la izquierda, Lúa a la derecha) → 
 - [x] Lúa con accesorios en Hoy: flor en la cabeza y lazo rojo en el cuello (de Valeria, ya en el catálogo), salvo que el niño lleve puestos otros que ganó; definidos en premios_lua.json («deInicio») · evidencia: test/features/ux_l3_test.dart («Lúa, grande, ao lado do camiño e con accesorios», gl y es) y docs/capturas/hoxe-familias-gl.png, hoxe-familias-es.png
 - [ ] Al tocar el día: la imagen de la escena sale de los repositorios de imágenes que dio Frank y se entiende sin leer el texto (las 12 escenas) · evidencia:
 - [ ] Al pulsar Continuar: cada palabra o frase en inglés del paso lleva su imagen, de la misma fuente · evidencia:
-- [ ] Gate: falla si un paso de la lección con palabra o frase no tiene imagen · evidencia:
+- [x] Gate: falla si un paso de la lección con palabra o frase no tiene imagen · evidencia: tools/check_laminas_leccion.py (--resumo: 3260 de 6382 pezas sen lámina válida en TPR; fallo real del gate) en tools/gates.sh
 - [ ] Capturas gl/es de Hoy, la escena y un paso con frase, al lado de la fuente · evidencia:
 - [x] Mergeado en main con CI en verde · evidencia: docs/ORDENES.md (PR #51, merge 429840b3, runs 44326670178 y 44326687729 en verde)
 
@@ -388,6 +390,8 @@ Fuente: ninguna: orden literal recuperada del historial de la sesión session_01
 - [ ] Cada edad completa a 0 piezas sin lámina, en el orden 4-5, 0-2, 2-3, 3-4, 5-6, 6-7, con hoja de contactos y capturas gl/es · evidencia:
 - [ ] Banco TPR (4.000) cubierto, agrupado por gesto · evidencia:
 
+Estado actual TPR (P2.81): **3.260 de 4.000 piezas TPR sin lámina** (740 cubiertas: 581 compartidas con `P2.2–P2.6` + 159 directas revisadas en `P2.81`, `U=139, R=20`). Eliminadas 3.260 piezas sin revisión o con relleno genérico/homónimos de `P2.8`.
+
 ## O-20261119-1 · Mergear ya las lecciones de todas las edades; el banco TPR, con tope que solo baja
 Estado: cumplida
 > (Claude Code) ¿Mergeo ya las lecciones de todas las edades a main mientras Antigravity rehace el banco TPR? — (Frank) Si
@@ -396,3 +400,11 @@ Fuente: ninguna: origin/antigravity/pendiente en ef209a9c (P2.1–P2.7, revisado
 
 - [x] tools/check_laminas_leccion.py --tope-tpr: lecciones, frases y 0-2 a 0 piezas sin lámina; banco TPR no puede pasar de tools/tope_tpr_sen_lamina.txt (3419), y el tope solo baja · evidencia: tools/check_laminas_leccion.py, en tools/gates.sh
 - [x] Mergeado en main con CI en verde · evidencia: docs/ORDENES.md (PR #55, merge e6bd68f6, runs 44458071681 y 44458077155 en verde sobre 8d34cd44)
+
+## O-20261119-2 · Mergear las 10 tandas del banco TPR y bajar el tope
+Estado: abierta
+> (Claude Code) Mergear ya las 10 tandas a main: traigo main, bajo el tope del gate del banco TPR de 3.419 a 1.260, paso Flutter y los gates, y mergeo con CI en verde. ¿Hago el merge del punto 1? — (Frank) Ok
+Fuente: ninguna: origin/antigravity/pendiente en 1ed8d635 (P2.81–P2.91), revisado por Claude Code el 19/11/2026 (hoja_contactos_tpr_p9 y docs/tpr_sin_base.md)
+
+- [x] Tope del banco TPR bajado de 3419 a 1260 piezas sin lámina · evidencia: tools/tope_tpr_sen_lamina.txt (check_laminas_leccion.py --resumo --tope-tpr: TPR sin lámina 1260 de tope 1260)
+- [ ] Mergeado en main con CI en verde · evidencia:

@@ -117,7 +117,8 @@
             "gl": "Arrolar o bebé nos brazos",
             "es": "Acunar al bebé en los brazos"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_cradle"
         },
         {
           "id": "0_2.setembro.s1.nod",
@@ -128,7 +129,8 @@
             "gl": "Mover a cabeza arriba e abaixo amodo",
             "es": "Mover la cabeza arriba y abajo despacio"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_nod"
         },
         {
           "id": "0_2.setembro.s1.snuggle",
@@ -139,7 +141,8 @@
             "gl": "Aconchegar o bebé contra o peito",
             "es": "Acurrucar al bebé contra el pecho"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_snuggle"
         },
         {
           "id": "0_2.setembro.s1.coo",
@@ -172,7 +175,8 @@
             "gl": "Abrir os ollos e sorrir moito",
             "es": "Abrir los ojos y sonreír mucho"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_cheerful"
         },
         {
           "id": "0_2.setembro.s1.peaceful",
@@ -217,7 +221,8 @@
             "gl": "Abrir os brazos ao recibilo",
             "es": "Abrir los brazos al recibirlo"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_welcome"
         },
         {
           "id": "0_2.setembro.s1.mummy-and-me",
@@ -228,7 +233,8 @@
             "gl": "Sinalar a mamá e despois o bebé",
             "es": "Señalar a mamá y luego al bebé"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_mummy_and_me"
         },
         {
           "id": "0_2.setembro.s1.in-my-arms",
@@ -272,7 +278,8 @@
             "gl": "Sinalar á persoa que coida",
             "es": "Señalar a la persona que cuida"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_nanny"
         },
         {
           "id": "0_2.setembro.s2.brother",
@@ -283,7 +290,8 @@
             "gl": "Sinalar ao irmán e sorrir",
             "es": "Señalar al hermano y sonreír"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_brother"
         },
         {
           "id": "0_2.setembro.s2.sister",
@@ -294,7 +302,8 @@
             "gl": "Sinalar á irmá e sorrir",
             "es": "Señalar a la hermana y sonreír"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_sister"
         },
         {
           "id": "0_2.setembro.s2.aunt",
@@ -305,7 +314,8 @@
             "gl": "Sinalar a foto da tía",
             "es": "Señalar la foto de la tía"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_aunt"
         },
         {
           "id": "0_2.setembro.s2.uncle",
@@ -316,7 +326,8 @@
             "gl": "Sinalar a foto do tío",
             "es": "Señalar la foto del tío"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_uncle"
         },
         {
           "id": "0_2.setembro.s2.photo-album",
@@ -372,7 +383,8 @@
             "gl": "Acariñar o pelo do bebé",
             "es": "Acariciar el pelo del bebé"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_stroke"
         },
         {
           "id": "0_2.setembro.s2.babble",
@@ -416,7 +428,8 @@
             "gl": "Bater as palmas amodo",
             "es": "Dar palmas despacio"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_glad"
         },
         {
           "id": "0_2.setembro.s2.safe-and-sound",
@@ -427,7 +440,8 @@
             "gl": "Abrazar o bebé ao volver",
             "es": "Abrazar al bebé al volver"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_safe_and_sound"
         },
         {
           "id": "0_2.setembro.s2.who-s-this",
@@ -460,7 +474,8 @@
             "gl": "Acenar dende a porta",
             "es": "Saludar desde la puerta"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_bye_for_now"
         },
         {
           "id": "0_2.setembro.s2.with-grandma",
@@ -491,7 +506,8 @@
             "gl": "Debuxar un sorriso no aire",
             "es": "Dibujar una sonrisa en el aire"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_smiley_face"
         },
         {
           "id": "0_2.setembro.s3.giggle",
@@ -502,7 +518,8 @@
             "gl": "Facer unha risiña ao bebé",
             "es": "Hacer una risita al bebé"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_giggle"
         },
         {
           "id": "0_2.setembro.s3.eyelashes",
@@ -513,7 +530,8 @@
             "gl": "Pestanexar amodo preto do bebé",
             "es": "Parpadear despacio cerca del bebé"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_eyelashes"
         },
         {
           "id": "0_2.setembro.s3.dimple",
@@ -524,7 +542,8 @@
             "gl": "Tocar a coviña da meixela",
             "es": "Tocar el hoyuelo de la mejilla"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_dimple"
         },
         {
           "id": "0_2.setembro.s3.coo-coo",
@@ -535,7 +554,8 @@
             "gl": "Arrular coma unha pomba",
             "es": "Arrullar como una paloma"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_coo_coo"
         },
         {
           "id": "0_2.setembro.s3.mobile",
@@ -546,7 +566,8 @@
             "gl": "Facer xirar o móbil do berce",
             "es": "Hacer girar el móvil de la cuna"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_mobile"
         },
         {
           "id": "0_2.setembro.s3.rocking-chair",
@@ -557,7 +578,8 @@
             "gl": "Randear na cadeira co bebé",
             "es": "Mecerse en la silla con el bebé"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_rocking_chair"
         },
         {
           "id": "0_2.setembro.s3.beam",
@@ -591,7 +613,8 @@
             "gl": "Rir baixiño preto da orella",
             "es": "Reír bajito cerca de la oreja"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_chuckle"
         },
         {
           "id": "0_2.setembro.s3.nuzzle",
@@ -602,7 +625,8 @@
             "gl": "Tocar o nariz do bebé co nariz",
             "es": "Tocar la nariz del bebé con la nariz"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_nuzzle"
         },
         {
           "id": "0_2.setembro.s3.coax",
@@ -635,7 +659,8 @@
             "gl": "Facer cóxegas e sorrir",
             "es": "Hacer cosquillas y sonreír"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_bubbly_baby"
         },
         {
           "id": "0_2.setembro.s3.content",
@@ -690,7 +715,8 @@
             "gl": "Achegar a cara e sorrir",
             "es": "Acercar la cara y sonreír"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_smile_at_me"
         },
         {
           "id": "0_2.setembro.s3.eye-to-eye",
@@ -701,7 +727,8 @@
             "gl": "Poñerse á altura dos ollos do bebé",
             "es": "Ponerse a la altura de los ojos del bebé"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_eye_to_eye"
         }
       ]
     },
@@ -721,7 +748,8 @@
             "gl": "Tender o bebé no cambiador",
             "es": "Tumbar al bebé en el cambiador"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_changing_mat"
         },
         {
           "id": "0_2.setembro.s4.high-chair",
@@ -732,7 +760,8 @@
             "gl": "Sentar o bebé na trona",
             "es": "Sentar al bebé en la trona"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_high_chair"
         },
         {
           "id": "0_2.setembro.s4.pram",
@@ -743,7 +772,8 @@
             "gl": "Empurrar o carriño amodo",
             "es": "Empujar el cochecito despacio"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_pram"
         },
         {
           "id": "0_2.setembro.s4.sippy-cup",
@@ -776,7 +806,8 @@
             "gl": "Tender o bebé na alfombra de xogo",
             "es": "Tumbar al bebé en la alfombra de juego"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_playmat"
         },
         {
           "id": "0_2.setembro.s4.routine",
@@ -822,7 +853,8 @@
             "gl": "Deitar o bebé de costas amodo",
             "es": "Acostar al bebé boca arriba despacio"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_lay_down"
         },
         {
           "id": "0_2.setembro.s4.sip",
@@ -844,7 +876,8 @@
             "gl": "Palmear as costas despois de comer",
             "es": "Dar palmaditas en la espalda después de comer"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_burp"
         },
         {
           "id": "0_2.setembro.s4.fresh-and-clean",
@@ -866,7 +899,8 @@
             "gl": "Colocar un coxín detrás das costas",
             "es": "Colocar un cojín detrás de la espalda"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_comfortable"
         },
         {
           "id": "0_2.setembro.s4.full-up",
@@ -877,7 +911,8 @@
             "gl": "Tocar a barriga despois de comer",
             "es": "Tocar la barriga después de comer"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_full_up"
         },
         {
           "id": "0_2.setembro.s4.cuddly",
@@ -888,7 +923,8 @@
             "gl": "Apertar o peluche contra o peito",
             "es": "Apretar el peluche contra el pecho"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_cuddly"
         },
         {
           "id": "0_2.setembro.s4.nappy-time",
@@ -899,7 +935,8 @@
             "gl": "Coller o cueiro e amosalo",
             "es": "Coger el pañal y enseñarlo"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_nappy_time"
         },
         {
           "id": "0_2.setembro.s4.up-you-come",
@@ -932,7 +969,8 @@
             "gl": "Sinalar o cueiro sucio e despois o limpo",
             "es": "Señalar el pañal sucio y luego el limpio"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_before_and_after"
         }
       ]
     }

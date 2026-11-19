@@ -69,7 +69,8 @@
           "tprAction": {
             "gl": "Abrir os brazos e planear amodo",
             "es": "Abrir los brazos y planear despacio"
-          }
+          },
+          "lamina": "pal_seagull"
         },
         {
           "id": "3_4.xuno.s1.island",
@@ -80,7 +81,8 @@
           "tprAction": {
             "gl": "Sentar no medio e abrazar os xeonllos coma unha illa",
             "es": "Sentarse en el centro y abrazarse las rodillas como una isla"
-          }
+          },
+          "lamina": "pal_island"
         },
         {
           "id": "3_4.xuno.s1.lighthouse",
@@ -91,7 +93,8 @@
           "tprAction": {
             "gl": "Xirar a cabeza amodo cunha man na fronte coma unha luz",
             "es": "Girar la cabeza despacio con una mano en la frente como una luz"
-          }
+          },
+          "lamina": "pal_lighthouse"
         },
         {
           "id": "3_4.xuno.s1.swim",
@@ -102,7 +105,8 @@
           "tprAction": {
             "gl": "Mover os brazos coma se nadásemos",
             "es": "Mover los brazos como si nadáramos"
-          }
+          },
+          "lamina": "pal_swim"
         },
         {
           "id": "3_4.xuno.s1.row",
@@ -125,7 +129,8 @@
           "tprAction": {
             "gl": "Abrir os brazos coma unha vela e moverse coa brisa",
             "es": "Abrir los brazos como una vela y moverse con la brisa"
-          }
+          },
+          "lamina": "pal_sail"
         },
         {
           "id": "3_4.xuno.s1.dive",
@@ -136,7 +141,8 @@
           "tprAction": {
             "gl": "Xuntar as mans en punta e baixar cara ao chan",
             "es": "Juntar las manos en punta y bajar hacia el suelo"
-          }
+          },
+          "lamina": "pal_dive"
         },
         {
           "id": "3_4.xuno.s1.surf",
@@ -147,7 +153,8 @@
           "tprAction": {
             "gl": "Manter o equilibrio cos brazos abertos sobre unha táboa imaxinaria",
             "es": "Mantener el equilibrio con los brazos abiertos sobre una tabla imaginaria"
-          }
+          },
+          "lamina": "pal_surf"
         },
         {
           "id": "3_4.xuno.s1.blue",
@@ -170,7 +177,8 @@
           "tprAction": {
             "gl": "Debuxar liñas onduladas no aire",
             "es": "Dibujar líneas onduladas en el aire"
-          }
+          },
+          "lamina": "pal_wavy"
         },
         {
           "id": "3_4.xuno.s1.rough",
@@ -193,7 +201,8 @@
           "tprAction": {
             "gl": "Mover suavemente os brazos coma a brisa",
             "es": "Mover suavemente los brazos como la brisa"
-          }
+          },
+          "lamina": "pal_breezy"
         },
         {
           "id": "3_4.xuno.s1.gentle-waves",
@@ -216,7 +225,8 @@
           "tprAction": {
             "gl": "Subir os brazos moi alto e baixalos de golpe",
             "es": "Subir los brazos muy alto y bajarlos de golpe"
-          }
+          },
+          "lamina": "pal_big_waves"
         },
         {
           "id": "3_4.xuno.s1.swim-like-a-fish",
@@ -227,7 +237,8 @@
           "tprAction": {
             "gl": "Nadar coas mans xuntas diante do corpo",
             "es": "Nadar con las manos juntas delante del cuerpo"
-          }
+          },
+          "lamina": "pal_swim_like_a_fish"
         },
         {
           "id": "3_4.xuno.s1.across-the-sea",
@@ -238,7 +249,8 @@
           "tprAction": {
             "gl": "Remar ata o outro lado da aula",
             "es": "Remar hasta el otro lado del aula"
-          }
+          },
+          "lamina": "pal_across_the_sea"
         }
       ]
     },
@@ -270,7 +282,8 @@
           "tprAction": {
             "gl": "Estender unha toalla imaxinaria no chan",
             "es": "Extender una toalla imaginaria en el suelo"
-          }
+          },
+          "lamina": "pal_beach"
         },
         {
           "id": "3_4.xuno.s2.bucket",
@@ -281,7 +294,8 @@
           "tprAction": {
             "gl": "Levar un balde imaxinario pola asa",
             "es": "Llevar un cubo imaginario por el asa"
-          }
+          },
+          "lamina": "pal_bucket"
         },
         {
           "id": "3_4.xuno.s2.spade",
@@ -325,7 +339,8 @@
           "tprAction": {
             "gl": "Poñer unhas lentes de sol imaxinarias e sorrir",
             "es": "Ponerse unas gafas de sol imaginarias y sonreír"
-          }
+          },
+          "lamina": "pal_sunglasses"
         },
         {
           "id": "3_4.xuno.s2.bury",
@@ -336,7 +351,8 @@
           "tprAction": {
             "gl": "Tapar os pés con area imaxinaria",
             "es": "Taparse los pies con arena imaginaria"
-          }
+          },
+          "lamina": "pal_bury"
         },
         {
           "id": "3_4.xuno.s2.collect",
@@ -347,7 +363,8 @@
           "tprAction": {
             "gl": "Apañar cunchas imaxinarias e gardalas na man",
             "es": "Recoger conchas imaginarias y guardarlas en la mano"
-          }
+          },
+          "lamina": "pal_collect"
         },
         {
           "id": "3_4.xuno.s2.sunbathe",
@@ -358,7 +375,8 @@
           "tprAction": {
             "gl": "Tombar de costas cos ollos pechados",
             "es": "Tumbarse boca arriba con los ojos cerrados"
-          }
+          },
+          "lamina": "pal_sunbathe"
         },
         {
           "id": "3_4.xuno.s2.knock-down",
@@ -391,7 +409,8 @@
           "tprAction": {
             "gl": "Sacudir as mans coma se tivesen area",
             "es": "Sacudirse las manos como si tuvieran arena"
-          }
+          },
+          "lamina": "pal_sandy"
         },
         {
           "id": "3_4.xuno.s2.lovely",
@@ -424,7 +443,8 @@
           "tprAction": {
             "gl": "Mover os dedos dos pés descalzos",
             "es": "Mover los dedos de los pies descalzos"
-          }
+          },
+          "lamina": "pal_barefoot"
         },
         {
           "id": "3_4.xuno.s2.let-s-go-to-the-beach",
@@ -435,7 +455,8 @@
           "tprAction": {
             "gl": "Coller a mochila imaxinaria e camiñar contentos",
             "es": "Coger la mochila imaginaria y caminar contentos"
-          }
+          },
+          "lamina": "pal_let_s_go_to_the_beach"
         },
         {
           "id": "3_4.xuno.s2.put-on-your-sun-hat",
@@ -446,7 +467,8 @@
           "tprAction": {
             "gl": "Poñer o sombreiro ao escoitar a orde",
             "es": "Ponerse el sombrero al oír la orden"
-          }
+          },
+          "lamina": "pal_put_on_your_sun_hat"
         },
         {
           "id": "3_4.xuno.s2.it-s-hot",
@@ -457,7 +479,8 @@
           "tprAction": {
             "gl": "Abanarse coa man e soprar",
             "es": "Abanicarse con la mano y soplar"
-          }
+          },
+          "lamina": "pal_it_s_hot"
         },
         {
           "id": "3_4.xuno.s2.in-the-sand",
@@ -468,7 +491,8 @@
           "tprAction": {
             "gl": "Sentar e debuxar círculos na area imaxinaria",
             "es": "Sentarse y dibujar círculos en la arena imaginaria"
-          }
+          },
+          "lamina": "pal_in_the_sand"
         }
       ]
     },
@@ -512,7 +536,8 @@
           "tprAction": {
             "gl": "Mover os brazos e os dedos coma oito patas",
             "es": "Mover los brazos y los dedos como ocho patas"
-          }
+          },
+          "lamina": "pal_octopus"
         },
         {
           "id": "3_4.xuno.s3.starfish",
@@ -523,7 +548,8 @@
           "tprAction": {
             "gl": "Pegar a man aberta ao chan coma unha estrela de mar",
             "es": "Pegar la mano abierta al suelo como una estrella de mar"
-          }
+          },
+          "lamina": "pal_starfish"
         },
         {
           "id": "3_4.xuno.s3.mussel",
@@ -534,7 +560,8 @@
           "tprAction": {
             "gl": "Abrir e pechar as palmas xuntas coma un mexillón",
             "es": "Abrir y cerrar las palmas juntas como un mejillón"
-          }
+          },
+          "lamina": "pal_mussel"
         },
         {
           "id": "3_4.xuno.s3.whale",
@@ -545,7 +572,8 @@
           "tprAction": {
             "gl": "Botar auga cara arriba coas mans desde a cabeza",
             "es": "Echar agua hacia arriba con las manos desde la cabeza"
-          }
+          },
+          "lamina": "pal_whale"
         },
         {
           "id": "3_4.xuno.s3.dolphin",
@@ -556,7 +584,8 @@
           "tprAction": {
             "gl": "Saltar en arco coas mans xuntas por diante",
             "es": "Saltar en arco con las manos juntas por delante"
-          }
+          },
+          "lamina": "pal_dolphin"
         },
         {
           "id": "3_4.xuno.s3.pinch",
@@ -567,7 +596,8 @@
           "tprAction": {
             "gl": "Beliscar suavemente o aire cos dedos",
             "es": "Pellizcar suavemente el aire con los dedos"
-          }
+          },
+          "lamina": "pal_pinch"
         },
         {
           "id": "3_4.xuno.s3.breathe",
@@ -578,7 +608,8 @@
           "tprAction": {
             "gl": "Encher de aire a barriga e soltalo amodo",
             "es": "Llenar de aire la barriga y soltarlo despacio"
-          }
+          },
+          "lamina": "pal_breathe"
         },
         {
           "id": "3_4.xuno.s3.grab",
@@ -589,7 +620,8 @@
           "tprAction": {
             "gl": "Agarrar algo imaxinario con toda a man",
             "es": "Agarrar algo imaginario con toda la mano"
-          }
+          },
+          "lamina": "pal_grab"
         },
         {
           "id": "3_4.xuno.s3.wriggle",
@@ -611,7 +643,8 @@
           "tprAction": {
             "gl": "Dar a volta ás mans: palmas arriba, palmas abaixo",
             "es": "Dar la vuelta a las manos: palmas arriba, palmas abajo"
-          }
+          },
+          "lamina": "pal_flip"
         },
         {
           "id": "3_4.xuno.s3.wobbly",
@@ -633,7 +666,8 @@
           "tprAction": {
             "gl": "Tocar o brazo con pequenos golpiños",
             "es": "Tocarse el brazo con pequeños golpecitos"
-          }
+          },
+          "lamina": "pal_bumpy"
         },
         {
           "id": "3_4.xuno.s3.graceful",
@@ -678,7 +712,8 @@
           "tprAction": {
             "gl": "Nadar cos brazos e mirar a outra persoa",
             "es": "Nadar con los brazos y mirar a otra persona"
-          }
+          },
+          "lamina": "pal_can_you_swim"
         },
         {
           "id": "3_4.xuno.s3.walk-sideways-like-a-crab",
@@ -689,7 +724,8 @@
           "tprAction": {
             "gl": "Camiñar de lado cos dedos en pinza",
             "es": "Caminar de lado con los dedos en pinza"
-          }
+          },
+          "lamina": "pal_walk_sideways_like_a_crab"
         },
         {
           "id": "3_4.xuno.s3.under-the-sea",
@@ -700,7 +736,8 @@
           "tprAction": {
             "gl": "Baixar ao chan e moverse amodo coma baixo a auga",
             "es": "Bajar al suelo y moverse despacio como bajo el agua"
-          }
+          },
+          "lamina": "pal_under_the_sea"
         }
       ]
     },
@@ -744,7 +781,8 @@
           "tprAction": {
             "gl": "Suxeitar un cucurucho imaxinario con coidado",
             "es": "Sujetar un cucurucho imaginario con cuidado"
-          }
+          },
+          "lamina": "pal_ice_cream"
         },
         {
           "id": "3_4.xuno.s4.picnic",
@@ -755,7 +793,8 @@
           "tprAction": {
             "gl": "Estender un mantel imaxinario e sentar arredor",
             "es": "Extender un mantel imaginario y sentarse alrededor"
-          }
+          },
+          "lamina": "pal_picnic"
         },
         {
           "id": "3_4.xuno.s4.suitcase",
@@ -789,7 +828,8 @@
           "tprAction": {
             "gl": "Achegar as mans a unha fogueira imaxinaria sen tocala",
             "es": "Acercar las manos a una hoguera imaginaria sin tocarla"
-          }
+          },
+          "lamina": "pal_bonfire"
         },
         {
           "id": "3_4.xuno.s4.pack",
@@ -833,7 +873,8 @@
           "tprAction": {
             "gl": "Bater palmas e bailar xuntos",
             "es": "Dar palmas y bailar juntos"
-          }
+          },
+          "lamina": "pal_celebrate"
         },
         {
           "id": "3_4.xuno.s4.return",
@@ -844,7 +885,8 @@
           "tprAction": {
             "gl": "Dar a volta e camiñar de novo cara ao círculo",
             "es": "Dar la vuelta y caminar de nuevo hacia el círculo"
-          }
+          },
+          "lamina": "pal_return"
         },
         {
           "id": "3_4.xuno.s4.older",
@@ -922,7 +964,8 @@
           "tprAction": {
             "gl": "Abrir os brazos cara ao grupo con ledicia",
             "es": "Abrir los brazos hacia el grupo con alegría"
-          }
+          },
+          "lamina": "pal_have_a_nice_summer"
         },
         {
           "id": "3_4.xuno.s4.see-you-in-september",

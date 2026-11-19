@@ -57,7 +57,8 @@
             "gl": "Tocar as orellas e despois o nariz",
             "es": "Tocar las orejas y luego la nariz"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_ears_and_nose"
         },
         {
           "id": "0_2.outubro.s1.toenails",
@@ -127,7 +128,8 @@
             "gl": "Sinalar o nariz do bebé",
             "es": "Señalar la nariz del bebé"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_point_to"
         },
         {
           "id": "0_2.outubro.s1.tap-lightly",
@@ -138,7 +140,8 @@
             "gl": "Tocar lixeiro o xeonllo",
             "es": "Tocar suave la rodilla"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_tap_lightly"
         },
         {
           "id": "0_2.outubro.s1.kick-legs",
@@ -149,7 +152,8 @@
             "gl": "Mover as pernas do bebé coma en bici",
             "es": "Mover las piernas del bebé como en bici"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_kick_legs"
         },
         {
           "id": "0_2.outubro.s1.rosy",
@@ -160,7 +164,8 @@
             "gl": "Tocar as meixelas rosadas",
             "es": "Tocar las mejillas sonrosadas"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_rosy"
         },
         {
           "id": "0_2.outubro.s1.tiny-toes",
@@ -183,7 +188,8 @@
             "gl": "Premer o nariz coma un botón",
             "es": "Apretar la nariz como un botón"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_button_nose"
         },
         {
           "id": "0_2.outubro.s1.chubby-cheeks",
@@ -194,7 +200,8 @@
             "gl": "Inchar as meixelas e soltar o aire",
             "es": "Inflar los mofletes y soltar el aire"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_chubby_cheeks"
         },
         {
           "id": "0_2.outubro.s1.where-s-your-nose",
@@ -216,7 +223,8 @@
             "gl": "Premer o nariz facendo «pi pi»",
             "es": "Apretar la nariz haciendo «pi pi»"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_beep_beep_nose"
         },
         {
           "id": "0_2.outubro.s1.one-two-toes",
@@ -227,7 +235,8 @@
             "gl": "Contar dous dedos dos pés",
             "es": "Contar dos deditos de los pies"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_one_two_toes"
         },
         {
           "id": "0_2.outubro.s1.nose-to-nose",
@@ -238,7 +247,8 @@
             "gl": "Tocar nariz con nariz",
             "es": "Tocar nariz con nariz"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_nose_to_nose"
         }
       ]
     },
@@ -282,7 +292,8 @@
             "gl": "Facer círculos na barriga",
             "es": "Hacer círculos en la barriga"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_belly"
         },
         {
           "id": "0_2.outubro.s2.knee",
@@ -293,7 +304,8 @@
             "gl": "Tocar o xeonllo e dicir «pum»",
             "es": "Tocar la rodilla y decir «pum»"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_knee"
         },
         {
           "id": "0_2.outubro.s2.heel",
@@ -304,7 +316,8 @@
             "gl": "Coller o talón coa man",
             "es": "Coger el talón con la mano"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_heel"
         },
         {
           "id": "0_2.outubro.s2.shoulder-blade",
@@ -326,7 +339,8 @@
             "gl": "Acariñar a pel do brazo",
             "es": "Acariciar la piel del brazo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_skin"
         },
         {
           "id": "0_2.outubro.s2.caress",
@@ -382,7 +396,8 @@
             "gl": "Debuxar círculos co dedo nas costas",
             "es": "Dibujar círculos con el dedo en la espalda"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_draw_circles"
         },
         {
           "id": "0_2.outubro.s2.silky",
@@ -415,7 +430,8 @@
             "gl": "Acariñar a meixela co dorso da man",
             "es": "Acariciar la mejilla con el dorso de la mano"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_smooth_skin"
         },
         {
           "id": "0_2.outubro.s2.warm-hands",
@@ -426,7 +442,8 @@
             "gl": "Fregar as mans e pousalas na barriga",
             "es": "Frotar las manos y posarlas en la barriga"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_warm_hands"
         },
         {
           "id": "0_2.outubro.s2.does-that-tickle",
@@ -448,7 +465,8 @@
             "gl": "Debuxar círculos na palma",
             "es": "Dibujar círculos en la palma"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_round_and_round_the_garden"
         },
         {
           "id": "0_2.outubro.s2.this-little-piggy",
@@ -491,7 +509,8 @@
             "gl": "Sinalar o bebé no espello",
             "es": "Señalar al bebé en el espejo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_reflection"
         },
         {
           "id": "0_2.outubro.s3.hairbrush",
@@ -502,7 +521,8 @@
             "gl": "Pasar o cepillo amodo polo pelo",
             "es": "Pasar el cepillo despacio por el pelo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_hairbrush"
         },
         {
           "id": "0_2.outubro.s3.bonnet",
@@ -513,7 +533,8 @@
             "gl": "Poñer e quitar un gorriño ante o espello",
             "es": "Poner y quitar un gorrito ante el espejo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_bonnet"
         },
         {
           "id": "0_2.outubro.s3.muslin-cloth",
@@ -524,7 +545,8 @@
             "gl": "Tapar a cara cunha muselina e descubrila",
             "es": "Tapar la cara con una muselina y descubrirla"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_muslin_cloth"
         },
         {
           "id": "0_2.outubro.s3.hands-and-feet",
@@ -535,7 +557,8 @@
             "gl": "Amosar as mans e despois os pés",
             "es": "Enseñar las manos y luego los pies"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_hands_and_feet"
         },
         {
           "id": "0_2.outubro.s3.fingertip",
@@ -546,7 +569,8 @@
             "gl": "Tocar a punta do dedo do bebé",
             "es": "Tocar la punta del dedo del bebé"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_fingertip"
         },
         {
           "id": "0_2.outubro.s3.tummy-time",
@@ -557,7 +581,8 @@
             "gl": "Poñer o bebé boca abaixo na alfombra",
             "es": "Poner al bebé boca abajo en la alfombra"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_tummy_time"
         },
         {
           "id": "0_2.outubro.s3.make-faces",
@@ -603,7 +628,8 @@
             "gl": "Abrir moito a boca e os ollos",
             "es": "Abrir mucho la boca y los ojos"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_pull_faces"
         },
         {
           "id": "0_2.outubro.s3.lift-head",
@@ -614,7 +640,8 @@
             "gl": "Animar o bebé a erguer a cabeza boca abaixo",
             "es": "Animar al bebé a levantar la cabeza boca abajo"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_lift_head"
         },
         {
           "id": "0_2.outubro.s3.silly-face",
@@ -636,7 +663,8 @@
             "gl": "Abrir moito os ollos sorprendidos",
             "es": "Abrir mucho los ojos sorprendidos"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_wide_eyed"
         },
         {
           "id": "0_2.outubro.s3.mirror-bright",
@@ -647,7 +675,8 @@
             "gl": "Facer brillar o espello co pano",
             "es": "Hacer brillar el espejo con el paño"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_clean_and_shiny"
         },
         {
           "id": "0_2.outubro.s3.upright",
@@ -658,7 +687,8 @@
             "gl": "Sentar o bebé dereito",
             "es": "Sentar al bebé derecho"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_upright"
         },
         {
           "id": "0_2.outubro.s3.who-s-in-the-mirror",
@@ -691,7 +721,8 @@
             "gl": "Tapar a cara e descubrila",
             "es": "Tapar la cara y descubrirla"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_peekaboo_i_see_you"
         },
         {
           "id": "0_2.outubro.s3.behind-my-hands",
@@ -702,7 +733,8 @@
             "gl": "Esconderse detrás das mans",
             "es": "Esconderse detrás de las manos"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_behind_my_hands"
         }
       ]
     },
@@ -745,7 +777,8 @@
             "gl": "Coller un pé coa man",
             "es": "Coger un pie con la mano"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_foot"
         },
         {
           "id": "0_2.outubro.s4.big-toe",
@@ -756,7 +789,8 @@
             "gl": "Menear o dedo gordo do pé",
             "es": "Mover el dedo gordo del pie"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_big_toe"
         },
         {
           "id": "0_2.outubro.s4.little-finger",
@@ -778,7 +812,8 @@
             "gl": "Sinalar o primeiro dente",
             "es": "Señalar el primer diente"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_tooth"
         },
         {
           "id": "0_2.outubro.s4.gums",
@@ -789,7 +824,8 @@
             "gl": "Masaxear as enxivas cun mordedor",
             "es": "Masajear las encías con un mordedor"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_gums"
         },
         {
           "id": "0_2.outubro.s4.grasp",
@@ -836,7 +872,8 @@
             "gl": "Axudar a xirar de costas a barriga",
             "es": "Ayudar a girar de espaldas a barriga"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_roll_over"
         },
         {
           "id": "0_2.outubro.s4.teethe",
@@ -880,7 +917,8 @@
             "gl": "Estirar os brazos cara arriba",
             "es": "Estirar los brazos hacia arriba"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_growing"
         },
         {
           "id": "0_2.outubro.s4.strong-legs",
@@ -891,7 +929,8 @@
             "gl": "Empurrar as mans co pé",
             "es": "Empujar las manos con el pie"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_strong_legs"
         },
         {
           "id": "0_2.outubro.s4.my-turn-your-turn",
@@ -924,7 +963,8 @@
             "gl": "Levantar os brazos ben alto",
             "es": "Levantar los brazos bien alto"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_so_big"
         },
         {
           "id": "0_2.outubro.s4.your-hand-in-mine",

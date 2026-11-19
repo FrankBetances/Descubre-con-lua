@@ -105,7 +105,8 @@
             "gl": "Palpar a textura coa man aberta",
             "es": "Palpar la textura con la mano abierta"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_feel"
         },
         {
           "id": "0_2.novembro.s1.rub-gently",
@@ -116,7 +117,8 @@
             "gl": "Fregar a cortiza e escoitar",
             "es": "Frotar la corteza y escuchar"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_rub_gently"
         },
         {
           "id": "0_2.novembro.s1.scrunch",
@@ -138,7 +140,8 @@
             "gl": "Deixar o bebé tocar a cesta",
             "es": "Dejar al bebé tocar la cesta"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_discover"
         },
         {
           "id": "0_2.novembro.s1.hold-up",
@@ -149,7 +152,8 @@
             "gl": "Levantar a castaña para vela",
             "es": "Levantar la castaña para verla"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_hold_up"
         },
         {
           "id": "0_2.novembro.s1.scratchy",
@@ -171,7 +175,8 @@
             "gl": "Acariñar unha manta peluda",
             "es": "Acariciar una manta peluda"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_fuzzy"
         },
         {
           "id": "0_2.novembro.s1.prickly",
@@ -193,7 +198,8 @@
             "gl": "Rodar unha noz entre as mans",
             "es": "Rodar una nuez entre las manos"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_bumpy_walnut"
         },
         {
           "id": "0_2.novembro.s1.treasure-basket",
@@ -204,7 +210,8 @@
             "gl": "Abrir a cesta e sacar un obxecto",
             "es": "Abrir la cesta y sacar un objeto"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_treasure_basket"
         },
         {
           "id": "0_2.novembro.s1.soft-or-rough",
@@ -215,7 +222,8 @@
             "gl": "Tocar unha cousa suave e outra áspera",
             "es": "Tocar una cosa suave y otra áspera"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_soft_or_rough"
         },
         {
           "id": "0_2.novembro.s1.feel-this",
@@ -294,7 +302,8 @@
             "gl": "Empurrar a carretilla con follas",
             "es": "Empujar la carretilla con hojas"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_wheelbarrow"
         },
         {
           "id": "0_2.novembro.s2.breeze",
@@ -305,7 +314,8 @@
             "gl": "Soprar suave na cara do bebé",
             "es": "Soplar suave en la cara del bebé"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_breeze"
         },
         {
           "id": "0_2.novembro.s2.tree-trunk",
@@ -316,7 +326,8 @@
             "gl": "Abrazar un tronco co bebé",
             "es": "Abrazar un tronco con el bebé"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_tree_trunk"
         },
         {
           "id": "0_2.novembro.s2.autumn-walk",
@@ -327,7 +338,8 @@
             "gl": "Pasear co bebé entre follas",
             "es": "Pasear con el bebé entre hojas"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_autumn_walk"
         },
         {
           "id": "0_2.novembro.s2.drift",
@@ -338,7 +350,8 @@
             "gl": "Deixar caer unha folla dende arriba",
             "es": "Dejar caer una hoja desde arriba"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_drift"
         },
         {
           "id": "0_2.novembro.s2.float-down",
@@ -349,7 +362,8 @@
             "gl": "Baixar a man amodo coma unha folla",
             "es": "Bajar la mano despacio como una hoja"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_float_down"
         },
         {
           "id": "0_2.novembro.s2.rustle",
@@ -360,7 +374,8 @@
             "gl": "Mover as follas para que soen",
             "es": "Mover las hojas para que suenen"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_rustle"
         },
         {
           "id": "0_2.novembro.s2.kick-leaves",
@@ -371,7 +386,8 @@
             "gl": "Mover os pés entre as follas",
             "es": "Mover los pies entre las hojas"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_kick_leaves"
         },
         {
           "id": "0_2.novembro.s2.gather",
@@ -382,7 +398,8 @@
             "gl": "Xuntar follas coas mans",
             "es": "Juntar hojas con las manos"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_gather"
         },
         {
           "id": "0_2.novembro.s2.golden-brown",
@@ -393,7 +410,8 @@
             "gl": "Amosar unha folla dourada á luz",
             "es": "Enseñar una hoja dorada a la luz"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_golden_brown"
         },
         {
           "id": "0_2.novembro.s2.crinkly",
@@ -404,7 +422,8 @@
             "gl": "Engurrar unha folla seca",
             "es": "Arrugar una hoja seca"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_crinkly"
         },
         {
           "id": "0_2.novembro.s2.floaty",
@@ -415,7 +434,8 @@
             "gl": "Soprar unha folla para que voe",
             "es": "Soplar una hoja para que vuele"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_floaty"
         },
         {
           "id": "0_2.novembro.s2.chilly",
@@ -426,7 +446,8 @@
             "gl": "Fregar os brazos coma con frío",
             "es": "Frotar los brazos como con frío"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_chilly"
         },
         {
           "id": "0_2.novembro.s2.leaves-are-falling",
@@ -449,7 +470,8 @@
             "gl": "Mover os brazos coma o vento",
             "es": "Mover los brazos como el viento"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_whoosh"
         },
         {
           "id": "0_2.novembro.s2.one-leaf-two-leaves",
@@ -460,7 +482,8 @@
             "gl": "Amosar unha folla e logo dúas",
             "es": "Enseñar una hoja y luego dos"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_one_leaf_two_leaves"
         },
         {
           "id": "0_2.novembro.s2.down-to-the-ground",
@@ -471,7 +494,8 @@
             "gl": "Baixar a folla ata o chan",
             "es": "Bajar la hoja hasta el suelo"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_down_to_the_ground"
         }
       ]
     },
@@ -515,7 +539,8 @@
             "gl": "Sinalar o lume de lonxe",
             "es": "Señalar el fuego de lejos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_fire"
         },
         {
           "id": "0_2.novembro.s3.paper-cone",
@@ -537,7 +562,8 @@
             "gl": "Tocar a pataca doce morna",
             "es": "Tocar el boniato templado"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_sweet_potato"
         },
         {
           "id": "0_2.novembro.s3.crumbs",
@@ -548,7 +574,8 @@
             "gl": "Recoller as migas cos dedos",
             "es": "Recoger las migas con los dedos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_crumbs"
         },
         {
           "id": "0_2.novembro.s3.songbird",
@@ -570,7 +597,8 @@
             "gl": "Soprar a comida antes de dala",
             "es": "Soplar la comida antes de darla"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_blow_on_it"
         },
         {
           "id": "0_2.novembro.s3.share-out",
@@ -592,7 +620,8 @@
             "gl": "Achegar un anaquiño á boca",
             "es": "Acercar un trocito a la boca"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_taste_a_bit"
         },
         {
           "id": "0_2.novembro.s3.clap-along",
@@ -603,7 +632,8 @@
             "gl": "Bater palmas co ritmo da canción",
             "es": "Dar palmas al ritmo de la canción"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_clap_along"
         },
         {
           "id": "0_2.novembro.s3.sway",
@@ -614,7 +644,8 @@
             "gl": "Abanear o bebé ao son da música",
             "es": "Balancear al bebé al son de la música"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_sway"
         },
         {
           "id": "0_2.novembro.s3.toasty",
@@ -658,7 +689,8 @@
             "gl": "Cheirar unha noz aberta",
             "es": "Oler una nuez abierta"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_nutty"
         },
         {
           "id": "0_2.novembro.s3.mmm-chestnuts",
@@ -669,7 +701,8 @@
             "gl": "Tocar a barriga contentos",
             "es": "Tocar la barriga contentos"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_mmm_chestnuts"
         },
         {
           "id": "0_2.novembro.s3.hot-hot-hot",
@@ -680,7 +713,8 @@
             "gl": "Abanar a man coma se queimase",
             "es": "Abanicar la mano como si quemara"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_hot_hot_hot"
         },
         {
           "id": "0_2.novembro.s3.not-too-hot",
@@ -702,7 +736,8 @@
             "gl": "Camiñar en círculo co bebé",
             "es": "Caminar en círculo con el bebé"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_around_the_fire"
         }
       ]
     },
@@ -746,7 +781,8 @@
             "gl": "Esmagar a masa coa palma",
             "es": "Aplastar la masa con la palma"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_dough"
         },
         {
           "id": "0_2.novembro.s4.sponge-ball",
@@ -779,7 +815,8 @@
             "gl": "Bater a culler de madeira nunha pota",
             "es": "Golpear la cuchara de madera en una olla"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_wooden_spoon"
         },
         {
           "id": "0_2.novembro.s4.rattle-toy",
@@ -790,7 +827,8 @@
             "gl": "Axitar o xoguete preto da orella",
             "es": "Agitar el juguete cerca de la oreja"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_rattle_toy"
         },
         {
           "id": "0_2.novembro.s4.poke",
@@ -801,7 +839,8 @@
             "gl": "Tocar a masa co dedo índice",
             "es": "Tocar la masa con el dedo índice"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_poke"
         },
         {
           "id": "0_2.novembro.s4.pat-down",
@@ -823,7 +862,8 @@
             "gl": "Coller o xoguete e axitalo",
             "es": "Coger el juguete y agitarlo"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_grab_and_shake"
         },
         {
           "id": "0_2.novembro.s4.chew-on",
@@ -834,7 +874,8 @@
             "gl": "Deixar morder o mordedor limpo",
             "es": "Dejar morder el mordedor limpio"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_chew_on"
         },
         {
           "id": "0_2.novembro.s4.hand-over",
@@ -845,7 +886,8 @@
             "gl": "Dar o obxecto á outra man",
             "es": "Dar el objeto a la otra mano"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_hand_over"
         },
         {
           "id": "0_2.novembro.s4.squishy",
@@ -867,7 +909,8 @@
             "gl": "Mover o prato para que trema",
             "es": "Mover el plato para que tiemble"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_wobbly_jelly"
         },
         {
           "id": "0_2.novembro.s4.crackly",
@@ -878,7 +921,8 @@
             "gl": "Engurrar papel para que soe",
             "es": "Arrugar papel para que suene"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_crackly"
         },
         {
           "id": "0_2.novembro.s4.cool-to-touch",
@@ -889,7 +933,8 @@
             "gl": "Pousar a man nunha pedra fresca",
             "es": "Posar la mano en una piedra fresca"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_cool_to_touch"
         },
         {
           "id": "0_2.novembro.s4.squeeze-and-let-go",
@@ -900,7 +945,8 @@
             "gl": "Apertar e abrir a man",
             "es": "Apretar y abrir la mano"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_squeeze_and_let_go"
         },
         {
           "id": "0_2.novembro.s4.what-is-it",
@@ -922,7 +968,8 @@
             "gl": "Meter as mans na masa",
             "es": "Meter las manos en la masa"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_hands_in_the_dough"
         },
         {
           "id": "0_2.novembro.s4.from-hand-to-hand",
@@ -933,7 +980,8 @@
             "gl": "Pasar o obxecto entre as dúas mans",
             "es": "Pasar el objeto entre las dos manos"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_from_hand_to_hand"
         }
       ]
     }
