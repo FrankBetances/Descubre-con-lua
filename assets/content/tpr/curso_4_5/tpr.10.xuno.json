@@ -621,7 +621,8 @@
             "gl": "Estirarse dereito",
             "es": "Estirarse recto"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_stand_tall"
         },
         {
           "id": "4_5.xuno.s3.wave-to-families",

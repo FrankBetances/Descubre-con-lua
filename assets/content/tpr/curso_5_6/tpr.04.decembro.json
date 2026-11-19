@@ -606,7 +606,8 @@
             "gl": "Pasar unha folla",
             "es": "Pasar una hoja"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_turn_the_page_of_the_calendar"
         },
         {
           "id": "5_6.decembro.s3.mark-the-date",

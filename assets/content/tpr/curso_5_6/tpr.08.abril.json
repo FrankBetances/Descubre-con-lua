@@ -139,7 +139,8 @@
             "gl": "Botar cada cousa no seu sitio",
             "es": "Echar cada cosa en su sitio"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_separate_waste"
         },
         {
           "id": "5_6.abril.s1.care-for-the-sea",
@@ -262,7 +263,8 @@
             "gl": "Moverse ondulando",
             "es": "Moverse ondulando"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_seagrass"
         },
         {
           "id": "5_6.abril.s2.reef",
@@ -333,7 +335,8 @@
             "gl": "Facer fotos coas mans",
             "es": "Hacer fotos con las manos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_underwater_camera"
         },
         {
           "id": "5_6.abril.s2.dive-deep",
@@ -391,7 +394,8 @@
             "gl": "Subir e coller aire",
             "es": "Subir y coger aire"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_surface"
         },
         {
           "id": "5_6.abril.s2.ecological",
@@ -515,7 +519,8 @@
             "gl": "Poñer as mans planas ao sol",
             "es": "Poner las manos planas al sol"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_solar_panel"
         },
         {
           "id": "5_6.abril.s3.wind-turbine",
@@ -574,7 +579,8 @@
             "gl": "Cavar e plantar",
             "es": "Cavar y plantar"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_tree_planting"
         },
         {
           "id": "5_6.abril.s3.switch-off-lights",
@@ -585,7 +591,8 @@
             "gl": "Premer o interruptor",
             "es": "Pulsar el interruptor"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_switch_off_lights"
         },
         {
           "id": "5_6.abril.s3.walk-to-school",

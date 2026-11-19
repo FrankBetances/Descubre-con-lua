@@ -292,7 +292,8 @@
             "gl": "Peneirar area",
             "es": "Tamizar arena"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_sieve_toy"
         },
         {
           "id": "2_3.xuno.s2.sand-pie",
@@ -446,7 +447,8 @@
             "gl": "Alisar a area coa man",
             "es": "Alisar la arena con la mano"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_smooth_sand"
         },
         {
           "id": "2_3.xuno.s2.let-s-dig",
@@ -609,7 +611,8 @@
             "gl": "Virar unha pedra con coidado",
             "es": "Voltear una piedra con cuidado"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_turn_over_a_stone"
         },
         {
           "id": "2_3.xuno.s3.rinse-off-sand",
@@ -738,7 +741,8 @@
             "gl": "Meter as cunchas na bolsa",
             "es": "Meter las conchas en la bolsa"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_shells_in_the_bag"
         }
       ]
     },

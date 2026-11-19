@@ -67,7 +67,8 @@
             "gl": "Poñer as mans coma un muro",
             "es": "Poner las manos como un muro"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_stone_wall"
         },
         {
           "id": "5_6.xaneiro.s1.stone-statue",
@@ -412,7 +413,8 @@
             "gl": "Xuntar as mans",
             "es": "Juntar las manos"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_tiny_village"
         },
         {
           "id": "5_6.xaneiro.s2.busy-city",
@@ -830,7 +832,8 @@
             "gl": "Poñer tarxetas en fila",
             "es": "Poner tarjetas en fila"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_sequence"
         },
         {
           "id": "5_6.xaneiro.s4.invent",

@@ -306,7 +306,8 @@
           "tprAction": {
             "gl": "Cavar cunha pa imaxinaria e botar a area a un lado",
             "es": "Cavar con una pala imaginaria y echar la arena a un lado"
-          }
+          },
+          "lamina": "pal_spade"
         },
         {
           "id": "3_4.xuno.s2.sandcastle",
@@ -329,7 +330,8 @@
           "tprAction": {
             "gl": "Poñer un sombreiro grande imaxinario",
             "es": "Ponerse un sombrero grande imaginario"
-          }
+          },
+          "lamina": "pal_sun_hat"
         },
         {
           "id": "3_4.xuno.s2.sunglasses",
@@ -691,7 +693,8 @@
           "tprAction": {
             "gl": "Inflar as meixelas e moverse amodo",
             "es": "Inflar los mofletes y moverse despacio"
-          }
+          },
+          "lamina": "pal_underwater"
         },
         {
           "id": "3_4.xuno.s3.look-a-shell",
@@ -855,7 +858,8 @@
           "tprAction": {
             "gl": "Voar coma un avión ata outro recuncho da aula",
             "es": "Volar como un avión hasta otro rincón del aula"
-          }
+          },
+          "lamina": "pal_travel"
         },
         {
           "id": "3_4.xuno.s4.miss",

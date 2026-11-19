@@ -105,7 +105,8 @@
             "gl": "Poñer un vaso enriba doutro",
             "es": "Poner un vaso encima de otro"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_stack"
         },
         {
           "id": "0_2.marzo.s1.knock-over",
@@ -128,7 +129,8 @@
             "gl": "Xuntar os obxectos da mesma cor",
             "es": "Juntar los objetos del mismo color"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_sort"
         },
         {
           "id": "0_2.marzo.s1.match",
@@ -526,7 +528,8 @@
             "gl": "Apertar a pelota con pinchos suaves",
             "es": "Apretar la pelota con pinchos suaves"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_sensory_ball"
         },
         {
           "id": "0_2.marzo.s3.ball-pit",
@@ -866,7 +869,8 @@
             "gl": "Chupar un anaco de laranxa",
             "es": "Chupar un trozo de naranja"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_suck"
         },
         {
           "id": "0_2.marzo.s4.slurp-up",

@@ -783,7 +783,8 @@
             "gl": "Facer un chapeu de cogomelo coas mans",
             "es": "Hacer un sombrero de seta con las manos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_toadstool"
         },
         {
           "id": "4_5.novembro.s4.berry",

@@ -127,7 +127,8 @@
             "gl": "Pasar un fío imaxinario",
             "es": "Pasar un hilo imaginario"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_thread_beads"
         },
         {
           "id": "5_6.marzo.s1.continue",
@@ -553,7 +554,8 @@
             "gl": "Enrolar o dedo",
             "es": "Enrollar el dedo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_snail_shell"
         },
         {
           "id": "5_6.marzo.s3.pinecone-scales",
@@ -600,7 +602,8 @@
             "gl": "Seguir a espiral co dedo",
             "es": "Seguir la espiral con el dedo"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_trace_a_spiral"
         },
         {
           "id": "5_6.marzo.s3.look-for-patterns",
@@ -772,7 +775,8 @@
             "gl": "Encaixar pezas",
             "es": "Encajar piezas"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_tangram"
         },
         {
           "id": "5_6.marzo.s4.colour-wheel",
@@ -795,7 +799,8 @@
             "gl": "Pasar de claro a escuro",
             "es": "Pasar de claro a oscuro"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_shade_card"
         },
         {
           "id": "5_6.marzo.s4.primary-colours",

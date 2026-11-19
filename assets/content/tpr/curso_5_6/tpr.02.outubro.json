@@ -321,7 +321,8 @@
             "gl": "Moverse coma un esqueleto de conto",
             "es": "Moverse como un esqueleto de cuento"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_skeleton"
         },
         {
           "id": "5_6.outubro.s2.listening-tube",
@@ -520,7 +521,8 @@
             "gl": "Pasar a man polas costas",
             "es": "Pasar la mano por la espalda"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_spine"
         },
         {
           "id": "5_6.outubro.s3.posture",
@@ -601,7 +603,8 @@
             "gl": "Baixar as mans ata os pés",
             "es": "Bajar las manos hasta los pies"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_touch_your_toes"
         },
         {
           "id": "5_6.outubro.s3.arch-back",
@@ -683,7 +686,8 @@
             "gl": "Estirar moito os brazos",
             "es": "Estirar mucho los brazos"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_stretchy"
         },
         {
           "id": "5_6.outubro.s3.warm-up-your-body",
@@ -706,7 +710,8 @@
             "gl": "Facer a postura da árbore",
             "es": "Hacer la postura del árbol"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_stand_like_a_tree"
         },
         {
           "id": "5_6.outubro.s3.stretch-as-high-as-you-can",

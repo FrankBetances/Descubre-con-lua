@@ -140,7 +140,8 @@
             "gl": "Meter a manta baixo o bebé",
             "es": "Meter la manta bajo el bebé"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_tuck_in"
         },
         {
           "id": "0_2.decembro.s1.huddle",
@@ -484,7 +485,8 @@
             "gl": "Meterse baixo o edredón",
             "es": "Meterse bajo el edredón"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_under_the_quilt"
         },
         {
           "id": "0_2.decembro.s2.cheek-to-cheek",
@@ -942,7 +944,8 @@
             "gl": "Facer soar o papel brillante",
             "es": "Hacer sonar el papel brillante"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_shiny_paper"
         },
         {
           "id": "0_2.decembro.s4.what-s-inside",

@@ -153,7 +153,8 @@
             "gl": "Pasar herba polos pés",
             "es": "Pasar hierba por los pies"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_tickle_toes"
         },
         {
           "id": "2_3.abril.s1.grassy",
@@ -248,7 +249,8 @@
             "gl": "Subir e baixar coas mans",
             "es": "Subir y bajar con las manos"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_up_the_hill_and_down"
         }
       ]
     },
@@ -280,7 +282,8 @@
             "gl": "Voar cos brazos en V",
             "es": "Volar con los brazos en V"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_swallow"
         },
         {
           "id": "2_3.abril.s2.wing",
@@ -399,7 +402,8 @@
             "gl": "Baixar os brazos voando",
             "es": "Bajar los brazos volando"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_swoop"
         },
         {
           "id": "2_3.abril.s2.tuneful",
@@ -827,7 +831,8 @@
             "gl": "Xuntar ramiñas",
             "es": "Juntar ramitas"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_twigs"
         },
         {
           "id": "2_3.abril.s4.build-a-nest",

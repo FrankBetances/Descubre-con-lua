@@ -315,7 +315,8 @@
             "gl": "Agarrarse a unha liana imaxinaria",
             "es": "Agarrarse a una liana imaginaria"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_vine"
         },
         {
           "id": "2_3.febreiro.s2.palm-tree",
@@ -492,7 +493,8 @@
             "gl": "Subir os brazos coma trepando",
             "es": "Subir los brazos como trepando"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_up_the_palm_tree"
         }
       ]
     },
@@ -608,7 +610,8 @@
             "gl": "Esvarar cos calcetíns",
             "es": "Deslizarse con los calcetines"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_slide_on_ice"
         },
         {
           "id": "2_3.febreiro.s3.waddle-along",
@@ -619,7 +622,8 @@
             "gl": "Bambearse dun lado a outro",
             "es": "Bambolearse de un lado a otro"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_waddle_along"
         },
         {
           "id": "2_3.febreiro.s3.belly-slide",
@@ -714,7 +718,8 @@
             "gl": "Esvarar cos brazos pegados",
             "es": "Deslizarse con los brazos pegados"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_slide_like_a_penguin"
         },
         {
           "id": "2_3.febreiro.s3.seals-and-bears",
@@ -913,7 +918,8 @@
             "gl": "Poñer cara de monstro rindo",
             "es": "Poner cara de monstruo riendo"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_silly_monster"
         },
         {
           "id": "2_3.febreiro.s4.feathery-tail",
@@ -983,7 +989,8 @@
             "gl": "Menear o rabo e bater as ás",
             "es": "Menear la cola y batir las alas"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_tails_and_wings"
         }
       ]
     }

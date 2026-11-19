@@ -117,7 +117,8 @@
             "gl": "Facer que o peluche beba da cunca",
             "es": "Hacer que el peluche bebe del cuenco"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_slurp"
         },
         {
           "id": "0_2.xaneiro.s1.curl-up",

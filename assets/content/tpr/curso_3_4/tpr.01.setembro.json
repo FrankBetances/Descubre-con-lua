@@ -387,7 +387,8 @@
           "tprAction": {
             "gl": "Partir un obxecto imaxinario e dar a metade",
             "es": "Partir un objeto imaginario y dar la mitad"
-          }
+          },
+          "lamina": "pal_share"
         },
         {
           "id": "3_4.setembro.s2.help",

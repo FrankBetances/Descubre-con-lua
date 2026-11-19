@@ -141,7 +141,8 @@
             "gl": "Levantar moito as pernas",
             "es": "Levantar mucho las piernas"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_wade"
         },
         {
           "id": "2_3.decembro.s1.pull-on-boots",
@@ -164,7 +165,8 @@
             "gl": "Espremer unha luva mollada",
             "es": "Escurrir un guante mojado"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_soggy"
         },
         {
           "id": "2_3.decembro.s1.squelchy",
@@ -316,7 +318,8 @@
             "gl": "Pegar o símbolo da choiva",
             "es": "Pegar el símbolo de la lluvia"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_weather_chart"
         },
         {
           "id": "2_3.decembro.s2.storm",
@@ -339,7 +342,8 @@
             "gl": "Meterse baixo unha mesa",
             "es": "Meterse bajo una mesa"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_shelter"
         },
         {
           "id": "2_3.decembro.s2.pour-down",
@@ -385,7 +389,8 @@
             "gl": "Tapar a cabeza coas mans",
             "es": "Taparse la cabeza con las manos"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_take_cover"
         },
         {
           "id": "2_3.decembro.s2.pitter-pat",
@@ -491,7 +496,8 @@
             "gl": "Meterse debaixo da mesa",
             "es": "Meterse debajo de la mesa"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_under_the_table"
         }
       ]
     },
@@ -558,7 +564,8 @@
             "gl": "Meter o brazo pola manga",
             "es": "Meter el brazo por la manga"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_sleeve"
         },
         {
           "id": "2_3.decembro.s3.hat-pompom",
@@ -876,7 +883,8 @@
             "gl": "Pasar a páxina do libro",
             "es": "Pasar la página del libro"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_turn_the_page"
         },
         {
           "id": "2_3.decembro.s4.stay-in",

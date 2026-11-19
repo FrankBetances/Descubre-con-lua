@@ -112,7 +112,8 @@
             "gl": "Pegar no aire",
             "es": "Pegar en el aire"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_stick_in_photos"
         },
         {
           "id": "5_6.xuno.s1.thank-the-teachers",
@@ -826,7 +827,8 @@
             "gl": "Meter nun buzón",
             "es": "Meter en un buzón"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_send_a_postcard"
         },
         {
           "id": "5_6.xuno.s4.explore-new-places",

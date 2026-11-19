@@ -81,7 +81,8 @@
             "gl": "Meter un xoguete na caixa",
             "es": "Meter un juguete en la caja"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_toy_box"
         },
         {
           "id": "2_3.setembro.s1.shelf",
@@ -92,7 +93,8 @@
             "gl": "Pousar un libro no estante",
             "es": "Dejar un libro en el estante"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_shelf"
         },
         {
           "id": "2_3.setembro.s1.put-away",
@@ -276,7 +278,8 @@
             "gl": "Facer unha torre alta",
             "es": "Hacer una torre alta"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_tower"
         },
         {
           "id": "2_3.setembro.s2.train-set",
@@ -335,7 +338,8 @@
             "gl": "Servir té de xoguete",
             "es": "Servir té de juguete"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_tea_set"
         },
         {
           "id": "2_3.setembro.s2.take-turns",
@@ -416,7 +420,8 @@
             "gl": "Estirar o brazo ata a punta",
             "es": "Estirar el brazo hasta la punta"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_tall_tower"
         },
         {
           "id": "2_3.setembro.s2.sharing",
@@ -784,7 +789,8 @@
             "gl": "Pegar un adhesivo na táboa",
             "es": "Pegar una pegatina en la tabla"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_sticker_chart"
         },
         {
           "id": "2_3.setembro.s4.hand-wave",
@@ -924,7 +930,8 @@
             "gl": "Xuntar as mans de todos",
             "es": "Juntar las manos de todos"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_together"
         },
         {
           "id": "2_3.setembro.s4.hello-friend",

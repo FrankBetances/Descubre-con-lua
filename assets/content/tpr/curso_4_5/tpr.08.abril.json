@@ -408,7 +408,8 @@
             "gl": "Voar amodo",
             "es": "Volar despacio"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_soaring"
         },
         {
           "id": "4_5.abril.s2.webbed",
@@ -478,7 +479,8 @@
             "gl": "Facer «cuac»",
             "es": "Hacer «cuac»"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_squawk_like_a_seagull"
         },
         {
           "id": "4_5.abril.s2.dive-catch-fly",
@@ -509,7 +511,8 @@
             "gl": "Baixar as mans ata o chan",
             "es": "Bajar las manos hasta el suelo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_seabed"
         },
         {
           "id": "4_5.abril.s3.kelp",
@@ -556,7 +559,8 @@
             "gl": "Poñer un tubo imaxinario",
             "es": "Ponerse un tubo imaginario"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_snorkel"
         },
         {
           "id": "4_5.abril.s3.goggles",
@@ -639,7 +643,8 @@
             "gl": "Moverse xuntos coma peixes",
             "es": "Moverse juntos como peces"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_swim_in_a_group"
         },
         {
           "id": "4_5.abril.s3.murky",

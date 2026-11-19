@@ -306,7 +306,8 @@
             "gl": "Pedalear no aire",
             "es": "Pedalear en el aire"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_tricycle"
         },
         {
           "id": "2_3.xaneiro.s2.horn",
@@ -882,7 +883,8 @@
             "gl": "Facer «tuuu» coma o barco",
             "es": "Hacer «tuuu» como el barco"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_toot_the_horn"
         },
         {
           "id": "2_3.xaneiro.s4.load",
@@ -987,7 +989,8 @@
             "gl": "Levantar o brazo amodo",
             "es": "Levantar el brazo despacio"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_up_with_the_crane"
         }
       ]
     }

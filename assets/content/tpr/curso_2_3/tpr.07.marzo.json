@@ -81,7 +81,8 @@
             "gl": "Meter a forma no seu oco",
             "es": "Meter la forma en su hueco"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_shape_sorter"
         },
         {
           "id": "2_3.marzo.s1.corner-piece",
@@ -128,7 +129,8 @@
             "gl": "Meter a peza no oco",
             "es": "Meter la pieza en el hueco"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_slot_in"
         },
         {
           "id": "2_3.marzo.s1.trace-around",
@@ -372,7 +374,8 @@
             "gl": "Facer cortes coa man",
             "es": "Hacer cortes con la mano"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_slice"
         },
         {
           "id": "2_3.marzo.s2.share-the-fruit",
@@ -394,7 +397,8 @@
             "gl": "Achegar a froita ao nariz",
             "es": "Acercar la fruta a la nariz"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_sniff_the_fruit"
         },
         {
           "id": "2_3.marzo.s2.fruity",
@@ -639,7 +643,8 @@
             "gl": "Deixar caer a torre",
             "es": "Dejar caer la torre"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_topple"
         },
         {
           "id": "2_3.marzo.s3.solid",
@@ -837,7 +842,8 @@
             "gl": "Sacar as cousas da cesta",
             "es": "Sacar las cosas de la cesta"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_unpack"
         },
         {
           "id": "2_3.marzo.s4.pass-the-plate",

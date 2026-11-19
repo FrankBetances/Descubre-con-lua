@@ -32,7 +32,8 @@
             "gl": "Probar e pensar",
             "es": "Probar y pensar"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_taste_test"
         },
         {
           "id": "4_5.marzo.s1.tasting-spoon",
@@ -79,7 +80,8 @@
             "gl": "Facer careta de acedo",
             "es": "Hacer mueca de ácido"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_vinegar"
         },
         {
           "id": "4_5.marzo.s1.olive",
@@ -320,7 +322,8 @@
             "gl": "Xuntar moito as mans",
             "es": "Juntar mucho las manos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_tiny_shoe"
         },
         {
           "id": "4_5.marzo.s2.order",
@@ -391,7 +394,8 @@
             "gl": "Facerse pequeno no chan",
             "es": "Hacerse pequeño en el suelo"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_shrink"
         },
         {
           "id": "4_5.marzo.s2.bigger",
@@ -425,7 +429,8 @@
             "gl": "Xuntar máis as mans",
             "es": "Juntar más las manos"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_smaller"
         },
         {
           "id": "4_5.marzo.s2.smallest",

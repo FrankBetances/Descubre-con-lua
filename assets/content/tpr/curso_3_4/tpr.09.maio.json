@@ -249,7 +249,8 @@
           "tprAction": {
             "gl": "Poñer as mans baixo unha billa imaxinaria",
             "es": "Poner las manos bajo un grifo imaginario"
-          }
+          },
+          "lamina": "pal_under_the_tap"
         }
       ]
     },
@@ -649,7 +650,8 @@
           "tprAction": {
             "gl": "Servir comida imaxinaria nos pratos do grupo",
             "es": "Servir comida imaginaria en los platos del grupo"
-          }
+          },
+          "lamina": "pal_serve"
         },
         {
           "id": "3_4.maio.s3.salty",

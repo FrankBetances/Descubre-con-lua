@@ -625,7 +625,8 @@
             "gl": "Bater os pés no chan",
             "es": "Patalear en el suelo"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_stamp_feet"
         },
         {
           "id": "2_3.novembro.s3.walk-heavy",
@@ -801,7 +802,8 @@
             "gl": "Servir algo quente do termo",
             "es": "Servir algo caliente del termo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_thermos"
         },
         {
           "id": "2_3.novembro.s4.bonfire-smoke",
@@ -836,7 +838,8 @@
             "gl": "Xuntar as cascas nun montón",
             "es": "Juntar las cáscaras en un montón"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_shell_pieces"
         },
         {
           "id": "2_3.novembro.s4.crack-open",

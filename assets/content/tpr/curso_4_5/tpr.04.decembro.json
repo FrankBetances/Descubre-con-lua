@@ -289,7 +289,8 @@
             "gl": "Estirar unha cinta imaxinaria",
             "es": "Estirar una cinta imaginaria"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_tape_measure"
         },
         {
           "id": "4_5.decembro.s2.handspan",
@@ -441,7 +442,8 @@
             "gl": "Xuntar as mans",
             "es": "Juntar las manos"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_shorter"
         },
         {
           "id": "4_5.decembro.s2.which-one-is-heavier",
@@ -566,7 +568,8 @@
             "gl": "Estirarse coma un farol",
             "es": "Estirarse como un farol"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_street_lamp"
         },
         {
           "id": "4_5.decembro.s3.light-show",
@@ -788,7 +791,8 @@
             "gl": "Taparse dous coa mesma manta",
             "es": "Taparse dos con la misma manta"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_shared_blanket"
         },
         {
           "id": "4_5.decembro.s4.kindness",

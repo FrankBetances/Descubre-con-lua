@@ -165,7 +165,8 @@
             "gl": "Brincar coma unha mola",
             "es": "Botar como un muelle"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_springy_legs"
         },
         {
           "id": "2_3.outubro.s1.bendy",
@@ -881,7 +882,8 @@
             "gl": "Dar un paso cara atrás",
             "es": "Dar un paso hacia atrás"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_step_back"
         },
         {
           "id": "2_3.outubro.s4.wiggle-hips",

@@ -117,7 +117,8 @@
           "tprAction": {
             "gl": "Esvarar amodo polo chan sen levantar os pés",
             "es": "Deslizarse despacio por el suelo sin levantar los pies"
-          }
+          },
+          "lamina": "pal_slide"
         },
         {
           "id": "3_4.decembro.s1.melt",
@@ -388,7 +389,8 @@
           "tprAction": {
             "gl": "Desembrullar amodo un agasallo imaxinario",
             "es": "Desenvolver despacio un regalo imaginario"
-          }
+          },
+          "lamina": "pal_unwrap"
         },
         {
           "id": "3_4.decembro.s2.hang",
@@ -671,7 +673,8 @@
           "tprAction": {
             "gl": "Deixar caer os brazos e soltar o aire",
             "es": "Dejar caer los brazos y soltar el aire"
-          }
+          },
+          "lamina": "pal_tired"
         },
         {
           "id": "3_4.decembro.s3.cosy",

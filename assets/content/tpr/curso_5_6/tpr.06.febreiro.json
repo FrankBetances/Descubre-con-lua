@@ -113,7 +113,8 @@
             "gl": "Coller e poñer a máscara",
             "es": "Coger y ponerse la máscara"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_take_a_mask"
         },
         {
           "id": "5_6.febreiro.s1.walk-backwards",
@@ -768,7 +769,8 @@
             "gl": "Facer unha casa que cae",
             "es": "Hacer una casa que se cae"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_straw_house"
         },
         {
           "id": "5_6.febreiro.s4.brick-house",
@@ -873,7 +875,8 @@
             "gl": "Poñer as mans ao revés",
             "es": "Poner las manos del revés"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_upside_down"
         },
         {
           "id": "5_6.febreiro.s4.friendly-wolf",

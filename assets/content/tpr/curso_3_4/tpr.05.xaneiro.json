@@ -200,7 +200,8 @@
           "tprAction": {
             "gl": "Apertar os brazos contra o corpo",
             "es": "Apretar los brazos contra el cuerpo"
-          }
+          },
+          "lamina": "pal_tight"
         },
         {
           "id": "3_4.xaneiro.s1.put-on-your-hat",
@@ -729,7 +730,8 @@
           "tprAction": {
             "gl": "Cruzar un cinto de seguridade imaxinario polo peito",
             "es": "Cruzar un cinturón de seguridad imaginario por el pecho"
-          }
+          },
+          "lamina": "pal_seat_belt_on"
         },
         {
           "id": "3_4.xaneiro.s3.stop-look-and-listen",
@@ -773,7 +775,8 @@
           "tprAction": {
             "gl": "Deixarse caer amodo sobre un sofá imaxinario",
             "es": "Dejarse caer despacio sobre un sofá imaginario"
-          }
+          },
+          "lamina": "pal_sofa"
         },
         {
           "id": "3_4.xaneiro.s4.lamp",
@@ -796,7 +799,8 @@
           "tprAction": {
             "gl": "Subir chanzos imaxinarios levantando os xeonllos",
             "es": "Subir escalones imaginarios levantando las rodillas"
-          }
+          },
+          "lamina": "pal_stairs"
         },
         {
           "id": "3_4.xaneiro.s4.key",
@@ -903,7 +907,8 @@
           "tprAction": {
             "gl": "Aliñar xoguetes imaxinarios en fila",
             "es": "Alinear juguetes imaginarios en fila"
-          }
+          },
+          "lamina": "pal_tidy"
         },
         {
           "id": "3_4.xaneiro.s4.messy",
@@ -971,7 +976,8 @@
           "tprAction": {
             "gl": "Subir e baixar chanzos imaxinarios no sitio",
             "es": "Subir y bajar escalones imaginarios en el sitio"
-          }
+          },
+          "lamina": "pal_upstairs_and_downstairs"
         },
         {
           "id": "3_4.xaneiro.s4.on-the-sofa",

@@ -92,7 +92,8 @@
             "gl": "Facer unha torre coas mans",
             "es": "Hacer una torre con las manos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_town_hall"
         },
         {
           "id": "4_5.xaneiro.s1.follow-the-map",
@@ -922,7 +923,8 @@
             "gl": "Estirar a roupa",
             "es": "Estirar la ropa"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_uniformed"
         },
         {
           "id": "4_5.xaneiro.s4.early-rising",

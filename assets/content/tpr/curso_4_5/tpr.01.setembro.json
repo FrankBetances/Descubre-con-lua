@@ -43,7 +43,8 @@
             "gl": "Xuntar as mans no centro",
             "es": "Juntar las manos en el centro"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_team"
         },
         {
           "id": "4_5.setembro.s1.captain",
@@ -78,7 +79,8 @@
             "gl": "Pasar o pau a quen fala",
             "es": "Pasar el palo a quien habla"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_talking_stick"
         },
         {
           "id": "4_5.setembro.s1.classroom-job",
@@ -538,7 +540,8 @@
             "gl": "Coller un pano da caixa",
             "es": "Coger un pañuelo de la caja"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_tissue_box"
         },
         {
           "id": "4_5.setembro.s3.healthy-snack",

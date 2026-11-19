@@ -129,7 +129,8 @@
             "gl": "Engurrar un papel coa man",
             "es": "Estrujar un papel con la mano"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_scrunch"
         },
         {
           "id": "0_2.novembro.s1.discover",
@@ -589,7 +590,8 @@
             "gl": "Asubiar coma un paxaro",
             "es": "Silbar como un pájaro"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_songbird"
         },
         {
           "id": "0_2.novembro.s3.blow-on-it",
@@ -681,7 +683,8 @@
             "gl": "Abanar coa man coma o fume",
             "es": "Abanicar con la mano como el humo"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_smoky"
         },
         {
           "id": "0_2.novembro.s3.nutty",
@@ -796,7 +799,8 @@
             "gl": "Apertar a pelota de esponxa",
             "es": "Apretar la pelota de esponja"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_sponge_ball"
         },
         {
           "id": "0_2.novembro.s4.silk-scarf",
@@ -807,7 +811,8 @@
             "gl": "Deixar caer o pano sobre a man",
             "es": "Dejar caer el pañuelo sobre la mano"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_silk_scarf"
         },
         {
           "id": "0_2.novembro.s4.wooden-spoon",
@@ -902,7 +907,8 @@
             "gl": "Apertar algo brando e soltalo",
             "es": "Apretar algo blando y soltarlo"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_squishy"
         },
         {
           "id": "0_2.novembro.s4.wobbly-jelly",

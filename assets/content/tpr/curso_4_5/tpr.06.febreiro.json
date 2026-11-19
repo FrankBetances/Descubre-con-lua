@@ -67,7 +67,8 @@
             "gl": "Facer un círculo de luz coas mans",
             "es": "Hacer un círculo de luz con las manos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_spotlight"
         },
         {
           "id": "4_5.febreiro.s1.applause",

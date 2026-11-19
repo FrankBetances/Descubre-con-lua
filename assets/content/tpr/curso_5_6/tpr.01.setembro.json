@@ -91,7 +91,8 @@
             "gl": "Pasar o micrófono imaxinario",
             "es": "Pasar el micrófono imaginario"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_speaking_turn"
         },
         {
           "id": "5_6.setembro.s1.choose-together",
@@ -324,7 +325,8 @@
             "gl": "Xuntarse en círculo",
             "es": "Juntarse en círculo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_team_circle"
         },
         {
           "id": "5_6.setembro.s2.lead-the-way",
@@ -358,7 +360,8 @@
             "gl": "Xuntar dúas pezas",
             "es": "Juntar dos piezas"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_solve"
         },
         {
           "id": "5_6.setembro.s2.decide",
@@ -570,7 +573,8 @@
             "gl": "Pousar o dedo na fronte",
             "es": "Poner el dedo en la frente"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_think_hard"
         },
         {
           "id": "5_6.setembro.s3.try-again",
@@ -771,7 +775,8 @@
             "gl": "Cambiar un obxecto cun amigo",
             "es": "Cambiar un objeto con un amigo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_swap"
         },
         {
           "id": "5_6.setembro.s4.class-charter",
@@ -848,7 +853,8 @@
             "gl": "Premer un botón imaxinario",
             "es": "Pulsar un botón imaginario"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_set_a_timer"
         },
         {
           "id": "5_6.setembro.s4.agreed",

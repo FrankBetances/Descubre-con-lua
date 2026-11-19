@@ -177,7 +177,8 @@
             "gl": "Pousar a man na area morna",
             "es": "Posar la mano en la arena templada"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_warm_sand"
         },
         {
           "id": "0_2.xuno.s1.sparkling-sea",
@@ -413,7 +414,8 @@
             "gl": "Esvarar as mans unha sobre outra",
             "es": "Resbalar las manos una sobre otra"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_slippery_fish"
         },
         {
           "id": "0_2.xuno.s2.swishy",
@@ -553,7 +555,8 @@
             "gl": "Poñerse á sombra",
             "es": "Ponerse a la sombra"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_shade"
         },
         {
           "id": "0_2.xuno.s3.straw-hat",
@@ -564,7 +567,8 @@
             "gl": "Poñer o chapeu de palla",
             "es": "Poner el sombrero de paja"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_straw_hat"
         },
         {
           "id": "0_2.xuno.s3.fan",

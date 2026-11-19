@@ -5,7 +5,7 @@ auditadas manualmente contra su palabra (`en`/`es`) y su gesto (`tprAction`) y
 se dejan **sin lámina** para no inventar contenido ni usar pictogramas abstractos
 o engañosos (R∞.3).
 
-Total piezas auditadas sin base visual hasta ahora: **694**.
+Total piezas auditadas sin base visual hasta ahora: **801**.
 
 | Tanda | Pieza (`en`) | `es` | Categoría | Gesto TPR | Motivo sin lámina |
 | --- | --- | --- | --- | --- | --- |
@@ -530,105 +530,212 @@ Total piezas auditadas sin base visual hasta ahora: **694**.
 | P2.85 | Scene | Escena | noun | Abrir los brazos como un marco | Término metaliterario abstracto («Escena»); abrir los brazos como un marco es ambiguo sin texto. |
 | P2.93 | Scientific | Científico | adjective | Ajustar las gafas | Adjetivo abstracto (`científico`) ambiguo frente a gafas o lupa. |
 | P2.93 | Scratchy | Rasposo | adjective | Pasar la mano por la corteza rasposa | Adjetivo táctil (`rasposo`) difícil de distinguir visualmente de corteza o árbol. |
+| P2.94 | Script | Guion | noun | Leer un papel imaginario | Objeto textual teatral (`guion`) imposible de mostrar sin texto ni páginas legibles. |
+| P2.94 | Seafaring | Marinero | adjective | Hacer el saludo marinero | Adjetivo abstracto (`marinero`) que exige saludo o rol no unívoco. |
+| P2.94 | Seagrass is a home for little fish | La pradera es la casa de los pececitos | complex | Hacer un tejado con las manos | Frase ecológica compuesta (`la pradera es la casa de los pececitos`) dependiente del texto. |
+| P2.94 | Season | Estación | noun | Hacer un círculo con la mano | Concepto cíclico abstracto (`estación`) imposible en una sola imagen sin texto. |
 | P2.89 | Seasonal | De temporada | adjective | Señalar el calendario | Adjetivo clasificatorio temporal abstracto («De temporada»). |
+| P2.94 | Seat belts on, please | Los cinturones, por favor | phrase | Ponerse el cinturón | Fórmula verbal de cortesía duplicada de `seat belt on`. |
+| P2.94 | Seaworthy | Listo para el mar | adjective | Levantar el pulgar | Adjetivo evaluativo abstracto (`listo para el mar`) sin rasgo visual propio. |
 | P2.89 | See both sides | Ver las dos partes | verb | Mirar a un lado y al otro | Expresión idiomática cognitiva («Ver las dos partes»). |
 | P2.85 | See you in Primary! | ¡Nos vemos en Primaria! | phrase | Saludar a todos | Despedida verbal escolar («¡Nos vemos en Primaria!»). |
 | P2.85 | See you in September | Nos vemos en septiembre | complex | Contar con los dedos y decir adiós hasta la vuelta | Despedida temporal con nombre de mes («Nos vemos en septiembre»); prohibido texto/meses. |
 | P2.85 | See you next year! | ¡Nos vemos el año que viene! | phrase | Saludar a todos | Despedida temporal («¡Nos vemos el año que viene!»). |
 | P2.85 | See you soon! | ¡Hasta pronto! | phrase | Decir adiós y luego señalar el calendario | Fórmula conversacional temporal («¡Hasta pronto!»). |
+| P2.94 | Send me a postcard! | ¡Mándame una postal! | phrase | Hacer que se escribe | Petición verbal duplicada de `send a postcard`. |
 | P2.89 | Sense | Sentido | noun | Tocar ojos, orejas, nariz, boca y mano | Rechazado explícitamente en P2.81 («sense…»); categoría general de los cinco sentidos. |
 | P2.85 | Setting | Lugar de la historia | noun | Abrir los brazos como un escenario | Término narrativo abstracto («Lugar de la historia»). |
+| P2.94 | Settle | Calmarse | verb | Pasar la mano por la espalda en círculos | Estado interno de calma (`calmarse`) sin objeto visual unívoco. |
+| P2.94 | Shake hands kindly | Darse la mano con cariño | verb | Darse la mano sonriendo | Matiz adverbial duplicado de `shake hands`. |
+| P2.94 | Shake on it | Estrecharse la mano | verb | Estrecharse la mano con el compañero | Modismo de acuerdo (`estrecharse la mano`) duplicado de `shake hands`. |
 | P2.86 | Shake the tree gently! | ¡Sacude el árbol despacio! | phrase | Sacudir suave | Variante adverbial («¡Sacude el árbol despacio!»); redundante con «shake the tree» sin texto. |
+| P2.94 | Share blocks | Compartir bloques | verb | Dar la mitad de los bloques | Consigna específica duplicada conceptualmente de `share`. |
+| P2.94 | Share equally | Repartir por igual | verb | Dar lo mismo a cada uno | Concepto matemático/reparto (`repartir por igual`) duplicado de `share`. |
 | P2.89 | Share memories | Compartir recuerdos | verb | Hablar mirando a un amigo | Verbo conversacional abstracto («Compartir recuerdos»). |
+| P2.94 | Share out | Repartir | verb | Repartir castañas entre todos | Verbo fásico genérico (`repartir`) duplicado de `share`. |
+| P2.94 | Share the fruit | Repartir la fruta | verb | Dar una fruta a cada uno | Variante verbal duplicada de `share`. |
+| P2.94 | Share toys | Compartir juguetes | verb | Dar un juguete | Variante verbal duplicada de `share`. |
+| P2.94 | Sharing | Que comparte | adjective | Partir la plastilina en dos | Adjetivo participial duplicado de `share`. |
 | P2.89 | Sharp-eyed | De vista aguda | adjective | Mirar muy atento | Adjetivo figurado abstracto («De vista aguda»). |
+| P2.94 | Shortest day | El día más corto | adjective | Juntar las manos | Concepto astronómico/temporal (`el día más corto`) imposible sin texto ni diagrama. |
 | P2.85 | Shout for joy | Gritar de alegría | verb | Levantar los brazos y gritar | Exclamación sonora sin objeto («Gritar de alegría»); brazos arriba idénticos a los demás. |
 | P2.85 | Shout hooray | Gritar hurra | verb | Levantar los brazos y gritar | Exclamación verbal («Gritar hurra»); indistinguible sin texto. |
+| P2.94 | Show me the heavy side | Enséñame el lado pesado | phrase | Bajar un brazo | Petición verbal comparativa (`enséñame el lado pesado`). |
 | P2.84 | Show you care | Mostrar que te importa | verb | Abrazar suave | Concepto relacional abstracto («Mostrar que te importa»). |
+| P2.94 | Sign | Firmar | verb | Escribir el nombre en el aire | Acción dependiente de escritura alfabética (`firmar`) prohibida en láminas. |
 | P2.85 | Signal | Señal | noun | Levantar la mano como una señal | Sustantivo genérico abstracto («Señal»); demasiado ambiguo frente a gestos concretos. |
+| P2.94 | Signature | Firma | noun | Firmar en el aire | Sustantivo alfabético (`firma`) prohibido sin texto. |
+| P2.94 | Silky | Sedoso | adjective | Pasar un pañuelo de seda por la mano | Adjetivo táctil (`sedoso`) indistinguible visualmente de `silk scarf`. |
 | P2.82 | Silly story | Historia disparatada | adjective | Reír y encoger los hombros | Concepto abstracto («Historia disparatada»). |
 | P2.88 | Simon says touch your nose | Simón dice: tócate la nariz | complex | Tocar la nariz solo si lo dice Simón | Consigna verbal condicional («Simón dice: tócate la nariz»); sin texto es igual a «tocar la nariz». |
 | P2.89 | Sing in tune | Cantar afinado | verb | Cantar mirando al director | Cualidad acústica invisible del canto («Cantar afinado»). |
+| P2.94 | Sing softer | Cantar más suave | verb | Bajar la voz | Modulación auditiva comparativa (`cantar más suave`) imposible sin referencia sonora. |
+| P2.94 | Sit with me | Siéntate conmigo | phrase | Dar palmaditas en el suelo al lado | Invitación conversacional (`siéntate conmigo`) ambigua respecto a sentarse. |
 | P2.88 | Size | Tamaño | noun | Abrir las manos a distinto tamaño | Concepto dimensional abstracto («Tamaño»); requiere etiqueta escrita de medida. |
+| P2.94 | Sleek | Liso y rápido | adjective | Pasar la mano plana | Adjetivo abstracto (`liso y rápido`) sin referente único infantil. |
 | P2.90 | Slow down | Ir más despacio | verb | Mover los brazos cada vez más despacio | Gradación temporal relativa sin objeto propio distinguible de parar o caminar. |
+| P2.94 | Slow down your breathing | Respirar más despacio | verb | Inspirar y espirar muy despacio | Instrucción gradual (`respirar más despacio`) duplicada de `breathe`. |
+| P2.94 | Slowly, slowly | Despacito, despacito | complex | Hacer cualquier movimiento muy, muy despacio | Adverbio de modo (`despacito`) dependiente de cualquier acción previa. |
 | P2.85 | Sluggish | Lentísimo | adjective | Mover la mano muy despacio | Adjetivo abstracto de ritmo («Lentísimo»); gesto vago de mano sin referente propio. |
 | P2.90 | Small and quick | Pequeño y rápido | adjective | Mover los dedos rápido | Pareja de adjetivos abstractos sin referente visual único. |
+| P2.94 | Smell it | Oler | verb | Acercar la fruta a la nariz | Orden genérica duplicada de `smell the flower`. |
 | P2.86 | Smile of thanks | Sonrisa de agradecimiento | noun | Sonreír a alguien | Matiz social abstracto («Sonrisa de agradecimiento»); indistinguible de otras sonrisas sin texto. |
+| P2.94 | Sniff a flower | Oler una flor | verb | Acercar la flor a la nariz | Duplicada directa de `smell the flower`. |
+| P2.94 | Snug | Arropadito | adjective | Arropar al bebé con la manta | Sensación térmica/afectiva (`arropadito`) duplicada de `under the quilt`. |
 | P2.85 | Social | Sociable | adjective | Saludar a todos | Adjetivo relacional abstracto («Sociable»). |
 | P2.90 | Soft and slow | Suave y despacio | complex | Mover las manos muy despacio | Pareja de adjetivos sensoriales/temporales sin objeto propio. |
+| P2.94 | Soft and sweet | Blando y dulce | adjective | Chafar un trozo de pera | Doble adjetivo sensorial (`blando y dulce`) imposible de representar sin texto. |
 | P2.87 | Soft voice | Voz suave | noun | Hablar muy suave | Cualidad acústica invisible («Voz suave»). |
+| P2.94 | Soft-furred | De pelo suave | adjective | Pasar la mano por el pelo del peluche | Cualidad táctil (`de pelo suave`) no distinguible de un animal normal. |
+| P2.94 | Softer, please | Más suave, por favor | phrase | Bajar las manos | Petición verbal de volumen (`más suave, por favor`). |
+| P2.94 | Solstice | Solsticio | noun | Estirar los brazos al máximo | Fenómeno astronómico estacional (`solsticio`) abstracto para 0-7 sin texto. |
 | P2.87 | Solution | Solución | noun | Chasquear los dedos | Concepto lógico abstracto («Solución»); sin texto se confunde con «idea». |
 | P2.84 | Solved | Resuelto | adjective | Dar palmas | Estado cognitivo abstracto («Resuelto»); aplauso genérico ambiguo sin texto. |
+| P2.94 | Sort by number | Ordenar por número | verb | Poner en fila de menos a más | Regla numérica (`ordenar por número`) prohibida sin dígitos. |
+| P2.94 | Sorted | Clasificado | adjective | Juntar ceras del mismo color | Participio duplicado de `sort`. |
+| P2.94 | Sourer | Más ácido | adjective | Arrugar más la cara | Grado comparativo (`más ácido`) sin escala visual frente a `sour`. |
 | P2.89 | Special | Especial | adjective | Señalar a cada criatura con una sonrisa | Adjetivo valorativo abstracto («Especial»). |
 | P2.87 | Speech | Discurso | noun | Hablar delante de todos | Concepto lingüístico abstracto («Discurso»); sin texto se confunde con «talk» o «give a speech». |
 | P2.90 | Speedy | Veloz | adjective | Mover los pies muy rápido | Adjetivo de rapidez sin objeto único (reduntante con rápido/correr/coche). |
+| P2.94 | Spit out | Escupir | verb | Escupir en el lavabo | Duplicada directa de `spit in the sink`. |
+| P2.94 | Sporty | Deportista | adjective | Hacer un saludo deportivo | Adjetivo abstracto (`deportista`) ambiguo frente a un deporte concreto. |
 | P2.89 | Spot | Descubrir | verb | Señalar de repente | Verbo perceptivo abstracto y homónimo visual («Descubrir / punto»). |
 | P2.89 | Spot the mistake | Encontrar el error | verb | Señalar y decir «aquí» | Consigna cognitiva de revisión («Encontrar el error»). |
+| P2.94 | Squawk | Graznar | verb | Hacer «cuac» fuerte | Onomatopeya duplicada de `squawk like a seagull`. |
 | P2.87 | Squeaky voice | Voz aguda | adjective | Hablar muy agudo | Cualidad acústica invisible («Voz aguda»). |
+| P2.94 | Squeezy | Estrujable | adjective | Apretar la pelota blanda | Adjetivo táctil duplicado de `squeeze` / `squishy`. |
+| P2.94 | Stack up | Amontonar | verb | Amontonar bloques bien alto | Duplicada directa de `stack`. |
+| P2.94 | Stackable | Apilable | adjective | Apilar dos piezas | Adjetivo potencial (`apilable`) duplicado de `stack`. |
 | P2.89 | Stage directions | Indicaciones de escena | noun | Señalar izquierda y derecha | Indicaciones escénicas textuales («Indicaciones de escena»). |
+| P2.94 | Staircase | Escalera | noun | Subir la mano escalón a escalón | Duplicada directa de `stairs`. |
+| P2.94 | Stand tall and proud | Ponerse erguido y orgulloso | verb | Estirarse recto | Frase postural duplicada de `stand tall`. |
 | P2.89 | Stars are further away than the Moon | Las estrellas están más lejos que la Luna | complex | Señalar cerca y lejos | Oración comparativa astronómica larga («Las estrellas están más lejos que la Luna»). |
 | P2.86 | Stop right there! | ¡Para ahí! | phrase | Parar y quedarse quieto | Orden verbal de alto («¡Para ahí!»); redundante sin texto. |
 | P2.86 | Stop spinning! | ¡Deja de girar! | phrase | Parar de golpe | Orden verbal de parada («¡Deja de girar!»). |
+| P2.94 | Street sign | Placa de la calle | noun | Leer una placa imaginaria | Placa urbana dependiente de texto legible de calle. |
+| P2.94 | Stretch as high as you can | Estírate tan alto como puedas | complex | Estirarse al máximo | Variante verbal duplicada de `stretch out your arms` / `stand tall`. |
+| P2.94 | Strong | Fuerte | adjective | Doblar los brazos mostrando fuerza | Adjetivo abstracto (`fuerte`) ambiguo frente a `flex` o levantamiento. |
+| P2.94 | Strongest house | La casa más fuerte | adjective | Poner los brazos firmes | Superlativo narrativo de cuento (`la casa más fuerte`) dependiente de texto. |
 | P2.86 | Sudden | Repentino | adjective | Parar de golpe | Adjetivo temporal abstracto («Repentino»). |
 | P2.88 | Suggest | Sugerir | verb | Abrir la mano hacia delante | Verbo comunicativo abstracto («Sugerir»). |
+| P2.94 | Summery | Veraniego | adjective | Abanicarse sonriendo | Adjetivo estacional (`veraniego`) ambiguo frente a `sunny` / `sunshine`. |
+| P2.94 | Supportive | Que apoya | adjective | Poner la mano en el hombro | Rasgo socioemocional abstracto (`que apoya`). |
 | P2.88 | Surprise ending | Final sorprendente | adjective | Abrir la boca | Concepto literario abstracto («Final sorprendente»). |
 | P2.88 | Surprising | Sorprendente | adjective | Abrir mucho los ojos | Adjetivo abstracto («Sorprendente»); redundante con «surprised». |
 | P2.83 | Sustainable | Sostenible | adjective | Poner las manos en equilibrio | Concepto abstracto («Sostenible»); gesto de manos en equilibrio ambiguo sin texto. |
+| P2.94 | Swap roles | Cambiar los papeles | verb | Cambiar de sitio con un amigo | Regla teatral abstracta (`cambiar los papeles`) duplicada de `swap`. |
+| P2.94 | Swap toys | Intercambiar juguetes | verb | Cambiar un juguete | Variante verbal duplicada de `swap`. |
 | P2.90 | Swirly | En remolino | adjective | Hacer un remolino con el dedo | Adjetivo derivado idéntico visualmente al verbo `swirl` ya cubierto. |
+| P2.94 | Switch | Cambiar de golpe | verb | Cambiar de dirección | Verbo genérico polisémico (`cambiar de golpe`) sin referente único. |
 | P2.89 | Symbol | Símbolo | noun | Dibujar un círculo y señalarlo | Concepto semiótico abstracto («Símbolo»). |
+| P2.94 | Take a turn | Tomar el turno | verb | Coger el palo de la palabra | Regla de turno grupal duplicada de `speaking turn`. |
+| P2.94 | Take one away | Quitar uno | verb | Retirar un bloque | Operación verbal (`quitar uno`) duplicada de `take away`. |
+| P2.94 | Take only photos | Llévate solo fotos | phrase | Hacer una foto | Lema ecológico (`llévate solo fotos`) imposible sin texto. |
+| P2.94 | Take photos | Hacer fotos | verb | Pulsar un botón imaginario | Acción duplicada conceptualmente de cámara / `photo`. |
+| P2.94 | Take turns directing | Dirigir por turnos | verb | Pasar la claqueta | Consigna de juego de rol (`dirigir por turnos`). |
+| P2.94 | Take turns talking | Hablar por turnos | verb | Pasar el palo de la palabra | Duplicada directa de `speaking turn`. |
 | P2.87 | Talk it through | Hablarlo | verb | Hablar con un amigo | Verbo conversacional abstracto («Hablarlo»); indistinguible de «dialogue» sin texto. |
+| P2.94 | Tangy | Ácido | adjective | Poner cara de ácido | Sensación gustativa (`ácido`) sin objeto propio distinto de limón. |
+| P2.94 | Tap, tap, tap | Toc, toc, toc | phrase | Dar tres golpecitos | Onomatopeya rítmica repetida duplicada de `tap the rhythm`. |
+| P2.94 | Tapping game | Juego de golpecitos | noun | Dar golpecitos por turnos | Nombre de dinámica auditiva grupal (`juego de golpecitos`). |
+| P2.94 | Team leader | Jefe de equipo | noun | Ponerse una banda imaginaria | Rol organizativo abstracto (`jefe de equipo`) ambiguo. |
+| P2.94 | Team, huddle up! | ¡Equipo, en corro! | phrase | Juntarse en círculo | Consigna grupal duplicada de `team circle`. |
+| P2.94 | Teamwork | Trabajo en equipo | noun | Juntar las manos en el centro | Concepto social abstracto (`trabajo en equipo`) duplicado de `team` / `together`. |
 | P2.90 | Tell a dream | Contar un sueño | verb | Mover las manos recordando | Acción narrativa verbal de contar un sueño sin imagen objetiva inequívoca. |
 | P2.90 | Tell a story | Contar una historia | verb | Mover las manos explicando | Acción verbal de narrar indistinguible de leer libro sin texto. |
 | P2.87 | Tell in order | Contar en orden | verb | Levantar uno, dos, tres dedos | Consigna verbal de orden («Contar en orden»). |
 | P2.83 | Ten, nine, eight... blast off! | ¡Diez, nueve, ocho... despegamos! | phrase | Contar y saltar | Consigna verbal de cuenta atrás («¡Diez, nueve, ocho...!»); depende de números hablados. |
 | P2.84 | Tender | Tierno | adjective | Besar la mano con ternura | Adjetivo emocional abstracto («Tierno»). |
+| P2.94 | Test an idea | Probar una idea | verb | Probar un gesto | Verbo cognitivo abstracto (`probar una idea`). |
 | P2.84 | Thank the teachers | Agradecer a las maestras | verb | Poner la mano en el pecho | Acto de habla de agradecimiento («Agradecer a las maestras»). |
+| P2.94 | Thank you for helping me | Gracias por ayudarme | phrase | Juntar las manos | Fórmula verbal de agradecimiento (`gracias por ayudarme`). |
 | P2.86 | Thank-you note | Nota de agradecimiento | noun | Entregar un papel | Tarjetita social («Nota de agradecimiento»); sin texto es indistinguible de cualquier postal o carta. |
 | P2.84 | Thankful | Agradecido | adjective | Poner la mano en el pecho | Sentimiento abstracto («Agradecido»). |
 | P2.88 | That's OK | No pasa nada | phrase | Sonreír y abrir las manos | Fórmula consoladora verbal («No pasa nada»). |
+| P2.94 | The bag is heavier with potatoes | La bolsa pesa más con patatas | complex | Bajar el brazo como si pesara | Oración comparativa compleja dependiente de texto. |
+| P2.94 | The brick house is stronger than the straw house | La casa de ladrillo es más fuerte que la de paja | complex | Manos firmes y luego caer | Oración comparativa de cuento dependiente de texto. |
+| P2.94 | The chestnut is heavier than the leaf | La castaña pesa más que la hoja | complex | Bajar una mano y subir la otra | Oración comparativa compleja de peso dependiente de texto. |
 | P2.88 | The end | Fin | phrase | Cerrar las manos como un libro que se cierra | Fórmula textual de cierre («Fin»). |
+| P2.94 | The gull flies higher than the cormorant | La gaviota vuela más alto que el cormorán | complex | Volar alto y bajo | Oración comparativa espacial de dos aves dependiente de texto. |
 | P2.83 | The pattern repeats again and again | El patrón se repite una y otra vez | complex | Girar la mano en círculos | Regla abstracta de repetición sin objeto único. |
+| P2.94 | The stone sinks, but the cork floats | La piedra se hunde, pero el corcho flota | complex | Bajar una mano y subir la otra | Oración contrastiva compleja dependiente de texto. |
 | P2.88 | The warmer it gets, the faster it cooks | Cuanto más caliente, más rápido se hace | complex | Frotar las manos rápido | Ley proporcional verbal («Cuanto más caliente, más rápido se hace»). |
 | P2.85 | Theatrical | Teatral | adjective | Abrir los brazos exagerando | Adjetivo estilístico abstracto («Teatral»). |
 | P2.89 | There it is! | ¡Ahí está! | phrase | Señalar la sonrisa del bebé | Exclamación conversacional deíctica («¡Ahí está!»). |
 | P2.84 | They lived happily ever after | Vivieron felices para siempre | phrase | Abrazarse | Fórmula narrativa literaria («Vivieron felices para siempre»). |
 | P2.90 | Thick | Espeso, espesa | adjective | Remover con fuerza como en una papilla espesa | Consistencia espesa de alimento difícil de distinguir de crema/cuenco sin contexto. |
+| P2.94 | This is for you | Esto es para ti | phrase | Extender una postal | Frase deíctica verbal (`esto es para ti`) duplicada de entrega. |
+| P2.94 | This little piggy | Este cerdito | phrase | Coger un dedo del pie tras otro | Retahíla tradicional infantil dependiente de la letra. |
 | P2.89 | This tree is older than our grandparents | Este árbol es más viejo que nuestros abuelos | complex | Señalar y comparar | Oración comparativa de edad histórica («Este árbol es más viejo que nuestros abuelos»). |
 | P2.88 | Thoughtful | Atento | adjective | Tocar la cabeza y el pecho | Rasgo personal abstracto («Atento»). |
 | P2.88 | Thoughtful idea | Idea pensada | adjective | Tocar la frente despacio | Frase abstracta («Idea pensada»); indistinguible de «idea». |
 | P2.87 | Three plus two makes five | Tres más dos son cinco | complex | Enseñar tres y dos dedos | Operación aritmética verbal («Tres más dos son cinco»); requiere cifras y signos. |
 | P2.83 | Three, two, one, happy new year! | ¡Tres, dos, uno, feliz año nuevo! | phrase | Contar y saltar | Consigna verbal de cuenta atrás («¡Tres, dos, uno...!»); depende de números hablados. |
+| P2.94 | Thumbs up for a clean beach! | ¡Pulgar arriba por la playa limpia! | phrase | Levantar el pulgar | Lema verbal duplicado de `thumbs up` + playa. |
+| P2.94 | Thumbs up for a clean sea! | ¡Pulgar arriba por el mar limpio! | phrase | Levantar el pulgar | Lema verbal duplicado de `thumbs up` + mar. |
+| P2.94 | Ticklish feet | Pies cosquillosos | adjective | Hacer cosquillas en los pies | Variante duplicada de `tickle toes`. |
+| P2.94 | Tickly | Que hace cosquillas | adjective | Hacerse cosquillas suaves en el brazo | Adjetivo sensorial (`que hace cosquillas`) sin referente autónomo. |
+| P2.94 | Tied | Empatados | adjective | Juntar las dos manos | Resultado deportivo abstracto (`empatados`) ambiguo sin marcador. |
+| P2.94 | Time for a drink | Hora de beber | phrase | Acercar la botella | Frase horaria verbal (`hora de beber`) duplicada de beber. |
 | P2.89 | Timetable | Horario | noun | Señalar horas en un reloj | Horario numérico («Horario»); prohibido dibujar cifras de horas o texto. |
 | P2.89 | Timetable board | Horario de la clase | noun | Señalar horas | Tablero de horario escolar con letras y horas («Horario de la clase»). |
+| P2.94 | Toasty | Calentito | adjective | Acercar las manos al calorcito | Sensación térmica interna (`calentito`) ambigua frente a fuego o sol. |
 | P2.89 | Today | Hoy | noun | Señalar el suelo | Adverbio temporal deíctico («Hoy»); sin calendario con texto resulta ambiguo. |
 | P2.84 | Together again | Juntos otra vez | phrase | Abrazarse de nuevo | Expresión relacional temporal («Juntos otra vez»). |
+| P2.94 | Together we are stronger | Juntos somos más fuertes | complex | Juntar las manos y levantarlas | Lema abstracto (`juntos somos más fuertes`). |
 | P2.89 | Tomorrow | Mañana | noun | Señalar hacia delante | Adverbio temporal deíctico («Mañana»). |
+| P2.94 | Toot, toot! | ¡Tuu, tuu! | phrase | Hacer la sirena del barco | Onomatopeya sonora duplicada de `toot the horn`. |
 | P2.87 | Total | Total | noun | Juntar todos los dedos | Concepto matemático abstracto («Total»). |
+| P2.94 | Trace | Trazar | verb | Seguir con un dedo el borde de una forma | Acción fina ambigua sin contorno definido; duplicada de `trace a spiral`. |
+| P2.94 | Trace around | Repasar el borde | verb | Seguir el borde con el dedo | Acción duplicada de `trace`. |
+| P2.94 | Tradition | Tradición | noun | Juntar las manos en círculo | Concepto cultural abstracto (`tradición`) sin icono único. |
+| P2.94 | Traditional | Tradicional | adjective | Bailar como antes | Adjetivo cultural abstracto (`tradicional`). |
+| P2.94 | Transfer | Hacer transbordo | verb | Cambiar de un sitio a otro | Concepto de transporte abstracto (`hacer transbordo`). |
 | P2.84 | Treasured | Querido | adjective | Abrazar la caja de los recuerdos | Adjetivo afectivo abstracto («Querido»). |
+| P2.94 | Tricky | Complicado | adjective | Rascarse la cabeza | Adjetivo evaluativo abstracto (`complicado`) ambiguo. |
+| P2.94 | Trustworthy | De confianza | adjective | Poner la mano en el hombro | Valor moral abstracto (`de confianza`) imposible de ilustrar literal. |
+| P2.94 | Try again | Intentarlo de nuevo | verb | Volver al principio | Consigna motivacional temporal (`intentarlo de nuevo`). |
 | P2.87 | Try it | Probar | verb | Acercar un trocito a la boca | Petición verbal genérica («Probar»); sin objeto fijo es idéntica a «taste a bit». |
+| P2.94 | Try your best | Hacerlo lo mejor posible | verb | Apretar los puños con ánimo | Expresión motivacional abstracta (`hacerlo lo mejor posible`). |
 | P2.82 | Tune in | Prestar atención | verb | Llevar la mano a la oreja | Expresión idiomática abstracta («Prestar atención»). |
+| P2.94 | Tuneful | Melodioso | adjective | Tararear bonito | Cualidad sonora (`melodioso`) sin signo visual autónomo. |
 | P2.83 | Turn it around and try again | Dale la vuelta y prueba otra vez | complex | Girar y volver a probar | Consigna procesal abstracta («Dale la vuelta y prueba otra vez»). |
+| P2.94 | Turn off lights | Apagar las luces | verb | Pulsar un interruptor | Duplicada directa de `switch off lights`. |
+| P2.94 | Turn off the light when you leave | Apaga la luz cuando salgas | complex | Pulsar e irse | Oración compleja de hábito duplicada de `switch off lights`. |
 | P2.89 | Turn order | Orden de turnos | noun | Señalar quién va primero | Regla organizativa abstracta («Orden de turnos»). |
+| P2.94 | Turn out | Desmoldar | verb | Volcar el molde y levantarlo | Acción de cocina específica (`desmoldar`) poco clara sin secuencia. |
 | P2.83 | Two, four, six, eight | Dos, cuatro, seis, ocho | phrase | Saltar contando | Serie numérica hablada («Dos, cuatro, seis, ocho»); no conviene meter texto/dígitos en la lámina. |
+| P2.94 | Unanimous | Por unanimidad | adjective | Levantar todos la mano | Concepto de votación abstracto (`por unanimidad`) sin contexto textual. |
 | P2.82 | Understanding | Comprensivo | adjective | Asentir despacio | Adjetivo/sustantivo abstracto («Comprensivo»). |
 | P2.84 | Unforgettable | Inolvidable | adjective | Poner las manos en el pecho | Adjetivo temporal/emocional abstracto («Inolvidable»). |
 | P2.83 | Unstoppable | Imparable | adjective | Correr en el sitio | Adjetivo abstracto («Imparable»). |
+| P2.94 | Up the hill and down again | Monte arriba y otra vez abajo | complex | Subir y bajar con las manos | Duplicada directa de `up the hill and down`. |
+| P2.94 | Up you come! | ¡Arriba! | phrase | Levantar al bebé del suelo | Exclamación verbal afectiva (`¡arriba!`) sin gesto unívoco. |
 | P2.82 | Upright posture | Postura recta | adjective | Sentarse recto | Duplicado exacto de «posture» / «upright». |
+| P2.94 | Useful | Útil | adjective | Levantar una herramienta | Adjetivo abstracto de utilidad (`útil`) sin referente único. |
 | P2.86 | Useful helper | Ayudante útil | adjective | Llevar una caja | Epíteto valorativo («Ayudante útil»); redundante con «helpful» y «cooperate». |
+| P2.94 | Vegetables make us strong | Las verduras nos hacen fuertes | complex | Poner los brazos fuertes | Oración nutricional compleja dependiente del mensaje verbal. |
 | P2.84 | Verse | Verso | noun | Marcar el ritmo de un verso | Concepto textual/poético («Verso»); ya señalado en P2.81 sin base visual propia. |
 | P2.88 | Vigo was small, but now it is big | Vigo era pequeño, pero ahora es grande | complex | Juntar las manos y abrirlas | Oración histórica comparativa («Vigo era pequeño, pero ahora es grande»). |
 | P2.84 | Visit | Visitar | verb | Caminar y mirar alrededor | Verbo social genérico («Visitar»); sin acción u objeto único distinguible sin texto. |
 | P2.88 | Vivid | Vivo | adjective | Abrir los ojos mucho | Adjetivo sensorial abstracto («Vivo»). |
 | P2.87 | Voice | Voz | noun | Hablar con una voz distinta | Fenómeno acústico invisible («Voz»); carece de imagen única no textual. |
 | P2.85 | Volunteer | Voluntario | noun | Levantar la mano para ayudar | Rol social abstracto («Voluntario»); gesto idéntico a levantar la mano. |
+| P2.94 | Waddling | Bamboleante | adjective | Bambolearse como un pingüino | Adjetivo duplicado de `waddle along`. |
 | P2.83 | Walking is better than driving for short trips | Caminar es mejor que conducir para ir cerca | complex | Caminar y sonreír | Juicio comparativo de movilidad imposible de expresar fielmente sin texto. |
 | P2.84 | Warm-hearted | De buen corazón | adjective | Abrazarse a sí mismo | Adjetivo moral abstracto («De buen corazón»). |
 | P2.90 | Warm-up exercise | Calentamiento | noun | Mover los brazos en círculos | Duplicado directo de `warm up your body` en el mismo grupo `move`. |
 | P2.88 | Was Vigo always big? | ¿Vigo siempre fue grande? | phrase | Abrir y cerrar las manos | Pregunta histórica verbal («¿Vigo siempre fue grande?»). |
 | P2.86 | Wasteful | Que desperdicia | adjective | Dejar caer agua y parar | Adjetivo moral abstracto («Que desperdicia»); no se distingue claramente de un grifo abierto o salpicar. |
+| P2.94 | Water first, then soap | Primero agua, luego jabón | complex | Hacer los dos gestos en orden | Secuencia instruccional en dos tiempos dependiente del texto. |
 | P2.85 | Wave to families | Saludar a las familias | verb | Saludar al público | Acción redundante con «hand wave» y «proud parents» sin marca propia. |
+| P2.94 | We can both be right | Podemos tener razón los dos | complex | Darse la mano | Enunciado dialogado abstracto (`podemos tener razón los dos`). |
 | P2.85 | We did it! | ¡Lo conseguimos! | phrase | Levantar los brazos todos | Exclamación colectiva genérica («¡Lo conseguimos!»); sin marca visual distinta de «win» o «celebrate». |
+| P2.94 | We did it together | Lo hicimos juntos | complex | Juntar las manos y levantarlas | Exclamación de logro grupal duplicada de `together`. |
 | P2.84 | We found it! | ¡Lo encontramos! | phrase | Dar palmas | Exclamación genérica («¡Lo encontramos!»); aplauso ambiguo sin objeto encontrado. |
+| P2.94 | We have grown so much in five years | Hemos crecido mucho en cinco años | complex | Estirarse hasta arriba | Oración temporal autobiográfica (`en cinco años`) imposible sin texto. |
 | P2.82 | We listen because we care | Escuchamos porque nos importa | complex | Llevar la mano a la oreja y al pecho | Frase moral abstracta. |
+| P2.94 | We solved it together! | ¡Lo resolvimos juntos! | phrase | Chocar las manos | Exclamación de logro grupal duplicada de `solve` / `together`. |
 | P2.83 | We walk on the path so the plants can grow | Caminamos por el camino para que crezcan las plantas | complex | Caminar por la línea | Oración causal normativa demasiado larga para un pictograma sin texto. |
 | P2.87 | Week | Semana | noun | Contar siete dedos | Concepto temporal abstracto («Semana»); sin nombres de días se confunde con calendario. |
 | P2.85 | Welcome back | De vuelta | adjective | Abrir los brazos contentos | Fórmula social temporal («De vuelta»); indiferenciable de «welcome» sin texto. |
