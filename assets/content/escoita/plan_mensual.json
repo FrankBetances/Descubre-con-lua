@@ -1,0 +1,4166 @@
+{
+  "version": 1,
+  "_doc": "Plan mensual de xogos de escoita e expansión semántica (40 pezas: 2-3, 3-4, 4-5 e 5-6; meses 1-10). O-20261119-8 e O-20261118-3.",
+  "piezas": [
+    {
+      "curso": "curso_2_3",
+      "mes": 1,
+      "fuente": "nueva",
+      "par": {
+        "a": {
+          "en": "boat",
+          "gl": "barco",
+          "es": "barco",
+          "lamina": "pal_boat"
+        },
+        "b": {
+          "en": "boot",
+          "gl": "bota",
+          "es": "bota",
+          "lamina": "pal_boot"
+        },
+        "fonema": "/oʊ/ → /u/",
+        "nota": {
+          "gl": "«Boat» soa coa vogal redondeada que cambia («ou»); «boot» mantén un «u» longo e pechado.",
+          "es": "«Boat» suena con la vocal redondeada que cambia («ou»); «boot» mantiene una «u» larga y cerrada."
+        },
+        "mision_acerto": {
+          "gl": "Sube á barquiña: balanceádevos xuntos coma un barco na auga do baño.",
+          "es": "Sube al barquito: balanceaos juntos como un barco en el agua."
+        },
+        "mision_fallo": {
+          "gl": "Xogo do espello: sinalade o barco flotando e a bota que afunde mentres escoitades os dous sons.",
+          "es": "Juego del espejo: señalad el barco que flota y la bota que se hunde mientras escucháis los dos sonidos."
+        },
+        "pista": {
+          "gl": "Para «boat» abre un pouco ao empezar o «ou»; para «boot» pon os beizos moi pechados en «uu».",
+          "es": "Para «boat» abre un poco al empezar la «ou»; para «boot» pon los labios muy cerrados en «uu»."
+        }
+      },
+      "progresion": {
+        "tema": {
+          "gl": "Xoguetes na auga · O parrulo",
+          "es": "Juguetes en el agua · El pato"
+        },
+        "fases": [
+          {
+            "tipo": "concepto",
+            "en": "duck",
+            "gl": "parrulo",
+            "es": "pato",
+            "lamina": "pal_duck",
+            "frase": "The little yellow duck plays in the water.",
+            "accion": {
+              "gl": "Ponde os cóbados dobrados coma pequenas ás e facede «cua-cua».",
+              "es": "Poned los codos doblados como alitas y haced «cua-cua»."
+            }
+          },
+          {
+            "tipo": "parte",
+            "en": "beak",
+            "gl": "pico",
+            "es": "pico",
+            "lamina": "pal_beak",
+            "frase": "It opens its orange beak.",
+            "accion": {
+              "gl": "Abride e pechade a man diante da boca coma un pico.",
+              "es": "Abrid y cerrad la mano delante de la boca como un pico."
+            }
+          },
+          {
+            "tipo": "accion",
+            "en": "float",
+            "gl": "flotar",
+            "es": "flotar",
+            "lamina": "pal_float",
+            "frase": "The toy duck floats on top of the water.",
+            "accion": {
+              "gl": "Movede as mans suavemente cara arriba e abaixo coma flotando nas ondas.",
+              "es": "Moved las manos suavemente arriba y abajo como flotando en las olas."
+            }
+          },
+          {
+            "tipo": "cualidad",
+            "en": "yellow",
+            "gl": "amarelo",
+            "es": "amarillo",
+            "lamina": "pal_yellow",
+            "frase": "The duck is bright yellow like the sun.",
+            "accion": {
+              "gl": "Buscade algo amarelo pola habitación e tocádeo xuntos.",
+              "es": "Buscad algo amarillo por la habitación y tocadlo juntos."
+            }
+          }
+        ]
+      },
+      "modelo": {
+        "neno": "duck",
+        "adulto": [
+          "Duck.",
+          "A yellow duck.",
+          "The yellow duck floats."
+        ],
+        "nota": {
+          "gl": "Se a túa crianza sinala ou di «duck», devolves a palabra ampliada en tres pasos naturais sen pedir que a imite.",
+          "es": "Si tu peque señala o dice «duck», devuelves la palabra ampliada en tres pasos naturales sin pedirle que la imite."
+        }
+      }
+    },
+    {
+      "curso": "curso_2_3",
+      "mes": 2,
+      "fuente": "nueva",
+      "par": {
+        "a": {
+          "en": "toe",
+          "gl": "dedo do pé",
+          "es": "dedo del pie",
+          "lamina": "pal_toe"
+        },
+        "b": {
+          "en": "toy",
+          "gl": "xoguete",
+          "es": "juguete",
+          "lamina": "pal_toy"
+        },
+        "fonema": "/oʊ/ → /ɔɪ/",
+        "nota": {
+          "gl": "«Toe» remata cos beizos redondos en «ou»; «toy» deslízase cara a un «i» final («oi»).",
+          "es": "«Toe» termina con los labios redondos en «ou»; «toy» se desliza hacia una «i» final («oi»)."
+        },
+        "mision_acerto": {
+          "gl": "Toca os dediños dos pés facendo cóxegas suaves!",
+          "es": "¡Toca los deditos de los pies haciendo cosquillas suaves!"
+        },
+        "mision_fallo": {
+          "gl": "Por quendas: toca o dedo do pé con «toe» e colle un xoguete con «toy».",
+          "es": "Por turnos: toca el dedo del pie con «toe» y coge un juguete con «toy»."
+        },
+        "pista": {
+          "gl": "En «toe» os beizos quedan redondos ao final; en «toy» sorrín un pouco ao chegar ao «i».",
+          "es": "En «toe» los labios quedan redondos al final; en «toy» sonríen un poco al llegar a la «i»."
+        }
+      },
+      "progresion": {
+        "tema": {
+          "gl": "O corpo · A man",
+          "es": "El cuerpo · La mano"
+        },
+        "fases": [
+          {
+            "tipo": "concepto",
+            "en": "hand",
+            "gl": "man",
+            "es": "mano",
+            "lamina": "pal_hand",
+            "frase": "Your hand helps you wave and play.",
+            "accion": {
+              "gl": "Xuntade palma con palma e notade a calor das mans.",
+              "es": "Juntad palma con palma y notad el calor de las manos."
+            }
+          },
+          {
+            "tipo": "parte",
+            "en": "finger",
+            "gl": "dedo",
+            "es": "dedo",
+            "lamina": "pal_finger",
+            "frase": "Count each little finger one by one.",
+            "accion": {
+              "gl": "Tocade cada dedo un a un coma se fosen cinco pitiños.",
+              "es": "Tocad cada dedo uno a uno como si fueran cinco pollitos."
+            }
+          },
+          {
+            "tipo": "accion",
+            "en": "wave",
+            "gl": "saudar coa man",
+            "es": "saludar con la mano",
+            "lamina": "pal_wave",
+            "frase": "Open your hand and wave hello!",
+            "accion": {
+              "gl": "Movede as mans dun lado a outro saudando polo cuarto.",
+              "es": "Moved las manos de un lado a otro saludando por el cuarto."
+            }
+          },
+          {
+            "tipo": "cualidad",
+            "en": "clean",
+            "gl": "limpo",
+            "es": "limpio",
+            "lamina": "pal_clean",
+            "frase": "After washing, your hand is clean.",
+            "accion": {
+              "gl": "Ensinade as palmas abertas e soprade suave para secar.",
+              "es": "Enseñad las palmas abiertas y soplad suave para secar."
+            }
+          }
+        ]
+      },
+      "modelo": {
+        "neno": "hand",
+        "adulto": [
+          "Hand.",
+          "A clean hand.",
+          "The clean hand waves."
+        ],
+        "nota": {
+          "gl": "Parte da palabra que coñece («hand»), engade como é («clean») e logo a acción («waves»).",
+          "es": "Parte de la palabra que conoce («hand»), añade cómo es («clean») y luego la acción («waves»)."
+        }
+      }
+    },
+    {
+      "curso": "curso_2_3",
+      "mes": 3,
+      "fuente": "nueva",
+      "par": {
+        "a": {
+          "en": "big",
+          "gl": "grande",
+          "es": "grande",
+          "lamina": "pal_big"
+        },
+        "b": {
+          "en": "pig",
+          "gl": "porco",
+          "es": "cerdo",
+          "lamina": "pal_pig"
+        },
+        "fonema": "/b/ → /p/",
+        "nota": {
+          "gl": "«Big» empeza cun /b/ que zumba na gorxa; «pig» sae cun sopro suave sen vibrar (/p/).",
+          "es": "«Big» empieza con una /b/ que zumba en la garganta; «pig» sale con un soplo suave sin vibrar (/p/)."
+        },
+        "mision_acerto": {
+          "gl": "Abride os brazos todo o grande que poidades coma unha árbore xigante!",
+          "es": "¡Abrid los brazos todo lo grande que podáis como un árbol gigante!"
+        },
+        "mision_fallo": {
+          "gl": "Pon unha folla ou un papel diante da boca: /p/ empúrrao co aire; /b/ case non o move.",
+          "es": "Pon una hoja o un papel delante de la boca: /p/ lo empuja con el aire; /b/ casi no lo mueve."
+        },
+        "pista": {
+          "gl": "Toca a gorxa: /b/ fai cóxegas coa vibración; /p/ é un estoupido suave de aire.",
+          "es": "Toca la garganta: /b/ hace cosquillas con la vibración; /p/ es un estallido suave de aire."
+        }
+      },
+      "progresion": {
+        "tema": {
+          "gl": "Outono en Castrelos · A árbore",
+          "es": "Otoño en Castrelos · El árbol"
+        },
+        "fases": [
+          {
+            "tipo": "concepto",
+            "en": "tree",
+            "gl": "árbore",
+            "es": "árbol",
+            "lamina": "pal_tree",
+            "frase": "Look at the big tree in the park.",
+            "accion": {
+              "gl": "Póndevos de pé cos brazos arriba coma pólas abertas.",
+              "es": "Poneos de pie con los brazos arriba como ramas abiertas."
+            }
+          },
+          {
+            "tipo": "parte",
+            "en": "leaf",
+            "gl": "folla",
+            "es": "hoja",
+            "lamina": "pal_leaf",
+            "frase": "A golden leaf falls in the autumn wind.",
+            "accion": {
+              "gl": "Deixade caer as mans balanceándose coma unha folla polo aire.",
+              "es": "Dejad caer las manos balanceándose como una hoja en el aire."
+            }
+          },
+          {
+            "tipo": "accion",
+            "en": "shake",
+            "gl": "abanear",
+            "es": "agitar",
+            "lamina": "pal_shake",
+            "frase": "The wind makes the branches shake.",
+            "accion": {
+              "gl": "Abanade os brazos coma pólas cando sopra o vento.",
+              "es": "Agitad los brazos como ramas cuando sopla el viento."
+            }
+          },
+          {
+            "tipo": "cualidad",
+            "en": "tall",
+            "gl": "alto",
+            "es": "alto",
+            "lamina": "pal_tall",
+            "frase": "The tree reaches very tall into the sky.",
+            "accion": {
+              "gl": "Estirade os brazos ata o alto de puntillas.",
+              "es": "Estirad los brazos hasta lo alto de puntillas."
+            }
+          }
+        ]
+      },
+      "modelo": {
+        "neno": "tree",
+        "adulto": [
+          "Tree.",
+          "A tall tree.",
+          "The tall tree shakes."
+        ],
+        "nota": {
+          "gl": "Amplía o nome co tamaño que están comparando no xogo («tall») e a acción do vento («shakes»).",
+          "es": "Amplía el nombre con el tamaño que están comparando en el juego («tall») y la acción del viento («shakes»)."
+        }
+      }
+    },
+    {
+      "curso": "curso_2_3",
+      "mes": 4,
+      "fuente": "nueva",
+      "par": {
+        "a": {
+          "en": "bell",
+          "gl": "campá",
+          "es": "campana",
+          "lamina": "pal_bell"
+        },
+        "b": {
+          "en": "ball",
+          "gl": "pelota",
+          "es": "pelota",
+          "lamina": "pal_ball"
+        },
+        "fonema": "/ɛ/ → /ɔ/",
+        "nota": {
+          "gl": "«Bell» ten un «e» claro e aberto cara aos lados (/ɛ/); «ball» abre a boca en redondo coma un «o» (/ɔ/).",
+          "es": "«Bell» tiene una «e» clara y abierta hacia los lados (/ɛ/); «ball» abre la boca en redondo como una «o» (/ɔ/)."
+        },
+        "mision_acerto": {
+          "gl": "Toca unha campá imaxinaria facendo «din-don!» primeiro forte e logo baixiño.",
+          "es": "Toca una campana imaginaria haciendo «¡din-don!» primero fuerte y luego bajito."
+        },
+        "mision_fallo": {
+          "gl": "Escoitade os dous sons mentres tocades o obxecto: un tin-tin agudo para «bell» e un bote redondo para «ball».",
+          "es": "Escuchad los dos sonidos mientras tocáis el objeto: un tilín agudo para «bell» y un bote redondo para «ball»."
+        },
+        "pista": {
+          "gl": "Sorrí un pouco en «bell» e fai un círculo cos beizos en «ball».",
+          "es": "Sonríe un poco en «bell» y haz un círculo con los labios en «ball»."
+        }
+      },
+      "progresion": {
+        "tema": {
+          "gl": "Sons de inverno · A campá",
+          "es": "Sonidos de invierno · La campana"
+        },
+        "fases": [
+          {
+            "tipo": "concepto",
+            "en": "bell",
+            "gl": "campá",
+            "es": "campana",
+            "lamina": "pal_bell",
+            "frase": "Here is the shiny silver bell.",
+            "accion": {
+              "gl": "Facede que suxeitades unha campaíña na man.",
+              "es": "Haced como que sujetáis una campanilla en la mano."
+            }
+          },
+          {
+            "tipo": "parte",
+            "en": "handle",
+            "gl": "asa",
+            "es": "mango",
+            "lamina": "pal_handle",
+            "frase": "Hold the bell by its wooden handle.",
+            "accion": {
+              "gl": "Pechade o puño arredor do mango imaxinario.",
+              "es": "Cerrad el puño alrededor del mango imaginario."
+            }
+          },
+          {
+            "tipo": "accion",
+            "en": "ring",
+            "gl": "soar",
+            "es": "sonar",
+            "lamina": "pal_ring",
+            "frase": "Shake your hand to make it ring!",
+            "accion": {
+              "gl": "Axitade o pulso facendo «din-don, din-don».",
+              "es": "Agitad la muñeca haciendo «din-don, din-don»."
+            }
+          },
+          {
+            "tipo": "cualidad",
+            "en": "loud",
+            "gl": "forte",
+            "es": "fuerte",
+            "lamina": "pal_loud",
+            "frase": "Listen, the big bell is very loud.",
+            "accion": {
+              "gl": "Poñede as mans arredor das orellas coma escoitando un son grande.",
+              "es": "Poned las manos alrededor de las orejas como escuchando un sonido grande."
+            }
+          }
+        ]
+      },
+      "modelo": {
+        "neno": "bell",
+        "adulto": [
+          "Bell.",
+          "A loud bell.",
+          "The loud bell rings."
+        ],
+        "nota": {
+          "gl": "Pasa do nome illado á frase completa xogando co contraste forte/suave do mes.",
+          "es": "Pasa del nombre suelto a la frase completa jugando con el contraste fuerte/suave del mes."
+        }
+      }
+    },
+    {
+      "curso": "curso_2_3",
+      "mes": 5,
+      "fuente": "valeria:en-seq-bread",
+      "par": {
+        "a": {
+          "en": "coat",
+          "gl": "abrigo",
+          "es": "abrigo",
+          "lamina": "pal_coat"
+        },
+        "b": {
+          "en": "goat",
+          "gl": "cabra",
+          "es": "cabra",
+          "lamina": "pal_goat"
+        },
+        "fonema": "/k/ → /g/",
+        "nota": {
+          "gl": "«Coat» empeza cun golpe seco e sen voz atrás (/k/); «goat» fai vibrar a gorxa no mesmo sitio (/g/).",
+          "es": "«Coat» empieza con un golpe seco y sin voz atrás (/k/); «goat» hace vibrar la garganta en el mismo sitio (/g/)."
+        },
+        "mision_acerto": {
+          "gl": "Poñede o abrigo imaxinario e subide a cremalleira ata o queixo!",
+          "es": "¡Poneos el abrigo imaginario y subid la cremallera hasta la barbilla!"
+        },
+        "mision_fallo": {
+          "gl": "Toca a gorxa con dous dedos: en «goat» nótase o zumbido debaixo da man; en «coat» só aire.",
+          "es": "Toca la garganta con dos dedos: en «goat» se nota el zumbido bajo la mano; en «coat» solo aire."
+        },
+        "pista": {
+          "gl": "Sube a parte de atrás da lingua: sen vibrar para «coat», zumbando para «goat».",
+          "es": "Sube la parte de atrás de la lengua: sin vibrar para «coat», zumbando para «goat»."
+        }
+      },
+      "progresion": {
+        "tema": {
+          "gl": "Comida · O almorzo",
+          "es": "Comida · El desayuno"
+        },
+        "fases": [
+          {
+            "tipo": "concepto",
+            "en": "bread",
+            "gl": "pan",
+            "es": "pan",
+            "lamina": "pal_bread",
+            "frase": "Yummy toast for breakfast!",
+            "accion": {
+              "gl": "Facede que untades manteiga nunha torrada na palma da man.",
+              "es": "Haced como que untáis mantequilla en una tostada en la palma de la mano."
+            }
+          },
+          {
+            "tipo": "parte",
+            "en": "crust",
+            "gl": "codia",
+            "es": "corteza",
+            "lamina": "pal_crust",
+            "frase": "The outside edge is the crunchy crust.",
+            "accion": {
+              "gl": "Tocade os nós dos dedos facendo un son crocante.",
+              "es": "Chocad los nudillos haciendo un sonido crujiente."
+            }
+          },
+          {
+            "tipo": "accion",
+            "en": "bite",
+            "gl": "morder",
+            "es": "morder",
+            "lamina": "pal_bite",
+            "frase": "Open wide and take a big bite.",
+            "accion": {
+              "gl": "Xuntade as mans coma unha dentada xigante.",
+              "es": "Juntad las manos como un mordisco gigante."
+            }
+          },
+          {
+            "tipo": "cualidad",
+            "en": "warm",
+            "gl": "morno",
+            "es": "templado",
+            "lamina": "pal_warm",
+            "frase": "Fresh from the toaster, it feels warm.",
+            "accion": {
+              "gl": "Soprade alento morno sobre as mans en cunca.",
+              "es": "Soplad aliento templado sobre las manos ahuecadas."
+            }
+          }
+        ]
+      },
+      "modelo": {
+        "neno": "bread",
+        "adulto": [
+          "Bread.",
+          "Warm bread.",
+          "Bite the warm bread."
+        ],
+        "nota": {
+          "gl": "Cando a crianza nomea o pan, ti respondes coa calidade («warm») e a acción («bite»).",
+          "es": "Cuando tu peque nombra el pan, tú respondes con la cualidad («warm») y la acción («bite»)."
+        }
+      }
+    },
+    {
+      "curso": "curso_2_3",
+      "mes": 6,
+      "fuente": "valeria:en-seq-bird",
+      "par": {
+        "a": {
+          "en": "bee",
+          "gl": "abella",
+          "es": "abeja",
+          "lamina": "pal_bee"
+        },
+        "b": {
+          "en": "pea",
+          "gl": "chícharo",
+          "es": "guisante",
+          "lamina": "pal_pea"
+        },
+        "fonema": "/b/ → /p/",
+        "nota": {
+          "gl": "«Bee» xunta os beizos e fai vibrar a gorxa (/b/); «pea» solta un sopro suave cos beizos (/p/).",
+          "es": "«Bee» junta los labios y hace vibrar la garganta (/b/); «pea» suelta un soplo suave con los labios (/p/)."
+        },
+        "mision_acerto": {
+          "gl": "Voade polo cuarto zunindo coma unha abella contenta: «bzzz!».",
+          "es": "Volad por el cuarto zumbando como una abeja contenta: «¡bzzz!»."
+        },
+        "mision_fallo": {
+          "gl": "Suxeita unha tira de papel diante da boca: «pea» empúrraa cun sopro; «bee» case non a move.",
+          "es": "Sujeta una tira de papel delante de la boca: «pea» la empuja con un soplo; «bee» casi no la mueve."
+        },
+        "pista": {
+          "gl": "Nota a vibración nos beizos en /b/ fronte ao sopro tranquilo de /p/.",
+          "es": "Nota la vibración en los labios en /b/ frente al soplo tranquilo de /p/."
+        }
+      },
+      "progresion": {
+        "tema": {
+          "gl": "Animais · O paxaro",
+          "es": "Animales · El pájaro"
+        },
+        "fases": [
+          {
+            "tipo": "concepto",
+            "en": "bird",
+            "gl": "paxaro",
+            "es": "pájaro",
+            "lamina": "pal_bird",
+            "frase": "Look at the colorful little bird.",
+            "accion": {
+              "gl": "Enganchade os polgares e movede as mans coma ás de paxaro.",
+              "es": "Enganchad los pulgares y moved las manos como alas de pájaro."
+            }
+          },
+          {
+            "tipo": "parte",
+            "en": "wing",
+            "gl": "á",
+            "es": "ala",
+            "lamina": "pal_wing",
+            "frase": "The bird opens its feather wing.",
+            "accion": {
+              "gl": "Axitade os cóbados arriba e abaixo coma pequenas ás.",
+              "es": "Agitad los codos arriba y abajo como alitas."
+            }
+          },
+          {
+            "tipo": "accion",
+            "en": "fly",
+            "gl": "voar",
+            "es": "volar",
+            "lamina": "pal_fly",
+            "frase": "The bird takes off and starts to fly.",
+            "accion": {
+              "gl": "Planeade cos brazos estendidos pola sala.",
+              "es": "Planead con los brazos extendidos por la sala."
+            }
+          },
+          {
+            "tipo": "cualidad",
+            "en": "high",
+            "gl": "alto",
+            "es": "alto",
+            "lamina": "pal_high",
+            "frase": "The bird flies way up in the high sky.",
+            "accion": {
+              "gl": "Póndevos de puntillas estirando as dúas mans cara ao teito.",
+              "es": "Poneos de puntillas estirando las dos manos hacia el techo."
+            }
+          }
+        ]
+      },
+      "modelo": {
+        "neno": "bird",
+        "adulto": [
+          "Bird.",
+          "A high bird.",
+          "The bird flies high."
+        ],
+        "nota": {
+          "gl": "Usa «high» e «flies» para ampliar a palabra «bird» sen corrixir se só sinala o debuxo.",
+          "es": "Usa «high» y «flies» para ampliar la palabra «bird» sin corregir si solo señala el dibujo."
+        }
+      }
+    },
+    {
+      "curso": "curso_2_3",
+      "mes": 7,
+      "fuente": "nueva",
+      "par": {
+        "a": {
+          "en": "soap",
+          "gl": "xabón",
+          "es": "jabón",
+          "lamina": "pal_soap"
+        },
+        "b": {
+          "en": "soup",
+          "gl": "sopa",
+          "es": "sopa",
+          "lamina": "pal_soup"
+        },
+        "fonema": "/oʊ/ → /u/",
+        "nota": {
+          "gl": "«Soap» abre un pouco e redondea en «ou»; «soup» mantén os beizos ben pechados nun «u» longo.",
+          "es": "«Soap» abre un poco y redondea en «ou»; «soup» mantiene los labios bien cerrados en una «u» larga."
+        },
+        "mision_acerto": {
+          "gl": "Facede escuma coas mans coma se vos enxaboásedes antes da merenda!",
+          "es": "¡Haced espuma con las manos como si os enjabonaseis antes de la merienda!"
+        },
+        "mision_fallo": {
+          "gl": "Xogade coas láminas: lavade as mans co xabón («soap») e soprade a culler da sopa («soup»).",
+          "es": "Jugad con las láminas: lavaos las manos con el jabón («soap») y soplad la cuchara de la sopa («soup»)."
+        },
+        "pista": {
+          "gl": "Para «soap» a boca cambia de «o» a «u»; para «soup» queda fixa en «uuu».",
+          "es": "Para «soap» la boca cambia de «o» a «u»; para «soup» queda fija en «uuu»."
+        }
+      },
+      "progresion": {
+        "tema": {
+          "gl": "A merenda · O tomate",
+          "es": "La merienda · El tomate"
+        },
+        "fases": [
+          {
+            "tipo": "concepto",
+            "en": "tomato",
+            "gl": "tomate",
+            "es": "tomate",
+            "lamina": "pal_tomato",
+            "frase": "Look at this round tomato for snack time.",
+            "accion": {
+              "gl": "Facede unha bóla redonda xuntando as dúas mans.",
+              "es": "Haced una bola redonda juntando las dos manos."
+            }
+          },
+          {
+            "tipo": "parte",
+            "en": "seed",
+            "gl": "semente",
+            "es": "semilla",
+            "lamina": "pal_seed",
+            "frase": "Inside there is a tiny yellow seed.",
+            "accion": {
+              "gl": "Pinzade cos dedos coma se collesedes unha sementiña.",
+              "es": "Haced pinza con los dedos como si cogieseis una semillita."
+            }
+          },
+          {
+            "tipo": "accion",
+            "en": "wash",
+            "gl": "lavar",
+            "es": "lavar",
+            "lamina": "pal_wash",
+            "frase": "First we wash the tomato under the tap.",
+            "accion": {
+              "gl": "Fregade o tomate imaxinario coas dúas mans debaixo da auga.",
+              "es": "Frotad el tomate imaginario con las dos manos bajo el agua."
+            }
+          },
+          {
+            "tipo": "cualidad",
+            "en": "red",
+            "gl": "vermello",
+            "es": "rojo",
+            "lamina": "pal_red",
+            "frase": "The tomato is bright red.",
+            "accion": {
+              "gl": "Buscade outro obxecto vermello pola mesa e sinaládeo.",
+              "es": "Buscad otro objeto rojo por la mesa y señaladlo."
+            }
+          }
+        ]
+      },
+      "modelo": {
+        "neno": "tomato",
+        "adulto": [
+          "Tomato.",
+          "A red tomato.",
+          "Wash the red tomato."
+        ],
+        "nota": {
+          "gl": "Une a cor do mes («red») e a rutina de hixiene («wash») nunha frase curta e clara.",
+          "es": "Une el color del mes («red») y la rutina de higiene («wash») en una frase corta y clara."
+        }
+      }
+    },
+    {
+      "curso": "curso_2_3",
+      "mes": 8,
+      "fuente": "nueva",
+      "par": {
+        "a": {
+          "en": "bud",
+          "gl": "gromo",
+          "es": "brote",
+          "lamina": "pal_bud"
+        },
+        "b": {
+          "en": "bed",
+          "gl": "cama",
+          "es": "cama",
+          "lamina": "pal_bed"
+        },
+        "fonema": "/ʌ/ → /ɛ/",
+        "nota": {
+          "gl": "«Bud» leva unha vogal curta e relaxada no centro da boca (/ʌ/); «bed» estira un pouco os beizos cara a un «e» (/ɛ/).",
+          "es": "«Bud» lleva una vocal corta y relajada en el centro de la boca (/ʌ/); «bed» estira un poco los labios hacia una «e» (/ɛ/)."
+        },
+        "mision_acerto": {
+          "gl": "Agachádevos coma un gromo pequeniño e abride os brazos coma unha flor que esperta!",
+          "es": "¡Agachaos como un brote pequeñito y abrid los brazos como una flor que despierta!"
+        },
+        "mision_fallo": {
+          "gl": "Alternade os dous xestos: mans xuntas en botón para «bud» e cabeza sobre as mans para «bed».",
+          "es": "Alternad los dos gestos: manos juntas en capullo para «bud» y cabeza sobre las manos para «bed»."
+        },
+        "pista": {
+          "gl": "En «bud» a boca queda relaxada e aberta; en «bed» ábrese un pouco cara aos lados.",
+          "es": "En «bud» la boca queda relajada y abierta; en «bed» se abre un poco hacia los lados."
+        }
+      },
+      "progresion": {
+        "tema": {
+          "gl": "Primavera · A flor",
+          "es": "Primavera · La flor"
+        },
+        "fases": [
+          {
+            "tipo": "concepto",
+            "en": "flower",
+            "gl": "flor",
+            "es": "flor",
+            "lamina": "pal_flower",
+            "frase": "A spring flower wakes up in the sun.",
+            "accion": {
+              "gl": "Abride os dedos coma os pétalos dunha flor.",
+              "es": "Abrid los dedos como los pétalos de una flor."
+            }
+          },
+          {
+            "tipo": "parte",
+            "en": "petal",
+            "gl": "pétalo",
+            "es": "pétalo",
+            "lamina": "pal_petal",
+            "frase": "Touch one soft petal with your finger.",
+            "accion": {
+              "gl": "Acariciade suavemente a palma da man coma un pétalo.",
+              "es": "Acariciad suavemente la palma de la mano como un pétalo."
+            }
+          },
+          {
+            "tipo": "accion",
+            "en": "grow",
+            "gl": "medrar",
+            "es": "crecer",
+            "lamina": "pal_grow",
+            "frase": "With sun and water, the flowers grow.",
+            "accion": {
+              "gl": "Subide moi amodo desde o chan estirando os brazos coma quen medra.",
+              "es": "Subid muy despacio desde el suelo estirando los brazos como quien crece."
+            }
+          },
+          {
+            "tipo": "cualidad",
+            "en": "bright",
+            "gl": "brillante",
+            "es": "brillante",
+            "lamina": "pal_bright",
+            "frase": "The petals are bright in the morning sun.",
+            "accion": {
+              "gl": "Abride e pechade as mans coma raios de luz alegre.",
+              "es": "Abrid y cerrad las manos como rayos de luz alegre."
+            }
+          }
+        ]
+      },
+      "modelo": {
+        "neno": "flower",
+        "adulto": [
+          "Flower.",
+          "A bright flower.",
+          "The bright flower grows."
+        ],
+        "nota": {
+          "gl": "Despois do xogo coas sementes, devolves a frase enteira mentres observades como medran.",
+          "es": "Después del juego con las semillas, devuelves la frase entera mientras observáis cómo crecen."
+        }
+      }
+    },
+    {
+      "curso": "curso_2_3",
+      "mes": 9,
+      "fuente": "nueva",
+      "par": {
+        "a": {
+          "en": "bath",
+          "gl": "baño",
+          "es": "baño",
+          "lamina": "pal_bath"
+        },
+        "b": {
+          "en": "path",
+          "gl": "camiño",
+          "es": "camino",
+          "lamina": "pal_path"
+        },
+        "fonema": "/b/ → /p/",
+        "nota": {
+          "gl": "«Bath» empeza vibrando cos beizos xuntos (/b/); «path» solta un sopro suave sen vibración (/p/).",
+          "es": "«Bath» empieza vibrando con los labios juntos (/b/); «path» suelta un soplo suave sin vibración (/p/)."
+        },
+        "mision_acerto": {
+          "gl": "Chapotade coas mans coma na auga morna do baño!",
+          "es": "¡Chapotead con las manos como en el agua templada del baño!"
+        },
+        "mision_fallo": {
+          "gl": "Xogo do sopro: diante da boca, «path» move un pano de papel co aire e «bath» fai vibrar a gorxa.",
+          "es": "Juego del soplo: delante de la boca, «path» mueve un pañuelo de papel con el aire y «bath» hace vibrar la garganta."
+        },
+        "pista": {
+          "gl": "Beizos xuntos: con zumbido na gorxa para «bath», só aire suave para «path».",
+          "es": "Labios juntos: con zumbido en la garganta para «bath», solo aire suave para «path»."
+        }
+      },
+      "progresion": {
+        "tema": {
+          "gl": "Hixiene · A bañeira",
+          "es": "Higiene · La bañera"
+        },
+        "fases": [
+          {
+            "tipo": "concepto",
+            "en": "bathtub",
+            "gl": "bañeira",
+            "es": "bañera",
+            "lamina": "pal_bathtub",
+            "frase": "Time to step into the bathtub.",
+            "accion": {
+              "gl": "Levantade unha perna coma se entrásedes na bañeira.",
+              "es": "Levantad una pierna como si entraseis en la bañera."
+            }
+          },
+          {
+            "tipo": "parte",
+            "en": "water",
+            "gl": "auga",
+            "es": "agua",
+            "lamina": "pal_water",
+            "frase": "The bathtub fills with clear water.",
+            "accion": {
+              "gl": "Deixade caer os dedos coma chuvia suave sobre os brazos.",
+              "es": "Dejad caer los dedos como lluvia suave sobre los brazos."
+            }
+          },
+          {
+            "tipo": "accion",
+            "en": "splash",
+            "gl": "salpicar",
+            "es": "salpicar",
+            "lamina": "charco",
+            "frase": "Tap the water gently to make a splash!",
+            "accion": {
+              "gl": "Dade toques suaves no aire coma salpicando gottiñas.",
+              "es": "Dad toques suaves en el aire como salpicando gotitas."
+            }
+          },
+          {
+            "tipo": "cualidad",
+            "en": "warm",
+            "gl": "morno",
+            "es": "templado",
+            "lamina": "pal_warm",
+            "frase": "The water feels nice and warm on your toes.",
+            "accion": {
+              "gl": "Fregádevos os ombreiros con xesto quentiño.",
+              "es": "Frotaos los hombros con gesto calentito."
+            }
+          }
+        ]
+      },
+      "modelo": {
+        "neno": "water",
+        "adulto": [
+          "Water.",
+          "Warm water.",
+          "Splash in the warm water."
+        ],
+        "nota": {
+          "gl": "Amplía «water» coa sensación térmica («warm») e a acción do baño («splash»).",
+          "es": "Amplía «water» con la sensación térmica («warm») y la acción del baño («splash»)."
+        }
+      }
+    },
+    {
+      "curso": "curso_2_3",
+      "mes": 10,
+      "fuente": "valeria:peach-beach",
+      "par": {
+        "a": {
+          "en": "peach",
+          "gl": "pexego",
+          "es": "melocotón",
+          "lamina": "pal_peach"
+        },
+        "b": {
+          "en": "beach",
+          "gl": "praia",
+          "es": "playa",
+          "lamina": "pal_beach"
+        },
+        "fonema": "/p/ → /b/",
+        "nota": {
+          "gl": "«Peach» empeza cun sopro suave (/p/) sen vibrar; «beach» empeza con vibración na gorxa (/b/).",
+          "es": "«Peach» empieza con un soplo suave (/p/) sin vibrar; «beach» empieza con vibración en la garganta (/b/)."
+        },
+        "mision_acerto": {
+          "gl": "Facede que mordedes un pexego ben zumento e limpade o queixo. Agora ti imitas á túa crianza.",
+          "es": "Haced como que mordéis un melocotón muy jugoso y limpiaos la barbilla. Ahora tú imitas a tu peque."
+        },
+        "mision_fallo": {
+          "gl": "Proba do sopro: suxeitade un anaco pequeno de papel diante da boca — /p/ faino mover, /b/ non.",
+          "es": "Prueba del soplo: sujetad un trocito de papel delante de la boca — /p/ lo hace mover, /b/ no."
+        },
+        "pista": {
+          "gl": "Man na gorxa: /b/ zumba e /p/ é un sopro suave de aire.",
+          "es": "Mano en la garganta: /b/ zumba y /p/ es un soplo suave de aire."
+        }
+      },
+      "progresion": {
+        "tema": {
+          "gl": "As ondas de Samil · O peixe",
+          "es": "Las olas de Samil · El pez"
+        },
+        "fases": [
+          {
+            "tipo": "concepto",
+            "en": "fish",
+            "gl": "peixe",
+            "es": "pez",
+            "lamina": "pal_fish",
+            "frase": "Look at the little fish under the sea.",
+            "accion": {
+              "gl": "Xuntade as palmas e ondulade as mans coma un peixe nadando.",
+              "es": "Juntad las palmas y ondulad las manos como un pez nadando."
+            }
+          },
+          {
+            "tipo": "parte",
+            "en": "fin",
+            "gl": "aleta",
+            "es": "aleta",
+            "lamina": "pal_fin",
+            "frase": "It moves its side fin in the water.",
+            "accion": {
+              "gl": "Movede as mans aos lados coma aletas pequenas.",
+              "es": "Moved las manos a los lados como aletas pequeñas."
+            }
+          },
+          {
+            "tipo": "accion",
+            "en": "swim",
+            "gl": "nadar",
+            "es": "nadar",
+            "lamina": "pal_swim",
+            "frase": "The fish likes to swim between the waves.",
+            "accion": {
+              "gl": "Facede brazadas suaves polo aire coma nadando xuntos.",
+              "es": "Haced brazadas suaves por el aire como nadando juntos."
+            }
+          },
+          {
+            "tipo": "cualidad",
+            "en": "blue",
+            "gl": "azul",
+            "es": "azul",
+            "lamina": "pal_blue",
+            "frase": "It swims in the calm blue water.",
+            "accion": {
+              "gl": "Sinalade algo azul na sala ou debuxade ondas no aire.",
+              "es": "Señalad algo azul en la sala o dibujad olas en el aire."
+            }
+          }
+        ]
+      },
+      "modelo": {
+        "neno": "fish",
+        "adulto": [
+          "Fish.",
+          "A blue fish.",
+          "The blue fish swims."
+        ],
+        "nota": {
+          "gl": "Pecha o curso ampliando «fish» coa cor do mar («blue») e o movemento («swims»).",
+          "es": "Cierra el curso ampliando «fish» con el color del mar («blue») y el movimiento («swims»)."
+        }
+      }
+    },
+    {
+      "curso": "curso_3_4",
+      "mes": 1,
+      "fuente": "nueva",
+      "par": {
+        "a": {
+          "en": "down",
+          "gl": "abaixo",
+          "es": "abajo",
+          "lamina": "pal_down"
+        },
+        "b": {
+          "en": "town",
+          "gl": "vila",
+          "es": "pueblo",
+          "lamina": "pal_town"
+        },
+        "fonema": "/d/ → /t/",
+        "nota": {
+          "gl": "«Down» empeza vibrando coa lingua detrás dos dentes (/d/); «town» sae cun golpe de aire sen vibración (/t/).",
+          "es": "«Down» empieza vibrando con la lengua detrás de los dientes (/d/); «town» sale con un golpe de aire sin vibración (/t/)."
+        },
+        "mision_acerto": {
+          "gl": "Cae a torre! Baixade os brazos amodo ata o chan facendo «pum».",
+          "es": "¡Se cae la torre! Bajad los brazos despacio hasta el suelo haciendo «pum»."
+        },
+        "mision_fallo": {
+          "gl": "Toca a gorxa ao dicir «down» e «town»: «down» zumba; «town» solta un sopro.",
+          "es": "Toca la garganta al decir «down» y «town»: «down» zumba; «town» suelta un soplo."
+        },
+        "pista": {
+          "gl": "Punta da lingua detrás dos dentes: con zumbido para «down», sen zumbido para «town».",
+          "es": "Punta de la lengua detrás de los dientes: con zumbido para «down», sin zumbido para «town»."
+        }
+      },
+      "progresion": {
+        "tema": {
+          "gl": "Construcións · A torre",
+          "es": "Construcciones · La torre"
+        },
+        "fases": [
+          {
+            "tipo": "concepto",
+            "en": "tower",
+            "gl": "torre",
+            "es": "torre",
+            "lamina": "pal_tower",
+            "frase": "Let us look at the wooden tower.",
+            "accion": {
+              "gl": "Poñede un puño riba do outro subindo cara arriba.",
+              "es": "Poned un puño encima del otro subiendo hacia arriba."
+            }
+          },
+          {
+            "tipo": "parte",
+            "en": "block",
+            "gl": "bloque",
+            "es": "bloque",
+            "lamina": "pal_block",
+            "frase": "Each square block holds the next one.",
+            "accion": {
+              "gl": "Debuxade un cadrado no aire coas dúas mans.",
+              "es": "Dibujad un cuadrado en el aire con las dos manos."
+            }
+          },
+          {
+            "tipo": "accion",
+            "en": "build",
+            "gl": "construír",
+            "es": "construir",
+            "lamina": "pal_build",
+            "frase": "Put one piece on top to build it together.",
+            "accion": {
+              "gl": "Apilade bloques imaxinarios con moito coidado.",
+              "es": "Apilad bloques imaginarios con mucho cuidado."
+            }
+          },
+          {
+            "tipo": "cualidad",
+            "en": "tall",
+            "gl": "alta",
+            "es": "alta",
+            "lamina": "pal_tall",
+            "frase": "Our block tower is very tall!",
+            "accion": {
+              "gl": "Estirade os brazos ben arriba sen que caia a torre.",
+              "es": "Estirad los brazos bien arriba sin que caiga la torre."
+            }
+          }
+        ]
+      },
+      "modelo": {
+        "neno": "tower",
+        "adulto": [
+          "Tower.",
+          "A tall tower.",
+          "We build a tall tower."
+        ],
+        "nota": {
+          "gl": "Na asemblea dos bloques, devolves a palabra engadindo altura («tall») e acción compartida («build»).",
+          "es": "En el juego con bloques, devuelves la palabra añadiendo altura («tall») y acción compartida («build»)."
+        }
+      }
+    },
+    {
+      "curso": "curso_3_4",
+      "mes": 2,
+      "fuente": "nueva",
+      "par": {
+        "a": {
+          "en": "pin",
+          "gl": "alfinete",
+          "es": "alfiler",
+          "lamina": "pal_pin"
+        },
+        "b": {
+          "en": "bin",
+          "gl": "cesto",
+          "es": "cesta",
+          "lamina": "pal_bin"
+        },
+        "fonema": "/p/ → /b/",
+        "nota": {
+          "gl": "«Pin» empeza cun sopro suave cos beizos (/p/); «bin» fai vibrar os beizos e a gorxa (/b/).",
+          "es": "«Pin» empieza con un soplo suave con los labios (/p/); «bin» hace vibrar los labios y la garganta (/b/)."
+        },
+        "mision_acerto": {
+          "gl": "Facede pinza con dous dedos coma collendo un alfinete pequeniño!",
+          "es": "¡Haced pinza con dos dedos como cogiendo un alfiler pequeñito!"
+        },
+        "mision_fallo": {
+          "gl": "Proba do papel diante da boca: «pin» move o papel cun sopro; «bin» faino zumbar sen sopro forte.",
+          "es": "Prueba del papel delante de la boca: «pin» mueve el papel con un soplo; «bin» lo hace zumbar sin soplo fuerte."
+        },
+        "pista": {
+          "gl": "Beizos xuntos: aire silencioso para «pin» e vibración na gorxa para «bin».",
+          "es": "Labios juntos: aire silencioso para «pin» y vibración en la garganta para «bin»."
+        }
+      },
+      "progresion": {
+        "tema": {
+          "gl": "Outono · A landra",
+          "es": "Otoño · La bellota"
+        },
+        "fases": [
+          {
+            "tipo": "concepto",
+            "en": "acorn",
+            "gl": "landra",
+            "es": "bellota",
+            "lamina": "pal_acorn",
+            "frase": "Look at the little autumn acorn.",
+            "accion": {
+              "gl": "Pechade a man nun puño pequeno coma unha landra.",
+              "es": "Cerrad la mano en un puño pequeño como una bellota."
+            }
+          },
+          {
+            "tipo": "parte",
+            "en": "cap",
+            "gl": "chapeu",
+            "es": "sombrerito",
+            "lamina": "pal_cap",
+            "frase": "The acorn wears a bumpy little cap.",
+            "accion": {
+              "gl": "Poñede a outra man curva riba do puño coma un chapeu.",
+              "es": "Poned la otra mano curva encima del puño como un sombrerito."
+            }
+          },
+          {
+            "tipo": "accion",
+            "en": "pick",
+            "gl": "coller",
+            "es": "recoger",
+            "lamina": "pal_pick",
+            "frase": "Bend down to pick the acorns off the grass.",
+            "accion": {
+              "gl": "Agachádevos e collede landras imaxinarias do chan.",
+              "es": "Agachaos y recoged bellotas imaginarias del suelo."
+            }
+          },
+          {
+            "tipo": "cualidad",
+            "en": "brown",
+            "gl": "marrón",
+            "es": "marrón",
+            "lamina": "pal_brown",
+            "frase": "The acorn is smooth and brown.",
+            "accion": {
+              "gl": "Buscade algo marrón pola sala e tocádeo xuntos.",
+              "es": "Buscad algo marrón por la sala y tocadlo juntos."
+            }
+          }
+        ]
+      },
+      "modelo": {
+        "neno": "acorn",
+        "adulto": [
+          "Acorn.",
+          "A brown acorn.",
+          "Pick the brown acorn."
+        ],
+        "nota": {
+          "gl": "Cando clasifica cores e froitos de outono, amplías «acorn» coa cor («brown») e a acción («pick»).",
+          "es": "Cuando clasifica colores y frutos de otoño, amplías «acorn» con el color («brown») y la acción («pick»)."
+        }
+      }
+    },
+    {
+      "curso": "curso_3_4",
+      "mes": 3,
+      "fuente": "valeria:en-seq-train",
+      "par": {
+        "a": {
+          "en": "pop",
+          "gl": "estoupido",
+          "es": "estallido",
+          "lamina": "pal_pop"
+        },
+        "b": {
+          "en": "pup",
+          "gl": "cachorro",
+          "es": "cachorro",
+          "lamina": "pal_pup"
+        },
+        "fonema": "/ɑ/ → /ʌ/",
+        "nota": {
+          "gl": "«Pop» abre moito a boca cara abaixo (/ɑ/); «pup» deixa a boca relaxada e máis pechada no medio (/ʌ/).",
+          "es": "«Pop» abre mucho la boca hacia abajo (/ɑ/); «pup» deja la boca relajada y más cerrada en el medio (/ʌ/)."
+        },
+        "mision_acerto": {
+          "gl": "Saltade coma unha castaña no magosto ao dicir «pop!».",
+          "es": "Saltad como una castaña en el magosto al decir «¡pop!»."
+        },
+        "mision_fallo": {
+          "gl": "Espello de bocas: boca moi aberta en «pop» fronte á boca pequena e relaxada de «pup».",
+          "es": "Espejo de bocas: boca muy abierta en «pop» frente a la boca pequeña y relajada de «pup»."
+        },
+        "pista": {
+          "gl": "Baixa ben o queixo para «pop»; déixao case quieto e relaxado para «pup».",
+          "es": "Baja bien la barbilla para «pop»; déjala casi quieta y relajada para «pup»."
+        }
+      },
+      "progresion": {
+        "tema": {
+          "gl": "Transportes · O tren",
+          "es": "Transportes · El tren"
+        },
+        "fases": [
+          {
+            "tipo": "concepto",
+            "en": "train",
+            "gl": "tren",
+            "es": "tren",
+            "lamina": "pal_pal_train",
+            "frase": "Here comes the chugga chugga train.",
+            "accion": {
+              "gl": "Movede os brazos dobrados en círculos coma rodas de tren.",
+              "es": "Moved los brazos doblados en círculos como ruedas de tren."
+            }
+          },
+          {
+            "tipo": "parte",
+            "en": "track",
+            "gl": "vía",
+            "es": "vía",
+            "lamina": "pal_track",
+            "frase": "The train rolls along the metal track.",
+            "accion": {
+              "gl": "Debuxade dúas liñas paralelas cos dous dedos índices no chan.",
+              "es": "Dibujad dos líneas paralelas con ambos dedos índices en el suelo."
+            }
+          },
+          {
+            "tipo": "accion",
+            "en": "go",
+            "gl": "andar",
+            "es": "avanzar",
+            "lamina": "pal_go",
+            "frase": "The train starts to go down the line.",
+            "accion": {
+              "gl": "Marchade pola sala facendo «chucu-chucu» xuntos.",
+              "es": "Marchad por la sala haciendo «chucu-chucu» juntos."
+            }
+          },
+          {
+            "tipo": "cualidad",
+            "en": "long",
+            "gl": "longo",
+            "es": "largo",
+            "lamina": "pal_long",
+            "frase": "The train has so many cars, it is very long.",
+            "accion": {
+              "gl": "Abride os dous brazos todo o ancho posible dun lado a outro.",
+              "es": "Abrid los dos brazos todo lo ancho posible de lado a lado."
+            }
+          }
+        ]
+      },
+      "modelo": {
+        "neno": "train",
+        "adulto": [
+          "Train.",
+          "A long train.",
+          "The long train goes."
+        ],
+        "nota": {
+          "gl": "Na pista inclinada do mes, acompañas o tren que baixa co adxectivo «long» e o verbo «goes».",
+          "es": "En la rampa del mes, acompañas el tren que baja con el adjetivo «long» y el verbo «goes»."
+        }
+      }
+    },
+    {
+      "curso": "curso_3_4",
+      "mes": 4,
+      "fuente": "valeria:en-seq-car",
+      "par": {
+        "a": {
+          "en": "cap",
+          "gl": "gorra",
+          "es": "gorra",
+          "lamina": "pal_cap"
+        },
+        "b": {
+          "en": "gap",
+          "gl": "oco",
+          "es": "hueco",
+          "lamina": "pal_gap"
+        },
+        "fonema": "/k/ → /g/",
+        "nota": {
+          "gl": "«Cap» sae cun golpe seco atrás sen vibrar (/k/); «gap» fai vibrar a gorxa atrás (/g/).",
+          "es": "«Cap» sale con un golpe seco atrás sin vibrar (/k/); «gap» hace vibrar la garganta atrás (/g/)."
+        },
+        "mision_acerto": {
+          "gl": "Poñede a gorra de inverno imaxinaria e baixade a viseira!",
+          "es": "¡Poneos la gorra imaginaria y bajad la visera!"
+        },
+        "mision_fallo": {
+          "gl": "Pon a man na gorxa: en «gap» nótase o zumbido dende o comezo; en «cap» non.",
+          "es": "Pon la mano en la garganta: en «gap» se nota el zumbido desde el principio; en «cap» no."
+        },
+        "pista": {
+          "gl": "Mesmo punto atrás na lingua: aire limpo para «cap», voz vibrando para «gap».",
+          "es": "Mismo punto atrás en la lengua: aire limpio para «cap», voz vibrando para «gap»."
+        }
+      },
+      "progresion": {
+        "tema": {
+          "gl": "Transportes · O coche",
+          "es": "Transportes · El coche"
+        },
+        "fases": [
+          {
+            "tipo": "concepto",
+            "en": "car",
+            "gl": "coche",
+            "es": "coche",
+            "lamina": "pal_car",
+            "frase": "It takes us places on four wheels.",
+            "accion": {
+              "gl": "Fai rodar un coche de xoguete polo chan cara á túa crianza.",
+              "es": "Haz rodar un coche de juguete por el suelo hacia tu peque."
+            }
+          },
+          {
+            "tipo": "parte",
+            "en": "wheel",
+            "gl": "roda",
+            "es": "rueda",
+            "lamina": "pal_wheel",
+            "frase": "This round part is what turns and turns.",
+            "accion": {
+              "gl": "Xira a roda cun dedo e deixa que a túa crianza a pare.",
+              "es": "Gira la rueda con un dedo y deja que tu peque la pare."
+            }
+          },
+          {
+            "tipo": "accion",
+            "en": "drive",
+            "gl": "conducir",
+            "es": "conducir",
+            "lamina": "pal_drive",
+            "frase": "Hands on the wheel and off we go.",
+            "accion": {
+              "gl": "Suxeitade un volante imaxinario e xirádeo á esquerda e á dereita xuntos.",
+              "es": "Sujetad un volante imaginario y giradlo a izquierda y derecha juntos."
+            }
+          },
+          {
+            "tipo": "cualidad",
+            "en": "fast",
+            "gl": "rápido",
+            "es": "rápido",
+            "lamina": "pal_fast",
+            "frase": "Zooming along with the speed lines behind.",
+            "accion": {
+              "gl": "Facede unha carreira co coche de xoguete polo chan o máis rápido posible.",
+              "es": "Haced una carrera con el coche de juguete por el suelo lo más rápido posible."
+            }
+          }
+        ]
+      },
+      "modelo": {
+        "neno": "car",
+        "adulto": [
+          "Car.",
+          "A fast car.",
+          "Drive the fast car."
+        ],
+        "nota": {
+          "gl": "No xogo cos coches e bloques, engades velocidade («fast») e acción («drive»).",
+          "es": "En el juego con los coches y bloques, añades velocidad («fast») y acción («drive»)."
+        }
+      }
+    },
+    {
+      "curso": "curso_3_4",
+      "mes": 5,
+      "fuente": "valeria:en-seq-rain",
+      "par": {
+        "a": {
+          "en": "pat",
+          "gl": "palmadiña",
+          "es": "palmadita",
+          "lamina": "pal_pat"
+        },
+        "b": {
+          "en": "bat",
+          "gl": "morcego",
+          "es": "murciélago",
+          "lamina": "pal_bat"
+        },
+        "fonema": "/p/ → /b/",
+        "nota": {
+          "gl": "«Pat» empeza cun sopro suave nos beizos sen voz (/p/); «bat» fai vibrar os beizos e a gorxa (/b/).",
+          "es": "«Pat» empieza con un soplo suave en los labios sin voz (/p/); «bat» hace vibrar los labios y la garganta (/b/)."
+        },
+        "mision_acerto": {
+          "gl": "Dade palmadiñas suaves nos xeonllos coma pingas de chuvia!",
+          "es": "¡Dad palmaditas suaves en las rodillas como gotas de lluvia!"
+        },
+        "mision_fallo": {
+          "gl": "Comprobade diante da man: «pat» solta un sopro claro na palma; «bat» vibra na gorxa.",
+          "es": "Comprobad delante de la mano: «pat» suelta un soplo claro en la palma; «bat» vibra en la garganta."
+        },
+        "pista": {
+          "gl": "Xunta os beizos: un sopro suave dá «pat»; un zumbido na gorxa dá «bat».",
+          "es": "Junta los labios: un soplo suave da «pat»; un zumbido en la garganta da «bat»."
+        }
+      },
+      "progresion": {
+        "tema": {
+          "gl": "Natureza · A chuvia",
+          "es": "Naturaleza · La lluvia"
+        },
+        "fases": [
+          {
+            "tipo": "concepto",
+            "en": "rain",
+            "gl": "chuvia",
+            "es": "lluvia",
+            "lamina": "pal_rain",
+            "frase": "Look at the sky, here comes the rain.",
+            "accion": {
+              "gl": "Movede os dedos baixando desde o ceo coma pingas de chuvia.",
+              "es": "Moved los dedos bajando desde el cielo como gotas de lluvia."
+            }
+          },
+          {
+            "tipo": "parte",
+            "en": "drop",
+            "gl": "pinga",
+            "es": "gota",
+            "lamina": "pal_drop",
+            "frase": "A tiny drop of water falls on your nose.",
+            "accion": {
+              "gl": "Toca suavemente a punta do nariz da túa crianza cun dedo.",
+              "es": "Toca suavemente la punta de la nariz de tu peque con un dedo."
+            }
+          },
+          {
+            "tipo": "accion",
+            "en": "fall",
+            "gl": "caer",
+            "es": "caer",
+            "lamina": "pal_fall",
+            "frase": "The raindrops fall all over the grass.",
+            "accion": {
+              "gl": "Dade toques rítmicos cos dedos na mesa, cada vez máis rápido.",
+              "es": "Dad toques rítmicos con los dedos en la mesa, cada vez más rápido."
+            }
+          },
+          {
+            "tipo": "cualidad",
+            "en": "wet",
+            "gl": "mollado",
+            "es": "mojado",
+            "lamina": "pal_wet",
+            "frase": "Everything outside is cool and wet.",
+            "accion": {
+              "gl": "Sacudide as mans para secalas coma se salpicásedes nunha poza.",
+              "es": "Sacudid las manos para secarlas como si hubieseis chapoteado en un charco."
+            }
+          }
+        ]
+      },
+      "modelo": {
+        "neno": "rain",
+        "adulto": [
+          "Rain.",
+          "Wet rain.",
+          "Rain falls wet."
+        ],
+        "nota": {
+          "gl": "Na percusión corporal da chuvia, amplías «rain» con «wet» e «falls».",
+          "es": "En la percusión corporal de la lluvia, amplías «rain» con «wet» y «falls»."
+        }
+      }
+    },
+    {
+      "curso": "curso_3_4",
+      "mes": 6,
+      "fuente": "nueva",
+      "par": {
+        "a": {
+          "en": "cold",
+          "gl": "frío",
+          "es": "frío",
+          "lamina": "pal_cold"
+        },
+        "b": {
+          "en": "gold",
+          "gl": "ouro",
+          "es": "oro",
+          "lamina": "pal_gold"
+        },
+        "fonema": "/k/ → /g/",
+        "nota": {
+          "gl": "«Cold» empeza atrás sen vibración na gorxa (/k/); «gold» empeza no mesmo punto pero zumbando (/g/).",
+          "es": "«Cold» empieza atrás sin vibración en la garganta (/k/); «gold» empieza en el mismo punto pero zumbando (/g/)."
+        },
+        "mision_acerto": {
+          "gl": "Brrr, tremede cos ombreiros arriba coma ao tocar o xeo frío!",
+          "es": "¡Brrr, temblad con los hombros arriba como al tocar el hielo frío!"
+        },
+        "mision_fallo": {
+          "gl": "Man na gorxa: notade o zumbido de «gold» fronte ao golpe seco de aire en «cold».",
+          "es": "Mano en la garganta: notad el zumbido de «gold» frente al golpe seco de aire en «cold»."
+        },
+        "pista": {
+          "gl": "Sube a parte traseira da lingua: aire seco para «cold», vibración na gorxa para «gold».",
+          "es": "Sube la parte trasera de la lengua: aire seco para «cold», vibración en la garganta para «gold»."
+        }
+      },
+      "progresion": {
+        "tema": {
+          "gl": "Xeo e líquido · O zume",
+          "es": "Hielo y líquido · El zumo"
+        },
+        "fases": [
+          {
+            "tipo": "concepto",
+            "en": "juice",
+            "gl": "zume",
+            "es": "zumo",
+            "lamina": "pal_juice",
+            "frase": "Pour a glass of orange juice.",
+            "accion": {
+              "gl": "Facede que servides zume nun vaso sen verter.",
+              "es": "Haced como que servís zumo en un vaso sin derramar."
+            }
+          },
+          {
+            "tipo": "parte",
+            "en": "ice",
+            "gl": "xeo",
+            "es": "hielo",
+            "lamina": "pal_ice",
+            "frase": "Drop a shiny cube of ice inside.",
+            "accion": {
+              "gl": "Facede que deixades caer un cubo de xeo no vaso.",
+              "es": "Haced como que dejáis caer un cubo de hielo en el vaso."
+            }
+          },
+          {
+            "tipo": "accion",
+            "en": "melt",
+            "gl": "derreter",
+            "es": "derretir",
+            "lamina": "pal_melt",
+            "frase": "Watch the ice slowly melt into water.",
+            "accion": {
+              "gl": "Baixade os brazos amodo coma un xeo que se desfai.",
+              "es": "Bajad los brazos despacio como un hielo que se deshace."
+            }
+          },
+          {
+            "tipo": "cualidad",
+            "en": "cold",
+            "gl": "frío",
+            "es": "frío",
+            "lamina": "pal_cold",
+            "frase": "Touch the glass: it feels very cold!",
+            "accion": {
+              "gl": "Abrazádevos coma se tivesedes un chisco de frío.",
+              "es": "Abrazaos como si tuvieseis un poco de frío."
+            }
+          }
+        ]
+      },
+      "modelo": {
+        "neno": "juice",
+        "adulto": [
+          "Juice.",
+          "Cold juice.",
+          "Ice melts in cold juice."
+        ],
+        "nota": {
+          "gl": "Co experimento do xeo no zume, pasas do nome ao frío e ao cambio de estado.",
+          "es": "Con el experimento del hielo en el zumo, pasas del nombre al frío y al cambio de estado."
+        }
+      }
+    },
+    {
+      "curso": "curso_3_4",
+      "mes": 7,
+      "fuente": "nueva",
+      "par": {
+        "a": {
+          "en": "dig",
+          "gl": "cavar",
+          "es": "cavar",
+          "lamina": "pal_dig"
+        },
+        "b": {
+          "en": "big",
+          "gl": "grande",
+          "es": "grande",
+          "lamina": "pal_big"
+        },
+        "fonema": "/d/ → /b/",
+        "nota": {
+          "gl": "«Dig» faise coa lingua nos dentes (/d/); «big» faise pechando os dous beizos (/b/).",
+          "es": "«Dig» se hace con la lengua en los dientes (/d/); «big» se hace cerrando ambos labios (/b/)."
+        },
+        "mision_acerto": {
+          "gl": "Cavade na terra imaxinaria coas dúas mans para plantar a semente!",
+          "es": "¡Cavad en la tierra imaginaria con las dos manos para plantar la semilla!"
+        },
+        "mision_fallo": {
+          "gl": "Mirade os beizos no espello: en «dig» os beizos non se pechan; en «big» si se xuntan os dous.",
+          "es": "Mirad los labios en el espejo: en «dig» los labios no se cierran; en «big» sí se juntan los dos."
+        },
+        "pista": {
+          "gl": "Lingua detrás dos dentes para «dig»; beizos xuntos para «big».",
+          "es": "Lengua detrás de los dientes para «dig»; labios juntos para «big»."
+        }
+      },
+      "progresion": {
+        "tema": {
+          "gl": "Sementes · A semente",
+          "es": "Semillas · La semilla"
+        },
+        "fases": [
+          {
+            "tipo": "concepto",
+            "en": "seed",
+            "gl": "semente",
+            "es": "semilla",
+            "lamina": "pal_seed",
+            "frase": "Hold a little seed in your palm.",
+            "accion": {
+              "gl": "Facede unha cunca coas mans para gardar a semente.",
+              "es": "Haced un cuenco con las manos para guardar la semilla."
+            }
+          },
+          {
+            "tipo": "parte",
+            "en": "root",
+            "gl": "raíz",
+            "es": "raíz",
+            "lamina": "pal_root",
+            "frase": "Under the soil grows a white root.",
+            "accion": {
+              "gl": "Estendede os dedos cara abaixo coma raíces na terra.",
+              "es": "Extended los dedos hacia abajo como raíces en la tierra."
+            }
+          },
+          {
+            "tipo": "accion",
+            "en": "sprout",
+            "gl": "xerminar",
+            "es": "brotar",
+            "lamina": "pal_sprout",
+            "frase": "Soon the little plant starts to sprout.",
+            "accion": {
+              "gl": "Levantade as mans amodo saíndo de entre os xeonllos.",
+              "es": "Levantad las manos despacio saliendo de entre las rodillas."
+            }
+          },
+          {
+            "tipo": "cualidad",
+            "en": "tiny",
+            "gl": "diminuto",
+            "es": "diminuto",
+            "lamina": "pal_tiny",
+            "frase": "At the start, the seed is very tiny.",
+            "accion": {
+              "gl": "Xuntade o polgar e o índice deixando un espazo moi pequeno.",
+              "es": "Juntad el pulgar y el índice dejando un espacio muy pequeño."
+            }
+          }
+        ]
+      },
+      "modelo": {
+        "neno": "seed",
+        "adulto": [
+          "Seed.",
+          "A tiny seed.",
+          "The tiny seed sprouts."
+        ],
+        "nota": {
+          "gl": "Segue o crecemento da planta desde o tamaño («tiny») ata o gromo («sprouts»).",
+          "es": "Sigue el crecimiento de la planta desde el tamaño («tiny») hasta el brote («sprouts»)."
+        }
+      }
+    },
+    {
+      "curso": "curso_3_4",
+      "mes": 8,
+      "fuente": "valeria:sheep-ship+en-seq-cow",
+      "par": {
+        "a": {
+          "en": "sheep",
+          "gl": "ovella",
+          "es": "oveja",
+          "lamina": "pal_pal_sheep"
+        },
+        "b": {
+          "en": "ship",
+          "gl": "barco",
+          "es": "barco",
+          "lamina": "pal_ship"
+        },
+        "fonema": "/i/ → /ɪ/",
+        "nota": {
+          "gl": "«Sheep» ten un «i» longo e sorrinte (/i/); «ship» ten un «i» curto e rápido (/ɪ/).",
+          "es": "«Sheep» tiene una «i» larga y sonriente (/i/); «ship» tiene una «i» corta y rápida (/ɪ/)."
+        },
+        "mision_acerto": {
+          "gl": "Contade ovellas: saltade por riba dun valado imaxinario tres veces facendo «bee» en cada salto.",
+          "es": "Contad ovejas: saltad por encima de una valla imaginaria tres veces haciendo «bee» en cada salto."
+        },
+        "mision_fallo": {
+          "gl": "Longo e curto: estende os brazos ben abertos para «sheep» e achégaos para «ship» mentres sinalades a lámina.",
+          "es": "Largo y corto: abre bien los brazos para «sheep» y júntalos para «ship» mientras señaláis la lámina."
+        },
+        "pista": {
+          "gl": "Estírao e sorrí amplo: «sheeeep». O curto é rápido: «ship».",
+          "es": "Estíralo y sonríe amplio: «sheeeep». El corto es rápido: «ship»."
+        }
+      },
+      "progresion": {
+        "tema": {
+          "gl": "Animais · A vaca",
+          "es": "Animales · La vaca"
+        },
+        "fases": [
+          {
+            "tipo": "concepto",
+            "en": "cow",
+            "gl": "vaca",
+            "es": "vaca",
+            "lamina": "pal_pal_cow",
+            "frase": "This is the cow.",
+            "accion": {
+              "gl": "Debuxade manchas imaxinarias no brazo e facede un «muu» suave xuntos.",
+              "es": "Dibujad manchas imaginarias en el brazo y haced un «muu» suave juntos."
+            }
+          },
+          {
+            "tipo": "parte",
+            "en": "tail",
+            "gl": "rabo",
+            "es": "cola",
+            "lamina": "pal_tail",
+            "frase": "The cow swishes its long tail.",
+            "accion": {
+              "gl": "Balanceade un brazo detrás coma un rabo contento.",
+              "es": "Balancead un brazo detrás como una cola contenta."
+            }
+          },
+          {
+            "tipo": "accion",
+            "en": "eat",
+            "gl": "comer",
+            "es": "comer",
+            "lamina": "pal_eat",
+            "frase": "The cow munches sweet green grass.",
+            "accion": {
+              "gl": "Mastigade abrindo e pechando a boca coma unha vaca pacendo.",
+              "es": "Masticad abriendo y cerrando la boca como una vaca pastando."
+            }
+          },
+          {
+            "tipo": "cualidad",
+            "en": "big",
+            "gl": "grande",
+            "es": "grande",
+            "lamina": "pal_big",
+            "frase": "The cow is very big and strong.",
+            "accion": {
+              "gl": "Estendede os dous brazos ben abertos para ensinar o enorme que é a vaca.",
+              "es": "Extended ambos brazos bien abiertos para mostrar lo enorme que es la vaca."
+            }
+          }
+        ]
+      },
+      "modelo": {
+        "neno": "cow",
+        "adulto": [
+          "Cow.",
+          "A big cow.",
+          "The big cow eats."
+        ],
+        "nota": {
+          "gl": "Na granxa do mes, amplías «cow» co tamaño («big») e o verbo («eats»).",
+          "es": "En la granja del mes, amplías «cow» con el tamaño («big») y el verbo («eats»)."
+        }
+      }
+    },
+    {
+      "curso": "curso_3_4",
+      "mes": 9,
+      "fuente": "nueva",
+      "par": {
+        "a": {
+          "en": "pot",
+          "gl": "pote",
+          "es": "olla",
+          "lamina": "pal_pot"
+        },
+        "b": {
+          "en": "dot",
+          "gl": "punto",
+          "es": "punto",
+          "lamina": "pal_dot"
+        },
+        "fonema": "/p/ → /d/",
+        "nota": {
+          "gl": "«Pot» empeza cun sopro suave nos beizos (/p/); «dot» faise coa lingua detrás dos dentes vibrando (/d/).",
+          "es": "«Pot» empieza con un soplo suave en los labios (/p/); «dot» se hace con la lengua detrás de los dientes vibrando (/d/)."
+        },
+        "mision_acerto": {
+          "gl": "Tocade o ritmo nun pote imaxinario coma un tambor: «pom, pom, pom!».",
+          "es": "Tocad el ritmo en una olla imaginaria como un tambor: «¡pom, pom, pom!»."
+        },
+        "mision_fallo": {
+          "gl": "Mirade onde nace cada son: os beizos xuntos para «pot» fronte á lingua nos dentes para «dot».",
+          "es": "Mirad dónde nace cada sonido: los labios juntos para «pot» frente a la lengua en los dientes para «dot»."
+        },
+        "pista": {
+          "gl": "Beizos pechados con sopro para «pot»; punta da lingua nos dentes para «dot».",
+          "es": "Labios cerrados con soplo para «pot»; punta de la lengua en los dientes para «dot»."
+        }
+      },
+      "progresion": {
+        "tema": {
+          "gl": "Lectura · O conto",
+          "es": "Lectura · El cuento"
+        },
+        "fases": [
+          {
+            "tipo": "concepto",
+            "en": "book",
+            "gl": "libro",
+            "es": "libro",
+            "lamina": "pal_book",
+            "frase": "Sit together with a picture book.",
+            "accion": {
+              "gl": "Xuntade as palmas coma un libro pechado e abrídeo.",
+              "es": "Juntad las palmas como un libro cerrado y abridlo."
+            }
+          },
+          {
+            "tipo": "parte",
+            "en": "page",
+            "gl": "páxina",
+            "es": "página",
+            "lamina": "pal_page",
+            "frase": "Turn one paper page carefully.",
+            "accion": {
+              "gl": "Pasade unha páxina imaxinaria dun lado ao outro.",
+              "es": "Pasad una página imaginaria de un lado a otro."
+            }
+          },
+          {
+            "tipo": "accion",
+            "en": "read",
+            "gl": "ler",
+            "es": "leer",
+            "lamina": "pal_read",
+            "frase": "Follow the pictures as we read together.",
+            "accion": {
+              "gl": "Sinalade co dedo coma seguindo os debuxos dun conto.",
+              "es": "Señalad con el dedo como siguiendo los dibujos de un cuento."
+            }
+          },
+          {
+            "tipo": "cualidad",
+            "en": "open",
+            "gl": "aberto",
+            "es": "abierto",
+            "lamina": "pal_open",
+            "frase": "Keep the book wide open on your lap.",
+            "accion": {
+              "gl": "Estendede as dúas mans abertas sobre o colo.",
+              "es": "Extended las dos manos abiertas sobre el regazo."
+            }
+          }
+        ]
+      },
+      "modelo": {
+        "neno": "book",
+        "adulto": [
+          "Book.",
+          "An open book.",
+          "Read the open book."
+        ],
+        "nota": {
+          "gl": "Na hora do conto e os xogos de falda, constrúes a frase desde «book» ata «read».",
+          "es": "En la hora del cuento y los juegos de falda, construyes la frase desde «book» hasta «read»."
+        }
+      }
+    },
+    {
+      "curso": "curso_3_4",
+      "mes": 10,
+      "fuente": "valeria:seat-sea",
+      "par": {
+        "a": {
+          "en": "seat",
+          "gl": "asento",
+          "es": "asiento",
+          "lamina": "pal_seat"
+        },
+        "b": {
+          "en": "sea",
+          "gl": "mar",
+          "es": "mar",
+          "lamina": "pal_sea"
+        },
+        "fonema": "/-t/ → ∅",
+        "nota": {
+          "gl": "«Seat» remata cun toque seco da lingua (/t/); «sea» remata coa vogal aberta sen ese toque.",
+          "es": "«Seat» termina con un toque seco de la lengua (/t/); «sea» termina con la vocal abierta sin ese toque."
+        },
+        "mision_acerto": {
+          "gl": "Cadeiras musicais versión mini: camiñade arredor dunha cadeira e sentade cando deas unha palmada.",
+          "es": "Sillas musicales en versión mini: caminad alrededor de una silla y sentaos cuando des una palmada."
+        },
+        "mision_fallo": {
+          "gl": "Toque na mesa: dás un toque suave na mesa no /t/ final de «seat» e sinalades xuntos a lámina.",
+          "es": "Toque en la mesa: das un toque suave en la mesa en la /t/ final de «seat» y señaláis juntos la lámina."
+        },
+        "pista": {
+          "gl": "Remata a palabra cun pequeno toque da lingua detrás dos dentes: «seat-t».",
+          "es": "Termina la palabra con un pequeño toque de la lengua detrás de los dientes: «seat-t»."
+        }
+      },
+      "progresion": {
+        "tema": {
+          "gl": "Espello · A culler",
+          "es": "Espejo · La cuchara"
+        },
+        "fases": [
+          {
+            "tipo": "concepto",
+            "en": "spoon",
+            "gl": "culler",
+            "es": "cuchara",
+            "lamina": "pal_pal_spoon",
+            "frase": "Look at your face in the metal spoon!",
+            "accion": {
+              "gl": "Suxeitade unha culler imaxinaria coma un pequeno espello.",
+              "es": "Sujetad una cuchara imaginaria como un pequeño espejo."
+            }
+          },
+          {
+            "tipo": "parte",
+            "en": "handle",
+            "gl": "mango",
+            "es": "mango",
+            "lamina": "pal_handle",
+            "frase": "Hold the spoon by its long handle.",
+            "accion": {
+              "gl": "Collede o mango con tres dedos coma ao comer.",
+              "es": "Coged el mango con tres dedos como al comer."
+            }
+          },
+          {
+            "tipo": "accion",
+            "en": "stir",
+            "gl": "remexer",
+            "es": "remover",
+            "lamina": "pal_stir",
+            "frase": "Stir round and round in the bowl.",
+            "accion": {
+              "gl": "Facede círculos coa man coma remexendo na cunca.",
+              "es": "Haced círculos con la mano como removiendo en el cuenco."
+            }
+          },
+          {
+            "tipo": "cualidad",
+            "en": "shiny",
+            "gl": "brillante",
+            "es": "brillante",
+            "lamina": "pal_shiny",
+            "frase": "The clean metal spoon is very shiny.",
+            "accion": {
+              "gl": "Sorríde mirando o voso reflexo brillante na culler.",
+              "es": "Sonreíd mirando vuestro reflejo brillante en la cuchara."
+            }
+          }
+        ]
+      },
+      "modelo": {
+        "neno": "spoon",
+        "adulto": [
+          "Spoon.",
+          "A shiny spoon.",
+          "Stir with the shiny spoon."
+        ],
+        "nota": {
+          "gl": "Pecha 3-4 anos co experimento da culler-espello ampliando ata a acción completa.",
+          "es": "Cierra 3-4 años con el experimento de la cuchara-espejo ampliando hasta la acción completa."
+        }
+      }
+    },
+    {
+      "curso": "curso_4_5",
+      "mes": 1,
+      "fuente": "nueva",
+      "par": {
+        "a": {
+          "en": "cape",
+          "gl": "capa",
+          "es": "capa",
+          "lamina": "pal_cape"
+        },
+        "b": {
+          "en": "tape",
+          "gl": "cinta",
+          "es": "cinta",
+          "lamina": "pal_tape"
+        },
+        "fonema": "/k/ → /t/",
+        "nota": {
+          "gl": "«Cape» nace atrás coa lingua elevada (/k/); «tape» faise coa punta da lingua detrás dos dentes (/t/).",
+          "es": "«Cape» nace atrás con la lengua elevada (/k/); «tape» se hace con la punta de la lengua detrás de los dientes (/t/)."
+        },
+        "mision_acerto": {
+          "gl": "Poñede unha capa de superheroes e dade un salto valente!",
+          "es": "¡Poneos una capa de superhéroes y dad un salto valiente!"
+        },
+        "mision_fallo": {
+          "gl": "Man no queixo para deixar quieta a punta da lingua: «k-k-k» para «cape» e punta nos dentes para «tape».",
+          "es": "Mano en la barbilla para dejar quieta la punta de la lengua: «k-k-k» para «cape» y punta en los dientes para «tape»."
+        },
+        "pista": {
+          "gl": "Punta abaixo e parte de atrás arriba para /k/; punta nos dentes para /t/.",
+          "es": "Punta abajo y parte de atrás arriba para /k/; punta en los dientes para /t/."
+        }
+      },
+      "progresion": {
+        "tema": {
+          "gl": "Colexio · A mochila",
+          "es": "Colegio · La mochila"
+        },
+        "fases": [
+          {
+            "tipo": "concepto",
+            "en": "backpack",
+            "gl": "mochila",
+            "es": "mochila",
+            "lamina": "pal_backpack",
+            "frase": "Get your school backpack ready.",
+            "accion": {
+              "gl": "Poñede os brazos atrás coma pasando as asas da mochila.",
+              "es": "Poned los brazos atrás como pasando las asas de la mochila."
+            }
+          },
+          {
+            "tipo": "parte",
+            "en": "zipper",
+            "gl": "cremalleira",
+            "es": "cremallera",
+            "lamina": "pal_zipper",
+            "frase": "Pull the zipper up to keep things safe.",
+            "accion": {
+              "gl": "Subide e baixade a man facendo «ziiip!».",
+              "es": "Subid y bajad la mano haciendo «¡ziiip!»."
+            }
+          },
+          {
+            "tipo": "accion",
+            "en": "carry",
+            "gl": "levar",
+            "es": "llevar",
+            "lamina": "pal_carry",
+            "frase": "Carry your bag on both shoulders.",
+            "accion": {
+              "gl": "Camiñade pola sala sostendo as asas imaxinarias.",
+              "es": "Caminad por la sala sujetando las asas imaginarias."
+            }
+          },
+          {
+            "tipo": "cualidad",
+            "en": "heavy",
+            "gl": "pesada",
+            "es": "pesada",
+            "lamina": "pal_heavy",
+            "frase": "Full of books, the bag feels heavy!",
+            "accion": {
+              "gl": "Inclinádevos un pouco cara adiante coma levando peso.",
+              "es": "Inclinaos un poco hacia delante como llevando peso."
+            }
+          }
+        ]
+      },
+      "modelo": {
+        "neno": "backpack",
+        "adulto": [
+          "Backpack.",
+          "A heavy backpack.",
+          "Carry the heavy backpack."
+        ],
+        "nota": {
+          "gl": "Une o vocabulario da mochila de setembro coa súa parte e o esforzo de levala.",
+          "es": "Une el vocabulario de la mochila de septiembre con su parte y el esfuerzo de llevarla."
+        }
+      }
+    },
+    {
+      "curso": "curso_4_5",
+      "mes": 2,
+      "fuente": "valeria:en-seq-dog",
+      "par": {
+        "a": {
+          "en": "fox",
+          "gl": "raposo",
+          "es": "zorro",
+          "lamina": "pal_fox"
+        },
+        "b": {
+          "en": "box",
+          "gl": "caixa",
+          "es": "caja",
+          "lamina": "pal_box"
+        },
+        "fonema": "/f/ → /b/",
+        "nota": {
+          "gl": "«Fox» deixa escapar o aire entre os dentes de arriba e o beizo inferior (/f/); «box» pecha os dous beizos vibrando (/b/).",
+          "es": "«Fox» deja escapar el aire entre los dientes de arriba y el labio inferior (/f/); «box» cierra los dos labios vibrando (/b/)."
+        },
+        "mision_acerto": {
+          "gl": "Camiñade moi sixilosos coma un raposo polo bosque!",
+          "es": "¡Caminad muy sigilosos como un zorro por el bosque!"
+        },
+        "mision_fallo": {
+          "gl": "Xogo diante do espello: mordede suavemente o beizo inferior e soprade «fff» para «fox», fronte aos beizos xuntos de «box».",
+          "es": "Juego delante del espejo: morded suavemente el labio inferior y soplad «fff» para «fox», frente a los labios juntos de «box»."
+        },
+        "pista": {
+          "gl": "Dentes superiores no beizo inferior con aire longo para /f/; dous beizos xuntos con voz para /b/.",
+          "es": "Dientes superiores en el labio inferior con aire largo para /f/; dos labios juntos con voz para /b/."
+        }
+      },
+      "progresion": {
+        "tema": {
+          "gl": "Animais · O can",
+          "es": "Animales · El perro"
+        },
+        "fases": [
+          {
+            "tipo": "concepto",
+            "en": "dog",
+            "gl": "can",
+            "es": "perro",
+            "lamina": "pal_dog",
+            "frase": "It lives with us and goes woof.",
+            "accion": {
+              "gl": "Fai camiñar un can de peluche pola mesa cara á túa crianza.",
+              "es": "Haz caminar un perro de peluche por la mesa hacia tu peque."
+            }
+          },
+          {
+            "tipo": "parte",
+            "en": "tail",
+            "gl": "rabo",
+            "es": "cola",
+            "lamina": "pal_tail",
+            "frase": "This is the part that wags when it is happy.",
+            "accion": {
+              "gl": "Abanea unha man detrás de ti coma un rabo mentres a túa crianza te imita.",
+              "es": "Mueve una mano detrás de ti como una cola mientras tu peque te imita."
+            }
+          },
+          {
+            "tipo": "accion",
+            "en": "run",
+            "gl": "correr",
+            "es": "correr",
+            "lamina": "pal_run",
+            "frase": "Four legs going as fast as they can.",
+            "accion": {
+              "gl": "Correde no sitio xuntos durante cinco segundos.",
+              "es": "Corred en el sitio juntos durante cinco segundos."
+            }
+          },
+          {
+            "tipo": "cualidad",
+            "en": "soft",
+            "gl": "suave",
+            "es": "suave",
+            "lamina": "pal_soft",
+            "frase": "That is how the fur feels under your hand.",
+            "accion": {
+              "gl": "Acaricia o peluche e despois a meixela da túa crianza co mesmo xesto suave.",
+              "es": "Acaricia el peluche y después la mejilla de tu peque con el mismo toque suave."
+            }
+          }
+        ]
+      },
+      "modelo": {
+        "neno": "dog",
+        "adulto": [
+          "Dog.",
+          "A soft dog.",
+          "The soft dog runs."
+        ],
+        "nota": {
+          "gl": "Exemplo exacto do mes dos animais do bosque: nome, calidade táctil e acción.",
+          "es": "Ejemplo exacto del mes de los animales del bosque: nombre, cualidad táctil y acción."
+        }
+      }
+    },
+    {
+      "curso": "curso_4_5",
+      "mes": 3,
+      "fuente": "nueva",
+      "par": {
+        "a": {
+          "en": "hill",
+          "gl": "outeiro",
+          "es": "colina",
+          "lamina": "pal_hill"
+        },
+        "b": {
+          "en": "mill",
+          "gl": "muíño",
+          "es": "molino",
+          "lamina": "pal_mill"
+        },
+        "fonema": "/h/ → /m/",
+        "nota": {
+          "gl": "«Hill» empeza cun alento suave e aberto sen pechar os beizos (/h/); «mill» pecha os beizos vibrando polo nariz (/m/).",
+          "es": "«Hill» empieza con un aliento suave y abierto sin cerrar los labios (/h/); «mill» cierra los labios vibrando por la nariz (/m/)."
+        },
+        "mision_acerto": {
+          "gl": "Rodade coma unha castaña ladeira abaixo desde o alto do outeiro!",
+          "es": "¡Rodad como una castaña ladera abajo desde lo alto de la colina!"
+        },
+        "mision_fallo": {
+          "gl": "Pon a man diante da boca para notar o aire quente de «hill», e logo pon un dedo no nariz para notar o «mmm» de «mill».",
+          "es": "Pon la mano delante de la boca para notar el aire cálido de «hill», y luego un dedo en la nariz para notar la «mmm» de «mill»."
+        },
+        "pista": {
+          "gl": "Boca aberta con aire morno para /h/; beizos pechados con zumbido no nariz para /m/.",
+          "es": "Boca abierta con aire cálido para /h/; labios cerrados con zumbido en la nariz para /m/."
+        }
+      },
+      "progresion": {
+        "tema": {
+          "gl": "Outono · O ourizo",
+          "es": "Otoño · El erizo"
+        },
+        "fases": [
+          {
+            "tipo": "concepto",
+            "en": "hedgehog",
+            "gl": "ourizo",
+            "es": "erizo",
+            "lamina": "pal_ourizo",
+            "frase": "The chestnut looks like a little hedgehog.",
+            "accion": {
+              "gl": "Enroscádevos no chan feitos unha bóla pequena.",
+              "es": "Enroscaos en el suelo hechos una bolita."
+            }
+          },
+          {
+            "tipo": "parte",
+            "en": "spines",
+            "gl": "púas",
+            "es": "púas",
+            "lamina": "pal_spines",
+            "frase": "On its back it has lots of spines.",
+            "accion": {
+              "gl": "Estendede os dedos tesos coma púas polo lombo.",
+              "es": "Extended los dedos tiesos como púas por la espalda."
+            }
+          },
+          {
+            "tipo": "accion",
+            "en": "roll",
+            "gl": "rodar",
+            "es": "rodar",
+            "lamina": "pal_roll",
+            "frase": "It can curl up and roll down the hill.",
+            "accion": {
+              "gl": "Rodade suavemente dun lado a outro pola colchoneta.",
+              "es": "Rodad suavemente de un lado a otro por la colchoneta."
+            }
+          },
+          {
+            "tipo": "cualidad",
+            "en": "spiky",
+            "gl": "espiñento",
+            "es": "pinchudo",
+            "lamina": "pal_spiky",
+            "frase": "Careful, the outside shell is spiky!",
+            "accion": {
+              "gl": "Tocade coa punta do dedo no aire facendo «uy!» con cara simpática.",
+              "es": "Tocad con la punta del dedo en el aire haciendo «¡uy!» con cara simpática."
+            }
+          }
+        ]
+      },
+      "modelo": {
+        "neno": "hedgehog",
+        "adulto": [
+          "Hedgehog.",
+          "A spiky hedgehog.",
+          "The spiky hedgehog rolls."
+        ],
+        "nota": {
+          "gl": "Conecta o conto do ourizo e a castaña ladeira abaixo nunha expansión de tres chanzos.",
+          "es": "Conecta el cuento del erizo y la castaña ladera abajo en una expansión de tres escalones."
+        }
+      }
+    },
+    {
+      "curso": "curso_4_5",
+      "mes": 4,
+      "fuente": "valeria:key-tea+en-seq-cat",
+      "par": {
+        "a": {
+          "en": "key",
+          "gl": "chave",
+          "es": "llave",
+          "lamina": "pal_key"
+        },
+        "b": {
+          "en": "tea",
+          "gl": "té",
+          "es": "té",
+          "lamina": "pal_tea"
+        },
+        "fonema": "/k/ → /t/",
+        "nota": {
+          "gl": "«Key» nace na parte de atrás da lingua (/k/); «tea» faise coa punta nos dentes (/t/).",
+          "es": "«Key» nace en la parte de atrás de la lengua (/k/); «tea» se hace con la punta en los dientes (/t/)."
+        },
+        "mision_acerto": {
+          "gl": "Abre a porta: facede que xirades unha chave tres veces e abride unha porta imaxinaria.",
+          "es": "Abre la puerta: haced como que giráis una llave tres veces y abrid una puerta imaginaria."
+        },
+        "mision_fallo": {
+          "gl": "Pon un dedo suavemente no queixo para notar como sube só a parte de atrás da lingua: «k-k-k» xuntos.",
+          "es": "Pon un dedo suavemente en la barbilla para notar cómo sube solo la parte de atrás de la lengua: «k-k-k» juntos."
+        },
+        "pista": {
+          "gl": "Deixa a punta da lingua abaixo e sube a parte de ATRÁS: «k, k, k».",
+          "es": "Deja la punta de la lengua abajo y sube la parte de ATRÁS: «k, k, k»."
+        }
+      },
+      "progresion": {
+        "tema": {
+          "gl": "Animais · O gato",
+          "es": "Animales · El gato"
+        },
+        "fases": [
+          {
+            "tipo": "concepto",
+            "en": "cat",
+            "gl": "gato",
+            "es": "gato",
+            "lamina": "pal_cat",
+            "frase": "This is the little cat.",
+            "accion": {
+              "gl": "Acaricia suavemente un gatiño imaxinario no teu colo.",
+              "es": "Acaricia suavemente un gatito imaginario en tu regazo."
+            }
+          },
+          {
+            "tipo": "parte",
+            "en": "whiskers",
+            "gl": "bigotes",
+            "es": "bigotes",
+            "lamina": "pal_whiskers",
+            "frase": "The cat has tickly whiskers on its face.",
+            "accion": {
+              "gl": "Debuxade tres rallas de bigote nas meixelas cos dedos.",
+              "es": "Dibujad tres rayitas de bigote en las mejillas con los dedos."
+            }
+          },
+          {
+            "tipo": "accion",
+            "en": "climb",
+            "gl": "gabear",
+            "es": "trepar",
+            "lamina": "pal_climb",
+            "frase": "The cat climbs up the tall tree.",
+            "accion": {
+              "gl": "Gabeade alternando as mans cara arriba coma subindo por un tronco.",
+              "es": "Trepad alternando las manos hacia arriba como subiendo por un tronco."
+            }
+          },
+          {
+            "tipo": "cualidad",
+            "en": "soft",
+            "gl": "suave",
+            "es": "suave",
+            "lamina": "pal_soft",
+            "frase": "The cat has very soft fur.",
+            "accion": {
+              "gl": "Acariciádevos a meixela co dorso da man.",
+              "es": "Acariciaos la mejilla con el dorso de la mano."
+            }
+          }
+        ]
+      },
+      "modelo": {
+        "neno": "cat",
+        "adulto": [
+          "Cat.",
+          "A soft cat.",
+          "The soft cat climbs."
+        ],
+        "nota": {
+          "gl": "Na historia do gato e o inverno, amplías «cat» coa textura («soft») e o verbo («climbs»).",
+          "es": "En la historia del gato y el invierno, amplías «cat» con la textura («soft») y el verbo («climbs»)."
+        }
+      }
+    },
+    {
+      "curso": "curso_4_5",
+      "mes": 5,
+      "fuente": "nueva",
+      "par": {
+        "a": {
+          "en": "van",
+          "gl": "furgoneta",
+          "es": "furgoneta",
+          "lamina": "pal_van"
+        },
+        "b": {
+          "en": "fan",
+          "gl": "ventilador",
+          "es": "ventilador",
+          "lamina": "pal_fan"
+        },
+        "fonema": "/v/ → /f/",
+        "nota": {
+          "gl": "«Van» e «fan» póñense igual (dentes de arriba no beizo de abaixo), pero «van» vibra na gorxa (/v/) e «fan» só sopra aire (/f/).",
+          "es": "«Van» y «fan» se colocan igual (dientes de arriba en el labio de abajo), pero «van» vibra en la garganta (/v/) y «fan» solo sopla aire (/f/)."
+        },
+        "mision_acerto": {
+          "gl": "Conducide a furgoneta de rescate pola tormenta facendo «vvvv!».",
+          "es": "Conducid la furgoneta de rescate por la tormenta haciendo «¡vvvv!»."
+        },
+        "mision_fallo": {
+          "gl": "Dous dedos na gorxa mentres mordedes suave o beizo: «van» zumba debaixo dos dedos; «fan» non vibra nada.",
+          "es": "Dos dedos en la garganta mientras mordéis suave el labio: «van» zumba bajo los dedos; «fan» no vibra nada."
+        },
+        "pista": {
+          "gl": "Dentes no beizo inferior: con zumbido na gorxa para /v/, só sopro de vento para /f/.",
+          "es": "Dientes en el labio inferior: con zumbido en la garganta para /v/, solo soplo de viento para /f/."
+        }
+      },
+      "progresion": {
+        "tema": {
+          "gl": "A tormenta · O paraugas",
+          "es": "La tormenta · El paraguas"
+        },
+        "fases": [
+          {
+            "tipo": "concepto",
+            "en": "umbrella",
+            "gl": "paraugas",
+            "es": "paraguas",
+            "lamina": "pal_pal_umbrella",
+            "frase": "Bring your umbrella when clouds arrive.",
+            "accion": {
+              "gl": "Suxeitade o paraugas imaxinario sobre a cabeza.",
+              "es": "Sujetad el paraguas imaginario sobre la cabeza."
+            }
+          },
+          {
+            "tipo": "parte",
+            "en": "handle",
+            "gl": "mango",
+            "es": "mango",
+            "lamina": "pal_handle",
+            "frase": "Hold tight to the curved handle.",
+            "accion": {
+              "gl": "Facede un gancho coa man coma o mango do paraugas.",
+              "es": "Haced un gancho con la mano como el mango del paraguas."
+            }
+          },
+          {
+            "tipo": "accion",
+            "en": "open",
+            "gl": "abrir",
+            "es": "abrir",
+            "lamina": "pal_open",
+            "frase": "Press the button to open it wide.",
+            "accion": {
+              "gl": "Abride os brazos en arco por riba da cabeza.",
+              "es": "Abrid los brazos en arco por encima de la cabeza."
+            }
+          },
+          {
+            "tipo": "cualidad",
+            "en": "dry",
+            "gl": "seco",
+            "es": "seco",
+            "lamina": "pal_dry",
+            "frase": "Under the umbrella you stay dry!",
+            "accion": {
+              "gl": "Pasade as mans polos brazos coma comprobando que están secos.",
+              "es": "Pasad las manos por los brazos como comprobando que están secos."
+            }
+          }
+        ]
+      },
+      "modelo": {
+        "neno": "umbrella",
+        "adulto": [
+          "Umbrella.",
+          "Open umbrella.",
+          "The open umbrella keeps us dry."
+        ],
+        "nota": {
+          "gl": "Na tormenta do val, amplías «umbrella» cara á acción («open») e o resultado («dry»).",
+          "es": "En la tormenta del valle, amplías «umbrella» hacia la acción («open») y el resultado («dry»)."
+        }
+      }
+    },
+    {
+      "curso": "curso_4_5",
+      "mes": 6,
+      "fuente": "nueva",
+      "par": {
+        "a": {
+          "en": "shoe",
+          "gl": "zapato",
+          "es": "zapato",
+          "lamina": "pal_shoe"
+        },
+        "b": {
+          "en": "zoo",
+          "gl": "zoolóxico",
+          "es": "zoológico",
+          "lamina": "pal_zoo"
+        },
+        "fonema": "/ʃ/ → /z/",
+        "nota": {
+          "gl": "«Shoe» empeza co sopro ancho e silencioso de pedir calma (/ʃ/); «zoo» zumba coma unha abella (/z/).",
+          "es": "«Shoe» empieza con el soplo ancho y silencioso de pedir calma (/ʃ/); «zoo» zumba como una abeja (/z/)."
+        },
+        "mision_acerto": {
+          "gl": "Calzade os zapatos e pisade na lama sen esvarar!",
+          "es": "¡Calzaos los zapatos y pisad en el barro sin resbalar!"
+        },
+        "mision_fallo": {
+          "gl": "Dedos na gorxa: «shhh» é silencio sen vibrar; «zzzz» fai cóxegas na gorxa coma unha mosca.",
+          "es": "Dedos en la garganta: «shhh» es silencio sin vibrar; «zzzz» hace cosquillas en la garganta como una mosca."
+        },
+        "pista": {
+          "gl": "Beizos redondos e aire suave para «shoe»; dentes xuntos e zumbido para «zoo».",
+          "es": "Labios redondos y aire suave para «shoe»; dientes juntos y zumbido para «zoo»."
+        }
+      },
+      "progresion": {
+        "tema": {
+          "gl": "Animais do monte · O raposo",
+          "es": "Animales del monte · El zorro"
+        },
+        "fases": [
+          {
+            "tipo": "concepto",
+            "en": "fox",
+            "gl": "raposo",
+            "es": "zorro",
+            "lamina": "pal_fox",
+            "frase": "A clever orange fox lives in the woods.",
+            "accion": {
+              "gl": "Poñede as mans na cabeza coma orellas puntiagudas.",
+              "es": "Poned las manos en la cabeza como orejas puntiagudas."
+            }
+          },
+          {
+            "tipo": "parte",
+            "en": "paw",
+            "gl": "pata",
+            "es": "pata",
+            "lamina": "pal_paw",
+            "frase": "It walks softly on each furry paw.",
+            "accion": {
+              "gl": "Apoiade as mans moi amodo sobre os xeonllos.",
+              "es": "Apoyad las manos muy despacio sobre las rodillas."
+            }
+          },
+          {
+            "tipo": "accion",
+            "en": "sneak",
+            "gl": "ir de puntillas",
+            "es": "ir de puntillas",
+            "lamina": "pal_sneak",
+            "frase": "Watch the fox sneak between the trees.",
+            "accion": {
+              "gl": "Camiñade de puntillas sen facer ningún ruído.",
+              "es": "Caminad de puntillas sin hacer ningún ruido."
+            }
+          },
+          {
+            "tipo": "cualidad",
+            "en": "quiet",
+            "gl": "silencioso",
+            "es": "silencioso",
+            "lamina": "pal_quiet",
+            "frase": "Steps in the forest are very quiet.",
+            "accion": {
+              "gl": "Poñede un dedo nos beizos mirando arredor.",
+              "es": "Poned un dedo en los labios mirando alrededor."
+            }
+          }
+        ]
+      },
+      "modelo": {
+        "neno": "fox",
+        "adulto": [
+          "Fox.",
+          "A quiet fox.",
+          "The quiet fox sneaks."
+        ],
+        "nota": {
+          "gl": "Parte de «fox» e devolve a escena do monte («quiet», «sneaks») mentres xogades a ir de puntillas.",
+          "es": "Parte de «fox» y devuelve la escena del monte («quiet», «sneaks») mientras jugáis a ir de puntillas."
+        }
+      }
+    },
+    {
+      "curso": "curso_4_5",
+      "mes": 7,
+      "fuente": "nueva",
+      "par": {
+        "a": {
+          "en": "hive",
+          "gl": "colmea",
+          "es": "colmena",
+          "lamina": "pal_hive"
+        },
+        "b": {
+          "en": "five",
+          "gl": "cinco",
+          "es": "cinco",
+          "lamina": "pal_five"
+        },
+        "fonema": "/h/ → /f/",
+        "nota": {
+          "gl": "«Hive» é un sopro aberto dende a gorxa sen tocar os dentes (/h/); «five» apoia os dentes de arriba no beizo (/f/).",
+          "es": "«Hive» es un soplo abierto desde la garganta sin tocar los dientes (/h/); «five» apoya los dientes de arriba en el labio (/f/)."
+        },
+        "mision_acerto": {
+          "gl": "Zunide arredor da colmea e voade de flor en flor!",
+          "es": "¡Zumbad alrededor de la colmena y volad de flor en flor!"
+        },
+        "mision_fallo": {
+          "gl": "Mirade os dentes diante do espello: para «hive» a boca queda aberta; para «five» os dentes tocan o beizo.",
+          "es": "Mirad los dientes delante del espejo: para «hive» la boca queda abierta; para «five» los dientes tocan el labio."
+        },
+        "pista": {
+          "gl": "Boca aberta con alento morno para /h/; dentes no beizo inferior para /f/.",
+          "es": "Boca abierta con aliento cálido para /h/; dientes en el labio inferior para /f/."
+        }
+      },
+      "progresion": {
+        "tema": {
+          "gl": "Polinización · A abella",
+          "es": "Polinización · La abeja"
+        },
+        "fases": [
+          {
+            "tipo": "concepto",
+            "en": "bee",
+            "gl": "abella",
+            "es": "abeja",
+            "lamina": "pal_bee",
+            "frase": "A little bee visits the red flower.",
+            "accion": {
+              "gl": "Movede os dedos rápido aos lados coma ás pequenas.",
+              "es": "Moved los dedos rápido a los lados como alitas."
+            }
+          },
+          {
+            "tipo": "parte",
+            "en": "stripe",
+            "gl": "raia",
+            "es": "raya",
+            "lamina": "pal_stripe",
+            "frase": "It wears a yellow and black stripe.",
+            "accion": {
+              "gl": "Debuxade raias co dedo polos brazos.",
+              "es": "Dibujad rayas con el dedo por los brazos."
+            }
+          },
+          {
+            "tipo": "accion",
+            "en": "buzz",
+            "gl": "zunir",
+            "es": "zumbar",
+            "lamina": "pal_buzz",
+            "frase": "Listen to the wings buzz in the air.",
+            "accion": {
+              "gl": "Facede «bzzz» xuntos mentres dades voltas pola sala.",
+              "es": "Haced «bzzz» juntos mientras dais vueltas por la sala."
+            }
+          },
+          {
+            "tipo": "cualidad",
+            "en": "busy",
+            "gl": "atarefada",
+            "es": "atareada",
+            "lamina": "pal_busy",
+            "frase": "Going from flower to flower, she is busy.",
+            "accion": {
+              "gl": "Sinalade varias flores imaxinarias sen parar de movervos.",
+              "es": "Señalad varias flores imaginarias sin parar de moveros."
+            }
+          }
+        ]
+      },
+      "modelo": {
+        "neno": "bee",
+        "adulto": [
+          "Bee.",
+          "A busy bee.",
+          "The busy bee buzzes."
+        ],
+        "nota": {
+          "gl": "Acompaña o voo das abellas con «busy» e o son «buzzes».",
+          "es": "Acompaña el vuelo de las abejas con «busy» y el sonido «buzzes»."
+        }
+      }
+    },
+    {
+      "curso": "curso_4_5",
+      "mes": 8,
+      "fuente": "nueva",
+      "par": {
+        "a": {
+          "en": "zoom",
+          "gl": "zunido veloz",
+          "es": "zumbido veloz",
+          "lamina": "pal_zoom"
+        },
+        "b": {
+          "en": "boom",
+          "gl": "estrondo",
+          "es": "estruendo",
+          "lamina": "pal_boom"
+        },
+        "fonema": "/z/ → /b/",
+        "nota": {
+          "gl": "«Zoom» empeza cun zumbido longo cos dentes xuntos (/z/); «boom» pecha os beizos de golpe antes de abrir (/b/).",
+          "es": "«Zoom» empieza con un zumbido largo con los dientes juntos (/z/); «boom» cierra los labios de golpe antes de abrir (/b/)."
+        },
+        "mision_acerto": {
+          "gl": "Correde coma o vento rápido da tormenta facendo «zzzzoom!».",
+          "es": "Corred como el viento rápido de la tormenta haciendo «¡zzzzoom!»."
+        },
+        "mision_fallo": {
+          "gl": "Xogo da orquestra: o vento fai un «zzzz» longo cos dentes xuntos, e o trono pecha os beizos en «boom!».",
+          "es": "Juego de la orquesta: el viento hace una «zzzz» larga con los dientes juntos, y el trueno cierra los labios en «¡boom!»."
+        },
+        "pista": {
+          "gl": "Aire zumbando entre os dentes para «zoom»; beizos pechados que estalan para «boom».",
+          "es": "Aire zumbando entre los dientes para «zoom»; labios cerrados que estallan para «boom»."
+        }
+      },
+      "progresion": {
+        "tema": {
+          "gl": "O bosque · O lobo",
+          "es": "El bosque · El lobo"
+        },
+        "fases": [
+          {
+            "tipo": "concepto",
+            "en": "wolf",
+            "gl": "lobo",
+            "es": "lobo",
+            "lamina": "pal_wolf",
+            "frase": "The wolf wakes up in the forest.",
+            "accion": {
+              "gl": "Póndevos á espreita e quedade conxelados cando mire.",
+              "es": "Poneos al acecho y quedaos congelados cuando mire."
+            }
+          },
+          {
+            "tipo": "parte",
+            "en": "ear",
+            "gl": "orella",
+            "es": "oreja",
+            "lamina": "pal_ear",
+            "frase": "It lifts a pointy ear to listen.",
+            "accion": {
+              "gl": "Levade as mans ás orellas ben atentos aos sons.",
+              "es": "Llevad las manos a las orejas bien atentos a los sonidos."
+            }
+          },
+          {
+            "tipo": "accion",
+            "en": "howl",
+            "gl": "ouvear",
+            "es": "aullar",
+            "lamina": "pal_howl",
+            "frase": "Under the moon, the wolf starts to howl.",
+            "accion": {
+              "gl": "Facede «auuu!» mirando cara ao teito xuntos.",
+              "es": "Haced «¡auuu!» mirando hacia el techo juntos."
+            }
+          },
+          {
+            "tipo": "cualidad",
+            "en": "hungry",
+            "gl": "famento",
+            "es": "hambriento",
+            "lamina": "pal_hungry",
+            "frase": "After sleeping, the wolf feels hungry.",
+            "accion": {
+              "gl": "Fregádevos a barriga facendo círculos coa man.",
+              "es": "Frotaos la barriga haciendo círculos con la mano."
+            }
+          }
+        ]
+      },
+      "modelo": {
+        "neno": "wolf",
+        "adulto": [
+          "Wolf.",
+          "A hungry wolf.",
+          "The hungry wolf howls."
+        ],
+        "nota": {
+          "gl": "Na historia do lobo que esperta, unes emoción física («hungry») e acción («howls»).",
+          "es": "En la historia del lobo que despierta, unes sensación física («hungry») y acción («howls»)."
+        }
+      }
+    },
+    {
+      "curso": "curso_4_5",
+      "mes": 9,
+      "fuente": "valeria:thin-fin",
+      "par": {
+        "a": {
+          "en": "thin",
+          "gl": "delgado",
+          "es": "delgado",
+          "lamina": "pal_thin"
+        },
+        "b": {
+          "en": "fin",
+          "gl": "aleta",
+          "es": "aleta",
+          "lamina": "pal_fin"
+        },
+        "fonema": "/θ/ → /f/",
+        "nota": {
+          "gl": "«Thin» saca un pouquiño a punta da lingua entre os dentes (/θ/); «fin» apoia os dentes no beizo inferior (/f/).",
+          "es": "«Thin» saca un poquito la punta de la lengua entre los dientes (/θ/); «fin» apoya los dientes en el labio inferior (/f/)."
+        },
+        "mision_acerto": {
+          "gl": "Delgado e ancho: facédevos o máis estreitiños que poidades e despois o máis anchos posible.",
+          "es": "Delgado y ancho: haceos todo lo estrechitos que podáis y después todo lo anchos posible."
+        },
+        "mision_fallo": {
+          "gl": "Xogo do espello: os dous asomades un chisco a lingua entre os dentes e soprades suave diante do espello.",
+          "es": "Juego del espejo: los dos asomáis un poquito la lengua entre los dientes y sopláis suave delante del espejo."
+        },
+        "pista": {
+          "gl": "Pon a punta da lingua suavemente entre os dentes e sopra: «thhh».",
+          "es": "Pon la punta de la lengua suavemente entre los dientes y sopla: «thhh»."
+        }
+      },
+      "progresion": {
+        "tema": {
+          "gl": "Luz e sombra · O sol",
+          "es": "Luz y sombra · El sol"
+        },
+        "fases": [
+          {
+            "tipo": "concepto",
+            "en": "sun",
+            "gl": "sol",
+            "es": "sol",
+            "lamina": "pal_sun",
+            "frase": "The warm sun shines in the sky.",
+            "accion": {
+              "gl": "Facede un círculo grande cos dous brazos sobre a cabeza.",
+              "es": "Haced un círculo grande con ambos brazos sobre la cabeza."
+            }
+          },
+          {
+            "tipo": "parte",
+            "en": "ray",
+            "gl": "raio",
+            "es": "rayo",
+            "lamina": "pal_ray",
+            "frase": "A bright ray of light makes a shadow.",
+            "accion": {
+              "gl": "Estendede os dedos coma raios que saen cara a fóra.",
+              "es": "Extended los dedos como rayos que salen hacia fuera."
+            }
+          },
+          {
+            "tipo": "accion",
+            "en": "shine",
+            "gl": "brillar",
+            "es": "brillar",
+            "lamina": "pal_shine",
+            "frase": "The sun begins to shine over the playground.",
+            "accion": {
+              "gl": "Abride e pechade as mans coma chispas de luz.",
+              "es": "Abrid y cerrad las manos como chispas de luz."
+            }
+          },
+          {
+            "tipo": "cualidad",
+            "en": "bright",
+            "gl": "luminoso",
+            "es": "luminoso",
+            "lamina": "pal_bright",
+            "frase": "At midday, the light is very bright.",
+            "accion": {
+              "gl": "Tapade un chisco os ollos coa man coma se dese moita luz.",
+              "es": "Tapad un poco los ojos con la mano como si diese mucha luz."
+            }
+          }
+        ]
+      },
+      "modelo": {
+        "neno": "sun",
+        "adulto": [
+          "Sun.",
+          "A bright sun.",
+          "The bright sun shines."
+        ],
+        "nota": {
+          "gl": "Co xogo das sombras ao sol, amplías «sun» con «bright» e «shines».",
+          "es": "Con el juego de las sombras al sol, amplías «sun» con «bright» y «shines»."
+        }
+      }
+    },
+    {
+      "curso": "curso_4_5",
+      "mes": 10,
+      "fuente": "valeria:sip-ship+en-seq-balloon",
+      "par": {
+        "a": {
+          "en": "ship",
+          "gl": "barco",
+          "es": "barco",
+          "lamina": "pal_ship"
+        },
+        "b": {
+          "en": "sip",
+          "gl": "grolo",
+          "es": "sorbo",
+          "lamina": "pal_sip"
+        },
+        "fonema": "/ʃ/ → /s/",
+        "nota": {
+          "gl": "«Ship» leva o son longo e doce de pedir silencio (/ʃ/); «sip» leva un «s» fino cos dentes xuntos (/s/).",
+          "es": "«Ship» lleva el sonido largo y dulce de pedir silencio (/ʃ/); «sip» lleva una «s» fina con los dientes juntos (/s/)."
+        },
+        "mision_acerto": {
+          "gl": "Navegade no barco: balanceádevos dun lado ao outro mentres fas sons de ondas do mar.",
+          "es": "Navegad en el barco: balanceaos de un lado a otro mientras haces sonidos de olas del mar."
+        },
+        "mision_fallo": {
+          "gl": "Xogo do silencio: os dous facedes «shhh» cun dedo nos beizos durante tres segundos.",
+          "es": "Juego del silencio: los dos hacéis «shhh» con un dedo en los labios durante tres segundos."
+        },
+        "pista": {
+          "gl": "Arredonda os beizos e leva a lingua cara atrás: «shhh», como cando pedimos silencio.",
+          "es": "Redondea los labios y lleva la lengua hacia atrás: «shhh», como al pedir silencio."
+        }
+      },
+      "progresion": {
+        "tema": {
+          "gl": "Xogo · O globo",
+          "es": "Juego · El globo"
+        },
+        "fases": [
+          {
+            "tipo": "concepto",
+            "en": "balloon",
+            "gl": "globo",
+            "es": "globo",
+            "lamina": "pal_balloon",
+            "frase": "Look at the red party balloon.",
+            "accion": {
+              "gl": "Facede que suxeitades un fío que flota na man.",
+              "es": "Haced como que sujetáis una cuerda que flota en la mano."
+            }
+          },
+          {
+            "tipo": "parte",
+            "en": "string",
+            "gl": "corda",
+            "es": "cuerda",
+            "lamina": "pal_string",
+            "frase": "Hold tight to the long string.",
+            "accion": {
+              "gl": "Facede pinza con dous dedos ben apertados e tirade suave cara abaixo.",
+              "es": "Haced pinza con dos dedos bien apretados y tirad suave hacia abajo."
+            }
+          },
+          {
+            "tipo": "accion",
+            "en": "pop",
+            "gl": "estoupar",
+            "es": "explotar",
+            "lamina": "pal_pop",
+            "frase": "When it pokes a pin, it goes pop!",
+            "accion": {
+              "gl": "Dade unha palmada forte xuntos ao escoitar «pop!».",
+              "es": "Dad una palmada fuerte juntos al escuchar «¡pop!»."
+            }
+          },
+          {
+            "tipo": "cualidad",
+            "en": "round",
+            "gl": "redondo",
+            "es": "redondo",
+            "lamina": "pal_round",
+            "frase": "Full of air, the balloon is so round.",
+            "accion": {
+              "gl": "Debuxade un círculo grande no aire coas dúas mans.",
+              "es": "Dibujad un círculo grande en el aire con las dos manos."
+            }
+          }
+        ]
+      },
+      "modelo": {
+        "neno": "balloon",
+        "adulto": [
+          "Balloon.",
+          "A round balloon.",
+          "The round balloon pops."
+        ],
+        "nota": {
+          "gl": "Para pechar 4-5 anos cos xogos de auga do verán, amplías «balloon» ata «pops».",
+          "es": "Para cerrar 4-5 años con los juegos de agua del verano, amplías «balloon» hasta «pops»."
+        }
+      }
+    },
+    {
+      "curso": "curso_5_6",
+      "mes": 1,
+      "fuente": "nueva",
+      "par": {
+        "a": {
+          "en": "spot",
+          "gl": "mancha",
+          "es": "mancha",
+          "lamina": "pal_spot"
+        },
+        "b": {
+          "en": "pot",
+          "gl": "pote",
+          "es": "bote",
+          "lamina": "pal_pot"
+        },
+        "fonema": "/sp-/ → /p-/",
+        "nota": {
+          "gl": "«Spot» empeza cun asubío longo de serpe (/s/) antes do /p/; «pot» salta directo ao golpe cos beizos (/p/).",
+          "es": "«Spot» empieza con un silbido largo de serpiente (/s/) antes de la /p/; «pot» salta directo al golpe con los labios (/p/)."
+        },
+        "mision_acerto": {
+          "gl": "Buscade unha mancha de cor no papel e sinaládea co dedo!",
+          "es": "¡Buscad una mancha de color en el papel y señaladla con el dedo!"
+        },
+        "mision_fallo": {
+          "gl": "Primeiro o asubío «ssss» tres segundos, logo xuntádeo co golpe de «pot»: «ssss-pot».",
+          "es": "Primero el silbido «ssss» tres segundos, luego unidlo al golpe de «pot»: «ssss-pot»."
+        },
+        "pista": {
+          "gl": "Engade un «ssss» longo diante de «pot» para facer «ssss-spot».",
+          "es": "Añade una «ssss» larga delante de «pot» para hacer «ssss-spot»."
+        }
+      },
+      "progresion": {
+        "tema": {
+          "gl": "Cores que nacen · A pintura",
+          "es": "Colores que nacen · La pintura"
+        },
+        "fases": [
+          {
+            "tipo": "concepto",
+            "en": "paint",
+            "gl": "pintura",
+            "es": "pintura",
+            "lamina": "pal_pal_paint",
+            "frase": "Get ready to play with bright paint.",
+            "accion": {
+              "gl": "Facede que suxeitades unha paleta de pintor na man.",
+              "es": "Haced como que sujetáis una paleta de pintor en la mano."
+            }
+          },
+          {
+            "tipo": "parte",
+            "en": "brush",
+            "gl": "pincel",
+            "es": "pincel",
+            "lamina": "pal_brush",
+            "frase": "Dip the soft brush into the color.",
+            "accion": {
+              "gl": "Movede o dedo no aire coma pintando sobre un papel.",
+              "es": "Moved el dedo en el aire como pintando sobre un papel."
+            }
+          },
+          {
+            "tipo": "accion",
+            "en": "mix",
+            "gl": "mesturar",
+            "es": "mezclar",
+            "lamina": "pal_mix",
+            "frase": "Mix yellow and blue in the tray.",
+            "accion": {
+              "gl": "Remexede en círculos co pincel imaxinario.",
+              "es": "Removed en círculos con el pincel imaginario."
+            }
+          },
+          {
+            "tipo": "cualidad",
+            "en": "green",
+            "gl": "verde",
+            "es": "verde",
+            "lamina": "pal_green",
+            "frase": "Look, the two colors turned green!",
+            "accion": {
+              "gl": "Buscade algo verde pola aula ou na casa e sinaládeo.",
+              "es": "Buscad algo verde por el aula o en casa y señaladlo."
+            }
+          }
+        ]
+      },
+      "modelo": {
+        "neno": "paint",
+        "adulto": [
+          "Paint.",
+          "Green paint.",
+          "Mix the green paint."
+        ],
+        "nota": {
+          "gl": "No experimento de mesturar cores, devolves o resultado da mestura («green») e a acción («mix»).",
+          "es": "En el experimento de mezclar colores, devuelves el resultado de la mezcla («green») y la acción («mix»)."
+        }
+      }
+    },
+    {
+      "curso": "curso_5_6",
+      "mes": 2,
+      "fuente": "valeria:rake-wake",
+      "par": {
+        "a": {
+          "en": "rake",
+          "gl": "anciño",
+          "es": "rastrillo",
+          "lamina": "pal_rake"
+        },
+        "b": {
+          "en": "wake",
+          "gl": "espertar",
+          "es": "despertar",
+          "lamina": "pal_wake"
+        },
+        "fonema": "/r/ → /w/",
+        "nota": {
+          "gl": "«Rake» recolle a lingua atrás sen arredondar os beizos (/r/); «wake» arredonda os beizos coma nun bico (/w/).",
+          "es": "«Rake» recoge la lengua atrás sin redondear los labios (/r/); «wake» redondea los labios como en un beso (/w/)."
+        },
+        "mision_acerto": {
+          "gl": "Varrede as follas co anciño: tres varridas grandes polo chan e chocade os cinco!",
+          "es": "¡Rastrillad las hojas: tres barridos grandes por el suelo y chocad esos cinco!"
+        },
+        "mision_fallo": {
+          "gl": "Xogo do espello: dis «rrr» cos beizos ben abertos diante do espello e xogades a imitar o xesto.",
+          "es": "Juego del espejo: dices «rrr» con los labios bien abiertos delante del espejo y jugáis a imitar el gesto."
+        },
+        "pista": {
+          "gl": "Leva a lingua cara atrás e arriba sen arredondar os beizos: «rrr».",
+          "es": "Lleva la lengua hacia atrás y arriba sin redondear los labios: «rrr»."
+        }
+      },
+      "progresion": {
+        "tema": {
+          "gl": "Clasificación · A folla",
+          "es": "Clasificación · La hoja"
+        },
+        "fases": [
+          {
+            "tipo": "concepto",
+            "en": "leaf",
+            "gl": "folla",
+            "es": "hoja",
+            "lamina": "pal_leaf",
+            "frase": "Pick up an autumn leaf from the mat.",
+            "accion": {
+              "gl": "Suxeitade unha folla imaxinaria coas dúas mans.",
+              "es": "Sujetad una hoja imaginaria con las dos manos."
+            }
+          },
+          {
+            "tipo": "parte",
+            "en": "stem",
+            "gl": "talo",
+            "es": "tallo",
+            "lamina": "pal_stem",
+            "frase": "Hold the leaf by its thin stem.",
+            "accion": {
+              "gl": "Collédea pola punta fina cos dous dedos.",
+              "es": "Cogedla por la punta fina con los dos dedos."
+            }
+          },
+          {
+            "tipo": "accion",
+            "en": "sort",
+            "gl": "clasificar",
+            "es": "clasificar",
+            "lamina": "pal_sort",
+            "frase": "Sort the leaves inside the brown hoop.",
+            "accion": {
+              "gl": "Sinalade un aro imaxinario á esquerda e outro á dereita.",
+              "es": "Señalad un aro imaginario a la izquierda y otro a la derecha."
+            }
+          },
+          {
+            "tipo": "cualidad",
+            "en": "smooth",
+            "gl": "lisa",
+            "es": "lisa",
+            "lamina": "pal_smooth",
+            "frase": "Touch the back: this leaf feels smooth.",
+            "accion": {
+              "gl": "Pasade os dedos suavemente pola palma da man.",
+              "es": "Pasad los dedos suavemente por la palma de la mano."
+            }
+          }
+        ]
+      },
+      "modelo": {
+        "neno": "leaf",
+        "adulto": [
+          "Leaf.",
+          "A smooth leaf.",
+          "Sort the smooth leaf."
+        ],
+        "nota": {
+          "gl": "Coa clasificación nos aros, amplías «leaf» coa textura («smooth») e a tarefa («sort»).",
+          "es": "Con la clasificación en los aros, amplías «leaf» con la textura («smooth») y la tarea («sort»)."
+        }
+      }
+    },
+    {
+      "curso": "curso_5_6",
+      "mes": 3,
+      "fuente": "nueva",
+      "par": {
+        "a": {
+          "en": "light",
+          "gl": "luz",
+          "es": "luz",
+          "lamina": "pal_light"
+        },
+        "b": {
+          "en": "right",
+          "gl": "dereita",
+          "es": "derecha",
+          "lamina": "pal_right"
+        },
+        "fonema": "/l/ → /r/",
+        "nota": {
+          "gl": "En «light» a punta da lingua toca detrás dos dentes (/l/); en «right» a lingua recóllese atrás sen tocar (/r/).",
+          "es": "En «light» la punta de la lengua toca detrás de los dientes (/l/); en «right» la lengua se recoge atrás sin tocar (/r/)."
+        },
+        "mision_acerto": {
+          "gl": "Acendede unha lanterna imaxinaria cara ao teito para iluminar o cuarto!",
+          "es": "¡Encended una linterna imaginaria hacia el techo para iluminar el cuarto!"
+        },
+        "mision_fallo": {
+          "gl": "Espello de lingua: en «light» vese a punta da lingua subir aos dentes; en «right» non toca nada e vai cara atrás.",
+          "es": "Espejo de lengua: en «light» se ve la punta de la lengua subir a los dientes; en «right» no toca nada y va hacia atrás."
+        },
+        "pista": {
+          "gl": "Para /l/ a lingua apoia detrás dos dentes; para /r/ vai cara atrás sen tocar o padal.",
+          "es": "Para /l/ la lengua apoya detrás de los dientes; para /r/ va hacia atrás sin tocar el paladar."
+        }
+      },
+      "progresion": {
+        "tema": {
+          "gl": "Simetría · A bolboreta",
+          "es": "Simetría · La mariposa"
+        },
+        "fases": [
+          {
+            "tipo": "concepto",
+            "en": "butterfly",
+            "gl": "bolboreta",
+            "es": "mariposa",
+            "lamina": "pal_butterfly",
+            "frase": "Look at the symmetrical butterfly.",
+            "accion": {
+              "gl": "Cruzade os polgares e abride as mans coma dúas ás iguais.",
+              "es": "Cruzad los pulgares y abrid las manos como dos alas iguales."
+            }
+          },
+          {
+            "tipo": "parte",
+            "en": "spot",
+            "gl": "lunar",
+            "es": "lunar",
+            "lamina": "pal_spot",
+            "frase": "Each wing has the same round spot.",
+            "accion": {
+              "gl": "Tocade co índice un punto en cada man á vez.",
+              "es": "Tocad con el índice un punto en cada mano a la vez."
+            }
+          },
+          {
+            "tipo": "accion",
+            "en": "land",
+            "gl": "pousar",
+            "es": "posarse",
+            "lamina": "pal_land_action",
+            "frase": "Watch it land softly on a flower.",
+            "accion": {
+              "gl": "Baixade as mans moi amodo ata pousalas nos xeonllos.",
+              "es": "Bajad las manos muy despacio hasta posarlas en las rodillas."
+            }
+          },
+          {
+            "tipo": "cualidad",
+            "en": "bright",
+            "gl": "vistosa",
+            "es": "vistosa",
+            "lamina": "pal_bright",
+            "frase": "Its painted wings are bright and symmetrical.",
+            "accion": {
+              "gl": "Abride as dúas mans ben abertas ensinando as cores.",
+              "es": "Abrid las dos manos bien abiertas enseñando los colores."
+            }
+          }
+        ]
+      },
+      "modelo": {
+        "neno": "butterfly",
+        "adulto": [
+          "Butterfly.",
+          "A bright butterfly.",
+          "The bright butterfly lands."
+        ],
+        "nota": {
+          "gl": "Na simetría da bolboreta, amplías con «bright» e a acción final («lands»).",
+          "es": "En la simetría de la mariposa, amplías con «bright» y la acción final («lands»)."
+        }
+      }
+    },
+    {
+      "curso": "curso_5_6",
+      "mes": 4,
+      "fuente": "nueva",
+      "par": {
+        "a": {
+          "en": "spin",
+          "gl": "xirar",
+          "es": "girar",
+          "lamina": "pal_spin"
+        },
+        "b": {
+          "en": "pin",
+          "gl": "alfinete",
+          "es": "alfiler",
+          "lamina": "pal_pin"
+        },
+        "fonema": "/sp-/ → /p-/",
+        "nota": {
+          "gl": "«Spin» comeza cun asubío longo (/s/) xunto ao /p/; «pin» comeza directamente polo /p/.",
+          "es": "«Spin» comienza con un silbido largo (/s/) junto a la /p/; «pin» comienza directamente por la /p/."
+        },
+        "mision_acerto": {
+          "gl": "Dade unha volta completa coma un círculo que xira e parádevos suaves!",
+          "es": "¡Dad una vuelta completa como un círculo que gira y paraos suaves!"
+        },
+        "mision_fallo": {
+          "gl": "Primeiro o sopro de serpe «ssss» tres segundos e despois «pin»: «ssss-pin».",
+          "es": "Primero el soplo de serpiente «ssss» tres segundos y después «pin»: «ssss-pin»."
+        },
+        "pista": {
+          "gl": "Empeza cun «ssss» longo e engancha co «pin»: «ssss-pin».",
+          "es": "Empieza con una «ssss» larga y engancha con «pin»: «ssss-pin»."
+        }
+      },
+      "progresion": {
+        "tema": {
+          "gl": "Circuíto con luz · A lámpada",
+          "es": "Circuito con luz · La lámpara"
+        },
+        "fases": [
+          {
+            "tipo": "concepto",
+            "en": "lamp",
+            "gl": "lámpada",
+            "es": "lámpara",
+            "lamina": "pal_lamp",
+            "frase": "Turn on the little table lamp.",
+            "accion": {
+              "gl": "Poñede as mans en cúpula coma a pantalla dunha lámpada.",
+              "es": "Poned las manos en cúpula como la pantalla de una lámpara."
+            }
+          },
+          {
+            "tipo": "parte",
+            "en": "switch",
+            "gl": "interruptor",
+            "es": "interruptor",
+            "lamina": "pal_switch",
+            "frase": "Press the switch to close the circuit.",
+            "accion": {
+              "gl": "Premede co dedo índice facendo «clic!».",
+              "es": "Pulsad con el dedo índice haciendo «¡clic!»."
+            }
+          },
+          {
+            "tipo": "accion",
+            "en": "glow",
+            "gl": "iluminar",
+            "es": "iluminar",
+            "lamina": "pal_glow",
+            "frase": "Watch the warm bulb start to glow.",
+            "accion": {
+              "gl": "Abride os dedos de golpe coma cando se acende a luz.",
+              "es": "Abrid los dedos de golpe como cuando se enciende la luz."
+            }
+          },
+          {
+            "tipo": "cualidad",
+            "en": "yellow",
+            "gl": "amarela",
+            "es": "amarilla",
+            "lamina": "pal_yellow",
+            "frase": "The light shines warm and yellow.",
+            "accion": {
+              "gl": "Sinalade algo amarelo ou quente na habitación.",
+              "es": "Señalad algo amarillo o cálido en la habitación."
+            }
+          }
+        ]
+      },
+      "modelo": {
+        "neno": "lamp",
+        "adulto": [
+          "Lamp.",
+          "A yellow lamp.",
+          "The yellow lamp glows."
+        ],
+        "nota": {
+          "gl": "Co circuíto de luz de decembro, amplías «lamp» ata que acende («glows»).",
+          "es": "Con el circuito de luz de diciembre, amplías «lamp» hasta que se enciende («glows»)."
+        }
+      }
+    },
+    {
+      "curso": "curso_5_6",
+      "mes": 5,
+      "fuente": "nueva",
+      "par": {
+        "a": {
+          "en": "clap",
+          "gl": "palmada",
+          "es": "palmada",
+          "lamina": "pal_clap"
+        },
+        "b": {
+          "en": "lap",
+          "gl": "colo",
+          "es": "regazo",
+          "lamina": "pal_lap"
+        },
+        "fonema": "/kl-/ → /l-/",
+        "nota": {
+          "gl": "«Clap» xunta o golpe de atrás (/k/) co /l/ antes da vogal; «lap» empeza directo na lingua (/l/).",
+          "es": "«Clap» junta el golpe de atrás (/k/) con la /l/ antes de la vocal; «lap» empieza directo en la lengua (/l/)."
+        },
+        "mision_acerto": {
+          "gl": "Dade tres palmadas rítmicas escoitando cantos sons fai o corpo!",
+          "es": "¡Dad tres palmadas rítmicas escuchando cuántos sonidos hace el cuerpo!"
+        },
+        "mision_fallo": {
+          "gl": "Separa os dous sons ao comezo moi amodo: primeiro o golpe atrás «k» e logo «lap» ata xuntalos en «k-lap».",
+          "es": "Separa los dos sonidos al inicio muy despacio: primero el golpe atrás «k» y luego «lap» hasta unirlos en «k-lap»."
+        },
+        "pista": {
+          "gl": "Sente o golpe «k» na parte de atrás antes de subir a lingua a «lap».",
+          "es": "Siente el golpe «k» en la parte de atrás antes de subir la lengua a «lap»."
+        }
+      },
+      "progresion": {
+        "tema": {
+          "gl": "Sons do papel · O papel",
+          "es": "Sonidos del papel · El papel"
+        },
+        "fases": [
+          {
+            "tipo": "concepto",
+            "en": "paper",
+            "gl": "papel",
+            "es": "papel",
+            "lamina": "pal_pal_paper",
+            "frase": "Listen to all the sounds a sheet of paper makes.",
+            "accion": {
+              "gl": "Axitade unha folla imaxinaria para escoitar o seu son.",
+              "es": "Agitad una hoja imaginaria para escuchar su sonido."
+            }
+          },
+          {
+            "tipo": "parte",
+            "en": "corner",
+            "gl": "esquina",
+            "es": "esquina",
+            "lamina": "pal_corner",
+            "frase": "Pinch one pointed corner with your fingers.",
+            "accion": {
+              "gl": "Collede a esquina do papel imaxinario co polgar e o índice.",
+              "es": "Coged la esquina del papel imaginario con el pulgar y el índice."
+            }
+          },
+          {
+            "tipo": "accion",
+            "en": "fold",
+            "gl": "dobrar",
+            "es": "doblar",
+            "lamina": "pal_fold",
+            "frase": "Fold the sheet neatly in half.",
+            "accion": {
+              "gl": "Xuntade as dúas palmas coma dobrando unha folla pola metade.",
+              "es": "Juntad las dos palmas como doblando una hoja por la mitad."
+            }
+          },
+          {
+            "tipo": "cualidad",
+            "en": "thin",
+            "gl": "fino",
+            "es": "fino",
+            "lamina": "pal_thin",
+            "frase": "Feel how light and thin the paper is.",
+            "accion": {
+              "gl": "Facede un espazo moi finiño entre os dedos.",
+              "es": "Haced un espacio muy finito entre los dedos."
+            }
+          }
+        ]
+      },
+      "modelo": {
+        "neno": "paper",
+        "adulto": [
+          "Paper.",
+          "Thin paper.",
+          "Fold the thin paper."
+        ],
+        "nota": {
+          "gl": "Nos sons e dobras do papel, amplías «paper» con «thin» e a acción («fold»).",
+          "es": "En los sonidos y pliegues del papel, amplías «paper» con «thin» y la acción («fold»)."
+        }
+      }
+    },
+    {
+      "curso": "curso_5_6",
+      "mes": 6,
+      "fuente": "nueva",
+      "par": {
+        "a": {
+          "en": "plane",
+          "gl": "avión",
+          "es": "avión",
+          "lamina": "pal_pal_plane"
+        },
+        "b": {
+          "en": "lane",
+          "gl": "pista",
+          "es": "carril",
+          "lamina": "pal_lane"
+        },
+        "fonema": "/pl-/ → /l-/",
+        "nota": {
+          "gl": "«Plane» xunta os beizos nun sopro (/p/) antes de subir a lingua a /l/; «lane» empeza directo coa lingua nos dentes (/l/).",
+          "es": "«Plane» junta los labios en un soplo (/p/) antes de subir la lengua a /l/; «lane» empieza directo con la lengua en los dientes (/l/)."
+        },
+        "mision_acerto": {
+          "gl": "Estendede os brazos coma ás e facede planar o avión de papel polo cuarto!",
+          "es": "¡Extended los brazos como alas y haced planear el avión de papel por el cuarto!"
+        },
+        "mision_fallo": {
+          "gl": "Empeza co sopro nos beizos «p» e esvara seguido cara a «lane»: «p-lane».",
+          "es": "Empieza con el soplo en los labios «p» y deslízate seguido hacia «lane»: «p-lane»."
+        },
+        "pista": {
+          "gl": "Sente o pequeno «p» nos beizos antes de tocar coa lingua en «lane».",
+          "es": "Siente la pequeña «p» en los labios antes de tocar con la lengua en «lane»."
+        }
+      },
+      "progresion": {
+        "tema": {
+          "gl": "Avións de papel · O avión",
+          "es": "Aviones de papel · El avión"
+        },
+        "fases": [
+          {
+            "tipo": "concepto",
+            "en": "plane",
+            "gl": "avión",
+            "es": "avión",
+            "lamina": "pal_pal_plane",
+            "frase": "Fold a paper plane ready to fly.",
+            "accion": {
+              "gl": "Estendede os dous brazos aos lados coma un avión.",
+              "es": "Extended ambos brazos a los lados como un avión."
+            }
+          },
+          {
+            "tipo": "parte",
+            "en": "nose",
+            "gl": "morro",
+            "es": "morro",
+            "lamina": "pal_nose",
+            "frase": "Point the sharp nose straight ahead.",
+            "accion": {
+              "gl": "Xuntade as mans en punta diante coma o morro do avión.",
+              "es": "Juntad las manos en punta delante como el morro del avión."
+            }
+          },
+          {
+            "tipo": "accion",
+            "en": "glide",
+            "gl": "planar",
+            "es": "planear",
+            "lamina": "pal_glide",
+            "frase": "Let it glide smoothly across the room.",
+            "accion": {
+              "gl": "Inclinade o corpo suavemente dun lado a outro planeando polo aire.",
+              "es": "Inclina el cuerpo suavemente de un lado a otro planeando por el aire."
+            }
+          },
+          {
+            "tipo": "cualidad",
+            "en": "white",
+            "gl": "branco",
+            "es": "blanco",
+            "lamina": "pal_white",
+            "frase": "The folded paper plane is bright white.",
+            "accion": {
+              "gl": "Sinalade algo branco polo cuarto xuntos.",
+              "es": "Señalad algo blanco por el cuarto juntos."
+            }
+          }
+        ]
+      },
+      "modelo": {
+        "neno": "plane",
+        "adulto": [
+          "Plane.",
+          "A white plane.",
+          "The white plane glides."
+        ],
+        "nota": {
+          "gl": "Co STEAM dos avións de papel, pasas de «plane» a «white» e ao voo suave («glides»).",
+          "es": "Con el STEAM de los aviones de papel, pasas de «plane» a «white» y al vuelo suave («glides»)."
+        }
+      }
+    },
+    {
+      "curso": "curso_5_6",
+      "mes": 7,
+      "fuente": "valeria:snail-nail",
+      "par": {
+        "a": {
+          "en": "snail",
+          "gl": "caracol",
+          "es": "caracol",
+          "lamina": "pal_snail"
+        },
+        "b": {
+          "en": "nail",
+          "gl": "uña",
+          "es": "uña",
+          "lamina": "pal_nail"
+        },
+        "fonema": "/sn-/ → /n-/",
+        "nota": {
+          "gl": "«Snail» empeza cun asubío longo de serpe (/s/) antes do /n/; «nail» vai directo ao /n/.",
+          "es": "«Snail» empieza con un silbido largo de serpiente (/s/) antes de la /n/; «nail» va directo a la /n/."
+        },
+        "mision_acerto": {
+          "gl": "Movédevos coma un caracol: gateade moi, moi amodo polo chan ata chegar xunto á persoa adulta.",
+          "es": "Moveos como un caracol: gatead muy, muy despacio por el suelo hasta llegar junto al adulto."
+        },
+        "mision_fallo": {
+          "gl": "Primeiro a serpe: facede xuntos o son «ssss» tres segundos e logo xuntádeo coa palabra.",
+          "es": "Primero la serpiente: haced juntos el sonido «ssss» tres segundos y luego unidlo a la palabra."
+        },
+        "pista": {
+          "gl": "Empeza cun «ssss» longo e esvara cara ao «n»: «ssss-nail».",
+          "es": "Empieza con una «ssss» larga y deslízate hacia la «n»: «ssss-nail»."
+        }
+      },
+      "progresion": {
+        "tema": {
+          "gl": "Orientación · O mapa",
+          "es": "Orientación · El mapa"
+        },
+        "fases": [
+          {
+            "tipo": "concepto",
+            "en": "map",
+            "gl": "mapa",
+            "es": "mapa",
+            "lamina": "pal_map",
+            "frase": "Open the treasure map on the table.",
+            "accion": {
+              "gl": "Abride as mans planas sobre a mesa coma despregando un mapa.",
+              "es": "Abrid las manos planas sobre la mesa como desplegando un mapa."
+            }
+          },
+          {
+            "tipo": "parte",
+            "en": "path",
+            "gl": "camiño",
+            "es": "camino",
+            "lamina": "pal_path",
+            "frase": "Trace the winding path with your finger.",
+            "accion": {
+              "gl": "Debuxade un camiño en zigzag polo aire co dedo.",
+              "es": "Dibujad un camino en zigzag por el aire con el dedo."
+            }
+          },
+          {
+            "tipo": "accion",
+            "en": "search",
+            "gl": "buscar",
+            "es": "buscar",
+            "lamina": "pal_search",
+            "frase": "Follow the clues to search for the treasure.",
+            "accion": {
+              "gl": "Poñede unha man sobre os ollos coma mirando lonxe.",
+              "es": "Poned una mano sobre los ojos como mirando lejos."
+            }
+          },
+          {
+            "tipo": "cualidad",
+            "en": "secret",
+            "gl": "secreto",
+            "es": "secreto",
+            "lamina": "pal_secret",
+            "frase": "The map hides a secret place in the garden.",
+            "accion": {
+              "gl": "Levad o dedo aos beizos facendo un xesto de segredo cómplice.",
+              "es": "Llevad el dedo a los labios haciendo un gesto de secreto cómplice."
+            }
+          }
+        ]
+      },
+      "modelo": {
+        "neno": "map",
+        "adulto": [
+          "Map.",
+          "A secret map.",
+          "Search with the secret map."
+        ],
+        "nota": {
+          "gl": "Co mapa do tesouro de marzo, amplías «map» con «secret» e «search».",
+          "es": "Con el mapa del tesoro de marzo, amplías «map» con «secret» y «search»."
+        }
+      }
+    },
+    {
+      "curso": "curso_5_6",
+      "mes": 8,
+      "fuente": "valeria:lock-rock",
+      "par": {
+        "a": {
+          "en": "rock",
+          "gl": "rocha",
+          "es": "roca",
+          "lamina": "pal_rock"
+        },
+        "b": {
+          "en": "lock",
+          "gl": "pecho",
+          "es": "candado",
+          "lamina": "pal_lock"
+        },
+        "fonema": "/r/ → /l/",
+        "nota": {
+          "gl": "En «rock» a lingua non toca detrás dos dentes (/r/); en «lock» a punta da lingua sobe e toca (/l/).",
+          "es": "En «rock» la lengua no toca detrás de los dientes (/r/); en «lock» la punta de la lengua sube y toca (/l/)."
+        },
+        "mision_acerto": {
+          "gl": "Sede unha rocha: quedade completamente quietos coma unha pedra mentres a persoa adulta conta ata cinco.",
+          "es": "Sed una roca: quedaos completamente quietos como una piedra mientras el adulto cuenta hasta cinco."
+        },
+        "mision_fallo": {
+          "gl": "Por quendas: a persoa adulta di «lock» e «rock» alternando cada vez máis rápido mentres sinalades cada lámina.",
+          "es": "Por turnos: el adulto dice «lock» y «rock» alternando cada vez más rápido mientras señaláis cada lámina."
+        },
+        "pista": {
+          "gl": "Para /l/ a lingua toca detrás dos dentes. Para /r/ vai cara atrás e non toca nunca.",
+          "es": "Para /l/ la lengua toca detrás de los dientes. Para /r/ va hacia atrás y no toca nunca."
+        }
+      },
+      "progresion": {
+        "tema": {
+          "gl": "Viaxe e peso · A maleta",
+          "es": "Viaje y peso · La maleta"
+        },
+        "fases": [
+          {
+            "tipo": "concepto",
+            "en": "suitcase",
+            "gl": "maleta",
+            "es": "maleta",
+            "lamina": "pal_pal_suitcase",
+            "frase": "Pack the suitcase for the trip.",
+            "accion": {
+              "gl": "Facede que pechades a tapa dunha maleta grande.",
+              "es": "Haced como que cerráis la tapa de una maleta grande."
+            }
+          },
+          {
+            "tipo": "parte",
+            "en": "handle",
+            "gl": "asa",
+            "es": "asa",
+            "lamina": "pal_handle",
+            "frase": "Lift the bag by its sturdy handle.",
+            "accion": {
+              "gl": "Agarrade a asa imaxinaria coas dúas mans.",
+              "es": "Agarrad el asa imaginaria con las dos manos."
+            }
+          },
+          {
+            "tipo": "accion",
+            "en": "pack",
+            "gl": "facer a maleta",
+            "es": "hacer la maleta",
+            "lamina": "pal_pack",
+            "frase": "Fold your clothes and pack them inside.",
+            "accion": {
+              "gl": "Collede roupa imaxinaria e gardádea dentro con coidado.",
+              "es": "Coged ropa imaginaria y guardadla dentro con cuidado."
+            }
+          },
+          {
+            "tipo": "cualidad",
+            "en": "full",
+            "gl": "chea",
+            "es": "llena",
+            "lamina": "pal_full",
+            "frase": "With so many things, the suitcase is full!",
+            "accion": {
+              "gl": "Apertade as mans sobre os xeonllos coma se custase pechala.",
+              "es": "Apretad las manos sobre las rodillas como si costase cerrarla."
+            }
+          }
+        ]
+      },
+      "modelo": {
+        "neno": "suitcase",
+        "adulto": [
+          "Suitcase.",
+          "A full suitcase.",
+          "Pack the full suitcase."
+        ],
+        "nota": {
+          "gl": "Co experimento de «La maleta que pesa», unes capacidade («full») e acción («pack»).",
+          "es": "Con el experimento de «La maleta que pesa», unes capacidad («full») y acción («pack»)."
+        }
+      }
+    },
+    {
+      "curso": "curso_5_6",
+      "mes": 9,
+      "fuente": "nueva",
+      "par": {
+        "a": {
+          "en": "stick",
+          "gl": "baqueta",
+          "es": "baqueta",
+          "lamina": "pal_stick"
+        },
+        "b": {
+          "en": "tick",
+          "gl": "tic-tac",
+          "es": "tic-tac",
+          "lamina": "pal_tick"
+        },
+        "fonema": "/st-/ → /t-/",
+        "nota": {
+          "gl": "«Stick» empeza co son de serpe (/s/) antes do toque /t/; «tick» salta directo ao toque coa lingua (/t/).",
+          "es": "«Stick» empieza con el sonido de serpiente (/s/) antes del toque /t/; «tick» salta directo al toque con la lengua (/t/)."
+        },
+        "mision_acerto": {
+          "gl": "Marcade un patrón rítmico no chan ou nas pernas coa baqueta imaxinaria!",
+          "es": "¡Marcad un patrón rítmico en el suelo o en las piernas con la baqueta imaginaria!"
+        },
+        "mision_fallo": {
+          "gl": "Primeiro o asubío «ssss» tres segundos e despois engadide «tick»: «ssss-tick».",
+          "es": "Primero el silbido «ssss» tres segundos y después añadid «tick»: «ssss-tick»."
+        },
+        "pista": {
+          "gl": "Empeza cun «ssss» longo e toca detrás dos dentes para «tick»: «ssss-tick».",
+          "es": "Empieza con una «ssss» larga y toca detrás de los dientes para «tick»: «ssss-tick»."
+        }
+      },
+      "progresion": {
+        "tema": {
+          "gl": "Patróns rítmicos · O tambor",
+          "es": "Patrones rítmicos · El tambor"
+        },
+        "fases": [
+          {
+            "tipo": "concepto",
+            "en": "drum",
+            "gl": "tambor",
+            "es": "tambor",
+            "lamina": "pal_drum",
+            "frase": "Keep the beat on the wooden drum.",
+            "accion": {
+              "gl": "Dade toques suaves nas palmas coma nun tambor.",
+              "es": "Dad toques suaves en las palmas como en un tambor."
+            }
+          },
+          {
+            "tipo": "parte",
+            "en": "stick",
+            "gl": "baqueta",
+            "es": "baqueta",
+            "lamina": "pal_stick",
+            "frase": "Hold a rhythm stick in each hand.",
+            "accion": {
+              "gl": "Suxeitade dúas baquetas imaxinarias cos dedos.",
+              "es": "Sujetad dos baquetas imaginarias con los dedos."
+            }
+          },
+          {
+            "tipo": "accion",
+            "en": "beat",
+            "gl": "marcar o ritmo",
+            "es": "marcar el ritmo",
+            "lamina": "pal_beat",
+            "frase": "Beat out a pattern: clap, tap, tap.",
+            "accion": {
+              "gl": "Marcade un ritmo constante coas mans: un, dous, tres!",
+              "es": "Marcad un ritmo constante con las manos: ¡uno, dos, tres!"
+            }
+          },
+          {
+            "tipo": "cualidad",
+            "en": "steady",
+            "gl": "constante",
+            "es": "constante",
+            "lamina": "pal_steady",
+            "frase": "Keep the rhythm slow and steady.",
+            "accion": {
+              "gl": "Balanceade a cabeza seguindo o compás tranquilo.",
+              "es": "Balancead la cabeza siguiendo el compás tranquilo."
+            }
+          }
+        ]
+      },
+      "modelo": {
+        "neno": "drum",
+        "adulto": [
+          "Drum.",
+          "A steady drum.",
+          "Beat the steady drum."
+        ],
+        "nota": {
+          "gl": "Nos patróns rítmicos de maio, pasas de «drum» á regularidade do pulso («steady»).",
+          "es": "En los patrones rítmicos de mayo, pasas de «drum» a la regularidad del pulso («steady»)."
+        }
+      }
+    },
+    {
+      "curso": "curso_5_6",
+      "mes": 10,
+      "fuente": "nueva",
+      "par": {
+        "a": {
+          "en": "track",
+          "gl": "vía",
+          "es": "vía",
+          "lamina": "pal_track"
+        },
+        "b": {
+          "en": "rack",
+          "gl": "percheiro",
+          "es": "perchero",
+          "lamina": "pal_rack"
+        },
+        "fonema": "/tr-/ → /r-/",
+        "nota": {
+          "gl": "«Track» empeza cun pequeno toque /t/ pegado ao /r/; «rack» vai directo ao /r/ coa lingua recollida atrás.",
+          "es": "«Track» empieza con un pequeño toque /t/ pegado a la /r/; «rack» va directo a la /r/ con la lengua recogida atrás."
+        },
+        "mision_acerto": {
+          "gl": "Chucu-chucu! Camiñade en ringleira pola vía do tren tocando a frauta imaxinaria.",
+          "es": "¡Chucu-chucu! Caminad en fila por la vía del tren tocando la flauta imaginaria."
+        },
+        "mision_fallo": {
+          "gl": "Facede primeiro o toque «t» atrás dos dentes e deslizádevos a «rack»: «t-rack».",
+          "es": "Haced primero el toque «t» detrás de los dientes y deslizaos a «rack»: «t-rack»."
+        },
+        "pista": {
+          "gl": "Pequeno golpe /t/ coa punta da lingua seguido de /r/ sen arredondar os beizos.",
+          "es": "Pequeño golpe /t/ con la punta de la lengua seguido de /r/ sin redondear los labios."
+        }
+      },
+      "progresion": {
+        "tema": {
+          "gl": "Na praia · A cuncha",
+          "es": "En la playa · La concha"
+        },
+        "fases": [
+          {
+            "tipo": "concepto",
+            "en": "shell",
+            "gl": "cuncha",
+            "es": "concha",
+            "lamina": "pal_pal_shell",
+            "frase": "Look, a sea shell on the sand!",
+            "accion": {
+              "gl": "Facede unha cuncha aberta coas dúas mans xuntas.",
+              "es": "Haced una concha abierta con las dos manos juntas."
+            }
+          },
+          {
+            "tipo": "parte",
+            "en": "spiral",
+            "gl": "espiral",
+            "es": "espiral",
+            "lamina": "pal_spiral",
+            "frase": "Trace the little spiral on the shell.",
+            "accion": {
+              "gl": "Debuxade unha espiral na palma co dedo índice.",
+              "es": "Dibujad una espiral en la palma con el dedo índice."
+            }
+          },
+          {
+            "tipo": "accion",
+            "en": "collect",
+            "gl": "recoller",
+            "es": "recoger",
+            "lamina": "pal_collect",
+            "frase": "Collect smooth shells in your basket.",
+            "accion": {
+              "gl": "Facede que gardades cunchas nun cesto.",
+              "es": "Haced como que guardáis conchas en una cesta."
+            }
+          },
+          {
+            "tipo": "cualidad",
+            "en": "white",
+            "gl": "branca",
+            "es": "blanca",
+            "lamina": "pal_white",
+            "frase": "This shell is shiny and white.",
+            "accion": {
+              "gl": "Ensinade o debuxo branco ou buscade algo branco na casa.",
+              "es": "Enseñad el dibujo blanco o buscad algo blanco en casa."
+            }
+          }
+        ]
+      },
+      "modelo": {
+        "neno": "shell",
+        "adulto": [
+          "Shell.",
+          "A white shell.",
+          "Collect the white shell."
+        ],
+        "nota": {
+          "gl": "Pecha o último mes de infantil coas cunchas da praia, ampliando desde «shell» ata «collect».",
+          "es": "Cierra el último mes de infantil con las conchas de la playa, ampliando desde «shell» hasta «collect»."
+        }
+      }
+    }
+  ]
+}
