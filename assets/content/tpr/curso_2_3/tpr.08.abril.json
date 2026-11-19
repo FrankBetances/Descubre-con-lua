@@ -21,7 +21,8 @@
             "gl": "Abrir os brazos no prado",
             "es": "Abrir los brazos en el prado"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_meadow"
         },
         {
           "id": "2_3.abril.s1.dandelion",
@@ -778,7 +779,8 @@
             "gl": "Abrir os brazos coma ás que protexen",
             "es": "Abrir los brazos como alas que protegen"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_mother_bird"
         },
         {
           "id": "2_3.abril.s4.feather-bed",

@@ -297,7 +297,8 @@
             "gl": "Empurrar a carretilla con follas",
             "es": "Empujar la carretilla con hojas"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_wheelbarrow"
         },
         {
           "id": "0_2.novembro.s2.breeze",
@@ -319,7 +320,8 @@
             "gl": "Abrazar un tronco co bebé",
             "es": "Abrazar un tronco con el bebé"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_tree_trunk"
         },
         {
           "id": "0_2.novembro.s2.autumn-walk",
@@ -554,7 +556,8 @@
             "gl": "Recoller as migas cos dedos",
             "es": "Recoger las migas con los dedos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_crumbs"
         },
         {
           "id": "0_2.novembro.s3.songbird",

@@ -101,7 +101,8 @@
           "tprAction": {
             "gl": "Abrir os brazos de golpe coma un sol que sae",
             "es": "Abrir los brazos de golpe como un sol que sale"
-          }
+          },
+          "lamina": "pal_shine"
         },
         {
           "id": "3_4.abril.s1.open",
@@ -156,7 +157,8 @@
           "tprAction": {
             "gl": "Sorrir cos brazos abertos cara ao sol",
             "es": "Sonreír con los brazos abiertos hacia el sol"
-          }
+          },
+          "lamina": "pal_sunny"
         },
         {
           "id": "3_4.abril.s1.cloudy",
@@ -214,7 +216,8 @@
           "tprAction": {
             "gl": "Acenar cara arriba e sorrir",
             "es": "Saludar hacia arriba y sonreír"
-          }
+          },
+          "lamina": "pal_hello_sun"
         },
         {
           "id": "3_4.abril.s1.rain-then-sun",
@@ -293,7 +296,8 @@
           "tprAction": {
             "gl": "Poñerse de pé amodo cos brazos arriba coma unha planta",
             "es": "Ponerse de pie despacio con los brazos arriba como una planta"
-          }
+          },
+          "lamina": "pal_plant"
         },
         {
           "id": "3_4.abril.s2.flowerpot",
@@ -371,7 +375,8 @@
           "tprAction": {
             "gl": "Abrir os brazos de golpe coma unha flor que se abre",
             "es": "Abrir los brazos de golpe como una flor que se abre"
-          }
+          },
+          "lamina": "pal_bloom"
         },
         {
           "id": "3_4.abril.s2.sprout",
@@ -769,7 +774,8 @@
           "tprAction": {
             "gl": "Abrir os brazos e mirar arredor contentos",
             "es": "Abrir los brazos y mirar alrededor contentos"
-          }
+          },
+          "lamina": "pal_park"
         },
         {
           "id": "3_4.abril.s4.bench",
@@ -918,7 +924,8 @@
           "tprAction": {
             "gl": "Afastarse amodo e deixarse atrapar",
             "es": "Alejarse despacio y dejarse atrapar"
-          }
+          },
+          "lamina": "pal_catch_me"
         },
         {
           "id": "3_4.abril.s4.ready-steady-go",

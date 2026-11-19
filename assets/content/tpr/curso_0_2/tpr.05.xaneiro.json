@@ -173,7 +173,8 @@
             "gl": "Menear a man coma un rabo",
             "es": "Mover la mano como un rabo"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_tail_wagging"
         },
         {
           "id": "0_2.xaneiro.s1.gentle-hands",
@@ -243,7 +244,8 @@
             "gl": "Acariñar a propia meixela",
             "es": "Acariciar la propia mejilla"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_soft_like_a_cat"
         }
       ]
     },
@@ -403,7 +405,8 @@
             "gl": "Acariñar a la dun año de peluche",
             "es": "Acariciar la lana de un cordero de peluche"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_woolly_lamb"
         },
         {
           "id": "0_2.xaneiro.s2.fluffy-chick",
@@ -481,7 +484,8 @@
             "gl": "Abrir os brazos coma a granxa",
             "es": "Abrir los brazos como la granja"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_on_the_farm"
         }
       ]
     },
@@ -890,7 +894,8 @@
             "gl": "Acariñar as costas en círculos",
             "es": "Acariciar la espalda en círculos"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_soothing"
         },
         {
           "id": "0_2.xaneiro.s4.faint",

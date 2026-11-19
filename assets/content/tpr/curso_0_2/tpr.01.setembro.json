@@ -141,7 +141,8 @@
             "gl": "Aconchegar o bebé contra o peito",
             "es": "Acurrucar al bebé contra el pecho"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_snuggle"
         },
         {
           "id": "0_2.setembro.s1.coo",
@@ -219,7 +220,8 @@
             "gl": "Abrir os brazos ao recibilo",
             "es": "Abrir los brazos al recibirlo"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_welcome"
         },
         {
           "id": "0_2.setembro.s1.mummy-and-me",
@@ -374,7 +376,8 @@
             "gl": "Acariñar o pelo do bebé",
             "es": "Acariciar el pelo del bebé"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_stroke"
         },
         {
           "id": "0_2.setembro.s2.babble",
@@ -464,7 +467,8 @@
             "gl": "Acenar dende a porta",
             "es": "Saludar desde la puerta"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_bye_for_now"
         },
         {
           "id": "0_2.setembro.s2.with-grandma",
@@ -539,7 +543,8 @@
             "gl": "Arrular coma unha pomba",
             "es": "Arrullar como una paloma"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_coo_coo"
         },
         {
           "id": "0_2.setembro.s3.mobile",
@@ -753,7 +758,8 @@
             "gl": "Empurrar o carriño amodo",
             "es": "Empujar el cochecito despacio"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_pram"
         },
         {
           "id": "0_2.setembro.s4.sippy-cup",

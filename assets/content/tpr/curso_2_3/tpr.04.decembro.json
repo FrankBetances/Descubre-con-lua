@@ -56,7 +56,8 @@
             "gl": "Coller auga de choiva nun vaso",
             "es": "Coger agua de lluvia en un vaso"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_rainwater"
         },
         {
           "id": "2_3.decembro.s1.drain",
@@ -67,7 +68,8 @@
             "gl": "Sinalar a auga que marcha",
             "es": "Señalar el agua que se va"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_drain"
         },
         {
           "id": "2_3.decembro.s1.gutter",
@@ -78,7 +80,8 @@
             "gl": "Seguir a auga que baixa",
             "es": "Seguir el agua que baja"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_gutter"
         },
         {
           "id": "2_3.decembro.s1.splash-zone",
@@ -147,7 +150,8 @@
             "gl": "Tirar das botas cara arriba",
             "es": "Tirar de las botas hacia arriba"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_pull_on_boots"
         },
         {
           "id": "2_3.decembro.s1.soggy",
@@ -506,7 +510,8 @@
             "gl": "Tirar das medias cara arriba",
             "es": "Tirar de los leotardos hacia arriba"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_tights"
         },
         {
           "id": "2_3.decembro.s3.earmuffs",
@@ -629,7 +634,8 @@
             "gl": "Abrazarse co xersei",
             "es": "Abrazarse con el jersey"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_snuggly_jumper"
         },
         {
           "id": "2_3.decembro.s3.chunky",
@@ -673,7 +679,8 @@
             "gl": "Levantar os brazos para o xersei",
             "es": "Levantar los brazos para el jersey"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_arms_up_high"
         },
         {
           "id": "2_3.decembro.s3.where-s-your-hand",

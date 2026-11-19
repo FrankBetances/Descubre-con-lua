@@ -79,7 +79,8 @@
             "gl": "Lanzar unha rede",
             "es": "Lanzar una red"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_fisherman"
         },
         {
           "id": "4_5.xuno.s1.fish-market",
@@ -112,7 +113,8 @@
             "gl": "Tirar da corda cara arriba",
             "es": "Tirar de la cuerda hacia arriba"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_pull_up_the_rope"
         },
         {
           "id": "4_5.xuno.s1.cast-a-net",
@@ -123,7 +125,8 @@
             "gl": "Abrir os brazos lanzando",
             "es": "Abrir los brazos lanzando"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_cast_a_net"
         },
         {
           "id": "4_5.xuno.s1.bob-on-the-water",
@@ -224,7 +227,8 @@
             "gl": "Tirar da corda",
             "es": "Tirar de la cuerda"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_pull_pull_pull"
         },
         {
           "id": "4_5.xuno.s1.all-hands-on-deck",
@@ -827,7 +831,8 @@
             "gl": "Lanzar e coller unha pelota",
             "es": "Lanzar y coger una pelota"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_throw_and_catch"
         },
         {
           "id": "4_5.xuno.s4.run-through-the-sprinkler",
@@ -940,7 +945,8 @@
             "gl": "Lanzar moi alto",
             "es": "Lanzar muy alto"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_throw_it_higher_than_the_tree"
         }
       ]
     }

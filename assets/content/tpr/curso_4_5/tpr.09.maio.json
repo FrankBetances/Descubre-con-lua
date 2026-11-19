@@ -21,7 +21,8 @@
             "gl": "Botar unha cortiza e mirala flotar",
             "es": "Echar un corcho y mirarlo flotar"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_cork"
         },
         {
           "id": "4_5.maio.s1.marble",
@@ -109,7 +110,8 @@
             "gl": "Quedar arriba cos brazos abertos",
             "es": "Quedarse arriba con los brazos abiertos"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_float_on_top"
         },
         {
           "id": "4_5.maio.s1.drop-a-stone",
@@ -250,7 +252,8 @@
             "gl": "Mover a man en ondas pequenas",
             "es": "Mover la mano en olas pequeñas"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_stream"
         },
         {
           "id": "4_5.maio.s2.waterfall",
@@ -294,7 +297,8 @@
             "gl": "Moverse levado pola auga",
             "es": "Moverse llevado por el agua"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_current"
         },
         {
           "id": "4_5.maio.s2.paper-boat-race",
@@ -405,7 +409,8 @@
             "gl": "Mover a man cara abaixo",
             "es": "Mover la mano hacia abajo"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_downstream"
         },
         {
           "id": "4_5.maio.s2.upstream",
@@ -416,7 +421,8 @@
             "gl": "Mover a man cara arriba con esforzo",
             "es": "Mover la mano hacia arriba con esfuerzo"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_upstream"
         },
         {
           "id": "4_5.maio.s2.which-boat-is-faster",
@@ -861,7 +867,8 @@
             "gl": "Mover a man en zigzag",
             "es": "Mover la mano en zigzag"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_winding"
         },
         {
           "id": "4_5.maio.s4.muddy-bank",
@@ -884,7 +891,8 @@
             "gl": "Mover a man adiante e atrás",
             "es": "Mover la mano adelante y atrás"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_tidal"
         },
         {
           "id": "4_5.maio.s4.where-does-the-river-go",
@@ -906,7 +914,8 @@
             "gl": "Mover a man ata abrila",
             "es": "Mover la mano hasta abrirla"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_the_river_runs_into_the_sea"
         },
         {
           "id": "4_5.maio.s4.shh-a-heron",

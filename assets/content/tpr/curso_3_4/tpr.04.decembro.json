@@ -138,7 +138,8 @@
           "tprAction": {
             "gl": "Lanzar unha bóla de neve imaxinaria moi suave",
             "es": "Lanzar una bola de nieve imaginaria muy suave"
-          }
+          },
+          "lamina": "pal_throw"
         },
         {
           "id": "3_4.decembro.s1.catch",
@@ -299,7 +300,8 @@
           "tprAction": {
             "gl": "Entregar unha caixa imaxinaria coas dúas mans",
             "es": "Entregar una caja imaginaria con las dos manos"
-          }
+          },
+          "lamina": "pal_gift"
         },
         {
           "id": "3_4.decembro.s2.candle",
@@ -445,7 +447,8 @@
           "tprAction": {
             "gl": "Abrir os brazos e desexar bo Nadal ao grupo",
             "es": "Abrir los brazos y desear feliz Navidad al grupo"
-          }
+          },
+          "lamina": "pal_merry_christmas"
         },
         {
           "id": "3_4.decembro.s2.ring-bells",
@@ -685,7 +688,8 @@
           "tprAction": {
             "gl": "Acenar amodo e xuntar as mans baixo a meixela",
             "es": "Decir adiós despacio y juntar las manos bajo la mejilla"
-          }
+          },
+          "lamina": "pal_good_night"
         },
         {
           "id": "3_4.decembro.s3.sweet-dreams",
@@ -696,7 +700,8 @@
           "tprAction": {
             "gl": "Lanzar un bico ao aire cos ollos pechados",
             "es": "Lanzar un beso al aire con los ojos cerrados"
-          }
+          },
+          "lamina": "pal_sweet_dreams"
         },
         {
           "id": "3_4.decembro.s3.sleep-tight",

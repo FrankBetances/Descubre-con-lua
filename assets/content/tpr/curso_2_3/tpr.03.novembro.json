@@ -293,7 +293,8 @@
             "gl": "Abrir os brazos coma un espantallo",
             "es": "Abrir los brazos como un espantapájaros"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_scarecrow"
         },
         {
           "id": "2_3.novembro.s2.windmill",
@@ -464,7 +465,8 @@
             "gl": "Lanzar a folla cara arriba",
             "es": "Lanzar la hoja hacia arriba"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_up_and_away"
         },
         {
           "id": "2_3.novembro.s2.with-the-wind",

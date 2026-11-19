@@ -116,7 +116,8 @@
             "gl": "Mover as pernas na auga",
             "es": "Mover las piernas en el agua"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_kick_water"
         },
         {
           "id": "0_2.maio.s1.fill-up",
@@ -127,7 +128,8 @@
             "gl": "Encher o vaso de auga",
             "es": "Llenar el vaso de agua"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_fill_up"
         },
         {
           "id": "0_2.maio.s1.empty-out",
@@ -149,7 +151,8 @@
             "gl": "Mollar os dedos na auga",
             "es": "Mojar los dedos en el agua"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_dip"
         },
         {
           "id": "0_2.maio.s1.splashy",
@@ -183,7 +186,8 @@
             "gl": "Tocar a auga co cóbado",
             "es": "Tocar el agua con el codo"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_lukewarm"
         },
         {
           "id": "0_2.maio.s1.sparkly-water",
@@ -194,7 +198,8 @@
             "gl": "Mover a auga ao sol",
             "es": "Mover el agua al sol"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_sparkly_water"
         },
         {
           "id": "0_2.maio.s1.splish-splash",
@@ -217,7 +222,8 @@
             "gl": "Verter a xerra amodo",
             "es": "Verter la jarra despacio"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_pour_it_out"
         },
         {
           "id": "0_2.maio.s1.all-wet",
@@ -352,7 +358,8 @@
             "gl": "Botar auga polas costas",
             "es": "Echar agua por la espalda"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_rinse_off"
         },
         {
           "id": "0_2.maio.s2.pat-dry",
@@ -374,7 +381,8 @@
             "gl": "Envolver o bebé e abrazalo",
             "es": "Envolver al bebé y abrazarlo"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_wrap_in_a_towel"
         },
         {
           "id": "0_2.maio.s2.wash-hair",
@@ -418,7 +426,8 @@
             "gl": "Acariñar a pel seca",
             "es": "Acariciar la piel seca"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_soft_and_dry"
         },
         {
           "id": "0_2.maio.s2.sweet-smelling-baby",
@@ -475,7 +484,8 @@
             "gl": "Envolver e abrazar",
             "es": "Envolver y abrazar"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_snug_in_the_towel"
         }
       ]
     },
@@ -774,7 +784,8 @@
             "gl": "Mover a man no aire",
             "es": "Mover la mano en el aire"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_air"
         },
         {
           "id": "0_2.maio.s4.ceiling",
@@ -873,7 +884,8 @@
             "gl": "Mover a man amodo no aire",
             "es": "Mover la mano despacio en el aire"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_floating"
         },
         {
           "id": "0_2.maio.s4.wobbly-bubble",
@@ -928,7 +940,8 @@
             "gl": "Abrir os brazos sorprendidos",
             "es": "Abrir los brazos sorprendidos"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_so_many_bubbles"
         },
         {
           "id": "0_2.maio.s4.bubbles-everywhere",

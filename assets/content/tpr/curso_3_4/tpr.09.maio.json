@@ -139,7 +139,8 @@
           "tprAction": {
             "gl": "Pasar as mans baixo unha auga imaxinaria",
             "es": "Pasar las manos bajo un agua imaginaria"
-          }
+          },
+          "lamina": "pal_rinse"
         },
         {
           "id": "3_4.maio.s1.scrub",
@@ -150,7 +151,8 @@
           "tprAction": {
             "gl": "Refregar o dorso das mans con forza",
             "es": "Restregar el dorso de las manos con fuerza"
-          }
+          },
+          "lamina": "pal_scrub"
         },
         {
           "id": "3_4.maio.s1.clean",
@@ -295,7 +297,8 @@
           "tprAction": {
             "gl": "Facer flotar un patiño imaxinario sobre a palma",
             "es": "Hacer flotar un patito imaginario sobre la palma"
-          }
+          },
+          "lamina": "pal_rubber_duck"
         },
         {
           "id": "3_4.maio.s2.mirror",
@@ -365,7 +368,8 @@
           "tprAction": {
             "gl": "Chapotear cos pés, sentados, nunha auga imaxinaria",
             "es": "Chapotear con los pies, sentados, en un agua imaginaria"
-          }
+          },
+          "lamina": "pal_paddle"
         },
         {
           "id": "3_4.maio.s2.dress",
@@ -387,7 +391,8 @@
           "tprAction": {
             "gl": "Deixar caer auga imaxinaria desde a cabeza cos dedos",
             "es": "Dejar caer agua imaginaria desde la cabeza con los dedos"
-          }
+          },
+          "lamina": "pal_shower"
         },
         {
           "id": "3_4.maio.s2.deep",
@@ -398,7 +403,8 @@
           "tprAction": {
             "gl": "Baixar a man moi abaixo coma nunha auga fonda",
             "es": "Bajar la mano muy abajo como en un agua profunda"
-          }
+          },
+          "lamina": "pal_deep"
         },
         {
           "id": "3_4.maio.s2.shallow",
@@ -409,7 +415,8 @@
           "tprAction": {
             "gl": "Tocar a auga imaxinaria só coa punta dos pés",
             "es": "Tocar el agua imaginaria solo con la punta de los pies"
-          }
+          },
+          "lamina": "pal_shallow"
         },
         {
           "id": "3_4.maio.s2.relaxed",
@@ -465,7 +472,8 @@
           "tprAction": {
             "gl": "Meter un pé e logo o outro nunha bañeira imaxinaria",
             "es": "Meter un pie y luego el otro en una bañera imaginaria"
-          }
+          },
+          "lamina": "pal_in_the_bath"
         },
         {
           "id": "3_4.maio.s2.top-to-toe",
@@ -590,7 +598,8 @@
           "tprAction": {
             "gl": "Beber auga imaxinaria e dicir «aaah»",
             "es": "Beber agua imaginaria y decir «aaah»"
-          }
+          },
+          "lamina": "pal_drink"
         },
         {
           "id": "3_4.maio.s3.spread",
@@ -646,7 +655,8 @@
           "tprAction": {
             "gl": "Mover a man amodo coma se remexese nata",
             "es": "Mover la mano despacio como si removiera nata"
-          }
+          },
+          "lamina": "pal_creamy"
         },
         {
           "id": "3_4.maio.s3.thick",
@@ -916,7 +926,8 @@
           "tprAction": {
             "gl": "Abrir os brazos amodo coma quen abre un conto",
             "es": "Abrir los brazos despacio como quien abre un cuento"
-          }
+          },
+          "lamina": "pal_once_upon_a_time"
         },
         {
           "id": "3_4.maio.s4.the-end",

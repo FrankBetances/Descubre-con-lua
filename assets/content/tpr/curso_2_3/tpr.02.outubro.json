@@ -137,7 +137,8 @@
             "gl": "Baixar en crequenas",
             "es": "Bajar en cuclillas"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_squat"
         },
         {
           "id": "2_3.outubro.s1.bounce-up-and-down",

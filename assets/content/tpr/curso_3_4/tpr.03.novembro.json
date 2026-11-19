@@ -33,7 +33,8 @@
           "tprAction": {
             "gl": "Poñerse de pé cos brazos abertos coma pólas",
             "es": "Ponerse de pie con los brazos abiertos como ramas"
-          }
+          },
+          "lamina": "pal_tree"
         },
         {
           "id": "3_4.novembro.s1.wind",

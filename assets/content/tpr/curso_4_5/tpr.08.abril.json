@@ -269,7 +269,8 @@
             "gl": "Abrir os brazos a secar",
             "es": "Abrir los brazos a secar"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_cormorant"
         },
         {
           "id": "4_5.abril.s2.wingspan",
@@ -359,7 +360,8 @@
             "gl": "Abrir os brazos ao sol",
             "es": "Abrir los brazos al sol"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_dry_wings"
         },
         {
           "id": "4_5.abril.s2.squawk",
@@ -381,7 +383,8 @@
             "gl": "Quedar cos brazos abertos quietos",
             "es": "Quedarse con los brazos abiertos quietos"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_hover"
         },
         {
           "id": "4_5.abril.s2.soaring",
@@ -791,7 +794,8 @@
             "gl": "Abrir os brazos ao aire libre",
             "es": "Abrir los brazos al aire libre"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_nature"
         },
         {
           "id": "4_5.abril.s4.pick-up-litter",

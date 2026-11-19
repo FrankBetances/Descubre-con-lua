@@ -309,7 +309,8 @@
             "gl": "Empurrar a randeeira amodo",
             "es": "Empujar el columpio despacio"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_swing_seat"
         },
         {
           "id": "0_2.febreiro.s2.beanbag",

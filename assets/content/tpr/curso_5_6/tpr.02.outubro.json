@@ -538,7 +538,8 @@
             "gl": "Estirar amodo",
             "es": "Estirar despacio"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_stretch_time"
         },
         {
           "id": "5_6.outubro.s3.yoga-mat",
@@ -560,7 +561,8 @@
             "gl": "Poñer un pé no xeonllo",
             "es": "Poner un pie en la rodilla"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_tree_pose"
         },
         {
           "id": "5_6.outubro.s3.rotate-arms",

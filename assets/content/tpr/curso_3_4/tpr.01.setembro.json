@@ -115,7 +115,8 @@
           "tprAction": {
             "gl": "Mover a man dun lado a outro para saudar",
             "es": "Mover la mano de un lado a otro para saludar"
-          }
+          },
+          "lamina": "pal_wave"
         },
         {
           "id": "3_4.setembro.s1.smile",
@@ -172,7 +173,8 @@
           "tprAction": {
             "gl": "Abrir os brazos cun sorriso grande",
             "es": "Abrir los brazos con una sonrisa grande"
-          }
+          },
+          "lamina": "pal_happy"
         },
         {
           "id": "3_4.setembro.s1.new",
@@ -230,7 +232,8 @@
           "tprAction": {
             "gl": "Acenar coa man e lanzar un bico ao aire",
             "es": "Decir adiós con la mano y lanzar un beso al aire"
-          }
+          },
+          "lamina": "pal_bye_bye"
         },
         {
           "id": "3_4.setembro.s1.hand-in-hand",
@@ -503,7 +506,8 @@
           "tprAction": {
             "gl": "Abrir os brazos e pechalos nunha aperta grande",
             "es": "Abrir los brazos y cerrarlos en un gran abrazo"
-          }
+          },
+          "lamina": "pal_family"
         },
         {
           "id": "3_4.setembro.s3.home",
@@ -525,7 +529,8 @@
           "tprAction": {
             "gl": "Pousar a man no corazón ao dicir mamá",
             "es": "Poner la mano en el corazón al decir mamá"
-          }
+          },
+          "lamina": "pal_mummy"
         },
         {
           "id": "3_4.setembro.s3.daddy",
@@ -570,7 +575,8 @@
           "tprAction": {
             "gl": "Acenar lonxe coma se chegase o avó",
             "es": "Saludar a lo lejos como si llegara el abuelo"
-          }
+          },
+          "lamina": "pal_grandpa"
         },
         {
           "id": "3_4.setembro.s3.hug",
@@ -593,7 +599,8 @@
           "tprAction": {
             "gl": "Levar os dedos aos beizos e soltar un bico",
             "es": "Llevarse los dedos a los labios y soltar un beso"
-          }
+          },
+          "lamina": "pal_kiss"
         },
         {
           "id": "3_4.setembro.s3.hold",
@@ -944,7 +951,8 @@
           "tprAction": {
             "gl": "Acenar coa man e sorrir ao mesmo tempo",
             "es": "Saludar con la mano y sonreír a la vez"
-          }
+          },
+          "lamina": "pal_wave_and_smile"
         },
         {
           "id": "3_4.setembro.s4.you-and-me",

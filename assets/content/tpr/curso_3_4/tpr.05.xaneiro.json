@@ -160,7 +160,8 @@
           "tprAction": {
             "gl": "Acariñar unha prenda de la imaxinaria",
             "es": "Acariciar una prenda de lana imaginaria"
-          }
+          },
+          "lamina": "pal_woolly"
         },
         {
           "id": "3_4.xaneiro.s1.striped",
@@ -238,7 +239,8 @@
           "tprAction": {
             "gl": "Dar a volta a unha prenda imaxinaria",
             "es": "Dar la vuelta a una prenda imaginaria"
-          }
+          },
+          "lamina": "pal_inside_out"
         }
       ]
     },
@@ -378,7 +380,8 @@
           "tprAction": {
             "gl": "Pechar un paraugas imaxinario xuntando as mans",
             "es": "Cerrar un paraguas imaginario juntando las manos"
-          }
+          },
+          "lamina": "pal_close"
         },
         {
           "id": "3_4.xaneiro.s2.wipe",
@@ -446,7 +449,8 @@
           "tprAction": {
             "gl": "Abrir un paraugas imaxinario de golpe",
             "es": "Abrir un paraguas imaginario de golpe"
-          }
+          },
+          "lamina": "pal_put_up_the_umbrella"
         },
         {
           "id": "3_4.xaneiro.s2.stomp-your-boots",
@@ -571,7 +575,8 @@
           "tprAction": {
             "gl": "Levantar a man para parar e baixala para seguir",
             "es": "Levantar la mano para parar y bajarla para seguir"
-          }
+          },
+          "lamina": "pal_traffic_light"
         },
         {
           "id": "3_4.xaneiro.s3.drive",

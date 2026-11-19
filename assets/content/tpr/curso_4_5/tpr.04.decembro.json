@@ -78,7 +78,8 @@
             "gl": "Abrir as mans coma auga que escorre",
             "es": "Abrir las manos como agua que escurre"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_melted_water"
         },
         {
           "id": "4_5.decembro.s1.experiment",
@@ -254,7 +255,8 @@
             "gl": "Poñer os brazos coma unha balanza",
             "es": "Poner los brazos como una balanza"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_scale"
         },
         {
           "id": "4_5.decembro.s2.ruler",
@@ -663,7 +665,8 @@
             "gl": "Abrir os brazos admirados",
             "es": "Abrir los brazos admirados"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_look_at_all_the_lights"
         },
         {
           "id": "4_5.decembro.s3.which-light-is-the-brightest",
@@ -728,7 +731,8 @@
             "gl": "Abrazar unha chaqueta",
             "es": "Abrazar una chaqueta"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_warm_clothes"
         },
         {
           "id": "4_5.decembro.s4.neighbour",
@@ -739,7 +743,8 @@
             "gl": "Acenar ao veciño",
             "es": "Saludar al vecino"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_neighbour"
         },
         {
           "id": "4_5.decembro.s4.blanket-share",

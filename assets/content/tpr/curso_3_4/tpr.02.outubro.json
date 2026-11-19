@@ -504,7 +504,8 @@
           "tprAction": {
             "gl": "Abrir os brazos en cruz",
             "es": "Abrir los brazos en cruz"
-          }
+          },
+          "lamina": "pal_arms"
         },
         {
           "id": "3_4.outubro.s3.legs",
@@ -748,7 +749,8 @@
           "tprAction": {
             "gl": "Pousar a man no corazón e sentir o latexo",
             "es": "Poner la mano en el corazón y sentir el latido"
-          }
+          },
+          "lamina": "pal_heart"
         },
         {
           "id": "3_4.outubro.s4.body",

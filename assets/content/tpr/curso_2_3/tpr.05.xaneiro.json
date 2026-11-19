@@ -782,7 +782,8 @@
             "gl": "Tirar dunha corda imaxinaria",
             "es": "Tirar de una cuerda imaginaria"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_rope"
         },
         {
           "id": "2_3.xaneiro.s4.sailor",
@@ -885,7 +886,8 @@
             "gl": "Mover a man coma un barco",
             "es": "Mover la mano como un barco"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_floating_boat"
         },
         {
           "id": "2_3.xaneiro.s4.rusty",
@@ -929,7 +931,8 @@
             "gl": "Acenar ao barco",
             "es": "Saludar al barco"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_bye_bye_boat"
         },
         {
           "id": "2_3.xaneiro.s4.hello-sailor",

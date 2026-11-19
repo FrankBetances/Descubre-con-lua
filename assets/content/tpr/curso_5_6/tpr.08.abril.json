@@ -21,7 +21,8 @@
             "gl": "Abrir os brazos moi grandes",
             "es": "Abrir los brazos muy grandes"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_ocean"
         },
         {
           "id": "5_6.abril.s1.marine-life",
@@ -32,7 +33,8 @@
             "gl": "Nadar coas mans",
             "es": "Nadar con las manos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_marine_life"
         },
         {
           "id": "5_6.abril.s1.rubbish",
@@ -223,7 +225,8 @@
             "gl": "Recoller e nadar",
             "es": "Recoger y nadar"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_if_we_pick_up_plastic_fish_are_safer"
         },
         {
           "id": "5_6.abril.s1.every-piece-counts",
@@ -311,7 +314,8 @@
             "gl": "Nadar amodo con burbullas",
             "es": "Nadar despacio con burbujas"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_diver"
         },
         {
           "id": "5_6.abril.s2.underwater-camera",
@@ -590,7 +594,8 @@
             "gl": "Cavar e regar",
             "es": "Cavar y regar"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_plant_a_tree"
         },
         {
           "id": "5_6.abril.s3.mend",

@@ -331,7 +331,8 @@
             "gl": "Encollerse coma un tigriño",
             "es": "Acurrucarse como un cachorro de tigre"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_tiger_cub"
         },
         {
           "id": "2_3.febreiro.s2.swing-from",
@@ -411,7 +412,8 @@
             "gl": "Abrir os brazos moi grandes",
             "es": "Abrir los brazos muy grandes"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_enormous"
         },
         {
           "id": "2_3.febreiro.s2.hot-and-sticky",
@@ -910,7 +912,8 @@
             "gl": "Abrir os brazos coma un pavo real",
             "es": "Abrir los brazos como un pavo real"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_proud_peacock"
         },
         {
           "id": "2_3.febreiro.s4.what-animal-are-you",

@@ -109,7 +109,8 @@
             "gl": "Levantar a man e agardar",
             "es": "Levantar la mano y esperar"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_raise_a_hand"
         },
         {
           "id": "4_5.setembro.s1.take-a-turn",
@@ -410,7 +411,8 @@
             "gl": "Abrir os brazos máis",
             "es": "Abrir los brazos más"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_wider"
         },
         {
           "id": "4_5.setembro.s2.wobbly-bridge",
@@ -575,7 +577,8 @@
             "gl": "Pasar as mans baixo a auga",
             "es": "Pasar las manos bajo el agua"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_rinse_well"
         },
         {
           "id": "4_5.setembro.s3.count-to-twenty",

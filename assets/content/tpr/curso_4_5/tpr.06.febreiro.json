@@ -465,7 +465,8 @@
             "gl": "Saudar coa man na fronte",
             "es": "Saludar con la mano en la frente"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_ahoy_pirates"
         },
         {
           "id": "4_5.febreiro.s2.the-robot-walks-slowly-but-the-hero-runs-fast",
@@ -509,7 +510,8 @@
             "gl": "Asubiar e levantar a man",
             "es": "Silbar y levantar la mano"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_referee"
         },
         {
           "id": "4_5.febreiro.s3.score-point",
@@ -531,7 +533,8 @@
             "gl": "Levantar os brazos contentos",
             "es": "Levantar los brazos contentos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_winner"
         },
         {
           "id": "4_5.febreiro.s3.turn-order",
@@ -586,7 +589,8 @@
             "gl": "Levantar os brazos",
             "es": "Levantar los brazos"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_win"
         },
         {
           "id": "4_5.febreiro.s3.lose",

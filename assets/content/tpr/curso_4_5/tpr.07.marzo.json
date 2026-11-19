@@ -342,7 +342,8 @@
             "gl": "Abrir os brazos moito",
             "es": "Abrir los brazos mucho"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_show_big_arms"
         },
         {
           "id": "4_5.marzo.s2.show-small-fingers",
@@ -598,7 +599,8 @@
             "gl": "Mover a man arriba e abaixo",
             "es": "Mover la mano arriba y abajo"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_grate"
         },
         {
           "id": "4_5.marzo.s3.balance-a-plate",

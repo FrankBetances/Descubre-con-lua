@@ -364,7 +364,8 @@
             "gl": "Soprar na auga cos beizos",
             "es": "Soplar en el agua con los labios"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_blow_bubbles_in_water"
         },
         {
           "id": "0_2.xuno.s2.rise-and-fall",
@@ -576,7 +577,8 @@
             "gl": "Mollar a caluga con auga",
             "es": "Mojar la nuca con agua"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_cool_down"
         },
         {
           "id": "0_2.xuno.s3.fan-yourself",
@@ -811,7 +813,8 @@
             "gl": "Acenar coa man á porta",
             "es": "Saludar con la mano en la puerta"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_say_goodbye"
         },
         {
           "id": "0_2.xuno.s4.hug-goodbye",
@@ -923,7 +926,8 @@
             "gl": "Mandar un bico e acenar",
             "es": "Mandar un beso y saludar"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_see_you_after_summer"
         },
         {
           "id": "0_2.xuno.s4.hand-on-paper",

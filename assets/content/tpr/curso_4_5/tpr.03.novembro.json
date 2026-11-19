@@ -242,7 +242,8 @@
             "gl": "Levantar a man por riba",
             "es": "Levantar la mano por encima"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_higher_than_the_houses"
         }
       ]
     },
@@ -306,7 +307,8 @@
             "gl": "Abrir os brazos por riba da cabeza",
             "es": "Abrir los brazos por encima de la cabeza"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_canopy"
         },
         {
           "id": "4_5.novembro.s2.woodpecker",
@@ -667,7 +669,8 @@
             "gl": "Levantar a man e mirar debaixo",
             "es": "Levantar la mano y mirar debajo"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_hidden_under"
         },
         {
           "id": "4_5.novembro.s3.how-many-legs-has-it-got",

@@ -21,7 +21,8 @@
             "gl": "Abrir os brazos dentro da aula",
             "es": "Abrir los brazos dentro del aula"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_classroom"
         },
         {
           "id": "2_3.setembro.s1.peg",
@@ -133,7 +134,8 @@
             "gl": "Acenar a un compañeiro",
             "es": "Saludar a un compañero"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_say_hello"
         },
         {
           "id": "2_3.setembro.s1.bring",
@@ -276,7 +278,8 @@
             "gl": "Empurrar o tren pola vía",
             "es": "Empujar el tren por la vía"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_train_set"
         },
         {
           "id": "2_3.setembro.s2.toy-car",
@@ -612,7 +615,8 @@
             "gl": "Empurrar o caixón",
             "es": "Empujar el cajón"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_shut_the_drawer"
         },
         {
           "id": "2_3.setembro.s3.sorted",
@@ -765,7 +769,8 @@
             "gl": "Acenar a todos",
             "es": "Saludar a todos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_hand_wave"
         },
         {
           "id": "2_3.setembro.s4.photo-wall",

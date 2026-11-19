@@ -149,7 +149,8 @@
             "gl": "Lanzar un pano ao aire",
             "es": "Lanzar un pañuelo al aire"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_toss"
         },
         {
           "id": "0_2.marzo.s1.bright-red",
@@ -227,7 +228,8 @@
             "gl": "Lanzar o pano arriba",
             "es": "Lanzar el pañuelo arriba"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_up_it_goes"
         },
         {
           "id": "0_2.marzo.s1.blue-and-yellow",
@@ -621,7 +623,8 @@
             "gl": "Empurrar a pelota cun dedo",
             "es": "Empujar la pelota con un dedo"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_nudge"
         },
         {
           "id": "0_2.marzo.s3.rolling",
@@ -937,7 +940,8 @@
             "gl": "Verter zume no vaso",
             "es": "Verter zumo en el vaso"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_juice_in_a_cup"
         },
         {
           "id": "0_2.marzo.s4.piece-by-piece",

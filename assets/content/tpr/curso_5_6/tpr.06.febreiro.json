@@ -76,7 +76,8 @@
             "gl": "Saudar dende unha carroza",
             "es": "Saludar desde una carroza"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_carnival_float"
         },
         {
           "id": "5_6.febreiro.s1.confetti-cannon",

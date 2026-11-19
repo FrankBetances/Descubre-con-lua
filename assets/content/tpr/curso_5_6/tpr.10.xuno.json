@@ -210,7 +210,8 @@
             "gl": "Acenar a Lúa",
             "es": "Saludar a Lúa"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_thank_you_l_a"
         },
         {
           "id": "5_6.xuno.s1.when-i-was-two-i-couldn-t-write-my-name-but-now-i-can",
@@ -483,7 +484,8 @@
             "gl": "Lanzar un birrete ao aire",
             "es": "Lanzar un birrete al aire"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_graduation"
         },
         {
           "id": "5_6.xuno.s3.graduate-cap",
@@ -562,7 +564,8 @@
             "gl": "Axitar a man no aire",
             "es": "Agitar la mano en el aire"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_wave_your_graduation_cap"
         },
         {
           "id": "5_6.xuno.s3.cheer-hurray",
@@ -607,7 +610,8 @@
             "gl": "Lanzar ao aire",
             "es": "Lanzar al aire"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_throw_caps_in_the_air"
         },
         {
           "id": "5_6.xuno.s3.graduated",
@@ -875,7 +879,8 @@
             "gl": "Abrir os brazos ao sol",
             "es": "Abrir los brazos al sol"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_sun_soaked"
         },
         {
           "id": "5_6.xuno.s4.carefree",

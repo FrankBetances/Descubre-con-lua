@@ -127,7 +127,8 @@
             "gl": "Levantar os brazos ao sol",
             "es": "Levantar los brazos al sol"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_reach_up"
         },
         {
           "id": "0_2.abril.s1.sniff-a-flower",
@@ -160,7 +161,8 @@
             "gl": "Abrir os brazos grandes",
             "es": "Abrir los brazos grandes"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_blooming"
         },
         {
           "id": "0_2.abril.s1.springy",
@@ -206,7 +208,8 @@
             "gl": "Saudar a unha flor",
             "es": "Saludar a una flor"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_hello_flower"
         },
         {
           "id": "0_2.abril.s1.smell-the-flower",
@@ -431,7 +434,8 @@
             "gl": "Deixar pingar auga da esponxa",
             "es": "Dejar gotear agua de la esponja"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_drippy"
         },
         {
           "id": "0_2.abril.s2.drip-drop",

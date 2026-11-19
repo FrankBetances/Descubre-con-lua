@@ -758,7 +758,8 @@
             "gl": "Acariñar e dar de comer",
             "es": "Acariciar y dar de comer"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_pet_care"
         },
         {
           "id": "5_6.maio.s4.chore",
@@ -859,7 +860,8 @@
             "gl": "Acariñar unha planta",
             "es": "Acariciar una planta"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_well_cared_for"
         },
         {
           "id": "5_6.maio.s4.useful-helper",

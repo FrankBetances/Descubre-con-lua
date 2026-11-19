@@ -534,7 +534,8 @@
             "gl": "Lanzar un dado grande",
             "es": "Lanzar un dado grande"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_dice"
         },
         {
           "id": "2_3.marzo.s3.tube",
@@ -670,7 +671,8 @@
             "gl": "Empurrar e mirar",
             "es": "Empujar y mirar"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_will_it_roll"
         },
         {
           "id": "2_3.marzo.s3.look-through-the-tube",

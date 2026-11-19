@@ -171,7 +171,8 @@
             "gl": "Levantar a man dereita",
             "es": "Levantar la mano derecha"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_right_hand"
         },
         {
           "id": "4_5.xaneiro.s1.opposite",
@@ -577,7 +578,8 @@
             "gl": "Levantar a man na beirarrúa",
             "es": "Levantar la mano en la acera"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_hail_a_taxi"
         },
         {
           "id": "4_5.xaneiro.s3.buckle-up",
@@ -611,7 +613,8 @@
             "gl": "Acenar e marchar",
             "es": "Saludar e irse"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_depart"
         },
         {
           "id": "4_5.xaneiro.s3.transfer",
@@ -767,7 +770,8 @@
             "gl": "Entregar unha carta",
             "es": "Entregar una carta"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_postman"
         },
         {
           "id": "4_5.xaneiro.s4.farmer",
@@ -790,7 +794,8 @@
             "gl": "Acariñar un animal de peluche",
             "es": "Acariciar un animal de peluche"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_vet"
         },
         {
           "id": "4_5.xaneiro.s4.builder",
@@ -823,7 +828,8 @@
             "gl": "Entregar paquetes",
             "es": "Entregar paquetes"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_deliver"
         },
         {
           "id": "4_5.xaneiro.s4.knead",
@@ -846,7 +852,8 @@
             "gl": "Acariñar e dar de comer",
             "es": "Acariciar y dar de comer"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_look_after_animals"
         },
         {
           "id": "4_5.xaneiro.s4.direct-traffic",
@@ -934,7 +941,8 @@
             "gl": "Acariñar un peluche",
             "es": "Acariciar un peluche"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_the_vet_helps_animals_because_she_loves_them"
         },
         {
           "id": "4_5.xaneiro.s4.thank-you-firefighter",
@@ -945,7 +953,8 @@
             "gl": "Acenar ao bombeiro",
             "es": "Saludar al bombero"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_thank_you_firefighter"
         }
       ]
     }

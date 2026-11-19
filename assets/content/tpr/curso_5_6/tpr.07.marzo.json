@@ -384,7 +384,8 @@
             "gl": "Abrir os brazos iguais",
             "es": "Abrir los brazos iguales"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_symmetrical"
         },
         {
           "id": "5_6.marzo.s2.identical",
@@ -927,7 +928,8 @@
             "gl": "Mover a man de arriba abaixo",
             "es": "Mover la mano de arriba abajo"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_from_light_to_dark"
         }
       ]
     }

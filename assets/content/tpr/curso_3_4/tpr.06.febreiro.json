@@ -377,7 +377,8 @@
           "tprAction": {
             "gl": "Empurrar un arado imaxinario camiñando amodo",
             "es": "Empujar un arado imaginario caminando despacio"
-          }
+          },
+          "lamina": "pal_plough"
         },
         {
           "id": "3_4.febreiro.s2.graze",
@@ -787,7 +788,8 @@
           "tprAction": {
             "gl": "Abrir os brazos amplos coma ás grandes",
             "es": "Abrir los brazos amplios como alas grandes"
-          }
+          },
+          "lamina": "pal_wings"
         },
         {
           "id": "3_4.febreiro.s4.feather",

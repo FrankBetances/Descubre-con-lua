@@ -702,7 +702,8 @@
             "gl": "Abrir os brazos",
             "es": "Abrir los brazos"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_arms_out_like_a_plane"
         },
         {
           "id": "4_5.outubro.s3.stone-to-stone",

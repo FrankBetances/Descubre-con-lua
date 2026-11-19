@@ -264,7 +264,8 @@
             "gl": "Encher o vaso de auga",
             "es": "Llenar el vaso de agua"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_rinse_cup"
         },
         {
           "id": "2_3.maio.s2.smile-teeth",
@@ -353,7 +354,8 @@
             "gl": "Facer gárgaras con auga",
             "es": "Hacer gárgaras con agua"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_gargle"
         },
         {
           "id": "2_3.maio.s2.swish",
@@ -494,7 +496,8 @@
             "gl": "Deixar escorrer auga polo coador",
             "es": "Dejar escurrir agua por el colador"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_sieve"
         },
         {
           "id": "2_3.maio.s3.measuring-cup",
@@ -527,7 +530,8 @@
             "gl": "Coller auga coa pipeta",
             "es": "Coger agua con la pipeta"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_pipette"
         },
         {
           "id": "2_3.maio.s3.squirter",
@@ -618,7 +622,8 @@
             "gl": "Chapotear coas mans",
             "es": "Chapotear con las manos"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_splashing"
         },
         {
           "id": "2_3.maio.s3.overflowing",
@@ -640,7 +645,8 @@
             "gl": "Botar auga nun vaso con burato",
             "es": "Echar agua en un vaso con agujero"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_leaky"
         },
         {
           "id": "2_3.maio.s3.bubbly-water",
@@ -651,7 +657,8 @@
             "gl": "Soprar na auga cunha palla",
             "es": "Soplar en el agua con una pajita"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_bubbly_water"
         },
         {
           "id": "2_3.maio.s3.will-it-float",
@@ -673,7 +680,8 @@
             "gl": "Sinalar a auga e rir",
             "es": "Señalar el agua y reír"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_oops_it_spilled"
         },
         {
           "id": "2_3.maio.s3.from-cup-to-cup",
@@ -684,7 +692,8 @@
             "gl": "Verter dun vaso a outro",
             "es": "Verter de un vaso a otro"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_from_cup_to_cup"
         },
         {
           "id": "2_3.maio.s3.full-to-the-top",
@@ -771,7 +780,8 @@
             "gl": "Lavar a roupa da boneca",
             "es": "Lavar la ropa de la muñeca"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_doll_clothes"
         },
         {
           "id": "2_3.maio.s4.bucket-of-water",

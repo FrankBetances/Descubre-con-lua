@@ -357,7 +357,8 @@
             "gl": "Abrir os brazos amodo",
             "es": "Abrir los brazos despacio"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_grow_bigger"
         },
         {
           "id": "5_6.xaneiro.s2.fish-for-a-living",
@@ -368,7 +369,8 @@
             "gl": "Lanzar a rede",
             "es": "Lanzar la red"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_fish_for_a_living"
         },
         {
           "id": "5_6.xaneiro.s2.travel-by-boat",

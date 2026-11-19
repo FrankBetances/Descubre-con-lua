@@ -171,7 +171,8 @@
             "gl": "Abrazar o bebé ben apertado",
             "es": "Abrazar al bebé bien apretado"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_toasty_warm"
         },
         {
           "id": "0_2.decembro.s1.fleecy",
@@ -343,7 +344,8 @@
             "gl": "Dar unha aperta forte e soltar",
             "es": "Dar un abrazo fuerte y soltar"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_squeeze_tight"
         },
         {
           "id": "0_2.decembro.s2.rock-gently",
@@ -399,7 +401,8 @@
             "gl": "Aconchegar o bebé coa meixela",
             "es": "Acurrucar al bebé con la mejilla"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_snuggly"
         },
         {
           "id": "0_2.decembro.s2.woolly-hat",
@@ -444,7 +447,8 @@
             "gl": "Abrir os brazos e agardar",
             "es": "Abrir los brazos y esperar"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_come_here_for_a_hug"
         },
         {
           "id": "0_2.decembro.s2.warm-as-toast",

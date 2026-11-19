@@ -69,7 +69,8 @@
           "tprAction": {
             "gl": "Abrir os brazos e planear amodo",
             "es": "Abrir los brazos y planear despacio"
-          }
+          },
+          "lamina": "pal_seagull"
         },
         {
           "id": "3_4.xuno.s1.island",
@@ -127,7 +128,8 @@
           "tprAction": {
             "gl": "Abrir os brazos coma unha vela e moverse coa brisa",
             "es": "Abrir los brazos como una vela y moverse con la brisa"
-          }
+          },
+          "lamina": "pal_sail"
         },
         {
           "id": "3_4.xuno.s1.dive",
@@ -694,7 +696,8 @@
           "tprAction": {
             "gl": "Nadar cos brazos e mirar a outra persoa",
             "es": "Nadar con los brazos y mirar a otra persona"
-          }
+          },
+          "lamina": "pal_can_you_swim"
         },
         {
           "id": "3_4.xuno.s3.walk-sideways-like-a-crab",
@@ -943,7 +946,8 @@
           "tprAction": {
             "gl": "Abrir os brazos cara ao grupo con ledicia",
             "es": "Abrir los brazos hacia el grupo con alegría"
-          }
+          },
+          "lamina": "pal_have_a_nice_summer"
         },
         {
           "id": "3_4.xuno.s4.see-you-in-september",

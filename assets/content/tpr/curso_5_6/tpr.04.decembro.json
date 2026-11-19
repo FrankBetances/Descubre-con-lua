@@ -115,7 +115,8 @@
             "gl": "Abrir os brazos de golpe",
             "es": "Abrir los brazos de golpe"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_shine_like_the_sun"
         },
         {
           "id": "5_6.decembro.s1.sleep-like-the-moon",
@@ -230,7 +231,8 @@
             "gl": "Abrir os brazos",
             "es": "Abrir los brazos"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_good_morning_sun"
         },
         {
           "id": "5_6.decembro.s1.good-night-moon",
@@ -333,7 +335,8 @@
             "gl": "Flotar cos brazos abertos",
             "es": "Flotar con los brazos abiertos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_space"
         },
         {
           "id": "5_6.decembro.s2.stargaze",
