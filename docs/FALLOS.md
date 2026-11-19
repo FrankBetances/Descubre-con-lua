@@ -104,3 +104,8 @@ Formato de cada entrada (una por fallo):
 - Causa raíz: los prompts vivían solo en el chat, no en el repositorio, y ningún gate cruzaba los pasos que nombran con la tabla.
 - Guarda: tools/check_registro_commits.py (falla si docs/PROMPTS_ANTIGRAVITY.md nombra un paso que no está en la tabla de pasos; los prompts se guardan ahí)
 
+## F-20261119-8 · Claude Code coló un piloto de 4-5 años que Frank no pidió
+- Qué pasó: Frank pidió integrar pares mínimos y expansión semántica mezclados con el STEAM y el inglés (O-20261118-3). Claude Code escribió los criterios como un «piloto» de una unidad de 4-5 años, a extender solo si Frank lo aprobaba, y lo arrastró como pendiente varios días. Frank no lo había pedido. Lo hizo Claude Code.
+- Causa raíz: Claude Code aplicó por su cuenta la entrega «primero una edad» y redujo el alcance de la orden en los criterios, sin preguntar (contra R1: recortar es preguntar), y nada comparaba los criterios con las palabras de Frank.
+- Guarda: tools/check_ordenes.py (falla si un criterio dice «piloto», «de prueba», «una sola edad», «solo 4-5», «primero 4-5»… y esas palabras no están en la cita literal de Frank de esa orden)
+

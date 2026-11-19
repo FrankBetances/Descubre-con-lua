@@ -355,12 +355,13 @@ Fuente: FrankBetances/Valeria:src/valeriaMinimalPairsEn.ts (los 9 pares del ingl
 
 Opción A, tal como la eligió Frank: estimulación del lenguaje universal y educativa, sin finalidad sanitaria (regla de producto de CLAUDE.md). Ni «logopedia», ni «terapia», ni «trastorno» en la app, en la ficha ni en documentos públicos.
 
-- [ ] Piloto en la unidad 3 de 4-5 años (noviembre, STEAM «Dúas patas, catro patas»; lecciones curso_4_5.03.1 a .4): Na casa → Hoy → día → Continuar, cada semana lleva un paso «Escoita e sinala» con un par de Valeria (key/tea, peach/beach, sheep/ship, snail/nail), las dos láminas, la voz de cada palabra y la misión de Valeria para el adulto en gl/es · evidencia:
-- [ ] Cada semana del piloto lleva un paso de expansión semántica copiado de las progresiones de Valeria, con un animal del STEAM (dog, cow, cat, bird): concepto, parte, acción y cualidad, cada una con lámina, voz y significado gl/es, y la acción del adulto · evidencia:
-- [ ] Cada semana del piloto lleva un modelo de expansión gramatical para el adulto (el niño dice una palabra, el adulto la amplía), grabado · evidencia:
-- [ ] Gate: falla si una semana del piloto no tiene los tres pasos, si un par no difiere en un solo fonema, si una palabra no tiene imagen o voz, o si aparece «logopedia», «terapia» o «trastorno» en assets/, lib/ o docs/ públicos · evidencia:
-- [ ] Revisado por una logopeda o por Frank: los pares son válidos y adecuados a 4-5 años · evidencia:
-- [ ] Frank lo ve en la app (Na casa → Hoy → día → Continuar) en tres semanas y da el piloto por bueno antes de extenderlo a otras unidades o edades · evidencia:
+(19/11/2026) Corregido: Claude Code había reducido esta orden a un piloto de una unidad de 4-5 años que Frank no pidió; vuelve a su alcance, todas las edades con lección y todos los meses, con el STEAM como eje (F-20261119-8).
+- [ ] Na casa → Hoy → día → Continuar, en 2-3, 3-4, 4-5 y 5-6 y en los 10 meses: un paso de pares mínimos en inglés con palabras del STEAM del mes, las dos láminas, la voz de cada palabra y la misión para el adulto en gl/es · evidencia:
+- [ ] En las mismas lecciones, un paso de expansión semántica de una palabra del STEAM del mes (concepto, parte, acción, cualidad), cada palabra con lámina, voz y significado gl/es · evidencia:
+- [ ] En las mismas lecciones, un modelo de expansión gramatical para el adulto (el niño dice una palabra del STEAM, el adulto la amplía en tres frases), con voz · evidencia:
+- [ ] Gate: falla si falta la pieza de un curso y mes, si un par no difiere en un solo fonema, si una palabra no tiene lámina, voz o STEAM, o si aparece «logopedia», «terapia» o «trastorno» en assets/, lib/ o docs/ públicos · evidencia:
+- [ ] Revisado por Frank (o por la logopeda que validó Valeria): los pares son válidos y adecuados a cada edad · evidencia:
+- [ ] Frank lo ve en la app (Na casa → Hoy → día → Continuar) en tres meses de edades distintas y lo da por bueno · evidencia:
 
 ## O-20261118-4 · Un único plan que registre cada commit, para auditar paso a paso
 Estado: abierta
@@ -443,7 +444,7 @@ Fuente: docs/tpr_sin_base.md (las 227 piezas sin base de P2.93–P2.95, con su m
 - [x] Las 835 piezas TPR sin base (608 + 227) en la lista cerrada tools/tpr_sin_base_aprobadas.txt; tope TPR a 0 · evidencia: tools/check_laminas_leccion.py (--resumo --tope-tpr: TPR 0 de tope 0)
 - [x] Las 12 escenas de reto rehechas con las fuentes de O-20261111-4 (Fluent Flat, composiciones en estilo Lúa), sin el triángulo rosa · evidencia: tools/gen_escenas_retos.py (12 escenas con Fluent Flat, MIT, y dibujos propios en el mismo estilo, sobre la mesa; control en docs/imagenes-escenas.md; gate tools/check_imagenes_escenas.py) y docs/capturas/escena-antes-despues.png
 - [x] La tarjeta de palabras del día (PalabraConXesto) pinta la lámina de cada palabra con semanticsLabel gl/es · evidencia: test/features/palabra_lamina_test.dart («a palabra do día leva a súa lámina», gl y es, con su etiqueta) y test/features/laminas_leccion_test.dart (pasos de la lección, del proyecto de 0-2 y frase de gramática)
-- [ ] El piloto de juegos de escucha y palabras (O-20261118-3) hecho hasta donde depende de Claude Code, y propuesto a Frank para su revisión · evidencia:
+- [ ] Los juegos de escucha y palabras (O-20261118-3) hechos hasta donde depende de Claude Code, en todas las edades con lección, y propuestos a Frank para su revisión · evidencia:
 - [x] Mergeado en main con CI en verde · evidencia: docs/ORDENES.md (PR #60, merge 582478a4, runs 44535911964 y 44535920265 en verde)
 
 ## O-20261119-7 · Terminar el rediseño de la UX/UI: mejorar lo que hay, con más vida, dinamismo y atractivo
