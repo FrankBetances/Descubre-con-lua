@@ -141,7 +141,8 @@
             "gl": "Baleirar o vaso na bandexa",
             "es": "Vaciar el vaso en la bandeja"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_empty_out"
         },
         {
           "id": "0_2.maio.s1.dip",
@@ -176,7 +177,8 @@
             "gl": "Espremer un pano enchoupado",
             "es": "Escurrir un paño empapado"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_dripping_wet"
         },
         {
           "id": "0_2.maio.s1.lukewarm",
@@ -304,7 +306,8 @@
             "gl": "Poñer a carapucha da toalla",
             "es": "Poner la capucha de la toalla"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_hooded_towel"
         },
         {
           "id": "0_2.maio.s2.bath-foam",
@@ -568,7 +571,8 @@
             "gl": "Limpar a cara co pano",
             "es": "Limpiar la cara con el paño"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_face_cloth"
         },
         {
           "id": "0_2.maio.s3.wet-wipe",
@@ -636,7 +640,8 @@
             "gl": "Secar as mans fregando",
             "es": "Secarse las manos frotando"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_dry_off"
         },
         {
           "id": "0_2.maio.s3.slippery-soap",
@@ -856,7 +861,8 @@
             "gl": "Seguir a burbulla coa mirada",
             "es": "Seguir la burbuja con la mirada"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_float_away"
         },
         {
           "id": "0_2.maio.s4.reach-for",

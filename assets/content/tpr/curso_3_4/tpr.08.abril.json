@@ -317,7 +317,8 @@
           "tprAction": {
             "gl": "Pousar unha planta imaxinaria nun testo",
             "es": "Poner una planta imaginaria en una maceta"
-          }
+          },
+          "lamina": "pal_flowerpot"
         },
         {
           "id": "3_4.abril.s2.watering-can",
@@ -351,7 +352,8 @@
           "tprAction": {
             "gl": "Pasar de agachados a estirados moi amodo",
             "es": "Pasar de agachados a estirados muy despacio"
-          }
+          },
+          "lamina": "pal_grow"
         },
         {
           "id": "3_4.abril.s2.sow",
@@ -862,7 +864,8 @@
           "tprAction": {
             "gl": "Saír amodo dun ovo imaxinario rompendo a casca",
             "es": "Salir despacio de un huevo imaginario rompiendo la cáscara"
-          }
+          },
+          "lamina": "pal_hatch"
         },
         {
           "id": "3_4.abril.s4.explore",
@@ -920,7 +923,8 @@
           "tprAction": {
             "gl": "Levantar un dedo e dar un paso adiante",
             "es": "Levantar un dedo y dar un paso adelante"
-          }
+          },
+          "lamina": "pal_first"
         },
         {
           "id": "3_4.abril.s4.last",

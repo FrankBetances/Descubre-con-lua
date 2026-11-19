@@ -288,7 +288,8 @@
             "gl": "Pasar por un oco entre dúas cadeiras",
             "es": "Pasar por un hueco entre dos sillas"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_gap"
         },
         {
           "id": "4_5.xaneiro.s2.obstacle-course",
@@ -310,7 +311,8 @@
             "gl": "Pasar polos aros",
             "es": "Pasar por los aros"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_hoop_tunnel"
         },
         {
           "id": "4_5.xaneiro.s2.mat-path",
@@ -672,7 +674,8 @@
             "gl": "Facer «zzz» coa voz",
             "es": "Hacer «zzz» con la voz"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_electric"
         },
         {
           "id": "4_5.xaneiro.s3.crowded-bus",
@@ -683,7 +686,8 @@
             "gl": "Apertarse xuntos",
             "es": "Apretarse juntos"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_crowded_bus"
         },
         {
           "id": "4_5.xaneiro.s3.which-bus-goes-to-the-beach",
@@ -925,7 +929,8 @@
             "gl": "Espreguizarse cedo",
             "es": "Desperezarse temprano"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_early_rising"
         },
         {
           "id": "4_5.xaneiro.s4.what-do-you-want-to-be",

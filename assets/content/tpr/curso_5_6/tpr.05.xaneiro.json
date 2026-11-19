@@ -267,7 +267,8 @@
             "gl": "Poñer os brazos coma murallas",
             "es": "Poner los brazos como murallas"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_fortress"
         },
         {
           "id": "5_6.xaneiro.s2.castle-wall",
@@ -350,7 +351,8 @@
             "gl": "Poñer un escudo imaxinario",
             "es": "Ponerse un escudo imaginario"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_defend"
         },
         {
           "id": "5_6.xaneiro.s2.grow-bigger",
@@ -577,7 +579,8 @@
             "gl": "Erguerse amodo",
             "es": "Levantarse despacio"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_grow_up"
         },
         {
           "id": "5_6.xaneiro.s3.learn-to-walk",
@@ -768,7 +771,8 @@
             "gl": "Poñer as mans na cadeira",
             "es": "Poner las manos en la cadera"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_hero"
         },
         {
           "id": "5_6.xaneiro.s4.plot-twist",

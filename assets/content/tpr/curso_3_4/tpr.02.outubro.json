@@ -305,7 +305,8 @@
           "tprAction": {
             "gl": "Pasar as mans polo pelo coma se o peiteasemos",
             "es": "Pasarse las manos por el pelo como si nos peináramos"
-          }
+          },
+          "lamina": "pal_hair"
         },
         {
           "id": "3_4.outubro.s2.teeth",
@@ -482,7 +483,8 @@
           "tprAction": {
             "gl": "Pousar as mans na barriga e notar como sobe e baixa",
             "es": "Poner las manos en la barriga y notar cómo sube y baja"
-          }
+          },
+          "lamina": "pal_hands_on_your_tummy"
         },
         {
           "id": "3_4.outubro.s2.close-your-eyes-and-listen",
@@ -791,7 +793,8 @@
           "tprAction": {
             "gl": "Rodear a cara coas mans",
             "es": "Rodearse la cara con las manos"
-          }
+          },
+          "lamina": "pal_face"
         },
         {
           "id": "3_4.outubro.s4.belly-button",
@@ -897,7 +900,8 @@
           "tprAction": {
             "gl": "Levantar unha pedra imaxinaria moi pesada",
             "es": "Levantar una piedra imaginaria muy pesada"
-          }
+          },
+          "lamina": "pal_heavy"
         },
         {
           "id": "3_4.outubro.s4.stiff",
@@ -919,7 +923,8 @@
           "tprAction": {
             "gl": "Deixar caer os brazos frouxos coma un monicreque",
             "es": "Dejar caer los brazos flojos como una marioneta"
-          }
+          },
+          "lamina": "pal_floppy"
         },
         {
           "id": "3_4.outubro.s4.look-at-me",

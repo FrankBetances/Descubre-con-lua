@@ -115,7 +115,8 @@
             "gl": "Estender a man con comida para patos",
             "es": "Extender la mano con comida para patos"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_feed_the_ducks"
         },
         {
           "id": "2_3.novembro.s1.kick-a-leaf",
@@ -360,7 +361,8 @@
             "gl": "Bater os brazos coma o vento",
             "es": "Batir los brazos como el viento"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_flap_arms"
         },
         {
           "id": "2_3.novembro.s2.hold-on",
@@ -371,7 +373,8 @@
             "gl": "Agarrarse ao banco",
             "es": "Agarrarse al banco"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_hold_on"
         },
         {
           "id": "2_3.novembro.s2.whoosh-around",
@@ -453,7 +456,8 @@
             "gl": "Pousar as mans na cabeza",
             "es": "Posar las manos en la cabeza"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_hold_your_hat"
         },
         {
           "id": "2_3.novembro.s2.the-wind-is-blowing",

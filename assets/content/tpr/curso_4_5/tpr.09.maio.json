@@ -182,7 +182,8 @@
             "gl": "Baixar a man",
             "es": "Bajar la mano"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_heavier_than_water"
         },
         {
           "id": "4_5.maio.s1.lighter-than-water",
@@ -280,7 +281,8 @@
             "gl": "Poñer as mans coma un muro",
             "es": "Poner las manos como un muro"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_dam"
         },
         {
           "id": "4_5.maio.s2.channel",
@@ -524,7 +526,8 @@
             "gl": "Subir amodo as mans",
             "es": "Subir despacio las manos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_evaporation"
         },
         {
           "id": "4_5.maio.s3.rain-gauge",

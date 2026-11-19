@@ -389,7 +389,8 @@
           "tprAction": {
             "gl": "Meter a cabeza por unha camiseta imaxinaria",
             "es": "Meter la cabeza por una camiseta imaginaria"
-          }
+          },
+          "lamina": "pal_dress"
         },
         {
           "id": "3_4.maio.s2.shower",

@@ -128,7 +128,8 @@
             "gl": "Facerse un novelo coma un gato",
             "es": "Hacerse un ovillo como un gato"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_curl_up"
         },
         {
           "id": "0_2.xaneiro.s1.mew",
@@ -652,7 +653,8 @@
             "gl": "Pasar unha pluma pola man",
             "es": "Pasar una pluma por la mano"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_feathery"
         },
         {
           "id": "0_2.xaneiro.s3.chirpy",
@@ -734,7 +736,8 @@
             "gl": "Facer un niño coas mans",
             "es": "Hacer un nido con las manos"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_in_the_nest"
         }
       ]
     },
@@ -778,7 +781,8 @@
             "gl": "Pousar a orella do bebé no peito",
             "es": "Posar la oreja del bebé en el pecho"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_heartbeat"
         },
         {
           "id": "0_2.xaneiro.s4.rain-stick",

@@ -148,7 +148,8 @@
             "gl": "Moverse amodo sen remar",
             "es": "Moverse despacio sin remar"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_drift_along"
         },
         {
           "id": "2_3.xuno.s1.seaworthy",
@@ -229,7 +230,8 @@
             "gl": "Remar amodo",
             "es": "Remar despacio"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_gently_down_the_stream"
         },
         {
           "id": "2_3.xuno.s1.boats-on-the-water",
@@ -375,7 +377,8 @@
             "gl": "Cavar coas mans",
             "es": "Cavar con las manos"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_dig_a_hole"
         },
         {
           "id": "2_3.xuno.s2.fill-the-bucket",
@@ -386,7 +389,8 @@
             "gl": "Encher o balde de area",
             "es": "Llenar el cubo de arena"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_fill_the_bucket"
         },
         {
           "id": "2_3.xuno.s2.damp-sand",
@@ -397,7 +401,8 @@
             "gl": "Apertar area húmida",
             "es": "Apretar arena húmeda"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_damp_sand"
         },
         {
           "id": "2_3.xuno.s2.dry-sand",
@@ -408,7 +413,8 @@
             "gl": "Deixar caer area seca",
             "es": "Dejar caer arena seca"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_dry_sand"
         },
         {
           "id": "2_3.xuno.s2.heaped",
@@ -419,7 +425,8 @@
             "gl": "Facer un monte de area",
             "es": "Hacer un montón de arena"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_heaped"
         },
         {
           "id": "2_3.xuno.s2.smooth-sand",
@@ -475,7 +482,8 @@
             "gl": "Cavar máis e máis",
             "es": "Cavar más y más"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_deeper_and_deeper"
         }
       ]
     },
@@ -784,7 +792,8 @@
             "gl": "Dar unha tarxeta a un amigo",
             "es": "Dar una tarjeta a un amigo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_goodbye_card"
         },
         {
           "id": "2_3.xuno.s4.school-bag",
@@ -830,7 +839,8 @@
             "gl": "Estender a tarxeta",
             "es": "Extender la tarjeta"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_give_a_card"
         },
         {
           "id": "2_3.xuno.s4.pose",
@@ -957,7 +967,8 @@
             "gl": "Enganchar os meniñeiros",
             "es": "Enganchar los meñiques"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_friends_forever"
         }
       ]
     }

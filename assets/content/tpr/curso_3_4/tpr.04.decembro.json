@@ -983,7 +983,8 @@
           "tprAction": {
             "gl": "Subir as mans e animar todos á vez",
             "es": "Subir las manos y animar todos a la vez"
-          }
+          },
+          "lamina": "pal_hands_up_and_cheer"
         }
       ]
     }

@@ -57,7 +57,8 @@
             "gl": "Poñer a bolsa morna na barriga",
             "es": "Poner la bolsa templada en la barriga"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_hot_water_bottle"
         },
         {
           "id": "0_2.decembro.s1.frost",
@@ -198,7 +199,8 @@
             "gl": "Pasar o dedo polo cristal frío",
             "es": "Pasar el dedo por el cristal frío"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_frosty"
         },
         {
           "id": "0_2.decembro.s1.brr-so-cold",
@@ -433,7 +435,8 @@
             "gl": "Pousar a manta amodo",
             "es": "Posar la manta despacio"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_heavy_blanket"
         },
         {
           "id": "0_2.decembro.s2.sleepy-eyed",
@@ -692,7 +695,8 @@
             "gl": "Baixar a luz amodo",
             "es": "Bajar la luz despacio"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_dim"
         },
         {
           "id": "0_2.decembro.s3.lights-on",
@@ -853,7 +857,8 @@
             "gl": "Facer soar o cascabel",
             "es": "Hacer sonar el cascabel"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_jingle"
         },
         {
           "id": "0_2.decembro.s4.rock-and-sing",

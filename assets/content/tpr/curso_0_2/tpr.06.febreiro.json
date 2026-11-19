@@ -152,7 +152,8 @@
             "gl": "Poñer unha capa ao bebé",
             "es": "Poner una capa al bebé"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_dress_up"
         },
         {
           "id": "0_2.febreiro.s1.giggly",
@@ -199,7 +200,8 @@
             "gl": "Pasar unha pluma do gorro pola cara",
             "es": "Pasar una pluma del gorro por la cara"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_feathered_hat"
         },
         {
           "id": "0_2.febreiro.s1.boo",
@@ -686,7 +688,8 @@
             "gl": "Tapar o xoguete cunha manta",
             "es": "Tapar el juguete con una manta"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_hidden_away"
         },
         {
           "id": "0_2.febreiro.s3.peekaboo",
@@ -731,7 +734,8 @@
             "gl": "Meter e sacar o xoguete da caixa",
             "es": "Meter y sacar el juguete de la caja"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_in_and_out"
         }
       ]
     },

@@ -104,7 +104,8 @@
             "gl": "Estirar os brazos e voar",
             "es": "Estirar los brazos y volar"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_fly_with_wings"
         },
         {
           "id": "4_5.abril.s1.watch-the-sky",
@@ -243,7 +244,8 @@
             "gl": "Facer montes coas mans",
             "es": "Hacer montes con las manos"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_islands_in_the_sea"
         }
       ]
     },
@@ -334,7 +336,8 @@
             "gl": "Facer que se colle un peixe co bico",
             "es": "Hacer que se coge un pez con el pico"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_fish_supper"
         },
         {
           "id": "4_5.abril.s2.soar",
@@ -357,7 +360,8 @@
             "gl": "Baixar as mans xuntas en picado",
             "es": "Bajar las manos juntas en picado"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_dive_for_fish"
         },
         {
           "id": "4_5.abril.s2.dry-wings",
@@ -438,7 +442,8 @@
             "gl": "Pasar a man polo cabelo",
             "es": "Pasar la mano por el pelo"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_glossy_black"
         },
         {
           "id": "4_5.abril.s2.look-how-high-it-flies",
@@ -596,7 +601,8 @@
             "gl": "Inchar as meixelas",
             "es": "Inflar las mejillas"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_hold_your_breath"
         },
         {
           "id": "4_5.abril.s3.sway-with-the-current",

@@ -340,7 +340,8 @@
             "gl": "Baixar amodo",
             "es": "Bajar despacio"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_dive_deep"
         },
         {
           "id": "5_6.abril.s2.take-photos",
@@ -545,7 +546,8 @@
             "gl": "Apagar a luz",
             "es": "Apagar la luz"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_energy_saver"
         },
         {
           "id": "5_6.abril.s3.bike-ride",

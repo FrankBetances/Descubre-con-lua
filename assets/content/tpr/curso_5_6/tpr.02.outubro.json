@@ -379,7 +379,8 @@
             "gl": "Tensar o brazo",
             "es": "Tensar el brazo"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_flex"
         },
         {
           "id": "5_6.outubro.s2.relax",
@@ -506,7 +507,8 @@
             "gl": "Dobrar o cóbado",
             "es": "Doblar el codo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_joint"
         },
         {
           "id": "5_6.outubro.s3.spine",
@@ -643,7 +645,8 @@
             "gl": "Dobrarse amodo",
             "es": "Doblarse despacio"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_flexible_body"
         },
         {
           "id": "5_6.outubro.s3.upright-posture",
@@ -847,7 +850,8 @@
             "gl": "Poñer o pixama imaxinario",
             "es": "Ponerse el pijama imaginario"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_get_ready_for_bed"
         },
         {
           "id": "5_6.outubro.s4.wake-up-early",

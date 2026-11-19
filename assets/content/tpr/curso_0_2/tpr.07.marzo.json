@@ -362,7 +362,8 @@
             "gl": "Deixar que colla a culler",
             "es": "Dejar que coja la cuchara"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_feed_yourself"
         },
         {
           "id": "0_2.marzo.s2.scoop",
@@ -465,7 +466,8 @@
             "gl": "Achegar a culler voando",
             "es": "Acercar la cuchara volando"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_here_comes_the_aeroplane"
         },
         {
           "id": "0_2.marzo.s2.a-spoon-for-you",
@@ -731,7 +733,8 @@
             "gl": "Soltar a pelota arriba da rampla",
             "es": "Soltar la pelota arriba de la rampa"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_down_the_ramp"
         }
       ]
     },
@@ -823,7 +826,8 @@
             "gl": "Sacar froitas do froiteiro",
             "es": "Sacar frutas del frutero"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_fruit_bowl"
         },
         {
           "id": "0_2.marzo.s4.hold-it",

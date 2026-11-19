@@ -57,7 +57,8 @@
             "gl": "Agarrarse á asa",
             "es": "Agarrarse al asidero"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_handle"
         },
         {
           "id": "2_3.xaneiro.s1.window-seat",
@@ -116,7 +117,8 @@
             "gl": "Dar un paso cara abaixo",
             "es": "Dar un paso hacia abajo"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_get_off"
         },
         {
           "id": "2_3.xaneiro.s1.wait-in-line",
@@ -397,7 +399,8 @@
             "gl": "Facer «mec mec»",
             "es": "Hacer «mec mec»"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_honk"
         },
         {
           "id": "2_3.xaneiro.s2.zippy",
@@ -964,7 +967,8 @@
             "gl": "Facer o saúdo de mariñeiro",
             "es": "Hacer el saludo de marinero"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_hello_sailor"
         },
         {
           "id": "2_3.xaneiro.s4.up-with-the-crane",

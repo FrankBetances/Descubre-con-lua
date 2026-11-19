@@ -45,7 +45,8 @@
             "gl": "Baixar un dedo coma un carambelo",
             "es": "Bajar un dedo como un carámbano"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_icicle"
         },
         {
           "id": "4_5.decembro.s1.thermometer",
@@ -116,7 +117,8 @@
             "gl": "Poñer o corpo ríxido",
             "es": "Poner el cuerpo rígido"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_freeze_water"
         },
         {
           "id": "4_5.decembro.s1.warm-with-breath",
@@ -297,7 +299,8 @@
             "gl": "Medir a mesa a palmos",
             "es": "Medir la mesa a palmos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_handspan"
         },
         {
           "id": "4_5.decembro.s2.pair-of-socks",
@@ -319,7 +322,8 @@
             "gl": "Partir algo pola metade",
             "es": "Partir algo por la mitad"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_half"
         },
         {
           "id": "4_5.decembro.s2.whole",
@@ -399,7 +403,8 @@
             "gl": "Baixar a man que pesa máis",
             "es": "Bajar la mano que pesa más"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_heavier"
         },
         {
           "id": "4_5.decembro.s2.lighter-in-weight",
@@ -534,7 +539,8 @@
             "gl": "Colgar un adorno imaxinario",
             "es": "Colgar un adorno imaginario"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_decoration"
         },
         {
           "id": "4_5.decembro.s3.shop-window",
@@ -604,7 +610,8 @@
             "gl": "Colgar adornos no aire",
             "es": "Colgar adornos en el aire"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_decorate"
         },
         {
           "id": "4_5.decembro.s3.admire",
@@ -742,7 +749,8 @@
             "gl": "Meter unha peza de roupa na caixa",
             "es": "Meter una prenda en la caja"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_donation_box"
         },
         {
           "id": "4_5.decembro.s4.warm-clothes",
@@ -823,7 +831,8 @@
             "gl": "Meter algo na caixa",
             "es": "Meter algo en la caja"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_donate"
         },
         {
           "id": "4_5.decembro.s4.give-away",

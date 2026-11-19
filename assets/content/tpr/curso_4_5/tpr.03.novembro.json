@@ -339,7 +339,8 @@
             "gl": "Facer un oco coas mans",
             "es": "Hacer un hueco con las manos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_hollow_trunk"
         },
         {
           "id": "4_5.novembro.s2.sway-like-an-oak",
@@ -362,7 +363,8 @@
             "gl": "Coller landras do chan",
             "es": "Coger bellotas del suelo"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_gather_acorns"
         },
         {
           "id": "4_5.novembro.s2.count-rings",

@@ -170,7 +170,8 @@
             "gl": "Baixar o brazo ao máximo",
             "es": "Bajar el brazo al máximo"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_heaviest"
         },
         {
           "id": "5_6.novembro.s1.lightest",
@@ -236,7 +237,8 @@
             "gl": "Deixar caer a man amodo",
             "es": "Dejar caer la mano despacio"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_drop_a_light_feather"
         }
       ]
     },
@@ -382,7 +384,8 @@
             "gl": "Xuntar de cinco en cinco",
             "es": "Juntar de cinco en cinco"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_group"
         },
         {
           "id": "5_6.novembro.s2.odd",
@@ -731,7 +734,8 @@
             "gl": "Coller e meter nun cesto",
             "es": "Coger y meter en una cesta"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_harvest"
         },
         {
           "id": "5_6.novembro.s4.orchard",
@@ -835,7 +839,8 @@
             "gl": "Meter froita na caixa",
             "es": "Meter fruta en la caja"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_fill_a_crate"
         },
         {
           "id": "5_6.novembro.s4.store",

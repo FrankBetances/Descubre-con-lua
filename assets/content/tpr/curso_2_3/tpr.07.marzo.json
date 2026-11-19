@@ -45,7 +45,8 @@
             "gl": "Facer un rombo coas mans",
             "es": "Hacer un rombo con las manos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_diamond"
         },
         {
           "id": "2_3.marzo.s1.star-shape",
@@ -196,7 +197,8 @@
             "gl": "Facer un ovo coas mans",
             "es": "Hacer un huevo con las manos"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_egg_shaped"
         },
         {
           "id": "2_3.marzo.s1.what-shape-is-this",
@@ -310,7 +312,8 @@
             "gl": "Mesturar froita nunha cunca",
             "es": "Mezclar fruta en un cuenco"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_fruit_salad"
         },
         {
           "id": "2_3.marzo.s2.smoothie",
@@ -333,7 +336,8 @@
             "gl": "Pelar unha froita imaxinaria",
             "es": "Pelar una fruta imaginaria"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_fruit_peel"
         },
         {
           "id": "2_3.marzo.s2.chop",
@@ -503,7 +507,8 @@
             "gl": "Facer un cubo coas mans",
             "es": "Hacer un cubo con las manos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_cube"
         },
         {
           "id": "2_3.marzo.s3.sphere",
@@ -713,7 +718,8 @@
             "gl": "Pousar o cubo enriba",
             "es": "Poner el cubo encima"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_cube_on_the_cylinder"
         },
         {
           "id": "2_3.marzo.s3.round-and-flat",

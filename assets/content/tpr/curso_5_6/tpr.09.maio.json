@@ -752,7 +752,8 @@
             "gl": "Cavar no aire",
             "es": "Cavar en el aire"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_garden_plot"
         },
         {
           "id": "5_6.maio.s4.pet-care",
@@ -913,7 +914,8 @@
             "gl": "Poñer pratos imaxinarios",
             "es": "Poner platos imaginarios"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_i_help_at_home_by_setting_the_table"
         },
         {
           "id": "5_6.maio.s4.when-i-look-after-my-plant-it-grows",

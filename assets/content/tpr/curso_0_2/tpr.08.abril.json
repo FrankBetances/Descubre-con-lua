@@ -244,7 +244,8 @@
             "gl": "Poñer a flor na palma",
             "es": "Poner la flor en la palma"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_flower_in_my_hand"
         }
       ]
     },
@@ -431,7 +432,8 @@
             "gl": "Pasar a man pola herba",
             "es": "Pasar la mano por la hierba"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_dewy"
         },
         {
           "id": "0_2.abril.s2.drippy",
@@ -490,7 +492,8 @@
             "gl": "Deixar caer pingas unha a unha",
             "es": "Dejar caer gotas una a una"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_drop_by_drop"
         }
       ]
     },
@@ -570,7 +573,8 @@
             "gl": "Coller terra coa pa",
             "es": "Coger tierra con la pala"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_garden_trowel"
         },
         {
           "id": "0_2.abril.s3.sprout-bag",
@@ -975,7 +979,8 @@
             "gl": "Pousar un dedo no nariz",
             "es": "Posar un dedo en la nariz"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_finger_on_your_nose"
         }
       ]
     }

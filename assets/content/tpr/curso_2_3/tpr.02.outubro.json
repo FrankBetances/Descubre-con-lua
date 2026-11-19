@@ -69,7 +69,8 @@
             "gl": "Pasar a corda polo chan",
             "es": "Pasar la comba por el suelo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_jump_rope"
         },
         {
           "id": "2_3.outubro.s1.cushion-jump",
@@ -523,7 +524,8 @@
             "gl": "Pasar a liña de meta",
             "es": "Pasar la línea de meta"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_finish_line"
         },
         {
           "id": "2_3.outubro.s3.whistle-blow",
@@ -755,7 +757,8 @@
             "gl": "Bailar no medio da sala",
             "es": "Bailar en medio de la sala"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_dance_floor"
         },
         {
           "id": "2_3.outubro.s4.tap-shoes",
@@ -953,7 +956,8 @@
             "gl": "Pousar os pés no chan",
             "es": "Posar los pies en el suelo"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_feet_on_the_floor"
         },
         {
           "id": "2_3.outubro.s4.dance-and-freeze",

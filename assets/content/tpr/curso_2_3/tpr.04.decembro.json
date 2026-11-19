@@ -417,7 +417,8 @@
             "gl": "Baixar a luz da sala",
             "es": "Bajar la luz de la sala"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_gloomy"
         },
         {
           "id": "2_3.decembro.s2.rumbly",
@@ -463,7 +464,8 @@
             "gl": "Baixar os brazos rápido",
             "es": "Bajar los brazos rápido"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_it_s_pouring"
         },
         {
           "id": "2_3.decembro.s2.where-s-the-sun",
@@ -506,7 +508,8 @@
             "gl": "Meter a cabeza polo xersei",
             "es": "Meter la cabeza por el jersey"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_jumper"
         },
         {
           "id": "2_3.decembro.s3.tights",
@@ -529,7 +532,8 @@
             "gl": "Tapar as orellas coas mans",
             "es": "Tapar las orejas con las manos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_earmuffs"
         },
         {
           "id": "2_3.decembro.s3.zipper-pull",
@@ -620,7 +624,8 @@
             "gl": "Abrochar un botón",
             "es": "Abrochar un botón"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_fasten"
         },
         {
           "id": "2_3.decembro.s3.get-dressed",
@@ -725,7 +730,8 @@
             "gl": "Meter as mans nos petos",
             "es": "Meter las manos en los bolsillos"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_hands_in_pockets"
         }
       ]
     },

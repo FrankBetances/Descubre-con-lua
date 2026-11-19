@@ -467,7 +467,8 @@
             "gl": "Crecer amodo dende o chan",
             "es": "Crecer despacio desde el suelo"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_from_small_to_big"
         },
         {
           "id": "4_5.marzo.s2.i-m-taller-than-you",
@@ -558,7 +559,8 @@
             "gl": "Pousar un ovo na oveira",
             "es": "Poner un huevo en la huevera"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_egg_cup"
         },
         {
           "id": "4_5.marzo.s3.food-plate",
@@ -569,7 +571,8 @@
             "gl": "Dividir un prato imaxinario",
             "es": "Dividir un plato imaginario"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_food_plate"
         },
         {
           "id": "4_5.marzo.s3.wash-vegetables",
@@ -947,7 +950,8 @@
             "gl": "Dar unha moeda",
             "es": "Dar una moneda"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_here_s_your_change"
         },
         {
           "id": "4_5.marzo.s4.the-bag-is-heavier-with-potatoes",

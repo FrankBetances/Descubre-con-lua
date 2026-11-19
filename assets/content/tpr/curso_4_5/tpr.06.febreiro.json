@@ -90,7 +90,8 @@
             "gl": "Facer unha reverencia",
             "es": "Hacer una reverencia"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_curtain_call"
         },
         {
           "id": "4_5.febreiro.s1.act",
@@ -654,7 +655,8 @@
             "gl": "Poñer as mans á mesma altura",
             "es": "Poner las manos a la misma altura"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_equal"
         },
         {
           "id": "4_5.febreiro.s3.tied",

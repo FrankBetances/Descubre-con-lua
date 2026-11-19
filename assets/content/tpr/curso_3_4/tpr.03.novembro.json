@@ -93,7 +93,8 @@
           "tprAction": {
             "gl": "Facer moitas árbores cos brazos, entre todos",
             "es": "Hacer muchos árboles con los brazos, entre todos"
-          }
+          },
+          "lamina": "pal_forest"
         },
         {
           "id": "3_4.novembro.s1.falling",
@@ -187,7 +188,8 @@
           "tprAction": {
             "gl": "Esfarelar unha folla seca imaxinaria entre as mans",
             "es": "Desmenuzar una hoja seca imaginaria entre las manos"
-          }
+          },
+          "lamina": "pal_dry"
         },
         {
           "id": "3_4.novembro.s1.windy",
@@ -447,7 +449,8 @@
           "tprAction": {
             "gl": "Apertar unha castaña imaxinaria que non se esmaga",
             "es": "Apretar una castaña imaginaria que no se aplasta"
-          }
+          },
+          "lamina": "pal_hard"
         },
         {
           "id": "3_4.novembro.s2.where-is-the-squirrel",
@@ -480,7 +483,8 @@
           "tprAction": {
             "gl": "Meter castañas imaxinarias no cesto dos brazos",
             "es": "Meter castañas imaginarias en la cesta de los brazos"
-          }
+          },
+          "lamina": "pal_in_the_basket"
         },
         {
           "id": "3_4.novembro.s2.behind-the-tree",
@@ -620,7 +624,8 @@
           "tprAction": {
             "gl": "Avanzar ás agachadas moi amodo",
             "es": "Avanzar agachados muy despacio"
-          }
+          },
+          "lamina": "pal_creep"
         },
         {
           "id": "3_4.novembro.s3.dig",
@@ -643,7 +648,8 @@
           "tprAction": {
             "gl": "Levantar a cabeza e facer «auuu» moi suave",
             "es": "Levantar la cabeza y hacer «auuu» muy suave"
-          }
+          },
+          "lamina": "pal_howl"
         },
         {
           "id": "3_4.novembro.s3.furry",
@@ -898,7 +904,8 @@
           "tprAction": {
             "gl": "Espremer un acio de uvas imaxinario entre as mans",
             "es": "Exprimir un racimo de uvas imaginario entre las manos"
-          }
+          },
+          "lamina": "pal_juicy"
         },
         {
           "id": "3_4.novembro.s4.ripe",
@@ -980,7 +987,8 @@
           "tprAction": {
             "gl": "Botar dentro da pota imaxinaria o que collemos",
             "es": "Echar dentro de la olla imaginaria lo que cogimos"
-          }
+          },
+          "lamina": "pal_in_the_pot"
         }
       ]
     }

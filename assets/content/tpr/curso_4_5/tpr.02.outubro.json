@@ -148,7 +148,8 @@
             "gl": "Apartarse dunha pelota branda",
             "es": "Apartarse de una pelota blanda"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_dodge"
         },
         {
           "id": "4_5.outubro.s1.quick-thinking",
@@ -838,7 +839,8 @@
             "gl": "Repetir o son que se oe",
             "es": "Repetir el sonido que se oye"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_echo"
         },
         {
           "id": "4_5.outubro.s4.speed-up-and-slow-down",

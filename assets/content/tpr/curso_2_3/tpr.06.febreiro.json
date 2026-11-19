@@ -433,7 +433,8 @@
             "gl": "Abanarse coa man",
             "es": "Abanicarse con la mano"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_hot_and_sticky"
         },
         {
           "id": "2_3.febreiro.s2.leafy-jungle",
@@ -559,7 +560,8 @@
             "gl": "Facer un pico coas mans",
             "es": "Hacer un pico con las manos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_iceberg"
         },
         {
           "id": "2_3.febreiro.s3.igloo",
@@ -570,7 +572,8 @@
             "gl": "Facer unha cúpula cos brazos",
             "es": "Hacer una cúpula con los brazos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_igloo"
         },
         {
           "id": "2_3.febreiro.s3.fishing-hole",
@@ -581,7 +584,8 @@
             "gl": "Facer un círculo no chan",
             "es": "Hacer un círculo en el suelo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_fishing_hole"
         },
         {
           "id": "2_3.febreiro.s3.clap-flippers",

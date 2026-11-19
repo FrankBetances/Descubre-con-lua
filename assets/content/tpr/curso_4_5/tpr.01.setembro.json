@@ -767,7 +767,8 @@
             "gl": "Inchar a barriga de aire",
             "es": "Inflar la barriga de aire"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_deep_breath"
         },
         {
           "id": "4_5.setembro.s4.feeling",

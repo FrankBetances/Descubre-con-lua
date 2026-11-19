@@ -65,7 +65,8 @@
             "gl": "Poñer a máscara coas mans",
             "es": "Ponerse la máscara con las manos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_feather_mask"
         },
         {
           "id": "5_6.febreiro.s1.carnival-float",
@@ -789,7 +790,8 @@
             "gl": "Probar un zapato imaxinario",
             "es": "Probarse un zapato imaginario"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_glass_slipper"
         },
         {
           "id": "5_6.febreiro.s4.pumpkin-coach",

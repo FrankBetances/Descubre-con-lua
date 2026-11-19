@@ -730,7 +730,8 @@
             "gl": "Encher ata o bordo",
             "es": "Llenar hasta el borde"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_full_to_the_top"
         }
       ]
     },
@@ -879,7 +880,8 @@
             "gl": "Dobrar un pano pola metade",
             "es": "Doblar un pañuelo por la mitad"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_fold_up"
         },
         {
           "id": "2_3.maio.s4.dripping-clothes",
@@ -914,7 +916,8 @@
             "gl": "Engurrar un pano",
             "es": "Arrugar un pañuelo"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_crumpled"
         },
         {
           "id": "2_3.maio.s4.neatly-folded",

@@ -340,7 +340,8 @@
             "gl": "Dobrar unha folla pola metade",
             "es": "Doblar una hoja por la mitad"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_fold_paper"
         },
         {
           "id": "5_6.marzo.s2.mirror-a-friend",
@@ -524,7 +525,8 @@
             "gl": "Facer hexágonos coas mans",
             "es": "Hacer hexágonos con las manos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_honeycomb"
         },
         {
           "id": "5_6.marzo.s3.hexagon",
@@ -872,7 +874,8 @@
             "gl": "Encaixar a man nun oco",
             "es": "Encajar la mano en un hueco"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_fill_a_space"
         },
         {
           "id": "5_6.marzo.s4.pastel",

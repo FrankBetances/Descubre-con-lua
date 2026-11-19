@@ -374,7 +374,8 @@
           "tprAction": {
             "gl": "Estender a man aberta cara a outra persoa",
             "es": "Extender la mano abierta hacia otra persona"
-          }
+          },
+          "lamina": "pal_give"
         },
         {
           "id": "3_4.setembro.s2.share",
@@ -522,7 +523,8 @@
           "tprAction": {
             "gl": "Xuntar as mans por riba da cabeza como un tellado",
             "es": "Juntar las manos por encima de la cabeza como un tejado"
-          }
+          },
+          "lamina": "pal_home"
         },
         {
           "id": "3_4.setembro.s3.mummy",
@@ -569,7 +571,8 @@
           "tprAction": {
             "gl": "Pousar as mans nas meixelas con agarimo",
             "es": "Poner las manos en las mejillas con cariño"
-          }
+          },
+          "lamina": "pal_grandma"
         },
         {
           "id": "3_4.setembro.s3.grandpa",
@@ -767,7 +770,8 @@
           "tprAction": {
             "gl": "Peitear con agarimo unha boneca imaxinaria",
             "es": "Peinar con cariño una muñeca imaginaria"
-          }
+          },
+          "lamina": "pal_doll"
         },
         {
           "id": "3_4.setembro.s4.teddy",
@@ -945,7 +949,8 @@
           "tprAction": {
             "gl": "Chocar a palma da man coa dunha compañeira",
             "es": "Chocar la palma de la mano con la de una compañera"
-          }
+          },
+          "lamina": "pal_give_me_five"
         },
         {
           "id": "3_4.setembro.s4.let-s-play",

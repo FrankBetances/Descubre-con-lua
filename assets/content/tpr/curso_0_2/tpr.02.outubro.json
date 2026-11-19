@@ -316,7 +316,8 @@
             "gl": "Coller o talón coa man",
             "es": "Coger el talón con la mano"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_heel"
         },
         {
           "id": "0_2.outubro.s2.shoulder-blade",
@@ -520,7 +521,8 @@
             "gl": "Pasar o cepillo amodo polo pelo",
             "es": "Pasar el cepillo despacio por el pelo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_hairbrush"
         },
         {
           "id": "0_2.outubro.s3.bonnet",

@@ -126,7 +126,8 @@
             "gl": "Colgar o abrigo na percha",
             "es": "Colgar el abrigo en la percha"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_hang_up"
         },
         {
           "id": "2_3.setembro.s1.say-hello",
@@ -195,7 +196,8 @@
             "gl": "Estirarse moi alto",
             "es": "Estirarse muy alto"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_grown_up"
         },
         {
           "id": "2_3.setembro.s1.where-does-it-go",
@@ -364,7 +366,8 @@
             "gl": "Meter a peza no seu oco",
             "es": "Meter la pieza en su hueco"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_fit"
         },
         {
           "id": "2_3.setembro.s2.pour-tea",
@@ -534,7 +537,8 @@
             "gl": "Meter as ceras no bote",
             "es": "Meter las ceras en el bote"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_crayon_pot"
         },
         {
           "id": "2_3.setembro.s3.tray",
@@ -673,7 +677,8 @@
             "gl": "Pousar tres cousas en fila",
             "es": "Poner tres cosas en fila"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_in_order"
         },
         {
           "id": "2_3.setembro.s3.clean-up-clean-up",
@@ -763,7 +768,8 @@
             "gl": "Poñer unha medalla de axudante",
             "es": "Ponerse una medalla de ayudante"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_helper"
         },
         {
           "id": "2_3.setembro.s4.sticker-chart",
@@ -857,7 +863,8 @@
             "gl": "Dar a man a un amigo para erguerse",
             "es": "Dar la mano a un amigo para levantarse"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_help_a_friend"
         },
         {
           "id": "2_3.setembro.s4.hug-a-friend",

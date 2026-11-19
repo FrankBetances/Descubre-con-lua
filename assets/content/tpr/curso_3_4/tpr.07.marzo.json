@@ -81,7 +81,8 @@
           "tprAction": {
             "gl": "Estender pegamento imaxinario cun dedo",
             "es": "Extender pegamento imaginario con un dedo"
-          }
+          },
+          "lamina": "pal_glue"
         },
         {
           "id": "3_4.marzo.s1.sticker",
@@ -382,7 +383,8 @@
           "tprAction": {
             "gl": "Pregar un papel imaxinario pola metade",
             "es": "Doblar un papel imaginario por la mitad"
-          }
+          },
+          "lamina": "pal_fold"
         },
         {
           "id": "3_4.marzo.s2.spin",
@@ -475,7 +477,8 @@
           "tprAction": {
             "gl": "Meterse dentro dun aro imaxinario no chan",
             "es": "Meterse dentro de un aro imaginario en el suelo"
-          }
+          },
+          "lamina": "pal_inside_the_hoop"
         },
         {
           "id": "3_4.marzo.s2.around-the-square",
@@ -885,7 +888,8 @@
           "tprAction": {
             "gl": "Trautear cos beizos pechados: mmm",
             "es": "Tararear con los labios cerrados: mmm"
-          }
+          },
+          "lamina": "pal_hum"
         },
         {
           "id": "3_4.marzo.s4.high",

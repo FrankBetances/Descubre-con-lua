@@ -326,7 +326,8 @@
             "gl": "Poñer a man no lombo coma aleta",
             "es": "Poner la mano en la espalda como aleta"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_fin"
         },
         {
           "id": "0_2.xuno.s2.coral",
@@ -361,7 +362,8 @@
             "gl": "Pasar a man plana polo aire",
             "es": "Pasar la mano plana por el aire"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_glide"
         },
         {
           "id": "0_2.xuno.s2.blow-bubbles-in-water",
@@ -442,7 +444,8 @@
             "gl": "Pasar a man plana",
             "es": "Pasar la mano plana"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_glassy"
         },
         {
           "id": "0_2.xuno.s2.swim-little-fish",
@@ -567,7 +570,8 @@
             "gl": "Abanar o bebé suavemente",
             "es": "Abanicar al bebé suavemente"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_fan"
         },
         {
           "id": "0_2.xuno.s3.sunrise",
@@ -602,7 +606,8 @@
             "gl": "Abanarse coa man",
             "es": "Abanicarse con la mano"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_fan_yourself"
         },
         {
           "id": "0_2.xuno.s3.rub-in",
@@ -695,7 +700,8 @@
             "gl": "Poñer o chapeu ao bebé",
             "es": "Poner el sombrero al bebé"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_hat_on_please"
         },
         {
           "id": "0_2.xuno.s3.time-for-a-drink",
@@ -774,7 +780,8 @@
             "gl": "Pousar a man con pintura no papel",
             "es": "Posar la mano con pintura en el papel"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_handprint"
         },
         {
           "id": "0_2.xuno.s4.farewell-song",
@@ -957,7 +964,8 @@
             "gl": "Pousar a man no papel",
             "es": "Posar la mano en el papel"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_hand_on_paper"
         },
         {
           "id": "0_2.xuno.s4.together-again",

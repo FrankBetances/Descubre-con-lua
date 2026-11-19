@@ -301,7 +301,8 @@
             "gl": "Escribir nun caderno",
             "es": "Escribir en un cuaderno"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_exercise_book"
         },
         {
           "id": "5_6.xuno.s2.playtime-bell",
@@ -627,7 +628,8 @@
             "gl": "Levantar o certificado",
             "es": "Levantar el certificado"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_graduated"
         },
         {
           "id": "5_6.xuno.s3.accomplished",

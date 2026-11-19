@@ -116,7 +116,8 @@
           "tprAction": {
             "gl": "Estender a man aberta cunha comida imaxinaria",
             "es": "Extender la mano abierta con comida imaginaria"
-          }
+          },
+          "lamina": "pal_feed"
         },
         {
           "id": "3_4.febreiro.s1.bark",
@@ -290,7 +291,8 @@
           "tprAction": {
             "gl": "Dobrar os brazos coma ás e movelos",
             "es": "Doblar los brazos como alas y moverlos"
-          }
+          },
+          "lamina": "pal_hen"
         },
         {
           "id": "3_4.febreiro.s2.duck",
@@ -491,7 +493,8 @@
           "tprAction": {
             "gl": "Entrar agachados nunha corte imaxinaria",
             "es": "Entrar agachados en un establo imaginario"
-          }
+          },
+          "lamina": "pal_in_the_barn"
         }
       ]
     },
@@ -654,7 +657,8 @@
           "tprAction": {
             "gl": "Estirarse cara arriba e cara aos lados á vez",
             "es": "Estirarse hacia arriba y hacia los lados a la vez"
-          }
+          },
+          "lamina": "pal_huge"
         },
         {
           "id": "3_4.febreiro.s3.green",
@@ -907,7 +911,8 @@
           "tprAction": {
             "gl": "Facer un xesto distinto ao da compañeira",
             "es": "Hacer un gesto distinto al de la compañera"
-          }
+          },
+          "lamina": "pal_different"
         },
         {
           "id": "3_4.febreiro.s4.same",

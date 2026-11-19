@@ -141,7 +141,8 @@
           "tprAction": {
             "gl": "Xuntar as mans en punta e baixar cara ao chan",
             "es": "Juntar las manos en punta y bajar hacia el suelo"
-          }
+          },
+          "lamina": "pal_dive"
         },
         {
           "id": "3_4.xuno.s1.surf",
@@ -619,7 +620,8 @@
           "tprAction": {
             "gl": "Agarrar algo imaxinario con toda a man",
             "es": "Agarrar algo imaginario con toda la mano"
-          }
+          },
+          "lamina": "pal_grab"
         },
         {
           "id": "3_4.xuno.s3.wriggle",

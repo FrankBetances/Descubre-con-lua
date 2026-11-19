@@ -189,7 +189,8 @@
             "gl": "Facer un círculo luminoso",
             "es": "Hacer un círculo luminoso"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_glowing_moon"
         },
         {
           "id": "5_6.decembro.s1.spinning-earth",
@@ -389,7 +390,8 @@
             "gl": "Moverse moi amodo",
             "es": "Moverse muy despacio"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_float_in_space"
         },
         {
           "id": "5_6.decembro.s2.zoom-through-space",
@@ -863,7 +865,8 @@
             "gl": "Estirarse a colgar",
             "es": "Estirarse a colgar"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_hang_ornaments"
         },
         {
           "id": "5_6.decembro.s4.make-a-resolution",

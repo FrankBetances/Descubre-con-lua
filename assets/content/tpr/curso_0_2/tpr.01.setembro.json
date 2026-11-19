@@ -518,7 +518,8 @@
             "gl": "Facer unha risiña ao bebé",
             "es": "Hacer una risita al bebé"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_giggle"
         },
         {
           "id": "0_2.setembro.s3.eyelashes",
@@ -529,7 +530,8 @@
             "gl": "Pestanexar amodo preto do bebé",
             "es": "Parpadear despacio cerca del bebé"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_eyelashes"
         },
         {
           "id": "0_2.setembro.s3.dimple",
@@ -921,7 +923,8 @@
             "gl": "Apertar o peluche contra o peito",
             "es": "Apretar el peluche contra el pecho"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_cuddly"
         },
         {
           "id": "0_2.setembro.s4.nappy-time",
