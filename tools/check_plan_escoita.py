@@ -31,7 +31,7 @@ def main() -> int:
         return 0
     texto = PLAN.read_text(encoding="utf-8")
     d = json.loads(texto)
-    pezas = d if isinstance(d, list) else d["pezas"]
+    pezas = d if isinstance(d, list) else (d.get("piezas") or d.get("pezas") or [])
     fallos = [f"vocabulario prohibido «{m.group(0)}»" for m in PROHIBIDAS.finditer(texto)]
     vistos, pares, progs = set(), {}, {}
     for p in pezas:

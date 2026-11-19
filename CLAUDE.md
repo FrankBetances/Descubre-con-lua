@@ -9,6 +9,8 @@ Las dictó Frank el 19/11/2026: «es obligatorio en todos los sentidos siempre h
 3. **R-STEAM.** El eje vertebrador de toda la app es el pensamiento STEAM aplicado a la estimulación del lenguaje. Cada palabra, par, progresión, imagen, cuento y prompt para otro agente nombra el STEAM del mes y la parte que trabaja. De otros productos (Valeria) se copia el método; su contenido entra orientado al STEAM según lo que diga Frank.
 4. **R-VERDAD-ACCIONES.** A «¿qué has hecho?» se contesta con el registro automático de herramientas, nunca de memoria. Freno: `.claude/hooks/registro_acciones.py` apunta cada herramienta y `stop_freno.py` enseña lo registrado desde el mensaje anterior de Frank.
 
+5. **R-ENTREGA.** Si Frank pide un texto (un prompt, un mensaje, una lista para pegar), la respuesta empieza por ese texto, completo y solo, sin ninguna herramienta antes y sin mezclarlo con otra cosa. Lo demás va después. Freno: `stop_freno.py` pone la marca `pide_texto` y `freno_herramientas.py` bloquea toda herramienta hasta el siguiente mensaje de Frank (F-20261119-6).
+
 Blindaje: `.claude/hooks/blindaje.py` impide a Claude Code escribir en `.claude/` (hooks, settings, estado). Los frenos solo los cambia Frank.
 
 ## R∞ · REGLA SUPREMA · LA ORDEN LITERAL, SUS CRITERIOS ESCRITOS ANTES Y PROHIBIDO SIMULAR

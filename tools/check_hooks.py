@@ -75,6 +75,16 @@ def main() -> int:
     if bloquea({"tool_name": "Bash", "tool_input": {"command": "rm -rf /tmp/prueba"}}):
         fallos.append("rm en /tmp se bloquea")
 
+    # R-ENTREGA (F-20261119-6): si Frank pide un texto, nada de herramientas
+    # hasta su siguiente mensaje.
+    for t in ["Dame el prompt ya", "dame el puto prompt joder", "pásame el texto para Antigravity"]:
+        mensaje(t)
+        if not bloquea(leer):
+            fallos.append(f"«{t}» debería bloquear herramientas hasta dar el texto")
+        mensaje("vale, sigue")
+        if bloquea(leer):
+            fallos.append(f"tras «{t}», el mensaje siguiente debería desbloquear")
+
     hook("registro_acciones.py", {"tool_name": "Bash", "tool_input": {"command": "ls"}})
     if "ls" not in mensaje("qué has hecho"):
         fallos.append("«qué has hecho» no enseña el registro")

@@ -120,7 +120,9 @@ class PlanEscoita {
 
   factory PlanEscoita.fromRaw(String raw) {
     final j = jsonDecode(raw);
-    final lista = j is List ? j : (j as Map<String, dynamic>)['pezas'] as List;
+    final lista = j is List
+        ? j
+        : ((j as Map<String, dynamic>)['piezas'] ?? j['pezas']) as List;
     return PlanEscoita([
       for (final p in lista.cast<Map<String, dynamic>>())
         PezaMensual.fromJson(p),

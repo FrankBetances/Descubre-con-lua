@@ -845,7 +845,9 @@ def collect_locutions(content_dir: Path = CONTENT_DIR) -> list[Locution]:
     # O-20261119-8: los Juegos de escucha, copiados de Valeria. Cada palabra y
     # cada frase suena en la lengua de su banco; la persona adulta las oye en
     # Na casa → Explorar → Xogos de escoita.
-    for lang in ("gl", "es", "en"):
+    # Solo gl y es: la pantalla enseña el banco en la lengua de la app. El banco
+    # en inglés se conserva como fuente, pero la app no lo reproduce.
+    for lang in ("gl", "es"):
         banco = content_dir / "escoita" / f"valeria_{lang}.json"
         if not banco.exists():
             continue
@@ -866,7 +868,7 @@ def collect_locutions(content_dir: Path = CONTENT_DIR) -> list[Locution]:
     plan = content_dir / "escoita" / "plan_mensual.json"
     if plan.exists():
         d = json.loads(plan.read_text(encoding="utf-8"))
-        for p in d if isinstance(d, list) else d.get("pezas", []):
+        for p in d if isinstance(d, list) else (d.get("piezas") or d.get("pezas") or []):
             textos = [p["par"]["a"]["en"], p["par"]["b"]["en"], *p["modelo"]["adulto"]]
             textos += [f["en"] for f in p["progresion"]["fases"]]
             for texto in textos:

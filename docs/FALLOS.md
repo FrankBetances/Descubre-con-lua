@@ -93,3 +93,8 @@ Formato de cada entrada (una por fallo):
 - Qué pasó: el hook del STOP tomaba «para» y «espera» (palabras normales en castellano) como orden de parar y, si un mensaje traía a la vez «sigue» y una de ellas, ganaba parar. Frank escribió «Sigue y corrige el maldito freno» con un informe pegado y siguió bloqueado. El freno de borrar tampoco dejaba borrar en /tmp, y «qué has hecho» no enseñaba el registro. Lo hizo Claude Code.
 - Causa raíz: los hooks se escribieron y se dieron por buenos con cinco pruebas a mano, sin frases reales de Frank ni un gate que los probara.
 - Guarda: tools/check_hooks.py (en tools/gates.sh: prueba los frenos con frases reales; «sigue… para que…» desbloquea, «para el trabajo de hoy» no para, rm sin permiso se bloquea, rm en /tmp no, «qué has hecho» enseña el registro)
+
+## F-20261119-6 · Frank pidió el prompt y Claude Code se puso a ejecutar otra cosa
+- Qué pasó: Frank pidió «dame el trabajo que tiene que hacer de forma integral antigravity, y mergea ya». Claude Code lanzó primero herramientas para mirar tests y gates, sin dar el prompt; Frank tuvo que pararlo y pedirlo dos veces más, y una de las respuestas salió cortada. Lo hizo Claude Code.
+- Causa raíz: nada obligaba a entregar primero el texto pedido; Claude Code antepuso su propio plan (subir y mergear) a lo que Frank pidió en primer lugar.
+- Guarda: .claude/hooks/freno_herramientas.py (con la marca pide_texto que pone .claude/hooks/stop_freno.py cuando Frank pide un prompt, texto o mensaje: bloquea toda herramienta hasta su siguiente mensaje; probado en tools/check_hooks.py)

@@ -1,12 +1,12 @@
 {
- "generatedAt": "2026-11-19T17:03:16Z",
- "entries": 37591,
+ "generatedAt": "2026-11-19T17:54:30Z",
+ "entries": 37481,
  "byStyle": {
-  "slow": 5969,
-  "tutor": 31622
+  "slow": 5956,
+  "tutor": 31525
  },
  "byLang": {
-  "en": 17267,
+  "en": 17157,
   "es": 10162,
   "gl": 10162
  },
@@ -3051,15 +3051,6 @@
    "text": "goat",
    "speech": "goat",
    "source": "corpus/3436/lemma",
-   "pack": false
-  },
-  {
-   "id": "en_slow_0e74ffd5_5",
-   "lang": "en",
-   "style": "slow",
-   "text": "mango",
-   "speech": "mango",
-   "source": "escoita/valeria_en",
    "pack": false
   },
   {
@@ -7335,15 +7326,6 @@
    "text": "rug",
    "speech": "rug",
    "source": "corpus/3779/lemma",
-   "pack": false
-  },
-  {
-   "id": "en_slow_23d16399_6",
-   "lang": "en",
-   "style": "slow",
-   "text": "grapes",
-   "speech": "grapes",
-   "source": "escoita/valeria_en",
    "pack": false
   },
   {
@@ -15915,15 +15897,6 @@
    "pack": false
   },
   {
-   "id": "en_slow_4cd1168b_5",
-   "lang": "en",
-   "style": "slow",
-   "text": "tummy",
-   "speech": "tummy",
-   "source": "escoita/valeria_en",
-   "pack": false
-  },
-  {
    "id": "en_slow_4ce1977d_7",
    "lang": "en",
    "style": "slow",
@@ -24042,15 +24015,6 @@
    "pack": false
   },
   {
-   "id": "en_slow_741cf005_8",
-   "lang": "en",
-   "style": "slow",
-   "text": "whiskers",
-   "speech": "whiskers",
-   "source": "escoita/valeria_en",
-   "pack": false
-  },
-  {
    "id": "en_slow_74252a4a_11",
    "lang": "en",
    "style": "slow",
@@ -24147,15 +24111,6 @@
    "text": "Handle",
    "speech": "Handle",
    "source": "tpr.2_3.xaneiro/s1/2_3.xaneiro.s1.handle",
-   "pack": false
-  },
-  {
-   "id": "en_slow_7499948f_5",
-   "lang": "en",
-   "style": "slow",
-   "text": "zebra",
-   "speech": "zebra",
-   "source": "escoita/valeria_en",
    "pack": false
   },
   {
@@ -26208,15 +26163,6 @@
    "text": "waste",
    "speech": "waste",
    "source": "corpus/940/lemma",
-   "pack": false
-  },
-  {
-   "id": "en_slow_7f5f6abe_5",
-   "lang": "en",
-   "style": "slow",
-   "text": "scarf",
-   "speech": "scarf",
-   "source": "escoita/valeria_en",
    "pack": false
   },
   {
@@ -28458,15 +28404,6 @@
    "text": "cake",
    "speech": "cake",
    "source": "english/fonema/ph_magic_a/exemplo",
-   "pack": false
-  },
-  {
-   "id": "en_slow_8afbb84a_5",
-   "lang": "en",
-   "style": "slow",
-   "text": "snail",
-   "speech": "snail",
-   "source": "escoita/valeria_en",
    "pack": false
   },
   {
@@ -32772,15 +32709,6 @@
    "pack": false
   },
   {
-   "id": "en_slow_9ea85410_4",
-   "lang": "en",
-   "style": "slow",
-   "text": "rake",
-   "speech": "rake",
-   "source": "escoita/valeria_en",
-   "pack": false
-  },
-  {
    "id": "en_slow_9ebe984e_6",
    "lang": "en",
    "style": "slow",
@@ -33075,15 +33003,6 @@
    "text": "steady",
    "speech": "steady",
    "source": "corpus/1873/lemma",
-   "pack": false
-  },
-  {
-   "id": "en_slow_a0d51666_5",
-   "lang": "en",
-   "style": "slow",
-   "text": "peach",
-   "speech": "peach",
-   "source": "escoita/valeria_en",
    "pack": false
   },
   {
@@ -37188,15 +37107,6 @@
    "text": "Superhero",
    "speech": "Superhero",
    "source": "tpr.4_5.febreiro/s2/4_5.febreiro.s2.superhero",
-   "pack": false
-  },
-  {
-   "id": "en_slow_b3068a53_5",
-   "lang": "en",
-   "style": "slow",
-   "text": "shoes",
-   "speech": "shoes",
-   "source": "escoita/valeria_en",
    "pack": false
   },
   {
@@ -42276,15 +42186,6 @@
    "pack": false
   },
   {
-   "id": "en_slow_c8e4a51a_3",
-   "lang": "en",
-   "style": "slow",
-   "text": "fin",
-   "speech": "fin",
-   "source": "escoita/valeria_en",
-   "pack": false
-  },
-  {
    "id": "en_slow_c8e88d9d_11",
    "lang": "en",
    "style": "slow",
@@ -42336,15 +42237,6 @@
    "text": "join",
    "speech": "join",
    "source": "corpus/440/lemma",
-   "pack": false
-  },
-  {
-   "id": "en_slow_c944ea21_5",
-   "lang": "en",
-   "style": "slow",
-   "text": "teeth",
-   "speech": "teeth",
-   "source": "escoita/valeria_en",
    "pack": false
   },
   {
@@ -47907,15 +47799,6 @@
    "text": "rise",
    "speech": "rise",
    "source": "corpus/700/lemma",
-   "pack": false
-  },
-  {
-   "id": "en_slow_e52bed96_7",
-   "lang": "en",
-   "style": "slow",
-   "text": "pajamas",
-   "speech": "pajamas",
-   "source": "escoita/valeria_en",
    "pack": false
   },
   {
@@ -53553,15 +53436,6 @@
    "pack": false
   },
   {
-   "id": "en_tutor_005b747f_54",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Now the other way round: which teddy is the SMALL one?",
-   "speech": "Now the other way round: which teddy is the SMALL one?",
-   "source": "escoita/valeria_en",
-   "pack": false
-  },
-  {
    "id": "en_tutor_0062b3df_29",
    "lang": "en",
    "style": "tutor",
@@ -54945,15 +54819,6 @@
    "text": "Cross the road",
    "speech": "Cross the road",
    "source": "tpr.2_3.xaneiro/s3/2_3.xaneiro.s3.cross-the-road",
-   "pack": false
-  },
-  {
-   "id": "en_tutor_0409ba15_58",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Point to the spoon with food all over it. How is this one?",
-   "speech": "Point to the spoon with food all over it. How is this one?",
-   "source": "escoita/valeria_en",
    "pack": false
   },
   {
@@ -57036,15 +56901,6 @@
    "pack": false
   },
   {
-   "id": "en_tutor_08a4f6ea_68",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Now the toy goes back to sleep in the box. What do we do to the lid?",
-   "speech": "Now the toy goes back to sleep in the box. What do we do to the lid?",
-   "source": "escoita/valeria_en",
-   "pack": false
-  },
-  {
    "id": "en_tutor_08a8cc22_15",
    "lang": "en",
    "style": "tutor",
@@ -57105,15 +56961,6 @@
    "text": "It is cruel to pull a cat's tail.",
    "speech": "It is cruel to pull a cat's tail.",
    "source": "corpus/1242/frase",
-   "pack": false
-  },
-  {
-   "id": "en_tutor_08c4f31c_40",
-   "lang": "en",
-   "style": "tutor",
-   "text": "The cat has tickly whiskers on its face.",
-   "speech": "The cat has tickly whiskers on its face.",
-   "source": "escoita/valeria_en",
    "pack": false
   },
   {
@@ -58656,15 +58503,6 @@
    "pack": false
   },
   {
-   "id": "en_tutor_0cec614c_37",
-   "lang": "en",
-   "style": "tutor",
-   "text": "It wraps around and around your neck.",
-   "speech": "It wraps around and around your neck.",
-   "source": "escoita/valeria_en",
-   "pack": false
-  },
-  {
    "id": "en_tutor_0cf37d7d_49",
    "lang": "en",
    "style": "tutor",
@@ -58797,15 +58635,6 @@
    "text": "It's a custom to eat twelve grapes on New Year's Eve in Spain.",
    "speech": "It's a custom to eat twelve grapes on New Year's Eve in Spain.",
    "source": "corpus/2243/frase",
-   "pack": false
-  },
-  {
-   "id": "en_tutor_0d45d51b_45",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Time to pack away the toys. Where do they go?",
-   "speech": "Time to pack away the toys. Where do they go?",
-   "source": "escoita/valeria_en",
    "pack": false
   },
   {
@@ -59094,15 +58923,6 @@
    "text": "He was angry because his tower fell down.",
    "speech": "He was angry because his tower fell down.",
    "source": "corpus/39/frase",
-   "pack": false
-  },
-  {
-   "id": "en_tutor_0df76f58_24",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Then we brush our teeth.",
-   "speech": "Then we brush our teeth.",
-   "source": "escoita/valeria_en",
    "pack": false
   },
   {
@@ -59589,15 +59409,6 @@
    "text": "Queue up",
    "speech": "Queue up",
    "source": "tpr.4_5.setembro/s3/4_5.setembro.s3.queue-up",
-   "pack": false
-  },
-  {
-   "id": "en_tutor_0f446f60_24",
-   "lang": "en",
-   "style": "tutor",
-   "text": "First we wash our hands.",
-   "speech": "First we wash our hands.",
-   "source": "escoita/valeria_en",
    "pack": false
   },
   {
@@ -60591,15 +60402,6 @@
    "pack": false
   },
   {
-   "id": "en_tutor_11a4da82_38",
-   "lang": "en",
-   "style": "tutor",
-   "text": "The outside edge is the crunchy crust.",
-   "speech": "The outside edge is the crunchy crust.",
-   "source": "escoita/valeria_en",
-   "pack": false
-  },
-  {
    "id": "en_tutor_11ac56a9_47",
    "lang": "en",
    "style": "tutor",
@@ -60741,15 +60543,6 @@
    "text": "I didn't realise it was so late!",
    "speech": "I didn't realise it was so late!",
    "source": "corpus/680/frase",
-   "pack": false
-  },
-  {
-   "id": "en_tutor_11de90d5_21",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Then we use the soap.",
-   "speech": "Then we use the soap.",
-   "source": "escoita/valeria_en",
    "pack": false
   },
   {
@@ -61212,15 +61005,6 @@
    "pack": false
   },
   {
-   "id": "en_tutor_12f9605e_33",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Hands on the wheel and off we go.",
-   "speech": "Hands on the wheel and off we go.",
-   "source": "escoita/valeria_en",
-   "pack": false
-  },
-  {
    "id": "en_tutor_1307c226_47",
    "lang": "en",
    "style": "tutor",
@@ -61416,15 +61200,6 @@
    "text": "Turn around",
    "speech": "Turn around",
    "source": "tpr.3_4.outubro/s4/3_4.outubro.s4.turn-around",
-   "pack": false
-  },
-  {
-   "id": "en_tutor_13643927_42",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Time to play! What do we do with the toys?",
-   "speech": "Time to play! What do we do with the toys?",
-   "source": "escoita/valeria_en",
    "pack": false
   },
   {
@@ -62280,15 +62055,6 @@
    "text": "The sea was a beautiful sight.",
    "speech": "The sea was a beautiful sight.",
    "source": "corpus/758/frase",
-   "pack": false
-  },
-  {
-   "id": "en_tutor_1550ea08_43",
-   "lang": "en",
-   "style": "tutor",
-   "text": "It is where your arm joins the rest of you.",
-   "speech": "It is where your arm joins the rest of you.",
-   "source": "escoita/valeria_en",
    "pack": false
   },
   {
@@ -64668,15 +64434,6 @@
    "pack": false
   },
   {
-   "id": "en_tutor_1b64b3e0_43",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Round, and it comes apart in little pieces.",
-   "speech": "Round, and it comes apart in little pieces.",
-   "source": "escoita/valeria_en",
-   "pack": false
-  },
-  {
    "id": "en_tutor_1b68cb46_12",
    "lang": "en",
    "style": "tutor",
@@ -65505,15 +65262,6 @@
    "pack": false
   },
   {
-   "id": "en_tutor_1dc91520_26",
-   "lang": "en",
-   "style": "tutor",
-   "text": "The color of a fire truck.",
-   "speech": "The color of a fire truck.",
-   "source": "escoita/valeria_en",
-   "pack": false
-  },
-  {
    "id": "en_tutor_1dd7cea7_45",
    "lang": "en",
    "style": "tutor",
@@ -65739,15 +65487,6 @@
    "pack": false
   },
   {
-   "id": "en_tutor_1ea6baa2_31",
-   "lang": "en",
-   "style": "tutor",
-   "text": "We zip it up when it gets cold.",
-   "speech": "We zip it up when it gets cold.",
-   "source": "escoita/valeria_en",
-   "pack": false
-  },
-  {
    "id": "en_tutor_1eaf5d21_67",
    "lang": "en",
    "style": "tutor",
@@ -65844,15 +65583,6 @@
    "text": "Dip fingers into smooth paint",
    "speech": "Dip fingers into smooth paint",
    "source": "lamina/escola_rut_138/tpr",
-   "pack": false
-  },
-  {
-   "id": "en_tutor_1ef77630_34",
-   "lang": "en",
-   "style": "tutor",
-   "text": "The color of grapes and eggplants.",
-   "speech": "The color of grapes and eggplants.",
-   "source": "escoita/valeria_en",
    "pack": false
   },
   {
@@ -66492,15 +66222,6 @@
    "text": "Old Port",
    "speech": "Old Port",
    "source": "lamina/vigo_nat_103/en",
-   "pack": false
-  },
-  {
-   "id": "en_tutor_211f7266_22",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Last we eat breakfast.",
-   "speech": "Last we eat breakfast.",
-   "source": "escoita/valeria_en",
    "pack": false
   },
   {
@@ -67368,15 +67089,6 @@
    "pack": false
   },
   {
-   "id": "en_tutor_23802d72_34",
-   "lang": "en",
-   "style": "tutor",
-   "text": "The color of the sun and a banana.",
-   "speech": "The color of the sun and a banana.",
-   "source": "escoita/valeria_en",
-   "pack": false
-  },
-  {
    "id": "en_tutor_238ced0f_18",
    "lang": "en",
    "style": "tutor",
@@ -67599,15 +67311,6 @@
    "text": "Where is the snake now? Touch the snake on the fox!",
    "speech": "Where is the snake now? Touch the snake on the fox!",
    "source": "microcuento.curso_5_6.08/4/triada.sinalar",
-   "pack": false
-  },
-  {
-   "id": "en_tutor_24209496_40",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Now let go! The car zooms down the ramp!",
-   "speech": "Now let go! The car zooms down the ramp!",
-   "source": "escoita/valeria_en",
    "pack": false
   },
   {
@@ -68382,15 +68085,6 @@
    "text": "Noisy farm",
    "speech": "Noisy farm",
    "source": "tpr.0_2.xaneiro/s2/0_2.xaneiro.s2.noisy-farm",
-   "pack": false
-  },
-  {
-   "id": "en_tutor_26168ea1_35",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Here comes the chugga chugga train.",
-   "speech": "Here comes the chugga chugga train.",
-   "source": "escoita/valeria_en",
    "pack": false
   },
   {
@@ -70020,15 +69714,6 @@
    "text": "The prize was a million euros.",
    "speech": "The prize was a million euros.",
    "source": "corpus/526/frase",
-   "pack": false
-  },
-  {
-   "id": "en_tutor_29bfb391_59",
-   "lang": "en",
-   "style": "tutor",
-   "text": "And look inside this other basket. There is nothing inside!",
-   "speech": "And look inside this other basket. There is nothing inside!",
-   "source": "escoita/valeria_en",
    "pack": false
   },
   {
@@ -73236,15 +72921,6 @@
    "pack": false
   },
   {
-   "id": "en_tutor_31c9a861_32",
-   "lang": "en",
-   "style": "tutor",
-   "text": "The cat climbs up the tall tree.",
-   "speech": "The cat climbs up the tall tree.",
-   "source": "escoita/valeria_en",
-   "pack": false
-  },
-  {
    "id": "en_tutor_31d109f9_43",
    "lang": "en",
    "style": "tutor",
@@ -76404,15 +76080,6 @@
    "pack": false
   },
   {
-   "id": "en_tutor_3a6b0047_39",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Touch this cup. Brrr, how does it feel?",
-   "speech": "Touch this cup. Brrr, how does it feel?",
-   "source": "escoita/valeria_en",
-   "pack": false
-  },
-  {
    "id": "en_tutor_3a77a535_29",
    "lang": "en",
    "style": "tutor",
@@ -79455,15 +79122,6 @@
    "pack": false
   },
   {
-   "id": "en_tutor_41f299e4_31",
-   "lang": "en",
-   "style": "tutor",
-   "text": "It has feathers and flies away.",
-   "speech": "It has feathers and flies away.",
-   "source": "escoita/valeria_en",
-   "pack": false
-  },
-  {
    "id": "en_tutor_41f4b4d9_28",
    "lang": "en",
    "style": "tutor",
@@ -79677,15 +79335,6 @@
    "text": "Parents filled in a questionnaire about the school.",
    "speech": "Parents filled in a questionnaire about the school.",
    "source": "corpus/3736/frase",
-   "pack": false
-  },
-  {
-   "id": "en_tutor_42645de5_30",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Open wide and take a big bite.",
-   "speech": "Open wide and take a big bite.",
-   "source": "escoita/valeria_en",
    "pack": false
   },
   {
@@ -82128,15 +81777,6 @@
    "pack": false
   },
   {
-   "id": "en_tutor_48f58b0e_40",
-   "lang": "en",
-   "style": "tutor",
-   "text": "A tiny drop of water falls on your nose.",
-   "speech": "A tiny drop of water falls on your nose.",
-   "source": "escoita/valeria_en",
-   "pack": false
-  },
-  {
    "id": "en_tutor_4903f6d1_22",
    "lang": "en",
    "style": "tutor",
@@ -82368,15 +82008,6 @@
    "text": "Fish swim together in a shoal",
    "speech": "Fish swim together in a shoal",
    "source": "tpr.4_5.abril/s3/4_5.abril.s3.fish-swim-together-in-a-shoal",
-   "pack": false
-  },
-  {
-   "id": "en_tutor_49840d4e_47",
-   "lang": "en",
-   "style": "tutor",
-   "text": "It is dark in here. What do we do to the light?",
-   "speech": "It is dark in here. What do we do to the light?",
-   "source": "escoita/valeria_en",
    "pack": false
   },
   {
@@ -82701,15 +82332,6 @@
    "text": "Yes, the pond! The frog's journey is to the pond.",
    "speech": "Yes, the pond! The frog's journey is to the pond.",
    "source": "biblioteca/HIS-100",
-   "pack": false
-  },
-  {
-   "id": "en_tutor_4a658b03_41",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Little purple balls that grow in a bunch.",
-   "speech": "Little purple balls that grow in a bunch.",
-   "source": "escoita/valeria_en",
    "pack": false
   },
   {
@@ -84459,15 +84081,6 @@
    "pack": false
   },
   {
-   "id": "en_tutor_4fa5d0dc_16",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Last we go back.",
-   "speech": "Last we go back.",
-   "source": "escoita/valeria_en",
-   "pack": false
-  },
-  {
    "id": "en_tutor_4fae14c5_41",
    "lang": "en",
    "style": "tutor",
@@ -84900,15 +84513,6 @@
    "pack": false
   },
   {
-   "id": "en_tutor_50b40759_37",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Look at the sky, here comes the rain.",
-   "speech": "Look at the sky, here comes the rain.",
-   "source": "escoita/valeria_en",
-   "pack": false
-  },
-  {
    "id": "en_tutor_50b96a49_20",
    "lang": "en",
    "style": "tutor",
@@ -84987,15 +84591,6 @@
    "text": "Look! A big umbrella! Lúa and the dog hug. No more water!",
    "speech": "Look! A big umbrella! Lúa and the dog hug. No more water!",
    "source": "biblioteca/HIS-012",
-   "pack": false
-  },
-  {
-   "id": "en_tutor_50e7cfc4_42",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Zooming along with the speed lines behind.",
-   "speech": "Zooming along with the speed lines behind.",
-   "source": "escoita/valeria_en",
    "pack": false
   },
   {
@@ -85683,15 +85278,6 @@
    "pack": false
   },
   {
-   "id": "en_tutor_52ad9f8a_38",
-   "lang": "en",
-   "style": "tutor",
-   "text": "The train rolls along the metal track.",
-   "speech": "The train rolls along the metal track.",
-   "source": "escoita/valeria_en",
-   "pack": false
-  },
-  {
    "id": "en_tutor_52ae5b94_37",
    "lang": "en",
    "style": "tutor",
@@ -85716,15 +85302,6 @@
    "text": "Let's be a soft wind now: whoosh... whoosh... softer... and sleep.",
    "speech": "Let's be a soft wind now: whoosh... whoosh... softer... and sleep.",
    "source": "biblioteca/HIS-062",
-   "pack": false
-  },
-  {
-   "id": "en_tutor_52b8aaff_45",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Now time for bed. What do we do to the light?",
-   "speech": "Now time for bed. What do we do to the light?",
-   "source": "escoita/valeria_en",
    "pack": false
   },
   {
@@ -86655,15 +86232,6 @@
    "pack": false
   },
   {
-   "id": "en_tutor_54e1803d_30",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Hold tight to the long string.",
-   "speech": "Hold tight to the long string.",
-   "source": "escoita/valeria_en",
-   "pack": false
-  },
-  {
    "id": "en_tutor_54f64aee_30",
    "lang": "en",
    "style": "tutor",
@@ -87102,15 +86670,6 @@
    "text": "Where is the big leaf now? Touch it!",
    "speech": "Where is the big leaf now? Touch it!",
    "source": "biblioteca/HIS-024",
-   "pack": false
-  },
-  {
-   "id": "en_tutor_563fdfda_22",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Next we have our food.",
-   "speech": "Next we have our food.",
-   "source": "escoita/valeria_en",
    "pack": false
   },
   {
@@ -87834,15 +87393,6 @@
    "pack": false
   },
   {
-   "id": "en_tutor_583e69b1_23",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Then we go out to play.",
-   "speech": "Then we go out to play.",
-   "source": "escoita/valeria_en",
-   "pack": false
-  },
-  {
    "id": "en_tutor_584070ac_38",
    "lang": "en",
    "style": "tutor",
@@ -88383,15 +87933,6 @@
    "pack": false
   },
   {
-   "id": "en_tutor_5980a7d9_47",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Right in the middle of your face, for smelling.",
-   "speech": "Right in the middle of your face, for smelling.",
-   "source": "escoita/valeria_en",
-   "pack": false
-  },
-  {
    "id": "en_tutor_59817243_10",
    "lang": "en",
    "style": "tutor",
@@ -88851,15 +88392,6 @@
    "pack": false
   },
   {
-   "id": "en_tutor_5a9dd83d_33",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Black and white stripes all over.",
-   "speech": "Black and white stripes all over.",
-   "source": "escoita/valeria_en",
-   "pack": false
-  },
-  {
    "id": "en_tutor_5aa16ade_34",
    "lang": "en",
    "style": "tutor",
@@ -89118,15 +88650,6 @@
    "text": "Use a clip to keep the papers together.",
    "speech": "Use a clip to keep the papers together.",
    "source": "corpus/1188/frase",
-   "pack": false
-  },
-  {
-   "id": "en_tutor_5b4ae324_51",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Which basket has toys piled all the way to the top?",
-   "speech": "Which basket has toys piled all the way to the top?",
-   "source": "escoita/valeria_en",
    "pack": false
   },
   {
@@ -90453,30 +89976,12 @@
    "pack": false
   },
   {
-   "id": "en_tutor_5e733d79_40",
-   "lang": "en",
-   "style": "tutor",
-   "text": "This round part is what turns and turns.",
-   "speech": "This round part is what turns and turns.",
-   "source": "escoita/valeria_en",
-   "pack": false
-  },
-  {
    "id": "en_tutor_5e7bbf9c_45",
    "lang": "en",
    "style": "tutor",
    "text": "Can you pick up the leaf? Pick it up… slowly!",
    "speech": "Can you pick up the leaf? Pick it up… slowly!",
    "source": "microcuento.curso_3_4.02/3/triada.imitar",
-   "pack": false
-  },
-  {
-   "id": "en_tutor_5e83f54f_36",
-   "lang": "en",
-   "style": "tutor",
-   "text": "The color of the sky on a clear day.",
-   "speech": "The color of the sky on a clear day.",
-   "source": "escoita/valeria_en",
    "pack": false
   },
   {
@@ -91830,15 +91335,6 @@
    "pack": false
   },
   {
-   "id": "en_tutor_61dd426c_36",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Four legs going as fast as they can.",
-   "speech": "Four legs going as fast as they can.",
-   "source": "escoita/valeria_en",
-   "pack": false
-  },
-  {
    "id": "en_tutor_61ec75b7_18",
    "lang": "en",
    "style": "tutor",
@@ -91980,15 +91476,6 @@
    "text": "We insulated the attic to keep the house warm.",
    "speech": "We insulated the attic to keep the house warm.",
    "source": "corpus/3519/frase",
-   "pack": false
-  },
-  {
-   "id": "en_tutor_6250dd73_48",
-   "lang": "en",
-   "style": "tutor",
-   "text": "The car goes up the steep hill! What does it do?",
-   "speech": "The car goes up the steep hill! What does it do?",
-   "source": "escoita/valeria_en",
    "pack": false
   },
   {
@@ -93531,15 +93018,6 @@
    "pack": false
   },
   {
-   "id": "en_tutor_65dedd1d_33",
-   "lang": "en",
-   "style": "tutor",
-   "text": "When it pokes a pin, it goes pop!",
-   "speech": "When it pokes a pin, it goes pop!",
-   "source": "escoita/valeria_en",
-   "pack": false
-  },
-  {
    "id": "en_tutor_65df8d59_18",
    "lang": "en",
    "style": "tutor",
@@ -94026,15 +93504,6 @@
    "pack": false
   },
   {
-   "id": "en_tutor_66eb7cc6_54",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Which teddy is the BIG one? Hand it to me and tell me!",
-   "speech": "Which teddy is the BIG one? Hand it to me and tell me!",
-   "source": "escoita/valeria_en",
-   "pack": false
-  },
-  {
    "id": "en_tutor_66f9e507_47",
    "lang": "en",
    "style": "tutor",
@@ -94203,15 +93672,6 @@
    "text": "Chocolate or strawberry? What a dilemma!",
    "speech": "Chocolate or strawberry? What a dilemma!",
    "source": "corpus/3288/frase",
-   "pack": false
-  },
-  {
-   "id": "en_tutor_6772bbeb_42",
-   "lang": "en",
-   "style": "tutor",
-   "text": "That is how the fur feels under your hand.",
-   "speech": "That is how the fur feels under your hand.",
-   "source": "escoita/valeria_en",
    "pack": false
   },
   {
@@ -96474,15 +95934,6 @@
    "pack": false
   },
   {
-   "id": "en_tutor_6d3b2640_41",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Sweet, juicy and it drips down your chin.",
-   "speech": "Sweet, juicy and it drips down your chin.",
-   "source": "escoita/valeria_en",
-   "pack": false
-  },
-  {
    "id": "en_tutor_6d3c2df0_29",
    "lang": "en",
    "style": "tutor",
@@ -96579,15 +96030,6 @@
    "text": "Not too hot",
    "speech": "Not too hot",
    "source": "tpr.0_2.novembro/s3/0_2.novembro.s3.not-too-hot",
-   "pack": false
-  },
-  {
-   "id": "en_tutor_6d6aa8ee_31",
-   "lang": "en",
-   "style": "tutor",
-   "text": "It rumbles when you are hungry.",
-   "speech": "It rumbles when you are hungry.",
-   "source": "escoita/valeria_en",
    "pack": false
   },
   {
@@ -98364,15 +97806,6 @@
    "pack": false
   },
   {
-   "id": "en_tutor_7183c64a_59",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Now touch the other cup, carefully. How does this one feel?",
-   "speech": "Now touch the other cup, carefully. How does this one feel?",
-   "source": "escoita/valeria_en",
-   "pack": false
-  },
-  {
    "id": "en_tutor_7185ecd7_44",
    "lang": "en",
    "style": "tutor",
@@ -100119,15 +99552,6 @@
    "pack": false
   },
   {
-   "id": "en_tutor_757a8478_50",
-   "lang": "en",
-   "style": "tutor",
-   "text": "The toy is stuck inside. What do we do to the box?",
-   "speech": "The toy is stuck inside. What do we do to the box?",
-   "source": "escoita/valeria_en",
-   "pack": false
-  },
-  {
    "id": "en_tutor_75803e17_26",
    "lang": "en",
    "style": "tutor",
@@ -101676,15 +101100,6 @@
    "pack": false
   },
   {
-   "id": "en_tutor_79339c19_44",
-   "lang": "en",
-   "style": "tutor",
-   "text": "This is the part that wags when it is happy.",
-   "speech": "This is the part that wags when it is happy.",
-   "source": "escoita/valeria_en",
-   "pack": false
-  },
-  {
    "id": "en_tutor_793c205e_26",
    "lang": "en",
    "style": "tutor",
@@ -101847,15 +101262,6 @@
    "pack": false
   },
   {
-   "id": "en_tutor_79801a69_38",
-   "lang": "en",
-   "style": "tutor",
-   "text": "The raindrops fall all over the grass.",
-   "speech": "The raindrops fall all over the grass.",
-   "source": "escoita/valeria_en",
-   "pack": false
-  },
-  {
    "id": "en_tutor_79881bb4_10",
    "lang": "en",
    "style": "tutor",
@@ -102015,15 +101421,6 @@
    "text": "Spread out",
    "speech": "Spread out",
    "source": "tpr.2_3.novembro/s4/2_3.novembro.s4.spread-out",
-   "pack": false
-  },
-  {
-   "id": "en_tutor_79fc9c73_38",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Fresh from the toaster, it feels warm.",
-   "speech": "Fresh from the toaster, it feels warm.",
-   "source": "escoita/valeria_en",
    "pack": false
   },
   {
@@ -103161,15 +102558,6 @@
    "pack": false
   },
   {
-   "id": "en_tutor_7d090022_25",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Then we sit at the table.",
-   "speech": "Then we sit at the table.",
-   "source": "escoita/valeria_en",
-   "pack": false
-  },
-  {
    "id": "en_tutor_7d0cc291_29",
    "lang": "en",
    "style": "tutor",
@@ -103284,15 +102672,6 @@
    "text": "Sparkly teeth",
    "speech": "Sparkly teeth",
    "source": "tpr.2_3.maio/s2/2_3.maio.s2.sparkly-teeth",
-   "pack": false
-  },
-  {
-   "id": "en_tutor_7d5d1f5b_44",
-   "lang": "en",
-   "style": "tutor",
-   "text": "The train has so many cars, it is very long.",
-   "speech": "The train has so many cars, it is very long.",
-   "source": "escoita/valeria_en",
    "pack": false
   },
   {
@@ -104490,15 +103869,6 @@
    "text": "Plants reproduce through seeds.",
    "speech": "Plants reproduce through seeds.",
    "source": "corpus/2786/frase",
-   "pack": false
-  },
-  {
-   "id": "en_tutor_803eda85_26",
-   "lang": "en",
-   "style": "tutor",
-   "text": "First we put on our shoes.",
-   "speech": "First we put on our shoes.",
-   "source": "escoita/valeria_en",
    "pack": false
   },
   {
@@ -106248,15 +105618,6 @@
    "pack": false
   },
   {
-   "id": "en_tutor_83f5e330_24",
-   "lang": "en",
-   "style": "tutor",
-   "text": "First we put on pajamas.",
-   "speech": "First we put on pajamas.",
-   "source": "escoita/valeria_en",
-   "pack": false
-  },
-  {
    "id": "en_tutor_83f85fb9_31",
    "lang": "en",
    "style": "tutor",
@@ -107154,15 +106515,6 @@
    "text": "Wasteful habit",
    "speech": "Wasteful habit",
    "source": "tpr.5_6.abril/s3/5_6.abril.s3.wasteful-habit",
-   "pack": false
-  },
-  {
-   "id": "en_tutor_86071c8d_13",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Then we wash.",
-   "speech": "Then we wash.",
-   "source": "escoita/valeria_en",
    "pack": false
   },
   {
@@ -110676,15 +110028,6 @@
    "pack": false
   },
   {
-   "id": "en_tutor_8ea7ce47_31",
-   "lang": "en",
-   "style": "tutor",
-   "text": "It lives with us and goes woof.",
-   "speech": "It lives with us and goes woof.",
-   "source": "escoita/valeria_en",
-   "pack": false
-  },
-  {
    "id": "en_tutor_8eb13548_40",
    "lang": "en",
    "style": "tutor",
@@ -111306,15 +110649,6 @@
    "pack": false
   },
   {
-   "id": "en_tutor_9073c992_41",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Yellow and curved, and you peel it first.",
-   "speech": "Yellow and curved, and you peel it first.",
-   "source": "escoita/valeria_en",
-   "pack": false
-  },
-  {
    "id": "en_tutor_907dfad8_57",
    "lang": "en",
    "style": "tutor",
@@ -111438,15 +110772,6 @@
    "text": "Mommy cat and little cat. A big, gentle hug. Purr, purr...",
    "speech": "Mommy cat and little cat. A big, gentle hug. Purr, purr...",
    "source": "biblioteca/HIS-072",
-   "pack": false
-  },
-  {
-   "id": "en_tutor_90c0e7e8_31",
-   "lang": "en",
-   "style": "tutor",
-   "text": "It wags its tail and goes woof.",
-   "speech": "It wags its tail and goes woof.",
-   "source": "escoita/valeria_en",
    "pack": false
   },
   {
@@ -112680,15 +112005,6 @@
    "text": "Yes, the frog is alone. Clap, clap, little frog!",
    "speech": "Yes, the frog is alone. Clap, clap, little frog!",
    "source": "microcuento.curso_3_4.09/1/recast.linguaCasa",
-   "pack": false
-  },
-  {
-   "id": "en_tutor_93d4f8cf_16",
-   "lang": "en",
-   "style": "tutor",
-   "text": "This is the cow.",
-   "speech": "This is the cow.",
-   "source": "escoita/valeria_en",
    "pack": false
   },
   {
@@ -114843,15 +114159,6 @@
    "pack": false
   },
   {
-   "id": "en_tutor_9964ddb2_30",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Look at the red party balloon.",
-   "speech": "Look at the red party balloon.",
-   "source": "escoita/valeria_en",
-   "pack": false
-  },
-  {
    "id": "en_tutor_9967a523_54",
    "lang": "en",
    "style": "tutor",
@@ -116886,15 +116193,6 @@
    "pack": false
   },
   {
-   "id": "en_tutor_9e2689c8_32",
-   "lang": "en",
-   "style": "tutor",
-   "text": "The bird opens its feather wing.",
-   "speech": "The bird opens its feather wing.",
-   "source": "escoita/valeria_en",
-   "pack": false
-  },
-  {
    "id": "en_tutor_9e2ee9a0_13",
    "lang": "en",
    "style": "tutor",
@@ -117432,24 +116730,6 @@
    "text": "Yes, a big bright flower!",
    "speech": "Yes, a big bright flower!",
    "source": "microcuento.curso_2_3.08/3/recast.unhaPalabra",
-   "pack": false
-  },
-  {
-   "id": "en_tutor_9f888420_17",
-   "lang": "en",
-   "style": "tutor",
-   "text": "First we wake up.",
-   "speech": "First we wake up.",
-   "source": "escoita/valeria_en",
-   "pack": false
-  },
-  {
-   "id": "en_tutor_9f898082_34",
-   "lang": "en",
-   "style": "tutor",
-   "text": "It goes right on top of your head.",
-   "speech": "It goes right on top of your head.",
-   "source": "escoita/valeria_en",
    "pack": false
   },
   {
@@ -118296,15 +117576,6 @@
    "text": "Once upon a time",
    "speech": "Once upon a time",
    "source": "tpr.3_4.maio/s4/3_4.maio.s4.once-upon-a-time",
-   "pack": false
-  },
-  {
-   "id": "en_tutor_a1b1c987_38",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Soft, with whiskers, and it goes meow.",
-   "speech": "Soft, with whiskers, and it goes meow.",
-   "source": "escoita/valeria_en",
    "pack": false
   },
   {
@@ -121647,15 +120918,6 @@
    "pack": false
   },
   {
-   "id": "en_tutor_aa845cd1_23",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Last we close our eyes.",
-   "speech": "Last we close our eyes.",
-   "source": "escoita/valeria_en",
-   "pack": false
-  },
-  {
    "id": "en_tutor_aa872e94_34",
    "lang": "en",
    "style": "tutor",
@@ -123825,15 +123087,6 @@
    "pack": false
   },
   {
-   "id": "en_tutor_b02477e7_16",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Last we dry off.",
-   "speech": "Last we dry off.",
-   "source": "escoita/valeria_en",
-   "pack": false
-  },
-  {
    "id": "en_tutor_b02b4932_49",
    "lang": "en",
    "style": "tutor",
@@ -124443,15 +123696,6 @@
    "text": "Yes, the puddles! The dog jumped in the muddy puddles.",
    "speech": "Yes, the puddles! The dog jumped in the muddy puddles.",
    "source": "biblioteca/HIS-073",
-   "pack": false
-  },
-  {
-   "id": "en_tutor_b16f8f41_37",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Full of air, the balloon is so round.",
-   "speech": "Full of air, the balloon is so round.",
-   "source": "escoita/valeria_en",
    "pack": false
   },
   {
@@ -126597,15 +125841,6 @@
    "pack": false
   },
   {
-   "id": "en_tutor_b76df170_25",
-   "lang": "en",
-   "style": "tutor",
-   "text": "First we get in the bath.",
-   "speech": "First we get in the bath.",
-   "source": "escoita/valeria_en",
-   "pack": false
-  },
-  {
    "id": "en_tutor_b7729558_42",
    "lang": "en",
    "style": "tutor",
@@ -126819,15 +126054,6 @@
    "text": "Many people came to the concert.",
    "speech": "Many people came to the concert.",
    "source": "corpus/621/frase",
-   "pack": false
-  },
-  {
-   "id": "en_tutor_b828eb8b_35",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Everything outside is cool and wet.",
-   "speech": "Everything outside is cool and wet.",
-   "source": "escoita/valeria_en",
    "pack": false
   },
   {
@@ -128523,15 +127749,6 @@
    "pack": false
   },
   {
-   "id": "en_tutor_bc5df746_37",
-   "lang": "en",
-   "style": "tutor",
-   "text": "The bird takes off and starts to fly.",
-   "speech": "The bird takes off and starts to fly.",
-   "source": "escoita/valeria_en",
-   "pack": false
-  },
-  {
    "id": "en_tutor_bc5e9085_10",
    "lang": "en",
    "style": "tutor",
@@ -129141,15 +128358,6 @@
    "text": "She attributes her success to hard work.",
    "speech": "She attributes her success to hard work.",
    "source": "corpus/2078/frase",
-   "pack": false
-  },
-  {
-   "id": "en_tutor_bdda1c7f_31",
-   "lang": "en",
-   "style": "tutor",
-   "text": "The cow is very big and strong.",
-   "speech": "The cow is very big and strong.",
-   "source": "escoita/valeria_en",
    "pack": false
   },
   {
@@ -130590,15 +129798,6 @@
    "text": "What do you think will happen?",
    "speech": "What do you think will happen?",
    "source": "tpr.5_6.novembro/s3/5_6.novembro.s3.what-do-you-think-will-happen",
-   "pack": false
-  },
-  {
-   "id": "en_tutor_c14b440d_34",
-   "lang": "en",
-   "style": "tutor",
-   "text": "It takes us places on four wheels.",
-   "speech": "It takes us places on four wheels.",
-   "source": "escoita/valeria_en",
    "pack": false
   },
   {
@@ -132861,15 +132060,6 @@
    "pack": false
   },
   {
-   "id": "en_tutor_c6bd5ebb_30",
-   "lang": "en",
-   "style": "tutor",
-   "text": "The cow swishes its long tail.",
-   "speech": "The cow swishes its long tail.",
-   "source": "escoita/valeria_en",
-   "pack": false
-  },
-  {
    "id": "en_tutor_c6c0e6db_9",
    "lang": "en",
    "style": "tutor",
@@ -133173,15 +132363,6 @@
    "text": "There's a lump of clay on the table.",
    "speech": "There's a lump of clay on the table.",
    "source": "corpus/1530/frase",
-   "pack": false
-  },
-  {
-   "id": "en_tutor_c75642cd_26",
-   "lang": "en",
-   "style": "tutor",
-   "text": "The cat has very soft fur.",
-   "speech": "The cat has very soft fur.",
-   "source": "escoita/valeria_en",
    "pack": false
   },
   {
@@ -135912,15 +135093,6 @@
    "pack": false
   },
   {
-   "id": "en_tutor_ce172af3_38",
-   "lang": "en",
-   "style": "tutor",
-   "text": "The bird flies way up in the high sky.",
-   "speech": "The bird flies way up in the high sky.",
-   "source": "escoita/valeria_en",
-   "pack": false
-  },
-  {
    "id": "en_tutor_ce1bd8c3_77",
    "lang": "en",
    "style": "tutor",
@@ -136242,15 +135414,6 @@
    "text": "The beach is a mere five minutes away.",
    "speech": "The beach is a mere five minutes away.",
    "source": "corpus/2587/frase",
-   "pack": false
-  },
-  {
-   "id": "en_tutor_cf03b7e3_28",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Next we go down the big one.",
-   "speech": "Next we go down the big one.",
-   "source": "escoita/valeria_en",
    "pack": false
   },
   {
@@ -137295,15 +136458,6 @@
    "text": "Yes, go! Go, go, go... and stop!",
    "speech": "Yes, go! Go, go, go... and stop!",
    "source": "biblioteca/HIS-053",
-   "pack": false
-  },
-  {
-   "id": "en_tutor_d18a2901_34",
-   "lang": "en",
-   "style": "tutor",
-   "text": "The cow munches sweet green grass.",
-   "speech": "The cow munches sweet green grass.",
-   "source": "escoita/valeria_en",
    "pack": false
   },
   {
@@ -140808,15 +139962,6 @@
    "pack": false
   },
   {
-   "id": "en_tutor_da5c4070_20",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Next we get dressed.",
-   "speech": "Next we get dressed.",
-   "source": "escoita/valeria_en",
-   "pack": false
-  },
-  {
    "id": "en_tutor_da61589a_41",
    "lang": "en",
    "style": "tutor",
@@ -141330,15 +140475,6 @@
    "pack": false
   },
   {
-   "id": "en_tutor_dbdcea09_33",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Look at the colorful little bird.",
-   "speech": "Look at the colorful little bird.",
-   "source": "escoita/valeria_en",
-   "pack": false
-  },
-  {
    "id": "en_tutor_dbea2288_31",
    "lang": "en",
    "style": "tutor",
@@ -141678,15 +140814,6 @@
    "text": "What is your occupation?",
    "speech": "What is your occupation?",
    "source": "corpus/2635/frase",
-   "pack": false
-  },
-  {
-   "id": "en_tutor_dcc83d63_38",
-   "lang": "en",
-   "style": "tutor",
-   "text": "It goes on your foot before we go out.",
-   "speech": "It goes on your foot before we go out.",
-   "source": "escoita/valeria_en",
    "pack": false
   },
   {
@@ -142200,15 +141327,6 @@
    "text": "Paddle across",
    "speech": "Paddle across",
    "source": "tpr.4_5.maio/s4/4_5.maio.s4.paddle-across",
-   "pack": false
-  },
-  {
-   "id": "en_tutor_de0ca5ac_52",
-   "lang": "en",
-   "style": "tutor",
-   "text": "And this other spoon, how is it? Look how it shines!",
-   "speech": "And this other spoon, how is it? Look how it shines!",
-   "source": "escoita/valeria_en",
    "pack": false
   },
   {
@@ -142785,15 +141903,6 @@
    "text": "Excuse me, sir, is this seat free?",
    "speech": "Excuse me, sir, is this seat free?",
    "source": "corpus/765/frase",
-   "pack": false
-  },
-  {
-   "id": "en_tutor_df4cdefc_26",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Yummy toast for breakfast!",
-   "speech": "Yummy toast for breakfast!",
-   "source": "escoita/valeria_en",
    "pack": false
   },
   {
@@ -143550,15 +142659,6 @@
    "text": "Hold hands",
    "speech": "Hold hands",
    "source": "tpr.2_3.setembro/s4/2_3.setembro.s4.hold-hands",
-   "pack": false
-  },
-  {
-   "id": "en_tutor_e1b59592_18",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Next we rinse off.",
-   "speech": "Next we rinse off.",
-   "source": "escoita/valeria_en",
    "pack": false
   },
   {
@@ -145422,15 +144522,6 @@
    "text": "What are the criteria for the drawing prize?",
    "speech": "What are the criteria for the drawing prize?",
    "source": "corpus/2230/frase",
-   "pack": false
-  },
-  {
-   "id": "en_tutor_e64b3a31_23",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Red, round and crunchy.",
-   "speech": "Red, round and crunchy.",
-   "source": "escoita/valeria_en",
    "pack": false
   },
   {
@@ -147333,15 +146424,6 @@
    "pack": false
   },
   {
-   "id": "en_tutor_eb771421_24",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Last we clear the plate.",
-   "speech": "Last we clear the plate.",
-   "source": "escoita/valeria_en",
-   "pack": false
-  },
-  {
    "id": "en_tutor_eb7783c3_9",
    "lang": "en",
    "style": "tutor",
@@ -148188,15 +147270,6 @@
    "pack": false
   },
   {
-   "id": "en_tutor_ed7ad2d9_30",
-   "lang": "en",
-   "style": "tutor",
-   "text": "The color of grass and leaves.",
-   "speech": "The color of grass and leaves.",
-   "source": "escoita/valeria_en",
-   "pack": false
-  },
-  {
    "id": "en_tutor_ed81f4dc_48",
    "lang": "en",
    "style": "tutor",
@@ -148509,15 +147582,6 @@
    "text": "Where is the ladybug?",
    "speech": "Where is the ladybug?",
    "source": "microcuento.curso_2_3.02/1/casa",
-   "pack": false
-  },
-  {
-   "id": "en_tutor_ee0d361a_20",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Next we read a book.",
-   "speech": "Next we read a book.",
-   "source": "escoita/valeria_en",
    "pack": false
   },
   {
@@ -149304,15 +148368,6 @@
    "pack": false
   },
   {
-   "id": "en_tutor_f05fea1c_43",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Big, with a long mane, and you can ride it.",
-   "speech": "Big, with a long mane, and you can ride it.",
-   "source": "escoita/valeria_en",
-   "pack": false
-  },
-  {
    "id": "en_tutor_f066308a_41",
    "lang": "en",
    "style": "tutor",
@@ -149454,15 +148509,6 @@
    "text": "A rat ran across the street.",
    "speech": "A rat ran across the street.",
    "source": "corpus/1719/frase",
-   "pack": false
-  },
-  {
-   "id": "en_tutor_f0d69996_23",
-   "lang": "en",
-   "style": "tutor",
-   "text": "This is the little cat.",
-   "speech": "This is the little cat.",
-   "source": "escoita/valeria_en",
    "pack": false
   },
   {
@@ -150714,15 +149760,6 @@
    "text": "Bedtime story",
    "speech": "Bedtime story",
    "source": "tpr.2_3.decembro/s4/2_3.decembro.s4.bedtime-story",
-   "pack": false
-  },
-  {
-   "id": "en_tutor_f40cbdea_24",
-   "lang": "en",
-   "style": "tutor",
-   "text": "It goes inside the shoe.",
-   "speech": "It goes inside the shoe.",
-   "source": "escoita/valeria_en",
    "pack": false
   },
   {
@@ -152427,15 +151464,6 @@
    "pack": false
   },
   {
-   "id": "en_tutor_f8857519_37",
-   "lang": "en",
-   "style": "tutor",
-   "text": "The train starts to go down the line.",
-   "speech": "The train starts to go down the line.",
-   "source": "escoita/valeria_en",
-   "pack": false
-  },
-  {
    "id": "en_tutor_f88581e7_27",
    "lang": "en",
    "style": "tutor",
@@ -152991,15 +152019,6 @@
    "text": "Do you remember when it rained a lot yesterday? How did you feel?",
    "speech": "Do you remember when it rained a lot yesterday? How did you feel?",
    "source": "curriculo/T3.U4.1/frasesAdulta",
-   "pack": false
-  },
-  {
-   "id": "en_tutor_f9e96302_34",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Five fingers, and we wave with it.",
-   "speech": "Five fingers, and we wave with it.",
-   "source": "escoita/valeria_en",
    "pack": false
   },
   {
@@ -153675,15 +152694,6 @@
    "text": "Sweeter… now sleep, sleepy bee.",
    "speech": "Sweeter… now sleep, sleepy bee.",
    "source": "registro/frase.lua.4_5.07.4",
-   "pack": false
-  },
-  {
-   "id": "en_tutor_fbe00ea6_27",
-   "lang": "en",
-   "style": "tutor",
-   "text": "It goes on before the shoe.",
-   "speech": "It goes on before the shoe.",
-   "source": "escoita/valeria_en",
    "pack": false
   },
   {
