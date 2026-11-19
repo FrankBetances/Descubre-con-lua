@@ -21,6 +21,7 @@ import 'package:descubre_con_lua/features/calendario/views/calendario_screen.dar
 import 'package:descubre_con_lua/features/calendario/widgets/palabras_do_dia.dart';
 import 'package:descubre_con_lua/features/docentes/portal_docentes_screen.dart';
 import 'package:descubre_con_lua/features/docentes/views/hoxe_docentes_screen.dart';
+import 'package:descubre_con_lua/data/models/leccion_model.dart';
 import 'package:descubre_con_lua/features/docentes/widgets/hoxe_na_aula.dart';
 import 'package:descubre_con_lua/features/familias/portal_familias_screen.dart';
 import 'package:descubre_con_lua/features/juega/views/asamblea_player_screen.dart';
@@ -704,5 +705,37 @@ void main() {
       compruebaPalabras(tarxeta,
           curso.planDoDia(hoxe.mesCalendario, hoxe.semana, hoxe.dia)!, lang);
     });
+  }
+
+  // O-20261119-7: Na escola → Hoy, el camino de los cinco días con el banner
+  // de la unidad, igual que en casa, y debajo todo lo del aula.
+  for (final cursoId in ['curso_2_3', 'curso_3_4', 'curso_4_5', 'curso_5_6']) {
+    for (final lang in AppLanguage.deInterfaz) {
+      testWidgets('aula $cursoId: camino con banner, en ${lang.code}',
+          (tester) async {
+        Leccions.sembrar(
+            Leccions.fromRaw(File(Leccions.assetPath).readAsStringSync()));
+        await pintar(
+            tester,
+            HoxeDocentesScreen(
+              repository: repo,
+              language: lang,
+              onLanguageChanged: (_) {},
+              cursoId: cursoId,
+              onCambiarCurso: (_) {},
+              audioService: MockOfflineAudioService(),
+              agora: DateTime(2026, 11, 19),
+            ),
+            tamano: const Size(412, 915));
+        expect(find.byKey(const Key('aula_camino')), findsOneWidget);
+        expect(find.byKey(const Key('learn_banner')), findsOneWidget);
+        for (var i = 0; i < 5; i++) {
+          expect(find.byKey(ValueKey('learn_nodo_$i')), findsOneWidget);
+        }
+        // Lo del aula sigue debajo, sin quitar nada.
+        expect(find.byKey(const Key('hoxe_aula_titulo')), findsOneWidget);
+        expect(erroresDe(tester), isEmpty);
+      });
+    }
   }
 }

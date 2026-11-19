@@ -29,6 +29,10 @@ import '../../familias/widgets/selector_idade.dart';
 import '../../juega/widgets/aula_ciclo_panel.dart' show nomeDoMes;
 import '../../premios/premios_repository.dart';
 import '../../leccions/widgets/leccion_da_semana.dart';
+import '../../../core/brand/lua_valeria.dart';
+import '../../../data/models/leccion_model.dart';
+import '../../criancas/xogo_lua.dart';
+import '../../familias/widgets/learn_duolingo.dart';
 import '../../planificador/views/dinamicas_screen.dart';
 import '../../steam/widgets/steam_no_calendario.dart';
 import '../nomes_docentes.dart';
@@ -359,6 +363,16 @@ class _HoxeDocentesScreenState extends State<HoxeDocentesScreen> {
                       Expanded(child: titulo),
                     ]);
             }),
+            // O-20261119-7: el camino de los cinco días con el banner de la
+            // unidad, igual que en casa. Debajo sigue todo lo del aula.
+            const SizedBox(height: 10),
+            _CaminoDoAula(
+              cursoId: widget.cursoId,
+              toca: _toca,
+              language: lang,
+              audioService: widget.audioService,
+              agora: widget.agora,
+            ),
             // P11: lo primero, la lección de la semana del plan curricular,
             // la misma que ven las familias.
             const SizedBox(height: 12),
@@ -877,4 +891,104 @@ class _FilaRecurso extends StatelessWidget {
       ),
     );
   }
+}
+
+/// O-20261119-7 (Frank: «quiero el Modo Aula como camino con banner, igual
+/// que el de casa»): la caja verde de la unidad y los cinco días en zigzag,
+/// con Lúa al lado. El día de hoy abre la lección paso a paso, como en casa;
+/// en el aula no se registra a ningún niño, así que no da premios.
+class _CaminoDoAula extends StatelessWidget {
+  final String cursoId;
+  final DiaQueToca toca;
+  final AppLanguage language;
+  final OfflineAudioService? audioService;
+  final DateTime? agora;
+  const _CaminoDoAula({
+    required this.cursoId,
+    required this.toca,
+    required this.language,
+    required this.audioService,
+    required this.agora,
+  });
+
+  static const _dias = <LocalizedString>[
+    LocalizedString(gl: 'Luns', es: 'Lunes'),
+    LocalizedString(gl: 'Martes', es: 'Martes'),
+    LocalizedString(gl: 'Mércores', es: 'Miércoles'),
+    LocalizedString(gl: 'Xoves', es: 'Jueves'),
+    LocalizedString(gl: 'Venres', es: 'Viernes'),
+  ];
+
+  @override
+  Widget build(BuildContext context) => FutureBuilder<Leccions?>(
+        future:
+            Leccions.cargar().then<Leccions?>((l) => l, onError: (_) => null),
+        builder: (context, snap) {
+          final da =
+              snap.data?.da(cursoId, toca.dia.mesCalendario, toca.dia.semana);
+          if (da == null) return const SizedBox.shrink();
+          final (u, lec) = da;
+          final lang = language;
+          final actual = toca.prevista
+              ? 0
+              : toca.finDeSemana
+                  ? 4
+                  : toca.dia.dia - 1;
+          void abrir(int i) {
+            if (i > actual) {
+              ScaffoldMessenger.of(context)
+                ..hideCurrentSnackBar()
+                ..showSnackBar(SnackBar(
+                  key: const Key('aula_aviso_futuro'),
+                  content: Text(lang == AppLanguage.gl
+                      ? 'Este día ábrese o ${_dias[i].gl.toLowerCase()}'
+                      : 'Este día se abre el ${_dias[i].es.toLowerCase()}'),
+                ));
+              return;
+            }
+            abrirLeccionDuolingo(context,
+                leccion: lec,
+                dia: i + 1,
+                language: lang,
+                semana: '$cursoId/${toca.dia.mesCalendario}/${toca.dia.semana}',
+                cursoId: cursoId,
+                mesCalendario: toca.dia.mesCalendario,
+                semanaN: toca.dia.semana,
+                audioService: audioService,
+                agora: agora);
+          }
+
+          return Column(
+            key: const Key('aula_camino'),
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              BannerUnidade(
+                titulo: u.titulo.resolve(lang),
+                descricion: u.steam?.resolve(lang) ?? '',
+                continuar: 'Continuar',
+                onContinuar: () => abrir(actual),
+              ),
+              CaminoNodos(
+                etiquetas: [for (final d in _dias) d.resolve(lang)],
+                actual: actual,
+                feitoHoxe: false,
+                empezar: 'Empezar',
+                onNodo: abrir,
+                lua: FutureBuilder<CatalogoLua>(
+                  future: CatalogoLua.cargar(),
+                  initialData: CatalogoLua.lido,
+                  builder: (context, cat) {
+                    final ini = cat.data?.deInicio ?? const {};
+                    return LuaValeria(
+                        key: const Key('aula_lua'),
+                        ancho: 112,
+                        cabeza: ini['head'],
+                        pescozo: ini['neck']);
+                  },
+                ),
+              ),
+            ],
+          );
+        },
+      );
 }
