@@ -335,10 +335,29 @@ def main() -> int:
         print(f"FALLO: {PLAN.relative_to(RAIZ)} debe contener una lista de piezas")
         return 1
 
+    leccions_path = RAIZ / "assets/content/leccions/leccions.json"
+    expected_steam: dict[tuple[str, int], dict] = {}
+    if leccions_path.is_file():
+        lec_data = json.loads(leccions_path.read_text(encoding="utf-8"))
+        for c_id, c_obj in (lec_data.get("cursos") or {}).items():
+            for idx_u, u_obj in enumerate(c_obj.get("unidades") or [], 1):
+                st_ref = u_obj.get("steam")
+                if isinstance(st_ref, dict) and st_ref.get("id"):
+                    expected_steam[(c_id, idx_u)] = st_ref
+
     cursos_esperados = {"curso_2_3", "curso_3_4", "curso_4_5", "curso_5_6"}
     vistos_curso_mes: set[tuple[str, int]] = set()
     pares_vistos: set[frozenset[str]] = set()
     palabras_usadas: set[str] = set()
+
+    def _check_word_steam(obj: dict, path_label: str) -> None:
+        st_w = obj.get("steam")
+        if not isinstance(st_w, dict):
+            fallos.append(f"{path_label}: falta objeto steam {{gl, es}}")
+            return
+        for lang in ("gl", "es"):
+            if not isinstance(st_w.get(lang), str) or not st_w[lang].strip():
+                fallos.append(f"{path_label}: falta steam.{lang} no vacío")
 
     for idx, pieza in enumerate(piezas):
         curso = pieza.get("curso")
@@ -351,9 +370,29 @@ def main() -> int:
         else:
             vistos_curso_mes.add((curso, mes))
 
+        st_p = pieza.get("steam")
+        if not isinstance(st_p, dict) or not st_p.get("id"):
+            fallos.append(f"{tag}: falta pieza.steam.id")
+        else:
+            exp_st = expected_steam.get((curso, mes))
+            if exp_st and st_p.get("id") != exp_st.get("id"):
+                fallos.append(f"{tag}: steam.id={st_p.get('id')!r} distinto de {exp_st.get('id')!r}")
+            tit = st_p.get("titulo") or {}
+            if not isinstance(tit, dict) or not str(tit.get("gl", "")).strip() or not str(tit.get("es", "")).strip():
+                fallos.append(f"{tag}: falta pieza.steam.titulo.gl/es")
+
         par = pieza.get("par") or {}
-        a = (par.get("a") or {}).get("en", "")
-        b = (par.get("b") or {}).get("en", "")
+        a_obj = par.get("a") or {}
+        b_obj = par.get("b") or {}
+        _check_word_steam(a_obj, f"{tag}.par.a")
+        _check_word_steam(b_obj, f"{tag}.par.b")
+
+        fases = (pieza.get("progresion") or {}).get("fases") or []
+        for f_i, f_obj in enumerate(fases):
+            _check_word_steam(f_obj, f"{tag}.progresion.fases[{f_i}]")
+
+        a = a_obj.get("en", "")
+        b = b_obj.get("en", "")
         fonema = par.get("fonema", "")
         if not a or not b:
             fallos.append(f"{tag}: falta par.a.en o par.b.en")
