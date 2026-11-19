@@ -105,8 +105,7 @@
             "gl": "Rir alto co bebé",
             "es": "Reír alto con el bebé"
           },
-          "category": "verb",
-          "lamina": "pal_laugh"
+          "category": "verb"
         },
         {
           "id": "0_2.febreiro.s1.tickle-tummy",
@@ -117,8 +116,7 @@
             "gl": "Facer cóxegas na barriga amodo",
             "es": "Hacer cosquillas en la barriga despacio"
           },
-          "category": "verb",
-          "lamina": "pal_tickle_tummy"
+          "category": "verb"
         },
         {
           "id": "0_2.febreiro.s1.peep-out",
@@ -129,8 +127,7 @@
             "gl": "Asomar a cabeza detrás dun pano",
             "es": "Asomar la cabeza detrás de un pañuelo"
           },
-          "category": "verb",
-          "lamina": "pal_peep_out"
+          "category": "verb"
         },
         {
           "id": "0_2.febreiro.s1.toot",
@@ -141,8 +138,7 @@
             "gl": "Soprar unha trompeta de xoguete",
             "es": "Soplar una trompeta de juguete"
           },
-          "category": "verb",
-          "lamina": "pal_toot"
+          "category": "verb"
         },
         {
           "id": "0_2.febreiro.s1.dress-up",
@@ -153,8 +149,7 @@
             "gl": "Poñer unha capa ao bebé",
             "es": "Poner una capa al bebé"
           },
-          "category": "verb",
-          "lamina": "pal_dress_up"
+          "category": "verb"
         },
         {
           "id": "0_2.febreiro.s1.giggly",
@@ -165,8 +160,7 @@
             "gl": "Rir sen parar co bebé",
             "es": "Reír sin parar con el bebé"
           },
-          "category": "adjective",
-          "lamina": "pal_giggly"
+          "category": "adjective"
         },
         {
           "id": "0_2.febreiro.s1.spotted",
@@ -177,8 +171,7 @@
             "gl": "Tocar os lunares dun pano",
             "es": "Tocar los lunares de un pañuelo"
           },
-          "category": "adjective",
-          "lamina": "pal_spotted"
+          "category": "adjective"
         },
         {
           "id": "0_2.febreiro.s1.frilly",
@@ -189,8 +182,7 @@
             "gl": "Mover un volante coas mans",
             "es": "Mover un volante con las manos"
           },
-          "category": "adjective",
-          "lamina": "pal_frilly"
+          "category": "adjective"
         },
         {
           "id": "0_2.febreiro.s1.feathered-hat",
@@ -201,8 +193,7 @@
             "gl": "Pasar unha pluma do gorro pola cara",
             "es": "Pasar una pluma del gorro por la cara"
           },
-          "category": "adjective",
-          "lamina": "pal_feathered_hat"
+          "category": "adjective"
         },
         {
           "id": "0_2.febreiro.s1.boo",
@@ -213,8 +204,7 @@
             "gl": "Descubrir a cara de súpeto e sorrir",
             "es": "Descubrir la cara de repente y sonreír"
           },
-          "category": "phrase",
-          "lamina": "pal_boo"
+          "category": "phrase"
         },
         {
           "id": "0_2.febreiro.s1.ha-ha-ha",
@@ -225,8 +215,7 @@
             "gl": "Rir e bater palmas",
             "es": "Reír y dar palmas"
           },
-          "category": "phrase",
-          "lamina": "pal_ha_ha_ha"
+          "category": "phrase"
         },
         {
           "id": "0_2.febreiro.s1.where-did-i-go",
@@ -237,8 +226,7 @@
             "gl": "Esconderse detrás dunha almofada",
             "es": "Esconderse detrás de una almohada"
           },
-          "category": "phrase",
-          "lamina": "pal_where_did_i_go"
+          "category": "phrase"
         },
         {
           "id": "0_2.febreiro.s1.hat-on-hat-off",
@@ -318,8 +306,7 @@
             "gl": "Empurrar a randeeira amodo",
             "es": "Empujar el columpio despacio"
           },
-          "category": "noun",
-          "lamina": "pal_swing_seat"
+          "category": "noun"
         },
         {
           "id": "0_2.febreiro.s2.beanbag",
@@ -330,8 +317,7 @@
             "gl": "Afundir o bebé no pufe",
             "es": "Hundir al bebé en el puf"
           },
-          "category": "noun",
-          "lamina": "pal_beanbag"
+          "category": "noun"
         },
         {
           "id": "0_2.febreiro.s2.spinning-top",
@@ -342,8 +328,7 @@
             "gl": "Facer xirar unha buxaina",
             "es": "Hacer girar una peonza"
           },
-          "category": "noun",
-          "lamina": "pal_spinning_top"
+          "category": "noun"
         },
         {
           "id": "0_2.febreiro.s2.rock-to-and-fro",
@@ -354,8 +339,7 @@
             "gl": "Randear o bebé adiante e atrás",
             "es": "Mecer al bebé adelante y atrás"
           },
-          "category": "verb",
-          "lamina": "pal_rock_to_and_fro"
+          "category": "verb"
         },
         {
           "id": "0_2.febreiro.s2.wobble",
@@ -366,8 +350,7 @@
             "gl": "Bambear coma unha xelatina",
             "es": "Tambalearse como una gelatina"
           },
-          "category": "verb",
-          "lamina": "pal_wobble"
+          "category": "verb"
         },
         {
           "id": "0_2.febreiro.s2.tip-over",
@@ -378,8 +361,7 @@
             "gl": "Deixar caer amodo cara ao lado",
             "es": "Dejar caer despacio hacia un lado"
           },
-          "category": "verb",
-          "lamina": "pal_tip_over"
+          "category": "verb"
         },
         {
           "id": "0_2.febreiro.s2.whirl",
@@ -390,8 +372,7 @@
             "gl": "Xirar amodo co bebé en brazos",
             "es": "Girar despacio con el bebé en brazos"
           },
-          "category": "verb",
-          "lamina": "pal_whirl"
+          "category": "verb"
         },
         {
           "id": "0_2.febreiro.s2.bob",
@@ -402,8 +383,7 @@
             "gl": "Subir e baixar o bebé suavemente",
             "es": "Subir y bajar al bebé suavemente"
           },
-          "category": "verb",
-          "lamina": "pal_bob"
+          "category": "verb"
         },
         {
           "id": "0_2.febreiro.s2.swaying",
@@ -414,8 +394,7 @@
             "gl": "Mover o corpo dun lado a outro",
             "es": "Mover el cuerpo de un lado a otro"
           },
-          "category": "adjective",
-          "lamina": "pal_swaying"
+          "category": "adjective"
         },
         {
           "id": "0_2.febreiro.s2.dizzy",
@@ -426,8 +405,7 @@
             "gl": "Parar de xirar e sorrir",
             "es": "Parar de girar y sonreír"
           },
-          "category": "adjective",
-          "lamina": "pal_dizzy"
+          "category": "adjective"
         },
         {
           "id": "0_2.febreiro.s2.bouncy",
@@ -438,8 +416,7 @@
             "gl": "Brincar no pufe",
             "es": "Botar en el puf"
           },
-          "category": "adjective",
-          "lamina": "pal_bouncy"
+          "category": "adjective"
         },
         {
           "id": "0_2.febreiro.s2.steady",
@@ -462,8 +439,7 @@
             "gl": "Randear e cantar",
             "es": "Mecer y cantar"
           },
-          "category": "phrase",
-          "lamina": "pal_rock_a_bye_baby"
+          "category": "phrase"
         },
         {
           "id": "0_2.febreiro.s2.whee",
@@ -474,8 +450,7 @@
             "gl": "Levantar o bebé e baixalo",
             "es": "Levantar al bebé y bajarlo"
           },
-          "category": "phrase",
-          "lamina": "pal_whee"
+          "category": "phrase"
         },
         {
           "id": "0_2.febreiro.s2.side-to-side",
@@ -486,8 +461,7 @@
             "gl": "Balancear o bebé dun lado a outro",
             "es": "Balancear al bebé de un lado a otro"
           },
-          "category": "complex",
-          "lamina": "pal_side_to_side"
+          "category": "complex"
         },
         {
           "id": "0_2.febreiro.s2.back-and-forth",
@@ -498,8 +472,7 @@
             "gl": "Mover o bebé adiante e atrás",
             "es": "Mover al bebé adelante y atrás"
           },
-          "category": "complex",
-          "lamina": "pal_back_and_forth"
+          "category": "complex"
         }
       ]
     },
@@ -543,8 +516,7 @@
             "gl": "Esconderse detrás da cortina",
             "es": "Esconderse detrás de la cortina"
           },
-          "category": "noun",
-          "lamina": "pal_curtain"
+          "category": "noun"
         },
         {
           "id": "0_2.febreiro.s3.tunnel",
@@ -555,8 +527,7 @@
             "gl": "Pasar a man polo túnel de tea",
             "es": "Pasar la mano por el túnel de tela"
           },
-          "category": "noun",
-          "lamina": "pal_tunnel"
+          "category": "noun"
         },
         {
           "id": "0_2.febreiro.s3.pop-up-toy",
@@ -567,8 +538,7 @@
             "gl": "Premer o botón e ver saír o xoguete",
             "es": "Pulsar el botón y ver salir el juguete"
           },
-          "category": "noun",
-          "lamina": "pal_pop_up_toy"
+          "category": "noun"
         },
         {
           "id": "0_2.febreiro.s3.jack-in-the-box",
@@ -579,8 +549,7 @@
             "gl": "Abrir a caixa e dicir «oh!»",
             "es": "Abrir la caja y decir «¡oh!»"
           },
-          "category": "noun",
-          "lamina": "pal_jack_in_the_box"
+          "category": "noun"
         },
         {
           "id": "0_2.febreiro.s3.hiding-place",
@@ -591,8 +560,7 @@
             "gl": "Sinalar onde está escondido",
             "es": "Señalar dónde está escondido"
           },
-          "category": "noun",
-          "lamina": "pal_hiding_place"
+          "category": "noun"
         },
         {
           "id": "0_2.febreiro.s3.peek-out",
@@ -603,8 +571,7 @@
             "gl": "Espreitar entre os dedos",
             "es": "Espiar entre los dedos"
           },
-          "category": "verb",
-          "lamina": "pal_peek_out"
+          "category": "verb"
         },
         {
           "id": "0_2.febreiro.s3.pop-up",
@@ -615,8 +582,7 @@
             "gl": "Erguerse de súpeto detrás do sofá",
             "es": "Aparecer de golpe detrás del sofá"
           },
-          "category": "verb",
-          "lamina": "pal_pop_up"
+          "category": "verb"
         },
         {
           "id": "0_2.febreiro.s3.uncover",
@@ -627,8 +593,7 @@
             "gl": "Quitar o pano de riba do xoguete",
             "es": "Quitar el pañuelo de encima del juguete"
           },
-          "category": "verb",
-          "lamina": "pal_uncover"
+          "category": "verb"
         },
         {
           "id": "0_2.febreiro.s3.crawl-through",
@@ -639,8 +604,7 @@
             "gl": "Gatear polo túnel xunto ao bebé",
             "es": "Gatear por el túnel junto al bebé"
           },
-          "category": "verb",
-          "lamina": "pal_crawl_through"
+          "category": "verb"
         },
         {
           "id": "0_2.febreiro.s3.seek",
@@ -651,8 +615,7 @@
             "gl": "Mirar arredor buscando",
             "es": "Mirar alrededor buscando"
           },
-          "category": "verb",
-          "lamina": "pal_seek"
+          "category": "verb"
         },
         {
           "id": "0_2.febreiro.s3.gone",
@@ -663,8 +626,7 @@
             "gl": "Abrir as mans baleiras",
             "es": "Abrir las manos vacías"
           },
-          "category": "adjective",
-          "lamina": "pal_gone"
+          "category": "adjective"
         },
         {
           "id": "0_2.febreiro.s3.found",
@@ -675,8 +637,7 @@
             "gl": "Sacar o xoguete e celebralo",
             "es": "Sacar el juguete y celebrarlo"
           },
-          "category": "adjective",
-          "lamina": "pal_found"
+          "category": "adjective"
         },
         {
           "id": "0_2.febreiro.s3.surprising",
@@ -687,8 +648,7 @@
             "gl": "Abrir moito os ollos",
             "es": "Abrir mucho los ojos"
           },
-          "category": "adjective",
-          "lamina": "pal_surprising"
+          "category": "adjective"
         },
         {
           "id": "0_2.febreiro.s3.hidden-away",
@@ -699,8 +659,7 @@
             "gl": "Tapar o xoguete cunha manta",
             "es": "Tapar el juguete con una manta"
           },
-          "category": "adjective",
-          "lamina": "pal_hidden_away"
+          "category": "adjective"
         },
         {
           "id": "0_2.febreiro.s3.peekaboo",
@@ -711,8 +670,7 @@
             "gl": "Tapar a cara e descubrila",
             "es": "Tapar la cara y descubrirla"
           },
-          "category": "phrase",
-          "lamina": "pal_peekaboo"
+          "category": "phrase"
         },
         {
           "id": "0_2.febreiro.s3.where-s-teddy",
@@ -723,8 +681,7 @@
             "gl": "Buscar o osiño debaixo da manta",
             "es": "Buscar el osito debajo de la manta"
           },
-          "category": "phrase",
-          "lamina": "pal_where_s_teddy"
+          "category": "phrase"
         },
         {
           "id": "0_2.febreiro.s3.here-i-am",
@@ -735,8 +692,7 @@
             "gl": "Aparecer detrás da cortina",
             "es": "Aparecer detrás de la cortina"
           },
-          "category": "phrase",
-          "lamina": "pal_here_i_am"
+          "category": "phrase"
         },
         {
           "id": "0_2.febreiro.s3.in-and-out",
@@ -747,8 +703,7 @@
             "gl": "Meter e sacar o xoguete da caixa",
             "es": "Meter y sacar el juguete de la caja"
           },
-          "category": "complex",
-          "lamina": "pal_in_and_out"
+          "category": "complex"
         }
       ]
     },
@@ -804,8 +759,7 @@
             "gl": "Axitar o ovo sonoro preto da orella",
             "es": "Agitar el huevo sonoro cerca de la oreja"
           },
-          "category": "noun",
-          "lamina": "pal_egg_shaker"
+          "category": "noun"
         },
         {
           "id": "0_2.febreiro.s4.pot-lid",
@@ -816,8 +770,7 @@
             "gl": "Bater dúas tapas amodo",
             "es": "Golpear dos tapas despacio"
           },
-          "category": "noun",
-          "lamina": "pal_pot_lid"
+          "category": "noun"
         },
         {
           "id": "0_2.febreiro.s4.rhythm",
@@ -828,8 +781,7 @@
             "gl": "Bater nas pernas ao ritmo",
             "es": "Golpear en las piernas al ritmo"
           },
-          "category": "noun",
-          "lamina": "pal_rhythm"
+          "category": "noun"
         },
         {
           "id": "0_2.febreiro.s4.nursery-rhyme",
@@ -840,8 +792,7 @@
             "gl": "Cantar unha cantiga infantil",
             "es": "Cantar una canción infantil"
           },
-          "category": "noun",
-          "lamina": "pal_nursery_rhyme"
+          "category": "noun"
         },
         {
           "id": "0_2.febreiro.s4.bang-the-drum",
@@ -852,8 +803,7 @@
             "gl": "Bater no tambor coas mans",
             "es": "Tocar el tambor con las manos"
           },
-          "category": "verb",
-          "lamina": "pal_bang_the_drum"
+          "category": "verb"
         },
         {
           "id": "0_2.febreiro.s4.tap-along",
@@ -864,8 +814,7 @@
             "gl": "Dar golpiños ao ritmo",
             "es": "Dar golpecitos al ritmo"
           },
-          "category": "verb",
-          "lamina": "pal_tap_along"
+          "category": "verb"
         },
         {
           "id": "0_2.febreiro.s4.twirl",
@@ -876,8 +825,7 @@
             "gl": "Xirar un pano no aire",
             "es": "Girar un pañuelo en el aire"
           },
-          "category": "verb",
-          "lamina": "pal_twirl"
+          "category": "verb"
         },
         {
           "id": "0_2.febreiro.s4.stamp",
@@ -888,8 +836,7 @@
             "gl": "Mover os pés do bebé coma pisando",
             "es": "Mover los pies del bebé como pisando"
           },
-          "category": "verb",
-          "lamina": "pal_stamp"
+          "category": "verb"
         },
         {
           "id": "0_2.febreiro.s4.jingle-jangle",
@@ -900,8 +847,7 @@
             "gl": "Axitar unhas chaves de xoguete",
             "es": "Agitar unas llaves de juguete"
           },
-          "category": "verb",
-          "lamina": "pal_jingle_jangle"
+          "category": "verb"
         },
         {
           "id": "0_2.febreiro.s4.rattly",
@@ -912,8 +858,7 @@
             "gl": "Axitar a botella con arroz",
             "es": "Agitar la botella con arroz"
           },
-          "category": "adjective",
-          "lamina": "pal_rattly"
+          "category": "adjective"
         },
         {
           "id": "0_2.febreiro.s4.tinkly",
@@ -924,8 +869,7 @@
             "gl": "Tocar a campaíña amodo",
             "es": "Tocar la campanita despacio"
           },
-          "category": "adjective",
-          "lamina": "pal_tinkly"
+          "category": "adjective"
         },
         {
           "id": "0_2.febreiro.s4.booming",
@@ -936,8 +880,7 @@
             "gl": "Bater forte no tambor unha vez",
             "es": "Golpear fuerte el tambor una vez"
           },
-          "category": "adjective",
-          "lamina": "pal_booming"
+          "category": "adjective"
         },
         {
           "id": "0_2.febreiro.s4.merry-tune",
@@ -948,8 +891,7 @@
             "gl": "Cantaruxar unha melodía alegre",
             "es": "Tararear una melodía alegre"
           },
-          "category": "adjective",
-          "lamina": "pal_merry_tune"
+          "category": "adjective"
         },
         {
           "id": "0_2.febreiro.s4.shake-shake-shake",
@@ -972,8 +914,7 @@
             "gl": "Repartir instrumentos",
             "es": "Repartir instrumentos"
           },
-          "category": "phrase",
-          "lamina": "pal_let_s_make_music"
+          "category": "phrase"
         },
         {
           "id": "0_2.febreiro.s4.loud-and-soft",
@@ -984,8 +925,7 @@
             "gl": "Bater forte e despois suave",
             "es": "Golpear fuerte y luego suave"
           },
-          "category": "complex",
-          "lamina": "pal_loud_and_soft"
+          "category": "complex"
         },
         {
           "id": "0_2.febreiro.s4.clap-and-stop",
@@ -996,8 +936,7 @@
             "gl": "Bater palmas e parar de súpeto",
             "es": "Dar palmas y parar de golpe"
           },
-          "category": "complex",
-          "lamina": "pal_clap_and_stop"
+          "category": "complex"
         }
       ]
     }

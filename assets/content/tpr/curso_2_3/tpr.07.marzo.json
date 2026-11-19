@@ -21,8 +21,7 @@
             "gl": "Debuxar un óvalo no aire",
             "es": "Dibujar un óvalo en el aire"
           },
-          "category": "noun",
-          "lamina": "pal_oval"
+          "category": "noun"
         },
         {
           "id": "2_3.marzo.s1.rectangle",
@@ -33,8 +32,7 @@
             "gl": "Facer un rectángulo cos dedos",
             "es": "Hacer un rectángulo con los dedos"
           },
-          "category": "noun",
-          "lamina": "pal_rectangle"
+          "category": "noun"
         },
         {
           "id": "2_3.marzo.s1.diamond",
@@ -45,8 +43,7 @@
             "gl": "Facer un rombo coas mans",
             "es": "Hacer un rombo con las manos"
           },
-          "category": "noun",
-          "lamina": "pal_diamond"
+          "category": "noun"
         },
         {
           "id": "2_3.marzo.s1.star-shape",
@@ -57,8 +54,7 @@
             "gl": "Abrir brazos e pernas coma unha estrela",
             "es": "Abrir brazos y piernas como una estrella"
           },
-          "category": "noun",
-          "lamina": "pal_star_shape"
+          "category": "noun"
         },
         {
           "id": "2_3.marzo.s1.heart-shape",
@@ -69,8 +65,7 @@
             "gl": "Facer un corazón coas mans",
             "es": "Hacer un corazón con las manos"
           },
-          "category": "noun",
-          "lamina": "pal_heart_shape"
+          "category": "noun"
         },
         {
           "id": "2_3.marzo.s1.shape-sorter",
@@ -81,8 +76,7 @@
             "gl": "Meter a forma no seu oco",
             "es": "Meter la forma en su hueco"
           },
-          "category": "noun",
-          "lamina": "pal_shape_sorter"
+          "category": "noun"
         },
         {
           "id": "2_3.marzo.s1.corner-piece",
@@ -93,8 +87,7 @@
             "gl": "Sinalar a esquina da peza",
             "es": "Señalar la esquina de la pieza"
           },
-          "category": "noun",
-          "lamina": "pal_corner_piece"
+          "category": "noun"
         },
         {
           "id": "2_3.marzo.s1.draw-a-shape",
@@ -105,8 +98,7 @@
             "gl": "Debuxar unha forma no chan",
             "es": "Dibujar una forma en el suelo"
           },
-          "category": "verb",
-          "lamina": "pal_draw_a_shape"
+          "category": "verb"
         },
         {
           "id": "2_3.marzo.s1.find-the-shape",
@@ -129,8 +121,7 @@
             "gl": "Meter a peza no oco",
             "es": "Meter la pieza en el hueco"
           },
-          "category": "verb",
-          "lamina": "pal_slot_in"
+          "category": "verb"
         },
         {
           "id": "2_3.marzo.s1.trace-around",
@@ -141,8 +132,7 @@
             "gl": "Seguir o bordo co dedo",
             "es": "Seguir el borde con el dedo"
           },
-          "category": "verb",
-          "lamina": "pal_trace_around"
+          "category": "verb"
         },
         {
           "id": "2_3.marzo.s1.make-a-shape",
@@ -153,8 +143,7 @@
             "gl": "Facer unha forma co corpo",
             "es": "Hacer una forma con el cuerpo"
           },
-          "category": "verb",
-          "lamina": "pal_make_a_shape"
+          "category": "verb"
         },
         {
           "id": "2_3.marzo.s1.pointed",
@@ -177,8 +166,7 @@
             "gl": "Debuxar unha curva no aire",
             "es": "Dibujar una curva en el aire"
           },
-          "category": "adjective",
-          "lamina": "pal_curved"
+          "category": "adjective"
         },
         {
           "id": "2_3.marzo.s1.four-sided",
@@ -189,8 +177,7 @@
             "gl": "Contar catro lados cos dedos",
             "es": "Contar cuatro lados con los dedos"
           },
-          "category": "adjective",
-          "lamina": "pal_four_sided"
+          "category": "adjective"
         },
         {
           "id": "2_3.marzo.s1.egg-shaped",
@@ -201,8 +188,7 @@
             "gl": "Facer un ovo coas mans",
             "es": "Hacer un huevo con las manos"
           },
-          "category": "adjective",
-          "lamina": "pal_egg_shaped"
+          "category": "adjective"
         },
         {
           "id": "2_3.marzo.s1.what-shape-is-this",
@@ -213,8 +199,7 @@
             "gl": "Amosar unha forma e agardar",
             "es": "Enseñar una forma y esperar"
           },
-          "category": "phrase",
-          "lamina": "pal_what_shape_is_this"
+          "category": "phrase"
         },
         {
           "id": "2_3.marzo.s1.it-s-a-star",
@@ -225,8 +210,7 @@
             "gl": "Abrirse coma unha estrela",
             "es": "Abrirse como una estrella"
           },
-          "category": "phrase",
-          "lamina": "pal_it_s_a_star"
+          "category": "phrase"
         },
         {
           "id": "2_3.marzo.s1.shapes-in-the-room",
@@ -237,8 +221,7 @@
             "gl": "Sinalar formas arredor",
             "es": "Señalar formas alrededor"
           },
-          "category": "complex",
-          "lamina": "pal_shapes_in_the_room"
+          "category": "complex"
         },
         {
           "id": "2_3.marzo.s1.a-heart-with-my-hands",
@@ -249,8 +232,7 @@
             "gl": "Facer un corazón coas mans",
             "es": "Hacer un corazón con las manos"
           },
-          "category": "complex",
-          "lamina": "pal_a_heart_with_my_hands"
+          "category": "complex"
         }
       ]
     },
@@ -294,8 +276,7 @@
             "gl": "Acariñar a pel do albaricoque",
             "es": "Acariciar la piel del albaricoque"
           },
-          "category": "noun",
-          "lamina": "pal_apricot"
+          "category": "noun"
         },
         {
           "id": "2_3.marzo.s2.grape-bunch",
@@ -306,8 +287,7 @@
             "gl": "Colgar a man coma un acio",
             "es": "Colgar la mano como un racimo"
           },
-          "category": "noun",
-          "lamina": "pal_bunch_of_grapes"
+          "category": "noun"
         },
         {
           "id": "2_3.marzo.s2.fruit-salad",
@@ -318,8 +298,7 @@
             "gl": "Mesturar froita nunha cunca",
             "es": "Mezclar fruta en un cuenco"
           },
-          "category": "noun",
-          "lamina": "pal_fruit_salad"
+          "category": "noun"
         },
         {
           "id": "2_3.marzo.s2.smoothie",
@@ -330,8 +309,7 @@
             "gl": "Soprar pola palla",
             "es": "Soplar por la pajita"
           },
-          "category": "noun",
-          "lamina": "pal_smoothie"
+          "category": "noun"
         },
         {
           "id": "2_3.marzo.s2.fruit-peel",
@@ -342,8 +320,7 @@
             "gl": "Pelar unha froita imaxinaria",
             "es": "Pelar una fruta imaginaria"
           },
-          "category": "noun",
-          "lamina": "pal_fruit_peel"
+          "category": "noun"
         },
         {
           "id": "2_3.marzo.s2.chop",
@@ -354,8 +331,7 @@
             "gl": "Picar coa man plana",
             "es": "Trocear con la mano plana"
           },
-          "category": "verb",
-          "lamina": "pal_chop"
+          "category": "verb"
         },
         {
           "id": "2_3.marzo.s2.blend",
@@ -378,8 +354,7 @@
             "gl": "Facer cortes coa man",
             "es": "Hacer cortes con la mano"
           },
-          "category": "verb",
-          "lamina": "pal_slice"
+          "category": "verb"
         },
         {
           "id": "2_3.marzo.s2.share-the-fruit",
@@ -390,8 +365,7 @@
             "gl": "Dar unha froita a cada un",
             "es": "Dar una fruta a cada uno"
           },
-          "category": "verb",
-          "lamina": "pal_share_the_fruit"
+          "category": "verb"
         },
         {
           "id": "2_3.marzo.s2.sniff-the-fruit",
@@ -402,8 +376,7 @@
             "gl": "Achegar a froita ao nariz",
             "es": "Acercar la fruta a la nariz"
           },
-          "category": "verb",
-          "lamina": "pal_sniff_the_fruit"
+          "category": "verb"
         },
         {
           "id": "2_3.marzo.s2.fruity",
@@ -426,8 +399,7 @@
             "gl": "Beber e dicir «aaah»",
             "es": "Beber y decir «aaah»"
           },
-          "category": "adjective",
-          "lamina": "pal_refreshing"
+          "category": "adjective"
         },
         {
           "id": "2_3.marzo.s2.spiky-pineapple",
@@ -438,8 +410,7 @@
             "gl": "Tocar con coidado as follas",
             "es": "Tocar con cuidado las hojas"
           },
-          "category": "adjective",
-          "lamina": "pal_spiky_pineapple"
+          "category": "adjective"
         },
         {
           "id": "2_3.marzo.s2.ripe-mango",
@@ -450,8 +421,7 @@
             "gl": "Premer suave o mango",
             "es": "Apretar suave el mango"
           },
-          "category": "adjective",
-          "lamina": "pal_ripe_mango"
+          "category": "adjective"
         },
         {
           "id": "2_3.marzo.s2.i-like-mango",
@@ -462,8 +432,7 @@
             "gl": "Tocar a barriga contentos",
             "es": "Tocar la barriga contentos"
           },
-          "category": "phrase",
-          "lamina": "pal_i_like_mango"
+          "category": "phrase"
         },
         {
           "id": "2_3.marzo.s2.can-i-try-some",
@@ -474,8 +443,7 @@
             "gl": "Estender a man",
             "es": "Extender la mano"
           },
-          "category": "phrase",
-          "lamina": "pal_can_i_try_some"
+          "category": "phrase"
         },
         {
           "id": "2_3.marzo.s2.fruit-in-a-bowl",
@@ -486,8 +454,7 @@
             "gl": "Meter froita na cunca",
             "es": "Meter fruta en el cuenco"
           },
-          "category": "complex",
-          "lamina": "pal_fruit_in_a_bowl"
+          "category": "complex"
         },
         {
           "id": "2_3.marzo.s2.a-slice-for-each",
@@ -498,8 +465,7 @@
             "gl": "Repartir rodas",
             "es": "Repartir rodajas"
           },
-          "category": "complex",
-          "lamina": "pal_a_slice_for_each"
+          "category": "complex"
         }
       ]
     },
@@ -519,8 +485,7 @@
             "gl": "Facer un cubo coas mans",
             "es": "Hacer un cubo con las manos"
           },
-          "category": "noun",
-          "lamina": "pal_cube"
+          "category": "noun"
         },
         {
           "id": "2_3.marzo.s3.sphere",
@@ -531,8 +496,7 @@
             "gl": "Rodar unha bóla imaxinaria",
             "es": "Rodar una bola imaginaria"
           },
-          "category": "noun",
-          "lamina": "pal_sphere"
+          "category": "noun"
         },
         {
           "id": "2_3.marzo.s3.pyramid",
@@ -543,8 +507,7 @@
             "gl": "Xuntar as mans en punta",
             "es": "Juntar las manos en punta"
           },
-          "category": "noun",
-          "lamina": "pal_pyramid"
+          "category": "noun"
         },
         {
           "id": "2_3.marzo.s3.cylinder",
@@ -555,8 +518,7 @@
             "gl": "Rodar un tubo pola mesa",
             "es": "Rodar un tubo por la mesa"
           },
-          "category": "noun",
-          "lamina": "pal_cylinder"
+          "category": "noun"
         },
         {
           "id": "2_3.marzo.s3.dice",
@@ -567,8 +529,7 @@
             "gl": "Lanzar un dado grande",
             "es": "Lanzar un dado grande"
           },
-          "category": "noun",
-          "lamina": "pal_dice"
+          "category": "noun"
         },
         {
           "id": "2_3.marzo.s3.tube",
@@ -579,8 +540,7 @@
             "gl": "Mirar a través dun tubo",
             "es": "Mirar a través de un tubo"
           },
-          "category": "noun",
-          "lamina": "pal_tube"
+          "category": "noun"
         },
         {
           "id": "2_3.marzo.s3.building-shape",
@@ -591,8 +551,7 @@
             "gl": "Poñer unha peza enriba doutra",
             "es": "Poner una pieza encima de otra"
           },
-          "category": "noun",
-          "lamina": "pal_wooden_block"
+          "category": "noun"
         },
         {
           "id": "2_3.marzo.s3.throw-the-dice",
@@ -603,8 +562,7 @@
             "gl": "Lanzar o dado e contar",
             "es": "Tirar el dado y contar"
           },
-          "category": "verb",
-          "lamina": "pal_roll_the_dice"
+          "category": "verb"
         },
         {
           "id": "2_3.marzo.s3.look-through",
@@ -615,8 +573,7 @@
             "gl": "Mirar polo tubo",
             "es": "Mirar por el tubo"
           },
-          "category": "verb",
-          "lamina": "pal_look_through"
+          "category": "verb"
         },
         {
           "id": "2_3.marzo.s3.roll-along",
@@ -627,8 +584,7 @@
             "gl": "Rodar o cilindro",
             "es": "Rodar el cilindro"
           },
-          "category": "verb",
-          "lamina": "pal_roll_along"
+          "category": "verb"
         },
         {
           "id": "2_3.marzo.s3.balance-on-top",
@@ -639,8 +595,7 @@
             "gl": "Pousar a pirámide enriba do cubo",
             "es": "Poner la pirámide encima del cubo"
           },
-          "category": "verb",
-          "lamina": "pal_balance_on_top"
+          "category": "verb"
         },
         {
           "id": "2_3.marzo.s3.topple",
@@ -651,8 +606,7 @@
             "gl": "Deixar caer a torre",
             "es": "Dejar caer la torre"
           },
-          "category": "verb",
-          "lamina": "pal_topple"
+          "category": "verb"
         },
         {
           "id": "2_3.marzo.s3.solid",
@@ -687,8 +641,7 @@
             "gl": "Rodar as mans",
             "es": "Rodar las manos"
           },
-          "category": "adjective",
-          "lamina": "pal_easy_to_roll"
+          "category": "adjective"
         },
         {
           "id": "2_3.marzo.s3.stackable",
@@ -699,8 +652,7 @@
             "gl": "Empillar dúas pezas",
             "es": "Apilar dos piezas"
           },
-          "category": "adjective",
-          "lamina": "pal_stackable"
+          "category": "adjective"
         },
         {
           "id": "2_3.marzo.s3.will-it-roll",
@@ -711,8 +663,7 @@
             "gl": "Empurrar e mirar",
             "es": "Empujar y mirar"
           },
-          "category": "phrase",
-          "lamina": "pal_will_it_roll"
+          "category": "phrase"
         },
         {
           "id": "2_3.marzo.s3.look-through-the-tube",
@@ -723,8 +674,7 @@
             "gl": "Mirar polo tubo",
             "es": "Mirar por el tubo"
           },
-          "category": "phrase",
-          "lamina": "pal_look_through_the_tube"
+          "category": "phrase"
         },
         {
           "id": "2_3.marzo.s3.cube-on-the-cylinder",
@@ -735,8 +685,7 @@
             "gl": "Pousar o cubo enriba",
             "es": "Poner el cubo encima"
           },
-          "category": "complex",
-          "lamina": "pal_cube_on_the_cylinder"
+          "category": "complex"
         },
         {
           "id": "2_3.marzo.s3.round-and-flat",
@@ -768,8 +717,7 @@
             "gl": "Abrir a cesta",
             "es": "Abrir la cesta"
           },
-          "category": "noun",
-          "lamina": "pal_picnic_basket"
+          "category": "noun"
         },
         {
           "id": "2_3.marzo.s4.sandwich",
@@ -792,8 +740,7 @@
             "gl": "Facer que se mastiga un pau de cenoria",
             "es": "Hacer como que se mastica un palito de zanahoria"
           },
-          "category": "noun",
-          "lamina": "pal_carrot_stick"
+          "category": "noun"
         },
         {
           "id": "2_3.marzo.s4.cucumber",
@@ -828,8 +775,7 @@
             "gl": "Suxeitar o brik con coidado",
             "es": "Sujetar el brik con cuidado"
           },
-          "category": "noun",
-          "lamina": "pal_juice_box"
+          "category": "noun"
         },
         {
           "id": "2_3.marzo.s4.lunch-mat",
@@ -840,8 +786,7 @@
             "gl": "Estender o mantel",
             "es": "Extender el mantel"
           },
-          "category": "noun",
-          "lamina": "pal_lunch_mat"
+          "category": "noun"
         },
         {
           "id": "2_3.marzo.s4.unpack",
@@ -852,8 +797,7 @@
             "gl": "Sacar as cousas da cesta",
             "es": "Sacar las cosas de la cesta"
           },
-          "category": "verb",
-          "lamina": "pal_unpack"
+          "category": "verb"
         },
         {
           "id": "2_3.marzo.s4.pass-the-plate",
@@ -864,8 +808,7 @@
             "gl": "Pasar o prato ao seguinte",
             "es": "Pasar el plato al siguiente"
           },
-          "category": "verb",
-          "lamina": "pal_pass_the_plate"
+          "category": "verb"
         },
         {
           "id": "2_3.marzo.s4.crunch-a-carrot",
@@ -876,8 +819,7 @@
             "gl": "Facer que se morde e dicir «cranc»",
             "es": "Hacer como que se muerde y decir «crac»"
           },
-          "category": "verb",
-          "lamina": "pal_crunch_a_carrot"
+          "category": "verb"
         },
         {
           "id": "2_3.marzo.s4.wipe-hands",
@@ -888,8 +830,7 @@
             "gl": "Limpar as mans cunha servilleta",
             "es": "Limpiarse las manos con una servilleta"
           },
-          "category": "verb",
-          "lamina": "pal_wipe_hands"
+          "category": "verb"
         },
         {
           "id": "2_3.marzo.s4.say-please",
@@ -900,8 +841,7 @@
             "gl": "Xuntar as mans pedindo",
             "es": "Juntar las manos pidiendo"
           },
-          "category": "verb",
-          "lamina": "pal_say_please"
+          "category": "verb"
         },
         {
           "id": "2_3.marzo.s4.colourful-plate",
@@ -948,8 +888,7 @@
             "gl": "Sinalar o que queda no prato",
             "es": "Señalar lo que queda en el plato"
           },
-          "category": "adjective",
-          "lamina": "pal_leftover"
+          "category": "adjective"
         },
         {
           "id": "2_3.marzo.s4.what-s-in-the-basket",
@@ -960,8 +899,7 @@
             "gl": "Espreitar dentro da cesta",
             "es": "Asomarse dentro de la cesta"
           },
-          "category": "phrase",
-          "lamina": "pal_what_s_in_the_basket"
+          "category": "phrase"
         },
         {
           "id": "2_3.marzo.s4.pass-it-please",
@@ -972,8 +910,7 @@
             "gl": "Estender a man",
             "es": "Extender la mano"
           },
-          "category": "phrase",
-          "lamina": "pal_pass_it_please"
+          "category": "phrase"
         },
         {
           "id": "2_3.marzo.s4.a-red-tomato",
@@ -996,8 +933,7 @@
             "gl": "Amosar un e despois o outro",
             "es": "Enseñar uno y luego el otro"
           },
-          "category": "complex",
-          "lamina": "pal_carrots_and_cucumbers"
+          "category": "complex"
         }
       ]
     }

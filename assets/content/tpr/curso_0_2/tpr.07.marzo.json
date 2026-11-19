@@ -105,8 +105,7 @@
             "gl": "Poñer un vaso enriba doutro",
             "es": "Poner un vaso encima de otro"
           },
-          "category": "verb",
-          "lamina": "pal_stack"
+          "category": "verb"
         },
         {
           "id": "0_2.marzo.s1.knock-over",
@@ -117,8 +116,7 @@
             "gl": "Tirar a torre e rir",
             "es": "Derribar la torre y reír"
           },
-          "category": "verb",
-          "lamina": "pal_knock_over"
+          "category": "verb"
         },
         {
           "id": "0_2.marzo.s1.sort",
@@ -129,8 +127,7 @@
             "gl": "Xuntar os obxectos da mesma cor",
             "es": "Juntar los objetos del mismo color"
           },
-          "category": "verb",
-          "lamina": "pal_sort"
+          "category": "verb"
         },
         {
           "id": "0_2.marzo.s1.match",
@@ -141,8 +138,7 @@
             "gl": "Xuntar dous panos iguais",
             "es": "Juntar dos pañuelos iguales"
           },
-          "category": "verb",
-          "lamina": "pal_match"
+          "category": "verb"
         },
         {
           "id": "0_2.marzo.s1.toss",
@@ -153,8 +149,7 @@
             "gl": "Lanzar un pano ao aire",
             "es": "Lanzar un pañuelo al aire"
           },
-          "category": "verb",
-          "lamina": "pal_toss"
+          "category": "verb"
         },
         {
           "id": "0_2.marzo.s1.bright-red",
@@ -165,8 +160,7 @@
             "gl": "Sinalar algo vermello vivo",
             "es": "Señalar algo rojo vivo"
           },
-          "category": "adjective",
-          "lamina": "pal_bright_red"
+          "category": "adjective"
         },
         {
           "id": "0_2.marzo.s1.sky-blue",
@@ -177,8 +171,7 @@
             "gl": "Sinalar o ceo azul",
             "es": "Señalar el cielo azul"
           },
-          "category": "adjective",
-          "lamina": "pal_sky_blue"
+          "category": "adjective"
         },
         {
           "id": "0_2.marzo.s1.sunny-yellow",
@@ -201,8 +194,7 @@
             "gl": "Mover a cinta de cores",
             "es": "Mover la cinta de colores"
           },
-          "category": "adjective",
-          "lamina": "pal_rainbow_coloured"
+          "category": "adjective"
         },
         {
           "id": "0_2.marzo.s1.red-red-red",
@@ -213,8 +205,7 @@
             "gl": "Tocar tres cousas vermellas",
             "es": "Tocar tres cosas rojas"
           },
-          "category": "phrase",
-          "lamina": "pal_red_red_red"
+          "category": "phrase"
         },
         {
           "id": "0_2.marzo.s1.which-one-is-blue",
@@ -225,8 +216,7 @@
             "gl": "Amosar dous obxectos e agardar",
             "es": "Enseñar dos objetos y esperar"
           },
-          "category": "phrase",
-          "lamina": "pal_which_one_is_blue"
+          "category": "phrase"
         },
         {
           "id": "0_2.marzo.s1.up-it-goes",
@@ -237,8 +227,7 @@
             "gl": "Lanzar o pano arriba",
             "es": "Lanzar el pañuelo arriba"
           },
-          "category": "phrase",
-          "lamina": "pal_up_it_goes"
+          "category": "phrase"
         },
         {
           "id": "0_2.marzo.s1.blue-and-yellow",
@@ -249,8 +238,7 @@
             "gl": "Amosar un obxecto azul e outro amarelo",
             "es": "Enseñar un objeto azul y otro amarillo"
           },
-          "category": "complex",
-          "lamina": "pal_blue_and_yellow"
+          "category": "complex"
         }
       ]
     },
@@ -330,8 +318,7 @@
             "gl": "Amosar unha pasa na palma da man",
             "es": "Mostrar una pasa en la palma de la mano"
           },
-          "category": "noun",
-          "lamina": "pal_raisin"
+          "category": "noun"
         },
         {
           "id": "0_2.marzo.s2.baby-spoon",
@@ -342,8 +329,7 @@
             "gl": "Achegar a culleriña á boca",
             "es": "Acercar la cucharita a la boca"
           },
-          "category": "noun",
-          "lamina": "pal_baby_spoon"
+          "category": "noun"
         },
         {
           "id": "0_2.marzo.s2.open-wide",
@@ -354,8 +340,7 @@
             "gl": "Abrir moito a boca co bebé",
             "es": "Abrir mucho la boca con el bebé"
           },
-          "category": "verb",
-          "lamina": "pal_open_wide"
+          "category": "verb"
         },
         {
           "id": "0_2.marzo.s2.feed-yourself",
@@ -366,8 +351,7 @@
             "gl": "Deixar que colla a culler",
             "es": "Dejar que coja la cuchara"
           },
-          "category": "verb",
-          "lamina": "pal_feed_yourself"
+          "category": "verb"
         },
         {
           "id": "0_2.marzo.s2.scoop",
@@ -378,8 +362,7 @@
             "gl": "Coller iogur coa culler",
             "es": "Coger yogur con la cuchara"
           },
-          "category": "verb",
-          "lamina": "pal_scoop"
+          "category": "verb"
         },
         {
           "id": "0_2.marzo.s2.smack-lips",
@@ -390,8 +373,7 @@
             "gl": "Estalar os beizos contentos",
             "es": "Relamerse contentos"
           },
-          "category": "verb",
-          "lamina": "pal_smack_lips"
+          "category": "verb"
         },
         {
           "id": "0_2.marzo.s2.mash",
@@ -402,8 +384,7 @@
             "gl": "Esmagar froita co garfo",
             "es": "Chafar fruta con el tenedor"
           },
-          "category": "verb",
-          "lamina": "pal_mash"
+          "category": "verb"
         },
         {
           "id": "0_2.marzo.s2.sugary",
@@ -414,8 +395,7 @@
             "gl": "Tocar os beizos cun dedo",
             "es": "Tocar los labios con un dedo"
           },
-          "category": "adjective",
-          "lamina": "pal_sugary"
+          "category": "adjective"
         },
         {
           "id": "0_2.marzo.s2.soft-and-sweet",
@@ -426,8 +406,7 @@
             "gl": "Esmagar un anaco de pera",
             "es": "Chafar un trozo de pera"
           },
-          "category": "adjective",
-          "lamina": "pal_soft_and_sweet"
+          "category": "adjective"
         },
         {
           "id": "0_2.marzo.s2.sticky-fingers",
@@ -438,8 +417,7 @@
             "gl": "Abrir e pechar os dedos pegañentos",
             "es": "Abrir y cerrar los dedos pegajosos"
           },
-          "category": "adjective",
-          "lamina": "pal_sticky_fingers"
+          "category": "adjective"
         },
         {
           "id": "0_2.marzo.s2.scrumptious",
@@ -450,8 +428,7 @@
             "gl": "Tocar a barriga e sorrir",
             "es": "Tocar la barriga y sonreír"
           },
-          "category": "adjective",
-          "lamina": "pal_scrumptious"
+          "category": "adjective"
         },
         {
           "id": "0_2.marzo.s2.yum-yum",
@@ -462,8 +439,7 @@
             "gl": "Facer «ñam ñam» abrindo a boca",
             "es": "Hacer «ñam ñam» abriendo la boca"
           },
-          "category": "phrase",
-          "lamina": "pal_yum_yum"
+          "category": "phrase"
         },
         {
           "id": "0_2.marzo.s2.here-comes-the-aeroplane",
@@ -474,8 +450,7 @@
             "gl": "Achegar a culler voando",
             "es": "Acercar la cuchara volando"
           },
-          "category": "phrase",
-          "lamina": "pal_here_comes_the_aeroplane"
+          "category": "phrase"
         },
         {
           "id": "0_2.marzo.s2.a-spoon-for-you",
@@ -486,8 +461,7 @@
             "gl": "Dar a culler ao bebé",
             "es": "Dar la cuchara al bebé"
           },
-          "category": "complex",
-          "lamina": "pal_a_spoon_for_you"
+          "category": "complex"
         },
         {
           "id": "0_2.marzo.s2.one-more-bite",
@@ -498,8 +472,7 @@
             "gl": "Amosar un dedo e dar outro bocado",
             "es": "Enseñar un dedo y dar otro bocado"
           },
-          "category": "complex",
-          "lamina": "pal_one_more_bite"
+          "category": "complex"
         }
       ]
     },
@@ -531,8 +504,7 @@
             "gl": "Apertar a pelota con pinchos suaves",
             "es": "Apretar la pelota con pinchos suaves"
           },
-          "category": "noun",
-          "lamina": "pal_sensory_ball"
+          "category": "noun"
         },
         {
           "id": "0_2.marzo.s3.ball-pit",
@@ -543,8 +515,7 @@
             "gl": "Meter as mans nas bólas",
             "es": "Meter las manos en las bolas"
           },
-          "category": "noun",
-          "lamina": "pal_ball_pit"
+          "category": "noun"
         },
         {
           "id": "0_2.marzo.s3.ramp",
@@ -555,8 +526,7 @@
             "gl": "Deixar baixar a pelota pola rampla",
             "es": "Dejar bajar la pelota por la rampa"
           },
-          "category": "noun",
-          "lamina": "pal_ramp"
+          "category": "noun"
         },
         {
           "id": "0_2.marzo.s3.rolling-pin",
@@ -567,8 +537,7 @@
             "gl": "Rodar o rolo pola mesa",
             "es": "Rodar el rodillo por la mesa"
           },
-          "category": "noun",
-          "lamina": "pal_rolling_pin"
+          "category": "noun"
         },
         {
           "id": "0_2.marzo.s3.wheels",
@@ -579,8 +548,7 @@
             "gl": "Xirar as rodas dun coche de xoguete",
             "es": "Girar las ruedas de un coche de juguete"
           },
-          "category": "noun",
-          "lamina": "pal_wheels"
+          "category": "noun"
         },
         {
           "id": "0_2.marzo.s3.marble-run",
@@ -591,8 +559,7 @@
             "gl": "Seguir a bóla co dedo",
             "es": "Seguir la bola con el dedo"
           },
-          "category": "noun",
-          "lamina": "pal_ball_run"
+          "category": "noun"
         },
         {
           "id": "0_2.marzo.s3.roll-back",
@@ -603,8 +570,7 @@
             "gl": "Rodar a pelota de volta ao bebé",
             "es": "Rodar la pelota de vuelta al bebé"
           },
-          "category": "verb",
-          "lamina": "pal_roll_back"
+          "category": "verb"
         },
         {
           "id": "0_2.marzo.s3.chase-after",
@@ -615,8 +581,7 @@
             "gl": "Gatear detrás da pelota",
             "es": "Gatear detrás de la pelota"
           },
-          "category": "verb",
-          "lamina": "pal_chase_after"
+          "category": "verb"
         },
         {
           "id": "0_2.marzo.s3.sit-up",
@@ -627,8 +592,7 @@
             "gl": "Axudar ao bebé a sentarse",
             "es": "Ayudar al bebé a sentarse"
           },
-          "category": "verb",
-          "lamina": "pal_sit_up"
+          "category": "verb"
         },
         {
           "id": "0_2.marzo.s3.pat-the-ball",
@@ -639,8 +603,7 @@
             "gl": "Palmear a pelota coa man aberta",
             "es": "Palmear la pelota con la mano abierta"
           },
-          "category": "verb",
-          "lamina": "pal_pat_the_ball"
+          "category": "verb"
         },
         {
           "id": "0_2.marzo.s3.nudge",
@@ -651,8 +614,7 @@
             "gl": "Empurrar a pelota cun dedo",
             "es": "Empujar la pelota con un dedo"
           },
-          "category": "verb",
-          "lamina": "pal_nudge"
+          "category": "verb"
         },
         {
           "id": "0_2.marzo.s3.rolling",
@@ -663,8 +625,7 @@
             "gl": "Rodar as mans unha sobre outra",
             "es": "Rodar las manos una sobre otra"
           },
-          "category": "adjective",
-          "lamina": "pal_rolling"
+          "category": "adjective"
         },
         {
           "id": "0_2.marzo.s3.squeezy",
@@ -675,8 +636,7 @@
             "gl": "Apertar a pelota branda",
             "es": "Apretar la pelota blanda"
           },
-          "category": "adjective",
-          "lamina": "pal_squeezy"
+          "category": "adjective"
         },
         {
           "id": "0_2.marzo.s3.spinny",
@@ -687,8 +647,7 @@
             "gl": "Facer xirar unha pelota",
             "es": "Hacer girar una pelota"
           },
-          "category": "adjective",
-          "lamina": "pal_spinning"
+          "category": "adjective"
         },
         {
           "id": "0_2.marzo.s3.lightweight",
@@ -699,8 +658,7 @@
             "gl": "Levantar a pelota cun dedo",
             "es": "Levantar la pelota con un dedo"
           },
-          "category": "adjective",
-          "lamina": "pal_lightweight"
+          "category": "adjective"
         },
         {
           "id": "0_2.marzo.s3.roll-it-to-me",
@@ -723,8 +681,7 @@
             "gl": "Rodar a pelota cara ao bebé",
             "es": "Rodar la pelota hacia el bebé"
           },
-          "category": "phrase",
-          "lamina": "pal_here_it_comes"
+          "category": "phrase"
         },
         {
           "id": "0_2.marzo.s3.ball-to-baby",
@@ -735,8 +692,7 @@
             "gl": "Rodar a pelota ata o bebé",
             "es": "Rodar la pelota hasta el bebé"
           },
-          "category": "complex",
-          "lamina": "pal_ball_to_baby"
+          "category": "complex"
         },
         {
           "id": "0_2.marzo.s3.down-the-ramp",
@@ -747,8 +703,7 @@
             "gl": "Soltar a pelota arriba da rampla",
             "es": "Soltar la pelota arriba de la rampa"
           },
-          "category": "complex",
-          "lamina": "pal_down_the_ramp"
+          "category": "complex"
         }
       ]
     },
@@ -816,8 +771,7 @@
             "gl": "Amosar a ameixa morada",
             "es": "Enseñar la ciruela morada"
           },
-          "category": "noun",
-          "lamina": "pal_plum"
+          "category": "noun"
         },
         {
           "id": "0_2.marzo.s4.melon",
@@ -840,8 +794,7 @@
             "gl": "Sacar froitas do froiteiro",
             "es": "Sacar frutas del frutero"
           },
-          "category": "noun",
-          "lamina": "pal_fruit_bowl"
+          "category": "noun"
         },
         {
           "id": "0_2.marzo.s4.hold-it",
@@ -852,8 +805,7 @@
             "gl": "Poñer a froita na man do bebé",
             "es": "Poner la fruta en la mano del bebé"
           },
-          "category": "verb",
-          "lamina": "pal_hold_it"
+          "category": "verb"
         },
         {
           "id": "0_2.marzo.s4.smell-it",
@@ -864,8 +816,7 @@
             "gl": "Achegar a froita ao nariz",
             "es": "Acercar la fruta a la nariz"
           },
-          "category": "verb",
-          "lamina": "pal_smell_it"
+          "category": "verb"
         },
         {
           "id": "0_2.marzo.s4.suck",
@@ -876,8 +827,7 @@
             "gl": "Chupar un anaco de laranxa",
             "es": "Chupar un trozo de naranja"
           },
-          "category": "verb",
-          "lamina": "pal_suck"
+          "category": "verb"
         },
         {
           "id": "0_2.marzo.s4.slurp-up",
@@ -888,8 +838,7 @@
             "gl": "Sorber zume cunha palla",
             "es": "Sorber zumo con una pajita"
           },
-          "category": "verb",
-          "lamina": "pal_slurp_up"
+          "category": "verb"
         },
         {
           "id": "0_2.marzo.s4.try-it",
@@ -900,8 +849,7 @@
             "gl": "Achegar un anaquiño á boca",
             "es": "Acercar un trocito a la boca"
           },
-          "category": "verb",
-          "lamina": "pal_try_it"
+          "category": "verb"
         },
         {
           "id": "0_2.marzo.s4.tangy",
@@ -912,8 +860,7 @@
             "gl": "Facer unha careta de acedo",
             "es": "Poner cara de ácido"
           },
-          "category": "adjective",
-          "lamina": "pal_tangy"
+          "category": "adjective"
         },
         {
           "id": "0_2.marzo.s4.mushy-peach",
@@ -924,8 +871,7 @@
             "gl": "Esmagar un pexego maduro",
             "es": "Chafar un melocotón maduro"
           },
-          "category": "adjective",
-          "lamina": "pal_mushy_peach"
+          "category": "adjective"
         },
         {
           "id": "0_2.marzo.s4.pippy",
@@ -936,8 +882,7 @@
             "gl": "Sinalar as pebidas da sandía",
             "es": "Señalar las pepitas de la sandía"
           },
-          "category": "adjective",
-          "lamina": "pal_full_of_pips"
+          "category": "adjective"
         },
         {
           "id": "0_2.marzo.s4.cold-and-fresh",
@@ -948,8 +893,7 @@
             "gl": "Tocar unha froita da neveira",
             "es": "Tocar una fruta de la nevera"
           },
-          "category": "adjective",
-          "lamina": "pal_cold_and_fresh"
+          "category": "adjective"
         },
         {
           "id": "0_2.marzo.s4.what-a-colour",
@@ -960,8 +904,7 @@
             "gl": "Amosar a froita á luz",
             "es": "Enseñar la fruta a la luz"
           },
-          "category": "phrase",
-          "lamina": "pal_what_a_colour"
+          "category": "phrase"
         },
         {
           "id": "0_2.marzo.s4.mmm-orange",
@@ -972,8 +915,7 @@
             "gl": "Cheirar a laranxa e sorrir",
             "es": "Oler la naranja y sonreír"
           },
-          "category": "phrase",
-          "lamina": "pal_mmm_orange"
+          "category": "phrase"
         },
         {
           "id": "0_2.marzo.s4.juice-in-a-cup",
@@ -984,8 +926,7 @@
             "gl": "Verter zume no vaso",
             "es": "Verter zumo en el vaso"
           },
-          "category": "complex",
-          "lamina": "pal_juice_in_a_cup"
+          "category": "complex"
         },
         {
           "id": "0_2.marzo.s4.piece-by-piece",
@@ -996,8 +937,7 @@
             "gl": "Dar a froita anaco a anaco",
             "es": "Dar la fruta trozo a trozo"
           },
-          "category": "complex",
-          "lamina": "pal_piece_by_piece"
+          "category": "complex"
         }
       ]
     }

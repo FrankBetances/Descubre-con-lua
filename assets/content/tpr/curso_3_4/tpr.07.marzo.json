@@ -45,8 +45,7 @@
           "tprAction": {
             "gl": "Sinalar tres cousas de cores diferentes",
             "es": "Señalar tres cosas de colores diferentes"
-          },
-          "lamina": "pal_colour"
+          }
         },
         {
           "id": "3_4.marzo.s1.picture",
@@ -57,8 +56,7 @@
           "tprAction": {
             "gl": "Facer un marco coas mans e mirar a través",
             "es": "Hacer un marco con las manos y mirar a través"
-          },
-          "lamina": "pal_picture"
+          }
         },
         {
           "id": "3_4.marzo.s1.pencil",
@@ -81,8 +79,7 @@
           "tprAction": {
             "gl": "Estender pegamento imaxinario cun dedo",
             "es": "Extender pegamento imaginario con un dedo"
-          },
-          "lamina": "pal_glue"
+          }
         },
         {
           "id": "3_4.marzo.s1.sticker",
@@ -93,8 +90,7 @@
           "tprAction": {
             "gl": "Pegar un adhesivo imaxinario no dorso da man",
             "es": "Pegar una pegatina imaginaria en el dorso de la mano"
-          },
-          "lamina": "pal_sticker"
+          }
         },
         {
           "id": "3_4.marzo.s1.paint",
@@ -117,8 +113,7 @@
           "tprAction": {
             "gl": "Mesturar pinturas imaxinarias movendo a man en círculos",
             "es": "Mezclar pinturas imaginarias moviendo la mano en círculos"
-          },
-          "lamina": "pal_mix"
+          }
         },
         {
           "id": "3_4.marzo.s1.stick",
@@ -129,8 +124,7 @@
           "tprAction": {
             "gl": "Pegar un papel imaxinario na parede dándolle palmadiñas",
             "es": "Pegar un papel imaginario en la pared dándole palmaditas"
-          },
-          "lamina": "pal_stick"
+          }
         },
         {
           "id": "3_4.marzo.s1.choose",
@@ -141,8 +135,7 @@
           "tprAction": {
             "gl": "Dubidar entre dúas mans e escoller unha",
             "es": "Dudar entre dos manos y elegir una"
-          },
-          "lamina": "pal_choose"
+          }
         },
         {
           "id": "3_4.marzo.s1.show",
@@ -153,8 +146,7 @@
           "tprAction": {
             "gl": "Amosar un debuxo imaxinario ao grupo",
             "es": "Enseñar un dibujo imaginario al grupo"
-          },
-          "lamina": "pal_show"
+          }
         },
         {
           "id": "3_4.marzo.s1.red",
@@ -177,8 +169,7 @@
           "tprAction": {
             "gl": "Sinalar algo amarelo na aula",
             "es": "Señalar algo amarillo en el aula"
-          },
-          "lamina": "pal_yellow"
+          }
         },
         {
           "id": "3_4.marzo.s1.purple",
@@ -189,8 +180,7 @@
           "tprAction": {
             "gl": "Sinalar algo morado na aula",
             "es": "Señalar algo morado en el aula"
-          },
-          "lamina": "pal_purple"
+          }
         },
         {
           "id": "3_4.marzo.s1.black",
@@ -201,8 +191,7 @@
           "tprAction": {
             "gl": "Sinalar algo negro na aula",
             "es": "Señalar algo negro en el aula"
-          },
-          "lamina": "pal_black"
+          }
         },
         {
           "id": "3_4.marzo.s1.what-colour-is-it",
@@ -213,8 +202,7 @@
           "tprAction": {
             "gl": "Encoller os ombros e sinalar un obxecto",
             "es": "Encoger los hombros y señalar un objeto"
-          },
-          "lamina": "pal_what_colour_is_it"
+          }
         },
         {
           "id": "3_4.marzo.s1.find-something-red",
@@ -225,8 +213,7 @@
           "tprAction": {
             "gl": "Buscar pola aula e tocar algo vermello",
             "es": "Buscar por el aula y tocar algo rojo"
-          },
-          "lamina": "pal_find_something_red"
+          }
         },
         {
           "id": "3_4.marzo.s1.red-and-yellow",
@@ -237,8 +224,7 @@
           "tprAction": {
             "gl": "Tocar algo vermello e logo algo amarelo",
             "es": "Tocar algo rojo y luego algo amarillo"
-          },
-          "lamina": "pal_red_and_yellow"
+          }
         },
         {
           "id": "3_4.marzo.s1.colour-by-colour",
@@ -249,8 +235,7 @@
           "tprAction": {
             "gl": "Tocar cousas da aula dunha cor cada vez",
             "es": "Tocar cosas del aula de un color cada vez"
-          },
-          "lamina": "pal_colour_by_colour"
+          }
         }
       ]
     },
@@ -282,8 +267,7 @@
           "tprAction": {
             "gl": "Debuxar catro lados iguais no aire",
             "es": "Dibujar cuatro lados iguales en el aire"
-          },
-          "lamina": "pal_square"
+          }
         },
         {
           "id": "3_4.marzo.s2.triangle",
@@ -294,8 +278,7 @@
           "tprAction": {
             "gl": "Xuntar os polgares e os índices en forma de triángulo",
             "es": "Juntar pulgares e índices en forma de triángulo"
-          },
-          "lamina": "pal_triangle"
+          }
         },
         {
           "id": "3_4.marzo.s2.line",
@@ -306,8 +289,7 @@
           "tprAction": {
             "gl": "Poñerse en liña, unha criatura detrás doutra",
             "es": "Ponerse en línea, una criatura detrás de otra"
-          },
-          "lamina": "pal_line"
+          }
         },
         {
           "id": "3_4.marzo.s2.hoop",
@@ -342,8 +324,7 @@
           "tprAction": {
             "gl": "Tocar un punto no aire cun dedo",
             "es": "Tocar un punto en el aire con un dedo"
-          },
-          "lamina": "pal_dot"
+          }
         },
         {
           "id": "3_4.marzo.s2.roll",
@@ -366,8 +347,7 @@
           "tprAction": {
             "gl": "Seguir cun dedo o bordo dunha forma",
             "es": "Seguir con un dedo el borde de una forma"
-          },
-          "lamina": "pal_trace"
+          }
         },
         {
           "id": "3_4.marzo.s2.bounce",
@@ -378,8 +358,7 @@
           "tprAction": {
             "gl": "Botar unha pelota imaxinaria coa man",
             "es": "Botar una pelota imaginaria con la mano"
-          },
-          "lamina": "pal_bounce"
+          }
         },
         {
           "id": "3_4.marzo.s2.fold",
@@ -390,8 +369,7 @@
           "tprAction": {
             "gl": "Pregar un papel imaxinario pola metade",
             "es": "Doblar un papel imaginario por la mitad"
-          },
-          "lamina": "pal_fold"
+          }
         },
         {
           "id": "3_4.marzo.s2.spin",
@@ -402,8 +380,7 @@
           "tprAction": {
             "gl": "Facer xirar un aro imaxinario na cintura",
             "es": "Hacer girar un aro imaginario en la cintura"
-          },
-          "lamina": "pal_spin"
+          }
         },
         {
           "id": "3_4.marzo.s2.round",
@@ -426,8 +403,7 @@
           "tprAction": {
             "gl": "Poñerse moi dereitos cos brazos pegados ao corpo",
             "es": "Ponerse muy rectos con los brazos pegados al cuerpo"
-          },
-          "lamina": "pal_straight"
+          }
         },
         {
           "id": "3_4.marzo.s2.pointy",
@@ -450,8 +426,7 @@
           "tprAction": {
             "gl": "Tombar no chan moi estirados",
             "es": "Tumbarse en el suelo muy estirados"
-          },
-          "lamina": "pal_flat"
+          }
         },
         {
           "id": "3_4.marzo.s2.roll-the-circle",
@@ -462,8 +437,7 @@
           "tprAction": {
             "gl": "Facer rodar un aro imaxinario polo chan",
             "es": "Hacer rodar un aro imaginario por el suelo"
-          },
-          "lamina": "pal_roll_the_hoop"
+          }
         },
         {
           "id": "3_4.marzo.s2.make-a-circle",
@@ -474,8 +448,7 @@
           "tprAction": {
             "gl": "Dar as mans e formar un círculo entre todos",
             "es": "Darse las manos y formar un círculo entre todos"
-          },
-          "lamina": "pal_make_a_circle"
+          }
         },
         {
           "id": "3_4.marzo.s2.inside-the-hoop",
@@ -486,8 +459,7 @@
           "tprAction": {
             "gl": "Meterse dentro dun aro imaxinario no chan",
             "es": "Meterse dentro de un aro imaginario en el suelo"
-          },
-          "lamina": "pal_inside_the_hoop"
+          }
         },
         {
           "id": "3_4.marzo.s2.around-the-square",
@@ -498,8 +470,7 @@
           "tprAction": {
             "gl": "Camiñar arredor dun cadrado imaxinario",
             "es": "Caminar alrededor de un cuadrado imaginario"
-          },
-          "lamina": "pal_around_the_square"
+          }
         }
       ]
     },
@@ -615,8 +586,7 @@
           "tprAction": {
             "gl": "Apertar unha laranxa imaxinaria coas dúas mans",
             "es": "Apretar una naranja imaginaria con las dos manos"
-          },
-          "lamina": "pal_squeeze"
+          }
         },
         {
           "id": "3_4.marzo.s3.pick",
@@ -627,8 +597,7 @@
           "tprAction": {
             "gl": "Estirarse para coller froita dunha árbore",
             "es": "Estirarse para coger fruta de un árbol"
-          },
-          "lamina": "pal_pick"
+          }
         },
         {
           "id": "3_4.marzo.s3.chew",
@@ -639,8 +608,7 @@
           "tprAction": {
             "gl": "Mastigar amodo coa boca pechada",
             "es": "Masticar despacio con la boca cerrada"
-          },
-          "lamina": "pal_chew"
+          }
         },
         {
           "id": "3_4.marzo.s3.lick",
@@ -651,8 +619,7 @@
           "tprAction": {
             "gl": "Lamber unha piruleta imaxinaria",
             "es": "Lamer una piruleta imaginaria"
-          },
-          "lamina": "pal_lick"
+          }
         },
         {
           "id": "3_4.marzo.s3.sweet",
@@ -663,8 +630,7 @@
           "tprAction": {
             "gl": "Sorrir e pasar a lingua polos beizos",
             "es": "Sonreír y pasar la lengua por los labios"
-          },
-          "lamina": "pal_sweet"
+          }
         },
         {
           "id": "3_4.marzo.s3.bitter",
@@ -675,8 +641,7 @@
           "tprAction": {
             "gl": "Poñer cara de sorpresa e engurrar o nariz",
             "es": "Poner cara de sorpresa y arrugar la nariz"
-          },
-          "lamina": "pal_bitter"
+          }
         },
         {
           "id": "3_4.marzo.s3.smooth",
@@ -699,8 +664,7 @@
           "tprAction": {
             "gl": "Asentir coa cabeza mentres se mastiga",
             "es": "Asentir con la cabeza mientras se mastica"
-          },
-          "lamina": "pal_tasty"
+          }
         },
         {
           "id": "3_4.marzo.s3.i-like-apples",
@@ -711,8 +675,7 @@
           "tprAction": {
             "gl": "Abrazar unha mazá imaxinaria e sorrir",
             "es": "Abrazar una manzana imaginaria y sonreír"
-          },
-          "lamina": "pal_i_like_apples"
+          }
         },
         {
           "id": "3_4.marzo.s3.yes-please",
@@ -747,8 +710,7 @@
           "tprAction": {
             "gl": "Coller unha froita con cada man",
             "es": "Coger una fruta con cada mano"
-          },
-          "lamina": "pal_apples_and_pears"
+          }
         }
       ]
     },
@@ -780,8 +742,7 @@
           "tprAction": {
             "gl": "Axitar dúas maracas imaxinarias ao pulso",
             "es": "Agitar dos maracas imaginarias al pulso"
-          },
-          "lamina": "pal_maraca"
+          }
         },
         {
           "id": "3_4.marzo.s4.guitar",
@@ -804,8 +765,7 @@
           "tprAction": {
             "gl": "Tocar teclas imaxinarias cos dedos no chan",
             "es": "Tocar teclas imaginarias con los dedos en el suelo"
-          },
-          "lamina": "pal_piano"
+          }
         },
         {
           "id": "3_4.marzo.s4.bottle",
@@ -816,8 +776,7 @@
           "tprAction": {
             "gl": "Suxeitar unha botella imaxinaria coas dúas mans",
             "es": "Sujetar una botella imaginaria con las dos manos"
-          },
-          "lamina": "pal_bottle"
+          }
         },
         {
           "id": "3_4.marzo.s4.bagpipes",
@@ -828,8 +787,7 @@
           "tprAction": {
             "gl": "Apertar un fol imaxinario baixo o brazo e soprar",
             "es": "Apretar el fuelle de una gaita imaginaria bajo el brazo"
-          },
-          "lamina": "pal_bagpipes"
+          }
         },
         {
           "id": "3_4.marzo.s4.rattle",
@@ -840,8 +798,7 @@
           "tprAction": {
             "gl": "Axitar un axóuxere imaxinario xunto á orella",
             "es": "Agitar un sonajero imaginario junto a la oreja"
-          },
-          "lamina": "pal_rattle"
+          }
         },
         {
           "id": "3_4.marzo.s4.shake",
@@ -864,8 +821,7 @@
           "tprAction": {
             "gl": "Bater nas pernas coas palmas: pum, pum",
             "es": "Golpear las piernas con las palmas: pum, pum"
-          },
-          "lamina": "pal_bang"
+          }
         },
         {
           "id": "3_4.marzo.s4.strum",
@@ -876,8 +832,7 @@
           "tprAction": {
             "gl": "Pasar os dedos polas cordas dunha guitarra imaxinaria",
             "es": "Pasar los dedos por las cuerdas de una guitarra imaginaria"
-          },
-          "lamina": "pal_strum"
+          }
         },
         {
           "id": "3_4.marzo.s4.whistle",
@@ -888,8 +843,7 @@
           "tprAction": {
             "gl": "Poñer os beizos en forma de «o» e soprar suave",
             "es": "Poner los labios en forma de «o» y soplar suave"
-          },
-          "lamina": "pal_whistle"
+          }
         },
         {
           "id": "3_4.marzo.s4.hum",
@@ -900,8 +854,7 @@
           "tprAction": {
             "gl": "Trautear cos beizos pechados: mmm",
             "es": "Tararear con los labios cerrados: mmm"
-          },
-          "lamina": "pal_hum"
+          }
         },
         {
           "id": "3_4.marzo.s4.high",
@@ -936,8 +889,7 @@
           "tprAction": {
             "gl": "Mover o corpo coma se fose un instrumento",
             "es": "Mover el cuerpo como si fuera un instrumento"
-          },
-          "lamina": "pal_musical"
+          }
         },
         {
           "id": "3_4.marzo.s4.shaky",
@@ -948,8 +900,7 @@
           "tprAction": {
             "gl": "Tremer as mans coma follas ao vento",
             "es": "Temblar las manos como hojas al viento"
-          },
-          "lamina": "pal_shaky"
+          }
         },
         {
           "id": "3_4.marzo.s4.shake-the-bottle",
@@ -960,8 +911,7 @@
           "tprAction": {
             "gl": "Axitar unha botella imaxinaria con arroz",
             "es": "Agitar una botella imaginaria con arroz"
-          },
-          "lamina": "pal_shake_the_bottle"
+          }
         },
         {
           "id": "3_4.marzo.s4.let-s-sing",
@@ -972,8 +922,7 @@
           "tprAction": {
             "gl": "Abrir os brazos e comezar unha canción",
             "es": "Abrir los brazos y empezar una canción"
-          },
-          "lamina": "pal_let_s_sing"
+          }
         },
         {
           "id": "3_4.marzo.s4.loud-then-quiet",
@@ -984,8 +933,7 @@
           "tprAction": {
             "gl": "Bater forte nas pernas e logo moi suave",
             "es": "Golpear fuerte las piernas y luego muy suave"
-          },
-          "lamina": "pal_loud_then_quiet"
+          }
         },
         {
           "id": "3_4.marzo.s4.with-the-drum",
@@ -996,8 +944,7 @@
           "tprAction": {
             "gl": "Camiñar ao pulso dun tambor imaxinario",
             "es": "Caminar al pulso de un tambor imaginario"
-          },
-          "lamina": "pal_with_the_drum"
+          }
         }
       ]
     }

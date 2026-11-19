@@ -21,8 +21,7 @@
             "gl": "Suxeitar un cubo de xeo imaxinario",
             "es": "Sostener un cubito de hielo imaginario"
           },
-          "category": "noun",
-          "lamina": "pal_ice_cube"
+          "category": "noun"
         },
         {
           "id": "4_5.decembro.s1.freezer",
@@ -33,8 +32,7 @@
             "gl": "Abrir unha porta fría",
             "es": "Abrir una puerta fría"
           },
-          "category": "noun",
-          "lamina": "pal_freezer"
+          "category": "noun"
         },
         {
           "id": "4_5.decembro.s1.icicle",
@@ -45,8 +43,7 @@
             "gl": "Baixar un dedo coma un carambelo",
             "es": "Bajar un dedo como un carámbano"
           },
-          "category": "noun",
-          "lamina": "pal_icicle"
+          "category": "noun"
         },
         {
           "id": "4_5.decembro.s1.thermometer",
@@ -69,8 +66,7 @@
             "gl": "Pisar amodo coma sobre xeo",
             "es": "Pisar despacio como sobre hielo"
           },
-          "category": "noun",
-          "lamina": "pal_puddle_ice"
+          "category": "noun"
         },
         {
           "id": "4_5.decembro.s1.melted-water",
@@ -81,8 +77,7 @@
             "gl": "Abrir as mans coma auga que escorre",
             "es": "Abrir las manos como agua que escurre"
           },
-          "category": "noun",
-          "lamina": "pal_melted_water"
+          "category": "noun"
         },
         {
           "id": "4_5.decembro.s1.experiment",
@@ -93,8 +88,7 @@
             "gl": "Mirar con atención coa lupa",
             "es": "Mirar con atención con la lupa"
           },
-          "category": "noun",
-          "lamina": "pal_experiment"
+          "category": "noun"
         },
         {
           "id": "4_5.decembro.s1.hold-ice",
@@ -105,8 +99,7 @@
             "gl": "Tremer suxeitando algo frío",
             "es": "Temblar sosteniendo algo frío"
           },
-          "category": "verb",
-          "lamina": "pal_hold_ice"
+          "category": "verb"
         },
         {
           "id": "4_5.decembro.s1.freeze-water",
@@ -117,8 +110,7 @@
             "gl": "Poñer o corpo ríxido",
             "es": "Poner el cuerpo rígido"
           },
-          "category": "verb",
-          "lamina": "pal_freeze_water"
+          "category": "verb"
         },
         {
           "id": "4_5.decembro.s1.warm-with-breath",
@@ -129,8 +121,7 @@
             "gl": "Soprar nas mans",
             "es": "Soplar en las manos"
           },
-          "category": "verb",
-          "lamina": "pal_warm_with_breath"
+          "category": "verb"
         },
         {
           "id": "4_5.decembro.s1.predict",
@@ -141,8 +132,7 @@
             "gl": "Tocar a cabeza pensando",
             "es": "Tocar la cabeza pensando"
           },
-          "category": "verb",
-          "lamina": "pal_predict"
+          "category": "verb"
         },
         {
           "id": "4_5.decembro.s1.observe",
@@ -153,8 +143,7 @@
             "gl": "Mirar sen tocar",
             "es": "Mirar sin tocar"
           },
-          "category": "verb",
-          "lamina": "pal_observe"
+          "category": "verb"
         },
         {
           "id": "4_5.decembro.s1.colder",
@@ -177,8 +166,7 @@
             "gl": "Fregar as mans",
             "es": "Frotar las manos"
           },
-          "category": "adjective",
-          "lamina": "pal_warmer"
+          "category": "adjective"
         },
         {
           "id": "4_5.decembro.s1.frozen-solid",
@@ -201,8 +189,7 @@
             "gl": "Deixarse caer amodo",
             "es": "Dejarse caer despacio"
           },
-          "category": "adjective",
-          "lamina": "pal_melty"
+          "category": "adjective"
         },
         {
           "id": "4_5.decembro.s1.what-will-happen-if-it-gets-warm",
@@ -213,8 +200,7 @@
             "gl": "Encoller os ombros",
             "es": "Encoger los hombros"
           },
-          "category": "complex",
-          "lamina": "pal_what_will_happen_if_it_gets_warm"
+          "category": "complex"
         },
         {
           "id": "4_5.decembro.s1.it-melts-because-it-s-warm",
@@ -225,8 +211,7 @@
             "gl": "Baixar o corpo amodo",
             "es": "Bajar el cuerpo despacio"
           },
-          "category": "complex",
-          "lamina": "pal_it_melts_because_it_s_warm"
+          "category": "complex"
         },
         {
           "id": "4_5.decembro.s1.is-ice-hot-or-cold",
@@ -237,8 +222,7 @@
             "gl": "Tremer respondendo",
             "es": "Temblar respondiendo"
           },
-          "category": "phrase",
-          "lamina": "pal_is_ice_hot_or_cold"
+          "category": "phrase"
         },
         {
           "id": "4_5.decembro.s1.brr-freezing-hands",
@@ -249,8 +233,7 @@
             "gl": "Soprar nas mans",
             "es": "Soplar en las manos"
           },
-          "category": "phrase",
-          "lamina": "pal_brr_freezing_hands"
+          "category": "phrase"
         }
       ]
     },
@@ -270,8 +253,7 @@
             "gl": "Poñer os brazos coma unha balanza",
             "es": "Poner los brazos como una balanza"
           },
-          "category": "noun",
-          "lamina": "pal_scale"
+          "category": "noun"
         },
         {
           "id": "4_5.decembro.s2.ruler",
@@ -282,8 +264,7 @@
             "gl": "Medir cunha regra",
             "es": "Medir con una regla"
           },
-          "category": "noun",
-          "lamina": "pal_ruler"
+          "category": "noun"
         },
         {
           "id": "4_5.decembro.s2.tape-measure",
@@ -294,8 +275,7 @@
             "gl": "Estirar unha cinta imaxinaria",
             "es": "Estirar una cinta imaginaria"
           },
-          "category": "noun",
-          "lamina": "pal_tape_measure"
+          "category": "noun"
         },
         {
           "id": "4_5.decembro.s2.handspan",
@@ -306,8 +286,7 @@
             "gl": "Medir a mesa a palmos",
             "es": "Medir la mesa a palmos"
           },
-          "category": "noun",
-          "lamina": "pal_handspan"
+          "category": "noun"
         },
         {
           "id": "4_5.decembro.s2.pair-of-socks",
@@ -318,8 +297,7 @@
             "gl": "Xuntar dous calcetíns",
             "es": "Juntar dos calcetines"
           },
-          "category": "noun",
-          "lamina": "pal_pair_of_socks"
+          "category": "noun"
         },
         {
           "id": "4_5.decembro.s2.half",
@@ -330,8 +308,7 @@
             "gl": "Partir algo pola metade",
             "es": "Partir algo por la mitad"
           },
-          "category": "noun",
-          "lamina": "pal_half"
+          "category": "noun"
         },
         {
           "id": "4_5.decembro.s2.whole",
@@ -342,8 +319,7 @@
             "gl": "Xuntar as dúas metades",
             "es": "Juntar las dos mitades"
           },
-          "category": "noun",
-          "lamina": "pal_whole"
+          "category": "noun"
         },
         {
           "id": "4_5.decembro.s2.weigh",
@@ -354,8 +330,7 @@
             "gl": "Levantar dous obxectos e comparar",
             "es": "Levantar dos objetos y comparar"
           },
-          "category": "verb",
-          "lamina": "pal_weigh"
+          "category": "verb"
         },
         {
           "id": "4_5.decembro.s2.measure-with-hands",
@@ -366,8 +341,7 @@
             "gl": "Medir a palmos",
             "es": "Medir a palmos"
           },
-          "category": "verb",
-          "lamina": "pal_measure_with_hands"
+          "category": "verb"
         },
         {
           "id": "4_5.decembro.s2.split-in-half",
@@ -378,8 +352,7 @@
             "gl": "Separar as mans",
             "es": "Separar las manos"
           },
-          "category": "verb",
-          "lamina": "pal_split_in_half"
+          "category": "verb"
         },
         {
           "id": "4_5.decembro.s2.add-one-more",
@@ -390,8 +363,7 @@
             "gl": "Poñer outro bloque",
             "es": "Poner otro bloque"
           },
-          "category": "verb",
-          "lamina": "pal_add_one_more"
+          "category": "verb"
         },
         {
           "id": "4_5.decembro.s2.take-one-away",
@@ -402,8 +374,7 @@
             "gl": "Retirar un bloque",
             "es": "Retirar un bloque"
           },
-          "category": "verb",
-          "lamina": "pal_take_one_away"
+          "category": "verb"
         },
         {
           "id": "4_5.decembro.s2.heavier",
@@ -414,8 +385,7 @@
             "gl": "Baixar a man que pesa máis",
             "es": "Bajar la mano que pesa más"
           },
-          "category": "adjective",
-          "lamina": "pal_heavier"
+          "category": "adjective"
         },
         {
           "id": "4_5.decembro.s2.lighter-in-weight",
@@ -426,8 +396,7 @@
             "gl": "Subir a man que pesa menos",
             "es": "Subir la mano que pesa menos"
           },
-          "category": "adjective",
-          "lamina": "pal_lighter_in_weight"
+          "category": "adjective"
         },
         {
           "id": "4_5.decembro.s2.longer",
@@ -438,8 +407,7 @@
             "gl": "Separar moito as mans",
             "es": "Separar mucho las manos"
           },
-          "category": "adjective",
-          "lamina": "pal_longer"
+          "category": "adjective"
         },
         {
           "id": "4_5.decembro.s2.shorter",
@@ -450,8 +418,7 @@
             "gl": "Xuntar as mans",
             "es": "Juntar las manos"
           },
-          "category": "adjective",
-          "lamina": "pal_shorter"
+          "category": "adjective"
         },
         {
           "id": "4_5.decembro.s2.which-one-is-heavier",
@@ -462,8 +429,7 @@
             "gl": "Levantar un en cada man",
             "es": "Levantar uno en cada mano"
           },
-          "category": "phrase",
-          "lamina": "pal_which_one_is_heavier"
+          "category": "phrase"
         },
         {
           "id": "4_5.decembro.s2.more-than-five",
@@ -474,8 +440,7 @@
             "gl": "Amosar cinco dedos e un máis",
             "es": "Enseñar cinco dedos y uno más"
           },
-          "category": "complex",
-          "lamina": "pal_more_than_five"
+          "category": "complex"
         },
         {
           "id": "4_5.decembro.s2.less-than-three",
@@ -486,8 +451,7 @@
             "gl": "Amosar dous dedos",
             "es": "Enseñar dos dedos"
           },
-          "category": "complex",
-          "lamina": "pal_less_than_three"
+          "category": "complex"
         },
         {
           "id": "4_5.decembro.s2.this-one-is-longer",
@@ -498,8 +462,7 @@
             "gl": "Sinalar o máis longo",
             "es": "Señalar el más largo"
           },
-          "category": "phrase",
-          "lamina": "pal_this_one_is_longer"
+          "category": "phrase"
         }
       ]
     },
@@ -519,8 +482,7 @@
             "gl": "Abrir e pechar as mans no aire",
             "es": "Abrir y cerrar las manos en el aire"
           },
-          "category": "noun",
-          "lamina": "pal_city_lights"
+          "category": "noun"
         },
         {
           "id": "4_5.decembro.s3.big-wheel",
@@ -531,8 +493,7 @@
             "gl": "Xirar os brazos coma unha noria",
             "es": "Girar los brazos como una noria"
           },
-          "category": "noun",
-          "lamina": "pal_big_wheel"
+          "category": "noun"
         },
         {
           "id": "4_5.decembro.s3.light-bulb",
@@ -555,8 +516,7 @@
             "gl": "Colgar un adorno imaxinario",
             "es": "Colgar un adorno imaginario"
           },
-          "category": "noun",
-          "lamina": "pal_decoration"
+          "category": "noun"
         },
         {
           "id": "4_5.decembro.s3.shop-window",
@@ -567,8 +527,7 @@
             "gl": "Mirar a través dun cristal",
             "es": "Mirar a través de un cristal"
           },
-          "category": "noun",
-          "lamina": "pal_shop_window"
+          "category": "noun"
         },
         {
           "id": "4_5.decembro.s3.street-lamp",
@@ -579,8 +538,7 @@
             "gl": "Estirarse coma un farol",
             "es": "Estirarse como un farol"
           },
-          "category": "noun",
-          "lamina": "pal_street_lamp"
+          "category": "noun"
         },
         {
           "id": "4_5.decembro.s3.light-show",
@@ -591,8 +549,7 @@
             "gl": "Mover as mans cambiando de cor",
             "es": "Mover las manos cambiando de color"
           },
-          "category": "noun",
-          "lamina": "pal_light_show"
+          "category": "noun"
         },
         {
           "id": "4_5.decembro.s3.light-up",
@@ -603,8 +560,7 @@
             "gl": "Abrir as mans de súpeto",
             "es": "Abrir las manos de golpe"
           },
-          "category": "verb",
-          "lamina": "pal_light_up"
+          "category": "verb"
         },
         {
           "id": "4_5.decembro.s3.flicker",
@@ -615,8 +571,7 @@
             "gl": "Abrir e pechar as mans rápido",
             "es": "Abrir y cerrar las manos rápido"
           },
-          "category": "verb",
-          "lamina": "pal_flicker"
+          "category": "verb"
         },
         {
           "id": "4_5.decembro.s3.decorate",
@@ -627,8 +582,7 @@
             "gl": "Colgar adornos no aire",
             "es": "Colgar adornos en el aire"
           },
-          "category": "verb",
-          "lamina": "pal_decorate"
+          "category": "verb"
         },
         {
           "id": "4_5.decembro.s3.admire",
@@ -639,8 +593,7 @@
             "gl": "Mirar con boca aberta",
             "es": "Mirar con la boca abierta"
           },
-          "category": "verb",
-          "lamina": "pal_admire"
+          "category": "verb"
         },
         {
           "id": "4_5.decembro.s3.walk-through",
@@ -651,8 +604,7 @@
             "gl": "Camiñar mirando arriba",
             "es": "Caminar mirando arriba"
           },
-          "category": "verb",
-          "lamina": "pal_walk_through"
+          "category": "verb"
         },
         {
           "id": "4_5.decembro.s3.dazzling",
@@ -663,8 +615,7 @@
             "gl": "Taparse un pouco os ollos",
             "es": "Taparse un poco los ojos"
           },
-          "category": "adjective",
-          "lamina": "pal_dazzling"
+          "category": "adjective"
         },
         {
           "id": "4_5.decembro.s3.festive",
@@ -675,8 +626,7 @@
             "gl": "Bailar contentos",
             "es": "Bailar contentos"
           },
-          "category": "adjective",
-          "lamina": "pal_festive"
+          "category": "adjective"
         },
         {
           "id": "4_5.decembro.s3.multicoloured",
@@ -687,8 +637,7 @@
             "gl": "Sinalar moitas cores",
             "es": "Señalar muchos colores"
           },
-          "category": "adjective",
-          "lamina": "pal_multicoloured"
+          "category": "adjective"
         },
         {
           "id": "4_5.decembro.s3.brightest",
@@ -711,8 +660,7 @@
             "gl": "Abrir os brazos admirados",
             "es": "Abrir los brazos admirados"
           },
-          "category": "phrase",
-          "lamina": "pal_look_at_all_the_lights"
+          "category": "phrase"
         },
         {
           "id": "4_5.decembro.s3.which-light-is-the-brightest",
@@ -723,8 +671,7 @@
             "gl": "Sinalar e comparar",
             "es": "Señalar y comparar"
           },
-          "category": "phrase",
-          "lamina": "pal_which_light_is_the_brightest"
+          "category": "phrase"
         },
         {
           "id": "4_5.decembro.s3.the-big-wheel-goes-round-and-round",
@@ -735,8 +682,7 @@
             "gl": "Xirar os brazos",
             "es": "Girar los brazos"
           },
-          "category": "complex",
-          "lamina": "pal_the_big_wheel_goes_round_and_round"
+          "category": "complex"
         },
         {
           "id": "4_5.decembro.s3.lights-in-the-dark",
@@ -747,8 +693,7 @@
             "gl": "Abrir as mans nunha sala escura",
             "es": "Abrir las manos en una sala oscura"
           },
-          "category": "complex",
-          "lamina": "pal_lights_in_the_dark"
+          "category": "complex"
         }
       ]
     },
@@ -768,8 +713,7 @@
             "gl": "Meter unha peza de roupa na caixa",
             "es": "Meter una prenda en la caja"
           },
-          "category": "noun",
-          "lamina": "pal_donation_box"
+          "category": "noun"
         },
         {
           "id": "4_5.decembro.s4.warm-clothes",
@@ -780,8 +724,7 @@
             "gl": "Abrazar unha chaqueta",
             "es": "Abrazar una chaqueta"
           },
-          "category": "noun",
-          "lamina": "pal_warm_clothes"
+          "category": "noun"
         },
         {
           "id": "4_5.decembro.s4.neighbour",
@@ -792,8 +735,7 @@
             "gl": "Acenar ao veciño",
             "es": "Saludar al vecino"
           },
-          "category": "noun",
-          "lamina": "pal_neighbour"
+          "category": "noun"
         },
         {
           "id": "4_5.decembro.s4.blanket-share",
@@ -804,8 +746,7 @@
             "gl": "Taparse dous coa mesma manta",
             "es": "Taparse dos con la misma manta"
           },
-          "category": "noun",
-          "lamina": "pal_shared_blanket"
+          "category": "noun"
         },
         {
           "id": "4_5.decembro.s4.kindness",
@@ -816,8 +757,7 @@
             "gl": "Facer un corazón coas mans",
             "es": "Hacer un corazón con las manos"
           },
-          "category": "noun",
-          "lamina": "pal_kindness"
+          "category": "noun"
         },
         {
           "id": "4_5.decembro.s4.card",
@@ -840,8 +780,7 @@
             "gl": "Collerse todos das mans",
             "es": "Cogerse todos de las manos"
           },
-          "category": "noun",
-          "lamina": "pal_community"
+          "category": "noun"
         },
         {
           "id": "4_5.decembro.s4.donate",
@@ -852,8 +791,7 @@
             "gl": "Meter algo na caixa",
             "es": "Meter algo en la caja"
           },
-          "category": "verb",
-          "lamina": "pal_donate"
+          "category": "verb"
         },
         {
           "id": "4_5.decembro.s4.give-away",
@@ -864,8 +802,7 @@
             "gl": "Estender un obxecto a outra persoa",
             "es": "Extender un objeto a otra persona"
           },
-          "category": "verb",
-          "lamina": "pal_give_away"
+          "category": "verb"
         },
         {
           "id": "4_5.decembro.s4.help-others",
@@ -876,8 +813,7 @@
             "gl": "Dar a man a alguén",
             "es": "Dar la mano a alguien"
           },
-          "category": "verb",
-          "lamina": "pal_help_others"
+          "category": "verb"
         },
         {
           "id": "4_5.decembro.s4.keep-warm-together",
@@ -888,8 +824,7 @@
             "gl": "Apertarse todos",
             "es": "Apretarse todos"
           },
-          "category": "verb",
-          "lamina": "pal_keep_warm_together"
+          "category": "verb"
         },
         {
           "id": "4_5.decembro.s4.write-a-card",
@@ -900,8 +835,7 @@
             "gl": "Facer que se escribe",
             "es": "Hacer que se escribe"
           },
-          "category": "verb",
-          "lamina": "pal_write_a_card"
+          "category": "verb"
         },
         {
           "id": "4_5.decembro.s4.generous",
@@ -912,8 +846,7 @@
             "gl": "Abrir os brazos para dar",
             "es": "Abrir los brazos para dar"
           },
-          "category": "adjective",
-          "lamina": "pal_generous"
+          "category": "adjective"
         },
         {
           "id": "4_5.decembro.s4.grateful-heart",
@@ -924,8 +857,7 @@
             "gl": "Pousar as mans no peito",
             "es": "Poner las manos en el pecho"
           },
-          "category": "adjective",
-          "lamina": "pal_grateful_heart"
+          "category": "adjective"
         },
         {
           "id": "4_5.decembro.s4.thoughtful",
@@ -936,8 +868,7 @@
             "gl": "Tocar a cabeza e o peito",
             "es": "Tocar la cabeza y el pecho"
           },
-          "category": "adjective",
-          "lamina": "pal_thoughtful"
+          "category": "adjective"
         },
         {
           "id": "4_5.decembro.s4.warm-hearted",
@@ -948,8 +879,7 @@
             "gl": "Abrazarse a si mesmo",
             "es": "Abrazarse a sí mismo"
           },
-          "category": "adjective",
-          "lamina": "pal_warm_hearted"
+          "category": "adjective"
         },
         {
           "id": "4_5.decembro.s4.this-is-for-you",
@@ -960,8 +890,7 @@
             "gl": "Estender unha postal",
             "es": "Extender una postal"
           },
-          "category": "phrase",
-          "lamina": "pal_this_is_for_you"
+          "category": "phrase"
         },
         {
           "id": "4_5.decembro.s4.we-share-because-we-care",
@@ -972,8 +901,7 @@
             "gl": "Repartir e sorrir",
             "es": "Repartir y sonreír"
           },
-          "category": "complex",
-          "lamina": "pal_we_share_because_we_care"
+          "category": "complex"
         },
         {
           "id": "4_5.decembro.s4.thank-you-so-much",
@@ -996,8 +924,7 @@
             "gl": "Fregar as mans e pousalas no peito",
             "es": "Frotar las manos y posarlas en el pecho"
           },
-          "category": "complex",
-          "lamina": "pal_warm_hands_warm_heart"
+          "category": "complex"
         }
       ]
     }

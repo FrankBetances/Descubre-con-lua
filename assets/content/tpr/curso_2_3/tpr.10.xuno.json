@@ -33,8 +33,7 @@
             "gl": "Remar sentados no chan",
             "es": "Remar sentados en el suelo"
           },
-          "category": "noun",
-          "lamina": "pal_rowing_boat"
+          "category": "noun"
         },
         {
           "id": "2_3.xuno.s1.paddle-boat",
@@ -45,8 +44,7 @@
             "gl": "Pedalear sentados",
             "es": "Pedalear sentados"
           },
-          "category": "noun",
-          "lamina": "pal_paddle_boat"
+          "category": "noun"
         },
         {
           "id": "2_3.xuno.s1.oar",
@@ -57,8 +55,7 @@
             "gl": "Mover un remo imaxinario",
             "es": "Mover un remo imaginario"
           },
-          "category": "noun",
-          "lamina": "pal_oar"
+          "category": "noun"
         },
         {
           "id": "2_3.xuno.s1.boat-sail",
@@ -69,8 +66,7 @@
             "gl": "Abrir os brazos coma unha vela",
             "es": "Abrir los brazos como una vela"
           },
-          "category": "noun",
-          "lamina": "pal_white_sail"
+          "category": "noun"
         },
         {
           "id": "2_3.xuno.s1.life-jacket",
@@ -81,8 +77,7 @@
             "gl": "Poñer un chaleco imaxinario",
             "es": "Ponerse un chaleco imaginario"
           },
-          "category": "noun",
-          "lamina": "pal_life_jacket"
+          "category": "noun"
         },
         {
           "id": "2_3.xuno.s1.mast",
@@ -93,8 +88,7 @@
             "gl": "Estirarse moi dereito",
             "es": "Estirarse muy recto"
           },
-          "category": "noun",
-          "lamina": "pal_mast"
+          "category": "noun"
         },
         {
           "id": "2_3.xuno.s1.row-the-boat",
@@ -105,8 +99,7 @@
             "gl": "Remar adiante e atrás",
             "es": "Remar adelante y atrás"
           },
-          "category": "verb",
-          "lamina": "pal_row_the_boat"
+          "category": "verb"
         },
         {
           "id": "2_3.xuno.s1.set-sail",
@@ -117,8 +110,7 @@
             "gl": "Empurrar e saír navegando",
             "es": "Empujar y salir navegando"
           },
-          "category": "verb",
-          "lamina": "pal_set_sail"
+          "category": "verb"
         },
         {
           "id": "2_3.xuno.s1.rock-the-boat",
@@ -129,8 +121,7 @@
             "gl": "Abanearse sentados",
             "es": "Balancearse sentados"
           },
-          "category": "verb",
-          "lamina": "pal_rock_the_boat"
+          "category": "verb"
         },
         {
           "id": "2_3.xuno.s1.steer-the-boat",
@@ -141,8 +132,7 @@
             "gl": "Xirar un temón imaxinario",
             "es": "Girar un timón imaginario"
           },
-          "category": "verb",
-          "lamina": "pal_steer_the_boat"
+          "category": "verb"
         },
         {
           "id": "2_3.xuno.s1.drift-along",
@@ -153,8 +143,7 @@
             "gl": "Moverse amodo sen remar",
             "es": "Moverse despacio sin remar"
           },
-          "category": "verb",
-          "lamina": "pal_drift_along"
+          "category": "verb"
         },
         {
           "id": "2_3.xuno.s1.seaworthy",
@@ -165,8 +154,7 @@
             "gl": "Levantar o polgar",
             "es": "Levantar el pulgar"
           },
-          "category": "adjective",
-          "lamina": "pal_seaworthy"
+          "category": "adjective"
         },
         {
           "id": "2_3.xuno.s1.choppy",
@@ -177,8 +165,7 @@
             "gl": "Mover as mans en ondas pequenas",
             "es": "Mover las manos en olas pequeñas"
           },
-          "category": "adjective",
-          "lamina": "pal_choppy"
+          "category": "adjective"
         },
         {
           "id": "2_3.xuno.s1.calm-sea",
@@ -201,8 +188,7 @@
             "gl": "Balancearse amodo",
             "es": "Balancearse despacio"
           },
-          "category": "adjective",
-          "lamina": "pal_sailing_along"
+          "category": "adjective"
         },
         {
           "id": "2_3.xuno.s1.row-row-row-your-boat",
@@ -213,8 +199,7 @@
             "gl": "Remar cantando",
             "es": "Remar cantando"
           },
-          "category": "phrase",
-          "lamina": "pal_row_row_row_your_boat"
+          "category": "phrase"
         },
         {
           "id": "2_3.xuno.s1.all-aboard-the-boat",
@@ -225,8 +210,7 @@
             "gl": "Subir ao barco imaxinario",
             "es": "Subir al barco imaginario"
           },
-          "category": "phrase",
-          "lamina": "pal_all_aboard_the_boat"
+          "category": "phrase"
         },
         {
           "id": "2_3.xuno.s1.gently-down-the-river",
@@ -237,8 +221,7 @@
             "gl": "Remar amodo",
             "es": "Remar despacio"
           },
-          "category": "complex",
-          "lamina": "pal_gently_down_the_stream"
+          "category": "complex"
         },
         {
           "id": "2_3.xuno.s1.boats-on-the-water",
@@ -249,8 +232,7 @@
             "gl": "Mover as mans coma barcos",
             "es": "Mover las manos como barcos"
           },
-          "category": "complex",
-          "lamina": "pal_boats_on_the_water"
+          "category": "complex"
         }
       ]
     },
@@ -282,8 +264,7 @@
             "gl": "Encher un molde de area",
             "es": "Llenar un molde de arena"
           },
-          "category": "noun",
-          "lamina": "pal_mould"
+          "category": "noun"
         },
         {
           "id": "2_3.xuno.s2.sieve-toy",
@@ -294,8 +275,7 @@
             "gl": "Peneirar area",
             "es": "Tamizar arena"
           },
-          "category": "noun",
-          "lamina": "pal_sieve_toy"
+          "category": "noun"
         },
         {
           "id": "2_3.xuno.s2.sand-pie",
@@ -306,8 +286,7 @@
             "gl": "Virar o molde e levantalo",
             "es": "Volcar el molde y levantarlo"
           },
-          "category": "noun",
-          "lamina": "pal_sand_pie"
+          "category": "noun"
         },
         {
           "id": "2_3.xuno.s2.pebble-path",
@@ -318,8 +297,7 @@
             "gl": "Poñer pedriñas en fila",
             "es": "Poner piedrecitas en fila"
           },
-          "category": "noun",
-          "lamina": "pal_pebble_path"
+          "category": "noun"
         },
         {
           "id": "2_3.xuno.s2.beach-spade",
@@ -330,8 +308,7 @@
             "gl": "Cavar coa pa",
             "es": "Cavar con la pala"
           },
-          "category": "noun",
-          "lamina": "pal_beach_spade"
+          "category": "noun"
         },
         {
           "id": "2_3.xuno.s2.footprints-in-sand",
@@ -342,8 +319,7 @@
             "gl": "Pisar e mirar a pegada",
             "es": "Pisar y mirar la huella"
           },
-          "category": "noun",
-          "lamina": "pal_footprints_in_sand"
+          "category": "noun"
         },
         {
           "id": "2_3.xuno.s2.pat-the-sand",
@@ -354,8 +330,7 @@
             "gl": "Palmear a area coa man",
             "es": "Palmear la arena con la mano"
           },
-          "category": "verb",
-          "lamina": "pal_pat_the_sand"
+          "category": "verb"
         },
         {
           "id": "2_3.xuno.s2.turn-out",
@@ -366,8 +341,7 @@
             "gl": "Virar o molde e levantalo",
             "es": "Volcar el molde y levantarlo"
           },
-          "category": "verb",
-          "lamina": "pal_turn_out"
+          "category": "verb"
         },
         {
           "id": "2_3.xuno.s2.sift",
@@ -378,8 +352,7 @@
             "gl": "Mover a peneira",
             "es": "Mover el tamiz"
           },
-          "category": "verb",
-          "lamina": "pal_sift"
+          "category": "verb"
         },
         {
           "id": "2_3.xuno.s2.dig-a-hole",
@@ -390,8 +363,7 @@
             "gl": "Cavar coas mans",
             "es": "Cavar con las manos"
           },
-          "category": "verb",
-          "lamina": "pal_dig_a_hole"
+          "category": "verb"
         },
         {
           "id": "2_3.xuno.s2.fill-the-bucket",
@@ -402,8 +374,7 @@
             "gl": "Encher o balde de area",
             "es": "Llenar el cubo de arena"
           },
-          "category": "verb",
-          "lamina": "pal_fill_the_bucket"
+          "category": "verb"
         },
         {
           "id": "2_3.xuno.s2.damp-sand",
@@ -414,8 +385,7 @@
             "gl": "Apertar area húmida",
             "es": "Apretar arena húmeda"
           },
-          "category": "adjective",
-          "lamina": "pal_damp_sand"
+          "category": "adjective"
         },
         {
           "id": "2_3.xuno.s2.dry-sand",
@@ -426,8 +396,7 @@
             "gl": "Deixar caer area seca",
             "es": "Dejar caer arena seca"
           },
-          "category": "adjective",
-          "lamina": "pal_dry_sand"
+          "category": "adjective"
         },
         {
           "id": "2_3.xuno.s2.heaped",
@@ -438,8 +407,7 @@
             "gl": "Facer un monte de area",
             "es": "Hacer un montón de arena"
           },
-          "category": "adjective",
-          "lamina": "pal_heaped"
+          "category": "adjective"
         },
         {
           "id": "2_3.xuno.s2.smooth-sand",
@@ -450,8 +418,7 @@
             "gl": "Alisar a area coa man",
             "es": "Alisar la arena con la mano"
           },
-          "category": "adjective",
-          "lamina": "pal_smooth_sand"
+          "category": "adjective"
         },
         {
           "id": "2_3.xuno.s2.let-s-dig",
@@ -462,8 +429,7 @@
             "gl": "Cavar coa pa",
             "es": "Cavar con la pala"
           },
-          "category": "phrase",
-          "lamina": "pal_let_s_dig"
+          "category": "phrase"
         },
         {
           "id": "2_3.xuno.s2.look-a-sand-pie",
@@ -474,8 +440,7 @@
             "gl": "Sinalar o flan",
             "es": "Señalar el flan"
           },
-          "category": "phrase",
-          "lamina": "pal_look_a_sand_pie"
+          "category": "phrase"
         },
         {
           "id": "2_3.xuno.s2.sand-in-the-bucket",
@@ -486,8 +451,7 @@
             "gl": "Botar area no balde",
             "es": "Echar arena en el cubo"
           },
-          "category": "complex",
-          "lamina": "pal_sand_in_the_bucket"
+          "category": "complex"
         },
         {
           "id": "2_3.xuno.s2.deeper-and-deeper",
@@ -498,8 +462,7 @@
             "gl": "Cavar máis e máis",
             "es": "Cavar más y más"
           },
-          "category": "complex",
-          "lamina": "pal_deeper_and_deeper"
+          "category": "complex"
         }
       ]
     },
@@ -543,8 +506,7 @@
             "gl": "Abrir e pechar as mans coma unha cuncha",
             "es": "Abrir y cerrar las manos como una concha"
           },
-          "category": "noun",
-          "lamina": "pal_cockle"
+          "category": "noun"
         },
         {
           "id": "2_3.xuno.s3.razor-clam",
@@ -555,8 +517,7 @@
             "gl": "Estirar a man longa e fina",
             "es": "Estirar la mano larga y fina"
           },
-          "category": "noun",
-          "lamina": "pal_razor_clam"
+          "category": "noun"
         },
         {
           "id": "2_3.xuno.s3.beach-bag",
@@ -567,8 +528,7 @@
             "gl": "Meter tesouros na bolsa",
             "es": "Meter tesoros en la bolsa"
           },
-          "category": "noun",
-          "lamina": "pal_beach_bag"
+          "category": "noun"
         },
         {
           "id": "2_3.xuno.s3.rock-pool",
@@ -579,8 +539,7 @@
             "gl": "Mirar dentro da poza",
             "es": "Mirar dentro de la charca"
           },
-          "category": "noun",
-          "lamina": "pal_rock_pool"
+          "category": "noun"
         },
         {
           "id": "2_3.xuno.s3.periwinkle",
@@ -591,8 +550,7 @@
             "gl": "Facer unha espiral co dedo",
             "es": "Hacer una espiral con el dedo"
           },
-          "category": "noun",
-          "lamina": "pal_periwinkle"
+          "category": "noun"
         },
         {
           "id": "2_3.xuno.s3.beachcomb",
@@ -603,8 +561,7 @@
             "gl": "Camiñar mirando o chan",
             "es": "Caminar mirando el suelo"
           },
-          "category": "verb",
-          "lamina": "pal_beachcomb"
+          "category": "verb"
         },
         {
           "id": "2_3.xuno.s3.turn-over-a-stone",
@@ -615,8 +572,7 @@
             "gl": "Virar unha pedra con coidado",
             "es": "Voltear una piedra con cuidado"
           },
-          "category": "verb",
-          "lamina": "pal_turn_over_a_stone"
+          "category": "verb"
         },
         {
           "id": "2_3.xuno.s3.rinse-off-sand",
@@ -627,8 +583,7 @@
             "gl": "Aclarar a cuncha na auga",
             "es": "Aclarar la concha en el agua"
           },
-          "category": "verb",
-          "lamina": "pal_rinse_off_sand"
+          "category": "verb"
         },
         {
           "id": "2_3.xuno.s3.hold-up-high",
@@ -639,8 +594,7 @@
             "gl": "Amosar o tesouro a todos",
             "es": "Enseñar el tesoro a todos"
           },
-          "category": "verb",
-          "lamina": "pal_hold_up_high"
+          "category": "verb"
         },
         {
           "id": "2_3.xuno.s3.line-them-up",
@@ -651,8 +605,7 @@
             "gl": "Poñer os tesouros en fila",
             "es": "Poner los tesoros en fila"
           },
-          "category": "verb",
-          "lamina": "pal_line_them_up"
+          "category": "verb"
         },
         {
           "id": "2_3.xuno.s3.glinting",
@@ -663,8 +616,7 @@
             "gl": "Mover o cristal ao sol",
             "es": "Mover el cristal al sol"
           },
-          "category": "adjective",
-          "lamina": "pal_glinting"
+          "category": "adjective"
         },
         {
           "id": "2_3.xuno.s3.ridged",
@@ -675,8 +627,7 @@
             "gl": "Pasar o dedo polas raias da cuncha",
             "es": "Pasar el dedo por las estrías de la concha"
           },
-          "category": "adjective",
-          "lamina": "pal_ridged"
+          "category": "adjective"
         },
         {
           "id": "2_3.xuno.s3.smooth-pebble",
@@ -687,8 +638,7 @@
             "gl": "Acariñar unha pedra lisa",
             "es": "Acariciar una piedra lisa"
           },
-          "category": "adjective",
-          "lamina": "pal_smooth_pebble"
+          "category": "adjective"
         },
         {
           "id": "2_3.xuno.s3.salty-shell",
@@ -699,8 +649,7 @@
             "gl": "Cheirar a cuncha",
             "es": "Oler la concha"
           },
-          "category": "adjective",
-          "lamina": "pal_salty_shell"
+          "category": "adjective"
         },
         {
           "id": "2_3.xuno.s3.look-what-i-found",
@@ -711,8 +660,7 @@
             "gl": "Abrir a man co tesouro",
             "es": "Abrir la mano con el tesoro"
           },
-          "category": "phrase",
-          "lamina": "pal_look_what_i_found"
+          "category": "phrase"
         },
         {
           "id": "2_3.xuno.s3.can-i-keep-it",
@@ -723,8 +671,7 @@
             "gl": "Apertar o tesouro contra o peito",
             "es": "Apretar el tesoro contra el pecho"
           },
-          "category": "phrase",
-          "lamina": "pal_can_i_keep_it"
+          "category": "phrase"
         },
         {
           "id": "2_3.xuno.s3.under-the-stone",
@@ -735,8 +682,7 @@
             "gl": "Levantar a pedra e mirar",
             "es": "Levantar la piedra y mirar"
           },
-          "category": "complex",
-          "lamina": "pal_under_the_stone"
+          "category": "complex"
         },
         {
           "id": "2_3.xuno.s3.shells-in-the-bag",
@@ -747,8 +693,7 @@
             "gl": "Meter as cunchas na bolsa",
             "es": "Meter las conchas en la bolsa"
           },
-          "category": "complex",
-          "lamina": "pal_shells_in_the_bag"
+          "category": "complex"
         }
       ]
     },
@@ -804,8 +749,7 @@
             "gl": "Lamber un xeado imaxinario",
             "es": "Lamer un polo imaginario"
           },
-          "category": "noun",
-          "lamina": "pal_ice_lolly"
+          "category": "noun"
         },
         {
           "id": "2_3.xuno.s4.goodbye-card",
@@ -816,8 +760,7 @@
             "gl": "Dar unha tarxeta a un amigo",
             "es": "Dar una tarjeta a un amigo"
           },
-          "category": "noun",
-          "lamina": "pal_goodbye_card"
+          "category": "noun"
         },
         {
           "id": "2_3.xuno.s4.school-bag",
@@ -828,8 +771,7 @@
             "gl": "Colgar a mochila ao ombro",
             "es": "Colgar la mochila al hombro"
           },
-          "category": "noun",
-          "lamina": "pal_school_bag"
+          "category": "noun"
         },
         {
           "id": "2_3.xuno.s4.class-photo",
@@ -840,8 +782,7 @@
             "gl": "Xuntarse todos para a foto",
             "es": "Juntarse todos para la foto"
           },
-          "category": "noun",
-          "lamina": "pal_class_photo"
+          "category": "noun"
         },
         {
           "id": "2_3.xuno.s4.wave-goodbye",
@@ -864,8 +805,7 @@
             "gl": "Estender a tarxeta",
             "es": "Extender la tarjeta"
           },
-          "category": "verb",
-          "lamina": "pal_give_a_card"
+          "category": "verb"
         },
         {
           "id": "2_3.xuno.s4.pose",
@@ -876,8 +816,7 @@
             "gl": "Sorrir quietos para a foto",
             "es": "Sonreír quietos para la foto"
           },
-          "category": "verb",
-          "lamina": "pal_pose"
+          "category": "verb"
         },
         {
           "id": "2_3.xuno.s4.lick-a-lolly",
@@ -888,8 +827,7 @@
             "gl": "Lamber no aire",
             "es": "Lamer en el aire"
           },
-          "category": "verb",
-          "lamina": "pal_lick_a_lolly"
+          "category": "verb"
         },
         {
           "id": "2_3.xuno.s4.promise",
@@ -900,8 +838,7 @@
             "gl": "Enganchar os dedos meniñeiros",
             "es": "Enganchar los meñiques"
           },
-          "category": "verb",
-          "lamina": "pal_promise"
+          "category": "verb"
         },
         {
           "id": "2_3.xuno.s4.summertime",
@@ -912,8 +849,7 @@
             "gl": "Abanarse contentos",
             "es": "Abanicarse contentos"
           },
-          "category": "adjective",
-          "lamina": "pal_summertime"
+          "category": "adjective"
         },
         {
           "id": "2_3.xuno.s4.grown-bigger",
@@ -924,8 +860,7 @@
             "gl": "Estirarse alto",
             "es": "Estirarse alto"
           },
-          "category": "adjective",
-          "lamina": "pal_grown_bigger"
+          "category": "adjective"
         },
         {
           "id": "2_3.xuno.s4.sunny-day",
@@ -936,8 +871,7 @@
             "gl": "Abrir as mans coma o sol",
             "es": "Abrir las manos como el sol"
           },
-          "category": "adjective",
-          "lamina": "pal_sunny_day"
+          "category": "adjective"
         },
         {
           "id": "2_3.xuno.s4.excited-for-summer",
@@ -948,8 +882,7 @@
             "gl": "Saltar contentos",
             "es": "Saltar contentos"
           },
-          "category": "adjective",
-          "lamina": "pal_excited_for_summer"
+          "category": "adjective"
         },
         {
           "id": "2_3.xuno.s4.say-cheese",
@@ -960,8 +893,7 @@
             "gl": "Sorrir para a foto",
             "es": "Sonreír para la foto"
           },
-          "category": "phrase",
-          "lamina": "pal_say_cheese"
+          "category": "phrase"
         },
         {
           "id": "2_3.xuno.s4.have-fun",
@@ -972,8 +904,7 @@
             "gl": "Bater palmas",
             "es": "Dar palmas"
           },
-          "category": "phrase",
-          "lamina": "pal_have_fun"
+          "category": "phrase"
         },
         {
           "id": "2_3.xuno.s4.bye-bye-friends",
@@ -984,8 +915,7 @@
             "gl": "Acenar a todos",
             "es": "Saludar a todos"
           },
-          "category": "phrase",
-          "lamina": "pal_bye_bye_friends"
+          "category": "phrase"
         },
         {
           "id": "2_3.xuno.s4.friends-forever",
@@ -996,8 +926,7 @@
             "gl": "Enganchar os meniñeiros",
             "es": "Enganchar los meñiques"
           },
-          "category": "phrase",
-          "lamina": "pal_friends_forever"
+          "category": "phrase"
         }
       ]
     }

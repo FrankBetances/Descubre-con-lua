@@ -21,8 +21,7 @@
             "gl": "Levantar un dedo coma unha norma",
             "es": "Levantar un dedo como una norma"
           },
-          "category": "noun",
-          "lamina": "pal_rule"
+          "category": "noun"
         },
         {
           "id": "4_5.setembro.s1.promise-card",
@@ -33,8 +32,7 @@
             "gl": "Pousar a man na tarxeta",
             "es": "Posar la mano en la tarjeta"
           },
-          "category": "noun",
-          "lamina": "pal_promise_card"
+          "category": "noun"
         },
         {
           "id": "4_5.setembro.s1.team",
@@ -45,8 +43,7 @@
             "gl": "Xuntar as mans no centro",
             "es": "Juntar las manos en el centro"
           },
-          "category": "noun",
-          "lamina": "pal_team"
+          "category": "noun"
         },
         {
           "id": "4_5.setembro.s1.captain",
@@ -57,8 +54,7 @@
             "gl": "Poñerse diante do grupo",
             "es": "Ponerse delante del grupo"
           },
-          "category": "noun",
-          "lamina": "pal_captain"
+          "category": "noun"
         },
         {
           "id": "4_5.setembro.s1.agreement",
@@ -69,8 +65,7 @@
             "gl": "Darse a man co compañeiro",
             "es": "Darse la mano con el compañero"
           },
-          "category": "noun",
-          "lamina": "pal_agreement"
+          "category": "noun"
         },
         {
           "id": "4_5.setembro.s1.talking-stick",
@@ -81,8 +76,7 @@
             "gl": "Pasar o pau a quen fala",
             "es": "Pasar el palo a quien habla"
           },
-          "category": "noun",
-          "lamina": "pal_talking_stick"
+          "category": "noun"
         },
         {
           "id": "4_5.setembro.s1.classroom-job",
@@ -93,8 +87,7 @@
             "gl": "Sinalar o propio encargo no panel",
             "es": "Señalar el propio encargo en el panel"
           },
-          "category": "noun",
-          "lamina": "pal_classroom_job"
+          "category": "noun"
         },
         {
           "id": "4_5.setembro.s1.agree",
@@ -105,8 +98,7 @@
             "gl": "Asentir coa cabeza",
             "es": "Asentir con la cabeza"
           },
-          "category": "verb",
-          "lamina": "pal_agree"
+          "category": "verb"
         },
         {
           "id": "4_5.setembro.s1.raise-a-hand",
@@ -117,8 +109,7 @@
             "gl": "Levantar a man e agardar",
             "es": "Levantar la mano y esperar"
           },
-          "category": "verb",
-          "lamina": "pal_raise_a_hand"
+          "category": "verb"
         },
         {
           "id": "4_5.setembro.s1.take-a-turn",
@@ -129,8 +120,7 @@
             "gl": "Coller o pau da palabra",
             "es": "Coger el palo de la palabra"
           },
-          "category": "verb",
-          "lamina": "pal_take_a_turn"
+          "category": "verb"
         },
         {
           "id": "4_5.setembro.s1.follow-the-rules",
@@ -141,8 +131,7 @@
             "gl": "Camiñar pola liña marcada",
             "es": "Caminar por la línea marcada"
           },
-          "category": "verb",
-          "lamina": "pal_follow_the_rules"
+          "category": "verb"
         },
         {
           "id": "4_5.setembro.s1.cooperate",
@@ -153,8 +142,7 @@
             "gl": "Levar unha caixa entre dous",
             "es": "Llevar una caja entre dos"
           },
-          "category": "verb",
-          "lamina": "pal_cooperate"
+          "category": "verb"
         },
         {
           "id": "4_5.setembro.s1.fair",
@@ -189,8 +177,7 @@
             "gl": "Pousar a man no peito",
             "es": "Poner la mano en el pecho"
           },
-          "category": "adjective",
-          "lamina": "pal_honest"
+          "category": "adjective"
         },
         {
           "id": "4_5.setembro.s1.respectful",
@@ -201,8 +188,7 @@
             "gl": "Escoitar mirando a quen fala",
             "es": "Escuchar mirando a quien habla"
           },
-          "category": "adjective",
-          "lamina": "pal_respectful"
+          "category": "adjective"
         },
         {
           "id": "4_5.setembro.s1.wait-your-turn-please",
@@ -225,8 +211,7 @@
             "gl": "Levar a man á orella e ao peito",
             "es": "Llevar la mano a la oreja y al pecho"
           },
-          "category": "complex",
-          "lamina": "pal_we_listen_because_we_care"
+          "category": "complex"
         },
         {
           "id": "4_5.setembro.s1.who-wants-to-be-captain",
@@ -237,8 +222,7 @@
             "gl": "Levantar a man",
             "es": "Levantar la mano"
           },
-          "category": "phrase",
-          "lamina": "pal_who_wants_to_be_captain"
+          "category": "phrase"
         },
         {
           "id": "4_5.setembro.s1.if-you-want-to-talk-raise-your-hand",
@@ -249,8 +233,7 @@
             "gl": "Levantar a man antes de falar",
             "es": "Levantar la mano antes de hablar"
           },
-          "category": "complex",
-          "lamina": "pal_if_you_want_to_talk_raise_your_hand"
+          "category": "complex"
         }
       ]
     },
@@ -270,8 +253,7 @@
             "gl": "Poñer un casco imaxinario",
             "es": "Ponerse un casco imaginario"
           },
-          "category": "noun",
-          "lamina": "pal_construction_site"
+          "category": "noun"
         },
         {
           "id": "4_5.setembro.s2.wooden-plank",
@@ -282,8 +264,7 @@
             "gl": "Levar unha táboa entre dous",
             "es": "Llevar una tabla entre dos"
           },
-          "category": "noun",
-          "lamina": "pal_wooden_plank"
+          "category": "noun"
         },
         {
           "id": "4_5.setembro.s2.bridge",
@@ -294,8 +275,7 @@
             "gl": "Facer unha ponte cos corpos",
             "es": "Hacer un puente con los cuerpos"
           },
-          "category": "noun",
-          "lamina": "pal_bridge"
+          "category": "noun"
         },
         {
           "id": "4_5.setembro.s2.plan",
@@ -306,8 +286,7 @@
             "gl": "Sinalar un plano debuxado",
             "es": "Señalar un plano dibujado"
           },
-          "category": "noun",
-          "lamina": "pal_plan"
+          "category": "noun"
         },
         {
           "id": "4_5.setembro.s2.hard-hat",
@@ -318,8 +297,7 @@
             "gl": "Tocar o casco na cabeza",
             "es": "Tocar el casco en la cabeza"
           },
-          "category": "noun",
-          "lamina": "pal_hard_hat"
+          "category": "noun"
         },
         {
           "id": "4_5.setembro.s2.base",
@@ -330,8 +308,7 @@
             "gl": "Poñer as pezas grandes abaixo",
             "es": "Poner las piezas grandes abajo"
           },
-          "category": "noun",
-          "lamina": "pal_base"
+          "category": "noun"
         },
         {
           "id": "4_5.setembro.s2.blueprint",
@@ -342,8 +319,7 @@
             "gl": "Debuxar un plano no aire",
             "es": "Dibujar un plano en el aire"
           },
-          "category": "noun",
-          "lamina": "pal_blueprint"
+          "category": "noun"
         },
         {
           "id": "4_5.setembro.s2.build-high",
@@ -354,8 +330,7 @@
             "gl": "Poñer bloques ata arriba",
             "es": "Poner bloques hasta arriba"
           },
-          "category": "verb",
-          "lamina": "pal_build_high"
+          "category": "verb"
         },
         {
           "id": "4_5.setembro.s2.hold-steady",
@@ -366,8 +341,7 @@
             "gl": "Suxeitar a torre coas dúas mans",
             "es": "Sujetar la torre con las dos manos"
           },
-          "category": "verb",
-          "lamina": "pal_hold_steady"
+          "category": "verb"
         },
         {
           "id": "4_5.setembro.s2.measure",
@@ -378,8 +352,7 @@
             "gl": "Medir cos palmos",
             "es": "Medir con los palmos"
           },
-          "category": "verb",
-          "lamina": "pal_measure"
+          "category": "verb"
         },
         {
           "id": "4_5.setembro.s2.connect",
@@ -390,8 +363,7 @@
             "gl": "Unir dúas pezas",
             "es": "Unir dos piezas"
           },
-          "category": "verb",
-          "lamina": "pal_connect"
+          "category": "verb"
         },
         {
           "id": "4_5.setembro.s2.share-blocks",
@@ -402,8 +374,7 @@
             "gl": "Dar a metade dos bloques",
             "es": "Dar la mitad de los bloques"
           },
-          "category": "verb",
-          "lamina": "pal_share_blocks"
+          "category": "verb"
         },
         {
           "id": "4_5.setembro.s2.sturdy",
@@ -426,8 +397,7 @@
             "gl": "Comparar dúas torres coa man",
             "es": "Comparar dos torres con la mano"
           },
-          "category": "adjective",
-          "lamina": "pal_taller"
+          "category": "adjective"
         },
         {
           "id": "4_5.setembro.s2.wider",
@@ -438,8 +408,7 @@
             "gl": "Abrir os brazos máis",
             "es": "Abrir los brazos más"
           },
-          "category": "adjective",
-          "lamina": "pal_wider"
+          "category": "adjective"
         },
         {
           "id": "4_5.setembro.s2.wobbly-bridge",
@@ -450,8 +419,7 @@
             "gl": "Camiñar con equilibrio",
             "es": "Caminar con equilibrio"
           },
-          "category": "adjective",
-          "lamina": "pal_wobbly_bridge"
+          "category": "adjective"
         },
         {
           "id": "4_5.setembro.s2.can-you-help-me-build",
@@ -462,8 +430,7 @@
             "gl": "Estender un bloque a un amigo",
             "es": "Extender un bloque a un amigo"
           },
-          "category": "phrase",
-          "lamina": "pal_can_you_help_me_build"
+          "category": "phrase"
         },
         {
           "id": "4_5.setembro.s2.hold-it-please",
@@ -474,8 +441,7 @@
             "gl": "Suxeitar coas dúas mans",
             "es": "Sujetar con las dos manos"
           },
-          "category": "phrase",
-          "lamina": "pal_hold_it_please"
+          "category": "phrase"
         },
         {
           "id": "4_5.setembro.s2.let-s-build-a-bridge",
@@ -486,8 +452,7 @@
             "gl": "Xuntar as mans en arco",
             "es": "Juntar las manos en arco"
           },
-          "category": "phrase",
-          "lamina": "pal_let_s_build_a_bridge"
+          "category": "phrase"
         },
         {
           "id": "4_5.setembro.s2.it-fell-down-because-it-was-too-high",
@@ -498,8 +463,7 @@
             "gl": "Deixar caer a torre e explicar coas mans",
             "es": "Dejar caer la torre y explicar con las manos"
           },
-          "category": "complex",
-          "lamina": "pal_it_fell_down_because_it_was_too_high"
+          "category": "complex"
         }
       ]
     },
@@ -519,8 +483,7 @@
             "gl": "Fregar as mans para quitalos",
             "es": "Frotar las manos para quitarlos"
           },
-          "category": "noun",
-          "lamina": "pal_germs"
+          "category": "noun"
         },
         {
           "id": "4_5.setembro.s3.nail-brush",
@@ -531,8 +494,7 @@
             "gl": "Fregar as unllas co cepillo",
             "es": "Frotar las uñas con el cepillo"
           },
-          "category": "noun",
-          "lamina": "pal_nail_brush"
+          "category": "noun"
         },
         {
           "id": "4_5.setembro.s3.hand-gel",
@@ -543,8 +505,7 @@
             "gl": "Fregar as mans co xel",
             "es": "Frotar las manos con el gel"
           },
-          "category": "noun",
-          "lamina": "pal_hand_gel"
+          "category": "noun"
         },
         {
           "id": "4_5.setembro.s3.tissue-box",
@@ -555,8 +516,7 @@
             "gl": "Coller un pano da caixa",
             "es": "Coger un pañuelo de la caja"
           },
-          "category": "noun",
-          "lamina": "pal_tissue_box"
+          "category": "noun"
         },
         {
           "id": "4_5.setembro.s3.healthy-snack",
@@ -567,8 +527,7 @@
             "gl": "Amosar unha froita",
             "es": "Enseñar una fruta"
           },
-          "category": "noun",
-          "lamina": "pal_healthy_snack"
+          "category": "noun"
         },
         {
           "id": "4_5.setembro.s3.water-break",
@@ -579,8 +538,7 @@
             "gl": "Beber un grolo",
             "es": "Beber un sorbo"
           },
-          "category": "noun",
-          "lamina": "pal_water_break"
+          "category": "noun"
         },
         {
           "id": "4_5.setembro.s3.lunch-time",
@@ -591,8 +549,7 @@
             "gl": "Sentarse á mesa",
             "es": "Sentarse a la mesa"
           },
-          "category": "noun",
-          "lamina": "pal_lunch_time"
+          "category": "noun"
         },
         {
           "id": "4_5.setembro.s3.wash-thoroughly",
@@ -603,8 +560,7 @@
             "gl": "Fregar entre os dedos",
             "es": "Frotar entre los dedos"
           },
-          "category": "verb",
-          "lamina": "pal_wash_thoroughly"
+          "category": "verb"
         },
         {
           "id": "4_5.setembro.s3.rinse-well",
@@ -615,8 +571,7 @@
             "gl": "Pasar as mans baixo a auga",
             "es": "Pasar las manos bajo el agua"
           },
-          "category": "verb",
-          "lamina": "pal_rinse_well"
+          "category": "verb"
         },
         {
           "id": "4_5.setembro.s3.count-to-twenty",
@@ -627,8 +582,7 @@
             "gl": "Contar mentres se lavan as mans",
             "es": "Contar mientras se lavan las manos"
           },
-          "category": "verb",
-          "lamina": "pal_count_to_twenty"
+          "category": "verb"
         },
         {
           "id": "4_5.setembro.s3.queue-up",
@@ -639,8 +593,7 @@
             "gl": "Poñerse en fila para o lavabo",
             "es": "Ponerse en fila para el lavabo"
           },
-          "category": "verb",
-          "lamina": "pal_queue_up"
+          "category": "verb"
         },
         {
           "id": "4_5.setembro.s3.drink-water",
@@ -651,8 +604,7 @@
             "gl": "Levar o vaso á boca",
             "es": "Llevar el vaso a la boca"
           },
-          "category": "verb",
-          "lamina": "pal_drink_water"
+          "category": "verb"
         },
         {
           "id": "4_5.setembro.s3.germ-free",
@@ -663,8 +615,7 @@
             "gl": "Amosar as mans limpas",
             "es": "Enseñar las manos limpias"
           },
-          "category": "adjective",
-          "lamina": "pal_germ_free"
+          "category": "adjective"
         },
         {
           "id": "4_5.setembro.s3.well-rested",
@@ -675,8 +626,7 @@
             "gl": "Estirarse despois de descansar",
             "es": "Estirarse después de descansar"
           },
-          "category": "adjective",
-          "lamina": "pal_well_rested"
+          "category": "adjective"
         },
         {
           "id": "4_5.setembro.s3.energetic",
@@ -687,8 +637,7 @@
             "gl": "Saltar no sitio",
             "es": "Saltar en el sitio"
           },
-          "category": "adjective",
-          "lamina": "pal_energetic"
+          "category": "adjective"
         },
         {
           "id": "4_5.setembro.s3.hydrated",
@@ -699,8 +648,7 @@
             "gl": "Beber e sorrir",
             "es": "Beber y sonreír"
           },
-          "category": "adjective",
-          "lamina": "pal_hydrated"
+          "category": "adjective"
         },
         {
           "id": "4_5.setembro.s3.wash-your-hands-before-lunch",
@@ -711,8 +659,7 @@
             "gl": "Lavar as mans e sentarse",
             "es": "Lavarse las manos y sentarse"
           },
-          "category": "complex",
-          "lamina": "pal_wash_your_hands_before_lunch"
+          "category": "complex"
         },
         {
           "id": "4_5.setembro.s3.why-do-we-wash-our-hands",
@@ -723,8 +670,7 @@
             "gl": "Encoller os ombros preguntando",
             "es": "Encoger los hombros preguntando"
           },
-          "category": "phrase",
-          "lamina": "pal_why_do_we_wash_our_hands"
+          "category": "phrase"
         },
         {
           "id": "4_5.setembro.s3.soap-first-then-water",
@@ -735,8 +681,7 @@
             "gl": "Facer os dous xestos en orde",
             "es": "Hacer los dos gestos en orden"
           },
-          "category": "complex",
-          "lamina": "pal_water_first_then_soap"
+          "category": "complex"
         },
         {
           "id": "4_5.setembro.s3.between-your-fingers-too",
@@ -747,8 +692,7 @@
             "gl": "Fregar entre os dedos",
             "es": "Frotar entre los dedos"
           },
-          "category": "phrase",
-          "lamina": "pal_between_your_fingers_too"
+          "category": "phrase"
         }
       ]
     },
@@ -768,8 +712,7 @@
             "gl": "Sinalar unha cara no panel",
             "es": "Señalar una cara en el panel"
           },
-          "category": "noun",
-          "lamina": "pal_feelings_chart"
+          "category": "noun"
         },
         {
           "id": "4_5.setembro.s4.calm-down-corner",
@@ -780,8 +723,7 @@
             "gl": "Sentarse no recuncho",
             "es": "Sentarse en el rincón"
           },
-          "category": "noun",
-          "lamina": "pal_calm_down_corner"
+          "category": "noun"
         },
         {
           "id": "4_5.setembro.s4.deep-breath",
@@ -792,8 +734,7 @@
             "gl": "Inchar a barriga de aire",
             "es": "Inflar la barriga de aire"
           },
-          "category": "noun",
-          "lamina": "pal_deep_breath"
+          "category": "noun"
         },
         {
           "id": "4_5.setembro.s4.feeling",
@@ -804,8 +745,7 @@
             "gl": "Pousar a man no peito",
             "es": "Poner la mano en el pecho"
           },
-          "category": "noun",
-          "lamina": "pal_feeling"
+          "category": "noun"
         },
         {
           "id": "4_5.setembro.s4.hug-buddy",
@@ -816,8 +756,7 @@
             "gl": "Abrazar un peluche",
             "es": "Abrazar un peluche"
           },
-          "category": "noun",
-          "lamina": "pal_hug_buddy"
+          "category": "noun"
         },
         {
           "id": "4_5.setembro.s4.kind-words",
@@ -828,8 +767,7 @@
             "gl": "Sorrir e falar suave",
             "es": "Sonreír y hablar suave"
           },
-          "category": "noun",
-          "lamina": "pal_kind_words"
+          "category": "noun"
         },
         {
           "id": "4_5.setembro.s4.friendship",
@@ -840,8 +778,7 @@
             "gl": "Xuntar os dedos índices",
             "es": "Juntar los dedos índices"
           },
-          "category": "noun",
-          "lamina": "pal_friendship"
+          "category": "noun"
         },
         {
           "id": "4_5.setembro.s4.calm-down",
@@ -852,8 +789,7 @@
             "gl": "Respirar amodo coas mans na barriga",
             "es": "Respirar despacio con las manos en la barriga"
           },
-          "category": "verb",
-          "lamina": "pal_calm_down"
+          "category": "verb"
         },
         {
           "id": "4_5.setembro.s4.express",
@@ -864,8 +800,7 @@
             "gl": "Abrir as mans dende o peito",
             "es": "Abrir las manos desde el pecho"
           },
-          "category": "verb",
-          "lamina": "pal_express"
+          "category": "verb"
         },
         {
           "id": "4_5.setembro.s4.comfort",
@@ -876,8 +811,7 @@
             "gl": "Pousar a man no ombro dun amigo",
             "es": "Poner la mano en el hombro de un amigo"
           },
-          "category": "verb",
-          "lamina": "pal_comfort"
+          "category": "verb"
         },
         {
           "id": "4_5.setembro.s4.apologise",
@@ -888,8 +822,7 @@
             "gl": "Pousar a man no peito e baixar a cabeza",
             "es": "Poner la mano en el pecho y bajar la cabeza"
           },
-          "category": "verb",
-          "lamina": "pal_apologise"
+          "category": "verb"
         },
         {
           "id": "4_5.setembro.s4.forgive",
@@ -900,8 +833,7 @@
             "gl": "Abrir os brazos a un amigo",
             "es": "Abrir los brazos a un amigo"
           },
-          "category": "verb",
-          "lamina": "pal_forgive"
+          "category": "verb"
         },
         {
           "id": "4_5.setembro.s4.cheerful-face",
@@ -912,8 +844,7 @@
             "gl": "Sorrir moi grande",
             "es": "Sonreír muy grande"
           },
-          "category": "adjective",
-          "lamina": "pal_cheerful_face"
+          "category": "adjective"
         },
         {
           "id": "4_5.setembro.s4.grumpy",
@@ -924,8 +855,7 @@
             "gl": "Cruzar os brazos e logo rir",
             "es": "Cruzar los brazos y luego reír"
           },
-          "category": "adjective",
-          "lamina": "pal_grumpy"
+          "category": "adjective"
         },
         {
           "id": "4_5.setembro.s4.frustrated",
@@ -936,8 +866,7 @@
             "gl": "Apertar os puños e soltalos",
             "es": "Apretar los puños y soltarlos"
           },
-          "category": "adjective",
-          "lamina": "pal_frustrated"
+          "category": "adjective"
         },
         {
           "id": "4_5.setembro.s4.peaceful-mind",
@@ -948,8 +877,7 @@
             "gl": "Pechar os ollos e respirar",
             "es": "Cerrar los ojos y respirar"
           },
-          "category": "adjective",
-          "lamina": "pal_peaceful_mind"
+          "category": "adjective"
         },
         {
           "id": "4_5.setembro.s4.how-do-you-feel",
@@ -960,8 +888,7 @@
             "gl": "Sinalar o panel das emocións",
             "es": "Señalar el panel de las emociones"
           },
-          "category": "phrase",
-          "lamina": "pal_how_do_you_feel"
+          "category": "phrase"
         },
         {
           "id": "4_5.setembro.s4.i-feel-happy-because-we-play",
@@ -972,8 +899,7 @@
             "gl": "Sorrir e bater palmas",
             "es": "Sonreír y dar palmas"
           },
-          "category": "complex",
-          "lamina": "pal_i_feel_happy_because_we_play"
+          "category": "complex"
         },
         {
           "id": "4_5.setembro.s4.i-m-sorry",
@@ -984,8 +910,7 @@
             "gl": "Pousar a man no peito",
             "es": "Poner la mano en el pecho"
           },
-          "category": "phrase",
-          "lamina": "pal_i_m_sorry"
+          "category": "phrase"
         },
         {
           "id": "4_5.setembro.s4.that-s-ok",
@@ -996,8 +921,7 @@
             "gl": "Sorrir e abrir as mans",
             "es": "Sonreír y abrir las manos"
           },
-          "category": "phrase",
-          "lamina": "pal_that_s_ok"
+          "category": "phrase"
         }
       ]
     }

@@ -45,8 +45,7 @@
             "gl": "Seguir unha liña co dedo",
             "es": "Seguir una línea con el dedo"
           },
-          "category": "noun",
-          "lamina": "pal_route"
+          "category": "noun"
         },
         {
           "id": "4_5.xaneiro.s1.landmark",
@@ -57,8 +56,7 @@
             "gl": "Sinalar algo grande e coñecido",
             "es": "Señalar algo grande y conocido"
           },
-          "category": "noun",
-          "lamina": "pal_landmark"
+          "category": "noun"
         },
         {
           "id": "4_5.xaneiro.s1.street-sign",
@@ -69,8 +67,7 @@
             "gl": "Ler unha placa imaxinaria",
             "es": "Leer una placa imaginaria"
           },
-          "category": "noun",
-          "lamina": "pal_street_sign"
+          "category": "noun"
         },
         {
           "id": "4_5.xaneiro.s1.town-square",
@@ -81,8 +78,7 @@
             "gl": "Debuxar unha praza no chan",
             "es": "Dibujar una plaza en el suelo"
           },
-          "category": "noun",
-          "lamina": "pal_town_square"
+          "category": "noun"
         },
         {
           "id": "4_5.xaneiro.s1.town-hall",
@@ -93,8 +89,7 @@
             "gl": "Facer unha torre coas mans",
             "es": "Hacer una torre con las manos"
           },
-          "category": "noun",
-          "lamina": "pal_town_hall"
+          "category": "noun"
         },
         {
           "id": "4_5.xaneiro.s1.follow-the-map",
@@ -105,8 +100,7 @@
             "gl": "Camiñar sinalando o mapa",
             "es": "Caminar señalando el mapa"
           },
-          "category": "verb",
-          "lamina": "pal_follow_the_map"
+          "category": "verb"
         },
         {
           "id": "4_5.xaneiro.s1.turn-left",
@@ -129,8 +123,7 @@
             "gl": "Xirar cara á dereita",
             "es": "Girar hacia la derecha"
           },
-          "category": "verb",
-          "lamina": "pal_turn_right"
+          "category": "verb"
         },
         {
           "id": "4_5.xaneiro.s1.go-straight-on",
@@ -141,8 +134,7 @@
             "gl": "Camiñar recto sen xirar",
             "es": "Caminar recto sin girar"
           },
-          "category": "verb",
-          "lamina": "pal_go_straight_on"
+          "category": "verb"
         },
         {
           "id": "4_5.xaneiro.s1.find-the-way",
@@ -153,8 +145,7 @@
             "gl": "Mirar o mapa e sinalar",
             "es": "Mirar el mapa y señalar"
           },
-          "category": "verb",
-          "lamina": "pal_find_the_way"
+          "category": "verb"
         },
         {
           "id": "4_5.xaneiro.s1.left",
@@ -177,8 +168,7 @@
             "gl": "Levantar a man dereita",
             "es": "Levantar la mano derecha"
           },
-          "category": "adjective",
-          "lamina": "pal_right_hand"
+          "category": "adjective"
         },
         {
           "id": "4_5.xaneiro.s1.opposite",
@@ -189,8 +179,7 @@
             "gl": "Sinalar o outro lado",
             "es": "Señalar el otro lado"
           },
-          "category": "adjective",
-          "lamina": "pal_opposite"
+          "category": "adjective"
         },
         {
           "id": "4_5.xaneiro.s1.lost",
@@ -201,8 +190,7 @@
             "gl": "Mirar arredor sen saber",
             "es": "Mirar alrededor sin saber"
           },
-          "category": "adjective",
-          "lamina": "pal_lost"
+          "category": "adjective"
         },
         {
           "id": "4_5.xaneiro.s1.where-are-we-on-the-map",
@@ -213,8 +201,7 @@
             "gl": "Sinalar o mapa",
             "es": "Señalar el mapa"
           },
-          "category": "phrase",
-          "lamina": "pal_where_are_we_on_the_map"
+          "category": "phrase"
         },
         {
           "id": "4_5.xaneiro.s1.turn-left-at-the-square",
@@ -225,8 +212,7 @@
             "gl": "Camiñar e xirar á esquerda",
             "es": "Caminar y girar a la izquierda"
           },
-          "category": "complex",
-          "lamina": "pal_turn_left_at_the_square"
+          "category": "complex"
         },
         {
           "id": "4_5.xaneiro.s1.straight-on-then-right",
@@ -237,8 +223,7 @@
             "gl": "Camiñar recto e xirar",
             "es": "Caminar recto y girar"
           },
-          "category": "complex",
-          "lamina": "pal_straight_on_then_right"
+          "category": "complex"
         },
         {
           "id": "4_5.xaneiro.s1.we-found-it",
@@ -249,8 +234,7 @@
             "gl": "Bater palmas",
             "es": "Dar palmas"
           },
-          "category": "phrase",
-          "lamina": "pal_we_found_it"
+          "category": "phrase"
         }
       ]
     },
@@ -282,8 +266,7 @@
             "gl": "Pasar a man por riba",
             "es": "Pasar la mano por encima"
           },
-          "category": "noun",
-          "lamina": "pal_overpass"
+          "category": "noun"
         },
         {
           "id": "4_5.xaneiro.s2.gap",
@@ -294,8 +277,7 @@
             "gl": "Pasar por un oco entre dúas cadeiras",
             "es": "Pasar por un hueco entre dos sillas"
           },
-          "category": "noun",
-          "lamina": "pal_gap"
+          "category": "noun"
         },
         {
           "id": "4_5.xaneiro.s2.obstacle-course",
@@ -306,8 +288,7 @@
             "gl": "Superar os obstáculos",
             "es": "Superar los obstáculos"
           },
-          "category": "noun",
-          "lamina": "pal_obstacle_course"
+          "category": "noun"
         },
         {
           "id": "4_5.xaneiro.s2.hoop-tunnel",
@@ -318,8 +299,7 @@
             "gl": "Pasar polos aros",
             "es": "Pasar por los aros"
           },
-          "category": "noun",
-          "lamina": "pal_hoop_tunnel"
+          "category": "noun"
         },
         {
           "id": "4_5.xaneiro.s2.mat-path",
@@ -330,8 +310,7 @@
             "gl": "Camiñar polos colchóns",
             "es": "Caminar por las colchonetas"
           },
-          "category": "noun",
-          "lamina": "pal_mat_path"
+          "category": "noun"
         },
         {
           "id": "4_5.xaneiro.s2.rope-bridge",
@@ -342,8 +321,7 @@
             "gl": "Camiñar agarrándose",
             "es": "Caminar agarrándose"
           },
-          "category": "noun",
-          "lamina": "pal_rope_bridge"
+          "category": "noun"
         },
         {
           "id": "4_5.xaneiro.s2.walk-across",
@@ -354,8 +332,7 @@
             "gl": "Camiñar dun lado ao outro",
             "es": "Caminar de un lado al otro"
           },
-          "category": "verb",
-          "lamina": "pal_walk_across"
+          "category": "verb"
         },
         {
           "id": "4_5.xaneiro.s2.step-between",
@@ -366,8 +343,7 @@
             "gl": "Pisar entre dous aros",
             "es": "Pisar entre dos aros"
           },
-          "category": "verb",
-          "lamina": "pal_step_between"
+          "category": "verb"
         },
         {
           "id": "4_5.xaneiro.s2.crawl-under",
@@ -378,8 +354,7 @@
             "gl": "Gatear baixo a mesa",
             "es": "Gatear bajo la mesa"
           },
-          "category": "verb",
-          "lamina": "pal_crawl_under"
+          "category": "verb"
         },
         {
           "id": "4_5.xaneiro.s2.climb-over",
@@ -390,8 +365,7 @@
             "gl": "Pasar a perna por riba",
             "es": "Pasar la pierna por encima"
           },
-          "category": "verb",
-          "lamina": "pal_climb_over"
+          "category": "verb"
         },
         {
           "id": "4_5.xaneiro.s2.go-around",
@@ -402,8 +376,7 @@
             "gl": "Camiñar arredor dun cono",
             "es": "Caminar alrededor de un cono"
           },
-          "category": "verb",
-          "lamina": "pal_go_around"
+          "category": "verb"
         },
         {
           "id": "4_5.xaneiro.s2.between",
@@ -414,8 +387,7 @@
             "gl": "Poñerse entre dous amigos",
             "es": "Ponerse entre dos amigos"
           },
-          "category": "adjective",
-          "lamina": "pal_between"
+          "category": "adjective"
         },
         {
           "id": "4_5.xaneiro.s2.above",
@@ -426,8 +398,7 @@
             "gl": "Sinalar por riba da cabeza",
             "es": "Señalar por encima de la cabeza"
           },
-          "category": "adjective",
-          "lamina": "pal_above"
+          "category": "adjective"
         },
         {
           "id": "4_5.xaneiro.s2.below",
@@ -438,8 +409,7 @@
             "gl": "Sinalar debaixo da mesa",
             "es": "Señalar debajo de la mesa"
           },
-          "category": "adjective",
-          "lamina": "pal_below"
+          "category": "adjective"
         },
         {
           "id": "4_5.xaneiro.s2.beside",
@@ -450,8 +420,7 @@
             "gl": "Poñerse ao lado dun amigo",
             "es": "Ponerse al lado de un amigo"
           },
-          "category": "adjective",
-          "lamina": "pal_beside"
+          "category": "adjective"
         },
         {
           "id": "4_5.xaneiro.s2.crawl-under-the-table",
@@ -462,8 +431,7 @@
             "gl": "Gatear baixo a mesa",
             "es": "Gatear bajo la mesa"
           },
-          "category": "complex",
-          "lamina": "pal_crawl_under_the_table"
+          "category": "complex"
         },
         {
           "id": "4_5.xaneiro.s2.step-between-the-hoops",
@@ -474,8 +442,7 @@
             "gl": "Pisar entre os aros",
             "es": "Pisar entre los aros"
           },
-          "category": "complex",
-          "lamina": "pal_step_between_the_hoops"
+          "category": "complex"
         },
         {
           "id": "4_5.xaneiro.s2.over-or-under",
@@ -486,8 +453,7 @@
             "gl": "Sinalar arriba e abaixo",
             "es": "Señalar arriba y abajo"
           },
-          "category": "phrase",
-          "lamina": "pal_over_or_under"
+          "category": "phrase"
         },
         {
           "id": "4_5.xaneiro.s2.well-done-explorer",
@@ -498,8 +464,7 @@
             "gl": "Levantar o polgar",
             "es": "Levantar el pulgar"
           },
-          "category": "phrase",
-          "lamina": "pal_well_done_explorer"
+          "category": "phrase"
         }
       ]
     },
@@ -555,8 +520,7 @@
             "gl": "Conducir un volante grande",
             "es": "Conducir un volante grande"
           },
-          "category": "noun",
-          "lamina": "pal_lorry"
+          "category": "noun"
         },
         {
           "id": "4_5.xaneiro.s3.cable-car",
@@ -567,8 +531,7 @@
             "gl": "Subir a man amodo",
             "es": "Subir la mano despacio"
           },
-          "category": "noun",
-          "lamina": "pal_cable_car"
+          "category": "noun"
         },
         {
           "id": "4_5.xaneiro.s3.escalator",
@@ -579,8 +542,7 @@
             "gl": "Quedar quieto mentres sobe",
             "es": "Quedarse quieto mientras sube"
           },
-          "category": "noun",
-          "lamina": "pal_escalator"
+          "category": "noun"
         },
         {
           "id": "4_5.xaneiro.s3.timetable",
@@ -591,8 +553,7 @@
             "gl": "Sinalar horas nun reloxo",
             "es": "Señalar horas en un reloj"
           },
-          "category": "noun",
-          "lamina": "pal_timetable"
+          "category": "noun"
         },
         {
           "id": "4_5.xaneiro.s3.hail-a-taxi",
@@ -603,8 +564,7 @@
             "gl": "Levantar a man na beirarrúa",
             "es": "Levantar la mano en la acera"
           },
-          "category": "verb",
-          "lamina": "pal_hail_a_taxi"
+          "category": "verb"
         },
         {
           "id": "4_5.xaneiro.s3.buckle-up",
@@ -615,8 +575,7 @@
             "gl": "Cruzar o cinto no peito",
             "es": "Cruzar el cinturón en el pecho"
           },
-          "category": "verb",
-          "lamina": "pal_buckle_up"
+          "category": "verb"
         },
         {
           "id": "4_5.xaneiro.s3.arrive",
@@ -639,8 +598,7 @@
             "gl": "Acenar e marchar",
             "es": "Saludar e irse"
           },
-          "category": "verb",
-          "lamina": "pal_depart"
+          "category": "verb"
         },
         {
           "id": "4_5.xaneiro.s3.transfer",
@@ -651,8 +609,7 @@
             "gl": "Cambiar dun sitio a outro",
             "es": "Cambiar de un sitio a otro"
           },
-          "category": "verb",
-          "lamina": "pal_transfer"
+          "category": "verb"
         },
         {
           "id": "4_5.xaneiro.s3.on-time",
@@ -663,8 +620,7 @@
             "gl": "Sinalar o reloxo e sorrir",
             "es": "Señalar el reloj y sonreír"
           },
-          "category": "adjective",
-          "lamina": "pal_on_time"
+          "category": "adjective"
         },
         {
           "id": "4_5.xaneiro.s3.late",
@@ -675,8 +631,7 @@
             "gl": "Correr mirando o reloxo",
             "es": "Correr mirando el reloj"
           },
-          "category": "adjective",
-          "lamina": "pal_late"
+          "category": "adjective"
         },
         {
           "id": "4_5.xaneiro.s3.electric",
@@ -687,8 +642,7 @@
             "gl": "Facer «zzz» coa voz",
             "es": "Hacer «zzz» con la voz"
           },
-          "category": "adjective",
-          "lamina": "pal_electric"
+          "category": "adjective"
         },
         {
           "id": "4_5.xaneiro.s3.crowded-bus",
@@ -699,8 +653,7 @@
             "gl": "Apertarse xuntos",
             "es": "Apretarse juntos"
           },
-          "category": "adjective",
-          "lamina": "pal_crowded_bus"
+          "category": "adjective"
         },
         {
           "id": "4_5.xaneiro.s3.which-bus-goes-to-the-beach",
@@ -711,8 +664,7 @@
             "gl": "Sinalar o horario",
             "es": "Señalar el horario"
           },
-          "category": "phrase",
-          "lamina": "pal_which_bus_goes_to_the_beach"
+          "category": "phrase"
         },
         {
           "id": "4_5.xaneiro.s3.seat-belts-on-please",
@@ -723,8 +675,7 @@
             "gl": "Poñer o cinto",
             "es": "Ponerse el cinturón"
           },
-          "category": "phrase",
-          "lamina": "pal_seat_belts_on_please"
+          "category": "phrase"
         },
         {
           "id": "4_5.xaneiro.s3.the-tram-is-faster-than-the-bus",
@@ -735,8 +686,7 @@
             "gl": "Mover as mans rápido e amodo",
             "es": "Mover las manos rápido y despacio"
           },
-          "category": "complex",
-          "lamina": "pal_the_tram_is_faster_than_the_bus"
+          "category": "complex"
         },
         {
           "id": "4_5.xaneiro.s3.next-stop-please",
@@ -747,8 +697,7 @@
             "gl": "Premer o botón",
             "es": "Pulsar el botón"
           },
-          "category": "phrase",
-          "lamina": "pal_next_stop_please"
+          "category": "phrase"
         }
       ]
     },
@@ -804,8 +753,7 @@
             "gl": "Entregar unha carta",
             "es": "Entregar una carta"
           },
-          "category": "noun",
-          "lamina": "pal_postman"
+          "category": "noun"
         },
         {
           "id": "4_5.xaneiro.s4.farmer",
@@ -828,8 +776,7 @@
             "gl": "Acariñar un animal de peluche",
             "es": "Acariciar un animal de peluche"
           },
-          "category": "noun",
-          "lamina": "pal_vet"
+          "category": "noun"
         },
         {
           "id": "4_5.xaneiro.s4.builder",
@@ -840,8 +787,7 @@
             "gl": "Poñer ladrillos imaxinarios",
             "es": "Poner ladrillos imaginarios"
           },
-          "category": "noun",
-          "lamina": "pal_builder"
+          "category": "noun"
         },
         {
           "id": "4_5.xaneiro.s4.put-out-a-fire",
@@ -852,8 +798,7 @@
             "gl": "Mover a mangueira",
             "es": "Mover la manguera"
           },
-          "category": "verb",
-          "lamina": "pal_put_out_a_fire"
+          "category": "verb"
         },
         {
           "id": "4_5.xaneiro.s4.deliver",
@@ -864,8 +809,7 @@
             "gl": "Entregar paquetes",
             "es": "Entregar paquetes"
           },
-          "category": "verb",
-          "lamina": "pal_deliver"
+          "category": "verb"
         },
         {
           "id": "4_5.xaneiro.s4.knead",
@@ -876,8 +820,7 @@
             "gl": "Amasar coas palmas",
             "es": "Amasar con las palmas"
           },
-          "category": "verb",
-          "lamina": "pal_knead"
+          "category": "verb"
         },
         {
           "id": "4_5.xaneiro.s4.look-after-animals",
@@ -888,8 +831,7 @@
             "gl": "Acariñar e dar de comer",
             "es": "Acariciar y dar de comer"
           },
-          "category": "verb",
-          "lamina": "pal_look_after_animals"
+          "category": "verb"
         },
         {
           "id": "4_5.xaneiro.s4.direct-traffic",
@@ -900,8 +842,7 @@
             "gl": "Mover os brazos dando paso",
             "es": "Mover los brazos dando paso"
           },
-          "category": "verb",
-          "lamina": "pal_direct_traffic"
+          "category": "verb"
         },
         {
           "id": "4_5.xaneiro.s4.diligent",
@@ -912,8 +853,7 @@
             "gl": "Secar a fronte co brazo",
             "es": "Secarse la frente con el brazo"
           },
-          "category": "adjective",
-          "lamina": "pal_diligent"
+          "category": "adjective"
         },
         {
           "id": "4_5.xaneiro.s4.useful",
@@ -924,8 +864,7 @@
             "gl": "Levantar unha ferramenta",
             "es": "Levantar una herramienta"
           },
-          "category": "adjective",
-          "lamina": "pal_useful"
+          "category": "adjective"
         },
         {
           "id": "4_5.xaneiro.s4.uniformed",
@@ -936,8 +875,7 @@
             "gl": "Estirar a roupa",
             "es": "Estirar la ropa"
           },
-          "category": "adjective",
-          "lamina": "pal_uniformed"
+          "category": "adjective"
         },
         {
           "id": "4_5.xaneiro.s4.early-rising",
@@ -948,8 +886,7 @@
             "gl": "Espreguizarse cedo",
             "es": "Desperezarse temprano"
           },
-          "category": "adjective",
-          "lamina": "pal_early_rising"
+          "category": "adjective"
         },
         {
           "id": "4_5.xaneiro.s4.what-do-you-want-to-be",
@@ -960,8 +897,7 @@
             "gl": "Sinalar varios oficios",
             "es": "Señalar varios oficios"
           },
-          "category": "phrase",
-          "lamina": "pal_what_do_you_want_to_be"
+          "category": "phrase"
         },
         {
           "id": "4_5.xaneiro.s4.i-want-to-be-a-baker",
@@ -972,8 +908,7 @@
             "gl": "Amasar pan",
             "es": "Amasar pan"
           },
-          "category": "phrase",
-          "lamina": "pal_i_want_to_be_a_baker"
+          "category": "phrase"
         },
         {
           "id": "4_5.xaneiro.s4.the-vet-helps-animals-because-she-loves-them",
@@ -984,8 +919,7 @@
             "gl": "Acariñar un peluche",
             "es": "Acariciar un peluche"
           },
-          "category": "complex",
-          "lamina": "pal_the_vet_helps_animals_because_she_loves_them"
+          "category": "complex"
         },
         {
           "id": "4_5.xaneiro.s4.thank-you-firefighter",
@@ -996,8 +930,7 @@
             "gl": "Acenar ao bombeiro",
             "es": "Saludar al bombero"
           },
-          "category": "phrase",
-          "lamina": "pal_thank_you_firefighter"
+          "category": "phrase"
         }
       ]
     }

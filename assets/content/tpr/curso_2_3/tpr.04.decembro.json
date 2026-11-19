@@ -21,8 +21,7 @@
             "gl": "Saltar dentro dunha poza pintada",
             "es": "Saltar dentro de un charco pintado"
           },
-          "category": "noun",
-          "lamina": "pal_puddle_jump"
+          "category": "noun"
         },
         {
           "id": "2_3.decembro.s1.wellington-boots",
@@ -45,8 +44,7 @@
             "gl": "Poñer o chapeu de choiva",
             "es": "Ponerse el gorro de lluvia"
           },
-          "category": "noun",
-          "lamina": "pal_rain_hat"
+          "category": "noun"
         },
         {
           "id": "2_3.decembro.s1.rainwater",
@@ -57,8 +55,7 @@
             "gl": "Coller auga de choiva nun vaso",
             "es": "Coger agua de lluvia en un vaso"
           },
-          "category": "noun",
-          "lamina": "pal_rainwater"
+          "category": "noun"
         },
         {
           "id": "2_3.decembro.s1.drain",
@@ -69,8 +66,7 @@
             "gl": "Sinalar a auga que marcha",
             "es": "Señalar el agua que se va"
           },
-          "category": "noun",
-          "lamina": "pal_drain"
+          "category": "noun"
         },
         {
           "id": "2_3.decembro.s1.gutter",
@@ -81,8 +77,7 @@
             "gl": "Seguir a auga que baixa",
             "es": "Seguir el agua que baja"
           },
-          "category": "noun",
-          "lamina": "pal_gutter"
+          "category": "noun"
         },
         {
           "id": "2_3.decembro.s1.splash-zone",
@@ -93,8 +88,7 @@
             "gl": "Sinalar a zona das pozas",
             "es": "Señalar la zona de los charcos"
           },
-          "category": "noun",
-          "lamina": "pal_splash_zone"
+          "category": "noun"
         },
         {
           "id": "2_3.decembro.s1.jump-in",
@@ -117,8 +111,7 @@
             "gl": "Saltar fóra da poza",
             "es": "Saltar fuera del charco"
           },
-          "category": "verb",
-          "lamina": "pal_jump_out"
+          "category": "verb"
         },
         {
           "id": "2_3.decembro.s1.splash-around",
@@ -129,8 +122,7 @@
             "gl": "Pisar forte na poza",
             "es": "Pisar fuerte en el charco"
           },
-          "category": "verb",
-          "lamina": "pal_splash_around"
+          "category": "verb"
         },
         {
           "id": "2_3.decembro.s1.wade",
@@ -141,8 +133,7 @@
             "gl": "Levantar moito as pernas",
             "es": "Levantar mucho las piernas"
           },
-          "category": "verb",
-          "lamina": "pal_wade"
+          "category": "verb"
         },
         {
           "id": "2_3.decembro.s1.pull-on-boots",
@@ -153,8 +144,7 @@
             "gl": "Tirar das botas cara arriba",
             "es": "Tirar de las botas hacia arriba"
           },
-          "category": "verb",
-          "lamina": "pal_pull_on_boots"
+          "category": "verb"
         },
         {
           "id": "2_3.decembro.s1.soggy",
@@ -165,8 +155,7 @@
             "gl": "Espremer unha luva mollada",
             "es": "Escurrir un guante mojado"
           },
-          "category": "adjective",
-          "lamina": "pal_soggy"
+          "category": "adjective"
         },
         {
           "id": "2_3.decembro.s1.squelchy",
@@ -177,8 +166,7 @@
             "gl": "Pisar e facer «chof»",
             "es": "Pisar y hacer «chof»"
           },
-          "category": "adjective",
-          "lamina": "pal_squelchy"
+          "category": "adjective"
         },
         {
           "id": "2_3.decembro.s1.rubbery",
@@ -189,8 +177,7 @@
             "gl": "Tocar a bota de goma",
             "es": "Tocar la bota de goma"
           },
-          "category": "adjective",
-          "lamina": "pal_rubbery"
+          "category": "adjective"
         },
         {
           "id": "2_3.decembro.s1.waterproof",
@@ -201,8 +188,7 @@
             "gl": "Deixar esvarar auga polo impermeable",
             "es": "Dejar resbalar agua por el impermeable"
           },
-          "category": "adjective",
-          "lamina": "pal_waterproof"
+          "category": "adjective"
         },
         {
           "id": "2_3.decembro.s1.splash-splash",
@@ -213,8 +199,7 @@
             "gl": "Saltar dúas veces na poza",
             "es": "Saltar dos veces en el charco"
           },
-          "category": "phrase",
-          "lamina": "pal_splash_splash"
+          "category": "phrase"
         },
         {
           "id": "2_3.decembro.s1.boots-on-let-s-go",
@@ -225,8 +210,7 @@
             "gl": "Pisar forte cara á porta",
             "es": "Pisar fuerte hacia la puerta"
           },
-          "category": "phrase",
-          "lamina": "pal_boots_on_let_s_go"
+          "category": "phrase"
         },
         {
           "id": "2_3.decembro.s1.in-the-puddle",
@@ -237,8 +221,7 @@
             "gl": "Saltar e quedar dentro",
             "es": "Saltar y quedarse dentro"
           },
-          "category": "complex",
-          "lamina": "pal_in_the_puddle"
+          "category": "complex"
         },
         {
           "id": "2_3.decembro.s1.out-of-the-puddle",
@@ -249,8 +232,7 @@
             "gl": "Saltar e saír",
             "es": "Saltar y salir"
           },
-          "category": "complex",
-          "lamina": "pal_out_of_the_puddle"
+          "category": "complex"
         }
       ]
     },
@@ -270,8 +252,7 @@
             "gl": "Facer unha nube cos brazos",
             "es": "Hacer una nube con los brazos"
           },
-          "category": "noun",
-          "lamina": "pal_rain_cloud"
+          "category": "noun"
         },
         {
           "id": "2_3.decembro.s2.thunder",
@@ -282,8 +263,7 @@
             "gl": "Bater nas pernas moi forte",
             "es": "Golpear en las piernas muy fuerte"
           },
-          "category": "noun",
-          "lamina": "pal_thunder"
+          "category": "noun"
         },
         {
           "id": "2_3.decembro.s2.lightning",
@@ -294,8 +274,7 @@
             "gl": "Debuxar un zigzag no aire",
             "es": "Dibujar un zigzag en el aire"
           },
-          "category": "noun",
-          "lamina": "pal_lightning"
+          "category": "noun"
         },
         {
           "id": "2_3.decembro.s2.rain-jacket",
@@ -306,8 +285,7 @@
             "gl": "Poñer a chaqueta e a carapucha",
             "es": "Ponerse la chaqueta y la capucha"
           },
-          "category": "noun",
-          "lamina": "pal_rain_jacket"
+          "category": "noun"
         },
         {
           "id": "2_3.decembro.s2.weather-chart",
@@ -318,8 +296,7 @@
             "gl": "Pegar o símbolo da choiva",
             "es": "Pegar el símbolo de la lluvia"
           },
-          "category": "noun",
-          "lamina": "pal_weather_chart"
+          "category": "noun"
         },
         {
           "id": "2_3.decembro.s2.storm",
@@ -330,8 +307,7 @@
             "gl": "Mover todo o corpo forte",
             "es": "Mover todo el cuerpo fuerte"
           },
-          "category": "noun",
-          "lamina": "pal_storm"
+          "category": "noun"
         },
         {
           "id": "2_3.decembro.s2.shelter",
@@ -342,8 +318,7 @@
             "gl": "Meterse baixo unha mesa",
             "es": "Meterse bajo una mesa"
           },
-          "category": "noun",
-          "lamina": "pal_shelter"
+          "category": "noun"
         },
         {
           "id": "2_3.decembro.s2.pour-down",
@@ -366,8 +341,7 @@
             "gl": "Facer «brrum» coa voz",
             "es": "Hacer «brrum» con la voz"
           },
-          "category": "verb",
-          "lamina": "pal_rumble"
+          "category": "verb"
         },
         {
           "id": "2_3.decembro.s2.flash",
@@ -378,8 +352,7 @@
             "gl": "Abrir as mans de súpeto",
             "es": "Abrir las manos de golpe"
           },
-          "category": "verb",
-          "lamina": "pal_flash"
+          "category": "verb"
         },
         {
           "id": "2_3.decembro.s2.take-cover",
@@ -390,8 +363,7 @@
             "gl": "Tapar a cabeza coas mans",
             "es": "Taparse la cabeza con las manos"
           },
-          "category": "verb",
-          "lamina": "pal_take_cover"
+          "category": "verb"
         },
         {
           "id": "2_3.decembro.s2.pitter-pat",
@@ -402,8 +374,7 @@
             "gl": "Bater cos dedos no chan",
             "es": "Golpear con los dedos en el suelo"
           },
-          "category": "verb",
-          "lamina": "pal_pitter_pat"
+          "category": "verb"
         },
         {
           "id": "2_3.decembro.s2.stormy",
@@ -426,8 +397,7 @@
             "gl": "Baixar a luz da sala",
             "es": "Bajar la luz de la sala"
           },
-          "category": "adjective",
-          "lamina": "pal_gloomy"
+          "category": "adjective"
         },
         {
           "id": "2_3.decembro.s2.rumbly",
@@ -438,8 +408,7 @@
             "gl": "Facer un son grave coa boca",
             "es": "Hacer un sonido grave con la boca"
           },
-          "category": "adjective",
-          "lamina": "pal_rumbly"
+          "category": "adjective"
         },
         {
           "id": "2_3.decembro.s2.dripping",
@@ -450,8 +419,7 @@
             "gl": "Mover os dedos cara abaixo",
             "es": "Mover los dedos hacia abajo"
           },
-          "category": "adjective",
-          "lamina": "pal_dripping"
+          "category": "adjective"
         },
         {
           "id": "2_3.decembro.s2.boom-goes-the-thunder",
@@ -462,8 +430,7 @@
             "gl": "Bater nas pernas unha vez forte",
             "es": "Golpear en las piernas una vez fuerte"
           },
-          "category": "phrase",
-          "lamina": "pal_boom_goes_the_thunder"
+          "category": "phrase"
         },
         {
           "id": "2_3.decembro.s2.it-s-pouring",
@@ -474,8 +441,7 @@
             "gl": "Baixar os brazos rápido",
             "es": "Bajar los brazos rápido"
           },
-          "category": "phrase",
-          "lamina": "pal_it_s_pouring"
+          "category": "phrase"
         },
         {
           "id": "2_3.decembro.s2.where-s-the-sun",
@@ -498,8 +464,7 @@
             "gl": "Meterse debaixo da mesa",
             "es": "Meterse debajo de la mesa"
           },
-          "category": "complex",
-          "lamina": "pal_under_the_table"
+          "category": "complex"
         }
       ]
     },
@@ -519,8 +484,7 @@
             "gl": "Meter a cabeza polo xersei",
             "es": "Meter la cabeza por el jersey"
           },
-          "category": "noun",
-          "lamina": "pal_jumper"
+          "category": "noun"
         },
         {
           "id": "2_3.decembro.s3.tights",
@@ -531,8 +495,7 @@
             "gl": "Tirar das medias cara arriba",
             "es": "Tirar de los leotardos hacia arriba"
           },
-          "category": "noun",
-          "lamina": "pal_tights"
+          "category": "noun"
         },
         {
           "id": "2_3.decembro.s3.earmuffs",
@@ -543,8 +506,7 @@
             "gl": "Tapar as orellas coas mans",
             "es": "Tapar las orejas con las manos"
           },
-          "category": "noun",
-          "lamina": "pal_earmuffs"
+          "category": "noun"
         },
         {
           "id": "2_3.decembro.s3.zipper-pull",
@@ -555,8 +517,7 @@
             "gl": "Coller o tirador e subilo",
             "es": "Coger el tirador y subirlo"
           },
-          "category": "noun",
-          "lamina": "pal_zipper_pull"
+          "category": "noun"
         },
         {
           "id": "2_3.decembro.s3.sleeve",
@@ -567,8 +528,7 @@
             "gl": "Meter o brazo pola manga",
             "es": "Meter el brazo por la manga"
           },
-          "category": "noun",
-          "lamina": "pal_sleeve"
+          "category": "noun"
         },
         {
           "id": "2_3.decembro.s3.hat-pompom",
@@ -579,8 +539,7 @@
             "gl": "Tocar o pompón do gorro",
             "es": "Tocar el pompón del gorro"
           },
-          "category": "noun",
-          "lamina": "pal_hat_pompom"
+          "category": "noun"
         },
         {
           "id": "2_3.decembro.s3.pocket",
@@ -591,8 +550,7 @@
             "gl": "Meter as mans nos petos",
             "es": "Meter las manos en los bolsillos"
           },
-          "category": "noun",
-          "lamina": "pal_pocket"
+          "category": "noun"
         },
         {
           "id": "2_3.decembro.s3.pull-on",
@@ -627,8 +585,7 @@
             "gl": "Meter un brazo e despois o outro",
             "es": "Meter un brazo y luego el otro"
           },
-          "category": "verb",
-          "lamina": "pal_put_arms_in"
+          "category": "verb"
         },
         {
           "id": "2_3.decembro.s3.fasten",
@@ -639,8 +596,7 @@
             "gl": "Abrochar un botón",
             "es": "Abrochar un botón"
           },
-          "category": "verb",
-          "lamina": "pal_fasten"
+          "category": "verb"
         },
         {
           "id": "2_3.decembro.s3.get-dressed",
@@ -651,8 +607,7 @@
             "gl": "Facer que se pon a roupa",
             "es": "Hacer que se pone la ropa"
           },
-          "category": "verb",
-          "lamina": "pal_get_dressed"
+          "category": "verb"
         },
         {
           "id": "2_3.decembro.s3.snuggly-jumper",
@@ -663,8 +618,7 @@
             "gl": "Abrazarse co xersei",
             "es": "Abrazarse con el jersey"
           },
-          "category": "adjective",
-          "lamina": "pal_snuggly_jumper"
+          "category": "adjective"
         },
         {
           "id": "2_3.decembro.s3.chunky",
@@ -675,8 +629,7 @@
             "gl": "Tocar un xersei groso",
             "es": "Tocar un jersey grueso"
           },
-          "category": "adjective",
-          "lamina": "pal_chunky"
+          "category": "adjective"
         },
         {
           "id": "2_3.decembro.s3.matching",
@@ -687,8 +640,7 @@
             "gl": "Amosar dúas luvas iguais",
             "es": "Enseñar dos guantes iguales"
           },
-          "category": "adjective",
-          "lamina": "pal_matching"
+          "category": "adjective"
         },
         {
           "id": "2_3.decembro.s3.back-to-front",
@@ -699,8 +651,7 @@
             "gl": "Poñer o gorro ao revés rindo",
             "es": "Poner el gorro al revés riendo"
           },
-          "category": "adjective",
-          "lamina": "pal_back_to_front"
+          "category": "adjective"
         },
         {
           "id": "2_3.decembro.s3.arms-up-high",
@@ -711,8 +662,7 @@
             "gl": "Levantar os brazos para o xersei",
             "es": "Levantar los brazos para el jersey"
           },
-          "category": "phrase",
-          "lamina": "pal_arms_up_high"
+          "category": "phrase"
         },
         {
           "id": "2_3.decembro.s3.where-s-your-hand",
@@ -723,8 +673,7 @@
             "gl": "Sacar a man pola manga",
             "es": "Sacar la mano por la manga"
           },
-          "category": "phrase",
-          "lamina": "pal_where_s_your_hand"
+          "category": "phrase"
         },
         {
           "id": "2_3.decembro.s3.zip-it-up",
@@ -747,8 +696,7 @@
             "gl": "Meter as mans nos petos",
             "es": "Meter las manos en los bolsillos"
           },
-          "category": "complex",
-          "lamina": "pal_hands_in_pockets"
+          "category": "complex"
         }
       ]
     },
@@ -768,8 +716,7 @@
             "gl": "Soprar a cunca de chocolate",
             "es": "Soplar la taza de chocolate"
           },
-          "category": "noun",
-          "lamina": "pal_hot_chocolate"
+          "category": "noun"
         },
         {
           "id": "2_3.decembro.s4.mug",
@@ -780,8 +727,7 @@
             "gl": "Coller a cunca coas dúas mans",
             "es": "Coger la taza con las dos manos"
           },
-          "category": "noun",
-          "lamina": "pal_mug"
+          "category": "noun"
         },
         {
           "id": "2_3.decembro.s4.rug-by-the-fire",
@@ -792,8 +738,7 @@
             "gl": "Sentarse na alfombra",
             "es": "Sentarse en la alfombra"
           },
-          "category": "noun",
-          "lamina": "pal_rug_by_the_fire"
+          "category": "noun"
         },
         {
           "id": "2_3.decembro.s4.picture-book",
@@ -804,8 +749,7 @@
             "gl": "Pasar as páxinas",
             "es": "Pasar las páginas"
           },
-          "category": "noun",
-          "lamina": "pal_picture_book"
+          "category": "noun"
         },
         {
           "id": "2_3.decembro.s4.radiator",
@@ -816,8 +760,7 @@
             "gl": "Achegar as mans ao radiador",
             "es": "Acercar las manos al radiador"
           },
-          "category": "noun",
-          "lamina": "pal_radiator"
+          "category": "noun"
         },
         {
           "id": "2_3.decembro.s4.bedtime-story",
@@ -828,8 +771,7 @@
             "gl": "Abrir un libro no colo",
             "es": "Abrir un libro en el regazo"
           },
-          "category": "noun",
-          "lamina": "pal_bedtime_story"
+          "category": "noun"
         },
         {
           "id": "2_3.decembro.s4.armchair",
@@ -840,8 +782,7 @@
             "gl": "Sentarse na butaca",
             "es": "Sentarse en el sillón"
           },
-          "category": "noun",
-          "lamina": "pal_armchair"
+          "category": "noun"
         },
         {
           "id": "2_3.decembro.s4.get-warm",
@@ -888,8 +829,7 @@
             "gl": "Pasar a páxina do libro",
             "es": "Pasar la página del libro"
           },
-          "category": "verb",
-          "lamina": "pal_turn_the_page"
+          "category": "verb"
         },
         {
           "id": "2_3.decembro.s4.stay-in",
@@ -900,8 +840,7 @@
             "gl": "Sinalar a casa e sentarse",
             "es": "Señalar la casa y sentarse"
           },
-          "category": "verb",
-          "lamina": "pal_stay_in"
+          "category": "verb"
         },
         {
           "id": "2_3.decembro.s4.cosy-corner",
@@ -912,8 +851,7 @@
             "gl": "Sentarse no recuncho con coxíns",
             "es": "Sentarse en el rincón con cojines"
           },
-          "category": "adjective",
-          "lamina": "pal_cosy_corner"
+          "category": "adjective"
         },
         {
           "id": "2_3.decembro.s4.steamy",
@@ -924,8 +862,7 @@
             "gl": "Soprar o vapor da cunca",
             "es": "Soplar el vapor de la taza"
           },
-          "category": "adjective",
-          "lamina": "pal_steamy"
+          "category": "adjective"
         },
         {
           "id": "2_3.decembro.s4.chocolatey",
@@ -936,8 +873,7 @@
             "gl": "Lamber os beizos",
             "es": "Relamerse"
           },
-          "category": "adjective",
-          "lamina": "pal_chocolatey"
+          "category": "adjective"
         },
         {
           "id": "2_3.decembro.s4.snowy-outside",
@@ -948,8 +884,7 @@
             "gl": "Sinalar a fiestra",
             "es": "Señalar la ventana"
           },
-          "category": "adjective",
-          "lamina": "pal_snowy_outside"
+          "category": "adjective"
         },
         {
           "id": "2_3.decembro.s4.is-it-warm",
@@ -960,8 +895,7 @@
             "gl": "Tocar a cunca con coidado",
             "es": "Tocar la taza con cuidado"
           },
-          "category": "phrase",
-          "lamina": "pal_is_it_warm"
+          "category": "phrase"
         },
         {
           "id": "2_3.decembro.s4.read-me-a-story",
@@ -972,8 +906,7 @@
             "gl": "Traer un libro",
             "es": "Traer un libro"
           },
-          "category": "phrase",
-          "lamina": "pal_read_me_a_story"
+          "category": "phrase"
         },
         {
           "id": "2_3.decembro.s4.inside-is-warm",
@@ -984,8 +917,7 @@
             "gl": "Abrazarse dentro da casa",
             "es": "Abrazarse dentro de casa"
           },
-          "category": "phrase",
-          "lamina": "pal_inside_is_warm"
+          "category": "phrase"
         },
         {
           "id": "2_3.decembro.s4.blanket-and-a-book",
@@ -996,8 +928,7 @@
             "gl": "Taparse e abrir un libro",
             "es": "Taparse y abrir un libro"
           },
-          "category": "complex",
-          "lamina": "pal_blanket_and_a_book"
+          "category": "complex"
         }
       ]
     }

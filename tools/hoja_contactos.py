@@ -226,6 +226,8 @@ def _recoger_items(modo: str) -> list[tuple[str, str, str]]:
             d = json.loads(fich.read_text(encoding="utf-8"))
             for s in d.get("semanas") or []:
                 for w in s.get("palabras") or []:
+                    if not w.get("lamina"):
+                        continue
                     k = w["en"].lower().strip(" .!?")
                     if k not in seen:
                         seen.add(k)

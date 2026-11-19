@@ -45,8 +45,7 @@
             "gl": "Poñerse diante e sinalar o camiño",
             "es": "Ponerse delante y señalar el camino"
           },
-          "category": "noun",
-          "lamina": "pal_leader"
+          "category": "noun"
         },
         {
           "id": "5_6.setembro.s1.idea",
@@ -57,8 +56,7 @@
             "gl": "Tocar a cabeza e abrir a man",
             "es": "Tocar la cabeza y abrir la mano"
           },
-          "category": "noun",
-          "lamina": "pal_idea"
+          "category": "noun"
         },
         {
           "id": "5_6.setembro.s1.opinion",
@@ -69,8 +67,7 @@
             "gl": "Pousar a man no peito e falar",
             "es": "Poner la mano en el pecho y hablar"
           },
-          "category": "noun",
-          "lamina": "pal_opinion"
+          "category": "noun"
         },
         {
           "id": "5_6.setembro.s1.majority",
@@ -81,8 +78,7 @@
             "gl": "Contar mans levantadas",
             "es": "Contar manos levantadas"
           },
-          "category": "noun",
-          "lamina": "pal_majority"
+          "category": "noun"
         },
         {
           "id": "5_6.setembro.s1.speaking-turn",
@@ -93,8 +89,7 @@
             "gl": "Pasar o micrófono imaxinario",
             "es": "Pasar el micrófono imaginario"
           },
-          "category": "noun",
-          "lamina": "pal_speaking_turn"
+          "category": "noun"
         },
         {
           "id": "5_6.setembro.s1.choose-together",
@@ -105,8 +100,7 @@
             "gl": "Levantar as mans todos",
             "es": "Levantar las manos todos"
           },
-          "category": "verb",
-          "lamina": "pal_choose_together"
+          "category": "verb"
         },
         {
           "id": "5_6.setembro.s1.suggest",
@@ -117,8 +111,7 @@
             "gl": "Abrir a man cara adiante",
             "es": "Abrir la mano hacia delante"
           },
-          "category": "verb",
-          "lamina": "pal_suggest"
+          "category": "verb"
         },
         {
           "id": "5_6.setembro.s1.listen-with-a-hand-to-the-ear",
@@ -129,8 +122,7 @@
             "gl": "Levar a man á orella",
             "es": "Llevar la mano a la oreja"
           },
-          "category": "verb",
-          "lamina": "pal_listen_with_a_hand_to_the_ear"
+          "category": "verb"
         },
         {
           "id": "5_6.setembro.s1.shake-on-it",
@@ -141,8 +133,7 @@
             "gl": "Darse a man co compañeiro",
             "es": "Estrecharse la mano con el compañero"
           },
-          "category": "verb",
-          "lamina": "pal_shake_on_it"
+          "category": "verb"
         },
         {
           "id": "5_6.setembro.s1.count-votes",
@@ -153,8 +144,7 @@
             "gl": "Contar mans cos dedos",
             "es": "Contar manos con los dedos"
           },
-          "category": "verb",
-          "lamina": "pal_count_votes"
+          "category": "verb"
         },
         {
           "id": "5_6.setembro.s1.democratic",
@@ -165,8 +155,7 @@
             "gl": "Levantar a man e agardar",
             "es": "Levantar la mano y esperar"
           },
-          "category": "adjective",
-          "lamina": "pal_democratic"
+          "category": "adjective"
         },
         {
           "id": "5_6.setembro.s1.thoughtful-idea",
@@ -177,8 +166,7 @@
             "gl": "Tocar a fronte amodo",
             "es": "Tocar la frente despacio"
           },
-          "category": "adjective",
-          "lamina": "pal_thoughtful_idea"
+          "category": "adjective"
         },
         {
           "id": "5_6.setembro.s1.unanimous",
@@ -189,8 +177,7 @@
             "gl": "Levantar todos a man",
             "es": "Levantar todos la mano"
           },
-          "category": "adjective",
-          "lamina": "pal_unanimous"
+          "category": "adjective"
         },
         {
           "id": "5_6.setembro.s1.fairest",
@@ -201,8 +188,7 @@
             "gl": "Poñer as mans iguais",
             "es": "Poner las manos iguales"
           },
-          "category": "adjective",
-          "lamina": "pal_fairest"
+          "category": "adjective"
         },
         {
           "id": "5_6.setembro.s1.who-agrees",
@@ -213,8 +199,7 @@
             "gl": "Levantar a man",
             "es": "Levantar la mano"
           },
-          "category": "phrase",
-          "lamina": "pal_who_agrees"
+          "category": "phrase"
         },
         {
           "id": "5_6.setembro.s1.let-s-vote",
@@ -225,8 +210,7 @@
             "gl": "Meter un papel na urna",
             "es": "Meter un papel en la urna"
           },
-          "category": "phrase",
-          "lamina": "pal_let_s_vote"
+          "category": "phrase"
         },
         {
           "id": "5_6.setembro.s1.most-of-us-chose-the-park",
@@ -237,8 +221,7 @@
             "gl": "Contar mans e sinalar",
             "es": "Contar manos y señalar"
           },
-          "category": "complex",
-          "lamina": "pal_most_of_us_chose_the_park"
+          "category": "complex"
         },
         {
           "id": "5_6.setembro.s1.i-think-that-because",
@@ -249,8 +232,7 @@
             "gl": "Tocar a cabeza e explicar",
             "es": "Tocar la cabeza y explicar"
           },
-          "category": "complex",
-          "lamina": "pal_i_think_so_because"
+          "category": "complex"
         }
       ]
     },
@@ -270,8 +252,7 @@
             "gl": "Poñer unha banda imaxinaria",
             "es": "Ponerse una banda imaginaria"
           },
-          "category": "noun",
-          "lamina": "pal_team_leader"
+          "category": "noun"
         },
         {
           "id": "5_6.setembro.s2.mission",
@@ -282,8 +263,7 @@
             "gl": "Sinalar un obxectivo",
             "es": "Señalar un objetivo"
           },
-          "category": "noun",
-          "lamina": "pal_mission"
+          "category": "noun"
         },
         {
           "id": "5_6.setembro.s2.challenge",
@@ -294,8 +274,7 @@
             "gl": "Poñer os puños fortes",
             "es": "Poner los puños fuertes"
           },
-          "category": "noun",
-          "lamina": "pal_challenge"
+          "category": "noun"
         },
         {
           "id": "5_6.setembro.s2.teamwork",
@@ -306,8 +285,7 @@
             "gl": "Xuntar as mans no centro",
             "es": "Juntar las manos en el centro"
           },
-          "category": "noun",
-          "lamina": "pal_teamwork"
+          "category": "noun"
         },
         {
           "id": "5_6.setembro.s2.role",
@@ -318,8 +296,7 @@
             "gl": "Sinalar a tarxeta do papel",
             "es": "Señalar la tarjeta del papel"
           },
-          "category": "noun",
-          "lamina": "pal_role"
+          "category": "noun"
         },
         {
           "id": "5_6.setembro.s2.badge",
@@ -330,8 +307,7 @@
             "gl": "Pousar unha insignia no peito",
             "es": "Poner una insignia en el pecho"
           },
-          "category": "noun",
-          "lamina": "pal_badge"
+          "category": "noun"
         },
         {
           "id": "5_6.setembro.s2.team-circle",
@@ -342,8 +318,7 @@
             "gl": "Xuntarse en círculo",
             "es": "Juntarse en círculo"
           },
-          "category": "noun",
-          "lamina": "pal_team_circle"
+          "category": "noun"
         },
         {
           "id": "5_6.setembro.s2.lead-the-way",
@@ -354,8 +329,7 @@
             "gl": "Camiñar diante sinalando",
             "es": "Caminar delante señalando"
           },
-          "category": "verb",
-          "lamina": "pal_lead_the_way"
+          "category": "verb"
         },
         {
           "id": "5_6.setembro.s2.encourage",
@@ -366,8 +340,7 @@
             "gl": "Bater palmas a un compañeiro",
             "es": "Dar palmas a un compañero"
           },
-          "category": "verb",
-          "lamina": "pal_encourage"
+          "category": "verb"
         },
         {
           "id": "5_6.setembro.s2.solve",
@@ -378,8 +351,7 @@
             "gl": "Xuntar dúas pezas",
             "es": "Juntar dos piezas"
           },
-          "category": "verb",
-          "lamina": "pal_solve"
+          "category": "verb"
         },
         {
           "id": "5_6.setembro.s2.decide",
@@ -390,8 +362,7 @@
             "gl": "Pensar e asentir",
             "es": "Pensar y asentir"
           },
-          "category": "verb",
-          "lamina": "pal_decide"
+          "category": "verb"
         },
         {
           "id": "5_6.setembro.s2.celebrate-as-a-team",
@@ -402,8 +373,7 @@
             "gl": "Chocar as mans todos",
             "es": "Chocar las manos todos"
           },
-          "category": "verb",
-          "lamina": "pal_celebrate_as_a_team"
+          "category": "verb"
         },
         {
           "id": "5_6.setembro.s2.supportive",
@@ -414,8 +384,7 @@
             "gl": "Pousar a man no ombro",
             "es": "Poner la mano en el hombro"
           },
-          "category": "adjective",
-          "lamina": "pal_supportive"
+          "category": "adjective"
         },
         {
           "id": "5_6.setembro.s2.determined",
@@ -426,8 +395,7 @@
             "gl": "Apertar os puños con forza",
             "es": "Apretar los puños con fuerza"
           },
-          "category": "adjective",
-          "lamina": "pal_determined"
+          "category": "adjective"
         },
         {
           "id": "5_6.setembro.s2.organised",
@@ -438,8 +406,7 @@
             "gl": "Poñer as cousas en fila",
             "es": "Poner las cosas en fila"
           },
-          "category": "adjective",
-          "lamina": "pal_organised"
+          "category": "adjective"
         },
         {
           "id": "5_6.setembro.s2.inclusive",
@@ -450,8 +417,7 @@
             "gl": "Abrir o círculo a outro",
             "es": "Abrir el círculo a otro"
           },
-          "category": "adjective",
-          "lamina": "pal_inclusive"
+          "category": "adjective"
         },
         {
           "id": "5_6.setembro.s2.everyone-can-play",
@@ -462,8 +428,7 @@
             "gl": "Abrir os brazos a todos",
             "es": "Abrir los brazos a todos"
           },
-          "category": "phrase",
-          "lamina": "pal_everyone_can_play"
+          "category": "phrase"
         },
         {
           "id": "5_6.setembro.s2.team-huddle-up",
@@ -474,8 +439,7 @@
             "gl": "Xuntarse en círculo",
             "es": "Juntarse en círculo"
           },
-          "category": "phrase",
-          "lamina": "pal_team_huddle_up"
+          "category": "phrase"
         },
         {
           "id": "5_6.setembro.s2.you-can-do-it",
@@ -486,8 +450,7 @@
             "gl": "Levantar o polgar",
             "es": "Levantar el pulgar"
           },
-          "category": "phrase",
-          "lamina": "pal_you_can_do_it"
+          "category": "phrase"
         },
         {
           "id": "5_6.setembro.s2.together-we-are-stronger",
@@ -498,8 +461,7 @@
             "gl": "Xuntar as mans e levantalas",
             "es": "Juntar las manos y levantarlas"
           },
-          "category": "complex",
-          "lamina": "pal_together_we_are_stronger"
+          "category": "complex"
         }
       ]
     },
@@ -519,8 +481,7 @@
             "gl": "Rascar a cabeza pensando",
             "es": "Rascarse la cabeza pensando"
           },
-          "category": "noun",
-          "lamina": "pal_problem"
+          "category": "noun"
         },
         {
           "id": "5_6.setembro.s3.solution",
@@ -531,8 +492,7 @@
             "gl": "Chiscar os dedos",
             "es": "Chasquear los dedos"
           },
-          "category": "noun",
-          "lamina": "pal_solution"
+          "category": "noun"
         },
         {
           "id": "5_6.setembro.s3.clue",
@@ -543,8 +503,7 @@
             "gl": "Sinalar algo cunha lupa",
             "es": "Señalar algo con una lupa"
           },
-          "category": "noun",
-          "lamina": "pal_clue"
+          "category": "noun"
         },
         {
           "id": "5_6.setembro.s3.puzzle-piece",
@@ -567,8 +526,7 @@
             "gl": "Levantar dous dedos",
             "es": "Levantar dos dedos"
           },
-          "category": "noun",
-          "lamina": "pal_plan_b"
+          "category": "noun"
         },
         {
           "id": "5_6.setembro.s3.question-mark",
@@ -579,8 +537,7 @@
             "gl": "Debuxar un signo no aire",
             "es": "Dibujar un signo en el aire"
           },
-          "category": "noun",
-          "lamina": "pal_question_mark"
+          "category": "noun"
         },
         {
           "id": "5_6.setembro.s3.answer",
@@ -591,8 +548,7 @@
             "gl": "Levantar a man e responder",
             "es": "Levantar la mano y responder"
           },
-          "category": "noun",
-          "lamina": "pal_answer"
+          "category": "noun"
         },
         {
           "id": "5_6.setembro.s3.think-hard",
@@ -603,8 +559,7 @@
             "gl": "Pousar o dedo na fronte",
             "es": "Poner el dedo en la frente"
           },
-          "category": "verb",
-          "lamina": "pal_think_hard"
+          "category": "verb"
         },
         {
           "id": "5_6.setembro.s3.try-again",
@@ -615,8 +570,7 @@
             "gl": "Volver ao principio",
             "es": "Volver al principio"
           },
-          "category": "verb",
-          "lamina": "pal_try_again"
+          "category": "verb"
         },
         {
           "id": "5_6.setembro.s3.figure-out",
@@ -627,8 +581,7 @@
             "gl": "Abrir os ollos de súpeto",
             "es": "Abrir los ojos de golpe"
           },
-          "category": "verb",
-          "lamina": "pal_figure_out"
+          "category": "verb"
         },
         {
           "id": "5_6.setembro.s3.test-an-idea",
@@ -639,8 +592,7 @@
             "gl": "Probar un xesto",
             "es": "Probar un gesto"
           },
-          "category": "verb",
-          "lamina": "pal_test_an_idea"
+          "category": "verb"
         },
         {
           "id": "5_6.setembro.s3.ask-for-help",
@@ -651,8 +603,7 @@
             "gl": "Levantar a man",
             "es": "Levantar la mano"
           },
-          "category": "verb",
-          "lamina": "pal_ask_for_help"
+          "category": "verb"
         },
         {
           "id": "5_6.setembro.s3.tricky",
@@ -663,8 +614,7 @@
             "gl": "Rascar a cabeza",
             "es": "Rascarse la cabeza"
           },
-          "category": "adjective",
-          "lamina": "pal_tricky"
+          "category": "adjective"
         },
         {
           "id": "5_6.setembro.s3.clever-idea",
@@ -675,8 +625,7 @@
             "gl": "Sinalar a cabeza sorrindo",
             "es": "Señalar la cabeza sonriendo"
           },
-          "category": "adjective",
-          "lamina": "pal_clever_idea"
+          "category": "adjective"
         },
         {
           "id": "5_6.setembro.s3.stuck",
@@ -687,8 +636,7 @@
             "gl": "Parar e encoller os ombros",
             "es": "Parar y encoger los hombros"
           },
-          "category": "adjective",
-          "lamina": "pal_stuck"
+          "category": "adjective"
         },
         {
           "id": "5_6.setembro.s3.solved",
@@ -699,8 +647,7 @@
             "gl": "Bater palmas",
             "es": "Dar palmas"
           },
-          "category": "adjective",
-          "lamina": "pal_solved"
+          "category": "adjective"
         },
         {
           "id": "5_6.setembro.s3.what-can-we-do",
@@ -711,8 +658,7 @@
             "gl": "Abrir as mans preguntando",
             "es": "Abrir las manos preguntando"
           },
-          "category": "phrase",
-          "lamina": "pal_what_can_we_do"
+          "category": "phrase"
         },
         {
           "id": "5_6.setembro.s3.let-s-try-another-way",
@@ -723,8 +669,7 @@
             "gl": "Xirar e empezar de novo",
             "es": "Girar y empezar de nuevo"
           },
-          "category": "phrase",
-          "lamina": "pal_let_s_try_another_way"
+          "category": "phrase"
         },
         {
           "id": "5_6.setembro.s3.if-it-doesn-t-work-we-try-again",
@@ -735,8 +680,7 @@
             "gl": "Facer e repetir",
             "es": "Hacer y repetir"
           },
-          "category": "complex",
-          "lamina": "pal_if_it_doesn_t_work_we_try_again"
+          "category": "complex"
         },
         {
           "id": "5_6.setembro.s3.we-solved-it-together",
@@ -747,8 +691,7 @@
             "gl": "Chocar as mans",
             "es": "Chocar las manos"
           },
-          "category": "phrase",
-          "lamina": "pal_we_solved_it_together"
+          "category": "phrase"
         }
       ]
     },
@@ -792,8 +735,7 @@
             "gl": "Enganchar os meniñeiros",
             "es": "Enganchar los meñiques"
           },
-          "category": "noun",
-          "lamina": "pal_pinky_promise"
+          "category": "noun"
         },
         {
           "id": "5_6.setembro.s4.timer",
@@ -816,8 +758,7 @@
             "gl": "Cambiar un obxecto cun amigo",
             "es": "Cambiar un objeto con un amigo"
           },
-          "category": "noun",
-          "lamina": "pal_swap"
+          "category": "noun"
         },
         {
           "id": "5_6.setembro.s4.class-charter",
@@ -828,8 +769,7 @@
             "gl": "Asinar un papel imaxinario",
             "es": "Firmar un papel imaginario"
           },
-          "category": "noun",
-          "lamina": "pal_class_charter"
+          "category": "noun"
         },
         {
           "id": "5_6.setembro.s4.signature",
@@ -840,8 +780,7 @@
             "gl": "Asinar no aire",
             "es": "Firmar en el aire"
           },
-          "category": "noun",
-          "lamina": "pal_signature"
+          "category": "noun"
         },
         {
           "id": "5_6.setembro.s4.make-a-deal",
@@ -852,8 +791,7 @@
             "gl": "Darse a man e asentir",
             "es": "Darse la mano y asentir"
           },
-          "category": "verb",
-          "lamina": "pal_make_a_deal"
+          "category": "verb"
         },
         {
           "id": "5_6.setembro.s4.keep-a-promise",
@@ -864,8 +802,7 @@
             "gl": "Pousar a man no peito",
             "es": "Poner la mano en el pecho"
           },
-          "category": "verb",
-          "lamina": "pal_keep_a_promise"
+          "category": "verb"
         },
         {
           "id": "5_6.setembro.s4.swap-toys",
@@ -876,8 +813,7 @@
             "gl": "Cambiar un xoguete",
             "es": "Cambiar un juguete"
           },
-          "category": "verb",
-          "lamina": "pal_swap_toys"
+          "category": "verb"
         },
         {
           "id": "5_6.setembro.s4.sign",
@@ -888,8 +824,7 @@
             "gl": "Escribir o nome no aire",
             "es": "Escribir el nombre en el aire"
           },
-          "category": "verb",
-          "lamina": "pal_sign"
+          "category": "verb"
         },
         {
           "id": "5_6.setembro.s4.set-a-timer",
@@ -900,8 +835,7 @@
             "gl": "Premer un botón imaxinario",
             "es": "Pulsar un botón imaginario"
           },
-          "category": "verb",
-          "lamina": "pal_set_a_timer"
+          "category": "verb"
         },
         {
           "id": "5_6.setembro.s4.agreed",
@@ -912,8 +846,7 @@
             "gl": "Asentir coa cabeza",
             "es": "Asentir con la cabeza"
           },
-          "category": "adjective",
-          "lamina": "pal_agreed"
+          "category": "adjective"
         },
         {
           "id": "5_6.setembro.s4.trustworthy",
@@ -924,8 +857,7 @@
             "gl": "Pousar a man no ombro",
             "es": "Poner la mano en el hombro"
           },
-          "category": "adjective",
-          "lamina": "pal_trustworthy"
+          "category": "adjective"
         },
         {
           "id": "5_6.setembro.s4.even",
@@ -936,8 +868,7 @@
             "gl": "Poñer as mans á mesma altura",
             "es": "Poner las manos a la misma altura"
           },
-          "category": "adjective",
-          "lamina": "pal_even"
+          "category": "adjective"
         },
         {
           "id": "5_6.setembro.s4.peaceful-solution",
@@ -948,8 +879,7 @@
             "gl": "Darse a man sorrindo",
             "es": "Darse la mano sonriendo"
           },
-          "category": "adjective",
-          "lamina": "pal_peaceful_solution"
+          "category": "adjective"
         },
         {
           "id": "5_6.setembro.s4.it-s-a-deal",
@@ -960,8 +890,7 @@
             "gl": "Darse a man",
             "es": "Darse la mano"
           },
-          "category": "phrase",
-          "lamina": "pal_it_s_a_deal"
+          "category": "phrase"
         },
         {
           "id": "5_6.setembro.s4.you-first-then-me",
@@ -972,8 +901,7 @@
             "gl": "Sinalar ao amigo e a si",
             "es": "Señalar al amigo y a sí mismo"
           },
-          "category": "phrase",
-          "lamina": "pal_you_first_then_me"
+          "category": "phrase"
         },
         {
           "id": "5_6.setembro.s4.five-minutes-each",
@@ -984,8 +912,7 @@
             "gl": "Amosar cinco dedos",
             "es": "Enseñar cinco dedos"
           },
-          "category": "phrase",
-          "lamina": "pal_five_minutes_each"
+          "category": "phrase"
         },
         {
           "id": "5_6.setembro.s4.when-the-timer-rings-we-swap",
@@ -996,8 +923,7 @@
             "gl": "Cambiar ao sinal",
             "es": "Cambiar a la señal"
           },
-          "category": "complex",
-          "lamina": "pal_when_the_timer_rings_we_swap"
+          "category": "complex"
         }
       ]
     }

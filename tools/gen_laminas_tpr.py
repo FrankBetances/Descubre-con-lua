@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""Generador de las 3.419 láminas nuevas del banco TPR (P2.8, O-20261111-4).
+"""Generador del banco TPR (O-20261111-4, P2.81+).
 
-Cubre todas las piezas restantes de `assets/content/tpr/**/*.json`,
-agrupadas por gesto (`tprAction`) y motivo concreto (`en` / `es` / `tpr`),
-hasta dejar `check_laminas_leccion.py` en 0 de 6.382 piezas sin lámina.
+Solo emite y marca `revisado: True` para piezas TPR explícitamente revisadas
+contra su palabra (en/es) y su gesto (`REVISADAS_TPR`). Nunca marca `revisado`
+de forma automática ni genera rellenos genéricos sin objeto.
 """
 from __future__ import annotations
 
@@ -94,7 +94,7 @@ DORADO = "#eab308"
 PLATA = "#94a3b8"
 
 
-# ── Banco directo curado (cero homónimos, verificados contra `es`) ────────
+# ── Banco directo curado y revisado (P2.81, verificado en hoja de contactos) ─
 # k -> (fl_name, U/R, porque)
 CURATED_FLUENT_DIRECTOS: dict[str, tuple[str, str, str]] = {
     "alarm clock": ("Alarm clock", "U", "Despertador rojo con dos campanas arriba."),
@@ -121,7 +121,6 @@ CURATED_FLUENT_DIRECTOS: dict[str, tuple[str, str, str]] = {
     "castle": ("Castle", "U", "Castillo con torres y bandera."),
     "chair": ("Chair", "U", "Silla de madera de cuatro patas."),
     "cheese": ("Cheese wedge", "R", "Cuña de queso amarillo con agujeros."),
-    "chocolate": ("Chocolate bar", "R", "Tableta de chocolate en onzas."),
     "coin": ("Coin", "U", "Moneda dorada brillante."),
     "comet": ("Comet", "U", "Cometa celeste con estela luminosa."),
     "compass": ("Compass", "U", "Brújula con aguja señalando el norte."),
@@ -150,7 +149,6 @@ CURATED_FLUENT_DIRECTOS: dict[str, tuple[str, str, str]] = {
     "giraffe": ("Giraffe", "U", "Jirafa alta de cuello largo."),
     "globe": ("Globe showing americas", "R", "Globo terráqueo azul y verde."),
     "gloves": ("Gloves", "U", "Par de guantes cálidos."),
-    "goal": ("Goal net", "R", "Portería con red."),
     "goggles": ("Goggles", "U", "Gafas protectoras de bucear."),
     "gorilla": ("Gorilla", "U", "Gorila de perfil."),
     "graduation cap": ("Graduation cap", "U", "Birrete azul con borla."),
@@ -201,12 +199,10 @@ CURATED_FLUENT_DIRECTOS: dict[str, tuple[str, str, str]] = {
     "postbox": ("Postbox", "U", "Buzón rojo de correo."),
     "potato": ("Potato", "U", "Patata marrón ovalada."),
     "princess": ("Princess", "U", "Figura con corona de princesa."),
-    "puzzle": ("Puzzle piece", "R", "Pieza verde de puzle."),
     "puzzle piece": ("Puzzle piece", "U", "Pieza de puzle encajable."),
     "rabbit": ("Rabbit", "U", "Conejo blanco de orejas largas."),
     "rainbow": ("Rainbow", "U", "Arcoíris de siete colores."),
     "ribbon": ("Ribbon", "U", "Lazo rojo de cinta."),
-    "rice": ("Rice ball", "R", "Bola de arroz blanco."),
     "robot": ("Robot", "U", "Robot metálico simpático."),
     "rocket": ("Rocket", "U", "Cohete espacial despegando."),
     "rooster": ("Rooster", "U", "Gallo con cresta roja."),
@@ -253,24 +249,23 @@ CURATED_FLUENT_DIRECTOS: dict[str, tuple[str, str, str]] = {
     "pine tree": ("Evergreen tree", "R", "Pino verde perenne."),
     "bowl": ("Bowl with spoon", "R", "Cuenco azul con cuchara."),
     "cherry": ("Cherries", "R", "Dos cerezas rojas con rabito verde."),
-    "bunny": ("Rabbit", "R", "Conejito blanco de orejas largas."),
-    "soft toy": ("Teddy bear", "R", "Osito de peluche blando."),
-    "baby spoon": ("Spoon", "R", "Cuchara metálica infantil."),
     "scooter": ("Kick scooter", "R", "Patinete de dos ruedas con manillar."),
     "motorbike": ("Motorcycle", "R", "Moto roja de dos ruedas."),
     "ballot box": ("Ballot box with ballot", "R", "Urna con papeleta entrando."),
     "ballet": ("Ballet shoes", "R", "Zapatillas rosas de ballet."),
-    "name": ("Name badge", "R", "Etiqueta con nombre."),
-    "pause": ("Pause button", "R", "Símbolo de pausa con dos barras."),
-    "repeat": ("Repeat button", "R", "Flechas circulares de repetir."),
-    "chart": ("Chart decreasing", "R", "Tabla gráfica de datos."),
 }
 
 CURATED_ICONIFY_DIRECTOS: dict[str, tuple[str, str, str, str, str]] = {
-    "family": ("noto", "family", "U", "#1e293b", "Familia unida de pie."),
     "lighthouse": ("noto", "lighthouse", "U", "#1e293b", "Faro rayado con luz en lo alto."),
     "fairy": ("noto", "fairy", "U", "#1e293b", "Hada con alas y varita."),
     "superhero": ("noto", "superhero", "U", "#1e293b", "Figura de superhéroe con capa."),
+}
+
+# Solo las piezas explícitamente revisadas contra palabra (en/es) y gesto pueden
+# llevar `revisado: True`. Nunca se marca `revisado` de forma automática.
+REVISADAS_TPR: dict[str, str] = {
+    **{k: "P2.81: Fluent Flat directa revisada en hoja de contactos" for k in CURATED_FLUENT_DIRECTOS},
+    **{k: "P2.81: Iconify Noto directa revisada en hoja de contactos" for k in CURATED_ICONIFY_DIRECTOS},
 }
 
 
@@ -1725,8 +1720,17 @@ def generar() -> None:
                         "tpr": tpr_t,
                     }
 
+    # Eliminar de `pezas` toda pieza TPR-only no incluida explícitamente en REVISADAS_TPR
+    for k in list(pezas.keys()):
+        if k not in non_tpr and k not in REVISADAS_TPR:
+            del pezas[k]
+
     stats = {"U": 0, "R": 0, "C": 0, "D": 0}
+    omitidas = 0
     for k in sorted(tpr_items):
+        if k not in REVISADAS_TPR:
+            omitidas += 1
+            continue
         item = tpr_items[k]
         base = slug_de(item["en"]) or "tpr_pieza"
         if f"pal_{base}" not in used_claves:
@@ -1736,46 +1740,42 @@ def generar() -> None:
             slug = f"{base[:42]}_{h}"
         used_claves.add(f"pal_{slug}")
 
+        revisado_flag = k in REVISADAS_TPR
         if k in CURATED_FLUENT_DIRECTOS:
             fl_name, ur, porque = CURATED_FLUENT_DIRECTOS[k]
-            escribir_fluent_directo(pezas, k, slug, fl_name, ur, porque)
+            if FLUENT_SVGS:
+                escribir_fluent_directo(pezas, k, slug, fl_name, ur, porque)
+                pezas[k]["revisado"] = revisado_flag
+            else:
+                if k not in pezas or not (LAMINAS_DIR / f"{pezas[k]['clave']}.json").is_file():
+                    raise RuntimeError(f"Falta lámina en disco para revisada Fluent {k!r} sin /tmp/banco_src")
+                pezas[k]["revisado"] = revisado_flag
             stats[ur] += 1
         elif k in CURATED_ICONIFY_DIRECTOS:
             iset, iname, ur, cur_col, porque = CURATED_ICONIFY_DIRECTOS[k]
-            escribir_iconify_directo(pezas, k, slug, iset, iname, ur, porque, current_color=cur_col)
+            if (RAIZ / "tools/banco/iconify-icon-sets").is_dir() and Path("/tmp/banco_src/iconify/json").is_dir():
+                escribir_iconify_directo(pezas, k, slug, iset, iname, ur, porque, current_color=cur_col)
+                pezas[k]["revisado"] = revisado_flag
+            else:
+                if k not in pezas or not (LAMINAS_DIR / f"{pezas[k]['clave']}.json").is_file():
+                    raise RuntimeError(f"Falta lámina en disco para revisada Iconify {k!r} sin /tmp/banco_src")
+                pezas[k]["revisado"] = revisado_flag
             stats[ur] += 1
         else:
-            cd, formas, porque, lic_sha = _compose_scene(item)
-            lic, sha = lic_sha.split("|", 1)
-            clave = f"pal_{slug}"
-            lam = {
-                "vb": 160,
-                "vh": 100,
-                "nota": f"«{item['en']}»: {porque} Sen texto.",
-                "formas": [_round_forma(dict(f)) for f in formas],
-            }
-            err = bal.validar_lamina_dict(lam, clave)
-            if err:
-                raise RuntimeError(f"Error en {clave} ({k}): {err}")
-            (LAMINAS_DIR / f"{clave}.json").write_text(
-                json.dumps(lam, ensure_ascii=False, separators=(",", ":")) + "\n",
-                encoding="utf-8",
-            )
-            pezas[k] = {
-                "clave": clave,
-                "orixe": "composta" if cd == "C" else "nova",
-                "porque": porque,
-                "fuente": "composta" if cd == "C" else "propia",
-                "asset": f"{SCRIPT_REF}#{slug}",
-                "sha": sha,
-                "licencia": lic,
-                "revisado": True,
-            }
-            stats[cd] += 1
+            raise RuntimeError(f"Pieza {k!r} en REVISADAS_TPR sin generador registrado")
+
+    # Borrar ficheros pal_*.json de piezas TPR eliminadas (sin tocar non_tpr ni escena_*)
+    claves_activas = {v["clave"] for v in pezas.values()}
+    borradas = 0
+    for p in sorted(LAMINAS_DIR.glob("pal_*.json")):
+        if p.stem not in claves_activas:
+            p.unlink()
+            borradas += 1
 
     data["pezas"] = dict(sorted(pezas.items()))
     MAPA_PATH.write_text(json.dumps(data, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
-    print(f"OK gen_laminas_tpr: {len(tpr_items)} pezas TPR cubertas -> {stats}")
+    cubiertas = sum(stats.values())
+    print(f"OK gen_laminas_tpr: {cubiertas} pezas TPR revisadas -> {stats}; {omitidas} sen lámina; {borradas} ficheiros borrados.")
 
 
 if __name__ == "__main__":

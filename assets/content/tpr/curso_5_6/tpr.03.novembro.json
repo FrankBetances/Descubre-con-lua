@@ -33,8 +33,7 @@
             "gl": "Baixar unha man pesada",
             "es": "Bajar una mano pesada"
           },
-          "category": "noun",
-          "lamina": "pal_weight"
+          "category": "noun"
         },
         {
           "id": "5_6.novembro.s1.gram",
@@ -45,8 +44,7 @@
             "gl": "Xuntar dous dedos moi pouco",
             "es": "Juntar dos dedos muy poco"
           },
-          "category": "noun",
-          "lamina": "pal_gram"
+          "category": "noun"
         },
         {
           "id": "5_6.novembro.s1.pan",
@@ -57,8 +55,7 @@
             "gl": "Abrir a man plana",
             "es": "Abrir la mano plana"
           },
-          "category": "noun",
-          "lamina": "pal_scale_pan"
+          "category": "noun"
         },
         {
           "id": "5_6.novembro.s1.pointer",
@@ -69,8 +66,7 @@
             "gl": "Mover un dedo coma unha agulla",
             "es": "Mover un dedo como una aguja"
           },
-          "category": "noun",
-          "lamina": "pal_pointer"
+          "category": "noun"
         },
         {
           "id": "5_6.novembro.s1.weights-set",
@@ -81,8 +77,7 @@
             "gl": "Poñer pesas imaxinarias",
             "es": "Poner pesas imaginarias"
           },
-          "category": "noun",
-          "lamina": "pal_set_of_weights"
+          "category": "noun"
         },
         {
           "id": "5_6.novembro.s1.heavy-side",
@@ -93,8 +88,7 @@
             "gl": "Baixar un brazo",
             "es": "Bajar un brazo"
           },
-          "category": "noun",
-          "lamina": "pal_heavy_side"
+          "category": "noun"
         },
         {
           "id": "5_6.novembro.s1.balance-arms",
@@ -105,8 +99,7 @@
             "gl": "Poñer os brazos á mesma altura",
             "es": "Poner los brazos a la misma altura"
           },
-          "category": "verb",
-          "lamina": "pal_balance_arms"
+          "category": "verb"
         },
         {
           "id": "5_6.novembro.s1.tip-the-scale",
@@ -117,8 +110,7 @@
             "gl": "Baixar un brazo",
             "es": "Bajar un brazo"
           },
-          "category": "verb",
-          "lamina": "pal_tip_the_scale"
+          "category": "verb"
         },
         {
           "id": "5_6.novembro.s1.weigh-up",
@@ -129,8 +121,7 @@
             "gl": "Suxeitar dúas cousas e comparar",
             "es": "Sostener dos cosas y comparar"
           },
-          "category": "verb",
-          "lamina": "pal_weigh_up"
+          "category": "verb"
         },
         {
           "id": "5_6.novembro.s1.even-out",
@@ -141,8 +132,7 @@
             "gl": "Axustar os brazos ata igualalos",
             "es": "Ajustar los brazos hasta igualarlos"
           },
-          "category": "verb",
-          "lamina": "pal_even_out"
+          "category": "verb"
         },
         {
           "id": "5_6.novembro.s1.estimate",
@@ -153,8 +143,7 @@
             "gl": "Mover a man dubidando",
             "es": "Mover la mano dudando"
           },
-          "category": "verb",
-          "lamina": "pal_estimate"
+          "category": "verb"
         },
         {
           "id": "5_6.novembro.s1.balanced-scale",
@@ -165,8 +154,7 @@
             "gl": "Quedar cos brazos iguais",
             "es": "Quedarse con los brazos iguales"
           },
-          "category": "adjective",
-          "lamina": "pal_balanced_scale"
+          "category": "adjective"
         },
         {
           "id": "5_6.novembro.s1.heaviest",
@@ -177,8 +165,7 @@
             "gl": "Baixar o brazo ao máximo",
             "es": "Bajar el brazo al máximo"
           },
-          "category": "adjective",
-          "lamina": "pal_heaviest"
+          "category": "adjective"
         },
         {
           "id": "5_6.novembro.s1.lightest",
@@ -189,8 +176,7 @@
             "gl": "Subir o brazo ao máximo",
             "es": "Subir el brazo al máximo"
           },
-          "category": "adjective",
-          "lamina": "pal_lightest"
+          "category": "adjective"
         },
         {
           "id": "5_6.novembro.s1.equal-weight",
@@ -201,8 +187,7 @@
             "gl": "Poñer as mans iguais",
             "es": "Poner las manos iguales"
           },
-          "category": "adjective",
-          "lamina": "pal_equal_weight"
+          "category": "adjective"
         },
         {
           "id": "5_6.novembro.s1.which-side-goes-down",
@@ -213,8 +198,7 @@
             "gl": "Sinalar un lado",
             "es": "Señalar un lado"
           },
-          "category": "phrase",
-          "lamina": "pal_which_side_goes_down"
+          "category": "phrase"
         },
         {
           "id": "5_6.novembro.s1.show-me-the-heavy-side",
@@ -225,8 +209,7 @@
             "gl": "Baixar un brazo",
             "es": "Bajar un brazo"
           },
-          "category": "phrase",
-          "lamina": "pal_show_me_the_heavy_side"
+          "category": "phrase"
         },
         {
           "id": "5_6.novembro.s1.the-chestnut-is-heavier-than-the-leaf",
@@ -237,8 +220,7 @@
             "gl": "Baixar unha man e subir a outra",
             "es": "Bajar una mano y subir la otra"
           },
-          "category": "complex",
-          "lamina": "pal_the_chestnut_is_heavier_than_the_leaf"
+          "category": "complex"
         },
         {
           "id": "5_6.novembro.s1.drop-a-light-feather",
@@ -249,8 +231,7 @@
             "gl": "Deixar caer a man amodo",
             "es": "Dejar caer la mano despacio"
           },
-          "category": "phrase",
-          "lamina": "pal_drop_a_light_feather"
+          "category": "phrase"
         }
       ]
     },
@@ -270,8 +251,7 @@
             "gl": "Facer pauciños no aire",
             "es": "Hacer palitos en el aire"
           },
-          "category": "noun",
-          "lamina": "pal_tally"
+          "category": "noun"
         },
         {
           "id": "5_6.novembro.s2.number-line",
@@ -282,8 +262,7 @@
             "gl": "Camiñar por unha liña contando",
             "es": "Caminar por una línea contando"
           },
-          "category": "noun",
-          "lamina": "pal_number_line"
+          "category": "noun"
         },
         {
           "id": "5_6.novembro.s2.dozen",
@@ -294,8 +273,7 @@
             "gl": "Amosar dez dedos e dous máis",
             "es": "Enseñar diez dedos y dos más"
           },
-          "category": "noun",
-          "lamina": "pal_dozen"
+          "category": "noun"
         },
         {
           "id": "5_6.novembro.s2.pair",
@@ -306,8 +284,7 @@
             "gl": "Xuntar dous dedos",
             "es": "Juntar dos dedos"
           },
-          "category": "noun",
-          "lamina": "pal_pair"
+          "category": "noun"
         },
         {
           "id": "5_6.novembro.s2.group-of-five",
@@ -318,8 +295,7 @@
             "gl": "Amosar unha man aberta",
             "es": "Enseñar una mano abierta"
           },
-          "category": "noun",
-          "lamina": "pal_group_of_five"
+          "category": "noun"
         },
         {
           "id": "5_6.novembro.s2.total",
@@ -330,8 +306,7 @@
             "gl": "Xuntar todos os dedos",
             "es": "Juntar todos los dedos"
           },
-          "category": "noun",
-          "lamina": "pal_total"
+          "category": "noun"
         },
         {
           "id": "5_6.novembro.s2.difference",
@@ -342,8 +317,7 @@
             "gl": "Separar as mans",
             "es": "Separar las manos"
           },
-          "category": "noun",
-          "lamina": "pal_difference"
+          "category": "noun"
         },
         {
           "id": "5_6.novembro.s2.count-in-twos",
@@ -366,8 +340,7 @@
             "gl": "Xuntar dous grupos",
             "es": "Juntar dos grupos"
           },
-          "category": "verb",
-          "lamina": "pal_add_up"
+          "category": "verb"
         },
         {
           "id": "5_6.novembro.s2.take-away",
@@ -378,8 +351,7 @@
             "gl": "Quitar un dedo",
             "es": "Quitar un dedo"
           },
-          "category": "verb",
-          "lamina": "pal_take_away"
+          "category": "verb"
         },
         {
           "id": "5_6.novembro.s2.share-equally",
@@ -390,8 +362,7 @@
             "gl": "Dar o mesmo a cada un",
             "es": "Dar lo mismo a cada uno"
           },
-          "category": "verb",
-          "lamina": "pal_share_equally"
+          "category": "verb"
         },
         {
           "id": "5_6.novembro.s2.group",
@@ -402,8 +373,7 @@
             "gl": "Xuntar de cinco en cinco",
             "es": "Juntar de cinco en cinco"
           },
-          "category": "verb",
-          "lamina": "pal_group"
+          "category": "verb"
         },
         {
           "id": "5_6.novembro.s2.odd",
@@ -414,8 +384,7 @@
             "gl": "Amosar tres dedos",
             "es": "Enseñar tres dedos"
           },
-          "category": "adjective",
-          "lamina": "pal_odd"
+          "category": "adjective"
         },
         {
           "id": "5_6.novembro.s2.even-number",
@@ -426,8 +395,7 @@
             "gl": "Amosar dous dedos",
             "es": "Enseñar dos dedos"
           },
-          "category": "adjective",
-          "lamina": "pal_even_number"
+          "category": "adjective"
         },
         {
           "id": "5_6.novembro.s2.most",
@@ -438,8 +406,7 @@
             "gl": "Sinalar o grupo grande",
             "es": "Señalar el grupo grande"
           },
-          "category": "adjective",
-          "lamina": "pal_most"
+          "category": "adjective"
         },
         {
           "id": "5_6.novembro.s2.fewest",
@@ -450,8 +417,7 @@
             "gl": "Sinalar o grupo pequeno",
             "es": "Señalar el grupo pequeño"
           },
-          "category": "adjective",
-          "lamina": "pal_fewest"
+          "category": "adjective"
         },
         {
           "id": "5_6.novembro.s2.how-many-chestnuts",
@@ -462,8 +428,7 @@
             "gl": "Contar cos dedos",
             "es": "Contar con los dedos"
           },
-          "category": "phrase",
-          "lamina": "pal_how_many_chestnuts"
+          "category": "phrase"
         },
         {
           "id": "5_6.novembro.s2.two-four-six-eight",
@@ -474,8 +439,7 @@
             "gl": "Saltar contando",
             "es": "Saltar contando"
           },
-          "category": "phrase",
-          "lamina": "pal_two_four_six_eight"
+          "category": "phrase"
         },
         {
           "id": "5_6.novembro.s2.three-plus-two-makes-five",
@@ -486,8 +450,7 @@
             "gl": "Amosar tres e dous dedos",
             "es": "Enseñar tres y dos dedos"
           },
-          "category": "complex",
-          "lamina": "pal_three_plus_two_makes_five"
+          "category": "complex"
         },
         {
           "id": "5_6.novembro.s2.if-i-take-one-away-there-are-four",
@@ -498,8 +461,7 @@
             "gl": "Baixar un dedo",
             "es": "Bajar un dedo"
           },
-          "category": "complex",
-          "lamina": "pal_if_i_take_one_away_there_are_four"
+          "category": "complex"
         }
       ]
     },
@@ -543,8 +505,7 @@
             "gl": "Tocar a cabeza e dicir «creo que»",
             "es": "Tocar la cabeza y decir «creo que»"
           },
-          "category": "noun",
-          "lamina": "pal_hypothesis"
+          "category": "noun"
         },
         {
           "id": "5_6.novembro.s3.observation",
@@ -555,8 +516,7 @@
             "gl": "Mirar cunha lupa",
             "es": "Mirar con una lupa"
           },
-          "category": "noun",
-          "lamina": "pal_observation"
+          "category": "noun"
         },
         {
           "id": "5_6.novembro.s3.notebook",
@@ -579,8 +539,7 @@
             "gl": "Sinalar o reloxo",
             "es": "Señalar el reloj"
           },
-          "category": "noun",
-          "lamina": "pal_roasting_time"
+          "category": "noun"
         },
         {
           "id": "5_6.novembro.s3.steam-puff",
@@ -591,8 +550,7 @@
             "gl": "Abrir as mans cara arriba",
             "es": "Abrir las manos hacia arriba"
           },
-          "category": "noun",
-          "lamina": "pal_puff_of_steam"
+          "category": "noun"
         },
         {
           "id": "5_6.novembro.s3.investigate",
@@ -615,8 +573,7 @@
             "gl": "Escribir no aire",
             "es": "Escribir en el aire"
           },
-          "category": "verb",
-          "lamina": "pal_write_down"
+          "category": "verb"
         },
         {
           "id": "5_6.novembro.s3.time-it",
@@ -627,8 +584,7 @@
             "gl": "Premer un cronómetro",
             "es": "Pulsar un cronómetro"
           },
-          "category": "verb",
-          "lamina": "pal_time_it"
+          "category": "verb"
         },
         {
           "id": "5_6.novembro.s3.compare-results",
@@ -639,8 +595,7 @@
             "gl": "Poñer as mans lado a lado",
             "es": "Poner las manos lado a lado"
           },
-          "category": "verb",
-          "lamina": "pal_compare_results"
+          "category": "verb"
         },
         {
           "id": "5_6.novembro.s3.cut-a-cross",
@@ -651,8 +606,7 @@
             "gl": "Debuxar unha cruz no aire",
             "es": "Dibujar una cruz en el aire"
           },
-          "category": "verb",
-          "lamina": "pal_cut_a_cross"
+          "category": "verb"
         },
         {
           "id": "5_6.novembro.s3.scientific",
@@ -663,8 +617,7 @@
             "gl": "Axustar as lentes",
             "es": "Ajustar las gafas"
           },
-          "category": "adjective",
-          "lamina": "pal_scientific"
+          "category": "adjective"
         },
         {
           "id": "5_6.novembro.s3.curious-mind",
@@ -675,8 +628,7 @@
             "gl": "Mirar arredor preguntando",
             "es": "Mirar alrededor preguntando"
           },
-          "category": "adjective",
-          "lamina": "pal_curious_mind"
+          "category": "adjective"
         },
         {
           "id": "5_6.novembro.s3.roasted",
@@ -687,8 +639,7 @@
             "gl": "Sinalar a castaña quente",
             "es": "Señalar la castaña caliente"
           },
-          "category": "adjective",
-          "lamina": "pal_roasted"
+          "category": "adjective"
         },
         {
           "id": "5_6.novembro.s3.split-open",
@@ -699,8 +650,7 @@
             "gl": "Abrir as mans",
             "es": "Abrir las manos"
           },
-          "category": "adjective",
-          "lamina": "pal_split_open"
+          "category": "adjective"
         },
         {
           "id": "5_6.novembro.s3.what-do-you-think-will-happen",
@@ -711,8 +661,7 @@
             "gl": "Tocar a cabeza",
             "es": "Tocar la cabeza"
           },
-          "category": "phrase",
-          "lamina": "pal_what_do_you_think_will_happen"
+          "category": "phrase"
         },
         {
           "id": "5_6.novembro.s3.let-s-find-out",
@@ -723,8 +672,7 @@
             "gl": "Refregar as mans",
             "es": "Frotarse las manos"
           },
-          "category": "phrase",
-          "lamina": "pal_let_s_find_out"
+          "category": "phrase"
         },
         {
           "id": "5_6.novembro.s3.we-cut-a-cross-so-it-doesn-t-pop",
@@ -735,8 +683,7 @@
             "gl": "Debuxar a cruz",
             "es": "Dibujar la cruz"
           },
-          "category": "complex",
-          "lamina": "pal_we_cut_a_cross_so_it_doesn_t_pop"
+          "category": "complex"
         },
         {
           "id": "5_6.novembro.s3.the-warmer-it-gets-the-faster-it-cooks",
@@ -747,8 +694,7 @@
             "gl": "Fregar as mans rápido",
             "es": "Frotar las manos rápido"
           },
-          "category": "complex",
-          "lamina": "pal_the_warmer_it_gets_the_faster_it_cooks"
+          "category": "complex"
         }
       ]
     },
@@ -768,8 +714,7 @@
             "gl": "Coller e meter nun cesto",
             "es": "Coger y meter en una cesta"
           },
-          "category": "noun",
-          "lamina": "pal_harvest"
+          "category": "noun"
         },
         {
           "id": "5_6.novembro.s4.orchard",
@@ -780,8 +725,7 @@
             "gl": "Estirarse a coller froita",
             "es": "Estirarse a coger fruta"
           },
-          "category": "noun",
-          "lamina": "pal_orchard"
+          "category": "noun"
         },
         {
           "id": "5_6.novembro.s4.ladder",
@@ -804,8 +748,7 @@
             "gl": "Levar unha caixa",
             "es": "Llevar una caja"
           },
-          "category": "noun",
-          "lamina": "pal_crate"
+          "category": "noun"
         },
         {
           "id": "5_6.novembro.s4.quince",
@@ -816,8 +759,7 @@
             "gl": "Coller un marmelo",
             "es": "Coger un membrillo"
           },
-          "category": "noun",
-          "lamina": "pal_quince"
+          "category": "noun"
         },
         {
           "id": "5_6.novembro.s4.chestnut-tree",
@@ -828,8 +770,7 @@
             "gl": "Estirar os brazos coma pólas",
             "es": "Estirar los brazos como ramas"
           },
-          "category": "noun",
-          "lamina": "pal_chestnut_tree"
+          "category": "noun"
         },
         {
           "id": "5_6.novembro.s4.season",
@@ -840,8 +781,7 @@
             "gl": "Facer un círculo coa man",
             "es": "Hacer un círculo con la mano"
           },
-          "category": "noun",
-          "lamina": "pal_season"
+          "category": "noun"
         },
         {
           "id": "5_6.novembro.s4.harvest-fruit",
@@ -876,8 +816,7 @@
             "gl": "Meter froita na caixa",
             "es": "Meter fruta en la caja"
           },
-          "category": "verb",
-          "lamina": "pal_fill_a_crate"
+          "category": "verb"
         },
         {
           "id": "5_6.novembro.s4.store",
@@ -888,8 +827,7 @@
             "gl": "Gardar a caixa",
             "es": "Guardar la caja"
           },
-          "category": "verb",
-          "lamina": "pal_store"
+          "category": "verb"
         },
         {
           "id": "5_6.novembro.s4.shake-the-tree",
@@ -900,8 +838,7 @@
             "gl": "Sacudir os brazos",
             "es": "Sacudir los brazos"
           },
-          "category": "verb",
-          "lamina": "pal_shake_the_tree"
+          "category": "verb"
         },
         {
           "id": "5_6.novembro.s4.plentiful",
@@ -912,8 +849,7 @@
             "gl": "Abrir os brazos moito",
             "es": "Abrir los brazos mucho"
           },
-          "category": "adjective",
-          "lamina": "pal_plentiful"
+          "category": "adjective"
         },
         {
           "id": "5_6.novembro.s4.seasonal",
@@ -924,8 +860,7 @@
             "gl": "Sinalar o calendario",
             "es": "Señalar el calendario"
           },
-          "category": "adjective",
-          "lamina": "pal_seasonal"
+          "category": "adjective"
         },
         {
           "id": "5_6.novembro.s4.freshly-picked",
@@ -936,8 +871,7 @@
             "gl": "Cheirar a froita",
             "es": "Oler la fruta"
           },
-          "category": "adjective",
-          "lamina": "pal_freshly_picked"
+          "category": "adjective"
         },
         {
           "id": "5_6.novembro.s4.ripest",
@@ -948,8 +882,7 @@
             "gl": "Escoller a mellor",
             "es": "Escoger la mejor"
           },
-          "category": "adjective",
-          "lamina": "pal_ripest"
+          "category": "adjective"
         },
         {
           "id": "5_6.novembro.s4.how-many-crates-did-we-fill",
@@ -960,8 +893,7 @@
             "gl": "Contar cos dedos",
             "es": "Contar con los dedos"
           },
-          "category": "phrase",
-          "lamina": "pal_how_many_crates_did_we_fill"
+          "category": "phrase"
         },
         {
           "id": "5_6.novembro.s4.harvest-time",
@@ -972,8 +904,7 @@
             "gl": "Coller co cesto",
             "es": "Coger con la cesta"
           },
-          "category": "phrase",
-          "lamina": "pal_harvest_time"
+          "category": "phrase"
         },
         {
           "id": "5_6.novembro.s4.first-we-pick-then-we-sort-then-we-share",
@@ -984,8 +915,7 @@
             "gl": "Facer os tres xestos",
             "es": "Hacer los tres gestos"
           },
-          "category": "complex",
-          "lamina": "pal_first_we_pick_then_we_sort_then_we_share"
+          "category": "complex"
         },
         {
           "id": "5_6.novembro.s4.shake-the-tree-gently",
@@ -996,8 +926,7 @@
             "gl": "Sacudir suave",
             "es": "Sacudir suave"
           },
-          "category": "phrase",
-          "lamina": "pal_shake_the_tree_gently"
+          "category": "phrase"
         }
       ]
     }
