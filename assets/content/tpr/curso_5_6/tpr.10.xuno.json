@@ -289,7 +289,8 @@
             "gl": "Abrir e pechar o estoxo",
             "es": "Abrir y cerrar el estuche"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_pencil_case"
         },
         {
           "id": "5_6.xuno.s2.exercise-book",
@@ -758,7 +759,8 @@
             "gl": "Abrir un libro á sombra",
             "es": "Abrir un libro a la sombra"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_summer_reading"
         },
         {
           "id": "5_6.xuno.s4.postcard",
@@ -928,7 +930,8 @@
             "gl": "Abrir as mans e logo abrir un libro",
             "es": "Abrir las manos y luego abrir un libro"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_if_it_s_sunny_we_go_to_the_beach_if_it_rains_we_"
         },
         {
           "id": "5_6.xuno.s4.see-you-in-primary",

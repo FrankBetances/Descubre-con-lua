@@ -127,7 +127,8 @@
             "gl": "Abrir a man e deixar caer area",
             "es": "Abrir la mano y dejar caer arena"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_let_sand_run"
         },
         {
           "id": "0_2.xuno.s1.wriggle-toes",
@@ -161,7 +162,8 @@
             "gl": "Tocar os beizos despois do mar",
             "es": "Tocar los labios después del mar"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_salty_lips"
         },
         {
           "id": "0_2.xuno.s1.warm-sand",
@@ -183,7 +185,8 @@
             "gl": "Abrir e pechar os dedos coma o sol no mar",
             "es": "Abrir y cerrar los dedos como el sol en el mar"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_sparkling_sea"
         },
         {
           "id": "0_2.xuno.s1.gritty",
@@ -459,7 +462,8 @@
             "gl": "Abrir e pechar a boca coma un peixe",
             "es": "Abrir y cerrar la boca como un pez"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_blub_blub_blub"
         },
         {
           "id": "0_2.xuno.s2.one-fish-two-fish",
@@ -640,7 +644,8 @@
             "gl": "Tocar as meixelas",
             "es": "Tocar las mejillas"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_sun_kissed"
         },
         {
           "id": "0_2.xuno.s3.summery",

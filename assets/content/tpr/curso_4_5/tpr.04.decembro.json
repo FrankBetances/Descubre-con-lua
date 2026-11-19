@@ -33,7 +33,8 @@
             "gl": "Abrir unha porta fría",
             "es": "Abrir una puerta fría"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_freezer"
         },
         {
           "id": "4_5.decembro.s1.icicle",
@@ -171,7 +172,8 @@
             "gl": "Fregar as mans",
             "es": "Frotar las manos"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_warmer"
         },
         {
           "id": "4_5.decembro.s1.frozen-solid",
@@ -492,7 +494,8 @@
             "gl": "Abrir e pechar as mans no aire",
             "es": "Abrir y cerrar las manos en el aire"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_city_lights"
         },
         {
           "id": "4_5.decembro.s3.big-wheel",
@@ -571,7 +574,8 @@
             "gl": "Abrir as mans de súpeto",
             "es": "Abrir las manos de golpe"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_light_up"
         },
         {
           "id": "4_5.decembro.s3.flicker",
@@ -582,7 +586,8 @@
             "gl": "Abrir e pechar as mans rápido",
             "es": "Abrir y cerrar las manos rápido"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_flicker"
         },
         {
           "id": "4_5.decembro.s3.decorate",
@@ -708,7 +713,8 @@
             "gl": "Abrir as mans nunha sala escura",
             "es": "Abrir las manos en una sala oscura"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_lights_in_the_dark"
         }
       ]
     },
@@ -942,7 +948,8 @@
             "gl": "Fregar as mans e pousalas no peito",
             "es": "Frotar las manos y posarlas en el pecho"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_warm_hands_warm_heart"
         }
       ]
     }

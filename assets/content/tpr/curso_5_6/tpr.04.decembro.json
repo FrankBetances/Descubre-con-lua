@@ -69,7 +69,8 @@
             "gl": "Abrir as mans coma raios",
             "es": "Abrir las manos como rayos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_sunlight"
         },
         {
           "id": "5_6.decembro.s1.moonlight",
@@ -220,7 +221,8 @@
             "gl": "Abrir os ollos e pechalos",
             "es": "Abrir los ojos y cerrarlos"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_day_and_night"
         },
         {
           "id": "5_6.decembro.s1.good-morning-sun",
@@ -405,7 +407,8 @@
             "gl": "Abrir e pechar os dedos",
             "es": "Abrir y cerrar los dedos"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_starry"
         },
         {
           "id": "5_6.decembro.s2.weightless",
@@ -438,7 +441,8 @@
             "gl": "Sinalar unha estrela",
             "es": "Señalar una estrella"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_brightest_star"
         },
         {
           "id": "5_6.decembro.s2.ten-nine-eight-blast-off",

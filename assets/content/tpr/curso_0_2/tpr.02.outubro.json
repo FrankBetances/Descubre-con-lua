@@ -139,7 +139,8 @@
             "gl": "Tocar lixeiro o xeonllo",
             "es": "Tocar suave la rodilla"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_tap_lightly"
         },
         {
           "id": "0_2.outubro.s1.kick-legs",
@@ -162,7 +163,8 @@
             "gl": "Tocar as meixelas rosadas",
             "es": "Tocar las mejillas sonrosadas"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_rosy"
         },
         {
           "id": "0_2.outubro.s1.tiny-toes",
@@ -241,7 +243,8 @@
             "gl": "Tocar nariz con nariz",
             "es": "Tocar nariz con nariz"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_nose_to_nose"
         }
       ]
     },
@@ -296,7 +299,8 @@
             "gl": "Tocar o xeonllo e dicir «pum»",
             "es": "Tocar la rodilla y decir «pum»"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_knee"
         },
         {
           "id": "0_2.outubro.s2.heel",
@@ -432,7 +436,8 @@
             "gl": "Fregar as mans e pousalas na barriga",
             "es": "Frotar las manos y posarlas en la barriga"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_warm_hands"
         },
         {
           "id": "0_2.outubro.s2.does-that-tickle",
@@ -615,7 +620,8 @@
             "gl": "Abrir moito a boca e os ollos",
             "es": "Abrir mucho la boca y los ojos"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_pull_faces"
         },
         {
           "id": "0_2.outubro.s3.lift-head",
@@ -649,7 +655,8 @@
             "gl": "Abrir moito os ollos sorprendidos",
             "es": "Abrir mucho los ojos sorprendidos"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_wide_eyed"
         },
         {
           "id": "0_2.outubro.s3.mirror-bright",

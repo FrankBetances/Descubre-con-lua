@@ -175,7 +175,8 @@
             "gl": "Tocar os lunares dun pano",
             "es": "Tocar los lunares de un pañuelo"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_spotted"
         },
         {
           "id": "0_2.febreiro.s1.frilly",
@@ -897,7 +898,8 @@
             "gl": "Tocar a campaíña amodo",
             "es": "Tocar la campanita despacio"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_tinkly"
         },
         {
           "id": "0_2.febreiro.s4.booming",

@@ -512,7 +512,8 @@
             "gl": "Abrir e pechar as mans coma unha cuncha",
             "es": "Abrir y cerrar las manos como una concha"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_cockle"
         },
         {
           "id": "2_3.xuno.s3.razor-clam",
@@ -886,7 +887,8 @@
             "gl": "Abrir as mans coma o sol",
             "es": "Abrir las manos como el sol"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_sunny_day"
         },
         {
           "id": "2_3.xuno.s4.excited-for-summer",

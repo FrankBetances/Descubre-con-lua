@@ -284,7 +284,8 @@
             "gl": "Abrir a carpeta",
             "es": "Abrir la carpeta"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_drawing_folder"
         },
         {
           "id": "4_5.xuno.s2.timeline",
@@ -493,7 +494,8 @@
             "gl": "Sinalar lonxe",
             "es": "Señalar lejos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_big_school"
         },
         {
           "id": "4_5.xuno.s3.next-year",

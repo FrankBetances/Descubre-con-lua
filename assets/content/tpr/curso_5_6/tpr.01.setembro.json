@@ -56,7 +56,8 @@
             "gl": "Tocar a cabeza e abrir a man",
             "es": "Tocar la cabeza y abrir la mano"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_idea"
         },
         {
           "id": "5_6.setembro.s1.opinion",
@@ -506,7 +507,8 @@
             "gl": "Sinalar algo cunha lupa",
             "es": "Señalar algo con una lupa"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_clue"
         },
         {
           "id": "5_6.setembro.s3.puzzle-piece",

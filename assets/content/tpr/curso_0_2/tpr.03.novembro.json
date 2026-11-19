@@ -209,7 +209,8 @@
             "gl": "Abrir a cesta e sacar un obxecto",
             "es": "Abrir la cesta y sacar un objeto"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_treasure_basket"
         },
         {
           "id": "0_2.novembro.s1.soft-or-rough",
@@ -220,7 +221,8 @@
             "gl": "Tocar unha cousa suave e outra áspera",
             "es": "Tocar una cosa suave y otra áspera"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_soft_or_rough"
         },
         {
           "id": "0_2.novembro.s1.feel-this",
@@ -690,7 +692,8 @@
             "gl": "Tocar a barriga contentos",
             "es": "Tocar la barriga contentos"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_mmm_chestnuts"
         },
         {
           "id": "0_2.novembro.s3.hot-hot-hot",
@@ -825,7 +828,8 @@
             "gl": "Tocar a masa co dedo índice",
             "es": "Tocar la masa con el dedo índice"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_poke"
         },
         {
           "id": "0_2.novembro.s4.pat-down",
@@ -925,7 +929,8 @@
             "gl": "Apertar e abrir a man",
             "es": "Apretar y abrir la mano"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_squeeze_and_let_go"
         },
         {
           "id": "0_2.novembro.s4.what-is-it",

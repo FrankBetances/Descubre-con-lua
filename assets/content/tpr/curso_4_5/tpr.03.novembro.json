@@ -438,7 +438,8 @@
             "gl": "Tocar os nós da madeira",
             "es": "Tocar los nudos de la madera"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_knobbly"
         },
         {
           "id": "4_5.novembro.s2.how-old-is-this-tree",
@@ -722,7 +723,8 @@
             "gl": "Abrir os dedos pouco e logo máis",
             "es": "Abrir los dedos poco y luego más"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_bigger_than_an_ant_smaller_than_a_mouse"
         }
       ]
     },
@@ -810,7 +812,8 @@
             "gl": "Fregar unha cera sobre o papel",
             "es": "Frotar una cera sobre el papel"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_leaf_rubbing"
         },
         {
           "id": "4_5.novembro.s4.compare",
@@ -843,7 +846,8 @@
             "gl": "Fregar a cera sobre a folla",
             "es": "Frotar la cera sobre la hoja"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_rub_a_leaf"
         },
         {
           "id": "4_5.novembro.s4.spot",

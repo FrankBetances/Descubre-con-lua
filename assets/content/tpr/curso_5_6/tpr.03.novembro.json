@@ -55,7 +55,8 @@
             "gl": "Abrir a man plana",
             "es": "Abrir la mano plana"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_scale_pan"
         },
         {
           "id": "5_6.novembro.s1.pointer",
@@ -554,7 +555,8 @@
             "gl": "Abrir as mans cara arriba",
             "es": "Abrir las manos hacia arriba"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_puff_of_steam"
         },
         {
           "id": "5_6.novembro.s3.investigate",
@@ -655,7 +657,8 @@
             "gl": "Abrir as mans",
             "es": "Abrir las manos"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_split_open"
         },
         {
           "id": "5_6.novembro.s3.what-do-you-think-will-happen",

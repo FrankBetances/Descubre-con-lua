@@ -303,7 +303,8 @@
             "gl": "Abrir moito as mans",
             "es": "Abrir mucho las manos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_giant_shoe"
         },
         {
           "id": "4_5.marzo.s2.tiny-shoe",
@@ -394,7 +395,8 @@
             "gl": "Abrir máis os brazos",
             "es": "Abrir más los brazos"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_bigger"
         },
         {
           "id": "4_5.marzo.s2.biggest",
@@ -427,7 +429,8 @@
             "gl": "Xuntar as mans ata tocarse",
             "es": "Juntar las manos hasta tocarse"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_smallest"
         },
         {
           "id": "4_5.marzo.s2.which-is-the-biggest",

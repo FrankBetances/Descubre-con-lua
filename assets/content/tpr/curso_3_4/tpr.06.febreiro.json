@@ -127,7 +127,8 @@
           "tprAction": {
             "gl": "Abrir e pechar a boca coma un can que ladra",
             "es": "Abrir y cerrar la boca como un perro que ladra"
-          }
+          },
+          "lamina": "pal_bark"
         },
         {
           "id": "3_4.febreiro.s1.purr",
@@ -138,7 +139,8 @@
           "tprAction": {
             "gl": "Fregar a meixela na man coma un gato contento",
             "es": "Frotar la mejilla en la mano como un gato contento"
-          }
+          },
+          "lamina": "pal_purr"
         },
         {
           "id": "3_4.febreiro.s1.wag",
@@ -624,7 +626,8 @@
           "tprAction": {
             "gl": "Xuntar as palmas de golpe coma unha boca que se pecha",
             "es": "Juntar las palmas de golpe como una boca que se cierra"
-          }
+          },
+          "lamina": "pal_snap"
         },
         {
           "id": "3_4.febreiro.s3.scratch",

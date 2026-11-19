@@ -299,7 +299,8 @@
             "gl": "Sinalar a un e a outro",
             "es": "Señalar a uno y a otro"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_both_sides"
         },
         {
           "id": "5_6.maio.s2.feelings-words",

@@ -164,7 +164,8 @@
             "gl": "Tocar un pano de raias",
             "es": "Tocar un pañuelo de rayas"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_stripy"
         },
         {
           "id": "2_3.febreiro.s1.fierce",
@@ -277,7 +278,8 @@
             "gl": "Abrir moito a boca",
             "es": "Abrir mucho la boca"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_hippo"
         },
         {
           "id": "2_3.febreiro.s2.gorilla",
@@ -460,7 +462,8 @@
             "gl": "Abrir a boca moito",
             "es": "Abrir mucho la boca"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_big_mouth_hippo"
         },
         {
           "id": "2_3.febreiro.s2.through-the-jungle",

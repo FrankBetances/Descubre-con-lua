@@ -88,7 +88,8 @@
             "gl": "Abrir as mans de golpe",
             "es": "Abrir las manos de golpe"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_confetti_cannon"
         },
         {
           "id": "5_6.febreiro.s1.recite",
@@ -266,7 +267,8 @@
             "gl": "Pechar os brazos coma unha claqueta",
             "es": "Cerrar los brazos como una claqueta"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_clapperboard"
         },
         {
           "id": "5_6.febreiro.s2.scene",
@@ -434,7 +436,8 @@
             "gl": "Pechar a claqueta",
             "es": "Cerrar la claqueta"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_action"
         },
         {
           "id": "5_6.febreiro.s2.cut-once-more-please",
@@ -604,7 +607,8 @@
             "gl": "Abrir máis a boca",
             "es": "Abrir más la boca"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_sing_louder"
         },
         {
           "id": "5_6.febreiro.s3.sing-softer",

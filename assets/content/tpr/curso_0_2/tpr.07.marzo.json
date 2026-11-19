@@ -162,7 +162,8 @@
             "gl": "Sinalar algo vermello vivo",
             "es": "Señalar algo rojo vivo"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_bright_red"
         },
         {
           "id": "0_2.marzo.s1.sky-blue",
@@ -207,7 +208,8 @@
             "gl": "Tocar tres cousas vermellas",
             "es": "Tocar tres cosas rojas"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_red_red_red"
         },
         {
           "id": "0_2.marzo.s1.which-one-is-blue",
@@ -346,7 +348,8 @@
             "gl": "Abrir moito a boca co bebé",
             "es": "Abrir mucho la boca con el bebé"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_open_wide"
         },
         {
           "id": "0_2.marzo.s2.feed-yourself",
@@ -402,7 +405,8 @@
             "gl": "Tocar os beizos cun dedo",
             "es": "Tocar los labios con un dedo"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_sugary"
         },
         {
           "id": "0_2.marzo.s2.soft-and-sweet",
@@ -424,7 +428,8 @@
             "gl": "Abrir e pechar os dedos pegañentos",
             "es": "Abrir y cerrar los dedos pegajosos"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_sticky_fingers"
         },
         {
           "id": "0_2.marzo.s2.scrumptious",
@@ -435,7 +440,8 @@
             "gl": "Tocar a barriga e sorrir",
             "es": "Tocar la barriga y sonreír"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_scrumptious"
         },
         {
           "id": "0_2.marzo.s2.yum-yum",

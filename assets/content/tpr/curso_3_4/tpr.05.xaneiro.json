@@ -186,7 +186,8 @@
           "tprAction": {
             "gl": "Tocar puntos por todo o corpo cun dedo",
             "es": "Tocar puntos por todo el cuerpo con un dedo"
-          }
+          },
+          "lamina": "pal_spotty"
         },
         {
           "id": "3_4.xaneiro.s1.tight",
@@ -651,7 +652,8 @@
           "tprAction": {
             "gl": "Achegar as mans ata case tocarse",
             "es": "Acercar las manos hasta casi tocarse"
-          }
+          },
+          "lamina": "pal_near"
         },
         {
           "id": "3_4.xaneiro.s3.far",
@@ -772,7 +774,8 @@
           "tprAction": {
             "gl": "Premer un botón imaxinario e abrir as mans coma luz",
             "es": "Pulsar un botón imaginario y abrir las manos como luz"
-          }
+          },
+          "lamina": "pal_lamp"
         },
         {
           "id": "3_4.xaneiro.s4.stairs",
@@ -876,7 +879,8 @@
           "tprAction": {
             "gl": "Abrir un libro imaxinario e seguir as liñas co dedo",
             "es": "Abrir un libro imaginario y seguir las líneas con el dedo"
-          }
+          },
+          "lamina": "pal_read"
         },
         {
           "id": "3_4.xaneiro.s4.tidy",

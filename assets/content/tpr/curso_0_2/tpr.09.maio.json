@@ -406,7 +406,8 @@
             "gl": "Fregar a man ata que «chía»",
             "es": "Frotar la mano hasta que «chirría»"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_squeaky_clean"
         },
         {
           "id": "0_2.maio.s2.foamy",
@@ -688,7 +689,8 @@
             "gl": "Fregar as mans tres veces",
             "es": "Frotar las manos tres veces"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_wash_wash_wash"
         },
         {
           "id": "0_2.maio.s3.clean-hands-happy-baby",
@@ -779,7 +781,8 @@
             "gl": "Sinalar as burbullas que saen",
             "es": "Señalar las burbujas que salen"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_bubble_machine"
         },
         {
           "id": "0_2.maio.s4.air",
@@ -802,7 +805,8 @@
             "gl": "Sinalar o teito",
             "es": "Señalar el techo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_ceiling"
         },
         {
           "id": "0_2.maio.s4.popping-sound",
@@ -926,7 +930,8 @@
             "gl": "Tocar tres burbullas",
             "es": "Tocar tres burbujas"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_pop_pop_pop"
         },
         {
           "id": "0_2.maio.s4.up-in-the-air",
@@ -960,7 +965,8 @@
             "gl": "Sinalar arredor",
             "es": "Señalar alrededor"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_bubbles_everywhere"
         }
       ]
     }

@@ -44,7 +44,8 @@
             "gl": "Abrir e pechar a fiambreira",
             "es": "Abrir y cerrar la fiambrera"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_lunchbox"
         },
         {
           "id": "2_3.setembro.s1.water-cup",
@@ -505,7 +506,8 @@
             "gl": "Pechar a tapa da caixa",
             "es": "Cerrar la tapa de la caja"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_box_lid"
         },
         {
           "id": "2_3.setembro.s3.drawer",
@@ -516,7 +518,8 @@
             "gl": "Abrir e pechar o caixón",
             "es": "Abrir y cerrar el cajón"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_drawer"
         },
         {
           "id": "2_3.setembro.s3.crayon-pot",
@@ -731,7 +734,8 @@
             "gl": "Sinalar a un compañeiro",
             "es": "Señalar a un compañero"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_classmate"
         },
         {
           "id": "2_3.setembro.s4.circle-time",

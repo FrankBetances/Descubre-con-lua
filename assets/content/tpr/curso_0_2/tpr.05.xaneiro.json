@@ -682,7 +682,8 @@
             "gl": "Tocar os puntos dun ovo de xoguete",
             "es": "Tocar los puntos de un huevo de juguete"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_speckled"
         },
         {
           "id": "0_2.xaneiro.s3.tweet-tweet",

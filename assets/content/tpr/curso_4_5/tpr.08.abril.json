@@ -183,7 +183,8 @@
             "gl": "Tocar unha superficie dura",
             "es": "Tocar una superficie dura"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_rocky"
         },
         {
           "id": "4_5.abril.s1.remote",
@@ -317,7 +318,8 @@
             "gl": "Abrir os dedos das mans",
             "es": "Abrir los dedos de las manos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_webbed_feet"
         },
         {
           "id": "4_5.abril.s2.fish-supper",
@@ -408,7 +410,8 @@
             "gl": "Abrir os dedos",
             "es": "Abrir los dedos"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_webbed"
         },
         {
           "id": "4_5.abril.s2.graceful-flight",
@@ -516,7 +519,8 @@
             "gl": "Abrir os dedos coma púas",
             "es": "Abrir los dedos como púas"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_sea_urchin"
         },
         {
           "id": "4_5.abril.s3.anemone",
@@ -527,7 +531,8 @@
             "gl": "Abrir e pechar os dedos amodo",
             "es": "Abrir y cerrar los dedos despacio"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_anemone"
         },
         {
           "id": "4_5.abril.s3.snorkel",
@@ -665,7 +670,8 @@
             "gl": "Tocar con coidado",
             "es": "Tocar con cuidado"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_spiny"
         },
         {
           "id": "4_5.abril.s3.what-lives-on-the-seabed",
@@ -846,7 +852,8 @@
             "gl": "Pechar a billa",
             "es": "Cerrar el grifo"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_save_water"
         },
         {
           "id": "4_5.abril.s4.turn-off-lights",

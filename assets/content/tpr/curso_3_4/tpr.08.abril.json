@@ -91,7 +91,8 @@
           "tprAction": {
             "gl": "Espreguizarse e abrir os ollos amodo",
             "es": "Desperezarse y abrir los ojos despacio"
-          }
+          },
+          "lamina": "pal_morning"
         },
         {
           "id": "3_4.abril.s1.shine",
@@ -114,7 +115,8 @@
           "tprAction": {
             "gl": "Abrir as mans amodo coma unha flor",
             "es": "Abrir las manos despacio como una flor"
-          }
+          },
+          "lamina": "pal_open"
         },
         {
           "id": "3_4.abril.s1.look-up",
@@ -136,7 +138,8 @@
           "tprAction": {
             "gl": "Fregar as mans e o corpo para quentarse",
             "es": "Frotarse las manos y el cuerpo para entrar en calor"
-          }
+          },
+          "lamina": "pal_warm_up"
         },
         {
           "id": "3_4.abril.s1.peek",
@@ -195,7 +198,8 @@
           "tprAction": {
             "gl": "Abrir as mans coma se apartasen as nubes",
             "es": "Abrir las manos como si apartaran las nubes"
-          }
+          },
+          "lamina": "pal_clear"
         },
         {
           "id": "3_4.abril.s1.tap-tap",
@@ -230,7 +234,8 @@
           "tprAction": {
             "gl": "Facer chuvia cos dedos e logo abrir as mans coma o sol",
             "es": "Hacer lluvia con los dedos y luego abrir las manos como el sol"
-          }
+          },
+          "lamina": "pal_rain_then_sun"
         },
         {
           "id": "3_4.abril.s1.behind-the-clouds",
@@ -459,7 +464,8 @@
           "tprAction": {
             "gl": "Desde agachados, abrir brazos e mans amodo",
             "es": "Desde agachados, abrir brazos y manos despacio"
-          }
+          },
+          "lamina": "pal_open_like_a_flower"
         },
         {
           "id": "3_4.abril.s2.from-seed-to-flower",
@@ -643,7 +649,8 @@
           "tprAction": {
             "gl": "Tocar algo imaxinario e sacudir a man",
             "es": "Tocar algo imaginario y sacudir la mano"
-          }
+          },
+          "lamina": "pal_slimy"
         },
         {
           "id": "3_4.abril.s3.delicate",
@@ -886,7 +893,8 @@
           "tprAction": {
             "gl": "Abrir moito as pernas e os brazos",
             "es": "Abrir mucho las piernas y los brazos"
-          }
+          },
+          "lamina": "pal_wide"
         },
         {
           "id": "3_4.abril.s4.free",
@@ -965,7 +973,8 @@
           "tprAction": {
             "gl": "Abrir paso coas mans entre herba alta",
             "es": "Abrirse paso con las manos entre hierba alta"
-          }
+          },
+          "lamina": "pal_through_the_grass"
         }
       ]
     }

@@ -115,7 +115,8 @@
             "gl": "Fregar as mans para quentalas",
             "es": "Frotar las manos para calentarlas"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_rub_hands"
         },
         {
           "id": "0_2.decembro.s1.warm-up-hands",
@@ -232,7 +233,8 @@
             "gl": "Tocar o gorro e despois as luvas",
             "es": "Tocar el gorro y luego las manoplas"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_hat_and_mittens"
         },
         {
           "id": "0_2.decembro.s1.close-to-me",
@@ -381,7 +383,8 @@
             "gl": "Fregar os pés do bebé",
             "es": "Frotar los pies del bebé"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_warm_feet"
         },
         {
           "id": "0_2.decembro.s2.lean-on",
@@ -415,7 +418,8 @@
             "gl": "Tocar o gorro de la",
             "es": "Tocar el gorro de lana"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_woolly_hat"
         },
         {
           "id": "0_2.decembro.s2.heavy-blanket",
@@ -461,7 +465,8 @@
             "gl": "Fregar a barriga do bebé",
             "es": "Frotar la barriga del bebé"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_warm_as_toast"
         },
         {
           "id": "0_2.decembro.s2.under-the-quilt",
@@ -575,7 +580,8 @@
             "gl": "Abrir e pechar as mans coma estrelas",
             "es": "Abrir y cerrar las manos como estrellas"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_starlight"
         },
         {
           "id": "0_2.decembro.s3.switch-on",
@@ -632,7 +638,8 @@
             "gl": "Abrir e pechar os dedos rápido",
             "es": "Abrir y cerrar los dedos rápido"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_sparkle"
         },
         {
           "id": "0_2.decembro.s3.glowing",

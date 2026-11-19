@@ -843,7 +843,8 @@
           "tprAction": {
             "gl": "Abrir a boca e cantar un «la, la, la» suave",
             "es": "Abrir la boca y cantar un «la, la, la» suave"
-          }
+          },
+          "lamina": "pal_sing"
         },
         {
           "id": "3_4.setembro.s4.push",

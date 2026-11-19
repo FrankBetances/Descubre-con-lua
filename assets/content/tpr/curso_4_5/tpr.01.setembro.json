@@ -87,7 +87,8 @@
             "gl": "Sinalar o propio encargo no panel",
             "es": "Señalar el propio encargo en el panel"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_classroom_job"
         },
         {
           "id": "4_5.setembro.s1.agree",
@@ -301,7 +302,8 @@
             "gl": "Tocar o casco na cabeza",
             "es": "Tocar el casco en la cabeza"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_hard_hat"
         },
         {
           "id": "4_5.setembro.s2.base",
@@ -504,7 +506,8 @@
             "gl": "Fregar as unllas co cepillo",
             "es": "Frotar las uñas con el cepillo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_nail_brush"
         },
         {
           "id": "4_5.setembro.s3.hand-gel",
@@ -574,7 +577,8 @@
             "gl": "Fregar entre os dedos",
             "es": "Frotar entre los dedos"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_wash_thoroughly"
         },
         {
           "id": "4_5.setembro.s3.rinse-well",

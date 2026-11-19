@@ -746,7 +746,8 @@
             "gl": "Abrir e pechar a man coma unha boca",
             "es": "Abrir y cerrar la mano como una boca"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_sock_puppet"
         },
         {
           "id": "4_5.febreiro.s4.strings",
@@ -802,7 +803,8 @@
             "gl": "Abrir unha cortina imaxinaria",
             "es": "Abrir una cortina imaginaria"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_puppet_show"
         },
         {
           "id": "4_5.febreiro.s4.pull-the-strings",
@@ -891,7 +893,8 @@
             "gl": "Abrir e pechar a boca do monicreque",
             "es": "Abrir y cerrar la boca del títere"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_talkative"
         },
         {
           "id": "4_5.febreiro.s4.handmade",

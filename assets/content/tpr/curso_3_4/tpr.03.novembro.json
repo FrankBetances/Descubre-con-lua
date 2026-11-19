@@ -418,7 +418,8 @@
           "tprAction": {
             "gl": "Tocar cun dedo moi amodo algo que pica e retirar a man",
             "es": "Tocar con un dedo muy despacio algo que pincha y retirar la mano"
-          }
+          },
+          "lamina": "pal_spiky"
         },
         {
           "id": "3_4.novembro.s2.shiny",
@@ -429,7 +430,8 @@
           "tprAction": {
             "gl": "Abrir e pechar as mans coma estreliñas que relocen",
             "es": "Abrir y cerrar las manos como estrellitas que relucen"
-          }
+          },
+          "lamina": "pal_shiny"
         },
         {
           "id": "3_4.novembro.s2.hard",
@@ -773,7 +775,8 @@
           "tprAction": {
             "gl": "Abrir unha noz imaxinaria coas dúas mans",
             "es": "Abrir una nuez imaginaria con las dos manos"
-          }
+          },
+          "lamina": "pal_walnut"
         },
         {
           "id": "3_4.novembro.s4.corn",

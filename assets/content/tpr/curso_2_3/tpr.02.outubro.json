@@ -21,7 +21,8 @@
             "gl": "Tocar a rótula dúas veces",
             "es": "Tocar la rótula dos veces"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_kneecap"
         },
         {
           "id": "2_3.outubro.s1.ankle",
@@ -816,7 +817,8 @@
             "gl": "Tocar a planta do pé",
             "es": "Tocar la planta del pie"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_sole"
         },
         {
           "id": "2_3.outubro.s4.shuffle",

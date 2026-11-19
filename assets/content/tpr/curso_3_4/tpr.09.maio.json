@@ -57,7 +57,8 @@
           "tprAction": {
             "gl": "Abrir e pechar unha billa imaxinaria",
             "es": "Abrir y cerrar un grifo imaginario"
-          }
+          },
+          "lamina": "pal_tap"
         },
         {
           "id": "3_4.maio.s1.bubbles",
@@ -186,7 +187,8 @@
           "tprAction": {
             "gl": "Abrir e pechar os dedos coma burbullas que estouran",
             "es": "Abrir y cerrar los dedos como burbujas que estallan"
-          }
+          },
+          "lamina": "pal_bubbly"
         },
         {
           "id": "3_4.maio.s1.cool",
@@ -221,7 +223,8 @@
           "tprAction": {
             "gl": "Fregar as mans moi rápido para quentalas",
             "es": "Frotarse las manos muy rápido para calentarlas"
-          }
+          },
+          "lamina": "pal_rub_your_hands"
         },
         {
           "id": "3_4.maio.s1.wash-then-dry",
@@ -488,7 +491,8 @@
           "tprAction": {
             "gl": "Tocar da cabeza aos pés coas dúas mans",
             "es": "Tocar de la cabeza a los pies con las dos manos"
-          }
+          },
+          "lamina": "pal_top_to_toe"
         }
       ]
     },
@@ -697,7 +701,8 @@
           "tprAction": {
             "gl": "Tocar a barriga e abrir a boca",
             "es": "Tocarse la barriga y abrir la boca"
-          }
+          },
+          "lamina": "pal_i_m_hungry"
         },
         {
           "id": "3_4.maio.s3.enjoy-your-meal",

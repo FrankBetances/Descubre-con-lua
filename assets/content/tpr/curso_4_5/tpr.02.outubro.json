@@ -304,7 +304,8 @@
             "gl": "Tocar un ombro e fuxir",
             "es": "Tocar un hombro y huir"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_tag_game"
         },
         {
           "id": "4_5.outubro.s2.hiding-spot",
@@ -362,7 +363,8 @@
             "gl": "Tocar o ombro dun amigo",
             "es": "Tocar el hombro de un amigo"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_tag"
         },
         {
           "id": "4_5.outubro.s2.escape",
@@ -443,7 +445,8 @@
             "gl": "Tocar un ombro",
             "es": "Tocar un hombro"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_you_re_it"
         },
         {
           "id": "4_5.outubro.s2.can-you-catch-me",
@@ -569,7 +572,8 @@
             "gl": "Sinalar o centro do corpo",
             "es": "Señalar el centro del cuerpo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_centre"
         },
         {
           "id": "4_5.outubro.s3.stand-on-one-leg",

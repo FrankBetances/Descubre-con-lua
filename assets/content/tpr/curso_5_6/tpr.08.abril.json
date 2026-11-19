@@ -281,7 +281,8 @@
             "gl": "Abrir e pechar a cuncha coas mans",
             "es": "Abrir y cerrar la concha con las manos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_scallop"
         },
         {
           "id": "5_6.abril.s2.sea-slug",
@@ -530,7 +531,8 @@
             "gl": "Pechar a billa",
             "es": "Cerrar el grifo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_water_tap"
         },
         {
           "id": "5_6.abril.s3.energy-saver",
@@ -642,7 +644,8 @@
             "gl": "Abrir as mans coma follas",
             "es": "Abrir las manos como hojas"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_greener"
         },
         {
           "id": "5_6.abril.s3.wasteful-habit",
@@ -844,7 +847,8 @@
             "gl": "Abrir as mans cara arriba",
             "es": "Abrir las manos hacia arriba"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_spout"
         },
         {
           "id": "5_6.abril.s4.watch-quietly",

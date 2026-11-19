@@ -45,7 +45,8 @@
           "tprAction": {
             "gl": "Sinalar tres cousas de cores diferentes",
             "es": "Señalar tres cosas de colores diferentes"
-          }
+          },
+          "lamina": "pal_colour"
         },
         {
           "id": "3_4.marzo.s1.picture",
@@ -192,7 +193,8 @@
           "tprAction": {
             "gl": "Sinalar algo negro na aula",
             "es": "Señalar algo negro en el aula"
-          }
+          },
+          "lamina": "pal_black"
         },
         {
           "id": "3_4.marzo.s1.what-colour-is-it",
@@ -225,7 +227,8 @@
           "tprAction": {
             "gl": "Tocar algo vermello e logo algo amarelo",
             "es": "Tocar algo rojo y luego algo amarillo"
-          }
+          },
+          "lamina": "pal_red_and_yellow"
         },
         {
           "id": "3_4.marzo.s1.colour-by-colour",
@@ -780,7 +783,8 @@
           "tprAction": {
             "gl": "Tocar teclas imaxinarias cos dedos no chan",
             "es": "Tocar teclas imaginarias con los dedos en el suelo"
-          }
+          },
+          "lamina": "pal_piano"
         },
         {
           "id": "3_4.marzo.s4.bottle",

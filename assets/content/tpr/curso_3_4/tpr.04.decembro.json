@@ -151,7 +151,8 @@
           "tprAction": {
             "gl": "Pechar as mans no aire coma se atrapásemos algo",
             "es": "Cerrar las manos en el aire como si atrapáramos algo"
-          }
+          },
+          "lamina": "pal_catch"
         },
         {
           "id": "3_4.decembro.s1.cold",
@@ -233,7 +234,8 @@
           "tprAction": {
             "gl": "Estirar a man e pechala suave sobre unha folerpa",
             "es": "Estirar la mano y cerrarla suave sobre un copo"
-          }
+          },
+          "lamina": "pal_catch_the_snowflake"
         },
         {
           "id": "3_4.decembro.s1.in-the-snow",
@@ -337,7 +339,8 @@
           "tprAction": {
             "gl": "Tocar unha pandeireta imaxinaria ao pulso",
             "es": "Tocar una pandereta imaginaria al pulso"
-          }
+          },
+          "lamina": "pal_tambourine"
         },
         {
           "id": "3_4.decembro.s2.ring",
@@ -359,7 +362,8 @@
           "tprAction": {
             "gl": "Abrir e pechar os dedos moi rápido por riba da cabeza",
             "es": "Abrir y cerrar los dedos muy rápido por encima de la cabeza"
-          }
+          },
+          "lamina": "pal_twinkle"
         },
         {
           "id": "3_4.decembro.s2.wrap",
@@ -437,7 +441,8 @@
           "tprAction": {
             "gl": "Abrir moito os ollos e a boca con sorpresa",
             "es": "Abrir mucho los ojos y la boca con sorpresa"
-          }
+          },
+          "lamina": "pal_surprised"
         },
         {
           "id": "3_4.decembro.s2.merry-christmas",
@@ -679,7 +684,8 @@
           "tprAction": {
             "gl": "Abrir moito os ollos e mirar arredor",
             "es": "Abrir mucho los ojos y mirar alrededor"
-          }
+          },
+          "lamina": "pal_awake"
         },
         {
           "id": "3_4.decembro.s3.good-night",
@@ -913,7 +919,8 @@
           "tprAction": {
             "gl": "Sinalar cousas de moitas cores na aula",
             "es": "Señalar cosas de muchos colores en el aula"
-          }
+          },
+          "lamina": "pal_colourful"
         },
         {
           "id": "3_4.decembro.s4.delicious",

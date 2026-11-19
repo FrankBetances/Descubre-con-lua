@@ -157,7 +157,8 @@
             "gl": "Tocar varias texturas",
             "es": "Tocar varias texturas"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_sensory"
         },
         {
           "id": "5_6.outubro.s1.aromatic",
@@ -894,7 +895,8 @@
             "gl": "Abrir moito os ollos",
             "es": "Abrir mucho los ojos"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_wide_awake"
         },
         {
           "id": "5_6.outubro.s4.well-slept",

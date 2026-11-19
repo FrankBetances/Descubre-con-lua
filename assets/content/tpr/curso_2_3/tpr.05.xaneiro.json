@@ -308,7 +308,8 @@
             "gl": "Premer a bucina",
             "es": "Tocar la bocina"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_horn"
         },
         {
           "id": "2_3.xaneiro.s2.speed-bump",
@@ -514,7 +515,8 @@
             "gl": "Facer que se abre a porta da tenda",
             "es": "Hacer que se abre la puerta de la tienda"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_shop"
         },
         {
           "id": "2_3.xaneiro.s3.market",
@@ -902,7 +904,8 @@
             "gl": "Tocar unha cadea vella",
             "es": "Tocar una cadena vieja"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_rusty"
         },
         {
           "id": "2_3.xaneiro.s4.busy-port",

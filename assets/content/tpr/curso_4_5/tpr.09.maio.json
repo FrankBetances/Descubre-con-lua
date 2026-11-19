@@ -355,7 +355,8 @@
             "gl": "Baixar as mans e abrilas",
             "es": "Bajar las manos y abrirlas"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_splash_down"
         },
         {
           "id": "4_5.maio.s2.blow-the-boat",
@@ -378,7 +379,8 @@
             "gl": "Abrir as mans cara abaixo",
             "es": "Abrir las manos hacia abajo"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_drain_away"
         },
         {
           "id": "4_5.maio.s2.rushing",
@@ -615,7 +617,8 @@
             "gl": "Abrir a man en abano",
             "es": "Abrir la mano en abanico"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_refract"
         },
         {
           "id": "4_5.maio.s3.rainy-season",
@@ -661,7 +664,8 @@
             "gl": "Abrir unha man e mover a outra",
             "es": "Abrir una mano y mover la otra"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_sun_and_rain_together"
         },
         {
           "id": "4_5.maio.s3.where-does-rain-come-from",
@@ -726,7 +730,8 @@
             "gl": "Abrir as mans ao chegar ao mar",
             "es": "Abrir las manos al llegar al mar"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_river_mouth"
         },
         {
           "id": "4_5.maio.s4.estuary",

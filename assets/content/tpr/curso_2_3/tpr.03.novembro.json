@@ -91,7 +91,8 @@
             "gl": "Abrir o portal do parque",
             "es": "Abrir la verja del parque"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_gate"
         },
         {
           "id": "2_3.novembro.s1.stroll",
@@ -748,7 +749,8 @@
             "gl": "Sinalar o posto de castañas",
             "es": "Señalar el puesto de castañas"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_chestnut_stall"
         },
         {
           "id": "2_3.novembro.s4.picnic-blanket",
@@ -804,7 +806,8 @@
             "gl": "Soprar a castaña antes de tocala",
             "es": "Soplar la castaña antes de tocarla"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_warm_chestnut"
         },
         {
           "id": "2_3.novembro.s4.shell-pieces",
@@ -909,7 +912,8 @@
             "gl": "Sinalar follas e castañas",
             "es": "Señalar hojas y castañas"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_autumn_coloured"
         },
         {
           "id": "2_3.novembro.s4.filling",
@@ -955,7 +959,8 @@
             "gl": "Tocar a barriga e sorrir",
             "es": "Tocar la barriga y sonreír"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_yummy_chestnut"
         },
         {
           "id": "2_3.novembro.s4.on-the-blanket",

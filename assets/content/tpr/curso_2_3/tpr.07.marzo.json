@@ -56,7 +56,8 @@
             "gl": "Abrir brazos e pernas coma unha estrela",
             "es": "Abrir brazos y piernas como una estrella"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_star_shape"
         },
         {
           "id": "2_3.marzo.s1.heart-shape",
@@ -216,7 +217,8 @@
             "gl": "Abrirse coma unha estrela",
             "es": "Abrirse como una estrella"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_it_s_a_star"
         },
         {
           "id": "2_3.marzo.s1.shapes-in-the-room",
@@ -420,7 +422,8 @@
             "gl": "Tocar con coidado as follas",
             "es": "Tocar con cuidado las hojas"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_spiky_pineapple"
         },
         {
           "id": "2_3.marzo.s2.ripe-mango",
@@ -442,7 +445,8 @@
             "gl": "Tocar a barriga contentos",
             "es": "Tocar la barriga contentos"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_i_like_mango"
         },
         {
           "id": "2_3.marzo.s2.can-i-try-some",
@@ -734,7 +738,8 @@
             "gl": "Abrir a cesta",
             "es": "Abrir la cesta"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_picnic_basket"
         },
         {
           "id": "2_3.marzo.s4.sandwich",

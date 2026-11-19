@@ -411,7 +411,8 @@
             "gl": "Sinalar por riba da cabeza",
             "es": "Señalar por encima de la cabeza"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_above"
         },
         {
           "id": "4_5.xaneiro.s2.below",
@@ -422,7 +423,8 @@
             "gl": "Sinalar debaixo da mesa",
             "es": "Señalar debajo de la mesa"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_below"
         },
         {
           "id": "4_5.xaneiro.s2.beside",

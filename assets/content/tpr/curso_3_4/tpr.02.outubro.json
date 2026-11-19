@@ -33,7 +33,8 @@
           "tprAction": {
             "gl": "Tocar os ombros",
             "es": "Tocar los hombros"
-          }
+          },
+          "lamina": "pal_shoulders"
         },
         {
           "id": "3_4.outubro.s1.knees",
@@ -375,7 +376,8 @@
           "tprAction": {
             "gl": "Tocar suavemente algo que estea preto",
             "es": "Tocar suavemente algo que esté cerca"
-          }
+          },
+          "lamina": "pal_touch"
         },
         {
           "id": "3_4.outubro.s2.blink",
@@ -386,7 +388,8 @@
           "tprAction": {
             "gl": "Pechar e abrir os ollos moi rápido",
             "es": "Cerrar y abrir los ojos muy rápido"
-          }
+          },
+          "lamina": "pal_blink"
         },
         {
           "id": "3_4.outubro.s2.bright",
@@ -532,7 +535,8 @@
           "tprAction": {
             "gl": "Abrir e pechar os dedos das dúas mans",
             "es": "Abrir y cerrar los dedos de las dos manos"
-          }
+          },
+          "lamina": "pal_fingers"
         },
         {
           "id": "3_4.outubro.s3.thumb",

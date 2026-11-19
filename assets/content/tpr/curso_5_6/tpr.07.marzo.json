@@ -355,7 +355,8 @@
             "gl": "Abrir a folla amodo",
             "es": "Abrir la hoja despacio"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_open_up_the_fold"
         },
         {
           "id": "5_6.marzo.s2.match-both-sides",
@@ -548,7 +549,8 @@
             "gl": "Tocar as escamas",
             "es": "Tocar las escamas"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_pinecone_scales"
         },
         {
           "id": "5_6.marzo.s3.ladybird-spots",

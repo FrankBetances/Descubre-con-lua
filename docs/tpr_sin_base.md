@@ -5,7 +5,7 @@ auditadas manualmente contra su palabra (`en`/`es`) y su gesto (`tprAction`) y
 se dejan **sin lámina** para no inventar contenido ni usar pictogramas abstractos
 o engañosos (R∞.3).
 
-Total piezas auditadas sin base visual hasta ahora: **289**.
+Total piezas auditadas sin base visual hasta ahora: **356**.
 
 | Tanda | Pieza (`en`) | `es` | Categoría | Gesto TPR | Motivo sin lámina |
 | --- | --- | --- | --- | --- | --- |
@@ -17,8 +17,13 @@ Total piezas auditadas sin base visual hasta ahora: **289**.
 | P2.82 | Agree | Estar de acuerdo | verb | Asentir con la cabeza | Verbo abstracto («Estar de acuerdo»). |
 | P2.82 | Agreed | Acordado | adjective | Asentir con la cabeza | Adjetivo/participio abstracto («Acordado»). |
 | P2.87 | All by myself | Yo solo | adjective | Tocar el pecho orgulloso | Expresión de autonomía personal («Yo solo»); indistinguible de orgullo sin texto. |
+| P2.88 | All clean now | Ya todo limpio | phrase | Abrir las manos limpias | Expresión de estado finalizado («Ya todo limpio»); indistinguible de «manos limpias» sin texto. |
+| P2.88 | All done! | ¡Ya está! | phrase | Abrir las manos al terminar | Expresión temporal de cierre («¡Ya está!»). |
+| P2.88 | All gone! | ¡Se acabó! | phrase | Abrir las manos vacías hacia arriba | Expresión de ausencia o fin («¡Se acabó!»); indistinguible de «gone» o «vacío». |
 | P2.85 | All the family | Toda la familia | complex | Abrir los brazos a todos | Cuantificador colectivo («Toda la familia»); redundante con «family» sin añadir gesto distinto. |
 | P2.85 | Ancient | Antiquísimo | adjective | Mover la mano despacio como el tiempo | Adjetivo temporal abstracto («Antiquísimo»); mover la mano como el tiempo no tiene imagen clara. |
+| P2.88 | And then... | Y entonces... | complex | Abrir una mano y luego la otra, con cara de misterio | Conector narrativo suspensivo («Y entonces...»). |
+| P2.88 | And then what happened? | ¿Y qué pasó después? | phrase | Señalar adelante | Pregunta narrativa secuencial («¿Y qué pasó después?»). |
 | P2.85 | Answer | Respuesta | noun | Levantar la mano y responder | Acto verbal escolar («Responder»); levantar la mano sin texto no distingue preguntar, responder ni votar. |
 | P2.84 | Apologise | Pedir perdón | verb | Poner la mano en el pecho y bajar la cabeza | Acto de habla social («Pedir perdón»); indistinguible sin texto de sentirse mal o tímido. |
 | P2.83 | Are you OK? | ¿Estás bien? | phrase | Inclinar la cabeza preguntando | Pregunta conversacional («¿Estás bien?»); inclinación ambigua sin texto. |
@@ -28,11 +33,15 @@ Total piezas auditadas sin base visual hasta ahora: **289**.
 | P2.85 | Biggest | El más grande | adjective | Abrir los brazos al máximo | Superlativo abstracto sin referente único («El más grande»). |
 | P2.82 | Bitter | Amargo, amarga | adjective | Poner cara de sorpresa y arrugar la nariz | Sabor amargo difícil de distinguir visualmente sin texto de agrio o disgusto. |
 | P2.84 | Bittersweet | Agridulce | adjective | Sonreír y abrazar | Adjetivo emocional complejo («Agridulce»); imposible de expresar sin texto. |
+| P2.88 | Breathtaking | Impresionante | adjective | Abrir la boca sorprendidos | Adjetivo emocional superlativo («Impresionante»); indistinguible de «sorpresa». |
 | P2.85 | Brilliant | Genial | adjective | Levantar los brazos y decir «¡sí!» | Exclamación valorativa verbal («¡Genial!»); solo brazos arriba y voz sin referente visual propio. |
 | P2.87 | Calm and clear | Tranquilo y claro | adjective | Hablar despacio | Cualidad invisible del habla («Tranquilo y claro»); depende de la voz escuchada. |
 | P2.87 | Calm voice | Voz tranquila | noun | Hablar despacio | Cualidad acústica invisible («Voz tranquila»). |
+| P2.88 | Can I play? | ¿Puedo jugar? | phrase | Acercarse y abrir la mano | Pregunta social conversacional («¿Puedo jugar?»). |
 | P2.83 | Can you catch me? | ¿Puedes pillarme? | phrase | Correr riendo | Pregunta de juego verbal («¿Puedes pillarme?»); indistinguible de perseguir sin texto. |
 | P2.83 | Carefree | Despreocupado | adjective | Saltar libres | Adjetivo anímico abstracto («Despreocupado»); indistinguible de saltar alegre sin texto. |
+| P2.88 | Castrelos Park | Parque de Castrelos | noun | Señalar el parque en el mapa | Topónimo local concreto («Parque de Castrelos»); sin rótulo de texto no se distingue de un parque genérico. |
+| P2.88 | Cat and hat rhyme! | ¡Cat y hat riman! | phrase | Señalar la cabeza y hacer un gato | Concepto fonológico verbal en inglés («¡Cat y hat riman!»). |
 | P2.83 | Ceremony | Ceremonia | noun | Caminar despacio y erguido | Sustantivo institucional abstracto («Ceremonia»); ambiguo frente a desfilar o caminar erguido. |
 | P2.83 | Change the ending | Cambiar el final | verb | Girar la mano al revés | Concepto narrativo abstracto («Cambiar el final»). |
 | P2.87 | Change voices | Cambiar de voz | verb | Hablar grave y luego agudo | Consigna vocal dinámica («Cambiar de voz»); cambio invisible en imagen fija. |
@@ -44,12 +53,14 @@ Total piezas auditadas sin base visual hasta ahora: **289**.
 | P2.86 | Clap, stamp, clap, stamp, what comes next? | Palma, pie, palma, pie, ¿qué viene ahora? | complex | Hacer el patrón y parar | Pregunta de secuencia rítmica («Palma, pie, palma, pie, ¿qué viene ahora?»). |
 | P2.87 | Clear voice | Voz clara | adjective | Hablar alto y despacio | Cualidad invisible de la dicción («Voz clara»). |
 | P2.87 | Clever | Listo, lista | adjective | Tocarse la frente con un dedo y sonreír | Rasgo cognitivo abstracto («Listo, lista»); indistinguible de pensar o idea. |
+| P2.88 | Clever idea | Idea inteligente | adjective | Señalar la cabeza sonriendo | Frase cognitiva abstracta («Idea inteligente»); indistinguible de «idea» sin texto. |
 | P2.84 | Compassionate | Compasivo | adjective | Poner las manos en el pecho | Adjetivo moral abstracto («Compasivo»). |
 | P2.87 | Compliment | Cumplido | noun | Decir algo bonito sonriendo | Acto de habla social («Cumplido»); indistinguible de «sonreír» o «hablar» sin palabras. |
 | P2.84 | Congratulations, class! | ¡Enhorabuena, clase! | phrase | Aplaudir | Exclamación colectiva de aula («¡Enhorabuena, clase!»); aplauso indiferenciable de «applause» o «celebrate» sin texto. |
 | P2.87 | Count down | Contar hacia atrás | verb | Contar de cinco a uno con los dedos | Acción numérica descendente («Contar hacia atrás»); requiere números sin texto prohibido. |
 | P2.87 | Count to twenty | Contar hasta veinte | verb | Contar mientras se lavan las manos | Consigna numérica verbal («Contar hasta veinte»); prohibido dibujar cifras y no se distingue de lavar manos. |
 | P2.87 | Countdown | Cuenta atrás | noun | Bajar los dedos de cinco a cero | Secuencia numérica descendente («Cuenta atrás»); requiere dígitos «5, 4, 3...». |
+| P2.88 | Countless | Incontable | adjective | Abrir las manos muchas veces | Cuantificador infinito abstracto («Incontable»). |
 | P2.82 | Decide | Decidir | verb | Pensar y asentir | Verbo mental abstracto («Decidir»). |
 | P2.87 | Deep voice | Voz grave | adjective | Hablar muy grave | Cualidad acústica invisible («Voz grave»). |
 | P2.85 | Democratic | Democrático | adjective | Levantar la mano y esperar | Adjetivo cívico abstracto («Democrático»); no se representa un concepto político sin texto. |
@@ -57,6 +68,7 @@ Total piezas auditadas sin base visual hasta ahora: **289**.
 | P2.82 | Disagree kindly | Discrepar con amabilidad | verb | Negar sonriendo | Matiz social abstracto («Discrepar con amabilidad»). |
 | P2.82 | Disagreement | Desacuerdo | noun | Negar con la cabeza | Sustantivo abstracto («Desacuerdo»). |
 | P2.87 | Do you remember? | ¿Te acuerdas? | phrase | Tocar la cabeza | Pregunta conversacional de memoria («¿Te acuerdas?»). |
+| P2.88 | Do you want to play with us? | ¿Quieres jugar con nosotros? | phrase | Abrir el círculo | Pregunta de invitación social («¿Quieres jugar con nosotros?»). |
 | P2.86 | Does that tickle? | ¿Hace cosquillas? | phrase | Hacer cosquillas despacio y parar | Pregunta conversacional táctil («¿Hace cosquillas?»). |
 | P2.86 | Don't move a muscle! | ¡No te muevas nada! | phrase | Quedarse como estatua | Orden verbal enfática («¡No te muevas nada!»); redundante con «stone statue» y «still». |
 | P2.83 | Eager | Con ganas | adjective | Saltar en el sitio | Adjetivo emocional abstracto («Con ganas»); indistinguible de saltar en el sitio. |
@@ -64,8 +76,10 @@ Total piezas auditadas sin base visual hasta ahora: **289**.
 | P2.84 | Emotion | Emoción | noun | Poner la mano en el pecho | Sustantivo psicológico abstracto («Emoción»). |
 | P2.84 | Emotional | Emocionado | adjective | Poner las manos en el pecho | Adjetivo abstracto («Emocionado»). |
 | P2.84 | Encourage | Animar | verb | Dar palmas a un compañero | Verbo social genérico («Animar»); gesto idéntico a aplaudir sin marca visual propia. |
+| P2.88 | Ending | Final | noun | Cerrar un libro | Concepto narrativo estructural («Final»); cerrar un libro se confunde con «cerrar el libro». |
 | P2.83 | Energetic | Con energía | adjective | Saltar en el sitio | Adjetivo abstracto («Con energía»); sin objeto distinto de saltar. |
 | P2.83 | Energy | Energía | noun | Saltar con fuerza | Concepto físico abstracto («Energía»). |
+| P2.88 | Enjoy your meal! | ¡Buen provecho! | phrase | Abrir las manos hacia el grupo antes de comer | Fórmula social de cortesía («¡Buen provecho!»). |
 | P2.85 | Estimate | Estimar | verb | Mover la mano dudando | Proceso mental matemático («Estimar»); dudar con la mano es abstracto. |
 | P2.87 | Even number | Par | adjective | Enseñar dos dedos | Concepto matemático abstracto («Número par»); requiere dígitos. |
 | P2.87 | Every little thing helps | Cada poquito ayuda | phrase | Juntar los dedos | Refrán moral abstracto («Cada poquito ayuda»). |
@@ -74,13 +88,16 @@ Total piezas auditadas sin base visual hasta ahora: **289**.
 | P2.85 | Everyone can play | Todos pueden jugar | phrase | Abrir los brazos a todos | Norma inclusiva abstracta («Todos pueden jugar»). |
 | P2.83 | Excited for next year | Con ganas del año que viene | adjective | Saltar contentos | Expectativa temporal futura abstracta («Con ganas del año que viene»). |
 | P2.83 | Excited for summer | Con ganas de verano | adjective | Saltar contentos | Expectativa emocional abstracta («Con ganas de verano»). |
+| P2.88 | Exciting | Emocionante | adjective | Abrir mucho los ojos | Adjetivo emocional abstracto («Emocionante»). |
 | P2.87 | Expensive | Caro | adjective | Enseñar muchas monedas | Concepto económico abstracto («Caro»); indistinguible de «monedas» o «ahorrar» sin cifras. |
+| P2.88 | Express | Expresar | verb | Abrir las manos desde el pecho | Verbo comunicativo abstracto («Expresar»). |
 | P2.84 | Faint | Suave | adjective | Tocar el tambor muy despacio | Adjetivo de intensidad muy baja («Suave»); indiferenciable en un dibujo estático sin texto de «loud and soft» o «quiet». |
 | P2.85 | Family audience | Familias en el público | noun | Saludar a las familias | Rol colectivo redundante («Familias en el público»); igual que «cheering crowd» o «proud parents». |
 | P2.85 | Farewell party | Fiesta de despedida | noun | Bailar y saludar | Evento redundante con «celebration»/«bye» sin rasgo propio. |
 | P2.85 | Farewell song | Canción de despedida | noun | Cantar y saludar a todos | Evento sonoro/verbal («Canción de despedida»); idéntico a cantar o saludar. |
 | P2.84 | Feeling | Sentimiento | noun | Poner la mano en el pecho | Sustantivo psicológico abstracto («Sentimiento»). |
 | P2.84 | Feelings words | Palabras de los sentimientos | noun | Poner la mano en el pecho | Concepto metalingüístico («Palabras de los sentimientos»). |
+| P2.88 | Figure out | Averiguar | verb | Abrir los ojos de golpe | Verbo cognitivo abstracto («Averiguar»). |
 | P2.84 | Find a rhyme | Rimar | verb | Dar palmas en cada rima | Tarea lingüística («Rimar»); depende del sonido igual entre palabras habladas. |
 | P2.87 | First he whispers, then he shouts | Primero susurra, luego grita | complex | Hablar bajo y luego alto | Secuencia narrativa acústica («Primero susurra, luego grita»); requiere dos volúmenes de audio. |
 | P2.83 | First the hero was lost, then she found her way home | Primero la heroína se perdió, luego encontró el camino a casa | complex | Mirar alrededor y luego caminar | Oración narrativa de dos tiempos demasiado compleja para un solo dibujo sin texto. |
@@ -98,6 +115,7 @@ Total piezas auditadas sin base visual hasta ahora: **289**.
 | P2.82 | Gaze | Mirar fijamente | verb | Mirar a los ojos del bebé en silencio | Matiz sutil («Mirar fijamente»); indistinguible de mirar sin texto. |
 | P2.85 | Generous | Generoso | adjective | Abrir los brazos para dar | Virtud moral abstracta («Generoso»). |
 | P2.84 | Gentle-hearted | De corazón dulce | adjective | Hacer un corazón con las manos | Adjetivo moral abstracto («De corazón dulce»). |
+| P2.88 | Gone | Desaparecido | adjective | Abrir las manos vacías | Adjetivo abstracto de desaparición («Desaparecido»). |
 | P2.87 | Gram | Gramo | noun | Juntar dos dedos muy poco | Unidad de masa abstracta («Gramo»); invisible sin símbolo numérico «g». |
 | P2.83 | Grateful | Agradecido, agradecida | adjective | Juntar las manos en el pecho e inclinar la cabeza | Sentimiento abstracto («Agradecido»); difícil de distinguir sin texto de rezar o abrazar. |
 | P2.84 | Grateful heart | Corazón agradecido | adjective | Poner las manos en el pecho | Expresión emocional abstracta («Corazón agradecido»). |
@@ -110,12 +128,14 @@ Total piezas auditadas sin base visual hasta ahora: **289**.
 | P2.83 | Here it comes! | ¡Ahí va! | phrase | Rodar la pelota hacia el bebé | Exclamación situacional («¡Ahí va!»); redundante con «roll back»/«ball to baby» sin texto. |
 | P2.82 | Here's Grandad! | ¡Aquí está el abuelo! | phrase | Descubrir la foto del abuelo | Exclamación conversacional sobre foto sin imagen real del abuelo. |
 | P2.85 | Hip, hip, hooray! | ¡Hip, hip, hurra! | phrase | Levantar los brazos tres veces | Vítores verbales rítmicos («¡Hip, hip, hurra!»); indiscernible sin texto. |
+| P2.88 | Historic | Histórico | adjective | Tocar una piedra vieja | Cualidad histórica temporal abstracta («Histórico»); tocar una piedra vieja parece solo «roca» sin texto. |
 | P2.87 | Hobby | Afición | noun | Hacer el gesto de una afición | Categoría general abstracta («Afición»); abarca deportes, lectura o pintura sin referente único. |
 | P2.86 | Hold it, please! | ¡Sujétalo, por favor! | phrase | Sujetar con las dos manos | Petición verbal cortés («¡Sujétalo, por favor!»); redundante con «hold» y «hold steady». |
 | P2.84 | Honest | Sincero | adjective | Poner la mano en el pecho | Virtud moral abstracta («Sincero»). |
 | P2.85 | Hooray for us! | ¡Hurra por nosotros! | phrase | Levantar los brazos | Exclamación de grupo («¡Hurra por nosotros!»); sin imagen única diferenciable. |
 | P2.87 | Hours of sleep | Horas de sueño | noun | Contar horas con los dedos | Medida temporal abstracta («Horas de sueño»); indistinguible de «sleep» o reloj sin cifras. |
 | P2.85 | How big is baby? | ¿Cuánto crece el bebé? | phrase | Abrir los brazos muy grandes | Pregunta de juego verbal («¿Cuánto crece el bebé?»); depende de la rima hablada. |
+| P2.88 | How can we help the planet? | ¿Cómo podemos ayudar al planeta? | phrase | Abrir las manos | Pregunta reflexiva larga («¿Cómo podemos ayudar al planeta?»). |
 | P2.83 | How high can you jump? | ¿Cuánto saltas? | phrase | Saltar lo más alto posible | Pregunta cuantitativa abierta («¿Cuánto saltas?»). |
 | P2.87 | How long can you stand on one leg? | ¿Cuánto aguantas a la pata coja? | phrase | Contar en un pie | Pregunta de duración («¿Cuánto aguantas a la pata coja?»); indistinguible de «stand on one leg». |
 | P2.87 | How many chestnuts? | ¿Cuántas castañas? | phrase | Contar con los dedos | Pregunta numérica («¿Cuántas castañas?»); sin interrogación parece solo «castañas». |
@@ -125,20 +145,31 @@ Total piezas auditadas sin base visual hasta ahora: **289**.
 | P2.87 | How many petals does it have? | ¿Cuántos pétalos tiene? | phrase | Contar con los dedos | Pregunta numérica («¿Cuántos pétalos tiene?»). |
 | P2.87 | How old are you? | ¿Cuántos años tienes? | phrase | Enseñar los dedos | Pregunta personal («¿Cuántos años tienes?»). |
 | P2.87 | How old is this tree? | ¿Cuántos años tiene este árbol? | phrase | Contar anillos con el dedo | Pregunta numérica sobre el árbol («¿Cuántos años tiene este árbol?»). |
+| P2.88 | How would you feel if...? | ¿Cómo te sentirías si...? | complex | Tocar el pecho preguntando | Pregunta hipotética emocional («¿Cómo te sentirías si...?»); depende del diálogo hablado. |
 | P2.82 | Hushed | Silencioso | adjective | Hablar muy bajito | Adjetivo sinónimo de «hush» / «silent room» sin escena propia distinta. |
+| P2.88 | Hypothesis | Hipótesis | noun | Tocar la cabeza y decir «creo que» | Concepto científico abstracto («Hipótesis»); indistinguible de «pensar» o «idea» sin texto. |
 | P2.85 | I can do it! | ¡Puedo yo! | phrase | Levantar los brazos orgulloso | Frase de autoestima abstracta («¡Puedo yo!»); depende por entero del texto. |
 | P2.83 | I see it differently | Yo lo veo de otra manera | phrase | Girar la mano | Expresión cognitiva abstracta («Yo lo veo de otra manera»). |
+| P2.88 | I think so because | Pienso eso porque | complex | Tocar la cabeza y explicar | Conector argumentativo causal («Pienso eso porque»); estructura puramente verbal. |
 | P2.87 | I'm five and a half! | ¡Tengo cinco años y medio! | phrase | Enseñar cinco dedos y medio | Frase de edad exacta («¡Tengo cinco años y medio!»); requiere números. |
 | P2.85 | I'm ready for Primary! | ¡Estoy listo para Primaria! | phrase | Levantar los brazos | Expresión declarativa escolar («¡Estoy listo para Primaria!»); igual que brazos arriba genérico sin texto. |
 | P2.84 | I'm sorry | Lo siento | phrase | Poner la mano en el pecho | Expresión conversacional de disculpa («Lo siento»). |
+| P2.88 | If I touch you, you're it | Si te toco, pillas tú | complex | Tocar y cambiar el papel | Regla condicional verbal de juego («Si te toco, pillas tú»); indistinguible de «pillar» sin texto. |
 | P2.84 | If you are the king, walk slowly | Si eres el rey, camina despacio | complex | Caminar despacio y erguido | Oración condicional («Si eres el rey...»); redundante con «king» y «go slow». |
 | P2.85 | If you want to talk, raise your hand | Si quieres hablar, levanta la mano | complex | Levantar la mano antes de hablar | Norma condicional de aula («Si quieres hablar, levanta la mano»); indistinguible de «raise a hand». |
 | P2.82 | Imagine | Imaginar | verb | Cerrar los ojos y sonreír pensando | Verbo mental abstracto («Imaginar»). |
 | P2.82 | Imagine long ago | Imaginar hace mucho | verb | Cerrar los ojos y pensar | Verbo mental abstracto temporal («Imaginar hace mucho»). |
+| P2.88 | Include someone | Incluir a alguien | verb | Abrir el círculo | Acción social abstracta («Incluir a alguien»). |
+| P2.88 | Inclusive | Que incluye a todos | adjective | Abrir el círculo a otro | Adjetivo social abstracto («Que incluye a todos»). |
 | P2.87 | Independent | Autónomo | adjective | Hacer el gesto de «puedo yo» | Rasgo de autonomía personal abstracto («Autónomo»); indistinguible de cualquier acción cotidiana sin texto. |
+| P2.88 | Independent learner | Aprendiz autónomo | adjective | Abrir un libro solo | Concepto pedagógico abstracto («Aprendiz autónomo»). |
+| P2.88 | Intelligent | Inteligente | adjective | Tocar la cabeza | Rasgo cognitivo abstracto («Inteligente»); indistinguible de «listo» o «cerebro». |
+| P2.88 | Invent | Inventar | verb | Tocar la cabeza y abrir la mano | Verbo creativo abstracto («Inventar»); indistinguible de «idea» sin texto. |
 | P2.86 | Is ice hot or cold? | ¿El hielo es caliente o frío? | phrase | Temblar respondiendo | Pregunta de temperatura («¿El hielo es caliente o frío?»). |
 | P2.86 | Is it sweet or sour? | ¿Es dulce o ácido? | phrase | Sonreír o arrugar la cara | Pregunta sensorial («¿Es dulce o ácido?»). |
 | P2.86 | Is it the same on both sides? | ¿Es igual en los dos lados? | phrase | Comparar las manos | Pregunta lógica comparativa («¿Es igual en los dos lados?»). |
+| P2.88 | Is it warm? | ¿Está calentito? | phrase | Tocar la taza con cuidado | Pregunta conversacional térmica («¿Está calentito?»); indistinguible de «caliente» sin signos ni texto. |
+| P2.88 | It's you! | ¡Eres tú! | phrase | Tocar el pecho del bebé | Exclamación deíctica conversacional («¡Eres tú!»); depende del intercambio hablado. |
 | P2.85 | Joyful | Gozoso | adjective | Levantar los brazos contentos | Adjetivo emocional abstracto («Gozoso»); redundante con «happy» y «glad». |
 | P2.83 | Joyous | Gozoso | adjective | Saltar contentos | Adjetivo emocional abstracto («Gozoso»). |
 | P2.84 | Keep a promise | Cumplir una promesa | verb | Poner la mano en el pecho | Concepto ético abstracto («Cumplir una promesa»). |
@@ -151,6 +182,7 @@ Total piezas auditadas sin base visual hasta ahora: **289**.
 | P2.85 | Last day | Último día | noun | Enseñar un dedo y despedirse | Concepto temporal abstracto («Último día»). |
 | P2.84 | Leave only footprints | Deja solo huellas | phrase | Pisar y mirar la huella | Lema o proverbio ecológico («Deja solo huellas»); no distinguible sin texto de «footsteps». |
 | P2.87 | Less than three | Menos de tres | complex | Enseñar dos dedos | Comparación matemática abstracta («Menos de tres»). |
+| P2.88 | Let's find out! | ¡Vamos a descubrirlo! | phrase | Frotarse las manos | Exhortación conversacional («¡Vamos a descubrirlo!»); carece de imagen única sin texto. |
 | P2.83 | Let's play! | ¡Vamos a jugar! | phrase | Levantar los brazos y echar a andar juntos | Consigna genérica («¡Vamos a jugar!»); rechazada en revisión P2.81 por no tener objeto único. |
 | P2.85 | Let's sing! | ¡Vamos a cantar! | phrase | Abrir los brazos y empezar una canción | Exhortación grupal («¡Vamos a cantar!»); igual a notas/canto genérico sin texto. |
 | P2.83 | Let's try another way | Probemos de otra manera | phrase | Girar y empezar de nuevo | Consigna metacognitiva abstracta («Probemos de otra manera»). |
@@ -158,26 +190,39 @@ Total piezas auditadas sin base visual hasta ahora: **289**.
 | P2.85 | Life story | Historia de vida | noun | Mover la mano de atrás a adelante | Concepto narrativo/biográfico abstracto («Historia de vida»). |
 | P2.82 | Listen with your eyes closed | Cierra los ojos y escucha | phrase | Cerrar los ojos | Duplicado literal de «close your eyes and listen». |
 | P2.82 | Listen, what's that? | Escucha, ¿qué es eso? | phrase | Parar y llevar la mano a la oreja | Pregunta abierta de misterio sonoro sin objeto. |
+| P2.88 | Look what I found! | ¡Mira lo que encontré! | phrase | Abrir la mano con el tesoro | Exclamación conversacional genérica («¡Mira lo que encontré!»). |
 | P2.82 | Lose | Perder | verb | Encoger los hombros y sonreír | Concepto abstracto («Perder», encoger hombros); ambiguo sin texto. |
 | P2.87 | Loudest | El más fuerte | adjective | Cantar muy fuerte | Superlativo acústico comparativo («El más fuerte»); requiere escala sonora de comparación. |
 | P2.84 | Lovely | Precioso, preciosa | adjective | Juntar las manos en el pecho y suspirar | Adjetivo valorativo genérico («Precioso, preciosa»). |
+| P2.88 | Magical | Mágico | adjective | Abrir los dedos de golpe | Adjetivo fantasioso abstracto («Mágico»); evitar destellos genéricos. |
 | P2.87 | Majority | Mayoría | noun | Contar manos levantadas | Concepto cuantitativo abstracto («Mayoría»). |
 | P2.84 | Make a resolution | Hacer un propósito | verb | Poner la mano en el pecho | Propósito mental abstracto («Hacer un propósito»). |
 | P2.85 | Melody | Melodía | noun | Mover la mano subiendo y bajando | Concepto musical puramente auditivo («Melodía»); indistinguible de otras ondas o notas. |
+| P2.88 | Memorable | Memorable | adjective | Abrir mucho los ojos | Adjetivo temporal abstracto («Memorable»). |
+| P2.88 | Memory | Recuerdo | noun | Tocar la cabeza sonriendo | Concepto mental abstracto («Recuerdo»); sin historia ni texto es indistinguible de «pensar». |
 | P2.84 | Merry and bright | Alegre y brillante | complex | Dar palmas y abrir las manos | Par de adjetivos poéticos abstractos («Alegre y brillante»). |
 | P2.82 | Mild | Suave | adjective | Mover la cabeza tranquilos | Adjetivo abstracto («Suave» aplicado al gesto/clima). |
 | P2.84 | Miss | Echar de menos | verb | Abrazarse a uno mismo pensando en alguien | Sentimiento interior abstracto («Echar de menos»). |
 | P2.85 | Mood | Estado de ánimo | noun | Mover la mano arriba y abajo | Concepto psicológico abstracto («Estado de ánimo»). |
 | P2.87 | More than five | Más de cinco | complex | Enseñar cinco dedos y uno más | Comparación matemática abstracta («Más de cinco»). |
 | P2.83 | Most crabs walk sideways, but the spider crab walks forwards | La mayoría de los cangrejos camina de lado, pero la centolla camina hacia delante | complex | Caminar de lado y después hacia delante | Comparación biológica entre dos especies imposible de distinguir sin texto. |
+| P2.88 | My turn, your turn | Mi turno, tu turno | phrase | Tocar la propia nariz y la del bebé | Regla alternante de turnos («Mi turno, tu turno»); depende del diálogo y orden verbal. |
 | P2.84 | Name | Nombre | noun | Poner la mano en el pecho al decir el propio nombre | Concepto lingüístico («Nombre»); ya rechazado en P2.81. |
+| P2.88 | Natural | Natural | adjective | Tocar una hoja | Adjetivo clasificatorio abstracto («Natural»); tocar una hoja parece solo «hoja». |
 | P2.84 | Nature reserve | Espacio protegido | noun | Abrazar el aire con cuidado | Categoría administrativa abstracta («Espacio protegido»). |
 | P2.87 | New | Nuevo, nueva | adjective | Mostrar algo con las manos como si fuera un regalo | Cualidad temporal abstracta («Nuevo, nueva»); enseñar una caja o lazo parece «regalo», no «nuevo». |
+| P2.88 | Next year I will learn to read books by myself | El año que viene aprenderé a leer libros yo solo | complex | Abrir un libro imaginario | Oración futura larga («El año que viene aprenderé a leer libros yo solo»). |
+| P2.88 | Next year I will read more books | El año que viene leeré más libros | complex | Abrir un libro imaginario | Oración futura larga («El año que viene leeré más libros»). |
 | P2.83 | Next year we will be the oldest | El año que viene seremos los mayores | complex | Estirarse de puntillas | Comparación temporal abstracta («El año que viene seremos los mayores»). |
+| P2.88 | Not too hot | No muy caliente | complex | Tocar y retirar el dedo despacio | Grado térmico negativo («No muy caliente»); una negación de grado resulta ambigua sin texto. |
 | P2.84 | Number line | Recta numérica | noun | Caminar por una línea contando | Recta numérica con cifras («1, 2, 3...»); prohibido meter texto o dígitos en la lámina. |
 | P2.87 | Odd | Impar | adjective | Enseñar tres dedos | Concepto matemático abstracto («Impar»); requiere dígitos. |
 | P2.82 | Off-stage | Fuera de escena | adjective | Agacharse detrás | Concepto teatral abstracto («Fuera de escena»). |
+| P2.88 | One by one | Uno a uno | complex | Tocar el hombro de cada criatura, de una en una | Secuencia adverbial («Uno a uno»); requiere orden temporal o numeración escrita. |
 | P2.87 | One more sleep! | ¡Solo una noche más! | phrase | Enseñar un dedo | Expresión temporal idiomática («¡Solo una noche más!»); imposible distinguirla de «dormir» sin texto. |
+| P2.88 | Open hands to agree | Abrir las manos para acordar | verb | Abrir las manos | Fórmula social abstracta («Abrir las manos para acordar»). |
+| P2.88 | Open, shut them | Ábrelas, ciérralas | phrase | Abrir y cerrar las manos cantando | Consigna cantada («Ábrelas, ciérralas»); idéntica en imagen a «abrir y cerrar». |
+| P2.88 | Open-minded | De mente abierta | adjective | Abrir las manos desde la cabeza | Rasgo actitudinal abstracto («De mente abierta»). |
 | P2.84 | Opinion | Opinión | noun | Poner la mano en el pecho y hablar | Concepto cognitivo/verbal abstracto («Opinión»). |
 | P2.82 | Out of sight | Fuera de la vista | adjective | Taparse detrás de las manos | Frase espacial abstracta («Fuera de la vista»). |
 | P2.82 | Peaceful mind | Mente tranquila | adjective | Cerrar los ojos y respirar | Concepto mental abstracto («Mente tranquila»). |
@@ -189,8 +234,11 @@ Total piezas auditadas sin base visual hasta ahora: **289**.
 | P2.84 | Polite | Educado | adjective | Decir «gracias» con la mano en el pecho | Cualidad social/verbal («Educado»); depende de decir «gracias». |
 | P2.84 | Precious | Precioso | adjective | Acariciar la mano del bebé | Adjetivo valorativo abstracto («Precioso»). |
 | P2.84 | Precious sea | Mar valioso | adjective | Poner las manos en el pecho | Valoración abstracta («Mar valioso»). |
+| P2.88 | Predict | Predecir | verb | Tocar la cabeza pensando | Verbo cognitivo abstracto («Predecir»); indistinguible de «pensar» o «adivinar». |
+| P2.88 | Prediction | Predicción | noun | Tocar la cabeza pensando | Sustantivo cognitivo abstracto («Predicción»). |
 | P2.83 | Proud | Orgulloso, orgullosa | adjective | Levantar la barbilla y caminar como un león | Sentimiento abstracto («Orgulloso»). |
 | P2.84 | Proud of myself | Orgulloso de mí | adjective | Poner las manos en el pecho | Sentimiento autoevaluativo abstracto («Orgulloso de mí»). |
+| P2.88 | Quick-thinking | Espabilado | adjective | Tocar la cabeza y sonreír | Rasgo cognitivo abstracto («Espabilado»). |
 | P2.85 | Quiet car | Coche silencioso | adjective | Mover la mano sin hacer ruido | Cualidad sonora/regla silenciosa («Coche silencioso»); indistinguible de «car» o «quiet» sin texto. |
 | P2.83 | Quietly, quietly | Bajito, bajito | complex | Caminar muy despacio | Adverbio repetido abstracto («Bajito, bajito»). |
 | P2.82 | Reaction | Reacción | noun | Moverse al oír una palmada | Sustantivo abstracto («Reacción»). |
@@ -206,6 +254,7 @@ Total piezas auditadas sin base visual hasta ahora: **289**.
 | P2.87 | Result | Resultado | noun | Enseñar el resultado con los dedos | Concepto lógico/matemático abstracto («Resultado»). |
 | P2.87 | Retell | Volver a contar | verb | Contar con los dedos | Verbo narrativo abstracto («Volver a contar una historia»). |
 | P2.84 | Rhyme | Rimar | verb | Dar palmas en dos palabras que suenan igual | Concepto lingüístico («Rimar»); depende del sonido igual de dos palabras habladas. |
+| P2.88 | Routine | Rutina | noun | Tocar el reloj y hacer lo mismo cada día | Concepto organizativo temporal («Rutina»); indistinguible de reloj o tarea concreta sin texto. |
 | P2.87 | Rumbly | Retumbante | adjective | Hacer un sonido grave con la boca | Cualidad sonora abstracta («Retumbante»); sonido grave sin objeto único. |
 | P2.84 | Safe | Seguro, segura | adjective | Abrazarse a uno mismo y sonreír tranquilos | Estado abstracto («Seguro, segura»); ambiguo frente a abrazar. |
 | P2.86 | Satisfied | Satisfecho | adjective | Sonreír tranquilo | Estado interior sutil («Satisfecho»); indistinguible de «happy» o «smile». |
@@ -221,6 +270,8 @@ Total piezas auditadas sin base visual hasta ahora: **289**.
 | P2.84 | Show you care | Mostrar que te importa | verb | Abrazar suave | Concepto relacional abstracto («Mostrar que te importa»). |
 | P2.85 | Signal | Señal | noun | Levantar la mano como una señal | Sustantivo genérico abstracto («Señal»); demasiado ambiguo frente a gestos concretos. |
 | P2.82 | Silly story | Historia disparatada | adjective | Reír y encoger los hombros | Concepto abstracto («Historia disparatada»). |
+| P2.88 | Simon says touch your nose | Simón dice: tócate la nariz | complex | Tocar la nariz solo si lo dice Simón | Consigna verbal condicional («Simón dice: tócate la nariz»); sin texto es igual a «tocar la nariz». |
+| P2.88 | Size | Tamaño | noun | Abrir las manos a distinto tamaño | Concepto dimensional abstracto («Tamaño»); requiere etiqueta escrita de medida. |
 | P2.85 | Sluggish | Lentísimo | adjective | Mover la mano muy despacio | Adjetivo abstracto de ritmo («Lentísimo»); gesto vago de mano sin referente propio. |
 | P2.86 | Smile of thanks | Sonrisa de agradecimiento | noun | Sonreír a alguien | Matiz social abstracto («Sonrisa de agradecimiento»); indistinguible de otras sonrisas sin texto. |
 | P2.85 | Social | Sociable | adjective | Saludar a todos | Adjetivo relacional abstracto («Sociable»). |
@@ -232,6 +283,9 @@ Total piezas auditadas sin base visual hasta ahora: **289**.
 | P2.86 | Stop right there! | ¡Para ahí! | phrase | Parar y quedarse quieto | Orden verbal de alto («¡Para ahí!»); redundante sin texto. |
 | P2.86 | Stop spinning! | ¡Deja de girar! | phrase | Parar de golpe | Orden verbal de parada («¡Deja de girar!»). |
 | P2.86 | Sudden | Repentino | adjective | Parar de golpe | Adjetivo temporal abstracto («Repentino»). |
+| P2.88 | Suggest | Sugerir | verb | Abrir la mano hacia delante | Verbo comunicativo abstracto («Sugerir»). |
+| P2.88 | Surprise ending | Final sorprendente | adjective | Abrir la boca | Concepto literario abstracto («Final sorprendente»). |
+| P2.88 | Surprising | Sorprendente | adjective | Abrir mucho los ojos | Adjetivo abstracto («Sorprendente»); redundante con «surprised». |
 | P2.83 | Sustainable | Sostenible | adjective | Poner las manos en equilibrio | Concepto abstracto («Sostenible»); gesto de manos en equilibrio ambiguo sin texto. |
 | P2.87 | Talk it through | Hablarlo | verb | Hablar con un amigo | Verbo conversacional abstracto («Hablarlo»); indistinguible de «dialogue» sin texto. |
 | P2.87 | Tell in order | Contar en orden | verb | Levantar uno, dos, tres dedos | Consigna verbal de orden («Contar en orden»). |
@@ -240,9 +294,14 @@ Total piezas auditadas sin base visual hasta ahora: **289**.
 | P2.84 | Thank the teachers | Agradecer a las maestras | verb | Poner la mano en el pecho | Acto de habla de agradecimiento («Agradecer a las maestras»). |
 | P2.86 | Thank-you note | Nota de agradecimiento | noun | Entregar un papel | Tarjetita social («Nota de agradecimiento»); sin texto es indistinguible de cualquier postal o carta. |
 | P2.84 | Thankful | Agradecido | adjective | Poner la mano en el pecho | Sentimiento abstracto («Agradecido»). |
+| P2.88 | That's OK | No pasa nada | phrase | Sonreír y abrir las manos | Fórmula consoladora verbal («No pasa nada»). |
+| P2.88 | The end | Fin | phrase | Cerrar las manos como un libro que se cierra | Fórmula textual de cierre («Fin»). |
 | P2.83 | The pattern repeats again and again | El patrón se repite una y otra vez | complex | Girar la mano en círculos | Regla abstracta de repetición sin objeto único. |
+| P2.88 | The warmer it gets, the faster it cooks | Cuanto más caliente, más rápido se hace | complex | Frotar las manos rápido | Ley proporcional verbal («Cuanto más caliente, más rápido se hace»). |
 | P2.85 | Theatrical | Teatral | adjective | Abrir los brazos exagerando | Adjetivo estilístico abstracto («Teatral»). |
 | P2.84 | They lived happily ever after | Vivieron felices para siempre | phrase | Abrazarse | Fórmula narrativa literaria («Vivieron felices para siempre»). |
+| P2.88 | Thoughtful | Atento | adjective | Tocar la cabeza y el pecho | Rasgo personal abstracto («Atento»). |
+| P2.88 | Thoughtful idea | Idea pensada | adjective | Tocar la frente despacio | Frase abstracta («Idea pensada»); indistinguible de «idea». |
 | P2.87 | Three plus two makes five | Tres más dos son cinco | complex | Enseñar tres y dos dedos | Operación aritmética verbal («Tres más dos son cinco»); requiere cifras y signos. |
 | P2.83 | Three, two, one, happy new year! | ¡Tres, dos, uno, feliz año nuevo! | phrase | Contar y saltar | Consigna verbal de cuenta atrás («¡Tres, dos, uno...!»); depende de números hablados. |
 | P2.84 | Together again | Juntos otra vez | phrase | Abrazarse de nuevo | Expresión relacional temporal («Juntos otra vez»). |
@@ -258,11 +317,14 @@ Total piezas auditadas sin base visual hasta ahora: **289**.
 | P2.82 | Upright posture | Postura recta | adjective | Sentarse recto | Duplicado exacto de «posture» / «upright». |
 | P2.86 | Useful helper | Ayudante útil | adjective | Llevar una caja | Epíteto valorativo («Ayudante útil»); redundante con «helpful» y «cooperate». |
 | P2.84 | Verse | Verso | noun | Marcar el ritmo de un verso | Concepto textual/poético («Verso»); ya señalado en P2.81 sin base visual propia. |
+| P2.88 | Vigo was small, but now it is big | Vigo era pequeño, pero ahora es grande | complex | Juntar las manos y abrirlas | Oración histórica comparativa («Vigo era pequeño, pero ahora es grande»). |
 | P2.84 | Visit | Visitar | verb | Caminar y mirar alrededor | Verbo social genérico («Visitar»); sin acción u objeto único distinguible sin texto. |
+| P2.88 | Vivid | Vivo | adjective | Abrir los ojos mucho | Adjetivo sensorial abstracto («Vivo»). |
 | P2.87 | Voice | Voz | noun | Hablar con una voz distinta | Fenómeno acústico invisible («Voz»); carece de imagen única no textual. |
 | P2.85 | Volunteer | Voluntario | noun | Levantar la mano para ayudar | Rol social abstracto («Voluntario»); gesto idéntico a levantar la mano. |
 | P2.83 | Walking is better than driving for short trips | Caminar es mejor que conducir para ir cerca | complex | Caminar y sonreír | Juicio comparativo de movilidad imposible de expresar fielmente sin texto. |
 | P2.84 | Warm-hearted | De buen corazón | adjective | Abrazarse a sí mismo | Adjetivo moral abstracto («De buen corazón»). |
+| P2.88 | Was Vigo always big? | ¿Vigo siempre fue grande? | phrase | Abrir y cerrar las manos | Pregunta histórica verbal («¿Vigo siempre fue grande?»). |
 | P2.86 | Wasteful | Que desperdicia | adjective | Dejar caer agua y parar | Adjetivo moral abstracto («Que desperdicia»); no se distingue claramente de un grifo abierto o salpicar. |
 | P2.85 | Wave to families | Saludar a las familias | verb | Saludar al público | Acción redundante con «hand wave» y «proud parents» sin marca propia. |
 | P2.85 | We did it! | ¡Lo conseguimos! | phrase | Levantar los brazos todos | Exclamación colectiva genérica («¡Lo conseguimos!»); sin marca visual distinta de «win» o «celebrate». |
@@ -273,8 +335,12 @@ Total piezas auditadas sin base visual hasta ahora: **289**.
 | P2.85 | Welcome back | De vuelta | adjective | Abrir los brazos contentos | Fórmula social temporal («De vuelta»); indiferenciable de «welcome» sin texto. |
 | P2.85 | Welcoming | Acogedor | adjective | Abrir los brazos | Adjetivo social abstracto («Acogedor»); redundante con «welcome». |
 | P2.87 | What a colour! | ¡Qué color! | phrase | Enseñar la fruta a la luz | Exclamación conversacional («¡Qué color!»); sin objeto concreto ni signo escrito. |
+| P2.88 | What can we do? | ¿Qué podemos hacer? | phrase | Abrir las manos preguntando | Pregunta abierta de acción («¿Qué podemos hacer?»). |
 | P2.82 | What colour is it? | ¿De qué color es? | phrase | Encoger los hombros y señalar un objeto | Pregunta abierta («¿De qué color es?»); sin objeto específico. |
+| P2.88 | What did you dream about? | ¿Qué soñaste? | phrase | Tocar la cabeza | Pregunta conversacional («¿Qué soñaste?»). |
+| P2.88 | What do you think will happen? | ¿Qué crees que pasará? | phrase | Tocar la cabeza | Pregunta predictiva («¿Qué crees que pasará?»). |
 | P2.87 | What does the cow say? | ¿Qué dice la vaca? | phrase | Enseñar la vaca y esperar | Pregunta lúdica verbal («¿Qué dice la vaca?»); sin texto no se distingue de «cow» o «moo». |
+| P2.88 | What if the wolf was kind? | ¿Y si el lobo fuera bueno? | phrase | Tocar la cabeza pensando | Pregunta narrativa hipotética («¿Y si el lobo fuera bueno?»). |
 | P2.87 | What is it? | ¿Qué es? | phrase | Enseñar un objeto y esperar | Pregunta abierta genérica («¿Qué es?»); depende de un objeto desconocido y el diálogo hablado. |
 | P2.87 | What shape is this? | ¿Qué forma es? | phrase | Enseñar una forma y esperar | Pregunta abierta de formas («¿Qué forma es?»); indistinguible de mostrar una figura. |
 | P2.82 | What will happen if it gets warm? | ¿Qué pasará si hace calor? | complex | Encoger los hombros | Pregunta hipotética abstracta. |
@@ -293,6 +359,7 @@ Total piezas auditadas sin base visual hasta ahora: **289**.
 | P2.87 | Whispery | Susurrante | adjective | Hablar con la voz muy bajita | Cualidad acústica invisible («Susurrante»). |
 | P2.85 | Who agrees? | ¿Quién está de acuerdo? | phrase | Levantar la mano | Pregunta asamblearia («¿Quién está de acuerdo?»); votación verbal dependiente del habla. |
 | P2.85 | Who wants to be captain? | ¿Quién quiere ser capitán? | phrase | Levantar la mano | Pregunta conversacional de juego («¿Quién quiere ser capitán?»). |
+| P2.88 | Wholesome | Sano y bueno | adjective | Tocar la barriga contentos | Cualidad nutricional abstracta («Sano y bueno»). |
 | P2.82 | Why do we wash our hands? | ¿Por qué nos lavamos las manos? | phrase | Encoger los hombros preguntando | Pregunta causal abstracta. |
 | P2.85 | Wonderful | Maravilloso, maravillosa | adjective | Abrir los brazos y mirar alrededor con admiración | Adjetivo valorativo genérico («Maravilloso»). |
 | P2.86 | Word | Palabra | noun | Llevar la mano de la boca hacia delante al decir una palabra | Unidad lingüística abstracta («Palabra»); no se representa sin texto ni letras. |

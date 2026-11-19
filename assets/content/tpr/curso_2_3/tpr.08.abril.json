@@ -173,7 +173,8 @@
             "gl": "Rir ao tocar a herba",
             "es": "Reír al tocar la hierba"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_tickly_grass"
         },
         {
           "id": "2_3.abril.s1.fluffy-seeds",
@@ -219,7 +220,8 @@
             "gl": "Rir tocando a herba",
             "es": "Reír tocando la hierba"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_the_grass_tickles"
         },
         {
           "id": "2_3.abril.s1.on-the-grass",
@@ -458,7 +460,8 @@
             "gl": "Abrir as mans cara arriba",
             "es": "Abrir las manos hacia arriba"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_fly_away_bird"
         },
         {
           "id": "2_3.abril.s2.in-the-tree",
@@ -606,7 +609,8 @@
             "gl": "Pechar o libro amodo",
             "es": "Cerrar el libro despacio"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_close_the_book"
         },
         {
           "id": "2_3.abril.s3.lie-still",
@@ -752,7 +756,8 @@
             "gl": "Abrir as mans coma unha casca",
             "es": "Abrir las manos como una cáscara"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_eggshell"
         },
         {
           "id": "2_3.abril.s4.hatchling",
@@ -869,7 +874,8 @@
             "gl": "Abrir moito a boca",
             "es": "Abrir mucho la boca"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_open_your_beak"
         },
         {
           "id": "2_3.abril.s4.newborn",
@@ -915,7 +921,8 @@
             "gl": "Tocar un niño de pólas",
             "es": "Tocar un nido de ramitas"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_twiggy"
         },
         {
           "id": "2_3.abril.s4.crack-crack",
@@ -926,7 +933,8 @@
             "gl": "Abrir as mans amodo",
             "es": "Abrir las manos despacio"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_crack_crack"
         },
         {
           "id": "2_3.abril.s4.hello-little-chick",

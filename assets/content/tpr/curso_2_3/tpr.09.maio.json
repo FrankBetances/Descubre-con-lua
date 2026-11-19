@@ -112,7 +112,8 @@
             "gl": "Fregar palma con palma",
             "es": "Frotar palma con palma"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_rub_palms"
         },
         {
           "id": "2_3.maio.s1.scrub-nails",
@@ -123,7 +124,8 @@
             "gl": "Fregar as puntas dos dedos",
             "es": "Frotar las puntas de los dedos"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_scrub_nails"
         },
         {
           "id": "2_3.maio.s1.shake-dry",
@@ -294,7 +296,8 @@
             "gl": "Sinalar as moas",
             "es": "Señalar las muelas"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_back_teeth"
         },
         {
           "id": "2_3.maio.s2.front-teeth",
@@ -386,7 +389,8 @@
             "gl": "Abrir a boca coma un león",
             "es": "Abrir la boca como un león"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_open_your_mouth_wide"
         },
         {
           "id": "2_3.maio.s2.sparkly-teeth",
@@ -431,7 +435,8 @@
             "gl": "Tocar un dente coa lingua",
             "es": "Tocar un diente con la lengua"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_wobbly_tooth"
         },
         {
           "id": "2_3.maio.s2.brush-brush-brush",
@@ -760,7 +765,8 @@
             "gl": "Abrir e pechar a pinza",
             "es": "Abrir y cerrar la pinza"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_clothes_peg"
         },
         {
           "id": "2_3.maio.s4.laundry-basket",
@@ -924,7 +930,8 @@
             "gl": "Fregar un calcetín",
             "es": "Frotar un calcetín"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_wash_wash_the_socks"
         },
         {
           "id": "2_3.maio.s4.pass-me-a-peg",

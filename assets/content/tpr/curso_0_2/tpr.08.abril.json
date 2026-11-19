@@ -105,7 +105,8 @@
             "gl": "Abrir os dedos amodo coma unha flor",
             "es": "Abrir los dedos despacio como una flor"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_unfold"
         },
         {
           "id": "0_2.abril.s1.wake",
@@ -380,7 +381,8 @@
             "gl": "Abrir a man baixo a choiva fina",
             "es": "Abrir la mano bajo la lluvia fina"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_catch_drops"
         },
         {
           "id": "0_2.abril.s2.shake-off",
@@ -665,7 +667,8 @@
             "gl": "Abrir un dedo e logo outro",
             "es": "Abrir un dedo y luego otro"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_sprouting"
         },
         {
           "id": "0_2.abril.s3.crumbly",
@@ -722,7 +725,8 @@
             "gl": "Abrir as mans cada vez máis",
             "es": "Abrir las manos cada vez más"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_bigger_and_bigger"
         }
       ]
     },
@@ -778,7 +782,8 @@
             "gl": "Pechar a man en puño",
             "es": "Cerrar la mano en puño"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_fist"
         },
         {
           "id": "0_2.abril.s4.glove-puppet",
@@ -836,7 +841,8 @@
             "gl": "Abrir e pechar as mans",
             "es": "Abrir y cerrar las manos"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_open_and_shut"
         },
         {
           "id": "0_2.abril.s4.wave-fingers",
@@ -904,7 +910,8 @@
             "gl": "Abrir e pechar os dedos amodo",
             "es": "Abrir y cerrar los dedos despacio"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_twinkling"
         },
         {
           "id": "0_2.abril.s4.clappy",
