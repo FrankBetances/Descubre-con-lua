@@ -53,15 +53,19 @@ def pezas():
 
 
 TOPE_TPR = Path(__file__).with_name("tope_tpr_sen_lamina.txt")
+SIN_BASE_TPR = Path(__file__).with_name("tpr_sin_base_aprobadas.txt")
 
 
 def main() -> int:
     total, sen, fallos = Counter(), Counter(), []
     distintas_sen: set[str] = set()
+    tpr_sen: list[str] = []
     for conxunto, onde, en, lamina in pezas():
         total[conxunto] += 1
         if not lamina:
             sen[conxunto] += 1
+            if conxunto == "tpr":
+                tpr_sen.append(en.lower().strip(" .!?"))
             distintas_sen.add(en.lower().strip(" .!?"))
             fallos.append(f"{onde}: «{en}» sen lámina")
         elif lamina.startswith("escena_"):
@@ -79,6 +83,10 @@ def main() -> int:
     if "--tope-tpr" in sys.argv:
         tope = int(TOPE_TPR.read_text(encoding="utf-8").split()[0])
         resto = [f for f in fallos if not f.startswith("tpr/")]
+        # O-20261119-3: las piezas TPR que Frank aprobó dejar sin imagen no cuentan.
+        aprobadas = {l.strip() for l in SIN_BASE_TPR.read_text(encoding="utf-8").splitlines()
+                     if l.strip() and not l.startswith("#")}
+        sen["tpr"] -= sum(1 for en in tpr_sen if en in aprobadas)
         if resto or sen["tpr"] > tope:
             print(f"FALLO: {len(resto)} piezas de lección, frase o 0-2 sin lámina; "
                   f"TPR sin lámina {sen['tpr']} (tope {tope}).")

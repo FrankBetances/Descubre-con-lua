@@ -402,9 +402,18 @@ Fuente: ninguna: origin/antigravity/pendiente en ef209a9c (P2.1–P2.7, revisado
 - [x] Mergeado en main con CI en verde · evidencia: docs/ORDENES.md (PR #55, merge e6bd68f6, runs 44458071681 y 44458077155 en verde sobre 8d34cd44)
 
 ## O-20261119-2 · Mergear las 10 tandas del banco TPR y bajar el tope
-Estado: abierta
+Estado: cumplida
 > (Claude Code) Mergear ya las 10 tandas a main: traigo main, bajo el tope del gate del banco TPR de 3.419 a 1.260, paso Flutter y los gates, y mergeo con CI en verde. ¿Hago el merge del punto 1? — (Frank) Ok
 Fuente: ninguna: origin/antigravity/pendiente en 1ed8d635 (P2.81–P2.91), revisado por Claude Code el 19/11/2026 (hoja_contactos_tpr_p9 y docs/tpr_sin_base.md)
 
 - [x] Tope del banco TPR bajado de 3419 a 1260 piezas sin lámina · evidencia: tools/tope_tpr_sen_lamina.txt (check_laminas_leccion.py --resumo --tope-tpr: TPR sin lámina 1260 de tope 1260)
+- [x] Mergeado en main con CI en verde · evidencia: docs/ORDENES.md (PR #57, merge 26c066a0, runs 44497667331 y 44497675983 en verde sobre 6f9a5602)
+
+## O-20261119-3 · Las 608 piezas TPR sin base visual se quedan sin imagen
+Estado: abierta
+> Las 608 del banco tpr se quedan se quedan sin imagen
+Fuente: docs/tpr_sin_base.md (las 608 piezas auditadas por Antigravity en P2.82–P2.91, con su motivo)
+
+- [x] Lista cerrada de las 608 claves en tools/tpr_sin_base_aprobadas.txt; check_laminas_leccion.py --tope-tpr no las cuenta como pendientes; una pieza nueva sin base sigue contando hasta que Frank la apruebe · evidencia: tools/check_laminas_leccion.py (TPR sin lámina 652 de tope 652)
+- [x] Tope del banco TPR bajado a 652 (las piezas que quedan por procesar) · evidencia: tools/tope_tpr_sen_lamina.txt
 - [ ] Mergeado en main con CI en verde · evidencia:
