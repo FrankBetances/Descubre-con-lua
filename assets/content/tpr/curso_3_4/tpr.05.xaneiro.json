@@ -116,7 +116,8 @@
           "tprAction": {
             "gl": "Quitar unha prenda imaxinaria e sacudila",
             "es": "Quitarse una prenda imaginaria y sacudirla"
-          }
+          },
+          "lamina": "pal_take_off"
         },
         {
           "id": "3_4.xaneiro.s1.zip",
@@ -485,7 +486,8 @@
           "tprAction": {
             "gl": "Xuntarse varias criaturas debaixo dun paraugas imaxinario",
             "es": "Juntarse varias criaturas debajo de un paraguas imaginario"
-          }
+          },
+          "lamina": "pal_under_the_umbrella"
         }
       ]
     },
@@ -528,7 +530,8 @@
           "tprAction": {
             "gl": "Suxeitar un guiador imaxinario e tocar o timbre",
             "es": "Sujetar un manillar imaginario y tocar el timbre"
-          }
+          },
+          "lamina": "pal_bike"
         },
         {
           "id": "3_4.xaneiro.s3.train",

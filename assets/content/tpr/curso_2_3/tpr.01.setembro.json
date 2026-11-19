@@ -55,7 +55,8 @@
             "gl": "Beber do propio vaso",
             "es": "Beber del propio vaso"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_water_cup"
         },
         {
           "id": "2_3.setembro.s1.name-tag",
@@ -536,7 +537,8 @@
             "gl": "Levar a bandexa coas dúas mans",
             "es": "Llevar la bandeja con las dos manos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_tray"
         },
         {
           "id": "2_3.setembro.s3.mat",
@@ -604,7 +606,8 @@
             "gl": "Levar a bandexa amodo",
             "es": "Llevar la bandeja despacio"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_carry_carefully"
         },
         {
           "id": "2_3.setembro.s3.shut-the-drawer",
@@ -649,7 +652,8 @@
             "gl": "Axudar a un amigo a recoller",
             "es": "Ayudar a un amigo a recoger"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_helpful"
         },
         {
           "id": "2_3.setembro.s3.in-order",
@@ -671,7 +675,8 @@
             "gl": "Cantar e recoller",
             "es": "Cantar y recoger"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_clean_up_clean_up"
         },
         {
           "id": "2_3.setembro.s3.good-job",
@@ -704,7 +709,8 @@
             "gl": "Recoller en dúas quendas",
             "es": "Recoger en dos turnos"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_first_the_blocks_then_the_cars"
         }
       ]
     },

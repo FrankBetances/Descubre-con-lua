@@ -196,7 +196,8 @@
             "gl": "Deixar esvarar auga polo impermeable",
             "es": "Dejar resbalar agua por el impermeable"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_waterproof"
         },
         {
           "id": "2_3.decembro.s1.splash-splash",
@@ -734,7 +735,8 @@
             "gl": "Soprar a cunca de chocolate",
             "es": "Soplar la taza de chocolate"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_hot_chocolate"
         },
         {
           "id": "2_3.decembro.s4.mug",
@@ -884,7 +886,8 @@
             "gl": "Soprar o vapor da cunca",
             "es": "Soplar el vapor de la taza"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_steamy"
         },
         {
           "id": "2_3.decembro.s4.chocolatey",
@@ -895,7 +898,8 @@
             "gl": "Lamber os beizos",
             "es": "Relamerse"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_chocolatey"
         },
         {
           "id": "2_3.decembro.s4.snowy-outside",

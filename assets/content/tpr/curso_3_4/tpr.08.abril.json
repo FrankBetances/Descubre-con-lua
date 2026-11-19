@@ -45,7 +45,8 @@
           "tprAction": {
             "gl": "Respirar fondo e sorrir co sol na cara",
             "es": "Respirar hondo y sonreír con el sol en la cara"
-          }
+          },
+          "lamina": "pal_spring"
         },
         {
           "id": "3_4.abril.s1.weather",
@@ -364,7 +365,8 @@
           "tprAction": {
             "gl": "Regar unha planta imaxinaria cos dedos",
             "es": "Regar una planta imaginaria con los dedos"
-          }
+          },
+          "lamina": "pal_sprinkle"
         },
         {
           "id": "3_4.abril.s2.bloom",
@@ -662,7 +664,8 @@
           "tprAction": {
             "gl": "Levar cargas imaxinarias dun lado a outro",
             "es": "Llevar cargas imaginarias de un lado a otro"
-          }
+          },
+          "lamina": "pal_hard_working"
         },
         {
           "id": "3_4.abril.s3.curious",
@@ -913,7 +916,8 @@
           "tprAction": {
             "gl": "Poñerse ao final da fila e sorrir",
             "es": "Ponerse al final de la fila y sonreír"
-          }
+          },
+          "lamina": "pal_last"
         },
         {
           "id": "3_4.abril.s4.catch-me",

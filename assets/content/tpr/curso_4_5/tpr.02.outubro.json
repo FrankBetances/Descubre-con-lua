@@ -545,7 +545,8 @@
             "gl": "Suxeitarse nun pé",
             "es": "Sostenerse en un pie"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_flamingo_pose"
         },
         {
           "id": "4_5.outubro.s3.wobble-board",
@@ -636,7 +637,8 @@
             "gl": "Quedar quieto nun pé",
             "es": "Quedarse quieto en un pie"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_balanced"
         },
         {
           "id": "4_5.outubro.s3.unsteady",
@@ -793,7 +795,8 @@
             "gl": "Parar coas mans abertas",
             "es": "Parar con las manos abiertas"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_pause"
         },
         {
           "id": "4_5.outubro.s4.countdown",

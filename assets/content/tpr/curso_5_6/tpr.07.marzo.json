@@ -274,7 +274,8 @@
             "gl": "Pintar e dobrar o papel",
             "es": "Pintar y doblar el papel"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_butterfly_print"
         },
         {
           "id": "5_6.marzo.s2.reflection-game",
@@ -784,7 +785,8 @@
             "gl": "Suxeitar unha paleta",
             "es": "Sostener una paleta"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_palette"
         },
         {
           "id": "5_6.marzo.s4.mix-colours",

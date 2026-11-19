@@ -655,7 +655,8 @@
             "gl": "Asubiar e sorrir",
             "es": "Silbar y sonreír"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_chirpy"
         },
         {
           "id": "0_2.xaneiro.s3.teeny",

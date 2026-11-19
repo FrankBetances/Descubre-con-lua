@@ -357,7 +357,8 @@
           "tprAction": {
             "gl": "Levar un cesto imaxinario co brazo dobrado",
             "es": "Llevar una cesta imaginaria con el brazo doblado"
-          }
+          },
+          "lamina": "pal_carry"
         },
         {
           "id": "3_4.novembro.s2.hide",
@@ -802,7 +803,8 @@
           "tprAction": {
             "gl": "Soprar unha culler de caldo quente",
             "es": "Soplar una cuchara de caldo caliente"
-          }
+          },
+          "lamina": "pal_soup"
         },
         {
           "id": "3_4.novembro.s4.pot",
@@ -904,7 +906,8 @@
           "tprAction": {
             "gl": "Mastigar moi forte cunha cara divertida",
             "es": "Masticar muy fuerte con una cara divertida"
-          }
+          },
+          "lamina": "pal_crunchy"
         },
         {
           "id": "3_4.novembro.s4.sticky",

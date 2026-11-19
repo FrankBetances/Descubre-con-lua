@@ -33,7 +33,8 @@
             "gl": "Verter auga coa regadeira",
             "es": "Verter agua con la regadera"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_toy_watering_can"
         },
         {
           "id": "0_2.maio.s1.bath-toy",
@@ -246,7 +247,8 @@
             "gl": "Botar auga nos pés",
             "es": "Echar agua en los pies"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_water_on_my_toes"
         }
       ]
     },
@@ -415,7 +417,8 @@
             "gl": "Soprar a escuma",
             "es": "Soplar la espuma"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_foamy"
         },
         {
           "id": "0_2.maio.s2.soft-and-dry",
@@ -672,7 +675,8 @@
             "gl": "Sacudir as mans sobre o lavabo",
             "es": "Sacudir las manos sobre el lavabo"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_nearly_dry"
         },
         {
           "id": "0_2.maio.s3.wash-wash-wash",
@@ -694,7 +698,8 @@
             "gl": "Amosar as mans e sorrir",
             "es": "Enseñar las manos y sonreír"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_clean_hands_happy_baby"
         },
         {
           "id": "0_2.maio.s3.all-clean-now",
@@ -818,7 +823,8 @@
             "gl": "Soprar amodo pola variña",
             "es": "Soplar despacio por la varita"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_blow_bubbles"
         },
         {
           "id": "0_2.maio.s4.burst",

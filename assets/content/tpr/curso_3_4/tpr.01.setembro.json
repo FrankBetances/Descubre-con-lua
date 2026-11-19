@@ -451,7 +451,8 @@
           "tprAction": {
             "gl": "Recoller xoguetes imaxinarios e gardalos nunha caixa",
             "es": "Recoger juguetes imaginarios y guardarlos en una caja"
-          }
+          },
+          "lamina": "pal_tidy_up"
         },
         {
           "id": "3_4.setembro.s2.your-turn",
@@ -611,7 +612,8 @@
           "tprAction": {
             "gl": "Suxeitar unha pelota imaxinaria coas dúas mans sen deixala caer",
             "es": "Sostener una pelota imaginaria con las dos manos sin dejarla caer"
-          }
+          },
+          "lamina": "pal_hold"
         },
         {
           "id": "3_4.setembro.s3.rock",
@@ -816,7 +818,8 @@
           "tprAction": {
             "gl": "Levar á boca un anaco de froita imaxinaria",
             "es": "Llevarse a la boca un trozo de fruta imaginaria"
-          }
+          },
+          "lamina": "pal_snack"
         },
         {
           "id": "3_4.setembro.s4.play",
@@ -884,7 +887,8 @@
           "tprAction": {
             "gl": "Facer unha cara divertida e rir",
             "es": "Poner una cara divertida y reír"
-          }
+          },
+          "lamina": "pal_funny"
         },
         {
           "id": "3_4.setembro.s4.friendly",
@@ -895,7 +899,8 @@
           "tprAction": {
             "gl": "Ofrecer a man aberta a quen está ao lado",
             "es": "Ofrecer la mano abierta a quien está al lado"
-          }
+          },
+          "lamina": "pal_friendly"
         },
         {
           "id": "3_4.setembro.s4.hungry",
@@ -918,7 +923,8 @@
           "tprAction": {
             "gl": "Facer o xesto de beber coa man en forma de vaso",
             "es": "Hacer el gesto de beber con la mano en forma de vaso"
-          }
+          },
+          "lamina": "pal_thirsty"
         },
         {
           "id": "3_4.setembro.s4.give-me-five",

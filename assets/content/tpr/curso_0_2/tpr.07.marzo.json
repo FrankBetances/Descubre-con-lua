@@ -116,7 +116,8 @@
             "gl": "Tirar a torre e rir",
             "es": "Derribar la torre y reír"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_knock_over"
         },
         {
           "id": "0_2.marzo.s1.sort",
@@ -375,7 +376,8 @@
             "gl": "Estalar os beizos contentos",
             "es": "Relamerse contentos"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_smack_lips"
         },
         {
           "id": "0_2.marzo.s2.mash",
@@ -851,7 +853,8 @@
             "gl": "Sorber zume cunha palla",
             "es": "Sorber zumo con una pajita"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_slurp_up"
         },
         {
           "id": "0_2.marzo.s4.try-it",

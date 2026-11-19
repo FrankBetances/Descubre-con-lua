@@ -105,7 +105,8 @@
             "gl": "Rir alto co bebé",
             "es": "Reír alto con el bebé"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_laugh"
         },
         {
           "id": "0_2.febreiro.s1.tickle-tummy",
@@ -139,7 +140,8 @@
             "gl": "Soprar unha trompeta de xoguete",
             "es": "Soplar una trompeta de juguete"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_toot"
         },
         {
           "id": "0_2.febreiro.s1.dress-up",
@@ -161,7 +163,8 @@
             "gl": "Rir sen parar co bebé",
             "es": "Reír sin parar con el bebé"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_giggly"
         },
         {
           "id": "0_2.febreiro.s1.spotted",
@@ -774,7 +777,8 @@
             "gl": "Axitar o ovo sonoro preto da orella",
             "es": "Agitar el huevo sonoro cerca de la oreja"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_egg_shaker"
         },
         {
           "id": "0_2.febreiro.s4.pot-lid",
@@ -867,7 +871,8 @@
             "gl": "Axitar unhas chaves de xoguete",
             "es": "Agitar unas llaves de juguete"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_jingle_jangle"
         },
         {
           "id": "0_2.febreiro.s4.rattly",
@@ -878,7 +883,8 @@
             "gl": "Axitar a botella con arroz",
             "es": "Agitar la botella con arroz"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_rattly"
         },
         {
           "id": "0_2.febreiro.s4.tinkly",

@@ -99,7 +99,8 @@
             "gl": "Sorrir ao probar",
             "es": "Sonreír al probar"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_taste_sweet"
         },
         {
           "id": "4_5.marzo.s1.guess-the-taste",
@@ -222,7 +223,8 @@
             "gl": "Sorrir e logo arrugar a cara",
             "es": "Sonreír y luego arrugar la cara"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_honey_is_sweeter_than_lemon"
         },
         {
           "id": "4_5.marzo.s1.yuck-or-yum",
@@ -566,7 +568,8 @@
             "gl": "Fregar unha verdura baixo a auga",
             "es": "Frotar una verdura bajo el agua"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_wash_vegetables"
         },
         {
           "id": "4_5.marzo.s3.peel-a-carrot",
@@ -667,7 +670,8 @@
             "gl": "Levar o garfo á boca",
             "es": "Llevar el tenedor a la boca"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_eat_your_greens"
         },
         {
           "id": "4_5.marzo.s3.what-colour-is-broccoli",
@@ -767,7 +771,8 @@
             "gl": "Levar a bolsa ao ombro",
             "es": "Llevar la bolsa al hombro"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_shopping_bag"
         },
         {
           "id": "4_5.marzo.s4.kilo",

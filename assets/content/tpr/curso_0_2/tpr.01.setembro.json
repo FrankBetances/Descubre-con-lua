@@ -648,7 +648,8 @@
             "gl": "Facer cóxegas e sorrir",
             "es": "Hacer cosquillas y sonreír"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_bubbly_baby"
         },
         {
           "id": "0_2.setembro.s3.content",
@@ -703,7 +704,8 @@
             "gl": "Achegar a cara e sorrir",
             "es": "Acercar la cara y sonreír"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_smile_at_me"
         },
         {
           "id": "0_2.setembro.s3.eye-to-eye",
@@ -862,7 +864,8 @@
             "gl": "Palmear as costas despois de comer",
             "es": "Dar palmaditas en la espalda después de comer"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_burp"
         },
         {
           "id": "0_2.setembro.s4.fresh-and-clean",

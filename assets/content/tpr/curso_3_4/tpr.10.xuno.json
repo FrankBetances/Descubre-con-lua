@@ -232,7 +232,8 @@
           "tprAction": {
             "gl": "Nadar coas mans xuntas diante do corpo",
             "es": "Nadar con las manos juntas delante del cuerpo"
-          }
+          },
+          "lamina": "pal_swim_like_a_fish"
         },
         {
           "id": "3_4.xuno.s1.across-the-sea",
@@ -355,7 +356,8 @@
           "tprAction": {
             "gl": "Apañar cunchas imaxinarias e gardalas na man",
             "es": "Recoger conchas imaginarias y guardarlas en la mano"
-          }
+          },
+          "lamina": "pal_collect"
         },
         {
           "id": "3_4.xuno.s2.sunbathe",
@@ -400,7 +402,8 @@
           "tprAction": {
             "gl": "Sacudir as mans coma se tivesen area",
             "es": "Sacudirse las manos como si tuvieran arena"
-          }
+          },
+          "lamina": "pal_sandy"
         },
         {
           "id": "3_4.xuno.s2.lovely",
@@ -468,7 +471,8 @@
           "tprAction": {
             "gl": "Abanarse coa man e soprar",
             "es": "Abanicarse con la mano y soplar"
-          }
+          },
+          "lamina": "pal_it_s_hot"
         },
         {
           "id": "3_4.xuno.s2.in-the-sand",
@@ -720,7 +724,8 @@
           "tprAction": {
             "gl": "Baixar ao chan e moverse amodo coma baixo a auga",
             "es": "Bajar al suelo y moverse despacio como bajo el agua"
-          }
+          },
+          "lamina": "pal_under_the_sea"
         }
       ]
     },

@@ -617,7 +617,8 @@
             "gl": "Sacudir todo o corpo",
             "es": "Sacudir todo el cuerpo"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_shake_out"
         },
         {
           "id": "5_6.outubro.s3.flexible-body",
@@ -705,7 +706,8 @@
             "gl": "Sacudir o corpo",
             "es": "Sacudir el cuerpo"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_shake_it_all_out"
         }
       ]
     },
@@ -896,7 +898,8 @@
             "gl": "Estirar os brazos contentos",
             "es": "Estirar los brazos contentos"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_rested_and_happy"
         },
         {
           "id": "5_6.outubro.s4.what-did-you-dream-about",

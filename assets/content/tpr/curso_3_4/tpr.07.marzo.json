@@ -613,7 +613,8 @@
           "tprAction": {
             "gl": "Mastigar amodo coa boca pechada",
             "es": "Masticar despacio con la boca cerrada"
-          }
+          },
+          "lamina": "pal_chew"
         },
         {
           "id": "3_4.marzo.s3.lick",
@@ -624,7 +625,8 @@
           "tprAction": {
             "gl": "Lamber unha piruleta imaxinaria",
             "es": "Lamer una piruleta imaginaria"
-          }
+          },
+          "lamina": "pal_lick"
         },
         {
           "id": "3_4.marzo.s3.sweet",
@@ -635,7 +637,8 @@
           "tprAction": {
             "gl": "Sorrir e pasar a lingua polos beizos",
             "es": "Sonreír y pasar la lengua por los labios"
-          }
+          },
+          "lamina": "pal_sweet"
         },
         {
           "id": "3_4.marzo.s3.bitter",
@@ -749,7 +752,8 @@
           "tprAction": {
             "gl": "Axitar dúas maracas imaxinarias ao pulso",
             "es": "Agitar dos maracas imaginarias al pulso"
-          }
+          },
+          "lamina": "pal_maraca"
         },
         {
           "id": "3_4.marzo.s4.guitar",
@@ -783,7 +787,8 @@
           "tprAction": {
             "gl": "Suxeitar unha botella imaxinaria coas dúas mans",
             "es": "Sujetar una botella imaginaria con las dos manos"
-          }
+          },
+          "lamina": "pal_bottle"
         },
         {
           "id": "3_4.marzo.s4.bagpipes",
@@ -852,7 +857,8 @@
           "tprAction": {
             "gl": "Poñer os beizos en forma de «o» e soprar suave",
             "es": "Poner los labios en forma de «o» y soplar suave"
-          }
+          },
+          "lamina": "pal_whistle"
         },
         {
           "id": "3_4.marzo.s4.hum",
@@ -909,7 +915,8 @@
           "tprAction": {
             "gl": "Tremer as mans coma follas ao vento",
             "es": "Temblar las manos como hojas al viento"
-          }
+          },
+          "lamina": "pal_shaky"
         },
         {
           "id": "3_4.marzo.s4.shake-the-bottle",
@@ -920,7 +927,8 @@
           "tprAction": {
             "gl": "Axitar unha botella imaxinaria con arroz",
             "es": "Agitar una botella imaginaria con arroz"
-          }
+          },
+          "lamina": "pal_shake_the_bottle"
         },
         {
           "id": "3_4.marzo.s4.let-s-sing",

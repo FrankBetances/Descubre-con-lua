@@ -390,7 +390,8 @@
             "gl": "Sacudir as mans molladas",
             "es": "Sacudir las manos mojadas"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_shake_off"
         },
         {
           "id": "0_2.abril.s2.drizzly",
@@ -593,7 +594,8 @@
             "gl": "Botar auga co regador",
             "es": "Echar agua con la regadera"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_water_it"
         },
         {
           "id": "0_2.abril.s3.pop-out",

@@ -144,7 +144,8 @@
             "gl": "Levar unha caixa entre dous",
             "es": "Llevar una caja entre dos"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_cooperate"
         },
         {
           "id": "4_5.setembro.s1.fair",
@@ -266,7 +267,8 @@
             "gl": "Levar unha táboa entre dous",
             "es": "Llevar una tabla entre dos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_wooden_plank"
         },
         {
           "id": "4_5.setembro.s2.bridge",
@@ -344,7 +346,8 @@
             "gl": "Suxeitar a torre coas dúas mans",
             "es": "Sujetar la torre con las dos manos"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_hold_steady"
         },
         {
           "id": "4_5.setembro.s2.measure",
@@ -400,7 +403,8 @@
             "gl": "Comparar dúas torres coa man",
             "es": "Comparar dos torres con la mano"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_taller"
         },
         {
           "id": "4_5.setembro.s2.wider",
@@ -543,7 +547,8 @@
             "gl": "Beber un grolo",
             "es": "Beber un sorbo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_water_break"
         },
         {
           "id": "4_5.setembro.s3.lunch-time",
@@ -611,7 +616,8 @@
             "gl": "Levar o vaso á boca",
             "es": "Llevar el vaso a la boca"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_drink_water"
         },
         {
           "id": "4_5.setembro.s3.germ-free",
@@ -655,7 +661,8 @@
             "gl": "Beber e sorrir",
             "es": "Beber y sonreír"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_hydrated"
         },
         {
           "id": "4_5.setembro.s3.wash-your-hands-before-lunch",
@@ -855,7 +862,8 @@
             "gl": "Sorrir moi grande",
             "es": "Sonreír muy grande"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_cheerful_face"
         },
         {
           "id": "4_5.setembro.s4.grumpy",
@@ -866,7 +874,8 @@
             "gl": "Cruzar os brazos e logo rir",
             "es": "Cruzar los brazos y luego reír"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_grumpy"
         },
         {
           "id": "4_5.setembro.s4.frustrated",

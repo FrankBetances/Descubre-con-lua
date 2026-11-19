@@ -77,7 +77,8 @@
             "gl": "Quedar quieto coma unha estatua",
             "es": "Quedarse quieto como una estatua"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_stone_statue"
         },
         {
           "id": "5_6.xaneiro.s1.museum",
@@ -324,7 +325,8 @@
             "gl": "Suxeitar unha luz pequena",
             "es": "Sostener una luz pequeña"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_lantern_light"
         },
         {
           "id": "5_6.xaneiro.s2.sail-across-the-ocean",

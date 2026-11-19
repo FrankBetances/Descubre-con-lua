@@ -105,7 +105,8 @@
           "tprAction": {
             "gl": "Tremer todo o corpo coma se fixese moito frío",
             "es": "Temblar todo el cuerpo como si hiciera mucho frío"
-          }
+          },
+          "lamina": "pal_shiver"
         },
         {
           "id": "3_4.decembro.s1.slide",
@@ -757,7 +758,8 @@
           "tprAction": {
             "gl": "Debuxar un bolo redondo e soprar as velas",
             "es": "Dibujar una tarta redonda y soplar las velas"
-          }
+          },
+          "lamina": "pal_cake"
         },
         {
           "id": "3_4.decembro.s4.balloon",
@@ -816,7 +818,8 @@
           "tprAction": {
             "gl": "Beber dunha cunca quente con coidado",
             "es": "Beber de una taza caliente con cuidado"
-          }
+          },
+          "lamina": "pal_chocolate"
         },
         {
           "id": "3_4.decembro.s4.pop",
@@ -944,7 +947,8 @@
           "tprAction": {
             "gl": "Dar palmas suaves e soprar unha vela imaxinaria",
             "es": "Dar palmas suaves y soplar una vela imaginaria"
-          }
+          },
+          "lamina": "pal_happy_birthday"
         },
         {
           "id": "3_4.decembro.s4.with-music",

@@ -193,7 +193,8 @@
             "gl": "Tremer as pernas",
             "es": "Temblar las piernas"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_wobbly_legs"
         },
         {
           "id": "2_3.outubro.s1.touch-your-knees",
@@ -283,7 +284,8 @@
             "gl": "Soprar o muíño de vento",
             "es": "Soplar el molinillo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_pinwheel"
         },
         {
           "id": "2_3.outubro.s2.ribbon-stick",
@@ -399,7 +401,8 @@
             "gl": "Parar e bambear rindo",
             "es": "Parar y tambalearse riendo"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_very_dizzy"
         },
         {
           "id": "2_3.outubro.s2.whirly",
@@ -653,7 +656,8 @@
             "gl": "Quedar quieto coma unha pedra",
             "es": "Quedarse quieto como una piedra"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_still"
         },
         {
           "id": "2_3.outubro.s3.out-of-breath",

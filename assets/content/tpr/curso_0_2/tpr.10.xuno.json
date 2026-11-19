@@ -521,7 +521,8 @@
             "gl": "Dar un grolo de auga",
             "es": "Dar un sorbo de agua"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_water_bottle"
         },
         {
           "id": "0_2.xuno.s3.shade",
@@ -702,7 +703,8 @@
             "gl": "Levar o bebé á sombra",
             "es": "Llevar al bebé a la sombra"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_in_the_shade"
         },
         {
           "id": "0_2.xuno.s3.sun-and-water",
@@ -713,7 +715,8 @@
             "gl": "Sinalar o sol e despois a auga",
             "es": "Señalar el sol y luego el agua"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_sun_and_water"
         }
       ]
     },

@@ -312,7 +312,8 @@
             "gl": "Soprar pola palla",
             "es": "Soplar por la pajita"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_smoothie"
         },
         {
           "id": "2_3.marzo.s2.fruit-peel",
@@ -402,7 +403,8 @@
             "gl": "Beber e dicir «aaah»",
             "es": "Beber y decir «aaah»"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_refreshing"
         },
         {
           "id": "2_3.marzo.s2.spiky-pineapple",
@@ -784,7 +786,8 @@
             "gl": "Suxeitar o brik con coidado",
             "es": "Sujetar el brik con cuidado"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_juice_box"
         },
         {
           "id": "2_3.marzo.s4.lunch-mat",

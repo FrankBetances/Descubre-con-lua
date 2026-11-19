@@ -32,7 +32,8 @@
             "gl": "Pór as mans baixo a auga",
             "es": "Poner las manos bajo el agua"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_tap_water"
         },
         {
           "id": "2_3.maio.s1.paper-towel",
@@ -87,7 +88,8 @@
             "gl": "Recoller o pelo cunha goma",
             "es": "Recoger el pelo con una goma"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_hair_tie"
         },
         {
           "id": "2_3.maio.s1.pump-the-soap",
@@ -177,7 +179,8 @@
             "gl": "Soprar alento fresco",
             "es": "Soplar aliento fresco"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_minty"
         },
         {
           "id": "2_3.maio.s1.independent",
@@ -276,7 +279,8 @@
             "gl": "Sorrir amosando os dentes",
             "es": "Sonreír enseñando los dientes"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_big_smile"
         },
         {
           "id": "2_3.maio.s2.back-teeth",
@@ -366,7 +370,8 @@
             "gl": "Mover a auga na boca",
             "es": "Mover el agua en la boca"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_swish"
         },
         {
           "id": "2_3.maio.s2.open-the-mouth-wide",
@@ -388,7 +393,8 @@
             "gl": "Sorrir con todos os dentes",
             "es": "Sonreír con todos los dientes"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_sparkly_teeth"
         },
         {
           "id": "2_3.maio.s2.foamy-mouth",
@@ -443,7 +449,8 @@
             "gl": "Sorrir moito",
             "es": "Sonreír mucho"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_show_me_your_teeth"
         },
         {
           "id": "2_3.maio.s2.top-and-bottom",
@@ -485,7 +492,8 @@
             "gl": "Pousar as mans na mesa de auga",
             "es": "Posar las manos en la mesa de agua"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_water_table"
         },
         {
           "id": "2_3.maio.s3.sieve",
@@ -519,7 +527,8 @@
             "gl": "Botar auga na roda",
             "es": "Echar agua en la rueda"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_water_wheel"
         },
         {
           "id": "2_3.maio.s3.pipette",
@@ -589,7 +598,8 @@
             "gl": "Pasar auga polo coador",
             "es": "Pasar agua por el colador"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_strain"
         },
         {
           "id": "2_3.maio.s3.float-or-sink",
@@ -757,7 +767,8 @@
             "gl": "Levar o cesto coas dúas mans",
             "es": "Llevar el cesto con las dos manos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_laundry_basket"
         },
         {
           "id": "2_3.maio.s4.washing-machine",
@@ -792,7 +803,8 @@
             "gl": "Levar o balde con coidado",
             "es": "Llevar el cubo con cuidado"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_bucket_of_water"
         },
         {
           "id": "2_3.maio.s4.hang-out",
@@ -861,7 +873,8 @@
             "gl": "Sacudir a roupa mollada",
             "es": "Sacudir la ropa mojada"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_dripping_clothes"
         },
         {
           "id": "2_3.maio.s4.sun-dried",

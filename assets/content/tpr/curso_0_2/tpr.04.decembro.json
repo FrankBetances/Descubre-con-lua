@@ -126,7 +126,8 @@
             "gl": "Soprar nas mans do bebé",
             "es": "Soplar en las manos del bebé"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_warm_up_hands"
         },
         {
           "id": "0_2.decembro.s1.tuck-in",
@@ -160,7 +161,8 @@
             "gl": "Tremer coma de frío",
             "es": "Temblar como de frío"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_freezing"
         },
         {
           "id": "0_2.decembro.s1.toasty-warm",
@@ -525,7 +527,8 @@
             "gl": "Axitar un bote con purpurina",
             "es": "Agitar un bote con purpurina"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_glitter"
         },
         {
           "id": "0_2.decembro.s3.snow-globe",
@@ -548,7 +551,8 @@
             "gl": "Levar un farol de papel",
             "es": "Llevar un farol de papel"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_lantern"
         },
         {
           "id": "0_2.decembro.s3.pine-tree",
@@ -604,7 +608,8 @@
             "gl": "Axitar a botella de purpurina",
             "es": "Agitar la botella de purpurina"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_shake_the_glitter"
         },
         {
           "id": "0_2.decembro.s3.follow-the-light",
@@ -681,7 +686,8 @@
             "gl": "Acender a luz e sorrir",
             "es": "Encender la luz y sonreír"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_lights_on"
         },
         {
           "id": "0_2.decembro.s3.lights-off",
@@ -896,7 +902,8 @@
             "gl": "Rir moito co bebé",
             "es": "Reír mucho con el bebé"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_jolly"
         },
         {
           "id": "0_2.decembro.s4.shiny-paper",

@@ -170,7 +170,8 @@
             "gl": "Apertarse todos xuntos",
             "es": "Apretarse todos juntos"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_crowded"
         },
         {
           "id": "2_3.xaneiro.s1.next-stop",
@@ -364,7 +365,8 @@
             "gl": "Parar e botar o corpo atrás",
             "es": "Parar y echar el cuerpo atrás"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_brake"
         },
         {
           "id": "2_3.xaneiro.s2.steer",
@@ -693,7 +695,8 @@
             "gl": "Parar e agardar",
             "es": "Parar y esperar"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_wait_for_green"
         },
         {
           "id": "2_3.xaneiro.s3.here-s-the-shop",

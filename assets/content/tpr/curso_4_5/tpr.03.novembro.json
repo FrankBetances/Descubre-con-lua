@@ -557,7 +557,8 @@
             "gl": "Construír un hotel con pólas",
             "es": "Construir un hotel con ramas"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_bug_hotel"
         },
         {
           "id": "4_5.novembro.s3.leaf-litter",
@@ -913,7 +914,8 @@
             "gl": "Comparar dúas follas",
             "es": "Comparar dos hojas"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_this_one_is_darker_than_that_one"
         },
         {
           "id": "4_5.novembro.s4.can-you-find-something-red",

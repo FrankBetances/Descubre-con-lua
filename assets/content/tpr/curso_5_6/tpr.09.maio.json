@@ -143,7 +143,8 @@
             "gl": "Axitar e agardar",
             "es": "Agitar y esperar"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_watch_the_glitter_settle"
         },
         {
           "id": "5_6.maio.s1.content-feeling",
@@ -792,7 +793,8 @@
             "gl": "Parar e respirar",
             "es": "Parar y respirar"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_take_a_break"
         },
         {
           "id": "5_6.maio.s4.look-after",
@@ -814,7 +816,8 @@
             "gl": "Recoller xoguetes",
             "es": "Recoger juguetes"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_tidy_your_room"
         },
         {
           "id": "5_6.maio.s4.water-the-plants",
@@ -916,7 +919,8 @@
             "gl": "Regar e subir a man",
             "es": "Regar y subir la mano"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_when_i_look_after_my_plant_it_grows"
         },
         {
           "id": "5_6.maio.s4.thank-you-for-helping-me",

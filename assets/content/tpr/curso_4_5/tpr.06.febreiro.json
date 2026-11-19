@@ -713,7 +713,8 @@
             "gl": "Sorrir e darse a man",
             "es": "Sonreír y darse la mano"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_win_or_lose_we_have_fun"
         }
       ]
     },

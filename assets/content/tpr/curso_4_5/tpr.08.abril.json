@@ -204,7 +204,8 @@
             "gl": "Levar as mans aos ollos",
             "es": "Llevar las manos a los ojos"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_look_through_the_binoculars"
         },
         {
           "id": "4_5.abril.s1.what-bird-is-that",
@@ -559,7 +560,8 @@
             "gl": "Moverse todos xuntos",
             "es": "Moverse todos juntos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_shoal"
         },
         {
           "id": "4_5.abril.s3.swim-underwater",
@@ -570,7 +572,8 @@
             "gl": "Aguantar o aire e nadar",
             "es": "Aguantar el aire y nadar"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_swim_underwater"
         },
         {
           "id": "4_5.abril.s3.hold-your-breath",
@@ -706,7 +709,8 @@
             "gl": "Moverse todos xuntos",
             "es": "Moverse todos juntos"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_fish_swim_together_in_a_shoal"
         }
       ]
     },
@@ -761,7 +765,8 @@
             "gl": "Suxeitar un bote con coidado",
             "es": "Sostener un tarro con cuidado"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_glass_jar"
         },
         {
           "id": "4_5.abril.s4.reusable-bag",

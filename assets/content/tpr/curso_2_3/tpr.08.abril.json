@@ -33,7 +33,8 @@
             "gl": "Soprar un dente de león",
             "es": "Soplar un diente de león"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_dandelion"
         },
         {
           "id": "2_3.abril.s1.clover",
@@ -204,7 +205,8 @@
             "gl": "Soprar o dente de león",
             "es": "Soplar el diente de león"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_make_a_wish"
         },
         {
           "id": "2_3.abril.s1.the-grass-tickles",

@@ -759,7 +759,8 @@
             "gl": "Lamber un xeado imaxinario",
             "es": "Lamer un polo imaginario"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_ice_lolly"
         },
         {
           "id": "2_3.xuno.s4.goodbye-card",
@@ -826,7 +827,8 @@
             "gl": "Sorrir quietos para a foto",
             "es": "Sonreír quietos para la foto"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_pose"
         },
         {
           "id": "2_3.xuno.s4.lick-a-lolly",
@@ -837,7 +839,8 @@
             "gl": "Lamber no aire",
             "es": "Lamer en el aire"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_lick_a_lolly"
         },
         {
           "id": "2_3.xuno.s4.promise",
@@ -859,7 +862,8 @@
             "gl": "Abanarse contentos",
             "es": "Abanicarse contentos"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_summertime"
         },
         {
           "id": "2_3.xuno.s4.grown-bigger",
@@ -903,7 +907,8 @@
             "gl": "Sorrir para a foto",
             "es": "Sonreír para la foto"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_say_cheese"
         },
         {
           "id": "2_3.xuno.s4.have-fun",

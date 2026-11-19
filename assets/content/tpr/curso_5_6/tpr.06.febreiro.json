@@ -400,7 +400,8 @@
             "gl": "Respirar fondo e sorrir",
             "es": "Respirar hondo y sonreír"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_nervous_but_ready"
         },
         {
           "id": "5_6.febreiro.s2.clear-voice",
@@ -800,7 +801,8 @@
             "gl": "Soprar moi forte",
             "es": "Soplar muy fuerte"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_huff_and_puff"
         },
         {
           "id": "5_6.febreiro.s4.swap-roles",
@@ -868,7 +870,8 @@
             "gl": "Sorrir coas orellas de lobo",
             "es": "Sonreír con las orejas de lobo"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_friendly_wolf"
         },
         {
           "id": "5_6.febreiro.s4.strongest-house",
@@ -934,7 +937,8 @@
             "gl": "Soprar dúas veces",
             "es": "Soplar dos veces"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_he_huffed_and_he_puffed"
         }
       ]
     }

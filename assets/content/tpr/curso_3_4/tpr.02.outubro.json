@@ -360,7 +360,8 @@
           "tprAction": {
             "gl": "Levar unha culler imaxinaria á boca amodo",
             "es": "Llevarse una cuchara imaginaria a la boca despacio"
-          }
+          },
+          "lamina": "pal_taste"
         },
         {
           "id": "3_4.outubro.s2.touch",
@@ -416,7 +417,8 @@
           "tprAction": {
             "gl": "Lamber os beizos e dicir «mmm»",
             "es": "Relamerse y decir «mmm»"
-          }
+          },
+          "lamina": "pal_yummy"
         },
         {
           "id": "3_4.outubro.s2.sour",
@@ -661,7 +663,8 @@
           "tprAction": {
             "gl": "Separar moito as mans para amosar algo longo",
             "es": "Separar mucho las manos para mostrar algo largo"
-          }
+          },
+          "lamina": "pal_long"
         },
         {
           "id": "3_4.outubro.s3.stand-up",

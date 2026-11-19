@@ -309,7 +309,8 @@
             "gl": "Soprar suave na cara do bebé",
             "es": "Soplar suave en la cara del bebé"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_breeze"
         },
         {
           "id": "0_2.novembro.s2.tree-trunk",
@@ -421,7 +422,8 @@
             "gl": "Soprar unha folla para que voe",
             "es": "Soplar una hoja para que vuele"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_floaty"
         },
         {
           "id": "0_2.novembro.s2.chilly",
@@ -579,7 +581,8 @@
             "gl": "Soprar a comida antes de dala",
             "es": "Soplar la comida antes de darla"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_blow_on_it"
         },
         {
           "id": "0_2.novembro.s3.share-out",
@@ -804,7 +807,8 @@
             "gl": "Axitar o xoguete preto da orella",
             "es": "Agitar el juguete cerca de la oreja"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_rattle_toy"
         },
         {
           "id": "0_2.novembro.s4.poke",
@@ -837,7 +841,8 @@
             "gl": "Coller o xoguete e axitalo",
             "es": "Coger el juguete y agitarlo"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_grab_and_shake"
         },
         {
           "id": "0_2.novembro.s4.chew-on",

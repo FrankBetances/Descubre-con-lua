@@ -92,7 +92,8 @@
             "gl": "Axitar o pelo coma un león",
             "es": "Agitar el pelo como un león"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_mane"
         },
         {
           "id": "2_3.febreiro.s1.prowl",
@@ -207,7 +208,8 @@
             "gl": "Poñer as poutas e rir",
             "es": "Poner las garras y reír"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_i_m_a_tiger"
         },
         {
           "id": "2_3.febreiro.s1.grrr-grrr",
@@ -626,7 +628,8 @@
             "gl": "Apertarse todos xuntos",
             "es": "Apretarse todos juntos"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_huddle_together"
         },
         {
           "id": "2_3.febreiro.s3.icy",
@@ -637,7 +640,8 @@
             "gl": "Tremer coma no xeo",
             "es": "Temblar como en el hielo"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_icy"
         },
         {
           "id": "2_3.febreiro.s3.snowy-white",
@@ -683,7 +687,8 @@
             "gl": "Tremer e sorrir",
             "es": "Temblar y sonreír"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_brr_the_arctic"
         },
         {
           "id": "2_3.febreiro.s3.slide-like-a-penguin",
@@ -935,7 +940,8 @@
             "gl": "Ruxir e sacudir a melena",
             "es": "Rugir y sacudir la melena"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_i_m_a_lion"
         },
         {
           "id": "2_3.febreiro.s4.let-s-parade",

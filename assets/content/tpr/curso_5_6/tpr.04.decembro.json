@@ -648,7 +648,8 @@
             "gl": "Separar moito as mans",
             "es": "Separar mucho las manos"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_longest_night"
         },
         {
           "id": "5_6.decembro.s3.next-month",
@@ -757,7 +758,8 @@
             "gl": "Dobrar e pintar no aire",
             "es": "Doblar y pintar en el aire"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_card_making"
         },
         {
           "id": "5_6.decembro.s4.wreath",

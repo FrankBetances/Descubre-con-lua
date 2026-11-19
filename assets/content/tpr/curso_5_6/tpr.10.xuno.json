@@ -144,7 +144,8 @@
             "gl": "Rir todos",
             "es": "Reír todos"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_laugh_together"
         },
         {
           "id": "5_6.xuno.s1.unforgettable",
@@ -800,7 +801,8 @@
             "gl": "Levar unha maleta imaxinaria",
             "es": "Llevar una maleta imaginaria"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_go_on_holiday"
         },
         {
           "id": "5_6.xuno.s4.send-a-postcard",

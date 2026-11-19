@@ -133,7 +133,8 @@
             "gl": "Probar un obxecto na auga",
             "es": "Probar un objeto en el agua"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_test"
         },
         {
           "id": "4_5.maio.s1.record",
@@ -309,7 +310,8 @@
             "gl": "Soprar un barco de papel",
             "es": "Soplar un barco de papel"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_paper_boat_race"
         },
         {
           "id": "4_5.maio.s2.water-pipe",
@@ -364,7 +366,8 @@
             "gl": "Soprar forte",
             "es": "Soplar fuerte"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_blow_the_boat"
         },
         {
           "id": "4_5.maio.s2.drain-away",
@@ -444,7 +447,8 @@
             "gl": "Soprar con forza",
             "es": "Soplar con fuerza"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_blow_harder"
         },
         {
           "id": "4_5.maio.s2.water-always-flows-downhill",
@@ -752,7 +756,8 @@
             "gl": "Beber de mentira",
             "es": "Beber de mentira"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_fresh_water"
         },
         {
           "id": "4_5.maio.s4.salt-water",
@@ -786,7 +791,8 @@
             "gl": "Suxeitarse nun pé quieto",
             "es": "Sostenerse en un pie quieto"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_heron"
         },
         {
           "id": "4_5.maio.s4.paddle-across",
@@ -833,7 +839,8 @@
             "gl": "Suxeitarse nun pé",
             "es": "Sostenerse en un pie"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_stand_like_a_heron"
         },
         {
           "id": "4_5.maio.s4.float-on-your-back",

@@ -259,7 +259,8 @@
             "gl": "Soprar forte unha vez",
             "es": "Soplar fuerte una vez"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_gust"
         },
         {
           "id": "2_3.novembro.s2.weather-vane",
@@ -317,7 +318,8 @@
             "gl": "Suxeitar o chapeu co vento",
             "es": "Sujetar el sombrero con el viento"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_hat_brim"
         },
         {
           "id": "2_3.novembro.s2.treetop",
@@ -858,7 +860,8 @@
             "gl": "Soprar a comida quente",
             "es": "Soplar la comida caliente"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_blow_to_cool"
         },
         {
           "id": "2_3.novembro.s4.sit-around",
@@ -926,7 +929,8 @@
             "gl": "Soprar e abanar a man",
             "es": "Soplar y abanicar la mano"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_careful_it_s_hot"
         },
         {
           "id": "2_3.novembro.s4.can-i-have-one",

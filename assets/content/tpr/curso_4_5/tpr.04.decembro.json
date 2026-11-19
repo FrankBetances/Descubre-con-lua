@@ -21,7 +21,8 @@
             "gl": "Suxeitar un cubo de xeo imaxinario",
             "es": "Sostener un cubito de hielo imaginario"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_ice_cube"
         },
         {
           "id": "4_5.decembro.s1.freezer",
@@ -101,7 +102,8 @@
             "gl": "Tremer suxeitando algo frío",
             "es": "Temblar sosteniendo algo frío"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_hold_ice"
         },
         {
           "id": "4_5.decembro.s1.freeze-water",
@@ -123,7 +125,8 @@
             "gl": "Soprar nas mans",
             "es": "Soplar en las manos"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_warm_with_breath"
         },
         {
           "id": "4_5.decembro.s1.predict",
@@ -235,7 +238,8 @@
             "gl": "Soprar nas mans",
             "es": "Soplar en las manos"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_brr_freezing_hands"
         }
       ]
     },
@@ -333,7 +337,8 @@
             "gl": "Levantar dous obxectos e comparar",
             "es": "Levantar dos objetos y comparar"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_weigh"
         },
         {
           "id": "4_5.decembro.s2.measure-with-hands",
@@ -355,7 +360,8 @@
             "gl": "Separar as mans",
             "es": "Separar las manos"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_split_in_half"
         },
         {
           "id": "4_5.decembro.s2.add-one-more",
@@ -410,7 +416,8 @@
             "gl": "Separar moito as mans",
             "es": "Separar mucho las manos"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_longer"
         },
         {
           "id": "4_5.decembro.s2.shorter",
@@ -631,7 +638,8 @@
             "gl": "Bailar contentos",
             "es": "Bailar contentos"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_festive"
         },
         {
           "id": "4_5.decembro.s3.multicoloured",
@@ -910,7 +918,8 @@
             "gl": "Repartir e sorrir",
             "es": "Repartir y sonreír"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_we_share_because_we_care"
         },
         {
           "id": "4_5.decembro.s4.thank-you-so-much",

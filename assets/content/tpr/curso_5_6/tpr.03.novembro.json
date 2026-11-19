@@ -121,7 +121,8 @@
             "gl": "Suxeitar dúas cousas e comparar",
             "es": "Sostener dos cosas y comparar"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_weigh_up"
         },
         {
           "id": "5_6.novembro.s1.even-out",
@@ -748,7 +749,8 @@
             "gl": "Levar unha caixa",
             "es": "Llevar una caja"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_crate"
         },
         {
           "id": "5_6.novembro.s4.quince",
@@ -838,7 +840,8 @@
             "gl": "Sacudir os brazos",
             "es": "Sacudir los brazos"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_shake_the_tree"
         },
         {
           "id": "5_6.novembro.s4.plentiful",

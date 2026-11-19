@@ -829,7 +829,8 @@
             "gl": "Moverse todos xuntos",
             "es": "Moverse todos juntos"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_swim_in_a_pod"
         },
         {
           "id": "5_6.abril.s4.spout",
@@ -918,7 +919,8 @@
             "gl": "Soprar cara arriba",
             "es": "Soplar hacia arriba"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_dolphins_breathe_air_through_a_blowhole"
         },
         {
           "id": "5_6.abril.s4.the-mother-swims-next-to-her-calf",
@@ -929,7 +931,8 @@
             "gl": "Nadar xunto a un amigo",
             "es": "Nadar junto a un amigo"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_the_mother_swims_next_to_her_calf"
         },
         {
           "id": "5_6.abril.s4.keep-your-distance",

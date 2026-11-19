@@ -556,7 +556,8 @@
             "gl": "Quedar quieto mentres sobe",
             "es": "Quedarse quieto mientras sube"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_escalator"
         },
         {
           "id": "4_5.xaneiro.s3.timetable",

@@ -866,7 +866,8 @@
             "gl": "Sacudir as mans molladas",
             "es": "Sacudir las manos mojadas"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_refreshing_splash"
         },
         {
           "id": "4_5.xuno.s4.playful-summer",
@@ -877,7 +878,8 @@
             "gl": "Bailar contentos",
             "es": "Bailar contentos"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_playful_summer"
         },
         {
           "id": "4_5.xuno.s4.chalky",
@@ -888,7 +890,8 @@
             "gl": "Soprar o po das mans",
             "es": "Soplar el polvo de las manos"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_chalky"
         },
         {
           "id": "4_5.xuno.s4.breezy-evening",

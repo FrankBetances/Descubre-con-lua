@@ -935,7 +935,8 @@
           "tprAction": {
             "gl": "Quitar a máscara imaxinaria e sorrir",
             "es": "Quitarse la máscara imaginaria y sonreír"
-          }
+          },
+          "lamina": "pal_take_off_your_mask"
         },
         {
           "id": "3_4.febreiro.s4.jump-like-a-frog",
