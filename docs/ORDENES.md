@@ -400,3 +400,11 @@ Fuente: ninguna: origin/antigravity/pendiente en ef209a9c (P2.1–P2.7, revisado
 
 - [x] tools/check_laminas_leccion.py --tope-tpr: lecciones, frases y 0-2 a 0 piezas sin lámina; banco TPR no puede pasar de tools/tope_tpr_sen_lamina.txt (3419), y el tope solo baja · evidencia: tools/check_laminas_leccion.py, en tools/gates.sh
 - [x] Mergeado en main con CI en verde · evidencia: docs/ORDENES.md (PR #55, merge e6bd68f6, runs 44458071681 y 44458077155 en verde sobre 8d34cd44)
+
+## O-20261119-2 · Mergear las 10 tandas del banco TPR y bajar el tope
+Estado: abierta
+> (Claude Code) Mergear ya las 10 tandas a main: traigo main, bajo el tope del gate del banco TPR de 3.419 a 1.260, paso Flutter y los gates, y mergeo con CI en verde. ¿Hago el merge del punto 1? — (Frank) Ok
+Fuente: ninguna: origin/antigravity/pendiente en 1ed8d635 (P2.81–P2.91), revisado por Claude Code el 19/11/2026 (hoja_contactos_tpr_p9 y docs/tpr_sin_base.md)
+
+- [x] Tope del banco TPR bajado de 3419 a 1260 piezas sin lámina · evidencia: tools/tope_tpr_sen_lamina.txt (check_laminas_leccion.py --resumo --tope-tpr: TPR sin lámina 1260 de tope 1260)
+- [ ] Mergeado en main con CI en verde · evidencia:
