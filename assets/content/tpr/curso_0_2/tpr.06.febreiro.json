@@ -117,7 +117,8 @@
             "gl": "Facer cóxegas na barriga amodo",
             "es": "Hacer cosquillas en la barriga despacio"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_tickle_tummy"
         },
         {
           "id": "0_2.febreiro.s1.peep-out",
@@ -364,7 +365,8 @@
             "gl": "Bambear coma unha xelatina",
             "es": "Tambalearse como una gelatina"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_wobble"
         },
         {
           "id": "0_2.febreiro.s2.tip-over",
@@ -375,7 +377,8 @@
             "gl": "Deixar caer amodo cara ao lado",
             "es": "Dejar caer despacio hacia un lado"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_tip_over"
         },
         {
           "id": "0_2.febreiro.s2.whirl",
@@ -549,7 +552,8 @@
             "gl": "Pasar a man polo túnel de tea",
             "es": "Pasar la mano por el túnel de tela"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_tunnel"
         },
         {
           "id": "0_2.febreiro.s3.pop-up-toy",
@@ -620,7 +624,8 @@
             "gl": "Quitar o pano de riba do xoguete",
             "es": "Quitar el pañuelo de encima del juguete"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_uncover"
         },
         {
           "id": "0_2.febreiro.s3.crawl-through",

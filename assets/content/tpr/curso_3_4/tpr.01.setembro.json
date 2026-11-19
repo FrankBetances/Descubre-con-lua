@@ -93,7 +93,8 @@
           "tprAction": {
             "gl": "Pousar as dúas mans na alfombra do círculo",
             "es": "Apoyar las dos manos en la alfombra del círculo"
-          }
+          },
+          "lamina": "pal_rug"
         },
         {
           "id": "3_4.setembro.s1.name",
@@ -386,7 +387,8 @@
           "tprAction": {
             "gl": "Partir un obxecto imaxinario e dar a metade",
             "es": "Partir un objeto imaginario y dar la mitad"
-          }
+          },
+          "lamina": "pal_share"
         },
         {
           "id": "3_4.setembro.s2.help",
@@ -409,7 +411,8 @@
           "tprAction": {
             "gl": "Xuntar o polgar e o índice deixando un oco pequeno",
             "es": "Juntar el pulgar y el índice dejando un hueco pequeño"
-          }
+          },
+          "lamina": "pal_little"
         },
         {
           "id": "3_4.setembro.s2.ready",

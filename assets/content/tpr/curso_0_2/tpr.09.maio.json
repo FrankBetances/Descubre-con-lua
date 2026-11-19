@@ -354,7 +354,8 @@
             "gl": "Enxaboar as mans do bebé",
             "es": "Enjabonar las manos del bebé"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_soap_up"
         },
         {
           "id": "0_2.maio.s2.rinse-off",
@@ -377,7 +378,8 @@
             "gl": "Secar a pel a palmadiñas",
             "es": "Secar la piel a toquecitos"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_pat_dry"
         },
         {
           "id": "0_2.maio.s2.wrap-in-a-towel",
@@ -400,7 +402,8 @@
             "gl": "Mollar o pelo coa man",
             "es": "Mojar el pelo con la mano"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_wash_hair"
         },
         {
           "id": "0_2.maio.s2.squeaky-clean",
@@ -526,7 +529,8 @@
             "gl": "Coller o xabón que esvara",
             "es": "Coger el jabón que resbala"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_soap_bar"
         },
         {
           "id": "0_2.maio.s3.step-stool",
@@ -537,7 +541,8 @@
             "gl": "Subir ao banquiño do lavabo",
             "es": "Subir al taburete del lavabo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_step_stool"
         },
         {
           "id": "0_2.maio.s3.washbasin",
@@ -560,7 +565,8 @@
             "gl": "Limpar o nariz cun pano",
             "es": "Limpiar la nariz con un pañuelo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_tissue"
         },
         {
           "id": "0_2.maio.s3.face-cloth",
@@ -583,7 +589,8 @@
             "gl": "Limpar as mans cunha toalliña",
             "es": "Limpiar las manos con una toallita"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_wet_wipe"
         },
         {
           "id": "0_2.maio.s3.wash-up",
@@ -594,7 +601,8 @@
             "gl": "Enxaugar as mans baixo a billa",
             "es": "Enjuagarse las manos bajo el grifo"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_rinse_your_hands"
         },
         {
           "id": "0_2.maio.s3.turn-the-tap",
@@ -652,7 +660,8 @@
             "gl": "Deixar esvarar o xabón",
             "es": "Dejar resbalar el jabón"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_slippery_soap"
         },
         {
           "id": "0_2.maio.s3.tidy-face",

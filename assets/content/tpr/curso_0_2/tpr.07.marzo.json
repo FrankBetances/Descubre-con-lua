@@ -105,7 +105,8 @@
             "gl": "Poñer un vaso enriba doutro",
             "es": "Poner un vaso encima de otro"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_stack"
         },
         {
           "id": "0_2.marzo.s1.knock-over",
@@ -128,7 +129,8 @@
             "gl": "Xuntar os obxectos da mesma cor",
             "es": "Juntar los objetos del mismo color"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_sort"
         },
         {
           "id": "0_2.marzo.s1.match",
@@ -139,7 +141,8 @@
             "gl": "Xuntar dous panos iguais",
             "es": "Juntar dos pañuelos iguales"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_match"
         },
         {
           "id": "0_2.marzo.s1.toss",
@@ -374,7 +377,8 @@
             "gl": "Coller iogur coa culler",
             "es": "Coger yogur con la cuchara"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_scoop"
         },
         {
           "id": "0_2.marzo.s2.smack-lips",
@@ -397,7 +401,8 @@
             "gl": "Esmagar froita co garfo",
             "es": "Chafar fruta con el tenedor"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_mash"
         },
         {
           "id": "0_2.marzo.s2.sugary",
@@ -523,7 +528,8 @@
             "gl": "Apertar a pelota con pinchos suaves",
             "es": "Apretar la pelota con pinchos suaves"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_sensory_ball"
         },
         {
           "id": "0_2.marzo.s3.ball-pit",
@@ -546,7 +552,8 @@
             "gl": "Deixar baixar a pelota pola rampla",
             "es": "Dejar bajar la pelota por la rampa"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_ramp"
         },
         {
           "id": "0_2.marzo.s3.rolling-pin",
@@ -629,7 +636,8 @@
             "gl": "Palmear a pelota coa man aberta",
             "es": "Palmear la pelota con la mano abierta"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_pat_the_ball"
         },
         {
           "id": "0_2.marzo.s3.nudge",
@@ -687,7 +695,8 @@
             "gl": "Levantar a pelota cun dedo",
             "es": "Levantar la pelota con un dedo"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_lightweight"
         },
         {
           "id": "0_2.marzo.s3.roll-it-to-me",
@@ -860,7 +869,8 @@
             "gl": "Chupar un anaco de laranxa",
             "es": "Chupar un trozo de naranja"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_suck"
         },
         {
           "id": "0_2.marzo.s4.slurp-up",
@@ -905,7 +915,8 @@
             "gl": "Esmagar un pexego maduro",
             "es": "Chafar un melocotón maduro"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_mushy_peach"
         },
         {
           "id": "0_2.marzo.s4.pippy",

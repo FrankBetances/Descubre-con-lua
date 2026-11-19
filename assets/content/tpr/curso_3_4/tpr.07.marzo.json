@@ -93,7 +93,8 @@
           "tprAction": {
             "gl": "Pegar un adhesivo imaxinario no dorso da man",
             "es": "Pegar una pegatina imaginaria en el dorso de la mano"
-          }
+          },
+          "lamina": "pal_sticker"
         },
         {
           "id": "3_4.marzo.s1.paint",
@@ -128,7 +129,8 @@
           "tprAction": {
             "gl": "Pegar un papel imaxinario na parede dándolle palmadiñas",
             "es": "Pegar un papel imaginario en la pared dándole palmaditas"
-          }
+          },
+          "lamina": "pal_stick"
         },
         {
           "id": "3_4.marzo.s1.choose",
@@ -289,7 +291,8 @@
           "tprAction": {
             "gl": "Xuntar os polgares e os índices en forma de triángulo",
             "es": "Juntar pulgares e índices en forma de triángulo"
-          }
+          },
+          "lamina": "pal_triangle"
         },
         {
           "id": "3_4.marzo.s2.line",
@@ -419,7 +422,8 @@
           "tprAction": {
             "gl": "Poñerse moi dereitos cos brazos pegados ao corpo",
             "es": "Ponerse muy rectos con los brazos pegados al cuerpo"
-          }
+          },
+          "lamina": "pal_straight"
         },
         {
           "id": "3_4.marzo.s2.pointy",
@@ -466,7 +470,8 @@
           "tprAction": {
             "gl": "Dar as mans e formar un círculo entre todos",
             "es": "Darse las manos y formar un círculo entre todos"
-          }
+          },
+          "lamina": "pal_make_a_circle"
         },
         {
           "id": "3_4.marzo.s2.inside-the-hoop",
@@ -606,7 +611,8 @@
           "tprAction": {
             "gl": "Apertar unha laranxa imaxinaria coas dúas mans",
             "es": "Apretar una naranja imaginaria con las dos manos"
-          }
+          },
+          "lamina": "pal_squeeze"
         },
         {
           "id": "3_4.marzo.s3.pick",
@@ -617,7 +623,8 @@
           "tprAction": {
             "gl": "Estirarse para coller froita dunha árbore",
             "es": "Estirarse para coger fruta de un árbol"
-          }
+          },
+          "lamina": "pal_pick"
         },
         {
           "id": "3_4.marzo.s3.chew",

@@ -606,7 +606,8 @@
             "gl": "Pasar unha folla",
             "es": "Pasar una hoja"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_turn_the_page_of_the_calendar"
         },
         {
           "id": "5_6.decembro.s3.mark-the-date",
@@ -617,7 +618,8 @@
             "gl": "Facer un círculo co dedo",
             "es": "Hacer un círculo con el dedo"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_mark_the_date"
         },
         {
           "id": "5_6.decembro.s3.wait-for",
@@ -784,7 +786,8 @@
             "gl": "Facer un círculo coas mans",
             "es": "Hacer un círculo con las manos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_wreath"
         },
         {
           "id": "5_6.decembro.s4.carol-singers",
@@ -807,7 +810,8 @@
             "gl": "Colgar un adorno",
             "es": "Colgar un adorno"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_ornament"
         },
         {
           "id": "5_6.decembro.s4.new-year",
@@ -854,7 +858,8 @@
             "gl": "Dobrar un papel",
             "es": "Doblar un papel"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_make_a_card"
         },
         {
           "id": "5_6.decembro.s4.hang-ornaments",

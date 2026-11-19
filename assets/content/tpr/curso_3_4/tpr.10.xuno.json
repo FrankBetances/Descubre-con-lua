@@ -306,7 +306,8 @@
           "tprAction": {
             "gl": "Cavar cunha pa imaxinaria e botar a area a un lado",
             "es": "Cavar con una pala imaginaria y echar la arena a un lado"
-          }
+          },
+          "lamina": "pal_spade"
         },
         {
           "id": "3_4.xuno.s2.sandcastle",
@@ -317,7 +318,8 @@
           "tprAction": {
             "gl": "Amorear area imaxinaria e darlle palmadiñas",
             "es": "Amontonar arena imaginaria y darle palmaditas"
-          }
+          },
+          "lamina": "pal_sandcastle"
         },
         {
           "id": "3_4.xuno.s2.sun-hat",
@@ -328,7 +330,8 @@
           "tprAction": {
             "gl": "Poñer un sombreiro grande imaxinario",
             "es": "Ponerse un sombrero grande imaginario"
-          }
+          },
+          "lamina": "pal_sun_hat"
         },
         {
           "id": "3_4.xuno.s2.sunglasses",
@@ -387,7 +390,8 @@
           "tprAction": {
             "gl": "Derrubar un castelo de area imaxinario cun dedo",
             "es": "Derribar un castillo de arena imaginario con un dedo"
-          }
+          },
+          "lamina": "pal_knock_down"
         },
         {
           "id": "3_4.xuno.s2.write",
@@ -398,7 +402,8 @@
           "tprAction": {
             "gl": "Escribir o propio nome no chan co dedo",
             "es": "Escribir el propio nombre en el suelo con el dedo"
-          }
+          },
+          "lamina": "pal_write"
         },
         {
           "id": "3_4.xuno.s2.sandy",
@@ -632,7 +637,8 @@
           "tprAction": {
             "gl": "Retorcer os brazos coma os dun polbo",
             "es": "Retorcer los brazos como los de un pulpo"
-          }
+          },
+          "lamina": "pal_wriggle"
         },
         {
           "id": "3_4.xuno.s3.flip",
@@ -689,7 +695,8 @@
           "tprAction": {
             "gl": "Inflar as meixelas e moverse amodo",
             "es": "Inflar los mofletes y moverse despacio"
-          }
+          },
+          "lamina": "pal_underwater"
         },
         {
           "id": "3_4.xuno.s3.look-a-shell",
@@ -817,7 +824,8 @@
           "tprAction": {
             "gl": "Facer unha foto cunha cámara imaxinaria: clic!",
             "es": "Hacer una foto con una cámara imaginaria: ¡clic!"
-          }
+          },
+          "lamina": "pal_photo"
         },
         {
           "id": "3_4.xuno.s4.bonfire",
@@ -840,7 +848,8 @@
           "tprAction": {
             "gl": "Meter roupa imaxinaria nunha maleta",
             "es": "Meter ropa imaginaria en una maleta"
-          }
+          },
+          "lamina": "pal_pack"
         },
         {
           "id": "3_4.xuno.s4.travel",
@@ -851,7 +860,8 @@
           "tprAction": {
             "gl": "Voar coma un avión ata outro recuncho da aula",
             "es": "Volar como un avión hasta otro rincón del aula"
-          }
+          },
+          "lamina": "pal_travel"
         },
         {
           "id": "3_4.xuno.s4.miss",

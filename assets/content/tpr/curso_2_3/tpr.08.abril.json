@@ -153,7 +153,8 @@
             "gl": "Pasar herba polos pés",
             "es": "Pasar hierba por los pies"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_tickle_toes"
         },
         {
           "id": "2_3.abril.s1.grassy",
@@ -248,7 +249,8 @@
             "gl": "Subir e baixar coas mans",
             "es": "Subir y bajar con las manos"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_up_the_hill_and_down"
         }
       ]
     },
@@ -280,7 +282,8 @@
             "gl": "Voar cos brazos en V",
             "es": "Volar con los brazos en V"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_swallow"
         },
         {
           "id": "2_3.abril.s2.wing",
@@ -387,7 +390,8 @@
             "gl": "Picar coa man coma un bico",
             "es": "Picotear con la mano como un pico"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_peck_at_seeds"
         },
         {
           "id": "2_3.abril.s2.swoop",
@@ -398,7 +402,8 @@
             "gl": "Baixar os brazos voando",
             "es": "Bajar los brazos volando"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_swoop"
         },
         {
           "id": "2_3.abril.s2.tuneful",
@@ -491,7 +496,8 @@
             "gl": "Subir e baixar os brazos",
             "es": "Subir y bajar los brazos"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_wings_up_wings_down"
         }
       ]
     },
@@ -523,7 +529,8 @@
             "gl": "Pasar un libro amodo",
             "es": "Pasar un libro despacio"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_library"
         },
         {
           "id": "2_3.abril.s3.quiet-corner",
@@ -753,7 +760,8 @@
             "gl": "Facer un niño coas mans",
             "es": "Hacer un nido con las manos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_robin_s_nest"
         },
         {
           "id": "2_3.abril.s4.eggshell",
@@ -824,7 +832,8 @@
             "gl": "Xuntar ramiñas",
             "es": "Juntar ramitas"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_twigs"
         },
         {
           "id": "2_3.abril.s4.build-a-nest",
@@ -978,7 +987,8 @@
             "gl": "Saír encollido e estirarse",
             "es": "Salir encogido y estirarse"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_out_of_the_egg"
         }
       ]
     }

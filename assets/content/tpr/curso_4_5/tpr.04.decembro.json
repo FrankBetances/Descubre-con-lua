@@ -277,7 +277,8 @@
             "gl": "Medir cunha regra",
             "es": "Medir con una regla"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_ruler"
         },
         {
           "id": "4_5.decembro.s2.tape-measure",
@@ -288,7 +289,8 @@
             "gl": "Estirar unha cinta imaxinaria",
             "es": "Estirar una cinta imaginaria"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_tape_measure"
         },
         {
           "id": "4_5.decembro.s2.handspan",
@@ -311,7 +313,8 @@
             "gl": "Xuntar dous calcetíns",
             "es": "Juntar dos calcetines"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_pair_of_socks"
         },
         {
           "id": "4_5.decembro.s2.half",
@@ -334,7 +337,8 @@
             "gl": "Xuntar as dúas metades",
             "es": "Juntar las dos mitades"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_whole"
         },
         {
           "id": "4_5.decembro.s2.weigh",
@@ -357,7 +361,8 @@
             "gl": "Medir a palmos",
             "es": "Medir a palmos"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_measure_with_hands"
         },
         {
           "id": "4_5.decembro.s2.split-in-half",
@@ -438,7 +443,8 @@
             "gl": "Xuntar as mans",
             "es": "Juntar las manos"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_shorter"
         },
         {
           "id": "4_5.decembro.s2.which-one-is-heavier",
@@ -563,7 +569,8 @@
             "gl": "Estirarse coma un farol",
             "es": "Estirarse como un farol"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_street_lamp"
         },
         {
           "id": "4_5.decembro.s3.light-show",
@@ -785,7 +792,8 @@
             "gl": "Taparse dous coa mesma manta",
             "es": "Taparse dos con la misma manta"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_shared_blanket"
         },
         {
           "id": "4_5.decembro.s4.kindness",
@@ -865,7 +873,8 @@
             "gl": "Apertarse todos",
             "es": "Apretarse todos"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_keep_warm_together"
         },
         {
           "id": "4_5.decembro.s4.write-a-card",
@@ -876,7 +885,8 @@
             "gl": "Facer que se escribe",
             "es": "Hacer que se escribe"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_write_a_card"
         },
         {
           "id": "4_5.decembro.s4.generous",

@@ -117,7 +117,8 @@
             "gl": "Espreguizarse co bebé",
             "es": "Desperezarse con el bebé"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_wake"
         },
         {
           "id": "0_2.abril.s1.reach-up",
@@ -151,7 +152,8 @@
             "gl": "Coller unha flor con coidado",
             "es": "Coger una flor con cuidado"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_pick_a_daisy"
         },
         {
           "id": "0_2.abril.s1.blooming",
@@ -222,7 +224,8 @@
             "gl": "Inspirar polo nariz",
             "es": "Inspirar por la nariz"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_smell_the_flower"
         },
         {
           "id": "0_2.abril.s1.the-sun-is-up",
@@ -233,7 +236,8 @@
             "gl": "Levantar as mans coma o sol",
             "es": "Levantar las manos como el sol"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_the_sun_is_up"
         },
         {
           "id": "0_2.abril.s1.flower-in-my-hand",
@@ -361,7 +365,8 @@
             "gl": "Baixar un dedo polo cristal",
             "es": "Bajar un dedo por el cristal"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_trickle"
         },
         {
           "id": "0_2.abril.s2.watch-the-rain",
@@ -597,7 +602,8 @@
             "gl": "Afundir un dedo na terra",
             "es": "Hundir un dedo en la tierra"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_plant_a_seed"
         },
         {
           "id": "0_2.abril.s3.water-it",
@@ -620,7 +626,8 @@
             "gl": "Sacar un dedo do puño",
             "es": "Sacar un dedo del puño"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_pop_out"
         },
         {
           "id": "0_2.abril.s3.cover-with-soil",
@@ -643,7 +650,8 @@
             "gl": "Subir a man amodo",
             "es": "Subir la mano despacio"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_watch_it_grow"
         },
         {
           "id": "0_2.abril.s3.earthy",
@@ -666,7 +674,8 @@
             "gl": "Estirar o brazo coma un talo",
             "es": "Estirar el brazo como un tallo"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_tall_and_green"
         },
         {
           "id": "0_2.abril.s3.sprouting",
@@ -724,7 +733,8 @@
             "gl": "Meter a semente e tapala",
             "es": "Meter la semilla y taparla"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_seed_in_the_soil"
         },
         {
           "id": "0_2.abril.s3.bigger-and-bigger",

@@ -69,7 +69,8 @@
           "tprAction": {
             "gl": "Pousar as mans nas meixelas coma se quentasen",
             "es": "Poner las manos en las mejillas como si calentaran"
-          }
+          },
+          "lamina": "pal_sunshine"
         },
         {
           "id": "3_4.abril.s1.kite",
@@ -341,7 +342,8 @@
           "tprAction": {
             "gl": "Estirar o brazo moi dereito coma un talo",
             "es": "Estirar el brazo muy recto como un tallo"
-          }
+          },
+          "lamina": "pal_stem"
         },
         {
           "id": "3_4.abril.s2.grow",
@@ -364,7 +366,8 @@
           "tprAction": {
             "gl": "Botar sementes imaxinarias ao chan",
             "es": "Echar semillas imaginarias al suelo"
-          }
+          },
+          "lamina": "pal_sow"
         },
         {
           "id": "3_4.abril.s2.sprinkle",
@@ -399,7 +402,8 @@
           "tprAction": {
             "gl": "Sacar un dedo do puño pechado",
             "es": "Sacar un dedo del puño cerrado"
-          }
+          },
+          "lamina": "pal_sprout"
         },
         {
           "id": "3_4.abril.s2.pretty",
@@ -536,7 +540,8 @@
           "tprAction": {
             "gl": "Facer puntiños no dorso da man cun dedo",
             "es": "Hacer puntitos en el dorso de la mano con un dedo"
-          }
+          },
+          "lamina": "pal_ladybird"
         },
         {
           "id": "3_4.abril.s3.worm",
@@ -736,7 +741,8 @@
           "tprAction": {
             "gl": "Avanzar moi, moi amodo polo chan",
             "es": "Avanzar muy, muy despacio por el suelo"
-          }
+          },
+          "lamina": "pal_slow_like_a_snail"
         }
       ]
     },
@@ -970,7 +976,8 @@
           "tprAction": {
             "gl": "Pasar por riba dunha pedra imaxinaria cun paso longo",
             "es": "Pasar por encima de una piedra imaginaria con un paso largo"
-          }
+          },
+          "lamina": "pal_over_the_stone"
         },
         {
           "id": "3_4.abril.s4.through-the-grass",

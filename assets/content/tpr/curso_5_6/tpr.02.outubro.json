@@ -321,7 +321,8 @@
             "gl": "Moverse coma un esqueleto de conto",
             "es": "Moverse como un esqueleto de cuento"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_skeleton"
         },
         {
           "id": "5_6.outubro.s2.listening-tube",
@@ -391,7 +392,8 @@
             "gl": "Soltar os brazos",
             "es": "Soltar los brazos"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_relax"
         },
         {
           "id": "5_6.outubro.s2.racing-heart",
@@ -519,7 +521,8 @@
             "gl": "Pasar a man polas costas",
             "es": "Pasar la mano por la espalda"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_spine"
         },
         {
           "id": "5_6.outubro.s3.posture",
@@ -565,7 +568,8 @@
             "gl": "Estender a esteira",
             "es": "Extender la esterilla"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_yoga_mat"
         },
         {
           "id": "5_6.outubro.s3.tree-pose",
@@ -588,7 +592,8 @@
             "gl": "Facer círculos cos brazos",
             "es": "Hacer círculos con los brazos"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_rotate_arms"
         },
         {
           "id": "5_6.outubro.s3.touch-toes",
@@ -599,7 +604,8 @@
             "gl": "Baixar as mans ata os pés",
             "es": "Bajar las manos hasta los pies"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_touch_your_toes"
         },
         {
           "id": "5_6.outubro.s3.arch-back",
@@ -622,7 +628,8 @@
             "gl": "Avanzar unha perna e dobrala",
             "es": "Avanzar una pierna y doblarla"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_lunge"
         },
         {
           "id": "5_6.outubro.s3.shake-out",
@@ -668,7 +675,8 @@
             "gl": "Soltar os brazos",
             "es": "Soltar los brazos"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_loose"
         },
         {
           "id": "5_6.outubro.s3.stretchy",
@@ -679,7 +687,8 @@
             "gl": "Estirar moito os brazos",
             "es": "Estirar mucho los brazos"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_stretchy"
         },
         {
           "id": "5_6.outubro.s3.warm-up-your-body",
@@ -702,7 +711,8 @@
             "gl": "Facer a postura da árbore",
             "es": "Hacer la postura del árbol"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_stand_like_a_tree"
         },
         {
           "id": "5_6.outubro.s3.stretch-as-high-as-you-can",
@@ -792,7 +802,8 @@
             "gl": "Facer unha luz pequena coas mans",
             "es": "Hacer una luz pequeña con las manos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_night_light"
         },
         {
           "id": "5_6.outubro.s4.dream-journal",

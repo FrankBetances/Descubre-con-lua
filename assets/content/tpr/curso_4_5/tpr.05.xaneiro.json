@@ -45,7 +45,8 @@
             "gl": "Seguir unha liña co dedo",
             "es": "Seguir una línea con el dedo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_route"
         },
         {
           "id": "4_5.xaneiro.s1.landmark",
@@ -91,7 +92,8 @@
             "gl": "Facer unha torre coas mans",
             "es": "Hacer una torre con las manos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_town_hall"
         },
         {
           "id": "4_5.xaneiro.s1.follow-the-map",
@@ -277,7 +279,8 @@
             "gl": "Pasar a man por riba",
             "es": "Pasar la mano por encima"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_overpass"
         },
         {
           "id": "4_5.xaneiro.s2.gap",
@@ -300,7 +303,8 @@
             "gl": "Superar os obstáculos",
             "es": "Superar los obstáculos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_obstacle_course"
         },
         {
           "id": "4_5.xaneiro.s2.hoop-tunnel",
@@ -546,7 +550,8 @@
             "gl": "Conducir un volante grande",
             "es": "Conducir un volante grande"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_lorry"
         },
         {
           "id": "4_5.xaneiro.s3.cable-car",
@@ -918,7 +923,8 @@
             "gl": "Estirar a roupa",
             "es": "Estirar la ropa"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_uniformed"
         },
         {
           "id": "4_5.xaneiro.s4.early-rising",

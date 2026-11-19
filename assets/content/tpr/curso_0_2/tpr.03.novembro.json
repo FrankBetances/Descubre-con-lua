@@ -129,7 +129,8 @@
             "gl": "Engurrar un papel coa man",
             "es": "Estrujar un papel con la mano"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_scrunch"
         },
         {
           "id": "0_2.novembro.s1.discover",
@@ -187,7 +188,8 @@
             "gl": "Achegar e afastar a man do ourizo",
             "es": "Acercar y alejar la mano del erizo"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_prickly"
         },
         {
           "id": "0_2.novembro.s1.bumpy-walnut",
@@ -246,7 +248,8 @@
             "gl": "Sacar un obxecto da cesta",
             "es": "Sacar un objeto de la cesta"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_out_of_the_basket"
         }
       ]
     },
@@ -551,7 +554,8 @@
             "gl": "Facer un cucurucho de papel",
             "es": "Hacer un cucurucho de papel"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_paper_cone"
         },
         {
           "id": "0_2.novembro.s3.sweet-potato",
@@ -586,7 +590,8 @@
             "gl": "Asubiar coma un paxaro",
             "es": "Silbar como un pájaro"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_songbird"
         },
         {
           "id": "0_2.novembro.s3.blow-on-it",
@@ -678,7 +683,8 @@
             "gl": "Abanar coa man coma o fume",
             "es": "Abanicar con la mano como el humo"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_smoky"
         },
         {
           "id": "0_2.novembro.s3.nutty",
@@ -793,7 +799,8 @@
             "gl": "Apertar a pelota de esponxa",
             "es": "Apretar la pelota de esponja"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_sponge_ball"
         },
         {
           "id": "0_2.novembro.s4.silk-scarf",
@@ -804,7 +811,8 @@
             "gl": "Deixar caer o pano sobre a man",
             "es": "Dejar caer el pañuelo sobre la mano"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_silk_scarf"
         },
         {
           "id": "0_2.novembro.s4.wooden-spoon",
@@ -851,7 +859,8 @@
             "gl": "Aplanar a masa coa man",
             "es": "Aplanar la masa con la mano"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_pat_down"
         },
         {
           "id": "0_2.novembro.s4.grab-and-shake",
@@ -898,7 +907,8 @@
             "gl": "Apertar algo brando e soltalo",
             "es": "Apretar algo blando y soltarlo"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_squishy"
         },
         {
           "id": "0_2.novembro.s4.wobbly-jelly",
