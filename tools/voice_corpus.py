@@ -842,6 +842,49 @@ def collect_locutions(content_dir: Path = CONTENT_DIR) -> list[Locution]:
             for w in p.get("palabras", []):
                 _one(w.get("en", ""), "en", estilo_ingles(w.get("en", "")), "acopros/palabra", seen)
 
+    # O-20261119-8: los Juegos de escucha, copiados de Valeria. Cada palabra y
+    # cada frase suena en la lengua de su banco; la persona adulta las oye en
+    # Na casa → Explorar → Xogos de escoita.
+    # Solo gl y es: la pantalla enseña el banco en la lengua de la app. El banco
+    # en inglés se conserva como fuente, pero la app no lo reproduce.
+    for lang in ("gl", "es"):
+        banco = content_dir / "escoita" / f"valeria_{lang}.json"
+        if not banco.exists():
+            continue
+        d = json.loads(banco.read_text(encoding="utf-8"))
+        pezas = [x for par in d.get("pares", []) for x in (par["a"], par["b"])]
+        for clave, campo in (("progresions", "fases"), ("capsulas", "voltas"),
+                             ("escenarios", "items"), ("categorias", "items")):
+            for grupo in d.get(clave, []):
+                pezas.extend(grupo.get(campo, []))
+        for x in pezas:
+            for texto in (x.get("palabra", ""), x.get("frase", "")):
+                if texto:
+                    estilo = estilo_ingles(texto) if lang == "en" else "tutor"
+                    _one(texto, lang, estilo, f"escoita/valeria_{lang}", seen)
+
+    # La pieza de escucha del mes (plan_mensual.json): sus palabras inglesas y
+    # las tres frases del modelo para el adulto suenan en el paso de la lección,
+    # cada una con su significado gl/es para el doble toque (F7).
+    plan = content_dir / "escoita" / "plan_mensual.json"
+    if plan.exists():
+        d = json.loads(plan.read_text(encoding="utf-8"))
+        for p in d if isinstance(d, list) else (d.get("piezas") or d.get("pezas") or []):
+            base = f"escoita/{p['curso']}/{p['mes']}"
+            palabras = list(p["progresion"]["fases"])
+            if not p["par"].get("pendiente"):
+                palabras += [p["par"]["a"], p["par"]["b"]]
+            for w in palabras:
+                fonte = f"{base}/{w['en']}"
+                _one(w["en"], "en", estilo_ingles(w["en"]), fonte, seen)
+                _add({"gl": w.get("gl", ""), "es": w.get("es", "")}, "tutor", f"{fonte}/significado", seen)
+            sig = p["modelo"].get("significado") or []
+            for k, frase in enumerate(p["modelo"]["adulto"]):
+                fonte = f"{base}/modelo/{k}"
+                _one(frase, "en", estilo_ingles(frase), fonte, seen)
+                if k < len(sig):
+                    _add(sig[k], "tutor", f"{fonte}/significado", seen)
+
     return sorted(seen.values(), key=lambda e: (e.lang, e.style, e.id))
 
 

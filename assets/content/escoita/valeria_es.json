@@ -1,0 +1,1076 @@
+{
+ "_doc": "Copiado de Valeria y adaptado (O-20261119-8): sin emoji, sin reconocedor de voz, sin las etiquetas técnicas del error. Lo genera tools/importar_valeria_escoita.py; no se edita a mano.",
+ "fuente": {
+  "repo": "FrankBetances/Valeria",
+  "commit": "e2a2a5e8",
+  "ficheros": [
+   "src/valeriaMinimalPairs.ts",
+   "src/valeriaSemanticExpansion.ts"
+  ]
+ },
+ "lingua": "es",
+ "pares": [
+  {
+   "id": "rana-lana",
+   "a": {
+    "palabra": "rana",
+    "lamina": "pal_pal_frog"
+   },
+   "b": {
+    "palabra": "lana",
+    "lamina": "pal_wool"
+   },
+   "fonema": "r̄ → l",
+   "pista": "La lengua hace la moto detrás de los dientes: rrr.",
+   "misionAcerto": "¡Salto de rana! Tres saltos hasta chocar los cinco con el adulto.",
+   "misionFallo": "Mano en la garganta del adulto: el adulto sostiene rrrrr tres segundos y el niño siente la vibración. Luego, al revés."
+  },
+  {
+   "id": "perro-pelo",
+   "a": {
+    "palabra": "perro",
+    "lamina": "pal_dog"
+   },
+   "b": {
+    "palabra": "pelo",
+    "lamina": "pal_hair"
+   },
+   "fonema": "r̄ → l",
+   "pista": "La erre es una moto larga en medio de la palabra.",
+   "misionAcerto": "¡A cuatro patas! Gatea ladrando hasta el adulto y que te rasque la cabeza.",
+   "misionFallo": "Carrera de motos: manillar imaginario frente a frente y acelerad con rrr a la vez."
+  },
+  {
+   "id": "rata-lata",
+   "a": {
+    "palabra": "rata",
+    "lamina": "pal_rat"
+   },
+   "b": {
+    "palabra": "lata",
+    "lamina": "pal_tin_can"
+   },
+   "fonema": "r̄ → l",
+   "pista": "Punta de la lengua arriba, y que tiemble.",
+   "misionAcerto": "¡Pilla-pilla de ratas! Persigue al adulto por la habitación hasta tocarle la espalda.",
+   "misionFallo": "Tambor de lengua: el adulto marca ta-ta-ta con palmadas en los muslos y el niño responde ra-ra-ra, cada vez más rápido."
+  },
+  {
+   "id": "cerro-cero",
+   "a": {
+    "palabra": "cerro",
+    "lamina": "pal_hill"
+   },
+   "b": {
+    "palabra": "cero",
+    "lamina": "pal_zero"
+   },
+   "fonema": "r̄ → ɾ",
+   "pista": "La erre corta es un toque; la del cerro tiembla mucho rato.",
+   "misionAcerto": "Escalada: palmas contra palmas con el adulto y paso de escalador en el sitio hasta la cima.",
+   "misionFallo": "La cuerda: por cada rrr largo del niño, el adulto tira de él un paso hacia la cima (el sofá). Tres tirones y ¡cima!"
+  },
+  {
+   "id": "casa-caza",
+   "a": {
+    "palabra": "casa",
+    "lamina": "pal_house"
+   },
+   "b": {
+    "palabra": "caza",
+    "lamina": "pal_hunt"
+   },
+   "fonema": "s → θ",
+   "pista": "Dientes juntos, sonrisa, y la serpiente sopla por detrás: sss.",
+   "misionAcerto": "Haced el tejado juntando los brazos en triángulo por encima de la cabeza del niño.",
+   "misionFallo": "Serpiente viajera: mientras dura la sss, el adulto desliza un dedo del hombro a la mano del niño. Si la ese se rompe, la serpiente vuelve al hombro.",
+   "soDistincion": true
+  },
+  {
+   "id": "sierra-tierra",
+   "a": {
+    "palabra": "sierra",
+    "lamina": "pal_saw"
+   },
+   "b": {
+    "palabra": "tierra",
+    "lamina": "pal_soil"
+   },
+   "fonema": "s → t",
+   "pista": "La te da un golpe; la ese es aire que no se acaba.",
+   "misionAcerto": "Serrad en pareja: manos agarradas y vaivén de leñador mientras los dos hacéis sss.",
+   "misionFallo": "El molinillo: palma del adulto delante de la boca del niño. Con t-t-t siente golpes; con sss, un viento seguido que empuja la mano tres segundos."
+  },
+  {
+   "id": "ocho-oso",
+   "a": {
+    "palabra": "ocho",
+    "lamina": "pal_eight"
+   },
+   "b": {
+    "palabra": "oso",
+    "lamina": "pal_bear"
+   },
+   "fonema": "tʃ ↔ s",
+   "pista": "Labios de beso adelante y un golpe de tren: ch.",
+   "misionAcerto": "Tren del ocho: agárrate a la cintura del adulto y dad una vuelta en forma de ocho haciendo ch-ch-ch.",
+   "misionFallo": "Beso-tren: frente a frente, lanzad una che alternándoos como un pase de pelota invisible. Cinco pases seguidos."
+  },
+  {
+   "id": "cubo-tubo",
+   "a": {
+    "palabra": "cubo",
+    "lamina": "pal_bucket"
+   },
+   "b": {
+    "palabra": "tubo",
+    "lamina": "pal_tube"
+   },
+   "fonema": "k → t",
+   "pista": "La te vive en los dientes; la ka vive al fondo de la garganta.",
+   "misionAcerto": "Transporta el cojín-cubo pesadísimo hasta los pies del adulto, que lo vacía levantándote en volandas.",
+   "misionFallo": "Gárgaras del gigante: cabeza atrás y ka-ka-ka. Dedos bajo la barbilla del otro para sentir dónde se mueve la ka."
+  },
+  {
+   "id": "boca-bota",
+   "a": {
+    "palabra": "boca",
+    "lamina": "pal_mouth"
+   },
+   "b": {
+    "palabra": "bota",
+    "lamina": "pal_boot"
+   },
+   "fonema": "k → t",
+   "pista": "Boca muy abierta de león: la lengua se va sola para atrás.",
+   "misionAcerto": "Cuenta-dientes: sonrisa gigante del adulto y el niño le cuenta cinco dientes con el dedo. Luego, al revés.",
+   "misionFallo": "Bostezo del león frente a frente: boca enorme y kaaa desde el fondo. Gana el bostezo más exagerado."
+  },
+  {
+   "id": "fuente-puente",
+   "a": {
+    "palabra": "fuente",
+    "lamina": "pal_fountain"
+   },
+   "b": {
+    "palabra": "puente",
+    "lamina": "pal_bridge"
+   },
+   "fonema": "f → p",
+   "pista": "Dientes de conejo sobre el labio de abajo, y sopla.",
+   "misionAcerto": "Fuente humana: agáchate y brota hacia arriba salpicando al adulto, que se sacude el pelo empapado.",
+   "misionFallo": "El papel volador: papelito en la palma del adulto. Con fff se inclina y aguanta; con pe solo da un salto. Reto: tres segundos volando."
+  },
+  {
+   "id": "gota-bota",
+   "a": {
+    "palabra": "gota",
+    "lamina": "pal_drop"
+   },
+   "b": {
+    "palabra": "bota",
+    "lamina": "pal_boot"
+   },
+   "fonema": "g → b",
+   "pista": "La be vive en los labios; la ga vive al fondo de la garganta.",
+   "misionAcerto": "Lluvia de dedos: tamborilead gotas por los brazos del otro hasta llegar a las manos.",
+   "misionFallo": "Manos al cuello los dos: decid ga-ga-ga y bo-bo-bo y notad dónde tiembla cada sonido."
+  },
+  {
+   "id": "beso-queso",
+   "a": {
+    "palabra": "beso",
+    "lamina": "pal_kiss"
+   },
+   "b": {
+    "palabra": "queso",
+    "lamina": "pal_cheese"
+   },
+   "fonema": "b → k",
+   "pista": "Junta los labios como para dar un beso y suéltalos de golpe: be.",
+   "misionAcerto": "Lanzaos un beso volador cada uno y atrapadlo en el aire con la mano.",
+   "misionFallo": "Espejo de labios: frente a frente, inflad los mofletes y soltad be-be-be hasta reír."
+  },
+  {
+   "id": "foca-boca",
+   "a": {
+    "palabra": "foca",
+    "lamina": "pal_seal"
+   },
+   "b": {
+    "palabra": "boca",
+    "lamina": "pal_mouth"
+   },
+   "fonema": "f → b",
+   "pista": "Dientes de conejo sobre el labio de abajo, y aire largo: fff.",
+   "misionAcerto": "Aplaudid como focas con los brazos estirados y un “¡arf, arf!” final.",
+   "misionFallo": "Viento en la mano: palma del adulto delante de la boca del niño. Con fff hay brisa seguida; con be, solo un golpecito."
+  },
+  {
+   "id": "miel-piel",
+   "a": {
+    "palabra": "miel",
+    "lamina": "pal_honey"
+   },
+   "b": {
+    "palabra": "piel",
+    "lamina": "pal_skin"
+   },
+   "fonema": "m → p",
+   "pista": "Labios juntos y motor de abeja por la nariz: mmm.",
+   "misionAcerto": "Osos golosos: meted la mano en el tarro imaginario y relameos con un “mmm” bien largo.",
+   "misionFallo": "Dedo en la nariz del otro: sostened mmmm tres segundos y sentid la vibración. Con pe no tiembla nada."
+  },
+  {
+   "id": "pato-palo",
+   "a": {
+    "palabra": "pato",
+    "lamina": "pal_duck"
+   },
+   "b": {
+    "palabra": "palo",
+    "lamina": "pal_stick"
+   },
+   "fonema": "t → l",
+   "pista": "La te da un toque seco detrás de los dientes; la ele se escurre por los lados.",
+   "misionAcerto": "Caminad como patos en cuclillas hasta el sofá haciendo cuac-cuac.",
+   "misionFallo": "Tambor de lengua: marcad ta-ta-ta con palmadas y la-la-la meneando los brazos, alternando cada vez más rápido."
+  }
+ ],
+ "progresions": [
+  {
+   "id": "seq-coche",
+   "tema": "Transporte · El coche",
+   "fases": [
+    {
+     "palabra": "coche",
+     "lamina": "pal_car",
+     "tipo": "concepto",
+     "frase": "Esto es el coche.",
+     "accion": "Pon el coche en la mano del niño, señálalo y repetid juntos “coche” mientras lo movéis."
+    },
+    {
+     "palabra": "rueda",
+     "lamina": "pal_wheel",
+     "tipo": "parte",
+     "frase": "El coche tiene ruedas.",
+     "accion": "Coged el coche y girad una rueda con el dedo del niño, repitiendo “rueda” en cada vuelta."
+    },
+    {
+     "palabra": "corre",
+     "lamina": "pal_run",
+     "tipo": "accion",
+     "frase": "El coche corre.",
+     "accion": "Haz correr el coche por la mesa y después por el brazo del niño, acelerando al decir “corre”."
+    },
+    {
+     "palabra": "rápido",
+     "lamina": "pal_fast",
+     "tipo": "cualidad",
+     "frase": "El coche es muy rápido.",
+     "accion": "Corre con el niño de la mano unos pasos y frenad de golpe diciendo “¡rápido… y stop!”."
+    }
+   ]
+  },
+  {
+   "id": "seq-perro",
+   "tema": "Animales · El perro",
+   "fases": [
+    {
+     "palabra": "perro",
+     "lamina": "pal_dog",
+     "tipo": "concepto",
+     "frase": "Esto es el perro.",
+     "accion": "Señala un perro de juguete o una foto y acariciadlo juntos repitiendo “perro”."
+    },
+    {
+     "palabra": "pata",
+     "lamina": "pal_paw",
+     "tipo": "parte",
+     "frase": "El perro tiene cuatro patas.",
+     "accion": "Poned las manos en el suelo como patas y caminad a cuatro patas un par de pasos diciendo “pata”."
+    },
+    {
+     "palabra": "salta",
+     "lamina": "pal_jump",
+     "tipo": "accion",
+     "frase": "El perro salta para coger la pelota.",
+     "accion": "Haz saltar al perro de juguete y saltad los dos a la vez diciendo “¡salta!”."
+    },
+    {
+     "palabra": "peludo",
+     "lamina": "pal_furry",
+     "tipo": "cualidad",
+     "frase": "El perro es blandito y peludo.",
+     "accion": "Acariciad un peluche o una manta suave y decid “peludo” pasando la mano despacio."
+    }
+   ]
+  },
+  {
+   "id": "seq-vaca",
+   "tema": "Animales · La vaca",
+   "fases": [
+    {
+     "palabra": "vaca",
+     "lamina": "pal_pal_cow",
+     "tipo": "concepto",
+     "frase": "Esto es la vaca.",
+     "accion": "Señala una vaca de juguete o una foto y recorred sus manchas con el dedo diciendo “vaca”."
+    },
+    {
+     "palabra": "leche",
+     "lamina": "pal_milk",
+     "tipo": "parte",
+     "frase": "De la vaca sale la leche.",
+     "accion": "Servid un poco de leche en su vaso y dad un sorbo cada uno diciendo “leche” antes de beber."
+    },
+    {
+     "palabra": "come",
+     "lamina": "pal_eat",
+     "tipo": "accion",
+     "frase": "La vaca come hierba.",
+     "accion": "Agacha la cabeza como la vaca y haced que masticáis hierba moviendo la mandíbula al decir “come”."
+    },
+    {
+     "palabra": "grande",
+     "lamina": "pal_big",
+     "tipo": "cualidad",
+     "frase": "La vaca es muy grande.",
+     "accion": "Abrid los brazos todo lo que podáis y poneos de puntillas diciendo “¡graaande!”."
+    }
+   ]
+  },
+  {
+   "id": "seq-gato",
+   "tema": "Animales · El gato",
+   "fases": [
+    {
+     "palabra": "gato",
+     "lamina": "pal_cat",
+     "tipo": "concepto",
+     "frase": "Esto es el gato.",
+     "accion": "Señala un gato de juguete o una foto y acariciadle el lomo repitiendo “gato”."
+    },
+    {
+     "palabra": "bigote",
+     "lamina": "pal_whiskers",
+     "tipo": "parte",
+     "frase": "El gato tiene bigotes largos.",
+     "accion": "Dibujad bigotes en el aire desde la nariz hacia las mejillas del niño mientras decís “bigote”."
+    },
+    {
+     "palabra": "duerme",
+     "lamina": "pal_sleep",
+     "tipo": "accion",
+     "frase": "El gato duerme en su cama.",
+     "accion": "Junta las manos bajo la mejilla, cierra los ojos y haz “shhh” invitando al niño a “dormir” contigo."
+    },
+    {
+     "palabra": "suave",
+     "lamina": "pal_soft",
+     "tipo": "cualidad",
+     "frase": "El pelo del gato es muy suave.",
+     "accion": "Pasad una pluma o un pañuelo por el brazo del niño muy despacio diciendo “suave”."
+    }
+   ]
+  },
+  {
+   "id": "seq-lluvia",
+   "tema": "Naturaleza · La lluvia",
+   "fases": [
+    {
+     "palabra": "agua",
+     "lamina": "pal_water",
+     "tipo": "concepto",
+     "frase": "Esto es el agua.",
+     "accion": "Mojad un dedo en agua real y tocaos la mano notando el frío mientras decís “agua”."
+    },
+    {
+     "palabra": "nube",
+     "lamina": "pal_cloud",
+     "tipo": "parte",
+     "frase": "El agua sale de la nube.",
+     "accion": "Señalad una nube por la ventana (o dibujad una en el aire) y decid “nube” soplando flojito."
+    },
+    {
+     "palabra": "cae",
+     "lamina": "pal_fall",
+     "tipo": "accion",
+     "frase": "El agua cae del cielo.",
+     "accion": "Levanta las manos arriba y bájalas moviendo los dedos hasta el suelo diciendo “caeee”."
+    },
+    {
+     "palabra": "mojado",
+     "lamina": "pal_wet",
+     "tipo": "cualidad",
+     "frase": "La mano está mojada.",
+     "accion": "Moja un poco la mano del niño con una toallita y decid “mojado” sacudiendo las manos."
+    }
+   ]
+  },
+  {
+   "id": "seq-tren",
+   "tema": "Transporte · El tren",
+   "fases": [
+    {
+     "palabra": "tren",
+     "lamina": "pal_pal_train",
+     "tipo": "concepto",
+     "frase": "Esto es el tren.",
+     "accion": "Haced un trenecito: el niño se agarra a tu cintura y avanzad por el pasillo repitiendo “tren”."
+    },
+    {
+     "palabra": "vagón",
+     "lamina": "pal_wagon",
+     "tipo": "parte",
+     "frase": "El tren lleva muchos vagones.",
+     "accion": "Poned en fila tres cajas o cojines como vagones y enganchadlos diciendo “vagón” en cada uno."
+    },
+    {
+     "palabra": "para",
+     "lamina": "pal_stop",
+     "tipo": "accion",
+     "frase": "El tren para en la estación.",
+     "accion": "Avanzad como un tren y frenad en seco al decir “¡para!”, quedándoos completamente quietos."
+    },
+    {
+     "palabra": "largo",
+     "lamina": "pal_long",
+     "tipo": "cualidad",
+     "frase": "El tren es muy largo.",
+     "accion": "Separad los brazos todo lo posible marcando lo “laaargo” que es el tren."
+    }
+   ]
+  },
+  {
+   "id": "seq-pajaro",
+   "tema": "Animales · El pájaro",
+   "fases": [
+    {
+     "palabra": "pájaro",
+     "lamina": "pal_bird",
+     "tipo": "concepto",
+     "frase": "Esto es el pájaro.",
+     "accion": "Señalad un pájaro por la ventana o en una foto y seguidlo con el dedo diciendo “pájaro”."
+    },
+    {
+     "palabra": "pluma",
+     "lamina": "pal_feather",
+     "tipo": "parte",
+     "frase": "El pájaro tiene plumas.",
+     "accion": "Soplad una pluma de verdad (o un trocito de papel) para que flote y decid “pluma” al cogerla."
+    },
+    {
+     "palabra": "vuela",
+     "lamina": "pal_fly",
+     "tipo": "accion",
+     "frase": "El pájaro vuela por el cielo.",
+     "accion": "Abrid los brazos como alas y dad una vuelta por la habitación “volando” al decir “vuela”."
+    },
+    {
+     "palabra": "pequeño",
+     "lamina": "pal_small",
+     "tipo": "cualidad",
+     "frase": "El pájaro es muy pequeño.",
+     "accion": "Juntad el índice y el pulgar dejando un huequito y mirad por él diciendo “pequeñito”."
+    }
+   ]
+  },
+  {
+   "id": "seq-pan",
+   "tema": "Alimentación · El desayuno",
+   "fases": [
+    {
+     "palabra": "pan",
+     "lamina": "pal_bread",
+     "tipo": "concepto",
+     "frase": "Esto es el pan.",
+     "accion": "Pon un trozo de pan en la mano del niño y oledlo juntos antes de decir “pan”."
+    },
+    {
+     "palabra": "taza",
+     "lamina": "pal_cup",
+     "tipo": "parte",
+     "frase": "En el desayuno bebemos de la taza.",
+     "accion": "Coged la taza del desayuno por el asa entre los dos y dad un sorbo diciendo “taza”."
+    },
+    {
+     "palabra": "quiero pan",
+     "lamina": "pal_bread",
+     "tipo": "accion",
+     "frase": "Tienes hambre y lo pides.",
+     "accion": "Sujeta el pan a la vista pero fuera de su alcance y espera la petición antes de dárselo."
+    },
+    {
+     "palabra": "tostado",
+     "lamina": "pal_toast",
+     "tipo": "cualidad",
+     "frase": "El pan está tostado.",
+     "accion": "Comparad una rebanada blanda y una tostada tocándolas: la tostada cruje al apretarla."
+    }
+   ]
+  },
+  {
+   "id": "seq-globo",
+   "tema": "Juego · El globo",
+   "fases": [
+    {
+     "palabra": "globo",
+     "lamina": "pal_balloon",
+     "tipo": "concepto",
+     "frase": "Esto es el globo.",
+     "accion": "Dad un globo al niño y sujetadlo entre los dos mientras repetís “globo”."
+    },
+    {
+     "palabra": "cuerda",
+     "lamina": "pal_rope",
+     "tipo": "parte",
+     "frase": "El globo tiene una cuerda.",
+     "accion": "Atad una cuerda al globo y dejad que el niño tire de ella diciendo “cuerda”."
+    },
+    {
+     "palabra": "sopla",
+     "lamina": "pal_blow",
+     "tipo": "accion",
+     "frase": "Soplamos para inflar el globo.",
+     "accion": "Soplad los dos a la vez sobre la mano del otro para notar el aire antes de decir “sopla”."
+    },
+    {
+     "palabra": "redondo",
+     "lamina": "pal_round",
+     "tipo": "cualidad",
+     "frase": "El globo es redondo.",
+     "accion": "Dibujad un círculo grande en el aire con los dos brazos diciendo “redoooondo”."
+    }
+   ]
+  }
+ ],
+ "capsulas": [
+  {
+   "id": "cap-grande-pequeno",
+   "tipo": "adjetivos",
+   "montaxe": "Prepara dos ositos de peluche iguales pero de distinto tamaño: uno claramente GRANDE y uno claramente PEQUEÑO. Colócalos juntos delante del niño.",
+   "voltas": [
+    {
+     "palabra": "grande",
+     "lamina": "pal_big",
+     "frase": "¿Cuál es el osito GRANDE? ¡Dámelo y dilo!",
+     "accion": "El niño te entrega el osito grande mientras lo dice; abrazadlo exagerando lo enorme que es."
+    },
+    {
+     "palabra": "pequeño",
+     "lamina": "pal_small",
+     "frase": "Ahora al revés: ¿cuál es el osito PEQUEÑO? ¡Dámelo y dilo!",
+     "accion": "El niño te da el osito pequeño; escondedlo en una mano y decid “pequeño” con vocecita mini."
+    }
+   ]
+  },
+  {
+   "id": "cap-limpio-sucio",
+   "tipo": "adjetivos",
+   "montaxe": "Coge dos cucharas iguales: lava una hasta dejarla brillante y mancha la otra con un poco de comida o barro. Ponlas una al lado de la otra.",
+   "voltas": [
+    {
+     "palabra": "sucio",
+     "lamina": "pal_dirty",
+     "frase": "Señala la cuchara SUCIA. ¿Cómo está esta? Dilo.",
+     "accion": "El niño señala la cuchara sucia y ponéis los dos cara de “¡puaj!” apartándola."
+    },
+    {
+     "palabra": "limpio",
+     "lamina": "pal_clean",
+     "frase": "Y esta otra cuchara, ¿cómo está? ¡Mira cómo brilla!",
+     "accion": "Señalad la limpia, soplad sobre ella como si brillara y chocad los cinco."
+    }
+   ]
+  },
+  {
+   "id": "cap-abrir-cerrar",
+   "tipo": "verbos",
+   "montaxe": "Pon delante del niño una caja con tapa y mete dentro, a la vista, su juguete favorito. Cierra la tapa.",
+   "voltas": [
+    {
+     "palabra": "abrir",
+     "lamina": "pal_open",
+     "frase": "El juguete está dentro. ¿Qué hacemos para sacarlo? ¡Vamos a ABRIR!",
+     "accion": "Abrid la caja juntos, muy despacio, y celebrad encontrar el juguete con un “¡tachán!”."
+    },
+    {
+     "palabra": "cerrar",
+     "lamina": "pal_close",
+     "frase": "Guardamos el juguete. ¿Qué hacemos con la tapa? ¡A CERRAR!",
+     "accion": "El niño empuja la tapa hasta cerrarla del todo mientras dice la palabra."
+    }
+   ]
+  },
+  {
+   "id": "cap-subir-bajar",
+   "tipo": "verbos",
+   "montaxe": "Haz una rampa apoyando un libro grande inclinado y coloca un coche de juguete al pie de la rampa.",
+   "voltas": [
+    {
+     "palabra": "subir",
+     "lamina": "pal_up",
+     "frase": "El coche va a la montaña. ¿Qué hace? ¡SUBE arriba!",
+     "accion": "Subid el coche por la rampa muy despacio mientras suena la palabra."
+    },
+    {
+     "palabra": "bajar",
+     "lamina": "pal_down",
+     "frase": "¡Ahora el coche baja! ¿Qué hace?",
+     "accion": "Soltad el coche y que baje solo por la rampa; decid “¡bajaaa!” mientras cae."
+    }
+   ]
+  },
+  {
+   "id": "cap-frio-caliente",
+   "tipo": "adjetivos",
+   "montaxe": "Prepara dos vasos: uno con agua bien fría (con hielo si hay) y otro con agua tibia. Ponlos delante del niño.",
+   "voltas": [
+    {
+     "palabra": "frío",
+     "lamina": "pal_cold",
+     "frase": "Toca los vasos. ¿Cuál está FRÍO? ¡Brrr!",
+     "accion": "El niño toca el vaso frío; tiritad juntos “¡brrr!” encogiendo los hombros."
+    },
+    {
+     "palabra": "caliente",
+     "lamina": "pal_hot",
+     "frase": "Y este otro vaso, ¿cómo está?",
+     "accion": "Tocad el vaso tibio y abanicaos la mano como si quemara, exagerando mucho."
+    }
+   ]
+  },
+  {
+   "id": "cap-encender-apagar",
+   "tipo": "verbos",
+   "montaxe": "Colócate con el niño junto al interruptor de la luz (o coge una linterna). La habitación empieza con la luz apagada.",
+   "voltas": [
+    {
+     "palabra": "encender",
+     "lamina": "pal_switch_on",
+     "frase": "Está oscuro… ¿Qué hacemos con la luz? ¡A ENCENDER!",
+     "accion": "El niño pulsa el interruptor justo al decirlo y celebráis la luz con un “¡ooooh!”."
+    },
+    {
+     "palabra": "apagar",
+     "lamina": "pal_switch_off",
+     "frase": "Ahora al revés. ¿Qué hacemos con la luz? ¡A APAGAR!",
+     "accion": "El niño apaga la luz y os decís “buenas noches” con voz de susurro."
+    }
+   ]
+  },
+  {
+   "id": "cap-lleno-vacio",
+   "tipo": "adjetivos",
+   "montaxe": "Prepara dos cestas o cajas iguales: llena una hasta arriba de juguetes o calcetines y deja la otra completamente vacía. Ponlas delante del niño.",
+   "voltas": [
+    {
+     "palabra": "lleno",
+     "lamina": "pal_full",
+     "frase": "¿Cuál es la cesta LLENA de cosas? ¡Señálala y dilo!",
+     "accion": "El niño señala la cesta llena; levantadla juntos exagerando lo mucho que pesa: “¡uf, llenaaa!”."
+    },
+    {
+     "palabra": "vacío",
+     "lamina": "pal_empty",
+     "frase": "Y esta otra cesta, ¿cómo está? ¡Mira dentro!",
+     "accion": "Poned la cesta vacía boca abajo sobre la cabeza del niño como un sombrero: no cae nada, ¡está vacía!"
+    }
+   ]
+  },
+  {
+   "id": "cap-mete-saca",
+   "tipo": "verbos",
+   "montaxe": "Coge una caja abierta y tres juguetes pequeños. Coloca los juguetes FUERA de la caja, delante del niño.",
+   "voltas": [
+    {
+     "palabra": "meter",
+     "lamina": "pal_put_in",
+     "frase": "Los juguetes van a su casa. ¿Qué hacemos? ¡A METER!",
+     "accion": "El niño mete un juguete en la caja con cada palabra; celebrad el último con un “¡todos dentro!”."
+    },
+    {
+     "palabra": "sacar",
+     "lamina": "pal_take_out",
+     "frase": "Ahora al revés. ¿Qué hacemos con los juguetes? ¡A SACAR!",
+     "accion": "El niño saca los juguetes uno a uno; contádlos en fila al salir: “¡uno, dos y tres fuera!”."
+    }
+   ]
+  }
+ ],
+ "escenarios": [
+  {
+   "id": "manana",
+   "titulo": "Rutina de mañana",
+   "subtitulo": "Despertarse, lavarse, vestirse y desayunar",
+   "items": [
+    {
+     "palabra": "despertar",
+     "lamina": "pal_wake_up",
+     "frase": "Primero nos despertamos.",
+     "accion": "Tápate como si durmieras y estírate con el niño al sonar el «rin, rin»."
+    },
+    {
+     "palabra": "lavar",
+     "lamina": "pal_wash",
+     "frase": "Después nos lavamos.",
+     "accion": "Frotad las manos juntos como si os enjabonarais."
+    },
+    {
+     "palabra": "vestir",
+     "lamina": "pal_get_dressed",
+     "frase": "Luego nos vestimos.",
+     "accion": "Pasa una camiseta por la cabeza del niño y celebrad al asomar."
+    },
+    {
+     "palabra": "desayunar",
+     "lamina": "pal_breakfast",
+     "frase": "Al final desayunamos.",
+     "accion": "Simulad juntos que bebéis un vaso de leche con las dos manos."
+    }
+   ]
+  },
+  {
+   "id": "comida",
+   "titulo": "Hora de comer",
+   "subtitulo": "Lavarse, sentarse, comer y recoger",
+   "items": [
+    {
+     "palabra": "lavar",
+     "lamina": "pal_wash",
+     "frase": "Primero nos lavamos las manos.",
+     "accion": "Frotad las manos juntos como si os enjabonarais."
+    },
+    {
+     "palabra": "sentarse",
+     "lamina": "pal_sit_down",
+     "frase": "Después nos sentamos a la mesa.",
+     "accion": "Sentaos juntos en dos sillas, uno frente al otro."
+    },
+    {
+     "palabra": "comer",
+     "lamina": "pal_eat",
+     "frase": "Luego comemos.",
+     "accion": "Llevad juntos una cuchara imaginaria a la boca."
+    },
+    {
+     "palabra": "recoger",
+     "lamina": "pal_tidy_up",
+     "frase": "Al final recogemos el plato.",
+     "accion": "Llevad juntos un plato (de verdad o imaginario) hasta la cocina."
+    }
+   ]
+  },
+  {
+   "id": "parque",
+   "titulo": "En el parque",
+   "subtitulo": "Zapatos, parque, tobogán y a casa",
+   "items": [
+    {
+     "palabra": "zapatos",
+     "lamina": "pal_shoes",
+     "frase": "Primero nos ponemos los zapatos.",
+     "accion": "Señalad los zapatos del niño y tocadlos juntos."
+    },
+    {
+     "palabra": "parque",
+     "lamina": "pal_park",
+     "frase": "Después vamos al parque.",
+     "accion": "Caminad juntos unos pasos por la habitación hacia «el parque»."
+    },
+    {
+     "palabra": "tobogán",
+     "lamina": "pal_slide",
+     "frase": "Luego bajamos por el tobogán.",
+     "accion": "Haced juntos el gesto de deslizaros con los brazos en alto."
+    },
+    {
+     "palabra": "casa",
+     "lamina": "pal_house",
+     "frase": "Al final volvemos a casa.",
+     "accion": "Juntad las manos sobre la cabeza formando un tejado."
+    }
+   ]
+  },
+  {
+   "id": "bano",
+   "titulo": "Hora del baño",
+   "subtitulo": "Bañera, jabón, agua y toalla",
+   "items": [
+    {
+     "palabra": "bañera",
+     "lamina": "pal_bathtub",
+     "frase": "Primero nos metemos en la bañera.",
+     "accion": "Levantad juntos una pierna como si entrarais en la bañera."
+    },
+    {
+     "palabra": "jabón",
+     "lamina": "pal_soap",
+     "frase": "Después nos enjabonamos.",
+     "accion": "Frotad los brazos del niño con una esponja imaginaria."
+    },
+    {
+     "palabra": "agua",
+     "lamina": "pal_water",
+     "frase": "Luego nos aclaramos con agua.",
+     "accion": "Dejad caer los dedos sobre la cabeza del niño como gotas."
+    },
+    {
+     "palabra": "toalla",
+     "lamina": "pal_towel",
+     "frase": "Al final nos secamos con la toalla.",
+     "accion": "Envolved al niño en una toalla (o en tus brazos) y secadlo."
+    }
+   ]
+  },
+  {
+   "id": "noche",
+   "titulo": "A dormir",
+   "subtitulo": "Pijama, dientes, cuento y a dormir",
+   "items": [
+    {
+     "palabra": "pijama",
+     "lamina": "pal_pajamas",
+     "frase": "Primero nos ponemos el pijama.",
+     "accion": "Señalad el pijama del niño y tocad los botones juntos."
+    },
+    {
+     "palabra": "dientes",
+     "lamina": "pal_teeth",
+     "frase": "Después nos lavamos los dientes.",
+     "accion": "Haced juntos el gesto de cepillaros los dientes."
+    },
+    {
+     "palabra": "cuento",
+     "lamina": "pal_story",
+     "frase": "Luego leemos un cuento.",
+     "accion": "Abrid las manos como un libro y pasad una página juntos."
+    },
+    {
+     "palabra": "dormir",
+     "lamina": "pal_sleep",
+     "frase": "Al final nos vamos a dormir.",
+     "accion": "Apoyad la cabeza en las manos juntas y cerrad los ojos."
+    }
+   ]
+  }
+ ],
+ "categorias": [
+  {
+   "id": "cat-frutas",
+   "titulo": "Frutas",
+   "subtitulo": "De la fruta de cada día a la que se ve de vez en cuando",
+   "items": [
+    {
+     "palabra": "manzana",
+     "lamina": "pal_apple",
+     "frase": "Esto es una manzana.",
+     "accion": "Dale un mordisco a una manzana de verdad (o de juguete) y que el niño imite el crujido: ¡ñac!"
+    },
+    {
+     "palabra": "plátano",
+     "lamina": "pal_pal_banana",
+     "frase": "Esto es un plátano.",
+     "accion": "Pelad juntos un plátano bajando cada tira despacio mientras decís la palabra."
+    },
+    {
+     "palabra": "naranja",
+     "lamina": "pal_orange",
+     "frase": "Esto es una naranja.",
+     "accion": "Haced rodar una naranja por la mesa de uno a otro, nombrándola en cada pase."
+    },
+    {
+     "palabra": "pera",
+     "lamina": "pal_pear",
+     "frase": "Esto es una pera.",
+     "accion": "Dibujad la silueta de la pera en el aire con el dedo: ancha abajo, estrecha arriba."
+    },
+    {
+     "palabra": "piña",
+     "lamina": "pal_pineapple",
+     "frase": "Esto es una piña.",
+     "accion": "Poneos las manos abiertas sobre la cabeza como la corona de la piña y decid la palabra."
+    },
+    {
+     "palabra": "cereza",
+     "lamina": "pal_cherry",
+     "frase": "Esto es una cereza.",
+     "accion": "Colgaos dos cerezas (o dos bolitas de papel) de la oreja como pendientes y reíos juntos."
+    }
+   ]
+  },
+  {
+   "id": "cat-animales",
+   "titulo": "Animales",
+   "subtitulo": "De los de casa a los que solo se ven en el zoo",
+   "items": [
+    {
+     "palabra": "perro",
+     "lamina": "pal_dog",
+     "frase": "Esto es un perro.",
+     "accion": "Poneos a cuatro patas y dad tres pasos ladrando juntos."
+    },
+    {
+     "palabra": "gato",
+     "lamina": "pal_cat",
+     "frase": "Esto es un gato.",
+     "accion": "Estiraos como un gato al despertar y frotad la cabeza contra el brazo del otro."
+    },
+    {
+     "palabra": "pato",
+     "lamina": "pal_duck",
+     "frase": "Esto es un pato.",
+     "accion": "Caminad en fila moviendo la cola como patos hasta la puerta."
+    },
+    {
+     "palabra": "vaca",
+     "lamina": "pal_pal_cow",
+     "frase": "Esto es una vaca.",
+     "accion": "Poneos dos dedos en la cabeza como cuernos y decid la palabra mirándoos."
+    },
+    {
+     "palabra": "elefante",
+     "lamina": "pal_elephant",
+     "frase": "Esto es un elefante.",
+     "accion": "Haced la trompa con el brazo colgando delante de la cara y balanceadla al decirlo."
+    },
+    {
+     "palabra": "jirafa",
+     "lamina": "pal_giraffe",
+     "frase": "Esto es una jirafa.",
+     "accion": "Estirad el cuello y los brazos hacia arriba, lo más alto posible, para alcanzar una hoja."
+    }
+   ]
+  },
+  {
+   "id": "cat-transportes",
+   "titulo": "Transportes",
+   "subtitulo": "De lo que pasa por la calle a lo que casi nunca se ve",
+   "items": [
+    {
+     "palabra": "coche",
+     "lamina": "pal_car",
+     "frase": "Esto es un coche.",
+     "accion": "Empujad un coche de juguete por el suelo hasta chocar suavemente con el pie del niño."
+    },
+    {
+     "palabra": "moto",
+     "lamina": "pal_motorbike",
+     "frase": "Esto es una moto.",
+     "accion": "Agarrad un manillar imaginario y acelerad los dos a la vez haciendo ruido de motor."
+    },
+    {
+     "palabra": "tren",
+     "lamina": "pal_pal_train",
+     "frase": "Esto es un tren.",
+     "accion": "Haced un tren: el niño se agarra a tu cintura y dais una vuelta a la habitación."
+    },
+    {
+     "palabra": "barco",
+     "lamina": "pal_boat",
+     "frase": "Esto es un barco.",
+     "accion": "Sentaos en el suelo y balanceaos como si el barco subiera y bajara con las olas."
+    },
+    {
+     "palabra": "avión",
+     "lamina": "pal_pal_plane",
+     "frase": "Esto es un avión.",
+     "accion": "Abrid los brazos como alas y dad una vuelta por la habitación inclinándoos en las curvas."
+    },
+    {
+     "palabra": "camión",
+     "lamina": "pal_truck",
+     "frase": "Esto es un camión.",
+     "accion": "Cargad tres juguetes en una caja y arrastradla juntos como si fuera el remolque."
+    }
+   ]
+  },
+  {
+   "id": "cat-colores",
+   "titulo": "Colores",
+   "subtitulo": "Del rojo y el azul a los que cuesta más nombrar",
+   "items": [
+    {
+     "palabra": "rojo",
+     "lamina": "pal_red",
+     "frase": "Este color es rojo.",
+     "accion": "Buscad juntos tres cosas rojas por la habitación y tocadlas nombrando el color."
+    },
+    {
+     "palabra": "azul",
+     "lamina": "pal_blue",
+     "frase": "Este color es azul.",
+     "accion": "Señalad el cielo o algo azul de la ropa del niño y decid el color a la vez."
+    },
+    {
+     "palabra": "amarillo",
+     "lamina": "pal_yellow",
+     "frase": "Este color es amarillo.",
+     "accion": "Haced un sol grande con los brazos y decid el color mirando hacia arriba."
+    },
+    {
+     "palabra": "verde",
+     "lamina": "pal_green",
+     "frase": "Este color es verde.",
+     "accion": "Salid a buscar una hoja o una planta y tocadla mientras decís el color."
+    },
+    {
+     "palabra": "morado",
+     "lamina": "pal_purple",
+     "frase": "Este color es morado.",
+     "accion": "Mezclad delante del niño un poco de rojo y azul (pintura o plastilina) y nombrad lo que sale."
+    },
+    {
+     "palabra": "marrón",
+     "lamina": "pal_brown",
+     "frase": "Este color es marrón.",
+     "accion": "Tocad juntos algo de madera —una mesa, una silla— y decid el color al tocarlo."
+    }
+   ]
+  },
+  {
+   "id": "cat-cuerpo",
+   "titulo": "El cuerpo",
+   "subtitulo": "De lo que se señala solo a lo que hay que buscar",
+   "items": [
+    {
+     "palabra": "mano",
+     "lamina": "pal_hand",
+     "frase": "Esto es la mano.",
+     "accion": "Chocad las palmas tres veces, una por cada sílaba, mirándoos a los ojos."
+    },
+    {
+     "palabra": "pie",
+     "lamina": "pal_foot",
+     "frase": "Esto es el pie.",
+     "accion": "Poned vuestros pies juntos y comparad el tamaño antes de dar tres pisotones al suelo."
+    },
+    {
+     "palabra": "boca",
+     "lamina": "pal_mouth",
+     "frase": "Esto es la boca.",
+     "accion": "Poneos frente al espejo y abrid y cerrad la boca a la vez, muy despacio."
+    },
+    {
+     "palabra": "ojo",
+     "lamina": "pal_eye",
+     "frase": "Esto es el ojo.",
+     "accion": "Jugad a taparos los ojos y destaparlos con un “¡cucú!” cada vez que decís la palabra."
+    },
+    {
+     "palabra": "rodilla",
+     "lamina": "pal_knee",
+     "frase": "Esto es la rodilla.",
+     "accion": "Doblad las rodillas a la vez hasta quedar en cuclillas y subid diciendo la palabra."
+    },
+    {
+     "palabra": "codo",
+     "lamina": "pal_elbow",
+     "frase": "Esto es el codo.",
+     "accion": "Saludaos chocando los codos, como se hacía en la pandemia, tres veces seguidas."
+    }
+   ]
+  }
+ ]
+}

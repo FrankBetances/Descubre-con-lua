@@ -1643,7 +1643,7 @@ class _NodoDoDia extends StatelessWidget {
               children: [
                 // O-20261119-7: el día de hoy late, como en casa.
                 if (hoxe && !feito)
-                  Latido(child: _circulo(acento, cor, canto, activo))
+                  Halo(cor: acento, child: _circulo(acento, cor, canto, activo))
                 else
                   _circulo(acento, cor, canto, activo),
                 const SizedBox(height: 4),

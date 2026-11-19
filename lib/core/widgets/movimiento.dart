@@ -56,11 +56,12 @@ class _LatidoState extends State<Latido> with SingleTickerProviderStateMixin {
   }
 }
 
-/// Flota arriba y abajo: el globo de «Empezar».
+/// Flota arriba y abajo: el globo de «Empezar». Valeria `Breathe`
+/// (src/ui/motion.tsx): sube 3 px en 1,4 s y vuelve.
 class Flotar extends StatefulWidget {
   final Widget child;
   final double altura;
-  const Flotar({super.key, required this.child, this.altura = 5});
+  const Flotar({super.key, required this.child, this.altura = 3});
 
   @override
   State<Flotar> createState() => _FlotarState();
@@ -68,7 +69,7 @@ class Flotar extends StatefulWidget {
 
 class _FlotarState extends State<Flotar> with SingleTickerProviderStateMixin {
   late final AnimationController _c = AnimationController(
-      vsync: this, duration: const Duration(milliseconds: 1200));
+      vsync: this, duration: const Duration(milliseconds: 1400));
 
   @override
   void didChangeDependencies() {
@@ -98,6 +99,8 @@ class _FlotarState extends State<Flotar> with SingleTickerProviderStateMixin {
 }
 
 /// Entra una vez, subiendo y apareciendo; [orden] escalona una lista.
+/// Valeria `enterAt` (src/ui/motion.tsx): 55 ms entre filas, hasta la 10, y
+/// 380 ms de entrada.
 class Entrada extends StatefulWidget {
   final Widget child;
   final int orden;
@@ -111,7 +114,7 @@ class Entrada extends StatefulWidget {
 
 class _EntradaState extends State<Entrada> with SingleTickerProviderStateMixin {
   late final AnimationController _c = AnimationController(
-      vsync: this, duration: const Duration(milliseconds: 420));
+      vsync: this, duration: const Duration(milliseconds: 380));
   bool _quieto = false;
 
   @override
@@ -121,7 +124,8 @@ class _EntradaState extends State<Entrada> with SingleTickerProviderStateMixin {
     if (_quieto) {
       _c.value = 1;
     } else if (_c.value == 0 && !_c.isAnimating) {
-      Future.delayed(Duration(milliseconds: 70 * widget.orden), () {
+      Future.delayed(Duration(milliseconds: 55 * math.min(widget.orden, 10)),
+          () {
         if (mounted) _c.forward();
       });
     }
@@ -378,6 +382,175 @@ class ContadorAnimado extends StatelessWidget {
       duration: Duration(milliseconds: 500 + 25 * valor.clamp(0, 40)),
       curve: Curves.easeOutCubic,
       builder: (context, v, _) => Text('$v', style: style),
+    );
+  }
+}
+
+/// Los seis colores del confeti de Valeria (src/ui/Celebration.tsx).
+const coresCelebracion = [
+  Color(0xFFFFD23F),
+  Color(0xFF00C4BE),
+  Color(0xFFFF6B9A),
+  Color(0xFF7C5CFF),
+  Color(0xFF4CD964),
+  Color(0xFFFF9F1C),
+];
+
+/// Anillo de avance que se dibuja al aparecer: Valeria `ProgressRing`
+/// (src/ui/motion.tsx), 250 ms de espera y 900 ms de trazo.
+class AnilloAvance extends StatelessWidget {
+  final double valor;
+  final double tam;
+  final double grosor;
+  final Color cor;
+  final Color fondo;
+  const AnilloAvance({
+    super.key,
+    required this.valor,
+    required this.tam,
+    required this.cor,
+    required this.fondo,
+    this.grosor = 8,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final v = valor.clamp(0.0, 1.0);
+    Widget aro(double x) => SizedBox(
+          width: tam,
+          height: tam,
+          child: CircularProgressIndicator(
+              value: x,
+              strokeWidth: grosor,
+              backgroundColor: fondo,
+              color: cor),
+        );
+    if (movimientoQuieto(context)) return aro(v);
+    return TweenAnimationBuilder<double>(
+      tween: Tween(begin: 0, end: v),
+      duration: const Duration(milliseconds: 1150),
+      curve: const Interval(250 / 1150, 1, curve: Curves.easeOutCubic),
+      builder: (context, x, _) => aro(x),
+    );
+  }
+}
+
+/// Halo que late alrededor de lo que toca tocar: Valeria `ReactiveTile` con
+/// `hint` (src/ui/ReactiveTile.tsx), 650 ms de ida y 650 de vuelta.
+class Halo extends StatefulWidget {
+  final Widget child;
+  final Color cor;
+  final double radio;
+  const Halo(
+      {super.key, required this.child, required this.cor, this.radio = 999});
+
+  @override
+  State<Halo> createState() => _HaloState();
+}
+
+class _HaloState extends State<Halo> with SingleTickerProviderStateMixin {
+  late final AnimationController _c = AnimationController(
+      vsync: this, duration: const Duration(milliseconds: 650));
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    movimientoQuieto(context) ? _c.stop() : _c.repeat(reverse: true);
+  }
+
+  @override
+  void dispose() {
+    _c.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    if (movimientoQuieto(context)) return widget.child;
+    return AnimatedBuilder(
+      animation: _c,
+      child: widget.child,
+      builder: (context, child) => DecoratedBox(
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(widget.radio),
+          boxShadow: [
+            BoxShadow(
+              color: widget.cor
+                  .withValues(alpha: 0.55 * Curves.easeOut.transform(_c.value)),
+              spreadRadius: 6,
+            ),
+          ],
+        ),
+        child: child,
+      ),
+    );
+  }
+}
+
+/// Tres estrellas que caen escalonadas, la del medio más grande: Valeria
+/// `Celebration` (src/ui/Celebration.tsx), 180 ms + 140 ms por estrella.
+class Estrelas extends StatelessWidget {
+  final Widget Function(double tam) estrela;
+  const Estrelas({super.key, required this.estrela});
+
+  @override
+  Widget build(BuildContext context) => Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.end,
+        children: [
+          for (var i = 0; i < 3; i++)
+            Padding(
+              padding: EdgeInsets.fromLTRB(5, 0, 5, i == 1 ? 6 : 0),
+              child: _Cae(
+                  retraso: 180 + i * 140, child: estrela(i == 1 ? 44 : 32)),
+            ),
+        ],
+      );
+}
+
+class _Cae extends StatefulWidget {
+  final int retraso;
+  final Widget child;
+  const _Cae({required this.retraso, required this.child});
+
+  @override
+  State<_Cae> createState() => _CaeState();
+}
+
+class _CaeState extends State<_Cae> with SingleTickerProviderStateMixin {
+  late final AnimationController _c = AnimationController(
+      vsync: this, duration: const Duration(milliseconds: 520));
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    if (movimientoQuieto(context)) {
+      _c.value = 1;
+    } else if (_c.value == 0 && !_c.isAnimating) {
+      Future.delayed(Duration(milliseconds: widget.retraso), () {
+        if (mounted) _c.forward();
+      });
+    }
+  }
+
+  @override
+  void dispose() {
+    _c.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    if (movimientoQuieto(context)) return widget.child;
+    final a = CurvedAnimation(parent: _c, curve: Curves.elasticOut);
+    return AnimatedBuilder(
+      animation: _c,
+      child: widget.child,
+      builder: (context, child) => Opacity(
+        opacity: _c.value.clamp(0.0, 1.0),
+        child: Transform.translate(
+            offset: Offset(0, -24 * (1 - a.value)), child: child),
+      ),
     );
   }
 }

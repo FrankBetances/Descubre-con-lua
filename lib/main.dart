@@ -1,3 +1,4 @@
+import 'data/models/plan_escoita_model.dart';
 import 'package:flutter/material.dart';
 import 'core/audio/local_audio_player.dart';
 import 'core/audio/offline_audio_service.dart';
@@ -23,6 +24,8 @@ void main() async {
   await repository.loadProgramaTpr();
   // F7: el doble toque dice el significado de cualquier frase en inglés.
   await Significados.cargar();
+  // O-20261119-8: la pieza de escucha del mes, para el paso de la lección.
+  await PlanEscoita.cargar();
   runApp(DescubreConLuaApp(contentRepository: repository));
 }
 

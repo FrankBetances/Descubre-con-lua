@@ -1,0 +1,43 @@
+{
+  "_doc": "Glosa inglesa de cada palabra de los bancos de Valeria en castellano y gallego: solo sirve para buscar su lámina en assets/brand/laminas (el dibujo no depende de la lengua). O-20261119-8.",
+  "es": {
+    "rana": "frog", "lana": "wool", "perro": "dog", "pelo": "hair", "rata": "rat", "lata": "tin can",
+    "cerro": "hill", "cero": "zero", "casa": "house", "caza": "hunt", "sierra": "saw", "tierra": "soil",
+    "ocho": "eight", "oso": "bear", "cubo": "bucket", "tubo": "tube", "boca": "mouth", "bota": "boot",
+    "fuente": "fountain", "puente": "bridge", "gota": "drop", "beso": "kiss", "queso": "cheese",
+    "foca": "seal", "miel": "honey", "piel": "skin", "pato": "duck", "palo": "stick",
+    "despertar": "wake up", "lavar": "wash", "vestir": "get dressed", "desayunar": "breakfast",
+    "sentarse": "sit down", "comer": "eat", "recoger": "tidy up", "zapatos": "shoes", "parque": "park",
+    "tobogán": "slide", "bañera": "bathtub", "jabón": "soap", "agua": "water", "toalla": "towel",
+    "pijama": "pajamas", "dientes": "teeth", "cuento": "story", "dormir": "sleep",
+    "manzana": "apple", "plátano": "banana", "naranja": "orange", "pera": "pear", "piña": "pineapple",
+    "cereza": "cherry", "gato": "cat", "vaca": "cow", "elefante": "elephant", "jirafa": "giraffe",
+    "coche": "car", "moto": "motorbike", "tren": "train", "barco": "boat", "avión": "plane",
+    "camión": "truck", "rojo": "red", "azul": "blue", "amarillo": "yellow", "verde": "green",
+    "morado": "purple", "marrón": "brown", "mano": "hand", "pie": "foot", "ojo": "eye",
+    "rodilla": "knee", "codo": "elbow", "rueda": "wheel", "corre": "run", "rápido": "fast",
+    "pata": "paw", "salta": "jump", "peludo": "furry", "leche": "milk", "come": "eat",
+    "grande": "big", "bigote": "whiskers", "duerme": "sleep", "suave": "soft", "nube": "cloud",
+    "cae": "fall", "mojado": "wet", "vagón": "wagon", "para": "stop", "largo": "long",
+    "pájaro": "bird", "pluma": "feather", "vuela": "fly", "pequeño": "small", "pan": "bread",
+    "taza": "cup", "quiero pan": "bread", "tostado": "toast", "globo": "balloon", "cuerda": "rope",
+    "sopla": "blow", "redondo": "round", "sucio": "dirty", "limpio": "clean", "abrir": "open",
+    "cerrar": "close", "subir": "up", "bajar": "down", "frío": "cold", "caliente": "hot",
+    "encender": "switch on", "apagar": "switch off", "lleno": "full", "vacío": "empty",
+    "meter": "put in", "sacar": "take out"
+  },
+  "gl": {
+    "rúa": "street", "lúa": "moon", "rei": "king", "lei": "law", "cesta": "basket", "testa": "forehead",
+    "fonte": "fountain", "ponte": "bridge", "xeo": "ice", "cheo": "full", "xoia": "jewel", "soia": "soy",
+    "óso": "bone", "bóla": "bun", "bola": "ball", "palla": "straw", "pala": "shovel", "mel": "honey",
+    "pel": "skin", "can": "dog", "espertar": "wake up", "almorzar": "breakfast", "sentar": "sit down",
+    "recoller": "tidy up", "bañeira": "bathtub", "xabón": "soap", "auga": "water", "pixama": "pajamas",
+    "dentes": "teeth", "conto": "story", "durmir": "sleep", "mazá": "apple", "laranxa": "orange",
+    "ananás": "pineapple", "cereixa": "cherry", "xirafa": "giraffe", "vermello": "red",
+    "amarelo": "yellow", "man": "hand", "pé": "foot", "ollo": "eye", "xeonllo": "knee",
+    "cóbado": "elbow", "roda": "wheel", "leite": "milk", "dorme": "sleep", "mollado": "wet",
+    "longo": "long", "paxaro": "bird", "voa": "fly", "pequeno": "small", "cunca": "bowl",
+    "quero pan": "bread", "torrado": "toast", "corda": "rope", "sopra": "blow", "limpo": "clean",
+    "pechar": "close", "baixar": "down", "quente": "hot", "acender": "switch on", "baleiro": "empty"
+  }
+}

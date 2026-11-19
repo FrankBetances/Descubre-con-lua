@@ -127,6 +127,10 @@ void main() {
         'assets/fonts/Nunito-Bold.ttf',
         'assets/fonts/Nunito-ExtraBold.ttf',
       ],
+      'Fredoka': [
+        'assets/fonts/Fredoka-SemiBold.ttf',
+        'assets/fonts/Fredoka-Bold.ttf',
+      ],
       'MaterialIcons': [iconos.path],
     }.entries) {
       final loader = FontLoader(entry.key);

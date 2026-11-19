@@ -125,6 +125,7 @@ queda fuera del alcance de este documento:
 | Componente | Qué es | Dónde están sus términos |
 | --- | --- | --- |
 | Nunito | Tipografía | SIL Open Font License 1.1, incluida en `assets/fonts/OFL.txt` |
+| Fredoka | Tipografía de los títulos | SIL Open Font License 1.1, incluida en `assets/fonts/OFL-Fredoka.txt` |
 | Flutter, Dart y sus paquetes | Marco de trabajo y dependencias | Licencias de cada proyecto, según `pubspec.lock` |
 | Celtia · Proxecto Nós | Modelo de voz en gallego, usado en compilación | Términos del modelo en su repositorio de origen |
 | Sharvard · rhasspy/piper-voices | Modelo de voz en castellano, usado en compilación | Términos del modelo en su repositorio de origen |

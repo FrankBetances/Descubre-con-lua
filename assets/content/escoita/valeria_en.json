@@ -1,0 +1,955 @@
+{
+ "_doc": "Copiado de Valeria y adaptado (O-20261119-8): sin emoji, sin reconocedor de voz, sin las etiquetas técnicas del error. Lo genera tools/importar_valeria_escoita.py; no se edita a mano.",
+ "fuente": {
+  "repo": "FrankBetances/Valeria",
+  "commit": "e2a2a5e8",
+  "ficheros": [
+   "src/valeriaMinimalPairsEn.ts",
+   "src/valeriaSemanticExpansionEn.ts"
+  ]
+ },
+ "lingua": "en",
+ "pares": [
+  {
+   "id": "rake-wake",
+   "a": {
+    "palabra": "rake",
+    "lamina": "pal_rake"
+   },
+   "b": {
+    "palabra": "wake",
+    "lamina": "pal_wake"
+   },
+   "fonema": "/r/ → /w/",
+   "pista": "Pull your tongue back and up, and keep your lips from rounding: rrr.",
+   "misionAcerto": "Rake the leaves! Three big sweeps across the floor, then high five.",
+   "misionFallo": "Mirror game: the grown-up says rrr with wide lips, the child copies watching the mirror."
+  },
+  {
+   "id": "lock-rock",
+   "a": {
+    "palabra": "rock",
+    "lamina": "pal_rock"
+   },
+   "b": {
+    "palabra": "lock",
+    "lamina": "pal_lock"
+   },
+   "fonema": "/r/ → /l/",
+   "pista": "For /l/ the tongue touches behind your teeth. For /r/ it pulls back and never touches.",
+   "misionAcerto": "Be a rock: freeze completely still while the grown-up counts to five.",
+   "misionFallo": "Take turns: grown-up says lock, child says rock, faster and faster."
+  },
+  {
+   "id": "key-tea",
+   "a": {
+    "palabra": "key",
+    "lamina": "pal_key"
+   },
+   "b": {
+    "palabra": "tea",
+    "lamina": "pal_tea"
+   },
+   "fonema": "/k/ → /t/",
+   "pista": "Keep the tip of your tongue down and lift the BACK of it: k, k, k.",
+   "misionAcerto": "Unlock the door: pretend to turn a key three times and open an imaginary door.",
+   "misionFallo": "Hold a finger on the tip of the tongue (gently, on the chin) so only the back lifts: k-k-k together."
+  },
+  {
+   "id": "peach-beach",
+   "a": {
+    "palabra": "peach",
+    "lamina": "pal_peach"
+   },
+   "b": {
+    "palabra": "beach",
+    "lamina": "pal_beach"
+   },
+   "fonema": "/p/ → /b/",
+   "pista": "Hand on your throat: /b/ buzzes, /p/ is a quiet puff of air.",
+   "misionAcerto": "Pretend to bite a juicy peach and wipe your chin. Now the grown-up copies you.",
+   "misionFallo": "Puff test: hold a small piece of paper in front of your mouth — /p/ makes it move, /b/ does not."
+  },
+  {
+   "id": "sip-ship",
+   "a": {
+    "palabra": "ship",
+    "lamina": "pal_ship"
+   },
+   "b": {
+    "palabra": "sip",
+    "lamina": "pal_sip"
+   },
+   "fonema": "/ʃ/ → /s/",
+   "pista": "Round your lips and pull the tongue back: shhh, like asking for quiet.",
+   "misionAcerto": "Sail the ship: rock side to side like a boat while the grown-up makes wave sounds.",
+   "misionFallo": "Quiet game: both of you go shhh with a finger on the lips for three seconds."
+  },
+  {
+   "id": "snail-nail",
+   "a": {
+    "palabra": "snail",
+    "lamina": "pal_snail"
+   },
+   "b": {
+    "palabra": "nail",
+    "lamina": "pal_nail"
+   },
+   "fonema": "/sn-/ → /n-/",
+   "pista": "Start with a long ssss and slide into the n: ssss-nail.",
+   "misionAcerto": "Move like a snail: crawl very, very slowly to the grown-up.",
+   "misionFallo": "Snake first: hiss ssss together for three seconds, then add the word."
+  },
+  {
+   "id": "seat-sea",
+   "a": {
+    "palabra": "seat",
+    "lamina": "pal_seat"
+   },
+   "b": {
+    "palabra": "sea",
+    "lamina": "pal_sea"
+   },
+   "fonema": "/-t/ → ∅",
+   "pista": "Finish the word with a little tap of the tongue: seat-t.",
+   "misionAcerto": "Musical chairs, mini version: walk around a chair and sit down when the grown-up claps.",
+   "misionFallo": "Tap it out: the grown-up taps the table on the final /t/ and the child copies."
+  },
+  {
+   "id": "thin-fin",
+   "a": {
+    "palabra": "thin",
+    "lamina": "pal_thin"
+   },
+   "b": {
+    "palabra": "fin",
+    "lamina": "pal_fin"
+   },
+   "fonema": "/θ/ → /f/",
+   "pista": "Put the tip of your tongue gently between your teeth and blow: thhh.",
+   "misionAcerto": "Thin and wide: make yourself as thin as you can, then as wide as you can.",
+   "misionFallo": "Mirror check: both of you show your tongue between your teeth and blow softly."
+  },
+  {
+   "id": "sheep-ship",
+   "a": {
+    "palabra": "sheep",
+    "lamina": "pal_pal_sheep"
+   },
+   "b": {
+    "palabra": "ship",
+    "lamina": "pal_ship"
+   },
+   "fonema": "/i/ → /ɪ/",
+   "pista": "Stretch it out and smile wide: sheeeep. The short one is quick: ship.",
+   "misionAcerto": "Count sheep: jump over an imaginary fence three times, baaing each jump.",
+   "misionFallo": "Long and short: stretch your arms wide for sheep, bring them close for ship."
+  }
+ ],
+ "progresions": [
+  {
+   "id": "en-seq-car",
+   "tema": "Transportation · The car",
+   "fases": [
+    {
+     "palabra": "car",
+     "lamina": "pal_car",
+     "tipo": "concepto",
+     "frase": "It takes us places on four wheels.",
+     "accion": "Roll a toy car along the floor towards your child."
+    },
+    {
+     "palabra": "wheel",
+     "lamina": "pal_wheel",
+     "tipo": "parte",
+     "frase": "This round part is what turns and turns.",
+     "accion": "Spin the wheel with a finger and let your child stop it."
+    },
+    {
+     "palabra": "drive",
+     "lamina": "pal_drive",
+     "tipo": "accion",
+     "frase": "Hands on the wheel and off we go.",
+     "accion": "Hold an imaginary steering wheel and turn it left and right together."
+    },
+    {
+     "palabra": "fast",
+     "lamina": "pal_fast",
+     "tipo": "cualidad",
+     "frase": "Zooming along with the speed lines behind.",
+     "accion": "Race the toy car across the floor as quickly as you both can."
+    }
+   ]
+  },
+  {
+   "id": "en-seq-dog",
+   "tema": "Animals · The dog",
+   "fases": [
+    {
+     "palabra": "dog",
+     "lamina": "pal_dog",
+     "tipo": "concepto",
+     "frase": "It lives with us and goes woof.",
+     "accion": "Walk a stuffed dog across the table towards your child."
+    },
+    {
+     "palabra": "tail",
+     "lamina": "pal_tail",
+     "tipo": "parte",
+     "frase": "This is the part that wags when it is happy.",
+     "accion": "Wag a hand behind you like a tail while your child copies."
+    },
+    {
+     "palabra": "run",
+     "lamina": "pal_run",
+     "tipo": "accion",
+     "frase": "Four legs going as fast as they can.",
+     "accion": "Run on the spot together for five seconds."
+    },
+    {
+     "palabra": "soft",
+     "lamina": "pal_soft",
+     "tipo": "cualidad",
+     "frase": "That is how the fur feels under your hand.",
+     "accion": "Stroke the stuffed dog and then your child’s cheek with the same gentle touch."
+    }
+   ]
+  },
+  {
+   "id": "en-seq-cow",
+   "tema": "Animals · The cow",
+   "fases": [
+    {
+     "palabra": "cow",
+     "lamina": "pal_pal_cow",
+     "tipo": "concepto",
+     "frase": "This is the cow.",
+     "accion": "Trace imaginary spots on your arm and make a soft moo together."
+    },
+    {
+     "palabra": "tail",
+     "lamina": "pal_tail",
+     "tipo": "parte",
+     "frase": "The cow swishes its long tail.",
+     "accion": "Swish one arm back and forth behind you like a happy tail."
+    },
+    {
+     "palabra": "eat",
+     "lamina": "pal_eat",
+     "tipo": "accion",
+     "frase": "The cow munches sweet green grass.",
+     "accion": "Munch with your mouth open and closed like a chewing cow."
+    },
+    {
+     "palabra": "big",
+     "lamina": "pal_big",
+     "tipo": "cualidad",
+     "frase": "The cow is very big and strong.",
+     "accion": "Spread both arms out wide to show how huge the cow is."
+    }
+   ]
+  },
+  {
+   "id": "en-seq-cat",
+   "tema": "Animals · The cat",
+   "fases": [
+    {
+     "palabra": "cat",
+     "lamina": "pal_cat",
+     "tipo": "concepto",
+     "frase": "This is the little cat.",
+     "accion": "Stroke an imaginary kitten gently on your lap."
+    },
+    {
+     "palabra": "whiskers",
+     "lamina": "pal_whiskers",
+     "tipo": "parte",
+     "frase": "The cat has tickly whiskers on its face.",
+     "accion": "Draw three little whisker lines on your cheeks with your fingers."
+    },
+    {
+     "palabra": "climb",
+     "lamina": "pal_climb",
+     "tipo": "accion",
+     "frase": "The cat climbs up the tall tree.",
+     "accion": "Climb with hand-over-hand motions reaching up high."
+    },
+    {
+     "palabra": "soft",
+     "lamina": "pal_soft",
+     "tipo": "cualidad",
+     "frase": "The cat has very soft fur.",
+     "accion": "Gently stroke your cheek with the back of your hand."
+    }
+   ]
+  },
+  {
+   "id": "en-seq-rain",
+   "tema": "Nature · The rain",
+   "fases": [
+    {
+     "palabra": "rain",
+     "lamina": "pal_rain",
+     "tipo": "concepto",
+     "frase": "Look at the sky, here comes the rain.",
+     "accion": "Wiggle your fingers moving down from the sky like falling raindrops."
+    },
+    {
+     "palabra": "drop",
+     "lamina": "pal_drop",
+     "tipo": "parte",
+     "frase": "A tiny drop of water falls on your nose.",
+     "accion": "Gently tap the tip of your child’s nose with one finger."
+    },
+    {
+     "palabra": "fall",
+     "lamina": "pal_fall",
+     "tipo": "accion",
+     "frase": "The raindrops fall all over the grass.",
+     "accion": "Tap your fingers rhythmically on the table, faster and faster."
+    },
+    {
+     "palabra": "wet",
+     "lamina": "pal_wet",
+     "tipo": "cualidad",
+     "frase": "Everything outside is cool and wet.",
+     "accion": "Shake your hands dry as if you just splashed in a puddle."
+    }
+   ]
+  },
+  {
+   "id": "en-seq-train",
+   "tema": "Transportation · The train",
+   "fases": [
+    {
+     "palabra": "train",
+     "lamina": "pal_pal_train",
+     "tipo": "concepto",
+     "frase": "Here comes the chugga chugga train.",
+     "accion": "Pump your bent arms in circles like train wheels."
+    },
+    {
+     "palabra": "track",
+     "lamina": "pal_track",
+     "tipo": "parte",
+     "frase": "The train rolls along the metal track.",
+     "accion": "Draw two parallel lines with both index fingers on the floor."
+    },
+    {
+     "palabra": "go",
+     "lamina": "pal_go",
+     "tipo": "accion",
+     "frase": "The train starts to go down the line.",
+     "accion": "Choo-choo march around the room together."
+    },
+    {
+     "palabra": "long",
+     "lamina": "pal_long",
+     "tipo": "cualidad",
+     "frase": "The train has so many cars, it is very long.",
+     "accion": "Open both arms as wide as possible from side to side."
+    }
+   ]
+  },
+  {
+   "id": "en-seq-bird",
+   "tema": "Animals · The bird",
+   "fases": [
+    {
+     "palabra": "bird",
+     "lamina": "pal_bird",
+     "tipo": "concepto",
+     "frase": "Look at the colorful little bird.",
+     "accion": "Link your thumbs and flap your hands like bird wings."
+    },
+    {
+     "palabra": "wing",
+     "lamina": "pal_wing",
+     "tipo": "parte",
+     "frase": "The bird opens its feather wing.",
+     "accion": "Flap your elbows up and down like little wings."
+    },
+    {
+     "palabra": "fly",
+     "lamina": "pal_fly",
+     "tipo": "accion",
+     "frase": "The bird takes off and starts to fly.",
+     "accion": "Soar with outstretched arms across the living room."
+    },
+    {
+     "palabra": "high",
+     "lamina": "pal_high",
+     "tipo": "cualidad",
+     "frase": "The bird flies way up in the high sky.",
+     "accion": "Stand on your tiptoes reaching both hands toward the ceiling."
+    }
+   ]
+  },
+  {
+   "id": "en-seq-bread",
+   "tema": "Food · Breakfast",
+   "fases": [
+    {
+     "palabra": "bread",
+     "lamina": "pal_bread",
+     "tipo": "concepto",
+     "frase": "Yummy toast for breakfast!",
+     "accion": "Pretend to butter a slice of toast in the palm of your hand."
+    },
+    {
+     "palabra": "crust",
+     "lamina": "pal_crust",
+     "tipo": "parte",
+     "frase": "The outside edge is the crunchy crust.",
+     "accion": "Tap your knuckles together making a crunchy sound."
+    },
+    {
+     "palabra": "bite",
+     "lamina": "pal_bite",
+     "tipo": "accion",
+     "frase": "Open wide and take a big bite.",
+     "accion": "Chomp your hands together like a giant bite."
+    },
+    {
+     "palabra": "warm",
+     "lamina": "pal_warm",
+     "tipo": "cualidad",
+     "frase": "Fresh from the toaster, it feels warm.",
+     "accion": "Blow warm breath onto your cupped hands."
+    }
+   ]
+  },
+  {
+   "id": "en-seq-balloon",
+   "tema": "Play · The balloon",
+   "fases": [
+    {
+     "palabra": "balloon",
+     "lamina": "pal_balloon",
+     "tipo": "concepto",
+     "frase": "Look at the red party balloon.",
+     "accion": "Pretend to hold a floating string in your hand."
+    },
+    {
+     "palabra": "string",
+     "lamina": "pal_string",
+     "tipo": "parte",
+     "frase": "Hold tight to the long string.",
+     "accion": "Pinch two fingers tight and pull down gently."
+    },
+    {
+     "palabra": "pop",
+     "lamina": "pal_pop",
+     "tipo": "accion",
+     "frase": "When it pokes a pin, it goes pop!",
+     "accion": "Clap hands together loudly on the word pop!"
+    },
+    {
+     "palabra": "round",
+     "lamina": "pal_round",
+     "tipo": "cualidad",
+     "frase": "Full of air, the balloon is so round.",
+     "accion": "Draw a big circular ball in the air with both hands."
+    }
+   ]
+  }
+ ],
+ "capsulas": [
+  {
+   "id": "en-cap-big-small",
+   "tipo": "adjetivos",
+   "montaxe": "Get two teddy bears that look the same but are clearly different sizes: one clearly BIG and one clearly SMALL. Put both teddy bears in front of your child.",
+   "voltas": [
+    {
+     "palabra": "big",
+     "lamina": "pal_big",
+     "frase": "Which teddy is the BIG one? Hand it to me and tell me!",
+     "accion": "Your child hands you the big teddy; hug it wide and puff your cheeks to show how huge it is."
+    },
+    {
+     "palabra": "small",
+     "lamina": "pal_small",
+     "frase": "Now the other way round: which teddy is the SMALL one?",
+     "accion": "Your child hands you the small teddy; hide it in one hand and whisper the word in a tiny voice."
+    }
+   ]
+  },
+  {
+   "id": "en-cap-dirty-clean",
+   "tipo": "adjetivos",
+   "montaxe": "Take two identical spoons: wash one until it shines and smear the other spoon with a little food. Put them side by side.",
+   "voltas": [
+    {
+     "palabra": "dirty",
+     "lamina": "pal_dirty",
+     "frase": "Point to the spoon with food all over it. How is this one?",
+     "accion": "Your child points at it and you both pull a yuck face and push it away."
+    },
+    {
+     "palabra": "clean",
+     "lamina": "pal_clean",
+     "frase": "And this other spoon, how is it? Look how it shines!",
+     "accion": "Point at the shiny one, blow on it like you are polishing it, and high five."
+    }
+   ]
+  },
+  {
+   "id": "en-cap-open-close",
+   "tipo": "verbos",
+   "montaxe": "Put a box with a lid in front of your child and place their favourite toy inside where they can see it. Close the box lid.",
+   "voltas": [
+    {
+     "palabra": "open",
+     "lamina": "pal_open",
+     "frase": "The toy is stuck inside. What do we do to the box?",
+     "accion": "Lift the lid together the moment your child says it, and cheer."
+    },
+    {
+     "palabra": "close",
+     "lamina": "pal_close",
+     "frase": "Now the toy goes back to sleep in the box. What do we do to the lid?",
+     "accion": "Push the lid down together and pat it twice."
+    }
+   ]
+  },
+  {
+   "id": "en-cap-up-down",
+   "tipo": "verbos",
+   "montaxe": "Make a ramp by leaning a large hardcover book on a cushion and place a toy car at the bottom.",
+   "voltas": [
+    {
+     "palabra": "up",
+     "lamina": "pal_up",
+     "frase": "The car goes up the steep hill! What does it do?",
+     "accion": "Push the toy car slowly up the book ramp together."
+    },
+    {
+     "palabra": "down",
+     "lamina": "pal_down",
+     "frase": "Now let go! The car zooms down the ramp!",
+     "accion": "Let the car roll down fast and shout whee!"
+    }
+   ]
+  },
+  {
+   "id": "en-cap-cold-hot",
+   "tipo": "adjetivos",
+   "montaxe": "Fill one cup with cold water and another cup with warm water. Put both cups where your child can touch them.",
+   "voltas": [
+    {
+     "palabra": "cold",
+     "lamina": "pal_cold",
+     "frase": "Touch this cup. Brrr, how does it feel?",
+     "accion": "Both of you touch the cup and shiver with your shoulders up."
+    },
+    {
+     "palabra": "hot",
+     "lamina": "pal_hot",
+     "frase": "Now touch the other cup, carefully. How does this one feel?",
+     "accion": "Touch it, pull your hand back quickly and blow on your fingers together."
+    }
+   ]
+  },
+  {
+   "id": "en-cap-on-off",
+   "tipo": "verbos",
+   "montaxe": "Stand next to the light switch with the light turned off, or hold a flashlight.",
+   "voltas": [
+    {
+     "palabra": "on",
+     "lamina": "pal_on",
+     "frase": "It is dark in here. What do we do to the light?",
+     "accion": "Your child flips the switch on and you both cheer."
+    },
+    {
+     "palabra": "off",
+     "lamina": "pal_off",
+     "frase": "Now time for bed. What do we do to the light?",
+     "accion": "Turn the light off and whisper goodnight together."
+    }
+   ]
+  },
+  {
+   "id": "en-cap-full-empty",
+   "tipo": "adjetivos",
+   "montaxe": "Prepare two identical baskets: fill one to the top with toys, and leave the other one completely empty.",
+   "voltas": [
+    {
+     "palabra": "full",
+     "lamina": "pal_full",
+     "frase": "Which basket has toys piled all the way to the top?",
+     "accion": "Lift the heavy basket together and grunt at how full it is."
+    },
+    {
+     "palabra": "empty",
+     "lamina": "pal_empty",
+     "frase": "And look inside this other basket. There is nothing inside!",
+     "accion": "Turn the empty basket upside down over your child’s head like a funny hat."
+    }
+   ]
+  },
+  {
+   "id": "en-cap-in-out",
+   "tipo": "verbos",
+   "montaxe": "Place an open toy bin and three small toys on the floor outside the bin.",
+   "voltas": [
+    {
+     "palabra": "in",
+     "lamina": "pal_in",
+     "frase": "Time to pack away the toys. Where do they go?",
+     "accion": "Drop a toy into the bin on each word and clap."
+    },
+    {
+     "palabra": "out",
+     "lamina": "pal_out",
+     "frase": "Time to play! What do we do with the toys?",
+     "accion": "Dump the toys out gently on the rug."
+    }
+   ]
+  }
+ ],
+ "escenarios": [
+  {
+   "id": "morning",
+   "titulo": "Morning routine",
+   "subtitulo": "Wake up, wash, get dressed and eat breakfast",
+   "items": [
+    {
+     "palabra": "wake up",
+     "lamina": "pal_wake_up",
+     "frase": "First we wake up.",
+     "accion": "Pretend to sleep under a blanket, then stretch with your child when the alarm goes \"ring, ring\"."
+    },
+    {
+     "palabra": "wash",
+     "lamina": "pal_wash",
+     "frase": "Then we wash.",
+     "accion": "Rub your hands together as if you were soaping them."
+    },
+    {
+     "palabra": "dress",
+     "lamina": "pal_dress",
+     "frase": "Next we get dressed.",
+     "accion": "Pull a T-shirt over your child's head and cheer when they pop out."
+    },
+    {
+     "palabra": "breakfast",
+     "lamina": "pal_breakfast",
+     "frase": "Last we eat breakfast.",
+     "accion": "Pretend to drink a glass of milk together with both hands."
+    }
+   ]
+  },
+  {
+   "id": "mealtime",
+   "titulo": "Mealtime",
+   "subtitulo": "Wash, sit, eat and clear the plate",
+   "items": [
+    {
+     "palabra": "wash",
+     "lamina": "pal_wash",
+     "frase": "First we wash our hands.",
+     "accion": "Rub your hands together as if you were soaping them."
+    },
+    {
+     "palabra": "sit",
+     "lamina": "pal_sit",
+     "frase": "Then we sit at the table.",
+     "accion": "Sit down together on two chairs, facing each other."
+    },
+    {
+     "palabra": "eat",
+     "lamina": "pal_eat",
+     "frase": "Next we have our food.",
+     "accion": "Bring an imaginary spoon to your mouths together."
+    },
+    {
+     "palabra": "clear",
+     "lamina": "pal_clear",
+     "frase": "Last we clear the plate.",
+     "accion": "Carry a plate (real or pretend) to the kitchen together."
+    }
+   ]
+  },
+  {
+   "id": "bathtime",
+   "titulo": "Bath time",
+   "subtitulo": "Bath, soap, water and towel",
+   "items": [
+    {
+     "palabra": "bath",
+     "lamina": "pal_bath",
+     "frase": "First we get in the bath.",
+     "accion": "Lift one leg together as if stepping into the bath."
+    },
+    {
+     "palabra": "soap",
+     "lamina": "pal_soap",
+     "frase": "Then we use the soap.",
+     "accion": "Rub your child's arms with a pretend sponge."
+    },
+    {
+     "palabra": "water",
+     "lamina": "pal_water",
+     "frase": "Next we rinse off.",
+     "accion": "Let your fingers fall on your child's head like raindrops."
+    },
+    {
+     "palabra": "towel",
+     "lamina": "pal_towel",
+     "frase": "Last we dry off.",
+     "accion": "Wrap your child in a towel (or in your arms) and dry them."
+    }
+   ]
+  },
+  {
+   "id": "park",
+   "titulo": "At the park",
+   "subtitulo": "Shoes, park, slide and home",
+   "items": [
+    {
+     "palabra": "shoes",
+     "lamina": "pal_shoes",
+     "frase": "First we put on our shoes.",
+     "accion": "Point to your child's shoes and touch them together."
+    },
+    {
+     "palabra": "park",
+     "lamina": "pal_park",
+     "frase": "Then we go out to play.",
+     "accion": "Walk a few steps together across the room \"to the park\"."
+    },
+    {
+     "palabra": "slide",
+     "lamina": "pal_slide",
+     "frase": "Next we go down the big one.",
+     "accion": "Make a sliding motion together with your arms up."
+    },
+    {
+     "palabra": "home",
+     "lamina": "pal_home",
+     "frase": "Last we go back.",
+     "accion": "Put your hands together over your heads like a roof."
+    }
+   ]
+  },
+  {
+   "id": "bedtime",
+   "titulo": "Bedtime routine",
+   "subtitulo": "Pajamas, teeth, story and sleep",
+   "items": [
+    {
+     "palabra": "pajamas",
+     "lamina": "pal_pajamas",
+     "frase": "First we put on pajamas.",
+     "accion": "Point to your child's pajamas and touch the buttons together."
+    },
+    {
+     "palabra": "teeth",
+     "lamina": "pal_teeth",
+     "frase": "Then we brush our teeth.",
+     "accion": "Make a toothbrushing motion together."
+    },
+    {
+     "palabra": "story",
+     "lamina": "pal_story",
+     "frase": "Next we read a book.",
+     "accion": "Open your hands like a book and turn a page together."
+    },
+    {
+     "palabra": "sleep",
+     "lamina": "pal_sleep",
+     "frase": "Last we close our eyes.",
+     "accion": "Rest your heads on your hands and close your eyes."
+    }
+   ]
+  }
+ ],
+ "categorias": [
+  {
+   "id": "en-cat-fruit",
+   "titulo": "Fruit",
+   "subtitulo": "From the everyday ones to the special treats",
+   "items": [
+    {
+     "palabra": "apple",
+     "lamina": "pal_apple",
+     "frase": "Red, round and crunchy.",
+     "accion": "Take a big crunchy pretend bite together."
+    },
+    {
+     "palabra": "banana",
+     "lamina": "pal_pal_banana",
+     "frase": "Yellow and curved, and you peel it first.",
+     "accion": "Peel an imaginary one from the top down, together."
+    },
+    {
+     "palabra": "orange",
+     "lamina": "pal_orange",
+     "frase": "Round, and it comes apart in little pieces.",
+     "accion": "Pull apart an imaginary one and share the pieces."
+    },
+    {
+     "palabra": "grapes",
+     "lamina": "pal_grapes",
+     "frase": "Little purple balls that grow in a bunch.",
+     "accion": "Pick them off an imaginary bunch one by one and pop them in your mouths."
+    },
+    {
+     "palabra": "mango",
+     "lamina": "pal_mango",
+     "frase": "Sweet, juicy and it drips down your chin.",
+     "accion": "Eat an imaginary slice and wipe the juice off your chins."
+    }
+   ]
+  },
+  {
+   "id": "en-cat-animals",
+   "titulo": "Animals",
+   "subtitulo": "From the ones at home to the ones at the zoo",
+   "items": [
+    {
+     "palabra": "dog",
+     "lamina": "pal_dog",
+     "frase": "It wags its tail and goes woof.",
+     "accion": "Get on all fours and bark at each other twice."
+    },
+    {
+     "palabra": "cat",
+     "lamina": "pal_cat",
+     "frase": "Soft, with whiskers, and it goes meow.",
+     "accion": "Stroke each other’s arm like petting fur and purr together."
+    },
+    {
+     "palabra": "bird",
+     "lamina": "pal_bird",
+     "frase": "It has feathers and flies away.",
+     "accion": "Flap your arms like wings and fly across the room together."
+    },
+    {
+     "palabra": "horse",
+     "lamina": "pal_pal_horse",
+     "frase": "Big, with a long mane, and you can ride it.",
+     "accion": "Gallop around the room slapping your thighs for hooves."
+    },
+    {
+     "palabra": "zebra",
+     "lamina": "pal_zebra",
+     "frase": "Black and white stripes all over.",
+     "accion": "Draw stripes down each other’s arms with a finger."
+    }
+   ]
+  },
+  {
+   "id": "en-cat-clothes",
+   "titulo": "Clothes",
+   "subtitulo": "What we put on to go outside",
+   "items": [
+    {
+     "palabra": "shoe",
+     "lamina": "pal_shoe",
+     "frase": "It goes on your foot before we go out.",
+     "accion": "Put one on together and pull the strap tight."
+    },
+    {
+     "palabra": "hat",
+     "lamina": "pal_hat",
+     "frase": "It goes right on top of your head.",
+     "accion": "Pop it on each other’s head and pull the brim down."
+    },
+    {
+     "palabra": "sock",
+     "lamina": "pal_sock",
+     "frase": "It goes on before the shoe.",
+     "accion": "Pull one onto your child’s foot while they say it, then swap."
+    },
+    {
+     "palabra": "jacket",
+     "lamina": "pal_jacket",
+     "frase": "We zip it up when it gets cold.",
+     "accion": "Zip an imaginary one all the way up to the chin, both of you."
+    },
+    {
+     "palabra": "scarf",
+     "lamina": "pal_scarf",
+     "frase": "It wraps around and around your neck.",
+     "accion": "Wind it around each other’s neck twice and tuck the ends in."
+    }
+   ]
+  },
+  {
+   "id": "en-cat-colors",
+   "titulo": "Colors",
+   "subtitulo": "From the first ones children name to the trickier ones",
+   "items": [
+    {
+     "palabra": "red",
+     "lamina": "pal_red",
+     "frase": "The color of a fire truck.",
+     "accion": "Race to touch something of that color in the room before your child does."
+    },
+    {
+     "palabra": "blue",
+     "lamina": "pal_blue",
+     "frase": "The color of the sky on a clear day.",
+     "accion": "Point up at the sky together, then find something the same color indoors."
+    },
+    {
+     "palabra": "green",
+     "lamina": "pal_green",
+     "frase": "The color of grass and leaves.",
+     "accion": "Wiggle your fingers like grass growing and find something that color."
+    },
+    {
+     "palabra": "yellow",
+     "lamina": "pal_yellow",
+     "frase": "The color of the sun and a banana.",
+     "accion": "Make a big sun shape with your arms over your heads together."
+    },
+    {
+     "palabra": "purple",
+     "lamina": "pal_purple",
+     "frase": "The color of grapes and eggplants.",
+     "accion": "Hunt around the room for that color and clap when one of you finds it."
+    }
+   ]
+  },
+  {
+   "id": "en-cat-body",
+   "titulo": "The body",
+   "subtitulo": "The parts children point to first",
+   "items": [
+    {
+     "palabra": "hand",
+     "lamina": "pal_hand",
+     "frase": "Five fingers, and we wave with it.",
+     "accion": "Press your palms together and count the fingers out loud."
+    },
+    {
+     "palabra": "nose",
+     "lamina": "pal_nose",
+     "frase": "Right in the middle of your face, for smelling.",
+     "accion": "Boop each other’s nose and make a beeping sound."
+    },
+    {
+     "palabra": "foot",
+     "lamina": "pal_foot",
+     "frase": "It goes inside the shoe.",
+     "accion": "Stand sole to sole and compare whose is bigger."
+    },
+    {
+     "palabra": "tummy",
+     "lamina": "pal_tummy",
+     "frase": "It rumbles when you are hungry.",
+     "accion": "Rub your bellies in circles and make a rumbling noise together."
+    },
+    {
+     "palabra": "shoulder",
+     "lamina": "pal_shoulder",
+     "frase": "It is where your arm joins the rest of you.",
+     "accion": "Shrug them up to your ears and drop them down, three times each."
+    }
+   ]
+  }
+ ]
+}

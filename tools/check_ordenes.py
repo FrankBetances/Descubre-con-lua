@@ -25,6 +25,11 @@ def main() -> int:
         return 1
     fallos, orden, estado, n, bloque = [], None, None, 0, False
     fuentes: dict[str, str | None] = {}
+    # F-20261119-8: un criterio no puede encoger la orden (piloto, prueba,
+    # una sola edad o unidad) si las palabras de Frank no lo dicen.
+    citas: dict[str, str] = {}
+    RECORTE = re.compile(r"\bpiloto\b|\buna sola edad\b|\bsolo (?:en )?(?:4-5|una unidad|un mes)\b|"
+                         r"\bprimero (?:4-5|una edad)\b|\bde prueba\b", re.I)
     for linea in ORDENES.read_text(encoding="utf-8").splitlines():
         # El ejemplo de formato, entre ```, no es una orden.
         if linea.startswith("```"):
@@ -35,7 +40,11 @@ def main() -> int:
         if linea.startswith("## O-"):
             orden, estado = linea[3:].split(" · ")[0], None
             fuentes[orden] = None
+            citas[orden] = ""
             n += 1
+            continue
+        if orden and linea.startswith(">"):
+            citas[orden] += " " + linea
             continue
         if orden and linea.startswith("Fuente:"):
             fuentes[orden] = linea.split(":", 1)[1].strip()
@@ -48,6 +57,9 @@ def main() -> int:
         m = re.match(r"- \[([ x])\] (.+?) · evidencia:(.*)$", linea)
         if not (orden and m):
             continue
+        for r in RECORTE.finditer(m.group(2)):
+            if r.group(0).lower() not in citas.get(orden, "").lower():
+                fallos.append(f"{orden}: el criterio dice «{r.group(0)}», que Frank no pidió (F-20261119-8: recortar es preguntar)")
         hecho, criterio, ev = m.group(1) == "x", m.group(2), m.group(3).strip()
         if estado == "cumplida" and not hecho:
             fallos.append(f"{orden}: cumplida con un criterio sin marcar: {criterio}")
