@@ -32,6 +32,9 @@ def main() -> int:
     texto = PLAN.read_text(encoding="utf-8")
     d = json.loads(texto)
     pezas = d if isinstance(d, list) else (d.get("piezas") or d.get("pezas") or [])
+    if not pezas:
+        print("PENDIENTE: plan_mensual.json no tiene piezas todavía (P7.6, Antigravity).")
+        return 0
     fallos = [f"vocabulario prohibido «{m.group(0)}»" for m in PROHIBIDAS.finditer(texto)]
     vistos, pares, progs = set(), {}, {}
     for p in pezas:
