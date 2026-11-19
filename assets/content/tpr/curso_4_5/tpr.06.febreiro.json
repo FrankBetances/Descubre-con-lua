@@ -354,7 +354,8 @@
             "gl": "Mover a variña e dicir «abracadabra»",
             "es": "Mover la varita y decir «abracadabra»"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_cast_a_spell"
         },
         {
           "id": "4_5.febreiro.s2.move-like-a-robot",
@@ -376,7 +377,8 @@
             "gl": "Mirar arredor cun catalexo",
             "es": "Mirar alrededor con un catalejo"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_search_for_treasure"
         },
         {
           "id": "4_5.febreiro.s2.fly-to-the-rescue",
@@ -557,7 +559,8 @@
             "gl": "Mover unha ficha",
             "es": "Mover una ficha"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_board_game"
         },
         {
           "id": "4_5.febreiro.s3.counter",
@@ -568,7 +571,8 @@
             "gl": "Mover a ficha dúas casas",
             "es": "Mover la ficha dos casillas"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_counter"
         },
         {
           "id": "4_5.febreiro.s3.play-fair",
@@ -848,7 +852,8 @@
             "gl": "Asomar a man de súpeto",
             "es": "Asomar la mano de golpe"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_pop_out_from_behind"
         },
         {
           "id": "4_5.febreiro.s4.bow-to-the-audience",
@@ -939,7 +944,8 @@
             "gl": "Sinalar detrás",
             "es": "Señalar detrás"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_look_behind_you"
         },
         {
           "id": "4_5.febreiro.s4.first-he-whispers-then-he-shouts",

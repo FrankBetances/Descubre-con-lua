@@ -128,7 +128,8 @@
             "gl": "Sinalar o nariz do bebé",
             "es": "Señalar la nariz del bebé"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_point_to"
         },
         {
           "id": "0_2.outubro.s1.tap-lightly",
@@ -780,7 +781,8 @@
             "gl": "Menear o dedo gordo do pé",
             "es": "Mover el dedo gordo del pie"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_big_toe"
         },
         {
           "id": "0_2.outubro.s4.little-finger",

@@ -543,7 +543,8 @@
             "gl": "Sinalar o lavabo",
             "es": "Señalar el lavabo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_washbasin"
         },
         {
           "id": "0_2.maio.s3.tissue",
@@ -874,7 +875,8 @@
             "gl": "Mover a cabeza seguindo a burbulla",
             "es": "Mover la cabeza siguiendo la burbuja"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_follow_with_eyes"
         },
         {
           "id": "0_2.maio.s4.see-through",
@@ -885,7 +887,8 @@
             "gl": "Mirar a través dunha burbulla",
             "es": "Mirar a través de una burbuja"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_see_through"
         },
         {
           "id": "0_2.maio.s4.floating",
@@ -919,7 +922,8 @@
             "gl": "Sinalar as cores da burbulla",
             "es": "Señalar los colores de la burbuja"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_rainbow_bubble"
         },
         {
           "id": "0_2.maio.s4.pop-pop-pop",
@@ -942,7 +946,8 @@
             "gl": "Sinalar as burbullas arriba",
             "es": "Señalar las burbujas arriba"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_up_in_the_air"
         },
         {
           "id": "0_2.maio.s4.so-many-bubbles",

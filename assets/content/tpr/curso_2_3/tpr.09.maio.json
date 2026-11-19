@@ -66,7 +66,8 @@
             "gl": "Mirarse no espello",
             "es": "Mirarse en el espejo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_mirror_check"
         },
         {
           "id": "2_3.maio.s1.toothpaste",
@@ -308,7 +309,8 @@
             "gl": "Sinalar os dentes de diante",
             "es": "Señalar los dientes de delante"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_front_teeth"
         },
         {
           "id": "2_3.maio.s2.sink-plug",
@@ -413,7 +415,8 @@
             "gl": "Sinalar a escuma",
             "es": "Señalar la espuma"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_foamy_mouth"
         },
         {
           "id": "2_3.maio.s2.fresh-breath",
@@ -447,7 +450,8 @@
             "gl": "Mover o cepillo no aire",
             "es": "Mover el cepillo en el aire"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_brush_brush_brush"
         },
         {
           "id": "2_3.maio.s2.show-me-your-teeth",
@@ -470,7 +474,8 @@
             "gl": "Sinalar os dentes de arriba e abaixo",
             "es": "Señalar los dientes de arriba y abajo"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_top_and_bottom"
         },
         {
           "id": "2_3.maio.s2.spit-in-the-sink",
@@ -619,7 +624,8 @@
             "gl": "Botar un obxecto e mirar",
             "es": "Echar un objeto y mirar"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_float_or_sink"
         },
         {
           "id": "2_3.maio.s3.wring-out",

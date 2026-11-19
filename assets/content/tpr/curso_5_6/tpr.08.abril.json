@@ -421,7 +421,8 @@
             "gl": "Mover as mans de cores",
             "es": "Mover las manos de colores"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_colourful_reef"
         },
         {
           "id": "5_6.abril.s2.delicate-seagrass",
@@ -432,7 +433,8 @@
             "gl": "Mover as mans suave",
             "es": "Mover las manos suave"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_delicate_seagrass"
         },
         {
           "id": "5_6.abril.s2.what-lives-in-the-seagrass",
@@ -756,7 +758,8 @@
             "gl": "Mover as mans pegadas ao corpo",
             "es": "Mover las manos pegadas al cuerpo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_flipper"
         },
         {
           "id": "5_6.abril.s4.tail-fin",
@@ -789,7 +792,8 @@
             "gl": "Mirar cos prismáticos",
             "es": "Mirar con los prismáticos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_dolphin_watching"
         },
         {
           "id": "5_6.abril.s4.calf",
@@ -859,7 +863,8 @@
             "gl": "Mirar coa man na fronte",
             "es": "Mirar con la mano en la frente"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_watch_quietly"
         },
         {
           "id": "5_6.abril.s4.intelligent",
@@ -915,7 +920,8 @@
             "gl": "Sinalar o mar",
             "es": "Señalar el mar"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_look_dolphins"
         },
         {
           "id": "5_6.abril.s4.dolphins-breathe-air-through-a-blowhole",

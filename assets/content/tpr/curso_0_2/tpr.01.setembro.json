@@ -233,7 +233,8 @@
             "gl": "Sinalar a mamá e despois o bebé",
             "es": "Señalar a mamá y luego al bebé"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_mummy_and_me"
         },
         {
           "id": "0_2.setembro.s1.in-my-arms",
@@ -277,7 +278,8 @@
             "gl": "Sinalar á persoa que coida",
             "es": "Señalar a la persona que cuida"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_nanny"
         },
         {
           "id": "0_2.setembro.s2.brother",
@@ -300,7 +302,8 @@
             "gl": "Sinalar á irmá e sorrir",
             "es": "Señalar a la hermana y sonreír"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_sister"
         },
         {
           "id": "0_2.setembro.s2.aunt",
@@ -323,7 +326,8 @@
             "gl": "Sinalar a foto do tío",
             "es": "Señalar la foto del tío"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_uncle"
         },
         {
           "id": "0_2.setembro.s2.photo-album",
@@ -721,7 +725,8 @@
             "gl": "Poñerse á altura dos ollos do bebé",
             "es": "Ponerse a la altura de los ojos del bebé"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_eye_to_eye"
         }
       ]
     },

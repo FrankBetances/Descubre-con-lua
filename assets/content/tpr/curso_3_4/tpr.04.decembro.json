@@ -408,7 +408,8 @@
           "tprAction": {
             "gl": "Sinalar algo dourado ou amarelo brillante",
             "es": "Señalar algo dorado o amarillo brillante"
-          }
+          },
+          "lamina": "pal_golden"
         },
         {
           "id": "3_4.decembro.s2.silver",
@@ -419,7 +420,8 @@
           "tprAction": {
             "gl": "Sinalar algo prateado que reluza",
             "es": "Señalar algo plateado que reluzca"
-          }
+          },
+          "lamina": "pal_silver"
         },
         {
           "id": "3_4.decembro.s2.beautiful",
@@ -614,7 +616,8 @@
           "tprAction": {
             "gl": "Facer «rrr» moi suave cos ollos pechados",
             "es": "Hacer «rrr» muy suave con los ojos cerrados"
-          }
+          },
+          "lamina": "pal_snore"
         },
         {
           "id": "3_4.decembro.s3.wake-up",

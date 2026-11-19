@@ -169,7 +169,8 @@
             "gl": "Mover as mans en ondas pequenas",
             "es": "Mover las manos en olas pequeñas"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_choppy"
         },
         {
           "id": "2_3.xuno.s1.calm-sea",
@@ -237,7 +238,8 @@
             "gl": "Mover as mans coma barcos",
             "es": "Mover las manos como barcos"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_boats_on_the_water"
         }
       ]
     },
@@ -446,7 +448,8 @@
             "gl": "Sinalar o flan",
             "es": "Señalar el flan"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_look_a_sand_pie"
         },
         {
           "id": "2_3.xuno.s2.sand-in-the-bucket",
@@ -546,7 +549,8 @@
             "gl": "Mirar dentro da poza",
             "es": "Mirar dentro de la charca"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_rock_pool"
         },
         {
           "id": "2_3.xuno.s3.periwinkle",
@@ -626,7 +630,8 @@
             "gl": "Mover o cristal ao sol",
             "es": "Mover el cristal al sol"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_glinting"
         },
         {
           "id": "2_3.xuno.s3.ridged",
@@ -694,7 +699,8 @@
             "gl": "Levantar a pedra e mirar",
             "es": "Levantar la piedra y mirar"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_under_the_stone"
         },
         {
           "id": "2_3.xuno.s3.shells-in-the-bag",

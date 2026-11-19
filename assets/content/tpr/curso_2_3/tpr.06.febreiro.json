@@ -384,7 +384,8 @@
             "gl": "Mirar entre as follas",
             "es": "Mirar entre las hojas"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_peer"
         },
         {
           "id": "2_3.febreiro.s2.yawn-wide",
@@ -440,7 +441,8 @@
             "gl": "Mover os dedos coma follas",
             "es": "Mover los dedos como hojas"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_leafy_jungle"
         },
         {
           "id": "2_3.febreiro.s2.who-lives-here",
@@ -656,7 +658,8 @@
             "gl": "Sinalar algo branco",
             "es": "Señalar algo blanco"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_snowy_white"
         },
         {
           "id": "2_3.febreiro.s3.furry-coat",
@@ -912,7 +915,8 @@
             "gl": "Mover o rabo de plumas",
             "es": "Mover la cola de plumas"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_feathery_tail"
         },
         {
           "id": "2_3.febreiro.s4.proud-peacock",

@@ -337,7 +337,8 @@
             "gl": "Remar e mirar lonxe",
             "es": "Remar y mirar lejos"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_sail_across_the_ocean"
         },
         {
           "id": "5_6.xaneiro.s2.defend",

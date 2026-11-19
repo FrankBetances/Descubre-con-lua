@@ -137,7 +137,8 @@
             "gl": "Sinalar co prismático",
             "es": "Señalar con los prismáticos"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_spot_a_bird"
         },
         {
           "id": "4_5.abril.s1.keep-the-path",
@@ -422,7 +423,8 @@
             "gl": "Mover os brazos suave",
             "es": "Mover los brazos suave"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_graceful_flight"
         },
         {
           "id": "4_5.abril.s2.glossy-black",
@@ -444,7 +446,8 @@
             "gl": "Sinalar moi alto",
             "es": "Señalar muy alto"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_look_how_high_it_flies"
         },
         {
           "id": "4_5.abril.s2.the-gull-flies-higher-than-the-cormorant",
@@ -636,7 +639,8 @@
             "gl": "Mover as mans diante dos ollos",
             "es": "Mover las manos delante de los ojos"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_murky"
         },
         {
           "id": "4_5.abril.s3.crystal-clear",
@@ -647,7 +651,8 @@
             "gl": "Mirar a través dos dedos",
             "es": "Mirar a través de los dedos"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_crystal_clear"
         },
         {
           "id": "4_5.abril.s3.deep-blue",
@@ -921,7 +926,8 @@
             "gl": "Botar e sinalar o amarelo",
             "es": "Echar y señalar el amarillo"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_plastic_goes_in_the_yellow_bin"
         },
         {
           "id": "4_5.abril.s4.leave-only-footprints",

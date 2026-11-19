@@ -55,7 +55,8 @@
             "gl": "Tapar os ollos coas mans",
             "es": "Taparse los ojos con las manos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_blindfold"
         },
         {
           "id": "4_5.marzo.s1.spice",
@@ -124,7 +125,8 @@
             "gl": "Mastigar amodo pechando os ollos",
             "es": "Masticar despacio cerrando los ojos"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_savour"
         },
         {
           "id": "4_5.marzo.s1.sprinkle-spice",
@@ -646,7 +648,8 @@
             "gl": "Mover as mans coma follas",
             "es": "Mover las manos como hojas"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_leafy_green"
         },
         {
           "id": "4_5.marzo.s3.homemade",
@@ -826,7 +829,8 @@
             "gl": "Mirar e escoller unha",
             "es": "Mirar y escoger una"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_choose_fruit"
         },
         {
           "id": "4_5.marzo.s4.count-coins",

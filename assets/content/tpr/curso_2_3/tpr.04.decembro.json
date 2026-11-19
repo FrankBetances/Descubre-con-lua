@@ -92,7 +92,8 @@
             "gl": "Sinalar a zona das pozas",
             "es": "Señalar la zona de los charcos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_splash_zone"
         },
         {
           "id": "2_3.decembro.s1.jump-in",
@@ -437,7 +438,8 @@
             "gl": "Mover os dedos cara abaixo",
             "es": "Mover los dedos hacia abajo"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_dripping"
         },
         {
           "id": "2_3.decembro.s2.boom-goes-the-thunder",
@@ -917,7 +919,8 @@
             "gl": "Sinalar a fiestra",
             "es": "Señalar la ventana"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_snowy_outside"
         },
         {
           "id": "2_3.decembro.s4.is-it-warm",

@@ -148,7 +148,8 @@
             "gl": "Mirar pola xanela co dedo",
             "es": "Mirar por la ventanilla con el dedo"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_look_out_of_the_window"
         },
         {
           "id": "2_3.xaneiro.s1.bumpy-ride",
@@ -182,7 +183,8 @@
             "gl": "Sinalar adiante",
             "es": "Señalar adelante"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_next_stop"
         },
         {
           "id": "2_3.xaneiro.s1.rumbly-bus",
@@ -643,7 +645,8 @@
             "gl": "Mirar a un lado e a outro",
             "es": "Mirar a un lado y a otro"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_busy_street"
         },
         {
           "id": "2_3.xaneiro.s3.tall-buildings",
@@ -654,7 +657,8 @@
             "gl": "Mirar cara arriba moi alto",
             "es": "Mirar hacia arriba muy alto"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_tall_buildings"
         },
         {
           "id": "2_3.xaneiro.s3.narrow-street",
@@ -676,7 +680,8 @@
             "gl": "Sinalar preto",
             "es": "Señalar cerca"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_nearby_shop"
         },
         {
           "id": "2_3.xaneiro.s3.look-left-look-right",
@@ -687,7 +692,8 @@
             "gl": "Mirar aos dous lados",
             "es": "Mirar a los dos lados"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_look_left_look_right"
         },
         {
           "id": "2_3.xaneiro.s3.wait-for-green",
@@ -742,7 +748,8 @@
             "gl": "Sinalar os barcos do porto",
             "es": "Señalar los barcos del puerto"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_harbour"
         },
         {
           "id": "2_3.xaneiro.s4.ferry",
@@ -916,7 +923,8 @@
             "gl": "Mover os brazos traballando",
             "es": "Mover los brazos trabajando"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_busy_port"
         },
         {
           "id": "2_3.xaneiro.s4.toot-toot",

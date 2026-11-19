@@ -174,7 +174,8 @@
             "gl": "Sinalar o ceo azul",
             "es": "Señalar el cielo azul"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_sky_blue"
         },
         {
           "id": "0_2.marzo.s1.sunny-yellow",
@@ -909,7 +910,8 @@
             "gl": "Sinalar as pebidas da sandía",
             "es": "Señalar las pepitas de la sandía"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_full_of_pips"
         },
         {
           "id": "0_2.marzo.s4.cold-and-fresh",

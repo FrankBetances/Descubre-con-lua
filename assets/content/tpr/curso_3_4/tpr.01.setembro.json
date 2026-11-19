@@ -127,7 +127,8 @@
           "tprAction": {
             "gl": "Sorrir amplamente mirando ao grupo",
             "es": "Sonreír ampliamente mirando al grupo"
-          }
+          },
+          "lamina": "pal_smile"
         },
         {
           "id": "3_4.setembro.s1.sit",
@@ -349,7 +350,8 @@
           "tprAction": {
             "gl": "Facer anteollos cos dedos e mirar arredor",
             "es": "Hacer gafas con los dedos y mirar alrededor"
-          }
+          },
+          "lamina": "pal_look"
         },
         {
           "id": "3_4.setembro.s2.point",
@@ -360,7 +362,8 @@
           "tprAction": {
             "gl": "Sinalar co dedo algo que está preto",
             "es": "Señalar con el dedo algo que está cerca"
-          }
+          },
+          "lamina": "pal_point"
         },
         {
           "id": "3_4.setembro.s2.give",
@@ -685,7 +688,8 @@
           "tprAction": {
             "gl": "Tapar a cara coas mans e asomar un ollo",
             "es": "Taparse la cara con las manos y asomar un ojo"
-          }
+          },
+          "lamina": "pal_shy"
         },
         {
           "id": "3_4.setembro.s3.what-s-your-name",

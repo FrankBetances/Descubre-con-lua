@@ -337,7 +337,8 @@
             "gl": "Sinalar o radiador quente",
             "es": "Señalar el radiador caliente"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_heater"
         },
         {
           "id": "0_2.decembro.s2.squeeze-tight",
@@ -592,7 +593,8 @@
             "gl": "Premer o interruptor e ver a luz",
             "es": "Pulsar el interruptor y ver la luz"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_switch_on"
         },
         {
           "id": "0_2.decembro.s3.switch-off",
@@ -627,7 +629,8 @@
             "gl": "Mover a lanterna amodo",
             "es": "Mover la linterna despacio"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_follow_the_light"
         },
         {
           "id": "0_2.decembro.s3.sparkle",
@@ -720,7 +723,8 @@
             "gl": "Sinalar as luces ao bebé",
             "es": "Señalar las luces al bebé"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_look_at_the_lights"
         },
         {
           "id": "0_2.decembro.s3.on-and-off",

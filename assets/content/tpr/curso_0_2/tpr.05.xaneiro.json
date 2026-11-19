@@ -360,7 +360,8 @@
             "gl": "Mover a boca coma unha vaca comendo herba",
             "es": "Mover la boca como una vaca comiendo hierba"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_chomp"
         },
         {
           "id": "0_2.xaneiro.s2.cluck",
@@ -371,7 +372,8 @@
             "gl": "Facer «coc coc» movendo os cóbados",
             "es": "Hacer «coc coc» moviendo los codos"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_cluck"
         },
         {
           "id": "0_2.xaneiro.s2.neigh",
@@ -506,7 +508,8 @@
             "gl": "Sinalar o peito vermello",
             "es": "Señalar el pecho rojo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_robin"
         },
         {
           "id": "0_2.xaneiro.s3.pigeon",

@@ -601,6 +601,16 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "back and forth": {
+   "clave": "pal_back_and_forth",
+   "orixe": "nova",
+   "porque": "Cuna balancín meciendo suavemente al bebé adelante y atrás.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#back_and_forth",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "back teeth": {
    "clave": "pal_back_teeth",
    "orixe": "nova",
@@ -809,6 +819,16 @@
    "asset": "tools/gen_laminas_tpr.py#bang_the_drum",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "barefoot": {
+   "clave": "pal_barefoot",
+   "orixe": "nova",
+   "porque": "Pies descalzos sobre la hierba verde moviendo libremente los dedos.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#barefoot",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
    "revisado": true
   },
   "bark": {
@@ -1131,6 +1151,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "belly button": {
+   "clave": "pal_belly_button",
+   "orixe": "nova",
+   "porque": "Camiseta subida dejando visible el ombligo en la barriga señalado.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#belly_button",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "belly slide": {
    "clave": "pal_belly_slide",
    "orixe": "nova",
@@ -1297,6 +1327,16 @@
    "porque": "Niño dando un paso muy largo frente a otro dando pasos cortos.",
    "fuente": "propia",
    "asset": "tools/gen_laminas_tpr.py#big_steps_and_little_steps",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "big toe": {
+   "clave": "pal_big_toe",
+   "orixe": "nova",
+   "porque": "Pie resaltando en rojo el dedo gordo mientras se mueve de lado.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#big_toe",
    "sha": "6be3d38b",
    "licencia": "Propia",
    "revisado": true
@@ -1479,6 +1519,16 @@
    "asset": "tools/gen_laminas_5_6.py#blend",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "blindfold": {
+   "clave": "pal_blindfold",
+   "orixe": "nova",
+   "porque": "Rostro infantil con una venda de tela morada cubriendo los ojos.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#blindfold",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
    "revisado": true
   },
   "blink": {
@@ -1731,6 +1781,16 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "blustery": {
+   "clave": "pal_blustery",
+   "orixe": "nova",
+   "porque": "Viento fuerte doblando la copa del árbol con ráfagas inclinadas.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#blustery",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "boar": {
    "clave": "pal_boar",
    "orixe": "banco",
@@ -1739,6 +1799,16 @@
    "asset": "fluentui-emoji:assets/Boar/Flat",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "board game": {
+   "clave": "pal_board_game",
+   "orixe": "nova",
+   "porque": "Tablero de juego con casillas de colores, peón rojo y dado de puntos.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#board_game",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
    "revisado": true
   },
   "boat": {
@@ -1759,6 +1829,16 @@
    "asset": "tools/gen_laminas_tpr.py#boat_trip",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "boats on the water": {
+   "clave": "pal_boats_on_the_water",
+   "orixe": "nova",
+   "porque": "Dos barquitos de vela balanceándose sobre las olas del agua.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#boats_on_the_water",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
    "revisado": true
   },
   "body": {
@@ -1971,6 +2051,16 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "branch": {
+   "clave": "pal_branch",
+   "orixe": "nova",
+   "porque": "Rama de árbol extendida con brotes de hojas verdes al viento.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#branch",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "brave and kind": {
    "clave": "pal_brave_and_kind",
    "orixe": "composta",
@@ -2019,6 +2109,16 @@
    "asset": "tools/gen_laminas_tpr.py#breeze",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "breezy": {
+   "clave": "pal_breezy",
+   "orixe": "nova",
+   "porque": "Brisa suave haciendo ondear ligeramente una cometa celeste en el cielo.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#breezy",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
    "revisado": true
   },
   "bright": {
@@ -2179,6 +2279,16 @@
    "asset": "tools/gen_laminas_2_3.py#brush_up_and_down",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "brush, brush, brush": {
+   "clave": "pal_brush_brush_brush",
+   "orixe": "nova",
+   "porque": "Cepillo de madera barriendo de un lado a otro con trazos de movimiento.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#brush_brush_brush",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
    "revisado": true
   },
   "bubble machine": {
@@ -2401,6 +2511,26 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "busy port": {
+   "clave": "pal_busy_port",
+   "orixe": "nova",
+   "porque": "Puerto activo con grúa cargando contenedores sobre un barco mercante.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#busy_port",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "busy street": {
+   "clave": "pal_busy_street",
+   "orixe": "nova",
+   "porque": "Calle con tráfico de coches y peatones mirando a ambos lados.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#busy_street",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "butterfly": {
    "clave": "pal_butterfly",
    "orixe": "banco",
@@ -2557,6 +2687,16 @@
    "porque": "Niño con ojos cerrados, hombros caídos y respiración tranquila: calma.",
    "fuente": "propia",
    "asset": "tools/gen_laminas_4_5.py#calm",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "calm jar": {
+   "clave": "pal_calm_jar",
+   "orixe": "nova",
+   "porque": "Frasco transparente de la calma con agua azul y brillos reposando al fondo.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#calm_jar",
    "sha": "6be3d38b",
    "licencia": "Propia",
    "revisado": true
@@ -2852,6 +2992,16 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "cast a spell": {
+   "clave": "pal_cast_a_spell",
+   "orixe": "nova",
+   "porque": "Varita mágica trazando un arco encantado luminoso en el aire.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#cast_a_spell",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "castle": {
    "clave": "pal_castle",
    "orixe": "banco",
@@ -2972,6 +3122,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "centipede": {
+   "clave": "pal_centipede",
+   "orixe": "nova",
+   "porque": "Ciempiés naranja largo con muchos pares de patitas caminando.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#centipede",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "centre": {
    "clave": "pal_centre",
    "orixe": "nova",
@@ -3038,6 +3198,16 @@
    "porque": "Cambiador acolchado con el bebé tumbado y un pañal limpio al lado.",
    "fuente": "propia",
    "asset": "tools/gen_laminas_tpr.py#changing_mat",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "chart": {
+   "clave": "pal_chart",
+   "orixe": "nova",
+   "porque": "Tabla gráfica con barras de colores señalada con el índice.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#chart",
    "sha": "6be3d38b",
    "licencia": "Propia",
    "revisado": true
@@ -3248,6 +3418,36 @@
    "porque": "Cuatro niños en fila cantando al unísono en coro con notas musicales.",
    "fuente": "propia",
    "asset": "tools/gen_laminas_tpr.py#choir",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "chomp": {
+   "clave": "pal_chomp",
+   "orixe": "nova",
+   "porque": "Vaca moteada masticando con apetito un manojo de hierba fresca.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#chomp",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "choose fruit": {
+   "clave": "pal_choose_fruit",
+   "orixe": "nova",
+   "porque": "Frutero variado mientras la mano elige la manzana roja.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#choose_fruit",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "choppy": {
+   "clave": "pal_choppy",
+   "orixe": "nova",
+   "porque": "Mar picado lleno de olas puntiagudas agitando una barquita.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#choppy",
    "sha": "6be3d38b",
    "licencia": "Propia",
    "revisado": true
@@ -3572,6 +3772,16 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "clock": {
+   "clave": "pal_clock",
+   "orixe": "nova",
+   "porque": "Reloj redondo de pared sin números mostrando las agujas girando.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#clock",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "close": {
    "clave": "pal_close",
    "orixe": "composta",
@@ -3658,6 +3868,16 @@
    "porque": "Cara sonriente con nariz roja redonda de payaso.",
    "fuente": "propia",
    "asset": "tools/gen_laminas_0_2.py#clown_nose",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "cluck": {
+   "clave": "pal_cluck",
+   "orixe": "nova",
+   "porque": "Gallina aleteando y cacareando en la granja.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#cluck",
    "sha": "6be3d38b",
    "licencia": "Propia",
    "revisado": true
@@ -3822,6 +4042,16 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "colour hunt": {
+   "clave": "pal_colour_hunt",
+   "orixe": "nova",
+   "porque": "Lupa buscando objetos de color verde por el prado.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#colour_hunt",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "colour wheel": {
    "clave": "pal_colour_wheel",
    "orixe": "nova",
@@ -3848,6 +4078,16 @@
    "porque": "Plato lleno de alimentos coloridos rojo, amarillo y verde.",
    "fuente": "propia",
    "asset": "tools/gen_laminas_2_3.py#colourful_plate",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "colourful reef": {
+   "clave": "pal_colourful_reef",
+   "orixe": "nova",
+   "porque": "Arrecife marino multicolor con corales rosados, naranjas, morados y peces.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#colourful_reef",
    "sha": "6be3d38b",
    "licencia": "Propia",
    "revisado": true
@@ -3948,6 +4188,16 @@
    "porque": "Niño dirigiendo la música moviendo la batuta al compás de las notas.",
    "fuente": "propia",
    "asset": "tools/gen_laminas_tpr.py#conduct",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "conductor": {
+   "clave": "pal_conductor",
+   "orixe": "nova",
+   "porque": "Director de orquesta moviendo la batuta en el aire entre notas musicales.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#conductor",
    "sha": "6be3d38b",
    "licencia": "Propia",
    "revisado": true
@@ -4078,6 +4328,16 @@
    "porque": "Esquina en ángulo recto y niño caminando hasta ella.",
    "fuente": "propia",
    "asset": "tools/gen_laminas_tpr.py#corner",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "corner piece": {
+   "clave": "pal_corner_piece",
+   "orixe": "nova",
+   "porque": "Pieza de puzle con dos bordes rectos y su esquina resaltada señalada.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#corner_piece",
    "sha": "6be3d38b",
    "licencia": "Propia",
    "revisado": true
@@ -4230,6 +4490,16 @@
    "asset": "tools/gen_laminas_5_6.py#countdown_to_midnight",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "counter": {
+   "clave": "pal_counter",
+   "orixe": "nova",
+   "porque": "Ficha redonda roja saltando dos casillas sobre el tablero.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#counter",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
    "revisado": true
   },
   "counting the steps, we measured it": {
@@ -4602,6 +4872,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "crystal-clear": {
+   "clave": "pal_crystal_clear",
+   "orixe": "nova",
+   "porque": "Agua cristalina y transparente que deja ver con nitidez las piedras del fondo.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#crystal_clear",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "cucumber": {
    "clave": "pal_cucumber",
    "orixe": "banco",
@@ -4872,6 +5152,36 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "dark": {
+   "clave": "pal_dark",
+   "orixe": "nova",
+   "porque": "Oscuridad profunda nocturna donde apenas asoman unos ojos en la sombra.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#dark",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "darker": {
+   "clave": "pal_darker",
+   "orixe": "nova",
+   "porque": "Dos hojas verdes comparadas señalando claramente la más oscura.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#darker",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "darkest shade": {
+   "clave": "pal_darkest_shade",
+   "orixe": "nova",
+   "porque": "Tres muestras de azul gradual señalando la tonalidad más oscura.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#darkest_shade",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "dash": {
    "clave": "pal_dash",
    "orixe": "composta",
@@ -4888,6 +5198,16 @@
    "porque": "Escena partida con sol brillante de día a la izquierda y luna con estrellas de noche a la derecha.",
    "fuente": "propia",
    "asset": "tools/gen_laminas_tpr.py#day_and_night",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "dazzling": {
+   "clave": "pal_dazzling",
+   "orixe": "nova",
+   "porque": "Luz deslumbrante del sol frente al niño que se tapa los ojos con la mano.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#dazzling",
    "sha": "6be3d38b",
    "licencia": "Propia",
    "revisado": true
@@ -4938,6 +5258,16 @@
    "porque": "Dos manos sujetando con suma suavidad una frágil pompa transparente.",
    "fuente": "propia",
    "asset": "tools/gen_laminas_tpr.py#delicate",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "delicate seagrass": {
+   "clave": "pal_delicate_seagrass",
+   "orixe": "nova",
+   "porque": "Algas largas y finas de pradera marina ondulando suavemente bajo el agua.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#delicate_seagrass",
    "sha": "6be3d38b",
    "licencia": "Propia",
    "revisado": true
@@ -5072,6 +5402,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "dig tunnels": {
+   "clave": "pal_dig_tunnels",
+   "orixe": "nova",
+   "porque": "Montículo de arena con pala cavando un túnel oscuro por debajo.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#dig_tunnels",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "dimple": {
    "clave": "pal_dimple",
    "orixe": "nova",
@@ -5092,6 +5432,26 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "direct traffic": {
+   "clave": "pal_direct_traffic",
+   "orixe": "nova",
+   "porque": "Niño con chaleco amarillo levantando la mano para dar paso o parar el coche.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#direct_traffic",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "direction": {
+   "clave": "pal_direction",
+   "orixe": "nova",
+   "porque": "Poste indicador de camino con flecha apuntando hacia delante junto al niño.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#direction",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "director": {
    "clave": "pal_director",
    "orixe": "composta",
@@ -5102,6 +5462,26 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "dirty": {
+   "clave": "pal_dirty",
+   "orixe": "nova",
+   "porque": "Dos manos con manchas oscuras de barro mostrando suciedad.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#dirty",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "disco": {
+   "clave": "pal_disco",
+   "orixe": "nova",
+   "porque": "Pista oscura iluminada por bola de espejos con niño bailando señalando arriba y abajo.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#disco",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "discover": {
    "clave": "pal_discover",
    "orixe": "composta",
@@ -5110,6 +5490,16 @@
    "asset": "tools/gen_laminas_tpr.py#discover",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "distant": {
+   "clave": "pal_distant",
+   "orixe": "nova",
+   "porque": "Mano señalando a una cima lejana en el horizonte tras la pradera.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#distant",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
    "revisado": true
   },
   "dive deep and find a white shell": {
@@ -5220,6 +5610,16 @@
    "asset": "tools/gen_laminas_5_6.py#dolphin_pod",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "dolphin watching": {
+   "clave": "pal_dolphin_watching",
+   "orixe": "nova",
+   "porque": "Prismáticos observando un delfín saltar sobre el mar.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#dolphin_watching",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
    "revisado": true
   },
   "dolphins breathe air through a blowhole": {
@@ -5492,6 +5892,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "dripping": {
+   "clave": "pal_dripping",
+   "orixe": "nova",
+   "porque": "Grifo goteando agua gota a gota hacia el charco inferior.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#dripping",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "dripping clothes": {
    "clave": "pal_dripping_clothes",
    "orixe": "nova",
@@ -5542,6 +5952,16 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "drizzly": {
+   "clave": "pal_drizzly",
+   "orixe": "nova",
+   "porque": "Nube gris soltando llovizna fina y menuda.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#drizzly",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "drop": {
    "clave": "pal_drop",
    "orixe": "composta",
@@ -5550,6 +5970,16 @@
    "asset": "tools/gen_laminas_0_2.py#drop",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "drop a stone": {
+   "clave": "pal_drop_a_stone",
+   "orixe": "nova",
+   "porque": "Piedra cayendo verticalmente hacia el agua creando ondas al caer.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#drop_a_stone",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
    "revisado": true
   },
   "droplet": {
@@ -5962,6 +6392,16 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "experiment": {
+   "clave": "pal_experiment",
+   "orixe": "nova",
+   "porque": "Probetas con líquidos de colores burbujeantes examinadas con lupa.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#experiment",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "explore": {
    "clave": "pal_explore",
    "orixe": "composta",
@@ -5972,6 +6412,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "explore new places": {
+   "clave": "pal_explore_new_places",
+   "orixe": "nova",
+   "porque": "Mapa desplegado frente a senderos y montañas por explorar.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#explore_new_places",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "explore the seabed": {
    "clave": "pal_explore_the_seabed",
    "orixe": "composta",
@@ -5980,6 +6430,16 @@
    "asset": "tools/gen_laminas_tpr.py#explore_the_seabed",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "eye to eye": {
+   "clave": "pal_eye_to_eye",
+   "orixe": "nova",
+   "porque": "Adulto a la misma altura mirando frente a frente a los ojos del bebé.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#eye_to_eye",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
    "revisado": true
   },
   "eyebrows": {
@@ -6142,6 +6602,26 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "far": {
+   "clave": "pal_far",
+   "orixe": "nova",
+   "porque": "Niño con el brazo estirado señalando muy lejos al final de un camino largo.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#far",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "faraway": {
+   "clave": "pal_faraway",
+   "orixe": "nova",
+   "porque": "Isla muy lejana en el horizonte del mar señalada con brazo extendido.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#faraway",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "farewell hug": {
    "clave": "pal_farewell_hug",
    "orixe": "nova",
@@ -6170,6 +6650,16 @@
    "asset": "fluentui-emoji:assets/Farmer/Flat",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "fast": {
+   "clave": "pal_fast",
+   "orixe": "nova",
+   "porque": "Niño corriendo muy rápido con largas estelas de velocidad detrás.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#fast",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
    "revisado": true
   },
   "fast and slow": {
@@ -6282,6 +6772,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "feathery tail": {
+   "clave": "pal_feathery_tail",
+   "orixe": "nova",
+   "porque": "Pavo real desplegando su vistosa cola de plumas de colores.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#feathery_tail",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "feel": {
    "clave": "pal_feel",
    "orixe": "nova",
@@ -6322,6 +6822,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "feelings chart": {
+   "clave": "pal_feelings_chart",
+   "orixe": "nova",
+   "porque": "Panel mural con cuatro caras de emociones señalando una de ellas.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#feelings_chart",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "feet": {
    "clave": "pal_feet",
    "orixe": "nova",
@@ -6350,6 +6860,16 @@
    "asset": "tools/gen_laminas_tpr.py#festive",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "fewest": {
+   "clave": "pal_fewest",
+   "orixe": "nova",
+   "porque": "Tres montones de bolas con dedo señalando el grupo que tiene menos (solo una).",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#fewest",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
    "revisado": true
   },
   "fill": {
@@ -6430,6 +6950,16 @@
    "asset": "tools/gen_laminas_2_3.py#find_the_shape",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "find the way": {
+   "clave": "pal_find_the_way",
+   "orixe": "nova",
+   "porque": "Mapa con ruta curva dibujada de inicio a casita señalando cómo llegar.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#find_the_way",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
    "revisado": true
   },
   "finger on lips": {
@@ -6592,6 +7122,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "fish market": {
+   "clave": "pal_fish_market",
+   "orixe": "nova",
+   "porque": "Mostrador de lonja con toldo y cajas azules con pescado fresco señalado.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#fish_market",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "fish swim together in a shoal": {
    "clave": "pal_fish_swim_together_in_a_shoal",
    "orixe": "composta",
@@ -6660,6 +7200,16 @@
    "asset": "tools/gen_laminas_tpr.py#flamingo_pose",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "flap": {
+   "clave": "pal_flap",
+   "orixe": "nova",
+   "porque": "Pajarito batiendo rápido sus dos alas abiertas en el aire.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#flap",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
    "revisado": true
   },
   "flap wings": {
@@ -6732,6 +7282,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "flipper": {
+   "clave": "pal_flipper",
+   "orixe": "nova",
+   "porque": "Delfín con su aleta pectoral destacada en rojo y señalada.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#flipper",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "float": {
    "clave": "pal_float",
    "orixe": "nova",
@@ -6768,6 +7328,16 @@
    "porque": "Niño flotando boca arriba con los ojos cerrados y brazos abiertos en el mar.",
    "fuente": "propia",
    "asset": "tools/gen_laminas_tpr.py#float_on_your_back",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "float or sink": {
+   "clave": "pal_float_or_sink",
+   "orixe": "nova",
+   "porque": "Cubeta de agua con corcho flotando arriba y piedra hundida en el fondo.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#float_or_sink",
    "sha": "6be3d38b",
    "licencia": "Propia",
    "revisado": true
@@ -6818,6 +7388,16 @@
    "porque": "Niño inclinado tocando con las dos palmas el suelo de madera.",
    "fuente": "propia",
    "asset": "tools/gen_laminas_tpr.py#floor",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "flow": {
+   "clave": "pal_flow",
+   "orixe": "nova",
+   "porque": "Corriente continua de agua fluyendo suavemente por el cauce.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#flow",
    "sha": "6be3d38b",
    "licencia": "Propia",
    "revisado": true
@@ -6942,6 +7522,16 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "foamy mouth": {
+   "clave": "pal_foamy_mouth",
+   "orixe": "nova",
+   "porque": "Cara con espuma blanca de pasta o jabón alrededor de la boca señalada.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#foamy_mouth",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "foggy": {
    "clave": "pal_foggy",
    "orixe": "banco",
@@ -6950,6 +7540,16 @@
    "asset": "fluentui-emoji:assets/Foggy/Flat",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "follow the light": {
+   "clave": "pal_follow_the_light",
+   "orixe": "nova",
+   "porque": "Haz de luz de linterna iluminando el camino oscuro a seguir.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#follow_the_light",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
    "revisado": true
   },
   "follow the map": {
@@ -6968,6 +7568,16 @@
    "porque": "Niños caminando ordenados por encima de la línea verde marcada.",
    "fuente": "propia",
    "asset": "tools/gen_laminas_tpr.py#follow_the_rules",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "follow with eyes": {
+   "clave": "pal_follow_with_eyes",
+   "orixe": "nova",
+   "porque": "Ojo mirando y siguiendo la trayectoria de una pompa flotante.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#follow_with_eyes",
    "sha": "6be3d38b",
    "licencia": "Propia",
    "revisado": true
@@ -7132,6 +7742,16 @@
    "licencia": "Apache-2.0",
    "revisado": true
   },
+  "fresh green": {
+   "clave": "pal_fresh_green",
+   "orixe": "nova",
+   "porque": "Brotes nuevos de color verde fresco brillante saliendo de la tierra señalados.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#fresh_green",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "fresh water": {
    "clave": "pal_fresh_water",
    "orixe": "composta",
@@ -7198,6 +7818,16 @@
    "porque": "Dos amigos caminando juntos cogidos de la mano con alegría.",
    "fuente": "propia",
    "asset": "tools/gen_laminas_tpr.py#friendship",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "frilly": {
+   "clave": "pal_frilly",
+   "orixe": "nova",
+   "porque": "Falda rosa con amplio borde de volantes ondulados en el bajo.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#frilly",
    "sha": "6be3d38b",
    "licencia": "Propia",
    "revisado": true
@@ -7272,6 +7902,16 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "front teeth": {
+   "clave": "pal_front_teeth",
+   "orixe": "nova",
+   "porque": "Boca abierta destacando los dientes centrales de delante señalados con el índice.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#front_teeth",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "frost": {
    "clave": "pal_frost",
    "orixe": "composta",
@@ -7308,6 +7948,16 @@
    "porque": "Vaso lleno casi hasta el borde de líquido azul.",
    "fuente": "propia",
    "asset": "tools/gen_laminas_3_4.py#full",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "full of pips": {
+   "clave": "pal_full_of_pips",
+   "orixe": "nova",
+   "porque": "Tajada roja de sandía llena de pepitas negras señaladas con el dedo.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#full_of_pips",
    "sha": "6be3d38b",
    "licencia": "Propia",
    "revisado": true
@@ -7410,6 +8060,16 @@
    "asset": "tools/gen_laminas_0_2.py#garden",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "garden hose": {
+   "clave": "pal_garden_hose",
+   "orixe": "nova",
+   "porque": "Manguera verde enrollada apuntando y regando con chorros de agua las flores.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#garden_hose",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
    "revisado": true
   },
   "gargle": {
@@ -7622,6 +8282,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "glinting": {
+   "clave": "pal_glinting",
+   "orixe": "nova",
+   "porque": "Cristal facetado lanzando destellos vivos al darle la luz del sol.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#glinting",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "glitter": {
    "clave": "pal_glitter",
    "orixe": "composta",
@@ -7742,6 +8412,16 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "goal": {
+   "clave": "pal_goal",
+   "orixe": "nova",
+   "porque": "Bandera de meta lejana al final de la pista señalada por el niño.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#goal",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "goat": {
    "clave": "pal_goat",
    "orixe": "banco",
@@ -7760,6 +8440,16 @@
    "asset": "fluentui-emoji:assets/Goggles/Flat",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "golden": {
+   "clave": "pal_golden",
+   "orixe": "nova",
+   "porque": "Lingote y medalla dorados relucientes señalados para mostrar el color dorado.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#golden",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
    "revisado": true
   },
   "golden brown": {
@@ -7838,6 +8528,16 @@
    "porque": "Mano sujetando un sonajero y agitándolo de lado a lado.",
    "fuente": "propia",
    "asset": "tools/gen_laminas_tpr.py#grab_and_shake",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "graceful flight": {
+   "clave": "pal_graceful_flight",
+   "orixe": "nova",
+   "porque": "Ave blanca planeando en un vuelo elegante y suave por el cielo.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#graceful_flight",
    "sha": "6be3d38b",
    "licencia": "Propia",
    "revisado": true
@@ -7952,6 +8652,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "graze": {
+   "clave": "pal_graze",
+   "orixe": "nova",
+   "porque": "Oveja con la cabeza agachada pastando tranquilamente en el prado.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#graze",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "graze like a gentle sheep": {
    "clave": "pal_graze_like_a_gentle_sheep",
    "orixe": "composta",
@@ -8010,6 +8720,16 @@
    "asset": "tools/gen_laminas_0_2.py#greet",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "grey": {
+   "clave": "pal_grey",
+   "orixe": "nova",
+   "porque": "Objetos de color gris (piedra, cubo y esfera) señalados sobre la mesa.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#grey",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
    "revisado": true
   },
   "gritty": {
@@ -8372,6 +9092,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "harbour": {
+   "clave": "pal_harbour",
+   "orixe": "nova",
+   "porque": "Muelle del puerto con veleros atracados en el agua señalado.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#harbour",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "hard hat": {
    "clave": "pal_hard_hat",
    "orixe": "nova",
@@ -8622,6 +9352,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "hearing": {
+   "clave": "pal_hearing",
+   "orixe": "nova",
+   "porque": "Oreja recibiendo ondas de sonido señalada para representar el sentido del oído.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#hearing",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "heart": {
    "clave": "pal_heart",
    "orixe": "composta",
@@ -8638,6 +9378,16 @@
    "porque": "Manos dibujando con cuidado la forma de un corazón rojo.",
    "fuente": "propia",
    "asset": "tools/gen_laminas_tpr.py#heart_shape",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "heater": {
+   "clave": "pal_heater",
+   "orixe": "nova",
+   "porque": "Radiador blanco emitiendo ondas rojas de calor señalado con la mano.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#heater",
    "sha": "6be3d38b",
    "licencia": "Propia",
    "revisado": true
@@ -8932,6 +9682,16 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "hiding place": {
+   "clave": "pal_hiding_place",
+   "orixe": "nova",
+   "porque": "Escondite entre arbustos donde asoma un conejito señalado con el dedo.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#hiding_place",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "hiding spot": {
    "clave": "pal_hiding_spot",
    "orixe": "composta",
@@ -8958,6 +9718,16 @@
    "porque": "Trona alta infantil con bandeja y bebé sentado en ella.",
    "fuente": "propia",
    "asset": "tools/gen_laminas_tpr.py#high_chair",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "high up": {
+   "clave": "pal_high_up",
+   "orixe": "nova",
+   "porque": "Cometa volando muy alto en el cielo muy por encima del árbol señalada hacia arriba.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#high_up",
    "sha": "6be3d38b",
    "licencia": "Propia",
    "revisado": true
@@ -9000,6 +9770,16 @@
    "asset": "fluentui-emoji:assets/Hippopotamus/Flat",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "hips": {
+   "clave": "pal_hips",
+   "orixe": "nova",
+   "porque": "Niño resaltando la cintura y caderas moviéndolas de un lado a otro.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#hips",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
    "revisado": true
   },
   "hojas que caen": {
@@ -10142,6 +10922,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "in the tree": {
+   "clave": "pal_in_the_tree",
+   "orixe": "nova",
+   "porque": "Nido y pajarito posados en lo alto de la copa del árbol señalados.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#in_the_tree",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "inside is warm": {
    "clave": "pal_inside_is_warm",
    "orixe": "composta",
@@ -10380,6 +11170,16 @@
    "asset": "tools/gen_laminas_tpr.py#it_s_hot",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "it's raining": {
+   "clave": "pal_it_s_raining",
+   "orixe": "nova",
+   "porque": "Nube oscura dejando caer lluvia abundante sobre un charco en el suelo.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#it_s_raining",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
    "revisado": true
   },
   "it's the books that make it heavy": {
@@ -10712,6 +11512,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "kick leaves": {
+   "clave": "pal_kick_leaves",
+   "orixe": "nova",
+   "porque": "Niño pateando hojas secas de otoño que salen volando por el aire.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#kick_leaves",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "kick legs": {
    "clave": "pal_kick_legs",
    "orixe": "nova",
@@ -10952,6 +11762,16 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "landmark": {
+   "clave": "pal_landmark",
+   "orixe": "nova",
+   "porque": "Torre faro alta y reconocible en el paisaje señalada como punto de referencia.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#landmark",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "lantern": {
    "clave": "pal_lantern",
    "orixe": "banco",
@@ -11072,6 +11892,16 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "leader": {
+   "clave": "pal_leader",
+   "orixe": "nova",
+   "porque": "Niño con bandera al frente guiando la fila mientras los demás lo siguen.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#leader",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "leaf": {
    "clave": "pal_leaf",
    "orixe": "banco",
@@ -11080,6 +11910,16 @@
    "asset": "fluentui-emoji:assets/Maple leaf/Flat",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "leaf litter": {
+   "clave": "pal_leaf_litter",
+   "orixe": "nova",
+   "porque": "Alfombra espesa de hojas secas caídas cubriendo el suelo del bosque.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#leaf_litter",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
    "revisado": true
   },
   "leaf pile": {
@@ -11098,6 +11938,36 @@
    "porque": "Hoja debajo de un papel calco sobre la mesa mientras una cera la frota mostrando sus nervios.",
    "fuente": "propia",
    "asset": "tools/gen_laminas_tpr.py#leaf_rubbing",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "leafy": {
+   "clave": "pal_leafy",
+   "orixe": "nova",
+   "porque": "Árbol muy frondoso con la copa cargada de capas de hojas verdes.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#leafy",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "leafy green": {
+   "clave": "pal_leafy_green",
+   "orixe": "banco",
+   "porque": "Hojas verdes frescas y frondosas.",
+   "fuente": "fluent-flat",
+   "asset": "fluentui-emoji:assets/Leafy green/Flat",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "leafy jungle": {
+   "clave": "pal_leafy_jungle",
+   "orixe": "nova",
+   "porque": "Selva espesa con palmeras tropicales, grandes hojas verdes y lianas.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#leafy_jungle",
    "sha": "6be3d38b",
    "licencia": "Propia",
    "revisado": true
@@ -11152,6 +12022,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "leaves on my shoes": {
+   "clave": "pal_leaves_on_my_shoes",
+   "orixe": "nova",
+   "porque": "Hojas de otoño pegadas encima de los zapatos señaladas con la mano.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#leaves_on_my_shoes",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "left": {
    "clave": "pal_left",
    "orixe": "composta",
@@ -11160,6 +12040,26 @@
    "asset": "tools/gen_laminas_5_6.py#left",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "left side": {
+   "clave": "pal_left_side",
+   "orixe": "nova",
+   "porque": "Panel partido por la mitad con el lado izquierdo resaltado en azul y señalado.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#left_side",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "leftover": {
+   "clave": "pal_leftover",
+   "orixe": "nova",
+   "porque": "Plato después de comer con un pequeño trozo sobrante señalado.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#leftover",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
    "revisado": true
   },
   "leg": {
@@ -11352,6 +12252,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "light show": {
+   "clave": "pal_light_show",
+   "orixe": "nova",
+   "porque": "Escenario oscuro atravesado por focos de luz roja, azul y amarilla.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#light_show",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "light steps": {
    "clave": "pal_light_steps",
    "orixe": "composta",
@@ -11368,6 +12278,16 @@
    "porque": "Linterna encendiéndose de golpe para iluminar la oscuridad.",
    "fuente": "propia",
    "asset": "tools/gen_laminas_tpr.py#light_up",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "lighter": {
+   "clave": "pal_lighter",
+   "orixe": "nova",
+   "porque": "Dos hojas comparadas señalando la de tono verde más claro.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#lighter",
    "sha": "6be3d38b",
    "licencia": "Propia",
    "revisado": true
@@ -11642,6 +12562,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "look": {
+   "clave": "pal_look",
+   "orixe": "nova",
+   "porque": "Niño formando gafas con sus manos sobre los ojos mirando atento.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#look",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "look after animals": {
    "clave": "pal_look_after_animals",
    "orixe": "composta",
@@ -11682,6 +12612,26 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "look at the ducks": {
+   "clave": "pal_look_at_the_ducks",
+   "orixe": "nova",
+   "porque": "Niño junto al estanque señalando hacia los patos nadando.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#look_at_the_ducks",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "look at the lights": {
+   "clave": "pal_look_at_the_lights",
+   "orixe": "nova",
+   "porque": "Bebé mirando hacia arriba y señalando las luces encendidas de colores.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#look_at_the_lights",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "look at the stone closely": {
    "clave": "pal_look_stone_closely",
    "orixe": "composta",
@@ -11702,6 +12652,26 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "look back": {
+   "clave": "pal_look_back",
+   "orixe": "nova",
+   "porque": "Niño volviendo la cabeza para mirar hacia atrás al camino recorrido.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#look_back",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "look behind you": {
+   "clave": "pal_look_behind_you",
+   "orixe": "nova",
+   "porque": "Niño girando la cabeza para mirar detrás donde señala una flecha.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#look_behind_you",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "look for a hair": {
    "clave": "pal_look_for_hair",
    "orixe": "composta",
@@ -11710,6 +12680,56 @@
    "asset": "tools/gen_laminas_4_5.py#look_for_hair",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "look for patterns": {
+   "clave": "pal_look_for_patterns",
+   "orixe": "nova",
+   "porque": "Lupa inspeccionando una serie repetida de círculo rojo y cuadrado azul.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#look_for_patterns",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "look how high it flies": {
+   "clave": "pal_look_how_high_it_flies",
+   "orixe": "nova",
+   "porque": "Niño mirando al cielo y señalando un pájaro volando muy alto.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#look_how_high_it_flies",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "look into the distance": {
+   "clave": "pal_look_into_the_distance",
+   "orixe": "nova",
+   "porque": "Niño con la mano sobre la frente mirando lejos hacia las montañas.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#look_into_the_distance",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "look left, look right": {
+   "clave": "pal_look_left_look_right",
+   "orixe": "nova",
+   "porque": "Niño antes del paso de cebra mirando a izquierda y derecha.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#look_left_look_right",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "look out of the window": {
+   "clave": "pal_look_out_of_the_window",
+   "orixe": "nova",
+   "porque": "Ventana encuadrando al niño mirando fuera hacia el paisaje exterior.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#look_out_of_the_window",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
    "revisado": true
   },
   "look outside": {
@@ -11722,6 +12742,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "look through": {
+   "clave": "pal_look_through",
+   "orixe": "nova",
+   "porque": "Ojo asomado mirando a través de un tubo hueco.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#look_through",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "look through the binoculars": {
    "clave": "pal_look_through_the_binoculars",
    "orixe": "composta",
@@ -11732,6 +12762,26 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "look under the log": {
+   "clave": "pal_look_under_the_log",
+   "orixe": "nova",
+   "porque": "Tronco ligeramente levantado para mirar los bichitos que viven debajo.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#look_under_the_log",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "look up": {
+   "clave": "pal_look_up",
+   "orixe": "nova",
+   "porque": "Niño levantando la cabeza para mirar arriba hacia el cielo.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#look_up",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "look, a butterfly": {
    "clave": "pal_look_a_butterfly",
    "orixe": "composta",
@@ -11740,6 +12790,26 @@
    "asset": "tools/gen_laminas_tpr.py#look_a_butterfly",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "look, a rainbow": {
+   "clave": "pal_look_a_rainbow",
+   "orixe": "nova",
+   "porque": "Niño señalando emocionado un arcoíris completo en el cielo.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#look_a_rainbow",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "look, a sand pie": {
+   "clave": "pal_look_a_sand_pie",
+   "orixe": "nova",
+   "porque": "Flan de arena moldeado en la playa señalado con entusiasmo.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#look_a_sand_pie",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
    "revisado": true
   },
   "look, a shell": {
@@ -11762,12 +12832,32 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "look, dolphins": {
+   "clave": "pal_look_dolphins",
+   "orixe": "nova",
+   "porque": "Mano desde la costa señalando dos delfines saltando sobre las olas.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#look_dolphins",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "lopsided": {
    "clave": "pal_lopsided",
    "orixe": "nova",
    "porque": "Torre de bloques claramente torcida e inclinada hacia un lado.",
    "fuente": "propia",
    "asset": "tools/gen_laminas_tpr.py#lopsided",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "lost": {
+   "clave": "pal_lost",
+   "orixe": "nova",
+   "porque": "Niño detenido en un cruce de caminos buscando la dirección correcta.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#lost",
    "sha": "6be3d38b",
    "licencia": "Propia",
    "revisado": true
@@ -11972,6 +13062,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "many-legged": {
+   "clave": "pal_many_legged",
+   "orixe": "nova",
+   "porque": "Oruga verde con hileras de muchas patitas caminando por debajo.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#many_legged",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "map": {
    "clave": "pal_map",
    "orixe": "banco",
@@ -12049,6 +13149,16 @@
    "porque": "Máscara de animal con orejas y agujeros para los ojos.",
    "fuente": "propia",
    "asset": "tools/gen_laminas_3_4.py#mask",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "masked": {
+   "clave": "pal_masked",
+   "orixe": "nova",
+   "porque": "Persona con antifaz de colores cubriendo los ojos en juego de disfraz.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#masked",
    "sha": "6be3d38b",
    "licencia": "Propia",
    "revisado": true
@@ -12283,6 +13393,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "mirror check": {
+   "clave": "pal_mirror_check",
+   "orixe": "nova",
+   "porque": "Espejo ovalado donde se refleja el rostro para mirarse.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#mirror_check",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "mittens": {
    "clave": "pal_mittens",
    "orixe": "banco",
@@ -12331,6 +13451,16 @@
    "asset": "fluentui-emoji:assets/Monkey/Flat",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "month": {
+   "clave": "pal_month",
+   "orixe": "nova",
+   "porque": "Hoja mensual completa de calendario señalada en la pared.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#month",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
    "revisado": true
   },
   "moo": {
@@ -12401,6 +13531,16 @@
    "asset": "tools/gen_laminas_0_2.py#moss",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "most": {
+   "clave": "pal_most",
+   "orixe": "nova",
+   "porque": "Tres grupos de piezas con el dedo señalando claramente el grupo con más.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#most",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
    "revisado": true
   },
   "mother bird": {
@@ -12493,12 +13633,32 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "multicoloured": {
+   "clave": "pal_multicoloured",
+   "orixe": "nova",
+   "porque": "Molinillo multicolor de seis aspas brillantes señalado.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#multicoloured",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "mummy": {
    "clave": "pal_mummy",
    "orixe": "nova",
    "porque": "Mamá adulta de la mano junto a su niño que se lleva la mano al pecho.",
    "fuente": "propia",
    "asset": "tools/gen_laminas_tpr.py#mummy",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "mummy and me": {
+   "clave": "pal_mummy_and_me",
+   "orixe": "nova",
+   "porque": "Mamá y su peque de la mano señalados juntos.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#mummy_and_me",
    "sha": "6be3d38b",
    "licencia": "Propia",
    "revisado": true
@@ -12511,6 +13671,16 @@
    "asset": "tools/gen_laminas_2_3.py#munch",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "murky": {
+   "clave": "pal_murky",
+   "orixe": "nova",
+   "porque": "Agua turbia cargada de sedimentos donde apenas se distingue el pez al fondo.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#murky",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
    "revisado": true
   },
   "muscles": {
@@ -12673,6 +13843,36 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "nails": {
+   "clave": "pal_nails",
+   "orixe": "nova",
+   "porque": "Mano abierta mostrando las uñas de los dedos limpias y resaltadas.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#nails",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "name tag": {
+   "clave": "pal_name_tag",
+   "orixe": "nova",
+   "porque": "Etiqueta de identificación sin texto con franjas limpias señalada.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#name_tag",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "nanny": {
+   "clave": "pal_nanny",
+   "orixe": "nova",
+   "porque": "Cuidadora llevando el carrito infantil señalada amablemente.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#nanny",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "nap": {
    "clave": "pal_nap",
    "orixe": "composta",
@@ -12749,6 +13949,16 @@
    "porque": "Dos niños sentados muy cerca el uno del otro.",
    "fuente": "propia",
    "asset": "tools/gen_laminas_tpr.py#nearby",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "nearby shop": {
+   "clave": "pal_nearby_shop",
+   "orixe": "nova",
+   "porque": "Niño justo al lado de la tienda cercana señalándola de cerca.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#nearby_shop",
    "sha": "6be3d38b",
    "licencia": "Propia",
    "revisado": true
@@ -12869,6 +14079,26 @@
    "porque": "Bebé recién nacido envuelto en su mantita.",
    "fuente": "propia",
    "asset": "tools/gen_laminas_tpr.py#newborn_baby",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "next in line": {
+   "clave": "pal_next_in_line",
+   "orixe": "nova",
+   "porque": "Fila de niños caminando con flecha señalando al siguiente en turno.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#next_in_line",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "next stop": {
+   "clave": "pal_next_stop",
+   "orixe": "nova",
+   "porque": "Autobús avanzando mientras se señala el poste de la siguiente parada.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#next_stop",
    "sha": "6be3d38b",
    "licencia": "Propia",
    "revisado": true
@@ -13059,6 +14289,26 @@
    "porque": "Hoja de roble verde con su borde característico de lóbulos ondulados.",
    "fuente": "propia",
    "asset": "tools/gen_laminas_tpr.py#oak_leaf",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "observation": {
+   "clave": "pal_observation",
+   "orixe": "nova",
+   "porque": "Lupa observando con detalle una mariquita roja sobre la hoja.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#observation",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "observe": {
+   "clave": "pal_observe",
+   "orixe": "nova",
+   "porque": "Niño quieto observando con atención una mariposa sin tocarla.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#observe",
    "sha": "6be3d38b",
    "licencia": "Propia",
    "revisado": true
@@ -13381,6 +14631,26 @@
    "asset": "tools/gen_laminas_3_4.py#open_your_umbrella",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "opposite": {
+   "clave": "pal_opposite",
+   "orixe": "nova",
+   "porque": "Dos casas frente a frente al otro lado de la calle con flechas opuestas.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#opposite",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "orange": {
+   "clave": "pal_orange",
+   "orixe": "nova",
+   "porque": "Tres objetos de color naranja brillante señalados sobre la mesa.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#orange",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
    "revisado": true
   },
   "orange slice": {
@@ -13923,6 +15193,16 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "peer": {
+   "clave": "pal_peer",
+   "orixe": "nova",
+   "porque": "Niño asomándose curioso entre las hojas verdes del arbusto.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#peer",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "peg up": {
    "clave": "pal_peg_up",
    "orixe": "composta",
@@ -14013,6 +15293,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "photo wall": {
+   "clave": "pal_photo_wall",
+   "orixe": "nova",
+   "porque": "Mural en el aula lleno de fotografías enmarcadas para buscar.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#photo_wall",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "piano": {
    "clave": "pal_piano",
    "orixe": "banco",
@@ -14101,6 +15391,26 @@
    "asset": "tools/gen_laminas_tpr.py#picnic_basket",
    "sha": "6be3d38b",
    "licencia": "Propia",
+   "revisado": true
+  },
+  "picnic spot": {
+   "clave": "pal_picnic_spot",
+   "orixe": "nova",
+   "porque": "Mantel de cuadros rojos extendido con cesta en el prado señalando el sitio de merienda.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#picnic_spot",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "picture": {
+   "clave": "pal_picture",
+   "orixe": "banco",
+   "porque": "Cuadro enmarcado con paisaje para mirar a través.",
+   "fuente": "fluent-flat",
+   "asset": "fluentui-emoji:assets/Framed picture/Flat",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
    "revisado": true
   },
   "pier": {
@@ -14203,6 +15513,16 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "pink": {
+   "clave": "pal_pink",
+   "orixe": "nova",
+   "porque": "Colección de piezas rosa señaladas para aprender el color rosa.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#pink",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "pinwheel": {
    "clave": "pal_pinwheel",
    "orixe": "nova",
@@ -14241,6 +15561,16 @@
    "asset": "tools/gen_laminas_0_2.py#pitter_patter",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "place": {
+   "clave": "pal_place",
+   "orixe": "nova",
+   "porque": "Estantería con tres sitios delimitados donde va cada cosa señalados.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#place",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
    "revisado": true
   },
   "plane": {
@@ -14313,6 +15643,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "plastic goes in the yellow bin": {
+   "clave": "pal_plastic_goes_in_the_yellow_bin",
+   "orixe": "nova",
+   "porque": "Botella de plástico entrando al contenedor amarillo señalado.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#plastic_goes_in_the_yellow_bin",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "plate": {
    "clave": "pal_plate",
    "orixe": "nova",
@@ -14379,6 +15719,46 @@
    "porque": "Ciruela morada madura con tallo y hojita verde sobre la mesa.",
    "fuente": "propia",
    "asset": "tools/gen_laminas_tpr.py#plum",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "point": {
+   "clave": "pal_point",
+   "orixe": "nova",
+   "porque": "Dedo índice extendido señalando directamente una pelota cercana.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#point",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "point at": {
+   "clave": "pal_point_at",
+   "orixe": "nova",
+   "porque": "Niño señalando directamente a un pájaro azul en la rama.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#point_at",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "point to": {
+   "clave": "pal_point_to",
+   "orixe": "nova",
+   "porque": "Mano señalando suavemente la nariz del bebé sonriente.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#point_to",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "point to the sky": {
+   "clave": "pal_point_to_the_sky",
+   "orixe": "nova",
+   "porque": "Niño en el campo mirando arriba y señalando hacia el cielo.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#point_to_the_sky",
    "sha": "6be3d38b",
    "licencia": "Propia",
    "revisado": true
@@ -14483,6 +15863,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "pop out from behind": {
+   "clave": "pal_pop_out_from_behind",
+   "orixe": "nova",
+   "porque": "Zorrito apareciendo de repente por detrás de un arbusto verde.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#pop_out_from_behind",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "pop up": {
    "clave": "pal_pop_up",
    "orixe": "composta",
@@ -14499,6 +15889,16 @@
    "porque": "Tres pompas de jabón en el aire mientras el dedo explota una de ellas.",
    "fuente": "propia",
    "asset": "tools/gen_laminas_tpr.py#pop_pop_pop",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "pop-up toy": {
+   "clave": "pal_pop_up_toy",
+   "orixe": "nova",
+   "porque": "Caja sorpresa con muñeco de muelle saltando al pulsar el botón.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#pop_up_toy",
    "sha": "6be3d38b",
    "licencia": "Propia",
    "revisado": true
@@ -14681,6 +16081,16 @@
    "asset": "fluentui-emoji:assets/Princess/Flat",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "prism": {
+   "clave": "pal_prism",
+   "orixe": "nova",
+   "porque": "Prisma triangular de cristal dividiendo la luz blanca en haz multicolor.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#prism",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
    "revisado": true
   },
   "protect": {
@@ -14911,6 +16321,16 @@
    "asset": "fluentui-emoji:assets/Dog face/Flat",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "purple": {
+   "clave": "pal_purple",
+   "orixe": "nova",
+   "porque": "Tres piezas moradas señaladas para identificar el color morado.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#purple",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
    "revisado": true
   },
   "purr": {
@@ -15293,6 +16713,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "rainbow bubble": {
+   "clave": "pal_rainbow_bubble",
+   "orixe": "nova",
+   "porque": "Gran pompa de jabón con franjas de arcoíris señalada en el aire.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#rainbow_bubble",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "rainbow ribbon": {
    "clave": "pal_rainbow_ribbon",
    "orixe": "banco",
@@ -15339,6 +16769,16 @@
    "porque": "Gotas de lluvia cayendo directamente dentro del vaso abierto.",
    "fuente": "composta",
    "asset": "tools/gen_laminas_tpr.py#rainwater",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
+  "rainy": {
+   "clave": "pal_rainy",
+   "orixe": "banco",
+   "porque": "Paraguas bajo gotas de lluvia en día lluvioso.",
+   "fuente": "fluent-flat",
+   "asset": "fluentui-emoji:assets/Umbrella with rain drops/Flat",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
    "revisado": true
@@ -15743,6 +17183,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "right side": {
+   "clave": "pal_right_side",
+   "orixe": "nova",
+   "porque": "Panel partido con la mitad derecha resaltada en verde y señalada.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#right_side",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "right-hand": {
    "clave": "pal_right_hand",
    "orixe": "nova",
@@ -15863,6 +17313,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "roasted": {
+   "clave": "pal_roasted",
+   "orixe": "nova",
+   "porque": "Castañas asadas humeando en la sartén señaladas con la mano.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#roasted",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "roasting pan": {
    "clave": "pal_roasting_pan",
    "orixe": "composta",
@@ -15871,6 +17331,16 @@
    "asset": "tools/gen_laminas_0_2.py#roasting_pan",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "robin": {
+   "clave": "pal_robin",
+   "orixe": "nova",
+   "porque": "Petirrojo con el pecho rojo vivo posado en una rama y señalado.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#robin",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
    "revisado": true
   },
   "robot": {
@@ -15919,6 +17389,16 @@
    "porque": "Bebé meciéndose suavemente de lado a lado.",
    "fuente": "propia",
    "asset": "tools/gen_laminas_tpr.py#rock_gently",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "rock pool": {
+   "clave": "pal_rock_pool",
+   "orixe": "nova",
+   "porque": "Charca natural entre rocas costeras con estrella de mar y cangrejo dentro.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#rock_pool",
    "sha": "6be3d38b",
    "licencia": "Propia",
    "revisado": true
@@ -16603,6 +18083,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "sail across the ocean": {
+   "clave": "pal_sail_across_the_ocean",
+   "orixe": "nova",
+   "porque": "Velero navegando a través del océano abierto hacia adelante.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#sail_across_the_ocean",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "sailing along": {
    "clave": "pal_sailing_along",
    "orixe": "composta",
@@ -16739,6 +18229,16 @@
    "porque": "Mano cerrando el grifo del agua para ahorrar y evitar desperdiciar gotas.",
    "fuente": "propia",
    "asset": "tools/gen_laminas_tpr.py#save_water",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "savour": {
+   "clave": "pal_savour",
+   "orixe": "nova",
+   "porque": "Niño con ojos cerrados disfrutando y saboreando despacio su bocado.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#savour",
    "sha": "6be3d38b",
    "licencia": "Propia",
    "revisado": true
@@ -17003,6 +18503,26 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "search": {
+   "clave": "pal_search",
+   "orixe": "nova",
+   "porque": "Lupa levantando y buscando bajo las hojas caídas.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#search",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "search for treasure": {
+   "clave": "pal_search_for_treasure",
+   "orixe": "nova",
+   "porque": "Catalejo mirando hacia el cofre del tesoro dorado en la playa.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#search_for_treasure",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "seaside": {
    "clave": "pal_seaside",
    "orixe": "composta",
@@ -17053,12 +18573,42 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "see-through": {
+   "clave": "pal_see_through",
+   "orixe": "nova",
+   "porque": "Lámina de vidrio transparente delante de una pelota roja perfectamente visible.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#see_through",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "seed": {
    "clave": "pal_seed",
    "orixe": "nova",
    "porque": "Semilla única posada sobre tierra fértil.",
    "fuente": "propia",
    "asset": "tools/gen_laminas_3_4.py#seed",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "seed bag": {
+   "clave": "pal_seed_bag",
+   "orixe": "nova",
+   "porque": "Bolsita de papel con semillas oscuras asomando junto a la base.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#seed_bag",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "seek": {
+   "clave": "pal_seek",
+   "orixe": "nova",
+   "porque": "Niño buscando alrededor detrás de un tronco grueso al escondite.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#seek",
    "sha": "6be3d38b",
    "licencia": "Propia",
    "revisado": true
@@ -17093,6 +18643,26 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "sense of smell": {
+   "clave": "pal_sense_of_smell",
+   "orixe": "nova",
+   "porque": "Nariz percibiendo olores señalada para representar el sentido del olfato.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#sense_of_smell",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "sense of taste": {
+   "clave": "pal_sense_of_taste",
+   "orixe": "nova",
+   "porque": "Boca con lengua saboreando una fresa señalada para el sentido del gusto.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#sense_of_taste",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "sense of touch": {
    "clave": "pal_sense_of_touch",
    "orixe": "nova",
@@ -17123,6 +18693,16 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "sequence strip": {
+   "clave": "pal_sequence_strip",
+   "orixe": "nova",
+   "porque": "Tira de tres viñetas de crecimiento (semilla, brote y flor) en secuencia de izquierda a derecha.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#sequence_strip",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "set sail": {
    "clave": "pal_set_sail",
    "orixe": "composta",
@@ -17131,6 +18711,16 @@
    "asset": "tools/gen_laminas_tpr.py#set_sail",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "shade your eyes": {
+   "clave": "pal_shade_your_eyes",
+   "orixe": "nova",
+   "porque": "Niño llevando la mano horizontal sobre las cejas para taparse del sol.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#shade_your_eyes",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
    "revisado": true
   },
   "shake": {
@@ -17293,6 +18883,16 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "shapes in the room": {
+   "clave": "pal_shapes_in_the_room",
+   "orixe": "nova",
+   "porque": "Triángulo, cuadrado y círculo colgados en la sala señalados.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#shapes_in_the_room",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "she asked where the snake went": {
    "clave": "pal_where_snake_went",
    "orixe": "composta",
@@ -17413,6 +19013,16 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "shoe": {
+   "clave": "pal_shoe",
+   "orixe": "banco",
+   "porque": "Zapato plano listo para señalar.",
+   "fuente": "fluent-flat",
+   "asset": "fluentui-emoji:assets/Flat shoe/Flat",
+   "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+   "licencia": "MIT",
+   "revisado": true
+  },
   "shooting star": {
    "clave": "pal_shooting_star",
    "orixe": "banco",
@@ -17429,6 +19039,16 @@
    "porque": "Fachada de tienda con toldo rayado, escaparate y puerta abierta.",
    "fuente": "propia",
    "asset": "tools/gen_laminas_tpr.py#shop",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "shop window": {
+   "clave": "pal_shop_window",
+   "orixe": "nova",
+   "porque": "Escaparate acristalado de tienda con juguetes expuestos mientras el niño mira.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#shop_window",
    "sha": "6be3d38b",
    "licencia": "Propia",
    "revisado": true
@@ -17593,6 +19213,16 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "shy": {
+   "clave": "pal_shy",
+   "orixe": "nova",
+   "porque": "Niño tímido tapando parte de la cara con las manos con mejillas sonrojadas.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#shy",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "side to side": {
    "clave": "pal_side_to_side",
    "orixe": "nova",
@@ -17609,6 +19239,16 @@
    "porque": "Colador con rejilla reteniendo piedrecitas mientras caen las gotas de agua.",
    "fuente": "propia",
    "asset": "tools/gen_laminas_tpr.py#sieve",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "sight": {
+   "clave": "pal_sight",
+   "orixe": "nova",
+   "porque": "Ojo abierto con rayos visuales señalado para representar el sentido de la vista.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#sight",
    "sha": "6be3d38b",
    "licencia": "Propia",
    "revisado": true
@@ -17641,6 +19281,16 @@
    "asset": "tools/gen_laminas_0_2.py#silly_hat",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "silver": {
+   "clave": "pal_silver",
+   "orixe": "nova",
+   "porque": "Objetos de metal plateado brillante señalados sobre la mesa.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#silver",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
    "revisado": true
   },
   "silvery": {
@@ -17691,6 +19341,16 @@
    "asset": "tools/gen_laminas_2_3.py#sip_slowly",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "sister": {
+   "clave": "pal_sister",
+   "orixe": "nova",
+   "porque": "Niña hermana mayor con lazo señalada con cariño.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#sister",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
    "revisado": true
   },
   "sit": {
@@ -17772,6 +19432,26 @@
    "asset": "tools/gen_laminas_tpr.py#skipping_rope",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "sky": {
+   "clave": "pal_sky",
+   "orixe": "nova",
+   "porque": "Niño mirando hacia lo alto señalando el cielo azul con nubes.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#sky",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "sky blue": {
+   "clave": "pal_sky_blue",
+   "orixe": "nova",
+   "porque": "Muestra brillante de azul cielo señalada bajo el cielo despejado.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#sky_blue",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
    "revisado": true
   },
   "sledge": {
@@ -17984,6 +19664,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "smile": {
+   "clave": "pal_smile",
+   "orixe": "nova",
+   "porque": "Rostro infantil con sonrisa amplia y alegre.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#smile",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "smile at me": {
    "clave": "pal_smile_at_me",
    "orixe": "nova",
@@ -18134,6 +19824,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "snore": {
+   "clave": "pal_snore",
+   "orixe": "nova",
+   "porque": "Niño dormido con boca entreabierta y ondas suaves de ronquido nocturno.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#snore",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "snow": {
    "clave": "pal_pal_snow",
    "orixe": "banco",
@@ -18182,6 +19882,26 @@
    "asset": "tools/gen_laminas_0_2.py#snowsuit",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "snowy outside": {
+   "clave": "pal_snowy_outside",
+   "orixe": "nova",
+   "porque": "Ventana desde dentro señalando la nieve cayendo fuera.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#snowy_outside",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "snowy white": {
+   "clave": "pal_snowy_white",
+   "orixe": "nova",
+   "porque": "Bola y muñeco blanco como la nieve señalados para mostrar el blanco puro.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#snowy_white",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
    "revisado": true
   },
   "snug in the towel": {
@@ -18452,6 +20172,16 @@
    "asset": "tools/gen_laminas_tpr.py#soup",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "sour": {
+   "clave": "pal_sour",
+   "orixe": "nova",
+   "porque": "Limón amarillo con gesto fruncido de sabor muy ácido.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#sour",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
    "revisado": true
   },
   "space": {
@@ -18806,6 +20536,16 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "splash zone": {
+   "clave": "pal_splash_zone",
+   "orixe": "nova",
+   "porque": "Zona marcada de charcos y botas salpicando señalada.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#splash_zone",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "splash, splash": {
    "clave": "pal_splash_splash",
    "orixe": "nova",
@@ -18884,6 +20624,16 @@
    "asset": "fluentui-emoji:assets/Spoon/Flat",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "spot a bird": {
+   "clave": "pal_spot_a_bird",
+   "orixe": "nova",
+   "porque": "Prismáticos apuntando para avistar un pájaro en vuelo.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#spot_a_bird",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
    "revisado": true
   },
   "spotless": {
@@ -19206,6 +20956,16 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "starry night": {
+   "clave": "pal_starry_night",
+   "orixe": "nova",
+   "porque": "Cielo azul oscuro nocturno colmado de estrellas doradas y luna sobre las colinas.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#starry_night",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "statue": {
    "clave": "pal_statue",
    "orixe": "composta",
@@ -19252,6 +21012,16 @@
    "porque": "Olla caliente soltando nubes blancas de vapor ascendente.",
    "fuente": "propia",
    "asset": "tools/gen_laminas_tpr.py#steam",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "steaming": {
+   "clave": "pal_steaming",
+   "orixe": "nova",
+   "porque": "Olla caliente echando vapor visible señalado hacia arriba.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#steaming",
    "sha": "6be3d38b",
    "licencia": "Propia",
    "revisado": true
@@ -20326,6 +22096,16 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "switch on": {
+   "clave": "pal_switch_on",
+   "orixe": "nova",
+   "porque": "Interruptor activado en verde junto a bombilla amarilla recién encendida.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#switch_on",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "swivel chair": {
    "clave": "pal_swivel_chair",
    "orixe": "composta",
@@ -20496,6 +22276,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "tall buildings": {
+   "clave": "pal_tall_buildings",
+   "orixe": "nova",
+   "porque": "Edificios altos de varias plantas recortados hacia arriba en la ciudad.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#tall_buildings",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "tall like a giraffe": {
    "clave": "pal_tall_like_a_giraffe",
    "orixe": "composta",
@@ -20522,6 +22312,16 @@
    "porque": "Pandereta redonda con sonajas metálicas tocada con la mano al ritmo musical.",
    "fuente": "propia",
    "asset": "tools/gen_laminas_tpr.py#tambourine",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "tank": {
+   "clave": "pal_tank",
+   "orixe": "nova",
+   "porque": "Tanque transparente lleno de agua azul señalado.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#tank",
    "sha": "6be3d38b",
    "licencia": "Propia",
    "revisado": true
@@ -20604,6 +22404,16 @@
    "asset": "tools/gen_laminas_5_6.py#tap_tap",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "target": {
+   "clave": "pal_target",
+   "orixe": "nova",
+   "porque": "Diana concéntrica roja y blanca con flecha apuntando al centro.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#target",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
    "revisado": true
   },
   "taste": {
@@ -21096,6 +22906,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "the left side is the same as the right side": {
+   "clave": "pal_the_left_side_is_the_same_as_the_right_side",
+   "orixe": "nova",
+   "porque": "Mariposa simétrica mostrando el lado izquierdo idéntico al lado derecho.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#the_left_side_is_the_same_as_the_right_side",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "the light comes out of the holes": {
    "clave": "pal_light_out_holes",
    "orixe": "composta",
@@ -21586,6 +23406,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "this flower has more petals than that one": {
+   "clave": "pal_this_flower_has_more_petals_than_that_one",
+   "orixe": "nova",
+   "porque": "Flor de ocho pétalos comparada con otra de cuatro señalando la que tiene más.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#this_flower_has_more_petals_than_that_one",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "this is the best soap": {
    "clave": "pal_this_is_the_best_soap",
    "orixe": "composta",
@@ -21652,6 +23482,16 @@
    "porque": "Dos hojas lado a lado: una verde clara y otra mucho más oscura.",
    "fuente": "propia",
    "asset": "tools/gen_laminas_tpr.py#this_one_is_darker_than_that_one",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "this one is longer": {
+   "clave": "pal_this_one_is_longer",
+   "orixe": "nova",
+   "porque": "Lápiz rojo mucho más largo comparado con uno corto y señalado.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#this_one_is_longer",
    "sha": "6be3d38b",
    "licencia": "Propia",
    "revisado": true
@@ -21936,6 +23776,16 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "timeline": {
+   "clave": "pal_timeline",
+   "orixe": "nova",
+   "porque": "Línea del tiempo de izquierda a derecha mostrando etapas sin texto ni cifras.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#timeline",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "timer": {
    "clave": "pal_timer",
    "orixe": "banco",
@@ -22134,6 +23984,16 @@
    "asset": "fluentui-emoji:assets/Toothbrush/Flat",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "top and bottom": {
+   "clave": "pal_top_and_bottom",
+   "orixe": "nova",
+   "porque": "Boca abierta con flechas señalando la fila superior e inferior de dientes.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#top_and_bottom",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
    "revisado": true
   },
   "top to toe": {
@@ -22436,6 +24296,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "treetop": {
+   "clave": "pal_treetop",
+   "orixe": "nova",
+   "porque": "Árbol frondoso señalando claramente la punta alta de su copa.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#treetop",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "trot": {
    "clave": "pal_trot",
    "orixe": "composta",
@@ -22444,6 +24314,16 @@
    "asset": "tools/gen_laminas_tpr.py#trot",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "tube": {
+   "clave": "pal_tube",
+   "orixe": "nova",
+   "porque": "Tubo cilíndrico hueco de cartón abierto por los dos extremos.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#tube",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
    "revisado": true
   },
   "tulip": {
@@ -22716,6 +24596,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "uncle": {
+   "clave": "pal_uncle",
+   "orixe": "nova",
+   "porque": "Cuadro enmarcado de un tío sonriente con bigote señalado.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#uncle",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "under the blanket": {
    "clave": "pal_under_the_blanket",
    "orixe": "nova",
@@ -22734,6 +24624,16 @@
    "asset": "tools/gen_laminas_tpr.py#under_the_sea",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "under the stone": {
+   "clave": "pal_under_the_stone",
+   "orixe": "nova",
+   "porque": "Piedra plana levantada por un borde revelando los bichitos debajo.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#under_the_stone",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
    "revisado": true
   },
   "under the stones! slither like a snake": {
@@ -22824,6 +24724,16 @@
    "asset": "tools/gen_laminas_tpr.py#up_and_down_the_city",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "up in the air": {
+   "clave": "pal_up_in_the_air",
+   "orixe": "nova",
+   "porque": "Burbujas flotando arriba en el aire señaladas desde abajo.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#up_in_the_air",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
    "revisado": true
   },
   "up it goes": {
@@ -22926,6 +24836,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "viewpoint": {
+   "clave": "pal_viewpoint",
+   "orixe": "nova",
+   "porque": "Mirador con barandilla y visor panorámico dominando el valle.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#viewpoint",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "vote": {
    "clave": "pal_pal_vote",
    "orixe": "banco",
@@ -22964,6 +24884,16 @@
    "asset": "tools/gen_laminas_tpr.py#wait",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "wait for": {
+   "clave": "pal_wait_for",
+   "orixe": "nova",
+   "porque": "Niño sentado esperando tranquilo mientras mira la hora en el reloj.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#wait_for",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
    "revisado": true
   },
   "wait for green": {
@@ -23536,6 +25466,16 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "washbasin": {
+   "clave": "pal_washbasin",
+   "orixe": "nova",
+   "porque": "Lavabo blanco con grifo y espejo en la pared señalado.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#washbasin",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "washcloth": {
    "clave": "pal_washcloth",
    "orixe": "composta",
@@ -23576,12 +25516,32 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "watch quietly": {
+   "clave": "pal_watch_quietly",
+   "orixe": "nova",
+   "porque": "Niño en silencio con dedo sobre los labios observando a la ardilla.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#watch_quietly",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "watch the glitter settle": {
    "clave": "pal_watch_the_glitter_settle",
    "orixe": "nova",
    "porque": "Tarro de la calma quieto viendo bajar la purpurina hacia el fondo.",
    "fuente": "propia",
    "asset": "tools/gen_laminas_tpr.py#watch_the_glitter_settle",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "watch the rain": {
+   "clave": "pal_watch_the_rain",
+   "orixe": "nova",
+   "porque": "Bebé contemplando a través de la ventana cómo caen las gotas de lluvia.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#watch_the_rain",
    "sha": "6be3d38b",
    "licencia": "Propia",
    "revisado": true
@@ -24036,6 +25996,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "we smell with our nose and taste with our tongue": {
+   "clave": "pal_we_smell_with_our_nose_and_taste_with_our_tongue",
+   "orixe": "nova",
+   "porque": "Escena doble: oler una flor con la nariz y saborear una fresa con la lengua.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#we_smell_with_our_nose_and_taste_with_our_tongue",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "we walk across the bridge": {
    "clave": "pal_walk_across_bridge",
    "orixe": "nova",
@@ -24064,6 +26034,26 @@
    "asset": "tools/gen_laminas_2_3.py#we_were_squeezing_the_bread",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "weather": {
+   "clave": "pal_weather",
+   "orixe": "nova",
+   "porque": "Cielo mostrando el tiempo atmosférico (sol, lluvia y viento) señalado.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#weather",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "weather station": {
+   "clave": "pal_weather_station",
+   "orixe": "nova",
+   "porque": "Estación meteorológica escolar con veleta, cazoletas y pluviómetro señalada.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#weather_station",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
    "revisado": true
   },
   "weather vane": {
@@ -25044,6 +27034,16 @@
    "asset": "tools/gen_laminas_3_4.py#yawn",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "yellow": {
+   "clave": "pal_yellow",
+   "orixe": "nova",
+   "porque": "Objetos de color amarillo vivo señalados sobre la mesa.",
+   "fuente": "propia",
+   "asset": "tools/gen_laminas_tpr.py#yellow",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
    "revisado": true
   },
   "yellow duck": {

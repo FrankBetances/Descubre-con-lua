@@ -78,7 +78,8 @@
             "gl": "Axitar e mirar como baixa",
             "es": "Agitar y mirar cómo baja"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_calm_jar"
         },
         {
           "id": "5_6.maio.s1.breathing-buddy",

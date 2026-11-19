@@ -794,7 +794,8 @@
             "gl": "Mirar arriba abrindo os dedos",
             "es": "Mirar arriba abriendo los dedos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_starry_night"
         },
         {
           "id": "5_6.xuno.s4.go-on-holiday",
@@ -828,7 +829,8 @@
             "gl": "Mirar arredor cun mapa",
             "es": "Mirar alrededor con un mapa"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_explore_new_places"
         },
         {
           "id": "5_6.xuno.s4.read-in-the-shade",

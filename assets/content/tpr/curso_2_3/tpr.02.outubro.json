@@ -45,7 +45,8 @@
             "gl": "Mover as cadeiras dun lado a outro",
             "es": "Mover las caderas de un lado a otro"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_hips"
         },
         {
           "id": "2_3.outubro.s1.trampoline",
@@ -332,7 +333,8 @@
             "gl": "Sinalar cara a onde se vai",
             "es": "Señalar hacia dónde se va"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_direction"
         },
         {
           "id": "2_3.outubro.s2.spin-around",
@@ -794,7 +796,8 @@
             "gl": "Sinalar arriba e abaixo bailando",
             "es": "Señalar arriba y abajo bailando"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_disco"
         },
         {
           "id": "2_3.outubro.s4.beat",

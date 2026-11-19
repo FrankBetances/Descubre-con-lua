@@ -395,7 +395,8 @@
           "tprAction": {
             "gl": "Baixar a cabeza e mover a boca coma quen come herba",
             "es": "Bajar la cabeza y mover la boca como quien come hierba"
-          }
+          },
+          "lamina": "pal_graze"
         },
         {
           "id": "3_4.febreiro.s2.pink",
@@ -406,7 +407,8 @@
           "tprAction": {
             "gl": "Sinalar algo rosa na aula",
             "es": "Señalar algo rosa en el aula"
-          }
+          },
+          "lamina": "pal_pink"
         },
         {
           "id": "3_4.febreiro.s2.dirty",
@@ -417,7 +419,8 @@
           "tprAction": {
             "gl": "Mirar as mans con cara de noxo divertido",
             "es": "Mirarse las manos con cara de asco divertido"
-          }
+          },
+          "lamina": "pal_dirty"
         },
         {
           "id": "3_4.febreiro.s2.lazy",
@@ -844,7 +847,8 @@
           "tprAction": {
             "gl": "Mover os brazos moi rápido coma ás pequenas",
             "es": "Mover los brazos muy rápido como alas pequeñas"
-          }
+          },
+          "lamina": "pal_flap"
         },
         {
           "id": "3_4.febreiro.s4.pretend",

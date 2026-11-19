@@ -68,7 +68,8 @@
             "gl": "Sinalar a etiqueta co nome",
             "es": "Señalar la etiqueta con el nombre"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_name_tag"
         },
         {
           "id": "2_3.setembro.s1.toy-box",
@@ -564,7 +565,8 @@
             "gl": "Sinalar o sitio de cada cousa",
             "es": "Señalar el sitio de cada cosa"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_place"
         },
         {
           "id": "2_3.setembro.s3.pick-up-toys",
@@ -792,7 +794,8 @@
             "gl": "Buscar a propia foto no mural",
             "es": "Buscar la propia foto en el mural"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_photo_wall"
         },
         {
           "id": "2_3.setembro.s4.cushion-circle",

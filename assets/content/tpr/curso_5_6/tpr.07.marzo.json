@@ -44,7 +44,8 @@
             "gl": "Sinalar de esquerda a dereita",
             "es": "Señalar de izquierda a derecha"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_sequence_strip"
         },
         {
           "id": "5_6.marzo.s1.bead",
@@ -190,7 +191,8 @@
             "gl": "Sinalar adiante",
             "es": "Señalar adelante"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_next_in_line"
         },
         {
           "id": "5_6.marzo.s1.what-comes-next",
@@ -300,7 +302,8 @@
             "gl": "Sinalar o lado esquerdo",
             "es": "Señalar el lado izquierdo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_left_side"
         },
         {
           "id": "5_6.marzo.s2.right-side",
@@ -311,7 +314,8 @@
             "gl": "Sinalar o lado dereito",
             "es": "Señalar el lado derecho"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_right_side"
         },
         {
           "id": "5_6.marzo.s2.snowflake-cut",
@@ -471,7 +475,8 @@
             "gl": "Sinalar os dous lados",
             "es": "Señalar los dos lados"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_the_left_side_is_the_same_as_the_right_side"
         }
       ]
     },
@@ -596,7 +601,8 @@
             "gl": "Mirar arredor coa lupa",
             "es": "Mirar alrededor con la lupa"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_look_for_patterns"
         },
         {
           "id": "5_6.marzo.s3.sort-by-number",
@@ -710,7 +716,8 @@
             "gl": "Sinalar e comparar",
             "es": "Señalar y comparar"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_this_flower_has_more_petals_than_that_one"
         }
       ]
     },
@@ -903,7 +910,8 @@
             "gl": "Sinalar o máis escuro",
             "es": "Señalar el más oscuro"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_darkest_shade"
         },
         {
           "id": "5_6.marzo.s4.blue-and-yellow-make-green",

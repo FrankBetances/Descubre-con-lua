@@ -44,7 +44,8 @@
             "gl": "Mirar lonxe coa man na fronte",
             "es": "Mirar lejos con la mano en la frente"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_viewpoint"
         },
         {
           "id": "4_5.novembro.s1.slope",
@@ -151,7 +152,8 @@
             "gl": "Mirar coa man na fronte",
             "es": "Mirar con la mano en la frente"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_look_into_the_distance"
         },
         {
           "id": "4_5.novembro.s1.steep",
@@ -530,7 +532,8 @@
             "gl": "Mover moitos dedos amodo",
             "es": "Mover muchos dedos despacio"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_centipede"
         },
         {
           "id": "4_5.novembro.s3.earthworm",
@@ -577,7 +580,8 @@
             "gl": "Remexer as follas amodo",
             "es": "Remover las hojas despacio"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_leaf_litter"
         },
         {
           "id": "4_5.novembro.s3.look-closely",
@@ -622,7 +626,8 @@
             "gl": "Mover as mans coma cavando",
             "es": "Mover las manos como cavando"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_dig_tunnels"
         },
         {
           "id": "4_5.novembro.s3.put-it-back-gently",
@@ -644,7 +649,8 @@
             "gl": "Mover todos os dedos",
             "es": "Mover todos los dedos"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_many_legged"
         },
         {
           "id": "4_5.novembro.s3.hard-shelled",
@@ -712,7 +718,8 @@
             "gl": "Levantar e mirar",
             "es": "Levantar y mirar"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_look_under_the_log"
         },
         {
           "id": "4_5.novembro.s3.bigger-than-an-ant-smaller-than-a-mouse",
@@ -801,7 +808,8 @@
             "gl": "Buscar algo verde",
             "es": "Buscar algo verde"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_colour_hunt"
         },
         {
           "id": "4_5.novembro.s4.leaf-rubbing",
@@ -880,7 +888,8 @@
             "gl": "Sinalar a folla máis escura",
             "es": "Señalar la hoja más oscura"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_darker"
         },
         {
           "id": "4_5.novembro.s4.lighter",
@@ -891,7 +900,8 @@
             "gl": "Sinalar a folla máis clara",
             "es": "Señalar la hoja más clara"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_lighter"
         },
         {
           "id": "4_5.novembro.s4.reddish",

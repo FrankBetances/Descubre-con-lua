@@ -56,7 +56,8 @@
           "tprAction": {
             "gl": "Estender un brazo e mover os dedos coma follas",
             "es": "Extender un brazo y mover los dedos como hojas"
-          }
+          },
+          "lamina": "pal_branch"
         },
         {
           "id": "3_4.novembro.s1.autumn",
@@ -78,7 +79,8 @@
           "tprAction": {
             "gl": "Sinalar o ceo e mirar cara arriba",
             "es": "Señalar el cielo y mirar hacia arriba"
-          }
+          },
+          "lamina": "pal_sky"
         },
         {
           "id": "3_4.novembro.s1.forest",
@@ -171,7 +173,8 @@
           "tprAction": {
             "gl": "Sinalar algo laranxa na aula",
             "es": "Señalar algo naranja en el aula"
-          }
+          },
+          "lamina": "pal_orange"
         },
         {
           "id": "3_4.novembro.s1.dry",

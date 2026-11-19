@@ -91,7 +91,8 @@
             "gl": "Apuntar á diana",
             "es": "Apuntar a la diana"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_target"
         },
         {
           "id": "4_5.outubro.s1.freeze-immediately",

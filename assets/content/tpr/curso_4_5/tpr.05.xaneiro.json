@@ -56,7 +56,8 @@
             "gl": "Sinalar algo grande e coñecido",
             "es": "Señalar algo grande y conocido"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_landmark"
         },
         {
           "id": "4_5.xaneiro.s1.street-sign",
@@ -149,7 +150,8 @@
             "gl": "Mirar o mapa e sinalar",
             "es": "Mirar el mapa y señalar"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_find_the_way"
         },
         {
           "id": "4_5.xaneiro.s1.left",
@@ -184,7 +186,8 @@
             "gl": "Sinalar o outro lado",
             "es": "Señalar el otro lado"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_opposite"
         },
         {
           "id": "4_5.xaneiro.s1.lost",
@@ -195,7 +198,8 @@
             "gl": "Mirar arredor sen saber",
             "es": "Mirar alrededor sin saber"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_lost"
         },
         {
           "id": "4_5.xaneiro.s1.where-are-we-on-the-map",
@@ -868,7 +872,8 @@
             "gl": "Mover os brazos dando paso",
             "es": "Mover los brazos dando paso"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_direct_traffic"
         },
         {
           "id": "4_5.xaneiro.s4.diligent",

@@ -411,7 +411,8 @@
             "gl": "Sinalar o grupo grande",
             "es": "Señalar el grupo grande"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_most"
         },
         {
           "id": "5_6.novembro.s2.fewest",
@@ -422,7 +423,8 @@
             "gl": "Sinalar o grupo pequeno",
             "es": "Señalar el grupo pequeño"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_fewest"
         },
         {
           "id": "5_6.novembro.s2.how-many-chestnuts",
@@ -521,7 +523,8 @@
             "gl": "Mirar cunha lupa",
             "es": "Mirar con una lupa"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_observation"
         },
         {
           "id": "5_6.novembro.s3.notebook",
@@ -646,7 +649,8 @@
             "gl": "Sinalar a castaña quente",
             "es": "Señalar la castaña caliente"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_roasted"
         },
         {
           "id": "5_6.novembro.s3.split-open",

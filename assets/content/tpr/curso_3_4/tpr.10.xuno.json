@@ -199,7 +199,8 @@
           "tprAction": {
             "gl": "Mover suavemente os brazos coma a brisa",
             "es": "Mover suavemente los brazos como la brisa"
-          }
+          },
+          "lamina": "pal_breezy"
         },
         {
           "id": "3_4.xuno.s1.gentle-waves",
@@ -437,7 +438,8 @@
           "tprAction": {
             "gl": "Mover os dedos dos pés descalzos",
             "es": "Mover los dedos de los pies descalzos"
-          }
+          },
+          "lamina": "pal_barefoot"
         },
         {
           "id": "3_4.xuno.s2.let-s-go-to-the-beach",

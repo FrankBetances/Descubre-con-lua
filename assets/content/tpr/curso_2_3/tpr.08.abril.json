@@ -91,7 +91,8 @@
             "gl": "Sinalar un bo sitio",
             "es": "Señalar un buen sitio"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_picnic_spot"
         },
         {
           "id": "2_3.abril.s1.lie-on-the-grass",
@@ -197,7 +198,8 @@
             "gl": "Sinalar a herba nova",
             "es": "Señalar la hierba nueva"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_fresh_green"
         },
         {
           "id": "2_3.abril.s1.make-a-wish",
@@ -437,7 +439,8 @@
             "gl": "Sinalar moi arriba",
             "es": "Señalar muy arriba"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_high_up"
         },
         {
           "id": "2_3.abril.s2.listen-to-the-birds",
@@ -472,7 +475,8 @@
             "gl": "Sinalar a árbore",
             "es": "Señalar el árbol"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_in_the_tree"
         },
         {
           "id": "2_3.abril.s2.wings-up-wings-down",

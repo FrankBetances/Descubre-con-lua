@@ -187,7 +187,8 @@
             "gl": "Mover un volante coas mans",
             "es": "Mover un volante con las manos"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_frilly"
         },
         {
           "id": "0_2.febreiro.s1.feathered-hat",
@@ -486,7 +487,8 @@
             "gl": "Mover o bebé adiante e atrás",
             "es": "Mover al bebé adelante y atrás"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_back_and_forth"
         }
       ]
     },
@@ -553,7 +555,8 @@
             "gl": "Premer o botón e ver saír o xoguete",
             "es": "Pulsar el botón y ver salir el juguete"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_pop_up_toy"
         },
         {
           "id": "0_2.febreiro.s3.jack-in-the-box",
@@ -576,7 +579,8 @@
             "gl": "Sinalar onde está escondido",
             "es": "Señalar dónde está escondido"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_hiding_place"
         },
         {
           "id": "0_2.febreiro.s3.peek-out",
@@ -634,7 +638,8 @@
             "gl": "Mirar arredor buscando",
             "es": "Mirar alrededor buscando"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_seek"
         },
         {
           "id": "0_2.febreiro.s3.gone",

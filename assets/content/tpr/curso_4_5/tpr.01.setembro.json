@@ -736,7 +736,8 @@
             "gl": "Sinalar unha cara no panel",
             "es": "Señalar una cara en el panel"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_feelings_chart"
         },
         {
           "id": "4_5.setembro.s4.calm-down-corner",

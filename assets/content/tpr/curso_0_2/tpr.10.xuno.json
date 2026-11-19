@@ -621,7 +621,8 @@
             "gl": "Poñer a man sobre os ollos",
             "es": "Poner la mano sobre los ojos"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_shade_your_eyes"
         },
         {
           "id": "0_2.xuno.s3.nap",
@@ -872,7 +873,8 @@
             "gl": "Mirar as fotos do curso",
             "es": "Mirar las fotos del curso"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_look_back"
         },
         {
           "id": "0_2.xuno.s4.bigger-now",

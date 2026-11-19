@@ -412,7 +412,8 @@
           "tprAction": {
             "gl": "Tapar os ollos coas mans",
             "es": "Taparse los ojos con las manos"
-          }
+          },
+          "lamina": "pal_dark"
         },
         {
           "id": "3_4.outubro.s2.yummy",
@@ -435,7 +436,8 @@
           "tprAction": {
             "gl": "Poñer cara de limón, pechando os ollos e engurrando a boca",
             "es": "Poner cara de limón, cerrando los ojos y arrugando la boca"
-          }
+          },
+          "lamina": "pal_sour"
         },
         {
           "id": "3_4.outubro.s2.tickly",
@@ -638,7 +640,8 @@
           "tprAction": {
             "gl": "Mover as mans moi rápido",
             "es": "Mover las manos muy rápido"
-          }
+          },
+          "lamina": "pal_fast"
         },
         {
           "id": "3_4.outubro.s3.slow",
@@ -796,7 +799,8 @@
           "tprAction": {
             "gl": "Buscar o embigo cun dedo",
             "es": "Buscarse el ombligo con un dedo"
-          }
+          },
+          "lamina": "pal_belly_button"
         },
         {
           "id": "3_4.outubro.s4.shadow",

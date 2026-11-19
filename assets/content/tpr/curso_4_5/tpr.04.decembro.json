@@ -92,7 +92,8 @@
             "gl": "Mirar con atención coa lupa",
             "es": "Mirar con atención con la lupa"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_experiment"
         },
         {
           "id": "4_5.decembro.s1.hold-ice",
@@ -149,7 +150,8 @@
             "gl": "Mirar sen tocar",
             "es": "Mirar sin tocar"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_observe"
         },
         {
           "id": "4_5.decembro.s1.colder",
@@ -474,7 +476,8 @@
             "gl": "Sinalar o máis longo",
             "es": "Señalar el más largo"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_this_one_is_longer"
         }
       ]
     },
@@ -541,7 +544,8 @@
             "gl": "Mirar a través dun cristal",
             "es": "Mirar a través de un cristal"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_shop_window"
         },
         {
           "id": "4_5.decembro.s3.street-lamp",
@@ -563,7 +567,8 @@
             "gl": "Mover as mans cambiando de cor",
             "es": "Mover las manos cambiando de color"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_light_show"
         },
         {
           "id": "4_5.decembro.s3.light-up",
@@ -632,7 +637,8 @@
             "gl": "Taparse un pouco os ollos",
             "es": "Taparse un poco los ojos"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_dazzling"
         },
         {
           "id": "4_5.decembro.s3.festive",
@@ -655,7 +661,8 @@
             "gl": "Sinalar moitas cores",
             "es": "Señalar muchos colores"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_multicoloured"
         },
         {
           "id": "4_5.decembro.s3.brightest",

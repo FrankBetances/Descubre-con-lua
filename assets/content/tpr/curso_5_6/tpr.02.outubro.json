@@ -32,7 +32,8 @@
             "gl": "Sinalar os ollos",
             "es": "Señalar los ojos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_sight"
         },
         {
           "id": "5_6.outubro.s1.hearing",
@@ -43,7 +44,8 @@
             "gl": "Sinalar as orellas",
             "es": "Señalar las orejas"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_hearing"
         },
         {
           "id": "5_6.outubro.s1.smell-sense",
@@ -54,7 +56,8 @@
             "gl": "Sinalar o nariz",
             "es": "Señalar la nariz"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_sense_of_smell"
         },
         {
           "id": "5_6.outubro.s1.taste-sense",
@@ -65,7 +68,8 @@
             "gl": "Sinalar a lingua",
             "es": "Señalar la lengua"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_sense_of_taste"
         },
         {
           "id": "5_6.outubro.s1.touch-sense",
@@ -225,7 +229,8 @@
             "gl": "Sinalar nariz e lingua",
             "es": "Señalar nariz y lengua"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_we_smell_with_our_nose_and_taste_with_our_tongue"
         },
         {
           "id": "5_6.outubro.s1.listen-with-your-eyes-closed",

@@ -382,7 +382,8 @@
             "gl": "Mover os pés entre as follas",
             "es": "Mover los pies entre las hojas"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_kick_leaves"
         },
         {
           "id": "0_2.novembro.s2.gather",

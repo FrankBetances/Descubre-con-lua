@@ -93,7 +93,8 @@
           "tprAction": {
             "gl": "Mirar as unllas cos dedos estirados",
             "es": "Mirarse las uñas con los dedos estirados"
-          }
+          },
+          "lamina": "pal_nails"
         },
         {
           "id": "3_4.maio.s1.wash",

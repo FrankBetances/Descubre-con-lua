@@ -57,7 +57,8 @@
           "tprAction": {
             "gl": "Facer un marco coas mans e mirar a través",
             "es": "Hacer un marco con las manos y mirar a través"
-          }
+          },
+          "lamina": "pal_picture"
         },
         {
           "id": "3_4.marzo.s1.pencil",
@@ -171,7 +172,8 @@
           "tprAction": {
             "gl": "Sinalar algo amarelo na aula",
             "es": "Señalar algo amarillo en el aula"
-          }
+          },
+          "lamina": "pal_yellow"
         },
         {
           "id": "3_4.marzo.s1.purple",
@@ -182,7 +184,8 @@
           "tprAction": {
             "gl": "Sinalar algo morado na aula",
             "es": "Señalar algo morado en el aula"
-          }
+          },
+          "lamina": "pal_purple"
         },
         {
           "id": "3_4.marzo.s1.black",

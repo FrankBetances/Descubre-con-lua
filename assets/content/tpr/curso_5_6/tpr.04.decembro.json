@@ -152,7 +152,8 @@
             "gl": "Sinalar arriba",
             "es": "Señalar arriba"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_point_to_the_sky"
         },
         {
           "id": "5_6.decembro.s1.round-like-a-ball",
@@ -175,7 +176,8 @@
             "gl": "Sinalar moi lonxe",
             "es": "Señalar muy lejos"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_faraway"
         },
         {
           "id": "5_6.decembro.s1.glowing-moon",
@@ -430,7 +432,8 @@
             "gl": "Sinalar lonxe",
             "es": "Señalar lejos"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_distant"
         },
         {
           "id": "5_6.decembro.s2.brightest-star",
@@ -519,7 +522,8 @@
             "gl": "Sinalar un mes",
             "es": "Señalar un mes"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_month"
         },
         {
           "id": "5_6.decembro.s3.week",
@@ -619,7 +623,8 @@
             "gl": "Mirar o reloxo",
             "es": "Mirar el reloj"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_wait_for"
         },
         {
           "id": "5_6.decembro.s3.plan-ahead",

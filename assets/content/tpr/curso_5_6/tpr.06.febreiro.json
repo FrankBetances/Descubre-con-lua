@@ -178,7 +178,8 @@
             "gl": "Taparse os ollos coas mans",
             "es": "Taparse los ojos con las manos"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_masked"
         },
         {
           "id": "5_6.febreiro.s1.sparkling-costume",
@@ -504,7 +505,8 @@
             "gl": "Mover unha batuta",
             "es": "Mover una batuta"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_conductor"
         },
         {
           "id": "5_6.febreiro.s3.solo",

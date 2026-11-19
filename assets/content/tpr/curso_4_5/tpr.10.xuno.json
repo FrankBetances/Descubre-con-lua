@@ -91,7 +91,8 @@
             "gl": "Sinalar caixas de peixe",
             "es": "Señalar cajas de pescado"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_fish_market"
         },
         {
           "id": "4_5.xuno.s1.climb-aboard",
@@ -296,7 +297,8 @@
             "gl": "Sinalar dunha punta a outra",
             "es": "Señalar de una punta a otra"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_timeline"
         },
         {
           "id": "4_5.xuno.s2.favourite-day",
@@ -517,7 +519,8 @@
             "gl": "Sinalar un punto lonxe",
             "es": "Señalar un punto lejos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_goal"
         },
         {
           "id": "4_5.xuno.s3.diploma",
@@ -788,7 +791,8 @@
             "gl": "Apuntar e mollar as plantas",
             "es": "Apuntar y mojar las plantas"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_garden_hose"
         },
         {
           "id": "4_5.xuno.s4.sprinkler",

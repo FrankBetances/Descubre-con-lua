@@ -93,7 +93,8 @@
           "tprAction": {
             "gl": "Sinalar un zapato e logo o outro",
             "es": "Señalar un zapato y luego el otro"
-          }
+          },
+          "lamina": "pal_shoe"
         },
         {
           "id": "3_4.xaneiro.s1.put-on",
@@ -419,7 +420,8 @@
           "tprAction": {
             "gl": "Baixar os dedos coma chuvia e mirar arriba",
             "es": "Bajar los dedos como lluvia y mirar arriba"
-          }
+          },
+          "lamina": "pal_rainy"
         },
         {
           "id": "3_4.xaneiro.s2.grey",
@@ -430,7 +432,8 @@
           "tprAction": {
             "gl": "Sinalar algo gris na aula",
             "es": "Señalar algo gris en el aula"
-          }
+          },
+          "lamina": "pal_grey"
         },
         {
           "id": "3_4.xaneiro.s2.muddy",
@@ -664,7 +667,8 @@
           "tprAction": {
             "gl": "Sinalar moi lonxe co brazo estirado",
             "es": "Señalar muy lejos con el brazo estirado"
-          }
+          },
+          "lamina": "pal_far"
         },
         {
           "id": "3_4.xaneiro.s3.safe",
@@ -809,7 +813,8 @@
           "tprAction": {
             "gl": "Mover un brazo coma a agulla dun reloxo",
             "es": "Mover un brazo como la aguja de un reloj"
-          }
+          },
+          "lamina": "pal_clock"
         },
         {
           "id": "3_4.xaneiro.s4.floor",

@@ -91,7 +91,8 @@
             "gl": "Sinalar a esquina da peza",
             "es": "Señalar la esquina de la pieza"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_corner_piece"
         },
         {
           "id": "2_3.marzo.s1.draw-a-shape",
@@ -229,7 +230,8 @@
             "gl": "Sinalar formas arredor",
             "es": "Señalar formas alrededor"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_shapes_in_the_room"
         },
         {
           "id": "2_3.marzo.s1.a-heart-with-my-hands",
@@ -557,7 +559,8 @@
             "gl": "Mirar a través dun tubo",
             "es": "Mirar a través de un tubo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_tube"
         },
         {
           "id": "2_3.marzo.s3.building-shape",
@@ -591,7 +594,8 @@
             "gl": "Mirar polo tubo",
             "es": "Mirar por el tubo"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_look_through"
         },
         {
           "id": "2_3.marzo.s3.roll-along",
@@ -912,7 +916,8 @@
             "gl": "Sinalar o que queda no prato",
             "es": "Señalar lo que queda en el plato"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_leftover"
         },
         {
           "id": "2_3.marzo.s4.what-s-in-the-basket",

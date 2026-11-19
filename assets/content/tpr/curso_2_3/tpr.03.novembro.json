@@ -150,7 +150,8 @@
             "gl": "Sinalar un paxaro",
             "es": "Señalar un pájaro"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_point_at"
         },
         {
           "id": "2_3.novembro.s1.leaf-covered",
@@ -218,7 +219,8 @@
             "gl": "Sinalar os patos",
             "es": "Señalar los patos"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_look_at_the_ducks"
         },
         {
           "id": "2_3.novembro.s1.along-the-path",
@@ -241,7 +243,8 @@
             "gl": "Sinalar as follas nos pés",
             "es": "Señalar las hojas en los pies"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_leaves_on_my_shoes"
         }
       ]
     },
@@ -332,7 +335,8 @@
             "gl": "Sinalar a copa da árbore",
             "es": "Señalar la copa del árbol"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_treetop"
         },
         {
           "id": "2_3.novembro.s2.blow-away",
@@ -401,7 +405,8 @@
             "gl": "Mover o corpo co vento",
             "es": "Mover el cuerpo con el viento"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_blustery"
         },
         {
           "id": "2_3.novembro.s2.swirly",
@@ -889,7 +894,8 @@
             "gl": "Sinalar o vapor que sobe",
             "es": "Señalar el vapor que sube"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_steaming"
         },
         {
           "id": "2_3.novembro.s4.crackly-shell",

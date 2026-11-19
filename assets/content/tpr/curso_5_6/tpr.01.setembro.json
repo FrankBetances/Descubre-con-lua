@@ -45,7 +45,8 @@
             "gl": "Poñerse diante e sinalar o camiño",
             "es": "Ponerse delante y señalar el camino"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_leader"
         },
         {
           "id": "5_6.setembro.s1.idea",
