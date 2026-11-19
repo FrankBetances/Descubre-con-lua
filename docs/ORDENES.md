@@ -456,4 +456,4 @@ Criterios propuestos por Claude Code (Frank los corrige): nada se borra; se mejo
 - [ ] El Modo Aula recibe el mismo lenguaje visual (colores, tarjetas, tipografía y movimiento) que casa, sin quitar ninguna función · evidencia:
 - [x] Todo respeta «reducir movimiento» del sistema y no rompe a escala de texto grande · evidencia: test/core/movimiento_test.dart («reducir movimiento: nada late, flota ni cae confeti»); test/features/portales_escala_test.dart (la lección y su fin a escala 1.8 en gl y es, y los portales de casa y aula a 1.8)
 - [x] Capturas de escritorio antes y después, en gl y es, de Hoy, un paso, el fin de lección y el Modo Aula · evidencia: docs/capturas/redeseno-antes-despues.png (el antes del fin es la captura del test, no del escritorio)
-- [ ] Mergeado en main con CI en verde · evidencia:
+- [x] Mergeado en main con CI en verde · evidencia: docs/ORDENES.md (tanda 1: PR #61, merge 508e7236, runs 44550053706 y 44550097035 en verde)
