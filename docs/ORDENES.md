@@ -484,10 +484,10 @@ Reparto: Antigravity hace el contenido pesado (P7.1–P7.4 de docs/PLAN_ANTIGRAV
 - [x] Na casa → Explorar → Xogos de escoita / Juegos de escucha: los pares, progresiones y cápsulas de Valeria en gallego o castellano según el idioma de la app, con lámina y voz · evidencia: test/features/xogos_escoita_test.dart («as cinco seccións, en» gl y es, «o GL/ES cambia a lingua da pantalla aberta», «xogo do par: acerto dá a misión; erro dá a pista») y docs/capturas/escritorio/escoita-lista-gl.png, -es.png, escoita-prog-gl.png, -es.png, escoita-xogo-gl.png y -es.png (app de escritorio)
 - [x] Insignias: las de Valeria que no estén aquí, copiadas, y los glifos redibujados en Valeria (huella, cascabel, orejitas) al día · evidencia: assets/brand/awards/awards.json (los 9 glifos, fila a fila, iguales a FrankBetances/Valeria:src/ValeriaPixelArt.ts del commit e2a2a5e8; las 18 insignias con el mismo glifo y metal que src/valeriaGamification.ts; comparado por Claude Code con un script el 19/11/2026: no faltaba ninguna ni había glifo distinto)
 - [x] Capturas de la fuente (Valeria) al lado de las propias, en gl y es, en un mismo documento · evidencia: docs/capturas/escritorio/escoita-xogo-gl.png (las nuestras, en gl y es; la hoja con las de Valeria al lado se entregó a Frank por el chat el 19/11/2026 y no se sube porque el repositorio es público y R5 prohíbe capturas de otro producto de la casa)
-- [ ] Mergeado en main con CI en verde · evidencia:
+- [x] Mergeado en main con CI en verde · evidencia: docs/ORDENES.md (PR #62, merge ea4eeaf9 en main, runs 44612047893 y 44612061013 en verde con los audios)
 
 ## O-20261119-9 · Restaurar lo borrado sin permiso, reglas y hooks para no repetirlo, y a main
-Estado: abierta
+Estado: cumplida
 > No no no no no y no me puedo fiar de ti lo primero es que yo no te mandé a borrar nada y lo siguiente es que has cometido demasiados errores y no son asumibles dime qué reglas hay que crear ahora para que no vuelva nunca más a ocurrir y que Hook hay que crear para mantenerte a raya
 > Restaura todo, crea las reglas y los Hooks , push al main y mergea ya
 > YO QUIERO QUE RESTAURES, GUARDES REGLAS Y HOOK Y MERGEA Y PUSH AL MAIN YA
@@ -496,4 +496,4 @@ Fuente: docs/FALLOS.md (F-20261119-1 a 4) y la propuesta de reglas y hooks que C
 - [x] Restaurado lo que Claude Code borró sin permiso: el banco de Valeria (gl, es, en), su importador, su gate, su tope, su test y la pantalla de cinco secciones; y deshechos los cambios hechos después sin permiso (línea STEAM en los pasos, campos steam del plan, tarjeta de Explorar) · evidencia: test/features/xogos_escoita_test.dart («o banco de Valeria, enteiro: 13 pares en galego e 15 en castelán» y «as cinco seccións, en» gl y es) y tools/check_escoita.py en tools/gates.sh
 - [x] Reglas R-STOP, R-BORRAR, R-STEAM y R-VERDAD-ACCIONES escritas arriba del todo en CLAUDE.md, junto a R∞ · evidencia: CLAUDE.md (R-FRANK)
 - [x] Hooks creados y conectados en .claude/settings.json: stop_freno.py, freno_herramientas.py, sin_borrar.py, registro_acciones.py y blindaje.py; probados a mano (STOP bloquea, «sigue» desbloquea, rm sin permiso bloqueado, rm pedido permitido, escribir en .claude/ bloqueado) · evidencia: docs/FALLOS.md (F-20261119-1 a 4, cada uno con su hook como guarda; tools/check_fallos.py comprueba que existan)
-- [ ] PR mergeado en main con CI en verde · evidencia:
+- [x] PR mergeado en main con CI en verde · evidencia: docs/ORDENES.md (PR #62, merge ea4eeaf9 en main, runs 44612047893 y 44612061013 en verde con los audios)
