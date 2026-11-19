@@ -29,6 +29,20 @@ CONTORNO = "#334155"
 
 # ── Objetos nuevos, en un lienzo de 100 ──────────────────────────────────
 NOVOS: dict[str, list[dict]] = {
+    "toalla_dobrada": [  # toalla doblada, azul con rayas
+        {"t": "rrect", "x": 8, "y": 30, "w": 84, "h": 44, "r": 8, "f": "#7dd3fc", "s": "#0369a1", "sw": 4},
+        {"t": "rrect", "x": 8, "y": 30, "w": 84, "h": 14, "r": 6, "f": "#bae6fd", "s": "#0369a1", "sw": 4},
+        {"t": "ruta", "d": "M14 56 L86 56 M14 64 L86 64", "s": "#ffffff", "sw": 3},
+    ],
+    "pano_dobrado": [  # pañuelo doblado en cuadrado, a cuadros
+        {"t": "rrect", "x": 14, "y": 26, "w": 72, "h": 56, "r": 6, "f": "#fecaca", "s": "#b91c1c", "sw": 4},
+        {"t": "ruta", "d": "M14 44 L86 44 M14 62 L86 62 M38 26 L38 82 M62 26 L62 82", "s": "#ef4444", "sw": 3},
+    ],
+    "pedra": [{"t": "elipse", "cx": 50, "cy": 60, "rx": 40, "ry": 28, "f": "#9ca3af", "s": "#4b5563", "sw": 5}],
+    "cuncha": [
+        {"t": "ruta", "d": "M50 88 L14 46 C20 18 80 18 86 46 Z", "f": "#fed7aa", "s": "#c2410c", "sw": 5},
+        {"t": "ruta", "d": "M50 88 L34 30 M50 88 L50 24 M50 88 L66 30", "s": "#c2410c", "sw": 3},
+    ],
     "vaso": [  # vaso de plástico transparente, azul claro
         {"t": "poli", "p": [[28, 22], [72, 22], [65, 88], [35, 88]], "f": "#cfe8ff", "s": "#2f6fd0", "sw": 4},
         {"t": "rrect", "x": 25, "y": 18, "w": 50, "h": 8, "r": 4, "f": "#e6f3ff", "s": "#2f6fd0", "sw": 4},
@@ -113,40 +127,58 @@ NOVOS: dict[str, list[dict]] = {
 # ── Las 12 escenas: texto exacto del contenido y lo que lleva la imagen ──
 # capa: (objeto, x, y, escala, recolor). Un objeto es una lámina existente
 # (nombre de fichero) o uno de NOVOS. La escena mide 160×100.
+# O-20261119-6: las 12 escenas se rehacen con las fuentes de O-20261111-4.
+# Objetos de Fluent Emoji Flat («fl:Nombre», MIT, formas congeladas en
+# tools/banco/escenas_fluent_formas.json) y, donde Fluent no tiene el objeto
+# (toalla, manta, pañuelo, billete hecho a mano…), los dibujos propios en el
+# mismo estilo plano. Todas sobre la mesa, como las láminas de las lecciones.
 ESCENAS = [
     ("vaso_esponxa", "Un vaso de plástico e unha esponxa", "Un vaso de plástico y una esponja",
-     [("vaso", 8, 8, 0.84), ("esponxa", 82, 14, 0.8)], ["1 vaso de plástico", "1 esponja"]),
+     [("fl:Cup with straw", 22, 16, 0.6), ("fl:Sponge", 88, 26, 0.52)], ["1 vaso de plástico", "1 esponja"]),
     ("bolsa_tesouros", "Unha bolsa de tea para os tesouros", "Una bolsa de tela para los tesoros",
-     [("bolsa_tea", 30, 2, 0.96)], ["1 bolsa de tela con asas"]),
+     [("bolsa_tea", 48, 8, 0.7), ("pedra", 18, 58, 0.22), ("cuncha", 116, 56, 0.24)],
+     ["1 bolsa de tela con asas", "tesoros: 1 piedra y 1 concha"]),
     ("froita_merenda", "A froita da merenda", "La fruta de la merienda",
-     [("mazan", 10, 14, 0.76), ("laranxa", 82, 14, 0.76)], ["1 manzana", "1 naranja"]),
+     [("fl:Red apple", 14, 30, 0.46), ("fl:Banana", 58, 26, 0.5), ("fl:Tangerine", 106, 30, 0.46)],
+     ["1 manzana", "1 plátano", "1 mandarina"]),
     ("xabon_toalla", "O xabón e a toalla", "El jabón y la toalla",
-     [("xabon", 6, 14, 0.8), ("toalla", 72, 8, 0.8)], ["1 jabón", "1 toalla"]),
+     [("fl:Soap", 14, 26, 0.52), ("toalla_dobrada", 82, 34, 0.62)], ["1 jabón", "1 toalla"]),
     ("peluche_manta", "Un peluche de animal e unha manta", "Un peluche de animal y una manta",
-     [("peluche_corpo", 6, 6, 0.9), ("oso", 21, 0, 0.6), ("manta_dobrada", 84, 10, 0.72)], ["1 peluche de oso", "1 manta doblada"]),
+     [("fl:Teddy bear", 12, 12, 0.64), ("manta_dobrada", 88, 22, 0.6)], ["1 peluche de oso", "1 manta doblada"]),
     ("caixa_pelota", "Unha caixa de cartón e unha pelota", "Una caja de cartón y una pelota",
-     [("caixa", 6, 6, 0.9), ("pelota", 92, 30, 0.62)], ["1 caja de cartón", "1 pelota"]),
+     [("fl:Package", 12, 12, 0.64), ("fl:Soccer ball", 96, 32, 0.44)], ["1 caja de cartón", "1 pelota"]),
     ("amorear", "Bloques, caixas ou envases baleiros para amorear", "Bloques, cajas o envases vacíos para apilar",
-     [("bloque_vermello", 20, 52, 0.5), ("bloque_azul", 20, 18, 0.5), ("caixa", 66, 40, 0.6),
-      ("envase", 118, 46, 0.5)], ["2 bloques apilados (rojo y azul)", "1 caja de cartón", "1 envase vacío"]),
+     [("bloque_vermello", 18, 50, 0.4), ("bloque_azul", 18, 22, 0.4), ("fl:Package", 66, 34, 0.42),
+      ("envase", 116, 40, 0.42)], ["2 bloques apilados (rojo y azul)", "1 caja de cartón", "1 envase vacío"]),
     ("pratos_vasos_culleres", "Pratos, vasos e culleres de verdade", "Platos, vasos y cucharas de verdad",
-     [("prato", 2, 34, 0.6), ("prato", 2, 50, 0.6), ("vaso_verdade", 58, 26, 0.5), ("vaso_verdade", 82, 26, 0.5),
-      ("culler", 104, 24, 0.52), ("culler", 120, 24, 0.52)], ["2 platos", "2 vasos", "2 cucharas"]),
+     [("prato", 0, 44, 0.5), ("prato", 0, 56, 0.5), ("vaso_verdade", 52, 34, 0.38),
+      ("vaso_verdade", 80, 34, 0.38), ("fl:Spoon", 110, 36, 0.36), ("fl:Spoon", 128, 36, 0.36)],
+     ["2 platos", "2 vasos", "2 cucharas"]),
     ("peluche_pano", "Un peluche e unha venda ou un pano", "Un peluche y una venda o un pañuelo",
-     [("peluche_corpo", 8, 6, 0.9), ("oso", 23, 0, 0.6), ("pano", 92, 22, 0.62)], ["1 peluche de oso", "1 pañuelo"]),
+     [("fl:Teddy bear", 12, 12, 0.64), ("pano_dobrado", 92, 40, 0.5)], ["1 peluche de oso", "1 pañuelo doblado"]),
     ("chuvasqueiro_botas", "O chuvasqueiro e as botas", "El chubasquero y las botas",
-     [("abrigo", 6, 4, 0.9, {"#2ecc40": "#facc15", "#1b7a2b": "#a16207", "#143a7a": "#a16207", "#84cc16": "#fde047"}),
-      ("botas", 86, 26, 0.7)], ["1 chubasquero amarillo con capucha", "1 par de botas de agua"]),
+     [("abrigo", 8, 6, 0.74, {"#2ecc40": "#facc15", "#1b7a2b": "#a16207", "#143a7a": "#a16207", "#84cc16": "#fde047"}),
+      ("botas", 90, 34, 0.5)], ["1 chubasquero amarillo con capucha", "1 par de botas de agua"]),
     ("papel_cor", "Un papel grande e unha soa cor para compartir", "Un papel grande y un solo color para compartir",
-     [("papel", 10, 2, 0.96), ("cera", 104, 30, 0.52)], ["1 papel grande en blanco", "1 cera de un solo color (azul)"]),
+     [("papel", 10, 4, 0.72), ("fl:Crayon", 98, 32, 0.42)],
+     ["1 papel grande en blanco", "1 cera de un solo color"]),
     ("mochila_billete", "Unha mochila e un billete feito por vós", "Una mochila y un billete hecho por vosotros",
-     [("mochila", 4, 6, 0.86), ("billete", 86, 24, 0.66)], ["1 mochila", "1 billete hecho a mano, sin letras"]),
+     [("fl:Backpack", 12, 10, 0.64), ("billete", 92, 40, 0.5)], ["1 mochila", "1 billete hecho a mano, sin letras"]),
 ]
+
+FONDO_MESA = [
+    {"t": "rrect", "x": 0, "y": 0, "w": 160, "h": 100, "r": 0, "f": "#dbeafe"},
+    {"t": "rrect", "x": 0, "y": 72, "w": 160, "h": 28, "r": 0, "f": "#c27c3e"},
+    {"t": "ruta", "d": "M0 72 L160 72", "s": "#7c471b", "sw": 2.5},
+]
+FLUENT = json.loads((RAIZ / "tools/banco/escenas_fluent_formas.json").read_text(encoding="utf-8"))["formas"]
 
 NUM = re.compile(r"-?\d+(?:\.\d+)?")
 
 
 def objeto(nome: str) -> list[dict]:
+    if nome.startswith("fl:"):
+        return FLUENT[nome[3:]]
     if nome in NOVOS:
         return NOVOS[nome]
     return json.loads((LAMINAS / f"{nome}.json").read_text(encoding="utf-8"))["formas"]
@@ -183,7 +215,7 @@ def mover(f: dict, x: float, y: float, e: float, cor: dict | None) -> dict:
 def construir():
     laminas, mapa, control = {}, [], []
     for eid, gl, es, capas, obxectos in ESCENAS:
-        formas = []
+        formas = list(FONDO_MESA)
         for capa in capas:
             nome, x, y, e = capa[:4]
             cor = capa[4] if len(capa) > 4 else None
@@ -226,8 +258,9 @@ def escenas_do_contido() -> dict[str, str]:
 
 def texto_control(control) -> str:
     out = ["# Imágenes de las escenas de los retos (O-20261111-1)", "",
-           "Generado por `tools/gen_escenas_retos.py`. Cada escena del contenido tiene su lámina vectorial, "
-           "hecha con las láminas del set propio que ya existían y con objetos nuevos en el mismo estilo. "
+           "Generado por `tools/gen_escenas_retos.py`. Cada escena del contenido tiene su lámina vectorial "
+           "sobre la mesa, hecha con Fluent Emoji Flat (MIT) y, donde Fluent no tiene el objeto, con dibujos propios "
+           "en el mismo estilo plano (O-20261119-6). "
            "Sin texto dentro de la imagen y sin emoji. La comprobación dice qué objetos lleva la imagen, "
            "que son los que nombra el texto.", "",
            "| Lámina | Escena (gl) | Escena (es) | La imagen lleva | Piezas | Comprobación |",

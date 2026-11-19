@@ -1,30 +1,77 @@
 {
  "vb": 160,
  "vh": 100,
- "nota": "Escena do reto: Unha bolsa de tea para os tesouros / Una bolsa de tela para los tesoros. Obxectos: 1 bolsa de tela con asas. Sen texto.",
+ "nota": "Escena do reto: Unha bolsa de tea para os tesouros / Una bolsa de tela para los tesoros. Obxectos: 1 bolsa de tela con asas, tesoros: 1 piedra y 1 concha. Sen texto.",
  "formas": [
   {
-   "t": "ruta",
-   "d": "M62.64 42.32 C62.64 15.44 93.36 15.44 93.36 42.32",
-   "s": "#8b6b3e",
-   "sw": 4.8
+   "t": "rrect",
+   "x": 0,
+   "y": 0,
+   "w": 160,
+   "h": 100,
+   "r": 0,
+   "f": "#dbeafe"
   },
   {
    "t": "rrect",
-   "x": 49.2,
-   "y": 40.4,
-   "w": 57.6,
-   "h": 48.0,
-   "r": 7.68,
-   "f": "#ecdcb8",
-   "s": "#8b6b3e",
-   "sw": 3.84
+   "x": 0,
+   "y": 72,
+   "w": 160,
+   "h": 28,
+   "r": 0,
+   "f": "#c27c3e"
   },
   {
    "t": "ruta",
-   "d": "M54.96 48.08 L101.04 48.08",
+   "d": "M0 72 L160 72",
+   "s": "#7c471b",
+   "sw": 2.5
+  },
+  {
+   "t": "ruta",
+   "d": "M71.8 37.4 C71.8 17.8 94.2 17.8 94.2 37.4",
+   "s": "#8b6b3e",
+   "sw": 3.5
+  },
+  {
+   "t": "rrect",
+   "x": 62.0,
+   "y": 36.0,
+   "w": 42.0,
+   "h": 35.0,
+   "r": 5.6,
+   "f": "#ecdcb8",
+   "s": "#8b6b3e",
+   "sw": 2.8
+  },
+  {
+   "t": "ruta",
+   "d": "M66.2 41.6 L99.8 41.6",
    "s": "#c9ad7c",
-   "sw": 2.88
+   "sw": 2.1
+  },
+  {
+   "t": "elipse",
+   "cx": 29.0,
+   "cy": 71.2,
+   "rx": 8.8,
+   "ry": 6.16,
+   "f": "#9ca3af",
+   "s": "#4b5563",
+   "sw": 1.5
+  },
+  {
+   "t": "ruta",
+   "d": "M128 77.12 L119.36 67.04 C120.8 60.32 135.2 60.32 136.64 67.04 Z",
+   "f": "#fed7aa",
+   "s": "#c2410c",
+   "sw": 1.5
+  },
+  {
+   "t": "ruta",
+   "d": "M128 77.12 L124.16 63.2 M128 77.12 L128 61.76 M128 77.12 L131.84 63.2",
+   "s": "#c2410c",
+   "sw": 1.5
   }
  ]
 }

@@ -300,7 +300,10 @@ def construir():
 
 
 def texto_control(mapa) -> str:
-    filas, sen, vistas = [], 0, set()
+    filas, sen, vistas, aprob = [], 0, set(), 0
+    ap = RAIZ / "tools/tpr_sin_base_aprobadas.txt"
+    aprobadas = ({l.strip() for l in ap.read_text(encoding="utf-8").splitlines()
+                  if l.strip() and not l.startswith("#")} if ap.exists() else set())
     for onde, en, gl, es, xesto in pezas_ensinadas():
         k = clave_de(en)
         if k in vistas:
@@ -308,13 +311,19 @@ def texto_control(mapa) -> str:
         vistas.add(k)
         m = mapa["pezas"].get(k)
         if not m:
-            sen += 1
+            if k in aprobadas:
+                filas.append(f"| {en} | {gl} | {es} | {xesto or '—'} | — | sin lámina por decisión de Frank "
+                             "(O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |")
+                aprob += 1
+            else:
+                sen += 1
             continue
         filas.append(f"| {en} | {gl} | {es} | {xesto or '—'} | `{m['clave']}` | {m['orixe']} | {m['porque']} |")
     out = ["# Láminas de los ejercicios (O-20261111-2)", "",
            "Generado por `tools/gen_laminas_palabras.py`. Una fila por palabra o frase que se enseña "
-           "(lección paso a paso, palabras del día, TPR y proyecto de 0-2) y que ya tiene su lámina.", "",
-           f"Con lámina: {len(filas)}. **Sin lámina todavía: {sen}** (las cuenta y las nombra "
+           "(lección paso a paso, palabras del día, TPR y proyecto de 0-2).", "",
+           f"Con lámina: {len(filas) - aprob}. Sin lámina por decisión de Frank: {aprob}. "
+           f"**Sin lámina todavía: {sen}** (las cuenta y las nombra "
            "`python3 tools/check_laminas_leccion.py`).", "",
            "| Palabra (en) | gl | es | Gesto | Lámina | Nueva o reutilizada | Por qué coincide |",
            "| --- | --- | --- | --- | --- | --- | --- |", *sorted(filas, key=str.lower)]
