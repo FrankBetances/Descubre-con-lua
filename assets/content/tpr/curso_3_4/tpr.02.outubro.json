@@ -140,7 +140,8 @@
           "tprAction": {
             "gl": "Abrir e xirar as dúas mans",
             "es": "Abrir y girar las dos manos"
-          }
+          },
+          "lamina": "pal_hands"
         },
         {
           "id": "3_4.outubro.s1.feet",
@@ -703,7 +704,8 @@
           "tprAction": {
             "gl": "Camiñar rápido e logo moi amodo",
             "es": "Caminar rápido y luego muy despacio"
-          }
+          },
+          "lamina": "pal_fast_and_slow"
         },
         {
           "id": "3_4.outubro.s3.up-and-down",
@@ -824,7 +826,8 @@
           "tprAction": {
             "gl": "Marchar no sitio levantando os xeonllos",
             "es": "Marchar en el sitio levantando las rodillas"
-          }
+          },
+          "lamina": "pal_march"
         },
         {
           "id": "3_4.outubro.s4.tiptoe",
@@ -939,7 +942,8 @@
           "tprAction": {
             "gl": "Xirar as mans unha arredor da outra",
             "es": "Girar las manos una alrededor de la otra"
-          }
+          },
+          "lamina": "pal_round_and_round"
         },
         {
           "id": "3_4.outubro.s4.stop-and-go",

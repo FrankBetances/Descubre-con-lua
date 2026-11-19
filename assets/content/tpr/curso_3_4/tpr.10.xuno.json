@@ -149,7 +149,8 @@
           "tprAction": {
             "gl": "Manter o equilibrio cos brazos abertos sobre unha táboa imaxinaria",
             "es": "Mantener el equilibrio con los brazos abiertos sobre una tabla imaginaria"
-          }
+          },
+          "lamina": "pal_surf"
         },
         {
           "id": "3_4.xuno.s1.blue",

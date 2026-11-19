@@ -496,7 +496,8 @@
             "gl": "Rodar unha bóla imaxinaria",
             "es": "Rodar una bola imaginaria"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_sphere"
         },
         {
           "id": "2_3.marzo.s3.pyramid",
@@ -518,7 +519,8 @@
             "gl": "Rodar un tubo pola mesa",
             "es": "Rodar un tubo por la mesa"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_cylinder"
         },
         {
           "id": "2_3.marzo.s3.dice",
@@ -584,7 +586,8 @@
             "gl": "Rodar o cilindro",
             "es": "Rodar el cilindro"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_roll_along"
         },
         {
           "id": "2_3.marzo.s3.balance-on-top",
@@ -641,7 +644,8 @@
             "gl": "Rodar as mans",
             "es": "Rodar las manos"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_easy_to_roll"
         },
         {
           "id": "2_3.marzo.s3.stackable",

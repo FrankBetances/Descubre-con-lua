@@ -588,7 +588,8 @@
           "tprAction": {
             "gl": "Balancear os brazos coma colgados dunha póla",
             "es": "Balancear los brazos como colgados de una rama"
-          }
+          },
+          "lamina": "pal_swing"
         },
         {
           "id": "3_4.febreiro.s3.slither",
@@ -936,7 +937,8 @@
           "tprAction": {
             "gl": "Saltar desde agachados coma unha ra",
             "es": "Saltar desde agachados como una rana"
-          }
+          },
+          "lamina": "pal_jump_like_a_frog"
         },
         {
           "id": "3_4.febreiro.s4.fly-like-a-bird",

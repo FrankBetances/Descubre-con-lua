@@ -273,7 +273,8 @@
             "gl": "Camiñar rozando unha parede",
             "es": "Caminar rozando una pared"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_castle_wall"
         },
         {
           "id": "5_6.xaneiro.s2.sailing-ship",
@@ -284,7 +285,8 @@
             "gl": "Balancearse coma un barco grande",
             "es": "Balancearse como un barco grande"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_sailing_ship"
         },
         {
           "id": "5_6.xaneiro.s2.canon",
@@ -372,7 +374,8 @@
             "gl": "Balancearse sentados",
             "es": "Balancearse sentados"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_travel_by_boat"
         },
         {
           "id": "5_6.xaneiro.s2.ancient-town",
@@ -383,7 +386,8 @@
             "gl": "Camiñar amodo",
             "es": "Caminar despacio"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_ancient_town"
         },
         {
           "id": "5_6.xaneiro.s2.tiny-village",

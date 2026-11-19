@@ -131,7 +131,8 @@
             "gl": "Camiñar pola liña marcada",
             "es": "Caminar por la línea marcada"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_follow_the_rules"
         },
         {
           "id": "4_5.setembro.s1.cooperate",

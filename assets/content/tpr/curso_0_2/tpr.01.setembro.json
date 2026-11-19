@@ -548,7 +548,8 @@
             "gl": "Facer xirar o móbil do berce",
             "es": "Hacer girar el móvil de la cuna"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_mobile"
         },
         {
           "id": "0_2.setembro.s3.rocking-chair",
@@ -559,7 +560,8 @@
             "gl": "Randear na cadeira co bebé",
             "es": "Mecerse en la silla con el bebé"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_rocking_chair"
         },
         {
           "id": "0_2.setembro.s3.beam",

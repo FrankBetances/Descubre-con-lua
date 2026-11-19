@@ -364,7 +364,8 @@
             "gl": "Estirarse de puntas",
             "es": "Estirarse de puntillas"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_grow_taller"
         },
         {
           "id": "4_5.marzo.s2.shrink",
@@ -441,7 +442,8 @@
             "gl": "Abrir os brazos en tres pasos",
             "es": "Abrir los brazos en tres pasos"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_big_bigger_biggest"
         },
         {
           "id": "4_5.marzo.s2.from-small-to-big",
@@ -463,7 +465,8 @@
             "gl": "Poñerse de puntas rindo",
             "es": "Ponerse de puntillas riendo"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_i_m_taller_than_you"
         }
       ]
     },

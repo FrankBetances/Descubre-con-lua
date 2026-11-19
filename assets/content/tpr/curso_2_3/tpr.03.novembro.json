@@ -66,7 +66,8 @@
             "gl": "Camiñar polo carreiro",
             "es": "Caminar por el sendero"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_footpath"
         },
         {
           "id": "2_3.novembro.s1.park-bench",
@@ -224,7 +225,8 @@
             "gl": "Camiñar en fila polo carreiro",
             "es": "Caminar en fila por el sendero"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_along_the_path"
         },
         {
           "id": "2_3.novembro.s1.leaves-on-my-shoes",
@@ -266,7 +268,8 @@
             "gl": "Xirar un brazo coma o catavento",
             "es": "Girar un brazo como la veleta"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_weather_vane"
         },
         {
           "id": "2_3.novembro.s2.paper-bag",
@@ -299,7 +302,8 @@
             "gl": "Xirar os brazos coma un muíño",
             "es": "Girar los brazos como un molino"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_windmill"
         },
         {
           "id": "2_3.novembro.s2.hat-brim",
@@ -366,7 +370,8 @@
             "gl": "Correr en círculo facendo «fiuuu»",
             "es": "Correr en círculo haciendo «fiuuu»"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_whoosh_around"
         },
         {
           "id": "2_3.novembro.s2.bend-in-the-wind",
@@ -377,7 +382,8 @@
             "gl": "Inclinarse dun lado a outro",
             "es": "Inclinarse de un lado a otro"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_bend_in_the_wind"
         },
         {
           "id": "2_3.novembro.s2.blustery",
@@ -466,7 +472,8 @@
             "gl": "Correr cos brazos abertos",
             "es": "Correr con los brazos abiertos"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_with_the_wind"
         }
       ]
     },
@@ -486,7 +493,8 @@
             "gl": "Pisar na terra e mirar a pegada",
             "es": "Pisar en la tierra y mirar la huella"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_boot_print"
         },
         {
           "id": "2_3.novembro.s3.giant-steps",
@@ -497,7 +505,8 @@
             "gl": "Dar pasos moi longos",
             "es": "Dar pasos muy largos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_giant_steps"
         },
         {
           "id": "2_3.novembro.s3.ant-steps",
@@ -508,7 +517,8 @@
             "gl": "Dar pasos moi curtos",
             "es": "Dar pasos muy cortos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_ant_steps"
         },
         {
           "id": "2_3.novembro.s3.crunchy-path",
@@ -530,7 +540,8 @@
             "gl": "Saltar enriba do monte de follas",
             "es": "Saltar encima de la pila de hojas"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_pile_of_leaves"
         },
         {
           "id": "2_3.novembro.s3.puddle-edge",
@@ -689,7 +700,8 @@
             "gl": "Alternar pasos longos e curtos",
             "es": "Alternar pasos largos y cortos"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_big_steps_and_little_steps"
         },
         {
           "id": "2_3.novembro.s3.over-the-log",

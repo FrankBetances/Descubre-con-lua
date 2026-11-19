@@ -262,10 +262,11 @@ CURATED_ICONIFY_DIRECTOS: dict[str, tuple[str, str, str, str, str]] = {
 }
 
 from banco_comun import escribir_cd  # noqa: E402
-from tpr_tandas import tanda_01  # noqa: E402
+from tpr_tandas import tanda_01, tanda_02  # noqa: E402
 
 TANDAS: list[tuple[str, object]] = [
     ("P2.82", tanda_01),
+    ("P2.83", tanda_02),
 ]
 
 TANDA_FLUENT_DIRECTOS: dict[str, tuple[str, str, str]] = {}
@@ -454,6 +455,8 @@ def generar() -> None:
                     pezas[k]["sha"] = SHA_ICONIFY
                 elif lic_override == "MIT" and "tabler" in str(formas) and "fluent" not in str(formas):
                     pezas[k]["sha"] = SHA_ICONIFY
+                if lic_override == "CC-BY-3.0":
+                    pezas[k]["autor"] = "GameIcons contributors"
             pezas[k]["revisado"] = True
             stats[cd] += 1
         else:

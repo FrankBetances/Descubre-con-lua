@@ -330,7 +330,8 @@
             "gl": "Facer xirar unha buxaina",
             "es": "Hacer girar una peonza"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_spinning_top"
         },
         {
           "id": "0_2.febreiro.s2.rock-to-and-fro",
@@ -409,7 +410,8 @@
             "gl": "Parar de xirar e sorrir",
             "es": "Parar de girar y sonreír"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_dizzy"
         },
         {
           "id": "0_2.febreiro.s2.bouncy",
@@ -443,7 +445,8 @@
             "gl": "Randear e cantar",
             "es": "Mecer y cantar"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_rock_a_bye_baby"
         },
         {
           "id": "0_2.febreiro.s2.whee",
@@ -465,7 +468,8 @@
             "gl": "Balancear o bebé dun lado a outro",
             "es": "Balancear al bebé de un lado a otro"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_side_to_side"
         },
         {
           "id": "0_2.febreiro.s2.back-and-forth",
@@ -611,7 +615,8 @@
             "gl": "Gatear polo túnel xunto ao bebé",
             "es": "Gatear por el túnel junto al bebé"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_crawl_through"
         },
         {
           "id": "0_2.febreiro.s3.seek",
@@ -833,7 +838,8 @@
             "gl": "Xirar un pano no aire",
             "es": "Girar un pañuelo en el aire"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_twirl"
         },
         {
           "id": "0_2.febreiro.s4.stamp",

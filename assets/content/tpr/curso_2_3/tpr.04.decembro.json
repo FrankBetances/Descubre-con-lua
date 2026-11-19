@@ -21,7 +21,8 @@
             "gl": "Saltar dentro dunha poza pintada",
             "es": "Saltar dentro de un charco pintado"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_puddle_jump"
         },
         {
           "id": "2_3.decembro.s1.wellington-boots",
@@ -111,7 +112,8 @@
             "gl": "Saltar fóra da poza",
             "es": "Saltar fuera del charco"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_jump_out"
         },
         {
           "id": "2_3.decembro.s1.splash-around",
@@ -199,7 +201,8 @@
             "gl": "Saltar dúas veces na poza",
             "es": "Saltar dos veces en el charco"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_splash_splash"
         },
         {
           "id": "2_3.decembro.s1.boots-on-let-s-go",
@@ -221,7 +224,8 @@
             "gl": "Saltar e quedar dentro",
             "es": "Saltar y quedarse dentro"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_in_the_puddle"
         },
         {
           "id": "2_3.decembro.s1.out-of-the-puddle",
@@ -232,7 +236,8 @@
             "gl": "Saltar e saír",
             "es": "Saltar y salir"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_out_of_the_puddle"
         }
       ]
     },

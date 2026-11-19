@@ -315,7 +315,8 @@
           "tprAction": {
             "gl": "Inclinar unha regadeira imaxinaria",
             "es": "Inclinar una regadera imaginaria"
-          }
+          },
+          "lamina": "pal_watering_can"
         },
         {
           "id": "3_4.abril.s2.stem",
@@ -811,7 +812,8 @@
           "tprAction": {
             "gl": "Camiñar rápido detrás dunha compañeira sen tocala",
             "es": "Caminar rápido detrás de una compañera sin tocarla"
-          }
+          },
+          "lamina": "pal_chase"
         },
         {
           "id": "3_4.abril.s4.balance",

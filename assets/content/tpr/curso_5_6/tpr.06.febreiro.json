@@ -186,7 +186,8 @@
             "gl": "Xirar amosando o disfrace",
             "es": "Girar enseñando el disfraz"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_sparkling_costume"
         },
         {
           "id": "5_6.febreiro.s1.cat-and-hat-rhyme",
@@ -362,7 +363,8 @@
             "gl": "Dar pasos cara ao centro",
             "es": "Dar pasos hacia el centro"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_enter_the_stage"
         },
         {
           "id": "5_6.febreiro.s2.exit-the-stage",
@@ -373,7 +375,8 @@
             "gl": "Camiñar cara ao lado",
             "es": "Caminar hacia el lado"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_exit_the_stage"
         },
         {
           "id": "5_6.febreiro.s2.well-rehearsed",
@@ -462,7 +465,8 @@
             "gl": "Camiñar dun lado a outro",
             "es": "Caminar de un lado a otro"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_enter_on_the_left_and_exit_on_the_right"
         }
       ]
     },
@@ -837,7 +841,8 @@
             "gl": "Correr ao recuncho",
             "es": "Correr al rincón"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_run_home"
         },
         {
           "id": "5_6.febreiro.s4.upside-down",

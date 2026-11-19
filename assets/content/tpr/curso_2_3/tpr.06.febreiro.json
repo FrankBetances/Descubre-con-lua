@@ -113,7 +113,8 @@
             "gl": "Saltar cara adiante coas mans",
             "es": "Saltar hacia adelante con las manos"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_pounce"
         },
         {
           "id": "2_3.febreiro.s1.growl",
@@ -147,7 +148,8 @@
             "gl": "Saltar dando unha volta",
             "es": "Saltar dando una vuelta"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_hop_around"
         },
         {
           "id": "2_3.febreiro.s1.stripy",
@@ -191,7 +193,8 @@
             "gl": "Brincar sen parar",
             "es": "Brincar sin parar"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_hopping"
         },
         {
           "id": "2_3.febreiro.s1.i-m-a-tiger",
@@ -224,7 +227,8 @@
             "gl": "Saltar cos pés xuntos",
             "es": "Saltar con los pies juntos"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_hop_like_a_kangaroo"
         },
         {
           "id": "2_3.febreiro.s1.walk-like-a-penguin",
@@ -335,7 +339,8 @@
             "gl": "Balancear os brazos coma un mono",
             "es": "Balancear los brazos como un mono"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_swing_from_a_vine"
         },
         {
           "id": "2_3.febreiro.s2.beat-chest",
@@ -780,7 +785,8 @@
             "gl": "Bater no bombo ao marchar",
             "es": "Golpear el bombo al marchar"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_big_drum"
         },
         {
           "id": "2_3.febreiro.s4.cape",
@@ -791,7 +797,8 @@
             "gl": "Xirar coa capa posta",
             "es": "Girar con la capa puesta"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_cape"
         },
         {
           "id": "2_3.febreiro.s4.parade-around",
@@ -813,7 +820,8 @@
             "gl": "Xirar e amosar o disfrace",
             "es": "Girar y enseñar el disfraz"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_show_off"
         },
         {
           "id": "2_3.febreiro.s4.roar-loudly",

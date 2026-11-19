@@ -55,7 +55,8 @@
             "gl": "Inclinar a man coma unha costa",
             "es": "Inclinar la mano como una cuesta"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_slope"
         },
         {
           "id": "4_5.novembro.s1.steps",
@@ -78,7 +79,8 @@
             "gl": "Xirar mirando arredor",
             "es": "Girar mirando alrededor"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_panorama"
         },
         {
           "id": "4_5.novembro.s1.walking-stick",
@@ -100,7 +102,8 @@
             "gl": "Camiñar levantando os xeonllos",
             "es": "Caminar levantando las rodillas"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_hike"
         },
         {
           "id": "4_5.novembro.s1.climb-up-the-hill",
@@ -111,7 +114,8 @@
             "gl": "Camiñar inclinado cara adiante",
             "es": "Caminar inclinado hacia delante"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_climb_up_the_hill"
         },
         {
           "id": "4_5.novembro.s1.walk-down",
@@ -332,7 +336,8 @@
             "gl": "Abanear os brazos amodo",
             "es": "Mecer los brazos despacio"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_sway_like_an_oak"
         },
         {
           "id": "4_5.novembro.s2.gather-acorns",

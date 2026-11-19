@@ -100,7 +100,8 @@
             "gl": "Camiñar sinalando o mapa",
             "es": "Caminar señalando el mapa"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_follow_the_map"
         },
         {
           "id": "4_5.xaneiro.s1.turn-left",
@@ -123,7 +124,8 @@
             "gl": "Xirar cara á dereita",
             "es": "Girar hacia la derecha"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_turn_right"
         },
         {
           "id": "4_5.xaneiro.s1.go-straight-on",
@@ -134,7 +136,8 @@
             "gl": "Camiñar recto sen xirar",
             "es": "Caminar recto sin girar"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_go_straight_on"
         },
         {
           "id": "4_5.xaneiro.s1.find-the-way",
@@ -354,7 +357,8 @@
             "gl": "Gatear baixo a mesa",
             "es": "Gatear bajo la mesa"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_crawl_under"
         },
         {
           "id": "4_5.xaneiro.s2.climb-over",
@@ -376,7 +380,8 @@
             "gl": "Camiñar arredor dun cono",
             "es": "Caminar alrededor de un cono"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_go_around"
         },
         {
           "id": "4_5.xaneiro.s2.between",
@@ -431,7 +436,8 @@
             "gl": "Gatear baixo a mesa",
             "es": "Gatear bajo la mesa"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_crawl_under_the_table"
         },
         {
           "id": "4_5.xaneiro.s2.step-between-the-hoops",
@@ -631,7 +637,8 @@
             "gl": "Correr mirando o reloxo",
             "es": "Correr mirando el reloj"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_late"
         },
         {
           "id": "4_5.xaneiro.s3.electric",

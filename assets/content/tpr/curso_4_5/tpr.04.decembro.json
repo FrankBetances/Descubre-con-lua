@@ -493,7 +493,8 @@
             "gl": "Xirar os brazos coma unha noria",
             "es": "Girar los brazos como una noria"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_big_wheel"
         },
         {
           "id": "4_5.decembro.s3.light-bulb",
@@ -682,7 +683,8 @@
             "gl": "Xirar os brazos",
             "es": "Girar los brazos"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_the_big_wheel_goes_round_and_round"
         },
         {
           "id": "4_5.decembro.s3.lights-in-the-dark",

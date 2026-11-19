@@ -242,7 +242,8 @@
           "tprAction": {
             "gl": "Camiñar levantando moito os pés coma na neve",
             "es": "Caminar levantando mucho los pies como en la nieve"
-          }
+          },
+          "lamina": "pal_in_the_snow"
         }
       ]
     },
@@ -841,7 +842,8 @@
           "tprAction": {
             "gl": "Inclinar o corpo cara adiante cunha man no peito",
             "es": "Inclinar el cuerpo hacia delante con una mano en el pecho"
-          }
+          },
+          "lamina": "pal_bow"
         },
         {
           "id": "3_4.decembro.s4.count",

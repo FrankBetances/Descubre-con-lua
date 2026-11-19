@@ -167,7 +167,8 @@
             "gl": "Balancearse",
             "es": "Balancearse"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_floating_raft"
         },
         {
           "id": "4_5.xuno.s1.busy-harbour",
@@ -233,7 +234,8 @@
             "gl": "Correr ao barco",
             "es": "Correr al barco"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_all_hands_on_deck"
         }
       ]
     },
@@ -375,7 +377,8 @@
             "gl": "Saltar cos brazos arriba",
             "es": "Saltar con los brazos arriba"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_jump_for_joy"
         },
         {
           "id": "4_5.xuno.s2.proud-of-myself",
@@ -419,7 +422,8 @@
             "gl": "Poñerse de puntas",
             "es": "Ponerse de puntillas"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_grown_up_now"
         },
         {
           "id": "4_5.xuno.s2.do-you-remember",
@@ -738,7 +742,8 @@
             "gl": "Saltar a pé coxo nos cadros",
             "es": "Saltar a la pata coja en los cuadros"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_hopscotch"
         },
         {
           "id": "4_5.xuno.s4.skipping-rope",
@@ -749,7 +754,8 @@
             "gl": "Saltar cos pés xuntos",
             "es": "Saltar con los pies juntos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_skipping_rope"
         },
         {
           "id": "4_5.xuno.s4.chalk",
@@ -782,7 +788,8 @@
             "gl": "Xirar botando auga",
             "es": "Girar echando agua"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_sprinkler"
         },
         {
           "id": "4_5.xuno.s4.hop-on-one-foot",
@@ -793,7 +800,8 @@
             "gl": "Saltar nun pé",
             "es": "Saltar en un pie"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_hop_on_one_foot"
         },
         {
           "id": "4_5.xuno.s4.skip",
@@ -804,7 +812,8 @@
             "gl": "Saltar a corda imaxinaria",
             "es": "Saltar la comba imaginaria"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_skip"
         },
         {
           "id": "4_5.xuno.s4.throw-and-catch",
@@ -826,7 +835,8 @@
             "gl": "Correr rindo",
             "es": "Correr riendo"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_run_through_the_sprinkler"
         },
         {
           "id": "4_5.xuno.s4.draw-with-chalk",
@@ -903,7 +913,8 @@
             "gl": "Saltar e xirar",
             "es": "Saltar y girar"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_hop_to_number_three_then_turn_around"
         },
         {
           "id": "4_5.xuno.s4.if-it-s-hot-we-play-with-water",

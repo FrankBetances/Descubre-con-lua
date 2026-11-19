@@ -381,7 +381,8 @@
           "tprAction": {
             "gl": "Facer xirar un aro imaxinario na cintura",
             "es": "Hacer girar un aro imaginario en la cintura"
-          }
+          },
+          "lamina": "pal_spin"
         },
         {
           "id": "3_4.marzo.s2.round",
@@ -439,7 +440,8 @@
           "tprAction": {
             "gl": "Facer rodar un aro imaxinario polo chan",
             "es": "Hacer rodar un aro imaginario por el suelo"
-          }
+          },
+          "lamina": "pal_roll_the_hoop"
         },
         {
           "id": "3_4.marzo.s2.make-a-circle",
@@ -472,7 +474,8 @@
           "tprAction": {
             "gl": "Camiñar arredor dun cadrado imaxinario",
             "es": "Caminar alrededor de un cuadrado imaginario"
-          }
+          },
+          "lamina": "pal_around_the_square"
         }
       ]
     },

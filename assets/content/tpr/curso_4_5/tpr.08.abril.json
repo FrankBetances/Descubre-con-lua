@@ -78,7 +78,8 @@
             "gl": "Balancearse coma no barco",
             "es": "Balancearse como en el barco"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_boat_trip"
         },
         {
           "id": "4_5.abril.s1.campsite",
@@ -157,7 +158,8 @@
             "gl": "Correr cos brazos abertos",
             "es": "Correr con los brazos abiertos"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_wild_and_free"
         },
         {
           "id": "4_5.abril.s1.protected",
@@ -332,7 +334,8 @@
             "gl": "Abrir os brazos e xirar amodo",
             "es": "Abrir los brazos y girar despacio"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_soar"
         },
         {
           "id": "4_5.abril.s2.dive-for-fish",
@@ -584,7 +587,8 @@
             "gl": "Balancearse amodo",
             "es": "Balancearse despacio"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_sway_with_the_current"
         },
         {
           "id": "4_5.abril.s3.explore-the-seabed",
@@ -595,7 +599,8 @@
             "gl": "Gatear mirando o chan",
             "es": "Gatear mirando el suelo"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_explore_the_seabed"
         },
         {
           "id": "4_5.abril.s3.swim-in-a-group",
@@ -929,7 +934,8 @@
             "gl": "Xirar a billa",
             "es": "Girar el grifo"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_turn_off_the_tap"
         }
       ]
     }

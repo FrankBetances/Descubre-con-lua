@@ -855,7 +855,8 @@
             "gl": "Mandar bicos coa man",
             "es": "Mandar besos con la mano"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_blow_kisses"
         },
         {
           "id": "0_2.decembro.s4.merry",

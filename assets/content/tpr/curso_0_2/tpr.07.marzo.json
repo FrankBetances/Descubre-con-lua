@@ -538,7 +538,8 @@
             "gl": "Rodar o rolo pola mesa",
             "es": "Rodar el rodillo por la mesa"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_rolling_pin"
         },
         {
           "id": "0_2.marzo.s3.wheels",
@@ -549,7 +550,8 @@
             "gl": "Xirar as rodas dun coche de xoguete",
             "es": "Girar las ruedas de un coche de juguete"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_wheels"
         },
         {
           "id": "0_2.marzo.s3.marble-run",
@@ -572,7 +574,8 @@
             "gl": "Rodar a pelota de volta ao bebé",
             "es": "Rodar la pelota de vuelta al bebé"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_roll_back"
         },
         {
           "id": "0_2.marzo.s3.chase-after",
@@ -629,7 +632,8 @@
             "gl": "Rodar as mans unha sobre outra",
             "es": "Rodar las manos una sobre otra"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_rolling"
         },
         {
           "id": "0_2.marzo.s3.squeezy",
@@ -651,7 +655,8 @@
             "gl": "Facer xirar unha pelota",
             "es": "Hacer girar una pelota"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_spinning"
         },
         {
           "id": "0_2.marzo.s3.lightweight",
@@ -696,7 +701,8 @@
             "gl": "Rodar a pelota ata o bebé",
             "es": "Rodar la pelota hasta el bebé"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_ball_to_baby"
         },
         {
           "id": "0_2.marzo.s3.down-the-ramp",

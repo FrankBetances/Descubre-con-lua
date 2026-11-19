@@ -287,7 +287,8 @@
             "gl": "Rodar o coche pola mesa",
             "es": "Rodar el cochecito por la mesa"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_toy_car"
         },
         {
           "id": "2_3.setembro.s2.play-dough",
@@ -366,7 +367,8 @@
             "gl": "Inclinar a teteira de xoguete",
             "es": "Inclinar la tetera de juguete"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_pour_tea"
         },
         {
           "id": "2_3.setembro.s2.hand-it-over",

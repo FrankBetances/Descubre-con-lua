@@ -33,7 +33,8 @@
             "gl": "Xirar arredor dun amigo",
             "es": "Girar alrededor de un amigo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_planet"
         },
         {
           "id": "5_6.decembro.s1.orbit",
@@ -55,7 +56,8 @@
             "gl": "Xirar todos arredor do centro",
             "es": "Girar todos alrededor del centro"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_solar_system"
         },
         {
           "id": "5_6.decembro.s1.sunlight",
@@ -100,7 +102,8 @@
             "gl": "Xirar amodo sobre si",
             "es": "Girar despacio sobre sí mismo"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_spin_like_the_earth"
         },
         {
           "id": "5_6.decembro.s1.shine-like-the-sun",
@@ -134,7 +137,8 @@
             "gl": "Camiñar arredor dun amigo",
             "es": "Caminar alrededor de un amigo"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_circle_around"
         },
         {
           "id": "5_6.decembro.s1.point-to-the-sky",
@@ -190,7 +194,8 @@
             "gl": "Xirar amodo",
             "es": "Girar despacio"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_spinning_earth"
         },
         {
           "id": "5_6.decembro.s1.the-earth-goes-around-the-sun",
@@ -360,7 +365,8 @@
             "gl": "Saltar cos brazos arriba",
             "es": "Saltar con los brazos arriba"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_blast_off"
         },
         {
           "id": "5_6.decembro.s2.float-in-space",
@@ -382,7 +388,8 @@
             "gl": "Correr cos brazos estirados",
             "es": "Correr con los brazos estirados"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_zoom_through_space"
         },
         {
           "id": "5_6.decembro.s2.starry",
@@ -788,7 +795,8 @@
             "gl": "Saltar ao dicir «ano novo»",
             "es": "Saltar al decir «año nuevo»"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_new_year"
         },
         {
           "id": "5_6.decembro.s4.countdown-to-midnight",

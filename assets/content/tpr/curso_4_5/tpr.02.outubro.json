@@ -32,7 +32,8 @@
             "gl": "Parar e correr segundo a cor",
             "es": "Parar y correr según el color"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_traffic_light_game"
         },
         {
           "id": "4_5.outubro.s1.statue",
@@ -255,7 +256,8 @@
             "gl": "Correr lixeiro de puntas",
             "es": "Correr ligero de puntillas"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_fox_cub"
         },
         {
           "id": "4_5.outubro.s2.hare",
@@ -266,7 +268,8 @@
             "gl": "Saltar longo coma unha lebre",
             "es": "Saltar largo como una liebre"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_hare"
         },
         {
           "id": "4_5.outubro.s2.den",
@@ -334,7 +337,8 @@
             "gl": "Correr lixeiro e agachado",
             "es": "Correr ligero y agachado"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_run_like_a_fox"
         },
         {
           "id": "4_5.outubro.s2.sneak",
@@ -368,7 +372,8 @@
             "gl": "Correr ao refuxio",
             "es": "Correr al refugio"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_escape"
         },
         {
           "id": "4_5.outubro.s2.pass-the-baton",
@@ -425,7 +430,8 @@
             "gl": "Correr a toda velocidade",
             "es": "Correr a toda velocidad"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_fastest"
         },
         {
           "id": "4_5.outubro.s2.you-re-it",
@@ -458,7 +464,8 @@
             "gl": "Correr ao recuncho",
             "es": "Correr al rincón"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_run_to_the_den"
         },
         {
           "id": "4_5.outubro.s2.if-i-touch-you-you-re-it",
@@ -501,7 +508,8 @@
             "gl": "Saltar de pedra en pedra",
             "es": "Saltar de piedra en piedra"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_stepping_stones"
         },
         {
           "id": "4_5.outubro.s3.tightrope",
@@ -523,7 +531,8 @@
             "gl": "Camiñar co saquiño na cabeza",
             "es": "Caminar con el saquito en la cabeza"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_beanbag_balance"
         },
         {
           "id": "4_5.outubro.s3.flamingo-pose",
@@ -545,7 +554,8 @@
             "gl": "Balancearse enriba da táboa",
             "es": "Balancearse encima de la tabla"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_wobble_board"
         },
         {
           "id": "4_5.outubro.s3.centre",
@@ -601,7 +611,8 @@
             "gl": "Inclinarse coas mans estiradas",
             "es": "Inclinarse con las manos estiradas"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_lean_forward"
         },
         {
           "id": "4_5.outubro.s3.stretch-out-arms",
@@ -700,7 +711,8 @@
             "gl": "Saltar dunha a outra",
             "es": "Saltar de una a otra"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_stone_to_stone"
         }
       ]
     },

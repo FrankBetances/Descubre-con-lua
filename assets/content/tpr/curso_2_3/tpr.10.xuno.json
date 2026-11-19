@@ -121,7 +121,8 @@
             "gl": "Abanearse sentados",
             "es": "Balancearse sentados"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_rock_the_boat"
         },
         {
           "id": "2_3.xuno.s1.steer-the-boat",
@@ -132,7 +133,8 @@
             "gl": "Xirar un temón imaxinario",
             "es": "Girar un timón imaginario"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_steer_the_boat"
         },
         {
           "id": "2_3.xuno.s1.drift-along",
@@ -188,7 +190,8 @@
             "gl": "Balancearse amodo",
             "es": "Balancearse despacio"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_sailing_along"
         },
         {
           "id": "2_3.xuno.s1.row-row-row-your-boat",
@@ -561,7 +564,8 @@
             "gl": "Camiñar mirando o chan",
             "es": "Caminar mirando el suelo"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_beachcomb"
         },
         {
           "id": "2_3.xuno.s3.turn-over-a-stone",

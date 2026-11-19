@@ -846,7 +846,8 @@
             "gl": "Axudar a xirar de costas a barriga",
             "es": "Ayudar a girar de espaldas a barriga"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_roll_over"
         },
         {
           "id": "0_2.outubro.s4.teethe",

@@ -345,7 +345,8 @@
             "gl": "Correr moi rápido no sitio",
             "es": "Correr muy rápido en el sitio"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_sprint_fast"
         },
         {
           "id": "5_6.outubro.s2.breathe-slow",
@@ -456,7 +457,8 @@
             "gl": "Correr e pousar a man no peito",
             "es": "Correr y poner la mano en el pecho"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_after_running_the_heart_beats_faster"
         },
         {
           "id": "5_6.outubro.s2.breathe-in-breathe-out",
@@ -865,7 +867,8 @@
             "gl": "Inclinar a cabeza",
             "es": "Inclinar la cabeza"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_drowsy"
         },
         {
           "id": "5_6.outubro.s4.wide-awake",

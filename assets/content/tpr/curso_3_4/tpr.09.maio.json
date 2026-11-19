@@ -80,7 +80,8 @@
           "tprAction": {
             "gl": "Inclinarse sobre un lavabo imaxinario",
             "es": "Inclinarse sobre un lavabo imaginario"
-          }
+          },
+          "lamina": "pal_sink"
         },
         {
           "id": "3_4.maio.s1.nails",
@@ -789,7 +790,8 @@
           "tprAction": {
             "gl": "Poñer voz grave e dar pasos pesados",
             "es": "Poner voz grave y dar pasos pesados"
-          }
+          },
+          "lamina": "pal_giant"
         },
         {
           "id": "3_4.maio.s4.dragon",
@@ -946,7 +948,8 @@
           "tprAction": {
             "gl": "Estirarse moito e camiñar a pasos grandes",
             "es": "Estirarse mucho y caminar a pasos grandes"
-          }
+          },
+          "lamina": "pal_big_like_a_giant"
         }
       ]
     }

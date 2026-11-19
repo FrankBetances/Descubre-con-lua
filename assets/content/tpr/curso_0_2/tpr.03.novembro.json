@@ -194,7 +194,8 @@
             "gl": "Rodar unha noz entre as mans",
             "es": "Rodar una nuez entre las manos"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_bumpy_walnut"
         },
         {
           "id": "0_2.novembro.s1.treasure-basket",
@@ -328,7 +329,8 @@
             "gl": "Pasear co bebé entre follas",
             "es": "Pasear con el bebé entre hojas"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_autumn_walk"
         },
         {
           "id": "0_2.novembro.s2.drift",
@@ -617,7 +619,8 @@
             "gl": "Abanear o bebé ao son da música",
             "es": "Balancear al bebé al son de la música"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_sway"
         },
         {
           "id": "0_2.novembro.s3.toasty",
@@ -706,7 +709,8 @@
             "gl": "Camiñar en círculo co bebé",
             "es": "Caminar en círculo con el bebé"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_around_the_fire"
         }
       ]
     },

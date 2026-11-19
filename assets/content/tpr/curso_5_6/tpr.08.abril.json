@@ -111,7 +111,8 @@
             "gl": "Saltar coas mans xuntas",
             "es": "Saltar con las manos juntas"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_swim_like_a_dolphin"
         },
         {
           "id": "5_6.abril.s1.give-a-thumbs-up",
@@ -285,7 +286,8 @@
             "gl": "Arrastrarse amodo",
             "es": "Arrastrarse despacio"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_sea_slug"
         },
         {
           "id": "5_6.abril.s2.spider-crab",
@@ -351,7 +353,8 @@
             "gl": "Correr de lado coma un cangrexo",
             "es": "Correr de lado como un cangrejo"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_scuttle"
         },
         {
           "id": "5_6.abril.s2.hide-in-the-seagrass",
@@ -506,7 +509,8 @@
             "gl": "Xirar os brazos",
             "es": "Girar los brazos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_wind_turbine"
         },
         {
           "id": "5_6.abril.s3.water-tap",
@@ -793,7 +797,8 @@
             "gl": "Saltar cos brazos xuntos",
             "es": "Saltar con los brazos juntos"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_leap_out_of_the_water"
         },
         {
           "id": "5_6.abril.s4.communicate",
@@ -881,7 +886,8 @@
             "gl": "Xirar no sitio",
             "es": "Girar en el sitio"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_acrobatic"
         },
         {
           "id": "5_6.abril.s4.look-dolphins",

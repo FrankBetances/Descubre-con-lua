@@ -363,3 +363,71 @@ def cara_dormida(cx: float, cy: float, r: float = 20, somnolienta: bool = False)
         ]
     return o
 
+
+def nino_corriendo(
+    cx: float,
+    cy: float,
+    mira: int = 1,
+    camisa: tuple[str, str] = (ROJO, ROJO_OSCURO),
+) -> list[dict]:
+    """Niño corriendo con zancada amplia y brazos doblados."""
+    return nino(
+        (cx + 4 * mira, cy),
+        (cx + 2 * mira, cy + 12),
+        (cx - 2 * mira, cy + 30),
+        [[(cx + 14 * mira, cy + 14), (cx + 20 * mira, cy + 8)], [(cx - 12 * mira, cy + 18), (cx - 18 * mira, cy + 12)]],
+        [[(cx + 10 * mira, cy + 40), (cx + 18 * mira, cy + 50)], [(cx - 12 * mira, cy + 40), (cx - 22 * mira, cy + 46)]],
+        camisa=camisa,
+        mira=mira,
+    )
+
+
+def nino_saltando(
+    cx: float,
+    cy: float,
+    brazos_arriba: bool = True,
+    pata_coja: bool = False,
+    camisa: tuple[str, str] = (ROJO, ROJO_OSCURO),
+) -> list[dict]:
+    """Niño en el aire saltando sobre el suelo."""
+    brazos = [[(cx - 16, cy - 2)], [(cx + 16, cy - 2)]] if brazos_arriba else [[(cx - 14, cy + 20)], [(cx + 14, cy + 20)]]
+    pernas = [[(cx - 5, cy + 46)], [(cx + 12, cy + 36), (cx + 4, cy + 42)]] if pata_coja else [[(cx - 8, cy + 42)], [(cx + 8, cy + 42)]]
+    return nino((cx, cy), (cx, cy + 12), (cx, cy + 28), brazos, pernas, camisa=camisa)
+
+
+def nino_inclinado(
+    cx: float,
+    cy: float,
+    dx: float = 10,
+    camisa: tuple[str, str] = (ROJO, ROJO_OSCURO),
+) -> list[dict]:
+    """Niño inclinando el tronco hacia un lado o hacia delante."""
+    s = 1 if dx >= 0 else -1
+    return nino(
+        (cx + dx, cy),
+        (cx + dx * 0.6, cy + 12),
+        (cx, cy + 32),
+        [[(cx + dx * 0.8 + 12, cy + 16)], [(cx + dx * 0.8 - 12, cy + 16)]],
+        [[(cx - 6, cy + 54)], [(cx + 6, cy + 54)]],
+        camisa=camisa,
+        mira=s,
+    )
+
+
+def pina_prop(cx: float, cy: float, rx: float = 12, ry: float = 16) -> list[dict]:
+    """Piña natural de pino marrón con escamas (distinta de la fruta pineapple)."""
+    return [
+        E(cx, cy, rx, ry, BARRO, "#451a03", 2.0),
+        L(f"M{cx - rx * 0.7:.1f} {cy - ry * 0.35:.1f} Q{cx:.1f} {cy - ry * 0.1:.1f} {cx + rx * 0.7:.1f} {cy - ry * 0.35:.1f}", "#fef3c7", 1.4),
+        L(f"M{cx - rx * 0.85:.1f} {cy + ry * 0.05:.1f} Q{cx:.1f} {cy + ry * 0.3:.1f} {cx + rx * 0.85:.1f} {cy + ry * 0.05:.1f}", "#fef3c7", 1.4),
+        L(f"M{cx - rx * 0.65:.1f} {cy + ry * 0.45:.1f} Q{cx:.1f} {cy + ry * 0.68:.1f} {cx + rx * 0.65:.1f} {cy + ry * 0.45:.1f}", "#fef3c7", 1.4),
+    ]
+
+
+def charco_prop(cx: float, cy: float, rx: float = 28, ry: float = 8) -> list[dict]:
+    return [
+        E(cx, cy, rx, ry, AGUA, AGUA_OSCURO, 2.0),
+        E(cx - rx * 0.25, cy - ry * 0.2, rx * 0.35, ry * 0.25, "#bae6fd"),
+    ]
+
+

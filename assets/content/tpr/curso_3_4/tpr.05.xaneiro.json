@@ -364,7 +364,8 @@
           "tprAction": {
             "gl": "Camiñar rápido no sitio coa cabeza tapada",
             "es": "Caminar rápido en el sitio con la cabeza tapada"
-          }
+          },
+          "lamina": "pal_hurry"
         },
         {
           "id": "3_4.xaneiro.s2.close",
@@ -465,7 +466,8 @@
           "tprAction": {
             "gl": "Saltar cos dous pés dentro dunha poza imaxinaria",
             "es": "Saltar con los dos pies dentro de un charco imaginario"
-          }
+          },
+          "lamina": "pal_jump_in_the_puddle"
         },
         {
           "id": "3_4.xaneiro.s2.under-the-umbrella",

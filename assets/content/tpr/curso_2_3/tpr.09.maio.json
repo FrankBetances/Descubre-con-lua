@@ -759,7 +759,8 @@
             "gl": "Xirar as mans coma a lavadora",
             "es": "Girar las manos como la lavadora"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_washing_machine"
         },
         {
           "id": "2_3.maio.s4.doll-clothes",

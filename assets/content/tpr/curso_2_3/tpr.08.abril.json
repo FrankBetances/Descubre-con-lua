@@ -76,7 +76,8 @@
             "gl": "Saltar coma un saltón",
             "es": "Saltar como un saltamontes"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_grasshopper"
         },
         {
           "id": "2_3.abril.s1.picnic-spot",
@@ -110,7 +111,8 @@
             "gl": "Rodar de lado",
             "es": "Rodar de lado"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_roll_down"
         },
         {
           "id": "2_3.abril.s1.tiptoe-through",
@@ -358,7 +360,8 @@
             "gl": "Estirar os brazos e correr",
             "es": "Estirar los brazos y correr"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_fly_off"
         },
         {
           "id": "2_3.abril.s2.peck-at-seeds",

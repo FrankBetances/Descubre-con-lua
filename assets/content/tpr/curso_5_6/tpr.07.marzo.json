@@ -406,7 +406,8 @@
             "gl": "Inclinarse dun lado",
             "es": "Inclinarse de un lado"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_lopsided"
         },
         {
           "id": "5_6.marzo.s2.mirrored",
@@ -625,7 +626,8 @@
             "gl": "Xirar o dedo",
             "es": "Girar el dedo"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_spiralling"
         },
         {
           "id": "5_6.marzo.s3.countless",
@@ -746,7 +748,8 @@
             "gl": "Xirar a man en círculo",
             "es": "Girar la mano en círculo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_colour_wheel"
         },
         {
           "id": "5_6.marzo.s4.shade-card",
@@ -823,7 +826,8 @@
             "gl": "Xirar a man",
             "es": "Girar la mano"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_rotate_a_piece"
         },
         {
           "id": "5_6.marzo.s4.fill-a-space",

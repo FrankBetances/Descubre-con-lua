@@ -612,7 +612,8 @@
           "tprAction": {
             "gl": "Balancearse amodo dun lado a outro",
             "es": "Balancearse despacio de un lado a otro"
-          }
+          },
+          "lamina": "pal_rock"
         },
         {
           "id": "3_4.setembro.s3.wait",

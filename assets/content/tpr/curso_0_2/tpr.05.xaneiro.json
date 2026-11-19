@@ -388,7 +388,8 @@
             "gl": "Brincar o bebé no xeonllo coma un cabalo",
             "es": "Hacer trotar al bebé en la rodilla como un caballo"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_trot"
         },
         {
           "id": "0_2.xaneiro.s2.woolly-lamb",
@@ -519,7 +520,8 @@
             "gl": "Saltar cos dedos coma un pardal",
             "es": "Saltar con los dedos como un gorrión"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_sparrow"
         },
         {
           "id": "0_2.xaneiro.s3.beak",
@@ -767,7 +769,8 @@
             "gl": "Virar o pau de choiva amodo",
             "es": "Girar el palo de lluvia despacio"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_rain_stick"
         },
         {
           "id": "0_2.xaneiro.s4.music-box",

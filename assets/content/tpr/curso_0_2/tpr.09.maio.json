@@ -583,7 +583,8 @@
             "gl": "Xirar a billa amodo",
             "es": "Girar el grifo despacio"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_turn_the_tap"
         },
         {
           "id": "0_2.maio.s3.wipe-clean",

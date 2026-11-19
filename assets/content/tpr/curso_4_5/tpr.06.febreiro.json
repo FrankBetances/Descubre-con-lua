@@ -122,7 +122,8 @@
             "gl": "Inclinarse diante do público",
             "es": "Inclinarse delante del público"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_take_a_bow"
         },
         {
           "id": "4_5.febreiro.s1.walk-heavily",
@@ -213,7 +214,8 @@
             "gl": "Inclinarse xuntos",
             "es": "Inclinarse juntos"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_everyone_take_a_bow"
         },
         {
           "id": "4_5.febreiro.s1.when-the-music-stops-hide",
@@ -382,7 +384,8 @@
             "gl": "Correr cos brazos estirados",
             "es": "Correr con los brazos estirados"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_fly_to_the_rescue"
         },
         {
           "id": "4_5.febreiro.s2.brave-knight",
@@ -841,7 +844,8 @@
             "gl": "Inclinar o monicreque",
             "es": "Inclinar el títere"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_bow_to_the_audience"
         },
         {
           "id": "4_5.febreiro.s4.squeaky-voice",

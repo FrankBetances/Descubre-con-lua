@@ -202,7 +202,8 @@
           "tprAction": {
             "gl": "Pisar follas imaxinarias facendo «cranch, cranch»",
             "es": "Pisar hojas imaginarias haciendo «cranch, cranch»"
-          }
+          },
+          "lamina": "pal_crunch_leaves"
         },
         {
           "id": "3_4.novembro.s1.fall-down",
@@ -317,7 +318,8 @@
           "tprAction": {
             "gl": "Amosar unha piña imaxinaria e rodala entre as mans",
             "es": "Enseñar una piña imaginaria y hacerla rodar entre las manos"
-          }
+          },
+          "lamina": "pal_pinecone"
         },
         {
           "id": "3_4.novembro.s2.path",
