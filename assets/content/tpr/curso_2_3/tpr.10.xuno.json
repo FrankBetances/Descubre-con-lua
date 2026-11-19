@@ -602,7 +602,8 @@
             "gl": "Amosar o tesouro a todos",
             "es": "Enseñar el tesoro a todos"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_hold_up_high"
         },
         {
           "id": "2_3.xuno.s3.line-them-up",

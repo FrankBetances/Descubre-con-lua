@@ -147,7 +147,8 @@
           "tprAction": {
             "gl": "Espreitar por un burato feito cos dedos",
             "es": "Asomarse por un agujero hecho con los dedos"
-          }
+          },
+          "lamina": "pal_peek"
         },
         {
           "id": "3_4.abril.s1.sunny",
@@ -653,7 +654,8 @@
           "tprAction": {
             "gl": "Coller algo moi fráxil coa punta dos dedos",
             "es": "Coger algo muy frágil con la punta de los dedos"
-          }
+          },
+          "lamina": "pal_delicate"
         },
         {
           "id": "3_4.abril.s3.hard-working",
@@ -872,7 +874,8 @@
           "tprAction": {
             "gl": "Poñerse na liña de saída e contar ata tres",
             "es": "Ponerse en la línea de salida y contar hasta tres"
-          }
+          },
+          "lamina": "pal_race"
         },
         {
           "id": "3_4.abril.s4.wide",

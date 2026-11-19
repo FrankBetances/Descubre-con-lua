@@ -499,7 +499,8 @@
             "gl": "Debuxar un sorriso no aire",
             "es": "Dibujar una sonrisa en el aire"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_smiley_face"
         },
         {
           "id": "0_2.setembro.s3.giggle",
@@ -532,7 +533,8 @@
             "gl": "Tocar a coviña da meixela",
             "es": "Tocar el hoyuelo de la mejilla"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_dimple"
         },
         {
           "id": "0_2.setembro.s3.coo-coo",
@@ -899,7 +901,8 @@
             "gl": "Tocar a barriga despois de comer",
             "es": "Tocar la barriga después de comer"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_full_up"
         },
         {
           "id": "0_2.setembro.s4.cuddly",
@@ -921,7 +924,8 @@
             "gl": "Coller o cueiro e amosalo",
             "es": "Coger el pañal y enseñarlo"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_nappy_time"
         },
         {
           "id": "0_2.setembro.s4.up-you-come",

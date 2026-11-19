@@ -78,7 +78,8 @@
             "gl": "Debuxar unha praza no chan",
             "es": "Dibujar una plaza en el suelo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_town_square"
         },
         {
           "id": "4_5.xaneiro.s1.town-hall",

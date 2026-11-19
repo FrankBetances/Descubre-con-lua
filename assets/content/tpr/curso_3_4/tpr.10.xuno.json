@@ -175,7 +175,8 @@
           "tprAction": {
             "gl": "Debuxar liñas onduladas no aire",
             "es": "Dibujar líneas onduladas en el aire"
-          }
+          },
+          "lamina": "pal_wavy"
         },
         {
           "id": "3_4.xuno.s1.rough",
@@ -588,7 +589,8 @@
           "tprAction": {
             "gl": "Beliscar suavemente o aire cos dedos",
             "es": "Pellizcar suavemente el aire con los dedos"
-          }
+          },
+          "lamina": "pal_pinch"
         },
         {
           "id": "3_4.xuno.s3.breathe",
@@ -655,7 +657,8 @@
           "tprAction": {
             "gl": "Tocar o brazo con pequenos golpiños",
             "es": "Tocarse el brazo con pequeños golpecitos"
-          }
+          },
+          "lamina": "pal_bumpy"
         },
         {
           "id": "3_4.xuno.s3.graceful",
@@ -816,7 +819,8 @@
           "tprAction": {
             "gl": "Achegar as mans a unha fogueira imaxinaria sen tocala",
             "es": "Acercar las manos a una hoguera imaginaria sin tocarla"
-          }
+          },
+          "lamina": "pal_bonfire"
         },
         {
           "id": "3_4.xuno.s4.pack",

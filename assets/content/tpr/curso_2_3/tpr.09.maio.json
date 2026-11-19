@@ -168,7 +168,8 @@
             "gl": "Amosar as mans limpas",
             "es": "Enseñar las manos limpias"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_spotless"
         },
         {
           "id": "2_3.maio.s1.minty",
@@ -236,7 +237,8 @@
             "gl": "Fregar a palma e o dorso",
             "es": "Frotar la palma y el dorso"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_front_and_back"
         }
       ]
     },
@@ -256,7 +258,8 @@
             "gl": "Amosar a cabeza do cepillo",
             "es": "Enseñar la cabeza del cepillo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_brush_head"
         },
         {
           "id": "2_3.maio.s2.rinse-cup",
@@ -324,7 +327,8 @@
             "gl": "Cantar mentres se cepilla",
             "es": "Cantar mientras se cepilla"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_timer_song"
         },
         {
           "id": "2_3.maio.s2.brush-up-and-down",
@@ -908,7 +912,8 @@
             "gl": "Amosar o pano dobrado",
             "es": "Enseñar el pañuelo doblado"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_neatly_folded"
         },
         {
           "id": "2_3.maio.s4.wash-wash-the-socks",

@@ -216,7 +216,8 @@
             "gl": "Baixar os dedos",
             "es": "Bajar los dedos"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_mussels_grow_on_ropes_under_the_raft"
         },
         {
           "id": "4_5.xuno.s1.pull-pull-pull",
@@ -773,7 +774,8 @@
             "gl": "Debuxar no chan co xiz",
             "es": "Dibujar en el suelo con la tiza"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_chalk"
         },
         {
           "id": "4_5.xuno.s4.garden-hose",
@@ -855,7 +857,8 @@
             "gl": "Debuxar no chan",
             "es": "Dibujar en el suelo"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_draw_with_chalk"
         },
         {
           "id": "4_5.xuno.s4.refreshing-splash",

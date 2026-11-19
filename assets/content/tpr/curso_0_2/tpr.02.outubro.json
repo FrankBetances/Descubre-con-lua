@@ -57,7 +57,8 @@
             "gl": "Tocar as orellas e despois o nariz",
             "es": "Tocar las orejas y luego la nariz"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_ears_and_nose"
         },
         {
           "id": "0_2.outubro.s1.toenails",
@@ -228,7 +229,8 @@
             "gl": "Contar dous dedos dos pés",
             "es": "Contar dos deditos de los pies"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_one_two_toes"
         },
         {
           "id": "0_2.outubro.s1.nose-to-nose",
@@ -384,7 +386,8 @@
             "gl": "Debuxar círculos co dedo nas costas",
             "es": "Dibujar círculos con el dedo en la espalda"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_draw_circles"
         },
         {
           "id": "0_2.outubro.s2.silky",
@@ -451,7 +454,8 @@
             "gl": "Debuxar círculos na palma",
             "es": "Dibujar círculos en la palma"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_round_and_round_the_garden"
         },
         {
           "id": "0_2.outubro.s2.this-little-piggy",
@@ -540,7 +544,8 @@
             "gl": "Amosar as mans e despois os pés",
             "es": "Enseñar las manos y luego los pies"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_hands_and_feet"
         },
         {
           "id": "0_2.outubro.s3.fingertip",
@@ -551,7 +556,8 @@
             "gl": "Tocar a punta do dedo do bebé",
             "es": "Tocar la punta del dedo del bebé"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_fingertip"
         },
         {
           "id": "0_2.outubro.s3.tummy-time",

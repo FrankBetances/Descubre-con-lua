@@ -781,7 +781,8 @@
             "gl": "Cantar en grupo",
             "es": "Cantar en grupo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_carol_singers"
         },
         {
           "id": "5_6.decembro.s4.ornament",
@@ -927,7 +928,8 @@
             "gl": "Amosar a postal",
             "es": "Enseñar la postal"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_this_card_is_for_my_grandma"
         },
         {
           "id": "5_6.decembro.s4.next-year-i-will-read-more-books",

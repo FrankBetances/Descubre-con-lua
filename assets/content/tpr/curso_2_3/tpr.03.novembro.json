@@ -171,7 +171,8 @@
             "gl": "Amosar unha folla avermellada",
             "es": "Enseñar una hoja rojiza"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_russet"
         },
         {
           "id": "2_3.novembro.s1.misty",
@@ -769,7 +770,8 @@
             "gl": "Limpar a boca coa servilleta",
             "es": "Limpiar la boca con la servilleta"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_napkin"
         },
         {
           "id": "2_3.novembro.s4.thermos",
@@ -918,7 +920,8 @@
             "gl": "Tocar a barriga chea",
             "es": "Tocar la barriga llena"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_filling"
         },
         {
           "id": "2_3.novembro.s4.careful-it-s-hot",

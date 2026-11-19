@@ -274,7 +274,8 @@
             "gl": "Amosar dez dedos e dous máis",
             "es": "Enseñar diez dedos y dos más"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_dozen"
         },
         {
           "id": "5_6.novembro.s2.pair",
@@ -285,7 +286,8 @@
             "gl": "Xuntar dous dedos",
             "es": "Juntar dos dedos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_pair"
         },
         {
           "id": "5_6.novembro.s2.group-of-five",
@@ -296,7 +298,8 @@
             "gl": "Amosar unha man aberta",
             "es": "Enseñar una mano abierta"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_group_of_five"
         },
         {
           "id": "5_6.novembro.s2.total",
@@ -607,7 +610,8 @@
             "gl": "Debuxar unha cruz no aire",
             "es": "Dibujar una cruz en el aire"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_cut_a_cross"
         },
         {
           "id": "5_6.novembro.s3.scientific",
@@ -684,7 +688,8 @@
             "gl": "Debuxar a cruz",
             "es": "Dibujar la cruz"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_we_cut_a_cross_so_it_doesn_t_pop"
         },
         {
           "id": "5_6.novembro.s3.the-warmer-it-gets-the-faster-it-cooks",

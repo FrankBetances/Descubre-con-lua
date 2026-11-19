@@ -194,7 +194,8 @@
             "gl": "Fregar area entre os dedos",
             "es": "Frotar arena entre los dedos"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_gritty"
         },
         {
           "id": "0_2.xuno.s1.hello-sea",
@@ -297,7 +298,8 @@
             "gl": "Entrecruzar os dedos coma unha rede",
             "es": "Entrecruzar los dedos como una red"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_fishing_net"
         },
         {
           "id": "0_2.xuno.s2.bubble-trail",
@@ -308,7 +310,8 @@
             "gl": "Facer burbullas coa boca",
             "es": "Hacer burbujas con la boca"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_bubble_trail"
         },
         {
           "id": "0_2.xuno.s2.fin",
@@ -421,7 +424,8 @@
             "gl": "Amosar un papel prateado",
             "es": "Enseñar un papel plateado"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_silvery"
         },
         {
           "id": "0_2.xuno.s2.glassy",
@@ -466,7 +470,8 @@
             "gl": "Amosar unha man e despois as dúas",
             "es": "Enseñar una mano y luego las dos"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_one_fish_two_fish"
         },
         {
           "id": "0_2.xuno.s2.over-the-waves",

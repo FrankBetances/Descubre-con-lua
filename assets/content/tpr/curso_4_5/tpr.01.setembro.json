@@ -492,7 +492,8 @@
             "gl": "Fregar as mans para quitalos",
             "es": "Frotar las manos para quitarlos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_germs"
         },
         {
           "id": "4_5.setembro.s3.nail-brush",
@@ -514,7 +515,8 @@
             "gl": "Fregar as mans co xel",
             "es": "Frotar las manos con el gel"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_hand_gel"
         },
         {
           "id": "4_5.setembro.s3.tissue-box",
@@ -536,7 +538,8 @@
             "gl": "Amosar unha froita",
             "es": "Enseñar una fruta"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_healthy_snack"
         },
         {
           "id": "4_5.setembro.s3.water-break",
@@ -628,7 +631,8 @@
             "gl": "Amosar as mans limpas",
             "es": "Enseñar las manos limpias"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_germ_free"
         },
         {
           "id": "4_5.setembro.s3.well-rested",
@@ -707,7 +711,8 @@
             "gl": "Fregar entre os dedos",
             "es": "Frotar entre los dedos"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_between_your_fingers_too"
         }
       ]
     },
@@ -795,7 +800,8 @@
             "gl": "Xuntar os dedos índices",
             "es": "Juntar los dedos índices"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_friendship"
         },
         {
           "id": "4_5.setembro.s4.calm-down",

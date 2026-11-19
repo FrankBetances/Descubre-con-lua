@@ -150,7 +150,8 @@
           "tprAction": {
             "gl": "Facer un lazo cos dedos coma nos cordóns",
             "es": "Hacer un lazo con los dedos como en los cordones"
-          }
+          },
+          "lamina": "pal_tie"
         },
         {
           "id": "3_4.xaneiro.s1.woolly",
@@ -173,7 +174,8 @@
           "tprAction": {
             "gl": "Debuxar raias no aire cun dedo",
             "es": "Dibujar rayas en el aire con un dedo"
-          }
+          },
+          "lamina": "pal_striped"
         },
         {
           "id": "3_4.xaneiro.s1.spotty",
@@ -625,7 +627,8 @@
           "tprAction": {
             "gl": "Tocar unha bucina imaxinaria coa palma",
             "es": "Tocar un claxon imaginario con la palma"
-          }
+          },
+          "lamina": "pal_beep"
         },
         {
           "id": "3_4.xaneiro.s3.pedal",

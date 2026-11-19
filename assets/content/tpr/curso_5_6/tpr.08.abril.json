@@ -68,7 +68,8 @@
             "gl": "Xuntar dous dedos moi pouco",
             "es": "Juntar dos dedos muy poco"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_microplastic"
         },
         {
           "id": "5_6.abril.s1.volunteer",
@@ -192,7 +193,8 @@
             "gl": "Xuntar os dedos",
             "es": "Juntar los dedos"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_tiny_bits"
         },
         {
           "id": "5_6.abril.s1.let-s-clean-the-beach",
@@ -406,7 +408,8 @@
             "gl": "Estirar os dedos",
             "es": "Estirar los dedos"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_long_legged"
         },
         {
           "id": "5_6.abril.s2.colourful-reef",

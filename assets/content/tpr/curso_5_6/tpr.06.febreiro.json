@@ -489,7 +489,8 @@
             "gl": "Cantar xuntos en fila",
             "es": "Cantar juntos en fila"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_choir"
         },
         {
           "id": "5_6.febreiro.s3.conductor",
@@ -511,7 +512,8 @@
             "gl": "Dar un paso adiante e cantar",
             "es": "Dar un paso adelante y cantar"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_solo"
         },
         {
           "id": "5_6.febreiro.s3.chorus",
@@ -590,7 +592,8 @@
             "gl": "Cantaruxar coa boca pechada",
             "es": "Tararear con la boca cerrada"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_hum_along"
         },
         {
           "id": "5_6.febreiro.s3.sing-louder",
@@ -745,7 +748,8 @@
             "gl": "Amosar tres dedos",
             "es": "Enseñar tres dedos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_three_little_pigs"
         },
         {
           "id": "5_6.febreiro.s4.straw-house",

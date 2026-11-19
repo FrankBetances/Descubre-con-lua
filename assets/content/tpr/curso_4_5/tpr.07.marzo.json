@@ -43,7 +43,8 @@
             "gl": "Achegar a culler á boca",
             "es": "Acercar la cuchara a la boca"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_tasting_spoon"
         },
         {
           "id": "4_5.marzo.s1.blindfold",
@@ -65,7 +66,8 @@
             "gl": "Botar un pouco de especia cos dedos",
             "es": "Espolvorear algo con los dedos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_spice"
         },
         {
           "id": "4_5.marzo.s1.vinegar",
@@ -178,7 +180,8 @@
             "gl": "Abanar a boca",
             "es": "Abanicarse la boca"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_spicy"
         },
         {
           "id": "4_5.marzo.s1.mild",
@@ -356,7 +359,8 @@
             "gl": "Xuntar dous dedos",
             "es": "Juntar dos dedos"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_show_small_fingers"
         },
         {
           "id": "4_5.marzo.s2.grow-taller",
@@ -489,7 +493,8 @@
             "gl": "Amosar unha cesta de verduras",
             "es": "Enseñar una cesta de verduras"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_vegetables"
         },
         {
           "id": "4_5.marzo.s3.broccoli",
@@ -512,7 +517,8 @@
             "gl": "Coller chícharos cos dedos",
             "es": "Coger guisantes con los dedos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_peas"
         },
         {
           "id": "4_5.marzo.s3.beans",
@@ -828,7 +834,8 @@
             "gl": "Contar cos dedos",
             "es": "Contar con los dedos"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_count_coins"
         },
         {
           "id": "4_5.marzo.s4.pack-the-bag",
@@ -918,7 +925,8 @@
             "gl": "Amosar dous dedos",
             "es": "Enseñar dos dedos"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_two_apples_please"
         },
         {
           "id": "4_5.marzo.s4.here-s-your-change",

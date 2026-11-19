@@ -280,7 +280,8 @@
           "tprAction": {
             "gl": "Inflar as meixelas e tocalas cos dedos",
             "es": "Inflar las mejillas y tocarlas con los dedos"
-          }
+          },
+          "lamina": "pal_cheeks"
         },
         {
           "id": "3_4.outubro.s2.chin",
@@ -291,7 +292,8 @@
           "tprAction": {
             "gl": "Tocar o queixo co dedo índice",
             "es": "Tocarse la barbilla con el dedo índice"
-          }
+          },
+          "lamina": "pal_chin"
         },
         {
           "id": "3_4.outubro.s2.hair",
@@ -313,7 +315,8 @@
           "tprAction": {
             "gl": "Amosar os dentes cun sorriso grande",
             "es": "Enseñar los dientes con una sonrisa grande"
-          }
+          },
+          "lamina": "pal_teeth"
         },
         {
           "id": "3_4.outubro.s2.tongue",
@@ -551,7 +554,8 @@
           "tprAction": {
             "gl": "Tocar un cóbado coa man contraria",
             "es": "Tocarse un codo con la mano contraria"
-          }
+          },
+          "lamina": "pal_elbow"
         },
         {
           "id": "3_4.outubro.s3.back",
@@ -562,7 +566,8 @@
           "tprAction": {
             "gl": "Tocar as costas coas dúas mans por detrás",
             "es": "Tocarse la espalda con las dos manos por detrás"
-          }
+          },
+          "lamina": "pal_back"
         },
         {
           "id": "3_4.outubro.s3.stretch",
@@ -764,7 +769,8 @@
           "tprAction": {
             "gl": "Tocar todo o corpo de arriba abaixo",
             "es": "Tocar todo el cuerpo de arriba abajo"
-          }
+          },
+          "lamina": "pal_body"
         },
         {
           "id": "3_4.outubro.s4.face",

@@ -542,7 +542,8 @@
           "tprAction": {
             "gl": "Dar dúas palmadiñas suaves no peito ao dicir papá",
             "es": "Darse dos palmaditas suaves en el pecho al decir papá"
-          }
+          },
+          "lamina": "pal_daddy"
         },
         {
           "id": "3_4.setembro.s3.baby",
@@ -750,7 +751,8 @@
           "tprAction": {
             "gl": "Coller un xoguete imaxinario e amosalo ao grupo",
             "es": "Coger un juguete imaginario y enseñarlo al grupo"
-          }
+          },
+          "lamina": "pal_toy"
         },
         {
           "id": "3_4.setembro.s4.doll",

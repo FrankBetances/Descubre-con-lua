@@ -597,7 +597,8 @@
             "gl": "Apagar a luz e dicir «ooh»",
             "es": "Apagar la luz y decir «ooh»"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_switch_off"
         },
         {
           "id": "0_2.decembro.s3.glitter-and-shake",
@@ -642,7 +643,8 @@
             "gl": "Amosar unha lámpada acesa",
             "es": "Enseñar una lámpara encendida"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_glowing"
         },
         {
           "id": "0_2.decembro.s3.twinkly",
@@ -664,7 +666,8 @@
             "gl": "Tocar un papel con purpurina",
             "es": "Tocar un papel con purpurina"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_glittery"
         },
         {
           "id": "0_2.decembro.s3.dim",
@@ -698,7 +701,8 @@
             "gl": "Apagar a luz e tapar a boca",
             "es": "Apagar la luz y tapar la boca"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_lights_off"
         },
         {
           "id": "0_2.decembro.s3.look-at-the-lights",
@@ -891,7 +895,8 @@
             "gl": "Amosar un papel brillante",
             "es": "Enseñar un papel brillante"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_sparkly"
         },
         {
           "id": "0_2.decembro.s4.jolly",

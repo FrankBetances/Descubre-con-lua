@@ -506,7 +506,8 @@
             "gl": "Debuxar pólas no aire",
             "es": "Dibujar ramas en el aire"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_family_tree"
         },
         {
           "id": "5_6.xaneiro.s3.great-grandparents",
@@ -796,7 +797,8 @@
             "gl": "Debuxar tres cadros no aire",
             "es": "Dibujar tres cuadros en el aire"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_storyboard"
         },
         {
           "id": "5_6.xaneiro.s4.retell",
@@ -840,7 +842,8 @@
             "gl": "Debuxar no aire",
             "es": "Dibujar en el aire"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_illustrate"
         },
         {
           "id": "5_6.xaneiro.s4.act-it-out",

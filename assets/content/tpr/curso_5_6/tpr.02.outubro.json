@@ -76,7 +76,8 @@
             "gl": "Amosar as mans abertas",
             "es": "Enseñar las manos abiertas"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_sense_of_touch"
         },
         {
           "id": "5_6.outubro.s1.mystery-bag",
@@ -254,7 +255,8 @@
             "gl": "Pousar dous dedos na boneca",
             "es": "Poner dos dedos en la muñeca"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_pulse"
         },
         {
           "id": "5_6.outubro.s2.chest",
@@ -289,7 +291,8 @@
             "gl": "Amosar o brazo forte",
             "es": "Enseñar el brazo fuerte"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_muscles"
         },
         {
           "id": "5_6.outubro.s2.bones",
@@ -300,7 +303,8 @@
             "gl": "Tocar os ósos do brazo",
             "es": "Tocar los huesos del brazo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_bones"
         },
         {
           "id": "5_6.outubro.s2.skeleton",
@@ -415,7 +419,8 @@
             "gl": "Amosar os dous brazos fortes",
             "es": "Enseñar los dos brazos fuertes"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_muscular"
         },
         {
           "id": "5_6.outubro.s2.bony",
@@ -426,7 +431,8 @@
             "gl": "Tocar o nocello",
             "es": "Tocar el tobillo"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_bony"
         },
         {
           "id": "5_6.outubro.s2.can-you-feel-your-heart",
@@ -784,7 +790,8 @@
             "gl": "Debuxar no aire",
             "es": "Dibujar en el aire"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_dream_journal"
         },
         {
           "id": "5_6.outubro.s4.hours-of-sleep",

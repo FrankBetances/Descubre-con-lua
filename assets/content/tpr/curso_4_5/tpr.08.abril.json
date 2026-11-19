@@ -45,7 +45,8 @@
             "gl": "Debuxar unha onda de area",
             "es": "Dibujar una ola de arena"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_dune"
         },
         {
           "id": "4_5.abril.s1.nature-reserve",
@@ -867,7 +868,8 @@
             "gl": "Amosar a man baleira",
             "es": "Enseñar la mano vacía"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_clean_beach"
         },
         {
           "id": "4_5.abril.s4.eco-friendly",

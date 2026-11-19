@@ -451,7 +451,8 @@
             "gl": "Cantar e facer os animais",
             "es": "Cantar y hacer los animales"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_old_macdonald_had_a_farm"
         },
         {
           "id": "0_2.xaneiro.s2.what-does-the-cow-say",
@@ -540,7 +541,8 @@
             "gl": "Xuntar os dedos coma un bico",
             "es": "Juntar los dedos como un pico"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_beak"
         },
         {
           "id": "0_2.xaneiro.s3.birdhouse",
@@ -621,7 +623,8 @@
             "gl": "Subir cos dedos polo brazo",
             "es": "Subir con los dedos por el brazo"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_creep_up"
         },
         {
           "id": "0_2.xaneiro.s3.hop-along",
@@ -667,7 +670,8 @@
             "gl": "Amosar un espazo mínimo entre os dedos",
             "es": "Enseñar un espacio mínimo entre los dedos"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_teeny"
         },
         {
           "id": "0_2.xaneiro.s3.speckled",
@@ -712,7 +716,8 @@
             "gl": "Subir cos dedos ata o ombro",
             "es": "Subir con los dedos hasta el hombro"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_up_the_arm"
         },
         {
           "id": "0_2.xaneiro.s3.in-the-nest",

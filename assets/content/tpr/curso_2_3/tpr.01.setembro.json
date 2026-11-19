@@ -493,7 +493,8 @@
             "gl": "Cantar mentres se recolle",
             "es": "Cantar mientras se recoge"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_tidy_up_song"
         },
         {
           "id": "2_3.setembro.s3.box-lid",

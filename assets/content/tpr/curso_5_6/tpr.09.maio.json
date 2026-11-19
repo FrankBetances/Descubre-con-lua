@@ -54,7 +54,8 @@
             "gl": "Amosar unha cara",
             "es": "Enseñar una cara"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_emotion_card"
         },
         {
           "id": "5_6.maio.s1.worry-doll",

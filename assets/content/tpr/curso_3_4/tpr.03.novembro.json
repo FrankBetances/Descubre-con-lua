@@ -346,7 +346,8 @@
           "tprAction": {
             "gl": "Pelar unha castaña imaxinaria coas puntas dos dedos",
             "es": "Pelar una castaña imaginaria con las puntas de los dedos"
-          }
+          },
+          "lamina": "pal_peel"
         },
         {
           "id": "3_4.novembro.s2.carry",
@@ -405,7 +406,8 @@
           "tprAction": {
             "gl": "Soprar os dedos coma se queimasen un pouco",
             "es": "Soplarse los dedos como si quemaran un poco"
-          }
+          },
+          "lamina": "pal_hot"
         },
         {
           "id": "3_4.novembro.s2.spiky",
@@ -668,7 +670,8 @@
           "tprAction": {
             "gl": "Amosar algo diminuto entre dous dedos",
             "es": "Mostrar algo diminuto entre dos dedos"
-          }
+          },
+          "lamina": "pal_tiny"
         },
         {
           "id": "3_4.novembro.s3.brave",
@@ -701,7 +704,8 @@
           "tprAction": {
             "gl": "Facer un moucho coas mans e dicir «hu, hu»",
             "es": "Hacer un búho con las manos y decir «uh, uh»"
-          }
+          },
+          "lamina": "pal_hoot_hoot"
         },
         {
           "id": "3_4.novembro.s3.shh-listen",

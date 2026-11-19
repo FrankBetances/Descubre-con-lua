@@ -421,7 +421,8 @@
             "gl": "Falar coma un robot",
             "es": "Hablar como un robot"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_robotic"
         },
         {
           "id": "4_5.febreiro.s2.royal",
@@ -789,7 +790,8 @@
             "gl": "Falar e responder con dúas mans",
             "es": "Hablar y responder con dos manos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_dialogue"
         },
         {
           "id": "4_5.febreiro.s4.puppet-show",
@@ -900,7 +902,8 @@
             "gl": "Amosar as mans",
             "es": "Enseñar las manos"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_handmade"
         },
         {
           "id": "4_5.febreiro.s4.hello-i-m-sock",

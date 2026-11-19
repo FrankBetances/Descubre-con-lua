@@ -653,7 +653,8 @@
             "gl": "Amosar a cara limpa no espello",
             "es": "Enseñar la cara limpia en el espejo"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_clean_face"
         },
         {
           "id": "0_2.maio.s3.fresh-smelling",
@@ -835,7 +836,8 @@
             "gl": "Tocar unha burbulla co dedo",
             "es": "Tocar una burbuja con el dedo"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_burst"
         },
         {
           "id": "0_2.maio.s4.float-away",

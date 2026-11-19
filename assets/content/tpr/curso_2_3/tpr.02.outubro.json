@@ -425,7 +425,8 @@
             "gl": "Debuxar un círculo grande",
             "es": "Dibujar un círculo grande"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_circular"
         },
         {
           "id": "2_3.outubro.s2.backwards",

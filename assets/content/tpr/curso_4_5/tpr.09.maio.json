@@ -501,7 +501,8 @@
             "gl": "Subir os dedos coma vapor",
             "es": "Subir los dedos como vapor"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_steam"
         },
         {
           "id": "4_5.maio.s3.evaporation",
@@ -591,7 +592,8 @@
             "gl": "Baixar os dedos",
             "es": "Bajar los dedos"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_fall_as_rain"
         },
         {
           "id": "4_5.maio.s3.collect-rain",
@@ -647,7 +649,8 @@
             "gl": "Debuxar un arco de cores",
             "es": "Dibujar un arco de colores"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_rainbow_striped"
         },
         {
           "id": "4_5.maio.s3.sun-and-rain-together",
@@ -680,7 +683,8 @@
             "gl": "Debuxar un arco",
             "es": "Dibujar un arco"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_when_the_sun_shines_through_the_rain_we_see_a_ra"
         },
         {
           "id": "4_5.maio.s3.up-as-steam-down-as-rain",
@@ -733,7 +737,8 @@
             "gl": "Debuxar a ría co dedo",
             "es": "Dibujar la ría con el dedo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_estuary"
         },
         {
           "id": "4_5.maio.s4.riverbank",

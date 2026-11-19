@@ -441,7 +441,8 @@
           "tprAction": {
             "gl": "Rir encollidos cando alguén se achega cos dedos",
             "es": "Reír encogidos cuando alguien se acerca con los dedos"
-          }
+          },
+          "lamina": "pal_ticklish"
         },
         {
           "id": "3_4.maio.s2.brush-your-teeth",
@@ -579,7 +580,8 @@
           "tprAction": {
             "gl": "Deixar caer grans de arroz imaxinarios entre os dedos",
             "es": "Dejar caer granos de arroz imaginarios entre los dedos"
-          }
+          },
+          "lamina": "pal_rice"
         },
         {
           "id": "3_4.maio.s3.eat",
@@ -728,7 +730,8 @@
           "tprAction": {
             "gl": "Xuntar as dúas mans coma un bocadillo",
             "es": "Juntar las dos manos como un bocadillo"
-          }
+          },
+          "lamina": "pal_bread_and_cheese"
         }
       ]
     },
@@ -783,7 +786,8 @@
           "tprAction": {
             "gl": "Facer falar a man coma un monicreque",
             "es": "Hacer hablar a la mano como un títere"
-          }
+          },
+          "lamina": "pal_puppet"
         },
         {
           "id": "3_4.maio.s4.castle",

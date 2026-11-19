@@ -140,7 +140,8 @@
             "gl": "Pintar raias na cara co dedo",
             "es": "Pintar rayas en la cara con el dedo"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_paint_stripes"
         },
         {
           "id": "2_3.febreiro.s1.hop-around",
@@ -779,7 +780,8 @@
             "gl": "Poñer os dedos coma cornos",
             "es": "Poner los dedos como cuernos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_horns"
         },
         {
           "id": "2_3.febreiro.s4.paw-prints",
@@ -884,7 +886,8 @@
             "gl": "Amosar o disfrace",
             "es": "Enseñar el disfraz"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_dressed_up"
         },
         {
           "id": "2_3.febreiro.s4.silly-monster",

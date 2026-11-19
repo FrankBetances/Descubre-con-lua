@@ -554,7 +554,8 @@
             "gl": "Cantar todos xuntos",
             "es": "Cantar todos juntos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_class_song"
         },
         {
           "id": "5_6.xuno.s3.wave-a-graduate-cap",
@@ -600,7 +601,8 @@
             "gl": "Falar alto e claro",
             "es": "Hablar alto y claro"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_give_a_speech"
         },
         {
           "id": "5_6.xuno.s3.throw-caps-in-the-air",

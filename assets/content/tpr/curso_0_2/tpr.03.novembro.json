@@ -105,7 +105,8 @@
             "gl": "Palpar a textura coa man aberta",
             "es": "Palpar la textura con la mano abierta"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_feel"
         },
         {
           "id": "0_2.novembro.s1.rub-gently",
@@ -139,7 +140,8 @@
             "gl": "Deixar o bebé tocar a cesta",
             "es": "Dejar al bebé tocar la cesta"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_discover"
         },
         {
           "id": "0_2.novembro.s1.hold-up",
@@ -400,7 +402,8 @@
             "gl": "Amosar unha folla dourada á luz",
             "es": "Enseñar una hoja dorada a la luz"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_golden_brown"
         },
         {
           "id": "0_2.novembro.s2.crinkly",
@@ -434,7 +437,8 @@
             "gl": "Fregar os brazos coma con frío",
             "es": "Frotar los brazos como con frío"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_chilly"
         },
         {
           "id": "0_2.novembro.s2.leaves-are-falling",
@@ -468,7 +472,8 @@
             "gl": "Amosar unha folla e logo dúas",
             "es": "Enseñar una hoja y luego dos"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_one_leaf_two_leaves"
         },
         {
           "id": "0_2.novembro.s2.down-to-the-ground",
@@ -604,7 +609,8 @@
             "gl": "Achegar un anaquiño á boca",
             "es": "Acercar un trocito a la boca"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_taste_a_bit"
         },
         {
           "id": "0_2.novembro.s3.clap-along",

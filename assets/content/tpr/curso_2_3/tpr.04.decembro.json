@@ -288,7 +288,8 @@
             "gl": "Debuxar un zigzag no aire",
             "es": "Dibujar un zigzag en el aire"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_lightning"
         },
         {
           "id": "2_3.decembro.s2.rain-jacket",
@@ -647,7 +648,8 @@
             "gl": "Tocar un xersei groso",
             "es": "Tocar un jersey grueso"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_chunky"
         },
         {
           "id": "2_3.decembro.s3.matching",
@@ -658,7 +660,8 @@
             "gl": "Amosar dúas luvas iguais",
             "es": "Enseñar dos guantes iguales"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_matching"
         },
         {
           "id": "2_3.decembro.s3.back-to-front",

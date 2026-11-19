@@ -206,7 +206,8 @@
           "tprAction": {
             "gl": "Facer bigotes cos dedos e dicir «miau»",
             "es": "Hacer bigotes con los dedos y decir «miau»"
-          }
+          },
+          "lamina": "pal_meow"
         },
         {
           "id": "3_4.febreiro.s1.woof-woof",
@@ -217,7 +218,8 @@
           "tprAction": {
             "gl": "Poñer as mans coma patas e dicir «guau, guau»",
             "es": "Poner las manos como patas y decir «guau, guau»"
-          }
+          },
+          "lamina": "pal_woof_woof"
         },
         {
           "id": "3_4.febreiro.s1.come-here-puppy",
@@ -331,7 +333,8 @@
           "tprAction": {
             "gl": "Debuxar un valado no aire cos brazos",
             "es": "Dibujar una valla en el aire con los brazos"
-          }
+          },
+          "lamina": "pal_farm"
         },
         {
           "id": "3_4.febreiro.s2.gallop",
@@ -366,7 +369,8 @@
           "tprAction": {
             "gl": "Picar no chan cos dedos xuntos coma un pico",
             "es": "Picotear el suelo con los dedos juntos como un pico"
-          }
+          },
+          "lamina": "pal_peck"
         },
         {
           "id": "3_4.febreiro.s2.plough",
@@ -444,7 +448,8 @@
           "tprAction": {
             "gl": "Facer cornos cos dedos e dicir «muuu»",
             "es": "Hacer cuernos con los dedos y decir «muuu»"
-          }
+          },
+          "lamina": "pal_moo"
         },
         {
           "id": "3_4.febreiro.s2.oink-oink",
@@ -455,7 +460,8 @@
           "tprAction": {
             "gl": "Levantar o nariz cun dedo e dicir «oinc, oinc»",
             "es": "Levantar la nariz con un dedo y decir «oinc, oinc»"
-          }
+          },
+          "lamina": "pal_oink_oink"
         },
         {
           "id": "3_4.febreiro.s2.two-by-two",
@@ -857,7 +863,8 @@
           "tprAction": {
             "gl": "Inflar as meixelas e dicir «cróac»",
             "es": "Inflar los mofletes y decir «croac»"
-          }
+          },
+          "lamina": "pal_croak"
         },
         {
           "id": "3_4.febreiro.s4.leap",

@@ -66,7 +66,8 @@
             "gl": "Debuxar un colar no pescozo",
             "es": "Dibujar un collar en el cuello"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_necklace"
         },
         {
           "id": "5_6.marzo.s1.stripes",
@@ -77,7 +78,8 @@
             "gl": "Debuxar raias no aire",
             "es": "Dibujar rayas en el aire"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_stripes"
         },
         {
           "id": "5_6.marzo.s1.zigzag",
@@ -88,7 +90,8 @@
             "gl": "Debuxar un zigzag",
             "es": "Dibujar un zigzag"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_zigzag"
         },
         {
           "id": "5_6.marzo.s1.clap-a-pattern",
@@ -374,7 +377,8 @@
             "gl": "Facer tesoiras cos dedos",
             "es": "Hacer tijeras con los dedos"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_cut_out"
         },
         {
           "id": "5_6.marzo.s2.symmetrical",
@@ -486,7 +490,8 @@
             "gl": "Contar pétalos cos dedos",
             "es": "Contar pétalos con los dedos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_petal_count"
         },
         {
           "id": "5_6.marzo.s3.spiral",
@@ -497,7 +502,8 @@
             "gl": "Debuxar unha espiral co dedo",
             "es": "Dibujar una espiral con el dedo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_spiral"
         },
         {
           "id": "5_6.marzo.s3.honeycomb",
@@ -519,7 +525,8 @@
             "gl": "Contar seis lados",
             "es": "Contar seis lados"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_hexagon"
         },
         {
           "id": "5_6.marzo.s3.snail-shell",
@@ -552,7 +559,8 @@
             "gl": "Contar pintas",
             "es": "Contar puntos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_ladybird_spots"
         },
         {
           "id": "5_6.marzo.s3.count-petals",
@@ -563,7 +571,8 @@
             "gl": "Contar ata cinco",
             "es": "Contar hasta cinco"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_count_petals"
         },
         {
           "id": "5_6.marzo.s3.trace-a-spiral",
@@ -607,7 +616,8 @@
             "gl": "Medir con dedos",
             "es": "Medir con dedos"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_measure_a_leaf"
         },
         {
           "id": "5_6.marzo.s3.six-sided",
@@ -618,7 +628,8 @@
             "gl": "Amosar seis dedos",
             "es": "Enseñar seis dedos"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_six_sided"
         },
         {
           "id": "5_6.marzo.s3.spiralling",
@@ -674,7 +685,8 @@
             "gl": "Debuxar a espiral",
             "es": "Dibujar la espiral"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_look_a_spiral"
         },
         {
           "id": "5_6.marzo.s3.bees-build-hexagons-because-they-fit-together",
@@ -774,7 +786,8 @@
             "gl": "Amosar tres dedos",
             "es": "Enseñar tres dedos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_primary_colours"
         },
         {
           "id": "5_6.marzo.s4.palette",
@@ -819,7 +832,8 @@
             "gl": "Debuxar un marco",
             "es": "Dibujar un marco"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_create_a_picture"
         },
         {
           "id": "5_6.marzo.s4.rotate-a-piece",
@@ -875,7 +889,8 @@
             "gl": "Debuxar un triángulo",
             "es": "Dibujar un triángulo"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_geometric"
         },
         {
           "id": "5_6.marzo.s4.darkest-shade",

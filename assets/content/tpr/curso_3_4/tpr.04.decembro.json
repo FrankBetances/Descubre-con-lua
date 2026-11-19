@@ -515,7 +515,8 @@
           "tprAction": {
             "gl": "Debuxar unha lúa redonda no aire",
             "es": "Dibujar una luna redonda en el aire"
-          }
+          },
+          "lamina": "pal_moon"
         },
         {
           "id": "3_4.decembro.s3.bed",

@@ -241,7 +241,8 @@
             "gl": "Amosar un obxecto azul e outro amarelo",
             "es": "Enseñar un objeto azul y otro amarillo"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_blue_and_yellow"
         }
       ]
     },
@@ -321,7 +322,8 @@
             "gl": "Amosar unha pasa na palma da man",
             "es": "Mostrar una pasa en la palma de la mano"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_raisin"
         },
         {
           "id": "0_2.marzo.s2.baby-spoon",
@@ -332,7 +334,8 @@
             "gl": "Achegar a culleriña á boca",
             "es": "Acercar la cucharita a la boca"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_baby_spoon"
         },
         {
           "id": "0_2.marzo.s2.open-wide",
@@ -476,7 +479,8 @@
             "gl": "Amosar un dedo e dar outro bocado",
             "es": "Enseñar un dedo y dar otro bocado"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_one_more_bite"
         }
       ]
     },
@@ -786,7 +790,8 @@
             "gl": "Amosar a ameixa morada",
             "es": "Enseñar la ciruela morada"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_plum"
         },
         {
           "id": "0_2.marzo.s4.melon",
@@ -909,7 +914,8 @@
             "gl": "Tocar unha froita da neveira",
             "es": "Tocar una fruta de la nevera"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_cold_and_fresh"
         },
         {
           "id": "0_2.marzo.s4.what-a-colour",

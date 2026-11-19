@@ -586,7 +586,8 @@
             "gl": "Espreitar entre os dedos",
             "es": "Espiar entre los dedos"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_peek_out"
         },
         {
           "id": "0_2.febreiro.s3.pop-up",
@@ -813,7 +814,8 @@
             "gl": "Cantar unha cantiga infantil",
             "es": "Cantar una canción infantil"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_nursery_rhyme"
         },
         {
           "id": "0_2.febreiro.s4.bang-the-drum",

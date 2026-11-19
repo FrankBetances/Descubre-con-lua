@@ -322,7 +322,8 @@
             "gl": "Tocar a herba mollada",
             "es": "Tocar la hierba mojada"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_dewdrop"
         },
         {
           "id": "0_2.abril.s2.rain-boots",
@@ -413,7 +414,8 @@
             "gl": "Tocar a roupa húmida",
             "es": "Tocar la ropa húmeda"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_damp"
         },
         {
           "id": "0_2.abril.s2.dewy",
@@ -538,7 +540,8 @@
             "gl": "Baixar os dedos coma raíces",
             "es": "Bajar los dedos como raíces"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_root"
         },
         {
           "id": "0_2.abril.s3.sunflower",
@@ -673,7 +676,8 @@
             "gl": "Esfarelar terra entre os dedos",
             "es": "Desmenuzar tierra entre los dedos"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_crumbly"
         },
         {
           "id": "0_2.abril.s3.little-seed-sleep",
@@ -785,7 +789,8 @@
             "gl": "Facer falar ao monicreque",
             "es": "Hacer hablar al títere"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_glove_puppet"
         },
         {
           "id": "0_2.abril.s4.thumbs-up",
@@ -943,7 +948,8 @@
             "gl": "Amosar os dez dedos",
             "es": "Enseñar los diez dedos"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_ten_little_fingers"
         },
         {
           "id": "0_2.abril.s4.finger-on-your-nose",

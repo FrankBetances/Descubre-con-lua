@@ -21,7 +21,8 @@
             "gl": "Debuxar un óvalo no aire",
             "es": "Dibujar un óvalo en el aire"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_oval"
         },
         {
           "id": "2_3.marzo.s1.rectangle",
@@ -32,7 +33,8 @@
             "gl": "Facer un rectángulo cos dedos",
             "es": "Hacer un rectángulo con los dedos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_rectangle"
         },
         {
           "id": "2_3.marzo.s1.diamond",
@@ -99,7 +101,8 @@
             "gl": "Debuxar unha forma no chan",
             "es": "Dibujar una forma en el suelo"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_draw_a_shape"
         },
         {
           "id": "2_3.marzo.s1.find-the-shape",
@@ -167,7 +170,8 @@
             "gl": "Debuxar unha curva no aire",
             "es": "Dibujar una curva en el aire"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_curved"
         },
         {
           "id": "2_3.marzo.s1.four-sided",
@@ -178,7 +182,8 @@
             "gl": "Contar catro lados cos dedos",
             "es": "Contar cuatro lados con los dedos"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_four_sided"
         },
         {
           "id": "2_3.marzo.s1.egg-shaped",
@@ -570,7 +575,8 @@
             "gl": "Lanzar o dado e contar",
             "es": "Tirar el dado y contar"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_roll_the_dice"
         },
         {
           "id": "2_3.marzo.s3.look-through",
@@ -831,7 +837,8 @@
             "gl": "Facer que se morde e dicir «cranc»",
             "es": "Hacer como que se muerde y decir «crac»"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_crunch_a_carrot"
         },
         {
           "id": "2_3.marzo.s4.wipe-hands",
@@ -945,7 +952,8 @@
             "gl": "Amosar un e despois o outro",
             "es": "Enseñar uno y luego el otro"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_carrots_and_cucumbers"
         }
       ]
     }

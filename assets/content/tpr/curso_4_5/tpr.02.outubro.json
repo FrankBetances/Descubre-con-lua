@@ -580,7 +580,8 @@
             "gl": "Levantar un pé e contar",
             "es": "Levantar un pie y contar"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_stand_on_one_leg"
         },
         {
           "id": "4_5.outubro.s3.wobble-and-hold",

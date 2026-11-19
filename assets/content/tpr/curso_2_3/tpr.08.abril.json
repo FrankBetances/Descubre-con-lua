@@ -45,7 +45,8 @@
             "gl": "Amosar tres dedos coma un trevo",
             "es": "Enseñar tres dedos como un trébol"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_clover"
         },
         {
           "id": "2_3.abril.s1.blade-of-grass",
@@ -160,7 +161,8 @@
             "gl": "Tocar a herba coa palma",
             "es": "Tocar la hierba con la palma"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_grassy"
         },
         {
           "id": "2_3.abril.s1.tickly-grass",
@@ -318,7 +320,8 @@
             "gl": "Mollar os dedos coma un paxaro",
             "es": "Mojar los dedos como un pájaro"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_bird_bath"
         },
         {
           "id": "2_3.abril.s2.branch-perch",
@@ -497,7 +500,8 @@
             "gl": "Dicir algo á orella",
             "es": "Decir algo al oído"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_whisper_game"
         },
         {
           "id": "2_3.abril.s3.library",
@@ -647,7 +651,8 @@
             "gl": "Pechar a boca coas mans",
             "es": "Taparse la boca con las manos"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_silent"
         },
         {
           "id": "2_3.abril.s3.restful",
@@ -770,7 +775,8 @@
             "gl": "Tecer palla cos dedos",
             "es": "Tejer paja con los dedos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_straw"
         },
         {
           "id": "2_3.abril.s4.mother-bird",

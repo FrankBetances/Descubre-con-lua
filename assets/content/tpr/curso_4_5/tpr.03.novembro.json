@@ -263,7 +263,8 @@
             "gl": "Debuxar o bordo ondulado",
             "es": "Dibujar el borde ondulado"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_oak_leaf"
         },
         {
           "id": "4_5.novembro.s2.acorn-cap",
@@ -285,7 +286,8 @@
             "gl": "Debuxar círculos cada vez máis grandes",
             "es": "Dibujar círculos cada vez más grandes"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_tree_rings"
         },
         {
           "id": "4_5.novembro.s2.roots",
@@ -296,7 +298,8 @@
             "gl": "Estender os dedos cara abaixo",
             "es": "Extender los dedos hacia abajo"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_roots"
         },
         {
           "id": "4_5.novembro.s2.canopy",
@@ -365,7 +368,8 @@
             "gl": "Contar círculos co dedo",
             "es": "Contar círculos con el dedo"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_count_rings"
         },
         {
           "id": "4_5.novembro.s2.hug-a-tree",
@@ -422,7 +426,8 @@
             "gl": "Debuxar ondas co dedo",
             "es": "Dibujar ondas con el dedo"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_wavy_edged"
         },
         {
           "id": "4_5.novembro.s2.knobbly",
@@ -479,7 +484,8 @@
             "gl": "Baixar os dedos cara ao chan",
             "es": "Bajar los dedos hacia el suelo"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_roots_under_the_ground"
         }
       ]
     },
@@ -499,7 +505,8 @@
             "gl": "Poñer os dedos coma cornos",
             "es": "Poner los dedos como cuernos"
           },
-          "category": "noun"
+          "category": "noun",
+          "lamina": "pal_stag_beetle"
         },
         {
           "id": "4_5.novembro.s3.woodlouse",
@@ -891,7 +898,8 @@
             "gl": "Amosar unha folla avermellada",
             "es": "Enseñar una hoja rojiza"
           },
-          "category": "adjective"
+          "category": "adjective",
+          "lamina": "pal_reddish"
         },
         {
           "id": "4_5.novembro.s4.bright-orange",
@@ -937,7 +945,8 @@
             "gl": "Amosar tres follas",
             "es": "Enseñar tres hojas"
           },
-          "category": "complex"
+          "category": "complex",
+          "lamina": "pal_red_orange_and_brown"
         },
         {
           "id": "4_5.novembro.s4.found-one",

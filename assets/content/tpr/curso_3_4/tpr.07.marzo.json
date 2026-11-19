@@ -146,7 +146,8 @@
           "tprAction": {
             "gl": "Amosar un debuxo imaxinario ao grupo",
             "es": "Enseñar un dibujo imaginario al grupo"
-          }
+          },
+          "lamina": "pal_show"
         },
         {
           "id": "3_4.marzo.s1.red",
@@ -235,7 +236,8 @@
           "tprAction": {
             "gl": "Tocar cousas da aula dunha cor cada vez",
             "es": "Tocar cosas del aula de un color cada vez"
-          }
+          },
+          "lamina": "pal_colour_by_colour"
         }
       ]
     },
@@ -267,7 +269,8 @@
           "tprAction": {
             "gl": "Debuxar catro lados iguais no aire",
             "es": "Dibujar cuatro lados iguales en el aire"
-          }
+          },
+          "lamina": "pal_square"
         },
         {
           "id": "3_4.marzo.s2.triangle",
@@ -325,7 +328,8 @@
           "tprAction": {
             "gl": "Tocar un punto no aire cun dedo",
             "es": "Tocar un punto en el aire con un dedo"
-          }
+          },
+          "lamina": "pal_dot"
         },
         {
           "id": "3_4.marzo.s2.roll",
@@ -846,7 +850,8 @@
           "tprAction": {
             "gl": "Pasar os dedos polas cordas dunha guitarra imaxinaria",
             "es": "Pasar los dedos por las cuerdas de una guitarra imaginaria"
-          }
+          },
+          "lamina": "pal_strum"
         },
         {
           "id": "3_4.marzo.s4.whistle",

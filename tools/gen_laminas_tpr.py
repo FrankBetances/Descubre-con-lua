@@ -262,7 +262,7 @@ CURATED_ICONIFY_DIRECTOS: dict[str, tuple[str, str, str, str, str]] = {
 }
 
 from banco_comun import escribir_cd  # noqa: E402
-from tpr_tandas import tanda_01, tanda_02, tanda_03, tanda_04, tanda_05  # noqa: E402
+from tpr_tandas import tanda_01, tanda_02, tanda_03, tanda_04, tanda_05, tanda_06  # noqa: E402
 
 TANDAS: list[tuple[str, object]] = [
     ("P2.82", tanda_01),
@@ -270,6 +270,7 @@ TANDAS: list[tuple[str, object]] = [
     ("P2.84", tanda_03),
     ("P2.85", tanda_04),
     ("P2.86", tanda_05),
+    ("P2.87", tanda_06),
 ]
 
 TANDA_FLUENT_DIRECTOS: dict[str, tuple[str, str, str]] = {}
