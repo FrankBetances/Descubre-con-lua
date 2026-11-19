@@ -389,10 +389,10 @@ Fuente: ninguna: orden literal recuperada del historial de la sesión session_01
 - [ ] Banco TPR (4.000) cubierto, agrupado por gesto · evidencia:
 
 ## O-20261119-1 · Mergear ya las lecciones de todas las edades; el banco TPR, con tope que solo baja
-Estado: abierta
+Estado: cumplida
 > (Claude Code) ¿Mergeo ya las lecciones de todas las edades a main mientras Antigravity rehace el banco TPR? — (Frank) Si
 > (Claude Code) propongo partir ese gate en dos: lecciones, frases y 0-2 a 0; banco TPR con tope que solo baja — (Frank) Ok
 Fuente: ninguna: origin/antigravity/pendiente en ef209a9c (P2.1–P2.7, revisado por Claude Code el 19/11/2026); P2.8 y P2.9 quedan fuera, rechazadas en revisión
 
 - [x] tools/check_laminas_leccion.py --tope-tpr: lecciones, frases y 0-2 a 0 piezas sin lámina; banco TPR no puede pasar de tools/tope_tpr_sen_lamina.txt (3419), y el tope solo baja · evidencia: tools/check_laminas_leccion.py, en tools/gates.sh
-- [ ] Mergeado en main con CI en verde · evidencia:
+- [x] Mergeado en main con CI en verde · evidencia: docs/ORDENES.md (PR #55, merge e6bd68f6, runs 44458071681 y 44458077155 en verde sobre 8d34cd44)

@@ -95,8 +95,12 @@ def main() -> int:
                 fallos.append(f"commit {h[:8]} «{asunto}» no empieza por «P<n>.<m>:»")
             elif mp.group(1) not in pasos_registro:
                 fallos.append(f"commit {h[:8]}: el paso {mp.group(1)} no tiene fila en el registro")
+        # Los SHA del registro se buscan en toda la historia desde la base,
+        # no solo en la línea principal: en main, los commits de la rama
+        # entran por merge y --first-parent no los ve.
+        todos = set((git("rev-list", f"{base}..HEAD") or "").split())
         for s in vistos - {"este"}:
-            if not any(h.startswith(s) for h in en_rango):
+            if not any(h.startswith(s) for h in todos):
                 fallos.append(f"el SHA {s} del registro no está en {base[:8]}..HEAD")
         modo = f"con historia ({len(en_rango)} commits desde {base[:8]})"
     else:
