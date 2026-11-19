@@ -34,3 +34,6 @@ __pycache__/
 # Local reference source from Studio AI (read-only reference, never committed)
 .studio_ref/
 
+
+# Estado de los hooks de Frank (parado, permiso de borrar, registro): local.
+.claude/estado/

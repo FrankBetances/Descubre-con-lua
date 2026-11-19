@@ -15,6 +15,8 @@ import '../../../data/models/leccion_model.dart';
 import '../../criancas/criancas_store.dart';
 import '../../criancas/xogo_lua.dart';
 import '../../leccions/widgets/proxecto_0_2.dart';
+import '../../../data/models/plan_escoita_model.dart';
+import 'paso_escoita.dart';
 
 /// La pantalla «Learn» de duolingo-clone, copiada (O-20261109-5).
 ///
@@ -130,7 +132,8 @@ class BannerUnidade extends StatelessWidget {
                       children: [
                         Text(titulo,
                             style: const TextStyle(
-                                fontSize: 19,
+                                fontFamily: AppTheme.fontTitulos,
+                                fontSize: 21,
                                 fontWeight: FontWeight.w800,
                                 color: Colors.white)),
                         const SizedBox(height: 6),
@@ -235,7 +238,8 @@ class _BotonDuo extends StatelessWidget {
                   child: Text(texto.toUpperCase(),
                       textAlign: TextAlign.center,
                       style: TextStyle(
-                          fontSize: 15,
+                          fontFamily: AppTheme.fontTitulos,
+                          fontSize: 16,
                           letterSpacing: 0.6,
                           fontWeight: FontWeight.w900,
                           color: off ? Colors.white : cor)),
@@ -324,6 +328,7 @@ class CaminoNodos extends StatelessWidget {
                           orden: i + 1,
                           child: _Nodo(
                             key: ValueKey('learn_nodo_$i'),
+                            avance: actual / etiquetas.length,
                             etiqueta: etiquetas[i],
                             estado: i < actual || (i == actual && feitoHoxe)
                                 ? EstadoNodo.feito
@@ -348,6 +353,7 @@ class CaminoNodos extends StatelessWidget {
 }
 
 class _Nodo extends StatelessWidget {
+  final double avance;
   final String etiqueta;
   final EstadoNodo estado;
   final bool ultimo;
@@ -355,6 +361,7 @@ class _Nodo extends StatelessWidget {
   final VoidCallback onTap;
   const _Nodo({
     super.key,
+    this.avance = 0,
     required this.etiqueta,
     required this.estado,
     required this.ultimo,
@@ -410,21 +417,26 @@ class _Nodo extends StatelessWidget {
                       alignment: Alignment.center,
                       clipBehavior: Clip.none,
                       children: [
-                        const Positioned(
+                        Positioned(
                           top: 28,
                           child: SizedBox(
                             width: 88,
                             height: 88,
-                            child: CircularProgressIndicator(
-                              value: 0,
-                              strokeWidth: 8,
-                              backgroundColor: DuoCores.trilla,
-                              color: DuoCores.verdeClaro,
+                            // O-20261119-8: el anillo de Valeria, que se
+                            // dibuja con lo que va de semana.
+                            child: AnilloAvance(
+                              valor: avance,
+                              tam: 88,
+                              fondo: DuoCores.trilla,
+                              cor: DuoCores.verdeClaro,
                             ),
                           ),
                         ),
                         // O-20261119-7: el de hoy late, para que se vea qué toca.
-                        Positioned(top: 42, child: Latido(child: boton)),
+                        Positioned(
+                            top: 42,
+                            child:
+                                Halo(cor: DuoCores.verdeClaro, child: boton)),
                         Positioned(
                           top: 0,
                           child: Flotar(
@@ -479,12 +491,16 @@ class PasoLeccion {
   /// O-20261111-2: las láminas de lo que nombra un paso sin pieza propia
   /// (las palabras nuevas de la semana, la canción): clave y significado.
   final List<({String clave, String significado})> laminas;
+
+  /// O-20261119-8: la actividad de escucha de la semana.
+  final PasoEscoita? escoita;
   const PasoLeccion(
       {required this.titulo,
       required this.texto,
       this.peza,
       this.escena,
-      this.laminas = const []});
+      this.laminas = const [],
+      this.escoita});
 }
 
 /// Los pasos del día: qué se hace, cada palabra nueva con su voz y la frase.
@@ -525,6 +541,8 @@ List<PasoLeccion> pasosDoDia(Leccion l, int dia, AppLanguage lang) {
         texto: '',
         peza: f,
       ),
+    if (PasoEscoita.para(l.id, PlanEscoita.lido) case final e?)
+      PasoLeccion(titulo: e.titulo(lang), texto: '', escoita: e),
   ];
 }
 
@@ -750,6 +768,7 @@ class _PasoVista extends StatelessWidget {
           Text(paso.titulo,
               style: const TextStyle(
                   fontSize: 24,
+                  fontFamily: AppTheme.fontTitulos,
                   fontWeight: FontWeight.w900,
                   color: Color(0xFF334155))),
           const SizedBox(height: 24),
@@ -823,6 +842,8 @@ class _PasoVista extends StatelessWidget {
                     color: AppTheme.textSecondary)),
             const SizedBox(height: 16),
           ],
+          if (paso.escoita case final e?)
+            VistaPasoEscoita(paso: e, lang: lang, audioService: audioService),
           if (paso.texto.isNotEmpty)
             Text(paso.texto,
                 style: const TextStyle(
@@ -847,6 +868,11 @@ class _Fin extends StatelessWidget {
       children: [
         // O-20261119-7: Lúa salta de alegría al llegar, y otra vez si se la
         // toca.
+        if (r?.xaXogouHoxe != true)
+          Estrelas(
+              estrela: (t) => PixelAward(
+                  glyph: AwardGlyph.star, tier: AwardTier.gold, size: t)),
+        const SizedBox(height: 6),
         const Center(
             child: SaltoLua(
                 alEntrar: true,
@@ -862,6 +888,7 @@ class _Fin extends StatelessWidget {
                   : '¡Muy bien${nome == null ? '' : ', $nome'}!\nLección completada.'),
           textAlign: TextAlign.center,
           style: const TextStyle(
+              fontFamily: AppTheme.fontTitulos,
               fontSize: 24,
               fontWeight: FontWeight.w900,
               color: Color(0xFF334155)),
@@ -936,13 +963,7 @@ class _Fin extends StatelessWidget {
       children: [
         lista,
         const Positioned.fill(
-          child: Confeti(cores: [
-            DuoCores.verde,
-            DuoCores.laranxa,
-            DuoCores.rosa,
-            Color(0xFF1CB0F6),
-            Color(0xFFFFC800),
-          ]),
+          child: Confeti(cores: coresCelebracion),
         ),
       ],
     );

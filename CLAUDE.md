@@ -1,5 +1,16 @@
 # Lúa · Edición Vigo (Flutter) · Notas para Claude Code
 
+## R-FRANK · OBEDECER A FRANK Y EL STEAM COMO EJE. CUATRO REGLAS CON FRENO AUTOMÁTICO
+
+Las dictó Frank el 19/11/2026: «es obligatorio en todos los sentidos siempre hacerme caso a mí y seguir la orden suprema de este proyecto, que es el pensamiento steam aplicado al estimulación de lenguaje» y «dime qué reglas hay que crear ahora para que no vuelva nunca más a ocurrir y que Hook hay que crear para mantenerte a raya». Mandan junto a R∞. Nacieron de cuatro fallos de Claude Code ese día (docs/FALLOS.md, F-20261119-1 a 4). Lo hizo Claude Code.
+
+1. **R-STOP.** «Stop», «para», «espera», «no hagas nada»: se acaban todas las herramientas en ese instante, aunque haya una tanda a medias. Solo se vuelve a trabajar cuando Frank dice «sigue», «continúa», «adelante» o da una orden de hacer. Freno: `.claude/hooks/stop_freno.py` pone la marca y `.claude/hooks/freno_herramientas.py` bloquea toda herramienta mientras exista.
+2. **R-BORRAR.** Prohibido borrar, quitar, sustituir o vaciar un fichero, una pantalla, una sección o un contenido sin que Frank lo pida con palabras, nombrando qué se borra. Proponerlo sí; hacerlo, nunca. Freno: `.claude/hooks/sin_borrar.py` bloquea `rm`, `git rm`, `git clean`, `reset --hard`, `checkout --`, `restore` y las escrituras que vacían un fichero, salvo lo que Frank haya pedido borrar en su mensaje.
+3. **R-STEAM.** El eje vertebrador de toda la app es el pensamiento STEAM aplicado a la estimulación del lenguaje. Cada palabra, par, progresión, imagen, cuento y prompt para otro agente nombra el STEAM del mes y la parte que trabaja. De otros productos (Valeria) se copia el método; su contenido entra orientado al STEAM según lo que diga Frank.
+4. **R-VERDAD-ACCIONES.** A «¿qué has hecho?» se contesta con el registro automático de herramientas, nunca de memoria. Freno: `.claude/hooks/registro_acciones.py` apunta cada herramienta y `stop_freno.py` enseña lo registrado desde el mensaje anterior de Frank.
+
+Blindaje: `.claude/hooks/blindaje.py` impide a Claude Code escribir en `.claude/` (hooks, settings, estado). Los frenos solo los cambia Frank.
+
 ## R∞ · REGLA SUPREMA · LA ORDEN LITERAL, SUS CRITERIOS ESCRITOS ANTES Y PROHIBIDO SIMULAR
 
 La dictó Frank el 28/10/2026: «necesito una solución y regla suprema para que no vuelva a repetirse en ningún repositorio este problema». Manda sobre todo el fichero, R0 incluida. Nació de un fallo de Claude Code: dio por hechas unas unidades estirando dos a cuarenta semanas con repaso, y no escribió la estructura gramatical que Frank pedía desde el principio. Lo hizo Claude Code.

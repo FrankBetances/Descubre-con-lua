@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:descubre_con_lua/core/theme/app_theme.dart';
@@ -27,6 +29,12 @@ void main() {
         AppTheme.lightTheme.textTheme.bodyMedium?.fontFamily,
         equals('Nunito'),
       );
+      // O-20261119-8: los títulos en Fredoka, como en Valeria.
+      expect(AppTheme.fontTitulos, equals('Fredoka'));
+      expect(AppTheme.lightTheme.textTheme.titleLarge?.fontFamily,
+          equals('Fredoka'));
+      expect(File('assets/fonts/Fredoka-Bold.ttf').existsSync(), isTrue);
+      expect(File('assets/fonts/OFL-Fredoka.txt').existsSync(), isTrue);
     });
 
     test('white is never put on the brand turquoise', () {

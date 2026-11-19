@@ -455,8 +455,10 @@ Future<List<String>> _auditarTexto(WidgetTester tester, Key marco) async {
     if (cores.isEmpty) continue;
 
     final familia = estilo?.fontFamily;
-    if (familia != AppTheme.fontFamily) {
-      fallos.add('Fuera de Nunito ($familia): «${_corto(texto)}».');
+    // O-20261119-8: Nunito en el texto y Fredoka en los títulos, como en
+    // Valeria. Ninguna otra familia.
+    if (familia != AppTheme.fontFamily && familia != AppTheme.fontTitulos) {
+      fallos.add('Fuera de Nunito y Fredoka ($familia): «${_corto(texto)}».');
     }
 
     final tamano = estilo?.fontSize ?? 14;

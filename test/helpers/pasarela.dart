@@ -249,6 +249,10 @@ class Pasarela {
         for (final peso in ['Regular', 'SemiBold', 'Bold', 'ExtraBold'])
           'assets/fonts/Nunito-$peso.ttf',
       ],
+      'Fredoka': [
+        for (final peso in ['SemiBold', 'Bold'])
+          'assets/fonts/Fredoka-$peso.ttf',
+      ],
       if (iconas != null) 'MaterialIcons': [iconas.path],
     }.entries) {
       final loader = FontLoader(entrada.key);

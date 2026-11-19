@@ -842,6 +842,36 @@ def collect_locutions(content_dir: Path = CONTENT_DIR) -> list[Locution]:
             for w in p.get("palabras", []):
                 _one(w.get("en", ""), "en", estilo_ingles(w.get("en", "")), "acopros/palabra", seen)
 
+    # O-20261119-8: los Juegos de escucha, copiados de Valeria. Cada palabra y
+    # cada frase suena en la lengua de su banco; la persona adulta las oye en
+    # Na casa → Explorar → Xogos de escoita.
+    for lang in ("gl", "es", "en"):
+        banco = content_dir / "escoita" / f"valeria_{lang}.json"
+        if not banco.exists():
+            continue
+        d = json.loads(banco.read_text(encoding="utf-8"))
+        pezas = [x for par in d.get("pares", []) for x in (par["a"], par["b"])]
+        for clave, campo in (("progresions", "fases"), ("capsulas", "voltas"),
+                             ("escenarios", "items"), ("categorias", "items")):
+            for grupo in d.get(clave, []):
+                pezas.extend(grupo.get(campo, []))
+        for x in pezas:
+            for texto in (x.get("palabra", ""), x.get("frase", "")):
+                if texto:
+                    estilo = estilo_ingles(texto) if lang == "en" else "tutor"
+                    _one(texto, lang, estilo, f"escoita/valeria_{lang}", seen)
+
+    # La pieza de escucha del mes (plan_mensual.json): sus palabras inglesas y
+    # las tres frases del modelo para el adulto suenan en el paso de la lección.
+    plan = content_dir / "escoita" / "plan_mensual.json"
+    if plan.exists():
+        d = json.loads(plan.read_text(encoding="utf-8"))
+        for p in d if isinstance(d, list) else d.get("pezas", []):
+            textos = [p["par"]["a"]["en"], p["par"]["b"]["en"], *p["modelo"]["adulto"]]
+            textos += [f["en"] for f in p["progresion"]["fases"]]
+            for texto in textos:
+                _one(texto, "en", estilo_ingles(texto), "escoita/plan_mensual", seen)
+
     return sorted(seen.values(), key=lambda e: (e.lang, e.style, e.id))
 
 
