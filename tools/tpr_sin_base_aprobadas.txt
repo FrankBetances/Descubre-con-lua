@@ -1,4 +1,5 @@
 # O-20261119-3 (Frank, 19/11/2026): «Las 608 del banco tpr se quedan sin imagen».
+# O-20261119-6 (Frank, 19/11/2026): «las 227 también se quedan sin imagen».
 # Lista cerrada: añadir una clave aquí requiere una orden nueva de Frank.
 abracadabra
 accomplished
@@ -310,26 +311,44 @@ it's you
 joyful
 joyous
 keep a promise
+keep in touch
 keep score
 keepsake
+kilo
 kind words
 kind words make people smile
 kind-hearted
 kindest
 kindness
+knock, knock
 last day
 last week
+lazy
 leave only footprints
 less than three
+let's breathe together
+let's build a bridge
+let's clean the beach
+let's dance
+let's dig
+let's find a fair solution
 let's find out
+let's make music
 let's play
 let's sing
 let's try another way
 letters and numbers
 life story
+lighter in weight
+lighter than water
+lightest
+line up at the bell
 listen with your eyes closed
 listen, what's that
+little pig, let me in
+lively
 long, long ago
+look after
 look at me
 look at one spot
 look back on
@@ -339,21 +358,33 @@ look what i found
 lose
 loudest
 lovely
+loving
 magic
 magical
 majority
+make a deal
 make a resolution
+make a shape
+make up
 melody
+melty
 memorable
 memory
+merry
 merry and bright
+merry tune
+mighty
 mild
+mirrored
 miss
 mission
+modern
 mood
 more than five
 most crabs walk sideways, but the spider crab walks forwards
 most of us chose the park
+much taller
+mushy
 my favourite day was the beach
 my grandma is older than my mum
 my turn, your turn
@@ -363,6 +394,8 @@ natural
 nature reserve
 new
 next month
+next stop, please
+next to me
 next year
 next year i will learn to read books by myself
 next year i will read more books
@@ -375,169 +408,334 @@ notice feelings
 number line
 odd
 off-stage
+older
 oldest
 on time
 one by one
+one for you, one for me
 one more sleep
+one step, two steps
 open hands to agree
+open up
 open, shut them
 open-minded
 opinion
+organised
 out of sight
+out of tune
+out you come
 over or under
+overwhelmed
+pass around
+pass it, please
+pass me a peg
 pastel
+pat softly
+peaceful
 peaceful mind
+peaceful solution
+piece by piece
 plan
 plan ahead
 plan b
 play
+play fair
+playful
 plentiful
 plot twist
 poem
 poetic
 point of view
 polite
+popping sound
 precious
 precious sea
 predict
 predict what's next
 prediction
+pretend
 pretty
 price
+promise
+promise card
+props
 proud
 proud of myself
+purring
+put it back gently
+put yourself in their shoes
 quick-thinking
 quiet car
 quietly, quietly
+reach for
 react
 reaction
+read me a story
 ready
+ready for more
+ready for primary
+ready to go
 ready, go
 ready, set, blow
 ready, steady, go
 ready, steady, stop
 recite
+record
+reflection game
+refreshed
 regular
+rehearse
+relaxed
+relaxing
 remember
 remember the past
 remember when
 remote
+renewable
+repeat
+repeating
+reply
 respectful
 restful
 result
 retell
+reuse
 rhyme
+rhyme card
+rhyming
+ripe
+ripest
+rise and shine
 roasting time
 role
 routine
+row, row, row your boat
+royal
+rule
+rumble
 rumbly
 safe
+salty wind
 satisfied
+say please
 say your line
 scene
+scientific
+scratchy
+script
+seafaring
+seagrass is a home for little fish
+season
 seasonal
+seat belts on, please
+seaworthy
 see both sides
 see you in primary
 see you in september
 see you next year
 see you soon
+send me a postcard
 sense
 setting
+settle
+shake hands kindly
+shake on it
 shake the tree gently
+share blocks
+share equally
 share memories
+share out
+share the fruit
+share toys
+sharing
 sharp-eyed
+shortest day
 shout for joy
 shout hooray
+show me the heavy side
 show you care
+sign
 signal
+signature
+silky
 silly story
 simon says touch your nose
 sing in tune
+sing softer
+sit with me
 size
+sleek
 slow down
+slow down your breathing
+slowly, slowly
 sluggish
 small and quick
+smell it
 smile of thanks
+sniff a flower
+snug
 social
 soft and slow
+soft and sweet
 soft voice
+soft-furred
+softer, please
+solstice
 solution
 solved
+sort by number
+sorted
+sourer
 special
 speech
 speedy
+spit out
+sporty
 spot
 spot the mistake
+squawk
 squeaky voice
+squeezy
+stack up
+stackable
 stage directions
+staircase
+stand tall and proud
 stars are further away than the moon
 stop right there
 stop spinning
+street sign
+stretch as high as you can
+strong
+strongest house
 sudden
 suggest
+summery
+supportive
 surprise ending
 surprising
 sustainable
+swap roles
+swap toys
 swirly
+switch
 symbol
+take a turn
+take one away
+take only photos
+take photos
+take turns directing
+take turns talking
 talk it through
+tangy
+tap, tap, tap
+tapping game
+team leader
+team, huddle up
+teamwork
 tell a dream
 tell a story
 tell in order
 ten, nine, eight... blast off
 tender
+test an idea
 thank the teachers
+thank you for helping me
 thank-you note
 thankful
 that's ok
+the bag is heavier with potatoes
+the brick house is stronger than the straw house
+the chestnut is heavier than the leaf
 the end
+the gull flies higher than the cormorant
 the pattern repeats again and again
+the stone sinks, but the cork floats
 the warmer it gets, the faster it cooks
 theatrical
 there it is
 they lived happily ever after
 thick
+this is for you
+this little piggy
 this tree is older than our grandparents
 thoughtful
 thoughtful idea
 three plus two makes five
 three, two, one, happy new year
+thumbs up for a clean beach
+thumbs up for a clean sea
+ticklish feet
+tickly
+tied
+time for a drink
 timetable
 timetable board
+toasty
 today
 together again
+together we are stronger
 tomorrow
+toot, toot
 total
+trace
+trace around
+tradition
+traditional
+transfer
 treasured
+tricky
+trustworthy
+try again
 try it
+try your best
 tune in
+tuneful
 turn it around and try again
+turn off lights
+turn off the light when you leave
 turn order
+turn out
 two, four, six, eight
+unanimous
 understanding
 unforgettable
 unstoppable
+up the hill and down again
+up you come
 upright posture
+useful
 useful helper
+vegetables make us strong
 verse
 vigo was small, but now it is big
 visit
 vivid
 voice
 volunteer
+waddling
 walking is better than driving for short trips
 warm-hearted
 warm-up exercise
 was vigo always big
 wasteful
+water first, then soap
 wave to families
+we can both be right
 we did it
+we did it together
 we found it
+we have grown so much in five years
 we listen because we care
+we solved it together
 we walk on the path so the plants can grow
 week
+weightless
 welcome back
 welcoming
+well done, explorer
+well-rehearsed
+well-rested
 what a colour
 what animal are you
 what bird is that
@@ -548,6 +746,7 @@ what colour is it
 what comes next
 what day is it today
 what did you dream about
+what do you do to feel calm
 what do you think will happen
 what do you want to be
 what does the cow say
@@ -559,10 +758,15 @@ what lives in the seagrass
 what lives on the seabed
 what shape is this
 what will happen if it gets warm
+what's in the bag
 what's in the basket
 what's inside
 what's your name
+whee
+when i feel angry, i breathe slowly
 when i say freeze, don't move
+when i was two, i couldn't write my name, but now i can
+when the bell rings, we line up
 when the conductor stops, we stop
 when the timer rings, we swap
 where are we on the map
@@ -572,22 +776,27 @@ where did he go
 where did i go
 where does it go
 where does rain come from
+where does the river go
 where is the squirrel
 where will you go this summer
 where's teddy
 where's the birdie
 where's the monkey
 where's the smile
+where's your hand
 where's your nose
 which boat is faster
 which bus goes to the beach
 which is the biggest
 which light is the brightest
 which one is blue
+which one is heavier
 which piece goes here
 which sense do we use
 which side goes down
+whisper to me
 whispery
+whistle sound
 who agrees
 who am i
 who are you today
@@ -598,13 +807,32 @@ who's there
 who's this
 wholesome
 why do we wash our hands
+wiggle
 wiggly
+wild
+will it float
+wipe
+wipe clean
+with grandma
+with music
+wobble and hold
+wobbly
 wonderful
+woof
 word
+wriggly
+write a thank-you note
+write down
+write your name
 yesterday
 yesterday was monday, today is tuesday
 you and me
+you can do it
 you first, then me
 you think this, but i think that
+you're a great friend
 younger
+your hand in mine
+yuck or yum
 yum yum
+zippy

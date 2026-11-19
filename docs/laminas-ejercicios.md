@@ -1,8 +1,8 @@
 # Láminas de los ejercicios (O-20261111-2)
 
-Generado por `tools/gen_laminas_palabras.py`. Una fila por palabra o frase que se enseña (lección paso a paso, palabras del día, TPR y proyecto de 0-2) y que ya tiene su lámina.
+Generado por `tools/gen_laminas_palabras.py`. Una fila por palabra o frase que se enseña (lección paso a paso, palabras del día, TPR y proyecto de 0-2).
 
-Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `python3 tools/check_laminas_leccion.py`).
+Con lámina: 3543. Sin lámina por decisión de Frank: 835. **Sin lámina todavía: 0** (las cuenta y las nombra `python3 tools/check_laminas_leccion.py`).
 
 | Palabra (en) | gl | es | Gesto | Lámina | Nueva o reutilizada | Por qué coincide |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -15,24 +15,40 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | A slice for each | Unha roda para cada un | Una rodaja para cada uno | Repartir rodajas | `pal_a_slice_for_each` | nova | Dos platos iguales, cada uno con una rodaja repartida. |
 | A spoon for you | Unha culler para ti | Una cuchara para ti | Dar la cuchara al bebé | `pal_a_spoon_for_you` | nova | Bebé sentado recibiendo la cuchara que le ofrecen. |
 | Above | Por riba | Por encima | Señalar por encima de la cabeza | `pal_above` | nova | Pelota flotando por encima del estante con flecha señalando hacia arriba. |
+| Abracadabra! | Abracadabra! | ¡Abracadabra! | Mover la varita | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Accomplished | Conseguido | Logrado | Levantar los brazos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Achievement | Logro | Logro | Levantar los brazos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Acorn cap | Carapucha da landra | Capuchón de la bellota | Poner un dedo como un sombrero | `pal_acorn_cap` | nova | Bellota con su sombrerete marrón oscuro destacado arriba. |
 | Acorn | Landra | Bellota | Coger una bellota imaginaria con los dedos | `pal_acorn` | banco | Bellota clara con su capuchón. |
 | Acrobatic | Acrobático | Acrobático | Girar en el sitio | `pal_acrobatic` | nova | Niño haciendo acrobacias y girando sobre sí mismo. |
 | Across the road | Ao outro lado da rúa | Al otro lado de la calle | Caminar de un lado al otro | `pal_across_the_road` | nova | Niño cruzando de un lado al otro de la calle por las rayas. |
 | Across the sea | A través do mar | A través del mar | Remar hasta el otro lado del aula | `pal_across_the_sea` | nova | Barquito cruzando el mar de un extremo al otro con flecha larga. |
+| Act it out | Representalo | Representarlo | Hacer la historia con el cuerpo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Act | Actuar | Actuar | Hacer un personaje con todo el cuerpo | `pal_act` | banco | Máscaras teatrales para actuar un personaje. |
 | Action! | Acción! | ¡Acción! | Cerrar la claqueta | `pal_action` | nova | Niño dando una palmada con los brazos frente a una claqueta de cine abierta que se cierra. |
+| Actor's line | Frase do papel | Frase del papel | Decir una frase corta | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Add one more | Engadir un máis | Añadir uno más | Poner otro bloque | `pal_add_one_more` | nova | Dos bloques apilados recibiendo un bloque rojo adicional encima. |
 | Add up | Sumar | Sumar | Juntar dos grupos | `pal_add_up` | nova | Dos grupos de manzanas juntándose en el centro para sumar. |
+| Admire | Admirar | Admirar | Mirar con la boca abierta | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Adventurous | Aventureiro | Aventurero | Caminar con paso firme | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | After running, the heart beats faster | Despois de correr, o corazón latexa máis rápido | Después de correr, el corazón late más rápido | Correr y poner la mano en el pecho | `pal_after_running_the_heart_beats_faster` | composta | Niño corriendo y corazón latiendo rápido tras el ejercicio. |
+| Age | Idade | Edad | Enseñar los años con los dedos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Agree | Estar de acordo | Estar de acuerdo | Asentir con la cabeza | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Agreed | Acordado | Acordado | Asentir con la cabeza | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Agreement | Acordo | Acuerdo | Darse la mano con el compañero | `pal_agreement` | banco | Dos manos dándose la mano en señal de acuerdo. |
 | Ahoy, pirates! | Ei, piratas! | ¡Ah del barco, piratas! | Saludar con la mano en la frente | `pal_ahoy_pirates` | composta | Bandera pirata y niño haciendo saludo marinero en la frente. |
 | Air | Aire | Aire | Mover la mano en el aire | `pal_air` | composta | Corriente invisible de aire mostrada por ráfagas limpias en el cielo. |
 | Alarm clock | Espertador | Despertador | Hacer «ring ring» | `pal_alarm_clock` | banco | Despertador rojo con dos campanas arriba. |
 | Alert | Atento | Alerta | Abrir mucho los ojos | `pal_alert` | banco | Ojos bien abiertos mirando atento: coincide con el gesto de abrir mucho los ojos. |
+| Alive | Vivo, viva | Vivo, viva | Moverse con energía de los pies a la cabeza | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | All aboard the boat! | Todos ao barco! | ¡Todos al barco! | Subir al barco imaginario | `pal_all_aboard_the_boat` | nova | Barco en el agua con niños subiendo a cubierta. |
 | All aboard! | Todos a bordo! | ¡Todos a bordo! | Subir a un tren imaginario con un paso grande | `pal_all_aboard` | nova | Tren azul en el andén con flecha subiendo a bordo. |
+| All by myself | Eu só | Yo solo | Tocar el pecho orgulloso | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| All clean now | Xa todo limpo | Ya todo limpio | Abrir las manos limpias | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| All done! | Xa está! | ¡Ya está! | Abrir las manos al terminar | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| All gone! | Rematou! | ¡Se acabó! | Abrir las manos vacías hacia arriba | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | All hands on deck! | Todos a cuberta! | ¡Todos a cubierta! | Correr al barco | `pal_all_hands_on_deck` | composta | Niños corriendo hacia la cubierta del barco. |
+| All the family | Toda a familia | Toda la familia | Abrir los brazos a todos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | All together | Todos xuntos | Todos juntos | Darse las manos en círculo y subirlas a la vez | `pal_all_together` | nova | Tres niños cogidos de la mano levantando todos los brazos juntos. |
 | All wet! | Todo mollado! | ¡Todo mojado! | Enseñar las manos mojadas | `pal_all_wet` | composta | Manos abiertas cubiertas de gotas de agua: todo mojado. |
 | Almost at the top! | Xa case estamos arriba! | ¡Ya casi estamos arriba! | Estirar la mano hacia arriba | `pal_almost_at_the_top` | nova | Niño cerca de la cima de la montaña estirando la mano hacia la cumbre. |
@@ -43,13 +59,18 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | An oak grows from an acorn | Un carballo nace dunha landra | Un roble nace de una bellota | Encogerse y levantarse despacio | `pal_an_oak_grows_from_an_acorn` | composta | Bellota pequeña junto a flecha de crecimiento hacia un roble grande. |
 | Anchor | Áncora | Ancla | Bajar los brazos como un ancla | `pal_anchor` | banco | Ancla metálica de barco. |
 | Ancient town | Vila antiga | Villa antigua | Caminar despacio | `pal_ancient_town` | composta | Niño paseando despacio frente a las murallas de una villa antigua. |
+| Ancient | Moi vello | Antiquísimo | Mover la mano despacio como el tiempo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| And then what happened? | E que pasou despois? | ¿Y qué pasó después? | Señalar adelante | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| And then... | E entón... | Y entonces... | Abrir una mano y luego la otra, con cara de misterio | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Anemone | Anémona | Anémona | Abrir y cerrar los dedos despacio | `pal_anemone` | nova | Anémona marina sobre roca abriendo y meciendo sus tentáculos como pétalos en el fondo del mar. |
 | Animal ears | Orellas de animal | Orejas de animal | Poner las manos como orejas | `pal_animal_ears` | nova | Niño con largas orejas de conejo colocadas sobre la cabeza. |
 | Animal parade | Desfile de animais | Desfile de animales | Caminar en fila como animales | `pal_animal_parade` | composta | Animales caminando en fila desfilando uno detrás de otro. |
 | Animal tail | Rabo de disfrace | Cola de disfraz | Menear la cola del disfraz | `pal_animal_tail` | nova | Cola larga de disfraz de animal señalada con flecha. |
 | Ankle | Nocello | Tobillo | Girar el tobillo despacio | `pal_ankle` | nova | Pierna y pie descalzo con flechas circulares girando el tobillo. |
+| Answer | Resposta | Respuesta | Levantar la mano y responder | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Ant steps | Pasos de formiga | Pasos de hormiga | Dar pasos muy cortos | `pal_ant_steps` | composta | Hormiga pequeña y niño dando pasos diminutos. |
 | Ant | Formiga | Hormiga | Caminar en fila muy pequeñitos | `pal_ant` | banco | Hormiga de perfil con seis patas. |
+| Apologise | Pedir perdón | Pedir perdón | Poner la mano en el pecho y bajar la cabeza | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Applause | Aplauso | Aplauso | Aplaudir fuerte | `pal_applause` | banco | Dos manos aplaudiendo fuerte. |
 | Apple | mazá | manzana | — | `pal_apple` | banco | Manzana roja brillante con hoja verde. |
 | Apples and pears | Mazás e peras | Manzanas y peras | Coger una fruta con cada mano | `pal_apples_and_pears` | nova | Manzana roja y pera verde juntas sobre la mesa. |
@@ -57,17 +78,20 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Arch your back | Arquear as costas | Arquear la espalda | Hacer un gato con la espalda | `pal_arch_your_back` | nova | Gato arqueando bien alto el lomo con flecha curva encima. |
 | Arctic fox | Raposo ártico | Zorro ártico | Enroscarse como un zorro | `pal_arctic_fox` | nova | Zorro ártico blanco acurrucado sobre la nieve. |
 | Arctic | Ártico | Ártico | Abrazarse por el frío | `pal_arctic` | composta | Frío ártico con nieve y oso polar mientras el niño se abraza para calentarse. |
+| Are you OK? | Estás ben? | ¿Estás bien? | Inclinar la cabeza preguntando | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Are you ready? | Preparados? | ¿Preparados? | — | `pal_are_you_ready` | nova | Dos niños en postura atenta sobre la línea de salida preparados para empezar. |
 | Armchair | Butaca | Sillón | Sentarse en el sillón | `pal_armchair` | banco | Sillón para sentarse. |
 | Arms out like a plane | Brazos abertos coma un avión | Brazos abiertos como un avión | Abrir los brazos | `pal_arms_out_like_a_plane` | composta | Avión volando y niño inclinando sus brazos abiertos como alas. |
 | Arms up high! | Brazos arriba! | ¡Brazos arriba! | Levantar los brazos para el jersey | `pal_arms_up_high` | composta | Camiseta preparada y niño levantando los dos brazos arriba para vestirla. |
 | Arms up! | Brazos arriba! | ¡Brazos arriba! | Subir los dos brazos de golpe | `pal_arms_up` | composta | Niño levantando bien alto los dos brazos. |
 | Arms | Brazos | Brazos | Abrir los brazos en cruz | `pal_arms` | nova | Niño abriendo los dos brazos rectos en cruz señalados hacia fuera. |
+| Aromatic | Aromático | Aromático | Oler y suspirar | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Around the fire | Arredor do lume | Alrededor del fuego | Caminar en círculo con el bebé | `pal_around_the_fire` | composta | Niños caminando en círculo alrededor de la hoguera cálida. |
 | Around the square | Arredor do cadrado | Alrededor del cuadrado | Caminar alrededor de un cuadrado imaginario | `pal_around_the_square` | nova | Recorrido siguiendo los cuatro lados de un cuadrado en el suelo. |
 | Arrange tiles | Colocar baldosas | Colocar azulejos | Poner piezas en fila | `pal_arrange_tiles` | nova | Azulejos de colores colocados en fila ordenadamente. |
 | arrive | chegar | llegar | — | `pal_arrive` | composta | Llegando por fin a la meta o estación. |
 | As if the light were a secret! | Coma se a luz fose un segredo! | ¡Como si la luz fuera un secreto! | — | `pal_as_if_the_light_were_a_secret` | composta | Luz guardada en secreto dentro de una caja. |
+| Ask for help | Pedir axuda | Pedir ayuda | Levantar la mano | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Ask for | Pedir | Pedir | Extender la mano pidiendo | `pal_ask_for` | nova | Niño extendiendo la palma hacia delante para pedir la pelota. |
 | Astronaut | Astronauta | Astronauta | Caminar despacio como sin gravedad | `pal_astronaut` | banco | Astronauta con casco espacial. |
 | At bath time, the box stops. | Á hora do baño, a caixa para. | A la hora del baño, la caja se para. | — | `pal_at_bath_time_the_box_stops` | composta | Bañera y caja detenida junto a la señal de parar. |
@@ -79,6 +103,7 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Autumn-coloured | Da cor do outono | Color otoño | Señalar hojas y castañas | `pal_autumn_coloured` | nova | Hojas naranjas, rojas y doradas junto a una castaña en colores cálidos de otoño. |
 | Awake | Esperto, esperta | Despierto, despierta | Abrir mucho los ojos y mirar alrededor | `pal_awake` | nova | Niño bien despierto en la cama por la mañana con los ojos muy abiertos. |
 | Baa | Balar | Balar | Hacer «beee» como un cordero | `pal_baa` | composta | Oveja/cordero balando en el prado. |
+| Babble | Balbucir | Balbucear | Repetir «ba-ba» con el bebé | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Baby bath | Bañeira de bebé | Bañera de bebé | Meter al bebé en la bañera despacio | `pal_baby_bath` | composta | Bebé chapoteando en la bañera con pompas. |
 | Baby oil | Aceite de bebé | Aceite de bebé | Frotar las manos con aceite | `pal_baby_oil` | banco | Bote de aceite suave para bebé. |
 | Baby photo | Foto de bebé | Foto de bebé | Acunar un bebé imaginario | `pal_baby_photo` | composta | Marco de madera con la foto de un bebé dentro. |
@@ -144,9 +169,11 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Bear | Oso | Oso | Caminar pesado a cuatro patas | `pal_bear` | banco | Oso pardo de frente, coincidencia directa. |
 | Beat your chest | Bater no peito | Golpear el pecho | Golpear el pecho como un gorila | `pal_beat_your_chest` | composta | Gorila fuerte y niño golpeándose el pecho suavemente como él. |
 | Beat | Compás | Compás | Dar palmas al compás | `pal_beat` | composta | Metrónomo marcando el compás junto a las palmas. |
+| Beautiful | Bonito, bonita | Bonito, bonita | Mirar algo con cara de admiración: ¡oooh! | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Bed | Cama | Cama | Juntar las manos bajo la mejilla como una cama | `pal_bed` | banco | Cama infantil con almohada y manta. |
 | Bedtime routine | Rutina de noite | Rutina de noche | Hacer los gestos de la noche en orden | `pal_bedtime_routine` | nova | Tres pasos de noche en orden: cepillo de dientes, cuento y cama. |
 | Bedtime story | Conto de noite | Cuento para dormir | Abrir un libro en el regazo | `pal_bedtime_story` | nova | Cuento ilustrado abierto bajo la noche estrellada a la hora de dormir. |
+| Bee rhymes with tree | Bee rima con tree | Bee rima con tree | Volar y estirarse como árbol | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Bee | Abella | Abeja | Mover los brazos pegados al cuerpo muy rápido | `pal_bee` | banco | Abeja con rayas y alas, coincidencia directa. |
 | Beep beep, nose! | Pi pi, nariz! | ¡Pi pi, nariz! | Apretar la nariz haciendo «pi pi» | `pal_beep_beep_nose` | nova | Cara sonriente con dedo apretando suavemente la nariz divertida. |
 | Beep | Pitar | Pitar | Tocar un claxon imaginario con la palma | `pal_beep` | composta | Claxon rojo pulsado junto al autobús emitiendo pitido sonoro. |
@@ -172,6 +199,7 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Bendy | Flexible | Flexible | Doblarse hacia adelante | `pal_bendy` | nova | Barra verde muy flexible doblada en forma de arco U. |
 | Berry | Baga | Baya | Coger una baya imaginaria | `pal_berry` | nova | Ramita con bayas rojas y moradas brillantes colgando. |
 | Beside | Ao lado | Al lado | Ponerse al lado de un amigo | `pal_beside` | nova | Dos amigos de pie colocados juntos lado a lado. |
+| Best moment | Mellor momento | Mejor momento | Levantar un dedo sonriendo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Between your fingers too! | Tamén entre os dedos! | ¡También entre los dedos! | Frotar entre los dedos | `pal_between_your_fingers_too` | nova | Dos manos entrelazadas con espuma limpiando entre los dedos. |
 | Between | Entre medias | En medio | Ponerse entre dos amigos | `pal_between` | nova | Tres niños en fila con el del medio señalado entre los dos. |
 | Bib | Babeiro | Babero | Atar el babero al cuello despacio | `pal_bib` | nova | Babero de tela con abertura para el cuello. |
@@ -191,8 +219,10 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Big, bigger, biggest | Grande, máis grande, o máis grande | Grande, más grande, el más grande | Abrir los brazos en tres pasos | `pal_big_bigger_biggest` | nova | Tres formas creciendo progresivamente: grande, más grande y el más grande. |
 | Bigger and bigger | Cada vez máis grande | Cada vez más grande | Abrir las manos cada vez más | `pal_bigger_and_bigger` | nova | Serie progresiva de cuatro globos creciendo cada vez más. |
 | Bigger now | Máis grande agora | Más grande ahora | Medir al bebé con la mano | `pal_bigger_now` | nova | Comparación de un brote pequeño creciendo a una planta mucho mayor. |
+| Bigger school | Escola máis grande | Colegio más grande | Abrir los brazos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Bigger than an ant, smaller than a mouse | Maior ca unha formiga, menor ca un rato | Más grande que una hormiga, más pequeño que un ratón | Abrir los dedos poco y luego más | `pal_bigger_than_an_ant_smaller_than_a_mouse` | nova | Escala visual mostrando algo mayor que una hormiga y menor que un ratón. |
 | Bigger | Máis grande | Más grande | Abrir más los brazos | `pal_bigger` | nova | Círculo pequeño pasando por flecha a otro círculo notablemente más grande. |
+| Biggest | O máis grande | El más grande | Abrir los brazos al máximo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Bike ride | Paseo en bici | Paseo en bici | Pedalear en el aire | `pal_bike_ride` | nova | Niño paseando en bicicleta roja por el camino verde. |
 | Bike | Bicicleta | Bici | Sujetar un manillar imaginario y tocar el timbre | `pal_bike` | banco | Bicicleta infantil con manillar y dos ruedas. |
 | Bin | Papeleira | Papelera | Tirar el papel a la papelera | `pal_bin` | nova | Papelera verde con bola de papel entrando arriba. |
@@ -206,6 +236,8 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Birthday | Aniversario | Cumpleaños | Soplar velas imaginarias | `pal_birthday` | banco | Tarta de cumpleaños con velas encendidas. |
 | Biscuit | Galleta | Galleta | Partir una galleta en dos | `pal_biscuit` | banco | Galleta redonda con pepitas. |
 | Bite! | trabar, dar unha trabada | morder, dar un mordisco | Hacer como que se da un mordisco grande, abriendo y cerrando la boca y chocando los dientes. | `pal_bite` | composta | Manzana con marca de mordisco. |
+| Bitter | Amargo, amarga | Amargo, amarga | Poner cara de sorpresa y arrugar la nariz | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Bittersweet | Agridoce | Agridulce | Sonreír y abrazar | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Black | Negro, negra | Negro, negra | Señalar algo negro en el aula | `pal_black` | nova | Muestra de color negro puro y silueta de gato negro señalados con el dedo. |
 | Blackbird | Merlo | Mirlo | Silbar como un mirlo | `pal_blackbird` | banco | Mirlo negro con pico naranja. |
 | Blade of grass | Folla de herba | Brizna de hierba | Coger una brizna de hierba | `pal_blade_of_grass` | nova | Una única brizna alta y esbelta de hierba verde con gotita. |
@@ -223,6 +255,7 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Bloom! Big bright flowers! | Florece! Flores grandes e brillantes! | ¡Florece! ¡Flores grandes y brillantes! | Erguirse milímetro a milímetro hasta las puntas de los pies con los brazos en abanico. | `pal_bloom_big_bright_flowers` | composta | Flores grandes y vistosas abriéndose al sol. |
 | Blooming | En flor | En flor | Abrir los brazos grandes | `pal_blooming` | composta | Flores abiertas coloridas y niño abriendo grande los brazos en el prado. |
 | Blossom | Flor de árbore | Flor de árbol | Señalar las flores del árbol | `pal_blossom` | banco | Flor de árbol abierta con pétalos blancos. |
+| Blow a raspberry | Facer pedorretas | Hacer pedorretas | Hacer una pedorreta en la barriga | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Blow away | Levar o vento | Llevárselo el viento | Soplar y dejar volar una hoja | `pal_blow_away` | composta | Viento soplando con fuerza y llevándose una hoja volando. |
 | Blow bubbles in water | Facer burbullas na auga | Hacer burbujas en el agua | Soplar en el agua con los labios | `pal_blow_bubbles_in_water` | nova | Pajita metida en el recipiente de agua soltando pompas de aire. |
 | Blow bubbles | Facer burbullas | Hacer burbujas | Soplar despacio por la varita | `pal_blow_bubbles` | composta | Varita mágica haciendo pompas de jabón que salen flotando. |
@@ -269,25 +302,33 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Boots | Botas | Botas | Meter los pies en botas imaginarias y pisar fuerte | `pal_boots` | nova | Par de botas azules de invierno con borde blanco. |
 | Both sides | As dúas partes | Las dos partes | Señalar a uno y a otro | `pal_both_sides` | nova | Dos flechas simétricas señalando tanto el lado izquierdo como el derecho. |
 | Bottle | Botella | Botella | Sujetar una botella imaginaria con las dos manos | `pal_bottle` | nova | Dos manos sujetando firmemente una botella transparente. |
+| Bottom | Cu | Culito | Dar palmaditas suaves en el culito | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Bounce on knee | Brincar no xeonllo | Saltar en la rodilla | Hacer botar al bebé en la rodilla | `pal_bounce_on_knee` | composta | Adulto haciendo botar suavemente al bebé en la rodilla. |
 | Bounce up and down | Rebotar | Rebotar | Botar en el sitio | `pal_bounce_up_and_down` | nova | Niño rebotando arriba y abajo sobre colchoneta elástica. |
 | Bounce | Botar | Botar | Botar una pelota imaginaria con la mano | `pal_bounce` | nova | Pelota naranja botando en el suelo en trayectoria de V. |
+| Bouncy | Saltarico | Saltarín | Botar en el puf | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Bow to the audience | Saudar ao público | Saludar al público | Inclinar el títere | `pal_bow_to_the_audience` | nova | Actor inclinándose en el escenario saludando al público. |
 | Bow | Facer unha reverencia | Hacer una reverencia | Inclinar el cuerpo hacia delante con una mano en el pecho | `pal_bow` | nova | Niño inclinando el tronco hacia delante haciendo una reverencia. |
 | Bowl | Cunca | Cuenco | Sostener un cuenco imaginario con las dos manos | `pal_bowl` | banco | Cuenco azul con cuchara. |
 | Box lid | Tapa da caixa | Tapa de la caja | Cerrar la tapa de la caja | `pal_box_lid` | nova | Caja de cartón con su tapa superior bajando para cerrarla. |
 | Box | caixa | caja | — | `pal_box` | banco | Caja de cartón cerrada. |
 | Bracken | Fento | Helecho | Extender la mano como un helecho | `pal_bracken` | nova | Fronda amplia de helecho verde simétrico en el prado. |
+| Brackish | Salobre | Salobre | Probar y dudar | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Brake | Frear | Frenar | Parar y echar el cuerpo atrás | `pal_brake` | nova | Frenando la bicicleta con el cuerpo echado atrás y marcas de frenada. |
 | Branch | Póla | Rama | Extender un brazo y mover los dedos como hojas | `pal_branch` | nova | Rama de árbol extendida con brotes de hojas verdes al viento. |
 | Brave and kind | Valente e amable | Valiente y amable | Poner el puño y luego la mano abierta | `pal_brave_and_kind` | composta | Escudo protector junto a corazón cálido: valiente y amable. |
 | Brave knight | Cabaleiro valente | Caballero valiente | Levantar el pecho | `pal_brave_knight` | nova | Yelmo plateado con pluma roja y escudo de caballero. |
+| Brave | Valente | Valiente | Poner las manos en la cintura y sacar pecho | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Bread and cheese | Pan e queixo | Pan y queso | Juntar las dos manos como un bocadillo | `pal_bread_and_cheese` | composta | Rebanada de pan y cuña de queso servidas juntas en el plato. |
 | Bread | pan | pan | — | `pal_bread` | banco | Rebanada de pan tierno. |
 | Breath | Alento | Aliento | Echar el aliento en el cristal | `pal_breath` | nova | Vaho tibio del aliento empañando el cristal frío de la ventana. |
+| Breathe calmly | Respirar tranquilo | Respirar tranquilo | Inspirar y espirar despacio | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Breathe in slowly | Coller aire amodo | Coger aire despacio | Inspirar despacio por la nariz | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Breathe in, breathe out | Colle aire, bota aire | Coge aire, echa aire | Inflar y desinflar el pecho | `pal_breathe_in_breathe_out` | nova | Niño cogiendo aire por un lado y echando aire por el otro. |
+| Breathe slowly | Respirar amodo | Respirar despacio | Inflar la barriga y soltarla despacio | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Breathe | Respirar | Respirar | Llenar de aire la barriga y soltarlo despacio | `pal_breathe` | nova | Niño respirando serenamente con flujo suave de aire entrando y saliendo. |
 | Breathing buddy | Compañeiro de respiración | Compañero de respiración | Poner un peluche en la barriga | `pal_breathing_buddy` | nova | Niño tumbado con un osito peluche subiendo sobre su barriga al respirar. |
+| Breathtaking | Impresionante | Impresionante | Abrir la boca sorprendidos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Breeze | Brisa | Brisa | Soplar suave en la cara del bebé | `pal_breeze` | composta | Brisa suave haciendo ondear las hojitas en el aire. |
 | Breezy evening | Tarde fresca | Tarde fresca | Abanicarse despacio | `pal_breezy_evening` | nova | Atardecer anaranjado con brisa fresca meciendo las hojas. |
 | Breezy | Con brisa | Con brisa | Mover suavemente los brazos como la brisa | `pal_breezy` | nova | Brisa suave haciendo ondear ligeramente una cometa celeste en el cielo. |
@@ -298,6 +339,7 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | bright | vivo, brillante | vivo, brillante | — | `pal_bright` | composta | Luz muy viva y brillante con destellos. |
 | Brightest star | A estrela máis brillante | La estrella más brillante | Señalar una estrella | `pal_brightest_star` | nova | Estrella mucho más grande y brillante entre otras pequeñas en el cielo nocturno. |
 | Brightest | O máis brillante | El más brillante | Señalar la luz más brillante | `pal_brightest` | composta | Sol deslumbrante con rayos largos sobre fondo oscuro: el más brillante. |
+| Brilliant | Xenial | Genial | Levantar los brazos y decir «¡sí!» | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Bring | Traer | Traer | Traer un juguete a la alfombra | `pal_bring` | nova | Niño llevando un balón hacia la alfombra con flecha indicativa. |
 | Broccoli | Brócoli | Brócoli | Hacer un árbol con la mano | `pal_broccoli` | banco | Ramillete de brócoli verde. |
 | broken | roto | roto | — | `pal_broken` | nova | Pieza partida por la mitad mostrando rotura clara. |
@@ -332,9 +374,11 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Build high | Construír alto | Construir alto | Poner bloques hasta arriba | `pal_build_high` | nova | Torre muy alta de bloques con gran flecha vertical hacia arriba. |
 | Build | Construír | Construir | Apilar bloques imaginarios cada vez más altos | `pal_build` | nova | Bloques apilándose unos sobre otros para construir una estructura. |
 | Builder | Albanel | Albañil | Poner ladrillos imaginarios | `pal_builder` | nova | Albañil con casco amarillo colocando ladrillos rojos. |
+| Building blocks | Bloques de construír | Bloques de construcción | Poner un bloque sobre otro | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Bumpy ride | Viaxe con saltos | Viaje con baches | Botar en la silla | `pal_bumpy_ride` | nova | Cochecito dando saltos sobre un camino ondulado lleno de baches. |
 | Bumpy walnut | Noz rugosa | Nuez rugosa | Rodar una nuez entre las manos | `pal_bumpy_walnut` | composta | Nuez rugosa rodando entre flechas circulares. |
 | Bumpy | Rugoso, rugosa | Rugoso, rugosa | Tocarse el brazo con pequeños golpecitos | `pal_bumpy` | nova | Mano palpando una superficie claramente rugosa de bultos y ondas. |
+| Bunch of grapes | Acio de uvas | Racimo de uvas | Colgar la mano como un racimo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Buoy | Boia | Boya | Subir y bajar como una boya | `pal_buoy` | nova | Boya marítima roja y blanca flotando sobre las olas del mar. |
 | Buoyant | Que flota | Que flota | Subir las manos despacio | `pal_buoyant` | nova | Pelota ligera flotando muy arriba sobre la superficie del agua. |
 | Burp | Arrotar | Eructar | Dar palmaditas en la espalda después de comer | `pal_burp` | composta | Palmaditas suaves en la espalda del bebé tras tomar su biberón. |
@@ -343,9 +387,11 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Bus stop | Parada do autobús | Parada del autobús | Esperar de pie en la parada | `pal_bus_stop` | banco | Poste de parada de autobús. |
 | Bus | Autobús | Autobús | Sentarse en fila como en los asientos del autobús | `pal_bus` | banco | Autobús escolar amarillo con ruedas. |
 | Busy city | Cidade con vida | Ciudad con vida | Moverse rápido | `pal_busy_city` | banco | Ciudad con edificios iluminados y actividad. |
+| Busy fingers | Dedos inquedos | Dedos inquietos | Mover los dedos sin parar | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Busy harbour | Porto activo | Puerto activo | Moverse trabajando | `pal_busy_harbour` | nova | Puerto activo con grúa en el muelle y barcos entrando y saliendo. |
 | Busy port | Porto con traballo | Puerto con trabajo | Mover los brazos trabajando | `pal_busy_port` | nova | Puerto activo con grúa cargando contenedores sobre un barco mercante. |
 | Busy street | Rúa con xente | Calle con gente | Mirar a un lado y a otro | `pal_busy_street` | nova | Calle con tráfico de coches y peatones mirando a ambos lados. |
+| Busy | Ocupado, ocupada | Ocupado, ocupada | Mover las manos muy rápido como quien trabaja mucho | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Buttercup | Botón de ouro | Botón de oro | Poner una flor amarilla en la barbilla | `pal_buttercup` | nova | Flor amarilla brillante botón de oro de cinco pétalos sobre su tallo. |
 | Butterfly print | Estampa de bolboreta | Estampa de mariposa | Pintar y doblar el papel | `pal_butterfly_print` | nova | Papel doblado abierto mostrando una mariposa simétrica estampada con pintura. |
 | Butterfly | Bolboreta | Mariposa | Enganchar los pulgares y mover las manos como alas | `pal_butterfly` | banco | Mariposa azul de alas simétricas. |
@@ -353,6 +399,7 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Button | Abotoar | Abrochar | Abrochar botones imaginarios en el pecho | `pal_button` | nova | Camisa azul con botones blancos de cuatro agujeros y ojal. |
 | Buy bread | Mercar pan | Comprar pan | Dar una moneda imaginaria | `pal_buy_bread` | nova | Moneda dorada ofrecida a cambio de una hogaza de pan recién hecho. |
 | Buzz | Zumbar | Zumbar | Hacer «bzzz» con los labios | `pal_buzz` | nova | Abeja volando en bucle dejando estela zumbante tras de sí. |
+| Buzz, buzz! | Bzzz, bzzz! | ¡Bzzz, bzzz! | Volar como una abeja diciendo «bzzz» | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | By bedtime, we will have seen every colour. | Á hora de durmir, teremos visto todas as cores. | A la hora de dormir, habremos visto todos los colores. | — | `pal_bedtime_seen_every_colour` | composta | Cama de dormir junto a arcoíris completo de colores. |
 | By Friday, the room will have turned red. | O venres, o cuarto xa estará vermello. | El viernes, la habitación se habrá vuelto roja. | — | `pal_friday_room_turned_red` | composta | Habitación teñida de rojo con calendario semanal. |
 | By the sea | Á beira do mar | A la orilla del mar | Sentarse juntos mirando el mar | `pal_by_the_sea` | composta | Niño sentado a la orilla del mar mirando las olas. |
@@ -366,19 +413,32 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Calendar | Calendario | Calendario | Pasar hojas de un calendario | `pal_calendar` | banco | Calendario de hojas mensuales. |
 | Calf | Cría | Cría | Acurrucarse junto a un amigo | `pal_calf` | composta | Vaca con cría tierna mientras dos amigos se acurrucan juntos. |
 | Call your friend: come and help us! | Chama ao teu amigo: ven axudarnos! | Llama a tu amigo: ¡ven a ayudarnos! | Gesto amplio de llamada e incorporación de un nuevo niño a la cuerda. | `pal_call_friend_help` | nova | Niño haciendo amplio gesto de llamada para que su amigo se acerque a ayudar. |
+| Calm and clear | Tranquilo e claro | Tranquilo y claro | Hablar despacio | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Calm down | Acougar | Calmarse | Respirar despacio con las manos en la barriga | `pal_calm_down` | nova | Niño sereno rodeado de halo suave bajando los hombros para calmarse. |
 | Calm jar | Bote da calma | Bote de la calma | Agitar y mirar cómo baja | `pal_calm_jar` | nova | Frasco transparente de la calma con agua azul y brillos reposando al fondo. |
 | Calm sea | Mar tranquilo | Mar tranquilo | Pasar la mano plana | `pal_calm_sea` | nova | Mar tranquilo con agua en calma bajo el sol. |
 | Calm sea: move the cloth very slowly | Mar en calma: move o pano moi amodo | Mar en calma: mueve la tela muy despacio | Ondulación lenta y sostenida de la tela azul con ambas manos. | `pal_calm_sea_cloth` | nova | Dos niños sujetando y ondulando suavemente una tela azul como mar en calma. |
+| Calm voice | Voz tranquila | Voz tranquila | Hablar despacio | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Calm | Tranquilo, tranquila | Tranquilo, tranquila | Respirar hondo y dejar caer los hombros | `pal_calm` | nova | Niño con ojos cerrados, hombros caídos y respiración tranquila: calma. |
 | Calm-down corner | Recuncho da calma | Rincón de la calma | Sentarse en el rincón | `pal_calm_down_corner` | nova | Rincón de la calma con cojines suaves y niño respirando tranquilo. |
+| Calmer | Máis tranquilo | Más tranquilo | Bajar los hombros | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Campfire | Fogueira de campamento | Hoguera de campamento | Sentarse alrededor | `pal_campfire` | composta | Hoguera de campamento sobre troncos cruzados en la noche. |
 | Campsite | Cámping | Camping | Hacer una tienda con las manos | `pal_campsite` | nova | Tienda de campaña naranja acampada junto a pinos y fogata. |
+| Can I have more peas? | Póñesme máis chícharos? | ¿Me pones más guisantes? | Extender el plato | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Can I have one? | Podo coller unha? | ¿Puedo coger una? | Extender la mano pidiendo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Can I help you? | Podo axudarte? | ¿Puedo ayudarte? | — | `pal_can_i_help_you` | composta | Niño tendiendo la mano para ayudar a otro que sostiene una caja. |
+| Can I keep it? | Podo gardalo? | ¿Puedo quedármelo? | Apretar el tesoro contra el pecho | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Can I play? | Podo xogar? | ¿Puedo jugar? | Acercarse y abrir la mano | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Can I try some? | Podo probar? | ¿Puedo probar? | Extender la mano | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Can the stone float? | Pode flotar a pedra? | ¿Puede flotar la piedra? | — | `pal_can_the_stone_float` | composta | Piedra en el agua preguntando si puede flotar. |
 | Can we trade? | Facemos un troco? | ¿Hacemos un cambio? | — | `pal_can_we_trade` | composta | Flechas cruzadas proponiendo intercambiar un objeto por otro. |
+| Can you catch me? | Pódesme pillar? | ¿Puedes pillarme? | Correr riendo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Can you feel your heart? | Sentes o corazón? | ¿Sientes el corazón? | Poner la mano en el pecho | `pal_can_you_feel_your_heart` | composta | Corazón latiendo y niño sintiendo su pecho con la mano. |
+| Can you find something red? | Atopas algo vermello? | ¿Encuentras algo rojo? | Buscar alrededor | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Can you help me build? | Axúdasme a construír? | ¿Me ayudas a construir? | Extender un bloque a un amigo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Can you see the Plough? | Ves o Carro? | ¿Ves el Carro? | Unir puntos en el aire | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Can you swim? | Sabes nadar? | ¿Sabes nadar? | Nadar con los brazos y mirar a otra persona | `pal_can_you_swim` | nova | Niño nadando en el mar dando brazadas hacia delante. |
+| Can you write your name? | Sabes escribir o teu nome? | ¿Sabes escribir tu nombre? | Escribir en el aire | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Candle | Vela | Vela | Soplar despacio una vela imaginaria | `pal_pal_candle` | banco | Vela encendida con llama amarilla. |
 | Cannon | Canón | Cañón | Hacer un tubo con los brazos | `pal_cannon` | nova | Cañón oscuro de rueda de madera apuntando hacia lo alto. |
 | Canopy | Copa das árbores | Copa de los árboles | Abrir los brazos por encima de la cabeza | `pal_canopy` | composta | Árbol frondoso y niño curvando los brazos por encima imitando su copa. |
@@ -390,12 +450,14 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Cardboard box | Caixa de cartón | Caja de cartón | Meter y sacar un juguete de la caja | `pal_cardboard_box` | composta | Caja de cartón junto a un peluche para meter y sacar. |
 | Cardigan | Chaqueta de punto | Rebeca | Abotonar la rebeca | `pal_cardigan` | composta | Rebeca abotonada de manga larga. |
 | Care for the sea | Coidar o mar | Cuidar el mar | Abrazar el aire | `pal_care_for_the_sea` | composta | Cuidar el mar abrazando y protegiendo la vida marina. |
+| Carefree | Despreocupado | Despreocupado | Saltar libres | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Careful with nature | Coidadoso coa natureza | Cuidadoso con la naturaleza | Posar la mano suave | `pal_careful_with_nature` | nova | Dos manos ahuecadas cuidando con delicadeza un brote verde. |
 | Careful with the egg | Coidado co ovo | Cuidado con el huevo | Coger el huevo con mucho cuidado | `pal_careful_with_the_egg` | nova | Manos sosteniendo un huevo entero con mucho cuidado. |
 | careful | coidadoso | cuidadoso | — | `pal_careful` | composta | Niño llevando un vaso lleno con mucho cuidado. |
 | Careful, it's hot | Coidado, queima | Cuidado, quema | Soplar y abanicar la mano | `pal_careful_it_s_hot` | composta | Olla muy caliente con ondas de calor y mano apartándose mientras se sopla. |
 | Caress | Acariñar | Acariciar | Pasar la mano muy despacio por el brazo | `pal_caress` | composta | Mano abierta acariciando despacio. |
 | Caring for others | Coidador | Cuidador | Abrazar un peluche | `pal_caring_for_others` | composta | Peluche cuidado con cariño y niño dando un abrazo tierno. |
+| Caring | Atento | Atento | Preguntar «¿estás bien?» con la mano | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Carnival float | Carroza | Carroza | Saludar desde una carroza | `pal_carnival_float` | composta | Carroza colorida de fiesta con globos y niño saludando encima de ella. |
 | Carnival Freeze! | Conxelados de Entroido! | ¡Congelados de Carnaval! | Congelar la postura del animal predilecto en silencio. | `pal_carnival_freeze` | composta | Fiesta de carnaval con niño quieto como estatua ante señal de parar. |
 | Carol singers | Cantores de panxoliñas | Cantantes de villancicos | Cantar en grupo | `pal_carol_singers` | nova | Tres niños abrigados cantando villancicos juntos bajo la farola nocturna. |
@@ -408,6 +470,8 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Cast a spell | Facer un feitizo | Hacer un hechizo | Mover la varita y decir «abracadabra» | `pal_cast_a_spell` | nova | Varita mágica trazando un arco encantado luminoso en el aire. |
 | Castle wall | Muralla | Muralla | Caminar rozando una pared | `pal_castle_wall` | composta | Niño caminando rozando con la mano la muralla de piedra. |
 | Castle | Castelo | Castillo | Levantar los brazos como torres de un castillo | `pal_castle` | banco | Castillo con torres y bandera. |
+| Castrelos Park | Parque de Castrelos | Parque de Castrelos | Señalar el parque en el mapa | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Cat and hat rhyme! | Cat e hat riman! | ¡Cat y hat riman! | Señalar la cabeza y hacer un gato | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Cat! | gato | gato | Ponerse a cuatro patas y arquear el lomo como un gato. | `pal_cat` | banco | Gato de cuerpo entero. |
 | Catch drops | Coller pingas | Coger gotas | Abrir la mano bajo la lluvia fina | `pal_catch_drops` | nova | Mano abierta hacia arriba recogiendo gotas finas de lluvia. |
 | Catch me! | Atrápame! | ¡Atrápame! | Alejarse despacio y dejarse atrapar | `pal_catch_me` | nova | Un niño corriendo delante y otro extendiendo los brazos para atraparlo. |
@@ -422,21 +486,28 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Celebration | Celebración | Celebración | Dar palmas contentos | `pal_celebration` | composta | Bola de confeti brillante y palmas de celebración. |
 | Centipede | Cempés | Ciempiés | Mover muchos dedos despacio | `pal_centipede` | nova | Ciempiés naranja largo con muchos pares de patitas caminando. |
 | Centre | Centro | Centro | Señalar el centro del cuerpo | `pal_centre` | nova | Diana circular señalando exactamente el punto rojo del centro. |
+| Ceremony | Cerimonia | Ceremonia | Caminar despacio y erguido | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Certificate | Certificado | Certificado | Recibir un papel con las dos manos | `pal_certificate` | nova | Diploma o certificado oficial con sello rojo y cintas colgantes. |
 | Chair | Cadeira | Silla | Tocar la silla y sentarse en ella despacio | `pal_chair` | banco | Silla de madera de cuatro patas. |
 | Chalk | Xiz | Tiza | Dibujar en el suelo con la tiza | `pal_chalk` | nova | Mano sujetando una tiza blanca que traza líneas sobre la pizarra oscura del suelo. |
 | Chalky | De xiz | De tiza | Soplar el polvo de las manos | `pal_chalky` | nova | Barritas de tiza sobre pizarra soltando polvo blanco al soplar. |
+| Challenge | Desafío | Desafío | Poner los puños fuertes | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Change over time | Cambiar co tempo | Cambiar con el tiempo | Pasar de un gesto pequeño a uno grande | `pal_change_over_time` | nova | Tres etapas mostrando el crecimiento de semilla a brote y flor. |
+| Change the ending | Cambiar o final | Cambiar el final | Girar la mano al revés | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Change voices | Cambiar de voz | Cambiar de voz | Hablar grave y luego agudo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Change | Cambiar | Cambiar | Cambiar el pañal contando «uno, dos» | `pal_change` | composta | Bebé junto a un pañal limpio con cierres para cambiar. |
 | Changed a little, the plane flew further. | Cambiado un pouco, o avión voou máis lonxe. | Cambiado un poco, el avión voló más lejos. | — | `pal_changed_plane_flew_further` | composta | Avión ajustado volando aún más lejos. |
 | Changing mat | Cambiador | Cambiador | Tumbar al bebé en el cambiador | `pal_changing_mat` | nova | Cambiador acolchado con el bebé tumbado y un pañal limpio al lado. |
 | Channel | Canle | Canal | Hacer un canal con las manos | `pal_channel` | nova | Canal estrecho de agua azul excavado entre dos orillas de arena. |
 | Chapel | Capela | Capilla | Hacer un tejado en punta con las manos | `pal_chapel` | nova | Pequeña capilla blanca de pueblo con campanario arriba y puerta en arco. |
+| Character | Personaxe | Personaje | Poner la cara de un personaje | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Chart | Táboa | Tabla | Marcar una señal en una tabla | `pal_chart` | nova | Tabla gráfica con barras de colores señalada con el índice. |
 | Chase after | Ir detrás | Ir detrás | Gatear detrás de la pelota | `pal_chase_after` | nova | Niño gateando rápido detrás de una pelota que rueda. |
 | Chase | Perseguir | Perseguir | Caminar rápido detrás de una compañera sin tocarla | `pal_chase` | nova | Dos niños persiguiéndose a paso rápido uno detrás del otro. |
+| Cheap | Barato | Barato | Enseñar una moneda | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Cheek to cheek | Meixela con meixela | Mejilla con mejilla | Juntar mejilla con mejilla | `pal_cheek_to_cheek` | nova | Dos caras sonrientes pegando suavemente mejilla con mejilla. |
 | Cheeks | Meixelas | Mejillas | Inflar las mejillas y tocarlas con los dedos | `pal_cheeks` | nova | Dos dedos tocando las mejillas sonrosadas e infladas de una cara. |
+| Cheer | Animar | Animar | Levantar los brazos y decir «¡bravo!» | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Cheerful face | Cara alegre | Cara alegre | Sonreír muy grande | `pal_cheerful_face` | banco | Cara radiante con sonrisa abierta y ojos alegres. |
 | Cheerful | Alegre | Alegre | Abrir los ojos y sonreír mucho | `pal_cheerful` | nova | Niño radiante y alegre levantando los brazos con una sonrisa bajo el sol. |
 | Cheering crowd | Público aplaudindo | Público aplaudiendo | Aplaudir fuerte | `pal_cheering_crowd` | nova | Varios niños juntos animando y aplaudiendo como un público alegre. |
@@ -450,6 +521,7 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Chew on | Morder | Mordisquear | Dejar morder el mordedor limpio | `pal_chew_on` | nova | Bebé mordisqueando un anillo mordedor azul seguro y limpio. |
 | Chew | Mastigar | Masticar | Masticar despacio con la boca cerrada | `pal_chew` | composta | Criatura con el carrillo lleno masticando despacio un bocado de manzana. |
 | Chick | Pitiño | Pollito | Hacer «pío pío» con los dedos | `pal_chick` | banco | Pollito amarillo. |
+| Childhood | Infancia | Infancia | Encogerse pequeño | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Chilly wind | Vento fresco | Viento fresco | Abrazarse por el frío | `pal_chilly_wind` | composta | Viento frío soplando y niño abrazándose el cuerpo para entrar en calor. |
 | Chilly | Fresquiño | Fresquito | Frotar los brazos como con frío | `pal_chilly` | nova | Niño abrigado frotándose los brazos ante la brisa fresca. |
 | Chin | Queixo | Barbilla | Tocarse la barbilla con el dedo índice | `pal_chin` | nova | Dedo índice tocando directamente la barbilla bajo la boca. |
@@ -460,10 +532,14 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Choir | Coro | Coro | Cantar juntos en fila | `pal_choir` | nova | Cuatro niños en fila cantando al unísono en coro con notas musicales. |
 | Chomp | Mastigar | Masticar | Mover la boca como una vaca comiendo hierba | `pal_chomp` | nova | Vaca moteada masticando con apetito un manojo de hierba fresca. |
 | Choose fruit | Escoller froita | Escoger fruta | Mirar y escoger una | `pal_choose_fruit` | nova | Frutero variado mientras la mano elige la manzana roja. |
+| Choose together | Escoller xuntos | Elegir juntos | Levantar las manos todos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Choose | Escoller | Elegir | Dudar entre dos manos y elegir una | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Chop | Picar | Trocear | Trocear con la mano plana | `pal_chop` | nova | Tabla de cortar con zanahoria partida en rodajas y cuchillo bajando. |
 | Choppy | Picado | Picado | Mover las manos en olas pequeñas | `pal_choppy` | nova | Mar picado lleno de olas puntiagudas agitando una barquita. |
 | Chore | Tarefa da casa | Tarea de casa | Barrer en el aire | `pal_chore` | nova | Escoba barriendo el suelo en las tareas de casa. |
+| Chorus | Retrouso | Estribillo | Cantar todos a la vez | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Chubby cheeks | Meixelas gordiñas | Mofletes | Inflar los mofletes y soltar el aire | `pal_chubby_cheeks` | nova | Cara risueña con mofletes grandes, redondos y rosados inflados. |
+| Chubby | Gordiño | Regordete | Apretar suave las piernas regordetas | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Chuckle | Rir baixiño | Reír bajito | Reír bajito cerca de la oreja | `pal_chuckle` | nova | Niño tapándose un poco la boca riéndose bajito. |
 | Chunky | Groso | Grueso | Tocar un jersey grueso | `pal_chunky` | nova | Jersey grueso de punto con trenzas de lana colgado en una percha. |
 | Circle around | Dar voltas arredor | Dar vueltas alrededor | Caminar alrededor de un amigo | `pal_circle_around` | nova | Caminar dando toda la vuelta alrededor de un compañero. |
@@ -472,6 +548,7 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Circular | Circular | Circular | Dibujar un círculo grande | `pal_circular` | nova | Círculo grande y perfecto trazado con el dedo sobre la mesa. |
 | City lights | Luces da cidade | Luces de la ciudad | Abrir y cerrar las manos en el aire | `pal_city_lights` | nova | Edificios de la ciudad de noche con muchas ventanas iluminadas brillando. |
 | Clap a pattern | Bater un patrón | Dar palmas en patrón | Palma, palma, pie | `pal_clap_a_pattern` | nova | Patrón rítmico visual: dos palmas seguidas de un pisotón de zapato. |
+| Clap after me | Bate palmas despois de min | Da palmas después de mí | Repetir las palmas | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Clap along | Acompañar con palmas | Acompañar con palmas | Dar palmas al ritmo de la canción | `pal_clap_along` | composta | Manos aplaudiendo al ritmo alegre de las notas musicales. |
 | Clap and stop | Palma e para | Palmada y para | Dar palmas y parar de golpe | `pal_clap_and_stop` | composta | Manos dando palmas y señal octogonal de parar de golpe. |
 | Clap flippers | Bater as aletas | Batir las aletas | Dar palmas como una foca | `pal_clap_flippers` | composta | Foca marina batiendo aletas y niño dando palmas igual. |
@@ -482,20 +559,27 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Clap your hands | Bate as palmas | Da palmas | Dar tres palmadas al oír la orden | `pal_clap_your_hands` | composta | Dos manos chocando al aplaudir con ritmo. |
 | Clap | aplaudir, dar palmas | aplaudir, dar palmas | Guía dos palmadas lentas. | `pal_clap` | composta | Dos manos dando palmas: aplaudir. |
 | Clap, clap, stamp! | Palma, palma, pisada! | ¡Palma, palma, pisada! | Dar dos palmas y pisar | `pal_clap_clap_stamp` | composta | Dar dos palmadas sonoras seguidas de una pisada fuerte. |
+| Clap, stamp, clap, stamp, what comes next? | Palma, pé, palma, pé, que vén agora? | Palma, pie, palma, pie, ¿qué viene ahora? | Hacer el patrón y parar | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Clapperboard | Claqueta | Claqueta | Cerrar los brazos como una claqueta | `pal_clapperboard` | banco | Claqueta de cine abierta y lista para cerrarse de golpe. |
 | Clapping | Batendo palmas | Dando palmas | Dar palmitas | `pal_clapping` | banco | Manos dando palmas con ondas. |
+| Class charter | Carta da clase | Carta de la clase | Firmar un papel imaginario | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Class photo | Foto da clase | Foto de la clase | Juntarse todos para la foto | `pal_class_photo` | nova | Fotografía escolar enmarcada con tres compañeros posando sonrientes. |
 | Class song | Canción da clase | Canción de la clase | Cantar todos juntos | `pal_class_song` | nova | Grupo de clase cantando con alegría y los brazos arriba. |
 | Classmate | Compañeiro | Compañero | Señalar a un compañero | `pal_classmate` | nova | Dos compañeros de clase juntos en sus pupitres señalándose amistosamente. |
 | Classroom job | Encargo da clase | Encargo de la clase | Señalar el propio encargo en el panel | `pal_classroom_job` | nova | Panel de encargos de la clase con tareas ilustradas señalado por una mano. |
 | Classroom | Aula | Aula | Abrir los brazos dentro del aula | `pal_classroom` | nova | Pizarra verde del aula y niño abriendo los brazos dentro de la clase. |
+| Clean and clear | Limpo e claro | Limpio y claro | Mover las manos suaves | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Clean and shiny | Limpo e brillante | Limpio y brillante | Hacer brillar el espejo con el paño | `pal_clean_and_shiny` | nova | Espejo brillante destellando limpio junto a un paño verde. |
 | Clean beach | Praia limpa | Playa limpia | Enseñar la mano vacía | `pal_clean_beach` | nova | Playa de arena dorada reluciente y limpia junto al mar azul. |
 | Clean face | Cara limpa | Cara limpia | Enseñar la cara limpia en el espejo | `pal_clean_face` | nova | Cara limpia y sonriente reflejada junto a un espejo reluciente. |
 | Clean hands, happy baby | Mans limpas, bebé contento | Manos limpias, bebé contento | Enseñar las manos y sonreír | `pal_clean_hands_happy_baby` | composta | Bebé contento enseñando unas manos limpias y brillantes. |
 | Clean up, clean up | A recoller, a recoller | A recoger, a recoger | Cantar y recoger | `pal_clean_up_clean_up` | composta | Notas alegres de canción mientras se recogen juguetes en la caja. |
 | Clean | Limpo, limpa | Limpio, limpia | Enseñar las manos limpias y sonreír | `pal_clean` | composta | Manos limpias y relucientes tras lavarse bien. |
+| Clear table | Mesa baleira | Mesa despejada | Pasar la mano por la mesa despejada | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Clear voice | Voz clara | Voz clara | Hablar alto y despacio | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Clear | Despexado, despexada | Despejado, despejada | Abrir las manos como si apartaran las nubes | `pal_clear` | nova | Cielo completamente despejado apartando las nubes hacia los lados. |
+| Clever idea | Idea intelixente | Idea inteligente | Señalar la cabeza sonriendo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Clever | Listo, lista | Listo, lista | Tocarse la frente con un dedo y sonreír | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Cliff nest | Niño no cantil | Nido en el acantilado | Hacer un nido en la pared | `pal_cliff_nest` | nova | Nido de ramas con huevos posado en repisa alta de un acantilado. |
 | Cliff | Cantil | Acantilado | Poner la mano vertical | `pal_cliff` | banco | Acantilado rocoso alto junto al mar. |
 | Climb a ladder | Subir unha escada | Subir una escalera | Subir alternando manos y pies | `pal_climb_a_ladder` | composta | Escalera vertical con flecha indicando subir peldaño a peldaño. |
@@ -520,6 +604,7 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Coat hook | Colgadoiro | Perchero | Colgar la chaqueta en el perchero juntos | `pal_coat_hook` | composta | Perchero de madera con un abrigo colgado. |
 | Coat on the peg | Abrigo na percha | Abrigo en la percha | Colgar el abrigo | `pal_coat_on_the_peg` | composta | Abrigo colgado en su percha de madera. |
 | coat | abrigo | abrigo | — | `pal_coat` | banco | Abrigo cálido con solapas y botones, coincidencia directa. |
+| Coax | Animar con agarimo | Animar con cariño | Llamar al bebé con voz dulce | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Cobbles | Pedras da rúa | Adoquines | Pisar con cuidado | `pal_cobbles` | nova | Suelo empedrado con adoquines redondeados y niño pisando con cuidado. |
 | Cockle | Berberecho | Berberecho | Abrir y cerrar las manos como una concha | `pal_cockle` | nova | Concha redondeada y estriada de berberecho en la orilla marina. |
 | Coin | Moeda | Moneda | Contar monedas en la palma | `pal_coin` | banco | Moneda dorada brillante. |
@@ -544,13 +629,20 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Come here, puppy | Ven aquí, cachorriño | Ven aquí, cachorrito | Llamar con un gesto suave y dar palmadas en las rodillas | `pal_come_here_puppy` | nova | Perrito trotando alegremente hacia quien lo llama con la mano. |
 | Come out of the egg | Saír do ovo | Salir del huevo | Salir de una bola con el cuerpo | `pal_come_out_of_the_egg` | composta | Pollito saliendo al romperse el cascarón del huevo. |
 | Come under my umbrella | Ven debaixo do meu paraugas | Ven debajo de mi paraguas | — | `pal_come_under_umbrella` | composta | Dos niños acercándose juntos debajo del paraguas bajo la lluvia. |
+| Come | Vir | Venir | Llamar con el brazo para que se acerquen | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Comet | Cometa | Cometa | Correr con un brazo detrás | `pal_comet` | banco | Cometa celeste con estela luminosa. |
 | Comfort | Consolar | Consolar | Poner la mano en el hombro de un amigo | `pal_comfort` | nova | Niño consolando a su compañero apoyando la mano amable en su hombro. |
 | Comfortable | Cómodo | Cómodo | Colocar un cojín detrás de la espalda | `pal_comfortable` | composta | Cojín suave apoyando cómodamente la espalda del niño. |
+| Comfy | Cómodo, cómoda | Cómodo, cómoda | Acomodarse en el suelo con una sonrisa | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Comical | Cómico | Cómico | Hacer una mueca graciosa | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Command | Orde | Orden | Levantar un dedo antes de la orden | `pal_command` | composta | Niño dando una indicación clara con gesto de mano. |
+| Communicate | Comunicarse | Comunicarse | Silbar y responder | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Community | Comunidade | Comunidad | Cogerse todos de las manos | `pal_community` | nova | Grupo de tres compañeros unidos de la mano formando comunidad. |
+| Compare results | Comparar resultados | Comparar resultados | Poner las manos lado a lado | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Compare | Comparar | Comparar | Poner dos hojas lado a lado | `pal_compare` | nova | Dos hojas de diferente tamaño colocadas lado a lado para comparar. |
 | Compass | Compás | Brújula | Girar señalando el norte | `pal_compass` | banco | Brújula con aguja señalando el norte. |
+| Compassionate | Compasivo | Compasivo | Poner las manos en el pecho | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Compliment | Eloxio | Cumplido | Decir algo bonito sonriendo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Compost | Composto | Compost | Echar restos de fruta | `pal_compost` | nova | Cajón de compostaje de madera recibiendo restos de fruta y hojas. |
 | Compromise | Termo medio | Término medio | Juntar las manos en el medio | `pal_compromise` | composta | Balanza equilibrada y acuerdo justo entre dos personas. |
 | Condense | Condensarse | Condensarse | Juntar las manos en nube | `pal_condense` | nova | Vapor juntándose arriba para condensarse en nube gris con gotitas. |
@@ -559,12 +651,18 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Cone | Cono | Cono | Rodear el cono corriendo | `pal_cone` | nova | Cono naranja y blanco de psicomotricidad sobre el suelo. |
 | Confetti cannon | Canón de confeti | Cañón de confeti | Abrir las manos de golpe | `pal_confetti_cannon` | nova | Tubo de fiesta lanzando confeti de colores al abrirse de golpe. |
 | Confetti | Confeti | Confeti | Agitar un bote cerrado con confeti | `pal_confetti` | banco | Bola de confeti de colores. |
+| Confident | Seguro | Seguro | Levantar la cabeza | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Conga line | Fila de conga | Fila de conga | Bailar en fila con las manos en los hombros | `pal_conga_line` | nova | Tres niños bailando en fila de conga con manos sobre los hombros. |
+| Congratulations, class! | Parabéns, clase! | ¡Enhorabuena, clase! | Aplaudir | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Connect the dots | Unir os puntos | Unir los puntos | Unir puntos con el dedo | `pal_connect_the_dots` | nova | Puntos rojos unidos en orden formando una figura con trazos. |
 | Connect | Conectar | Conectar | Unir dos piezas | `pal_connect` | nova | Dos piezas de colores acercándose para encajar y conectarse. |
+| Considerate | Considerado | Considerado | Esperar con las manos en el regazo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Constellation | Constelación | Constelación | Unir puntos en el aire | `pal_constellation` | nova | Constelación de siete estrellas unidas por finas líneas en el cielo nocturno. |
 | Construction site | Obra | Obra | Ponerse un casco imaginario | `pal_construction_site` | banco | Señal de obras con valla amarilla y negra. |
+| Content | Satisfeito | Satisfecho | Dejar al bebé tranquilo en el regazo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Continue | Continuar | Continuar | Seguir el movimiento | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Coo coo | Arrulo | Arrullo | Arrullar como una paloma | `pal_coo_coo` | composta | Paloma blanca arrullando con ondas suaves de sonido. |
+| Coo | Facer sons suaves | Hacer gorgoritos | Responder a los sonidos del bebé con sonidos suaves | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Cook | Cociñar | Cocinar | Echar ingredientes imaginarios en la olla | `pal_cook` | nova | Olla roja cocinando verduras con cuchara de madera y vapor. |
 | Cool down | Refrescarse | Refrescarse | Mojar la nuca con agua | `pal_cool_down` | composta | Gota de agua fresca aplicada en la nuca y frente para quitar el calor. |
 | Cool shade | Sombra fresca | Sombra fresca | Sentarse a la sombra | `pal_cool_shade` | composta | Árbol dando sombra fresca con niño sentado debajo. |
@@ -587,16 +685,20 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Cotton wool | Algodón | Algodón | Limpiar la cara con un algodón | `pal_cotton_wool` | nova | Bolitas suaves y esponjosas de algodón blanco en un cuenco azul. |
 | Cotton | Algodón | Algodón | Pasar un algodón por la mejilla | `pal_cotton` | nova | Copo de algodón blanco muy esponjoso. |
 | Count coins | Contar moedas | Contar monedas | Contar con los dedos | `pal_count_coins` | composta | Dedo contando tres monedas doradas alineadas sobre la mesa. |
+| Count down | Contar cara atrás | Contar hacia atrás | Contar de cinco a uno con los dedos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Count in twos | Contar de dous en dous | Contar de dos en dos | Saltar dos pasos cada vez | `pal_count_in_twos` | nova | Parejas agrupadas de dos en dos para contar. |
 | Count petals | Contar pétalos | Contar pétalos | Contar hasta cinco | `pal_count_petals` | nova | Dedo señalando los pétalos blancos de una margarita para contarlos. |
 | Count rings | Contar os aneis | Contar los anillos | Contar círculos con el dedo | `pal_count_rings` | nova | Dedo señalando y contando los anillos de crecimiento de un tocón. |
 | Count the days | Contar os días | Contar los días | Contar con los dedos | `pal_count_the_days` | composta | Calendario y marcas contando cuántos días quedan. |
 | Count three leaves and jump over the ring | Conta tres follas e salta por riba do aro | Cuenta tres hojas y salta por encima del aro | Conteo motriz de tres hojas y salto con pies juntos por encima del aro. | `pal_count_3_leaves_jump_ring` | composta | Tres hojas contadas antes de saltar por encima del aro. |
+| Count to twenty | Contar ata vinte | Contar hasta veinte | Contar mientras se lavan las manos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Count votes | Contar votos | Contar votos | Contar manos con los dedos | `pal_count_votes` | nova | Tres niños levantando las manos mientras otro cuenta los votos. |
 | Count | Contar | Contar | Contar con los dedos hasta cinco | `pal_count` | nova | Fichas alineadas contándose una por una. |
 | Countdown to midnight | Contar ata a medianoite | Contar hasta la medianoche | Bajar los dedos | `pal_countdown_to_midnight` | composta | Reloj marcando la cuenta atrás hasta medianoche. |
+| Countdown | Conta atrás | Cuenta atrás | Bajar los dedos de cinco a cero | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Counter | Ficha | Ficha | Mover la ficha dos casillas | `pal_counter` | nova | Ficha redonda roja saltando dos casillas sobre el tablero. |
 | Counting the steps, we measured it. | Contando os pasos, medímolo. | Contando los pasos, lo medimos. | — | `pal_counting_steps_measured` | composta | Huellas midiendo la distancia en pasos. |
+| Countless | Incontable | Incontable | Abrir las manos muchas veces | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Cover up | Tapar | Tapar | Tapar los pies con la manta | `pal_cover_up` | nova | Manta morada cubriendo los pies de la persona tumbada. |
 | Cover with soil | Tapar con terra | Tapar con tierra | Tapar la semilla con las manos | `pal_cover_with_soil` | nova | Dos manos echando tierra oscura sobre una semilla en el huerto. |
 | Cow | Vaca | Vaca | Hacer cuernos pequeños con los índices y caminar despacio | `pal_pal_cow` | banco | Vaca blanca y negra de perfil. |
@@ -615,6 +717,7 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Crawl | Gatear | Gatear | Gatear por el suelo un rato | `pal_crawl` | composta | Niño gateando a cuatro patas por el suelo. |
 | Crayon pot | Bote de ceras | Bote de ceras | Meter las ceras en el bote | `pal_crayon_pot` | nova | Bote verde con ceras de colores dentro y otra cera entrando en él. |
 | Crayon | Cera de cor | Cera de colores | Coger una cera imaginaria y pintar en el aire | `pal_crayon` | banco | Cera de color rojo con funda. |
+| Crayons in the pot | Ceras no bote | Ceras en el bote | Meter las ceras en el bote | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Creamy | Cremoso, cremosa | Cremoso, cremosa | Mover la mano despacio como si removiera nata | `pal_creamy` | nova | Crema suave blanca en cuenco removida despacio en círculos con cuchara. |
 | Create a picture | Crear unha imaxe | Crear una imagen | Dibujar un marco | `pal_create_a_picture` | composta | Lienzo enmarcado sobre caballete con paisaje pintado y pincel. |
 | creative | creativo | creativo | — | `pal_creative` | composta | Paleta de colores, pincel y chispas de imaginación. |
@@ -648,7 +751,10 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Cucumber | Cogombro | Pepino | Cortar rodajas de pepino | `pal_cucumber` | banco | Pepino verde fresco. |
 | Cuddle | Aconchegarse | Acurrucarse | Encogerse y acurrucarse en el propio regazo | `pal_cuddle` | nova | Niño acurrucado abrazando sus rodillas y un cojín tibio. |
 | Cuddly | Apertable | Achuchable | Apretar el peluche contra el pecho | `pal_cuddly` | nova | Niño achuchando un osito de peluche contra su pecho. |
+| Cue | Sinal para entrar | Entrada | Señalar a un amigo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | cup | cunca | taza | — | `pal_cup` | composta | Taza limpia encima de la mesa. |
+| Curious mind | Mente curiosa | Mente curiosa | Mirar alrededor preguntando | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Curious | Curioso, curiosa | Curioso, curiosa | Mirar de cerca con una lupa imaginaria | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Curl into a ball | Facerse unha bóla | Hacerse una bola | Enroscarse en el suelo | `pal_bola` | nova | Un niño enroscado en el suelo, hecho una bola, abrazándose las piernas: el gesto. |
 | Curl up on the sofa | Aconchegarse no sofá | Acurrucarse en el sofá | Acurrucarse en el sofá | `pal_curl_up_on_the_sofa` | composta | Gato acurrucado cómodamente sobre el sofá. |
 | Curl up small like a tiny seed | Enróscate pequeniño coma unha semente | Acurrúcate pequeñito como una semilla | Flexión completa en el suelo, cabeza recogida entre las rodillas. | `pal_curl_up_small_like_a_tiny_seed` | composta | Cuerpo hecho bolita pequeñita en el suelo como una semilla. |
@@ -665,6 +771,7 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Cut it for me. | Córtama. | Córtamela. | — | `pal_cut_it_for_me` | composta | Manzana y cuchillo de cocina listos para cortarla. |
 | Cut out | Recortar | Recortar | Hacer tijeras con los dedos | `pal_cut_out` | composta | Tijeras recortando una figura triangular amarilla de una hoja de papel. |
 | cut | cortar | cortar | — | `pal_cut` | composta | Tijeras cortando una hoja de papel por la línea. |
+| Cut! Once more, please | Corten! Outra vez, por favor | ¡Corten! Otra vez, por favor | Cruzar los brazos y repetir | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Cute | Riquiño, riquiña | Tierno, tierna | Juntar las manos bajo la barbilla y sonreír | `pal_cute` | composta | Pollito tierno y niño juntando las manos bajo la barbilla con sonrisa dulce. |
 | Cylinder | Cilindro | Cilindro | Rodar un tubo por la mesa | `pal_cylinder` | nova | Cilindro tumbado rodando por encima de la mesa. |
 | Daddy | Papá | Papá | Darse dos palmaditas suaves en el pecho al decir papá | `pal_daddy` | composta | Papá de cuerpo entero llevando de la mano a su hijo por el prado. |
@@ -685,10 +792,12 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Day and night | Día e noite | Día y noche | Abrir los ojos y cerrarlos | `pal_day_and_night` | nova | Escena partida con sol brillante de día a la izquierda y luna con estrellas de noche a la derecha. |
 | Dazzling | Cegador | Deslumbrante | Taparse un poco los ojos | `pal_dazzling` | nova | Luz deslumbrante del sol frente al niño que se tapa los ojos con la mano. |
 | Deal | Trato | Trato | Darse la mano | `pal_deal_handshake` | composta | Apretón de manos cerrando un buen trato. |
+| Decide | Decidir | Decidir | Pensar y asentir | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Decorate | Decorar | Decorar | Colgar adornos en el aire | `pal_decorate` | nova | Guirnalda verde decorada con bolas de colores colgadas a mano. |
 | Decoration | Adorno | Adorno | Colgar un adorno imaginario | `pal_decoration` | nova | Adorno brillante colgante con lazo dorado y estrella. |
 | Deep blue | Azul fondo | Azul profundo | Bajar despacio | `pal_deep_blue` | nova | Capas descendentes hacia el azul profundo del fondo marino con flecha hacia abajo. |
 | Deep breath | Respiración fonda | Respiración profunda | Inflar la barriga de aire | `pal_deep_breath` | nova | Niño tomando aire profundo expandiendo el pecho con ondas de respiración. |
+| Deep voice | Voz grave | Voz grave | Hablar muy grave | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Deep | Fondo, fonda | Profundo, profunda | Bajar la mano muy abajo como en un agua profunda | `pal_deep` | nova | Fondo marino muy hondo con flecha vertical descendiendo hasta lo profundo. |
 | Deeper and deeper | Cada vez máis fondo | Cada vez más hondo | Cavar más y más | `pal_deeper_and_deeper` | nova | Agujero excavado en escalones cada vez más hondo con pala bajando. |
 | Deer | Cervo | Ciervo | Poner las manos abiertas en la cabeza como la cornamenta de un ciervo | `pal_deer` | banco | Ciervo de perfil con astas. |
@@ -697,30 +806,38 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Delicate | Delicado, delicada | Delicado, delicada | Coger algo muy frágil con la punta de los dedos | `pal_delicate` | nova | Dos manos sujetando con suma suavidad una frágil pompa transparente. |
 | delicious | delicioso | delicioso | — | `pal_delicious` | composta | Comida apetitosa y sabrosa sobre la mesa. |
 | Deliver | Repartir | Repartir | Entregar paquetes | `pal_deliver` | composta | Paquete entregado hacia delante sosteniendo la caja con las dos manos. |
+| Democratic | Democrático | Democrático | Levantar la mano y esperar | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Den | Tobo | Madriguera | Agacharse en un rincón | `pal_den` | nova | Madriguera en un montículo de tierra y hojas con animal agachado dentro. |
 | Depart | Saír | Salir | Saludar e irse | `pal_depart` | composta | Autobús saliendo en marcha mientras se dice adiós desde la acera. |
 | Desk | Pupitre | Pupitre | Sentarse bien en la mesa | `pal_desk` | nova | Pupitre escolar con libro abierto encima y silla debajo. |
 | Despite the noise, we listened. | A pesar do ruído, escoitamos. | A pesar del ruido, escuchamos. | — | `pal_despite_noise_listened` | composta | Oreja atenta escuchando a pesar del ruido de fondo. |
 | destination | destino | destino | — | `pal_destination` | composta | Brújula apuntando a la bandera de destino al final del viaje. |
+| Determined | Decidido | Decidido | Apretar los puños con fuerza | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Dewdrop | Pinga de orballo | Gota de rocío | Tocar la hierba mojada | `pal_dewdrop` | nova | Gota cristalina de rocío colgando de la punta de una brizna de hierba. |
 | Dewy | Orballado | Con rocío | Pasar la mano por la hierba | `pal_dewy` | nova | Hojas de hierba verde cubiertas de brillantes gotitas de rocío. |
 | Dialogue | Diálogo | Diálogo | Hablar y responder con dos manos | `pal_dialogue` | nova | Dos niños conversando por turnos con globos de diálogo vacíos sin texto. |
 | Diamond | Rombo | Rombo | Hacer un rombo con las manos | `pal_diamond` | banco | Rombo azul brillante. |
 | Dice | Dado | Dado | Lanzar un dado grande | `pal_dice` | banco | Dado cúbico de juego con puntos. |
 | Did you hear it? | Oíchelo? | ¿Lo oíste? | — | `pal_did_you_hear_it` | composta | Oreja atenta escuchando ondas sonoras en el aire. |
+| Difference | Diferenza | Diferencia | Separar las manos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Different opinions | Opinións distintas | Opiniones distintas | Señalar dos lados | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Different | Diferente | Diferente | Hacer un gesto distinto al de la compañera | `pal_different` | nova | Tres círculos azules iguales y una estrella naranja diferente. |
 | Dig a hole | Cavar un burato | Cavar un agujero | Cavar con las manos | `pal_dig_a_hole` | nova | Pala cavando un hoyo hondo en la tierra con montón al lado. |
 | Dig the soil with your hands | Cava a terra coas mans | Cava la tierra con las manos | Mímica de cavar con las dos manos sobre la alfombra o la tierra. | `pal_dig_the_soil_with_your_hands` | composta | Manos excavando y removiendo la tierra. |
 | Dig tunnels | Cavar túneles | Cavar túneles | Mover las manos como cavando | `pal_dig_tunnels` | nova | Montículo de arena con pala cavando un túnel oscuro por debajo. |
 | Dig | Cavar | Cavar | Cavar en el suelo con las manos | `pal_dig` | composta | Niño cavando la tierra con una pala pequeña. |
+| Diligent | Traballador | Trabajador | Secarse la frente con el brazo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Dim | Tenue | Tenue | Bajar la luz despacio | `pal_dim` | nova | Lámpara de noche dando una luz tenue y suave en habitación oscura. |
 | Dimple | Coviña | Hoyuelo | Tocar el hoyuelo de la mejilla | `pal_dimple` | nova | Rostro sonriente señalando el hoyuelo marcado junto a la sonrisa. |
 | Dip | Mollar | Mojar | Mojar los dedos en el agua | `pal_dip` | nova | Dedos bajando para mojarse brevemente dentro del agua del recipiente. |
 | Diploma | Diploma | Diploma | Recibir un papel con las dos manos | `pal_diploma` | nova | Diploma enrollado con lazo rojo y sello dorado. |
 | Direct traffic | Dirixir o tráfico | Dirigir el tráfico | Mover los brazos dando paso | `pal_direct_traffic` | nova | Niño con chaleco amarillo levantando la mano para dar paso o parar el coche. |
+| Direct | Dirixir | Dirigir | Mover los brazos dando órdenes | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Direction | Dirección | Dirección | Señalar hacia dónde se va | `pal_direction` | nova | Poste indicador de camino con flecha apuntando hacia delante junto al niño. |
 | Director | Director | Director | Dar una palmada de claqueta | `pal_director` | composta | Director guiando el ritmo del grupo. |
 | Dirty | Sucio, sucia | Sucio, sucia | Mirarse las manos con cara de asco divertido | `pal_dirty` | nova | Dos manos con manchas oscuras de barro mostrando suciedad. |
+| Disagree kindly | Discrepar con amabilidade | Discrepar con amabilidad | Negar sonriendo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Disagreement | Desacordo | Desacuerdo | Negar con la cabeza | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Disco | Discoteca | Discoteca | Señalar arriba y abajo bailando | `pal_disco` | nova | Pista oscura iluminada por bola de espejos con niño bailando señalando arriba y abajo. |
 | Discover | Descubrir | Descubrir | Dejar al bebé tocar la cesta | `pal_discover` | composta | Bebé curioso descubriendo objetos naturales dentro de una cesta. |
 | Distant | Afastado | Distante | Señalar lejos | `pal_distant` | nova | Mano señalando a una cima lejana en el horizonte tras la pradera. |
@@ -728,12 +845,18 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Dive deep | Mergullarse fondo | Bucear hondo | Bajar despacio | `pal_dive_deep` | nova | Buceador descendiendo hacia el fondo marino profundo con burbujas. |
 | Dive for fish | Mergullarse a pescar | Zambullirse a pescar | Bajar las manos juntas en picado | `pal_dive_for_fish` | nova | Ave marina bajando en picado a por un pez bajo el agua. |
 | Dive | Mergullarse | Zambullirse | Juntar las manos en punta y bajar hacia el suelo | `pal_dive` | nova | Niño lanzándose con brazos juntos en punta hacia el agua. |
+| Dive, catch, fly! | Mergúllate, colle, voa! | ¡Zambúllete, coge, vuela! | Bajar, coger y subir | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Diver | Mergullador | Buceador | Nadar despacio con burbujas | `pal_diver` | composta | Gafas de buceo sumergidas bajo el mar soltando burbujas hacia arriba. |
 | Dizzy | Mareadiño | Mareadito | Parar de girar y sonreír | `pal_dizzy` | nova | Niño sonriente un poco mareadito con espirales encima después de girar. |
 | Do not worry, be gentle | Non te preocupes, con delicadeza | No te preocupes, con delicadeza | — | `pal_do_not_worry_gentle` | composta | Niño calmando con mano suave en el hombro a su compañero: no te preocupes. |
 | Do you know who is holding it? | Sabes quen o está a suxeitar? | ¿Sabes quién lo está sujetando? | — | `pal_who_is_holding_it` | composta | Dos niños sujetando juntos un globo mientras se miran preguntándose quién lo sostiene. |
+| Do you remember our first day? | Lembras o noso primeiro día? | ¿Recuerdas nuestro primer día? | Levantar un dedo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Do you remember? | Lémbraste? | ¿Te acuerdas? | Tocar la cabeza | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Do you want to play with us? | Queres xogar connosco? | ¿Quieres jugar con nosotros? | Abrir el círculo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | doctor / vet | doutor / veterinario | doctor / veterinario | — | `pal_doctor_vet` | composta | Profesional sanitario con estetoscopio atendiendo a un perro: doctor o veterinario. |
 | Dodge | Esquivar | Esquivar | Apartarse de una pelota blanda | `pal_dodge` | nova | Niño inclinándose a un lado para esquivar una pelota que pasa. |
+| Does it float or sink? | Flota ou afunde? | ¿Flota o se hunde? | Señalar arriba o abajo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Does that tickle? | Fai cóxegas? | ¿Hace cosquillas? | Hacer cosquillas despacio y parar | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Dog bowl | Cunca do can | Cuenco del perro | Enseñar el cuenco vacío | `pal_dog_bowl` | composta | Perro junto a su cuenco vacío en el suelo. |
 | Dog | can | perro | — | `pal_dog` | banco | Perro de cuerpo entero. |
 | Doll clothes | Roupa de boneca | Ropa de muñeca | Lavar la ropa de la muñeca | `pal_doll_clothes` | composta | Camiseta pequeña lavada con jabón dentro de un barreño de agua. |
@@ -742,6 +865,8 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Dolphin watching | Observación de golfiños | Observación de delfines | Mirar con los prismáticos | `pal_dolphin_watching` | nova | Prismáticos observando un delfín saltar sobre el mar. |
 | Dolphin | Golfiño | Delfín | Saltar en arco con las manos juntas por delante | `pal_dolphin` | banco | Delfín azul saltando. |
 | Dolphins breathe air through a blowhole | Os golfiños respiran polo espiráculo | Los delfines respiran por el espiráculo | Soplar hacia arriba | `pal_dolphins_breathe_air_through_a_blowhole` | composta | Delfín asomando sobre el mar soplando aire y gotas por su espiráculo. |
+| Don't move a muscle! | Non te movas nada! | ¡No te muevas nada! | Quedarse como estatua | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Don't touch, just look | Non toques, só mira | No toques, solo mira | Poner las manos detrás | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Donate | Doar | Donar | Meter algo en la caja | `pal_donate` | nova | Prenda doblada entrando dentro de la caja de donaciones. |
 | Donation box | Caixa de doazóns | Caja de donaciones | Meter una prenda en la caja | `pal_donation_box` | nova | Caja abierta marcada con un corazón llena de ropa y peluches para donar. |
 | Donkey | Burro | Burro | Mover las manos como orejas largas | `pal_donkey` | banco | Burro gris de perfil. |
@@ -766,6 +891,7 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Drawing folder | Carpeta de debuxos | Carpeta de dibujos | Abrir la carpeta | `pal_drawing_folder` | nova | Carpeta azul abierta asomando una lámina de dibujo guardada dentro. |
 | Dream journal | Caderno de soños | Cuaderno de sueños | Dibujar en el aire | `pal_dream_journal` | composta | Cuaderno de sueños abierto con nube de luna creciente y lápiz para dibujar. |
 | Dream | Soño | Sueño | Apoyar la cabeza en las manos y sonreír con los ojos cerrados | `pal_dream` | composta | Niño dormido soñando con nube de estrellas y luna. |
+| Dreamy | Soñador | Soñador | Mirar al techo sonriendo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Dress up | Disfrazarse | Disfrazarse | Poner una capa al bebé | `pal_dress_up` | nova | Niño disfrazado con capa roja y corona dorada. |
 | Dress | Vestirse | Vestirse | Meter la cabeza por una camiseta imaginaria | `pal_dress` | nova | Niño metiendo la cabeza por la camiseta para vestirse. |
 | Dressed up | Disfrazado | Disfrazado | Enseñar el disfraz | `pal_dressed_up` | composta | Niño disfrazado con capa morada y corona dorada. |
@@ -802,6 +928,7 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Duck | Pato | Pato | Juntar las manos delante de la boca como un pico | `pal_duck` | banco | Pato verde y marrón de perfil. |
 | Dummy | Chupete | Chupete | Acercar el chupete y retirarlo jugando | `pal_dummy` | nova | Chupete de bebé con anilla y tetina. |
 | Dune | Duna | Duna | Dibujar una ola de arena | `pal_dune` | nova | Dunas curvas de arena dorada moldeadas por el viento junto al cielo. |
+| Eager | Con ganas | Con ganas | Saltar en el sitio | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Early-rising | Madrugador | Madrugador | Desperezarse temprano | `pal_early_rising` | nova | Niño estirando los brazos desperezándose con el sol de la mañana. |
 | Earmuffs | Orelleiras | Orejeras | Tapar las orejas con las manos | `pal_earmuffs` | nova | Niño con orejeras rojas abrigadas cubriendo ambas orejas. |
 | Ears and nose | Orellas e nariz | Orejas y nariz | Tocar las orejas y luego la nariz | `pal_ears_and_nose` | composta | Oreja y nariz mostradas claramente una al lado de la otra. |
@@ -812,6 +939,7 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Easy to roll | Fácil de rodar | Fácil de rodar | Rodar las manos | `pal_easy_to_roll` | nova | Esfera verde girando y rodando con facilidad sobre la mesa. |
 | Eat your greens! | Come a verdura! | ¡Come la verdura! | Llevar el tenedor a la boca | `pal_eat_your_greens` | composta | Plato lleno de brócoli y verdura verde con tenedor listo. |
 | Eat! | comer | comer | Llevarse las manos a la boca imitando comer con cuchara. | `pal_eat` | composta | Cuenco con cuchara listo para comer. |
+| Echo game | Xogo do eco | Juego del eco | Repetir las palmas que se oyen | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Echo | Repetir coma o eco | Repetir como el eco | Repetir el sonido que se oye | `pal_echo` | nova | Niño gritando frente a una montaña con ondas de sonido que rebotan. |
 | Echoing | Con eco | Con eco | Repetir bajito | `pal_echoing` | composta | Montaña devolviendo ondas sonoras sucesivas de eco. |
 | Eco-friendly | Respectuoso co planeta | Respetuoso con el planeta | Abrazar una bola del mundo | `pal_eco_friendly` | composta | Planeta Tierra rodeado de brotes y hojas verdes. |
@@ -825,29 +953,52 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Electric | Eléctrico | Eléctrico | Hacer «zzz» con la voz | `pal_electric` | banco | Enchufe eléctrico gris con dos clavijas. |
 | Elephant | Elefante | Elefante | Extender un brazo delante de la nariz como una trompa | `pal_elephant` | banco | Elefante gris con trompa. |
 | Emotion card | Tarxeta de emocións | Tarjeta de emociones | Enseñar una cara | `pal_emotion_card` | nova | Dos tarjetas ilustradas con cara alegre y cara triste sin texto. |
+| Emotion | Emoción | Emoción | Poner la mano en el pecho | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Emotional | Emocionado | Emocionado | Poner las manos en el pecho | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Empathy | Empatía | Empatía | Poner la mano en el hombro de un amigo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Empty out | Baleirar | Vaciar | Vaciar el vaso en la bandeja | `pal_empty_out` | nova | Vaso inclinado vaciando las últimas gotas sobre una bandeja. |
 | empty | baleiro | vacío | — | `pal_empty` | nova | Vaso completamente transparente y vacío. |
+| Encourage | Animar | Animar | Dar palmas a un compañero | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Ending | Final | Final | Cerrar un libro | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Energetic | Con enerxía | Con energía | Saltar en el sitio | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Energy saver | Aforrador de enerxía | Ahorrador de energía | Apagar la luz | `pal_energy_saver` | nova | Mano apagando el interruptor junto a bombilla apagada de ahorro. |
+| Energy | Enerxía | Energía | Saltar con fuerza | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Enjoy your meal! | Bo proveito! | ¡Buen provecho! | Abrir las manos hacia el grupo antes de comer | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Enormous | Enorme | Enorme | Abrir los brazos muy grandes | `pal_enormous` | nova | Comparación visual de un círculo pequeño frente a una esfera enorme. |
 | Enter on the left and exit on the right | Entra pola esquerda e sae pola dereita | Entra por la izquierda y sal por la derecha | Caminar de un lado a otro | `pal_enter_on_the_left_and_exit_on_the_right` | nova | Entrada por la izquierda al escenario y salida por la derecha. |
 | Enter the stage | Entrar en escena | Entrar en escena | Dar pasos hacia el centro | `pal_enter_the_stage` | nova | Niño caminando hacia el centro para entrar en el escenario. |
+| Equal weight | Mesmo peso | Mismo peso | Poner las manos iguales | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Equal | Igual | Igual | Poner las manos a la misma altura | `pal_equal` | nova | Balancín completamente horizontal con dos bloques iguales. |
 | Escalator | Escaleira mecánica | Escalera mecánica | Quedarse quieto mientras sube | `pal_escalator` | nova | Escalera mecánica en diagonal con niño quieto subiendo en su peldaño. |
 | Escape | Fuxir | Escapar | Correr al refugio | `pal_escape` | composta | Niño corriendo rápido hacia el refugio seguro. |
+| Estimate | Estimar | Estimar | Mover la mano dudando | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Estuary | Ría | Ría | Dibujar la ría con el dedo | `pal_estuary` | nova | Ría azul que se ensancha entre colinas verdes hasta llegar al mar. |
 | Evaporate | Evaporarse | Evaporarse | Subir despacio como vapor | `pal_evaporate` | nova | Charco de agua con espirales de vapor subiendo hacia arriba: evaporarse. |
 | Evaporation | Evaporación | Evaporación | Subir despacio las manos | `pal_evaporation` | nova | Charco calentado por el sol con vapor azul subiendo en ondas. |
+| Even number | Par | Par | Enseñar dos dedos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Even out | Igualar | Igualar | Ajustar los brazos hasta igualarlos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Even | Igualado | Igualado | Poner las manos a la misma altura | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Every little thing helps | Cada pouquiño axuda | Cada poquito ayuda | Juntar los dedos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Every piece counts | Cada anaco conta | Cada trozo cuenta | Enseñar un dedo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Everybody sit down! | Todo o mundo sentado! | ¡Todo el mundo sentado! | Sentarse con cuidado sobre la alfombra. | `pal_everybody_sit_down` | composta | Todos los niños sentándose abajo en círculo. |
 | Everybody stand up! | Todo o mundo de pé! | ¡Todo el mundo de pie! | Tracción suave de la cinta para levantarse a la vez. | `pal_everybody_stand_up` | composta | Todos los niños poniéndose de pie hacia arriba. |
+| Everybody, sing the chorus! | Todos, cantade o retrouso! | ¡Todos, cantad el estribillo! | Abrir los brazos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Everyone can play | Todos poden xogar | Todos pueden jugar | Abrir los brazos a todos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Everyone, take a bow! | Todos, reverencia! | ¡Todos, reverencia! | Inclinarse juntos | `pal_everyone_take_a_bow` | nova | Dos niños inclinándose a la vez haciendo reverencia juntos. |
 | examine | examinar | examinar | — | `pal_examine` | banco | Niño examinando de cerca una mariquita con una lupa. |
 | Exchange gifts | Intercambiar agasallos | Intercambiar regalos | Dar y recibir un paquete | `pal_exchange_gifts` | composta | Dos amigos intercambiando paquetes de regalo. |
+| Excited for next year | Con ganas do ano que vén | Con ganas del año que viene | Saltar contentos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Excited for summer | Con ganas de verán | Con ganas de verano | Saltar contentos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Excited | Emocionado, emocionada | Emocionado, emocionada | Dar saltitos en el sitio con alegría | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Exciting | Emocionante | Emocionante | Abrir mucho los ojos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Exercise book | Caderno de exercicios | Cuaderno de ejercicios | Escribir en un cuaderno | `pal_exercise_book` | nova | Cuaderno abierto con páginas pautadas y lápiz amarillo encima. |
 | Exit the stage | Saír de escena | Salir de escena | Caminar hacia el lado | `pal_exit_the_stage` | nova | Niño caminando hacia el borde para salir del escenario. |
+| Expensive | Caro | Caro | Enseñar muchas monedas | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Experiment | Experimento | Experimento | Mirar con atención con la lupa | `pal_experiment` | nova | Probetas con líquidos de colores burbujeantes examinadas con lupa. |
 | Explore new places | Explorar sitios novos | Explorar sitios nuevos | Mirar alrededor con un mapa | `pal_explore_new_places` | nova | Mapa desplegado frente a senderos y montañas por explorar. |
 | Explore the seabed | Explorar o fondo | Explorar el fondo | Gatear mirando el suelo | `pal_explore_the_seabed` | composta | Niño gateando mirando de cerca conchas y corales en el suelo. |
 | explore | explorar | explorar | — | `pal_explore` | composta | Lupa y brújula explorando objetos y caminos nuevos. |
+| Express | Expresar | Expresar | Abrir las manos desde el pecho | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Eye to eye | Ollo con ollo | Ojo con ojo | Ponerse a la altura de los ojos del bebé | `pal_eye_to_eye` | nova | Adulto a la misma altura mirando frente a frente a los ojos del bebé. |
 | Eyebrows | Cellas | Cejas | Pasar el dedo por las cejas | `pal_eyebrows` | composta | Dos ojos con las cejas marcadas justo encima. |
 | Eyelashes | Pestanas | Pestañas | Parpadear despacio cerca del bebé | `pal_eyelashes` | nova | Ojo grande de cerca destacando sus largas pestañas oscuras. |
@@ -856,7 +1007,10 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Face mask | Careta | Careta | Poner y quitar la careta | `careta` | reutilizada | Careta colorida de disfraz del set propio. |
 | Face paint | Pintura de cara | Pintura de cara | Pintar un punto en la mejilla | `pal_face_paint` | composta | Paleta de colores y punto pintado en la mejilla. |
 | Face | Cara | Cara | Rodearse la cara con las manos | `pal_face` | nova | Cara frontal rodeada suavemente por las manos en las mejillas. |
+| Faint | Débil | Suave | Tocar el tambor muy despacio | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Fair solution | Solución xusta | Solución justa | Poner las manos iguales | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Fair | Xusto | Justo | Repartir en partes iguales | `pal_fair` | composta | Dos niños recibiendo exactamente una manzana igual cada uno: reparto justo. |
+| Fairest | O máis xusto | El más justo | Poner las manos iguales | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Fairy lights | Luciñas | Lucecitas | Señalar las lucecitas que brillan | `pal_fairy_lights` | banco | Lucecitas doradas que brillan. |
 | Fairy tale | Conto de fadas | Cuento de hadas | Abrir un libro grande | `pal_fairy_tale` | composta | Libro abierto de cuentos mágicos con estrellas brillantes. |
 | Fairy | Fada | Hada | Batir las manos como alas pequeñas | `pal_fairy` | banco | Hada con alas y varita. |
@@ -865,14 +1019,19 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | fall | caer | caer | — | `pal_fall` | composta | Objeto cayendo en vertical hacia el suelo. |
 | Falling | Caendo | Cayendo | Bajar despacio hasta el suelo como una hoja que cae | `pal_falling` | composta | Hoja cayendo suavemente y niño bajando despacio hasta el suelo. |
 | Falling, falling, falling down! | Caendo, caendo, caendo ao chan! | ¡Cayendo, cayendo, cayendo al suelo! | Dejar caer las hojas en lluvia ligera delante de ellos. | `pal_falling_falling_falling_down` | composta | Varias hojas cayendo suavemente hacia el suelo. |
+| Familiar | Coñecido | Conocido | Señalar una cara conocida | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Family audience | Familias no público | Familias en el público | Saludar a las familias | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Family table | Mesa familiar | Mesa familiar | Sentar al bebé a la mesa con todos | `pal_family_table` | composta | Mesa familiar puesta con platos, adulto y bebé sentados. |
 | Family tree | Árbore xenealóxica | Árbol genealógico | Dibujar ramas en el aire | `pal_family_tree` | nova | Árbol frondoso con marcos ovalados de la familia colgados en sus ramas. |
 | Family | Familia | Familia | Abrir los brazos y cerrarlos en un gran abrazo | `pal_family` | nova | Familia reunida en un gran abrazo común entre padres y niño. |
+| Famous | Famoso | Famoso | Señalar orgullosos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Fan yourself | Abanarse | Abanicarse | Abanicarse con la mano | `pal_fan_yourself` | nova | Niño abanicándose la cara acalorada con un abanico. |
 | Fan | Abano | Abanico | Abanicar al bebé suavemente | `pal_fan` | banco | Abanico plegable de tela roja. |
 | Far | Lonxe | Lejos | Señalar muy lejos con el brazo estirado | `pal_far` | nova | Niño con el brazo estirado señalando muy lejos al final de un camino largo. |
 | Faraway | Moi afastado | Muy lejano | Señalar muy lejos | `pal_faraway` | nova | Isla muy lejana en el horizonte del mar señalada con brazo extendido. |
 | Farewell hug | Aperta de despedida | Abrazo de despedida | Abrazar a un amigo | `pal_farewell_hug` | nova | Dos amigos abrazándose cálidamente mientras uno agita la mano al despedirse. |
+| Farewell party | Festa de despedida | Fiesta de despedida | Bailar y saludar | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Farewell song | Canción de despedida | Canción de despedida | Cantar y saludar a todos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Farm | Granxa | Granja | Dibujar una valla en el aire con los brazos | `pal_farm` | composta | Granja con establo rojo, valla de madera y vaca pastando en el prado. |
 | Farmer | Labrego | Granjero | Sembrar con la mano | `pal_farmer` | banco | Granjero con sombrero de paja. |
 | Fast and slow | Rápido e lento | Rápido y lento | Caminar rápido y luego muy despacio | `pal_fast_and_slow` | composta | Tortuga lenta comparada con niño caminando y corriendo muy rápido. |
@@ -883,6 +1042,7 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Faster | Máis rápido | Más rápido | Golpear más rápido | `pal_faster` | composta | Doble flecha roja impulsando velocidad aún mayor. |
 | Faster? Yes, faster. | Máis rápido? Si, máis rápido. | ¿Más rápido? Sí, más rápido. | — | `pal_faster_yes_faster` | composta | Tren acelerando cada vez más rápido. |
 | Fastest | O máis rápido | El más rápido | Correr a toda velocidad | `pal_fastest` | composta | Corredor velocísimo cruzando primero la bandera a cuadros. |
+| Favourite day | Día favorito | Día favorito | Señalar un día en el calendario | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Favourite | Favorito, favorita | Favorito, favorita | Abrazar un plato imaginario y sonreír | `pal_favourite` | composta | Plato favorito elegido con sonrisa y abrazo alegre. |
 | Feather bed | Cama de plumas | Cama de plumas | Apoyar la cabeza en una almohada | `pal_feather_bed` | composta | Cama mullida junto a pluma suave cayendo encima. |
 | Feather mask | Máscara de plumas | Máscara de plumas | Ponerse la máscara con las manos | `pal_feather_mask` | nova | Máscara de fiesta morada adornada con plumas verdes y rosas. |
@@ -899,12 +1059,16 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Feel without looking | Tocar sen mirar | Tocar sin mirar | Tocar con los ojos cerrados | `pal_feel_without_looking` | composta | Ojos tapados tocando y reconociendo con las manos. |
 | Feel your heartbeat | Sentir o latexo | Sentir el latido | Poner la mano en el pecho y esperar | `pal_feel_your_heartbeat` | composta | Mano sobre el pecho sintiendo el latido del corazón. |
 | Feel | Palpar | Palpar | Palpar la textura con la mano abierta | `pal_feel` | nova | Palma de la mano abierta palpando la textura de la madera. |
+| Feeling | Sentimento | Sentimiento | Poner la mano en el pecho | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Feelings chart | Panel das emocións | Panel de las emociones | Señalar una cara en el panel | `pal_feelings_chart` | nova | Panel mural con cuatro caras de emociones señalando una de ellas. |
+| Feelings words | Palabras dos sentimentos | Palabras de los sentimientos | Poner la mano en el pecho | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Feet on the floor | Pés no chan | Pies en el suelo | Posar los pies en el suelo | `pal_feet_on_the_floor` | nova | Dos pies calzados con zapatillas apoyados firmes en el suelo. |
 | Feet | Pés | Pies | Pisar suave marcando el pulso | `pal_feet` | nova | Dos pies descalzos pisando suave al ritmo del pulso. |
 | Ferry | Barco de pasaxe | Ferry | Balancearse como en el barco | `pal_ferry` | banco | Ferry navegando sobre el agua. |
 | Festive | Festivo | Festivo | Bailar contentos | `pal_festive` | composta | Ambiente festivo con banderines, globo y niño bailando alegre. |
 | Fewest | O que menos | El que menos | Señalar el grupo pequeño | `pal_fewest` | nova | Tres montones de bolas con dedo señalando el grupo que tiene menos (solo una). |
+| Fierce | Feroz | Feroz | Poner cara de feroz riendo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Figure out | Descubrir | Averiguar | Abrir los ojos de golpe | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Fill a crate | Encher unha caixa | Llenar una caja | Meter fruta en la caja | `pal_fill_a_crate` | nova | Caja de madera de listones llenándose con manzanas y naranjas. |
 | Fill a space | Encher un oco | Llenar un hueco | Encajar la mano en un hueco | `pal_fill_a_space` | nova | Bloque azul bajando a encajar para llenar el hueco de la base. |
 | Fill the bucket | Encher o balde | Llenar el cubo | Llenar el cubo de arena | `pal_fill_the_bucket` | nova | Pala de playa llenando de arena un cubo rojo. |
@@ -914,6 +1078,8 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Filling | Que enche | Que llena | Tocar la barriga llena | `pal_filling` | nova | Cuenco sustancioso de comida junto a niño tocando su barriga llena. |
 | Fin | Aleta | Aleta | Poner la mano en la espalda como aleta | `pal_fin` | nova | Aleta dorsal azul asomando sobre las olas del mar. |
 | Find a red circle! Touch it with your foot! | Busca un círculo vermello! Tócao co pé! | ¡Busca un círculo rojo! ¡Tócalo con el pie! | Localizar la pieza en el suelo y posar la punta del zapato encima. | `pal_find_a_red_circle_touch_it_with_your_foot` | composta | Círculo rojo en el suelo y niño tocándolo con el pie. |
+| Find a rhyme | Rimar | Rimar | Dar palmas en cada rima | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Find something red | Busca algo vermello | Busca algo rojo | Buscar por el aula y tocar algo rojo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Find the red flower and land softly | Busca a flor vermella e pousa amodo | Busca la flor roja y posa despacio | Aterrizaje suave sobre la marca roja, arrodillado. | `pal_red_flower_land_softly` | composta | Flor roja sobre el prado con niño agachándose suavemente al aterrizar. |
 | Find the shape | Buscar a forma | Buscar la forma | Buscar un círculo en la sala | `pal_find_the_shape` | composta | Lupa buscando entre círculo, cuadrado y triángulo. |
 | Find the way | Atopar o camiño | Encontrar el camino | Mirar el mapa y señalar | `pal_find_the_way` | nova | Mapa con ruta curva dibujada de inicio a casita señalando cómo llegar. |
@@ -929,12 +1095,21 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Fire | Lume | Fuego | Señalar el fuego de lejos | `pal_fire` | banco | Llama de fuego cálida. |
 | Firefighter | Bombeiro | Bombero | Apuntar una manguera | `pal_firefighter` | banco | Persona bombera con casco y uniforme, coincidencia directa. |
 | Fireplace | Lareira | Chimenea | Señalar la chimenea de lejos | `pal_fireplace` | banco | Llama cálida de la chimenea. |
+| First day | Primeiro día | Primer día | Levantar un dedo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| First he whispers, then he shouts | Primeiro murmura, despois berra | Primero susurra, luego grita | Hablar bajo y luego alto | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| First pyjamas, then teeth, then a story | Primeiro o pixama, despois os dentes, despois un conto | Primero el pijama, luego los dientes, luego un cuento | Hacer los tres gestos en orden | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | First slow, then fast | Primeiro amodo, despois rápido | Primero despacio, luego rápido | Golpear despacio y luego rápido | `pal_first_slow_then_fast` | composta | Primero ritmo muy despacio como la tortuga y después rápido como el conejo. |
 | First the big box, then the cup. | Primeiro a caixa grande, despois o vaso. | Primero la caja grande, luego el vaso. | — | `pal_first_the_big_box_then_the_cup` | composta | Primero la caja grande y luego la taza. |
 | First the blocks, then the cars | Primeiro os bloques, logo os coches | Primero los bloques, luego los coches | Recoger en dos turnos | `pal_first_the_blocks_then_the_cars` | nova | Primero recoger los bloques a su caja y después los coches. |
+| First the hero was lost, then she found her way home | Primeiro a heroína perdeuse, despois atopou o camiño a casa | Primero la heroína se perdió, luego encontró el camino a casa | Mirar alrededor y luego caminar | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| First the solo, then the choir | Primeiro o solo, despois o coro | Primero el solo, luego el coro | Uno canta y luego todos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | First we check the heart, then we wrap the bandage. | Primeiro miramos o corazón e despois poñemos a venda. | Primero miramos el corazón y después ponemos la venda. | — | `pal_first_heart_then_bandage` | composta | Secuencia: primero estetoscopio sobre el corazón, flecha hacia la venda. |
+| First we pick, then we sort, then we share | Primeiro collemos, despois clasificamos, despois repartimos | Primero cogemos, luego clasificamos, luego repartimos | Hacer los tres gestos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| First we sing, then we get our certificates, and finally we celebrate | Primeiro cantamos, despois recollemos os certificados e por último celebramos | Primero cantamos, luego recogemos los certificados y por último celebramos | Hacer los tres gestos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | First we wash, then we eat. | Primeiro lavamos, despois comemos. | Primero lavamos, después comemos. | Frotarse las manos y después llevar la cuchara a la boca | `pal_first_wash_then_eat` | composta | Secuencia de dos pasos: primero jabón y agua para lavar, flecha hacia plato para comer. |
 | First | Primeiro, primeira | Primero, primera | Levantar un dedo y dar un paso adelante | `pal_first` | nova | Podio con el puesto más alto dorado y estrella brillante. |
+| First, then, finally | Primeiro, despois, por último | Primero, luego, por último | Levantar uno, dos y tres dedos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| First-ever | O primeiro de todos | El primero de todos | Levantar un dedo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Fish for a living | Vivir da pesca | Vivir de la pesca | Lanzar la red | `pal_fish_for_a_living` | composta | Caña de pescar lanzada hacia los peces brillantes en el mar. |
 | Fish market | Lonxa | Lonja | Señalar cajas de pescado | `pal_fish_market` | nova | Mostrador de lonja con toldo y cajas azules con pescado fresco señalado. |
 | Fish supper | Cea de peixe | Cena de pescado | Hacer que se coge un pez con el pico | `pal_fish_supper` | nova | Cena nocturna de pescado servido entero en un plato bajo la luna. |
@@ -947,12 +1122,16 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Fishing village | Aldea mariñeira | Aldea marinera | Tirar de una red | `pal_fishing_village` | composta | Casitas junto al puerto y velero de aldea marinera. |
 | Fist | Puño | Puño | Cerrar la mano en puño | `pal_fist` | banco | Mano cerrada con firmeza formando un puño. |
 | Fit | Encaixar | Encajar | Meter la pieza en su hueco | `pal_fit` | nova | Pieza encajando exactamente en su hueco correspondiente. |
+| Five minutes each | Cinco minutos cada un | Cinco minutos cada uno | Enseñar cinco dedos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Five years | Cinco anos | Cinco años | Enseñar cinco dedos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Five, four, three, two, one! | Cinco, catro, tres, dous, un! | ¡Cinco, cuatro, tres, dos, uno! | Bajar los dedos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Flamingo pose | Postura de flamenco | Postura de flamenco | Sostenerse en un pie | `pal_flamingo_pose` | composta | Flamenco rosa en una pata imitado por una criatura en equilibrio. |
 | Flap arms | Bater os brazos | Batir los brazos | Batir los brazos como el viento | `pal_flap_arms` | nova | Niño batiendo ambos brazos extendidos arriba y abajo como alas. |
 | Flap wings | Bater as ás | Batir las alas | Batir los brazos como alas | `pal_flap_wings` | composta | Pájaro batiendo sus alas arriba y abajo. |
 | Flap | Aletexar | Aletear | Mover los brazos muy rápido como alas pequeñas | `pal_flap` | nova | Pajarito batiendo rápido sus dos alas abiertas en el aire. |
 | Flash | Destellar | Destellar | Abrir las manos de golpe | `pal_flash` | nova | Estallido luminoso de flash brillando de golpe sobre fondo oscuro. |
 | Flat | Plano, plana | Plano, plana | Tumbarse en el suelo muy estirados | `pal_flat` | nova | Tabla completamente plana y horizontal con línea recta indicando plano. |
+| Flavour | Sabor | Sabor | Relamerse los labios | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Fleecy | De forro polar | Afelpado | Acariciar la chaqueta afelpada | `pal_fleecy` | composta | Chaqueta afelpada suave acariciada con la mano. |
 | Flex | Tensar | Tensar | Tensar el brazo | `pal_flex` | banco | Brazo flexionado marcando fuerza muscular. |
 | Flexible body | Corpo flexible | Cuerpo flexible | Doblarse despacio | `pal_flexible_body` | nova | Niño flexionando el cuerpo con flexibilidad hacia las puntas de los pies. |
@@ -991,6 +1170,7 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Fly | Voar | Volar | Volar por el aula con los brazos abiertos, despacio | `pal_fly_action` | nova | Niño con los brazos extendidos en cruz como alas planeando: verbo volar. |
 | Foamy mouth | Boca con escuma | Boca con espuma | Señalar la espuma | `pal_foamy_mouth` | nova | Cara con espuma blanca de pasta o jabón alrededor de la boca señalada. |
 | Foamy | Escumoso | Espumoso | Soplar la espuma | `pal_foamy` | nova | Barreño rebosante de espuma blanca y burbujas ligeras al soplar. |
+| Focused | Concentrado | Concentrado | Mirar un punto fijo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Foggy | Con néboa | Con niebla | Caminar despacio con las manos delante como entre niebla | `pal_foggy` | banco | Paisaje cubierto de niebla suave. |
 | Fold paper | Dobrar papel | Doblar papel | Doblar una hoja por la mitad | `pal_fold_paper` | nova | Dos manos doblando una hoja blanca por la mitad. |
 | Fold up | Dobrar | Doblar | Doblar un pañuelo por la mitad | `pal_fold_up` | nova | Pañuelo rojo con lunares doblándose hacia arriba en triángulo. |
@@ -1007,20 +1187,31 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Footsteps | Pasos | Pasos | Pisar las huellas del suelo | `pal_footsteps` | composta | Sucesión de huellas en el suelo mostrando los pasos al caminar. |
 | Forehead | Fronte | Frente | Besar la frente del bebé | `pal_forehead` | composta | Bebé y flecha señalando la frente arriba de los ojos. |
 | Forest | Bosque | Bosque | Hacer muchos árboles con los brazos, entre todos | `pal_forest` | nova | Bosque frondoso con varios árboles verdes juntos. |
+| Forgive | Perdoar | Perdonar | Abrir los brazos a un amigo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | fork | garfo | tenedor | — | `pal_fork` | nova | Tenedor metálico de tres púas en posición vertical. |
 | Fortress | Fortaleza | Fortaleza | Poner los brazos como murallas | `pal_fortress` | nova | Fortaleza de piedra con murallas almenadas y portón de madera. |
+| Found one! | Atopei unha! | ¡Encontré una! | Levantar la hoja | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Found | Atopado | Encontrado | Sacar el juguete y celebrarlo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Fountain | Fonte | Fuente | Subir las manos como el agua de la fuente | `pal_fountain` | banco | Fuente echando chorros de agua. |
 | Four-sided | De catro lados | De cuatro lados | Contar cuatro lados con los dedos | `pal_four_sided` | nova | Polígono cuadrilátero verde con sus cuatro lados y cuatro esquinas marcadas. |
 | Fox cub | Raposiño | Cachorro de zorro | Correr ligero de puntillas | `pal_fox_cub` | composta | Cachorro de zorro ligero junto al niño caminando rápido de puntillas. |
 | Fox | Raposo | Zorro | Poner las manos sobre la cabeza como orejas en punta | `pal_fox` | banco | Zorro naranja de frente con orejas en punta y hocico blanco. |
+| Fragile | Fráxil | Frágil | Coger algo con mucho cuidado | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Fragrant | Recendente | Perfumado, perfumada | Oler una flor y suspirar de gusto | `pal_fragrant` | composta | Flor perfumada desprendiendo aroma hacia niño que la huele. |
+| Free | Libre | Libre | Moverse libres por el aula con los brazos sueltos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Freeze immediately | Conxelarse ao momento | Congelarse al momento | Pararse al instante | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Freeze on command | Parar á orde | Pararse a la orden | Pararse cuando se dice «ya» | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Freeze water | Conxelar auga | Congelar agua | Poner el cuerpo rígido | `pal_freeze_water` | nova | Gota líquida congelándose en un cubito de hielo brillante. |
 | FREEZE! | Estátuas! | ¡Estatuas! | Detener al instante cualquier oscilación. | `pal_freeze` | composta | Niño completamente quieto en postura de estatua. |
 | Freezer | Conxelador | Congelador | Abrir una puerta fría | `pal_freezer` | nova | Puerta del congelador abierta mostrando hielo y frío helado en su interior. |
 | Freezing | Xeado | Helado | Temblar como de frío | `pal_freezing` | composta | Criatura tiritando helada entre copos de nieve y líneas de temblor. |
+| Fresh and clean | Limpo e fresco | Limpio y fresco | Oler al bebé después del cambio | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Fresh breath | Alento fresco | Aliento fresco | Soplar en la mano y oler | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Fresh from the farm | Fresco da granxa | Fresco de la granja | Oler una fruta | `pal_fresh_from_the_farm` | composta | Granero rojo de granja con manzana y zanahoria frescas. |
 | Fresh green | Verde fresco | Verde fresco | Señalar la hierba nueva | `pal_fresh_green` | nova | Brotes nuevos de color verde fresco brillante saliendo de la tierra señalados. |
 | Fresh water | Auga doce | Agua dulce | Beber de mentira | `pal_fresh_water` | composta | Vaso de agua dulce cristalina recién recogida. |
+| Fresh | Fresco, fresca | Fresco, fresca | Respirar hondo el aire de la mañana | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Fresh-smelling | Que cheira a limpo | Con olor a limpio | Oler las manos limpias | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Freshly picked | Acabado de coller | Recién cogido | Oler la fruta | `pal_freshly_picked` | composta | Manzana recién cogida de la rama con hoja verde. |
 | Friend | Amigo, amiga | Amigo, amiga | Dar la mano a la persona que está al lado | `pal_friend` | composta | Dos amigos sonriendo y dándose la mano en el prado. |
 | Friendly wolf | Lobo amigable | Lobo amigable | Sonreír con las orejas de lobo | `pal_friendly_wolf` | composta | Lobo amigable saludando simpático en el prado. |
@@ -1043,9 +1234,11 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Frosty | Con xeada | Escarchado | Pasar el dedo por el cristal frío | `pal_frosty` | nova | Ventana helada cubierta de cristales azules de escarcha. |
 | Frozen solid | Conxelado de todo | Congelado del todo | Quedarse rígido | `pal_frozen_solid` | composta | Bloque compacto de hielo helado entre copos de nieve: congelado del todo. |
 | Fruit bowl | Froiteiro | Frutero | Sacar frutas del frutero | `pal_fruit_bowl` | nova | Frutero de madera rebosante de manzana, naranja y plátano. |
+| Fruit in a bowl | Froita nunha cunca | Fruta en un cuenco | Meter fruta en el cuenco | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Fruit peel | Pel da froita | Piel de la fruta | Pelar una fruta imaginaria | `pal_fruit_peel` | nova | Plátano con sus tiras amarillas de piel pelándose hacia fuera. |
 | Fruit salad | Macedonia | Macedonia | Mezclar fruta en un cuenco | `pal_fruit_salad` | nova | Cuenco transparente con trozos de macedonia de frutas y cuchara. |
 | Fruity | Afroitado | Afrutado | Oler y sonreír | `pal_fruity` | composta | Conjunto variado de frutas frescas y dulces. |
+| Frustrated | Frustrado | Frustrado | Apretar los puños y soltarlos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Full of pips | Con pebidas | Con pepitas | Señalar las pepitas de la sandía | `pal_full_of_pips` | nova | Tajada roja de sandía llena de pepitas negras señaladas con el dedo. |
 | Full to the top | Cheo ata arriba | Lleno hasta arriba | Llenar hasta el borde | `pal_full_to_the_top` | nova | Vaso transparente lleno de agua hasta el borde superior. |
 | Full up | Farto | Lleno | Tocar la barriga después de comer | `pal_full_up` | nova | Plato limpio tras terminar de comer y niño satisfecho frotando la barriga. |
@@ -1067,13 +1260,17 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Gate | Cancela | Verja | Abrir la verja del parque | `pal_gate` | nova | Verja de madera del parque abriéndose por la mitad hacia el camino verde. |
 | Gather acorns | Apañar landras | Recoger bellotas | Coger bellotas del suelo | `pal_gather_acorns` | nova | Bellotas recogidas del suelo y guardadas en una cesta. |
 | Gather | Xuntar | Juntar | Juntar hojas con las manos | `pal_gather` | nova | Dos manos juntando hojas caídas hacia un montón central. |
+| Gaze | Mirar fixamente | Mirar fijamente | Mirar a los ojos del bebé en silencio | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Generous | Xeneroso | Generoso | Abrir los brazos para dar | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Gentle hands | Mans suaves | Manos suaves | Acariciar muy despacio | `pal_gentle_hands` | composta | Manos abiertas moviéndose despacio con máxima suavidad. |
 | Gentle waves | Ondas suaves | Olas suaves | Pequeños temblores de muñeca. | `pal_gentle_waves` | composta | Olas pequeñas y suaves balanceándose despacio. |
 | gentle | con delicadeza | con delicadeza | — | `pal_gentle` | composta | Niño acariciando suavemente a un gato con cuidado y cariño. |
+| Gentle-hearted | De corazón doce | De corazón dulce | Hacer un corazón con las manos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Gently down the stream | Amodo polo río | Despacio por el río | Remar despacio | `pal_gently_down_the_stream` | nova | Barquita con remos navegando suavemente río abajo. |
 | Geometric | Xeométrico | Geométrico | Dibujar un triángulo | `pal_geometric` | nova | Triángulo rojo, cuadrado azul y círculo amarillo en estilo geométrico limpio. |
 | Germ-free | Sen xermes | Sin gérmenes | Enseñar las manos limpias | `pal_germ_free` | composta | Mano limpia con burbujas de jabón y sello verde sin gérmenes. |
 | Germs | Xermes | Gérmenes | Frotar las manos para quitarlos | `pal_germs` | nova | Gérmenes vistos bajo lupa sobre una mano para lavarlos bien. |
+| Get dressed | Vestirse | Vestirse | Hacer que se pone la ropa | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Get off | Baixar | Bajar | Dar un paso hacia abajo | `pal_get_off` | nova | Niño bajando del escalón al suelo siguiendo la flecha. |
 | Get on | Subir | Subir | Dar un paso hacia arriba | `pal_get_on` | composta | Niño subiendo hacia el vehículo o columpio. |
 | Get ready for bed | Prepararse para durmir | Prepararse para dormir | Ponerse el pijama imaginario | `pal_get_ready_for_bed` | nova | Niño en pijama preparándose junto a su cama bajo la luna. |
@@ -1088,7 +1285,10 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Giggly | Risoño | Risueño | Reír sin parar con el bebé | `pal_giggly` | composta | Risa contagiosa compartida jugando con el bebé. |
 | Giraffe | Xirafa | Jirafa | Estirar mucho el cuello hacia arriba | `pal_giraffe` | banco | Jirafa alta de cuello largo. |
 | Give a card | Dar unha tarxeta | Dar una tarjeta | Extender la tarjeta | `pal_give_a_card` | nova | Mano ofreciendo una postal decorada con una flor. |
+| Give a compliment | Dicir un eloxio | Decir un cumplido | Hablar mirando a los ojos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Give a speech | Dar un discurso | Dar un discurso | Hablar alto y claro | `pal_give_a_speech` | composta | Niño hablando en público ante el micrófono sobre el atril. |
+| Give a thumbs up | Levantar o polgar | Levantar el pulgar | Levantar el pulgar | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Give away | Regalar | Regalar | Extender un objeto a otra persona | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Give me five! | Choca esa! | ¡Choca esos cinco! | Chocar la palma de la mano con la de una compañera | `pal_give_me_five` | nova | Dos palmas abiertas chocando los cinco con destellos. |
 | Give | Dar | Dar | Extender la mano abierta hacia otra persona | `pal_give` | nova | Mano entregando un pequeño regalo a la otra mano. |
 | Glad | Contento | Contento | Dar palmas despacio | `pal_glad` | composta | Niño contento sonriendo y dando palmas despacio. |
@@ -1098,6 +1298,7 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Glide | Esvarar | Deslizarse | Pasar la mano plana por el aire | `pal_glide` | nova | Avión de papel planeando suavemente en línea recta. |
 | Glinting | Escintilante | Reluciente | Mover el cristal al sol | `pal_glinting` | nova | Cristal facetado lanzando destellos vivos al darle la luz del sol. |
 | Glitter | Purpurina | Purpurina | Agitar un bote con purpurina | `pal_glitter` | composta | Bote transparente lleno de purpurina brillante centelleando. |
+| Glittering | Resplandecente | Resplandeciente | Mover los dedos brillando | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Glittery | Con purpurina | Con purpurina | Tocar un papel con purpurina | `pal_glittery` | nova | Cartulina rosa brillante cubierta de destellos de purpurina. |
 | Globe | Globo terráqueo | Globo terráqueo | Girar una bola imaginaria | `pal_globe` | banco | Globo terráqueo azul y verde. |
 | Gloomy | Escuro | Oscuro | Bajar la luz de la sala | `pal_gloomy` | nova | Cielo gris oscuro cubierto de nubes grises y lluvia. |
@@ -1118,10 +1319,14 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Goggles | Lentes de bucear | Gafas de bucear | Hacer gafas con las manos | `pal_goggles` | banco | Gafas protectoras de bucear. |
 | Golden brown | Dourado | Dorado | Enseñar una hoja dorada a la luz | `pal_golden_brown` | nova | Hoja otoñal de color marrón dorado brillando a la luz del sol. |
 | Golden | Dourado, dourada | Dorado, dorada | Señalar algo dorado o amarillo brillante | `pal_golden` | nova | Lingote y medalla dorados relucientes señalados para mostrar el color dorado. |
+| Gone | Desaparecido | Desaparecido | Abrir las manos vacías | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Good deed | Boa acción | Buena acción | Levantar el pulgar | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Good job! | Moi ben! | ¡Muy bien! | Levantar el pulgar | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Good morning! | Bos días! | ¡Buenos días! | Estirar los brazos hacia el cielo como al despertar | `pal_good_morning` | composta | Sol amaneciendo y mano saludando alegremente por la mañana. |
 | Good morning, Sun! | Bos días, Sol! | ¡Buenos días, Sol! | Abrir los brazos | `pal_good_morning_sun` | composta | Amanecer luminoso y niño abriendo los brazos sonriente dando los buenos días al sol. |
 | Good night! | Boas noites! | ¡Buenas noches! | Decir adiós despacio y juntar las manos bajo la mejilla | `pal_good_night` | composta | Luna nocturna y niño arropado con ojos cerrados diciendo buenas noches. |
 | Good night, Moon | Boas noites, Lúa | Buenas noches, Luna | Cerrar los ojos | `pal_good_night_moon` | composta | Luna creciente brillante en la noche con niño despidiéndose. |
+| Good sport | Bo deportista | Buen deportista | Darse la mano al final | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Goodbye card | Tarxeta de despedida | Tarjeta de despedida | Dar una tarjeta a un amigo | `pal_goodbye_card` | nova | Tarjeta de despedida con una mano saludando y un sobre al lado. |
 | Goodbye | Adeus | Adiós | Decir adiós despacio con la mano mientras se camina hacia atrás | `pal_goodbye` | banco | Mano abierta saludando al despedirse: coincide con el gesto de adiós. |
 | Gorilla | Gorila | Gorila | Golpear el pecho suave | `pal_gorilla` | banco | Gorila de perfil. |
@@ -1129,9 +1334,11 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Grab | Agarrar | Agarrar | Agarrar algo imaginario con toda la mano | `pal_grab` | nova | Mano con dedos cerrados agarrando con fuerza una pelota roja. |
 | Graceful flight | Voo elegante | Vuelo elegante | Mover los brazos suave | `pal_graceful_flight` | nova | Ave blanca planeando en un vuelo elegante y suave por el cielo. |
 | Graceful steps | Pasos elegantes | Pasos elegantes | Caminar de puntillas despacio | `pal_graceful_steps` | nova | Niño andando suave de puntillas con brazos arqueados elegantes. |
+| Graceful | Elegante | Elegante | Moverse despacio y con elegancia como un delfín | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Graduated | Graduado | Graduado | Levantar el certificado | `pal_graduated` | nova | Niño sonriente con birrete negro sosteniendo su diploma. |
 | Graduation cap | Birrete | Birrete | Ponerse un birrete imaginario | `pal_graduation_cap` | banco | Birrete azul con borla. |
 | Graduation | Graduación | Graduación | Lanzar un birrete al aire | `pal_graduation` | composta | Niño levantando alegre los brazos al lanzar el birrete de graduación. |
+| Gram | Gramo | Gramo | Juntar dos dedos muy poco | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Grandad | Avó | Abuelo | Señalar la foto del abuelo | `pal_grandad` | composta | Abuelo sonriente en primer plano. |
 | Grandma | Avoa | Abuela | Poner las manos en las mejillas con cariño | `pal_grandma` | nova | Retrato cariñoso de la abuela con moño blanco y gafas. |
 | Grandpa | Avó | Abuelo | Saludar a lo lejos como si llegara el abuelo | `pal_grandpa` | composta | Abuelo canoso con gafas y bastón levantando la mano en saludo cariñoso. |
@@ -1141,8 +1348,12 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Grasshopper | Saltón | Saltamontes | Saltar como un saltamontes | `pal_grasshopper` | composta | Saltamontes dando un gran salto en arco sobre la hierba. |
 | Grassy | Herboso | Herboso | Tocar la hierba con la palma | `pal_grassy` | nova | Palma apoyada sobre tupidas briznas verdes de terreno herboso. |
 | Grate | Relar | Rallar | Mover la mano arriba y abajo | `pal_grate` | composta | Queso moviéndose arriba y abajo sobre rallador metálico soltando virutas. |
+| Grateful heart | Corazón agradecido | Corazón agradecido | Poner las manos en el pecho | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Grateful | Agradecido, agradecida | Agradecido, agradecida | Juntar las manos en el pecho e inclinar la cabeza | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Graze like a gentle sheep | Pace coma unha ovella mansa | Pasta como una oveja mansa | Agachada suave y gesto de pacer con la cabeza cerca del suelo. | `pal_graze_like_a_gentle_sheep` | composta | Oveja mansa pastando hierba fresca en el campo. |
 | Graze | Pacer | Pastar | Bajar la cabeza y mover la boca como quien come hierba | `pal_graze` | nova | Oveja con la cabeza agachada pastando tranquilamente en el prado. |
+| Great | Estupendo, estupenda | Estupendo, estupenda | Levantar los dos pulgares | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Great-grandparents | Bisavós | Bisabuelos | Señalar muy atrás | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Green card | Tarxeta verde | Tarjeta verde | Correr al ver la tarjeta verde | `pal_green_card` | nova | Tarjeta verde dando paso libre y niño echando a correr. |
 | Green shoot | Gromo | Brote | Subir un dedo desde el puño | `semente` | reutilizada | Semilla con brote verde saliendo de la tierra. |
 | Green | Verde | Verde | Señalar algo verde en el aula | `pal_green` | nova | Mancha/círculo verde intenso. |
@@ -1150,6 +1361,7 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Greet | Saudar | Saludar | Inclinar la cabeza y sonreír al bebé | `pal_greet` | composta | Niño sonriendo y saludando con la mano. |
 | Grey | Gris | Gris | Señalar algo gris en el aula | `pal_grey` | nova | Objetos de color gris (piedra, cubo y esfera) señalados sobre la mesa. |
 | Gritty | Areento | Arenoso | Frotar arena entre los dedos | `pal_gritty` | nova | Granos gruesos y arenosos de arena notándose ásperos entre los dedos. |
+| Groovy | Marchoso | Marchoso | Bailar con mucha marcha | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Group hug | Aperta de grupo | Abrazo de grupo | Abrazarse todos juntos | `pal_group_hug` | nova | Tres amigos abrazándose juntos formando un gran abrazo de grupo. |
 | Group of five | Grupo de cinco | Grupo de cinco | Enseñar una mano abierta | `pal_group_of_five` | nova | Mano abierta con cinco dedos enseñando un grupo de cinco manzanas. |
 | Group | Agrupar | Agrupar | Juntar de cinco en cinco | `pal_group` | nova | Piezas de colores agrupadas en dos conjuntos separados. |
@@ -1158,13 +1370,19 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Grow taller | Facerse máis alto | Hacerse más alto | Estirarse de puntillas | `pal_grow_taller` | composta | Brote pequeño creciendo hacia arriba junto a niño estirándose alto de puntillas. |
 | Grow up | Medrar | Crecer | Levantarse despacio | `pal_grow_up` | nova | Secuencia de crecimiento desde bebé hasta niño mayor. |
 | Grow | Medrar | Crecer | Pasar de agachados a estirados muy despacio | `pal_grow` | nova | Planta pequeña creciendo hasta convertirse en flor alta. |
+| Grow, grow, grow! | Medra, medra, medra! | ¡Crece, crece, crece! | Levantarse despacio hasta arriba | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Growing | Medrando | Creciendo | Estirar los brazos hacia arriba | `pal_growing` | composta | Brote verde creciendo junto al niño que se estira alto hacia arriba. |
 | Growl | Rosmar | Gruñir | Hacer «grrr» bajito | `pal_growl` | composta | Oso gruñendo suavemente con ondas cortas. |
+| Grown bigger | Máis grande | Más grande | Estirarse alto | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Grown so much | Moi medrado | Muy crecido | Estirarse hasta arriba | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Grown-up now | Maior agora | Mayor ahora | Ponerse de puntillas | `pal_grown_up_now` | nova | Niño pequeño que ha crecido mucho hasta hacerse mayor y alto. |
 | Grown-up | Maior | Mayor | Estirarse muy alto | `pal_grown_up` | nova | Persona adulta alta de pie junto a un niño pequeño. |
 | Growth chart | Táboa de altura | Tabla de altura | Medirse en la pared | `pal_growth_chart` | nova | Regla vertical de pared midiendo la altura de un niño. |
+| Grrr, grrr! | Grrr, grrr! | ¡Grrr, grrr! | Gruñir y sonreír | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Grumpy | Rosmón | Gruñón | Cruzar los brazos y luego reír | `pal_grumpy` | nova | Niño con el ceño fruncido y brazos cruzados de mal humor. |
+| Guess the taste | Adiviñar o sabor | Adivinar el sabor | Probar con los ojos cerrados | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Guess who's behind the mask | Adiviña quen hai detrás da máscara | Adivina quién hay detrás de la máscara | Tapar la cara y descubrirla | `pal_guess_who_s_behind_the_mask` | composta | Niño cubriéndose los ojos con un antifaz para adivinar quién es. |
+| Guess | Adiviñar | Adivinar | Tocarse la barbilla pensativos y señalar | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Guitar | Guitarra | Guitarra | Sujetar una guitarra imaginaria contra el cuerpo | `pal_guitar` | banco | Guitarra acústica de madera. |
 | Gull chick | Pito de gaivota | Pollo de gaviota | Acurrucarse pequeño | `pal_gull_chick` | composta | Pollito recién nacido junto a la costa marina: pollo de gaviota. |
 | Gums | Enxivas | Encías | Masajear las encías con un mordedor | `pal_gums` | nova | Boca abierta mostrando las encías rosadas junto a un mordedor infantil. |
@@ -1183,6 +1401,7 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Hamster | Hámster | Hámster | Inflar los mofletes como si guardáramos comida | `pal_hamster` | banco | Hámster tierno con mofletes. |
 | Hand gel | Xel de mans | Gel de manos | Frotar las manos con el gel | `pal_hand_gel` | nova | Bote dosificador de gel hidroalcohólico echando una gota sobre la palma. |
 | Hand in hand | Da man | De la mano | Coger la mano del compañero y caminar juntos | `pal_hand_in_hand` | composta | Dos niños caminando cogidos de la mano. |
+| Hand it over | Dalo | Darlo | Extender la mano con el juguete | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Hand on paper | Man no papel | Mano en el papel | Posar la mano en el papel | `pal_hand_on_paper` | nova | Mano abierta posada sobre una hoja blanca de papel. |
 | Hand over | Entregar | Entregar | Dar el objeto a la otra mano | `pal_hand_over` | nova | Bloque azul entregado directamente de una mano a la otra. |
 | Hand towel | Toalla de mans | Toalla de manos | Secar las manos en la toalla | `pal_hand_towel` | composta | Toalla colgada junto a dos manos secándose. |
@@ -1197,11 +1416,15 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Hands up and cheer | Mans arriba e a animar | Manos arriba y a animar | Subir las manos y animar todos a la vez | `pal_hands_up_and_cheer` | nova | Dos niños con las manos en alto animando y celebrando. |
 | Hands | Mans | Manos | Abrir y girar las dos manos | `pal_hands` | composta | Dos manos abiertas girando suavemente. |
 | Handspan | Palmo | Palmo | Medir la mesa a palmos | `pal_handspan` | nova | Mano abierta extendida midiendo un palmo sobre la madera. |
+| Handwritten | Escrito a man | Escrito a mano | Escribir en el aire | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Hang ornaments | Colgar adornos | Colgar adornos | Estirarse a colgar | `pal_hang_ornaments` | nova | Mano colgando bolas de colores para adornar el árbol. |
 | Hang out | Tender | Tender | Colgar la ropa en la cuerda | `pal_hang_out` | composta | Ropa y toallas tendidas en el tendedero al sol. |
 | Hang up | Colgar | Colgar | Colgar el abrigo en la percha | `pal_hang_up` | nova | Abrigo azul colgado ordenadamente en una percha de madera. |
 | Hang | Pendurar | Colgar | Colgar una estrella imaginaria en lo alto | `pal_hang` | composta | Prenda colgada en su gancho en lo alto. |
+| Happiest | O máis feliz | El más feliz | Saltar de alegría | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Happy birthday! | Feliz aniversario! | ¡Feliz cumpleaños! | Dar palmas suaves y soplar una vela imaginaria | `pal_happy_birthday` | composta | Niño soplando las velas de la tarta entre confeti de cumpleaños. |
+| Happy ending | Final feliz | Final feliz | Sonreír y abrazar | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Happy holidays! | Boas festas! | ¡Felices fiestas! | Saludar a todos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Happy New Year! | Feliz aninovo! | ¡Feliz Año Nuevo! | Abrazar a quien está al lado y sonreír | `pal_happy_new_year` | composta | Confeti festivo de Año Nuevo con amigos abrazándose sonrientes. |
 | Happy | Contento, contenta | Contento, contenta | Abrir los brazos con una sonrisa grande | `pal_happy` | composta | Niño feliz con gran sonrisa abriendo alegremente los brazos bajo el sol. |
 | Harbour wall | Espigón | Espigón | Estirar el brazo largo | `pal_harbour_wall` | nova | Espigón largo de piedra saliendo desde la costa con bolardos y baliza. |
@@ -1211,7 +1434,10 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Hard-shelled | De casca dura | De caparazón duro | Golpear suave en la espalda | `pal_hard_shelled` | composta | Cangrejo con caparazón duro y flecha señalando su concha rígida. |
 | Hard-working | Traballador, traballadora | Trabajador, trabajadora | Llevar cargas imaginarias de un lado a otro | `pal_hard_working` | nova | Niño trabajador llevando cajas apiladas de un sitio a otro. |
 | Hare | Lebre | Liebre | Saltar largo como una liebre | `pal_hare` | composta | Liebre saltando largo sobre el prado. |
+| Harmonious | Harmonioso | Armonioso | Juntar las voces | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Harmony | Harmonía | Armonía | Juntar las manos suavemente | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Harvest fruit | Apañar froita | Cosechar fruta | Coger fruta imaginaria | `pal_harvest_fruit` | composta | Fruta recién cogida metiéndose dentro de la cesta. |
+| Harvest time! | Hora da colleita! | ¡Hora de la cosecha! | Coger con la cesta | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Harvest | Colleita | Cosecha | Coger y meter en una cesta | `pal_harvest` | nova | Cesta llena de la cosecha de manzanas, calabaza y espigas. |
 | Hat and mittens | Gorro e manoplas | Gorro y manoplas | Tocar el gorro y luego las manoplas | `pal_hat_and_mittens` | nova | Gorro de invierno con pompón y un par de manoplas calentitas. |
 | Hat brim | Aba do chapeu | Ala del sombrero | Sujetar el sombrero con el viento | `pal_hat_brim` | nova | Mano sujetando el ala ancha del sombrero de paja frente al viento. |
@@ -1223,6 +1449,7 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Hatchling | Pitiño recén nado | Polluelo | Acurrucarse como un polluelo | `pal_hatchling` | composta | Polluelo saliendo del cascarón y niño acurrucado pequeñito. |
 | Have a nice summer! | Bo verán! | ¡Feliz verano! | Abrir los brazos hacia el grupo con alegría | `pal_have_a_nice_summer` | composta | Playa de verano con sombrilla y sol mientras el niño abre los brazos contento. |
 | Have a safe trip! | Boa viaxe! | ¡Buen viaje! | — | `pal_have_a_safe_trip` | composta | Avión despegando y mano despidiendo deseando buen viaje. |
+| Have fun! | Pásao ben! | ¡Pásalo bien! | Dar palmas | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Have you been holding the cup? | Levas tempo suxeitando o vaso? | ¿Llevas rato sujetando el vaso? | — | `pal_holding_the_cup` | composta | Niño sujetando un vaso con pregunta encima. |
 | Have you finished the row? | Remataches a fila? | ¿Has terminado la fila? | — | `pal_have_you_finished_the_row` | composta | Fila casi terminada con último hueco y pregunta. |
 | Have you pushed it? | Empuxáchelo? | ¿Lo has empujado? | — | `pal_have_you_pushed_it` | composta | Niño junto a caja y signo de pregunta sobre empujarla. |
@@ -1245,6 +1472,7 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Heaviest | O máis pesado | El más pesado | Bajar el brazo al máximo | `pal_heaviest` | nova | Tres piedras comparadas señalando el peñasco más pesado. |
 | Heavy bag | Bolsa pesada | Bolsa pesada | Llevar una bolsa con esfuerzo | `pal_heavy_bag` | composta | Niño inclinado con esfuerzo cargando una mochila pesada con gotas de sudor. |
 | Heavy blanket | Manta pesada | Manta pesada | Posar la manta despacio | `pal_heavy_blanket` | nova | Manta acolchada gruesa y pesada cubriendo al niño dormido. |
+| Heavy side | Lado pesado | Lado pesado | Bajar un brazo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Heavy steps | Pasos pesados | Pasos pesados | Pisar muy fuerte | `pal_heavy_steps` | nova | Niño levantando bien la pierna para dar pasos muy pesados. |
 | Heavy | Pesado, pesada | Pesado, pesada | Levantar una piedra imaginaria muy pesada | `pal_heavy` | nova | Niño intentando levantar una piedra grande y muy pesada. |
 | Hedgehog | Ourizo cacho | Erizo | Hacerse una bola en el suelo | `pal_ourizo` | nova | Un erizo de perfil, con sus púas, el hocico y las patas. |
@@ -1252,6 +1480,7 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Hello! | Ola! | ¡Hola! | Traslado del peso de un pie al otro. | `pal_hello` | composta | Mano abierta saludando con un ¡hola!. |
 | Hello, flower! | Ola, flor! | ¡Hola, flor! | Saludar a una flor | `pal_hello_flower` | composta | Niño agitado saludando con una sonrisa a la flor del prado. |
 | Hello, friend! | Ola, amigo! | ¡Hola, amigo! | Saludar a un compañero | `pal_hello_friend` | composta | Dos amigos levantando la mano para saludarse. |
+| Hello, I'm Sock! | Ola, son Calcetín! | ¡Hola, soy Calcetín! | Mover la boca del títere | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Hello, little chick | Ola, pitiño | Hola, pollito | Acariciar un pollito imaginario | `pal_hello_little_chick` | composta | Pollito pequeño acariciado mientras se le saluda con ternura. |
 | Hello, little one! | Ola, pequeno! | ¡Hola, pequeño! | Saludar cerca de la cara del bebé | `pal_hello_little_one` | composta | Bebé mirando alegre a la mano que lo saluda. |
 | Hello, sailor! | Ola, mariñeiro! | ¡Hola, marinero! | Hacer el saludo de marinero | `pal_hello_sailor` | nova | Niño con gorro marinero blanco haciendo el saludo militar. |
@@ -1259,17 +1488,25 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Hello, sun! | Ola, sol! | ¡Hola, sol! | Saludar hacia arriba y sonreír | `pal_hello_sun` | composta | Sol alto y niño saludándolo hacia arriba con la mano contenta. |
 | Help a friend | Axudar a un amigo | Ayudar a un amigo | Dar la mano a un amigo para levantarse | `pal_help_a_friend` | nova | Niño dando la mano a un amigo sentado para ayudarle a levantarse. |
 | Help me, please | Axúdame, por favor | Ayúdame, por favor | — | `pal_help_me_please` | composta | Niño tendiendo la mano para ayudar a otro con una caja. |
+| Help others | Axudar aos demais | Ayudar a los demás | Dar la mano a alguien | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Help | Axudar | Ayudar | Levantar entre dos un objeto imaginario pesado | `pal_help` | composta | Dos niños levantando juntos una caja pesada: ayudar entre dos. |
 | Helper | Axudante | Ayudante | Ponerse una medalla de ayudante | `pal_helper` | nova | Niño ayudante luciendo una medalla de estrella dorada. |
 | Helpful | Servizal | Servicial | Ayudar a un amigo a recoger | `pal_helpful` | nova | Dos amigos serviciales ayudándose a guardar los juguetes en la caja. |
+| Helping hand | Man amiga | Mano amiga | Extender la mano | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Hen | Galiña | Gallina | Doblar los brazos como alas y moverlos | `pal_hen` | nova | Gallina marrón de cuerpo entero con cresta roja en el prado. |
+| Here a moo, there a moo | Aquí un mu, alí un mu | Aquí un mu, allí un mu | Señalar a un lado y al otro | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Here comes a wave! | Aí vén unha onda! | ¡Ahí viene una ola! | Levantar los brazos como una ola | `pal_here_comes_a_wave` | composta | Gran ola de mar avanzando con fuerza. |
 | Here comes the aeroplane! | Aí vén o avión! | ¡Ahí viene el avión! | Acercar la cuchara volando | `pal_here_comes_the_aeroplane` | nova | Cuchara con alas volando como un avión hacia el bebé. |
+| Here I am! | Aquí estou! | ¡Aquí estoy! | Aparecer detrás de la cortina | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Here it comes! | Aí vai! | ¡Ahí va! | Rodar la pelota hacia el bebé | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Here it is! | Aquí está! | ¡Aquí está! | Señalar con alegría algo encontrado | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Here you are! | Aquí tes! | ¡Toma! | Dar el objeto con la mano abierta | `pal_here_you_are` | composta | Niño entregando una manzana en la mano de otro. |
 | Here you go | Toma | Toma | Dar el juguete a un amigo | `pal_here_you_go` | composta | Niño dando un libro a su compañero con gesto amable. |
 | Here you go. Thank you! Your turn | Aquí tes. Grazas! Tócache | Toma. ¡Gracias! Te toca | Intercambio pragmático completo entre dos escolares. | `pal_here_you_go_thank_you_turn` | composta | Intercambio amable pasando el objeto y el turno. |
 | Here you go: give the light to the next pair | Aquí tes: dálle a luz á parella seguinte | Toma: dale la luz a la pareja siguiente | Entrega de la vela a la siguiente pareja con la fórmula pragmática. | `pal_give_light_next_pair` | composta | Pasando la linterna encendida a la siguiente pareja. |
 | Here you go: pass the soil to your friend | Aquí tes: pásalle a terra ao teu amigo | Toma: pásale la tierra a tu amigo | Entrega del recipiente de tierra con la fórmula pragmática. | `pal_pass_soil_friend` | composta | Pasando el recipiente con tierra al compañero. |
+| Here's Grandad! | Aquí está o avó! | ¡Aquí está el abuelo! | Descubrir la foto del abuelo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Here's the shop | Aquí está a tenda | Aquí está la tienda | Señalar la tienda | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Here's your change | Aquí tes o cambio | Aquí tienes el cambio | Dar una moneda | `pal_here_s_your_change` | nova | Mano entregando monedas doradas de cambio en otra palma. |
 | Here, doggy! | Ven, canciño! | ¡Ven, perrito! | Llamar con el dedo y golpear las rodillas | `pal_here_doggy` | composta | Perrito viniendo contento mientras el niño le llama y golpea las rodillas. |
 | Hero | Protagonista | Protagonista | Poner las manos en la cadera | `pal_hero` | nova | Niño con capa roja y manos en la cadera como protagonista. |
@@ -1291,14 +1528,22 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Higher than the houses | Máis alto que as casas | Más alto que las casas | Levantar la mano por encima | `pal_higher_than_the_houses` | composta | Casas pequeñas a los lados y brazo levantado mucho más alto que los tejados. |
 | Hike | Facer andaina | Hacer senderismo | Caminar levantando las rodillas | `pal_hike` | composta | Bota de montaña subiendo por sendero hacia la cumbre. |
 | Hilltop | Cumio do monte | Cima del monte | Estirar los brazos en lo alto | `pal_cima` | nova | Un niño en lo más alto del monte, con los brazos estirados hacia arriba: el gesto. |
+| Hip, hip, hooray! | Hip, hip, hurra! | ¡Hip, hip, hurra! | Levantar los brazos tres veces | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Hippo | Hipopótamo | Hipopótamo | Abrir mucho la boca | `pal_hippo` | banco | Hipopótamo abriendo grande su hocico. |
 | Hips | Cadeiras | Caderas | Mover las caderas de un lado a otro | `pal_hips` | nova | Niño resaltando la cintura y caderas moviéndolas de un lado a otro. |
+| Historic | Histórico | Histórico | Tocar una piedra vieja | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| History | Historia | Historia | Señalar hacia atrás | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Ho, ho, ho! | Ho, ho, ho! | ¡Jo, jo, jo! | Dar palmadas en la barriga riendo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Hobby | Afección | Afición | Hacer el gesto de una afición | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Hold hands | Darse a man | Darse la mano | Cogerse de las manos en círculo | `pal_hold_hands` | composta | Dos niños caminando juntos agarrados de la mano. |
 | Hold ice | Suxeitar xeo | Sostener hielo | Temblar sosteniendo algo frío | `pal_hold_ice` | composta | Manos sosteniendo un cubito de hielo helado con copos alrededor. |
+| Hold it | Suxeitar | Sujetar | Poner la fruta en la mano del bebé | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Hold it, please! | Suxéitao, por favor! | ¡Sujétalo, por favor! | Sujetar con las dos manos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Hold my hand | Dáme a man | Dame la mano | Coger la mano de la persona adulta | `pal_hold_my_hand` | composta | Manos estrechándose juntas para dar la mano. |
 | Hold on | Suxeitarse | Agarrarse | Agarrarse al banco | `pal_hold_on` | nova | Niño agarrado firmemente con ambas manos a la barra de madera. |
 | Hold steady | Suxeitar firme | Sujetar firme | Sujetar la torre con las dos manos | `pal_hold_steady` | nova | Dos manos sujetando firme una torre alta de bloques para que no caiga. |
 | Hold up high | Levantar alto | Levantar alto | Enseñar el tesoro a todos | `pal_hold_up_high` | nova | Niño levantando en lo alto un tesoro brillante para enseñarlo a todos. |
+| Hold up one finger for first | Levantar un dedo para «primeiro» | Levantar un dedo para «primero» | Levantar un dedo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Hold up | Amosar | Mostrar | Levantar la castaña para verla | `pal_hold_up` | nova | Mano levantando una castaña en alto para mostrarla bien. |
 | Hold your breath | Aguantar o aire | Aguantar la respiración | Inflar las mejillas | `pal_hold_your_breath` | nova | Cara con los mofletes muy hinchados aguantando el aire dentro. |
 | Hold your hat! | Suxeita o chapeu! | ¡Sujeta el sombrero! | Posar las manos en la cabeza | `pal_hold_your_hat` | nova | Niño sujetando con las dos manos el ala de su sombrero contra el viento. |
@@ -1308,6 +1553,8 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Hollow | Oco | Hueco | Mirar dentro del tubo | `pal_hollow` | nova | Tubo o cilindro hueco por dentro dejando ver el espacio vacío. |
 | Holly | Acivro | Acebo | Señalar las bolas rojas | `pal_holly` | nova | Rama de acebo con hojas verdes dentadas y tres bolitas rojas. |
 | Home | Casa | Casa | Juntar las manos por encima de la cabeza como un tejado | `pal_home` | banco | Casa con tejado y jardín. |
+| Homemade | Caseiro | Casero | Remover una olla | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Honest | Sincero | Sincero | Poner la mano en el pecho | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Honey is sweeter than lemon | O mel é máis doce ca o limón | La miel es más dulce que el limón | Sonreír y luego arrugar la cara | `pal_honey_is_sweeter_than_lemon` | composta | Tarro de miel dulce que hace sonreír frente al limón ácido. |
 | Honey | Mel | Miel | Mostrar el bote de miel y olerlo | `pal_honey` | banco | Tarro de miel dorada. |
 | Honeycomb | Panal | Panal | Hacer hexágonos con las manos | `pal_honeycomb` | nova | Celdas hexagonales doradas de panal con una abejita al lado. |
@@ -1316,6 +1563,7 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Hooded towel | Toalla con carapucha | Toalla con capucha | Poner la capucha de la toalla | `pal_hooded_towel` | nova | Bebé envuelto en toalla azul celeste con capucha de orejitas. |
 | Hoop tunnel | Túnel de aros | Túnel de aros | Pasar por los aros | `pal_hoop_tunnel` | nova | Tres aros de colores alineados en fila formando un túnel para pasar. |
 | Hoop | Aro | Aro | Hacer un aro con los brazos por encima de la cabeza | `pal_hoop` | nova | Aro grande de psicomotricidad de color rojo. |
+| Hooray for us! | Hurra por nós! | ¡Hurra por nosotros! | Levantar los brazos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Hoot, hoot! | Hu, hu! | ¡Uh, uh! | Hacer un búho con las manos y decir «uh, uh» | `pal_hoot_hoot` | composta | Búho posado en una rama nocturna haciendo su ulular. |
 | Hop along | Ir a saltiños | Ir a saltitos | Dar saltitos con los dedos | `pal_hop_along` | composta | Rana saltando por arcos sucesivos sobre la hierba. |
 | Hop around | Saltar arredor | Saltar alrededor | Saltar dando una vuelta | `pal_hop_around` | nova | Niño saltando a la pata coja mientras gira alrededor. |
@@ -1324,6 +1572,7 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Hop on one foot | Saltar a pé coxo | Saltar a la pata coja | Saltar en un pie | `pal_hop_on_one_foot` | nova | Niño saltando en equilibrio sobre un solo pie. |
 | Hop to number three, then turn around | Salta ata o tres e dá a volta | Salta hasta el tres y date la vuelta | Saltar y girar | `pal_hop_to_number_three_then_turn_around` | nova | Tres casillas de salto (1, 2, 3 puntos), salto encima y flecha de dar la vuelta. |
 | Hop | Saltar a pé coxo | Saltar a la pata coja | Saltar a la pata coja cogidos de la mano | `pal_hop` | composta | Niño saltando en el aire a la pata coja. |
+| Hopeful | Esperanzado | Esperanzado | Mirar hacia arriba sonriendo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Hopping | Dando brincos | Dando brincos | Brincar sin parar | `pal_hopping` | nova | Niño dando saltos sucesivos con arcos de bote en el prado. |
 | Hopscotch | Mariola | Rayuela | Saltar a la pata coja en los cuadros | `pal_hopscotch` | nova | Cuadros de rayuela en el suelo con niño saltando encima a la pata coja. |
 | Horn | Bucina | Bocina | Tocar la bocina | `pal_horn` | nova | Bocina con pera roja y trompeta dorada tocada con la mano emitiendo sonido. |
@@ -1334,7 +1583,24 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Hot water bottle | Bolsa de auga quente | Bolsa de agua caliente | Poner la bolsa templada en la barriga | `pal_hot_water_bottle` | nova | Bolsa roja de goma acanalada para agua caliente. |
 | Hot | Quente | Caliente | Soplarse los dedos como si quemaran un poco | `pal_hot` | nova | Cuenco caliente soltando ondas rojas de calor junto a la mano. |
 | Hot, hot, hot! | Quente, quente, quente! | ¡Caliente, caliente, caliente! | Abanicar la mano como si quemara | `pal_hot_hot_hot` | nova | Taza muy caliente echando vapor con mano abanicándose. |
+| Hours of sleep | Horas de soño | Horas de sueño | Contar horas con los dedos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Hover | Pairar | Cernerse | Quedarse con los brazos abiertos quietos | `pal_hover` | composta | Águila cerniéndose quieta en lo alto con las alas abiertas igual que el niño. |
+| How are you feeling today? | Como te sentes hoxe? | ¿Cómo te sientes hoy? | Señalar el termómetro | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| How big is baby? | Canto medra o bebé? | ¿Cuánto crece el bebé? | Abrir los brazos muy grandes | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| How can we help the planet? | Como podemos axudar ao planeta? | ¿Cómo podemos ayudar al planeta? | Abrir las manos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| How do you feel? | Como te sentes? | ¿Cómo te sientes? | Señalar el panel de las emociones | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| How does the story begin? | Como comeza a historia? | ¿Cómo empieza la historia? | Levantar un dedo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| How high can you jump? | Canto saltas? | ¿Cuánto saltas? | Saltar lo más alto posible | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| How long can you stand on one leg? | Canto aguantas nun pé? | ¿Cuánto aguantas a la pata coja? | Contar en un pie | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| How many chestnuts? | Cantas castañas? | ¿Cuántas castañas? | Contar con los dedos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| How many crates did we fill? | Cantas caixas enchemos? | ¿Cuántas cajas llenamos? | Contar con los dedos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| How many days until the party? | Cantos días faltan para a festa? | ¿Cuántos días faltan para la fiesta? | Contar con los dedos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| How many legs has it got? | Cantas patas ten? | ¿Cuántas patas tiene? | Contar dedos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| How many petals does it have? | Cantos pétalos ten? | ¿Cuántos pétalos tiene? | Contar con los dedos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| How much is it? | Canto custa? | ¿Cuánto cuesta? | Señalar la fruta | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| How old are you? | Cantos anos tes? | ¿Cuántos años tienes? | Enseñar los dedos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| How old is this tree? | Cantos anos ten esta árbore? | ¿Cuántos años tiene este árbol? | Contar anillos con el dedo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| How would you feel if...? | Como te sentirías se...? | ¿Cómo te sentirías si...? | Tocar el pecho preguntando | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | However, the gift paper was the loudest. | Porén, o papel de agasallo foi o que máis soou. | Sin embargo, el papel de regalo fue el que más sonó. | — | `pal_gift_paper_loudest` | composta | Papel de regalo haciendo muchísimo ruido al arrugarse. |
 | Howl | Ouvear | Aullar | Levantar la cabeza y hacer «auuu» muy suave | `pal_howl` | nova | Lobo sentado mirando arriba a la luna aullando. |
 | Huddle together | Xuntarse para quentarse | Juntarse para calentarse | Apretarse todos juntos | `pal_huddle_together` | nova | Tres niños muy juntos acurrucándose para darse calor en el frío. |
@@ -1351,16 +1617,20 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Hum a tune | Cantaruxar | Tararear | Tararear con los labios cerrados | `pal_hum_a_tune` | composta | Niño tarareando una melodía con notas musicales en el aire. |
 | Hum along | Cantaruxar xuntos | Tararear juntos | Tararear con la boca cerrada | `pal_hum_along` | nova | Rostro sonriente con los labios cerrados tarareando notas musicales. |
 | Hum | Trautear | Tararear | Tararear con los labios cerrados: mmm | `pal_hum` | nova | Niño con labios cerrados tarareando notas musicales. |
+| Humid | Húmido | Húmedo | Abanicarse | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | hungry | con fame | con hambre | — | `pal_hungry` | composta | Niño con mano en la barriga pensando en comida. |
 | Hurry | Apurarse | Darse prisa | Caminar rápido en el sitio con la cabeza tapada | `pal_hurry` | nova | Niño tapándose la cabeza y caminando rápido bajo la lluvia. |
 | hurt | doer, facer dano | doler, hacer daño | — | `pal_hurt` | banco | Cara con venda en la cabeza mostrando daño o dolor. |
 | Hush | Silencio | Silencio | Poner el dedo en los labios | `pal_hush` | nova | Dedo en los labios pidiendo silencio y calma suave. |
 | Hush, little baby | Shh, bebé | Shh, bebé | Mecer y cantar bajito | `pal_hush_little_baby` | nova | Bebé acunado tranquilo con dedo en los labios y nana suave. |
+| Hushed | Silencioso | Silencioso | Hablar muy bajito | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Hydrated | Ben hidratado | Bien hidratado | Beber y sonreír | `pal_hydrated` | composta | Criatura sonriente y fresca hidratándose con un vaso de agua limpia. |
+| Hypothesis | Hipótese | Hipótesis | Tocar la cabeza y decir «creo que» | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | I am blending yellow and blue because I want to make green. | Estou mesturando amarelo e azul porque quero facer verde. | Estoy mezclando amarillo y azul porque quiero hacer verde. | — | `pal_blending_yellow_blue_green` | composta | Amarillo más azul producen color verde nuevo. |
 | I am not finished yet | Aínda non rematei | Todavía no he terminado | — | `pal_i_am_not_finished_yet` | composta | Trabajo a medio completar junto a reloj de arena en marcha. |
 | I am wet! | Estou mollado! | ¡Estoy mojado! | — | `pal_i_am_wet` | composta | Niño empapado con gotas cayendo alrededor: ¡estoy mojado! |
 | I can blow harder, and so can you. | Eu podo soprar máis forte, e ti tamén. | Yo puedo soplar más fuerte, y tú también. | — | `pal_blow_harder_so_can_you` | composta | Dos niños soplando con igual fuerza. |
+| I can do it! | Podo eu! | ¡Puedo yo! | Levantar los brazos orgulloso | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | I feel better after a hug | Síntome mellor despois dunha aperta | Me siento mejor después de un abrazo | Abrazarse | `pal_i_feel_better_after_a_hug` | composta | Niño sonriendo aliviado y feliz después de darse un abrazo. |
 | I feel happy because we play | Estou contento porque xogamos | Estoy contento porque jugamos | Sonreír y dar palmas | `pal_i_feel_happy_because_we_play` | composta | Dos niños felices jugando juntos a la pelota y dando palmas. |
 | I feel proud of our work | Que orgullo do noso traballo | Qué orgullo de nuestro trabajo | — | `pal_i_feel_proud_of_our_work` | composta | Niño satisfecho mostrando un trabajo terminado con estrella. |
@@ -1376,13 +1646,21 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | I push and it falls. | Empurro e cae. | Empujo y se cae. | — | `pal_i_push_and_it_falls` | composta | Niño empujando un bloque que cae hacia delante. |
 | I put on my boots because it is raining. | Poño as botas porque está chovendo. | Me pongo las botas porque está lloviendo. | Calzarse las botas y señalar la lluvia por la ventana | `pal_boots_because_raining` | composta | Niño calzándose las botas de agua mientras cae la lluvia detrás. |
 | I said the bird had two. | Eu dixen que o paxaro tiña dúas. | Yo dije que el pájaro tenía dos. | — | `pal_paxaro_duas_patas` | nova | Un pájaro de pie sobre sus dos patas, bien visibles. |
+| I see it differently | Eu véxoo doutro xeito | Yo lo veo de otra manera | Girar la mano | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | I suggested painting three colours. | Eu propuxen pintar tres cores. | Yo propuse pintar tres colores. | — | `pal_suggested_painting_3_colours` | composta | Pincel señalando tres franjas de pintura distintas. |
+| I think it will sink | Creo que se afundirá | Creo que se hundirá | Bajar la mano pensando | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| I think so because | Penso iso porque | Pienso eso porque | Tocar la cabeza y explicar | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| I want to be a baker | Quero ser panadeiro | Quiero ser panadero | Amasar pan | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | I wish I had made a longer tube. | Oxalá fixese un tubo máis longo. | Ojalá hubiera hecho un tubo más largo. | — | `pal_longer_tube` | nova | Comparación de un tubo corto arriba frente a un tubo mucho más largo abajo. |
 | I wish it would thunder! | Oxalá trone! | ¡Ojalá truene! | — | `pal_wish_thunder` | composta | Nube con rayo amarillo y ondas sonoras de trueno en el cielo. |
 | I wish we had more rice. | Oxalá tivésemos máis arroz. | Ojalá tuviéramos más arroz. | — | `pal_wish_more_rice` | composta | Cuenco pequeño comparado con un cuenco grande lleno de arroz blanco. |
 | I'm a lion! | Son un león! | ¡Soy un león! | Rugir y sacudir la melena | `pal_i_m_a_lion` | composta | Niño imitando al león con zarpas arriba junto a un león. |
 | I'm a tiger! | Son un tigre! | ¡Soy un tigre! | Poner las garras y reír | `pal_i_m_a_tiger` | composta | Tigre rayado y criatura imitando sus zarpas con alegría. |
+| I'm five and a half! | Teño cinco anos e medio! | ¡Tengo cinco años y medio! | Enseñar cinco dedos y medio | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | I'm hungry | Teño fame | Tengo hambre | Tocarse la barriga y abrir la boca | `pal_i_m_hungry` | nova | Niño tocándose la barriga pensando en comida en un globo sobre la cabeza. |
+| I'm ready for Primary! | Estou listo para Primaria! | ¡Estoy listo para Primaria! | Levantar los brazos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| I'm sorry | Síntoo | Lo siento | Poner la mano en el pecho | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| I'm taller now than in September | Agora son máis alto ca en setembro | Ahora soy más alto que en septiembre | Medir con la mano | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | I'm taller than you! | Son máis alto ca ti! | ¡Soy más alto que tú! | Ponerse de puntillas riendo | `pal_i_m_taller_than_you` | nova | Niño estirado más alto que su compañero con línea comparativa de altura. |
 | Ice cream | Xeado | Helado | Sujetar un cucurucho imaginario con cuidado | `pal_ice_cream` | banco | Helado en cucurucho. |
 | Ice cube | Cubo de xeo | Cubito de hielo | Sostener un cubito de hielo imaginario | `pal_ice_cube` | composta | Cubito cuadrado de hielo frío sostenido sobre las manos. |
@@ -1393,9 +1671,13 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Icy | Xeado | Helado | Temblar como en el hielo | `pal_icy` | nova | Carámbanos afilados de hielo helado colgando sobre placa helada. |
 | Idea | Idea | Idea | Tocar la cabeza y abrir la mano | `pal_idea` | nova | Bombilla encendida brillante sobre la cabeza del niño cuando tiene una idea. |
 | Identical | Idéntico | Idéntico | Juntar las palmas | `pal_identical` | nova | Dos formas exactamente iguales y simétricas una frente a la otra. |
+| Identify | Identificar | Identificar | Nombrar algo tocándolo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | If I had a spoon, I would play. | Se tivese unha culler, tocaría. | Si tuviera una cuchara, tocaría. | — | `pal_spoon_would_play` | composta | Cuchara lista para golpear suavemente el vaso musical. |
+| If I take one away, there are four | Se quito un, quedan catro | Si quito uno, quedan cuatro | Bajar un dedo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| If I touch you, you're it | Se te toco, pillas ti | Si te toco, pillas tú | Tocar y cambiar el papel | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | If I were you, I would flash twice. | Eu no teu lugar, faría dous destellos. | Yo que tú, haría dos destellos. | — | `pal_if_i_were_you_flash_twice` | composta | Linterna haciendo dos destellos seguidos en la oscuridad. |
 | If it climbs the chestnut tree, crawl to the green mat | Se sobe ao castiñeiro, gatea ata a esterilla verde | Si sube al castaño, gatea hasta la colchoneta verde | Escucha condicional y gateo hasta la alfombra verde o la azul. | `pal_climbs_chestnut_green_mat` | composta | Si toca castaño, gatear hasta la colchoneta verde. |
+| If it doesn't work, we try again | Se non funciona, volvemos probar | Si no funciona, volvemos a probar | Hacer y repetir | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | If it had rained, we would have found mud. | Se chovese, atopariamos barro. | Si hubiera llovido, habríamos encontrado barro. | — | `pal_if_rained_mud` | composta | Nube de lluvia cayendo sobre un gran charco marrón de barro. |
 | If it is full, I say stop. | Se está cheo, digo para. | Si está lleno, digo para. | — | `pal_if_it_is_full_i_say_stop` | composta | Vaso completamente lleno junto a señal roja de parar. |
 | If it were empty, it would sound high. | Se estivese baleiro, soaría agudo. | Si estuviera vacío, sonaría agudo. | — | `pal_empty_sound_high` | composta | Vaso vacío produciendo sonido agudo arriba. |
@@ -1412,13 +1694,20 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | If we had put it outside, it would be spinning now. | Se o puxésemos fóra, agora xiraría. | Si lo hubiéramos puesto fuera, ahora estaría girando. | — | `pal_put_outside_spinning` | composta | Molinillo al aire libre en el jardín girando bajo el sol y el viento. |
 | If we had used boots, we would have stayed clean. | Se levásemos botas, quedariamos limpos. | Si hubiéramos llevado botas, nos habríamos quedado limpios. | — | `pal_boots_stayed_clean` | composta | Botas altas sobre charco de barro manteniendo limpios los pies. |
 | If we pick up plastic, fish are safer | Se recollemos o plástico, os peixes están máis seguros | Si recogemos el plástico, los peces están más seguros | Recoger y nadar | `pal_if_we_pick_up_plastic_fish_are_safer` | composta | Recogiendo botella de plástico del mar para que naden seguros los peces. |
+| If you are the king, walk slowly | Se es o rei, camiña amodo | Si eres el rey, camina despacio | Caminar despacio y erguido | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| If you fold it, both halves match | Se o dobras, as dúas metades coinciden | Si lo doblas, las dos mitades coinciden | Doblar y juntar las manos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | If you had blown, it would be turning. | Se soprases, estaría xirando. | Si hubieras soplado, estaría girando. | — | `pal_if_blown_turning` | composta | Cara soplando aire directamente hacia un molinillo de colores que gira. |
 | If you had jumped, it would have splashed. | Se saltases, salpicaría. | Si hubieras saltado, habría salpicado. | — | `pal_jumped_splashed` | composta | Niño saltando sobre un charco azul haciendo saltar gotas de agua alrededor. |
 | If you pour slowly, it won't spill. | Se botas amodo, non se verterá. | Si echas despacio, no se derramará. | — | `pal_pour_slowly_no_spill` | composta | Vertiendo agua despacio sin que se derrame ni una gota. |
 | If you pour, the glass fills. | Se botas, o vaso énchese. | Si echas, el vaso se llena. | — | `pal_pour_glass_fills` | composta | Al verter agua de la jarra, sube el nivel dentro del vaso. |
+| If you roll a six, go again | Se sae un seis, volves tirar | Si sale un seis, vuelves a tirar | Tirar un dado imaginario | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| If you want to talk, raise your hand | Se queres falar, levanta a man | Si quieres hablar, levanta la mano | Levantar la mano antes de hablar | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Igloo | Iglú | Iglú | Hacer una cúpula con los brazos | `pal_igloo` | nova | Iglú blanco construido con bloques de nieve sobre suelo helado. |
 | Illustrate | Ilustrar | Ilustrar | Dibujar en el aire | `pal_illustrate` | composta | Libro abierto ilustrado con dibujos junto a una paleta de colores. |
+| Imaginary | Imaxinario | Imaginario | Mover los dedos mágicos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Imagine long ago | Imaxinar hai moito | Imaginar hace mucho | Cerrar los ojos y pensar | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Imagine the old ships | Imaxina os barcos antigos | Imagina los barcos antiguos | Cerrar los ojos | `pal_imagine_the_old_ships` | composta | Niño imaginando en su nube de pensamiento un barco antiguo de vela. |
+| Imagine | Imaxinar | Imaginar | Cerrar los ojos y sonreír pensando | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | In and out | Dentro e fóra | Dentro y fuera | Meter y sacar el juguete de la caja | `pal_in_and_out` | nova | Pelota entrando y saliendo de una caja abierta con doble flecha. |
 | In my arms | Nos meus brazos | En mis brazos | Coger al bebé en brazos | `pal_in_my_arms` | composta | Persona sosteniendo suavemente al bebé en sus brazos. |
 | In order | En orde | En orden | Poner tres cosas en fila | `pal_in_order` | nova | Tres cubos ordenados en fila creciente de tamaño. |
@@ -1427,20 +1716,31 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | In the bath | No baño | En el baño | Meter un pie y luego el otro en una bañera imaginaria | `pal_in_the_bath` | composta | Bañera blanca llena de espuma donde se entra levantando un pie. |
 | In the morning, the ball rolls. | Pola mañá, a pelota roda. | Por la mañana, la pelota rueda. | — | `pal_in_the_morning_the_ball_rolls` | composta | Por la mañana al salir el sol, la pelota rueda. |
 | In the nest | No niño | En el nido | Hacer un nido con las manos | `pal_in_the_nest` | nova | Tres huevos azules reposando dentro de un nido de ramitas. |
+| In the past, people travelled by boat | Antes, a xente viaxaba en barco | Antes, la gente viajaba en barco | Remar sentados | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | In the pot | Na pota | En la olla | Echar dentro de la olla imaginaria lo que cogimos | `pal_in_the_pot` | nova | Ingredientes cayendo dentro de una olla de cocina. |
 | In the puddle | Na poza | En el charco | Saltar y quedarse dentro | `pal_in_the_puddle` | nova | Niño con las botas justo dentro de un charco azul salpicando agua. |
 | In the sand | Na area | En la arena | Sentarse y dibujar círculos en la arena imaginaria | `pal_in_the_sand` | composta | Niño sentado en la arena dibujando espirales con el dedo. |
 | In the shade | Á sombra | A la sombra | Llevar al bebé a la sombra | `pal_in_the_shade` | composta | Bebé resguardado sobre su mantita en la sombra fresca del árbol. |
 | In the snow | Na neve | En la nieve | Caminar levantando mucho los pies como en la nieve | `pal_in_the_snow` | composta | Niño caminando por la nieve levantando bien los pies. |
 | In the tree | Na árbore | En el árbol | Señalar el árbol | `pal_in_the_tree` | nova | Nido y pajarito posados en lo alto de la copa del árbol señalados. |
+| Include someone | Incluír a alguén | Incluir a alguien | Abrir el círculo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Inclusive | Que inclúe a todos | Que incluye a todos | Abrir el círculo a otro | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Independent learner | Aprendiz autónomo | Aprendiz autónomo | Abrir un libro solo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Independent | Autónomo | Autónomo | Hacer el gesto de «puedo yo» | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Inside is warm | Dentro vai quentiño | Dentro hace calorcito | Abrazarse dentro de casa | `pal_inside_is_warm` | composta | Casita protegida por dentro donde hace calorcito al abrazarse. |
 | Inside out | Do revés | Del revés | Dar la vuelta a una prenda imaginaria | `pal_inside_out` | composta | Camiseta girada mostrando etiqueta y costuras del revés. |
 | Inside the hoop | Dentro do aro | Dentro del aro | Meterse dentro de un aro imaginario en el suelo | `pal_inside_the_hoop` | nova | Niño de pie justo dentro de un aro rojo posado en el suelo. |
+| Intelligent | Intelixente | Inteligente | Tocar la cabeza | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Invent | Inventar | Inventar | Tocar la cabeza y abrir la mano | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Investigate | Investigar | Investigar | Mirar de cerca con atención | `pal_investigate` | composta | Lupa observando de cerca para investigar detalles. |
 | Invite | Convidar | Invitar | Llamar a un amigo con la mano | `pal_invite` | composta | Niño abriendo la mano con gesto amable para invitar a acercarse. |
+| Is ice hot or cold? | O xeo é quente ou frío? | ¿El hielo es caliente o frío? | Temblar respondiendo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Is it cold? | Está fría? | ¿Está fría? | — | `pal_is_it_cold` | composta | Cubito de hielo rodeado de copos fríos. |
 | Is it dry? | Está seca? | ¿Está seca? | — | `pal_is_it_dry` | composta | Toalla seca bajo el sol brillante. |
 | Is it going far? | Está indo lonxe? | ¿Está yendo lejos? | — | `pal_is_it_going_far` | composta | Pelota viajando muy lejos hasta el fondo. |
+| Is it sweet or sour? | É doce ou acedo? | ¿Es dulce o ácido? | Sonreír o arrugar la cara | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Is it the same on both sides? | É igual nos dous lados? | ¿Es igual en los dos lados? | Comparar las manos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Is it warm? | Está quentiño? | ¿Está calentito? | Tocar la taza con cuidado | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Island | Illa | Isla | Sentarse en el centro y abrazarse las rodillas como una isla | `pal_island` | banco | Isla rodeada de mar. |
 | Islands in the sea | Illas no mar | Islas en el mar | Hacer montes con las manos | `pal_islands_in_the_sea` | nova | Varias islas verdes pequeñas repartidas por el mar azul. |
 | It can't be full. | Non pode estar cheo. | No puede estar lleno. | — | `pal_it_can_t_be_full` | composta | Vaso lleno tachado indicando que no puede estar lleno. |
@@ -1448,14 +1748,20 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | It could be empty. | Podería estar baleiro. | Podría estar vacío. | — | `pal_it_could_be_empty` | composta | Vaso transparente sin agua y signo de posibilidad. |
 | It didn't fall, did it? | Non caeu, verdade? | No se cayó, ¿verdad? | — | `pal_didnt_fall` | nova | Torre firme de bloques en pie sobre la mesa observada por un niño: no se cayó. |
 | It falls because it wobbles. | Cae porque se move. | Se cae porque se tambalea. | — | `pal_it_falls_because_it_wobbles` | composta | Torre tambaleándose a ambos lados antes de caer. |
+| It fell down because it was too high | Caeu porque era moi alta | Se cayó porque era muy alta | Dejar caer la torre y explicar con las manos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| It floats because it's light | Flota porque é lixeiro | Flota porque es ligero | Subir las manos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| It goes here | Vai aquí | Va aquí | Dejar el juguete en su sitio | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | It is fair to share | É xusto compartir | Es justo compartir | — | `pal_it_is_fair_to_share` | composta | Reparto justo de la fruta entre dos compañeros. |
 | It is raining hard | Chove con forza | Llueve con fuerza | — | `pal_raining_hard` | composta | Dos nubes descargando mucha lluvia intensa con grandes gotas sobre charco. |
 | It is tall, but it falls. | É alta, pero cae. | Es alta, pero se cae. | — | `pal_it_is_tall_but_it_falls` | composta | Torre alta inclinándose hacia la caída. |
 | It is water. | É auga. | Es agua. | — | `auga` | reutilizada | Vaso con agua clara. |
+| It melts because it's warm | Derrétese porque vai calor | Se derrite porque hace calor | Bajar el cuerpo despacio | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | It must be cold. | Ten que estar frío. | Tiene que estar frío. | — | `pal_it_must_be_cold` | composta | Hielo rodeado de copos señalando frío intenso. |
 | It smells good! | Que ben cheira! | ¡Qué bien huele! | Oler el aire con cara de gusto | `pal_it_smells_good` | composta | Niño oliendo encantado el buen olor que llega de una flor. |
 | It was you who packed it. | Fuches ti quen a fixo. | Fuiste tú quien la hizo. | — | `pal_it_was_you_who_packed_it` | composta | Niño preparando y cerrando su propia maleta. |
 | It will be dry tomorrow. | Mañá estará seca. | Mañana estará seca. | — | `pal_it_will_be_dry_tomorrow` | composta | Toalla tendida secándose al sol radiante de mañana. |
+| It's a deal! | Trato feito! | ¡Trato hecho! | Darse la mano | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| It's a draw! | Empate! | ¡Empate! | Juntar las manos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | It's a star! | É unha estrela! | ¡Es una estrella! | Abrirse como una estrella | `pal_it_s_a_star` | nova | Niño abriendo brazos y piernas en forma de gran estrella dorada. |
 | It's heavy, isn't it? | Pesa, verdade? | Pesa, ¿verdad? | — | `pal_its_heavy_isnt_it` | composta | Niño esforzándose con gotas de sudor mientras levanta una gran piedra pesada. |
 | It's hot! | Que calor! | ¡Qué calor! | Abanicarse con la mano y soplar | `pal_it_s_hot` | composta | Sol intenso dando mucho calor mientras la mano abanica la cara. |
@@ -1463,6 +1769,7 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | It's raining | Chove | Llueve | Mover los dedos de arriba abajo | `pal_it_s_raining` | nova | Nube oscura dejando caer lluvia abundante sobre un charco en el suelo. |
 | It's the books that make it heavy. | Son os libros os que a fan pesada. | Son los libros los que la hacen pesada. | — | `pal_books_make_it_heavy` | composta | Mochila pesando mucho por los libros dentro. |
 | It's time we turned the torch off. | Xa é hora de que apaguemos a lanterna. | Ya es hora de que apaguemos la linterna. | — | `pal_time_turned_torch_off` | composta | Linterna tachada indicando hora de apagarla. |
+| It's you! | Es ti! | ¡Eres tú! | Tocar el pecho del bebé | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | It's your turn to direct | Tócache dirixir | Te toca dirigir | Pasar la claqueta | `pal_it_s_your_turn_to_direct` | composta | Flecha señalando al niño al que le toca dirigir. |
 | Jack-in-the-box | Caixa de sorpresas | Caja sorpresa | Abrir la caja y decir «¡oh!» | `pal_jack_in_the_box` | nova | Caja sorpresa abierta con muelle y muñeco saltando de golpe. |
 | Jelly | Xelatina | Gelatina | Tocar la gelatina que tiembla | `pal_jelly` | nova | Gelatina roja brillante y temblorosa en plato. |
@@ -1474,6 +1781,8 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Joint | Articulación | Articulación | Doblar el codo | `pal_joint` | nova | Brazo doblado rodeando con un círculo la articulación del codo. |
 | Jolly | Divertido | Alegre | Reír mucho con el bebé | `pal_jolly` | composta | Niño muy alegre saltando y riendo al ritmo de la música. |
 | journey | viaxe | viaje | — | `pal_journey` | composta | Mapa del mundo y avión trazando la ruta de un viaje. |
+| Joyful | Ledo | Gozoso | Levantar los brazos contentos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Joyous | Alegre | Gozoso | Saltar contentos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Jug | Xerra | Jarra | Llenar la jarra y vaciarla | `pal_jug` | nova | Jarra azul transparente con asa y pico para verter agua. |
 | Juice box | Zume en brik | Zumo en brik | Sujetar el brik con cuidado | `pal_juice_box` | banco | Brik de zumo de fruta con pajita. |
 | Juice in a cup | Zume no vaso | Zumo en el vaso | Verter zumo en el vaso | `pal_juice_in_a_cup` | composta | Zumo naranja servido en un vaso listo para beber. |
@@ -1494,12 +1803,16 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Jumping | Saltando | Saltando | Dar saltitos rápidos | `pal_jumping` | nova | Niño dando saltitos en el aire sobre el prado con flecha ascendente. |
 | Jungle | Selva | Selva | Apartar hojas con las manos | `pal_jungle` | composta | Selva tropical frondosa con palmera y tigre. |
 | Kangaroo | Canguro | Canguro | Saltar con los pies juntos | `pal_kangaroo` | banco | Canguro saltando con bolsa. |
+| Keep a promise | Cumprir unha promesa | Cumplir una promesa | Poner la mano en el pecho | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Keep in touch | Seguir en contacto | Seguir en contacto | Hacer un teléfono con la mano | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Keep score | Levar os puntos | Llevar los puntos | Contar puntos con los dedos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Keep the beat | Levar o ritmo | Llevar el ritmo | Golpear las piernas al ritmo | `pal_keep_the_beat` | composta | Metrónomo y niño golpeando sus piernas al ritmo constante. |
 | Keep to the path | Seguir o camiño | Seguir el camino | Caminar por la línea | `pal_keep_to_the_path` | nova | Niño caminando con orden justo por encima de la línea del sendero. |
 | Keep warm together | Quentarse xuntos | Calentarse juntos | Apretarse todos | `pal_keep_warm_together` | nova | Dos niños juntos abrigados bajo una misma manta roja cálida. |
 | Keep warm | Manter quente | Mantener caliente | Tapar el huevo con las manos | `pal_keep_warm` | composta | Bufanda abrigada y bebida humeante para mantenerse calentito. |
 | Keep your distance | Garda distancia | Guarda distancia | Estirar el brazo | `pal_keep_your_distance` | nova | Dos niños separados con flechas bidireccionales marcando distancia. |
 | Keep | Gardar | Guardar | Guardar el recuerdo en la caja | `pal_keep` | nova | Osito de juguete guardándose dentro de una caja de madera. |
+| Keepsake | Recordo | Recuerdo | Enseñar un recuerdo pequeño | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Kelp | Laminaria | Laminaria | Moverse ondulando como un alga | `pal_kelp` | nova | Algas laminarias verdes largas ondulando desde el fondo marino. |
 | Kennel | Caseta | Caseta | Hacer un tejado con las manos | `pal_kennel` | nova | Caseta de madera con tejado rojo y puerta arqueada. |
 | Key | Chave | Llave | Meter una llave imaginaria en la cerradura y girarla | `pal_key` | banco | Llave dorada antigua. |
@@ -1508,8 +1821,14 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Kick legs | Patexar | Patalear | Mover las piernas del bebé como en bici | `pal_kick_legs` | nova | Bebé tumbado boca arriba pataleando las piernas en bicicleta. |
 | Kick water | Patexar na auga | Patalear en el agua | Mover las piernas en el agua | `pal_kick_water` | nova | Niño pataleando alegremente dentro del agua salpicando gotitas. |
 | Kick | Dar unha patada | Dar una patada | Dar una patada suave a una pelota imaginaria | `pal_kick` | nova | Niño dando una patada a una pelota en el prado. |
+| Kilo | Quilo | Kilo | Pesar con la mano | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Kind words make people smile | As palabras amables fan sorrir | Las palabras amables hacen sonreír | Sonreír y señalar la boca | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Kind words | Palabras amables | Palabras amables | Sonreír y hablar suave | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Kind | Amable | Amable | Ofrecer algo con una sonrisa | `pal_kind` | composta | Criatura amable ofreciendo una manzana con una sonrisa a su amiga. |
+| Kind-hearted | De bo corazón | De buen corazón | Acariciar el brazo de un amigo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Kindest | O máis amable | El más amable | Sonreír muy grande | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Kindness jar | Bote da bondade | Bote de la bondad | Meter un papel en el bote | `pal_kindness_jar` | nova | Tarro de cristal lleno de corazones de colores simbolizando la bondad. |
+| Kindness | Bondade | Bondad | Hacer un corazón con las manos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | King | Rei | Rey | Caminar erguidos y solemnes como un rey | `pal_king` | composta | Niño caminando recto y erguido con su corona dorada puesta como un rey. |
 | Kiss goodbye | Bicar ao despedirse | Besar al despedirse | Mandar un beso con la mano | `pal_kiss_goodbye` | banco | Beso suave de despedida. |
 | Kiss | Bicar | Besar | Llevarse los dedos a los labios y soltar un beso | `pal_kiss` | composta | Niño llevándose los dedos a los labios y lanzando un beso suave al aire. |
@@ -1528,6 +1847,7 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Knock on the door | Petar na porta | Llamar a la puerta | Golpear tres veces | `pal_knock_on_the_door` | composta | Puerta de madera con ondas de sonido al llamar con los nudillos. |
 | Knock over | Tirar abaixo | Derribar | Derribar la torre y reír | `pal_knock_over` | nova | Torre de bloques derribándose y cayendo por la mesa. |
 | Knock | Petar | Llamar (a la puerta) | Llamar a la calabaza con los nudillos: toc, toc | `pal_knock` | nova | Puño llamando a una puerta de madera con ondas de golpe. |
+| Knock, knock! | Toc, toc! | ¡Toc, toc! | Llamar dos veces en el aire y esperar | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Knuckles | Artellos | Nudillos | Golpear despacio con los nudillos | `pal_knuckles` | composta | Puño cerrado mostrando los nudillos al frente. |
 | Lab coat | Bata de laboratorio | Bata de laboratorio | Abotonar una bata | `pal_lab_coat` | banco | Bata blanca de laboratorio. |
 | Ladder | Escada | Escalera de mano | Subir peldaños en el sitio | `pal_ladder` | banco | Escalera de mano con peldaños. |
@@ -1542,12 +1862,15 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Lantern light | Luz de candil | Luz de candil | Sostener una luz pequeña | `pal_lantern_light` | composta | Luz cálida amarilla irradiando alrededor del farol en la noche. |
 | Lantern | Farol | Farol | Llevar un farol de papel | `pal_lantern` | banco | Farol rojo de papel iluminado para llevar. |
 | Lap | Colo | Regazo | Sentar al bebé en el regazo | `pal_lap` | composta | Bebé sentado cómodamente en el regazo. |
+| Last day | Último día | Último día | Enseñar un dedo y despedirse | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Last week | A semana pasada | La semana pasada | Señalar atrás | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Last | Último, última | Último, última | Ponerse al final de la fila y sonreír | `pal_last` | nova | Fila de tres niños caminando hacia la derecha señalando al último atrás. |
 | Late | Tarde | Tarde | Correr mirando el reloj | `pal_late` | composta | Reloj despertador y niño corriendo deprisa porque llega tarde. |
 | Laugh together | Rir xuntos | Reír juntos | Reír todos | `pal_laugh_together` | nova | Dos amigos riendo juntos muy felices. |
 | Laugh | Rir | Reír | Reír alto con el bebé | `pal_laugh` | nova | Criatura riendo a carcajadas con destellos de alegría alrededor. |
 | Laundry basket | Cesto da roupa | Cesto de la ropa | Llevar el cesto con las dos manos | `pal_laundry_basket` | nova | Cesto trenzado lleno de ropa limpia doblada encima. |
 | Lay down | Deitar | Acostar | Acostar al bebé boca arriba despacio | `pal_lay_down` | nova | Bebé acostado suavemente boca arriba sobre el colchón. |
+| Lazy | Preguiceiro, preguiceira | Perezoso, perezosa | Estirarse muy despacio con un bostezo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Lead the way | Guiar | Guiar | Caminar delante señalando | `pal_lead_the_way` | nova | Niño caminando delante guiando el paso mientras señala el camino. |
 | Leader | Líder | Líder | Ponerse delante y señalar el camino | `pal_leader` | nova | Niño con bandera al frente guiando la fila mientras los demás lo siguen. |
 | Leaf litter | Follaxe caída | Hojarasca | Remover las hojas despacio | `pal_leaf_litter` | nova | Alfombra espesa de hojas secas caídas cubriendo el suelo del bosque. |
@@ -1564,6 +1887,7 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Leap out of the water | Saltar fóra da auga | Saltar fuera del agua | Saltar con los brazos juntos | `pal_leap_out_of_the_water` | composta | Delfín dando un gran salto fuera del mar entre gotas de agua. |
 | Leap | Brincar | Brincar | Dar un brinco largo hacia delante | `pal_leap` | nova | Niño dando un salto largo en arco hacia delante. |
 | Learn to walk | Aprender a camiñar | Aprender a caminar | Dar pasitos inseguros | `pal_learn_to_walk` | nova | Bebé dando sus primeros pasitos inseguros con los brazos abiertos. |
+| Leave only footprints | Deixa só pegadas | Deja solo huellas | Pisar y mirar la huella | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Leaves are falling | Caen as follas | Caen las hojas | Bajar los dedos como hojas | `pal_leaves_are_falling` | composta | Hojas desprendiéndose del árbol y cayendo al suelo. |
 | Leaves on my shoes | Follas nos zapatos | Hojas en los zapatos | Señalar las hojas en los pies | `pal_leaves_on_my_shoes` | nova | Hojas de otoño pegadas encima de los zapatos señaladas con la mano. |
 | Left side | Lado esquerdo | Lado izquierdo | Señalar el lado izquierdo | `pal_left_side` | nova | Panel partido por la mitad con el lado izquierdo resaltado en azul y señalado. |
@@ -1573,15 +1897,28 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Legs | Pernas | Piernas | Darse unas palmadas suaves en las piernas | `pal_legs` | nova | Par de piernas con pantalones cortos y zapatillas señaladas con flechas. |
 | Lemon | Limón | Limón | Hacer rodar un limón imaginario entre las palmas | `pal_lemon` | banco | Limón amarillo brillante. |
 | Lentils | Lentellas | Lentejas | Echar lentejas en un bote | `pal_lentils` | nova | Cuenco blanco lleno de pequeñas lentejas pardas. |
+| Less than three | Menos de tres | Menos de tres | Enseñar dos dedos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Let go | Soltar | Soltar | Abrir la mano y soltar el juguete | `pal_let_go` | composta | Mano abierta dejando caer suavemente una manzana. |
 | Let sand run | Deixar caer area | Dejar caer arena | Abrir la mano y dejar caer arena | `pal_let_sand_run` | nova | Mano abierta dejando escurrirse un chorro fino de granos de arena dorada. |
+| Let's breathe together | Respiremos xuntos | Respiremos juntos | Inspirar juntos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Let's build a bridge! | Imos facer unha ponte! | ¡Vamos a hacer un puente! | Juntar las manos en arco | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Let's build a snowman | Imos facer un boneco de neve | Vamos a hacer un muñeco de nieve | Amasar bolas de nieve imaginarias entre todos | `pal_let_s_build_a_snowman` | composta | Niño construyendo un muñeco de nieve con bolas de nieve. |
+| Let's clean the beach! | Imos limpar a praia! | ¡Vamos a limpiar la playa! | Coger una bolsa | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Let's dance! | Imos bailar! | ¡Vamos a bailar! | Empezar a bailar | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Let's dig! | Imos cavar! | ¡Vamos a cavar! | Cavar con la pala | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Let's find a fair solution | Busquemos unha solución xusta | Busquemos una solución justa | Juntar las manos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Let's find out! | Imos descubrilo! | ¡Vamos a descubrirlo! | Frotarse las manos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Let's get cosy | Imos quentarnos | Vamos a calentarnos | Abrazarse bajo la manta | `pal_let_s_get_cosy` | composta | Niño abrazándose calentito arropado bajo una manta amarilla. |
 | Let's go to the beach! | Imos á praia! | ¡Vamos a la playa! | Coger la mochila imaginaria y caminar contentos | `pal_let_s_go_to_the_beach` | composta | Niño contento con su mochila caminando hacia la playa con sombrilla. |
 | Let's go to the park! | Imos ao parque! | ¡Vamos al parque! | Coger la mano y caminar | `pal_let_s_go_to_the_park` | composta | Dos niños caminando juntos cogidos de la mano rumbo al parque. |
+| Let's make music | Imos facer música | Vamos a hacer música | Repartir instrumentos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Let's parade! | Imos desfilar! | ¡Vamos a desfilar! | Ponerse en fila y marchar | `pal_let_s_parade` | nova | Tres niños en fila marchando alegremente en desfile. |
+| Let's play! | Imos xogar! | ¡Vamos a jugar! | Levantar los brazos y echar a andar juntos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Let's sing! | Imos cantar! | ¡Vamos a cantar! | Abrir los brazos y empezar una canción | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Let's stop to listen. | Paremos para escoitar. | Paremos para escuchar. | — | `pal_stop_to_listen` | composta | Niño quieto llevándose la mano a la oreja para escuchar notas suaves. |
+| Let's try another way | Probemos doutro xeito | Probemos de otra manera | Girar y empezar de nuevo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Let's vote! | Imos votar! | ¡Vamos a votar! | Meter un papel en la urna | `pal_let_s_vote` | nova | Papeleta marcada entrando por la ranura de una urna azul de votación. |
+| Letters and numbers | Letras e números | Letras y números | Dibujar una A y un 1 | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Level | Nivelado | Nivelado | Poner los brazos a la misma altura | `pal_level` | nova | Nivel de burbuja amarillo perfectamente horizontal con la burbuja en el centro. |
 | Library | Biblioteca | Biblioteca | Pasar un libro despacio | `pal_library` | nova | Estantería de biblioteca llena de libros de muchos colores. |
 | Lick a lolly | Lamber o xeado | Lamer el helado | Lamer en el aire | `pal_lick_a_lolly` | nova | Criatura sacando la lengua para lamer un cucurucho de helado. |
@@ -1589,6 +1926,7 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Lie on the grass | Deitarse na herba | Tumbarse en la hierba | Tumbarse y mirar el cielo | `pal_lie_on_the_grass` | composta | Niño tumbado cómodamente mirando al cielo sobre la hierba. |
 | Lie still | Quedar quieto deitado | Quedarse quieto tumbado | Tumbarse sin moverse | `pal_lie_still` | nova | Niño tumbado totalmente quieto sobre una esterilla. |
 | Life jacket | Chaleco salvavidas | Chaleco salvavidas | Ponerse un chaleco imaginario | `pal_life_jacket` | nova | Chaleco salvavidas naranja con dos cintas negras y hebillas. |
+| Life story | Historia de vida | Historia de vida | Mover la mano de atrás a adelante | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Lift a log | Levantar un tronco | Levantar un tronco | Levantar un tronco con cuidado | `pal_lift_a_log` | nova | Niño levantando un tronco de madera grueso con las dos manos. |
 | Lift head | Levantar a cabeza | Levantar la cabeza | Animar al bebé a levantar la cabeza boca abajo | `pal_lift_head` | nova | Bebé boca abajo apoyado en antebrazos levantando la cabeza con flecha hacia arriba. |
 | Lift up | Levantar | Levantar | Levantar una caja como la grúa | `pal_lift_up` | composta | Objeto pesado levantado hacia lo alto. |
@@ -1598,7 +1936,10 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Light steps | Pasos lixeiros | Pasos ligeros | Pisar muy suave | `pal_light_steps` | composta | Pluma ligera indicando pisadas muy suaves sin apenas ruido. |
 | Light up | Iluminar | Iluminar | Abrir las manos de golpe | `pal_light_up` | nova | Linterna encendiéndose de golpe para iluminar la oscuridad. |
 | Light | Luz | Luz | Abrir de golpe las manos como una luz que se enciende | `pal_light` | composta | Bombilla encendida irradiando luz amarilla brillante. |
+| Lighter in weight | Máis lixeiro | Más ligero | Subir la mano que pesa menos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Lighter than water | Máis lixeiro ca a auga | Más ligero que el agua | Subir la mano | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Lighter | Máis claro | Más claro | Señalar la hoja más clara | `pal_lighter` | nova | Dos hojas comparadas señalando la de tono verde más claro. |
+| Lightest | O máis lixeiro | El más ligero | Subir el brazo al máximo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Lighthouse | Faro | Faro | Girar la cabeza despacio con una mano en la frente como una luz | `pal_lighthouse` | banco | Faro rayado con luz en lo alto. |
 | Lightning | Lóstrego | Relámpago | Dibujar un zigzag en el aire | `pal_lightning` | banco | Nube oscura descargando un rayo amarillo de relámpago. |
 | Lights in the dark | Luces na escuridade | Luces en la oscuridad | Abrir las manos en una sala oscura | `pal_lights_in_the_dark` | nova | Guirnalda de bombillas luminosas encendidas en una sala muy oscura. |
@@ -1609,6 +1950,7 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Lightweight | Leviño | Ligerito | Levantar la pelota con un dedo | `pal_lightweight` | nova | Balanza inclinada donde una pluma blanca sube ligera frente a una piedra. |
 | Like a cat | Coma un gato | Como un gato | Estirarse en el suelo como un gato al despertar | `pal_like_a_cat` | composta | Gato estirando el lomo y niño estirándose en el suelo como él. |
 | Line them up | Poñelos en fila | Ponerlos en fila | Poner los tesoros en fila | `pal_line_them_up` | nova | Cuatro bloques de colores colocados perfectamente en fila recta. |
+| Line up at the bell | Poñerse en fila ao timbre | Ponerse en fila al timbre | Ponerse en fila | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Line up by size | Aliñar por tamaño | Alinear por tamaño | Ponerse del más bajo al más alto | `pal_line_up_by_size` | nova | Cuatro bloques ordenados en fila creciente de pequeño a grande. |
 | Line up | Poñerse en fila | Ponerse en fila | Ponerse uno detrás de otro | `pal_line_up` | nova | Niños poniéndose en fila con flecha de alineación. |
 | Line | Liña | Línea | Ponerse en línea, una criatura detrás de otra | `pal_line` | nova | Tres niños en línea recta uno detrás de otro. |
@@ -1619,34 +1961,44 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Listen to the crunch | Escoita como renxe | Escucha cómo cruje | Pisar y llevar la mano a la oreja | `pal_listen_to_the_crunch` | composta | Zapato pisando hoja seca con ondas sonoras del crujido. |
 | Listen to the woodpecker | Escoita o peto | Escucha al pájaro carpintero | Golpear con el dedo y escuchar | `pal_listen_to_the_woodpecker` | composta | Pájaro picoteando el tronco del árbol con ondas de sonido. |
 | Listen with a hand to the ear | Escoitar coa man na orella | Escuchar con la mano en la oreja | Llevar la mano a la oreja | `pal_listen_with_a_hand_to_the_ear` | nova | Niño escuchando atento con la mano llevada a la oreja. |
+| Listen with your eyes closed | Pecha os ollos e escoita | Cierra los ojos y escucha | Cerrar los ojos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Listen | Escoitar | Escuchar | Llevarse la mano a la oreja y quedarse en silencio | `pal_listen` | nova | Niño escuchando en silencio con la mano junto a la oreja. |
+| Listen, what's that? | Escoita, que é iso? | Escucha, ¿qué es eso? | Parar y llevar la mano a la oreja | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Listening tube | Tubo para escoitar | Tubo para escuchar | Escuchar el pecho de un amigo con un tubo de cartón | `pal_listening_tube` | nova | Dos niños usando un tubo de cartón para escuchar el latido del pecho. |
 | Litter | Lixo | Basura | Coger basura del suelo | `pal_litter` | composta | Residuos en el suelo del parque con niño agachándose a recoger la basura. |
 | Little finger | Dedo meniñeiro | Meñique | Enganchar el meñique | `pal_little_finger` | nova | Mano abierta señalando con una flecha el dedo meñique. |
 | Little fish swimming under the sea! | Peixiños nadando baixo o mar! | ¡Pececitos nadando bajo el mar! | Dos niños designados gatean rápido por debajo de la tela. | `pal_little_fish_under_sea` | composta | Varios pececitos nadando juntos bajo las olas del mar. |
 | Little fish | Peixiño | Pececito | Mover la mano como un pececito | `pal_little_fish` | banco | Pececito de colores. |
+| Little pig, let me in! | Porquiño, déixame entrar! | ¡Cerdito, déjame entrar! | Llamar a la puerta | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Little seed, sleep | Semente, durme | Semillita, duerme | Encoger el cuerpo como una semilla | `pal_little_seed_sleep` | composta | Niño encogido en ovillo en el suelo como una semillita dormida bajo la luna. |
 | Little | Pequeniño, pequeniña | Pequeñito, pequeñita | Juntar el pulgar y el índice dejando un hueco pequeño | `pal_little` | nova | Dedos pulgar e índice haciendo el gesto de tamaño muy pequeño sobre una bolita. |
+| Lively | Animado | Animado | Bailar con energía | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Load | Cargar | Cargar | Meter cajas imaginarias | `pal_load` | nova | Carretilla verde cargándose con cajas de madera desde arriba. |
 | Log | Tronco caído | Tronco caído | Caminar por encima de un tronco | `pal_log` | nova | Tronco caído marrón en el suelo con niño caminando por encima en equilibrio. |
 | Long | Longo, longa | Largo, larga | Separar mucho las manos para mostrar algo largo | `pal_long` | nova | Serpiente verde muy larga extendida de lado a lado con flecha de longitud. |
+| Long, long ago | Hai moito, moito tempo | Hace mucho, mucho tiempo | Señalar muy atrás | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Long-legged | De patas longas | De patas largas | Estirar los dedos | `pal_long_legged` | nova | Flamenco de patas muy largas y delgadas de pie en la orilla. |
 | Longer | Máis longo | Más largo | Separar mucho las manos | `pal_longer` | nova | Comparación de dos lápices: el azul inferior es claramente más largo. |
 | Longest night | A noite máis longa | La noche más larga | Separar mucho las manos | `pal_longest_night` | composta | Noche invernal larga y oscura llena de estrellas y luna creciente. |
 | Look after animals | Coidar animais | Cuidar animales | Acariciar y dar de comer | `pal_look_after_animals` | composta | Niño cuidando al perrito acariciándole el lomo junto a su plato de comida. |
+| Look after | Coidar de | Cuidar de | Tapar algo con las manos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Look at all the lights! | Mira cantas luces! | ¡Mira cuántas luces! | Abrir los brazos admirados | `pal_look_at_all_the_lights` | composta | Guirnalda de bombillas de colores encendidas en la noche admirada con brazos abiertos. |
 | Look at it! | Mírao! | ¡Míralo! | — | `pal_look_at_it` | composta | Ojos mirando atentamente justo hacia el objeto. |
+| Look at me! | Mírame! | ¡Mírame! | Señalarse los ojos y luego al grupo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Look at old photos | Mirar fotos vellas | Mirar fotos viejas | Pasar hojas de un álbum | `pal_look_at_old_photos` | nova | Álbum abierto con fotografías antiguas en blanco y negro. |
+| Look at one spot | Mira un punto | Mira un punto | Mirar un punto fijo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Look at the card and copy the shape | Mira a tarxeta e copia a forma | Mira la tarjeta y copia la forma | Lectura de la tarjeta icónica y reproducción corporal de la postura. | `pal_look_card_copy_shape` | composta | Tarjeta modelo con triángulo y figura copiada igual. |
 | Look at the ducks! | Mira os patos! | ¡Mira los patos! | Señalar los patos | `pal_look_at_the_ducks` | nova | Niño junto al estanque señalando hacia los patos nadando. |
 | Look at the lights | Mira as luces | Mira las luces | Señalar las luces al bebé | `pal_look_at_the_lights` | nova | Bebé mirando hacia arriba y señalando las luces encendidas de colores. |
 | Look at the stone closely. | Mira a pedra de preto. | Mira la piedra de cerca. | — | `pal_look_stone_closely` | composta | Lupa acercándose mucho a una piedra gris sobre la mesa: mirar de cerca. |
 | Look at this! | Mira isto! | ¡Mira esto! | — | `pal_look_at_this` | composta | Niño señalando con entusiasmo un objeto para mirarlo. |
+| Look back on | Lembrar | Recordar | Mirar atrás sonriendo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Look back | Mirar atrás | Mirar atrás | Mirar las fotos del curso | `pal_look_back` | nova | Niño volviendo la cabeza para mirar hacia atrás al camino recorrido. |
 | Look behind you! | Mira detrás de ti! | ¡Mira detrás de ti! | Señalar detrás | `pal_look_behind_you` | nova | Niño girando la cabeza para mirar detrás donde señala una flecha. |
 | Look closely | Mirar de preto | Mirar de cerca | Acercar la lupa | `pal_look_closely` | nova | Ojo mirando muy de cerca una hoja a través de una lupa grande. |
 | Look for a hair. | Busca un pelo. | Busca un pelo. | — | `pal_look_for_hair` | composta | Lupa enfocando de cerca un pelo suelto ondulado sobre la superficie. |
 | Look for patterns | Buscar patróns | Buscar patrones | Mirar alrededor con la lupa | `pal_look_for_patterns` | nova | Lupa inspeccionando una serie repetida de círculo rojo y cuadrado azul. |
+| Look forward | Ter ganas | Tener ganas | Mirar adelante sonriendo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Look how high it flies! | Mira que alto voa! | ¡Mira qué alto vuela! | Señalar muy alto | `pal_look_how_high_it_flies` | nova | Niño mirando al cielo y señalando un pájaro volando muy alto. |
 | Look into the distance | Mirar ao lonxe | Mirar a lo lejos | Mirar con la mano en la frente | `pal_look_into_the_distance` | nova | Niño con la mano sobre la frente mirando lejos hacia las montañas. |
 | Look left, look right | Mira á esquerda, mira á dereita | Mira a la izquierda, mira a la derecha | Mirar a los dos lados | `pal_look_left_look_right` | nova | Niño antes del paso de cebra mirando a izquierda y derecha. |
@@ -1654,9 +2006,11 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Look outside! | Mira fóra! | ¡Mira fuera! | — | `pal_look_outside` | composta | Niño mirando hacia fuera a través de una ventana abierta al sol y los árboles. |
 | Look through binoculars | Mirar cos prismáticos | Mirar con los prismáticos | Hacer prismáticos con las manos | `pal_look_through_binoculars` | nova | Niño mirando a lo lejos a través de unos prismáticos negros. |
 | Look through the binoculars | Mira polos prismáticos | Mira por los prismáticos | Llevar las manos a los ojos | `pal_look_through_the_binoculars` | composta | Criatura mirando a lo lejos con unos prismáticos delante de los ojos. |
+| Look through the tube! | Mira polo tubo! | ¡Mira por el tubo! | Mirar por el tubo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Look through | Mirar a través | Mirar a través | Mirar por el tubo | `pal_look_through` | nova | Ojo asomado mirando a través de un tubo hueco. |
 | Look under the log | Mira debaixo do tronco | Mira debajo del tronco | Levantar y mirar | `pal_look_under_the_log` | nova | Tronco ligeramente levantado para mirar los bichitos que viven debajo. |
 | Look up | Mirar arriba | Mirar arriba | Levantar la cabeza y mirar al cielo | `pal_look_up` | nova | Niño levantando la cabeza para mirar arriba hacia el cielo. |
+| Look what I found! | Mira o que atopei! | ¡Mira lo que encontré! | Abrir la mano con el tesoro | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Look | Mirar | Mirar | Hacer gafas con los dedos y mirar alrededor | `pal_look` | nova | Niño formando gafas con sus manos sobre los ojos mirando atento. |
 | Look, a butterfly! | Mira, unha bolboreta! | ¡Mira, una mariposa! | Señalar arriba con sorpresa y seguir el vuelo | `pal_look_a_butterfly` | composta | Niño señalando con sorpresa una mariposa volando arriba. |
 | Look, a rainbow! | Mira, un arco da vella! | ¡Mira, un arcoíris! | Señalar el cielo | `pal_look_a_rainbow` | nova | Niño señalando emocionado un arcoíris completo en el cielo. |
@@ -1667,12 +2021,16 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Loose | Solto | Suelto | Soltar los brazos | `pal_loose` | nova | Cinta roja muy floja y suelta alrededor de un poste de madera. |
 | Lopsided | Torto | Torcido | Inclinarse de un lado | `pal_lopsided` | nova | Torre de bloques claramente torcida e inclinada hacia un lado. |
 | Lorry | Camión | Camión | Conducir un volante grande | `pal_lorry` | banco | Camión grande articulado de carga. |
+| Lose | Perder | Perder | Encoger los hombros y sonreír | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Lost | Perdido | Perdido | Mirar alrededor sin saber | `pal_lost` | nova | Niño detenido en un cruce de caminos buscando la dirección correcta. |
 | Lotion | Crema hidratante | Crema hidratante | Extender la crema con las manos | `pal_lotion` | banco | Bote de crema hidratante con dosificador. |
 | Loud and soft | Forte e suave | Fuerte y suave | Golpear fuerte y luego suave | `pal_loud_and_soft` | nova | Golpe fuerte con ondas sonoras grandes frente a toque suave con onda pequeña. |
 | Loud bells! Shake fast! | Campás fortes! Abanea rápido! | ¡Campanas fuertes! ¡Agita rápido! | Correr en el sitio haciendo sonar la campanilla. | `pal_loud_bells_shake_fast` | composta | Campanas agitándose muy rápido haciendo mucho ruido. |
 | Loud | Forte (son) | Fuerte (sonido) | Dar palmadas con fuerza y luego parar | `pal_loud` | composta | Ondas sonoras muy grandes representando un sonido fuerte. |
 | Loud, then quiet | Forte e logo suave | Fuerte y luego suave | Golpear fuerte las piernas y luego muy suave | `pal_loud_then_quiet` | nova | Golpe fuerte en las piernas seguido de gesto suave y silencioso. |
+| Loudest | O máis forte | El más fuerte | Cantar muy fuerte | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Lovely | Precioso, preciosa | Precioso, preciosa | Juntar las manos en el pecho y suspirar | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Loving | Agarimoso | Cariñoso | Apretar suave al bebé contra el pecho | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Low | Grave | Grave | Bajar la mano al cantar una nota grave | `pal_low` | composta | Ondas lentas abajo y flecha hacia sonido grave/bajo. |
 | Lukewarm | Morno | Templado | Tocar el agua con el codo | `pal_lukewarm` | nova | Agua templada probada con cuidado metiendo la punta del codo. |
 | Lullaby | Canción de berce | Nana | Cantar una nana bajito | `pal_lullaby` | composta | Bebé dormido bajo la luna entre notas suaves de nana. |
@@ -1681,12 +2039,19 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Lunchbox | Fiambreira | Fiambrera | Abrir y cerrar la fiambrera | `pal_lunchbox` | nova | Fiambrera roja abierta dejando ver el bocadillo y la fruta en su interior. |
 | Lunge | Dar unha zancada | Dar una zancada | Avanzar una pierna y doblarla | `pal_lunge` | nova | Niño haciendo una zancada profunda con una pierna flexionada adelante. |
 | Lungs | Pulmóns | Pulmones | Inflar el pecho de aire | `pal_lungs` | banco | Pulmones rosados ilustrados. |
+| Magic | Máxico, máxica | Mágico, mágica | Mover una varita imaginaria en el aire | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Magical | Máxico | Mágico | Abrir los dedos de golpe | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Magnifying glass | Lupa | Lupa | Mirar a través de una lupa | `pal_magnifying_glass` | banco | Lupa con lente transparente. |
+| Majority | Maioría | Mayoría | Contar manos levantadas | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Make a card | Facer unha postal | Hacer una postal | Doblar un papel | `pal_make_a_card` | nova | Postal de cartulina doblada con un corazón dibujado y lápiz. |
 | Make a circle | Facede un círculo | Haced un círculo | Darse las manos y formar un círculo entre todos | `pal_make_a_circle` | nova | Cuatro niños cogidos de la mano formando un círculo completo en el prado. |
+| Make a deal | Facer un trato | Hacer un trato | Darse la mano y asentir | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Make a resolution | Facer un propósito | Hacer un propósito | Poner la mano en el pecho | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Make a shape | Facer unha forma | Hacer una forma | Hacer una forma con el cuerpo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Make a wish on a star | Pide un desexo a unha estrela | Pide un deseo a una estrella | Cerrar los ojos y sonreír | `pal_make_a_wish_on_a_star` | composta | Niño mirando una estrella fugaz en el cielo nocturno. |
 | Make a wish! | Pide un desexo! | ¡Pide un deseo! | Soplar el diente de león | `pal_make_a_wish` | composta | Pedir un deseo soplando el diente de león bajo una estrella brillante. |
 | Make faces | Facer carantoñas | Hacer muecas | Hacer caras divertidas en el espejo | `pal_make_faces` | composta | Caras divertidas haciendo muecas juguetonas. |
+| Make up | Facer as paces | Hacer las paces | Darse la mano | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Make your pattern: clap, jump, tap | Fai a túa serie: palma, salto, golpe | Haz tu serie: palmada, salto, golpe | Creación y ejecución de una secuencia propia de tres movimientos. | `pal_pattern_clap_jump_tap` | composta | Serie de tres acciones: palma, salto, toque. |
 | make | facer | hacer | — | `pal_make` | composta | Manos juntando y construyendo piezas de colores. |
 | Mane | Melena | Melena | Agitar el pelo como un león | `pal_mane` | nova | Melena espesa y dorada de león agitándose con el movimiento. |
@@ -1725,14 +2090,21 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Measure | Medir | Medir | Medir con los palmos | `pal_measure` | nova | Regla graduada midiendo la longitud exacta de una tabla de madera. |
 | Measuring cup | Vaso medidor | Vaso medidor | Llenar hasta la raya | `pal_measuring_cup` | nova | Jarra medidora transparente con escala lateral llena hasta la mitad. |
 | Meet the sea | Chegar ao mar | Llegar al mar | Juntar las manos | `pal_meet_the_sea` | composta | Niño llegando por la orilla del prado hasta encontrarse con las olas del mar. |
+| Melody | Melodía | Melodía | Mover la mano subiendo y bajando | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Melon | Melón | Melón | Tocar la corteza del melón | `pal_melon` | banco | Melón verde redondo. |
 | Melt | Derreterse | Derretirse | Derretirse despacio hasta quedar tumbados | `pal_melt` | nova | Cubito de hielo derritiéndose en un charco de agua bajo el sol. |
 | Melted water | Auga derretida | Agua derretida | Abrir las manos como agua que escurre | `pal_melted_water` | composta | Cubito de hielo derritiéndose hasta convertirse en charco de agua líquida. |
+| Melty | Derretido | Derretido | Dejarse caer despacio | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Memorable | Memorable | Memorable | Abrir mucho los ojos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Memory box | Caixa dos recordos | Caja de los recuerdos | Guardar un dibujo en la caja | `vocab_56` | reutilizada | Caja de tesoros y recuerdos del set propio. |
 | Memory lane | Camiño dos recordos | Camino de los recuerdos | Caminar mirando atrás | `pal_memory_lane` | composta | Camino lleno de fotos y recuerdos del curso. |
+| Memory | Recordo | Recuerdo | Tocar la cabeza sonriendo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Mend | Arranxar | Arreglar | Unir dos piezas | `pal_mend` | nova | Prenda azul reparada con un parche naranja cosido y aguja. |
 | Meow! | Miau! | ¡Miau! | Hacer bigotes con los dedos y decir «miau» | `pal_meow` | composta | Gato maullando suavemente con ondas de sonido. |
+| Merry and bright | Alegre e brillante | Alegre y brillante | Dar palmas y abrir las manos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Merry Christmas! | Bo Nadal! | ¡Feliz Navidad! | Abrir los brazos y desear feliz Navidad al grupo | `pal_merry_christmas` | composta | Árbol de Navidad iluminado y niño con los brazos abiertos deseando alegría. |
+| Merry tune | Melodía alegre | Melodía alegre | Tararear una melodía alegre | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Merry | Festivo | Festivo | Bailar con el bebé en el regazo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Merry-go-round | Carrusel | Tiovivo | Girar en círculo con las manos estiradas | `pal_merry_go_round` | banco | Caballito giratorio de tiovivo. |
 | Messy | Desordenado, desordenada | Desordenado, desordenada | Mover las manos hacia todos lados como un remolino | `pal_messy` | nova | Juguetes, papeles y ceras esparcidos y torcidos en desorden. |
 | Metronome | Metrónomo | Metrónomo | Mover el brazo como un metrónomo | `pal_metronome` | nova | Metrónomo de madera con varilla oscilando rítmicamente de lado a lado. |
@@ -1740,6 +2112,8 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Microphone | Micrófono | Micrófono | Sostener un micro imaginario | `pal_microphone` | banco | Micrófono de mano. |
 | Microplastic | Microplástico | Microplástico | Juntar dos dedos muy poco | `pal_microplastic` | composta | Lupa observando diminutos trocitos de microplástico de colores en el agua. |
 | Middle | Medio | Mitad | Señalar el centro | `pal_middle` | nova | Pieza central señalada en mitad de otras dos. |
+| Mighty | Poderoso | Poderoso | Poner los brazos fuertes | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Mild | Suave | Suave | Mover la cabeza tranquilos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Milestone | Fito | Hito | Poner una piedra en el camino | `pal_milestone` | nova | Hito de piedra blanco con base roja señalando un punto del camino. |
 | Milk | Leite | Leche | Beber un vaso de leche imaginario y limpiarse el bigote | `pal_milk` | banco | Vaso lleno de leche blanca fresca. |
 | Minty | De menta | De menta | Soplar aliento fresco | `pal_minty` | composta | Hojitas verdes de menta con aire fresco y aroma limpio. |
@@ -1747,6 +2121,9 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Mirror check | Mirada ao espello | Mirada al espejo | Mirarse en el espejo | `pal_mirror_check` | nova | Espejo ovalado donde se refleja el rostro para mirarse. |
 | Mirror line | Eixe de simetría | Eje de simetría | Trazar una línea en el medio | `pal_mirror_line` | nova | Mariposa simétrica dividida por una línea vertical discontinua en el centro. |
 | Mirror | Espello | Espejo | Mirarse en un espejo imaginario y sonreír | `pal_mirror` | banco | Espejo de mano ovalado. |
+| Mirrored | Reflectido | Reflejado | Copiar un gesto al revés | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Miss | Botar de menos | Echar de menos | Abrazarse a uno mismo pensando en alguien | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Mission | Misión | Misión | Señalar un objetivo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Misty | Neboento | Brumoso | Mover las manos como niebla | `pal_misty` | nova | Bandas densas de bruma flotando sobre las colinas verdes. |
 | Mittens | Manoplas | Manoplas | Poner las manoplas al bebé | `pal_mittens` | banco | Manoplas cálidas de invierno. |
 | Mix colours | Mesturar cores | Mezclar colores | Remover con el dedo | `pal_mix_colours` | nova | Pintura azul y amarilla mezclándose en el centro en verde brillante. |
@@ -1754,17 +2131,22 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Mmm, chestnuts! | Mmm, castañas! | ¡Mmm, castañas! | Tocar la barriga contentos | `pal_mmm_chestnuts` | nova | Plato lleno de castañas asadas junto a niño feliz tocándose la barriga. |
 | Mmm, orange! | Mmm, laranxa! | ¡Mmm, naranja! | Oler la naranja y sonreír | `pal_mmm_orange` | composta | Naranja fresca con aroma cítrico hacia niño contento. |
 | Mobile | Móbil de berce | Móvil de cuna | Hacer girar el móvil de la cuna | `pal_mobile` | nova | Móvil infantil de cuna con colgantes de colores girando arriba. |
+| Modern | Moderno | Moderno | Estirarse alto como un edificio | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Monkey | Mono | Mono | Dar saltitos con las manos en las axilas | `pal_monkey` | banco | Mono marrón con cola larga. |
 | Month | Mes | Mes | Señalar un mes | `pal_month` | nova | Hoja mensual completa de calendario señalada en la pared. |
 | Moo! | Muuu! | ¡Muuu! | Hacer cuernos con los dedos y decir «muuu» | `pal_moo` | composta | Vaca mugiendo en el prado con ondas sonoras visibles. |
 | Mood meter | Termómetro das emocións | Termómetro de las emociones | Subir y bajar el brazo | `pal_mood_meter` | nova | Panel de cuatro cuadrantes de colores de emociones con marcador circular. |
+| Mood | Estado de ánimo | Estado de ánimo | Mover la mano arriba y abajo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Moon | Lúa | Luna | Dibujar una luna redonda en el aire | `pal_moon` | banco | Luna llena amarilla y redonda brillando en la noche. |
 | Moonlight | Luz da lúa | Luz de la luna | Mover las manos despacio y suave | `pal_moonlight` | nova | Media luna nocturna bañando las colinas con un haz de luz pálida. |
 | More juice in my cup. | Máis zume na miña cunca. | Más zumo en mi taza. | — | `pal_more_juice_in_my_cup` | composta | Más zumo subiendo de nivel dentro del vaso. |
+| More than five | Máis de cinco | Más de cinco | Enseñar cinco dedos y uno más | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | More, please | Máis, por favor | Más, por favor | Juntar las puntas de los dedos de las dos manos | `pal_more_please` | composta | Vaso medio vacío pidiendo un poco más de forma amable. |
 | Morning | Mañá | Mañana | Desperezarse y abrir los ojos despacio | `pal_morning` | nova | Amanecer luminoso de mañana con el sol saliendo y niño desperezándose. |
 | Mosaic | Mosaico | Mosaico | Poner piezas una al lado de otra | `pal_mosaic` | nova | Mosaico de teselas cuadradas de colores variados. |
 | Moss | Musgo | Musgo | Acariciar el musgo con el bebé | `pal_moss` | composta | Capa verde esponjosa de musgo cubriendo una piedra. |
+| Most crabs walk sideways, but the spider crab walks forwards | A maioría dos cangrexos camiña de lado, pero a centola camiña cara adiante | La mayoría de los cangrejos camina de lado, pero la centolla camina hacia delante | Caminar de lado y después hacia delante | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Most of us chose the park | A maioría escollemos o parque | La mayoría elegimos el parque | Contar manos y señalar | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Most | O que máis | El que más | Señalar el grupo grande | `pal_most` | nova | Tres grupos de piezas con el dedo señalando claramente el grupo con más. |
 | Mother bird | Mamá paxaro | Mamá pájaro | Abrir los brazos como alas que protegen | `pal_mother_bird` | composta | Mamá pájaro protegiendo su nido con los brazos extendidos como alas. |
 | Motionless | Inmóbil | Inmóvil | Quedarse sin moverse | `pal_motionless` | nova | Niño quieto completamente erguido y recto entre dos líneas fijas: inmóvil. |
@@ -1775,6 +2157,7 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Mouth | Boca | Boca | Abrir y cerrar la boca despacio | `pal_mouth` | banco | Boca roja entreabierta. |
 | Move forward | Avanzar | Avanzar | Dar un paso adelante | `pal_move_forward` | nova | Niño caminando hacia delante siguiendo una gran flecha verde. |
 | Move like a robot | Moverse coma un robot | Moverse como un robot | Mover los brazos a golpes | `pal_move_like_a_robot` | nova | Niño moviendo brazos rígidos en ángulo recto como un robot de juguete. |
+| Much taller | Moito máis alto | Mucho más alto | Estirarse mucho | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Mud | Lama | Barro | Pisar despacio como si los pies se pegaran al barro | `pal_mud` | nova | Charco de barro marrón con niño pisando despacio con dificultad. |
 | Muddy bank | Beira lamacenta | Orilla embarrada | Pisar con cuidado | `pal_muddy_bank` | nova | Orilla de barro junto al agua con niño caminando despacio por el borde. |
 | Muddy pig | Porco lamacento | Cerdo embarrado | Palmear las manos como en el barro | `pal_muddy_pig` | nova | Cerdito rosa con manchas marrones chapoteando en un charco de barro. |
@@ -1790,6 +2173,7 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Museum | Museo | Museo | Caminar despacio mirando | `pal_museum` | composta | Edificio clásico de museo y niño paseando despacio observando. |
 | Mushroom | Cogomelo | Seta | Poner las manos en forma de sombrero sobre la cabeza | `pal_mushroom` | banco | Seta roja con lunares blancos. |
 | Mushy peach | Pexego brando | Melocotón blando | Chafar un melocotón maduro | `pal_mushy_peach` | nova | Melocotón maduro aplastado y blando soltando gotas dulces. |
+| Mushy | Esmagado | Machacado | Machacar la castaña con un tenedor | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Music box | Caixa de música | Caja de música | Dar cuerda a la caja de música | `pal_music_box` | nova | Caja de música de madera abierta con manivela lateral y notas musicales. |
 | Music | Música | Música | Mover la cabeza al pulso de la música | `pal_music` | composta | Notas musicales junto a auriculares. |
 | Musical chairs | Xogo das cadeiras | Juego de las sillas | Caminar alrededor de las sillas | `pal_musical_chairs` | composta | Silla en el centro con notas musicales y niño caminando alrededor. |
@@ -1799,13 +2183,18 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Mussel | Mexillón | Mejillón | Abrir y cerrar las palmas juntas como un mejillón | `pal_mussel` | nova | Concha bivalva de mejillón azul oscuro abriéndose y cerrándose como dos palmas. |
 | Mussels grow on ropes under the raft | Os mexillóns medran nas cordas baixo a batea | Los mejillones crecen en las cuerdas bajo la batea | Bajar los dedos | `pal_mussels_grow_on_ropes_under_the_raft` | nova | Batea gallega flotando en el mar con cuerdas llenas de mejillones bajo el agua. |
 | My face is turned upside down. | A miña cara vólvese do revés. | Mi cara se pone del revés. | — | `pal_face_upside_down` | composta | Cara reflejada cabeza abajo junto a cuchara. |
+| My favourite day was the beach | O meu día favorito foi a praia | Mi día favorito fue la playa | Señalar el mar | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| My grandma is older than my mum | A miña avoa é maior ca a miña nai | Mi abuela es mayor que mi madre | Señalar alto y menos alto | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | My torch. | A miña lanterna. | Mi linterna. | — | `pal_my_torch` | banco | Mi linterna encendida. |
 | My turn | A miña quenda | Mi turno | — | `pal_my_turn` | composta | Flecha apuntando hacia el propio niño indicando su turno. |
+| My turn, your turn | A miña vez, a túa vez | Mi turno, tu turno | Tocar la propia nariz y la del bebé | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Mysterious | Misterioso | Misterioso | Caminar despacio y mirar a los lados | `pal_mysterious` | composta | Niño en ambiente nocturno mirando atento con lupa a los lados: misterioso. |
 | Mystery bag | Bolsa misteriosa | Bolsa misteriosa | Meter la mano sin mirar | `pal_mystery_bag` | nova | Bolsa cerrada opaca con interrogación misteriosa. |
 | Nail brush | Cepillo de unllas | Cepillo de uñas | Frotar las uñas con el cepillo | `pal_nail_brush` | nova | Cepillo de madera con cerdas frotando limpiamente las uñas de la mano. |
 | Nails | Unllas | Uñas | Mirarse las uñas con los dedos estirados | `pal_nails` | nova | Mano abierta mostrando las uñas de los dedos limpias y resaltadas. |
+| Name a feeling | Nomear un sentimento | Nombrar un sentimiento | Señalar una cara | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Name tag | Etiqueta do nome | Etiqueta del nombre | Señalar la etiqueta con el nombre | `pal_name_tag` | nova | Etiqueta de identificación sin texto con franjas limpias señalada. |
+| Name | Nome | Nombre | Poner la mano en el pecho al decir el propio nombre | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Nanny | Coidadora | Cuidadora | Señalar a la persona que cuida | `pal_nanny` | nova | Cuidadora llevando el carrito infantil señalada amablemente. |
 | Nap time | Hora da sesta | Hora de la siesta | Tumbarse en la esterilla | `pal_nap_time` | nova | Niño echando la siesta tumbado en su esterilla junto al reloj. |
 | Nap | Botar a sesta | Echar la siesta | Apoyar la cabeza en las manos | `pal_nap` | composta | Almohada blanda y cara dormida echando la siesta. |
@@ -1813,6 +2202,8 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Nappy time! | Hora do cueiro! | ¡Hora del pañal! | Coger el pañal y enseñarlo | `pal_nappy_time` | nova | Pañal blanco anatómico con pestañas azules sobre el cambiador. |
 | Nappy | Cueiro | Pañal | Dar palmaditas suaves al pañal al cambiarlo | `vocab_61` | reutilizada | Pañal limpio del set propio. |
 | Narrow street | Rúa estreita | Calle estrecha | Juntar las manos cerca | `pal_narrow_street` | nova | Callejuela estrecha encajada entre dos casas muy juntas. |
+| Natural | Natural | Natural | Tocar una hoja | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Nature reserve | Espazo protexido | Espacio protegido | Abrazar el aire con cuidado | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Nature | Natureza | Naturaleza | Abrir los brazos al aire libre | `pal_nature` | composta | Montaña, árbol y niño respirando el aire libre con los brazos abiertos. |
 | Near | Preto | Cerca | Acercar las manos hasta casi tocarse | `pal_near` | nova | Dos figuras muy juntas acercándose casi hasta tocarse. |
 | Nearby shop | Tenda próxima | Tienda cercana | Señalar cerca | `pal_nearby_shop` | nova | Niño justo al lado de la tienda cercana señalándola de cerca. |
@@ -1830,14 +2221,23 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Nesting dolls | Bonecas rusas | Muñecas rusas | Meter una mano dentro de la otra | `pal_nesting_dolls` | banco | Muñecas rusas encajables. |
 | Never have we hidden the treasure so well! | Nunca escondemos o tesouro tan ben! | ¡Nunca habíamos escondido el tesoro tan bien! | — | `pal_never_hidden_treasure` | composta | Caja del tesoro dorada muy bien escondida. |
 | New Year | Ano novo | Año nuevo | Saltar al decir «año nuevo» | `pal_new_year` | composta | Reloj en medianoche, confeti de celebración y niño saltando de alegría. |
+| New | Novo, nova | Nuevo, nueva | Mostrar algo con las manos como si fuera un regalo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Newborn baby | Bebé recén nado | Bebé recién nacido | Acunar en los brazos | `pal_newborn_baby` | nova | Bebé recién nacido envuelto en su mantita. |
 | Newborn | Recén nado | Recién nacido | Acurrucarse muy pequeño | `pal_newborn` | composta | Bebé recién nacido muy pequeñito envuelto con suavidad. |
 | Next in line | O seguinte | El siguiente | Señalar adelante | `pal_next_in_line` | nova | Fila de niños caminando con flecha señalando al siguiente en turno. |
+| Next month | O mes que vén | El mes que viene | Señalar adelante | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Next stop | Seguinte parada | Siguiente parada | Señalar adelante | `pal_next_stop` | nova | Autobús avanzando mientras se señala el poste de la siguiente parada. |
+| Next stop, please | Na seguinte, por favor | En la siguiente, por favor | Pulsar el botón | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Next to me | Ao meu carón | A mi lado | Dar unas palmaditas en el suelo al lado de uno mismo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Next year I will learn to read books by myself | O ano que vén aprenderei a ler libros eu só | El año que viene aprenderé a leer libros yo solo | Abrir un libro imaginario | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Next year I will read more books | O ano que vén lerei máis libros | El año que viene leeré más libros | Abrir un libro imaginario | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Next year we will be the oldest | O ano que vén seremos os maiores | El año que viene seremos los mayores | Estirarse de puntillas | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Next year | O ano que vén | El año que viene | Señalar adelante | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Nibble | Rillar | Mordisquear | Hacer que un peluche mordisquee la mano | `pal_nibble` | nova | Ratoncito mordisqueando suavemente una cuña de queso amarillo. |
 | Nice kitty | Que gatiño tan bo | Qué gatito tan bueno | Acariciar al gatito y sonreír | `pal_nice_kitty` | composta | Gatito tranquilo recibiendo una caricia suave en el lomo. |
 | Night light | Luz de noite | Luz de noche | Hacer una luz pequeña con las manos | `pal_night_light` | nova | Pequeña luz quitamiedos encendida suavemente en la mesilla de noche. |
 | Night | Noite | Noche | Cerrar las manos delante de los ojos como cortinas | `pal_night` | banco | Cielo nocturno oscuro con luna y estrellas: noche. |
+| Nimble | Áxil | Ágil | Mover los dedos rápido | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Nimble-footed | De pés áxiles | De pies ágiles | Mover los pies muy rápido | `pal_nimble_footed` | composta | Niño moviendo los pies muy deprisa con trazos de velocidad en los pies. |
 | No, thank you | Non, grazas | No, gracias | Negar con la cabeza despacio y sonreír | `pal_no_thank_you` | composta | Mano levantada declinando amablemente el ofrecimiento. |
 | Noa, walk five steps and take the white shell | Noa, dá cinco pasos e colle a cuncha branca | Noa, da cinco pasos y coge la concha blanca | Conteo motriz de cinco pasos y recogida de la concha nombrada. | `pal_noa_5_steps_shell` | composta | Caminar cinco pasos hasta coger la concha blanca. |
@@ -1848,10 +2248,15 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Noisy | Ruidoso, ruidosa | Ruidoso, ruidosa | Golpear el suelo con los pies y luego parar | `pal_noisy` | nova | Niño golpeando fuerte el suelo haciendo mucho ruido. |
 | Nose to nose | Nariz con nariz | Nariz con nariz | Tocar nariz con nariz | `pal_nose_to_nose` | nova | Dos caras de perfil acercando sus narices hasta tocarse punta con punta. |
 | Nose | Nariz | Nariz | Tocar la punta de la nariz | `pal_nose` | banco | Nariz de perfil en tono piel. |
+| Nostalgic | Nostálxico | Nostálgico | Sonreír mirando atrás | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Not once did you lose the map. | Nin unha soa vez perdiches o mapa. | Ni una sola vez perdiste el mapa. | — | `pal_not_once_lose_map` | composta | Mapa bien cuidado sin haberse perdido ni una vez. |
+| Not too hot | Non moi quente | No muy caliente | Tocar y retirar el dedo despacio | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Notebook | Caderno | Cuaderno | Anotar en el aire | `pal_notebook` | banco | Cuaderno escolar con espiral. |
+| Notice feelings | Fixarse nos sentimentos | Fijarse en los sentimientos | Mirar la cara de un amigo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Notice | Darse conta | Darse cuenta | Parar y señalar | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Now the group copies your pattern | Agora o grupo copia a túa serie | Ahora el grupo copia tu serie | Reproducción grupal exacta de la secuencia creada por un compañero. | `pal_group_copies_pattern` | composta | Todo el grupo repitiendo el patrón marcado. |
 | Nudge | Empurrar suave | Empujar suave | Empujar la pelota con un dedo | `pal_nudge` | nova | Empujoncito suave con el dedo para hacer rodar la pelota. |
+| Number line | Recta numérica | Recta numérica | Caminar por una línea contando | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Nursery rhyme | Cantiga infantil | Canción infantil | Cantar una canción infantil | `pal_nursery_rhyme` | composta | Libro abierto de canciones infantiles acompañado de notas musicales. |
 | Nursery | Escola infantil | Escuela infantil | Señalar la puerta de la escuela al llegar | `pal_nursery` | composta | Edificio colorido de la escuela infantil con puerta acogedora. |
 | Nutritious | Nutritivo | Nutritivo | Poner los brazos fuertes | `pal_nutritious` | nova | Plato con verduras y fruta fresca variadas: brócoli, zanahoria y manzana. |
@@ -1865,10 +2270,14 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Obstacle course | Circuíto de obstáculos | Circuito de obstáculos | Superar los obstáculos | `pal_obstacle_course` | nova | Circuito de obstáculos con cono naranja, aro amarillo y valla para saltar. |
 | Ocean | Océano | Océano | Abrir los brazos muy grandes | `pal_ocean` | composta | Gran océano azul abierto mostrado por las olas extensas y la ballena. |
 | Octopus | Polbo | Pulpo | Mover los brazos y los dedos como ocho patas | `pal_octopus` | banco | Pulpo rosado con tentáculos. |
+| Odd | Impar | Impar | Enseñar tres dedos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Off-stage | Fóra de escena | Fuera de escena | Agacharse detrás | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Oink, oink! | Oinc, oinc! | ¡Oinc, oinc! | Levantar la nariz con un dedo y decir «oinc, oinc» | `pal_oink_oink` | composta | Cerdito gruñendo con ondas de sonido sonoras. |
 | Old MacDonald had a farm | O vello MacDonald tiña unha granxa | El viejo MacDonald tenía una granja | Cantar y hacer los animales | `pal_old_macdonald_had_a_farm` | composta | Granja con vaca, pato y notas musicales cantando la canción de la granja. |
 | Old town | Casco vello | Casco viejo | Caminar por calles estrechas | `pal_old_town` | composta | Calle estrecha entre casitas antiguas con niño paseando por medio. |
 | Old | Vello, vella | Viejo, vieja | Soplar el polvo de un libro viejo imaginario | `pal_old` | nova | Soplando la nube de polvo de un libro muy viejo para limpiarlo. |
+| Older | Maior | Mayor | Medirse la altura con la mano por encima de la cabeza | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Oldest | O máis vello | El más viejo | Señalar arriba en el álbum | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Olive tree | Oliveira | Olivo | Estirar los brazos como ramas viejas | `pal_olive_tree` | nova | Olivo de tronco retorcido y hojas verdes cargado de aceitunas. |
 | Olive | Oliva | Aceituna | Coger una aceituna con los dedos | `pal_olive` | banco | Aceituna verde brillante. |
 | On and off | Aceso e apagado | Encendido y apagado | Encender y apagar dos veces | `pal_on_and_off` | nova | Bombilla amarilla encendida a la izquierda y bombilla apagada a la derecha. |
@@ -1880,24 +2289,34 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | On the ice | No xeo | En el hielo | Caminar con cuidado | `pal_on_the_ice` | composta | Superficie helada azul claro con niño caminando con brazos abiertos para no resbalar. |
 | On the sofa | No sofá | En el sofá | Sentarse en un sofá imaginario y estirar las piernas | `pal_on_the_sofa` | composta | Sofá acogedor con niño sentado cómodamente. |
 | On the tree | Na árbore | En el árbol | Colgar adornos en un árbol que hace una compañera | `pal_on_the_tree` | nova | Árbol verde decorado con bolas de colores colgadas en sus ramas. |
+| On time | Á hora | A tiempo | Señalar el reloj y sonreír | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | On tiptoe | De puntiñas | De puntillas | Caminar de puntillas | `pal_on_tiptoe` | nova | Niño levantando los talones para caminar muy alto de puntillas. |
 | Once upon a time | Era unha vez | Érase una vez | Abrir los brazos despacio como quien abre un cuento | `pal_once_upon_a_time` | composta | Libro abierto de cuentos donde empieza la historia del castillo. |
+| One by one | Un a un | Uno a uno | Tocar el hombro de cada criatura, de una en una | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | One fish, two fish | Un peixe, dous peixes | Un pez, dos peces | Enseñar una mano y luego las dos | `pal_one_fish_two_fish` | nova | Un pez naranja a la izquierda y dos peces azules nadando a la derecha. |
+| One for you, one for me | Un para ti, un para min | Uno para ti, uno para mí | Repartir dos bloques | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | One leaf, two leaves | Unha folla, dúas follas | Una hoja, dos hojas | Enseñar una hoja y luego dos | `pal_one_leaf_two_leaves` | nova | Una hoja verde a un lado y dos hojas verdes al otro lado. |
 | One more bite | Un bocado máis | Un bocado más | Enseñar un dedo y dar otro bocado | `pal_one_more_bite` | nova | Cuchara con un último bocado de comida junto al gesto de un dedo. |
+| One more sleep! | Só unha noite máis! | ¡Solo una noche más! | Enseñar un dedo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | One peg, two pegs | Unha pinza, dúas pinzas | Una pinza, dos pinzas | Poner una pinza y luego otra | `pal_one_peg_two_pegs` | nova | Cuerda tendida con una pinza roja a un lado y dos pinzas azules al otro. |
+| One step, two steps | Un paso, dous pasos | Un paso, dos pasos | Dar un paso y luego dos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | One, two, toes | Un, dous, dedos dos pés | Uno, dos, deditos | Contar dos deditos de los pies | `pal_one_two_toes` | nova | Dedo tocando y contando suavemente los deditos de un pie descalzo. |
 | Only on the map can you find it. | Só no mapa podes atopalo. | Solo en el mapa puedes encontrarlo. | — | `pal_only_on_the_map` | composta | Estrella del tesoro marcada únicamente en el mapa. |
 | Oops, it spilled! | Ai, verteuse! | ¡Uy, se ha derramado! | Señalar el agua y reír | `pal_oops_it_spilled` | nova | Vaso volcado de lado dejando todo un charco de agua derramada. |
 | Open and shut | Abrir e pechar | Abrir y cerrar | Abrir y cerrar las manos | `pal_open_and_shut` | nova | Mano abierta a un lado y puño cerrado al otro alternándose con flechas. |
+| Open hands to agree | Abrir as mans para acordar | Abrir las manos para acordar | Abrir las manos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Open like a flower | Ábrete coma unha flor | Ábrete como una flor | Desde agachados, abrir brazos y manos despacio | `pal_open_like_a_flower` | nova | Flor abriendo sus pétalos hacia arriba y hacia fuera como una flor que florece. |
 | Open up the fold | Abrir o dobrez | Abrir el doblez | Abrir la hoja despacio | `pal_open_up_the_fold` | nova | Hoja de papel doblada desplegándose abierta por el pliegue central. |
+| Open up | Abrir | Abrir | Romper el papel juntos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Open wide | Abrir ben | Abrir bien | Abrir mucho la boca con el bebé | `pal_open_wide` | nova | Cara abriendo bien grande la boca frente a una cuchara. |
 | Open your bag, take out your smock and smile | Abre a mochila, saca o mandil e sorrí | Abre la mochila, saca el babi y sonríe | Mímica de abrir la cremallera, sacar el babi y mostrar una amplia sonrisa a los compañeros. | `pal_open_bag_smock_smile` | composta | Mochila abierta de donde sale un babi azul y niño sonriendo contento. |
 | Open your beak | Abrir o bico | Abrir el pico | Abrir mucho la boca | `pal_open_your_beak` | nova | Polluelo en el nido abriendo muy grande su pico naranja. |
 | Open your mouth wide | Abrir moito a boca | Abrir mucho la boca | Abrir la boca como un león | `pal_open_your_mouth_wide` | nova | León con melena abriendo mucho la boca mostrando un gran bostezo o rugido. |
 | Open your umbrella | Abre o paraugas | Abre el paraguas | Apertura amplia de los brazos sobre la cabeza como un paraguas. | `pal_open_your_umbrella` | composta | Paraguas cerrado abriéndose ante la lluvia. |
 | Open | Abrir | Abrir | Abrir las manos despacio como una flor | `pal_open` | nova | Puerta abierta hacia fuera con flecha clara indicando abrir. |
+| Open, shut them | Ábreas, péchaas | Ábrelas, ciérralas | Abrir y cerrar las manos cantando | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Open-minded | De mente aberta | De mente abierta | Abrir las manos desde la cabeza | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Opinion | Opinión | Opinión | Poner la mano en el pecho y hablar | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Opposite | De fronte | Enfrente | Señalar el otro lado | `pal_opposite` | nova | Dos casas frente a frente al otro lado de la calle con flechas opuestas. |
 | Orange slice | Gallo de laranxa | Gajo de naranja | Enseñar un gajo de naranja | `pal_orange_slice` | banco | Naranja fresca en gajos. |
 | Orange | Laranxa | Naranja | Señalar algo naranja en el aula | `pal_orange` | nova | Tres objetos de color naranja brillante señalados sobre la mesa. |
@@ -1905,18 +2324,24 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Orbit | Órbita | Órbita | Caminar en círculo alrededor | `pal_orbit` | composta | Planeta azul siguiendo su órbita en círculo alrededor del Sol. |
 | Orchard | Horta de froiteiras | Huerto de frutales | Estirarse a coger fruta | `pal_orchard` | nova | Huerto de tres árboles frutales cargados de manzanas, naranjas y peras. |
 | Order | Orde | Orden | Poner tres cosas en fila | `pal_order` | nova | Tres piezas ordenadas de menor a mayor en estricta secuencia. |
+| Organised | Organizado | Organizado | Poner las cosas en fila | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Ornament | Adorno | Adorno | Colgar un adorno | `pal_ornament` | nova | Adorno brillante rojo con franjas doradas y cinta para colgar. |
 | Otter | Lontra | Nutria | Nadar de espaldas con las manos en la barriga | `pal_otter` | banco | Nutria marrón tumbada. |
 | Out of breath | Sen alento | Sin aliento | Respirar fuerte después de correr | `pal_out_of_breath` | nova | Niño apoyado en las rodillas resoplando fuerte después de correr. |
+| Out of sight | Fóra da vista | Fuera de la vista | Taparse detrás de las manos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Out of the basket | Fóra da cesta | Fuera de la cesta | Sacar un objeto de la cesta | `pal_out_of_the_basket` | nova | Pelota roja saliendo hacia fuera de una cesta de mimbre. |
 | Out of the egg | Fóra do ovo | Fuera del huevo | Salir encogido y estirarse | `pal_out_of_the_egg` | nova | Pollito amarillo saliendo hacia arriba del cascarón partido. |
 | Out of the puddle | Fóra da poza | Fuera del charco | Saltar y salir | `pal_out_of_the_puddle` | nova | Niño saltando desde el charco hasta quedar seco fuera. |
+| Out of tune | Desafinado | Desafinado | Hacer una mueca graciosa | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Out you come | Fóra da auga | Fuera del agua | Sacar al bebé de la bañera | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Oval | Óvalo | Óvalo | Dibujar un óvalo en el aire | `pal_oval` | nova | Figura ovalada morada limpia y alargada sobre la mesa. |
+| Over or under? | Por riba ou por debaixo? | ¿Por encima o por debajo? | Señalar arriba y abajo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Over the log | Por riba do tronco | Por encima del tronco | Pasar la pierna por encima | `pal_over_the_log` | nova | Niño pasando la pierna por encima de un tronco caído en el prado. |
 | Over the stone | Por riba da pedra | Por encima de la piedra | Pasar por encima de una piedra imaginaria con un paso largo | `pal_over_the_stone` | nova | Niño dando una zancada larga por encima de una piedra grande. |
 | Over the waves | Por riba das ondas | Por encima de las olas | Pasar la mano por encima en ondas | `pal_over_the_waves` | nova | Barquito pasando por encima de grandes olas azules siguiendo un arco. |
 | Overflowing | Desbordando | Rebosando | Llenar el vaso hasta que rebose | `pal_overflowing` | nova | Vaso completamente lleno con el agua desbordándose por ambos bordes. |
 | Overpass | Paso superior | Paso elevado | Pasar la mano por encima | `pal_overpass` | nova | Puente peatonal en arco pasando por encima de la carretera. |
+| Overwhelmed | Desbordado | Abrumado | Poner las manos en la cabeza y respirar | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Owl hoot | Canto do moucho | Ululato del búho | Hacer «uuu» bajito | `pal_owl_hoot` | composta | Búho ululando en la noche con ondas suaves. |
 | Owl | Moucho | Búho | Hacer grandes ojos redondos con los dedos | `pal_owl` | banco | Búho marrón de ojos grandes. |
 | Pack the bag | Encher a bolsa | Llenar la bolsa | Meter cosas en la bolsa | `pal_pack_the_bag` | nova | Bolsa naranja abierta llenándose con botella y libreta. |
@@ -1953,14 +2378,19 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Parrot | Papagaio | Loro | Repetir con un gesto lo que dice la persona adulta | `pal_parrot` | banco | Loro de plumaje colorido. |
 | Party blower | Matasogras | Matasuegras | Soplar el matasuegras cerca del bebé | `pal_party_blower` | banco | Accesorio festivo de soplar. |
 | Party | Festa | Fiesta | Dar vueltas en el sitio moviendo las manos | `pal_party` | banco | Cañón de fiesta con confeti. |
+| Pass around | Pasar de man en man | Pasar de mano en mano | Pasar al bebé con cuidado al abuelo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Pass it, please | Pásamo, por favor | Pásamelo, por favor | Extender la mano | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Pass me a peg | Pásame unha pinza | Pásame una pinza | Extender la mano | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Pass the ball | Pasar a pelota | Pasar la pelota | Pasar la pelota al de al lado | `pal_pass_the_ball` | composta | Pasando la pelota de un niño a otro con las manos. |
 | Pass the baton | Pasar o testemuño | Pasar el testigo | Dar el palo al siguiente | `pal_pass_the_baton` | nova | Dos corredores entregándose el testigo amarillo en carrera de relevos. |
 | Pass the plate | Pasar o prato | Pasar el plato | Pasar el plato al siguiente | `pal_pass_the_plate` | nova | Plato deslizándose sobre la mesa de una persona a la siguiente. |
 | Pass the rhythm stick around the circle | Pasa o pau do ritmo arredor do círculo | Pasa el palo del ritmo alrededor del círculo | Entrega de la clave de madera al siguiente con la fórmula de turno. | `pal_pass_rhythm_stick_circle` | composta | Palo de madera circulando alrededor de todo el corro. |
 | Pass | Pasar | Pasar | Pasar un plato imaginario a quien está al lado | `pal_pass` | nova | Dos niños pasándose un plato de mano a mano. |
 | passport | pasaporte | pasaporte | — | `pal_passport` | nova | Libreta azul de pasaporte con globo dorado. |
+| Pastel | Pastel | Pastel | Mover las manos suave | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Pat down | Aplanar | Aplanar | Aplanar la masa con la mano | `pal_pat_down` | nova | Mano abierta aplanando suavemente hacia abajo un montón de arena o masa. |
 | Pat dry | Secar a palmadiñas | Secar a toquecitos | Secar la piel a toquecitos | `pal_pat_dry` | nova | Toalla suave secando a toquecitos las gotas de agua sobre el brazo. |
+| Pat softly | Palmear suave | Dar palmaditas suaves | Dar palmaditas en la espalda suavemente | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Pat the ball | Palmear a pelota | Palmear la pelota | Palmear la pelota con la mano abierta | `pal_pat_the_ball` | nova | Mano abierta dando palmaditas desde arriba a una pelota azul. |
 | Pat the sand | Palmear a area | Palmear la arena | Palmear la arena con la mano | `pal_pat_the_sand` | nova | Mano palmeando suavemente la arena dorada de la playa. |
 | Pat | Dar palmadiñas | Dar palmaditas | Dar palmaditas suaves a un animal imaginario | `pal_pat` | nova | Mano dando palmaditas suaves sobre el lomo de un perrito. |
@@ -1974,7 +2404,10 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Paws | Poutas | Zarpas | Caminar a cuatro patas | `pal_paws` | composta | Huellas de zarpas y niño caminando a cuatro patas como un animal. |
 | Pay | Pagar | Pagar | Dar monedas imaginarias | `pal_pay` | nova | Monedas doradas entregándose sobre un mostrador para pagar. |
 | Peace table | Mesa da paz | Mesa de la paz | Sentarse frente a frente | `pal_peace_table` | composta | Dos niños sentados frente a frente en la mesa de la paz con una paloma. |
+| Peaceful mind | Mente tranquila | Mente tranquila | Cerrar los ojos y respirar | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Peaceful park | Parque tranquilo | Parque tranquilo | Respirar hondo en el parque | `pal_peaceful_park` | nova | Parque tranquilo con árbol frondoso, banco de madera y pájaro. |
+| Peaceful solution | Solución pacífica | Solución pacífica | Darse la mano sonriendo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Peaceful | Tranquilo | Sereno | Respirar despacio con el bebé en el pecho | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Peach | Pexego | Melocotón | Acariciar la piel del melocotón | `pal_peach` | banco | Melocotón rosado y naranja con hoja. |
 | Pear | Pera | Pera | Dibujar en el aire la forma de una pera | `pal_pear` | banco | Pera verde madura. |
 | Peas | Chícharos | Guisantes | Coger guisantes con los dedos | `pal_peas` | nova | Vaina verde abierta mostrando cuatro guisantes redondos en fila. |
@@ -2022,6 +2455,7 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Picnic | Merenda no campo | Pícnic | Extender un mantel imaginario y sentarse alrededor | `pal_picnic` | composta | Mantel de pícnic a cuadros sobre el prado con cesta, sándwich y manzana. |
 | Picture book | Libro de imaxes | Libro de imágenes | Pasar las páginas | `pal_picture_book` | nova | Libro infantil abierto mostrando grandes dibujos coloridos sin texto. |
 | Picture | Debuxo | Dibujo | Hacer un marco con las manos y mirar a través | `pal_picture` | banco | Cuadro enmarcado con paisaje para mirar a través. |
+| Piece by piece | Anaco a anaco | Trozo a trozo | Dar la fruta trozo a trozo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Pier | Peirao | Muelle | Caminar hasta el final del muelle | `pal_pier` | nova | Muelle de madera sobre el agua con niño caminando hasta el borde. |
 | Pig | Porco | Cerdo | Empujar la punta de la nariz hacia arriba con un dedo | `pal_pig` | banco | Cerdito rosa de perfil. |
 | Pigeon | Pomba | Paloma | Arrullar y mover la cabeza | `pal_pigeon` | banco | Paloma en vuelo suave. |
@@ -2041,6 +2475,9 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Pitter-pat | Repenicar | Repiquetear | Golpear con los dedos en el suelo | `pal_pitter_pat` | nova | Gotitas de lluvia repiqueteando suavemente sobre el suelo. |
 | Pitter-patter | Tamborilar | Repiquetear | Golpear con los dedos en la mesa como la lluvia | `pal_pitter_patter` | composta | Lluvia ligera repiqueteando gotita a gotita. |
 | Place | Sitio | Sitio | Señalar el sitio de cada cosa | `pal_place` | nova | Estantería con tres sitios delimitados donde va cada cosa señalados. |
+| Plan ahead | Planificar | Planificar | Señalar adelante en el calendario | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Plan B | Plan B | Plan B | Levantar dos dedos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Plan | Plano | Plano | Señalar un plano dibujado | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | plane | avión | avión | — | `pal_pal_plane` | banco | Avión volando en ángulo. |
 | Planet care | Coidado do planeta | Cuidado del planeta | Abrazar una bola del mundo | `pal_planet_care` | composta | Manos abiertas cuidando y sosteniendo el planeta Tierra. |
 | Planet Earth | Terra | Tierra | Hacer una bola con las manos | `pal_planet_earth` | banco | Globo del planeta Tierra. |
@@ -2053,14 +2490,22 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Plastic | Plástico | Plástico | Arrugar un plástico | `pal_plastic` | nova | Botella y vaso de plástico translúcidos sobre la mesa. |
 | plate | prato | plato | — | `pal_plate` | nova | Plato redondo limpio visto desde arriba. |
 | Play dough | Plastilina | Plastilina | Hacer una bola de plastilina | `pal_play_dough` | nova | Bolas de plastilina de colores sobre la mesa junto a un rodillo. |
+| Play fair | Xogar limpo | Jugar limpio | Darse la mano antes de jugar | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Play | Xogar | Jugar | Mover el cuerpo con alegría en el sitio | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Playful summer | Verán xoguetón | Verano juguetón | Bailar contentos | `pal_playful_summer` | composta | Niño saltando alegre en la playa soleada jugando con pelota. |
+| Playful | Xoguetón, xoguetona | Juguetón, juguetona | Dar pequeños brincos como un cachorro | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Playground | Patio | Patio | Salir corriendo al patio | `pal_playground` | banco | Tobogán infantil del patio. |
 | Playmat | Alfombra de xogo | Alfombra de juego | Tumbar al bebé en la alfombra de juego | `pal_playmat` | nova | Alfombra de juegos acolchada con arco de colgantes y bebé encima. |
 | Playtime bell | Timbre do recreo | Timbre del recreo | Hacer «riiing» | `pal_playtime_bell` | nova | Campana dorada del recreo sonando con ondas a ambos lados. |
+| Plentiful | Abundante | Abundante | Abrir los brazos mucho | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Plot twist | Sorpresa na historia | Giro en la historia | Girar y abrir la boca | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Plough | Arar | Arar | Empujar un arado imaginario caminando despacio | `pal_plough` | composta | Tractor abriendo surco y niño caminando empujando el arado despacio. |
 | Plum | Ameixa | Ciruela | Enseñar la ciruela morada | `pal_plum` | nova | Ciruela morada madura con tallo y hojita verde sobre la mesa. |
 | Pocket | Peto | Bolsillo | Meter las manos en los bolsillos | `pal_pocket` | nova | Bolsillo cosido en pantalón azul con la mano entrando dentro. |
+| Poem | Poema | Poema | Recitar moviendo la mano | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Poetic | Poético | Poético | Mover la mano despacio | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Point at | Sinalar a | Señalar a | Señalar un pájaro | `pal_point_at` | nova | Niño señalando directamente a un pájaro azul en la rama. |
+| Point of view | Punto de vista | Punto de vista | Mirar desde otro lado | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Point to the sky | Sinalar o ceo | Señalar el cielo | Señalar arriba | `pal_point_to_the_sky` | nova | Niño en el campo mirando arriba y señalando hacia el cielo. |
 | Point to | Sinalar | Señalar | Señalar la nariz del bebé | `pal_point_to` | nova | Mano señalando suavemente la nariz del bebé sonriente. |
 | Point | Sinalar | Señalar | Señalar con el dedo algo que está cerca | `pal_point` | nova | Dedo índice extendido señalando directamente una pelota cercana. |
@@ -2070,6 +2515,7 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Poke | Tocar co dedo | Tocar con el dedo | Tocar la masa con el dedo índice | `pal_poke` | nova | Dedo índice apretando y marcando un hoyito sobre una bola de masa blanda. |
 | Polar bear | Oso polar | Oso polar | Caminar pesado y despacio | `pal_polar_bear` | banco | Oso polar blanco de perfil. |
 | Police officer | Policía | Policía | Hacer el gesto de parar | `pal_police_officer` | banco | Persona policía con gorra y uniforme, coincidencia directa. |
+| Polite | Educado | Educado | Decir «gracias» con la mano en el pecho | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Polluted | Contaminado | Contaminado | Taparse la nariz | `pal_polluted` | nova | Entorno contaminado con humo gris espeso y residuos flotando en el agua. |
 | Pom-pom | Pompón | Pompón | Agitar un pompón de colores | `pal_pom_pom` | nova | Pompón mullido y alegre de lana roja. |
 | Pond duck | Pato do estanque | Pato del estanque | Caminar como un pato | `pal_pond_duck` | composta | Pato del estanque y niño caminando balanceándose agachado como él. |
@@ -2081,6 +2527,7 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Pop | Estourar | Explotar | Juntar las manos de golpe: ¡pum! | `pal_pop` | composta | Estallido repentino con chispas saliendo hacia fuera. |
 | Pop, pop, pop! | Pop, pop, pop! | ¡Pop, pop, pop! | Tocar tres burbujas | `pal_pop_pop_pop` | nova | Tres pompas de jabón en el aire mientras el dedo explota una de ellas. |
 | Pop-up toy | Xoguete sorpresa | Juguete sorpresa | Pulsar el botón y ver salir el juguete | `pal_pop_up_toy` | nova | Caja sorpresa con muñeco de muelle saltando al pulsar el botón. |
+| Popping sound | Estalido | Estallido | Hacer «pop» con los labios | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Pose | Posar | Posar | Sonreír quietos para la foto | `pal_pose` | composta | Niña posando sonriente delante de la cámara de fotos. |
 | Post a letter | Botar unha carta | Echar una carta | Meter una hoja por una ranura | `pal_post_a_letter` | nova | Sobre blanco entrando por la ranura de un buzón rojo de correos. |
 | Postbox | Caixa do correo | Buzón | Meter una carta en el buzón | `pal_postbox` | banco | Buzón rojo de correo. |
@@ -2097,19 +2544,32 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Pour tea | Servir o té | Servir el té | Inclinar la tetera de juguete | `pal_pour_tea` | composta | Tetera inclinada sirviendo té caliente dentro de la taza. |
 | pour | verter | verter | — | `pal_pour` | composta | Jarra azul inclinando agua dentro de un vaso. |
 | Pram | Carriño | Cochecito | Empujar el cochecito despacio | `pal_pram` | nova | Niño empujando despacio un cochecito de paseo con ruedas. |
+| Precious sea | Mar valioso | Mar valioso | Poner las manos en el pecho | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Precious | Precioso | Precioso | Acariciar la mano del bebé | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Predict what's next | Adiviñar o seguinte | Adivinar lo siguiente | Señalar lo que viene | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Predict | Predicir | Predecir | Tocar la cabeza pensando | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Prediction | Predición | Predicción | Tocar la cabeza pensando | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Present | Agasallo | Regalo | Dar un paquete pequeño | `pal_present` | banco | Regalo envuelto con lazo. |
 | Press hands | Premer as mans | Presionar las manos | Presionar la mano en el papel | `pal_press_hands` | nova | Dos manos presionando con fuerza una lámina sobre la mesa. |
 | Press the bell | Premer o timbre | Pulsar el timbre | Pulsar un botón en el aire | `pal_press_the_bell` | nova | Dedo pulsando el botón rojo de un timbre sonando. |
+| Pretend | Facer como que | Hacer como que | Poner cara de misterio y jugar a ser otro animal | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Pretty | Lindo, linda | Lindo, linda | Mirar una flor imaginaria y sonreír | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Price | Prezo | Precio | Señalar una etiqueta | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Prickly | Espiñento | Pinchudo | Acercar y alejar la mano del erizo | `pal_prickly` | nova | Erizo con púas afiladas y mano apartándose con cuidado. |
 | Primary colours | Cores primarias | Colores primarios | Enseñar tres dedos | `pal_primary_colours` | nova | Tres círculos con los colores primarios: rojo, amarillo y azul. |
 | Primary school | Escola de Primaria | Colegio de Primaria | Señalar un edificio grande | `pal_primary_school` | composta | Edificio grande de colegio de Primaria. |
 | Princess | Princesa | Princesa | Hacer una reverencia elegante | `pal_princess` | banco | Figura con corona de princesa. |
 | Prism | Prisma | Prisma | Mirar la luz en un cristal | `pal_prism` | nova | Prisma triangular de cristal dividiendo la luz blanca en haz multicolor. |
 | Problem | Problema | Problema | Rascarse la cabeza pensando | `pal_problem` | nova | Niño pensativo rascándose la cabeza frente a piezas descolocadas. |
+| Promise card | Tarxeta do compromiso | Tarjeta del compromiso | Posar la mano en la tarjeta | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Promise | Prometer | Prometer | Enganchar los meñiques | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Props | Atrezo | Atrezo | Coger objetos imaginarios | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | protect | protexer | proteger | — | `pal_protect` | composta | Escudo protegiendo un brote y una flor bajo la lluvia lateral, sin caras ni personajes. |
 | Protected | Protexido | Protegido | Hacer una cúpula con las manos | `pal_protected` | nova | Cúpula protectora arqueada sobre un brote verde frágil. |
+| Proud of myself | Orgulloso de min | Orgulloso de mí | Poner las manos en el pecho | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Proud parents | Familias orgullosas | Familias orgullosas | Aplaudir fuerte | `pal_proud_parents` | composta | Dos personas adultas aplaudiendo sonrientes y orgullosas. |
 | Proud peacock | Pavo real presumido | Pavo real presumido | Abrir los brazos como un pavo real | `pal_proud_peacock` | composta | Pavo real desplegando su cola en abanico igual que los brazos abiertos. |
+| Proud | Orgulloso, orgullosa | Orgulloso, orgullosa | Levantar la barbilla y caminar como un león | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Prowl | Axexar | Acechar | Caminar agachado despacio | `pal_prowl` | composta | Tigre acechando sigiloso y niño caminando agachado y despacio. |
 | Puddle edge | Beira da poza | Borde del charco | Caminar por el borde del charco | `pal_puddle_edge` | nova | Borde exterior del charco y niño caminando alrededor sin mojarse. |
 | Puddle ice | Xeo na poza | Hielo en el charco | Pisar despacio como sobre hielo | `pal_puddle_ice` | composta | Charco helado y niño pisando muy despacio con cuidado encima. |
@@ -2136,9 +2596,11 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Puppy | Canciño | Cachorro | Acariciar un cachorro de peluche | `pal_puppy` | banco | Cachorro tierno. |
 | Purple | Morado, morada | Morado, morada | Señalar algo morado en el aula | `pal_purple` | nova | Tres piezas moradas señaladas para identificar el color morado. |
 | Purr | Ronronar | Ronronear | Frotar la mejilla en la mano como un gato contento | `pal_purr` | nova | Gato contento con los ojos entrecerrados frotando su mejilla contra una mano y ronroneando. |
+| Purring | Que ronrona | Que ronronea | Hacer «rrrr» en la barriga | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | push | empurrar | empujar | — | `pal_push` | composta | Niño empujando una caja pesada hacia delante. |
 | Put arms in | Meter os brazos | Meter los brazos | Meter un brazo y luego el otro | `pal_put_arms_in` | nova | Niño metiendo los brazos por las mangas de una chaqueta verde. |
 | Put away | Gardar | Guardar | Guardar un bloque en su sitio | `pal_put_away` | composta | Guardando las cosas ordenadas dentro de su caja. |
+| Put it back gently | Devolvelo con coidado | Devolverlo con cuidado | Posar algo muy despacio | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Put it under the bridge. | Ponno debaixo da ponte. | Ponlo debajo del puente. | — | `pal_put_it_under_the_bridge` | composta | Coche colocado por debajo de un puente. |
 | Put on your animal mask and roar | Ponte a máscara de animal e ruxe | Ponte la máscara de animal y ruge | Colocación de una careta de madera y rugido con las manos en garra. | `pal_put_on_animal_mask_roar` | composta | Máscara de león colocada rugiendo fuerte. |
 | Put on your coat! | Pon o abrigo! | ¡Ponte el abrigo! | Deslizar los brazos por mangas imaginarias y hacer «Zzzip!». | `pal_put_on_your_coat` | composta | Abrigo poniéndoselo encima para salir fuera. |
@@ -2153,18 +2615,22 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Put up the umbrella | Abre o paraugas | Abre el paraguas | Abrir un paraguas imaginario de golpe | `pal_put_up_the_umbrella` | composta | Paraguas abriéndose hacia arriba de golpe para cubrirse. |
 | Put your arms up and your left foot forward | Brazos arriba e o pé esquerdo adiante | Brazos arriba y el pie izquierdo adelante | Colocación postural siguiendo la indicación oral del compañero. | `pal_arms_up_left_foot` | composta | Niño con brazos arriba y pie izquierdo adelantado. |
 | Put your feet into the boots. | Mete os pés nas botas. | Mete los pies en las botas. | Meter los pies en las botas | `pal_put_feet_into_boots` | composta | Dos botas preparadas debajo de sendas flechas hacia abajo: meter los pies en las botas. |
+| Put yourself in their shoes | Poñerse no seu lugar | Ponerse en su lugar | Cambiar de sitio con un amigo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Puzzle piece | Peza do crebacabezas | Pieza del puzle | Encajar una pieza | `pal_puzzle_piece` | banco | Pieza de puzle encajable. |
 | Puzzle | Crebacabezas | Puzle | Encajar una pieza | `pal_puzzle` | nova | Dos piezas de puzle azul y amarilla listas para encajar. |
 | Pyjamas | Pixama | Pijama | Meter un brazo y luego el otro en un pijama imaginario | `pal_pyjamas` | nova | Pijama azul celeste de dos piezas decorado con estrellas amarillas. |
 | Pyramid | Pirámide | Pirámide | Juntar las manos en punta | `pal_pyramid` | nova | Pirámide dorada de dos caras visibles sobre arena clara. |
 | Question mark | Signo de interrogación | Signo de interrogación | Dibujar un signo en el aire | `pal_question_mark` | banco | Signo de interrogación rojo en estilo plano. |
 | Queue up | Facer cola | Hacer cola | Ponerse en fila para el lavabo | `pal_queue_up` | nova | Tres niños haciendo cola ordenados uno detrás del otro. |
+| Quick-thinking | Espelido | Espabilado | Tocar la cabeza y sonreír | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Quiet as a mouse | Calado coma un rato | Callado como un ratón | Andar de puntillas sin hacer ni un ruido | `pal_quiet_as_a_mouse` | composta | Ratón silencioso y niño andando de puntillas sin hacer ruido. |
 | Quiet bells... sleep | Campás caladas... a durmir | Campanas calladas... a dormir | Esconder la campanilla y tumbarse en silencio. | `pal_quiet_bells_sleep` | composta | Campanillas en silencio mientras todo duerme tranquilo. |
+| Quiet car | Coche silencioso | Coche silencioso | Mover la mano sin hacer ruido | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Quiet corner | Recuncho tranquilo | Rincón tranquilo | Sentarse en el rincón | `pal_quiet_corner` | composta | Rincón tranquilo con cojines y gesto de silencio. |
 | Quiet time | Tempo tranquilo | Tiempo tranquilo | Sentarse en silencio | `pal_quiet_time` | composta | Rato tranquilo de calma, lectura y descanso. |
 | Quiet | Calado, calada | Callado, callada | Llevarse el dedo a los labios y bajar la voz | `pal_quiet` | composta | Dedo delante de la boca pidiendo estar en silencio y callado. |
 | Quiet: hands on your tummy | Silencio: mans na barriga | Silencio: manos en la barriga | Detención inmediata con las manos pegadas al abdomen. | `pal_quiet_hands_on_your_tummy` | composta | Niño quieto con ambas manos apoyadas sobre su barriga. |
+| Quietly, quietly | Baixiño, baixiño | Bajito, bajito | Caminar muy despacio | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Quilt | Edredón | Edredón | Tapar al bebé con el edredón | `pal_quilt` | nova | Edredón suave de retales de colores para abrigarse. |
 | Quince | Marmelo | Membrillo | Coger un membrillo | `pal_quince` | nova | Membrillo amarillo maduro con una hoja verde en el tallo. |
 | Rabbit | Coello | Conejo | Poner dos dedos en la cabeza como orejas largas | `pal_rabbit` | banco | Conejo blanco de orejas largas. |
@@ -2201,14 +2667,28 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Rattle | Axóuxere | Sonajero | Agitar un sonajero imaginario junto a la oreja | `pal_rattle` | nova | Sonajero infantil agitado con ondas sonoras. |
 | Rattly | Sonoro | Que suena | Agitar la botella con arroz | `pal_rattly` | nova | Botella transparente con arroz dentro sonando fuerte al agitarse. |
 | Razor clam | Navalla | Navaja | Estirar la mano larga y fina | `pal_razor_clam` | nova | Concha alargada de navaja marina rayada junto al agua. |
+| Reach for | Tentar coller | Intentar coger | Estirar la mano hacia la burbuja | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Reach up | Estirar cara arriba | Estirarse hacia arriba | Levantar los brazos al sol | `pal_reach_up` | composta | Sol brillante arriba y niño estirando mucho los brazos hacia él. |
 | Reach | Alcanzar | Alcanzar | Estirar el brazo para coger algo alto | `pal_reach` | nova | Niño estirando el brazo hacia arriba para alcanzar la manzana del estante. |
+| React | Reaccionar | Reaccionar | Moverse rápido a la señal | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Reaction | Reacción | Reacción | Moverse al oír una palmada | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Read in the shade | Ler á sombra | Leer a la sombra | Sentarse y abrir un libro | `pal_read_in_the_shade` | composta | Niño sentado leyendo un libro abierto bajo la sombra del árbol. |
+| Read me a story | Leme un conto | Léeme un cuento | Traer un libro | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Read | Ler | Leer | Abrir un libro imaginario y seguir las líneas con el dedo | `pal_read` | nova | Niño leyendo un libro abierto con líneas impresas. |
+| Ready for more | Listo para máis | Listo para más | Dar un paso adelante | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Ready for Primary | Listo para Primaria | Listo para Primaria | Levantar el pulgar | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Ready to go! | Listos para saír! | ¡Listos para salir! | Ponerse de pie y colocar las manos en las correas de la mochila | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Ready | Preparado, preparada | Listo, lista | Poner las manos en las rodillas y mirar a la persona docente | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Ready, go! | Listos, xa! | ¡Listos, ya! | Salir corriendo al oír «ya» | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Ready, set, blow! | Preparados, listos, sopra! | ¡Preparados, listos, sopla! | Soplar a la señal | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Ready, steady, go! | Preparados, listos, xa! | ¡Preparados, listos, ya! | Agacharse, prepararse y salir al decir «go» | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Ready, steady, go: pass the tray to your friend | Preparados, listos, xa: pásalle a bandexa ao teu amigo | Preparados, listos, ya: pásale la bandeja a tu amigo | Entrega coordinada de la bandeja a un compañero sin derramar. | `pal_ready_steady_pass_tray` | composta | Pasando la bandeja al amigo con ritmo. |
+| Ready, steady, stop! | Preparados, listos, para! | ¡Preparados, listos, para! | Parar en el «para» | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | rebuild | reconstruír | reconstruir | — | `pal_rebuild` | composta | Piezas caídas volviéndose a levantar en una torre nueva. |
 | Receive | Recibir | Recibir | Extender las manos y coger | `pal_receive` | nova | Niño recibiendo con los brazos extendidos un paquete que le entregan. |
 | Recharge | Recargar | Recargar | Encogerse y luego estirarse | `pal_recharge` | composta | Pila recargándose con símbolo de energía. |
+| Recite | Recitar | Recitar | Hablar alto con una mano en el pecho | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Record | Anotar | Anotar | Hacer una marca en la tabla | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Rectangle | Rectángulo | Rectángulo | Hacer un rectángulo con los dedos | `pal_rectangle` | nova | Rectángulo verde alargado con sus cuatro esquinas rectas bien marcadas. |
 | Recycle | Reciclar | Reciclar | Hacer un círculo con flechas | `pal_recycle` | banco | Símbolo verde de tres flechas en círculo de reciclar. |
 | Recycling bin | Colector de reciclaxe | Contenedor de reciclaje | Echar algo en el contenedor | `pal_recycling_bin` | composta | Contenedor de reciclaje con distintivo blanco y símbolo verde reciclable. |
@@ -2224,22 +2704,44 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Reef | Arrecife | Arrecife | Hacer formas con las manos | `pal_reef` | nova | Arrecife submarino con corales de colores y pececitos. |
 | Referee | Árbitro | Árbitro | Silbar y levantar la mano | `pal_referee` | composta | Silbato de árbitro y mano levantada marcando la señal. |
 | Referee's whistle | Asubío do árbitro | Silbato del árbitro | Parar al oír el pitido | `pal_referee_s_whistle` | composta | Silbato de árbitro sonando junto a tarjeta de aviso. |
+| Reflection game | Xogo do espello | Juego del espejo | Copiar los movimientos de un amigo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Reflection | Reflexo | Reflejo | Señalar al bebé en el espejo | `pal_reflection` | nova | Espejo ovalado mostrando el reflejo del bebé dentro. |
 | Refract | Separar a luz | Separar la luz | Abrir la mano en abanico | `pal_refract` | nova | Prisma triangular abriendo y separando un haz de luz blanca en varios colores. |
+| Refreshed | Descansado e fresco | Descansado y fresco | Desperezarse sonriendo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Refreshing splash | Salpicón refrescante | Salpicón refrescante | Sacudir las manos mojadas | `pal_refreshing_splash` | composta | Salpicón refrescante de gotas claras saltando al sacudir las manos. |
 | Refreshing | Refrescante | Refrescante | Beber y decir «aaah» | `pal_refreshing` | composta | Agua helada con cubito de hielo y brisa refrescante. |
+| Regular | Regular | Regular | Golpear siempre igual | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Rehearse | Ensaiar | Ensayar | Repetir un gesto varias veces | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Reindeer | Reno | Reno | Poner las manos como cuernos | `pal_reindeer` | nova | Reno marrón de gran cornamenta y nariz roja. |
 | Relax | Relaxarse | Relajarse | Soltar los brazos | `pal_relax` | nova | Niño recostado tranquilamente con los ojos cerrados relajándose. |
 | Relaxed summer | Verán tranquilo | Verano tranquilo | Tumbarse a descansar | `pal_relaxed_summer` | composta | Niño descansando tumbado sobre la manta al sol de verano. |
+| Relaxed | Relaxado, relaxada | Relajado, relajada | Soltar el cuerpo y respirar despacio | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Relaxing | Relaxante | Relajante | Soltar los hombros | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Relay race | Carreira de relevos | Carrera de relevos | Pasar el testigo | `pal_relay_race` | nova | Carrera de relevos en pista roja con testigo y banderín de meta. |
+| Remember the past | Lembrar o pasado | Recordar el pasado | Señalar atrás | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Remember when | Lembrar cando | Recordar cuando | Tocar la cabeza y señalar atrás | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Remember | Lembrar | Recordar | Tocarse la cabeza y asentir | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Remote | Afastado | Lejano | Señalar muy lejos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Renewable | Renovable | Renovable | Hacer un círculo con la mano | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Repeat | Repetición | Repetición | Hacer el mismo gesto dos veces | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Repeating | Que se repite | Que se repite | Hacer el mismo gesto otra vez | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Reply | Responder | Responder | Hacer que el títere responde | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Respectful | Respectuoso | Respetuoso | Escuchar mirando a quien habla | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Responsible | Responsable | Responsable | Cuidar la planta de la clase | `pal_responsible` | composta | Recogiendo y cuidando las cosas con responsabilidad. |
 | Rest at the top | Descansar no alto | Descansar arriba | Sentarse y respirar | `pal_rest_at_the_top` | composta | Niño sentado descansando en la cima de la montaña. |
 | Rest time | Descanso | Descanso | Apoyar la cabeza en las manos | `pal_rest_time` | composta | Colchoneta y manta de descanso junto al reloj de arena. |
 | Rest | Descansar | Descansar | Apoyar la cabeza en los brazos y respirar despacio | `pal_rest` | nova | Niño descansando con la cabeza apoyada sobre los brazos encima de la mesa. |
 | Rested and happy | Descansado e contento | Descansado y contento | Estirar los brazos contentos | `pal_rested_and_happy` | composta | Criatura estirando los brazos contenta y descansada al despertar. |
+| Restful | Relaxante | Relajante | Cerrar los ojos despacio | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Resting | En repouso | En reposo | Tumbarse tranquilos | `pal_resting` | nova | Niño en reposo tumbado cómodamente sobre un colchón. |
+| Result | Resultado | Resultado | Enseñar el resultado con los dedos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Retell | Volver contar | Volver a contar | Contar con los dedos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Return | Volver | Volver | Dar la vuelta y caminar de nuevo hacia el círculo | `pal_return` | nova | Niño dando la vuelta para caminar de regreso hacia el círculo. |
 | Reusable bag | Bolsa reutilizable | Bolsa reutilizable | Doblar y guardar la bolsa | `pal_reusable_bag` | nova | Bolsa reutilizable de tela verde con asas y dibujo de hoja. |
+| Reuse | Reutilizar | Reutilizar | Usar otra vez la bolsa | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Rhyme card | Tarxeta de rima | Tarjeta de rima | Levantar dos tarjetas que riman | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Rhyme | Rimar | Rimar | Dar palmas en dos palabras que suenan igual | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Rhyming | Que rima | Que rima | Dar dos palmadas | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Rhythm | Ritmo | Ritmo | Golpear en las piernas al ritmo | `pal_rhythm` | composta | Pentagrama musical con ritmo y manos acompañando a compás. |
 | Rhythmic | Rítmico | Rítmico | Mover la cabeza al ritmo | `pal_rhythmic` | composta | Tambor acompañado de compases rítmicos regulares. |
 | Ribbon stick | Pau con cinta | Palo con cinta | Hacer círculos con la cinta | `pal_ribbon_stick` | nova | Varita de madera con larga cinta rosa ondulando en espiral. |
@@ -2259,14 +2761,18 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Rinse your hands | Enxaugar as mans | Enjuagarse las manos | Enjuagarse las manos bajo el grifo | `pal_rinse_your_hands` | nova | Dos manos enjuagándose bajo el chorro de agua de un grifo. |
 | Rinse | Enxaugar | Aclarar | Pasar las manos bajo un agua imaginaria | `pal_rinse` | nova | Manos abiertas pasándose bajo el chorro de agua del grifo. |
 | Ripe mango | Mango maduro | Mango maduro | Apretar suave el mango | `pal_ripe_mango` | nova | Mango maduro dorado y rojizo con hoja verde fresca. |
+| Ripe | Maduro, madura | Maduro, madura | Coger con cuidado una fruta madura de la rama | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Ripest | O máis maduro | El más maduro | Escoger la mejor | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Ripples | Ondiñas | Ondas pequeñas | Mover un dedo en el agua | `pal_ripples` | nova | Ondas circulares abriéndose en la superficie del agua. |
 | Rise and fall | Subir e baixar | Subir y bajar | Subir y bajar como las olas | `pal_rise_and_fall` | nova | Olas subiendo y bajando con flechas hacia arriba y hacia abajo. |
+| Rise and shine! | Arriba, que sae o sol! | ¡Arriba, que sale el sol! | Estirarse hacia arriba | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | River mouth | Desembocadura | Desembocadura | Abrir las manos al llegar al mar | `pal_river_mouth` | nova | Río azul que se ensancha abriéndose al desembocar en el mar. |
 | Riverbank | Beira do río | Orilla del río | Sentarse en la orilla | `pal_riverbank` | composta | Niño sentado tranquilamente en la orilla verde del río. |
 | Roar loudly | Ruxir forte | Rugir fuerte | Rugir con las manos abiertas | `pal_roar_loudly` | nova | León con gran melena rugiendo con la boca abierta y ondas sonoras. |
 | Roar | Ruxir | Rugir | Abrir mucho la boca y rugir suave: grrr | `pal_roar` | composta | León rugiendo fuerte con ondas hacia delante. |
 | Roasted | Asado | Asado | Señalar la castaña caliente | `pal_roasted` | nova | Castañas asadas humeando en la sartén señaladas con la mano. |
 | Roasting pan | Tixola de asar | Sartén de asar | Enseñar la sartén de lejos | `pal_roasting_pan` | composta | Sartén honda de cocina vista desde arriba. |
+| Roasting time | Tempo de asado | Tiempo de asado | Señalar el reloj | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Robin | Paporroibo | Petirrojo | Señalar el pecho rojo | `pal_robin` | nova | Petirrojo con el pecho rojo vivo posado en una rama y señalado. |
 | Robin's nest | Niño de paporroibo | Nido de petirrojo | Hacer un nido con las manos | `pal_robin_s_nest` | nova | Nido de ramitas con huevos azules y petirrojo de pecho rojo al lado. |
 | Robot | Robot | Robot | Moverse con movimientos rígidos | `pal_robot` | banco | Robot metálico simpático. |
@@ -2282,6 +2788,7 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Rocking chair | Cadeira de balance | Mecedora | Mecerse en la silla con el bebé | `pal_rocking_chair` | composta | Mecedora curva con el bebé descansando en brazos. |
 | Rocking horse | Cabalo de balancín | Caballito balancín | Mecerse en el caballito balancín | `pal_rocking_horse` | banco | Caballito de madera para mecerse. |
 | Rocky | Rochoso | Rocoso | Tocar una superficie dura | `pal_rocky` | nova | Rocas duras e irregulares tocadas con la mano para notar su superficie. |
+| Role | Papel | Papel | Señalar la tarjeta del papel | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Roll along | Rodar ao longo | Rodar a lo largo | Rodar el cilindro | `pal_roll_along` | nova | Cilindro verde rodando a lo largo de la mesa hacia delante. |
 | Roll back | Devolver rodando | Devolver rodando | Rodar la pelota de vuelta al bebé | `pal_roll_back` | nova | Pelota rodando de vuelta hacia el bebé. |
 | Roll down the hill like a chestnut | Roda costa abaixo coma unha castaña | Rueda cuesta abajo como una castaña | Rodadura lateral controlada sobre colchoneta con los brazos junto al cuerpo. | `pal_roll_down_hill_chestnut` | composta | Castaña rodando cuesta abajo por la ladera verde con flecha descendente. |
@@ -2318,11 +2825,14 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Round | Redondo, redonda | Redondo, redonda | Mover la mano haciendo círculos pequeños | `pal_round` | nova | Forma completamente redonda sin esquinas. |
 | Roundabout | Rotonda | Rotonda | Caminar en círculo | `pal_roundabout` | nova | Rotonda circular con flechas indicando la vuelta alrededor. |
 | Route | Ruta | Ruta | Seguir una línea con el dedo | `pal_route` | nova | Ruta sinuosa marcada desde la bandera verde de salida hasta la meta roja. |
+| Routine | Rutina | Rutina | Tocar el reloj y hacer lo mismo cada día | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Row of dolls | Fila de bonecas | Fila de muñecas | Alinear de pequeña a grande | `pal_row_of_dolls` | nova | Tres muñecas alineadas en fila ordenadas de pequeña a grande. |
 | Row the boat | Remar o bote | Remar la barca | Remar adelante y atrás | `pal_row_the_boat` | nova | Niño sentado en una barca remando sobre el agua con los dos remos. |
 | Row your boat through the big waves | Rema na barca entre as ondas grandes | Rema en la barca entre las olas grandes | Flexo-extensión alternada del tronco en pareja, cogidos de las manos. | `pal_row_boat_waves` | composta | Persona remando en barca en medio de grandes olas (Fluent Flat combinado). |
 | Row | Remar | Remar | Remar sentados con un remo imaginario | `pal_row` | composta | Bote con remo avanzando por el agua. |
+| Row, row, row your boat | Rema, rema, rema o teu bote | Rema, rema, rema tu barca | Remar cantando | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Rowing boat | Bote de remos | Barca de remos | Remar sentados en el suelo | `pal_rowing_boat` | banco | Persona remando en barca de remos. |
+| Royal | Real | Real | Ponerse una corona imaginaria | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Rub a leaf | Fregar unha folla | Frotar una hoja | Frotar la cera sobre la hoja | `pal_rub_a_leaf` | nova | Mano frotando suavemente una hoja verde sobre la mesa. |
 | Rub gently | Fregar amodo | Frotar despacio | Frotar la corteza y escuchar | `pal_rub_gently` | nova | Mano frotando suavemente la corteza de un tronco mientras suena. |
 | Rub hands | Fregar as mans | Frotar las manos | Frotar las manos para calentarlas | `pal_rub_hands` | nova | Dos manos juntándose y frotándose entre sí para entrar en calor. |
@@ -2336,8 +2846,11 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Rubbish | Refugallo | Desperdicio | Coger y echar en la bolsa | `pal_rubbish` | nova | Restos de papel y piel cayendo dentro de la papelera verde. |
 | Rug by the fire | Alfombra xunto ao lume | Alfombra junto al fuego | Sentarse en la alfombra | `pal_rug_by_the_fire` | composta | Alfombra cálida junto al fuego con niño sentado encima. |
 | Rug | Alfombra | Alfombra | Apoyar las dos manos en la alfombra del círculo | `pal_rug` | nova | Alfombra rectangular roja y amarilla con flecos en el suelo. |
+| Rule | Norma | Norma | Levantar un dedo como una norma | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Ruler | Regra | Regla | Medir con una regla | `pal_ruler` | banco | Regla escolar recta amarilla con marcas de medida. |
+| Rumble | Tronar | Retumbar | Hacer «brrum» con la voz | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Rumbly bus | Autobús que retumba | Autobús que retumba | Hacer «brrrr» con la boca | `pal_rumbly_bus` | composta | Autobús amarillo vibrando y retumbando con líneas de movimiento. |
+| Rumbly | Retumbante | Retumbante | Hacer un sonido grave con la boca | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Run home | Correr á casa | Correr a casa | Correr al rincón | `pal_run_home` | composta | Niño corriendo directo hacia su casa. |
 | Run like a fox | Correr coma un raposo | Correr como un zorro | Correr ligero y agachado | `pal_run_like_a_fox` | composta | Zorro rápido y niño corriendo ligero. |
 | Run through the sprinkler | Correr polo aspersor | Correr por el aspersor | Correr riendo | `pal_run_through_the_sprinkler` | composta | Aspersor soltando chorros de agua fresca y niño corriendo por debajo. |
@@ -2351,6 +2864,7 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Rustle | Renxer | Crujir | Mover las hojas para que suenen | `pal_rustle` | nova | Hojas secas crujiendo con ondas sonoras al moverlas. |
 | Rusty | Ferruxento | Oxidado | Tocar una cadena vieja | `pal_rusty` | nova | Cadena metálica vieja con manchas rojizas de óxido tocada con el dedo. |
 | Safe and sound | San e salvo | Sano y salvo | Abrazar al bebé al volver | `pal_safe_and_sound` | composta | Dentro de casa sano y salvo dándose un abrazo tranquilo. |
+| Safe | Seguro, segura | Seguro, segura | Abrazarse a uno mismo y sonreír tranquilos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Sail across the ocean | Cruzar o océano | Cruzar el océano | Remar y mirar lejos | `pal_sail_across_the_ocean` | nova | Velero navegando a través del océano abierto hacia adelante. |
 | Sail | Navegar | Navegar | Abrir los brazos como una vela y moverse con la brisa | `pal_sail` | composta | Velero navegando con la vela desplegada y brazos abiertos al viento. |
 | Sailing along | Navegando | Navegando | Balancearse despacio | `pal_sailing_along` | composta | Velero navegando con el viento impulsando la vela. |
@@ -2361,6 +2875,7 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Salty air | Aire do mar | Aire del mar | Inspirar por la nariz | `pal_salty_air` | composta | Brisa marina llegando hacia la nariz para respirar aire salado. |
 | Salty lips | Beizos salgados | Labios salados | Tocar los labios después del mar | `pal_salty_lips` | nova | Labios junto al mar con cristalitos blancos de sal tocados suavemente con un dedo. |
 | Salty shell | Cuncha salgada | Concha salada | Oler la concha | `pal_salty_shell` | composta | Concha marina soltando olor salado junto a salero. |
+| Salty wind | Vento salgado | Viento salado | Respirar el aire del mar | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Salty | Salgado, salgada | Salado, salada | Poner cara de sorpresa y beber agua | `pal_salty` | composta | Salero, gesto de sorpresa al probar algo salado y vaso de agua. |
 | Same | Igual | Igual | Copiar el gesto de una compañera como en un espejo | `pal_same` | nova | Dos tarjetas idénticas mostrando exactamente la misma estrella amarilla. |
 | Samil beach | Praia de Samil | Playa de Samil | Señalar el mar desde la arena | `vigo_nat_99` | reutilizada | Playa de Samil del set propio. |
@@ -2372,19 +2887,24 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Sandpit | Areeiro | Arenero | Sentarse en el arenero | `pal_sandpit` | nova | Arenero de madera lleno de arena con cubo de playa. |
 | Sandwich | Bocadillo | Sándwich | Partir un sándwich en dos | `pal_sandwich` | banco | Sándwich de pan con lechuga y tomate. |
 | Sandy | Areento, areenta | Arenoso, arenosa | Sacudirse las manos como si tuvieran arena | `pal_sandy` | composta | Manos sacudiéndose granitos de arena dorada sobre la playa. |
+| Satisfied | Satisfeito | Satisfecho | Sonreír tranquilo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Save water | Aforrar auga | Ahorrar agua | Cerrar el grifo | `pal_save_water` | nova | Mano cerrando el grifo del agua para ahorrar y evitar desperdiciar gotas. |
 | Savour | Saborear | Saborear | Masticar despacio cerrando los ojos | `pal_savour` | nova | Niño con ojos cerrados disfrutando y saboreando despacio su bocado. |
 | Say cheese! | Di pataca! | ¡Di patata! | Sonreír para la foto | `pal_say_cheese` | composta | Cámara enfocando una gran sonrisa encuadrada para la foto. |
 | Say goodbye | Despedirse | Despedirse | Saludar con la mano en la puerta | `pal_say_goodbye` | composta | Niño junto a la puerta agitando la mano para despedirse. |
 | Say hello | Dicir ola | Decir hola | Saludar a un compañero | `pal_say_hello` | nova | Dos amigos frente a frente levantando la mano para decir hola. |
+| Say please | Dicir por favor | Decir por favor | Juntar las manos pidiendo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Say your line | Dicir a túa frase | Decir tu frase | Hablar cuando te señalan | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Scale pan | Prato da balanza | Platillo | Abrir la mano plana | `pal_scale_pan` | nova | Balanza de platos destacando uno de sus platillos abiertos con un aro. |
 | Scale | Balanza | Balanza | Poner los brazos como una balanza | `pal_scale` | composta | Balanza de dos platillos y niño abriendo los brazos igual en equilibrio. |
 | Scallop | Vieira | Vieira | Abrir y cerrar la concha con las manos | `pal_scallop` | nova | Concha de vieira con sus características estrías en abanico y orejas en la base. |
 | Scarecrow | Espantallo | Espantapájaros | Abrir los brazos como un espantapájaros | `pal_scarecrow` | nova | Espantapájaros con sombrero de paja y brazos rígidos abiertos en cruz. |
 | Scarf | Bufanda | Bufanda | Enrollarse una bufanda imaginaria en el cuello | `pal_scarf` | banco | Bufanda cálida roja. |
 | Scarves | Panos de cores | Pañuelos de colores | Lanzar los pañuelos al aire | `pal_scarves` | nova | Pañuelos ligeros de colores ondulando al aire. |
+| Scene | Escena | Escena | Abrir los brazos como un marco | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | School bag | Mochila da escola | Mochila del colegio | Colgar la mochila al hombro | `pal_school_bag` | nova | Mochila escolar roja y azul con bolsillo frontal y asa superior. |
 | School | Escola | Escuela | Dibujar en el aire el tejado de la escuela con las manos | `pal_school` | banco | Edificio de escuela con reloj y bandera, coincidencia directa. |
+| Scientific | Científico | Científico | Ajustar las gafas | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Scientist | Científica | Científica | Ponerse unas gafas imaginarias | `pal_scientist` | banco | Científica con gafas y bata. |
 | scissors | tesoiras | tijeras | — | `pal_pal_scissors` | banco | Tijeras rojas abiertas. |
 | Scoop sand | Coller area | Coger arena | Coger arena con la mano | `pal_scoop_sand` | nova | Pala roja recogiendo un puñado de arena dorada del suelo. |
@@ -2393,6 +2913,8 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Scoreboard | Marcador | Marcador | Levantar un dedo por cada punto del marcador | `pal_scoreboard` | nova | Tablero marcador deportivo dividido en dos lados con fichas de puntuación. |
 | Scrapbook | Álbum de recortes | Álbum de recortes | Pegar un recorte | `pal_scrapbook` | nova | Álbum abierto de recortes con pegatinas, fotos y estrella pegada. |
 | Scratch | Rañar | Rascar | Rascarse la cabeza con un dedo | `pal_scratch` | nova | Niño llevándose la mano a la cabeza para rascarse. |
+| Scratchy | Rasposo | Rasposo | Pasar la mano por la corteza rasposa | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Script | Guión | Guion | Leer un papel imaginario | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Scrub nails | Fregar as unllas | Frotar las uñas | Frotar las puntas de los dedos | `pal_scrub_nails` | nova | Puntas de los dedos frotando y limpiando las uñas con espuma jabonosa contra la palma. |
 | Scrub | Refregar | Restregar | Restregar el dorso de las manos con fuerza | `pal_scrub` | composta | Manos enjabonadas restregando con fuerza haciendo espuma blanca. |
 | Scrumptious | Riquísimo | Riquísimo | Tocar la barriga y sonreír | `pal_scrumptious` | nova | Niño tocándose la barriga encantado ante un trozo delicioso de tarta. |
@@ -2404,6 +2926,8 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Sea | Mar | Mar | Mover los brazos en ondas largas delante del cuerpo | `pal_sea` | composta | Olas azules extendiéndose por el mar. |
 | Seabed | Fondo do mar | Fondo del mar | Bajar las manos hasta el suelo | `pal_seabed` | nova | Fondo arenoso del mar con piedra, estrella de mar y burbujas. |
 | Seabird | Ave mariña | Ave marina | Planear con los brazos abiertos | `gaivota` | reutilizada | Gaviota de perfil del set propio sobre fondo marino: ave marina. |
+| Seafaring | Mariñeiro | Marinero | Hacer el saludo marinero | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Seagrass is a home for little fish | A pradería é a casa dos peixiños | La pradera es la casa de los pececitos | Hacer un tejado con las manos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Seagrass | Pradería mariña | Pradera marina | Moverse ondulando | `pal_seagrass` | nova | Pradera submarina de altas cintas verdes de hierba marina. |
 | Seagull | Gaivota | Gaviota | Abrir los brazos y planear despacio | `pal_seagull` | composta | Gaviota blanca planeando sobre las olas del mar con alas abiertas. |
 | Seahorse | Cabaliño de mar | Caballito de mar | Hacer una S con el dedo | `pal_seahorse` | nova | Caballito de mar naranja de perfil en el agua. |
@@ -2412,10 +2936,19 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Search for treasure | Buscar un tesouro | Buscar un tesoro | Mirar alrededor con un catalejo | `pal_search_for_treasure` | nova | Catalejo mirando hacia el cofre del tesoro dorado en la playa. |
 | Search | Buscar | Buscar | Buscar debajo de hojas imaginarias | `pal_search` | nova | Lupa levantando y buscando bajo las hojas caídas. |
 | Seaside | Beira do mar | Orilla del mar | Acercarse a la orilla con el bebé | `pal_seaside` | composta | Orilla del mar donde se unen el agua y la arena con concha. |
+| Season | Estación | Estación | Hacer un círculo con la mano | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Seasonal | De tempada | De temporada | Señalar el calendario | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Seat belt on! | Cinto posto! | ¡Cinturón puesto! | Cruzar un cinturón de seguridad imaginario por el pecho | `pal_seat_belt_on` | nova | Niño sentado con el cinturón de seguridad cruzado por el pecho. |
+| Seat belts on, please | Os cintos, por favor | Los cinturones, por favor | Ponerse el cinturón | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Seaweed | Algas | Algas | Tocar un alga mojada | `pal_seaweed` | nova | Algas verdes ondulando bajo el agua del mar. |
+| Seaworthy | Preparado para o mar | Listo para el mar | Levantar el pulgar | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Secret | Secreto, secreta | Secreto, secreta | Llevarse el dedo a los labios y guiñar un ojo | `pal_secret` | banco | Cara llevándose el dedo a los labios: secreto, igual que el gesto. |
+| See both sides | Ver as dúas partes | Ver las dos partes | Mirar a un lado y al otro | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | See you after summer | Ata despois do verán | Hasta después del verano | Mandar un beso y saludar | `pal_see_you_after_summer` | composta | Sol brillante de verano con despedida agitando la mano y mandando un beso. |
+| See you in Primary! | Vémonos en Primaria! | ¡Nos vemos en Primaria! | Saludar a todos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| See you in September | Vémonos en setembro | Nos vemos en septiembre | Contar con los dedos y decir adiós hasta la vuelta | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| See you next year! | Vémonos o ano que vén! | ¡Nos vemos el año que viene! | Saludar a todos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| See you soon! | Ata logo! | ¡Hasta pronto! | Decir adiós y luego señalar el calendario | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | See | Ver | Ver | Hacer prismáticos con las manos y mirar a lo lejos | `pal_see` | composta | Ojo mirando directamente hacia una flor. |
 | See-through | Transparente | Transparente | Mirar a través de una burbuja | `pal_see_through` | nova | Lámina de vidrio transparente delante de una pelota roja perfectamente visible. |
 | Seed bag | Bolsa de sementes | Bolsa de semillas | Mirar la semilla dentro de la bolsa | `pal_seed_bag` | nova | Bolsita de papel con semillas oscuras asomando junto a la base. |
@@ -2425,9 +2958,11 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Seesaw | Balancín | Balancín | Subir y bajar con las manos | `pal_seesaw` | nova | Balancín inclinado subiendo de un lado y bajando del otro. |
 | Self-care | Autocoidado | Autocuidado | Abrazarse a sí mismo | `pal_self_care` | composta | Cuidarse lavando dientes y manos con cariño. |
 | Send a postcard | Enviar unha postal | Enviar una postal | Meter en un buzón | `pal_send_a_postcard` | nova | Postal entrando por la ranura del buzón rojo de correos. |
+| Send me a postcard! | Mándame unha postal! | ¡Mándame una postal! | Hacer que se escribe | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Sense of smell | Olfacto | Olfato | Señalar la nariz | `pal_sense_of_smell` | nova | Nariz percibiendo olores señalada para representar el sentido del olfato. |
 | Sense of taste | Gusto | Gusto | Señalar la lengua | `pal_sense_of_taste` | nova | Boca con lengua saboreando una fresa señalada para el sentido del gusto. |
 | Sense of touch | Tacto | Tacto | Enseñar las manos abiertas | `pal_sense_of_touch` | nova | Dos manos abiertas palpando algodón suave y piña rugosa para sentir el tacto. |
+| Sense | Sentido | Sentido | Tocar ojos, orejas, nariz, boca y mano | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Sensory bag | Bolsa sensorial | Bolsa sensorial | Apretar la bolsa sensorial | `pal_sensory_bag` | nova | Bolsa sensorial transparente con piezas brillantes dentro. |
 | Sensory ball | Pelota sensorial | Pelota sensorial | Apretar la pelota con pinchos suaves | `pal_sensory_ball` | nova | Pelota sensorial morada cubierta de bultitos blandos. |
 | Sensory | Sensorial | Sensorial | Tocar varias texturas | `pal_sensory` | nova | Tablero sensorial con cuatro texturas distintas exploradas con el tacto. |
@@ -2438,17 +2973,22 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Set a timer | Poñer o temporizador | Poner el temporizador | Pulsar un botón imaginario | `pal_set_a_timer` | nova | Temporizador redondo rojo con flecha girando para ajustar el tiempo. |
 | Set of weights | Xogo de pesas | Juego de pesas | Poner pesas imaginarias | `pal_set_of_weights` | nova | Juego de tres pesas de hierro ordenadas de menor a mayor. |
 | Set sail | Zarpar | Zarpar | Empujar y salir navegando | `pal_set_sail` | composta | Velero soltando amarras impulsado por el viento sobre el mar. |
+| Setting | Lugar da historia | Lugar de la historia | Abrir los brazos como un escenario | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Settle | Acougar | Calmarse | Pasar la mano por la espalda en círculos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Shade card | Carta de tons | Carta de tonos | Pasar de claro a oscuro | `pal_shade_card` | nova | Carta de tonos progresivos desde el azul más claro al más oscuro. |
 | Shade your eyes | Taparse do sol | Taparse del sol | Poner la mano sobre los ojos | `pal_shade_your_eyes` | nova | Niño llevando la mano horizontal sobre las cejas para taparse del sol. |
 | Shade | Sombra | Sombra | Ponerse a la sombra | `pal_shade` | nova | Niño resguardado a la sombra fresca debajo de un árbol frondoso. |
 | Shadow | Sombra | Sombra | Moverse imitando la sombra de otra persona | `pal_shadow` | nova | Niño de pie al sol proyectando su sombra oscura sobre la hierba. |
 | Shake dry | Sacudir para secar | Sacudir para secar | Sacudir las manos tres veces | `pal_shake_dry` | composta | Perro sacudiéndose con fuerza para soltar las gotas de agua. |
+| Shake hands kindly | Darse a man con agarimo | Darse la mano con cariño | Darse la mano sonriendo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Shake hands | Dar a man | Dar la mano | Dar la mano a quien está al lado y moverla | `pal_shake_hands` | nova | Dos niños estrechándose la mano con cordialidad. |
 | Shake it all out! | Sacúdeo todo! | ¡Sacúdelo todo! | Sacudir el cuerpo | `pal_shake_it_all_out` | nova | Niño sacudiendo enérgicamente brazos y piernas para soltar todo el cuerpo. |
 | Shake off | Sacudir | Sacudir | Sacudir las manos mojadas | `pal_shake_off` | composta | Manos sacudiendo hacia abajo las gotas de agua restantes. |
+| Shake on it | Darse a man | Estrecharse la mano | Estrecharse la mano con el compañero | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Shake out | Sacudir | Sacudir | Sacudir todo el cuerpo | `pal_shake_out` | nova | Sacudiendo una manta o alfombra al aire libre para quitar el polvo. |
 | Shake the bottle | Axita a botella | Agita la botella | Agitar una botella imaginaria con arroz | `pal_shake_the_bottle` | nova | Criatura agitando arriba y abajo una botella cerrada con granos dentro. |
 | Shake the glitter | Axitar a purpurina | Agitar la purpurina | Agitar la botella de purpurina | `pal_shake_the_glitter` | composta | Tarro de purpurina agitándose con ondas de movimiento y destellos. |
+| Shake the tree gently! | Abanea a árbore amodo! | ¡Sacude el árbol despacio! | Sacudir suave | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Shake the tree | Abanear a árbore | Sacudir el árbol | Sacudir los brazos | `pal_shake_the_tree` | composta | Árbol frondoso sacudiéndose mientras caen manzanas rojas al suelo. |
 | Shake your bells loudly | Toca forte as túas campás | Toca fuerte tus campanas | Agitación enérgica de los brazos por encima de la cabeza. | `pal_shake_your_bells_loudly` | composta | Campanas sonando fuerte al agitarlas. |
 | Shake your hands! | Abanea as mans! | ¡Agita las manos! | Sacudir los brazos con fuerza. | `pal_shake_your_hands` | composta | Agitando ambas manos alegremente en el aire. |
@@ -2461,8 +3001,16 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Shape sorter | Encaixable de formas | Encajable de formas | Meter la forma en su hueco | `pal_shape_sorter` | nova | Caja amarilla encajable con huecos de círculo, triángulo y cuadrado. |
 | Shape | Forma | Forma | Hacer una forma con el cuerpo y quedarse quietos | `pal_shape` | nova | Círculo, cuadrado y triángulo mostrando formas geométricas. |
 | Shapes in the room | Formas na sala | Formas en la sala | Señalar formas alrededor | `pal_shapes_in_the_room` | nova | Triángulo, cuadrado y círculo colgados en la sala señalados. |
+| Share blocks | Compartir bloques | Compartir bloques | Dar la mitad de los bloques | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Share equally | Repartir por igual | Repartir por igual | Dar lo mismo a cada uno | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Share memories | Compartir recordos | Compartir recuerdos | Hablar mirando a un amigo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Share out | Repartir | Repartir | Repartir castañas entre todos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Share the fruit | Repartir a froita | Repartir la fruta | Dar una fruta a cada uno | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Share toys | Compartir xoguetes | Compartir juguetes | Dar un juguete | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Share | Compartir | Compartir | Partir un objeto imaginario y dar la mitad | `pal_share` | nova | Dos niños compartiendo por la mitad la fruta sobre la mesa. |
 | Shared blanket | Manta compartida | Manta compartida | Taparse dos con la misma manta | `pal_shared_blanket` | nova | Dos niños tapados juntos bajo la misma manta morada. |
+| Sharing | Que comparte | Que comparte | Partir la plastilina en dos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Sharp-eyed | De vista aguda | De vista aguda | Mirar muy atento | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | She asked where the snake went. | Ela preguntou onde ía a serpe. | Ella preguntó dónde iba la serpiente. | — | `pal_where_snake_went` | composta | Niño señalando hacia la hierba por donde se desliza la serpiente. |
 | She explained that the colours mix. | Ela explicou que as cores se mesturan. | Ella explicó que los colores se mezclan. | — | `pal_she_explained_colours_mix` | composta | Rojo y amarillo mezclándose claramente en naranja. |
 | Sheep | Ovella | Oveja | Hacer rizos en el aire alrededor de la cabeza | `pal_pal_sheep` | banco | Oveja blanca lanuda de perfil. |
@@ -2489,13 +3037,18 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Shopping list | Lista da compra | Lista de la compra | Leer una lista imaginaria | `pal_shopping_list` | composta | Libreta de lista de la compra junto a carrito de mercado. |
 | Short | Baixo, baixa | Bajo, baja | Agacharse y hacerse bajito | `pal_short` | nova | Comparación entre figura alta y figura agachada bajita. |
 | Shorter | Máis curto | Más corto | Juntar las manos | `pal_shorter` | nova | Dos regletas donde la flecha señala la pieza más corta. |
+| Shortest day | O día máis curto | El día más corto | Juntar las manos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Shoulder blade | Omoplata | Omóplato | Pasar la mano por el hombro | `pal_shoulder_blade` | nova | Vista trasera señalando los dos omóplatos en la espalda. |
 | Shoulders | Ombros | Hombros | Tocar los hombros | `pal_shoulders` | nova | Niño señalando y tocando ambos hombros resaltados con aros. |
+| Shout for joy | Berrar de ledicia | Gritar de alegría | Levantar los brazos y gritar | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Shout hooray | Berrar hurra | Gritar hurra | Levantar los brazos y gritar | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Show big arms | Amosar brazos grandes | Mostrar brazos grandes | Abrir los brazos mucho | `pal_show_big_arms` | nova | Niño mostrando los brazos extendidos todo lo ancho posible. |
+| Show me the heavy side | Amósame o lado pesado | Enséñame el lado pesado | Bajar un brazo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Show me the star! | Ensíname a estrela! | ¡Enséñame la estrella! | — | `pal_show_me_the_star` | composta | Niño señalando y mostrando la estrella brillante. |
 | Show me your teeth | Amósame os dentes | Enséñame los dientes | Sonreír mucho | `pal_show_me_your_teeth` | nova | Sonrisa grande mostrando las dos hileras limpias de dientes blancos. |
 | Show off | Presumir | Presumir | Girar y enseñar el disfraz | `pal_show_off` | composta | Niño luciendo su corona de disfraz mientras da vueltas. |
 | Show small fingers | Amosar dedos pequenos | Mostrar dedos pequeños | Juntar dos dedos | `pal_show_small_fingers` | nova | Dos manitas pequeñas abiertas enseñando los diez deditos separados. |
+| Show you care | Amosar que che importa | Mostrar que te importa | Abrazar suave | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Show | Amosar | Enseñar | Enseñar un dibujo imaginario al grupo | `pal_show` | nova | Niño levantando y enseñando un dibujo de una flor a otro compañero. |
 | Shower | Ducharse | Ducharse | Dejar caer agua imaginaria desde la cabeza con los dedos | `pal_shower` | banco | Alcachofa de ducha soltando chorros de agua. |
 | Showery | De chuvascos | De chubascos | Mover los dedos como lluvia | `pal_showery` | banco | Nube de chubascos dejando caer gotas de lluvia. |
@@ -2509,15 +3062,23 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Sieve | Coador | Colador | Dejar escurrir agua por el colador | `pal_sieve` | nova | Colador con rejilla reteniendo piedrecitas mientras caen las gotas de agua. |
 | Sift | Peneirar | Tamizar | Mover el tamiz | `pal_sift` | nova | Colador tamizando lluvia fina de harina sobre un cuenco rojo. |
 | Sight | Vista | Vista | Señalar los ojos | `pal_sight` | nova | Ojo abierto con rayos visuales señalado para representar el sentido de la vista. |
+| Sign | Asinar | Firmar | Escribir el nombre en el aire | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Signal | Sinal | Señal | Levantar la mano como una señal | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Signature | Sinatura | Firma | Firmar en el aire | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Silent room | Sala en silencio | Sala en silencio | Poner el dedo en los labios | `pal_silent_room` | composta | Sala en silencio representada por dedo en los labios y altavoz silenciado. |
 | Silent | En silencio | En silencio | Taparse la boca con las manos | `pal_silent` | nova | Rostro en calma con el dedo índice en los labios pidiendo silencio. |
 | Silk scarf | Pano de seda | Pañuelo de seda | Dejar caer el pañuelo sobre la mano | `pal_silk_scarf` | nova | Pañuelo de seda rosa muy fino ondeando en el aire. |
+| Silky | Sedoso | Sedoso | Pasar un pañuelo de seda por la mano | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Silly face | Cara divertida | Cara graciosa | Poner una cara graciosa | `pal_silly_face` | nova | Cara haciendo una mueca divertida guiñando un ojo y sacando la lengua. |
 | Silly hat | Gorro gracioso | Gorro gracioso | Poner un gorro gracioso al bebé | `pal_silly_hat` | composta | Sombrero de copa divertido decorado con flor. |
 | Silly monster | Monstro gracioso | Monstruo gracioso | Poner cara de monstruo riendo | `pal_silly_monster` | nova | Monstruito verde simpático de un ojo con antenas y gran sonrisa. |
+| Silly story | Historia disparatada | Historia disparatada | Reír y encoger los hombros | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Silver | Prateado, prateada | Plateado, plateada | Señalar algo plateado que reluzca | `pal_silver` | nova | Objetos de metal plateado brillante señalados sobre la mesa. |
 | Silvery | Prateado | Plateado | Enseñar un papel plateado | `pal_silvery` | nova | Lámina brillante de papel plateado con reflejos metálicos claros. |
+| Simon says touch your nose | Simón di: toca o nariz | Simón dice: tócate la nariz | Tocar la nariz solo si lo dice Simón | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Sing in tune | Cantar afinado | Cantar afinado | Cantar mirando al director | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Sing louder | Cantar máis forte | Cantar más fuerte | Abrir más la boca | `pal_sing_louder` | nova | Niño con la boca muy abierta cantando con gran volumen y notas grandes. |
+| Sing softer | Cantar máis suave | Cantar más suave | Bajar la voz | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Sing | Cantar | Cantar | Abrir la boca y cantar un «la, la, la» suave | `pal_sing` | nova | Niño abriendo la boca suavemente mientras canta notas musicales. |
 | Sink down | Afundirse | Hundirse | Bajar despacio hasta el suelo | `pal_sink_down` | nova | Piedra hundiéndose hasta el fondo del mar con flecha descendente. |
 | Sink plug | Tapón do lavabo | Tapón del lavabo | Poner y quitar el tapón | `pal_sink_plug` | nova | Tapón negro con cadenita sobre el desagüe del lavabo. |
@@ -2529,8 +3090,10 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Sit around | Sentarse arredor | Sentarse alrededor | Sentarse todos alrededor de la manta | `pal_sit_around` | nova | Niños sentados alrededor de la manta extendida. |
 | Sit on the green mat and freeze! | Senta na esterilla verde e estátua! | Siéntate en la colchoneta verde y ¡estatua! | Desplazarse despacio hacia el cuadrante verde de la alfombra y adoptar postura inmóvil de calma. | `pal_sit_green_mat_freeze` | composta | Niño sentado quieto como estatua en la colchoneta verde. |
 | Sit up | Sentarse | Incorporarse | Ayudar al bebé a sentarse | `pal_sit_up` | nova | Bebé incorporándose hasta quedar sentado con flecha hacia arriba. |
+| Sit with me | Senta comigo | Siéntate conmigo | Dar palmaditas en el suelo al lado | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Sit | Sentar | Sentarse | Bajar despacio hasta sentarse en el suelo | `pal_sit` | composta | Niño sentándose en una silla. |
 | Six-sided | De seis lados | De seis lados | Enseñar seis dedos | `pal_six_sided` | nova | Figura de seis lados coloreados alternando segmentos para contarlos. |
+| Size | Tamaño | Tamaño | Abrir las manos a distinto tamaño | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Skeleton | Esqueleto | Esqueleto | Moverse como un esqueleto de cuento | `pal_skeleton` | nova | Esqueleto blanco sonriente sobre fondo oscuro nocturno. |
 | Skin | Pel | Piel | Acariciar la piel del brazo | `pal_skin` | nova | Mano acariciando suavemente la piel lisa del antebrazo. |
 | Skip | Saltar á corda | Saltar a la comba | Saltar la comba imaginaria | `pal_skip` | composta | Figura saltando a la comba con cuerda por encima de la cabeza. |
@@ -2538,6 +3101,7 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Sky blue | Azul ceo | Azul cielo | Señalar el cielo azul | `pal_sky_blue` | nova | Muestra brillante de azul cielo señalada bajo el cielo despejado. |
 | Sky | Ceo | Cielo | Señalar el cielo y mirar hacia arriba | `pal_sky` | nova | Niño mirando hacia lo alto señalando el cielo azul con nubes. |
 | Sledge | Trineo | Trineo | Sentarse y bajar una montaña imaginaria con los brazos arriba | `pal_sledge` | banco | Trineo para deslizarse sentado en la nieve. |
+| Sleek | Liso e rápido | Liso y rápido | Pasar la mano plana | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Sleep in the flower until the sun wakes up | Durme na flor ata que esperte o sol | Duerme en la flor hasta que despierte el sol | Quietud total sobre la marca hasta escuchar la orden de despertar. | `pal_sleep_flower_sun_wakes` | composta | Niño quieto con ojos cerrados posado junto a la flor mientras sale el sol. |
 | Sleep like the Moon | Durmir coma a Lúa | Dormir como la Luna | Apoyar la cabeza y cerrar los ojos | `pal_sleep_like_the_moon` | composta | Luna creciente acompañando al niño que duerme sereno. |
 | Sleep tight | Durme ben | Que duermas bien | Abrazarse fuerte y quedarse quietos | `pal_sleep_tight` | composta | Noche tranquila arropado fuerte y con los ojos cerrados para dormir bien. |
@@ -2559,19 +3123,26 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Slither | Arrastrarse | Reptar | Arrastrarse por el suelo como una serpiente | `pal_slither` | composta | Serpiente reptando pegada al suelo. |
 | Slope | Costa | Cuesta | Inclinar la mano como una cuesta | `pal_slope` | nova | Cuesta inclinada con pendiente descendente señalada con flecha. |
 | Slot in | Meter no oco | Meter en el hueco | Meter la pieza en el hueco | `pal_slot_in` | nova | Pieza verde encajando exactamente en el hueco de la base de madera. |
+| Slow down your breathing | Respirar máis amodo | Respirar más despacio | Inspirar y espirar muy despacio | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Slow down | Ir máis amodo | Ir más despacio | Mover los brazos cada vez más despacio | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Slow like a snail | Lento coma un caracol | Lento como un caracol | Avanzar muy, muy despacio por el suelo | `pal_slow_like_a_snail` | nova | Caracol avanzando lentamente sobre la hierba verde. |
 | Slow | Lento, lenta | Lento, lenta | Mover las manos muy despacio | `pal_slow` | composta | Tortuga avanzando con flecha corta y tranquila. |
 | Slower | Máis amodo | Más despacio | Golpear más despacio | `pal_slower` | composta | Tortuga frenando aún más despacio. |
+| Slowly, slowly | Amodiño, amodiño | Despacito, despacito | Hacer cualquier movimiento muy, muy despacio | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Sluggish | Lentísimo | Lentísimo | Mover la mano muy despacio | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Slurp up | Sorber | Sorber | Sorber zumo con una pajita | `pal_slurp_up` | composta | Sorbiendo zumo hacia arriba por la pajita del vaso. |
 | Slurp | Sorber | Sorber | Hacer que el peluche bebe del cuenco | `pal_slurp` | nova | Niño sorbiendo fideos largos directamente de un cuenco. |
 | Sly | Astuto | Astuto | Poner cara de pillo | `pal_sly` | composta | Zorro con mirada astuta guiñando ligeramente los ojos: gesto de pillo. |
 | Smack lips | Estalar os beizos | Relamerse | Relamerse contentos | `pal_smack_lips` | composta | Cara feliz relamiéndose los labios con la lengua ante una fresa dulce. |
+| Small and quick | Pequeno e rápido | Pequeño y rápido | Mover los dedos rápido | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Small! | pequeno | pequeño | Encogerse en el suelo como una bola. | `pal_small` | composta | Niño encogido en el suelo haciéndose pequeñito. |
 | Smaller | Máis pequeno | Más pequeño | Juntar más las manos | `pal_smaller` | nova | Dos pelotas comparadas señalando la pelota más pequeña. |
 | Smallest | O máis pequeno | El más pequeño | Juntar las manos hasta tocarse | `pal_smallest` | nova | Tres bolas ordenadas de grande a minúscula con una flecha marcando la más pequeña. |
+| Smell it | Cheirar | Oler | Acercar la fruta a la nariz | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Smell the flower | Cheira a flor | Huele la flor | Inspirar por la nariz | `pal_smell_the_flower` | nova | Niño acercándose a oler el aroma de una flor en el prado. |
 | Smell | Cheirar | Oler | Oler una flor imaginaria cerca de la nariz | `pal_smell` | composta | Niño acercándose a oler una rosa con líneas de aroma. |
 | Smile at me | Sorrí para min | Sonríeme | Acercar la cara y sonreír | `pal_smile_at_me` | nova | Rostro cercano mirando de frente con una sonrisa cálida. |
+| Smile of thanks | Sorriso de agradecemento | Sonrisa de agradecimiento | Sonreír a alguien | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Smile | Sorrir | Sonreír | Sonreír ampliamente mirando al grupo | `pal_smile` | nova | Rostro infantil con sonrisa amplia y alegre. |
 | Smiley face | Cara sorrinte | Cara sonriente | Dibujar una sonrisa en el aire | `pal_smiley_face` | banco | Cara amarilla con gran sonrisa alegre. |
 | Smoke | Fume | Humo | Subir las manos como el humo | `pal_smoke` | composta | Humo gris subiendo desde la madera hacia arriba. |
@@ -2588,6 +3159,7 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Snap | Pechar de golpe | Cerrar de golpe | Juntar las palmas de golpe como una boca que se cierra | `pal_snap` | nova | Mandíbulas cerrándose de golpe con chasquido en el extremo. |
 | Sneak quietly like a fox in the woods | Vai a modiño coma un raposo no bosque | Ve sigiloso como un zorro en el bosque | Marcha silenciosa sobre metatarsos con el tronco ligeramente bajo. | `pal_sneak_fox_woods` | composta | Zorro y niño caminando agachados con sigilo entre árboles del bosque. |
 | Sneak | Andar ás agachadas | Andar a hurtadillas | Caminar en silencio agachado | `pal_sneak` | nova | Niño agachado caminando silenciosamente de puntillas: andar a hurtadillas. |
+| Sniff a flower | Cheirar unha flor | Oler una flor | Acercar la flor a la nariz | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Sniff out | Descubrir polo cheiro | Descubrir por el olor | Oler y señalar | `pal_sniff_out` | composta | Perro olfateando el rastro hasta descubrir un hueso. |
 | Sniff the fruit | Cheirar a froita | Oler la fruta | Acercar la fruta a la nariz | `pal_sniff_the_fruit` | nova | Niño acercándose a oler una manzana fresca sobre la mesa. |
 | Sniff | Ulir | Olfatear | Olfatear el aire como un zorro | `pal_sniff` | composta | Nariz oliendo el aroma de una flor. |
@@ -2601,6 +3173,7 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Snowy outside | Nevado fóra | Nevado fuera | Señalar la ventana | `pal_snowy_outside` | nova | Ventana desde dentro señalando la nieve cayendo fuera. |
 | Snowy white | Branco coma a neve | Blanco como la nieve | Señalar algo blanco | `pal_snowy_white` | nova | Bola y muñeco blanco como la nieve señalados para mostrar el blanco puro. |
 | Snug in the towel | Abrigado na toalla | Arropado en la toalla | Envolver y abrazar | `pal_snug_in_the_towel` | composta | Bebé bien envuelto y arropado en una toalla azul suave. |
+| Snug | Abrigadiño | Arropadito | Arropar al bebé con la manta | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Snuggle | Aconchegarse | Acurrucarse | Acurrucar al bebé contra el pecho | `pal_snuggle` | nova | Bebé acurrucado tiernamente contra el pecho. |
 | Snuggly jumper | Xersei quentiño | Jersey calentito | Abrazarse con el jersey | `pal_snuggly_jumper` | composta | Jersey suave de abrigo abrazado para estar calentito. |
 | Snuggly | Mimoso | Mimoso | Acurrucar al bebé con la mejilla | `pal_snuggly` | composta | Bebé mimoso acurrucado mejilla con mejilla. |
@@ -2616,15 +3189,21 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Soapy | Con xabón | Enjabonado, enjabonada | Mover las manos como si resbalaran de jabón | `pal_soapy` | nova | Manos cubiertas de espuma jabonosa blanca y pompas flotando. |
 | Soar | Planear alto | Planear alto | Abrir los brazos y girar despacio | `pal_soar` | composta | Pájaro planeando alto y niño girando despacio con brazos abiertos. |
 | Soaring | Planeando | Planeando | Volar despacio | `pal_soaring` | nova | Ave planeando serenamente alto entre nubes con las alas abiertas. |
+| Social | Sociable | Sociable | Saludar a todos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Sock puppet | Monicreque de calcetín | Títere de calcetín | Abrir y cerrar la mano como una boca | `pal_sock_puppet` | nova | Mano metida dentro de un títere de calcetín con ojos de botón abriendo la boca. |
 | Socks on the line | Calcetíns na corda | Calcetines en la cuerda | Colgar dos calcetines | `pal_socks_on_the_line` | nova | Par de calcetines de colores colgados con pinzas en la cuerda. |
 | Socks | Calcetíns | Calcetines | Subirse los calcetines imaginarios | `pal_socks` | banco | Par de calcetines de rayas. |
 | Sofa | Sofá | Sofá | Dejarse caer despacio sobre un sofá imaginario | `pal_sofa` | nova | Sofá morado mullido con reposabrazos en el salón. |
 | Soft and dry | Brando e seco | Suave y seco | Acariciar la piel seca | `pal_soft_and_dry` | composta | Toalla doblada seca y suave secando con cuidado la piel. |
+| Soft and slow | Suave e amodo | Suave y despacio | Mover las manos muy despacio | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Soft and sweet | Brando e doce | Blando y dulce | Chafar un trozo de pera | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Soft like a cat | Suave coma un gato | Suave como un gato | Acariciar la propia mejilla | `pal_soft_like_a_cat` | composta | Gatito de pelo suave y niño acariciando su propia mejilla. |
 | Soft or rough? | Suave ou áspero? | ¿Suave o áspero? | Tocar una cosa suave y otra áspera | `pal_soft_or_rough` | nova | Comparación táctil entre algodón muy suave a la izquierda y roca áspera a la derecha. |
 | Soft toy | Peluche | Peluche | Dar el peluche al bebé | `pal_soft_toy` | nova | Osito de peluche suave de felpa marrón claro. |
+| Soft voice | Voz suave | Voz suave | Hablar muy suave | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Soft! | suave, brando | suave, blando | Tocarse las mejillas suavemente. | `pal_soft` | composta | Pluma ligera y suave. |
+| Soft-furred | De pelo suave | De pelo suave | Pasar la mano por el pelo del peluche | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Softer, please | Máis suave, por favor | Más suave, por favor | Bajar las manos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Soggy | Empapado | Empapado | Escurrir un guante mojado | `pal_soggy` | nova | Esponja completamente empapada soltando gotas gruesas de agua. |
 | Soil | Terra | Tierra | Tocar el suelo y frotar las manos como con tierra | `pal_soil` | nova | Montículo oscuro de tierra de jardín. |
 | Solar panel | Placa solar | Placa solar | Poner las manos planas al sol | `pal_solar_panel` | nova | Placa solar azul cuadriculada captando los rayos del sol. |
@@ -2632,16 +3211,22 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Sole | Planta do pé | Planta del pie | Tocar la planta del pie | `pal_sole` | nova | Planta del pie descalzo destacada en el centro mientras el dedo la toca. |
 | Solid | Macizo | Macizo | Golpear el cubo | `pal_solid` | nova | Bloque compacto completamente macizo por dentro. |
 | Solo | Solo | Solo | Dar un paso adelante y cantar | `pal_solo` | composta | Un solo niño iluminado por un foco cantando ante el micrófono. |
+| Solstice | Solsticio | Solsticio | Estirar los brazos al máximo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Solution | Solución | Solución | Chasquear los dedos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Solve | Resolver | Resolver | Juntar dos piezas | `pal_solve` | nova | Dos piezas de puzle acercándose para encajar y resolver el reto. |
+| Solved | Resolto | Resuelto | Dar palmas | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Some soap. | Un pouco de xabón. | Un poco de jabón. | — | `xabon` | reutilizada | Pastilla de jabón con espuma. |
 | Some water. | Un pouco de auga. | Un poco de agua. | — | `auga` | reutilizada | Un poco de agua en el vaso. |
 | Song | Canción | Canción | Mover las manos como si dirigiera una canción | `pal_song` | nova | Niño moviendo las manos dirigiendo una canción rodeado de notas. |
 | Songbird | Paxaro cantor | Pájaro cantor | Silbar como un pájaro | `pal_songbird` | nova | Pájaro cantor azul posado en una rama entonando notas musicales. |
 | Soothing | Calmante | Relajante | Acariciar la espalda en círculos | `pal_soothing` | nova | Caricia suave y circular en la espalda que calma y relaja. |
+| Sort by number | Ordenar por número | Ordenar por número | Poner en fila de menos a más | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Sort | Clasificar | Clasificar | Juntar los objetos del mismo color | `pal_sort` | nova | Dos cestas clasificando piezas rojas a un lado y azules al otro. |
+| Sorted | Clasificado | Clasificado | Juntar ceras del mismo color | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Sound asleep | Profundamente durmido | Profundamente dormido | Apoyar la cabeza en las manos juntas | `pal_sound_asleep` | composta | Cama con persona profundamente dormida bajo la luna. |
 | Soup | Caldo | Caldo | Soplar una cuchara de caldo caliente | `pal_soup` | composta | Cuenco de caldo caliente con cuchara enfriándose con un soplido. |
 | Sour | Acedo, aceda | Ácido, ácida | Poner cara de limón, cerrando los ojos y arrugando la boca | `pal_sour` | nova | Limón amarillo con gesto fruncido de sabor muy ácido. |
+| Sourer | Máis acedo | Más ácido | Arrugar más la cara | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Sow | Sementar | Sembrar | Echar semillas imaginarias al suelo | `pal_sow` | nova | Mano esparciendo semillas sobre los surcos de la tierra. |
 | Space | Espazo | Espacio | Flotar con los brazos abiertos | `pal_space` | composta | Espacio exterior con planeta con anillos y cohete flotando entre estrellas. |
 | Spade | Pa | Pala | Cavar con una pala imaginaria y echar la arena a un lado | `pal_spade` | nova | Pala de jardín con mango rojo y hoja metálica puntiaguda. |
@@ -2654,10 +3239,13 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Sparrow | Pardal | Gorrión | Saltar con los dedos como un gorrión | `pal_sparrow` | composta | Pajarito pequeño dando saltitos cortos por el suelo. |
 | Speak softly | Falar suave | Hablar suave | Decir una palabra muy bajo | `pal_speak_softly` | composta | Hablando con voz muy bajita y ondas pequeñas. |
 | Speaking turn | Quenda de palabra | Turno de palabra | Pasar el micrófono imaginario | `pal_speaking_turn` | nova | Dos niños turnándose para hablar con un micrófono. |
+| Special | Especial | Especial | Señalar a cada criatura con una sonrisa | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Speckled | Pintado | Moteado | Tocar los puntos de un huevo de juguete | `pal_speckled` | nova | Huevo claro cubierto de motas y pintitas marrones tocadas con el dedo. |
+| Speech | Discurso | Discurso | Hablar delante de todos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Speed bump | Resalte | Resalto | Saltar un poco en el sitio | `pal_speed_bump` | nova | Resalto amarillo en la calzada con niño dando un botecito encima. |
 | Speed up and slow down | Acelerar e frear | Acelerar y frenar | Golpear más rápido y más despacio | `pal_speed_up_and_slow_down` | composta | Conejo veloz acelerando frente a tortuga despacio frenando el ritmo. |
 | Speed up | Acelerar | Acelerar | Mover los brazos cada vez más rápido | `pal_speed_up` | composta | Acelerando el paso con doble flecha de velocidad. |
+| Speedy | Veloz | Veloz | Mover los pies muy rápido | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Sphere | Esfera | Esfera | Rodar una bola imaginaria | `pal_sphere` | nova | Esfera tridimensional azul girando sobre su centro. |
 | Spice | Especia | Especia | Espolvorear algo con los dedos | `pal_spice` | nova | Dedos espolvoreando especia molida aromática sobre un cuenco de comida. |
 | Spicy | Picante | Picante | Abanicarse la boca | `pal_spicy` | composta | Guindilla picante roja echando calor junto a niño abanicándose la boca. |
@@ -2678,6 +3266,7 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Spiral | Espiral | Espiral | Dibujar una espiral con el dedo | `pal_spiral` | nova | Espiral nítida trazada desde el centro hacia fuera en azul intenso. |
 | Spiralling | En espiral | En espiral | Girar el dedo | `pal_spiralling` | nova | Espiral continua girando hacia fuera. |
 | Spit in the sink | Cospe no lavabo | Escupe en el lavabo | Escupir en el lavabo | `pal_spit_in_the_sink` | nova | Niño inclinándose sobre el lavabo blanco tras cepillarse los dientes. |
+| Spit out | Cuspir | Escupir | Escupir en el lavabo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Splash about | Chapotear | Chapotear | Golpear el agua con las palmas | `pal_splash_about` | nova | Manos golpeando el agua de la bañera salpicando gotas alrededor. |
 | Splash around | Salpicar arredor | Salpicar alrededor | Pisar fuerte en el charco | `pal_splash_around` | nova | Niño pisando fuerte en el charco salpicando gotas alrededor. |
 | Splash down | Caer salpicando | Caer salpicando | Bajar las manos y abrirlas | `pal_splash_down` | nova | Pelota cayendo al agua y levantando una gran corona de salpicaduras. |
@@ -2692,7 +3281,10 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Sponge ball | Pelota de esponxa | Pelota de esponja | Apretar la pelota de esponja | `pal_sponge_ball` | nova | Pelota blanda amarilla de esponja porosa. |
 | Sponge | Esponxa | Esponja | Apretar una esponja imaginaria sobre el brazo | `pal_sponge` | banco | Esponja amarilla porosa. |
 | spoon | culler | cuchara | — | `pal_pal_spoon` | banco | Cuchara metálica limpia. |
+| Sporty | Deportista | Deportista | Hacer un saludo deportivo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Spot a bird | Ver un paxaro | Avistar un pájaro | Señalar con los prismáticos | `pal_spot_a_bird` | nova | Prismáticos apuntando para avistar un pájaro en vuelo. |
+| Spot the mistake | Atopar o erro | Encontrar el error | Señalar y decir «aquí» | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Spot | Descubrir | Descubrir | Señalar de repente | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Spotless | Impecable | Impecable | Enseñar las manos limpias | `pal_spotless` | nova | Plato blanco completamente limpio e impecable echando destellos. |
 | Spotlight | Foco | Foco | Hacer un círculo de luz con las manos | `pal_spotlight` | nova | Foco proyectando un haz triangular de luz brillante en la oscuridad. |
 | Spotted | De lunares | De lunares | Tocar los lunares de un pañuelo | `pal_spotted` | nova | Pañuelo triangular de lunares grandes de colores tocado con el dedo. |
@@ -2713,24 +3305,32 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Squash | Esmagar | Aplastar | Aplastar uvas imaginarias con los pies en el sitio | `pal_squash` | nova | Zapato aplastando hasta dejar plana una pieza blanda. |
 | Squat | Agacharse | Ponerse en cuclillas | Bajar en cuclillas | `pal_squat` | nova | Niño agachado en cuclillas doblando profundamente ambas rodillas. |
 | Squawk like a seagull! | Gralla coma unha gaivota! | ¡Grazna como una gaviota! | Hacer «cuac» | `pal_squawk_like_a_seagull` | nova | Gaviota blanca con el pico abierto graznando fuerte junto al mar. |
+| Squawk | Grallar | Graznar | Hacer «cuac» fuerte | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Squeaky clean | Limpísimo | Limpísimo | Frotar la mano hasta que «chirría» | `pal_squeaky_clean` | nova | Manos lavadas relucientes y resplandecientes con destellos de limpieza total. |
+| Squeaky voice | Voz aguda | Voz aguda | Hablar muy agudo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Squeeze and let go | Aperta e solta | Aprieta y suelta | Apretar y abrir la mano | `pal_squeeze_and_let_go` | nova | Bola blanda apretada y encogida que vuelve a abrirse al soltarla. |
 | Squeeze tight | Apertar forte | Apretar fuerte | Dar un abrazo fuerte y soltar | `pal_squeeze_tight` | nova | Abrazo apretado con fuerza simbolizado por flechas hacia el centro. |
 | Squeeze | Espremer | Exprimir | Apretar una naranja imaginaria con las dos manos | `pal_squeeze` | nova | Manos apretando una naranja soltando gotas de zumo. |
+| Squeezy | Apertable | Estrujable | Apretar la pelota blanda | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Squelchy | Chapoteante | Chapoteante | Pisar y hacer «chof» | `pal_squelchy` | nova | Pisadas en el barro blando salpicando con ruido chapoteante. |
 | Squirrel | Esquío | Ardilla | Encoger las manos delante del pecho y dar saltitos | `pal_squirrel` | nova | Ardilla pelirroja con gran cola curva sujetando una bellota entre las patas. |
 | Squirt | Botar un chorro | Echar un chorro | Apretar y echar un chorro | `pal_squirt` | composta | Chorro saliendo a presión de un bote al apretarlo. |
 | Squishy | Blandiño | Blandito | Apretar algo blando y soltarlo | `pal_squishy` | nova | Bola blanda deformándose suavemente al apretarla con la mano. |
+| Stack up | Amorear | Amontonar | Amontonar bloques bien alto | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Stack | Empillar | Apilar | Poner un vaso encima de otro | `pal_stack` | nova | Cubos o vasos apilados ordenadamente uno encima de otro. |
+| Stackable | Para empillar | Apilable | Apilar dos piezas | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Stacking cups | Vasos para empillar | Vasos apilables | Apilar los vasos de colores | `pal_stacking_cups` | nova | Torre de vasos apilables de colores del grande al pequeño. |
 | Stag beetle | Vacaloura | Ciervo volante | Poner los dedos como cuernos | `pal_stag_beetle` | nova | Escarabajo ciervo volante marrón oscuro con sus dos grandes cuernos. |
+| Stage directions | Indicacións de escena | Indicaciones de escena | Señalar izquierda y derecha | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Stage | Escenario | Escenario | Subir a un escenario imaginario | `pal_stage` | banco | Escenario de teatro con telón abierto y foco central. |
+| Staircase | Escaleira | Escalera | Subir la mano escalón a escalón | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Stairs | Escaleiras | Escaleras | Subir escalones imaginarios levantando las rodillas | `pal_stairs` | nova | Escaleras de cuatro peldaños subiendo en diagonal. |
 | Stamp feet | Bater os pés | Patalear | Patalear en el suelo | `pal_stamp_feet` | nova | Niño pataleando con fuerza contra el suelo. |
 | Stamp | Pisar forte | Pisotear | Mover los pies del bebé como pisando | `pal_stamp` | nova | Niño pisoteando fuerte con el pie contra el suelo con líneas de impacto. |
 | Stand like a heron | Quedar coma unha garza | Quedarse como una garza | Sostenerse en un pie | `pal_stand_like_a_heron` | composta | Criatura sosteniéndose en un pie imitando a la garza del agua. |
 | Stand like a tree | Ponte coma unha árbore | Ponte como un árbol | Hacer la postura del árbol | `pal_stand_like_a_tree` | nova | Niño en equilibrio sobre una pierna con los brazos alzados como copa de árbol. |
 | Stand on one leg | Suxeitarse nun pé | Sostenerse en un pie | Levantar un pie y contar | `pal_stand_on_one_leg` | nova | Niño manteniendo el equilibrio sobre una sola pierna con brazos abiertos. |
+| Stand tall and proud | Erguerse orgulloso | Ponerse erguido y orgulloso | Estirarse recto | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Stand tall | Estar erguido | Estar erguido | Estirarse recto | `pal_stand_tall` | nova | Niño de pie muy recto y erguido junto a flecha vertical. |
 | Stand up and clap your hands | Ponte de pé e dá palmas | Ponte de pie y da palmas | Levantarse despacio de la alfombra y dar dos palmadas. | `pal_stand_up_and_clap_your_hands` | composta | Niño de pie dando palmas con alegría. |
 | Stand up | Ponte de pé | Ponte de pie | Ponerse de pie despacio desde el suelo | `pal_stand_up` | nova | Niño levantándose de la silla para ponerse de pie. |
@@ -2741,6 +3341,7 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Starlight | Luz de estrela | Luz de estrella | Abrir y cerrar las manos como estrellas | `pal_starlight` | nova | Estrella brillante enviando rayos de luz estelar hacia abajo en la noche. |
 | Starry night | Noite estrelada | Noche estrellada | Mirar arriba abriendo los dedos | `pal_starry_night` | nova | Cielo azul oscuro nocturno colmado de estrellas doradas y luna sobre las colinas. |
 | Starry | Estrelado | Estrellado | Abrir y cerrar los dedos | `pal_starry` | nova | Cielo nocturno completamente estrellado y lleno de estrellas. |
+| Stars are further away than the Moon | As estrelas están máis lonxe ca a Lúa | Las estrellas están más lejos que la Luna | Señalar cerca y lejos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Statue | Estatua | Estatua | Quedarse quieto como una estatua | `pal_statue` | composta | Figura completamente inmóvil sobre un pedestal. |
 | Stay in | Quedar na casa | Quedarse en casa | Señalar la casa y sentarse | `pal_stay_in` | composta | Niño quedándose dentro de casa tranquilo. |
 | Steady beat | Pulso constante | Pulso constante | Golpear igual todo el tiempo | `pal_steady_beat` | composta | Tambor acompañado de cuatro pulsos constantes y regulares. |
@@ -2787,6 +3388,8 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Stone | pedra | piedra | — | `vigo_nat_118` | reutilizada | Piedra redonda del set propio. |
 | Stony | De pedra | De piedra | Golpear una piedra | `pal_stony` | composta | Piedra dura gris recibiendo un golpecito que suena firme. |
 | Stop and go | Parar e seguir | Parar y seguir | Caminar, parar a la señal y volver a caminar | `pal_stop_and_go` | composta | Señal roja de parar alternada con el paso adelante al seguir. |
+| Stop right there! | Para aí! | ¡Para ahí! | Parar y quedarse quieto | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Stop spinning! | Deixa de xirar! | ¡Deja de girar! | Parar de golpe | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Stop! | parar | parar | Quedarse quieto de golpe, con las manos en alto. | `pal_stop` | composta | Señal de stop y niño quieto con las manos en alto. |
 | Stop, look and listen | Para, mira e escoita | Para, mira y escucha | Parar, mirar a ambos lados y llevarse la mano a la oreja | `pal_stop_look_and_listen` | composta | Señal de parar, ojos mirando y oreja escuchando. |
 | Stopwatch | Cronómetro | Cronómetro | Pulsar el botón del cronómetro | `pal_stopwatch` | banco | Cronómetro con botón superior y aguja roja, coincidencia directa. |
@@ -2806,7 +3409,9 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Stream | Regato | Arroyo | Mover la mano en olas pequeñas | `pal_stream` | nova | Arroyo serpenteante de agua clara siguiendo su cauce suave. |
 | Streamer | Serpentina | Serpentina | Lanzar una serpentina al aire | `pal_streamer` | banco | Cinta serpentina ondulada. |
 | Street lamp | Farol da rúa | Farol de la calle | Estirarse como un farol | `pal_street_lamp` | nova | Farol alto iluminando la calle durante la noche. |
+| Street sign | Placa da rúa | Placa de la calle | Leer una placa imaginaria | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Street | Rúa | Calle | Caminar en fila como por la calle | `pal_street` | nova | Calle urbana por donde caminan en fila los niños. |
+| Stretch as high as you can | Estírate tan alto como poidas | Estírate tan alto como puedas | Estirarse al máximo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Stretch out your arms | Estirar os brazos | Estirar los brazos | Estirar los brazos en cruz | `pal_stretch_out_your_arms` | nova | Niño estirando ambos brazos completamente en cruz hacia los lados. |
 | Stretch time | Volta á calma | Vuelta a la calma | Estirar despacio | `pal_stretch_time` | nova | Niño sobre la esterilla estirando despacio los brazos hacia arriba en calma. |
 | Stretch | Estirar | Estirar | Estirar todo el cuerpo hacia el techo | `pal_stretch` | composta | Niño estirándose hacia arriba todo lo posible. |
@@ -2819,17 +3424,22 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Stroke | Acariñar | Acariciar | Acariciar el pelo del bebé | `pal_stroke` | nova | Caricia delicada en el pelo del bebé con la mano abierta. |
 | Stroll | Pasear | Pasear | Caminar despacio de la mano | `pal_stroll` | composta | Niño paseando tranquilamente por el parque. |
 | Strong legs | Pernas fortes | Piernas fuertes | Empujar las manos con el pie | `pal_strong_legs` | nova | Niño empujando con mucha fuerza con el pie la pared resistente. |
+| Strong | Forte | Fuerte | Doblar los brazos mostrando fuerza | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Strongest house | A casa máis forte | La casa más fuerte | Poner los brazos firmes | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Strum | Tocar as cordas | Rasguear | Pasar los dedos por las cuerdas de una guitarra imaginaria | `pal_strum` | composta | Mano rasgueando las cuerdas de una guitarra acompañada de notas musicales. |
 | Stuck | Atascado | Atascado | Parar y encoger los hombros | `pal_stuck` | nova | Coche pequeño atascado en un charco de barro sin poder avanzar. |
 | Sturdy | Resistente | Resistente | Empujar la torre sin que caiga | `pal_sturdy` | nova | Niño empujando lateralmente una torre de bloques sólida que se mantiene firme: resistente. |
 | Suck | Chupar | Chupar | Chupar un trozo de naranja | `pal_suck` | nova | Niño chupando un gajo dulce de naranja. |
+| Sudden | Repentino | Repentino | Parar de golpe | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Sugary | Azucrado | Azucarado | Tocar los labios con un dedo | `pal_sugary` | nova | Rosquilla dulce cubierta de cristalitos blancos de azúcar. |
+| Suggest | Suxerir | Sugerir | Abrir la mano hacia delante | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | suitcase | maleta | maleta | — | `pal_pal_suitcase` | banco | Maleta de viaje con asa y ruedas. |
 | Summer hat | Chapeu de verán | Sombrero de verano | Ponerse el sombrero y sonreír | `pal_summer_hat` | composta | Sombrero amplio de ala ancha bajo el sol del verano. |
 | Summer holidays | Vacacións de verán | Vacaciones de verano | Abanicarse contentos | `pal_summer_holidays` | composta | Playa, sombrilla y sol radiante de vacaciones de verano. |
 | Summer reading | Lectura de verán | Lectura de verano | Abrir un libro a la sombra | `pal_summer_reading` | nova | Niño leyendo un libro abierto bajo la sombra de un árbol en un día soleado de verano. |
 | Summer | Verán | Verano | Abanicarse con un abanico imaginario | `pal_summer` | banco | Escena de verano en la playa con sol brillante y niños bañándose. |
 | Summertime | De verán | Veraniego | Abanicarse contentos | `pal_summertime` | composta | Ambiente veraniego con sol brillante, gafas de sol y helado. |
+| Summery | De verán | Veraniego | Abanicarse sonriendo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Sun and rain together | Sol e choiva á vez | Sol y lluvia a la vez | Abrir una mano y mover la otra | `pal_sun_and_rain_together` | banco | Sol brillante y nube de lluvia cayendo a la vez. |
 | Sun and water | Sol e auga | Sol y agua | Señalar el sol y luego el agua | `pal_sun_and_water` | composta | Sol brillante arriba y agua azul clara con su gota al lado. |
 | Sun cream | Crema solar | Crema solar | Extender la crema en el brazo | `pal_sun_cream` | composta | Bote de crema protectora solar junto al sol. |
@@ -2852,11 +3462,17 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Sunshade | Parasol do carriño | Parasol del cochecito | Poner el parasol en el cochecito | `pal_sunshade` | banco | Parasol abierto dando sombra. |
 | Sunshine | Raiola | Luz del sol | Poner las manos en las mejillas como si calentaran | `pal_sunshine` | nova | Sol luminoso enviando largos rayos dorados sobre el prado. |
 | Superhero | Superheroe | Superhéroe | Poner los puños en la cadera | `pal_superhero` | banco | Figura de superhéroe con capa. |
+| Supportive | Que apoia | Que apoya | Poner la mano en el hombro | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Suppose you saw a light: what would you say? | Imaxina que ves unha luz: que dirías? | Imagina que ves una luz: ¿qué dirías? | — | `pal_suppose_saw_light` | composta | Luz brillante inesperada en la oscuridad con interrogación. |
 | Surf | Facer surf | Hacer surf | Mantener el equilibrio con los brazos abiertos sobre una tabla imaginaria | `pal_surf` | composta | Niño haciendo equilibrio con los brazos en cruz sobre la tabla encima de la ola. |
 | Surface | Saír á superficie | Salir a la superficie | Subir y coger aire | `pal_surface` | nova | Nadador subiendo hasta asomar la cabeza sobre la superficie del agua. |
+| Surprise ending | Final sorprendente | Final sorprendente | Abrir la boca | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Surprised | Sorprendido, sorprendida | Sorprendido, sorprendida | Abrir mucho los ojos y la boca con sorpresa | `pal_surprised` | banco | Cara con los ojos y la boca muy abiertos de sorpresa. |
+| Surprising | Sorprendente | Sorprendente | Abrir mucho los ojos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Sustainable | Sostible | Sostenible | Poner las manos en equilibrio | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Swallow | Andoriña | Golondrina | Volar con los brazos en V | `pal_swallow` | nova | Golondrina negra y blanca volando con su cola ahorquillada. |
+| Swap roles | Cambiar os papeis | Cambiar los papeles | Cambiar de sitio con un amigo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Swap toys | Intercambiar xoguetes | Intercambiar juguetes | Cambiar un juguete | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Swap | Intercambio | Intercambio | Cambiar un objeto con un amigo | `pal_swap` | nova | Pelota roja y cubo azul intercambiándose de posición. |
 | Sway hips | Mover as cadeiras | Mover las caderas | Mover las caderas al ritmo | `pal_sway_hips` | composta | Balanceando las caderas suavemente de un lado al otro. |
 | Sway like an oak | Abanearse coma un carballo | Mecerse como un roble | Mecer los brazos despacio | `pal_sway_like_an_oak` | composta | Roble frondoso y niño meciendo los brazos despacio como sus ramas. |
@@ -2883,13 +3499,16 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Swing seat | Randeeira de bebé | Columpio de bebé | Empujar el columpio despacio | `pal_swing_seat` | nova | Asiento de columpio suspendido por dos cuerdas al empujarlo suave. |
 | Swing | Randearse | Columpiarse | Balancear los brazos como colgados de una rama | `pal_swing` | nova | Columpio balanceándose hacia delante y arriba. |
 | Swirl | Facer remuíños | Arremolinar | Hacer remolinos con los brazos | `pal_swirl` | nova | Espiral amplia con flecha girando en remolino. |
+| Swirly | En remuíño | En remolino | Hacer un remolino con el dedo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Swish | Enxaugar | Enjuagar | Mover el agua en la boca | `pal_swish` | nova | Carrillos hinchados enjuagando el agua de un lado a otro junto al vaso. |
 | Swishing | Axitado | Ondulante | Mover la cadera como una cola | `pal_swishing` | nova | Cola esponjosa ondulando de lado a lado con arco de movimiento. |
 | Switch off lights | Apagar as luces | Apagar las luces | Pulsar el interruptor | `pal_switch_off_lights` | nova | Interruptor pulsado dejando la bombilla apagada. |
 | Switch off | Apagar | Apagar | Apagar la luz y decir «ooh» | `pal_switch_off` | nova | Dedo apretando la parte inferior de un interruptor para apagar la luz. |
 | Switch on | Acender | Encender | Pulsar el interruptor y ver la luz | `pal_switch_on` | nova | Interruptor activado en verde junto a bombilla amarilla recién encendida. |
+| Switch | Cambiar de súpeto | Cambiar de golpe | Cambiar de dirección | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Swivel chair | Cadeira xiratoria | Silla giratoria | Girar despacio en la silla | `pal_swivel_chair` | composta | Silla giratoria dando vueltas despacio sobre su base. |
 | Swoop | Baixar en picado | Bajar en picado | Bajar los brazos volando | `pal_swoop` | nova | Águila bajando rápido en picado hacia abajo. |
+| Symbol | Símbolo | Símbolo | Dibujar un círculo y señalarlo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Symmetrical | Simétrico | Simétrico | Abrir los brazos iguales | `pal_symmetrical` | nova | Eje central de simetría con figuras idénticas a izquierda y derecha. |
 | Symmetry | Simetría | Simetría | Mover las dos manos igual | `pal_symmetry` | nova | Alas simétricas idénticas a ambos lados de un eje central. |
 | Table | Mesa | Mesa | Apoyar las palmas de las manos encima de la mesa | `pal_table` | nova | Mesa de madera con las dos manos apoyadas con firmeza encima. |
@@ -2903,14 +3522,21 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Take a break | Facer unha pausa | Hacer una pausa | Parar y respirar | `pal_take_a_break` | nova | Criatura sentada en un banco descansando tranquila en una pausa. |
 | Take a mask | Coller a máscara | Coger la máscara | Coger y ponerse la máscara | `pal_take_a_mask` | nova | Niño cogiendo una máscara de carnaval para ponérsela. |
 | Take a rough leaf and put it in the brown ring | Colle unha folla áspera e ponna no aro marrón | Coge una hoja áspera y ponla en el aro marrón | Elección táctil de una hoja rugosa y traslado hasta el aro marrón. | `pal_rough_leaf_brown_ring` | composta | Hoja entrando en el aro marrón del suelo. |
+| Take a turn | Coller a quenda | Tomar el turno | Coger el palo de la palabra | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Take away | Restar | Restar | Quitar un dedo | `pal_take_away` | nova | Cuatro manzanas retirando una de ellas hacia fuera. |
 | Take cover | Resgardarse | Resguardarse | Taparse la cabeza con las manos | `pal_take_cover` | nova | Niño agachado protegiéndose la cabeza con ambos brazos bajo la lluvia. |
 | Take down | Recoller a roupa | Descolgar | Quitar la ropa de la cuerda | `pal_take_down` | nova | Descolgando ropa limpia de la cuerda de tender. |
 | Take it off! | Quítao! | ¡Quítatelo! | Retirar la prenda suavemente. | `pal_take_it_off` | composta | Gorro levantándose con flecha hacia arriba: quitárselo. |
 | Take off your mask | Quita a máscara | Quítate la máscara | Quitarse la máscara imaginaria y sonreír | `pal_take_off_your_mask` | nova | Niño quitándose el antifaz de carnaval mostrando su cara sonriente. |
 | Take off | Quitar | Quitarse | Quitarse una prenda imaginaria y sacudirla | `pal_take_off` | nova | Criatura tirando hacia arriba para quitarse la camiseta. |
+| Take one away | Quitar un | Quitar uno | Retirar un bloque | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Take only photos | Leva só fotos | Llévate solo fotos | Hacer una foto | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Take photos | Facer fotos | Hacer fotos | Pulsar un botón imaginario | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Take the smock, turn around and give it to Noa | Colle o mandil, dá a volta e dállo a Noa | Coge el babi, date la vuelta y dáselo a Noa | Recoger el babi del cesto, dar un giro completo sobre uno mismo y entregárselo al compañero con ambas manos. | `pal_take_smock_give_noa` | composta | Babi/bata pasando tras darse la vuelta a su compañera. |
+| Take turns directing | Dirixir por quendas | Dirigir por turnos | Pasar la claqueta | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Take turns talking | Falar por quendas | Hablar por turnos | Pasar el palo de la palabra | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Take turns | Facer quendas | Turnarse | Pasar el juguete al siguiente | `pal_take_turns` | composta | Dos niños turnándose ordenadamente por turnos. |
+| Talk it through | Falalo | Hablarlo | Hablar con un amigo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Talkative | Faladeiro | Hablador | Abrir y cerrar la boca del títere | `pal_talkative` | nova | Personaje muy hablador charlando sin parar con varios globos de diálogo. |
 | Talking stick | Pau da palabra | Palo de la palabra | Pasar el palo a quien habla | `pal_talking_stick` | nova | Palo decorado con cintas de colores para pedir el turno de palabra. |
 | Tall and green | Alto e verde | Alto y verde | Estirar el brazo como un tallo | `pal_tall_and_green` | nova | Árbol muy alto y verde con flecha vertical marcando su altura. |
@@ -2922,6 +3548,7 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Tally | Conta de pauciños | Recuento de palitos | Hacer palitos en el aire | `pal_tally` | nova | Pizarra oscura con grupo de cinco palitos de recuento cruzados. |
 | Tambourine | Pandeireta | Pandereta | Tocar una pandereta imaginaria al pulso | `pal_tambourine` | nova | Pandereta redonda con sonajas metálicas tocada con la mano al ritmo musical. |
 | Tangram | Tangram | Tangram | Encajar piezas | `pal_tangram` | nova | Rompecabezas tangram cuadrado formado por siete piezas geométricas de colores. |
+| Tangy | Acedo | Ácido | Poner cara de ácido | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Tank | Tanque de auga | Tanque de agua | Señalar el tanque | `pal_tank` | nova | Tanque transparente lleno de agua azul señalado. |
 | Tap along | Seguir o ritmo | Seguir el ritmo | Dar golpecitos al ritmo | `pal_tap_along` | nova | Golpecitos suaves con el dedo sobre bloque musical de madera siguiendo la música. |
 | Tap lightly | Tocar lixeiro | Tocar suave | Tocar suave la rodilla | `pal_tap_lightly` | nova | Dedo dando toquecitos muy suaves sobre la rodilla. |
@@ -2931,8 +3558,10 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Tap water | Auga da billa | Agua del grifo | Poner las manos bajo el agua | `pal_tap_water` | composta | Grifo abierto con chorro de agua cayendo sobre las manos abiertas. |
 | Tap your knees like rain falling fast | Dá golpiños nos xeonllos coma a choiva que cae rápido | Da golpecitos en las rodillas como la lluvia que cae rápido | Repiqueteo rápido con las dos manos sobre las rodillas. | `pal_tap_knees_like_rain` | composta | Manos dando golpecitos rápidos en las rodillas como lluvia. |
 | Tap | Billa | Grifo | Abrir y cerrar un grifo imaginario | `pal_tap` | nova | Grifo metálico de lavabo con llave azul y una gota de agua. |
+| Tap, tap, tap | Toc, toc, toc | Toc, toc, toc | Dar tres golpecitos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Tap-tap | Plic, plic | Plic, plic | Tocar con el dedo en la palma al pulso de la lluvia | `pal_tap_tap` | composta | Dos golpecitos suaves con baquetas sobre superficie. |
 | Tape measure | Cinta métrica | Cinta métrica | Estirar una cinta imaginaria | `pal_tape_measure` | nova | Cinta métrica amarilla desenrollada con marcas de medida. |
+| Tapping game | Xogo de golpiños | Juego de golpecitos | Dar golpecitos por turnos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Target | Diana | Diana | Apuntar a la diana | `pal_target` | nova | Diana concéntrica roja y blanca con flecha apuntando al centro. |
 | Taste a bit | Probar un pouco | Probar un poco | Acercar un trocito a la boca | `pal_taste_a_bit` | nova | Niño acercando un trocito de fresa del plato a la boca para probar. |
 | Taste sweet | Saber doce | Saber dulce | Sonreír al probar | `pal_taste_sweet` | composta | Criatura probando una cucharadita de miel dulce y sonriendo. |
@@ -2944,24 +3573,39 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Tea set | Xogo de té | Juego de té | Servir té de juguete | `pal_tea_set` | nova | Juego de té infantil con tetera azul y taza con platillo. |
 | Teacher | Mestra, mestre | Maestra, maestro | Señalar con suavidad a la persona docente | `pal_teacher` | banco | Docente junto a la pizarra. |
 | Team circle | Corro do equipo | Corrillo del equipo | Juntarse en círculo | `pal_team_circle` | nova | Equipo de cuatro jugadores reunidos en corrillo en círculo. |
+| Team leader | Xefe de equipo | Jefe de equipo | Ponerse una banda imaginaria | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Team | Equipo | Equipo | Juntar las manos en el centro | `pal_team` | nova | Equipo de tres niños con la misma camiseta unidos juntos. |
+| Team, huddle up! | Equipo, en corro! | ¡Equipo, en corro! | Juntarse en círculo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Teamwork | Traballo en equipo | Trabajo en equipo | Juntar las manos en el centro | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Teddy | Osiño de peluche | Osito de peluche | Abrazar un osito imaginario contra el pecho | `pal_teddy` | banco | Osito de peluche suave. |
 | Teeny | Pequerrecho | Pequeñito | Enseñar un espacio mínimo entre los dedos | `pal_teeny` | nova | Insecto diminuto destacado con lupa al lado de una manzana grande. |
 | Teeth | Dentes | Dientes | Enseñar los dientes con una sonrisa grande | `pal_teeth` | nova | Gran sonrisa abierta enseñando los dientes blancos alineados. |
 | Teethe | Botar os dentes | Echar los dientes | Dar el mordedor al bebé | `pal_teethe` | nova | Bebé mordisqueando un aro mordedor azul suave. |
 | Telescope | Telescopio | Telescopio | Mirar por un tubo imaginario | `pal_telescope` | banco | Telescopio apoyado en trípode. |
+| Tell a dream | Contar un soño | Contar un sueño | Mover las manos recordando | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Tell a story | Contar unha historia | Contar una historia | Mover las manos explicando | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Tell in order | Contar en orde | Contar en orden | Levantar uno, dos, tres dedos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | temperature | temperatura | temperatura | — | `pal_temperature` | composta | Termómetro central entre calor (sol y fuego) y frío (copo de nieve y hielo): temperatura. |
 | Tempo | Tempo musical | Tempo musical | Golpear rápido y luego despacio | `pal_tempo` | composta | Metrónomo en movimiento marcando cambios rápidos y lentos de tempo. |
 | Ten little fingers | Dez dedos pequenos | Diez deditos | Enseñar los diez dedos | `pal_ten_little_fingers` | nova | Dos manos abiertas completas mostrando claramente sus diez dedos. |
+| Ten, nine, eight... blast off! | Dez, nove, oito... despegamos! | ¡Diez, nueve, ocho... despegamos! | Contar y saltar | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Tender | Tenro | Tierno | Besar la mano con ternura | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Test an idea | Probar unha idea | Probar una idea | Probar un gesto | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Test | Probar | Probar | Probar un objeto en el agua | `pal_test` | composta | Barreño con agua probando qué objeto flota arriba y cuál se hunde al fondo. |
+| Thank the teachers | Agradecer ás mestras | Agradecer a las maestras | Poner la mano en el pecho | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Thank you for everything | Grazas por todo | Gracias por todo | Poner la mano en el pecho | `pal_thank_you_everything` | composta | Niño llevando la mano al pecho junto a un gran corazón rojo: gracias por todo. |
+| Thank you for helping me | Grazas por axudarme | Gracias por ayudarme | Juntar las manos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Thank you so much! | Moitísimas grazas! | ¡Muchísimas gracias! | Juntar las manos y sonreír | `pal_thank_you_so_much` | banco | Dos manos juntas en señal de gratitud: coincide con el gesto. |
 | Thank you | Grazas | Gracias | Poner la mano en el pecho e inclinar la cabeza | `pal_thank_you` | composta | Manos agradecidas acompañadas de corazón afectuoso. |
 | Thank you, firefighter! | Grazas, bombeiro! | ¡Gracias, bombero! | Saludar al bombero | `pal_thank_you_firefighter` | composta | Camión de bomberos rojo y niño saludando agradecido con la mano. |
 | Thank you, Lúa! | Grazas, Lúa! | ¡Gracias, Lúa! | Saludar a Lúa | `pal_thank_you_l_a` | composta | Lobito Lúa y niño agitando la mano alegremente dándole las gracias. |
+| Thank-you note | Nota de agradecemento | Nota de agradecimiento | Entregar un papel | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Thankful | Agradecido | Agradecido | Poner la mano en el pecho | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | That shadow. | Esa sombra. | Esa sombra. | — | `pal_that_shadow` | composta | Niño proyectando esa sombra alargada en el suelo. |
+| That's OK | Non pasa nada | No pasa nada | Sonreír y abrir las manos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | The apple goes in the basket. | A mazá vai no cesto. | La manzana va en la cesta. | — | `pal_the_apple_goes_in_the_basket` | composta | Manzana entrando hacia abajo dentro de la cesta. |
 | The apple is always cold. | A mazá sempre está fría. | La manzana siempre está fría. | — | `pal_the_apple_is_always_cold` | composta | Manzana fresca rodeada de copos de frío. |
+| The bag is heavier with potatoes | A bolsa pesa máis con patacas | La bolsa pesa más con patatas | Bajar el brazo como si pesara | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | The bag that we used stayed dry. | A bolsa que usamos quedou seca. | La bolsa que usamos se quedó seca. | — | `pal_bag_stayed_dry` | composta | Mochila protegida bajo paraguas mientras la lluvia cae a los lados: se quedó seca. |
 | The bell rings: run to the circle and freeze! | Soa o timbre: corre ao círculo e estátua! | Suena el timbre: corre al círculo y ¡estatua! | Trote rápido hacia el centro de la alfombra y parada instantánea inmóvil como una estatua. | `pal_bell_run_circle_freeze` | composta | Campana sonando arriba y niño que corre hacia la alfombra circular y queda quieto. |
 | The big wheel goes round and round | A noria dá voltas e voltas | La noria da vueltas y vueltas | Girar los brazos | `pal_the_big_wheel_goes_round_and_round` | composta | Noria grande girando sin parar en redondo. |
@@ -2970,17 +3614,21 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | The bottle is loud. | A botella fai moito ruído. | La botella hace mucho ruido. | — | `pal_the_bottle_is_loud` | composta | Botella haciendo mucho ruido con ondas sonoras intensas. |
 | The bread is usually warm. | O pan adoita estar quente. | El pan suele estar templado. | — | `pal_the_bread_is_usually_warm` | composta | Pan templado desprendiendo vapor cálido. |
 | The bread was getting hard. | O pan estaba poñéndose duro. | El pan se estaba poniendo duro. | — | `pal_the_bread_was_getting_hard` | composta | Barra de pan endureciéndose tanto como una piedra. |
+| The brick house is stronger than the straw house | A casa de ladrillo é máis forte ca a de palla | La casa de ladrillo es más fuerte que la de paja | Manos firmes y luego caer | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | The brush is between the cup and the paper. | O pincel está entre a cunca e o papel. | El pincel está entre la taza y el papel. | — | `pal_brush_between_cup_paper` | composta | Pincel colocado justo en medio de la taza y la hoja. |
 | The car is on the block. | O coche está enriba do bloque. | El coche está encima del bloque. | — | `pal_the_car_is_on_the_block` | composta | Coche colocado justo encima del bloque azul. |
 | The cat has to sleep. | O gato ten que durmir. | El gato tiene que dormir. | — | `pal_the_cat_has_to_sleep` | composta | Gato echado descansando para dormir por la noche. |
 | The cat says meow | O gato di miau | El gato dice miau | Señalar al gato y hacer «miau» | `pal_the_cat_says_meow` | composta | Gato maullando alegremente. |
+| The chestnut is heavier than the leaf | A castaña pesa máis ca a folla | La castaña pesa más que la hoja | Bajar una mano y subir la otra | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | The chestnut pops in the fire: jump! | A castaña estoura no lume: salta! | La castaña estalla en el fuego: ¡salta! | Salto vertical con pies juntos y caída sentada en la alfombra. | `pal_chestnut_pops_fire_jump` | composta | Castaña saltando del fuego de otoño. |
 | The cleanest hands! | As mans máis limpas! | ¡Las manos más limpias! | — | `pal_the_cleanest_hands` | composta | Manos relucientes y completamente limpias con destellos. |
 | The deeper you go, the darker it gets | Canto máis fondo, máis escuro | Cuanto más hondo, más oscuro | Bajar y cerrar los ojos | `pal_the_deeper_you_go_the_darker_it_gets` | nova | Gradiente marino desde luz clara arriba hasta fondo oscuro abajo con flecha descendente. |
 | The dog is behind the tree. | O can está detrás da árbore. | El perro está detrás del árbol. | Esconder el perro detrás del árbol | `pal_dog_behind_tree` | composta | Árbol en primer plano y el perro asomando por detrás del tronco. |
 | The Earth goes around the Sun | A Terra xira arredor do Sol | La Tierra gira alrededor del Sol | Caminar alrededor de un amigo | `pal_the_earth_goes_around_the_sun` | composta | La Tierra dando la vuelta entera alrededor del Sol. |
+| The end | Fin | Fin | Cerrar las manos como un libro que se cierra | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | The faces in the spoon were made by us! | As caras da culler fixémolas nós! | ¡Las caras de la cuchara las hicimos nosotros! | — | `pal_faces_in_the_spoon` | composta | Niño reflejando su cara divertida en una cuchara. |
 | The grass tickles! | A herba fai cóxegas! | ¡La hierba hace cosquillas! | Reír tocando la hierba | `pal_the_grass_tickles` | nova | Niño riendo sobre el prado mientras las briznas altas de hierba le hacen cosquillas. |
+| The gull flies higher than the cormorant | A gaivota voa máis alto ca o corvo mariño | La gaviota vuela más alto que el cormorán | Volar alto y bajo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | The hat is chosen by you. | O gorro escólleo ti. | El gorro lo eliges tú. | — | `pal_hat_chosen_by_you` | composta | Dos sombreros arriba y niño señalando el sombrero que elige. |
 | The hedgehog wakes up: FREEZE and curl up small! | O ourizo esperta: estátua e faite unha bóla! | El erizo se despierta: ¡estatua y hazte una bola! | Parada inmediata y encogimiento en ovillo protegiendo la cabeza. | `pal_hedgehog_curl_small` | composta | Erizo despierto junto a niño hecho una bolita pequeña en el suelo. |
 | The hungry wolf wakes up: FREEZE! | O lobo con fame esperta: estátuas! | El lobo hambriento se despierta: ¡estatuas! | Congelación inmediata en la postura en que se estaba. | `pal_hungry_wolf_wakes_freeze` | composta | Sol naciente, lobo hambriento despertando junto a un hueso y niño congelado inmóvil entre barras. |
@@ -2996,6 +3644,7 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | The newspaper is loud, whereas the tissue is soft. | O xornal fai ruído, mentres que o pano é suave. | El periódico suena fuerte, mientras que el pañuelo es suave. | — | `pal_newspaper_loud_tissue_soft` | composta | Periódico ruidoso frente a pañuelo suave y silencioso. |
 | The nut dropped. | A noz caeu. | La nuez cayó. | — | `pal_the_nut_dropped` | composta | Fruto seco cayendo hacia abajo hasta el suelo. |
 | The paint had been drying all morning. | A pintura estivo secando toda a mañá. | La pintura había estado secándose toda la mañana. | — | `pal_paint_drying_all_morning` | composta | Cuadro recién pintado secándose toda la mañana al aire. |
+| The pattern repeats again and again | O patrón repítese unha e outra vez | El patrón se repite una y otra vez | Girar la mano en círculos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | The rainbow, which we painted, is big. | O arco da vella, que pintamos, é grande. | El arcoíris, que pintamos, es grande. | — | `pal_rainbow_painted_big` | composta | Arcoíris grande recién pintado con pincel. |
 | The river runs into the sea | O río desemboca no mar | El río desemboca en el mar | Mover la mano hasta abrirla | `pal_the_river_runs_into_the_sea` | nova | Río azul serpenteante desembocando amplio en las aguas del mar. |
 | The robot walks slowly, but the hero runs fast | O robot camiña amodo, pero o heroe corre rápido | El robot camina despacio, pero el héroe corre rápido | Caminar rígido y luego correr | `pal_the_robot_walks_slowly_but_the_hero_runs_fast` | composta | Robot caminando rígido y despacio frente al héroe corriendo rápido. |
@@ -3008,6 +3657,7 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | The spoons are put away. | As culleres gárdanse. | Las cucharas se guardan. | — | `pal_spoons_put_away` | composta | Cucharas recogidas y guardadas ordenadamente en el cajón. |
 | The stars go up to the ceiling. | As estrelas suben ao teito. | Las estrellas suben al techo. | — | `pal_the_stars_go_up_to_the_ceiling` | composta | Estrellas luminosas subiendo hacia lo alto del techo. |
 | The stone can't float. | A pedra non pode flotar. | La piedra no puede flotar. | — | `pal_the_stone_can_t_float` | composta | Piedra hundiéndose hasta el fondo porque no flota. |
+| The stone sinks, but the cork floats | A pedra afúndese, pero a cortiza flota | La piedra se hunde, pero el corcho flota | Bajar una mano y subir la otra | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | The stone was big. | A pedra era grande. | La piedra era grande. | — | `pal_the_stone_was_big` | composta | Una piedra enorme ocupando gran parte de la escena. |
 | The stones were in two piles. | As pedras estaban en dous montóns. | Las piedras estaban en dos montones. | — | `pal_stones_two_piles` | composta | Piedras agrupadas en dos montones separados. |
 | The storm is here: run and hide under the umbrella! | Chega a tormenta: corre e agóchate debaixo do paraugas! | Llega la tormenta: ¡corre y escóndete bajo el paraguas! | Dispersión rápida y agachada bajo un paraguas imaginario. | `pal_storm_hide_umbrella` | composta | Nube de tormenta con rayos y niños agachados resguardándose bajo un paraguas. |
@@ -3025,6 +3675,7 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | The train starts slow, then fast, then stops. | O tren empeza amodo, logo rápido, logo para. | El tren empieza despacio, luego rápido, luego para. | — | `pal_train_slow_fast_stops` | composta | Tren cambiando de despacio a rápido y parando. |
 | The tram is faster than the bus | O tranvía é máis rápido ca o autobús | El tranvía es más rápido que el autobús | Mover las manos rápido y despacio | `pal_the_tram_is_faster_than_the_bus` | nova | Tranvía verde adelantando con estelas de velocidad al autobús amarillo. |
 | The vet helps animals because she loves them | A veterinaria axuda aos animais porque os quere | La veterinaria ayuda a los animales porque los quiere | Acariciar un peluche | `pal_the_vet_helps_animals_because_she_loves_them` | composta | Veterinaria cuidando con estetoscopio y cariño a los animales. |
+| The warmer it gets, the faster it cooks | Canto máis quente, máis rápido se fai | Cuanto más caliente, más rápido se hace | Frotar las manos rápido | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | The weather was checked every morning. | O tempo mirábase cada mañá. | El tiempo se miraba cada mañana. | — | `pal_weather_checked_morning` | composta | Niño mirando el tiempo atmosférico cada mañana por la ventana. |
 | The wheels go round | As rodas xiran | Las ruedas giran | Girar los brazos como ruedas | `pal_the_wheels_go_round` | composta | Autobús con sus dos ruedas girando en círculos. |
 | The wild boar is coming: FREEZE! | Vén o xabaril: estátuas! | Viene el jabalí: ¡estatuas! | Parada tónica inmediata en la postura exacta en que se estaba. | `pal_wild_boar_freeze` | composta | Jabalí entrando por la izquierda y niño parado inmóvil como una estatua. |
@@ -3032,26 +3683,37 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | The wind is blowing | Sopra o vento | Sopla el viento | Soplar y mover los brazos | `pal_the_wind_is_blowing` | composta | Ráfagas de aire moviendo las hojas por el campo. |
 | The wolf is watching: FREEZE! | O lobo está mirando: estátuas! | El lobo está mirando: ¡estatuas! | Parada tónica inmediata manteniendo la postura del animal. | `pal_wolf_watching_freeze` | composta | Lobo observando atento a un niño congelado inmóvil sin moverse. |
 | The wolf sleeps again: tiptoe away | O lobo volve durmir: vaite de puntillas | El lobo vuelve a dormir: vete de puntillas | Marcha silenciosa de puntillas alejándose del centro. | `pal_wolf_sleeps_tiptoe_away` | composta | Lobo dormido a la izquierda y niño alejándose despacio de puntillas hacia la derecha. |
+| Theatrical | Teatral | Teatral | Abrir los brazos exagerando | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | There are bubbles. | Hai burbullas. | Hay burbujas. | — | `pal_there_are_bubbles` | banco | Burbujas en el aire. |
 | There is a towel. | Hai unha toalla. | Hay una toalla. | — | `toalla` | reutilizada | Una toalla colgada. |
+| There it is! | Aí está! | ¡Ahí está! | Señalar la sonrisa del bebé | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | There might be more spoons. | Pode que haxa máis culleres. | Puede que haya más cucharas. | — | `pal_there_might_be_more_spoons` | composta | Varias cucharas alineadas una junto a la otra. |
 | Thermometer | Termómetro | Termómetro | Subir y bajar un dedo | `pal_thermometer` | banco | Termómetro rojo y blanco. |
 | Thermos | Termo | Termo | Servir algo caliente del termo | `pal_thermos` | nova | Termo metálico con tapón rojo manteniendo la bebida caliente. |
+| They lived happily ever after | Viviron felices para sempre | Vivieron felices para siempre | Abrazarse | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | They move across the room. | Móvense polo cuarto. | Se mueven por la habitación. | — | `pal_they_move_across_the_room` | composta | Niños cruzando de lado a lado por toda la sala. |
+| Thick | Mesto, mesta | Espeso, espesa | Remover con fuerza como en una papilla espesa | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Thin | Delgado, delgada | Delgado, delgada | Juntar las palmas muy estiradas hacia arriba | `pal_thin` | nova | Forma alta y muy estrecha estirada entre las palmas juntas. |
 | Think hard | Pensar moito | Pensar mucho | Poner el dedo en la frente | `pal_think_hard` | nova | Niño pensativo con gran nube de ideas encendiéndose arriba. |
 | Thirsty | Con sede | Con sed | Hacer el gesto de beber con la mano en forma de vaso | `pal_thirsty` | composta | Criatura con calor y sed tendiendo la mano hacia un vaso de agua fresca. |
 | This card is for my grandma | Esta postal é para a miña avoa | Esta postal es para mi abuela | Enseñar la postal | `pal_this_card_is_for_my_grandma` | composta | Niño entregando con cariño una postal con flor a su abuela sonriente. |
 | This flower has more petals than that one | Esta flor ten máis pétalos ca esa | Esta flor tiene más pétalos que esa | Señalar y comparar | `pal_this_flower_has_more_petals_than_that_one` | nova | Flor de ocho pétalos comparada con otra de cuatro señalando la que tiene más. |
+| This is for you | Isto é para ti | Esto es para ti | Extender una postal | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | This is the best soap. | Este é o mellor xabón. | Este es el mejor jabón. | — | `pal_this_is_the_best_soap` | composta | Pastilla de jabón reluciente destacada como la mejor. |
 | This is the cloth that drinks water. | Este é o pano que bebe a auga. | Este es el paño que bebe el agua. | — | `pal_cloth_drinks_water` | composta | Paño amarillo posado en un charco absorbiendo el agua hacia arriba. |
 | This leaf. | Esta folla. | Esta hoja. | — | `pal_this_leaf` | composta | Esta hoja señalada de cerca con flecha. |
+| This little piggy | Este porquiño | Este cerdito | Coger un dedo del pie tras otro | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | This must be your spoon. | Esta ten que ser a túa culler. | Esta debe de ser tu cuchara. | — | `pal_this_must_be_your_spoon` | composta | Flecha señalando exactamente una cuchara concreta. |
 | This one is darker than that one | Esta é máis escura ca esa | Esta es más oscura que esa | Comparar dos hojas | `pal_this_one_is_darker_than_that_one` | nova | Dos hojas lado a lado: una verde clara y otra mucho más oscura. |
 | This one is longer | Este é máis longo | Este es más largo | Señalar el más largo | `pal_this_one_is_longer` | nova | Lápiz rojo mucho más largo comparado con uno corto y señalado. |
 | This time tomorrow, we will be using the torch. | Mañá a esta hora estaremos usando a lanterna. | Mañana a esta hora estaremos usando la linterna. | — | `pal_tomorrow_using_torch` | composta | Calendario de mañana junto a linterna iluminando. |
+| This tree is older than our grandparents | Esta árbore é máis vella ca os nosos avós | Este árbol es más viejo que nuestros abuelos | Señalar y comparar | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Thoughtful idea | Idea pensada | Idea pensada | Tocar la frente despacio | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Thoughtful | Considerado | Atento | Tocar la cabeza y el pecho | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Thread beads | Enfiar contas | Ensartar cuentas | Pasar un hilo imaginario | `pal_thread_beads` | nova | Cuentas de colores ensartándose en un cordón. |
 | Three little pigs | Tres porquiños | Tres cerditos | Enseñar tres dedos | `pal_three_little_pigs` | composta | Tres cerditos rosados alineados uno junto al otro en el prado. |
+| Three plus two makes five | Tres máis dous son cinco | Tres más dos son cinco | Enseñar tres y dos dedos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Three, two, one, happy new year! | Tres, dous, un, feliz ano novo! | ¡Tres, dos, uno, feliz año nuevo! | Contar y saltar | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Through the grass | Pola herba | Por la hierba | Abrirse paso con las manos entre hierba alta | `pal_through_the_grass` | nova | Manos apartando y abriéndose paso entre briznas altas de hierba. |
 | Through the jungle | Pola selva | Por la selva | Caminar apartando hojas | `pal_through_the_jungle` | composta | Niño abriéndose paso entre grandes hojas y árboles de la selva. |
 | Throw and catch | Lanzar e coller | Lanzar y coger | Lanzar y coger una pelota | `pal_throw_and_catch` | nova | Dos niños lanzándose y cogiendo una pelota roja por el aire. |
@@ -3061,6 +3723,8 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Throw | Lanzar | Lanzar | Lanzar una bola de nieve imaginaria muy suave | `pal_throw` | nova | Niño lanzando suavemente una bola de nieve blanca por el aire. |
 | Thrown gently, it flew far. | Lanzado con suavidade, voou lonxe. | Lanzado con suavidad, voló lejos. | — | `pal_thrown_gently_it_flew_far` | composta | Avión planeando lejos con suavidad por el cielo. |
 | Thumb | Polgar | Pulgar | Levantar el pulgar hacia arriba | `pal_thumb` | nova | Mano levantando claramente el dedo pulgar hacia arriba. |
+| Thumbs up for a clean beach! | Polgar arriba pola praia limpa! | ¡Pulgar arriba por la playa limpia! | Levantar el pulgar | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Thumbs up for a clean sea! | Polgar arriba polo mar limpo! | ¡Pulgar arriba por el mar limpio! | Levantar el pulgar | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Thumbs up | Polgar arriba | Pulgar arriba | Levantar el pulgar | `pal_thumbs_up` | banco | Mano haciendo el gesto del pulgar arriba. |
 | Thumping | Retumbante | Que retumba | Golpear con el pie y escuchar | `pal_thumping` | nova | Pie golpeando fuerte en el suelo con ondas de retumbo. |
 | Thunder | Trono | Trueno | Golpear en las piernas muy fuerte | `pal_thunder` | composta | Nube de tormenta con relámpago amarillo y estruendo de trueno. |
@@ -3069,8 +3733,10 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Tickle toes | Facer cóxegas nos pés | Hacer cosquillas en los pies | Pasar hierba por los pies | `pal_tickle_toes` | nova | Pluma suave haciendo cosquillas en los dedos del pie. |
 | Tickle tummy | Facer cóxegas na barriga | Hacer cosquillas en la barriga | Hacer cosquillas en la barriga despacio | `pal_tickle_tummy` | nova | Mano haciendo cosquillas suaves en la barriguita del bebé. |
 | Tickle | Facer cóxegas | Hacer cosquillas | Caminar con los dedos por el brazo haciendo cosquillas | `pal_tickle` | nova | Dedos caminando suavemente por el brazo haciendo cosquillas alegres. |
+| Ticklish feet | Pés con cóxegas | Pies cosquillosos | Hacer cosquillas en los pies | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Ticklish | Con cóxegas | Cosquilloso, cosquillosa | Reír encogidos cuando alguien se acerca con los dedos | `pal_ticklish` | nova | Niño riendo encogido mientras una pluma suave le hace cosquillas. |
 | Tickly grass | Herba que fai cóxegas | Hierba que hace cosquillas | Reír al tocar la hierba | `pal_tickly_grass` | nova | Hierba alta y fina rozando la planta del pie descalzo haciendo cosquillas. |
+| Tickly | Que fai cóxegas | Que hace cosquillas | Hacerse cosquillas suaves en el brazo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Tidal | De marea | De marea | Mover la mano adelante y atrás | `pal_tidal` | composta | Oleaje azul yendo y viniendo en el vaivén de las mareas. |
 | Tide | Marea | Marea | Mover la mano adelante y atrás | `pal_tide` | composta | Olas de la marea que vienen y van entre flechas. |
 | Tidy up! | A recoller! | ¡A recoger! | Recoger juguetes imaginarios y guardarlos en una caja | `pal_tidy_up` | composta | Juguetes sueltos recogidos y guardados dentro de su caja. |
@@ -3079,16 +3745,20 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Tidy-up song | Canción de recoller | Canción de recoger | Cantar mientras se recoge | `pal_tidy_up_song` | nova | Niño guardando bloques en la caja de juguetes mientras canta la canción. |
 | Tie up | Amarrar | Amarrar | Hacer un nudo en el aire | `pal_tie_up` | composta | Amarrando el barco con cabo firme al poste del puerto. |
 | Tie | Atar | Atar | Hacer un lazo con los dedos como en los cordones | `pal_tie` | nova | Zapatilla azul con los cordones recién atados en un lazo limpio. |
+| Tied | Empatados | Empatados | Juntar las dos manos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Tiger cub | Tigriño | Cachorro de tigre | Acurrucarse como un cachorro de tigre | `pal_tiger_cub` | composta | Cachorro de tigre acurrucado y niño abrazándose suave como él. |
 | Tiger | Tigre | Tigre | Poner las manos como garras de tigre | `pal_tiger` | banco | Tigre rayado de cuerpo entero. |
 | Tight | Apertado, apertada | Apretado, apretada | Apretar los brazos contra el cuerpo | `pal_tight` | nova | Caja fuertemente apretada y atada por cintas rojas. |
 | Tightrope | Corda frouxa | Cuerda floja | Caminar por la línea con los brazos en cruz | `pal_tightrope` | nova | Niño caminando en equilibrio por una línea fina con los brazos en cruz. |
 | Tights | Medias | Leotardos | Tirar de los leotardos hacia arriba | `pal_tights` | nova | Leotardos morados largos estirándose hacia arriba al ponérselos. |
 | Tile | Baldosa | Azulejo | Posar la mano plana | `pal_tile` | nova | Azulejo cuadrado esmaltado con dibujo geométrico. |
+| Time for a drink | Hora de beber | Hora de beber | Acercar la botella | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Time it | Cronometrar | Cronometrar | Pulsar un cronómetro | `pal_time_it` | nova | Cronómetro deportivo pulsando el botón superior para medir el tiempo. |
 | Timeline | Liña do tempo | Línea del tiempo | Señalar de una punta a otra | `pal_timeline` | nova | Línea del tiempo de izquierda a derecha mostrando etapas sin texto ni cifras. |
 | Timer song | Canción de dous minutos | Canción de dos minutos | Cantar mientras se cepilla | `pal_timer_song` | composta | Reloj de arena junto al cepillo de dientes y notas para la canción de dos minutos. |
 | Timer | Temporizador | Temporizador | Girar un reloj imaginario | `pal_timer` | banco | Temporizador redondo con manecilla. |
+| Timetable board | Horario da clase | Horario de la clase | Señalar horas | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Timetable | Horario | Horario | Señalar horas en un reloj | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Tinkly | Cristalino | Tintineante | Tocar la campanita despacio | `pal_tinkly` | nova | Campanita dorada emitiendo un tintineo suave y notas ligeras. |
 | Tiny bits | Anaquiños | Trocitos | Juntar los dedos | `pal_tiny_bits` | nova | Galleta partida en trocitos y miguitas pequeñas sobre tabla de madera. |
 | Tiny shoe | Zapatiño | Zapatito | Juntar mucho las manos | `pal_tiny_shoe` | nova | Zapatito diminuto señalado entre flechas pequeñas. |
@@ -3107,14 +3777,20 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Tissue | Pano de papel | Pañuelo de papel | Limpiar la nariz con un pañuelo | `pal_tissue` | nova | Pañuelo de papel blanco suave y ligero. |
 | Toadstool | Cogomelo de conto | Seta de cuento | Hacer un sombrero de seta con las manos | `pal_toadstool` | nova | Seta roja de cuento con sombrero de lunares blancos. |
 | Toasty warm | Quentiño | Calentito | Abrazar al bebé bien apretado | `pal_toasty_warm` | composta | Calorcito agradable abrazando al bebé bien apretado. |
+| Toasty | Morniño | Calentito | Acercar las manos al calorcito | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Today it has gone fast! | Hoxe foi rápido! | ¡Hoy ha ido rápido! | — | `pal_today_it_has_gone_fast` | composta | Tren desplazándose muy rápido con doble flecha. |
+| Today | Hoxe | Hoy | Señalar el suelo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Toenails | Unllas dos pés | Uñas de los pies | Contar las uñas de los pies | `pal_toenails` | nova | Dedos del pie mostrando claramente las uñas pequeñas. |
 | Toes | Dedos dos pés | Dedos de los pies | Leve cosquilleo en los dedos de los pies. | `pes` | reutilizada | Pies descalzos con sus dedos visibles. |
+| Together again | Xuntos outra vez | Juntos otra vez | Abrazarse de nuevo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Together we are stronger | Xuntos somos máis fortes | Juntos somos más fuertes | Juntar las manos y levantarlas | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Together | Xuntos | Juntos | Juntar las manos de todos | `pal_together` | nova | Dos niños juntos cogiéndose de la mano con alegría. |
 | Tomato | Tomate | Tomate | Enseñar un tomate rojo | `pal_tomato` | banco | Tomate rojo brillante. |
+| Tomorrow | Mañá | Mañana | Señalar hacia delante | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Tongue | Lingua | Lengua | Sacar la lengua y moverla de un lado a otro | `pal_tongue` | banco | Lengua rosada sacada. |
 | Toot the horn | Tocar a serea | Tocar la sirena | Hacer «tuuu» como el barco | `pal_toot_the_horn` | nova | Barquito haciendo sonar su bocina con ondas de sonido. |
 | Toot | Tocar a trompeta | Tocar la trompeta | Soplar una trompeta de juguete | `pal_toot` | composta | Trompeta dorada sonando con notas musicales al soplar. |
+| Toot, toot! | Tuu, tuu! | ¡Tuu, tuu! | Hacer la sirena del barco | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Tooth | Dente | Diente | Señalar el primer diente | `pal_tooth` | banco | Diente blanco limpio. |
 | Toothbrush | Cepillo de dentes | Cepillo de dientes | Sujetar un cepillo de dientes imaginario | `pal_toothbrush` | banco | Cepillo de dientes con pasta. |
 | Toothpaste | Pasta de dentes | Pasta de dientes | Poner un poco de pasta | `pal_toothpaste` | nova | Tubo de pasta de dientes azul apretándose sobre el cepillo. |
@@ -3123,6 +3799,7 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Topple | Caer abaixo | Venirse abajo | Dejar caer la torre | `pal_topple` | nova | Torre de bloques inclinándose y viniéndose abajo. |
 | Torch | Lanterna | Linterna | Encender y apagar la linterna | `pal_torch` | banco | Linterna de mano encendida. |
 | Toss | Lanzar | Lanzar | Lanzar un pañuelo al aire | `pal_toss` | nova | Niño lanzando un pañuelo ligero suave hacia arriba. |
+| Total | Total | Total | Juntar todos los dedos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Touch your head | Toca a cabeza | Tócate la cabeza | Tocarse la cabeza con las dos manos al oír la orden | `pal_touch_your_head` | nova | Niño tocándose la cabeza con las dos manos. |
 | Touch your knees and freeze! | Toca os xeonllos e estátua! | Tócate las rodillas y ¡estatua! | Posar las dos manos sobre las rodillas y mantener el cuerpo quieto como una estatua. | `pal_touch_your_knees_and_freeze` | composta | Niño tocando sus rodillas quieto como estatua. |
 | Touch your knees | Toca os xeonllos | Tócate las rodillas | Tocar las rodillas | `pal_touch_your_knees` | composta | Niño tocándose las dos rodillas con sus manos. |
@@ -3138,7 +3815,11 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Toy watering can | Regadeira de xoguete | Regadera de juguete | Verter agua con la regadera | `pal_toy_watering_can` | nova | Regadera roja de juguete inclinando el pico y regando una flor. |
 | Toy | Xoguete | Juguete | Coger un juguete imaginario y enseñarlo al grupo | `pal_toy` | composta | Osito de peluche y pieza de puzle mostrados como juguetes. |
 | Trace a spiral | Repasar unha espiral | Repasar una espiral | Seguir la espiral con el dedo | `pal_trace_a_spiral` | nova | Dedo trazando y repasando el recorrido de una espiral. |
+| Trace around | Repasar o bordo | Repasar el borde | Seguir el borde con el dedo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Trace | Trazar | Trazar | Seguir con un dedo el borde de una forma | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Tractor | Tractor | Tractor | Hacer «brum brum» empujando | `pal_tractor` | banco | Tractor verde agrícola con ruedas grandes. |
+| Tradition | Tradición | Tradición | Juntar las manos en círculo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Traditional | Tradicional | Tradicional | Bailar como antes | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Traffic light game | Xogo do semáforo | Juego del semáforo | Parar y correr según el color | `pal_traffic_light_game` | composta | Semáforo con luz verde y niño echando a correr. |
 | Traffic light | Semáforo | Semáforo | Levantar la mano para parar y bajarla para seguir | `pal_traffic_light` | composta | Semáforo de luces y mano en alto imitando la señal de parar. |
 | Trail | Pista | Rastro | Seguir una línea en el suelo | `pal_trail` | nova | Sendero natural marcado con pisadas entre la hierba. |
@@ -3146,12 +3827,14 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | train | tren | tren | — | `pal_pal_train` | banco | Tren de pasajeros de perfil. |
 | Tram | Tranvía | Tranvía | Caminar suave sobre una línea | `pal_tram` | banco | Tranvía urbano sobre raíles. |
 | Trampoline | Cama elástica | Cama elástica | Saltar sobre la cama elástica | `pal_trampoline` | nova | Cama elástica con patas y niño rebotando alto encima. |
+| Transfer | Facer transbordo | Hacer transbordo | Cambiar de un sitio a otro | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Travel by boat | Viaxar en barco | Viajar en barco | Balancearse sentados | `pal_travel_by_boat` | composta | Barco de pasajeros viajando sobre el mar. |
 | Travel map | Mapa de viaxe | Mapa de viaje | Señalar un sitio en el mapa | `pal_travel_map` | composta | Mapa extendido de viaje con ruta marcada y brújula. |
 | Travel | Viaxar | Viajar | Volar como un avión hasta otro rincón del aula | `pal_travel` | nova | Avión viajando sobre el planeta azul. |
 | Tray | Bandexa | Bandeja | Llevar la bandeja con las dos manos | `pal_tray` | nova | Bandeja de servir con asas llevando un vaso y un bollo. |
 | Tread | Pisar | Pisar | Pisar despacio una hoja | `pal_tread` | composta | Pie apoyándose firmemente al pisar el suelo. |
 | Treasure basket | Cesta dos tesouros | Cesta de los tesoros | Abrir la cesta y sacar un objeto | `pal_treasure_basket` | nova | Cesta baja de los tesoros llena de objetos naturales para sacar y explorar. |
+| Treasured | Querido | Querido | Abrazar la caja de los recuerdos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Tree bark | Cortiza | Corteza | Pasar la mano por la corteza | `pal_tree_bark` | composta | Tronco de árbol y corteza de madera. |
 | Tree planting | Plantación de árbores | Plantación de árboles | Cavar y plantar | `pal_tree_planting` | nova | Niño plantando y regando un árbol joven en el prado. |
 | Tree pose | Postura da árbore | Postura del árbol | Poner un pie en la rodilla | `pal_tree_pose` | nova | Postura de equilibrio sobre un pie con el otro doblado contra la rodilla. |
@@ -3162,23 +3845,35 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Triangle | Triángulo | Triángulo | Juntar pulgares e índices en forma de triángulo | `pal_triangle` | banco | Triángulo rojo geométrico de tres lados. |
 | Trickle | Escorrer | Escurrir | Bajar un dedo por el cristal | `pal_trickle` | nova | Hilo fino de agua escurriendo lentamente por el cristal. |
 | Trickling | Pingando | Goteando | Mover un dedo despacio | `pal_trickling` | nova | Hilo fino de agua goteando suavemente por la roca hacia el charco. |
+| Tricky | Complicado | Complicado | Rascarse la cabeza | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Tricycle | Triciclo | Triciclo | Pedalear en el aire | `pal_tricycle` | nova | Triciclo infantil rojo de tres ruedas y sillín amarillo. |
 | Tropical | Tropical | Tropical | Mover las manos como hierba alta | `pal_tropical` | nova | Palmera tropical con hojas amplias, flor de hibisco y sol cálido. |
 | Trot | Trotar | Trotar | Hacer trotar al bebé en la rodilla como un caballo | `pal_trot` | composta | Caballo trotando y niño imitando su trote. |
+| Trustworthy | De confianza | De confianza | Poner la mano en el hombro | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Try again | Intentalo de novo | Intentarlo de nuevo | Volver al principio | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Try it | Probar | Probar | Acercar un trocito a la boca | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Try your best | Facelo o mellor posible | Hacerlo lo mejor posible | Apretar los puños con ánimo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Tube | Tubo | Tubo | Mirar a través de un tubo | `pal_tube` | nova | Tubo cilíndrico hueco de cartón abierto por los dos extremos. |
 | Tuck in | Aconchegar | Arropar | Meter la manta bajo el bebé | `pal_tuck_in` | nova | Bebé arropado cómodamente en la cama remetiéndole la manta. |
 | Tulip | Tulipán | Tulipán | Abrir las manos como un tulipán | `pal_tulip` | banco | Tulipán rojo con tallo y hojas. |
 | Tummy time | Tempo boca abaixo | Tiempo boca abajo | Poner al bebé boca abajo en la alfombra | `pal_tummy_time` | nova | Bebé tumbado boca abajo sobre la alfombra mirando una pelota delante. |
 | Tummy | Barriga | Barriga | Acaricia la tripita con movimientos circulares. | `barriga` | reutilizada | Barriga descubierta de frente, dibujo propio. |
+| Tune in | Prestar atención | Prestar atención | Llevar la mano a la oreja | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Tuneful | Melodioso | Melodioso | Tararear bonito | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Tunnel | Túnel | Túnel | Pasar la mano por el túnel de tela | `pal_tunnel` | nova | Túnel arqueado de juegos con flecha atravesándolo. |
 | Turn around | Dá a volta | Date la vuelta | Dar una vuelta entera y mirar al grupo | `pal_turn_around` | composta | Flecha circular rodeando al niño para darse la vuelta. |
 | Turn back | Volver atrás | Volver atrás | Darse la vuelta y caminar de vuelta | `pal_turn_back` | nova | Flecha de giro en U mostrando cómo darse la vuelta para caminar hacia atrás. |
+| Turn it around and try again | Dálle a volta e proba outra vez | Dale la vuelta y prueba otra vez | Girar y volver a probar | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Turn left and step over the rope | Xira á esquerda e pasa por riba da corda | Gira a la izquierda y pasa por encima de la cuerda | Giro a la izquierda y paso elevado por encima de una cuerda en el suelo. | `pal_turn_left_step_rope` | composta | Giro a la izquierda pasando por encima de la cuerda. |
 | Turn left at the square | Xira á esquerda na praza | Gira a la izquierda en la plaza | Caminar y girar a la izquierda | `pal_turn_left_at_the_square` | nova | Plaza cuadrada con fuente central y flecha girando a la izquierda. |
 | Turn left | Xirar á esquerda | Girar a la izquierda | Girar hacia la izquierda | `pal_turn_left` | composta | Flecha curva girando hacia la izquierda. |
+| Turn off lights | Apagar as luces | Apagar las luces | Pulsar un interruptor | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Turn off the light when you leave | Apaga a luz cando saias | Apaga la luz cuando salgas | Pulsar e irse | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Turn off the tap! | Pecha a billa! | ¡Cierra el grifo! | Girar el grifo | `pal_turn_off_the_tap` | nova | Grifo girado para cerrarlo cortando el chorro de agua. |
 | Turn off | Apagar | Apagar | Pulsar el interruptor y cerrar los ojos | `pal_turn_off` | composta | Bombilla apagada y tachada indicando apagar la luz. |
 | Turn on | Acender | Encender | Pulsar un interruptor imaginario y abrir los ojos | `pal_turn_on` | composta | Bombilla encendida con rayos brillantes de luz. |
+| Turn order | Orde de quendas | Orden de turnos | Señalar quién va primero | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Turn out | Desenformar | Desmoldar | Volcar el molde y levantarlo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Turn over a stone | Darlle a volta a unha pedra | Dar la vuelta a una piedra | Voltear una piedra con cuidado | `pal_turn_over_a_stone` | nova | Dando la vuelta con cuidado a una piedra para mirar debajo. |
 | Turn right | Xirar á dereita | Girar a la derecha | Girar hacia la derecha | `pal_turn_right` | nova | Niño y flecha grande girando hacia la derecha. |
 | Turn the page of the calendar | Pasar a folla do calendario | Pasar la hoja del calendario | Pasar una hoja | `pal_turn_the_page_of_the_calendar` | nova | Calendario de pared levantando y pasando la hoja mensual. |
@@ -3199,7 +3894,9 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Two apples, please | Dúas mazás, por favor | Dos manzanas, por favor | Enseñar dos dedos | `pal_two_apples_please` | composta | Mano abierta extendida pidiendo con educación dos manzanas rojas. |
 | Two big stones. | Dúas pedras grandes. | Dos piedras grandes. | — | `pal_two_big_stones` | composta | Dos piedras grandes una al lado de la otra. |
 | Two by two | De dous en dous | De dos en dos | Ponerse por parejas y caminar de la mano | `pal_two_by_two` | nova | Niños caminando emparejados de dos en dos. |
+| Two, four, six, eight | Dous, catro, seis, oito | Dos, cuatro, seis, ocho | Saltar contando | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Umbrella | Paraugas | Paraguas | Sostener un paraguas imaginario por encima de la cabeza | `pal_pal_umbrella` | banco | Paraguas abierto con gotas de lluvia. |
+| Unanimous | Por unanimidade | Por unanimidad | Levantar todos la mano | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Uncle | Tío | Tío | Señalar la foto del tío | `pal_uncle` | nova | Cuadro enmarcado de un tío sonriente con bigote señalado. |
 | Uncover | Destapar | Destapar | Quitar el pañuelo de encima del juguete | `pal_uncover` | nova | Levantando un pañuelo morado para destapar la pelota escondida. |
 | Under the blanket | Debaixo da manta | Debajo de la manta | Esconderse debajo de una manta imaginaria | `pal_under_the_blanket` | nova | Niño escondido debajo de una manta asomando la cabeza. |
@@ -3212,12 +3909,15 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Under the tree | Debaixo da árbore | Debajo del árbol | Agacharse bajo los brazos de una compañera que hace de árbol | `pal_under_the_tree` | composta | Niño agachado debajo de la copa de un árbol grande. |
 | Under the umbrella | Debaixo do paraugas | Debajo del paraguas | Juntarse varias criaturas debajo de un paraguas imaginario | `pal_under_the_umbrella` | composta | Dos criaturas resguardadas bajo un gran paraguas mientras llueve fuera. |
 | Underpass | Paso inferior | Paso inferior | Pasar agachado por debajo | `pal_underpass` | nova | Paso inferior arqueado con niño pasando agachado por debajo. |
+| Understanding | Comprensivo | Comprensivo | Asentir despacio | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Underwater camera | Cámara submarina | Cámara submarina | Hacer fotos con las manos | `pal_underwater_camera` | nova | Cámara impermeable amarilla sacando fotos bajo el mar. |
 | Underwater | Submarino, submarina | Submarino, submarina | Inflar los mofletes y moverse despacio | `pal_underwater` | nova | Escena submarina con peces y burbujas bajo la línea del agua. |
 | Unfold | Despregar | Desplegar | Abrir los dedos despacio como una flor | `pal_unfold` | nova | Paño o papel doblado por el centro desplegándose abierto hacia ambos lados. |
+| Unforgettable | Inesquecible | Inolvidable | Poner las manos en el pecho | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Uniformed | De uniforme | Con uniforme | Estirar la ropa | `pal_uniformed` | nova | Escolar vestido impecablemente con su uniforme azul y corbata. |
 | Unpack | Desempaquetar | Desempaquetar | Sacar las cosas de la cesta | `pal_unpack` | nova | Sacando libros y objetos fuera de la caja abierta. |
 | Unsteady | Inestable | Inestable | Tambalearse y recuperarse | `pal_unsteady` | nova | Niño tambaleándose inestable sobre un tablón estrecho. |
+| Unstoppable | Imparable | Imparable | Correr en el sitio | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Unwind | Desconectar | Desconectar | Soltar los hombros | `pal_unwind` | composta | Relajarse y desconectar suavemente al final del día. |
 | Unwrap | Desembrullar | Desenvolver | Desenvolver despacio un regalo imaginario | `pal_unwrap` | nova | Desenvolviendo el papel de colores de un regalo. |
 | Up and away | Arriba e lonxe | Arriba y lejos | Lanzar la hoja hacia arriba | `pal_up_and_away` | composta | Hoja seca lanzada hacia arriba volando lejos en el cielo. |
@@ -3227,26 +3927,39 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Up in the air | No aire | En el aire | Señalar las burbujas arriba | `pal_up_in_the_air` | nova | Burbujas flotando arriba en el aire señaladas desde abajo. |
 | Up it goes! | Arriba vai! | ¡Arriba va! | Lanzar el pañuelo arriba | `pal_up_it_goes` | nova | Pañuelo azul lanzado bien alto justo por encima de la cabeza. |
 | Up the arm | Polo brazo arriba | Por el brazo arriba | Subir con los dedos hasta el hombro | `pal_up_the_arm` | nova | Flecha roja subiendo desde la mano a lo largo del brazo hacia el hombro. |
+| Up the hill and down again | Monte arriba e outra vez abaixo | Monte arriba y otra vez abajo | Subir y bajar con las manos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Up the hill and down | Outeiro arriba e abaixo | Cuesta arriba y abajo | Subir y bajar con las manos | `pal_up_the_hill_and_down` | nova | Colina verde con flecha subiendo por una ladera y bajando por la otra. |
 | Up the palm tree | Pola palmeira arriba | Por la palmera arriba | Subir los brazos como trepando | `pal_up_the_palm_tree` | nova | Palmera tropical alta con flecha subiendo por el tronco. |
 | Up to the star | Ata a estrela | Hasta la estrella | Estirarse de puntillas hasta tocar una estrella imaginaria | `pal_up_to_the_star` | composta | Estrella brillante arriba y niño estirándose de puntillas para alcanzarla. |
 | Up with the crane | Arriba coa grúa | Arriba con la grúa | Levantar el brazo despacio | `pal_up_with_the_crane` | nova | Grúa amarilla elevando una carga pesada hacia arriba. |
+| Up you come! | Arriba! | ¡Arriba! | Levantar al bebé del suelo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Up | Arriba | Arriba | Eleva las manos del bebé hacia arriba. | `pal_up` | composta | Niño levantando los brazos hacia arriba con flecha ascendente. |
 | Uphill | Costa arriba | Cuesta arriba | Caminar con esfuerzo | `pal_uphill` | nova | Subida pronunciada por una cuesta caminando inclinado con esfuerzo. |
+| Upright posture | Postura dereita | Postura recta | Sentarse recto | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Upright | Dereito | Derecho | Sentar al bebé derecho | `pal_upright` | nova | Bebé sentado bien derecho con guía vertical recta. |
 | Upside-down | Ao revés | Del revés | Poner las manos del revés | `pal_upside_down` | banco | Cara girada completamente del revés. |
 | Upstairs and downstairs | Escaleiras arriba e abaixo | Escaleras arriba y abajo | Subir y bajar escalones imaginarios en el sitio | `pal_upstairs_and_downstairs` | nova | Escaleras con flechas subiendo hacia arriba y bajando hacia abajo. |
 | Upstream | Río arriba | Río arriba | Mover la mano hacia arriba con esfuerzo | `pal_upstream` | composta | Corriente que baja mientras el pez sube río arriba a contracorriente. |
+| Useful helper | Axudante útil | Ayudante útil | Llevar una caja | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Useful | Útil | Útil | Levantar una herramienta | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Vegetables make us strong | As verduras fannos fortes | Las verduras nos hacen fuertes | Poner los brazos fuertes | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Vegetables | Verduras | Verduras | Enseñar una cesta de verduras | `pal_vegetables` | composta | Cesta llena de verduras frescas: zanahoria, brócoli y tomate. |
+| Verse | Verso | Verso | Marcar el ritmo de un verso | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Very dizzy | Moi mareado | Muy mareado | Parar y tambalearse riendo | `pal_very_dizzy` | nova | Niño tambaleándose mareado con espirales dando vueltas sobre la cabeza. |
 | Very old | Moi vello | Muy viejo | Caminar despacio y encorvado | `pal_very_old` | composta | Bastón de apoyo y figura caminando muy despacio ligeramente encorvada. |
 | Vet | Veterinario | Veterinario | Acariciar un animal de peluche | `pal_vet` | composta | Estetoscopio veterinario y gatito cuidado con mimo. |
 | Viewpoint | Miradoiro | Mirador | Mirar lejos con la mano en la frente | `pal_viewpoint` | nova | Mirador con barandilla y visor panorámico dominando el valle. |
+| Vigo was small, but now it is big | Vigo era pequeno, pero agora é grande | Vigo era pequeño, pero ahora es grande | Juntar las manos y abrirlas | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Vine | Liana | Liana | Agarrarse a una liana imaginaria | `pal_vine` | nova | Liana verde colgante con hojas enrollándose desde lo alto. |
 | Vinegar | Vinagre | Vinagre | Hacer mueca de ácido | `pal_vinegar` | nova | Botella de cristal con vinagre dorado sobre la mesa. |
+| Visit | Visitar | Visitar | Caminar y mirar alrededor | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Vivid | Vivo | Vivo | Abrir los ojos mucho | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Voice | Voz | Voz | Hablar con una voz distinta | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Volunteer | Voluntario | Voluntario | Levantar la mano para ayudar | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Vote | Voto | Voto | Levantar la mano para votar | `pal_pal_vote` | banco | Urna con papeleta entrando. |
 | Waddle along | Camiñar bambeando | Caminar bamboleándose | Bambolearse de un lado a otro | `pal_waddle_along` | nova | Patito caminando bamboleándose de un lado a otro. |
 | Waddle | Bambearse | Anadear | Caminar balanceándose como un pato | `pal_waddle` | composta | Pato caminando y niño anadeando balanceando su cuerpo de un lado a otro. |
+| Waddling | Bambeante | Bamboleante | Bambolearse como un pingüino | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Wade in | Entrar camiñando na auga | Entrar caminando en el agua | Levantar las rodillas | `pal_wade_in` | nova | Niño entrando en el agua poco profunda levantando las rodillas al caminar. |
 | Wade | Camiñar pola auga | Caminar por el agua | Levantar mucho las piernas | `pal_wade` | nova | Niño caminando dentro del agua hasta las rodillas salpicando. |
 | Wag | Abanar o rabo | Mover la cola | Mover las caderas como una cola contenta | `pal_wag` | nova | Perrito contento moviendo la cola de lado a lado con arco de meneo. |
@@ -3281,6 +3994,7 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Walk to the hook and hang up your coat | Camiña ata o colgadoiro e colga o abrigo | Camina hasta el perchero y cuelga el abrigo | Caminar con paso firme hacia la percha baja asignada y colgar el abrigo por la presilla. | `pal_walk_hook_hang_coat` | composta | Acercarse al perchero y colgar el abrigo. |
 | Walk together like one big cloud | Camiñade xuntos coma unha nube grande | Caminad juntos como una nube grande | Marcha en grupo compacto, hombro con hombro, a ritmo lento. | `pal_walk_together_cloud` | composta | Tres niños caminando juntos cogidos bajo una gran nube blanca. |
 | Walk | Camiñar | Caminar | Caminar despacio en círculo | `pal_walk` | composta | Niño caminando con paso natural hacia delante. |
+| Walking is better than driving for short trips | Camiñar é mellor ca conducir para ir preto | Caminar es mejor que conducir para ir cerca | Caminar y sonreír | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Walking stick | Caxato | Bastón | Caminar apoyándose en un bastón | `pal_walking_stick` | composta | Bastón de paseo acompañando al niño al caminar. |
 | Walnut | Noz | Nuez | Abrir una nuez imaginaria con las dos manos | `pal_walnut` | nova | Nuez entera con cáscara dura junto a otra mitad abierta mostrando el fruto. |
 | Walrus | Morsa | Morsa | Poner dos dedos como colmillos | `pal_walrus` | nova | Morsa marrón en el mar con dos largos colmillos blancos. |
@@ -3298,9 +4012,12 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Warm with breath | Quentar co alento | Calentar con el aliento | Soplar en las manos | `pal_warm_with_breath` | composta | Niño soplando vaho tibio directamente sobre las manos frías. |
 | Warm your hands and rub them fast | Quenta as mans e frégaas rápido | Calienta las manos y frótalas rápido | Frotar las palmas rápidamente y acercarlas a la cara sintiendo el calor. | `pal_warm_hands_rub_fast` | composta | Manos frotándose rápido para entrar en calor. |
 | Warm! | morno, quentiño | templado, calentito | Abrazarse el pecho, como quien está calentito. | `quente` | reutilizada | Taza humeante: algo calentito. |
+| Warm-hearted | De corazón quente | De buen corazón | Abrazarse a sí mismo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Warm-up exercise | Quecemento | Calentamiento | Mover los brazos en círculos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Warm... soft and warm | Morniño... suave e morno | Calentito... suave y calentito | Envolver los hombros en la toalla cálida. | `pal_warm_soft_and_warm` | composta | Toalla suave y bebida templada: calentito y suave. |
 | Warmer | Máis quente | Más caliente | Frotar las manos | `pal_warmer` | nova | Termómetro con la barra roja subiendo y flecha hacia arriba indicando más calor. |
 | Was the stone the biggest? | Era a pedra a máis grande? | ¿Era la piedra la más grande? | — | `pal_was_the_stone_the_biggest` | composta | Comparación entre una piedra pequeña y la más grande. |
+| Was Vigo always big? | Vigo sempre foi grande? | ¿Vigo siempre fue grande? | Abrir y cerrar las manos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Wash hair | Lavar o pelo | Lavar el pelo | Mojar el pelo con la mano | `pal_wash_hair` | nova | Niño lavándose el pelo con espuma blanca y agua. |
 | Wash thoroughly | Lavar ben | Lavar bien | Frotar entre los dedos | `pal_wash_thoroughly` | nova | Manos entrelazadas lavando a fondo entre todos los dedos con abundante espuma. |
 | Wash vegetables | Lavar as verduras | Lavar las verduras | Frotar una verdura bajo el agua | `pal_wash_vegetables` | composta | Zanahoria y tomate frescos lavándose bajo el agua del grifo. |
@@ -3318,6 +4035,7 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Washing line | Tendal | Tendedero | Estirar una cuerda imaginaria | `pal_washing_line` | nova | Tendedero al aire libre entre dos postes con ropa tendida. |
 | Washing machine | Lavadora | Lavadora | Girar las manos como la lavadora | `pal_washing_machine` | banco | Lavadora con tambor redondo giratorio. |
 | Wasteful habit | Mal costume | Mala costumbre | Negar con la cabeza | `pal_wasteful_habit` | composta | Agua desperdiciándose y basura con aspa roja de mal hábito. |
+| Wasteful | Que malgasta | Que desperdicia | Dejar caer agua y parar | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Watch it grow | Velo medrar | Verlo crecer | Subir la mano despacio | `pal_watch_it_grow` | nova | Planta en maceta creciendo poco a poco hasta florecer. |
 | Watch out, crocodile! | Coidado, crocodilo! | ¡Cuidado, cocodrilo! | Encoger las piernas de golpe y reír | `pal_watch_out_crocodile` | composta | Cocodrilo frente a niño sorprendido que encoge las piernas. |
 | Watch quietly | Observar en silencio | Observar en silencio | Mirar con la mano en la frente | `pal_watch_quietly` | nova | Niño en silencio con dedo sobre los labios observando a la ardilla. |
@@ -3331,6 +4049,7 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Water break | Pausa para beber | Pausa para beber | Beber un sorbo | `pal_water_break` | composta | Pausa tras correr para hidratarse bebiendo agua de la botella. |
 | Water cup | Vaso de auga | Vaso de agua | Beber del propio vaso | `pal_water_cup` | nova | Vaso propio lleno de agua limpia junto a la criatura para beber. |
 | Water cycle | Ciclo da auga | Ciclo del agua | Hacer un círculo con el dedo | `pal_water_cycle` | nova | Ciclo circular del agua entre el mar, las nubes y la lluvia. |
+| Water first, then soap | Primeiro auga, despois xabón | Primero agua, luego jabón | Hacer los dos gestos en orden | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Water is faster than soap. | A auga é máis rápida ca o xabón. | El agua es más rápida que el jabón. | — | `pal_water_is_faster_than_soap` | composta | El agua avanza mucho más rápida que la pastilla de jabón. |
 | Water it | Regala | Regarla | Echar agua con la regadera | `pal_water_it` | composta | Regadera vertiendo agua sobre la planta de la maceta. |
 | Water on my toes | Auga nos dedos dos meus pés | Agua en mis deditos | Echar agua en los pies | `pal_water_on_my_toes` | nova | Pies descalzos chapoteando con los deditos en el agua. |
@@ -3350,6 +4069,7 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Wave and smile | Acenar e sorrir | Saludar y sonreír | Saludar con la mano y sonreír a la vez | `pal_wave_and_smile` | composta | Niño sonriendo ampliamente junto a una mano abierta saludando. |
 | Wave fingers | Mover os dedos | Mover los dedos | Mover los dedos como hierba | `pal_wave_fingers` | nova | Mano abierta moviendo los dedos suavemente de lado a lado. |
 | Wave goodbye | Acenar para despedirse | Decir adiós con la mano | Saludar desde la puerta | `pal_wave_goodbye` | composta | Niño levantando la mano abierta para despedirse diciendo adiós. |
+| Wave to families | Acenar ás familias | Saludar a las familias | Saludar al público | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Wave to the boat | Acenar ao barco | Saludar al barco | Saludar hacia el mar | `pal_wave_to_the_boat` | composta | Niño saludando con la mano al barco que navega. |
 | Wave your graduation cap | Axitar o birrete | Agitar el birrete | Agitar la mano en el aire | `pal_wave_your_graduation_cap` | composta | Niño sosteniendo en alto y agitando alegre el birrete en el aire. |
 | Wave | Acenar | Saludar con la mano | Mover la mano de un lado a otro para saludar | `pal_wave` | nova | Niño levantando y agitando su mano de un lado a otro para saludar. |
@@ -3361,21 +4081,29 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | We are going to lift it. | Imos levantala. | Vamos a levantarla. | — | `pal_we_are_going_to_lift_it` | composta | Preparado para levantar el paquete hacia arriba. |
 | We are tiny seeds under the ground | Somos sementes pequeniñas debaixo da terra | Somos semillas pequeñitas bajo la tierra | Mantenerse encogidos y quietos en el suelo. | `pal_tiny_seeds_ground` | nova | Semillas pequeñitas dormidas debajo de la tierra marrón. |
 | We build a tower and it stands. | Facemos unha torre e aguanta. | Hacemos una torre y aguanta. | — | `pal_we_build_a_tower_and_it_stands` | composta | Torre de tres bloques firmes en pie. |
+| We can both be right | Podemos ter razón os dous | Podemos tener razón los dos | Darse la mano | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | We cut a cross so it doesn't pop | Facemos unha cruz para que non estoupe | Hacemos una cruz para que no explote | Dibujar la cruz | `pal_we_cut_a_cross_so_it_doesn_t_pop` | composta | Castaña marcada con un corte en cruz para asarla sin que explote. |
+| We did it together | Fixémolo xuntos | Lo hicimos juntos | Juntar las manos y levantarlas | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| We did it! | Conseguímolo! | ¡Lo conseguimos! | Levantar los brazos todos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | We eat an apple. | Comemos unha mazá. | Comemos una manzana. | — | `pal_we_eat_an_apple` | composta | Niño acercándose a comer una manzana roja. |
+| We found it! | Atopámolo! | ¡Lo encontramos! | Dar palmas | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | We had been painting before we folded it. | Estivemos pintando antes de dobralo. | Habíamos estado pintando antes de doblarlo. | — | `pal_painting_before_folded` | composta | Primero pintar la hoja y luego doblarla en avión. |
 | We had drawn it before dinner. | Debuxarámola antes da cea. | La habíamos dibujado antes de cenar. | — | `pal_we_had_drawn_it_before_dinner` | composta | Dibujo con pincel terminado antes del plato de cena. |
 | We had the boots put by the door. | Puxemos as botas xunto á porta. | Hicimos poner las botas junto a la puerta. | — | `pal_boots_by_door` | composta | Puerta de madera con las botas colocadas justo al lado. |
 | We have been talking in the cups. | Levamos un tempo falando nos vasos. | Llevamos un rato hablando por los vasos. | — | `pal_talking_in_the_cups` | composta | Dos niños hablando a través de teléfono de vasos unidos por hilo. |
+| We have grown so much in five years | Medramos moito en cinco anos | Hemos crecido mucho en cinco años | Estirarse hasta arriba | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | We have made a row. | Fixemos unha fila. | Hemos hecho una fila. | — | `pal_we_have_made_a_row` | composta | Cuatro piezas colocadas ordenadamente en fila. |
 | We have to hurry because the train is leaving in front of us. | Temos que darnos présa porque o tren sae diante de nós. | Tenemos que darnos prisa porque el tren sale delante de nosotros. | — | `pal_hurry_train_leaving` | composta | Niño corriendo deprisa al ver partir el tren delante. |
+| We listen because we care | Escoitamos porque nos importa | Escuchamos porque nos importa | Llevar la mano a la oreja y al pecho | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | We listened. | Escoitamos. | Escuchamos. | — | `pal_we_listened` | composta | Escuchando con atención los sonidos del entorno. |
 | We never eat cold bread. | Nunca comemos pan frío. | Nunca comemos pan frío. | — | `pal_we_never_eat_cold_bread` | composta | Pan helado tachado con aspa roja: nunca frío. |
 | We often touch them. | Tocámolos a miúdo. | Los tocamos a menudo. | — | `pal_we_often_touch_them` | composta | Manos tocando objetos sobre la mesa. |
 | We share because we care | Compartimos porque nos importa | Compartimos porque nos importa | Repartir y sonreír | `pal_we_share_because_we_care` | composta | Dos amigos repartiéndose por igual sus manzanas con cariño. |
 | We should have looked at the shadow earlier. | Debiamos mirar a sombra antes. | Deberíamos haber mirado la sombra antes. | — | `pal_looked_shadow_earlier` | composta | Dos sombras comparadas junto al niño bajo el sol: sombra más corta antes y más larga después. |
 | We smell with our nose and taste with our tongue | Cheiramos co nariz e saboreamos coa lingua | Olemos con la nariz y saboreamos con la lengua | Señalar nariz y lengua | `pal_we_smell_with_our_nose_and_taste_with_our_tongue` | nova | Escena doble: oler una flor con la nariz y saborear una fresa con la lengua. |
+| We solved it together! | Resolvémolo xuntos! | ¡Lo resolvimos juntos! | Chocar las manos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | We walk across the bridge. | Cruzamos a ponte camiñando. | Cruzamos el puente caminando. | Caminar de un lado al otro de una línea en el suelo | `pal_walk_across_bridge` | nova | Puente arqueado sobre el agua con un niño cruzándolo caminando hacia el otro lado. |
+| We walk on the path so the plants can grow | Camiñamos polo camiño para que medren as plantas | Caminamos por el camino para que crezcan las plantas | Caminar por la línea | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | We want to run. | Queremos correr. | Queremos correr. | — | `pal_we_want_to_run` | composta | Dos niños corriendo hacia delante con flecha de impulso: queremos correr. |
 | We were squeezing the bread. | Estabamos apertando o pan. | Estábamos apretando el pan. | — | `pal_we_were_squeezing_the_bread` | composta | Apretando una rebanada de pan blando desde ambos lados. |
 | Weather chart | Táboa do tempo | Tabla del tiempo | Pegar el símbolo de la lluvia | `pal_weather_chart` | nova | Tablero meteorológico con columnas de sol, nube y lluvia. |
@@ -3384,56 +4112,134 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Weather | Tempo | Tiempo | Mirar por la ventana y señalar el cielo | `pal_weather` | nova | Cielo mostrando el tiempo atmosférico (sol, lluvia y viento) señalado. |
 | Webbed feet | Patas palmeadas | Patas palmeadas | Abrir los dedos de las manos | `pal_webbed_feet` | nova | Par de patas palmeadas abiertas junto a la orilla del estanque. |
 | Webbed | Palmeado | Palmeado | Abrir los dedos | `pal_webbed` | nova | Pata palmeada de pato abierta mostrando las membranas entre los tres dedos. |
+| Week | Semana | Semana | Contar siete dedos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Weigh up | Pesar e comparar | Pesar y comparar | Sostener dos cosas y comparar | `pal_weigh_up` | nova | Niño sopesando una manzana pesada y una pluma ligera con las manos. |
 | Weigh | Pesar | Pesar | Levantar dos objetos y comparar | `pal_weigh` | composta | Balanza comparando el peso de una manzana y una pluma ligera. |
 | Weight | Peso | Peso | Bajar una mano pesada | `pal_weight` | nova | Pesa maciza de hierro sobre la mesa con flecha descendente de peso. |
+| Weightless | Sen peso | Ingrávido | Moverse flotando | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Welcome aboard! | Benvidos a bordo! | ¡Bienvenidos a bordo! | — | `pal_welcome_aboard` | composta | Bienvenida sonriente al subir a bordo del viaje. |
+| Welcome back | De volta | De vuelta | Abrir los brazos contentos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Welcome! | Benvido! | ¡Bienvenido! | Abrir los brazos al recibirlo | `pal_welcome` | composta | Puerta abierta recibiendo con los brazos extendidos en bienvenida. |
+| Welcoming | Acolledor | Acogedor | Abrir los brazos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Well done, explorer! | Moi ben, explorador! | ¡Muy bien, explorador! | Levantar el pulgar | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Well-cared-for | Ben coidado | Bien cuidado | Acariciar una planta | `pal_well_cared_for` | composta | Planta cuidada con mimo acariciada suavemente por un niño. |
+| Well-rehearsed | Ben ensaiado | Bien ensayado | Repetir un gesto perfecto | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Well-rested | Descansado | Descansado | Estirarse después de descansar | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Wellies | Botas de auga | Botas de agua | Poner las botitas al bebé | `botas` | reutilizada | Par de botas de agua amarillas del set propio. |
 | Wellington boots | Botas de goma | Botas de goma | Ponerse las botas de goma | `botas` | reutilizada | Botas de agua altas para la lluvia del set propio. |
 | Wet sponge | Esponxa mollada | Esponja mojada | Escurrir la esponja | `pal_wet_sponge` | nova | Esponja amarilla porosa goteando agua sobre un charco azul. |
 | Wet wipe | Toalliña húmida | Toallita húmeda | Limpiar las manos con una toallita | `pal_wet_wipe` | nova | Paquete azul de toallitas húmedas con una toallita blanca saliendo y gotitas. |
 | Wet | mollado | mojado | — | `pal_wet` | composta | Gotas grandes de agua cubriendo la escena: mojado. |
 | Whale | Balea | Ballena | Echar agua hacia arriba con las manos desde la cabeza | `pal_whale` | banco | Ballena azul soltando chorro de agua. |
+| What a colour! | Que cor! | ¡Qué color! | Enseñar la fruta a la luz | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| What animal are you? | Que animal es? | ¿Qué animal eres? | Señalar el disfraz de un amigo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| What bird is that? | Que paxaro é ese? | ¿Qué pájaro es ese? | Señalar el cielo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| What can we do? | Que podemos facer? | ¿Qué podemos hacer? | Abrir las manos preguntando | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| What can you see from here? | Que ves dende aquí? | ¿Qué ves desde aquí? | Mirar alrededor | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| What colour is broccoli? | De que cor é o brócoli? | ¿De qué color es el brócoli? | Señalar algo verde | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| What colour is it? | De que cor é? | ¿De qué color es? | Encoger los hombros y señalar un objeto | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| What comes next? | Que vén despois? | ¿Qué viene después? | Señalar y esperar | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| What day is it today? | Que día é hoxe? | ¿Qué día es hoy? | Señalar el calendario | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| What did you dream about? | Que soñaches? | ¿Qué soñaste? | Tocar la cabeza | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| What do you do to feel calm? | Que fas para estar tranquilo? | ¿Qué haces para estar tranquilo? | Respirar hondo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| What do you think will happen? | Que cres que pasará? | ¿Qué crees que pasará? | Tocar la cabeza | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| What do you want to be? | Que queres ser? | ¿Qué quieres ser? | Señalar varios oficios | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | What do you want? | Que queres? | ¿Qué quieres? | — | `pal_what_do_you_want` | composta | Signo de pregunta junto a dos opciones para elegir. |
+| What does the cow say? | Que di a vaca? | ¿Qué dice la vaca? | Enseñar la vaca y esperar | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| What grows on the ropes? | Que medra nas cordas? | ¿Qué crece en las cuerdas? | Señalar abajo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| What happened next? | Que pasou despois? | ¿Qué pasó después? | Señalar adelante | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| What if the wolf was kind? | E se o lobo fose bo? | ¿Y si el lobo fuera bueno? | Tocar la cabeza pensando | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | What is it? A dog! | Que é? Un can! | ¿Qué es? ¡Un perro! | — | `pal_what_dog` | banco | Un perro amigable. |
+| What is it? | Que é? | ¿Qué es? | Enseñar un objeto y esperar | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| What lives in the seagrass? | Que vive na pradería mariña? | ¿Qué vive en la pradera marina? | Mirar abajo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| What lives on the seabed? | Que vive no fondo do mar? | ¿Qué vive en el fondo del mar? | Mirar abajo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | What matters is the coat. | O que importa é o abrigo. | Lo que importa es el abrigo. | — | `pal_what_matters_is_the_coat` | composta | Abrigo cálido como pieza más importante contra el frío. |
+| What shape is this? | Que forma é? | ¿Qué forma es? | Enseñar una forma y esperar | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | What was happening to the bread? | Que lle estaba pasando ao pan? | ¿Qué le estaba pasando al pan? | — | `pal_what_was_happening_to_the_bread` | composta | Observando cómo cambia la rebanada de pan al mojarse. |
 | What we need is water. | O que precisamos é auga. | Lo que necesitamos es agua. | — | `pal_what_we_need_is_water` | composta | Vaso de agua limpia que se necesita. |
+| What will happen if it gets warm? | Que pasará se vai calor? | ¿Qué pasará si hace calor? | Encoger los hombros | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | What would happen if we hit the glass harder? | Que pasaría se petásemos o vaso máis forte? | ¿Qué pasaría si golpeáramos el vaso más fuerte? | — | `pal_hit_glass_harder` | composta | Golpe fuerte de cuchara contra el vaso y pregunta. |
 | What would have happened without water? | Que pasaría sen auga? | ¿Qué habría pasado sin agua? | — | `pal_without_water` | composta | Flor marchita inclinada sobre tierra seca sin agua. |
+| What's in the bag? | Que hai na bolsa? | ¿Qué hay en la bolsa? | Meter la mano y adivinar | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| What's in the basket? | Que hai na cesta? | ¿Qué hay en la cesta? | Asomarse dentro de la cesta | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| What's inside? | Que hai dentro? | ¿Qué hay dentro? | Agitar la caja y escuchar | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| What's your name? | Como te chamas? | ¿Cómo te llamas? | Poner la mano en el pecho y luego señalar a otra persona | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Whee! | Uiii! | ¡Uiii! | Levantar al bebé y bajarlo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Wheel | Roda | Rueda | Dibujar una rueda grande en el aire | `pal_wheel` | banco | Rueda redonda con radios. |
 | Wheelbarrow | Carretilla | Carretilla | Empujar la carretilla con hojas | `pal_wheelbarrow` | composta | Carretilla llena de hojas empujada hacia delante por el jardín. |
 | Wheels | Rodas | Ruedas | Girar las ruedas de un coche de juguete | `pal_wheels` | composta | Dos ruedas girando a la vez en círculos. |
+| When I feel angry, I breathe slowly | Cando me enfado, respiro amodo | Cuando me enfado, respiro despacio | Apretar los puños y respirar | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | When I look after my plant, it grows | Cando coido a miña planta, medra | Cuando cuido mi planta, crece | Regar y subir la mano | `pal_when_i_look_after_my_plant_it_grows` | composta | Brote pequeño regado creciendo con una flecha hasta ser un girasol alto. |
+| When I say freeze, don't move | Cando diga «freeze», non te movas | Cuando diga «freeze», no te muevas | Pararse como estatua | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | When I was a baby, I couldn't walk | Cando era bebé, non sabía camiñar | Cuando era bebé, no sabía caminar | Gatear y luego caminar | `pal_when_i_was_a_baby_i_couldn_t_walk` | nova | Bebé gateando antes de aprender y niño ya caminando erguido. |
+| When I was two, I couldn't write my name, but now I can | Cando tiña dous anos non sabía escribir o nome, pero agora si | Cuando tenía dos años no sabía escribir mi nombre, pero ahora sí | Escribir en el aire | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | When it rains, we need boots. | Cando chove, necesitamos botas. | Cuando llueve, necesitamos botas. | — | `pal_when_rains_need_boots` | composta | Lluvia a la izquierda, flecha hacia el par de botas: cuando llueve necesitamos botas. |
+| When the bell rings, we line up | Cando soa o timbre, poñémonos en fila | Cuando suena el timbre, nos ponemos en fila | Ponerse en fila | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| When the conductor stops, we stop | Cando o director para, nós paramos | Cuando el director para, nosotros paramos | Parar con la mano | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | When the drum stops, freeze | Cando pare o tambor, conxélate | Cuando pare el tambor, congélate | Bailar y parar con el silencio | `pal_when_the_drum_stops_freeze` | composta | Tambor detenido con señal roja y niño quieto como estatua. |
 | When the music stops, hide | Cando pare a música, escóndete | Cuando pare la música, escóndete | Bailar y esconderse | `pal_when_the_music_stops_hide` | nova | Música parada (notas tachadas) y niño escondiéndose detrás de la cortina. |
 | When the sun shines through the rain, we see a rainbow | Cando o sol brilla na choiva, vemos o arco da vella | Cuando el sol brilla en la lluvia, vemos el arcoíris | Dibujar un arco | `pal_when_the_sun_shines_through_the_rain_we_see_a_ra` | nova | Sol brillando a través de la lluvia formando un gran arcoíris en el cielo. |
+| When the timer rings, we swap | Cando soe o temporizador, cambiamos | Cuando suene el temporizador, cambiamos | Cambiar a la señal | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Where are we on the map? | Onde estamos no mapa? | ¿Dónde estamos en el mapa? | Señalar el mapa | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Where are you going? | Onde vas? | ¿Adónde vas? | Abrir las manos y encoger los hombros | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Where are your toes? | Onde están os dedos dos teus pés? | ¿Dónde están tus deditos? | Buscar los pies en el agua | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Where did he go? | Onde foi? | ¿Adónde fue? | Esconder el títere | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Where did I go? | Onde estou? | ¿Dónde estoy? | Esconderse detrás de una almohada | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Where does it go? | Onde vai? | ¿Dónde va? | Coger un juguete y mirar alrededor | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Where does it hurt? | Onde che doe? | ¿Dónde te duele? | — | `pal_where_does_it_hurt` | composta | Niño con estetoscopio señalando al peluche para preguntar dónde le duele. |
+| Where does rain come from? | De onde vén a choiva? | ¿De dónde viene la lluvia? | Señalar las nubes | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Where does the fox hide? Point with your elbows | Onde se agocha o raposo? Sinala cos cóbados | ¿Dónde se esconde el zorro? Señala con los codos | Señalamiento con los codos hacia el rincón elegido del aula. | `pal_fox_hide_point_elbows` | composta | Zorro escondido y niño señalando con los codos. |
+| Where does the river go? | Onde vai o río? | ¿Adónde va el río? | Seguir con el dedo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Where is the light? | Onde está a luz? | ¿Dónde está la luz? | — | `pal_where_is_the_light` | composta | Linterna proyectando luz hacia una bombilla. |
 | Where is the shadow? | Onde está a sombra? | ¿Dónde está la sombra? | — | `pal_where_is_the_shadow` | composta | Sol iluminando y sombra oscura en el suelo. |
+| Where is the squirrel? | Onde está o esquío? | ¿Dónde está la ardilla? | Mirar alrededor con las manos sobre las cejas | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Where will you go this summer? | Onde irás este verán? | ¿Adónde irás este verano? | Señalar el mapa | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Where's teddy? | Onde está o osiño? | ¿Dónde está el osito? | Buscar el osito debajo de la manta | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Where's the birdie? | Onde está o paxariño? | ¿Dónde está el pajarito? | Buscar el pájaro con la mano en la frente | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Where's the monkey? | Onde está o mono? | ¿Dónde está el mono? | Mirar arriba y abajo buscando un mono | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Where's the smile? | Onde está o sorriso? | ¿Dónde está la sonrisa? | Tapar y destapar la boca sonriendo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Where's the sun? | Onde está o sol? | ¿Dónde está el sol? | Buscar con la mano en la frente | `pal_wheres_the_sun` | composta | Sol escondiéndose detrás de una gran nube blanca. |
+| Where's your hand? | Onde está a túa man? | ¿Dónde está tu mano? | Sacar la mano por la manga | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Where's your nose? | Onde está o teu nariz? | ¿Dónde está tu nariz? | Buscar la nariz con el dedo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Which boat is faster? | Que barco é máis rápido? | ¿Qué barco es más rápido? | Soplar y comparar | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Which bus goes to the beach? | Que autobús vai á praia? | ¿Qué autobús va a la playa? | Señalar el horario | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Which is the biggest? | Cal é o máis grande? | ¿Cuál es el más grande? | Comparar tres cosas | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Which is the cloth that works? | Cal é o pano que funciona? | ¿Cuál es el paño que funciona? | — | `pal_which_cloth_works` | composta | Dos paños lado a lado: uno absorbe las gotas y otro las deja resbalar. |
+| Which light is the brightest? | Cal é a luz máis brillante? | ¿Cuál es la luz más brillante? | Señalar y comparar | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Which one is blue? | Cal é o azul? | ¿Cuál es el azul? | Enseñar dos objetos y esperar | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Which one is heavier? | Cal pesa máis? | ¿Cuál pesa más? | Levantar uno en cada mano | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Which piece goes here? | Que peza vai aquí? | ¿Qué pieza va aquí? | Señalar el hueco | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Which sense do we use? | Que sentido usamos? | ¿Qué sentido usamos? | Señalar un sentido | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Which side goes down? | Que lado baixa? | ¿Qué lado baja? | Señalar un lado | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Whirl | Xirar | Dar vueltas | Girar despacio con el bebé en brazos | `pal_whirl` | nova | Dar vueltas despacio sosteniendo al bebé con arco circular de giro. |
 | Whirling | Que xira | Que gira | Girar un dedo en el aire | `pal_whirling` | nova | Dedo dibujando círculos rápidos girando en el aire. |
 | Whiskers | Bigotes | Bigotes | Dibujar bigotes en la cara con el dedo | `pal_whiskers` | banco | Bigotes largos en el hocico del gato. |
 | Whisper game | Xogo do segredo | Juego del secreto | Decir algo al oído | `pal_whisper_game` | nova | Niño ahuecando la mano para susurrar un secreto al oído de un amigo. |
 | Whisper the secret word to your friend | Dille ao oído ao teu amigo a palabra secreta | Dile al oído a tu amigo la palabra secreta | Susurro al oído del compañero sin que lo escuche el resto. | `pal_whisper_secret_friend` | composta | Niño susurrando al oído de su compañero con icono de silencio. |
+| Whisper to me | Dimo baixiño | Dímelo bajito | Acercar la oreja | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Whisper | Musitar | Susurrar | Acercarse a la oreja de quien está al lado y hablar muy bajito, con la boca a la vista | `pal_whisper` | nova | Niño acercándose muy cerca a la oreja de su compañero para hablar bajito: susurrar. |
+| Whispery | Bisbado | Susurrante | Hablar con la voz muy bajita | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Whistle a tune | Asubiar unha melodía | Silbar una melodía | Silbar bajito | `pal_whistle_a_tune` | composta | Niño silbando alegremente una melodía con notas en el aire. |
+| Whistle sound | Asubío de golfiño | Silbido de delfín | Silbar agudo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Whistle | Asubiar | Silbar | Poner los labios en forma de «o» y soplar suave | `pal_whistle` | nova | Labios en círculo silbando una melodía alegre de notas musicales. |
 | White sail | Vela branca | Vela blanca | Abrir los brazos como una vela | `pal_white_sail` | nova | Vela triangular blanca bien desplegada sobre el barco en el agua. |
 | White | Branco, branca | Blanco, blanca | Señalar algo blanco en el aula | `pal_white` | nova | Mancha/círculo blanco con contorno nítido. |
+| Who agrees? | Quen está de acordo? | ¿Quién está de acuerdo? | Levantar la mano | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Who am I? | Quen son eu? | ¿Quién soy yo? | Señalarse a uno mismo con cara de misterio | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Who are you today? | Quen es hoxe? | ¿Quién eres hoy? | Señalar el disfraz | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Who lives here? | Quen vive aquí? | ¿Quién vive aquí? | Mirar alrededor sorprendido | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Who runs? | Quen corre? | ¿Quién corre? | — | `pal_who_runs` | composta | Niño corriendo rápido con flecha. |
+| Who wants to be captain? | Quen quere ser capitán? | ¿Quién quiere ser capitán? | Levantar la mano | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Who's in the mirror? | Quen está no espello? | ¿Quién está en el espejo? | Señalar el espejo y esperar | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Who's there? | Quen anda aí? | ¿Quién anda ahí? | Poner la mano en la oreja y mirar alrededor | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Who's this? | Quen é este? | ¿Quién es este? | Señalar una foto y esperar | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Whole | Enteiro | Entero | Juntar las dos mitades | `pal_whole` | nova | Naranja entera cerrada con dos flechas convergiendo hacia el centro. |
+| Wholesome | San e bo | Sano y bueno | Tocar la barriga contentos | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Whoosh around | Correr coma o vento | Correr como el viento | Correr en círculo haciendo «fiuuu» | `pal_whoosh_around` | nova | Niño corriendo rápido en círculo con líneas de viento. |
 | Whoosh! | Fiuuu! | ¡Fiuuu! | Mover los brazos como el viento | `pal_whoosh` | nova | Ráfaga rápida de viento barriendo hojas en curva ascendente. |
 | Whose turn is it? | De quen é a quenda? | ¿De quién es el turno? | Mirar alrededor | `pal_whose_turn` | composta | Dos niños mirándose alternando el turno con la pelota en medio. |
 | Why are you putting the bandage? Because the cat is sick. | Por que lle pos a venda? Porque o gato está malo. | ¿Por qué le pones la venda? Porque el gato está malito. | — | `pal_why_bandage_cat_sick` | composta | Gato malito con termómetro mientras se le acerca una venda. |
+| Why do we wash our hands? | Por que lavamos as mans? | ¿Por qué nos lavamos las manos? | Encoger los hombros preguntando | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Wide awake | Ben esperto | Bien despierto | Abrir mucho los ojos | `pal_wide_awake` | nova | Niño en la cama de noche con los ojos muy abiertos completamente despierto. |
 | Wide | Ancho, ancha | Ancho, ancha | Abrir mucho las piernas y los brazos | `pal_wide` | nova | Niño abriendo mucho brazos y piernas con flechas hacia lo ancho. |
 | Wide-eyed | Cos ollos abertos | Con los ojos abiertos | Abrir mucho los ojos sorprendidos | `pal_wide_eyed` | nova | Cara asombrada con los ojos redondos abiertos de par en par. |
@@ -3441,9 +4247,13 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Wiggle hips | Menear as cadeiras | Menear las caderas | Menear las caderas riendo | `pal_wiggle_hips` | nova | Niño con manos en la cintura moviendo las caderas de un lado a otro. |
 | Wiggle your fingers | Move os dedos | Mueve los dedos | Mover los dedos en el aire como si tocaran el piano | `pal_wiggle_your_fingers` | nova | Dos manos moviendo rápidamente las puntas de los dedos. |
 | Wiggle your tail | Menear o rabo | Menear la cola | Menear la cola del disfraz | `pal_wiggle_your_tail` | nova | Perrito marrón moviendo alegremente la cola de un lado a otro. |
+| Wiggle | Menear | Menear | Menear las caderas de un lado a otro | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Wiggly | Inquedo | Inquieto | Mover todo el cuerpo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Wild and free | Salvaxe e libre | Salvaje y libre | Correr con los brazos abiertos | `pal_wild_and_free` | composta | Niño corriendo libre con los brazos bien abiertos en el campo. |
 | Wild wind | Vento forte | Viento fuerte | Mover los brazos con fuerza | `pal_wild_wind` | nova | Viento fuerte en ráfagas doblando un árbol y arrastrando hojas. |
+| Wild | Salvaxe | Salvaje | Moverse con fuerza como un animal del monte | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Will it be light? | Será lixeira? | ¿Será ligera? | — | `pal_will_it_be_light` | composta | Pluma ligerísima flotando suavemente hacia arriba. |
+| Will it float? | Flotará? | ¿Flotará? | Echar un objeto y esperar | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Will it roll? | Rodará? | ¿Rodará? | Empujar y mirar | `pal_will_it_roll` | nova | Pelota en lo alto de una rampa recibiendo un empujón para ver si rueda. |
 | Will you have tried blue by then? | Terás probado o azul para entón? | ¿Habrás probado el azul para entonces? | — | `pal_tried_blue_by_then` | composta | Paleta de pintura con bote azul y pregunta. |
 | Win or lose, we have fun | Gañando ou perdendo, divertímonos | Ganando o perdiendo, nos divertimos | Sonreír y darse la mano | `pal_win_or_lose_we_have_fun` | composta | Dos jugadores dándose la mano contentos después del partido. |
@@ -3464,13 +4274,18 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Winner | Gañador | Ganador | Levantar los brazos contentos | `pal_winner` | composta | Trofeo de premio y ganador en el podio con los brazos levantados. |
 | Winning | Gañando | Ganando | Sonreír y dar palmas | `pal_winning` | composta | Trofeo brillante dorado y niño sonriendo y aplaudiendo contento. |
 | Winter | Inverno | Invierno | Abrazarse a uno mismo con frío | `pal_winter` | banco | Paisaje de invierno con nieve, muñeco de nieve y niños abrigados. |
+| Wipe clean | Limpar | Limpiar | Pasar el paño por la cara | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Wipe hands | Limpar as mans | Limpiarse las manos | Limpiarse las manos con una servilleta | `pal_wipe_hands` | nova | Dos manos sujetando una servilleta para secarse y limpiarse. |
 | Wipe the table | Limpar a mesa | Limpiar la mesa | Pasar el paño por la mesa | `pal_wipe_the_table` | nova | Paño amarillo deslizándose sobre la superficie de la mesa para limpiarla. |
+| Wipe | Enxugar | Secar | Secarse la cara con una toalla imaginaria | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Wipers | Limpaparabrisas | Limpiaparabrisas | Mover los brazos como limpiaparabrisas | `pal_wipers` | nova | Parabrisas con dos limpiaparabrisas barriendo en arco las gotas. |
 | Wish | Desexar | Desear | Cerrar los ojos y cruzar los dedos | `pal_wish` | composta | Estrella brillante en la noche al pedir un deseo. |
+| With Grandma | Coa avoa | Con la abuela | Coger la mano de la abuela | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| With music | Con música | Con música | Bailar únicamente mientras suena la música | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | With the drum | Co tambor | Con el tambor | Caminar al pulso de un tambor imaginario | `pal_with_the_drum` | composta | Tambor marcando el pulso mientras el niño camina al ritmo. |
 | With the wind | Co vento | Con el viento | Correr con los brazos abiertos | `pal_with_the_wind` | composta | Viento soplando fuerte empujando al niño que corre con brazos abiertos. |
 | Wizard | Mago | Mago | Mover una varita | `pal_wizard` | nova | Sombrero azul estrellado de mago junto a varita mágica brillante. |
+| Wobble and hold | Bambear e aguantar | Tambalearse y aguantar | Tambalearse sin caer | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Wobble board | Táboa de equilibrio | Tabla de equilibrio | Balancearse encima de la tabla | `pal_wobble_board` | nova | Tabla curva de equilibrio con niño encima abriendo los brazos. |
 | Wobble | Bambear | Tambalearse | Tambalearse como una gelatina | `pal_wobble` | nova | Gelatina rosa sobre plato tambaleándose con ondas laterales. |
 | Wobbly bridge | Ponte que bambea | Puente que se tambalea | Caminar con equilibrio | `pal_wobbly_bridge` | nova | Puente ondulado que se mueve y niño cruzando en equilibrio con brazos en cruz. |
@@ -3479,8 +4294,10 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Wobbly legs | Pernas que tremen | Piernas temblorosas | Temblar las piernas | `pal_wobbly_legs` | nova | Piernas arqueadas temblando como flan de lado a lado. |
 | Wobbly tooth | Dente que se move | Diente que se mueve | Tocar un diente con la lengua | `pal_wobbly_tooth` | nova | Boca abierta destacando un diente flojo torcido con líneas de movimiento. |
 | Wobbly tower | Torre que bambea | Torre que se tambalea | Mover la torre con cuidado | `pal_wobbly_tower` | nova | Torre alta de bloques inclinada tambaleándose a punto de caer. |
+| Wobbly | Bambeante | Bamboleante | Bambolear todo el cuerpo como una medusa | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Wolf costume | Disfrace de lobo | Disfraz de lobo | Ponerse las orejas de lobo | `pal_wolf_costume` | composta | Disfraz de lobo preparado para representar el cuento. |
 | Wolf | Lobo | Lobo | Caminar a cuatro patas despacio | `pal_wolf` | banco | Lobo gris de frente con orejas en punta, coincidencia directa. |
+| Wonderful | Marabilloso, marabillosa | Maravilloso, maravillosa | Abrir los brazos y mirar alrededor con admiración | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Wooden block | Bloque de madeira | Bloque de madera | Poner una pieza encima de otra | `pal_wooden_block` | nova | Bloques de madera natural con veta apilados sobre la mesa. |
 | Wooden plank | Táboa de madeira | Tabla de madera | Llevar una tabla entre dos | `pal_wooden_plank` | nova | Dos niños llevando juntos una tabla larga de madera entre los dos. |
 | Wooden spoon | Culler de madeira | Cuchara de madera | Golpear la cuchara de madera en una olla | `pal_wooden_spoon` | nova | Cuchara de madera golpeando el borde de una olla metálica. |
@@ -3488,11 +4305,13 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Wooden | De madeira | De madera | Golpear la mesa | `pal_wooden` | nova | Superficie de madera con vetas recibiendo un golpe firme. |
 | Woodlouse | Porquiño da terra | Cochinilla | Hacer una bola con el cuerpo | `pal_woodlouse` | nova | Cochinilla segmentada junto a su forma enrollada hecha bola. |
 | Woodpecker | Peto | Pájaro carpintero | Golpear con el dedo como un pájaro carpintero | `pal_woodpecker` | nova | Pájaro carpintero de cresta roja y vientre blanco picoteando rápido el tronco. |
+| Woof | Ladrar | Ladrar | Hacer «guau» con suavidad | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Woof, woof! | Guau, guau! | ¡Guau, guau! | Poner las manos como patas y decir «guau, guau» | `pal_woof_woof` | composta | Perro simpático ladrando con ondas sonoras visibles. |
 | Wool | La | Lana | Acariciar la lana de una manta | `pal_wool` | banco | Ovillo de lana suave. |
 | Woolly hat | Gorro de la | Gorro de lana | Tocar el gorro de lana | `pal_woolly_hat` | nova | Gorro grueso de lana tejida tocado con la mano para sentir el punto. |
 | Woolly lamb | Año lanudo | Cordero lanudo | Acariciar la lana de un cordero de peluche | `pal_woolly_lamb` | composta | Corderito de lana blanca acariciado suavemente. |
 | Woolly | De la | De lana | Acariciar una prenda de lana imaginaria | `pal_woolly` | composta | Ovillo de lana esponjosa y blanda acariciada suavemente con la mano. |
+| Word | Palabra | Palabra | Llevar la mano de la boca hacia delante al decir una palabra | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Worm | Miñoca | Lombriz | Mover un dedo en ondas como una lombriz | `pal_worm` | banco | Lombriz rosada ondulada. |
 | Worry doll | Boneca quitapesares | Muñeca quitapenas | Susurrar a una muñeca | `pal_worry_doll` | nova | Muñeca quitapenas tradicional vestida con franjas de colores vivos. |
 | Wrap in a towel | Envolver na toalla | Envolver en la toalla | Envolver al bebé y abrazarlo | `pal_wrap_in_a_towel` | composta | Envolver suavemente al bebé en su toalla y darle un abrazo. |
@@ -3502,10 +4321,14 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Wreath | Coroa de flores | Corona de flores | Hacer un círculo con las manos | `pal_wreath` | nova | Corona circular de hojas verdes decorada con flores y lazo rojo. |
 | Wriggle toes | Menear os dedos dos pés | Mover los deditos | Mover los deditos en la arena | `pal_wriggle_toes` | nova | Dos pies descalzos en la arena moviendo los deditos con ondas. |
 | Wriggle | Retorcerse | Retorcerse | Retorcer los brazos como los de un pulpo | `pal_wriggle` | nova | Oruga verde retorciéndose en curvas sinuosas sobre la hierba. |
+| Wriggly | Que se retorce | Que se retuerce | Retorcer el cuerpo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Wring out | Espremer | Escurrir | Retorcer un paño mojado | `pal_wring_out` | nova | Paño mojado retorcido escurriendo gotas de agua hacia el suelo. |
 | Wrinkly | Engurrado, engurrada | Arrugado, arrugada | Arrugar la nariz y la frente | `pal_wrinkly` | nova | Hoja de papel muy arrugada con pliegues marcados en zigzag. |
 | Wrist | Boneca | Muñeca | Rodear la muñeca con los dedos | `pal_wrist` | composta | Mano señalando la muñeca rodeada por pulsera. |
 | Write a card | Escribir unha postal | Escribir una postal | Hacer que se escribe | `pal_write_a_card` | nova | Tarjeta abierta decorada con lápiz azul escribiendo dentro. |
+| Write a thank-you note | Escribir unha nota de grazas | Escribir una nota de agradecimiento | Escribir en el aire | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Write down | Anotar | Anotar | Escribir en el aire | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Write your name | Escribir o nome | Escribir tu nombre | Escribir en el aire | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Write | Escribir | Escribir | Escribir el propio nombre en el suelo con el dedo | `pal_write` | nova | Lápiz amarillo escribiendo un trazo ondulado sobre una hoja blanca. |
 | Xylophone | Xilófono | Xilófono | Golpear las teclas del xilófono | `pal_xylophone` | nova | Xilófono infantil de láminas de colores con baqueta. |
 | Yawn wide | Bocexar moito | Bostezar mucho | Bostezar como un hipopótamo | `pal_yawn_wide` | nova | Cara con los ojos cerrados y la boca muy abierta bostezando. |
@@ -3514,12 +4337,17 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Yellow | Amarelo, amarela | Amarillo, amarilla | Señalar algo amarillo en el aula | `pal_yellow` | nova | Objetos de color amarillo vivo señalados sobre la mesa. |
 | Yes, please | Si, por favor | Sí, por favor | Asentir con la cabeza y extender la mano | `pal_yes_please` | composta | Pulgar hacia arriba aceptando con gusto. |
 | Yesterday the train went slowly. | Onte o tren foi amodo. | Ayer el tren fue despacio. | — | `pal_yesterday_the_train_went_slowly` | composta | Tren avanzando despacio al ritmo de una tortuga. |
+| Yesterday was Monday, today is Tuesday | Onte foi luns, hoxe é martes | Ayer fue lunes, hoy es martes | Señalar atrás y al suelo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Yesterday | Onte | Ayer | Señalar hacia atrás | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Yoga mat | Esteira de ioga | Esterilla de yoga | Extender la esterilla | `pal_yoga_mat` | nova | Esterilla morada extendida en el suelo con un extremo enrollado. |
 | Yoghurt | Iogur | Yogur | Dar una cucharadita de yogur | `pal_yoghurt` | banco | Cuenco de yogur con cucharita. |
+| You and me | Ti e mais eu | Tú y yo | Señalar a otra persona y luego a uno mismo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | You are blowing softly. | Estás soprando suave. | Estás soplando suave. | — | `pal_you_are_blowing_softly` | composta | Soplando un aire suave capaz de mover una pluma ligera. |
 | You are happy! | Estás contento! | ¡Estás contento! | — | `pal_you_are_happy` | composta | Cara muy sonriente y contenta. |
 | You are welcome | De nada | De nada | — | `pal_you_are_welcome` | composta | Mano amable y corazón respondiendo de nada. |
 | You can carry it, can't you? | Podes levalo, verdade? | Puedes llevarlo, ¿verdad? | — | `pal_you_can_carry_it` | composta | Niño sonriente llevando con soltura una caja en los brazos mientras camina. |
+| You can do it! | Ti podes! | ¡Tú puedes! | Levantar el pulgar | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| You first, then me | Ti primeiro, despois eu | Tú primero, luego yo | Señalar al amigo y a sí mismo | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | You had been looking for the same side. | Estiveras buscando o lado igual. | Habías estado buscando el lado igual. | — | `pal_looking_same_side` | composta | Dos cuadrados idénticos encontrados con lupa. |
 | You have been listening. | Levas un tempo escoitando. | Llevas un rato escuchando. | — | `pal_you_have_been_listening` | composta | Oreja atenta recibiendo notas suaves. |
 | You have chosen blue. | Escolliches o azul. | Has elegido el azul. | — | `pal_you_have_chosen_blue` | composta | Bloque azul señalado y elegido entre varios. |
@@ -3529,15 +4357,21 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | You put the bread in the box. | Ti pos o pan na caixa. | Tú pones el pan en la caja. | — | `pal_you_put_the_bread_in_the_box` | composta | Pan entrando dentro de la caja. |
 | You said the cat had four legs. | Dixeches que o gato tiña catro patas. | Dijiste que el gato tenía cuatro patas. | — | `pal_cat_four_legs` | composta | Gato de cuerpo entero con sus cuatro patas señaladas debajo sobre la hierba. |
 | You should walk slowly. | Deberías camiñar amodo. | Deberías caminar despacio. | — | `pal_you_should_walk_slowly` | composta | Niño caminando despacio al ritmo tranquilo de la tortuga. |
+| You think this, but I think that | Ti pensas isto, pero eu penso aquilo | Tú piensas esto, pero yo pienso aquello | Señalar a uno y a sí | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | You told me it didn't fit. | Dixéchesme que non cabía. | Me dijiste que no cabía. | — | `pal_didnt_fit` | composta | Pelota grande apoyada encima de un cesto pequeño sin poder caber dentro. |
 | You were knocking on it. | Estabas petando nel. | Estabas llamando en él. | — | `pal_you_were_knocking_on_it` | composta | Puño llamando suave en la madera de la puerta. |
+| You're a great friend | Es un gran amigo | Eres un gran amigo | Levantar el pulgar | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | You're it! | Pílloche! | ¡Te pillé! | Tocar un hombro | `pal_you_re_it` | nova | Niño tocando el hombro de un compañero para avisarle de que ahora le toca pillar. |
+| Younger | Máis novo | Más joven | Encogerse | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Your hand in mine | A túa man na miña | Tu mano en la mía | Coger la mano del bebé | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Your hands are cleaner now. | As túas mans están máis limpas agora. | Tus manos están más limpias ahora. | — | `pal_hands_cleaner_now` | composta | Manos mucho más limpias y relucientes tras lavarse. |
 | Your shadow is big! | A túa sombra é grande! | ¡Tu sombra es grande! | — | `pal_your_shadow_is_big` | composta | Sombra muy grande y alargada al lado del niño. |
 | Your shadow might have grown. | A túa sombra puido medrar. | Tu sombra puede haber crecido. | — | `pal_shadow_grown` | composta | Sol bajo proyectando una sombra muy alargada del niño sobre la hierba. |
 | Your turn | A túa quenda | Tu turno | — | `pal_your_turn` | composta | Flecha señalando al compañero indicando que es su turno. |
 | Your turn: give the command to your friend | Tócache: dálle a orde ao teu amigo | Te toca: dale la orden a tu amigo | Toma de turno: el escolar enuncia la orden y el compañero la ejecuta. | `pal_your_turn_give_command` | composta | Turno para dar una indicación clara al compañero. |
 | Your turn: now you are the sculptor | Tócache: agora ti es o escultor | Te toca: ahora tú eres el escultor | Intercambio de rol entre los dos miembros de la pareja. | `pal_your_turn_sculptor` | composta | Niño escultor dando postura de estatua a su amigo. |
+| Yuck or yum? | Puaj ou ñam? | ¿Puaj o ñam? | Poner dos caras | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
+| Yum yum! | Ñam ñam! | ¡Ñam ñam! | Hacer «ñam ñam» abriendo la boca | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Yummy chestnut! | Que rica a castaña! | ¡Qué rica la castaña! | Tocar la barriga y sonreír | `pal_yummy_chestnut` | nova | Niño saboreando una rica castaña recién asada y humeante. |
 | Yummy | Riquísimo, riquísima | Riquísimo, riquísima | Relamerse y decir «mmm» | `pal_yummy` | composta | Cara relamiéndose de gusto frente a un pastelito riquísimo. |
 | Zebra | Cebra | Cebra | Dibujar rayas en el brazo | `pal_zebra` | banco | Cebra con rayas blancas y negras. |
@@ -3547,5 +4381,6 @@ Con lámina: 3543. **Sin lámina todavía: 835** (las cuenta y las nombra `pytho
 | Zip your coat | Pecha o abrigo | Cierra el abrigo | Subir la cremallera del abrigo imaginario | `pal_zip_your_coat` | nova | Abrigo rojo cerrando su cremallera central hacia arriba con flecha verde. |
 | Zip | Pechar a cremalleira | Subir la cremallera | Subir una cremallera imaginaria de abajo arriba | `pal_zip` | nova | Cremallera cerrándose de abajo hacia arriba con flecha verde ascendente. |
 | Zipper pull | Tirador da cremalleira | Tirador de la cremallera | Coger el tirador y subirlo | `pal_zipper_pull` | nova | Primer plano del tirador metálico dorado de una cremallera subiendo. |
+| Zippy | Rapidísimo | Rapidísimo | Pasar la mano muy rápido | — | sin lámina por decisión de Frank (O-20261119-3 y O-20261119-6) | sin base visual: motivo en docs/tpr_sin_base.md |
 | Zoom through space | Voar polo espazo | Volar por el espacio | Correr con los brazos estirados | `pal_zoom_through_space` | composta | Niño corriendo con los brazos extendidos volando entre estrellas y cohete. |
 | Zoom | Ir a toda velocidade | Ir a toda velocidad | Mover los brazos como un coche rápido | `pal_zoom` | nova | Coche de carreras avanzando a gran velocidad con estelas largas. |

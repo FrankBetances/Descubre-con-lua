@@ -16,8 +16,8 @@
     "1 esponja"
    ],
    "pezas": [
-    "vaso",
-    "esponxa"
+    "fl:Cup with straw",
+    "fl:Sponge"
    ]
   },
   {
@@ -31,10 +31,13 @@
     "es": "Imagen: Una bolsa de tela para los tesoros"
    },
    "obxectos": [
-    "1 bolsa de tela con asas"
+    "1 bolsa de tela con asas",
+    "tesoros: 1 piedra y 1 concha"
    ],
    "pezas": [
-    "bolsa_tea"
+    "bolsa_tea",
+    "pedra",
+    "cuncha"
    ]
   },
   {
@@ -49,11 +52,13 @@
    },
    "obxectos": [
     "1 manzana",
-    "1 naranja"
+    "1 plátano",
+    "1 mandarina"
    ],
    "pezas": [
-    "mazan",
-    "laranxa"
+    "fl:Red apple",
+    "fl:Banana",
+    "fl:Tangerine"
    ]
   },
   {
@@ -71,8 +76,8 @@
     "1 toalla"
    ],
    "pezas": [
-    "xabon",
-    "toalla"
+    "fl:Soap",
+    "toalla_dobrada"
    ]
   },
   {
@@ -90,8 +95,7 @@
     "1 manta doblada"
    ],
    "pezas": [
-    "peluche_corpo",
-    "oso",
+    "fl:Teddy bear",
     "manta_dobrada"
    ]
   },
@@ -110,8 +114,8 @@
     "1 pelota"
    ],
    "pezas": [
-    "caixa",
-    "pelota"
+    "fl:Package",
+    "fl:Soccer ball"
    ]
   },
   {
@@ -132,7 +136,7 @@
    "pezas": [
     "bloque_vermello",
     "bloque_azul",
-    "caixa",
+    "fl:Package",
     "envase"
    ]
   },
@@ -156,8 +160,8 @@
     "prato",
     "vaso_verdade",
     "vaso_verdade",
-    "culler",
-    "culler"
+    "fl:Spoon",
+    "fl:Spoon"
    ]
   },
   {
@@ -172,12 +176,11 @@
    },
    "obxectos": [
     "1 peluche de oso",
-    "1 pañuelo"
+    "1 pañuelo doblado"
    ],
    "pezas": [
-    "peluche_corpo",
-    "oso",
-    "pano"
+    "fl:Teddy bear",
+    "pano_dobrado"
    ]
   },
   {
@@ -211,11 +214,11 @@
    },
    "obxectos": [
     "1 papel grande en blanco",
-    "1 cera de un solo color (azul)"
+    "1 cera de un solo color"
    ],
    "pezas": [
     "papel",
-    "cera"
+    "fl:Crayon"
    ]
   },
   {
@@ -233,7 +236,7 @@
     "1 billete hecho a mano, sin letras"
    ],
    "pezas": [
-    "mochila",
+    "fl:Backpack",
     "billete"
    ]
   }
