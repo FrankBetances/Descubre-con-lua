@@ -1,15 +1,19 @@
 import '../localization/app_language.dart';
 
-/// Speaking styles used by the offline voice pipeline.
+/// Speaking styles used by the offline voice pipeline (matching Valeria).
 ///
-/// Deliberately narrow. There is no `child` style because a child never uses
-/// this app, and no `clinical` style because nothing here has a health purpose:
-/// every locution is addressed to the teacher or to the family.
+/// `tutor` (1.0): continuous reading pace for adult directions.
+/// `child` (1.05): child-directed English phrases.
+/// `slow` (1.6): single words and slow phrase replay («Oír amodo / Oír despacio»).
+/// No `clinical` style because nothing here has a health purpose.
 enum VoiceStyle {
   /// Continuous reading pace: teacher directions, story pages, capsule sections.
   tutor,
 
-  /// Slower pace for single words, used by the vocabulary cards.
+  /// Child-directed pace (1.05) for English phrases heard by the child.
+  child,
+
+  /// Slower pace (1.6) for single words and slow phrase replay.
   slow;
 
   String get code => name;
@@ -49,14 +53,17 @@ String voiceAssetPath(VoiceStyle style, String text, AppLanguage lang) =>
 
 /// El estilo que le toca a una cadena en inglés.
 ///
-/// Una palabra suelta se graba DESPACIO, porque existe para que la imiten; en
-/// cuanto hay un espacio es una orden o una frase, y esa se lee a ritmo normal.
+/// Una palabra suelta se graba DESPACIO (`slow`), porque existe para que la
+/// imiten; cuando hay un espacio es una frase: si la oye el niño ([paraNeno]),
+/// va en `child` (1.05) acompañada de su versión `slow` (1.6); si es consigna
+/// para el adulto, en `tutor` (1.0).
 /// La misma regla está en `tools/voice_corpus.py`: si las dos dejaran de
 /// coincidir, la app pediría una grabación con otro identificador y el botón
 /// desaparecería sin que nadie supiera por qué.
-VoiceStyle estiloIngles(String texto) => normalizeVoiceText(texto).contains(' ')
-    ? VoiceStyle.tutor
-    : VoiceStyle.slow;
+VoiceStyle estiloIngles(String texto, {bool paraNeno = false}) =>
+    normalizeVoiceText(texto).contains(' ')
+        ? (paraNeno ? VoiceStyle.child : VoiceStyle.tutor)
+        : VoiceStyle.slow;
 
 /// Identifier of the English recording for [text] (synthesised with LJSpeech · piper).
 String englishVoiceAssetId(VoiceStyle style, String text) =>

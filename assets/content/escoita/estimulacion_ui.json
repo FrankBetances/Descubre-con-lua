@@ -1,0 +1,237 @@
+{
+  "version": 1,
+  "titulo": {
+    "gl": "Estimulación da linguaxe e o pensamento",
+    "es": "Estimulación del lenguaje y el pensamiento"
+  },
+  "subtitulo_casa": {
+    "gl": "Escoita, palabras que medran, modelo e pensamento STEAM no experimento do mes.",
+    "es": "Escucha, palabras que crecen, modelo y pensamiento STEAM en el experimento del mes."
+  },
+  "subtitulo_aula": {
+    "gl": "Versión para a asemblea: a docente guía en voz alta e o grupo responde xunto.",
+    "es": "Versión para la asamblea: la docente guía en voz alta y el grupo responde junto."
+  },
+  "etiqueta_casa": {
+    "gl": "NA CASA · PASO A PASO",
+    "es": "EN CASA · PASO A PASO"
+  },
+  "etiqueta_aula": {
+    "gl": "MODO AULA · ASEMBLEA",
+    "es": "MODO AULA · ASAMBLEA"
+  },
+  "guia_asemblea": {
+    "gl": "Na asemblea, Lúa e ti poñedes a voz modelo; o grupo sinala, escolle en voz alta e proba o experimento na mesa.",
+    "es": "En la asamblea, Lúa y tú ponéis la voz modelo; el grupo señala, elige en voz alta y prueba el experimento en la mesa."
+  },
+  "experimento_mes": {
+    "gl": "Experimento STEAM do mes",
+    "es": "Experimento STEAM del mes"
+  },
+  "mes_actual": {
+    "gl": "Mes",
+    "es": "Mes"
+  },
+  "meses_nav": {
+    "gl": "Os 10 meses do curso",
+    "es": "Los 10 meses del curso"
+  },
+  "ir_a_seccion": {
+    "gl": "Abrir a sección de Estimulación e pensamento",
+    "es": "Abrir la sección de Estimulación y pensamiento"
+  },
+  "bloques": {
+    "escoita": {
+      "numero": "1",
+      "titulo": {
+        "gl": "Escoita (o par)",
+        "es": "Escucha (el par)"
+      },
+      "subtitulo_casa": {
+        "gl": "Dúas palabras moi parecidas: di unha sen sinalar para que escolla a lámina.",
+        "es": "Dos palabras muy parecidas: di una sin señalar para que elija la lámina."
+      },
+      "subtitulo_aula": {
+        "gl": "Na asemblea: a docente di unha palabra sen sinalar e o grupo levanta a man ou sinala a lámina á vez.",
+        "es": "En la asamblea: la docente dice una palabra sin señalar y el grupo levanta la mano o señala la lámina a la vez."
+      },
+      "fonema_rotulo": {
+        "gl": "Son que cambia",
+        "es": "Sonido que cambia"
+      }
+    },
+    "progresion": {
+      "numero": "2",
+      "titulo": {
+        "gl": "Palabras que medran",
+        "es": "Palabras que crecen"
+      },
+      "subtitulo_casa": {
+        "gl": "Catro pasos sobre o experimento: do nome á acción.",
+        "es": "Cuatro pasos sobre el experimento: del nombre a la acción."
+      },
+      "subtitulo_aula": {
+        "gl": "Na asemblea: cada paso repítese en coro mentres o grupo fai o xesto coas mans.",
+        "es": "En la asamblea: cada paso se repite en coro mientras el grupo hace el gesto con las manos."
+      },
+      "fases": {
+        "concepto": {
+          "gl": "O QUE É",
+          "es": "QUÉ ES"
+        },
+        "parte": {
+          "gl": "UNHA PARTE",
+          "es": "UNA PARTE"
+        },
+        "accion": {
+          "gl": "O QUE FAI",
+          "es": "QUÉ HACE"
+        },
+        "atributo": {
+          "gl": "COMO É",
+          "es": "CÓMO ES"
+        }
+      }
+    },
+    "modelo": {
+      "numero": "3",
+      "titulo": {
+        "gl": "Fálalle así (o modelo)",
+        "es": "Háblale así (el modelo)"
+      },
+      "subtitulo_casa": {
+        "gl": "Cando diga unha palabra curta, devólvella un chisco máis longa sen corrixir.",
+        "es": "Cuando diga una palabra corta, devuélvesela un poco más larga sin corregir."
+      },
+      "subtitulo_aula": {
+        "gl": "Na asemblea: cando alguén do grupo di unha palabra solta, a docente amplía a frase para toda a clase.",
+        "es": "En la asamblea: cuando alguien del grupo dice una palabra suelta, la docente amplía la frase para toda la clase."
+      },
+      "se_di": {
+        "gl": "Se di:",
+        "es": "Si dice:"
+      }
+    },
+    "pensamos": {
+      "numero": "4",
+      "titulo": {
+        "gl": "Pensamos (STEAM)",
+        "es": "Pensamos (STEAM)"
+      },
+      "subtitulo_casa": {
+        "gl": "Catro momentos para pensar sobre o mesmo experimento e coas mesmas palabras.",
+        "es": "Cuatro momentos para pensar sobre el mismo experimento y con las mismas palabras."
+      },
+      "subtitulo_aula": {
+        "gl": "Na asemblea: a docente pregunta antes e despois da proba e recolle as respostas do grupo.",
+        "es": "En la asamblea: la docente pregunta antes y después de la prueba y recoge las respuestas del grupo."
+      },
+      "significado": {
+        "gl": "Significado",
+        "es": "Significado"
+      },
+      "guia": {
+        "gl": "Guía",
+        "es": "Guía"
+      },
+      "observar": {
+        "gl": "Que observar",
+        "es": "Qué observar"
+      },
+      "modelo_adulto": {
+        "gl": "Frase modelo",
+        "es": "Frase modelo"
+      },
+      "idade_modo": {
+        "elige_dos": {
+          "gl": "Idade: escoller entre dous e sinalar",
+          "es": "Edad: elegir entre dos y señalar"
+        },
+        "palabra_corta": {
+          "gl": "Idade: dicir unha palabra ou dúas",
+          "es": "Edad: decir una palabra o dos"
+        },
+        "explica_because": {
+          "gl": "Idade: explicar por que con «because»",
+          "es": "Edad: explicar por qué con «because»"
+        }
+      },
+      "momentos": {
+        "predice": {
+          "orde": "1",
+          "nome": {
+            "gl": "Predice",
+            "es": "Predice"
+          },
+          "aula": {
+            "gl": "Na asemblea: votación coas mans antes de tocar o material.",
+            "es": "En la asamblea: votación con las manos antes de tocar el material."
+          }
+        },
+        "proba": {
+          "orde": "2",
+          "nome": {
+            "gl": "Proba",
+            "es": "Prueba"
+          },
+          "aula": {
+            "gl": "Na asemblea: unha parella ou pequena mesa proba diante do grupo.",
+            "es": "En la asamblea: una pareja o mesa pequeña prueba delante del grupo."
+          }
+        },
+        "compara": {
+          "orde": "3",
+          "nome": {
+            "gl": "Compara",
+            "es": "Compara"
+          },
+          "aula": {
+            "gl": "Na asemblea: contrastamos en voz alta o que fixo cada cousa.",
+            "es": "En la asamblea: contrastamos en voz alta lo que hizo cada cosa."
+          }
+        },
+        "explica": {
+          "orde": "4",
+          "nome": {
+            "gl": "Explica",
+            "es": "Explica"
+          },
+          "aula": {
+            "gl": "Na asemblea: fechamos coa frase modelo repetida en grupo.",
+            "es": "En la asamblea: cerramos con la frase modelo repetida en grupo."
+          }
+        }
+      }
+    }
+  },
+  "zero_dous": {
+    "etiqueta": {
+      "gl": "0-2 ANOS · MIRA E NOTA",
+      "es": "0-2 AÑOS · MIRA Y NOTA"
+    },
+    "sen_preguntas": {
+      "gl": "Nesta idade non hai preguntas abertas: observamos xuntos a reacción sensorial.",
+      "es": "En esta edad no hay preguntas abiertas: observamos juntos la reacción sensorial."
+    },
+    "aula_nota": {
+      "gl": "Na asemblea de 0-2: grupo moi pequeno no chan, obxectos seguros e frase curta á vez que o xesto.",
+      "es": "En la asamblea de 0-2: grupo muy pequeño en el suelo, objetos seguros y frase corta a la vez que el gesto."
+    },
+    "palabras": {
+      "gl": "Palabras do proxecto",
+      "es": "Palabras del proyecto"
+    }
+  },
+  "meses": [
+    { "mes": 1, "mes_calendario": 9, "gl": "Setembro", "es": "Septiembre", "curto_gl": "Set", "curto_es": "Sep" },
+    { "mes": 2, "mes_calendario": 10, "gl": "Outubro", "es": "Octubre", "curto_gl": "Out", "curto_es": "Oct" },
+    { "mes": 3, "mes_calendario": 11, "gl": "Novembro", "es": "Noviembre", "curto_gl": "Nov", "curto_es": "Nov" },
+    { "mes": 4, "mes_calendario": 12, "gl": "Decembro", "es": "Diciembre", "curto_gl": "Dec", "curto_es": "Dic" },
+    { "mes": 5, "mes_calendario": 1, "gl": "Xaneiro", "es": "Enero", "curto_gl": "Xan", "curto_es": "Ene" },
+    { "mes": 6, "mes_calendario": 2, "gl": "Febreiro", "es": "Febrero", "curto_gl": "Feb", "curto_es": "Feb" },
+    { "mes": 7, "mes_calendario": 3, "gl": "Marzo", "es": "Marzo", "curto_gl": "Mar", "curto_es": "Mar" },
+    { "mes": 8, "mes_calendario": 4, "gl": "Abril", "es": "Abril", "curto_gl": "Abr", "curto_es": "Abr" },
+    { "mes": 9, "mes_calendario": 5, "gl": "Maio", "es": "Mayo", "curto_gl": "Mai", "curto_es": "May" },
+    { "mes": 10, "mes_calendario": 6, "gl": "Xuño", "es": "Junio", "curto_gl": "Xuñ", "curto_es": "Jun" }
+  ]
+}

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../english/widgets/nucleo_arriba.dart';
 import '../../../core/audio/offline_audio_service.dart';
+import '../../../core/brand/lamina_vector.dart';
 import '../../../core/localization/app_language.dart';
 import '../../../core/localization/localized_string.dart';
 import '../../../core/navigation/ruta_lua.dart';
@@ -13,6 +14,8 @@ import '../../cuentos/views/biblioteca_contos_screen.dart';
 import '../../cuentos/views/cuentos_list_screen.dart';
 import '../../docentes/widgets/hoxe_na_aula.dart' show DiaQueToca;
 import '../../english/views/palabras_do_traxecto_screen.dart';
+import '../../estimulacion/data/estimulacion_ui.dart';
+import '../../estimulacion/views/estimulacion_screen.dart';
 import '../../laminas/views/laminas_gallery_screen.dart';
 import '../../lectura/views/aprender_a_ler_screen.dart';
 import '../../steam/views/steam_do_ano_screen.dart';
@@ -183,6 +186,22 @@ class ExplorarFamiliasScreen extends StatelessWidget {
           enCasa: true,
         ),
       ),
+      _Modulo(
+        clave: 'explorar_estimulacion',
+        icona: Icons.record_voice_over_rounded,
+        laminaClave: 'ico_estimulacion',
+        nome: NomesFamilias.estimulacion,
+        di: NomesFamilias.estimulacionDi,
+        abrir: (_) => EstimulacionScreen(
+          language: language,
+          onLanguageChanged: onLanguageChanged,
+          audioService: audioService,
+          initialCursoId: cursoId,
+          initialMes: EstimulacionUi.mesDeCalendario(toca.dia.mesCalendario),
+          enAula: false,
+          onCambiarCurso: onCambiarCurso,
+        ),
+      ),
     ];
 
     return Scaffold(
@@ -253,6 +272,7 @@ class _Modulo {
     required this.nome,
     required this.di,
     required this.abrir,
+    this.laminaClave,
   });
 
   final String clave;
@@ -260,6 +280,7 @@ class _Modulo {
   final LocalizedString nome;
   final LocalizedString di;
   final WidgetBuilder abrir;
+  final String? laminaClave;
 }
 
 class _Tesela extends StatelessWidget {
@@ -290,15 +311,21 @@ class _Tesela extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Container(
-                width: 46,
-                height: 46,
-                decoration: BoxDecoration(
-                  color: context.acentoTint,
+              if (modulo.laminaClave case final lc?)
+                ClipRRect(
                   borderRadius: BorderRadius.circular(14),
+                  child: LaminaEscena(clave: lc, ancho: 46),
+                )
+              else
+                Container(
+                  width: 46,
+                  height: 46,
+                  decoration: BoxDecoration(
+                    color: context.acentoTint,
+                    borderRadius: BorderRadius.circular(14),
+                  ),
+                  child: Icon(modulo.icona, color: context.acento, size: 26),
                 ),
-                child: Icon(modulo.icona, color: context.acento, size: 26),
-              ),
               const SizedBox(height: 12),
               Text(
                 modulo.nome.resolve(language),

@@ -5,9 +5,12 @@ import '../../../core/audio/voice_id.dart';
 import '../../../core/audio/widgets/boton_escuchar.dart';
 import '../../../core/brand/imaxe_escena.dart';
 import '../../../core/localization/app_language.dart';
+import '../../../core/navigation/ruta_lua.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../core/widgets/movimiento.dart';
 import '../../../data/models/plan_escoita_model.dart';
+import '../../estimulacion/views/estimulacion_screen.dart';
+import '../nomes_familias.dart';
 
 /// O-20261119-8: la actividad de escucha de la semana, dentro de la lección.
 /// La pieza es la del mes; la actividad cambia con la semana (1 a 4).
@@ -43,11 +46,14 @@ class VistaPasoEscoita extends StatelessWidget {
   final PasoEscoita paso;
   final AppLanguage lang;
   final OfflineAudioService? audioService;
-  const VistaPasoEscoita(
-      {super.key,
-      required this.paso,
-      required this.lang,
-      required this.audioService});
+  final ValueChanged<AppLanguage>? onLanguageChanged;
+  const VistaPasoEscoita({
+    super.key,
+    required this.paso,
+    required this.lang,
+    required this.audioService,
+    this.onLanguageChanged,
+  });
 
   Widget _palabra(PalabraEscoita p, {double ancho = 130}) => Column(
         mainAxisSize: MainAxisSize.min,
@@ -64,7 +70,8 @@ class VistaPasoEscoita extends StatelessWidget {
             texto: p.en,
             language: AppLanguage.en,
             interfaz: lang,
-            style: estiloIngles(p.en),
+            style: estiloIngles(p.en, paraNeno: true),
+            conVozLenta: true,
             comoChip: true,
             descripcion: p.en,
             significado: p.significado,
@@ -148,7 +155,8 @@ class VistaPasoEscoita extends StatelessWidget {
                   texto: p.adulto[i],
                   language: AppLanguage.en,
                   interfaz: lang,
-                  style: estiloIngles(p.adulto[i]),
+                  style: estiloIngles(p.adulto[i], paraNeno: true),
+                  conVozLenta: true,
                   comoChip: true,
                   descripcion: p.adulto[i],
                   significado: i < p.adultoSignificado.length
@@ -173,7 +181,31 @@ class VistaPasoEscoita extends StatelessWidget {
     return Column(
       key: Key('leccion_escoita_s${paso.semana}'),
       crossAxisAlignment: CrossAxisAlignment.stretch,
-      children: corpo,
+      children: [
+        ...corpo,
+        const SizedBox(height: 14),
+        Align(
+          alignment: Alignment.centerLeft,
+          child: TextButton.icon(
+            key: const Key('paso_escoita_ver_seccion'),
+            icon: const Icon(Icons.open_in_new_rounded, size: 18),
+            label: Text(NomesFamilias.estimulacion.resolve(lang)),
+            onPressed: () => Navigator.of(context).push(
+              RutaLua(
+                de: context,
+                builder: (_) => EstimulacionScreen(
+                  language: lang,
+                  onLanguageChanged: onLanguageChanged ?? (_) {},
+                  audioService: audioService,
+                  initialCursoId: p.curso,
+                  initialMes: p.mes,
+                  enAula: false,
+                ),
+              ),
+            ),
+          ),
+        ),
+      ],
     );
   }
 

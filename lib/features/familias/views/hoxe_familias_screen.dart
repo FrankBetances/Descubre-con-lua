@@ -40,6 +40,7 @@ import '../../steam/widgets/steam_no_calendario.dart';
 import '../nomes_familias.dart';
 import '../widgets/reto_da_semana.dart';
 import '../widgets/selector_idade.dart';
+import '../../estimulacion/widgets/entrada_estimulacion.dart';
 import 'codigo_da_escola_screen.dart';
 import 'ponte_ao_dia_screen.dart';
 import 'xogo_de_hoxe_screen.dart';
@@ -357,10 +358,23 @@ class _HoxeFamiliasScreenState extends State<HoxeFamiliasScreen> {
                 ),
               ),
             ],
+            // O-20261120-1 (F-20261120-2): la estimulación del lenguaje y el
+            // pensamiento, arriba y a la vista, no al final de la lección.
+            const SizedBox(height: 6),
+            EntradaEstimulacionCard(
+              cursoId: widget.cursoId,
+              mesCalendario: _toca.dia.mesCalendario,
+              language: lang,
+              onLanguageChanged: widget.onLanguageChanged,
+              audioService: widget.audioService,
+              enAula: false,
+              onCambiarCurso: widget.onCambiarCurso,
+              compacta: true,
+            ),
             // O-20261109-5: la pantalla «Learn» de duolingo-clone: puntos y
             // racha del niño, la unidad en su caja verde y el camino de los
             // cinco días en nodos; el nodo de hoy abre la lección paso a paso.
-            const SizedBox(height: 10),
+            const SizedBox(height: 2),
             FutureBuilder<Leccions?>(
               future: Leccions.cargar()
                   .then<Leccions?>((l) => l, onError: (_) => null),
@@ -471,6 +485,16 @@ class _HoxeFamiliasScreenState extends State<HoxeFamiliasScreen> {
               dia: _toca.dia.dia,
               language: lang,
               audioService: widget.audioService,
+            ),
+            const SizedBox(height: 12),
+            EntradaEstimulacionCard(
+              cursoId: widget.cursoId,
+              mesCalendario: _toca.dia.mesCalendario,
+              language: lang,
+              onLanguageChanged: widget.onLanguageChanged,
+              audioService: widget.audioService,
+              enAula: false,
+              onCambiarCurso: widget.onCambiarCurso,
             ),
             // O-20261109-3: Lúa de Valeria, con los premios del niño.
             if (CrianzaDaCasa.maybeOf(context) case final casa?)

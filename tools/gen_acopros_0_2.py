@@ -79,6 +79,41 @@ FASES = [
       "es": "Repasamos todo el proyecto"}),
 ]
 
+# P9.2 (0-2): un momento «mira y nota» por proyecto, sin preguntas abiertas y
+# con frases de dos elementos como máximo sin verbo «to be».
+MIRA_E_NOTA = {
+    9: ("Wet sponge!", "Esponxa mollada!", "¡Esponja mojada!",
+        "Achega a esponxa mollada á man e logo a toalla seca, en silencio, para que note o contraste.",
+        "Acerca la esponja mojada a la mano y luego la toalla seca, en silencio, para que note el contraste."),
+    10: ("Listen, water!", "Escoita, auga!", "¡Escucha, agua!",
+         "Bota auga amodo da xerra ao caldeiro e abanea a botella preto para que note cada son.",
+         "Echa agua despacio de la jarra al cubo y agita la botella cerca para que note cada sonido."),
+    11: ("Leaf, stone!", "Folla, pedra!", "¡Hoja, piedra!",
+         "Solta á vez unha folla seca e unha pedra grande desde pouca altura para que siga o movemento cos ollos.",
+         "Suelta a la vez una hoja seca y una piedra grande desde poca altura para que siga el movimiento con los ojos."),
+    12: ("Bright leaf!", "Folla brillante!", "¡Hoja brillante!",
+         "Ilumina coa lanterna unha folla grande contra a parede para que mire a luz e a sombra.",
+         "Ilumina con la linterna una hoja grande contra la pared para que mire la luz y la sombra."),
+    1: ("One basket!", "Unha cesta!", "¡Una cesta!",
+        "Garda dúas pezas iguais na súa cesta mentres dis o nome con calma, deixando que mire onde vai cada unha.",
+        "Guarda dos piezas iguales en su cesta mientras dices el nombre con calma, dejando que mire dónde va cada una."),
+    2: ("Warm, cold!", "Morno, frío!", "¡Templado, frío!",
+        "Pon na súa palma un segundo a mazá fría e logo o pan morno para que sinta os dous contrastes.",
+        "Pon en su palma un segundo la manzana fría y luego el pan templado para que sienta los dos contrastes."),
+    3: ("Float, bubble!", "Flota, burbulla!", "¡Flota, burbuja!",
+        "Sopra dúas burbullas suaves á altura dos seus ollos para que as siga co corpo e coa man.",
+        "Sopla dos burbujas suaves a la altura de sus ojos para que las siga con el cuerpo y con la mano."),
+    4: ("Soft sound!", "Son suave!", "¡Sonido suave!",
+        "Frota amodo tea contra tea e logo cartón estriado para que escuite e toque cada textura.",
+        "Frota despacio tela contra tela y luego cartón estriado para que escuche y toque cada textura."),
+    5: ("Look, shadow!", "Mira, sombra!", "¡Mira, sombra!",
+        "Proxecta na parede a sombra do can ou do gato de xoguete xunto ao boneco real para que mire os dous.",
+        "Proyecta en la pared la sombra del perro o del gato de juguete junto al muñeco real para que mire los dos."),
+    6: ("Roll ball!", "Roda pelota!", "¡Rueda pelota!",
+        "Fai rodar a pelota branda e pousa á beira a caixa para que note cal roda polo chan.",
+        "Haz rodar la pelota blanda y posa al lado la caja para que note cuál rueda por el suelo."),
+}
+
 
 def limpo(en: str) -> str:
     return re.sub(r"\s+", " ", en.strip())
@@ -94,6 +129,8 @@ def valida(en: str) -> bool:
 
 def construir() -> dict:
     lec = json.loads((RAIZ / "assets/content/leccions/leccions.json").read_text(encoding="utf-8"))
+    steam_data = json.loads((RAIZ / "assets/content/steam/steam_do_mes.json").read_text(encoding="utf-8"))["experimentos"]
+    steam_obs = {e["id"]: e.get("observar") or {"gl": "", "es": ""} for e in steam_data}
     unidades = lec["cursos"]["curso_0_2"]["unidades"]
     cancions = json.loads((RAIZ / "assets/content/cancions/cancions_con_pulso.json").read_text(encoding="utf-8"))["cancions"]
     proxectos = []
@@ -139,6 +176,8 @@ def construir() -> dict:
         }
         en, gl, es = RIMAS[mes]
         rk = en.lower().strip("!?. ")
+        m_en, m_gl, m_es, g_gl, g_es = MIRA_E_NOTA[mes]
+        st_id = (u.get("steam") or {}).get("id", "")
         proxectos.append({
             "mesCalendario": mes,
             "proxecto": u["titulo"],
@@ -160,6 +199,13 @@ def construir() -> dict:
             "guia": {
                 "gl": f"Canta «{canc['gl']}» co xesto. Repasa as palabras do proxecto, unha a unha, mentres xogades.",
                 "es": f"Canta «{canc['es']}» con el gesto. Repasa las palabras del proyecto, una a una, mientras jugáis.",
+            },
+            "mira_e_nota": {
+                "titulo": {"gl": "Mira e nota", "es": "Mira y nota"},
+                "frase_en": m_en,
+                "significado": {"gl": m_gl, "es": m_es},
+                "guia": {"gl": g_gl, "es": g_es},
+                "observar": steam_obs.get(st_id, {"gl": "", "es": ""}),
             },
         })
         anteriores = [w["en"] for w in palabras]
@@ -199,6 +245,14 @@ def revisar(d: dict) -> list[str]:
             fallos.append(f"mes {m}: sen canción")
         if not (p["rima"]["en"] and p["rima"]["gl"] and p["rima"]["es"]):
             fallos.append(f"mes {m}: sen rima")
+        mira = p.get("mira_e_nota") or {}
+        if not mira.get("frase_en") or not valida(mira["frase_en"]):
+            fallos.append(f"mes {m}: mira_e_nota.frase_en non válida (máx 2 palabras sen to be)")
+        if "?" in str(mira) or "¿" in str(mira):
+            fallos.append(f"mes {m}: mira_e_nota en 0-2 non pode levar preguntas abertas")
+        for campo in ("significado", "guia", "observar"):
+            if not all((mira.get(campo) or {}).get(l) for l in ("gl", "es")):
+                fallos.append(f"mes {m}: mira_e_nota.{campo} baleiro en gl ou es")
         sem1 = p["semanas"][0]
         if not sem1["palabras"] or "canción" not in sem1["fase"]["es"]:
             fallos.append(f"mes {m}: a semana 1 non empeza polo vocabulario e a canción")

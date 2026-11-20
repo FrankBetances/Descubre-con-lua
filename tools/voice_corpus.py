@@ -37,10 +37,10 @@ LANGS = ("gl", "es")
 VOICE_LANGS = ("gl", "es", "en")
 ALL_LANGS = VOICE_LANGS
 
-# Reading pace passed to the synthesiser. There is no `child` style because a
-# child never uses this app, and no `clinical` style because nothing here has a
-# health purpose.
-LENGTH_SCALE = {"tutor": 1.0, "slow": 1.6}
+# Reading pace passed to the synthesiser, matching Valeria's generate-voice-assets.py
+# (`tutor` 1.0, `child` 1.05, `slow` 1.6). There is no `clinical` style because
+# nothing here has a health purpose.
+LENGTH_SCALE = {"tutor": 1.0, "child": 1.05, "slow": 1.6}
 
 _WHITESPACE = re.compile(r"\s+")
 
@@ -182,14 +182,32 @@ def _add(text: dict[str, str], style: str, source: str, seen: dict[str, Locution
         _one(text.get(lang, ""), lang, style, source, seen)
 
 
-def estilo_ingles(text: str) -> str:
-    """Una palabra suelta se imita, una frase se lee.
+def estilo_ingles(text: str, para_neno: bool = False) -> str:
+    """Una palabra suelta se imita (`slow`), una frase se lee (`tutor` o `child`).
 
+    Para frases inglesas dirigidas al niño (`para_neno=True`, como en Valeria):
+    si tiene espacios (frase), `child` (1.05); si es una palabra suelta, `slow` (1.6).
     La MISMA regla está en `estiloIngles` de lib/core/audio/voice_id.dart. Si
     las dos dejaran de coincidir, la app pediría una grabación con otro
     identificador y el botón desaparecería sin que nadie supiera por qué.
     """
-    return "tutor" if " " in normalize(text) else "slow"
+    if " " in normalize(text):
+        return "child" if para_neno else "tutor"
+    return "slow"
+
+
+def _one_neno(text: str, source: str, seen: dict[str, Locution]) -> None:
+    """Frase o palabra inglesa para el niño (P9.1, stepLines de Valeria):
+    - palabra suelta -> `slow` (1.6), como hoy;
+    - frase -> `child` (1.05) Y la MISMA frase entera en `slow` (1.6).
+    """
+    value = normalize(text)
+    if not value:
+        return
+    estilo = estilo_ingles(value, para_neno=True)
+    _one(value, "en", estilo, source, seen)
+    if estilo == "child":
+        _one(value, "en", "slow", f"{source}/slow", seen)
 
 
 def collect_locutions(content_dir: Path = CONTENT_DIR) -> list[Locution]:
@@ -841,6 +859,13 @@ def collect_locutions(content_dir: Path = CONTENT_DIR) -> list[Locution]:
                 _one(rima, "en", estilo_ingles(rima), "acopros/rima", seen)
             for w in p.get("palabras", []):
                 _one(w.get("en", ""), "en", estilo_ingles(w.get("en", "")), "acopros/palabra", seen)
+            mira = p.get("mira_e_nota")
+            if isinstance(mira, dict) and mira.get("frase_en"):
+                mes_c = p.get("mesCalendario", "?")
+                _one_neno(str(mira["frase_en"]), f"acopros/{mes_c}/mira_e_nota", seen)
+                sig = mira.get("significado")
+                if isinstance(sig, dict):
+                    _add(_localized(sig), "tutor", f"acopros/{mes_c}/mira_e_nota/significado", seen)
 
     # O-20261119-8: los Juegos de escucha, copiados de Valeria. Cada palabra y
     # cada frase suena en la lengua de su banco; la persona adulta las oye en
@@ -863,9 +888,10 @@ def collect_locutions(content_dir: Path = CONTENT_DIR) -> list[Locution]:
                     estilo = estilo_ingles(texto) if lang == "en" else "tutor"
                     _one(texto, lang, estilo, f"escoita/valeria_{lang}", seen)
 
-    # La pieza de escucha del mes (plan_mensual.json): sus palabras inglesas y
-    # las tres frases del modelo para el adulto suenan en el paso de la lección,
-    # cada una con su significado gl/es para el doble toque (F7).
+    # La pieza de escucha del mes (plan_mensual.json): pares, progresiones
+    # (palabra y frase), modelo del adulto dicho al niño y momentos de
+    # pensamiento STEAM. Cada frase inglesa dirigida al niño se genera en `child`
+    # (1.05) Y en `slow` (1.6), como `stepLines` en Valeria (P9.1).
     plan = content_dir / "escoita" / "plan_mensual.json"
     if plan.exists():
         d = json.loads(plan.read_text(encoding="utf-8"))
@@ -876,14 +902,31 @@ def collect_locutions(content_dir: Path = CONTENT_DIR) -> list[Locution]:
                 palabras += [p["par"]["a"], p["par"]["b"]]
             for w in palabras:
                 fonte = f"{base}/{w['en']}"
-                _one(w["en"], "en", estilo_ingles(w["en"]), fonte, seen)
+                _one_neno(w["en"], fonte, seen)
                 _add({"gl": w.get("gl", ""), "es": w.get("es", "")}, "tutor", f"{fonte}/significado", seen)
+                if w.get("frase"):
+                    _one_neno(str(w["frase"]), f"{fonte}/frase", seen)
             sig = p["modelo"].get("significado") or []
             for k, frase in enumerate(p["modelo"]["adulto"]):
                 fonte = f"{base}/modelo/{k}"
-                _one(frase, "en", estilo_ingles(frase), fonte, seen)
+                _one_neno(frase, fonte, seen)
                 if k < len(sig):
                     _add(sig[k], "tutor", f"{fonte}/significado", seen)
+            pensamiento = p.get("pensamiento")
+            if isinstance(pensamiento, dict):
+                for momento in ("predice", "proba", "compara", "explica"):
+                    m = pensamiento.get(momento)
+                    if not isinstance(m, dict):
+                        continue
+                    fonte = f"{base}/pensamiento/{momento}"
+                    if m.get("pregunta_en"):
+                        _one_neno(str(m["pregunta_en"]), fonte, seen)
+                    if isinstance(m.get("significado"), dict):
+                        _add(_localized(m["significado"]), "tutor", f"{fonte}/significado", seen)
+                    if m.get("modelo_en"):
+                        _one_neno(str(m["modelo_en"]), f"{fonte}/modelo", seen)
+                    if isinstance(m.get("modelo_significado"), dict):
+                        _add(_localized(m["modelo_significado"]), "tutor", f"{fonte}/modelo/significado", seen)
 
     return sorted(seen.values(), key=lambda e: (e.lang, e.style, e.id))
 

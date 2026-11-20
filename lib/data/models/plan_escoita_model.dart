@@ -14,15 +14,21 @@ class PalabraEscoita {
   final String en;
   final LocalizedString significado;
   final String? lamina;
+  final LocalizedString? steam;
 
-  const PalabraEscoita(
-      {required this.en, required this.significado, this.lamina});
+  const PalabraEscoita({
+    required this.en,
+    required this.significado,
+    this.lamina,
+    this.steam,
+  });
 
   factory PalabraEscoita.fromJson(Map<String, dynamic> j) => PalabraEscoita(
         en: j['en'] as String,
         significado: LocalizedString(
             gl: (j['gl'] as String?) ?? '', es: (j['es'] as String?) ?? ''),
         lamina: j['lamina'] as String?,
+        steam: j['steam'] is Map ? LocalizedString.fromJson(j['steam']) : null,
       );
 }
 
@@ -34,6 +40,7 @@ class FaseEscoita extends PalabraEscoita {
     required super.en,
     required super.significado,
     super.lamina,
+    super.steam,
     required this.tipo,
     required this.frase,
     required this.accion,
@@ -45,6 +52,7 @@ class FaseEscoita extends PalabraEscoita {
       en: p.en,
       significado: p.significado,
       lamina: p.lamina,
+      steam: p.steam,
       tipo: j['tipo'] as String,
       frase: (j['frase'] as String?) ?? '',
       accion: LocalizedString.fromJson(j['accion']),
@@ -52,9 +60,77 @@ class FaseEscoita extends PalabraEscoita {
   }
 }
 
+/// P9.2: un momento del ciclo de pensamiento STEAM (predice, proba, compara, explica).
+class MomentoPensamiento {
+  final String clave;
+  final String preguntaEn;
+  final LocalizedString significado;
+  final LocalizedString guia;
+  final LocalizedString observar;
+  final String? modeloEn;
+  final LocalizedString? modeloSignificado;
+
+  const MomentoPensamiento({
+    required this.clave,
+    required this.preguntaEn,
+    required this.significado,
+    required this.guia,
+    required this.observar,
+    this.modeloEn,
+    this.modeloSignificado,
+  });
+
+  factory MomentoPensamiento.fromJson(String clave, Map<String, dynamic> j) =>
+      MomentoPensamiento(
+        clave: clave,
+        preguntaEn: (j['pregunta_en'] as String?) ?? '',
+        significado: LocalizedString.fromJson(j['significado']),
+        guia: LocalizedString.fromJson(j['guia']),
+        observar: LocalizedString.fromJson(j['observar']),
+        modeloEn: j['modelo_en'] as String?,
+        modeloSignificado: j['modelo_significado'] is Map
+            ? LocalizedString.fromJson(j['modelo_significado'])
+            : null,
+      );
+}
+
+/// P9.2: los cuatro momentos de pensamiento crítico y capacidades cognitivas
+/// anclados en el experimento STEAM del mes.
+class PensamientoSteam {
+  final String edadModo;
+  final MomentoPensamiento predice;
+  final MomentoPensamiento proba;
+  final MomentoPensamiento compara;
+  final MomentoPensamiento explica;
+
+  const PensamientoSteam({
+    required this.edadModo,
+    required this.predice,
+    required this.proba,
+    required this.compara,
+    required this.explica,
+  });
+
+  List<MomentoPensamiento> get momentos => [predice, proba, compara, explica];
+
+  factory PensamientoSteam.fromJson(Map<String, dynamic> j) => PensamientoSteam(
+        edadModo: (j['edad_modo'] as String?) ?? '',
+        predice: MomentoPensamiento.fromJson(
+            'predice', j['predice'] as Map<String, dynamic>),
+        proba: MomentoPensamiento.fromJson(
+            'proba', j['proba'] as Map<String, dynamic>),
+        compara: MomentoPensamiento.fromJson(
+            'compara', j['compara'] as Map<String, dynamic>),
+        explica: MomentoPensamiento.fromJson(
+            'explica', j['explica'] as Map<String, dynamic>),
+      );
+}
+
 class PezaMensual {
   final String curso;
   final int mes;
+  final String steamId;
+  final LocalizedString steamTitulo;
 
   final PalabraEscoita a;
   final PalabraEscoita b;
@@ -75,10 +151,13 @@ class PezaMensual {
   /// El significado gl/es de cada frase del modelo, para el doble toque.
   final List<LocalizedString> adultoSignificado;
   final LocalizedString notaModelo;
+  final PensamientoSteam? pensamiento;
 
   const PezaMensual({
     required this.curso,
     required this.mes,
+    this.steamId = '',
+    this.steamTitulo = const LocalizedString(gl: '', es: ''),
     required this.a,
     required this.b,
     required this.fonema,
@@ -93,15 +172,21 @@ class PezaMensual {
     required this.adulto,
     this.adultoSignificado = const [],
     required this.notaModelo,
+    this.pensamiento,
   });
 
   factory PezaMensual.fromJson(Map<String, dynamic> j) {
     final par = j['par'] as Map<String, dynamic>;
     final prog = j['progresion'] as Map<String, dynamic>;
     final mod = j['modelo'] as Map<String, dynamic>;
+    final st = j['steam'] is Map ? j['steam'] as Map<String, dynamic> : null;
     return PezaMensual(
       curso: j['curso'] as String,
       mes: j['mes'] as int,
+      steamId: (st?['id'] as String?) ?? '',
+      steamTitulo: st?['titulo'] is Map
+          ? LocalizedString.fromJson(st!['titulo'])
+          : const LocalizedString(gl: '', es: ''),
       a: PalabraEscoita.fromJson(par['a'] as Map<String, dynamic>),
       b: PalabraEscoita.fromJson(par['b'] as Map<String, dynamic>),
       fonema: par['fonema'] as String,
@@ -122,6 +207,9 @@ class PezaMensual {
           LocalizedString.fromJson(x),
       ],
       notaModelo: LocalizedString.fromJson(mod['nota']),
+      pensamiento: j['pensamiento'] is Map
+          ? PensamientoSteam.fromJson(j['pensamiento'] as Map<String, dynamic>)
+          : null,
     );
   }
 }

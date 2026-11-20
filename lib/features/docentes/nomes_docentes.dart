@@ -59,6 +59,17 @@ class NomesDocentes {
   static const cienciaDi = LocalizedString(
       gl: 'STEAM: unha sesión por curso, o día que lle toca.',
       es: 'STEAM: una sesión por curso, el día que le toca.');
+  static const estimulacion = LocalizedString(
+      gl: 'Estimulación da linguaxe e o pensamento',
+      es: 'Estimulación del lenguaje y el pensamiento');
+
+  /// En la cabecera de su pantalla: «Estimulación da linguaxe e o pensamento» y
+  /// «Estimulación del lenguaje y el pensamiento» no caben enteros a 360 px.
+  static const estimulacionCabeceira =
+      LocalizedString(gl: 'Estimulación', es: 'Estimulación');
+  static const estimulacionDi = LocalizedString(
+      gl: 'Para a asemblea: a docente guía e o grupo responde.',
+      es: 'Para la asamblea: la docente guía y el grupo responde.');
 
   /// Frank: «solo deja planificador curricular».
   static const programacion = LocalizedString(

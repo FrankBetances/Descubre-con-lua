@@ -117,3 +117,139 @@ check_bundled_assets, check_licencias, check_no_emoji, check_registro_commits, c
 ENTREGA: SHA y la tabla de los 16 pares nuevos con qué parte del experimento nombra cada palabra.
 ```
 
+## P9 · Estimulación del lenguaje y el pensamiento, voz de Valeria y realidad aumentada (20/11/2026)
+
+```text
+TRABAJO INTEGRAL DE ANTIGRAVITY · P9 · Estimulación del lenguaje y el pensamiento, voz de Valeria y realidad aumentada
+(órdenes de Frank del 20/11/2026, O-20261120-1; R-STEAM de CLAUDE.md, regla suprema)
+
+Repositorio: FrankBetances/Descubre-con-lua. Rama: antigravity/escoita.
+Antes de empezar: git fetch origin && git merge origin/main (trae el PR #63 con las 40 piezas) y
+git merge origin/claude/upbeat-fermi-3d0utp (trae los pasos P9.0–P9.8 ya en la tabla). Si hay
+conflicto, PARA y dímelo.
+Commit y push SOLO a antigravity/escoita. Nada de merge a main, PR, reset duro, git add -f, borrar
+ficheros ni tools/push_seguro.sh. NO toques .claude/. En este trabajo SÍ puedes tocar lib/ y test/.
+Prohibido borrar, quitar o sustituir pantallas, pasos o contenido que ya existe (R-BORRAR): se añade
+y se mejora. El paso de escucha que hoy está dentro de la lección se queda.
+Cada commit empieza por su paso (P9.0 … P9.8) y lleva su fila en el «Registro de commits» de
+docs/PLAN_ANTIGRAVITY.md. Los pasos P9.0–P9.8 ya están en la tabla de pasos.
+Todas las edades a la vez: 2-3, 3-4, 4-5 y 5-6 (10 meses cada una) y 0-2 donde se diga. Nada de pilotos.
+
+REGLA SUPREMA: el eje de toda la app es el pensamiento STEAM aplicado a la estimulación del lenguaje.
+Cada palabra, frase, pregunta, imagen y escena nombra el experimento STEAM de su mes
+(assets/content/steam/steam_do_mes.json, el id en cursos.<curso>.unidades[mes-1].steam de
+assets/content/leccions/leccions.json).
+Valeria (github.com/FrankBetances/valeria, commit e2a2a5e8) es la fuente: de ella se copia el MÉTODO
+y el código que se indica. Su contenido entra orientado al STEAM del mes.
+La app tiene ánimo de lucro: nada NC/ND (ni ARASAAC). Sin emoji del sistema. Contenido en JSON, nunca
+escrito en los widgets. Todo en gallego y castellano. No subas capturas de Valeria al repositorio (es
+público): compáralas fuera.
+
+P9.0 · Plan y control
+- docs/estimulacion-plan.md: qué se copia de Valeria (fichero y función) y dónde entra aquí.
+
+P9.1 · Voz como en Valeria (el inglés hoy suena demasiado rápido)
+Fuente: valeria/scripts/generate-voice-assets.py (LENGTH_SCALE = tutor 1.0 · child 1.05 · clinical
+1.15 · slow 1.6) y valeria/src/valeriaSemanticExpansion.ts (stepLines: cada frase al niño en «child»
+y la MISMA frase entera en «slow»; el adulto en «tutor»).
+- tools/voice_corpus.py: añade los estilos «child» (1.05) y «slow» de frase (1.6) con los mismos
+  valores. Toda frase inglesa que oye el niño (pares, progresiones, modelo del adulto dicho al niño,
+  banco de Valeria, juegos de escucha) se genera en «child» Y en «slow». Las instrucciones para el
+  adulto siguen en «tutor». Las palabras sueltas, en «slow» como hoy.
+- lib/core/audio/voice_id.dart: VoiceStyle.child y la regla estiloIngles igual que en el corpus
+  (si las dos reglas no coinciden, el botón desaparece sin aviso).
+- BotonEscuchar: al lado de cada frase inglesa para el niño, un botón «Oír amodo / Oír despacio» que
+  reproduce la versión «slow», como speakPhraseSlow de Valeria (valeria/src/valeriaVoice.ts).
+- Gate nuevo tools/check_voz_lenta.py en tools/gates.sh: falla si una frase inglesa para el niño no
+  tiene su versión «slow» en el corpus.
+- No generes los audios: deja voice-corpus.json al día (python3 tools/export_voice_corpus.py); los
+  sintetiza el workflow voice-assets.
+
+P9.2 · Pensamiento STEAM en cada pieza (lo que falta y Frank pidió: pensamiento crítico y capacidades
+cognitivas)
+- En cada una de las 40 piezas de assets/content/escoita/plan_mensual.json, un bloque nuevo
+  "pensamiento" con cuatro momentos sobre el MISMO experimento y las MISMAS palabras del par y la
+  progresión:
+    predice  (antes de probar: «¿Que pasará se…? / ¿Qué pasará si…?»),
+    proba    (la acción con los materiales del experimento),
+    compara  (las dos cosas del par o de la progresión: cuál, cuál más, en qué se parecen),
+    explica  (por qué pasó, con una frase modelo corta para el adulto).
+  Cada momento lleva: pregunta en inglés corta para el niño (con voz child + slow), su significado
+  gl/es, la guía del adulto en gl/es y qué observar.
+- Ejemplo «¿Flota o se hunde?»: predice «Boat or boot: which one sinks?» → proba (meter los dos en
+  el agua) → compara «The boat floats. The boot sinks.» → explica «The boot is heavy.».
+- Ajusta a la edad: 2-3 y 3-4 eligen entre dos (señalar); 4-5 dicen una palabra o frase de dos;
+  5-6 explican con «because».
+- 0-2: un momento «mira y nota» por proyecto (assets/content de proyectos ACOPROS), sin preguntas
+  abiertas. Si no encaja en lo que hay, PARA y dímelo.
+- Amplía tools/check_plan_escoita.py: falla si falta un momento, si una palabra no es del STEAM del
+  mes o si la pregunta no usa el par o la progresión.
+
+P9.3 · Sección propia «Estimulación da linguaxe e o pensamento / Estimulación del lenguaje y el
+pensamiento», bien visible
+- Entrada principal en Na casa (Inicio) y en Modo Aula, con su icono propio del set de la app.
+- Dentro: el mes y la edad actuales arriba, y los 10 meses navegables. Por mes, cuatro bloques
+  ordenados: Escucha (par), Palabras que crecen (progresión), Háblale así (modelo), Pensamos
+  (predice → proba → compara → explica), con láminas, voz y «Oír despacio».
+- En Modo Aula, la versión para la asamblea (la docente dirige y el grupo responde).
+- El paso dentro de la lección se queda y enlaza a la sección.
+- Prohibidos en la app «logopedia», «terapia», «trastorno», «clínico» y «diagnóstico»: lo comprueba
+  tools/check_finalidade.py.
+- Movimiento y tipografía como el resto (lib/core/widgets/movimiento.dart, Fredoka).
+
+P9.4 · Realidad aumentada con Lúa y los sets de Valeria · PRIMERO PREGUNTA
+Fuente: valeria/src/steam/arActivities.ts, arScenes.ts, worlds/ (s1_camino … s6_jardin, retos.ts),
+luaSolo.ts, engine/LuaLink.ts y valeria/src/valeriaArBridge.ts.
+- Antes de escribir código, entrega a Claude Code un informe: qué hace la AR de Valeria, con qué
+  motor, qué permisos pide (cámara), qué paquetes y licencias usa, si necesita red y cómo se
+  llevaría a Flutter sin permiso INTERNET. La app hoy no pide ningún permiso, y la política de
+  privacidad y la ficha de Play lo dicen.
+- PARA ahí. Frank decide si se añade la cámara. Sin su «sí», nada de AR en el código.
+- Con su «sí»: cada set orientado al STEAM del mes (qué set va con qué experimento), Lúa como guía,
+  en gl y es, y en el mismo commit la política de privacidad (docs/privacy.html), el formulario de
+  Seguridad de los datos y el gate de permisos actualizados.
+
+P9.5 · Láminas
+Una por cada palabra nueva de P9.2 sin lámina, con el método de P7.3 (Fluent Emoji Flat MIT,
+Iconify MIT/Apache/CC0, game-icons), clave pal_<palabra>, sin texto. No sobrescribas ninguna.
+Hoja de contactos en docs/capturas/hoja_contactos_p9.png, mirada una a una.
+
+P9.6 · Tests
+- Widget tests de la sección en gl y es, con escala de texto 1.8.
+- El botón «Oír despacio» pide la grabación «slow».
+- Las 40 piezas tienen pensamiento en las cuatro edades.
+
+P9.7 · Capturas
+App de escritorio Linux (receta de CLAUDE.md §1d), en gl y es:
+- Na casa → la sección: 2-3 M1, 3-4 M6, 4-5 M4 y 5-6 M10.
+- Modo Aula → la sección.
+- Un momento «Pensamos».
+En docs/capturas/escritorio/estimulacion-*.png.
+
+P9.8 · Control
+docs/estimulacion-control.md: una fila por pieza con curso, mes, STEAM, par, progresión, los cuatro
+momentos de pensamiento en inglés, qué parte del experimento nombra cada palabra y por qué encaja en
+la edad.
+
+ANTES DE CADA PUSH, en local y en verde:
+dart format --output=none --set-exit-if-changed lib test
+flutter analyze
+flutter test --exclude-tags capturas
+python3 tools/check_plan_escoita.py
+python3 tools/check_pares_en.py
+python3 tools/check_escoita.py
+python3 tools/check_finalidade.py
+python3 tools/check_voz_lenta.py
+python3 tools/check_laminas.py
+python3 tools/check_bundled_assets.py
+python3 tools/check_licencias.py
+python3 tools/check_no_emoji.py
+python3 tools/check_registro_commits.py
+python3 tools/check_ordenes.py
+python3 tools/export_voice_corpus.py
+
+ENTREGA (empieza por lo que falta, con números: «de 40 piezas, con pensamiento N; de 6 bloques,
+cerrados M»): rama, SHA de cada commit, salida de los gates, rutas de las capturas gl/es, el informe
+de AR de P9.4, y lo que no hayas podido hacer y por qué. Claude Code lo revisa antes de integrar.
+```
+

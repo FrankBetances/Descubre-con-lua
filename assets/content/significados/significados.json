@@ -25,6 +25,10 @@
    "gl": "Unha campá! Campás fortes na neve!",
    "es": "¡Una campana! ¡Campanas fuertes en la nieve!"
   },
+  "A big stone makes a loud pum.": {
+   "gl": "Pon as mans nas orellas abrindo os ollos sorprendido polo pum forte da pedra.",
+   "es": "Pon las manos en las orejas abriendo los ojos sorprendido por el pum fuerte de la piedra."
+  },
   "A bird sits in the tall tree.": {
    "gl": "Un paxaro pousa na árbore alta.",
    "es": "Un pájaro se posa en el árbol alto."
@@ -32,6 +36,10 @@
   "A bird! The bird flies!": {
    "gl": "Un paxaro! O paxaro voa!",
    "es": "¡Un pájaro! ¡El pájaro vuela!"
+  },
+  "A blue piece.": {
+   "gl": "Unha peza azul.",
+   "es": "Una pieza azul."
   },
   "A boat! A red boat! Row, row!": {
    "gl": "Unha barca! Unha barca vermella! Rema, rema!",
@@ -69,6 +77,10 @@
    "gl": "Unha castaña! O esquío come unha castaña!",
    "es": "¡Una castaña! ¡La ardilla se come una castaña!"
   },
+  "A clear blink.": {
+   "gl": "Un escintileo claro.",
+   "es": "Un parpadeo claro."
+  },
   "A cloud! A big grey cloud! It is cloudy!": {
    "gl": "Unha nube! Unha nube gris grande! Está nubrado!",
    "es": "¡Una nube! ¡Una nube gris grande! ¡Está nublado!"
@@ -96,6 +108,10 @@
   "A duck! A little duck in the boot!": {
    "gl": "Un pato! Un patiño na bota!",
    "es": "¡Un pato! ¡Un patito en la bota!"
+  },
+  "A fast train.": {
+   "gl": "Un tren rápido.",
+   "es": "Un tren rápido."
   },
   "A fish! A little fish in the pool!": {
    "gl": "Un peixe! Un peixiño na poza!",
@@ -125,6 +141,14 @@
    "gl": "Un raposo! Un raposo laranxa e espelido!",
    "es": "¡Un zorro! ¡Un zorro naranja y astuto!"
   },
+  "A heavy stone.": {
+   "gl": "Unha pedra pesada.",
+   "es": "Una piedra pesada."
+  },
+  "A heavy suitcase.": {
+   "gl": "Unha maleta pesada.",
+   "es": "Una maleta pesada."
+  },
   "A hedgehog! A hedgehog and a big chestnut!": {
    "gl": "Un ourizo! Un ourizo e unha castaña grande!",
    "es": "¡Un erizo! ¡Un erizo y una castaña grande!"
@@ -132,6 +156,10 @@
   "A hedgehog! And a chestnut!": {
    "gl": "Un ourizo! E unha castaña!",
    "es": "¡Un erizo! ¡Y una castaña!"
+  },
+  "A high jar.": {
+   "gl": "Un bote agudo.",
+   "es": "Un bote agudo."
   },
   "A hoop, a leaf, a friend!": {
    "gl": "Un aro, unha folla, un amigo!",
@@ -156,6 +184,10 @@
   "A hungry wolf… motionless!": {
    "gl": "Un lobo con fame… inmóbil!",
    "es": "Un lobo con hambre… ¡inmóvil!"
+  },
+  "A large leaf.": {
+   "gl": "Unha folla grande.",
+   "es": "Una hoja grande."
   },
   "A leaf! A brown autumn leaf!": {
    "gl": "Unha folla! Unha folla marrón de outono!",
@@ -185,6 +217,18 @@
    "gl": "Un peixiño! Nadando baixo o mar!",
    "es": "¡Un pececito! ¡Nadando bajo el mar!"
   },
+  "A long shadow.": {
+   "gl": "Unha sombra longa.",
+   "es": "Una sombra larga."
+  },
+  "A long straw.": {
+   "gl": "Unha palla longa.",
+   "es": "Una pajita larga."
+  },
+  "A loud drum.": {
+   "gl": "Un tambor forte.",
+   "es": "Un tambor fuerte."
+  },
   "A mask! Roar… a quiet roar!": {
    "gl": "Unha máscara! Ruxe… un ruxido baixiño!",
    "es": "¡Una máscara! Ruge… ¡un rugido bajito!"
@@ -196,6 +240,10 @@
   "A new home! A big white shell for the crab!": {
    "gl": "Unha casa nova! Unha cuncha branca grande para o cangrexo!",
    "es": "¡Una casa nueva! ¡Una concha blanca grande para el cangrejo!"
+  },
+  "A paper sail.": {
+   "gl": "Unha vela de papel.",
+   "es": "Una vela de papel."
   },
   "A puddle! Jump, jump!": {
    "gl": "Unha poza! Salta, salta!",
@@ -212,6 +260,14 @@
   "A pumpkin! A big pumpkin!": {
    "gl": "Unha cabaza! Unha cabaza grande!",
    "es": "¡Una calabaza! ¡Una calabaza grande!"
+  },
+  "A quick foot.": {
+   "gl": "Un pé rápido.",
+   "es": "Un pie rápido."
+  },
+  "A ready table.": {
+   "gl": "Unha mesa lista.",
+   "es": "Una mesa lista."
   },
   "A red flower! There, there!": {
    "gl": "Unha flor vermella! Alí, alí!",
@@ -232,6 +288,14 @@
   "A rhythmic circle! Clap, clap, tap!": {
    "gl": "Un círculo con ritmo! Plas, plas, golpe!",
    "es": "¡Un círculo con ritmo! ¡Plas, plas, golpe!"
+  },
+  "A round circle.": {
+   "gl": "Un círculo redondo.",
+   "es": "Un círculo redondo."
+  },
+  "A secret spot.": {
+   "gl": "Un sitio secreto.",
+   "es": "Un sitio secreto."
   },
   "A secret! The mouse whispers a secret!": {
    "gl": "Un segredo! O rato di un segredo ao oído!",
@@ -261,6 +325,14 @@
    "gl": "Unha cuncha! Unha cuncha branca e lisa!",
    "es": "¡Una concha! ¡Una concha blanca y lisa!"
   },
+  "A shiny spoon.": {
+   "gl": "Unha culler brillante.",
+   "es": "Una cuchara brillante."
+  },
+  "A small leaf.": {
+   "gl": "Unha folla pequena.",
+   "es": "Una hoja pequeña."
+  },
   "A small seed… now a big plant!": {
    "gl": "Unha semente pequena… agora unha planta grande!",
    "es": "Una semilla pequeña… ¡ahora una planta grande!"
@@ -281,9 +353,33 @@
    "gl": "Unha pedra! Unha pedra redonda e fría na bolsa!",
    "es": "¡Una piedra! ¡Una piedra redonda y fría en la bolsa!"
   },
+  "A tall tower.": {
+   "gl": "Unha torre alta.",
+   "es": "Una torre alta."
+  },
+  "A thin sheet.": {
+   "gl": "Unha folla fina.",
+   "es": "Una hoja fina."
+  },
+  "A tight string.": {
+   "gl": "Un fío tenso.",
+   "es": "Un hilo tenso."
+  },
+  "A tiny seed.": {
+   "gl": "Unha semente pequeniña.",
+   "es": "Una semilla pequeñita."
+  },
   "A turnip! A giant turnip in the garden!": {
    "gl": "Un nabo! Un nabo xigante na horta!",
    "es": "¡Un nabo! ¡Un nabo gigante en el huerto!"
+  },
+  "A wet towel.": {
+   "gl": "Unha toalla mollada.",
+   "es": "Una toalla mojada."
+  },
+  "A white plane.": {
+   "gl": "Un avión branco.",
+   "es": "Un avión blanco."
   },
   "A · Apple": {
    "gl": "A · Mazá vermella",
@@ -292,6 +388,26 @@
   "Add two spoonfuls of sweet golden honey!": {
    "gl": "Engade dúas culleradas de mel doce e dourado!",
    "es": "¡Añade dos cucharadas de miel dulce y dorada!"
+  },
+  "Add water slowly from the small jug.": {
+   "gl": "Inclina a xerra despacio botando auga pouco a pouco sobre a terra seca.",
+   "es": "Inclina la jarra despacio echando agua poco a poco sobre la tierra seca."
+  },
+  "After jumping, the heartbeat goes very fast.": {
+   "gl": "Fai latexar a man ben á présa fronte a como ían os dedos antes de saltar.",
+   "es": "Haz latir la mano bien deprisa frente a cómo iban los dedos antes de saltar."
+  },
+  "After red, put the bright blue block.": {
+   "gl": "Sinala algo de cor azul na sala para confirmar a peza que toca despois.",
+   "es": "Señala algo de color azul en la sala para confirmar la pieza que toca después."
+  },
+  "Aim the lamp across the dark room.": {
+   "gl": "Suxeita unha lanterna ou foco coa man apuntando cara á outra banda do cuarto.",
+   "es": "Sujeta una linterna o foco con la mano apuntando hacia el otro lado del cuarto."
+  },
+  "Air pushes each folded paper blade.": {
+   "gl": "Marca as catro puntas dobradas do papel onde bate o vento de fronte.",
+   "es": "Marca las cuatro puntas dobladas del papel donde golpea el viento de frente."
   },
   "Always drink clean, fresh water when playing outside.": {
    "gl": "Cando xogas fóra, bebe sempre auga limpa e fresca.",
@@ -313,6 +429,10 @@
    "gl": "A mazá, na cesta!",
    "es": "¡La manzana, en la cesta!"
   },
+  "Apple or seed: which is tiny?": {
+   "gl": "Mazá ou semente: cal é diminuta?",
+   "es": "Manzana o semilla: ¿cuál es diminuta?"
+  },
   "Are you quiet when you sleep?": {
    "gl": "Estás calado cando dormes?",
    "es": "¿Estás callado cuando duermes?"
@@ -324,6 +444,10 @@
   "Ask with a gentle voice and hug tight!": {
    "gl": "Pide con voz suave e dá unha aperta forte!",
    "es": "¡Pide con voz suave y da un abrazo fuerte!"
+  },
+  "At sunset, every shadow grows long.": {
+   "gl": "Estende os brazos de lado a lado para marcar unha sombra ben longa.",
+   "es": "Extiende los brazos de lado a lado para marcar una sombra bien larga."
   },
   "Autumn leaves falling": {
    "gl": "As follas secas caen no parque",
@@ -385,6 +509,10 @@
    "gl": "Dobra os xeonllos e os cóbados, e despois ponte alto coma un xigante!",
    "es": "¡Dobla las rodillas y los codos, y después ponte alto como un gigante!"
   },
+  "Big apple or tiny seed?": {
+   "gl": "Mazá grande ou semente diminuta?",
+   "es": "¿Manzana grande o semilla diminuta?"
+  },
   "Big chestnut, small chestnut: count one, two!": {
    "gl": "Castaña grande, castaña pequena: conta un, dous!",
    "es": "¡Castaña grande, castaña pequeña: cuenta uno, dos!"
@@ -413,6 +541,10 @@
    "gl": "Pedra grande, aquí!",
    "es": "¡Piedra grande, aquí!"
   },
+  "Big stone makes a loud drum.": {
+   "gl": "A pedra grande fai un tambor forte.",
+   "es": "La piedra grande hace un tambor fuerte."
+  },
   "Big stone, down!": {
    "gl": "Pedra grande, abaixo!",
    "es": "¡Piedra grande, abajo!"
@@ -428,6 +560,14 @@
   "Bigger": {
    "gl": "Máis grande",
    "es": "Más grande"
+  },
+  "Blend each filter frame in front of the light.": {
+   "gl": "Mestura cada marco de filtro diante da luz.",
+   "es": "Mezcla cada marco de filtro delante de la luz."
+  },
+  "Blend two filters for a colorful glow on the wall.": {
+   "gl": "Xunta dous filtros para un brillo de cores na parede.",
+   "es": "Junta dos filtros para un brillo de colores en la pared."
   },
   "Blink eyes open and shut": {
    "gl": "Pestanexar suavemente",
@@ -457,9 +597,21 @@
    "gl": "Lanzar un bico coa man",
    "es": "Lanzar un beso con la mano"
   },
+  "Blow across the tops from long to short.": {
+   "gl": "Sopra suave por riba da boca dos tubos pasando dun extremo ao outro.",
+   "es": "Sopla suave por encima de la boca de los tubos pasando de un extremo al otro."
+  },
+  "Blow each straw of the flute in order.": {
+   "gl": "Sopra cada palliña da frauta en orde.",
+   "es": "Sopla cada pajita de la flauta en orden."
+  },
   "Blow gently on a hot chestnut": {
    "gl": "Soprar a castaña quente",
    "es": "Soplar la castaña caliente"
+  },
+  "Blow gently to move the boat across.": {
+   "gl": "Soprade polo camiño da auga vendo como avanza o barco ao instante.",
+   "es": "Soplad por el camino del agua viendo cómo avanza el barco al instante."
   },
   "Blow like a soft wind and sail across!": {
    "gl": "Sopra coma un vento suave e navega!",
@@ -473,6 +625,10 @@
    "gl": "Soprar cos beizos en círculo e erguer a man cara arriba.",
    "es": "Soplar con los labios en círculo y alzar la mano hacia arriba."
   },
+  "Blow or slow: which moves the sail?": {
+   "gl": "Soprar ou amodo: que move a vela?",
+   "es": "Soplar o despacio: ¿qué mueve la vela?"
+  },
   "Blow out anger like blowing out a candle": {
    "gl": "Soprar o aire amodiño para calmar",
    "es": "Soplar el aire despacito para calmarse"
@@ -480,6 +636,14 @@
   "Blow the boat!": {
    "gl": "Sopra o barco!",
    "es": "¡Sopla el barco!"
+  },
+  "Blow the long straw on the flute for a low note.": {
+   "gl": "Sopra a palla longa da frauta para unha nota grave.",
+   "es": "Sopla la pajita larga de la flauta para una nota grave."
+  },
+  "Blow the paper sail now.": {
+   "gl": "Sopra agora a vela de papel.",
+   "es": "Sopla ahora la vela de papel."
   },
   "Blow the windmill!": {
    "gl": "Sopra o muíño!",
@@ -489,6 +653,10 @@
    "gl": "Sopra, sopra! Dá a volta, folla!",
    "es": "¡Sopla, sopla! ¡Da la vuelta, hoja!"
   },
+  "Blue and yellow make bright green!": {
+   "gl": "Busca algo verde na sala e sinala a cor nova que naceu no arco da vella.",
+   "es": "Busca algo verde en la sala y señala el color nuevo que nació en el arcoíris."
+  },
   "Blue sea! Waves go up, waves go down!": {
    "gl": "Mar azul! As ondas soben, as ondas baixan!",
    "es": "¡Mar azul! ¡Las olas suben, las olas bajan!"
@@ -497,13 +665,25 @@
    "gl": "Mar azul, as ondas soben e baixan!",
    "es": "¡Mar azul, las olas suben y bajan!"
   },
+  "Blue tile follows red tile.": {
+   "gl": "A peza azul segue á vermella.",
+   "es": "La pieza azul sigue a la roja."
+  },
   "Blue water! A calm sea!": {
    "gl": "Auga azul! Un mar en calma!",
    "es": "¡Agua azul! ¡Un mar en calma!"
   },
+  "Boat or boot: which one sinks?": {
+   "gl": "Barco ou bota: cal se afunde?",
+   "es": "Barco o bota: ¿cuál se hunde?"
+  },
   "Body parts game": {
    "gl": "O corpo en movemento: cóxegas e risas",
    "es": "El cuerpo en movimiento: cosquillas y risas"
+  },
+  "Both halves of the butterfly are equal.": {
+   "gl": "Pon as dúas mans espelladas unha fronte á outra mostrando simetría exacta.",
+   "es": "Pon las dos manos reflejadas una frente a la otra mostrando simetría exacta."
   },
   "Bounce like a soft ball": {
    "gl": "Botar coma unha pelota pequena",
@@ -529,6 +709,22 @@
    "gl": "Inhalar fondo polo nariz",
    "es": "Inspirar hondo por la nariz"
   },
+  "Bright leaf!": {
+   "gl": "Folla brillante!",
+   "es": "¡Hoja brillante!"
+  },
+  "Bright sun moves the shadow line.": {
+   "gl": "O sol brillante move a liña da sombra.",
+   "es": "El sol brillante mueve la línea de la sombra."
+  },
+  "Bright sun.": {
+   "gl": "Sol brillante.",
+   "es": "Sol brillante."
+  },
+  "Bring the lens closer to zoom in.": {
+   "gl": "Achégate e afástate moi amodo ata ver ben claras as liñas dunha folla ou tecido.",
+   "es": "Acércate y aléjate muy despacio hasta ver bien claras las líneas de una hoja o tejido."
+  },
   "Bring the spoon to your mouth": {
    "gl": "Levar a culler imaxinaria á boca",
    "es": "Llevar la cuchara imaginaria a la boca"
@@ -544,6 +740,10 @@
   "Brush your teeth after dinner.": {
    "gl": "Lava os dentes despois de cear.",
    "es": "Lávate los dientes después de cenar."
+  },
+  "Build a tall tower with blocks.": {
+   "gl": "Constrúe unha torre alta con bloques.",
+   "es": "Construye una torre alta con bloques."
   },
   "Build a tall tower!": {
    "gl": "Fai unha torre alta!",
@@ -1209,9 +1409,37 @@
    "gl": "Lévao con coidado!",
    "es": "¡Llévalo con cuidado!"
   },
+  "Carry steady.": {
+   "gl": "Levar firme.",
+   "es": "Llevar firme."
+  },
+  "Carry the bear slowly past each cone.": {
+   "gl": "Da pasos moi sincronizados coa outra persoa cara aos conos sen inclinarse.",
+   "es": "Da pasos muy sincronizados con la otra persona hacia los conos sin inclinarse."
+  },
+  "Carry the cloth stretcher around the cone.": {
+   "gl": "Leva a padiola de tea arredor do cono.",
+   "es": "Lleva la camilla de tela alrededor del cono."
+  },
+  "Carry the cloth stretcher steady past the cone.": {
+   "gl": "Levade a padiola de tea firme ata pasar o cono.",
+   "es": "Llevad la camilla de tela firme hasta pasar el cono."
+  },
   "Castro Hill": {
    "gl": "Monte do Castro",
    "es": "Monte de O Castro"
+  },
+  "Chalk leaves bright dust on the ground.": {
+   "gl": "Sacode as xemas dos dedos coma quen limpa o po colorido do xiz.",
+   "es": "Sacude las yemas de los dedos como quien limpia el polvo colorido de la tiza."
+  },
+  "Check each square on the grid carefully.": {
+   "gl": "Debuxa liñas cruzadas en horizontal e vertical no aire coma os cadros do mapa.",
+   "es": "Dibuja líneas cruzadas en horizontal y vertical en el aire como los cuadros del mapa."
+  },
+  "Check how many legs the toy dog has.": {
+   "gl": "Posa un peluche de catro patas diante dos aros do 2 e do 4.",
+   "es": "Coloca un peluche de cuatro patas delante de los aros del 2 y del 4."
   },
   "Chestnuts! Dance, dance, hedgehog!": {
    "gl": "Castañas! Baila, baila, ourizo!",
@@ -1232,6 +1460,10 @@
   "Choo-choo! Faster!": {
    "gl": "Chu-chu! Máis rápido!",
    "es": "¡Chu-chu! ¡Más rápido!"
+  },
+  "Choose a soft bandage for the paw.": {
+   "gl": "Pasa a palma pola outra man con suavidade coma o algodón brando.",
+   "es": "Pasa la palma por la otra mano con suavidad como el algodón blando."
   },
   "Circle hands on warm tummy": {
    "gl": "Facer círculos na barriga",
@@ -1285,6 +1517,18 @@
    "gl": "Plas, plas… estátua!",
    "es": "Plas, plas… ¡estatua!"
   },
+  "Clean hand or soapy hand?": {
+   "gl": "Man limpa ou man con xabón?",
+   "es": "¿Mano limpia o mano con jabón?"
+  },
+  "Clean hand.": {
+   "gl": "Man limpa.",
+   "es": "Mano limpia."
+  },
+  "Clean metal is smooth and shiny.": {
+   "gl": "Abre os dedos diante do metal limpísimo coma un destello de espello.",
+   "es": "Abre los dedos delante del metal limpísimo como un destello de espejo."
+  },
   "Clean up, clean up, everybody clean up!": {
    "gl": "A recoller, a recoller, todos a recoller!",
    "es": "¡A recoger, a recoger, todos a recoger!"
@@ -1333,6 +1577,10 @@
    "gl": "Frío fresco da neve",
    "es": "Frío fresco de la nieve"
   },
+  "Cold juice.": {
+   "gl": "Zume frío.",
+   "es": "Zumo frío."
+  },
   "Cold winter night: curl up and do not move": {
    "gl": "Noite fría de inverno: enróscate e non te movas",
    "es": "Noche fría de invierno: acurrúcate y no te muevas"
@@ -1344,6 +1592,18 @@
   "Collect": {
    "gl": "Xuntar",
    "es": "Juntar"
+  },
+  "Color stripes all over the cardboard circle.": {
+   "gl": "Traza no aire un círculo completo dividido en franxas de rotuladores.",
+   "es": "Traza en el aire un círculo completo dividido en franjas de rotuladores."
+  },
+  "Colorful filter.": {
+   "gl": "Filtro de cores.",
+   "es": "Filtro de colores."
+  },
+  "Colors blend because the round top spins very fast.": {
+   "gl": "As cores mestúranse porque a buxaina redonda xira moi rápido.",
+   "es": "Los colores se mezclan porque la peonza redonda gira muy rápido."
   },
   "Colour harmony": {
    "gl": "Cores primarias: vermello, amarelo e azul",
@@ -1361,9 +1621,57 @@
    "gl": "Ven debaixo: hai sitio para dous!",
    "es": "¡Ven debajo: hay sitio para dos!"
   },
+  "Compare one clear flash and two quick blinks.": {
+   "gl": "Compara un escintileo claro e dous rápidos.",
+   "es": "Compara un destello claro y dos rápidos."
+  },
+  "Compare one filter glow and two blended filters.": {
+   "gl": "Compara o brillo dun filtro e de dous filtros mesturados.",
+   "es": "Compara el brillo de un filtro y de dos filtros mezclados."
+  },
+  "Compare the heavy handle and light pack.": {
+   "gl": "Compara o asa pesada e a maleta lixeira.",
+   "es": "Compara el asa pesada y la maleta ligera."
+  },
+  "Compare the left wing and right wing.": {
+   "gl": "Compara a á esquerda e a á dereita.",
+   "es": "Compara el ala izquierda y el ala derecha."
+  },
+  "Compare the nose fold and glide distance.": {
+   "gl": "Compara a dobra do bico e a distancia de planeo.",
+   "es": "Compara el pliegue del morro y la distancia de planeo."
+  },
+  "Compare the short rail and long trail on the map.": {
+   "gl": "Compara o camiño curto e o camiño longo no mapa.",
+   "es": "Compara el camino corto y el camino largo en el mapa."
+  },
+  "Compare the short straw sound and the long straw low note.": {
+   "gl": "Compara o son da palliña curta e a nota grave da longa.",
+   "es": "Compara el sonido de la pajita corta y la nota grave de la larga."
+  },
+  "Compare the snip of thin paper and thick card.": {
+   "gl": "Compara o corte do papel fino e o da cartolina grosa.",
+   "es": "Compara el corte del papel fino y el de la cartulina gruesa."
+  },
+  "Compare the still circle and the spinning top.": {
+   "gl": "Compara o círculo parado e a buxaina xirando.",
+   "es": "Compara el círculo parado y la peonza girando."
+  },
   "Compare the weights: the basket of acorns is heavier than the basket of leaves!": {
    "gl": "Compara os pesos: o cesto de landras pesa máis ca o cesto de follas!",
    "es": "¡Compara los pesos: la cesta de bellotas pesa más que la cesta de hojas!"
+  },
+  "Compare the yellow spot, blue spot and green paint.": {
+   "gl": "Compara o punto amarelo, o azul e a pintura verde.",
+   "es": "Compara el punto amarillo, el azul y la pintura verde."
+  },
+  "Compare today's bread and yesterday's bread.": {
+   "gl": "Sinala os dous anacos de pan enriba do pano limpo antes de tocalos.",
+   "es": "Señala los dos trozos de pan encima del paño limpio antes de tocarlos."
+  },
+  "Continue the pattern on the paper strip.": {
+   "gl": "Sinala de esquerda a dereita a fila enteira de bloques de dúas cores.",
+   "es": "Señala de izquierda a derecha la fila entera de bloques de dos colores."
   },
   "Copy my movements! Left arm up!": {
    "gl": "Copia os meus movementos! Brazo esquerdo arriba!",
@@ -1372,6 +1680,22 @@
   "Cotton wool": {
    "gl": "Algodón",
    "es": "Algodón"
+  },
+  "Count each leg and sort in the dish.": {
+   "gl": "Conta cada pata e ordena no prato.",
+   "es": "Cuenta cada pata y ordena en el plato."
+  },
+  "Count four legs on the toy dog.": {
+   "gl": "Conta as catro patas do can de xoguete.",
+   "es": "Cuenta las cuatro patas del perro de juguete."
+  },
+  "Count the chairs around the table.": {
+   "gl": "Pasa a palma aberta polo bordo da mesa marcando cada sitio arredor.",
+   "es": "Pasa la palma abierta por el borde de la mesa marcando cada sitio alrededor."
+  },
+  "Count the legs before picking a hoop.": {
+   "gl": "Saca catro dedos en orde da man ao mesmo tempo que contas as patas.",
+   "es": "Saca cuatro dedos en orden de la mano a la vez que cuentas las patas."
   },
   "Count three leaves and jump over the ring": {
    "gl": "Conta tres follas e salta por riba do aro",
@@ -1497,6 +1821,18 @@
    "gl": "Encoller os pés e rir",
    "es": "Encoger los pies y reír"
   },
+  "Cut slowly with round-tip scissors and listen.": {
+   "gl": "Abre e pecha o índice e o corazón coma tesoiras de punta redonda escoitando o son.",
+   "es": "Abre y cierra el índice y el corazón como tijeras de punta redonda escuchando el sonido."
+  },
+  "Cut the apple in half across.": {
+   "gl": "Suxeita a metade da mazá coas dúas mans ensinándolle o debuxo de estrela.",
+   "es": "Sujeta la mitad de la manzana con las dos manos enseñando el dibujo de estrella."
+  },
+  "Cut the thin sheet of paper and listen.": {
+   "gl": "Corta a folla fina de papel e escoita.",
+   "es": "Corta la hoja fina de papel y escucha."
+  },
   "Cíes Islands": {
    "gl": "Illas Cíes verdes",
    "es": "Islas Cíes verdes"
@@ -1528,6 +1864,10 @@
   "Dancing leaf": {
    "gl": "Folla que baila",
    "es": "Hoja que baila"
+  },
+  "Dark room.": {
+   "gl": "Cuarto escuro.",
+   "es": "Cuarto oscuro."
   },
   "Deep blue sea… sleep, fish.": {
    "gl": "Mar azul e fondo… durme, peixe.",
@@ -1568,6 +1908,14 @@
   "Dip fingers into smooth paint": {
    "gl": "Tocar a mesa con cadanseu dedo",
    "es": "Tocar la mesa con cada dedo"
+  },
+  "Dip the thick brush into yellow first.": {
+   "gl": "Colle un pincel groso imaxinario cos dedos movéndoo polo aire.",
+   "es": "Coge un pincel grueso imaginario con los dedos moviéndolo por el aire."
+  },
+  "Dip the towel and watch it drip.": {
+   "gl": "Molle a toalla e mira como pinga.",
+   "es": "Moja la toalla y mira cómo gotea."
   },
   "Dive deep and find a white shell": {
    "gl": "Mergúllate fondo e busca unha cuncha branca",
@@ -1873,6 +2221,18 @@
    "gl": "Pos luvas cando vai frío?",
    "es": "¿Te pones guantes cuando hace frío?"
   },
+  "Does one flash mean yes or no in our code?": {
+   "gl": "Un escintileo significa si ou non no noso código?",
+   "es": "¿Un destello significa sí o no en nuestro código?"
+  },
+  "Does thin paper sound louder than thick card?": {
+   "gl": "Soa distinto o papel fino ca a cartolina grosa?",
+   "es": "¿Suena distinto el papel fino que la cartulina gruesa?"
+  },
+  "Dog has four legs; fish swims.": {
+   "gl": "O can ten catro patas; o peixe nada.",
+   "es": "El perro tiene cuatro patas; el pez nada."
+  },
   "Doll": {
    "gl": "Boneca",
    "es": "Muñeca"
@@ -1888,6 +2248,18 @@
   "Draw a picture of your family.": {
    "gl": "Fai un debuxo da túa familia.",
    "es": "Haz un dibujo de tu familia."
+  },
+  "Draw the long morning shadow line.": {
+   "gl": "Agáchate e traza co dedo unha silueta enteira arredor dos pés.",
+   "es": "Agáchate y traza con el dedo una silueta entera alrededor de los pies."
+  },
+  "Draw the shadow with chalk in the bright sun.": {
+   "gl": "Debuxa a sombra con xiz ao sol brillante.",
+   "es": "Dibuja la sombra con tiza al sol brillante."
+  },
+  "Draw your bright shadow with chalk.": {
+   "gl": "Debuxa a túa sombra brillante con xiz.",
+   "es": "Dibuja tu sombra brillante con tiza."
   },
   "Dress": {
    "gl": "Vestirse",
@@ -1913,9 +2285,21 @@
    "gl": "Pinga",
    "es": "Gota"
   },
+  "Drop it on the loud drum.": {
+   "gl": "Déixao caer no tambor forte.",
+   "es": "Déjalo caer en el tambor fuerte."
+  },
+  "Drop the big stone from above.": {
+   "gl": "Abre os dedos enriba da bandexa para deixar caer a pedra e escoitar cos ollos pechados.",
+   "es": "Abre los dedos encima de la bandeja para dejar caer la piedra y escuchar con los ojos cerrados."
+  },
   "Drop the leaf!": {
    "gl": "Solta a folla!",
    "es": "¡Suelta la hoja!"
+  },
+  "Drop the stone on the pan.": {
+   "gl": "Deixa caer a pedra na tixola.",
+   "es": "Deja caer la piedra en la sartén."
   },
   "Drop the water!": {
    "gl": "Bota a pinga!",
@@ -1941,6 +2325,14 @@
    "gl": "Secar cada dedo con mimo",
    "es": "Secar cada dedo con mimo"
   },
+  "Dry earth or sticky mud?": {
+   "gl": "Terra seca ou barro pegañento?",
+   "es": "¿Tierra seca o barro pegajoso?"
+  },
+  "Dry your clean hands with the towel.": {
+   "gl": "Ensina as mans abertas ben secas e relucentes despois do cuarto paso.",
+   "es": "Enseña las manos abiertas bien secas y limpias después del cuarto paso."
+  },
   "Dry your toes!": {
    "gl": "Seca os dedos dos pés!",
    "es": "¡Sécate los dedos de los pies!"
@@ -1948,6 +2340,22 @@
   "E · Elephant": {
    "gl": "E · Elefante grande",
    "es": "E · Elefante grande"
+  },
+  "Each painted wing copies the other side.": {
+   "gl": "Sinala unha man despois da outra comprobando que as dúas ás son xemelgas.",
+   "es": "Señala una mano después de la otra comprobando que ambas alas son gemelas."
+  },
+  "Each seat gets one plate.": {
+   "gl": "Cada sitio ten un prato.",
+   "es": "Cada sitio tiene un plato."
+  },
+  "Each seed in the star is tiny.": {
+   "gl": "Xunta o polgar e o índice deixando case nada de espazo para mostrar o tamaño diminuto.",
+   "es": "Junta el pulgar y el índice dejando casi nada de espacio para mostrar el tamaño diminuto."
+  },
+  "Each straw has a different length.": {
+   "gl": "Sinala cos dedos da outra man unha palla longa e outra moi curta na ringleira.",
+   "es": "Señala con los dedos de la otra mano una pajita larga y otra muy corta en la fila."
   },
   "Earthworm": {
    "gl": "Miñoca",
@@ -1969,9 +2377,21 @@
    "gl": "Igual",
    "es": "Igual"
   },
+  "Equal wings.": {
+   "gl": "Ás iguais.",
+   "es": "Alas iguales."
+  },
   "Every object makes music: tap and scrape!": {
    "gl": "Cada obxecto fai música: golpea e rasca!",
    "es": "¡Cada objeto hace música: golpea y rasca!"
+  },
+  "Every spot matches: the table is ready.": {
+   "gl": "Abre os dous brazos mostrando a mesa completa sen ningún sitio baleiro.",
+   "es": "Abre los dos brazos mostrando la mesa completa sin ningún sitio vacío."
+  },
+  "Every tiny line looks large now!": {
+   "gl": "Abre ben os ollos e os brazos sorprendido polo tamaño enorme que colle a folla.",
+   "es": "Abre bien los ojos y los brazos sorprendido por el tamaño enorme que coge la hoja."
   },
   "Everybody sit down!": {
    "gl": "Todo o mundo sentado!",
@@ -2029,6 +2449,10 @@
    "gl": "Folla que cae, xira ata o chan!",
    "es": "¡Hoja que cae, gira hasta el suelo!"
   },
+  "Falling rice makes a stormy sound.": {
+   "gl": "O arroz ao caer fai son de tormenta.",
+   "es": "El arroz al caer hace sonido de tormenta."
+  },
   "Falling, falling, falling down!": {
    "gl": "Caendo, caendo, caendo ao chan!",
    "es": "¡Cayendo, cayendo, cayendo al suelo!"
@@ -2036,6 +2460,26 @@
   "Farewell": {
    "gl": "Despedida afectiva",
    "es": "Despedida afectiva"
+  },
+  "Fast blow or slow blow?": {
+   "gl": "Sopro forte ou sopro amodo?",
+   "es": "¿Soplo fuerte o soplo despacio?"
+  },
+  "Fast foot or sleepy toe?": {
+   "gl": "Pé rápido ou deda con sono?",
+   "es": "¿Pie rápido o dedo con sueño?"
+  },
+  "Fast heart.": {
+   "gl": "Corazón rápido.",
+   "es": "Corazón rápido."
+  },
+  "Fast pat or sleepy pat?": {
+   "gl": "Toque rápido ou toque con sono?",
+   "es": "¿Toque rápido o toque con sueño?"
+  },
+  "Fast train or slow train?": {
+   "gl": "Tren rápido ou tren amodo?",
+   "es": "¿Tren rápido o tren despacio?"
   },
   "Fast! Slow!": {
    "gl": "Rápido! Amodo!",
@@ -2048,6 +2492,22 @@
   "Feed the soil and watch the earthworms work!": {
    "gl": "Aliméntalle a terra e mira como traballan as miñocas!",
    "es": "¡Alimenta la tierra y mira cómo trabajan las lombrices!"
+  },
+  "Feel how heavy this big stone is.": {
+   "gl": "Facede forza cos brazos cara abaixo coma se sostivesedes unha pedra moi pesada.",
+   "es": "Haced fuerza con los brazos hacia abajo como si sostuvierais una piedra muy pesada."
+  },
+  "Feel the cold cup on the outside.": {
+   "gl": "Pon as mans nas meixelas imitando o fresco do vaso frío por fóra.",
+   "es": "Pon las manos en las mejillas imitando el frescor del vaso frío por fuera."
+  },
+  "Feel the heart beat fast and strong.": {
+   "gl": "Golpea amodo ou á présa no peito coa punta dos dedos imitando o ritmo do pulso.",
+   "es": "Golpea despacio o deprisa en el pecho con la punta de los dedos imitando el ritmo del pulso."
+  },
+  "Feel your heart beat fast in your chest.": {
+   "gl": "Sente o teu corazón bater rápido no peito.",
+   "es": "Siente tu corazón latir rápido en el pecho."
   },
   "Feel your heartbeat and breathe in deeply!": {
    "gl": "Sente o teu corazón e respira fondo!",
@@ -2072,6 +2532,10 @@
   "Filloas! Lúa and the penguin eat filloas!": {
    "gl": "Filloas! Lúa e o pingüín comen filloas!",
    "es": "¡Filloas! ¡Lúa y el pingüino comen filloas!"
+  },
+  "Find a big leaf for this hoop.": {
+   "gl": "Buscade unha folla polo paseo ou na mesa e ensinádea aberta.",
+   "es": "Buscad una hoja por el paseo o en la mesa y enseñadla abierta."
   },
   "Find a red circle! Touch it with your foot!": {
    "gl": "Busca un círculo vermello! Tócao co pé!",
@@ -2169,6 +2633,10 @@
    "gl": "Abrir e pechar beizos en O",
    "es": "Abrir y cerrar los labios en O"
   },
+  "Five glass jars hold different water levels.": {
+   "gl": "Coloca cinco dedos en ringleira representando os cinco botes ordenados.",
+   "es": "Coloca cinco dedos en fila representando los cinco botes ordenados."
+  },
   "Five! Five smooth leaves and five rough leaves!": {
    "gl": "Cinco! Cinco follas lisas e cinco follas ásperas!",
    "es": "¡Cinco! ¡Cinco hojas lisas y cinco hojas ásperas!"
@@ -2209,6 +2677,10 @@
    "gl": "Flota, barco!",
    "es": "¡Flota, barco!"
   },
+  "Float, bubble!": {
+   "gl": "Flota, burbulla!",
+   "es": "¡Flota, burbuja!"
+  },
   "Flowerpot": {
    "gl": "Testo",
    "es": "Maceta"
@@ -2241,9 +2713,25 @@
    "gl": "Voa coma unha gaivota, pero SE chove, agóchate baixo as ás!",
    "es": "¡Vuela como una gaviota, pero SI llueve, escóndete bajo las alas!"
   },
+  "Fold a paper plane for the hallway.": {
+   "gl": "Estende os dous brazos en cruz e inclínate coma un avión listo na saída.",
+   "es": "Extiende los dos brazos en cruz e inclínate como un avión listo en la salida."
+  },
+  "Fold the butterfly wing and press right.": {
+   "gl": "Dobra a á da bolboreta e preme ben.",
+   "es": "Dobla el ala de la mariposa y aprieta bien."
+  },
+  "Fold the paper so the butterfly wings stay equal.": {
+   "gl": "Dobra o papel para que as ás da bolboreta queden iguais.",
+   "es": "Dobla el papel para que las alas de la mariposa queden iguales."
+  },
   "Fold the paper!": {
    "gl": "Dobra o papel!",
    "es": "¡Dobla el papel!"
+  },
+  "Fold the sheet right down the middle.": {
+   "gl": "Xunta as dúas palmas cara a dentro coma quen dobra o folio pola metade.",
+   "es": "Junta las dos palmas hacia dentro como quien dobla el folio por la mitad."
   },
   "Follow the pattern and PREDICT what shape comes next!": {
    "gl": "Segue a serie e ADIVIÑA que forma vén despois!",
@@ -2265,9 +2753,17 @@
    "gl": "Brazos arredor coma un escudo",
    "es": "Brazos alrededor como un escudo"
   },
+  "Four legs go inside the number four hoop.": {
+   "gl": "Amosa catro dedos ben abertos enriba da tarxeta co número 4.",
+   "es": "Muestra cuatro dedos bien abiertos encima de la tarjeta con el número 4."
+  },
   "Four legs here!": {
    "gl": "Catro patas, aquí!",
    "es": "¡Cuatro patas, aquí!"
+  },
+  "Four legs.": {
+   "gl": "Catro patas.",
+   "es": "Cuatro patas."
   },
   "Free play": {
    "gl": "Xogo libre con pezas de madeira",
@@ -2297,6 +2793,14 @@
    "gl": "Estátua! Si, quedamos quietos!",
    "es": "¡Estatua! ¡Sí, nos quedamos quietos!"
   },
+  "Fresh bread is soft.": {
+   "gl": "O pan fresco é brando.",
+   "es": "El pan fresco es blando."
+  },
+  "Fresh bread stays warm and soft.": {
+   "gl": "Acaricia o pan do día facendo o xesto de algo moi suave e brando cos dedos.",
+   "es": "Acaricia el pan del día haciendo el gesto de algo muy suave y blando con los dedos."
+  },
   "Friends in a circle! Sit down!": {
    "gl": "Amigos en círculo! Sentade!",
    "es": "¡Amigos en círculo! ¡Sentaos!"
@@ -2312,6 +2816,18 @@
   "Frog chorus: Ribbit-ribbit!": {
    "gl": "Cantar en coro: ¡Croac, croac!",
    "es": "Cantar en coro: ¡Croac, croac!"
+  },
+  "Front of spoon or back: how is your cheek?": {
+   "gl": "Diante ou detrás da culler: como se ve a meixela?",
+   "es": "Delante o detrás de la cuchara: ¿cómo se ve la mejilla?"
+  },
+  "Full glass or half fill?": {
+   "gl": "Vaso cheo ou a medio encher?",
+   "es": "¿Vaso lleno o a medio llenar?"
+  },
+  "Full jar or low jar: which is high?": {
+   "gl": "Bote cheo ou baixo: cal soa agudo?",
+   "es": "Bote lleno o bajo: ¿cuál suena agudo?"
   },
   "Full moon bedtime watch": {
    "gl": "O conto da lúa chea que vixía o sono",
@@ -2417,6 +2933,14 @@
    "gl": "Planear cos brazos estendidos",
    "es": "Planear con los brazos extendidos"
   },
+  "Glow the flashlight in the dark.": {
+   "gl": "Acende a lanterna na escuridade.",
+   "es": "Enciende la linterna en la oscuridad."
+  },
+  "Go slow when the cup is nearly full.": {
+   "gl": "Move a man cara abaixo a cámara lenta freando antes de chegar ao bordo.",
+   "es": "Mueve la mano hacia abajo a cámara lenta frenando antes de llegar al borde."
+  },
   "Go to sleep at night.": {
    "gl": "Vai durmir pola noite.",
    "es": "Ve a dormir por la noche."
@@ -2501,6 +3025,10 @@
    "gl": "Boas noites, osiño!",
    "es": "¡Buenas noches, osito!"
   },
+  "Good wet mud feels soft and sticky.": {
+   "gl": "Separa os dedos devagar coma se a lama pegañenta se pegase ás palmas.",
+   "es": "Separa los dedos despacio como si el barro pegajoso se pegase a las palmas."
+  },
   "Goodbye, little fish! Sleep well!": {
    "gl": "Adeus, peixiño! Durme ben!",
    "es": "¡Adiós, pececito! ¡Duerme bien!"
@@ -2528,6 +3056,10 @@
   "Graze like a gentle sheep": {
    "gl": "Pace coma unha ovella mansa",
    "es": "Pasta como una oveja mansa"
+  },
+  "Green paint.": {
+   "gl": "Pintura verde.",
+   "es": "Pintura verde."
   },
   "Greet all citizens with a tail wag": {
    "gl": "Mover as mans coma quen saúda a todos",
@@ -2644,6 +3176,10 @@
   "Head, shoulders, knees and toes": {
    "gl": "Cabeza, ombreiros, xeonllos e pés",
    "es": "Cabeza, hombros, rodillas y pies"
+  },
+  "Head, shoulders, knees and toes, knees and toes.": {
+   "gl": "Cabeza, ombreiros, xeonllos e pés.",
+   "es": "Cabeza, hombros, rodillas y pies."
   },
   "Head… and shoulders!": {
    "gl": "Cabeza… e ombreiros!",
@@ -2785,6 +3321,10 @@
    "gl": "Agocharse? Detrás da árbore!",
    "es": "¿Esconderse? ¡Detrás del árbol!"
   },
+  "High note jar or low note jar?": {
+   "gl": "Bote de nota aguda ou nota grave?",
+   "es": "¿Bote de nota aguda o nota grave?"
+  },
   "High! Low!": {
    "gl": "Agudo! Grave!",
    "es": "¡Agudo! ¡Grave!"
@@ -2792,6 +3332,10 @@
   "High, high! Low, low!": {
    "gl": "Agudo, agudo! Grave, grave!",
    "es": "¡Agudo, agudo! ¡Grave, grave!"
+  },
+  "Hit the metal tray or drum.": {
+   "gl": "Bate suavemente coas palmas na bandexa metálica coma un tambor.",
+   "es": "Golpea suavemente con las palmas en la bandeja metálica como un tambor."
   },
   "Hold hands in a circle and go slowly!": {
    "gl": "Collédevos das mans en círculo e ide amodo!",
@@ -2805,13 +3349,25 @@
    "gl": "Cólleme as mans! Podemos tirar xuntos? Tira!",
    "es": "¡Cógeme las manos! ¿Podemos tirar juntos? ¡Tira!"
   },
+  "Hold one thin sheet with both hands.": {
+   "gl": "Alisa coas dúas palmas unha folla de papel de seda diante dos oídos.",
+   "es": "Alisa con las dos palmas una hoja de papel de seda delante de los oídos."
+  },
   "Hold the baby bottle with care": {
    "gl": "Suxeitar o bibe con coidado",
    "es": "Sujetar el biberón con cuidado"
   },
+  "Hold the big funnel above the cup.": {
+   "gl": "Fai un cono coas dúas mans xuntas enriba do vaso imaxinario.",
+   "es": "Haz un cono con las dos manos juntas encima del vaso imaginario."
+  },
   "Hold the camellia petal in your gentle hands!": {
    "gl": "Colle o pétalo de camelia coas túas mans suaves!",
    "es": "¡Coge el pétalo de camelia con tus manos suaves!"
+  },
+  "Hold the colored filter before the light.": {
+   "gl": "Suxeita un rectángulo transparente diante dos ollos vendo todo tinguido desa cor.",
+   "es": "Sujeta un rectángulo transparente delante de los ojos viendo todo teñido de ese color."
   },
   "Hold the compass steady and take three steps south!": {
    "gl": "Suxeita ben o compás e dá tres pasos cara ao sur!",
@@ -2820,6 +3376,30 @@
   "Hold the glass with two hands": {
    "gl": "Suxeitar con dúas mans",
    "es": "Sujetar con las dos manos"
+  },
+  "Hold the handle to test the weight.": {
+   "gl": "Pecha a man forte arredor do asa imaxinaria sentindo se tira cara abaixo.",
+   "es": "Cierra la mano fuerte alrededor del asa imaginaria sintiendo si tira hacia abajo."
+  },
+  "Hold the leaf by its thin stem.": {
+   "gl": "Facede pinza cos dedos para coller a folla polo rabiño ou talo.",
+   "es": "Haced pinza con los dedos para coger la hoja por el rabito o tallo."
+  },
+  "Hold the lens handle and zoom in.": {
+   "gl": "Suxeita o mango da lupa e achégate.",
+   "es": "Sujeta el mango de la lupa y acércate."
+  },
+  "Hold the lens steady by its handle.": {
+   "gl": "Suxeita o mango imaxinario mantendo a lupa á distancia xusta da man.",
+   "es": "Sujeta el mango imaginario manteniendo la lupa a la distancia justa de la mano."
+  },
+  "Hold the paper pinwheel near the window.": {
+   "gl": "Suxeita o pau do muíño diante da cara listo para recibir o aire.",
+   "es": "Sujeta el palo del molinillo delante de la cara listo para recibir el aire."
+  },
+  "Hold the stretcher together with both hands.": {
+   "gl": "Suxeita dúas esquinas da tela fronte á túa parella equilibrando o peso.",
+   "es": "Sujeta dos esquinas de la tela frente a tu pareja equilibrando el peso."
   },
   "Hold your cup with two hands and take a sip!": {
    "gl": "Suxeitar o vaso coas dúas mans e facer son de beber.",
@@ -2832,6 +3412,10 @@
   "Hold your umbrella tight in the wind!": {
    "gl": "Suxeita ben o paraugas co vento!",
    "es": "¡Sujeta bien el paraguas con el viento!"
+  },
+  "Hoop or heap: where goes the leaf?": {
+   "gl": "Aro ou montón: onde vai a folla?",
+   "es": "Aro o montón: ¿dónde va la hoja?"
   },
   "Hop like a green frog! Now roar like a big lion!": {
    "gl": "Brinca coma unha ra verde! Agora ruxe coma un león grande!",
@@ -2873,6 +3457,18 @@
    "gl": "Como volveu o peixe ao mar?",
    "es": "¿Cómo volvió el pez al mar?"
   },
+  "How do hands get clean?": {
+   "gl": "Como quedan limpas as mans?",
+   "es": "¿Cómo quedan limpias las manos?"
+  },
+  "How do two friends carry steady?": {
+   "gl": "Como levan firme entre dous?",
+   "es": "¿Cómo llevan firme entre dos?"
+  },
+  "How do we match the pattern?": {
+   "gl": "Como emparellamos a serie?",
+   "es": "¿Cómo emparejamos la serie?"
+  },
   "How does the little sheep feel at the end?": {
    "gl": "Como se sente a ovelliña ao final?",
    "es": "¿Cómo se siente la ovejita al final?"
@@ -2884,6 +3480,10 @@
   "How far? Count the steps!": {
    "gl": "Ata onde? Conta os pasos!",
    "es": "¿Hasta dónde? ¡Cuenta los pasos!"
+  },
+  "How many legs does the dog or fish have?": {
+   "gl": "Cantas patas ten o can ou o peixe?",
+   "es": "¿Cuántas patas tiene el perro o el pez?"
   },
   "Hug the tree and laugh with joy!": {
    "gl": "Abraza a árbore e ri con ledicia!",
@@ -2989,6 +3589,10 @@
    "gl": "Se a auga está fría, camiña ata a esterilla azul",
    "es": "Si el agua está fría, camina hasta la colchoneta azul"
   },
+  "If we fold the paper, will both wings match?": {
+   "gl": "Se dobramos o papel, quedarán iguais as dúas ás?",
+   "es": "Si doblamos el papel, ¿quedarán iguales las dos alas?"
+  },
   "If we observe patiently, the butterfly will open its wings.": {
    "gl": "Se observamos con paciencia, a bolboreta abrirá as ás.",
    "es": "Si observamos con paciencia, la mariposa abrirá las alas."
@@ -3001,9 +3605,17 @@
    "gl": "Pesa moito?",
    "es": "¿Pesa mucho?"
   },
+  "Is the table set and ready?": {
+   "gl": "Está a mesa posta e lista?",
+   "es": "¿Está la mesa puesta y lista?"
+  },
   "It climbs! The squirrel climbs the tree!": {
    "gl": "Sobe! O esquío sobe á árbore!",
    "es": "¡Sube! ¡La ardilla sube al árbol!"
+  },
+  "It glides farther because the sharp nose cuts the air.": {
+   "gl": "Planea máis lonxe porque o bico afiado corta o aire.",
+   "es": "Planea más lejos porque el morro afilado corta el aire."
   },
   "It is a sunny day at the beach.": {
    "gl": "Fai un día de sol na praia.",
@@ -3028,6 +3640,14 @@
   "It rolls! The chestnut rolls downhill!": {
    "gl": "Roda! A castaña roda costa abaixo!",
    "es": "¡Rueda! ¡La castaña rueda cuesta abajo!"
+  },
+  "It sounds low because the long straw holds more air.": {
+   "gl": "Soa grave porque a palliña longa garda máis aire.",
+   "es": "Suena grave porque la pajita larga guarda más aire."
+  },
+  "It turns green because yellow and blue mix.": {
+   "gl": "Vólvese verde porque se mesturan amarelo e azul.",
+   "es": "Se vuelve verde porque se mezclan amarillo y azul."
   },
   "It's big! Look!": {
    "gl": "É grande! Mira!",
@@ -3121,6 +3741,10 @@
    "gl": "K · Papaventos no ceo",
    "es": "K · Cometa en el cielo"
   },
+  "Keep both hands level and steady.": {
+   "gl": "Mantén as mans á mesma altura sen abanear o boneco no medio da tela.",
+   "es": "Mantén las manos a la misma altura sin balancear al muñeco en medio de la tela."
+  },
   "Keep the beat, steady and calm!": {
    "gl": "Mantén o compás, regular e tranquilo!",
    "es": "¡Mantén el compás, regular y tranquilo!"
@@ -3161,6 +3785,10 @@
    "gl": "Rir «xa, xa, xa!» abrindo os brazos",
    "es": "Reír «¡ja, ja, ja!» abriendo los brazos"
   },
+  "Launch the white plane from the lane.": {
+   "gl": "Lanza o avión branco desde a pista.",
+   "es": "Lanza el avión blanco desde la pista."
+  },
   "Lead the morning meeting with a clear voice!": {
    "gl": "Dirixe a asemblea da mañá cunha voz clara!",
    "es": "¡Dirige la asamblea de la mañana con una voz clara!"
@@ -3168,6 +3796,10 @@
   "Leader says: take the mask, walk backwards, and FREEZE!": {
    "gl": "O xefe di: colle a máscara, camiña cara atrás e ESTÁTUA!",
    "es": "El jefe dice: coge la máscara, camina hacia atrás y ¡ESTATUA!"
+  },
+  "Leaf, stone!": {
+   "gl": "Folla, pedra!",
+   "es": "¡Hoja, piedra!"
   },
   "Leap like a dolphin in water": {
    "gl": "Ondas co corpo adiante",
@@ -3193,9 +3825,17 @@
    "gl": "Esquerda! Lúa levanta o brazo esquerdo!",
    "es": "¡Izquierda! ¡Lúa levanta el brazo izquierdo!"
   },
+  "Less water gives a high ringing note.": {
+   "gl": "Leva a man ben arriba coma unha nota aguda fronte ao son grave.",
+   "es": "Lleva la mano bien arriba como una nota aguda frente al sonido grave."
+  },
   "Let the sand trickle through your fingers": {
    "gl": "Deixar caer dedos brandos",
    "es": "Dejar caer los dedos suaves"
+  },
+  "Let the train roll down the board.": {
+   "gl": "Inclina o brazo coma unha táboa con libros abaixo vendo baixar o tren.",
+   "es": "Inclina el brazo como una tabla con libros abajo viendo bajar el tren."
   },
   "Let us watch gently without disturbing its journey.": {
    "gl": "Mirémola con coidado sen molestala na súa viaxe.",
@@ -3233,9 +3873,33 @@
    "gl": "Levantade xuntos a póla pesada, equipo!",
    "es": "¡Levantad juntos la rama pesada, equipo!"
   },
+  "Lift the suitcase with clothes or books.": {
+   "gl": "Fai o xesto de erguer polo asa unha mochila ou maleta cargada.",
+   "es": "Haz el gesto de levantar por el asa una mochila o maleta cargada."
+  },
+  "Lift the wet towel and dry towel.": {
+   "gl": "Colle unha toalla pequena en cada man facendo forza na que leva auga.",
+   "es": "Coge una toalla pequeña en cada mano haciendo fuerza con la que lleva agua."
+  },
   "Lift the wet towel!": {
    "gl": "Levanta a toalla mollada!",
    "es": "¡Levanta la toalla mojada!"
+  },
+  "Light comes from the small bulb.": {
+   "gl": "Abre e pecha os cinco dedos diante do foco da lanterna coma o brillo da lámpada.",
+   "es": "Abre y cierra los cinco dedos delante del foco de la linterna como el brillo de la bombilla."
+  },
+  "Light on or dark night?": {
+   "gl": "Luz acesa ou noite escura?",
+   "es": "¿Luz encendida o noche oscura?"
+  },
+  "Light or night inside the box?": {
+   "gl": "Luz ou noite dentro da caixa?",
+   "es": "¿Luz o noche dentro de la caja?"
+  },
+  "Light paper catches the blow.": {
+   "gl": "O papel lixeiro colle o sopro.",
+   "es": "El papel ligero coge el soplo."
   },
   "Light! Oh, the light!": {
    "gl": "Luz! Oh, a luz!",
@@ -3257,9 +3921,21 @@
    "gl": "Escoita con atención e abanea a caixa de madeira!",
    "es": "¡Escucha con atención y agita la caja de madera!"
   },
+  "Listen closely when the string is tight.": {
+   "gl": "Inclina a cabeza poñendo a palma detrás da orella en silencio absoluto.",
+   "es": "Inclina la cabeza poniendo la palma detrás de la oreja en silencio absoluto."
+  },
   "Listen quietly: do you hear the gentle rain tapping?": {
    "gl": "Escoita en silencio: oes a choiva suave que bate?",
    "es": "Escucha en silencio: ¿oyes la lluvia suave que golpea?"
+  },
+  "Listen through the phone when the string is tight.": {
+   "gl": "Escoita polo teléfono cando o fío está tenso.",
+   "es": "Escucha por el teléfono cuando el hilo está tenso."
+  },
+  "Listen to dry rice sliding inside.": {
+   "gl": "Move os dedos soltos coma grans de arroz esvarando polo tubo de cartón.",
+   "es": "Mueve los dedos sueltos como granos de arroz resbalando por el tubo de cartón."
   },
   "Listen to that loud sound.": {
    "gl": "Escoita ese son tan forte.",
@@ -3269,6 +3945,10 @@
    "gl": "Escoita a doutora E respira fondo!",
    "es": "¡Escucha a la doctora Y respira hondo!"
   },
+  "Listen to the heart beat in your chest.": {
+   "gl": "Escoita o corazón bater no peito.",
+   "es": "Escucha el corazón latir en el pecho."
+  },
   "Listen to the heart!": {
    "gl": "Escoita o corazón!",
    "es": "¡Escucha el corazón!"
@@ -3276,6 +3956,10 @@
   "Listen to the north wind whistling!": {
    "gl": "Escoita como asubía o vento do norte!",
    "es": "¡Escucha cómo silba el viento del norte!"
+  },
+  "Listen to your heart after you run.": {
+   "gl": "Abre e pecha o puño á altura do peito marcando o tum-tum do corazón.",
+   "es": "Abre y cierra el puño a la altura del pecho marcando el tum-tum del corazón."
   },
   "Listen with an open heart and speak kind words!": {
    "gl": "Escoita co corazón aberto e di palabras amables!",
@@ -3293,6 +3977,10 @@
    "gl": "Escoita! Pinga, pinga!",
    "es": "¡Escucha! ¡Gota, gota!"
   },
+  "Listen, water!": {
+   "gl": "Escoita, auga!",
+   "es": "¡Escucha, agua!"
+  },
   "Little fish swimming under the sea!": {
    "gl": "Peixiños nadando baixo o mar!",
    "es": "¡Pececitos nadando bajo el mar!"
@@ -3300,6 +3988,10 @@
   "Little fish! Swimming under the sea!": {
    "gl": "Peixiño! Nadando baixo o mar!",
    "es": "¡Pececito! ¡Nadando bajo el mar!"
+  },
+  "Little stars glow on the ceiling.": {
+   "gl": "Estende os brazos cara ao teito mirando como brillan os puntiños de luz.",
+   "es": "Extiende los brazos hacia el techo mirando cómo brillan los puntitos de luz."
   },
   "Long pipe, low sound!": {
    "gl": "Tubo longo, son grave!",
@@ -3321,6 +4013,18 @@
    "gl": "Mira as luces estreladas enriba das nosas cabezas!",
    "es": "¡Mira las luces estrelladas encima de nuestras cabezas!"
   },
+  "Look at the tiny brown seed inside.": {
+   "gl": "Achégate coa lupa imaxinaria ao centro da estrela e sinala unha pebida.",
+   "es": "Acércate con la lupa imaginaria al centro de la estrella y señala una semilla."
+  },
+  "Look at the tiny seed in the apple.": {
+   "gl": "Mira a semente pequeniña na mazá.",
+   "es": "Mira la semilla pequeñita en la manzana."
+  },
+  "Look at yourself in the metal spoon.": {
+   "gl": "Suxeita unha culler limpa diante da cara como un espello pequeno.",
+   "es": "Sujeta una cuchara limpia delante de la cara como un espejo pequeño."
+  },
   "Look back on": {
    "gl": "Lembrar",
    "es": "Recordar"
@@ -3328,6 +4032,10 @@
   "Look back with pride, leap forward with joy!": {
    "gl": "Mira atrás con orgullo, salta adiante con ledicia!",
    "es": "¡Mira atrás con orgullo, salta adelante con alegría!"
+  },
+  "Look closely through the plastic lens.": {
+   "gl": "Fai un círculo cos dedos diante do ollo como mirando pola lente da lupa.",
+   "es": "Haz un círculo con los dedos delante del ojo como mirando por la lente de la lupa."
   },
   "Look down by the green moss: what is crawling on that bark?": {
    "gl": "Mira abaixo, xunto ao musgo verde: que se arrastra por esa casca?",
@@ -3340,6 +4048,10 @@
   "Look for the red ball under the chair.": {
    "gl": "Busca a pelota vermella debaixo da cadeira.",
    "es": "Busca la pelota roja debajo de la silla."
+  },
+  "Look how tall the steady tower is!": {
+   "gl": "Ponte nas puntiñas dos pés medindo ata onde chega a torre máis alta.",
+   "es": "Ponte de puntillas midiendo hasta dónde llega la torre más alta."
   },
   "Look in the spoon!": {
    "gl": "Mira na culler!",
@@ -3889,6 +4601,10 @@
    "gl": "Mira, vai calor! Lúa xoga coa auga!",
    "es": "¡Mira, hace calor! ¡Lúa juega con el agua!"
   },
+  "Look, shadow!": {
+   "gl": "Mira, sombra!",
+   "es": "¡Mira, sombra!"
+  },
   "Look, the birds drink the water. Glug, glug!": {
    "gl": "Mira, os paxaros beben a auga. Glu, glu!",
    "es": "Mira, los pájaros beben el agua. ¡Glu, glu!"
@@ -3945,6 +4661,10 @@
    "gl": "Campás fortes! Abanea rápido!",
    "es": "¡Campanas fuertes! ¡Agita rápido!"
   },
+  "Loud pat or soft pat?": {
+   "gl": "Palmada forte ou suave?",
+   "es": "¿Palmada fuerte o suave?"
+  },
   "Loud sound": {
    "gl": "Son forte de trallazo",
    "es": "Sonido fuerte de trallazo"
@@ -3956,6 +4676,14 @@
   "Love": {
    "gl": "Afecto e agarimo seguro",
    "es": "Afecto y cariño seguro"
+  },
+  "Low light makes a long shadow.": {
+   "gl": "A luz baixa fai unha sombra longa.",
+   "es": "La luz baja hace una sombra larga."
+  },
+  "Low ramp or high ramp: which is fast?": {
+   "gl": "Rampla baixa ou alta: cal vai rápido?",
+   "es": "Rampa baja o alta: ¿cuál va rápido?"
   },
   "Lúa is very curious about how sea snails build their shells.": {
    "gl": "Lúa ten moita curiosidade por saber como fan os caramuxos as súas cunchas.",
@@ -3989,9 +4717,21 @@
    "gl": "Facede sitio debaixo da árbore con sombra!",
    "es": "¡Haced sitio debajo del árbol con sombra!"
   },
+  "Make the beam blink one or two times.": {
+   "gl": "Abre e pecha a man diante da luz marcando con claridade cada destello do código.",
+   "es": "Abre y cierra la mano delante de la luz marcando con claridad cada destello del código."
+  },
+  "Make the plane nose sharp or wide.": {
+   "gl": "Xunta as dúas mans en frecha diante do peito marcando o morro dobrado do avión.",
+   "es": "Junta las dos manos en flecha delante del pecho marcando la punta doblada del avión."
+  },
   "Make the rain!": {
    "gl": "Fai a choiva!",
    "es": "¡Haz la lluvia!"
+  },
+  "Make thick brown mud in the tub.": {
+   "gl": "Amasade coas dúas mans coma quen dá forma á lama húmida do barreño.",
+   "es": "Amasad con las dos manos como quien da forma al barro húmedo del barreño."
   },
   "Make your pattern: clap, jump, tap": {
    "gl": "Fai a túa serie: palma, salto, golpe",
@@ -4008,6 +4748,14 @@
   "March with high knees up the hill": {
    "gl": "Erguer xeonllos subindo a costa",
    "es": "Levantar las rodillas subiendo la cuesta"
+  },
+  "Match red, blue, red along the line.": {
+   "gl": "Baixa a peza á tira de papel longa xusto no espazo que lle corresponde.",
+   "es": "Baja la pieza a la tira de papel larga justo en el espacio que le corresponde."
+  },
+  "Match the blue piece in the pattern.": {
+   "gl": "Emparella a peza azul na serie.",
+   "es": "Empareja la pieza azul en la serie."
   },
   "Mateo, find a round cold chestnut": {
    "gl": "Mateo, busca unha castaña redonda e fría",
@@ -4029,13 +4777,37 @@
    "gl": "Mestura vermello e amarelo!",
    "es": "¡Mezcla rojo y amarillo!"
   },
+  "Mix six spoons of water in mud.": {
+   "gl": "Mestura seis culleres de auga no barro.",
+   "es": "Mezcla seis cucharas de agua en el barro."
+  },
+  "Mix soil and water with a spoon.": {
+   "gl": "Da voltas coa culler grande no centro do barreño ata ligar toda a terra.",
+   "es": "Da vueltas con la cuchara grande en el centro del barreño hasta ligar toda la tierra."
+  },
   "Mix the colours and paint the grass!": {
    "gl": "Mestura as cores e pinta a herba!",
    "es": "¡Mezcla los colores y pinta la hierba!"
   },
+  "Mix the paint with a brush to make green.": {
+   "gl": "Mestura a pintura co pincel para facer verde.",
+   "es": "Mezcla la pintura con el pincel para hacer verde."
+  },
   "Mix the soil and water!": {
    "gl": "Mestura a terra e a auga!",
    "es": "¡Mezcla la tierra y el agua!"
+  },
+  "Mix two colors and check your guess.": {
+   "gl": "Fai círculos amplos co pincel coma no prato vendo cambiar a cor diante dos ollos.",
+   "es": "Haz círculos amplios con el pincel como en el plato viendo cambiar el color ante los ojos."
+  },
+  "Mix yellow and blue paint in a dish.": {
+   "gl": "Sinala as tres cores primarias listas na paleta diante do papel.",
+   "es": "Señala los tres colores primarios listos en la paleta delante del papel."
+  },
+  "Mix yellow and blue paint with the brush.": {
+   "gl": "Mestura pintura amarela e azul co pincel.",
+   "es": "Mezcla pintura amarilla y azul con el pincel."
   },
   "More chestnuts, please! Here you are!": {
    "gl": "Máis castañas, por favor! Aquí tes!",
@@ -4053,6 +4825,18 @@
    "gl": "Inmóbil! O pingüín é unha estatua!",
    "es": "¡Inmóvil! ¡El pingüino es una estatua!"
   },
+  "Move each foot with the box beat.": {
+   "gl": "Marca o ritmo no chan cos pés sen moverte do sitio segundo o toque da caixa.",
+   "es": "Marca el ritmo en el suelo con los pies sin moverte del sitio según el toque de la caja."
+  },
+  "Move the light to stretch a long shadow.": {
+   "gl": "Move a luz para estirar unha sombra longa.",
+   "es": "Mueve la luz para estirar una sombra larga."
+  },
+  "Move the light to stretch the shadow.": {
+   "gl": "Separa as mans despacio vendo como se alonga a sombra ao mover o foco.",
+   "es": "Separa las manos despacio viendo cómo se alarga la sombra al mover el foco."
+  },
   "Move your bow across the violin: Sweeeet melody!": {
    "gl": "Apoiar o queixo nun ombreiro e mover a man coma un arco.",
    "es": "Apoyar la barbilla en un hombro y mover la mano como un arco."
@@ -4060,6 +4844,10 @@
   "Move your eight arms and dance with the tide!": {
    "gl": "Move os teus oito brazos e baila coa marea!",
    "es": "¡Mueve tus ocho brazos y baila con la marea!"
+  },
+  "Moving feet make heart beat fast.": {
+   "gl": "Mover os pés fai bater rápido o corazón.",
+   "es": "Mover los pies hace latir rápido el corazón."
   },
   "Mud! Wash your face, puppy!": {
    "gl": "Barro! Lava a cara, cadeliño!",
@@ -4213,9 +5001,17 @@
    "gl": "Oh, a túa cara! Lava a cara!",
    "es": "¡Oh, tu cara! ¡Lávate la cara!"
   },
+  "Old MacDonald had a farm, E-I-E-I-O.": {
+   "gl": "O vello MacDonald tiña unha granxa.",
+   "es": "El viejo MacDonald tenía una granja."
+  },
   "Old Port": {
    "gl": "O Berbés mariñeiro",
    "es": "O Berbés marinero"
+  },
+  "Old chalk line or new shadow?": {
+   "gl": "Liña vella de xiz ou sombra nova?",
+   "es": "¿Línea vieja de tiza o sombra nueva?"
   },
   "Older": {
    "gl": "Maior",
@@ -4241,6 +5037,10 @@
    "gl": "Un dediño",
    "es": "Un dedito"
   },
+  "One basket!": {
+   "gl": "Unha cesta!",
+   "es": "¡Una cesta!"
+  },
   "One foot, two feet. Push, push! Hands up! All done!": {
    "gl": "Un pé, dous pés. Empurra, empurra! Mans arriba! Feito!",
    "es": "Un pie, dos pies. ¡Empuja, empuja! ¡Manos arriba! ¡Hecho!"
@@ -4248,6 +5048,10 @@
   "One loud clap: Boom!": {
    "gl": "Palma forte única no ar",
    "es": "Una palmada fuerte en el aire"
+  },
+  "One plate per seat or one missing?": {
+   "gl": "Un prato por sitio ou falta un?",
+   "es": "¿Un plato por sitio o falta uno?"
   },
   "One plate, one spoon!": {
    "gl": "Un prato, unha culler!",
@@ -4288,6 +5092,14 @@
   "Open limbs like a sea star": {
    "gl": "Abrir brazos e pernas en estrela",
    "es": "Abrir brazos y piernas en estrella"
+  },
+  "Open the lid to add more water.": {
+   "gl": "Fai o xesto de xirar coa palma para abrir a tapa e botar auga.",
+   "es": "Haz el gesto de girar con la palma para abrir la tapa y echar agua."
+  },
+  "Open the paper to see a butterfly.": {
+   "gl": "Engancha os polgares e abanea as dúas mans abertas á vez coma ás iguais.",
+   "es": "Engancha los pulgares y agita las dos manos abiertas a la vez como alas iguales."
   },
   "Open your arms wide to welcome the sunny day!": {
    "gl": "Abrir os dous brazos en cruz mirando cara arriba cun sorriso.",
@@ -4333,9 +5145,29 @@
    "gl": "Adorno",
    "es": "Adorno"
   },
+  "Outside on a windy day it turns fast.": {
+   "gl": "Ondula as dúas mans polo aire imitando o vento da rúa fóra do balcón.",
+   "es": "Ondula las dos manos por el aire imitando el viento de la calle fuera del balcón."
+  },
+  "Overlap two filters to blend colors.": {
+   "gl": "Cruza unha palma transparente diante da outra no camiño da lanterna.",
+   "es": "Cruza una palma transparente delante de la otra en el camino de la linterna."
+  },
   "P · Pumpkin": {
    "gl": "P · Cabaza redonda",
    "es": "P · Calabaza redonda"
+  },
+  "Pack light things so the suitcase is not heavy.": {
+   "gl": "Mete cousas lixeiras para que a maleta non pese.",
+   "es": "Mete cosas ligeras para que la maleta no pese."
+  },
+  "Pack only the things you really need.": {
+   "gl": "Escolle coas mans o imprescindible e gárdao na mochila deixando fóra o peso extra.",
+   "es": "Elige con las manos lo imprescindible y guárdalo en la mochila dejando fuera el peso extra."
+  },
+  "Pack the suitcase and test the scale.": {
+   "gl": "Fai a maleta e proba na balanza.",
+   "es": "Haz la maleta y prueba en la balanza."
   },
   "Pack the suitcase!": {
    "gl": "Fai a maleta!",
@@ -4353,6 +5185,10 @@
    "gl": "Debuxar arco amplo de lado a lado",
    "es": "Dibujar un arco amplio de lado a lado"
   },
+  "Pan or drum: which is loud?": {
+   "gl": "Tixola ou tambor: cal soa forte?",
+   "es": "Sartén o tambor: ¿cuál suena fuerte?"
+  },
   "Paper": {
    "gl": "Papel branco",
    "es": "Papel blanco"
@@ -4365,6 +5201,10 @@
    "gl": "Acariciar a barriga",
    "es": "Acariciarse la barriga"
   },
+  "Pat-a-cake, pat-a-cake, baker's man! Bake me a cake as fast as you can.": {
+   "gl": "Bate, bate palmiñas, panadeiro! Faime unha torta axiña.",
+   "es": "¡Palmas, palmitas, panadero! Hazme una torta muy deprisa."
+  },
   "Patter, patter, soft little paws!": {
    "gl": "Tip, tap, patiñas suaves!",
    "es": "¡Tip, tap, patitas suaves!"
@@ -4376,6 +5216,10 @@
   "Peek": {
    "gl": "Espreitar",
    "es": "Espiar"
+  },
+  "Peek at your smile in the spoon.": {
+   "gl": "Asómate ao teu sorriso na culler.",
+   "es": "Asómate a tu sonrisa en la cuchara."
   },
   "Peek-a-boo! I see you! Happy baby, smile!": {
    "gl": "Cucú! Xa te vexo! Bebé feliz, sorrí!",
@@ -4393,6 +5237,10 @@
    "gl": "Acariña o gato con suavidade.",
    "es": "Acaricia al gato con suavidad."
   },
+  "Pick colored chalk to mark the yard.": {
+   "gl": "Suxeita un xiz imaxinario entre os dedos listo para debuxar no chan.",
+   "es": "Sujeta una tiza imaginaria entre los dedos lista para dibujar en el suelo."
+  },
   "Pick it up! The leaf, here.": {
    "gl": "Cóllea! A folla, aquí.",
    "es": "¡Cógela! La hoja, aquí."
@@ -4400,6 +5248,10 @@
   "Pick one shell, hide it behind your back!": {
    "gl": "Colle unha cuncha, agóchaa detrás das costas!",
    "es": "¡Coge una concha, escóndela detrás de la espalda!"
+  },
+  "Pick the raincoat when clouds bring rain.": {
+   "gl": "Fai o xesto de meter os brazos polas mangas dun chubasqueiro antes de saír.",
+   "es": "Haz el gesto de meter los brazos por las mangas de un chubasquero antes de salir."
   },
   "Pick up the block and put it inside the box!": {
    "gl": "Colle o bloque e méteo dentro da caixa!",
@@ -4416,6 +5268,14 @@
   "Pincer grasp with thumb and finger": {
    "gl": "Pinza dixital índice e polgar",
    "es": "Pinza con el índice y el pulgar"
+  },
+  "Place the funnel on your warm chest.": {
+   "gl": "Apoia as dúas palmas con coidado no medio do peito coma o embudo.",
+   "es": "Apoya las dos palmas con cuidado en medio del pecho como el embudo."
+  },
+  "Place the toy train on the ramp.": {
+   "gl": "Suxeita o tren de xoguete no alto da táboa inclinada antes de soltalo.",
+   "es": "Sujeta el tren de juguete en lo alto de la tabla inclinada antes de soltarlo."
   },
   "Place toys gently in the basket": {
    "gl": "Gardar elementos imaxinarios",
@@ -4457,6 +5317,14 @@
    "gl": "Rebenta a burbulla!",
    "es": "¡Revienta la burbuja!"
   },
+  "Pour slow or fast into the funnel?": {
+   "gl": "Verter amodo ou rápido no embude?",
+   "es": "¿Verter despacio o rápido en el embudo?"
+  },
+  "Pour slow.": {
+   "gl": "Verter amodo.",
+   "es": "Verter despacio."
+  },
   "Pour the juice!": {
    "gl": "Bota o zume!",
    "es": "¡Echa el zumo!"
@@ -4469,9 +5337,45 @@
    "gl": "Bota a auga nos brotes verdes!",
    "es": "¡Echa el agua en los brotes verdes!"
   },
+  "Pour the water slow without spilling.": {
+   "gl": "Inclina moi amodo o pulso coma quen serve auga sen mollar a bandexa.",
+   "es": "Inclina muy despacio la muñeca como quien sirve agua sin mojar la bandeja."
+  },
+  "Pour water through the funnel tube.": {
+   "gl": "Verte auga polo tubo do embude.",
+   "es": "Vierte agua por el tubo del embudo."
+  },
+  "Pour water through the funnel very slow.": {
+   "gl": "Verte a auga polo funil moi amodo.",
+   "es": "Vierte el agua por el embudo muy despacio."
+  },
+  "Press both pieces of bread gently.": {
+   "gl": "Preme co polgar os dous anacos á vez para comprobar cal cede e cal resiste.",
+   "es": "Presiona con el pulgar los dos trozos a la vez para comprobar cuál cede y cuál resiste."
+  },
   "Press knuckles into the floor": {
    "gl": "Marcar pegadas cos nós dos dedos",
    "es": "Marcar huellas con los nudillos"
+  },
+  "Press the bread and the crust.": {
+   "gl": "Preme o pan e a codia.",
+   "es": "Aprieta el pan y la corteza."
+  },
+  "Press the soft bread now.": {
+   "gl": "Preme agora o pan brando.",
+   "es": "Aprieta ahora el pan blando."
+  },
+  "Press the switch for a clear blink.": {
+   "gl": "Preme o interruptor para dar un escintileo claro.",
+   "es": "Pulsa el interruptor para dar un destello claro."
+  },
+  "Press the switch once for yes.": {
+   "gl": "Preme rápido o polgar nun botón imaxinario: un clic para si, dous clics para non.",
+   "es": "Pulsa rápido el pulgar en un botón imaginario: un clic para sí, dos clics para no."
+  },
+  "Press the switch so the lamp gives a clear blink.": {
+   "gl": "Preme o interruptor para que a lámpada dea un escintileo claro.",
+   "es": "Pulsa el interruptor para que la lámpara dé un parpadeo claro."
   },
   "Prowl like a fox, stomp like a bear!": {
    "gl": "Axexa coma un raposo, pisa forte coma un oso!",
@@ -4493,9 +5397,25 @@
    "gl": "Saca a corda pesada da auga verde!",
    "es": "¡Saca la cuerda pesada del agua verde!"
   },
+  "Pull the long string between both cups.": {
+   "gl": "Estende as dúas mans ben separadas coma o fío longo entre cuarto e cuarto.",
+   "es": "Extiende las dos manos bien separadas como el hilo largo entre cuarto y cuarto."
+  },
   "Pull the rope together: one, two, three!": {
    "gl": "Tirade xuntos da corda: un, dous, tres!",
    "es": "¡Tirad juntos de la cuerda: uno, dos, tres!"
+  },
+  "Pull the string tight and listen.": {
+   "gl": "Estira o fío tenso e escoita.",
+   "es": "Estira el hilo tenso y escucha."
+  },
+  "Pull the strong cloth tight and flat.": {
+   "gl": "Estira a tela polos lados entre os dous para que non quede frouxa no medio.",
+   "es": "Estira la tela por los lados entre los dos para que no quede floja en medio."
+  },
+  "Pull up the hood to cover your head.": {
+   "gl": "Leva as dúas mans dende atrás da cabeza cara adiante coma pondo a carapucha.",
+   "es": "Lleva las dos manos desde atrás de la cabeza hacia delante como poniendo la capucha."
   },
   "Pulse 72 BPM": {
    "gl": "Pulso de 72 por minuto",
@@ -4517,13 +5437,25 @@
    "gl": "Empurra o tren!",
    "es": "¡Empuja el tren!"
   },
+  "Put a big ice cube in each cup.": {
+   "gl": "Colle un cubiño imaxinario coas xemas facendo cara de que queima de frío.",
+   "es": "Coge un cubito imaginario con las yemas poniendo cara de frío."
+  },
   "Put away": {
    "gl": "Gardar",
    "es": "Guardar"
   },
+  "Put boat and boot in water.": {
+   "gl": "Pon o barco e a bota na auga.",
+   "es": "Pon el barco y la bota en el agua."
+  },
   "Put on Your Shoes": {
    "gl": "Pon os zapatos",
    "es": "Ponte los zapatos"
+  },
+  "Put on the raincoat hood to stay dry.": {
+   "gl": "Pon a carapucha do chuvasqueiro para ir seco.",
+   "es": "Pon la capucha del chubasquero para ir seco."
   },
   "Put on your animal mask and roar": {
    "gl": "Ponte a máscara de animal e ruxe",
@@ -4565,6 +5497,14 @@
    "gl": "Pon as botas de inverno",
    "es": "Ponte las botas de invierno"
   },
+  "Put one plate for each person here.": {
+   "gl": "Debuxa un círculo grande coas dúas mans diante de cada cadeira ou coxín.",
+   "es": "Dibuja un círculo grande con las dos manos delante de cada silla o cojín."
+  },
+  "Put the big wooden block at the base.": {
+   "gl": "Fai coas mans o tamaño dun bloque grande de madeira na base.",
+   "es": "Haz con las manos el tamaño de un bloque grande de madera en la base."
+  },
   "Put the chestnuts into the bag!": {
    "gl": "Mete as castañas na bolsa!",
    "es": "¡Mete las castañas en la bolsa!"
@@ -4576,6 +5516,10 @@
   "Put the rough one here and the smooth one there": {
    "gl": "Pon a áspera aquí e a lisa alí",
    "es": "Pon la áspera aquí y la lisa allí"
+  },
+  "Put the small leaf in the small hoop.": {
+   "gl": "Apreta as mans xuntiñas coma unha folla moi pequena no seu aro.",
+   "es": "Junta las manos chiquitas como una hoja muy pequeña en su aro."
   },
   "Put the straps over your shoulders": {
    "gl": "Colgar tirantes nos ombreiros",
@@ -4592,6 +5536,10 @@
   "Put your feet into the boots.": {
    "gl": "Mete os pés nas botas.",
    "es": "Mete los pies en las botas."
+  },
+  "Put your hand in the cool water.": {
+   "gl": "Tocade a auga da bandexa coa palma antes de probar que flota.",
+   "es": "Tocad el agua de la bandeja con la palma antes de probar qué flota."
   },
   "Put your hands flat on the table": {
    "gl": "Pousar as mans planas na mesa",
@@ -4637,6 +5585,10 @@
    "gl": "Radiador",
    "es": "Radiador"
   },
+  "Rain and thunder sound very stormy!": {
+   "gl": "Fai ondas grandes e raios cos brazos representando a orquestra da tormenta.",
+   "es": "Haz ondas grandes y rayos con los brazos representando la orquesta de la tormenta."
+  },
   "Rain boots splash": {
    "gl": "A choiva miudiña e as botas vermellas",
    "es": "La lluvia fina y las botas rojas"
@@ -4648,6 +5600,10 @@
   "Rain! Oh no, wet, wet!": {
    "gl": "Choiva! Oh, non, mollada, mollada!",
    "es": "¡Lluvia! ¡Oh, no, mojada, mojada!"
+  },
+  "Rain, rain, go away, come again another day.": {
+   "gl": "Chuvia, chuvia, vaite xa, volve outro día.",
+   "es": "Lluvia, lluvia, vete ya, vuelve otro día."
   },
   "Rain, rain, little drops, tap, tap, tap": {
    "gl": "Choiva, choiva, pingas pequenas, tap, tap, tap",
@@ -4664,6 +5620,10 @@
   "Rainbow across the bay": {
    "gl": "O arco da vella que cruzaba a ría",
    "es": "El arco iris que cruzaba la ría"
+  },
+  "Raincoat hood keeps us dry.": {
+   "gl": "A carapucha do chuvasqueiro mantennos secos.",
+   "es": "La capucha del chubasquero nos mantiene secos."
   },
   "Raise your hand gently: My turn!": {
    "gl": "Erguer a man suavemente",
@@ -4729,6 +5689,10 @@
    "gl": "Vermello quere dicir para, verde quere dicir camiña!",
    "es": "¡Rojo quiere decir para, verde quiere decir camina!"
   },
+  "Red tile or blue piece: what comes next?": {
+   "gl": "Peza vermella ou peza azul: cal vén agora?",
+   "es": "Pieza roja o pieza azul: ¿cuál viene ahora?"
+  },
   "Red! A big red flower, over there!": {
    "gl": "Vermella! Unha flor vermella grande, alí!",
    "es": "¡Roja! ¡Una flor roja grande, allí!"
@@ -4785,6 +5749,10 @@
    "gl": "Tocar a campá coa man arriba",
    "es": "Tocar la campana con la mano arriba"
   },
+  "Ring-a-ring o' roses, a pocket full of posies.": {
+   "gl": "Roda, roda de rosas, o peto cheo de flores.",
+   "es": "Corro de rosas, el bolsillo lleno de flores."
+  },
   "Rinse": {
    "gl": "Enxaugar",
    "es": "Aclarar"
@@ -4809,6 +5777,10 @@
    "gl": "Balancear nos brazos amodiño",
    "es": "Mecer en los brazos despacito"
   },
+  "Roll ball!": {
+   "gl": "Roda pelota!",
+   "es": "¡Rueda pelota!"
+  },
   "Roll down the hill like a chestnut": {
    "gl": "Roda costa abaixo coma unha castaña",
    "es": "Rueda cuesta abajo como una castaña"
@@ -4828,6 +5800,10 @@
   "Roll the round hoop! Eat the sweet orange!": {
    "gl": "Fai rodar o aro redondo! Come a laranxa doce!",
    "es": "¡Haz rodar el aro redondo! ¡Cómete la naranja dulce!"
+  },
+  "Roll the toy train wheel down.": {
+   "gl": "Fai rodar a roda do tren cara abaixo.",
+   "es": "Haz rodar la rueda del tren hacia abajo."
   },
   "Roll your arms: Choo-choo!": {
    "gl": "Mover os cóbados coma rodas",
@@ -4860,6 +5836,10 @@
   "Rough! A rough leaf into the hoop!": {
    "gl": "Áspera! Unha folla áspera dentro do aro!",
    "es": "¡Áspera! ¡Una hoja áspera dentro del aro!"
+  },
+  "Round and round the garden, like a teddy bear.": {
+   "gl": "Dando voltas polo xardín, coma un osiño.",
+   "es": "Dando vueltas por el jardín, como un osito."
   },
   "Round… cold… no chestnut!": {
    "gl": "Redonda… fría… non é unha castaña!",
@@ -4897,6 +5877,10 @@
    "gl": "Rema, rema! Rema na…?",
    "es": "¡Rema, rema! ¿Rema en la…?"
   },
+  "Row, row, row your boat, gently down the stream.": {
+   "gl": "Rema, rema, rema o teu barco, suave río abaixo.",
+   "es": "Rema, rema, rema tu barco, suave río abajo."
+  },
   "Rub palms warm and place on cheeks": {
    "gl": "Fregar palmas para xerar calor",
    "es": "Frotarse las palmas para dar calor"
@@ -4904,6 +5888,10 @@
   "Rub scallop shells: scrape in time!": {
    "gl": "Frega as cunchas de vieira: rasca a compás!",
    "es": "¡Frota las conchas de vieira: rasca a compás!"
+  },
+  "Rub soap to make a white bubble.": {
+   "gl": "Sopra suavemente nas mans coma se fixeses voar unha burbulla de xabón.",
+   "es": "Sopla suavemente en las manos como si hicieras volar una burbuja de jabón."
   },
   "Rub the soap, make bubbles! Dry with the towel!": {
    "gl": "Frega o xabón, fai burbullas! Sécate coa toalla!",
@@ -4933,9 +5921,21 @@
    "gl": "Retumbante",
    "es": "Retumbante"
   },
+  "Run fast when the drum beats, then walk slow and sleepy.": {
+   "gl": "Corre rápido cando soa o tambor e despois camiña amodo, con sono.",
+   "es": "Corre rápido cuando suena el tambor y después camina despacio, con sueño."
+  },
+  "Run fast when the pats go quick.": {
+   "gl": "Move os brazos dobrados coma quen corre rápido cando a caixa toca á présa.",
+   "es": "Mueve los brazos doblados como quien corre rápido cuando la caja toca deprisa."
+  },
   "Run very fast like a fox... and FREEZE when the owl hoots!": {
    "gl": "Corre moi rápido coma un raposo... e ESTÁTUA cando cante a curuxa!",
    "es": "¡Corre muy rápido como un zorro... y ESTATUA cuando ulule el búho!"
+  },
+  "Run with your foot on fast beat.": {
+   "gl": "Corre co pé ao ritmo rápido.",
+   "es": "Corre con el pie al ritmo rápido."
   },
   "Run, dog! Fast!": {
    "gl": "Corre, can! Rápido!",
@@ -4956,6 +5956,14 @@
   "Safe bond": {
    "gl": "Apego seguro con educadora",
    "es": "Apego seguro con educadora"
+  },
+  "Same pace keeps the stretcher steady.": {
+   "gl": "O mesmo paso mantén a padiola firme.",
+   "es": "El mismo paso mantiene la camilla firme."
+  },
+  "Same tile or different pile?": {
+   "gl": "Mesma peza ou distinta?",
+   "es": "¿Misma pieza o distinta?"
   },
   "Samil shore walk": {
    "gl": "Lúa pasea pola praia de Samil",
@@ -5005,9 +6013,45 @@
    "gl": "Buscar",
    "es": "Buscar"
   },
+  "Search the corner marked on the map.": {
+   "gl": "Pon a man en viseira nos ollos camiñando na dirección que marca a cuadrícula.",
+   "es": "Pon la mano en visera en los ojos caminando en la dirección que marca la cuadrícula."
+  },
+  "Search the map grid for the secret box.": {
+   "gl": "Busca na cuadrícula do mapa a caixa secreta.",
+   "es": "Busca en la cuadrícula del mapa la caja secreta."
+  },
+  "Search the map grid to find the secret box.": {
+   "gl": "Busca na cuadrícula do mapa a caixa secreta.",
+   "es": "Busca en la cuadrícula del mapa la caja secreta."
+  },
   "Seashell secret": {
    "gl": "A concha que garda o murmurio do mar",
    "es": "La concha que guarda el murmullo del mar"
+  },
+  "See the tiny seed inside.": {
+   "gl": "Mira a semente diminuta dentro.",
+   "es": "Mira la semilla diminuta dentro."
+  },
+  "See the tower shadow on the wall.": {
+   "gl": "Sinala a man proxectada no papel grande da parede fronte á luz.",
+   "es": "Señala la mano proyectada en el papel grande de la pared frente a la luz."
+  },
+  "Send a clear message with clean pauses.": {
+   "gl": "Separa os brazos deixando unha pausa limpa entre dous destellos seguidos.",
+   "es": "Separa los brazos dejando una pausa limpia entre dos destellos seguidos."
+  },
+  "Serve one plate at each seat.": {
+   "gl": "Serve un prato en cada sitio.",
+   "es": "Sirve un plato en cada sitio."
+  },
+  "Serve one plate so the table is ready.": {
+   "gl": "Pon un prato a cada un e a mesa está lista.",
+   "es": "Pon un plato a cada uno y la mesa está lista."
+  },
+  "Serve one spoon on every plate.": {
+   "gl": "Fai o xesto de colocar con coidado un prato e unha culler en cada posto.",
+   "es": "Haz el gesto de colocar con cuidado un plato y una cuchara en cada puesto."
   },
   "Serve sweet drops to friends": {
    "gl": "Compartir gotas de mel imaxinario",
@@ -5016,6 +6060,10 @@
   "Shadow": {
    "gl": "Sombra",
    "es": "Sombra"
+  },
+  "Shadows are clear on a bright day.": {
+   "gl": "Abre os brazos coma un sol moi brillante no alto do ceo.",
+   "es": "Abre los brazos como un sol muy brillante en lo alto del cielo."
   },
   "Shake dry! Dry your toes!": {
    "gl": "Sacúdete para secar! Seca os dedos dos pés!",
@@ -5041,9 +6089,21 @@
    "gl": "Abanea a botella!",
    "es": "¡Agita la botella!"
   },
+  "Shake the rice rainstick and boom.": {
+   "gl": "Abanea o pau de chuvia de arroz e fai bum.",
+   "es": "Agita el palo de lluvia de arroz y haz bum."
+  },
+  "Shake the rice rainstick for a stormy boom.": {
+   "gl": "Axita o pau de choiva de arroz para un trono de tormenta.",
+   "es": "Agita el palo de lluvia de arroz para un trueno de tormenta."
+  },
   "Shake the tambourine: Cha-cha-cha!": {
    "gl": "Abanea a pandeireta: cha-cha-chá!",
    "es": "¡Agita la pandereta: cha-cha-chá!"
+  },
+  "Shake the tube softly, then louder.": {
+   "gl": "Abanea devagar ou forte o tubo seguindo a historia da treboada.",
+   "es": "Sacude despacio o fuerte el tubo siguiendo la historia de la tormenta."
   },
   "Shake your bells loudly": {
    "gl": "Toca forte as túas campás",
@@ -5081,6 +6141,14 @@
    "gl": "Chis… o bebé está durmindo.",
    "es": "Chis… el bebé está durmiendo."
   },
+  "Shine the flashlight inside the box.": {
+   "gl": "Apunta coa lanterna cara ao interior da caixa de cartón furada na escuridade.",
+   "es": "Apunta con la linterna hacia el interior de la caja de cartón agujereada en la oscuridad."
+  },
+  "Shiny mirror or upside-down spoon?": {
+   "gl": "Espello brillante ou culler ao revés?",
+   "es": "¿Espejo brillante o cuchara al revés?"
+  },
   "Shiver shoulders playfully: Brrr!": {
    "gl": "Tremer ombreiros: ¡Brrr!",
    "es": "Temblar con los hombros: ¡Brrr!"
@@ -5100,6 +6168,10 @@
   "Show your treasure to all your friends!": {
    "gl": "Ensínalles o teu tesouro a todos os teus amigos!",
    "es": "¡Enséñales tu tesoro a todos tus amigos!"
+  },
+  "Silence now: get sleepy on the sofa.": {
+   "gl": "Xunta as dúas palmas debaixo da meixela cando chega o silencio para durmir.",
+   "es": "Junta las dos palmas debajo de la mejilla cuando llega el silencio para dormir."
   },
   "Silent tiptoe like a sly fox": {
    "gl": "Camiñar con pisada de seda",
@@ -5213,6 +6285,10 @@
    "gl": "Pasos lentos con respiración calma",
    "es": "Pasos lentos con respiración tranquila"
   },
+  "Slow pour fills the cup clean.": {
+   "gl": "Verter amodo enche o vaso limpo.",
+   "es": "Verter despacio llena el vaso limpio."
+  },
   "Slow the engine and let the dolphins jump!": {
    "gl": "Vai máis amodo co motor e deixa saltar os golfiños!",
    "es": "¡Ve más despacio con el motor y deja saltar a los delfines!"
@@ -5237,9 +6313,21 @@
    "gl": "Sorber",
    "es": "Sorber"
   },
+  "Small eye view or large lens view?": {
+   "gl": "Vista pequena a ollo ou vista grande coa lupa?",
+   "es": "¿Vista pequeña a ojo o vista grande con la lupa?"
+  },
+  "Small leaf or big leaf?": {
+   "gl": "Folla pequena ou folla grande?",
+   "es": "¿Hoja pequeña o hoja grande?"
+  },
   "Small leaf there!": {
    "gl": "Folla pequena, alí!",
    "es": "¡Hoja pequeña, allí!"
+  },
+  "Small leaves stay in one hoop.": {
+   "gl": "As follas pequenas quedan nun aro.",
+   "es": "Las hojas pequeñas quedan en un aro."
   },
   "Smell": {
    "gl": "Cheirar",
@@ -5248,6 +6336,14 @@
   "Smile at your reflection": {
    "gl": "Poñer carantoñas no espello",
    "es": "Hacer muecas en el espejo"
+  },
+  "Smile in the shiny metal spoon.": {
+   "gl": "Sorrí na culler de metal brillante.",
+   "es": "Sonríe en la cuchara de metal brillante."
+  },
+  "Smile wide inside the shiny spoon!": {
+   "gl": "Fai un sorriso ben grande diante da culler mirando se vai dereito ou ao revés.",
+   "es": "Haz una sonrisa bien grande delante de la cuchara mirando si va derecho o al revés."
   },
   "Snack time": {
    "gl": "Hora da merenda compartida",
@@ -5265,6 +6361,10 @@
    "gl": "Cheirar dúas veces polo nariz",
    "es": "Oler dos veces por la nariz"
   },
+  "Snip each thin sheet and listen close.": {
+   "gl": "Corta cada folla fina e escoita de preto.",
+   "es": "Corta cada hoja fina y escucha de cerca."
+  },
   "Snip, snip with two fingers": {
    "gl": "Abrir e pechar dous dedos",
    "es": "Abrir y cerrar dos dedos"
@@ -5280,6 +6380,18 @@
   "Snuggle your head to rest": {
    "gl": "Acochar a cabeza no colo",
    "es": "Acurrucar la cabeza en el regazo"
+  },
+  "Soak or soap: what comes first?": {
+   "gl": "Mollar ou xabón: que vai primeiro?",
+   "es": "Mojar o jabón: ¿qué va primero?"
+  },
+  "Soak the cotton bandage drop by drop.": {
+   "gl": "Embeber a venda de algodón pinga a pinga.",
+   "es": "Empapa la venda de algodón gota a gota."
+  },
+  "Soap and water wash clean.": {
+   "gl": "O xabón e a auga lavan limpo.",
+   "es": "El jabón y el agua lavan limpio."
   },
   "Soap bubble magic": {
    "gl": "Xogos con auga e xabón: burbullas",
@@ -5301,9 +6413,41 @@
    "gl": "Braciños suaves e quentiños!",
    "es": "¡Bracitos suaves y calentitos!"
   },
+  "Soft bread or hard crust?": {
+   "gl": "Pan brando ou codia dura?",
+   "es": "¿Pan blando o corteza dura?"
+  },
+  "Soft bread.": {
+   "gl": "Pan brando.",
+   "es": "Pan blando."
+  },
+  "Soft cotton drinks every drop of water.": {
+   "gl": "Acaricia os dedos coma un floco de algodón suave antes de mollar.",
+   "es": "Acaricia los dedos como un copo de algodón suave antes de mojar."
+  },
+  "Soft cotton soaks wet drops.": {
+   "gl": "O algodón suave empapa as pingas.",
+   "es": "El algodón suave empapa las gotas."
+  },
+  "Soft cotton.": {
+   "gl": "Algodón suave.",
+   "es": "Algodón suave."
+  },
   "Soft kitten paws, stretch and purr!": {
    "gl": "Pousar a man suavemente na cara coma unha patiña.",
    "es": "Poner la mano suavemente en la cara como una patita."
+  },
+  "Soft pat makes sleepy toes.": {
+   "gl": "O toque suave dá sono ás dedas.",
+   "es": "El toque suave da sueño a los dedos."
+  },
+  "Soft rice rain or stormy boom?": {
+   "gl": "Chuvia suave de arroz ou bum de tormenta?",
+   "es": "¿Lluvia suave de arroz o bum de tormenta?"
+  },
+  "Soft sound!": {
+   "gl": "Son suave!",
+   "es": "¡Sonido suave!"
   },
   "Soft touch": {
    "gl": "Tacto suave coma pluma",
@@ -5333,6 +6477,18 @@
    "gl": "Terra! Terra para a sementiña!",
    "es": "¡Tierra! ¡Tierra para la semillita!"
   },
+  "Sort the leaves into two hoops.": {
+   "gl": "Leva unha peza para un aro á esquerda e outra para o aro da dereita.",
+   "es": "Lleva una pieza al aro de la izquierda y otra al aro de la derecha."
+  },
+  "Sort the small leaf here.": {
+   "gl": "Pon a folla pequena aquí.",
+   "es": "Pon la hoja pequeña aquí."
+  },
+  "Sort the small leaf in the hoop.": {
+   "gl": "Pon a folla pequena no aro.",
+   "es": "Pon la hoja pequeña en el aro."
+  },
   "Soup! A yummy hot soup for everyone!": {
    "gl": "Sopa! Unha sopa quente e rica para todos!",
    "es": "¡Sopa! ¡Una sopa caliente y rica para todos!"
@@ -5352,6 +6508,10 @@
   "Spin the circle!": {
    "gl": "Fai xirar o círculo!",
    "es": "¡Haz girar el círculo!"
+  },
+  "Spin the painted cardboard top fast!": {
+   "gl": "Xira o polgar e o índice coma quen lanza un lapis polo medio dun CD ou cartón.",
+   "es": "Gira el pulgar y el índice como quien lanza un lápiz por en medio de un CD o cartón."
   },
   "Spin the top and skip with the rope!": {
    "gl": "Fai xirar a buxaina e salta á corda!",
@@ -5441,6 +6601,10 @@
    "gl": "Estátua! Inmóbil e teatral!",
    "es": "¡Estatua! ¡Inmóvil y teatral!"
   },
+  "Steady carry or shaky carry?": {
+   "gl": "Levar firme ou levar abaneando?",
+   "es": "¿Llevar firme o llevar tambaleando?"
+  },
   "Steady! Steady!": {
    "gl": "Quieta! Quieta!",
    "es": "¡Quieta! ¡Quieta!"
@@ -5476,6 +6640,10 @@
   "Steps, steps… the blue…?": {
    "gl": "Chanzos, chanzos… o… azul?",
    "es": "Escalones, escalones… ¿el… azul?"
+  },
+  "Still day or windy spin?": {
+   "gl": "Día quieto ou xiro con vento?",
+   "es": "¿Día quieto o giro con viento?"
   },
   "Stir the hot chestnut pot": {
    "gl": "Facer círculos coas mans",
@@ -5517,6 +6685,10 @@
    "gl": "Tormenta! Abanea o mar con toda a túa forza",
    "es": "¡Tormenta! Agita el mar con toda tu fuerza"
   },
+  "Stormy music.": {
+   "gl": "Música de tormenta.",
+   "es": "Música de tormenta."
+  },
   "Storytime": {
    "gl": "Lectura de conto colectivo",
    "es": "Lectura de cuento colectivo"
@@ -5532,6 +6704,10 @@
   "Stretch tall like a blooming flower": {
    "gl": "Espreguizarse medrando cara arriba",
    "es": "Desperezarse creciendo hacia arriba"
+  },
+  "Stretch the shadow outline long.": {
+   "gl": "Estira longo o contorno da sombra.",
+   "es": "Estira largo el contorno de la sombra."
   },
   "Stroke the smooth sheet": {
    "gl": "Acariciar o papel suavemente",
@@ -5665,6 +6841,38 @@
    "gl": "Fala no vaso!",
    "es": "¡Habla en el vaso!"
   },
+  "Talk softly into the paper cup phone.": {
+   "gl": "Achega a man en forma de vaso á orella coma para atender o teléfono.",
+   "es": "Acerca la mano en forma de vaso a la oreja como para atender el teléfono."
+  },
+  "Talk with taut string or loose string?": {
+   "gl": "Falar co fío tenso ou co fío frouxo?",
+   "es": "¿Hablar con el hilo tenso o con el hilo flojo?"
+  },
+  "Tall ramp makes wheels roll fast.": {
+   "gl": "A rampla alta fai rodar rápido as rodas.",
+   "es": "La rampa alta hace rodar rápido las ruedas."
+  },
+  "Tall shadow or short shadow?": {
+   "gl": "Sombra alta ou sombra curta?",
+   "es": "¿Sombra alta o sombra corta?"
+  },
+  "Tap the glass jar to hear a high note.": {
+   "gl": "Bate no bote de vidro para oír unha nota aguda.",
+   "es": "Golpea el bote de cristal para oír una nota aguda."
+  },
+  "Tap the glass jar with no lid.": {
+   "gl": "Toca o bote de cristal sen tapa.",
+   "es": "Toca el bote de cristal sin tapa."
+  },
+  "Tap the hard dry crust on top.": {
+   "gl": "Da un toquiño suave cos cotobelos ou os dedos na codia do pan de onte para oír se soa duro.",
+   "es": "Da un toquecito suave con los nudillos en la corteza del pan de ayer para oír si suena duro."
+  },
+  "Tap the side gently with a spoon.": {
+   "gl": "Da dous toquiños moi lixeiros no aire coma coa culler de pau.",
+   "es": "Da dos toquecitos muy ligeros en el aire como con la cuchara de palo."
+  },
   "Tap the xylophone keys: Ting, ting, tong!": {
    "gl": "Puntear no aire coma tocando láminas musicais afinadas.",
    "es": "Puntear en el aire como tocando láminas musicales afinadas."
@@ -5676,6 +6884,10 @@
   "Tap with the spoon!": {
    "gl": "Peta coa culler!",
    "es": "¡Golpea con la cuchara!"
+  },
+  "Tap with the wooden spoon stick.": {
+   "gl": "Suxeita a culler de pau na man lista para dar o golpe forte ou suave.",
+   "es": "Sujeta la cuchara de palo en la mano lista para dar el golpe fuerte o suave."
   },
   "Tap your fingers on your thighs like gentle rain: plip, plop!": {
    "gl": "Bater as puntas dos dedos nas pernas coma pingas no tellado.",
@@ -5697,9 +6909,21 @@
    "gl": "Tap-tap! A choiva fai tap-tap!",
    "es": "¡Tap-tap! ¡La lluvia hace tap-tap!"
   },
+  "Tape the cellophane on a cardboard frame.": {
+   "gl": "Fai un recadro coas dúas mans en ángulo como o marco de cartón.",
+   "es": "Haz un recuadro con las dos manos en ángulo como el marco de cartón."
+  },
+  "Tape the straws into a Pan flute.": {
+   "gl": "Suxeita varias pallas ordenadas en abanico diante da boca coma unha frauta de Pan.",
+   "es": "Sujeta varias pajitas ordenadas en abanico delante de la boca como una flauta de Pan."
+  },
   "Test": {
    "gl": "Probar",
    "es": "Probar"
+  },
+  "Test three kinds of paper by sound.": {
+   "gl": "Sosteña no aire unha folla imaxinaria lista para escoitala sen mirar.",
+   "es": "Sostén en el aire una hoja imaginaria lista para escucharla sin mirar."
   },
   "Thank you very much in advance for your kind help.": {
    "gl": "Moitas grazas de antemán pola túa axuda.",
@@ -5709,9 +6933,17 @@
    "gl": "Grazas! Sabe ben e refresca.",
    "es": "¡Gracias! Sienta bien y refresca."
   },
+  "That side drops because books are heavier than clothes.": {
+   "gl": "Ese lado baixa porque os libros pesan máis ca a roupa.",
+   "es": "Ese lado baja porque los libros pesan más que la ropa."
+  },
   "The Earth goes around the Sun while we count the months!": {
    "gl": "A Terra xira arredor do Sol mentres contamos os meses!",
    "es": "¡La Tierra gira alrededor del Sol mientras contamos los meses!"
+  },
+  "The adult cuts the apple wide.": {
+   "gl": "Fai co canto da man un corte horizontal no aire coma quen abre a mazá pola metade.",
+   "es": "Haz con el canto de la mano un corte horizontal en el aire como quien abre la manzana."
   },
   "The backpack is so heavy!": {
    "gl": "A mochila pesa moitísimo!",
@@ -5725,9 +6957,25 @@
    "gl": "O timbre! Estátua, oso!",
    "es": "¡El timbre! ¡Estatua, oso!"
   },
+  "The big ice starts to melt fast.": {
+   "gl": "Baixa o corpo amodo ata encollerte coma o cubiño que se desfai na auga.",
+   "es": "Baja el cuerpo despacio hasta encogerte como el cubito que se deshace en el agua."
+  },
   "The bird that found its song": {
    "gl": "O paxariño que perdeu o seu cantar",
    "es": "El pajarito que perdió su canto"
+  },
+  "The boat floats. The boot sinks.": {
+   "gl": "O barco flota. A bota afúndese.",
+   "es": "El barco flota. La bota se hunde."
+  },
+  "The boat is very light on water.": {
+   "gl": "Levantade as palmas cara arriba coma un barquiño moi lixeiro que flota fácil.",
+   "es": "Levantad las palmas hacia arriba como un barquito muy ligero que flota fácil."
+  },
+  "The boot is heavy.": {
+   "gl": "A bota é pesada.",
+   "es": "La bota es pesada."
   },
   "The boots! The boots were in the backpack!": {
    "gl": "As botas! As botas estaban na mochila!",
@@ -5765,6 +7013,14 @@
    "gl": "As cores mestúranse!",
    "es": "¡Los colores se mezclan!"
   },
+  "The curved lens zooms small things large.": {
+   "gl": "A lente curva agranda as cousas pequenas.",
+   "es": "La lente curva agranda las cosas pequeñas."
+  },
+  "The curved shiny spoon bends light.": {
+   "gl": "A culler curva e brillante dobra a luz.",
+   "es": "La cuchara curva y brillante dobla la luz."
+  },
   "The dog is behind the tree.": {
    "gl": "O can está detrás da árbore.",
    "es": "El perro está detrás del árbol."
@@ -5773,17 +7029,41 @@
    "gl": "O tambor! Lúa toca o tambor!",
    "es": "¡El tambor! ¡Lúa toca el tambor!"
   },
+  "The fast train rolls down the ramp.": {
+   "gl": "O tren rápido baixa pola rampla.",
+   "es": "El tren rápido baja por la rampa."
+  },
   "The fish is on the waves!": {
    "gl": "O peixe está nas ondas!",
    "es": "¡El pez está en las olas!"
+  },
+  "The flashlight bulb makes light.": {
+   "gl": "A bombilla da lanterna fai luz.",
+   "es": "La bombilla de la linterna hace luz."
+  },
+  "The flashlight makes stars glow in the dark.": {
+   "gl": "A lanterna fai brillar as estrelas na escuridade.",
+   "es": "La linterna hace brillar las estrellas en la oscuridad."
   },
   "The friendly puppy wags its tail!": {
    "gl": "O cadeliño simpático move o rabo!",
    "es": "¡El perrito simpático mueve la cola!"
   },
+  "The glow changes because two filters blend the light.": {
+   "gl": "O brillo cambia porque dous filtros mesturan a luz.",
+   "es": "El brillo cambia porque dos filtros mezclan la luz."
+  },
+  "The heavy stone sinks in water.": {
+   "gl": "A pedra pesada afúndese na auga.",
+   "es": "La piedra pesada se hunde en el agua."
+  },
   "The heavy stone sinks, but the wooden stick floats on top!": {
    "gl": "A pedra pesada afúndese, pero o pau de madeira flota enriba!",
    "es": "¡La piedra pesada se hunde, pero el palo de madera flota encima!"
+  },
+  "The heavy stone will sink down fast.": {
+   "gl": "Facede baixar as mans despacio ata o fondo da bandexa imitando a pedra que se afunde.",
+   "es": "Haced bajar las manos despacio hasta el fondo de la bandeja imitando la piedra que se hunde."
   },
   "The hedgehog wakes up: FREEZE and curl up small!": {
    "gl": "O ourizo esperta: estátua e faite unha bóla!",
@@ -5793,9 +7073,21 @@
    "gl": "O lobo con fame esperta: estátuas!",
    "es": "El lobo hambriento se despierta: ¡estatuas!"
   },
+  "The ice melts in the cold juice.": {
+   "gl": "O xeo fúndese no zume frío.",
+   "es": "El hielo se derrite en el zumo frío."
+  },
   "The lion and the brave mouse": {
    "gl": "O león pequeno e a ratiña valente",
    "es": "El león pequeño y la ratita valiente"
+  },
+  "The little boat has a paper sail.": {
+   "gl": "Erguede as dúas mans xuntas coma a vela do barco no barreño.",
+   "es": "Levantad las dos manos juntas como la vela del barco en el barreño."
+  },
+  "The longest straw makes a low note.": {
+   "gl": "Baixa a man cara ao chan coma un son moi grave saíndo do tubo máis longo.",
+   "es": "Baja la mano hacia el suelo como un sonido muy grave saliendo del tubo más largo."
   },
   "The midsummer frog dance": {
    "gl": "O baile das ras na noite de San Xoán",
@@ -5805,9 +7097,25 @@
    "gl": "A tartaruga que non tiña présa",
    "es": "La tortuga que no tenía prisa"
   },
+  "The pinwheel blades spin on a windy day.": {
+   "gl": "As aspas do muíño xiran nun día de vento.",
+   "es": "Las aspas del molinillo giran en un día de viento."
+  },
   "The rain is on the umbrella!": {
    "gl": "A choiva está enriba do paraugas!",
    "es": "¡La lluvia está encima del paraguas!"
+  },
+  "The raincoat keeps us warm and dry.": {
+   "gl": "Sacode as mans nos ombreiros mostrando que non pasou nin unha pinga de auga.",
+   "es": "Sacude las manos en los hombros mostrando que no pasó ni una gota de agua."
+  },
+  "The room is dark so stars shine.": {
+   "gl": "Tapa os ollos un segundo coas mans para notar o cuarto escuro antes de mirar arriba.",
+   "es": "Tapa los ojos un segundo con las manos para notar el cuarto oscuro antes de mirar arriba."
+  },
+  "The round disc looks one new color!": {
+   "gl": "Forma un aro ben redondo cos dous brazos mentres imitas a velocidade do xiro.",
+   "es": "Forma un aro bien redondo con los dos brazos mientras imitas la velocidad del giro."
   },
   "The sea is sleeping… Can you lie down, calm and still?": {
    "gl": "O mar está durmindo… Podes deitarte, tranquilo e quieto?",
@@ -5841,6 +7149,14 @@
    "gl": "A zapatilla está debaixo da cama.",
    "es": "La zapatilla está debajo de la cama."
   },
+  "The soaked towel starts to drip.": {
+   "gl": "Move os dedos cara abaixo coma pingas que caen seguidas ao levantar a toalla mollada.",
+   "es": "Mueve los dedos hacia abajo como gotas que caen seguidas al levantar la toalla mojada."
+  },
+  "The soft bandage soaks up the water.": {
+   "gl": "A venda suave chupa a auga.",
+   "es": "La venda suave absorbe el agua."
+  },
   "The squirrel helped Lúa. Who helps you at home?": {
    "gl": "O esquío axudou a Lúa. Quen che axuda na casa?",
    "es": "La ardilla ayudó a Lúa. ¿Quién te ayuda en casa?"
@@ -5869,6 +7185,10 @@
    "gl": "O sol! Saíu o sol! Bos días, sol!",
    "es": "¡El sol! ¡Salió el sol! ¡Buenos días, sol!"
   },
+  "The tiny seed hides inside.": {
+   "gl": "A semente diminuta agóchase dentro.",
+   "es": "La semilla diminuta se esconde dentro."
+  },
   "The train goes fast, now it goes slow... and STOP!": {
    "gl": "O tren vai rápido, agora vai amodo... e PARA!",
    "es": "El tren va rápido, ahora va despacio... ¡y PARA!"
@@ -5885,6 +7205,14 @@
    "gl": "O paraugas! A xoaniña está debaixo do paraugas!",
    "es": "¡El paraguas! ¡La mariquita está debajo del paraguas!"
   },
+  "The voice travels when the string is tight.": {
+   "gl": "Tira suavemente dos dous extremos imaxinarios ata deixar o fío ben tirante.",
+   "es": "Tira suavemente de los dos extremos imaginarios hasta dejar el hilo bien tirante."
+  },
+  "The wall looks bright and colorful!": {
+   "gl": "Abre os dedos en abanico cara á parede coma un feixe de luz multicolor.",
+   "es": "Abre los dedos en abanico hacia la pared como un haz de luz multicolor."
+  },
   "The warm room was filled with bright sunlight.": {
    "gl": "O cuarto quentiño estaba cheo de luz do sol.",
    "es": "La habitación calentita estaba llena de luz del sol."
@@ -5892,6 +7220,26 @@
   "The waves! The waves are coming!": {
    "gl": "As ondas! Veñen as ondas!",
    "es": "¡Las olas! ¡Vienen las olas!"
+  },
+  "The wet towel drips in the sink.": {
+   "gl": "A toalla mollada pinga no lavabo.",
+   "es": "La toalla mojada gotea en el lavabo."
+  },
+  "The wet towel holds drops.": {
+   "gl": "A toalla mollada garda pingas.",
+   "es": "La toalla mojada guarda gotas."
+  },
+  "The wet towel weighs much more.": {
+   "gl": "Fai cara de sorpresa levantando o brazo máis cargado polo peso da toalla mollada.",
+   "es": "Haz cara de sorpresa levantando el brazo más cargado por el peso de la toalla mojada."
+  },
+  "The white folio plane crosses the tape.": {
+   "gl": "Sinala un folio branco liso coma do que nace o avión tras dobrar.",
+   "es": "Señala un folio blanco liso como del que nace el avión tras doblar."
+  },
+  "The white plane glides from the nose fold.": {
+   "gl": "O avión branco planea desde o dobrez do bico.",
+   "es": "El avión blanco planea desde el doblez del morro."
   },
   "The wild boar is coming: FREEZE!": {
    "gl": "Vén o xabaril: estátuas!",
@@ -5921,6 +7269,10 @@
    "gl": "O vento! Está a soprar o vento!",
    "es": "¡El viento! ¡Está soplando el viento!"
   },
+  "The wings are equal because we fold the wet paint.": {
+   "gl": "As ás son iguais porque dobramos a pintura húmida.",
+   "es": "Las alas son iguales porque doblamos la pintura húmeda."
+  },
   "The wolf is watching: FREEZE!": {
    "gl": "O lobo está mirando: estátuas!",
    "es": "El lobo está mirando: ¡estatuas!"
@@ -5949,6 +7301,14 @@
    "gl": "Axudan! Lúa e o can axudan o avó!",
    "es": "¡Ayudan! ¡Lúa y el perro ayudan al abuelo!"
   },
+  "They sound different because thin paper bends easier than thick card.": {
+   "gl": "Soan distinto porque o papel fino dóbrase mellor ca a cartolina.",
+   "es": "Suenan distinto porque el papel fino se dobla mejor que la cartulina."
+  },
+  "Thin tissue paper makes a soft rustle.": {
+   "gl": "Toca xuntas as xemas do índice e o polgar mostrando o groso mínimo do papel de seda.",
+   "es": "Toca juntas las yemas del índice y el pulgar mostrando el grosor mínimo del papel de seda."
+  },
   "This Is the Way We Wash Our Hands": {
    "gl": "Así lavamos as mans",
    "es": "Así nos lavamos las manos"
@@ -5956,6 +7316,22 @@
   "This banana is bigger AND sweeter than the small lemon!": {
    "gl": "Este plátano é máis grande E máis doce ca o limón pequeno!",
    "es": "¡Este plátano es más grande Y más dulce que el limón pequeño!"
+  },
+  "This big stone goes down in the tub.": {
+   "gl": "Suxeitade unha pedra grande nas mans para notar canto pesa antes de metela na auga.",
+   "es": "Sujetad una piedra grande en las manos para notar cuánto pesa antes de meterla en el agua."
+  },
+  "This is the way we put on our hat, put on our hat, put on our hat.": {
+   "gl": "Así é como pomos o gorro.",
+   "es": "Así es como nos ponemos el gorro."
+  },
+  "This is the way we wash our hands, wash our hands, wash our hands.": {
+   "gl": "Así é como lavamos as mans.",
+   "es": "Así es como nos lavamos las manos."
+  },
+  "This tall tower has wide blocks below.": {
+   "gl": "Ergue as mans cara ao teito debuxando unha torre ben firme.",
+   "es": "Levanta las manos hacia el techo dibujando una torre bien firme."
   },
   "Thoughtful": {
    "gl": "Considerado",
@@ -5989,6 +7365,18 @@
    "gl": "Recollida en equipo",
    "es": "Recogida en equipo"
   },
+  "Tight string carries the talk.": {
+   "gl": "O fío tenso leva a voz.",
+   "es": "El hilo tenso lleva la voz."
+  },
+  "Tight string or loose string: can we talk?": {
+   "gl": "Corda tensa ou frouxa: podemos falar?",
+   "es": "Cuerda tensa o floja: ¿podemos hablar?"
+  },
+  "Tilt the cardboard rainstick slowly.": {
+   "gl": "Xira amodo un tubo longo cos brazos coma o pau de choiva con arroz dentro.",
+   "es": "Gira despacio un tubo largo con los brazos como el palo de lluvia con arroz dentro."
+  },
   "Tiny fingers meet giant paw": {
    "gl": "Xuntar mans pequena e grande",
    "es": "Juntar una mano pequeña y una grande"
@@ -6013,6 +7401,10 @@
    "gl": "Camiñar de puntas moi baixiño",
    "es": "Caminar de puntillas muy bajito"
   },
+  "Tiptoe softly when the drum sleeps.": {
+   "gl": "Camiña en silencio na punta das dedas cando a caixa baixa o volume.",
+   "es": "Camina en silencio de puntillas cuando la caja baja el volumen."
+  },
   "Tiptoe through": {
    "gl": "Pasar de puntas",
    "es": "Pasar de puntillas"
@@ -6025,6 +7417,10 @@
    "gl": "Mañá",
    "es": "Mañana"
   },
+  "Too many books make the bag heavy.": {
+   "gl": "Dobra os xeonllos coma se unha mochila cargada de libros tirase moito cara abaixo.",
+   "es": "Dobla las rodillas como si una mochila cargada de libros tirase mucho hacia abajo."
+  },
   "Top": {
    "gl": "Peonza",
    "es": "Peonza"
@@ -6032,6 +7428,10 @@
   "Top to toe": {
    "gl": "Da cabeza aos pés",
    "es": "De la cabeza a los pies"
+  },
+  "Touch each leg one by one carefully.": {
+   "gl": "Sinala unha a unha as patas do xoguete mentres vas contando en orde.",
+   "es": "Señala una a una las patas del juguete mientras vas contando en orden."
   },
   "Touch head, tummy, toes": {
    "gl": "Tocar cabeza, barriga e pés",
@@ -6113,6 +7513,10 @@
    "gl": "Debuxar un prato no aire",
    "es": "Dibujar un plato en el aire"
   },
+  "Trace the dark outline on big paper.": {
+   "gl": "Debuxa no aire co dedo índice todo o bordo dunha figura.",
+   "es": "Dibuja en el aire con el dedo índice todo el borde de una figura."
+  },
   "Trawler coming home": {
    "gl": "O barco que regresa ao porto do Berbés",
    "es": "El barco que regresa al puerto de O Berbés"
@@ -6185,9 +7589,17 @@
    "gl": "Xirar palmas cara arriba e abaixo",
    "es": "Girar las palmas hacia arriba y hacia abajo"
   },
+  "Turn the handle to see the outside.": {
+   "gl": "Xira o pulso coma quen dá a volta ao mango da culler.",
+   "es": "Gira la muñeca como quien da la vuelta al mango de la cuchara."
+  },
   "Turn the key: Click!": {
    "gl": "Xirar dous dedos no ar",
    "es": "Girar dos dedos en el aire"
+  },
+  "Turn the room map to match the walls.": {
+   "gl": "Suxeita un mapa aberto diante e xírao ata aliñalo coas paredes da sala.",
+   "es": "Sujeta un mapa abierto delante y gíralo hasta alinearlo con las paredes de la sala."
   },
   "Turn the steering wheel": {
    "gl": "Xirar o volante imaxinario",
@@ -6197,9 +7609,25 @@
    "gl": "Abrir e pechar dedos coma chispas",
    "es": "Abrir y cerrar los dedos como chispas"
   },
+  "Twinkle, twinkle, little star, how I wonder what you are.": {
+   "gl": "Brilla, brilla, estreliña, que serás, pregunto eu.",
+   "es": "Brilla, brilla, estrellita, qué serás, me pregunto."
+  },
   "Twirl slowly around yourself": {
    "gl": "Xiro suave sobre si mesmo",
    "es": "Giro suave sobre uno mismo"
+  },
+  "Twirl the pencil so the colors blend.": {
+   "gl": "Fai xirar as dúas mans rápido sobre o seu propio eixo sen parar.",
+   "es": "Haz girar las dos manos rápido sobre su propio eje sin parar."
+  },
+  "Twirl the round cardboard top to blend colors.": {
+   "gl": "Fai xirar o peón de cartón redondo para mesturar as cores.",
+   "es": "Haz girar la peonza de cartón redonda para mezclar los colores."
+  },
+  "Twirl the round circle on the pin.": {
+   "gl": "Fai xirar o círculo redondo sobre o eixe.",
+   "es": "Haz girar el círculo redondo sobre el eje."
   },
   "Two languages? Lucky you!": {
    "gl": "Dúas linguas? Que sorte tes!",
@@ -6264,6 +7692,10 @@
   "W · Water": {
    "gl": "W · Auga limpa",
    "es": "W · Agua limpia"
+  },
+  "Wait to see if drops soak in.": {
+   "gl": "Fai o xesto de botar pingas cun contapernas e esperar se desaparecen dentro.",
+   "es": "Haz el gesto de echar gotas con un cuentagotas y esperar si desaparecen dentro."
   },
   "Wake up": {
    "gl": "Espertar",
@@ -6349,6 +7781,10 @@
    "gl": "Quente e frío. Brrr! Lava, lava, mans limpas!",
    "es": "Caliente y frío. ¡Brrr! ¡Lava, lava, manos limpias!"
   },
+  "Warm and dry.": {
+   "gl": "Quente e seco.",
+   "es": "Calentito y seco."
+  },
   "Warm chestnuts! So warm!": {
    "gl": "Castañas quentiñas! Que quentiñas!",
    "es": "¡Castañas calentitas! ¡Qué calentitas!"
@@ -6356,6 +7792,10 @@
   "Warm direct eye contact and smile": {
    "gl": "Mirada serena e sorriso cálido",
    "es": "Mirada serena y sonrisa cálida"
+  },
+  "Warm drink or cold drink: which melts ice?": {
+   "gl": "Bebida morna ou fría: cal derrete o xeo?",
+   "es": "Bebida templada o fría: ¿cuál derrite el hielo?"
   },
   "Warm eye contact and goodbye kiss": {
    "gl": "Contacto visual e bico na meixela",
@@ -6368,6 +7808,10 @@
   "Warm up your arms with a rub": {
    "gl": "Fregar os brazos para quentar",
    "es": "Frotarse los brazos para calentarse"
+  },
+  "Warm water makes cold ice melt.": {
+   "gl": "A auga morna derrete o xeo frío.",
+   "es": "El agua templada derrite el hielo frío."
   },
   "Warm water! Rub the soap, splash, splash! Clean hands!": {
    "gl": "Auga morna! Frega o xabón, chap, chap! Mans limpas!",
@@ -6385,6 +7829,10 @@
    "gl": "Quenta as mans e frégaas rápido",
    "es": "Calienta las manos y frótalas rápido"
   },
+  "Warm, cold!": {
+   "gl": "Morno, frío!",
+   "es": "¡Templado, frío!"
+  },
   "Warm, soft blanket. Sleep, sleep, wake up!": {
    "gl": "Manta morna e suave. A durmir, a durmir, a espertar!",
    "es": "Manta calentita y suave. A dormir, a dormir, ¡a despertar!"
@@ -6396,6 +7844,14 @@
   "Warmth": {
    "gl": "Calor morna da aperta",
    "es": "Calor tibia del abrazo"
+  },
+  "Wash hand with soap and bubble.": {
+   "gl": "Lava a man con xabón e burbulla.",
+   "es": "Lava la mano con jabón y burbuja."
+  },
+  "Wash the clean hand with soap.": {
+   "gl": "Lava a man limpa con xabón.",
+   "es": "Lava la mano limpia con jabón."
   },
   "Wash your belly!": {
    "gl": "Lava a barriga!",
@@ -6417,6 +7873,10 @@
    "gl": "Lava as mans antes de comer.",
    "es": "Lávate las manos antes de comer."
   },
+  "Wash your hands in four steps.": {
+   "gl": "Frega dorso con palma e dedos seguindo as tarxetas de mollar, xabón, aclarar e secar.",
+   "es": "Frota dorso con palma y dedos siguiendo las tarjetas de mojar, jabón, aclarar y secar."
+  },
   "Wash your hands with clean water!": {
    "gl": "Lava as mans con auga limpa!",
    "es": "¡Lávate las manos con agua limpia!"
@@ -6436,6 +7896,42 @@
   "Wash, wash, clean hands!": {
    "gl": "Lava, lava, mans limpas!",
    "es": "¡Lava, lava, manos limpias!"
+  },
+  "Watch each wheel spin down the slope.": {
+   "gl": "Fai xirar os dous índices en círculo coma as rodas do tren baixando.",
+   "es": "Haz girar los dos índices en círculo como las ruedas del tren bajando."
+  },
+  "Watch every drop fall in the sink.": {
+   "gl": "Apreta e retorce as mans enriba do lavabo vendo caer cada gota da toalla.",
+   "es": "Aprieta y retuerce las manos encima del lavabo viendo caer cada gota de la toalla."
+  },
+  "Watch the better plane glide farther.": {
+   "gl": "Lanza suavemente unha palma cara adiante vendo planar o avión pola pista.",
+   "es": "Lanza suavemente una palma hacia delante viendo planear el avión por la pista."
+  },
+  "Watch the blades spin with the fan.": {
+   "gl": "Fai rodar a man en círculos cada vez máis vivos segundo aumenta o vento.",
+   "es": "Haz rodar la mano en círculos cada vez más vivos según aumenta el viento."
+  },
+  "Watch the ice in the cold juice.": {
+   "gl": "Fai xirar a man coma se mexeses o zume no vaso coa culler.",
+   "es": "Haz girar la mano como si removieses el zumo en el vaso con la cuchara."
+  },
+  "Watch the ice shrink in juice.": {
+   "gl": "Mira como encolle o xeo no zume.",
+   "es": "Mira cómo encoge el hielo en el zumo."
+  },
+  "Water height changes the tap sound.": {
+   "gl": "A altura da auga cambia o son ao tocar.",
+   "es": "La altura del agua cambia el sonido al tocar."
+  },
+  "Water makes dry earth sticky mud.": {
+   "gl": "A auga fai barro pegañento da terra seca.",
+   "es": "El agua hace barro pegajoso de la tierra seca."
+  },
+  "Water runs down the narrow tube.": {
+   "gl": "Xunta os dedos en círculo estreito mostrando por onde pasa o chorro finito.",
+   "es": "Junta los dedos en círculo estrecho mostrando por dónde pasa el chorro fino."
   },
   "Water sensory play": {
    "gl": "Xogo con auga morna en baldes",
@@ -6477,6 +7973,10 @@
    "gl": "Saúdo alegre coa pata",
    "es": "Saludo alegre con la pata"
   },
+  "Wave the fan so blades spin.": {
+   "gl": "Move o abanico para que xiren as aspas.",
+   "es": "Mueve el abanico para que giren las aspas."
+  },
   "Wave the ribbon in gentle waves": {
    "gl": "Ondear o brazo no aire",
    "es": "Ondear el brazo en el aire"
@@ -6513,9 +8013,29 @@
    "gl": "Somos sementes pequeniñas debaixo da terra",
    "es": "Somos semillas pequeñitas bajo la tierra"
   },
+  "We blow the light paper sail.": {
+   "gl": "Sopramos a vela de papel lixeira.",
+   "es": "Soplamos la vela de papel ligera."
+  },
+  "We build a tall tower with big blocks.": {
+   "gl": "Facemos unha torre alta con bloques grandes.",
+   "es": "Hacemos una torre alta con bloques grandes."
+  },
+  "We build two towers side by side.": {
+   "gl": "Apila unha man enriba da outra moi amodo sen que trema o pulso.",
+   "es": "Apila una mano encima de la otra muy despacio sin que tiemble el pulso."
+  },
   "We climbed the hill AND now we see the wide blue bay!": {
    "gl": "Subimos o monte E agora vemos a ría azul e ancha!",
    "es": "¡Subimos el monte Y ahora vemos la ría azul y ancha!"
+  },
+  "We fold stiff paper for the sail.": {
+   "gl": "Acariciade coas xemas o papel lixeiro con que está feita a vela.",
+   "es": "Acariciad con las yemas el papel ligero con que está hecha la vela."
+  },
+  "We found it because the grid shows where each spot is.": {
+   "gl": "Atopámolo porque a cuadrícula mostra onde está cada sitio.",
+   "es": "Lo encontramos porque la cuadrícula muestra dónde está cada sitio."
   },
   "We go outside after lunch.": {
    "gl": "Saímos fóra despois de xantar.",
@@ -6524,6 +8044,10 @@
   "We help! Pull together!": {
    "gl": "Axudamos! Tiremos xuntos!",
    "es": "¡Ayudamos! ¡Tiremos juntos!"
+  },
+  "We mix the wet sticky mud.": {
+   "gl": "Mesturamos o barro mollado e pegañento.",
+   "es": "Mezclamos el barro mojado y pegajoso."
   },
   "We play together in the sand.": {
    "gl": "Xogamos xuntos na area.",
@@ -6549,6 +8073,10 @@
    "gl": "Recollemos xuntos os nosos bloques de madeira.",
    "es": "Recogemos juntos nuestros bloques de madera."
   },
+  "We understand it because both agree on the blink code.": {
+   "gl": "Entendémolo porque os dous acordamos o código de escintileos.",
+   "es": "Lo entendemos porque los dos acordamos el código de destellos."
+  },
   "We walk across the bridge.": {
    "gl": "Cruzamos a ponte camiñando.",
    "es": "Cruzamos el puente caminando."
@@ -6565,6 +8093,14 @@
    "gl": "Pon un abrigo cando vai frío fóra.",
    "es": "Ponte un abrigo cuando hace frío fuera."
   },
+  "Wear the raincoat with the hood to stay dry.": {
+   "gl": "Pon o impermeable co carapucho para estar seco.",
+   "es": "Ponte el chubasquero con la capucha para estar seco."
+  },
+  "Wear the right clothes for the sky.": {
+   "gl": "Abotoa ou pecha a cremalleira imaxinaria polo peito ata o pescozo.",
+   "es": "Abrocha o cierra la cremallera imaginaria por el pecho hasta el cuello."
+  },
   "Welcome": {
    "gl": "Acollemento con agarimo",
    "es": "Acogida con cariño"
@@ -6572,6 +8108,22 @@
   "Welcome friends, sit in circle!": {
    "gl": "Benvidos, amigos, sentade en círculo!",
    "es": "¡Bienvenidos, amigos, sentaos en círculo!"
+  },
+  "Wet mud.": {
+   "gl": "Barro mollado.",
+   "es": "Barro mojado."
+  },
+  "Wet one hand and then the other.": {
+   "gl": "Abre as dúas mans diante da boca ou da pía para empezar os catro pasos.",
+   "es": "Abre las dos manos delante del lavabo para empezar los cuatro pasos."
+  },
+  "Wet sponge!": {
+   "gl": "Esponxa mollada!",
+   "es": "¡Esponja mojada!"
+  },
+  "Wet towel or dry towel?": {
+   "gl": "Toalla mollada ou toalla seca?",
+   "es": "¿Toalla mojada o toalla seca?"
   },
   "Wet! The little ladybird is so wet!": {
    "gl": "Mollada! A xoaniña pequena está moi mollada!",
@@ -6608,6 +8160,14 @@
   "What can you see on the hill?": {
    "gl": "Que podes ver no outeiro?",
    "es": "¿Qué puedes ver en la colina?"
+  },
+  "What color appears if we mix yellow and blue paint?": {
+   "gl": "Que cor sae se mesturamos pintura amarela e azul?",
+   "es": "¿Qué color sale si mezclamos pintura amarilla y azul?"
+  },
+  "What color glow do two filters make together?": {
+   "gl": "Que brillo de cor fan dous filtros xuntos?",
+   "es": "¿Qué brillo de color hacen dos filtros juntos?"
   },
   "What color is Lúa's coat?": {
    "gl": "De que cor é o abrigo de Lúa?",
@@ -6753,6 +8313,10 @@
    "gl": "Que ves no camiño á escola?",
    "es": "¿Qué ves en el camino a la escuela?"
   },
+  "What do you see with the lens?": {
+   "gl": "Que ves coa lupa?",
+   "es": "¿Qué ves con la lupa?"
+  },
   "What do you sleep with at night?": {
    "gl": "Con que dormes pola noite?",
    "es": "¿Con qué duermes por la noche?"
@@ -6780,6 +8344,10 @@
   "What do you wear at night in winter?": {
    "gl": "Que pos pola noite no inverno?",
    "es": "¿Qué te pones por la noche en invierno?"
+  },
+  "What do you wear in rain: hat or raincoat?": {
+   "gl": "Que pos na chuvia: sombreiro ou chuvasqueiro?",
+   "es": "¿Qué pones en la lluvia: sombrero o chubasquero?"
   },
   "What do you wear when it rains?": {
    "gl": "Que pos cando chove?",
@@ -6812,6 +8380,26 @@
   "What happened when the bell rang?": {
    "gl": "Que pasou cando soou o timbre?",
    "es": "¿Qué pasó cuando sonó el timbre?"
+  },
+  "What happens if we carry the stretcher fast?": {
+   "gl": "Que pasa se levamos a padiola rápido?",
+   "es": "¿Qué pasa si llevamos la camilla rápido?"
+  },
+  "What happens to cotton and plastic in water?": {
+   "gl": "Que pasa co algodón e o plástico na auga?",
+   "es": "¿Qué pasa con el algodón y el plástico en el agua?"
+  },
+  "What happens to the colors when you spin the top?": {
+   "gl": "Que pasa coas cores cando fas xirar a buxaina?",
+   "es": "¿Qué pasa con los colores cuando haces girar la peonza?"
+  },
+  "What happens to your heart after jumping?": {
+   "gl": "Que lle pasa ao corazón despois de saltar?",
+   "es": "¿Qué le pasa al corazón después de saltar?"
+  },
+  "What happens when we mix earth and water?": {
+   "gl": "Que pasa cando mesturamos terra e auga?",
+   "es": "¿Qué pasa cuando mezclamos tierra y agua?"
   },
   "What is in Lúa's hand?": {
    "gl": "Que ten Lúa na man?",
@@ -6861,6 +8449,14 @@
    "gl": "Cal é a túa comida favorita nunha festa?",
    "es": "¿Cuál es tu comida favorita en una fiesta?"
   },
+  "What makes the pinwheel blade spin?": {
+   "gl": "Que fai xirar as aspas do muíño de vento?",
+   "es": "¿Qué hace girar las aspas del molinillo?"
+  },
+  "What makes the tiny bee look large?": {
+   "gl": "Que fai que a abella pequena se vexa grande?",
+   "es": "¿Qué hace que la abeja pequeña se vea grande?"
+  },
   "What pattern can you make with your family?": {
    "gl": "Que serie podes facer coa túa familia?",
    "es": "¿Qué serie puedes hacer con tu familia?"
@@ -6884,6 +8480,10 @@
   "What sounds do you hear at night at home?": {
    "gl": "Que sons oes pola noite na casa?",
    "es": "¿Qué sonidos oyes por la noche en casa?"
+  },
+  "What sounds inside when you shake the rainstick?": {
+   "gl": "Que soa dentro cando abaneas o pau de chuvia?",
+   "es": "¿Qué suena dentro cuando agitas el palo de lluvia?"
   },
   "What sweet thing do you like to eat?": {
    "gl": "Que cousa doce che gusta comer?",
@@ -6913,6 +8513,10 @@
    "gl": "Que meterías nunha bolsa misteriosa?",
    "es": "¿Qué meterías en una bolsa misteriosa?"
   },
+  "When do feet go sleepy slow?": {
+   "gl": "Cando van os pés amodo con sono?",
+   "es": "¿Cuándo van los pies despacio con sueño?"
+  },
   "When do you put on your boots? Why?": {
    "gl": "Cando pos as botas? Por que?",
    "es": "¿Cuándo te pones las botas? ¿Por qué?"
@@ -6920,6 +8524,10 @@
   "When it is hot, what do you play?": {
    "gl": "Cando vai calor, a que xogas?",
    "es": "Cuando hace calor, ¿a qué juegas?"
+  },
+  "When was the heart beat fast?": {
+   "gl": "Cando foi rápido o latexo do corazón?",
+   "es": "¿Cuándo fue rápido el latido del corazón?"
   },
   "Where are Lúa's boots? Touch the red boots!": {
    "gl": "Onde están as botas de Lúa? Toca as botas vermellas!",
@@ -7060,6 +8668,10 @@
   "Where did the hat go?": {
    "gl": "Onde foi parar o gorro?",
    "es": "¿Adónde fue a parar el gorro?"
+  },
+  "Where do small leaves go?": {
+   "gl": "Onde van as follas pequenas?",
+   "es": "¿Dónde van las hojas pequeñas?"
   },
   "Where do you go when it rains?": {
    "gl": "Onde vas cando chove?",
@@ -7633,9 +9245,21 @@
    "gl": "Onde está o peixe amarelo? Toca o peixe!",
    "es": "¿Dónde está el pez amarillo? ¡Toca el pez!"
   },
+  "Where on the map grid is the secret trail?": {
+   "gl": "Onde na cuadrícula do mapa está a pista secreta?",
+   "es": "¿Dónde en la cuadrícula del mapa está la pista secreta?"
+  },
   "Where was the chestnut?": {
    "gl": "Onde estaba a castaña?",
    "es": "¿Dónde estaba la castaña?"
+  },
+  "Where was the tiny seed?": {
+   "gl": "Onde estaba a semente diminuta?",
+   "es": "¿Dónde estaba la semilla diminuta?"
+  },
+  "Where will the chalk shadow move in the sun?": {
+   "gl": "Cara a onde se moverá a sombra de xiz ao sol?",
+   "es": "¿Hacia dónde se moverá la sombra de tiza al sol?"
   },
   "Where's the sun? Oh, there!": {
    "gl": "Onde está o sol? Oh, alí!",
@@ -7644,6 +9268,50 @@
   "Where's the sun? There it is!": {
    "gl": "Onde está o sol? Aí está!",
    "es": "¿Dónde está el sol? ¡Ahí está!"
+  },
+  "Which animal has four legs: dog or fish?": {
+   "gl": "Cal animal ten catro patas: can ou peixe?",
+   "es": "¿Qué animal tiene cuatro patas: perro o pez?"
+  },
+  "Which color piece comes next now?": {
+   "gl": "Colle unha peza da mesa e téndea no aire esperando a quenda na tira.",
+   "es": "Coge una pieza de la mesa y tenla en el aire esperando turno en la tira."
+  },
+  "Which ice cube did shrink more?": {
+   "gl": "Cal cubiño de xeo encolleu máis?",
+   "es": "¿Cuál cubito de hielo encogió más?"
+  },
+  "Which keeps the cat dry: hat or hood?": {
+   "gl": "Cal mantén seco o gato: sombreiro ou carapucha?",
+   "es": "¿Cuál mantiene seco al gato: sombrero o capucha?"
+  },
+  "Which one is soft: bit or crust?": {
+   "gl": "Cal é brando: o anaco ou a codia?",
+   "es": "¿Cuál es blando: el trozo o la corteza?"
+  },
+  "Which plane glides farther along the lane?": {
+   "gl": "Cal avión esvara máis lonxe pola pista?",
+   "es": "¿Qué avión planea más lejos por la pista?"
+  },
+  "Which shadow is long on the wall?": {
+   "gl": "Cal sombra é longa na parede?",
+   "es": "¿Cuál sombra es larga en la pared?"
+  },
+  "Which stays wet and which stays dry?": {
+   "gl": "Cal queda mollado e cal queda seco?",
+   "es": "¿Cuál queda mojado y cuál queda seco?"
+  },
+  "Which straw on the flute sounds low: long or short?": {
+   "gl": "Cal palliña da frauta soa grave: a longa ou a curta?",
+   "es": "¿Qué pajita de la flauta suena grave: la larga o la corta?"
+  },
+  "Which suitcase will tip the scale down?": {
+   "gl": "Cal maleta fará baixar a balanza?",
+   "es": "¿Qué maleta hará bajar la balanza?"
+  },
+  "Which towel is heavy and wet?": {
+   "gl": "Cal toalla está pesada e mollada?",
+   "es": "¿Cuál toalla está pesada y mojada?"
   },
   "Whisper kind words into your friend's ear!": {
    "gl": "Dille palabras bonitas ao oído ao teu amigo!",
@@ -7753,21 +9421,165 @@
    "gl": "Fiuuu, sopra o vento, dobra os xeonllos!",
    "es": "¡Fiuuu, sopla el viento, dobla las rodillas!"
   },
+  "Why are the butterfly wings equal?": {
+   "gl": "Por que son iguais as ás da bolboreta?",
+   "es": "¿Por qué son iguales las alas de la mariposa?"
+  },
+  "Why can we talk with lamp blinks?": {
+   "gl": "Por que podemos falar con escintileos de lámpada?",
+   "es": "¿Por qué podemos hablar con destellos de lámpara?"
+  },
   "Why can't the robin drink?": {
    "gl": "Por que non pode beber o paporrubio?",
    "es": "¿Por qué no puede beber el petirrojo?"
+  },
+  "Why did one side of the scale go down?": {
+   "gl": "Por que baixou un lado da balanza?",
+   "es": "¿Por qué bajó un lado de la balanza?"
+  },
+  "Why did the earth turn sticky?": {
+   "gl": "Por que se volveu pegañenta a terra?",
+   "es": "¿Por qué se volvió pegajosa la tierra?"
+  },
+  "Why did the heart beat fast?": {
+   "gl": "Por que latexou rápido o corazón?",
+   "es": "¿Por qué latió rápido el corazón?"
+  },
+  "Why did the ice melt in the drink?": {
+   "gl": "Por que se derreteu o xeo na bebida?",
+   "es": "¿Por qué se derritió el hielo en la bebida?"
+  },
+  "Why did the map grid help find the box?": {
+   "gl": "Por que axudou a cuadrícula do mapa a atopar a caixa?",
+   "es": "¿Por qué ayudó la cuadrícula del mapa a encontrar la caja?"
+  },
+  "Why did the pointed plane glide farther?": {
+   "gl": "Por que planeou máis lonxe o avión en punta?",
+   "es": "¿Por qué planeó más lejos el avión en punta?"
+  },
+  "Why did the shadow move from the chalk?": {
+   "gl": "Por que se moveu a sombra do xiz?",
+   "es": "¿Por qué se movió la sombra de la tiza?"
+  },
+  "Why did the shadow stretch long?": {
+   "gl": "Por que se estiraba longa a sombra?",
+   "es": "¿Por qué se estiraba larga la sombra?"
+  },
+  "Why did the vet pick soft cotton?": {
+   "gl": "Por que elixiu a veterinaria algodón suave?",
+   "es": "¿Por qué eligió el veterinario algodón suave?"
+  },
+  "Why did we get green paint?": {
+   "gl": "Por que saíu pintura verde?",
+   "es": "¿Por qué salió pintura verde?"
   },
   "Why do Lúa and the sheep tiptoe?": {
    "gl": "Por que van de puntillas Lúa e a ovella?",
    "es": "¿Por qué van de puntillas Lúa y la oveja?"
   },
+  "Why do jars sound different?": {
+   "gl": "Por que soan distinto os botes?",
+   "es": "¿Por qué suenan distinto los botes?"
+  },
+  "Why do stars glow in the dark?": {
+   "gl": "Por que brillan as estrelas no escuro?",
+   "es": "¿Por qué brillan las estrellas en lo oscuro?"
+  },
+  "Why do the stripes blend when spinning?": {
+   "gl": "Por que se mesturan as raias ao xirar?",
+   "es": "¿Por qué se mezclan las rayas al girar?"
+  },
+  "Why do the three sheets sound different?": {
+   "gl": "Por que soan distinto as tres follas?",
+   "es": "¿Por qué suenan distinto las tres hojas?"
+  },
+  "Why do we hear through the phone?": {
+   "gl": "Por que oímos polo teléfono?",
+   "es": "¿Por qué oímos por el teléfono?"
+  },
+  "Why do we pour slow?": {
+   "gl": "Por que vertemos amodo?",
+   "es": "¿Por qué vertemos despacio?"
+  },
+  "Why do we wear a raincoat in rain?": {
+   "gl": "Por que pomos chuvasqueiro cando chove?",
+   "es": "¿Por qué ponemos chubasquero cuando llueve?"
+  },
+  "Why does the boot sink?": {
+   "gl": "Por que se afunde a bota?",
+   "es": "¿Por qué se hunde la bota?"
+  },
+  "Why does the fish stay out of the four hoop?": {
+   "gl": "Por que queda o peixe fóra do aro do catro?",
+   "es": "¿Por qué queda el pez fuera del aro del cuatro?"
+  },
+  "Why does the long straw sound low?": {
+   "gl": "Por que soa grave a palliña longa?",
+   "es": "¿Por qué suena grave la pajita larga?"
+  },
+  "Why does the pinwheel spin?": {
+   "gl": "Por que xira o muíño de vento?",
+   "es": "¿Por qué gira el molinillo?"
+  },
+  "Why does the rainstick sound like rain?": {
+   "gl": "Por que soa a chuvia o pau de chuvia?",
+   "es": "¿Por qué suena a lluvia el palo de lluvia?"
+  },
+  "Why does the sail move?": {
+   "gl": "Por que se move a vela?",
+   "es": "¿Por qué se mueve la vela?"
+  },
+  "Why does the spoon flip your cheek?": {
+   "gl": "Por que dá a volta á meixela a culler?",
+   "es": "¿Por qué da la vuelta a la mejilla la cuchara?"
+  },
+  "Why does the wood tower stand?": {
+   "gl": "Por que aguanta a torre de madeira?",
+   "es": "¿Por qué aguanta la torre de madera?"
+  },
+  "Why does this bread press down?": {
+   "gl": "Por que baixa este pan ao premer?",
+   "es": "¿Por qué baja este pan al apretar?"
+  },
+  "Why is every seat ready now?": {
+   "gl": "Por que está cada sitio listo agora?",
+   "es": "¿Por qué está cada sitio listo ahora?"
+  },
   "Why is the bee tired?": {
    "gl": "Por que está cansa a abella?",
    "es": "¿Por qué está cansada la abeja?"
   },
+  "Why is the drum loud?": {
+   "gl": "Por que soa forte o tambor?",
+   "es": "¿Por qué suena fuerte el tambor?"
+  },
+  "Why is the toy train fast?": {
+   "gl": "Por que vai rápido o tren de xoguete?",
+   "es": "¿Por qué va rápido el tren de juguete?"
+  },
+  "Why is the wall glow colorful and new?": {
+   "gl": "Por que ten cores novas o brillo da parede?",
+   "es": "¿Por qué tiene colores nuevos el brillo de la pared?"
+  },
+  "Why is the wet towel heavy?": {
+   "gl": "Por que pesa a toalla mollada?",
+   "es": "¿Por qué pesa la toalla mojada?"
+  },
   "Why was the little mouse important?": {
    "gl": "Por que era importante o ratiño?",
    "es": "¿Por qué era importante el ratoncito?"
+  },
+  "Wide base or tall block: which stands?": {
+   "gl": "Base ancha ou bloque alto: cal aguanta?",
+   "es": "Base ancha o bloque alto: ¿cuál aguanta?"
+  },
+  "Wide wood keeps the tower tall.": {
+   "gl": "A madeira ancha mantén a torre alta.",
+   "es": "La madera ancha mantiene la torre alta."
+  },
+  "Wide wood or tall paper tower?": {
+   "gl": "Madeira ancha ou torre alta de papel?",
+   "es": "¿Madera ancha o torre alta de papel?"
   },
   "Wiggle all your eight fingers like octopus legs!": {
    "gl": "Mover todos os dedos axilmente coma tentáculos brandos.",
@@ -7777,9 +9589,21 @@
    "gl": "Mover as mans atrás simulando o rabiño contento.",
    "es": "Mover las manos atrás simulando la colita contenta."
   },
+  "Wind from the fan spins blades.": {
+   "gl": "O vento do abanico fai xirar as aspas.",
+   "es": "El viento del abanico hace girar las aspas."
+  },
+  "Windy day.": {
+   "gl": "Día de vento.",
+   "es": "Día de viento."
+  },
   "Wipe a teardrop with a soft finger": {
    "gl": "Secar a bágoa con caricia suave",
    "es": "Secar la lágrima con una caricia suave"
+  },
+  "With more books, it rolls very fast!": {
+   "gl": "Desliza a man polo brazo inclinado ben á présa mostrando máis velocidade.",
+   "es": "Desliza la mano por el brazo inclinado bien deprisa mostrando más velocidad."
   },
   "Wobbly": {
    "gl": "Bambeante",
@@ -7792,6 +9616,10 @@
   "Wrap a scarf around your neck": {
    "gl": "Arrimar a bufanda ao queixo",
    "es": "Arrimar la bufanda a la barbilla"
+  },
+  "Wrap the best bandage on the paw.": {
+   "gl": "Envolve coas mans a pata dun peluche como quen pon unha venda con coidado.",
+   "es": "Envuelve con las manos la pata de un peluche como quien pone una venda con cuidado."
   },
   "Wrinkle nose: Oink-oink!": {
    "gl": "Fungar co nariz engurrado",
@@ -9509,6 +11337,10 @@
    "gl": "Enches o caldeiro.",
    "es": "Llenas el cubo."
   },
+  "You found the secret treasure box!": {
+   "gl": "Pon o dedo nos beizos facendo «shhh» ao descubrir a caixa escondida.",
+   "es": "Pon el dedo en los labios haciendo «shhh» al descubrir la caja escondida."
+  },
   "You put the red block on top.": {
    "gl": "Pos o bloque vermello enriba.",
    "es": "Pones el bloque rojo encima."
@@ -9540,6 +11372,10 @@
   "Zip your warm coat AND walk slowly to the light!": {
    "gl": "Pecha o abrigo quentiño E camiña amodo ata a luz!",
    "es": "¡Abróchate el abrigo calentito Y camina despacio hasta la luz!"
+  },
+  "Zoom in with the lens to see it large.": {
+   "gl": "Achégate coa lupa para vela grande.",
+   "es": "Acércate con la lupa para verla grande."
   },
   "after lunch": {
    "gl": "despois de xantar",
@@ -10037,6 +11873,10 @@
    "gl": "auga da billa",
    "es": "agua del grifo"
   },
+  "taut": {
+   "gl": "tenso",
+   "es": "tenso"
+  },
   "tell a story": {
    "gl": "conta un conto",
    "es": "cuenta un cuento"
@@ -10145,49 +11985,185 @@
    "gl": "cremalleira",
    "es": "cremallera"
   },
-  "Pat-a-cake, pat-a-cake, baker's man! Bake me a cake as fast as you can.": {
-   "gl": "Bate, bate palmiñas, panadeiro! Faime unha torta axiña.",
-   "es": "¡Palmas, palmitas, panadero! Hazme una torta muy deprisa."
+  "Blow hard or blow slow: which goes fast?": {
+   "gl": "Soprar forte ou soprar amodo: cal vai rápido?",
+   "es": "¿Soplar fuerte o soplar despacio: cuál va rápido?"
   },
-  "Head, shoulders, knees and toes, knees and toes.": {
-   "gl": "Cabeza, ombreiros, xeonllos e pés.",
-   "es": "Cabeza, hombros, rodillas y pies."
+  "Fast boat or slow boat?": {
+   "gl": "Barco rápido ou barco lento?",
+   "es": "¿Barco rápido o barco lento?"
   },
-  "Round and round the garden, like a teddy bear.": {
-   "gl": "Dando voltas polo xardín, coma un osiño.",
-   "es": "Dando vueltas por el jardín, como un osito."
+  "Where does the leaf go: hoop or heap?": {
+   "gl": "Onde vai a folla: no aro ou no montón?",
+   "es": "¿Dónde va la hoja: en el aro o en el montón?"
   },
-  "Twinkle, twinkle, little star, how I wonder what you are.": {
-   "gl": "Brilla, brilla, estreliña, que serás, pregunto eu.",
-   "es": "Brilla, brilla, estrellita, qué serás, me pregunto."
+  "Why does the soft bread squash?": {
+   "gl": "Por que se aperta o pan brando?",
+   "es": "¿Por qué se aplasta el pan blando?"
   },
-  "This is the way we put on our hat, put on our hat, put on our hat.": {
-   "gl": "Así é como pomos o gorro.",
-   "es": "Así es como nos ponemos el gorro."
+  "Wash your hands with soap.": {
+   "gl": "Lava as mans con xabón.",
+   "es": "Lávate las manos con jabón."
   },
-  "Old MacDonald had a farm, E-I-E-I-O.": {
-   "gl": "O vello MacDonald tiña unha granxa.",
-   "es": "El viejo MacDonald tenía una granja."
+  "Soapy hands or clean hands?": {
+   "gl": "Mans con xabón ou mans limpas?",
+   "es": "¿Manos con jabón o manos limpias?"
   },
-  "Ring-a-ring o' roses, a pocket full of posies.": {
-   "gl": "Roda, roda de rosas, o peto cheo de flores.",
-   "es": "Corro de rosas, el bolsillo lleno de flores."
+  "Run fast or walk like a sleepy cat?": {
+   "gl": "Correr rápido ou camiñar coma un gato con sono?",
+   "es": "¿Correr rápido o caminar como un gato con sueño?"
   },
-  "Rain, rain, go away, come again another day.": {
-   "gl": "Chuvia, chuvia, vaite xa, volve outro día.",
-   "es": "Lluvia, lluvia, vete ya, vuelve otro día."
+  "Run fast when the beat is fast.": {
+   "gl": "Corre rápido cando o ritmo é rápido.",
+   "es": "Corre rápido cuando el ritmo es rápido."
   },
-  "This is the way we wash our hands, wash our hands, wash our hands.": {
-   "gl": "Así é como lavamos as mans.",
-   "es": "Así es como nos lavamos las manos."
+  "Fast pat or slow pat?": {
+   "gl": "Toque rápido ou toque lento?",
+   "es": "¿Toque rápido o toque lento?"
   },
-  "Row, row, row your boat, gently down the stream.": {
-   "gl": "Rema, rema, rema o teu barco, suave río abaixo.",
-   "es": "Rema, rema, rema tu barco, suave río abajo."
+  "When do we stop and sleep?": {
+   "gl": "Cando paramos e durmimos?",
+   "es": "¿Cuándo paramos y dormimos?"
   },
-  "taut": {
-   "gl": "tenso",
-   "es": "tenso"
+  "Shine the light in the dark.": {
+   "gl": "Acende a luz na escuridade.",
+   "es": "Enciende la luz en la oscuridad."
+  },
+  "Why do we see stars on the wall?": {
+   "gl": "Por que vemos estrelas na parede?",
+   "es": "¿Por qué vemos estrellas en la pared?"
+  },
+  "Same tile or different tile?": {
+   "gl": "Peza igual ou peza distinta?",
+   "es": "¿Pieza igual o pieza distinta?"
+  },
+  "Roll the train down the ramp.": {
+   "gl": "Fai rodar o tren pola rampla.",
+   "es": "Haz rodar el tren por la rampa."
+  },
+  "Make the shadow long.": {
+   "gl": "Fai a sombra longa.",
+   "es": "Haz la sombra larga."
+  },
+  "Which ice cube shrinks more?": {
+   "gl": "Que cubo de xeo encolle máis?",
+   "es": "¿Qué cubito de hielo encoge más?"
+  },
+  "Full glass or half glass?": {
+   "gl": "Vaso cheo ou medio vaso?",
+   "es": "¿Vaso lleno o medio vaso?"
+  },
+  "Full jar or empty jar: which sounds high?": {
+   "gl": "Bote cheo ou bote baleiro: cal soa agudo?",
+   "es": "¿Bote lleno o bote vacío: cuál suena agudo?"
+  },
+  "Tap each jar with a spoon.": {
+   "gl": "Peta en cada bote cunha culler.",
+   "es": "Golpea cada bote con una cuchara."
+  },
+  "Inside or back of the spoon: is your face upside down?": {
+   "gl": "Por dentro ou por detrás da culler: está a túa cara ao revés?",
+   "es": "¿Por dentro o por detrás de la cuchara: está tu cara del revés?"
+  },
+  "Why does the spoon flip your face?": {
+   "gl": "Por que a culler pon a túa cara ao revés?",
+   "es": "¿Por qué la cuchara pone tu cara del revés?"
+  },
+  "Listen to your heart beat in your chest.": {
+   "gl": "Escoita como bate o teu corazón no peito.",
+   "es": "Escucha cómo late tu corazón en el pecho."
+  },
+  "When was your heartbeat fast?": {
+   "gl": "Cando foi rápido o teu latexo?",
+   "es": "¿Cuándo fue rápido tu latido?"
+  },
+  "Why did your heart beat fast?": {
+   "gl": "Por que latexou rápido o teu corazón?",
+   "es": "¿Por qué latió rápido tu corazón?"
+  },
+  "How many legs: dog or fish?": {
+   "gl": "Cantas patas: o can ou o peixe?",
+   "es": "¿Cuántas patas: el perro o el pez?"
+  },
+  "Count the legs and sort the animals.": {
+   "gl": "Conta as patas e clasifica os animais.",
+   "es": "Cuenta las patas y clasifica los animales."
+  },
+  "Why is the fish not in the four-leg hoop?": {
+   "gl": "Por que o peixe non está no aro das catro patas?",
+   "es": "¿Por qué el pez no está en el aro de las cuatro patas?"
+  },
+  "Small without the lens or big with the lens?": {
+   "gl": "Pequeno sen a lupa ou grande coa lupa?",
+   "es": "¿Pequeño sin la lupa o grande con la lupa?"
+  },
+  "Wave the fan so the blades spin.": {
+   "gl": "Abana o abano para que xiren as aspas.",
+   "es": "Mueve el abanico para que giren las aspas."
+  },
+  "No wind or a windy day?": {
+   "gl": "Sen vento ou un día de vento?",
+   "es": "¿Sin viento o un día de viento?"
+  },
+  "Shake the rainstick slowly, then fast.": {
+   "gl": "Move o pau de choiva amodo e logo rápido.",
+   "es": "Mueve el palo de lluvia despacio y luego rápido."
+  },
+  "Soft rain or a stormy boom?": {
+   "gl": "Chuvia suave ou un estrondo de tormenta?",
+   "es": "¿Lluvia suave o un estruendo de tormenta?"
+  },
+  "What color do two filters make together?": {
+   "gl": "Que cor fan dous filtros xuntos?",
+   "es": "¿Qué color hacen dos filtros juntos?"
+  },
+  "Put two filters in front of the light.": {
+   "gl": "Pon dous filtros diante da luz.",
+   "es": "Pon dos filtros delante de la luz."
+  },
+  "Compare one filter and two filters.": {
+   "gl": "Compara un filtro e dous filtros.",
+   "es": "Compara un filtro y dos filtros."
+  },
+  "Why is the light on the wall a new color?": {
+   "gl": "Por que a luz da parede ten unha cor nova?",
+   "es": "¿Por qué la luz de la pared tiene un color nuevo?"
+  },
+  "Fold the butterfly wing and press it flat.": {
+   "gl": "Dobra a á da bolboreta e aplánaa.",
+   "es": "Dobla el ala de la mariposa y aplánala."
+  },
+  "Spin the top on its pin.": {
+   "gl": "Fai xirar a buxaina sobre o seu eixe.",
+   "es": "Haz girar la peonza sobre su eje."
+  },
+  "Snip each sheet and listen closely.": {
+   "gl": "Corta cada folla e escoita con atención.",
+   "es": "Corta cada hoja y escucha con atención."
+  },
+  "Throw the plane along the lane.": {
+   "gl": "Lanza o avión polo carril.",
+   "es": "Lanza el avión por el carril."
+  },
+  "Compare the pointed nose and the flat nose.": {
+   "gl": "Compara o morro en punta e o morro plano.",
+   "es": "Compara el morro en punta y el morro plano."
+  },
+  "Compare the short trail and the long trail.": {
+   "gl": "Compara o camiño curto e o camiño longo.",
+   "es": "Compara el camino corto y el camino largo."
+  },
+  "Compare the heavy suitcase and the light bag.": {
+   "gl": "Compara a maleta pesada e a bolsa lixeira.",
+   "es": "Compara la maleta pesada y la bolsa ligera."
+  },
+  "Press the switch for one blink.": {
+   "gl": "Preme o interruptor para un pestanexo.",
+   "es": "Pulsa el interruptor para un parpadeo."
+  },
+  "Compare the short straw and the long straw.": {
+   "gl": "Compara a palla curta e a palla longa.",
+   "es": "Compara la pajita corta y la pajita larga."
   }
  }
 }

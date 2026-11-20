@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../brand/lamina_vector.dart';
 import '../theme/app_theme.dart';
 
 /// Una fila que lleva a una pantalla: icono, nombre, qué hay dentro y flecha.
@@ -16,6 +17,7 @@ class FilaPortal extends StatelessWidget {
     required this.nome,
     required this.di,
     required this.onTap,
+    this.laminaClave,
   });
 
   final String clave;
@@ -23,6 +25,7 @@ class FilaPortal extends StatelessWidget {
   final String nome;
   final String di;
   final VoidCallback onTap;
+  final String? laminaClave;
 
   @override
   Widget build(BuildContext context) {
@@ -40,15 +43,21 @@ class FilaPortal extends StatelessWidget {
           padding: const EdgeInsets.all(14),
           child: Row(
             children: [
-              Container(
-                width: 48,
-                height: 48,
-                decoration: BoxDecoration(
-                  color: context.acentoTint,
+              if (laminaClave case final lc?)
+                ClipRRect(
                   borderRadius: BorderRadius.circular(14),
+                  child: LaminaEscena(clave: lc, ancho: 48),
+                )
+              else
+                Container(
+                  width: 48,
+                  height: 48,
+                  decoration: BoxDecoration(
+                    color: context.acentoTint,
+                    borderRadius: BorderRadius.circular(14),
+                  ),
+                  child: Icon(icona, color: context.acento, size: 26),
                 ),
-                child: Icon(icona, color: context.acento, size: 26),
-              ),
               const SizedBox(width: 14),
               Expanded(
                 child: Column(

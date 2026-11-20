@@ -36,7 +36,7 @@
         },
         "fonema": "/oʊ/ → /uː/",
         "nota": {
-          "gl": "En «¿Flota o se hunde?» comparades o barquiño que flota («boat») cunha bota que se afunde («boot»): «boat» deslízase cara a «oʊ», «boot» pecha os beizos en «u» longo.",
+          "gl": "En «Flota ou afúndese?» comparades o barquiño que flota («boat») cunha bota que se afunde («boot»): «boat» deslízase cara a «oʊ», «boot» pecha os beizos en «u» longo.",
           "es": "En «¿Flota o se hunde?» comparáis el barquito que flota («boat») con una bota que se hunde («boot»): «boat» se desliza hacia «oʊ», «boot» cierra los labios en «u» larga."
         },
         "mision_acerto": {
@@ -132,7 +132,7 @@
           "The heavy stone sinks in water."
         ],
         "nota": {
-          "gl": "Mentres metedes pedras e barcos na auga en «¿Flota o se hunde?», o adulto estende «stone» ata explicar que afunde.",
+          "gl": "Mentres metedes pedras e barcos na auga en «Flota ou afúndese?», o adulto estende «stone» ata explicar que afunde.",
           "es": "Mientras metéis piedras y barcos en el agua en «¿Flota o se hunde?», el adulto extiende «stone» hasta explicar que se hunde."
         },
         "significado": [
@@ -149,6 +149,74 @@
             "es": "La piedra pesada se hunde en el agua."
           }
         ]
+      },
+      "pensamiento": {
+        "edad_modo": "elige_dos",
+        "predice": {
+          "pregunta_en": "Boat or boot: which one sinks?",
+          "significado": {
+            "gl": "Barco ou bota: cal se afunde?",
+            "es": "Barco o bota: ¿cuál se hunde?"
+          },
+          "guia": {
+            "gl": "Antes de mollalos, ensina o barco e a bota para que sinale cal cre que vai ao fondo.",
+            "es": "Antes de mojarlos, enseña el barco y la bota para que señale cuál cree que va al fondo."
+          },
+          "observar": {
+            "gl": "Se sinala un dos dous obxectos antes de metelos na auga.",
+            "es": "Si señala uno de los dos objetos antes de meterlos en el agua."
+          }
+        },
+        "proba": {
+          "pregunta_en": "Put boat and boot in water.",
+          "significado": {
+            "gl": "Pon o barco e a bota na auga.",
+            "es": "Pon el barco y la bota en el agua."
+          },
+          "guia": {
+            "gl": "Metede xuntos o barco, a bota e a pedra na bandexa con auga e agardade en silencio.",
+            "es": "Meted juntos el barco, la bota y la piedra en la bandeja con agua y esperad en silencio."
+          },
+          "observar": {
+            "gl": "Se observa con atención como un queda arriba e outro baixa.",
+            "es": "Si observa con atención cómo uno queda arriba y otro baja."
+          }
+        },
+        "compara": {
+          "pregunta_en": "The boat floats. The boot sinks.",
+          "significado": {
+            "gl": "O barco flota. A bota afúndese.",
+            "es": "El barco flota. La bota se hunde."
+          },
+          "guia": {
+            "gl": "Pídelle que sinale cal quedou flotando e cal baixou ao fondo coa pedra.",
+            "es": "Pídele que señale cuál se quedó flotando y cuál bajó al fondo con la piedra."
+          },
+          "observar": {
+            "gl": "Se sinala o barco arriba ou a bota no fondo cando o nomeas.",
+            "es": "Si señala el barco arriba o la bota en el fondo cuando lo nombras."
+          }
+        },
+        "explica": {
+          "pregunta_en": "Why does the boot sink?",
+          "significado": {
+            "gl": "Por que se afunde a bota?",
+            "es": "¿Por qué se hunde la bota?"
+          },
+          "guia": {
+            "gl": "Poñede a bota e a pedra na man para notar o peso e dálle a frase modelo curta.",
+            "es": "Poned la bota y la piedra en la mano para notar el peso y dale la frase modelo corta."
+          },
+          "observar": {
+            "gl": "Se sostén ou sinala a bota ao escoitar que é pesada.",
+            "es": "Si sostiene o señala la bota al escuchar que es pesada."
+          },
+          "modelo_en": "The boot is heavy.",
+          "modelo_significado": {
+            "gl": "A bota é pesada.",
+            "es": "La bota es pesada."
+          }
+        }
       }
     },
     {
@@ -282,7 +350,7 @@
           "We blow the light paper sail."
         ],
         "nota": {
-          "gl": "Mentres sopran suave e forte en «El viento empuja el barco», o adulto pasa de «sail» a toda a escena de sopro e vento.",
+          "gl": "Mentres sopran suave e forte en «O vento empurra o barco», o adulto pasa de «sail» a toda a escena de sopro e vento.",
           "es": "Mientras soplan suave y fuerte en «El viento empuja el barco», el adulto pasa de «sail» a toda la escena de soplo y viento."
         },
         "significado": [
@@ -299,6 +367,74 @@
             "es": "Soplamos la vela de papel ligera."
           }
         ]
+      },
+      "pensamiento": {
+        "edad_modo": "elige_dos",
+        "predice": {
+          "pregunta_en": "Blow hard or blow slow: which goes fast?",
+          "significado": {
+            "gl": "Soprar forte ou soprar amodo: cal vai rápido?",
+            "es": "¿Soplar fuerte o soplar despacio: cuál va rápido?"
+          },
+          "guia": {
+            "gl": "Con dous barquiños de papel na auga, pregunta sinalando o abanico se soprar rápido ou amodo o move máis.",
+            "es": "Con dos barquitos de papel en el agua, pregunta señalando el abanico si soplar fuerte o despacio lo mueve más."
+          },
+          "observar": {
+            "gl": "Se escolle entre soprar forte ou amodo cun xesto ou co dedo.",
+            "es": "Si elige entre soplar fuerte o despacio con un gesto o con el dedo."
+          }
+        },
+        "proba": {
+          "pregunta_en": "Blow the paper sail now.",
+          "significado": {
+            "gl": "Sopra agora a vela de papel.",
+            "es": "Sopla ahora la vela de papel."
+          },
+          "guia": {
+            "gl": "Abanicade ou soprade xuntos a vela de papel sobre o barreño de auga.",
+            "es": "Abanicad o soplad juntos la vela de papel sobre el barreño de agua."
+          },
+          "observar": {
+            "gl": "Se dirixe o aire cara á vela para facer avanzar o barquiño.",
+            "es": "Si dirige el aire hacia la vela para hacer avanzar el barquito."
+          }
+        },
+        "compara": {
+          "pregunta_en": "Fast boat or slow boat?",
+          "significado": {
+            "gl": "Barco rápido ou barco lento?",
+            "es": "¿Barco rápido o barco lento?"
+          },
+          "guia": {
+            "gl": "Probade un sopro longo e outro moi amodo e pídelle que sinale cal levou o barco máis lonxe.",
+            "es": "Probad un soplo largo y otro muy despacio y pídele que señale cuál llevó el barco más lejos."
+          },
+          "observar": {
+            "gl": "Se compara o percorrido do barquiño segundo a forza do sopro.",
+            "es": "Si compara el recorrido del barquito según la fuerza del soplo."
+          }
+        },
+        "explica": {
+          "pregunta_en": "Why does the sail move?",
+          "significado": {
+            "gl": "Por que se move a vela?",
+            "es": "¿Por qué se mueve la vela?"
+          },
+          "guia": {
+            "gl": "Deixa que note o aire na man co abanico e pon palabras ao papel lixeiro.",
+            "es": "Deja que note el aire en la mano con el abanico y pon palabras al papel ligero."
+          },
+          "observar": {
+            "gl": "Se imita o sopro mirando como esvara a vela lixeira.",
+            "es": "Si imita el soplo mirando cómo se desliza la vela ligera."
+          },
+          "modelo_en": "Light paper catches the blow.",
+          "modelo_significado": {
+            "gl": "O papel lixeiro colle o sopro.",
+            "es": "El papel ligero coge el soplo."
+          }
+        }
       }
     },
     {
@@ -335,7 +471,7 @@
         },
         "fonema": "/uː/ → /iː/",
         "nota": {
-          "gl": "En «Grande aquí, pequeño allí» xuntades pezas nun aro («hoop») ou nun montón («heap»): «hoop» pecha os beizos nun «u» redondo (/uː/) e «heap» abre nun sorriso longo «i» (/iː/).",
+          "gl": "En «Grande aquí, pequeno alí» xuntades pezas nun aro («hoop») ou nun montón («heap»): «hoop» pecha os beizos nun «u» redondo (/uː/) e «heap» abre nun sorriso longo «i» (/iː/).",
           "es": "En «Grande aquí, pequeño allí» juntáis piezas en un aro («hoop») o en un montón («heap»): «hoop» cierra los labios en una «u» redonda (/uː/) y «heap» abre en una sonrisa larga «i» (/iː/)."
         },
         "mision_acerto": {
@@ -431,7 +567,7 @@
           "Sort the small leaf here."
         ],
         "nota": {
-          "gl": "Ao comparar follas entre o aro grande e o pequeno en «Grande aquí, pequeño allí», o adulto modela tamaño e clasificación.",
+          "gl": "Ao comparar follas entre o aro grande e o pequeno en «Grande aquí, pequeno alí», o adulto modela tamaño e clasificación.",
           "es": "Al comparar hojas entre el aro grande y el pequeño en «Grande aquí, pequeño allí», el adulto modela tamaño y clasificación."
         },
         "significado": [
@@ -448,6 +584,74 @@
             "es": "Pon la hoja pequeña aquí."
           }
         ]
+      },
+      "pensamiento": {
+        "edad_modo": "elige_dos",
+        "predice": {
+          "pregunta_en": "Where does the leaf go: hoop or heap?",
+          "significado": {
+            "gl": "Onde vai a folla: no aro ou no montón?",
+            "es": "¿Dónde va la hoja: en el aro o en el montón?"
+          },
+          "guia": {
+            "gl": "Ensina o aro pequeno e o montón grande de follas para que sinale onde pomos a folla pequena.",
+            "es": "Enseña el aro pequeño y el montón grande de hojas para que señale dónde ponemos la hoja pequeña."
+          },
+          "observar": {
+            "gl": "Se sinala o aro ou o montón antes de clasificar.",
+            "es": "Si señala el aro o el montón antes de clasificar."
+          }
+        },
+        "proba": {
+          "pregunta_en": "Sort the small leaf in the hoop.",
+          "significado": {
+            "gl": "Pon a folla pequena no aro.",
+            "es": "Pon la hoja pequeña en el aro."
+          },
+          "guia": {
+            "gl": "Collede follas co seu talo e metede as pequenas no aro pequeno.",
+            "es": "Coged hojas con su tallo y meted las pequeñas en el aro pequeño."
+          },
+          "observar": {
+            "gl": "Se mete polo menos dúas follas pequenas dentro do aro correcto.",
+            "es": "Si mete al menos dos hojas pequeñas dentro del aro correcto."
+          }
+        },
+        "compara": {
+          "pregunta_en": "Small leaf or big leaf?",
+          "significado": {
+            "gl": "Folla pequena ou folla grande?",
+            "es": "¿Hoja pequeña o hoja grande?"
+          },
+          "guia": {
+            "gl": "Xuntade unha folla pequena e outra grande lado a lado para que sinale a pequena.",
+            "es": "Juntad una hoja pequeña y otra grande lado a lado para que señale la pequeña."
+          },
+          "observar": {
+            "gl": "Se escolle a folla pequena fronte á grande ao sinalar.",
+            "es": "Si elige la hoja pequeña frente a la grande al señalar."
+          }
+        },
+        "explica": {
+          "pregunta_en": "Where do small leaves go?",
+          "significado": {
+            "gl": "Onde van as follas pequenas?",
+            "es": "¿Dónde van las hojas pequeñas?"
+          },
+          "guia": {
+            "gl": "Sinala o aro pequeno cheo de follas e dálle a frase curta para fechar.",
+            "es": "Señala el aro pequeño lleno de hojas y dale la frase corta para cerrar."
+          },
+          "observar": {
+            "gl": "Se mira o grupo clasificado no aro pequeno.",
+            "es": "Si mira el grupo clasificado en el aro pequeño."
+          },
+          "modelo_en": "Small leaves stay in one hoop.",
+          "modelo_significado": {
+            "gl": "As follas pequenas quedan nun aro.",
+            "es": "Las hojas pequeñas quedan en un aro."
+          }
+        }
       }
     },
     {
@@ -581,7 +785,7 @@
           "Drop it on the loud drum."
         ],
         "nota": {
-          "gl": "Ao escoitar cos ollos pechados en «Pum grande, pum pequeño», o adulto modela o instrumento e o volume real do golpe.",
+          "gl": "Ao escoitar cos ollos pechados en «Pum grande, pum pequeno», o adulto modela o instrumento e o volume real do golpe.",
           "es": "Al escuchar con los ojos cerrados en «Pum grande, pum pequeño», el adulto modela el instrumento y el volumen real del golpe."
         },
         "significado": [
@@ -598,6 +802,74 @@
             "es": "Déjalo caer en el tambor fuerte."
           }
         ]
+      },
+      "pensamiento": {
+        "edad_modo": "elige_dos",
+        "predice": {
+          "pregunta_en": "Pan or drum: which is loud?",
+          "significado": {
+            "gl": "Tixola ou tambor: cal soa forte?",
+            "es": "Sartén o tambor: ¿cuál suena fuerte?"
+          },
+          "guia": {
+            "gl": "Ensina a tixola e o tambor antes de petar para que sinale cal fará máis ruído.",
+            "es": "Enseña la sartén y el tambor antes de golpear para que señale cuál hará más ruido."
+          },
+          "observar": {
+            "gl": "Se escolle entre os dous instrumentos sinalando co dedo.",
+            "es": "Si elige entre los dos instrumentos señalando con el dedo."
+          }
+        },
+        "proba": {
+          "pregunta_en": "Drop the stone on the pan.",
+          "significado": {
+            "gl": "Deixa caer a pedra na tixola.",
+            "es": "Deja caer la piedra en la sartén."
+          },
+          "guia": {
+            "gl": "Deixade caer unha pedra grande e unha folla seca na tixola e escoitade.",
+            "es": "Dejad caer una piedra grande y una hoja seca en la sartén y escuchad."
+          },
+          "observar": {
+            "gl": "Se agarda ao son do impacto tras soltar a pedra.",
+            "es": "Si espera el sonido del impacto tras soltar la piedra."
+          }
+        },
+        "compara": {
+          "pregunta_en": "Loud pat or soft pat?",
+          "significado": {
+            "gl": "Palmada forte ou suave?",
+            "es": "¿Palmada fuerte o suave?"
+          },
+          "guia": {
+            "gl": "Tocade co pau e logo coa man suave na tixola; pídelle que sinale cal foi forte.",
+            "es": "Tocad con el palo y luego con la mano suave en la sartén; pídele que señale cuál fue fuerte."
+          },
+          "observar": {
+            "gl": "Se diferencia o golpe forte do suave cun xesto ou sinalando.",
+            "es": "Si diferencia el golpe fuerte del suave con un gesto o señalando."
+          }
+        },
+        "explica": {
+          "pregunta_en": "Why is the drum loud?",
+          "significado": {
+            "gl": "Por que soa forte o tambor?",
+            "es": "¿Por qué suena fuerte el tambor?"
+          },
+          "guia": {
+            "gl": "Mostra a pedra pesada fronte á folla e acompaña co modelo curto.",
+            "es": "Muestra la piedra pesada frente a la hoja y acompaña con el modelo corto."
+          },
+          "observar": {
+            "gl": "Se sinala a pedra ao escoitar a explicación.",
+            "es": "Si señala la piedra al escuchar la explicación."
+          },
+          "modelo_en": "Big stone makes a loud drum.",
+          "modelo_significado": {
+            "gl": "A pedra grande fai un tambor forte.",
+            "es": "La piedra grande hace un tambor fuerte."
+          }
+        }
       }
     },
     {
@@ -634,7 +906,7 @@
         },
         "fonema": "/ɪ/ → /aɪ/",
         "nota": {
-          "gl": "En «Pan duro, pan blando» probades un anaco de pan brando («bit») cun mordisco («bite»): «bit» ten un «i» moi curto (/ɪ/) e «bite» abre grande a boca antes de subir («a-i», /aɪ/).",
+          "gl": "En «Pan duro, pan brando» probades un anaco de pan brando («bit») cun mordisco («bite»): «bit» ten un «i» moi curto (/ɪ/) e «bite» abre grande a boca antes de subir («a-i», /aɪ/).",
           "es": "En «Pan duro, pan blando» probáis un trocito de pan blando («bit») de un mordisco («bite»): «bit» tiene una «i» muy corta (/ɪ/) y «bite» abre grande la boca antes de subir («a-i», /aɪ/)."
         },
         "mision_acerto": {
@@ -730,7 +1002,7 @@
           "Press the soft bread now."
         ],
         "nota": {
-          "gl": "Mentres apretan o pan novo e o de onte en «Pan duro, pan blando», o adulto devolve a textura en tres pasos.",
+          "gl": "Mentres apretan o pan novo e o de onte en «Pan duro, pan brando», o adulto devolve a textura en tres pasos.",
           "es": "Mientras aprietan el pan nuevo y el de ayer en «Pan duro, pan blando», el adulto devuelve la textura en tres pasos."
         },
         "significado": [
@@ -747,6 +1019,74 @@
             "es": "Aprieta ahora el pan blando."
           }
         ]
+      },
+      "pensamiento": {
+        "edad_modo": "elige_dos",
+        "predice": {
+          "pregunta_en": "Soft bread or hard crust?",
+          "significado": {
+            "gl": "Pan brando ou codia dura?",
+            "es": "¿Pan blando o corteza dura?"
+          },
+          "guia": {
+            "gl": "Mostra a miga branda e o pan duro sen tocalos aínda; pídelle que sinale cal se afundirá ao premer.",
+            "es": "Muestra la miga blanda y el pan duro sin tocarlos aún; pídele que señale cuál se hundirá al apretar."
+          },
+          "observar": {
+            "gl": "Se sinala un dos dous anacos antes de probalos.",
+            "es": "Si señala uno de los dos trozos antes de probarlos."
+          }
+        },
+        "proba": {
+          "pregunta_en": "Press the bread and the crust.",
+          "significado": {
+            "gl": "Preme o pan e a codia.",
+            "es": "Aprieta el pan y la corteza."
+          },
+          "guia": {
+            "gl": "Premede co dedo o pan do día e o pan duro de onte para notar a diferenza.",
+            "es": "Apretad con el dedo el pan del día y el pan duro de ayer para notar la diferencia."
+          },
+          "observar": {
+            "gl": "Se preme os dous anacos comparando coas mans.",
+            "es": "Si aprieta los dos trozos comparando con las manos."
+          }
+        },
+        "compara": {
+          "pregunta_en": "Which one is soft: bit or crust?",
+          "significado": {
+            "gl": "Cal é brando: o anaco ou a codia?",
+            "es": "¿Cuál es blando: el trozo o la corteza?"
+          },
+          "guia": {
+            "gl": "Pon os dous anacos sobre o pano e pídelle que sinale o brando.",
+            "es": "Pon los dos trozos sobre el paño y pídele que señale el blando."
+          },
+          "observar": {
+            "gl": "Se sinala o pan fresco cando dis «soft».",
+            "es": "Si señala el pan fresco cuando dices «soft»."
+          }
+        },
+        "explica": {
+          "pregunta_en": "Why does the soft bread squash?",
+          "significado": {
+            "gl": "Por que se aperta o pan brando?",
+            "es": "¿Por qué se aplasta el pan blando?"
+          },
+          "guia": {
+            "gl": "Volve premer amodo a miga fresca mentres dis o modelo curto.",
+            "es": "Vuelve a apretar despacio la miga fresca mientras dices el modelo corto."
+          },
+          "observar": {
+            "gl": "Se aperta a miga mirando como recupera a forma.",
+            "es": "Si aprieta la miga mirando cómo recupera la forma."
+          },
+          "modelo_en": "Fresh bread is soft.",
+          "modelo_significado": {
+            "gl": "O pan fresco é brando.",
+            "es": "El pan fresco es blando."
+          }
+        }
       }
     },
     {
@@ -880,7 +1220,7 @@
           "Look at the tiny seed in the apple."
         ],
         "nota": {
-          "gl": "Cando miran dentro da mazá coa lupa en «La estrella de la manzana», o adulto vai de «apple» á pebida diminuta.",
+          "gl": "Cando miran dentro da mazá coa lupa en «A estrela da mazá», o adulto vai de «apple» á pebida diminuta.",
           "es": "Cuando miran dentro de la manzana con la lupa en «La estrella de la manzana», el adulto va de «apple» a la semilla diminuta."
         },
         "significado": [
@@ -897,6 +1237,74 @@
             "es": "Mira la semilla pequeñita en la manzana."
           }
         ]
+      },
+      "pensamiento": {
+        "edad_modo": "elige_dos",
+        "predice": {
+          "pregunta_en": "Apple or seed: which is tiny?",
+          "significado": {
+            "gl": "Mazá ou semente: cal é diminuta?",
+            "es": "Manzana o semilla: ¿cuál es diminuta?"
+          },
+          "guia": {
+            "gl": "Antes de abrir a mazá, ensina unha semente á parte e a mazá enteira para escoller cal é diminuta.",
+            "es": "Antes de abrir la manzana, enseña una semilla aparte y la manzana entera para elegir cuál es diminuta."
+          },
+          "observar": {
+            "gl": "Se sinala a semente ou fai o xesto de pequeno cos dedos.",
+            "es": "Si señala la semilla o hace el gesto de pequeño con los dedos."
+          }
+        },
+        "proba": {
+          "pregunta_en": "See the tiny seed inside.",
+          "significado": {
+            "gl": "Mira a semente diminuta dentro.",
+            "es": "Mira la semilla diminuta dentro."
+          },
+          "guia": {
+            "gl": "Coa mazá cortada pola persoa adulta, achegade a lupa para buscar a estrela e as sementes.",
+            "es": "Con la manzana cortada por la persona adulta, acercad la lupa para buscar la estrella y las semillas."
+          },
+          "observar": {
+            "gl": "Se mira pola lupa cara ao centro da mazá.",
+            "es": "Si mira por la lupa hacia el centro de la manzana."
+          }
+        },
+        "compara": {
+          "pregunta_en": "Big apple or tiny seed?",
+          "significado": {
+            "gl": "Mazá grande ou semente diminuta?",
+            "es": "¿Manzana grande o semilla diminuta?"
+          },
+          "guia": {
+            "gl": "Pon unha semente ao lado da metade da mazá para que sinale cal é diminuta.",
+            "es": "Pon una semilla al lado de la mitad de la manzana para que señale cuál es diminuta."
+          },
+          "observar": {
+            "gl": "Se sinala a semente cando escoita «tiny seed».",
+            "es": "Si señala la semilla cuando escucha «tiny seed»."
+          }
+        },
+        "explica": {
+          "pregunta_en": "Where was the tiny seed?",
+          "significado": {
+            "gl": "Onde estaba a semente diminuta?",
+            "es": "¿Dónde estaba la semilla diminuta?"
+          },
+          "guia": {
+            "gl": "Sinala a estrela do corazón da mazá e di o modelo curto.",
+            "es": "Señala la estrella del corazón de la manzana y di el modelo corto."
+          },
+          "observar": {
+            "gl": "Se toca co dedo o oco da estrela onde estaba a semente.",
+            "es": "Si toca con el dedo el hueco de la estrella donde estaba la semilla."
+          },
+          "modelo_en": "The tiny seed hides inside.",
+          "modelo_significado": {
+            "gl": "A semente diminuta agóchase dentro.",
+            "es": "La semilla diminuta se esconde dentro."
+          }
+        }
       }
     },
     {
@@ -933,7 +1341,7 @@
         },
         "fonema": "/k/ → /p/",
         "nota": {
-          "gl": "En «Primero mojo, después jabón» o primeiro paso é mollar («soak») e despois vén o xabón («soap»): «soak» pecha atrás na gorxa (/k/) e «soap» pecha diante nos beizos (/p/).",
+          "gl": "En «Primeiro mollo, despois xabón» o primeiro paso é mollar («soak») e despois vén o xabón («soap»): «soak» pecha atrás na gorxa (/k/) e «soap» pecha diante nos beizos (/p/).",
           "es": "En «Primero mojo, después jabón» el primer paso es mojar («soak») y después va el jabón («soap»): «soak» cierra atrás en la garganta (/k/) y «soap» cierra delante en los labios (/p/)."
         },
         "mision_acerto": {
@@ -1029,7 +1437,7 @@
           "Wash the clean hand with soap."
         ],
         "nota": {
-          "gl": "Mentres seguen as catro tarxetas de «Primero mojo, después jabón», o adulto modela a secuencia ata as mans limpas.",
+          "gl": "Mentres seguen as catro tarxetas de «Primeiro mollo, despois xabón», o adulto modela a secuencia ata as mans limpas.",
           "es": "Mientras siguen las cuatro tarjetas de «Primero mojo, después jabón», el adulto modela la secuencia hasta las manos limpias."
         },
         "significado": [
@@ -1046,6 +1454,74 @@
             "es": "Lava la mano limpia con jabón."
           }
         ]
+      },
+      "pensamiento": {
+        "edad_modo": "elige_dos",
+        "predice": {
+          "pregunta_en": "Soak or soap: what comes first?",
+          "significado": {
+            "gl": "Mollar ou xabón: que vai primeiro?",
+            "es": "Mojar o jabón: ¿qué va primero?"
+          },
+          "guia": {
+            "gl": "Ensina as tarxetas de mollar e xabón diante da palancana para que sinale cal facemos primeiro.",
+            "es": "Enseña las tarjetas de mojar y jabón delante de la palangana para que señale cuál hacemos primero."
+          },
+          "observar": {
+            "gl": "Se sinala unha tarxeta antes de meter as mans na auga.",
+            "es": "Si señala una tarjeta antes de meter las manos en el agua."
+          }
+        },
+        "proba": {
+          "pregunta_en": "Wash your hands with soap.",
+          "significado": {
+            "gl": "Lava as mans con xabón.",
+            "es": "Lávate las manos con jabón."
+          },
+          "guia": {
+            "gl": "Mollade as mans, poñede xabón e frotade ata ver saír burbullas.",
+            "es": "Mojad las manos, poned jabón y frotad hasta ver salir burbujas."
+          },
+          "observar": {
+            "gl": "Se frota as mans buscando as burbullas de escuma.",
+            "es": "Si frota las manos buscando las burbujas de espuma."
+          }
+        },
+        "compara": {
+          "pregunta_en": "Soapy hands or clean hands?",
+          "significado": {
+            "gl": "Mans con xabón ou mans limpas?",
+            "es": "¿Manos con jabón o manos limpias?"
+          },
+          "guia": {
+            "gl": "Tras aclarar, mostra unha man con escuma e outra aclarada para que sinale a limpa.",
+            "es": "Tras aclarar, muestra una mano con espuma y otra aclarada para que señale la limpia."
+          },
+          "observar": {
+            "gl": "Se distingue a man con burbullas da man limpa.",
+            "es": "Si distingue la mano con burbujas de la mano limpia."
+          }
+        },
+        "explica": {
+          "pregunta_en": "How do hands get clean?",
+          "significado": {
+            "gl": "Como quedan limpas as mans?",
+            "es": "¿Cómo quedan limpias las manos?"
+          },
+          "guia": {
+            "gl": "Secade coa toalla e repite o modelo curto sinalando as tarxetas en orde.",
+            "es": "Secad con la toalla y repite el modelo corto señalando las tarjetas en orden."
+          },
+          "observar": {
+            "gl": "Se mira as mans secas ao escoitar o modelo.",
+            "es": "Si mira las manos secas al escuchar el modelo."
+          },
+          "modelo_en": "Soap and water wash clean.",
+          "modelo_significado": {
+            "gl": "O xabón e a auga lavan limpo.",
+            "es": "El jabón y el agua lavan limpio."
+          }
+        }
       }
     },
     {
@@ -1082,7 +1558,7 @@
         },
         "fonema": "/d/ → /t/",
         "nota": {
-          "gl": "En «La toalla mojada pesa» mollades unha toalla no barreño («dip») e deixades a outra seca: «dip» vibra na gorxa (/d/) e «tip» soa seco sen vibrar (/t/).",
+          "gl": "En «A toalla mollada pesa» mollades unha toalla no barreño («dip») e deixades a outra seca: «dip» vibra na gorxa (/d/) e «tip» soa seco sen vibrar (/t/).",
           "es": "En «La toalla mojada pesa» mojáis una toalla en el barreño («dip») y dejáis la otra seca: «dip» vibra en la garganta (/d/) y «tip» suena seco sin vibrar (/t/)."
         },
         "mision_acerto": {
@@ -1178,7 +1654,7 @@
           "The wet towel drips in the sink."
         ],
         "nota": {
-          "gl": "Ao retorcer e levantar a toalla en «La toalla mojada pesa», o adulto amplía de «towel» a calidade e movemento.",
+          "gl": "Ao retorcer e levantar a toalla en «A toalla mollada pesa», o adulto amplía de «towel» a calidade e movemento.",
           "es": "Al retorcer y levantar la toalla en «La toalla mojada pesa», el adulto amplía de «towel» a cualidad y movimiento."
         },
         "significado": [
@@ -1195,6 +1671,74 @@
             "es": "La toalla mojada gotea en el lavabo."
           }
         ]
+      },
+      "pensamiento": {
+        "edad_modo": "elige_dos",
+        "predice": {
+          "pregunta_en": "Wet towel or dry towel?",
+          "significado": {
+            "gl": "Toalla mollada ou toalla seca?",
+            "es": "¿Toalla mojada o toalla seca?"
+          },
+          "guia": {
+            "gl": "Con dúas toallas iguais, antes de mollar unha, pregunta cal pesará máis despois de mergullala.",
+            "es": "Con dos toallas iguales, antes de mojar una, pregunta cuál pesará más después de sumergirla."
+          },
+          "observar": {
+            "gl": "Se sinala unha das dúas toallas antes da proba.",
+            "es": "Si señala una de las dos toallas antes de la prueba."
+          }
+        },
+        "proba": {
+          "pregunta_en": "Dip the towel and watch it drip.",
+          "significado": {
+            "gl": "Molle a toalla e mira como pinga.",
+            "es": "Moja la toalla y mira cómo gotea."
+          },
+          "guia": {
+            "gl": "Mergullade unha toalla no barreño, levantádea e mirade como pinga a auga.",
+            "es": "Sumergid una toalla en el barreño, levantadla y mirad cómo gotea el agua."
+          },
+          "observar": {
+            "gl": "Se observa as pingas caer mentres sostén a toalla.",
+            "es": "Si observa las gotas caer mientras sostiene la toalla."
+          }
+        },
+        "compara": {
+          "pregunta_en": "Which towel is heavy and wet?",
+          "significado": {
+            "gl": "Cal toalla está pesada e mollada?",
+            "es": "¿Cuál toalla está pesada y mojada?"
+          },
+          "guia": {
+            "gl": "Dálle unha toalla en cada man (seca e mollada) para que sinale ou erga a mollada.",
+            "es": "Dale una toalla en cada mano (seca y mojada) para que señale o levante la mojada."
+          },
+          "observar": {
+            "gl": "Se nota a diferenza de peso entre as dúas mans.",
+            "es": "Si nota la diferencia de peso entre las dos manos."
+          }
+        },
+        "explica": {
+          "pregunta_en": "Why is the wet towel heavy?",
+          "significado": {
+            "gl": "Por que pesa a toalla mollada?",
+            "es": "¿Por qué pesa la toalla mojada?"
+          },
+          "guia": {
+            "gl": "Espremede a toalla xuntos vendo saír a auga e dálle a frase modelo.",
+            "es": "Estrujad la toalla juntos viendo salir el agua y dale la frase modelo."
+          },
+          "observar": {
+            "gl": "Se mira caer a auga da toalla ao escoitar o porqué.",
+            "es": "Si mira caer el agua de la toalla al escuchar el porqué."
+          },
+          "modelo_en": "The wet towel holds drops.",
+          "modelo_significado": {
+            "gl": "A toalla mollada garda pingas.",
+            "es": "La toalla mojada guarda gotas."
+          }
+        }
       }
     },
     {
@@ -1231,7 +1775,7 @@
         },
         "fonema": "/k/ → /p/",
         "nota": {
-          "gl": "En «Pasos que corren, pasos que duermen» imitades o gato despacio («cat») segundo cada toque na caixa («pat»): «cat» dá un golpe atrás na gorxa (/k/) e «pat» estala diante nos beizos (/p/).",
+          "gl": "En «Pasos que corren, pasos que dormen» imitades o gato despacio («cat») segundo cada toque na caixa («pat»): «cat» dá un golpe atrás na gorxa (/k/) e «pat» estala diante nos beizos (/p/).",
           "es": "En «Pasos que corren, pasos que duermen» imitáis al gato despacio («cat») según cada toque en la caja («pat»): «cat» da un golpe atrás en la garganta (/k/) y «pat» estalla delante en los labios (/p/)."
         },
         "mision_acerto": {
@@ -1327,7 +1871,7 @@
           "Run fast when the drum beats, then walk slow and sleepy."
         ],
         "nota": {
-          "gl": "Seguindo o ritmo rápido e o silencio de «Pasos que corren, pasos que duermen», o adulto vai de «foot» ao xogo de movemento.",
+          "gl": "Seguindo o ritmo rápido e o silencio de «Pasos que corren, pasos que dormen», o adulto vai de «foot» ao xogo de movemento.",
           "es": "Siguiendo el ritmo rápido y el silencio de «Pasos que corren, pasos que duermen», el adulto va de «foot» al juego de movimiento."
         },
         "significado": [
@@ -1344,6 +1888,74 @@
             "es": "Corre rápido cuando suena el tambor y después camina despacio, con sueño."
           }
         ]
+      },
+      "pensamiento": {
+        "edad_modo": "elige_dos",
+        "predice": {
+          "pregunta_en": "Run fast or walk like a sleepy cat?",
+          "significado": {
+            "gl": "Correr rápido ou camiñar coma un gato con sono?",
+            "es": "¿Correr rápido o caminar como un gato con sueño?"
+          },
+          "guia": {
+            "gl": "Ensina o tambor e pregunta se co ritmo rápido corremos ou imos amodo coma con sono.",
+            "es": "Enseña el tambor y pregunta si con el ritmo rápido corremos o vamos despacio como con sueño."
+          },
+          "observar": {
+            "gl": "Se sinala ou fai o xesto de correr ou de durmir.",
+            "es": "Si señala o hace el gesto de correr o de dormir."
+          }
+        },
+        "proba": {
+          "pregunta_en": "Run fast when the beat is fast.",
+          "significado": {
+            "gl": "Corre rápido cando o ritmo é rápido.",
+            "es": "Corre rápido cuando el ritmo es rápido."
+          },
+          "guia": {
+            "gl": "Toca o tambor rápido para correr co pé e para logo cun toque suave para andar amodo.",
+            "es": "Toca el tambor rápido para correr con el pie y para luego con un toque suave para andar despacio."
+          },
+          "observar": {
+            "gl": "Se axusta o movemento dos pés ao cambio de ritmo do tambor.",
+            "es": "Si ajusta el movimiento de los pies al cambio de ritmo del tambor."
+          }
+        },
+        "compara": {
+          "pregunta_en": "Fast pat or slow pat?",
+          "significado": {
+            "gl": "Toque rápido ou toque lento?",
+            "es": "¿Toque rápido o toque lento?"
+          },
+          "guia": {
+            "gl": "Fai dúas series curtas (rápido vs. lento) e pídelle que sinale cal é para correr.",
+            "es": "Haz dos series cortas (rápido vs. lento) y pídele que señale cuál es para correr."
+          },
+          "observar": {
+            "gl": "Se asocia o ritmo rápido con correr e o lento con calma.",
+            "es": "Si asocia el ritmo rápido con correr y el lento con calma."
+          }
+        },
+        "explica": {
+          "pregunta_en": "When do we stop and sleep?",
+          "significado": {
+            "gl": "Cando paramos e durmimos?",
+            "es": "¿Cuándo paramos y dormimos?"
+          },
+          "guia": {
+            "gl": "Pousade os pés e as dedas no chan en silencio e di a frase modelo.",
+            "es": "Posad los pies y los dedos en el suelo en silencio y di la frase modelo."
+          },
+          "observar": {
+            "gl": "Se detén o corpo co ritmo lento e suave.",
+            "es": "Si detiene el cuerpo con el ritmo lento y suave."
+          },
+          "modelo_en": "Soft pat makes sleepy toes.",
+          "modelo_significado": {
+            "gl": "O toque suave dá sono ás dedas.",
+            "es": "El toque suave da sueño a los dedos."
+          }
+        }
       }
     },
     {
@@ -1477,7 +2089,7 @@
           "The flashlight makes stars glow in the dark."
         ],
         "nota": {
-          "gl": "Na escuridade do cuarto en «La caja de las estrellas», o adulto amplía «flashlight» ata explicar porque brillan os puntos.",
+          "gl": "Na escuridade do cuarto en «A caixa das estrelas», o adulto amplía «flashlight» ata explicar porque brillan os puntos.",
           "es": "En la oscuridad del cuarto en «La caja de las estrellas», el adulto amplía «flashlight» hasta explicar por qué brillan los puntos."
         },
         "significado": [
@@ -1494,6 +2106,74 @@
             "es": "La linterna hace brillar las estrellas en la oscuridad."
           }
         ]
+      },
+      "pensamiento": {
+        "edad_modo": "elige_dos",
+        "predice": {
+          "pregunta_en": "Light or night inside the box?",
+          "significado": {
+            "gl": "Luz ou noite dentro da caixa?",
+            "es": "¿Luz o noche dentro de la caja?"
+          },
+          "guia": {
+            "gl": "Antes de acender a lanterna, mira coa nena a caixa escura e sinala se haberá luz ou noite.",
+            "es": "Antes de encender la linterna, mira con el niño la caja oscura y señala si habrá luz o noche."
+          },
+          "observar": {
+            "gl": "Se sinala a lanterna ou a caixa pechada antes de acender.",
+            "es": "Si señala la linterna o la caja cerrada antes de encender."
+          }
+        },
+        "proba": {
+          "pregunta_en": "Shine the light in the dark.",
+          "significado": {
+            "gl": "Acende a luz na escuridade.",
+            "es": "Enciende la luz en la oscuridad."
+          },
+          "guia": {
+            "gl": "Metede a lanterna acesa na caixa cos furados para ver brillar as estrelas.",
+            "es": "Meted la linterna encendida en la caja con agujeros para ver brillar las estrellas."
+          },
+          "observar": {
+            "gl": "Se busca cos ollos os puntos de luz na parede ou no teito.",
+            "es": "Si busca con los ojos los puntos de luz en la pared o el techo."
+          }
+        },
+        "compara": {
+          "pregunta_en": "Light on or dark night?",
+          "significado": {
+            "gl": "Luz acesa ou noite escura?",
+            "es": "¿Luz encendida o noche oscura?"
+          },
+          "guia": {
+            "gl": "Acende e apaga a lanterna dúas veces e pídelle que sinale cando brilla a bombilla.",
+            "es": "Enciende y apaga la linterna dos veces y pídele que señale cuándo brilla la bombilla."
+          },
+          "observar": {
+            "gl": "Se sinala os puntos brillantes cando a lanterna está acesa.",
+            "es": "Si señala los puntos brillantes cuando la linterna está encendida."
+          }
+        },
+        "explica": {
+          "pregunta_en": "Why do we see stars on the wall?",
+          "significado": {
+            "gl": "Por que vemos estrelas na parede?",
+            "es": "¿Por qué vemos estrellas en la pared?"
+          },
+          "guia": {
+            "gl": "Sinala a lanterna dentro da caixa cos furados e dálle o modelo curto.",
+            "es": "Señala la linterna dentro de la caja con agujeros y dale el modelo corto."
+          },
+          "observar": {
+            "gl": "Se mira a lanterna acesa ao escoitar a explicación.",
+            "es": "Si mira la linterna encendida al escuchar la explicación."
+          },
+          "modelo_en": "The flashlight bulb makes light.",
+          "modelo_significado": {
+            "gl": "A bombilla da lanterna fai luz.",
+            "es": "La bombilla de la linterna hace luz."
+          }
+        }
       }
     },
     {
@@ -1530,7 +2210,7 @@
         },
         "fonema": "/aɪ/ → /ʊ/",
         "nota": {
-          "gl": "En «¿Qué torre aguanta?» poñedes os bloques de madeira («wood») nunha base ancha («wide»): «wide» abre grande a boca baixando de «a» a «i» (/aɪ/) e «wood» pecha os beizos en redondo para un «u» curto (/ʊ/).",
+          "gl": "En «Que torre aguanta?» poñedes os bloques de madeira («wood») nunha base ancha («wide»): «wide» abre grande a boca baixando de «a» a «i» (/aɪ/) e «wood» pecha os beizos en redondo para un «u» curto (/ʊ/).",
           "es": "En «¿Qué torre aguanta?» ponéis los bloques de madera («wood») en una base ancha («wide»): «wide» abre grande la boca deslizando de «a» a «i» (/aɪ/) y «wood» redondea los labios en una «u» corta (/ʊ/)."
         },
         "mision_acerto": {
@@ -1626,7 +2306,7 @@
           "We build a tall tower with big blocks."
         ],
         "nota": {
-          "gl": "Ao comparar porque unha torre aguanta e outra cae en «¿Qué torre aguanta?», o adulto estende «tower» ata a explicación.",
+          "gl": "Ao comparar porque unha torre aguanta e outra cae en «Que torre aguanta?», o adulto estende «tower» ata a explicación.",
           "es": "Al comparar por qué una torre aguanta y otra cae en «¿Qué torre aguanta?», el adulto extiende «tower» hasta la explicación."
         },
         "significado": [
@@ -1643,6 +2323,74 @@
             "es": "Hacemos una torre alta con bloques grandes."
           }
         ]
+      },
+      "pensamiento": {
+        "edad_modo": "elige_dos",
+        "predice": {
+          "pregunta_en": "Wide base or tall block: which stands?",
+          "significado": {
+            "gl": "Base ancha ou bloque alto: cal aguanta?",
+            "es": "Base ancha o bloque alto: ¿cuál aguanta?"
+          },
+          "guia": {
+            "gl": "Mostra un bloque ancho de madeira e un vaso fino para que escolla cal fará unha torre máis firme.",
+            "es": "Muestra un bloque ancho de madera y un vaso fino para que elija cuál hará una torre más firme."
+          },
+          "observar": {
+            "gl": "Se sinala entre os dous materiais antes de apilar.",
+            "es": "Si señala entre los dos materiales antes de apilar."
+          }
+        },
+        "proba": {
+          "pregunta_en": "Build a tall tower with blocks.",
+          "significado": {
+            "gl": "Constrúe unha torre alta con bloques.",
+            "es": "Construye una torre alta con bloques."
+          },
+          "guia": {
+            "gl": "Apilade sobre a alfombra bloques de madeira e vasos de papel ata ver cal cae antes.",
+            "es": "Apilad sobre la alfombra bloques de madera y vasos de papel hasta ver cuál cae antes."
+          },
+          "observar": {
+            "gl": "Se axusta os bloques un encima doutro con coidado.",
+            "es": "Si ajusta los bloques uno encima de otro con cuidado."
+          }
+        },
+        "compara": {
+          "pregunta_en": "Wide wood or tall paper tower?",
+          "significado": {
+            "gl": "Madeira ancha ou torre alta de papel?",
+            "es": "¿Madera ancha o torre alta de papel?"
+          },
+          "guia": {
+            "gl": "Con dúas torres feitas, pídelle que sinale cal ten a base máis ancha e cal é máis alta.",
+            "es": "Con dos torres hechas, pídele que señale cuál tiene la base más ancha y cuál es más alta."
+          },
+          "observar": {
+            "gl": "Se compara a base e a altura das dúas torres.",
+            "es": "Si compara la base y la altura de las dos torres."
+          }
+        },
+        "explica": {
+          "pregunta_en": "Why does the wood tower stand?",
+          "significado": {
+            "gl": "Por que aguanta a torre de madeira?",
+            "es": "¿Por qué aguanta la torre de madera?"
+          },
+          "guia": {
+            "gl": "Toca a base ancha cos dous dedos para ensinar que non abanea e dálle o modelo.",
+            "es": "Toca la base ancha con los dos dedos para enseñar que no se tambalea y dale el modelo."
+          },
+          "observar": {
+            "gl": "Se sinala a base ancha da torre ao escoitar a frase.",
+            "es": "Si señala la base ancha de la torre al escuchar la frase."
+          },
+          "modelo_en": "Wide wood keeps the tower tall.",
+          "modelo_significado": {
+            "gl": "A madeira ancha mantén a torre alta.",
+            "es": "La madera ancha mantiene la torre alta."
+          }
+        }
       }
     },
     {
@@ -1679,7 +2427,7 @@
         },
         "fonema": "/t/ → /p/",
         "nota": {
-          "gl": "En «Rojo, azul, rojo…» ordenades cada ficha («tile») fóra da morea («pile»): «tile» toca detrás dos dentes (/t/) e «pile» xunta os beizos (/p/).",
+          "gl": "En «Vermello, azul, vermello…» ordenades cada ficha («tile») fóra da morea («pile»): «tile» toca detrás dos dentes (/t/) e «pile» xunta os beizos (/p/).",
           "es": "En «Rojo, azul, rojo…» ordenáis cada ficha («tile») fuera del montón («pile»): «tile» toca detrás de los dientes (/t/) y «pile» junta los labios (/p/)."
         },
         "mision_acerto": {
@@ -1775,7 +2523,7 @@
           "Match the blue piece in the pattern."
         ],
         "nota": {
-          "gl": "Mentres inventan series de cores en «Rojo, azul, rojo…», o adulto modela «pattern» e o paso que segue.",
+          "gl": "Mentres inventan series de cores en «Vermello, azul, vermello…», o adulto modela «pattern» e o paso que segue.",
           "es": "Mientras inventan series de colores en «Rojo, azul, rojo…», el adulto modela «pattern» y el paso que sigue."
         },
         "significado": [
@@ -1792,6 +2540,74 @@
             "es": "Pon la pieza azul en su sitio de la serie."
           }
         ]
+      },
+      "pensamiento": {
+        "edad_modo": "elige_dos",
+        "predice": {
+          "pregunta_en": "Red tile or blue piece: what comes next?",
+          "significado": {
+            "gl": "Peza vermella ou peza azul: cal vén agora?",
+            "es": "Pieza roja o pieza azul: ¿cuál viene ahora?"
+          },
+          "guia": {
+            "gl": "Pon na tira de papel vermello-azul-vermello e deixa dúas pezas á vista para que sinale a que segue.",
+            "es": "Pon en la tira de papel rojo-azul-rojo y deja dos piezas a la vista para que señale la que sigue."
+          },
+          "observar": {
+            "gl": "Se sinala a peza azul para completar a serie.",
+            "es": "Si señala la pieza azul para completar la serie."
+          }
+        },
+        "proba": {
+          "pregunta_en": "Match the blue piece in the pattern.",
+          "significado": {
+            "gl": "Emparella a peza azul na serie.",
+            "es": "Empareja la pieza azul en la serie."
+          },
+          "guia": {
+            "gl": "Colocade xuntos na tira longa de papel as pezas seguindo a orde vermello-azul.",
+            "es": "Colocad juntos en la tira larga de papel las piezas siguiendo el orden rojo-azul."
+          },
+          "observar": {
+            "gl": "Se mantén a alternancia de cores sen saltar quenda.",
+            "es": "Si mantiene la alternancia de colores sin saltarse turno."
+          }
+        },
+        "compara": {
+          "pregunta_en": "Same tile or different tile?",
+          "significado": {
+            "gl": "Peza igual ou peza distinta?",
+            "es": "¿Pieza igual o pieza distinta?"
+          },
+          "guia": {
+            "gl": "Compara dúas tiras (unha correcta e outra con dúas iguais seguidas) e pídelle que sinale a da serie.",
+            "es": "Compara dos tiras (una correcta y otra con dos iguales seguidas) y pídele que señale la de la serie."
+          },
+          "observar": {
+            "gl": "Se detecta onde rompeu a serie ao comparar.",
+            "es": "Si detecta dónde se rompió la serie al comparar."
+          }
+        },
+        "explica": {
+          "pregunta_en": "How do we match the pattern?",
+          "significado": {
+            "gl": "Como emparellamos a serie?",
+            "es": "¿Cómo emparejamos la serie?"
+          },
+          "guia": {
+            "gl": "Recorrede co dedo a fila dicindo as cores e dálle a frase modelo curta.",
+            "es": "Recorred con el dedo la fila diciendo los colores y dale la frase modelo corta."
+          },
+          "observar": {
+            "gl": "Se sinala peza por peza seguindo o ritmo.",
+            "es": "Si señala pieza por pieza siguiendo el ritmo."
+          },
+          "modelo_en": "Blue tile follows red tile.",
+          "modelo_significado": {
+            "gl": "A peza azul segue á vermella.",
+            "es": "La pieza azul sigue a la roja."
+          }
+        }
       }
     },
     {
@@ -1828,7 +2644,7 @@
         },
         "fonema": "/t/ → /b/",
         "nota": {
-          "gl": "En «El tren baja la cuesta» soltades o tren de xoguete («toy»): /t/ é un toque seco atrás dos dentes sen voz e /b/ de «boy» vibra nos beizos.",
+          "gl": "En «O tren baixa a costa» soltades o tren de xoguete («toy»): /t/ é un toque seco atrás dos dentes sen voz e /b/ de «boy» vibra nos beizos.",
           "es": "En «El tren baja la cuesta» soltáis el tren de juguete («toy»): /t/ es un toque seco detrás de los dientes sin voz y /b/ de «boy» vibra en los labios."
         },
         "mision_acerto": {
@@ -1924,7 +2740,7 @@
           "The fast train rolls down the ramp."
         ],
         "nota": {
-          "gl": "Ao subir os libros da rampa en «El tren baja la cuesta», o adulto modela o movemento e a relación coa altura.",
+          "gl": "Ao subir os libros da rampa en «O tren baixa a costa», o adulto modela o movemento e a relación coa altura.",
           "es": "Al subir los libros de la rampa en «El tren baja la cuesta», el adulto modela el movimiento y la relación con la altura."
         },
         "significado": [
@@ -1941,6 +2757,74 @@
             "es": "El tren rápido baja por la rampa."
           }
         ]
+      },
+      "pensamiento": {
+        "edad_modo": "elige_dos",
+        "predice": {
+          "pregunta_en": "Low ramp or high ramp: which is fast?",
+          "significado": {
+            "gl": "Rampla baixa ou alta: cal vai rápido?",
+            "es": "Rampa baja o alta: ¿cuál va rápido?"
+          },
+          "guia": {
+            "gl": "Pon a táboa con poucos libros e logo pensa con máis libros: pregunta cal fará baixar o tren máis rápido.",
+            "es": "Pon la tabla con pocos libros y luego piensa con más libros: pregunta cuál hará bajar el tren más rápido."
+          },
+          "observar": {
+            "gl": "Se sinala a rampla alta ou a baixa antes de soltar o tren.",
+            "es": "Si señala la rampa alta o la baja antes de soltar el tren."
+          }
+        },
+        "proba": {
+          "pregunta_en": "Roll the train down the ramp.",
+          "significado": {
+            "gl": "Fai rodar o tren pola rampla.",
+            "es": "Haz rodar el tren por la rampa."
+          },
+          "guia": {
+            "gl": "Soltade o tren de xoguete desde arriba sen empuxalo primeiro nunha altura e logo na outra.",
+            "es": "Soltad el tren de juguete desde arriba sin empujarlo primero en una altura y luego en la otra."
+          },
+          "observar": {
+            "gl": "Se solta o tren sen darlle impulso coa man.",
+            "es": "Si suelta el tren sin darle impulso con la mano."
+          }
+        },
+        "compara": {
+          "pregunta_en": "Fast train or slow train?",
+          "significado": {
+            "gl": "Tren rápido ou tren amodo?",
+            "es": "¿Tren rápido o tren despacio?"
+          },
+          "guia": {
+            "gl": "Mostra ata onde chegou en cada altura e pídelle que sinale cando rodou máis rápido.",
+            "es": "Muestra hasta dónde llegó en cada altura y pídele que señale cuándo rodó más rápido."
+          },
+          "observar": {
+            "gl": "Se sinala o percorrido da rampla alta como o máis rápido.",
+            "es": "Si señala el recorrido de la rampa alta como el más rápido."
+          }
+        },
+        "explica": {
+          "pregunta_en": "Why is the toy train fast?",
+          "significado": {
+            "gl": "Por que vai rápido o tren de xoguete?",
+            "es": "¿Por qué va rápido el tren de juguete?"
+          },
+          "guia": {
+            "gl": "Sinala os libros debaixo da táboa e acompaña co modelo curto.",
+            "es": "Señala los libros debajo de la tabla y acompaña con el modelo corto."
+          },
+          "observar": {
+            "gl": "Se mira a inclinación da rampla ao escoitar a frase.",
+            "es": "Si mira la inclinación de la rampa al escuchar la frase."
+          },
+          "modelo_en": "Tall ramp makes wheels roll fast.",
+          "modelo_significado": {
+            "gl": "A rampla alta fai rodar rápido as rodas.",
+            "es": "La rampa alta hace rodar rápido las ruedas."
+          }
+        }
       }
     },
     {
@@ -1977,7 +2861,7 @@
         },
         "fonema": "/k/ → /t/",
         "nota": {
-          "gl": "En «El teléfono de vasos» fai falta falar polo vaso («talk») co fío ben tenso («taut»): as dúas empezan por /t/ e teñen a mesma vogal aberta, pero «talk» acaba atrás na gorxa (/k/) e «taut» acaba nos dentes (/t/).",
+          "gl": "En «O teléfono de vasos» fai falta falar polo vaso («talk») co fío ben tenso («taut»): as dúas empezan por /t/ e teñen a mesma vogal aberta, pero «talk» acaba atrás na gorxa (/k/) e «taut» acaba nos dentes (/t/).",
           "es": "En «El teléfono de vasos» hace falta hablar por el vaso («talk») con el hilo bien tenso («taut»): ambas empiezan por /t/ y tienen la misma vocal abierta, pero «talk» termina atrás en la garganta (/k/) y «taut» termina en los dientes (/t/)."
         },
         "mision_acerto": {
@@ -2073,7 +2957,7 @@
           "Listen through the phone when the string is tight."
         ],
         "nota": {
-          "gl": "Mentres proban co fío tenso e frouxo en «El teléfono de vasos», o adulto amplía «phone» ata explicar como viaxa o son.",
+          "gl": "Mentres proban co fío tenso e frouxo en «O teléfono de vasos», o adulto amplía «phone» ata explicar como viaxa o son.",
           "es": "Mientras prueban con el hilo tenso y flojo en «El teléfono de vasos», el adulto amplía «phone» hasta explicar cómo viaja el sonido."
         },
         "significado": [
@@ -2090,6 +2974,74 @@
             "es": "Escucha por el teléfono cuando el hilo está tenso."
           }
         ]
+      },
+      "pensamiento": {
+        "edad_modo": "elige_dos",
+        "predice": {
+          "pregunta_en": "Tight string or loose string: can we talk?",
+          "significado": {
+            "gl": "Corda tensa ou frouxa: podemos falar?",
+            "es": "Cuerda tensa o floja: ¿podemos hablar?"
+          },
+          "guia": {
+            "gl": "Ensina o fío entre os dous vasos frouxo e logo estirado; pregunta en cal se oirá a voz.",
+            "es": "Enseña el hilo entre los dos vasos flojo y luego estirado; pregunta en cuál se oirá la voz."
+          },
+          "observar": {
+            "gl": "Se escolle entre os dous estados do fío antes de escoitar.",
+            "es": "Si elige entre los dos estados del hilo antes de escuchar."
+          }
+        },
+        "proba": {
+          "pregunta_en": "Pull the string tight and listen.",
+          "significado": {
+            "gl": "Estira o fío tenso e escoita.",
+            "es": "Estira el hilo tenso y escucha."
+          },
+          "guia": {
+            "gl": "Un pon o vaso na orella e o outro fala suave ao outro vaso co fío ben tenso.",
+            "es": "Uno pone el vaso en la oreja y el otro habla suave al otro vaso con el hilo bien tenso."
+          },
+          "observar": {
+            "gl": "Se mantén o vaso na orella agardando o son polo fío.",
+            "es": "Si mantiene el vaso en la oreja esperando el sonido por el hilo."
+          }
+        },
+        "compara": {
+          "pregunta_en": "Talk with taut string or loose string?",
+          "significado": {
+            "gl": "Falar co fío tenso ou co fío frouxo?",
+            "es": "¿Hablar con el hilo tenso o con el hilo flojo?"
+          },
+          "guia": {
+            "gl": "Probade a soltar o fío un pouco para notar como para a voz e pídelle que sinale cando funciona.",
+            "es": "Probad a soltar el hilo un poco para notar cómo para la voz y pídele que señale cuándo funciona."
+          },
+          "observar": {
+            "gl": "Se sinala cando o fío está tenso («taut»).",
+            "es": "Si señala cuando el hilo está tenso («taut»)."
+          }
+        },
+        "explica": {
+          "pregunta_en": "Why do we hear through the phone?",
+          "significado": {
+            "gl": "Por que oímos polo teléfono?",
+            "es": "¿Por qué oímos por el teléfono?"
+          },
+          "guia": {
+            "gl": "Toca o fío tenso suavemente co dedo mentres dis o modelo curto.",
+            "es": "Toca el hilo tenso suavemente con el dedo mientras dices el modelo corto."
+          },
+          "observar": {
+            "gl": "Se toca o fío tenso para sentir o camiño da voz.",
+            "es": "Si toca el hilo tenso para sentir el camino de la voz."
+          },
+          "modelo_en": "Tight string carries the talk.",
+          "modelo_significado": {
+            "gl": "O fío tenso leva a voz.",
+            "es": "El hilo tenso lleva la voz."
+          }
+        }
       }
     },
     {
@@ -2126,7 +3078,7 @@
         },
         "fonema": "/t/ → /b/",
         "nota": {
-          "gl": "En «La sombra de la torre» facedes crecer unha sombra alta («tall»): /t/ dá un toque seco detrás dos dentes e /b/ de «ball» zumba nos beizos.",
+          "gl": "En «A sombra da torre» facedes crecer unha sombra alta («tall»): /t/ dá un toque seco detrás dos dentes e /b/ de «ball» zumba nos beizos.",
           "es": "En «La sombra de la torre» hacéis crecer una sombra alta («tall»): /t/ da un toque seco detrás de los dientes y /b/ de «ball» zumba en los labios."
         },
         "mision_acerto": {
@@ -2222,7 +3174,7 @@
           "Move the light to stretch a long shadow."
         ],
         "nota": {
-          "gl": "Ao debuxar sombras curtas e longas en «La sombra de la torre», o adulto modela como cambia o tamaño coa luz.",
+          "gl": "Ao debuxar sombras curtas e longas en «A sombra da torre», o adulto modela como cambia o tamaño coa luz.",
           "es": "Al dibujar sombras cortas y largas en «La sombra de la torre», el adulto modela cómo cambia el tamaño con la luz."
         },
         "significado": [
@@ -2239,6 +3191,74 @@
             "es": "Mueve la luz para estirar una sombra larga."
           }
         ]
+      },
+      "pensamiento": {
+        "edad_modo": "elige_dos",
+        "predice": {
+          "pregunta_en": "Tall shadow or short shadow?",
+          "significado": {
+            "gl": "Sombra alta ou sombra curta?",
+            "es": "¿Sombra alta o sombra corta?"
+          },
+          "guia": {
+            "gl": "Coloca a torre diante do papel na parede e, antes de mover a lanterna preto/lonxe, escollede cal será longa.",
+            "es": "Coloca la torre delante del papel en la pared y, antes de mover la linterna cerca/lejos, elegid cuál será larga."
+          },
+          "observar": {
+            "gl": "Se sinala arriba ou abaixo no papel antes de mover a luz.",
+            "es": "Si señala arriba o abajo en el papel antes de mover la luz."
+          }
+        },
+        "proba": {
+          "pregunta_en": "Make the shadow long.",
+          "significado": {
+            "gl": "Fai a sombra longa.",
+            "es": "Haz la sombra larga."
+          },
+          "guia": {
+            "gl": "Baixade e achegade a lanterna aos bloques para ver crecer a sombra pola parede.",
+            "es": "Bajad y acercad la linterna a los bloques para ver crecer la sombra por la pared."
+          },
+          "observar": {
+            "gl": "Se segue cos ollos como cambia a silueta na parede.",
+            "es": "Si sigue con los ojos cómo cambia la silueta en la pared."
+          }
+        },
+        "compara": {
+          "pregunta_en": "Which shadow is long on the wall?",
+          "significado": {
+            "gl": "Cal sombra é longa na parede?",
+            "es": "¿Cuál sombra es larga en la pared?"
+          },
+          "guia": {
+            "gl": "Debuxa dúas marcas (preto e lonxe) e pídelle que sinale a sombra máis longa.",
+            "es": "Dibuja dos marcas (cerca y lejos) y pídele que señale la sombra más larga."
+          },
+          "observar": {
+            "gl": "Se sinala a marca da sombra estirada.",
+            "es": "Si señala la marca de la sombra estirada."
+          }
+        },
+        "explica": {
+          "pregunta_en": "Why did the shadow stretch long?",
+          "significado": {
+            "gl": "Por que se estiraba longa a sombra?",
+            "es": "¿Por qué se estiraba larga la sombra?"
+          },
+          "guia": {
+            "gl": "Sinala a lanterna baixa detrás da torre co modelo curto.",
+            "es": "Señala la linterna baja detrás de la torre con el modelo corto."
+          },
+          "observar": {
+            "gl": "Se mira da lanterna á sombra estirada.",
+            "es": "Si mira de la linterna a la sombra estirada."
+          },
+          "modelo_en": "Low light makes a long shadow.",
+          "modelo_significado": {
+            "gl": "A luz baixa fai unha sombra longa.",
+            "es": "La luz baja hace una sombra larga."
+          }
+        }
       }
     },
     {
@@ -2372,7 +3392,7 @@
           "The ice melts in the cold juice."
         ],
         "nota": {
-          "gl": "Mentres comparan en que vaso derrete antes en «El hielo en el zumo», o adulto leva «juice» ata a explicación térmica.",
+          "gl": "Mentres comparan en que vaso derrete antes en «O xeo no zume», o adulto leva «juice» ata a explicación térmica.",
           "es": "Mientras comparan en qué vaso se derrite antes en «El hielo en el zumo», el adulto lleva «juice» hasta la explicación térmica."
         },
         "significado": [
@@ -2389,6 +3409,74 @@
             "es": "El hielo se derrite en el zumo frío."
           }
         ]
+      },
+      "pensamiento": {
+        "edad_modo": "elige_dos",
+        "predice": {
+          "pregunta_en": "Warm drink or cold drink: which melts ice?",
+          "significado": {
+            "gl": "Bebida morna ou fría: cal derrete o xeo?",
+            "es": "Bebida templada o fría: ¿cuál derrite el hielo?"
+          },
+          "guia": {
+            "gl": "Antes de botar o xeo, ensina os dous vasos (morno e frío) para que sinale onde derreterá antes.",
+            "es": "Antes de echar el hielo, enseña los dos vasos (templado y frío) para que señale dónde se derretirá antes."
+          },
+          "observar": {
+            "gl": "Se sinala un dos dous vasos antes de botar os cubiños.",
+            "es": "Si señala uno de los dos vasos antes de echar los cubitos."
+          }
+        },
+        "proba": {
+          "pregunta_en": "Watch the ice shrink in juice.",
+          "significado": {
+            "gl": "Mira como encolle o xeo no zume.",
+            "es": "Mira cómo encoge el hielo en el zumo."
+          },
+          "guia": {
+            "gl": "Poñede un cubiño grande en cada vaso, remexede coa culler e mirade cal encolle primeiro.",
+            "es": "Poned un cubito grande en cada vaso, removed con la cuchara y mirad cuál encoge primero."
+          },
+          "observar": {
+            "gl": "Se observa o tamaño dos cubiños en ambos vasos.",
+            "es": "Si observa el tamaño de los cubitos en ambos vasos."
+          }
+        },
+        "compara": {
+          "pregunta_en": "Which ice cube shrinks more?",
+          "significado": {
+            "gl": "Que cubo de xeo encolle máis?",
+            "es": "¿Qué cubito de hielo encoge más?"
+          },
+          "guia": {
+            "gl": "Saca un intre os dous restos coa culler para que sinale cal se fixo máis pequeno.",
+            "es": "Saca un momento los dos restos con la cuchara para que señale cuál se hizo más pequeño."
+          },
+          "observar": {
+            "gl": "Se identifica o cubiño máis pequeno no vaso morno.",
+            "es": "Si identifica el cubito más pequeño en el vaso templado."
+          }
+        },
+        "explica": {
+          "pregunta_en": "Why did the ice melt in the drink?",
+          "significado": {
+            "gl": "Por que se derreteu o xeo na bebida?",
+            "es": "¿Por qué se derritió el hielo en la bebida?"
+          },
+          "guia": {
+            "gl": "Toca por fóra o vaso frío e o morno para notar o contraste e dálle o modelo.",
+            "es": "Toca por fuera el vaso frío y el templado para notar el contraste y dale el modelo."
+          },
+          "observar": {
+            "gl": "Se toca os vasos comparando a temperatura.",
+            "es": "Si toca los vasos comparando la temperatura."
+          },
+          "modelo_en": "Warm water makes cold ice melt.",
+          "modelo_significado": {
+            "gl": "A auga morna derrete o xeo frío.",
+            "es": "El agua templada derrite el hielo frío."
+          }
+        }
       }
     },
     {
@@ -2425,7 +3513,7 @@
         },
         "fonema": "/iː/ → /ɛ/",
         "nota": {
-          "gl": "En «Un plato para cada uno» poñedes a mesa («set») revisando cada asento («seat»): «seat» estira un «i» longo e sorrinte (/iː/) e «set» abre un «e» curto e relaxado (/ɛ/).",
+          "gl": "En «Un prato para cada un» poñedes a mesa («set») revisando cada asento («seat»): «seat» estira un «i» longo e sorrinte (/iː/) e «set» abre un «e» curto e relaxado (/ɛ/).",
           "es": "En «Un plato para cada uno» ponéis la mesa («set») revisando cada asiento («seat»): «seat» estira una «i» larga y sonriente (/iː/) y «set» abre una «e» corta y relajada (/ɛ/)."
         },
         "mision_acerto": {
@@ -2521,7 +3609,7 @@
           "Serve one plate so the table is ready."
         ],
         "nota": {
-          "gl": "Ao comprobar se sobran ou faltan sitios en «Un plato para cada uno», o adulto estende «table» cara á correspondencia un a un.",
+          "gl": "Ao comprobar se sobran ou faltan sitios en «Un prato para cada un», o adulto estende «table» cara á correspondencia un a un.",
           "es": "Al comprobar si sobran o faltan sitios en «Un plato para cada uno», el adulto extiende «table» hacia la correspondencia uno a uno."
         },
         "significado": [
@@ -2538,6 +3626,74 @@
             "es": "Pon un plato a cada uno y la mesa está lista."
           }
         ]
+      },
+      "pensamiento": {
+        "edad_modo": "elige_dos",
+        "predice": {
+          "pregunta_en": "One plate per seat or one missing?",
+          "significado": {
+            "gl": "Un prato por sitio ou falta un?",
+            "es": "¿Un plato por sitio o falta uno?"
+          },
+          "guia": {
+            "gl": "Pon tres coxíns ao redor da mesa e só dous pratos na man; pregunta se chega para cada sitio.",
+            "es": "Pon tres cojines alrededor de la mesa y solo dos platos en la mano; pregunta si llega para cada sitio."
+          },
+          "observar": {
+            "gl": "Se sinala os sitios ou conta antes de repartir.",
+            "es": "Si señala los sitios o cuenta antes de repartir."
+          }
+        },
+        "proba": {
+          "pregunta_en": "Serve one plate at each seat.",
+          "significado": {
+            "gl": "Serve un prato en cada sitio.",
+            "es": "Sirve un plato en cada sitio."
+          },
+          "guia": {
+            "gl": "Repartide xuntos un prato, unha culler e un garfo diante de cada coxín.",
+            "es": "Repartid juntos un plato, una cuchara y un tenedor delante de cada cojín."
+          },
+          "observar": {
+            "gl": "Se emparella cada prato cun só asento sen deixar dous xuntos.",
+            "es": "Si empareja cada plato con un solo asiento sin dejar dos juntos."
+          }
+        },
+        "compara": {
+          "pregunta_en": "Is the table set and ready?",
+          "significado": {
+            "gl": "Está a mesa posta e lista?",
+            "es": "¿Está la mesa puesta y lista?"
+          },
+          "guia": {
+            "gl": "Mostra un sitio completo e outro baleiro para que sinale cal está listo para comer.",
+            "es": "Muestra un sitio completo y otro vacío para que señale cuál está listo para comer."
+          },
+          "observar": {
+            "gl": "Se sinala o sitio completo ou o que aínda precisa un prato.",
+            "es": "Si señala el sitio completo o el que aún necesita un plato."
+          }
+        },
+        "explica": {
+          "pregunta_en": "Why is every seat ready now?",
+          "significado": {
+            "gl": "Por que está cada sitio listo agora?",
+            "es": "¿Por qué está cada sitio listo ahora?"
+          },
+          "guia": {
+            "gl": "Sinala cada parella de asento e prato contando un-a-un e di o modelo.",
+            "es": "Señala cada pareja de asiento y plato contando uno-a-uno y di el modelo."
+          },
+          "observar": {
+            "gl": "Se repasa co dedo cada prato diante da súa cadeira.",
+            "es": "Si repasa con el dedo cada plato delante de su silla."
+          },
+          "modelo_en": "Each seat gets one plate.",
+          "modelo_significado": {
+            "gl": "Cada sitio ten un prato.",
+            "es": "Cada sitio tiene un plato."
+          }
+        }
       }
     },
     {
@@ -2574,7 +3730,7 @@
         },
         "fonema": "/ɪ/ → /ʊ/",
         "nota": {
-          "gl": "En «Verter despacio» ides enchendo o vaso («fill») ata que queda cheo («full»): «fill» ten un «i» curto cos beizos estirados (/ɪ/) e «full» arredonda os beizos nun «u» curto (/ʊ/).",
+          "gl": "En «Verter amodo» ides enchendo o vaso («fill») ata que queda cheo («full»): «fill» ten un «i» curto cos beizos estirados (/ɪ/) e «full» arredonda os beizos nun «u» curto (/ʊ/).",
           "es": "En «Verter despacio» vais llenando el vaso («fill») hasta que queda lleno («full»): «fill» tiene una «i» corta con los labios estirados (/ɪ/) y «full» redondea los labios en una «u» corta (/ʊ/)."
         },
         "mision_acerto": {
@@ -2670,7 +3826,7 @@
           "Pour water through the funnel very slow."
         ],
         "nota": {
-          "gl": "Mentres regulan o chorro da xerra na bandexa en «Verter despacio», o adulto modela precisión e vocabulario da proba.",
+          "gl": "Mentres regulan o chorro da xerra na bandexa en «Verter amodo», o adulto modela precisión e vocabulario da proba.",
           "es": "Mientras regulan el chorro de la jarra en la bandeja en «Verter despacio», el adulto modela precisión y vocabulario de la prueba."
         },
         "significado": [
@@ -2687,6 +3843,74 @@
             "es": "Vierte el agua por el embudo muy despacio."
           }
         ]
+      },
+      "pensamiento": {
+        "edad_modo": "elige_dos",
+        "predice": {
+          "pregunta_en": "Pour slow or fast into the funnel?",
+          "significado": {
+            "gl": "Verter amodo ou rápido no embude?",
+            "es": "¿Verter despacio o rápido en el embudo?"
+          },
+          "guia": {
+            "gl": "Diante do embude e o vaso, pregunta se verter amodo ou rápido evita que caia auga fóra.",
+            "es": "Delante del embudo y el vaso, pregunta si verter despacio o rápido evita que caiga agua fuera."
+          },
+          "observar": {
+            "gl": "Se sinala un xesto lento ou rápido antes de comezar.",
+            "es": "Si señala un gesto lento o rápido antes de empezar."
+          }
+        },
+        "proba": {
+          "pregunta_en": "Pour water through the funnel tube.",
+          "significado": {
+            "gl": "Verte auga polo tubo do embude.",
+            "es": "Vierte agua por el tubo del embudo."
+          },
+          "guia": {
+            "gl": "Suxeitade a xerra coas dúas mans e vertede polo embude ata que o vaso estea cheo.",
+            "es": "Sujetad la jarra con las dos manos y verted por el embudo hasta que el vaso esté lleno."
+          },
+          "observar": {
+            "gl": "Se controla a inclinación da xerra mirando o nivel do vaso.",
+            "es": "Si controla la inclinación de la jarra mirando el nivel del vaso."
+          }
+        },
+        "compara": {
+          "pregunta_en": "Full glass or half glass?",
+          "significado": {
+            "gl": "Vaso cheo ou medio vaso?",
+            "es": "¿Vaso lleno o medio vaso?"
+          },
+          "guia": {
+            "gl": "Compara dous vasos na bandexa (un cheo e outro pola metade) para que sinale o cheo.",
+            "es": "Compara dos vasos en la bandeja (uno lleno y otro por la mitad) para que señale el lleno."
+          },
+          "observar": {
+            "gl": "Se sinala o vaso cheo fronte ao de medio encher.",
+            "es": "Si señala el vaso lleno frente al de medio llenar."
+          }
+        },
+        "explica": {
+          "pregunta_en": "Why do we pour slow?",
+          "significado": {
+            "gl": "Por que vertemos amodo?",
+            "es": "¿Por qué vertemos despacio?"
+          },
+          "guia": {
+            "gl": "Sinala o tubo estreito do embude mentres pasa a última pinga e dá o modelo.",
+            "es": "Señala el tubo estrecho del embudo mientras pasa la última gota y da el modelo."
+          },
+          "observar": {
+            "gl": "Se observa o fío de auga polo tubo estreito.",
+            "es": "Si observa el hilo de agua por el tubo estrecho."
+          },
+          "modelo_en": "Slow pour fills the cup clean.",
+          "modelo_significado": {
+            "gl": "Verter amodo enche o vaso limpo.",
+            "es": "Verter despacio llena el vaso limpio."
+          }
+        }
       }
     },
     {
@@ -2723,7 +3947,7 @@
         },
         "fonema": "/t/ → /k/",
         "nota": {
-          "gl": "En «La música de los vasos» dades un toquiño coa culler («tap») ou poñedes a tapa («cap»): «tap» toca diante nos dentes (/t/) e «cap» golpea atrás na gorxa (/k/).",
+          "gl": "En «A música dos vasos» dades un toquiño coa culler («tap») ou poñedes a tapa («cap»): «tap» toca diante nos dentes (/t/) e «cap» golpea atrás na gorxa (/k/).",
           "es": "En «La música de los vasos» dais un toquecito con la cuchara («tap») o ponéis la tapa («cap»): «tap» toca delante en los dientes (/t/) y «cap» golpea atrás en la garganta (/k/)."
         },
         "mision_acerto": {
@@ -2819,7 +4043,7 @@
           "Tap the glass jar to hear a high note."
         ],
         "nota": {
-          "gl": "Ao ordenar os botes do grave ao agudo en «La música de los vasos», o adulto amplía «jar» ata relacionar auga e nota.",
+          "gl": "Ao ordenar os botes do grave ao agudo en «A música dos vasos», o adulto amplía «jar» ata relacionar auga e nota.",
           "es": "Al ordenar los botes del grave al agudo en «La música de los vasos», el adulto amplía «jar» hasta relacionar agua y nota."
         },
         "significado": [
@@ -2836,6 +4060,74 @@
             "es": "Golpea el bote de cristal para oír una nota aguda."
           }
         ]
+      },
+      "pensamiento": {
+        "edad_modo": "elige_dos",
+        "predice": {
+          "pregunta_en": "Full jar or empty jar: which sounds high?",
+          "significado": {
+            "gl": "Bote cheo ou bote baleiro: cal soa agudo?",
+            "es": "¿Bote lleno o bote vacío: cuál suena agudo?"
+          },
+          "guia": {
+            "gl": "Con dous botes de distinta auga diante, antes de darlles coa culler, pregunta cal soará máis agudo.",
+            "es": "Con dos botes de distinta agua delante, antes de darles con la cuchara, pregunta cuál sonará más agudo."
+          },
+          "observar": {
+            "gl": "Se sinala un dos botes antes de tocar coa culler de pau.",
+            "es": "Si señala uno de los botes antes de tocar con la cuchara de palo."
+          }
+        },
+        "proba": {
+          "pregunta_en": "Tap each jar with a spoon.",
+          "significado": {
+            "gl": "Peta en cada bote cunha culler.",
+            "es": "Golpea cada bote con una cuchara."
+          },
+          "guia": {
+            "gl": "Dádelle suave coa culler de pau a cada bote en fila e escoitade cada nota.",
+            "es": "Dadle suave con la cuchara de palo a cada bote en fila y escuchad cada nota."
+          },
+          "observar": {
+            "gl": "Se toca un bote de cada vez esperando que soe limpo.",
+            "es": "Si toca un bote cada vez esperando que suene limpio."
+          }
+        },
+        "compara": {
+          "pregunta_en": "High note jar or low note jar?",
+          "significado": {
+            "gl": "Bote de nota aguda ou nota grave?",
+            "es": "¿Bote de nota aguda o nota grave?"
+          },
+          "guia": {
+            "gl": "Toca o máis cheo e o máis baleiro para que sinale cal fixo a nota aguda («high»).",
+            "es": "Toca el más lleno y el más vacío para que señale cuál hizo la nota aguda («high»)."
+          },
+          "observar": {
+            "gl": "Se sinala o bote que soou máis agudo fronte ao grave.",
+            "es": "Si señala el bote que sonó más agudo frente al grave."
+          }
+        },
+        "explica": {
+          "pregunta_en": "Why do jars sound different?",
+          "significado": {
+            "gl": "Por que soan distinto os botes?",
+            "es": "¿Por qué suenan distinto los botes?"
+          },
+          "guia": {
+            "gl": "Sinala a altura da auga dentro dos dous botes e di a frase modelo.",
+            "es": "Señala la altura del agua dentro de los dos botes y di la frase modelo."
+          },
+          "observar": {
+            "gl": "Se mira o nivel diferente da auga ao oír a explicación.",
+            "es": "Si mira el nivel diferente del agua al oír la explicación."
+          },
+          "modelo_en": "Water height changes the tap sound.",
+          "modelo_significado": {
+            "gl": "A altura da auga cambia o son ao tocar.",
+            "es": "La altura del agua cambia el sonido al tocar."
+          }
+        }
       }
     },
     {
@@ -2969,7 +4261,7 @@
           "Smile in the shiny metal spoon."
         ],
         "nota": {
-          "gl": "Ao xirar a culler entre as dúas caras en «La cara en la cuchara», o adulto estende «spoon» ata describir o reflexo.",
+          "gl": "Ao xirar a culler entre as dúas caras en «A cara na culler», o adulto estende «spoon» ata describir o reflexo.",
           "es": "Al girar la cuchara entre ambas caras en «La cara en la cuchara», el adulto extiende «spoon» hasta describir el reflejo."
         },
         "significado": [
@@ -2986,6 +4278,74 @@
             "es": "Sonríe en la cuchara de metal brillante."
           }
         ]
+      },
+      "pensamiento": {
+        "edad_modo": "elige_dos",
+        "predice": {
+          "pregunta_en": "Inside or back of the spoon: is your face upside down?",
+          "significado": {
+            "gl": "Por dentro ou por detrás da culler: está a túa cara ao revés?",
+            "es": "¿Por dentro o por detrás de la cuchara: está tu cara del revés?"
+          },
+          "guia": {
+            "gl": "Ensina os dous lados da culler limpa antes de achegala á cara; pregunta en cal te verás do dereito ou ao revés.",
+            "es": "Enseña los dos lados de la cuchara limpia antes de acercarla a la cara; pregunta en cuál te verás del derecho o al revés."
+          },
+          "observar": {
+            "gl": "Se sinala un lado da culler antes de asomarse.",
+            "es": "Si señala un lado de la cuchara antes de asomarse."
+          }
+        },
+        "proba": {
+          "pregunta_en": "Peek at your smile in the spoon.",
+          "significado": {
+            "gl": "Asómate ao teu sorriso na culler.",
+            "es": "Asómate a tu sonrisa en la cuchara."
+          },
+          "guia": {
+            "gl": "Suxeitade a culler polo mango, asomade a meixela e o sorriso e xirade para o outro lado.",
+            "es": "Sujetad la cuchara por el mango, asomad la mejilla y la sonrisa y girad hacia el otro lado."
+          },
+          "observar": {
+            "gl": "Se ri ou move a meixela mirando o reflexo na culler.",
+            "es": "Si ríe o mueve la mejilla mirando el reflejo en la cuchara."
+          }
+        },
+        "compara": {
+          "pregunta_en": "Shiny mirror or upside-down spoon?",
+          "significado": {
+            "gl": "Espello brillante ou culler ao revés?",
+            "es": "¿Espejo brillante o cuchara al revés?"
+          },
+          "guia": {
+            "gl": "Compara o espello pequeno coa parte oca da culler para que sinale onde está ao revés.",
+            "es": "Compara el espejo pequeño con la parte hueca de la cuchara para que señale dónde está al revés."
+          },
+          "observar": {
+            "gl": "Se sinala a cara ao revés na culler fronte ao espello normal.",
+            "es": "Si señala la cara al revés en la cuchara frente al espejo normal."
+          }
+        },
+        "explica": {
+          "pregunta_en": "Why does the spoon flip your face?",
+          "significado": {
+            "gl": "Por que a culler pon a túa cara ao revés?",
+            "es": "¿Por qué la cuchara pone tu cara del revés?"
+          },
+          "guia": {
+            "gl": "Pasa o dedo pola curva brillante da culler e dálle o modelo curto.",
+            "es": "Pasa el dedo por la curva brillante de la cuchara y dale el modelo corto."
+          },
+          "observar": {
+            "gl": "Se toca a curva da culler ao escoitar o porqué.",
+            "es": "Si toca la curva de la cuchara al escuchar el porqué."
+          },
+          "modelo_en": "The curved shiny spoon bends light.",
+          "modelo_significado": {
+            "gl": "A culler curva e brillante dobra a luz.",
+            "es": "La cuchara curva y brillante dobla la luz."
+          }
+        }
       }
     },
     {
@@ -3022,7 +4382,7 @@
         },
         "fonema": "/w/ → /v/",
         "nota": {
-          "gl": "En «¿Qué venda absorbe?» comprobades que material queda mollado («wet») para vendar o peluche do «vet»: «wet» arredonda os beizos sen tocalos (/w/) e «vet» apoia os dentes de arriba no beizo inferior (/v/).",
+          "gl": "En «Que venda absorbe?» comprobades que material queda mollado («wet») para vendar o peluche do «vet»: «wet» arredonda os beizos sen tocalos (/w/) e «vet» apoia os dentes de arriba no beizo inferior (/v/).",
           "es": "En «¿Qué venda absorbe?» comprobáis qué material queda mojado («wet») para vendar el peluche del «vet»: «wet» redondea los labios sin tocarlos (/w/) y «vet» apoya los dientes de arriba en el labio inferior (/v/)."
         },
         "mision_acerto": {
@@ -3118,7 +4478,7 @@
           "The soft bandage soaks up the water."
         ],
         "nota": {
-          "gl": "Despois de predicir que material absorbe en «¿Qué venda absorbe?», o adulto modela a observación completa.",
+          "gl": "Despois de predicir que material absorbe en «Que venda absorbe?», o adulto modela a observación completa.",
           "es": "Después de predecir qué material absorbe en «¿Qué venda absorbe?», el adulto modela la observación completa."
         },
         "significado": [
@@ -3135,6 +4495,74 @@
             "es": "La venda suave absorbe el agua."
           }
         ]
+      },
+      "pensamiento": {
+        "edad_modo": "palabra_corta",
+        "predice": {
+          "pregunta_en": "What happens to cotton and plastic in water?",
+          "significado": {
+            "gl": "Que pasa co algodón e o plástico na auga?",
+            "es": "¿Qué pasa con el algodón y el plástico en el agua?"
+          },
+          "guia": {
+            "gl": "Antes de botar auga co contagotas, pregunta cal beberá a auga e deixa que o sinale ou o nomee, se quere.",
+            "es": "Antes de echar agua con el cuentagotas, pregunta cuál beberá el agua y deja que lo señale o lo nombre, si quiere."
+          },
+          "observar": {
+            "gl": "Se responde cunha palabra («cotton», «soak») ou frase curta.",
+            "es": "Si responde con una palabra («cotton», «soak») o frase corta."
+          }
+        },
+        "proba": {
+          "pregunta_en": "Soak the cotton bandage drop by drop.",
+          "significado": {
+            "gl": "Embeber a venda de algodón pinga a pinga.",
+            "es": "Empapa la venda de algodón gota a gota."
+          },
+          "guia": {
+            "gl": "Botade pingas sobre algodón, gasa e plástico e tocade coa pata do peluche.",
+            "es": "Echad gotas sobre algodón, gasa y plástico y tocad con la pata del peluche."
+          },
+          "observar": {
+            "gl": "Se bota pingas nos tres materiais observando onde queda arriba.",
+            "es": "Si echa gotas en los tres materiales observando dónde queda arriba."
+          }
+        },
+        "compara": {
+          "pregunta_en": "Which stays wet and which stays dry?",
+          "significado": {
+            "gl": "Cal queda mollado e cal queda seco?",
+            "es": "¿Cuál queda mojado y cuál queda seco?"
+          },
+          "guia": {
+            "gl": "Compara o algodón e o plástico tras as pingas para que diga cal absorbeu («wet cotton»).",
+            "es": "Compara el algodón y el plástico tras las gotas para que diga cuál absorbió («wet cotton»)."
+          },
+          "observar": {
+            "gl": "Se nomea o material que chuchou a auga cunha ou dúas palabras.",
+            "es": "Si nombra el material que absorbió el agua con una o dos palabras."
+          }
+        },
+        "explica": {
+          "pregunta_en": "Why did the vet pick soft cotton?",
+          "significado": {
+            "gl": "Por que elixiu a veterinaria algodón suave?",
+            "es": "¿Por qué eligió el veterinario algodón suave?"
+          },
+          "guia": {
+            "gl": "Recolle o que diga o neno e devólvelle o modelo curto do experimento.",
+            "es": "Recoge lo que diga el niño y devuélvele el modelo corto del experimento."
+          },
+          "observar": {
+            "gl": "Se explica cunha palabra («soak», «soft») por que serve para curar.",
+            "es": "Si explica con una palabra («soak», «soft») por qué sirve para curar."
+          },
+          "modelo_en": "Soft cotton soaks wet drops.",
+          "modelo_significado": {
+            "gl": "O algodón suave empapa as pingas.",
+            "es": "El algodón suave empapa las gotas."
+          }
+        }
       }
     },
     {
@@ -3171,7 +4599,7 @@
         },
         "fonema": "/b/ → /f/",
         "nota": {
-          "gl": "En «Escuchar el corazón», o latexo («beat») acelérase despois de correr cos pés («feet»): «beat» xunta e fai vibrar os dous beizos (/b/) e «feet» sopra suave entre os dentes e o beizo (/f/).",
+          "gl": "En «Escoitar o corazón», o latexo («beat») acelérase despois de correr cos pés («feet»): «beat» xunta e fai vibrar os dous beizos (/b/) e «feet» sopra suave entre os dentes e o beizo (/f/).",
           "es": "En «Escuchar el corazón», el latido («beat») se acelera después de correr con los pies («feet»): «beat» junta y hace vibrar los dos labios (/b/) y «feet» sopla suave entre los dientes y el labio (/f/)."
         },
         "mision_acerto": {
@@ -3267,7 +4695,7 @@
           "Feel your heart beat fast in your chest."
         ],
         "nota": {
-          "gl": "Ao comparar o pulso en repouso e despois de saltar en «Escuchar el corazón», o adulto encadea as catro palabras do experimento.",
+          "gl": "Ao comparar o pulso en repouso e despois de saltar en «Escoitar o corazón», o adulto encadea as catro palabras do experimento.",
           "es": "Al comparar el pulso en reposo y después de saltar en «Escuchar el corazón», el adulto encadena las cuatro palabras del experimento."
         },
         "significado": [
@@ -3284,6 +4712,74 @@
             "es": "Siente tu corazón latir rápido en el pecho."
           }
         ]
+      },
+      "pensamiento": {
+        "edad_modo": "palabra_corta",
+        "predice": {
+          "pregunta_en": "What happens to your heart after jumping?",
+          "significado": {
+            "gl": "Que lle pasa ao corazón despois de saltar?",
+            "es": "¿Qué le pasa al corazón después de saltar?"
+          },
+          "guia": {
+            "gl": "Antes de mover os pés e saltar, pregúntalle se o latexo vai ir amodo ou rápido.",
+            "es": "Antes de mover los pies y saltar, pregúntale si el latido va a ir despacio o rápido."
+          },
+          "observar": {
+            "gl": "Se di «fast» ou «slow» antes de probar co estetoscopio.",
+            "es": "Si dice «fast» o «slow» antes de probar con el estetoscopio."
+          }
+        },
+        "proba": {
+          "pregunta_en": "Listen to your heart beat in your chest.",
+          "significado": {
+            "gl": "Escoita como bate o teu corazón no peito.",
+            "es": "Escucha cómo late tu corazón en el pecho."
+          },
+          "guia": {
+            "gl": "Escoitade co embude no peito en calma, saltade dez segundos cos pés e volvede escoitar.",
+            "es": "Escuchad con el embudo en el pecho en calma, saltad diez segundos con los pies y volved a escuchar."
+          },
+          "observar": {
+            "gl": "Se nota o cambio de ritmo apoiando o embude no peito.",
+            "es": "Si nota el cambio de ritmo apoyando el embudo en el pecho."
+          }
+        },
+        "compara": {
+          "pregunta_en": "When was your heartbeat fast?",
+          "significado": {
+            "gl": "Cando foi rápido o teu latexo?",
+            "es": "¿Cuándo fue rápido tu latido?"
+          },
+          "guia": {
+            "gl": "Pídelle que marque o ritmo coas mans e diga dúas palabras: «fast beat» ou «slow beat».",
+            "es": "Pídele que marque el ritmo con las manos y diga dos palabras: «fast beat» o «slow beat»."
+          },
+          "observar": {
+            "gl": "Se expresa a diferenza entre calma e movemento cunha frase curta.",
+            "es": "Si expresa la diferencia entre calma y movimiento con una frase corta."
+          }
+        },
+        "explica": {
+          "pregunta_en": "Why did your heart beat fast?",
+          "significado": {
+            "gl": "Por que latexou rápido o teu corazón?",
+            "es": "¿Por qué latió rápido tu corazón?"
+          },
+          "guia": {
+            "gl": "Pon a man no peito xunto a el e di o modelo curto.",
+            "es": "Pon la mano en el pecho junto a él y di el modelo corto."
+          },
+          "observar": {
+            "gl": "Se relaciona o movemento dos pés co latexo rápido.",
+            "es": "Si relaciona el movimiento de los pies con el latido rápido."
+          },
+          "modelo_en": "Moving feet make heart beat fast.",
+          "modelo_significado": {
+            "gl": "Mover os pés fai bater rápido o corazón.",
+            "es": "Mover los pies hace latir rápido el corazón."
+          }
+        }
       }
     },
     {
@@ -3320,7 +4816,7 @@
         },
         "fonema": "/f/ → /d/",
         "nota": {
-          "gl": "En «Dos patas, cuatro patas» aparece un peixe («fish») sen patas que queda fóra dos dous aros: «fish» sopra aire polos dentes e o beizo (/f/) e «dish» dá un toque sonoro atrás dos dentes (/d/).",
+          "gl": "En «Dúas patas, catro patas» aparece un peixe («fish») sen patas que queda fóra dos dous aros: «fish» sopra aire polos dentes e o beizo (/f/) e «dish» dá un toque sonoro atrás dos dentes (/d/).",
           "es": "En «Dos patas, cuatro patas» aparece un pez («fish») sin patas que queda fuera de los dos aros: «fish» sopla aire por los dientes y el labio (/f/) y «dish» da un toque sonoro detrás de los dientes (/d/)."
         },
         "mision_acerto": {
@@ -3416,7 +4912,7 @@
           "Count four legs on the toy dog."
         ],
         "nota": {
-          "gl": "Mentres contan patas entre o aro do 2 e do 4 en «Dos patas, cuatro patas», o adulto amplía ata incluír o criterio numérico.",
+          "gl": "Mentres contan patas entre o aro do 2 e do 4 en «Dúas patas, catro patas», o adulto amplía ata incluír o criterio numérico.",
           "es": "Mientras cuentan patas entre el aro del 2 y del 4 en «Dos patas, cuatro patas», el adulto amplía hasta incluir el criterio numérico."
         },
         "significado": [
@@ -3433,6 +4929,74 @@
             "es": "Cuenta las cuatro patas del perro de juguete."
           }
         ]
+      },
+      "pensamiento": {
+        "edad_modo": "palabra_corta",
+        "predice": {
+          "pregunta_en": "How many legs: dog or fish?",
+          "significado": {
+            "gl": "Cantas patas: o can ou o peixe?",
+            "es": "¿Cuántas patas: el perro o el pez?"
+          },
+          "guia": {
+            "gl": "Antes de colocalos nos aros, ensina o can e o peixe de xoguete e pregunta cantas patas ten cada un.",
+            "es": "Antes de colocarlos en los aros, enseña el perro y el pez de juguete y pregunta cuántas patas tiene cada uno."
+          },
+          "observar": {
+            "gl": "Se responde cun número ou palabra («four», «none»).",
+            "es": "Si responde con un número o palabra («four», «none»)."
+          }
+        },
+        "proba": {
+          "pregunta_en": "Count the legs and sort the animals.",
+          "significado": {
+            "gl": "Conta as patas e clasifica os animais.",
+            "es": "Cuenta las patas y clasifica los animales."
+          },
+          "guia": {
+            "gl": "Tocade cada pata contando en alto e poñede os animais nos aros de 2, 4 ou sen patas.",
+            "es": "Tocad cada pata contando en alto y poned los animales en los aros de 2, 4 o sin patas."
+          },
+          "observar": {
+            "gl": "Se conta as patas tocando unha a unha antes de soltar o xoguete.",
+            "es": "Si cuenta las patas tocando una a una antes de soltar el juguete."
+          }
+        },
+        "compara": {
+          "pregunta_en": "Which animal has four legs: dog or fish?",
+          "significado": {
+            "gl": "Cal animal ten catro patas: can ou peixe?",
+            "es": "¿Qué animal tiene cuatro patas: perro o pez?"
+          },
+          "guia": {
+            "gl": "Pon un can e un peixe diante dos dous aros para que diga cal vai no aro do 4.",
+            "es": "Pon un perro y un pez delante de los dos aros para que diga cuál va en el aro del 4."
+          },
+          "observar": {
+            "gl": "Se di «dog» ou «four legs» sen dubidar.",
+            "es": "Si dice «dog» o «four legs» sin dudar."
+          }
+        },
+        "explica": {
+          "pregunta_en": "Why is the fish not in the four-leg hoop?",
+          "significado": {
+            "gl": "Por que o peixe non está no aro das catro patas?",
+            "es": "¿Por qué el pez no está en el aro de las cuatro patas?"
+          },
+          "guia": {
+            "gl": "Toca o corpo liso do peixe e dálle o modelo curto.",
+            "es": "Toca el cuerpo liso del pez y dale el modelo corto."
+          },
+          "observar": {
+            "gl": "Se nomea que o can ten catro patas e o peixe non.",
+            "es": "Si nombra que el perro tiene cuatro patas y el pez no."
+          },
+          "modelo_en": "Dog has four legs; fish swims.",
+          "modelo_significado": {
+            "gl": "O can ten catro patas; o peixe nada.",
+            "es": "El perro tiene cuatro patas; el pez nada."
+          }
+        }
       }
     },
     {
@@ -3469,7 +5033,7 @@
         },
         "fonema": "/s/ → /b/",
         "nota": {
-          "gl": "En «Con la lupa, más grande» mirades de preto para ver («see») detalles coma as ás dunha «bee»: «see» asubía continuo cos dentes xuntos (/s/) e «bee» pecha e vibra nos beizos (/b/).",
+          "gl": "En «Coa lupa, máis grande» mirades de preto para ver («see») detalles coma as ás dunha «bee»: «see» asubía continuo cos dentes xuntos (/s/) e «bee» pecha e vibra nos beizos (/b/).",
           "es": "En «Con la lupa, más grande» miráis de cerca para ver («see») detalles como las alas de una «bee»: «see» silba continuo con los dientes juntos (/s/) y «bee» cierra y vibra en los labios (/b/)."
         },
         "mision_acerto": {
@@ -3565,7 +5129,7 @@
           "Zoom in with the lens to see it large."
         ],
         "nota": {
-          "gl": "Mentres buscan a distancia exacta da lupa en «Con la lupa, más grande», o adulto describe o enfoque e o aumento.",
+          "gl": "Mentres buscan a distancia exacta da lupa en «Coa lupa, máis grande», o adulto describe o enfoque e o aumento.",
           "es": "Mientras buscan la distancia exacta de la lupa en «Con la lupa, más grande», el adulto describe el enfoque y el aumento."
         },
         "significado": [
@@ -3582,6 +5146,74 @@
             "es": "Acércate con la lupa para verla grande."
           }
         ]
+      },
+      "pensamiento": {
+        "edad_modo": "palabra_corta",
+        "predice": {
+          "pregunta_en": "What do you see with the lens?",
+          "significado": {
+            "gl": "Que ves coa lupa?",
+            "es": "¿Qué ves con la lupa?"
+          },
+          "guia": {
+            "gl": "Ensina unha pluma ou unha abella de xoguete e pregunta como se verá ao poñer a lupa encima.",
+            "es": "Enseña una pluma o una abeja de juguete y pregunta cómo se verá al poner la lupa encima."
+          },
+          "observar": {
+            "gl": "Se responde «big» ou «large» antes de mirar pola lupa.",
+            "es": "Si responde «big» o «large» antes de mirar por la lupa."
+          }
+        },
+        "proba": {
+          "pregunta_en": "Hold the lens handle and zoom in.",
+          "significado": {
+            "gl": "Suxeita o mango da lupa e achégate.",
+            "es": "Sujeta el mango de la lupa y acércate."
+          },
+          "guia": {
+            "gl": "Suxeitade a lupa polo mango sobre a pluma, a folla e a tea, achegando e afastando amodo.",
+            "es": "Sujetad la lupa por el mango sobre la pluma, la hoja y la tela, acercando y alejando despacio."
+          },
+          "observar": {
+            "gl": "Se axusta a distancia do mango ata ver nítido.",
+            "es": "Si ajusta la distancia del mango hasta ver nítido."
+          }
+        },
+        "compara": {
+          "pregunta_en": "Small without the lens or big with the lens?",
+          "significado": {
+            "gl": "Pequeno sen a lupa ou grande coa lupa?",
+            "es": "¿Pequeño sin la lupa o grande con la lupa?"
+          },
+          "guia": {
+            "gl": "Mira un detalle sen lupa e logo coa lupa; comentade que mudou; ti modelas «see large».",
+            "es": "Mira un detalle sin lupa y luego con la lupa; comentad qué cambió; tú modelas «see large»."
+          },
+          "observar": {
+            "gl": "Se describe en dúas palabras o cambio de tamaño.",
+            "es": "Si describe en dos palabras el cambio de tamaño."
+          }
+        },
+        "explica": {
+          "pregunta_en": "What makes the tiny bee look large?",
+          "significado": {
+            "gl": "Que fai que a abella pequena se vexa grande?",
+            "es": "¿Qué hace que la abeja pequeña se vea grande?"
+          },
+          "guia": {
+            "gl": "Toca con coidado o cristal curvo da lupa polo bordo e dálle o modelo.",
+            "es": "Toca con cuidado el cristal curvo de la lupa por el borde y dale el modelo."
+          },
+          "observar": {
+            "gl": "Se sinala a lente da lupa ao escoitar o modelo.",
+            "es": "Si señala la lente de la lupa al escuchar el modelo."
+          },
+          "modelo_en": "The curved lens zooms small things large.",
+          "modelo_significado": {
+            "gl": "A lente curva agranda as cousas pequenas.",
+            "es": "La lente curva agranda las cosas pequeñas."
+          }
+        }
       }
     },
     {
@@ -3618,7 +5250,7 @@
         },
         "fonema": "/k/ → /t/",
         "nota": {
-          "gl": "En «La camilla» esquivades os conos («cone») levando o peluche ao mesmo ritmo: «cone» golpea atrás na gorxa (/k/) e «tone» toca diante detrás dos dentes (/t/).",
+          "gl": "En «A padiola» esquivades os conos («cone») levando o peluche ao mesmo ritmo: «cone» golpea atrás na gorxa (/k/) e «tone» toca diante detrás dos dentes (/t/).",
           "es": "En «La camilla» esquiváis los conos («cone») llevando el peluche al mismo ritmo: «cone» golpea atrás en la garganta (/k/) y «tone» toca delante detrás de los dientes (/t/)."
         },
         "mision_acerto": {
@@ -3714,7 +5346,7 @@
           "Carry the cloth stretcher steady past the cone."
         ],
         "nota": {
-          "gl": "Ao acordar a velocidade entre os dous portadores en «La camilla», o adulto amplía ata a estabilidade conxunta.",
+          "gl": "Ao acordar a velocidade entre os dous portadores en «A padiola», o adulto amplía ata a estabilidade conxunta.",
           "es": "Al acordar la velocidad entre los dos portadores en «La camilla», el adulto amplía hasta la estabilidad conjunta."
         },
         "significado": [
@@ -3731,6 +5363,74 @@
             "es": "Llevad la camilla de tela firme hasta pasar el cono."
           }
         ]
+      },
+      "pensamiento": {
+        "edad_modo": "palabra_corta",
+        "predice": {
+          "pregunta_en": "What happens if we carry the stretcher fast?",
+          "significado": {
+            "gl": "Que pasa se levamos a padiola rápido?",
+            "es": "¿Qué pasa si llevamos la camilla rápido?"
+          },
+          "guia": {
+            "gl": "Coloca o peluche na tea antes de erguela e pregunta que pasará se un tira máis rápido ca o outro.",
+            "es": "Coloca el peluche en la tela antes de levantarla y pregunta qué pasará si uno tira más rápido que el otro."
+          },
+          "observar": {
+            "gl": "Se anticipa que o peluche pode caer ou moverse.",
+            "es": "Si anticipa que el peluche puede caer o moverse."
+          }
+        },
+        "proba": {
+          "pregunta_en": "Carry the cloth stretcher around the cone.",
+          "significado": {
+            "gl": "Leva a padiola de tea arredor do cono.",
+            "es": "Lleva la camilla de tela alrededor del cono."
+          },
+          "guia": {
+            "gl": "Collede a tea entre dous e levade o peluche paciente arredor dos conos ao mesmo paso.",
+            "es": "Coged la tela entre dos y llevad al peluche paciente alrededor de los conos al mismo paso."
+          },
+          "observar": {
+            "gl": "Se coordina cos pasos da outra persoa sen inclinar a tea.",
+            "es": "Si se coordina con los pasos de la otra persona sin inclinar la tela."
+          }
+        },
+        "compara": {
+          "pregunta_en": "Steady carry or shaky carry?",
+          "significado": {
+            "gl": "Levar firme ou levar abaneando?",
+            "es": "¿Llevar firme o llevar tambaleando?"
+          },
+          "guia": {
+            "gl": "Compara un paso desparello cun paso firme e comentade como ten que ir; ti modelas «carry steady».",
+            "es": "Compara un paso desigual con un paso firme y comentad cómo tiene que ir; tú modelas «carry steady»."
+          },
+          "observar": {
+            "gl": "Se di «steady» ao manter a tea recta.",
+            "es": "Si dice «steady» al mantener la tela recta."
+          }
+        },
+        "explica": {
+          "pregunta_en": "How do two friends carry steady?",
+          "significado": {
+            "gl": "Como levan firme entre dous?",
+            "es": "¿Cómo llevan firme entre dos?"
+          },
+          "guia": {
+            "gl": "Pausade diante da meta e resume co modelo curto.",
+            "es": "Pausad delante de la meta y resume con el modelo corto."
+          },
+          "observar": {
+            "gl": "Se mantén a tea tensa mirando á parella.",
+            "es": "Si mantiene la tela tensa mirando a la pareja."
+          },
+          "modelo_en": "Same pace keeps the stretcher steady.",
+          "modelo_significado": {
+            "gl": "O mesmo paso mantén a padiola firme.",
+            "es": "El mismo paso mantiene la camilla firme."
+          }
+        }
       }
     },
     {
@@ -3767,7 +5467,7 @@
         },
         "fonema": "/m/ → /s/",
         "nota": {
-          "gl": "En «Hacemos barro» botades seis culleradas («six») e mesturades («mix») terra e auga: «mix» pecha os beizos zumbando polo nariz (/m/) e «six» asubía polos dentes (/s/).",
+          "gl": "En «Facemos lama» botades seis culleradas («six») e mesturades («mix») terra e auga: «mix» pecha os beizos zumbando polo nariz (/m/) e «six» asubía polos dentes (/s/).",
           "es": "En «Hacemos barro» echáis seis cucharadas («six») y mezcláis («mix») tierra y agua: «mix» cierra los labios zumbando por la nariz (/m/) y «six» silba por los dientes (/s/)."
         },
         "mision_acerto": {
@@ -3863,7 +5563,7 @@
           "We mix the wet sticky mud."
         ],
         "nota": {
-          "gl": "Mentres axustan o punto de auga na maceta ou no barreño en «Hacemos barro», o adulto modela «mud» e a textura.",
+          "gl": "Mentres axustan o punto de auga na maceta ou no barreño en «Facemos lama», o adulto modela «mud» e a textura.",
           "es": "Mientras ajustan el punto de agua en la maceta o en el barreño en «Hacemos barro», el adulto modela «mud» y la textura."
         },
         "significado": [
@@ -3880,6 +5580,74 @@
             "es": "Mezclamos el barro mojado y pegajoso."
           }
         ]
+      },
+      "pensamiento": {
+        "edad_modo": "palabra_corta",
+        "predice": {
+          "pregunta_en": "What happens when we mix earth and water?",
+          "significado": {
+            "gl": "Que pasa cando mesturamos terra e auga?",
+            "es": "¿Qué pasa cuando mezclamos tierra y agua?"
+          },
+          "guia": {
+            "gl": "Con terra seca nun barreño e a xerra de auga ao lado, pregunta que vai saír ao mesturar.",
+            "es": "Con tierra seca en un barreño y la jarra de agua al lado, pregunta qué va a salir al mezclar."
+          },
+          "observar": {
+            "gl": "Se nomea «mud» ou «wet» antes de botar a auga.",
+            "es": "Si nombra «mud» o «wet» antes de echar el agua."
+          }
+        },
+        "proba": {
+          "pregunta_en": "Mix six spoons of water in mud.",
+          "significado": {
+            "gl": "Mestura seis culleres de auga no barro.",
+            "es": "Mezcla seis cucharas de agua en el barro."
+          },
+          "guia": {
+            "gl": "Botade seis culleres de auga pouco a pouco sobre a terra seca e remexede coa culler.",
+            "es": "Echad seis cucharas de agua poco a poco sobre la tierra seca y removed con la cuchara."
+          },
+          "observar": {
+            "gl": "Se observa como cambia a cor e a textura ao mesturar.",
+            "es": "Si observa cómo cambia el color y la textura al mezclar."
+          }
+        },
+        "compara": {
+          "pregunta_en": "Dry earth or sticky mud?",
+          "significado": {
+            "gl": "Terra seca ou barro pegañento?",
+            "es": "¿Tierra seca o barro pegajoso?"
+          },
+          "guia": {
+            "gl": "Deixa un pouco de terra seca á parte e tocade a mestura; ti modelas «sticky mud».",
+            "es": "Deja un poco de tierra seca aparte y tocad la mezcla; tú modelas «sticky mud»."
+          },
+          "observar": {
+            "gl": "Se compara a terra solta co barro pegañento nunha frase curta.",
+            "es": "Si compara la tierra suelta con el barro pegajoso en una frase corta."
+          }
+        },
+        "explica": {
+          "pregunta_en": "Why did the earth turn sticky?",
+          "significado": {
+            "gl": "Por que se volveu pegañenta a terra?",
+            "es": "¿Por qué se volvió pegajosa la tierra?"
+          },
+          "guia": {
+            "gl": "Toca un chisco de barro entre os dedos e di o modelo curto.",
+            "es": "Toca un poco de barro entre los dedos y di el modelo corto."
+          },
+          "observar": {
+            "gl": "Se describe que a auga uniu a terra.",
+            "es": "Si describe que el agua unió la tierra."
+          },
+          "modelo_en": "Water makes dry earth sticky mud.",
+          "modelo_significado": {
+            "gl": "A auga fai barro pegañento da terra seca.",
+            "es": "El agua hace barro pegajoso de la tierra seca."
+          }
+        }
       }
     },
     {
@@ -3916,7 +5684,7 @@
         },
         "fonema": "/f/ → /v/",
         "nota": {
-          "gl": "En «El molinillo de viento» dádeslle aire co abanico («fan»): «fan» sopra suave sen vibrar (/f/) e «van» fai vibrar o beizo inferior contra os dentes (/v/).",
+          "gl": "En «O muíño de vento» dádeslle aire co abanico («fan»): «fan» sopra suave sen vibrar (/f/) e «van» fai vibrar o beizo inferior contra os dentes (/v/).",
           "es": "En «El molinillo de viento» le dais aire con el abanico («fan»): «fan» sopla suave sin vibrar (/f/) y «van» hace vibrar el labio inferior contra los dientes (/v/)."
         },
         "mision_acerto": {
@@ -4012,7 +5780,7 @@
           "The pinwheel blades spin on a windy day."
         ],
         "nota": {
-          "gl": "Ao comparar o abanico e o vento da ventá en «El molinillo de viento», o adulto conecta peza, movemento e clima.",
+          "gl": "Ao comparar o abanico e o vento da ventá en «O muíño de vento», o adulto conecta peza, movemento e clima.",
           "es": "Al comparar el abanico y el viento de la ventana en «El molinillo de viento», el adulto conecta pieza, movimiento y clima."
         },
         "significado": [
@@ -4029,6 +5797,74 @@
             "es": "Las aspas del molinillo giran en un día de viento."
           }
         ]
+      },
+      "pensamiento": {
+        "edad_modo": "palabra_corta",
+        "predice": {
+          "pregunta_en": "What makes the pinwheel blade spin?",
+          "significado": {
+            "gl": "Que fai xirar as aspas do muíño de vento?",
+            "es": "¿Qué hace girar las aspas del molinillo?"
+          },
+          "guia": {
+            "gl": "Co muíño quieto na man e o abanico diante, pregunta que fará xirar as aspas.",
+            "es": "Con el molinillo quieto en la mano y el abanico delante, pregunta qué hará girar las aspas."
+          },
+          "observar": {
+            "gl": "Se sinala ou nomea «fan» ou «wind».",
+            "es": "Si señala o nombra «fan» o «wind»."
+          }
+        },
+        "proba": {
+          "pregunta_en": "Wave the fan so the blades spin.",
+          "significado": {
+            "gl": "Abana o abano para que xiren as aspas.",
+            "es": "Mueve el abanico para que giren las aspas."
+          },
+          "guia": {
+            "gl": "Abanicade o muíño primeiro de lado e logo de fronte ata que as aspas xiren rápido.",
+            "es": "Abanicad el molinillo primero de lado y luego de frente hasta que las aspas giren rápido."
+          },
+          "observar": {
+            "gl": "Se busca o ángulo onde o vento do abanico move máis as aspas.",
+            "es": "Si busca el ángulo donde el viento del abanico mueve más las aspas."
+          }
+        },
+        "compara": {
+          "pregunta_en": "No wind or a windy day?",
+          "significado": {
+            "gl": "Sen vento ou un día de vento?",
+            "es": "¿Sin viento o un día de viento?"
+          },
+          "guia": {
+            "gl": "Para o abanico e volve abanicar rápido para que diga cando xira («windy spin»).",
+            "es": "Para el abanico y vuelve a abanicar rápido para que diga cuándo gira («windy spin»)."
+          },
+          "observar": {
+            "gl": "Se distingue sen vento (quieto) fronte a vento forte (xiro).",
+            "es": "Si distingue sin viento (quieto) frente a viento fuerte (giro)."
+          }
+        },
+        "explica": {
+          "pregunta_en": "Why does the pinwheel spin?",
+          "significado": {
+            "gl": "Por que xira o muíño de vento?",
+            "es": "¿Por qué gira el molinillo?"
+          },
+          "guia": {
+            "gl": "Mostra as aspas dobradas onde bate o aire e dálle o modelo curto.",
+            "es": "Muestra las aspas dobladas donde choca el aire y dale el modelo corto."
+          },
+          "observar": {
+            "gl": "Se sinala as aspas ao dicir que o aire as empuxa.",
+            "es": "Si señala las aspas al decir que el aire las empuja."
+          },
+          "modelo_en": "Wind from the fan spins blades.",
+          "modelo_significado": {
+            "gl": "O vento do abanico fai xirar as aspas.",
+            "es": "El viento del abanico hace girar las aspas."
+          }
+        }
       }
     },
     {
@@ -4065,7 +5901,7 @@
         },
         "fonema": "/z/ → /b/",
         "nota": {
-          "gl": "En «La orquesta de la tormenta» mesturades o vento vibrante («zoom») co trono («boom»): «zoom» asubía vibrando polos dentes (/z/) e «boom» estala nos beizos pechados (/b/).",
+          "gl": "En «A orquestra da tormenta» mesturades o vento vibrante («zoom») co trono («boom»): «zoom» asubía vibrando polos dentes (/z/) e «boom» estala nos beizos pechados (/b/).",
           "es": "En «La orquesta de la tormenta» mezcláis el viento vibrante («zoom») con el trueno («boom»): «zoom» silba vibrando por los dientes (/z/) y «boom» estalla en los labios cerrados (/b/)."
         },
         "mision_acerto": {
@@ -4161,7 +5997,7 @@
           "Shake the rice rainstick for a stormy boom."
         ],
         "nota": {
-          "gl": "Esperando cada quen a súa quenda na historia de «La orquesta de la tormenta», o adulto enlaza instrumento e efecto sonoro.",
+          "gl": "Esperando cada quen a súa quenda na historia de «A orquestra da tormenta», o adulto enlaza instrumento e efecto sonoro.",
           "es": "Esperando cada cual su turno en la historia de «La orquesta de la tormenta», el adulto enlaza instrumento y efecto sonoro."
         },
         "significado": [
@@ -4178,6 +6014,74 @@
             "es": "Agita el palo de lluvia de arroz para un trueno de tormenta."
           }
         ]
+      },
+      "pensamiento": {
+        "edad_modo": "palabra_corta",
+        "predice": {
+          "pregunta_en": "What sounds inside when you shake the rainstick?",
+          "significado": {
+            "gl": "Que soa dentro cando abaneas o pau de chuvia?",
+            "es": "¿Qué suena dentro cuando agitas el palo de lluvia?"
+          },
+          "guia": {
+            "gl": "Antes de abanealo, ensina o tubo de cartón e un pouco de arroz fóra; pregunta que soará dentro.",
+            "es": "Antes de agitarlo, enseña el tubo de cartón y un poco de arroz fuera; pregunta qué sonará dentro."
+          },
+          "observar": {
+            "gl": "Se responde «rice» ou «rain» antes de inclinar o tubo.",
+            "es": "Si responde «rice» o «rain» antes de inclinar el tubo."
+          }
+        },
+        "proba": {
+          "pregunta_en": "Shake the rainstick slowly, then fast.",
+          "significado": {
+            "gl": "Move o pau de choiva amodo e logo rápido.",
+            "es": "Mueve el palo de lluvia despacio y luego rápido."
+          },
+          "guia": {
+            "gl": "Inclinade amodo o pau de chuvia para a chuvia suave e petade na cartolina e no tambor para o trebón.",
+            "es": "Inclinad despacio el palo de lluvia para la lluvia suave y golpead la cartulina y el tambor para el trueno."
+          },
+          "observar": {
+            "gl": "Se alterna o son suave do arroz co golpe forte da tormenta.",
+            "es": "Si alterna el sonido suave del arroz con el golpe fuerte de la tormenta."
+          }
+        },
+        "compara": {
+          "pregunta_en": "Soft rain or a stormy boom?",
+          "significado": {
+            "gl": "Chuvia suave ou un estrondo de tormenta?",
+            "es": "¿Lluvia suave o un estruendo de tormenta?"
+          },
+          "guia": {
+            "gl": "Facede primeiro o arroz amodo e logo o tambor forte; sinalade cal soa a tormenta; ti modelas «stormy boom».",
+            "es": "Haced primero el arroz despacio y luego el tambor fuerte; señalad cuál suena a tormenta; tú modelas «stormy boom»."
+          },
+          "observar": {
+            "gl": "Se nomea cada son do experimento cunha ou dúas palabras.",
+            "es": "Si nombra cada sonido del experimento con una o dos palabras."
+          }
+        },
+        "explica": {
+          "pregunta_en": "Why does the rainstick sound like rain?",
+          "significado": {
+            "gl": "Por que soa a chuvia o pau de chuvia?",
+            "es": "¿Por qué suena a lluvia el palo de lluvia?"
+          },
+          "guia": {
+            "gl": "Inclinade o tubo moi amodo vendo caer o arroz polo interior e dálle o modelo.",
+            "es": "Inclinad el tubo muy despacio viendo caer el arroz por el interior y dale el modelo."
+          },
+          "observar": {
+            "gl": "Se segue co oído o movemento do arroz ao caer.",
+            "es": "Si sigue con el oído el movimiento del arroz al caer."
+          },
+          "modelo_en": "Falling rice makes a stormy sound.",
+          "modelo_significado": {
+            "gl": "O arroz ao caer fai son de tormenta.",
+            "es": "El arroz al caer hace sonido de tormenta."
+          }
+        }
       }
     },
     {
@@ -4214,7 +6118,7 @@
         },
         "fonema": "/s/ → /f/",
         "nota": {
-          "gl": "En «La sombra y el sol» saídes ao sol («sun») xogar coas sombras («fun»): «sun» asubía polos dentes (/s/) e «fun» sopra entre os dentes e o beizo inferior (/f/).",
+          "gl": "En «A sombra e o sol» saídes ao sol («sun») xogar coas sombras («fun»): «sun» asubía polos dentes (/s/) e «fun» sopra entre os dentes e o beizo inferior (/f/).",
           "es": "En «La sombra y el sol» salís al sol («sun») a jugar con las sombras («fun»): «sun» silba por los dientes (/s/) y «fun» sopla entre los dientes y el labio inferior (/f/)."
         },
         "mision_acerto": {
@@ -4310,7 +6214,7 @@
           "Draw the shadow with chalk in the bright sun."
         ],
         "nota": {
-          "gl": "Ao comparar a marca da mañá coa da tarde en «La sombra y el sol», o adulto amplía ata explicar o cambio solar.",
+          "gl": "Ao comparar a marca da mañá coa da tarde en «A sombra e o sol», o adulto amplía ata explicar o cambio solar.",
           "es": "Al comparar la marca de la mañana con la de la tarde en «La sombra y el sol», el adulto amplía hasta explicar el cambio solar."
         },
         "significado": [
@@ -4327,6 +6231,74 @@
             "es": "Dibuja la sombra con tiza al sol brillante."
           }
         ]
+      },
+      "pensamiento": {
+        "edad_modo": "palabra_corta",
+        "predice": {
+          "pregunta_en": "Where will the chalk shadow move in the sun?",
+          "significado": {
+            "gl": "Cara a onde se moverá a sombra de xiz ao sol?",
+            "es": "¿Hacia dónde se moverá la sombra de tiza al sol?"
+          },
+          "guia": {
+            "gl": "No patio ao sol, debuxade o pé quieto cun xiz e pregunta se a sombra quedará sempre no mesmo sitio.",
+            "es": "En el patio al sol, dibujad el pie quieto con tiza y pregunta si la sombra quedará siempre en el mismo sitio."
+          },
+          "observar": {
+            "gl": "Se responde si ou non ou sinala cara a onde irá a sombra.",
+            "es": "Si responde sí o no o señala hacia dónde irá la sombra."
+          }
+        },
+        "proba": {
+          "pregunta_en": "Draw your bright shadow with chalk.",
+          "significado": {
+            "gl": "Debuxa a túa sombra brillante con xiz.",
+            "es": "Dibuja tu sombra brillante con tiza."
+          },
+          "guia": {
+            "gl": "Co sombreiro posto, marcade o contorno da sombra no chan con xiz e mirade de novo máis tarde.",
+            "es": "Con el sombrero puesto, marcad el contorno de la sombra en el suelo con tiza y mirad de nuevo más tarde."
+          },
+          "observar": {
+            "gl": "Se rodea a silueta con xiz sen mover os pés da marca.",
+            "es": "Si rodea la silueta con tiza sin mover los pies de la marca."
+          }
+        },
+        "compara": {
+          "pregunta_en": "Old chalk line or new shadow?",
+          "significado": {
+            "gl": "Liña vella de xiz ou sombra nova?",
+            "es": "¿Línea vieja de tiza o sombra nueva?"
+          },
+          "guia": {
+            "gl": "Ao volver poñer os pés na marca, compara a liña vella coa sombra actual e di que cambiou.",
+            "es": "Al volver a poner los pies en la marca, compara la línea vieja con la sombra actual y di qué cambió."
+          },
+          "observar": {
+            "gl": "Se nota que a sombra se desprazou respecto ao debuxo de xiz.",
+            "es": "Si nota que la sombra se desplazó respecto al dibujo de tiza."
+          }
+        },
+        "explica": {
+          "pregunta_en": "Why did the shadow move from the chalk?",
+          "significado": {
+            "gl": "Por que se moveu a sombra do xiz?",
+            "es": "¿Por qué se movió la sombra de la tiza?"
+          },
+          "guia": {
+            "gl": "Sinala sen mirar directamente ao sol cara onde cambiou a luz e di o modelo curto.",
+            "es": "Señala sin mirar directamente al sol hacia dónde cambió la luz y di el modelo corto."
+          },
+          "observar": {
+            "gl": "Se relaciona o movemento do sol co cambio da sombra.",
+            "es": "Si relaciona el movimiento del sol con el cambio de la sombra."
+          },
+          "modelo_en": "Bright sun moves the shadow line.",
+          "modelo_significado": {
+            "gl": "O sol brillante move a liña da sombra.",
+            "es": "El sol brillante mueve la línea de la sombra."
+          }
+        }
       }
     },
     {
@@ -4363,7 +6335,7 @@
         },
         "fonema": "/h/ → /k/",
         "nota": {
-          "gl": "En «¿Qué ropa pide el tiempo?» elixides roupa coma o sombreiro («hat»): «hat» solta un alento suave aberto (/h/) e «cat» golpea atrás na gorxa (/k/).",
+          "gl": "En «Que roupa pide o tempo?» elixides roupa coma o sombreiro («hat»): «hat» solta un alento suave aberto (/h/) e «cat» golpea atrás na gorxa (/k/).",
           "es": "En «¿Qué ropa pide el tiempo?» elegís ropa como el sombrero («hat»): «hat» suelta un aliento suave abierto (/h/) y «cat» golpea atrás en la garganta (/k/)."
         },
         "mision_acerto": {
@@ -4459,7 +6431,7 @@
           "Wear the raincoat with the hood to stay dry."
         ],
         "nota": {
-          "gl": "Ao comprobar á volta se a roupa escollida serviu en «¿Qué ropa pide el tiempo?», o adulto modela roupa e clima.",
+          "gl": "Ao comprobar á volta se a roupa escollida serviu en «Que roupa pide o tempo?», o adulto modela roupa e clima.",
           "es": "Al comprobar a la vuelta si la ropa elegida sirvió en «¿Qué ropa pide el tiempo?», el adulto modela ropa y clima."
         },
         "significado": [
@@ -4476,6 +6448,74 @@
             "es": "Ponte el chubasquero con la capucha para estar seco."
           }
         ]
+      },
+      "pensamiento": {
+        "edad_modo": "palabra_corta",
+        "predice": {
+          "pregunta_en": "What do you wear in rain: hat or raincoat?",
+          "significado": {
+            "gl": "Que pos na chuvia: sombreiro ou chuvasqueiro?",
+            "es": "¿Qué pones en la lluvia: sombrero o chubasquero?"
+          },
+          "guia": {
+            "gl": "Coa tarxeta de chuvia na man e o boneco diante, pregunta que roupa pide este tempo.",
+            "es": "Con la tarjeta de lluvia en la mano y el muñeco delante, pregunta qué ropa pide este tiempo."
+          },
+          "observar": {
+            "gl": "Se escolle e nomea «raincoat» ou «hood».",
+            "es": "Si elige y nombra «raincoat» o «hood»."
+          }
+        },
+        "proba": {
+          "pregunta_en": "Put on the raincoat hood to stay dry.",
+          "significado": {
+            "gl": "Pon a carapucha do chuvasqueiro para ir seco.",
+            "es": "Pon la capucha del chubasquero para ir seco."
+          },
+          "guia": {
+            "gl": "Vestide o boneco grande co chuvasqueiro e subídelle a carapucha para protexelo.",
+            "es": "Vestid al muñeco grande con el chubasquero y subidle la capucha para protegerlo."
+          },
+          "observar": {
+            "gl": "Se coloca a prenda adecuada para a tarxeta do tempo.",
+            "es": "Si coloca la prenda adecuada para la tarjeta del tiempo."
+          }
+        },
+        "compara": {
+          "pregunta_en": "Which keeps the cat dry: hat or hood?",
+          "significado": {
+            "gl": "Cal mantén seco o gato: sombreiro ou carapucha?",
+            "es": "¿Cuál mantiene seco al gato: sombrero o capucha?"
+          },
+          "guia": {
+            "gl": "Proba cunhas pingas suaves sobre a tea do abrigo e sobre o chuvasqueiro para ver cal queda seco.",
+            "es": "Prueba con unas gotas suaves sobre la tela del abrigo y sobre el chubasquero para ver cuál queda seco."
+          },
+          "observar": {
+            "gl": "Se compara o tecido impermeable co de abrigo en dúas palabras.",
+            "es": "Si compara el tejido impermeable con el de abrigo en dos palabras."
+          }
+        },
+        "explica": {
+          "pregunta_en": "Why do we wear a raincoat in rain?",
+          "significado": {
+            "gl": "Por que pomos chuvasqueiro cando chove?",
+            "es": "¿Por qué ponemos chubasquero cuando llueve?"
+          },
+          "guia": {
+            "gl": "Toca a superficie lisa do chuvasqueiro onde esvara a auga e di o modelo.",
+            "es": "Toca la superficie lisa del chubasquero donde resbala el agua y di el modelo."
+          },
+          "observar": {
+            "gl": "Se di que o chuvasqueiro non deixa pasar a auga.",
+            "es": "Si dice que el chubasquero no deja pasar el agua."
+          },
+          "modelo_en": "Raincoat hood keeps us dry.",
+          "modelo_significado": {
+            "gl": "A carapucha do chuvasqueiro mantennos secos.",
+            "es": "La capucha del chubasquero nos mantiene secos."
+          }
+        }
       }
     },
     {
@@ -4512,7 +6552,7 @@
         },
         "fonema": "/sp-/ → /p-/",
         "nota": {
-          "gl": "En «Colores que nacen» mesturades pintura dun bote («pot») ata facer unha mancha nova («spot»): «spot» arrinca co asubío /s/ antes do /p/ e «pot» sae directo en /p/.",
+          "gl": "En «Cores que nacen» mesturades pintura dun bote («pot») ata facer unha mancha nova («spot»): «spot» arrinca co asubío /s/ antes do /p/ e «pot» sae directo en /p/.",
           "es": "En «Colores que nacen» mezcláis pintura de un bote («pot») hasta hacer una mancha nueva («spot»): «spot» arranca con el silbido /s/ antes de la /p/ y «pot» sale directo en /p/."
         },
         "mision_acerto": {
@@ -4608,7 +6648,7 @@
           "Mix the paint with a brush to make green."
         ],
         "nota": {
-          "gl": "Ao comprobar se a predición da cor acerta en «Colores que nacen», o adulto expande da pintura ata o arco da vella.",
+          "gl": "Ao comprobar se a predición da cor acerta en «Cores que nacen», o adulto expande da pintura ata o arco da vella.",
           "es": "Al comprobar si la predicción del color acierta en «Colores que nacen», el adulto expande de la pintura hasta el arcoíris."
         },
         "significado": [
@@ -4625,6 +6665,74 @@
             "es": "Mezcla la pintura con el pincel para hacer verde."
           }
         ]
+      },
+      "pensamiento": {
+        "edad_modo": "explica_because",
+        "predice": {
+          "pregunta_en": "What color appears if we mix yellow and blue paint?",
+          "significado": {
+            "gl": "Que cor sae se mesturamos pintura amarela e azul?",
+            "es": "¿Qué color sale si mezclamos pintura amarilla y azul?"
+          },
+          "guia": {
+            "gl": "Cos tres botes á vista (vermello, amarelo, azul), pide que prediga que cor nacerá antes de mollar o pincel.",
+            "es": "Con los tres botes a la vista (rojo, amarillo, azul), pide que prediga qué color nacerá antes de mojar el pincel."
+          },
+          "observar": {
+            "gl": "Se formula unha predición clara («green») antes de mesturar.",
+            "es": "Si formula una predicción clara («green») antes de mezclar."
+          }
+        },
+        "proba": {
+          "pregunta_en": "Mix yellow and blue paint with the brush.",
+          "significado": {
+            "gl": "Mestura pintura amarela e azul co pincel.",
+            "es": "Mezcla pintura amarilla y azul con el pincel."
+          },
+          "guia": {
+            "gl": "Poñede un punto amarelo e un punto azul no prato e mesturade co pincel groso.",
+            "es": "Poned un punto amarillo y un punto azul en el plato y mezclad con el pincel grueso."
+          },
+          "observar": {
+            "gl": "Se observa o cambio progresivo de cor mentres mestura.",
+            "es": "Si observa el cambio progresivo de color mientras mezcla."
+          }
+        },
+        "compara": {
+          "pregunta_en": "Compare the yellow spot, blue spot and green paint.",
+          "significado": {
+            "gl": "Compara o punto amarelo, o azul e a pintura verde.",
+            "es": "Compara el punto amarillo, el azul y la pintura verde."
+          },
+          "guia": {
+            "gl": "Deixa un punto sen mesturar ao lado da mestura nova para comparar os tres tons.",
+            "es": "Deja un punto sin mezclar al lado de la mezcla nueva para comparar los tres tonos."
+          },
+          "observar": {
+            "gl": "Se sinala e nomea os dous orixinais e a cor nova nacida.",
+            "es": "Si señala y nombra los dos originales y el color nuevo nacido."
+          }
+        },
+        "explica": {
+          "pregunta_en": "Why did we get green paint?",
+          "significado": {
+            "gl": "Por que saíu pintura verde?",
+            "es": "¿Por qué salió pintura verde?"
+          },
+          "guia": {
+            "gl": "Pídelle que explique cun «because» e devólvelle o modelo completo.",
+            "es": "Pídele que explique con un «because» y devuélvele el modelo completo."
+          },
+          "observar": {
+            "gl": "Se usa «because» ou a relación causa-efecto ao explicar a mestura.",
+            "es": "Si usa «because» o la relación causa-efecto al explicar la mezcla."
+          },
+          "modelo_en": "It turns green because yellow and blue mix.",
+          "modelo_significado": {
+            "gl": "Vólvese verde porque se mesturan amarelo e azul.",
+            "es": "Se vuelve verde porque se mezclan amarillo y azul."
+          }
+        }
       }
     },
     {
@@ -4661,7 +6769,7 @@
         },
         "fonema": "/gl-/ → /l-/",
         "nota": {
-          "gl": "En «El mundo de colores» a lanterna fai un brillo de cor («glow») polo celofán: «glow» empeza cun golpe atrás na gorxa /g/ pegado ao /l/ e «low» vai directo á lingua arriba en /l/.",
+          "gl": "En «O mundo de cores» a lanterna fai un brillo de cor («glow») polo celofán: «glow» empeza cun golpe atrás na gorxa /g/ pegado ao /l/ e «low» vai directo á lingua arriba en /l/.",
           "es": "En «El mundo de colores» la linterna hace un brillo de color («glow») por el celofán: «glow» empieza con un golpe atrás en la garganta /g/ pegado a la /l/ y «low» va directo a la lengua arriba en /l/."
         },
         "mision_acerto": {
@@ -4757,7 +6865,7 @@
           "Blend two filters for a colorful glow on the wall."
         ],
         "nota": {
-          "gl": "Cando xuntan dous papeis celofán diante da lanterna en «El mundo de colores», o adulto enlaza obxecto, mestura e luz.",
+          "gl": "Cando xuntan dous papeis celofán diante da lanterna en «O mundo de cores», o adulto enlaza obxecto, mestura e luz.",
           "es": "Cuando juntan dos papeles celofán delante de la linterna en «El mundo de colores», el adulto enlaza objeto, mezcla y luz."
         },
         "significado": [
@@ -4774,6 +6882,74 @@
             "es": "Junta dos filtros para un brillo de colores en la pared."
           }
         ]
+      },
+      "pensamiento": {
+        "edad_modo": "explica_because",
+        "predice": {
+          "pregunta_en": "What color do two filters make together?",
+          "significado": {
+            "gl": "Que cor fan dous filtros xuntos?",
+            "es": "¿Qué color hacen dos filtros juntos?"
+          },
+          "guia": {
+            "gl": "Suxeitando o marco vermello e o azul fronte á lanterna, pregunta que cor proxectarán ao xuntarse.",
+            "es": "Sujetando el marco rojo y el azul frente a la linterna, pregunta qué color proyectarán al juntarse."
+          },
+          "observar": {
+            "gl": "Se anticipa unha cor diferente ao cruzar os dous filtros.",
+            "es": "Si anticipa un color diferente al cruzar los dos filtros."
+          }
+        },
+        "proba": {
+          "pregunta_en": "Put two filters in front of the light.",
+          "significado": {
+            "gl": "Pon dous filtros diante da luz.",
+            "es": "Pon dos filtros delante de la luz."
+          },
+          "guia": {
+            "gl": "Proxectade coa lanterna polo celofán dunha cor e logo superpoñede o segundo marco diante.",
+            "es": "Proyectad con la linterna por el celofán de un color y luego superponed el segundo marco delante."
+          },
+          "observar": {
+            "gl": "Se alinea os dous marcos co fío de luz cara á parede.",
+            "es": "Si alinea los dos marcos con el haz de luz hacia la pared."
+          }
+        },
+        "compara": {
+          "pregunta_en": "Compare one filter and two filters.",
+          "significado": {
+            "gl": "Compara un filtro e dous filtros.",
+            "es": "Compara un filtro y dos filtros."
+          },
+          "guia": {
+            "gl": "Alterna un só marco e os dous xuntos na parede para comparar cor e intensidade.",
+            "es": "Alterna un solo marco y los dos juntos en la pared para comparar color e intensidad."
+          },
+          "observar": {
+            "gl": "Se describe como cambia a luz ao cruzar os dous celofáns.",
+            "es": "Si describe cómo cambia la luz al cruzar los dos celofanes."
+          }
+        },
+        "explica": {
+          "pregunta_en": "Why is the light on the wall a new color?",
+          "significado": {
+            "gl": "Por que a luz da parede ten unha cor nova?",
+            "es": "¿Por qué la luz de la pared tiene un color nuevo?"
+          },
+          "guia": {
+            "gl": "Anímao a explicar por que cambia a luz usando «because» e dálle o modelo.",
+            "es": "Anímalo a explicar por qué cambia la luz usando «because» y dale el modelo."
+          },
+          "observar": {
+            "gl": "Se explica que a luz atravesa os dous filtros á vez.",
+            "es": "Si explica que la luz atraviesa los dos filtros a la vez."
+          },
+          "modelo_en": "The glow changes because two filters blend the light.",
+          "modelo_significado": {
+            "gl": "O brillo cambia porque dous filtros mesturan a luz.",
+            "es": "El brillo cambia porque dos filtros mezclan la luz."
+          }
+        }
       }
     },
     {
@@ -4810,7 +6986,7 @@
         },
         "fonema": "/l/ → /r/",
         "nota": {
-          "gl": "En «La mariposa igual», a metade esquerda coincide coa dereita («right») grazas á simetría que vedes co espello e a luz («light»): /l/ apoia a lingua detrás dos dentes e /r/ recóllea sen tocar o padal.",
+          "gl": "En «A bolboreta igual», a metade esquerda coincide coa dereita («right») grazas á simetría que vedes co espello e a luz («light»): /l/ apoia a lingua detrás dos dentes e /r/ recóllea sen tocar o padal.",
           "es": "En «La mariposa igual», la mitad izquierda coincide con la derecha («right») gracias a la simetría que veis con el espejo y la luz («light»): /l/ apoya la lengua detrás de los dientes y /r/ la recoge sin tocar el paladar."
         },
         "mision_acerto": {
@@ -4906,7 +7082,7 @@
           "Fold the paper so the butterfly wings stay equal."
         ],
         "nota": {
-          "gl": "Ao buscar simetrías pola sala despois do debuxo en «La mariposa igual», o adulto amplía ata nomear a igualdade das dúas ás.",
+          "gl": "Ao buscar simetrías pola sala despois do debuxo en «A bolboreta igual», o adulto amplía ata nomear a igualdade das dúas ás.",
           "es": "Al buscar simetrías por la sala después del dibujo en «La mariposa igual», el adulto amplía hasta nombrar la igualdad de ambas alas."
         },
         "significado": [
@@ -4923,6 +7099,74 @@
             "es": "Dobla el papel para que las alas de la mariposa queden iguales."
           }
         ]
+      },
+      "pensamiento": {
+        "edad_modo": "explica_because",
+        "predice": {
+          "pregunta_en": "If we fold the paper, will both wings match?",
+          "significado": {
+            "gl": "Se dobramos o papel, quedarán iguais as dúas ás?",
+            "es": "Si doblamos el papel, ¿quedarán iguales las dos alas?"
+          },
+          "guia": {
+            "gl": "Antes de dobrar o folio coas pingas de pintura nun lado, pregunta que pasará no outro lado.",
+            "es": "Antes de doblar el folio con las gotas de pintura en un lado, pregunta qué pasará en el otro lado."
+          },
+          "observar": {
+            "gl": "Se predí que o debuxo se copiará no outro lado.",
+            "es": "Si predice que el dibujo se copiará en el otro lado."
+          }
+        },
+        "proba": {
+          "pregunta_en": "Fold the butterfly wing and press it flat.",
+          "significado": {
+            "gl": "Dobra a á da bolboreta e aplánaa.",
+            "es": "Dobla el ala de la mariposa y aplánala."
+          },
+          "guia": {
+            "gl": "Pintade só nunha metade do folio dobrado, fechádeo, premede e abrídeo con coidado.",
+            "es": "Pintad solo en una mitad del folio doblado, cerradlo, apretad y abridlo con cuidado."
+          },
+          "observar": {
+            "gl": "Se preme toda a superficie antes de abrir a bolboreta.",
+            "es": "Si aprieta toda la superficie antes de abrir la mariposa."
+          }
+        },
+        "compara": {
+          "pregunta_en": "Compare the left wing and right wing.",
+          "significado": {
+            "gl": "Compara a á esquerda e a á dereita.",
+            "es": "Compara el ala izquierda y el ala derecha."
+          },
+          "guia": {
+            "gl": "Poñede o espello pequeno na dobra central para comprobar se ambas ás son iguais.",
+            "es": "Poned el espejo pequeño en el doblez central para comprobar si ambas alas son iguales."
+          },
+          "observar": {
+            "gl": "Se comproba a simetría entre a parte esquerda e a dereita.",
+            "es": "Si comprueba la simetría entre la parte izquierda y la derecha."
+          }
+        },
+        "explica": {
+          "pregunta_en": "Why are the butterfly wings equal?",
+          "significado": {
+            "gl": "Por que son iguais as ás da bolboreta?",
+            "es": "¿Por qué son iguales las alas de la mariposa?"
+          },
+          "guia": {
+            "gl": "Sinala a dobra do medio e pídelle unha resposta con «because» antes de dicir o modelo.",
+            "es": "Señala el doblez del medio y pídele una respuesta con «because» antes de decir el modelo."
+          },
+          "observar": {
+            "gl": "Se relaciona o dobrado co copiado exacto da pintura.",
+            "es": "Si relaciona el doblado con el copiado exacto de la pintura."
+          },
+          "modelo_en": "The wings are equal because we fold the wet paint.",
+          "modelo_significado": {
+            "gl": "As ás son iguais porque dobramos a pintura húmida.",
+            "es": "Las alas son iguales porque doblamos la pintura húmeda."
+          }
+        }
       }
     },
     {
@@ -4959,7 +7203,7 @@
         },
         "fonema": "/sp-/ → /p-/",
         "nota": {
-          "gl": "En «El círculo que gira», a buxaina xira («spin») sobre o seu eixo («pin»): «spin» asubía longo en /s/ antes de /p/ e «pin» estala directo nos beizos.",
+          "gl": "En «O círculo que xira», a buxaina xira («spin») sobre o seu eixo («pin»): «spin» asubía longo en /s/ antes de /p/ e «pin» estala directo nos beizos.",
           "es": "En «El círculo que gira», la peonza gira («spin») sobre su eje («pin»): «spin» silba largo en /s/ antes de /p/ y «pin» estalla directo en los labios."
         },
         "mision_acerto": {
@@ -5055,7 +7299,7 @@
           "Twirl the round cardboard top to blend colors."
         ],
         "nota": {
-          "gl": "Cando cambian os rotuladores buscando outra mestura óptica en «El círculo que gira», o adulto vai da peza á acción de xiro.",
+          "gl": "Cando cambian os rotuladores buscando outra mestura óptica en «O círculo que xira», o adulto vai da peza á acción de xiro.",
           "es": "Cuando cambian los rotuladores buscando otra mezcla óptica en «El círculo que gira», el adulto va de la pieza a la acción de giro."
         },
         "significado": [
@@ -5072,6 +7316,74 @@
             "es": "Haz girar la peonza de cartón redonda para mezclar los colores."
           }
         ]
+      },
+      "pensamiento": {
+        "edad_modo": "explica_because",
+        "predice": {
+          "pregunta_en": "What happens to the colors when you spin the top?",
+          "significado": {
+            "gl": "Que pasa coas cores cando fas xirar a buxaina?",
+            "es": "¿Qué pasa con los colores cuando haces girar la peonza?"
+          },
+          "guia": {
+            "gl": "Co círculo de cartón pintado parado sobre o lapis, pregunta se veremos raias ou unha cor nova ao xirar.",
+            "es": "Con el círculo de cartón pintado parado sobre el lápiz, pregunta si veremos rayas o un color nuevo al girar."
+          },
+          "observar": {
+            "gl": "Se formula unha hipótese sobre o cambio visual ao xirar.",
+            "es": "Si formula una hipótesis sobre el cambio visual al girar."
+          }
+        },
+        "proba": {
+          "pregunta_en": "Spin the top on its pin.",
+          "significado": {
+            "gl": "Fai xirar a buxaina sobre o seu eixe.",
+            "es": "Haz girar la peonza sobre su eje."
+          },
+          "guia": {
+            "gl": "Xirade forte a buxaina de cartón entre os dedos e observade o disco mentres roda.",
+            "es": "Girad fuerte la peonza de cartón entre los dedos y observad el disco mientras rueda."
+          },
+          "observar": {
+            "gl": "Se observa o disco en movemento rápido sen tocalo.",
+            "es": "Si observa el disco en movimiento rápido sin tocarlo."
+          }
+        },
+        "compara": {
+          "pregunta_en": "Compare the still circle and the spinning top.",
+          "significado": {
+            "gl": "Compara o círculo parado e a buxaina xirando.",
+            "es": "Compara el círculo parado y la peonza girando."
+          },
+          "guia": {
+            "gl": "Mirade o disco parado e logo en pleno xiro para describir que cambia diante dos ollos.",
+            "es": "Mirad el disco parado y luego en pleno giro para describir qué cambia delante de los ojos."
+          },
+          "observar": {
+            "gl": "Se compara o debuxo separado en repouso coa mestura en movemento.",
+            "es": "Si compara el dibujo separado en reposo con la mezcla en movimiento."
+          }
+        },
+        "explica": {
+          "pregunta_en": "Why do the stripes blend when spinning?",
+          "significado": {
+            "gl": "Por que se mesturan as raias ao xirar?",
+            "es": "¿Por qué se mezclan las rayas al girar?"
+          },
+          "guia": {
+            "gl": "Pídelle que explique con «because» e dálle o modelo adulto.",
+            "es": "Pídele que explique con «because» y dale el modelo adulto."
+          },
+          "observar": {
+            "gl": "Se relaciona a velocidade do xiro coa percepción da mestura.",
+            "es": "Si relaciona la velocidad del giro con la percepción de la mezcla."
+          },
+          "modelo_en": "Colors blend because the round top spins very fast.",
+          "modelo_significado": {
+            "gl": "As cores mestúranse porque a buxaina redonda xira moi rápido.",
+            "es": "Los colores se mezclan porque la peonza redonda gira muy rápido."
+          }
+        }
       }
     },
     {
@@ -5108,7 +7420,7 @@
         },
         "fonema": "/sn-/ → /n-/",
         "nota": {
-          "gl": "En «¿Cuántos sonidos tiene el papel?» cortades cos ollos pechados («snip»): «snip» asubía polo /s/ antes de apoiar o nariz en /n/ e «nip» vai directo ao /n/.",
+          "gl": "En «Cantos sons ten o papel?» cortades cos ollos pechados («snip»): «snip» asubía polo /s/ antes de apoiar o nariz en /n/ e «nip» vai directo ao /n/.",
           "es": "En «¿Cuántos sonidos tiene el papel?» cortáis con los ojos cerrados («snip»): «snip» silba por la /s/ antes de apoyar la nariz en /n/ y «nip» va directo a la /n/."
         },
         "mision_acerto": {
@@ -5204,7 +7516,7 @@
           "Cut the thin sheet of paper and listen."
         ],
         "nota": {
-          "gl": "Ao comparar o ruxido coas propias palabras en «¿Cuántos sonidos tiene el papel?», o adulto enlaza material, corte e grosor.",
+          "gl": "Ao comparar o ruxido coas propias palabras en «Cantos sons ten o papel?», o adulto enlaza material, corte e grosor.",
           "es": "Al comparar el crujido con sus propias palabras en «¿Cuántos sonidos tiene el papel?», el adulto enlaza material, corte y grosor."
         },
         "significado": [
@@ -5221,6 +7533,74 @@
             "es": "Corta la hoja fina de papel y escucha."
           }
         ]
+      },
+      "pensamiento": {
+        "edad_modo": "explica_because",
+        "predice": {
+          "pregunta_en": "Does thin paper sound louder than thick card?",
+          "significado": {
+            "gl": "Soa distinto o papel fino ca a cartolina grosa?",
+            "es": "¿Suena distinto el papel fino que la cartulina gruesa?"
+          },
+          "guia": {
+            "gl": "Ensina o papel de seda fino, o xornal e a cartolina coa tesoira de punta redonda; pregunta cal soará máis forte.",
+            "es": "Enseña el papel de seda fino, el periódico y la cartulina con la tijera de punta redonda; pregunta cuál sonará más fuerte."
+          },
+          "observar": {
+            "gl": "Se predí diferenza de son segundo o grosor do papel.",
+            "es": "Si predice diferencia de sonido según el grosor del papel."
+          }
+        },
+        "proba": {
+          "pregunta_en": "Snip each sheet and listen closely.",
+          "significado": {
+            "gl": "Corta cada folla e escoita con atención.",
+            "es": "Corta cada hoja y escucha con atención."
+          },
+          "guia": {
+            "gl": "Cortade pola metade cada tipo de papel coa tesoira, primeiro vendo e logo cos ollos pechados.",
+            "es": "Cortad por la mitad cada tipo de papel con la tijera, primero viendo y luego con los ojos cerrados."
+          },
+          "observar": {
+            "gl": "Se escoita con atención cada corte para recoñecer o papel.",
+            "es": "Si escucha con atención cada corte para reconocer el papel."
+          }
+        },
+        "compara": {
+          "pregunta_en": "Compare the snip of thin paper and thick card.",
+          "significado": {
+            "gl": "Compara o corte do papel fino e o da cartolina grosa.",
+            "es": "Compara el corte del papel fino y el de la cartulina gruesa."
+          },
+          "guia": {
+            "gl": "Cando adiviñe sen mirar, compara os tres sons (suave, crujiente, seco).",
+            "es": "Cuando adivine sin mirar, compara los tres sonidos (suave, crujiente, seco)."
+          },
+          "observar": {
+            "gl": "Se clasifica cada son polo tipo de papel cortado.",
+            "es": "Si clasifica cada sonido por el tipo de papel cortado."
+          }
+        },
+        "explica": {
+          "pregunta_en": "Why do the three sheets sound different?",
+          "significado": {
+            "gl": "Por que soan distinto as tres follas?",
+            "es": "¿Por qué suenan distinto las tres hojas?"
+          },
+          "guia": {
+            "gl": "Deixa tocar coas dúas mans o grosor de cada papel e pide unha explicación con «because».",
+            "es": "Deja tocar con las dos manos el grosor de cada papel y pide una explicación con «because»."
+          },
+          "observar": {
+            "gl": "Se conecta o grosor e a rixidez do papel co seu son ao cortar.",
+            "es": "Si conecta el grosor y la rigidez del papel con su sonido al cortar."
+          },
+          "modelo_en": "They sound different because thin paper bends easier than thick card.",
+          "modelo_significado": {
+            "gl": "Soan distinto porque o papel fino dóbrase mellor ca a cartolina.",
+            "es": "Suenan distinto porque el papel fino se dobla mejor que la cartulina."
+          }
+        }
       }
     },
     {
@@ -5257,7 +7637,7 @@
         },
         "fonema": "/pl-/ → /l-/",
         "nota": {
-          "gl": "En «Aviones de papel» lanzades o avión («plane») pola pista da cinta de pintor («lane»): «plane» estala primeiro nos beizos (/p/) pegado ao /l/ e «lane» arrinca directo en /l/.",
+          "gl": "En «Avións de papel» lanzades o avión («plane») pola pista da cinta de pintor («lane»): «plane» estala primeiro nos beizos (/p/) pegado ao /l/ e «lane» arrinca directo en /l/.",
           "es": "En «Aviones de papel» lanzáis el avión («plane») por la pista de la cinta de pintor («lane»): «plane» estalla primero en los labios (/p/) pegado a la /l/ y «lane» arranca directo en /l/."
         },
         "mision_acerto": {
@@ -5353,7 +7733,7 @@
           "The white plane glides from the nose fold."
         ],
         "nota": {
-          "gl": "Cando modifican un prego tras medir os pasos en «Aviones de papel», o adulto amplía «plane» ata o voo completo.",
+          "gl": "Cando modifican un prego tras medir os pasos en «Avións de papel», o adulto amplía «plane» ata o voo completo.",
           "es": "Cuando modifican un pliegue tras medir los pasos en «Aviones de papel», el adulto amplía «plane» hasta el vuelo completo."
         },
         "significado": [
@@ -5370,6 +7750,74 @@
             "es": "El avión blanco planea desde el doblez del morro."
           }
         ]
+      },
+      "pensamiento": {
+        "edad_modo": "explica_because",
+        "predice": {
+          "pregunta_en": "Which plane glides farther along the lane?",
+          "significado": {
+            "gl": "Cal avión esvara máis lonxe pola pista?",
+            "es": "¿Qué avión planea más lejos por la pista?"
+          },
+          "guia": {
+            "gl": "Con dous avións dobrados distinto (bico en punta e bico chato), pregunta na liña de cinta cal voará máis lonxe.",
+            "es": "Con dos aviones doblados distinto (morro en punta y morro chato), pregunta en la línea de cinta cuál volará más lejos."
+          },
+          "observar": {
+            "gl": "Se sinala un deseño e xustifica a súa predición.",
+            "es": "Si señala un diseño y justifica su predicción."
+          }
+        },
+        "proba": {
+          "pregunta_en": "Throw the plane along the lane.",
+          "significado": {
+            "gl": "Lanza o avión polo carril.",
+            "es": "Lanza el avión por el carril."
+          },
+          "guia": {
+            "gl": "Lanzade os dous avións desde a mesma cinta do chan coa mesma forza suave.",
+            "es": "Lanzad los dos aviones desde la misma cinta del suelo con la misma fuerza suave."
+          },
+          "observar": {
+            "gl": "Se respecta a liña de saída e observa o voo de cada un.",
+            "es": "Si respeta la línea de salida y observa el vuelo de cada uno."
+          }
+        },
+        "compara": {
+          "pregunta_en": "Compare the pointed nose and the flat nose.",
+          "significado": {
+            "gl": "Compara o morro en punta e o morro plano.",
+            "es": "Compara el morro en punta y el morro plano."
+          },
+          "guia": {
+            "gl": "Medide cos pasos desde a cinta ata onde parou cada avión e comparade os dous bicos.",
+            "es": "Medid con los pasos desde la cinta hasta donde paró cada avión y comparad los dos morros."
+          },
+          "observar": {
+            "gl": "Se compara a distancia medida e a forma do bico.",
+            "es": "Si compara la distancia medida y la forma del morro."
+          }
+        },
+        "explica": {
+          "pregunta_en": "Why did the pointed plane glide farther?",
+          "significado": {
+            "gl": "Por que planeou máis lonxe o avión en punta?",
+            "es": "¿Por qué planeó más lejos el avión en punta?"
+          },
+          "guia": {
+            "gl": "Pídelle que explique por que corta mellor o aire usando «because» e di o modelo.",
+            "es": "Pídele que explique por qué corta mejor el aire usando «because» y di el modelo."
+          },
+          "observar": {
+            "gl": "Se explica a diferenza aerodinámica con «because».",
+            "es": "Si explica la diferencia aerodinámica con «because»."
+          },
+          "modelo_en": "It glides farther because the sharp nose cuts the air.",
+          "modelo_significado": {
+            "gl": "Planea máis lonxe porque o bico afiado corta o aire.",
+            "es": "Planea más lejos porque el morro afilado corta el aire."
+          }
+        }
       }
     },
     {
@@ -5406,7 +7854,7 @@
         },
         "fonema": "/tr-/ → /r-/",
         "nota": {
-          "gl": "En «El mapa del tesoro» seguides a ruta debuxada («trail»): «trail» dá un toque seco detrás dos dentes /t/ pegado ao /r/ e «rail» recolle a lingua directo en /r/.",
+          "gl": "En «O mapa do tesouro» seguides a ruta debuxada («trail»): «trail» dá un toque seco detrás dos dentes /t/ pegado ao /r/ e «rail» recolle a lingua directo en /r/.",
           "es": "En «El mapa del tesoro» seguís la ruta dibujada («trail»): «trail» da un toque seco detrás de los dientes /t/ pegado a la /r/ y «rail» recoge la lengua directo en /r/."
         },
         "mision_acerto": {
@@ -5502,7 +7950,7 @@
           "Search the map grid to find the secret box."
         ],
         "nota": {
-          "gl": "Mentres xiran o mapa para orientarse na sala en «El mapa del tesoro», o adulto expande da folla á cuadrícula e ao achado.",
+          "gl": "Mentres xiran o mapa para orientarse na sala en «O mapa do tesouro», o adulto expande da folla á cuadrícula e ao achado.",
           "es": "Mientras giran el mapa para orientarse en la sala en «El mapa del tesoro», el adulto expande de la hoja a la cuadrícula y al hallazgo."
         },
         "significado": [
@@ -5519,6 +7967,74 @@
             "es": "Busca en la cuadrícula del mapa la caja secreta."
           }
         ]
+      },
+      "pensamiento": {
+        "edad_modo": "explica_because",
+        "predice": {
+          "pregunta_en": "Where on the map grid is the secret trail?",
+          "significado": {
+            "gl": "Onde na cuadrícula do mapa está a pista secreta?",
+            "es": "¿Dónde en la cuadrícula del mapa está la pista secreta?"
+          },
+          "guia": {
+            "gl": "Co mapa da sala na mesa, sinala a saída e pregunta por que camiño da cuadrícula irá primeiro e deixa que o sinale.",
+            "es": "Con el mapa de la sala en la mesa, señala la salida y pregunta por qué camino de la cuadrícula irá primero y deja que lo señale."
+          },
+          "observar": {
+            "gl": "Se trazou co dedo unha ruta lóxica antes de camiñar.",
+            "es": "Si trazó con el dedo una ruta lógica antes de caminar."
+          }
+        },
+        "proba": {
+          "pregunta_en": "Search the map grid for the secret box.",
+          "significado": {
+            "gl": "Busca na cuadrícula do mapa a caixa secreta.",
+            "es": "Busca en la cuadrícula del mapa la caja secreta."
+          },
+          "guia": {
+            "gl": "Camiñade pola sala seguindo as referencias da cuadrícula (mesa, porta, xiro) ata atopar o tesouro.",
+            "es": "Caminad por la sala siguiendo las referencias de la cuadrícula (mesa, puerta, giro) hasta encontrar el tesoro."
+          },
+          "observar": {
+            "gl": "Se comproba o mapa en cada xiro para orientarse.",
+            "es": "Si comprueba el mapa en cada giro para orientarse."
+          }
+        },
+        "compara": {
+          "pregunta_en": "Compare the short trail and the long trail.",
+          "significado": {
+            "gl": "Compara o camiño curto e o camiño longo.",
+            "es": "Compara el camino corto y el camino largo."
+          },
+          "guia": {
+            "gl": "Ao atopar a caixa, mirade dous camiños posibles no mapa para ver cal aforra pasos.",
+            "es": "Al encontrar la caja, mirad dos caminos posibles en el mapa para ver cuál ahorra pasos."
+          },
+          "observar": {
+            "gl": "Se compara os dous itinerarios na cuadrícula.",
+            "es": "Si compara los dos itinerarios en la cuadrícula."
+          }
+        },
+        "explica": {
+          "pregunta_en": "Why did the map grid help find the box?",
+          "significado": {
+            "gl": "Por que axudou a cuadrícula do mapa a atopar a caixa?",
+            "es": "¿Por qué ayudó la cuadrícula del mapa a encontrar la caja?"
+          },
+          "guia": {
+            "gl": "Pídelle unha razón con «because» sinalando as marcas da sala no papel.",
+            "es": "Pídele una razón con «because» señalando las marcas de la sala en el papel."
+          },
+          "observar": {
+            "gl": "Se explica que o mapa representa onde está cada moble na sala.",
+            "es": "Si explica que el mapa representa dónde está cada mueble en la sala."
+          },
+          "modelo_en": "We found it because the grid shows where each spot is.",
+          "modelo_significado": {
+            "gl": "Atopámolo porque a cuadrícula mostra onde está cada sitio.",
+            "es": "Lo encontramos porque la cuadrícula muestra dónde está cada sitio."
+          }
+        }
       }
     },
     {
@@ -5555,7 +8071,7 @@
         },
         "fonema": "/sk-/ → /s-/",
         "nota": {
-          "gl": "En «La maleta que pesa» comparades na balanza («scale») que pesa menos para a excursión: «scale» mete o golpe atrás /k/ xusto despois do asubío /s/ e «sale» esvara limpo de /s/ á vogal.",
+          "gl": "En «A maleta que pesa» comparades na balanza («scale») que pesa menos para a excursión: «scale» mete o golpe atrás /k/ xusto despois do asubío /s/ e «sale» esvara limpo de /s/ á vogal.",
           "es": "En «La maleta que pesa» comparáis en la balanza («scale») qué pesa menos para la excursión: «scale» mete el golpe atrás /k/ justo después del silbido /s/ y «sale» resbala limpio de /s/ a la vocal."
         },
         "mision_acerto": {
@@ -5651,7 +8167,7 @@
           "Pack light things so the suitcase is not heavy."
         ],
         "nota": {
-          "gl": "Cando xustifican que sacar da mochila en «La maleta que pesa», o adulto amplía «suitcase» ata incluír o criterio de peso.",
+          "gl": "Cando xustifican que sacar da mochila en «A maleta que pesa», o adulto amplía «suitcase» ata incluír o criterio de peso.",
           "es": "Cuando justifican qué sacar de la mochila en «La maleta que pesa», el adulto amplía «suitcase» hasta incluir el criterio de peso."
         },
         "significado": [
@@ -5668,6 +8184,74 @@
             "es": "Mete cosas ligeras para que la maleta no pese."
           }
         ]
+      },
+      "pensamiento": {
+        "edad_modo": "explica_because",
+        "predice": {
+          "pregunta_en": "Which suitcase will tip the scale down?",
+          "significado": {
+            "gl": "Cal maleta fará baixar a balanza?",
+            "es": "¿Qué maleta hará bajar la balanza?"
+          },
+          "guia": {
+            "gl": "Antes de pesar os obxectos na balanza de pratos, pregunta cal pesará máis: tres libros ou tres pezas de roupa.",
+            "es": "Antes de pesar los objetos en la balanza de platos, pregunta cuál pesará más: tres libros o tres prendas de ropa."
+          },
+          "observar": {
+            "gl": "Se fai unha predición antes de poñer as cousas na balanza.",
+            "es": "Si hace una predicción antes de poner las cosas en la balanza."
+          }
+        },
+        "proba": {
+          "pregunta_en": "Pack the suitcase and test the scale.",
+          "significado": {
+            "gl": "Fai a maleta e proba na balanza.",
+            "es": "Haz la maleta y prueba en la balanza."
+          },
+          "guia": {
+            "gl": "Poñede os obxectos na balanza de pratos e escollede os lixeiros para facer a maleta.",
+            "es": "Poned los objetos en la balanza de platos y elegid los ligeros para hacer la maleta."
+          },
+          "observar": {
+            "gl": "Se equilibra ou compara os pratos antes de gardar na maleta.",
+            "es": "Si equilibra o compara los platos antes de guardar en la maleta."
+          }
+        },
+        "compara": {
+          "pregunta_en": "Compare the heavy suitcase and the light bag.",
+          "significado": {
+            "gl": "Compara a maleta pesada e a bolsa lixeira.",
+            "es": "Compara la maleta pesada y la bolsa ligera."
+          },
+          "guia": {
+            "gl": "Suxeitade as dúas mochilas polo asa (unha con libros, outra con roupa) para comparar o peso.",
+            "es": "Sujetad las dos mochilas por el asa (una con libros, otra con ropa) para comparar el peso."
+          },
+          "observar": {
+            "gl": "Se describe cal inclinou máis a balanza e cal é cómoda de levar.",
+            "es": "Si describe cuál inclinó más la balanza y cuál es cómoda de llevar."
+          }
+        },
+        "explica": {
+          "pregunta_en": "Why did one side of the scale go down?",
+          "significado": {
+            "gl": "Por que baixou un lado da balanza?",
+            "es": "¿Por qué bajó un lado de la balanza?"
+          },
+          "guia": {
+            "gl": "Pídelle que explique con «because» e reforza co modelo adulto.",
+            "es": "Pídele que explique con «because» y refuerza con el modelo adulto."
+          },
+          "observar": {
+            "gl": "Se explica a inclinación da balanza polo maior peso.",
+            "es": "Si explica la inclinación de la balanza por el mayor peso."
+          },
+          "modelo_en": "That side drops because books are heavier than clothes.",
+          "modelo_significado": {
+            "gl": "Ese lado baixa porque os libros pesan máis ca a roupa.",
+            "es": "Ese lado baja porque los libros pesan más que la ropa."
+          }
+        }
       }
     },
     {
@@ -5704,7 +8288,7 @@
         },
         "fonema": "/fl-/ → /l-/",
         "nota": {
-          "gl": "En «Mensajes de luz» mandades respostas cun destello («flash»): «flash» sopra antes polos dentes sobre o beizo (/f/) pegado ao /l/ e «lash» empeza directo coa lingua arriba (/l/).",
+          "gl": "En «Mensaxes de luz» mandades respostas cun destello («flash»): «flash» sopra antes polos dentes sobre o beizo (/f/) pegado ao /l/ e «lash» empeza directo coa lingua arriba (/l/).",
           "es": "En «Mensajes de luz» mandáis respuestas con un destello («flash»): «flash» sopla antes por los dientes sobre el labio (/f/) pegado a la /l/ y «lash» empieza directo con la lengua arriba (/l/)."
         },
         "mision_acerto": {
@@ -5800,7 +8384,7 @@
           "Press the switch so the lamp gives a clear blink."
         ],
         "nota": {
-          "gl": "Ao inventar e descifrar códigos luminosos en «Mensajes de luz», o adulto estende «lamp» ata o sinal claro.",
+          "gl": "Ao inventar e descifrar códigos luminosos en «Mensaxes de luz», o adulto estende «lamp» ata o sinal claro.",
           "es": "Al inventar y descifrar códigos luminosos en «Mensajes de luz», el adulto extiende «lamp» hasta la señal clara."
         },
         "significado": [
@@ -5817,6 +8401,74 @@
             "es": "Pulsa el interruptor para que la lámpara dé un parpadeo claro."
           }
         ]
+      },
+      "pensamiento": {
+        "edad_modo": "explica_because",
+        "predice": {
+          "pregunta_en": "Does one flash mean yes or no in our code?",
+          "significado": {
+            "gl": "Un escintileo significa si ou non no noso código?",
+            "es": "¿Un destello significa sí o no en nuestro código?"
+          },
+          "guia": {
+            "gl": "Mostra a tarxeta do código (unha luz = si; dúas luces = non) e pregunta que responderemos cun só toque.",
+            "es": "Muestra la tarjeta del código (una luz = sí; dos luces = no) y pregunta qué responderemos con un solo toque."
+          },
+          "observar": {
+            "gl": "Se le a tarxeta e predí a resposta antes de pulsar o interruptor.",
+            "es": "Si lee la tarjeta y predice la respuesta antes de pulsar el interruptor."
+          }
+        },
+        "proba": {
+          "pregunta_en": "Press the switch for one blink.",
+          "significado": {
+            "gl": "Preme o interruptor para un pestanexo.",
+            "es": "Pulsa el interruptor para un parpadeo."
+          },
+          "guia": {
+            "gl": "Facede preguntas curtas sen falar e contestade premendo a lanterna unha ou dúas veces.",
+            "es": "Haced preguntas cortas sin hablar y contestad pulsando la linterna una o dos veces."
+          },
+          "observar": {
+            "gl": "Se conta os escintileos mantendo pausas claras entre mensaxes.",
+            "es": "Si cuenta los destellos manteniendo pausas claras entre mensajes."
+          }
+        },
+        "compara": {
+          "pregunta_en": "Compare one clear flash and two quick blinks.",
+          "significado": {
+            "gl": "Compara un escintileo claro e dous rápidos.",
+            "es": "Compara un destello claro y dos rápidos."
+          },
+          "guia": {
+            "gl": "Mandade primeiro un escintileo longo e logo dous curtos; compara se o outro entendeu sen palabras.",
+            "es": "Mandad primero un destello largo y luego dos cortos; compara si el otro entendió sin palabras."
+          },
+          "observar": {
+            "gl": "Se distingue unha mensaxe da outra polo número de escintileos.",
+            "es": "Si distingue un mensaje del otro por el número de destellos."
+          }
+        },
+        "explica": {
+          "pregunta_en": "Why can we talk with lamp blinks?",
+          "significado": {
+            "gl": "Por que podemos falar con escintileos de lámpada?",
+            "es": "¿Por qué podemos hablar con destellos de lámpara?"
+          },
+          "guia": {
+            "gl": "Sinala a tarxeta do código e pídelle a explicación con «because».",
+            "es": "Señala la tarjeta del código y pídele la explicación con «because»."
+          },
+          "observar": {
+            "gl": "Se explica que o código compartido dá significado a cada luz.",
+            "es": "Si explica que el código compartido da significado a cada luz."
+          },
+          "modelo_en": "We understand it because both agree on the blink code.",
+          "modelo_significado": {
+            "gl": "Entendémolo porque os dous acordamos o código de escintileos.",
+            "es": "Lo entendemos porque los dos acordamos el código de destellos."
+          }
+        }
       }
     },
     {
@@ -5853,7 +8505,7 @@
         },
         "fonema": "/bl-/ → /l-/",
         "nota": {
-          "gl": "En «La flauta del tren» cómpre soprar nos tubos longos («blow») para oír o ton grave («low»): «blow» xunta os beizos no /b/ antes de subir a lingua a /l/, mentres que «low» arrinca directo en /l/.",
+          "gl": "En «A frauta do tren» cómpre soprar nos tubos longos («blow») para oír o ton grave («low»): «blow» xunta os beizos no /b/ antes de subir a lingua a /l/, mentres que «low» arrinca directo en /l/.",
           "es": "En «La flauta del tren» hace falta soplar en los tubos largos («blow») para oír el tono grave («low»): «blow» junta los labios en la /b/ antes de subir la lengua a la /l/, mientras que «low» arranca directo en /l/."
         },
         "mision_acerto": {
@@ -5949,7 +8601,7 @@
           "Blow the long straw on the flute for a low note."
         ],
         "nota": {
-          "gl": "Ao relacionar o longo da palla coa altura da nota en «La flauta del tren», o adulto modela o experimento sonoro final.",
+          "gl": "Ao relacionar o longo da palla coa altura da nota en «A frauta do tren», o adulto modela o experimento sonoro final.",
           "es": "Al relacionar el largo de la pajita con la altura de la nota en «La flauta del tren», el adulto modela el experimento sonoro final."
         },
         "significado": [
@@ -5966,6 +8618,74 @@
             "es": "Sopla la pajita larga de la flauta para una nota grave."
           }
         ]
+      },
+      "pensamiento": {
+        "edad_modo": "explica_because",
+        "predice": {
+          "pregunta_en": "Which straw on the flute sounds low: long or short?",
+          "significado": {
+            "gl": "Cal palliña da frauta soa grave: a longa ou a curta?",
+            "es": "¿Qué pajita de la flauta suena grave: la larga o la corta?"
+          },
+          "guia": {
+            "gl": "Antes de soprar a frauta de tubos cortados de menor a maior, pregunta cal fará a nota máis grave.",
+            "es": "Antes de soplar la flauta de tubos cortados de menor a mayor, pregunta cuál hará la nota más grave."
+          },
+          "observar": {
+            "gl": "Se predí a relación entre lonxitude do tubo e altura do son.",
+            "es": "Si predice la relación entre longitud del tubo y altura del sonido."
+          }
+        },
+        "proba": {
+          "pregunta_en": "Blow each straw of the flute in order.",
+          "significado": {
+            "gl": "Sopra cada palliña da frauta en orde.",
+            "es": "Sopla cada pajita de la flauta en orden."
+          },
+          "guia": {
+            "gl": "Soprade suavemente pola parte superior das palliñas da máis curta á máis longa.",
+            "es": "Soplad suavemente por la parte superior de las pajitas de la más corta a la más larga."
+          },
+          "observar": {
+            "gl": "Se escoita como baixa o ton ao pasar cara ás palliñas longas.",
+            "es": "Si escucha cómo baja el tono al pasar hacia las pajitas largas."
+          }
+        },
+        "compara": {
+          "pregunta_en": "Compare the short straw and the long straw.",
+          "significado": {
+            "gl": "Compara a palla curta e a palla longa.",
+            "es": "Compara la pajita corta y la pajita larga."
+          },
+          "guia": {
+            "gl": "Soprade só a máis curta e logo só a máis longa para comparar o agudo co grave («low»).",
+            "es": "Soplad solo la más corta y luego solo la más larga para comparar el agudo con el grave («low»)."
+          },
+          "observar": {
+            "gl": "Se nomea cal dá o son agudo e cal dá o son grave.",
+            "es": "Si nombra cuál da el sonido agudo y cuál da el sonido grave."
+          }
+        },
+        "explica": {
+          "pregunta_en": "Why does the long straw sound low?",
+          "significado": {
+            "gl": "Por que soa grave a palliña longa?",
+            "es": "¿Por qué suena grave la pajita larga?"
+          },
+          "guia": {
+            "gl": "Pídelle que formule a causa con «because» e pecha co modelo adulto.",
+            "es": "Pídele que formule la causa con «because» y cierra con el modelo adulto."
+          },
+          "observar": {
+            "gl": "Se relaciona o tamaño maior do tubo co son máis grave.",
+            "es": "Si relaciona el tamaño mayor del tubo con el sonido más grave."
+          },
+          "modelo_en": "It sounds low because the long straw holds more air.",
+          "modelo_significado": {
+            "gl": "Soa grave porque a palliña longa garda máis aire.",
+            "es": "Suena grave porque la pajita larga guarda más aire."
+          }
+        }
       }
     }
   ]

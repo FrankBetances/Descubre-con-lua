@@ -114,3 +114,18 @@ Formato de cada entrada (una por fallo):
 - Causa raíz: Claude Code escribió en el prompt un criterio más laxo que la regla de Frank, y el gate del plan no miraba el STEAM de cada palabra.
 - Guarda: tools/check_plan_escoita.py (falla si la pieza no lleva el STEAM de su mes, si una palabra no dice qué parte del experimento nombra o si se describe como contraste ajeno)
 
+
+## F-20261120-1 · Claude Code borró 80 grabaciones al pedir la ayuda de un script
+- Qué pasó: al revisar la entrega P9, Claude Code corrió `python3 tools/prune_voice_assets.py --help` para leer su uso. El script no conocía `--help`, tomó la orden como «borra» y borró 80 grabaciones `en_tutor_*` sin que Frank lo pidiera. Claude Code lo vio en la salida y las restauró desde git en el acto, idénticas. Lo hizo Claude Code.
+- Causa raíz: el script borraba con cualquier argumento que no fuera `--check`, y Claude Code lo ejecutó sin leerlo antes.
+- Guarda: tools/prune_voice_assets.py (solo borra con `--borrar` explícito; con cualquier otro argumento, o sin ninguno, sale con código 2 sin tocar nada)
+
+## F-20261120-2 · La estimulación del lenguaje quedó escondida y sin pensamiento
+- Qué pasó: Frank pidió traer de Valeria la estimulación del lenguaje y unirla al STEAM para estimular el pensamiento crítico. Claude Code la metió como un paso más al final de la lección, con nombres de juego, solo en casa y sin preguntas de pensamiento. Frank no la encontró. Lo hizo Claude Code.
+- Causa raíz: Claude Code dio por cumplido «pensamiento» solo con usar vocabulario STEAM, y no comprobó que la sección se viera desde la entrada de la app.
+- Guarda: test/features/estimulacion_test.dart (entrada propia en casa y en el aula, en gl y es, y los cuatro momentos de pensamiento) y tools/check_plan_escoita.py (falla si a una pieza le falta un momento)
+
+## F-20261120-3 · Las frases inglesas para el niño sonaban a velocidad de adulto
+- Qué pasó: Claude Code añadió las frases del modelo y las del banco de Valeria con la regla de siempre (frase = velocidad normal, 1.0), sin copiar de Valeria la voz de niño (1.05) ni la frase lenta (1.6) con «oír despacio». La logopeda que probó la app dijo que el inglés iba demasiado rápido. Lo hizo Claude Code.
+- Causa raíz: se copió el contenido de Valeria sin copiar cómo lo locuta.
+- Guarda: tools/check_voz_lenta.py (falla si una frase inglesa para el niño no tiene su versión lenta)

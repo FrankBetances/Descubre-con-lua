@@ -1,3 +1,5 @@
+import 'dart:typed_data';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
@@ -108,4 +110,69 @@ void main() {
       );
     });
   });
+
+  group('P9.1: Oír amodo / Oír despacio reproduce la versión slow', () {
+    for (final lang in [AppLanguage.gl, AppLanguage.es]) {
+      testWidgets('en ${lang.code}, pide la grabación slow de la frase entera',
+          (tester) async {
+        final servicio = MockOfflineAudioService();
+        addTearDown(servicio.dispose);
+        const frase = 'The boat floats.';
+        final rutaChild =
+            voiceAssetPath(VoiceStyle.child, frase, AppLanguage.en);
+        final rutaSlow = voiceAssetPath(VoiceStyle.slow, frase, AppLanguage.en);
+        final bundle = _FakeAssetBundle({rutaChild, rutaSlow});
+
+        await tester.pumpWidget(
+          MaterialApp(
+            theme: AppTheme.lightTheme,
+            home: Scaffold(
+              body: DefaultAssetBundle(
+                bundle: bundle,
+                child: BotonEscuchar(
+                  audioService: servicio,
+                  texto: frase,
+                  language: AppLanguage.en,
+                  interfaz: lang,
+                  style: estiloIngles(frase, paraNeno: true),
+                  conVozLenta: true,
+                  comoChip: true,
+                ),
+              ),
+            ),
+          ),
+        );
+        await tester.pumpAndSettle();
+
+        final etiquetaLenta =
+            lang == AppLanguage.gl ? 'Oír amodo' : 'Oír despacio';
+        expect(find.text(etiquetaLenta), findsOneWidget);
+
+        await tester.tap(find.text(frase));
+        await tester.pumpAndSettle();
+        expect(servicio.currentAssetPath, rutaChild);
+
+        await tester.tap(find.text(etiquetaLenta));
+        await tester.pumpAndSettle();
+        expect(servicio.currentAssetPath, rutaSlow);
+      });
+    }
+  });
+}
+
+class _FakeAssetBundle extends AssetBundle {
+  final Set<String> paths;
+  _FakeAssetBundle(this.paths);
+
+  @override
+  Future<ByteData> load(String key) async {
+    if (paths.contains(key)) return ByteData(4);
+    throw Exception('Asset not found: $key');
+  }
+
+  @override
+  Future<String> loadString(String key, {bool cache = true}) async => '';
+
+  @override
+  void evict(String key) {}
 }

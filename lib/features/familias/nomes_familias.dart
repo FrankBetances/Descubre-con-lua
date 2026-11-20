@@ -55,6 +55,17 @@ class NomesFamilias {
   /// «STEAM» a la vista: es el nombre con que se pidió el módulo.
   static const cienciaDi = LocalizedString(
       gl: 'STEAM: un xogo por idade', es: 'STEAM: un juego por edad');
+  static const estimulacion = LocalizedString(
+      gl: 'Estimulación da linguaxe e o pensamento',
+      es: 'Estimulación del lenguaje y el pensamiento');
+
+  /// En la cabecera de su pantalla: «Estimulación da linguaxe e o pensamento» y
+  /// «Estimulación del lenguaje y el pensamiento» no caben enteros a 360 px.
+  static const estimulacionCabeceira =
+      LocalizedString(gl: 'Estimulación', es: 'Estimulación');
+  static const estimulacionDi = LocalizedString(
+      gl: 'Escoita, palabras que medran, modelo e pensamento STEAM.',
+      es: 'Escucha, palabras que crecen, modelo y pensamiento STEAM.');
 
   // ------------------------------------------------------------------- guías
   static const antesDeEmpezar =

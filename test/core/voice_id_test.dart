@@ -86,5 +86,16 @@ void main() {
       expect(
           voiceAssetId(VoiceStyle.slow, word, AppLanguage.en), equals(slowId));
     });
+
+    test(
+        'P9.1: estiloIngles usa child para frases al niño y slow para palabras',
+        () {
+      expect(
+          estiloIngles('The boat floats.', paraNeno: true), VoiceStyle.child);
+      expect(estiloIngles('The boat floats.'), VoiceStyle.tutor);
+      expect(estiloIngles('boat', paraNeno: true), VoiceStyle.slow);
+      expect(englishVoiceAssetId(VoiceStyle.child, 'The boat floats.'),
+          startsWith('en_child_'));
+    });
   });
 }
