@@ -1,17 +1,26 @@
 {
- "generatedAt": "2026-11-20T13:57:28Z",
- "entries": 39745,
+ "generatedAt": "2026-11-20T14:56:56Z",
+ "entries": 39834,
  "byStyle": {
   "child": 449,
   "slow": 6468,
-  "tutor": 32828
+  "tutor": 32917
  },
  "byLang": {
   "en": 18118,
-  "es": 10814,
-  "gl": 10813
+  "es": 10858,
+  "gl": 10858
  },
  "corpus": [
+  {
+   "id": "en_child_004fc577_43",
+   "lang": "en",
+   "style": "child",
+   "text": "Compare the pointed nose and the flat nose.",
+   "speech": "Compare the pointed nose and the flat nose.",
+   "source": "escoita/curso_5_6/6/pensamiento/compara",
+   "pack": false
+  },
   {
    "id": "en_child_01af32c6_37",
    "lang": "en",
@@ -58,6 +67,15 @@
    "pack": false
   },
   {
+   "id": "en_child_04a16089_40",
+   "lang": "en",
+   "style": "child",
+   "text": "What color do two filters make together?",
+   "speech": "What color do two filters make together?",
+   "source": "escoita/curso_5_6/2/pensamiento/predice",
+   "pack": false
+  },
+  {
    "id": "en_child_05f0a1e4_23",
    "lang": "en",
    "style": "child",
@@ -85,15 +103,6 @@
    "pack": false
   },
   {
-   "id": "en_child_0618b416_29",
-   "lang": "en",
-   "style": "child",
-   "text": "When was the heart beat fast?",
-   "speech": "When was the heart beat fast?",
-   "source": "escoita/curso_4_5/2/pensamiento/compara",
-   "pack": false
-  },
-  {
    "id": "en_child_062f5505_35",
    "lang": "en",
    "style": "child",
@@ -103,30 +112,12 @@
    "pack": false
   },
   {
-   "id": "en_child_066391f4_58",
-   "lang": "en",
-   "style": "child",
-   "text": "Compare the short straw sound and the long straw low note.",
-   "speech": "Compare the short straw sound and the long straw low note.",
-   "source": "escoita/curso_5_6/10/pensamiento/compara",
-   "pack": false
-  },
-  {
    "id": "en_child_072d19b6_35",
    "lang": "en",
    "style": "child",
    "text": "Rain and thunder sound very stormy!",
    "speech": "Rain and thunder sound very stormy!",
    "source": "escoita/curso_4_5/8/stormy/frase",
-   "pack": false
-  },
-  {
-   "id": "en_child_07e62142_34",
-   "lang": "en",
-   "style": "child",
-   "text": "Small eye view or large lens view?",
-   "speech": "Small eye view or large lens view?",
-   "source": "escoita/curso_4_5/4/pensamiento/compara",
    "pack": false
   },
   {
@@ -211,6 +202,15 @@
    "pack": false
   },
   {
+   "id": "en_child_0cbb84dc_35",
+   "lang": "en",
+   "style": "child",
+   "text": "Compare one filter and two filters.",
+   "speech": "Compare one filter and two filters.",
+   "source": "escoita/curso_5_6/2/pensamiento/compara",
+   "pack": false
+  },
+  {
    "id": "en_child_0dcf8778_32",
    "lang": "en",
    "style": "child",
@@ -256,6 +256,24 @@
    "pack": false
   },
   {
+   "id": "en_child_0f8ef7bd_41",
+   "lang": "en",
+   "style": "child",
+   "text": "Why is the light on the wall a new color?",
+   "speech": "Why is the light on the wall a new color?",
+   "source": "escoita/curso_5_6/2/pensamiento/explica",
+   "pack": false
+  },
+  {
+   "id": "en_child_10a16af1_45",
+   "lang": "en",
+   "style": "child",
+   "text": "Compare the heavy suitcase and the light bag.",
+   "speech": "Compare the heavy suitcase and the light bag.",
+   "source": "escoita/curso_5_6/8/pensamiento/compara",
+   "pack": false
+  },
+  {
    "id": "en_child_1277dd1f_33",
    "lang": "en",
    "style": "child",
@@ -265,21 +283,21 @@
    "pack": false
   },
   {
-   "id": "en_child_12d72b1b_34",
-   "lang": "en",
-   "style": "child",
-   "text": "Twirl the round circle on the pin.",
-   "speech": "Twirl the round circle on the pin.",
-   "source": "escoita/curso_5_6/4/pensamiento/proba",
-   "pack": false
-  },
-  {
    "id": "en_child_13524744_46",
    "lang": "en",
    "style": "child",
    "text": "Compare the still circle and the spinning top.",
    "speech": "Compare the still circle and the spinning top.",
    "source": "escoita/curso_5_6/4/pensamiento/compara",
+   "pack": false
+  },
+  {
+   "id": "en_child_13d45df2_23",
+   "lang": "en",
+   "style": "child",
+   "text": "No wind or a windy day?",
+   "speech": "No wind or a windy day?",
+   "source": "escoita/curso_4_5/7/pensamiento/compara",
    "pack": false
   },
   {
@@ -319,30 +337,12 @@
    "pack": false
   },
   {
-   "id": "en_child_15d0ee9f_30",
-   "lang": "en",
-   "style": "child",
-   "text": "Soft rice rain or stormy boom?",
-   "speech": "Soft rice rain or stormy boom?",
-   "source": "escoita/curso_4_5/8/pensamiento/compara",
-   "pack": false
-  },
-  {
    "id": "en_child_16445d99_35",
    "lang": "en",
    "style": "child",
    "text": "Hold the handle to test the weight.",
    "speech": "Hold the handle to test the weight.",
    "source": "escoita/curso_5_6/8/handle/frase",
-   "pack": false
-  },
-  {
-   "id": "en_child_17235c65_30",
-   "lang": "en",
-   "style": "child",
-   "text": "Why do stars glow in the dark?",
-   "speech": "Why do stars glow in the dark?",
-   "source": "escoita/curso_2_3/10/pensamiento/explica",
    "pack": false
   },
   {
@@ -361,6 +361,15 @@
    "text": "Draw the shadow with chalk in the bright sun.",
    "speech": "Draw the shadow with chalk in the bright sun.",
    "source": "escoita/curso_4_5/9/modelo/2",
+   "pack": false
+  },
+  {
+   "id": "en_child_1a3bbdba_35",
+   "lang": "en",
+   "style": "child",
+   "text": "Snip each sheet and listen closely.",
+   "speech": "Snip each sheet and listen closely.",
+   "source": "escoita/curso_5_6/5/pensamiento/proba",
    "pack": false
   },
   {
@@ -400,6 +409,15 @@
    "pack": false
   },
   {
+   "id": "en_child_1c4635aa_29",
+   "lang": "en",
+   "style": "child",
+   "text": "Why did your heart beat fast?",
+   "speech": "Why did your heart beat fast?",
+   "source": "escoita/curso_4_5/2/pensamiento/explica",
+   "pack": false
+  },
+  {
    "id": "en_child_1c79484e_11",
    "lang": "en",
    "style": "child",
@@ -436,15 +454,6 @@
    "pack": false
   },
   {
-   "id": "en_child_1d4ed5b6_40",
-   "lang": "en",
-   "style": "child",
-   "text": "Compare the heavy handle and light pack.",
-   "speech": "Compare the heavy handle and light pack.",
-   "source": "escoita/curso_5_6/8/pensamiento/compara",
-   "pack": false
-  },
-  {
    "id": "en_child_1e00f2de_44",
    "lang": "en",
    "style": "child",
@@ -454,21 +463,21 @@
    "pack": false
   },
   {
-   "id": "en_child_1f72659c_24",
-   "lang": "en",
-   "style": "child",
-   "text": "Full glass or half fill?",
-   "speech": "Full glass or half fill?",
-   "source": "escoita/curso_3_4/8/pensamiento/compara",
-   "pack": false
-  },
-  {
    "id": "en_child_1fa3363e_10",
    "lang": "en",
    "style": "child",
    "text": "Roll ball!",
    "speech": "Roll ball!",
    "source": "acopros/6/mira_e_nota",
+   "pack": false
+  },
+  {
+   "id": "en_child_1fab486d_35",
+   "lang": "en",
+   "style": "child",
+   "text": "Run fast or walk like a sleepy cat?",
+   "speech": "Run fast or walk like a sleepy cat?",
+   "source": "escoita/curso_2_3/9/pensamiento/predice",
    "pack": false
   },
   {
@@ -616,6 +625,15 @@
    "pack": false
   },
   {
+   "id": "en_child_25806658_32",
+   "lang": "en",
+   "style": "child",
+   "text": "Wave the fan so the blades spin.",
+   "speech": "Wave the fan so the blades spin.",
+   "source": "escoita/curso_4_5/7/pensamiento/proba",
+   "pack": false
+  },
+  {
    "id": "en_child_25f63c9e_32",
    "lang": "en",
    "style": "child",
@@ -631,6 +649,15 @@
    "text": "Put on the raincoat hood to stay dry.",
    "speech": "Put on the raincoat hood to stay dry.",
    "source": "escoita/curso_4_5/10/pensamiento/proba",
+   "pack": false
+  },
+  {
+   "id": "en_child_26745307_31",
+   "lang": "en",
+   "style": "child",
+   "text": "Run fast when the beat is fast.",
+   "speech": "Run fast when the beat is fast.",
+   "source": "escoita/curso_2_3/9/pensamiento/proba",
    "pack": false
   },
   {
@@ -724,15 +751,6 @@
    "pack": false
   },
   {
-   "id": "en_child_2c4a0edd_35",
-   "lang": "en",
-   "style": "child",
-   "text": "Why does the spoon flip your cheek?",
-   "speech": "Why does the spoon flip your cheek?",
-   "source": "escoita/curso_3_4/10/pensamiento/explica",
-   "pack": false
-  },
-  {
    "id": "en_child_2c920c36_36",
    "lang": "en",
    "style": "child",
@@ -787,15 +805,6 @@
    "pack": false
   },
   {
-   "id": "en_child_2e2aad4f_44",
-   "lang": "en",
-   "style": "child",
-   "text": "Why does the fish stay out of the four hoop?",
-   "speech": "Why does the fish stay out of the four hoop?",
-   "source": "escoita/curso_4_5/3/pensamiento/explica",
-   "pack": false
-  },
-  {
    "id": "en_child_2e8caa69_34",
    "lang": "en",
    "style": "child",
@@ -820,6 +829,15 @@
    "text": "Why is every seat ready now?",
    "speech": "Why is every seat ready now?",
    "source": "escoita/curso_3_4/7/pensamiento/explica",
+   "pack": false
+  },
+  {
+   "id": "en_child_310bdb16_23",
+   "lang": "en",
+   "style": "child",
+   "text": "Fast boat or slow boat?",
+   "speech": "Fast boat or slow boat?",
+   "source": "escoita/curso_2_3/2/pensamiento/compara",
    "pack": false
   },
   {
@@ -865,6 +883,15 @@
    "text": "Look at the tiny brown seed inside.",
    "speech": "Look at the tiny brown seed inside.",
    "source": "escoita/curso_2_3/6/seed/frase",
+   "pack": false
+  },
+  {
+   "id": "en_child_336c7aa9_38",
+   "lang": "en",
+   "style": "child",
+   "text": "Shake the rainstick slowly, then fast.",
+   "speech": "Shake the rainstick slowly, then fast.",
+   "source": "escoita/curso_4_5/8/pensamiento/proba",
    "pack": false
   },
   {
@@ -946,6 +973,15 @@
    "text": "A loud drum.",
    "speech": "A loud drum.",
    "source": "escoita/curso_2_3/4/modelo/1",
+   "pack": false
+  },
+  {
+   "id": "en_child_38f22000_29",
+   "lang": "en",
+   "style": "child",
+   "text": "Roll the train down the ramp.",
+   "speech": "Roll the train down the ramp.",
+   "source": "escoita/curso_3_4/3/pensamiento/proba",
    "pack": false
   },
   {
@@ -1129,15 +1165,6 @@
    "pack": false
   },
   {
-   "id": "en_child_41582fc3_38",
-   "lang": "en",
-   "style": "child",
-   "text": "Why is the wall glow colorful and new?",
-   "speech": "Why is the wall glow colorful and new?",
-   "source": "escoita/curso_5_6/2/pensamiento/explica",
-   "pack": false
-  },
-  {
    "id": "en_child_41b849c0_44",
    "lang": "en",
    "style": "child",
@@ -1171,15 +1198,6 @@
    "text": "Warm drink or cold drink: which melts ice?",
    "speech": "Warm drink or cold drink: which melts ice?",
    "source": "escoita/curso_3_4/6/pensamiento/predice",
-   "pack": false
-  },
-  {
-   "id": "en_child_42020891_24",
-   "lang": "en",
-   "style": "child",
-   "text": "Fast foot or sleepy toe?",
-   "speech": "Fast foot or sleepy toe?",
-   "source": "escoita/curso_2_3/9/pensamiento/predice",
    "pack": false
   },
   {
@@ -1246,6 +1264,24 @@
    "pack": false
   },
   {
+   "id": "en_child_46bb9268_31",
+   "lang": "en",
+   "style": "child",
+   "text": "Throw the plane along the lane.",
+   "speech": "Throw the plane along the lane.",
+   "source": "escoita/curso_5_6/6/pensamiento/proba",
+   "pack": false
+  },
+  {
+   "id": "en_child_46e49b2f_27",
+   "lang": "en",
+   "style": "child",
+   "text": "Soft rain or a stormy boom?",
+   "speech": "Soft rain or a stormy boom?",
+   "source": "escoita/curso_4_5/8/pensamiento/compara",
+   "pack": false
+  },
+  {
    "id": "en_child_471583b3_36",
    "lang": "en",
    "style": "child",
@@ -1279,15 +1315,6 @@
    "text": "The boat is very light on water.",
    "speech": "The boat is very light on water.",
    "source": "escoita/curso_2_3/2/light/frase",
-   "pack": false
-  },
-  {
-   "id": "en_child_4ab36d2b_34",
-   "lang": "en",
-   "style": "child",
-   "text": "Shake the rice rainstick and boom.",
-   "speech": "Shake the rice rainstick and boom.",
-   "source": "escoita/curso_4_5/8/pensamiento/proba",
    "pack": false
   },
   {
@@ -1363,15 +1390,6 @@
    "pack": false
   },
   {
-   "id": "en_child_4cd7bb19_34",
-   "lang": "en",
-   "style": "child",
-   "text": "Hoop or heap: where goes the leaf?",
-   "speech": "Hoop or heap: where goes the leaf?",
-   "source": "escoita/curso_2_3/3/pensamiento/predice",
-   "pack": false
-  },
-  {
    "id": "en_child_4e036fa2_48",
    "lang": "en",
    "style": "child",
@@ -1414,15 +1432,6 @@
    "text": "Light on or dark night?",
    "speech": "Light on or dark night?",
    "source": "escoita/curso_2_3/10/pensamiento/compara",
-   "pack": false
-  },
-  {
-   "id": "en_child_4ff10f6c_38",
-   "lang": "en",
-   "style": "child",
-   "text": "Snip each thin sheet and listen close.",
-   "speech": "Snip each thin sheet and listen close.",
-   "source": "escoita/curso_5_6/5/pensamiento/proba",
    "pack": false
   },
   {
@@ -1480,6 +1489,15 @@
    "pack": false
   },
   {
+   "id": "en_child_532e1310_27",
+   "lang": "en",
+   "style": "child",
+   "text": "Soapy hands or clean hands?",
+   "speech": "Soapy hands or clean hands?",
+   "source": "escoita/curso_2_3/7/pensamiento/compara",
+   "pack": false
+  },
+  {
    "id": "en_child_53704971_11",
    "lang": "en",
    "style": "child",
@@ -1507,21 +1525,21 @@
    "pack": false
   },
   {
+   "id": "en_child_58675dd7_28",
+   "lang": "en",
+   "style": "child",
+   "text": "Shine the light in the dark.",
+   "speech": "Shine the light in the dark.",
+   "source": "escoita/curso_2_3/10/pensamiento/proba",
+   "pack": false
+  },
+  {
    "id": "en_child_58a9a5e4_30",
    "lang": "en",
    "style": "child",
    "text": "Boat or boot: which one sinks?",
    "speech": "Boat or boot: which one sinks?",
    "source": "escoita/curso_2_3/1/pensamiento/predice",
-   "pack": false
-  },
-  {
-   "id": "en_child_58badc9a_23",
-   "lang": "en",
-   "style": "child",
-   "text": "Fast blow or slow blow?",
-   "speech": "Fast blow or slow blow?",
-   "source": "escoita/curso_2_3/2/pensamiento/compara",
    "pack": false
   },
   {
@@ -1588,6 +1606,15 @@
    "pack": false
   },
   {
+   "id": "en_child_5e725072_37",
+   "lang": "en",
+   "style": "child",
+   "text": "Where does the leaf go: hoop or heap?",
+   "speech": "Where does the leaf go: hoop or heap?",
+   "source": "escoita/curso_2_3/3/pensamiento/predice",
+   "pack": false
+  },
+  {
    "id": "en_child_5e73b977_32",
    "lang": "en",
    "style": "child",
@@ -1597,12 +1624,12 @@
    "pack": false
   },
   {
-   "id": "en_child_60018186_31",
+   "id": "en_child_5ec4e188_21",
    "lang": "en",
    "style": "child",
-   "text": "Why does this bread press down?",
-   "speech": "Why does this bread press down?",
-   "source": "escoita/curso_2_3/5/pensamiento/explica",
+   "text": "Make the shadow long.",
+   "speech": "Make the shadow long.",
+   "source": "escoita/curso_3_4/5/pensamiento/proba",
    "pack": false
   },
   {
@@ -1687,15 +1714,6 @@
    "pack": false
   },
   {
-   "id": "en_child_6566242a_28",
-   "lang": "en",
-   "style": "child",
-   "text": "Why did the heart beat fast?",
-   "speech": "Why did the heart beat fast?",
-   "source": "escoita/curso_4_5/2/pensamiento/explica",
-   "pack": false
-  },
-  {
    "id": "en_child_669a5f2b_31",
    "lang": "en",
    "style": "child",
@@ -1759,6 +1777,15 @@
    "pack": false
   },
   {
+   "id": "en_child_68043b6f_32",
+   "lang": "en",
+   "style": "child",
+   "text": "Why do we see stars on the wall?",
+   "speech": "Why do we see stars on the wall?",
+   "source": "escoita/curso_2_3/10/pensamiento/explica",
+   "pack": false
+  },
+  {
    "id": "en_child_681faebd_48",
    "lang": "en",
    "style": "child",
@@ -1810,15 +1837,6 @@
    "text": "Hold the colored filter before the light.",
    "speech": "Hold the colored filter before the light.",
    "source": "escoita/curso_5_6/2/filter/frase",
-   "pack": false
-  },
-  {
-   "id": "en_child_6b0d7189_40",
-   "lang": "en",
-   "style": "child",
-   "text": "How many legs does the dog or fish have?",
-   "speech": "How many legs does the dog or fish have?",
-   "source": "escoita/curso_4_5/3/pensamiento/predice",
    "pack": false
   },
   {
@@ -1894,6 +1912,24 @@
    "pack": false
   },
   {
+   "id": "en_child_6df03b26_41",
+   "lang": "en",
+   "style": "child",
+   "text": "Full jar or empty jar: which sounds high?",
+   "speech": "Full jar or empty jar: which sounds high?",
+   "source": "escoita/curso_3_4/9/pensamiento/predice",
+   "pack": false
+  },
+  {
+   "id": "en_child_6e8b9662_26",
+   "lang": "en",
+   "style": "child",
+   "text": "Tap each jar with a spoon.",
+   "speech": "Tap each jar with a spoon.",
+   "source": "escoita/curso_3_4/9/pensamiento/proba",
+   "pack": false
+  },
+  {
    "id": "en_child_6ed851d3_35",
    "lang": "en",
    "style": "child",
@@ -1939,21 +1975,21 @@
    "pack": false
   },
   {
-   "id": "en_child_75136fef_39",
-   "lang": "en",
-   "style": "child",
-   "text": "Listen to the heart beat in your chest.",
-   "speech": "Listen to the heart beat in your chest.",
-   "source": "escoita/curso_4_5/2/pensamiento/proba",
-   "pack": false
-  },
-  {
    "id": "en_child_75698129_25",
    "lang": "en",
    "style": "child",
    "text": "Drop it on the loud drum.",
    "speech": "Drop it on the loud drum.",
    "source": "escoita/curso_2_3/4/modelo/2",
+   "pack": false
+  },
+  {
+   "id": "en_child_75971d5b_31",
+   "lang": "en",
+   "style": "child",
+   "text": "Why does the soft bread squash?",
+   "speech": "Why does the soft bread squash?",
+   "source": "escoita/curso_2_3/5/pensamiento/explica",
    "pack": false
   },
   {
@@ -2002,11 +2038,11 @@
    "pack": false
   },
   {
-   "id": "en_child_77e7d92c_35",
+   "id": "en_child_786b1846_31",
    "lang": "en",
    "style": "child",
-   "text": "Press the switch for a clear blink.",
-   "speech": "Press the switch for a clear blink.",
+   "text": "Press the switch for one blink.",
+   "speech": "Press the switch for one blink.",
    "source": "escoita/curso_5_6/9/pensamiento/proba",
    "pack": false
   },
@@ -2029,21 +2065,30 @@
    "pack": false
   },
   {
+   "id": "en_child_7aa5e4c0_29",
+   "lang": "en",
+   "style": "child",
+   "text": "When was your heartbeat fast?",
+   "speech": "When was your heartbeat fast?",
+   "source": "escoita/curso_4_5/2/pensamiento/compara",
+   "pack": false
+  },
+  {
+   "id": "en_child_7d00de96_28",
+   "lang": "en",
+   "style": "child",
+   "text": "Which ice cube shrinks more?",
+   "speech": "Which ice cube shrinks more?",
+   "source": "escoita/curso_3_4/6/pensamiento/compara",
+   "pack": false
+  },
+  {
    "id": "en_child_7d769fc8_14",
    "lang": "en",
    "style": "child",
    "text": "A long shadow.",
    "speech": "A long shadow.",
    "source": "escoita/curso_3_4/5/modelo/1",
-   "pack": false
-  },
-  {
-   "id": "en_child_7d9589f2_30",
-   "lang": "en",
-   "style": "child",
-   "text": "Roll the toy train wheel down.",
-   "speech": "Roll the toy train wheel down.",
-   "source": "escoita/curso_3_4/3/pensamiento/proba",
    "pack": false
   },
   {
@@ -2107,15 +2152,6 @@
    "text": "What happens if we carry the stretcher fast?",
    "speech": "What happens if we carry the stretcher fast?",
    "source": "escoita/curso_4_5/5/pensamiento/predice",
-   "pack": false
-  },
-  {
-   "id": "en_child_811f4a9e_42",
-   "lang": "en",
-   "style": "child",
-   "text": "Front of spoon or back: how is your cheek?",
-   "speech": "Front of spoon or back: how is your cheek?",
-   "source": "escoita/curso_3_4/10/pensamiento/predice",
    "pack": false
   },
   {
@@ -2254,15 +2290,6 @@
    "pack": false
   },
   {
-   "id": "en_child_8ae9b581_28",
-   "lang": "en",
-   "style": "child",
-   "text": "Wave the fan so blades spin.",
-   "speech": "Wave the fan so blades spin.",
-   "source": "escoita/curso_4_5/7/pensamiento/proba",
-   "pack": false
-  },
-  {
    "id": "en_child_8b743236_12",
    "lang": "en",
    "style": "child",
@@ -2272,21 +2299,21 @@
    "pack": false
   },
   {
+   "id": "en_child_8b82e23d_26",
+   "lang": "en",
+   "style": "child",
+   "text": "When do we stop and sleep?",
+   "speech": "When do we stop and sleep?",
+   "source": "escoita/curso_2_3/9/pensamiento/explica",
+   "pack": false
+  },
+  {
    "id": "en_child_8da7e9d2_31",
    "lang": "en",
    "style": "child",
    "text": "Hold the leaf by its thin stem.",
    "speech": "Hold the leaf by its thin stem.",
    "source": "escoita/curso_2_3/3/stem/frase",
-   "pack": false
-  },
-  {
-   "id": "en_child_8eabad88_28",
-   "lang": "en",
-   "style": "child",
-   "text": "When do feet go sleepy slow?",
-   "speech": "When do feet go sleepy slow?",
-   "source": "escoita/curso_2_3/9/pensamiento/explica",
    "pack": false
   },
   {
@@ -2407,6 +2434,15 @@
    "pack": false
   },
   {
+   "id": "en_child_953037f5_43",
+   "lang": "en",
+   "style": "child",
+   "text": "Compare the short straw and the long straw.",
+   "speech": "Compare the short straw and the long straw.",
+   "source": "escoita/curso_5_6/10/pensamiento/compara",
+   "pack": false
+  },
+  {
    "id": "en_child_957c6929_43",
    "lang": "en",
    "style": "child",
@@ -2422,6 +2458,15 @@
    "text": "Color stripes all over the cardboard circle.",
    "speech": "Color stripes all over the cardboard circle.",
    "source": "escoita/curso_5_6/4/circle/frase",
+   "pack": false
+  },
+  {
+   "id": "en_child_99333f95_54",
+   "lang": "en",
+   "style": "child",
+   "text": "Inside or back of the spoon: is your face upside down?",
+   "speech": "Inside or back of the spoon: is your face upside down?",
+   "source": "escoita/curso_3_4/10/pensamiento/predice",
    "pack": false
   },
   {
@@ -2467,6 +2512,15 @@
    "text": "Watch each wheel spin down the slope.",
    "speech": "Watch each wheel spin down the slope.",
    "source": "escoita/curso_3_4/3/wheel/frase",
+   "pack": false
+  },
+  {
+   "id": "en_child_9bd95089_38",
+   "lang": "en",
+   "style": "child",
+   "text": "Put two filters in front of the light.",
+   "speech": "Put two filters in front of the light.",
+   "source": "escoita/curso_5_6/2/pensamiento/proba",
    "pack": false
   },
   {
@@ -2686,15 +2740,6 @@
    "pack": false
   },
   {
-   "id": "en_child_a77bf42d_37",
-   "lang": "en",
-   "style": "child",
-   "text": "Launch the white plane from the lane.",
-   "speech": "Launch the white plane from the lane.",
-   "source": "escoita/curso_5_6/6/pensamiento/proba",
-   "pack": false
-  },
-  {
    "id": "en_child_a83f1c4f_25",
    "lang": "en",
    "style": "child",
@@ -2710,15 +2755,6 @@
    "text": "Light comes from the small bulb.",
    "speech": "Light comes from the small bulb.",
    "source": "escoita/curso_2_3/10/bulb/frase",
-   "pack": false
-  },
-  {
-   "id": "en_child_a887ecac_45",
-   "lang": "en",
-   "style": "child",
-   "text": "What color glow do two filters make together?",
-   "speech": "What color glow do two filters make together?",
-   "source": "escoita/curso_5_6/2/pensamiento/predice",
    "pack": false
   },
   {
@@ -2785,12 +2821,30 @@
    "pack": false
   },
   {
+   "id": "en_child_ac9e8017_42",
+   "lang": "en",
+   "style": "child",
+   "text": "Fold the butterfly wing and press it flat.",
+   "speech": "Fold the butterfly wing and press it flat.",
+   "source": "escoita/curso_5_6/3/pensamiento/proba",
+   "pack": false
+  },
+  {
    "id": "en_child_ad8f5cff_31",
    "lang": "en",
    "style": "child",
    "text": "Count four legs on the toy dog.",
    "speech": "Count four legs on the toy dog.",
    "source": "escoita/curso_4_5/3/modelo/2",
+   "pack": false
+  },
+  {
+   "id": "en_child_afae7d23_27",
+   "lang": "en",
+   "style": "child",
+   "text": "How many legs: dog or fish?",
+   "speech": "How many legs: dog or fish?",
+   "source": "escoita/curso_4_5/3/pensamiento/predice",
    "pack": false
   },
   {
@@ -2902,24 +2956,6 @@
    "pack": false
   },
   {
-   "id": "en_child_b5d9235d_32",
-   "lang": "en",
-   "style": "child",
-   "text": "Stretch the shadow outline long.",
-   "speech": "Stretch the shadow outline long.",
-   "source": "escoita/curso_3_4/5/pensamiento/proba",
-   "pack": false
-  },
-  {
-   "id": "en_child_b6289ad6_28",
-   "lang": "en",
-   "style": "child",
-   "text": "Same tile or different pile?",
-   "speech": "Same tile or different pile?",
-   "source": "escoita/curso_3_4/2/pensamiento/compara",
-   "pack": false
-  },
-  {
    "id": "en_child_b6acb283_12",
    "lang": "en",
    "style": "child",
@@ -2965,12 +3001,30 @@
    "pack": false
   },
   {
+   "id": "en_child_b7be2082_21",
+   "lang": "en",
+   "style": "child",
+   "text": "Fast pat or slow pat?",
+   "speech": "Fast pat or slow pat?",
+   "source": "escoita/curso_2_3/9/pensamiento/compara",
+   "pack": false
+  },
+  {
    "id": "en_child_b878c787_27",
    "lang": "en",
    "style": "child",
    "text": "Pan or drum: which is loud?",
    "speech": "Pan or drum: which is loud?",
    "source": "escoita/curso_2_3/4/pensamiento/predice",
+   "pack": false
+  },
+  {
+   "id": "en_child_b8c06597_25",
+   "lang": "en",
+   "style": "child",
+   "text": "Full glass or half glass?",
+   "speech": "Full glass or half glass?",
+   "source": "escoita/curso_3_4/8/pensamiento/compara",
    "pack": false
   },
   {
@@ -3010,30 +3064,12 @@
    "pack": false
   },
   {
-   "id": "en_child_bc290928_24",
-   "lang": "en",
-   "style": "child",
-   "text": "Still day or windy spin?",
-   "speech": "Still day or windy spin?",
-   "source": "escoita/curso_4_5/7/pensamiento/compara",
-   "pack": false
-  },
-  {
    "id": "en_child_bcbba30f_30",
    "lang": "en",
    "style": "child",
    "text": "Each seed in the star is tiny.",
    "speech": "Each seed in the star is tiny.",
    "source": "escoita/curso_2_3/6/tiny/frase",
-   "pack": false
-  },
-  {
-   "id": "en_child_bd2919aa_36",
-   "lang": "en",
-   "style": "child",
-   "text": "Count each leg and sort in the dish.",
-   "speech": "Count each leg and sort in the dish.",
-   "source": "escoita/curso_4_5/3/pensamiento/proba",
    "pack": false
   },
   {
@@ -3163,6 +3199,15 @@
    "pack": false
   },
   {
+   "id": "en_child_c4d0e006_26",
+   "lang": "en",
+   "style": "child",
+   "text": "Wash your hands with soap.",
+   "speech": "Wash your hands with soap.",
+   "source": "escoita/curso_2_3/7/pensamiento/proba",
+   "pack": false
+  },
+  {
    "id": "en_child_c4dc88ec_36",
    "lang": "en",
    "style": "child",
@@ -3190,15 +3235,6 @@
    "pack": false
   },
   {
-   "id": "en_child_c7b17da8_32",
-   "lang": "en",
-   "style": "child",
-   "text": "Run with your foot on fast beat.",
-   "speech": "Run with your foot on fast beat.",
-   "source": "escoita/curso_2_3/9/pensamiento/proba",
-   "pack": false
-  },
-  {
    "id": "en_child_c967a91d_36",
    "lang": "en",
    "style": "child",
@@ -3208,21 +3244,21 @@
    "pack": false
   },
   {
-   "id": "en_child_c9a14324_25",
-   "lang": "en",
-   "style": "child",
-   "text": "Clean hand or soapy hand?",
-   "speech": "Clean hand or soapy hand?",
-   "source": "escoita/curso_2_3/7/pensamiento/compara",
-   "pack": false
-  },
-  {
    "id": "en_child_cab0e0c4_36",
    "lang": "en",
    "style": "child",
    "text": "Look at yourself in the metal spoon.",
    "speech": "Look at yourself in the metal spoon.",
    "source": "escoita/curso_3_4/10/spoon/frase",
+   "pack": false
+  },
+  {
+   "id": "en_child_cb8c2daa_40",
+   "lang": "en",
+   "style": "child",
+   "text": "Blow hard or blow slow: which goes fast?",
+   "speech": "Blow hard or blow slow: which goes fast?",
+   "source": "escoita/curso_2_3/2/pensamiento/predice",
    "pack": false
   },
   {
@@ -3262,24 +3298,6 @@
    "pack": false
   },
   {
-   "id": "en_child_ce1c737d_35",
-   "lang": "en",
-   "style": "child",
-   "text": "Blow or slow: which moves the sail?",
-   "speech": "Blow or slow: which moves the sail?",
-   "source": "escoita/curso_2_3/2/pensamiento/predice",
-   "pack": false
-  },
-  {
-   "id": "en_child_ce221a26_41",
-   "lang": "en",
-   "style": "child",
-   "text": "Compare the nose fold and glide distance.",
-   "speech": "Compare the nose fold and glide distance.",
-   "source": "escoita/curso_5_6/6/pensamiento/compara",
-   "pack": false
-  },
-  {
    "id": "en_child_ce43bde7_28",
    "lang": "en",
    "style": "child",
@@ -3298,24 +3316,6 @@
    "pack": false
   },
   {
-   "id": "en_child_ceeeb166_31",
-   "lang": "en",
-   "style": "child",
-   "text": "Which ice cube did shrink more?",
-   "speech": "Which ice cube did shrink more?",
-   "source": "escoita/curso_3_4/6/pensamiento/compara",
-   "pack": false
-  },
-  {
-   "id": "en_child_d101216b_32",
-   "lang": "en",
-   "style": "child",
-   "text": "Glow the flashlight in the dark.",
-   "speech": "Glow the flashlight in the dark.",
-   "source": "escoita/curso_2_3/10/pensamiento/proba",
-   "pack": false
-  },
-  {
    "id": "en_child_d1d3cb58_41",
    "lang": "en",
    "style": "child",
@@ -3325,21 +3325,21 @@
    "pack": false
   },
   {
-   "id": "en_child_d2143c71_48",
-   "lang": "en",
-   "style": "child",
-   "text": "Compare one filter glow and two blended filters.",
-   "speech": "Compare one filter glow and two blended filters.",
-   "source": "escoita/curso_5_6/2/pensamiento/compara",
-   "pack": false
-  },
-  {
    "id": "en_child_d2879337_51",
    "lang": "en",
    "style": "child",
    "text": "What color appears if we mix yellow and blue paint?",
    "speech": "What color appears if we mix yellow and blue paint?",
    "source": "escoita/curso_5_6/1/pensamiento/predice",
+   "pack": false
+  },
+  {
+   "id": "en_child_d2fd7ef5_40",
+   "lang": "en",
+   "style": "child",
+   "text": "Listen to your heart beat in your chest.",
+   "speech": "Listen to your heart beat in your chest.",
+   "source": "escoita/curso_4_5/2/pensamiento/proba",
    "pack": false
   },
   {
@@ -3397,15 +3397,6 @@
    "pack": false
   },
   {
-   "id": "en_child_d5e6a925_40",
-   "lang": "en",
-   "style": "child",
-   "text": "Fold the butterfly wing and press right.",
-   "speech": "Fold the butterfly wing and press right.",
-   "source": "escoita/curso_5_6/3/pensamiento/proba",
-   "pack": false
-  },
-  {
    "id": "en_child_d5fc1803_40",
    "lang": "en",
    "style": "child",
@@ -3424,30 +3415,12 @@
    "pack": false
   },
   {
-   "id": "en_child_d7fbaa94_46",
-   "lang": "en",
-   "style": "child",
-   "text": "Blend each filter frame in front of the light.",
-   "speech": "Blend each filter frame in front of the light.",
-   "source": "escoita/curso_5_6/2/pensamiento/proba",
-   "pack": false
-  },
-  {
    "id": "en_child_d822a608_37",
    "lang": "en",
    "style": "child",
    "text": "Pack the suitcase and test the scale.",
    "speech": "Pack the suitcase and test the scale.",
    "source": "escoita/curso_5_6/8/pensamiento/proba",
-   "pack": false
-  },
-  {
-   "id": "en_child_d84f99bf_23",
-   "lang": "en",
-   "style": "child",
-   "text": "Fast pat or sleepy pat?",
-   "speech": "Fast pat or sleepy pat?",
-   "source": "escoita/curso_2_3/9/pensamiento/compara",
    "pack": false
   },
   {
@@ -3475,15 +3448,6 @@
    "text": "Why does the boot sink?",
    "speech": "Why does the boot sink?",
    "source": "escoita/curso_2_3/1/pensamiento/explica",
-   "pack": false
-  },
-  {
-   "id": "en_child_db44c28d_35",
-   "lang": "en",
-   "style": "child",
-   "text": "Full jar or low jar: which is high?",
-   "speech": "Full jar or low jar: which is high?",
-   "source": "escoita/curso_3_4/9/pensamiento/predice",
    "pack": false
   },
   {
@@ -3574,15 +3538,6 @@
    "text": "Wait to see if drops soak in.",
    "speech": "Wait to see if drops soak in.",
    "source": "escoita/curso_4_5/1/soak/frase",
-   "pack": false
-  },
-  {
-   "id": "en_child_e13cd8a0_30",
-   "lang": "en",
-   "style": "child",
-   "text": "Tap the glass jar with no lid.",
-   "speech": "Tap the glass jar with no lid.",
-   "source": "escoita/curso_3_4/9/pensamiento/proba",
    "pack": false
   },
   {
@@ -3730,6 +3685,15 @@
    "pack": false
   },
   {
+   "id": "en_child_eb9b3fbc_34",
+   "lang": "en",
+   "style": "child",
+   "text": "Why does the spoon flip your face?",
+   "speech": "Why does the spoon flip your face?",
+   "source": "escoita/curso_3_4/10/pensamiento/explica",
+   "pack": false
+  },
+  {
    "id": "en_child_ec0b9642_33",
    "lang": "en",
    "style": "child",
@@ -3739,12 +3703,12 @@
    "pack": false
   },
   {
-   "id": "en_child_ec5d6c31_31",
+   "id": "en_child_ecc0439b_24",
    "lang": "en",
    "style": "child",
-   "text": "Wash hand with soap and bubble.",
-   "speech": "Wash hand with soap and bubble.",
-   "source": "escoita/curso_2_3/7/pensamiento/proba",
+   "text": "Spin the top on its pin.",
+   "speech": "Spin the top on its pin.",
+   "source": "escoita/curso_5_6/4/pensamiento/proba",
    "pack": false
   },
   {
@@ -3820,6 +3784,15 @@
    "pack": false
   },
   {
+   "id": "en_child_f216fb1a_44",
+   "lang": "en",
+   "style": "child",
+   "text": "Small without the lens or big with the lens?",
+   "speech": "Small without the lens or big with the lens?",
+   "source": "escoita/curso_4_5/4/pensamiento/compara",
+   "pack": false
+  },
+  {
    "id": "en_child_f262587e_36",
    "lang": "en",
    "style": "child",
@@ -3829,11 +3802,11 @@
    "pack": false
   },
   {
-   "id": "en_child_f42c5c2e_49",
+   "id": "en_child_f2701277_43",
    "lang": "en",
    "style": "child",
-   "text": "Compare the short rail and long trail on the map.",
-   "speech": "Compare the short rail and long trail on the map.",
+   "text": "Compare the short trail and the long trail.",
+   "speech": "Compare the short trail and the long trail.",
    "source": "escoita/curso_5_6/7/pensamiento/compara",
    "pack": false
   },
@@ -3928,6 +3901,15 @@
    "pack": false
   },
   {
+   "id": "en_child_f8d8cbdd_41",
+   "lang": "en",
+   "style": "child",
+   "text": "Why is the fish not in the four-leg hoop?",
+   "speech": "Why is the fish not in the four leg hoop?",
+   "source": "escoita/curso_4_5/3/pensamiento/explica",
+   "pack": false
+  },
+  {
    "id": "en_child_f9483a34_36",
    "lang": "en",
    "style": "child",
@@ -3943,6 +3925,15 @@
    "text": "Make the beam blink one or two times.",
    "speech": "Make the beam blink one or two times.",
    "source": "escoita/curso_5_6/9/blink/frase",
+   "pack": false
+  },
+  {
+   "id": "en_child_f9dcb462_28",
+   "lang": "en",
+   "style": "child",
+   "text": "Same tile or different tile?",
+   "speech": "Same tile or different tile?",
+   "source": "escoita/curso_3_4/2/pensamiento/compara",
    "pack": false
   },
   {
@@ -4015,6 +4006,15 @@
    "text": "Overlap two filters to blend colors.",
    "speech": "Overlap two filters to blend colors.",
    "source": "escoita/curso_5_6/2/blend/frase",
+   "pack": false
+  },
+  {
+   "id": "en_child_fd4d64f1_36",
+   "lang": "en",
+   "style": "child",
+   "text": "Count the legs and sort the animals.",
+   "speech": "Count the legs and sort the animals.",
+   "source": "escoita/curso_4_5/3/pensamiento/proba",
    "pack": false
   },
   {
@@ -4141,6 +4141,15 @@
    "text": "convenient",
    "speech": "convenient",
    "source": "corpus/3222/lemma",
+   "pack": false
+  },
+  {
+   "id": "en_slow_004fc577_43",
+   "lang": "en",
+   "style": "slow",
+   "text": "Compare the pointed nose and the flat nose.",
+   "speech": "Compare the pointed nose and the flat nose.",
+   "source": "escoita/curso_5_6/6/pensamiento/compara/slow",
    "pack": false
   },
   {
@@ -5080,6 +5089,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_04a16089_40",
+   "lang": "en",
+   "style": "slow",
+   "text": "What color do two filters make together?",
+   "speech": "What color do two filters make together?",
+   "source": "escoita/curso_5_6/2/pensamiento/predice/slow",
+   "pack": false
+  },
+  {
    "id": "en_slow_04a1e521_5",
    "lang": "en",
    "style": "slow",
@@ -5395,15 +5413,6 @@
    "pack": false
   },
   {
-   "id": "en_slow_0618b416_29",
-   "lang": "en",
-   "style": "slow",
-   "text": "When was the heart beat fast?",
-   "speech": "When was the heart beat fast?",
-   "source": "escoita/curso_4_5/2/pensamiento/compara/slow",
-   "pack": false
-  },
-  {
    "id": "en_slow_062b37e7_7",
    "lang": "en",
    "style": "slow",
@@ -5464,15 +5473,6 @@
    "text": "Repeat",
    "speech": "Repeat",
    "source": "tpr.5_6.marzo/s1/5_6.marzo.s1.repeat",
-   "pack": false
-  },
-  {
-   "id": "en_slow_066391f4_58",
-   "lang": "en",
-   "style": "slow",
-   "text": "Compare the short straw sound and the long straw low note.",
-   "speech": "Compare the short straw sound and the long straw low note.",
-   "source": "escoita/curso_5_6/10/pensamiento/compara/slow",
    "pack": false
   },
   {
@@ -5716,15 +5716,6 @@
    "text": "shelf",
    "speech": "shelf",
    "source": "corpus/1816/lemma",
-   "pack": false
-  },
-  {
-   "id": "en_slow_07e62142_34",
-   "lang": "en",
-   "style": "slow",
-   "text": "Small eye view or large lens view?",
-   "speech": "Small eye view or large lens view?",
-   "source": "escoita/curso_4_5/4/pensamiento/compara/slow",
    "pack": false
   },
   {
@@ -6916,6 +6907,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_0cbb84dc_35",
+   "lang": "en",
+   "style": "slow",
+   "text": "Compare one filter and two filters.",
+   "speech": "Compare one filter and two filters.",
+   "source": "escoita/curso_5_6/2/pensamiento/compara/slow",
+   "pack": false
+  },
+  {
    "id": "en_slow_0cbc8ba4_4",
    "lang": "en",
    "style": "slow",
@@ -7600,6 +7600,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_0f8ef7bd_41",
+   "lang": "en",
+   "style": "slow",
+   "text": "Why is the light on the wall a new color?",
+   "speech": "Why is the light on the wall a new color?",
+   "source": "escoita/curso_5_6/2/pensamiento/explica/slow",
+   "pack": false
+  },
+  {
    "id": "en_slow_0f93019f_7",
    "lang": "en",
    "style": "slow",
@@ -7867,6 +7876,15 @@
    "text": "Wavy",
    "speech": "Wavy",
    "source": "tpr.3_4.xuno/s1/3_4.xuno.s1.wavy",
+   "pack": false
+  },
+  {
+   "id": "en_slow_10a16af1_45",
+   "lang": "en",
+   "style": "slow",
+   "text": "Compare the heavy suitcase and the light bag.",
+   "speech": "Compare the heavy suitcase and the light bag.",
+   "source": "escoita/curso_5_6/8/pensamiento/compara/slow",
    "pack": false
   },
   {
@@ -8383,15 +8401,6 @@
    "pack": false
   },
   {
-   "id": "en_slow_12d72b1b_34",
-   "lang": "en",
-   "style": "slow",
-   "text": "Twirl the round circle on the pin.",
-   "speech": "Twirl the round circle on the pin.",
-   "source": "escoita/curso_5_6/4/pensamiento/proba/slow",
-   "pack": false
-  },
-  {
    "id": "en_slow_12e72983_4",
    "lang": "en",
    "style": "slow",
@@ -8524,6 +8533,15 @@
    "text": "Welcome!",
    "speech": "Welcome!",
    "source": "tpr.0_2.setembro/s1/0_2.setembro.s1.welcome",
+   "pack": false
+  },
+  {
+   "id": "en_slow_13d45df2_23",
+   "lang": "en",
+   "style": "slow",
+   "text": "No wind or a windy day?",
+   "speech": "No wind or a windy day?",
+   "source": "escoita/curso_4_5/7/pensamiento/compara/slow",
    "pack": false
   },
   {
@@ -8896,15 +8914,6 @@
    "pack": false
   },
   {
-   "id": "en_slow_15d0ee9f_30",
-   "lang": "en",
-   "style": "slow",
-   "text": "Soft rice rain or stormy boom?",
-   "speech": "Soft rice rain or stormy boom?",
-   "source": "escoita/curso_4_5/8/pensamiento/compara/slow",
-   "pack": false
-  },
-  {
    "id": "en_slow_15d2601e_4",
    "lang": "en",
    "style": "slow",
@@ -9190,15 +9199,6 @@
    "text": "Suitcase.",
    "speech": "Suitcase.",
    "source": "escoita/curso_5_6/8/modelo/0",
-   "pack": false
-  },
-  {
-   "id": "en_slow_17235c65_30",
-   "lang": "en",
-   "style": "slow",
-   "text": "Why do stars glow in the dark?",
-   "speech": "Why do stars glow in the dark?",
-   "source": "escoita/curso_2_3/10/pensamiento/explica/slow",
    "pack": false
   },
   {
@@ -9841,6 +9841,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_1a3bbdba_35",
+   "lang": "en",
+   "style": "slow",
+   "text": "Snip each sheet and listen closely.",
+   "speech": "Snip each sheet and listen closely.",
+   "source": "escoita/curso_5_6/5/pensamiento/proba/slow",
+   "pack": false
+  },
+  {
    "id": "en_slow_1a4d55d8_5",
    "lang": "en",
    "style": "slow",
@@ -10291,6 +10300,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_1c4635aa_29",
+   "lang": "en",
+   "style": "slow",
+   "text": "Why did your heart beat fast?",
+   "speech": "Why did your heart beat fast?",
+   "source": "escoita/curso_4_5/2/pensamiento/explica/slow",
+   "pack": false
+  },
+  {
    "id": "en_slow_1c48c242_9",
    "lang": "en",
    "style": "slow",
@@ -10558,15 +10576,6 @@
    "text": "Plough",
    "speech": "Plough",
    "source": "tpr.3_4.febreiro/s2/3_4.febreiro.s2.plough",
-   "pack": false
-  },
-  {
-   "id": "en_slow_1d4ed5b6_40",
-   "lang": "en",
-   "style": "slow",
-   "text": "Compare the heavy handle and light pack.",
-   "speech": "Compare the heavy handle and light pack.",
-   "source": "escoita/curso_5_6/8/pensamiento/compara/slow",
    "pack": false
   },
   {
@@ -11038,15 +11047,6 @@
    "pack": false
   },
   {
-   "id": "en_slow_1f72659c_24",
-   "lang": "en",
-   "style": "slow",
-   "text": "Full glass or half fill?",
-   "speech": "Full glass or half fill?",
-   "source": "escoita/curso_3_4/8/pensamiento/compara/slow",
-   "pack": false
-  },
-  {
    "id": "en_slow_1f84448e_3",
    "lang": "en",
    "style": "slow",
@@ -11089,6 +11089,15 @@
    "text": "Roll ball!",
    "speech": "Roll ball!",
    "source": "acopros/6/mira_e_nota/slow",
+   "pack": false
+  },
+  {
+   "id": "en_slow_1fab486d_35",
+   "lang": "en",
+   "style": "slow",
+   "text": "Run fast or walk like a sleepy cat?",
+   "speech": "Run fast or walk like a sleepy cat?",
+   "source": "escoita/curso_2_3/9/pensamiento/predice/slow",
    "pack": false
   },
   {
@@ -12433,6 +12442,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_25806658_32",
+   "lang": "en",
+   "style": "slow",
+   "text": "Wave the fan so the blades spin.",
+   "speech": "Wave the fan so the blades spin.",
+   "source": "escoita/curso_4_5/7/pensamiento/proba/slow",
+   "pack": false
+  },
+  {
    "id": "en_slow_25999158_3",
    "lang": "en",
    "style": "slow",
@@ -12664,6 +12682,15 @@
    "text": "heap",
    "speech": "heap",
    "source": "corpus/1433/lemma",
+   "pack": false
+  },
+  {
+   "id": "en_slow_26745307_31",
+   "lang": "en",
+   "style": "slow",
+   "text": "Run fast when the beat is fast.",
+   "speech": "Run fast when the beat is fast.",
+   "source": "escoita/curso_2_3/9/pensamiento/proba/slow",
    "pack": false
   },
   {
@@ -14017,15 +14044,6 @@
    "pack": false
   },
   {
-   "id": "en_slow_2c4a0edd_35",
-   "lang": "en",
-   "style": "slow",
-   "text": "Why does the spoon flip your cheek?",
-   "speech": "Why does the spoon flip your cheek?",
-   "source": "escoita/curso_3_4/10/pensamiento/explica/slow",
-   "pack": false
-  },
-  {
    "id": "en_slow_2c4f63e3_6",
    "lang": "en",
    "style": "slow",
@@ -14446,15 +14464,6 @@
    "text": "Stage",
    "speech": "Stage",
    "source": "tpr.4_5.febreiro/s1/4_5.febreiro.s1.stage",
-   "pack": false
-  },
-  {
-   "id": "en_slow_2e2aad4f_44",
-   "lang": "en",
-   "style": "slow",
-   "text": "Why does the fish stay out of the four hoop?",
-   "speech": "Why does the fish stay out of the four hoop?",
-   "source": "escoita/curso_4_5/3/pensamiento/explica/slow",
    "pack": false
   },
   {
@@ -15169,6 +15178,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_310bdb16_23",
+   "lang": "en",
+   "style": "slow",
+   "text": "Fast boat or slow boat?",
+   "speech": "Fast boat or slow boat?",
+   "source": "escoita/curso_2_3/2/pensamiento/compara/slow",
+   "pack": false
+  },
+  {
    "id": "en_slow_312f0b60_5",
    "lang": "en",
    "style": "slow",
@@ -15697,6 +15715,15 @@
    "text": "skin",
    "speech": "skin",
    "source": "corpus/771/lemma",
+   "pack": false
+  },
+  {
+   "id": "en_slow_336c7aa9_38",
+   "lang": "en",
+   "style": "slow",
+   "text": "Shake the rainstick slowly, then fast.",
+   "speech": "Shake the rainstick slowly, then fast.",
+   "source": "escoita/curso_4_5/8/pensamiento/proba/slow",
    "pack": false
   },
   {
@@ -16831,6 +16858,15 @@
    "text": "victory",
    "speech": "victory",
    "source": "corpus/2978/lemma",
+   "pack": false
+  },
+  {
+   "id": "en_slow_38f22000_29",
+   "lang": "en",
+   "style": "slow",
+   "text": "Roll the train down the ramp.",
+   "speech": "Roll the train down the ramp.",
+   "source": "escoita/curso_3_4/3/pensamiento/proba/slow",
    "pack": false
   },
   {
@@ -18607,15 +18643,6 @@
    "pack": false
   },
   {
-   "id": "en_slow_41582fc3_38",
-   "lang": "en",
-   "style": "slow",
-   "text": "Why is the wall glow colorful and new?",
-   "speech": "Why is the wall glow colorful and new?",
-   "source": "escoita/curso_5_6/2/pensamiento/explica/slow",
-   "pack": false
-  },
-  {
    "id": "en_slow_415e10fe_9",
    "lang": "en",
    "style": "slow",
@@ -18748,15 +18775,6 @@
    "text": "Warm drink or cold drink: which melts ice?",
    "speech": "Warm drink or cold drink: which melts ice?",
    "source": "escoita/curso_3_4/6/pensamiento/predice/slow",
-   "pack": false
-  },
-  {
-   "id": "en_slow_42020891_24",
-   "lang": "en",
-   "style": "slow",
-   "text": "Fast foot or sleepy toe?",
-   "speech": "Fast foot or sleepy toe?",
-   "source": "escoita/curso_2_3/9/pensamiento/predice/slow",
    "pack": false
   },
   {
@@ -19993,6 +20011,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_46bb9268_31",
+   "lang": "en",
+   "style": "slow",
+   "text": "Throw the plane along the lane.",
+   "speech": "Throw the plane along the lane.",
+   "source": "escoita/curso_5_6/6/pensamiento/proba/slow",
+   "pack": false
+  },
+  {
    "id": "en_slow_46c72e58_5",
    "lang": "en",
    "style": "slow",
@@ -20035,6 +20062,15 @@
    "text": "Cushion",
    "speech": "Cushion",
    "source": "tpr.0_2.decembro/s2/0_2.decembro.s2.cushion",
+   "pack": false
+  },
+  {
+   "id": "en_slow_46e49b2f_27",
+   "lang": "en",
+   "style": "slow",
+   "text": "Soft rain or a stormy boom?",
+   "speech": "Soft rain or a stormy boom?",
+   "source": "escoita/curso_4_5/8/pensamiento/compara/slow",
    "pack": false
   },
   {
@@ -20902,15 +20938,6 @@
    "pack": false
   },
   {
-   "id": "en_slow_4ab36d2b_34",
-   "lang": "en",
-   "style": "slow",
-   "text": "Shake the rice rainstick and boom.",
-   "speech": "Shake the rice rainstick and boom.",
-   "source": "escoita/curso_4_5/8/pensamiento/proba/slow",
-   "pack": false
-  },
-  {
    "id": "en_slow_4ac3070a_8",
    "lang": "en",
    "style": "slow",
@@ -21448,15 +21475,6 @@
    "text": "socialist",
    "speech": "socialist",
    "source": "corpus/3830/lemma",
-   "pack": false
-  },
-  {
-   "id": "en_slow_4cd7bb19_34",
-   "lang": "en",
-   "style": "slow",
-   "text": "Hoop or heap: where goes the leaf?",
-   "speech": "Hoop or heap: where goes the leaf?",
-   "source": "escoita/curso_2_3/3/pensamiento/predice/slow",
    "pack": false
   },
   {
@@ -22207,15 +22225,6 @@
    "pack": false
   },
   {
-   "id": "en_slow_4ff10f6c_38",
-   "lang": "en",
-   "style": "slow",
-   "text": "Snip each thin sheet and listen close.",
-   "speech": "Snip each thin sheet and listen close.",
-   "source": "escoita/curso_5_6/5/pensamiento/proba/slow",
-   "pack": false
-  },
-  {
    "id": "en_slow_4ffabb78_8",
    "lang": "en",
    "style": "slow",
@@ -22843,6 +22852,15 @@
    "text": "stretcher",
    "speech": "stretcher",
    "source": "escoita/curso_4_5/5/stretcher",
+   "pack": false
+  },
+  {
+   "id": "en_slow_532e1310_27",
+   "lang": "en",
+   "style": "slow",
+   "text": "Soapy hands or clean hands?",
+   "speech": "Soapy hands or clean hands?",
+   "source": "escoita/curso_2_3/7/pensamiento/compara/slow",
    "pack": false
   },
   {
@@ -23980,6 +23998,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_58675dd7_28",
+   "lang": "en",
+   "style": "slow",
+   "text": "Shine the light in the dark.",
+   "speech": "Shine the light in the dark.",
+   "source": "escoita/curso_2_3/10/pensamiento/proba/slow",
+   "pack": false
+  },
+  {
    "id": "en_slow_586fc67a_9",
    "lang": "en",
    "style": "slow",
@@ -24094,15 +24121,6 @@
    "text": "Darker",
    "speech": "Darker",
    "source": "tpr.4_5.novembro/s4/4_5.novembro.s4.darker",
-   "pack": false
-  },
-  {
-   "id": "en_slow_58badc9a_23",
-   "lang": "en",
-   "style": "slow",
-   "text": "Fast blow or slow blow?",
-   "speech": "Fast blow or slow blow?",
-   "source": "escoita/curso_2_3/2/pensamiento/compara/slow",
    "pack": false
   },
   {
@@ -25411,6 +25429,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_5e725072_37",
+   "lang": "en",
+   "style": "slow",
+   "text": "Where does the leaf go: hoop or heap?",
+   "speech": "Where does the leaf go: hoop or heap?",
+   "source": "escoita/curso_2_3/3/pensamiento/predice/slow",
+   "pack": false
+  },
+  {
    "id": "en_slow_5e73b977_32",
    "lang": "en",
    "style": "slow",
@@ -25489,6 +25516,15 @@
    "text": "mighty",
    "speech": "mighty",
    "source": "corpus/3599/lemma",
+   "pack": false
+  },
+  {
+   "id": "en_slow_5ec4e188_21",
+   "lang": "en",
+   "style": "slow",
+   "text": "Make the shadow long.",
+   "speech": "Make the shadow long.",
+   "source": "escoita/curso_3_4/5/pensamiento/proba/slow",
    "pack": false
   },
   {
@@ -25768,15 +25804,6 @@
    "text": "county",
    "speech": "county",
    "source": "corpus/1227/lemma",
-   "pack": false
-  },
-  {
-   "id": "en_slow_60018186_31",
-   "lang": "en",
-   "style": "slow",
-   "text": "Why does this bread press down?",
-   "speech": "Why does this bread press down?",
-   "source": "escoita/curso_2_3/5/pensamiento/explica/slow",
    "pack": false
   },
   {
@@ -27058,15 +27085,6 @@
    "pack": false
   },
   {
-   "id": "en_slow_6566242a_28",
-   "lang": "en",
-   "style": "slow",
-   "text": "Why did the heart beat fast?",
-   "speech": "Why did the heart beat fast?",
-   "source": "escoita/curso_4_5/2/pensamiento/explica/slow",
-   "pack": false
-  },
-  {
    "id": "en_slow_656933d0_8",
    "lang": "en",
    "style": "slow",
@@ -27766,6 +27784,15 @@
    "text": "Listen",
    "speech": "Listen",
    "source": "tpr.3_4.setembro/s1/3_4.setembro.s1.listen",
+   "pack": false
+  },
+  {
+   "id": "en_slow_68043b6f_32",
+   "lang": "en",
+   "style": "slow",
+   "text": "Why do we see stars on the wall?",
+   "speech": "Why do we see stars on the wall?",
+   "source": "escoita/curso_2_3/10/pensamiento/explica/slow",
    "pack": false
   },
   {
@@ -28516,15 +28543,6 @@
    "pack": false
   },
   {
-   "id": "en_slow_6b0d7189_40",
-   "lang": "en",
-   "style": "slow",
-   "text": "How many legs does the dog or fish have?",
-   "speech": "How many legs does the dog or fish have?",
-   "source": "escoita/curso_4_5/3/pensamiento/predice/slow",
-   "pack": false
-  },
-  {
    "id": "en_slow_6b2e0edf_12",
    "lang": "en",
    "style": "slow",
@@ -28984,6 +29002,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_6df03b26_41",
+   "lang": "en",
+   "style": "slow",
+   "text": "Full jar or empty jar: which sounds high?",
+   "speech": "Full jar or empty jar: which sounds high?",
+   "source": "escoita/curso_3_4/9/pensamiento/predice/slow",
+   "pack": false
+  },
+  {
    "id": "en_slow_6df0dd6e_6",
    "lang": "en",
    "style": "slow",
@@ -29134,6 +29161,15 @@
    "text": "Soap",
    "speech": "Soap",
    "source": "tpr.3_4.maio/s1/3_4.maio.s1.soap",
+   "pack": false
+  },
+  {
+   "id": "en_slow_6e8b9662_26",
+   "lang": "en",
+   "style": "slow",
+   "text": "Tap each jar with a spoon.",
+   "speech": "Tap each jar with a spoon.",
+   "source": "escoita/curso_3_4/9/pensamiento/proba/slow",
    "pack": false
   },
   {
@@ -30406,15 +30442,6 @@
    "pack": false
   },
   {
-   "id": "en_slow_75136fef_39",
-   "lang": "en",
-   "style": "slow",
-   "text": "Listen to the heart beat in your chest.",
-   "speech": "Listen to the heart beat in your chest.",
-   "source": "escoita/curso_4_5/2/pensamiento/proba/slow",
-   "pack": false
-  },
-  {
    "id": "en_slow_751f4e35_6",
    "lang": "en",
    "style": "slow",
@@ -30547,6 +30574,15 @@
    "text": "acknowledge",
    "speech": "acknowledge",
    "source": "corpus/2018/lemma",
+   "pack": false
+  },
+  {
+   "id": "en_slow_75971d5b_31",
+   "lang": "en",
+   "style": "slow",
+   "text": "Why does the soft bread squash?",
+   "speech": "Why does the soft bread squash?",
+   "source": "escoita/curso_2_3/5/pensamiento/explica/slow",
    "pack": false
   },
   {
@@ -31018,15 +31054,6 @@
    "pack": false
   },
   {
-   "id": "en_slow_77e7d92c_35",
-   "lang": "en",
-   "style": "slow",
-   "text": "Press the switch for a clear blink.",
-   "speech": "Press the switch for a clear blink.",
-   "source": "escoita/curso_5_6/9/pensamiento/proba/slow",
-   "pack": false
-  },
-  {
    "id": "en_slow_77f8f3de_8",
    "lang": "en",
    "style": "slow",
@@ -31177,6 +31204,15 @@
    "text": "pencil",
    "speech": "pencil",
    "source": "corpus/3682/lemma",
+   "pack": false
+  },
+  {
+   "id": "en_slow_786b1846_31",
+   "lang": "en",
+   "style": "slow",
+   "text": "Press the switch for one blink.",
+   "speech": "Press the switch for one blink.",
+   "source": "escoita/curso_5_6/9/pensamiento/proba/slow",
    "pack": false
   },
   {
@@ -31546,6 +31582,15 @@
    "text": "Adventurous",
    "speech": "Adventurous",
    "source": "tpr.5_6.xuno/s4/5_6.xuno.s4.adventurous",
+   "pack": false
+  },
+  {
+   "id": "en_slow_7aa5e4c0_29",
+   "lang": "en",
+   "style": "slow",
+   "text": "When was your heartbeat fast?",
+   "speech": "When was your heartbeat fast?",
+   "source": "escoita/curso_4_5/2/pensamiento/compara/slow",
    "pack": false
   },
   {
@@ -31981,6 +32026,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_7d00de96_28",
+   "lang": "en",
+   "style": "slow",
+   "text": "Which ice cube shrinks more?",
+   "speech": "Which ice cube shrinks more?",
+   "source": "escoita/curso_3_4/6/pensamiento/compara/slow",
+   "pack": false
+  },
+  {
    "id": "en_slow_7d1e09f2_11",
    "lang": "en",
    "style": "slow",
@@ -32122,15 +32176,6 @@
    "text": "hotel",
    "speech": "hotel",
    "source": "corpus/1443/lemma",
-   "pack": false
-  },
-  {
-   "id": "en_slow_7d9589f2_30",
-   "lang": "en",
-   "style": "slow",
-   "text": "Roll the toy train wheel down.",
-   "speech": "Roll the toy train wheel down.",
-   "source": "escoita/curso_3_4/3/pensamiento/proba/slow",
    "pack": false
   },
   {
@@ -32797,15 +32842,6 @@
    "text": "Hopping",
    "speech": "Hopping",
    "source": "tpr.2_3.febreiro/s1/2_3.febreiro.s1.hoppy",
-   "pack": false
-  },
-  {
-   "id": "en_slow_811f4a9e_42",
-   "lang": "en",
-   "style": "slow",
-   "text": "Front of spoon or back: how is your cheek?",
-   "speech": "Front of spoon or back: how is your cheek?",
-   "source": "escoita/curso_3_4/10/pensamiento/predice/slow",
    "pack": false
   },
   {
@@ -34951,15 +34987,6 @@
    "pack": false
   },
   {
-   "id": "en_slow_8ae9b581_28",
-   "lang": "en",
-   "style": "slow",
-   "text": "Wave the fan so blades spin.",
-   "speech": "Wave the fan so blades spin.",
-   "source": "escoita/curso_4_5/7/pensamiento/proba/slow",
-   "pack": false
-  },
-  {
    "id": "en_slow_8aea8859_4",
    "lang": "en",
    "style": "slow",
@@ -35101,6 +35128,15 @@
    "text": "Delicious!",
    "speech": "Delicious!",
    "source": "curriculo/T3.U3.2/formulas",
+   "pack": false
+  },
+  {
+   "id": "en_slow_8b82e23d_26",
+   "lang": "en",
+   "style": "slow",
+   "text": "When do we stop and sleep?",
+   "speech": "When do we stop and sleep?",
+   "source": "escoita/curso_2_3/9/pensamiento/explica/slow",
    "pack": false
   },
   {
@@ -35821,15 +35857,6 @@
    "text": "fire",
    "speech": "fire",
    "source": "corpus/307/lemma",
-   "pack": false
-  },
-  {
-   "id": "en_slow_8eabad88_28",
-   "lang": "en",
-   "style": "slow",
-   "text": "When do feet go sleepy slow?",
-   "speech": "When do feet go sleepy slow?",
-   "source": "escoita/curso_2_3/9/pensamiento/explica/slow",
    "pack": false
   },
   {
@@ -37282,6 +37309,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_953037f5_43",
+   "lang": "en",
+   "style": "slow",
+   "text": "Compare the short straw and the long straw.",
+   "speech": "Compare the short straw and the long straw.",
+   "source": "escoita/curso_5_6/10/pensamiento/compara/slow",
+   "pack": false
+  },
+  {
    "id": "en_slow_953445ed_7",
    "lang": "en",
    "style": "slow",
@@ -38164,6 +38200,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_99333f95_54",
+   "lang": "en",
+   "style": "slow",
+   "text": "Inside or back of the spoon: is your face upside down?",
+   "speech": "Inside or back of the spoon: is your face upside down?",
+   "source": "escoita/curso_3_4/10/pensamiento/predice/slow",
+   "pack": false
+  },
+  {
    "id": "en_slow_99341468_5",
    "lang": "en",
    "style": "slow",
@@ -38944,6 +38989,15 @@
    "text": "Independent",
    "speech": "Independent",
    "source": "tpr.2_3.maio/s1/2_3.maio.s1.independent",
+   "pack": false
+  },
+  {
+   "id": "en_slow_9bd95089_38",
+   "lang": "en",
+   "style": "slow",
+   "text": "Put two filters in front of the light.",
+   "speech": "Put two filters in front of the light.",
+   "source": "escoita/curso_5_6/2/pensamiento/proba/slow",
    "pack": false
   },
   {
@@ -41575,15 +41629,6 @@
    "pack": false
   },
   {
-   "id": "en_slow_a77bf42d_37",
-   "lang": "en",
-   "style": "slow",
-   "text": "Launch the white plane from the lane.",
-   "speech": "Launch the white plane from the lane.",
-   "source": "escoita/curso_5_6/6/pensamiento/proba/slow",
-   "pack": false
-  },
-  {
    "id": "en_slow_a7ad82de_9",
    "lang": "en",
    "style": "slow",
@@ -41806,15 +41851,6 @@
    "text": "Month",
    "speech": "Month",
    "source": "tpr.5_6.decembro/s3/5_6.decembro.s3.month",
-   "pack": false
-  },
-  {
-   "id": "en_slow_a887ecac_45",
-   "lang": "en",
-   "style": "slow",
-   "text": "What color glow do two filters make together?",
-   "speech": "What color glow do two filters make together?",
-   "source": "escoita/curso_5_6/2/pensamiento/predice/slow",
    "pack": false
   },
   {
@@ -42835,6 +42871,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_ac9e8017_42",
+   "lang": "en",
+   "style": "slow",
+   "text": "Fold the butterfly wing and press it flat.",
+   "speech": "Fold the butterfly wing and press it flat.",
+   "source": "escoita/curso_5_6/3/pensamiento/proba/slow",
+   "pack": false
+  },
+  {
    "id": "en_slow_aca4cc56_10",
    "lang": "en",
    "style": "slow",
@@ -43561,6 +43606,15 @@
    "text": "fish",
    "speech": "fish",
    "source": "english/fonema/ph_f/exemplo",
+   "pack": false
+  },
+  {
+   "id": "en_slow_afae7d23_27",
+   "lang": "en",
+   "style": "slow",
+   "text": "How many legs: dog or fish?",
+   "speech": "How many legs: dog or fish?",
+   "source": "escoita/curso_4_5/3/pensamiento/predice/slow",
    "pack": false
   },
   {
@@ -45112,15 +45166,6 @@
    "pack": false
   },
   {
-   "id": "en_slow_b5d9235d_32",
-   "lang": "en",
-   "style": "slow",
-   "text": "Stretch the shadow outline long.",
-   "speech": "Stretch the shadow outline long.",
-   "source": "escoita/curso_3_4/5/pensamiento/proba/slow",
-   "pack": false
-  },
-  {
    "id": "en_slow_b5df2b27_4",
    "lang": "en",
    "style": "slow",
@@ -45181,15 +45226,6 @@
    "text": "exploit",
    "speech": "exploit",
    "source": "corpus/2378/lemma",
-   "pack": false
-  },
-  {
-   "id": "en_slow_b6289ad6_28",
-   "lang": "en",
-   "style": "slow",
-   "text": "Same tile or different pile?",
-   "speech": "Same tile or different pile?",
-   "source": "escoita/curso_3_4/2/pensamiento/compara/slow",
    "pack": false
   },
   {
@@ -45598,6 +45634,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_b7be2082_21",
+   "lang": "en",
+   "style": "slow",
+   "text": "Fast pat or slow pat?",
+   "speech": "Fast pat or slow pat?",
+   "source": "escoita/curso_2_3/9/pensamiento/compara/slow",
+   "pack": false
+  },
+  {
    "id": "en_slow_b7c358f9_5",
    "lang": "en",
    "style": "slow",
@@ -45757,6 +45802,15 @@
    "text": "Help",
    "speech": "Help",
    "source": "tpr.3_4.setembro/s2/3_4.setembro.s2.help",
+   "pack": false
+  },
+  {
+   "id": "en_slow_b8c06597_25",
+   "lang": "en",
+   "style": "slow",
+   "text": "Full glass or half glass?",
+   "speech": "Full glass or half glass?",
+   "source": "escoita/curso_3_4/8/pensamiento/compara/slow",
    "pack": false
   },
   {
@@ -46651,15 +46705,6 @@
    "pack": false
   },
   {
-   "id": "en_slow_bc290928_24",
-   "lang": "en",
-   "style": "slow",
-   "text": "Still day or windy spin?",
-   "speech": "Still day or windy spin?",
-   "source": "escoita/curso_4_5/7/pensamiento/compara/slow",
-   "pack": false
-  },
-  {
    "id": "en_slow_bc466e34_5",
    "lang": "en",
    "style": "slow",
@@ -46909,15 +46954,6 @@
    "text": "death",
    "speech": "death",
    "source": "corpus/213/lemma",
-   "pack": false
-  },
-  {
-   "id": "en_slow_bd2919aa_36",
-   "lang": "en",
-   "style": "slow",
-   "text": "Count each leg and sort in the dish.",
-   "speech": "Count each leg and sort in the dish.",
-   "source": "escoita/curso_4_5/3/pensamiento/proba/slow",
    "pack": false
   },
   {
@@ -48973,6 +49009,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_c4d0e006_26",
+   "lang": "en",
+   "style": "slow",
+   "text": "Wash your hands with soap.",
+   "speech": "Wash your hands with soap.",
+   "source": "escoita/curso_2_3/7/pensamiento/proba/slow",
+   "pack": false
+  },
+  {
    "id": "en_slow_c4da6e99_3",
    "lang": "en",
    "style": "slow",
@@ -49540,15 +49585,6 @@
    "pack": false
   },
   {
-   "id": "en_slow_c7b17da8_32",
-   "lang": "en",
-   "style": "slow",
-   "text": "Run with your foot on fast beat.",
-   "speech": "Run with your foot on fast beat.",
-   "source": "escoita/curso_2_3/9/pensamiento/proba/slow",
-   "pack": false
-  },
-  {
    "id": "en_slow_c7b5ddf4_5",
    "lang": "en",
    "style": "slow",
@@ -49981,15 +50017,6 @@
    "pack": false
   },
   {
-   "id": "en_slow_c9a14324_25",
-   "lang": "en",
-   "style": "slow",
-   "text": "Clean hand or soapy hand?",
-   "speech": "Clean hand or soapy hand?",
-   "source": "escoita/curso_2_3/7/pensamiento/compara/slow",
-   "pack": false
-  },
-  {
    "id": "en_slow_c9bf9e99_5",
    "lang": "en",
    "style": "slow",
@@ -50356,6 +50383,15 @@
    "text": "rabbit",
    "speech": "rabbit",
    "source": "corpus/669/lemma",
+   "pack": false
+  },
+  {
+   "id": "en_slow_cb8c2daa_40",
+   "lang": "en",
+   "style": "slow",
+   "text": "Blow hard or blow slow: which goes fast?",
+   "speech": "Blow hard or blow slow: which goes fast?",
+   "source": "escoita/curso_2_3/2/pensamiento/predice/slow",
    "pack": false
   },
   {
@@ -50944,24 +50980,6 @@
    "pack": false
   },
   {
-   "id": "en_slow_ce1c737d_35",
-   "lang": "en",
-   "style": "slow",
-   "text": "Blow or slow: which moves the sail?",
-   "speech": "Blow or slow: which moves the sail?",
-   "source": "escoita/curso_2_3/2/pensamiento/predice/slow",
-   "pack": false
-  },
-  {
-   "id": "en_slow_ce221a26_41",
-   "lang": "en",
-   "style": "slow",
-   "text": "Compare the nose fold and glide distance.",
-   "speech": "Compare the nose fold and glide distance.",
-   "source": "escoita/curso_5_6/6/pensamiento/compara/slow",
-   "pack": false
-  },
-  {
    "id": "en_slow_ce34f192_6",
    "lang": "en",
    "style": "slow",
@@ -51139,15 +51157,6 @@
    "text": "flat",
    "speech": "flat",
    "source": "corpus/313/lemma",
-   "pack": false
-  },
-  {
-   "id": "en_slow_ceeeb166_31",
-   "lang": "en",
-   "style": "slow",
-   "text": "Which ice cube did shrink more?",
-   "speech": "Which ice cube did shrink more?",
-   "source": "escoita/curso_3_4/6/pensamiento/compara/slow",
    "pack": false
   },
   {
@@ -51583,15 +51592,6 @@
    "pack": false
   },
   {
-   "id": "en_slow_d101216b_32",
-   "lang": "en",
-   "style": "slow",
-   "text": "Glow the flashlight in the dark.",
-   "speech": "Glow the flashlight in the dark.",
-   "source": "escoita/curso_2_3/10/pensamiento/proba/slow",
-   "pack": false
-  },
-  {
    "id": "en_slow_d108ab2e_4",
    "lang": "en",
    "style": "slow",
@@ -51871,15 +51871,6 @@
    "pack": false
   },
   {
-   "id": "en_slow_d2143c71_48",
-   "lang": "en",
-   "style": "slow",
-   "text": "Compare one filter glow and two blended filters.",
-   "speech": "Compare one filter glow and two blended filters.",
-   "source": "escoita/curso_5_6/2/pensamiento/compara/slow",
-   "pack": false
-  },
-  {
    "id": "en_slow_d22f12ff_9",
    "lang": "en",
    "style": "slow",
@@ -52030,6 +52021,15 @@
    "text": "material",
    "speech": "material",
    "source": "corpus/1546/lemma",
+   "pack": false
+  },
+  {
+   "id": "en_slow_d2fd7ef5_40",
+   "lang": "en",
+   "style": "slow",
+   "text": "Listen to your heart beat in your chest.",
+   "speech": "Listen to your heart beat in your chest.",
+   "source": "escoita/curso_4_5/2/pensamiento/proba/slow",
    "pack": false
   },
   {
@@ -52654,15 +52654,6 @@
    "pack": false
   },
   {
-   "id": "en_slow_d5e6a925_40",
-   "lang": "en",
-   "style": "slow",
-   "text": "Fold the butterfly wing and press right.",
-   "speech": "Fold the butterfly wing and press right.",
-   "source": "escoita/curso_5_6/3/pensamiento/proba/slow",
-   "pack": false
-  },
-  {
    "id": "en_slow_d5e6f0e4_7",
    "lang": "en",
    "style": "slow",
@@ -53113,15 +53104,6 @@
    "pack": false
   },
   {
-   "id": "en_slow_d7fbaa94_46",
-   "lang": "en",
-   "style": "slow",
-   "text": "Blend each filter frame in front of the light.",
-   "speech": "Blend each filter frame in front of the light.",
-   "source": "escoita/curso_5_6/2/pensamiento/proba/slow",
-   "pack": false
-  },
-  {
    "id": "en_slow_d7fe1ad5_10",
    "lang": "en",
    "style": "slow",
@@ -53191,15 +53173,6 @@
    "text": "proposition",
    "speech": "proposition",
    "source": "corpus/3730/lemma",
-   "pack": false
-  },
-  {
-   "id": "en_slow_d84f99bf_23",
-   "lang": "en",
-   "style": "slow",
-   "text": "Fast pat or sleepy pat?",
-   "speech": "Fast pat or sleepy pat?",
-   "source": "escoita/curso_2_3/9/pensamiento/compara/slow",
    "pack": false
   },
   {
@@ -53893,15 +53866,6 @@
    "text": "climate",
    "speech": "climate",
    "source": "corpus/2142/lemma",
-   "pack": false
-  },
-  {
-   "id": "en_slow_db44c28d_35",
-   "lang": "en",
-   "style": "slow",
-   "text": "Full jar or low jar: which is high?",
-   "speech": "Full jar or low jar: which is high?",
-   "source": "escoita/curso_3_4/9/pensamiento/predice/slow",
    "pack": false
   },
   {
@@ -55180,15 +55144,6 @@
    "text": "maybe",
    "speech": "maybe",
    "source": "corpus/515/lemma",
-   "pack": false
-  },
-  {
-   "id": "en_slow_e13cd8a0_30",
-   "lang": "en",
-   "style": "slow",
-   "text": "Tap the glass jar with no lid.",
-   "speech": "Tap the glass jar with no lid.",
-   "source": "escoita/curso_3_4/9/pensamiento/proba/slow",
    "pack": false
   },
   {
@@ -57613,6 +57568,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_eb9b3fbc_34",
+   "lang": "en",
+   "style": "slow",
+   "text": "Why does the spoon flip your face?",
+   "speech": "Why does the spoon flip your face?",
+   "source": "escoita/curso_3_4/10/pensamiento/explica/slow",
+   "pack": false
+  },
+  {
    "id": "en_slow_ebae1a35_4",
    "lang": "en",
    "style": "slow",
@@ -57784,15 +57748,6 @@
    "pack": false
   },
   {
-   "id": "en_slow_ec5d6c31_31",
-   "lang": "en",
-   "style": "slow",
-   "text": "Wash hand with soap and bubble.",
-   "speech": "Wash hand with soap and bubble.",
-   "source": "escoita/curso_2_3/7/pensamiento/proba/slow",
-   "pack": false
-  },
-  {
    "id": "en_slow_ec66d793_4",
    "lang": "en",
    "style": "slow",
@@ -57889,6 +57844,15 @@
    "text": "literal",
    "speech": "literal",
    "source": "corpus/2563/lemma",
+   "pack": false
+  },
+  {
+   "id": "en_slow_ecc0439b_24",
+   "lang": "en",
+   "style": "slow",
+   "text": "Spin the top on its pin.",
+   "speech": "Spin the top on its pin.",
+   "source": "escoita/curso_5_6/4/pensamiento/proba/slow",
    "pack": false
   },
   {
@@ -58918,6 +58882,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_f216fb1a_44",
+   "lang": "en",
+   "style": "slow",
+   "text": "Small without the lens or big with the lens?",
+   "speech": "Small without the lens or big with the lens?",
+   "source": "escoita/curso_4_5/4/pensamiento/compara/slow",
+   "pack": false
+  },
+  {
    "id": "en_slow_f22fe37c_5",
    "lang": "en",
    "style": "slow",
@@ -58996,6 +58969,15 @@
    "text": "Mild",
    "speech": "Mild",
    "source": "tpr.4_5.marzo/s1/4_5.marzo.s1.mild",
+   "pack": false
+  },
+  {
+   "id": "en_slow_f2701277_43",
+   "lang": "en",
+   "style": "slow",
+   "text": "Compare the short trail and the long trail.",
+   "speech": "Compare the short trail and the long trail.",
+   "source": "escoita/curso_5_6/7/pensamiento/compara/slow",
    "pack": false
   },
   {
@@ -59320,15 +59302,6 @@
    "text": "eligible",
    "speech": "eligible",
    "source": "corpus/3329/lemma",
-   "pack": false
-  },
-  {
-   "id": "en_slow_f42c5c2e_49",
-   "lang": "en",
-   "style": "slow",
-   "text": "Compare the short rail and long trail on the map.",
-   "speech": "Compare the short rail and long trail on the map.",
-   "source": "escoita/curso_5_6/7/pensamiento/compara/slow",
    "pack": false
   },
   {
@@ -60520,6 +60493,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_f8d8cbdd_41",
+   "lang": "en",
+   "style": "slow",
+   "text": "Why is the fish not in the four-leg hoop?",
+   "speech": "Why is the fish not in the four leg hoop?",
+   "source": "escoita/curso_4_5/3/pensamiento/explica/slow",
+   "pack": false
+  },
+  {
    "id": "en_slow_f8d9f974_10",
    "lang": "en",
    "style": "slow",
@@ -60733,6 +60715,15 @@
    "text": "input",
    "speech": "input",
    "source": "corpus/2511/lemma",
+   "pack": false
+  },
+  {
+   "id": "en_slow_f9dcb462_28",
+   "lang": "en",
+   "style": "slow",
+   "text": "Same tile or different tile?",
+   "speech": "Same tile or different tile?",
+   "source": "escoita/curso_3_4/2/pensamiento/compara/slow",
    "pack": false
   },
   {
@@ -61543,6 +61534,15 @@
    "text": "come",
    "speech": "come",
    "source": "corpus/175/lemma",
+   "pack": false
+  },
+  {
+   "id": "en_slow_fd4d64f1_36",
+   "lang": "en",
+   "style": "slow",
+   "text": "Count the legs and sort the animals.",
+   "speech": "Count the legs and sort the animals.",
+   "source": "escoita/curso_4_5/3/pensamiento/proba/slow",
    "pack": false
   },
   {
@@ -165400,6 +165400,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_0531c694_39",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Corre rápido cuando el ritmo es rápido.",
+   "speech": "Corre rápido cuando el ritmo es rápido.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_053c6ccd_44",
    "lang": "es",
    "style": "tutor",
@@ -165432,6 +165441,15 @@
    "style": "tutor",
    "text": "¡El viento! ¡Está soplando el viento!",
    "speech": "¡El viento! ¡Está soplando el viento!",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_05503a81_41",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Escucha cómo late tu corazón en el pecho.",
+   "speech": "Escucha cómo late tu corazón en el pecho.",
    "source": "significados/significado",
    "pack": false
   },
@@ -168416,6 +168434,15 @@
    "style": "tutor",
    "text": "¡Adiós, pececito!",
    "speech": "¡Adiós, pececito!",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_0d0130d9_28",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¿Barco rápido o barco lento?",
+   "speech": "¿Barco rápido o barco lento?",
    "source": "significados/significado",
    "pack": false
   },
@@ -175301,6 +175328,15 @@
    "style": "tutor",
    "text": "El pececito que saluda entre la espuma",
    "speech": "El pececito que saluda entre la espuma",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_1ef11ffa_41",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¿Lluvia suave o un estruendo de tormenta?",
+   "speech": "¿Lluvia suave o un estruendo de tormenta?",
    "source": "significados/significado",
    "pack": false
   },
@@ -182521,6 +182557,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_32ba7f9a_25",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¿Vaso lleno o medio vaso?",
+   "speech": "¿Vaso lleno o medio vaso?",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_32c03bb1_17",
    "lang": "es",
    "style": "tutor",
@@ -182788,6 +182833,15 @@
    "text": "¡Sí, una torre! Hiciste una torre alta.",
    "speech": "¡Sí, una torre! Hiciste una torre alta.",
    "source": "biblioteca/HIS-056/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_333f4ae8_27",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Lávate las manos con jabón.",
+   "speech": "Lávate las manos con jabón.",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -183193,6 +183247,15 @@
    "text": "¿Comes manzanas en la merienda?",
    "speech": "¿Comes manzanas en la merienda?",
    "source": "biblioteca/HIS-028/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_34418170_36",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¿Qué color hacen dos filtros juntos?",
+   "speech": "¿Qué color hacen dos filtros juntos?",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -185044,6 +185107,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_38dabd5f_43",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¿Por qué la cuchara pone tu cara del revés?",
+   "speech": "¿Por qué la cuchara pone tu cara del revés?",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_38e71257_64",
    "lang": "es",
    "style": "tutor",
@@ -185914,6 +185986,15 @@
    "text": "Parada inmediata y encogimiento en ovillo protegiendo la cabeza.",
    "speech": "Parada inmediata y encogimiento en ovillo protegiendo la cabeza.",
    "source": "asamblea.segundo_ciclo.novembro.5_infantil/fase/3/cmd/cmd.novembro.5i.02/accionFisica",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_3b3f9ebb_42",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Compara la pajita corta y la pajita larga.",
+   "speech": "Compara la pajita corta y la pajita larga.",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -192991,6 +193072,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_4d43b310_29",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Lanza el avión por el carril.",
+   "speech": "Lanza el avión por el carril.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_4d55a00d_7",
    "lang": "es",
    "style": "tutor",
@@ -194863,6 +194953,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_51e9b63f_39",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Dobla el ala de la mariposa y aplánala.",
+   "speech": "Dobla el ala de la mariposa y aplánala.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_5208a4a7_33",
    "lang": "es",
    "style": "tutor",
@@ -195167,6 +195266,15 @@
    "speech": "Respirar",
    "source": "tpr.3_4.xuno/s3/3_4.xuno.s3.breathe/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_52e4726e_43",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Compara el morro en punta y el morro plano.",
+   "speech": "Compara el morro en punta y el morro plano.",
+   "source": "significados/significado",
+   "pack": false
   },
   {
    "id": "es_tutor_52f023a9_90",
@@ -198481,6 +198589,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_5c16b7ec_42",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Cuenta las patas y clasifica los animales.",
+   "speech": "Cuenta las patas y clasifica los animales.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_5c203325_7",
    "lang": "es",
    "style": "tutor",
@@ -201457,6 +201574,15 @@
    "text": "¿Dónde está ahora la cabeza de la cabrita? ¡Tócala en el pecho de Lúa!",
    "speech": "¿Dónde está ahora la cabeza de la cabrita? ¡Tócala en el pecho de Lúa!",
    "source": "biblioteca/HIS-065/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_641a0f8a_32",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Enciende la luz en la oscuridad.",
+   "speech": "Enciende la luz en la oscuridad.",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -205128,6 +205254,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_6d7f73dd_49",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¿Por qué la luz de la pared tiene un color nuevo?",
+   "speech": "¿Por qué la luz de la pared tiene un color nuevo?",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_6d87efae_33",
    "lang": "es",
    "style": "tutor",
@@ -207464,6 +207599,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_733e7d0a_48",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¿Correr rápido o caminar como un gato con sueño?",
+   "speech": "¿Correr rápido o caminar como un gato con sueño?",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_7347638e_6",
    "lang": "es",
    "style": "tutor",
@@ -208554,6 +208698,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_760d92ef_34",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Pon dos filtros delante de la luz.",
+   "speech": "Pon dos filtros delante de la luz.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_7617b7ba_23",
    "lang": "es",
    "style": "tutor",
@@ -208568,6 +208721,15 @@
    "style": "tutor",
    "text": "Mira, Lúa cava. ¡Cava, cava la tierra!",
    "speech": "Mira, Lúa cava. ¡Cava, cava la tierra!",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_762bbe13_31",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Haz rodar el tren por la rampa.",
+   "speech": "Haz rodar el tren por la rampa.",
    "source": "significados/significado",
    "pack": false
   },
@@ -210036,6 +210198,15 @@
    "text": "¡Sí, tiene frío! El corderito tiene frío en el prado con viento.",
    "speech": "¡Sí, tiene frío! El corderito tiene frío en el prado con viento.",
    "source": "biblioteca/HIS-077/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_7a1fbff5_42",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¿Pequeño sin la lupa o grande con la lupa?",
+   "speech": "¿Pequeño sin la lupa o grande con la lupa?",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -211661,6 +211832,15 @@
    "text": "doctor / veterinario",
    "speech": "doctor / veterinario",
    "source": "curriculo/T3.U4.1/vocabulario/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_7e43c27f_39",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Corta cada hoja y escucha con atención.",
+   "speech": "Corta cada hoja y escucha con atención.",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -214365,6 +214545,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_85788735_27",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¿Cuándo paramos y dormimos?",
+   "speech": "¿Cuándo paramos y dormimos?",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_8578af9a_4",
    "lang": "es",
    "style": "tutor",
@@ -215001,6 +215190,15 @@
    "speech": "Buzo de nieve",
    "source": "tpr.0_2.decembro/s1/0_2.decembro.s1.snowsuit/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_86f724ac_30",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¿Pieza igual o pieza distinta?",
+   "speech": "¿Pieza igual o pieza distinta?",
+   "source": "significados/significado",
+   "pack": false
   },
   {
    "id": "es_tutor_86f8de9a_89",
@@ -217115,6 +217313,15 @@
    "text": "¡Toc, toc! ¡Tap! ¿Qué es esto?",
    "speech": "¡Toc, toc! ¡Tap! ¿Qué es esto?",
    "source": "biblioteca/HIS-095/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_8cf74364_43",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Compara la maleta pesada y la bolsa ligera.",
+   "speech": "Compara la maleta pesada y la bolsa ligera.",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -219268,6 +219475,15 @@
    "speech": "Coger una margarita",
    "source": "tpr.0_2.abril/s1/0_2.abril.s1.pick-a-daisy/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_9263e86a_37",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¿Por qué vemos estrellas en la pared?",
+   "speech": "¿Por qué vemos estrellas en la pared?",
+   "source": "significados/significado",
+   "pack": false
   },
   {
    "id": "es_tutor_9270211a_41",
@@ -221485,6 +221701,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_97cb63a9_34",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¿Por qué se aplasta el pan blando?",
+   "speech": "¿Por qué se aplasta el pan blando?",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_97cce2e2_46",
    "lang": "es",
    "style": "tutor",
@@ -222373,6 +222598,15 @@
    "text": "tierra",
    "speech": "tierra",
    "source": "escoita/valeria_es",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_99f80006_48",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Mueve el palo de lluvia despacio y luego rápido.",
+   "speech": "Mueve el palo de lluvia despacio y luego rápido.",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -227840,6 +228074,15 @@
    "style": "tutor",
    "text": "Señala los dos trozos de pan encima del paño limpio antes de tocarlos.",
    "speech": "Señala los dos trozos de pan encima del paño limpio antes de tocarlos.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_a7f0e3a5_63",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¿Por dentro o por detrás de la cuchara: está tu cara del revés?",
+   "speech": "¿Por dentro o por detrás de la cuchara: está tu cara del revés?",
    "source": "significados/significado",
    "pack": false
   },
@@ -235019,6 +235262,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_b9d257db_28",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¿Toque rápido o toque lento?",
+   "speech": "¿Toque rápido o toque lento?",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_b9dbeede_53",
    "lang": "es",
    "style": "tutor",
@@ -236698,6 +236950,15 @@
    "style": "tutor",
    "text": "Montamos en bicicleta en el parque.",
    "speech": "Montamos en bicicleta en el parque.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_be55abb2_38",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Pulsa el interruptor para un parpadeo.",
+   "speech": "Pulsa el interruptor para un parpadeo.",
    "source": "significados/significado",
    "pack": false
   },
@@ -238889,6 +239150,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_c4894e72_31",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¿Sin viento o un día de viento?",
+   "speech": "¿Sin viento o un día de viento?",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_c48d627d_5",
    "lang": "es",
    "style": "tutor",
@@ -238941,6 +239211,15 @@
    "speech": "Tienda cercana",
    "source": "tpr.2_3.xaneiro/s3/2_3.xaneiro.s3.nearby-shop/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_c4a7516c_29",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¿Cuándo fue rápido tu latido?",
+   "speech": "¿Cuándo fue rápido tu latido?",
+   "source": "significados/significado",
+   "pack": false
   },
   {
    "id": "es_tutor_c4a95368_28",
@@ -239123,6 +239402,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_c549c65f_34",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¿Cuántas patas: el perro o el pez?",
+   "speech": "¿Cuántas patas: el perro o el pez?",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_c5518678_47",
    "lang": "es",
    "style": "tutor",
@@ -239192,6 +239480,15 @@
    "text": "No es la misma sesión con otra etiqueta.",
    "speech": "No es la misma sesión con otra etiqueta.",
    "source": "formacion.docente/paso/5/clave",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_c56f9629_43",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¿Bote lleno o bote vacío: cuál suena agudo?",
+   "speech": "¿Bote lleno o bote vacío: cuál suena agudo?",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -239902,6 +240199,15 @@
    "style": "tutor",
    "text": "Me pongo las botas porque está lloviendo.",
    "speech": "Me pongo las botas porque está lloviendo.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_c74bda51_32",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Compara un filtro y dos filtros.",
+   "speech": "Compara un filtro y dos filtros.",
    "source": "significados/significado",
    "pack": false
   },
@@ -240932,6 +241238,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_c9fa6d9f_42",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Compara el camino corto y el camino largo.",
+   "speech": "Compara el camino corto y el camino largo.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_c9fd4e92_13",
    "lang": "es",
    "style": "tutor",
@@ -241225,6 +241540,15 @@
    "style": "tutor",
    "text": "Coge una toalla pequeña en cada mano haciendo fuerza con la que lleva agua.",
    "speech": "Coge una toalla pequeña en cada mano haciendo fuerza con la que lleva agua.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_ca9b11f3_44",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¿Dónde va la hoja: en el aro o en el montón?",
+   "speech": "¿Dónde va la hoja: en el aro o en el montón?",
    "source": "significados/significado",
    "pack": false
   },
@@ -246062,6 +246386,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_d767cc44_20",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Haz la sombra larga.",
+   "speech": "Haz la sombra larga.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_d776f4ab_11",
    "lang": "es",
    "style": "tutor",
@@ -246519,6 +246852,15 @@
    "speech": "Primero despacio, luego rápido",
    "source": "tpr.4_5.outubro/s4/4_5.outubro.s4.first-slow-then-fast/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_d93fc119_54",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¿Por qué el pez no está en el aro de las cuatro patas?",
+   "speech": "¿Por qué el pez no está en el aro de las cuatro patas?",
+   "source": "significados/significado",
+   "pack": false
   },
   {
    "id": "es_tutor_d944b72b_25",
@@ -250049,6 +250391,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_e33b7d4a_49",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¿Soplar fuerte o soplar despacio: cuál va rápido?",
+   "speech": "¿Soplar fuerte o soplar despacio: cuál va rápido?",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_e33b7d7a_17",
    "lang": "es",
    "style": "tutor",
@@ -252439,6 +252790,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_e98ca8e4_33",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¿Por qué latió rápido tu corazón?",
+   "speech": "¿Por qué latió rápido tu corazón?",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_e99121ee_38",
    "lang": "es",
    "style": "tutor",
@@ -252480,6 +252840,15 @@
    "style": "tutor",
    "text": "¿Qué tiene Lúa?",
    "speech": "¿Qué tiene Lúa?",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_e9a39798_32",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¿Qué cubito de hielo encoge más?",
+   "speech": "¿Qué cubito de hielo encoge más?",
    "source": "significados/significado",
    "pack": false
   },
@@ -257547,6 +257916,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_f7a149dd_33",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Golpea cada bote con una cuchara.",
+   "speech": "Golpea cada bote con una cuchara.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_f7a5fd2c_29",
    "lang": "es",
    "style": "tutor",
@@ -260049,6 +260427,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_fdf55856_33",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Haz girar la peonza sobre su eje.",
+   "speech": "Haz girar la peonza sobre su eje.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_fdf98d4e_62",
    "lang": "es",
    "style": "tutor",
@@ -260262,6 +260649,15 @@
    "text": "La docente no gesticula: repite la orden a ritmo pausado y espera cinco segundos.",
    "speech": "La docente no gesticula: repite la orden a ritmo pausado y espera cinco segundos.",
    "source": "asamblea.segundo_ciclo.outubro.6_infantil/fase/3/cmd/cmd.outubro.6i.01/modeladoDocente",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_fe8f59b7_33",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¿Manos con jabón o manos limpias?",
+   "speech": "¿Manos con jabón o manos limpias?",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -262011,6 +262407,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_02ca422d_48",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Por que o peixe non está no aro das catro patas?",
+   "speech": "Por que o peixe non está no aro das catro patas?",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_02d27cd6_41",
    "lang": "gl",
    "style": "tutor",
@@ -263235,6 +263640,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_05de8bb0_42",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Compara a maleta pesada e a bolsa lixeira.",
+   "speech": "Compara a maleta pesada e a bolsa lixeira.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_05e3a9dc_54",
    "lang": "gl",
    "style": "tutor",
@@ -263789,6 +264203,15 @@
    "style": "tutor",
    "text": "Si, un tomate vermello!",
    "speech": "Si, un tomate vermello!",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_070c0c46_61",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Por dentro ou por detrás da culler: está a túa cara ao revés?",
+   "speech": "Por dentro ou por detrás da culler: está a túa cara ao revés?",
    "source": "significados/significado",
    "pack": false
   },
@@ -264880,6 +265303,15 @@
    "speech": "Cucú, xa te vexo!",
    "source": "tpr.0_2.outubro/s3/0_2.outubro.s3.peekaboo-i-see-you/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_09dde8de_31",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Cantas patas: o can ou o peixe?",
+   "speech": "Cantas patas: o can ou o peixe?",
+   "source": "significados/significado",
+   "pack": false
   },
   {
    "id": "gl_tutor_09e3815a_22",
@@ -266727,6 +267159,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_0ed4fcfa_41",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Compara o morro en punta e o morro plano.",
+   "speech": "Compara o morro en punta e o morro plano.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_0ee18217_72",
    "lang": "gl",
    "style": "tutor",
@@ -267661,6 +268102,15 @@
    "speech": "Bafarada de vapor",
    "source": "tpr.5_6.novembro/s3/5_6.novembro.s3.steam-puff/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_112fe22d_28",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Toque rápido ou toque lento?",
+   "speech": "Toque rápido ou toque lento?",
+   "source": "significados/significado",
+   "pack": false
   },
   {
    "id": "gl_tutor_113c7c8c_7",
@@ -269159,6 +269609,15 @@
    "style": "tutor",
    "text": "Enches o caldeiro.",
    "speech": "Enches o caldeiro.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_14e4980b_33",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Dobra a á da bolboreta e aplánaa.",
+   "speech": "Dobra a á da bolboreta e aplánaa.",
    "source": "significados/significado",
    "pack": false
   },
@@ -271278,6 +271737,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_1a26f675_24",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Vaso cheo ou medio vaso?",
+   "speech": "Vaso cheo ou medio vaso?",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_1a2bc1a0_25",
    "lang": "gl",
    "style": "tutor",
@@ -272007,6 +272475,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_1bd22e03_38",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Compara a palla curta e a palla longa.",
+   "speech": "Compara a palla curta e a palla longa.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_1bd66eeb_13",
    "lang": "gl",
    "style": "tutor",
@@ -272427,6 +272904,15 @@
    "text": "vaca",
    "speech": "vaca",
    "source": "escoita/valeria_gl",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_1cdbe1ff_33",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Por que vemos estrelas na parede?",
+   "speech": "Por que vemos estrelas na parede?",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -273174,6 +273660,15 @@
    "text": "Podes estirarte ben arriba coma Lúa? Grande, grande!",
    "speech": "Podes estirarte ben arriba coma Lúa? Grande, grande!",
    "source": "biblioteca/HIS-022/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_1f0ec7f7_40",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Corta cada folla e escoita con atención.",
+   "speech": "Corta cada folla e escoita con atención.",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -275595,6 +276090,15 @@
    "text": "Mira, a pelota rola. Para, pelota!",
    "speech": "Mira, a pelota rola. Para, pelota!",
    "source": "biblioteca/HIS-055/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_25963456_28",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Peza igual ou peza distinta?",
+   "speech": "Peza igual ou peza distinta?",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -279770,6 +280274,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_3058d31d_31",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Pon dous filtros diante da luz.",
+   "speech": "Pon dous filtros diante da luz.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_3059f6f7_12",
    "lang": "gl",
    "style": "tutor",
@@ -281936,6 +282449,15 @@
    "text": "Mira, o can para. Fiuuu, fiuuu!",
    "speech": "Mira, o can para. Fiuuu, fiuuu!",
    "source": "biblioteca/HIS-046/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_3574e963_29",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Que cubo de xeo encolle máis?",
+   "speech": "Que cubo de xeo encolle máis?",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -284612,6 +285134,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_3d1aa8d6_40",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Chuvia suave ou un estrondo de tormenta?",
+   "speech": "Chuvia suave ou un estrondo de tormenta?",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_3d218588_31",
    "lang": "gl",
    "style": "tutor",
@@ -285158,6 +285689,15 @@
    "text": "Si, botas! Botas amarelas para a choiva.",
    "speech": "Si, botas! Botas amarelas para a choiva.",
    "source": "biblioteca/HIS-076/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_3eb23d54_38",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Onde vai a folla: no aro ou no montón?",
+   "speech": "Onde vai a folla: no aro ou no montón?",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -286172,6 +286712,15 @@
    "speech": "Guión",
    "source": "tpr.4_5.febreiro/s1/4_5.febreiro.s1.script/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_417dc861_38",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Abana o abano para que xiren as aspas.",
+   "speech": "Abana o abano para que xiren as aspas.",
+   "source": "significados/significado",
+   "pack": false
   },
   {
    "id": "gl_tutor_41824b0d_56",
@@ -291732,6 +292281,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_4fc9fee0_26",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Lanza o avión polo carril.",
+   "speech": "Lanza o avión polo carril.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_4fce3455_19",
    "lang": "gl",
    "style": "tutor",
@@ -292477,6 +293035,15 @@
    "speech": "Mollar os pés",
    "source": "tpr.0_2.xuno/s1/0_2.xuno.s1.paddle-in/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_51998dc8_33",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Compara un filtro e dous filtros.",
+   "speech": "Compara un filtro e dous filtros.",
+   "source": "significados/significado",
+   "pack": false
   },
   {
    "id": "gl_tutor_519d8675_65",
@@ -293611,6 +294178,15 @@
    "speech": "Soprar o barco",
    "source": "tpr.4_5.maio/s2/4_5.maio.s2.blow-the-boat/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_54459b38_30",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Cando foi rápido o teu latexo?",
+   "speech": "Cando foi rápido o teu latexo?",
+   "source": "significados/significado",
+   "pack": false
   },
   {
    "id": "gl_tutor_544ccaac_50",
@@ -296890,6 +297466,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_5c6a61b2_29",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Fai rodar o tren pola rampla.",
+   "speech": "Fai rodar o tren pola rampla.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_5c6aabb6_15",
    "lang": "gl",
    "style": "tutor",
@@ -298812,6 +299397,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_61296aec_30",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Mans con xabón ou mans limpas?",
+   "speech": "Mans con xabón ou mans limpas?",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_6130a7bd_53",
    "lang": "gl",
    "style": "tutor",
@@ -299294,6 +299888,15 @@
    "style": "tutor",
    "text": "Por que vai rápido o tren de xoguete?",
    "speech": "Por que vai rápido o tren de xoguete?",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_62588096_41",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Escoita como bate o teu corazón no peito.",
+   "speech": "Escoita como bate o teu corazón no peito.",
    "source": "significados/significado",
    "pack": false
   },
@@ -301697,6 +302300,15 @@
    "style": "tutor",
    "text": "Si, o bebé está durmindo!",
    "speech": "Si, o bebé está durmindo!",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_68ca42ed_38",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Conta as patas e clasifica os animais.",
+   "speech": "Conta as patas e clasifica os animais.",
    "source": "significados/significado",
    "pack": false
   },
@@ -306332,6 +306944,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_7567926f_41",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Por que a culler pon a túa cara ao revés?",
+   "speech": "Por que a culler pon a túa cara ao revés?",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_75694e9f_47",
    "lang": "gl",
    "style": "tutor",
@@ -309122,6 +309743,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_7cb27a0b_32",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Que cor fan dous filtros xuntos?",
+   "speech": "Que cor fan dous filtros xuntos?",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_7cbaddd1_25",
    "lang": "gl",
    "style": "tutor",
@@ -309507,6 +310137,15 @@
    "speech": "Idea",
    "source": "tpr.5_6.setembro/s1/5_6.setembro.s1.idea/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_7d97c75f_31",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Peta en cada bote cunha culler.",
+   "speech": "Peta en cada bote cunha culler.",
+   "source": "significados/significado",
+   "pack": false
   },
   {
    "id": "gl_tutor_7d9fc221_18",
@@ -317456,6 +318095,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_918d6c92_23",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Lava as mans con xabón.",
+   "speech": "Lava as mans con xabón.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_91daf6c0_11",
    "lang": "gl",
    "style": "tutor",
@@ -319295,6 +319943,15 @@
    "speech": "De fronte",
    "source": "tpr.4_5.xaneiro/s1/4_5.xaneiro.s1.opposite/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_9666bfb3_47",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Correr rápido ou camiñar coma un gato con sono?",
+   "speech": "Correr rápido ou camiñar coma un gato con sono?",
+   "source": "significados/significado",
+   "pack": false
   },
   {
    "id": "gl_tutor_966e04df_31",
@@ -333309,6 +333966,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_bb64a215_40",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Compara o camiño curto e o camiño longo.",
+   "speech": "Compara o camiño curto e o camiño longo.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_bb668409_15",
    "lang": "gl",
    "style": "tutor",
@@ -333629,6 +334295,15 @@
    "text": "Onde está a cabeza da mamá pata? Tócaa no brazo de Lúa!",
    "speech": "Onde está a cabeza da mamá pata? Tócaa no brazo de Lúa!",
    "source": "biblioteca/HIS-059/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_bc4865c8_37",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Por que latexou rápido o teu corazón?",
+   "speech": "Por que latexou rápido o teu corazón?",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -335821,6 +336496,15 @@
    "text": "Toca o gato que dorme, amodo!",
    "speech": "Toca o gato que dorme, amodo!",
    "source": "biblioteca/HIS-040/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_c2eb2c44_29",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Sen vento ou un día de vento?",
+   "speech": "Sen vento ou un día de vento?",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -339530,6 +340214,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_cccadc27_45",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Soprar forte ou soprar amodo: cal vai rápido?",
+   "speech": "Soprar forte ou soprar amodo: cal vai rápido?",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_ccd5841f_25",
    "lang": "gl",
    "style": "tutor",
@@ -340673,6 +341366,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_cfd60f37_41",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Move o pau de choiva amodo e logo rápido.",
+   "speech": "Move o pau de choiva amodo e logo rápido.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_cfd81439_42",
    "lang": "gl",
    "style": "tutor",
@@ -340715,6 +341417,15 @@
    "text": "Para que un bebé se concentre no que lle dis, o mellor é que estea quieto e sentado.",
    "speech": "Para que un bebé se concentre no que lle dis, o mellor é que estea quieto e sentado.",
    "source": "academy.juego_movimiento_sin_pantallas.01/afirmaciones/afirmacion_02/enunciado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_cfeed997_27",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Acende a luz na escuridade.",
+   "speech": "Acende a luz na escuridade.",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -345286,6 +345997,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_dc17f89a_38",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Pequeno sen a lupa ou grande coa lupa?",
+   "speech": "Pequeno sen a lupa ou grande coa lupa?",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_dc202edb_49",
    "lang": "gl",
    "style": "tutor",
@@ -345624,6 +346344,15 @@
    "style": "tutor",
    "text": "Si! A xoaniña! Unha xoaniña vermella pequena!",
    "speech": "Si! A xoaniña! Unha xoaniña vermella pequena!",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_dd26a064_36",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Corre rápido cando o ritmo é rápido.",
+   "speech": "Corre rápido cando o ritmo é rápido.",
    "source": "significados/significado",
    "pack": false
   },
@@ -346186,6 +346915,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_de9812b5_19",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Fai a sombra longa.",
+   "speech": "Fai a sombra longa.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_de9ccd0d_65",
    "lang": "gl",
    "style": "tutor",
@@ -346463,6 +347201,15 @@
    "speech": "Paporroibo",
    "source": "tpr.0_2.xaneiro/s3/0_2.xaneiro.s3.robin/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_df5380fa_37",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Fai xirar a buxaina sobre o seu eixe.",
+   "speech": "Fai xirar a buxaina sobre o seu eixe.",
+   "source": "significados/significado",
+   "pack": false
   },
   {
    "id": "gl_tutor_df5670ba_64",
@@ -348828,6 +349575,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_e5ec9a31_28",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Barco rápido ou barco lento?",
+   "speech": "Barco rápido ou barco lento?",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_e5efb1b5_28",
    "lang": "gl",
    "style": "tutor",
@@ -350601,6 +351357,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_ea7807a7_42",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Por que a luz da parede ten unha cor nova?",
+   "speech": "Por que a luz da parede ten unha cor nova?",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_ea823af7_16",
    "lang": "gl",
    "style": "tutor",
@@ -350838,6 +351603,15 @@
    "speech": "Fóra da auga",
    "source": "tpr.0_2.maio/s2/0_2.maio.s2.out-you-come/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_eb458ce7_31",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Por que se aperta o pan brando?",
+   "speech": "Por que se aperta o pan brando?",
+   "source": "significados/significado",
+   "pack": false
   },
   {
    "id": "gl_tutor_eb4a4a70_66",
@@ -352359,6 +353133,15 @@
    "speech": "Abrir a billa",
    "source": "tpr.0_2.maio/s3/0_2.maio.s3.turn-the-tap/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_ef7c8dc1_38",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Preme o interruptor para un pestanexo.",
+   "speech": "Preme o interruptor para un pestanexo.",
+   "source": "significados/significado",
+   "pack": false
   },
   {
    "id": "gl_tutor_ef7c99ef_25",
@@ -354366,6 +355149,15 @@
    "speech": "Pasa",
    "source": "tpr.0_2.marzo/s2/0_2.marzo.s2.raisin/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_f460b623_25",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Cando paramos e durmimos?",
+   "speech": "Cando paramos e durmimos?",
+   "source": "significados/significado",
+   "pack": false
   },
   {
    "id": "gl_tutor_f462aa9b_7",
@@ -356895,6 +357687,15 @@
    "speech": "Shh, o bebé dorme",
    "source": "tpr.2_3.abril/s3/2_3.abril.s3.shh-baby-s-sleeping/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_fb022b2c_41",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Bote cheo ou bote baleiro: cal soa agudo?",
+   "speech": "Bote cheo ou bote baleiro: cal soa agudo?",
+   "source": "significados/significado",
+   "pack": false
   },
   {
    "id": "gl_tutor_fb05e1ec_13",

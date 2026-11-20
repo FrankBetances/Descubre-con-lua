@@ -358,10 +358,23 @@ class _HoxeFamiliasScreenState extends State<HoxeFamiliasScreen> {
                 ),
               ),
             ],
+            // O-20261120-1 (F-20261120-2): la estimulación del lenguaje y el
+            // pensamiento, arriba y a la vista, no al final de la lección.
+            const SizedBox(height: 6),
+            EntradaEstimulacionCard(
+              cursoId: widget.cursoId,
+              mesCalendario: _toca.dia.mesCalendario,
+              language: lang,
+              onLanguageChanged: widget.onLanguageChanged,
+              audioService: widget.audioService,
+              enAula: false,
+              onCambiarCurso: widget.onCambiarCurso,
+              compacta: true,
+            ),
             // O-20261109-5: la pantalla «Learn» de duolingo-clone: puntos y
             // racha del niño, la unidad en su caja verde y el camino de los
             // cinco días en nodos; el nodo de hoy abre la lección paso a paso.
-            const SizedBox(height: 10),
+            const SizedBox(height: 2),
             FutureBuilder<Leccions?>(
               future: Leccions.cargar()
                   .then<Leccions?>((l) => l, onError: (_) => null),

@@ -310,13 +310,14 @@ void main() {
         ),
       );
       await tester.pumpAndSettle();
-      await tester.scrollUntilVisible(
-        find.byKey(const Key('entrada_estimulacion_casa')),
-        300,
-        scrollable: find.byType(Scrollable).first,
-      );
+      // F-20261120-2: arriba de Hoxe, a la vista sin hacer scroll.
+      expect(find.byKey(const Key('entrada_estimulacion_casa')), findsWidgets);
       expect(
-          find.byKey(const Key('entrada_estimulacion_casa')), findsOneWidget);
+          tester
+              .getTopLeft(
+                  find.byKey(const Key('entrada_estimulacion_casa')).first)
+              .dy,
+          lessThan(300));
 
       await tester.pumpWidget(
         MaterialApp(
@@ -353,13 +354,14 @@ void main() {
         ),
       );
       await tester.pumpAndSettle();
-      await tester.scrollUntilVisible(
-        find.byKey(const Key('entrada_estimulacion_aula')),
-        300,
-        scrollable: find.byType(Scrollable).first,
-      );
+      // F-20261120-2: arriba de Hoxe del aula, a la vista sin hacer scroll.
+      expect(find.byKey(const Key('entrada_estimulacion_aula')), findsWidgets);
       expect(
-          find.byKey(const Key('entrada_estimulacion_aula')), findsOneWidget);
+          tester
+              .getTopLeft(
+                  find.byKey(const Key('entrada_estimulacion_aula')).first)
+              .dy,
+          lessThan(300));
 
       await tester.pumpWidget(
         MaterialApp(

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Borra las grabaciones que ya no corresponden a ninguna locución.
 
-    python3 tools/prune_voice_assets.py           # borra
+    python3 tools/prune_voice_assets.py --borrar  # borra (solo con el «borra» de Frank)
     python3 tools/prune_voice_assets.py --check   # solo avisa (es el gate)
 
 **Por qué existe.** El identificador de una grabación sale del texto exacto, y
@@ -35,6 +35,13 @@ def orfas() -> list[Path]:
 
 
 def main() -> int:
+    # F-20261120-1: sin argumentos, o con uno desconocido (`--help`), borraba.
+    # Borrar exige `--borrar` explícito, y solo con el «borra» de Frank (R-BORRAR).
+    args = sys.argv[1:]
+    if args not in (["--check"], ["--borrar"]):
+        print("Uso: python3 tools/prune_voice_assets.py --check | --borrar "
+              "(--borrar solo con el «borra» de Frank, R-BORRAR)")
+        return 2
     sobran = orfas()
     total = len(list(VOZ.glob("*.m4a"))) if VOZ.exists() else 0
 
@@ -49,7 +56,7 @@ def main() -> int:
               f"ningunha locución. As cinco primeiras:")
         for p in sobran[:5]:
             print("  ·", p.name)
-        print("Córrelle: python3 tools/prune_voice_assets.py")
+        print("Con permiso de Frank: python3 tools/prune_voice_assets.py --borrar")
         return 1
 
     for p in sobran:
