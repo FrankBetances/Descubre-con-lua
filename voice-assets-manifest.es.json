@@ -2,9 +2,9 @@
  "lang": "es",
  "voice": "Sharvard (femenina) · rhasspy/piper-voices",
  "peakDbfs": -3.0,
- "entries": 10443,
- "totalBytes": 119988203,
- "totalSeconds": 20988.11,
+ "entries": 10445,
+ "totalBytes": 119996009,
+ "totalSeconds": 20989.19,
  "files": [
   {
    "id": "es_slow_1f518b1d_4",
@@ -7517,6 +7517,12 @@
    "file": "es_tutor_1d90661f_46.m4a",
    "seconds": 3.01,
    "bytes": 16555
+  },
+  {
+   "id": "es_tutor_1da32c4e_6",
+   "file": "es_tutor_1da32c4e_6.m4a",
+   "seconds": 0.51,
+   "bytes": 3770
   },
   {
    "id": "es_tutor_1da54499_9",
@@ -33239,6 +33245,12 @@
    "file": "es_tutor_8684ec27_25.m4a",
    "seconds": 1.58,
    "bytes": 9136
+  },
+  {
+   "id": "es_tutor_868631aa_7",
+   "file": "es_tutor_868631aa_7.m4a",
+   "seconds": 0.57,
+   "bytes": 4036
   },
   {
    "id": "es_tutor_868ec592_45",
