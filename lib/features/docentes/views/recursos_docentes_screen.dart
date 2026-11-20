@@ -24,6 +24,8 @@ import '../../palabras/views/vocabulario_ingles_screen.dart';
 import '../../planificador/views/dinamicas_screen.dart';
 import '../../planificador/views/estrategias_screen.dart';
 import '../../planificador/views/planificador_screen.dart';
+import '../../estimulacion/data/estimulacion_ui.dart';
+import '../../estimulacion/views/estimulacion_screen.dart';
 import '../../premios/premios_repository.dart';
 import '../../steam/views/steam_do_ano_screen.dart';
 import '../../steam/views/steam_hub_screen.dart';
@@ -160,6 +162,21 @@ class RecursosDocentesScreen extends StatelessWidget {
                   language: language,
                   onLanguageChanged: onLanguageChanged,
                   audioService: audioService,
+                ),
+          ),
+          (
+            'recurso_estimulacion',
+            Icons.record_voice_over_rounded,
+            NomesDocentes.estimulacion,
+            NomesDocentes.estimulacionDi,
+            (_) => EstimulacionScreen(
+                  language: language,
+                  onLanguageChanged: onLanguageChanged,
+                  audioService: audioService,
+                  initialCursoId: cursoId,
+                  initialMes: EstimulacionUi.mesDeCalendario(
+                      (agora ?? DateTime.now()).month),
+                  enAula: true,
                 ),
           ),
         ],
@@ -322,6 +339,9 @@ class RecursosDocentesScreen extends StatelessWidget {
                 FilaPortal(
                   clave: clave,
                   icona: icona,
+                  laminaClave: clave == 'recurso_estimulacion'
+                      ? 'ico_estimulacion'
+                      : null,
                   nome: nome.resolve(language),
                   di: di.resolve(language),
                   onTap: () => _abrir(context, abrir),

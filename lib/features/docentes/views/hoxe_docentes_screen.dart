@@ -35,6 +35,7 @@ import '../../criancas/xogo_lua.dart';
 import '../../familias/widgets/learn_duolingo.dart';
 import '../../planificador/views/dinamicas_screen.dart';
 import '../../steam/widgets/steam_no_calendario.dart';
+import '../../estimulacion/widgets/entrada_estimulacion.dart';
 import '../nomes_docentes.dart';
 import '../widgets/hoxe_na_aula.dart'
     show DiaQueToca, ProxeccionDoCurso, formatarMiles;
@@ -398,6 +399,16 @@ class _HoxeDocentesScreenState extends State<HoxeDocentesScreen> {
                 agora: widget.agora,
               ),
             ],
+            const SizedBox(height: 12),
+            EntradaEstimulacionCard(
+              cursoId: widget.cursoId,
+              mesCalendario: _toca.dia.mesCalendario,
+              language: lang,
+              onLanguageChanged: widget.onLanguageChanged,
+              audioService: widget.audioService,
+              enAula: true,
+              onCambiarCurso: widget.onCambiarCurso,
+            ),
             // Sin número: los pasos 1-3 de la lección antigua ya no están.
             Padding(
               padding: const EdgeInsets.only(top: 22, bottom: 10),

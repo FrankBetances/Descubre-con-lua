@@ -168,6 +168,20 @@
               "gl": "STEAM: un xogo por idade",
               "es": "STEAM: un juego por edad",
               "nota": "«STEAM» a la vista: es el nombre con que se pidió el módulo."
+            },
+            {
+              "id": "estimulacion",
+              "gl": "Estimulación da linguaxe e o pensamento",
+              "es": "Estimulación del lenguaje y el pensamiento",
+              "cabeceira": {
+                "gl": "Estimulación",
+                "es": "Estimulación"
+              }
+            },
+            {
+              "id": "estimulacionDi",
+              "gl": "Escoita, palabras que medran, modelo e pensamento STEAM.",
+              "es": "Escucha, palabras que crecen, modelo y pensamiento STEAM."
             }
           ]
         },
@@ -386,6 +400,20 @@
               "id": "cienciaDi",
               "gl": "STEAM: unha sesión por curso, o día que lle toca.",
               "es": "STEAM: una sesión por curso, el día que le toca."
+            },
+            {
+              "id": "estimulacion",
+              "gl": "Estimulación da linguaxe e o pensamento",
+              "es": "Estimulación del lenguaje y el pensamiento",
+              "cabeceira": {
+                "gl": "Estimulación",
+                "es": "Estimulación"
+              }
+            },
+            {
+              "id": "estimulacionDi",
+              "gl": "Para a asemblea: a docente guía e o grupo responde.",
+              "es": "Para la asamblea: la docente guía y el grupo responde."
             },
             {
               "id": "programacion",

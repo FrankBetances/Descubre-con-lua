@@ -40,6 +40,7 @@ import '../../steam/widgets/steam_no_calendario.dart';
 import '../nomes_familias.dart';
 import '../widgets/reto_da_semana.dart';
 import '../widgets/selector_idade.dart';
+import '../../estimulacion/widgets/entrada_estimulacion.dart';
 import 'codigo_da_escola_screen.dart';
 import 'ponte_ao_dia_screen.dart';
 import 'xogo_de_hoxe_screen.dart';
@@ -471,6 +472,16 @@ class _HoxeFamiliasScreenState extends State<HoxeFamiliasScreen> {
               dia: _toca.dia.dia,
               language: lang,
               audioService: widget.audioService,
+            ),
+            const SizedBox(height: 12),
+            EntradaEstimulacionCard(
+              cursoId: widget.cursoId,
+              mesCalendario: _toca.dia.mesCalendario,
+              language: lang,
+              onLanguageChanged: widget.onLanguageChanged,
+              audioService: widget.audioService,
+              enAula: false,
+              onCambiarCurso: widget.onCambiarCurso,
             ),
             // O-20261109-3: Lúa de Valeria, con los premios del niño.
             if (CrianzaDaCasa.maybeOf(context) case final casa?)
