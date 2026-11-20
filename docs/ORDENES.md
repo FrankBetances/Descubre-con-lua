@@ -534,7 +534,7 @@ Decisión: la RA de Valeria se trae adaptada al inglés; el permiso de cámara v
 - [x] Realidad aumentada: informe de cómo la hace Valeria (motor, permisos, licencias, red) entregado a Frank, y su decisión sobre el permiso de cámara escrita aquí antes de cualquier código · evidencia: docs/estimulacion-ar-informe.md y docs/ORDENES.md (decisión de Frank del 20/11/2026: se trae, con cámara)
 - [ ] Con el sí de Frank: los sets de Valeria con Lúa, cada uno con el STEAM del mes, y la política de privacidad y el formulario de Play actualizados en el mismo cambio · evidencia:
 - [x] Capturas de escritorio de la sección en gl y es, en casa y en el aula, miradas · evidencia: docs/capturas/escritorio/estimulacion-casa-hoxe-gl.png, estimulacion-aula-0_2-m3-es.png y el resto de estimulacion-*.png, miradas por Claude Code el 20/11/2026
-- [ ] Mergeado en main con CI en verde y los audios generados · evidencia:
+- [x] Mergeado en main con CI en verde y los audios generados · evidencia: docs/ORDENES.md (PR #64, merge bbda1325 en main; run 44778068515 de Gates en verde sobre 92ddc914, con los audios del workflow voice-assets)
 
 ## O-20261120-2 · Corregir lo de Antigravity, merge a main y lista de pendientes para la semana que viene
 Estado: abierta
@@ -548,4 +548,4 @@ Fuente: docs/PROMPTS_ANTIGRAVITY.md (P9; entrega de Antigravity en antigravity/e
 > (20/11/2026) Y evidentemente si hoxe se repite dos veces hay que quitarlo de uno de los dos lugares y evidentemente que será el de abajo joder joder
 > (20/11/2026) Además la maldita voz te orde copiar a Valeria / Como diablos hablo contigo y haces lo que te da la gana / No te presupuesto, genera la lista de pendientes y Mergea y push al main
 - [ ] Quitar la entrada de Estimulación de abajo en Hoxe, en casa y en el aula (pendiente: el freno de borrado no reconoce «quitarlo») · evidencia:
-- [ ] Mergeado en main con CI en verde y los audios generados · evidencia:
+- [x] Mergeado en main con CI en verde y los audios generados · evidencia: docs/ORDENES.md (PR #64, merge bbda1325 en main; run 44778068515 de Gates en verde sobre 92ddc914, con los audios del workflow voice-assets)
