@@ -512,3 +512,23 @@ Fuente: docs/PROMPTS_ANTIGRAVITY.md (P7.9; entrega de Antigravity en antigravity
 > (20/11/2026) Te ordené completar todo el trabajo pendiente / Te ordené completar todo el trabajo pendiente / Te ordené completar absolutamente todo el trabajo pendiente
 - [x] 2-3 M2, 2-3 M6 y 3-4 M6 con par, con el mismo criterio que Frank aprobó (las dos palabras del experimento, fuera de la regla de edad): blow/slow, seed/see y drink/shrink · evidencia: tools/check_pares_en.py y tools/check_plan_escoita.py (40 pares, 0 pendientes)
 - [x] Mergeado en main con CI en verde y los audios generados · evidencia: docs/ORDENES.md (PR #63, merge fddc667c en main; run 44649317109 de Gates en verde sobre 6e9bbe08, con los audios del workflow voice-assets)
+
+## O-20261120-1 · Estimulación del lenguaje y el pensamiento, bien visible; voz como en Valeria; realidad aumentada con Lúa
+Estado: abierta
+> Ya he probado con logopeda está todo casi bien pero hay un pequeño problema con la velocidad del dictado, es demasiado rápido y no es adecuado para la enseñanza y aprendizaje de un segundo idioma, faltaría incorporar la realidad aumentada para utilizar lua y los sets que ya están en Valeria en esta app
+> Te pedí y fui bastante claro de que quería que tuviera también Logopedia que la copiaras de Valeria, y que a su vez se centrará o intentará utilizar la base steam para estimular el pensamiento crítico y las capacidades cognitivas de los niños, y es que veo todo el aprendizaje que te he pedido que esté ahí, pero no consigo ver esa parte precisamente donde la ocultaste?
+> Hombre, creo que hay que señalizarla como estimulación de lenguaje y pensamiento, y que debe estar bastante clara me parece que es muy cutre, lo que has hecho, realmente una basura total y que me has llevado la contraria
+> Es que el inglés que estaba antes estaba bien y tú lo has cambiado
+> Revisa como lo hicimos con Valeria
+> Genera un plan integral para que lo ejecute anti Gravity tú solo tendrás que revisar que sea correcto y hacer la mejora que necesites pero el trabajo lo hará anti Gravity dame el prompt
+Fuente: FrankBetances/Valeria:scripts/generate-voice-assets.py (LENGTH_SCALE tutor 1.0, child 1.05, clinical 1.15, slow 1.6), src/valeriaSemanticExpansion.ts (stepLines: frase al niño en child y la misma en slow), src/valeriaVoice.ts (speakPhraseSlow), src/steam/arActivities.ts, src/steam/arScenes.ts, src/steam/worlds/ y src/valeriaArBridge.ts (realidad aumentada y sets), en el commit e2a2a5e8
+Reparto: lo ejecuta Antigravity con el prompt P9 de docs/PROMPTS_ANTIGRAVITY.md (P9.0–P9.8); Claude Code lo revisa, mejora lo que haga falta e integra.
+
+- [ ] Na casa (Inicio) y Modo Aula: una entrada propia «Estimulación da linguaxe e o pensamento / Estimulación del lenguaje y el pensamiento», visible sin entrar en la lección, en 2-3, 3-4, 4-5 y 5-6 (y 0-2 por proyecto) · evidencia:
+- [ ] Dentro, por mes y edad: Escucha (par), Palabras que crecen (progresión), Háblale así (modelo) y Pensamos (predice, proba, compara, explica) con el experimento STEAM del mes, en gl y es · evidencia:
+- [ ] Las 40 piezas con los cuatro momentos de pensamiento, cada uno con palabras del par o la progresión y del STEAM del mes; un gate lo comprueba · evidencia:
+- [ ] Voz como en Valeria: cada frase inglesa para el niño en voz child (1.05) y en lenta de frase (1.6), con botón «Oír amodo / Oír despacio»; las palabras sueltas lentas como antes; un gate falla si una frase no tiene su versión lenta · evidencia:
+- [ ] Realidad aumentada: informe de cómo la hace Valeria (motor, permisos, licencias, red) entregado a Frank, y su decisión sobre el permiso de cámara escrita aquí antes de cualquier código · evidencia:
+- [ ] Con el sí de Frank: los sets de Valeria con Lúa, cada uno con el STEAM del mes, y la política de privacidad y el formulario de Play actualizados en el mismo cambio · evidencia:
+- [ ] Capturas de escritorio de la sección en gl y es, en casa y en el aula, miradas · evidencia:
+- [ ] Mergeado en main con CI en verde y los audios generados · evidencia:

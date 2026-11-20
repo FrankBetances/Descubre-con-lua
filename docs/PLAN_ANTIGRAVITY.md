@@ -109,6 +109,16 @@ commit. Lo vigila `tools/check_registro_commits.py`, dentro de `tools/gates.sh`.
 | P8.11 | Claude Code: los tres pares que Frank aprobó fuera de la regla de edad | 8 | no |
 | P8.12 | Claude Code: los tres últimos pares, gate de vocabulario clínico y auditoría del registro | 8 | no |
 | P8.13 | Claude Code: evidencia del merge del PR #63 | 8 | no |
+| P8.14 | Claude Code: prompt P9 para Antigravity, pasos P9 en la tabla y orden O-20261120-1 | 8 | no |
+| P9.0 | Antigravity: plan y control de qué se copia de Valeria (docs/estimulacion-plan.md) | 9 | no |
+| P9.1 | Antigravity: voz como en Valeria (child 1.05 y frase lenta 1.6, botón Oír despacio, gate check_voz_lenta) | 9 | no |
+| P9.2 | Antigravity: pensamiento STEAM en las 40 piezas (predice, proba, compara, explica) y 0-2 por proyecto | 9 | no |
+| P9.3 | Antigravity: sección Estimulación del lenguaje y el pensamiento en casa y en Modo Aula | 9 | no |
+| P9.4 | Antigravity: informe de la realidad aumentada de Valeria; código solo con el sí de Frank a la cámara | 9 | **sí** |
+| P9.5 | Antigravity: láminas de las palabras nuevas de P9.2 y su hoja de contactos | 9 | no |
+| P9.6 | Antigravity: tests de la sección, de Oír despacio y del pensamiento en las 40 piezas | 9 | no |
+| P9.7 | Antigravity: capturas de escritorio en gl y es de la sección en casa y en el aula | 9 | no |
+| P9.8 | Antigravity: docs/estimulacion-control.md, una fila por pieza | 9 | no |
 | P5.1 | Proponer la unidad y los pares del piloto de escucha y palabras | 5 | **sí** |
 | P5.2 | Revisión de los pares por Frank o una logopeda | 5 | **sí** |
 | P5.3 | Construir el piloto con su gate y capturas gl/es | 5 | no |
@@ -384,4 +394,5 @@ Base: `6be3d38b`
 | P8.10 | 7e896d90 | 2026-11-19 | Na casa → Hoy → día → Continuar: el par de la semana 1 y 4 sale ya en 10 meses más (2-3 M1/M3/M5/M7/M9, 3-4 M1/M4/M7/M8, 5-6 M10); 2-3 M6 (pip/pit) vuelve a pendiente porque «pit» (hueso de otra fruta) no está en el experimento; gallego corregido (palmadiña, apertade, son, ensina, gorxa, arredonda) | gates.sh y flutter test completos en local | assets/content/escoita/plan_mensual.json, voice-corpus.json, docs/escoita-control.md || ok |
 | P8.11 | 0a235c28 | 2026-11-20 | Na casa → Hoy → día → Continuar: el par sale también en 2-3 M4 (pan/pat), 2-3 M10 (light/night) y 3-4 M10 (cheek/peek), aprobados por Frank; láminas nuevas pal_pan y pal_cheek | check_pares_en, check_plan_escoita, check_laminas, significados_test, paso_escoita_test y xogos_escoita_test OK | assets/content/escoita/plan_mensual.json, tools/gen_laminas_escoita_p710.py, assets/brand/laminas/pal_pan.json, pal_cheek.json, tools/banco/cmudict_escoita.txt | |
 | P8.12 | 217ebd82 | 2026-11-20 | Na casa → Hoy → día → Continuar: el par sale ya en los 40 meses (2-3 M2 blow/slow, 2-3 M6 seed/see, 3-4 M6 drink/shrink); gate nuevo de vocabulario clínico; columna «Revisión» del registro rellena fila a fila | check_pares_en, check_plan_escoita (0 pendientes), check_finalidade, check_registro_commits, flutter test --exclude-tags capturas | assets/content/escoita/plan_mensual.json, tools/check_finalidade.py, tools/gates.sh, docs/PLAN_ANTIGRAVITY.md | |
-| P8.13 | este | 2026-11-20 | Nada visible: evidencia del merge del PR #63 (fddc667c) en O-20261119-10 | check_ordenes y check_registro_commits OK | docs/ORDENES.md | |
+| P8.13 | ff142dcb | 2026-11-20 | Nada visible: evidencia del merge del PR #63 (fddc667c) en O-20261119-10 | check_ordenes y check_registro_commits OK | docs/ORDENES.md | |
+| P8.14 | este | 2026-11-20 | Nada visible: prompt P9 para Antigravity guardado, pasos P9.0–P9.8 en la tabla y orden O-20261120-1 con sus criterios | check_registro_commits y check_ordenes OK | docs/PROMPTS_ANTIGRAVITY.md, docs/ORDENES.md | |
