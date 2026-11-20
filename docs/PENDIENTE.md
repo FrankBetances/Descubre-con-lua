@@ -5,9 +5,9 @@ Actualizada por Claude Code el 20/11/2026, después de mergear P9 (Estimulación
 ## Decisiones de Frank (nadie puede avanzarlas sin él)
 
 1. **Realidad aumentada (ORDEN de Frank, 20/11/2026): traer la RA de Valeria adaptada al aprendizaje de inglés, con el permiso de cámara.** Lo hace Antigravity (P10, el prompt se da la semana que viene). En el mismo cambio: AndroidManifest (CAMERA), política de privacidad, ficha de Seguridad de los datos de Play y gate de permisos. Claude Code lo revisa y lo mergea.
-2. **Entrada de Estimulación duplicada en Hoxe.** Está arriba (la principal) y también abajo, al final de la lección. Si Frank dice «quita la entrada de abajo», se quita.
-3. **Hecho: la logopeda escuchó los pares mínimos y los dio por buenos** (Frank, 20/11/2026). Queda que oiga la velocidad nueva de las frases (punto 4).
-4. **Velocidad de la voz.** Que la logopeda escuche en un móvil la voz de niño (1.05) y la lenta (1.6) de las frases, y diga si vale.
+2. **ORDEN de Frank (20/11/2026): quitar la entrada de Estimulación de abajo en Hoxe (casa y aula); se queda la de arriba.** El freno de borrado no la dejó quitar porque el mensaje decía «quitarlo»; se hace la semana que viene con su «quita la entrada de abajo», o ampliando el freno para que entienda «quitarlo».
+3. **Hecho: la logopeda escuchó los pares mínimos y los dio por buenos** (Frank, 20/11/2026).
+4. **Hecho: la voz copiada de Valeria** (orden de Frank): las mismas velocidades (niño 1.05, lenta 1.6, adulto 1.0) y la misma frase lenta con «Oír despacio». Comprobar en el APK que suena (punto 7).
 5. **Probar en la app** (Na casa → Hoxe → Estimulación) tres meses de edades distintas y darlo por bueno (O-20261118-3).
 
 ## Trabajo de Claude Code

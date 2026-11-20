@@ -545,4 +545,7 @@ Fuente: docs/PROMPTS_ANTIGRAVITY.md (P9; entrega de Antigravity en antigravity/e
 - [x] Errores de la entrega P9 corregidos: entrada arriba en Hoxe, preguntas en inglés, guías sin exigir que diga, títulos gallegos · evidencia: test/features/estimulacion_test.dart y tools/check_sin_repetir.py
 - [x] Las 80 grabaciones en_tutor sobrantes borradas con el sí de Frank · evidencia: tools/prune_voice_assets.py (--check sin sobrantes)
 - [x] Lista de lo pendiente para la semana que viene · evidencia: docs/PENDIENTE.md
+> (20/11/2026) Y evidentemente si hoxe se repite dos veces hay que quitarlo de uno de los dos lugares y evidentemente que será el de abajo joder joder
+> (20/11/2026) Además la maldita voz te orde copiar a Valeria / Como diablos hablo contigo y haces lo que te da la gana / No te presupuesto, genera la lista de pendientes y Mergea y push al main
+- [ ] Quitar la entrada de Estimulación de abajo en Hoxe, en casa y en el aula (pendiente: el freno de borrado no reconoce «quitarlo») · evidencia:
 - [ ] Mergeado en main con CI en verde y los audios generados · evidencia:
