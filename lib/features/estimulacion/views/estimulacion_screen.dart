@@ -279,7 +279,7 @@ class _CabeceraSeccion extends StatelessWidget {
                             .resolve(lang),
                         key: const Key('estimulacion_etiqueta_modo'),
                         style: TextStyle(
-                          fontSize: 11,
+                          fontSize: 12,
                           fontWeight: FontWeight.w800,
                           letterSpacing: 0.6,
                           color: context.acento,
@@ -381,7 +381,7 @@ class _CabeceraSeccion extends StatelessWidget {
                   Text(
                     ui.experimentoMes.resolve(lang).toUpperCase(),
                     style: const TextStyle(
-                      fontSize: 11,
+                      fontSize: 12,
                       fontWeight: FontWeight.w800,
                       letterSpacing: 0.6,
                       color: Color(0xFF9A5B00),
@@ -405,7 +405,7 @@ class _CabeceraSeccion extends StatelessWidget {
           Text(
             ui.mesesNav.resolve(lang).toUpperCase(),
             style: const TextStyle(
-              fontSize: 11.5,
+              fontSize: 12,
               fontWeight: FontWeight.w800,
               letterSpacing: 0.6,
               color: AppTheme.textSecondary,
@@ -1044,7 +1044,7 @@ class _BloqueZeroDous extends StatelessWidget {
                 child: Text(
                   ui.zeroDousEtiqueta.resolve(lang),
                   style: TextStyle(
-                    fontSize: 11.5,
+                    fontSize: 12,
                     fontWeight: FontWeight.w800,
                     color: context.acento,
                   ),
