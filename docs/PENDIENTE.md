@@ -4,7 +4,7 @@ Actualizada por Claude Code el 20/11/2026, después de mergear P9 (Estimulación
 
 ## Decisiones de Frank (nadie puede avanzarlas sin él)
 
-1. **Realidad aumentada con Lúa y los sets de Valeria (O-20261120-1, P9.4).** ¿Sí o no al permiso de cámara? El informe está en `docs/estimulacion-ar-informe.md`: ARCore, Filament y MediaPipe (Apache-2.0), sin red en uso, pero hoy la app no pide ningún permiso. Con el sí: Antigravity lo implementa y en el mismo cambio se actualizan la política de privacidad, la ficha de Seguridad de los datos de Play y el gate de permisos.
+1. **Realidad aumentada (ORDEN de Frank, 20/11/2026): traer la RA de Valeria adaptada al aprendizaje de inglés, con el permiso de cámara.** Lo hace Antigravity (P10, el prompt se da la semana que viene). En el mismo cambio: AndroidManifest (CAMERA), política de privacidad, ficha de Seguridad de los datos de Play y gate de permisos. Claude Code lo revisa y lo mergea.
 2. **Entrada de Estimulación duplicada en Hoxe.** Está arriba (la principal) y también abajo, al final de la lección. Si Frank dice «quita la entrada de abajo», se quita.
 3. **Revisión de la logopeda** de los 40 pares, las 40 progresiones, el modelo del adulto y los 160 momentos de pensamiento (`docs/estimulacion-control.md` y `docs/escoita-control.md`). Seis pares saltan la regla de edad con permiso de Frank: pan/pat, light/night, cheek/peek, blow/slow, seed/see y drink/shrink.
 4. **Velocidad de la voz.** Que la logopeda escuche en un móvil la voz de niño (1.05) y la lenta (1.6) de las frases, y diga si vale.
