@@ -48,12 +48,11 @@ boy B OY1
 bush B UH1 SH
 cap K AE1 P
 cat K AE1 T
+cheek CH IY1 K
 cold K OW1 L D
 cone K OW1 N
 dip D IH1 P
 dish D IH1 SH
-dot D AA1 T
-eye AY1
 fan F AE1 N
 feet F IY1 T
 fill F IH1 L
@@ -71,9 +70,11 @@ lash L AE1 SH
 light L AY1 T
 low L OW1
 mix M IH1 K S
+night N AY1 T
 nip N IH1 P
+pan P AE1 N
 pat P AE1 T
-pie P AY1
+peek P IY1 K
 pile P AY1 L
 pin P IH1 N
 pip P IH1 P

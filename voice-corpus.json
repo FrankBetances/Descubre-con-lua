@@ -1,14 +1,14 @@
 {
- "generatedAt": "2026-11-19T23:42:57Z",
- "entries": 38175,
+ "generatedAt": "2026-11-20T00:12:16Z",
+ "entries": 38185,
  "byStyle": {
-  "slow": 6018,
-  "tutor": 32157
+  "slow": 6019,
+  "tutor": 32166
  },
  "byLang": {
-  "en": 17299,
-  "es": 10439,
-  "gl": 10437
+  "en": 17300,
+  "es": 10443,
+  "gl": 10442
  },
  "corpus": [
   {
@@ -36612,6 +36612,15 @@
    "text": "surge",
    "speech": "surge",
    "source": "corpus/3891/lemma",
+   "pack": false
+  },
+  {
+   "id": "en_slow_af15011e_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "peek",
+   "speech": "peek",
+   "source": "escoita/curso_3_4/10/peek",
    "pack": false
   },
   {
@@ -165620,6 +165629,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_1a0d5ec4_5",
+   "lang": "es",
+   "style": "tutor",
+   "text": "noche",
+   "speech": "noche",
+   "source": "escoita/curso_2_3/10/night/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_1a0eddfa_44",
    "lang": "es",
    "style": "tutor",
@@ -174015,6 +174033,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_30d0e0b1_7",
+   "lang": "es",
+   "style": "tutor",
+   "text": "mejilla",
+   "speech": "mejilla",
+   "source": "escoita/curso_3_4/10/cheek/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_30d48366_38",
    "lang": "es",
    "style": "tutor",
@@ -180512,7 +180539,7 @@
    "style": "tutor",
    "text": "luz",
    "speech": "luz",
-   "source": "escoita/curso_5_6/3/light/significado",
+   "source": "escoita/curso_2_3/10/light/significado",
    "pack": false
   },
   {
@@ -207667,6 +207694,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_8bd11c0f_9",
+   "lang": "es",
+   "style": "tutor",
+   "text": "golpecito",
+   "speech": "golpecito",
+   "source": "escoita/curso_2_3/4/pat/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_8bd941ae_6",
    "lang": "es",
    "style": "tutor",
@@ -219470,6 +219506,15 @@
    "text": "dibujar",
    "speech": "dibujar",
    "source": "curriculo/T3.U5.1/vocabulario/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_ab64057c_5",
+   "lang": "es",
+   "style": "tutor",
+   "text": "mirar",
+   "speech": "mirar",
+   "source": "escoita/curso_3_4/10/peek/significado",
    "pack": false
   },
   {
@@ -275045,7 +275090,7 @@
    "style": "tutor",
    "text": "luz",
    "speech": "luz",
-   "source": "escoita/curso_5_6/3/light/significado",
+   "source": "escoita/curso_2_3/10/light/significado",
    "pack": false
   },
   {
@@ -297961,6 +298006,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_804c4c66_5",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "noite",
+   "speech": "noite",
+   "source": "escoita/curso_2_3/10/night/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_804cb729_12",
    "lang": "gl",
    "style": "tutor",
@@ -301191,6 +301245,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_891d953d_5",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "ollar",
+   "speech": "ollar",
+   "source": "escoita/curso_3_4/10/peek/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_891f2ed6_7",
    "lang": "gl",
    "style": "tutor",
@@ -302715,6 +302778,15 @@
    "speech": "Mamá paxaro",
    "source": "tpr.2_3.abril/s4/2_3.abril.s4.mother-bird/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_8cae1bda_7",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "meixela",
+   "speech": "meixela",
+   "source": "escoita/curso_3_4/10/cheek/significado",
+   "pack": false
   },
   {
    "id": "gl_tutor_8cbca3ad_16",
@@ -325975,6 +326047,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_cc3ecb50_6",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "tixola",
+   "speech": "tixola",
+   "source": "escoita/curso_2_3/4/pan/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_cc4cd98d_22",
    "lang": "gl",
    "style": "tutor",
@@ -342224,6 +342305,15 @@
    "speech": "Na pota",
    "source": "tpr.3_4.novembro/s4/3_4.novembro.s4.in-the-pot/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_f9561c82_7",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "golpiño",
+   "speech": "golpiño",
+   "source": "escoita/curso_2_3/4/pat/significado",
+   "pack": false
   },
   {
    "id": "gl_tutor_f95ad79f_52",

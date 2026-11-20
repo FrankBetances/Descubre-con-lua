@@ -463,43 +463,43 @@
       "fuente": "nueva",
       "par": {
         "a": {
-          "en": "beat",
-          "gl": "golpe",
-          "es": "golpe",
-          "lamina": "pal_beat",
+          "en": "pan",
+          "gl": "tixola",
+          "es": "sartén",
+          "lamina": "pal_pan",
           "steam": {
-            "gl": "Golpe forte ou suave na bandexa ou tambor",
-            "es": "Golpe fuerte o suave en la bandeja o tambor"
+            "gl": "A tixola vella na que se dan golpes fortes e suaves coa culler de pau",
+            "es": "La sartén vieja en la que se dan golpes fuertes y suaves con la cuchara de palo"
           }
         },
         "b": {
-          "en": "bit",
-          "gl": "anaco",
-          "es": "trocito",
-          "lamina": "pal_bit",
+          "en": "pat",
+          "gl": "golpiño",
+          "es": "golpecito",
+          "lamina": "pal_pat",
           "steam": {
-            "gl": "Contraste co som curto dun anaco pequeno de folla seca",
-            "es": "Contraste con el sonido corto de un trocito de hoja seca"
+            "gl": "O golpe suave, o «pum» pequeno que case non se oe",
+            "es": "El golpe suave, el «pum» pequeño que casi no se oye"
           }
         },
-        "fonema": "/iː/ → /ɪ/",
+        "fonema": "/n/ → /t/",
         "nota": {
-          "gl": "En «Pum grande, pum pequeño» soltades pedras e follas na bandexa: «beat» estira o «i» coma un golpe que resoa (/iː/) e «bit» é curto e seco (/ɪ/).",
-          "es": "En «Pum grande, pum pequeño» soltáis piedras y hojas en la bandeja: «beat» estira la «i» como un golpe que resuena (/iː/) y «bit» es corto y seco (/ɪ/)."
+          "gl": "En «Pum grande, pum pequeno» dades golpes na tixola («pan») e un golpiño suave («pat»): as dúas empezan igual; «pan» remata co son polo nariz (/n/) e «pat» corta coa lingua detrás dos dentes (/t/).",
+          "es": "En «Pum grande, pum pequeño» dais golpes en la sartén («pan») y un golpecito suave («pat»): las dos empiezan igual; «pan» termina con el sonido por la nariz (/n/) y «pat» corta con la lengua detrás de los dientes (/t/)."
         },
         "mision_acerto": {
-          "gl": "Dade un golpe longo na bandexa metálica coa culler de pau mentres pechades os ollos para escoitalo.",
-          "es": "Dad un golpe largo en la bandeja metálica con la cuchara de palo mientras cerráis los ojos para escucharlo."
+          "gl": "Dade na tixola un golpe forte e logo un golpiño suave, e adiviñade cos ollos pechados cal foi.",
+          "es": "Dad en la sartén un golpe fuerte y luego un golpecito suave, y adivinad con los ojos cerrados cuál fue."
         },
         "mision_fallo": {
-          "gl": "Estirade os brazos para o golpe longo «beeeat» na bandexa e dade un toquiño rápido co dedo para «bit».",
-          "es": "Estirad los brazos para el golpe largo «beeeat» en la bandeja y dad un toquecito rápido con el dedo para «bit»."
+          "gl": "Tapade o nariz un intre: en «pan» o son quere saír por el; en «pat» a lingua corta seco detrás dos dentes.",
+          "es": "Tapad la nariz un momento: en «pan» el sonido quiere salir por ella; en «pat» la lengua corta seco detrás de los dientes."
         },
         "pista": {
-          "gl": "Son longo que queda vibrando en «beeeat»; son rápido e curtiño en «bit».",
-          "es": "Sonido largo que queda vibrando en «beeeat»; sonido rápido y cortito en «bit»."
+          "gl": "Final polo nariz en «pan»; final seco coa lingua en «pat».",
+          "es": "Final por la nariz en «pan»; final seco con la lengua en «pat»."
         },
-        "pendiente": "P7.9: una palabra del par no nombra el STEAM del mes; la lección no enseña este par hasta que Antigravity lo rehaga (F-20261119-9)."
+        "excepcion_edad": "Frank, 20/11/2026 (O-20261119-10): sin par de vocal u oclusiva con dos palabras del experimento; se acepta este contraste."
       },
       "progresion": {
         "tema": {
@@ -1359,43 +1359,43 @@
       "fuente": "nueva",
       "par": {
         "a": {
-          "en": "dot",
-          "gl": "punto",
-          "es": "punto",
-          "lamina": "pal_dot",
+          "en": "light",
+          "gl": "luz",
+          "es": "luz",
+          "lamina": "pal_light",
           "steam": {
-            "gl": "Punto de luz no teito proxectado polos furados da caixa",
-            "es": "Punto de luz en el techo proyectado por los agujeros de la caja"
+            "gl": "A luz da lanterna que sae polos furados da caixa",
+            "es": "La luz de la linterna que sale por los agujeros de la caja"
           }
         },
         "b": {
-          "en": "pot",
-          "gl": "pote",
-          "es": "cazo",
-          "lamina": "pal_pot",
+          "en": "night",
+          "gl": "noite",
+          "es": "noche",
+          "lamina": "pal_night",
           "steam": {
-            "gl": "Contraste con outro recipiente distinto da caixa furada",
-            "es": "Contraste con otro recipiente distinto de la caja agujereada"
+            "gl": "A noite, cando a sala está escura e saen as estrelas no teito",
+            "es": "La noche, cuando la habitación está oscura y salen las estrellas en el techo"
           }
         },
-        "fonema": "/d/ → /p/",
+        "fonema": "/l/ → /n/",
         "nota": {
-          "gl": "En «La caja de las estrellas», a lanterna fai puntiños de luz no teito («dot»): /d/ toca detrás dos dentes con vibración e /p/ de «pot» estala nos beizos.",
-          "es": "En «La caja de las estrellas», la linterna hace puntitos de luz en el techo («dot»): /d/ toca detrás de los dientes con vibración y /p/ de «pot» estalla en los labios."
+          "gl": "En «A caixa das estrelas» acendedes a luz («light») de noite («night»): as dúas rematan igual; «light» empeza coa lingua arriba deixando pasar o aire polos lados (/l/) e «night» empeza co son polo nariz (/n/).",
+          "es": "En «La caja de las estrellas» encendéis la luz («light») por la noche («night»): las dos terminan igual; «light» empieza con la lengua arriba dejando pasar el aire por los lados (/l/) y «night» empieza con el sonido por la nariz (/n/)."
         },
         "mision_acerto": {
-          "gl": "Tapade un furado da caixa de zapatos co dedo e mirade que punto de luz desaparece no teito.",
-          "es": "Tapad un agujero de la caja de zapatos con el dedo y mirad qué punto de luz desaparece en el techo."
+          "gl": "Apagade a luz da habitación, acendede a lanterna dentro da caixa e contade as estrelas do teito.",
+          "es": "Apagad la luz de la habitación, encended la linterna dentro de la caja y contad las estrellas del techo."
         },
         "mision_fallo": {
-          "gl": "Sinalade un punto no teito coa lanterna acesa: lingua arriba vibrante en «d-d-dot», beizos xuntos nun sopro para «p-p-pot».",
-          "es": "Señalad un punto en el techo con la linterna encendida: lengua arriba vibrante en «d-d-dot», labios juntos en un soplo para «p-p-pot»."
+          "gl": "Acendede a lanterna para «llllight» e tapádea para «nnnnight»: sentide o nariz vibrar só en «night».",
+          "es": "Encended la linterna para «llllight» y tapadla para «nnnnight»: notad la nariz vibrar solo en «night»."
         },
         "pista": {
-          "gl": "Lingua atrás dos dentes para «dot»; beizos pechados con aire para «pot».",
-          "es": "Lengua detrás de los dientes para «dot»; labios cerrados con aire para «pot»."
+          "gl": "Lingua arriba e aire polos lados en «light»; nariz que vibra en «night».",
+          "es": "Lengua arriba y aire por los lados en «light»; nariz que vibra en «night»."
         },
-        "pendiente": "P7.9: una palabra del par no nombra el STEAM del mes; la lección no enseña este par hasta que Antigravity lo rehaga (F-20261119-9)."
+        "excepcion_edad": "Frank, 20/11/2026 (O-20261119-10): sin par de vocal u oclusiva con dos palabras del experimento; se acepta este contraste."
       },
       "progresion": {
         "tema": {
@@ -2851,43 +2851,43 @@
       "fuente": "nueva",
       "par": {
         "a": {
-          "en": "eye",
-          "gl": "ollo",
-          "es": "ojo",
-          "lamina": "pal_eye",
+          "en": "cheek",
+          "gl": "meixela",
+          "es": "mejilla",
+          "lamina": "pal_cheek",
           "steam": {
-            "gl": "Ollo da cara reflectida ao revés e ao dereito na culler",
-            "es": "Ojo de la cara reflejada al revés y al derecho en la cuchara"
+            "gl": "A meixela da cara que se ve ao revés na culler",
+            "es": "La mejilla de la cara que se ve del revés en la cuchara"
           }
         },
         "b": {
-          "en": "pie",
-          "gl": "torta",
-          "es": "tarta",
-          "lamina": "pal_pie",
+          "en": "peek",
+          "gl": "ollar",
+          "es": "mirar",
+          "lamina": "pal_peek",
           "steam": {
-            "gl": "Contraste de comida doce para comer con culler",
-            "es": "Contraste de comida dulce para comer con cuchara"
+            "gl": "Asomarse a mirar a cara dentro e fóra da culler",
+            "es": "Asomarse a mirar la cara por dentro y por fuera de la cuchara"
           }
         },
-        "fonema": "∅ → /p/",
+        "fonema": "/tʃ/ → /p/",
         "nota": {
-          "gl": "En «La cara en la cuchara» buscades os ollos («eye») no metal brillante: «eye» sae limpo dende a vogal aberta e «pie» engade un estoupido de beizos (/p/) diante.",
-          "es": "En «La cara en la cuchara» buscáis los ojos («eye») en el metal brillante: «eye» sale limpio desde la vocal abierta y «pie» añade un estallido de labios (/p/) delante."
+          "gl": "En «A cara na culler» ollades («peek») a vosa meixela («cheek») no metal: as dúas rematan igual; «cheek» empeza cun «ch» que sopra entre os dentes (/tʃ/) e «peek» cun estoupido dos beizos (/p/).",
+          "es": "En «La cara en la cuchara» miráis («peek») vuestra mejilla («cheek») en el metal: las dos terminan igual; «cheek» empieza con una «ch» que sopla entre los dientes (/tʃ/) y «peek» con un estallido de los labios (/p/)."
         },
         "mision_acerto": {
-          "gl": "Xirade a culler de metal ata atopar os vosos ollos dereitos polo lado de fóra e facede unha careta divertida.",
-          "es": "Girad la cuchara de metal hasta encontrar vuestros ojos derechos por el lado de fuera y poned una mueca divertida."
+          "gl": "Ollade na culler por dentro e por fóra e sinalade a meixela: ¿onde está dereita e onde ao revés?",
+          "es": "Mirad en la cuchara por dentro y por fuera y señalad la mejilla: ¿dónde está derecha y dónde del revés?"
         },
         "mision_fallo": {
-          "gl": "Coa boca aberta sen pechar os beizos para «eyeee», probade despois a pechar forte os beizos antes de abrir en «p-pie».",
-          "es": "Con la boca abierta sin cerrar los labios para «eyeee», probad después a cerrar fuerte los labios antes de abrir en «p-pie»."
+          "gl": "Tocade a meixela para «ch-cheek» e xuntade os beizos coma quen se asoma para «p-peek».",
+          "es": "Tocad la mejilla para «ch-cheek» y juntad los labios como quien se asoma para «p-peek»."
         },
         "pista": {
-          "gl": "«Eye» entra directo coa boca aberta; «pie» comeza cun estoupido dos beizos (/p/).",
-          "es": "«Eye» entra directo con la boca abierta; «pie» comienza con un estallido de los labios (/p/)."
+          "gl": "Sopro entre os dentes en «cheek»; estoupido dos beizos en «peek».",
+          "es": "Soplo entre los dientes en «cheek»; estallido de los labios en «peek»."
         },
-        "pendiente": "P7.9: una palabra del par no nombra el STEAM del mes; la lección no enseña este par hasta que Antigravity lo rehaga (F-20261119-9)."
+        "excepcion_edad": "Frank, 20/11/2026 (O-20261119-10): sin par de vocal u oclusiva con dos palabras del experimento; se acepta este contraste."
       },
       "progresion": {
         "tema": {

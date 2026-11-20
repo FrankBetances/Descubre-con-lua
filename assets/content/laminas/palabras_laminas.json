@@ -36955,6 +36955,26 @@
       "sha": "6be3d38b",
       "licencia": "Propia",
       "revisado": true
+    },
+    "pan": {
+      "clave": "pal_pan",
+      "orixe": "nova",
+      "porque": "Sartén vieja de metal vista desde arriba, con su mango largo.",
+      "fuente": "propia",
+      "asset": "tools/gen_laminas_escoita_p710.py#pan",
+      "sha": "6be3d38b",
+      "licencia": "Propia",
+      "revisado": true
+    },
+    "cheek": {
+      "clave": "pal_cheek",
+      "orixe": "nova",
+      "porque": "Cara sonriente con una flecha que señala la mejilla.",
+      "fuente": "propia",
+      "asset": "tools/gen_laminas_escoita_p710.py#cheek",
+      "sha": "6be3d38b",
+      "licencia": "Propia",
+      "revisado": true
     }
   }
 }
