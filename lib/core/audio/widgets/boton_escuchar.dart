@@ -63,6 +63,11 @@ class BotonEscuchar extends StatefulWidget {
   /// con dos. Además se ve escrito un momento, haya grabación o no.
   final LocalizedString? significado;
 
+  /// P9.1: cuando `true` y [texto] es una frase inglesa (tiene espacios),
+  /// muestra al lado el botón «Oír amodo / Oír despacio» que reproduce la
+  /// versión `VoiceStyle.slow` (1.6), equivalente a `speakPhraseSlow` de Valeria.
+  final bool conVozLenta;
+
   const BotonEscuchar({
     super.key,
     required this.audioService,
@@ -75,9 +80,11 @@ class BotonEscuchar extends StatefulWidget {
     this.colorChip,
     this.descripcion,
     this.significado,
+    this.conVozLenta = false,
   });
 
   static const _escuchar = LocalizedString(gl: 'Escoitar', es: 'Escuchar');
+  static const _oirAmodo = LocalizedString(gl: 'Oír amodo', es: 'Oír despacio');
   static const _parar = LocalizedString(gl: 'Parar', es: 'Parar');
 
   /// Qué grabaciones de significado existen: se pregunta una vez por ruta.
@@ -95,16 +102,36 @@ class _BotonEscucharState extends State<BotonEscuchar> {
 
   StreamSubscription<bool>? _sub;
   bool _sonando = false;
+  bool _sonandoLenta = false;
   bool? _disponible;
+  bool? _disponibleLenta;
+  AssetBundle? _bundle;
 
   String get _ruta =>
       voiceAssetPath(widget.style, widget.texto, widget.language);
+
+  bool get _esFraseEn =>
+      widget.conVozLenta &&
+      widget.language == AppLanguage.en &&
+      normalizeVoiceText(widget.texto).contains(' ');
+
+  String get _rutaLenta =>
+      voiceAssetPath(VoiceStyle.slow, widget.texto, widget.language);
 
   @override
   void initState() {
     super.initState();
     _escuchar();
-    _comprobar();
+  }
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    final b = DefaultAssetBundle.of(context);
+    if (!identical(b, _bundle)) {
+      _bundle = b;
+      _comprobar(b);
+    }
   }
 
   @override
@@ -112,8 +139,9 @@ class _BotonEscucharState extends State<BotonEscuchar> {
     super.didUpdateWidget(oldWidget);
     if (oldWidget.texto != widget.texto ||
         oldWidget.language != widget.language ||
-        oldWidget.style != widget.style) {
-      _comprobar();
+        oldWidget.style != widget.style ||
+        oldWidget.conVozLenta != widget.conVozLenta) {
+      _comprobar(_bundle ?? DefaultAssetBundle.of(context));
     }
     if (oldWidget.audioService != widget.audioService) _escuchar();
   }
@@ -123,30 +151,48 @@ class _BotonEscucharState extends State<BotonEscuchar> {
     final servicio = widget.audioService;
     if (servicio == null) return;
     _sonando = servicio.isPlaying && servicio.currentAssetPath == _ruta;
+    _sonandoLenta = _esFraseEn &&
+        servicio.isPlaying &&
+        servicio.currentAssetPath == _rutaLenta;
     _sub = servicio.isPlayingStream.listen((playing) {
       if (!mounted) return;
       setState(() {
         _sonando = playing && servicio.currentAssetPath == _ruta;
+        _sonandoLenta =
+            _esFraseEn && playing && servicio.currentAssetPath == _rutaLenta;
       });
     });
   }
 
-  Future<void> _comprobar() async {
-    final ruta = _ruta;
-    final recordado = _existe[ruta];
-    if (recordado != null) {
-      if (mounted) setState(() => _disponible = recordado);
-      return;
+  Future<bool> _cargarAsset(AssetBundle bundle, String ruta) async {
+    final usarCache = identical(bundle, rootBundle);
+    if (usarCache) {
+      final recordado = _existe[ruta];
+      if (recordado != null) return recordado;
     }
     var hay = false;
     try {
-      await rootBundle.load(ruta);
+      await bundle.load(ruta);
       hay = true;
     } catch (_) {
       hay = false;
     }
-    _existe[ruta] = hay;
-    if (mounted) setState(() => _disponible = hay);
+    if (usarCache) _existe[ruta] = hay;
+    return hay;
+  }
+
+  Future<void> _comprobar(AssetBundle bundle) async {
+    final ruta = _ruta;
+    final esLenta = _esFraseEn;
+    final rutaLenta = _rutaLenta;
+    final hay = await _cargarAsset(bundle, ruta);
+    final hayLenta = esLenta ? await _cargarAsset(bundle, rutaLenta) : false;
+    if (mounted) {
+      setState(() {
+        _disponible = hay;
+        _disponibleLenta = hayLenta;
+      });
+    }
   }
 
   @override
@@ -169,6 +215,17 @@ class _BotonEscucharState extends State<BotonEscuchar> {
       // dos voces hablando encima.
       if (servicio.isPlaying) await servicio.stop();
       await servicio.playAsset(_ruta);
+    }
+  }
+
+  Future<void> _pulsarLento() async {
+    final servicio = widget.audioService;
+    if (servicio == null) return;
+    if (_sonandoLenta) {
+      await servicio.stop();
+    } else {
+      if (servicio.isPlaying) await servicio.stop();
+      await servicio.playAsset(_rutaLenta);
     }
   }
 
@@ -244,21 +301,92 @@ class _BotonEscucharState extends State<BotonEscuchar> {
     );
   }
 
+  Widget _botonLento(BuildContext context) {
+    final lingua = widget.interfaz ?? widget.language;
+    final etiqueta =
+        (_sonandoLenta ? BotonEscuchar._parar : BotonEscuchar._oirAmodo)
+            .resolve(lingua);
+    final color = widget.colorChip ?? context.acento;
+    return Semantics(
+      container: true,
+      button: true,
+      label: '$etiqueta: ${widget.descripcion ?? widget.texto}',
+      child: Material(
+        color: _sonandoLenta
+            ? color
+            : Color.alphaBlend(color.withAlpha(14), Colors.white),
+        borderRadius: BorderRadius.circular(AppTheme.radiusField),
+        child: InkWell(
+          onTap: _pulsarLento,
+          borderRadius: BorderRadius.circular(AppTheme.radiusField),
+          child: Container(
+            constraints: const BoxConstraints(minHeight: AppTheme.touchMin),
+            padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 8),
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(AppTheme.radiusField),
+              border: Border.all(color: color.withAlpha(80)),
+            ),
+            child: Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Icon(
+                  _sonandoLenta
+                      ? Icons.stop_rounded
+                      : Icons.slow_motion_video_rounded,
+                  size: 18,
+                  color: _sonandoLenta ? Colors.white : color,
+                ),
+                const SizedBox(width: 5),
+                Text(
+                  etiqueta,
+                  style: TextStyle(
+                    fontSize: 13.5,
+                    fontWeight: FontWeight.w700,
+                    color: _sonandoLenta ? Colors.white : color,
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
+    final mostrarLenta =
+        _esFraseEn && widget.audioService != null && _disponibleLenta == true;
     if (widget.audioService == null || _disponible != true) {
       // En modo pastilla se queda el texto, sin altavoz. En los demás modos el
       // botón desaparece entero: un altavoz suelto que no suena no aporta nada.
-      return widget.comoChip ? _chipMudo(context) : const SizedBox.shrink();
+      final base =
+          widget.comoChip ? _chipMudo(context) : const SizedBox.shrink();
+      if (!mostrarLenta) return base;
+      return Wrap(
+        spacing: 8,
+        runSpacing: 6,
+        crossAxisAlignment: WrapCrossAlignment.center,
+        children: [if (widget.comoChip) base, _botonLento(context)],
+      );
     }
 
     final etiqueta = (_sonando ? BotonEscuchar._parar : BotonEscuchar._escuchar)
         .resolve(widget.interfaz ?? widget.language);
     final icono = _sonando ? Icons.stop_rounded : Icons.volume_up_rounded;
 
+    Widget conLento(Widget principal) => mostrarLenta
+        ? Wrap(
+            spacing: 8,
+            runSpacing: 6,
+            crossAxisAlignment: WrapCrossAlignment.center,
+            children: [principal, _botonLento(context)],
+          )
+        : principal;
+
     if (widget.comoChip) {
       final color = widget.colorChip ?? context.acento;
-      return Semantics(
+      return conLento(Semantics(
         // Un nodo propio, con el tamaño del botón: sin él, la etiqueta se
         // fundía con la del antecesor y TalkBack recibía otro rectángulo.
         container: true,
@@ -304,11 +432,11 @@ class _BotonEscucharState extends State<BotonEscuchar> {
             ),
           ),
         ),
-      );
+      ));
     }
 
     if (widget.compacto) {
-      return Semantics(
+      return conLento(Semantics(
         // Un nodo propio, con el tamaño del botón: sin él, la etiqueta se
         // fundía con la del antecesor y TalkBack recibía otro rectángulo.
         container: true,
@@ -336,10 +464,10 @@ class _BotonEscucharState extends State<BotonEscuchar> {
             ),
           ),
         ),
-      );
+      ));
     }
 
-    return Semantics(
+    return conLento(Semantics(
       container: true,
       button: true,
       label: widget.descripcion == null
@@ -359,6 +487,6 @@ class _BotonEscucharState extends State<BotonEscuchar> {
           ),
         ),
       ),
-    );
+    ));
   }
 }
