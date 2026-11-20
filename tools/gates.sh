@@ -194,6 +194,7 @@ run_gate "allowed image banks, pinned SHAs, licences and credits (O-20261111-4)"
 run_gate "every taught piece has its own picture (O-20261111-2)" python3 tools/check_laminas_leccion.py --resumo --tope-tpr
 run_gate "every English minimal pair in escoita contrasts one phoneme (CMUdict)" python3 tools/check_pares_en.py
 run_gate "the listening bank copied from Valeria is whole and clean (O-20261119-8)" python3 tools/check_escoita.py
+run_gate "an educational game, no clinical words in assets, lib or public pages (O-20261118-3)" python3 tools/check_finalidade.py
 run_gate "one listening piece per month and age, none repeated (O-20261119-8)" python3 tools/check_plan_escoita.py
 run_gate "Frank's brakes work with real sentences (F-20261119-5)" python3 tools/check_hooks.py
 

@@ -45,14 +45,13 @@ boat B OW1 T
 boom B UW1 M
 boot B UW1 T
 boy B OY1
-bush B UH1 SH
 cap K AE1 P
 cat K AE1 T
 cheek CH IY1 K
-cold K OW1 L D
 cone K OW1 N
 dip D IH1 P
 dish D IH1 SH
+drink D R IH1 NG K
 fan F AE1 N
 feet F IY1 T
 fill F IH1 L
@@ -61,7 +60,6 @@ flash F L AE1 SH
 full F UH1 L
 fun F AH1 N
 glow G L OW1
-gold G OW1 L D
 hat HH AE1 T
 heap HH IY1 P
 hoop HH UW1 P
@@ -77,19 +75,19 @@ pat P AE1 T
 peek P IY1 K
 pile P AY1 L
 pin P IH1 N
-pip P IH1 P
-pit P IH1 T
 plane P L EY1 N
 pot P AA1 T
-push P UH1 SH
 rail R EY1 L
 right R AY1 T
 sale S EY1 L
 scale S K EY1 L
 seat S IY1 T
 see S IY1
+seed S IY1 D
 set S EH1 T
+shrink SH R IH1 NG K
 six S IH1 K S
+slow S L OW1
 snip S N IH1 P
 soak S OW1 K
 soap S OW1 P

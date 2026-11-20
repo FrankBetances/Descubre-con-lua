@@ -1,14 +1,14 @@
 {
- "generatedAt": "2026-11-20T00:12:16Z",
- "entries": 38185,
+ "generatedAt": "2026-11-20T00:37:53Z",
+ "entries": 38189,
  "byStyle": {
   "slow": 6019,
-  "tutor": 32166
+  "tutor": 32170
  },
  "byLang": {
   "en": 17300,
-  "es": 10443,
-  "gl": 10442
+  "es": 10445,
+  "gl": 10444
  },
  "corpus": [
   {
@@ -167042,6 +167042,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_1da32c4e_6",
+   "lang": "es",
+   "style": "tutor",
+   "text": "bebida",
+   "speech": "bebida",
+   "source": "escoita/curso_3_4/6/drink/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_1da54499_9",
    "lang": "es",
    "style": "tutor",
@@ -204298,7 +204307,7 @@
    "style": "tutor",
    "text": "ver",
    "speech": "ver",
-   "source": "escoita/curso_4_5/4/see/significado",
+   "source": "escoita/curso_2_3/6/see/significado",
    "pack": false
   },
   {
@@ -205828,6 +205837,15 @@
    "text": "¡Sí, cuidado con el agua!",
    "speech": "¡Sí, cuidado con el agua!",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_868631aa_7",
+   "lang": "es",
+   "style": "tutor",
+   "text": "encoger",
+   "speech": "encoger",
+   "source": "escoita/curso_3_4/6/shrink/significado",
    "pack": false
   },
   {
@@ -246652,7 +246670,7 @@
    "style": "tutor",
    "text": "despacio",
    "speech": "despacio",
-   "source": "escoita/curso_3_4/8/slow/significado",
+   "source": "escoita/curso_2_3/2/slow/significado",
    "pack": false
   },
   {
@@ -261611,6 +261629,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_1da32c4e_6",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "bebida",
+   "speech": "bebida",
+   "source": "escoita/curso_3_4/6/drink/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_1da3d14c_49",
    "lang": "gl",
    "style": "tutor",
@@ -271971,7 +271998,7 @@
    "style": "tutor",
    "text": "amodo",
    "speech": "amodo",
-   "source": "escoita/curso_3_4/8/slow/significado",
+   "source": "escoita/curso_2_3/2/slow/significado",
    "pack": false
   },
   {
@@ -298722,7 +298749,7 @@
    "style": "tutor",
    "text": "ver",
    "speech": "ver",
-   "source": "escoita/curso_4_5/4/see/significado",
+   "source": "escoita/curso_2_3/6/see/significado",
    "pack": false
   },
   {
@@ -338354,6 +338381,15 @@
    "speech": "Planear alto",
    "source": "tpr.4_5.abril/s2/4_5.abril.s2.soar/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_eef97b93_8",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "encoller",
+   "speech": "encoller",
+   "source": "escoita/curso_3_4/6/shrink/significado",
+   "pack": false
   },
   {
    "id": "gl_tutor_eefde5f7_39",

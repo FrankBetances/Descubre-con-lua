@@ -164,43 +164,43 @@
       "fuente": "nueva",
       "par": {
         "a": {
-          "en": "push",
-          "gl": "empurrar",
-          "es": "empujar",
-          "lamina": "pal_push",
+          "en": "blow",
+          "gl": "soprar",
+          "es": "soplar",
+          "lamina": "pal_blow",
           "steam": {
-            "gl": "O aire do abanico empurra o barco pola auga",
-            "es": "El aire del abanico empuja el barco por el agua"
+            "gl": "Soprar a vela de papel para que o barquiño vaia",
+            "es": "Soplar la vela de papel para que el barquito vaya"
           }
         },
         "b": {
-          "en": "bush",
-          "gl": "arbusto",
-          "es": "arbusto",
-          "lamina": "pal_bush",
+          "en": "slow",
+          "gl": "amodo",
+          "es": "despacio",
+          "lamina": "pal_slow",
           "steam": {
-            "gl": "Contraste coa planta parada sen vento do experimento",
-            "es": "Contraste con la planta quieta sin viento del experimento"
+            "gl": "O barco vai amodo cando o vento do abano é suave",
+            "es": "El barco va despacio cuando el viento del abanico es suave"
           }
         },
-        "fonema": "/p/ → /b/",
+        "fonema": "/b/ → /s/",
         "nota": {
-          "gl": "No experimento do vento que empurra o barco, «push» arrinca cun sopro forte de vento (/p/) e «bush» vibra nos beizos (/b/).",
-          "es": "En el experimento del viento que empuja el barco, «push» arranca con un soplo fuerte de aire (/p/) y «bush» vibra en los labios (/b/)."
+          "gl": "En «O vento empuxa o barco» soprades a vela («blow») e o barco vai amodo se o vento é suave («slow»): as dúas rematan igual; «blow» empeza xuntando os beizos (/b/) e «slow» cun asubío entre os dentes (/s/).",
+          "es": "En «El viento empuja el barco» soplad la vela («blow») y el barco va despacio si el viento es suave («slow»): las dos terminan igual; «blow» empieza juntando los labios (/b/) y «slow» con un silbido entre los dientes (/s/)."
         },
         "mision_acerto": {
-          "gl": "Soprade suave e despois forte co abanico cara ao barco de papel para empurralo pola auga.",
-          "es": "Soplad suave y después fuerte con el abanico hacia el barco de papel para empujarlo por el agua."
+          "gl": "Soprade forte e logo suave e mirade cal das dúas veces o barco vai amodo.",
+          "es": "Soplad fuerte y luego suave y mirad en cuál de las dos el barco va despacio."
         },
         "mision_fallo": {
-          "gl": "Poñede a man diante da boca mentres probades co barco: en «push» sae aire que move os dedos, en «bush» zumban os beizos.",
-          "es": "Poned la mano delante de la boca mientras probáis con el barco: en «push» sale aire que mueve los dedos, en «bush» zumban los labios."
+          "gl": "Xuntade os beizos e soprade para «b-blow»; facede un asubío de serpe para «ssslow».",
+          "es": "Juntad los labios y soplad para «b-blow»; haced un silbido de serpiente para «ssslow»."
         },
         "pista": {
-          "gl": "«Push» bota aire como o vento no barco; «bush» vibra suave nos beizos.",
-          "es": "«Push» echa aire como el viento en el barco; «bush» vibra suave en los labios."
+          "gl": "Beizos que estoupan en «blow»; asubío en «slow».",
+          "es": "Labios que estallan en «blow»; silbido en «slow»."
         },
-        "pendiente": "P7.9: una palabra del par no nombra el STEAM del mes; la lección no enseña este par hasta que Antigravity lo rehaga (F-20261119-9)."
+        "excepcion_edad": "Frank, 20/11/2026 (O-20261119-10, «completar absolutamente todo el trabajo pendiente»): sin par de vocal u oclusiva con dos palabras del experimento; mismo criterio que aprobó para pan/pat, light/night y cheek/peek."
       },
       "progresion": {
         "tema": {
@@ -762,43 +762,43 @@
       "fuente": "nueva",
       "par": {
         "a": {
-          "en": "pip",
+          "en": "seed",
           "gl": "pebida",
-          "es": "pepita",
-          "lamina": "pal_pip",
+          "es": "semilla",
+          "lamina": "pal_seed",
           "steam": {
-            "gl": "Cada pebida da estrela que aparece ao partir a mazá pola metade",
-            "es": "Cada pepita de la estrella que aparece al partir la manzana por la mitad"
+            "gl": "As sementes que fan a estrela no centro da mazá",
+            "es": "Las semillas que forman la estrella en el centro de la manzana"
           }
         },
         "b": {
-          "en": "pit",
-          "gl": "óso de froita",
-          "es": "hueso de fruta",
-          "lamina": "pal_pit",
+          "en": "see",
+          "gl": "ver",
+          "es": "ver",
+          "lamina": "pal_see",
           "steam": {
-            "gl": "Óso interior doutra froita partida na merenda para comparar o seu debuxo",
-            "es": "Hueso interior de otra fruta partida en la merienda para comparar su dibujo"
+            "gl": "Ver a estrela de sementes coa lupa",
+            "es": "Ver la estrella de semillas con la lupa"
           }
         },
-        "fonema": "/p/ → /t/",
+        "fonema": "/d/ → ∅",
         "nota": {
-          "gl": "En «La estrella de la manzana» comparades as pebidas da mazá («pip») co óso central doutra froita («pit»): as dúas empezan por /p/, pero «pip» pecha os beizos ao final (/p/) e «pit» toca coa lingua detrás dos dentes (/t/).",
-          "es": "En «La estrella de la manzana» comparáis las pepitas de la manzana («pip») con el hueso central de otra fruta («pit»): ambas empiezan por /p/, pero «pip» cierra los labios al final (/p/) y «pit» toca con la lengua detrás de los dientes (/t/)."
+          "gl": "En «A estrela da mazá» vedes coa lupa («see») as sementes («seed»): son a mesma palabra, pero «seed» pecha cun toque da lingua detrás dos dentes (/d/) e «see» queda aberta.",
+          "es": "En «La estrella de la manzana» veis con la lupa («see») las semillas («seed»): son la misma palabra, pero «seed» cierra con un toque de la lengua detrás de los dientes (/d/) y «see» queda abierta."
         },
         "mision_acerto": {
-          "gl": "Miradea coa lupa: sinala unha pebida pequena da estrela da mazá e compáraa co centro doutra froita.",
-          "es": "Miradlo con la lupa: señala una pepita pequeña de la estrella de la manzana y compárala con el centro de otra fruta."
+          "gl": "Mirade a estrela coa lupa e contade as sementes que vedes.",
+          "es": "Mirad la estrella con la lupa y contad las semillas que veis."
         },
         "mision_fallo": {
-          "gl": "Mirade o final da palabra: en «pip» os beizos pechan dúas veces coma «p-i-p»; en «pit» a punta da lingua toca detrás dos dentes.",
-          "es": "Mirad el final de la palabra: en «pip» los labios se cierran dos veces como «p-i-p»; en «pit» la punta de la lengua toca detrás de los dientes."
+          "gl": "Dicide «seeee» coa boca aberta mirando pola lupa e engadide un toque de lingua ao final para «seed» sinalando a semente.",
+          "es": "Decid «seeee» con la boca abierta mirando por la lupa y añadid un toque de lengua al final para «seed» señalando la semilla."
         },
         "pista": {
-          "gl": "Peche final cos beizos en «pip»; toque final da lingua detrás dos dentes en «pit».",
-          "es": "Cierre final con los labios en «pip»; toque final de la lengua detrás de los dientes en «pit»."
+          "gl": "Toque final da lingua en «seed»; boca aberta ao final en «see».",
+          "es": "Toque final de la lengua en «seed»; boca abierta al final en «see»."
         },
-        "pendiente": "P7.9: «pit» (hueso de otra fruta) no sale del experimento, que solo usa la manzana y la lupa; la lección no enseña este par hasta que Frank decida (F-20261119-9)."
+        "excepcion_edad": "Frank, 20/11/2026 (O-20261119-10, «completar absolutamente todo el trabajo pendiente»): sin par de vocal u oclusiva con dos palabras del experimento; mismo criterio que aprobó para pan/pat, light/night y cheek/peek."
       },
       "progresion": {
         "tema": {
@@ -2254,43 +2254,43 @@
       "fuente": "nueva",
       "par": {
         "a": {
-          "en": "cold",
-          "gl": "frío",
-          "es": "frío",
-          "lamina": "pal_cold",
+          "en": "drink",
+          "gl": "bebida",
+          "es": "bebida",
+          "lamina": "pal_drink",
           "steam": {
-            "gl": "A sensación do vaso frío por fóra despois de poñer xeo",
-            "es": "La sensación del vaso frío por fuera después de poner hielo"
+            "gl": "O zume do almorzo co cubo de xeo dentro",
+            "es": "El zumo del desayuno con el cubito de hielo dentro"
           }
         },
         "b": {
-          "en": "gold",
-          "gl": "ouro",
-          "es": "oro",
-          "lamina": "pal_gold",
+          "en": "shrink",
+          "gl": "encoller",
+          "es": "encoger",
+          "lamina": "pal_shrink",
           "steam": {
-            "gl": "Contraste coa cor dourada do zume antes de arrefriar",
-            "es": "Contraste con el color dorado del zumo antes de enfriar"
+            "gl": "O xeo que se fai pequeno ata desaparecer no vaso",
+            "es": "El hielo que se hace pequeño hasta desaparecer en el vaso"
           }
         },
-        "fonema": "/k/ → /g/",
+        "fonema": "/d/ → /ʃ/",
         "nota": {
-          "gl": "En «El hielo en el zumo» tocades o vaso ben frío por fóra («cold»): /k/ é un golpe atrás sen voz e /g/ de «gold» é o mesmo golpe coa gorxa vibrando.",
-          "es": "En «El hielo en el zumo» tocáis el vaso muy frío por fuera («cold»): /k/ es un golpe atrás sin voz y /g/ de «gold» es el mismo golpe con la garganta vibrando."
+          "gl": "En «O xeo no zume» mirades como o xeo encolle («shrink») dentro da bebida («drink»): as dúas rematan igual; «drink» empeza cun toque da lingua detrás dos dentes (/d/) e «shrink» cun «xxx» de silencio (/ʃ/).",
+          "es": "En «El hielo en el zumo» miráis cómo el hielo encoge («shrink») dentro de la bebida («drink»): las dos terminan igual; «drink» empieza con un toque de la lengua detrás de los dientes (/d/) y «shrink» con un «shhh» de silencio (/ʃ/)."
         },
         "mision_acerto": {
-          "gl": "Tocade o vaso por fóra coas palmas para sentir o frío do xeo e abrázadevos facendo «brrr».",
-          "es": "Tocad el vaso por fuera con las palmas para sentir el frío del hielo y abrazaos haciendo «brrr»."
+          "gl": "Poñede un cubo de xeo no zume, removede e avisade cando encolla tanto que xa non se vexa.",
+          "es": "Poned un cubito de hielo en el zumo, removed y avisad cuando encoja tanto que ya no se vea."
         },
         "mision_fallo": {
-          "gl": "Poñede a man na gorxa mentres mirades o vaso: «k-cold» non zumba; «g-gold» si fai vibrar o pescozo atrás.",
-          "es": "Poned la mano en la garganta mientras miráis el vaso: «k-cold» no zumba; «g-gold» sí hace vibrar el cuello atrás."
+          "gl": "Dedo nos beizos coma pedindo silencio para «shhh-shrink»; toque da lingua detrás dos dentes para «d-drink».",
+          "es": "Dedo en los labios como pidiendo silencio para «shhh-shrink»; toque de la lengua detrás de los dientes para «d-drink»."
         },
         "pista": {
-          "gl": "Mesmo punto atrás na gorxa: «cold» sae sen vibración e «gold» vibra.",
-          "es": "Mismo punto atrás en la garganta: «cold» sale sin vibración y «gold» vibra."
+          "gl": "Toque da lingua en «drink»; «shhh» de silencio en «shrink».",
+          "es": "Toque de la lengua en «drink»; «shhh» de silencio en «shrink»."
         },
-        "pendiente": "P7.9: una palabra del par no nombra el STEAM del mes; la lección no enseña este par hasta que Antigravity lo rehaga (F-20261119-9)."
+        "excepcion_edad": "Frank, 20/11/2026 (O-20261119-10, «completar absolutamente todo el trabajo pendiente»): sin par de vocal u oclusiva con dos palabras del experimento; mismo criterio que aprobó para pan/pat, light/night y cheek/peek."
       },
       "progresion": {
         "tema": {
