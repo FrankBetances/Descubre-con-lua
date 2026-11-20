@@ -36975,6 +36975,416 @@
       "sha": "6be3d38b",
       "licencia": "Propia",
       "revisado": true
+    },
+    "agree": {
+      "clave": "pal_agree",
+      "orixe": "banco",
+      "porque": "Marca de confirmación para acordar una hipótesis.",
+      "fuente": "fluent-flat",
+      "asset": "fluentui-emoji:assets/Check mark button/Flat",
+      "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+      "licencia": "MIT",
+      "revisado": true
+    },
+    "animal": {
+      "clave": "pal_animal",
+      "orixe": "banco",
+      "porque": "Animal pequeño para comparar desplazamientos e trazos.",
+      "fuente": "fluent-flat",
+      "asset": "fluentui-emoji:assets/Rabbit/Flat",
+      "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+      "licencia": "MIT",
+      "revisado": true
+    },
+    "appear": {
+      "clave": "pal_appear",
+      "orixe": "banco",
+      "porque": "Destellos luminosos cuando surge una nueva señal.",
+      "fuente": "fluent-flat",
+      "asset": "fluentui-emoji:assets/Sparkles/Flat",
+      "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+      "licencia": "MIT",
+      "revisado": true
+    },
+    "escoita:basket": {
+      "clave": "pal_basket",
+      "orixe": "banco",
+      "porque": "Cesta para guardar, sacar y explorar objetos en 0-2.",
+      "fuente": "fluent-flat",
+      "asset": "fluentui-emoji:assets/Basket/Flat",
+      "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+      "licencia": "MIT",
+      "revisado": true
+    },
+    "color": {
+      "clave": "pal_color",
+      "orixe": "banco",
+      "porque": "Paleta con varios colores para mezclar e comparar.",
+      "fuente": "fluent-flat",
+      "asset": "fluentui-emoji:assets/Artist palette/Flat",
+      "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+      "licencia": "MIT",
+      "revisado": true
+    },
+    "day": {
+      "clave": "pal_day",
+      "orixe": "banco",
+      "porque": "Sol brillante representando la luz del día.",
+      "fuente": "fluent-flat",
+      "asset": "fluentui-emoji:assets/Sun/Flat",
+      "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+      "licencia": "MIT",
+      "revisado": true
+    },
+    "escoita:earth": {
+      "clave": "pal_earth",
+      "orixe": "banco",
+      "porque": "Planeta Tierra para experimentos de luz e sombra.",
+      "fuente": "fluent-flat",
+      "asset": "fluentui-emoji:assets/Globe showing europe-africa/Flat",
+      "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+      "licencia": "MIT",
+      "revisado": true
+    },
+    "launch": {
+      "clave": "pal_launch",
+      "orixe": "banco",
+      "porque": "Impulso ascendente al lanzar una pieza o avión.",
+      "fuente": "fluent-flat",
+      "asset": "fluentui-emoji:assets/Rocket/Flat",
+      "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+      "licencia": "MIT",
+      "revisado": true
+    },
+    "note": {
+      "clave": "pal_note",
+      "orixe": "banco",
+      "porque": "Nota musical de una serie sonora.",
+      "fuente": "fluent-flat",
+      "asset": "fluentui-emoji:assets/Musical note/Flat",
+      "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+      "licencia": "MIT",
+      "revisado": true
+    },
+    "escoita:paint": {
+      "clave": "pal_paint",
+      "orixe": "banco",
+      "porque": "Pincel con pintura para combinar pigmentos.",
+      "fuente": "fluent-flat",
+      "asset": "fluentui-emoji:assets/Paintbrush/Flat",
+      "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+      "licencia": "MIT",
+      "revisado": true
+    },
+    "quick": {
+      "clave": "pal_quick",
+      "orixe": "banco",
+      "porque": "Símbolo de rapidez para probar cambios de ritmo.",
+      "fuente": "fluent-flat",
+      "asset": "fluentui-emoji:assets/High voltage/Flat",
+      "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+      "licencia": "MIT",
+      "revisado": true
+    },
+    "sound": {
+      "clave": "pal_sound",
+      "orixe": "banco",
+      "porque": "Altavoz con ondas indicando intensidad sonora.",
+      "fuente": "fluent-flat",
+      "asset": "fluentui-emoji:assets/Speaker high volume/Flat",
+      "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+      "licencia": "MIT",
+      "revisado": true
+    },
+    "escoita:spoon": {
+      "clave": "pal_spoon",
+      "orixe": "banco",
+      "porque": "Cuchara metálica para observar reflejos e resonancia.",
+      "fuente": "fluent-flat",
+      "asset": "fluentui-emoji:assets/Spoon/Flat",
+      "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+      "licencia": "MIT",
+      "revisado": true
+    },
+    "escoita:suitcase": {
+      "clave": "pal_suitcase",
+      "orixe": "banco",
+      "porque": "Maleta preparada con objetos ordenados dentro.",
+      "fuente": "fluent-flat",
+      "asset": "fluentui-emoji:assets/Luggage/Flat",
+      "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+      "licencia": "MIT",
+      "revisado": true
+    },
+    "escoita:train": {
+      "clave": "pal_train",
+      "orixe": "banco",
+      "porque": "Locomotora para probar movimiento e secuencia.",
+      "fuente": "fluent-flat",
+      "asset": "fluentui-emoji:assets/Locomotive/Flat",
+      "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+      "licencia": "MIT",
+      "revisado": true
+    },
+    "understand": {
+      "clave": "pal_understand",
+      "orixe": "banco",
+      "porque": "Bombilla iluminada tras comprobar cómo funciona.",
+      "fuente": "fluent-flat",
+      "asset": "fluentui-emoji:assets/Light bulb/Flat",
+      "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+      "licencia": "MIT",
+      "revisado": true
+    },
+    "upside": {
+      "clave": "pal_upside",
+      "orixe": "banco",
+      "porque": "Flechas curvas que invierten la orientación.",
+      "fuente": "fluent-flat",
+      "asset": "fluentui-emoji:assets/Counterclockwise arrows button/Flat",
+      "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+      "licencia": "MIT",
+      "revisado": true
+    },
+    "view": {
+      "clave": "pal_view",
+      "orixe": "banco",
+      "porque": "Ojos observando desde el punto de vista del experimento.",
+      "fuente": "fluent-flat",
+      "asset": "fluentui-emoji:assets/Eyes/Flat",
+      "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+      "licencia": "MIT",
+      "revisado": true
+    },
+    "wall": {
+      "clave": "pal_wall",
+      "orixe": "banco",
+      "porque": "Superficie sólida de ladrillo para rebotar ou proxectar.",
+      "fuente": "fluent-flat",
+      "asset": "fluentui-emoji:assets/Brick/Flat",
+      "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+      "licencia": "MIT",
+      "revisado": true
+    },
+    "code": {
+      "clave": "pal_code",
+      "orixe": "nova",
+      "porque": "Tarjeta con secuencia de círculos y barras de colores como código visual sin texto.",
+      "fuente": "propia",
+      "asset": "tools/gen_laminas_p9.py#code",
+      "sha": "6be3d38b",
+      "licencia": "Propia",
+      "revisado": true
+    },
+    "come": {
+      "clave": "pal_come",
+      "orixe": "composta",
+      "porque": "Huellas avanzando en la dirección de la flecha hacia el punto de encuentro.",
+      "fuente": "composta",
+      "asset": "tools/gen_laminas_p9.py#come",
+      "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+      "licencia": "MIT",
+      "revisado": true
+    },
+    "distance": {
+      "clave": "pal_distance",
+      "orixe": "composta",
+      "porque": "Regla recta entre dos marcadores destacando la distancia recorrida.",
+      "fuente": "composta",
+      "asset": "tools/gen_laminas_p9.py#distance",
+      "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+      "licencia": "MIT",
+      "revisado": true
+    },
+    "follow": {
+      "clave": "pal_follow",
+      "orixe": "composta",
+      "porque": "Pieza verde siguiendo a la pieza azul en fila.",
+      "fuente": "composta",
+      "asset": "tools/gen_laminas_p9.py#follow",
+      "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+      "licencia": "MIT",
+      "revisado": true
+    },
+    "front": {
+      "clave": "pal_front",
+      "orixe": "nova",
+      "porque": "Pelota roja colocada claramente delante del bloque grande.",
+      "fuente": "propia",
+      "asset": "tools/gen_laminas_p9.py#front",
+      "sha": "6be3d38b",
+      "licencia": "Propia",
+      "revisado": true
+    },
+    "glass": {
+      "clave": "pal_glass",
+      "orixe": "nova",
+      "porque": "Vaso de cristal transparente sobre la mesa con brillos verticales.",
+      "fuente": "propia",
+      "asset": "tools/gen_laminas_p9.py#glass",
+      "sha": "6be3d38b",
+      "licencia": "Propia",
+      "revisado": true
+    },
+    "hear": {
+      "clave": "pal_hear",
+      "orixe": "composta",
+      "porque": "Oreja recibiendo ondas concéntricas de sonido.",
+      "fuente": "composta",
+      "asset": "tools/gen_laminas_p9.py#hear",
+      "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+      "licencia": "MIT",
+      "revisado": true
+    },
+    "height": {
+      "clave": "pal_height",
+      "orixe": "composta",
+      "porque": "Torre de tres bloques junto a flecha vertical mostrando la altura.",
+      "fuente": "composta",
+      "asset": "tools/gen_laminas_p9.py#height",
+      "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+      "licencia": "MIT",
+      "revisado": true
+    },
+    "inside": {
+      "clave": "pal_inside",
+      "orixe": "composta",
+      "porque": "Pelota roja metida dentro de la cesta abierta.",
+      "fuente": "composta",
+      "asset": "tools/gen_laminas_p9.py#inside",
+      "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+      "licencia": "MIT",
+      "revisado": true
+    },
+    "miss": {
+      "clave": "pal_miss",
+      "orixe": "nova",
+      "porque": "Tres círculos colocados y un cuarto hueco vacío que falta.",
+      "fuente": "propia",
+      "asset": "tools/gen_laminas_p9.py#miss",
+      "sha": "6be3d38b",
+      "licencia": "Propia",
+      "revisado": true
+    },
+    "move": {
+      "clave": "pal_move",
+      "orixe": "composta",
+      "porque": "Zapatilla en movimiento con flecha hacia delante.",
+      "fuente": "composta",
+      "asset": "tools/gen_laminas_p9.py#move",
+      "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+      "licencia": "MIT",
+      "revisado": true
+    },
+    "pace": {
+      "clave": "pal_pace",
+      "orixe": "composta",
+      "porque": "Huellas junto a reloj de arena representando el ritmo y el paso.",
+      "fuente": "composta",
+      "asset": "tools/gen_laminas_p9.py#pace",
+      "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+      "licencia": "MIT",
+      "revisado": true
+    },
+    "escoita:paper": {
+      "clave": "pal_paper",
+      "orixe": "nova",
+      "porque": "Hoja de papel blanca con esquina doblada, limpia y sin texto.",
+      "fuente": "propia",
+      "asset": "tools/gen_laminas_p9.py#paper",
+      "sha": "6be3d38b",
+      "licencia": "Propia",
+      "revisado": true
+    },
+    "escoita:plane": {
+      "clave": "pal_plane",
+      "orixe": "nova",
+      "porque": "Avión de papel doblado planeando por el cielo con estela suave.",
+      "fuente": "propia",
+      "asset": "tools/gen_laminas_p9.py#plane",
+      "sha": "6be3d38b",
+      "licencia": "Propia",
+      "revisado": true
+    },
+    "sharp": {
+      "clave": "pal_sharp",
+      "orixe": "nova",
+      "porque": "Punta doblada muy definida con arista marcada.",
+      "fuente": "propia",
+      "asset": "tools/gen_laminas_p9.py#sharp",
+      "sha": "6be3d38b",
+      "licencia": "Propia",
+      "revisado": true
+    },
+    "side": {
+      "clave": "pal_side",
+      "orixe": "nova",
+      "porque": "Pieza verde situada en el lateral del cubo azul.",
+      "fuente": "propia",
+      "asset": "tools/gen_laminas_p9.py#side",
+      "sha": "6be3d38b",
+      "licencia": "Propia",
+      "revisado": true
+    },
+    "stand": {
+      "clave": "pal_stand",
+      "orixe": "composta",
+      "porque": "Dos bloques erguidos firmemente de pie sobre la mesa.",
+      "fuente": "composta",
+      "asset": "tools/gen_laminas_p9.py#stand",
+      "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+      "licencia": "MIT",
+      "revisado": true
+    },
+    "stay": {
+      "clave": "pal_stay",
+      "orixe": "composta",
+      "porque": "Bloque estable asentado en su sitio sin moverse.",
+      "fuente": "composta",
+      "asset": "tools/gen_laminas_p9.py#stay",
+      "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+      "licencia": "MIT",
+      "revisado": true
+    },
+    "thick": {
+      "clave": "pal_thick",
+      "orixe": "nova",
+      "porque": "Dos barras paralelas comparando una fina arriba y otra gruesa abajo.",
+      "fuente": "propia",
+      "asset": "tools/gen_laminas_p9.py#thick",
+      "sha": "6be3d38b",
+      "licencia": "Propia",
+      "revisado": true
+    },
+    "three": {
+      "clave": "pal_three",
+      "orixe": "nova",
+      "porque": "Tres fichas iguales formando un grupo de tres sin dígitos.",
+      "fuente": "propia",
+      "asset": "tools/gen_laminas_p9.py#three",
+      "sha": "6be3d38b",
+      "licencia": "Propia",
+      "revisado": true
+    },
+    "two": {
+      "clave": "pal_two",
+      "orixe": "nova",
+      "porque": "Dos fichas grandes juntas formando una pareja sin dígitos.",
+      "fuente": "propia",
+      "asset": "tools/gen_laminas_p9.py#two",
+      "sha": "6be3d38b",
+      "licencia": "Propia",
+      "revisado": true
+    },
+    "watch": {
+      "clave": "pal_watch",
+      "orixe": "composta",
+      "porque": "Lupa observando de cerca un elemento del experimento.",
+      "fuente": "composta",
+      "asset": "tools/gen_laminas_p9.py#watch",
+      "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+      "licencia": "MIT",
+      "revisado": true
     }
   }
 }
