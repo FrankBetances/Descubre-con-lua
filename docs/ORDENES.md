@@ -511,4 +511,4 @@ Fuente: docs/PROMPTS_ANTIGRAVITY.md (P7.9; entrega de Antigravity en antigravity
 - [x] Los pares que seguían sin par válido se deciden con Frank: los tres que aprobó entran en la lección con su lámina, su voz y sus misiones en gl/es · evidencia: tools/check_pares_en.py (un solo fonema en CMUdict: pan/pat, light/night, cheek/peek) y tools/check_plan_escoita.py (cada palabra con su STEAM; quedan 3 pendientes)
 > (20/11/2026) Te ordené completar todo el trabajo pendiente / Te ordené completar todo el trabajo pendiente / Te ordené completar absolutamente todo el trabajo pendiente
 - [x] 2-3 M2, 2-3 M6 y 3-4 M6 con par, con el mismo criterio que Frank aprobó (las dos palabras del experimento, fuera de la regla de edad): blow/slow, seed/see y drink/shrink · evidencia: tools/check_pares_en.py y tools/check_plan_escoita.py (40 pares, 0 pendientes)
-- [ ] Mergeado en main con CI en verde y los audios generados · evidencia:
+- [x] Mergeado en main con CI en verde y los audios generados · evidencia: docs/ORDENES.md (PR #63, merge fddc667c en main; run 44649317109 de Gates en verde sobre 6e9bbe08, con los audios del workflow voice-assets)
