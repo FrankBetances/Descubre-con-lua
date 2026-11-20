@@ -30,6 +30,22 @@ class PalabraProxecto {
       this.lamina});
 }
 
+class MiraENota02 {
+  final LocalizedString titulo;
+  final String fraseEn;
+  final LocalizedString significado;
+  final LocalizedString guia;
+  final LocalizedString observar;
+
+  const MiraENota02({
+    required this.titulo,
+    required this.fraseEn,
+    required this.significado,
+    required this.guia,
+    required this.observar,
+  });
+}
+
 class Proxecto02 {
   final int mesCalendario;
   final LocalizedString titulo;
@@ -47,6 +63,7 @@ class Proxecto02 {
   final List<String> comoFalar;
   final List<String> xaSabe;
   final LocalizedString guia;
+  final MiraENota02? miraENota;
 
   const Proxecto02({
     required this.mesCalendario,
@@ -62,6 +79,7 @@ class Proxecto02 {
     required this.comoFalar,
     required this.xaSabe,
     required this.guia,
+    this.miraENota,
   });
 
   PalabraProxecto? palabra(String en) =>
@@ -137,6 +155,18 @@ class Proxectos02 {
           comoFalar: l(p['comoFalar']),
           xaSabe: l(p['xaSabe']),
           guia: _t(p['guia']),
+          miraENota: p['mira_e_nota'] is Map
+              ? () {
+                  final m = p['mira_e_nota'] as Map<String, dynamic>;
+                  return MiraENota02(
+                    titulo: _t(m['titulo']),
+                    fraseEn: (m['frase_en'] as String?) ?? '',
+                    significado: _t(m['significado']),
+                    guia: _t(m['guia']),
+                    observar: _t(m['observar']),
+                  );
+                }()
+              : null,
         ),
     ]);
   }

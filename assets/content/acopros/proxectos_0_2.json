@@ -315,6 +315,25 @@
    "guia": {
     "gl": "Canta «Bos días, ola!» co xesto. Repasa as palabras do proxecto, unha a unha, mentres xogades.",
     "es": "Canta «¡Buenos días, hola!» con el gesto. Repasa las palabras del proyecto, una a una, mientras jugáis."
+   },
+   "mira_e_nota": {
+    "titulo": {
+     "gl": "Mira e nota",
+     "es": "Mira y nota"
+    },
+    "frase_en": "Wet sponge!",
+    "significado": {
+     "gl": "Esponxa mollada!",
+     "es": "¡Esponja mojada!"
+    },
+    "guia": {
+     "gl": "Achega a esponxa mollada á man e logo a toalla seca, en silencio, para que note o contraste.",
+     "es": "Acerca la esponja mojada a la mano y luego la toalla seca, en silencio, para que note el contraste."
+    },
+    "observar": {
+     "gl": "Se a criatura busca a toalla despois de mollarse, ou repite o xesto de espremer.",
+     "es": "Si la criatura busca la toalla después de mojarse, o repite el gesto de estrujar."
+    }
    }
   },
   {
@@ -641,6 +660,25 @@
    "guia": {
     "gl": "Canta «Cabeza, ombreiros, xeonllos e pés» co xesto. Repasa as palabras do proxecto, unha a unha, mentres xogades.",
     "es": "Canta «Cabeza, hombros, rodillas y pies» con el gesto. Repasa las palabras del proyecto, una a una, mientras jugáis."
+   },
+   "mira_e_nota": {
+    "titulo": {
+     "gl": "Mira e nota",
+     "es": "Mira y nota"
+    },
+    "frase_en": "Listen, water!",
+    "significado": {
+     "gl": "Escoita, auga!",
+     "es": "¡Escucha, agua!"
+    },
+    "guia": {
+     "gl": "Bota auga amodo da xerra ao caldeiro e abanea a botella preto para que note cada son.",
+     "es": "Echa agua despacio de la jarra al cubo y agita la botella cerca para que note cada sonido."
+    },
+    "observar": {
+     "gl": "Se a criatura queda quieta para escoitar, ou busca co ollo de onde vén o son.",
+     "es": "Si la criatura se queda quieta para escuchar, o busca con la mirada de dónde viene el sonido."
+    }
    }
   },
   {
@@ -967,6 +1005,25 @@
    "guia": {
     "gl": "Canta «Follas que caen» co xesto. Repasa as palabras do proxecto, unha a unha, mentres xogades.",
     "es": "Canta «Hojas que caen» con el gesto. Repasa las palabras del proyecto, una a una, mientras jugáis."
+   },
+   "mira_e_nota": {
+    "titulo": {
+     "gl": "Mira e nota",
+     "es": "Mira y nota"
+    },
+    "frase_en": "Leaf, stone!",
+    "significado": {
+     "gl": "Folla, pedra!",
+     "es": "¡Hoja, piedra!"
+    },
+    "guia": {
+     "gl": "Solta á vez unha folla seca e unha pedra grande desde pouca altura para que siga o movemento cos ollos.",
+     "es": "Suelta a la vez una hoja seca y una piedra grande desde poca altura para que siga el movimiento con los ojos."
+    },
+    "observar": {
+     "gl": "Se a criatura segue a folla coa mirada ata o chan, ou agarda o pum da pedra.",
+     "es": "Si la criatura sigue la hoja con la mirada hasta el suelo, o espera el pum de la piedra."
+    }
    }
   },
   {
@@ -1293,6 +1350,25 @@
    "guia": {
     "gl": "Canta «Soa o cascabel» co xesto. Repasa as palabras do proxecto, unha a unha, mentres xogades.",
     "es": "Canta «Suena el cascabel» con el gesto. Repasa las palabras del proyecto, una a una, mientras jugáis."
+   },
+   "mira_e_nota": {
+    "titulo": {
+     "gl": "Mira e nota",
+     "es": "Mira y nota"
+    },
+    "frase_en": "Bright leaf!",
+    "significado": {
+     "gl": "Folla brillante!",
+     "es": "¡Hoja brillante!"
+    },
+    "guia": {
+     "gl": "Ilumina coa lanterna unha folla grande contra a parede para que mire a luz e a sombra.",
+     "es": "Ilumina con la linterna una hoja grande contra la pared para que mire la luz y la sombra."
+    },
+    "observar": {
+     "gl": "Se a criatura sinala a folla iluminada ou intenta coller a sombra.",
+     "es": "Si la criatura señala la hoja iluminada o intenta coger la sombra."
+    }
    }
   },
   {
@@ -1617,6 +1693,25 @@
    "guia": {
     "gl": "Canta «Poño o gorro, poño as botas» co xesto. Repasa as palabras do proxecto, unha a unha, mentres xogades.",
     "es": "Canta «Me pongo el gorro, me pongo las botas» con el gesto. Repasa las palabras del proyecto, una a una, mientras jugáis."
+   },
+   "mira_e_nota": {
+    "titulo": {
+     "gl": "Mira e nota",
+     "es": "Mira y nota"
+    },
+    "frase_en": "One basket!",
+    "significado": {
+     "gl": "Unha cesta!",
+     "es": "¡Una cesta!"
+    },
+    "guia": {
+     "gl": "Garda dúas pezas iguais na súa cesta mentres dis o nome con calma, deixando que mire onde vai cada unha.",
+     "es": "Guarda dos piezas iguales en su cesta mientras dices el nombre con calma, dejando que mire dónde va cada una."
+    },
+    "observar": {
+     "gl": "Se a criatura repite o lugar dunha peza igual, ou mira a cesta antes de soltar.",
+     "es": "Si la criatura repite el lugar de una pieza igual, o mira la cesta antes de soltar."
+    }
    }
   },
   {
@@ -1943,6 +2038,25 @@
    "guia": {
     "gl": "Canta «Salta a ra, voa o paxaro» co xesto. Repasa as palabras do proxecto, unha a unha, mentres xogades.",
     "es": "Canta «Salta la rana, vuela el pájaro» con el gesto. Repasa las palabras del proyecto, una a una, mientras jugáis."
+   },
+   "mira_e_nota": {
+    "titulo": {
+     "gl": "Mira e nota",
+     "es": "Mira y nota"
+    },
+    "frase_en": "Warm, cold!",
+    "significado": {
+     "gl": "Morno, frío!",
+     "es": "¡Templado, frío!"
+    },
+    "guia": {
+     "gl": "Pon na súa palma un segundo a mazá fría e logo o pan morno para que sinta os dous contrastes.",
+     "es": "Pon en su palma un segundo la manzana fría y luego el pan templado para que sienta los dos contrastes."
+    },
+    "observar": {
+     "gl": "Se a criatura retira a man da mazá fría ou volve ao pan morno.",
+     "es": "Si la criatura retira la mano de la manzana fría o vuelve al pan templado."
+    }
    }
   },
   {
@@ -2269,6 +2383,25 @@
    "guia": {
     "gl": "Canta «Busca a cor» co xesto. Repasa as palabras do proxecto, unha a unha, mentres xogades.",
     "es": "Canta «Busca el color» con el gesto. Repasa las palabras del proyecto, una a una, mientras jugáis."
+   },
+   "mira_e_nota": {
+    "titulo": {
+     "gl": "Mira e nota",
+     "es": "Mira y nota"
+    },
+    "frase_en": "Float, bubble!",
+    "significado": {
+     "gl": "Flota, burbulla!",
+     "es": "¡Flota, burbuja!"
+    },
+    "guia": {
+     "gl": "Sopra dúas burbullas suaves á altura dos seus ollos para que as siga co corpo e coa man.",
+     "es": "Sopla dos burbujas suaves a la altura de sus ojos para que las siga con el cuerpo y con la mano."
+    },
+    "observar": {
+     "gl": "Se a criatura segue unha burbulla co corpo ou estira a man cara a ela.",
+     "es": "Si la criatura sigue una burbuja con el cuerpo o estira la mano hacia ella."
+    }
    }
   },
   {
@@ -2595,6 +2728,25 @@
    "guia": {
     "gl": "Canta «Semente pequena» co xesto. Repasa as palabras do proxecto, unha a unha, mentres xogades.",
     "es": "Canta «Semilla pequeña» con el gesto. Repasa las palabras del proyecto, una a una, mientras jugáis."
+   },
+   "mira_e_nota": {
+    "titulo": {
+     "gl": "Mira e nota",
+     "es": "Mira y nota"
+    },
+    "frase_en": "Soft sound!",
+    "significado": {
+     "gl": "Son suave!",
+     "es": "¡Sonido suave!"
+    },
+    "guia": {
+     "gl": "Frota amodo tea contra tea e logo cartón estriado para que escuite e toque cada textura.",
+     "es": "Frota despacio tela contra tela y luego cartón estriado para que escuche y toque cada textura."
+    },
+    "observar": {
+     "gl": "Se a criatura frega ela soa para facer o son, ou prefire un dos dous.",
+     "es": "Si la criatura frota ella sola para hacer el sonido, o prefiere uno de los dos."
+    }
    }
   },
   {
@@ -2921,6 +3073,25 @@
    "guia": {
     "gl": "Canta «Lava, lava as mans» co xesto. Repasa as palabras do proxecto, unha a unha, mentres xogades.",
     "es": "Canta «Lava, lava las manos» con el gesto. Repasa las palabras del proyecto, una a una, mientras jugáis."
+   },
+   "mira_e_nota": {
+    "titulo": {
+     "gl": "Mira e nota",
+     "es": "Mira y nota"
+    },
+    "frase_en": "Look, shadow!",
+    "significado": {
+     "gl": "Mira, sombra!",
+     "es": "¡Mira, sombra!"
+    },
+    "guia": {
+     "gl": "Proxecta na parede a sombra do can ou do gato de xoguete xunto ao boneco real para que mire os dous.",
+     "es": "Proyecta en la pared la sombra del perro o del gato de juguete junto al muñeco real para que mire los dos."
+    },
+    "observar": {
+     "gl": "Se a criatura mira da sombra ao xoguete e volve, ou sinala a sombra.",
+     "es": "Si la criatura mira de la sombra al juguete y vuelve, o señala la sombra."
+    }
    }
   },
   {
@@ -3247,6 +3418,25 @@
    "guia": {
     "gl": "Canta «As ondas da nosa ría» co xesto. Repasa as palabras do proxecto, unha a unha, mentres xogades.",
     "es": "Canta «Las olas de nuestra ría» con el gesto. Repasa las palabras del proyecto, una a una, mientras jugáis."
+   },
+   "mira_e_nota": {
+    "titulo": {
+     "gl": "Mira e nota",
+     "es": "Mira y nota"
+    },
+    "frase_en": "Roll ball!",
+    "significado": {
+     "gl": "Roda pelota!",
+     "es": "¡Rueda pelota!"
+    },
+    "guia": {
+     "gl": "Fai rodar a pelota branda e pousa á beira a caixa para que note cal roda polo chan.",
+     "es": "Haz rodar la pelota blanda y posa al lado la caja para que note cuál rueda por el suelo."
+    },
+    "observar": {
+     "gl": "Se a criatura busca outra cousa redonda para facela rodar.",
+     "es": "Si la criatura busca otra cosa redonda para hacerla rodar."
+    }
    }
   }
  ]

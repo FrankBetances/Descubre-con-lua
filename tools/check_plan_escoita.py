@@ -25,10 +25,22 @@ RAIZ = Path(__file__).resolve().parent.parent
 LECCIONS = RAIZ / "assets/content/leccions/leccions.json"
 AJENO = re.compile(r"sin relaci|ajen|no pertenece|no va en|no transmite|contraste (de|con) (un|una|otro|otra|el|la|comida|animal|insecto|objeto)", re.I)
 PLAN = RAIZ / "assets/content/escoita/plan_mensual.json"
+ACOPROS = RAIZ / "assets/content/acopros/proxectos_0_2.json"
 LAMINAS = RAIZ / "assets/brand/laminas"
 CURSOS = ["curso_2_3", "curso_3_4", "curso_4_5", "curso_5_6"]
 FASES = ["concepto", "parte", "accion", "cualidad"]
+MOMENTOS = ["predice", "proba", "compara", "explica"]
+MODO_POR_CURSO = {
+    "curso_2_3": "elige_dos",
+    "curso_3_4": "elige_dos",
+    "curso_4_5": "palabra_corta",
+    "curso_5_6": "explica_because",
+}
 PROHIBIDAS = re.compile(r"logopedi|terapi|therap|trastorn|disorder|cl[ií]nic|diagn[oó]s", re.I)
+
+
+def _tokens_en(text: str) -> set[str]:
+    return set(re.findall(r"[a-z]+", text.lower()))
 
 
 def main() -> int:
@@ -93,13 +105,78 @@ def main() -> int:
         for f in fases:
             if not all(f["accion"].get(l) for l in ("gl", "es")):
                 fallos.append(f"{sitio}: la acción de «{f['en']}» vacía en gl o es")
+
+        # P9.2: bloque pensamiento STEAM (predice, proba, compara, explica)
+        pens = p.get("pensamiento")
+        if not isinstance(pens, dict):
+            fallos.append(f"{sitio}: falta el bloque «pensamiento» (P9.2)")
+        else:
+            modo_esp = MODO_POR_CURSO.get(p["curso"])
+            if pens.get("edad_modo") != modo_esp:
+                fallos.append(f"{sitio}: pensamiento.edad_modo={pens.get('edad_modo')!r}, se esperaba {modo_esp!r}")
+            vocab_pieza = {w["en"].lower() for w in [p["par"]["a"], p["par"]["b"], *fases]}
+            # También acepta formas flexionadas simples (plural -s, -ed, -ing)
+            vocab_stems = set(vocab_pieza)
+            for w in vocab_pieza:
+                vocab_stems.update({w + "s", w + "es", w + "ed", w + "ing"})
+            tokens_pens: set[str] = set()
+            for mom in MOMENTOS:
+                m = pens.get(mom)
+                if not isinstance(m, dict):
+                    fallos.append(f"{sitio}: falta el momento pensamiento.{mom}")
+                    continue
+                q_en = str(m.get("pregunta_en") or "").strip()
+                if not q_en:
+                    fallos.append(f"{sitio}: pensamiento.{mom}.pregunta_en vacío")
+                for campo in ("significado", "guia", "observar"):
+                    val = m.get(campo) or {}
+                    if not all(val.get(l) for l in ("gl", "es")):
+                        fallos.append(f"{sitio}: pensamiento.{mom}.{campo} vacío en gl o es")
+                toks = _tokens_en(q_en)
+                if mom == "explica":
+                    mod_en = str(m.get("modelo_en") or "").strip()
+                    if not mod_en:
+                        fallos.append(f"{sitio}: pensamiento.explica.modelo_en vacío")
+                    if not all((m.get("modelo_significado") or {}).get(l) for l in ("gl", "es")):
+                        fallos.append(f"{sitio}: pensamiento.explica.modelo_significado vacío en gl o es")
+                    if p["curso"] == "curso_5_6" and "because" not in mod_en.lower():
+                        fallos.append(f"{sitio}: en 5-6 años, explica.modelo_en debe usar «because»")
+                    toks |= _tokens_en(mod_en)
+                tokens_pens |= toks
+                if not (toks & vocab_stems):
+                    fallos.append(f"{sitio}: pensamiento.{mom} («{q_en}») no usa ninguna palabra del par o progresión ({sorted(vocab_pieza)})")
+            if p["curso"] in ("curso_2_3", "curso_3_4"):
+                pred_q = str((pens.get("predice") or {}).get("pregunta_en") or "").lower()
+                comp_q = str((pens.get("compara") or {}).get("pregunta_en") or "").lower()
+                if " or " not in pred_q and " or " not in comp_q:
+                    fallos.append(f"{sitio}: en 2-3/3-4 el niño elige entre dos («or» en predice/compara)")
+            if not (tokens_pens & {p["par"]["a"]["en"].lower(), p["par"]["b"]["en"].lower(),
+                                   p["par"]["a"]["en"].lower() + "s", p["par"]["b"]["en"].lower() + "s"}):
+                fallos.append(f"{sitio}: pensamiento no menciona ninguna palabra del par ({p['par']['a']['en']}/{p['par']['b']['en']})")
+
+    if ACOPROS.exists():
+        ac = json.loads(ACOPROS.read_text(encoding="utf-8"))
+        for pr in ac.get("proxectos") or []:
+            mes_c = pr.get("mesCalendario", "?")
+            mira = pr.get("mira_e_nota")
+            if not isinstance(mira, dict):
+                fallos.append(f"0-2 mes {mes_c}: falta «mira_e_nota» (P9.2)")
+                continue
+            if not mira.get("frase_en"):
+                fallos.append(f"0-2 mes {mes_c}: mira_e_nota.frase_en vacío")
+            if "?" in str(mira) or "¿" in str(mira):
+                fallos.append(f"0-2 mes {mes_c}: mira_e_nota no puede tener preguntas abiertas")
+            for campo in ("significado", "guia", "observar"):
+                if not all((mira.get(campo) or {}).get(l) for l in ("gl", "es")):
+                    fallos.append(f"0-2 mes {mes_c}: mira_e_nota.{campo} vacío en gl o es")
+
     faltan = [f"{c} mes {m}" for c in CURSOS for m in range(1, 11) if (c, m) not in vistos]
     fallos += [f"falta la pieza de {x}" for x in faltan]
     if fallos:
         print("\n".join(f"FALLA: {x}" for x in fallos))
         return 1
     extra = f" Pares pendientes de rehacer (P7.9): {len(pendentes)}: {', '.join(pendentes)}." if pendentes else ""
-    print(f"OK: {len(pezas)} piezas de escucha, una por mes y edad, sin repetir.{extra}")
+    print(f"OK: {len(pezas)} piezas de escucha con pensamiento STEAM (4 momentos c/u) y 10 proyectos 0-2 con mira_e_nota.{extra}")
     return 0
 
 
