@@ -337,12 +337,16 @@ class _BotonEscucharState extends State<BotonEscuchar> {
                   color: _sonandoLenta ? Colors.white : color,
                 ),
                 const SizedBox(width: 5),
-                Text(
-                  etiqueta,
-                  style: TextStyle(
-                    fontSize: 13.5,
-                    fontWeight: FontWeight.w700,
-                    color: _sonandoLenta ? Colors.white : color,
+                // Con letra grande la etiqueta baja de línea en vez de
+                // salirse del botón (ux a escala 1.8).
+                Flexible(
+                  child: Text(
+                    etiqueta,
+                    style: TextStyle(
+                      fontSize: 13.5,
+                      fontWeight: FontWeight.w700,
+                      color: _sonandoLenta ? Colors.white : color,
+                    ),
                   ),
                 ),
               ],
