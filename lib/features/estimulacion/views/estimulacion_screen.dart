@@ -559,7 +559,7 @@ class _BloqueEscoita extends StatelessWidget {
             p.significado.resolve(lang),
             textAlign: TextAlign.center,
             style: const TextStyle(
-              fontSize: 13.5,
+              fontSize: 14,
               color: AppTheme.textSecondary,
             ),
           ),
@@ -596,7 +596,7 @@ class _BloqueEscoita extends StatelessWidget {
             child: Text(
               '${b.fonemaRotulo.resolve(lang)}: ${peza.fonema}',
               style: TextStyle(
-                fontSize: 13.5,
+                fontSize: 14,
                 fontWeight: FontWeight.w700,
                 color: context.acento,
               ),
@@ -801,7 +801,7 @@ class _BloqueModelo extends StatelessWidget {
                     Text(
                       peza.adultoSignificado[i].resolve(lang),
                       style: const TextStyle(
-                        fontSize: 13.5,
+                        fontSize: 14,
                         color: AppTheme.textSecondary,
                       ),
                     ),
@@ -866,7 +866,7 @@ class _BloquePensamos extends StatelessWidget {
                 child: Text(
                   idadeLabel.resolve(lang),
                   style: TextStyle(
-                    fontSize: 13,
+                    fontSize: 14,
                     fontWeight: FontWeight.w700,
                     color: context.acento,
                   ),
@@ -942,7 +942,7 @@ class _BloquePensamos extends StatelessWidget {
           Text(
             '${b.observar.resolve(lang)}: ${m.observar.resolve(lang)}',
             style: const TextStyle(
-              fontSize: 13.5,
+              fontSize: 14,
               height: 1.35,
               color: AppTheme.textSecondary,
             ),
@@ -974,7 +974,7 @@ class _BloquePensamos extends StatelessWidget {
               Text(
                 m.modeloSignificado!.resolve(lang),
                 style: const TextStyle(
-                  fontSize: 13.5,
+                  fontSize: 14,
                   color: AppTheme.textSecondary,
                 ),
               ),
@@ -992,7 +992,7 @@ class _BloquePensamos extends StatelessWidget {
               child: Text(
                 info.aula.resolve(lang),
                 style: TextStyle(
-                  fontSize: 13,
+                  fontSize: 14,
                   fontWeight: FontWeight.w600,
                   color: context.acento,
                 ),
@@ -1106,7 +1106,7 @@ class _BloqueZeroDous extends StatelessWidget {
                 Text(
                   '${ui.pensamos.observar.resolve(lang)}: ${mira.observar.resolve(lang)}',
                   style: const TextStyle(
-                    fontSize: 13.5,
+                    fontSize: 14,
                     height: 1.35,
                     color: AppTheme.textSecondary,
                   ),
@@ -1116,7 +1116,7 @@ class _BloqueZeroDous extends StatelessWidget {
               Text(
                 ui.zeroDousPalabras.resolve(lang),
                 style: const TextStyle(
-                  fontSize: 13,
+                  fontSize: 14,
                   fontWeight: FontWeight.w800,
                   color: AppTheme.textPrimary,
                 ),

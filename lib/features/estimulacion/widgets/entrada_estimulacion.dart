@@ -98,7 +98,7 @@ class EntradaEstimulacionCard extends StatelessWidget {
                       Text(
                         descricion,
                         style: const TextStyle(
-                          fontSize: 13.5,
+                          fontSize: 14,
                           color: AppTheme.textSecondary,
                           height: 1.35,
                         ),
