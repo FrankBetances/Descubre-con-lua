@@ -360,7 +360,8 @@ Opción A, tal como la eligió Frank: estimulación del lenguaje universal y edu
 - [x] En las mismas lecciones, un paso de expansión semántica de una palabra del STEAM del mes (concepto, parte, acción, cualidad), cada palabra con lámina, voz y significado gl/es · evidencia: test/features/paso_escoita_test.dart (plan real: 4 edades × 10 meses) y tools/check_plan_escoita.py (40 piezas, 0 pares pendientes) y test/core/significados_test.dart
 - [x] En las mismas lecciones, un modelo de expansión gramatical para el adulto (el niño dice una palabra del STEAM, el adulto la amplía en tres frases), con voz · evidencia: test/features/paso_escoita_test.dart (plan real: 4 edades × 10 meses) y tools/check_plan_escoita.py (40 piezas, 0 pares pendientes) y tools/check_voice_coverage.py
 - [x] Gate: falla si falta la pieza de un curso y mes, si un par no difiere en un solo fonema, si una palabra no tiene lámina, voz o STEAM, o si aparece «logopedia», «terapia» o «trastorno» en assets/, lib/ o docs/ públicos · evidencia: tools/check_plan_escoita.py, tools/check_pares_en.py, tools/check_voice_coverage.py y tools/check_finalidade.py, los cuatro en tools/gates.sh
-- [ ] Revisado por Frank (o por la logopeda que validó Valeria): los pares son válidos y adecuados a cada edad · evidencia:
+> (20/11/2026) Además la malditos pares mínimos ya los escucho la maldita logopeda y los dio por buenos joder
+- [x] Revisado por Frank (o por la logopeda que validó Valeria): los pares son válidos y adecuados a cada edad · evidencia: docs/ORDENES.md (palabra de Frank del 20/11/2026: la logopeda los escuchó y los dio por buenos)
 - [ ] Frank lo ve en la app (Na casa → Hoy → día → Continuar) en tres meses de edades distintas y lo da por bueno · evidencia:
 
 ## O-20261118-4 · Un único plan que registre cada commit, para auditar paso a paso
