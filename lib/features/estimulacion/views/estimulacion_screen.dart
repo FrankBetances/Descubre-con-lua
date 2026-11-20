@@ -77,17 +77,21 @@ class _EstimulacionScreenState extends State<EstimulacionScreen> {
   }
 
   Future<void> _cargar() async {
-    final res = await Future.wait<Object?>([
-      EstimulacionUi.cargar(),
-      PlanEscoita.cargar(),
-      Proxectos02.cargar(),
-    ]);
-    if (!mounted) return;
-    setState(() {
-      _ui = res[0] as EstimulacionUi;
-      _plan = res[1] as PlanEscoita;
-      _proxectos = res[2] as Proxectos02;
-    });
+    if (_ui == null) {
+      final ui = await EstimulacionUi.cargar();
+      if (!mounted) return;
+      setState(() => _ui = ui);
+    }
+    if (_plan == null) {
+      final plan = await PlanEscoita.cargar();
+      if (!mounted) return;
+      setState(() => _plan = plan);
+    }
+    if (_proxectos == null) {
+      final prox = await Proxectos02.cargar();
+      if (!mounted) return;
+      setState(() => _proxectos = prox);
+    }
   }
 
   void _cambiarCurso(String novoCurso) {
