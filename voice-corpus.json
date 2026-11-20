@@ -1,14 +1,14 @@
 {
- "generatedAt": "2026-11-19T20:02:29Z",
- "entries": 38152,
+ "generatedAt": "2026-11-20T00:37:53Z",
+ "entries": 38189,
  "byStyle": {
-  "slow": 6016,
-  "tutor": 32136
+  "slow": 6019,
+  "tutor": 32170
  },
  "byLang": {
-  "en": 17297,
-  "es": 10428,
-  "gl": 10427
+  "en": 17300,
+  "es": 10445,
+  "gl": 10444
  },
  "corpus": [
   {
@@ -1503,6 +1503,15 @@
    "text": "Bead",
    "speech": "Bead",
    "source": "tpr.5_6.marzo/s1/5_6.marzo.s1.bead",
+   "pack": false
+  },
+  {
+   "id": "en_slow_07429627_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "taut",
+   "speech": "taut",
+   "source": "escoita/curso_3_4/4/taut",
    "pack": false
   },
   {
@@ -36606,6 +36615,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_af15011e_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "peek",
+   "speech": "peek",
+   "source": "escoita/curso_3_4/10/peek",
+   "pack": false
+  },
+  {
    "id": "en_slow_af19a1a8_7",
    "lang": "en",
    "style": "slow",
@@ -37701,6 +37719,15 @@
    "text": "utilise",
    "speech": "utilise",
    "source": "corpus/3957/lemma",
+   "pack": false
+  },
+  {
+   "id": "en_slow_b3cd0eef_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "hoop",
+   "speech": "hoop",
+   "source": "escoita/curso_2_3/3/hoop",
    "pack": false
   },
   {
@@ -159626,6 +159653,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_09b48899_6",
+   "lang": "es",
+   "style": "tutor",
+   "text": "llenar",
+   "speech": "llenar",
+   "source": "escoita/curso_3_4/8/fill/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_09baa056_36",
    "lang": "es",
    "style": "tutor",
@@ -164756,6 +164792,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_180188ca_13",
+   "lang": "es",
+   "style": "tutor",
+   "text": "poner la mesa",
+   "speech": "poner la mesa",
+   "source": "escoita/curso_3_4/7/set/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_18117f05_51",
    "lang": "es",
    "style": "tutor",
@@ -165584,6 +165629,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_1a0d5ec4_5",
+   "lang": "es",
+   "style": "tutor",
+   "text": "noche",
+   "speech": "noche",
+   "source": "escoita/curso_2_3/10/night/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_1a0eddfa_44",
    "lang": "es",
    "style": "tutor",
@@ -166248,6 +166302,15 @@
    "speech": "Frío y fresco",
    "source": "tpr.0_2.marzo/s4/0_2.marzo.s4.cold-and-fresh/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_1bb36bed_6",
+   "lang": "es",
+   "style": "tutor",
+   "text": "madera",
+   "speech": "madera",
+   "source": "escoita/curso_3_4/1/wood/significado",
+   "pack": false
   },
   {
    "id": "es_tutor_1bb68df4_61",
@@ -166976,6 +167039,15 @@
    "text": "Mira, Lúa agita la campana. ¡Campanas fuertes!",
    "speech": "Mira, Lúa agita la campana. ¡Campanas fuertes!",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_1da32c4e_6",
+   "lang": "es",
+   "style": "tutor",
+   "text": "bebida",
+   "speech": "bebida",
+   "source": "escoita/curso_3_4/6/drink/significado",
    "pack": false
   },
   {
@@ -170667,6 +170739,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_2730f03a_7",
+   "lang": "es",
+   "style": "tutor",
+   "text": "asiento",
+   "speech": "asiento",
+   "source": "escoita/curso_3_4/7/seat/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_273311ab_25",
    "lang": "es",
    "style": "tutor",
@@ -172580,7 +172661,7 @@
    "style": "tutor",
    "text": "montón",
    "speech": "montón",
-   "source": "escoita/curso_3_4/2/pile/significado",
+   "source": "escoita/curso_2_3/3/heap/significado",
    "pack": false
   },
   {
@@ -173682,6 +173763,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_30104397_6",
+   "lang": "es",
+   "style": "tutor",
+   "text": "hablar",
+   "speech": "hablar",
+   "source": "escoita/curso_3_4/4/talk/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_3013e6cf_15",
    "lang": "es",
    "style": "tutor",
@@ -173950,6 +174040,15 @@
    "speech": "Centro",
    "source": "tpr.4_5.outubro/s3/4_5.outubro.s3.centre/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_30d0e0b1_7",
+   "lang": "es",
+   "style": "tutor",
+   "text": "mejilla",
+   "speech": "mejilla",
+   "source": "escoita/curso_3_4/10/cheek/significado",
+   "pack": false
   },
   {
    "id": "es_tutor_30d48366_38",
@@ -175995,6 +176094,15 @@
    "text": "¡Tócate las rodillas y salta bien alto! ¡Ahora para!",
    "speech": "¡Tócate las rodillas y salta bien alto! ¡Ahora para!",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_366f248f_3",
+   "lang": "es",
+   "style": "tutor",
+   "text": "aro",
+   "speech": "aro",
+   "source": "escoita/curso_2_3/3/hoop/significado",
    "pack": false
   },
   {
@@ -180440,7 +180548,7 @@
    "style": "tutor",
    "text": "luz",
    "speech": "luz",
-   "source": "escoita/curso_5_6/3/light/significado",
+   "source": "escoita/curso_2_3/10/light/significado",
    "pack": false
   },
   {
@@ -185373,6 +185481,15 @@
    "text": "Un plato lleno encima de la mesa.",
    "speech": "Un plato lleno encima de la mesa.",
    "source": "curriculo/T3.U3.2/estructuras/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_4f3c74cd_7",
+   "lang": "es",
+   "style": "tutor",
+   "text": "trocito",
+   "speech": "trocito",
+   "source": "escoita/curso_2_3/5/bit/significado",
    "pack": false
   },
   {
@@ -198788,6 +198905,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_7381811c_5",
+   "lang": "es",
+   "style": "tutor",
+   "text": "ancha",
+   "speech": "ancha",
+   "source": "escoita/curso_3_4/1/wide/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_7389097c_6",
    "lang": "es",
    "style": "tutor",
@@ -204181,7 +204307,7 @@
    "style": "tutor",
    "text": "ver",
    "speech": "ver",
-   "source": "escoita/curso_4_5/4/see/significado",
+   "source": "escoita/curso_2_3/6/see/significado",
    "pack": false
   },
   {
@@ -205711,6 +205837,15 @@
    "text": "¡Sí, cuidado con el agua!",
    "speech": "¡Sí, cuidado con el agua!",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_868631aa_7",
+   "lang": "es",
+   "style": "tutor",
+   "text": "encoger",
+   "speech": "encoger",
+   "source": "escoita/curso_3_4/6/shrink/significado",
    "pack": false
   },
   {
@@ -207577,6 +207712,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_8bd11c0f_9",
+   "lang": "es",
+   "style": "tutor",
+   "text": "golpecito",
+   "speech": "golpecito",
+   "source": "escoita/curso_2_3/4/pat/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_8bd941ae_6",
    "lang": "es",
    "style": "tutor",
@@ -208754,6 +208898,15 @@
    "speech": "Tallo",
    "source": "tpr.3_4.abril/s2/3_4.abril.s2.stem/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_8f1f5442_5",
+   "lang": "es",
+   "style": "tutor",
+   "text": "mojar",
+   "speech": "mojar",
+   "source": "escoita/curso_2_3/7/soak/significado",
+   "pack": false
   },
   {
    "id": "es_tutor_8f366a53_26",
@@ -214626,6 +214779,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_9e9390a4_9",
+   "lang": "es",
+   "style": "tutor",
+   "text": "palmadita",
+   "speech": "palmadita",
+   "source": "escoita/curso_2_3/9/pat/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_9e9e99ba_43",
    "lang": "es",
    "style": "tutor",
@@ -219362,6 +219524,15 @@
    "text": "dibujar",
    "speech": "dibujar",
    "source": "curriculo/T3.U5.1/vocabulario/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_ab64057c_5",
+   "lang": "es",
+   "style": "tutor",
+   "text": "mirar",
+   "speech": "mirar",
+   "source": "escoita/curso_3_4/10/peek/significado",
    "pack": false
   },
   {
@@ -231297,7 +231468,7 @@
    "style": "tutor",
    "text": "tenso",
    "speech": "tenso",
-   "source": "escoita/curso_3_4/4/tight/significado",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -238759,6 +238930,15 @@
    "text": "Las tres órdenes fuera de la alfombra: en el pasillo, en el patio o en la fila. La escena vale en cualquier sitio.",
    "speech": "Las tres órdenes fuera de la alfombra: en el pasillo, en el patio o en la fila. La escena vale en cualquier sitio.",
    "source": "progresion.segundo_ciclo.5/s4/d2/consigna",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_e0ee86d9_8",
+   "lang": "es",
+   "style": "tutor",
+   "text": "mordisco",
+   "speech": "mordisco",
+   "source": "escoita/curso_2_3/5/bite/significado",
    "pack": false
   },
   {
@@ -246490,7 +246670,7 @@
    "style": "tutor",
    "text": "despacio",
    "speech": "despacio",
-   "source": "escoita/curso_3_4/8/slow/significado",
+   "source": "escoita/curso_2_3/2/slow/significado",
    "pack": false
   },
   {
@@ -255089,6 +255269,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_0d43ffc6_7",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "madeira",
+   "speech": "madeira",
+   "source": "escoita/curso_3_4/1/wood/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_0d474cd9_13",
    "lang": "gl",
    "style": "tutor",
@@ -256788,6 +256977,15 @@
    "speech": "Farol",
    "source": "tpr.0_2.decembro/s3/0_2.decembro.s3.lantern/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_11d984bf_5",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "falar",
+   "speech": "falar",
+   "source": "escoita/curso_3_4/4/talk/significado",
+   "pack": false
   },
   {
    "id": "gl_tutor_11d9dd67_32",
@@ -258810,6 +259008,15 @@
    "speech": "Devolver rodando",
    "source": "tpr.0_2.marzo/s3/0_2.marzo.s3.roll-back/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_16ca8ab2_6",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "encher",
+   "speech": "encher",
+   "source": "escoita/curso_3_4/8/fill/significado",
+   "pack": false
   },
   {
    "id": "gl_tutor_16cc2ef2_35",
@@ -261420,6 +261627,15 @@
    "speech": "Pegada",
    "source": "tpr.0_2.xuno/s4/0_2.xuno.s4.footprint/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_1da32c4e_6",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "bebida",
+   "speech": "bebida",
+   "source": "escoita/curso_3_4/6/drink/significado",
+   "pack": false
   },
   {
    "id": "gl_tutor_1da3d14c_49",
@@ -270751,6 +270967,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_366f248f_3",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "aro",
+   "speech": "aro",
+   "source": "escoita/curso_2_3/3/hoop/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_3670bc24_48",
    "lang": "gl",
    "style": "tutor",
@@ -271773,7 +271998,7 @@
    "style": "tutor",
    "text": "amodo",
    "speech": "amodo",
-   "source": "escoita/curso_3_4/8/slow/significado",
+   "source": "escoita/curso_2_3/2/slow/significado",
    "pack": false
   },
   {
@@ -273618,7 +273843,7 @@
    "style": "tutor",
    "text": "morea",
    "speech": "morea",
-   "source": "escoita/curso_3_4/2/pile/significado",
+   "source": "escoita/curso_2_3/3/heap/significado",
    "pack": false
   },
   {
@@ -274892,7 +275117,7 @@
    "style": "tutor",
    "text": "luz",
    "speech": "luz",
-   "source": "escoita/curso_5_6/3/light/significado",
+   "source": "escoita/curso_2_3/10/light/significado",
    "pack": false
   },
   {
@@ -281711,6 +281936,15 @@
    "text": "Sen tradución. A acción é a tradución.",
    "speech": "Sen tradución. A acción é a tradución.",
    "source": "formacion.docente/paso/3/clave",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_54a27cc7_5",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "anaco",
+   "speech": "anaco",
+   "source": "escoita/curso_2_3/5/bit/significado",
    "pack": false
   },
   {
@@ -293398,6 +293632,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_7381811c_5",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "ancha",
+   "speech": "ancha",
+   "source": "escoita/curso_3_4/1/wide/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_739650c4_9",
    "lang": "gl",
    "style": "tutor",
@@ -297790,6 +298033,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_804c4c66_5",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "noite",
+   "speech": "noite",
+   "source": "escoita/curso_2_3/10/night/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_804cb729_12",
    "lang": "gl",
    "style": "tutor",
@@ -298497,7 +298749,7 @@
    "style": "tutor",
    "text": "ver",
    "speech": "ver",
-   "source": "escoita/curso_4_5/4/see/significado",
+   "source": "escoita/curso_2_3/6/see/significado",
    "pack": false
   },
   {
@@ -301020,6 +301272,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_891d953d_5",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "ollar",
+   "speech": "ollar",
+   "source": "escoita/curso_3_4/10/peek/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_891f2ed6_7",
    "lang": "gl",
    "style": "tutor",
@@ -302544,6 +302805,15 @@
    "speech": "Mamá paxaro",
    "source": "tpr.2_3.abril/s4/2_3.abril.s4.mother-bird/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_8cae1bda_7",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "meixela",
+   "speech": "meixela",
+   "source": "escoita/curso_3_4/10/cheek/significado",
+   "pack": false
   },
   {
    "id": "gl_tutor_8cbca3ad_16",
@@ -307687,6 +307957,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_999adb0b_12",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "poñer a mesa",
+   "speech": "poñer a mesa",
+   "source": "escoita/curso_3_4/7/set/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_999cee82_13",
    "lang": "gl",
    "style": "tutor",
@@ -311394,6 +311673,15 @@
    "text": "Cama grande! Lúa pequena!",
    "speech": "Cama grande! Lúa pequena!",
    "source": "biblioteca/HIS-022/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_a3c3ff7d_9",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "palmadiña",
+   "speech": "palmadiña",
+   "source": "escoita/curso_2_3/9/pat/significado",
    "pack": false
   },
   {
@@ -320527,6 +320815,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_bd186b4c_7",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "dentada",
+   "speech": "dentada",
+   "source": "escoita/curso_2_3/5/bite/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_bd1fcdb7_7",
    "lang": "gl",
    "style": "tutor",
@@ -325458,7 +325755,7 @@
    "style": "tutor",
    "text": "tenso",
    "speech": "tenso",
-   "source": "escoita/curso_3_4/4/tight/significado",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -325777,6 +326074,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_cc3ecb50_6",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "tixola",
+   "speech": "tixola",
+   "source": "escoita/curso_2_3/4/pan/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_cc4cd98d_22",
    "lang": "gl",
    "style": "tutor",
@@ -325892,6 +326198,15 @@
    "speech": "Especial",
    "source": "tpr.3_4.xuno/s4/3_4.xuno.s4.special/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_ccbd36b7_6",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "asento",
+   "speech": "asento",
+   "source": "escoita/curso_3_4/7/seat/significado",
+   "pack": false
   },
   {
    "id": "gl_tutor_ccc0de55_30",
@@ -338068,6 +338383,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_eef97b93_8",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "encoller",
+   "speech": "encoller",
+   "source": "escoita/curso_3_4/6/shrink/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_eefde5f7_39",
    "lang": "gl",
    "style": "tutor",
@@ -338928,7 +339252,7 @@
    "style": "tutor",
    "text": "mollar",
    "speech": "mollar",
-   "source": "escoita/curso_2_3/8/dip/significado",
+   "source": "escoita/curso_2_3/7/soak/significado",
    "pack": false
   },
   {
@@ -342017,6 +342341,15 @@
    "speech": "Na pota",
    "source": "tpr.3_4.novembro/s4/3_4.novembro.s4.in-the-pot/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_f9561c82_7",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "golpiño",
+   "speech": "golpiño",
+   "source": "escoita/curso_2_3/4/pat/significado",
+   "pack": false
   },
   {
    "id": "gl_tutor_f95ad79f_52",

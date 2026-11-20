@@ -36885,6 +36885,96 @@
       "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
       "licencia": "MIT",
       "revisado": true
+    },
+    "talk": {
+      "clave": "pal_talk",
+      "orixe": "banco",
+      "porque": "Silueta hablando con ondas suaves de voz.",
+      "fuente": "fluent-flat",
+      "asset": "fluentui-emoji:assets/Speaking head/Flat",
+      "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+      "licencia": "MIT",
+      "revisado": true
+    },
+    "wood": {
+      "clave": "pal_wood",
+      "orixe": "banco",
+      "porque": "Bloque y troncos de madera natural.",
+      "fuente": "fluent-flat",
+      "asset": "fluentui-emoji:assets/Wood/Flat",
+      "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+      "licencia": "MIT",
+      "revisado": true
+    },
+    "heap": {
+      "clave": "pal_heap",
+      "orixe": "composta",
+      "porque": "Montón apilado de piedras y hojas sobre la hierba.",
+      "fuente": "composta",
+      "asset": "tools/gen_laminas_escoita_p79.py#heap",
+      "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+      "licencia": "MIT",
+      "revisado": true
+    },
+    "pip": {
+      "clave": "pal_pip",
+      "orixe": "composta",
+      "porque": "Manzana y sección ampliada destacando una pepita marrón en el centro.",
+      "fuente": "composta",
+      "asset": "tools/gen_laminas_escoita_p79.py#pip",
+      "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+      "licencia": "MIT",
+      "revisado": true
+    },
+    "pit": {
+      "clave": "pal_pit",
+      "orixe": "nova",
+      "porque": "Fruta abierta por la mitad con el hueso grande destacado en el centro.",
+      "fuente": "propia",
+      "asset": "tools/gen_laminas_escoita_p79.py#pit",
+      "sha": "6be3d38b",
+      "licencia": "Propia",
+      "revisado": true
+    },
+    "set": {
+      "clave": "pal_set",
+      "orixe": "composta",
+      "porque": "Mesa puesta ordenadamente con plato, cubiertos y vaso.",
+      "fuente": "composta",
+      "asset": "tools/gen_laminas_escoita_p79.py#set",
+      "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
+      "licencia": "MIT",
+      "revisado": true
+    },
+    "taut": {
+      "clave": "pal_taut",
+      "orixe": "nova",
+      "porque": "Dos vasos de papel unidos por un hilo recto y bien tenso.",
+      "fuente": "propia",
+      "asset": "tools/gen_laminas_escoita_p79.py#taut",
+      "sha": "6be3d38b",
+      "licencia": "Propia",
+      "revisado": true
+    },
+    "pan": {
+      "clave": "pal_pan",
+      "orixe": "nova",
+      "porque": "Sartén vieja de metal vista desde arriba, con su mango largo.",
+      "fuente": "propia",
+      "asset": "tools/gen_laminas_escoita_p710.py#pan",
+      "sha": "6be3d38b",
+      "licencia": "Propia",
+      "revisado": true
+    },
+    "cheek": {
+      "clave": "pal_cheek",
+      "orixe": "nova",
+      "porque": "Cara sonriente con una flecha que señala la mejilla.",
+      "fuente": "propia",
+      "asset": "tools/gen_laminas_escoita_p710.py#cheek",
+      "sha": "6be3d38b",
+      "licencia": "Propia",
+      "revisado": true
     }
   }
 }
