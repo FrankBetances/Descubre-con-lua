@@ -532,3 +532,14 @@ Reparto: lo ejecuta Antigravity con el prompt P9 de docs/PROMPTS_ANTIGRAVITY.md 
 - [ ] Con el sí de Frank: los sets de Valeria con Lúa, cada uno con el STEAM del mes, y la política de privacidad y el formulario de Play actualizados en el mismo cambio · evidencia:
 - [x] Capturas de escritorio de la sección en gl y es, en casa y en el aula, miradas · evidencia: docs/capturas/escritorio/estimulacion-casa-hoxe-gl.png, estimulacion-aula-0_2-m3-es.png y el resto de estimulacion-*.png, miradas por Claude Code el 20/11/2026
 - [ ] Mergeado en main con CI en verde y los audios generados · evidencia:
+
+## O-20261120-2 · Corregir lo de Antigravity, merge a main y lista de pendientes para la semana que viene
+Estado: abierta
+> Tenemos poco presupuesto, corrige los errores de antigravity y luego ejecuta merge y push al main , crea un listado de lo que queda pendiente, para continuar la próxima semana
+> (20/11/2026, a pregunta de Claude Code) «Sí, borra las 80»: las 80 grabaciones en_tutor sobrantes.
+Fuente: docs/PROMPTS_ANTIGRAVITY.md (P9; entrega de Antigravity en antigravity/escoita, 7e178ae6)
+
+- [x] Errores de la entrega P9 corregidos: entrada arriba en Hoxe, preguntas en inglés, guías sin exigir que diga, títulos gallegos · evidencia: test/features/estimulacion_test.dart y tools/check_sin_repetir.py
+- [x] Las 80 grabaciones en_tutor sobrantes borradas con el sí de Frank · evidencia: tools/prune_voice_assets.py (--check sin sobrantes)
+- [x] Lista de lo pendiente para la semana que viene · evidencia: docs/PENDIENTE.md
+- [ ] Mergeado en main con CI en verde y los audios generados · evidencia:
