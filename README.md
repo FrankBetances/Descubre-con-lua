@@ -105,9 +105,20 @@ casa y *Hoy · Calendario · Recursos · Yo* en la escuela.
   criatura en casa— y el calendario salta al mismo mes de ese curso. La docente
   registra la asamblea, la familia registra el juego de tres minutos en casa, y
   el día que coinciden las dos cosas queda enlazado.
-- **Tus premios** — los premios de Lúa: nivel, XP, racha, insignias y las
-  medallas del calendario. Premian **a la persona adulta** que usa la app,
-  nunca a la criatura.
+- **Estimulación del lenguaje y el pensamiento** — arriba de Hoy, en casa y en
+  el Modo Aula. Cada mes y cada edad, de 2-3 a 5-6 años, trae el experimento
+  STEAM del mes y cuatro partes: **Escucha** (un par de palabras inglesas que
+  cambian en un solo sonido), **Palabras que crecen** (concepto, parte, acción y
+  cualidad), **Háblale así** (tres frases que crecen para la persona adulta) y
+  **Pensamos** (predice, prueba, compara y explica sobre el mismo experimento).
+  En 0-2 años, un momento de «mira y nota» por proyecto. Cada frase inglesa
+  para la criatura suena en voz de niño y, con **Oír despacio**, más lenta.
+- **Juegos de escucha** — en Explorar (casa): los pares, progresiones y
+  cápsulas de escucha en gallego y castellano, con lámina y voz.
+- **Tus premios** — Lúa y sus premios: nivel, XP, racha e insignias de la
+  criatura registrada en casa, que gana la persona adulta en su nombre al
+  marcar el juego del día y lo que entiende o dice; y los contadores de la
+  persona adulta (asambleas, cápsulas) y las medallas del calendario.
 
 **El inglés no es una lengua de esta app: es contenido que se escucha.** Ninguna
 pantalla se lee en inglés. Lo que hay son las palabras, las órdenes de cuerpo
@@ -209,10 +220,11 @@ comprobado y nombra el comando que lo comprobó.
 | Ponte al día | 250 palabras de cursos o meses anteriores que dan por sabidas 86 de las 133 órdenes de las asambleas y 68 de los 303 retos de los cuentos, revisadas a mano, cada una con su gesto y su voz |
 | Cápsulas | 12: 6 de Academy para las familias y 6 de formación docente |
 | STEAM | 5 sesiones de ciencia, una por curso de 12 meses a 6 años, y 50 experimentos del mes, uno por mes y curso, cada uno en versión de aula y de casa |
-| Voz | 36.378 locuciones grabadas dentro de la app: 16.920 en inglés y 9.729 en gallego y otras tantas en castellano, entre el módulo base y el paquete de voz de instalación |
+| Voz | 39.834 locuciones grabadas dentro de la app: 18.118 en inglés y 10.858 en gallego y otras tantas en castellano, entre el módulo base y el paquete de voz de instalación |
+| Estimulación del lenguaje y el pensamiento | 40 piezas, una por mes y edad de 2-3 a 5-6 años, cada una con su par mínimo, su progresión, el modelo del adulto y cuatro momentos de pensamiento sobre el experimento STEAM del mes; 10 proyectos de 0-2 con «mira y nota» |
 | Láminas | 350 en pixel art para los 100 cuentos dialogados, con Lúa desde su rejilla; y 80 propias, dibujadas como datos: 50 de vocabulario y 30 escenas del cuento |
 | Casa | En cada uno de los 50 meses, cuatro retos semanales, la lectura del microcuento, un juego, qué mirar y la palabra del mes anterior; una guía de casa y una guía por edad |
-| Premios | 6 niveles, 9 insignias y 6 medallas de calendario, todos de la persona adulta |
+| Premios | Los de la criatura (nivel, racha e insignias de Lúa) y los de la persona adulta (contadores y medallas de calendario) |
 | Android | `minSdk 24` · `compileSdk` y `targetSdk` 36 |
 
 El binario **no declara ni un permiso de red**, y eso lo comprueba un gate que
@@ -266,43 +278,7 @@ Android. Por eso `--fast` da **22 de 22** y el run completo, **24 de 24**.
 
 ## Publicar
 
-El mismo workflow que corre los gates compila el binario firmado. No hay un
-segundo workflow que recompile lo mismo con otra configuración.
-
-| Artefacto | Cuándo se produce | Retención |
-| --- | --- | --- |
-| `android-apk` (`.apk`) | En `main` y en «Run workflow» | 5 días |
-| `android-apk-<run>` (`.apk`) | En cualquier rama | 2 días |
-| `android-aab` (`.aab`) | En `main` y en «Run workflow», **solo con secrets de firma** | 3 días |
-| `android-mapping` (`mapping.txt`) | Cuando exista (hoy `minifyEnabled false`) | 30 días |
-
-Las ramas también compilan y suben su propio APK, con nombre y retención
-propios para no pisar el de `main`.
-
-Al final de cada run se retiran los artefactos viejos y se dejan 2 copias de
-cada nombre (10 del mapa de R8), para que el almacenamiento tenga un suelo fijo
-en vez de crecer con el ritmo de commits.
-
-### Claves de firma
-
-Los nombres de los secrets de firma están en `.github/workflows/ci.yml`, que es
-donde se usan. **Su estado —si están dados de alta, con qué clave y desde
-cuándo— no se documenta aquí**: este repositorio es público y eso es
-información de operación.
-
-Si faltasen, el APK se firmaría con la **clave de depuración** —se instala a
-mano, y Google Play lo rechaza— y el AAB no se generaría, porque un AAB sin
-firmar no se puede subir a ningún sitio y solo sería un fichero que engaña.
-
-Un gate en rojo también bloquea el AAB: los pasos posteriores a uno fallido se
-saltan. Cuando el AAB no aparezca, el motivo está más arriba en el run.
-El paso «Comprobar con qué clave va firmado» lee el certificado **del APK** con
-`apksigner` y lo publica en el resumen del run, igual que el gate de permisos lee
-el binario en vez de la configuración.
-
-`versionCode` sale del número de run del workflow, porque Play exige que cada
-subida lleve uno mayor que el anterior; `pubspec.yaml` lo deja fijo en 1.
-
+El binario firmado lo compila el mismo workflow que corre los gates (`.github/workflows/ci.yml`). Los detalles de operación están en [STATUS.md](STATUS.md).
 
 ## El pulso se ve, no se oye
 
@@ -345,8 +321,8 @@ casa, y en Academy las cuatro partes de cada cápsula, sus afirmaciones y el
 cierre de Lúa. Si un texto no tiene grabación, el botón **no se pinta** —ni
 apagado ni con aviso—: un altavoz que no suena promete algo que no cumple.
 
-- gallego → **Celtia**, do Proxecto Nós (*gated* en Hugging Face: requiere el
-  secret `HF_TOKEN`)
+- gallego → **Celtia**, do Proxecto Nós (*gated* en Hugging Face: la descarga
+  necesita un token, que vive en el workflow)
 - castellano → **Sharvard** (rhasspy/piper-voices)
 - inglés → **LJSpeech** (rhasspy/piper-voices)
 
@@ -356,7 +332,9 @@ del calendario y de cada uno de los 50 meses del trayecto, las colocaciones,
 las palabras de ejemplo de los fonemas y, aparte, **las 4.000 palabras de uso
 habitual del inglés con su frase completa**. Cada una suena dos
 veces: la palabra sola, despacio, que es la que se imita, y su frase entera, a
-ritmo de tutor, que es la que se entiende. La persona adulta pulsa la pastilla y
+ritmo de tutor, que es la que se entiende. Las frases que oye la criatura en la
+estimulación del lenguaje van, como en Valeria, en **voz de niño** y en una
+versión **lenta** de la frase entera, que suena con «Oír despacio». La persona adulta pulsa la pastilla y
 oye cómo se dice antes de decírselo a la criatura. Una pastilla sin grabación se
 pinta igual, con la palabra legible y sin altavoz.
 
@@ -377,15 +355,21 @@ permiso de red. En casa, el nombre, la edad y el curso de cada niño, y lo que l
 familia marca de sus palabras, se guardan solo en el móvil. `pubspec.yaml` no tiene una sola dependencia externa: la reproducción de
 audio va por un `MethodChannel` contra el `MediaPlayer` de Android.
 
-**Lo único que la app guarda**, en el almacenamiento privado del aparato: los
-contadores de los premios **de la persona adulta** —asambleas dirigidas,
-cápsulas leídas, racha actual y mejor racha, la fecha del último día *sin hora*
-e identificadores de insignias— y, si la persona adulta usa el repaso de
-inglés, **una ficha de repaso por palabra del catálogo**: la palabra, los
-números del repaso espaciado y dos fechas *sin hora*. No identifica a nadie, no
-contiene nada de ninguna criatura y no puede salir del aparato. Lo guardan dos
-gates: `test/features/premios_test.dart` y
-`test/core/progreso_privacidad_test.dart` fallan si aparece una clave nueva en
+**Lo único que la app guarda**, en el almacenamiento privado del aparato y en
+tres ficheros:
+
+- los contadores de los premios **de la persona adulta** —asambleas dirigidas,
+  cápsulas leídas, racha, la fecha del último día *sin hora* e insignias—;
+- si usa el repaso de inglés, **una ficha de repaso por palabra**: la palabra,
+  los números del repaso espaciado y dos fechas *sin hora*;
+- **solo en casa**, de cada niño el nombre o apodo que escribe la familia, la
+  edad y el curso, lo que la persona adulta marca de sus palabras por semana
+  (sin fecha ni hora) y sus premios con Lúa. Se borra desde la app o al
+  desinstalarla. En el aula no se registra a ningún niño.
+
+Nada de esto puede salir del aparato. Lo guardan tres gates:
+`test/features/premios_test.dart`, `test/core/progreso_privacidad_test.dart` y
+`test/core/criancas_privacidad_test.dart` fallan si aparece una clave nueva en
 el fichero que vigila cada uno.
 
 La comprobación que cuenta se hace sobre el **APK compilado** con `aapt2`, no
@@ -457,8 +441,8 @@ Las condiciones de una licencia institucional se acuerdan caso por caso y
 **pueden ser gratuitas** (convenios con administraciones, pilotos). Se piden en
 frank.alberto.betances.reinoso@gmail.com.
 
-Los componentes de terceros conservan su licencia: la tipografía Nunito (SIL
-OFL 1.1, en `assets/fonts/OFL.txt`), Flutter y sus paquetes, y los modelos de
+Los componentes de terceros conservan su licencia: las tipografías Nunito y
+Fredoka (SIL OFL 1.1, en `assets/fonts/`), las imágenes de Fluent Emoji (MIT), Flutter y sus paquetes, y los modelos de
 voz Celtia, Sharvard y LJSpeech, que **solo corren en compilación y nunca en el
 aparato**. Los logotipos institucionales son marcas de sus titulares y no se
 licencian aquí.
@@ -473,6 +457,7 @@ lib/data/       modelos, cargador, repositorio, validador de contenido
 lib/features/   juega/ (aula, asamblea de 4 fases, canciones con pulso, formación docente)
                 academy/ (familias) · calendario/ (escola·fogar, 0-6 anos)
                 english/ (palabras, repaso, escoita, colocacións, fonemas)
+                estimulacion/ (estimulación del lenguaje y el pensamiento)
                 premios/ (insignias y medallas) · bienvenida/ · creditos/
 assets/content/ unidades del mes, cápsulas, asambleas, canciones y premios en JSON, bilingües
                 calendario/ (10 meses, los 50 del trayecto y la guía de inglés en casa)

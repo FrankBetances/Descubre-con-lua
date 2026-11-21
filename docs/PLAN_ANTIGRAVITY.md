@@ -119,6 +119,7 @@ commit. Lo vigila `tools/check_registro_commits.py`, dentro de `tools/gates.sh`.
 | P9.6 | Antigravity: tests de la sección, de Oír despacio y del pensamiento en las 40 piezas | 9 | no |
 | P9.7 | Antigravity: capturas de escritorio en gl y es de la sección en casa y en el aula | 9 | no |
 | P9.8 | Antigravity: docs/estimulacion-control.md, una fila por pieza | 9 | no |
+| P8.22 | Claude Code: README al día y sin información interna (movida a STATUS.md) | 8 | no |
 | P8.21 | Claude Code: evidencia del merge del PR #64 | 8 | no |
 | P8.20 | Claude Code: «Oír despacio» sin desbordar con letra grande | 8 | no |
 | P8.19 | Claude Code: lista de pendientes al día y merge de P9 | 8 | no |
@@ -421,4 +422,5 @@ Base: `6be3d38b`
 | P8.18 | 73ec385b | 2026-11-20 | Nada visible: los pares mínimos, dados por buenos por la logopeda según Frank, marcados en O-20261118-3 y PENDIENTE | check_ordenes y check_registro_commits OK | docs/ORDENES.md, docs/PENDIENTE.md | |
 | P8.19 | c5a85f77 | 2026-11-20 | Nada visible: docs/PENDIENTE.md al día (voz copiada de Valeria hecha; quitar la entrada de abajo, orden de Frank) | check_ordenes y check_registro_commits OK | docs/PENDIENTE.md, docs/ORDENES.md | |
 | P8.20 | 92ddc914 | 2026-11-20 | Estimulación con letra grande (×1,8): la etiqueta «Oír despacio» baja de línea en vez de salirse del botón | flutter test --exclude-tags capturas (1610 OK con los audios), check_voice_coverage y prune --check OK | lib/core/audio/widgets/boton_escuchar.dart | |
-| P8.21 | este | 2026-11-20 | Nada visible: evidencia del merge del PR #64 (bbda1325) en O-20261120-1 y O-20261120-2 | check_ordenes y check_registro_commits OK | docs/ORDENES.md | |
+| P8.21 | b958654e | 2026-11-20 | Nada visible: evidencia del merge del PR #64 (bbda1325) en O-20261120-1 y O-20261120-2 | check_ordenes y check_registro_commits OK | docs/ORDENES.md | |
+| P8.22 | este | 2026-11-21 | Nada visible en la app: README con la estimulación del lenguaje, los juegos de escucha, los premios de la criatura, la voz de niño y lenta, los tres ficheros de privacidad y Fredoka; la publicación, la firma y el versionCode pasan a STATUS.md | check_contact_email, check_finalidade y check_registro_commits OK | README.md, STATUS.md | |

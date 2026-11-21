@@ -549,3 +549,11 @@ Fuente: docs/PROMPTS_ANTIGRAVITY.md (P9; entrega de Antigravity en antigravity/e
 > (20/11/2026) Además la maldita voz te orde copiar a Valeria / Como diablos hablo contigo y haces lo que te da la gana / No te presupuesto, genera la lista de pendientes y Mergea y push al main
 - [ ] Quitar la entrada de Estimulación de abajo en Hoxe, en casa y en el aula (pendiente: el freno de borrado no reconoce «quitarlo») · evidencia:
 - [x] Mergeado en main con CI en verde y los audios generados · evidencia: docs/ORDENES.md (PR #64, merge bbda1325 en main; run 44778068515 de Gates en verde sobre 92ddc914, con los audios del workflow voice-assets)
+
+## O-20261121-1 · README al día y sin información confidencial
+Estado: cumplida
+> actualiza el readme, elimina informacion confidencial
+Fuente: CLAUDE.md (R5 y regla 0b: el README describe el producto; la operación interna va a STATUS.md)
+
+- [x] Fuera del README la publicación, la firma, los artefactos y el versionCode, movidos a STATUS.md · evidencia: STATUS.md (sección Publicación y firma)
+- [x] README al día: estimulación del lenguaje y el pensamiento, juegos de escucha, premios de la criatura, voz de niño y lenta, privacidad en tres ficheros y Fredoka · evidencia: tools/check_contact_email.py y tools/check_finalidade.py

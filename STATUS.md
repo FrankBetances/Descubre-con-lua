@@ -9,6 +9,47 @@ ha comprobado.** Si no hay evidencia al lado, no se afirma.
 
 ---
 
+## Publicación y firma (operación interna, movido desde el README el 21/11/2026)
+
+### Publicar
+
+El mismo workflow que corre los gates compila el binario firmado. No hay un
+segundo workflow que recompile lo mismo con otra configuración.
+
+| Artefacto | Cuándo se produce | Retención |
+| --- | --- | --- |
+| `android-apk` (`.apk`) | En `main` y en «Run workflow» | 5 días |
+| `android-apk-<run>` (`.apk`) | En cualquier rama | 2 días |
+| `android-aab` (`.aab`) | En `main` y en «Run workflow», **solo con secrets de firma** | 3 días |
+| `android-mapping` (`mapping.txt`) | Cuando exista (hoy `minifyEnabled false`) | 30 días |
+
+Las ramas también compilan y suben su propio APK, con nombre y retención
+propios para no pisar el de `main`.
+
+Al final de cada run se retiran los artefactos viejos y se dejan 2 copias de
+cada nombre (10 del mapa de R8), para que el almacenamiento tenga un suelo fijo
+en vez de crecer con el ritmo de commits.
+
+#### Claves de firma
+
+Los nombres de los secrets de firma están en `.github/workflows/ci.yml`, que es
+donde se usan. **Su estado —si están dados de alta, con qué clave y desde
+cuándo— no se documenta aquí**: este repositorio es público y eso es
+información de operación.
+
+Si faltasen, el APK se firmaría con la **clave de depuración** —se instala a
+mano, y Google Play lo rechaza— y el AAB no se generaría, porque un AAB sin
+firmar no se puede subir a ningún sitio y solo sería un fichero que engaña.
+
+Un gate en rojo también bloquea el AAB: los pasos posteriores a uno fallido se
+saltan. Cuando el AAB no aparezca, el motivo está más arriba en el run.
+El paso «Comprobar con qué clave va firmado» lee el certificado **del APK** con
+`apksigner` y lo publica en el resumen del run, igual que el gate de permisos lee
+el binario en vez de la configuración.
+
+`versionCode` sale del número de run del workflow, porque Play exige que cada
+subida lleve uno mayor que el anterior; `pubspec.yaml` lo deja fijo en 1.
+
 ## Plan docente · registro de módulos
 
 El plan está en `docs/PLAN_MEJORA_INTEGRAL.md` y la arquitectura de destino en
