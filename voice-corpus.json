@@ -1,15 +1,15 @@
 {
- "generatedAt": "2026-11-22T09:36:22Z",
- "entries": 39834,
+ "generatedAt": "2026-11-22T09:49:58Z",
+ "entries": 40013,
  "byStyle": {
-  "child": 449,
-  "slow": 6468,
-  "tutor": 32917
+  "child": 483,
+  "slow": 6503,
+  "tutor": 33027
  },
  "byLang": {
-  "en": 18118,
-  "es": 10858,
-  "gl": 10858
+  "en": 18187,
+  "es": 10913,
+  "gl": 10913
  },
  "corpus": [
   {
@@ -19,6 +19,15 @@
    "text": "Compare the pointed nose and the flat nose.",
    "speech": "Compare the pointed nose and the flat nose.",
    "source": "escoita/curso_5_6/6/pensamiento/compara",
+   "pack": false
+  },
+  {
+   "id": "en_child_014ad3a4_27",
+   "lang": "en",
+   "style": "child",
+   "text": "Wait, then share the snack!",
+   "speech": "Wait, then share the snack!",
+   "source": "escoita/ar/ra_curso_4_5_m10/frase/0",
    "pack": false
   },
   {
@@ -193,6 +202,15 @@
    "pack": false
   },
   {
+   "id": "en_child_0ba87015_23",
+   "lang": "en",
+   "style": "child",
+   "text": "Big sound, small sound!",
+   "speech": "Big sound, small sound!",
+   "source": "escoita/ar/ra_curso_2_3_m04/frase/0",
+   "pack": false
+  },
+  {
    "id": "en_child_0c75d86c_39",
    "lang": "en",
    "style": "child",
@@ -280,6 +298,15 @@
    "text": "Moving feet make heart beat fast.",
    "speech": "Moving feet make heart beat fast.",
    "source": "escoita/curso_4_5/2/pensamiento/explica/modelo",
+   "pack": false
+  },
+  {
+   "id": "en_child_1335f2a5_12",
+   "lang": "en",
+   "style": "child",
+   "text": "Big and low!",
+   "speech": "Big and low!",
+   "source": "escoita/ar/ra_curso_2_3_m04/ev/S2.GOLPE_FUERTE",
    "pack": false
   },
   {
@@ -562,6 +589,15 @@
    "pack": false
   },
   {
+   "id": "en_child_21e55f45_22",
+   "lang": "en",
+   "style": "child",
+   "text": "Move your hand slowly!",
+   "speech": "Move your hand slowly!",
+   "source": "escoita/ar/ra_curso_5_6_m07/frase/0",
+   "pack": false
+  },
+  {
    "id": "en_child_22086a6f_34",
    "lang": "en",
    "style": "child",
@@ -577,6 +613,15 @@
    "text": "Put your hand in the cool water.",
    "speech": "Put your hand in the cool water.",
    "source": "escoita/curso_2_3/1/water/frase",
+   "pack": false
+  },
+  {
+   "id": "en_child_23b0e816_15",
+   "lang": "en",
+   "style": "child",
+   "text": "Small and high!",
+   "speech": "Small and high!",
+   "source": "escoita/ar/ra_curso_2_3_m04/ev/S2.GOLPE_DEBIL",
    "pack": false
   },
   {
@@ -832,6 +877,15 @@
    "pack": false
   },
   {
+   "id": "en_child_308b3688_21",
+   "lang": "en",
+   "style": "child",
+   "text": "Blow gently and spin!",
+   "speech": "Blow gently and spin!",
+   "source": "escoita/ar/ra_curso_2_3_m09/frase/0",
+   "pack": false
+  },
+  {
    "id": "en_child_310bdb16_23",
    "lang": "en",
    "style": "child",
@@ -1018,6 +1072,15 @@
    "text": "Pack light things so the suitcase is not heavy.",
    "speech": "Pack light things so the suitcase is not heavy.",
    "source": "escoita/curso_5_6/8/modelo/2",
+   "pack": false
+  },
+  {
+   "id": "en_child_3abd7998_17",
+   "lang": "en",
+   "style": "child",
+   "text": "Connect the path!",
+   "speech": "Connect the path!",
+   "source": "escoita/ar/ra_curso_2_3_m02/ev/S1.LUA_EN_INICIO",
    "pack": false
   },
   {
@@ -1318,6 +1381,15 @@
    "pack": false
   },
   {
+   "id": "en_child_4ad6c490_15",
+   "lang": "en",
+   "style": "child",
+   "text": "Turn your head!",
+   "speech": "Turn your head!",
+   "source": "escoita/ar/face/L07.ar2",
+   "pack": false
+  },
+  {
    "id": "en_child_4ae5757c_14",
    "lang": "en",
    "style": "child",
@@ -1387,6 +1459,15 @@
    "text": "We mix the wet sticky mud.",
    "speech": "We mix the wet sticky mud.",
    "source": "escoita/curso_4_5/6/modelo/2",
+   "pack": false
+  },
+  {
+   "id": "en_child_4cd4f7a7_16",
+   "lang": "en",
+   "style": "child",
+   "text": "Match the shape!",
+   "speech": "Match the shape!",
+   "source": "escoita/ar/ra_curso_2_3_m01/ev/S0.PLACA_LEIDA",
    "pack": false
   },
   {
@@ -1579,6 +1660,15 @@
    "pack": false
   },
   {
+   "id": "en_child_5af727b3_10",
+   "lang": "en",
+   "style": "child",
+   "text": "Turn here!",
+   "speech": "Turn here!",
+   "source": "escoita/ar/ra_curso_2_3_m02/ev/S1.LUA_GIRA",
+   "pack": false
+  },
+  {
    "id": "en_child_5baa44c3_44",
    "lang": "en",
    "style": "child",
@@ -1639,6 +1729,15 @@
    "text": "See the tiny seed inside.",
    "speech": "See the tiny seed inside.",
    "source": "escoita/curso_2_3/6/pensamiento/proba",
+   "pack": false
+  },
+  {
+   "id": "en_child_62383b56_11",
+   "lang": "en",
+   "style": "child",
+   "text": "Light here!",
+   "speech": "Light here!",
+   "source": "escoita/ar/ra_curso_2_3_m06/ev/S6.RIEGO",
    "pack": false
   },
   {
@@ -2065,6 +2164,15 @@
    "pack": false
   },
   {
+   "id": "en_child_79bdff73_19",
+   "lang": "en",
+   "style": "child",
+   "text": "Calm and awake now!",
+   "speech": "Calm and awake now!",
+   "source": "escoita/ar/ra_curso_5_6_m03/frase/0",
+   "pack": false
+  },
+  {
    "id": "en_child_7aa5e4c0_29",
    "lang": "en",
    "style": "child",
@@ -2089,6 +2197,15 @@
    "text": "A long shadow.",
    "speech": "A long shadow.",
    "source": "escoita/curso_3_4/5/modelo/1",
+   "pack": false
+  },
+  {
+   "id": "en_child_7d895c8c_29",
+   "lang": "en",
+   "style": "child",
+   "text": "Stop, wait, and cross safely!",
+   "speech": "Stop, wait, and cross safely!",
+   "source": "escoita/ar/ra_curso_2_3_m03/frase/0",
    "pack": false
   },
   {
@@ -2152,6 +2269,15 @@
    "text": "What happens if we carry the stretcher fast?",
    "speech": "What happens if we carry the stretcher fast?",
    "source": "escoita/curso_4_5/5/pensamiento/predice",
+   "pack": false
+  },
+  {
+   "id": "en_child_81a59917_15",
+   "lang": "en",
+   "style": "child",
+   "text": "Roll down fast!",
+   "speech": "Roll down fast!",
+   "source": "escoita/ar/ra_curso_2_3_m08/ev/S3.LLEGADA_RAPIDA",
    "pack": false
   },
   {
@@ -2290,6 +2416,15 @@
    "pack": false
   },
   {
+   "id": "en_child_8a9667ef_17",
+   "lang": "en",
+   "style": "child",
+   "text": "Puff your cheeks!",
+   "speech": "Puff your cheeks!",
+   "source": "escoita/ar/face/L07.ar5",
+   "pack": false
+  },
+  {
    "id": "en_child_8b743236_12",
    "lang": "en",
    "style": "child",
@@ -2305,6 +2440,15 @@
    "text": "When do we stop and sleep?",
    "speech": "When do we stop and sleep?",
    "source": "escoita/curso_2_3/9/pensamiento/explica",
+   "pack": false
+  },
+  {
+   "id": "en_child_8c1b895e_26",
+   "lang": "en",
+   "style": "child",
+   "text": "Connect the path and turn!",
+   "speech": "Connect the path and turn!",
+   "source": "escoita/ar/ra_curso_2_3_m02/frase/0",
    "pack": false
   },
   {
@@ -2695,6 +2839,24 @@
    "pack": false
   },
   {
+   "id": "en_child_a4e56cef_11",
+   "lang": "en",
+   "style": "child",
+   "text": "High tower!",
+   "speech": "High tower!",
+   "source": "escoita/ar/ra_curso_2_3_m08/ev/S3.ESFERA_ARRIBA",
+   "pack": false
+  },
+  {
+   "id": "en_child_a69ec95e_16",
+   "lang": "en",
+   "style": "child",
+   "text": "Open your mouth!",
+   "speech": "Open your mouth!",
+   "source": "escoita/ar/face/L01.ar1",
+   "pack": false
+  },
+  {
    "id": "en_child_a6eeaad9_24",
    "lang": "en",
    "style": "child",
@@ -2731,12 +2893,30 @@
    "pack": false
   },
   {
+   "id": "en_child_a72de3aa_17",
+   "lang": "en",
+   "style": "child",
+   "text": "Level the bridge!",
+   "speech": "Level the bridge!",
+   "source": "escoita/ar/ra_curso_2_3_m05/ev/S5.PUENTE_ESTABLE",
+   "pack": false
+  },
+  {
    "id": "en_child_a76f72de_43",
    "lang": "en",
    "style": "child",
    "text": "Search the map grid to find the secret box.",
    "speech": "Search the map grid to find the secret box.",
    "source": "escoita/curso_5_6/7/modelo/2",
+   "pack": false
+  },
+  {
+   "id": "en_child_a7a79a4d_30",
+   "lang": "en",
+   "style": "child",
+   "text": "Fit it in and match the shape!",
+   "speech": "Fit it in and match the shape!",
+   "source": "escoita/ar/ra_curso_2_3_m01/frase/0",
    "pack": false
   },
   {
@@ -2836,6 +3016,15 @@
    "text": "Count four legs on the toy dog.",
    "speech": "Count four legs on the toy dog.",
    "source": "escoita/curso_4_5/3/modelo/2",
+   "pack": false
+  },
+  {
+   "id": "en_child_aef72aab_10",
+   "lang": "en",
+   "style": "child",
+   "text": "Fit it in!",
+   "speech": "Fit it in!",
+   "source": "escoita/ar/ra_curso_2_3_m01/ev/S0.CABEZA_ENCAJADA",
    "pack": false
   },
   {
@@ -3055,6 +3244,15 @@
    "pack": false
   },
   {
+   "id": "en_child_bbbad9a2_22",
+   "lang": "en",
+   "style": "child",
+   "text": "Point where Lúa looks!",
+   "speech": "Point where Lúa looks!",
+   "source": "escoita/ar/ra_curso_4_5_m03/frase/0",
+   "pack": false
+  },
+  {
    "id": "en_child_bc07a818_40",
    "lang": "en",
    "style": "child",
@@ -3118,12 +3316,30 @@
    "pack": false
   },
   {
+   "id": "en_child_c0a80d4c_9",
+   "lang": "en",
+   "style": "child",
+   "text": "Big eyes!",
+   "speech": "Big eyes!",
+   "source": "escoita/ar/face/L01.ar3",
+   "pack": false
+  },
+  {
    "id": "en_child_c195fd8e_36",
    "lang": "en",
    "style": "child",
    "text": "Match red, blue, red along the line.",
    "speech": "Match red, blue, red along the line.",
    "source": "escoita/curso_3_4/2/match/frase",
+   "pack": false
+  },
+  {
+   "id": "en_child_c26db5e1_22",
+   "lang": "en",
+   "style": "child",
+   "text": "One, two, three steps!",
+   "speech": "One, two, three steps!",
+   "source": "escoita/ar/ra_curso_3_4_m02/frase/0",
    "pack": false
   },
   {
@@ -3142,6 +3358,15 @@
    "text": "Air pushes each folded paper blade.",
    "speech": "Air pushes each folded paper blade.",
    "source": "escoita/curso_4_5/7/blade/frase",
+   "pack": false
+  },
+  {
+   "id": "en_child_c2ab8d32_13",
+   "lang": "en",
+   "style": "child",
+   "text": "Turn the sun!",
+   "speech": "Turn the sun!",
+   "source": "escoita/ar/ra_curso_2_3_m06/ev/S6.SOMBRA_ALINEADA",
    "pack": false
   },
   {
@@ -3187,6 +3412,15 @@
    "text": "Fresh bread is soft.",
    "speech": "Fresh bread is soft.",
    "source": "escoita/curso_2_3/5/pensamiento/explica/modelo",
+   "pack": false
+  },
+  {
+   "id": "en_child_c458506e_22",
+   "lang": "en",
+   "style": "child",
+   "text": "Match each spot first!",
+   "speech": "Match each spot first!",
+   "source": "escoita/ar/ra_curso_3_4_m07/frase/0",
    "pack": false
   },
   {
@@ -3316,6 +3550,15 @@
    "pack": false
   },
   {
+   "id": "en_child_cfd7b415_31",
+   "lang": "en",
+   "style": "child",
+   "text": "Heavy, light, level the bridge!",
+   "speech": "Heavy, light, level the bridge!",
+   "source": "escoita/ar/ra_curso_2_3_m05/frase/0",
+   "pack": false
+  },
+  {
    "id": "en_child_d1d3cb58_41",
    "lang": "en",
    "style": "child",
@@ -3421,6 +3664,15 @@
    "text": "Pack the suitcase and test the scale.",
    "speech": "Pack the suitcase and test the scale.",
    "source": "escoita/curso_5_6/8/pensamiento/proba",
+   "pack": false
+  },
+  {
+   "id": "en_child_d8a32e6d_25",
+   "lang": "en",
+   "style": "child",
+   "text": "Roll down, fast and slow!",
+   "speech": "Roll down, fast and slow!",
+   "source": "escoita/ar/ra_curso_2_3_m08/frase/0",
    "pack": false
   },
   {
@@ -3550,6 +3802,15 @@
    "pack": false
   },
   {
+   "id": "en_child_e2ed3f11_12",
+   "lang": "en",
+   "style": "child",
+   "text": "Blow gently!",
+   "speech": "Blow gently!",
+   "source": "escoita/ar/ra_curso_2_3_m09/ev/S4.PRAXIA_REDONDEO",
+   "pack": false
+  },
+  {
    "id": "en_child_e31f43cf_39",
    "lang": "en",
    "style": "child",
@@ -3622,6 +3883,15 @@
    "pack": false
   },
   {
+   "id": "en_child_e67d8d53_17",
+   "lang": "en",
+   "style": "child",
+   "text": "Pucker your lips!",
+   "speech": "Pucker your lips!",
+   "source": "escoita/ar/face/L01.ar4",
+   "pack": false
+  },
+  {
    "id": "en_child_e6902f75_36",
    "lang": "en",
    "style": "child",
@@ -3685,6 +3955,15 @@
    "pack": false
   },
   {
+   "id": "en_child_eb641f5a_24",
+   "lang": "en",
+   "style": "child",
+   "text": "Aim and follow the line!",
+   "speech": "Aim and follow the line!",
+   "source": "escoita/ar/ra_curso_2_3_m07/frase/0",
+   "pack": false
+  },
+  {
    "id": "en_child_eb9b3fbc_34",
    "lang": "en",
    "style": "child",
@@ -3703,12 +3982,30 @@
    "pack": false
   },
   {
+   "id": "en_child_ec332070_15",
+   "lang": "en",
+   "style": "child",
+   "text": "Spin the wheel!",
+   "speech": "Spin the wheel!",
+   "source": "escoita/ar/ra_curso_2_3_m09/ev/S4.MOLINETE_GIRA",
+   "pack": false
+  },
+  {
    "id": "en_child_ecc0439b_24",
    "lang": "en",
    "style": "child",
    "text": "Spin the top on its pin.",
    "speech": "Spin the top on its pin.",
    "source": "escoita/curso_5_6/4/pensamiento/proba",
+   "pack": false
+  },
+  {
+   "id": "en_child_ecd3fd50_22",
+   "lang": "en",
+   "style": "child",
+   "text": "Turn the sun and look!",
+   "speech": "Turn the sun and look!",
+   "source": "escoita/ar/ra_curso_2_3_m06/frase/0",
    "pack": false
   },
   {
@@ -3871,6 +4168,15 @@
    "text": "It glides farther because the sharp nose cuts the air.",
    "speech": "It glides farther because the sharp nose cuts the air.",
    "source": "escoita/curso_5_6/6/pensamiento/explica/modelo",
+   "pack": false
+  },
+  {
+   "id": "en_child_f6d801a0_16",
+   "lang": "en",
+   "style": "child",
+   "text": "Heavy side down!",
+   "speech": "Heavy side down!",
+   "source": "escoita/ar/ra_curso_2_3_m05/ev/S5.INCLINA_IZQ",
    "pack": false
   },
   {
@@ -4393,6 +4699,15 @@
    "text": "Robotic",
    "speech": "Robotic",
    "source": "tpr.4_5.febreiro/s2/4_5.febreiro.s2.robotic",
+   "pack": false
+  },
+  {
+   "id": "en_slow_014ad3a4_27",
+   "lang": "en",
+   "style": "slow",
+   "text": "Wait, then share the snack!",
+   "speech": "Wait, then share the snack!",
+   "source": "escoita/ar/ra_curso_4_5_m10/frase/0/slow",
    "pack": false
   },
   {
@@ -6646,6 +6961,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_0ba87015_23",
+   "lang": "en",
+   "style": "slow",
+   "text": "Big sound, small sound!",
+   "speech": "Big sound, small sound!",
+   "source": "escoita/ar/ra_curso_2_3_m04/frase/0/slow",
+   "pack": false
+  },
+  {
    "id": "en_slow_0bb90356_8",
    "lang": "en",
    "style": "slow",
@@ -8452,6 +8776,15 @@
    "text": "Potato",
    "speech": "Potato",
    "source": "tpr.3_4.novembro/s4/3_4.novembro.s4.potato",
+   "pack": false
+  },
+  {
+   "id": "en_slow_1335f2a5_12",
+   "lang": "en",
+   "style": "slow",
+   "text": "Big and low!",
+   "speech": "Big and low!",
+   "source": "escoita/ar/ra_curso_2_3_m04/ev/S2.GOLPE_FUERTE/slow",
    "pack": false
   },
   {
@@ -11686,6 +12019,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_21e55f45_22",
+   "lang": "en",
+   "style": "slow",
+   "text": "Move your hand slowly!",
+   "speech": "Move your hand slowly!",
+   "source": "escoita/ar/ra_curso_5_6_m07/frase/0/slow",
+   "pack": false
+  },
+  {
    "id": "en_slow_21f5b729_4",
    "lang": "en",
    "style": "slow",
@@ -11980,6 +12322,15 @@
    "text": "Kitten",
    "speech": "Kitten",
    "source": "tpr.0_2.xaneiro/s1/0_2.xaneiro.s1.kitten",
+   "pack": false
+  },
+  {
+   "id": "en_slow_23b0e816_15",
+   "lang": "en",
+   "style": "slow",
+   "text": "Small and high!",
+   "speech": "Small and high!",
+   "source": "escoita/ar/ra_curso_2_3_m04/ev/S2.GOLPE_DEBIL/slow",
    "pack": false
   },
   {
@@ -15043,6 +15394,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_308b3688_21",
+   "lang": "en",
+   "style": "slow",
+   "text": "Blow gently and spin!",
+   "speech": "Blow gently and spin!",
+   "source": "escoita/ar/ra_curso_2_3_m09/frase/0/slow",
+   "pack": false
+  },
+  {
    "id": "en_slow_30951d46_4",
    "lang": "en",
    "style": "slow",
@@ -17272,6 +17632,15 @@
    "text": "Bottle",
    "speech": "Bottle",
    "source": "tpr.3_4.marzo/s4/3_4.marzo.s4.bottle",
+   "pack": false
+  },
+  {
+   "id": "en_slow_3abd7998_17",
+   "lang": "en",
+   "style": "slow",
+   "text": "Connect the path!",
+   "speech": "Connect the path!",
+   "source": "escoita/ar/ra_curso_2_3_m02/ev/S1.LUA_EN_INICIO/slow",
    "pack": false
   },
   {
@@ -20947,6 +21316,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_4ad6c490_15",
+   "lang": "en",
+   "style": "slow",
+   "text": "Turn your head!",
+   "speech": "Turn your head!",
+   "source": "escoita/ar/face/L07.ar2/slow",
+   "pack": false
+  },
+  {
    "id": "en_slow_4adf90b7_10",
    "lang": "en",
    "style": "slow",
@@ -21475,6 +21853,15 @@
    "text": "socialist",
    "speech": "socialist",
    "source": "corpus/3830/lemma",
+   "pack": false
+  },
+  {
+   "id": "en_slow_4cd4f7a7_16",
+   "lang": "en",
+   "style": "slow",
+   "text": "Match the shape!",
+   "speech": "Match the shape!",
+   "source": "escoita/ar/ra_curso_2_3_m01/ev/S0.PLACA_LEIDA/slow",
    "pack": false
   },
   {
@@ -24637,6 +25024,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_5af727b3_10",
+   "lang": "en",
+   "style": "slow",
+   "text": "Turn here!",
+   "speech": "Turn here!",
+   "source": "escoita/ar/ra_curso_2_3_m02/ev/S1.LUA_GIRA/slow",
+   "pack": false
+  },
+  {
    "id": "en_slow_5afcab45_8",
    "lang": "en",
    "style": "slow",
@@ -26326,6 +26722,15 @@
    "text": "no",
    "speech": "no",
    "source": "corpus/566/lemma",
+   "pack": false
+  },
+  {
+   "id": "en_slow_62383b56_11",
+   "lang": "en",
+   "style": "slow",
+   "text": "Light here!",
+   "speech": "Light here!",
+   "source": "escoita/ar/ra_curso_2_3_m06/ev/S6.RIEGO/slow",
    "pack": false
   },
   {
@@ -31450,6 +31855,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_79bdff73_19",
+   "lang": "en",
+   "style": "slow",
+   "text": "Calm and awake now!",
+   "speech": "Calm and awake now!",
+   "source": "escoita/ar/ra_curso_5_6_m03/frase/0/slow",
+   "pack": false
+  },
+  {
    "id": "en_slow_79ca8529_9",
    "lang": "en",
    "style": "slow",
@@ -32158,6 +32572,15 @@
    "text": "pave",
    "speech": "pave",
    "source": "corpus/2672/lemma",
+   "pack": false
+  },
+  {
+   "id": "en_slow_7d895c8c_29",
+   "lang": "en",
+   "style": "slow",
+   "text": "Stop, wait, and cross safely!",
+   "speech": "Stop, wait, and cross safely!",
+   "source": "escoita/ar/ra_curso_2_3_m03/frase/0/slow",
    "pack": false
   },
   {
@@ -32986,6 +33409,15 @@
    "text": "Gentle-hearted",
    "speech": "Gentle hearted",
    "source": "tpr.5_6.maio/s3/5_6.maio.s3.gentle-hearted",
+   "pack": false
+  },
+  {
+   "id": "en_slow_81a59917_15",
+   "lang": "en",
+   "style": "slow",
+   "text": "Roll down fast!",
+   "speech": "Roll down fast!",
+   "source": "escoita/ar/ra_curso_2_3_m08/ev/S3.LLEGADA_RAPIDA/slow",
    "pack": false
   },
   {
@@ -34924,6 +35356,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_8a9667ef_17",
+   "lang": "en",
+   "style": "slow",
+   "text": "Puff your cheeks!",
+   "speech": "Puff your cheeks!",
+   "source": "escoita/ar/face/L07.ar5/slow",
+   "pack": false
+  },
+  {
    "id": "en_slow_8a968722_4",
    "lang": "en",
    "style": "slow",
@@ -35317,6 +35758,15 @@
    "text": "mixture",
    "speech": "mixture",
    "source": "corpus/2596/lemma",
+   "pack": false
+  },
+  {
+   "id": "en_slow_8c1b895e_26",
+   "lang": "en",
+   "style": "slow",
+   "text": "Connect the path and turn!",
+   "speech": "Connect the path and turn!",
+   "source": "escoita/ar/ra_curso_2_3_m02/frase/0/slow",
    "pack": false
   },
   {
@@ -41071,6 +41521,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_a4e56cef_11",
+   "lang": "en",
+   "style": "slow",
+   "text": "High tower!",
+   "speech": "High tower!",
+   "source": "escoita/ar/ra_curso_2_3_m08/ev/S3.ESFERA_ARRIBA/slow",
+   "pack": false
+  },
+  {
    "id": "en_slow_a4ee076f_7",
    "lang": "en",
    "style": "slow",
@@ -41413,6 +41872,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_a69ec95e_16",
+   "lang": "en",
+   "style": "slow",
+   "text": "Open your mouth!",
+   "speech": "Open your mouth!",
+   "source": "escoita/ar/face/L01.ar1/slow",
+   "pack": false
+  },
+  {
    "id": "en_slow_a6c45d85_5",
    "lang": "en",
    "style": "slow",
@@ -41557,6 +42025,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_a72de3aa_17",
+   "lang": "en",
+   "style": "slow",
+   "text": "Level the bridge!",
+   "speech": "Level the bridge!",
+   "source": "escoita/ar/ra_curso_2_3_m05/ev/S5.PUENTE_ESTABLE/slow",
+   "pack": false
+  },
+  {
    "id": "en_slow_a73f5c0d_4",
    "lang": "en",
    "style": "slow",
@@ -41626,6 +42103,15 @@
    "text": "Search the map grid to find the secret box.",
    "speech": "Search the map grid to find the secret box.",
    "source": "escoita/curso_5_6/7/modelo/2/slow",
+   "pack": false
+  },
+  {
+   "id": "en_slow_a7a79a4d_30",
+   "lang": "en",
+   "style": "slow",
+   "text": "Fit it in and match the shape!",
+   "speech": "Fit it in and match the shape!",
+   "source": "escoita/ar/ra_curso_2_3_m01/frase/0/slow",
    "pack": false
   },
   {
@@ -43453,6 +43939,15 @@
    "text": "movie",
    "speech": "movie",
    "source": "corpus/543/lemma",
+   "pack": false
+  },
+  {
+   "id": "en_slow_aef72aab_10",
+   "lang": "en",
+   "style": "slow",
+   "text": "Fit it in!",
+   "speech": "Fit it in!",
+   "source": "escoita/ar/ra_curso_2_3_m01/ev/S0.CABEZA_ENCAJADA/slow",
    "pack": false
   },
   {
@@ -46660,6 +47155,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_bbbad9a2_22",
+   "lang": "en",
+   "style": "slow",
+   "text": "Point where Lúa looks!",
+   "speech": "Point where Lúa looks!",
+   "source": "escoita/ar/ra_curso_4_5_m03/frase/0/slow",
+   "pack": false
+  },
+  {
    "id": "en_slow_bbcae592_5",
    "lang": "en",
    "style": "slow",
@@ -47794,6 +48298,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_c0a80d4c_9",
+   "lang": "en",
+   "style": "slow",
+   "text": "Big eyes!",
+   "speech": "Big eyes!",
+   "source": "escoita/ar/face/L01.ar3/slow",
+   "pack": false
+  },
+  {
    "id": "en_slow_c0b39afa_5",
    "lang": "en",
    "style": "slow",
@@ -48271,6 +48784,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_c26db5e1_22",
+   "lang": "en",
+   "style": "slow",
+   "text": "One, two, three steps!",
+   "speech": "One, two, three steps!",
+   "source": "escoita/ar/ra_curso_3_4_m02/frase/0/slow",
+   "pack": false
+  },
+  {
    "id": "en_slow_c26f9aed_4",
    "lang": "en",
    "style": "slow",
@@ -48385,6 +48907,15 @@
    "text": "Air pushes each folded paper blade.",
    "speech": "Air pushes each folded paper blade.",
    "source": "escoita/curso_4_5/7/blade/frase/slow",
+   "pack": false
+  },
+  {
+   "id": "en_slow_c2ab8d32_13",
+   "lang": "en",
+   "style": "slow",
+   "text": "Turn the sun!",
+   "speech": "Turn the sun!",
+   "source": "escoita/ar/ra_curso_2_3_m06/ev/S6.SOMBRA_ALINEADA/slow",
    "pack": false
   },
   {
@@ -48835,6 +49366,15 @@
    "text": "Chirpy",
    "speech": "Chirpy",
    "source": "tpr.0_2.xaneiro/s3/0_2.xaneiro.s3.chirpy",
+   "pack": false
+  },
+  {
+   "id": "en_slow_c458506e_22",
+   "lang": "en",
+   "style": "slow",
+   "text": "Match each spot first!",
+   "speech": "Match each spot first!",
+   "source": "escoita/ar/ra_curso_3_4_m07/frase/0/slow",
    "pack": false
   },
   {
@@ -51007,6 +51547,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_ce53cb0a_6",
+   "lang": "en",
+   "style": "slow",
+   "text": "Smile!",
+   "speech": "Smile!",
+   "source": "escoita/ar/face/L07.ar6",
+   "pack": false
+  },
+  {
    "id": "en_slow_ce58b204_6",
    "lang": "en",
    "style": "slow",
@@ -51391,6 +51940,15 @@
    "text": "symptom",
    "speech": "symptom",
    "source": "corpus/2911/lemma",
+   "pack": false
+  },
+  {
+   "id": "en_slow_cfd7b415_31",
+   "lang": "en",
+   "style": "slow",
+   "text": "Heavy, light, level the bridge!",
+   "speech": "Heavy, light, level the bridge!",
+   "source": "escoita/ar/ra_curso_2_3_m05/frase/0/slow",
    "pack": false
   },
   {
@@ -53254,6 +53812,15 @@
    "text": "Brightest",
    "speech": "Brightest",
    "source": "tpr.4_5.decembro/s3/4_5.decembro.s3.brightest",
+   "pack": false
+  },
+  {
+   "id": "en_slow_d8a32e6d_25",
+   "lang": "en",
+   "style": "slow",
+   "text": "Roll down, fast and slow!",
+   "speech": "Roll down, fast and slow!",
+   "source": "escoita/ar/ra_curso_2_3_m08/frase/0/slow",
    "pack": false
   },
   {
@@ -55507,6 +56074,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_e2ed3f11_12",
+   "lang": "en",
+   "style": "slow",
+   "text": "Blow gently!",
+   "speech": "Blow gently!",
+   "source": "escoita/ar/ra_curso_2_3_m09/ev/S4.PRAXIA_REDONDEO/slow",
+   "pack": false
+  },
+  {
    "id": "en_slow_e3198572_5",
    "lang": "en",
    "style": "slow",
@@ -56269,6 +56845,15 @@
    "text": "rocket",
    "speech": "rocket",
    "source": "corpus/3773/lemma",
+   "pack": false
+  },
+  {
+   "id": "en_slow_e67d8d53_17",
+   "lang": "en",
+   "style": "slow",
+   "text": "Pucker your lips!",
+   "speech": "Pucker your lips!",
+   "source": "escoita/ar/face/L01.ar4/slow",
    "pack": false
   },
   {
@@ -57541,6 +58126,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_eb641f5a_24",
+   "lang": "en",
+   "style": "slow",
+   "text": "Aim and follow the line!",
+   "speech": "Aim and follow the line!",
+   "source": "escoita/ar/ra_curso_2_3_m07/frase/0/slow",
+   "pack": false
+  },
+  {
    "id": "en_slow_eb64d5d5_7",
    "lang": "en",
    "style": "slow",
@@ -57730,6 +58324,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_ec332070_15",
+   "lang": "en",
+   "style": "slow",
+   "text": "Spin the wheel!",
+   "speech": "Spin the wheel!",
+   "source": "escoita/ar/ra_curso_2_3_m09/ev/S4.MOLINETE_GIRA/slow",
+   "pack": false
+  },
+  {
    "id": "en_slow_ec4e81cd_8",
    "lang": "en",
    "style": "slow",
@@ -57880,6 +58483,15 @@
    "text": "Shiny",
    "speech": "Shiny",
    "source": "tpr.3_4.novembro/s2/3_4.novembro.s2.shiny",
+   "pack": false
+  },
+  {
+   "id": "en_slow_ecd3fd50_22",
+   "lang": "en",
+   "style": "slow",
+   "text": "Turn the sun and look!",
+   "speech": "Turn the sun and look!",
+   "source": "escoita/ar/ra_curso_2_3_m06/frase/0/slow",
    "pack": false
   },
   {
@@ -60058,6 +60670,15 @@
    "text": "Pour",
    "speech": "Pour",
    "source": "tpr.3_4.maio/s2/3_4.maio.s2.pour",
+   "pack": false
+  },
+  {
+   "id": "en_slow_f6d801a0_16",
+   "lang": "en",
+   "style": "slow",
+   "text": "Heavy side down!",
+   "speech": "Heavy side down!",
+   "source": "escoita/ar/ra_curso_2_3_m05/ev/S5.INCLINA_IZQ/slow",
    "pack": false
   },
   {
@@ -164320,6 +164941,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_02c99024_14",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Ojos grandes!",
+   "speech": "¡Ojos grandes!",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_02cb603a_15",
    "lang": "es",
    "style": "tutor",
@@ -164416,6 +165046,15 @@
    "text": "¡Oh! ¡Una bolsa misteriosa!",
    "speech": "¡Oh! ¡Una bolsa misteriosa!",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_030bd1bb_68",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Dadle a cada pieza su turno en orden mientras Lúa espera en la mesa.",
+   "speech": "Dadle a cada pieza su turno en orden mientras Lúa espera en la mesa.",
+   "source": "escoita/ar/ra_curso_4_5_m10/guia",
    "pack": false
   },
   {
@@ -164597,6 +165236,15 @@
    "speech": "Cara",
    "source": "tpr.3_4.outubro/s4/3_4.outubro.s4.face/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_035efe70_34",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Soplo largo y suave sobre la mesa.",
+   "speech": "Soplo largo y suave sobre la mesa.",
+   "source": "significados/significado",
+   "pack": false
   },
   {
    "id": "es_tutor_0362f7d4_5",
@@ -167412,6 +168060,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_0a69f4e9_78",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Ordenamos los pasos de cuidado en serie de tres: llegar, descansar y celebrar.",
+   "speech": "Ordenamos los pasos de cuidado en serie de tres: llegar, descansar y celebrar.",
+   "source": "escoita/ar/ra_curso_3_4_m02/guia",
+   "pack": false
+  },
+  {
    "id": "es_tutor_0a6e7351_14",
    "lang": "es",
    "style": "tutor",
@@ -167770,6 +168427,15 @@
    "speech": "¿Quieres jugar con nosotros?",
    "source": "tpr.5_6.maio/s3/5_6.maio.s3.do-you-want-to-play-with-us/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_0b418e08_42",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Sujetad el objeto en lo alto de la cuesta.",
+   "speech": "Sujetad el objeto en lo alto de la cuesta.",
+   "source": "significados/significado",
+   "pack": false
   },
   {
    "id": "es_tutor_0b4b7755_48",
@@ -170155,6 +170821,15 @@
    "speech": "Albañil",
    "source": "tpr.4_5.xaneiro/s4/4_5.xaneiro.s4.builder/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_11a8e8bc_37",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Toque suave con los dedos en la mesa.",
+   "speech": "Toque suave con los dedos en la mesa.",
+   "source": "significados/significado",
+   "pack": false
   },
   {
    "id": "es_tutor_11aae039_15",
@@ -173415,6 +174090,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_1a854828_111",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Soplad despacio o con fuerza hacia una hoja o barquito de papel en la mesa mientras seguís las flechas de aire.",
+   "speech": "Soplad despacio o con fuerza hacia una hoja o barquito de papel en la mesa mientras seguís las flechas de aire.",
+   "source": "escoita/ar/ra_curso_2_3_m09/guia",
+   "pack": false
+  },
+  {
    "id": "es_tutor_1a8aa064_37",
    "lang": "es",
    "style": "tutor",
@@ -174052,6 +174736,15 @@
    "speech": "Morado, morada",
    "source": "tpr.3_4.marzo/s1/3_4.marzo.s1.purple/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_1c32a2a3_38",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Rueda hacia abajo, rápido y despacio!",
+   "speech": "¡Rueda hacia abajo, rápido y despacio!",
+   "source": "significados/significado",
+   "pack": false
   },
   {
    "id": "es_tutor_1c32efb8_13",
@@ -175157,6 +175850,15 @@
    "style": "tutor",
    "text": "¡Sí, la mariquita está en la cabeza de Lúa!",
    "speech": "¡Sí, la mariquita está en la cabeza de Lúa!",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_1eb7f483_16",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Gira la cabeza!",
+   "speech": "¡Gira la cabeza!",
    "source": "significados/significado",
    "pack": false
   },
@@ -182458,6 +183160,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_3291fc37_62",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Emparejad cada pieza con su sitio antes de dar salida al tren.",
+   "speech": "Emparejad cada pieza con su sitio antes de dar salida al tren.",
+   "source": "escoita/ar/ra_curso_3_4_m07/guia",
+   "pack": false
+  },
+  {
    "id": "es_tutor_32969fcd_10",
    "lang": "es",
    "style": "tutor",
@@ -182555,6 +183266,15 @@
    "speech": "Escena",
    "source": "tpr.5_6.febreiro/s2/5_6.febreiro.s2.scene/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_32e37eb3_36",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Un golpe hondo con la palma abierta.",
+   "speech": "Un golpe hondo con la palma abierta.",
+   "source": "significados/significado",
+   "pack": false
   },
   {
    "id": "es_tutor_32eb3488_118",
@@ -186169,6 +186889,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_3bee88e6_27",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Sopla suave y hazlo girar!",
+   "speech": "¡Sopla suave y hazlo girar!",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_3bf2269d_5",
    "lang": "es",
    "style": "tutor",
@@ -188743,6 +189472,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_4284e194_34",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Pesado, ligero, nivela el puente!",
+   "speech": "¡Pesado, ligero, nivela el puente!",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_4291fd60_3",
    "lang": "es",
    "style": "tutor",
@@ -189913,6 +190651,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_4566d1ff_8",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Sonríe!",
+   "speech": "¡Sonríe!",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_457db4b9_27",
    "lang": "es",
    "style": "tutor",
@@ -190252,6 +190999,15 @@
    "text": "¿Has visto alguna vez un erizo?",
    "speech": "¿Has visto alguna vez un erizo?",
    "source": "gramatica/punto/21/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_462cb763_24",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Mueve la mano despacio!",
+   "speech": "¡Mueve la mano despacio!",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -190656,6 +191412,15 @@
    "style": "tutor",
    "text": "¡Sí, el búho se ríe! ¡Una carcajada de barriga!",
    "speech": "¡Sí, el búho se ríe! ¡Una carcajada de barriga!",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_470eb1e3_29",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Empareja cada sitio primero!",
+   "speech": "¡Empareja cada sitio primero!",
    "source": "significados/significado",
    "pack": false
   },
@@ -191326,6 +192091,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_489556a4_35",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Pon el objeto pesado en un extremo.",
+   "speech": "Pon el objeto pesado en un extremo.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_48962413_17",
    "lang": "es",
    "style": "tutor",
@@ -191701,6 +192475,15 @@
    "text": "¿Puedes tocar como la lluvia? ¡Tap, tap, tap!",
    "speech": "¿Puedes tocar como la lluvia? ¡Tap, tap, tap!",
    "source": "biblioteca/HIS-012/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_49b280f1_73",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Inflad las mejillas con aire y soltadlo despacio para lanzar el pececito.",
+   "speech": "Inflad las mejillas con aire y soltadlo despacio para lanzar el pececito.",
+   "source": "escoita/ar/face/L07.ar5/guia",
    "pack": false
   },
   {
@@ -192953,6 +193736,15 @@
    "speech": "Amasar",
    "source": "tpr.4_5.xaneiro/s4/4_5.xaneiro.s4.knead/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_4cec5e8c_25",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Apunta y sigue la línea!",
+   "speech": "¡Apunta y sigue la línea!",
+   "source": "significados/significado",
+   "pack": false
   },
   {
    "id": "es_tutor_4cef942b_29",
@@ -197374,6 +198166,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_590c4d17_14",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Abre la boca!",
+   "speech": "¡Abre la boca!",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_59146ede_15",
    "lang": "es",
    "style": "tutor",
@@ -198100,6 +198901,15 @@
    "text": "¡Tócale las manitas a la ardilla! ¿Qué tiene en las manos? ¡Toca la castaña!",
    "speech": "¡Tócale las manitas a la ardilla! ¿Qué tiene en las manos? ¡Toca la castaña!",
    "source": "biblioteca/HIS-008/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_5ae2a394_99",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Con la mesa iluminada o con una linterna, observad dónde cae la sombra y cómo gira al mover la luz.",
+   "speech": "Con la mesa iluminada o con una linterna, observad dónde cae la sombra y cómo gira al mover la luz.",
+   "source": "escoita/ar/ra_curso_2_3_m06/guia",
    "pack": false
   },
   {
@@ -200758,6 +201568,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_61a2e7e7_44",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Toca o encaja la pieza principal en la mesa.",
+   "speech": "Toca o encaja la pieza principal en la mesa.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_61a7b346_17",
    "lang": "es",
    "style": "tutor",
@@ -201123,6 +201942,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_62a57c10_32",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Vemos moverse o girar el objeto.",
+   "speech": "Vemos moverse o girar el objeto.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_62a8082a_44",
    "lang": "es",
    "style": "tutor",
@@ -201227,6 +202055,15 @@
    "style": "tutor",
    "text": "¡Sí, la serpiente se va arrastrando!",
    "speech": "¡Sí, la serpiente se va arrastrando!",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_62dd446a_39",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Espera y después comparte la merienda!",
+   "speech": "¡Espera y después comparte la merienda!",
    "source": "significados/significado",
    "pack": false
   },
@@ -205052,6 +205889,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_6d0097ff_38",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Señala la silueta igual en el tablero.",
+   "speech": "Señala la silueta igual en el tablero.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_6d030faf_14",
    "lang": "es",
    "style": "tutor",
@@ -206843,6 +207689,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_714e8335_73",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Jugad a abrir mucho los ojos delante del espejo para que gire la manzana.",
+   "speech": "Jugad a abrir mucho los ojos delante del espejo para que gire la manzana.",
+   "source": "escoita/ar/face/L01.ar3/guia",
+   "pack": false
+  },
+  {
    "id": "es_tutor_7150b570_52",
    "lang": "es",
    "style": "tutor",
@@ -208403,6 +209258,15 @@
    "text": "¡Sí, no hay billete! La rana no tiene el billete en la maleta.",
    "speech": "¡Sí, no hay billete! La rana no tiene el billete en la maleta.",
    "source": "biblioteca/HIS-100/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_750bd4f0_57",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Seguid el camino lógico hasta la diana tocando cada paso.",
+   "speech": "Seguid el camino lógico hasta la diana tocando cada paso.",
+   "source": "escoita/ar/ra_curso_2_3_m07/guia",
    "pack": false
   },
   {
@@ -210517,6 +211381,15 @@
    "style": "tutor",
    "text": "¡Escucha con el corazón abierto y di palabras amables!",
    "speech": "¡Escucha con el corazón abierto y di palabras amables!",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_7ab85534_29",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Para, espera y cruza seguro!",
+   "speech": "¡Para, espera y cruza seguro!",
    "source": "significados/significado",
    "pack": false
   },
@@ -220796,6 +221669,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_95563e72_36",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Equilibrad los dos lados del puente.",
+   "speech": "Equilibrad los dos lados del puente.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_9556dc2d_61",
    "lang": "es",
    "style": "tutor",
@@ -222677,6 +223559,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_9a0e094f_41",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Haced el giro junto a la esquina marcada.",
+   "speech": "Haced el giro junto a la esquina marcada.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_9a0f267b_52",
    "lang": "es",
    "style": "tutor",
@@ -223523,6 +224414,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_9c7acb66_98",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Comparad un objeto pesado y uno ligero sobre el puente dibujado en la mesa: ¿cuál inclina el lado?",
+   "speech": "Comparad un objeto pesado y uno ligero sobre el puente dibujado en la mesa: ¿cuál inclina el lado?",
+   "source": "escoita/ar/ra_curso_2_3_m05/guia",
+   "pack": false
+  },
+  {
    "id": "es_tutor_9c7ebfbe_9",
    "lang": "es",
    "style": "tutor",
@@ -223745,6 +224645,15 @@
    "text": "manzana",
    "speech": "manzana",
    "source": "curriculo/T2.U3/vocabulario/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_9d15c18e_26",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Conecta el camino y gira!",
+   "speech": "¡Conecta el camino y gira!",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -224207,6 +225116,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_9e394357_96",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Después de escuchar el sonido, girad la cabeza despacio hacia un lado para encontrar al perrito.",
+   "speech": "Después de escuchar el sonido, girad la cabeza despacio hacia un lado para encontrar al perrito.",
+   "source": "escoita/ar/face/L07.ar2/guia",
+   "pack": false
+  },
+  {
    "id": "es_tutor_9e3dfcde_54",
    "lang": "es",
    "style": "tutor",
@@ -224492,6 +225410,15 @@
    "text": "¿Bebes en un vaso?",
    "speech": "¿Bebes en un vaso?",
    "source": "biblioteca/HIS-015/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_9ebcf2cb_34",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Soltadlo y mirad cómo llega abajo.",
+   "speech": "Soltadlo y mirad cómo llega abajo.",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -231052,6 +231979,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_afa15232_23",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Señala dónde mira Lúa!",
+   "speech": "¡Señala dónde mira Lúa!",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_afad7910_51",
    "lang": "es",
    "style": "tutor",
@@ -231517,6 +232453,15 @@
    "text": "enorme",
    "speech": "enorme",
    "source": "escoita/curso_4_5/4/large/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_b091a98e_45",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Señala con el dedo dónde se alarga la sombra.",
+   "speech": "Señala con el dedo dónde se alarga la sombra.",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -233695,6 +234640,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_b5d76c1b_28",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡En calma y despierto ahora!",
+   "speech": "¡En calma y despierto ahora!",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_b5db69d4_50",
    "lang": "es",
    "style": "tutor",
@@ -234333,6 +235287,15 @@
    "speech": "Contar los anillos",
    "source": "tpr.4_5.novembro/s2/4_5.novembro.s2.count-rings/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_b79c916d_128",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Ponte delante de la cámara con el niño o con la niña. Cuando abráis la boca grande en silencio, el coche avanza por la pantalla.",
+   "speech": "Ponte delante de la cámara con el niño o con la niña. Cuando abráis la boca grande en silencio, el coche avanza por la pantalla.",
+   "source": "escoita/ar/face/L01.ar1/guia",
+   "pack": false
   },
   {
    "id": "es_tutor_b7a0e999_8",
@@ -235501,6 +236464,15 @@
    "style": "tutor",
    "text": "¿Dónde juegas con la tierra?",
    "speech": "¿Dónde juegas con la tierra?",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_ba5ba3f1_22",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Uno, dos, tres pasos!",
+   "speech": "¡Uno, dos, tres pasos!",
    "source": "significados/significado",
    "pack": false
   },
@@ -237260,6 +238232,24 @@
    "pack": false
   },
   {
+   "id": "es_tutor_bf207f38_32",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Ilumina el objeto desde un lado.",
+   "speech": "Ilumina el objeto desde un lado.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_bf238944_71",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Cuando la mano va despacio por la mesa, se enciende el rincón de calma.",
+   "speech": "Cuando la mano va despacio por la mesa, se enciende el rincón de calma.",
+   "source": "escoita/ar/ra_curso_5_6_m07/guia",
+   "pack": false
+  },
+  {
    "id": "es_tutor_bf314d40_25",
    "lang": "es",
    "style": "tutor",
@@ -238934,6 +239924,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_c3f3df22_68",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Secuencia tranquila: cuando baja el movimiento, Lúa despierta feliz.",
+   "speech": "Secuencia tranquila: cuando baja el movimiento, Lúa despierta feliz.",
+   "source": "escoita/ar/ra_curso_5_6_m03/guia",
+   "pack": false
+  },
+  {
    "id": "es_tutor_c3f71af5_40",
    "lang": "es",
    "style": "tutor",
@@ -239861,6 +240860,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_c6598eeb_63",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Practicamos esperar el turno en la mesa con la barrera marcada.",
+   "speech": "Practicamos esperar el turno en la mesa con la barrera marcada.",
+   "source": "escoita/ar/ra_curso_2_3_m03/guia",
+   "pack": false
+  },
+  {
    "id": "es_tutor_c66bf00f_39",
    "lang": "es",
    "style": "tutor",
@@ -239893,6 +240901,15 @@
    "style": "tutor",
    "text": "¡Una vela! ¡Luz, luz!",
    "speech": "¡Una vela! ¡Luz, luz!",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_c6863281_20",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Gira el sol y mira!",
+   "speech": "¡Gira el sol y mira!",
    "source": "significados/significado",
    "pack": false
   },
@@ -241175,6 +242192,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_c9b11b5b_28",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Encaja y empareja la forma!",
+   "speech": "¡Encaja y empareja la forma!",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_c9c14208_51",
    "lang": "es",
    "style": "tutor",
@@ -241199,6 +242225,15 @@
    "text": "¿Puedes bailar como Lúa? Agita las manos… ¡estatua!",
    "speech": "¿Puedes bailar como Lúa? Agita las manos… ¡estatua!",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_c9cf7cc8_126",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Sobre la mesa se ve el recorrido. Mueve el objeto con las manos por la línea marcada mientras escucháis las órdenes en inglés.",
+   "speech": "Sobre la mesa se ve el recorrido. Mueve el objeto con las manos por la línea marcada mientras escucháis las órdenes en inglés.",
+   "source": "escoita/ar/ra_curso_2_3_m02/guia",
    "pack": false
   },
   {
@@ -242066,6 +243101,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_cbdb8f58_44",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Pon el muñeco o pieza en el punto de salida.",
+   "speech": "Pon el muñeco o pieza en el punto de salida.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_cbe4985c_35",
    "lang": "es",
    "style": "tutor",
@@ -242405,6 +243449,15 @@
    "text": "Mira: Lúa ayuda al pulpo. Platos llenos, detrás de la roca.",
    "speech": "Mira: Lúa ayuda al pulpo. Platos llenos, detrás de la roca.",
    "source": "biblioteca/HIS-068/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_ccbcc2d6_100",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Mirad a la gata Lúa en el espejo: con una sonrisa amplia sin decir nada, Lúa da un salto de alegría.",
+   "speech": "Mirad a la gata Lúa en el espejo: con una sonrisa amplia sin decir nada, Lúa da un salto de alegría.",
+   "source": "escoita/ar/face/L07.ar6/guia",
    "pack": false
   },
   {
@@ -243674,6 +244727,15 @@
    "speech": "Refrescarse",
    "source": "tpr.0_2.xuno/s3/0_2.xuno.s3.cool-down/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_cfe1e8d4_83",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Coloca dos objetos a cada lado y ayuda al niño o a la niña a señalar cuál mira Lúa.",
+   "speech": "Coloca dos objetos a cada lado y ayuda al niño o a la niña a señalar cuál mira Lúa.",
+   "source": "escoita/ar/ra_curso_4_5_m03/guia",
+   "pack": false
   },
   {
    "id": "es_tutor_cfe6d946_49",
@@ -249189,6 +250251,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_dffa1636_84",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Juntad los labios como un beso silencioso delante del espejo hasta llenar el anillo.",
+   "speech": "Juntad los labios como un beso silencioso delante del espejo hasta llenar el anillo.",
+   "source": "escoita/ar/face/L01.ar4/guia",
+   "pack": false
+  },
+  {
    "id": "es_tutor_dffdc2ef_37",
    "lang": "es",
    "style": "tutor",
@@ -251391,6 +252462,15 @@
    "text": "¿Te acuerdas de por qué se paró Lúa? ¿Qué tenía en las botas?",
    "speech": "¿Te acuerdas de por qué se paró Lúa? ¿Qué tenía en las botas?",
    "source": "biblioteca/HIS-082/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_e60849f7_18",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Junta los labios!",
+   "speech": "¡Junta los labios!",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -255756,6 +256836,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_f1a38388_109",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Golpea suave o fuerte en la mesa mientras las ondas crecen sobre el centro. Señalad ondas grandes y pequeñas.",
+   "speech": "Golpea suave o fuerte en la mesa mientras las ondas crecen sobre el centro. Señalad ondas grandes y pequeñas.",
+   "source": "escoita/ar/ra_curso_2_3_m04/guia",
+   "pack": false
+  },
+  {
    "id": "es_tutor_f1a7dd4a_44",
    "lang": "es",
    "style": "tutor",
@@ -257250,6 +258339,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_f56f6382_20",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Infla las mejillas!",
+   "speech": "¡Infla las mejillas!",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_f57288d6_10",
    "lang": "es",
    "style": "tutor",
@@ -257472,6 +258570,15 @@
    "text": "Mira: Lúa tiene hambre. ¡Rumble, rumble! Una cuchara grande.",
    "speech": "Mira: Lúa tiene hambre. ¡Rumble, rumble! Una cuchara grande.",
    "source": "biblioteca/HIS-010/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_f6209bfd_108",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Poned un cartón inclinado o un libro en la mesa y soltad una pieza grande para ver cómo rueda hasta la meta.",
+   "speech": "Poned un cartón inclinado o un libro en la mesa y soltad una pieza grande para ver cómo rueda hasta la meta.",
+   "source": "escoita/ar/ra_curso_2_3_m08/guia",
    "pack": false
   },
   {
@@ -260283,6 +261390,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_fda200db_119",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Coloca dos o tres objetos seguros en la mesa. Lúa muestra sobre la mesa dónde va cada pieza: señala o encaja sin prisa.",
+   "speech": "Coloca dos o tres objetos seguros en la mesa. Lúa muestra sobre la mesa dónde va cada pieza: señala o encaja sin prisa.",
+   "source": "escoita/ar/ra_curso_2_3_m01/guia",
+   "pack": false
+  },
+  {
    "id": "es_tutor_fda54a17_42",
    "lang": "es",
    "style": "tutor",
@@ -261568,6 +262684,15 @@
    "speech": "Verán tranquilo",
    "source": "tpr.5_6.xuno/s4/5_6.xuno.s4.relaxed-summer/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_007a39cf_86",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Despois de escoitar o son, xirade a cabeza amodo cara a un lado para atopar o canciño.",
+   "speech": "Despois de escoitar o son, xirade a cabeza amodo cara a un lado para atopar o canciño.",
+   "source": "escoita/ar/face/L07.ar2/guia",
+   "pack": false
   },
   {
    "id": "gl_tutor_008cb86f_37",
@@ -266381,6 +267506,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_0cd393a8_33",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Pon o obxecto pesado nun extremo.",
+   "speech": "Pon o obxecto pesado nun extremo.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_0ce34cf5_15",
    "lang": "gl",
    "style": "tutor",
@@ -267133,6 +268267,15 @@
    "style": "tutor",
    "text": "Si, unha estatua teatral!",
    "speech": "Si, unha estatua teatral!",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_0ec02784_32",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Un golpe fondo coa palma aberta.",
+   "speech": "Un golpe fondo coa palma aberta.",
    "source": "significados/significado",
    "pack": false
   },
@@ -270185,6 +271328,24 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_16061e25_26",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Sopra suave e faino xirar!",
+   "speech": "Sopra suave e faino xirar!",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_16087284_37",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Suxeitade o obxecto no alto da costa.",
+   "speech": "Suxeitade o obxecto no alto da costa.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_160cdd45_47",
    "lang": "gl",
    "style": "tutor",
@@ -270480,6 +271641,15 @@
    "speech": "Rampla",
    "source": "tpr.0_2.marzo/s3/0_2.marzo.s3.ramp/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_16bc07cb_41",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Toca ou encaixa a peza principal na mesa.",
+   "speech": "Toca ou encaixa a peza principal na mesa.",
+   "source": "significados/significado",
+   "pack": false
   },
   {
    "id": "gl_tutor_16c76e2b_16",
@@ -273119,6 +274289,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_1d8540f6_110",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Soprade amodo ou con forza cara a unha folla ou barquiño de papel na mesa mentres seguides as frechas de aire.",
+   "speech": "Soprade amodo ou con forza cara a unha folla ou barquiño de papel na mesa mentres seguides as frechas de aire.",
+   "source": "escoita/ar/ra_curso_2_3_m09/guia",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_1d87d3ec_44",
    "lang": "gl",
    "style": "tutor",
@@ -274439,6 +275618,15 @@
    "text": "Mira: o prato está baleiro. Nada! A cabuxiña ten fame.",
    "speech": "Mira: o prato está baleiro. Nada! A cabuxiña ten fame.",
    "source": "biblioteca/HIS-065/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_2122a3d1_104",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Poñede un cartón inclinado ou un libro na mesa e soltade unha peza grande para ver como roda ata a meta.",
+   "speech": "Poñede un cartón inclinado ou un libro na mesa e soltade unha peza grande para ver como roda ata a meta.",
+   "source": "escoita/ar/ra_curso_2_3_m08/guia",
    "pack": false
   },
   {
@@ -277318,6 +278506,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_28c9f587_28",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Encaixa e emparella a forma!",
+   "speech": "Encaixa e emparella a forma!",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_28cda45d_27",
    "lang": "gl",
    "style": "tutor",
@@ -277864,6 +279061,15 @@
    "text": "Podes bater as ás e quedar quieto? Flap, flap… estátua!",
    "speech": "Podes bater as ás e quedar quieto? Flap, flap… estátua!",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_2a7e44f1_58",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Practicamos esperar a quenda na mesa coa barreira marcada.",
+   "speech": "Practicamos esperar a quenda na mesa coa barreira marcada.",
+   "source": "escoita/ar/ra_curso_2_3_m03/guia",
    "pack": false
   },
   {
@@ -279564,6 +280770,15 @@
    "style": "tutor",
    "text": "Pisar amodo sentindo o chan",
    "speech": "Pisar amodo sentindo o chan",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_2e5eba76_21",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Sinala onde mira Lúa!",
+   "speech": "Sinala onde mira Lúa!",
    "source": "significados/significado",
    "pack": false
   },
@@ -284293,6 +285508,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_3a3a0747_33",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Vemos moverse ou xirar o obxecto.",
+   "speech": "Vemos moverse ou xirar o obxecto.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_3a3de2c2_10",
    "lang": "gl",
    "style": "tutor",
@@ -285796,6 +287020,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_3ece2ca8_69",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Xogade a abrir moito os ollos diante do espello para que xire a mazá.",
+   "speech": "Xogade a abrir moito os ollos diante do espello para que xire a mazá.",
+   "source": "escoita/ar/face/L01.ar3/guia",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_3edacfd1_31",
    "lang": "gl",
    "style": "tutor",
@@ -285919,6 +287152,15 @@
    "text": "Inclinar o tronco adiante para secar os zapatos sen dobrar os xeonllos.",
    "speech": "Inclinar o tronco adiante para secar os zapatos sen dobrar os xeonllos.",
    "source": "asamblea.primeiro_ciclo.maio.2_3_anos/fase/3/cmd/cmd.maio.2_3.03/accionFisica",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_3f306c10_18",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Infla as meixelas!",
+   "speech": "Infla as meixelas!",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -288065,6 +289307,15 @@
    "style": "tutor",
    "text": "Si! Burbullas! Burbullas grandes e redondas!",
    "speech": "Si! Burbullas! Burbullas grandes e redondas!",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_4492d98c_25",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "En calma e esperto agora!",
+   "speech": "En calma e esperto agora!",
    "source": "significados/significado",
    "pack": false
   },
@@ -290358,6 +291609,15 @@
    "speech": "Tronar",
    "source": "tpr.2_3.decembro/s2/2_3.decembro.s2.rumble/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_4aa7daa7_22",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Apunta e segue a liña!",
+   "speech": "Apunta e segue a liña!",
+   "source": "significados/significado",
+   "pack": false
   },
   {
    "id": "gl_tutor_4aaae47f_17",
@@ -294320,6 +295580,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_54a5ba00_36",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Agarda e despois comparte a merenda!",
+   "speech": "Agarda e despois comparte a merenda!",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_54a72c2a_20",
    "lang": "gl",
    "style": "tutor",
@@ -294525,6 +295794,15 @@
    "speech": "Refugallo",
    "source": "tpr.5_6.abril/s1/5_6.abril.s1.rubbish/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_5501f087_24",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Conecta o camiño e xira!",
+   "speech": "Conecta o camiño e xira!",
+   "source": "significados/significado",
+   "pack": false
   },
   {
    "id": "gl_tutor_55097677_43",
@@ -295397,6 +296675,15 @@
    "text": "Isto é unha xirafa.",
    "speech": "Isto é unha xirafa.",
    "source": "escoita/valeria_gl",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_573db383_14",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Xira a cabeza!",
+   "speech": "Xira a cabeza!",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -299434,6 +300721,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_61293e08_64",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Emparellade cada peza co seu sitio antes de dar a saída ao tren.",
+   "speech": "Emparellade cada peza co seu sitio antes de dar a saída ao tren.",
+   "source": "escoita/ar/ra_curso_3_4_m07/guia",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_61296aec_30",
    "lang": "gl",
    "style": "tutor",
@@ -300827,6 +302123,15 @@
    "speech": "Cando coido a miña planta, medra",
    "source": "tpr.5_6.maio/s4/5_6.maio.s4.when-i-look-after-my-plant-it-grows/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_65071cfb_35",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Equilibrade os dous lados da ponte.",
+   "speech": "Equilibrade os dous lados da ponte.",
+   "source": "significados/significado",
+   "pack": false
   },
   {
    "id": "gl_tutor_650780bb_22",
@@ -302476,6 +303781,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_694e00c2_39",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Sinala co dedo onde se alonga a sombra.",
+   "speech": "Sinala co dedo onde se alonga a sombra.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_69544cb2_7",
    "lang": "gl",
    "style": "tutor",
@@ -303230,6 +304544,15 @@
    "speech": "Canón de confeti",
    "source": "tpr.5_6.febreiro/s1/5_6.febreiro.s1.confetti-cannon/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_6bb0e17d_6",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Sorrí!",
+   "speech": "Sorrí!",
+   "source": "significados/significado",
+   "pack": false
   },
   {
    "id": "gl_tutor_6bbb1fe1_39",
@@ -304807,6 +306130,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_6fc0b93d_14",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Ollos grandes!",
+   "speech": "Ollos grandes!",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_6fc636c9_34",
    "lang": "gl",
    "style": "tutor",
@@ -305092,6 +306424,15 @@
    "text": "Vai, barco, vai!",
    "speech": "Vai, barco, vai!",
    "source": "steam/STEAM-2_3-10/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_70868a66_38",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Facede o xiro xunto á esquina marcada.",
+   "speech": "Facede o xiro xunto á esquina marcada.",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -306626,6 +307967,15 @@
    "style": "tutor",
    "text": "Mira, vai calor! Lúa xoga coa auga!",
    "speech": "Mira, vai calor! Lúa xoga coa auga!",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_74494849_18",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Xira o sol e mira!",
+   "speech": "Xira o sol e mira!",
    "source": "significados/significado",
    "pack": false
   },
@@ -308961,6 +310311,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_7a6f94ee_117",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Coloca dous ou tres obxectos seguros na mesa. Lúa amosa sobre a mesa onde vai cada peza: sinala ou encaixa sen présa.",
+   "speech": "Coloca dous ou tres obxectos seguros na mesa. Lúa amosa sobre a mesa onde vai cada peza: sinala ou encaixa sen présa.",
+   "source": "escoita/ar/ra_curso_2_3_m01/guia",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_7a7161f0_31",
    "lang": "gl",
    "style": "tutor",
@@ -310246,6 +311605,15 @@
    "speech": "Repartir por igual",
    "source": "tpr.5_6.novembro/s2/5_6.novembro.s2.share-equally/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_7da325fa_32",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Pesado, lixeiro, nivela a ponte!",
+   "speech": "Pesado, lixeiro, nivela a ponte!",
+   "source": "significados/significado",
+   "pack": false
   },
   {
    "id": "gl_tutor_7dbdb03e_10",
@@ -317583,6 +318951,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_9053220b_36",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Soltádeo e mirade como chega abaixo.",
+   "speech": "Soltádeo e mirade como chega abaixo.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_9054c6c9_29",
    "lang": "gl",
    "style": "tutor",
@@ -317988,6 +319365,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_9132bba0_30",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Aluma o obxecto desde un lado.",
+   "speech": "Aluma o obxecto desde un lado.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_91360fde_10",
    "lang": "gl",
    "style": "tutor",
@@ -318300,6 +319686,15 @@
    "text": "Debaixo das pedras! Arrástrate coma unha serpe",
    "speech": "Debaixo das pedras! Arrástrate coma unha serpe",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_921fa6a0_76",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Ordeamos os pasos de coidado en serie de tres: chegar, descansar e celebrar.",
+   "speech": "Ordeamos os pasos de coidado en serie de tres: chegar, descansar e celebrar.",
+   "source": "escoita/ar/ra_curso_3_4_m02/guia",
    "pack": false
   },
   {
@@ -319122,6 +320517,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_940a1d2c_17",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Move a man amodo!",
+   "speech": "Move a man amodo!",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_940c98eb_10",
    "lang": "gl",
    "style": "tutor",
@@ -319473,6 +320877,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_94e596c4_16",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Xunta os beizos!",
+   "speech": "Xunta os beizos!",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_94ebc17d_21",
    "lang": "gl",
    "style": "tutor",
@@ -319678,6 +321091,15 @@
    "speech": "Limpo e fresco",
    "source": "tpr.0_2.setembro/s4/0_2.setembro.s4.fresh-and-clean/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_95a8c3cf_33",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Roda cara abaixo, rápido e amodo!",
+   "speech": "Roda cara abaixo, rápido e amodo!",
+   "source": "significados/significado",
+   "pack": false
   },
   {
    "id": "gl_tutor_95ac650c_11",
@@ -323466,6 +324888,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_9f327c7f_36",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Sinala a silueta igual no taboleiro.",
+   "speech": "Sinala a silueta igual no taboleiro.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_9f36855c_43",
    "lang": "gl",
    "style": "tutor",
@@ -323895,6 +325326,15 @@
    "style": "tutor",
    "text": "Mira, Lúa rega a planta. Vai calor!",
    "speech": "Mira, Lúa rega a planta. Vai calor!",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_a06297e6_33",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Sopro longo e suave sobre a mesa.",
+   "speech": "Sopro longo e suave sobre a mesa.",
    "source": "significados/significado",
    "pack": false
   },
@@ -325389,6 +326829,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_a4b9e134_78",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Xuntade os beizos coma un bico silencioso diante do espello ata encher o anel.",
+   "speech": "Xuntade os beizos coma un bico silencioso diante do espello ata encher o anel.",
+   "source": "escoita/ar/face/L01.ar4/guia",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_a4b9ff5f_14",
    "lang": "gl",
    "style": "tutor",
@@ -326229,6 +327678,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_a6c8c1f3_39",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Pon o boneco ou peza no punto de saída.",
+   "speech": "Pon o boneco ou peza no punto de saída.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_a6d6bf85_46",
    "lang": "gl",
    "style": "tutor",
@@ -326541,6 +327999,15 @@
    "text": "Suxeita un xiz imaxinario entre os dedos listo para debuxar no chan.",
    "speech": "Suxeita un xiz imaxinario entre os dedos listo para debuxar no chan.",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_a7e6a229_113",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Sobre a mesa vese o percorrido. Move o obxecto coas mans pola liña marcada mentres escoitades as ordes en inglés.",
+   "speech": "Sobre a mesa vese o percorrido. Move o obxecto coas mans pola liña marcada mentres escoitades as ordes en inglés.",
+   "source": "escoita/ar/ra_curso_2_3_m02/guia",
    "pack": false
   },
   {
@@ -328731,6 +330198,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_ad593c1b_30",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Emparella cada sitio primeiro!",
+   "speech": "Emparella cada sitio primeiro!",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_ad623b6e_52",
    "lang": "gl",
    "style": "tutor",
@@ -330106,6 +331582,15 @@
    "speech": "Vestirse",
    "source": "tpr.2_3.decembro/s3/2_3.decembro.s3.get-dressed/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_b144e10f_92",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Comparade un obxecto pesado e un lixeiro sobre a ponte debuxada na mesa: cal inclina o lado?",
+   "speech": "Comparade un obxecto pesado e un lixeiro sobre a ponte debuxada na mesa: cal inclina o lado?",
+   "source": "escoita/ar/ra_curso_2_3_m05/guia",
+   "pack": false
   },
   {
    "id": "gl_tutor_b14d4f98_15",
@@ -333321,6 +334806,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_b972188b_28",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Para, agarda e cruza seguro!",
+   "speech": "Para, agarda e cruza seguro!",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_b972f5f9_35",
    "lang": "gl",
    "style": "tutor",
@@ -335051,6 +336545,15 @@
    "text": "Si, a ra está soa. Plas, plas, ra pequena!",
    "speech": "Si, a ra está soa. Plas, plas, ra pequena!",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_be64ffa8_64",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Secuencia tranquila: cando baixa o movemento, Lúa esperta feliz.",
+   "speech": "Secuencia tranquila: cando baixa o movemento, Lúa esperta feliz.",
+   "source": "escoita/ar/ra_curso_5_6_m03/guia",
    "pack": false
   },
   {
@@ -337831,6 +339334,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_c6644a43_93",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Coa mesa iluminada ou cunha lanterna, observade onde cae a sombra e como xira ao mover a luz.",
+   "speech": "Coa mesa iluminada ou cunha lanterna, observade onde cae a sombra e como xira ao mover a luz.",
+   "source": "escoita/ar/ra_curso_2_3_m06/guia",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_c6669d59_32",
    "lang": "gl",
    "style": "tutor",
@@ -338818,6 +340330,15 @@
    "text": "Palmas, palmas! Caixa! Bota, bota, para!",
    "speech": "Palmas, palmas! Caixa! Bota, bota, para!",
    "source": "biblioteca/HIS-054/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_c8eaa57e_62",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Cando a man vai amodo pola mesa, acéndese o recuncho de calma.",
+   "speech": "Cando a man vai amodo pola mesa, acéndese o recuncho de calma.",
+   "source": "escoita/ar/ra_curso_5_6_m07/guia",
    "pack": false
   },
   {
@@ -340392,6 +341913,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_cd1a270a_54",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Seguide o camiño lóxico ata a diana tocando cada paso.",
+   "speech": "Seguide o camiño lóxico ata a diana tocando cada paso.",
+   "source": "escoita/ar/ra_curso_2_3_m07/guia",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_cd1ba3f6_49",
    "lang": "gl",
    "style": "tutor",
@@ -340804,6 +342334,15 @@
    "speech": "Idade",
    "source": "tpr.5_6.xaneiro/s3/5_6.xaneiro.s3.age/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_ce4eb86d_68",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Inflade as meixelas con aire e soltádeo amodo para lanzar o peixiño.",
+   "speech": "Inflade as meixelas con aire e soltádeo amodo para lanzar o peixiño.",
+   "source": "escoita/ar/face/L07.ar5/guia",
+   "pack": false
   },
   {
    "id": "gl_tutor_ce53925a_17",
@@ -343947,6 +345486,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_d62bfc47_67",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Dádelle a cada peza o seu turno en orde mentres Lúa agarda na mesa.",
+   "speech": "Dádelle a cada peza o seu turno en orde mentres Lúa agarda na mesa.",
+   "source": "escoita/ar/ra_curso_4_5_m10/guia",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_d62d3fe2_37",
    "lang": "gl",
    "style": "tutor",
@@ -345366,6 +346914,15 @@
    "text": "pequena",
    "speech": "pequena",
    "source": "escoita/curso_2_3/3/small/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_da336895_114",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Ponte diante da cámara co neno ou coa nena. Cando abrades a boca grande en silencio, o coche avanza pola pantalla.",
+   "speech": "Ponte diante da cámara co neno ou coa nena. Cando abrades a boca grande en silencio, o coche avanza pola pantalla.",
+   "source": "escoita/ar/face/L01.ar1/guia",
    "pack": false
   },
   {
@@ -350444,6 +352001,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_e7e14502_21",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Un, dous, tres pasos!",
+   "speech": "Un, dous, tres pasos!",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_e7e33a79_64",
    "lang": "gl",
    "style": "tutor",
@@ -350585,6 +352151,15 @@
    "text": "Si, suave! Toalla suave!",
    "speech": "Si, suave! Toalla suave!",
    "source": "biblioteca/HIS-032/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_e83a1f12_82",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Coloca dous obxectos a cada lado e axuda ao neno ou á nena a sinalar cal mira Lúa.",
+   "speech": "Coloca dous obxectos a cada lado e axuda ao neno ou á nena a sinalar cal mira Lúa.",
+   "source": "escoita/ar/ra_curso_4_5_m03/guia",
    "pack": false
   },
   {
@@ -350927,6 +352502,15 @@
    "text": "Un can! Un can enlamado! Pernas enlamadas!",
    "speech": "Un can! Un can enlamado! Pernas enlamadas!",
    "source": "biblioteca/HIS-073/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_e90e5754_30",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Toque suave cos dedos na mesa.",
+   "speech": "Toque suave cos dedos na mesa.",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -351404,6 +352988,15 @@
    "text": "Por que a luz da parede ten unha cor nova?",
    "speech": "Por que a luz da parede ten unha cor nova?",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_ea7938f6_91",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Mirade á gata Lúa no espello: cun sorriso amplo sen dicir nada, Lúa dá un salto de alegría.",
+   "speech": "Mirade á gata Lúa no espello: cun sorriso amplo sen dicir nada, Lúa dá un salto de alegría.",
+   "source": "escoita/ar/face/L07.ar6/guia",
    "pack": false
   },
   {
@@ -353774,6 +355367,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_f0fdb9f2_12",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Abre a boca!",
+   "speech": "Abre a boca!",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_f1077385_26",
    "lang": "gl",
    "style": "tutor",
@@ -355626,6 +357228,15 @@
    "speech": "Contar",
    "source": "tpr.3_4.decembro/s4/3_4.decembro.s4.count/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_f5d722c0_104",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Golpea amodo ou forte na mesa mentres as ondas medran sobre o centro. Sinalade ondas grandes e pequenas.",
+   "speech": "Golpea amodo ou forte na mesa mentres as ondas medran sobre o centro. Sinalade ondas grandes e pequenas.",
+   "source": "escoita/ar/ra_curso_2_3_m04/guia",
+   "pack": false
   },
   {
    "id": "gl_tutor_f5dbadf1_36",

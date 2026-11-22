@@ -202,6 +202,41 @@
           }
         }
       }
+    },
+    "ra": {
+      "numero": "5",
+      "titulo": {
+        "gl": "Realidade aumentada con Lúa",
+        "es": "Realidad aumentada con Lúa"
+      },
+      "subtitulo_casa": {
+        "gl": "A escena STEAM do mes sobre a mesa e o espello de Lúa en inglés. O neno sinala, toca ou fai o xesto; nunca se lle pide que repita.",
+        "es": "La escena STEAM del mes sobre la mesa y el espejo de Lúa en inglés. El niño señala, toca o hace el gesto; nunca se le pide que repita."
+      },
+      "subtitulo_aula": {
+        "gl": "Na asemblea coa mesa diante: proxectamos a escena do mes ou xogamos co espello facial. Sen gardar fotos nin pedir que repitan.",
+        "es": "En la asamblea con la mesa delante: proyectamos la escena del mes o jugamos con el espejo facial. Sin guardar fotos ni pedir que repitan."
+      },
+      "abrir_mesa": {
+        "gl": "Abrir escena na mesa",
+        "es": "Abrir escena en la mesa"
+      },
+      "abrir_espello": {
+        "gl": "Espello de Lúa (cámara frontal)",
+        "es": "Espejo de Lúa (cámara frontal)"
+      },
+      "modo_sen_camara": {
+        "gl": "Versión sen cámara (láminas e voz)",
+        "es": "Versión sin cámara (láminas y voz)"
+      },
+      "aviso_sen_arcore": {
+        "gl": "Este aparello non ten cámara nin soporte ARCore. Podedes usar a versión sen cámara coas láminas e a voz de Lúa.",
+        "es": "Este dispositivo no tiene cámara ni soporte ARCore. Podéis usar la versión sin cámara con las láminas y la voz de Lúa."
+      },
+      "aviso_privacidade": {
+        "gl": "A cámara procésase só na memoria do móbil durante o xogo: non se gardan fotos, vídeo nin trazos da cara e nada sae do aparello.",
+        "es": "La cámara se procesa solo en la memoria del móvil durante el juego: no se guardan fotos, vídeo ni rasgos de la cara y nada sale del dispositivo."
+      }
     }
   },
   "zero_dous": {

@@ -174,6 +174,11 @@ class _CreditsScreenState extends State<CreditsScreen> {
     es: 'Pratham Books / StoryWeaver (global-asp/pb-imagebank). Licencia CC BY 4.0, solo para escenas de apoyo con su ilustrador en ATTRIBUTION.md.',
   );
 
+  static const _arNativeLibsDesc = LocalizedString(
+    gl: 'Google ARCore SDK, Google Filament e Google MediaPipe Tasks Vision (Apache License 2.0, NOTICE en assets/third_party/ar-apache-2.0/NOTICE.txt). Todo o procesado da cámara faise na memoria RAM e nunca se garda nin se envía.',
+    es: 'Google ARCore SDK, Google Filament y Google MediaPipe Tasks Vision (Apache License 2.0, NOTICE en assets/third_party/ar-apache-2.0/NOTICE.txt). Todo el procesado de cámara se hace en memoria RAM y nunca se guarda ni se envía.',
+  );
+
   static const _contactKicker = LocalizedString(gl: 'CONTACTO', es: 'CONTACTO');
 
   @override
@@ -377,6 +382,11 @@ class _CreditsScreenState extends State<CreditsScreen> {
                         _Entry(
                           name: 'PB Image Bank',
                           detail: _pbImageBankDesc.resolve(currentLanguage),
+                        ),
+                        const SizedBox(height: AppTheme.spaceMd),
+                        _Entry(
+                          name: 'ARCore SDK, Filament & MediaPipe',
+                          detail: _arNativeLibsDesc.resolve(currentLanguage),
                         ),
                       ],
                     ),

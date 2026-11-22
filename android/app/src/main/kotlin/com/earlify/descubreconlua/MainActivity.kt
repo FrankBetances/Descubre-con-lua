@@ -1,26 +1,31 @@
 package com.earlify.descubreconlua
 
+import android.content.Intent
 import android.content.res.AssetFileDescriptor
 import android.media.AudioAttributes
 import android.media.MediaPlayer
+import com.earlify.descubreconlua.ar.ArBridge
 import io.flutter.embedding.android.FlutterActivity
 import io.flutter.embedding.engine.FlutterEngine
 import io.flutter.plugin.common.MethodChannel
 
 /**
- * Hosts the offline audio bridge.
+ * Hosts the offline audio and local AR bridges.
  *
  * Playback goes through the platform's own MediaPlayer reading a bundled asset
- * file descriptor. No third-party audio library is added, so the release APK
- * keeps zero dependencies that could open a network connection.
+ * file descriptor. AR uses local-only ARCore/Filament/MediaPipe with zero
+ * network permissions and volatile RAM frames only.
  */
 class MainActivity : FlutterActivity() {
 
     private var player: MediaPlayer? = null
     private var channel: MethodChannel? = null
+    private var arBridge: ArBridge? = null
 
     override fun configureFlutterEngine(flutterEngine: FlutterEngine) {
         super.configureFlutterEngine(flutterEngine)
+
+        arBridge = ArBridge(this).also { it.attach(flutterEngine) }
 
         val methodChannel = MethodChannel(
             flutterEngine.dartExecutor.binaryMessenger,
@@ -129,8 +134,19 @@ class MainActivity : FlutterActivity() {
     private fun flutterLoader() =
         io.flutter.FlutterInjector.instance().flutterLoader()
 
+    @Deprecated("Deprecated in Java")
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        if (arBridge?.onActivityResult(requestCode, resultCode, data) == true) {
+            return
+        }
+        @Suppress("DEPRECATION")
+        super.onActivityResult(requestCode, resultCode, data)
+    }
+
     override fun onDestroy() {
         releasePlayer()
+        arBridge?.detach()
+        arBridge = null
         channel?.setMethodCallHandler(null)
         channel = null
         super.onDestroy()

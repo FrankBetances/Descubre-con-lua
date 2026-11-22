@@ -1,4 +1,4 @@
-# Licencia de «Descubre con Lúa · Edición Vigo»
+# Licencia de «Descubre con Lúa»
 
 **Versión 1.0 · 13 de septiembre de 2026**
 
@@ -31,7 +31,7 @@ ajenos (apartado 7).
 ## 2. Definiciones
 
 - **Uso personal o familiar**: el que hace una persona física, por su cuenta,
-  en su propio ámbito doméstico o con las criaturas a su cargo, sin cobrar a
+  en su propio ámbito doméstico o con los niños y niñas a su cargo, sin cobrar a
   nadie por ello y sin actuar por cuenta de ninguna entidad.
 - **Uso institucional**: cualquier uso realizado por una persona jurídica o una
   administración pública, o por alguien que actúa por cuenta de ellas, **aunque
@@ -113,9 +113,9 @@ concede al titular el derecho a incorporarla bajo esta misma licencia.
 
 Los logotipos institucionales que aparecen en los créditos —Consorcio da Zona
 Franca de Vigo, programa startTIC— **son marcas de sus titulares y no se
-licencian aquí**. Su presencia acredita una colaboración; no implica que quien
-reciba esta licencia pueda usarlos. El Concello de Vigo consta por su nombre,
-sin logotipo. Ver `assets/brand/logos/README.md`.
+licencian aquí**. Su presencia acredita una colaboración de procedencia; no
+implica que quien reciba esta licencia pueda usarlos. Ver
+`assets/brand/logos/README.md`.
 
 ## 8. Componentes de terceros
 
@@ -134,6 +134,9 @@ queda fuera del alcance de este documento:
 | Iconify (sets MIT/Apache/CC0) y Game Icons | Pictogramas de apoyo convertidos en compilación | MIT, Apache 2.0, CC0 1.0 y CC BY 3.0 (`tools/banco/iconify-icon-sets/` y `ATTRIBUTION.md`) |
 | Vocabulary Flashcard Dataset (dnizfor) | Ilustraciones raster de vocabulario (sin marcas ni personajes) | MIT (`tools/banco/dnizfor-vocabulary-flashcard/` y `ATTRIBUTION.md`) |
 | PB Image Bank (global-asp/pb-imagebank) | Escenas de apoyo de Pratham Books / StoryWeaver | CC BY 4.0 con crédito al ilustrador (`tools/banco/pb-imagebank/` y `ATTRIBUTION.md`) |
+| Google ARCore SDK (`com.google.ar:core`) | Rastreo de planos AR en dispositivo | Apache License 2.0 (`assets/third_party/ar-apache-2.0/NOTICE.txt`) |
+| Google Filament (`filament-android`, `gltfio-android`, `filament-utils-android`) | Renderizado 3D PBR local de los modelos glTF/GLB y escenarios | Apache License 2.0 (`assets/third_party/ar-apache-2.0/NOTICE.txt`) |
+| Google MediaPipe Tasks Vision (`tasks-vision` + `face_landmarker.task`) | Detección facial efímera en memoria RAM | Apache License 2.0 (`assets/third_party/ar-apache-2.0/NOTICE.txt`) |
 
 Los modelos de voz y los repositorios originales de imágenes **no viajan en la
 aplicación y no se ejecutan en el dispositivo**: solo se usan en tiempo de
@@ -152,7 +155,7 @@ no responde de ningún daño derivado del uso o de la imposibilidad de uso.
 
 **«Descubre con Lúa» no es un producto sanitario.** No evalúa, no diagnostica, no
 criba, no trata y no sustituye a ningún profesional. No debe usarse para
-tomar decisiones clínicas ni para valorar el desarrollo de ninguna criatura. Los
+tomar decisiones clínicas ni para valorar el desarrollo de ningún niño o niña. Los
 tiempos, actividades y sugerencias que ofrece son orientación pedagógica.
 
 Usar la aplicación con una finalidad sanitaria **está fuera de esta licencia** y
@@ -178,7 +181,7 @@ retira derechos ya concedidos sobre una instalación existente.
 
 ---
 
-# License of «Descubre con Lúa · Edición Vigo» (English translation)
+# License of «Descubre con Lúa» (English translation)
 
 **Version 1.0 · 13 September 2026** · Rights holder: **Earlify Health S.L.**,
 with Dr. Frank Alberto Betances Reinoso as author ·
@@ -210,7 +213,9 @@ author's crest to identify a third party's products or services.
 
 **Third-party components keep their own licences** and fall outside this
 document: the Nunito typeface (SIL OFL 1.1, `assets/fonts/OFL.txt`), Flutter,
-Dart and their packages, the Celtia, Sharvard and LJSpeech voice models, and
+Dart and their packages, the Celtia, Sharvard and LJSpeech voice models,
+Google ARCore SDK, Google Filament and Google MediaPipe Tasks Vision (Apache 2.0,
+notice in `assets/third_party/ar-apache-2.0/NOTICE.txt`), and
 the image banks listed in section 8 and `ATTRIBUTION.md` — Microsoft Fluent Emoji
 (Flat, MIT), Iconify open sets (MIT, Apache 2.0, CC0) and Game Icons (CC BY 3.0),
 Vocabulary Flashcard Dataset (dnizfor, MIT), and PB Image Bank (CC BY 4.0,

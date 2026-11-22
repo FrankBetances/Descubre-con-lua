@@ -116,6 +116,30 @@ class BloquePensamosUi {
   });
 }
 
+class BloqueRaUi {
+  final String numero;
+  final LocalizedString titulo;
+  final LocalizedString subtituloCasa;
+  final LocalizedString subtituloAula;
+  final LocalizedString abrirMesa;
+  final LocalizedString abrirEspello;
+  final LocalizedString modoSenCamara;
+  final LocalizedString avisoSenArcore;
+  final LocalizedString avisoPrivacidade;
+
+  const BloqueRaUi({
+    required this.numero,
+    required this.titulo,
+    required this.subtituloCasa,
+    required this.subtituloAula,
+    required this.abrirMesa,
+    required this.abrirEspello,
+    required this.modoSenCamara,
+    required this.avisoSenArcore,
+    required this.avisoPrivacidade,
+  });
+}
+
 class EstimulacionUi {
   static const asset = 'assets/content/escoita/estimulacion_ui.json';
   static EstimulacionUi? _cache;
@@ -134,6 +158,7 @@ class EstimulacionUi {
   final BloqueProgresionUi progresion;
   final BloqueModeloUi modelo;
   final BloquePensamosUi pensamos;
+  final BloqueRaUi ra;
   final LocalizedString zeroDousEtiqueta;
   final LocalizedString zeroDousSenPreguntas;
   final LocalizedString zeroDousAulaNota;
@@ -155,6 +180,7 @@ class EstimulacionUi {
     required this.progresion,
     required this.modelo,
     required this.pensamos,
+    required this.ra,
     required this.zeroDousEtiqueta,
     required this.zeroDousSenPreguntas,
     required this.zeroDousAulaNota,
@@ -187,6 +213,7 @@ class EstimulacionUi {
     final bp = bl['progresion'] as Map<String, dynamic>;
     final bm = bl['modelo'] as Map<String, dynamic>;
     final bpe = bl['pensamos'] as Map<String, dynamic>;
+    final bra = bl['ra'] as Map<String, dynamic>;
     final zd = j['zero_dous'] as Map<String, dynamic>;
     final parsed = EstimulacionUi(
       titulo: LocalizedString.fromJson(j['titulo']),
@@ -244,6 +271,17 @@ class EstimulacionUi {
               aula: LocalizedString.fromJson(e.value['aula']),
             ),
         },
+      ),
+      ra: BloqueRaUi(
+        numero: bra['numero'] as String,
+        titulo: LocalizedString.fromJson(bra['titulo']),
+        subtituloCasa: LocalizedString.fromJson(bra['subtitulo_casa']),
+        subtituloAula: LocalizedString.fromJson(bra['subtitulo_aula']),
+        abrirMesa: LocalizedString.fromJson(bra['abrir_mesa']),
+        abrirEspello: LocalizedString.fromJson(bra['abrir_espello']),
+        modoSenCamara: LocalizedString.fromJson(bra['modo_sen_camara']),
+        avisoSenArcore: LocalizedString.fromJson(bra['aviso_sen_arcore']),
+        avisoPrivacidade: LocalizedString.fromJson(bra['aviso_privacidade']),
       ),
       zeroDousEtiqueta: LocalizedString.fromJson(zd['etiqueta']),
       zeroDousSenPreguntas: LocalizedString.fromJson(zd['sen_preguntas']),

@@ -269,7 +269,7 @@ manda el script:
 | `check_manual_build.py` | Que el PDF y el Word del manual salgan del HTML actual y no de uno anterior |
 | `check_legal_urls.py --offline` | Que las páginas legales de `docs/` existan, sean lo que dicen ser y lleven el correo fijo |
 | `flutter build apk --release` | Que el APK compile |
-| Permisos del APK | Que el **binario** no declare más permiso que el que inyecta AndroidX |
+| Permisos del APK | Que el **binario** no declare más permisos que el que inyecta AndroidX y `CAMERA` (para RA) |
 
 Los dos últimos solo corren sin `--fast`: son los que necesitan el SDK de
 Android. Por eso `--fast` da **22 de 22** y el run completo, **24 de 24**.
@@ -440,7 +440,9 @@ Las condiciones de una licencia institucional se acuerdan caso por caso y
 frank.alberto.betances.reinoso@gmail.com.
 
 Los componentes de terceros conservan su licencia: las tipografías Nunito y
-Fredoka (SIL OFL 1.1, en `assets/fonts/`), las imágenes de Fluent Emoji (MIT), Flutter y sus paquetes, y los modelos de
+Fredoka (SIL OFL 1.1, en `assets/fonts/`), las imágenes de Fluent Emoji (MIT),
+Google ARCore SDK, Google Filament y Google MediaPipe Tasks Vision (Apache 2.0,
+aviso NOTICE en `assets/third_party/ar-apache-2.0/NOTICE.txt`), Flutter y sus paquetes, y los modelos de
 voz Celtia, Sharvard y LJSpeech, que **solo corren en compilación y nunca en el
 aparato**. Los logotipos institucionales son marcas de sus titulares y no se
 licencian aquí.

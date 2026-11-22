@@ -182,6 +182,20 @@
               "id": "estimulacionDi",
               "gl": "Escoita, palabras que medran, modelo e pensamento STEAM.",
               "es": "Escucha, palabras que crecen, modelo y pensamiento STEAM."
+            },
+            {
+              "id": "realidadeAumentada",
+              "gl": "Realidade aumentada con Lúa",
+              "es": "Realidad aumentada con Lúa",
+              "cabeceira": {
+                "gl": "RA con Lúa",
+                "es": "RA con Lúa"
+              }
+            },
+            {
+              "id": "realidadeAumentadaDi",
+              "gl": "A escena STEAM do mes na mesa e o espello facial en inglés.",
+              "es": "La escena STEAM del mes en la mesa y el espejo facial en inglés."
             }
           ]
         },
@@ -414,6 +428,20 @@
               "id": "estimulacionDi",
               "gl": "Para a asemblea: a docente guía e o grupo responde.",
               "es": "Para la asamblea: la docente guía y el grupo responde."
+            },
+            {
+              "id": "realidadeAumentada",
+              "gl": "Realidade aumentada con Lúa",
+              "es": "Realidad aumentada con Lúa",
+              "cabeceira": {
+                "gl": "RA con Lúa",
+                "es": "RA con Lúa"
+              }
+            },
+            {
+              "id": "realidadeAumentadaDi",
+              "gl": "Escena STEAM na mesa ou espello facial, sen gardar imaxes.",
+              "es": "Escena STEAM en mesa o espejo facial, sin guardar imágenes."
             },
             {
               "id": "programacion",

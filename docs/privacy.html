@@ -231,7 +231,7 @@
     </ul>
 
     <h2>3. Permisos Técnicos en el Dispositivo (Android)</h2>
-    <p>La aplicación no requiere ni solicita ningún permiso especial o peligroso en el sistema operativo Android. En particular:</p>
+    <p>La aplicación no solicita ningún permiso de red, ubicación ni almacenamiento externo. Únicamente solicita <code>android.permission.CAMERA</code> de forma opcional en el momento en que la persona adulta abre las experiencias de «Realidad aumentada con Lúa». En particular:</p>
     <table class="spec-table">
       <thead>
         <tr>
@@ -255,6 +255,11 @@
           <td><code>android.permission.ACCESS_FINE_LOCATION</code></td>
           <td><strong>No solicitado</strong></td>
           <td>No se accede a la localización.</td>
+        </tr>
+        <tr>
+          <td><code>android.permission.CAMERA</code></td>
+          <td><strong>Opcional (solo en RA)</strong></td>
+          <td>Solo cuando la persona adulta abre las experiencias de Realidad Aumentada o espejo facial con Lúa. Procesado 100% en RAM y descartado al momento; nunca se guarda ni envía foto, vídeo ni rasgo facial.</td>
         </tr>
         <tr>
           <td><code>android.permission.READ_EXTERNAL_STORAGE</code></td>
@@ -330,7 +335,8 @@
     <p><strong>Ningún (0 datos): a aplicación non envía nin recibe nada.</strong> A aplicación está deseñada baixo o principio de <em>Privacidade dende o Deseño</em>. Non solicita correos, contas nin localización, nin utiliza analítica, telemetría nin publicidade. Na casa pide o nome (ou alcume), a idade e o curso de cada neno para non preguntalo cada vez; queda só no aparello (apartado 4 bis).</p>
 
     <h2>3. Permisos Técnicos en Android</h2>
-    <p>A aplicación non inclúe nin require o permiso <code>android.permission.INTERNET</code> no seu manifesto de distribución, polo que lle é imposible transmitir información a través da rede.</p>
+    <p>A aplicación non inclúe nin require o permiso <code>android.permission.INTERNET</code> no seu manifesto de distribución, polo que lle é imposible transmitir información a través da rede. Só solicita o permiso <code>android.permission.CAMERA</code> (opcional) cando a persoa adulta abre «Realidade aumentada con Lúa» ou o espello facial: os fotogramas de ARCore e os puntos faciais de MediaPipe procésanse en memoria RAM en tempo real e descártanse ao instante; non se garda ningunha foto, vídeo nin dato facial no dispositivo.</p>
+    <p>Se o aparato non dispón de cámara ou ARCore, a app non se pecha nin bloquea: ofrece sempre a versión sen cámara con láminas e voz en inglés.</p>
 
     <h2>4. Privacidade da Infancia</h2>
     <p>Cumpre estritamente co RGPD europeo e a normativa de protección de menores. Ao non recoller ningún dato persoal —nada sae do aparello, e o rexistro de cada neno que escribe a familia queda nel—, garante a máxima seguridade para as aulas de educación infantil (0-6 anos) e as familias. A conta de uso da persoa adulta e o rexistro dos nenos quedan no aparello e bórranse ao desinstalar.</p>
@@ -368,7 +374,7 @@
     <p>The app does keep a local usage count for the adult who uses it, in the app's private folder on the device: how many assemblies were led and capsules read, the current and best streak, the date of the last active day (date only, no time), the identifiers of the badges earned, — if the School · Home Calendar is used — for each marked day, the date (yyyy-mm-dd, no time) with two flags: classroom and home; — if the adult uses the «Today I did» list at the end of the Today screen — which items of that closed list the adult ticked that day (identifiers from the list only, never free text, never anything about a child), and — if the adult uses the English trainer — one spaced-repetition card per English word from the app's own catalogue: the word, the scheduling numbers (difficulty, stability, repetitions, lapses) and the two review dates, again as dates only, no time. At home only (Academy), in a separate file (<code>criancas.json</code>), the family may register each child: the name or nickname they type, the age in years and the app course; which child was seen last; and — if the adult uses the results screen — per course week (no date, no time) which English words of that week the adult marked as «understands» or «says», and the child's Lúa rewards (points, level, streak, badges and the cat's accessories, with two dates as day only). It is the adult's own observation, not an assessment, and it can be deleted in the app or by uninstalling. No child is registered in the classroom. No device identifiers. Nothing leaves the device: the release APK has no network permission.</p>
 
     <h2>3. Device Permissions</h2>
-    <p>The release APK explicitly excludes <code>android.permission.INTERNET</code>. The application cannot communicate with any remote servers.</p>
+    <p>The release APK explicitly excludes <code>android.permission.INTERNET</code>. The application cannot communicate with any remote servers. It declares <code>android.permission.CAMERA</code> as an optional permission solely for adult-initiated Augmented Reality (AR) and face mirror activities with Lúa. All camera frames and face landmarks are processed locally in volatile RAM and discarded immediately; nothing is stored on disk or transmitted. A camera-free fallback with visual cards and audio is always available.</p>
 
     <h2>4. Children's Privacy Compliance</h2>
     <p>Complies with Google Play Families Policy, COPPA, and GDPR. Safe for early childhood educators and parents.</p>

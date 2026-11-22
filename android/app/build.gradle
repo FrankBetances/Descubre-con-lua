@@ -60,7 +60,7 @@ android {
     // MediaPlayer abre las grabaciones con openFd, que solo funciona sobre
     // ficheros sin comprimir dentro del paquete.
     androidResources {
-        noCompress += 'm4a'
+        noCompress += ['m4a', 'task', 'glb', 'vmesh']
     }
 
     defaultConfig {
@@ -104,5 +104,11 @@ flutter {
 }
 
 dependencies {
-    // Pure offline application with zero network libraries
+    // Offline AR engine dependencies (all Apache-2.0, zero network libraries)
+    implementation 'com.google.ar:core:1.54.0'
+    implementation 'com.google.android.filament:filament-android:1.72.1'
+    implementation 'com.google.android.filament:gltfio-android:1.72.1'
+    implementation 'com.google.android.filament:filament-utils-android:1.72.1'
+    implementation 'com.google.mediapipe:tasks-vision:0.10.29'
+    implementation 'androidx.activity:activity-ktx:1.10.1'
 }

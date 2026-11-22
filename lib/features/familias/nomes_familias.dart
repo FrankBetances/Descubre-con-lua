@@ -66,6 +66,16 @@ class NomesFamilias {
   static const estimulacionDi = LocalizedString(
       gl: 'Escoita, palabras que medran, modelo e pensamento STEAM.',
       es: 'Escucha, palabras que crecen, modelo y pensamiento STEAM.');
+  static const realidadeAumentada = LocalizedString(
+      gl: 'Realidade aumentada con Lúa', es: 'Realidad aumentada con Lúa');
+
+  /// En la cabecera de su pantalla: «Realidade aumentada con Lúa» y «Realidad
+  /// aumentada con Lúa» no caben enteros a 360 px.
+  static const realidadeAumentadaCabeceira =
+      LocalizedString(gl: 'RA con Lúa', es: 'RA con Lúa');
+  static const realidadeAumentadaDi = LocalizedString(
+      gl: 'A escena STEAM do mes na mesa e o espello facial en inglés.',
+      es: 'La escena STEAM del mes en la mesa y el espejo facial en inglés.');
 
   // ------------------------------------------------------------------- guías
   static const antesDeEmpezar =

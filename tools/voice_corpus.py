@@ -928,6 +928,34 @@ def collect_locutions(content_dir: Path = CONTENT_DIR) -> list[Locution]:
                     if isinstance(m.get("modelo_significado"), dict):
                         _add(_localized(m["modelo_significado"]), "tutor", f"{fonte}/modelo/significado", seen)
 
+    # P10.4: Realidade aumentada adaptada ao inglés (cámara e espello facial L01/L07).
+    ar_json = content_dir / "escoita" / "ar_estimulacion.json"
+    if ar_json.exists():
+        ar_doc = json.loads(ar_json.read_text(encoding="utf-8"))
+        for act in ar_doc.get("actividades_faciais") or []:
+            fid = act.get("id", "face")
+            if act.get("frase_en"):
+                _one_neno(str(act["frase_en"]), f"escoita/ar/face/{fid}", seen)
+            _add({"gl": act.get("guia_gl", ""), "es": act.get("guia_es", "")},
+                 "tutor", f"escoita/ar/face/{fid}/guia", seen)
+            if isinstance(act.get("sig"), dict):
+                _add(_localized(act["sig"]), "tutor", f"escoita/ar/face/{fid}/sig", seen)
+        for esc in ar_doc.get("escenas") or []:
+            eid = esc.get("id", "ar")
+            for k, fr in enumerate(esc.get("frases_en") or []):
+                _one_neno(str(fr), f"escoita/ar/{eid}/frase/{k}", seen)
+            for k, pal in enumerate(esc.get("palabras_en") or []):
+                _one_neno(str(pal), f"escoita/ar/{eid}/palabra/{k}", seen)
+            if isinstance(esc.get("guia_adulto"), dict):
+                _add(_localized(esc["guia_adulto"]), "tutor", f"escoita/ar/{eid}/guia", seen)
+            if isinstance(esc.get("frase_cena_sig"), dict):
+                _add(_localized(esc["frase_cena_sig"]), "tutor", f"escoita/ar/{eid}/sig", seen)
+            spec = esc.get("scene_spec") or {}
+            for ev in spec.get("events") or []:
+                ep = ev.get("englishPhrase")
+                if ep:
+                    _one_neno(str(ep), f"escoita/ar/{eid}/ev/{ev.get('id', '?')}", seen)
+
     return sorted(seen.values(), key=lambda e: (e.lang, e.style, e.id))
 
 
