@@ -1734,7 +1734,7 @@
     "big hug": {
       "clave": "aperta",
       "orixe": "reutilizada",
-      "porque": "Dos criaturas dándose un abrazo grande.",
+      "porque": "Dos niños o niñas dándose un abrazo grande.",
       "fuente": "propia",
       "asset": "assets/brand/laminas/aperta.json",
       "sha": "6be3d38b",
@@ -4435,7 +4435,7 @@
     "chew": {
       "clave": "pal_chew",
       "orixe": "composta",
-      "porque": "Criatura con el carrillo lleno masticando despacio un bocado de manzana.",
+      "porque": "Niño o niña con el carrillo lleno masticando despacio un bocado de manzana.",
       "fuente": "composta",
       "asset": "tools/gen_laminas_tpr.py#chew",
       "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
@@ -7705,7 +7705,7 @@
     "drink water": {
       "clave": "pal_drink_water",
       "orixe": "nova",
-      "porque": "Criatura acercando el vaso de agua a la boca para beber.",
+      "porque": "Niño o niña acercando el vaso de agua a la boca para beber.",
       "fuente": "propia",
       "asset": "tools/gen_laminas_tpr.py#drink_water",
       "sha": "6be3d38b",
@@ -9435,7 +9435,7 @@
     "flamingo pose": {
       "clave": "pal_flamingo_pose",
       "orixe": "composta",
-      "porque": "Flamenco rosa en una pata imitado por una criatura en equilibrio.",
+      "porque": "Flamenco rosa en una pata imitado por un niño o una niña en equilibrio.",
       "fuente": "composta",
       "asset": "tools/gen_laminas_tpr.py#flamingo_pose",
       "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
@@ -10135,7 +10135,7 @@
     "freezing": {
       "clave": "pal_freezing",
       "orixe": "composta",
-      "porque": "Criatura tiritando helada entre copos de nieve y líneas de temblor.",
+      "porque": "Niño o niña tiritando helada entre copos de nieve y líneas de temblor.",
       "fuente": "composta",
       "asset": "tools/gen_laminas_tpr.py#freezing",
       "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
@@ -10195,7 +10195,7 @@
     "friendly": {
       "clave": "pal_friendly",
       "orixe": "nova",
-      "porque": "Dos criaturas sonrientes dándose la mano con gesto amigable.",
+      "porque": "Dos niños o niñas sonrientes dándose la mano con gesto amigable.",
       "fuente": "propia",
       "asset": "tools/gen_laminas_tpr.py#friendly",
       "sha": "6be3d38b",
@@ -12255,7 +12255,7 @@
     "head": {
       "clave": "cabeza",
       "orixe": "reutilizada",
-      "porque": "Cabeza de criatura con orejas y pelo, dibujo propio.",
+      "porque": "Cabeza de niño o niña con orejas y pelo, dibujo propio.",
       "fuente": "propia",
       "asset": "assets/brand/laminas/cabeza.json",
       "sha": "6be3d38b",
@@ -13545,7 +13545,7 @@
     "hydrated": {
       "clave": "pal_hydrated",
       "orixe": "composta",
-      "porque": "Criatura sonriente y fresca hidratándose con un vaso de agua limpia.",
+      "porque": "Niño o niña sonriente y fresca hidratándose con un vaso de agua limpia.",
       "fuente": "composta",
       "asset": "tools/gen_laminas_tpr.py#hydrated",
       "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
@@ -13795,7 +13795,7 @@
     "i'm a tiger": {
       "clave": "pal_i_m_a_tiger",
       "orixe": "composta",
-      "porque": "Tigre rayado y criatura imitando sus zarpas con alegría.",
+      "porque": "Tigre rayado y niño o niña imitando sus zarpas con alegría.",
       "fuente": "composta",
       "asset": "tools/gen_laminas_tpr.py#i_m_a_tiger",
       "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
@@ -15065,7 +15065,7 @@
     "kind": {
       "clave": "pal_kind",
       "orixe": "composta",
-      "porque": "Criatura amable ofreciendo una manzana con una sonrisa a su amiga.",
+      "porque": "Niño o niña amable ofreciendo una manzana con una sonrisa a su amiga.",
       "fuente": "composta",
       "asset": "tools/gen_laminas_tpr.py#kind",
       "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
@@ -15435,7 +15435,7 @@
     "laugh": {
       "clave": "pal_laugh",
       "orixe": "nova",
-      "porque": "Criatura riendo a carcajadas con destellos de alegría alrededor.",
+      "porque": "Niño o niña riendo a carcajadas con destellos de alegría alrededor.",
       "fuente": "propia",
       "asset": "tools/gen_laminas_tpr.py#laugh",
       "sha": "6be3d38b",
@@ -15855,7 +15855,7 @@
     "lick a lolly": {
       "clave": "pal_lick_a_lolly",
       "orixe": "nova",
-      "porque": "Criatura sacando la lengua para lamer un cucurucho de helado.",
+      "porque": "Niño o niña sacando la lengua para lamer un cucurucho de helado.",
       "fuente": "propia",
       "asset": "tools/gen_laminas_tpr.py#lick_a_lolly",
       "sha": "6be3d38b",
@@ -16555,7 +16555,7 @@
     "look through the binoculars": {
       "clave": "pal_look_through_the_binoculars",
       "orixe": "composta",
-      "porque": "Criatura mirando a lo lejos con unos prismáticos delante de los ojos.",
+      "porque": "Niño o niña mirando a lo lejos con unos prismáticos delante de los ojos.",
       "fuente": "composta",
       "asset": "tools/gen_laminas_tpr.py#look_through_the_binoculars",
       "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
@@ -16986,7 +16986,7 @@
     "marine life": {
       "clave": "pal_marine_life",
       "orixe": "composta",
-      "porque": "Criaturas vivas del mar nadando juntas bajo el agua.",
+      "porque": "Niños y niñas vivas del mar nadando juntas bajo el agua.",
       "fuente": "composta",
       "asset": "tools/gen_laminas_tpr.py#marine_life",
       "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
@@ -22406,7 +22406,7 @@
     "rested and happy": {
       "clave": "pal_rested_and_happy",
       "orixe": "composta",
-      "porque": "Criatura estirando los brazos contenta y descansada al despertar.",
+      "porque": "Niño o niña estirando los brazos contenta y descansada al despertar.",
       "fuente": "composta",
       "asset": "tools/gen_laminas_tpr.py#rested_and_happy",
       "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
@@ -24576,7 +24576,7 @@
     "shake the bottle": {
       "clave": "pal_shake_the_bottle",
       "orixe": "nova",
-      "porque": "Criatura agitando arriba y abajo una botella cerrada con granos dentro.",
+      "porque": "Niño o niña agitando arriba y abajo una botella cerrada con granos dentro.",
       "fuente": "propia",
       "asset": "tools/gen_laminas_tpr.py#shake_the_bottle",
       "sha": "6be3d38b",
@@ -27379,7 +27379,7 @@
     "stand like a heron": {
       "clave": "pal_stand_like_a_heron",
       "orixe": "composta",
-      "porque": "Criatura sosteniéndose en un pie imitando a la garza del agua.",
+      "porque": "Niño o niña sosteniéndose en un pie imitando a la garza del agua.",
       "fuente": "composta",
       "asset": "tools/gen_laminas_tpr.py#stand_like_a_heron",
       "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
@@ -28869,7 +28869,7 @@
     "swim like a fish": {
       "clave": "pal_swim_like_a_fish",
       "orixe": "composta",
-      "porque": "Pez tropical y criatura nadando juntos con las manos delante bajo el agua.",
+      "porque": "Pez tropical y niño o niña nadando juntos con las manos delante bajo el agua.",
       "fuente": "composta",
       "asset": "tools/gen_laminas_tpr.py#swim_like_a_fish",
       "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
@@ -28879,7 +28879,7 @@
     "swim underwater": {
       "clave": "pal_swim_underwater",
       "orixe": "nova",
-      "porque": "Criatura con gafas buceando por debajo de la línea de las olas con burbujas.",
+      "porque": "Niño o niña con gafas buceando por debajo de la línea de las olas con burbujas.",
       "fuente": "propia",
       "asset": "tools/gen_laminas_tpr.py#swim_underwater",
       "sha": "6be3d38b",
@@ -29109,7 +29109,7 @@
     "take a break": {
       "clave": "pal_take_a_break",
       "orixe": "nova",
-      "porque": "Criatura sentada en un banco descansando tranquila en una pausa.",
+      "porque": "Niño o niña sentada en un banco descansando tranquila en una pausa.",
       "fuente": "propia",
       "asset": "tools/gen_laminas_tpr.py#take_a_break",
       "sha": "6be3d38b",
@@ -29179,7 +29179,7 @@
     "take off": {
       "clave": "pal_take_off",
       "orixe": "nova",
-      "porque": "Criatura tirando hacia arriba para quitarse la camiseta.",
+      "porque": "Niño o niña tirando hacia arriba para quitarse la camiseta.",
       "fuente": "propia",
       "asset": "tools/gen_laminas_tpr.py#take_off",
       "sha": "6be3d38b",
@@ -29469,7 +29469,7 @@
     "taste sweet": {
       "clave": "pal_taste_sweet",
       "orixe": "composta",
-      "porque": "Criatura probando una cucharadita de miel dulce y sonriendo.",
+      "porque": "Niño o niña probando una cucharadita de miel dulce y sonriendo.",
       "fuente": "composta",
       "asset": "tools/gen_laminas_tpr.py#taste_sweet",
       "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
@@ -30509,7 +30509,7 @@
     "thirsty": {
       "clave": "pal_thirsty",
       "orixe": "composta",
-      "porque": "Criatura con calor y sed tendiendo la mano hacia un vaso de agua fresca.",
+      "porque": "Niño o niña con calor y sed tendiendo la mano hacia un vaso de agua fresca.",
       "fuente": "composta",
       "asset": "tools/gen_laminas_tpr.py#thirsty",
       "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
@@ -32239,7 +32239,7 @@
     "under the umbrella": {
       "clave": "pal_under_the_umbrella",
       "orixe": "composta",
-      "porque": "Dos criaturas resguardadas bajo un gran paraguas mientras llueve fuera.",
+      "porque": "Dos niños o niñas resguardadas bajo un gran paraguas mientras llueve fuera.",
       "fuente": "composta",
       "asset": "tools/gen_laminas_tpr.py#under_the_umbrella",
       "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
@@ -33419,7 +33419,7 @@
     "water bottle": {
       "clave": "pal_water_bottle",
       "orixe": "composta",
-      "porque": "Botella reutilizable de agua junto a una criatura dispuesta a dar un sorbo.",
+      "porque": "Botella reutilizable de agua junto a un niño o una niña dispuesta a dar un sorbo.",
       "fuente": "composta",
       "asset": "tools/gen_laminas_tpr.py#water_bottle",
       "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
@@ -33439,7 +33439,7 @@
     "water cup": {
       "clave": "pal_water_cup",
       "orixe": "nova",
-      "porque": "Vaso propio lleno de agua limpia junto a la criatura para beber.",
+      "porque": "Vaso propio lleno de agua limpia junto al niño o a la niña para beber.",
       "fuente": "propia",
       "asset": "tools/gen_laminas_tpr.py#water_cup",
       "sha": "6be3d38b",

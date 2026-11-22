@@ -33,7 +33,7 @@ documentos anteriores.
 - **Cinco estrategias**, formación de entrada de seis pasos por perfil y nota
   para las casas sin botón de compartir.
 - **30 micro-rutinas de casa** en las asambleas del 2.º ciclo.
-- Nada guardado de ninguna criatura.
+- Nada guardado de ningún niño ni niña.
 
 ### Lo que rompe la arquitectura
 
@@ -87,7 +87,7 @@ documentos anteriores.
 | --- | --- | --- | --- |
 | D4 | Qué centro de interés manda | **La asamblea del mes.** El núcleo, los cuentos nuevos, los juegos y la casa siguen su centro de interés | M3.x, M5.x, M6.x |
 | D6 | Microcuentos | **Entran, y son esenciales.** Uno por unidad desde 2-3 años: 40 microcuentos y unas 140 láminas | O5 |
-| D3 | Pedir repetir | **Prohibido en gl, es y en**, vigilado por `tools/check_sin_repetir.py`. Las órdenes de 6.º que esperan que la criatura use una fórmula de turno (*Here you go*, *Your turn*) **se quedan**: no piden repetir un modelo | M2.4 |
+| D3 | Pedir repetir | **Prohibido en gl, es y en**, vigilado por `tools/check_sin_repetir.py`. Las órdenes de 6.º que esperan que el niño o la niña use una fórmula de turno (*Here you go*, *Your turn*) **se quedan**: no piden repetir un modelo | M2.4 |
 
 **Pendientes.** Se trabaja con la opción marcada mientras Frank no conteste. El
 módulo que la usa no se cierra sin la respuesta.

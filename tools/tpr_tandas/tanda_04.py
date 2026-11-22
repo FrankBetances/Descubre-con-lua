@@ -651,7 +651,7 @@ def _escenas() -> dict[str, tuple[str, list[dict], str, str | None]]:
         "Agua templada probada con cuidado metiendo la punta del codo.")
     put("marine life", "C",
         fondo_mar() + fl("Tropical fish", 20, 24, 38) + fl("Octopus", 62, 30, 40) + fl("Crab", 104, 38, 36),
-        "Criaturas vivas del mar nadando juntas bajo el agua.")
+        "Niños y niñas vivas del mar nadando juntas bajo el agua.")
     put("melted water", "C",
         fondo_mesa() + fl("Ice", 24, 24, 42) + frecha((70, 44), (88, 44), AZUL_OSCURO, 2.4) + charco_prop(118, 62, 24, 8),
         "Cubito de hielo derritiéndose hasta convertirse en charco de agua líquida.")

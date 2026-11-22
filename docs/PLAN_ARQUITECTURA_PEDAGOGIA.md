@@ -13,8 +13,8 @@ describe; no la duplica.
 
 ## 1. Fuentes y orden de mando
 
-1. **Reglas de producto.** La criatura no usa la pantalla. Cero datos de una
-   crianza. Sin red. Nada sanitario. El contenido vive en JSON. El pulso se ve,
+1. **Reglas de producto.** El niño o la niña no usa la pantalla. Cero datos de una
+   neno ou nena. Sin red. Nada sanitario. El contenido vive en JSON. El pulso se ve,
    no se oye.
 2. **Normativa gallega, leída en el DOG**: Decreto 150/2022, Orden de 30 de
    mayo de 2023 y Decreto 79/2010.
@@ -35,7 +35,7 @@ pantalla sin contrastarla con su fuente primaria.
 Salen de los cinco textos, filtrados por las fuentes 1 a 3.
 
 1. **Habla una persona, no la app.** La grabación sirve para que la adulta se
-   prepare. La criatura la oye a ella, con su cara, su gesto y el objeto.
+   prepare. El niño o la niña la oye a ella, con su cara, su gesto y el objeto.
 2. **Primero se comprende, después se habla.** La respuesta esperada es el
    cuerpo: señalar, hacer el gesto, coger el objeto. Que hable es un regalo, no
    una meta del día.
@@ -45,7 +45,7 @@ Salen de los cinco textos, filtrados por las fuentes 1 a 3.
 4. **Una sola unidad por mes.** Todo lo del mes (asamblea, cuento, juego, casa)
    sale del mismo centro de interés y del mismo núcleo.
 5. **La lengua de casa es bienvenida.** La trama y la interfaz van en gallego y
-   en castellano. Lúa pone el inglés. Si la criatura contesta en gallego o en
+   en castellano. Lúa pone el inglés. Si el niño o la niña contesta en gallego o en
    castellano, se acoge y se devuelve en inglés, sin corregir.
 6. **Nunca se pide repetir ni se corrige de forma explícita**, en ninguna
    lengua.
@@ -203,15 +203,15 @@ varias; vale esta.
 
 | Herramienta | Qué hace | Lo que no hace |
 | --- | --- | --- |
-| **Habla paralela** | Dice en presente lo que la criatura hace y mira, con frases cortas y pausas | Preguntas de examen; narrar lo que la criatura ya no mira; monólogo sin pausas |
+| **Habla paralela** | Dice en presente lo que el niño o la niña hace y mira, con frases cortas y pausas | Preguntas de examen; narrar lo que el niño o la niña ya no mira; monólogo sin pausas |
 | **Espera, en tres tiempos** | (1) Dice o pregunta y calla de 3 a 5 s. (2) Si llega respuesta, recast o expansión en el turno siguiente. (3) Otra espera de unos 3 s antes del elogio o de lo siguiente | Rellenar el silencio; preguntas en ráfaga; «Good job!» al instante |
 | **Expansión** | Devuelve la palabra suelta dentro de una frase uno o dos elementos más larga | Discursos; repetir en telegráfico |
-| **Recast** | Devuelve bien dicha la frase de la criatura, dentro de la conversación | «No», «se dice», «repite», «say», «can you say» |
+| **Recast** | Devuelve bien dicha la frase del niño o de la niña, dentro de la conversación | «No», «se dice», «repite», «say», «can you say» |
 | **Acoger la lengua de casa** | Valida en gl o es y devuelve la idea en inglés | Pedir la traducción |
 
 **Aula y casa no son lo mismo.** En el aula hay un grupo y una adulta: la
 espera es para el grupo, el recast se hace sobre la respuesta que llegue y la
-app no pide ni guarda nombres. En casa hay una criatura: las herramientas van
+app no pide ni guarda nombres. En casa hay un niño o una niña: las herramientas van
 tal cual, y en el cuento se lee con PEER (incitar, acoger, ampliar y retomar,
 sin pedir repetir) y CROWD (completar, recordar, abrir, qué/dónde y acercar),
 con una pregunta por lámina.
@@ -219,7 +219,7 @@ con una pregunta por lámina.
 ## 8. Indicaciones pedagógicas para el hogar
 
 La casa no es una versión reducida del aula. Allí hay **una persona adulta y
-una criatura**, sin grupo y sin horario lectivo, y las herramientas del
+un niño o una niña**, sin grupo y sin horario lectivo, y las herramientas del
 apartado 7 se aplican tal cual. Las indicaciones para el hogar son una capa
 propia de la arquitectura, con tres niveles. Cada nivel vive en su JSON, en
 gallego y en castellano, y ninguno se escribe en un widget.
@@ -230,13 +230,13 @@ Fichero: `assets/content/hogar/guia_hogar.json`. Reúne y sustituye lo que hoy
 está repartido entre `formacion/formacion.familia.json`, las reglas de
 `calendario/atencion.json` y la tarjeta de recast de Academy.
 
-1. **La app es para ti, no para la criatura.** Escuchas la frase, la aprendes y
-   la dices tú, con tu cara y tu gesto. El audio no se le pone a la criatura.
+1. **La app es para ti, no para el niño o la niña.** Escuchas la frase, la aprendes y
+   la dices tú, con tu cara y tu gesto. El audio no se le pone al niño o a la niña.
 2. **La lengua de casa es la base.** Sea gallego, castellano u otra, la casa
    sigue hablando su lengua. El inglés son unos minutos, nunca sustituye a
    nada.
 3. **Una lengua, una rutina.** El inglés va ligado a un momento fijo del día
-   (el baño, la merienda, el paseo), siempre el mismo, para que la criatura
+   (el baño, la merienda, el paseo), siempre el mismo, para que el niño o la niña
    sepa cuándo llega.
 4. **Pocos minutos, el mismo momento.** Entre 2 y 8 minutos según la edad
    (8.2). Mejor tres minutos cada día que media hora el sábado.
@@ -250,7 +250,7 @@ está repartido entre `formacion/formacion.familia.json`, las reglas de
    devuelves la frase bien dicha, sin señalar el error.
 9. **Las cuatro herramientas en casa**: habla paralela, espera en tres tiempos,
    expansión y recast. Cada una con un ejemplo doméstico.
-10. **No es una evaluación.** La app no guarda nada de tu criatura ni hace
+10. **No es una evaluación.** La app no guarda nada de tu niño o niña ni hace
     informes. Lo que cuenta la escuela de su progreso lo cuenta la escuela.
 
 ### 8.2 La guía por edad: cinco cursos
@@ -311,7 +311,7 @@ escriben enteros.
 - **La nota para las casas** cierra la asamblea con el reto de la semana. Es el
   **mismo identificador** que enseña Hoy en casa. Es de papel: se lee en alto y
   se copia, sin botón de compartir.
-- La frase del reto es una frase que la criatura ya ha oído esa semana en la
+- La frase del reto es una frase que el niño o la niña ya ha oído esa semana en la
   asamblea.
 - **El cuaderno viajero** de objetos reales se queda fuera de la app: es un
   objeto físico y, si la escuela lo usa, es cosa suya. La app no lo registra.
@@ -325,7 +325,7 @@ escriben enteros.
   1. cómo funciona: los apartados 2 a 8 de este documento, en lenguaje de aula
      y de casa;
   2. los objetivos del tramo, como texto que explica qué mirar;
-  3. qué no es un objetivo: una nota, un examen o que la criatura repita.
+  3. qué no es un objetivo: una nota, un examen o que el niño o la niña repita.
 - **Estrategias de aula**: siete fichas, las cinco que ya hay más el habla
   paralela y la expansión, con el mismo molde (por qué, cómo, ejemplo, error
   que evitar). La espera pasa a tres tiempos. El andamiaje en tres niveles
@@ -336,7 +336,7 @@ escriben enteros.
 
 ## 10. Observación y registro
 
-- **De la criatura no se guarda nada.** «Qué observar» nombra lo que se puede
+- **Del niño o de la niña no se guarda nada.** «Qué observar» nombra lo que se puede
   mirar (responde con el cuerpo, coge el objeto, se orienta al sonido, usa una
   fórmula) y no se marca. Las rúbricas, las escalas, los recuentos de turnos y
   los registros anecdóticos de los textos no entran.
@@ -371,14 +371,14 @@ Por camino de uso, en los tres modos.
 ## 12. Lo que no entra
 
 - Un área, una ficha, una nota o una evaluación de inglés.
-- Guardar nada de una criatura: nombres, turnos, escalas, porcentajes o
+- Guardar nada de un niño o una niña: nombres, turnos, escalas, porcentajes o
   grabaciones.
 - ~~Sesiones diarias de 45 minutos, tres adultos, marioneta como reclamo,
   inmersión sin lengua de casa.~~ Retirado el 20/10/2026: esta exclusión la
   escribió Claude Code sin preguntar a Frank (R1 del `CLAUDE.md`). La sesión
   de 45 minutos entra (`docs/PLAN_DE_TRABAJO.md`, F3); los tres adultos, la
   marioneta y la inmersión son preguntas a Frank (P2-P4 de ese plan).
-- Pedir a la criatura que repita, traduzca o conteste en inglés.
+- Pedir al niño o a la niña que repita, traduzca o conteste en inglés.
 - Voz en directo, red o un metrónomo que suene.
 - Lenguaje clínico: diagnóstico, mutismo, intervención o silencio clínico.
 - Traducir la interfaz al inglés.

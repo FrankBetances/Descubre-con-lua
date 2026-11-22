@@ -89,9 +89,9 @@ class _CapsulasAulaScreenState extends State<CapsulasAulaScreen> {
 
   static const _subtitulo = LocalizedString(
     gl: 'Unha lectura curta por paso, para ler antes ou despois da asemblea. '
-        'Non se usa diante das crianzas.',
+        'Non se usa diante dos nenos e das nenas.',
     es: 'Una lectura corta por paso, para leer antes o después de la asamblea. '
-        'No se usa delante de las criaturas.',
+        'No se usa delante de los niños y las niñas.',
   );
 
   static const _ferramentas = LocalizedString(

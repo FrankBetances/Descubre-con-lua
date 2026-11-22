@@ -256,8 +256,8 @@
         "es": "La clase elige"
       },
       "consigna": {
-        "gl": "Fai as tres ordes e deixa que unha crianza sinale cal repetimos. Non fai falta que a diga en inglés: co xesto abonda.",
-        "es": "Haz las tres órdenes y deja que una criatura señale cuál repetimos. No hace falta que la diga en inglés: con el gesto basta."
+        "gl": "Fai as tres ordes e deixa que un neno ou unha nena sinale cal repetimos. Non fai falta que a diga en inglés: co xesto abonda.",
+        "es": "Haz las tres órdenes y deja que un niño o una niña señale cuál repetimos. No hace falta que la diga en inglés: con el gesto basta."
       },
       "comandos": [
         0,
@@ -338,12 +338,12 @@
         "es": "Jueves"
       },
       "foco": {
-        "gl": "Unha crianza modela contigo",
-        "es": "Una criatura modela contigo"
+        "gl": "Un neno ou unha nena modela contigo",
+        "es": "Un niño o una niña modela contigo"
       },
       "consigna": {
-        "gl": "Unha crianza ponse ao teu lado e fai o xesto contigo mentres ti dis a orde. Cambia de crianza en cada orde.",
-        "es": "Una criatura se pone a tu lado y hace el gesto contigo mientras tú dices la orden. Cambia de criatura en cada orden."
+        "gl": "Un neno ou unha nena ponse ao teu lado e fai o xesto contigo mentres ti dis a orde. Cambia de neno ou nena en cada orde.",
+        "es": "Un niño o una niña se pone a tu lado y hace el gesto contigo mientras tú dices la orden. Cambia de niño o niña en cada orden."
       },
       "comandos": [
         0,

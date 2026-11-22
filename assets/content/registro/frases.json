@@ -72,8 +72,8 @@
         "es": "Calzarse las botas y señalar la lluvia por la ventana"
       },
       "nota": {
-        "gl": "Because: porque. A docente di a razón; a criatura responde co corpo ou cunha palabra.",
-        "es": "Because: porque. La docente dice la razón; la criatura responde con el cuerpo o con una palabra."
+        "gl": "Because: porque. A docente di a razón; o neno ou a nena responde co corpo ou cunha palabra.",
+        "es": "Because: porque. La docente dice la razón; el niño o la niña responde con el cuerpo o con una palabra."
       },
       "fonte": "referencias/base/curriculo-vocabulario-infantil-2-6.txt:221"
     },
@@ -3037,8 +3037,8 @@
       "tipo": "xogo",
       "en": "Find the red apple, quick and gentle!",
       "accion": {
-        "gl": "A crianza camiña ou gatea polo cuarto ata coller o obxecto e traelo nas mans.",
-        "es": "La criatura camina o gatea por la habitación hasta coger el objeto y traerlo en las manos."
+        "gl": "O neno ou a nena camiña ou gatea polo cuarto ata coller o obxecto e traelo nas mans.",
+        "es": "El niño o la niña camina o gatea por la habitación hasta coger el objeto y traerlo en las manos."
       },
       "fonte": "xogos_fogar.json"
     },

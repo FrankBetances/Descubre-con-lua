@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "nota": "Los premios los gana el ADULTO que usa la app: la maestra por asambleas dirigidas, la familia por cápsulas leídas. Aquí no se registra nada de ninguna criatura, porque el niño no usa la pantalla. Las `medallas` son lo mismo para el Calendario Escola·Fogar. Cada criterio cuenta UN SOLO LADO: días con asamblea en el aula, o días con rutina en casa. No hay criterio de «los dos el mismo día» porque la app no tiene red y un aparato no sabe lo que pasó en el otro; premiar eso era premiar que alguien marcase dos casillas. El puente entre la escuela y la casa es la nota que la docente entrega, no un dato que viaje.",
+  "nota": "Los premios los gana el ADULTO que usa la app: la maestra por asambleas dirigidas, la familia por cápsulas leídas. Aquí no se registra nada de ningún niño ni niña, porque el niño no usa la pantalla. Las `medallas` son lo mismo para el Calendario Escola·Fogar. Cada criterio cuenta UN SOLO LADO: días con asamblea en el aula, o días con rutina en casa. No hay criterio de «los dos el mismo día» porque la app no tiene red y un aparato no sabe lo que pasó en el otro; premiar eso era premiar que alguien marcase dos casillas. El puente entre la escuela y la casa es la nota que la docente entrega, no un dato que viaje.",
   "xp": {
     "porAsamblea": 20,
     "porCapsula": 15
@@ -282,8 +282,8 @@
         "es": "Diez días en casa"
       },
       "descripcion": {
-        "gl": "Dez días de rutina curta na casa, sen pantalla ningunha para a crianza.",
-        "es": "Diez días de rutina corta en casa, sin ninguna pantalla para la criatura."
+        "gl": "Dez días de rutina curta na casa, sen pantalla ningunha para o neno ou a nena.",
+        "es": "Diez días de rutina corta en casa, sin ninguna pantalla para el niño o la niña."
       }
     },
     {

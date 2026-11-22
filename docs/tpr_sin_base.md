@@ -419,7 +419,7 @@ Total piezas auditadas sin base visual hasta ahora: **835**.
 | P2.93 | Older | Mayor | adjective | Medirse la altura con la mano por encima de la cabeza | Comparativo de edad (`mayor`) sin referencia clara sin texto. |
 | P2.89 | Oldest | El más viejo | adjective | Señalar arriba en el álbum | Superlativo temporal abstracto («El más viejo»). |
 | P2.89 | On time | A tiempo | adjective | Señalar el reloj y sonreír | Concepto temporal de puntualidad («A tiempo»); un reloj solo no expresa puntualidad sin texto. |
-| P2.88 | One by one | Uno a uno | complex | Tocar el hombro de cada criatura, de una en una | Secuencia adverbial («Uno a uno»); requiere orden temporal o numeración escrita. |
+| P2.88 | One by one | Uno a uno | complex | Tocar el hombro de cada niño o niña, de una en una | Secuencia adverbial («Uno a uno»); requiere orden temporal o numeración escrita. |
 | P2.93 | One for you, one for me | Uno para ti, uno para mí | complex | Repartir dos bloques | Frase verbal de reparto (`uno para ti, uno para mí`). |
 | P2.87 | One more sleep! | ¡Solo una noche más! | phrase | Enseñar un dedo | Expresión temporal idiomática («¡Solo una noche más!»); imposible distinguirla de «dormir» sin texto. |
 | P2.93 | One step, two steps | Un paso, dos pasos | complex | Dar un paso y luego dos | Consigna numérica secuencial que requiere leer números. |
@@ -594,7 +594,7 @@ Total piezas auditadas sin base visual hasta ahora: **835**.
 | P2.94 | Sort by number | Ordenar por número | verb | Poner en fila de menos a más | Regla numérica (`ordenar por número`) prohibida sin dígitos. |
 | P2.94 | Sorted | Clasificado | adjective | Juntar ceras del mismo color | Participio duplicado de `sort`. |
 | P2.94 | Sourer | Más ácido | adjective | Arrugar más la cara | Grado comparativo (`más ácido`) sin escala visual frente a `sour`. |
-| P2.89 | Special | Especial | adjective | Señalar a cada criatura con una sonrisa | Adjetivo valorativo abstracto («Especial»). |
+| P2.89 | Special | Especial | adjective | Señalar a cada niño o niña con una sonrisa | Adjetivo valorativo abstracto («Especial»). |
 | P2.87 | Speech | Discurso | noun | Hablar delante de todos | Concepto lingüístico abstracto («Discurso»); sin texto se confunde con «talk» o «give a speech». |
 | P2.90 | Speedy | Veloz | adjective | Mover los pies muy rápido | Adjetivo de rapidez sin objeto único (reduntante con rápido/correr/coche). |
 | P2.94 | Spit out | Escupir | verb | Escupir en el lavabo | Duplicada directa de `spit in the sink`. |

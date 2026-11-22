@@ -166,12 +166,12 @@
           "es": "Rincón de construcción: una obra de ingeniería en la alfombra, con cascos de cartón y bloques de madera sin pintar."
         },
         "intervencion": {
-          "gl": "A persoa adulta garda unha peza clave de madeira e modela cunha pausa expectante: «Do you need this tall block?». Coa peza na man, di ela mesma «Help me, please!» e agarda. Cando a criatura a pide, responde: «Here you are! Now it is your turn to build».",
-          "es": "La persona adulta se queda con una pieza clave de madera y modela con una pausa expectante: «Do you need this tall block?». Con la pieza en la mano, dice ella misma «Help me, please!» y espera. Cuando la criatura la pide, responde: «Here you are! Now it is your turn to build»."
+          "gl": "A persoa adulta garda unha peza clave de madeira e modela cunha pausa expectante: «Do you need this tall block?». Coa peza na man, di ela mesma «Help me, please!» e agarda. Cando o neno ou a nena a pide, responde: «Here you are! Now it is your turn to build».",
+          "es": "La persona adulta se queda con una pieza clave de madera y modela con una pausa expectante: «Do you need this tall block?». Con la pieza en la mano, dice ella misma «Help me, please!» y espera. Cuando el niño o la niña la pide, responde: «Here you are! Now it is your turn to build»."
         },
         "resolucion": {
-          "gl": "Se dúas criaturas disputan o mesmo bloque, a persoa adulta mete a man entre elas como separador amigable e guía: «Let's share! First my turn, then your turn».",
-          "es": "Si dos criaturas se disputan el mismo bloque, la persona adulta mete la mano entre ellas como separador amistoso y guía: «Let's share! First my turn, then your turn»."
+          "gl": "Se dous nenos ou nenas disputan o mesmo bloque, a persoa adulta mete a man entre elas como separador amigable e guía: «Let's share! First my turn, then your turn».",
+          "es": "Si dos niños o niñas se disputan el mismo bloque, la persona adulta mete la mano entre ellas como separador amistoso y guía: «Let's share! First my turn, then your turn»."
         }
       },
       "frasesAdulta": [
@@ -235,8 +235,8 @@
         }
       ],
       "familia": {
-        "gl": "Lectura de apoio: contos sobre construcións ou pontes. Secuencia PEER: a persoa adulta sinala o debuxo do camión: «Look, what is on the bridge?» (Prompt). A criatura pode responder «Truck!». A persoa adulta: «Yes, a big red truck is on the bridge!» (Evaluate e Expand). No último paso, retomar: a persoa adulta volve dicir «On the bridge!» e deixa o oco, sen pedir nada.",
-        "es": "Lectura de apoyo: cuentos sobre construcciones o puentes. Secuencia PEER: la persona adulta señala el dibujo del camión: «Look, what is on the bridge?» (Prompt). La criatura puede responder «Truck!». La persona adulta: «Yes, a big red truck is on the bridge!» (Evaluate y Expand). En el último paso, retomar: la persona adulta vuelve a decir «On the bridge!» y deja el hueco, sin pedir nada."
+        "gl": "Lectura de apoio: contos sobre construcións ou pontes. Secuencia PEER: a persoa adulta sinala o debuxo do camión: «Look, what is on the bridge?» (Prompt). O neno ou a nena pode responder «Truck!». A persoa adulta: «Yes, a big red truck is on the bridge!» (Evaluate e Expand). No último paso, retomar: a persoa adulta volve dicir «On the bridge!» e deixa o oco, sen pedir nada.",
+        "es": "Lectura de apoyo: cuentos sobre construcciones o puentes. Secuencia PEER: la persona adulta señala el dibujo del camión: «Look, what is on the bridge?» (Prompt). El niño o la niña puede responder «Truck!». La persona adulta: «Yes, a big red truck is on the bridge!» (Evaluate y Expand). En el último paso, retomar: la persona adulta vuelve a decir «On the bridge!» y deja el hueco, sin pedir nada."
       },
       "fonte": "curriculo-vocabulario-infantil-2-6.txt:161-180",
       "erratasAplicadas": [
@@ -245,16 +245,16 @@
           "es": "Se han quitado los números de nota pegados a las frases (22, 15, 12, 14)."
         },
         {
-          "gl": "Liña 176: o documento facía que a criatura dixese a fórmula de petición ao pé da letra. Agora é a persoa adulta quen di «Help me, please!» coa peza na man, e agarda.",
-          "es": "Línea 176: el documento hacía que la criatura dijera la fórmula de petición al pie de la letra. Ahora es la persona adulta quien dice «Help me, please!» con la pieza en la mano, y espera."
+          "gl": "Liña 176: o documento facía que o neno ou a nena dixese a fórmula de petición ao pé da letra. Agora é a persoa adulta quen di «Help me, please!» coa peza na man, e agarda.",
+          "es": "Línea 176: el documento hacía que el niño o la niña dijera la fórmula de petición al pie de la letra. Ahora es la persona adulta quien dice «Help me, please!» con la pieza en la mano, y espera."
         },
         {
-          "gl": "Liña 180: o último paso de PEER pedíalle á criatura que volvese dicir «on the bridge». Cámbiase por retomar: a persoa adulta volve dicir a frase e deixa o oco.",
-          "es": "Línea 180: el último paso de PEER le pedía a la criatura que volviera a decir «on the bridge». Se cambia por retomar: la persona adulta vuelve a decir la frase y deja el hueco."
+          "gl": "Liña 180: o último paso de PEER pedíalle ao neno ou á nena que volvese dicir «on the bridge». Cámbiase por retomar: a persoa adulta volve dicir a frase e deixa o oco.",
+          "es": "Línea 180: el último paso de PEER le pedía al niño o a la niña que volviera a decir «on the bridge». Se cambia por retomar: la persona adulta vuelve a decir la frase y deja el hueco."
         },
         {
-          "gl": "«O docente», «o educador», «o profesor» e «o proxenitor» pasan a «a persoa adulta», unha soa; «o infante», «o neno» e «o alumno» pasan a «a criatura».",
-          "es": "«El docente», «el educador», «el profesor» y «el progenitor» pasan a «la persona adulta», una sola; «el infante», «el niño» y «el alumno» pasan a «la criatura»."
+          "gl": "«O docente», «o educador», «o profesor» e «o proxenitor» pasan a «a persoa adulta», unha soa; «o infante», «o neno» e «o alumno» pasan a «o neno ou a nena».",
+          "es": "«El docente», «el educador», «el profesor» y «el progenitor» pasan a «la persona adulta», una sola; «el infante», «el niño» y «el alumno» pasan a «el niño o la niña»."
         },
         {
           "gl": "O documento non trae transcrición do vocabulario: engadiuse en transcrición americana, que é a voz da app.",
@@ -426,8 +426,8 @@
           "es": "Rincón del hogar y cocina: cocina infantil con platos de loza blanca irrompibles, jarras de metal y delantales de tela."
         },
         "intervencion": {
-          "gl": "A persoa adulta séntase á mesa como comensal: «Good morning! I am very hungry. Can I have some soup, please?». Guía a criatura para que sirva co cullerón: «Pour the soup in the plate. Here you are! Thank you!».",
-          "es": "La persona adulta se sienta a la mesa como comensal: «Good morning! I am very hungry. Can I have some soup, please?». Guía a la criatura para que sirva con el cucharón: «Pour the soup in the plate. Here you are! Thank you!»."
+          "gl": "A persoa adulta séntase á mesa como comensal: «Good morning! I am very hungry. Can I have some soup, please?». Guía o neno ou a nena para que sirva co cullerón: «Pour the soup in the plate. Here you are! Thank you!».",
+          "es": "La persona adulta se sienta a la mesa como comensal: «Good morning! I am very hungry. Can I have some soup, please?». Guía al niño o a la niña para que sirva con el cucharón: «Pour the soup in the plate. Here you are! Thank you!»."
         },
         "resolucion": {
           "gl": "O documento non trae resolución de conflito para esta unidade.",
@@ -488,8 +488,8 @@
           "es": "Se han quitado los números de nota pegados a las frases (12, 1)."
         },
         {
-          "gl": "«O docente», «o educador», «o profesor» e «o proxenitor» pasan a «a persoa adulta», unha soa; «o infante», «o neno» e «o alumno» pasan a «a criatura».",
-          "es": "«El docente», «el educador», «el profesor» y «el progenitor» pasan a «la persona adulta», una sola; «el infante», «el niño» y «el alumno» pasan a «la criatura»."
+          "gl": "«O docente», «o educador», «o profesor» e «o proxenitor» pasan a «a persoa adulta», unha soa; «o infante», «o neno» e «o alumno» pasan a «o neno ou a nena».",
+          "es": "«El docente», «el educador», «el profesor» y «el progenitor» pasan a «la persona adulta», una sola; «el infante», «el niño» y «el alumno» pasan a «el niño o la niña»."
         },
         {
           "gl": "O documento non trae transcrición do vocabulario: engadiuse en transcrición americana, que é a voz da app.",
@@ -656,8 +656,8 @@
           "es": "Rincón de la clínica veterinaria: mesa de la clínica de juego con estetoscopios de verdad, vendas elásticas de algodón, jeringas de plástico sin aguja y peluches de animales heridos."
         },
         "intervencion": {
-          "gl": "A persoa adulta achega un peluche vendado: «Doctor! The dog is sad. Why is he sad?». Agarda a explicación causal da criatura, por exemplo «Because his paw is broken!». A persoa adulta amplía: «Yes! His paw is hurt because he fell down. Let's put a soft bandage on it».",
-          "es": "La persona adulta acerca un peluche vendado: «Doctor! The dog is sad. Why is he sad?». Espera la explicación causal de la criatura, por ejemplo «Because his paw is broken!». La persona adulta amplía: «Yes! His paw is hurt because he fell down. Let's put a soft bandage on it»."
+          "gl": "A persoa adulta achega un peluche vendado: «Doctor! The dog is sad. Why is he sad?». Agarda a explicación causal do neno ou da nena, por exemplo «Because his paw is broken!». A persoa adulta amplía: «Yes! His paw is hurt because he fell down. Let's put a soft bandage on it».",
+          "es": "La persona adulta acerca un peluche vendado: «Doctor! The dog is sad. Why is he sad?». Espera la explicación causal del niño o de la niña, por ejemplo «Because his paw is broken!». La persona adulta amplía: «Yes! His paw is hurt because he fell down. Let's put a soft bandage on it»."
         },
         "resolucion": {
           "gl": "O documento non trae resolución de conflito para esta unidade.",
@@ -727,8 +727,8 @@
           "es": "Lenguaje clínico fuera (fe de erratas, «En los cinco»): «mesa de auscultación» pasa a «mesa de la clínica de juego» y «palabras médicas» pasa a «palabras del juego de la clínica». La clínica veterinaria se queda como juego simbólico."
         },
         {
-          "gl": "«O docente», «o educador», «o profesor» e «o proxenitor» pasan a «a persoa adulta», unha soa; «o infante», «o neno» e «o alumno» pasan a «a criatura».",
-          "es": "«El docente», «el educador», «el profesor» y «el progenitor» pasan a «la persona adulta», una sola; «el infante», «el niño» y «el alumno» pasan a «la criatura»."
+          "gl": "«O docente», «o educador», «o profesor» e «o proxenitor» pasan a «a persoa adulta», unha soa; «o infante», «o neno» e «o alumno» pasan a «o neno ou a nena».",
+          "es": "«El docente», «el educador», «el profesor» y «el progenitor» pasan a «la persona adulta», una sola; «el infante», «el niño» y «el alumno» pasan a «el niño o la niña»."
         },
         {
           "gl": "O documento non trae transcrición do vocabulario: engadiuse en transcrición americana, que é a voz da app.",
@@ -895,8 +895,8 @@
           "es": "Rincón del explorador del tiempo: panel con proyecciones luminosas de lluvia y viento simulado con ventiladores suaves; percheros con chubasqueros de verdad, botas de agua y paraguas pequeños."
         },
         "intervencion": {
-          "gl": "A persoa adulta pon o son dos tronos: «Listen! A stormy day! Put on your yellow boots! Why do we need boots?». Unha criatura pode responder «Because of the water!». A persoa adulta: «That's right, because the water is deep and wet! Let's jump over the puddle!».",
-          "es": "La persona adulta pone el sonido de los truenos: «Listen! A stormy day! Put on your yellow boots! Why do we need boots?». Una criatura puede responder «Because of the water!». La persona adulta: «That's right, because the water is deep and wet! Let's jump over the puddle!»."
+          "gl": "A persoa adulta pon o son dos tronos: «Listen! A stormy day! Put on your yellow boots! Why do we need boots?». Un neno ou unha nena pode responder «Because of the water!». A persoa adulta: «That's right, because the water is deep and wet! Let's jump over the puddle!».",
+          "es": "La persona adulta pone el sonido de los truenos: «Listen! A stormy day! Put on your yellow boots! Why do we need boots?». Un niño o una niña puede responder «Because of the water!». La persona adulta: «That's right, because the water is deep and wet! Let's jump over the puddle!»."
         },
         "resolucion": {
           "gl": "O documento non trae resolución de conflito para esta unidade.",
@@ -957,8 +957,8 @@
           "es": "Se han quitado los números de nota pegados a las frases (22, 12, 15, 14)."
         },
         {
-          "gl": "«O docente», «o educador», «o profesor» e «o proxenitor» pasan a «a persoa adulta», unha soa; «o infante», «o neno» e «o alumno» pasan a «a criatura».",
-          "es": "«El docente», «el educador», «el profesor» y «el progenitor» pasan a «la persona adulta», una sola; «el infante», «el niño» y «el alumno» pasan a «la criatura»."
+          "gl": "«O docente», «o educador», «o profesor» e «o proxenitor» pasan a «a persoa adulta», unha soa; «o infante», «o neno» e «o alumno» pasan a «o neno ou a nena».",
+          "es": "«El docente», «el educador», «el profesor» y «el progenitor» pasan a «la persona adulta», una sola; «el infante», «el niño» y «el alumno» pasan a «el niño o la niña»."
         },
         {
           "gl": "O documento non trae transcrición do vocabulario: engadiuse en transcrición americana, que é a voz da app.",
@@ -1128,12 +1128,12 @@
       ],
       "xogoSociodramatico": {
         "escenario": {
-          "gl": "Mesa de arte e creación: cabaletes dobres onde dúas criaturas comparten unha soa paleta de témperas e tres pinceis.",
-          "es": "Mesa de arte y creación: caballetes dobles donde dos criaturas comparten una sola paleta de témperas y tres pinceles."
+          "gl": "Mesa de arte e creación: cabaletes dobres onde dous nenos ou nenas comparten unha soa paleta de témperas e tres pinceis.",
+          "es": "Mesa de arte y creación: caballetes dobles donde dos niños o niñas comparten una sola paleta de témperas y tres pinceles."
         },
         "intervencion": {
-          "gl": "A persoa adulta ve que dúas criaturas dubidan polo bote de pintura azul. Entra ofrecendo a fórmula mediadora: di en voz alta, mirando para as dúas, «Can I use the blue paint next to you?», e agarda. Cando unha criatura fai a petición, a outra pode responder «Yes, here you are!». A persoa adulta reforza: «Thank you for being generous and sharing».",
-          "es": "La persona adulta ve que dos criaturas dudan por el bote de pintura azul. Entra ofreciendo la fórmula mediadora: dice en voz alta, mirando a las dos, «Can I use the blue paint next to you?», y espera. Cuando una criatura hace la petición, la otra puede responder «Yes, here you are!». La persona adulta refuerza: «Thank you for being generous and sharing»."
+          "gl": "A persoa adulta ve que dous nenos ou nenas dubidan polo bote de pintura azul. Entra ofrecendo a fórmula mediadora: di en voz alta, mirando para as dúas, «Can I use the blue paint next to you?», e agarda. Cando un neno ou unha nena fai a petición, outro ou outra pode responder «Yes, here you are!». A persoa adulta reforza: «Thank you for being generous and sharing».",
+          "es": "La persona adulta ve que dos niños o niñas dudan por el bote de pintura azul. Entra ofreciendo la fórmula mediadora: dice en voz alta, mirando a las dos, «Can I use the blue paint next to you?», y espera. Cuando un niño o una niña hace la petición, otro u otra puede responder «Yes, here you are!». La persona adulta refuerza: «Thank you for being generous and sharing»."
         },
         "resolucion": {
           "gl": "O documento non separa a resolución nesta unidade: a mediación do conflito polo bote de pintura azul é a propia escena. O obxectivo 1 dá a fórmula argumentativa: «I was using the scissors first, but you can have them next».",
@@ -1190,20 +1190,20 @@
           "es": "Se han quitado los números de nota pegados a las frases (12, 22, 21, 14)."
         },
         {
-          "gl": "Liña 252: o guión levaba nomes de criaturas. Quítanse: fálase de «dúas criaturas», «unha» e «a outra».",
-          "es": "Línea 252: el guion llevaba nombres de criaturas. Se quitan: se habla de «dos criaturas», «una» y «la otra»."
+          "gl": "Liña 252: o guión levaba nomes de nenos e nenas. Quítanse: fálase de «dous nenos ou nenas», «unha» e «outro ou outra».",
+          "es": "Línea 252: el guion llevaba nombres de niños y niñas. Se quitan: se habla de «dos niños o niñas», «una» y «otro u otra»."
         },
         {
-          "gl": "Liña 252: a persoa adulta dáballe a unha criatura a pregunta exacta para que lla fixese á outra. Como na liña 176, agora é a persoa adulta quen di a fórmula en voz alta e agarda. Isto non o di a fe de erratas para esta liña: aplicouse pola regra xeral de non lle pedir á criatura que diga unha frase dada.",
-          "es": "Línea 252: la persona adulta le daba a una criatura la pregunta exacta para que se la hiciera a la otra. Como en la línea 176, ahora es la persona adulta quien dice la fórmula en voz alta y espera. Esto no lo dice la fe de erratas para esta línea: se ha aplicado por la regla general de no pedir a la criatura que diga una frase dada."
+          "gl": "Liña 252: a persoa adulta dáballe a un neno ou unha nena a pregunta exacta para que lla fixese á outra. Como na liña 176, agora é a persoa adulta quen di a fórmula en voz alta e agarda. Isto non o di a fe de erratas para esta liña: aplicouse pola regra xeral de non lle pedir ao neno ou á nena que diga unha frase dada.",
+          "es": "Línea 252: la persona adulta le daba a un niño o una niña la pregunta exacta para que se la hiciera a otro u otra. Como en la línea 176, ahora es la persona adulta quien dice la fórmula en voz alta y espera. Esto no lo dice la fe de erratas para esta línea: se ha aplicado por la regla general de no pedir al niño o a la niña que diga una frase dada."
         },
         {
           "gl": "Liña 249: «Pen /pen/» pasa á transcrición americana «/pɛn/».",
           "es": "Línea 249: «Pen /pen/» pasa a la transcripción americana «/pɛn/»."
         },
         {
-          "gl": "«O docente», «o educador», «o profesor» e «o proxenitor» pasan a «a persoa adulta», unha soa; «o infante», «o neno» e «o alumno» pasan a «a criatura».",
-          "es": "«El docente», «el educador», «el profesor» y «el progenitor» pasan a «la persona adulta», una sola; «el infante», «el niño» y «el alumno» pasan a «la criatura»."
+          "gl": "«O docente», «o educador», «o profesor» e «o proxenitor» pasan a «a persoa adulta», unha soa; «o infante», «o neno» e «o alumno» pasan a «o neno ou a nena».",
+          "es": "«El docente», «el educador», «el profesor» y «el progenitor» pasan a «la persona adulta», una sola; «el infante», «el niño» y «el alumno» pasan a «el niño o la niña»."
         },
         {
           "gl": "O documento non trae transcrición do vocabulario: engadiuse en transcrición americana, que é a voz da app.",
@@ -1367,8 +1367,8 @@
           "es": "Rincón de la agencia de transporte: mostrador de facturación con billetes impresos, sellos de tinta, maletas pequeñas de verdad y filas de sillas que hacen de asientos de un avión o de un tren."
         },
         "intervencion": {
-          "gl": "A persoa adulta entrega un billete: «Good morning, traveler! Where are you going today?». Unha criatura pode responder «I am going across the sea by plane!». A persoa adulta: «Why by plane?». A criatura: «Because it is faster than a boat!». A persoa adulta: «Wonderful! Please show your ticket to the officer».",
-          "es": "La persona adulta entrega un billete: «Good morning, traveler! Where are you going today?». Una criatura puede responder «I am going across the sea by plane!». La persona adulta: «Why by plane?». La criatura: «Because it is faster than a boat!». La persona adulta: «Wonderful! Please show your ticket to the officer»."
+          "gl": "A persoa adulta entrega un billete: «Good morning, traveler! Where are you going today?». Un neno ou unha nena pode responder «I am going across the sea by plane!». A persoa adulta: «Why by plane?». O neno ou a nena: «Because it is faster than a boat!». A persoa adulta: «Wonderful! Please show your ticket to the officer».",
+          "es": "La persona adulta entrega un billete: «Good morning, traveler! Where are you going today?». Un niño o una niña puede responder «I am going across the sea by plane!». La persona adulta: «Why by plane?». El niño o la niña: «Because it is faster than a boat!». La persona adulta: «Wonderful! Please show your ticket to the officer»."
         },
         "resolucion": {
           "gl": "O documento non trae resolución de conflito para esta unidade.",
@@ -1442,8 +1442,8 @@
           "es": "Línea 261: «segmentar palabras polisilábicas aislando cada fonema en palabras monosilábicas» se contradice. Se reescribe: segmentar palabras de una sílaba (boat: /b/-/oʊ/-/t/)."
         },
         {
-          "gl": "«O docente», «o educador», «o profesor» e «o proxenitor» pasan a «a persoa adulta», unha soa; «o infante», «o neno» e «o alumno» pasan a «a criatura».",
-          "es": "«El docente», «el educador», «el profesor» y «el progenitor» pasan a «la persona adulta», una sola; «el infante», «el niño» y «el alumno» pasan a «la criatura»."
+          "gl": "«O docente», «o educador», «o profesor» e «o proxenitor» pasan a «a persoa adulta», unha soa; «o infante», «o neno» e «o alumno» pasan a «o neno ou a nena».",
+          "es": "«El docente», «el educador», «el profesor» y «el progenitor» pasan a «la persona adulta», una sola; «el infante», «el niño» y «el alumno» pasan a «el niño o la niña»."
         },
         {
           "gl": "O documento non trae transcrición do vocabulario: engadiuse en transcrición americana, que é a voz da app.",

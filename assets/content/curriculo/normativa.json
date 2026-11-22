@@ -1,5 +1,5 @@
 {
-  "_doc": "Marco normativo do inglés por curso (F6, M1.1 con P6 de Frank: os criterios saen do texto curricular de Frank, referencias/base/curriculo-ingles-infantil-galicia.txt, e quedan pendentes de contrastar co DOG, que non é accesible desde o contorno de traballo). Cada dato leva a súa liña. Non se pintan as afirmacións sobre a Inspección (liñas 75-77 e 90) nin a rúbrica por criatura (123-142): ERRATAS.md. Detalle en docs/referencias/normativa.md.",
+  "_doc": "Marco normativo do inglés por curso (F6, M1.1 con P6 de Frank: os criterios saen do texto curricular de Frank, referencias/base/curriculo-ingles-infantil-galicia.txt, e quedan pendentes de contrastar co DOG, que non é accesible desde o contorno de traballo). Cada dato leva a súa liña. Non se pintan as afirmacións sobre a Inspección (liñas 75-77 e 90) nin a rúbrica por neno ou nena (123-142): ERRATAS.md. Detalle en docs/referencias/normativa.md.",
   "pendenteDOG": true,
   "aviso": {
     "gl": "Do texto curricular de Frank (Decreto 150/2022 e Orde do 30 de maio de 2023). Pendente de contrastar co DOG.",
@@ -17,12 +17,28 @@
   },
   "ciclos": {
     "primeiro": {
-      "encadre": {"gl": "Bloques 1 e 2 da área", "es": "Bloques 1 y 2 del área", "cita": "referencias/base/curriculo-ingles-infantil-galicia.txt:18"},
-      "horario": {"gl": "Sen horario propio: dentro das rutinas de crianza", "es": "Sin horario propio: dentro de las rutinas de crianza", "cita": "referencias/base/curriculo-ingles-infantil-galicia.txt:21"}
+      "encadre": {
+        "gl": "Bloques 1 e 2 da área",
+        "es": "Bloques 1 y 2 del área",
+        "cita": "referencias/base/curriculo-ingles-infantil-galicia.txt:18"
+      },
+      "horario": {
+        "gl": "Sen horario propio: dentro das rutinas de neno ou nena",
+        "es": "Sin horario propio: dentro de las rutinas de niño o niña",
+        "cita": "referencias/base/curriculo-ingles-infantil-galicia.txt:21"
+      }
     },
     "segundo": {
-      "encadre": {"gl": "Bloque 2: As linguas e os seus falantes", "es": "Bloque 2: As linguas e os seus falantes", "cita": "referencias/base/curriculo-ingles-infantil-galicia.txt:19"},
-      "horario": {"gl": "Un período lectivo á semana, nunha sesión ou en dúas medias sesións", "es": "Un periodo lectivo a la semana, en una sesión o en dos medias sesiones", "cita": "referencias/base/curriculo-ingles-infantil-galicia.txt:22"}
+      "encadre": {
+        "gl": "Bloque 2: As linguas e os seus falantes",
+        "es": "Bloque 2: As linguas e os seus falantes",
+        "cita": "referencias/base/curriculo-ingles-infantil-galicia.txt:19"
+      },
+      "horario": {
+        "gl": "Un período lectivo á semana, nunha sesión ou en dúas medias sesións",
+        "es": "Un periodo lectivo a la semana, en una sesión o en dos medias sesiones",
+        "cita": "referencias/base/curriculo-ingles-infantil-galicia.txt:22"
+      }
     }
   },
   "cursos": {
@@ -31,8 +47,8 @@
       "obx": "OBX1 e OBX2",
       "codigo": null,
       "criterio": {
-        "gl": "Reacción orientativa e motriz ante cancións e estímulos sonoros; imitación xestual no xogo de crianza.",
-        "es": "Reacción orientativa motriz ante canciones y estímulos sonoros; imitación gestual en el juego de crianza."
+        "gl": "Reacción orientativa e motriz ante cancións e estímulos sonoros; imitación xestual no xogo temperán.",
+        "es": "Reacción orientativa motriz ante canciones y estímulos sonoros; imitación gestual en el juego temprano."
       },
       "cita": "referencias/base/curriculo-ingles-infantil-galicia.txt:59-61"
     },
@@ -41,8 +57,8 @@
       "obx": "OBX1 e OBX2",
       "codigo": null,
       "criterio": {
-        "gl": "Reacción orientativa e motriz ante cancións e estímulos sonoros; imitación xestual no xogo de crianza.",
-        "es": "Reacción orientativa motriz ante canciones y estímulos sonoros; imitación gestual en el juego de crianza."
+        "gl": "Reacción orientativa e motriz ante cancións e estímulos sonoros; imitación xestual no xogo temperán.",
+        "es": "Reacción orientativa motriz ante canciones y estímulos sonoros; imitación gestual en el juego temprano."
       },
       "cita": "referencias/base/curriculo-ingles-infantil-galicia.txt:59-61"
     },

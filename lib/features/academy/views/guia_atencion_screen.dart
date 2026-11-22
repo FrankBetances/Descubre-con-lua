@@ -50,9 +50,9 @@ class _GuiaAtencionScreenState extends State<GuiaAtencionScreen> {
 
   static const _subtitulo = LocalizedString(
     gl: 'Aprender unha lingua nova sen saturar: rutinas curtas, respecto aos '
-        'tempos e cero pantallas para a crianza.',
+        'tempos e cero pantallas para o neno ou a nena.',
     es: 'Aprender una lengua nueva sin saturar: rutinas cortas, respeto a los '
-        'tiempos y cero pantallas para la criatura.',
+        'tiempos y cero pantallas para el niño o la niña.',
   );
 
   static const _reglasKicker = LocalizedString(
@@ -94,9 +94,9 @@ class _GuiaAtencionScreenState extends State<GuiaAtencionScreen> {
 
   static const _aviso = LocalizedString(
     gl: 'Os minutos son unha suxestión de xogo, non unha medida do '
-        'desenvolvemento de ninguén. Esta app non avalía a ningunha crianza.',
+        'desenvolvemento de ninguén. Esta app non avalía a ningún neno nin nena.',
     es: 'Los minutos son una sugerencia de juego, no una medida del desarrollo '
-        'de nadie. Esta app no evalúa a ninguna criatura.',
+        'de nadie. Esta app no evalúa a ningún niño ni niña.',
   );
 
   @override

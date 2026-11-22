@@ -14,7 +14,7 @@ veces cada una, y las cinco idénticas para todas las edades:
     pantallas ni prisas.
 
 Tres cosas mal, y la tercera es la peor: empieza por un corchete de máquina;
-lleva una firma personal delante del consejo; y a una criatura de seis años le
+lleva una firma personal delante del consejo; y a un niño o una niña de seis años le
 dice lo mismo que a una de doce meses —«piel con piel», «canto de cuna»—.
 
 **Qué hay ahora.** Veinticinco rutinas escritas a mano, una por cada cruce de
@@ -87,7 +87,7 @@ _r("curso_0_2", "sair",
    ("Antes de saír da casa, co neno ou a nena en brazos,",
     "nomea o que ides tocando —o abrigo, a porta, a rúa— e repite o saúdo de «{conto}».",
     "A esta idade o contacto e a túa voz calman a despedida moito máis ca calquera explicación."),
-   ("Antes de salir de casa, con la criatura en brazos,",
+   ("Antes de salir de casa, con el niño o la niña en brazos,",
     "nombra lo que vais tocando —el abrigo, la puerta, la calle— y repite el saludo de «{conto}».",
     "A esta edad el contacto y tu voz calman la despedida mucho más que cualquier explicación."))
 _r("curso_0_2", "merenda",
@@ -108,7 +108,7 @@ _r("curso_0_2", "cea",
    ("Mentres preparas a cea, co pequeno ou a pequena preto,",
     "vaille contando o que fas e déixalle tocar unha culler mentres repites unha palabra de «{conto}».",
     "Oír a fala do adulto mentres pasa algo diante é o que máis vocabulario deixa a esta idade."),
-   ("Mientras preparas la cena, con la criatura cerca,",
+   ("Mientras preparas la cena, con el niño o la niña cerca,",
     "ve contándole lo que haces y déjale tocar una cuchara mientras repites una palabra de «{conto}».",
     "Oír hablar al adulto mientras pasa algo delante es lo que más vocabulario deja a esta edad."))
 _r("curso_0_2", "durmir",
@@ -272,7 +272,7 @@ _r("curso_5_6", "durmir",
 CONEXION = {
     "curso_0_2": (
         "Na escola hoxe traballouse «{conto}» na asemblea. Repetir na casa o "
-        "mesmo saúdo e as mesmas palabras fai que a criatura recoñeza mañá o "
+        "mesmo saúdo e as mesmas palabras fai que o neno ou a nena recoñeza mañá o "
         "que xa coñece, e iso é o que dá seguridade a esta idade.",
         "En la escuela hoy se ha trabajado «{conto}» en la asamblea. Repetir "
         "en casa el mismo saludo y las mismas palabras hace que reconozca "

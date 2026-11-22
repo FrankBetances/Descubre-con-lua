@@ -169,8 +169,8 @@
       "en": "Before the bath, in the hallway"
     },
     "objetivoAutonomia": {
-      "gl": "Xogo de estatuas por quendas: manda a crianza e obedece o adulto.",
-      "es": "Juego de estatuas por turnos: manda la criatura y obedece el adulto.",
+      "gl": "Xogo de estatuas por quendas: manda o neno ou a nena e obedece o adulto.",
+      "es": "Juego de estatuas por turnos: manda el niño o la niña y obedece el adulto.",
       "en": "Turn-taking statue game: the child commands and the adult obeys."
     },
     "pautasRecast": [
@@ -186,8 +186,8 @@
           "en": "Your turn! I freeze. Now you: walk on the line and... freeze! Perfect statue."
         },
         "consejoEvitar": {
-          "gl": "Que mande a crianza é o obxectivo: obedecer é o mellor modelado.",
-          "es": "Que mande la criatura es el objetivo: obedecer es el mejor modelado.",
+          "gl": "Que mande o neno ou a nena é o obxectivo: obedecer é o mellor modelado.",
+          "es": "Que mande el niño o la niña es el objetivo: obedecer es el mejor modelado.",
           "en": "The child commanding is the goal: obeying is the best modelling."
         }
       }

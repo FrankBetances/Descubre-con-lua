@@ -13,7 +13,7 @@ meses a los 6 años. Cada sesión tiene **dos versiones completas**:
 
 - **la del aula**, para la docente y su grupo. Se abre desde el **Portal
   Docentes**, filtrada por el curso de «Hoxe na aula»;
-- **la de casa**, para una persona adulta y una criatura, con cosas que hay en
+- **la de casa**, para una persona adulta y un niño o una niña, con cosas que hay en
   cualquier casa. Se abre desde el **Portal Familias**, filtrada por la edad
   elegida en el portal.
 
@@ -22,23 +22,23 @@ pareja, ni material de aula.
 
 ## Principios
 
-1. **La criatura no mira la pantalla.** La pantalla es para la persona adulta:
-   ahí lee qué preparar y qué decir. La criatura toca, mira y escucha los
+1. **El niño o la niña no mira la pantalla.** La pantalla es para la persona adulta:
+   ahí lee qué preparar y qué decir. El niño o la niña toca, mira y escucha los
    materiales.
 2. **Seguridad antes que nada.** Cada sesión empieza por su aviso de seguridad.
    Los criterios están más abajo.
 3. **Juego en paralelo antes de los 3 años; cooperativo desde los 4.** Antes de
-   los 3 años las criaturas juegan unas al lado de las otras, y repartir papeles
+   los 3 años los niños y las niñas juegan unas al lado de las otras, y repartir papeles
    no tiene sentido (Parten, 1932). Por eso las unidades de 12 a 36 meses no
    tienen papeles, las de 3 a 4 años los tienen con ayuda adulta y las de 4 a 6
    años los necesitan.
 4. **El inglés se responde con el cuerpo.** Cada unidad trae una, dos o tres
-   órdenes en inglés que la persona adulta dice y la criatura hace, sin tener
+   órdenes en inglés que la persona adulta dice y el niño o la niña hace, sin tener
    que repetirlas: es la respuesta física total (TPR) de Asher (1969). Cada
    orden tiene su grabación para oírla antes de decirla.
 5. **Se observa, no se evalúa.** Cada unidad trae dos o tres cosas que conviene
    mirar mientras juegan. No hay puntuaciones ni registro: la app no guarda
-   nada de ninguna criatura.
+   nada de ningún niño ni niña.
 6. **Finalidad exclusivamente educativa.** No hay vocabulario de consulta ni de
    evaluación del desarrollo. El validador rechaza, además de la lista general
    de términos clínicos de la app, palabras como «fonoarticular», «fonador»,
@@ -64,7 +64,7 @@ El motivo de aplicarlo también de 3 a 6 años y no solo antes de los 3:
 
 Además:
 
-- en la unidad de sonido, **cada criatura toca solo su propia garganta**;
+- en la unidad de sonido, **cada niño o niña toca solo su propia garganta**;
 - la linterna es LED, no se calienta, lleva la tapa de las pilas cerrada con
   tornillo y **nadie mira directamente a la luz**;
 - el agua es poca, en un cuenco de plástico de base ancha y siempre al alcance
@@ -79,8 +79,8 @@ material «no tenga riesgo».
 
 | Nivel | Edad | Unidad | Fenómeno | Órdenes en inglés | En el aula | En casa |
 | --- | --- | --- | --- | --- | --- | --- |
-| I1 | 12 a 24 meses | Brando e duro / Blando y duro | Blando y duro al tacto | Drop | Pequeño grupo, cada criatura con sus objetos | La persona adulta y la criatura |
-| I2 | 24 a 36 meses | A rampla / La rampa | Lo redondo rueda; lo que tiene esquinas, no; más inclinación, más rápido | Roll | Dos o tres criaturas por rampa, por turnos | Por turnos, con una bandeja como rampa |
+| I1 | 12 a 24 meses | Brando e duro / Blando y duro | Blando y duro al tacto | Drop | Pequeño grupo, cada niño o niña con sus objetos | La persona adulta y el niño o la niña |
+| I2 | 24 a 36 meses | A rampla / La rampa | Lo redondo rueda; lo que tiene esquinas, no; más inclinación, más rápido | Roll | Dos o tres niños y niñas por rampa, por turnos | Por turnos, con una bandeja como rampa |
 | I3 | 3 a 4 años | O son fai bailar a auga / El sonido hace bailar el agua | El sonido es vibración | Listen · Stop | Parejas: tamborilera y observadora | Con una olla como tambor |
 | I4 | 4 a 5 años | Sombras grandes e pequenas / Sombras grandes y pequeñas | La luz va en línea recta; la sombra crece cerca de la linterna | Look · Step forward · Step back | Parejas: titiritera y rastreadora | Con un juguete y una linterna, sin el móvil |
 | I5 | 5 a 6 años | A cuadrícula / La cuadrícula | Una orden tras otra es un programa; si falla, se busca el error | Step · Turn right · Turn left | Parejas: programadora y robot | La persona adulta hace de robot |

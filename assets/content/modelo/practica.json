@@ -1,12 +1,12 @@
 {
-  "_doc": "La lista de práctica de la persona adulta (P7, arquitectura apartado 10): lo que ELLA hizo hoy, nunca nada de una criatura. Los ids son una lista cerrada que repite ListaDePractica.ids en lib/core/storage/calendario_store.dart; el almacén no guarda un id que no esté allí.",
+  "_doc": "La lista de práctica de la persona adulta (P7, arquitectura apartado 10): lo que ELLA hizo hoy, nunca nada de un niño o una niña. Los ids son una lista cerrada que repite ListaDePractica.ids en lib/core/storage/calendario_store.dart; el almacén no guarda un id que no esté allí.",
   "titulo": {
     "gl": "Hoxe fixen",
     "es": "Hoy hice"
   },
   "nota": {
-    "gl": "É só para ti. Gárdase o día, sen hora, e o que marcas; nada de ningunha criatura.",
-    "es": "Es solo para ti. Se guarda el día, sin hora, y lo que marcas; nada de ninguna criatura."
+    "gl": "É só para ti. Gárdase o día, sen hora, e o que marcas; nada de ningún neno nin nena.",
+    "es": "Es solo para ti. Se guarda el día, sin hora, y lo que marcas; nada de ningún niño ni niña."
   },
   "items": [
     {

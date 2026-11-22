@@ -14,12 +14,12 @@
   "tiempoLecturaMinutos": 3,
   "icono": "people_arrows",
   "ideaClave": {
-    "gl": "Unha pregunta na asemblea non serve para saber se a crianza sabe. Serve para abrirlle unha quenda. Por iso a resposta esperada nas preguntas de nivel un é sinalar co dedo: iso xa é responder, e conta igual que unha palabra.",
-    "es": "Una pregunta en la asamblea no sirve para saber si la criatura sabe. Sirve para abrirle un turno. Por eso la respuesta esperada en las preguntas de nivel uno es señalar con el dedo: eso ya es responder, y cuenta igual que una palabra."
+    "gl": "Unha pregunta na asemblea non serve para saber se o neno ou a nena sabe. Serve para abrirlle unha quenda. Por iso a resposta esperada nas preguntas de nivel un é sinalar co dedo: iso xa é responder, e conta igual que unha palabra.",
+    "es": "Una pregunta en la asamblea no sirve para saber si el niño o la niña sabe. Sirve para abrirle un turno. Por eso la respuesta esperada en las preguntas de nivel uno es señalar con el dedo: eso ya es responder, y cuenta igual que una palabra."
   },
   "porQueImporta": {
-    "gl": "Cando unha pregunta se vive como exame, a crianza deixa de iniciar: espera a ver se acerta, ou cala. E quen menos fala é a quen máis lle custa arrancar, así que o exame castiga xusto a quen máis o necesita. Tratar o xesto e o son como resposta válida mantén a porta aberta para todas.",
-    "es": "Cuando una pregunta se vive como examen, la criatura deja de iniciar: espera a ver si acierta, o calla. Y quien menos habla es a quien más le cuesta arrancar, así que el examen castiga justo a quien más lo necesita. Tratar el gesto y el sonido como respuesta válida mantiene la puerta abierta para todas."
+    "gl": "Cando unha pregunta se vive como exame, o neno ou a nena deixa de iniciar: espera a ver se acerta, ou cala. E quen menos fala é a quen máis lle custa arrancar, así que o exame castiga xusto a quen máis o necesita. Tratar o xesto e o son como resposta válida mantén a porta aberta para todas.",
+    "es": "Cuando una pregunta se vive como examen, el niño o la niña deja de iniciar: espera a ver si acierta, o calla. Y quien menos habla es a quien más le cuesta arrancar, así que el examen castiga justo a quien más lo necesita. Tratar el gesto y el sonido como respuesta válida mantiene la puerta abierta para todas."
   },
   "queHacerEnCasa": {
     "gl": "Pregunta e cala cinco segundos contando na túa cabeza. Se ninguén responde, non repitas a pregunta: dálle a resposta ti nomeando e sinalando, e pasa á seguinte. Nunca pidas que repitan a palabra ben dita.",
@@ -50,8 +50,8 @@
       },
       "esVerdadera": true,
       "explicacion": {
-        "gl": "É a resposta esperada nese nivel, non un apaño. A crianza demostrou que entendeu a pregunta e localizou o obxecto; a palabra chega despois, e chega antes se non se lle esixe agora.",
-        "es": "Es la respuesta esperada en ese nivel, no un apaño. La criatura demostró que entendió la pregunta y localizó el objeto; la palabra llega después, y llega antes si no se le exige ahora."
+        "gl": "É a resposta esperada nese nivel, non un apaño. O neno ou a nena demostrou que entendeu a pregunta e localizou o obxecto; a palabra chega despois, e chega antes se non se lle esixe agora.",
+        "es": "Es la respuesta esperada en ese nivel, no un apaño. El niño o la niña demostró que entendió la pregunta y localizó el objeto; la palabra llega después, y llega antes si no se le exige ahora."
       }
     }
   ],

@@ -197,6 +197,7 @@ run_gate "the listening bank copied from Valeria is whole and clean (O-20261119-
 run_gate "an educational game, no clinical words in assets, lib or public pages (O-20261118-3)" python3 tools/check_finalidade.py
 run_gate "one listening piece per month and age, none repeated (O-20261119-8)" python3 tools/check_plan_escoita.py
 run_gate "every English phrase for the child has a slow version (O-20261120-1)" python3 tools/check_voz_lenta.py
+run_gate "Galician and Spanish use neno/nena and niño/niña (O-20261122-1)" python3 tools/check_lexico_galicia.py
 run_gate "Frank's brakes work with real sentences (F-20261119-5)" python3 tools/check_hooks.py
 
 # --------------------------------------------------------------- binary gates

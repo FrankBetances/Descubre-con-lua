@@ -69,8 +69,8 @@
         "es": "La primera orden, con modelado"
       },
       "consigna": {
-        "gl": "Presenta a primeira orde: dila e faina á vez, tres veces. Logo pídelle a unha crianza que a faga contigo.",
-        "es": "Presenta la primera orden: dila y hazla a la vez, tres veces. Luego pídele a una criatura que la haga contigo."
+        "gl": "Presenta a primeira orde: dila e faina á vez, tres veces. Logo pídelle a un neno ou unha nena que a faga contigo.",
+        "es": "Presenta la primera orden: dila y hazla a la vez, tres veces. Luego pídele a un niño o una niña que la haga contigo."
       },
       "comandos": [
         0
@@ -109,8 +109,8 @@
         "es": "La segunda orden, con modelado"
       },
       "consigna": {
-        "gl": "Hoxe só a segunda orde, co mesmo esquema: dila, faina, unha crianza contigo.",
-        "es": "Hoy solo la segunda orden, con el mismo esquema: dila, hazla, una criatura contigo."
+        "gl": "Hoxe só a segunda orde, co mesmo esquema: dila, faina, un neno ou unha nena contigo.",
+        "es": "Hoy solo la segunda orden, con el mismo esquema: dila, hazla, un niño o una niña contigo."
       },
       "comandos": [
         1
@@ -212,8 +212,8 @@
         "es": "Las tres órdenes, con la canción"
       },
       "consigna": {
-        "gl": "Canción enteira coas tres ordes dentro. Unha crianza marca o pulso coa man ao teu lado.",
-        "es": "Canción entera con las tres órdenes dentro. Una criatura marca el pulso con la mano a tu lado."
+        "gl": "Canción enteira coas tres ordes dentro. Un neno ou unha nena marca o pulso coa man ao teu lado.",
+        "es": "Canción entera con las tres órdenes dentro. Un niño o una niña marca el pulso con la mano a tu lado."
       },
       "comandos": [
         0,
@@ -252,12 +252,12 @@
         "es": "Viernes"
       },
       "foco": {
-        "gl": "Unha crianza dirixe",
-        "es": "Una criatura dirige"
+        "gl": "Un neno ou unha nena dirixe",
+        "es": "Un niño o una niña dirige"
       },
       "consigna": {
-        "gl": "Unha crianza ponse no teu sitio e di as tres ordes á clase. Ti fas de alumna. Cambia de directora a cada orde.",
-        "es": "Una criatura se pone en tu sitio y dice las tres órdenes a la clase. Tú haces de alumna. Cambia de directora a cada orden."
+        "gl": "Un neno ou unha nena ponse no teu sitio e di as tres ordes á clase. Ti fas de alumna. Cambia de quenda a cada orde.",
+        "es": "Un niño o una niña se pone en tu sitio y dice las tres órdenes a la clase. Tú haces de alumna. Cambia de turno a cada orden."
       },
       "comandos": [
         0,
@@ -342,8 +342,8 @@
         "es": "Cadena de órdenes"
       },
       "consigna": {
-        "gl": "En círculo: cada crianza di unha orde á seguinte, que a fai e pasa outra. Ti só arrancas a cadea.",
-        "es": "En círculo: cada criatura dice una orden a la siguiente, que la hace y pasa otra. Tú solo arrancas la cadena."
+        "gl": "En círculo: cada neno ou nena di unha orde á seguinte, que a fai e pasa outra. Ti só arrancas a cadea.",
+        "es": "En círculo: cada niño o niña dice una orden a la siguiente, que la hace y pasa otra. Tú solo arrancas la cadena."
       },
       "comandos": [
         0,
@@ -364,8 +364,8 @@
         "es": "Repaso con la canción"
       },
       "consigna": {
-        "gl": "Canción do mes coas tres ordes, dirixida por unha crianza. Fíxate en quen di as ordes enteiras en inglés.",
-        "es": "Canción del mes con las tres órdenes, dirigida por una criatura. Fíjate en quién dice las órdenes enteras en inglés."
+        "gl": "Canción do mes coas tres ordes, dirixida por un neno ou unha nena. Fíxate en quen di as ordes enteiras en inglés.",
+        "es": "Canción del mes con las tres órdenes, dirigida por un niño o una niña. Fíjate en quién dice las órdenes enteras en inglés."
       },
       "comandos": [
         0,
@@ -452,8 +452,8 @@
         "es": "Ensayo para casa"
       },
       "consigna": {
-        "gl": "Fai a sesión como a farán as familias: a crianza di as ordes e a persoa adulta as fai. É o que levan na nota.",
-        "es": "Haz la sesión como la harán las familias: la criatura dice las órdenes y la persona adulta las hace. Es lo que se llevan en la nota."
+        "gl": "Fai a sesión como a farán as familias: o neno ou a nena di as ordes e a persoa adulta as fai. É o que levan na nota.",
+        "es": "Haz la sesión como la harán las familias: el niño o la niña dice las órdenes y la persona adulta las hace. Es lo que se llevan en la nota."
       },
       "comandos": [
         0,

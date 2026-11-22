@@ -23,8 +23,8 @@ class SteamTextos {
   static const paraCasa = LocalizedString(gl: 'Para casa', es: 'Para casa');
 
   static const senPantallas = LocalizedString(
-    gl: 'A criatura non mira a pantalla: les ti e falas ti. As mans, os ollos e as orellas son para os materiais.',
-    es: 'La criatura no mira la pantalla: lees tú y hablas tú. Las manos, los ojos y los oídos son para los materiales.',
+    gl: 'O neno ou a nena non mira a pantalla: les ti e falas ti. As mans, os ollos e as orellas son para os materiais.',
+    es: 'El niño o la niña no mira la pantalla: lees tú y hablas tú. Las manos, los ojos y los oídos son para los materiales.',
   );
 
   static const abrirSesion =

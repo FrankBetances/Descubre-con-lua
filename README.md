@@ -32,7 +32,7 @@ casa y *Hoy · Calendario · Recursos · Yo* en la escuela.
   palabras del banco, el plan del mes, el cuento, la dinámica y la ciencia.
 - **Hoy, en casa** — la lección de la semana; debajo, plegado en «Más para
   casa», el código de la escuela, el juego de tres minutos del día con un solo botón, las
-  palabras del día, el reto del mes con su microcuento y el cuento. Si la criatura llega nueva a un curso empezado, **Ponte al día**
+  palabras del día, el reto del mes con su microcuento y el cuento. Si el niño o la niña llega nueva a un curso empezado, **Ponte al día**
   enseña las palabras de antes que dan por sabidas las asambleas y los retos
   de los cuentos del mes, dos
   o tres al día, con su gesto y su voz. Se elige la edad y el mes; no se guarda
@@ -71,7 +71,7 @@ casa y *Hoy · Calendario · Recursos · Yo* en la escuela.
   sesión propuesta. La asamblea corta sigue como opción diaria.
 - **Hoy hice** — al final de Hoy, una lista cerrada de lo que la persona
   adulta hizo ese día (por ejemplo, «esperé hasta cinco»). Es solo para ella:
-  se guarda el día, sin hora, y lo que marcó; nada de ninguna criatura.
+  se guarda el día, sin hora, y lo que marcó; nada de ningún niño ni niña.
 - **Asamblea matinal de segundo ciclo** — para 4.º, 5.º y 6.º de Infantil, con
   el inglés como tercera lengua. Cuatro fases —apertura, foco rítmico, reto TPR
   y calma—; cada una ocupa la pantalla entera, con su consigna en letra grande,
@@ -87,10 +87,10 @@ casa y *Hoy · Calendario · Recursos · Yo* en la escuela.
   en la pestaña Guías del Portal Familias. Incluye la
   **micro-rutina del mes** para segundo ciclo: tres minutos en un momento
   concreto del día, con ejemplos de cómo devolver la frase bien dicha sin pedir
-  que la criatura la repita.
+  que el niño o la niña la repita.
 - **STEAM · Ciencia con las manos** — cinco sesiones de ciencia con materiales
   reales, una por curso de 12 meses a 6 años: blando y duro, la rampa, el
-  sonido, las sombras y un robot que programan las criaturas. Cada una tiene su
+  sonido, las sombras y un robot que programan los niños y las niñas. Cada una tiene su
   **versión para el aula**, que se abre desde el Portal Docentes con el grupo
   elegido en Hoy, y su **versión para casa**, que se abre desde Explorar con la
   edad elegida. Empiezan por su aviso de seguridad y traen las órdenes en inglés con
@@ -102,7 +102,7 @@ casa y *Hoy · Calendario · Recursos · Yo* en la escuela.
   cinco cursos de diez meses, de septiembre a junio, uno por tarjeta. Se pasa
   deslizando de lado, y de junio de un curso se llega a septiembre del
   siguiente. Arriba se elige el curso —el del grupo en el aula, el de la
-  criatura en casa— y el calendario salta al mismo mes de ese curso. La docente
+  niño o niña en casa— y el calendario salta al mismo mes de ese curso. La docente
   registra la asamblea, la familia registra el juego de tres minutos en casa, y
   el día que coinciden las dos cosas queda enlazado.
 - **Estimulación del lenguaje y el pensamiento** — arriba de Hoy, en casa y en
@@ -112,23 +112,23 @@ casa y *Hoy · Calendario · Recursos · Yo* en la escuela.
   cualidad), **Háblale así** (tres frases que crecen para la persona adulta) y
   **Pensamos** (predice, prueba, compara y explica sobre el mismo experimento).
   En 0-2 años, un momento de «mira y nota» por proyecto. Cada frase inglesa
-  para la criatura suena en voz de niño y, con **Oír despacio**, más lenta.
+  para el niño o la niña suena en voz de niño y, con **Oír despacio**, más lenta.
 - **Juegos de escucha** — en Explorar (casa): los pares, progresiones y
   cápsulas de escucha en gallego y castellano, con lámina y voz.
 - **Tus premios** — Lúa y sus premios: nivel, XP, racha e insignias de la
-  criatura registrada en casa, que gana la persona adulta en su nombre al
+  niño o niña registrada en casa, que gana la persona adulta en su nombre al
   marcar el juego del día y lo que entiende o dice; y los contadores de la
   persona adulta (asambleas, cápsulas) y las medallas del calendario.
 
 **El inglés no es una lengua de esta app: es contenido que se escucha.** Ninguna
 pantalla se lee en inglés. Lo que hay son las palabras, las órdenes de cuerpo
 (TPR) y la frase de cada mes, cada una con su grabación: la persona adulta pulsa
-y oye cómo se dice antes de decírselo a la criatura. Una maestra de una escuela
+y oye cómo se dice antes de decírselo al niño o a la niña. Una maestra de una escuela
 infantil de Vigo no tiene por qué pronunciar «Crunch leaves» de oído.
 
 En segundo ciclo el inglés entra como **tercera lengua dentro de la asamblea**,
 siempre asociado al movimiento y sin pedir que nadie lo produzca: la orden se
-dice y se hace, y la criatura responde con el cuerpo. El gallego y el castellano
+dice y se hace, y el niño o la niña responde con el cuerpo. El gallego y el castellano
 siguen siendo las lenguas del aula y de la casa.
 
 **Cinco palabras nuevas al día.** De lunes a jueves entran cinco palabras o
@@ -147,7 +147,7 @@ pensada para casa.
 resaltadas, con su gesto y su voz debajo de cada página; abierto desde Hoy, se
 marcan las del día. Cada vez que se abre la app, el primer cuento empieza por
 **Cómo funciona el cuento**: unas pocas frases que dicen qué es cada cosa, qué
-se hace con ella y cómo leerlo con la criatura. Después queda en una línea que
+se hace con ella y cómo leerlo con el niño o la niña. Después queda en una línea que
 se abre al tocarla. Debajo de cada página va el reto en inglés; si da por
 sabidas palabras de antes, lo dice en una línea que, al tocarla, las enseña con
 su gesto y su voz.
@@ -161,7 +161,7 @@ colocaciones (*wash your hands*, *put on your coat*…) y los 44 fonemas del
 inglés, cada uno con su palabra de ejemplo.
 
 **Finalidad exclusivamente educativa.** No es un producto sanitario: no evalúa,
-no diagnostica y no trata nada. La criatura no usa la pantalla; la app es para
+no diagnostica y no trata nada. El niño o la niña no usa la pantalla; la app es para
 la persona adulta que acompaña.
 
 <p align="center">
@@ -224,7 +224,7 @@ comprobado y nombra el comando que lo comprobó.
 | Estimulación del lenguaje y el pensamiento | 40 piezas, una por mes y edad de 2-3 a 5-6 años, cada una con su par mínimo, su progresión, el modelo del adulto y cuatro momentos de pensamiento sobre el experimento STEAM del mes; 10 proyectos de 0-2 con «mira y nota» |
 | Láminas | 350 en pixel art para los 100 cuentos dialogados, con Lúa desde su rejilla; y 80 propias, dibujadas como datos: 50 de vocabulario y 30 escenas del cuento |
 | Casa | En cada uno de los 50 meses, cuatro retos semanales, la lectura del microcuento, un juego, qué mirar y la palabra del mes anterior; una guía de casa y una guía por edad |
-| Premios | Los de la criatura (nivel, racha e insignias de Lúa) y los de la persona adulta (contadores y medallas de calendario) |
+| Premios | Los del niño o de la niña (nivel, racha e insignias de Lúa) y los de la persona adulta (contadores y medallas de calendario) |
 | Android | `minSdk 24` · `compileSdk` y `targetSdk` 36 |
 
 El binario **no declara ni un permiso de red**, y eso lo comprueba un gate que
@@ -283,7 +283,7 @@ El binario firmado lo compila el mismo workflow que corre los gates (`.github/wo
 ## El pulso se ve, no se oye
 
 El metrónomo de la canción a pulso es **visual**. No es una decisión estética:
-parte de las criaturas llevan audiófono o implante, y un metrónomo sonoro
+parte de los niños y las niñas llevan audiófono o implante, y un metrónomo sonoro
 compite justo con la voz que tienen que seguir.
 
 Los tiempos del compás salen de las marcas `*` de la letra, no de una
@@ -292,7 +292,7 @@ lee.
 
 ## Dónde aparece Lúa
 
-La gata es la marca, no un reclamo para la criatura: **aparece para la docente
+La gata es la marca, no un reclamo para el niño o la niña: **aparece para la docente
 y para la familia, nunca para captar la atención infantil**. Se pinta siempre
 desde la misma rejilla de caracteres que rinde el icono del lanzador y el
 splash (`assets/brand/lua_*.txt`), así que no puede separarse del icono.
@@ -332,10 +332,10 @@ del calendario y de cada uno de los 50 meses del trayecto, las colocaciones,
 las palabras de ejemplo de los fonemas y, aparte, **las 4.000 palabras de uso
 habitual del inglés con su frase completa**. Cada una suena dos
 veces: la palabra sola, despacio, que es la que se imita, y su frase entera, a
-ritmo de tutor, que es la que se entiende. Las frases que oye la criatura en la
+ritmo de tutor, que es la que se entiende. Las frases que oye el niño o la niña en la
 estimulación del lenguaje van, como en Valeria, en **voz de niño** y en una
 versión **lenta** de la frase entera, que suena con «Oír despacio». La persona adulta pulsa la pastilla y
-oye cómo se dice antes de decírselo a la criatura. Una pastilla sin grabación se
+oye cómo se dice antes de decírselo al niño o a la niña. Una pastilla sin grabación se
 pinta igual, con la palabra legible y sin altavoz.
 
 ```bash

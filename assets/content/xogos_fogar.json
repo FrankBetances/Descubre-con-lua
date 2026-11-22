@@ -23,8 +23,8 @@
         "es": "Esconde la manzana a la vista. Di: «¿Dónde está la manzana? Find the apple!». Espera 5 segundos en silencio."
       },
       "accionKinestesica": {
-        "gl": "A crianza camiña ou gatea polo cuarto ata coller o obxecto e traelo nas mans.",
-        "es": "La criatura camina o gatea por la habitación hasta coger el objeto y traerlo en las manos."
+        "gl": "O neno ou a nena camiña ou gatea polo cuarto ata coller o obxecto e traelo nas mans.",
+        "es": "El niño o la niña camina o gatea por la habitación hasta coger el objeto y traerlo en las manos."
       }
     },
     {
@@ -45,8 +45,8 @@
       },
       "fraseEn": "Row, row your little boat!",
       "guionAdulto": {
-        "gl": "Crianza sentada no teu colo mirando cara a ti. Vaivén suave de remo adiante e atrás entoando o ritmo.",
-        "es": "Criatura sentada en tu regazo mirándote de frente. Vaivén suave de remo adelante y atrás entonando el ritmo."
+        "gl": "Neno ou nena sentada no teu colo mirando cara a ti. Vaivén suave de remo adiante e atrás entoando o ritmo.",
+        "es": "Niño o niña sentada en tu regazo mirándote de frente. Vaivén suave de remo adelante y atrás entonando el ritmo."
       },
       "accionKinestesica": {
         "gl": "Balanzo do torso sincronizado co adulto e parada na calma mariña.",
@@ -227,8 +227,8 @@
       },
       "fraseEn": "Find something soft!",
       "guionAdulto": {
-        "gl": "Mete as catro texturas na caixa. Pide á crianza: «Find something soft!». Deixa que explore co tacto antes de sacar.",
-        "es": "Mete las cuatro texturas en la caja. Pide a la criatura: «Find something soft!». Deja que explore con el tacto antes de sacar."
+        "gl": "Mete as catro texturas na caixa. Pide ao neno ou á nena: «Find something soft!». Deixa que explore co tacto antes de sacar.",
+        "es": "Mete las cuatro texturas en la caja. Pide al niño o a la niña: «Find something soft!». Deja que explore con el tacto antes de sacar."
       },
       "accionKinestesica": {
         "gl": "Introduce a man na caixa, palpa as texturas e saca a que se pediu.",

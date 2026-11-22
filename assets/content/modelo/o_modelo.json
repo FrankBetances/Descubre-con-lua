@@ -1,8 +1,8 @@
 {
   "_doc": "«O modelo / El modelo» (F2): como fala a persoa adulta. Sae dos cinco documentos de referencias/base/ coas correccións de ERRATAS.md; as catro fontes con autor están contrastadas coa publicación orixinal (PubMed, ASHA, I-LABS).",
   "intro": {
-    "gl": "Aquí está como fala a persoa adulta cando achega o inglés: na aula e na casa é o mesmo modelo. A app fálache a ti, non á criatura. Ti escoitas a frase, apréndela e dila coa túa voz, coa túa cara e co obxecto na man. Non se lle pide á criatura que repita nin se a corrixe, e a app non garda nada dela.",
-    "es": "Aquí está cómo habla la persona adulta cuando acerca el inglés: en el aula y en casa es el mismo modelo. La app te habla a ti, no a la criatura. Tú escuchas la frase, la aprendes y la dices con tu voz, con tu cara y con el objeto en la mano. No se le pide a la criatura que repita ni se la corrige, y la app no guarda nada de ella."
+    "gl": "Aquí está como fala a persoa adulta cando achega o inglés: na aula e na casa é o mesmo modelo. A app fálache a ti, non ao neno ou á nena. Ti escoitas a frase, apréndela e dila coa túa voz, coa túa cara e co obxecto na man. Non se lle pide ao neno ou á nena que repita nin se a corrixe, e a app non garda nada dela.",
+    "es": "Aquí está cómo habla la persona adulta cuando acerca el inglés: en el aula y en casa es el mismo modelo. La app te habla a ti, no al niño o a la niña. Tú escuchas la frase, la aprendes y la dices con tu voz, con tu cara y con el objeto en la mano. No se le pide al niño o a la niña que repita ni se la corrige, y la app no guarda nada de ella."
   },
   "seccions": [
     {
@@ -16,8 +16,8 @@
         "es": "Es la forma de hablar que les sale a muchas personas adultas cuando hablan con un bebé: voz algo más aguda, entonación que sube y baja, ritmo lento y vocales bien abiertas. No es hablar como un bebé: las palabras son las de verdad y las frases están bien hechas."
       },
       "porque": {
-        "gl": "A melodía chama a atención da criatura e o ritmo lento axúdaa a notar onde empeza e onde acaba cada palabra. Coas vogais ben marcadas é máis doado escoitar os sons do inglés que non hai en galego nin en castelán.",
-        "es": "La melodía llama la atención de la criatura y el ritmo lento la ayuda a notar dónde empieza y dónde acaba cada palabra. Con las vocales bien marcadas es más fácil oír los sonidos del inglés que no existen en gallego ni en castellano."
+        "gl": "A melodía chama a atención do neno ou da nena e o ritmo lento axúdaa a notar onde empeza e onde acaba cada palabra. Coas vogais ben marcadas é máis doado escoitar os sons do inglés que non hai en galego nin en castelán.",
+        "es": "La melodía llama la atención del niño o de la niña y el ritmo lento la ayuda a notar dónde empieza y dónde acaba cada palabra. Con las vocales bien marcadas es más fácil oír los sonidos del inglés que no existen en gallego ni en castellano."
       },
       "como": [
         {
@@ -50,8 +50,8 @@
       },
       "exemploCasa": {
         "situacion": {
-          "gl": "Na bañeira, mentres a criatura bate na auga coas mans.",
-          "es": "En la bañera, mientras la criatura golpea el agua con las manos."
+          "gl": "Na bañeira, mentres o neno ou a nena bate na auga coas mans.",
+          "es": "En la bañera, mientras el niño o la niña golpea el agua con las manos."
         },
         "adulta": "Splash! Warm water!"
       },
@@ -72,12 +72,12 @@
         "es": "La compuerta social: aprende de una persona"
       },
       "que": {
-        "gl": "As criaturas pequenas aprenden unha lingua cando a escoitan dunha persoa que está con elas, que as mira e que responde ao que fan. Un audio ou unha pantalla non miran nin agardan nin responden. Por iso esta app non lle fala á criatura: fálache a ti.",
-        "es": "Las criaturas pequeñas aprenden una lengua cuando la oyen de una persona que está con ellas, que las mira y que responde a lo que hacen. Un audio o una pantalla no miran ni esperan ni responden. Por eso esta app no le habla a la criatura: te habla a ti."
+        "gl": "os nenos e as nenas pequenos aprenden unha lingua cando a escoitan dunha persoa que está con eles, que as mira e que responde ao que fan. Un audio ou unha pantalla non miran nin agardan nin responden. Por iso esta app non lle fala ao neno ou á nena: fálache a ti.",
+        "es": "Los niños y las niñas pequeños aprenden una lengua cuando la oyen de una persona que está con ellos, que las mira y que responde a lo que hacen. Un audio o una pantalla no miran ni esperan ni responden. Por eso esta app no le habla al niño o a la niña: te habla a ti."
       },
       "porque": {
-        "gl": "A relación é a que abre a porta: a mirada, o xesto e a resposta ao que fai a criatura fan que preste atención á lingua. A mesma frase, posta nun altofalante, non ten esa conversa detrás.",
-        "es": "La relación es la que abre la puerta: la mirada, el gesto y la respuesta a lo que hace la criatura hacen que preste atención a la lengua. La misma frase, puesta en un altavoz, no tiene esa conversación detrás."
+        "gl": "A relación é a que abre a porta: a mirada, o xesto e a resposta ao que fai o neno ou a nena fan que preste atención á lingua. A mesma frase, posta nun altofalante, non ten esa conversa detrás.",
+        "es": "La relación es la que abre la puerta: la mirada, el gesto y la respuesta a lo que hace el niño o la niña hacen que preste atención a la lengua. La misma frase, puesta en un altavoz, no tiene esa conversación detrás."
       },
       "como": [
         {
@@ -85,8 +85,8 @@
           "es": "Escucha el audio de la app tú sola, antes, para aprender la frase."
         },
         {
-          "gl": "Garda o móbil e di a frase ti, mirando á criatura.",
-          "es": "Guarda el móvil y di la frase tú, mirando a la criatura."
+          "gl": "Garda o móbil e di a frase ti, mirando ao neno ou á nena.",
+          "es": "Guarda el móvil y di la frase tú, mirando al niño o a la niña."
         },
         {
           "gl": "Agarda a súa resposta e responde ao que faga: mirar, sinalar, rir.",
@@ -112,8 +112,8 @@
         "adulta": "Good night, teddy!"
       },
       "erro": {
-        "gl": "Poñerlle á criatura o audio ou un vídeo en inglés pensando que aprende igual que contigo.",
-        "es": "Ponerle a la criatura el audio o un vídeo en inglés pensando que aprende igual que contigo."
+        "gl": "Poñerlle ao neno ou á nena o audio ou un vídeo en inglés pensando que aprende igual que contigo.",
+        "es": "Ponerle al niño o a la niña el audio o un vídeo en inglés pensando que aprende igual que contigo."
       },
       "fonte": {
         "gl": "Kuhl, P. K. (2007). Is speech learning 'gated' by the social brain? Developmental Science, 10(1), 110-120.",
@@ -128,12 +128,12 @@
         "es": "El habla paralela: poner palabras a lo que hace"
       },
       "que": {
-        "gl": "É contar en voz alta, en presente, o que a criatura está facendo ou mirando nese momento. Falas da súa acción, non da túa: «You…». Non lle preguntas nada nin lle pides que fale.",
-        "es": "Es contar en voz alta, en presente, lo que la criatura está haciendo o mirando en ese momento. Hablas de su acción, no de la tuya: «You…». No le preguntas nada ni le pides que hable."
+        "gl": "É contar en voz alta, en presente, o que o neno ou a nena está facendo ou mirando nese momento. Falas da súa acción, non da túa: «You…». Non lle preguntas nada nin lle pides que fale.",
+        "es": "Es contar en voz alta, en presente, lo que el niño o la niña está haciendo o mirando en ese momento. Hablas de su acción, no de la tuya: «You…». No le preguntas nada ni le pides que hable."
       },
       "porque": {
-        "gl": "A palabra chega xusto cando a criatura ten a man e a mirada no obxecto, e así únese a palabra coa cousa. Como non hai pregunta, non hai exame: pode escoitar tranquila sen deixar o que está a facer.",
-        "es": "La palabra llega justo cuando la criatura tiene la mano y la mirada en el objeto, y así se une la palabra con la cosa. Como no hay pregunta, no hay examen: puede escuchar tranquila sin dejar lo que está haciendo."
+        "gl": "A palabra chega xusto cando o neno ou a nena ten a man e a mirada no obxecto, e así únese a palabra coa cousa. Como non hai pregunta, non hai exame: pode escoitar tranquila sen deixar o que está a facer.",
+        "es": "La palabra llega justo cuando el niño o la niña tiene la mano y la mirada en el objeto, y así se une la palabra con la cosa. Como no hay pregunta, no hay examen: puede escuchar tranquila sin dejar lo que está haciendo."
       },
       "como": [
         {
@@ -155,15 +155,15 @@
       ],
       "exemploAula": {
         "situacion": {
-          "gl": "No recuncho de construción, unha criatura pon un bloque vermello enriba da torre.",
-          "es": "En el rincón de construcción, una criatura pone un bloque rojo encima de la torre."
+          "gl": "No recuncho de construción, un neno ou unha nena pon un bloque vermello enriba da torre.",
+          "es": "En el rincón de construcción, un niño o una niña pone un bloque rojo encima de la torre."
         },
         "adulta": "You put the red block on top."
       },
       "exemploCasa": {
         "situacion": {
-          "gl": "Na praia ou no parque, a criatura enche o caldeiro de area.",
-          "es": "En la playa o en el parque, la criatura llena el cubo de arena."
+          "gl": "Na praia ou no parque, o neno ou a nena enche o caldeiro de area.",
+          "es": "En la playa o en el parque, el niño o la niña llena el cubo de arena."
         },
         "adulta": "You fill the bucket."
       },
@@ -188,8 +188,8 @@
         "es": "Después de decir o preguntar algo, callas de 3 a 5 segundos y esperas, con la cara abierta. Si llega una respuesta, la devuelves bien dicha o un poco más larga. Y vuelves a esperar un poco antes de decir otra cosa."
       },
       "porque": {
-        "gl": "Para responder, a criatura ten que escoitar, entender, buscar a palabra ou o xesto e facelo, e iso leva tempo. Se falas antes, a resposta xa non é súa. A segunda espera, antes do eloxio, déixalle sitio para engadir algo máis.",
-        "es": "Para responder, la criatura tiene que escuchar, entender, buscar la palabra o el gesto y hacerlo, y eso lleva tiempo. Si hablas antes, la respuesta ya no es suya. La segunda espera, antes del elogio, le deja sitio para añadir algo más."
+        "gl": "Para responder, o neno ou a nena ten que escoitar, entender, buscar a palabra ou o xesto e facelo, e iso leva tempo. Se falas antes, a resposta xa non é súa. A segunda espera, antes do eloxio, déixalle sitio para engadir algo máis.",
+        "es": "Para responder, el niño o la niña tiene que escuchar, entender, buscar la palabra o el gesto y hacerlo, y eso lleva tiempo. Si hablas antes, la respuesta ya no es suya. La segunda espera, antes del elogio, le deja sitio para añadir algo más."
       },
       "como": [
         {
@@ -244,12 +244,12 @@
         "es": "La expansión: una o dos palabras más"
       },
       "que": {
-        "gl": "Cando a criatura di unha palabra soa ou dúas, ti devólvesllas dentro dunha frase un pouco máis longa. Engades só unha ou dúas pezas: «Ball» pasa a «The red ball». Non lle pides que o repita.",
-        "es": "Cuando la criatura dice una palabra sola o dos, tú se las devuelves dentro de una frase un poco más larga. Añades solo una o dos piezas: «Ball» pasa a «The red ball». No le pides que lo repita."
+        "gl": "Cando o neno ou a nena di unha palabra soa ou dúas, ti devólvesllas dentro dunha frase un pouco máis longa. Engades só unha ou dúas pezas: «Ball» pasa a «The red ball». Non lle pides que o repita.",
+        "es": "Cuando el niño o la niña dice una palabra sola o dos, tú se las devuelves dentro de una frase un poco más larga. Añades solo una o dos piezas: «Ball» pasa a «The red ball». No le pides que lo repita."
       },
       "porque": {
-        "gl": "Ao principio as criaturas din as palabras que máis pesan e deixan fóra as pequenas (the, a, is, your). Se llas devolves xusto despois, escoita a frase enteira mentres aínda está pensando no que quixo dicir. Se engades moito, perde o fío; se engades pouco, pode seguilo.",
-        "es": "Al principio las criaturas dicen las palabras que más pesan y dejan fuera las pequeñas (the, a, is, your). Si se las devuelves justo después, oye la frase entera mientras aún está pensando en lo que quiso decir. Si añades mucho, pierde el hilo; si añades poco, puede seguirlo."
+        "gl": "Ao principio os nenos e as nenas din as palabras que máis pesan e deixan fóra as pequenas (the, a, is, your). Se llas devolves xusto despois, escoita a frase enteira mentres aínda está pensando no que quixo dicir. Se engades moito, perde o fío; se engades pouco, pode seguilo.",
+        "es": "Al principio los niños y las niñas dicen las palabras que más pesan y dejan fuera las pequeñas (the, a, is, your). Si se las devuelves justo después, oye la frase entera mientras aún está pensando en lo que quiso decir. Si añades mucho, pierde el hilo; si añades poco, puede seguirlo."
       },
       "como": [
         {
@@ -275,15 +275,15 @@
       ],
       "exemploAula": {
         "situacion": {
-          "gl": "No patio, unha criatura sinala o paxaro dunha rama e di «Bird».",
-          "es": "En el patio, una criatura señala el pájaro de una rama y dice «Bird»."
+          "gl": "No patio, un neno ou unha nena sinala o paxaro dunha rama e di «Bird».",
+          "es": "En el patio, un niño o una niña señala el pájaro de una rama y dice «Bird»."
         },
         "adulta": "A little bird!"
       },
       "exemploCasa": {
         "situacion": {
-          "gl": "Ao saír da casa, a criatura colle un zapato e di «Shoe».",
-          "es": "Al salir de casa, la criatura coge un zapato y dice «Shoe»."
+          "gl": "Ao saír da casa, o neno ou a nena colle un zapato e di «Shoe».",
+          "es": "Al salir de casa, el niño o la niña coge un zapato y dice «Shoe»."
         },
         "adulta": "Your shoe!"
       },
@@ -304,12 +304,12 @@
         "es": "El recast: devolverlo bien dicho, sin corregir"
       },
       "que": {
-        "gl": "Se a criatura di algo cunha forma torcida, ti respondes ao que quixo dicir e, na túa resposta, vai a forma ben dita. Non dis «non», nin «dise así», nin lle pides que o repita. Segue a conversa.",
-        "es": "Si la criatura dice algo con una forma torcida, tú respondes a lo que quiso decir y, en tu respuesta, va la forma bien dicha. No dices «no», ni «se dice así», ni le pides que lo repita. Sigue la conversación."
+        "gl": "Se o neno ou a nena di algo cunha forma torcida, ti respondes ao que quixo dicir e, na túa resposta, vai a forma ben dita. Non dis «non», nin «dise así», nin lle pides que o repita. Segue a conversa.",
+        "es": "Si el niño o la niña dice algo con una forma torcida, tú respondes a lo que quiso decir y, en tu respuesta, va la forma bien dicha. No dices «no», ni «se dice así», ni le pides que lo repita. Sigue la conversación."
       },
       "porque": {
-        "gl": "A criatura escoita a forma boa xusto despois da súa, cando aínda ten a súa frase na cabeza, e pode notar a diferenza ela soa. Como ninguén a corrixe, non se corta nin perde as ganas de falar.",
-        "es": "La criatura oye la forma buena justo después de la suya, cuando aún tiene su frase en la cabeza, y puede notar la diferencia ella sola. Como nadie la corrige, no se corta ni pierde las ganas de hablar."
+        "gl": "O neno ou a nena escoita a forma boa xusto despois da súa, cando aínda ten a súa frase na cabeza, e pode notar a diferenza sen axuda. Como ninguén a corrixe, non se corta nin perde as ganas de falar.",
+        "es": "El niño o la niña oye la forma buena justo después de la suya, cuando aún tiene su frase en la cabeza, y puede notar la diferencia sin ayuda. Como nadie la corrige, no se corta ni pierde las ganas de hablar."
       },
       "como": [
         {
@@ -335,15 +335,15 @@
       ],
       "exemploAula": {
         "situacion": {
-          "gl": "No recuncho de plástica, unha criatura ensina o pincel roto e di «The brush breaked».",
-          "es": "En el rincón de plástica, una criatura enseña el pincel roto y dice «The brush breaked»."
+          "gl": "No recuncho de plástica, un neno ou unha nena ensina o pincel roto e di «The brush breaked».",
+          "es": "En el rincón de plástica, un niño o una niña enseña el pincel roto y dice «The brush breaked»."
         },
         "adulta": "Oh, the brush broke!"
       },
       "exemploCasa": {
         "situacion": {
-          "gl": "Ao volver do parque, a criatura conta «I goed to the park».",
-          "es": "Al volver del parque, la criatura cuenta «I goed to the park»."
+          "gl": "Ao volver do parque, o neno ou a nena conta «I goed to the park».",
+          "es": "Al volver del parque, el niño o la niña cuenta «I goed to the park»."
         },
         "adulta": "Yes! You went to the park!"
       },
@@ -364,12 +364,12 @@
         "es": "Lúa solo habla inglés"
       },
       "que": {
-        "gl": "Lúa é a voz do inglés: as súas frases sempre van en inglés. O conto, a trama e as axudas dilas ti en galego ou en castelán. Así a criatura sabe cando chega o inglés e nunca perde o fío da historia.",
-        "es": "Lúa es la voz del inglés: sus frases siempre van en inglés. El cuento, la trama y las ayudas las dices tú en gallego o en castellano. Así la criatura sabe cuándo llega el inglés y nunca pierde el hilo de la historia."
+        "gl": "Lúa é a voz do inglés: as súas frases sempre van en inglés. O conto, a trama e as axudas dilas ti en galego ou en castelán. Así o neno ou a nena sabe cando chega o inglés e nunca perde o fío da historia.",
+        "es": "Lúa es la voz del inglés: sus frases siempre van en inglés. El cuento, la trama y las ayudas las dices tú en gallego o en castellano. Así el niño o la niña sabe cuándo llega el inglés y nunca pierde el hilo de la historia."
       },
       "porque": {
-        "gl": "Se a mesma figura fala sempre a mesma lingua, a criatura asocia esa figura co inglés. E como a historia se conta na lingua da casa, entende o que pasa e está tranquila, e a frase de Lúa chega no momento máis emocionante.",
-        "es": "Si la misma figura habla siempre la misma lengua, la criatura asocia esa figura con el inglés. Y como la historia se cuenta en la lengua de casa, entiende lo que pasa y está tranquila, y la frase de Lúa llega en el momento más emocionante."
+        "gl": "Se a mesma figura fala sempre a mesma lingua, o neno ou a nena asocia esa figura co inglés. E como a historia se conta na lingua da casa, entende o que pasa e está tranquila, e a frase de Lúa chega no momento máis emocionante.",
+        "es": "Si la misma figura habla siempre la misma lengua, el niño o la niña asocia esa figura con el inglés. Y como la historia se cuenta en la lengua de casa, entiende lo que pasa y está tranquila, y la frase de Lúa llega en el momento más emocionante."
       },
       "como": [
         {
@@ -420,17 +420,17 @@
         "es": "Qué cabe esperar en cada edad"
       },
       "que": {
-        "gl": "Non é o mesmo unha criatura de dous anos que unha de cinco. Aquí tes, a grandes trazos, como adoita responder en cada tramo e como axustas a túa fala. É unha orientación para ti, non unha lista para comprobar.",
-        "es": "No es lo mismo una criatura de dos años que una de cinco. Aquí tienes, a grandes rasgos, cómo suele responder en cada tramo y cómo ajustas tu habla. Es una orientación para ti, no una lista para comprobar."
+        "gl": "Non é o mesmo un neno ou unha nena de dous anos que unha de cinco. Aquí tes, a grandes trazos, como adoita responder en cada tramo e como axustas a túa fala. É unha orientación para ti, non unha lista para comprobar.",
+        "es": "No es lo mismo un niño o una niña de dos años que una de cinco. Aquí tienes, a grandes rasgos, cómo suele responder en cada tramo y cómo ajustas tu habla. Es una orientación para ti, no una lista para comprobar."
       },
       "porque": {
-        "gl": "Se esperas o que aínda non toca, a criatura nótao e retráese. Se sabes que nesa idade responder co corpo xa é responder, recoñeces a resposta cando chega e axustas a frase ao seu paso.",
-        "es": "Si esperas lo que aún no toca, la criatura lo nota y se retrae. Si sabes que a esa edad responder con el cuerpo ya es responder, reconoces la respuesta cuando llega y ajustas la frase a su paso."
+        "gl": "Se esperas o que aínda non toca, o neno ou a nena nótao e retráese. Se sabes que nesa idade responder co corpo xa é responder, recoñeces a resposta cando chega e axustas a frase ao seu paso.",
+        "es": "Si esperas lo que aún no toca, el niño o la niña lo nota y se retrae. Si sabes que a esa edad responder con el cuerpo ya es responder, reconoces la respuesta cuando llega y ajustas la frase a su paso."
       },
       "como": [
         {
-          "gl": "Busca o tramo da criatura ou do grupo.",
-          "es": "Busca el tramo de la criatura o del grupo."
+          "gl": "Busca o tramo do neno ou da nena ou do grupo.",
+          "es": "Busca el tramo del niño o de la niña o del grupo."
         },
         {
           "gl": "Le que cabe esperar e que non, para non pedir de máis.",
@@ -441,27 +441,27 @@
           "es": "Ajusta la longitud de tu frase al tramo."
         },
         {
-          "gl": "Lembra que cada criatura leva o seu ritmo: o tramo non é unha meta.",
-          "es": "Recuerda que cada criatura lleva su ritmo: el tramo no es una meta."
+          "gl": "Lembra que cada neno ou nena leva o seu ritmo: o tramo non é unha meta.",
+          "es": "Recuerda que cada niño o niña lleva su ritmo: el tramo no es una meta."
         }
       ],
       "exemploAula": {
         "situacion": {
-          "gl": "Cun grupo de 2 a 3 anos, no recuncho da auga, unha criatura di «Water».",
-          "es": "Con un grupo de 2 a 3 años, en el rincón del agua, una criatura dice «Water»."
+          "gl": "Cun grupo de 2 a 3 anos, no recuncho da auga, un neno ou unha nena di «Water».",
+          "es": "Con un grupo de 2 a 3 años, en el rincón del agua, un niño o una niña dice «Water»."
         },
         "adulta": "Water! Cold water!"
       },
       "exemploCasa": {
         "situacion": {
-          "gl": "Cunha criatura de 4 a 5 anos, mirando pola fiestra antes de saír, di «Rain!».",
-          "es": "Con una criatura de 4 a 5 años, mirando por la ventana antes de salir, dice «Rain!»."
+          "gl": "Cun neno ou cunha nena de 4 a 5 anos, mirando pola fiestra antes de saír, di «Rain!».",
+          "es": "Con un niño o una niña de 4 a 5 años, mirando por la ventana antes de salir, dice «Rain!»."
         },
         "adulta": "Yes, it is raining! Boots on!"
       },
       "erro": {
-        "gl": "Pedirlle a unha criatura de dous anos frases enteiras, ou falarlle a unha de cinco só con palabras soltas.",
-        "es": "Pedirle a una criatura de dos años frases enteras, o hablarle a una de cinco solo con palabras sueltas."
+        "gl": "Pedirlle a un neno ou unha nena de dous anos frases enteiras, ou falarlle a unha de cinco só con palabras soltas.",
+        "es": "Pedirle a un niño o una niña de dos años frases enteras, o hablarle a una de cinco solo con palabras sueltas."
       },
       "fonte": {
         "gl": "",
@@ -608,21 +608,21 @@
         "es": "Medir y registrar: lo que la app no hace"
       },
       "que": {
-        "gl": "O programa no que se inspira este modelo mediu o seu efecto con dúas ferramentas. Unha é LENA, un aparato dixital que rexistra a fala e conta as quendas de conversa. A outra son probas estandarizadas, con tarefas nunha pantalla táctil, para ver que palabras entende a criatura.",
-        "es": "El programa en el que se inspira este modelo midió su efecto con dos herramientas. Una es LENA, un aparato digital que registra el habla y cuenta los turnos de conversación. La otra son pruebas estandarizadas, con tareas en una pantalla táctil, para ver qué palabras entiende la criatura."
+        "gl": "O programa no que se inspira este modelo mediu o seu efecto con dúas ferramentas. Unha é LENA, un aparato dixital que rexistra a fala e conta as quendas de conversa. A outra son probas estandarizadas, con tarefas nunha pantalla táctil, para ver que palabras entende o neno ou a nena.",
+        "es": "El programa en el que se inspira este modelo midió su efecto con dos herramientas. Una es LENA, un aparato digital que registra el habla y cuenta los turnos de conversación. La otra son pruebas estandarizadas, con tareas en una pantalla táctil, para ver qué palabras entiende el niño o la niña."
       },
       "porque": {
-        "gl": "Esas ferramentas son de investigación. Esta app non mide nin garda nada de ningunha criatura: nin gravacións, nin respostas, nin nomes, nin progresos. Non substitúe ningunha avaliación nin a observación que fai a escola.",
-        "es": "Esas herramientas son de investigación. Esta app no mide ni guarda nada de ninguna criatura: ni grabaciones, ni respuestas, ni nombres, ni progresos. No sustituye ninguna evaluación ni la observación que hace la escuela."
+        "gl": "Esas ferramentas son de investigación. Esta app non mide nin garda nada de ningún neno nin nena: nin gravacións, nin respostas, nin nomes, nin progresos. Non substitúe ningunha avaliación nin a observación que fai a escola.",
+        "es": "Esas herramientas son de investigación. Esta app no mide ni guarda nada de ningún niño ni niña: ni grabaciones, ni respuestas, ni nombres, ni progresos. No sustituye ninguna evaluación ni la observación que hace la escuela."
       },
       "como": [
         {
-          "gl": "Usa a app para preparar o que vas dicir, non para apuntar o que fai a criatura.",
-          "es": "Usa la app para preparar lo que vas a decir, no para apuntar lo que hace la criatura."
+          "gl": "Usa a app para preparar o que vas dicir, non para apuntar o que fai o neno ou a nena.",
+          "es": "Usa la app para preparar lo que vas a decir, no para apuntar lo que hace el niño o la niña."
         },
         {
-          "gl": "O que conta a escola sobre o progreso da criatura cóntao a escola, polas súas vías.",
-          "es": "Lo que cuenta la escuela sobre el progreso de la criatura lo cuenta la escuela, por sus vías."
+          "gl": "O que conta a escola sobre o progreso do neno ou da nena cóntao a escola, polas súas vías.",
+          "es": "Lo que cuenta la escuela sobre el progreso del niño o de la niña lo cuenta la escuela, por sus vías."
         },
         {
           "gl": "Os contadores dos premios de Lúa son túos: cantas asembleas ou cápsulas fixeches ti.",
@@ -632,8 +632,8 @@
       "exemploAula": null,
       "exemploCasa": null,
       "erro": {
-        "gl": "Ler un contador da app como se dixese canto sabe a criatura.",
-        "es": "Leer un contador de la app como si dijera cuánto sabe la criatura."
+        "gl": "Ler un contador da app como se dixese canto sabe o neno ou a nena.",
+        "es": "Leer un contador de la app como si dijera cuánto sabe el niño o la niña."
       },
       "fonte": {
         "gl": "",

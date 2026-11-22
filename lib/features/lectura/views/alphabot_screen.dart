@@ -118,7 +118,7 @@ class _AlphabotScreenState extends State<AlphabotScreen> {
                     Expanded(
                       child: Text(
                         lang == AppLanguage.gl
-                            ? 'Xogo 100% físico para a crianza. Usa letras reais de madeira ou imáns na neveira.'
+                            ? 'Xogo 100% físico para o neno ou a nena. Usa letras reais de madeira ou imáns na neveira.'
                             : 'Juego 100% físico para la infancia. Usa letras reales de madera o imanes en la nevera.',
                         style: const TextStyle(
                           color: AppTheme.warning,

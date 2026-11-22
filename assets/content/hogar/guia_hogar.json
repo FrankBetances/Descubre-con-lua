@@ -7,15 +7,21 @@
   "puntos": [
     {
       "clave": "para_ti",
-      "titulo": {"gl": "A app é para ti, non para a criatura", "es": "La app es para ti, no para la criatura"},
+      "titulo": {
+        "gl": "A app é para ti, non para o neno ou a nena",
+        "es": "La app es para ti, no para el niño o la niña"
+      },
       "texto": {
-        "gl": "Escoitas a frase, apréndela e dila ti, coa túa cara e co teu xesto. O audio non se lle pon á criatura: o que aprende é a túa voz, diante dela.",
-        "es": "Escuchas la frase, la aprendes y la dices tú, con tu cara y con tu gesto. El audio no se le pone a la criatura: lo que aprende es tu voz, delante de ella."
+        "gl": "Escoitas a frase, apréndela e dila ti, coa túa cara e co teu xesto. O audio non se lle pon ao neno ou á nena: o que aprende é a túa voz, diante dela.",
+        "es": "Escuchas la frase, la aprendes y la dices tú, con tu cara y con tu gesto. El audio no se le pone al niño o a la niña: lo que aprende es tu voz, con él o ella."
       }
     },
     {
       "clave": "lingua_casa",
-      "titulo": {"gl": "A lingua da casa é a base", "es": "La lengua de casa es la base"},
+      "titulo": {
+        "gl": "A lingua da casa é a base",
+        "es": "La lengua de casa es la base"
+      },
       "texto": {
         "gl": "Sexa galego, castelán ou outra, a casa segue falando a súa lingua. O inglés son uns minutos e nunca substitúe nada.",
         "es": "Sea gallego, castellano u otra, la casa sigue hablando su lengua. El inglés son unos minutos y nunca sustituye nada."
@@ -23,15 +29,21 @@
     },
     {
       "clave": "unha_rutina",
-      "titulo": {"gl": "Unha lingua, unha rutina", "es": "Una lengua, una rutina"},
+      "titulo": {
+        "gl": "Unha lingua, unha rutina",
+        "es": "Una lengua, una rutina"
+      },
       "texto": {
-        "gl": "O inglés vai unido a un momento fixo do día (o baño, a merenda, o paseo), sempre o mesmo, para que a criatura saiba cando chega. Cada mes trae o seu momento.",
-        "es": "El inglés va unido a un momento fijo del día (el baño, la merienda, el paseo), siempre el mismo, para que la criatura sepa cuándo llega. Cada mes trae su momento."
+        "gl": "O inglés vai unido a un momento fixo do día (o baño, a merenda, o paseo), sempre o mesmo, para que o neno ou a nena saiba cando chega. Cada mes trae o seu momento.",
+        "es": "El inglés va unido a un momento fijo del día (el baño, la merienda, el paseo), siempre el mismo, para que el niño o la niña sepa cuándo llega. Cada mes trae su momento."
       }
     },
     {
       "clave": "poucos_minutos",
-      "titulo": {"gl": "Poucos minutos, o mesmo momento", "es": "Pocos minutos, el mismo momento"},
+      "titulo": {
+        "gl": "Poucos minutos, o mesmo momento",
+        "es": "Pocos minutos, el mismo momento"
+      },
       "texto": {
         "gl": "Entre 2 e 10 minutos segundo a idade. Mellor tres minutos cada día que media hora o sábado.",
         "es": "Entre 2 y 10 minutos según la edad. Mejor tres minutos cada día que media hora el sábado."
@@ -39,7 +51,10 @@
     },
     {
       "clave": "cara_a_cara",
-      "titulo": {"gl": "Cara a cara e preto", "es": "Cara a cara y cerca"},
+      "titulo": {
+        "gl": "Cara a cara e preto",
+        "es": "Cara a cara y cerca"
+      },
       "texto": {
         "gl": "Á súa altura, de fronte, con pouco ruído arredor e sen pantallas acesas.",
         "es": "A su altura, de frente, con poco ruido alrededor y sin pantallas encendidas."
@@ -47,7 +62,10 @@
     },
     {
       "clave": "primeiro_entender",
-      "titulo": {"gl": "Primeiro, entender", "es": "Primero, entender"},
+      "titulo": {
+        "gl": "Primeiro, entender",
+        "es": "Primero, entender"
+      },
       "texto": {
         "gl": "Que responda co corpo (mirar, sinalar, facer o xesto, coller o obxecto) xa é a resposta. As palabras chegan despois, e chegan soas.",
         "es": "Que responda con el cuerpo (mirar, señalar, hacer el gesto, coger el objeto) ya es la respuesta. Las palabras llegan después, y llegan solas."
@@ -55,7 +73,10 @@
     },
     {
       "clave": "sen_probas",
-      "titulo": {"gl": "Sen preguntas de proba", "es": "Sin preguntas de examen"},
+      "titulo": {
+        "gl": "Sen preguntas de proba",
+        "es": "Sin preguntas de examen"
+      },
       "texto": {
         "gl": "Non hai que preguntar como se di nada, nin pedirlle que o diga outra vez, nin facer listas de palabras. O inglés é un xogo, non un exame.",
         "es": "No hay que preguntar cómo se dice nada, ni pedirle que lo diga otra vez, ni hacer listas de palabras. El inglés es un juego, no un examen."
@@ -63,7 +84,10 @@
     },
     {
       "clave": "sen_corrixir",
-      "titulo": {"gl": "Se se equivoca, devólvelle a frase ben dita", "es": "Si se equivoca, devuélvele la frase bien dicha"},
+      "titulo": {
+        "gl": "Se se equivoca, devólvelle a frase ben dita",
+        "es": "Si se equivoca, devuélvele la frase bien dicha"
+      },
       "texto": {
         "gl": "Se di outra cousa ou contesta na lingua da casa, acolles o que dixo e devólveslle a frase ben dita, sen sinalar o erro.",
         "es": "Si dice otra cosa o contesta en la lengua de casa, acoges lo que dijo y le devuelves la frase bien dicha, sin señalar el error."
@@ -71,40 +95,70 @@
     },
     {
       "clave": "ferramentas",
-      "titulo": {"gl": "As catro ferramentas na casa", "es": "Las cuatro herramientas en casa"},
+      "titulo": {
+        "gl": "As catro ferramentas na casa",
+        "es": "Las cuatro herramientas en casa"
+      },
       "texto": {
         "gl": "Son as mesmas da escola. Cada unha cun exemplo de casa.",
         "es": "Son las mismas de la escuela. Cada una con un ejemplo de casa."
       },
       "exemplos": [
         {
-          "ferramenta": {"gl": "Fala paralela", "es": "Habla paralela"},
-          "situacion": {"gl": "Mentres se lava as mans, contas o que fai, sen pedirlle nada.", "es": "Mientras se lava las manos, cuentas lo que hace, sin pedirle nada."},
+          "ferramenta": {
+            "gl": "Fala paralela",
+            "es": "Habla paralela"
+          },
+          "situacion": {
+            "gl": "Mentres se lava as mans, contas o que fai, sen pedirlle nada.",
+            "es": "Mientras se lava las manos, cuentas lo que hace, sin pedirle nada."
+          },
           "en": "Wash!"
         },
         {
-          "ferramenta": {"gl": "Espera en tres tempos", "es": "Espera en tres tiempos"},
-          "situacion": {"gl": "Ofréceslle a froita, dis a frase e calas uns segundos, coa man estendida.", "es": "Le ofreces la fruta, dices la frase y callas unos segundos, con la mano tendida."},
+          "ferramenta": {
+            "gl": "Espera en tres tempos",
+            "es": "Espera en tres tiempos"
+          },
+          "situacion": {
+            "gl": "Ofréceslle a froita, dis a frase e calas uns segundos, coa man estendida.",
+            "es": "Le ofreces la fruta, dices la frase y callas unos segundos, con la mano tendida."
+          },
           "en": "Here you are"
         },
         {
-          "ferramenta": {"gl": "Expansión", "es": "Expansión"},
-          "situacion": {"gl": "Se di «barco», devólveslle a frase un chisco máis longa.", "es": "Si dice «barco», le devuelves la frase un poco más larga."},
+          "ferramenta": {
+            "gl": "Expansión",
+            "es": "Expansión"
+          },
+          "situacion": {
+            "gl": "Se di «barco», devólveslle a frase un chisco máis longa.",
+            "es": "Si dice «barco», le devuelves la frase un poco más larga."
+          },
           "en": "Push the boat!"
         },
         {
-          "ferramenta": {"gl": "Recast", "es": "Recast"},
-          "situacion": {"gl": "Se di «a miña quenda!» na lingua da casa, asentes e devólvesllo en inglés.", "es": "Si dice «¡me toca!» en la lengua de casa, asientes y se lo devuelves en inglés."},
+          "ferramenta": {
+            "gl": "Recast",
+            "es": "Recast"
+          },
+          "situacion": {
+            "gl": "Se di «a miña quenda!» na lingua da casa, asentes e devólvesllo en inglés.",
+            "es": "Si dice «¡me toca!» en la lengua de casa, asientes y se lo devuelves en inglés."
+          },
           "en": "My turn"
         }
       ]
     },
     {
       "clave": "non_avalia",
-      "titulo": {"gl": "Non é unha avaliación", "es": "No es una evaluación"},
+      "titulo": {
+        "gl": "Non é unha avaliación",
+        "es": "No es una evaluación"
+      },
       "texto": {
-        "gl": "A app non garda nada da túa criatura nin fai informes. O que conta a escola do seu progreso cóntao a escola.",
-        "es": "La app no guarda nada de tu criatura ni hace informes. Lo que cuenta la escuela de su progreso lo cuenta la escuela."
+        "gl": "A app non garda nada do teu neno ou da túa nena nin fai informes. O que conta a escola do seu progreso cóntao a escola.",
+        "es": "La app no guarda nada de tu niño o niña ni hace informes. Lo que cuenta la escuela de su progreso lo cuenta la escuela."
       }
     }
   ]

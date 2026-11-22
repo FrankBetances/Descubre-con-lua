@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-"""Ningún texto de la app pide a la criatura que repita, traduzca o «diga cómo se dice».
+"""Ningún texto de la app pide al niño o a la niña que repita, traduzca o «diga cómo se dice».
 
     python3 tools/check_sin_repetir.py
 
 Decisión D3 del plan docente (`docs/PLAN_MEJORA_INTEGRAL.md`, módulo M2.4): en
-gallego, en castellano y en inglés, nada del contenido le pide a la criatura
+gallego, en castellano y en inglés, nada del contenido le pide al niño o a la niña
 
 - que repita una palabra o una frase («que repita», «repite conmigo»,
   «can you say», «say it again», «repeat after me», «and say: …»);
@@ -105,7 +105,7 @@ CITA = re.compile(r"«[^»]*»|“[^”]*”|\"[^\"]*\"")
 # una dice por qué el texto cumple la regla aunque lleve las palabras.
 EXCEPCIONES = [
     ("capsulas/academy.segundo_ciclo.setembro.01.json",
-     "Esixir que a crianza fale en inglés ou preguntarlle «como se di isto?» "
+     "Esixir que o neno ou a nena fale en inglés ou preguntarlle «como se di isto?» "
      "convérteo nun exame, e o exame corta a conversa. Devolverlle a frase ben "
      "dita dentro do xogo (modelado indirecto ou recast) valida o que dixo e "
      "mantén viva a ganas de falar.",
@@ -126,12 +126,12 @@ EXCEPCIONES = [
      "Afirmación verdadera del test: compara el recast con pedir que repita."),
     ("formacion/formacion.familia.json",
      "Esa pregunta convierte un xogo nun exame. Xera ansiedade e o resultado "
-     "adoita ser que a crianza cala ou rexeita a actividade. O mesmo pasa con "
+     "adoita ser que o neno ou a nena cala ou rexeita a actividade. O mesmo pasa con "
      "«non se di así» ou «dillo a papá».",
      "Cita las frases para explicar por qué no se dicen."),
     ("formacion/formacion.familia.json",
      "Esa pregunta convierte un juego en un examen. Genera ansiedad y el "
-     "resultado suele ser que la criatura calla o rechaza la actividad. Lo mismo "
+     "resultado suele ser que el niño o la niña calla o rechaza la actividad. Lo mismo "
      "pasa con «no se dice así» o «díselo a papá».",
      "Cita las frases para explicar por qué no se dicen."),
     ("nomes/nomes_portais.json",
@@ -144,7 +144,7 @@ EXCEPCIONES = [
      "The teacher describes an ecological shelter; children choose the motor "
      "response and say the matching chunk.",
      "Sale del documento curricular de Frank (6.º, fase transaccional): espera "
-     "que la criatura use la fórmula, no que repita un modelo. Frank decidió "
+     "que el niño o la niña use la fórmula, no que repita un modelo. Frank decidió "
      "el 19/10/2026 que estas órdenes se quedan (D3)."),
 ]
 
@@ -245,7 +245,7 @@ def main() -> int:
             f"{relativo}: excepción que ya no hace falta, quítala: «{texto}»")
 
     if fallos:
-        print("Textos que piden a la criatura repetir, traducir o «cómo se dice», "
+        print("Textos que piden al niño o a la niña repetir, traducir o «cómo se dice», "
               "o que corrigen de frente:\n")
         for linea in fallos:
             print(f"  {linea}")

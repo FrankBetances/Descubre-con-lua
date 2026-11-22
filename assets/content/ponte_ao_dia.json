@@ -20,8 +20,8 @@
         "es": "La orden de hoy da por sabidas estas palabras: el curso las enseñó antes de este mes. El grupo responde con el cuerpo, sin repetirlas."
       },
       "guia": {
-        "gl": "Se hai crianzas novas no grupo: un padriño ou unha madriña da clase ao seu carón, e fai ti o xesto as primeiras semanas, aínda que a orde diga que non.",
-        "es": "Si hay criaturas nuevas en el grupo: un padrino o una madrina de la clase a su lado, y haz tú el gesto las primeras semanas, aunque la orden diga que no."
+        "gl": "Se hai nenos e nenas novas no grupo: un padriño ou unha madriña da clase ao seu carón, e fai ti o xesto as primeiras semanas, aínda que a orde diga que non.",
+        "es": "Si hay niños y niñas nuevas en el grupo: un padrino o una madrina de la clase a su lado, y haz tú el gesto las primeras semanas, aunque la orden diga que no."
       },
       "xesto": {
         "gl": "Xesto",
@@ -46,8 +46,8 @@
         "es": "Si ha llegado nueva al curso: las {n} palabras de antes que las asambleas y los cuentos de {mes} dan por sabidas."
       },
       "intro": {
-        "gl": "Se a crianza chegou nova á escola, estas son as palabras que as asembleas e os retos dos contos do mes dan por sabidas: o curso ensinounas antes. Dúas ou tres ao día, co seu xesto, abondan para chegar a tempo.",
-        "es": "Si la criatura ha llegado nueva a la escuela, estas son las palabras que las asambleas y los retos de los cuentos del mes dan por sabidas: el curso las enseñó antes. Dos o tres al día, con su gesto, bastan para llegar a tiempo."
+        "gl": "Se o neno ou a nena chegou nova á escola, estas son as palabras que as asembleas e os retos dos contos do mes dan por sabidas: o curso ensinounas antes. Dúas ou tres ao día, co seu xesto, abondan para chegar a tempo.",
+        "es": "Si el niño o la niña ha llegado nueva a la escuela, estas son las palabras que las asambleas y los retos de los cuentos del mes dan por sabidas: el curso las enseñó antes. Dos o tres al día, con su gesto, bastan para llegar a tiempo."
       },
       "naoSeGarda": {
         "gl": "Non se garda.",
@@ -58,8 +58,8 @@
         "es": "Día {n}"
       },
       "baleiro": {
-        "gl": "En {mes}, nin as asembleas nin os contos de {idade} dan por sabida ningunha palabra de antes: a crianza nova vai ao mesmo paso que o grupo.",
-        "es": "En {mes}, ni las asambleas ni los cuentos de {idade} dan por sabida ninguna palabra de antes: la criatura nueva va al mismo paso que el grupo."
+        "gl": "En {mes}, nin as asembleas nin os contos de {idade} dan por sabida ningunha palabra de antes: o neno ou a nena nova vai ao mesmo paso que o grupo.",
+        "es": "En {mes}, ni las asambleas ni los cuentos de {idade} dan por sabida ninguna palabra de antes: el niño o la niña nueva va al mismo paso que el grupo."
       }
     },
     "conto": {
@@ -2094,8 +2094,8 @@
       "gl": "Debaixo do paraugas",
       "es": "Debajo del paraguas",
       "xesto": {
-        "gl": "Xuntarse varias criaturas debaixo dun paraugas imaxinario",
-        "es": "Juntarse varias criaturas debajo de un paraguas imaginario"
+        "gl": "Xuntarse varias nenos e nenas debaixo dun paraugas imaxinario",
+        "es": "Juntarse varias niños y niñas debajo de un paraguas imaginario"
       }
     },
     "3_4.xaneiro.s3.safe": {

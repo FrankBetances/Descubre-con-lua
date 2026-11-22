@@ -239,8 +239,8 @@ class Bloque {
       id: bilinguismoYCulturaId,
       orden: 5,
       titulo: LocalizedString(
-        gl: 'Crianza bilingüe e contorna cultural',
-        es: 'Crianza bilingüe y entorno cultural',
+        gl: 'Educación bilingüe e contorna cultural',
+        es: 'Educación bilingüe y entorno cultural',
       ),
       descripcion: LocalizedString(
         gl: 'Convivir e medrar en galego e castelán con harmonía e sen presións dende o berce.',

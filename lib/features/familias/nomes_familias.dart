@@ -9,7 +9,7 @@ import '../../core/localization/localized_string.dart';
 /// Salen del diccionario de la revisión de interfaz: un nombre que diría una
 /// familia y una frase de menos de quince palabras. Antes eran «Biblioteca de
 /// Contos Dialóxicos», «Aprender a Ler · Fónica Manipulativa» o «Academy ·
-/// Pautas de Crianza», y la teoría iba delante de lo que hay que hacer.
+/// Pautas para casa», y la teoría iba delante de lo que hay que hacer.
 class NomesFamilias {
   NomesFamilias._();
 
@@ -81,8 +81,8 @@ class NomesFamilias {
   static const guiasFamiliaCabeceira =
       LocalizedString(gl: 'Guías', es: 'Guías');
   static const guiasFamiliaDi = LocalizedString(
-      gl: 'Lecturas curtas para ti: como falar e xogar coa túa criatura.',
-      es: 'Lecturas cortas para ti: cómo hablar y jugar con tu criatura.');
+      gl: 'Lecturas curtas para ti: como falar e xogar co teu neno ou coa túa nena.',
+      es: 'Lecturas cortas para ti: cómo hablar y jugar con tu niño o niña.');
   static const inglesNaCasa =
       LocalizedString(gl: 'O inglés na casa', es: 'El inglés en casa');
   static const inglesNaCasaDi = LocalizedString(

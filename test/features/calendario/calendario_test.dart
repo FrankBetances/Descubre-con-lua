@@ -921,8 +921,8 @@ void main() {
       expect(find.text('1. Unha lingua, unha rutina'), findsOneWidget);
       expect(
           find.text('2. Entender vén moito antes que falar'), findsOneWidget);
-      expect(
-          find.text('3. A app é para ti, non para a crianza'), findsOneWidget);
+      expect(find.text('3. A app é para ti, non para o neno ou a nena'),
+          findsOneWidget);
 
       // Cambiar de tramo a 24-36 meses
       await tester.tap(find.text('24 a 36 meses'));

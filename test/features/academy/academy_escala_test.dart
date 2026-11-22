@@ -70,7 +70,7 @@ void main() {
             esVerdadera: true,
             explicacion: LocalizedString(
               gl: 'Exacto: a pausa atenta é a invitación máis respectuosa para '
-                  'que a crianza intente comunicarse cos seus recursos.',
+                  'que o neno ou a nena intente comunicarse cos seus recursos.',
               es: 'Exacto: la pausa atenta es la invitación más respetuosa.',
             ),
           ),

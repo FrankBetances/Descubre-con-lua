@@ -255,8 +255,8 @@ class _AprenderALerScreenState extends State<AprenderALerScreen>
       children: [
         _buildGarantiaZeroScreen(
           isGl
-              ? 'Mesa física: coloca letras de madeira, imáns na neveira ou cartolinas recortadas diante da crianza. O adulto guia a articulación fonema a fonema.'
-              : 'Mesa física: coloca letras de madera, imanes en la nevera o cartulinas recortadas delante de la criatura. El adulto guía la articulación fonema a fonema.',
+              ? 'Mesa física: coloca letras de madeira, imáns na neveira ou cartolinas recortadas diante do neno ou da nena. O adulto guia a articulación fonema a fonema.'
+              : 'Mesa física: coloca letras de madera, imanes en la nevera o cartulinas recortadas delante del niño o de la niña. El adulto guía la articulación fonema a fonema.',
         ),
         const SizedBox(height: 14),
 
@@ -415,8 +415,8 @@ class _AprenderALerScreenState extends State<AprenderALerScreen>
                           ? 'Palabra montada na mesa!'
                           : '¡Palabra montada en la mesa!')
                       : (isGl
-                          ? 'Toca as letras que a crianza coloque na mesa'
-                          : 'Toca las letras que la criatura coloque en la mesa'),
+                          ? 'Toca as letras que o neno ou a nena coloque na mesa'
+                          : 'Toca las letras que el niño o la niña coloque en la mesa'),
                   style: TextStyle(
                     fontSize: 12,
                     fontWeight: FontWeight.bold,
@@ -512,8 +512,8 @@ class _AprenderALerScreenState extends State<AprenderALerScreen>
       children: [
         _buildGarantiaZeroScreen(
           isGl
-              ? 'Phonicubes: bloques físicos de Consonante-Vocal-Consonante. A crianza xunta fisicamente tres tacos de madeira e o adulto pronuncia a síntese acústica inmediata.'
-              : 'Phonicubes: bloques físicos de Consonante-Vocal-Consonante. La criatura junta físicamente tres tacos de madera y el adulto pronuncia la síntesis acústica inmediata.',
+              ? 'Phonicubes: bloques físicos de Consonante-Vocal-Consonante. O neno ou a nena xunta fisicamente tres tacos de madeira e o adulto pronuncia a síntese acústica inmediata.'
+              : 'Phonicubes: bloques físicos de Consonante-Vocal-Consonante. El niño o la niña junta físicamente tres tacos de madera y el adulto pronuncia la síntesis acústica inmediata.',
         ),
         const SizedBox(height: 14),
         Card(
