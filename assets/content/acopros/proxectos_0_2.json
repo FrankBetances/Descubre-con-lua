@@ -3097,8 +3097,8 @@
   {
    "mesCalendario": 6,
    "proxecto": {
-    "gl": "O Atlántico, as rías de Vigo e a despedida do curso",
-    "es": "El Atlántico, las rías de Vigo y la despedida del curso"
+    "gl": "O Atlántico, as rías galegas e a despedida do curso",
+    "es": "El Atlántico, las rías galegas y la despedida del curso"
    },
    "steam": {
     "id": "STEAM-0_2-06",
@@ -3231,9 +3231,9 @@
      "lamina": "pal_footprint"
     },
     {
-     "en": "Samil beach",
-     "gl": "Praia de Samil",
-     "es": "Playa de Samil",
+     "en": "Sunny beach",
+     "gl": "A praia",
+     "es": "La playa",
      "xesto": {
       "gl": "Sinalar o mar dende a area",
       "es": "Señalar el mar desde la arena"
@@ -3377,7 +3377,7 @@
       "es": "La rima tradicional, con las palabras del tema"
      },
      "palabras": [
-      "Samil beach",
+      "Sunny beach",
       "Seaside",
       "Tide",
       "Seaweed",

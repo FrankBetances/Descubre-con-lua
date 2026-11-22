@@ -597,9 +597,9 @@ CURSO = [
             "June: Sunny Days, The Ocean and Happy Farewells",
         ),
         "centro": t(
-            "O Atlántico, as rías de Vigo e a despedida do curso",
-            "El Atlántico, las rías de Vigo y la despedida del curso",
-            "The Atlantic, the Vigo rías and the end-of-year farewell",
+            "O Atlántico, as rías galegas e a despedida do curso",
+            "El Atlántico, las rías gallegas y la despedida del curso",
+            "The Atlantic, the Galician rías and the end-of-year farewell",
         ),
         "0_2": {
             "material": t("Tea extensa de lycra azul brillante", "Tela extensa de lycra azul brillante", "A large bright blue lycra sheet"),

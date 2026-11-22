@@ -321,8 +321,8 @@
         "lamina": "microcuento_4_5_10_1",
         "encargo": "Playa con marea baja: arena clara abajo, mar AZUL liso y tranquilo al fondo. Entre unas rocas GRISES, una charca pequeña de agua. Dentro, un pececito PLATEADO con la aleta NARANJA. Lúa, con una toalla AZUL grande sobre los hombros, se asoma a la charca sin tocar el agua.",
         "trama": {
-          "gl": "Na praia de Samil, en Vigo, a marea está baixa e o mar, en calma. Entre as rochas quedaron pozas pequenas de auga. Nunha delas, Lúa ve un peixiño prateado de aleta laranxa. Cando o mar marchou, quedou alí soíño!",
-          "es": "En la playa de Samil, en Vigo, la marea está baja y el mar, en calma. Entre las rocas han quedado charcas pequeñas de agua. En una de ellas, Lúa ve un pececito plateado de aleta naranja. Cuando el mar se fue, ¡se quedó ahí solito!"
+          "gl": "Na a praia, na vila, a marea está baixa e o mar, en calma. Entre as rochas quedaron pozas pequenas de auga. Nunha delas, Lúa ve un peixiño prateado de aleta laranxa. Cando o mar marchou, quedou alí soíño!",
+          "es": "En la la playa, en la villa, la marea está baja y el mar, en calma. Entre las rocas han quedado charcas pequeñas de agua. En una de ellas, Lúa ve un pececito plateado de aleta naranja. Cuando el mar se fue, ¡se quedó ahí solito!"
         },
         "lua": {
           "onomatopeia": "Pop, pop, pop!",
@@ -346,8 +346,8 @@
           "achegar": {
             "en": "Do you go to the beach? Which beach do you go to?",
             "axuda": {
-              "gl": "Move os brazos en ondas longas e agarda. Acolle o nome: «You go to Samil!».",
-              "es": "Mueve los brazos en ondas largas y espera. Acoge el nombre: «You go to Samil!»."
+              "gl": "Move os brazos en ondas longas e agarda. Acolle o nome: «You go to the beach!».",
+              "es": "Mueve los brazos en ondas largas y espera. Acoge el nombre: «You go to the beach!»."
             }
           }
         },

@@ -1,4 +1,4 @@
-# Estado real de «Descubre con Lúa · Edición Vigo»
+# Estado real de «Descubre con Lúa»
 
 Este documento sustituye a `TEST_READY.md`, que certificaba «1443/1443 PASSED ·
 CERTIFIED READY FOR PRODUCTION DEPLOYMENT» sin que se hubiese ejecutado nunca

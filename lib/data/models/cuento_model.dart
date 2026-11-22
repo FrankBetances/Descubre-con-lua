@@ -323,7 +323,7 @@ class Cuento {
     required this.sinopse,
     this.nivelLectura = 1,
     this.licenza = 'Creative Commons CC BY 4.0',
-    this.orixeOpenSource = 'Patrimonio Vigo Infantil',
+    this.orixeOpenSource = 'Patrimonio Galego Infantil',
     this.tempoEsperaSegundos = 5,
     this.tprOral,
     required this.paginas,
@@ -418,7 +418,7 @@ class Cuento {
           json['licenza']?.toString().trim() ?? 'Creative Commons CC BY 4.0',
       orixeOpenSource: json['orixeOpenSource']?.toString().trim() ??
           json['orixe_open_source']?.toString().trim() ??
-          'Patrimonio Vigo Infantil',
+          'Patrimonio Galego Infantil',
       tempoEsperaSegundos: (json['tempoEsperaSegundos'] as num?)?.toInt() ??
           (json['tempo_espera_segundos'] as num?)?.toInt() ??
           5,

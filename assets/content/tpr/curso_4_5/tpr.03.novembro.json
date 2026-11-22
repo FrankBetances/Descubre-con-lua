@@ -8,8 +8,8 @@
     {
       "semana": 1,
       "tema": {
-        "gl": "O Monte da Guía",
-        "es": "El Monte de A Guía"
+        "gl": "O monte da vila",
+        "es": "El monte del pueblo"
       },
       "palabras": [
         {
@@ -879,7 +879,8 @@
             "gl": "Sinalar de súpeto",
             "es": "Señalar de repente"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_spot"
         },
         {
           "id": "4_5.novembro.s4.collect-leaves",

@@ -1917,13 +1917,13 @@ SIN_BASE: dict[str, str] = {
     "surprising": "Adjetivo abstracto («Sorprendente»); redundante con «surprised».",
     "that's ok": "Fórmula consoladora verbal («No pasa nada»).",
     "the end": "Fórmula textual de cierre («Fin»).",
-    "vigo was small, but now it is big": "Oración histórica comparativa («Vigo era pequeño, pero ahora es grande»).",
+    "the town was small, but now it is big": "Oración histórica comparativa («La villa era pequeña, pero ahora es grande»).",
     "vivid": "Adjetivo sensorial abstracto («Vivo»).",
-    "was vigo always big": "Pregunta histórica verbal («¿Vigo siempre fue grande?»).",
+    "was the town always big": "Pregunta histórica verbal («¿La villa siempre fue grande?»).",
     "what can we do": "Pregunta abierta de acción («¿Qué podemos hacer?»).",
     # point (4 primeros)
     "and then what happened": "Pregunta narrativa secuencial («¿Y qué pasó después?»).",
-    "castrelos park": "Topónimo local concreto («Parque de Castrelos»); sin rótulo de texto no se distingue de un parque genérico.",
+    "autumn park": "Parque en otoño («Parque de otoño»); sin rótulo de texto no se distingue de un parque genérico.",
     "cat and hat rhyme": "Concepto fonológico verbal en inglés («¡Cat y hat riman!»).",
     "clever idea": "Frase cognitiva abstracta («Idea inteligente»); indistinguible de «idea» sin texto.",
 }

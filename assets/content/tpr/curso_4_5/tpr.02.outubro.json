@@ -137,7 +137,8 @@
             "gl": "Cambiar de dirección",
             "es": "Cambiar de dirección"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_switch"
         },
         {
           "id": "4_5.outubro.s1.dodge",

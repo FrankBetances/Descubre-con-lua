@@ -360,7 +360,7 @@ class _FamiliaPainter extends CustomPainter {
 
 /// Ilustración vectorial personalizada para a tarxeta do Portal Docentes.
 ///
-/// Simboliza unha Escola Infantil Municipal de Vigo: edificio escolar
+/// Simboliza unha escola infantil de Galicia: edificio escolar
 /// acolledor con torre de campá/reloxo, xardín de árbores, porta aberta
 /// e o círculo da asemblea pedagóxica a 72 bpm.
 class IlustracionEscola extends StatelessWidget {

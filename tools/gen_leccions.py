@@ -280,14 +280,14 @@ def banco_por_semana():
 TEMA_PROPIO = {"curso_2_3": {
     1: ("Ola, amigos: o círculo e o primeiro saúdo", "Hola, amigos: el círculo y el primer saludo"),
     2: ("Cabeza, xeonllos e pés: o corpo que baila e para", "Cabeza, rodillas y pies: el cuerpo que baila y se para"),
-    3: ("O vento do outono e as follas de Castrelos", "El viento de otoño y las hojas de Castrelos"),
+    3: ("O vento do outono e as follas do parque", "El viento de otoño y las hojas del parque"),
     4: ("Forte e baixiño: campás, choiva e o quentiño da casa", "Fuerte y bajito: campanas, lluvia y el calorcito de casa"),
     5: ("Abrigo, botas e cremalleira: vestirse para os charcos", "Abrigo, botas y cremallera: vestirse para los charcos"),
     6: ("O desfile do Entroido: voar, pisar e quedar quietos", "El desfile de Carnaval: volar, pisar y quedarse quietos"),
     7: ("Formas e cores na merenda: círculos, tomates e bólas", "Formas y colores en la merienda: círculos, tomates y bolas"),
     8: ("As sementes espertan: flores, sol e paxariños", "Las semillas despiertan: flores, sol y pajaritos"),
     9: ("Lávome eu só: xabón, auga e secar os dedos", "Me lavo solo: jabón, agua y secar los dedos"),
-    10: ("As ondas de Samil: peixes, barcos e ata logo", "Las olas de Samil: peces, barcos y hasta luego"),
+    10: ("As ondas da praia: peixes, barcos e ata logo", "Las olas de la playa: peces, barcos y hasta luego"),
 }}
 
 MINIMO_NOVAS = 3

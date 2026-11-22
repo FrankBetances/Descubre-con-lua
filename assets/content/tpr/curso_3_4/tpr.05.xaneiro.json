@@ -944,7 +944,8 @@
           "tprAction": {
             "gl": "Mover as mans moi rápido coma quen traballa moito",
             "es": "Mover las manos muy rápido como quien trabaja mucho"
-          }
+          },
+          "lamina": "pal_busy"
         },
         {
           "id": "3_4.xaneiro.s4.tick-tock",

@@ -75,20 +75,15 @@ class _CreditsScreenState extends State<CreditsScreen> {
   );
 
   static const _forWhom = LocalizedString(
-    gl: 'Para as escolas infantís municipais de Vigo e as súas familias. '
+    gl: 'Para as escolas infantís de Galicia e as súas familias. '
         'Finalidade exclusivamente educativa.',
-    es: 'Para las escuelas infantiles municipales de Vigo y sus familias. '
+    es: 'Para las escuelas infantiles de Galicia y sus familias. '
         'Finalidad exclusivamente educativa.',
   );
 
   static const _withKicker = LocalizedString(
-    gl: 'EN COLABORACIÓN CON',
-    es: 'EN COLABORACIÓN CON',
-  );
-
-  static const _cityHall = LocalizedString(
-    gl: 'Concello de Vigo',
-    es: 'Ayuntamiento de Vigo',
+    gl: 'PROCEDENCIA',
+    es: 'PROCEDENCIA',
   );
 
   /// Nombre oficial confirmado por Frank el 12/9/2026. No se abrevia: la
@@ -102,11 +97,6 @@ class _CreditsScreenState extends State<CreditsScreen> {
   static const _starticDesc = LocalizedString(
     gl: 'Consorcio da Zona Franca de Vigo',
     es: 'Consorcio de la Zona Franca de Vigo',
-  );
-
-  static const _cityHallDesc = LocalizedString(
-    gl: 'Escolas infantís municipais',
-    es: 'Escuelas infantiles municipales',
   );
 
   static const _voicesKicker = LocalizedString(
@@ -309,14 +299,6 @@ class _CreditsScreenState extends State<CreditsScreen> {
                         _Entry(
                           name: _startic.resolve(currentLanguage),
                           detail: _starticDesc.resolve(currentLanguage),
-                        ),
-                        const SizedBox(height: AppTheme.spaceMd),
-                        // El Concello de Vigo va SOLO con su nombre: Frank
-                        // retiró su logotipo el 15/9/2026. El nombre no se
-                        // toca, que es lo que acredita la colaboración.
-                        _Entry(
-                          name: _cityHall.resolve(currentLanguage),
-                          detail: _cityHallDesc.resolve(currentLanguage),
                         ),
                       ],
                     ),

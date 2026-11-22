@@ -634,8 +634,8 @@ void main() {
 
       await _ataVer(tester, find.text('A caza do tesouro dos sons'));
       expect(find.text('A caza do tesouro dos sons'), findsOneWidget);
-      await _ataVer(tester, find.text('O barquiño de Samil na ría'));
-      expect(find.text('O barquiño de Samil na ría'), findsOneWidget);
+      await _ataVer(tester, find.text('O barquiño na ría'));
+      expect(find.text('O barquiño na ría'), findsOneWidget);
       await _ataVer(tester, find.text('XOGO 100% CORPORAL E FÍSICO'));
       expect(find.text('XOGO 100% CORPORAL E FÍSICO'), findsOneWidget);
 

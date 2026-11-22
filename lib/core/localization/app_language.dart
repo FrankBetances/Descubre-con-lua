@@ -1,4 +1,4 @@
-/// Las lenguas de «Descubre con Lúa · Edición Vigo».
+/// Las lenguas de «Descubre con Lúa».
 ///
 /// La INTERFAZ es bilingüe: galego y castelán, y el selector solo ofrece esas
 /// dos. [AppLanguage.en] no es una lengua de interfaz y no aparece en ningún

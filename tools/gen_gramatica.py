@@ -160,7 +160,7 @@ PUNTOS = {
 # Un ejemplo de cada punto B1-C1, para la persona adulta.
 EXEMPLO_ADULTO = {
     21: ("Have you ever seen a hedgehog?", "Viches algunha vez un ourizo?", "¿Has visto alguna vez un erizo?"),
-    22: ("We have lived in Vigo since 2020.", "Vivimos en Vigo desde 2020.", "Vivimos en Vigo desde 2020."),
+    22: ("We have lived in Galicia since 2020.", "Vivimos en Galicia desde 2020.", "Vivimos en Galicia desde 2020."),
     23: ("She has been playing in the sand all morning.", "Leva toda a mañá xogando na area.", "Lleva toda la mañana jugando en la arena."),
     24: ("The bus had left when we arrived.", "O autobús xa saíra cando chegamos.", "El autobús ya se había ido cuando llegamos."),
     25: ("It might rain later.", "Pode que chova máis tarde.", "Puede que llueva más tarde."),

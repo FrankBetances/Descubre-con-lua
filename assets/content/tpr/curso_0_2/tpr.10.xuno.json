@@ -8,15 +8,15 @@
     {
       "semana": 1,
       "tema": {
-        "gl": "O mar de Samil",
-        "es": "El mar de Samil"
+        "gl": "O mar e a praia",
+        "es": "El mar y la playa"
       },
       "palabras": [
         {
           "id": "0_2.xuno.s1.samil-beach",
-          "en": "Samil beach",
-          "gl": "Praia de Samil",
-          "es": "Playa de Samil",
+          "en": "Sunny beach",
+          "gl": "A praia",
+          "es": "La playa",
           "tprAction": {
             "gl": "Sinalar o mar dende a area",
             "es": "Señalar el mar desde la arena"

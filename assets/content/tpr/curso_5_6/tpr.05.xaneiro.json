@@ -244,8 +244,8 @@
     {
       "semana": 2,
       "tema": {
-        "gl": "Vigo antes",
-        "es": "Vigo antes"
+        "gl": "A vila antes",
+        "es": "A vila antes"
       },
       "palabras": [
         {
@@ -441,9 +441,9 @@
         },
         {
           "id": "5_6.xaneiro.s2.was-vigo-always-big",
-          "en": "Was Vigo always big?",
-          "gl": "Vigo sempre foi grande?",
-          "es": "¿Vigo siempre fue grande?",
+          "en": "Was the town always big?",
+          "gl": "A vila sempre foi grande?",
+          "es": "¿El pueblo siempre fue grande?",
           "tprAction": {
             "gl": "Abrir e pechar as mans",
             "es": "Abrir y cerrar las manos"
@@ -452,9 +452,9 @@
         },
         {
           "id": "5_6.xaneiro.s2.vigo-was-small-but-now-it-is-big",
-          "en": "Vigo was small, but now it is big",
-          "gl": "Vigo era pequeno, pero agora é grande",
-          "es": "Vigo era pequeño, pero ahora es grande",
+          "en": "The town was small, but now it is big",
+          "gl": "A vila era pequena, pero agora é grande",
+          "es": "El pueblo era pequeño, pero ahora es grande",
           "tprAction": {
             "gl": "Xuntar as mans e abrilas",
             "es": "Juntar las manos y abrirlas"

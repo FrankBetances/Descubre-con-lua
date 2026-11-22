@@ -67,8 +67,8 @@ class _AlphabotScreenState extends State<AlphabotScreen> {
     {
       'word': 'MAR',
       'letters': ['M', 'A', 'R'],
-      'gl': 'As ondas da ría de Vigo',
-      'es': 'Las olas de la ría de Vigo',
+      'gl': 'As ondas da ría',
+      'es': 'Las olas de la ría',
       'material': 'Conchas ou pedras pintadas',
       'phonemes': ['/m/', '/a/', '/r/'],
     },

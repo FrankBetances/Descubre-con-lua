@@ -11679,8 +11679,8 @@
     {
      "id": "unidade.curso_0_2.10",
      "titulo": {
-      "gl": "O Atlántico, as rías de Vigo e a despedida do curso",
-      "es": "El Atlántico, las rías de Vigo y la despedida del curso"
+      "gl": "O Atlántico, as rías galegas e a despedida do curso",
+      "es": "El Atlántico, las rías galegas y la despedida del curso"
      },
      "plan": {
       "id": "T2.U6",
@@ -15594,8 +15594,8 @@
     {
      "id": "unidade.curso_2_3.03",
      "titulo": {
-      "gl": "O vento do outono e as follas de Castrelos",
-      "es": "El viento de otoño y las hojas de Castrelos"
+      "gl": "O vento do outono e as follas do parque",
+      "es": "El viento de otoño y las hojas del parque"
      },
      "plan": {
       "id": "T2.U2",
@@ -15983,8 +15983,8 @@
           "es": "Viernes"
          },
          "texto": {
-          "gl": "Lede o conto da semana, «Lois e os patos de Castrelos»: nel saen «The wind blows! Whoosh!», «Crunch your leaves!», «Stroll».",
-          "es": "Leed el cuento de la semana, «Lois y los patos de Castrelos»: en él salen «The wind blows! Whoosh!», «Crunch your leaves!», «Stroll»."
+          "gl": "Lede o conto da semana, «Lois e os patos do parque»: nel saen «The wind blows! Whoosh!», «Crunch your leaves!», «Stroll».",
+          "es": "Leed el cuento de la semana, «Lois y los patos do parque»: en él salen «The wind blows! Whoosh!», «Crunch your leaves!», «Stroll»."
          }
         }
        ]
@@ -24610,8 +24610,8 @@
     {
      "id": "unidade.curso_2_3.10",
      "titulo": {
-      "gl": "As ondas de Samil: peixes, barcos e ata logo",
-      "es": "Las olas de Samil: peces, barcos y hasta luego"
+      "gl": "As ondas da praia: peixes, barcos e ata logo",
+      "es": "Las olas de la playa: peces, barcos y hasta luego"
      },
      "plan": {
       "id": "T2.U6",
@@ -37969,8 +37969,8 @@
           "es": "Viernes"
          },
          "texto": {
-          "gl": "Lede o conto da semana, «Iván navega ás Cíes»: nel saen «Row», «Waves», «Sea».",
-          "es": "Leed el cuento de la semana, «Iván navega a las Cíes»: en él salen «Row», «Waves», «Sea»."
+          "gl": "Lede o conto da semana, «Iván navega ás illas»: nel saen «Row», «Waves», «Sea».",
+          "es": "Leed el cuento de la semana, «Iván navega a las islas»: en él salen «Row», «Waves», «Sea»."
          }
         }
        ]
@@ -41989,8 +41989,8 @@
           "es": "Viernes"
          },
          "texto": {
-          "gl": "Lede o conto da semana, «Tomé sobe ao Monte da Guía»: nel saen «Hedgehog», «Wait for me», «Hilltop».",
-          "es": "Leed el cuento de la semana, «Tomé sube al Monte de A Guía»: en él salen «Hedgehog», «Wait for me», «Hilltop»."
+          "gl": "Lede o conto da semana, «Tomé sobe ao monte da vila»: nel saen «Hedgehog», «Wait for me», «Hilltop».",
+          "es": "Leed el cuento de la semana, «Tomé sube al Monte del pueblo»: en él salen «Hedgehog», «Wait for me», «Hilltop»."
          }
         }
        ]
@@ -58173,8 +58173,8 @@
           "es": "Viernes"
          },
          "texto": {
-          "gl": "Lede o conto da semana, «Paulo e o Vigo de antes»: nel saen «Balance beam», «Blue», «Fishing village».",
-          "es": "Leed el cuento de la semana, «Paulo y el Vigo de antes»: en él salen «Balance beam», «Blue», «Fishing village»."
+          "gl": "Lede o conto da semana, «Paulo e o Galicia de antes»: nel saen «Balance beam», «Blue», «Fishing village».",
+          "es": "Leed el cuento de la semana, «Paulo y el Galicia de antes»: en él salen «Balance beam», «Blue», «Fishing village»."
          }
         }
        ]
@@ -62662,8 +62662,8 @@
           "es": "Viernes"
          },
          "texto": {
-          "gl": "Lede o conto da semana, «Noela e os golfiños das Cíes»: nel saen «Have a safe trip!», «Dolphin pod», «Blowhole».",
-          "es": "Leed el cuento de la semana, «Noela y los delfines de las Cíes»: en él salen «Have a safe trip!», «Dolphin pod», «Blowhole»."
+          "gl": "Lede o conto da semana, «Noela e os golfiños da ría»: nel saen «Have a safe trip!», «Dolphin pod», «Blowhole».",
+          "es": "Leed el cuento de la semana, «Noela y los delfines de la ría»: en él salen «Have a safe trip!», «Dolphin pod», «Blowhole»."
          }
         }
        ]

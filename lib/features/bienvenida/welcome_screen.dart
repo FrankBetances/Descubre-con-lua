@@ -121,15 +121,6 @@ class WelcomeScreen extends StatelessWidget {
                                 .headlineLarge
                                 ?.copyWith(color: AppTheme.dark),
                           ),
-                          const SizedBox(height: AppTheme.spaceXs),
-                          Text(
-                            'Edición Vigo',
-                            textAlign: TextAlign.center,
-                            style: Theme.of(context)
-                                .textTheme
-                                .titleMedium
-                                ?.copyWith(color: AppTheme.dark),
-                          ),
                           const SizedBox(height: AppTheme.spaceLg),
                         ],
                       ),

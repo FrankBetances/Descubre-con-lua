@@ -12,12 +12,12 @@
       "es": "Junio"
     },
     "centroInteres": {
-      "gl": "O Mar Atlántico e a Ría de Vigo",
-      "es": "El Mar Atlántico y la Ría de Vigo"
+      "gl": "O Mar Atlántico e a Ría da vila",
+      "es": "El Mar Atlántico y la Ría de la villa"
     },
     "titulo": {
-      "gl": "Lúa e o barquiño de Samil",
-      "es": "Lúa y el barquito de Samil"
+      "gl": "Lúa e o barquiño da praia",
+      "es": "Lúa y el barquito de la playa"
     },
     "sinopse": {
       "gl": "Lúa quere remar ata a boia vermella, pero o barquiño só dá voltas.",
@@ -38,8 +38,8 @@
         },
         "lamina": "conto_mar_1",
         "texto": {
-          "gl": "Hoxe Lúa vai á praia de Samil co avó. Hai un barquiño de madeira na beira.",
-          "es": "Hoy Lúa va a la playa de Samil con el abuelo. Hay un barquito de madera en la orilla."
+          "gl": "Hoxe Lúa vai á praia co avó. Hai un barquiño de madeira na beira.",
+          "es": "Hoy Lúa va a la playa con el abuelo. Hay un barquito de madera en la orilla."
         },
         "preguntaImaxe": {
           "gl": "Quen sae nesta lámina? Sinálao co dedo.",
@@ -498,8 +498,8 @@
       "es": "Noviembre"
     },
     "centroInteres": {
-      "gl": "O Outono, Castrelos e o Magosto",
-      "es": "El Otoño, Castrelos y el Magosto"
+      "gl": "O Outono, o parque e o Magosto",
+      "es": "El Otoño, o parque y el Magosto"
     },
     "titulo": {
       "gl": "A coroa de follas de Xiana",
@@ -524,8 +524,8 @@
         },
         "lamina": "conto_follas_1",
         "texto": {
-          "gl": "En Castrelos, as follas caeron e o chan está dourado. Xiana quere facer unha coroa de follas.",
-          "es": "En Castrelos, las hojas han caído y el suelo está dorado. Xiana quiere hacer una corona de hojas."
+          "gl": "No parque, as follas caeron e o chan está dourado. Xiana quere facer unha coroa de follas.",
+          "es": "No parque, las hojas han caído y el suelo está dorado. Xiana quiere hacer una corona de hojas."
         },
         "preguntaImaxe": {
           "gl": "Quen sae nesta lámina? Sinálao co dedo.",
@@ -843,8 +843,8 @@
         },
         "lamina": "conto_choiva_3",
         "texto": {
-          "gl": "Chove en Vigo varios días. Lúa sae cos zapatos de tea e volve cos pés empapados e fríos. Non pode saltar nos charcos.",
-          "es": "Llueve en Vigo varios días. Lúa sale con los zapatos de tela y vuelve con los pies empapados y fríos. No puede saltar en los charcos."
+          "gl": "Chove na vila varios días. Lúa sae cos zapatos de tea e volve cos pés empapados e fríos. Non pode saltar nos charcos.",
+          "es": "Llueve en la villa varios días. Lúa sale con los zapatos de tela y vuelve con los pies empapados y fríos. No puede saltar en los charcos."
         },
         "preguntaImaxe": {
           "gl": "Que pasa agora? Como está Lúa?",
@@ -1680,7 +1680,7 @@
     },
     "nivelLectura": 1,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Hello, little one!",
@@ -2006,7 +2006,7 @@
     },
     "nivelLectura": 1,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Who's this?",
@@ -2322,8 +2322,8 @@
       "es": "Septiembre"
     },
     "centroInteres": {
-      "gl": "Os Primeiros Pasos na Herba de Castrelos",
-      "es": "Los Primeros Pasos en la Hierba de Castrelos"
+      "gl": "Os Primeiros Pasos na Herba do Parque",
+      "es": "Los Primeros Pasos en la Hierba del Parque"
     },
     "titulo": {
       "gl": "Onde está o sorriso de Noa?",
@@ -2335,7 +2335,7 @@
     },
     "nivelLectura": 1,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Where's the smile?",
@@ -2661,7 +2661,7 @@
     },
     "nivelLectura": 1,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Up you come!",
@@ -2984,7 +2984,7 @@
     },
     "nivelLectura": 1,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Beep beep, nose!",
@@ -3297,8 +3297,8 @@
       "es": "Octubre"
     },
     "centroInteres": {
-      "gl": "Os Tesouros Naturais de Outubro na Ría de Vigo",
-      "es": "Los Tesoros Naturales de Octubre en la Ría de Vigo"
+      "gl": "Os Tesouros Naturais de Outubro na Ría da vila",
+      "es": "Los Tesoros Naturales de Octubre en la Ría de la villa"
     },
     "titulo": {
       "gl": "A masaxe de Sabela",
@@ -3310,7 +3310,7 @@
     },
     "nivelLectura": 1,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "This little piggy",
@@ -3636,7 +3636,7 @@
     },
     "nivelLectura": 1,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Peekaboo, I see you!",
@@ -3959,7 +3959,7 @@
     },
     "nivelLectura": 1,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "So big!",
@@ -4260,7 +4260,7 @@
     },
     "nivelLectura": 1,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Feel this!",
@@ -4589,7 +4589,7 @@
     },
     "nivelLectura": 1,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Leaves are falling",
@@ -4915,7 +4915,7 @@
     },
     "nivelLectura": 1,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Hot, hot, hot!",
@@ -5238,7 +5238,7 @@
     },
     "nivelLectura": 1,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Squeeze and let go",
@@ -5561,7 +5561,7 @@
     },
     "nivelLectura": 1,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Brr, so cold!",
@@ -5877,8 +5877,8 @@
       "es": "Diciembre"
     },
     "centroInteres": {
-      "gl": "Os Tesouros Naturais de Decembro na Ría de Vigo",
-      "es": "Los Tesoros Naturales de Diciembre en la Ría de Vigo"
+      "gl": "Os Tesouros Naturais de Decembro na Ría da vila",
+      "es": "Los Tesoros Naturales de Diciembre en la Ría de la villa"
     },
     "titulo": {
       "gl": "A aperta da noite de Icía",
@@ -5890,7 +5890,7 @@
     },
     "nivelLectura": 1,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Come here for a hug",
@@ -6219,7 +6219,7 @@
     },
     "nivelLectura": 1,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Lights on!",
@@ -6542,7 +6542,7 @@
     },
     "nivelLectura": 1,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "What's inside?",
@@ -6843,7 +6843,7 @@
     },
     "nivelLectura": 1,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Here, doggy!",
@@ -7159,8 +7159,8 @@
       "es": "Enero"
     },
     "centroInteres": {
-      "gl": "Os Tesouros Naturais de Xaneiro na Ría de Vigo",
-      "es": "Los Tesoros Naturales de Enero en la Ría de Vigo"
+      "gl": "Os Tesouros Naturais de Xaneiro na Ría da vila",
+      "es": "Los Tesoros Naturales de Enero en la Ría de la villa"
     },
     "titulo": {
       "gl": "Bieito na granxa ruidosa",
@@ -7172,7 +7172,7 @@
     },
     "nivelLectura": 1,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "What does the cow say?",
@@ -7496,12 +7496,12 @@
       "es": "Xiana y la casita de los pájaros"
     },
     "sinopse": {
-      "gl": "Xiana quere ver paxaros no parque de Castrelos, pero con tanto ruído non se achega ningún.",
-      "es": "Xiana quiere ver pájaros en el parque de Castrelos, pero con tanto ruido no se acerca ninguno."
+      "gl": "Xiana quere ver paxaros no parque, pero con tanto ruído non se achega ningún.",
+      "es": "Xiana quiere ver pájaros en el parque, pero con tanto ruido no se acerca ninguno."
     },
     "nivelLectura": 1,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Where's the birdie?",
@@ -7517,8 +7517,8 @@
         },
         "lamina": "conto_animais_1",
         "texto": {
-          "gl": "No parque de Castrelos hai unha casiña de paxaros, a “Birdhouse”. Xiana busca: “Where's the birdie?”. Só ve un escaravello, un “Beetle”, pequerrecho: “Teeny”.",
-          "es": "En el parque de Castrelos hay una casita de pájaros, la “Birdhouse”. Xiana busca: “Where's the birdie?”. Solo ve un escarabajo, un “Beetle”, pequeñito: “Teeny”."
+          "gl": "No parque hai unha casiña de paxaros, a “Birdhouse”. Xiana busca: “Where's the birdie?”. Só ve un escaravello, un “Beetle”, pequerrecho: “Teeny”.",
+          "es": "En el parque hay una casita de pájaros, la “Birdhouse”. Xiana busca: “Where's the birdie?”. Solo ve un escarabajo, un “Beetle”, pequeñito: “Teeny”."
         },
         "preguntaImaxe": {
           "gl": "Quen sae nesta lámina? Sinálao co dedo.",
@@ -7717,8 +7717,8 @@
           "es": "Recordar quién y qué pasó en la historia."
         },
         "respostaModelo": {
-          "gl": "No parque de Castrelos.",
-          "es": "En el parque de Castrelos."
+          "gl": "No parque.",
+          "es": "En el parque."
         },
         "pistaEducadora": {
           "gl": "Agarda cinco segundos. Se non responde, sinala a lámina e di ti a resposta.",
@@ -7802,7 +7802,7 @@
     },
     "nivelLectura": 1,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Listen, what's that?",
@@ -8125,7 +8125,7 @@
     },
     "nivelLectura": 1,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Boo!",
@@ -8454,7 +8454,7 @@
     },
     "nivelLectura": 1,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Whee!",
@@ -8780,7 +8780,7 @@
     },
     "nivelLectura": 1,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Peekaboo!",
@@ -9103,7 +9103,7 @@
     },
     "nivelLectura": 1,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Shake, shake, shake!",
@@ -9404,7 +9404,7 @@
     },
     "nivelLectura": 1,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Up it goes!",
@@ -9717,8 +9717,8 @@
       "es": "Marzo"
     },
     "centroInteres": {
-      "gl": "Os Tesouros Naturais de Marzo na Ría de Vigo",
-      "es": "Los Tesoros Naturales de Marzo en la Ría de Vigo"
+      "gl": "Os Tesouros Naturais de Marzo na Ría da vila",
+      "es": "Los Tesoros Naturales de Marzo en la Ría de la villa"
     },
     "titulo": {
       "gl": "Duarte quere comer só",
@@ -9730,7 +9730,7 @@
     },
     "nivelLectura": 1,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Here comes the aeroplane!",
@@ -10056,7 +10056,7 @@
     },
     "nivelLectura": 1,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Roll it to me",
@@ -10382,7 +10382,7 @@
     },
     "nivelLectura": 1,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Mmm, orange!",
@@ -10705,7 +10705,7 @@
     },
     "nivelLectura": 1,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Hello, flower!",
@@ -11021,8 +11021,8 @@
       "es": "Abril"
     },
     "centroInteres": {
-      "gl": "Os Tesouros Naturais de Abril na Ría de Vigo",
-      "es": "Los Tesoros Naturales de Abril en la Ría de Vigo"
+      "gl": "Os Tesouros Naturais de Abril na Ría da vila",
+      "es": "Los Tesoros Naturales de Abril en la Ría de la villa"
     },
     "titulo": {
       "gl": "Uxío e o orballo",
@@ -11034,7 +11034,7 @@
     },
     "nivelLectura": 1,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Drip, drop!",
@@ -11335,7 +11335,7 @@
     },
     "nivelLectura": 1,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Grow, grow, grow!",
@@ -11636,7 +11636,7 @@
     },
     "nivelLectura": 1,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Tap, tap, tap",
@@ -11937,7 +11937,7 @@
     },
     "nivelLectura": 1,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Splish, splash!",
@@ -12253,8 +12253,8 @@
       "es": "Mayo"
     },
     "centroInteres": {
-      "gl": "Os Tesouros Naturais de Maio na Ría de Vigo",
-      "es": "Los Tesoros Naturales de Mayo en la Ría de Vigo"
+      "gl": "Os Tesouros Naturais de Maio na Ría da vila",
+      "es": "Los Tesoros Naturales de Mayo en la Ría de la villa"
     },
     "titulo": {
       "gl": "Lara non quere lavar o pelo",
@@ -12266,7 +12266,7 @@
     },
     "nivelLectura": 1,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Bath time!",
@@ -12595,7 +12595,7 @@
     },
     "nivelLectura": 1,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Wash, wash, wash",
@@ -12921,7 +12921,7 @@
     },
     "nivelLectura": 1,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Pop, pop, pop!",
@@ -13217,12 +13217,12 @@
       "es": "Aroa y la primera ola"
     },
     "sinopse": {
-      "gl": "Na praia de Samil, unha onda molla os pés de Aroa e ela asústase.",
-      "es": "En la playa de Samil, una ola moja los pies de Aroa y ella se asusta."
+      "gl": "Na a praia, unha onda molla os pés de Aroa e ela asústase.",
+      "es": "En la la playa, una ola moja los pies de Aroa y ella se asusta."
     },
     "nivelLectura": 1,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Here comes a wave!",
@@ -13238,8 +13238,8 @@
         },
         "lamina": "conto_mar_1",
         "texto": {
-          "gl": "Aroa vai á praia de Samil, a “Samil beach”. O papá tende a toalla de praia, a “Beach towel”, baixo o parasol, o “Parasol”. Cheira a aire do mar: “Salty air”.",
-          "es": "Aroa va a la playa de Samil, la “Samil beach”. Papá extiende la toalla de playa, la “Beach towel”, bajo la sombrilla, el “Parasol”. Huele a aire del mar: “Salty air”."
+          "gl": "Aroa vai á praia, a “Sunny beach”. O papá tende a toalla de praia, a “Beach towel”, baixo o parasol, o “Parasol”. Cheira a aire do mar: “Salty air”.",
+          "es": "Aroa va a la playa, la “Sunny beach”. Papá extiende la toalla de playa, la “Beach towel”, bajo la sombrilla, el “Parasol”. Huele a aire del mar: “Salty air”."
         },
         "preguntaImaxe": {
           "gl": "Quen sae nesta lámina? Sinálao co dedo.",
@@ -13250,19 +13250,19 @@
           "es": "Lee despacio y señala al personaje. Espera 5 segundos antes de preguntar."
         },
         "vocabularioClave": [
-          "Praia de Samil",
+          "A praia",
           "Toalla de praia",
           "Parasol",
           "Aire do mar"
         ],
         "vocabularioClaveEs": [
-          "Playa de Samil",
+          "La playa",
           "Toalla de playa",
           "Sombrilla",
           "Aire del mar"
         ],
         "palabras": [
-          "Samil beach",
+          "Sunny beach",
           "Beach towel",
           "Parasol",
           "Salty air"
@@ -13466,8 +13466,8 @@
           "es": "Recordar quién y qué pasó en la historia."
         },
         "respostaModelo": {
-          "gl": "Á praia de Samil.",
-          "es": "A la playa de Samil."
+          "gl": "Á a praia.",
+          "es": "A la la playa."
         },
         "pistaEducadora": {
           "gl": "Agarda cinco segundos. Se non responde, sinala a lámina e di ti a resposta.",
@@ -13538,8 +13538,8 @@
       "es": "Junio"
     },
     "centroInteres": {
-      "gl": "Os Tesouros Naturais de Xuño na Ría de Vigo",
-      "es": "Los Tesoros Naturales de Junio en la Ría de Vigo"
+      "gl": "Os Tesouros Naturais de Xuño na Ría da vila",
+      "es": "Los Tesoros Naturales de Junio en la Ría de la villa"
     },
     "titulo": {
       "gl": "Pedro quere abrazar un peixe",
@@ -13551,7 +13551,7 @@
     },
     "nivelLectura": 1,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Swim, little fish",
@@ -13861,8 +13861,8 @@
       "es": "Junio"
     },
     "centroInteres": {
-      "gl": "O Gran Salto de A Ría de Vigo e o Mar: Movemento e Xogo TPR",
-      "es": "El Gran Salto de La Ría de Vigo y el Mar: Movimiento y Juego TPR"
+      "gl": "O Gran Salto de A Ría e o Mar: Movemento e Xogo TPR",
+      "es": "El Gran Salto de La Ría y el Mar: Movimiento y Juego TPR"
     },
     "titulo": {
       "gl": "Sira e o chapeu de palla",
@@ -13874,7 +13874,7 @@
     },
     "nivelLectura": 1,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Hat on, please",
@@ -14184,8 +14184,8 @@
       "es": "Junio"
     },
     "centroInteres": {
-      "gl": "Lúa e a Cuncha Mágica de Samil",
-      "es": "Lúa y la Concha Mágica de Samil"
+      "gl": "Lúa e a Cuncha Mágica de a praia",
+      "es": "Lúa y la Concha Mágica de la playa"
     },
     "titulo": {
       "gl": "O último día de Uxía",
@@ -14197,7 +14197,7 @@
     },
     "nivelLectura": 1,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Bye-bye, nursery!",
@@ -14520,7 +14520,7 @@
     },
     "nivelLectura": 2,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Coat on the peg",
@@ -14856,8 +14856,8 @@
       "es": "Septiembre"
     },
     "centroInteres": {
-      "gl": "Os Tesouros Naturais de Setembro na Ría de Vigo",
-      "es": "Los Tesoros Naturales de Septiembre en la Ría de Vigo"
+      "gl": "Os Tesouros Naturais de Setembro na Ría da vila",
+      "es": "Los Tesoros Naturales de Septiembre en la Ría de la villa"
     },
     "titulo": {
       "gl": "Antón e a torre que bambeaba",
@@ -14869,7 +14869,7 @@
     },
     "nivelLectura": 2,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "My turn!",
@@ -15221,7 +15221,7 @@
     },
     "nivelLectura": 2,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Clean up, clean up",
@@ -15570,7 +15570,7 @@
     },
     "nivelLectura": 2,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Sit with me",
@@ -15897,7 +15897,7 @@
     },
     "nivelLectura": 2,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Jump and land",
@@ -16236,8 +16236,8 @@
       "es": "Octubre"
     },
     "centroInteres": {
-      "gl": "Os Tesouros Naturais de Outubro na Ría de Vigo",
-      "es": "Los Tesoros Naturales de Octubre en la Ría de Vigo"
+      "gl": "Os Tesouros Naturais de Outubro na Ría da vila",
+      "es": "Los Tesoros Naturales de Octubre en la Ría de la villa"
     },
     "titulo": {
       "gl": "Pío xira sen parar",
@@ -16249,7 +16249,7 @@
     },
     "nivelLectura": 2,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Spin like a top",
@@ -16601,7 +16601,7 @@
     },
     "nivelLectura": 2,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Stop right there!",
@@ -16950,7 +16950,7 @@
     },
     "nivelLectura": 2,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Dance and freeze",
@@ -17268,16 +17268,16 @@
       "es": "Asamblea de Noviembre: El Círculo de los Amigos de Lúa"
     },
     "titulo": {
-      "gl": "Lois e os patos de Castrelos",
-      "es": "Lois y los patos de Castrelos"
+      "gl": "Lois e os patos do parque",
+      "es": "Lois y los patos do parque"
     },
     "sinopse": {
-      "gl": "Nunha mañá de néboa, Lois busca os patos do estanque de Castrelos e descobre que, en silencio, os patos chegan sós.",
-      "es": "En una mañana de niebla, Lois busca los patos del estanque de Castrelos y descubre que, en silencio, los patos llegan solos."
+      "gl": "Nunha mañá de néboa, Lois busca os patos do estanque do parque e descobre que, en silencio, os patos chegan sós.",
+      "es": "En una mañana de niebla, Lois busca los patos del estanque do parque y descubre que, en silencio, los patos llegan solos."
     },
     "nivelLectura": 2,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Look at the ducks!",
@@ -17293,8 +17293,8 @@
         },
         "lamina": "conto_follas_1",
         "texto": {
-          "gl": "“Let's go to the park!”, di o avó. Lois e o avó van ao parque de Castrelos, o “Castrelos Park”, e abren a cancela, a “Gate”. A mañá está neboenta: “Misty”.",
-          "es": "“Let's go to the park!”, dice el abuelo. Lois y el abuelo van al parque de Castrelos, el “Castrelos Park”, y abren la verja, la “Gate”. La mañana está brumosa: “Misty”."
+          "gl": "“Let's go to the park!”, di o avó. Lois e o avó van ao parque, o “Autumn park”, e abren a cancela, a “Gate”. A mañá está neboenta: “Misty”.",
+          "es": "“Let's go to the park!”, dice el abuelo. Lois y el abuelo van al parque, el “Autumn park”, y abren la verja, la “Gate”. La mañana está brumosa: “Misty”."
         },
         "preguntaImaxe": {
           "gl": "Quen sae nesta lámina? Sinálao co dedo.",
@@ -17306,19 +17306,19 @@
         },
         "vocabularioClave": [
           "Imos ao parque!",
-          "Parque de Castrelos",
+          "O parque",
           "Cancela",
           "Neboento"
         ],
         "vocabularioClaveEs": [
           "¡Vamos al parque!",
-          "Parque de Castrelos",
+          "O parque",
           "Verja",
           "Brumoso"
         ],
         "palabras": [
           "Let's go to the park!",
-          "Castrelos Park",
+          "Autumn park",
           "Gate",
           "Misty"
         ]
@@ -17629,7 +17629,7 @@
     },
     "nivelLectura": 2,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Hold your hat!",
@@ -17978,7 +17978,7 @@
     },
     "nivelLectura": 2,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Big steps and little steps",
@@ -18327,7 +18327,7 @@
     },
     "nivelLectura": 2,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Careful, it's hot",
@@ -18654,7 +18654,7 @@
     },
     "nivelLectura": 2,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Splash, splash!",
@@ -18670,8 +18670,8 @@
         },
         "lamina": "conto_choiva_1",
         "texto": {
-          "gl": "Chove moito en Vigo. A auga de choiva, a “Rainwater”, baixa polo canlón, o “Gutter”, e marcha polo sumidoiro, o “Drain”. No patio hai pozas por todas partes.",
-          "es": "Llueve mucho en Vigo. El agua de lluvia, la “Rainwater”, baja por el canalón, el “Gutter”, y se va por la alcantarilla, el “Drain”. En el patio hay charcos por todas partes."
+          "gl": "Chove moito na vila. A auga de choiva, a “Rainwater”, baixa polo canlón, o “Gutter”, e marcha polo sumidoiro, o “Drain”. No patio hai pozas por todas partes.",
+          "es": "Llueve mucho en la villa. El agua de lluvia, la “Rainwater”, baja por el canalón, el “Gutter”, y se va por la alcantarilla, el “Drain”. En el patio hay charcos por todas partes."
         },
         "preguntaImaxe": {
           "gl": "Quen sae nesta lámina? Sinálao co dedo.",
@@ -18993,8 +18993,8 @@
       "es": "Diciembre"
     },
     "centroInteres": {
-      "gl": "Os Tesouros Naturais de Decembro na Ría de Vigo",
-      "es": "Los Tesoros Naturales de Diciembre en la Ría de Vigo"
+      "gl": "Os Tesouros Naturais de Decembro na Ría da vila",
+      "es": "Los Tesoros Naturales de Diciembre en la Ría de la villa"
     },
     "titulo": {
       "gl": "Hugo e o trono",
@@ -19006,7 +19006,7 @@
     },
     "nivelLectura": 2,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Boom goes the thunder",
@@ -19358,7 +19358,7 @@
     },
     "nivelLectura": 2,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Arms up high!",
@@ -19707,7 +19707,7 @@
     },
     "nivelLectura": 2,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Read me a story",
@@ -20034,7 +20034,7 @@
     },
     "nivelLectura": 2,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Beep, beep, bus!",
@@ -20373,8 +20373,8 @@
       "es": "Enero"
     },
     "centroInteres": {
-      "gl": "Os Tesouros Naturais de Xaneiro na Ría de Vigo",
-      "es": "Los Tesoros Naturales de Enero en la Ría de Vigo"
+      "gl": "Os Tesouros Naturais de Xaneiro na Ría da vila",
+      "es": "Los Tesoros Naturales de Enero en la Ría de la villa"
     },
     "titulo": {
       "gl": "Roi e o triciclo veloz",
@@ -20386,7 +20386,7 @@
     },
     "nivelLectura": 2,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Go slow",
@@ -20738,7 +20738,7 @@
     },
     "nivelLectura": 2,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Look left, look right",
@@ -21087,7 +21087,7 @@
     },
     "nivelLectura": 2,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Toot, toot!",
@@ -21103,8 +21103,8 @@
         },
         "lamina": "conto_mar_1",
         "texto": {
-          "gl": "Breixo e a mamá van ao porto de Vigo, o “Harbour”. É un porto con moito traballo, “Busy port”: unha grúa, a “Crane”, carga caixas nun barco: “Load”.",
-          "es": "Breixo y mamá van al puerto de Vigo, el “Harbour”. Es un puerto con mucho trabajo, “Busy port”: una grúa, la “Crane”, carga cajas en un barco: “Load”."
+          "gl": "Breixo e a mamá van ao porto da ría, o “Harbour”. É un porto con moito traballo, “Busy port”: unha grúa, a “Crane”, carga caixas nun barco: “Load”.",
+          "es": "Breixo y mamá van al puerto de la ría, el “Harbour”. Es un puerto con mucho trabajo, “Busy port”: una grúa, la “Crane”, carga cajas en un barco: “Load”."
         },
         "preguntaImaxe": {
           "gl": "Quen sae nesta lámina? Sinálao co dedo.",
@@ -21414,7 +21414,7 @@
     },
     "nivelLectura": 2,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "I'm a tiger!",
@@ -21766,7 +21766,7 @@
     },
     "nivelLectura": 2,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Through the jungle",
@@ -22118,7 +22118,7 @@
     },
     "nivelLectura": 2,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Huddle together",
@@ -22445,7 +22445,7 @@
     },
     "nivelLectura": 2,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Let's parade!",
@@ -22772,7 +22772,7 @@
     },
     "nivelLectura": 2,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "It's a star!",
@@ -23108,8 +23108,8 @@
       "es": "Marzo"
     },
     "centroInteres": {
-      "gl": "Os Tesouros Naturais de Marzo na Ría de Vigo",
-      "es": "Los Tesoros Naturales de Marzo en la Ría de Vigo"
+      "gl": "Os Tesouros Naturais de Marzo na Ría da vila",
+      "es": "Los Tesoros Naturales de Marzo en la Ría de la villa"
     },
     "titulo": {
       "gl": "Ánxela e o mango",
@@ -23121,7 +23121,7 @@
     },
     "nivelLectura": 2,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Can I try some?",
@@ -23473,7 +23473,7 @@
     },
     "nivelLectura": 2,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Will it roll?",
@@ -23800,7 +23800,7 @@
     },
     "nivelLectura": 2,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Pass it, please",
@@ -24127,7 +24127,7 @@
     },
     "nivelLectura": 2,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Make a wish!",
@@ -24466,8 +24466,8 @@
       "es": "Abril"
     },
     "centroInteres": {
-      "gl": "Os Tesouros Naturais de Abril na Ría de Vigo",
-      "es": "Los Tesoros Naturales de Abril en la Ría de Vigo"
+      "gl": "Os Tesouros Naturais de Abril na Ría da vila",
+      "es": "Los Tesoros Naturales de Abril en la Ría de la villa"
     },
     "titulo": {
       "gl": "Lucas e o comedeiro de paxaros",
@@ -24479,7 +24479,7 @@
     },
     "nivelLectura": 2,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Listen to the birds",
@@ -24831,7 +24831,7 @@
     },
     "nivelLectura": 2,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Whisper to me",
@@ -25180,7 +25180,7 @@
     },
     "nivelLectura": 2,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Crack, crack!",
@@ -25507,7 +25507,7 @@
     },
     "nivelLectura": 2,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "I can do it!",
@@ -25846,8 +25846,8 @@
       "es": "Mayo"
     },
     "centroInteres": {
-      "gl": "Os Tesouros Naturais de Maio na Ría de Vigo",
-      "es": "Los Tesoros Naturales de Mayo en la Ría de Vigo"
+      "gl": "Os Tesouros Naturais de Maio na Ría da vila",
+      "es": "Los Tesoros Naturales de Mayo en la Ría de la villa"
     },
     "titulo": {
       "gl": "Anxo e o dente que se move",
@@ -25859,7 +25859,7 @@
     },
     "nivelLectura": 2,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Brush, brush, brush",
@@ -26211,7 +26211,7 @@
     },
     "nivelLectura": 2,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Will it float?",
@@ -26560,7 +26560,7 @@
     },
     "nivelLectura": 2,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Pass me a peg",
@@ -26887,7 +26887,7 @@
     },
     "nivelLectura": 2,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Row, row, row your boat",
@@ -26903,8 +26903,8 @@
         },
         "lamina": "conto_mar_1",
         "texto": {
-          "gl": "Na ría de Vigo hai barcos na auga, “Boats on the water”: un veleiro, o “Sailing boat”, cunha vela branca, a “White sail”, e un mastro moi alto, o “Mast”.",
-          "es": "En la ría de Vigo hay barcos en el agua, “Boats on the water”: un velero, el “Sailing boat”, con una vela blanca, la “White sail”, y un mástil muy alto, el “Mast”."
+          "gl": "Na ría hai barcos na auga, “Boats on the water”: un veleiro, o “Sailing boat”, cunha vela branca, a “White sail”, e un mastro moi alto, o “Mast”.",
+          "es": "En la ría hay barcos en el agua, “Boats on the water”: un velero, el “Sailing boat”, con una vela blanca, la “White sail”, y un mástil muy alto, el “Mast”."
         },
         "preguntaImaxe": {
           "gl": "Quen sae nesta lámina? Sinálao co dedo.",
@@ -27226,20 +27226,20 @@
       "es": "Junio"
     },
     "centroInteres": {
-      "gl": "Os Tesouros Naturais de Xuño na Ría de Vigo",
-      "es": "Los Tesoros Naturales de Junio en la Ría de Vigo"
+      "gl": "Os Tesouros Naturais de Xuño na Ría da vila",
+      "es": "Los Tesoros Naturales de Junio en la Ría de la villa"
     },
     "titulo": {
       "gl": "Duarte e o flan de area",
       "es": "Duarte y el flan de arena"
     },
     "sinopse": {
-      "gl": "En Samil, o flan de area de Duarte desfaise unha e outra vez, ata que descobre a area húmida.",
-      "es": "En Samil, el flan de arena de Duarte se deshace una y otra vez, hasta que descubre la arena húmeda."
+      "gl": "En a praia, o flan de area de Duarte desfaise unha e outra vez, ata que descobre a area húmida.",
+      "es": "En a praia, el flan de arena de Duarte se deshace una y otra vez, hasta que descubre la arena húmeda."
     },
     "nivelLectura": 2,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Let's dig!",
@@ -27255,8 +27255,8 @@
         },
         "lamina": "conto_mar_1",
         "texto": {
-          "gl": "A praia de Samil é coma un areeiro xigante, un “Sandpit”. Duarte colle a pa de praia, a “Beach spade”: “Let's dig!”. E cava un burato: “Dig a hole”.",
-          "es": "La playa de Samil es como un arenero gigante, un “Sandpit”. Duarte coge la pala de playa, la “Beach spade”: “Let's dig!”. Y cava un agujero: “Dig a hole”."
+          "gl": "A a praia é coma un areeiro xigante, un “Sandpit”. Duarte colle a pa de praia, a “Beach spade”: “Let's dig!”. E cava un burato: “Dig a hole”.",
+          "es": "La la playa es como un arenero gigante, un “Sandpit”. Duarte coge la pala de playa, la “Beach spade”: “Let's dig!”. Y cava un agujero: “Dig a hole”."
         },
         "preguntaImaxe": {
           "gl": "Quen sae nesta lámina? Sinálao co dedo.",
@@ -27578,8 +27578,8 @@
       "es": "Junio"
     },
     "centroInteres": {
-      "gl": "O Gran Salto de A Ría de Vigo e o Mar: Movemento e Xogo TPR",
-      "es": "El Gran Salto de La Ría de Vigo y el Mar: Movimiento y Juego TPR"
+      "gl": "O Gran Salto de A Ría e o Mar: Movemento e Xogo TPR",
+      "es": "El Gran Salto de La Ría y el Mar: Movimiento y Juego TPR"
     },
     "titulo": {
       "gl": "Rut e o caramuxo da poza",
@@ -27591,7 +27591,7 @@
     },
     "nivelLectura": 2,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Look what I found!",
@@ -27927,8 +27927,8 @@
       "es": "Junio"
     },
     "centroInteres": {
-      "gl": "Lúa e a Cuncha Mágica de Samil",
-      "es": "Lúa y la Concha Mágica de Samil"
+      "gl": "Lúa e a Cuncha Mágica de a praia",
+      "es": "Lúa y la Concha Mágica de la playa"
     },
     "titulo": {
       "gl": "Tomé e a foto da clase",
@@ -27940,7 +27940,7 @@
     },
     "nivelLectura": 2,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Friends forever",
@@ -28246,8 +28246,8 @@
     "semanaSugerida": 1,
     "cursoId": "curso_3_4",
     "cursoEtiqueta": {
-      "gl": "3 a 4 anos (Exploración de Vigo)",
-      "es": "3 a 4 años (Exploración de Vigo)"
+      "gl": "3 a 4 anos (Exploración da vila)",
+      "es": "3 a 4 años (Exploración de la villa)"
     },
     "mesNome": {
       "gl": "Setembro",
@@ -28267,7 +28267,7 @@
     },
     "nivelLectura": 2,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Good morning!",
@@ -28595,16 +28595,16 @@
     "semanaSugerida": 2,
     "cursoId": "curso_3_4",
     "cursoEtiqueta": {
-      "gl": "3 a 4 anos (Exploración de Vigo)",
-      "es": "3 a 4 años (Exploración de Vigo)"
+      "gl": "3 a 4 anos (Exploración da vila)",
+      "es": "3 a 4 años (Exploración de la villa)"
     },
     "mesNome": {
       "gl": "Setembro",
       "es": "Septiembre"
     },
     "centroInteres": {
-      "gl": "Os Tesouros Naturais de Setembro na Ría de Vigo",
-      "es": "Los Tesoros Naturales de Septiembre en la Ría de Vigo"
+      "gl": "Os Tesouros Naturais de Setembro na Ría da vila",
+      "es": "Los Tesoros Naturales de Septiembre en la Ría de la villa"
     },
     "titulo": {
       "gl": "Uxía e a caixa das cunchas",
@@ -28616,7 +28616,7 @@
     },
     "nivelLectura": 2,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Your turn!",
@@ -28670,8 +28670,8 @@
         },
         "lamina": "conto_mar_2",
         "texto": {
-          "gl": "Uxía quere que todos miren —“Look”— a súa colección. Sinala —“Point”— cada cuncha: esta é de Samil, esta é do Vao…",
-          "es": "Uxía quiere que todos miren —“Look”— su colección. Señala —“Point”— cada concha: esta es de Samil, esta es de O Vao…"
+          "gl": "Uxía quere que todos miren —“Look”— a súa colección. Sinala —“Point”— cada cuncha: esta é de a praia, esta é do Vao…",
+          "es": "Uxía quiere que todos miren —“Look”— su colección. Señala —“Point”— cada concha: esta es de la playa, esta es de O Vao…"
         },
         "preguntaImaxe": {
           "gl": "Que quere Uxía? Móstrao co dedo.",
@@ -28950,8 +28950,8 @@
     "semanaSugerida": 3,
     "cursoId": "curso_3_4",
     "cursoEtiqueta": {
-      "gl": "3 a 4 anos (Exploración de Vigo)",
-      "es": "3 a 4 años (Exploración de Vigo)"
+      "gl": "3 a 4 anos (Exploración da vila)",
+      "es": "3 a 4 años (Exploración de la villa)"
     },
     "mesNome": {
       "gl": "Setembro",
@@ -28971,7 +28971,7 @@
     },
     "nivelLectura": 2,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "I love you",
@@ -29305,8 +29305,8 @@
     "semanaSugerida": 4,
     "cursoId": "curso_3_4",
     "cursoEtiqueta": {
-      "gl": "3 a 4 anos (Exploración de Vigo)",
-      "es": "3 a 4 años (Exploración de Vigo)"
+      "gl": "3 a 4 anos (Exploración da vila)",
+      "es": "3 a 4 años (Exploración de la villa)"
     },
     "mesNome": {
       "gl": "Setembro",
@@ -29326,7 +29326,7 @@
     },
     "nivelLectura": 2,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Let's play!",
@@ -29657,8 +29657,8 @@
     "semanaSugerida": 1,
     "cursoId": "curso_3_4",
     "cursoEtiqueta": {
-      "gl": "3 a 4 anos (Exploración de Vigo)",
-      "es": "3 a 4 años (Exploración de Vigo)"
+      "gl": "3 a 4 anos (Exploración da vila)",
+      "es": "3 a 4 años (Exploración de la villa)"
     },
     "mesNome": {
       "gl": "Outubro",
@@ -29678,7 +29678,7 @@
     },
     "nivelLectura": 2,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Freeze",
@@ -30012,16 +30012,16 @@
     "semanaSugerida": 2,
     "cursoId": "curso_3_4",
     "cursoEtiqueta": {
-      "gl": "3 a 4 anos (Exploración de Vigo)",
-      "es": "3 a 4 años (Exploración de Vigo)"
+      "gl": "3 a 4 anos (Exploración da vila)",
+      "es": "3 a 4 años (Exploración de la villa)"
     },
     "mesNome": {
       "gl": "Outubro",
       "es": "Octubre"
     },
     "centroInteres": {
-      "gl": "Os Tesouros Naturais de Outubro na Ría de Vigo",
-      "es": "Los Tesoros Naturales de Octubre en la Ría de Vigo"
+      "gl": "Os Tesouros Naturais de Outubro na Ría da vila",
+      "es": "Los Tesoros Naturales de Octubre en la Ría de la villa"
     },
     "titulo": {
       "gl": "Lola e a caixa misteriosa",
@@ -30033,7 +30033,7 @@
     },
     "nivelLectura": 2,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Close your eyes and listen",
@@ -30367,8 +30367,8 @@
     "semanaSugerida": 3,
     "cursoId": "curso_3_4",
     "cursoEtiqueta": {
-      "gl": "3 a 4 anos (Exploración de Vigo)",
-      "es": "3 a 4 años (Exploración de Vigo)"
+      "gl": "3 a 4 anos (Exploración da vila)",
+      "es": "3 a 4 años (Exploración de la villa)"
     },
     "mesNome": {
       "gl": "Outubro",
@@ -30388,7 +30388,7 @@
     },
     "nivelLectura": 2,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Arms up!",
@@ -30722,8 +30722,8 @@
     "semanaSugerida": 4,
     "cursoId": "curso_3_4",
     "cursoEtiqueta": {
-      "gl": "3 a 4 anos (Exploración de Vigo)",
-      "es": "3 a 4 años (Exploración de Vigo)"
+      "gl": "3 a 4 anos (Exploración da vila)",
+      "es": "3 a 4 años (Exploración de la villa)"
     },
     "mesNome": {
       "gl": "Outubro",
@@ -30743,7 +30743,7 @@
     },
     "nivelLectura": 2,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Look at me!",
@@ -31049,8 +31049,8 @@
     "semanaSugerida": 1,
     "cursoId": "curso_3_4",
     "cursoEtiqueta": {
-      "gl": "3 a 4 anos (Exploración de Vigo)",
-      "es": "3 a 4 años (Exploración de Vigo)"
+      "gl": "3 a 4 anos (Exploración da vila)",
+      "es": "3 a 4 años (Exploración de la villa)"
     },
     "mesNome": {
       "gl": "Novembro",
@@ -31070,7 +31070,7 @@
     },
     "nivelLectura": 2,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Crunch leaves",
@@ -31407,8 +31407,8 @@
     "semanaSugerida": 2,
     "cursoId": "curso_3_4",
     "cursoEtiqueta": {
-      "gl": "3 a 4 anos (Exploración de Vigo)",
-      "es": "3 a 4 años (Exploración de Vigo)"
+      "gl": "3 a 4 anos (Exploración da vila)",
+      "es": "3 a 4 años (Exploración de la villa)"
     },
     "mesNome": {
       "gl": "Novembro",
@@ -31428,7 +31428,7 @@
     },
     "nivelLectura": 2,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Where is the squirrel?",
@@ -31762,8 +31762,8 @@
     "semanaSugerida": 3,
     "cursoId": "curso_3_4",
     "cursoEtiqueta": {
-      "gl": "3 a 4 anos (Exploración de Vigo)",
-      "es": "3 a 4 años (Exploración de Vigo)"
+      "gl": "3 a 4 anos (Exploración da vila)",
+      "es": "3 a 4 años (Exploración de la villa)"
     },
     "mesNome": {
       "gl": "Novembro",
@@ -31783,7 +31783,7 @@
     },
     "nivelLectura": 2,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Hoot, hoot!",
@@ -32117,8 +32117,8 @@
     "semanaSugerida": 4,
     "cursoId": "curso_3_4",
     "cursoEtiqueta": {
-      "gl": "3 a 4 anos (Exploración de Vigo)",
-      "es": "3 a 4 años (Exploración de Vigo)"
+      "gl": "3 a 4 anos (Exploración da vila)",
+      "es": "3 a 4 años (Exploración de la villa)"
     },
     "mesNome": {
       "gl": "Novembro",
@@ -32138,7 +32138,7 @@
     },
     "nivelLectura": 2,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Stir, then taste",
@@ -32469,8 +32469,8 @@
     "semanaSugerida": 1,
     "cursoId": "curso_3_4",
     "cursoEtiqueta": {
-      "gl": "3 a 4 anos (Exploración de Vigo)",
-      "es": "3 a 4 años (Exploración de Vigo)"
+      "gl": "3 a 4 anos (Exploración da vila)",
+      "es": "3 a 4 años (Exploración de la villa)"
     },
     "mesNome": {
       "gl": "Decembro",
@@ -32490,7 +32490,7 @@
     },
     "nivelLectura": 2,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Brrr, it's cold!",
@@ -32824,16 +32824,16 @@
     "semanaSugerida": 2,
     "cursoId": "curso_3_4",
     "cursoEtiqueta": {
-      "gl": "3 a 4 anos (Exploración de Vigo)",
-      "es": "3 a 4 años (Exploración de Vigo)"
+      "gl": "3 a 4 anos (Exploración da vila)",
+      "es": "3 a 4 años (Exploración de la villa)"
     },
     "mesNome": {
       "gl": "Decembro",
       "es": "Diciembre"
     },
     "centroInteres": {
-      "gl": "Os Tesouros Naturais de Decembro na Ría de Vigo",
-      "es": "Los Tesoros Naturales de Diciembre en la Ría de Vigo"
+      "gl": "Os Tesouros Naturais de Decembro na Ría da vila",
+      "es": "Los Tesoros Naturales de Diciembre en la Ría de la villa"
     },
     "titulo": {
       "gl": "Lía e a estrela para a avoa",
@@ -32845,7 +32845,7 @@
     },
     "nivelLectura": 2,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Ring bells",
@@ -32861,8 +32861,8 @@
         },
         "lamina": "conto_inverno_1",
         "texto": {
-          "gl": "En Nadal, Vigo énchese de luces, as “Light”, que escintilan: “Twinkle”. Na praza hai unha estrela xigante, a “Star”. Que bonito, “Beautiful”!",
-          "es": "En Navidad, Vigo se llena de luces, las “Light”, que titilan: “Twinkle”. En la plaza hay una estrella gigante, la “Star”. ¡Qué bonito, “Beautiful”!"
+          "gl": "En Nadal, Galicia énchese de luces, as “Light”, que escintilan: “Twinkle”. Na praza hai unha estrela xigante, a “Star”. Que bonito, “Beautiful”!",
+          "es": "En Navidad, Galicia se llena de luces, las “Light”, que titilan: “Twinkle”. En la plaza hay una estrella gigante, la “Star”. ¡Qué bonito, “Beautiful”!"
         },
         "preguntaImaxe": {
           "gl": "Quen sae nesta lámina? Sinálao co dedo.",
@@ -33179,8 +33179,8 @@
     "semanaSugerida": 3,
     "cursoId": "curso_3_4",
     "cursoEtiqueta": {
-      "gl": "3 a 4 anos (Exploración de Vigo)",
-      "es": "3 a 4 años (Exploración de Vigo)"
+      "gl": "3 a 4 anos (Exploración da vila)",
+      "es": "3 a 4 años (Exploración de la villa)"
     },
     "mesNome": {
       "gl": "Decembro",
@@ -33200,7 +33200,7 @@
     },
     "nivelLectura": 2,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Good night!",
@@ -33534,8 +33534,8 @@
     "semanaSugerida": 4,
     "cursoId": "curso_3_4",
     "cursoEtiqueta": {
-      "gl": "3 a 4 anos (Exploración de Vigo)",
-      "es": "3 a 4 años (Exploración de Vigo)"
+      "gl": "3 a 4 anos (Exploración da vila)",
+      "es": "3 a 4 años (Exploración de la villa)"
     },
     "mesNome": {
       "gl": "Decembro",
@@ -33555,7 +33555,7 @@
     },
     "nivelLectura": 2,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Hands up and cheer",
@@ -33883,8 +33883,8 @@
     "semanaSugerida": 1,
     "cursoId": "curso_3_4",
     "cursoEtiqueta": {
-      "gl": "3 a 4 anos (Exploración de Vigo)",
-      "es": "3 a 4 años (Exploración de Vigo)"
+      "gl": "3 a 4 anos (Exploración da vila)",
+      "es": "3 a 4 años (Exploración de la villa)"
     },
     "mesNome": {
       "gl": "Xaneiro",
@@ -33904,7 +33904,7 @@
     },
     "nivelLectura": 2,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Put on your hat!",
@@ -34241,16 +34241,16 @@
     "semanaSugerida": 2,
     "cursoId": "curso_3_4",
     "cursoEtiqueta": {
-      "gl": "3 a 4 anos (Exploración de Vigo)",
-      "es": "3 a 4 años (Exploración de Vigo)"
+      "gl": "3 a 4 anos (Exploración da vila)",
+      "es": "3 a 4 años (Exploración de la villa)"
     },
     "mesNome": {
       "gl": "Xaneiro",
       "es": "Enero"
     },
     "centroInteres": {
-      "gl": "Os Tesouros Naturais de Xaneiro na Ría de Vigo",
-      "es": "Los Tesoros Naturales de Enero en la Ría de Vigo"
+      "gl": "Os Tesouros Naturais de Xaneiro na Ría da vila",
+      "es": "Los Tesoros Naturales de Enero en la Ría de la villa"
     },
     "titulo": {
       "gl": "O paraugas de Xiana",
@@ -34262,7 +34262,7 @@
     },
     "nivelLectura": 2,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Put up the umbrella",
@@ -34278,8 +34278,8 @@
         },
         "lamina": "conto_choiva_1",
         "texto": {
-          "gl": "É un día chuvioso, “Rainy”, en Vigo. O ceo está gris, “Grey”, cheo de nubes: “Cloud”. Cae unha pinga, a “Drop”, e outra, e outra.",
-          "es": "Es un día lluvioso, “Rainy”, en Vigo. El cielo está gris, “Grey”, lleno de nubes: “Cloud”. Cae una gota, la “Drop”, y otra, y otra."
+          "gl": "É un día chuvioso, “Rainy”, na vila. O ceo está gris, “Grey”, cheo de nubes: “Cloud”. Cae unha pinga, a “Drop”, e outra, e outra.",
+          "es": "Es un día lluvioso, “Rainy”, en la villa. El cielo está gris, “Grey”, lleno de nubes: “Cloud”. Cae una gota, la “Drop”, y otra, y otra."
         },
         "preguntaImaxe": {
           "gl": "Quen sae nesta lámina? Sinálao co dedo.",
@@ -34590,8 +34590,8 @@
     "semanaSugerida": 3,
     "cursoId": "curso_3_4",
     "cursoEtiqueta": {
-      "gl": "3 a 4 anos (Exploración de Vigo)",
-      "es": "3 a 4 años (Exploración de Vigo)"
+      "gl": "3 a 4 anos (Exploración da vila)",
+      "es": "3 a 4 años (Exploración de la villa)"
     },
     "mesNome": {
       "gl": "Xaneiro",
@@ -34611,7 +34611,7 @@
     },
     "nivelLectura": 2,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Stop, look and listen",
@@ -34942,8 +34942,8 @@
     "semanaSugerida": 4,
     "cursoId": "curso_3_4",
     "cursoEtiqueta": {
-      "gl": "3 a 4 anos (Exploración de Vigo)",
-      "es": "3 a 4 años (Exploración de Vigo)"
+      "gl": "3 a 4 anos (Exploración da vila)",
+      "es": "3 a 4 años (Exploración de la villa)"
     },
     "mesNome": {
       "gl": "Xaneiro",
@@ -34963,7 +34963,7 @@
     },
     "nivelLectura": 2,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Knock, knock!",
@@ -35291,8 +35291,8 @@
     "semanaSugerida": 1,
     "cursoId": "curso_3_4",
     "cursoEtiqueta": {
-      "gl": "3 a 4 anos (Exploración de Vigo)",
-      "es": "3 a 4 años (Exploración de Vigo)"
+      "gl": "3 a 4 anos (Exploración da vila)",
+      "es": "3 a 4 años (Exploración de la villa)"
     },
     "mesNome": {
       "gl": "Febreiro",
@@ -35312,7 +35312,7 @@
     },
     "nivelLectura": 2,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Come here, puppy",
@@ -35646,8 +35646,8 @@
     "semanaSugerida": 2,
     "cursoId": "curso_3_4",
     "cursoEtiqueta": {
-      "gl": "3 a 4 anos (Exploración de Vigo)",
-      "es": "3 a 4 años (Exploración de Vigo)"
+      "gl": "3 a 4 anos (Exploración da vila)",
+      "es": "3 a 4 años (Exploración de la villa)"
     },
     "mesNome": {
       "gl": "Febreiro",
@@ -35667,7 +35667,7 @@
     },
     "nivelLectura": 2,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Oink, oink!",
@@ -36004,8 +36004,8 @@
     "semanaSugerida": 3,
     "cursoId": "curso_3_4",
     "cursoEtiqueta": {
-      "gl": "3 a 4 anos (Exploración de Vigo)",
-      "es": "3 a 4 años (Exploración de Vigo)"
+      "gl": "3 a 4 anos (Exploración da vila)",
+      "es": "3 a 4 años (Exploración de la villa)"
     },
     "mesNome": {
       "gl": "Febreiro",
@@ -36025,7 +36025,7 @@
     },
     "nivelLectura": 2,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Watch out, crocodile!",
@@ -36359,8 +36359,8 @@
     "semanaSugerida": 4,
     "cursoId": "curso_3_4",
     "cursoEtiqueta": {
-      "gl": "3 a 4 anos (Exploración de Vigo)",
-      "es": "3 a 4 años (Exploración de Vigo)"
+      "gl": "3 a 4 anos (Exploración da vila)",
+      "es": "3 a 4 años (Exploración de la villa)"
     },
     "mesNome": {
       "gl": "Febreiro",
@@ -36380,7 +36380,7 @@
     },
     "nivelLectura": 2,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Who am I?",
@@ -36708,8 +36708,8 @@
     "semanaSugerida": 1,
     "cursoId": "curso_3_4",
     "cursoEtiqueta": {
-      "gl": "3 a 4 anos (Exploración de Vigo)",
-      "es": "3 a 4 años (Exploración de Vigo)"
+      "gl": "3 a 4 anos (Exploración da vila)",
+      "es": "3 a 4 años (Exploración de la villa)"
     },
     "mesNome": {
       "gl": "Marzo",
@@ -36729,7 +36729,7 @@
     },
     "nivelLectura": 2,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "What colour is it?",
@@ -37060,16 +37060,16 @@
     "semanaSugerida": 2,
     "cursoId": "curso_3_4",
     "cursoEtiqueta": {
-      "gl": "3 a 4 anos (Exploración de Vigo)",
-      "es": "3 a 4 años (Exploración de Vigo)"
+      "gl": "3 a 4 anos (Exploración da vila)",
+      "es": "3 a 4 años (Exploración de la villa)"
     },
     "mesNome": {
       "gl": "Marzo",
       "es": "Marzo"
     },
     "centroInteres": {
-      "gl": "Os Tesouros Naturais de Marzo na Ría de Vigo",
-      "es": "Los Tesoros Naturales de Marzo en la Ría de Vigo"
+      "gl": "Os Tesouros Naturais de Marzo na Ría da vila",
+      "es": "Los Tesoros Naturales de Marzo en la Ría de la villa"
     },
     "titulo": {
       "gl": "Noa e o aro que non xiraba",
@@ -37081,7 +37081,7 @@
     },
     "nivelLectura": 2,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Make a circle",
@@ -37415,8 +37415,8 @@
     "semanaSugerida": 3,
     "cursoId": "curso_3_4",
     "cursoEtiqueta": {
-      "gl": "3 a 4 anos (Exploración de Vigo)",
-      "es": "3 a 4 años (Exploración de Vigo)"
+      "gl": "3 a 4 anos (Exploración da vila)",
+      "es": "3 a 4 años (Exploración de la villa)"
     },
     "mesNome": {
       "gl": "Marzo",
@@ -37436,7 +37436,7 @@
     },
     "nivelLectura": 2,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Yes, please",
@@ -37767,8 +37767,8 @@
     "semanaSugerida": 4,
     "cursoId": "curso_3_4",
     "cursoEtiqueta": {
-      "gl": "3 a 4 anos (Exploración de Vigo)",
-      "es": "3 a 4 años (Exploración de Vigo)"
+      "gl": "3 a 4 anos (Exploración da vila)",
+      "es": "3 a 4 años (Exploración de la villa)"
     },
     "mesNome": {
       "gl": "Marzo",
@@ -37788,7 +37788,7 @@
     },
     "nivelLectura": 2,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Loud, then quiet",
@@ -38122,8 +38122,8 @@
     "semanaSugerida": 1,
     "cursoId": "curso_3_4",
     "cursoEtiqueta": {
-      "gl": "3 a 4 anos (Exploración de Vigo)",
-      "es": "3 a 4 años (Exploración de Vigo)"
+      "gl": "3 a 4 anos (Exploración da vila)",
+      "es": "3 a 4 años (Exploración de la villa)"
     },
     "mesNome": {
       "gl": "Abril",
@@ -38143,7 +38143,7 @@
     },
     "nivelLectura": 2,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Rain, then sun",
@@ -38197,8 +38197,8 @@
         },
         "lamina": "conto_primavera_2",
         "texto": {
-          "gl": "Ánxel quere voar o seu papaventos novo, o “Kite”, no monte do Castro. Pero para iso precisa un día soleado: “Sunny”.",
-          "es": "Ánxel quiere volar su cometa nueva, la “Kite”, en el monte del Castro. Pero para eso necesita un día soleado: “Sunny”."
+          "gl": "Ánxel quere voar o seu papaventos novo, o “Kite”, no monte do monte. Pero para iso precisa un día soleado: “Sunny”.",
+          "es": "Ánxel quiere volar su cometa nueva, la “Kite”, en el monte del monte. Pero para eso necesita un día soleado: “Sunny”."
         },
         "preguntaImaxe": {
           "gl": "Que quere Ánxel? Móstrao co dedo.",
@@ -38337,8 +38337,8 @@
         },
         "lamina": "conto_primavera_3",
         "texto": {
-          "gl": "“Hello, sun!”, berra Ánxel. O ceo queda despexado, “Clear”, e sae a raiola, a “Sunshine”. Abren a porta —“Open”— e, no Castro, o papaventos voa por fin!",
-          "es": "“Hello, sun!”, grita Ánxel. El cielo se queda despejado, “Clear”, y sale la luz del sol, la “Sunshine”. Abren la puerta —“Open”— y, en el Castro, ¡la cometa vuela por fin!"
+          "gl": "“Hello, sun!”, berra Ánxel. O ceo queda despexado, “Clear”, e sae a raiola, a “Sunshine”. Abren a porta —“Open”— e, no monte, o papaventos voa por fin!",
+          "es": "“Hello, sun!”, grita Ánxel. El cielo se queda despejado, “Clear”, y sale la luz del sol, la “Sunshine”. Abren la puerta —“Open”— y, en el monte, ¡la cometa vuela por fin!"
         },
         "preguntaImaxe": {
           "gl": "Como se sente Ánxel agora? Pon a mesma cara.",
@@ -38477,16 +38477,16 @@
     "semanaSugerida": 2,
     "cursoId": "curso_3_4",
     "cursoEtiqueta": {
-      "gl": "3 a 4 anos (Exploración de Vigo)",
-      "es": "3 a 4 años (Exploración de Vigo)"
+      "gl": "3 a 4 anos (Exploración da vila)",
+      "es": "3 a 4 años (Exploración de la villa)"
     },
     "mesNome": {
       "gl": "Abril",
       "es": "Abril"
     },
     "centroInteres": {
-      "gl": "Os Tesouros Naturais de Abril na Ría de Vigo",
-      "es": "Los Tesoros Naturales de Abril en la Ría de Vigo"
+      "gl": "Os Tesouros Naturais de Abril na Ría da vila",
+      "es": "Los Tesoros Naturales de Abril en la Ría de la villa"
     },
     "titulo": {
       "gl": "Xulia e a flor que tardaba",
@@ -38498,7 +38498,7 @@
     },
     "nivelLectura": 2,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Open like a flower",
@@ -38835,8 +38835,8 @@
     "semanaSugerida": 3,
     "cursoId": "curso_3_4",
     "cursoEtiqueta": {
-      "gl": "3 a 4 anos (Exploración de Vigo)",
-      "es": "3 a 4 años (Exploración de Vigo)"
+      "gl": "3 a 4 anos (Exploración da vila)",
+      "es": "3 a 4 años (Exploración de la villa)"
     },
     "mesNome": {
       "gl": "Abril",
@@ -38856,7 +38856,7 @@
     },
     "nivelLectura": 2,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Look, a butterfly!",
@@ -39190,8 +39190,8 @@
     "semanaSugerida": 4,
     "cursoId": "curso_3_4",
     "cursoEtiqueta": {
-      "gl": "3 a 4 anos (Exploración de Vigo)",
-      "es": "3 a 4 años (Exploración de Vigo)"
+      "gl": "3 a 4 anos (Exploración da vila)",
+      "es": "3 a 4 años (Exploración de la villa)"
     },
     "mesNome": {
       "gl": "Abril",
@@ -39211,7 +39211,7 @@
     },
     "nivelLectura": 2,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Ready, steady, go!",
@@ -39539,8 +39539,8 @@
     "semanaSugerida": 1,
     "cursoId": "curso_3_4",
     "cursoEtiqueta": {
-      "gl": "3 a 4 anos (Exploración de Vigo)",
-      "es": "3 a 4 años (Exploración de Vigo)"
+      "gl": "3 a 4 anos (Exploración da vila)",
+      "es": "3 a 4 años (Exploración de la villa)"
     },
     "mesNome": {
       "gl": "Maio",
@@ -39560,7 +39560,7 @@
     },
     "nivelLectura": 2,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Wash your hands",
@@ -39894,16 +39894,16 @@
     "semanaSugerida": 2,
     "cursoId": "curso_3_4",
     "cursoEtiqueta": {
-      "gl": "3 a 4 anos (Exploración de Vigo)",
-      "es": "3 a 4 años (Exploración de Vigo)"
+      "gl": "3 a 4 anos (Exploración da vila)",
+      "es": "3 a 4 años (Exploración de la villa)"
     },
     "mesNome": {
       "gl": "Maio",
       "es": "Mayo"
     },
     "centroInteres": {
-      "gl": "Os Tesouros Naturais de Maio na Ría de Vigo",
-      "es": "Los Tesoros Naturales de Mayo en la Ría de Vigo"
+      "gl": "Os Tesouros Naturais de Maio na Ría da vila",
+      "es": "Los Tesoros Naturales de Mayo en la Ría de la villa"
     },
     "titulo": {
       "gl": "Samuel e a coroa de escuma",
@@ -39915,7 +39915,7 @@
     },
     "nivelLectura": 2,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Brush your teeth",
@@ -40243,8 +40243,8 @@
     "semanaSugerida": 3,
     "cursoId": "curso_3_4",
     "cursoEtiqueta": {
-      "gl": "3 a 4 anos (Exploración de Vigo)",
-      "es": "3 a 4 años (Exploración de Vigo)"
+      "gl": "3 a 4 anos (Exploración da vila)",
+      "es": "3 a 4 años (Exploración de la villa)"
     },
     "mesNome": {
       "gl": "Maio",
@@ -40264,7 +40264,7 @@
     },
     "nivelLectura": 2,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Enjoy your meal!",
@@ -40598,8 +40598,8 @@
     "semanaSugerida": 4,
     "cursoId": "curso_3_4",
     "cursoEtiqueta": {
-      "gl": "3 a 4 anos (Exploración de Vigo)",
-      "es": "3 a 4 años (Exploración de Vigo)"
+      "gl": "3 a 4 anos (Exploración da vila)",
+      "es": "3 a 4 años (Exploración de la villa)"
     },
     "mesNome": {
       "gl": "Maio",
@@ -40619,7 +40619,7 @@
     },
     "nivelLectura": 2,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Once upon a time",
@@ -40947,8 +40947,8 @@
     "semanaSugerida": 1,
     "cursoId": "curso_3_4",
     "cursoEtiqueta": {
-      "gl": "3 a 4 anos (Exploración de Vigo)",
-      "es": "3 a 4 años (Exploración de Vigo)"
+      "gl": "3 a 4 anos (Exploración da vila)",
+      "es": "3 a 4 años (Exploración de la villa)"
     },
     "mesNome": {
       "gl": "Xuño",
@@ -40959,16 +40959,16 @@
       "es": "Asamblea de Junio: El Círculo de los Amigos de Lúa"
     },
     "titulo": {
-      "gl": "Iván navega ás Cíes",
-      "es": "Iván navega a las Cíes"
+      "gl": "Iván navega ás illas",
+      "es": "Iván navega a las islas"
     },
     "sinopse": {
-      "gl": "Iván vai en barco ás Illas Cíes, pero o mar está bravo e ten medo.",
-      "es": "Iván va en barco a las Islas Cíes, pero el mar está bravo y tiene miedo."
+      "gl": "Iván vai en barco ás illas da ría, pero o mar está bravo e ten medo.",
+      "es": "Iván va en barco a las islas del mar, pero el mar está bravo y tiene miedo."
     },
     "nivelLectura": 2,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Big waves!",
@@ -40984,8 +40984,8 @@
         },
         "lamina": "conto_mar_1",
         "texto": {
-          "gl": "Iván mira o mar, o “Sea”, dende Vigo: é moi azul, “Blue”. Ao fondo hai unha illa, a “Island”, cun faro, o “Lighthouse”: son as Illas Cíes.",
-          "es": "Iván mira el mar, el “Sea”, desde Vigo: es muy azul, “Blue”. Al fondo hay una isla, la “Island”, con un faro, el “Lighthouse”: son las Islas Cíes."
+          "gl": "Iván mira o mar, o “Sea”, denda vila: é moi azul, “Blue”. Ao fondo hai unha illa, a “Island”, cun faro, o “Lighthouse”: son as illas do mar.",
+          "es": "Iván mira el mar, el “Sea”, desda vila: es muy azul, “Blue”. Al fondo hay una isla, la “Island”, con un faro, el “Lighthouse”: son las islas del mar."
         },
         "preguntaImaxe": {
           "gl": "Quen sae nesta lámina? Sinálao co dedo.",
@@ -41210,8 +41210,8 @@
           "es": "Recordar quién y qué pasó en la historia."
         },
         "respostaModelo": {
-          "gl": "Ás Illas Cíes.",
-          "es": "A las Islas Cíes."
+          "gl": "Ás illas da ría.",
+          "es": "A las islas del mar."
         },
         "pistaEducadora": {
           "gl": "Agarda cinco segundos. Se non responde, sinala a lámina e di ti a resposta.",
@@ -41274,16 +41274,16 @@
     "semanaSugerida": 2,
     "cursoId": "curso_3_4",
     "cursoEtiqueta": {
-      "gl": "3 a 4 anos (Exploración de Vigo)",
-      "es": "3 a 4 años (Exploración de Vigo)"
+      "gl": "3 a 4 anos (Exploración da vila)",
+      "es": "3 a 4 años (Exploración de la villa)"
     },
     "mesNome": {
       "gl": "Xuño",
       "es": "Junio"
     },
     "centroInteres": {
-      "gl": "Os Tesouros Naturais de Xuño na Ría de Vigo",
-      "es": "Los Tesoros Naturales de Junio en la Ría de Vigo"
+      "gl": "Os Tesouros Naturais de Xuño na Ría da vila",
+      "es": "Los Tesoros Naturales de Junio en la Ría de la villa"
     },
     "titulo": {
       "gl": "Laura e o castelo de area",
@@ -41295,7 +41295,7 @@
     },
     "nivelLectura": 2,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Put on your sun hat",
@@ -41626,16 +41626,16 @@
     "semanaSugerida": 3,
     "cursoId": "curso_3_4",
     "cursoEtiqueta": {
-      "gl": "3 a 4 anos (Exploración de Vigo)",
-      "es": "3 a 4 años (Exploración de Vigo)"
+      "gl": "3 a 4 anos (Exploración da vila)",
+      "es": "3 a 4 años (Exploración de la villa)"
     },
     "mesNome": {
       "gl": "Xuño",
       "es": "Junio"
     },
     "centroInteres": {
-      "gl": "O Gran Salto de A Ría de Vigo e o Mar: Movemento e Xogo TPR",
-      "es": "El Gran Salto de La Ría de Vigo y el Mar: Movimiento y Juego TPR"
+      "gl": "O Gran Salto de A Ría e o Mar: Movemento e Xogo TPR",
+      "es": "El Gran Salto de La Ría y el Mar: Movimiento y Juego TPR"
     },
     "titulo": {
       "gl": "Cris, o cangrexo que quería nadar",
@@ -41647,7 +41647,7 @@
     },
     "nivelLectura": 2,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Walk sideways like a crab",
@@ -41978,16 +41978,16 @@
     "semanaSugerida": 4,
     "cursoId": "curso_3_4",
     "cursoEtiqueta": {
-      "gl": "3 a 4 anos (Exploración de Vigo)",
-      "es": "3 a 4 años (Exploración de Vigo)"
+      "gl": "3 a 4 anos (Exploración da vila)",
+      "es": "3 a 4 años (Exploración de la villa)"
     },
     "mesNome": {
       "gl": "Xuño",
       "es": "Junio"
     },
     "centroInteres": {
-      "gl": "Lúa e a Cuncha Mágica de Samil",
-      "es": "Lúa y la Concha Mágica de Samil"
+      "gl": "Lúa e a Cuncha Mágica de a praia",
+      "es": "Lúa y la Concha Mágica de la playa"
     },
     "titulo": {
       "gl": "Brais e a noite de San Xoán",
@@ -41999,7 +41999,7 @@
     },
     "nivelLectura": 2,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "See you in September",
@@ -42326,7 +42326,7 @@
     },
     "nivelLectura": 3,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "If you want to talk, raise your hand",
@@ -42720,8 +42720,8 @@
       "es": "Septiembre"
     },
     "centroInteres": {
-      "gl": "Os Tesouros Naturais de Setembro na Ría de Vigo",
-      "es": "Los Tesoros Naturales de Septiembre en la Ría de Vigo"
+      "gl": "Os Tesouros Naturais de Setembro na Ría da vila",
+      "es": "Los Tesoros Naturales de Septiembre en la Ría de la villa"
     },
     "titulo": {
       "gl": "Xurxo e a ponte",
@@ -42733,7 +42733,7 @@
     },
     "nivelLectura": 3,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Let's build a bridge!",
@@ -43143,7 +43143,7 @@
     },
     "nivelLectura": 3,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Why do we wash our hands?",
@@ -43553,7 +43553,7 @@
     },
     "nivelLectura": 3,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "I'm sorry",
@@ -43960,7 +43960,7 @@
     },
     "nivelLectura": 3,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "When the drum stops, freeze",
@@ -44357,8 +44357,8 @@
       "es": "Octubre"
     },
     "centroInteres": {
-      "gl": "Os Tesouros Naturais de Outubro na Ría de Vigo",
-      "es": "Los Tesoros Naturales de Octubre en la Ría de Vigo"
+      "gl": "Os Tesouros Naturais de Outubro na Ría da vila",
+      "es": "Los Tesoros Naturales de Octubre en la Ría de la villa"
     },
     "titulo": {
       "gl": "Martín, o raposiño astuto",
@@ -44370,7 +44370,7 @@
     },
     "nivelLectura": 3,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Run to the den!",
@@ -44777,7 +44777,7 @@
     },
     "nivelLectura": 3,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Look at one spot",
@@ -45187,7 +45187,7 @@
     },
     "nivelLectura": 3,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Clap after me",
@@ -45582,16 +45582,16 @@
       "es": "Asamblea de Noviembre: El Círculo de los Amigos de Lúa"
     },
     "titulo": {
-      "gl": "Tomé sobe ao Monte da Guía",
-      "es": "Tomé sube al Monte de A Guía"
+      "gl": "Tomé sobe ao monte da vila",
+      "es": "Tomé sube al Monte del pueblo"
     },
     "sinopse": {
-      "gl": "Tomé quere chegar ao miradoiro do Monte da Guía, pero a costa é moi empinada e quere darse por vencido.",
-      "es": "Tomé quiere llegar al mirador del Monte de A Guía, pero la cuesta es muy empinada y quiere rendirse."
+      "gl": "Tomé quere chegar ao miradoiro do Monte da vila, pero a costa é moi empinada e quere darse por vencido.",
+      "es": "Tomé quiere llegar al mirador del Monte del pueblo, pero la cuesta es muy empinada y quiere rendirse."
     },
     "nivelLectura": 3,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Almost at the top!",
@@ -45607,8 +45607,8 @@
         },
         "lamina": "conto_follas_1",
         "texto": {
-          "gl": "O domingo, Tomé e a súa familia van de andaina —“Hike”— ao Monte da Guía. No cumio do monte, o “Hilltop”, hai unha capela branca, a “Chapel”.",
-          "es": "El domingo, Tomé y su familia van de excursión —“Hike”— al Monte de A Guía. En la cima del monte, el “Hilltop”, hay una capilla blanca, la “Chapel”."
+          "gl": "O domingo, Tomé e a súa familia van de andaina —“Hike”— ao monte da vila. No cumio do monte, o “Hilltop”, hai unha capela branca, a “Chapel”.",
+          "es": "El domingo, Tomé y su familia van de excursión —“Hike”— al Monte del pueblo. En la cima del monte, el “Hilltop”, hay una capilla blanca, la “Chapel”."
         },
         "preguntaImaxe": {
           "gl": "Quen sae nesta lámina? Sinálao co dedo.",
@@ -45642,8 +45642,8 @@
         },
         "lamina": "conto_follas_2",
         "texto": {
-          "gl": "Tomé quere chegar ao miradoiro, o “Viewpoint”, e ver Vigo dende moi arriba, máis alto que as casas: “Higher than the houses”.",
-          "es": "Tomé quiere llegar al mirador, el “Viewpoint”, y ver Vigo desde muy arriba, más alto que las casas: “Higher than the houses”."
+          "gl": "Tomé quere chegar ao miradoiro, o “Viewpoint”, e ver Galicia dende moi arriba, máis alto que as casas: “Higher than the houses”.",
+          "es": "Tomé quiere llegar al mirador, el “Viewpoint”, y ver Galicia desde muy arriba, más alto que las casas: “Higher than the houses”."
         },
         "preguntaImaxe": {
           "gl": "Que quere Tomé? Móstrao co dedo.",
@@ -45995,7 +45995,7 @@
     },
     "nivelLectura": 3,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "An oak grows from an acorn",
@@ -46427,7 +46427,7 @@
     },
     "nivelLectura": 3,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Be gentle with bugs",
@@ -46837,7 +46837,7 @@
     },
     "nivelLectura": 3,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Can you find something red?",
@@ -47241,7 +47241,7 @@
     },
     "nivelLectura": 3,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "It melts because it's warm",
@@ -47638,8 +47638,8 @@
       "es": "Diciembre"
     },
     "centroInteres": {
-      "gl": "Os Tesouros Naturais de Decembro na Ría de Vigo",
-      "es": "Los Tesoros Naturales de Diciembre en la Ría de Vigo"
+      "gl": "Os Tesouros Naturais de Decembro na Ría da vila",
+      "es": "Los Tesoros Naturales de Diciembre en la Ría de la villa"
     },
     "titulo": {
       "gl": "Iago, Sara e a torta",
@@ -47651,7 +47651,7 @@
     },
     "nivelLectura": 3,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Which one is heavier?",
@@ -48056,12 +48056,12 @@
       "es": "Bruno y la bufanda perdida"
     },
     "sinopse": {
-      "gl": "Entre as luces de Nadal de Vigo, Bruno perde a bufanda da avoa, e só dende a noria a poden atopar.",
-      "es": "Entre las luces de Navidad de Vigo, Bruno pierde la bufanda de la abuela, y solo desde la noria la pueden encontrar."
+      "gl": "Entre as luces de Nadal da vila, Bruno perde a bufanda da avoa, e só dende a noria a poden atopar.",
+      "es": "Entre las luces de Navidad de la villa, Bruno pierde la bufanda de la abuela, y solo desde la noria la pueden encontrar."
     },
     "nivelLectura": 3,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Look at all the lights!",
@@ -48077,8 +48077,8 @@
         },
         "lamina": "conto_inverno_1",
         "texto": {
-          "gl": "En decembro, Vigo énchese coas luces da cidade, as “City lights”. Todo é festivo, “Festive”, e multicolor: “Multicoloured”.",
-          "es": "En diciembre, Vigo se llena con las luces de la ciudad, las “City lights”. Todo es festivo, “Festive”, y multicolor: “Multicoloured”."
+          "gl": "En decembro, Galicia énchese coas luces da cidade, as “City lights”. Todo é festivo, “Festive”, e multicolor: “Multicoloured”.",
+          "es": "En diciembre, Galicia se llena con las luces de la ciudad, las “City lights”. Todo es festivo, “Festive”, y multicolor: “Multicoloured”."
         },
         "preguntaImaxe": {
           "gl": "Quen sae nesta lámina? Sinálao co dedo.",
@@ -48313,8 +48313,8 @@
         },
         "lamina": "conto_inverno_2",
         "texto": {
-          "gl": "Recuperan a bufanda e ven o espectáculo de luces, o “Light show”. Na casa, Bruno e a avoa deciden decorar a fiestra —“Decorate”— con luces, coma Vigo.",
-          "es": "Recuperan la bufanda y ven el espectáculo de luces, el “Light show”. En casa, Bruno y la abuela deciden decorar la ventana —“Decorate”— con luces, como Vigo."
+          "gl": "Recuperan a bufanda e ven o espectáculo de luces, o “Light show”. Na casa, Bruno e a avoa deciden decorar a fiestra —“Decorate”— con luces, coma Galicia.",
+          "es": "Recuperan la bufanda y ven el espectáculo de luces, el “Light show”. En casa, Bruno y la abuela deciden decorar la ventana —“Decorate”— con luces, como Galicia."
         },
         "preguntaImaxe": {
           "gl": "Como se sente Bruno agora? Pon a mesma cara.",
@@ -48471,7 +48471,7 @@
     },
     "nivelLectura": 3,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "This is for you",
@@ -48875,7 +48875,7 @@
     },
     "nivelLectura": 3,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Turn left at the square",
@@ -49266,8 +49266,8 @@
       "es": "Enero"
     },
     "centroInteres": {
-      "gl": "Os Tesouros Naturais de Xaneiro na Ría de Vigo",
-      "es": "Los Tesoros Naturales de Enero en la Ría de Vigo"
+      "gl": "Os Tesouros Naturais de Xaneiro na Ría da vila",
+      "es": "Los Tesoros Naturales de Enero en la Ría de la villa"
     },
     "titulo": {
       "gl": "Tomé e a ponte de cordas",
@@ -49279,7 +49279,7 @@
     },
     "nivelLectura": 3,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Over or under?",
@@ -49683,7 +49683,7 @@
     },
     "nivelLectura": 3,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Next stop, please",
@@ -49938,8 +49938,8 @@
         },
         "lamina": "conto_cores_2",
         "texto": {
-          "gl": "De volta en Vigo, Daniela xa é unha experta: “Which bus goes to the beach?”, pregúntalle ao papá. Mañá toca o autobús de Samil!",
-          "es": "De vuelta en Vigo, Daniela ya es una experta: “Which bus goes to the beach?”, le pregunta a papá. ¡Mañana toca el autobús de Samil!"
+          "gl": "De volta na vila, Daniela xa é unha experta: “Which bus goes to the beach?”, pregúntalle ao papá. Mañá toca o autobús de a praia!",
+          "es": "De vuelta en la villa, Daniela ya es una experta: “Which bus goes to the beach?”, le pregunta a papá. ¡Mañana toca el autobús de la playa!"
         },
         "preguntaImaxe": {
           "gl": "Como se sente Daniela agora? Pon a mesma cara.",
@@ -50090,7 +50090,7 @@
     },
     "nivelLectura": 3,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "What do you want to be?",
@@ -50469,7 +50469,7 @@
     },
     "nivelLectura": 3,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Everyone, take a bow!",
@@ -50873,7 +50873,7 @@
     },
     "nivelLectura": 3,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Who are you today?",
@@ -51277,7 +51277,7 @@
     },
     "nivelLectura": 3,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Whose turn is it?",
@@ -51687,7 +51687,7 @@
     },
     "nivelLectura": 3,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Hello, I'm Sock!",
@@ -52094,7 +52094,7 @@
     },
     "nivelLectura": 3,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Is it sweet or sour?",
@@ -52491,8 +52491,8 @@
       "es": "Marzo"
     },
     "centroInteres": {
-      "gl": "Os Tesouros Naturais de Marzo na Ría de Vigo",
-      "es": "Los Tesoros Naturales de Marzo en la Ría de Vigo"
+      "gl": "Os Tesouros Naturais de Marzo na Ría da vila",
+      "es": "Los Tesoros Naturales de Marzo en la Ría de la villa"
     },
     "titulo": {
       "gl": "Lía, a máis pequena",
@@ -52504,7 +52504,7 @@
     },
     "nivelLectura": 3,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Big, bigger, biggest",
@@ -52911,7 +52911,7 @@
     },
     "nivelLectura": 3,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Can I have more peas?",
@@ -53318,7 +53318,7 @@
     },
     "nivelLectura": 3,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "How much is it?",
@@ -53714,12 +53714,12 @@
       "es": "Alba y los prismáticos"
     },
     "sinopse": {
-      "gl": "Nas Cíes, Alba quere ver unha ave mariña de preto e sae do camiño, ata que o garda do parque lle ensina a mirar dende lonxe.",
-      "es": "En las Cíes, Alba quiere ver un ave marina de cerca y se sale del camino, hasta que el guarda del parque le enseña a mirar desde lejos."
+      "gl": "Nas illas, Alba quere ver unha ave mariña de preto e sae do camiño, ata que o garda do parque lle ensina a mirar dende lonxe.",
+      "es": "En las islas, Alba quiere ver un ave marina de cerca y se sale del camino, hasta que el guarda del parque le enseña a mirar desde lejos."
     },
     "nivelLectura": 3,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Look through the binoculars",
@@ -53735,8 +53735,8 @@
         },
         "lamina": "conto_mar_1",
         "texto": {
-          "gl": "Alba e a súa familia fan unha viaxe en barco, a “Boat trip”, ás Cíes: unhas illas no mar, “Islands in the sea”, afastadas, “Remote”, e moi bonitas.",
-          "es": "Alba y su familia hacen un viaje en barco, el “Boat trip”, a las Cíes: unas islas en el mar, “Islands in the sea”, lejanas, “Remote”, y muy bonitas."
+          "gl": "Alba e a súa familia fan unha viaxe en barco, a “Boat trip”, ás illas: unhas illas no mar, “Islands in the sea”, afastadas, “Remote”, e moi bonitas.",
+          "es": "Alba y su familia hacen un viaje en barco, el “Boat trip”, a las islas: unas islas en el mar, “Islands in the sea”, lejanas, “Remote”, y muy bonitas."
         },
         "preguntaImaxe": {
           "gl": "Quen sae nesta lámina? Sinálao co dedo.",
@@ -53837,8 +53837,8 @@
         },
         "lamina": "conto_mar_1",
         "texto": {
-          "gl": "O garda explícalle que as Cíes son un espazo protexido, unha “Nature reserve”, e as dunas están protexidas: “Protected”. “We walk on the path so the plants can grow”. Alba ponse triste: así nunca verá unha gaivota de preto.",
-          "es": "El guarda le explica que las Cíes son un espacio protegido, una “Nature reserve”, y las dunas están protegidas: “Protected”. “We walk on the path so the plants can grow”. Alba se pone triste: así nunca verá una gaviota de cerca."
+          "gl": "O garda explícalle que as illas son un espazo protexido, unha “Nature reserve”, e as dunas están protexidas: “Protected”. “We walk on the path so the plants can grow”. Alba ponse triste: así nunca verá unha gaivota de preto.",
+          "es": "El guarda le explica que las islas son un espacio protegido, una “Nature reserve”, y las dunas están protegidas: “Protected”. “We walk on the path so the plants can grow”. Alba se pone triste: así nunca verá una gaviota de cerca."
         },
         "preguntaImaxe": {
           "gl": "Funcionou? Que proba agora Alba?",
@@ -54107,8 +54107,8 @@
       "es": "Abril"
     },
     "centroInteres": {
-      "gl": "Os Tesouros Naturais de Abril na Ría de Vigo",
-      "es": "Los Tesoros Naturales de Abril en la Ría de Vigo"
+      "gl": "Os Tesouros Naturais de Abril na Ría da vila",
+      "es": "Los Tesoros Naturales de Abril en la Ría de la villa"
     },
     "titulo": {
       "gl": "Negriño, o corvo mariño",
@@ -54120,7 +54120,7 @@
     },
     "nivelLectura": 3,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Dive, catch, fly!",
@@ -54524,7 +54524,7 @@
     },
     "nivelLectura": 3,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Don't touch, just look",
@@ -54934,7 +54934,7 @@
     },
     "nivelLectura": 3,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Plastic goes in the yellow bin",
@@ -55335,7 +55335,7 @@
     },
     "nivelLectura": 3,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Does it float or sink?",
@@ -55754,8 +55754,8 @@
       "es": "Mayo"
     },
     "centroInteres": {
-      "gl": "Os Tesouros Naturais de Maio na Ría de Vigo",
-      "es": "Los Tesoros Naturales de Mayo en la Ría de Vigo"
+      "gl": "Os Tesouros Naturais de Maio na Ría da vila",
+      "es": "Los Tesoros Naturales de Mayo en la Ría de la villa"
     },
     "titulo": {
       "gl": "Sabela e a carreira de barcos",
@@ -55767,7 +55767,7 @@
     },
     "nivelLectura": 3,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Ready, set, blow!",
@@ -56199,7 +56199,7 @@
     },
     "nivelLectura": 3,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Up as steam, down as rain",
@@ -56609,7 +56609,7 @@
     },
     "nivelLectura": 3,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "The river runs into the sea",
@@ -56988,7 +56988,7 @@
     },
     "nivelLectura": 3,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Pull, pull, pull!",
@@ -57354,8 +57354,8 @@
       "es": "Junio"
     },
     "centroInteres": {
-      "gl": "Os Tesouros Naturais de Xuño na Ría de Vigo",
-      "es": "Los Tesoros Naturales de Junio en la Ría de Vigo"
+      "gl": "Os Tesouros Naturais de Xuño na Ría da vila",
+      "es": "Los Tesoros Naturales de Junio en la Ría de la villa"
     },
     "titulo": {
       "gl": "Martiño lembra o curso",
@@ -57367,7 +57367,7 @@
     },
     "nivelLectura": 3,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "We did it!",
@@ -57758,8 +57758,8 @@
       "es": "Junio"
     },
     "centroInteres": {
-      "gl": "O Gran Salto de A Ría de Vigo e o Mar: Movemento e Xogo TPR",
-      "es": "El Gran Salto de La Ría de Vigo y el Mar: Movimiento y Juego TPR"
+      "gl": "O Gran Salto de A Ría e o Mar: Movemento e Xogo TPR",
+      "es": "El Gran Salto de La Ría y el Mar: Movimiento y Juego TPR"
     },
     "titulo": {
       "gl": "Nela e o diploma",
@@ -57771,7 +57771,7 @@
     },
     "nivelLectura": 3,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Hooray for us!",
@@ -58165,8 +58165,8 @@
       "es": "Junio"
     },
     "centroInteres": {
-      "gl": "Lúa e a Cuncha Mágica de Samil",
-      "es": "Lúa y la Concha Mágica de Samil"
+      "gl": "Lúa e a Cuncha Mágica de a praia",
+      "es": "Lúa y la Concha Mágica de la playa"
     },
     "titulo": {
       "gl": "Leo e o disco na árbore",
@@ -58178,7 +58178,7 @@
     },
     "nivelLectura": 3,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Catch the frisbee!",
@@ -58579,7 +58579,7 @@
     },
     "nivelLectura": 4,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Let's vote!",
@@ -58970,8 +58970,8 @@
       "es": "Septiembre"
     },
     "centroInteres": {
-      "gl": "Os Tesouros Naturais de Setembro na Ría de Vigo",
-      "es": "Los Tesoros Naturales de Septiembre en la Ría de Vigo"
+      "gl": "Os Tesouros Naturais de Setembro na Ría da vila",
+      "es": "Los Tesoros Naturales de Septiembre en la Ría de la villa"
     },
     "titulo": {
       "gl": "Iago, xefe de equipo",
@@ -58983,7 +58983,7 @@
     },
     "nivelLectura": 4,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "You can do it!",
@@ -59393,7 +59393,7 @@
     },
     "nivelLectura": 4,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "We solved it together!",
@@ -59409,8 +59409,8 @@
         },
         "lamina": "conto_benvida_1",
         "texto": {
-          "gl": "A clase de Noa está a montar un crebacabezas xigante da ría de Vigo. Só falta unha peza, a “Puzzle piece” do faro… pero non aparece! Hai un problema, un “Problem”.",
-          "es": "La clase de Noa está montando un puzle gigante de la ría de Vigo. Solo falta una pieza, la “Puzzle piece” del faro… ¡pero no aparece! Hay un problema, un “Problem”."
+          "gl": "A clase de Noa está a montar un crebacabezas xigante da ría. Só falta unha peza, a “Puzzle piece” do faro… pero non aparece! Hai un problema, un “Problem”.",
+          "es": "La clase de Noa está montando un puzle gigante de la ría. Solo falta una pieza, la “Puzzle piece” del faro… ¡pero no aparece! Hay un problema, un “Problem”."
         },
         "preguntaImaxe": {
           "gl": "Quen sae nesta lámina? Sinálao co dedo.",
@@ -59803,7 +59803,7 @@
     },
     "nivelLectura": 4,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "It's a deal!",
@@ -60204,7 +60204,7 @@
     },
     "nivelLectura": 4,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "What's in the bag?",
@@ -60598,8 +60598,8 @@
       "es": "Octubre"
     },
     "centroInteres": {
-      "gl": "Os Tesouros Naturais de Outubro na Ría de Vigo",
-      "es": "Los Tesoros Naturales de Octubre en la Ría de Vigo"
+      "gl": "Os Tesouros Naturais de Outubro na Ría da vila",
+      "es": "Los Tesoros Naturales de Octubre en la Ría de la villa"
     },
     "titulo": {
       "gl": "Olalla escoita o corazón",
@@ -60611,7 +60611,7 @@
     },
     "nivelLectura": 4,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Boom-boom, boom-boom",
@@ -61021,7 +61021,7 @@
     },
     "nivelLectura": 4,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Stand like a tree",
@@ -61431,7 +61431,7 @@
     },
     "nivelLectura": 4,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Rise and shine!",
@@ -61832,7 +61832,7 @@
     },
     "nivelLectura": 4,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Which side goes down?",
@@ -62242,7 +62242,7 @@
     },
     "nivelLectura": 4,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Two, four, six, eight",
@@ -62649,7 +62649,7 @@
     },
     "nivelLectura": 4,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Let's find out!",
@@ -63059,7 +63059,7 @@
     },
     "nivelLectura": 4,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Harvest time!",
@@ -63460,7 +63460,7 @@
     },
     "nivelLectura": 4,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Good morning, Sun!",
@@ -63857,8 +63857,8 @@
       "es": "Diciembre"
     },
     "centroInteres": {
-      "gl": "Os Tesouros Naturais de Decembro na Ría de Vigo",
-      "es": "Los Tesoros Naturales de Diciembre en la Ría de Vigo"
+      "gl": "Os Tesouros Naturais de Decembro na Ría da vila",
+      "es": "Los Tesoros Naturales de Diciembre en la Ría de la villa"
     },
     "titulo": {
       "gl": "Cibrán quere ir ás estrelas",
@@ -63870,7 +63870,7 @@
     },
     "nivelLectura": 4,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Ten, nine, eight... blast off!",
@@ -64277,7 +64277,7 @@
     },
     "nivelLectura": 4,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "One more sleep!",
@@ -64684,7 +64684,7 @@
     },
     "nivelLectura": 4,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Happy holidays!",
@@ -65080,12 +65080,12 @@
       "es": "Ánxela y la historia de la Oliveira"
     },
     "sinopse": {
-      "gl": "Ánxela visita a Oliveira, o símbolo de Vigo, pero a súa historia é tan longa que a mestura toda, ata que aprende a contala en orde.",
-      "es": "Ánxela visita la Oliveira, el símbolo de Vigo, pero su historia es tan larga que la mezcla toda, hasta que aprende a contarla en orden."
+      "gl": "Ánxela visita a Oliveira, o símbolo da vila, pero a súa historia é tan longa que a mestura toda, ata que aprende a contala en orde.",
+      "es": "Ánxela visita la Oliveira, el símbolo de la villa, pero su historia es tan larga que la mezcla toda, hasta que aprende a contarla en orden."
     },
     "nivelLectura": 4,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "First, then, finally",
@@ -65101,8 +65101,8 @@
         },
         "lamina": "conto_follas_1",
         "texto": {
-          "gl": "A clase de Ánxela vai visitar —“Visit”— o Casco Vello de Vigo, o “Old town”. Hai muros de pedra por todas partes —“Stone wall”—, e ata o chan das rúas é de pedra: “Stony”.",
-          "es": "La clase de Ánxela va a visitar —“Visit”— el casco viejo de Vigo, el “Old town”. Hay muros de piedra por todas partes —“Stone wall”—, y hasta el suelo de las calles es de piedra: “Stony”."
+          "gl": "A clase de Ánxela vai visitar —“Visit”— o Casco Vello da vila, o “Old town”. Hai muros de pedra por todas partes —“Stone wall”—, e ata o chan das rúas é de pedra: “Stony”.",
+          "es": "La clase de Ánxela va a visitar —“Visit”— el casco viejo de la villa, el “Old town”. Hay muros de piedra por todas partes —“Stone wall”—, y hasta el suelo de las calles es de piedra: “Stony”."
         },
         "preguntaImaxe": {
           "gl": "Quen sae nesta lámina? Sinálao co dedo.",
@@ -65139,8 +65139,8 @@
         },
         "lamina": "conto_follas_2",
         "texto": {
-          "gl": "Ánxela quere ver a árbore máis famosa da cidade, “Famous”: a Oliveira, o “Olive tree”. É o símbolo de Vigo, o “Symbol”, e por iso a Vigo chámanlle Cidade Olívica.",
-          "es": "Ánxela quiere ver el árbol más famoso de la ciudad, “Famous”: la Oliveira, el “Olive tree”. Es el símbolo de Vigo, el “Symbol”, y por eso a Vigo la llaman Ciudad Olívica."
+          "gl": "Ánxela quere ver a árbore máis famosa da cidade, “Famous”: a Oliveira, o “Olive tree”. É o símbolo da vila, o “Symbol”, e por iso a Galicia chámanlle Cidade Olívica.",
+          "es": "Ánxela quiere ver el árbol más famoso de la ciudad, “Famous”: la Oliveira, el “Olive tree”. Es el símbolo de la villa, el “Symbol”, y por eso a Galicia la llaman Ciudad Olívica."
         },
         "preguntaImaxe": {
           "gl": "Que quere Ánxela? Móstrao co dedo.",
@@ -65402,8 +65402,8 @@
           "es": "Comprensión literal"
         },
         "enunciado": {
-          "gl": "Que árbore é o símbolo de Vigo?",
-          "es": "¿Qué árbol es el símbolo de Vigo?"
+          "gl": "Que árbore é o símbolo da vila?",
+          "es": "¿Qué árbol es el símbolo de la villa?"
         },
         "obxectivo": {
           "gl": "Lembrar quen e que pasou na historia.",
@@ -65482,20 +65482,20 @@
       "es": "Enero"
     },
     "centroInteres": {
-      "gl": "Os Tesouros Naturais de Xaneiro na Ría de Vigo",
-      "es": "Los Tesoros Naturales de Enero en la Ría de Vigo"
+      "gl": "Os Tesouros Naturais de Xaneiro na Ría da vila",
+      "es": "Los Tesoros Naturales de Enero en la Ría de la villa"
     },
     "titulo": {
-      "gl": "Paulo e o Vigo de antes",
-      "es": "Paulo y el Vigo de antes"
+      "gl": "Paulo e o Galicia de antes",
+      "es": "Paulo y el Galicia de antes"
     },
     "sinopse": {
-      "gl": "Dende o monte do Castro, Paulo non pode crer que Vigo fose unha aldea pequena, ata que o avó lle axuda a imaxinala.",
-      "es": "Desde el monte del Castro, Paulo no puede creer que Vigo fuera una aldea pequeña, hasta que el abuelo le ayuda a imaginarla."
+      "gl": "Dende o monte do monte, Paulo non pode crer que Galicia fose unha aldea pequena, ata que o avó lle axuda a imaxinala.",
+      "es": "Desde el monte del monte, Paulo no puede creer que Galicia fuera una aldea pequeña, hasta que el abuelo le ayuda a imaginarla."
     },
     "nivelLectura": 4,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Imagine the old ships",
@@ -65511,8 +65511,8 @@
         },
         "lamina": "conto_mar_1",
         "texto": {
-          "gl": "Paulo e o avó soben ao monte do Castro. Dende arriba ven toda a cidade con vida, a “Busy city”: coches, grúas do porto e edificios modernos, “Modern”, moi altos.",
-          "es": "Paulo y el abuelo suben al monte del Castro. Desde arriba ven toda la ciudad con vida, la “Busy city”: coches, grúas del puerto y edificios modernos, “Modern”, muy altos."
+          "gl": "Paulo e o avó soben ao monte do monte. Dende arriba ven toda a cidade con vida, a “Busy city”: coches, grúas do porto e edificios modernos, “Modern”, moi altos.",
+          "es": "Paulo y el abuelo suben al monte del monte. Desde arriba ven toda la ciudad con vida, la “Busy city”: coches, grúas del puerto y edificios modernos, “Modern”, muy altos."
         },
         "preguntaImaxe": {
           "gl": "Quen sae nesta lámina? Sinálao co dedo.",
@@ -65543,8 +65543,8 @@
         },
         "lamina": "conto_mar_2",
         "texto": {
-          "gl": "Paulo pregunta: “Was Vigo always big?”. O avó sorrí e sinala os muros onde están: é unha fortaleza, a “Fortress”, o castelo do Castro, e é moi antiga.",
-          "es": "Paulo pregunta: “Was Vigo always big?”. El abuelo sonríe y señala los muros donde están: es una fortaleza, la “Fortress”, el castillo del Castro, y es muy antigua."
+          "gl": "Paulo pregunta: “Was the town always big?”. O avó sorrí e sinala os muros onde están: é unha fortaleza, a “Fortress”, o castelo do monte, e é moi antiga.",
+          "es": "Paulo pregunta: “Was the town always big?”. El abuelo sonríe y señala los muros donde están: es una fortaleza, la “Fortress”, el castillo del monte, y es muy antigua."
         },
         "preguntaImaxe": {
           "gl": "Que quere Paulo? Móstrao co dedo.",
@@ -65555,15 +65555,15 @@
           "es": "Pon voz al deseo del personaje: es lo que mueve la historia."
         },
         "vocabularioClave": [
-          "Vigo sempre foi grande?",
+          "A vila sempre foi grande?",
           "Fortaleza"
         ],
         "vocabularioClaveEs": [
-          "¿Vigo siempre fue grande?",
+          "¿El pueblo siempre fue grande?",
           "Fortaleza"
         ],
         "palabras": [
-          "Was Vigo always big?",
+          "Was the town always big?",
           "Fortress"
         ]
       },
@@ -65575,8 +65575,8 @@
         },
         "lamina": "conto_mar_3",
         "texto": {
-          "gl": "Hai moito tempo, conta o avó, Vigo era unha aldea pequena, “Tiny village”, unha aldea mariñeira, “Fishing village”: a xente vivía da pesca, “Fish for a living”. Pero Paulo non o cre: con tantos edificios!",
-          "es": "Hace mucho tiempo, cuenta el abuelo, Vigo era una aldea pequeña, “Tiny village”, una aldea marinera, “Fishing village”: la gente vivía de la pesca, “Fish for a living”. Pero Paulo no se lo cree: ¡con tantos edificios!"
+          "gl": "Hai moito tempo, conta o avó, Galicia era unha aldea pequena, “Tiny village”, unha aldea mariñeira, “Fishing village”: a xente vivía da pesca, “Fish for a living”. Pero Paulo non o cre: con tantos edificios!",
+          "es": "Hace mucho tiempo, cuenta el abuelo, Galicia era una aldea pequeña, “Tiny village”, una aldea marinera, “Fishing village”: la gente vivía de la pesca, “Fish for a living”. Pero Paulo no se lo cree: ¡con tantos edificios!"
         },
         "preguntaImaxe": {
           "gl": "Que pasa agora? Como está Paulo?",
@@ -65639,8 +65639,8 @@
         },
         "lamina": "conto_mar_2",
         "texto": {
-          "gl": "O avó lévao ata un canón vello, o “Cannon”, que mira á ría. Explícalle que, antes, Vigo era unha vila antiga, “Ancient town”, cunha muralla arredor, a “Castle wall”, para defenderse —“Defend”— dos barcos inimigos.",
-          "es": "El abuelo lo lleva hasta un cañón viejo, el “Cannon”, que mira a la ría. Le explica que, antes, Vigo era una villa antigua, “Ancient town”, con una muralla alrededor, la “Castle wall”, para defenderse —“Defend”— de los barcos enemigos."
+          "gl": "O avó lévao ata un canón vello, o “Cannon”, que mira á ría. Explícalle que, antes, Galicia era unha vila antiga, “Ancient town”, cunha muralla arredor, a “Castle wall”, para defenderse —“Defend”— dos barcos inimigos.",
+          "es": "El abuelo lo lleva hasta un cañón viejo, el “Cannon”, que mira a la ría. Le explica que, antes, Galicia era una villa antigua, “Ancient town”, con una muralla alrededor, la “Castle wall”, para defenderse —“Defend”— de los barcos enemigos."
         },
         "preguntaImaxe": {
           "gl": "Que idea aparece agora? Quen a ten?",
@@ -65750,8 +65750,8 @@
         },
         "lamina": "conto_mar_2",
         "texto": {
-          "gl": "Paulo abre os ollos e mira a cidade enteira. Agora enténdeo: “Vigo was small, but now it is big”. E dende o Castro aínda se ven barcos cruzando a ría, coma antes.",
-          "es": "Paulo abre los ojos y mira la ciudad entera. Ahora lo entiende: “Vigo was small, but now it is big”. Y desde el Castro todavía se ven barcos cruzando la ría, como antes."
+          "gl": "Paulo abre os ollos e mira a cidade enteira. Agora enténdeo: “The town was small, but now it is big”. E dende o monte aínda se ven barcos cruzando a ría, coma antes.",
+          "es": "Paulo abre los ojos y mira la ciudad entera. Ahora lo entiende: “The town was small, but now it is big”. Y desde el monte todavía se ven barcos cruzando la ría, como antes."
         },
         "preguntaImaxe": {
           "gl": "Como se sente Paulo agora? Pon a mesma cara.",
@@ -65762,13 +65762,13 @@
           "es": "Cierra el cuento y espera 5 segundos: muchas veces el niño o la niña habla ahora."
         },
         "vocabularioClave": [
-          "Vigo era pequeno, pero agora é grande"
+          "A vila era pequena, pero agora é grande"
         ],
         "vocabularioClaveEs": [
-          "Vigo era pequeño, pero ahora es grande"
+          "El pueblo era pequeño, pero ahora es grande"
         ],
         "palabras": [
-          "Vigo was small, but now it is big"
+          "The town was small, but now it is big"
         ]
       },
       {
@@ -65814,8 +65814,8 @@
           "es": "Recordar quién y qué pasó en la historia."
         },
         "respostaModelo": {
-          "gl": "Ao monte do Castro, á fortaleza.",
-          "es": "Al monte del Castro, a la fortaleza."
+          "gl": "Ao monte do monte, á fortaleza.",
+          "es": "Al monte del monte, a la fortaleza."
         },
         "pistaEducadora": {
           "gl": "Agarda cinco segundos. Se non responde, sinala a lámina e di ti a resposta.",
@@ -65830,8 +65830,8 @@
           "es": "Inferencia y emociones"
         },
         "enunciado": {
-          "gl": "Para que tiña Vigo unha muralla?",
-          "es": "¿Para qué tenía Vigo una muralla?"
+          "gl": "Para que tiña Galicia unha muralla?",
+          "es": "¿Para qué tenía Galicia una muralla?"
         },
         "obxectivo": {
           "gl": "Explicar por que pasou algo e como se sentía a personaxe.",
@@ -65899,7 +65899,7 @@
     },
     "nivelLectura": 4,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "I'm five and a half!",
@@ -66306,7 +66306,7 @@
     },
     "nivelLectura": 4,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "And then what happened?",
@@ -66491,8 +66491,8 @@
         },
         "lamina": "conto_mar_3",
         "texto": {
-          "gl": "O lugar da historia, o “Setting”, é a praia de Samil. E chega unha sorpresa na historia, un “Plot twist”: unha tormenta! “First the hero was lost, then she found her way home”: Carola perdeuse e despois atopou o camiño de volta seguindo a luz dun faro.",
-          "es": "El lugar de la historia, el “Setting”, es la playa de Samil. Y llega un giro en la historia, un “Plot twist”: ¡una tormenta! “First the hero was lost, then she found her way home”: Carola se perdió y después encontró el camino de vuelta siguiendo la luz de un faro."
+          "gl": "O lugar da historia, o “Setting”, é a a praia. E chega unha sorpresa na historia, un “Plot twist”: unha tormenta! “First the hero was lost, then she found her way home”: Carola perdeuse e despois atopou o camiño de volta seguindo a luz dun faro.",
+          "es": "El lugar de la historia, el “Setting”, es la la playa. Y llega un giro en la historia, un “Plot twist”: ¡una tormenta! “First the hero was lost, then she found her way home”: Carola se perdió y después encontró el camino de vuelta siguiendo la luz de un faro."
         },
         "preguntaImaxe": {
           "gl": "Que fai agora Lara? Faino ti co corpo.",
@@ -66707,7 +66707,7 @@
     },
     "nivelLectura": 4,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Cat and hat rhyme!",
@@ -67117,7 +67117,7 @@
     },
     "nivelLectura": 4,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Action!",
@@ -67521,7 +67521,7 @@
     },
     "nivelLectura": 4,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Everybody, sing the chorus!",
@@ -67931,7 +67931,7 @@
     },
     "nivelLectura": 4,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Little pig, let me in!",
@@ -68332,7 +68332,7 @@
     },
     "nivelLectura": 4,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "What comes next?",
@@ -68723,8 +68723,8 @@
       "es": "Marzo"
     },
     "centroInteres": {
-      "gl": "Os Tesouros Naturais de Marzo na Ría de Vigo",
-      "es": "Los Tesoros Naturales de Marzo en la Ría de Vigo"
+      "gl": "Os Tesouros Naturais de Marzo na Ría da vila",
+      "es": "Los Tesoros Naturales de Marzo en la Ría de la villa"
     },
     "titulo": {
       "gl": "Gael e a bolboreta torta",
@@ -68736,7 +68736,7 @@
     },
     "nivelLectura": 4,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Copy my movements",
@@ -69135,12 +69135,12 @@
       "es": "Candela y los números del parque"
     },
     "sinopse": {
-      "gl": "Candela busca números no parque de Castrelos, pero non ve ningún escrito, ata que descobre os que fai a propia natureza.",
-      "es": "Candela busca números en el parque de Castrelos, pero no ve ninguno escrito, hasta que descubre los que hace la propia naturaleza."
+      "gl": "Candela busca números no parque, pero non ve ningún escrito, ata que descobre os que fai a propia natureza.",
+      "es": "Candela busca números en el parque, pero no ve ninguno escrito, hasta que descubre los que hace la propia naturaleza."
     },
     "nivelLectura": 4,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Look, a spiral!",
@@ -69156,8 +69156,8 @@
         },
         "lamina": "conto_primavera_1",
         "texto": {
-          "gl": "A clase de Candela vai ao parque de Castrelos para buscar patróns: “Look for patterns”. A mestra di que o mundo natural, “Natural”, está cheo de números escondidos.",
-          "es": "La clase de Candela va al parque de Castrelos para buscar patrones: “Look for patterns”. La maestra dice que el mundo natural, “Natural”, está lleno de números escondidos."
+          "gl": "A clase de Candela vai ao parque para buscar patróns: “Look for patterns”. A mestra di que o mundo natural, “Natural”, está cheo de números escondidos.",
+          "es": "La clase de Candela va al parque para buscar patrones: “Look for patterns”. La maestra dice que el mundo natural, “Natural”, está lleno de números escondidos."
         },
         "preguntaImaxe": {
           "gl": "Quen sae nesta lámina? Sinálao co dedo.",
@@ -69545,12 +69545,12 @@
       "es": "Roque y el mar verde"
     },
     "sinopse": {
-      "gl": "Roque quere pintar o mar de Vigo nun mosaico, pero na paleta non hai verde ata que aprende a mesturar cores.",
-      "es": "Roque quiere pintar el mar de Vigo en un mosaico, pero en la paleta no hay verde hasta que aprende a mezclar colores."
+      "gl": "Roque quere pintar o mar da ría nun mosaico, pero na paleta non hai verde ata que aprende a mesturar cores.",
+      "es": "Roque quiere pintar el mar de la ría en un mosaico, pero en la paleta no hay verde hasta que aprende a mezclar colores."
     },
     "nivelLectura": 4,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Blue and yellow make green",
@@ -69601,8 +69601,8 @@
         },
         "lamina": "conto_cores_2",
         "texto": {
-          "gl": "Roque quere crear unha imaxe —“Create a picture”— do mar de Vigo, cun verde moi vivo, “Vivid”, coma o da auga nas praias.",
-          "es": "Roque quiere crear una imagen —“Create a picture”— del mar de Vigo, con un verde muy vivo, “Vivid”, como el del agua en las playas."
+          "gl": "Roque quere crear unha imaxe —“Create a picture”— do mar da ría, cun verde moi vivo, “Vivid”, coma o da auga nas praias.",
+          "es": "Roque quiere crear una imagen —“Create a picture”— del mar de la ría, con un verde muy vivo, “Vivid”, como el del agua en las playas."
         },
         "preguntaImaxe": {
           "gl": "Que quere Roque? Móstrao co dedo.",
@@ -69802,8 +69802,8 @@
         },
         "lamina": "conto_cores_2",
         "texto": {
-          "gl": "Roque xira a peza —“Rotate a piece”— e… encaixa! Enche o oco —“Fill a space”—, e o mar verde de Vigo queda completo na parede do patio.",
-          "es": "Roque gira la pieza —“Rotate a piece”— y… ¡encaja! Llena el hueco —“Fill a space”—, y el mar verde de Vigo queda completo en la pared del patio."
+          "gl": "Roque xira a peza —“Rotate a piece”— e… encaixa! Enche o oco —“Fill a space”—, e o mar verde da vila queda completo na parede do patio.",
+          "es": "Roque gira la pieza —“Rotate a piece”— y… ¡encaja! Llena el hueco —“Fill a space”—, y el mar verde de la villa queda completo en la pared del patio."
         },
         "preguntaImaxe": {
           "gl": "Como se sente Roque agora? Pon a mesma cara.",
@@ -69951,7 +69951,7 @@
     },
     "nivelLectura": 4,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Let's clean the beach!",
@@ -70345,8 +70345,8 @@
       "es": "Abril"
     },
     "centroInteres": {
-      "gl": "Os Tesouros Naturais de Abril na Ría de Vigo",
-      "es": "Los Tesoros Naturales de Abril en la Ría de Vigo"
+      "gl": "Os Tesouros Naturais de Abril na Ría da vila",
+      "es": "Los Tesoros Naturales de Abril en la Ría de la villa"
     },
     "titulo": {
       "gl": "Xián e as fotos do fondo da ría",
@@ -70358,7 +70358,7 @@
     },
     "nivelLectura": 4,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Take only photos",
@@ -70374,8 +70374,8 @@
         },
         "lamina": "conto_mar_1",
         "texto": {
-          "gl": "A tía de Xián é mergulladora, unha “Diver”. Mergúllase fondo —“Dive deep”— na ría de Vigo e leva unha cámara submarina, a “Underwater camera”.",
-          "es": "La tía de Xián es buceadora, una “Diver”. Bucea hondo —“Dive deep”— en la ría de Vigo y lleva una cámara submarina, la “Underwater camera”."
+          "gl": "A tía de Xián é mergulladora, unha “Diver”. Mergúllase fondo —“Dive deep”— na ría e leva unha cámara submarina, a “Underwater camera”.",
+          "es": "La tía de Xián es buceadora, una “Diver”. Bucea hondo —“Dive deep”— en la ría y lleva una cámara submarina, la “Underwater camera”."
         },
         "preguntaImaxe": {
           "gl": "Quen sae nesta lámina? Sinálao co dedo.",
@@ -70765,7 +70765,7 @@
     },
     "nivelLectura": 4,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Every little thing helps",
@@ -70813,8 +70813,8 @@
         },
         "lamina": "conto_primavera_2",
         "texto": {
-          "gl": "Mateo quere facer algo enorme: un muíño eólico, unha “Wind turbine”, coma os do monte, ou unha placa solar, un “Solar panel”, para o tellado da escola. Enerxía renovable, “Renewable”, para todo Vigo!",
-          "es": "Mateo quiere hacer algo enorme: un aerogenerador, una “Wind turbine”, como los del monte, o una placa solar, un “Solar panel”, para el tejado de la escuela. ¡Energía renovable, “Renewable”, para todo Vigo!"
+          "gl": "Mateo quere facer algo enorme: un muíño eólico, unha “Wind turbine”, coma os do monte, ou unha placa solar, un “Solar panel”, para o tellado da escola. Enerxía renovable, “Renewable”, para todo Galicia!",
+          "es": "Mateo quiere hacer algo enorme: un aerogenerador, una “Wind turbine”, como los del monte, o una placa solar, un “Solar panel”, para el tejado de la escuela. ¡Energía renovable, “Renewable”, para todo Galicia!"
         },
         "preguntaImaxe": {
           "gl": "Que quere Mateo? Móstrao co dedo.",
@@ -71166,16 +71166,16 @@
       "es": "La Calma de Abril: La Respiración del Oso y el Hogar"
     },
     "titulo": {
-      "gl": "Noela e os golfiños das Cíes",
-      "es": "Noela y los delfines de las Cíes"
+      "gl": "Noela e os golfiños da ría",
+      "es": "Noela y los delfines de la ría"
     },
     "sinopse": {
-      "gl": "No barco ás Cíes, Noela quere ver os golfiños de preto, pero aprende que se ven mellor gardando distancia e en silencio.",
-      "es": "En el barco a las Cíes, Noela quiere ver los delfines de cerca, pero aprende que se ven mejor guardando distancia y en silencio."
+      "gl": "No barco ás illas, Noela quere ver os golfiños de preto, pero aprende que se ven mellor gardando distancia e en silencio.",
+      "es": "En el barco a las islas, Noela quiere ver los delfines de cerca, pero aprende que se ven mejor guardando distancia y en silencio."
     },
     "nivelLectura": 4,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Look, dolphins!",
@@ -71191,8 +71191,8 @@
         },
         "lamina": "conto_mar_1",
         "texto": {
-          "gl": "Noela vai coa familia no barco ás illas Cíes. A tía di que ás veces se ven golfiños, e a Noela encántalle a observación de golfiños, o “Dolphin watching”: son animais moi intelixentes, “Intelligent”.",
-          "es": "Noela va con su familia en el barco a las islas Cíes. Su tía dice que a veces se ven delfines, y a Noela le encanta la observación de delfines, el “Dolphin watching”: son animales muy inteligentes, “Intelligent”."
+          "gl": "Noela vai coa familia no barco ás illas da ría. A tía di que ás veces se ven golfiños, e a Noela encántalle a observación de golfiños, o “Dolphin watching”: son animais moi intelixentes, “Intelligent”.",
+          "es": "Noela va con su familia en el barco a las islas de la ría. Su tía dice que a veces se ven delfines, y a Noela le encanta la observación de delfines, el “Dolphin watching”: son animales muy inteligentes, “Intelligent”."
         },
         "preguntaImaxe": {
           "gl": "Quen sae nesta lámina? Sinálao co dedo.",
@@ -71491,8 +71491,8 @@
           "es": "Recordar quién y qué pasó en la historia."
         },
         "respostaModelo": {
-          "gl": "Ás illas Cíes.",
-          "es": "A las islas Cíes."
+          "gl": "Ás illas da ría.",
+          "es": "A las islas de la ría."
         },
         "pistaEducadora": {
           "gl": "Agarda cinco segundos. Se non responde, sinala a lámina e di ti a resposta.",
@@ -71576,7 +71576,7 @@
     },
     "nivelLectura": 4,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Let's breathe together",
@@ -71970,8 +71970,8 @@
       "es": "Mayo"
     },
     "centroInteres": {
-      "gl": "Os Tesouros Naturais de Maio na Ría de Vigo",
-      "es": "Los Tesoros Naturales de Mayo en la Ría de Vigo"
+      "gl": "Os Tesouros Naturais de Maio na Ría da vila",
+      "es": "Los Tesoros Naturales de Mayo en la Ría de la villa"
     },
     "titulo": {
       "gl": "Raio ou Pingo?",
@@ -71983,7 +71983,7 @@
     },
     "nivelLectura": 4,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Let's find a fair solution",
@@ -72415,7 +72415,7 @@
     },
     "nivelLectura": 4,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Do you want to play with us?",
@@ -72825,7 +72825,7 @@
     },
     "nivelLectura": 4,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Thank you for helping me",
@@ -73226,7 +73226,7 @@
     },
     "nivelLectura": 4,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Do you remember our first day?",
@@ -73617,8 +73617,8 @@
       "es": "Junio"
     },
     "centroInteres": {
-      "gl": "Os Tesouros Naturais de Xuño na Ría de Vigo",
-      "es": "Los Tesoros Naturales de Junio en la Ría de Vigo"
+      "gl": "Os Tesouros Naturais de Xuño na Ría da vila",
+      "es": "Los Tesoros Naturales de Junio en la Ría de la villa"
     },
     "titulo": {
       "gl": "Adrián visita a escola grande",
@@ -73630,7 +73630,7 @@
     },
     "nivelLectura": 4,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "I'm ready for Primary!",
@@ -74021,8 +74021,8 @@
       "es": "Junio"
     },
     "centroInteres": {
-      "gl": "O Gran Salto de A Ría de Vigo e o Mar: Movemento e Xogo TPR",
-      "es": "El Gran Salto de La Ría de Vigo y el Mar: Movimiento y Juego TPR"
+      "gl": "O Gran Salto de A Ría e o Mar: Movemento e Xogo TPR",
+      "es": "El Gran Salto de La Ría y el Mar: Movimiento y Juego TPR"
     },
     "titulo": {
       "gl": "O discurso de Olaia",
@@ -74034,7 +74034,7 @@
     },
     "nivelLectura": 4,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "Hip, hip, hooray!",
@@ -74428,8 +74428,8 @@
       "es": "Junio"
     },
     "centroInteres": {
-      "gl": "Lúa e a Cuncha Mágica de Samil",
-      "es": "Lúa y la Concha Mágica de Samil"
+      "gl": "Lúa e a Cuncha Mágica de a praia",
+      "es": "Lúa y la Concha Mágica de la playa"
     },
     "titulo": {
       "gl": "Antía e as postais do verán",
@@ -74441,7 +74441,7 @@
     },
     "nivelLectura": 4,
     "licenza": "Creative Commons CC BY 4.0",
-    "orixeOpenSource": "Patrimonio Vigo Infantil",
+    "orixeOpenSource": "Patrimonio Galicia Infantil",
     "tempoEsperaSegundos": 5,
     "tprOral": {
       "fraseEn": "See you in Primary!",
@@ -74457,8 +74457,8 @@
         },
         "lamina": "conto_mar_1",
         "texto": {
-          "gl": "Chegan as vacacións de verán, as “Summer holidays”! O último día, a mestra pregunta: “Where will you go this summer?”. Brais vai de vacacións —“Go on holiday”— a Asturias, e Antía queda en Vigo.",
-          "es": "¡Llegan las vacaciones de verano, las “Summer holidays”! El último día, la maestra pregunta: “Where will you go this summer?”. Brais se va de vacaciones —“Go on holiday”— a Asturias, y Antía se queda en Vigo."
+          "gl": "Chegan as vacacións de verán, as “Summer holidays”! O último día, a mestra pregunta: “Where will you go this summer?”. Brais vai de vacacións —“Go on holiday”— a Asturias, e Antía queda na vila.",
+          "es": "¡Llegan las vacaciones de verano, las “Summer holidays”! El último día, la maestra pregunta: “Where will you go this summer?”. Brais se va de vacaciones —“Go on holiday”— a Asturias, y Antía se queda en la villa."
         },
         "preguntaImaxe": {
           "gl": "Quen sae nesta lámina? Sinálao co dedo.",

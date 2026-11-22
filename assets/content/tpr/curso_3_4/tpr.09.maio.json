@@ -686,7 +686,8 @@
           "tprAction": {
             "gl": "Remexer con forza coma nunha papa mesta",
             "es": "Remover con fuerza como en una papilla espesa"
-          }
+          },
+          "lamina": "pal_thick"
         },
         {
           "id": "3_4.maio.s3.favourite",

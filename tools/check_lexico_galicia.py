@@ -30,6 +30,18 @@ PALABRAS_GALICIA = re.compile(
     re.IGNORECASE,
 )
 
+# P10.2: «Edición Vigo» e o destino municipal vigués están prohibidos no texto
+# visible; consérvase unicamente a procedencia («Zona Franca de Vigo») e os IDs
+# internos existentes (`vigo_natureza`).
+VIGO_DESTINO = re.compile(
+    r"edici[oó]n\s+vigo"
+    r"|concello\s+de\s+vigo"
+    r"|ayuntamiento\s+de\s+vigo"
+    r"|escolas\s+infant[ií]s\s+municipais\s+(?:de\s+vigo|do\s+concello)"
+    r"|escuelas\s+infantiles\s+municipales\s+(?:de\s+vigo|del\s+(?:concello|ayuntamiento))",
+    re.IGNORECASE,
+)
+
 # Claves JSON internas que no son texto visible.
 CLAVES_JSON_EXENTAS: frozenset[str] = frozenset({
     "paraCriaturas",
@@ -61,17 +73,22 @@ _DART_STRING = re.compile(
 _DART_INTERP = re.compile(r"\$\{[^}]*\}|\$[A-Za-z_][A-Za-z0-9_]*")
 
 
+def _scan_text(text: str) -> re.Match[str] | None:
+    return PALABRAS_GALICIA.search(text) or VIGO_DESTINO.search(text)
+
+
 def _check_json_obj(obj: object, rel: str, path: str, out: list[str]) -> None:
     if isinstance(obj, dict):
         for k, v in obj.items():
-            if k not in CLAVES_JSON_EXENTAS and PALABRAS_GALICIA.search(k):
-                out.append(f"  {rel} ({path}.<key:{k}>): {k}")
+            if k not in CLAVES_JSON_EXENTAS and _scan_text(k):
+                m = _scan_text(k)
+                out.append(f"  {rel} ({path}.<key:{k}>): «{m.group(0)}»")
             _check_json_obj(v, rel, f"{path}.{k}" if path else k, out)
     elif isinstance(obj, list):
         for i, item in enumerate(obj):
             _check_json_obj(item, rel, f"{path}[{i}]", out)
     elif isinstance(obj, str):
-        m = PALABRAS_GALICIA.search(obj)
+        m = _scan_text(obj)
         if m:
             out.append(f"  {rel} ({path}): «{m.group(0)}» en «{obj[:90]}»")
 
@@ -90,7 +107,7 @@ def check_assets_content(fallos: list[str]) -> int:
         elif p.suffix in {".txt", ".md"}:
             count += 1
             for i, linea in enumerate(p.read_text(encoding="utf-8", errors="ignore").splitlines(), 1):
-                m = PALABRAS_GALICIA.search(linea)
+                m = _scan_text(linea)
                 if m:
                     fallos.append(f"  {rel}:{i}: «{m.group(0)}»")
     return count
@@ -130,7 +147,7 @@ def check_lib_strings(fallos: list[str]) -> int:
                 inner_vis = _DART_INTERP.sub(" ", inner)
             else:
                 inner_vis = inner
-            hit = PALABRAS_GALICIA.search(inner_vis)
+            hit = _scan_text(inner_vis)
             if hit:
                 linea_n = sin_comentarios[:m.start()].count("\n") + 1
                 fallos.append(f"  {rel}:{linea_n}: «{hit.group(0)}» en {inner[:80]!r}")
@@ -151,7 +168,7 @@ def check_docs_and_readme(fallos: list[str]) -> int:
         rel = p.relative_to(RAIZ).as_posix()
         for i, linea in enumerate(p.read_text(encoding="utf-8", errors="ignore").splitlines(), 1):
             vis = _HTML_CAPTURA_SRC.sub("", linea) if p.suffix == ".html" else linea
-            m = PALABRAS_GALICIA.search(vis)
+            m = _scan_text(vis)
             if m:
                 fallos.append(f"  {rel}:{i}: «{m.group(0)}» -> {linea.strip()[:90]}")
     return count
@@ -164,14 +181,14 @@ def main() -> int:
     n_docs = check_docs_and_readme(fallos)
     if fallos:
         print(
-            f"FALLA ({len(fallos)} coincidencias): léxico no gallego (criatura/crianza):\n"
+            f"FALLA ({len(fallos)} coincidencias): léxico/destino prohibido (criatura/crianza/Edición Vigo):\n"
             + "\n".join(fallos[:100])
             + (f"\n  ... ({len(fallos) - 100} más)" if len(fallos) > 100 else "")
         )
         return 1
     print(
         f"OK: {n_assets} ficheros de assets/content, {n_lib} de lib/ y {n_docs} de docs/*.html/README.md "
-        f"sin «criatura/crianza»."
+        f"sin «criatura/crianza» ni «Edición Vigo»."
     )
     return 0
 

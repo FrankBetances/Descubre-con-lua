@@ -1,6 +1,6 @@
+# Lista cerrada: añadir una clave aquí requiere una orden nueva de Frank.
 # O-20261119-3 (Frank, 19/11/2026): «Las 608 del banco tpr se quedan sin imagen».
 # O-20261119-6 (Frank, 19/11/2026): «las 227 también se quedan sin imagen».
-# Lista cerrada: añadir una clave aquí requiere una orden nueva de Frank.
 abracadabra
 accomplished
 achievement
@@ -25,6 +25,7 @@ apologise
 are you ok
 aromatic
 ask for help
+autumn park
 babble
 beautiful
 bee rhymes with tree
@@ -63,7 +64,6 @@ can you see the plough
 can you write your name
 carefree
 caring
-castrelos park
 cat and hat rhyme
 ceremony
 challenge
@@ -651,6 +651,7 @@ the end
 the gull flies higher than the cormorant
 the pattern repeats again and again
 the stone sinks, but the cork floats
+the town was small, but now it is big
 the warmer it gets, the faster it cooks
 theatrical
 there it is
@@ -708,7 +709,6 @@ useful
 useful helper
 vegetables make us strong
 verse
-vigo was small, but now it is big
 visit
 vivid
 voice
@@ -717,7 +717,7 @@ waddling
 walking is better than driving for short trips
 warm-hearted
 warm-up exercise
-was vigo always big
+was the town always big
 wasteful
 water first, then soap
 wave to families

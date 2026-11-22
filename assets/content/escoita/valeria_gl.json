@@ -1,1046 +1,1046 @@
 {
- "_doc": "Copiado de Valeria y adaptado (O-20261119-8): sin emoji, sin reconocedor de voz, sin las etiquetas técnicas del error. Lo genera tools/importar_valeria_escoita.py; no se edita a mano.",
- "fuente": {
-  "repo": "FrankBetances/Valeria",
-  "commit": "e2a2a5e8",
-  "ficheros": [
-   "src/valeriaMinimalPairsGl.ts",
-   "src/valeriaSemanticExpansionGl.ts"
+  "_doc": "Copiado de Valeria y adaptado (O-20261119-8): sin emoji, sin reconocedor de voz, sin las etiquetas técnicas del error. Lo genera tools/importar_valeria_escoita.py; no se edita a mano.",
+  "fuente": {
+    "repo": "FrankBetances/Valeria",
+    "commit": "e2a2a5e8",
+    "ficheros": [
+      "src/valeriaMinimalPairsGl.ts",
+      "src/valeriaSemanticExpansionGl.ts"
+    ]
+  },
+  "lingua": "gl",
+  "pares": [
+    {
+      "id": "gl-rua-lua",
+      "a": {
+        "palabra": "rúa",
+        "lamina": "pal_street"
+      },
+      "b": {
+        "palabra": "lúa",
+        "lamina": "pal_moon"
+      },
+      "fonema": "r̄ → l",
+      "pista": "A lingua fai a moto detrás dos dentes: rrr.",
+      "misionAcerto": "Carreira pola rúa: ide os dous ata a porta e volvede correndo a chocar os cinco.",
+      "misionFallo": "Man na gorxa do adulto: o adulto sostén rrrr tres segundos e o neno sente a vibración. Despois, ao revés."
+    },
+    {
+      "id": "gl-rei-lei",
+      "a": {
+        "palabra": "rei",
+        "lamina": "pal_king"
+      },
+      "b": {
+        "palabra": "lei",
+        "lamina": "pal_law"
+      },
+      "fonema": "r̄ → l",
+      "pista": "Punta da lingua arriba, e que trema.",
+      "misionAcerto": "Coroación: o adulto ponche unha coroa imaxinaria e ti fas unha reverencia moi seria.",
+      "misionFallo": "Trono real: o neno séntase no sofá coma un rei mentres di un rrr longo; o adulto aplaude cada erre."
+    },
+    {
+      "id": "gl-casa-caza",
+      "a": {
+        "palabra": "casa",
+        "lamina": "pal_house"
+      },
+      "b": {
+        "palabra": "caza",
+        "lamina": "pal_hunt"
+      },
+      "fonema": "s → θ",
+      "pista": "Dentes xuntos, sorriso, e a serpe sopra por detrás: sss.",
+      "misionAcerto": "Facede o tellado xuntando os brazos en triángulo por riba da cabeza do neno.",
+      "misionFallo": "Serpe viaxeira: mentres dura o sss, o adulto esvara un dedo do ombreiro á man do neno. Se o ese rompe, a serpe volve ao ombreiro.",
+      "soDistincion": true
+    },
+    {
+      "id": "gl-cesta-testa",
+      "a": {
+        "palabra": "cesta",
+        "lamina": "pal_pal_basket"
+      },
+      "b": {
+        "palabra": "testa",
+        "lamina": "pal_forehead"
+      },
+      "fonema": "s → t",
+      "pista": "O te dá un golpe; o ese é aire que non se acaba.",
+      "misionAcerto": "Enchede a cesta: o neno bota tres xoguetes nunha caixa dicindo sss en cada un.",
+      "misionFallo": "O muíño: palma do adulto diante da boca do neno. Con t-t-t sente golpes; con sss, un vento seguido que empuxa a man tres segundos."
+    },
+    {
+      "id": "gl-cubo-tubo",
+      "a": {
+        "palabra": "cubo",
+        "lamina": "pal_bucket"
+      },
+      "b": {
+        "palabra": "tubo",
+        "lamina": "pal_tube"
+      },
+      "fonema": "k → t",
+      "pista": "O te vive nos dentes; o ka vive no fondo da gorxa.",
+      "misionAcerto": "Transporta o coxín-cubo pesadísimo ata os pés do adulto, que o baleira levantándote no aire.",
+      "misionFallo": "Gargarexos do xigante: cabeza atrás e ka-ka-ka. Dedos baixo o queixo do outro para sentir onde se move o ka."
+    },
+    {
+      "id": "gl-boca-bota",
+      "a": {
+        "palabra": "boca",
+        "lamina": "pal_mouth"
+      },
+      "b": {
+        "palabra": "bota",
+        "lamina": "pal_boot"
+      },
+      "fonema": "k → t",
+      "pista": "Boca moi aberta de león: a lingua vaise soa para atrás.",
+      "misionAcerto": "Conta-dentes: sorriso xigante do adulto e o neno cóntalle cinco dentes co dedo. Despois, ao revés.",
+      "misionFallo": "Bocexo do león fronte a fronte: boca enorme e kaaa desde o fondo. Gaña o bocexo máis esaxerado."
+    },
+    {
+      "id": "gl-fonte-ponte",
+      "a": {
+        "palabra": "fonte",
+        "lamina": "pal_fountain"
+      },
+      "b": {
+        "palabra": "ponte",
+        "lamina": "pal_bridge"
+      },
+      "fonema": "f → p",
+      "pista": "Dentes de coello sobre o labio de abaixo, e sopra.",
+      "misionAcerto": "Fonte humana: agáchate e brota cara arriba salpicando o adulto, que sacode o pelo empapado.",
+      "misionFallo": "O papel voador: papeliño na palma do adulto. Con fff inclínase e aguanta; con pe só dá un salto. Reto: tres segundos voando."
+    },
+    {
+      "id": "gl-xeo-cheo",
+      "a": {
+        "palabra": "xeo",
+        "lamina": "pal_ice"
+      },
+      "b": {
+        "palabra": "cheo",
+        "lamina": "pal_full"
+      },
+      "fonema": "ʃ → tʃ",
+      "pista": "Non pegues a lingua para arrincar: deixa saír o aire seguido, xxx.",
+      "misionAcerto": "Estatuas de xeo: quedade os dous conxelados ata que un pestanexe.",
+      "misionFallo": "Man diante da boca: co xeo o aire sae continuo; co cheo dá un golpiño. Probade os dous e notade a diferenza."
+    },
+    {
+      "id": "gl-xoia-soia",
+      "a": {
+        "palabra": "xoia",
+        "lamina": "pal_jewel"
+      },
+      "b": {
+        "palabra": "soia",
+        "lamina": "pal_soy"
+      },
+      "fonema": "ʃ → s",
+      "pista": "Bico de peixe cos beizos e a lingua recuada: xxx, non sss.",
+      "misionAcerto": "Tesouro: agochade un obxecto brillante e atopádeo entre os dous.",
+      "misionFallo": "Bico de peixe: poñede os dous morriños e soltade xxx tres segundos sen mover a lingua."
+    },
+    {
+      "id": "gl-oso-aberto",
+      "a": {
+        "palabra": "óso",
+        "lamina": "pal_bone"
+      },
+      "b": {
+        "palabra": "oso",
+        "lamina": "pal_bear"
+      },
+      "fonema": "ɔ → o",
+      "pista": "Para óso a boca ábrese coma no médico; para oso péchase coma para dar un bico.",
+      "misionAcerto": "Tocade xuntos o óso do brazo, o do xeonllo e o da cabeza.",
+      "misionFallo": "Espello de bocas: o adulto di óso e oso diante do espello e o neno sinala cal abre máis."
+    },
+    {
+      "id": "gl-bola-aberta",
+      "a": {
+        "palabra": "bóla",
+        "lamina": "pal_bun"
+      },
+      "b": {
+        "palabra": "bola",
+        "lamina": "pal_ball"
+      },
+      "fonema": "ɔ → o",
+      "pista": "Boca máis aberta e queixo máis baixo: bóóóla.",
+      "misionAcerto": "Pase de bóla imaxinaria: tres pases sen que caia ao chan.",
+      "misionFallo": "Man no queixo: baixa o queixo do adulto ao dicir bóla e nota que con bola case non baixa."
+    },
+    {
+      "id": "gl-palla-pala",
+      "a": {
+        "palabra": "palla",
+        "lamina": "pal_straw"
+      },
+      "b": {
+        "palabra": "pala",
+        "lamina": "pal_shovel"
+      },
+      "fonema": "ʎ → l",
+      "pista": "Pega toda a lingua ao paladar e deixa saír o aire polos lados: lla.",
+      "misionAcerto": "Palleiro: amoreade coxíns e tirádevos enriba os dous.",
+      "misionFallo": "Lingua ao teito: o neno pega a lingua ao paladar tres segundos e despois di lla, lla, lla."
+    },
+    {
+      "id": "gl-mel-pel",
+      "a": {
+        "palabra": "mel",
+        "lamina": "pal_honey"
+      },
+      "b": {
+        "palabra": "pel",
+        "lamina": "pal_skin"
+      },
+      "fonema": "m → p",
+      "pista": "Beizos xuntos e motor de abella polo nariz: mmm.",
+      "misionAcerto": "Osos lambóns: metede a man no pote imaxinario e lambede cun mmm ben longo.",
+      "misionFallo": "Dedo no nariz do outro: sostede mmmm tres segundos e notade a vibración. Co pe non treme nada."
+    }
+  ],
+  "progresions": [
+    {
+      "id": "gl-seq-coche",
+      "tema": "Transporte · O coche",
+      "fases": [
+        {
+          "palabra": "coche",
+          "lamina": "pal_car",
+          "tipo": "concepto",
+          "frase": "Isto é o coche.",
+          "accion": "Pon o coche na man da nena, sinálao e repetide xuntos “coche” mentres o movedes."
+        },
+        {
+          "palabra": "roda",
+          "lamina": "pal_wheel",
+          "tipo": "parte",
+          "frase": "O coche ten catro rodas.",
+          "accion": "Collede o coche e xirade unha roda co dedo da nena, repetindo “roda” en cada volta."
+        },
+        {
+          "palabra": "corre",
+          "lamina": "pal_run",
+          "tipo": "accion",
+          "frase": "O coche corre.",
+          "accion": "Fai correr o coche pola mesa e despois polo brazo da nena, acelerando ao dicir “corre”."
+        },
+        {
+          "palabra": "rápido",
+          "lamina": "pal_fast",
+          "tipo": "cualidad",
+          "frase": "O coche é moi rápido.",
+          "accion": "Corre coa nena da man uns pasos e frenade de golpe dicindo “rápido… e stop!”."
+        }
+      ]
+    },
+    {
+      "id": "gl-seq-can",
+      "tema": "Animais · O can",
+      "fases": [
+        {
+          "palabra": "can",
+          "lamina": "pal_dog",
+          "tipo": "concepto",
+          "frase": "Isto é o can.",
+          "accion": "Sinala un can de xoguete ou unha foto e acariñádeo xuntos repetindo “can”."
+        },
+        {
+          "palabra": "pata",
+          "lamina": "pal_paw",
+          "tipo": "parte",
+          "frase": "O can ten catro patas.",
+          "accion": "Poñede as mans no chan coma patas e camiñade a catro patas un par de pasos dicindo “pata”."
+        },
+        {
+          "palabra": "salta",
+          "lamina": "pal_jump",
+          "tipo": "accion",
+          "frase": "O can salta para coller a pelota.",
+          "accion": "Fai saltar o can de xoguete e saltade os dous á vez dicindo “salta!”."
+        },
+        {
+          "palabra": "peludo",
+          "lamina": "pal_furry",
+          "tipo": "cualidad",
+          "frase": "O can é brandiño e peludo.",
+          "accion": "Acariñade un peluche ou unha manta suave e dicide “peludo” pasando a man amodo."
+        }
+      ]
+    },
+    {
+      "id": "gl-seq-vaca",
+      "tema": "Animais · A vaca",
+      "fases": [
+        {
+          "palabra": "vaca",
+          "lamina": "pal_pal_cow",
+          "tipo": "concepto",
+          "frase": "Isto é a vaca.",
+          "accion": "Sinala unha vaca de xoguete ou unha foto e percorrede as súas manchas co dedo dicindo “vaca”."
+        },
+        {
+          "palabra": "leite",
+          "lamina": "pal_milk",
+          "tipo": "parte",
+          "frase": "Da vaca sae o leite.",
+          "accion": "Servide un pouco de leite no seu vaso e dade un grolo cada un dicindo “leite” antes de beber."
+        },
+        {
+          "palabra": "come",
+          "lamina": "pal_eat",
+          "tipo": "accion",
+          "frase": "A vaca come herba.",
+          "accion": "Agacha a cabeza coma a vaca e facede que mastigades herba movendo a mandíbula ao dicir “come”."
+        },
+        {
+          "palabra": "grande",
+          "lamina": "pal_big",
+          "tipo": "cualidad",
+          "frase": "A vaca é moi grande.",
+          "accion": "Abride os brazos todo o que poidades e poñédevos de puntas dicindo “graaande!”."
+        }
+      ]
+    },
+    {
+      "id": "gl-seq-gato",
+      "tema": "Animais · O gato",
+      "fases": [
+        {
+          "palabra": "gato",
+          "lamina": "pal_cat",
+          "tipo": "concepto",
+          "frase": "Isto é o gato.",
+          "accion": "Sinala un gato de xoguete ou unha foto e acariñádelle o lombo repetindo “gato”."
+        },
+        {
+          "palabra": "bigote",
+          "lamina": "pal_whiskers",
+          "tipo": "parte",
+          "frase": "O gato ten uns bigotes longos.",
+          "accion": "Debuxade bigotes no aire desde o nariz cara ás meixelas da nena mentres dicides “bigote”."
+        },
+        {
+          "palabra": "dorme",
+          "lamina": "pal_sleep",
+          "tipo": "accion",
+          "frase": "O gato dorme na súa cama.",
+          "accion": "Xunta as mans baixo a meixela, pecha os ollos e fai “shhh” convidando á nena a “durmir” contigo."
+        },
+        {
+          "palabra": "suave",
+          "lamina": "pal_soft",
+          "tipo": "cualidad",
+          "frase": "O pelo do gato é moi suave.",
+          "accion": "Pasade unha pluma ou un pano polo brazo da nena moi amodo dicindo “suave”."
+        }
+      ]
+    },
+    {
+      "id": "gl-seq-choiva",
+      "tema": "Natureza · A choiva",
+      "fases": [
+        {
+          "palabra": "auga",
+          "lamina": "pal_water",
+          "tipo": "concepto",
+          "frase": "Isto é a auga.",
+          "accion": "Mollade un dedo en auga real e tocádevos a man notando o frío mentres dicides “auga”."
+        },
+        {
+          "palabra": "nube",
+          "lamina": "pal_cloud",
+          "tipo": "parte",
+          "frase": "A auga sae da nube.",
+          "accion": "Sinalade unha nube pola ventá (ou debuxade unha no aire) e dicide “nube” soprando fluxiño."
+        },
+        {
+          "palabra": "cae",
+          "lamina": "pal_fall",
+          "tipo": "accion",
+          "frase": "A auga cae do ceo.",
+          "accion": "Ergue as mans arriba e báixaas movendo os dedos ata o chan dicindo “caeee”."
+        },
+        {
+          "palabra": "mollado",
+          "lamina": "pal_wet",
+          "tipo": "cualidad",
+          "frase": "A man está mollada.",
+          "accion": "Molla un pouco a man da nena cunha toalliña e dicide “mollado” sacudindo as mans."
+        }
+      ]
+    },
+    {
+      "id": "gl-seq-tren",
+      "tema": "Transporte · O tren",
+      "fases": [
+        {
+          "palabra": "tren",
+          "lamina": "pal_pal_train",
+          "tipo": "concepto",
+          "frase": "Isto é o tren.",
+          "accion": "Facede un treniño: a nena agárrase á túa cintura e avanzade polo corredor repetindo “tren”."
+        },
+        {
+          "palabra": "vagón",
+          "lamina": "pal_wagon",
+          "tipo": "parte",
+          "frase": "O tren leva moitos vagóns.",
+          "accion": "Poñede en fila tres caixas ou coxíns coma vagóns e enganchádeos dicindo “vagón” en cada un."
+        },
+        {
+          "palabra": "para",
+          "lamina": "pal_stop",
+          "tipo": "accion",
+          "frase": "O tren para na estación.",
+          "accion": "Avanzade coma un tren e frenade en seco ao dicir “para!”, quedando completamente quietos."
+        },
+        {
+          "palabra": "longo",
+          "lamina": "pal_long",
+          "tipo": "cualidad",
+          "frase": "O tren é moi longo.",
+          "accion": "Separade os brazos todo o posible marcando o “loooongo” que é o tren."
+        }
+      ]
+    },
+    {
+      "id": "gl-seq-paxaro",
+      "tema": "Animais · O paxaro",
+      "fases": [
+        {
+          "palabra": "paxaro",
+          "lamina": "pal_bird",
+          "tipo": "concepto",
+          "frase": "Isto é o paxaro.",
+          "accion": "Sinalade un paxaro pola ventá ou nunha foto e seguídeo co dedo dicindo “paxaro”."
+        },
+        {
+          "palabra": "pluma",
+          "lamina": "pal_feather",
+          "tipo": "parte",
+          "frase": "O paxaro ten moitas plumas.",
+          "accion": "Soprade unha pluma de verdade (ou un anaquiño de papel) para que flote e dicide “pluma” ao collela."
+        },
+        {
+          "palabra": "voa",
+          "lamina": "pal_fly",
+          "tipo": "accion",
+          "frase": "O paxaro voa polo ceo.",
+          "accion": "Abride os brazos coma ás e dade unha volta polo cuarto “voando” ao dicir “voa”."
+        },
+        {
+          "palabra": "pequeno",
+          "lamina": "pal_small",
+          "tipo": "cualidad",
+          "frase": "O paxaro é moi pequeno.",
+          "accion": "Xuntade o índice e o polgar deixando un ocoíño e mirade por el dicindo “pequeniño”."
+        }
+      ]
+    },
+    {
+      "id": "gl-seq-pan",
+      "tema": "Alimentación · O almorzo",
+      "fases": [
+        {
+          "palabra": "pan",
+          "lamina": "pal_bread",
+          "tipo": "concepto",
+          "frase": "Isto é o pan.",
+          "accion": "Pon un anaco de pan na man da nena e ulídeo xuntos antes de dicir “pan”."
+        },
+        {
+          "palabra": "cunca",
+          "lamina": "pal_bowl",
+          "tipo": "parte",
+          "frase": "No almorzo bebemos da cunca.",
+          "accion": "Collede a cunca do almorzo pola asa entre os dous e dade un grolo dicindo “cunca”."
+        },
+        {
+          "palabra": "quero pan",
+          "lamina": "pal_bread",
+          "tipo": "accion",
+          "frase": "Tes fame e pídelo.",
+          "accion": "Suxeita o pan á vista pero fóra do seu alcance e agarda a petición antes de darllo."
+        },
+        {
+          "palabra": "torrado",
+          "lamina": "pal_toast",
+          "tipo": "cualidad",
+          "frase": "O pan está torrado.",
+          "accion": "Comparade unha rebanda branda e unha torrada tocándoas: a torrada crequena ao apertala."
+        }
+      ]
+    },
+    {
+      "id": "gl-seq-globo",
+      "tema": "Xogo · O globo",
+      "fases": [
+        {
+          "palabra": "globo",
+          "lamina": "pal_balloon",
+          "tipo": "concepto",
+          "frase": "Isto é o globo.",
+          "accion": "Dálle un globo á nena e suxeitádeo entre os dous mentres repetides “globo”."
+        },
+        {
+          "palabra": "corda",
+          "lamina": "pal_rope",
+          "tipo": "parte",
+          "frase": "O globo ten unha corda.",
+          "accion": "Atade unha corda ao globo e deixade que a nena tire dela dicindo “corda”."
+        },
+        {
+          "palabra": "sopra",
+          "lamina": "pal_blow",
+          "tipo": "accion",
+          "frase": "Sopramos para inflar o globo.",
+          "accion": "Soprade os dous á vez sobre a man do outro para notar o aire antes de dicir “sopra”."
+        },
+        {
+          "palabra": "redondo",
+          "lamina": "pal_round",
+          "tipo": "cualidad",
+          "frase": "O globo é redondo.",
+          "accion": "Debuxade un círculo grande no aire cos dous brazos dicindo “redooondo”."
+        }
+      ]
+    }
+  ],
+  "capsulas": [
+    {
+      "id": "gl-cap-grande-pequeno",
+      "tipo": "adjetivos",
+      "montaxe": "Prepara dous osiños de peluche iguais pero de distinto tamaño: un claramente GRANDE e outro claramente PEQUENO. Colócaos xuntos diante da nena.",
+      "voltas": [
+        {
+          "palabra": "grande",
+          "lamina": "pal_big",
+          "frase": "Cal é o osiño GRANDE? Dámo e dío!",
+          "accion": "A nena entrégache o osiño grande mentres o di; abrazádeo esaxerando o enorme que é."
+        },
+        {
+          "palabra": "pequeno",
+          "lamina": "pal_small",
+          "frase": "Agora ao revés: cal é o osiño PEQUENO? Dámo e dío!",
+          "accion": "A nena dache o osiño pequeno; escondédeo nunha man e dicide “pequeno” con vociña mini."
+        }
+      ]
+    },
+    {
+      "id": "gl-cap-limpo-sucio",
+      "tipo": "adjetivos",
+      "montaxe": "Colle dúas culleres iguais: lava unha ata deixala brillante e mancha a outra cun pouco de comida ou barro. Ponas unha ao lado da outra.",
+      "voltas": [
+        {
+          "palabra": "sucio",
+          "lamina": "pal_dirty",
+          "frase": "Sinala a culler SUCIA. Como está esta? Dío.",
+          "accion": "A nena sinala a culler sucia e poñedes os dous cara de “puaj!” apartándoa."
+        },
+        {
+          "palabra": "limpo",
+          "lamina": "pal_clean",
+          "frase": "E esta outra culler, como está? Mira como brilla!",
+          "accion": "Sinalade a limpa, soprade sobre ela coma se brillase e chocade os cinco."
+        }
+      ]
+    },
+    {
+      "id": "gl-cap-abrir-pechar",
+      "tipo": "verbos",
+      "montaxe": "Pon diante da nena unha caixa con tapa e mete dentro, á vista, o seu xoguete favorito. Pecha a tapa.",
+      "voltas": [
+        {
+          "palabra": "abrir",
+          "lamina": "pal_open",
+          "frase": "O xoguete está dentro da caixa. Que facemos para sacalo?",
+          "accion": "Abride a caixa xuntos, moi amodo, e celebrade atopar o xoguete cun “tachán!”."
+        },
+        {
+          "palabra": "pechar",
+          "lamina": "pal_close",
+          "frase": "Gardamos o xoguete na caixa. Que facemos coa tapa?",
+          "accion": "A nena empurra a tapa ata pechala de todo mentres di a palabra."
+        }
+      ]
+    },
+    {
+      "id": "gl-cap-subir-baixar",
+      "tipo": "verbos",
+      "montaxe": "Fai unha rampla apoiando un libro grande inclinado e coloca un coche de xoguete ao pé da rampla.",
+      "voltas": [
+        {
+          "palabra": "subir",
+          "lamina": "pal_up",
+          "frase": "O coche vai á montaña. Que fai? Vai cara arriba!",
+          "accion": "Subide o coche pola rampla moi amodo mentres soa a palabra."
+        },
+        {
+          "palabra": "baixar",
+          "lamina": "pal_down",
+          "frase": "Agora o coche vai cara abaixo! Que fai?",
+          "accion": "Soltade o coche e que baixe só pola rampla; dicide “baixaaa!” mentres cae."
+        }
+      ]
+    },
+    {
+      "id": "gl-cap-frio-quente",
+      "tipo": "adjetivos",
+      "montaxe": "Prepara dous vasos: un con auga ben fría (con xeo se hai) e outro con auga morna. Ponos diante da nena.",
+      "voltas": [
+        {
+          "palabra": "frío",
+          "lamina": "pal_cold",
+          "frase": "Toca os vasos. Cal está FRÍO? Brrr!",
+          "accion": "A nena toca o vaso frío; tiritade xuntos “brrr!” encollendo os ombros."
+        },
+        {
+          "palabra": "quente",
+          "lamina": "pal_hot",
+          "frase": "E este outro vaso, como está?",
+          "accion": "Tocade o vaso morno e abanade a man coma se queimase, esaxerando moito."
+        }
+      ]
+    },
+    {
+      "id": "gl-cap-acender-apagar",
+      "tipo": "verbos",
+      "montaxe": "Colócate coa nena xunto ao interruptor da luz (ou colle unha lanterna). O cuarto empeza coa luz apagada.",
+      "voltas": [
+        {
+          "palabra": "acender",
+          "lamina": "pal_switch_on",
+          "frase": "Está escuro… Que facemos coa luz do interruptor?",
+          "accion": "A nena preme o interruptor xusto ao dicilo e celebrades a luz cun “oooh!”."
+        },
+        {
+          "palabra": "apagar",
+          "lamina": "pal_switch_off",
+          "frase": "Agora ao revés. Que facemos coa luz do interruptor?",
+          "accion": "A nena apaga a luz e dicídesvos “boas noites” con voz de murmurio."
+        }
+      ]
+    },
+    {
+      "id": "gl-cap-cheo-baleiro",
+      "tipo": "adjetivos",
+      "montaxe": "Prepara dúas cestas ou caixas iguais: enche unha ata arriba de xoguetes ou calcetíns e deixa a outra completamente baleira. Ponas diante da nena.",
+      "voltas": [
+        {
+          "palabra": "cheo",
+          "lamina": "pal_full",
+          "frase": "Cal é a cesta CHEA de cousas? Sinálaa e dío!",
+          "accion": "A nena sinala a cesta chea; erguédea xuntos esaxerando o moito que pesa: “uf, cheaaa!”."
+        },
+        {
+          "palabra": "baleiro",
+          "lamina": "pal_empty",
+          "frase": "E esta outra cesta, como está? Mira dentro!",
+          "accion": "Poñede a cesta baleira boca abaixo sobre a cabeza da nena coma un sombreiro: non cae nada, está baleira!"
+        }
+      ]
+    },
+    {
+      "id": "gl-cap-meter-sacar",
+      "tipo": "verbos",
+      "montaxe": "Colle unha caixa aberta e tres xoguetes pequenos. Coloca os xoguetes FÓRA da caixa, diante da nena.",
+      "voltas": [
+        {
+          "palabra": "meter",
+          "lamina": "pal_put_in",
+          "frase": "Os xoguetes van á súa casa, dentro da caixa. Que facemos?",
+          "accion": "A nena mete un xoguete na caixa con cada palabra; celebrade o último cun “todos dentro!”."
+        },
+        {
+          "palabra": "sacar",
+          "lamina": "pal_take_out",
+          "frase": "Agora ao revés. Que facemos cos xoguetes da caixa?",
+          "accion": "A nena saca os xoguetes un a un; contádeos en fila ao saír: “un, dous e tres fóra!”."
+        }
+      ]
+    }
+  ],
+  "escenarios": [
+    {
+      "id": "mana",
+      "titulo": "Rutina da mañá",
+      "subtitulo": "Espertar, lavarse, vestirse e almorzar",
+      "items": [
+        {
+          "palabra": "espertar",
+          "lamina": "pal_wake_up",
+          "frase": "Primeiro espertamos.",
+          "accion": "Tápate coma se durmises e estírate co neno ao soar o «rin, rin»."
+        },
+        {
+          "palabra": "lavar",
+          "lamina": "pal_wash",
+          "frase": "Despois lavámonos.",
+          "accion": "Fregade as mans xuntos coma se vos enxaboasedes."
+        },
+        {
+          "palabra": "vestir",
+          "lamina": "pal_get_dressed",
+          "frase": "Logo vestímonos.",
+          "accion": "Pasa unha camiseta pola cabeza do neno e celebrádeo ao asomar."
+        },
+        {
+          "palabra": "almorzar",
+          "lamina": "pal_breakfast",
+          "frase": "Ao final almorzamos.",
+          "accion": "Simulade xuntos que bebedes un vaso de leite coas dúas mans."
+        }
+      ]
+    },
+    {
+      "id": "comida",
+      "titulo": "Hora de comer",
+      "subtitulo": "Lavarse, sentar, comer e recoller",
+      "items": [
+        {
+          "palabra": "lavar",
+          "lamina": "pal_wash",
+          "frase": "Primeiro lavamos as mans.",
+          "accion": "Fregade as mans xuntos coma se vos enxaboasedes."
+        },
+        {
+          "palabra": "sentar",
+          "lamina": "pal_sit_down",
+          "frase": "Despois sentamos á mesa.",
+          "accion": "Sentádevos xuntos en dúas cadeiras, un fronte ao outro."
+        },
+        {
+          "palabra": "comer",
+          "lamina": "pal_eat",
+          "frase": "Logo comemos.",
+          "accion": "Levade xuntos unha culler imaxinaria á boca."
+        },
+        {
+          "palabra": "recoller",
+          "lamina": "pal_tidy_up",
+          "frase": "Ao final recollemos o prato.",
+          "accion": "Levade xuntos un prato (de verdade ou imaxinario) ata a cociña."
+        }
+      ]
+    },
+    {
+      "id": "parque",
+      "titulo": "No parque",
+      "subtitulo": "Zapatos, parque, tobogán e á casa",
+      "items": [
+        {
+          "palabra": "zapatos",
+          "lamina": "pal_shoes",
+          "frase": "Primeiro poñemos os zapatos.",
+          "accion": "Sinalade os zapatos do neno e tocádeos xuntos."
+        },
+        {
+          "palabra": "parque",
+          "lamina": "pal_park",
+          "frase": "Despois imos ao parque.",
+          "accion": "Camiñade xuntos uns pasos pola habitación cara «ao parque»."
+        },
+        {
+          "palabra": "tobogán",
+          "lamina": "pal_slide",
+          "frase": "Logo baixamos polo tobogán.",
+          "accion": "Facede xuntos o xesto de esvarar cos brazos no alto."
+        },
+        {
+          "palabra": "casa",
+          "lamina": "pal_house",
+          "frase": "Ao final volvemos á casa.",
+          "accion": "Xuntade as mans sobre a cabeza formando un tellado."
+        }
+      ]
+    },
+    {
+      "id": "bano",
+      "titulo": "Hora do baño",
+      "subtitulo": "Bañeira, xabón, auga e toalla",
+      "items": [
+        {
+          "palabra": "bañeira",
+          "lamina": "pal_bathtub",
+          "frase": "Primeiro metémonos na bañeira.",
+          "accion": "Levantade xuntos unha perna coma se entrasedes na bañeira."
+        },
+        {
+          "palabra": "xabón",
+          "lamina": "pal_soap",
+          "frase": "Despois enxaboámonos.",
+          "accion": "Fregade os brazos do neno cunha esponxa imaxinaria."
+        },
+        {
+          "palabra": "auga",
+          "lamina": "pal_water",
+          "frase": "Logo aclarámonos con auga.",
+          "accion": "Deixade caer os dedos sobre a cabeza do neno coma pingas."
+        },
+        {
+          "palabra": "toalla",
+          "lamina": "pal_towel",
+          "frase": "Ao final secámonos coa toalla.",
+          "accion": "Envolvede o neno nunha toalla (ou nos teus brazos) e secádeo."
+        }
+      ]
+    },
+    {
+      "id": "noite",
+      "titulo": "A durmir",
+      "subtitulo": "Pixama, dentes, conto e a durmir",
+      "items": [
+        {
+          "palabra": "pixama",
+          "lamina": "pal_pajamas",
+          "frase": "Primeiro poñemos o pixama.",
+          "accion": "Sinalade o pixama do neno e tocade os botóns xuntos."
+        },
+        {
+          "palabra": "dentes",
+          "lamina": "pal_teeth",
+          "frase": "Despois lavamos os dentes.",
+          "accion": "Facede xuntos o xesto de cepillar os dentes."
+        },
+        {
+          "palabra": "conto",
+          "lamina": "pal_story",
+          "frase": "Logo lemos un conto.",
+          "accion": "Abride as mans coma un libro e pasade unha páxina xuntos."
+        },
+        {
+          "palabra": "durmir",
+          "lamina": "pal_sleep",
+          "frase": "Ao final imos durmir.",
+          "accion": "Apoiade a cabeza nas mans xuntas e pechade os ollos."
+        }
+      ]
+    }
+  ],
+  "categorias": [
+    {
+      "id": "gl-cat-froitas",
+      "titulo": "Froitas",
+      "subtitulo": "Da froita de cada día á que se ve de cando en vez",
+      "items": [
+        {
+          "palabra": "mazá",
+          "lamina": "pal_apple",
+          "frase": "Isto é unha mazá.",
+          "accion": "Dálle un trabo a unha mazá de verdade (ou de xoguete) e que a nena imite o crequenar: ñac!"
+        },
+        {
+          "palabra": "plátano",
+          "lamina": "pal_pal_banana",
+          "frase": "Isto é un plátano.",
+          "accion": "Pelade xuntos un plátano baixando cada tira amodo mentres dicides a palabra."
+        },
+        {
+          "palabra": "laranxa",
+          "lamina": "pal_orange",
+          "frase": "Isto é unha laranxa.",
+          "accion": "Facede rodar unha laranxa pola mesa dun ao outro, nomeándoa en cada pase."
+        },
+        {
+          "palabra": "pera",
+          "lamina": "pal_pear",
+          "frase": "Isto é unha pera.",
+          "accion": "Debuxade a silueta da pera no aire co dedo: ancha abaixo, estreita arriba."
+        },
+        {
+          "palabra": "ananás",
+          "lamina": "pal_pineapple",
+          "frase": "Isto é un ananás.",
+          "accion": "Poñede as mans abertas sobre a cabeza coma a coroa do ananás e dicide a palabra."
+        },
+        {
+          "palabra": "cereixa",
+          "lamina": "pal_cherry",
+          "frase": "Isto é unha cereixa.",
+          "accion": "Pendurade dúas cereixas (ou dúas boliñas de papel) da orella coma pendentes e ride xuntos."
+        }
+      ]
+    },
+    {
+      "id": "gl-cat-animais",
+      "titulo": "Animais",
+      "subtitulo": "Dos da casa aos que só se ven no zoo",
+      "items": [
+        {
+          "palabra": "can",
+          "lamina": "pal_dog",
+          "frase": "Isto é un can.",
+          "accion": "Poñédevos a catro patas e dade tres pasos ladrando xuntos."
+        },
+        {
+          "palabra": "gato",
+          "lamina": "pal_cat",
+          "frase": "Isto é un gato.",
+          "accion": "Estirádevos coma un gato ao espertar e fregade a cabeza contra o brazo do outro."
+        },
+        {
+          "palabra": "pato",
+          "lamina": "pal_duck",
+          "frase": "Isto é un pato.",
+          "accion": "Camiñade en fila movendo o cu coma patos ata a porta."
+        },
+        {
+          "palabra": "vaca",
+          "lamina": "pal_pal_cow",
+          "frase": "Isto é unha vaca.",
+          "accion": "Poñede dous dedos na cabeza coma cornos e dicide a palabra mirándovos."
+        },
+        {
+          "palabra": "elefante",
+          "lamina": "pal_elephant",
+          "frase": "Isto é un elefante.",
+          "accion": "Facede a trompa co brazo colgando diante da cara e abaneádea ao dicilo."
+        },
+        {
+          "palabra": "xirafa",
+          "lamina": "pal_giraffe",
+          "frase": "Isto é unha xirafa.",
+          "accion": "Estirade o pescozo e os brazos cara arriba, o máis alto posible, para alcanzar unha folla."
+        }
+      ]
+    },
+    {
+      "id": "gl-cat-transportes",
+      "titulo": "Transportes",
+      "subtitulo": "Do que pasa pola rúa ao que case nunca se ve",
+      "items": [
+        {
+          "palabra": "coche",
+          "lamina": "pal_car",
+          "frase": "Isto é un coche.",
+          "accion": "Empurrade un coche de xoguete polo chan ata chocar suavemente co pé da nena."
+        },
+        {
+          "palabra": "moto",
+          "lamina": "pal_motorbike",
+          "frase": "Isto é unha moto.",
+          "accion": "Agarrade un guiador imaxinario e acelerade os dous á vez facendo ruído de motor."
+        },
+        {
+          "palabra": "tren",
+          "lamina": "pal_pal_train",
+          "frase": "Isto é un tren.",
+          "accion": "Facede un tren: a nena agárrase á túa cintura e dades unha volta ao cuarto."
+        },
+        {
+          "palabra": "barco",
+          "lamina": "pal_boat",
+          "frase": "Isto é un barco.",
+          "accion": "Sentade no chan e abaneádevos coma se o barco subise e baixase coas ondas."
+        },
+        {
+          "palabra": "avión",
+          "lamina": "pal_pal_plane",
+          "frase": "Isto é un avión.",
+          "accion": "Abride os brazos coma ás e dade unha volta polo cuarto inclinándovos nas curvas."
+        },
+        {
+          "palabra": "camión",
+          "lamina": "pal_truck",
+          "frase": "Isto é un camión.",
+          "accion": "Cargade tres xoguetes nunha caixa e arrastrádea xuntos coma se fose o remolque."
+        }
+      ]
+    },
+    {
+      "id": "gl-cat-cores",
+      "titulo": "Cores",
+      "subtitulo": "Do vermello e o azul ás que custan máis de nomear",
+      "items": [
+        {
+          "palabra": "vermello",
+          "lamina": "pal_red",
+          "frase": "Esta cor é vermella.",
+          "accion": "Buscade xuntos tres cousas vermellas polo cuarto e tocádeas nomeando a cor."
+        },
+        {
+          "palabra": "azul",
+          "lamina": "pal_blue",
+          "frase": "Esta cor é azul.",
+          "accion": "Sinalade o ceo ou algo azul da roupa da nena e dicide a cor á vez."
+        },
+        {
+          "palabra": "amarelo",
+          "lamina": "pal_yellow",
+          "frase": "Esta cor é amarela.",
+          "accion": "Facede un sol grande cos brazos e dicide a cor mirando cara arriba."
+        },
+        {
+          "palabra": "verde",
+          "lamina": "pal_green",
+          "frase": "Esta cor é verde.",
+          "accion": "Saíde buscar unha folla ou unha planta e tocádea mentres dicides a cor."
+        },
+        {
+          "palabra": "morado",
+          "lamina": "pal_purple",
+          "frase": "Esta cor é morada.",
+          "accion": "Mesturade diante da nena un pouco de vermello e azul (pintura ou plastilina) e nomeade o que sae."
+        },
+        {
+          "palabra": "marrón",
+          "lamina": "pal_brown",
+          "frase": "Esta cor é marrón.",
+          "accion": "Tocade xuntos algo de madeira —unha mesa, unha cadeira— e dicide a cor ao tocalo."
+        }
+      ]
+    },
+    {
+      "id": "gl-cat-corpo",
+      "titulo": "O corpo",
+      "subtitulo": "Do que se sinala só ao que hai que buscar",
+      "items": [
+        {
+          "palabra": "man",
+          "lamina": "pal_hand",
+          "frase": "Isto é a man.",
+          "accion": "Chocade as palmas tres veces, unha por cada golpe, mirándovos aos ollos."
+        },
+        {
+          "palabra": "pé",
+          "lamina": "pal_foot",
+          "frase": "Isto é o pé.",
+          "accion": "Poñede os vosos pés xuntos e comparade o tamaño antes de dar tres pisadas no chan."
+        },
+        {
+          "palabra": "boca",
+          "lamina": "pal_mouth",
+          "frase": "Isto é a boca.",
+          "accion": "Poñédevos fronte ao espello e abride e pechade a boca á vez, moi amodo."
+        },
+        {
+          "palabra": "ollo",
+          "lamina": "pal_eye",
+          "frase": "Isto é o ollo.",
+          "accion": "Xogade a taparvos os ollos e destapalos cun “cucú!” cada vez que dicides a palabra."
+        },
+        {
+          "palabra": "xeonllo",
+          "lamina": "pal_knee",
+          "frase": "Isto é o xeonllo.",
+          "accion": "Dobrade os xeonllos á vez ata quedar en crocas e subide dicindo a palabra."
+        },
+        {
+          "palabra": "cóbado",
+          "lamina": "pal_elbow",
+          "frase": "Isto é o cóbado.",
+          "accion": "Saudádevos chocando os cóbados, coma se facía na pandemia, tres veces seguidas."
+        }
+      ]
+    }
   ]
- },
- "lingua": "gl",
- "pares": [
-  {
-   "id": "gl-rua-lua",
-   "a": {
-    "palabra": "rúa",
-    "lamina": "pal_street"
-   },
-   "b": {
-    "palabra": "lúa",
-    "lamina": "pal_moon"
-   },
-   "fonema": "r̄ → l",
-   "pista": "A lingua fai a moto detrás dos dentes: rrr.",
-   "misionAcerto": "Carreira pola rúa: ide os dous ata a porta e volvede correndo a chocar os cinco.",
-   "misionFallo": "Man na gorxa do adulto: o adulto sostén rrrr tres segundos e o neno sente a vibración. Despois, ao revés."
-  },
-  {
-   "id": "gl-rei-lei",
-   "a": {
-    "palabra": "rei",
-    "lamina": "pal_king"
-   },
-   "b": {
-    "palabra": "lei",
-    "lamina": "pal_law"
-   },
-   "fonema": "r̄ → l",
-   "pista": "Punta da lingua arriba, e que trema.",
-   "misionAcerto": "Coroación: o adulto ponche unha coroa imaxinaria e ti fas unha reverencia moi seria.",
-   "misionFallo": "Trono real: o neno séntase no sofá coma un rei mentres di un rrr longo; o adulto aplaude cada erre."
-  },
-  {
-   "id": "gl-casa-caza",
-   "a": {
-    "palabra": "casa",
-    "lamina": "pal_house"
-   },
-   "b": {
-    "palabra": "caza",
-    "lamina": "pal_hunt"
-   },
-   "fonema": "s → θ",
-   "pista": "Dentes xuntos, sorriso, e a serpe sopra por detrás: sss.",
-   "misionAcerto": "Facede o tellado xuntando os brazos en triángulo por riba da cabeza do neno.",
-   "misionFallo": "Serpe viaxeira: mentres dura o sss, o adulto esvara un dedo do ombreiro á man do neno. Se o ese rompe, a serpe volve ao ombreiro.",
-   "soDistincion": true
-  },
-  {
-   "id": "gl-cesta-testa",
-   "a": {
-    "palabra": "cesta",
-    "lamina": "pal_pal_basket"
-   },
-   "b": {
-    "palabra": "testa",
-    "lamina": "pal_forehead"
-   },
-   "fonema": "s → t",
-   "pista": "O te dá un golpe; o ese é aire que non se acaba.",
-   "misionAcerto": "Enchede a cesta: o neno bota tres xoguetes nunha caixa dicindo sss en cada un.",
-   "misionFallo": "O muíño: palma do adulto diante da boca do neno. Con t-t-t sente golpes; con sss, un vento seguido que empuxa a man tres segundos."
-  },
-  {
-   "id": "gl-cubo-tubo",
-   "a": {
-    "palabra": "cubo",
-    "lamina": "pal_bucket"
-   },
-   "b": {
-    "palabra": "tubo",
-    "lamina": "pal_tube"
-   },
-   "fonema": "k → t",
-   "pista": "O te vive nos dentes; o ka vive no fondo da gorxa.",
-   "misionAcerto": "Transporta o coxín-cubo pesadísimo ata os pés do adulto, que o baleira levantándote no aire.",
-   "misionFallo": "Gargarexos do xigante: cabeza atrás e ka-ka-ka. Dedos baixo o queixo do outro para sentir onde se move o ka."
-  },
-  {
-   "id": "gl-boca-bota",
-   "a": {
-    "palabra": "boca",
-    "lamina": "pal_mouth"
-   },
-   "b": {
-    "palabra": "bota",
-    "lamina": "pal_boot"
-   },
-   "fonema": "k → t",
-   "pista": "Boca moi aberta de león: a lingua vaise soa para atrás.",
-   "misionAcerto": "Conta-dentes: sorriso xigante do adulto e o neno cóntalle cinco dentes co dedo. Despois, ao revés.",
-   "misionFallo": "Bocexo do león fronte a fronte: boca enorme e kaaa desde o fondo. Gaña o bocexo máis esaxerado."
-  },
-  {
-   "id": "gl-fonte-ponte",
-   "a": {
-    "palabra": "fonte",
-    "lamina": "pal_fountain"
-   },
-   "b": {
-    "palabra": "ponte",
-    "lamina": "pal_bridge"
-   },
-   "fonema": "f → p",
-   "pista": "Dentes de coello sobre o labio de abaixo, e sopra.",
-   "misionAcerto": "Fonte humana: agáchate e brota cara arriba salpicando o adulto, que sacode o pelo empapado.",
-   "misionFallo": "O papel voador: papeliño na palma do adulto. Con fff inclínase e aguanta; con pe só dá un salto. Reto: tres segundos voando."
-  },
-  {
-   "id": "gl-xeo-cheo",
-   "a": {
-    "palabra": "xeo",
-    "lamina": "pal_ice"
-   },
-   "b": {
-    "palabra": "cheo",
-    "lamina": "pal_full"
-   },
-   "fonema": "ʃ → tʃ",
-   "pista": "Non pegues a lingua para arrincar: deixa saír o aire seguido, xxx.",
-   "misionAcerto": "Estatuas de xeo: quedade os dous conxelados ata que un pestanexe.",
-   "misionFallo": "Man diante da boca: co xeo o aire sae continuo; co cheo dá un golpiño. Probade os dous e notade a diferenza."
-  },
-  {
-   "id": "gl-xoia-soia",
-   "a": {
-    "palabra": "xoia",
-    "lamina": "pal_jewel"
-   },
-   "b": {
-    "palabra": "soia",
-    "lamina": "pal_soy"
-   },
-   "fonema": "ʃ → s",
-   "pista": "Bico de peixe cos beizos e a lingua recuada: xxx, non sss.",
-   "misionAcerto": "Tesouro: agochade un obxecto brillante e atopádeo entre os dous.",
-   "misionFallo": "Bico de peixe: poñede os dous morriños e soltade xxx tres segundos sen mover a lingua."
-  },
-  {
-   "id": "gl-oso-aberto",
-   "a": {
-    "palabra": "óso",
-    "lamina": "pal_bone"
-   },
-   "b": {
-    "palabra": "oso",
-    "lamina": "pal_bear"
-   },
-   "fonema": "ɔ → o",
-   "pista": "Para óso a boca ábrese coma no médico; para oso péchase coma para dar un bico.",
-   "misionAcerto": "Tocade xuntos o óso do brazo, o do xeonllo e o da cabeza.",
-   "misionFallo": "Espello de bocas: o adulto di óso e oso diante do espello e o neno sinala cal abre máis."
-  },
-  {
-   "id": "gl-bola-aberta",
-   "a": {
-    "palabra": "bóla",
-    "lamina": "pal_bun"
-   },
-   "b": {
-    "palabra": "bola",
-    "lamina": "pal_ball"
-   },
-   "fonema": "ɔ → o",
-   "pista": "Boca máis aberta e queixo máis baixo: bóóóla.",
-   "misionAcerto": "Pase de bóla imaxinaria: tres pases sen que caia ao chan.",
-   "misionFallo": "Man no queixo: baixa o queixo do adulto ao dicir bóla e nota que con bola case non baixa."
-  },
-  {
-   "id": "gl-palla-pala",
-   "a": {
-    "palabra": "palla",
-    "lamina": "pal_straw"
-   },
-   "b": {
-    "palabra": "pala",
-    "lamina": "pal_shovel"
-   },
-   "fonema": "ʎ → l",
-   "pista": "Pega toda a lingua ao paladar e deixa saír o aire polos lados: lla.",
-   "misionAcerto": "Palleiro: amoreade coxíns e tirádevos enriba os dous.",
-   "misionFallo": "Lingua ao teito: o neno pega a lingua ao paladar tres segundos e despois di lla, lla, lla."
-  },
-  {
-   "id": "gl-mel-pel",
-   "a": {
-    "palabra": "mel",
-    "lamina": "pal_honey"
-   },
-   "b": {
-    "palabra": "pel",
-    "lamina": "pal_skin"
-   },
-   "fonema": "m → p",
-   "pista": "Beizos xuntos e motor de abella polo nariz: mmm.",
-   "misionAcerto": "Osos lambóns: metede a man no pote imaxinario e lambede cun mmm ben longo.",
-   "misionFallo": "Dedo no nariz do outro: sostede mmmm tres segundos e notade a vibración. Co pe non treme nada."
-  }
- ],
- "progresions": [
-  {
-   "id": "gl-seq-coche",
-   "tema": "Transporte · O coche",
-   "fases": [
-    {
-     "palabra": "coche",
-     "lamina": "pal_car",
-     "tipo": "concepto",
-     "frase": "Isto é o coche.",
-     "accion": "Pon o coche na man da nena, sinálao e repetide xuntos “coche” mentres o movedes."
-    },
-    {
-     "palabra": "roda",
-     "lamina": "pal_wheel",
-     "tipo": "parte",
-     "frase": "O coche ten catro rodas.",
-     "accion": "Collede o coche e xirade unha roda co dedo da nena, repetindo “roda” en cada volta."
-    },
-    {
-     "palabra": "corre",
-     "lamina": "pal_run",
-     "tipo": "accion",
-     "frase": "O coche corre.",
-     "accion": "Fai correr o coche pola mesa e despois polo brazo da nena, acelerando ao dicir “corre”."
-    },
-    {
-     "palabra": "rápido",
-     "lamina": "pal_fast",
-     "tipo": "cualidad",
-     "frase": "O coche é moi rápido.",
-     "accion": "Corre coa nena da man uns pasos e frenade de golpe dicindo “rápido… e stop!”."
-    }
-   ]
-  },
-  {
-   "id": "gl-seq-can",
-   "tema": "Animais · O can",
-   "fases": [
-    {
-     "palabra": "can",
-     "lamina": "pal_dog",
-     "tipo": "concepto",
-     "frase": "Isto é o can.",
-     "accion": "Sinala un can de xoguete ou unha foto e acariñádeo xuntos repetindo “can”."
-    },
-    {
-     "palabra": "pata",
-     "lamina": "pal_paw",
-     "tipo": "parte",
-     "frase": "O can ten catro patas.",
-     "accion": "Poñede as mans no chan coma patas e camiñade a catro patas un par de pasos dicindo “pata”."
-    },
-    {
-     "palabra": "salta",
-     "lamina": "pal_jump",
-     "tipo": "accion",
-     "frase": "O can salta para coller a pelota.",
-     "accion": "Fai saltar o can de xoguete e saltade os dous á vez dicindo “salta!”."
-    },
-    {
-     "palabra": "peludo",
-     "lamina": "pal_furry",
-     "tipo": "cualidad",
-     "frase": "O can é brandiño e peludo.",
-     "accion": "Acariñade un peluche ou unha manta suave e dicide “peludo” pasando a man amodo."
-    }
-   ]
-  },
-  {
-   "id": "gl-seq-vaca",
-   "tema": "Animais · A vaca",
-   "fases": [
-    {
-     "palabra": "vaca",
-     "lamina": "pal_pal_cow",
-     "tipo": "concepto",
-     "frase": "Isto é a vaca.",
-     "accion": "Sinala unha vaca de xoguete ou unha foto e percorrede as súas manchas co dedo dicindo “vaca”."
-    },
-    {
-     "palabra": "leite",
-     "lamina": "pal_milk",
-     "tipo": "parte",
-     "frase": "Da vaca sae o leite.",
-     "accion": "Servide un pouco de leite no seu vaso e dade un grolo cada un dicindo “leite” antes de beber."
-    },
-    {
-     "palabra": "come",
-     "lamina": "pal_eat",
-     "tipo": "accion",
-     "frase": "A vaca come herba.",
-     "accion": "Agacha a cabeza coma a vaca e facede que mastigades herba movendo a mandíbula ao dicir “come”."
-    },
-    {
-     "palabra": "grande",
-     "lamina": "pal_big",
-     "tipo": "cualidad",
-     "frase": "A vaca é moi grande.",
-     "accion": "Abride os brazos todo o que poidades e poñédevos de puntas dicindo “graaande!”."
-    }
-   ]
-  },
-  {
-   "id": "gl-seq-gato",
-   "tema": "Animais · O gato",
-   "fases": [
-    {
-     "palabra": "gato",
-     "lamina": "pal_cat",
-     "tipo": "concepto",
-     "frase": "Isto é o gato.",
-     "accion": "Sinala un gato de xoguete ou unha foto e acariñádelle o lombo repetindo “gato”."
-    },
-    {
-     "palabra": "bigote",
-     "lamina": "pal_whiskers",
-     "tipo": "parte",
-     "frase": "O gato ten uns bigotes longos.",
-     "accion": "Debuxade bigotes no aire desde o nariz cara ás meixelas da nena mentres dicides “bigote”."
-    },
-    {
-     "palabra": "dorme",
-     "lamina": "pal_sleep",
-     "tipo": "accion",
-     "frase": "O gato dorme na súa cama.",
-     "accion": "Xunta as mans baixo a meixela, pecha os ollos e fai “shhh” convidando á nena a “durmir” contigo."
-    },
-    {
-     "palabra": "suave",
-     "lamina": "pal_soft",
-     "tipo": "cualidad",
-     "frase": "O pelo do gato é moi suave.",
-     "accion": "Pasade unha pluma ou un pano polo brazo da nena moi amodo dicindo “suave”."
-    }
-   ]
-  },
-  {
-   "id": "gl-seq-choiva",
-   "tema": "Natureza · A choiva",
-   "fases": [
-    {
-     "palabra": "auga",
-     "lamina": "pal_water",
-     "tipo": "concepto",
-     "frase": "Isto é a auga.",
-     "accion": "Mollade un dedo en auga real e tocádevos a man notando o frío mentres dicides “auga”."
-    },
-    {
-     "palabra": "nube",
-     "lamina": "pal_cloud",
-     "tipo": "parte",
-     "frase": "A auga sae da nube.",
-     "accion": "Sinalade unha nube pola ventá (ou debuxade unha no aire) e dicide “nube” soprando fluxiño."
-    },
-    {
-     "palabra": "cae",
-     "lamina": "pal_fall",
-     "tipo": "accion",
-     "frase": "A auga cae do ceo.",
-     "accion": "Ergue as mans arriba e báixaas movendo os dedos ata o chan dicindo “caeee”."
-    },
-    {
-     "palabra": "mollado",
-     "lamina": "pal_wet",
-     "tipo": "cualidad",
-     "frase": "A man está mollada.",
-     "accion": "Molla un pouco a man da nena cunha toalliña e dicide “mollado” sacudindo as mans."
-    }
-   ]
-  },
-  {
-   "id": "gl-seq-tren",
-   "tema": "Transporte · O tren",
-   "fases": [
-    {
-     "palabra": "tren",
-     "lamina": "pal_pal_train",
-     "tipo": "concepto",
-     "frase": "Isto é o tren.",
-     "accion": "Facede un treniño: a nena agárrase á túa cintura e avanzade polo corredor repetindo “tren”."
-    },
-    {
-     "palabra": "vagón",
-     "lamina": "pal_wagon",
-     "tipo": "parte",
-     "frase": "O tren leva moitos vagóns.",
-     "accion": "Poñede en fila tres caixas ou coxíns coma vagóns e enganchádeos dicindo “vagón” en cada un."
-    },
-    {
-     "palabra": "para",
-     "lamina": "pal_stop",
-     "tipo": "accion",
-     "frase": "O tren para na estación.",
-     "accion": "Avanzade coma un tren e frenade en seco ao dicir “para!”, quedando completamente quietos."
-    },
-    {
-     "palabra": "longo",
-     "lamina": "pal_long",
-     "tipo": "cualidad",
-     "frase": "O tren é moi longo.",
-     "accion": "Separade os brazos todo o posible marcando o “loooongo” que é o tren."
-    }
-   ]
-  },
-  {
-   "id": "gl-seq-paxaro",
-   "tema": "Animais · O paxaro",
-   "fases": [
-    {
-     "palabra": "paxaro",
-     "lamina": "pal_bird",
-     "tipo": "concepto",
-     "frase": "Isto é o paxaro.",
-     "accion": "Sinalade un paxaro pola ventá ou nunha foto e seguídeo co dedo dicindo “paxaro”."
-    },
-    {
-     "palabra": "pluma",
-     "lamina": "pal_feather",
-     "tipo": "parte",
-     "frase": "O paxaro ten moitas plumas.",
-     "accion": "Soprade unha pluma de verdade (ou un anaquiño de papel) para que flote e dicide “pluma” ao collela."
-    },
-    {
-     "palabra": "voa",
-     "lamina": "pal_fly",
-     "tipo": "accion",
-     "frase": "O paxaro voa polo ceo.",
-     "accion": "Abride os brazos coma ás e dade unha volta polo cuarto “voando” ao dicir “voa”."
-    },
-    {
-     "palabra": "pequeno",
-     "lamina": "pal_small",
-     "tipo": "cualidad",
-     "frase": "O paxaro é moi pequeno.",
-     "accion": "Xuntade o índice e o polgar deixando un ocoíño e mirade por el dicindo “pequeniño”."
-    }
-   ]
-  },
-  {
-   "id": "gl-seq-pan",
-   "tema": "Alimentación · O almorzo",
-   "fases": [
-    {
-     "palabra": "pan",
-     "lamina": "pal_bread",
-     "tipo": "concepto",
-     "frase": "Isto é o pan.",
-     "accion": "Pon un anaco de pan na man da nena e ulídeo xuntos antes de dicir “pan”."
-    },
-    {
-     "palabra": "cunca",
-     "lamina": "pal_bowl",
-     "tipo": "parte",
-     "frase": "No almorzo bebemos da cunca.",
-     "accion": "Collede a cunca do almorzo pola asa entre os dous e dade un grolo dicindo “cunca”."
-    },
-    {
-     "palabra": "quero pan",
-     "lamina": "pal_bread",
-     "tipo": "accion",
-     "frase": "Tes fame e pídelo.",
-     "accion": "Suxeita o pan á vista pero fóra do seu alcance e agarda a petición antes de darllo."
-    },
-    {
-     "palabra": "torrado",
-     "lamina": "pal_toast",
-     "tipo": "cualidad",
-     "frase": "O pan está torrado.",
-     "accion": "Comparade unha rebanda branda e unha torrada tocándoas: a torrada crequena ao apertala."
-    }
-   ]
-  },
-  {
-   "id": "gl-seq-globo",
-   "tema": "Xogo · O globo",
-   "fases": [
-    {
-     "palabra": "globo",
-     "lamina": "pal_balloon",
-     "tipo": "concepto",
-     "frase": "Isto é o globo.",
-     "accion": "Dálle un globo á nena e suxeitádeo entre os dous mentres repetides “globo”."
-    },
-    {
-     "palabra": "corda",
-     "lamina": "pal_rope",
-     "tipo": "parte",
-     "frase": "O globo ten unha corda.",
-     "accion": "Atade unha corda ao globo e deixade que a nena tire dela dicindo “corda”."
-    },
-    {
-     "palabra": "sopra",
-     "lamina": "pal_blow",
-     "tipo": "accion",
-     "frase": "Sopramos para inflar o globo.",
-     "accion": "Soprade os dous á vez sobre a man do outro para notar o aire antes de dicir “sopra”."
-    },
-    {
-     "palabra": "redondo",
-     "lamina": "pal_round",
-     "tipo": "cualidad",
-     "frase": "O globo é redondo.",
-     "accion": "Debuxade un círculo grande no aire cos dous brazos dicindo “redooondo”."
-    }
-   ]
-  }
- ],
- "capsulas": [
-  {
-   "id": "gl-cap-grande-pequeno",
-   "tipo": "adjetivos",
-   "montaxe": "Prepara dous osiños de peluche iguais pero de distinto tamaño: un claramente GRANDE e outro claramente PEQUENO. Colócaos xuntos diante da nena.",
-   "voltas": [
-    {
-     "palabra": "grande",
-     "lamina": "pal_big",
-     "frase": "Cal é o osiño GRANDE? Dámo e dío!",
-     "accion": "A nena entrégache o osiño grande mentres o di; abrazádeo esaxerando o enorme que é."
-    },
-    {
-     "palabra": "pequeno",
-     "lamina": "pal_small",
-     "frase": "Agora ao revés: cal é o osiño PEQUENO? Dámo e dío!",
-     "accion": "A nena dache o osiño pequeno; escondédeo nunha man e dicide “pequeno” con vociña mini."
-    }
-   ]
-  },
-  {
-   "id": "gl-cap-limpo-sucio",
-   "tipo": "adjetivos",
-   "montaxe": "Colle dúas culleres iguais: lava unha ata deixala brillante e mancha a outra cun pouco de comida ou barro. Ponas unha ao lado da outra.",
-   "voltas": [
-    {
-     "palabra": "sucio",
-     "lamina": "pal_dirty",
-     "frase": "Sinala a culler SUCIA. Como está esta? Dío.",
-     "accion": "A nena sinala a culler sucia e poñedes os dous cara de “puaj!” apartándoa."
-    },
-    {
-     "palabra": "limpo",
-     "lamina": "pal_clean",
-     "frase": "E esta outra culler, como está? Mira como brilla!",
-     "accion": "Sinalade a limpa, soprade sobre ela coma se brillase e chocade os cinco."
-    }
-   ]
-  },
-  {
-   "id": "gl-cap-abrir-pechar",
-   "tipo": "verbos",
-   "montaxe": "Pon diante da nena unha caixa con tapa e mete dentro, á vista, o seu xoguete favorito. Pecha a tapa.",
-   "voltas": [
-    {
-     "palabra": "abrir",
-     "lamina": "pal_open",
-     "frase": "O xoguete está dentro da caixa. Que facemos para sacalo?",
-     "accion": "Abride a caixa xuntos, moi amodo, e celebrade atopar o xoguete cun “tachán!”."
-    },
-    {
-     "palabra": "pechar",
-     "lamina": "pal_close",
-     "frase": "Gardamos o xoguete na caixa. Que facemos coa tapa?",
-     "accion": "A nena empurra a tapa ata pechala de todo mentres di a palabra."
-    }
-   ]
-  },
-  {
-   "id": "gl-cap-subir-baixar",
-   "tipo": "verbos",
-   "montaxe": "Fai unha rampla apoiando un libro grande inclinado e coloca un coche de xoguete ao pé da rampla.",
-   "voltas": [
-    {
-     "palabra": "subir",
-     "lamina": "pal_up",
-     "frase": "O coche vai á montaña. Que fai? Vai cara arriba!",
-     "accion": "Subide o coche pola rampla moi amodo mentres soa a palabra."
-    },
-    {
-     "palabra": "baixar",
-     "lamina": "pal_down",
-     "frase": "Agora o coche vai cara abaixo! Que fai?",
-     "accion": "Soltade o coche e que baixe só pola rampla; dicide “baixaaa!” mentres cae."
-    }
-   ]
-  },
-  {
-   "id": "gl-cap-frio-quente",
-   "tipo": "adjetivos",
-   "montaxe": "Prepara dous vasos: un con auga ben fría (con xeo se hai) e outro con auga morna. Ponos diante da nena.",
-   "voltas": [
-    {
-     "palabra": "frío",
-     "lamina": "pal_cold",
-     "frase": "Toca os vasos. Cal está FRÍO? Brrr!",
-     "accion": "A nena toca o vaso frío; tiritade xuntos “brrr!” encollendo os ombros."
-    },
-    {
-     "palabra": "quente",
-     "lamina": "pal_hot",
-     "frase": "E este outro vaso, como está?",
-     "accion": "Tocade o vaso morno e abanade a man coma se queimase, esaxerando moito."
-    }
-   ]
-  },
-  {
-   "id": "gl-cap-acender-apagar",
-   "tipo": "verbos",
-   "montaxe": "Colócate coa nena xunto ao interruptor da luz (ou colle unha lanterna). O cuarto empeza coa luz apagada.",
-   "voltas": [
-    {
-     "palabra": "acender",
-     "lamina": "pal_switch_on",
-     "frase": "Está escuro… Que facemos coa luz do interruptor?",
-     "accion": "A nena preme o interruptor xusto ao dicilo e celebrades a luz cun “oooh!”."
-    },
-    {
-     "palabra": "apagar",
-     "lamina": "pal_switch_off",
-     "frase": "Agora ao revés. Que facemos coa luz do interruptor?",
-     "accion": "A nena apaga a luz e dicídesvos “boas noites” con voz de murmurio."
-    }
-   ]
-  },
-  {
-   "id": "gl-cap-cheo-baleiro",
-   "tipo": "adjetivos",
-   "montaxe": "Prepara dúas cestas ou caixas iguais: enche unha ata arriba de xoguetes ou calcetíns e deixa a outra completamente baleira. Ponas diante da nena.",
-   "voltas": [
-    {
-     "palabra": "cheo",
-     "lamina": "pal_full",
-     "frase": "Cal é a cesta CHEA de cousas? Sinálaa e dío!",
-     "accion": "A nena sinala a cesta chea; erguédea xuntos esaxerando o moito que pesa: “uf, cheaaa!”."
-    },
-    {
-     "palabra": "baleiro",
-     "lamina": "pal_empty",
-     "frase": "E esta outra cesta, como está? Mira dentro!",
-     "accion": "Poñede a cesta baleira boca abaixo sobre a cabeza da nena coma un sombreiro: non cae nada, está baleira!"
-    }
-   ]
-  },
-  {
-   "id": "gl-cap-meter-sacar",
-   "tipo": "verbos",
-   "montaxe": "Colle unha caixa aberta e tres xoguetes pequenos. Coloca os xoguetes FÓRA da caixa, diante da nena.",
-   "voltas": [
-    {
-     "palabra": "meter",
-     "lamina": "pal_put_in",
-     "frase": "Os xoguetes van á súa casa, dentro da caixa. Que facemos?",
-     "accion": "A nena mete un xoguete na caixa con cada palabra; celebrade o último cun “todos dentro!”."
-    },
-    {
-     "palabra": "sacar",
-     "lamina": "pal_take_out",
-     "frase": "Agora ao revés. Que facemos cos xoguetes da caixa?",
-     "accion": "A nena saca os xoguetes un a un; contádeos en fila ao saír: “un, dous e tres fóra!”."
-    }
-   ]
-  }
- ],
- "escenarios": [
-  {
-   "id": "mana",
-   "titulo": "Rutina da mañá",
-   "subtitulo": "Espertar, lavarse, vestirse e almorzar",
-   "items": [
-    {
-     "palabra": "espertar",
-     "lamina": "pal_wake_up",
-     "frase": "Primeiro espertamos.",
-     "accion": "Tápate coma se durmises e estírate co neno ao soar o «rin, rin»."
-    },
-    {
-     "palabra": "lavar",
-     "lamina": "pal_wash",
-     "frase": "Despois lavámonos.",
-     "accion": "Fregade as mans xuntos coma se vos enxaboasedes."
-    },
-    {
-     "palabra": "vestir",
-     "lamina": "pal_get_dressed",
-     "frase": "Logo vestímonos.",
-     "accion": "Pasa unha camiseta pola cabeza do neno e celebrádeo ao asomar."
-    },
-    {
-     "palabra": "almorzar",
-     "lamina": "pal_breakfast",
-     "frase": "Ao final almorzamos.",
-     "accion": "Simulade xuntos que bebedes un vaso de leite coas dúas mans."
-    }
-   ]
-  },
-  {
-   "id": "comida",
-   "titulo": "Hora de comer",
-   "subtitulo": "Lavarse, sentar, comer e recoller",
-   "items": [
-    {
-     "palabra": "lavar",
-     "lamina": "pal_wash",
-     "frase": "Primeiro lavamos as mans.",
-     "accion": "Fregade as mans xuntos coma se vos enxaboasedes."
-    },
-    {
-     "palabra": "sentar",
-     "lamina": "pal_sit_down",
-     "frase": "Despois sentamos á mesa.",
-     "accion": "Sentádevos xuntos en dúas cadeiras, un fronte ao outro."
-    },
-    {
-     "palabra": "comer",
-     "lamina": "pal_eat",
-     "frase": "Logo comemos.",
-     "accion": "Levade xuntos unha culler imaxinaria á boca."
-    },
-    {
-     "palabra": "recoller",
-     "lamina": "pal_tidy_up",
-     "frase": "Ao final recollemos o prato.",
-     "accion": "Levade xuntos un prato (de verdade ou imaxinario) ata a cociña."
-    }
-   ]
-  },
-  {
-   "id": "parque",
-   "titulo": "No parque",
-   "subtitulo": "Zapatos, parque, tobogán e á casa",
-   "items": [
-    {
-     "palabra": "zapatos",
-     "lamina": "pal_shoes",
-     "frase": "Primeiro poñemos os zapatos.",
-     "accion": "Sinalade os zapatos do neno e tocádeos xuntos."
-    },
-    {
-     "palabra": "parque",
-     "lamina": "pal_park",
-     "frase": "Despois imos ao parque.",
-     "accion": "Camiñade xuntos uns pasos pola habitación cara «ao parque»."
-    },
-    {
-     "palabra": "tobogán",
-     "lamina": "pal_slide",
-     "frase": "Logo baixamos polo tobogán.",
-     "accion": "Facede xuntos o xesto de esvarar cos brazos no alto."
-    },
-    {
-     "palabra": "casa",
-     "lamina": "pal_house",
-     "frase": "Ao final volvemos á casa.",
-     "accion": "Xuntade as mans sobre a cabeza formando un tellado."
-    }
-   ]
-  },
-  {
-   "id": "bano",
-   "titulo": "Hora do baño",
-   "subtitulo": "Bañeira, xabón, auga e toalla",
-   "items": [
-    {
-     "palabra": "bañeira",
-     "lamina": "pal_bathtub",
-     "frase": "Primeiro metémonos na bañeira.",
-     "accion": "Levantade xuntos unha perna coma se entrasedes na bañeira."
-    },
-    {
-     "palabra": "xabón",
-     "lamina": "pal_soap",
-     "frase": "Despois enxaboámonos.",
-     "accion": "Fregade os brazos do neno cunha esponxa imaxinaria."
-    },
-    {
-     "palabra": "auga",
-     "lamina": "pal_water",
-     "frase": "Logo aclarámonos con auga.",
-     "accion": "Deixade caer os dedos sobre a cabeza do neno coma pingas."
-    },
-    {
-     "palabra": "toalla",
-     "lamina": "pal_towel",
-     "frase": "Ao final secámonos coa toalla.",
-     "accion": "Envolvede o neno nunha toalla (ou nos teus brazos) e secádeo."
-    }
-   ]
-  },
-  {
-   "id": "noite",
-   "titulo": "A durmir",
-   "subtitulo": "Pixama, dentes, conto e a durmir",
-   "items": [
-    {
-     "palabra": "pixama",
-     "lamina": "pal_pajamas",
-     "frase": "Primeiro poñemos o pixama.",
-     "accion": "Sinalade o pixama do neno e tocade os botóns xuntos."
-    },
-    {
-     "palabra": "dentes",
-     "lamina": "pal_teeth",
-     "frase": "Despois lavamos os dentes.",
-     "accion": "Facede xuntos o xesto de cepillar os dentes."
-    },
-    {
-     "palabra": "conto",
-     "lamina": "pal_story",
-     "frase": "Logo lemos un conto.",
-     "accion": "Abride as mans coma un libro e pasade unha páxina xuntos."
-    },
-    {
-     "palabra": "durmir",
-     "lamina": "pal_sleep",
-     "frase": "Ao final imos durmir.",
-     "accion": "Apoiade a cabeza nas mans xuntas e pechade os ollos."
-    }
-   ]
-  }
- ],
- "categorias": [
-  {
-   "id": "gl-cat-froitas",
-   "titulo": "Froitas",
-   "subtitulo": "Da froita de cada día á que se ve de cando en vez",
-   "items": [
-    {
-     "palabra": "mazá",
-     "lamina": "pal_apple",
-     "frase": "Isto é unha mazá.",
-     "accion": "Dálle un trabo a unha mazá de verdade (ou de xoguete) e que a nena imite o crequenar: ñac!"
-    },
-    {
-     "palabra": "plátano",
-     "lamina": "pal_pal_banana",
-     "frase": "Isto é un plátano.",
-     "accion": "Pelade xuntos un plátano baixando cada tira amodo mentres dicides a palabra."
-    },
-    {
-     "palabra": "laranxa",
-     "lamina": "pal_orange",
-     "frase": "Isto é unha laranxa.",
-     "accion": "Facede rodar unha laranxa pola mesa dun ao outro, nomeándoa en cada pase."
-    },
-    {
-     "palabra": "pera",
-     "lamina": "pal_pear",
-     "frase": "Isto é unha pera.",
-     "accion": "Debuxade a silueta da pera no aire co dedo: ancha abaixo, estreita arriba."
-    },
-    {
-     "palabra": "ananás",
-     "lamina": "pal_pineapple",
-     "frase": "Isto é un ananás.",
-     "accion": "Poñede as mans abertas sobre a cabeza coma a coroa do ananás e dicide a palabra."
-    },
-    {
-     "palabra": "cereixa",
-     "lamina": "pal_cherry",
-     "frase": "Isto é unha cereixa.",
-     "accion": "Pendurade dúas cereixas (ou dúas boliñas de papel) da orella coma pendentes e ride xuntos."
-    }
-   ]
-  },
-  {
-   "id": "gl-cat-animais",
-   "titulo": "Animais",
-   "subtitulo": "Dos da casa aos que só se ven no zoo",
-   "items": [
-    {
-     "palabra": "can",
-     "lamina": "pal_dog",
-     "frase": "Isto é un can.",
-     "accion": "Poñédevos a catro patas e dade tres pasos ladrando xuntos."
-    },
-    {
-     "palabra": "gato",
-     "lamina": "pal_cat",
-     "frase": "Isto é un gato.",
-     "accion": "Estirádevos coma un gato ao espertar e fregade a cabeza contra o brazo do outro."
-    },
-    {
-     "palabra": "pato",
-     "lamina": "pal_duck",
-     "frase": "Isto é un pato.",
-     "accion": "Camiñade en fila movendo o cu coma patos ata a porta."
-    },
-    {
-     "palabra": "vaca",
-     "lamina": "pal_pal_cow",
-     "frase": "Isto é unha vaca.",
-     "accion": "Poñede dous dedos na cabeza coma cornos e dicide a palabra mirándovos."
-    },
-    {
-     "palabra": "elefante",
-     "lamina": "pal_elephant",
-     "frase": "Isto é un elefante.",
-     "accion": "Facede a trompa co brazo colgando diante da cara e abaneádea ao dicilo."
-    },
-    {
-     "palabra": "xirafa",
-     "lamina": "pal_giraffe",
-     "frase": "Isto é unha xirafa.",
-     "accion": "Estirade o pescozo e os brazos cara arriba, o máis alto posible, para alcanzar unha folla."
-    }
-   ]
-  },
-  {
-   "id": "gl-cat-transportes",
-   "titulo": "Transportes",
-   "subtitulo": "Do que pasa pola rúa ao que case nunca se ve",
-   "items": [
-    {
-     "palabra": "coche",
-     "lamina": "pal_car",
-     "frase": "Isto é un coche.",
-     "accion": "Empurrade un coche de xoguete polo chan ata chocar suavemente co pé da nena."
-    },
-    {
-     "palabra": "moto",
-     "lamina": "pal_motorbike",
-     "frase": "Isto é unha moto.",
-     "accion": "Agarrade un guiador imaxinario e acelerade os dous á vez facendo ruído de motor."
-    },
-    {
-     "palabra": "tren",
-     "lamina": "pal_pal_train",
-     "frase": "Isto é un tren.",
-     "accion": "Facede un tren: a nena agárrase á túa cintura e dades unha volta ao cuarto."
-    },
-    {
-     "palabra": "barco",
-     "lamina": "pal_boat",
-     "frase": "Isto é un barco.",
-     "accion": "Sentade no chan e abaneádevos coma se o barco subise e baixase coas ondas."
-    },
-    {
-     "palabra": "avión",
-     "lamina": "pal_pal_plane",
-     "frase": "Isto é un avión.",
-     "accion": "Abride os brazos coma ás e dade unha volta polo cuarto inclinándovos nas curvas."
-    },
-    {
-     "palabra": "camión",
-     "lamina": "pal_truck",
-     "frase": "Isto é un camión.",
-     "accion": "Cargade tres xoguetes nunha caixa e arrastrádea xuntos coma se fose o remolque."
-    }
-   ]
-  },
-  {
-   "id": "gl-cat-cores",
-   "titulo": "Cores",
-   "subtitulo": "Do vermello e o azul ás que custan máis de nomear",
-   "items": [
-    {
-     "palabra": "vermello",
-     "lamina": "pal_red",
-     "frase": "Esta cor é vermella.",
-     "accion": "Buscade xuntos tres cousas vermellas polo cuarto e tocádeas nomeando a cor."
-    },
-    {
-     "palabra": "azul",
-     "lamina": "pal_blue",
-     "frase": "Esta cor é azul.",
-     "accion": "Sinalade o ceo ou algo azul da roupa da nena e dicide a cor á vez."
-    },
-    {
-     "palabra": "amarelo",
-     "lamina": "pal_yellow",
-     "frase": "Esta cor é amarela.",
-     "accion": "Facede un sol grande cos brazos e dicide a cor mirando cara arriba."
-    },
-    {
-     "palabra": "verde",
-     "lamina": "pal_green",
-     "frase": "Esta cor é verde.",
-     "accion": "Saíde buscar unha folla ou unha planta e tocádea mentres dicides a cor."
-    },
-    {
-     "palabra": "morado",
-     "lamina": "pal_purple",
-     "frase": "Esta cor é morada.",
-     "accion": "Mesturade diante da nena un pouco de vermello e azul (pintura ou plastilina) e nomeade o que sae."
-    },
-    {
-     "palabra": "marrón",
-     "lamina": "pal_brown",
-     "frase": "Esta cor é marrón.",
-     "accion": "Tocade xuntos algo de madeira —unha mesa, unha cadeira— e dicide a cor ao tocalo."
-    }
-   ]
-  },
-  {
-   "id": "gl-cat-corpo",
-   "titulo": "O corpo",
-   "subtitulo": "Do que se sinala só ao que hai que buscar",
-   "items": [
-    {
-     "palabra": "man",
-     "lamina": "pal_hand",
-     "frase": "Isto é a man.",
-     "accion": "Chocade as palmas tres veces, unha por cada golpe, mirándovos aos ollos."
-    },
-    {
-     "palabra": "pé",
-     "lamina": "pal_foot",
-     "frase": "Isto é o pé.",
-     "accion": "Poñede os vosos pés xuntos e comparade o tamaño antes de dar tres pisadas no chan."
-    },
-    {
-     "palabra": "boca",
-     "lamina": "pal_mouth",
-     "frase": "Isto é a boca.",
-     "accion": "Poñédevos fronte ao espello e abride e pechade a boca á vez, moi amodo."
-    },
-    {
-     "palabra": "ollo",
-     "lamina": "pal_eye",
-     "frase": "Isto é o ollo.",
-     "accion": "Xogade a taparvos os ollos e destapalos cun “cucú!” cada vez que dicides a palabra."
-    },
-    {
-     "palabra": "xeonllo",
-     "lamina": "pal_knee",
-     "frase": "Isto é o xeonllo.",
-     "accion": "Dobrade os xeonllos á vez ata quedar en crocas e subide dicindo a palabra."
-    },
-    {
-     "palabra": "cóbado",
-     "lamina": "pal_elbow",
-     "frase": "Isto é o cóbado.",
-     "accion": "Saudádevos chocando os cóbados, coma se facía na pandemia, tres veces seguidas."
-    }
-   ]
-  }
- ]
 }

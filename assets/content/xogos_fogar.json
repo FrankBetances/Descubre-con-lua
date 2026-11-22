@@ -30,8 +30,8 @@
     {
       "id": "xogo_02_barco_samil",
       "titulo": {
-        "gl": "O barquiño de Samil na ría",
-        "es": "El barquito de Samil en la ría"
+        "gl": "O barquiño na ría",
+        "es": "El barquito en la ría"
       },
       "idade": "0-3 anos",
       "duracionMin": 3,
@@ -88,8 +88,8 @@
       "idade": "1-4 anos",
       "duracionMin": 3,
       "materiais": {
-        "gl": "Unha cuncha grande de Samil ou un vaso de plástico limpo",
-        "es": "Una concha grande de Samil o un vaso de plástico limpio"
+        "gl": "Unha cuncha grande da praia ou un vaso de plástico limpo",
+        "es": "Una concha grande de la playa o un vaso de plástico limpio"
       },
       "obxectivo": {
         "gl": "Atención auditiva e un silencio tranquilo",
@@ -97,8 +97,8 @@
       },
       "fraseEn": "Listen close, hear the gentle sea!",
       "guionAdulto": {
-        "gl": "Achega a cuncha á orella do neno/a. Respira amodiño: «Shhh... Escoitas o mar de Vigo?».",
-        "es": "Acerca la concha a la oreja del niño/a. Respira despacio: «Shhh... ¿Escuchas el mar de Vigo?»."
+        "gl": "Achega a cuncha á orella do neno/a. Respira amodiño: «Shhh... Escoitas o mar da ría?».",
+        "es": "Acerca la concha a la oreja del niño/a. Respira despacio: «Shhh... ¿Escuchas el mar de la ría?»."
       },
       "accionKinestesica": {
         "gl": "Inclina a cabeza, pecha os ollos ou pousa a man sobre a cuncha con curiosidade.",

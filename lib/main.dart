@@ -29,7 +29,7 @@ void main() async {
   runApp(DescubreConLuaApp(contentRepository: repository));
 }
 
-/// Root application widget for «Descubre con Lúa · Edición Vigo».
+/// Root application widget for «Descubre con Lúa».
 ///
 /// Configured strictly for offline operation with zero network dependencies,
 /// sovereign bilingual content (`gl`/`es`), and sober educational Material 3 design.
@@ -105,7 +105,7 @@ class _DescubreConLuaAppState extends State<DescubreConLuaApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Descubre con Lúa · Edición Vigo',
+      title: 'Descubre con Lúa',
       debugShowCheckedModeBanner: false,
       theme: AppTheme.lightTheme,
       initialRoute: '/',

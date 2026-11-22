@@ -8,8 +8,8 @@
     {
       "semana": 1,
       "tema": {
-        "gl": "O mar de Vigo",
-        "es": "El mar de Vigo"
+        "gl": "O mar da ría",
+        "es": "El mar de la ría"
       },
       "palabras": [
         {
@@ -872,7 +872,8 @@
           "tprAction": {
             "gl": "Abrazarse a un mesmo pensando en alguén",
             "es": "Abrazarse a uno mismo pensando en alguien"
-          }
+          },
+          "lamina": "pal_miss"
         },
         {
           "id": "3_4.xuno.s4.celebrate",

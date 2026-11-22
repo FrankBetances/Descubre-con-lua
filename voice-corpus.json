@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-22T09:22:53Z",
+ "generatedAt": "2026-11-22T09:36:22Z",
  "entries": 39834,
  "byStyle": {
   "child": 449,
@@ -64030,6 +64030,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_055dce56_53",
+   "lang": "en",
+   "style": "tutor",
+   "text": "The metropolitan park has tall trees and clean paths.",
+   "speech": "The metropolitan park has tall trees and clean paths.",
+   "source": "corpus/3597/frase",
+   "pack": false
+  },
+  {
    "id": "en_tutor_055f1f29_12",
    "lang": "en",
    "style": "tutor",
@@ -67711,6 +67720,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_0e704cf2_24",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Dinamita the playful dog",
+   "speech": "Dinamita the playful dog",
+   "source": "lamina/cuento_ilus_202/en",
+   "pack": false
+  },
+  {
    "id": "en_tutor_0e7136fb_35",
    "lang": "en",
    "style": "tutor",
@@ -69484,15 +69502,6 @@
    "pack": false
   },
   {
-   "id": "en_tutor_12a6aab2_33",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Vigo was small, but now it is big",
-   "speech": "Vigo was small, but now it is big",
-   "source": "tpr.5_6.xaneiro/s2/5_6.xaneiro.s2.vigo-was-small-but-now-it-is-big",
-   "pack": false
-  },
-  {
    "id": "en_tutor_12b2bfc7_33",
    "lang": "en",
    "style": "tutor",
@@ -70417,15 +70426,6 @@
    "text": "C · Cat",
    "speech": "C · Cat",
    "source": "lamina/flashcard_c_cat/en",
-   "pack": false
-  },
-  {
-   "id": "en_tutor_14bce68b_36",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Her diary chronicles a year in Vigo.",
-   "speech": "Her diary chronicles a year in Vigo.",
-   "source": "corpus/3166/frase",
    "pack": false
   },
   {
@@ -71365,6 +71365,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_170afd2e_30",
+   "lang": "en",
+   "style": "tutor",
+   "text": "We walk by the sea in Galicia.",
+   "speech": "We walk by the sea in Galicia.",
+   "source": "english/colocacion/col-58/naturalContext",
+   "pack": false
+  },
+  {
    "id": "en_tutor_170b2146_38",
    "lang": "en",
    "style": "tutor",
@@ -71416,6 +71425,15 @@
    "text": "Sleep is crucial for young children.",
    "speech": "Sleep is crucial for young children.",
    "source": "corpus/2235/frase",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_172fee60_36",
+   "lang": "en",
+   "style": "tutor",
+   "text": "We moved to this town two years ago.",
+   "speech": "We moved to this town two years ago.",
+   "source": "corpus/21/frase",
    "pack": false
   },
   {
@@ -72823,15 +72841,6 @@
    "pack": false
   },
   {
-   "id": "en_tutor_1aa111a9_30",
-   "lang": "en",
-   "style": "tutor",
-   "text": "This train terminates at Vigo.",
-   "speech": "This train terminates at Vigo.",
-   "source": "corpus/3906/frase",
-   "pack": false
-  },
-  {
    "id": "en_tutor_1aa3472d_11",
    "lang": "en",
    "style": "tutor",
@@ -74209,15 +74218,6 @@
    "pack": false
   },
   {
-   "id": "en_tutor_1ee55cca_43",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Dolphins sometimes swim in the Ría de Vigo.",
-   "speech": "Dolphins sometimes swim in the Ría de Vigo.",
-   "source": "corpus/3309/frase",
-   "pack": false
-  },
-  {
    "id": "en_tutor_1ee8b58f_43",
    "lang": "en",
    "style": "tutor",
@@ -74605,15 +74605,6 @@
    "pack": false
   },
   {
-   "id": "en_tutor_203348b5_33",
-   "lang": "en",
-   "style": "tutor",
-   "text": "We have lived in Vigo since 2020.",
-   "speech": "We have lived in Vigo since 2020.",
-   "source": "gramatica/punto/22",
-   "pack": false
-  },
-  {
    "id": "en_tutor_2036a584_29",
    "lang": "en",
    "style": "tutor",
@@ -74989,6 +74980,15 @@
    "text": "Yes! Warm chestnuts! Yummy warm chestnuts!",
    "speech": "Yes! Warm chestnuts! Yummy warm chestnuts!",
    "source": "microcuento.curso_3_4.03/3/recast.sinala",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_21633620_36",
+   "lang": "en",
+   "style": "tutor",
+   "text": "We have lived in Galicia since 2020.",
+   "speech": "We have lived in Galicia since 2020.",
+   "source": "gramatica/punto/22",
    "pack": false
   },
   {
@@ -75448,6 +75448,15 @@
    "text": "The neighbours love a bit of gossip.",
    "speech": "The neighbours love a bit of gossip.",
    "source": "corpus/3438/frase",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_22ac8b79_39",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Our destination is the coastal islands.",
+   "speech": "Our destination is the coastal islands.",
+   "source": "corpus/3268/frase",
    "pack": false
   },
   {
@@ -80365,15 +80374,6 @@
    "pack": false
   },
   {
-   "id": "en_tutor_2f06b7a0_36",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Our destination is the Cíes Islands.",
-   "speech": "Our destination is the Cíes Islands.",
-   "source": "corpus/3268/frase",
-   "pack": false
-  },
-  {
    "id": "en_tutor_2f0855bf_11",
    "lang": "en",
    "style": "tutor",
@@ -81163,15 +81163,6 @@
    "text": "Crunchy leaves",
    "speech": "Crunchy leaves",
    "source": "tpr.2_3.novembro/s3/2_3.novembro.s3.crunchy-leaves",
-   "pack": false
-  },
-  {
-   "id": "en_tutor_30fef5a3_19",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Vigo festive lights",
-   "speech": "Vigo festive lights",
-   "source": "lamina/cuento_ilus_182/en",
    "pack": false
   },
   {
@@ -84910,15 +84901,6 @@
    "pack": false
   },
   {
-   "id": "en_tutor_3ad11b84_40",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Vigo has a long history of trade by sea.",
-   "speech": "Vigo has a long history of trade by sea.",
-   "source": "corpus/1946/frase",
-   "pack": false
-  },
-  {
    "id": "en_tutor_3ad3b442_48",
    "lang": "en",
    "style": "tutor",
@@ -85522,6 +85504,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_3c8f4b7e_16",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Sunny shore walk",
+   "speech": "Sunny shore walk",
+   "source": "lamina/cuento_ilus_172/en",
+   "pack": false
+  },
+  {
    "id": "en_tutor_3c937b03_27",
    "lang": "en",
    "style": "tutor",
@@ -85888,15 +85879,6 @@
    "text": "Why is the little goat calling Lúa?",
    "speech": "Why is the little goat calling Lúa?",
    "source": "biblioteca/HIS-065",
-   "pack": false
-  },
-  {
-   "id": "en_tutor_3d91282c_24",
-   "lang": "en",
-   "style": "tutor",
-   "text": "It seldom snows in Vigo.",
-   "speech": "It seldom snows in Vigo.",
-   "source": "corpus/3799/frase",
    "pack": false
   },
   {
@@ -87022,6 +87004,15 @@
    "text": "We walk on the path so the plants can grow",
    "speech": "We walk on the path so the plants can grow",
    "source": "tpr.4_5.abril/s1/4_5.abril.s1.we-walk-on-the-path-so-the-plants-can-grow",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_40595af8_44",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Boats ferry tourists to the coastal islands.",
+   "speech": "Boats ferry tourists to the coastal islands.",
+   "source": "corpus/3378/frase",
    "pack": false
   },
   {
@@ -88426,15 +88417,6 @@
    "text": "Where was the spoon? Touch the red napkin!",
    "speech": "Where was the spoon? Touch the red napkin!",
    "source": "biblioteca/HIS-063",
-   "pack": false
-  },
-  {
-   "id": "en_tutor_43865c7b_12",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Cíes Islands",
-   "speech": "Cíes Islands",
-   "source": "lamina/vigo_nat_98/en",
    "pack": false
   },
   {
@@ -91057,6 +91039,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_4a7bd6d8_44",
+   "lang": "en",
+   "style": "tutor",
+   "text": "The ship unloaded its cargo at the sea port.",
+   "speech": "The ship unloaded its cargo at the sea port.",
+   "source": "corpus/3140/frase",
+   "pack": false
+  },
+  {
    "id": "en_tutor_4a88652c_34",
    "lang": "en",
    "style": "tutor",
@@ -93160,6 +93151,15 @@
    "text": "The Earth goes around the Sun",
    "speech": "The Earth goes around the Sun",
    "source": "tpr.5_6.decembro/s1/5_6.decembro.s1.the-earth-goes-around-the-sun",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_50b712f9_37",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Fishing is a big industry in Galicia.",
+   "speech": "Fishing is a big industry in Galicia.",
+   "source": "corpus/1460/frase",
    "pack": false
   },
   {
@@ -96079,6 +96079,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_58525907_33",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Big ships come into the sea port.",
+   "speech": "Big ships come into the sea port.",
+   "source": "corpus/1668/frase",
+   "pack": false
+  },
+  {
    "id": "en_tutor_58547e0d_52",
    "lang": "en",
    "style": "tutor",
@@ -96949,6 +96958,15 @@
    "text": "Open, shut them",
    "speech": "Open, shut them",
    "source": "tpr.0_2.abril/s4/0_2.abril.s4.open-shut-them",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_5a79454d_11",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Autumn park",
+   "speech": "Autumn park",
+   "source": "tpr.2_3.novembro/s1/2_3.novembro.s1.castrelos-park",
    "pack": false
   },
   {
@@ -98623,6 +98641,15 @@
    "text": "She won first prize in the drawing contest.",
    "speech": "She won first prize in the drawing contest.",
    "source": "corpus/2719/frase",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_5e7b7c88_39",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Her diary chronicles a year in Galicia.",
+   "speech": "Her diary chronicles a year in Galicia.",
+   "source": "corpus/3166/frase",
    "pack": false
   },
   {
@@ -102124,15 +102151,6 @@
    "text": "Rain, rain, go away, come again another day.",
    "speech": "Rain, rain, go away, come again another day.",
    "source": "curriculo/T3.U4.2/rimas",
-   "pack": false
-  },
-  {
-   "id": "en_tutor_66d29f75_20",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Was Vigo always big?",
-   "speech": "Was Vigo always big?",
-   "source": "tpr.5_6.xaneiro/s2/5_6.xaneiro.s2.was-vigo-always-big",
    "pack": false
   },
   {
@@ -105907,15 +105925,6 @@
    "pack": false
   },
   {
-   "id": "en_tutor_704f586a_48",
-   "lang": "en",
-   "style": "tutor",
-   "text": "The book portrays the life of fishermen in Vigo.",
-   "speech": "The book portrays the life of fishermen in Vigo.",
-   "source": "corpus/3705/frase",
-   "pack": false
-  },
-  {
    "id": "en_tutor_7054bbaf_24",
    "lang": "en",
    "style": "tutor",
@@ -106462,15 +106471,6 @@
    "text": "Can you flap your wings like the polar bear?",
    "speech": "Can you flap your wings like the polar bear?",
    "source": "microcuento.curso_2_3.06/3/casa",
-   "pack": false
-  },
-  {
-   "id": "en_tutor_71954e97_48",
-   "lang": "en",
-   "style": "tutor",
-   "text": "The ship unloaded its cargo at the port of Vigo.",
-   "speech": "The ship unloaded its cargo at the port of Vigo.",
-   "source": "corpus/3140/frase",
    "pack": false
   },
   {
@@ -107443,6 +107443,15 @@
    "text": "Look, rain. Tap, tap! No hat on the bench.",
    "speech": "Look, rain. Tap, tap! No hat on the bench.",
    "source": "biblioteca/HIS-084",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_73b5ddf1_45",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Our coast has a long history of trade by sea.",
+   "speech": "Our coast has a long history of trade by sea.",
+   "source": "corpus/1946/frase",
    "pack": false
   },
   {
@@ -110398,15 +110407,6 @@
    "pack": false
   },
   {
-   "id": "en_tutor_7ad71f71_27",
-   "lang": "en",
-   "style": "tutor",
-   "text": "We walk by the sea in Vigo.",
-   "speech": "We walk by the sea in Vigo.",
-   "source": "english/colocacion/col-58/naturalContext",
-   "pack": false
-  },
-  {
    "id": "en_tutor_7ae150cb_32",
    "lang": "en",
    "style": "tutor",
@@ -112504,15 +112504,6 @@
    "pack": false
   },
   {
-   "id": "en_tutor_8028dc91_14",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Castrelos Park",
-   "speech": "Castrelos Park",
-   "source": "tpr.2_3.novembro/s1/2_3.novembro.s1.castrelos-park",
-   "pack": false
-  },
-  {
    "id": "en_tutor_802ca783_31",
    "lang": "en",
    "style": "tutor",
@@ -113608,6 +113599,15 @@
    "text": "Stick out your tongue",
    "speech": "Stick out your tongue",
    "source": "tpr.0_2.outubro/s3/0_2.outubro.s3.stick-out",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_82a2f218_39",
+   "lang": "en",
+   "style": "tutor",
+   "text": "My ancestors were fishermen in Galicia.",
+   "speech": "My ancestors were fishermen in Galicia.",
+   "source": "corpus/3034/frase",
    "pack": false
   },
   {
@@ -115546,15 +115546,6 @@
    "pack": false
   },
   {
-   "id": "en_tutor_86eac4a4_34",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Fishing is a big industry in Vigo.",
-   "speech": "Fishing is a big industry in Vigo.",
-   "source": "corpus/1460/frase",
-   "pack": false
-  },
-  {
    "id": "en_tutor_86f01de5_24",
    "lang": "en",
    "style": "tutor",
@@ -116887,6 +116878,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_8a521314_44",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Dolphins sometimes swim in the Galician ría.",
+   "speech": "Dolphins sometimes swim in the Galician ría.",
+   "source": "corpus/3309/frase",
+   "pack": false
+  },
+  {
    "id": "en_tutor_8a54947c_55",
    "lang": "en",
    "style": "tutor",
@@ -116938,15 +116938,6 @@
    "text": "Boom-boom, boom-boom",
    "speech": "Boom boom, boom boom",
    "source": "tpr.5_6.outubro/s2/5_6.outubro.s2.boom-boom-boom-boom",
-   "pack": false
-  },
-  {
-   "id": "en_tutor_8a89dba0_37",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Big ships come into the port of Vigo.",
-   "speech": "Big ships come into the port of Vigo.",
-   "source": "corpus/1668/frase",
    "pack": false
   },
   {
@@ -122476,6 +122467,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_9880db44_46",
+   "lang": "en",
+   "style": "tutor",
+   "text": "A contingent of fans travelled from the coast.",
+   "speech": "A contingent of fans travelled from the coast.",
+   "source": "corpus/3219/frase",
+   "pack": false
+  },
+  {
    "id": "en_tutor_9887203c_33",
    "lang": "en",
    "style": "tutor",
@@ -123067,15 +123067,6 @@
    "text": "The vet cured our cat's eye infection.",
    "speech": "The vet cured our cat's eye infection.",
    "source": "corpus/1244/frase",
-   "pack": false
-  },
-  {
-   "id": "en_tutor_9a083eab_41",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Boats ferry tourists to the Cíes Islands.",
-   "speech": "Boats ferry tourists to the Cíes Islands.",
-   "source": "corpus/3378/frase",
    "pack": false
   },
   {
@@ -124573,6 +124564,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_9d79e76c_30",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Our town is a city by the sea.",
+   "speech": "Our town is a city by the sea.",
+   "source": "corpus/159/frase",
+   "pack": false
+  },
+  {
    "id": "en_tutor_9d7ec813_34",
    "lang": "en",
    "style": "tutor",
@@ -124750,6 +124750,15 @@
    "text": "Waving is a gesture that means hello.",
    "speech": "Waving is a gesture that means hello.",
    "source": "corpus/2444/frase",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_9e05aea8_66",
+   "lang": "en",
+   "style": "tutor",
+   "text": "FIRST the seed, THEN a strong tree, FINALLY the symbol of Galicia!",
+   "speech": "FIRST the seed, THEN a strong tree, FINALLY the symbol of Galicia!",
+   "source": "calendario/traxecto/curso_5_6/5/frase",
    "pack": false
   },
   {
@@ -125524,6 +125533,15 @@
    "text": "She has chronic back pain.",
    "speech": "She has chronic back pain.",
    "source": "corpus/3165/frase",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_a0010ca5_20",
+   "lang": "en",
+   "style": "tutor",
+   "text": "illas da ría Islands",
+   "speech": "illas da ría Islands",
+   "source": "lamina/vigo_nat_98/en",
    "pack": false
   },
   {
@@ -131062,6 +131080,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_ae6c6beb_24",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Was the town always big?",
+   "speech": "Was the town always big?",
+   "source": "tpr.5_6.xaneiro/s2/5_6.xaneiro.s2.was-vigo-always-big",
+   "pack": false
+  },
+  {
    "id": "en_tutor_ae6f2258_57",
    "lang": "en",
    "style": "tutor",
@@ -131986,6 +132013,15 @@
    "text": "She is a very kind person.",
    "speech": "She is a very kind person.",
    "source": "corpus/624/frase",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_b0c31e14_46",
+   "lang": "en",
+   "style": "tutor",
+   "text": "There is a monument to Jules Verne by the sea.",
+   "speech": "There is a monument to Jules Verne by the sea.",
+   "source": "corpus/3615/frase",
    "pack": false
   },
   {
@@ -134275,15 +134311,6 @@
    "pack": false
   },
   {
-   "id": "en_tutor_b6de6449_16",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Samil shore walk",
-   "speech": "Samil shore walk",
-   "source": "lamina/cuento_ilus_172/en",
-   "pack": false
-  },
-  {
    "id": "en_tutor_b6e1be75_37",
    "lang": "en",
    "style": "tutor",
@@ -135577,15 +135604,6 @@
    "text": "Bigger now",
    "speech": "Bigger now",
    "source": "tpr.0_2.xuno/s4/0_2.xuno.s4.bigger-now",
-   "pack": false
-  },
-  {
-   "id": "en_tutor_ba9e5ef5_27",
-   "lang": "en",
-   "style": "tutor",
-   "text": "The winter in Vigo is mild.",
-   "speech": "The winter in Vigo is mild.",
-   "source": "corpus/2591/frase",
    "pack": false
   },
   {
@@ -138424,6 +138442,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_c1346721_27",
+   "lang": "en",
+   "style": "tutor",
+   "text": "It seldom snows in Galicia.",
+   "speech": "It seldom snows in Galicia.",
+   "source": "corpus/3799/frase",
+   "pack": false
+  },
+  {
    "id": "en_tutor_c13e2956_21",
    "lang": "en",
    "style": "tutor",
@@ -138862,15 +138889,6 @@
    "text": "A paper plane! Whoosh, whoosh!",
    "speech": "A paper plane! Whoosh, whoosh!",
    "source": "biblioteca/HIS-098",
-   "pack": false
-  },
-  {
-   "id": "en_tutor_c23f6287_31",
-   "lang": "en",
-   "style": "tutor",
-   "text": "We moved to Vigo two years ago.",
-   "speech": "We moved to Vigo two years ago.",
-   "source": "corpus/21/frase",
    "pack": false
   },
   {
@@ -139456,6 +139474,15 @@
    "text": "Pinch softly",
    "speech": "Pinch softly",
    "source": "tpr.0_2.outubro/s1/0_2.outubro.s1.pinch-softly",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_c3ae63bd_37",
+   "lang": "en",
+   "style": "tutor",
+   "text": "This train terminates at the station.",
+   "speech": "This train terminates at the station.",
+   "source": "corpus/3906/frase",
    "pack": false
   },
   {
@@ -141268,6 +141295,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_c827137a_30",
+   "lang": "en",
+   "style": "tutor",
+   "text": "The winter in Galicia is mild.",
+   "speech": "The winter in Galicia is mild.",
+   "source": "corpus/2591/frase",
+   "pack": false
+  },
+  {
    "id": "en_tutor_c828b555_78",
    "lang": "en",
    "style": "tutor",
@@ -141463,15 +141499,6 @@
    "text": "Put the cups on the table.",
    "speech": "Put the cups on the table.",
    "source": "corpus/662/frase",
-   "pack": false
-  },
-  {
-   "id": "en_tutor_c8855697_62",
-   "lang": "en",
-   "style": "tutor",
-   "text": "The metropolitan area of Vigo has about half a million people.",
-   "speech": "The metropolitan area of Vigo has about half a million people.",
-   "source": "corpus/3597/frase",
    "pack": false
   },
   {
@@ -145939,15 +145966,6 @@
    "pack": false
   },
   {
-   "id": "en_tutor_d31dfc65_26",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Vigo is a city by the sea.",
-   "speech": "Vigo is a city by the sea.",
-   "source": "corpus/159/frase",
-   "pack": false
-  },
-  {
    "id": "en_tutor_d32cdadf_56",
    "lang": "en",
    "style": "tutor",
@@ -146224,6 +146242,15 @@
    "text": "Look closely! Where is the hat? Under the bench? Touch it!",
    "speech": "Look closely! Where is the hat? Under the bench? Touch it!",
    "source": "biblioteca/HIS-084",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_d3fcd740_37",
+   "lang": "en",
+   "style": "tutor",
+   "text": "The town was small, but now it is big",
+   "speech": "The town was small, but now it is big",
+   "source": "tpr.5_6.xaneiro/s2/5_6.xaneiro.s2.vigo-was-small-but-now-it-is-big",
    "pack": false
   },
   {
@@ -147106,15 +147133,6 @@
    "text": "Yes! Clap, clap! Lúa has her ball!",
    "speech": "Yes! Clap, clap! Lúa has her ball!",
    "source": "biblioteca/HIS-005",
-   "pack": false
-  },
-  {
-   "id": "en_tutor_d605e61b_36",
-   "lang": "en",
-   "style": "tutor",
-   "text": "My ancestors were fishermen in Vigo.",
-   "speech": "My ancestors were fishermen in Vigo.",
-   "source": "corpus/3034/frase",
    "pack": false
   },
   {
@@ -151501,15 +151519,6 @@
    "pack": false
   },
   {
-   "id": "en_tutor_e2289328_41",
-   "lang": "en",
-   "style": "tutor",
-   "text": "A contingent of fans travelled from Vigo.",
-   "speech": "A contingent of fans travelled from Vigo.",
-   "source": "corpus/3219/frase",
-   "pack": false
-  },
-  {
    "id": "en_tutor_e22d9bcd_48",
    "lang": "en",
    "style": "tutor",
@@ -154246,6 +154255,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_e955ac5f_11",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Sunny beach",
+   "speech": "Sunny beach",
+   "source": "tpr.0_2.xuno/s1/0_2.xuno.s1.samil-beach",
+   "pack": false
+  },
+  {
    "id": "en_tutor_e95629bc_34",
    "lang": "en",
    "style": "tutor",
@@ -155848,15 +155866,6 @@
    "pack": false
   },
   {
-   "id": "en_tutor_ed4112f7_24",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Dinamita the dog of Vigo",
-   "speech": "Dinamita the dog of Vigo",
-   "source": "lamina/cuento_ilus_202/en",
-   "pack": false
-  },
-  {
    "id": "en_tutor_ed444da4_13",
    "lang": "en",
    "style": "tutor",
@@ -156700,15 +156709,6 @@
    "text": "Bedtime routine",
    "speech": "Bedtime routine",
    "source": "tpr.5_6.outubro/s4/5_6.outubro.s4.bedtime-routine",
-   "pack": false
-  },
-  {
-   "id": "en_tutor_ef9640ed_63",
-   "lang": "en",
-   "style": "tutor",
-   "text": "FIRST the seed, THEN a strong tree, FINALLY the symbol of Vigo!",
-   "speech": "FIRST the seed, THEN a strong tree, FINALLY the symbol of Vigo!",
-   "source": "calendario/traxecto/curso_5_6/5/frase",
    "pack": false
   },
   {
@@ -158005,6 +158005,15 @@
    "text": "A thousand stars filled the sky.",
    "speech": "A thousand stars filled the sky.",
    "source": "corpus/875/frase",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_f2f52acf_51",
+   "lang": "en",
+   "style": "tutor",
+   "text": "The book portrays the life of fishermen in Galicia.",
+   "speech": "The book portrays the life of fishermen in Galicia.",
+   "source": "corpus/3705/frase",
    "pack": false
   },
   {
@@ -160186,15 +160195,6 @@
    "pack": false
   },
   {
-   "id": "en_tutor_f8a5b30a_11",
-   "lang": "en",
-   "style": "tutor",
-   "text": "Samil beach",
-   "speech": "Samil beach",
-   "source": "tpr.0_2.xuno/s1/0_2.xuno.s1.samil-beach",
-   "pack": false
-  },
-  {
    "id": "en_tutor_f8aa29f7_44",
    "lang": "en",
    "style": "tutor",
@@ -160291,6 +160291,15 @@
    "text": "Muddy bank",
    "speech": "Muddy bank",
    "source": "tpr.4_5.maio/s4/4_5.maio.s4.muddy-bank",
+   "pack": false
+  },
+  {
+   "id": "en_tutor_f8f1ec5a_19",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Town festive lights",
+   "speech": "Town festive lights",
+   "source": "lamina/cuento_ilus_182/en",
    "pack": false
   },
   {
@@ -161524,15 +161533,6 @@
    "text": "Look out of the window.",
    "speech": "Look out of the window.",
    "source": "corpus/973/frase",
-   "pack": false
-  },
-  {
-   "id": "en_tutor_fc45df6b_43",
-   "lang": "en",
-   "style": "tutor",
-   "text": "There is a monument to Jules Verne in Vigo.",
-   "speech": "There is a monument to Jules Verne in Vigo.",
-   "source": "corpus/3615/frase",
    "pack": false
   },
   {
@@ -168564,15 +168564,6 @@
    "pack": false
   },
   {
-   "id": "es_tutor_0d512764_15",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Monte de A Guía",
-   "speech": "Monte de A Guía",
-   "source": "significados/significado",
-   "pack": false
-  },
-  {
    "id": "es_tutor_0d51c23d_42",
    "lang": "es",
    "style": "tutor",
@@ -172362,6 +172353,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_17e84611_30",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¿El pueblo siempre fue grande?",
+   "speech": "¿El pueblo siempre fue grande?",
+   "source": "tpr.5_6.xaneiro/s2/5_6.xaneiro.s2.was-vigo-always-big/significado",
+   "pack": true
+  },
+  {
    "id": "es_tutor_180188ca_13",
    "lang": "es",
    "style": "tutor",
@@ -174765,15 +174765,6 @@
    "pack": true
   },
   {
-   "id": "es_tutor_1dca9a8c_17",
-   "lang": "es",
-   "style": "tutor",
-   "text": "O Berbés marinero",
-   "speech": "O Berbés marinero",
-   "source": "significados/significado",
-   "pack": false
-  },
-  {
    "id": "es_tutor_1dcbdf07_12",
    "lang": "es",
    "style": "tutor",
@@ -175096,15 +175087,6 @@
    "speech": "Cumplir una promesa",
    "source": "tpr.5_6.setembro/s4/5_6.setembro.s4.keep-a-promise/significado",
    "pack": true
-  },
-  {
-   "id": "es_tutor_1e97ec24_35",
-   "lang": "es",
-   "style": "tutor",
-   "text": "El perro Dinamita paseando por Vigo",
-   "speech": "El perro Dinamita paseando por Vigo",
-   "source": "significados/significado",
-   "pack": false
   },
   {
    "id": "es_tutor_1ea37edc_97",
@@ -177616,15 +177598,6 @@
    "text": "¡El coche está encima de la torre! ¡Hop, hop, stop!",
    "speech": "¡El coche está encima de la torre! ¡Hop, hop, stop!",
    "source": "biblioteca/HIS-058/significado",
-   "pack": false
-  },
-  {
-   "id": "es_tutor_255c43ec_42",
-   "lang": "es",
-   "style": "tutor",
-   "text": "El barco que regresa al puerto de O Berbés",
-   "speech": "El barco que regresa al puerto de O Berbés",
-   "source": "significados/significado",
    "pack": false
   },
   {
@@ -181117,15 +181090,6 @@
    "pack": false
   },
   {
-   "id": "es_tutor_2ec6a3c2_38",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Vigo era pequeño, pero ahora es grande",
-   "speech": "Vigo era pequeño, pero ahora es grande",
-   "source": "tpr.5_6.xaneiro/s2/5_6.xaneiro.s2.vigo-was-small-but-now-it-is-big/significado",
-   "pack": true
-  },
-  {
    "id": "es_tutor_2ec6db75_29",
    "lang": "es",
    "style": "tutor",
@@ -183138,6 +183102,15 @@
    "style": "tutor",
    "text": "¡Remueve la sopa caliente y huele la buena comida!",
    "speech": "¡Remueve la sopa caliente y huele la buena comida!",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_3414c379_40",
+   "lang": "es",
+   "style": "tutor",
+   "text": "El barco que regresa al puerto de la ría",
+   "speech": "El barco que regresa al puerto de la ría",
    "source": "significados/significado",
    "pack": false
   },
@@ -188257,6 +188230,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_41452ec9_43",
+   "lang": "es",
+   "style": "tutor",
+   "text": "El pueblo era pequeño, pero ahora es grande",
+   "speech": "El pueblo era pequeño, pero ahora es grande",
+   "source": "tpr.5_6.xaneiro/s2/5_6.xaneiro.s2.vigo-was-small-but-now-it-is-big/significado",
+   "pack": true
+  },
+  {
    "id": "es_tutor_4146d15b_54",
    "lang": "es",
    "style": "tutor",
@@ -189308,6 +189290,15 @@
    "speech": "¿Qué pasará si hace calor?",
    "source": "tpr.4_5.decembro/s1/4_5.decembro.s1.what-will-happen-if-it-gets-warm/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_43d11274_22",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Islas verdes de la ría",
+   "speech": "Islas verdes de la ría",
+   "source": "significados/significado",
+   "pack": false
   },
   {
    "id": "es_tutor_43d1272f_8",
@@ -193072,6 +193063,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_4d33ffed_16",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Monte de o monte",
+   "speech": "Monte de o monte",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_4d345b4f_15",
    "lang": "es",
    "style": "tutor",
@@ -193879,15 +193879,6 @@
    "text": "¡Toca la oveja suave!",
    "speech": "¡Toca la oveja suave!",
    "source": "biblioteca/HIS-037/significado",
-   "pack": false
-  },
-  {
-   "id": "es_tutor_4f326175_28",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Las luces de Navidad en Vigo",
-   "speech": "Las luces de Navidad en Vigo",
-   "source": "significados/significado",
    "pack": false
   },
   {
@@ -197203,6 +197194,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_585b14f0_9",
+   "lang": "es",
+   "style": "tutor",
+   "text": "El parque",
+   "speech": "El parque",
+   "source": "tpr.2_3.novembro/s1/2_3.novembro.s1.castrelos-park/significado",
+   "pack": true
+  },
+  {
    "id": "es_tutor_586ba479_16",
    "lang": "es",
    "style": "tutor",
@@ -198587,15 +198587,6 @@
    "speech": "Gramo",
    "source": "tpr.5_6.novembro/s1/5_6.novembro.s1.gram/significado",
    "pack": true
-  },
-  {
-   "id": "es_tutor_5c15f707_14",
-   "lang": "es",
-   "style": "tutor",
-   "text": "I · Islas Cíes",
-   "speech": "I · Islas Cíes",
-   "source": "significados/significado",
-   "pack": false
   },
   {
    "id": "es_tutor_5c16b7ec_42",
@@ -201420,15 +201411,6 @@
    "pack": false
   },
   {
-   "id": "es_tutor_63a4ddb5_378",
-   "lang": "es",
-   "style": "tutor",
-   "text": "En Vigo muchas familias hablan gallego con los abuelos y castellano en la calle, y aparece la duda de si conviene «simplificar» y dejar una sola lengua. Renunciar al gallego de casa no acelera nada y cuesta algo que no se recupera: la lengua en la que esa familia cuenta sus cosas. Lo que sí importa es la cantidad y la calidad de lo que escucha en cada lengua, no cuántas sean.",
-   "speech": "En Vigo muchas familias hablan gallego con los abuelos y castellano en la calle, y aparece la duda de si conviene «simplificar» y dejar una sola lengua. Renunciar al gallego de casa no acelera nada y cuesta algo que no se recupera: la lengua en la que esa familia cuenta sus cosas. Lo que sí importa es la cantidad y la calidad de lo que escucha en cada lengua, no cuántas sean.",
-   "source": "academy.bilinguismo_y_cultura.01/porQueImporta",
-   "pack": false
-  },
-  {
    "id": "es_tutor_63ac7114_11",
    "lang": "es",
    "style": "tutor",
@@ -201733,6 +201715,15 @@
    "speech": "Pila de hojas",
    "source": "tpr.2_3.novembro/s3/2_3.novembro.s3.pile-of-leaves/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_6469e33c_77",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡PRIMERO la semilla, DESPUÉS un árbol fuerte, AL FINAL el símbolo de Galicia!",
+   "speech": "¡PRIMERO la semilla, DESPUÉS un árbol fuerte, AL FINAL el símbolo de Galicia!",
+   "source": "significados/significado",
+   "pack": false
   },
   {
    "id": "es_tutor_6471bceb_14",
@@ -203469,6 +203460,15 @@
    "text": "¡Vamos a estirarnos bien arriba como el sol y después dar un abrazo grande: arriba... y abrazo!",
    "speech": "¡Vamos a estirarnos bien arriba como el sol y después dar un abrazo grande: arriba... y abrazo!",
    "source": "biblioteca/HIS-085/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_68af1963_40",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Paseamos a la orilla del mar en Galicia.",
+   "speech": "Paseamos a la orilla del mar en Galicia.",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -211426,15 +211426,6 @@
    "pack": true
   },
   {
-   "id": "es_tutor_7d2829d1_74",
-   "lang": "es",
-   "style": "tutor",
-   "text": "¡PRIMERO la semilla, DESPUÉS un árbol fuerte, AL FINAL el símbolo de Vigo!",
-   "speech": "¡PRIMERO la semilla, DESPUÉS un árbol fuerte, AL FINAL el símbolo de Vigo!",
-   "source": "significados/significado",
-   "pack": false
-  },
-  {
    "id": "es_tutor_7d3b4ea8_48",
    "lang": "es",
    "style": "tutor",
@@ -212128,6 +212119,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_7ef014bf_8",
+   "lang": "es",
+   "style": "tutor",
+   "text": "La playa",
+   "speech": "La playa",
+   "source": "tpr.0_2.xuno/s1/0_2.xuno.s1.samil-beach/significado",
+   "pack": true
+  },
+  {
    "id": "es_tutor_7ef15893_34",
    "lang": "es",
    "style": "tutor",
@@ -212728,6 +212728,15 @@
    "text": "¡Sí, billete! ¿Dónde está el billete?",
    "speech": "¡Sí, billete! ¿Dónde está el billete?",
    "source": "biblioteca/HIS-100/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_806c9e87_42",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Lúa llega a la escuela infantil de Galicia",
+   "speech": "Lúa llega a la escuela infantil de Galicia",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -222938,15 +222947,6 @@
    "pack": false
   },
   {
-   "id": "es_tutor_9ac66cbc_39",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Lúa llega a la escuela infantil de Vigo",
-   "speech": "Lúa llega a la escuela infantil de Vigo",
-   "source": "significados/significado",
-   "pack": false
-  },
-  {
    "id": "es_tutor_9ace8f10_47",
    "lang": "es",
    "style": "tutor",
@@ -224837,6 +224837,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_9fa3a6d5_22",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Lúa pasea por la playa",
+   "speech": "Lúa pasea por la playa",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_9fad3655_27",
    "lang": "es",
    "style": "tutor",
@@ -226066,15 +226075,6 @@
    "pack": false
   },
   {
-   "id": "es_tutor_a3196884_19",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Parque de Castrelos",
-   "speech": "Parque de Castrelos",
-   "source": "tpr.2_3.novembro/s1/2_3.novembro.s1.castrelos-park/significado",
-   "pack": true
-  },
-  {
    "id": "es_tutor_a319bdec_25",
    "lang": "es",
    "style": "tutor",
@@ -226271,6 +226271,15 @@
    "speech": "Radiador",
    "source": "tpr.0_2.decembro/s2/0_2.decembro.s2.heater/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_a3a584d9_32",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Las luces de Navidad en la villa",
+   "speech": "Las luces de Navidad en la villa",
+   "source": "significados/significado",
+   "pack": false
   },
   {
    "id": "es_tutor_a3a6a28f_13",
@@ -232219,15 +232228,6 @@
    "pack": true
   },
   {
-   "id": "es_tutor_b24d93a5_27",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Vivimos en Vigo desde 2020.",
-   "speech": "Vivimos en Vigo desde 2020.",
-   "source": "gramatica/punto/22/significado",
-   "pack": false
-  },
-  {
    "id": "es_tutor_b253cbd6_37",
    "lang": "es",
    "style": "tutor",
@@ -232262,15 +232262,6 @@
    "speech": "Calentar con el aliento",
    "source": "tpr.4_5.decembro/s1/4_5.decembro.s1.warm-with-breath/significado",
    "pack": true
-  },
-  {
-   "id": "es_tutor_b26c290e_37",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Paseamos a la orilla del mar en Vigo.",
-   "speech": "Paseamos a la orilla del mar en Vigo.",
-   "source": "significados/significado",
-   "pack": false
   },
   {
    "id": "es_tutor_b26e289a_47",
@@ -236459,15 +236450,6 @@
    "pack": true
   },
   {
-   "id": "es_tutor_bd118ae4_17",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Islas Cíes verdes",
-   "speech": "Islas Cíes verdes",
-   "source": "significados/significado",
-   "pack": false
-  },
-  {
    "id": "es_tutor_bd169ee0_14",
    "lang": "es",
    "style": "tutor",
@@ -236882,6 +236864,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_be1201c6_30",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Vivimos en Galicia desde 2020.",
+   "speech": "Vivimos en Galicia desde 2020.",
+   "source": "gramatica/punto/22/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_be1b3577_18",
    "lang": "es",
    "style": "tutor",
@@ -237212,15 +237203,6 @@
    "text": "Camión de bomberos",
    "speech": "Camión de bomberos",
    "source": "tpr.2_3.xaneiro/s2/2_3.xaneiro.s2.fire-engine/significado",
-   "pack": true
-  },
-  {
-   "id": "es_tutor_beee5454_25",
-   "lang": "es",
-   "style": "tutor",
-   "text": "¿Vigo siempre fue grande?",
-   "speech": "¿Vigo siempre fue grande?",
-   "source": "tpr.5_6.xaneiro/s2/5_6.xaneiro.s2.was-vigo-always-big/significado",
    "pack": true
   },
   {
@@ -241652,6 +241634,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_cac8715b_19",
+   "lang": "es",
+   "style": "tutor",
+   "text": "I · Islas de la ría",
+   "speech": "I · Islas de la ría",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_cadb77da_8",
    "lang": "es",
    "style": "tutor",
@@ -243071,15 +243062,6 @@
    "text": "¡Sí, tu abuelo! El abuelo le da de comer al gato.",
    "speech": "¡Sí, tu abuelo! El abuelo le da de comer al gato.",
    "source": "biblioteca/HIS-074/significado",
-   "pack": false
-  },
-  {
-   "id": "es_tutor_ce5e4fa0_17",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Monte de O Castro",
-   "speech": "Monte de O Castro",
-   "source": "significados/significado",
    "pack": false
   },
   {
@@ -246444,6 +246426,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_d77c47ca_381",
+   "lang": "es",
+   "style": "tutor",
+   "text": "En Galicia muchas familias hablan gallego con los abuelos y castellano en la calle, y aparece la duda de si conviene «simplificar» y dejar una sola lengua. Renunciar al gallego de casa no acelera nada y cuesta algo que no se recupera: la lengua en la que esa familia cuenta sus cosas. Lo que sí importa es la cantidad y la calidad de lo que escucha en cada lengua, no cuántas sean.",
+   "speech": "En Galicia muchas familias hablan gallego con los abuelos y castellano en la calle, y aparece la duda de si conviene «simplificar» y dejar una sola lengua. Renunciar al gallego de casa no acelera nada y cuesta algo que no se recupera: la lengua en la que esa familia cuenta sus cosas. Lo que sí importa es la cantidad y la calidad de lo que escucha en cada lengua, no cuántas sean.",
+   "source": "academy.bilinguismo_y_cultura.01/porQueImporta",
+   "pack": false
+  },
+  {
    "id": "es_tutor_d78fdfa8_34",
    "lang": "es",
    "style": "tutor",
@@ -248052,15 +248043,6 @@
    "text": "Subir la cremallera",
    "speech": "Subir la cremallera",
    "source": "tpr.2_3.decembro/s3/2_3.decembro.s3.zip-up/significado",
-   "pack": true
-  },
-  {
-   "id": "es_tutor_dc681673_14",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Playa de Samil",
-   "speech": "Playa de Samil",
-   "source": "tpr.0_2.xuno/s1/0_2.xuno.s1.samil-beach/significado",
    "pack": true
   },
   {
@@ -253784,6 +253766,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_ebcddd14_16",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Monte del pueblo",
+   "speech": "Monte del pueblo",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_ebd4e544_12",
    "lang": "es",
    "style": "tutor",
@@ -253980,6 +253971,15 @@
    "speech": "El mes que viene",
    "source": "tpr.5_6.decembro/s3/5_6.decembro.s3.next-month/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_ec9c171e_18",
+   "lang": "es",
+   "style": "tutor",
+   "text": "El puerto marinero",
+   "speech": "El puerto marinero",
+   "source": "significados/significado",
+   "pack": false
   },
   {
    "id": "es_tutor_eca21855_6",
@@ -255745,6 +255745,15 @@
    "speech": "¿De quién es el turno?",
    "source": "tpr.4_5.febreiro/s3/4_5.febreiro.s3.whose-turn-is-it/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_f1a1aec8_39",
+   "lang": "es",
+   "style": "tutor",
+   "text": "El perro Dinamita paseando por la villa",
+   "speech": "El perro Dinamita paseando por la villa",
+   "source": "significados/significado",
+   "pack": false
   },
   {
    "id": "es_tutor_f1a7dd4a_44",
@@ -258507,15 +258516,6 @@
    "text": "En el cuarto, con la luz ya baja.",
    "speech": "En el cuarto, con la luz ya baja.",
    "source": "asamblea.segundo_ciclo.maio.5_infantil/microRutina/escenaCotidiana",
-   "pack": false
-  },
-  {
-   "id": "es_tutor_f92dc526_31",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Lúa pasea por la playa de Samil",
-   "speech": "Lúa pasea por la playa de Samil",
-   "source": "significados/significado",
    "pack": false
   },
   {
@@ -263154,15 +263154,6 @@
    "pack": false
   },
   {
-   "id": "gl_tutor_04c85df1_74",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "PRIMEIRO a semente, DESPOIS unha árbore forte, AO FINAL o símbolo de Vigo!",
-   "speech": "PRIMEIRO a semente, DESPOIS unha árbore forte, AO FINAL o símbolo de Vigo!",
-   "source": "significados/significado",
-   "pack": false
-  },
-  {
    "id": "gl_tutor_04d03ffb_16",
    "lang": "gl",
    "style": "tutor",
@@ -266071,15 +266062,6 @@
    "style": "tutor",
    "text": "Unha ovella! Unha ovelliña branca no bosque!",
    "speech": "Unha ovella! Unha ovelliña branca no bosque!",
-   "source": "significados/significado",
-   "pack": false
-  },
-  {
-   "id": "gl_tutor_0c26b567_17",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Illas Cíes verdes",
-   "speech": "Illas Cíes verdes",
    "source": "significados/significado",
    "pack": false
   },
@@ -271328,15 +271310,6 @@
    "pack": false
   },
   {
-   "id": "gl_tutor_19025d62_23",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Vigo sempre foi grande?",
-   "speech": "Vigo sempre foi grande?",
-   "source": "tpr.5_6.xaneiro/s2/5_6.xaneiro.s2.was-vigo-always-big/significado",
-   "pack": true
-  },
-  {
    "id": "gl_tutor_1906f417_15",
    "lang": "gl",
    "style": "tutor",
@@ -272459,6 +272432,15 @@
    "text": "Mira, un can. Guau, guau! Ola, can!",
    "speech": "Mira, un can. Guau, guau! Ola, can!",
    "source": "biblioteca/HIS-042/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_1b974b22_19",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Illas verdes da ría",
+   "speech": "Illas verdes da ría",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -275153,6 +275135,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_22f53756_14",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Monte do monte",
+   "speech": "Monte do monte",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_23042892_62",
    "lang": "gl",
    "style": "tutor",
@@ -275684,15 +275675,6 @@
    "pack": false
   },
   {
-   "id": "gl_tutor_2450044d_37",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Vigo era pequeno, pero agora é grande",
-   "speech": "Vigo era pequeno, pero agora é grande",
-   "source": "tpr.5_6.xaneiro/s2/5_6.xaneiro.s2.vigo-was-small-but-now-it-is-big/significado",
-   "pack": true
-  },
-  {
    "id": "gl_tutor_245067f0_5",
    "lang": "gl",
    "style": "tutor",
@@ -276023,6 +276005,15 @@
    "text": "Mira! Auga! A mesa está mollada.",
    "speech": "Mira! Auga! A mesa está mollada.",
    "source": "biblioteca/HIS-015/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_25350b5c_35",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "O barco que regresa ao porto da ría",
+   "speech": "O barco que regresa ao porto da ría",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -276365,6 +276356,15 @@
    "text": "Agromar",
    "speech": "Agromar",
    "source": "tpr.3_4.abril/s2/3_4.abril.s2.sprout/significado",
+   "pack": true
+  },
+  {
+   "id": "gl_tutor_26543fab_7",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "A praia",
+   "speech": "A praia",
+   "source": "tpr.0_2.xuno/s1/0_2.xuno.s1.samil-beach/significado",
    "pack": true
   },
   {
@@ -277741,6 +277741,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_2a0b14dc_77",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "PRIMEIRO a semente, DESPOIS unha árbore forte, AO FINAL o símbolo de Galicia!",
+   "speech": "PRIMEIRO a semente, DESPOIS unha árbore forte, AO FINAL o símbolo de Galicia!",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_2a163ee8_15",
    "lang": "gl",
    "style": "tutor",
@@ -277793,6 +277802,15 @@
    "speech": "Baixar en picado",
    "source": "tpr.2_3.abril/s2/2_3.abril.s2.swoop/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_2a3c889c_35",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Paseamos á beira do mar en Galicia.",
+   "speech": "Paseamos á beira do mar en Galicia.",
+   "source": "significados/significado",
+   "pack": false
   },
   {
    "id": "gl_tutor_2a4779e2_37",
@@ -278072,15 +278090,6 @@
    "speech": "Redondo e plano",
    "source": "tpr.2_3.marzo/s3/2_3.marzo.s3.round-and-flat/significado",
    "pack": true
-  },
-  {
-   "id": "gl_tutor_2af944a3_38",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "O barco que regresa ao porto do Berbés",
-   "speech": "O barco que regresa ao porto do Berbés",
-   "source": "significados/significado",
-   "pack": false
   },
   {
    "id": "gl_tutor_2b03d7da_20",
@@ -284572,15 +284581,6 @@
    "pack": false
   },
   {
-   "id": "gl_tutor_3b1a56c6_29",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Lúa pasea pola praia de Samil",
-   "speech": "Lúa pasea pola praia de Samil",
-   "source": "significados/significado",
-   "pack": false
-  },
-  {
    "id": "gl_tutor_3b1c1ae5_31",
    "lang": "gl",
    "style": "tutor",
@@ -285262,15 +285262,6 @@
    "text": "Ti xogas cunha pelota na auga?",
    "speech": "Ti xogas cunha pelota na auga?",
    "source": "biblioteca/HIS-052/significado",
-   "pack": false
-  },
-  {
-   "id": "gl_tutor_3d49fbf8_18",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "O Berbés mariñeiro",
-   "speech": "O Berbés mariñeiro",
-   "source": "significados/significado",
    "pack": false
   },
   {
@@ -288078,15 +288069,6 @@
    "pack": false
   },
   {
-   "id": "gl_tutor_44903569_13",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Monte da Guía",
-   "speech": "Monte da Guía",
-   "source": "significados/significado",
-   "pack": false
-  },
-  {
    "id": "gl_tutor_449fea86_17",
    "lang": "gl",
    "style": "tutor",
@@ -290718,15 +290700,6 @@
    "speech": "Shh, bebé",
    "source": "tpr.0_2.xaneiro/s4/0_2.xaneiro.s4.hush-little-baby/significado",
    "pack": true
-  },
-  {
-   "id": "gl_tutor_4b9111d4_25",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "As luces de Nadal en Vigo",
-   "speech": "As luces de Nadal en Vigo",
-   "source": "significados/significado",
-   "pack": false
   },
   {
    "id": "gl_tutor_4b964d36_20",
@@ -293906,6 +293879,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_53814622_8",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "O parque",
+   "speech": "O parque",
+   "source": "tpr.2_3.novembro/s1/2_3.novembro.s1.castrelos-park/significado",
+   "pack": true
+  },
+  {
    "id": "gl_tutor_5381e778_45",
    "lang": "gl",
    "style": "tutor",
@@ -295451,6 +295433,15 @@
    "text": "Primeiro espertamos.",
    "speech": "Primeiro espertamos.",
    "source": "escoita/valeria_gl",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_576128cc_33",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "O can Dinamita paseando pola vila",
+   "speech": "O can Dinamita paseando pola vila",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -298331,15 +298322,6 @@
    "pack": false
   },
   {
-   "id": "gl_tutor_5e75b406_14",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "I · Illas Cíes",
-   "speech": "I · Illas Cíes",
-   "source": "significados/significado",
-   "pack": false
-  },
-  {
    "id": "gl_tutor_5e7c6084_5",
    "lang": "gl",
    "style": "tutor",
@@ -298719,6 +298701,15 @@
    "style": "tutor",
    "text": "Sinala as tres cores primarias listas na paleta diante do papel.",
    "speech": "Sinala as tres cores primarias listas na paleta diante do papel.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_5f5446b1_13",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Monte da vila",
+   "speech": "Monte da vila",
    "source": "significados/significado",
    "pack": false
   },
@@ -299260,6 +299251,15 @@
    "text": "Disfrace",
    "speech": "Disfrace",
    "source": "tpr.3_4.febreiro/s4/3_4.febreiro.s4.costume/significado",
+   "pack": true
+  },
+  {
+   "id": "gl_tutor_60cc97b3_39",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "A vila era pequena, pero agora é grande",
+   "speech": "A vila era pequena, pero agora é grande",
+   "source": "tpr.5_6.xaneiro/s2/5_6.xaneiro.s2.vigo-was-small-but-now-it-is-big/significado",
    "pack": true
   },
   {
@@ -301537,6 +301537,15 @@
    "text": "Chap, chap! Vai, pelota, vai!",
    "speech": "Chap, chap! Vai, pelota, vai!",
    "source": "biblioteca/HIS-052/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_66c30e35_16",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "I · Illas da ría",
+   "speech": "I · Illas da ría",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -311319,15 +311328,6 @@
    "pack": false
   },
   {
-   "id": "gl_tutor_80c6a59f_32",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Paseamos á beira do mar en Vigo.",
-   "speech": "Paseamos á beira do mar en Vigo.",
-   "source": "significados/significado",
-   "pack": false
-  },
-  {
    "id": "gl_tutor_80d24e2b_11",
    "lang": "gl",
    "style": "tutor",
@@ -315667,15 +315667,6 @@
    "text": "Onde está a colmea? Tócaa!",
    "speech": "Onde está a colmea? Tócaa!",
    "source": "biblioteca/HIS-098/significado",
-   "pack": false
-  },
-  {
-   "id": "gl_tutor_8bf40ea9_15",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Monte do Castro",
-   "speech": "Monte do Castro",
-   "source": "significados/significado",
    "pack": false
   },
   {
@@ -320211,15 +320202,6 @@
    "pack": true
   },
   {
-   "id": "gl_tutor_96e6789d_14",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Praia de Samil",
-   "speech": "Praia de Samil",
-   "source": "tpr.0_2.xuno/s1/0_2.xuno.s1.samil-beach/significado",
-   "pack": true
-  },
-  {
    "id": "gl_tutor_96e748c3_28",
    "lang": "gl",
    "style": "tutor",
@@ -322791,15 +322773,6 @@
    "pack": false
   },
   {
-   "id": "gl_tutor_9d6e58df_35",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Lúa chega á escola infantil de Vigo",
-   "speech": "Lúa chega á escola infantil de Vigo",
-   "source": "significados/significado",
-   "pack": false
-  },
-  {
    "id": "gl_tutor_9d7179cb_37",
    "lang": "gl",
    "style": "tutor",
@@ -324493,6 +324466,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_a226fa15_17",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "O porto mariñeiro",
+   "speech": "O porto mariñeiro",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_a22b80a1_32",
    "lang": "gl",
    "style": "tutor",
@@ -324878,15 +324860,6 @@
    "speech": "Tes unha manta suave para durmir?",
    "source": "biblioteca/HIS-003/significado",
    "pack": false
-  },
-  {
-   "id": "gl_tutor_a3196884_19",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Parque de Castrelos",
-   "speech": "Parque de Castrelos",
-   "source": "tpr.2_3.novembro/s1/2_3.novembro.s1.castrelos-park/significado",
-   "pack": true
   },
   {
    "id": "gl_tutor_a31aa98e_15",
@@ -326110,15 +326083,6 @@
    "speech": "Grazas, Lúa!",
    "source": "tpr.5_6.xuno/s1/5_6.xuno.s1.thank-you-l-a/significado",
    "pack": true
-  },
-  {
-   "id": "gl_tutor_a6751f78_32",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "O can Dinamita paseando por Vigo",
-   "speech": "O can Dinamita paseando por Vigo",
-   "source": "significados/significado",
-   "pack": false
   },
   {
    "id": "gl_tutor_a6798f0b_27",
@@ -327939,15 +327903,6 @@
    "pack": true
   },
   {
-   "id": "gl_tutor_ab5eb081_358",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "En Vigo moitas familias falan galego cos avós e castelán na rúa, e aparece a dúbida de se convén «simplificar» e deixar unha soa lingua. Renunciar ao galego da casa non acelera nada e custa algo que non se recupera: a lingua na que esa familia conta as súas cousas. O que si importa é a cantidade e a calidade do que escoita en cada lingua, non cantas sexan.",
-   "speech": "En Vigo moitas familias falan galego cos avós e castelán na rúa, e aparece a dúbida de se convén «simplificar» e deixar unha soa lingua. Renunciar ao galego da casa non acelera nada e custa algo que non se recupera: a lingua na que esa familia conta as súas cousas. O que si importa é a cantidade e a calidade do que escoita en cada lingua, non cantas sexan.",
-   "source": "academy.bilinguismo_y_cultura.01/porQueImporta",
-   "pack": false
-  },
-  {
    "id": "gl_tutor_ab71b4d4_29",
    "lang": "gl",
    "style": "tutor",
@@ -328917,6 +328872,15 @@
    "text": "Ter ganas",
    "speech": "Ter ganas",
    "source": "tpr.4_5.xuno/s3/4_5.xuno.s3.look-forward/significado",
+   "pack": true
+  },
+  {
+   "id": "gl_tutor_ada9ec7a_25",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "A vila sempre foi grande?",
+   "speech": "A vila sempre foi grande?",
+   "source": "tpr.5_6.xaneiro/s2/5_6.xaneiro.s2.was-vigo-always-big/significado",
    "pack": true
   },
   {
@@ -330537,15 +330501,6 @@
    "text": "Din, don… estátua! Podes ser unha estatua coma o oso?",
    "speech": "Din, don… estátua! Podes ser unha estatua coma o oso?",
    "source": "significados/significado",
-   "pack": false
-  },
-  {
-   "id": "gl_tutor_b24d93a5_27",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Vivimos en Vigo desde 2020.",
-   "speech": "Vivimos en Vigo desde 2020.",
-   "source": "gramatica/punto/22/significado",
    "pack": false
   },
   {
@@ -334991,6 +334946,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_be1201c6_30",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Vivimos en Galicia desde 2020.",
+   "speech": "Vivimos en Galicia desde 2020.",
+   "source": "gramatica/punto/22/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_be1409a9_18",
    "lang": "gl",
    "style": "tutor",
@@ -337964,6 +337928,15 @@
    "speech": "Maraca",
    "source": "tpr.3_4.marzo/s4/3_4.marzo.s4.maraca/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_c6b69eb5_20",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Lúa pasea pola praia",
+   "speech": "Lúa pasea pola praia",
+   "source": "significados/significado",
+   "pack": false
   },
   {
    "id": "gl_tutor_c6b9ecb4_6",
@@ -341859,6 +341832,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_d0c80a7a_361",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "En Galicia moitas familias falan galego cos avós e castelán na rúa, e aparece a dúbida de se convén «simplificar» e deixar unha soa lingua. Renunciar ao galego da casa non acelera nada e custa algo que non se recupera: a lingua na que esa familia conta as súas cousas. O que si importa é a cantidade e a calidade do que escoita en cada lingua, non cantas sexan.",
+   "speech": "En Galicia moitas familias falan galego cos avós e castelán na rúa, e aparece a dúbida de se convén «simplificar» e deixar unha soa lingua. Renunciar ao galego da casa non acelera nada e custa algo que non se recupera: a lingua na que esa familia conta as súas cousas. O que si importa é a cantidade e a calidade do que escoita en cada lingua, non cantas sexan.",
+   "source": "academy.bilinguismo_y_cultura.01/porQueImporta",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_d0d2a418_49",
    "lang": "gl",
    "style": "tutor",
@@ -342973,6 +342955,15 @@
    "speech": "Brincar",
    "source": "tpr.3_4.febreiro/s4/3_4.febreiro.s4.leap/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_d38a535b_25",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "As luces de Nadal na vila",
+   "speech": "As luces de Nadal na vila",
+   "source": "significados/significado",
+   "pack": false
   },
   {
    "id": "gl_tutor_d38eda52_6",
@@ -345952,6 +345943,15 @@
    "speech": "Parabéns, clase!",
    "source": "tpr.5_6.xuno/s3/5_6.xuno.s3.congratulations-class/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_dbec2d6e_38",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Lúa chega á escola infantil de Galicia",
+   "speech": "Lúa chega á escola infantil de Galicia",
+   "source": "significados/significado",
+   "pack": false
   },
   {
    "id": "gl_tutor_dbfd1188_93",

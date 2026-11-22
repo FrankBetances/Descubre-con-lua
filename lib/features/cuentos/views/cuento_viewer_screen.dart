@@ -24,7 +24,7 @@ import '../../../core/widgets/pasos_navegacion.dart';
 ///
 /// Orientado 100% ao adulto mediador baixo o paradigma de lectura dialóxica.
 /// Enriquece as narrativas para que sexan contos pedagóxicos completos con
-/// ambientación en Vigo, personaxes vivos, diálogo, preguntas graduadas e retos TPR.
+/// ambientación galega, personaxes vivos, diálogo, preguntas graduadas e retos TPR.
 class CuentoViewerScreen extends StatefulWidget {
   final Cuento cuento;
   final AppLanguage language;

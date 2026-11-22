@@ -46,7 +46,7 @@ void main() {
         await tester.pumpAndSettle();
 
         expect(find.text('Descubre con Lúa'), findsOneWidget);
-        expect(find.text('Edición Vigo'), findsOneWidget);
+        expect(find.text('Edición Vigo'), findsNothing);
 
         // Quien abre esto por primera vez sabe cuál es lo suyo sin entrar a
         // probar: la pregunta y las dos respuestas, cada una con qué hay.
@@ -192,19 +192,16 @@ void main() {
       );
     });
 
-    testWidgets('acredita a los dos colaboradores que constan', (tester) async {
+    testWidgets('acredita a procedencia que consta e non ao Concello de Vigo',
+        (tester) async {
       for (final lang in AppLanguage.deInterfaz) {
         final body = await textOf(tester, lang);
         expect(body, contains('startTIC'));
         expect(body, contains('Zona Franca de Vigo'));
         // El nombre oficial, no una abreviatura.
         expect(body, contains('Incubadora de Alta Tecnolo'));
-        expect(
-          body,
-          contains(lang == AppLanguage.gl
-              ? 'Concello de Vigo'
-              : 'Ayuntamiento de Vigo'),
-        );
+        expect(body, isNot(contains('Concello de Vigo')));
+        expect(body, isNot(contains('Ayuntamiento de Vigo')));
       }
     });
 
@@ -242,8 +239,6 @@ void main() {
         'Consorcio da Zona Franca de Vigo',
         'Consorcio de la Zona Franca de Vigo',
         'Zona Franca de Vigo',
-        'Concello de Vigo',
-        'Ayuntamiento de Vigo',
         'Earlify Health S.L.',
         'Proxecto Nós',
       };

@@ -1,7 +1,7 @@
-# Descubre con Lúa · Edición Vigo
+# Descubre con Lúa
 
 Aplicación Android educativa, **sin conexión**, para las escuelas infantiles
-municipales de Vigo, los colegios de la ciudad y sus familias. Cubre las dos
+de Galicia y sus familias. Cubre las dos
 etapas de educación infantil: **primer ciclo (0-3 años)** y **segundo ciclo
 (3-6 años)**. Todo el contenido existe en gallego y castellano.
 
@@ -124,7 +124,7 @@ casa y *Hoy · Calendario · Recursos · Yo* en la escuela.
 pantalla se lee en inglés. Lo que hay son las palabras, las órdenes de cuerpo
 (TPR) y la frase de cada mes, cada una con su grabación: la persona adulta pulsa
 y oye cómo se dice antes de decírselo al niño o a la niña. Una maestra de una escuela
-infantil de Vigo no tiene por qué pronunciar «Crunch leaves» de oído.
+infantil de Galicia no tiene por qué pronunciar «Crunch leaves» de oído.
 
 En segundo ciclo el inglés entra como **tercera lengua dentro de la asamblea**,
 siempre asociado al movimiento y sin pedir que nadie lo produzca: la orden se
@@ -179,15 +179,13 @@ la persona adulta que acompaña.
 <p align="center">
   <sub><strong>Dr. Frank Alberto Betances Reinoso</strong> · <strong>Earlify
   Health S.L.</strong> · Incubadora de Alta Tecnoloxía <strong>startTIC</strong>
-  · <strong>Consorcio da Zona Franca de Vigo</strong> · <strong>Concello de
-  Vigo</strong></sub>
+  · <strong>Consorcio da Zona Franca de Vigo</strong></sub>
 </p>
 
 El proyecto **nace dentro del programa startTIC**, que es parte del **Consorcio
-da Zona Franca de Vigo**, y está pensado para las **escuelas infantiles
-municipales del Concello de Vigo**. Las marcas de la cabecera y de los créditos
-están por procedencia y por destino —de dónde sale esto y para quién se hace—,
-no como respaldo pedido a un tercero.
+da Zona Franca de Vigo**, y está pensado para las **escuelas infantiles de
+Galicia**. Las marcas de la cabecera y de los créditos están por procedencia
+—de dónde sale esto—, no como respaldo pedido a un tercero.
 
 **Licencia: gratis para las familias, con licencia para las instituciones.**
 Para una familia o una persona a título individual, gratis y para siempre. Para
