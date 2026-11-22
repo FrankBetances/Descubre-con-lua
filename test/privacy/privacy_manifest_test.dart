@@ -82,7 +82,7 @@ void main() {
                 'Any reference to ACCESS_NETWORK_STATE must have tools:node="remove"');
       }
 
-      // Ensure NO unauthorized positive permission grants exist
+      // Ensure ONLY optional CAMERA permission grant exists (P10.4 AR); ZERO network/storage/other grants
       final positivePermissions = content
           .split('\n')
           .map((line) => line.trim())
@@ -91,9 +91,15 @@ void main() {
               !line.contains('tools:node="remove"'))
           .toList();
 
-      expect(positivePermissions, isEmpty,
-          reason:
-              'Release manifest must have ZERO active positive permissions');
+      expect(
+        positivePermissions,
+        equals(
+            ['<uses-permission android:name="android.permission.CAMERA" />']),
+        reason:
+            'Release manifest must only declare android.permission.CAMERA (optional, for P10.4 AR)',
+      );
+      expect(content, contains('android.hardware.camera.ar'));
+      expect(content, contains('android:required="false"'));
     });
 
     test('pubspec.yaml contains ZERO network or analytics dependencies', () {

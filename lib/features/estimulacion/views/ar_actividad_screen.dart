@@ -434,7 +434,7 @@ class _TarxetaEscenaRa extends StatelessWidget {
               OutlinedButton.icon(
                 key: const Key('ar_btn_sen_camara'),
                 onPressed: onAlternarSenCamara,
-                icon: const Icon(Icons.photo_library_outlined),
+                icon: const Icon(Icons.photo_library_rounded),
                 label: Text(ui.ra.modoSenCamara.resolve(lang)),
               ),
             ],
