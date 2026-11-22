@@ -398,7 +398,9 @@ Lo comprueba un gate: `tools/check_contact_email.py`.
 
 ## Privacidad declarada = privacidad compilada
 
-Si la app se publica en Google Play, la política de privacidad y el formulario de *Seguridad de los datos* deben decir lo mismo que el APK: sin datos, sin permisos, sin SDKs de terceros.
+Si la app se publica en Google Play, la política de privacidad y el formulario de *Seguridad de los datos* deben decir lo mismo que el APK: sin datos que salgan del aparato, sin permisos de red y, como único permiso, la cámara de la realidad aumentada.
+
+**Cámara (O-20261122-1, aprobado por Frank el 22/11/2026).** En `AndroidManifest.xml` solo puede entrar `android.permission.CAMERA` (con `android.hardware.camera.ar` y `com.google.ar.core` opcionales y `required="false"`), para las actividades de realidad aumentada y espejo facial con Lúa, en memoria y sin guardar ni enviar imágenes, vídeos ni puntos de la cara; además del permiso interno de receptor de AndroidX (`DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION`). `INTERNET`, `ACCESS_NETWORK_STATE`, `ACCESS_WIFI_STATE` y cualquier permiso de red o de almacenamiento siguen quitados con `tools:node="remove"` y bloqueados por `tools/gates.sh` y `.github/workflows/ci.yml` (`aapt2 dump permissions`). Los paquetes de RA (ARCore, Filament, MediaPipe) son Apache-2.0 y corren sin red. Cualquier cambio de permisos obliga a actualizar en el mismo cambio `docs/privacy.html`, `docs/play-seguridad-datos.md`, `README.md` y el formulario de Seguridad de los datos de Play Console.
 
 Cualquier cambio en lo que la app recoge (un permiso, un paquete, un campo guardado) obliga a actualizar **en el mismo cambio** la política y el formulario de Play Console.
 

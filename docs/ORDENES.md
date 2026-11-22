@@ -563,11 +563,12 @@ Estado: abierta
 > Antigravity se reinició, y tengo tokens de sobre para terminar, primero necesito que arreglemos algo muy básico de lenguaje, en Galicia no se dice criatura ni crianzas ni nada de eso, aquí se habla de neno o nena, tenemos que cambiar el tema de edición Vigo y dejarlo simplemente sin decir que es para Vigo porque lo vamos a utilizar en Orense para un piloto, necesito que generen prompt completo para que antiGravity haga completamente de arriba hasta abajo todo el trabajo que falta tu única función será validar que esté bien hecho no pero todo el trabajo el 100 % de trabajo lo tiene que hacer anti Gravity, tenemos el visto bueno de todo el trabajo anterior, así que quiero una versión definitiva para probar ya así que tiene que ser la dirección más completa hasta la fecha el trabajo lo tiene que hacer anti Gravity lo repito anti Gravity dame el prompt
 Fuente: docs/PROMPTS_ANTIGRAVITY.md (P10) y docs/PENDIENTE.md; para la RA, FrankBetances/Valeria:src/steam/arActivities.ts, src/steam/arScenes.ts, src/steam/worlds/ y src/valeriaArBridge.ts (commit e2a2a5e8)
 Reparto: todo lo hace Antigravity (P10.0–P10.9); Claude Code solo valida e integra.
+> (22/11/2026, a pregunta de Claude Code) «Sí, borra las 302» (grabaciones sobrantes) y «Sí, añádelo» (la regla de la cámara en CLAUDE.md).
 
-- [ ] Ningún texto visible ni hablado dice «criatura» ni «crianza»: neno/nena en gallego y niño/niña en castellano; un gate lo comprueba · evidencia:
-- [ ] Ningún sitio dice «Edición Vigo» ni da Vigo como destino (bienvenida, splash, créditos, manual, páginas legales, README); startTIC y la Zona Franca siguen como procedencia · evidencia:
-- [ ] Na casa → Hoxe y Modo Aula → Hoy: una sola entrada de Estimulación, arriba · evidencia:
-- [ ] Realidad aumentada de Valeria adaptada al inglés, con cámara, por mes y edad, con Lúa; política de privacidad, ficha de Play, créditos y gate de permisos al día en el mismo cambio · evidencia:
-- [ ] Inglés de las frases de cada palabra revisado · evidencia:
-- [ ] Manual con capturas nuevas, PDF y Word mirados página a página · evidencia:
+- [x] Ningún texto visible ni hablado dice «criatura» ni «crianza»: neno/nena en gallego y niño/niña en castellano; un gate lo comprueba · evidencia: tools/check_lexico_galicia.py (quedan solo identificadores internos y comentarios del código)
+- [x] Ningún sitio dice «Edición Vigo» ni da Vigo como destino (bienvenida, splash, créditos, manual, páginas legales, README); startTIC y la Zona Franca siguen como procedencia · evidencia: tools/check_lexico_galicia.py y docs/p10-vigo.md
+- [x] Na casa → Hoxe y Modo Aula → Hoy: una sola entrada de Estimulación, arriba · evidencia: test/features/estimulacion_test.dart y docs/capturas/escritorio/p10-*.png
+- [x] Realidad aumentada de Valeria adaptada al inglés, con cámara, por mes y edad, con Lúa; política de privacidad, ficha de Play, créditos y gate de permisos al día en el mismo cambio · evidencia: test/features/ar_estimulacion_test.dart, test/privacy/privacy_manifest_test.dart y docs/p10-control.md (no probado en un móvil con ARCore)
+- [x] Inglés de las frases de cada palabra revisado · evidencia: docs/p10-ingles.md y tools/check_plan_escoita.py
+- [x] Manual con capturas nuevas, PDF y Word mirados página a página · evidencia: tools/check_manual_build.py y docs/p10-control.md
 - [ ] Revisado por Claude Code y mergeado en main con CI en verde y los audios generados · evidencia:
