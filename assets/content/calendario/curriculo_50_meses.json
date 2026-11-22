@@ -22,8 +22,8 @@
       "es": "Apertura de brazos en círculo, saludo suave con las manos abiertas y canto de acogida a 72 bpm."
     },
     "actividadHogar": {
-      "gl": "Ao despertar, xogo de palmas suaves no peito da crianza con \"Hello, baby! Clap, clap, smile!\".",
-      "es": "Al despertar, juego de palmas suaves en el pecho de la criatura con \"Hello, baby! Clap, clap, smile!\"."
+      "gl": "Ao despertar, xogo de palmas suaves no peito do neno ou da nena con \"Hello, baby! Clap, clap, smile!\".",
+      "es": "Al despertar, juego de palmas suaves en el pecho del niño o de la niña con \"Hello, baby! Clap, clap, smile!\"."
     },
     "rutinaRecomendadaHogar": {
       "gl": "Despertar e almorzo no colo",
@@ -514,8 +514,8 @@
     },
     "icono": "mar",
     "centroInteres": {
-      "gl": "O mar de Samil e peches afectivos",
-      "es": "El mar de Samil y cierres afectivos"
+      "gl": "O mar e a praia e peches afectivos",
+      "es": "El mar y la playa y cierres afectivos"
     },
     "objetivoPedagogico": {
       "gl": "Celebración dos logros do primeiro curso e contacto coa brisa mariña da ría.",
@@ -526,8 +526,8 @@
       "es": "Bandeja con conchas marinas redondeadas y movimiento ondulatorio de brazos en círculo."
     },
     "actividadHogar": {
-      "gl": "Paseo por Samil ou no xardín: \"Look at the blue sea! Waves go up and down, bye-bye!\".",
-      "es": "Paseo por Samil o en el jardín: \"Look at the blue sea! Waves go up and down, bye-bye!\"."
+      "gl": "Paseo pola praia ou no xardín: \"Look at the blue sea! Waves go up and down, bye-bye!\".",
+      "es": "Paseo pola praia o en el jardín: \"Look at the blue sea! Waves go up and down, bye-bye!\"."
     },
     "rutinaRecomendadaHogar": {
       "gl": "Paseo á beiramar ou xogo con auga",
@@ -682,8 +682,8 @@
     },
     "icono": "castrelos",
     "centroInteres": {
-      "gl": "O Magosto no parque de Castrelos",
-      "es": "El Magosto en el parque de Castrelos"
+      "gl": "O Magosto no parque",
+      "es": "El Magosto en el parque"
     },
     "objetivoPedagogico": {
       "gl": "Experimentación cinestésica co vento e o son das follas secas ao pisar.",
@@ -694,8 +694,8 @@
       "es": "Soplar con fuerza como el viento y pisar papel crujiente: \"The wind blows! Crunch the leaves!\"."
     },
     "actividadHogar": {
-      "gl": "Paseando por Castrelos: \"Stomp, stomp on the dry leaves! Hear the crunch!\".",
-      "es": "Paseando por Castrelos: \"Stomp, stomp on the dry leaves! Hear the crunch!\"."
+      "gl": "Paseando polo parque: \"Stomp, stomp on the dry leaves! Hear the crunch!\".",
+      "es": "Paseando polo parque: \"Stomp, stomp on the dry leaves! Hear the crunch!\"."
     },
     "rutinaRecomendadaHogar": {
       "gl": "Paseo ao aire libre no parque",
@@ -723,8 +723,8 @@
       "es": "Retroalimentación acústica y propioceptiva en la marcha vigorosa."
     },
     "ponteCasaEscola": {
-      "gl": "A natureza de Vigo é a nosa mellor aula verde para aprender xogando.",
-      "es": "La naturaleza de Vigo es nuestra mejor aula verde para aprender jugando."
+      "gl": "A natureza da vila é a nosa mellor aula verde para aprender xogando.",
+      "es": "La naturaleza de la villa es nuestra mejor aula verde para aprender jugando."
     }
   },
   {
@@ -1059,8 +1059,8 @@
       "es": "Encadenamiento práxico de cuatro pasos autónomos sin ayuda directa del adulto."
     },
     "ponteCasaEscola": {
-      "gl": "Cando a rutina é a mesma na casa e na escola, a crianza séntese competente e segura.",
-      "es": "Cuando la rutina es la misma en casa y en la escuela, la criatura se siente competente y segura."
+      "gl": "Cando a rutina é a mesma na casa e na escola, o neno ou a nena séntese competente e segura.",
+      "es": "Cuando la rutina es la misma en casa y en la escuela, el niño o la niña se siente competente y segura."
     }
   },
   {
@@ -1074,8 +1074,8 @@
     },
     "icono": "barcos",
     "centroInteres": {
-      "gl": "Barcos na ría de Vigo e area de Samil",
-      "es": "Barcos en la ría de Vigo y arena de Samil"
+      "gl": "Barcos na ría e area da praia",
+      "es": "Barcos en la ría y arena de la playa"
     },
     "objetivoPedagogico": {
       "gl": "Coordinación visomotora en xogos de area e auga, remando en parellas.",
@@ -1090,8 +1090,8 @@
       "es": "En la playa o en la bañera: \"Row your little boat in the sea! Waves go splash, splash!\"."
     },
     "rutinaRecomendadaHogar": {
-      "gl": "Paseo ou visita á praia de Samil",
-      "es": "Paseo o visita a la playa de Samil"
+      "gl": "Paseo ou visita á praia",
+      "es": "Paseo o visita a la playa"
     },
     "minutosSugeridos": 5,
     "ingles": {
@@ -1298,8 +1298,8 @@
     },
     "icono": "inverno_luces",
     "centroInteres": {
-      "gl": "Inverno, luces de Vigo e abrigo compartido",
-      "es": "Invierno, luces de Vigo y abrigo compartido"
+      "gl": "Inverno, luces da vila e abrigo compartido",
+      "es": "Invierno, luces de la villa y abrigo compartido"
     },
     "objetivoPedagogico": {
       "gl": "Concepto de escuridade e luz, contraste térmico e precisión na marcha.",
@@ -1310,8 +1310,8 @@
       "es": "Asamblea en penumbra con linterna: \"Zip your warm coat AND walk very slowly to the light!\"."
     },
     "actividadHogar": {
-      "gl": "Vendo as luces de Vigo pola rúa: \"Look at the bright lights AND hold my warm hand!\".",
-      "es": "Viendo las luces de Vigo por la calle: \"Look at the bright lights AND hold my warm hand!\"."
+      "gl": "Vendo as luces da vila pola rúa: \"Look at the bright lights AND hold my warm hand!\".",
+      "es": "Viendo las luces de la villa por la calle: \"Look at the bright lights AND hold my warm hand!\"."
     },
     "rutinaRecomendadaHogar": {
       "gl": "Paseo nocturno baixo o alumeado",
@@ -1395,8 +1395,8 @@
       "es": "Proyección social y juego simbólico cooperativo de roles profesionales."
     },
     "ponteCasaEscola": {
-      "gl": "O sentido de pertenza ao barrio de Vigo comeza cos pequenos saúdos aos veciños.",
-      "es": "El sentido de pertenencia al barrio de Vigo comienza con los pequeños saludos a los vecinos."
+      "gl": "O sentido de pertenza ao barrio da vila comeza cos pequenos saúdos aos veciños.",
+      "es": "El sentido de pertenencia al barrio de la villa comienza con los pequeños saludos a los vecinos."
     }
   },
   {
@@ -1634,8 +1634,8 @@
     },
     "icono": "cies",
     "centroInteres": {
-      "gl": "A ría de Vigo e os delfíns das Cíes",
-      "es": "La ría de Vigo y los delfines de las Cíes"
+      "gl": "A ría da vila e os delfíns da ría",
+      "es": "La ría y los delfines de la ría"
     },
     "objetivoPedagogico": {
       "gl": "Orgullo pola contorna mariña atlántica e despedida alegre do 4.º de infantil.",
@@ -1646,12 +1646,12 @@
       "es": "Juego de nadar como delfines: \"Swim like a fast dolphin AND wave hello to the white boat!\"."
     },
     "actividadHogar": {
-      "gl": "Mirando as illas Cíes dende o Castro ou Samil: \"Look at the islands AND swim your hands in the air!\".",
-      "es": "Mirando las islas Cíes desde O Castro o Samil: \"Look at the islands AND swim your hands in the air!\"."
+      "gl": "Mirando as illas da ría dende o monte ou pola praia: \"Look at the islands AND swim your hands in the air!\".",
+      "es": "Mirando las islas de la ría desde o monte o por la playa: \"Look at the islands AND swim your hands in the air!\"."
     },
     "rutinaRecomendadaHogar": {
-      "gl": "Excursión ao monte do Castro ou praia",
-      "es": "Excursión al monte de O Castro o playa"
+      "gl": "Excursión ao monte do monte ou praia",
+      "es": "Excursión al monte de o monte o playa"
     },
     "minutosSugeridos": 6,
     "ingles": {
@@ -1802,8 +1802,8 @@
     },
     "icono": "monte_guia",
     "centroInteres": {
-      "gl": "O monte da Guía e os bosques de carballos",
-      "es": "El monte de A Guía y los bosques de robles"
+      "gl": "O monte galego e os bosques de carballos",
+      "es": "El monte del monte y los bosques de robles"
     },
     "objetivoPedagogico": {
       "gl": "Comprensión dos ecosistemas galegos e subordinación: causa da caída das follas.",
@@ -1814,12 +1814,12 @@
       "es": "Dramatización del bosque: \"The dry leaves fall down from the tall oak tree BECAUSE the autumn wind blows hard!\"."
     },
     "actividadHogar": {
-      "gl": "No monte da Guía ou parque: \"Pick up the brown acorn BECAUSE the hungry squirrel needs food!\".",
-      "es": "En el monte de A Guía o parque: \"Pick up the brown acorn BECAUSE the hungry squirrel needs food!\"."
+      "gl": "No monte galego ou no parque: \"Pick up the brown acorn BECAUSE the hungry squirrel needs food!\".",
+      "es": "En el monte del monte o parque: \"Pick up the brown acorn BECAUSE the hungry squirrel needs food!\"."
     },
     "rutinaRecomendadaHogar": {
-      "gl": "Paseo polo monte da Guía en Vigo",
-      "es": "Paseo por el monte de A Guía en Vigo"
+      "gl": "Paseo polo monte na vila",
+      "es": "Paseo por el monte del monte en la villa"
     },
     "minutosSugeridos": 7,
     "ingles": {
@@ -1843,8 +1843,8 @@
       "es": "Articulación de hipótesis causales sobre fenómenos ecológicos directos."
     },
     "ponteCasaEscola": {
-      "gl": "Coñecer a flora e fauna de Vigo espreme o respecto activo polo medio ambiente.",
-      "es": "Conocer la flora y fauna de Vigo exprime el respeto activo por el medio ambiente."
+      "gl": "Coñecer a flora e fauna da vila espreme o respecto activo polo medio ambiente.",
+      "es": "Conocer la flora y fauna de la villa exprime el respeto activo por el medio ambiente."
     }
   },
   {
@@ -2082,8 +2082,8 @@
     },
     "icono": "cies_biodiversidade",
     "centroInteres": {
-      "gl": "A biodiversidade do Parque Nacional das Cíes",
-      "es": "La biodiversidad del Parque Nacional de las Cíes"
+      "gl": "A biodiversidade do Parque Nacional da ría",
+      "es": "La biodiversidad del Parque Nacional de la ría"
     },
     "objetivoPedagogico": {
       "gl": "Subordinación condicional inicial (IF) e respecto polo hábitat natural das gaivotas.",
@@ -2123,8 +2123,8 @@
       "es": "Razonamiento condicional dependiente de una cláusula contextual concreta."
     },
     "ponteCasaEscola": {
-      "gl": "As Cíes ensínannos que protexer a natureza é un deber cotián de toda a veciñanza de Vigo.",
-      "es": "Las Cíes nos enseñan que proteger la naturaleza es un deber cotidiano de toda la vecindad de Vigo."
+      "gl": "As illas da ría ensínannos que protexer a natureza é un deber cotián de toda a veciñanza da vila.",
+      "es": "Las islas nos enseñan que proteger la naturaleza es un deber cotidiano de toda la vecindad de la villa."
     }
   },
   {
@@ -2194,8 +2194,8 @@
     },
     "icono": "bateas",
     "centroInteres": {
-      "gl": "As bateas da ría de Vigo e peche de 5.º",
-      "es": "Las bateas de la ría de Vigo y cierre de 5.º"
+      "gl": "As bateas da ría e peche de 5.º",
+      "es": "Las bateas de la ría y cierre de 5.º"
     },
     "objetivoPedagogico": {
       "gl": "Consolidación da competencia narrativa e orgullo polo patrimonio marisqueiro vigués.",
@@ -2206,8 +2206,8 @@
       "es": "Construcción simbólica de bateas con palos de madera y movimiento conjunto de remeros."
     },
     "actividadHogar": {
-      "gl": "Dende o porto de Vigo ou Samil contando bateas: \"We see the wooden platforms floating in the bay!\".",
-      "es": "Desde el puerto de Vigo o Samil contando bateas: \"We see the wooden platforms floating in the bay!\"."
+      "gl": "Dende o porto da ría ou pola praia contando bateas: \"We see the wooden platforms floating in the bay!\".",
+      "es": "Desde el puerto de la ría o por la playa contando bateas: \"We see the wooden platforms floating in the bay!\"."
     },
     "rutinaRecomendadaHogar": {
       "gl": "Paseo polo porto ou paseo marítimo",
@@ -2474,16 +2474,16 @@
     },
     "icono": "oliveira",
     "centroInteres": {
-      "gl": "A Oliveira de Vigo e a historia da nosa cidade",
-      "es": "La Olivera de Vigo y la historia de nuestra ciudad"
+      "gl": "A Oliveira da vila e a historia da nosa cidade",
+      "es": "La Olivera de la villa y la historia de nuestra ciudad"
     },
     "objetivoPedagogico": {
       "gl": "Discurso narrativo estruturado en tres tempos: First, Then, Finally.",
       "es": "Discurso narrativo estructurado en tres tiempos: First, Then, Finally."
     },
     "actividadAula": {
-      "gl": "Narración colectiva do escudo e a árbore da Oliveira: \"FIRST we planted the seed, THEN it grew strong, FINALLY it became the symbol of Vigo!\".",
-      "es": "Narración colectiva del escudo y el árbol de la Olivera: \"FIRST we planted the seed, THEN it grew strong, FINALLY it became the symbol of Vigo!\"."
+      "gl": "Narración colectiva do escudo e a árbore da Oliveira: \"FIRST we planted the seed, THEN it grew strong, FINALLY it became the symbol of Galicia!\".",
+      "es": "Narración colectiva del escudo y el árbol de la Olivera: \"FIRST we planted the seed, THEN it grew strong, FINALLY it became the symbol of Galicia!\"."
     },
     "actividadHogar": {
       "gl": "Ao lembrar o día antes de durmir: \"FIRST we had breakfast, THEN we walked in the park, FINALLY we read this story!\".",
@@ -2507,7 +2507,7 @@
         "Two fingers (Then)",
         "Open arms (Finally)"
       ],
-      "frase": "FIRST the seed, THEN a strong tree, FINALLY the symbol of Vigo!",
+      "frase": "FIRST the seed, THEN a strong tree, FINALLY the symbol of Galicia!",
       "audio_id": "en_c5_m5_first"
     },
     "dinamicaEvolutiva": {
@@ -2515,8 +2515,8 @@
       "es": "Secuenciación canónica temporal del relato indispensable para la competencia lectora."
     },
     "ponteCasaEscola": {
-      "gl": "Contar o día en tres pasos consolida a memoria e a coherencia narrativa da crianza.",
-      "es": "Contar el día en tres pasos consolida la memoria y la coherencia narrativa de la criatura."
+      "gl": "Contar o día en tres pasos consolida a memoria e a coherencia narrativa do neno ou da nena.",
+      "es": "Contar el día en tres pasos consolida la memoria y la coherencia narrativa del niño o de la niña."
     }
   },
   {
@@ -2571,8 +2571,8 @@
       "es": "Liderazgo positivo e inversión de roles jerárquicos para el afianzamiento de la autoestima."
     },
     "ponteCasaEscola": {
-      "gl": "Permitir que a crianza guíe o xogo cos adultos desenvolve a súa autonomía e responsabilidade.",
-      "es": "Permitir que la criatura guíe el juego con los adultos desarrolla su autonomía y responsabilidad."
+      "gl": "Permitir que o neno ou a nena guíe o xogo cos adultos desenvolve a súa autonomía e responsabilidade.",
+      "es": "Permitir que el niño o la niña guíe el juego con los adultos desarrolla su autonomía y responsabilidad."
     }
   },
   {
@@ -2654,8 +2654,8 @@
       "es": "Debate en asamblea: \"IF we protect the clean ocean, THEN the dolphins will swim near our beaches!\"."
     },
     "actividadHogar": {
-      "gl": "Recollendo o lixo na praia de Samil: \"IF we pick up this plastic, THEN the sea turtles will stay safe!\".",
-      "es": "Recogiendo la basura en la playa de Samil: \"IF we pick up this plastic, THEN the sea turtles will stay safe!\"."
+      "gl": "Recollendo o lixo na praia: \"IF we pick up this plastic, THEN the sea turtles will stay safe!\".",
+      "es": "Recogiendo la basura en la playa: \"IF we pick up this plastic, THEN the sea turtles will stay safe!\"."
     },
     "rutinaRecomendadaHogar": {
       "gl": "Coidado activo da praia ou parque",
@@ -2683,8 +2683,8 @@
       "es": "Conciencia moral ecológica y nexo de causa-consecuencia futura (If... then)."
     },
     "ponteCasaEscola": {
-      "gl": "Os nenos son os verdadeiros embaixadores da sostibilidade e da limpeza en Vigo.",
-      "es": "Los niños son los verdaderos embajadores de la sostenibilidad y de la limpieza en Vigo."
+      "gl": "Os nenos son os verdadeiros embaixadores da sostibilidade e da limpeza na vila.",
+      "es": "Los niños son los verdaderos embajadores de la sostenibilidad y de la limpieza en la villa."
     }
   },
   {
@@ -2795,8 +2795,8 @@
       "es": "Consolidación de la identidad personal, autoeficacia y despedida amorosa de la etapa infantil."
     },
     "ponteCasaEscola": {
-      "gl": "Cinco anos de camiño conxunto entre a escola e o fogar en Vigo: unha infancia libre de pantallas, rica en movemento e chea de amor.",
-      "es": "Cinco años de camino conjunto entre la escuela y el hogar en Vigo: una infancia libre de pantallas, rica en movimiento y llena de amor."
+      "gl": "Cinco anos de camiño conxunto entre a escola e o fogar na vila: unha infancia libre de pantallas, rica en movemento e chea de amor.",
+      "es": "Cinco años de camino conjunto entre la escuela y el hogar en la villa: una infancia libre de pantallas, rica en movimiento y llena de amor."
     }
   }
 ]

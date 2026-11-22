@@ -15,6 +15,7 @@ import '../../cuentos/views/cuentos_list_screen.dart';
 import '../../docentes/widgets/hoxe_na_aula.dart' show DiaQueToca;
 import '../../english/views/palabras_do_traxecto_screen.dart';
 import '../../estimulacion/data/estimulacion_ui.dart';
+import '../../estimulacion/views/ar_actividad_screen.dart';
 import '../../estimulacion/views/estimulacion_screen.dart';
 import '../../laminas/views/laminas_gallery_screen.dart';
 import '../../lectura/views/aprender_a_ler_screen.dart';
@@ -200,6 +201,20 @@ class ExplorarFamiliasScreen extends StatelessWidget {
           initialMes: EstimulacionUi.mesDeCalendario(toca.dia.mesCalendario),
           enAula: false,
           onCambiarCurso: onCambiarCurso,
+        ),
+      ),
+      _Modulo(
+        clave: 'explorar_ra',
+        icona: Icons.view_in_ar_rounded,
+        nome: NomesFamilias.realidadeAumentada,
+        di: NomesFamilias.realidadeAumentadaDi,
+        abrir: (_) => ArActividadScreen(
+          language: language,
+          onLanguageChanged: onLanguageChanged,
+          audioService: audioService,
+          initialCursoId: cursoId,
+          initialMes: EstimulacionUi.mesDeCalendario(toca.dia.mesCalendario),
+          enAula: false,
         ),
       ),
     ];

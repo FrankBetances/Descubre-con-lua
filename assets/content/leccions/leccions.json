@@ -38,16 +38,16 @@
    "es": "Toca cada una para oírla en inglés; con dos toques, oyes lo que quiere decir."
   },
   "paso1Porque": {
-   "gl": "Ti es o modelo da túa criatura. Non fai falta pronunciar perfecto: abonda con dicilas con gusto e sempre igual.",
-   "es": "Tú eres el modelo de tu criatura. No hace falta pronunciar perfecto: basta con decirlas con gusto y siempre igual."
+   "gl": "Ti es o modelo do teu neno ou da túa nena. Non fai falta pronunciar perfecto: abonda con dicilas con gusto e sempre igual.",
+   "es": "Tú eres el modelo de tu niño o niña. No hace falta pronunciar perfecto: basta con decirlas con gusto y siempre igual."
   },
   "paso2": {
    "gl": "Dias sempre no mesmo momento",
    "es": "Dilas siempre en el mismo momento"
   },
   "paso2Porque": {
-   "gl": "Se o inglés chega sempre no mesmo momento, a criatura sabe que vai pasar e espérao. Unha lingua apréndese oíndoa moitas veces.",
-   "es": "Si el inglés llega siempre en el mismo momento, la criatura sabe que va a pasar y lo espera. Una lengua se aprende oyéndola muchas veces."
+   "gl": "Se o inglés chega sempre no mesmo momento, o neno ou a nena sabe que vai pasar e espérao. Unha lingua apréndese oíndoa moitas veces.",
+   "es": "Si el inglés llega siempre en el mismo momento, el niño o la niña sabe que va a pasar y lo espera. Una lengua se aprende oyéndola muchas veces."
   },
   "paso3": {
    "gl": "Agarda e celebra",
@@ -90,8 +90,8 @@
    "es": "La ruta de los cinco cursos"
   },
   "rutaTexto": {
-   "gl": "O que se traballa en cada idade, do máis sinxelo ao máis complexo. A túa criatura está no resaltado.",
-   "es": "Lo que se trabaja en cada edad, de lo más sencillo a lo más complejo. Tu criatura está en el resaltado."
+   "gl": "O que se traballa en cada idade, do máis sinxelo ao máis complexo. O teu neno ou a túa nena está no resaltado.",
+   "es": "Lo que se trabaja en cada edad, de lo más sencillo a lo más complejo. Tu niño o niña está en el resaltado."
   },
   "espera": {
    "gl": "Que se espera",
@@ -122,8 +122,8 @@
    "es": "Señales de que va bien"
   },
   "sinaisTexto": {
-   "gl": "Non hai que apuntar nada nin compararse: cada criatura leva o seu ritmo.",
-   "es": "No hay que apuntar nada ni compararse: cada criatura lleva su ritmo."
+   "gl": "Non hai que apuntar nada nin compararse: cada neno ou nena leva o seu ritmo.",
+   "es": "No hay que apuntar nada ni compararse: cada niño o niña lleva su ritmo."
   },
   "seguinte": {
    "gl": "A semana que vén",
@@ -1363,8 +1363,8 @@
           "es": "Jueves"
          },
          "texto": {
-          "gl": "STEAM «Mollado e seco»: facédeo outra vez, xuntos, e mirade isto: Se a criatura busca a toalla despois de mollarse, ou repite o xesto de espremer.",
-          "es": "STEAM «Mojado y seco»: hacedlo otra vez, juntos, y mirad esto: Si la criatura busca la toalla después de mojarse, o repite el gesto de estrujar."
+          "gl": "STEAM «Mollado e seco»: facédeo outra vez, xuntos, e mirade isto: Se o neno ou a nena busca a toalla despois de mollarse, ou repite o xesto de espremer.",
+          "es": "STEAM «Mojado y seco»: hacedlo otra vez, juntos, y mirad esto: Si el niño o la niña busca la toalla después de mojarse, o repite el gesto de estrujar."
          },
          "en": "Touch the wet sponge!",
          "gl": "Toca a esponxa mollada!",
@@ -2690,8 +2690,8 @@
           "es": "Jueves"
          },
          "texto": {
-          "gl": "STEAM «A música da auga»: facédeo outra vez, xuntos, e mirade isto: Se a criatura queda quieta para escoitar, ou busca co ollo de onde vén o son.",
-          "es": "STEAM «La música del agua»: hacedlo otra vez, juntos, y mirad esto: Si la criatura se queda quieta para escuchar, o busca con la mirada de dónde viene el sonido."
+          "gl": "STEAM «A música da auga»: facédeo outra vez, xuntos, e mirade isto: Se o neno ou a nena queda quieta para escoitar, ou busca co ollo de onde vén o son.",
+          "es": "STEAM «La música del agua»: hacedlo otra vez, juntos, y mirad esto: Si el niño o la niña se queda quieta para escuchar, o busca con la mirada de dónde viene el sonido."
          },
          "en": "Shake the bottle!",
          "gl": "Axita a botella",
@@ -3934,8 +3934,8 @@
           "es": "Jueves"
          },
          "texto": {
-          "gl": "STEAM «A folla baila, a pedra cae»: facédeo outra vez, xuntos, e mirade isto: Se a criatura segue a folla coa mirada ata o chan, ou agarda o pum da pedra.",
-          "es": "STEAM «La hoja baila, la piedra cae»: hacedlo otra vez, juntos, y mirad esto: Si la criatura sigue la hoja con la mirada hasta el suelo, o espera el pum de la piedra."
+          "gl": "STEAM «A folla baila, a pedra cae»: facédeo outra vez, xuntos, e mirade isto: Se o neno ou a nena segue a folla coa mirada ata o chan, ou agarda o pum da pedra.",
+          "es": "STEAM «La hoja baila, la piedra cae»: hacedlo otra vez, juntos, y mirad esto: Si el niño o la niña sigue la hoja con la mirada hasta el suelo, o espera el pum de la piedra."
          },
          "en": "Big stone, down!",
          "gl": "Pedra grande, abaixo!",
@@ -5202,8 +5202,8 @@
           "es": "Jueves"
          },
          "texto": {
-          "gl": "STEAM «Follas ao trasluz»: facédeo outra vez, xuntos, e mirade isto: Se a criatura sinala a folla iluminada ou intenta coller a sombra.",
-          "es": "STEAM «Hojas a contraluz»: hacedlo otra vez, juntos, y mirad esto: Si la criatura señala la hoja iluminada o intenta coger la sombra."
+          "gl": "STEAM «Follas ao trasluz»: facédeo outra vez, xuntos, e mirade isto: Se o neno ou a nena sinala a folla iluminada ou intenta coller a sombra.",
+          "es": "STEAM «Hojas a contraluz»: hacedlo otra vez, juntos, y mirad esto: Si el niño o la niña señala la hoja iluminada o intenta coger la sombra."
          },
          "en": "Big shadow, small shadow!",
          "gl": "Sombra grande, sombra pequena!",
@@ -6525,8 +6525,8 @@
           "es": "Jueves"
          },
          "texto": {
-          "gl": "STEAM «Cada cousa na súa cesta»: facédeo outra vez, xuntos, e mirade isto: Se a criatura repite o lugar dunha peza igual, ou mira a cesta antes de soltar.",
-          "es": "STEAM «Cada cosa en su cesta»: hacedlo otra vez, juntos, y mirad esto: Si la criatura repite el lugar de una pieza igual, o mira la cesta antes de soltar."
+          "gl": "STEAM «Cada cousa na súa cesta»: facédeo outra vez, xuntos, e mirade isto: Se o neno ou a nena repite o lugar dunha peza igual, ou mira a cesta antes de soltar.",
+          "es": "STEAM «Cada cosa en su cesta»: hacedlo otra vez, juntos, y mirad esto: Si el niño o la niña repite el lugar de una pieza igual, o mira la cesta antes de soltar."
          },
          "en": "Bread in the box!",
          "gl": "O pan, na caixa!",
@@ -7793,8 +7793,8 @@
           "es": "Jueves"
          },
          "texto": {
-          "gl": "STEAM «Morno e frío»: facédeo outra vez, xuntos, e mirade isto: Se a criatura retira a man da mazá fría ou volve ao pan morno.",
-          "es": "STEAM «Templado y frío»: hacedlo otra vez, juntos, y mirad esto: Si la criatura retira la mano de la manzana fría o vuelve al pan templado."
+          "gl": "STEAM «Morno e frío»: facédeo outra vez, xuntos, e mirade isto: Se o neno ou a nena retira a man da mazá fría ou volve ao pan morno.",
+          "es": "STEAM «Templado y frío»: hacedlo otra vez, juntos, y mirad esto: Si el niño o la niña retira la mano de la manzana fría o vuelve al pan templado."
          },
          "en": "Cold apple! Brrr!",
          "gl": "Mazá fría! Brrr!",
@@ -9090,8 +9090,8 @@
           "es": "Jueves"
          },
          "texto": {
-          "gl": "STEAM «Burbullas que voan»: facédeo outra vez, xuntos, e mirade isto: Se a criatura segue unha burbulla co corpo ou estira a man cara a ela.",
-          "es": "STEAM «Burbujas que vuelan»: hacedlo otra vez, juntos, y mirad esto: Si la criatura sigue una burbuja con el cuerpo o estira la mano hacia ella."
+          "gl": "STEAM «Burbullas que voan»: facédeo outra vez, xuntos, e mirade isto: Se o neno ou a nena segue unha burbulla co corpo ou estira a man cara a ela.",
+          "es": "STEAM «Burbujas que vuelan»: hacedlo otra vez, juntos, y mirad esto: Si el niño o la niña sigue una burbuja con el cuerpo o estira la mano hacia ella."
          },
          "en": "Pop the bubble!",
          "gl": "Rebenta a burbulla!",
@@ -10354,8 +10354,8 @@
           "es": "Jueves"
          },
          "texto": {
-          "gl": "STEAM «Fregar fai son»: facédeo outra vez, xuntos, e mirade isto: Se a criatura frega ela soa para facer o son, ou prefire un dos dous.",
-          "es": "STEAM «Frotar hace sonido»: hacedlo otra vez, juntos, y mirad esto: Si la criatura frota ella sola para hacer el sonido, o prefiere uno de los dos."
+          "gl": "STEAM «Fregar fai son»: facédeo outra vez, xuntos, e mirade isto: Se o neno ou a nena frega sen axuda para facer o son, ou prefire un dos dous.",
+          "es": "STEAM «Frotar hace sonido»: hacedlo otra vez, juntos, y mirad esto: Si el niño o la niña frota sin ayuda para hacer el sonido, o prefiere uno de los dos."
          },
          "en": "Soft, soft!",
          "gl": "Suave, suave!",
@@ -11655,8 +11655,8 @@
           "es": "Jueves"
          },
          "texto": {
-          "gl": "STEAM «Sombras de animais»: facédeo outra vez, xuntos, e mirade isto: Se a criatura mira da sombra ao xoguete e volve, ou sinala a sombra.",
-          "es": "STEAM «Sombras de animales»: hacedlo otra vez, juntos, y mirad esto: Si la criatura mira de la sombra al juguete y vuelve, o señala la sombra."
+          "gl": "STEAM «Sombras de animais»: facédeo outra vez, xuntos, e mirade isto: Se o neno ou a nena mira da sombra ao xoguete e volve, ou sinala a sombra.",
+          "es": "STEAM «Sombras de animales»: hacedlo otra vez, juntos, y mirad esto: Si el niño o la niña mira de la sombra al juguete y vuelve, o señala la sombra."
          },
          "en": "Run, shadow! Stop!",
          "gl": "Corre, sombra! Para!",
@@ -11679,8 +11679,8 @@
     {
      "id": "unidade.curso_0_2.10",
      "titulo": {
-      "gl": "O Atlántico, as rías de Vigo e a despedida do curso",
-      "es": "El Atlántico, las rías de Vigo y la despedida del curso"
+      "gl": "O Atlántico, as rías galegas e a despedida do curso",
+      "es": "El Atlántico, las rías galegas y la despedida del curso"
      },
      "plan": {
       "id": "T2.U6",
@@ -12936,8 +12936,8 @@
           "es": "Jueves"
          },
          "texto": {
-          "gl": "STEAM «Rodar ou non rodar»: facédeo outra vez, xuntos, e mirade isto: Se a criatura busca outra cousa redonda para facela rodar.",
-          "es": "STEAM «Rodar o no rodar»: hacedlo otra vez, juntos, y mirad esto: Si la criatura busca otra cosa redonda para hacerla rodar."
+          "gl": "STEAM «Rodar ou non rodar»: facédeo outra vez, xuntos, e mirade isto: Se o neno ou a nena busca outra cousa redonda para facela rodar.",
+          "es": "STEAM «Rodar o no rodar»: hacedlo otra vez, juntos, y mirad esto: Si el niño o la niña busca otra cosa redonda para hacerla rodar."
          },
          "en": "Ball in the box!",
          "gl": "A pelota, na caixa!",
@@ -14286,8 +14286,8 @@
           "es": "Jueves"
          },
          "texto": {
-          "gl": "STEAM «Flota ou afúndese?»: facédeo outra vez, xuntos, e mirade isto: Se a criatura intenta afundir o barco coa man, ou colle outra cousa para probar.",
-          "es": "STEAM «¿Flota o se hunde?»: hacedlo otra vez, juntos, y mirad esto: Si la criatura intenta hundir el barco con la mano, o coge otra cosa para probar."
+          "gl": "STEAM «Flota ou afúndese?»: facédeo outra vez, xuntos, e mirade isto: Se o neno ou a nena intenta afundir o barco coa man, ou colle outra cousa para probar.",
+          "es": "STEAM «¿Flota o se hunde?»: hacedlo otra vez, juntos, y mirad esto: Si el niño o la niña intenta hundir el barco con la mano, o coge otra cosa para probar."
          },
          "en": "Down, stone! Splash!",
          "gl": "Abaixo, pedra! Chap!",
@@ -15570,8 +15570,8 @@
           "es": "Jueves"
          },
          "texto": {
-          "gl": "STEAM «O vento empurra o barco»: facédeo outra vez, xuntos, e mirade isto: Se a criatura sopra máis forte cando o barco vai amodo.",
-          "es": "STEAM «El viento empuja el barco»: hacedlo otra vez, juntos, y mirad esto: Si la criatura sopla más fuerte cuando el barco va despacio."
+          "gl": "STEAM «O vento empurra o barco»: facédeo outra vez, xuntos, e mirade isto: Se o neno ou a nena sopra máis forte cando o barco vai amodo.",
+          "es": "STEAM «El viento empuja el barco»: hacedlo otra vez, juntos, y mirad esto: Si el niño o la niña sopla más fuerte cuando el barco va despacio."
          },
          "en": "Go, boat, go!",
          "gl": "Vai, barco, vai!",
@@ -15594,8 +15594,8 @@
     {
      "id": "unidade.curso_2_3.03",
      "titulo": {
-      "gl": "O vento do outono e as follas de Castrelos",
-      "es": "El viento de otoño y las hojas de Castrelos"
+      "gl": "O vento do outono e as follas do parque",
+      "es": "El viento de otoño y las hojas del parque"
      },
      "plan": {
       "id": "T2.U2",
@@ -15983,8 +15983,8 @@
           "es": "Viernes"
          },
          "texto": {
-          "gl": "Lede o conto da semana, «Lois e os patos de Castrelos»: nel saen «The wind blows! Whoosh!», «Crunch your leaves!», «Stroll».",
-          "es": "Leed el cuento de la semana, «Lois y los patos de Castrelos»: en él salen «The wind blows! Whoosh!», «Crunch your leaves!», «Stroll»."
+          "gl": "Lede o conto da semana, «Lois e os patos do parque»: nel saen «The wind blows! Whoosh!», «Crunch your leaves!», «Stroll».",
+          "es": "Leed el cuento de la semana, «Lois y los patos do parque»: en él salen «The wind blows! Whoosh!», «Crunch your leaves!», «Stroll»."
          }
         }
        ]
@@ -16858,8 +16858,8 @@
           "es": "Jueves"
          },
          "texto": {
-          "gl": "STEAM «Grande aquí, pequeno alí»: facédeo outra vez, xuntos, e mirade isto: Se a criatura compara dúas pezas antes de escoller o aro.",
-          "es": "STEAM «Grande aquí, pequeño allí»: hacedlo otra vez, juntos, y mirad esto: Si la criatura compara dos piezas antes de elegir el aro."
+          "gl": "STEAM «Grande aquí, pequeno alí»: facédeo outra vez, xuntos, e mirade isto: Se o neno ou a nena compara dúas pezas antes de escoller o aro.",
+          "es": "STEAM «Grande aquí, pequeño allí»: hacedlo otra vez, juntos, y mirad esto: Si el niño o la niña compara dos piezas antes de elegir el aro."
          },
          "en": "Small leaf there!",
          "gl": "Folla pequena, alí!",
@@ -18146,8 +18146,8 @@
           "es": "Jueves"
          },
          "texto": {
-          "gl": "STEAM «Pum grande, pum pequeno»: facédeo outra vez, xuntos, e mirade isto: Se a criatura agarda o son antes de soltar outra vez, ou tapa as orellas co forte.",
-          "es": "STEAM «Pum grande, pum pequeño»: hacedlo otra vez, juntos, y mirad esto: Si la criatura espera el sonido antes de soltar otra vez, o se tapa los oídos con el fuerte."
+          "gl": "STEAM «Pum grande, pum pequeno»: facédeo outra vez, xuntos, e mirade isto: Se o neno ou a nena agarda o son antes de soltar outra vez, ou tapa as orellas co forte.",
+          "es": "STEAM «Pum grande, pum pequeño»: hacedlo otra vez, juntos, y mirad esto: Si el niño o la niña espera el sonido antes de soltar otra vez, o se tapa los oídos con el fuerte."
          },
          "en": "Big sound, small sound!",
          "gl": "Son grande, son pequeno!",
@@ -18524,8 +18524,8 @@
           "es": "Haz el reto: en la merienda, con «Put on your coat!»."
          },
          "en": "Put on your coat!",
-         "gl": "Pon o abrigo!",
-         "es": "¡Ponte el abrigo!"
+         "gl": "pon o abrigo",
+         "es": "ponte el abrigo"
         },
         {
          "dia": {
@@ -19434,8 +19434,8 @@
           "es": "Jueves"
          },
          "texto": {
-          "gl": "STEAM «Pan duro, pan brando»: facédeo outra vez, xuntos, e mirade isto: Se a criatura volve apertar para ver se cambia, ou peta noutras cousas.",
-          "es": "STEAM «Pan duro, pan blando»: hacedlo otra vez, juntos, y mirad esto: Si la criatura vuelve a apretar para ver si cambia, o golpea otras cosas."
+          "gl": "STEAM «Pan duro, pan brando»: facédeo outra vez, xuntos, e mirade isto: Se o neno ou a nena volve apertar para ver se cambia, ou peta noutras cousas.",
+          "es": "STEAM «Pan duro, pan blando»: hacedlo otra vez, juntos, y mirad esto: Si el niño o la niña vuelve a apretar para ver si cambia, o golpea otras cosas."
          },
          "en": "Hard bread! Knock, knock!",
          "gl": "Pan duro! Toc, toc!",
@@ -20722,8 +20722,8 @@
           "es": "Jueves"
          },
          "texto": {
-          "gl": "STEAM «A estrela da mazá»: facédeo outra vez, xuntos, e mirade isto: Se a criatura sinala a estrela ou busca outra na outra metade.",
-          "es": "STEAM «La estrella de la manzana»: hacedlo otra vez, juntos, y mirad esto: Si la criatura señala la estrella o busca otra en la otra mitad."
+          "gl": "STEAM «A estrela da mazá»: facédeo outra vez, xuntos, e mirade isto: Se o neno ou a nena sinala a estrela ou busca outra na outra metade.",
+          "es": "STEAM «La estrella de la manzana»: hacedlo otra vez, juntos, y mirad esto: Si el niño o la niña señala la estrella o busca otra en otro u otra mitad."
          },
          "en": "A star!",
          "gl": "Unha estrela!",
@@ -22010,8 +22010,8 @@
           "es": "Jueves"
          },
          "texto": {
-          "gl": "STEAM «Primeiro mollo, despois xabón»: facédeo outra vez, xuntos, e mirade isto: Se a criatura corrixe a orde ou anticipa o paso seguinte.",
-          "es": "STEAM «Primero mojo, después jabón»: hacedlo otra vez, juntos, y mirad esto: Si la criatura corrige el orden o anticipa el paso siguiente."
+          "gl": "STEAM «Primeiro mollo, despois xabón»: facédeo outra vez, xuntos, e mirade isto: Se o neno ou a nena corrixe a orde ou anticipa o paso seguinte.",
+          "es": "STEAM «Primero mojo, después jabón»: hacedlo otra vez, juntos, y mirad esto: Si el niño o la niña corrige el orden o anticipa el paso siguiente."
          },
          "en": "First water, then soap!",
          "gl": "Primeiro auga, despois xabón!",
@@ -23298,8 +23298,8 @@
           "es": "Jueves"
          },
          "texto": {
-          "gl": "STEAM «A toalla mollada pesa»: facédeo outra vez, xuntos, e mirade isto: Se a criatura fai forza co corpo ao levantar a mollada.",
-          "es": "STEAM «La toalla mojada pesa»: hacedlo otra vez, juntos, y mirad esto: Si la criatura hace fuerza con el cuerpo al levantar la mojada."
+          "gl": "STEAM «A toalla mollada pesa»: facédeo outra vez, xuntos, e mirade isto: Se o neno ou a nena fai forza co corpo ao levantar a mollada.",
+          "es": "STEAM «La toalla mojada pesa»: hacedlo otra vez, juntos, y mirad esto: Si el niño o la niña hace fuerza con el cuerpo al levantar la mojada."
          },
          "en": "Heavy! Light!",
          "gl": "Pesada! Lixeira!",
@@ -23954,8 +23954,8 @@
           "es": "Jueves"
          },
          "texto": {
-          "gl": "STEAM «Pasos que corren, pasos que dormen», paso 2: A criatura corre ou camiña segundo o son.",
-          "es": "STEAM «Pasos que corren, pasos que duermen», paso 2: La criatura corre o camina según el sonido."
+          "gl": "STEAM «Pasos que corren, pasos que dormen», paso 2: O neno ou a nena corre ou camiña segundo o son.",
+          "es": "STEAM «Pasos que corren, pasos que duermen», paso 2: El niño o la niña corre o camina según el sonido."
          },
          "en": "Sleep, cat. Shh…",
          "gl": "Durme, gato. Chis…",
@@ -24586,8 +24586,8 @@
           "es": "Jueves"
          },
          "texto": {
-          "gl": "STEAM «Pasos que corren, pasos que dormen»: facédeo outra vez, xuntos, e mirade isto: Se a criatura cambia o paso antes de que o digas, só polo son.",
-          "es": "STEAM «Pasos que corren, pasos que duermen»: hacedlo otra vez, juntos, y mirad esto: Si la criatura cambia el paso antes de que lo digas, solo por el sonido."
+          "gl": "STEAM «Pasos que corren, pasos que dormen»: facédeo outra vez, xuntos, e mirade isto: Se o neno ou a nena cambia o paso antes de que o digas, só polo son.",
+          "es": "STEAM «Pasos que corren, pasos que duermen»: hacedlo otra vez, juntos, y mirad esto: Si el niño o la niña cambia el paso antes de que lo digas, solo por el sonido."
          },
          "en": "Sleep, cat. Shh…",
          "gl": "Durme, gato. Chis…",
@@ -24610,8 +24610,8 @@
     {
      "id": "unidade.curso_2_3.10",
      "titulo": {
-      "gl": "As ondas de Samil: peixes, barcos e ata logo",
-      "es": "Las olas de Samil: peces, barcos y hasta luego"
+      "gl": "As ondas da praia: peixes, barcos e ata logo",
+      "es": "Las olas de la playa: peces, barcos y hasta luego"
      },
      "plan": {
       "id": "T2.U6",
@@ -25870,8 +25870,8 @@
           "es": "Jueves"
          },
          "texto": {
-          "gl": "STEAM «A caixa das estrelas»: facédeo outra vez, xuntos, e mirade isto: Se a criatura mira da caixa ao teito, ou tapa un burato para ver que pasa.",
-          "es": "STEAM «La caja de las estrellas»: hacedlo otra vez, juntos, y mirad esto: Si la criatura mira de la caja al techo, o tapa un agujero para ver qué pasa."
+          "gl": "STEAM «A caixa das estrelas»: facédeo outra vez, xuntos, e mirade isto: Se o neno ou a nena mira da caixa ao teito, ou tapa un burato para ver que pasa.",
+          "es": "STEAM «La caja de las estrellas»: hacedlo otra vez, juntos, y mirad esto: Si el niño o la niña mira de la caja al techo, o tapa un agujero para ver qué pasa."
          },
          "en": "Go, stars! Stop!",
          "gl": "Ide, estrelas! Parade!",
@@ -27839,8 +27839,8 @@
           "es": "Jueves"
          },
          "texto": {
-          "gl": "STEAM «Vermello, azul, vermello…», paso 2: A criatura di que vén despois.",
-          "es": "STEAM «Rojo, azul, rojo…», paso 2: La criatura dice qué viene después."
+          "gl": "STEAM «Vermello, azul, vermello…», paso 2: O neno ou a nena di que vén despois.",
+          "es": "STEAM «Rojo, azul, rojo…», paso 2: El niño o la niña dice qué viene después."
          },
          "en": "What comes next?",
          "gl": "Que vén despois?",
@@ -28477,8 +28477,8 @@
           "es": "Jueves"
          },
          "texto": {
-          "gl": "STEAM «Vermello, azul, vermello…»: facédeo outra vez, xuntos, e mirade isto: Se a criatura detecta un erro na serie ou propón unha serie nova.",
-          "es": "STEAM «Rojo, azul, rojo…»: hacedlo otra vez, juntos, y mirad esto: Si la criatura detecta un error en la serie o propone una serie nueva."
+          "gl": "STEAM «Vermello, azul, vermello…»: facédeo outra vez, xuntos, e mirade isto: Se o neno ou a nena detecta un erro na serie ou propón unha serie nova.",
+          "es": "STEAM «Rojo, azul, rojo…»: hacedlo otra vez, juntos, y mirad esto: Si el niño o la niña detecta un error en la serie o propone una serie nueva."
          },
          "en": "What comes next?",
          "gl": "Que vén despois?",
@@ -29796,8 +29796,8 @@
           "es": "Jueves"
          },
          "texto": {
-          "gl": "STEAM «O tren baixa a costa»: facédeo outra vez, xuntos, e mirade isto: Se a criatura sobe a rampla para que vaia máis rápido.",
-          "es": "STEAM «El tren baja la cuesta»: hacedlo otra vez, juntos, y mirad esto: Si la criatura sube la rampa para que vaya más rápido."
+          "gl": "STEAM «O tren baixa a costa»: facédeo outra vez, xuntos, e mirade isto: Se o neno ou a nena sobe a rampla para que vaia máis rápido.",
+          "es": "STEAM «El tren baja la cuesta»: hacedlo otra vez, juntos, y mirad esto: Si el niño o la niña sube la rampa para que vaya más rápido."
          },
          "en": "Fast! Slow!",
          "gl": "Rápido! Amodo!",
@@ -32488,8 +32488,8 @@
           "es": "Jueves"
          },
          "texto": {
-          "gl": "STEAM «A sombra da torre»: facédeo outra vez, xuntos, e mirade isto: Se a criatura move a luz para facer a sombra que lle pides.",
-          "es": "STEAM «La sombra de la torre»: hacedlo otra vez, juntos, y mirad esto: Si la criatura mueve la luz para hacer la sombra que le pides."
+          "gl": "STEAM «A sombra da torre»: facédeo outra vez, xuntos, e mirade isto: Se o neno ou a nena move a luz para facer a sombra que lle pides.",
+          "es": "STEAM «La sombra de la torre»: hacedlo otra vez, juntos, y mirad esto: Si el niño o la niña mueve la luz para hacer la sombra que le pides."
          },
          "en": "Short shadow!",
          "gl": "Sombra curta!",
@@ -33770,8 +33770,8 @@
           "es": "Jueves"
          },
          "texto": {
-          "gl": "STEAM «O xeo no zume»: facédeo outra vez, xuntos, e mirade isto: Se a criatura compara os dous vasos e di cal vai máis rápido.",
-          "es": "STEAM «El hielo en el zumo»: hacedlo otra vez, juntos, y mirad esto: Si la criatura compara los dos vasos y dice cuál va más rápido."
+          "gl": "STEAM «O xeo no zume»: facédeo outra vez, xuntos, e mirade isto: Se o neno ou a nena compara os dous vasos e di cal vai máis rápido.",
+          "es": "STEAM «El hielo en el zumo»: hacedlo otra vez, juntos, y mirad esto: Si el niño o la niña compara los dos vasos y dice cuál va más rápido."
          },
          "en": "Stir with the spoon!",
          "gl": "Remexe coa culler!",
@@ -34158,8 +34158,8 @@
           "es": "Jueves"
          },
          "texto": {
-          "gl": "STEAM «Un prato para cada un», paso 1: Antes de comer, a criatura pon un prato por persoa.",
-          "es": "STEAM «Un plato para cada uno», paso 1: Antes de comer, la criatura pone un plato por persona."
+          "gl": "STEAM «Un prato para cada un», paso 1: Antes de comer, o neno ou a nena pon un prato por persoa.",
+          "es": "STEAM «Un plato para cada uno», paso 1: Antes de comer, el niño o la niña pone un plato por persona."
          },
          "en": "One plate, one spoon!",
          "gl": "Un prato, unha culler!",
@@ -35030,8 +35030,8 @@
           "es": "Jueves"
          },
          "texto": {
-          "gl": "STEAM «Un prato para cada un»: facédeo outra vez, xuntos, e mirade isto: Se a criatura sinala o sitio onde falta algo.",
-          "es": "STEAM «Un plato para cada uno»: hacedlo otra vez, juntos, y mirad esto: Si la criatura señala el sitio donde falta algo."
+          "gl": "STEAM «Un prato para cada un»: facédeo outra vez, xuntos, e mirade isto: Se o neno ou a nena sinala o sitio onde falta algo.",
+          "es": "STEAM «Un plato para cada uno»: hacedlo otra vez, juntos, y mirad esto: Si el niño o la niña señala el sitio donde falta algo."
          },
          "en": "Is it empty?",
          "gl": "Está baleiro?",
@@ -35430,8 +35430,8 @@
           "es": "Jueves"
          },
          "texto": {
-          "gl": "STEAM «Verter amodo», paso 1: Na cea, a criatura serve a auga cunha xerra pequena.",
-          "es": "STEAM «Verter despacio», paso 1: En la cena, la criatura sirve el agua con una jarra pequeña."
+          "gl": "STEAM «Verter amodo», paso 1: Na cea, o neno ou a nena serve a auga cunha xerra pequena.",
+          "es": "STEAM «Verter despacio», paso 1: En la cena, el niño o la niña sirve el agua con una jarra pequeña."
          },
          "en": "Pour the juice!",
          "gl": "Bota o zume!",
@@ -36324,8 +36324,8 @@
           "es": "Jueves"
          },
          "texto": {
-          "gl": "STEAM «Verter amodo»: facédeo outra vez, xuntos, e mirade isto: Se a criatura vai máis amodo cando o vaso está case cheo.",
-          "es": "STEAM «Verter despacio»: hacedlo otra vez, juntos, y mirad esto: Si la criatura va más despacio cuando el vaso está casi lleno."
+          "gl": "STEAM «Verter amodo»: facédeo outra vez, xuntos, e mirade isto: Se o neno ou a nena vai máis amodo cando o vaso está case cheo.",
+          "es": "STEAM «Verter despacio»: hacedlo otra vez, juntos, y mirad esto: Si el niño o la niña va más despacio cuando el vaso está casi lleno."
          },
          "en": "Stop! It's full!",
          "gl": "Para! Está cheo!",
@@ -37564,8 +37564,8 @@
           "es": "Jueves"
          },
          "texto": {
-          "gl": "STEAM «A música dos vasos»: facédeo outra vez, xuntos, e mirade isto: Se a criatura escolle un bote polo son que quere.",
-          "es": "STEAM «La música de los vasos»: hacedlo otra vez, juntos, y mirad esto: Si la criatura elige un bote por el sonido que quiere."
+          "gl": "STEAM «A música dos vasos»: facédeo outra vez, xuntos, e mirade isto: Se o neno ou a nena escolle un bote polo son que quere.",
+          "es": "STEAM «La música de los vasos»: hacedlo otra vez, juntos, y mirad esto: Si el niño o la niña elige un bote por el sonido que quiere."
          },
          "en": "High! Low!",
          "gl": "Agudo! Grave!",
@@ -37969,8 +37969,8 @@
           "es": "Viernes"
          },
          "texto": {
-          "gl": "Lede o conto da semana, «Iván navega ás Cíes»: nel saen «Row», «Waves», «Sea».",
-          "es": "Leed el cuento de la semana, «Iván navega a las Cíes»: en él salen «Row», «Waves», «Sea»."
+          "gl": "Lede o conto da semana, «Iván navega ás illas»: nel saen «Row», «Waves», «Sea».",
+          "es": "Leed el cuento de la semana, «Iván navega a las islas»: en él salen «Row», «Waves», «Sea»."
          }
         }
        ]
@@ -38844,8 +38844,8 @@
           "es": "Jueves"
          },
          "texto": {
-          "gl": "STEAM «A cara na culler»: facédeo outra vez, xuntos, e mirade isto: Se a criatura xira a culler para buscar a cara dereita.",
-          "es": "STEAM «La cara en la cuchara»: hacedlo otra vez, juntos, y mirad esto: Si la criatura gira la cuchara para buscar la cara derecha."
+          "gl": "STEAM «A cara na culler»: facédeo outra vez, xuntos, e mirade isto: Se o neno ou a nena xira a culler para buscar a cara dereita.",
+          "es": "STEAM «La cara en la cuchara»: hacedlo otra vez, juntos, y mirad esto: Si el niño o la niña gira la cuchara para buscar la cara derecha."
          },
          "en": "Upside down!",
          "gl": "Do revés!",
@@ -40642,8 +40642,8 @@
           "es": "Jueves"
          },
          "texto": {
-          "gl": "STEAM «Escoitar o corazón», paso 1: Pon a orella no peito da criatura e escoitade o tum-tum.",
-          "es": "STEAM «Escuchar el corazón», paso 1: Pon la oreja en el pecho de la criatura y escuchad el tum-tum."
+          "gl": "STEAM «Escoitar o corazón», paso 1: Pon a orella no peito do neno ou da nena e escoitade o tum-tum.",
+          "es": "STEAM «Escuchar el corazón», paso 1: Pon la oreja en el pecho del niño o de la niña y escuchad el tum-tum."
          },
          "en": "Listen to the heart!",
          "gl": "Escoita o corazón!",
@@ -41588,8 +41588,8 @@
           "es": "Jueves"
          },
          "texto": {
-          "gl": "STEAM «Escoitar o corazón»: facédeo outra vez, xuntos, e mirade isto: Se a criatura explica que o corazón vai rápido porque saltou.",
-          "es": "STEAM «Escuchar el corazón»: hacedlo otra vez, juntos, y mirad esto: Si la criatura explica que el corazón va rápido porque saltó."
+          "gl": "STEAM «Escoitar o corazón»: facédeo outra vez, xuntos, e mirade isto: Se o neno ou a nena explica que o corazón vai rápido porque saltou.",
+          "es": "STEAM «Escuchar el corazón»: hacedlo otra vez, juntos, y mirad esto: Si el niño o la niña explica que el corazón va rápido porque saltó."
          },
          "en": "Jump! Now listen!",
          "gl": "Salta! Agora escoita!",
@@ -41989,8 +41989,8 @@
           "es": "Viernes"
          },
          "texto": {
-          "gl": "Lede o conto da semana, «Tomé sobe ao Monte da Guía»: nel saen «Hedgehog», «Wait for me», «Hilltop».",
-          "es": "Leed el cuento de la semana, «Tomé sube al Monte de A Guía»: en él salen «Hedgehog», «Wait for me», «Hilltop»."
+          "gl": "Lede o conto da semana, «Tomé sobe ao monte da vila»: nel saen «Hedgehog», «Wait for me», «Hilltop».",
+          "es": "Leed el cuento de la semana, «Tomé sube al Monte del pueblo»: en él salen «Hedgehog», «Wait for me», «Hilltop»."
          }
         }
        ]
@@ -44253,8 +44253,8 @@
           "es": "Jueves"
          },
          "texto": {
-          "gl": "STEAM «Coa lupa, máis grande»: facédeo outra vez, xuntos, e mirade isto: Se a criatura busca a distancia boa da lupa ela soa.",
-          "es": "STEAM «Con la lupa, más grande»: hacedlo otra vez, juntos, y mirad esto: Si la criatura busca la distancia buena de la lupa ella sola."
+          "gl": "STEAM «Coa lupa, máis grande»: facédeo outra vez, xuntos, e mirade isto: Se o neno ou a nena busca a distancia boa da lupa sen axuda.",
+          "es": "STEAM «Con la lupa, más grande»: hacedlo otra vez, juntos, y mirad esto: Si el niño o la niña busca la distancia buena de la lupa sin ayuda."
          },
          "en": "It's big! Look!",
          "gl": "É grande! Mira!",
@@ -48148,8 +48148,8 @@
           "es": "Jueves"
          },
          "texto": {
-          "gl": "STEAM «O muíño de vento»: facédeo outra vez, xuntos, e mirade isto: Se a criatura relaciona o vento de fóra co muíño que xira.",
-          "es": "STEAM «El molinillo de viento»: hacedlo otra vez, juntos, y mirad esto: Si la criatura relaciona el viento de fuera con el molinillo que gira."
+          "gl": "STEAM «O muíño de vento»: facédeo outra vez, xuntos, e mirade isto: Se o neno ou a nena relaciona o vento de fóra co muíño que xira.",
+          "es": "STEAM «El molinillo de viento»: hacedlo otra vez, juntos, y mirad esto: Si el niño o la niña relaciona el viento de fuera con el molinillo que gira."
          },
          "en": "It's windy!",
          "gl": "Vai vento!",
@@ -49407,8 +49407,8 @@
           "es": "Jueves"
          },
          "texto": {
-          "gl": "STEAM «A orquestra da tormenta»: facédeo outra vez, xuntos, e mirade isto: Se cada criatura espera o seu momento para tocar.",
-          "es": "STEAM «La orquesta de la tormenta»: hacedlo otra vez, juntos, y mirad esto: Si cada criatura espera su momento para tocar."
+          "gl": "STEAM «A orquestra da tormenta»: facédeo outra vez, xuntos, e mirade isto: Se cada neno ou nena espera o seu momento para tocar.",
+          "es": "STEAM «La orquesta de la tormenta»: hacedlo otra vez, juntos, y mirad esto: Si cada niño o niña espera su momento para tocar."
          },
          "en": "Thunder! Boom!",
          "gl": "Trono! Bum!",
@@ -50809,8 +50809,8 @@
           "es": "Jueves"
          },
          "texto": {
-          "gl": "STEAM «A sombra e o sol»: facédeo outra vez, xuntos, e mirade isto: Se a criatura explica que a sombra cambiou porque o sol se moveu.",
-          "es": "STEAM «La sombra y el sol»: hacedlo otra vez, juntos, y mirad esto: Si la criatura explica que la sombra cambió porque el sol se movió."
+          "gl": "STEAM «A sombra e o sol»: facédeo outra vez, xuntos, e mirade isto: Se o neno ou a nena explica que a sombra cambiou porque o sol se moveu.",
+          "es": "STEAM «La sombra y el sol»: hacedlo otra vez, juntos, y mirad esto: Si el niño o la niña explica que la sombra cambió porque el sol se movió."
          },
          "en": "Hat on! Look at the shadow!",
          "gl": "Sombreiro posto! Mira a sombra!",
@@ -51465,8 +51465,8 @@
           "es": "Jueves"
          },
          "texto": {
-          "gl": "STEAM «Que roupa pide o tempo?», paso 2: A criatura escolle a roupa segundo o tempo.",
-          "es": "STEAM «¿Qué ropa pide el tiempo?», paso 2: La criatura elige la ropa según el tiempo."
+          "gl": "STEAM «Que roupa pide o tempo?», paso 2: O neno ou a nena escolle a roupa segundo o tempo.",
+          "es": "STEAM «¿Qué ropa pide el tiempo?», paso 2: El niño o la niña elige la ropa según el tiempo."
          },
          "en": "Sunny! Hat on!",
          "gl": "Sol! Sombreiro posto!",
@@ -52097,8 +52097,8 @@
           "es": "Jueves"
          },
          "texto": {
-          "gl": "STEAM «Que roupa pide o tempo?»: facédeo outra vez, xuntos, e mirade isto: Se a criatura xustifica a escolla co tempo que fai.",
-          "es": "STEAM «¿Qué ropa pide el tiempo?»: hacedlo otra vez, juntos, y mirad esto: Si la criatura justifica la elección con el tiempo que hace."
+          "gl": "STEAM «Que roupa pide o tempo?»: facédeo outra vez, xuntos, e mirade isto: Se o neno ou a nena xustifica a escolla co tempo que fai.",
+          "es": "STEAM «¿Qué ropa pide el tiempo?»: hacedlo otra vez, juntos, y mirad esto: Si el niño o la niña justifica la elección con el tiempo que hace."
          },
          "en": "Sunny! Hat on!",
          "gl": "Sol! Sombreiro posto!",
@@ -52826,8 +52826,8 @@
           "es": "Jueves"
          },
          "texto": {
-          "gl": "STEAM «Cores que nacen», paso 2: A criatura di antes que cor espera.",
-          "es": "STEAM «Colores que nacen», paso 2: La criatura dice antes qué color espera."
+          "gl": "STEAM «Cores que nacen», paso 2: O neno ou a nena di antes que cor espera.",
+          "es": "STEAM «Colores que nacen», paso 2: El niño o la niña dice antes qué color espera."
          },
          "en": "Orange! A new colour!",
          "gl": "Laranxa! Unha cor nova!",
@@ -54783,8 +54783,8 @@
           "es": "Jueves"
          },
          "texto": {
-          "gl": "STEAM «O mundo de cores»: facédeo outra vez, xuntos, e mirade isto: Se a criatura predí a cor da mestura de dous celofáns.",
-          "es": "STEAM «El mundo de colores»: hacedlo otra vez, juntos, y mirad esto: Si la criatura predice el color de la mezcla de dos celofanes."
+          "gl": "STEAM «O mundo de cores»: facédeo outra vez, xuntos, e mirade isto: Se o neno ou a nena predí a cor da mestura de dous celofáns.",
+          "es": "STEAM «El mundo de colores»: hacedlo otra vez, juntos, y mirad esto: Si el niño o la niña predice el color de la mezcla de dos celofanes."
          },
          "en": "Everything is red!",
          "gl": "Todo é vermello!",
@@ -56136,8 +56136,8 @@
           "es": "Jueves"
          },
          "texto": {
-          "gl": "STEAM «A bolboreta igual»: facédeo outra vez, xuntos, e mirade isto: Se a criatura busca simetrías por si mesma na sala.",
-          "es": "STEAM «La mariposa igual»: hacedlo otra vez, juntos, y mirad esto: Si la criatura busca simetrías por sí misma en la sala."
+          "gl": "STEAM «A bolboreta igual»: facédeo outra vez, xuntos, e mirade isto: Se o neno ou a nena busca simetrías por si mesma na sala.",
+          "es": "STEAM «La mariposa igual»: hacedlo otra vez, juntos, y mirad esto: Si el niño o la niña busca simetrías por sí misma en la sala."
          },
          "en": "Open it! The same!",
          "gl": "Ábreo! Igual!",
@@ -58173,8 +58173,8 @@
           "es": "Viernes"
          },
          "texto": {
-          "gl": "Lede o conto da semana, «Paulo e o Vigo de antes»: nel saen «Balance beam», «Blue», «Fishing village».",
-          "es": "Leed el cuento de la semana, «Paulo y el Vigo de antes»: en él salen «Balance beam», «Blue», «Fishing village»."
+          "gl": "Lede o conto da semana, «Paulo e o Galicia de antes»: nel saen «Balance beam», «Blue», «Fishing village».",
+          "es": "Leed el cuento de la semana, «Paulo y el Galicia de antes»: en él salen «Balance beam», «Blue», «Fishing village»."
          }
         }
        ]
@@ -58799,8 +58799,8 @@
           "es": "Jueves"
          },
          "texto": {
-          "gl": "STEAM «Cantos sons ten o papel?»: facédeo outra vez, xuntos, e mirade isto: Se a criatura describe a diferenza entre dous sons con palabras propias.",
-          "es": "STEAM «¿Cuántos sonidos tiene el papel?»: hacedlo otra vez, juntos, y mirad esto: Si la criatura describe la diferencia entre dos sonidos con palabras propias."
+          "gl": "STEAM «Cantos sons ten o papel?»: facédeo outra vez, xuntos, e mirade isto: Se o neno ou a nena describe a diferenza entre dous sons con palabras propias.",
+          "es": "STEAM «¿Cuántos sonidos tiene el papel?»: hacedlo otra vez, juntos, y mirad esto: Si el niño o la niña describe la diferencia entre dos sonidos con palabras propias."
          },
          "en": "What sound is it?",
          "gl": "Que son é?",
@@ -61075,8 +61075,8 @@
           "es": "Jueves"
          },
          "texto": {
-          "gl": "STEAM «O mapa do tesouro», paso 3: A criatura atópao seguindo o mapa.",
-          "es": "STEAM «El mapa del tesoro», paso 3: La criatura lo encuentra siguiendo el mapa."
+          "gl": "STEAM «O mapa do tesouro», paso 3: O neno ou a nena atópao seguindo o mapa.",
+          "es": "STEAM «El mapa del tesoro», paso 3: El niño o la niña lo encuentra siguiendo el mapa."
          },
          "en": "Two steps forward!",
          "gl": "Dous pasos adiante!",
@@ -61390,8 +61390,8 @@
           "es": "Jueves"
          },
          "texto": {
-          "gl": "STEAM «O mapa do tesouro»: facédeo outra vez, xuntos, e mirade isto: Se a criatura xira o mapa para orientarse como na sala.",
-          "es": "STEAM «El mapa del tesoro»: hacedlo otra vez, juntos, y mirad esto: Si la criatura gira el mapa para orientarse como en la sala."
+          "gl": "STEAM «O mapa do tesouro»: facédeo outra vez, xuntos, e mirade isto: Se o neno ou a nena xira o mapa para orientarse como na sala.",
+          "es": "STEAM «El mapa del tesoro»: hacedlo otra vez, juntos, y mirad esto: Si el niño o la niña gira el mapa para orientarse como en la sala."
          },
          "en": "Turn left!",
          "gl": "Xirar á esquerda",
@@ -62662,8 +62662,8 @@
           "es": "Viernes"
          },
          "texto": {
-          "gl": "Lede o conto da semana, «Noela e os golfiños das Cíes»: nel saen «Have a safe trip!», «Dolphin pod», «Blowhole».",
-          "es": "Leed el cuento de la semana, «Noela y los delfines de las Cíes»: en él salen «Have a safe trip!», «Dolphin pod», «Blowhole»."
+          "gl": "Lede o conto da semana, «Noela e os golfiños da ría»: nel saen «Have a safe trip!», «Dolphin pod», «Blowhole».",
+          "es": "Leed el cuento de la semana, «Noela y los delfines de la ría»: en él salen «Have a safe trip!», «Dolphin pod», «Blowhole»."
          }
         }
        ]
@@ -65240,8 +65240,8 @@
           "es": "Jueves"
          },
          "texto": {
-          "gl": "STEAM «A frauta do tren»: facédeo outra vez, xuntos, e mirade isto: Se a criatura relaciona a lonxitude do tubo co son.",
-          "es": "STEAM «La flauta del tren»: hacedlo otra vez, juntos, y mirad esto: Si la criatura relaciona la longitud del tubo con el sonido."
+          "gl": "STEAM «A frauta do tren»: facédeo outra vez, xuntos, e mirade isto: Se o neno ou a nena relaciona a lonxitude do tubo co son.",
+          "es": "STEAM «La flauta del tren»: hacedlo otra vez, juntos, y mirad esto: Si el niño o la niña relaciona la longitud del tubo con el sonido."
          },
          "en": "Long pipe, low sound!",
          "gl": "Tubo longo, son grave!",

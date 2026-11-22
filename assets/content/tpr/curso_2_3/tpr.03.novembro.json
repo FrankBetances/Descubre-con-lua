@@ -8,15 +8,15 @@
     {
       "semana": 1,
       "tema": {
-        "gl": "Castrelos no outono",
-        "es": "Castrelos en otoño"
+        "gl": "O parque no outono",
+        "es": "El parque en otoño"
       },
       "palabras": [
         {
           "id": "2_3.novembro.s1.castrelos-park",
-          "en": "Castrelos Park",
-          "gl": "Parque de Castrelos",
-          "es": "Parque de Castrelos",
+          "en": "Autumn park",
+          "gl": "O parque",
+          "es": "El parque",
           "tprAction": {
             "gl": "Sinalar o parque no mapa",
             "es": "Señalar el parque en el mapa"

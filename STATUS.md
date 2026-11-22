@@ -1,4 +1,4 @@
-# Estado real de «Descubre con Lúa · Edición Vigo»
+# Estado real de «Descubre con Lúa»
 
 Este documento sustituye a `TEST_READY.md`, que certificaba «1443/1443 PASSED ·
 CERTIFIED READY FOR PRODUCTION DEPLOYMENT» sin que se hubiese ejecutado nunca
@@ -67,7 +67,7 @@ Pendientes: D1, D2, D5, D7, D8 y D9.
 | M1.1 | En rama, sin DOG | 26/10/2026 | P6 de Frank: `assets/content/curriculo/normativa.json` y `docs/referencias/normativa.md`, con cada dato y su línea del texto curricular de Frank (área, saber, encuadre y horario por ciclo, OBX y criterio por curso: CA2.7 en 2.º ciclo; en 1.º ciclo, el criterio operativo sin código). Todo marcado «pendiente de contrastar con el DOG», en pantalla y en el fichero. Cada unidad cita el suyo (`criterio: normativa.<curso>`); `check_unidades.py` lo exige. El DOG sigue sin responder desde aquí (comprobado con curl el 26/10/2026: sin conexión). Las cápsulas de Academy citan CA1.1 y CA3.1: no se han tocado | Contrastar con el DOG |
 | M1.2 | En rama | 19/10/2026 | `referencias/base/ERRATAS.md`: erratas por fichero y línea (líneas contrastadas con `grep`) y un aviso en `referencias/base/README.md`. Textos movidos de `docs/base/` a `referencias/base/` (opción de trabajo de D8) | Se cierra cuando Frank conteste D8. Siguiente: M1.3 |
 | M1.3 | En rama | 19/10/2026 | Las 800 palabras de 3-4 pasan al esquema `3_4.<mes>.s<semana>.<clave>`; `ponte_ao_dia.json` regenerado (21 decisiones de su revisión, al id nuevo) y `voice-corpus.json` reexportado: sin audio nuevo, porque la grabación se nombra por el texto. Migración del repaso guardado: `idAntigoDaPalabra` + `ProgressService.moverTarxeta`, aplicada al buscar la tarjeta en el repaso. Tests nuevos: tres de `moverTarxeta` (historia, no pisar, nada que mover), el esquema de las 800, y un widget test con una tarjeta guardada con el id viejo que abre el repaso y la conserva. Local: gates de contenido y voz verdes; `dart format` (Dart 3.13.5, versión de lenguaje 3.0) sin cambios en 220 ficheros. `flutter analyze` y `flutter test` no corridos en local: los corre el CI del PR | Siguiente: M3.1 |
-| M2.4 | En rama | 19/10/2026 | `tools/check_sin_repetir.py` en `tools/gates.sh`, verde en local sobre 151 ficheros; 24 casos probados a mano, los 24 bien; gates de voz (cobertura, corpus, niveles, sobrantes) verdes tras el workflow de voz (commit a5520652). Gates de Flutter y `xera_nomes` no corridos en local: no hay `dart` en el entorno; los corre el CI del PR | Cuatro textos corregidos (curriculo_50 3-4 enero, conto_021, historia 133, lámina escola_rut_123) y dos grabaciones en inglés regeneradas. Para Frank, fuera de este módulo: (1) 178 de las 205 láminas tenían `tprAccion.es` en gallego: Frank mandó corregirlas y están traducidas (el cambio es solo de texto: esa cadena no tiene voz). (2) Cuatro órdenes de 6.º (abril, diciembre, marzo y junio) esperan que la criatura diga la fórmula; salen de su documento curricular. Una (abril) está en las excepciones del gate; las otras tres el gate no las detecta porque no dicen «say» ni «repite». Frank decidió que se quedan. Siguiente: M1.2 |
+| M2.4 | En rama | 19/10/2026 | `tools/check_sin_repetir.py` en `tools/gates.sh`, verde en local sobre 151 ficheros; 24 casos probados a mano, los 24 bien; gates de voz (cobertura, corpus, niveles, sobrantes) verdes tras el workflow de voz (commit a5520652). Gates de Flutter y `xera_nomes` no corridos en local: no hay `dart` en el entorno; los corre el CI del PR | Cuatro textos corregidos (curriculo_50 3-4 enero, conto_021, historia 133, lámina escola_rut_123) y dos grabaciones en inglés regeneradas. Para Frank, fuera de este módulo: (1) 178 de las 205 láminas tenían `tprAccion.es` en gallego: Frank mandó corregirlas y están traducidas (el cambio es solo de texto: esa cadena no tiene voz). (2) Cuatro órdenes de 6.º (abril, diciembre, marzo y junio) esperan que el niño o la niña diga la fórmula; salen de su documento curricular. Una (abril) está en las excepciones del gate; las otras tres el gate no las detecta porque no dicen «say» ni «repite». Frank decidió que se quedan. Siguiente: M1.2 |
 | M2.1 | Pendiente | 19/10/2026 | — | Usa la opción de trabajo de D2 |
 | M2.2 | Pendiente | 19/10/2026 | — |  |
 | M2.3 | Pendiente | 19/10/2026 | — |  |
@@ -85,8 +85,8 @@ Pendientes: D1, D2, D5, D7, D8 y D9.
 | M4.2 | En rama | 20/10/2026 | Un solo widget, `lib/core/widgets/espera_visible.dart`: «Agarda/Espera N s», que al tocarlo llena un anillo en silencio durante N segundos, sin sonido ni vibración (no recibe servicio de audio), y que se reinicia si se toca mientras corre. Diana de 48 px. En la fase de reto de la asamblea, debajo de la línea para la adulta, con los segundos de la progresión (`esperaSegundos: 5`, de `gen_progresion_diaria.py`, el primer tiempo del apartado 7); en el cuento de la semana, debajo de la pregunta de cada página, con su `tempoEsperaSegundos`, que antes nadie dibujaba. El microcuento aún no existe (O5): usará esta misma pieza. Se adelanta a M2.1 (dependencia del plan) porque los tiempos ya están en el apartado 7 de la arquitectura y el widget no necesita el glosario. Evidencia: app de escritorio (reto y cuento, gl), `test/core/espera_visible_test.dart` (gl y es, avance del anillo, reinicio, diana, el cuento lleva sus segundos) y `asamblea_unidade_test.dart` (las 50 la llevan en el reto y siguen sin desbordar a 360×640 y 360×780, escala 1,0 y 1,8); captura `conto-reto-*` y manual (4.3 y 4.4), PDF y Word regenerados y mirados. Texto grande: solo en widget test | Microcuento con O5 |
 | M4.3 | En rama | 20/10/2026 | Opción de trabajo de D5. La asamblea de seis pasos no la abre ningún camino: la pantalla (`asamblea_guiada_screen.dart`), sus widgets de paso, `ritual_repository.dart`, `unidad_model.dart`, `asamblea/fases.json` y las diez unidades `juega.*` se han borrado, y con ellas las fichas del final de la lista del aula. Caminos que la abrían y adónde van ahora: el botón «Comezar a asemblea» del Calendario abre la de cuatro fases del curso de la tarjeta, en la semana y el día elegidos (`abrirAsembleaDoDia`); las fichas de la lista del aula se han retirado (la tarjeta de la sesión de encima ya abría la de cuatro fases). Academy no la abría: en HEAD solo la construían esos dos ficheros (`git grep "AsambleaGuiadaScreen(" HEAD -- lib`). Las canciones (Frank: «conservarlas sueltas»): las diez pasan a `assets/content/cancions/cancions_con_pulso.json` y se abren en Recursos → Cancións con pulso; los gates de pulso y BPM las leen de ahí. El texto «mar_pulso_72bpm.wav / local» del widget de la canción, que nombraba un fichero que no es el que suena, pasa a «Audio 100% sen conexión, gardado no aparello». La cuenta: la de seis pasos era la única pantalla que sumaba la asamblea a los premios de la docente y marcaba el día en el calendario del aula; ahora lo hace «Rematar» de la de cuatro fases, por los cuatro caminos (Hoxe, Calendario —tarjeta y ficha del día— y la lista del aula de los dos ciclos), con el mismo aviso, y un segundo toque no cuenta dos veces (`asamblea_unidade_test.dart`, comprobado que falla sin el registro y sin el cerrojo). La nota (Frank: «rehacerla ya»): cierra la asamblea de cuatro fases al pulsar Rematar y sale de la unidad del mes: centro de interés, núcleo con su voz, significado y gesto, y en 2.º ciclo la micro-rutina de casa. Voz: corpus regenerado (22.263 locuciones), 647 grabaciones huérfanas podadas (`prune_voice_assets.py`); las nuevas no hacía falta grabarlas (canción y consigna ya tenían voz). Los tests que leían `juega.mar.01.json` (paridad gl/es, términos clínicos, alineación curricular) apuntan ahora a canciones, unidades del mes y asambleas; el de alineación dice que los criterios de 1.º ciclo están vacíos hasta M1.1. La comprobación de léxico marítimo (RAG) se ha borrado con la unidad del Mar que comprobaba. Evidencia: `tools/gates.sh` (todos salvo los dos del APK, sin SDK de Android aquí); `calendario_test.dart` (las 50 tarjetas tienen asamblea, diez distintas por curso, sin asambleas sale «en preparación»); `asamblea_unidade_test.dart` (Rematar → nota en 0-2 y 4.º de Infantil, gl/es); `cancions_con_pulso_test.dart` (Recursos abre la lista, las diez se abren, gl/es, escala 1,0 y 1,8, sin excepciones); app de escritorio Linux por los caminos de Frank: Na escola → Recursos → Cancións con pulso → una canción (gl y es); Na escola → Calendario → «Comezar a asemblea» abre la de cuatro fases de octubre, 0-2, semana y día elegidos, y «Rematar» lleva a la nota (es y gl). La nota de 2.º ciclo con micro-rutina se ha visto solo en captura y en test, no en la app. Capturas `nota-casas-*`, `cancion-pulso-*` (nueva), `aula-unidades-*` y `recursos-docentes-*` regeneradas; `asamblea-ingles-*`, `asamblea-conto-*` y `asamblea-seguridade-*` borradas. Manual (4.1, 4.2 nueva «Al terminar: la nota para las casas», Recursos), PDF y Word regenerados y mirados en sus páginas; README (tabla de contenido y voz, Lúa, árbol). No visto en aparato. `lamina_pixel.dart` y las láminas de escena `.txt` ya no las usa ninguna pantalla | M4.4 bloqueada por M6.3-M6.7 |
 | M4.4 | En rama | 26/10/2026 | La nota para las casas trae «O reto desta semana na casa»: la frase con su voz, el momento del mes y qué hacer, el mismo reto que ve la familia en Hoxe (`notaDaAsemblea(…, semana:)`). Evidencia: `asamblea_unidade_test.dart` (la nota lo lleva, gl y es). La micro-rutina de 2.º ciclo sigue debajo. No visto en aparato | — |
-| M5.1 | En rama | 20/10/2026 | El microcuento vive en el campo `microcuento` de su unidad del mes (2-3 a 5-6; en 0-2 va a `null`): título, espera y, por lámina, encargo de dibujo, trama gl/es, frase de Lúa (citada del registro, `registro/frases_lua.json`, con su gesto) y onomatopeya, tríada (señalar, imitar, acercar), guion de recast para cinco respuestas (silencio, señala, lengua de casa, una palabra, forma torcida) y la pregunta de casa de su edad. Modelo `lib/data/models/microcuento_model.dart`; visor `lib/features/cuentos/views/microcuento_screen.dart` en modo aula (frase de Lúa, espera, tríada y recast plegado) y modo casa (una pregunta por lámina, sin tríada). Gate `tools/check_microcuentos.py`, en `tools/gates.sh` (no estricto hasta M5.8): Lúa solo con el núcleo (desde 4-5, también descriptivas y estructura) más un puñado cerrado de palabras de función, tres preguntas con la de acercar hablando de la criatura, cinco recasts, tipo de pregunta de casa por edad (5-6: una distinta por lámina), nada que pida repetir ni traducir, espera de 3-5 s y lámina existente; probado sembrando seis fallos en una copia, los seis detectados. Evidencia: `test/features/cuentos/microcuento_screen_test.dart` (los dos modos, gl y es, escala 1,0 y 1,8, 360×640, las tres láminas hasta «Rematar»); capturas `microcuento-aula-*` y `microcuento-casa-*`, miradas. El visor no tiene todavía camino en la app (M5.8): esto no lo ha visto nadie llegando desde un portal. No visto en aparato | M5.8 |
-| M5.2 | En rama, salvo las láminas | 20/10/2026 | Diez microcuentos de 2-3, uno por unidad, de 3 láminas y pregunta de casa PEER. El de junio es el arquetipo del pez del texto de base, corregido según `referencias/base/ERRATAS.md` (un solo color de pez, sin *Say hello*, nivel 3 que acerca a la vida de la criatura). Evidencia: `tools/check_microcuentos.py` (verde, 40 de 40) y los tests de paridad gl/es, términos clínicos y currículo, que ya leen las unidades del mes. El gallego lo revisó Claude Code; no lo ha revisado una hablante nativa | Láminas con M5.6 |
+| M5.1 | En rama | 20/10/2026 | El microcuento vive en el campo `microcuento` de su unidad del mes (2-3 a 5-6; en 0-2 va a `null`): título, espera y, por lámina, encargo de dibujo, trama gl/es, frase de Lúa (citada del registro, `registro/frases_lua.json`, con su gesto) y onomatopeya, tríada (señalar, imitar, acercar), guion de recast para cinco respuestas (silencio, señala, lengua de casa, una palabra, forma torcida) y la pregunta de casa de su edad. Modelo `lib/data/models/microcuento_model.dart`; visor `lib/features/cuentos/views/microcuento_screen.dart` en modo aula (frase de Lúa, espera, tríada y recast plegado) y modo casa (una pregunta por lámina, sin tríada). Gate `tools/check_microcuentos.py`, en `tools/gates.sh` (no estricto hasta M5.8): Lúa solo con el núcleo (desde 4-5, también descriptivas y estructura) más un puñado cerrado de palabras de función, tres preguntas con la de acercar hablando del niño o de la niña, cinco recasts, tipo de pregunta de casa por edad (5-6: una distinta por lámina), nada que pida repetir ni traducir, espera de 3-5 s y lámina existente; probado sembrando seis fallos en una copia, los seis detectados. Evidencia: `test/features/cuentos/microcuento_screen_test.dart` (los dos modos, gl y es, escala 1,0 y 1,8, 360×640, las tres láminas hasta «Rematar»); capturas `microcuento-aula-*` y `microcuento-casa-*`, miradas. El visor no tiene todavía camino en la app (M5.8): esto no lo ha visto nadie llegando desde un portal. No visto en aparato | M5.8 |
+| M5.2 | En rama, salvo las láminas | 20/10/2026 | Diez microcuentos de 2-3, uno por unidad, de 3 láminas y pregunta de casa PEER. El de junio es el arquetipo del pez del texto de base, corregido según `referencias/base/ERRATAS.md` (un solo color de pez, sin *Say hello*, nivel 3 que acerca a la vida del niño o de la niña). Evidencia: `tools/check_microcuentos.py` (verde, 40 de 40) y los tests de paridad gl/es, términos clínicos y currículo, que ya leen las unidades del mes. El gallego lo revisó Claude Code; no lo ha revisado una hablante nativa | Láminas con M5.6 |
 | M5.3 | En rama, salvo las láminas | 20/10/2026 | Diez de 3-4, de 3 láminas; pregunta de casa PEER, completar o qué/dónde (diez de cada). Las fórmulas del mes van en la tríada y el recast, no en la frase de Lúa. Misma evidencia que M5.2. El gallego lo revisó Claude Code; no lo ha revisado una hablante nativa | Láminas con M5.6 |
 | M5.4 | En rama, salvo las láminas | 20/10/2026 | Diez de 4-5, de 4 láminas; pregunta de casa recordar o abrir; en cada uno, al menos una frase de Lúa usa la estructura del mes. El de octubre es el arquetipo del viento del texto de base, corregido (escrito también en gallego, resolución de uno de los modos definidos, Lúa con el núcleo). Misma evidencia que M5.2. El gate solo deja a Lúa las palabras de la frase de la estructura tal como está en el registro: si es «The car is on the block.», vale *on* y no *under* | Láminas con M5.6 |
 | M5.5 | En rama, salvo las láminas | 20/10/2026 | Diez de 5-6, de 4 láminas, con un tipo distinto de pregunta de casa en cada lámina; estructura del mes en al menos una frase de Lúa; rimas en cuatro preguntas. Misma evidencia que M5.2. En 02 y 03, *rough* se usa como «áspero» (hojas, erizo de castaña); el banco lo glosa como «bravo (mar)» | Láminas con M5.6 |
@@ -94,7 +94,7 @@ Pendientes: D1, D2, D5, D7, D8 y D9.
 | M5.7 | En rama | 20/10/2026 | `tools/voice_corpus.py` recoge el inglés de cada lámina con botón de voz en el visor: tríada, los cinco recasts y la pregunta de casa; la frase de Lúa entra por el registro de frases. La trama y la ayuda gl/es no llevan voz: las lee la adulta. Grabado con el workflow de voz (runs 79 y 80 en `pedagogia`). Evidencia: `check_voice_coverage.py` (23.641 locuciones, todas con grabación), `prune_voice_assets.py --check` (ninguna sobra) y `check_voice_levels.py` (23.641 grabaciones, ninguna por encima de −1 dBFS). El audio no se ha escuchado: ni en un aparato ni a mano | — |
 | M5.8 | En rama | 21/10/2026 | Botón «Microconto do mes / Microcuento del mes» en Modo Aula (1.º y 2.º ciclo, debajo de «Comezar a asemblea») y en Explorar → Contos (casa, delante de la lista). Solo sale si todas las láminas del microcuento están dibujadas. Las unidades citan sus láminas, y `check_microcuentos.py --estricto` está en `tools/gates.sh`. Evidencia: `test/features/cuentos/boton_microcuento_test.dart` (aula y casa, gl y es, escala 1,0 y 1,8; en 0-2 no sale). En la app de escritorio Linux se recorrió Recursos → Xoga con Lúa → 2-3 → botón → visor, 2.º ciclo 3-4 (el botón sale) y Explorar → Contos en 4-5 → visor en casa. No visto en aparato | — |
 | F2 · O modelo | En rama | 21/10/2026 | Pantalla «O modelo / El modelo» en Eu (aula) y en Guías (casa), con contenido en `assets/content/modelo/o_modelo.json`: parentese, compuerta social, habla paralela, espera en tres tiempos, expansión, recast, Lúa solo en inglés, etapas por edad (18-36 meses y 3-6 años) y lo que la app no mide (LENA y pruebas, P5). Cada técnica lleva un ejemplo de aula o de casa, según el portal, con su frase inglesa y voz. Las cuatro fuentes con autor (Kuhl 2007; Ferjan Ramírez y Kuhl 2017; Rowe 1986; Cleave y otros 2015) se contrastaron con la ficha de la publicación (PubMed, ASHA, I-LABS); los artículos no se han leído enteros. Se quitó una afirmación sobre turnos de conversación que no tenía fuente contrastada. Evidencia: `test/features/formacion/o_modelo_test.dart` (9 secciones; Eu y Guías, gl y es, escala 1,0 y 1,8); recorrido en la app de escritorio Linux por Eu → O modelo (gl) y Guías → El modelo (es). El gallego lo revisó Claude Code, no una hablante nativa. No visto en aparato | Hecho el 21/10: «Formación na aula» va por las cuatro fases de la asamblea con «O modelo» delante, y la guía de dos minutos de aula y de casa acaba en «O modelo» (`capsulas_aula_test.dart`, `o_modelo_test.dart`). No visto en la app ni en aparato |
-| F2 · Estrategias | En rama | 21/10/2026 | `estrategias_pedagogicas.json` pasa de 5 a 7 fichas (habla paralela y expansión). La de espera se corrigió según ERRATAS: de 3 a 5 s en tres tiempos y sin nombre de criatura en el ejemplo. Evidencia: los tests de modelo de estrategias, en la pasada completa. No visto en la app | — |
+| F2 · Estrategias | En rama | 21/10/2026 | `estrategias_pedagogicas.json` pasa de 5 a 7 fichas (habla paralela y expansión). La de espera se corrigió según ERRATAS: de 3 a 5 s en tres tiempos y sin nombre de niño o niña en el ejemplo. Evidencia: los tests de modelo de estrategias, en la pasada completa. No visto en la app | — |
 | F2 · P4 | En rama | 21/10/2026 | Lúa solo habla inglés: 23 páginas de `banco100_cuentos.json`, 5 de `historias_progresivas.json`, 3 tramas de microcuento, 6 `audioPrompt` de phonics y el cierre de las 6 cápsulas de Academy (`luaEn` en inglés con voz; la idea para hoy queda en gl/es sin «Son Lúa»). Inventario y cambios con `--check` antes de aplicar; gates `check_contos_palabras.py` y `check_microcuentos.py` verdes después. Sin aplicar, a la espera de Frank: dos coros en los que Lúa habla con el grupo en gl/es (banco100 [16] p.5 y [17] p.6). Evidencia: `test/data/cierre_lua_test.dart` y `test/features/academy/cierre_lua_widget_test.dart`. El cierre de la cápsula no se ha visto en la app | Frank decide los dos coros |
 | F2 · P7 | En rama | 21/10/2026 | «Hoxe fixen / Hoy hice» al final de Hoxe, en aula (4 puntos) y en casa (3): lista cerrada en `assets/content/modelo/practica.json`, guardada en `calendario_progreso.json` como ids por día sin hora; un id o perfil fuera de la lista no se guarda. Política de privacidad actualizada en es, gl y en en el mismo cambio. Evidencia: gate de privacidad de `test/features/calendario/calendario_test.dart` ampliado (clave `practica`, sin hora, sin texto libre) y test de marcar, cerrar, reabrir y ver igual; en la app de escritorio Linux se vio la lista en los dos portales y se marcó un punto. El formulario de Seguridad de los datos de Play Console lo tiene que actualizar Frank | Frank actualiza Play Console |
 | F3 · Sesión de 45 min | En rama | 21/10/2026 | Modo Aula (1.º y 2.º ciclo) → «Sesión de 45 minutos: as catro fases», debajo de «Comezar a asemblea». Cuatro fases con sus minutos (acogida y pulso 7-10, cuento dialogado 10-12, taller TPR 15-18, despedida con bolsa misteriosa 5-7), sacadas de `rutinas-sparkling-sintesis.txt` con ERRATAS aplicadas (una adulta, sin nombres, sin pedir que repita, espera antes del elogio). Lo fijo vive en `assets/content/sesion45/sesion45.json`, con voz para sus 12 frases inglesas; lo del mes (microcuento, material, órdenes, núcleo con objeto, objetos de la bolsa) sale de la unidad del curso. En 0-2, sin microcuento, remite al cuento de la semana. Evidencia: `test/features/juega/sesion45_test.dart` (los cinco cursos, gl y es, escala 1,0 y 1,8); recorrido en la app de escritorio Linux por Recursos → Xoga con Lúa → 2.º ciclo (3-4) → sesión, las cuatro fases miradas. No visto en aparato | La asamblea corta sigue como opción diaria (P2) |
@@ -209,7 +209,7 @@ Qué cambia en pantalla:
 
 - **Ya no está la barra «Pautas de lectura dialóxica compartida»** del visor.
   Su contenido va dentro de «Como funciona o conto» como un paso más: señalar
-  el dibujo, esperar unos cinco segundos y, si la criatura dice algo, no
+  el dibujo, esperar unos cinco segundos y, si el niño o la niña dice algo, no
   corregirla sino repetirlo ampliado. Lo de moverse con el reto va en el paso
   del reto. El texto está en `cuentos/como_funciona.json`, ya no en el widget.
 - **El reto en inglés de cada cuento dice lo que da por sabido.** Si usa
@@ -321,7 +321,7 @@ Lo que no se ha comprobado: **esto no lo he visto en un aparato Android.**
 ## Lote L8: quien llega nuevo al curso, y cómo funciona el cuento (6/10/2026)
 
 Rama `claude/ux-l8`, que se integra en `main` por pull request después de L7.
-Frank eligió la opción A de la propuesta para las criaturas que llegan con el
+Frank eligió la opción A de la propuesta para los niños y las niñas que llegan con el
 curso empezado («Me quedo con A»), y dijo cuál era el segundo problema de la
 build: el cuento confunde a quien lo usa por primera vez.
 
@@ -331,7 +331,7 @@ Qué cambia en pantalla:
   día usa palabras que el curso enseñó antes de ese mes, el reproductor pone
   una pantalla entre el foco rítmico y el reto TPR: esas palabras, una cada
   vez, en grande, con su voz, su significado y su gesto, y flechas para pasar.
-  Debajo, la nota para la docente: un padriño o madriña al lado de la criatura
+  Debajo, la nota para la docente: un padriño o madriña al lado del niño o de la niña
   nueva y el gesto las primeras semanas, aunque la orden diga que no. Sale por
   las tres puertas del reproductor (Hoxe, Modo Aula y el día del Calendario),
   en las tres clases de 2.º ciclo y en cinco órdenes de 2-3 años, de una
@@ -359,7 +359,7 @@ Lo que no se ve:
   asambleas con las 4.000 palabras del curso. Una palabra se da por sabida si
   el curso la enseñó antes del mes de la asamblea: en un curso anterior o en
   un mes anterior del mismo. La propuesta decía «de cursos anteriores»; con
-  meses anteriores también, una criatura que llega en enero no se queda sin
+  meses anteriores también, un niño o una niña que llega en enero no se queda sin
   las de octubre. Resultado: 86 órdenes dan algo por sabido, con 147 palabras
   distintas.
 - Gate nuevo, «what each order takes as known comes from the course»: si cambia
@@ -527,7 +527,7 @@ Lo que no se ve:
   `assets/content/xogos_fogar.json` y la pantalla ya no lleva contenido
   escrito. Si el fichero no se puede leer, la pantalla lo dice en vez de
   salir vacía. El campo «criterio de éxito» no pasa al JSON: no se pintaba en
-  ninguna parte y servía para evaluar a la criatura, lo que la app ya había
+  ninguna parte y servía para evaluar al niño o a la niña, lo que la app ya había
   sustituido por «Que observar».
 - Las pestañas de «Ler xogando» salen del diccionario de nombres
   (`nomes_portais.json`), como los demás nombres del portal.
@@ -1230,7 +1230,7 @@ No estaba en el lote; queda dicho para que Frank decida:
 
 - La fase de ritmo de la asamblea de 2.º ciclo hace sonar un pulso a 72 BPM
   («Activar Pulso 72 BPM»). Este repositorio dice que el pulso se ve y no se
-  oye, por las crianzas con audífono o implante. Lo dice de la canción a
+  oye, por las nenos e nenas con audífono o implante. Lo dice de la canción a
   pulso; esta fase es otra, pero el motivo es el mismo.
 - Muchos rótulos van con mayúscula en cada palabra («Seguinte Fase», «Saír da
   Asemblea?»), y en gallego y en castellano no se escribe así. Solo los he
@@ -1302,7 +1302,7 @@ Qué cambia en pantalla:
   frase y sonido». Test y capturas `l0-c2-vocabulario-{gl,es}.png`. El título de
   la pantalla a la que lleva sigue siendo «4.000 palabras de uso habitual»:
   unificar los nombres es el lote L5.
-- **C3 · Fuera los botones para calificar a la criatura.** «Logrado · Asistido ·
+- **C3 · Fuera los botones para calificar al niño o a la niña.** «Logrado · Asistido ·
   Explorando» pedía a la familia evaluar a su hija o hijo y no guardaba nada. En
   su lugar, «Que observar», como en STEAM: tres pistas cortas por actividad que
   se leen y no se marcan, en las cuatro pestañas de Aprender a Ler y en los diez
@@ -1383,8 +1383,8 @@ No estaba en el lote; queda dicho para que Frank decida:
 - La dinámica del viernes propone un «difusor de esencias naturais de lavanda ou
   eucalipto» en un aula de 0 a 6 años. Conviene revisarlo con criterio de
   seguridad infantil.
-- Los pares mínimos piden tapar la boca con un papel «para que a crianza non lea
-  os teus beizos». Para una criatura con audífono o implante, eso le quita el
+- Los pares mínimos piden tapar la boca con un papel «para que o neno ou a nena non lea
+  os teus beizos». Para un niño o una niña con audífono o implante, eso le quita el
   apoyo de la lectura labial.
 - La cápsula de Academy «Como se aprende a falar» y la formación de familias
   hablan de «circuítos neurais» y de que «o seu cerebro xa comprendeu», sin
@@ -1697,11 +1697,11 @@ cómo se ha resuelto:
   y el cambio del Portal Familias rompía `portales_seleccion_ux_test`. Ahora los
   tres están en verde.
 - **La unidad de 3 a 4 años ponía un globo de látex y 20 granos de arroz crudo**
-  delante de las criaturas, sin ningún aviso, y una consigna ponía la mano de la
-  persona adulta en la garganta de la criatura. Las cinco unidades están
+  delante de los niños y las niñas, sin ningún aviso, y una consigna ponía la mano de la
+  persona adulta en la garganta del niño o de la niña. Las cinco unidades están
   reescritas: todo el material mide más de 4 cm y está entero, y ninguna trae
   globos, granos ni piezas pequeñas. Cada una empieza por su aviso de seguridad
-  y cada criatura toca solo su propia garganta. El validador rechaza la lista de
+  y cada niño o niña toca solo su propia garganta. El validador rechaza la lista de
   materiales prohibidos a cualquier edad.
 - **«Sin riesgo de asfixia»** se cortaba en la pantalla y era una promesa que la
   app no puede sostener. Ya no está.
@@ -1713,7 +1713,7 @@ cómo se ha resuelto:
 - **Papeles cooperativos desde los 12 meses.** Ahora no hay papeles antes de los
   3 años (juego en paralelo) y los hay en el aula de 4 a 6. Lo comprueba el
   validador.
-- **Un registro de un toque que no registraba nada** y evaluaba a una criatura
+- **Un registro de un toque que no registraba nada** y evaluaba a un niño o una niña
   en un juego de pareja, con vocabulario de logopedia. Ahora hay una lista de
   qué observar, que se lee y no se registra. El validador rechaza ese
   vocabulario.
@@ -1742,7 +1742,7 @@ Al releer lo ya empujado a la rama aparecieron tres fallos míos:
 
 - **Tres observaciones no valían para casa.** «Qué observar» es común a las dos
   versiones de cada unidad. En «Sombras grandes y pequeñas», una decía que la
-  criatura se pone de acuerdo con su compañera y que la otra marca en el suelo:
+  niño o niña se pone de acuerdo con su compañera y que otro u otra marca en el suelo:
   en casa no hay compañera ni se marca nada. En «La cuadrícula», dos hablaban de
   «tarjetas», y en casa son folios. Las tres están reescritas para valer en las
   dos versiones, con grabación nueva en gallego y en castellano.
@@ -2072,7 +2072,7 @@ empezarían en la casa, calle o escuela de forma habitual».
 
 **Lo que había, medido**: las 1.000 rutinas eran **cinco textos repetidos 200
 veces cada uno**, y los cinco **idénticos para las cinco edades**. A una
-criatura de seis años le decían «piel con piel» y «canto de cuna», lo mismo que
+niño o niña de seis años le decían «piel con piel» y «canto de cuna», lo mismo que
 a un bebé de doce meses. Además empezaban por un corchete de máquina y llevaban
 una firma delante del consejo:
 
@@ -2084,7 +2084,7 @@ una firma delante del consejo:
 gallego y en castellano, en `tools/humaniza_rutinas_fogar.py`. Cada una empieza
 donde empieza de verdad, y el registro sube con la edad:
 
-> Antes de salir de casa, con la criatura en brazos, nombra lo que vais tocando
+> Antes de salir de casa, con el niño o la niña en brazos, nombra lo que vais tocando
 > —el abrigo, la puerta, la calle— y repite el saludo de «Manos que Saludan en
 > la Asamblea». A esta edad el contacto y tu voz calman la despedida mucho más
 > que cualquier explicación.
@@ -2589,7 +2589,7 @@ lo acepta de forma explícita y rechaza cualquier otro.
 | Área | Por qué |
 | --- | --- |
 | **Nada de esto se ha compilado en este contenedor** | La política de red devuelve 403 para `dl.google.com`, así que el Android Gradle Plugin no se resuelve aquí. Todo lo de Android está verificado **en CI**, no en local |
-| **La app no se ha usado en una asamblea real** | Frank la abrió en un Pixel 6 y recorrió las secciones. Que arranque y que funcione con doce crianzas en el aula son cosas distintas |
+| **La app no se ha usado en una asamblea real** | Frank la abrió en un Pixel 6 y recorrió las secciones. Que arranque y que funcione con doce nenos e nenas en el aula son cosas distintas |
 | **Desbordes de disposición** | Sin aparato no hay forma de ver un `RenderFlex overflowed`. En release no se ve nada: el texto simplemente se corta. Falta comprobar en gallego, castellano y con escala de texto grande |
 | **Los gates de Dart, en este contenedor** | No hay SDK de Flutter instalado aquí (`dart: command not found`). Los siete gates de contenido sí corrieron y pasaron; `dart format`, `flutter analyze` y `flutter test` quedan para CI |
 | **Nadie ha escuchado las grabaciones** | Los gates miden picos, duración y cobertura. Que el galego de Celtia suene natural para una docente de Vigo, y que «Mexillón» se entienda a la primera en una asamblea, no lo dice ningún gate |
@@ -2649,7 +2649,7 @@ inferencia. Eso es lo que mantiene el binario sin permisos de red.
 
 ## Decisiones resueltas por Frank
 
-1. **El metrónomo es visual.** No suena: parte de las crianzas llevan audiófono
+1. **El metrónomo es visual.** No suena: parte de las nenos e nenas llevan audiófono
    o implante, y un metrónomo sonoro compite justo con la voz que tienen que
    seguir. Los tiempos salen de las marcas `*` de la letra, no de una
    configuración aparte. Un test comprueba que iniciar el pulso **no reproduce

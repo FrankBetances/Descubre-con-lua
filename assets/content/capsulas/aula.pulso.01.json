@@ -18,8 +18,8 @@
     "es": "En la asamblea el pulso se ve: una barra que avanza, tus manos en las piernas, tu cuerpo. No se oye ningún clic. El canal auditivo queda entero para una sola cosa, que es tu voz diciendo la letra."
   },
   "porQueImporta": {
-    "gl": "Parte das crianzas da aula leva audiófono ou implante. Un metrónomo sonoro compite xusto coa voz que teñen que seguir, e nun aparato que xa comprime o son a competencia gáñaa o clic, que é curto e forte. Coa marca visual ninguén perde a letra, e as crianzas que oen ben tampouco perden nada: seguen o pulso coa vista e coas túas mans, que é como se aprende un ritmo a esta idade.",
-    "es": "Parte de las criaturas del aula lleva audífono o implante. Un metrónomo sonoro compite justo con la voz que tienen que seguir, y en un aparato que ya comprime el sonido la competencia la gana el clic, que es corto y fuerte. Con la marca visual nadie pierde la letra, y las criaturas que oyen bien tampoco pierden nada: siguen el pulso con la vista y con tus manos, que es como se aprende un ritmo a esta edad."
+    "gl": "Parte dos nenos e das nenas da aula leva audiófono ou implante. Un metrónomo sonoro compite xusto coa voz que teñen que seguir, e nun aparato que xa comprime o son a competencia gáñaa o clic, que é curto e forte. Coa marca visual ninguén perde a letra, e os nenos e as nenas que oen ben tampouco perden nada: seguen o pulso coa vista e coas túas mans, que é como se aprende un ritmo a esta idade.",
+    "es": "Parte de los niños y las niñas del aula lleva audífono o implante. Un metrónomo sonoro compite justo con la voz que tienen que seguir, y en un aparato que ya comprime el sonido la competencia la gana el clic, que es corto y fuerte. Con la marca visual nadie pierde la letra, y los niños y las niñas que oyen bien tampoco pierden nada: siguen el pulso con la vista y con tus manos, que es como se aprende un ritmo a esta edad."
   },
   "queHacerEnCasa": {
     "gl": "Marca o pulso coas palmas nas pernas ou balanceando os brazos, amplo e lento, e mira á roda mentres o fas. A túa voz vai por riba, non por debaixo. Se alguén se perde, non pares a canción: esaxera o xesto e segue, que o pulso recupérase mirando.",
@@ -33,8 +33,8 @@
     {
       "id": "afirmacion_01",
       "enunciado": {
-        "gl": "Un metrónomo sonoro axudaría ás crianzas con audiófono a seguir mellor o pulso.",
-        "es": "Un metrónomo sonoro ayudaría a las criaturas con audífono a seguir mejor el pulso."
+        "gl": "Un metrónomo sonoro axudaría aos nenos e ás nenas con audiófono a seguir mellor o pulso.",
+        "es": "Un metrónomo sonoro ayudaría a los niños y las niñas con audífono a seguir mejor el pulso."
       },
       "esVerdadera": false,
       "explicacion": {
@@ -45,8 +45,8 @@
     {
       "id": "afirmacion_02",
       "enunciado": {
-        "gl": "Se unha crianza perde o compás, convén parar a canción e volver empezar.",
-        "es": "Si una criatura pierde el compás, conviene parar la canción y volver a empezar."
+        "gl": "Se un neno ou unha nena perde o compás, convén parar a canción e volver empezar.",
+        "es": "Si un niño o una niña pierde el compás, conviene parar la canción y volver a empezar."
       },
       "esVerdadera": false,
       "explicacion": {
@@ -68,7 +68,7 @@
   },
   "revision": {
     "autor": "Dr. Frank Betances",
-    "revisorPedagogico": "Equipo Pedagóxico Vigo",
+    "revisorPedagogico": "Equipo Pedagóxico Galicia",
     "fechaRevision": "2026-09-12",
     "version": "1.0.0",
     "aprobadoParaAula": true

@@ -70,6 +70,16 @@ class NomesDocentes {
   static const estimulacionDi = LocalizedString(
       gl: 'Para a asemblea: a docente guía e o grupo responde.',
       es: 'Para la asamblea: la docente guía y el grupo responde.');
+  static const realidadeAumentada = LocalizedString(
+      gl: 'Realidade aumentada con Lúa', es: 'Realidad aumentada con Lúa');
+
+  /// En la cabecera de su pantalla: «Realidade aumentada con Lúa» y «Realidad
+  /// aumentada con Lúa» no caben enteros a 360 px.
+  static const realidadeAumentadaCabeceira =
+      LocalizedString(gl: 'RA con Lúa', es: 'RA con Lúa');
+  static const realidadeAumentadaDi = LocalizedString(
+      gl: 'Escena STEAM na mesa ou espello facial, sen gardar imaxes.',
+      es: 'Escena STEAM en mesa o espejo facial, sin guardar imágenes.');
 
   /// Frank: «solo deja planificador curricular».
   static const programacion = LocalizedString(

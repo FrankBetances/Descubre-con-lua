@@ -193,8 +193,8 @@
       }
     ],
     "escenaCotidiana": {
-      "gl": "No recibidor, cunha caixa baixa ao alcance da crianza.",
-      "es": "En el recibidor, con una caja baja al alcance de la criatura.",
+      "gl": "No recibidor, cunha caixa baixa ao alcance do neno ou da nena.",
+      "es": "En el recibidor, con una caja baja al alcance del niño o de la niña.",
       "en": "In the hallway, with a low box within the child's reach."
     },
     "enlaceCapsulaAcademyId": "academy.segundo_ciclo.setembro.01"

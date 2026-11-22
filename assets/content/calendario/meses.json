@@ -1,7 +1,7 @@
 {
   "version": 1,
   "id": "calendario.meses.01",
-  "nota": "Los diez meses del curso (septiembre a junio) del Calendario Escola·Fogar. Contenido, no código: la pantalla lo lee de aquí. El bloque `ingles` es la capa L3 del mes: cada orden de `tpr` y la `frase` tienen una grabación en assets/voice/, generada por tools/generate_voice_assets.py. Aquí ya NO hay léxico: el inglés del curso son cinco palabras nuevas cada día —veinte por semana, ochenta por mes— y viven en assets/content/tpr/, una semana por bloque. Las seis palabras por mes que había aquí siguen todas allí, cada una en su mes. Si cambias una cadena inglesa aquí, su grabación deja de existir y el gate check_voice_coverage.py lo dice. El inglés NO es lengua de interfaz: la app se lee en gallego o castellano y el inglés solo se escucha, para que la persona adulta lo pronuncie antes de decirselo a la criatura. El campo `unidad` dice QUÉ unidad de aula se dirige ese mes, por su id. Antes se emparejaba por `orden`, y el `orden` de una unidad es su sitio en el catálogo, no el mes del curso: la unidad del mar acababa cayendo en septiembre. Un mes sin `unidad` se ve «en preparación» y no abre nada.",
+  "nota": "Los diez meses del curso (septiembre a junio) del Calendario Escola·Fogar. Contenido, no código: la pantalla lo lee de aquí. El bloque `ingles` es la capa L3 del mes: cada orden de `tpr` y la `frase` tienen una grabación en assets/voice/, generada por tools/generate_voice_assets.py. Aquí ya NO hay léxico: el inglés del curso son cinco palabras nuevas cada día —veinte por semana, ochenta por mes— y viven en assets/content/tpr/, una semana por bloque. Las seis palabras por mes que había aquí siguen todas allí, cada una en su mes. Si cambias una cadena inglesa aquí, su grabación deja de existir y el gate check_voice_coverage.py lo dice. El inglés NO es lengua de interfaz: la app se lee en gallego o castellano y el inglés solo se escucha, para que la persona adulta lo pronuncie antes de decirselo al niño o a la niña. El campo `unidad` dice QUÉ unidad de aula se dirige ese mes, por su id. Antes se emparejaba por `orden`, y el `orden` de una unidad es su sitio en el catálogo, no el mes del curso: la unidad del mar acababa cayendo en septiembre. Un mes sin `unidad` se ve «en preparación» y no abre nada.",
   "meses": [
     {
       "orden": 1,
@@ -354,8 +354,8 @@
         "es": "Junio"
       },
       "centroInteres": {
-        "gl": "Días de sol, o mar e as Rías de Vigo",
-        "es": "Días de sol, el mar y las Rías de Vigo"
+        "gl": "Días de sol, o mar e as Rías da vila",
+        "es": "Días de sol, el mar y las Rías de la villa"
       },
       "objetivoPedagogico": {
         "gl": "Movemento vestibular colectivo, simulación das ondas mariñas e despedida alegre.",

@@ -18,8 +18,8 @@
     "es": "En la exploración sensorial la palabra tiene que llegar mientras la mano todavía está dentro del agua. Un minuto después ya es otra cosa: es contar lo que pasó, no nombrar lo que está pasando."
   },
   "porQueImporta": {
-    "gl": "«Morno», «suave», «mollado» non se explican: só se entenden tocando. Se a palabra coincide coa sensación, a crianza asóciaas sen esforzo; se chega antes ou despois, queda como un son solto. Esta é a parte da asemblea onde esa coincidencia é máis fácil de conseguir, porque a sensación dura.",
-    "es": "«Templado», «suave», «mojado» no se explican: solo se entienden tocando. Si la palabra coincide con la sensación, la criatura las asocia sin esfuerzo; si llega antes o después, queda como un sonido suelto. Esta es la parte de la asamblea donde esa coincidencia es más fácil de conseguir, porque la sensación dura."
+    "gl": "«Morno», «suave», «mollado» non se explican: só se entenden tocando. Se a palabra coincide coa sensación, o neno ou a nena asóciaas sen esforzo; se chega antes ou despois, queda como un son solto. Esta é a parte da asemblea onde esa coincidencia é máis fácil de conseguir, porque a sensación dura.",
+    "es": "«Templado», «suave», «mojado» no se explican: solo se entienden tocando. Si la palabra coincide con la sensación, el niño o la niña las asocia sin esfuerzo; si llega antes o después, queda como un sonido suelto. Esta es la parte de la asamblea donde esa coincidencia es más fácil de conseguir, porque la sensación dura."
   },
   "queHacerEnCasa": {
     "gl": "Antes de nada, le o aviso de seguridade da pantalla e comproba a auga. Despois ponte á súa altura e vai nomeando o que fan mentres o fan, en frases curtas e sen preguntar nada: «auga morna», «a cuncha é suave», «a man mollada». As preguntas veñen no paso seguinte, non aquí.",
@@ -38,8 +38,8 @@
       },
       "esVerdadera": false,
       "explicacion": {
-        "gl": "Preguntar pídelle á crianza a palabra que aínda non ten e interrompe o que está a facer. Nomear ti mentres ela toca dálle a palabra no intre exacto; pedirlla vén despois, e a maioría das veces nin fai falta.",
-        "es": "Preguntar le pide a la criatura la palabra que todavía no tiene e interrumpe lo que está haciendo. Nombrar tú mientras ella toca le da la palabra en el instante exacto; pedírsela viene después, y la mayoría de las veces ni hace falta."
+        "gl": "Preguntar pídelle ao neno ou á nena a palabra que aínda non ten e interrompe o que está a facer. Nomear ti mentres ela toca dálle a palabra no intre exacto; pedirlla vén despois, e a maioría das veces nin fai falta.",
+        "es": "Preguntar le pide al niño o a la niña la palabra que todavía no tiene e interrumpe lo que está haciendo. Nombrar tú mientras ella toca le da la palabra en el instante exacto; pedírsela viene después, y la mayoría de las veces ni hace falta."
       }
     },
     {
@@ -70,7 +70,7 @@
   },
   "revision": {
     "autor": "Dr. Frank Betances",
-    "revisorPedagogico": "Equipo Pedagóxico Vigo",
+    "revisorPedagogico": "Equipo Pedagóxico Galicia",
     "fechaRevision": "2026-09-12",
     "version": "1.0.0",
     "aprobadoParaAula": true

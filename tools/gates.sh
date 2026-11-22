@@ -197,6 +197,7 @@ run_gate "the listening bank copied from Valeria is whole and clean (O-20261119-
 run_gate "an educational game, no clinical words in assets, lib or public pages (O-20261118-3)" python3 tools/check_finalidade.py
 run_gate "one listening piece per month and age, none repeated (O-20261119-8)" python3 tools/check_plan_escoita.py
 run_gate "every English phrase for the child has a slow version (O-20261120-1)" python3 tools/check_voz_lenta.py
+run_gate "Galician and Spanish use neno/nena and niño/niña (O-20261122-1)" python3 tools/check_lexico_galicia.py
 run_gate "Frank's brakes work with real sentences (F-20261119-5)" python3 tools/check_hooks.py
 
 # --------------------------------------------------------------- binary gates
@@ -206,7 +207,7 @@ if [[ $FAST -eq 0 ]]; then
   # The one gate that reads the artefact rather than the source. A manifest
   # that removes INTERNET proves nothing on its own: a merged dependency can
   # put it back, and only the built APK settles it.
-  run_gate "release APK declares no permission but AndroidX's" bash -c '
+  run_gate "release APK declares only approved permissions (AndroidX + CAMERA)" bash -c '
     set -euo pipefail
     apk=build/app/outputs/flutter-apk/app-release.apk
     [[ -f "$apk" ]] || { echo "No APK at $apk"; exit 1; }
@@ -215,17 +216,16 @@ if [[ $FAST -eq 0 ]]; then
     aapt2=$(ls -1 "$sdk"/build-tools/*/aapt2 2>/dev/null | sort -V | tail -1 || true)
     [[ -n "$aapt2" ]] || { echo "aapt2 not found under $sdk/build-tools"; exit 1; }
 
-    # AndroidX Core injects one permission into every app that uses it, and
-    # Flutter requires AndroidX. It is namespaced to this application id, is
-    # declared at protectionLevel "signature", and only lets the app register
-    # its own non-exported broadcast receivers: it grants access to nothing
-    # outside the app and appears in no Play data-safety category. Everything
-    # else is a failure — INTERNET included.
-    allowed="uses-permission: name=com.earlify.descubreconlua.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+    # AndroidX Core injects DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION.
+    # P10.4 adds android.permission.CAMERA for optional AR scenes and face mirror
+    # (processed in volatile RAM only; zero files written, zero network).
+    # Everything else is a failure — INTERNET included.
+    allowed_androidx="uses-permission: name=com.earlify.descubreconlua.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+    allowed_camera="uses-permission: name=android.permission.CAMERA"
 
     perms=$("$aapt2" dump permissions "$apk" | grep "^uses-permission" || true)
     # aapt2 quotes the value; compare without the quotes.
-    unexpected=$(printf %s "$perms" | tr -d "\047" | grep -vxF "$allowed" || true)
+    unexpected=$(printf %s "$perms" | tr -d "\047" | grep -vxF "$allowed_androidx" | grep -vxF "$allowed_camera" || true)
 
     if [[ -n "$unexpected" ]]; then
       echo "The release APK declares permissions that were not approved:"
@@ -233,8 +233,8 @@ if [[ $FAST -eq 0 ]]; then
       exit 1
     fi
 
-    echo "OK: the release APK declares no permission beyond the AndroidX"
-    echo "    signature-level one. No INTERNET, no network state, nothing."
+    echo "OK: the release APK declares only AndroidX signature-level receiver"
+    echo "    permission and CAMERA. No INTERNET, no network state, nothing else."
     printf %s "$perms" | sed "s/^/    /"
   '
 fi

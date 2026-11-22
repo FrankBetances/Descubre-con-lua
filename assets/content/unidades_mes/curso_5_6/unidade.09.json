@@ -49,8 +49,8 @@
   "estructura": {
     "ref": "frase.estructura.first-then",
     "nota": {
-      "gl": "First… then…: dúas ou tres accións en orde; a criatura móvese no orde que oe.",
-      "es": "First… then…: dos o tres acciones en orden; la criatura se mueve en el orden que oye."
+      "gl": "First… then…: dúas ou tres accións en orde; o neno ou a nena móvese no orde que oe.",
+      "es": "First… then…: dos o tres acciones en orden; el niño o la niña se mueve en el orden que oye."
     }
   },
   "ordenes": [

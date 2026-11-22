@@ -96,7 +96,7 @@
             "gl": "afundirse",
             "es": "hundirse",
             "lamina": "pal_sink",
-            "frase": "The heavy stone will sink down fast.",
+            "frase": "Watch the heavy stone sink!",
             "accion": {
               "gl": "Facede baixar as mans despacio ata o fondo da bandexa imitando a pedra que se afunde.",
               "es": "Haced bajar las manos despacio hasta el fondo de la bandeja imitando la piedra que se hunde."
@@ -298,7 +298,7 @@
             "gl": "papel",
             "es": "papel",
             "lamina": "pal_pal_paper",
-            "frase": "We fold stiff paper for the sail.",
+            "frase": "Fold a piece of paper for the sail.",
             "accion": {
               "gl": "Acariciade coas xemas o papel lixeiro con que está feita a vela.",
               "es": "Acariciad con las yemas el papel ligero con que está hecha la vela."
@@ -314,7 +314,7 @@
             "gl": "soprar",
             "es": "soplar",
             "lamina": "pal_blow",
-            "frase": "Blow gently to move the boat across.",
+            "frase": "Blow gently to push the boat!",
             "accion": {
               "gl": "Soprade polo camiño da auga vendo como avanza o barco ao instante.",
               "es": "Soplad por el camino del agua viendo cómo avanza el barco al instante."
@@ -330,7 +330,7 @@
             "gl": "lixeiro",
             "es": "ligero",
             "lamina": "pal_light",
-            "frase": "The boat is very light on water.",
+            "frase": "The paper boat is very light.",
             "accion": {
               "gl": "Levantade as palmas cara arriba coma un barquiño moi lixeiro que flota fácil.",
               "es": "Levantad las palmas hacia arriba como un barquito muy ligero que flota fácil."
@@ -347,7 +347,7 @@
         "adulto": [
           "Sail.",
           "A paper sail.",
-          "We blow the light paper sail."
+          "We blow on the light paper sail."
         ],
         "nota": {
           "gl": "Mentres sopran suave e forte en «O vento empurra o barco», o adulto pasa de «sail» a toda a escena de sopro e vento.",
@@ -363,8 +363,8 @@
             "es": "Una vela de papel."
           },
           {
-            "gl": "Sopramos a vela de papel lixeira.",
-            "es": "Soplamos la vela de papel ligera."
+            "gl": "Sopramos na vela de papel lixeira.",
+            "es": "Soplamos en la vela de papel ligera."
           }
         ]
       },
@@ -564,7 +564,7 @@
         "adulto": [
           "Leaf.",
           "A small leaf.",
-          "Sort the small leaf here."
+          "Put the small leaf in this hoop."
         ],
         "nota": {
           "gl": "Ao comparar follas entre o aro grande e o pequeno en «Grande aquí, pequeno alí», o adulto modela tamaño e clasificación.",
@@ -580,8 +580,8 @@
             "es": "Una hoja pequeña."
           },
           {
-            "gl": "Pon a folla pequena aquí.",
-            "es": "Pon la hoja pequeña aquí."
+            "gl": "Pon a folla pequena neste aro.",
+            "es": "Pon la hoja pequeña en este aro."
           }
         ]
       },
@@ -717,7 +717,7 @@
             "gl": "tambor",
             "es": "tambor",
             "lamina": "pal_drum",
-            "frase": "Hit the metal tray or drum.",
+            "frase": "Tap the metal pan like a drum.",
             "accion": {
               "gl": "Bate suavemente coas palmas na bandexa metálica coma un tambor.",
               "es": "Golpea suavemente con las palmas en la bandeja metálica como un tambor."
@@ -733,7 +733,7 @@
             "gl": "baqueta",
             "es": "baqueta",
             "lamina": "pal_stick",
-            "frase": "Tap with the wooden spoon stick.",
+            "frase": "Tap gently with a wooden stick.",
             "accion": {
               "gl": "Suxeita a culler de pau na man lista para dar o golpe forte ou suave.",
               "es": "Sujeta la cuchara de palo en la mano lista para dar el golpe fuerte o suave."
@@ -749,7 +749,7 @@
             "gl": "soltar",
             "es": "soltar",
             "lamina": "pal_drop",
-            "frase": "Drop the big stone from above.",
+            "frase": "Drop a stone from up high.",
             "accion": {
               "gl": "Abre os dedos enriba da bandexa para deixar caer a pedra e escoitar cos ollos pechados.",
               "es": "Abre los dedos encima de la bandeja para dejar caer la piedra y escuchar con los ojos cerrados."
@@ -765,7 +765,7 @@
             "gl": "forte",
             "es": "fuerte",
             "lamina": "pal_loud",
-            "frase": "A big stone makes a loud pum.",
+            "frase": "A big stone makes a loud boom!",
             "accion": {
               "gl": "Pon as mans nas orellas abrindo os ollos sorprendido polo pum forte da pedra.",
               "es": "Pon las manos en las orejas abriendo los ojos sorprendido por el pum fuerte de la piedra."
@@ -782,7 +782,7 @@
         "adulto": [
           "Drum.",
           "A loud drum.",
-          "Drop it on the loud drum."
+          "Tap gently on the loud drum."
         ],
         "nota": {
           "gl": "Ao escoitar cos ollos pechados en «Pum grande, pum pequeno», o adulto modela o instrumento e o volume real do golpe.",
@@ -798,8 +798,8 @@
             "es": "Un tambor fuerte."
           },
           {
-            "gl": "Déixao caer no tambor forte.",
-            "es": "Déjalo caer en el tambor fuerte."
+            "gl": "Toca suave no tambor forte.",
+            "es": "Toca suave en el tambor fuerte."
           }
         ]
       },
@@ -934,7 +934,7 @@
             "gl": "pan",
             "es": "pan",
             "lamina": "pal_bread",
-            "frase": "Compare today's bread and yesterday's bread.",
+            "frase": "Touch fresh bread and old bread.",
             "accion": {
               "gl": "Sinala os dous anacos de pan enriba do pano limpo antes de tocalos.",
               "es": "Señala los dos trozos de pan encima del paño limpio antes de tocarlos."
@@ -999,7 +999,7 @@
         "adulto": [
           "Bread.",
           "Soft bread.",
-          "Press the soft bread now."
+          "Press the soft bread gently."
         ],
         "nota": {
           "gl": "Mentres apretan o pan novo e o de onte en «Pan duro, pan brando», o adulto devolve a textura en tres pasos.",
@@ -1015,8 +1015,8 @@
             "es": "Pan blando."
           },
           {
-            "gl": "Preme agora o pan brando.",
-            "es": "Aprieta ahora el pan blando."
+            "gl": "Preme suave o pan brando.",
+            "es": "Aprieta suave el pan blando."
           }
         ]
       },
@@ -1152,7 +1152,7 @@
             "gl": "mazá",
             "es": "manzana",
             "lamina": "pal_apple",
-            "frase": "Cut the apple in half across.",
+            "frase": "Look at the apple cut in half.",
             "accion": {
               "gl": "Suxeita a metade da mazá coas dúas mans ensinándolle o debuxo de estrela.",
               "es": "Sujeta la mitad de la manzana con las dos manos enseñando el dibujo de estrella."
@@ -1184,7 +1184,7 @@
             "gl": "cortar",
             "es": "cortar",
             "lamina": "pal_cut",
-            "frase": "The adult cuts the apple wide.",
+            "frase": "An adult cuts the apple open.",
             "accion": {
               "gl": "Fai co canto da man un corte horizontal no aire coma quen abre a mazá pola metade.",
               "es": "Haz con el canto de la mano un corte horizontal en el aire como quien abre la manzana."
@@ -1200,7 +1200,7 @@
             "gl": "diminuta",
             "es": "diminuta",
             "lamina": "pal_tiny",
-            "frase": "Each seed in the star is tiny.",
+            "frase": "Look at each tiny brown seed.",
             "accion": {
               "gl": "Xunta o polgar e o índice deixando case nada de espazo para mostrar o tamaño diminuto.",
               "es": "Junta el pulgar y el índice dejando casi nada de espacio para mostrar el tamaño diminuto."
@@ -1385,7 +1385,7 @@
             "gl": "burbulla",
             "es": "burbuja",
             "lamina": "pal_bubble",
-            "frase": "Rub soap to make a white bubble.",
+            "frase": "Rub the soap to make white bubbles.",
             "accion": {
               "gl": "Sopra suavemente nas mans coma se fixeses voar unha burbulla de xabón.",
               "es": "Sopla suavemente en las manos como si hicieras volar una burbuja de jabón."
@@ -1401,7 +1401,7 @@
             "gl": "lavar",
             "es": "lavar",
             "lamina": "pal_wash",
-            "frase": "Wash your hands in four steps.",
+            "frase": "Wash both hands with water and soap.",
             "accion": {
               "gl": "Frega dorso con palma e dedos seguindo as tarxetas de mollar, xabón, aclarar e secar.",
               "es": "Frota dorso con palma y dedos siguiendo las tarjetas de mojar, jabón, aclarar y secar."
@@ -1433,8 +1433,8 @@
         "neno": "hand",
         "adulto": [
           "Hand.",
-          "Clean hand.",
-          "Wash the clean hand with soap."
+          "Clean hands.",
+          "Wash both hands with soap until clean."
         ],
         "nota": {
           "gl": "Mentres seguen as catro tarxetas de «Primeiro mollo, despois xabón», o adulto modela a secuencia ata as mans limpas.",
@@ -1446,12 +1446,12 @@
             "es": "Mano."
           },
           {
-            "gl": "Man limpa.",
-            "es": "Mano limpia."
+            "gl": "Mans limpas.",
+            "es": "Manos limpias."
           },
           {
-            "gl": "Lava a man limpa con xabón.",
-            "es": "Lava la mano limpia con jabón."
+            "gl": "Lava as mans con xabón ata que queden limpas.",
+            "es": "Lava las manos con jabón hasta que queden limpias."
           }
         ]
       },
@@ -1586,7 +1586,7 @@
             "gl": "toalla",
             "es": "toalla",
             "lamina": "pal_towel",
-            "frase": "Lift the wet towel and dry towel.",
+            "frase": "Feel the wet towel and the dry towel.",
             "accion": {
               "gl": "Colle unha toalla pequena en cada man facendo forza na que leva auga.",
               "es": "Coge una toalla pequeña en cada mano haciendo fuerza con la que lleva agua."
@@ -1602,7 +1602,7 @@
             "gl": "gota",
             "es": "gota",
             "lamina": "pal_drop",
-            "frase": "Watch every drop fall in the sink.",
+            "frase": "Watch each drop fall into the sink.",
             "accion": {
               "gl": "Apreta e retorce as mans enriba do lavabo vendo caer cada gota da toalla.",
               "es": "Aprieta y retuerce las manos encima del lavabo viendo caer cada gota de la toalla."
@@ -1634,7 +1634,7 @@
             "gl": "mollada",
             "es": "mojada",
             "lamina": "pal_wet",
-            "frase": "The wet towel weighs much more.",
+            "frase": "The wet towel feels heavy now!",
             "accion": {
               "gl": "Fai cara de sorpresa levantando o brazo máis cargado polo peso da toalla mollada.",
               "es": "Haz cara de sorpresa levantando el brazo más cargado por el peso de la toalla mojada."
@@ -1803,7 +1803,7 @@
             "gl": "pé",
             "es": "pie",
             "lamina": "pal_foot",
-            "frase": "Move each foot with the box beat.",
+            "frase": "Move your feet to the beat.",
             "accion": {
               "gl": "Marca o ritmo no chan cos pés sen moverte do sitio segundo o toque da caixa.",
               "es": "Marca el ritmo en el suelo con los pies sin moverte del sitio según el toque de la caja."
@@ -1835,7 +1835,7 @@
             "gl": "correr",
             "es": "correr",
             "lamina": "pal_run",
-            "frase": "Run fast when the pats go quick.",
+            "frase": "Run fast when the beat goes fast!",
             "accion": {
               "gl": "Move os brazos dobrados coma quen corre rápido cando a caixa toca á présa.",
               "es": "Mueve los brazos doblados como quien corre rápido cuando la caja toca deprisa."
@@ -1851,7 +1851,7 @@
             "gl": "adormecido",
             "es": "dormilón",
             "lamina": "pal_sleepy",
-            "frase": "Silence now: get sleepy on the sofa.",
+            "frase": "Quiet now: curl up like a sleepy cat.",
             "accion": {
               "gl": "Xunta as dúas palmas debaixo da meixela cando chega o silencio para durmir.",
               "es": "Junta las dos palmas debajo de la mejilla cuando llega el silencio para dormir."
@@ -1867,8 +1867,8 @@
         "neno": "foot",
         "adulto": [
           "Foot.",
-          "A quick foot.",
-          "Run fast when the drum beats, then walk slow and sleepy."
+          "Fast feet.",
+          "Step fast to the drum, then tiptoe slowly."
         ],
         "nota": {
           "gl": "Seguindo o ritmo rápido e o silencio de «Pasos que corren, pasos que dormen», o adulto vai de «foot» ao xogo de movemento.",
@@ -1880,12 +1880,12 @@
             "es": "Pie."
           },
           {
-            "gl": "Un pé rápido.",
-            "es": "Un pie rápido."
+            "gl": "Pés rápidos.",
+            "es": "Pies rápidos."
           },
           {
-            "gl": "Corre rápido cando soa o tambor e despois camiña amodo, con sono.",
-            "es": "Corre rápido cuando suena el tambor y después camina despacio, con sueño."
+            "gl": "Pisa rápido co tambor e despois camiña de puntas amodo.",
+            "es": "Pisa rápido con el tambor y después camina de puntillas despacio."
           }
         ]
       },
@@ -2069,7 +2069,7 @@
             "gl": "escuro",
             "es": "oscuro",
             "lamina": "pal_dark",
-            "frase": "The room is dark so stars shine.",
+            "frase": "The room is dark, so the stars shine!",
             "accion": {
               "gl": "Tapa os ollos un segundo coas mans para notar o cuarto escuro antes de mirar arriba.",
               "es": "Tapa los ojos un segundo con las manos para notar el cuarto oscuro antes de mirar arriba."
@@ -2085,7 +2085,7 @@
         "neno": "flashlight",
         "adulto": [
           "Flashlight.",
-          "Dark room.",
+          "A dark room.",
           "The flashlight makes stars glow in the dark."
         ],
         "nota": {
@@ -2098,8 +2098,8 @@
             "es": "Linterna."
           },
           {
-            "gl": "Cuarto escuro.",
-            "es": "Cuarto oscuro."
+            "gl": "Unha habitación escura.",
+            "es": "Una habitación oscura."
           },
           {
             "gl": "A lanterna fai brillar as estrelas na escuridade.",
@@ -2286,7 +2286,7 @@
             "gl": "alta",
             "es": "alta",
             "lamina": "pal_tall",
-            "frase": "Look how tall the steady tower is!",
+            "frase": "Look how tall our tower is!",
             "accion": {
               "gl": "Ponte nas puntiñas dos pés medindo ata onde chega a torre máis alta.",
               "es": "Ponte de puntillas midiendo hasta dónde llega la torre más alta."
@@ -2638,7 +2638,7 @@
           "es": "niño",
           "lamina": "pal_boy",
           "steam": {
-            "gl": "A crianza que sube e baixa a altura dos libros na rampa",
+            "gl": "O neno ou a nena que sube e baixa a altura dos libros na rampa",
             "es": "El niño que sube y baja la altura de los libros en la rampa"
           }
         },
@@ -2937,7 +2937,7 @@
             "gl": "tenso",
             "es": "tenso",
             "lamina": "pal_tight",
-            "frase": "The voice travels when the string is tight.",
+            "frase": "Your voice travels when the string is tight.",
             "accion": {
               "gl": "Tira suavemente dos dous extremos imaxinarios ata deixar o fío ben tirante.",
               "es": "Tira suavemente de los dos extremos imaginarios hasta dejar el hilo bien tirante."
@@ -3106,7 +3106,7 @@
             "gl": "sombra",
             "es": "sombra",
             "lamina": "pal_shadow",
-            "frase": "See the tower shadow on the wall.",
+            "frase": "Look at the tower's shadow on the wall.",
             "accion": {
               "gl": "Sinala a man proxectada no papel grande da parede fronte á luz.",
               "es": "Señala la mano proyectada en el papel grande de la pared frente a la luz."
@@ -3122,7 +3122,7 @@
             "gl": "contorno",
             "es": "contorno",
             "lamina": "pal_outline",
-            "frase": "Trace the dark outline on big paper.",
+            "frase": "Trace the dark outline on a big sheet.",
             "accion": {
               "gl": "Debuxa no aire co dedo índice todo o bordo dunha figura.",
               "es": "Dibuja en el aire con el dedo índice todo el borde de una figura."
@@ -3356,7 +3356,7 @@
             "gl": "derreterse",
             "es": "derretirse",
             "lamina": "pal_melt",
-            "frase": "The big ice starts to melt fast.",
+            "frase": "The ice cube starts to melt fast.",
             "accion": {
               "gl": "Baixa o corpo amodo ata encollerte coma o cubiño que se desfai na auga.",
               "es": "Baja el cuerpo despacio hasta encogerte como el cubito que se deshace en el agua."
@@ -3589,7 +3589,7 @@
             "gl": "lista",
             "es": "lista",
             "lamina": "pal_ready",
-            "frase": "Every spot matches: the table is ready.",
+            "frase": "Every place has a plate: the table is ready.",
             "accion": {
               "gl": "Abre os dous brazos mostrando a mesa completa sen ningún sitio baleiro.",
               "es": "Abre los dos brazos mostrando la mesa completa sin ningún sitio vacío."
@@ -3790,7 +3790,7 @@
             "gl": "verter",
             "es": "verter",
             "lamina": "pal_pour",
-            "frase": "Pour the water slow without spilling.",
+            "frase": "Pour the water slowly without spilling.",
             "accion": {
               "gl": "Inclina moi amodo o pulso coma quen serve auga sen mollar a bandexa.",
               "es": "Inclina muy despacio la muñeca como quien sirve agua sin mojar la bandeja."
@@ -3806,7 +3806,7 @@
             "gl": "amodo",
             "es": "despacio",
             "lamina": "pal_slow",
-            "frase": "Go slow when the cup is nearly full.",
+            "frase": "Use a slow pour so the cup does not spill.",
             "accion": {
               "gl": "Move a man cara abaixo a cámara lenta freando antes de chegar ao bordo.",
               "es": "Mueve la mano hacia abajo a cámara lenta frenando antes de llegar al borde."
@@ -3822,8 +3822,8 @@
         "neno": "funnel",
         "adulto": [
           "Funnel.",
-          "Pour slow.",
-          "Pour water through the funnel very slow."
+          "A slow pour.",
+          "Pour water slowly through the funnel."
         ],
         "nota": {
           "gl": "Mentres regulan o chorro da xerra na bandexa en «Verter amodo», o adulto modela precisión e vocabulario da proba.",
@@ -3831,16 +3831,16 @@
         },
         "significado": [
           {
-            "gl": "Funil.",
+            "gl": "Embude.",
             "es": "Embudo."
           },
           {
-            "gl": "Verter amodo.",
-            "es": "Verter despacio."
+            "gl": "Botar amodo.",
+            "es": "Echar despacio."
           },
           {
-            "gl": "Verte a auga polo funil moi amodo.",
-            "es": "Vierte el agua por el embudo muy despacio."
+            "gl": "Bota a auga amodo polo embude.",
+            "es": "Echa el agua despacio por el embudo."
           }
         ]
       },
@@ -4039,7 +4039,7 @@
         "neno": "jar",
         "adulto": [
           "Jar.",
-          "A high jar.",
+          "A high note.",
           "Tap the glass jar to hear a high note."
         ],
         "nota": {
@@ -4052,12 +4052,12 @@
             "es": "Bote."
           },
           {
-            "gl": "Un bote agudo.",
-            "es": "Un bote agudo."
+            "gl": "Unha nota aguda.",
+            "es": "Una nota aguda."
           },
           {
-            "gl": "Bate no bote de vidro para oír unha nota aguda.",
-            "es": "Golpea el bote de cristal para oír una nota aguda."
+            "gl": "Dá un toquiño ao bote de cristal para oír unha nota aguda.",
+            "es": "Da un toquecito al bote de cristal para oír una nota aguda."
           }
         ]
       },
@@ -4209,7 +4209,7 @@
             "gl": "mango",
             "es": "mango",
             "lamina": "pal_handle",
-            "frase": "Turn the handle to see the outside.",
+            "frase": "Hold the handle and turn the spoon around.",
             "accion": {
               "gl": "Xira o pulso coma quen dá a volta ao mango da culler.",
               "es": "Gira la muñeca como quien da la vuelta al mango de la cuchara."
@@ -4225,7 +4225,7 @@
             "gl": "sorrir",
             "es": "sonreír",
             "lamina": "pal_smile",
-            "frase": "Smile wide inside the shiny spoon!",
+            "frase": "Smile wide and look in the shiny spoon!",
             "accion": {
               "gl": "Fai un sorriso ben grande diante da culler mirando se vai dereito ou ao revés.",
               "es": "Haz una sonrisa bien grande delante de la cuchara mirando si va derecho o al revés."
@@ -4410,7 +4410,7 @@
             "gl": "venda",
             "es": "venda",
             "lamina": "pal_bandage",
-            "frase": "Wrap the best bandage on the paw.",
+            "frase": "Wrap a soft bandage gently on the paw.",
             "accion": {
               "gl": "Envolve coas mans a pata dun peluche como quen pon unha venda con coidado.",
               "es": "Envuelve con las manos la pata de un peluche como quien pone una venda con cuidado."
@@ -4426,7 +4426,7 @@
             "gl": "algodón",
             "es": "algodón",
             "lamina": "pal_cotton",
-            "frase": "Soft cotton drinks every drop of water.",
+            "frase": "Soft cotton soaks up every drop of water.",
             "accion": {
               "gl": "Acaricia os dedos coma un floco de algodón suave antes de mollar.",
               "es": "Acaricia los dedos como un copo de algodón suave antes de mojar."
@@ -4675,7 +4675,7 @@
             "gl": "rápido",
             "es": "rápido",
             "lamina": "pal_fast",
-            "frase": "After jumping, the heartbeat goes very fast.",
+            "frase": "After jumping, your heart beats very fast!",
             "accion": {
               "gl": "Fai latexar a man ben á présa fronte a como ían os dedos antes de saltar.",
               "es": "Haz latir la mano bien deprisa frente a cómo iban los dedos antes de saltar."
@@ -4892,7 +4892,7 @@
             "gl": "catro",
             "es": "cuatro",
             "lamina": "pal_four",
-            "frase": "Four legs go inside the number four hoop.",
+            "frase": "Put toys with four legs in hoop four.",
             "accion": {
               "gl": "Amosa catro dedos ben abertos enriba da tarxeta co número 4.",
               "es": "Muestra cuatro dedos bien abiertos encima de la tarjeta con el número 4."
@@ -5125,8 +5125,8 @@
         "neno": "lens",
         "adulto": [
           "Lens.",
-          "A large leaf.",
-          "Zoom in with the lens to see it large."
+          "A large picture.",
+          "Look through the lens to see things large."
         ],
         "nota": {
           "gl": "Mentres buscan a distancia exacta da lupa en «Coa lupa, máis grande», o adulto describe o enfoque e o aumento.",
@@ -5134,16 +5134,16 @@
         },
         "significado": [
           {
-            "gl": "Lupa.",
-            "es": "Lupa."
+            "gl": "Lente.",
+            "es": "Lente."
           },
           {
-            "gl": "Unha folla grande.",
-            "es": "Una hoja grande."
+            "gl": "Unha imaxe grande.",
+            "es": "Una imagen grande."
           },
           {
-            "gl": "Achégate coa lupa para vela grande.",
-            "es": "Acércate con la lupa para verla grande."
+            "gl": "Mira pola lente para ver as cousas grandes.",
+            "es": "Mira por la lupa para ver las cosas grandes."
           }
         ]
       },
@@ -5342,8 +5342,8 @@
         "neno": "stretcher",
         "adulto": [
           "Stretcher.",
-          "Carry steady.",
-          "Carry the cloth stretcher steady past the cone."
+          "Steady hands.",
+          "Carry the cloth stretcher steadily past the cones."
         ],
         "nota": {
           "gl": "Ao acordar a velocidade entre os dous portadores en «A padiola», o adulto amplía ata a estabilidade conxunta.",
@@ -5355,12 +5355,12 @@
             "es": "Camilla."
           },
           {
-            "gl": "Levar firme.",
-            "es": "Llevar firme."
+            "gl": "Mans firmes.",
+            "es": "Manos firmes."
           },
           {
-            "gl": "Levade a padiola de tea firme ata pasar o cono.",
-            "es": "Llevad la camilla de tela firme hasta pasar el cono."
+            "gl": "Levade a padiola de tea con firmeza entre os conos.",
+            "es": "Llevad la camilla de tela con firmeza entre los conos."
           }
         ]
       },
@@ -6395,7 +6395,7 @@
             "gl": "vestir",
             "es": "vestir",
             "lamina": "pal_wear",
-            "frase": "Wear the right clothes for the sky.",
+            "frase": "Wear the right clothes for the weather.",
             "accion": {
               "gl": "Abotoa ou pecha a cremalleira imaxinaria polo peito ata o pescozo.",
               "es": "Abrocha o cierra la cremallera imaginaria por el pecho hasta el cuello."
@@ -6428,7 +6428,7 @@
         "adulto": [
           "Raincoat.",
           "Warm and dry.",
-          "Wear the raincoat with the hood to stay dry."
+          "Put up the raincoat hood to stay dry."
         ],
         "nota": {
           "gl": "Ao comprobar á volta se a roupa escollida serviu en «Que roupa pide o tempo?», o adulto modela roupa e clima.",
@@ -6436,16 +6436,16 @@
         },
         "significado": [
           {
-            "gl": "Impermeable.",
+            "gl": "Chuvasqueiro.",
             "es": "Chubasquero."
           },
           {
-            "gl": "Quente e seco.",
+            "gl": "Quentiño e seco.",
             "es": "Calentito y seco."
           },
           {
-            "gl": "Pon o impermeable co carapucho para estar seco.",
-            "es": "Ponte el chubasquero con la capucha para estar seco."
+            "gl": "Pon a carapucha do chuvasqueiro para quedar seco.",
+            "es": "Ponte la capucha del chubasquero para estar seco."
           }
         ]
       },
@@ -6797,7 +6797,7 @@
             "gl": "filtro",
             "es": "filtro",
             "lamina": "pal_filter",
-            "frase": "Hold the colored filter before the light.",
+            "frase": "Hold the colored filter in front of the light.",
             "accion": {
               "gl": "Suxeita un rectángulo transparente diante dos ollos vendo todo tinguido desa cor.",
               "es": "Sujeta un rectángulo transparente delante de los ojos viendo todo teñido de ese color."
@@ -7279,7 +7279,7 @@
             "gl": "redondo",
             "es": "redondo",
             "lamina": "pal_round",
-            "frase": "The round disc looks one new color!",
+            "frase": "The round disc looks like one new color!",
             "accion": {
               "gl": "Forma un aro ben redondo cos dous brazos mentres imitas a velocidade do xiro.",
               "es": "Forma un aro bien redondo con los dos brazos mientras imitas la velocidad del giro."
@@ -7681,7 +7681,7 @@
             "gl": "punta",
             "es": "punta",
             "lamina": "pal_nose",
-            "frase": "Make the plane nose sharp or wide.",
+            "frase": "Fold the plane's nose sharp or wide.",
             "accion": {
               "gl": "Xunta as dúas mans en frecha diante do peito marcando o morro dobrado do avión.",
               "es": "Junta las dos manos en flecha delante del pecho marcando la punta doblada del avión."
@@ -7713,7 +7713,7 @@
             "gl": "branco",
             "es": "blanco",
             "lamina": "pal_white",
-            "frase": "The white folio plane crosses the tape.",
+            "frase": "The white paper plane glides past the tape.",
             "accion": {
               "gl": "Sinala un folio branco liso coma do que nace o avión tras dobrar.",
               "es": "Señala un folio blanco liso como del que nace el avión tras doblar."
@@ -7730,7 +7730,7 @@
         "adulto": [
           "Plane.",
           "A white plane.",
-          "The white plane glides from the nose fold."
+          "Fold the nose so the white plane glides far."
         ],
         "nota": {
           "gl": "Cando modifican un prego tras medir os pasos en «Avións de papel», o adulto amplía «plane» ata o voo completo.",
@@ -7746,8 +7746,8 @@
             "es": "Un avión blanco."
           },
           {
-            "gl": "O avión branco planea desde o dobrez do bico.",
-            "es": "El avión blanco planea desde el doblez del morro."
+            "gl": "Dobra o morro para que o avión branco plane lonxe.",
+            "es": "Dobla el morro para que el avión blanco planee lejos."
           }
         ]
       },
@@ -8099,7 +8099,7 @@
             "gl": "maleta",
             "es": "maleta",
             "lamina": "pal_pal_suitcase",
-            "frase": "Lift the suitcase with clothes or books.",
+            "frase": "Lift a suitcase packed with clothes or books.",
             "accion": {
               "gl": "Fai o xesto de erguer polo asa unha mochila ou maleta cargada.",
               "es": "Haz el gesto de levantar por el asa una mochila o maleta cargada."
@@ -8533,7 +8533,7 @@
             "gl": "frauta",
             "es": "flauta",
             "lamina": "pal_flute",
-            "frase": "Tape the straws into a Pan flute.",
+            "frase": "Tape the straws together to make a pan flute.",
             "accion": {
               "gl": "Suxeita varias pallas ordenadas en abanico diante da boca coma unha frauta de Pan.",
               "es": "Sujeta varias pajitas ordenadas en abanico delante de la boca como una flauta de Pan."

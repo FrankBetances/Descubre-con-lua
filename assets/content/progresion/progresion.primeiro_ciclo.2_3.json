@@ -89,8 +89,8 @@
         "es": "La misma orden, con el material"
       },
       "consigna": {
-        "gl": "Repite a orde de onte co material do mes. Cada crianza que quere fai o xesto co obxecto na man; as demais miran.",
-        "es": "Repite la orden de ayer con el material del mes. Cada criatura que quiere hace el gesto con el objeto en la mano; las demás miran."
+        "gl": "Repite a orde de onte co material do mes. Cada neno ou nena que quere fai o xesto co obxecto na man; os demais miran.",
+        "es": "Repite la orden de ayer con el material del mes. Cada niño o niña que quiere hace el gesto con el objeto en la mano; los demás miran."
       },
       "comandos": [
         0
@@ -256,8 +256,8 @@
         "es": "El grupo elige"
       },
       "consigna": {
-        "gl": "Fai as tres ordes e deixa que unha crianza sinale cal repetimos. Non fai falta que a diga: co xesto abonda.",
-        "es": "Haz las tres órdenes y deja que una criatura señale cuál repetimos. No hace falta que la diga: con el gesto basta."
+        "gl": "Fai as tres ordes e deixa que un neno ou unha nena sinale cal repetimos. Non fai falta que a diga: co xesto abonda.",
+        "es": "Haz las tres órdenes y deja que un niño o una niña señale cuál repetimos. No hace falta que la diga: con el gesto basta."
       },
       "comandos": [
         0,
@@ -338,12 +338,12 @@
         "es": "Jueves"
       },
       "foco": {
-        "gl": "Unha crianza fai de mestra",
-        "es": "Una criatura hace de maestra"
+        "gl": "Un neno ou unha nena fai de mestra",
+        "es": "Un niño o una niña hace de maestra"
       },
       "consigna": {
-        "gl": "Unha crianza ponse ao teu lado e fai o xesto contigo mentres ti dis a orde. Cambia de crianza en cada orde.",
-        "es": "Una criatura se pone a tu lado y hace el gesto contigo mientras tú dices la orden. Cambia de criatura en cada orden."
+        "gl": "Un neno ou unha nena ponse ao teu lado e fai o xesto contigo mentres ti dis a orde. Cambia de neno ou nena en cada orde.",
+        "es": "Un niño o una niña se pone a tu lado y hace el gesto contigo mientras tú dices la orden. Cambia de niño o niña en cada orden."
       },
       "comandos": [
         0,

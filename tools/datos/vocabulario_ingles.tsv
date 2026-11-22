@@ -21,7 +21,7 @@ id_global	lemma	pos	definicion	frase
 18	again	ADV	one more time	Can you sing the song again?
 19	against	ADP	touching or leaning on something	The ladder is leaning against the wall.
 20	age	NOUN	how old a person or thing is	At the age of three, she started school.
-21	ago	ADV	before now; in the past	We moved to Vigo two years ago.
+21	ago	ADV	before now; in the past	We moved to this town two years ago.
 22	agree	VERB	to have the same opinion as someone	I agree with you: it is a lovely day.
 23	ahead	ADV	in front; further forward	Look ahead and walk carefully.
 24	air	NOUN	the mixture of gases that we breathe	Open the window and let in some fresh air.
@@ -159,7 +159,7 @@ id_global	lemma	pos	definicion	frase
 156	choose	VERB	to decide which thing or person you want	Choose a colour for your drawing.
 157	christmas	NOUN	the holiday on 25 December, and the days around it	We visit our grandparents at Christmas.
 158	church	NOUN	a building where Christians go to pray	The old church in the village has a tall tower.
-159	city	NOUN	a large and important town	Vigo is a city by the sea.
+159	city	NOUN	a large and important town	Our town is a city by the sea.
 160	class	NOUN	a group of children who learn together	Our class has twenty children.
 161	clean	ADJ	not dirty	Put on a clean shirt after lunch.
 162	clear	ADJ	easy to understand, see or hear	The teacher's instructions were very clear.
@@ -1458,7 +1458,7 @@ id_global	lemma	pos	definicion	frase
 1457	incredible	ADJ	amazing; very difficult to believe	The view from the top was incredible.
 1458	indicate	VERB	to show or point to something	The arrow indicates the way out.
 1459	individual	NOUN	one person	Every child is a unique individual.
-1460	industry	NOUN	the businesses that make or produce a particular thing	Fishing is a big industry in Vigo.
+1460	industry	NOUN	the businesses that make or produce a particular thing	Fishing is a big industry in Galicia.
 1461	influence	NOUN	the power to change how someone thinks or acts	Parents have a big influence on their children.
 1462	injure	VERB	to hurt a part of the body	Be careful not to injure yourself.
 1463	innocent	ADJ	not guilty of doing something wrong	He was innocent: the cat broke the vase!
@@ -1666,7 +1666,7 @@ id_global	lemma	pos	definicion	frase
 1665	pool	NOUN	a large hole filled with water for swimming	The children are swimming in the pool.
 1666	popular	ADJ	liked by many people	Football is a popular sport.
 1667	population	NOUN	the number of people who live in a place	The population of the town is growing.
-1668	port	NOUN	a town or an area by the sea where ships stop	Big ships come into the port of Vigo.
+1668	port	NOUN	a town or an area by the sea where ships stop	Big ships come into the sea port.
 1669	positive	ADJ	hopeful and confident	Try to stay positive.
 1670	possess	VERB	to have or own something	The old man possessed a beautiful garden.
 1671	potato	NOUN	a round vegetable that grows under the ground	We had baked potatoes for dinner.
@@ -1944,7 +1944,7 @@ id_global	lemma	pos	definicion	frase
 1943	tower	NOUN	a tall narrow building, or a tall part of a building	The church tower has a clock.
 1944	toy	NOUN	an object for children to play with	This toy train is made of wood.
 1945	trace	VERB	to copy a picture or a letter by drawing over its lines	Trace the letter with your finger.
-1946	trade	NOUN	the buying and selling of goods	Vigo has a long history of trade by sea.
+1946	trade	NOUN	the buying and selling of goods	Our coast has a long history of trade by sea.
 1947	tradition	NOUN	something that people have done in the same way for a long time	Eating chestnuts in autumn is a Galician tradition.
 1948	traffic	NOUN	the cars and other vehicles on a road	There is a lot of traffic in the morning.
 1949	transfer	VERB	to move someone or something from one place to another	You can transfer the photos to the computer.
@@ -2588,7 +2588,7 @@ id_global	lemma	pos	definicion	frase
 2588	merge	VERB	to join together to make one thing	The two rivers merge near the sea.
 2589	method	NOUN	a way of doing something	This is an easy method for making bread.
 2590	migrate	VERB	to move to another place at a particular time of year	Swallows migrate to Africa in autumn.
-2591	mild	ADJ	not very strong, cold or severe	The winter in Vigo is mild.
+2591	mild	ADJ	not very strong, cold or severe	The winter in Galicia is mild.
 2592	miner	NOUN	a person who works under the ground to get coal or metals	The miner worked deep under the ground.
 2593	minimum	ADJ	the smallest that is possible or allowed	The minimum age for the ride is six.
 2594	ministry	NOUN	a government department	Her aunt works for the Ministry of Health.
@@ -3030,7 +3030,7 @@ id_global	lemma	pos	definicion	frase
 3031	ambitious	ADJ	wanting very much to succeed	He is an ambitious young chef with big plans.
 3032	ambulance	NOUN	a vehicle that takes ill or hurt people to hospital	The ambulance arrived in five minutes.
 3033	amid	ADP	in the middle of	We found a tiny flower amid the stones.
-3034	ancestor	NOUN	a member of your family who lived a long time ago	My ancestors were fishermen in Vigo.
+3034	ancestor	NOUN	a member of your family who lived a long time ago	My ancestors were fishermen in Galicia.
 3035	anchor	VERB	to stop a boat from moving by dropping a heavy hook	The sailing boat anchored near the beach.
 3036	animate	VERB	to make something lively	Her laugh animated the whole room.
 3037	ankle	NOUN	the joint between your foot and your leg	He twisted his ankle playing football.
@@ -3135,7 +3135,7 @@ id_global	lemma	pos	definicion	frase
 3137	canvas	NOUN	strong cloth for tents and bags, or for painting on	The artist painted on a large canvas.
 3138	capitalism	NOUN	an economic system where businesses are owned privately for profit	We talked about capitalism in our economics class.
 3139	capitalist	ADJ	based on capitalism	Most European countries have capitalist economies.
-3140	cargo	NOUN	the goods carried by a ship, a plane or a lorry	The ship unloaded its cargo at the port of Vigo.
+3140	cargo	NOUN	the goods carried by a ship, a plane or a lorry	The ship unloaded its cargo at the sea port.
 3141	carriage	NOUN	one of the separate parts of a train where people sit	Our carriage was at the front of the train.
 3142	cartoon	NOUN	a funny drawing, or a film made of drawings	Dad drew a funny cartoon of our cat.
 3143	casualty	NOUN	a person hurt in an accident; in Britain, also the emergency department	The casualty department was busy all night.
@@ -3161,7 +3161,7 @@ id_global	lemma	pos	definicion	frase
 3163	choke	VERB	to be unable to breathe because something is stuck in your throat	Cut grapes in half so that small children don't choke.
 3164	cholesterol	NOUN	a fatty substance in the body	The doctor checked my dad's cholesterol.
 3165	chronic	ADJ	lasting for a long time	She has chronic back pain.
-3166	chronicle	VERB	to write about events in the order they happened	Her diary chronicles a year in Vigo.
+3166	chronicle	VERB	to write about events in the order they happened	Her diary chronicles a year in Galicia.
 3167	chunk	NOUN	a thick piece of something	Cut the melon into chunks.
 3168	cinema	NOUN	a place where you go to watch films	We went to the cinema on Saturday.
 3169	civic	ADJ	relating to a town and the people who live in it	Voting is a civic duty.
@@ -3214,7 +3214,7 @@ id_global	lemma	pos	definicion	frase
 3216	contaminate	VERB	to make something dirty or harmful	Oil from the ship contaminated the beach.
 3217	contemplate	VERB	to think about something carefully	We contemplate moving to the countryside.
 3218	contempt	NOUN	the feeling that someone or something is worthless	She looked at the messy room with contempt.
-3219	contingent	NOUN	a group of people who are part of a bigger group	A contingent of fans travelled from Vigo.
+3219	contingent	NOUN	a group of people who are part of a bigger group	A contingent of fans travelled from the coast.
 3220	contrary	ADJ	opposite	Contrary to what I thought, the test was easy.
 3221	convenience	NOUN	something that makes life easier	For convenience, we keep the nappies by the door.
 3222	convenient	ADJ	useful or easy for you	Is Tuesday convenient for you?
@@ -3263,7 +3263,7 @@ id_global	lemma	pos	definicion	frase
 3265	deprive	VERB	to take something important away from someone	The noisy party deprived us of sleep.
 3266	despair	NOUN	the feeling that there is no hope	He threw up his hands in despair.
 3267	despatch	VERB	to send someone or something somewhere	We will despatch your order tomorrow.
-3268	destination	NOUN	the place where someone or something is going	Our destination is the Cíes Islands.
+3268	destination	NOUN	the place where someone or something is going	Our destination is the coastal islands.
 3269	destiny	NOUN	what will happen to someone in the future	She believed it was her destiny to be a singer.
 3270	detach	VERB	to separate one thing from another	Detach the coupon from the bottom of the page.
 3271	detain	VERB	to keep someone somewhere and not let them leave	The heavy traffic detained us for an hour.
@@ -3304,7 +3304,7 @@ id_global	lemma	pos	definicion	frase
 3306	divine	ADJ	related to God or a god; also, very good	This chocolate cake is divine!
 3307	dock	NOUN	the part of a port where ships stop to load and unload	The fishing boats are tied up at the dock.
 3308	documentary	NOUN	a film or television programme about real facts	We watched a documentary about whales.
-3309	dolphin	NOUN	an intelligent sea animal that breathes air	Dolphins sometimes swim in the Ría de Vigo.
+3309	dolphin	NOUN	an intelligent sea animal that breathes air	Dolphins sometimes swim in the Galician ría.
 3310	domain	NOUN	an area of knowledge or activity; an internet address	Cooking is my dad's domain at home.
 3311	dome	NOUN	a round roof	The church has a big blue dome.
 3312	donor	NOUN	a person who gives something to help others	An anonymous donor paid for the new playground.
@@ -3373,7 +3373,7 @@ id_global	lemma	pos	definicion	frase
 3375	fax	NOUN	a copy of a document sent through a telephone line	Hardly anyone sends a fax nowadays.
 3376	federate	VERB	to join together under one government or organisation	The local clubs decided to federate.
 3377	feminine	ADJ	typical of women; in grammar, of one of the classes of words	In Spanish, the word mesa is feminine.
-3378	ferry	VERB	to carry people or things by boat or by car	Boats ferry tourists to the Cíes Islands.
+3378	ferry	VERB	to carry people or things by boat or by car	Boats ferry tourists to the coastal islands.
 3379	fever	NOUN	a high body temperature when you are ill	The baby has a slight fever.
 3380	fined	VERB	made to pay money as a punishment	The driver was fined for parking on the pavement.
 3381	fiscal	ADJ	related to government money and taxes	The fiscal year starts in January.
@@ -3592,7 +3592,7 @@ id_global	lemma	pos	definicion	frase
 3594	mercy	NOUN	kindness shown to someone you could punish	The king showed mercy and set the prisoners free.
 3595	merit	NOUN	a good quality	The plan has many merits.
 3596	metaphor	NOUN	a way of describing something by calling it something else	Saying that life is a journey is a metaphor.
-3597	metropolitan	ADJ	related to a large city and the area around it	The metropolitan area of Vigo has about half a million people.
+3597	metropolitan	ADJ	related to a large city and the area around it	The metropolitan park has tall trees and clean paths.
 3598	mid	ADJ	in the middle of	We'll go on holiday in mid-August.
 3599	mighty	ADJ	very strong and powerful	The mighty river flooded the valley.
 3600	militant	ADJ	using strong or extreme methods to support a cause	A militant group blocked the road in protest.
@@ -3610,7 +3610,7 @@ id_global	lemma	pos	definicion	frase
 3612	monarch	NOUN	a king or a queen	The monarch waved to the crowd.
 3613	monetary	ADJ	related to money	The euro is the monetary unit of Spain.
 3614	monopoly	NOUN	complete control of a market by one company	One company has a monopoly on the island ferries.
-3615	monument	NOUN	a statue or a building that helps people remember someone	There is a monument to Jules Verne in Vigo.
+3615	monument	NOUN	a statue or a building that helps people remember someone	There is a monument to Jules Verne by the sea.
 3616	mould	VERB	to shape something soft	The children moulded animals out of clay.
 3617	mourn	VERB	to feel very sad because someone has passed away	The town mourned the old fisherman.
 3618	ms	NOUN	a title used before a woman's surname	Ms López is our new teacher.
@@ -3700,7 +3700,7 @@ id_global	lemma	pos	definicion	frase
 3702	pond	NOUN	a small area of still water	Frogs live in the pond.
 3703	pope	NOUN	the head of the Roman Catholic Church	The pope visited Santiago de Compostela.
 3704	portfolio	NOUN	a collection of work, such as drawings, to show someone	The art teacher looked at my portfolio.
-3705	portray	VERB	to show or describe someone in a picture, a film or a book	The book portrays the life of fishermen in Vigo.
+3705	portray	VERB	to show or describe someone in a picture, a film or a book	The book portrays the life of fishermen in Galicia.
 3706	poster	NOUN	a large printed picture or notice that you put on a wall	There's a poster of a whale in my room.
 3707	postpone	VERB	to move an event to a later time	We had to postpone the picnic because of the rain.
 3708	preach	VERB	to talk about religion in public; to give advice in a boring way	Don't preach at me, I know I'm late!
@@ -3794,7 +3794,7 @@ id_global	lemma	pos	definicion	frase
 3796	script	NOUN	the written words of a play or a film	The actors learned the script by heart.
 3797	scrutiny	NOUN	very careful examination	The new plan is under close scrutiny.
 3798	secular	ADJ	not religious	The festival has both religious and secular traditions.
-3799	seldom	ADV	not often	It seldom snows in Vigo.
+3799	seldom	ADV	not often	It seldom snows in Galicia.
 3800	seminar	NOUN	a class or a meeting to discuss a subject	Teachers attended a seminar on early reading.
 3801	senator	NOUN	a member of a senate	The senator visited the new school.
 3802	sensation	NOUN	a feeling; great excitement	Sand gives a lovely sensation under your feet.
@@ -3901,7 +3901,7 @@ id_global	lemma	pos	definicion	frase
 3903	temple	NOUN	a building for worship; the side of your forehead	We visited an old Roman temple.
 3904	tenant	NOUN	a person who pays rent to live in a place	The tenant pays the rent every month.
 3905	terminal	NOUN	a building where passengers start or end a journey	Our flight leaves from terminal two.
-3906	terminate	VERB	to end something	This train terminates at Vigo.
+3906	terminate	VERB	to end something	This train terminates at the station.
 3907	terrace	NOUN	a flat area outside a house or a café	We had breakfast on the terrace.
 3908	terrify	VERB	to make someone very frightened	Thunder used to terrify our dog.
 3909	testament	NOUN	proof that something is true; one of the two parts of the Bible	Her garden is a testament to years of hard work.

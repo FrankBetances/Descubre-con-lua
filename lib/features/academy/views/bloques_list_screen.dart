@@ -74,9 +74,9 @@ class _BloquesListScreenState extends State<BloquesListScreen> {
 
   static const _subtitulo = LocalizedString(
     gl: 'Lecturas curtas para a familia, cunha reflexión ao final. '
-        'Sen pantallas para a crianza.',
+        'Sen pantallas para o neno ou a nena.',
     es: 'Lecturas cortas para la familia, con una reflexión al final. '
-        'Sin pantallas para la criatura.',
+        'Sin pantallas para el niño o la niña.',
   );
 
   static const _disponibles = LocalizedString(

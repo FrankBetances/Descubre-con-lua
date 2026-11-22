@@ -115,12 +115,12 @@
           "es": "Asamblea: la caja sorpresa mojada. La persona adulta saca una esponja mojada, la aprieta para que caigan unas gotas y dice en parentese: «Mmm, look! Water! Cold water!»."
         },
         "desenvolvemento": {
-          "gl": "Recuncho da auga: as criaturas mexen nas cubetas en grupos de tres. A persoa adulta canta un patrón rítmico: «Splash, splash, splash in the water! And... stop!». As criaturas baten na auga e páranse ao oír a orde. Despois entran os barcos: «Push the boat!».",
-          "es": "Rincón del agua: las criaturas manipulan las cubetas en grupos de tres. La persona adulta canta un patrón rítmico: «Splash, splash, splash in the water! And... stop!». Las criaturas chapotean y se paran al oír la orden. Después entran los barcos: «Push the boat!»."
+          "gl": "Recuncho da auga: os nenos e as nenas mexen nas cubetas en grupos de tres. A persoa adulta canta un patrón rítmico: «Splash, splash, splash in the water! And... stop!». Os nenos e as nenas baten na auga e páranse ao oír a orde. Despois entran os barcos: «Push the boat!».",
+          "es": "Rincón del agua: los niños y las niñas manipulan las cubetas en grupos de tres. La persona adulta canta un patrón rítmico: «Splash, splash, splash in the water! And... stop!». Los niños y las niñas chapotean y se paran al oír la orden. Después entran los barcos: «Push the boat!»."
         },
         "peche": {
-          "gl": "Secado, unha criatura por vez. A persoa adulta fregalle as mans coa toalla: «Wet hands... now dry hands! Dry, dry, dry».",
-          "es": "Secado, una criatura cada vez. La persona adulta le frota las manos con la toalla: «Wet hands... now dry hands! Dry, dry, dry»."
+          "gl": "Secado, un neno ou unha nena por vez. A persoa adulta fregalle as mans coa toalla: «Wet hands... now dry hands! Dry, dry, dry».",
+          "es": "Secado, un niño o una niña cada vez. La persona adulta le frota las manos con la toalla: «Wet hands... now dry hands! Dry, dry, dry»."
         }
       },
       "frasesAdulta": [
@@ -165,8 +165,8 @@
           "es": "Se han quitado los números de nota pegados a las palabras («parentese1», «mandato auditivo8»...) (ERRATAS, «En los cinco»)."
         },
         {
-          "gl": "«Docente», «educador», «maestro», «progenitores» e «niño» pasan a «persoa adulta», «familia» e «criatura»; os termos fisiolóxicos (propiocepción, deglución, vibración larínxea) dinse con palabras de todos os días (ERRATAS, «En los cinco»: nada clínico).",
-          "es": "«Docente», «educador», «maestro», «progenitores» y «niño» pasan a «persona adulta», «familia» y «criatura»; los términos fisiológicos (propiocepción, deglución, vibración laríngea) se dicen con palabras de todos los días (ERRATAS, «En los cinco»: nada clínico)."
+          "gl": "«Docente», «educador», «maestro», «progenitores» e «niño» pasan a «persoa adulta», «familia» e «neno ou nena»; os termos fisiolóxicos (propiocepción, deglución, vibración larínxea) dinse con palabras de todos os días (ERRATAS, «En los cinco»: nada clínico).",
+          "es": "«Docente», «educador», «maestro», «progenitores» y «niño» pasan a «persona adulta», «familia» y «niño o niña»; los términos fisiológicos (propiocepción, deglución, vibración laríngea) se dicen con palabras de todos los días (ERRATAS, «En los cinco»: nada clínico)."
         }
       ],
       "naonEntra": [
@@ -319,8 +319,8 @@
           "es": "Cesto de tesoros naturales en la alfombra del centro. La persona adulta saca una piedra grande: «Wow, a stone! A big, heavy stone»."
         },
         "desenvolvemento": {
-          "gl": "Circuíto de movemento. As criaturas levan unha folla lixeira ata unha cesta aberta: «Pick up the leaf. Walk, walk... now drop it! Drop!». O son da folla ao caer compárase co golpe xordo da pedra («Drop the stone: Boom!»).",
-          "es": "Circuito de movimiento. Las criaturas llevan una hoja ligera hasta una cesta abierta: «Pick up the leaf. Walk, walk... now drop it! Drop!». El sonido de la hoja al caer se compara con el golpe sordo de la piedra («Drop the stone: Boom!»)."
+          "gl": "Circuíto de movemento. Os nenos e as nenas levan unha folla lixeira ata unha cesta aberta: «Pick up the leaf. Walk, walk... now drop it! Drop!». O son da folla ao caer compárase co golpe xordo da pedra («Drop the stone: Boom!»).",
+          "es": "Circuito de movimiento. Los niños y las niñas llevan una hoja ligera hasta una cesta abierta: «Pick up the leaf. Walk, walk... now drop it! Drop!». El sonido de la hoja al caer se compara con el golpe sordo de la piedra («Drop the stone: Boom!»)."
         },
         "peche": {
           "gl": "Xogo de contrastes de tamaño co corpo: «Make your body big! Big like a tree! Now small, small like a stone».",
@@ -360,8 +360,8 @@
         }
       ],
       "familia": {
-        "gl": "Nos paseos ao parque ou ás prazas, a familia invita a criatura a buscar follas no chan e a volver facer o xesto: «Pick up the leaf! Drop the leaf!», mirando xuntas o mesmo.",
-        "es": "En los paseos al parque o a las plazas, la familia invita a la criatura a buscar hojas en el suelo y a volver a hacer el gesto: «Pick up the leaf! Drop the leaf!», mirando juntas lo mismo."
+        "gl": "Nos paseos ao parque ou ás prazas, a familia invita o neno ou a nena a buscar follas no chan e a volver facer o xesto: «Pick up the leaf! Drop the leaf!», mirando xuntas o mesmo.",
+        "es": "En los paseos al parque o a las plazas, la familia invita al niño o a la niña a buscar hojas en el suelo y a volver a hacer el gesto: «Pick up the leaf! Drop the leaf!», mirando juntas lo mismo."
       },
       "fonte": "curriculo-vocabulario-infantil-2-6.txt:42-62",
       "erratasAplicadas": [
@@ -374,8 +374,8 @@
           "es": "Se han quitado los números de nota pegados a las palabras («parentese1», «mandato auditivo8»...) (ERRATAS, «En los cinco»)."
         },
         {
-          "gl": "«Docente», «educador», «maestro», «progenitores» e «niño» pasan a «persoa adulta», «familia» e «criatura»; os termos fisiolóxicos (propiocepción, deglución, vibración larínxea) dinse con palabras de todos os días (ERRATAS, «En los cinco»: nada clínico).",
-          "es": "«Docente», «educador», «maestro», «progenitores» y «niño» pasan a «persona adulta», «familia» y «criatura»; los términos fisiológicos (propiocepción, deglución, vibración laríngea) se dicen con palabras de todos los días (ERRATAS, «En los cinco»: nada clínico)."
+          "gl": "«Docente», «educador», «maestro», «progenitores» e «niño» pasan a «persoa adulta», «familia» e «neno ou nena»; os termos fisiolóxicos (propiocepción, deglución, vibración larínxea) dinse con palabras de todos os días (ERRATAS, «En los cinco»: nada clínico).",
+          "es": "«Docente», «educador», «maestro», «progenitores» y «niño» pasan a «persona adulta», «familia» y «niño o niña»; los términos fisiológicos (propiocepción, deglución, vibración laríngea) se dicen con palabras de todos los días (ERRATAS, «En los cinco»: nada clínico)."
         },
         {
           "gl": "Obxectivo 4: o documento contrasta leaf con stick, que non está na unidade; póñese big, que é da unidade e leva a mesma /ɪ/. ERRATAS non sinala esta liña (48); aplícase o seu criterio das liñas 27 e 90/99 (contraste só con palabras que estean).",
@@ -515,16 +515,16 @@
       "contraste": null,
       "dinamica": {
         "inicio": {
-          "gl": "Preparar a mesa do lanche da mañá. A persoa adulta corta unha mazá diante das criaturas: «Look, an apple! Red and crunchy apple».",
-          "es": "Preparar la mesa del almuerzo de la mañana. La persona adulta corta una manzana delante de las criaturas: «Look, an apple! Red and crunchy apple»."
+          "gl": "Preparar a mesa do lanche da mañá. A persoa adulta corta unha mazá diante dos nenos e das nenas: «Look, an apple! Red and crunchy apple».",
+          "es": "Preparar la mesa del almuerzo de la mañana. La persona adulta corta una manzana delante de los niños y las niñas: «Look, an apple! Red and crunchy apple»."
         },
         "desenvolvemento": {
-          "gl": "Obradoiro de cata. Cada criatura recibe un anaco de pan morno: «Feel the bread. It is warm. Warm bread! Now, take a bite! Bite! Crunch!». A persoa adulta responde a cada acción no momento en que pasa.",
-          "es": "Taller de cata. Cada criatura recibe un trozo de pan templado: «Feel the bread. It is warm. Warm bread! Now, take a bite! Bite! Crunch!». La persona adulta responde a cada acción en el momento en que pasa."
+          "gl": "Obradoiro de cata. Cada neno ou nena recibe un anaco de pan morno: «Feel the bread. It is warm. Warm bread! Now, take a bite! Bite! Crunch!». A persoa adulta responde a cada acción no momento en que pasa.",
+          "es": "Taller de cata. Cada niño o niña recibe un trozo de pan templado: «Feel the bread. It is warm. Warm bread! Now, take a bite! Bite! Crunch!». La persona adulta responde a cada acción en el momento en que pasa."
         },
         "peche": {
-          "gl": "Xogo das bolsas térmicas. A persoa adulta pon no colo de cada criatura un saquiño morno e exclama: «Mmm, warm and soft».",
-          "es": "Juego de las bolsas térmicas. La persona adulta pone en el regazo de cada criatura un saquito templado y exclama: «Mmm, warm and soft»."
+          "gl": "Xogo das bolsas térmicas. A persoa adulta pon no colo de cada neno ou nena un saquiño morno e exclama: «Mmm, warm and soft».",
+          "es": "Juego de las bolsas térmicas. La persona adulta pone en el regazo de cada niño o niña un saquito templado y exclama: «Mmm, warm and soft»."
         }
       },
       "frasesAdulta": [
@@ -555,8 +555,8 @@
         }
       ],
       "familia": {
-        "gl": "Á hora da merenda, ofrecer anacos de froita ou de pan dicindo amodo e cantando: «Bite the apple! Mmm, yummy apple», e agardar con paciencia a resposta ou a mirada atenta da criatura.",
-        "es": "A la hora de la merienda, ofrecer trozos de fruta o de pan diciendo despacio y cantando: «Bite the apple! Mmm, yummy apple», y esperar con paciencia la respuesta o la mirada atenta de la criatura."
+        "gl": "Á hora da merenda, ofrecer anacos de froita ou de pan dicindo amodo e cantando: «Bite the apple! Mmm, yummy apple», e agardar con paciencia a resposta ou a mirada atenta do neno ou da nena.",
+        "es": "A la hora de la merienda, ofrecer trozos de fruta o de pan diciendo despacio y cantando: «Bite the apple! Mmm, yummy apple», y esperar con paciencia la respuesta o la mirada atenta del niño o de la niña."
       },
       "fonte": "curriculo-vocabulario-infantil-2-6.txt:63-83",
       "erratasAplicadas": [
@@ -569,8 +569,8 @@
           "es": "Se han quitado los números de nota pegados a las palabras («parentese1», «mandato auditivo8»...) (ERRATAS, «En los cinco»)."
         },
         {
-          "gl": "«Docente», «educador», «maestro», «progenitores» e «niño» pasan a «persoa adulta», «familia» e «criatura»; os termos fisiolóxicos (propiocepción, deglución, vibración larínxea) dinse con palabras de todos os días (ERRATAS, «En los cinco»: nada clínico).",
-          "es": "«Docente», «educador», «maestro», «progenitores» y «niño» pasan a «persona adulta», «familia» y «criatura»; los términos fisiológicos (propiocepción, deglución, vibración laríngea) se dicen con palabras de todos los días (ERRATAS, «En los cinco»: nada clínico)."
+          "gl": "«Docente», «educador», «maestro», «progenitores» e «niño» pasan a «persoa adulta», «familia» e «neno ou nena»; os termos fisiolóxicos (propiocepción, deglución, vibración larínxea) dinse con palabras de todos os días (ERRATAS, «En los cinco»: nada clínico).",
+          "es": "«Docente», «educador», «maestro», «progenitores» y «niño» pasan a «persona adulta», «familia» y «niño o niña»; los términos fisiológicos (propiocepción, deglución, vibración laríngea) se dicen con palabras de todos los días (ERRATAS, «En los cinco»: nada clínico)."
         }
       ],
       "naonEntra": []
@@ -706,12 +706,12 @@
           "es": "Lavar el muñeco de la clase en una palangana. La persona adulta dice: «Baby is dirty! Let's get the soap. Smell the soap!»."
         },
         "desenvolvemento": {
-          "gl": "Cada criatura colle a súa pastilla de xabón coas mans molladas: «Rub the soap! Rub, rub, rub! Now wash your hands under water! Wash!».",
-          "es": "Cada criatura coge su pastilla de jabón con las manos mojadas: «Rub the soap! Rub, rub, rub! Now wash your hands under water! Wash!»."
+          "gl": "Cada neno ou nena colle a súa pastilla de xabón coas mans molladas: «Rub the soap! Rub, rub, rub! Now wash your hands under water! Wash!».",
+          "es": "Cada niño o niña coge su pastilla de jabón con las manos mojadas: «Rub the soap! Rub, rub, rub! Now wash your hands under water! Wash!»."
         },
         "peche": {
-          "gl": "Cada criatura coa súa toalla: «Dry with the towel. Feel how soft it is. Soft towel on your nose!».",
-          "es": "Cada criatura con su toalla: «Dry with the towel. Feel how soft it is. Soft towel on your nose!»."
+          "gl": "Cada neno ou nena coa súa toalla: «Dry with the towel. Feel how soft it is. Soft towel on your nose!».",
+          "es": "Cada niño o niña con su toalla: «Dry with the towel. Feel how soft it is. Soft towel on your nose!»."
         }
       },
       "frasesAdulta": [
@@ -742,8 +742,8 @@
         }
       ],
       "familia": {
-        "gl": "Ao lavar as mans cando se volve da rúa, cantar a fórmula «Rub the soap, wash, wash, wash!» mentres se fai escuma que se vexa entre as mans da criatura e as da persoa adulta.",
-        "es": "Al lavarse las manos al volver de la calle, cantar la fórmula «Rub the soap, wash, wash, wash!» mientras se hace espuma que se vea entre las manos de la criatura y las de la persona adulta."
+        "gl": "Ao lavar as mans cando se volve da rúa, cantar a fórmula «Rub the soap, wash, wash, wash!» mentres se fai escuma que se vexa entre as mans do neno ou da nena e as da persoa adulta.",
+        "es": "Al lavarse las manos al volver de la calle, cantar la fórmula «Rub the soap, wash, wash, wash!» mientras se hace espuma que se vea entre las manos del niño o de la niña y las de la persona adulta."
       },
       "fonte": "curriculo-vocabulario-infantil-2-6.txt:84-104",
       "erratasAplicadas": [
@@ -756,8 +756,8 @@
           "es": "Se han quitado los números de nota pegados a las palabras («parentese1», «mandato auditivo8»...) (ERRATAS, «En los cinco»)."
         },
         {
-          "gl": "«Docente», «educador», «maestro», «progenitores» e «niño» pasan a «persoa adulta», «familia» e «criatura»; os termos fisiolóxicos (propiocepción, deglución, vibración larínxea) dinse con palabras de todos os días (ERRATAS, «En los cinco»: nada clínico).",
-          "es": "«Docente», «educador», «maestro», «progenitores» y «niño» pasan a «persona adulta», «familia» y «criatura»; los términos fisiológicos (propiocepción, deglución, vibración laríngea) se dicen con palabras de todos los días (ERRATAS, «En los cinco»: nada clínico)."
+          "gl": "«Docente», «educador», «maestro», «progenitores» e «niño» pasan a «persoa adulta», «familia» e «neno ou nena»; os termos fisiolóxicos (propiocepción, deglución, vibración larínxea) dinse con palabras de todos os días (ERRATAS, «En los cinco»: nada clínico).",
+          "es": "«Docente», «educador», «maestro», «progenitores» y «niño» pasan a «persona adulta», «familia» y «niño o niña»; los términos fisiológicos (propiocepción, deglución, vibración laríngea) se dicen con palabras de todos los días (ERRATAS, «En los cinco»: nada clínico)."
         },
         {
           "gl": "Obxectivo 4: o documento pide /ʊ/ de foot fronte a /u/ de boot, e a focalización traballa /ʌ/ de rub; ningunha das tres está no vocabulario (ERRATAS, liñas 90/99: un só contraste, con palabras que estean). Quédase o da focalización, rub, e o par faise con wash, da unidade.",
@@ -904,8 +904,8 @@
           "es": "Un animal duerme en su cesta. La persona adulta susurra en parentese: «Shh... the dog is sleeping! Sleep, little dog...»."
         },
         "desenvolvemento": {
-          "gl": "Xogo de espertar e correr na sala de psicomotricidade: «Wake up, dog! Run, dog, run! Fast, fast, fast!». As criaturas corren. A persoa adulta di alto pero suave: «Night time! Sleep!», e as criaturas déitanse no chan ao momento, sen moverse.",
-          "es": "Juego de despertar y correr en la sala de psicomotricidad: «Wake up, dog! Run, dog, run! Fast, fast, fast!». Las criaturas corren. La persona adulta dice alto pero suave: «Night time! Sleep!», y las criaturas se tumban en el suelo al momento, sin moverse."
+          "gl": "Xogo de espertar e correr na sala de psicomotricidade: «Wake up, dog! Run, dog, run! Fast, fast, fast!». Os nenos e as nenas corren. A persoa adulta di alto pero suave: «Night time! Sleep!», e os nenos e as nenas déitanse no chan ao momento, sen moverse.",
+          "es": "Juego de despertar y correr en la sala de psicomotricidad: «Wake up, dog! Run, dog, run! Fast, fast, fast!». Los niños y las niñas corren. La persona adulta dice alto pero suave: «Night time! Sleep!», y los niños y las niñas se tumban en el suelo al momento, sin moverse."
         },
         "peche": {
           "gl": "Acariñar as figuras dos animais amodo: «Soft cat... nice cat».",
@@ -954,8 +954,8 @@
           "es": "Se han quitado los números de nota pegados a las palabras («parentese1», «mandato auditivo8»...) (ERRATAS, «En los cinco»)."
         },
         {
-          "gl": "«Docente», «educador», «maestro», «progenitores» e «niño» pasan a «persoa adulta», «familia» e «criatura»; os termos fisiolóxicos (propiocepción, deglución, vibración larínxea) dinse con palabras de todos os días (ERRATAS, «En los cinco»: nada clínico).",
-          "es": "«Docente», «educador», «maestro», «progenitores» y «niño» pasan a «persona adulta», «familia» y «criatura»; los términos fisiológicos (propiocepción, deglución, vibración laríngea) se dicen con palabras de todos los días (ERRATAS, «En los cinco»: nada clínico)."
+          "gl": "«Docente», «educador», «maestro», «progenitores» e «niño» pasan a «persoa adulta», «familia» e «neno ou nena»; os termos fisiolóxicos (propiocepción, deglución, vibración larínxea) dinse con palabras de todos os días (ERRATAS, «En los cinco»: nada clínico).",
+          "es": "«Docente», «educador», «maestro», «progenitores» y «niño» pasan a «persona adulta», «familia» y «niño o niña»; los términos fisiológicos (propiocepción, deglución, vibración laríngea) se dicen con palabras de todos los días (ERRATAS, «En los cinco»: nada clínico)."
         },
         {
           "gl": "«mesesDocumento» copia o que di o documento; non programa nada: manda o calendario de 10 meses da app (ERRATAS, liñas 20-127: a unidade 5, maio-xuño, e a 6, xuño-xullo / inicio de curso, solápanse e saen do curso).",
@@ -1091,8 +1091,8 @@
           "es": "Una caja cerrada con una pelota pesada dentro. La persona adulta la sacude para que suene sordo: «What is in the box? Listen! A box!»."
         },
         "desenvolvemento": {
-          "gl": "Cada criatura recibe unha pelota. Ao sinal «Go!» camiñan botando a pelota. Ao oír «Clap!» suxeitan a pelota entre os xeonllos ou déixana no chan e dan tres palmadas fortes. Ao oír «In the box!» corren a metela na caixa.",
-          "es": "Cada criatura recibe una pelota. A la señal «Go!» caminan botando la pelota. Al oír «Clap!» sujetan la pelota entre las rodillas o la dejan en el suelo y dan tres palmadas fuertes. Al oír «In the box!» corren a meterla en la caja."
+          "gl": "Cada neno ou nena recibe unha pelota. Ao sinal «Go!» camiñan botando a pelota. Ao oír «Clap!» suxeitan a pelota entre os xeonllos ou déixana no chan e dan tres palmadas fortes. Ao oír «In the box!» corren a metela na caixa.",
+          "es": "Cada niño o niña recibe una pelota. A la señal «Go!» caminan botando la pelota. Al oír «Clap!» sujetan la pelota entre las rodillas o la dejan en el suelo y dan tres palmadas fuertes. Al oír «In the box!» corren a meterla en la caja."
         },
         "peche": {
           "gl": "Levantar caixas: «This box is heavy! Oof! Lift the box».",
@@ -1137,8 +1137,8 @@
         }
       ],
       "familia": {
-        "gl": "Ao gardar os xoguetes nas súas caixas ou cestos do cuarto da criatura, cantar «Put the ball in the box! Go, go, go!», para que recoller sexa algo compartido e alegre.",
-        "es": "Al guardar los juguetes en sus cajas o cestos del cuarto de la criatura, cantar «Put the ball in the box! Go, go, go!», para que recoger sea algo compartido y alegre."
+        "gl": "Ao gardar os xoguetes nas súas caixas ou cestos do cuarto do neno ou da nena, cantar «Put the ball in the box! Go, go, go!», para que recoller sexa algo compartido e alegre.",
+        "es": "Al guardar los juguetes en sus cajas o cestos del cuarto del niño o de la niña, cantar «Put the ball in the box! Go, go, go!», para que recoger sea algo compartido y alegre."
       },
       "fonte": "curriculo-vocabulario-infantil-2-6.txt:126-146",
       "erratasAplicadas": [
@@ -1151,8 +1151,8 @@
           "es": "Se han quitado los números de nota pegados a las palabras («parentese1», «mandato auditivo8»...) (ERRATAS, «En los cinco»)."
         },
         {
-          "gl": "«Docente», «educador», «maestro», «progenitores» e «niño» pasan a «persoa adulta», «familia» e «criatura»; os termos fisiolóxicos (propiocepción, deglución, vibración larínxea) dinse con palabras de todos os días (ERRATAS, «En los cinco»: nada clínico).",
-          "es": "«Docente», «educador», «maestro», «progenitores» y «niño» pasan a «persona adulta», «familia» y «criatura»; los términos fisiológicos (propiocepción, deglución, vibración laríngea) se dicen con palabras de todos los días (ERRATAS, «En los cinco»: nada clínico)."
+          "gl": "«Docente», «educador», «maestro», «progenitores» e «niño» pasan a «persoa adulta», «familia» e «neno ou nena»; os termos fisiolóxicos (propiocepción, deglución, vibración larínxea) dinse con palabras de todos os días (ERRATAS, «En los cinco»: nada clínico).",
+          "es": "«Docente», «educador», «maestro», «progenitores» y «niño» pasan a «persona adulta», «familia» y «niño o niña»; los términos fisiológicos (propiocepción, deglución, vibración laríngea) se dicen con palabras de todos los días (ERRATAS, «En los cinco»: nada clínico)."
         },
         {
           "gl": "«mesesDocumento» copia o que di o documento; non programa nada: manda o calendario de 10 meses da app (ERRATAS, liñas 20-127: a unidade 5, maio-xuño, e a 6, xuño-xullo / inicio de curso, solápanse e saen do curso).",

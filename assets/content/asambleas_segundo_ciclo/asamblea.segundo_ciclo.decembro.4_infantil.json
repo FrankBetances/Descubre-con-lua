@@ -193,8 +193,8 @@
       }
     ],
     "escenaCotidiana": {
-      "gl": "Na entrada da casa, coas prendas ao alcance da crianza.",
-      "es": "En la entrada de casa, con las prendas al alcance de la criatura.",
+      "gl": "Na entrada da casa, coas prendas ao alcance do neno ou da nena.",
+      "es": "En la entrada de casa, con las prendas al alcance del niño o de la niña.",
       "en": "At the front door, with the clothes within the child's reach."
     },
     "enlaceCapsulaAcademyId": "academy.segundo_ciclo.setembro.01"

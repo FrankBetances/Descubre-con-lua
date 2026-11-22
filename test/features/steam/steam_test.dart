@@ -358,7 +358,8 @@ void main() {
       );
       expect(find.text('Para casa'), findsOneWidget);
       expect(find.text('Blando y duro'), findsOneWidget);
-      expect(find.textContaining('Tú y la criatura, sentados en el suelo.'),
+      expect(
+          find.textContaining('Tú y el niño o la niña, sentados en el suelo.'),
           findsOneWidget);
 
       final abrir = find.byKey(const ValueKey('abrir_steam_I1-MATERIA-001'));

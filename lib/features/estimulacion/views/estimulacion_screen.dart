@@ -7,6 +7,7 @@ import '../../../core/brand/imaxe_escena.dart';
 import '../../../core/brand/lamina_vector.dart';
 import '../../../core/localization/app_language.dart';
 import '../../../core/localization/localized_string.dart';
+import '../../../core/navigation/ruta_lua.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../../core/widgets/cabecera.dart';
 import '../../../core/widgets/movimiento.dart';
@@ -15,15 +16,18 @@ import '../../docentes/nomes_docentes.dart';
 import '../../familias/nomes_familias.dart';
 import '../../familias/widgets/selector_idade.dart';
 import '../../leccions/widgets/proxecto_0_2.dart';
+import '../data/ar_estimulacion_model.dart';
 import '../data/estimulacion_ui.dart';
+import 'ar_actividad_screen.dart';
 
 /// P9.3 · Sección propia «Estimulación da linguaxe e o pensamento».
 ///
-/// Reúne por edad y por los 10 meses del curso los cuatro bloques ordenados:
+/// Reúne por edad y por los 10 meses del curso los cinco bloques ordenados:
 ///   1. Escoita (o par mínimo con láminas e son),
 ///   2. Palabras que medran (progresión en catro pasos),
 ///   3. Fálalle así (modelo da persoa adulta en voz child + slow),
-///   4. Pensamos (predice → proba → compara → explica no experimento STEAM).
+///   4. Pensamos (predice → proba → compara → explica no experimento STEAM),
+///   5. Realidade aumentada con Lúa (escena do mes e espello facial en inglés).
 ///
 /// En Modo Aula (`enAula: true`) mostra a guía para a asemblea, onde a
 /// docente guía e o grupo responde en coro ou sinala á vez.
@@ -61,6 +65,7 @@ class _EstimulacionScreenState extends State<EstimulacionScreen> {
   EstimulacionUi? _ui = EstimulacionUi.lido;
   PlanEscoita? _plan = PlanEscoita.lido;
   Proxectos02? _proxectos = Proxectos02.lidos;
+  ArEstimulacionPlan? _arPlan;
 
   @override
   void initState() {
@@ -91,6 +96,11 @@ class _EstimulacionScreenState extends State<EstimulacionScreen> {
       final prox = await Proxectos02.cargar();
       if (!mounted) return;
       setState(() => _proxectos = prox);
+    }
+    if (_arPlan == null) {
+      final ar = await ArEstimulacionPlan.cargar();
+      if (!mounted) return;
+      setState(() => _arPlan = ar);
     }
   }
 
@@ -208,6 +218,25 @@ class _EstimulacionScreenState extends State<EstimulacionScreen> {
                           lang: lang,
                           enAula: widget.enAula,
                           audioService: widget.audioService,
+                        ),
+                      ),
+                    const SizedBox(height: 16),
+                    if (_arPlan?.escenaDe(_cursoId, _mes) case final arEscena?)
+                      Entrada(
+                        orden: 5,
+                        child: _BloqueRa(
+                          ui: ui,
+                          escena: arEscena,
+                          lang: lang,
+                          enAula: widget.enAula,
+                          cursoId: _cursoId,
+                          mes: _mes,
+                          audioService: widget.audioService,
+                          onLanguageChanged: (nova) {
+                            setState(() => _lang = nova);
+                            widget.onLanguageChanged(nova);
+                          },
+                          arPlan: _arPlan!,
                         ),
                       ),
                   ],
@@ -1165,6 +1194,97 @@ class _BloqueZeroDous extends StatelessWidget {
           ),
         ),
       ],
+    );
+  }
+}
+
+class _BloqueRa extends StatelessWidget {
+  const _BloqueRa({
+    required this.ui,
+    required this.escena,
+    required this.lang,
+    required this.enAula,
+    required this.cursoId,
+    required this.mes,
+    required this.audioService,
+    required this.onLanguageChanged,
+    required this.arPlan,
+  });
+
+  final EstimulacionUi ui;
+  final ArEscenaMensual escena;
+  final AppLanguage lang;
+  final bool enAula;
+  final String cursoId;
+  final int mes;
+  final OfflineAudioService? audioService;
+  final ValueChanged<AppLanguage> onLanguageChanged;
+  final ArEstimulacionPlan arPlan;
+
+  @override
+  Widget build(BuildContext context) {
+    return _TarxetaBloque(
+      key: const Key('bloque_estimulacion_ra'),
+      numero: ui.ra.numero,
+      titulo: ui.ra.titulo.resolve(lang),
+      subtitulo:
+          (enAula ? ui.ra.subtituloAula : ui.ra.subtituloCasa).resolve(lang),
+      fillo: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(
+            escena.titulo.resolve(lang),
+            style: const TextStyle(
+              fontFamily: AppTheme.fontTitulos,
+              fontSize: 17,
+              fontWeight: FontWeight.w700,
+              color: AppTheme.textPrimary,
+            ),
+          ),
+          const SizedBox(height: 6),
+          Text(
+            escena.guiaAdulto.resolve(lang),
+            style: const TextStyle(
+              fontSize: 14,
+              height: 1.4,
+              color: AppTheme.textSecondary,
+            ),
+          ),
+          const SizedBox(height: 10),
+          BotonEscuchar(
+            audioService: audioService,
+            texto: escena.fraseCenaEn,
+            language: AppLanguage.en,
+            interfaz: lang,
+            style: estiloIngles(escena.fraseCenaEn, paraNeno: true),
+            conVozLenta: true,
+            comoChip: true,
+            descripcion: escena.fraseCenaEn,
+            significado: escena.fraseCenaSig,
+          ),
+          const SizedBox(height: 12),
+          FilledButton.icon(
+            key: const Key('estimulacion_abrir_ra'),
+            onPressed: () => Navigator.of(context).push(
+              RutaLua(
+                de: context,
+                builder: (_) => ArActividadScreen(
+                  language: lang,
+                  onLanguageChanged: onLanguageChanged,
+                  audioService: audioService,
+                  initialCursoId: cursoId,
+                  initialMes: mes,
+                  enAula: enAula,
+                  plan: arPlan,
+                  ui: ui,
+                ),
+              ),
+            ),
+            icon: const Icon(Icons.view_in_ar_rounded),
+            label: Text(ui.ra.abrirMesa.resolve(lang)),
+          ),
+        ],
+      ),
     );
   }
 }

@@ -160,7 +160,7 @@ PUNTOS = {
 # Un ejemplo de cada punto B1-C1, para la persona adulta.
 EXEMPLO_ADULTO = {
     21: ("Have you ever seen a hedgehog?", "Viches algunha vez un ourizo?", "¿Has visto alguna vez un erizo?"),
-    22: ("We have lived in Vigo since 2020.", "Vivimos en Vigo desde 2020.", "Vivimos en Vigo desde 2020."),
+    22: ("We have lived in Galicia since 2020.", "Vivimos en Galicia desde 2020.", "Vivimos en Galicia desde 2020."),
     23: ("She has been playing in the sand all morning.", "Leva toda a mañá xogando na area.", "Lleva toda la mañana jugando en la arena."),
     24: ("The bus had left when we arrived.", "O autobús xa saíra cando chegamos.", "El autobús ya se había ido cuando llegamos."),
     25: ("It might rain later.", "Pode que chova máis tarde.", "Puede que llueva más tarde."),
@@ -269,7 +269,7 @@ RUTA = {
         11: (14, [("The chestnut was rolling downhill.", "A castaña ía rodando costa abaixo.", "La castaña iba rodando cuesta abajo."), ("The hedgehog was sleeping when we came.", "O ourizo estaba durmindo cando chegamos.", "El erizo estaba durmiendo cuando llegamos."),
                   ("We were dancing.", "Estabamos bailando.", "Estábamos bailando."), ("While it was rolling, we waited.", "Mentres rodaba, agardamos.", "Mientras rodaba, esperamos.")]),
         12: (14, [("We were playing the drum when the sun came up.", "Estabamos tocando o tambor cando saíu o sol.", "Estábamos tocando el tambor cuando salió el sol."), ("It was snowing at night.", "Pola noite estaba nevando.", "Por la noche estaba nevando."),
-                  ("The children were stretching.", "As criaturas estaban estirándose.", "Los niños se estaban estirando."), ("While it was cold, we were inside.", "Mentres facía frío, estabamos dentro.", "Mientras hacía frío, estábamos dentro.")]),
+                  ("The children were stretching.", "As niños y niñas estaban estirándose.", "Los niños se estaban estirando."), ("While it was cold, we were inside.", "Mentres facía frío, estabamos dentro.", "Mientras hacía frío, estábamos dentro.")]),
         1: (14, [("It was raining when we went out.", "Estaba chovendo cando saímos.", "Estaba lloviendo cuando salimos."), ("We were running when the storm came.", "Estabamos correndo cando chegou a tormenta.", "Estábamos corriendo cuando llegó la tormenta."),
                  ("The clouds were moving fast.", "As nubes movíanse rápido.", "Las nubes se movían rápido."), ("While it was raining, we hid.", "Mentres chovía, escondémonos.", "Mientras llovía, nos escondimos.")]),
         2: (15, [("The wolf can see you!", "O lobo pódete ver!", "¡El lobo te puede ver!"), ("Look at me!", "Mírame!", "¡Mírame!"),

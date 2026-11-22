@@ -89,8 +89,8 @@
     "corHex": "#b45309",
     "bgHex": "#fefce8",
     "preguntaSugerida": {
-      "gl": "¿Como move o rabiño o can de Vigo? «Guau, guau!»",
-      "es": "¿Cómo mueve la colita el perro de Vigo? «¡Guau, guau!»"
+      "gl": "¿Como move o rabiño o can da vila? «Guau, guau!»",
+      "es": "¿Cómo mueve la colita el perro de la villa? «¡Guau, guau!»"
     },
     "obxectivo": {
       "gl": "Conexión afectiva co animal doméstico e onomatopeia rítmica.",
@@ -211,8 +211,8 @@
     "id": "flashcard_i_island",
     "numero": 9,
     "categoria": "alfabeto",
-    "gl": "I · Illas Cíes",
-    "es": "I · Islas Cíes",
+    "gl": "I · Illas da ría",
+    "es": "I · Islas de la ría",
     "en": "I · Island",
     "cefr": "A1",
     "ratio": "3:5",
@@ -223,8 +223,8 @@
       "es": "¿Ves las tres islas verdes en la entrada de nuestra ría?"
     },
     "obxectivo": {
-      "gl": "Sentido de pertenza territorial a Vigo e conta visual 1, 2, 3.",
-      "es": "Sentido de pertenencia territorial a Vigo y conteo visual 1, 2, 3."
+      "gl": "Sentido de pertenza territorial a Galicia e conta visual 1, 2, 3.",
+      "es": "Sentido de pertenencia territorial a Galicia y conteo visual 1, 2, 3."
     },
     "tprAccion": {
       "en": "Look far away with hand over eyes: island ahead!",
@@ -297,8 +297,8 @@
     "corHex": "#ca8a04",
     "bgHex": "#fefce8",
     "preguntaSugerida": {
-      "gl": "¿A folla cae amodo da árbore de Castrelos? «Plaf!»",
-      "es": "¿La hoja cae despacio del árbol de Castrelos? «¡Plaf!»"
+      "gl": "¿A folla cae amodo da árbore do parque? «Plaf!»",
+      "es": "¿La hoja cae despacio del árbol do parque? «¡Plaf!»"
     },
     "obxectivo": {
       "gl": "Ritmo desacelerado de caída e textura visual do outono.",
@@ -379,8 +379,8 @@
       "es": "¿Cuántas patas tiene el pulpo marino? ¡Baila con ocho tentáculos!"
     },
     "obxectivo": {
-      "gl": "Motricidade dactilar ampla e fauna tradicional de Vigo.",
-      "es": "Motricidad dactilar amplia y fauna tradicional de Vigo."
+      "gl": "Motricidade dactilar ampla e fauna tradicional da vila.",
+      "es": "Motricidad dactilar amplia y fauna tradicional de la villa."
     },
     "tprAccion": {
       "en": "Wiggle all your eight fingers like octopus legs!",
@@ -453,8 +453,8 @@
     "corHex": "#2563eb",
     "bgHex": "#eff6ff",
     "preguntaSugerida": {
-      "gl": "¿Como caen as pinguiñas de chuvia de Vigo? «Plip, plop, plip!»",
-      "es": "¿Cómo caen las gotitas de lluvia de Vigo? «¡Plip, plop, plip!»"
+      "gl": "¿Como caen as pinguiñas de chuvia da vila? «Plip, plop, plip!»",
+      "es": "¿Cómo caen las gotitas de lluvia de la villa? «¡Plip, plop, plip!»"
     },
     "obxectivo": {
       "gl": "Percusión dixital corporal nas pernas simulando pingas.",
@@ -479,8 +479,8 @@
     "corHex": "#eab308",
     "bgHex": "#fef9c3",
     "preguntaSugerida": {
-      "gl": "¿Como quece o sol na praia de Samil? ¿Sentides a calorciña?",
-      "es": "¿Cómo calienta el sol en la playa de Samil? ¿Sentís el calorcito?"
+      "gl": "¿Como quece o sol na praia? ¿Sentides a calorciña?",
+      "es": "¿Cómo calienta el sol en la playa? ¿Sentís el calorcito?"
     },
     "obxectivo": {
       "gl": "Percepción térmica agradable e apertura de brazos.",
@@ -1207,8 +1207,8 @@
     "corHex": "#0ea5e9",
     "bgHex": "#0ea5e912",
     "preguntaSugerida": {
-      "gl": "¿Como apita o tren de Vigo? «Chu-chu!»",
-      "es": "¿Cómo pita el tren de Vigo? «¡Chu-chu!»"
+      "gl": "¿Como apita o tren da vila? «Chu-chu!»",
+      "es": "¿Cómo pita el tren de la villa? «¡Chu-chu!»"
     },
     "obxectivo": {
       "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Tren de madeira».",
@@ -1857,8 +1857,8 @@
     "corHex": "#64748b",
     "bgHex": "#64748b12",
     "preguntaSugerida": {
-      "gl": "¿A gaivota plana sobre as Illas Cíes?",
-      "es": "¿La gaviota planea sobre las Islas Cíes?"
+      "gl": "¿A gaivota plana sobre as illas do mar?",
+      "es": "¿La gaviota planea sobre las islas del mar?"
     },
     "obxectivo": {
       "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Gaivota da ría».",
@@ -1883,8 +1883,8 @@
     "corHex": "#0284c7",
     "bgHex": "#0284c712",
     "preguntaSugerida": {
-      "gl": "¿O golfiño salta por riba das ondas de Vigo?",
-      "es": "¿El delfín salta por encima de las olas de Vigo?"
+      "gl": "¿O golfiño salta por riba das ondas da vila?",
+      "es": "¿El delfín salta por encima de las olas de la villa?"
     },
     "obxectivo": {
       "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Golfiño xoguetón».",
@@ -2499,8 +2499,8 @@
     "id": "vigo_nat_97",
     "numero": 97,
     "categoria": "vigo_natureza",
-    "gl": "Mar da ría de Vigo",
-    "es": "Mar de la ría de Vigo",
+    "gl": "Mar da ría",
+    "es": "Mar de la ría",
     "en": "Sea",
     "cefr": "Pre-A1",
     "ratio": "3:5",
@@ -2511,8 +2511,8 @@
       "es": "¿Ves cómo bailan las olas azules de la ría?"
     },
     "obxectivo": {
-      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Mar da ría de Vigo».",
-      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Mar de la ría de Vigo»."
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Mar da ría».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Mar de la ría»."
     },
     "tprAccion": {
       "en": "Row your arms with the waves",
@@ -2525,20 +2525,20 @@
     "id": "vigo_nat_98",
     "numero": 98,
     "categoria": "vigo_natureza",
-    "gl": "Illas Cíes verdes",
-    "es": "Islas Cíes verdes",
-    "en": "Cíes Islands",
+    "gl": "Illas costeiras verdes",
+    "es": "Islas costeras verdes",
+    "en": "Green coastal islands",
     "cefr": "A1",
     "ratio": "3:5",
     "corHex": "#059669",
     "bgHex": "#05966912",
     "preguntaSugerida": {
-      "gl": "¿As Cíes protexen a nosa cidade das tormentas?",
-      "es": "¿Las Cíes protegen nuestra ciudad de las tormentas?"
+      "gl": "As illas protexen a nosa costa das tormentas?",
+      "es": "¿Las islas protegen nuestra costa de las tormentas?"
     },
     "obxectivo": {
-      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Illas Cíes verdes».",
-      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Islas Cíes verdes»."
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Illas costeiras verdes».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Islas costeras verdes»."
     },
     "tprAccion": {
       "en": "Form a shelter with your arms",
@@ -2551,8 +2551,8 @@
     "id": "vigo_nat_99",
     "numero": 99,
     "categoria": "vigo_natureza",
-    "gl": "Praia de Samil",
-    "es": "Playa de Samil",
+    "gl": "A praia",
+    "es": "La playa",
     "en": "Beach",
     "cefr": "Pre-A1",
     "ratio": "3:5",
@@ -2563,8 +2563,8 @@
       "es": "¿Pisas la arena suave con los pies descalzos?"
     },
     "obxectivo": {
-      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Praia de Samil».",
-      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Playa de Samil»."
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «A praia».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «La playa»."
     },
     "tprAccion": {
       "en": "Step barefoot on the soft floor",
@@ -2577,20 +2577,20 @@
     "id": "vigo_nat_100",
     "numero": 100,
     "categoria": "vigo_natureza",
-    "gl": "Monte do Castro",
-    "es": "Monte de O Castro",
+    "gl": "Monte do monte",
+    "es": "Monte de o monte",
     "en": "Castro Hill",
     "cefr": "A1",
     "ratio": "3:5",
     "corHex": "#16a34a",
     "bgHex": "#16a34a12",
     "preguntaSugerida": {
-      "gl": "¿Subimos ao alto do Castro para ver Vigo?",
-      "es": "¿Subimos a lo alto de O Castro para ver Vigo?"
+      "gl": "¿Subimos ao alto do monte para ver Galicia?",
+      "es": "¿Subimos a lo alto de o monte para ver Galicia?"
     },
     "obxectivo": {
-      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Monte do Castro».",
-      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Monte de O Castro»."
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Monte do monte».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Monte de o monte»."
     },
     "tprAccion": {
       "en": "March with high knees up the hill",
@@ -2603,9 +2603,9 @@
     "id": "vigo_nat_101",
     "numero": 101,
     "categoria": "vigo_natureza",
-    "gl": "Parque de Castrelos",
-    "es": "Parque de Castrelos",
-    "en": "Castrelos Park",
+    "gl": "O parque",
+    "es": "El parque",
+    "en": "Autumn park",
     "cefr": "A1",
     "ratio": "3:5",
     "corHex": "#15803d",
@@ -2615,8 +2615,8 @@
       "es": "¿Reconoces los cisnes nadando en el estanque?"
     },
     "obxectivo": {
-      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Parque de Castrelos».",
-      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Parque de Castrelos»."
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «O parque».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «El parque»."
     },
     "tprAccion": {
       "en": "Graceful swan neck posture",
@@ -2629,8 +2629,8 @@
     "id": "vigo_nat_102",
     "numero": 102,
     "categoria": "vigo_natureza",
-    "gl": "Monte da Guía",
-    "es": "Monte de A Guía",
+    "gl": "Monte da vila",
+    "es": "Monte del pueblo",
     "en": "A Guía Hill",
     "cefr": "A1",
     "ratio": "3:5",
@@ -2641,8 +2641,8 @@
       "es": "¿Ves la capillita blanca que saluda a los barcos?"
     },
     "obxectivo": {
-      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Monte da Guía».",
-      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Monte de A Guía»."
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Monte da vila».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Monte del pueblo»."
     },
     "tprAccion": {
       "en": "Hands pointed high like a spire",
@@ -2655,8 +2655,8 @@
     "id": "vigo_nat_103",
     "numero": 103,
     "categoria": "vigo_natureza",
-    "gl": "O Berbés mariñeiro",
-    "es": "O Berbés marinero",
+    "gl": "O porto mariñeiro",
+    "es": "El puerto marinero",
     "en": "Old Port",
     "cefr": "A1",
     "ratio": "3:5",
@@ -2667,8 +2667,8 @@
       "es": "¿Qué traen las redes de los barcos pesqueros?"
     },
     "obxectivo": {
-      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «O Berbés mariñeiro».",
-      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «O Berbés marinero»."
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «O porto mariñeiro».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «El puerto marinero»."
     },
     "tprAccion": {
       "en": "Pull the heavy fishing net: Heave!",
@@ -4119,8 +4119,8 @@
     "corHex": "#f59e0b",
     "bgHex": "#f59e0b12",
     "preguntaSugerida": {
-      "gl": "¿A que cheira a flor do monte de Castrelos?",
-      "es": "¿A qué huele la flor del monte de Castrelos?"
+      "gl": "¿A que cheira a flor do monte?",
+      "es": "¿A qué huele la flor del monte?"
     },
     "obxectivo": {
       "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Nariz que cheira».",
@@ -4449,9 +4449,9 @@
     "id": "cuento_ilus_172",
     "numero": 172,
     "categoria": "cuento_ilustrado",
-    "gl": "Lúa pasea pola praia de Samil",
-    "es": "Lúa pasea por la playa de Samil",
-    "en": "Samil shore walk",
+    "gl": "Lúa pasea pola praia",
+    "es": "Lúa pasea por la playa",
+    "en": "Sunny shore walk",
     "cefr": "Pre-A1",
     "ratio": "16:10",
     "corHex": "#0284c7",
@@ -4461,8 +4461,8 @@
       "es": "¿Dónde está el barquito que baila en las olas?"
     },
     "obxectivo": {
-      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Lúa pasea pola praia de Samil».",
-      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Lúa pasea por la playa de Samil»."
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Lúa pasea pola praia».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Lúa pasea por la playa»."
     },
     "tprAccion": {
       "en": "Point at the dancing boat",
@@ -4527,8 +4527,8 @@
     "id": "cuento_ilus_175",
     "numero": 175,
     "categoria": "cuento_ilustrado",
-    "gl": "Lúa chega á escola infantil de Vigo",
-    "es": "Lúa llega a la escuela infantil de Vigo",
+    "gl": "Lúa chega á escola infantil de Galicia",
+    "es": "Lúa llega a la escuela infantil de Galicia",
     "en": "First day at school",
     "cefr": "Pre-A1",
     "ratio": "16:10",
@@ -4539,8 +4539,8 @@
       "es": "¿A quién saluda Lúa con su mochilita amarilla?"
     },
     "obxectivo": {
-      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Lúa chega á escola infantil de Vigo».",
-      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Lúa llega a la escuela infantil de Vigo»."
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Lúa chega á escola infantil de Galicia».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Lúa llega a la escuela infantil de Galicia»."
     },
     "tprAccion": {
       "en": "Wave paw welcoming friends",
@@ -4709,9 +4709,9 @@
     "id": "cuento_ilus_182",
     "numero": 182,
     "categoria": "cuento_ilustrado",
-    "gl": "As luces de Nadal en Vigo",
-    "es": "Las luces de Navidad en Vigo",
-    "en": "Vigo festive lights",
+    "gl": "As luces de Nadal na vila",
+    "es": "Las luces de Navidad en la villa",
+    "en": "Town festive lights",
     "cefr": "A1",
     "ratio": "16:10",
     "corHex": "#eab308",
@@ -4721,8 +4721,8 @@
       "es": "¿Ves tantas luces brillantes en la calle de nuestra ciudad?"
     },
     "obxectivo": {
-      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «As luces de Nadal en Vigo».",
-      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Las luces de Navidad en Vigo»."
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «As luces de Nadal na vila».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Las luces de Navidad en la villa»."
     },
     "tprAccion": {
       "en": "Twinkle fingers like shining lights",
@@ -4891,8 +4891,8 @@
     "id": "cuento_ilus_189",
     "numero": 189,
     "categoria": "cuento_ilustrado",
-    "gl": "O barco que regresa ao porto do Berbés",
-    "es": "El barco que regresa al puerto de O Berbés",
+    "gl": "O barco que regresa ao porto da ría",
+    "es": "El barco que regresa al puerto de la ría",
     "en": "Trawler coming home",
     "cefr": "A1",
     "ratio": "16:10",
@@ -4903,8 +4903,8 @@
       "es": "¿Ves las gaviotas volando detrás del barco?"
     },
     "obxectivo": {
-      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «O barco que regresa ao porto do Berbés».",
-      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «El barco que regresa al puerto de O Berbés»."
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «O barco que regresa ao porto da ría».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «El barco que regresa al puerto de la ría»."
     },
     "tprAccion": {
       "en": "Wave to the boat docking at port",
@@ -5229,20 +5229,20 @@
     "id": "cuento_ilus_202",
     "numero": 202,
     "categoria": "cuento_ilustrado",
-    "gl": "O can Dinamita paseando por Vigo",
-    "es": "El perro Dinamita paseando por Vigo",
-    "en": "Dinamita the dog of Vigo",
+    "gl": "O can Dinamita paseando pola vila",
+    "es": "El perro Dinamita paseando por la villa",
+    "en": "Dinamita the playful dog",
     "cefr": "A1",
     "ratio": "16:10",
     "corHex": "#78350f",
     "bgHex": "#78350f12",
     "preguntaSugerida": {
-      "gl": "¿Recoñeces a historia do famoso can vigués?",
-      "es": "¿Reconoces la historia del famoso perro vigués?"
+      "gl": "Recoñeces a historia do famoso can da vila?",
+      "es": "¿Reconoces la historia del famoso perro de la villa?"
     },
     "obxectivo": {
-      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «O can Dinamita paseando por Vigo».",
-      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «El perro Dinamita paseando por Vigo»."
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «O can Dinamita paseando pola vila».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «El perro Dinamita paseando por la villa»."
     },
     "tprAccion": {
       "en": "Greet all citizens with a tail wag",

@@ -1,5 +1,5 @@
 {
-  "_nota": "O vocabulario clave das páxinas do conto vén só en galego: é unha lista de cadeas, non un LocalizedString, así que en castelán saía en galego igual. Isto é a súa tradución, palabra a palabra. Os nomes propios (Vigo, Lúa, Castrelos) e as onomatopeas non se traducen.",
+  "_nota": "O vocabulario clave das páxinas do conto vén só en galego: é unha lista de cadeas, non un LocalizedString, así que en castelán saía en galego igual. Isto é a súa tradución, palabra a palabra. Os nomes propios (Galicia, Lúa, o parque) e as onomatopeas non se traducen.",
   "palabras": {
     "Acollemento": "Acogida",
     "Acougo": "Sosiego",
@@ -20,7 +20,7 @@
     "Burbulla": "Burbuja",
     "Burbullas": "Burbujas",
     "Calma": "Calma",
-    "Castrelos": "Castrelos",
+    "Castrelos": "o parque",
     "Charco": "Charco",
     "Chuvia": "Lluvia",
     "Confianza": "Confianza",
@@ -35,7 +35,7 @@
     "Fogar": "Hogar",
     "Follas": "Hojas",
     "Horta": "Huerta",
-    "Illas Cíes": "Islas Cíes",
+    "Illas da ría": "Islas de la ría",
     "Inverno": "Invierno",
     "Laranxa": "Naranja",
     "Limpo": "Limpio",
@@ -63,7 +63,7 @@
     "Sorriso": "Sonrisa",
     "Soño": "Sueño",
     "Splish": "Splish",
-    "Vigo": "Vigo",
+    "Vigo": "Galicia",
     "Xabón": "Jabón",
     "Xogo": "Juego",
     "Xuntos": "Juntos",

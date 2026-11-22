@@ -202,6 +202,41 @@
           }
         }
       }
+    },
+    "ra": {
+      "numero": "5",
+      "titulo": {
+        "gl": "Realidade aumentada con Lúa",
+        "es": "Realidad aumentada con Lúa"
+      },
+      "subtitulo_casa": {
+        "gl": "A escena STEAM do mes sobre a mesa e o espello de Lúa en inglés. O neno sinala, toca ou fai o xesto; nunca se lle pide que repita.",
+        "es": "La escena STEAM del mes sobre la mesa y el espejo de Lúa en inglés. El niño señala, toca o hace el gesto; nunca se le pide que repita."
+      },
+      "subtitulo_aula": {
+        "gl": "Na asemblea coa mesa diante: proxectamos a escena do mes ou xogamos co espello facial. Sen gardar fotos nin pedir que repitan.",
+        "es": "En la asamblea con la mesa delante: proyectamos la escena del mes o jugamos con el espejo facial. Sin guardar fotos ni pedir que repitan."
+      },
+      "abrir_mesa": {
+        "gl": "Abrir escena na mesa",
+        "es": "Abrir escena en la mesa"
+      },
+      "abrir_espello": {
+        "gl": "Espello de Lúa (cámara frontal)",
+        "es": "Espejo de Lúa (cámara frontal)"
+      },
+      "modo_sen_camara": {
+        "gl": "Versión sen cámara (láminas e voz)",
+        "es": "Versión sin cámara (láminas y voz)"
+      },
+      "aviso_sen_arcore": {
+        "gl": "Este aparello non ten cámara nin soporte ARCore. Podedes usar a versión sen cámara coas láminas e a voz de Lúa.",
+        "es": "Este dispositivo no tiene cámara ni soporte ARCore. Podéis usar la versión sin cámara con las láminas y la voz de Lúa."
+      },
+      "aviso_privacidade": {
+        "gl": "A cámara procésase só na memoria do móbil durante o xogo: non se gardan fotos, vídeo nin trazos da cara e nada sae do aparello.",
+        "es": "La cámara se procesa solo en la memoria del móvil durante el juego: no se guardan fotos, vídeo ni rasgos de la cara y nada sale del dispositivo."
+      }
     }
   },
   "zero_dous": {
@@ -223,15 +258,85 @@
     }
   },
   "meses": [
-    { "mes": 1, "mes_calendario": 9, "gl": "Setembro", "es": "Septiembre", "curto_gl": "Set", "curto_es": "Sep" },
-    { "mes": 2, "mes_calendario": 10, "gl": "Outubro", "es": "Octubre", "curto_gl": "Out", "curto_es": "Oct" },
-    { "mes": 3, "mes_calendario": 11, "gl": "Novembro", "es": "Noviembre", "curto_gl": "Nov", "curto_es": "Nov" },
-    { "mes": 4, "mes_calendario": 12, "gl": "Decembro", "es": "Diciembre", "curto_gl": "Dec", "curto_es": "Dic" },
-    { "mes": 5, "mes_calendario": 1, "gl": "Xaneiro", "es": "Enero", "curto_gl": "Xan", "curto_es": "Ene" },
-    { "mes": 6, "mes_calendario": 2, "gl": "Febreiro", "es": "Febrero", "curto_gl": "Feb", "curto_es": "Feb" },
-    { "mes": 7, "mes_calendario": 3, "gl": "Marzo", "es": "Marzo", "curto_gl": "Mar", "curto_es": "Mar" },
-    { "mes": 8, "mes_calendario": 4, "gl": "Abril", "es": "Abril", "curto_gl": "Abr", "curto_es": "Abr" },
-    { "mes": 9, "mes_calendario": 5, "gl": "Maio", "es": "Mayo", "curto_gl": "Mai", "curto_es": "May" },
-    { "mes": 10, "mes_calendario": 6, "gl": "Xuño", "es": "Junio", "curto_gl": "Xuñ", "curto_es": "Jun" }
+    {
+      "mes": 1,
+      "mes_calendario": 9,
+      "gl": "Setembro",
+      "es": "Septiembre",
+      "curto_gl": "Set",
+      "curto_es": "Sep"
+    },
+    {
+      "mes": 2,
+      "mes_calendario": 10,
+      "gl": "Outubro",
+      "es": "Octubre",
+      "curto_gl": "Out",
+      "curto_es": "Oct"
+    },
+    {
+      "mes": 3,
+      "mes_calendario": 11,
+      "gl": "Novembro",
+      "es": "Noviembre",
+      "curto_gl": "Nov",
+      "curto_es": "Nov"
+    },
+    {
+      "mes": 4,
+      "mes_calendario": 12,
+      "gl": "Decembro",
+      "es": "Diciembre",
+      "curto_gl": "Dec",
+      "curto_es": "Dic"
+    },
+    {
+      "mes": 5,
+      "mes_calendario": 1,
+      "gl": "Xaneiro",
+      "es": "Enero",
+      "curto_gl": "Xan",
+      "curto_es": "Ene"
+    },
+    {
+      "mes": 6,
+      "mes_calendario": 2,
+      "gl": "Febreiro",
+      "es": "Febrero",
+      "curto_gl": "Feb",
+      "curto_es": "Feb"
+    },
+    {
+      "mes": 7,
+      "mes_calendario": 3,
+      "gl": "Marzo",
+      "es": "Marzo",
+      "curto_gl": "Mar",
+      "curto_es": "Mar"
+    },
+    {
+      "mes": 8,
+      "mes_calendario": 4,
+      "gl": "Abril",
+      "es": "Abril",
+      "curto_gl": "Abr",
+      "curto_es": "Abr"
+    },
+    {
+      "mes": 9,
+      "mes_calendario": 5,
+      "gl": "Maio",
+      "es": "Mayo",
+      "curto_gl": "Mai",
+      "curto_es": "May"
+    },
+    {
+      "mes": 10,
+      "mes_calendario": 6,
+      "gl": "Xuño",
+      "es": "Junio",
+      "curto_gl": "Xuñ",
+      "curto_es": "Jun"
+    }
   ]
 }

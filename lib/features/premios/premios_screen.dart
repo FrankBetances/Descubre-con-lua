@@ -116,9 +116,9 @@ class _PremiosScreenState extends State<PremiosScreen> {
 
   static const _nota = LocalizedString(
     gl: 'Estes premios son para a persoa adulta que usa a app. Aquí non se '
-        'garda nada de ningunha crianza.',
+        'garda nada de ningún neno nin nena.',
     es: 'Estos premios son para la persona adulta que usa la app. Aquí no se '
-        'guarda nada de ninguna criatura.',
+        'guarda nada de ningún niño ni niña.',
   );
 
   @override

@@ -25,6 +25,7 @@ import '../../planificador/views/dinamicas_screen.dart';
 import '../../planificador/views/estrategias_screen.dart';
 import '../../planificador/views/planificador_screen.dart';
 import '../../estimulacion/data/estimulacion_ui.dart';
+import '../../estimulacion/views/ar_actividad_screen.dart';
 import '../../estimulacion/views/estimulacion_screen.dart';
 import '../../premios/premios_repository.dart';
 import '../../steam/views/steam_do_ano_screen.dart';
@@ -170,6 +171,21 @@ class RecursosDocentesScreen extends StatelessWidget {
             NomesDocentes.estimulacion,
             NomesDocentes.estimulacionDi,
             (_) => EstimulacionScreen(
+                  language: language,
+                  onLanguageChanged: onLanguageChanged,
+                  audioService: audioService,
+                  initialCursoId: cursoId,
+                  initialMes: EstimulacionUi.mesDeCalendario(
+                      (agora ?? DateTime.now()).month),
+                  enAula: true,
+                ),
+          ),
+          (
+            'recurso_ra',
+            Icons.view_in_ar_rounded,
+            NomesDocentes.realidadeAumentada,
+            NomesDocentes.realidadeAumentadaDi,
+            (_) => ArActividadScreen(
                   language: language,
                   onLanguageChanged: onLanguageChanged,
                   audioService: audioService,

@@ -108,7 +108,8 @@ void main() {
     // ListView no construye lo que no se ve, y buscarla sin desplazarse daría
     // «no está» aunque esté. Llegar hasta ella es además lo que haría una
     // persona, así que el test comprueba que SE PUEDE llegar.
-    final nota = find.textContaining('no se guarda nada de ninguna criatura');
+    final nota =
+        find.textContaining('no se guarda nada de ningún niño ni niña');
     await tester.dragUntilVisible(
       nota,
       find.byType(ListView),

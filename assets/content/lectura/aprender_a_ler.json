@@ -2,7 +2,7 @@
   "id": "aprender_a_ler",
   "avisoZeroPantalla": {
     "gl": "A conciencia fonolóxica é puramente acústica e táctil. O neno non precisa ver letras escritas aínda: o oído e o corpo son os primeiros lectores.",
-    "es": "La conciencia fonológica es puramente acústica y táctil. La criatura no necesita ver letras escritas todavía: el oído y el cuerpo son los primeros lectores."
+    "es": "La conciencia fonológica es puramente acústica y táctil. El niño o la niña no necesita ver letras escritas todavía: el oído y el cuerpo son los primeros lectores."
   },
   "actividadesConciencia": [
     {
@@ -16,8 +16,8 @@
         "es": "Segmentación silábica con ritmo corporal"
       },
       "descricion": {
-        "gl": "Di palabras cotiás da casa (PA-TO, GA-TO, CA-SA) e bate palmas ou toca os pés por cada anaco. A crianza imita o teu movemento sen mirar a pantalla.",
-        "es": "Di palabras cotidianas de la casa (PA-TO, GA-TO, CA-SA) y da palmadas o toca los pies por cada trozo. La criatura imita tu movimiento sin mirar la pantalla."
+        "gl": "Di palabras cotiás da casa (PA-TO, GA-TO, CA-SA) e bate palmas ou toca os pés por cada anaco. O neno ou a nena imita o teu movemento sen mirar a pantalla.",
+        "es": "Di palabras cotidianas de la casa (PA-TO, GA-TO, CA-SA) y da palmadas o toca los pies por cada trozo. El niño o la niña imita tu movimiento sin mirar la pantalla."
       },
       "tpr": {
         "gl": "1 golpe de palma por cada sílaba clara",
@@ -41,8 +41,8 @@
     {
       "id": "cf_02",
       "titulo": {
-        "gl": "Caza de Rimas de Vigo",
-        "es": "Caza de Rimas de Vigo"
+        "gl": "Caza de Rimas da vila",
+        "es": "Caza de Rimas de la villa"
       },
       "subtitulo": {
         "gl": "Discriminación do son final",
@@ -324,8 +324,8 @@
             ]
           },
           "significado": {
-            "gl": "Baila nas ondas da ría de Vigo",
-            "es": "Baila en las olas de la ría de Vigo"
+            "gl": "Baila nas ondas da ría",
+            "es": "Baila en las olas de la ría"
           },
           "material": {
             "gl": "Conchas pintadas con letras",
@@ -526,8 +526,8 @@
     {
       "id": "vigo",
       "nome": {
-        "gl": "Vigo e Natureza",
-        "es": "Vigo y Naturaleza"
+        "gl": "Galicia e Natureza",
+        "es": "Galicia y Naturaleza"
       },
       "palabras": [
         {
@@ -561,8 +561,8 @@
             ]
           },
           "significado": {
-            "gl": "As ondas azuis de Samil e da ría",
-            "es": "Las olas azules de Samil y de la ría"
+            "gl": "As ondas azuis da praia e da ría",
+            "es": "Las olas azules de la playa y de la ría"
           },
           "material": {
             "gl": "Pedras de praia lisas con rotulador",
@@ -655,8 +655,8 @@
             ]
           },
           "significado": {
-            "gl": "Navega cara ás Illas Cíes",
-            "es": "Navega hacia las Islas Cíes"
+            "gl": "Navega cara ás Illas da ría",
+            "es": "Navega hacia las islas del mar"
           },
           "material": {
             "gl": "Barquiño de papel dobrado con letras",
@@ -1009,8 +1009,8 @@
         "es": "Nasal bilabial (/m/) vs Nasal alveolar (/n/)"
       },
       "instrucion": {
-        "gl": "Sinte a vibración no nariz ao dicir /m/. Anima á crianza a tocar o seu nariz.",
-        "es": "Siente la vibración en la nariz al decir /m/. Anima a la criatura a tocar su nariz."
+        "gl": "Sinte a vibración no nariz ao dicir /m/. Anima ao neno ou á nena a tocar o seu nariz.",
+        "es": "Siente la vibración en la nariz al decir /m/. Anima al niño o a la niña a tocar su nariz."
       }
     },
     {

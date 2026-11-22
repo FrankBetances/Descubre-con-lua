@@ -898,7 +898,7 @@ class _CalendarioScreenState extends State<CalendarioScreen> {
     final isGl = _language == AppLanguage.gl;
     final rotulo = _esDocente
         ? (isGl ? 'CURSO' : 'CURSO')
-        : (isGl ? 'A MIÑA CRIANZA' : 'MI CRIATURA');
+        : (isGl ? 'A MIÑA NIÑO O NIÑA' : 'MI NIÑO O NIÑA');
     return Column(
       key: const Key('selector_curso_calendario'),
       crossAxisAlignment: CrossAxisAlignment.start,

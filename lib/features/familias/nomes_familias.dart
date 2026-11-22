@@ -9,7 +9,7 @@ import '../../core/localization/localized_string.dart';
 /// Salen del diccionario de la revisión de interfaz: un nombre que diría una
 /// familia y una frase de menos de quince palabras. Antes eran «Biblioteca de
 /// Contos Dialóxicos», «Aprender a Ler · Fónica Manipulativa» o «Academy ·
-/// Pautas de Crianza», y la teoría iba delante de lo que hay que hacer.
+/// Pautas para casa», y la teoría iba delante de lo que hay que hacer.
 class NomesFamilias {
   NomesFamilias._();
 
@@ -66,6 +66,16 @@ class NomesFamilias {
   static const estimulacionDi = LocalizedString(
       gl: 'Escoita, palabras que medran, modelo e pensamento STEAM.',
       es: 'Escucha, palabras que crecen, modelo y pensamiento STEAM.');
+  static const realidadeAumentada = LocalizedString(
+      gl: 'Realidade aumentada con Lúa', es: 'Realidad aumentada con Lúa');
+
+  /// En la cabecera de su pantalla: «Realidade aumentada con Lúa» y «Realidad
+  /// aumentada con Lúa» no caben enteros a 360 px.
+  static const realidadeAumentadaCabeceira =
+      LocalizedString(gl: 'RA con Lúa', es: 'RA con Lúa');
+  static const realidadeAumentadaDi = LocalizedString(
+      gl: 'A escena STEAM do mes na mesa e o espello facial en inglés.',
+      es: 'La escena STEAM del mes en la mesa y el espejo facial en inglés.');
 
   // ------------------------------------------------------------------- guías
   static const antesDeEmpezar =
@@ -81,8 +91,8 @@ class NomesFamilias {
   static const guiasFamiliaCabeceira =
       LocalizedString(gl: 'Guías', es: 'Guías');
   static const guiasFamiliaDi = LocalizedString(
-      gl: 'Lecturas curtas para ti: como falar e xogar coa túa criatura.',
-      es: 'Lecturas cortas para ti: cómo hablar y jugar con tu criatura.');
+      gl: 'Lecturas curtas para ti: como falar e xogar co teu neno ou coa túa nena.',
+      es: 'Lecturas cortas para ti: cómo hablar y jugar con tu niño o niña.');
   static const inglesNaCasa =
       LocalizedString(gl: 'O inglés na casa', es: 'El inglés en casa');
   static const inglesNaCasaDi = LocalizedString(

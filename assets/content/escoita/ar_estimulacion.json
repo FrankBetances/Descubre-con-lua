@@ -1,0 +1,5498 @@
+{
+  "version": 1,
+  "_doc": "P10.4: 40 escenas de Realidade Aumentada por mes e idade (2-3 a 5-6) e 6 actividades faciais (cámara frontal, L01/L07), adaptadas ao inglés desde Valeria.",
+  "actividades_faciais": [
+    {
+      "id": "L01.ar1",
+      "code": "ar1",
+      "modelAsset": "models/coche.glb",
+      "animation": "celebrate",
+      "gestureMode": "jaw_open",
+      "titulo_gl": "Espello de Lúa · Boca aberta",
+      "titulo_es": "Espejo de Lúa · Boca abierta",
+      "guia_gl": "Ponte diante da cámara co neno ou coa nena. Cando abrades a boca grande en silencio, o coche avanza pola pantalla.",
+      "guia_es": "Ponte delante de la cámara con el niño o con la niña. Cuando abráis la boca grande en silencio, el coche avanza por la pantalla.",
+      "frase_en": "Open your mouth!",
+      "sig": {
+        "gl": "Abre a boca!",
+        "es": "¡Abre la boca!"
+      },
+      "lamina": "pal_mouth"
+    },
+    {
+      "id": "L07.ar6",
+      "code": "ar6",
+      "modelAsset": "models/lua.glb",
+      "animation": "celebrate",
+      "gestureMode": "smile",
+      "titulo_gl": "Espello de Lúa · Sorriso grande",
+      "titulo_es": "Espejo de Lúa · Sonrisa grande",
+      "guia_gl": "Mirade á gata Lúa no espello: cun sorriso amplo sen dicir nada, Lúa dá un salto de alegría.",
+      "guia_es": "Mirad a la gata Lúa en el espejo: con una sonrisa amplia sin decir nada, Lúa da un salto de alegría.",
+      "frase_en": "Smile!",
+      "sig": {
+        "gl": "Sorrí!",
+        "es": "¡Sonríe!"
+      },
+      "lamina": "pal_smile"
+    },
+    {
+      "id": "L01.ar3",
+      "code": "ar3",
+      "modelAsset": "models/manzana.glb",
+      "animation": "spin360",
+      "gestureMode": "big_eyes",
+      "titulo_gl": "Espello de Lúa · Ollos grandes",
+      "titulo_es": "Espejo de Lúa · Ojos grandes",
+      "guia_gl": "Xogade a abrir moito os ollos diante do espello para que xire a mazá.",
+      "guia_es": "Jugad a abrir mucho los ojos delante del espejo para que gire la manzana.",
+      "frase_en": "Big eyes!",
+      "sig": {
+        "gl": "Ollos grandes!",
+        "es": "¡Ojos grandes!"
+      },
+      "lamina": "pal_eyes"
+    },
+    {
+      "id": "L01.ar4",
+      "code": "ar4",
+      "modelAsset": "models/lua.glb",
+      "animation": "celebrate",
+      "gestureMode": "pucker",
+      "titulo_gl": "Espello de Lúa · Bico de sopro",
+      "titulo_es": "Espejo de Lúa · Beso de soplo",
+      "guia_gl": "Xuntade os beizos coma un bico silencioso diante do espello ata encher o anel.",
+      "guia_es": "Juntad los labios como un beso silencioso delante del espejo hasta llenar el anillo.",
+      "frase_en": "Pucker your lips!",
+      "sig": {
+        "gl": "Xunta os beizos!",
+        "es": "¡Junta los labios!"
+      },
+      "lamina": "pal_lips"
+    },
+    {
+      "id": "L07.ar5",
+      "code": "ar5",
+      "modelAsset": "models/pez.glb",
+      "animation": "spin360",
+      "gestureMode": "cheek_puff",
+      "titulo_gl": "Espello de Lúa · Meixelas de peixe",
+      "titulo_es": "Espejo de Lúa · Mejillas de pez",
+      "guia_gl": "Inflade as meixelas con aire e soltádeo amodo para lanzar o peixiño.",
+      "guia_es": "Inflad las mejillas con aire y soltadlo despacio para lanzar el pececito.",
+      "frase_en": "Puff your cheeks!",
+      "sig": {
+        "gl": "Infla as meixelas!",
+        "es": "¡Infla las mejillas!"
+      },
+      "lamina": "pal_fish"
+    },
+    {
+      "id": "L07.ar2",
+      "code": "ar2",
+      "modelAsset": "models/perro.glb",
+      "animation": "celebrate",
+      "gestureMode": "turn_head",
+      "titulo_gl": "Espello de Lúa · Xirar a cabeza",
+      "titulo_es": "Espejo de Lúa · Girar la cabeza",
+      "guia_gl": "Despois de escoitar o son, xirade a cabeza amodo cara a un lado para atopar o canciño.",
+      "guia_es": "Después de escuchar el sonido, girad la cabeza despacio hacia un lado para encontrar al perrito.",
+      "frase_en": "Turn your head!",
+      "sig": {
+        "gl": "Xira a cabeza!",
+        "es": "¡Gira la cabeza!"
+      },
+      "lamina": "pal_dog"
+    }
+  ],
+  "escenas": [
+    {
+      "id": "ra_curso_2_3_m01",
+      "curso": "curso_2_3",
+      "mes": 1,
+      "fenomeno": "materia",
+      "steam_id": "STEAM-2_3-09",
+      "steam_titulo": {
+        "gl": "Flota ou afúndese?",
+        "es": "¿Flota o se hunde?"
+      },
+      "valeria_scene_id": "S0",
+      "titulo": {
+        "gl": "Mesa de formas e encaixe",
+        "es": "Mesa de formas y encaje"
+      },
+      "guia_adulto": {
+        "gl": "Coloca dous ou tres obxectos seguros na mesa. Lúa amosa sobre a mesa onde vai cada peza: sinala ou encaixa sen présa.",
+        "es": "Coloca dos o tres objetos seguros en la mesa. Lúa muestra sobre la mesa dónde va cada pieza: señala o encaja sin prisa."
+      },
+      "par": {
+        "a": "boat",
+        "b": "boot",
+        "fonema": "/oʊ/ → /uː/"
+      },
+      "frase_cena_en": "Fit it in and match the shape!",
+      "frase_cena_sig": {
+        "gl": "Encaixa e emparella a forma!",
+        "es": "¡Encaja y empareja la forma!"
+      },
+      "palabras_en": [
+        "boat",
+        "boot"
+      ],
+      "frases_en": [
+        "Fit it in and match the shape!",
+        "Open your mouth!",
+        "This big stone goes down in the tub."
+      ],
+      "frase_modelo_mes": "Stone.",
+      "face_id": "L01.ar1",
+      "fallback": {
+        "instrucion": {
+          "gl": "Este aparello non ten cámara nin soporte ARCore. Podedes xogar igual coas láminas sobre a mesa e a voz de Lúa.",
+          "es": "Este dispositivo no tiene cámara ni soporte ARCore. Podéis jugar igual con las láminas sobre la mesa y la voz de Lúa."
+        },
+        "laminas_suporte": [
+          "pal_boat",
+          "pal_boot"
+        ]
+      },
+      "scene_spec": {
+        "title": {
+          "gl": "Lúa RA · Mesa de formas e encaixe",
+          "es": "Lúa RA · Mesa de formas y encaje"
+        },
+        "placeHint": {
+          "gl": "Toca a mesa debuxada para colocar a escena.",
+          "es": "Toca la mesa dibujada para colocar la escena."
+        },
+        "searchHint": {
+          "gl": "Move o móbil amodo mirando cara á mesa.",
+          "es": "Mueve el móvil despacio mirando hacia la mesa."
+        },
+        "closeLabel": {
+          "gl": "Pechar",
+          "es": "Cerrar"
+        },
+        "replaceLabel": {
+          "gl": "Recolocar",
+          "es": "Recolocar"
+        },
+        "luaPrefix": "Lúa: ",
+        "events": [
+          {
+            "id": "S0.CABEZA_ENCAJADA",
+            "label_gl": "Cabeza",
+            "label_es": "Cabeza",
+            "prompt_gl": "Toca ou encaixa a peza principal na mesa.",
+            "prompt_es": "Toca o encaja la pieza principal en la mesa.",
+            "englishPhrase": "Fit it in!"
+          },
+          {
+            "id": "S0.PLACA_LEIDA",
+            "label_gl": "Forma",
+            "label_es": "Forma",
+            "prompt_gl": "Sinala a silueta igual no taboleiro.",
+            "prompt_es": "Señala la silueta igual en el tablero.",
+            "englishPhrase": "Match the shape!"
+          }
+        ],
+        "shapes": [
+          {
+            "kind": "tile",
+            "style": "piece",
+            "pts": [
+              [
+                -0.08,
+                -0.06
+              ]
+            ],
+            "w": 0.16,
+            "d": 0.12,
+            "y": 0.0,
+            "text": ""
+          },
+          {
+            "kind": "circle",
+            "style": "light",
+            "pts": [
+              [
+                0.0,
+                0.0
+              ]
+            ],
+            "r": 0.055,
+            "y": 0.02,
+            "text": "FIT!",
+            "after": "S0.CABEZA_ENCAJADA"
+          },
+          {
+            "kind": "rings",
+            "style": "light",
+            "pts": [
+              [
+                0.0,
+                0.0
+              ]
+            ],
+            "r": 0.07,
+            "y": 0.02,
+            "text": "SHAPE!",
+            "after": "S0.PLACA_LEIDA"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ra_curso_2_3_m02",
+      "curso": "curso_2_3",
+      "mes": 2,
+      "fenomeno": "cinematica",
+      "steam_id": "STEAM-2_3-10",
+      "steam_titulo": {
+        "gl": "O vento empurra o barco",
+        "es": "El viento empuja el barco"
+      },
+      "valeria_scene_id": "S1",
+      "titulo": {
+        "gl": "Camiño da mesa",
+        "es": "Camino en la mesa"
+      },
+      "guia_adulto": {
+        "gl": "Sobre a mesa vese o percorrido. Move o obxecto coas mans pola liña marcada mentres escoitades as ordes en inglés.",
+        "es": "Sobre la mesa se ve el recorrido. Mueve el objeto con las manos por la línea marcada mientras escucháis las órdenes en inglés."
+      },
+      "par": {
+        "a": "blow",
+        "b": "slow",
+        "fonema": "/b/ → /s/"
+      },
+      "frase_cena_en": "Connect the path and turn!",
+      "frase_cena_sig": {
+        "gl": "Conecta o camiño e xira!",
+        "es": "¡Conecta el camino y gira!"
+      },
+      "palabras_en": [
+        "blow",
+        "slow"
+      ],
+      "frases_en": [
+        "Connect the path and turn!",
+        "Smile!",
+        "The little boat has a paper sail."
+      ],
+      "frase_modelo_mes": "Sail.",
+      "face_id": "L07.ar6",
+      "fallback": {
+        "instrucion": {
+          "gl": "Este aparello non ten cámara nin soporte ARCore. Podedes xogar igual coas láminas sobre a mesa e a voz de Lúa.",
+          "es": "Este dispositivo no tiene cámara ni soporte ARCore. Podéis jugar igual con las láminas sobre la mesa y la voz de Lúa."
+        },
+        "laminas_suporte": [
+          "pal_blow",
+          "pal_slow"
+        ]
+      },
+      "scene_spec": {
+        "title": {
+          "gl": "Lúa RA · Camiño da mesa",
+          "es": "Lúa RA · Camino en la mesa"
+        },
+        "placeHint": {
+          "gl": "Toca a mesa debuxada para colocar a escena.",
+          "es": "Toca la mesa dibujada para colocar la escena."
+        },
+        "searchHint": {
+          "gl": "Move o móbil amodo mirando cara á mesa.",
+          "es": "Mueve el móvil despacio mirando hacia la mesa."
+        },
+        "closeLabel": {
+          "gl": "Pechar",
+          "es": "Cerrar"
+        },
+        "replaceLabel": {
+          "gl": "Recolocar",
+          "es": "Recolocar"
+        },
+        "luaPrefix": "Lúa: ",
+        "events": [
+          {
+            "id": "S1.LUA_EN_INICIO",
+            "label_gl": "Inicio",
+            "label_es": "Inicio",
+            "prompt_gl": "Pon o boneco ou peza no punto de saída.",
+            "prompt_es": "Pon el muñeco o pieza en el punto de salida.",
+            "englishPhrase": "Connect the path!"
+          },
+          {
+            "id": "S1.LUA_GIRA",
+            "label_gl": "Xiro",
+            "label_es": "Giro",
+            "prompt_gl": "Facede o xiro xunto á esquina marcada.",
+            "prompt_es": "Haced el giro junto a la esquina marcada.",
+            "englishPhrase": "Turn here!"
+          }
+        ],
+        "shapes": [
+          {
+            "kind": "flow",
+            "style": "light",
+            "pts": [
+              [
+                -0.14,
+                0.06
+              ],
+              [
+                0.0,
+                0.06
+              ],
+              [
+                0.0,
+                -0.06
+              ],
+              [
+                0.14,
+                -0.06
+              ]
+            ],
+            "y": 0.01,
+            "text": ""
+          },
+          {
+            "kind": "circle",
+            "style": "light",
+            "pts": [
+              [
+                -0.14,
+                0.06
+              ]
+            ],
+            "r": 0.035,
+            "y": 0.02,
+            "text": "START",
+            "after": "S1.LUA_EN_INICIO"
+          },
+          {
+            "kind": "arrow",
+            "style": "warn",
+            "pts": [
+              [
+                0.0,
+                0.06
+              ],
+              [
+                0.0,
+                -0.06
+              ]
+            ],
+            "y": 0.03,
+            "text": "TURN!",
+            "after": "S1.LUA_GIRA"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ra_curso_2_3_m03",
+      "curso": "curso_2_3",
+      "mes": 3,
+      "fenomeno": "logica",
+      "steam_id": "STEAM-2_3-11",
+      "steam_titulo": {
+        "gl": "Grande aquí, pequeno alí",
+        "es": "Grande aquí, pequeño allí"
+      },
+      "valeria_scene_id": "S8",
+      "titulo": {
+        "gl": "Paso e quenda",
+        "es": "Paso y turno"
+      },
+      "guia_adulto": {
+        "gl": "Practicamos esperar a quenda na mesa coa barreira marcada.",
+        "es": "Practicamos esperar el turno en la mesa con la barrera marcada."
+      },
+      "par": {
+        "a": "hoop",
+        "b": "heap",
+        "fonema": "/uː/ → /iː/"
+      },
+      "frase_cena_en": "Stop, wait, and cross safely!",
+      "frase_cena_sig": {
+        "gl": "Para, agarda e cruza seguro!",
+        "es": "¡Para, espera y cruza seguro!"
+      },
+      "palabras_en": [
+        "hoop",
+        "heap"
+      ],
+      "frases_en": [
+        "Stop, wait, and cross safely!",
+        "Big eyes!",
+        "Find a big leaf for this hoop."
+      ],
+      "frase_modelo_mes": "Leaf.",
+      "face_id": "L01.ar3",
+      "fallback": {
+        "instrucion": {
+          "gl": "Este aparello non ten cámara nin soporte ARCore. Podedes xogar igual coas láminas sobre a mesa e a voz de Lúa.",
+          "es": "Este dispositivo no tiene cámara ni soporte ARCore. Podéis jugar igual con las láminas sobre la mesa y la voz de Lúa."
+        },
+        "laminas_suporte": [
+          "pal_hoop",
+          "pal_heap"
+        ]
+      },
+      "scene_spec": {
+        "title": {
+          "gl": "Lúa RA · Paso e quenda",
+          "es": "Lúa RA · Paso y turno"
+        },
+        "placeHint": {
+          "gl": "Toca a mesa debuxada para colocar a escena.",
+          "es": "Toca la mesa dibujada para colocar la escena."
+        },
+        "searchHint": {
+          "gl": "Move o móbil amodo mirando cara á mesa.",
+          "es": "Mueve el móvil despacio mirando hacia la mesa."
+        },
+        "closeLabel": {
+          "gl": "Pechar",
+          "es": "Cerrar"
+        },
+        "replaceLabel": {
+          "gl": "Recolocar",
+          "es": "Recolocar"
+        },
+        "luaPrefix": "Lúa: ",
+        "events": [
+          {
+            "id": "S8.PASO_1",
+            "label_gl": "Paso 1",
+            "label_es": "Paso 1",
+            "prompt_gl": "Practicamos esperar a quenda na mesa coa barreira marcada.",
+            "prompt_es": "Practicamos esperar el turno en la mesa con la barrera marcada.",
+            "englishPhrase": "Stop, wait, and cross safely!"
+          },
+          {
+            "id": "S8.FIN",
+            "label_gl": "Logro",
+            "label_es": "Logro",
+            "prompt_gl": "Todo no seu sitio sobre a mesa.",
+            "prompt_es": "Todo en su sitio sobre la mesa.",
+            "englishPhrase": "Stop, wait, and cross safely!"
+          }
+        ],
+        "shapes": [
+          {
+            "kind": "tile",
+            "style": "piece",
+            "pts": [
+              [
+                -0.1,
+                -0.06
+              ]
+            ],
+            "w": 0.2,
+            "d": 0.12,
+            "y": 0.0,
+            "text": ""
+          },
+          {
+            "kind": "rings",
+            "style": "light",
+            "pts": [
+              [
+                0.0,
+                0.0
+              ]
+            ],
+            "r": 0.06,
+            "y": 0.02,
+            "text": "OK!",
+            "after": "S8.FIN"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ra_curso_2_3_m04",
+      "curso": "curso_2_3",
+      "mes": 4,
+      "fenomeno": "acustica",
+      "steam_id": "STEAM-2_3-12",
+      "steam_titulo": {
+        "gl": "Pum grande, pum pequeno",
+        "es": "Pum grande, pum pequeño"
+      },
+      "valeria_scene_id": "S2",
+      "titulo": {
+        "gl": "Ondas de son na mesa",
+        "es": "Ondas de sonido en la mesa"
+      },
+      "guia_adulto": {
+        "gl": "Golpea amodo ou forte na mesa mentres as ondas medran sobre o centro. Sinalade ondas grandes e pequenas.",
+        "es": "Golpea suave o fuerte en la mesa mientras las ondas crecen sobre el centro. Señalad ondas grandes y pequeñas."
+      },
+      "par": {
+        "a": "pan",
+        "b": "pat",
+        "fonema": "/n/ → /t/"
+      },
+      "frase_cena_en": "Big sound, small sound!",
+      "frase_cena_sig": {
+        "gl": "Son grande, son pequeno!",
+        "es": "¡Sonido grande, sonido pequeño!"
+      },
+      "palabras_en": [
+        "pan",
+        "pat"
+      ],
+      "frases_en": [
+        "Big sound, small sound!",
+        "Pucker your lips!",
+        "Hit the metal tray or drum."
+      ],
+      "frase_modelo_mes": "Drum.",
+      "face_id": "L01.ar4",
+      "fallback": {
+        "instrucion": {
+          "gl": "Este aparello non ten cámara nin soporte ARCore. Podedes xogar igual coas láminas sobre a mesa e a voz de Lúa.",
+          "es": "Este dispositivo no tiene cámara ni soporte ARCore. Podéis jugar igual con las láminas sobre la mesa y la voz de Lúa."
+        },
+        "laminas_suporte": [
+          "pal_pan",
+          "pal_pat"
+        ]
+      },
+      "scene_spec": {
+        "title": {
+          "gl": "Lúa RA · Ondas de son na mesa",
+          "es": "Lúa RA · Ondas de sonido en la mesa"
+        },
+        "placeHint": {
+          "gl": "Toca a mesa debuxada para colocar a escena.",
+          "es": "Toca la mesa dibujada para colocar la escena."
+        },
+        "searchHint": {
+          "gl": "Move o móbil amodo mirando cara á mesa.",
+          "es": "Mueve el móvil despacio mirando hacia la mesa."
+        },
+        "closeLabel": {
+          "gl": "Pechar",
+          "es": "Cerrar"
+        },
+        "replaceLabel": {
+          "gl": "Recolocar",
+          "es": "Recolocar"
+        },
+        "luaPrefix": "Lúa: ",
+        "events": [
+          {
+            "id": "S2.GOLPE_FUERTE",
+            "label_gl": "Forte",
+            "label_es": "Fuerte",
+            "prompt_gl": "Un golpe fondo coa palma aberta.",
+            "prompt_es": "Un golpe hondo con la palma abierta.",
+            "englishPhrase": "Big and low!"
+          },
+          {
+            "id": "S2.GOLPE_DEBIL",
+            "label_gl": "Suave",
+            "label_es": "Suave",
+            "prompt_gl": "Toque suave cos dedos na mesa.",
+            "prompt_es": "Toque suave con los dedos en la mesa.",
+            "englishPhrase": "Small and high!"
+          }
+        ],
+        "shapes": [
+          {
+            "kind": "circle",
+            "style": "piece",
+            "pts": [
+              [
+                0.0,
+                0.0
+              ]
+            ],
+            "r": 0.06,
+            "y": 0.01,
+            "text": ""
+          },
+          {
+            "kind": "rings",
+            "style": "warn",
+            "pts": [
+              [
+                0.0,
+                0.0
+              ]
+            ],
+            "r": 0.08,
+            "y": 0.03,
+            "text": "BIG!",
+            "last": [
+              "S2.GOLPE_FUERTE"
+            ]
+          },
+          {
+            "kind": "rings",
+            "style": "light",
+            "pts": [
+              [
+                0.0,
+                0.0
+              ]
+            ],
+            "r": 0.04,
+            "y": 0.03,
+            "text": "SMALL!",
+            "last": [
+              "S2.GOLPE_DEBIL"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "ra_curso_2_3_m05",
+      "curso": "curso_2_3",
+      "mes": 5,
+      "fenomeno": "materia",
+      "steam_id": "STEAM-2_3-01",
+      "steam_titulo": {
+        "gl": "Pan duro, pan brando",
+        "es": "Pan duro, pan blando"
+      },
+      "valeria_scene_id": "S5",
+      "titulo": {
+        "gl": "Ponte e equilibrio",
+        "es": "Puente y equilibrio"
+      },
+      "guia_adulto": {
+        "gl": "Comparade un obxecto pesado e un lixeiro sobre a ponte debuxada na mesa: cal inclina o lado?",
+        "es": "Comparad un objeto pesado y uno ligero sobre el puente dibujado en la mesa: ¿cuál inclina el lado?"
+      },
+      "par": {
+        "a": "bit",
+        "b": "bite",
+        "fonema": "/ɪ/ → /aɪ/"
+      },
+      "frase_cena_en": "Heavy, light, level the bridge!",
+      "frase_cena_sig": {
+        "gl": "Pesado, lixeiro, nivela a ponte!",
+        "es": "¡Pesado, ligero, nivela el puente!"
+      },
+      "palabras_en": [
+        "bit",
+        "bite"
+      ],
+      "frases_en": [
+        "Heavy, light, level the bridge!",
+        "Puff your cheeks!",
+        "Compare today's bread and yesterday's bread."
+      ],
+      "frase_modelo_mes": "Bread.",
+      "face_id": "L07.ar5",
+      "fallback": {
+        "instrucion": {
+          "gl": "Este aparello non ten cámara nin soporte ARCore. Podedes xogar igual coas láminas sobre a mesa e a voz de Lúa.",
+          "es": "Este dispositivo no tiene cámara ni soporte ARCore. Podéis jugar igual con las láminas sobre la mesa y la voz de Lúa."
+        },
+        "laminas_suporte": [
+          "pal_bit",
+          "pal_bite"
+        ]
+      },
+      "scene_spec": {
+        "title": {
+          "gl": "Lúa RA · Ponte e equilibrio",
+          "es": "Lúa RA · Puente y equilibrio"
+        },
+        "placeHint": {
+          "gl": "Toca a mesa debuxada para colocar a escena.",
+          "es": "Toca la mesa dibujada para colocar la escena."
+        },
+        "searchHint": {
+          "gl": "Move o móbil amodo mirando cara á mesa.",
+          "es": "Mueve el móvil despacio mirando hacia la mesa."
+        },
+        "closeLabel": {
+          "gl": "Pechar",
+          "es": "Cerrar"
+        },
+        "replaceLabel": {
+          "gl": "Recolocar",
+          "es": "Recolocar"
+        },
+        "luaPrefix": "Lúa: ",
+        "events": [
+          {
+            "id": "S5.INCLINA_IZQ",
+            "label_gl": "Pesado",
+            "label_es": "Pesado",
+            "prompt_gl": "Pon o obxecto pesado nun extremo.",
+            "prompt_es": "Pon el objeto pesado en un extremo.",
+            "englishPhrase": "Heavy side down!"
+          },
+          {
+            "id": "S5.PUENTE_ESTABLE",
+            "label_gl": "Equilibrio",
+            "label_es": "Equilibrio",
+            "prompt_gl": "Equilibrade os dous lados da ponte.",
+            "prompt_es": "Equilibrad los dos lados del puente.",
+            "englishPhrase": "Level the bridge!"
+          }
+        ],
+        "shapes": [
+          {
+            "kind": "tile",
+            "style": "piece",
+            "pts": [
+              [
+                -0.14,
+                -0.04
+              ]
+            ],
+            "w": 0.28,
+            "d": 0.08,
+            "y": 0.02,
+            "text": ""
+          },
+          {
+            "kind": "arrow",
+            "style": "warn",
+            "pts": [
+              [
+                -0.1,
+                -0.02
+              ],
+              [
+                -0.1,
+                0.06
+              ]
+            ],
+            "y": 0.05,
+            "text": "HEAVY",
+            "last": [
+              "S5.INCLINA_IZQ"
+            ]
+          },
+          {
+            "kind": "rings",
+            "style": "light",
+            "pts": [
+              [
+                0.0,
+                0.0
+              ]
+            ],
+            "r": 0.06,
+            "y": 0.04,
+            "text": "EVEN!",
+            "after": "S5.PUENTE_ESTABLE"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ra_curso_2_3_m06",
+      "curso": "curso_2_3",
+      "mes": 6,
+      "fenomeno": "optica",
+      "steam_id": "STEAM-2_3-02",
+      "steam_titulo": {
+        "gl": "A estrela da mazá",
+        "es": "La estrella de la manzana"
+      },
+      "valeria_scene_id": "S6",
+      "titulo": {
+        "gl": "Luz, sol e sombra",
+        "es": "Luz, sol y sombra"
+      },
+      "guia_adulto": {
+        "gl": "Coa mesa iluminada ou cunha lanterna, observade onde cae a sombra e como xira ao mover a luz.",
+        "es": "Con la mesa iluminada o con una linterna, observad dónde cae la sombra y cómo gira al mover la luz."
+      },
+      "par": {
+        "a": "seed",
+        "b": "see",
+        "fonema": "/d/ → ∅"
+      },
+      "frase_cena_en": "Turn the sun and look!",
+      "frase_cena_sig": {
+        "gl": "Xira o sol e mira!",
+        "es": "¡Gira el sol y mira!"
+      },
+      "palabras_en": [
+        "seed",
+        "see"
+      ],
+      "frases_en": [
+        "Turn the sun and look!",
+        "Turn your head!",
+        "Cut the apple in half across."
+      ],
+      "frase_modelo_mes": "Apple.",
+      "face_id": "L07.ar2",
+      "fallback": {
+        "instrucion": {
+          "gl": "Este aparello non ten cámara nin soporte ARCore. Podedes xogar igual coas láminas sobre a mesa e a voz de Lúa.",
+          "es": "Este dispositivo no tiene cámara ni soporte ARCore. Podéis jugar igual con las láminas sobre la mesa y la voz de Lúa."
+        },
+        "laminas_suporte": [
+          "pal_seed",
+          "pal_see"
+        ]
+      },
+      "scene_spec": {
+        "title": {
+          "gl": "Lúa RA · Luz, sol e sombra",
+          "es": "Lúa RA · Luz, sol y sombra"
+        },
+        "placeHint": {
+          "gl": "Toca a mesa debuxada para colocar a escena.",
+          "es": "Toca la mesa dibujada para colocar la escena."
+        },
+        "searchHint": {
+          "gl": "Move o móbil amodo mirando cara á mesa.",
+          "es": "Mueve el móvil despacio mirando hacia la mesa."
+        },
+        "closeLabel": {
+          "gl": "Pechar",
+          "es": "Cerrar"
+        },
+        "replaceLabel": {
+          "gl": "Recolocar",
+          "es": "Recolocar"
+        },
+        "luaPrefix": "Lúa: ",
+        "events": [
+          {
+            "id": "S6.RIEGO",
+            "label_gl": "Luz",
+            "label_es": "Luz",
+            "prompt_gl": "Aluma o obxecto desde un lado.",
+            "prompt_es": "Ilumina el objeto desde un lado.",
+            "englishPhrase": "Light here!"
+          },
+          {
+            "id": "S6.SOMBRA_ALINEADA",
+            "label_gl": "Sombra",
+            "label_es": "Sombra",
+            "prompt_gl": "Sinala co dedo onde se alonga a sombra.",
+            "prompt_es": "Señala con el dedo dónde se alarga la sombra.",
+            "englishPhrase": "Turn the sun!"
+          }
+        ],
+        "shapes": [
+          {
+            "kind": "circle",
+            "style": "warn",
+            "pts": [
+              [
+                -0.12,
+                -0.06
+              ]
+            ],
+            "r": 0.04,
+            "y": 0.06,
+            "text": "SUN"
+          },
+          {
+            "kind": "flow",
+            "style": "light",
+            "pts": [
+              [
+                -0.12,
+                -0.06
+              ],
+              [
+                0.06,
+                0.04
+              ]
+            ],
+            "y": 0.04,
+            "text": ""
+          },
+          {
+            "kind": "tile",
+            "style": "light",
+            "pts": [
+              [
+                0.04,
+                0.02
+              ]
+            ],
+            "w": 0.1,
+            "d": 0.05,
+            "y": 0.01,
+            "text": "SHADOW",
+            "after": "S6.SOMBRA_ALINEADA"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ra_curso_2_3_m07",
+      "curso": "curso_2_3",
+      "mes": 7,
+      "fenomeno": "logica",
+      "steam_id": "STEAM-2_3-03",
+      "steam_titulo": {
+        "gl": "Primeiro mollo, despois xabón",
+        "es": "Primero mojo, después jabón"
+      },
+      "valeria_scene_id": "S9",
+      "titulo": {
+        "gl": "Ruta á diana",
+        "es": "Ruta a la diana"
+      },
+      "guia_adulto": {
+        "gl": "Seguide o camiño lóxico ata a diana tocando cada paso.",
+        "es": "Seguid el camino lógico hasta la diana tocando cada paso."
+      },
+      "par": {
+        "a": "soak",
+        "b": "soap",
+        "fonema": "/k/ → /p/"
+      },
+      "frase_cena_en": "Aim and follow the line!",
+      "frase_cena_sig": {
+        "gl": "Apunta e segue a liña!",
+        "es": "¡Apunta y sigue la línea!"
+      },
+      "palabras_en": [
+        "soak",
+        "soap"
+      ],
+      "frases_en": [
+        "Aim and follow the line!",
+        "Open your mouth!",
+        "Wet one hand and then the other."
+      ],
+      "frase_modelo_mes": "Hand.",
+      "face_id": "L01.ar1",
+      "fallback": {
+        "instrucion": {
+          "gl": "Este aparello non ten cámara nin soporte ARCore. Podedes xogar igual coas láminas sobre a mesa e a voz de Lúa.",
+          "es": "Este dispositivo no tiene cámara ni soporte ARCore. Podéis jugar igual con las láminas sobre la mesa y la voz de Lúa."
+        },
+        "laminas_suporte": [
+          "pal_soak",
+          "pal_soap"
+        ]
+      },
+      "scene_spec": {
+        "title": {
+          "gl": "Lúa RA · Ruta á diana",
+          "es": "Lúa RA · Ruta a la diana"
+        },
+        "placeHint": {
+          "gl": "Toca a mesa debuxada para colocar a escena.",
+          "es": "Toca la mesa dibujada para colocar la escena."
+        },
+        "searchHint": {
+          "gl": "Move o móbil amodo mirando cara á mesa.",
+          "es": "Mueve el móvil despacio mirando hacia la mesa."
+        },
+        "closeLabel": {
+          "gl": "Pechar",
+          "es": "Cerrar"
+        },
+        "replaceLabel": {
+          "gl": "Recolocar",
+          "es": "Recolocar"
+        },
+        "luaPrefix": "Lúa: ",
+        "events": [
+          {
+            "id": "S9.PASO_1",
+            "label_gl": "Paso 1",
+            "label_es": "Paso 1",
+            "prompt_gl": "Seguide o camiño lóxico ata a diana tocando cada paso.",
+            "prompt_es": "Seguid el camino lógico hasta la diana tocando cada paso.",
+            "englishPhrase": "Aim and follow the line!"
+          },
+          {
+            "id": "S9.FIN",
+            "label_gl": "Logro",
+            "label_es": "Logro",
+            "prompt_gl": "Todo no seu sitio sobre a mesa.",
+            "prompt_es": "Todo en su sitio sobre la mesa.",
+            "englishPhrase": "Aim and follow the line!"
+          }
+        ],
+        "shapes": [
+          {
+            "kind": "tile",
+            "style": "piece",
+            "pts": [
+              [
+                -0.1,
+                -0.06
+              ]
+            ],
+            "w": 0.2,
+            "d": 0.12,
+            "y": 0.0,
+            "text": ""
+          },
+          {
+            "kind": "rings",
+            "style": "light",
+            "pts": [
+              [
+                0.0,
+                0.0
+              ]
+            ],
+            "r": 0.06,
+            "y": 0.02,
+            "text": "OK!",
+            "after": "S9.FIN"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ra_curso_2_3_m08",
+      "curso": "curso_2_3",
+      "mes": 8,
+      "fenomeno": "cinematica",
+      "steam_id": "STEAM-2_3-04",
+      "steam_titulo": {
+        "gl": "A toalla mollada pesa",
+        "es": "La toalla mojada pesa"
+      },
+      "valeria_scene_id": "S3",
+      "titulo": {
+        "gl": "Rampla e velocidade",
+        "es": "Rampa y velocidad"
+      },
+      "guia_adulto": {
+        "gl": "Poñede un cartón inclinado ou un libro na mesa e soltade unha peza grande para ver como roda ata a meta.",
+        "es": "Poned un cartón inclinado o un libro en la mesa y soltad una pieza grande para ver cómo rueda hasta la meta."
+      },
+      "par": {
+        "a": "dip",
+        "b": "tip",
+        "fonema": "/d/ → /t/"
+      },
+      "frase_cena_en": "Roll down, fast and slow!",
+      "frase_cena_sig": {
+        "gl": "Roda cara abaixo, rápido e amodo!",
+        "es": "¡Rueda hacia abajo, rápido y despacio!"
+      },
+      "palabras_en": [
+        "dip",
+        "tip"
+      ],
+      "frases_en": [
+        "Roll down, fast and slow!",
+        "Smile!",
+        "Lift the wet towel and dry towel."
+      ],
+      "frase_modelo_mes": "Towel.",
+      "face_id": "L07.ar6",
+      "fallback": {
+        "instrucion": {
+          "gl": "Este aparello non ten cámara nin soporte ARCore. Podedes xogar igual coas láminas sobre a mesa e a voz de Lúa.",
+          "es": "Este dispositivo no tiene cámara ni soporte ARCore. Podéis jugar igual con las láminas sobre la mesa y la voz de Lúa."
+        },
+        "laminas_suporte": [
+          "pal_dip",
+          "pal_tip"
+        ]
+      },
+      "scene_spec": {
+        "title": {
+          "gl": "Lúa RA · Rampla e velocidade",
+          "es": "Lúa RA · Rampa y velocidad"
+        },
+        "placeHint": {
+          "gl": "Toca a mesa debuxada para colocar a escena.",
+          "es": "Toca la mesa dibujada para colocar la escena."
+        },
+        "searchHint": {
+          "gl": "Move o móbil amodo mirando cara á mesa.",
+          "es": "Mueve el móvil despacio mirando hacia la mesa."
+        },
+        "closeLabel": {
+          "gl": "Pechar",
+          "es": "Cerrar"
+        },
+        "replaceLabel": {
+          "gl": "Recolocar",
+          "es": "Recolocar"
+        },
+        "luaPrefix": "Lúa: ",
+        "events": [
+          {
+            "id": "S3.ESFERA_ARRIBA",
+            "label_gl": "Arriba",
+            "label_es": "Arriba",
+            "prompt_gl": "Suxeitade o obxecto no alto da costa.",
+            "prompt_es": "Sujetad el objeto en lo alto de la cuesta.",
+            "englishPhrase": "High tower!"
+          },
+          {
+            "id": "S3.LLEGADA_RAPIDA",
+            "label_gl": "Rápido",
+            "label_es": "Rápido",
+            "prompt_gl": "Soltádeo e mirade como chega abaixo.",
+            "prompt_es": "Soltadlo y mirad cómo llega abajo.",
+            "englishPhrase": "Roll down fast!"
+          }
+        ],
+        "shapes": [
+          {
+            "kind": "flow",
+            "style": "light",
+            "pts": [
+              [
+                -0.14,
+                -0.05
+              ],
+              [
+                0.14,
+                0.05
+              ]
+            ],
+            "y": 0.04,
+            "text": "ROLL!"
+          },
+          {
+            "kind": "circle",
+            "style": "warn",
+            "pts": [
+              [
+                -0.14,
+                -0.05
+              ]
+            ],
+            "r": 0.03,
+            "y": 0.06,
+            "text": "UP",
+            "after": "S3.ESFERA_ARRIBA"
+          },
+          {
+            "kind": "rings",
+            "style": "light",
+            "pts": [
+              [
+                0.14,
+                0.05
+              ]
+            ],
+            "r": 0.05,
+            "y": 0.02,
+            "text": "FAST!",
+            "after": "S3.LLEGADA_RAPIDA"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ra_curso_2_3_m09",
+      "curso": "curso_2_3",
+      "mes": 9,
+      "fenomeno": "acustica",
+      "steam_id": "STEAM-2_3-05",
+      "steam_titulo": {
+        "gl": "Pasos que corren, pasos que dormen",
+        "es": "Pasos que corren, pasos que duermen"
+      },
+      "valeria_scene_id": "S4",
+      "titulo": {
+        "gl": "Sopro e movemento",
+        "es": "Soplo y movimiento"
+      },
+      "guia_adulto": {
+        "gl": "Soprade amodo ou con forza cara a unha folla ou barquiño de papel na mesa mentres seguides as frechas de aire.",
+        "es": "Soplad despacio o con fuerza hacia una hoja o barquito de papel en la mesa mientras seguís las flechas de aire."
+      },
+      "par": {
+        "a": "cat",
+        "b": "pat",
+        "fonema": "/k/ → /p/"
+      },
+      "frase_cena_en": "Blow gently and spin!",
+      "frase_cena_sig": {
+        "gl": "Sopra suave e faino xirar!",
+        "es": "¡Sopla suave y hazlo girar!"
+      },
+      "palabras_en": [
+        "cat",
+        "pat"
+      ],
+      "frases_en": [
+        "Blow gently and spin!",
+        "Big eyes!",
+        "Move each foot with the box beat."
+      ],
+      "frase_modelo_mes": "Foot.",
+      "face_id": "L01.ar3",
+      "fallback": {
+        "instrucion": {
+          "gl": "Este aparello non ten cámara nin soporte ARCore. Podedes xogar igual coas láminas sobre a mesa e a voz de Lúa.",
+          "es": "Este dispositivo no tiene cámara ni soporte ARCore. Podéis jugar igual con las láminas sobre la mesa y la voz de Lúa."
+        },
+        "laminas_suporte": [
+          "pal_cat",
+          "pal_pat"
+        ]
+      },
+      "scene_spec": {
+        "title": {
+          "gl": "Lúa RA · Sopro e movemento",
+          "es": "Lúa RA · Soplo y movimiento"
+        },
+        "placeHint": {
+          "gl": "Toca a mesa debuxada para colocar a escena.",
+          "es": "Toca la mesa dibujada para colocar la escena."
+        },
+        "searchHint": {
+          "gl": "Move o móbil amodo mirando cara á mesa.",
+          "es": "Mueve el móvil despacio mirando hacia la mesa."
+        },
+        "closeLabel": {
+          "gl": "Pechar",
+          "es": "Cerrar"
+        },
+        "replaceLabel": {
+          "gl": "Recolocar",
+          "es": "Recolocar"
+        },
+        "luaPrefix": "Lúa: ",
+        "events": [
+          {
+            "id": "S4.PRAXIA_REDONDEO",
+            "label_gl": "Sopro",
+            "label_es": "Soplo",
+            "prompt_gl": "Sopro longo e suave sobre a mesa.",
+            "prompt_es": "Soplo largo y suave sobre la mesa.",
+            "englishPhrase": "Blow gently!"
+          },
+          {
+            "id": "S4.MOLINETE_GIRA",
+            "label_gl": "Xira",
+            "label_es": "Gira",
+            "prompt_gl": "Vemos moverse ou xirar o obxecto.",
+            "prompt_es": "Vemos moverse o girar el objeto.",
+            "englishPhrase": "Spin the wheel!"
+          }
+        ],
+        "shapes": [
+          {
+            "kind": "flow",
+            "style": "light",
+            "pts": [
+              [
+                -0.15,
+                0.0
+              ],
+              [
+                0.08,
+                0.0
+              ]
+            ],
+            "y": 0.04,
+            "text": "AIR"
+          },
+          {
+            "kind": "rings",
+            "style": "light",
+            "pts": [
+              [
+                0.1,
+                0.0
+              ]
+            ],
+            "r": 0.06,
+            "y": 0.04,
+            "text": "SPIN!",
+            "after": "S4.MOLINETE_GIRA"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ra_curso_2_3_m10",
+      "curso": "curso_2_3",
+      "mes": 10,
+      "fenomeno": "optica",
+      "steam_id": "STEAM-2_3-06",
+      "steam_titulo": {
+        "gl": "A caixa das estrelas",
+        "es": "La caja de las estrellas"
+      },
+      "valeria_scene_id": "S6",
+      "titulo": {
+        "gl": "Luz, sol e sombra",
+        "es": "Luz, sol y sombra"
+      },
+      "guia_adulto": {
+        "gl": "Coa mesa iluminada ou cunha lanterna, observade onde cae a sombra e como xira ao mover a luz.",
+        "es": "Con la mesa iluminada o con una linterna, observad dónde cae la sombra y cómo gira al mover la luz."
+      },
+      "par": {
+        "a": "light",
+        "b": "night",
+        "fonema": "/l/ → /n/"
+      },
+      "frase_cena_en": "Turn the sun and look!",
+      "frase_cena_sig": {
+        "gl": "Xira o sol e mira!",
+        "es": "¡Gira el sol y mira!"
+      },
+      "palabras_en": [
+        "light",
+        "night"
+      ],
+      "frases_en": [
+        "Turn the sun and look!",
+        "Pucker your lips!",
+        "Shine the flashlight inside the box."
+      ],
+      "frase_modelo_mes": "Flashlight.",
+      "face_id": "L01.ar4",
+      "fallback": {
+        "instrucion": {
+          "gl": "Este aparello non ten cámara nin soporte ARCore. Podedes xogar igual coas láminas sobre a mesa e a voz de Lúa.",
+          "es": "Este dispositivo no tiene cámara ni soporte ARCore. Podéis jugar igual con las láminas sobre la mesa y la voz de Lúa."
+        },
+        "laminas_suporte": [
+          "pal_light",
+          "pal_night"
+        ]
+      },
+      "scene_spec": {
+        "title": {
+          "gl": "Lúa RA · Luz, sol e sombra",
+          "es": "Lúa RA · Luz, sol y sombra"
+        },
+        "placeHint": {
+          "gl": "Toca a mesa debuxada para colocar a escena.",
+          "es": "Toca la mesa dibujada para colocar la escena."
+        },
+        "searchHint": {
+          "gl": "Move o móbil amodo mirando cara á mesa.",
+          "es": "Mueve el móvil despacio mirando hacia la mesa."
+        },
+        "closeLabel": {
+          "gl": "Pechar",
+          "es": "Cerrar"
+        },
+        "replaceLabel": {
+          "gl": "Recolocar",
+          "es": "Recolocar"
+        },
+        "luaPrefix": "Lúa: ",
+        "events": [
+          {
+            "id": "S6.RIEGO",
+            "label_gl": "Luz",
+            "label_es": "Luz",
+            "prompt_gl": "Aluma o obxecto desde un lado.",
+            "prompt_es": "Ilumina el objeto desde un lado.",
+            "englishPhrase": "Light here!"
+          },
+          {
+            "id": "S6.SOMBRA_ALINEADA",
+            "label_gl": "Sombra",
+            "label_es": "Sombra",
+            "prompt_gl": "Sinala co dedo onde se alonga a sombra.",
+            "prompt_es": "Señala con el dedo dónde se alarga la sombra.",
+            "englishPhrase": "Turn the sun!"
+          }
+        ],
+        "shapes": [
+          {
+            "kind": "circle",
+            "style": "warn",
+            "pts": [
+              [
+                -0.12,
+                -0.06
+              ]
+            ],
+            "r": 0.04,
+            "y": 0.06,
+            "text": "SUN"
+          },
+          {
+            "kind": "flow",
+            "style": "light",
+            "pts": [
+              [
+                -0.12,
+                -0.06
+              ],
+              [
+                0.06,
+                0.04
+              ]
+            ],
+            "y": 0.04,
+            "text": ""
+          },
+          {
+            "kind": "tile",
+            "style": "light",
+            "pts": [
+              [
+                0.04,
+                0.02
+              ]
+            ],
+            "w": 0.1,
+            "d": 0.05,
+            "y": 0.01,
+            "text": "SHADOW",
+            "after": "S6.SOMBRA_ALINEADA"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ra_curso_3_4_m01",
+      "curso": "curso_3_4",
+      "mes": 1,
+      "fenomeno": "materia",
+      "steam_id": "STEAM-3_4-09",
+      "steam_titulo": {
+        "gl": "Que torre aguanta?",
+        "es": "¿Qué torre aguanta?"
+      },
+      "valeria_scene_id": "S0",
+      "titulo": {
+        "gl": "Mesa de formas e encaixe",
+        "es": "Mesa de formas y encaje"
+      },
+      "guia_adulto": {
+        "gl": "Coloca dous ou tres obxectos seguros na mesa. Lúa amosa sobre a mesa onde vai cada peza: sinala ou encaixa sen présa.",
+        "es": "Coloca dos o tres objetos seguros en la mesa. Lúa muestra sobre la mesa dónde va cada pieza: señala o encaja sin prisa."
+      },
+      "par": {
+        "a": "wide",
+        "b": "wood",
+        "fonema": "/aɪ/ → /ʊ/"
+      },
+      "frase_cena_en": "Fit it in and match the shape!",
+      "frase_cena_sig": {
+        "gl": "Encaixa e emparella a forma!",
+        "es": "¡Encaja y empareja la forma!"
+      },
+      "palabras_en": [
+        "wide",
+        "wood"
+      ],
+      "frases_en": [
+        "Fit it in and match the shape!",
+        "Puff your cheeks!",
+        "This tall tower has wide blocks below."
+      ],
+      "frase_modelo_mes": "Tower.",
+      "face_id": "L07.ar5",
+      "fallback": {
+        "instrucion": {
+          "gl": "Este aparello non ten cámara nin soporte ARCore. Podedes xogar igual coas láminas sobre a mesa e a voz de Lúa.",
+          "es": "Este dispositivo no tiene cámara ni soporte ARCore. Podéis jugar igual con las láminas sobre la mesa y la voz de Lúa."
+        },
+        "laminas_suporte": [
+          "pal_wide",
+          "pal_wood"
+        ]
+      },
+      "scene_spec": {
+        "title": {
+          "gl": "Lúa RA · Mesa de formas e encaixe",
+          "es": "Lúa RA · Mesa de formas y encaje"
+        },
+        "placeHint": {
+          "gl": "Toca a mesa debuxada para colocar a escena.",
+          "es": "Toca la mesa dibujada para colocar la escena."
+        },
+        "searchHint": {
+          "gl": "Move o móbil amodo mirando cara á mesa.",
+          "es": "Mueve el móvil despacio mirando hacia la mesa."
+        },
+        "closeLabel": {
+          "gl": "Pechar",
+          "es": "Cerrar"
+        },
+        "replaceLabel": {
+          "gl": "Recolocar",
+          "es": "Recolocar"
+        },
+        "luaPrefix": "Lúa: ",
+        "events": [
+          {
+            "id": "S0.CABEZA_ENCAJADA",
+            "label_gl": "Cabeza",
+            "label_es": "Cabeza",
+            "prompt_gl": "Toca ou encaixa a peza principal na mesa.",
+            "prompt_es": "Toca o encaja la pieza principal en la mesa.",
+            "englishPhrase": "Fit it in!"
+          },
+          {
+            "id": "S0.PLACA_LEIDA",
+            "label_gl": "Forma",
+            "label_es": "Forma",
+            "prompt_gl": "Sinala a silueta igual no taboleiro.",
+            "prompt_es": "Señala la silueta igual en el tablero.",
+            "englishPhrase": "Match the shape!"
+          }
+        ],
+        "shapes": [
+          {
+            "kind": "tile",
+            "style": "piece",
+            "pts": [
+              [
+                -0.08,
+                -0.06
+              ]
+            ],
+            "w": 0.16,
+            "d": 0.12,
+            "y": 0.0,
+            "text": ""
+          },
+          {
+            "kind": "circle",
+            "style": "light",
+            "pts": [
+              [
+                0.0,
+                0.0
+              ]
+            ],
+            "r": 0.055,
+            "y": 0.02,
+            "text": "FIT!",
+            "after": "S0.CABEZA_ENCAJADA"
+          },
+          {
+            "kind": "rings",
+            "style": "light",
+            "pts": [
+              [
+                0.0,
+                0.0
+              ]
+            ],
+            "r": 0.07,
+            "y": 0.02,
+            "text": "SHAPE!",
+            "after": "S0.PLACA_LEIDA"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ra_curso_3_4_m02",
+      "curso": "curso_3_4",
+      "mes": 2,
+      "fenomeno": "logica",
+      "steam_id": "STEAM-3_4-10",
+      "steam_titulo": {
+        "gl": "Vermello, azul, vermello…",
+        "es": "Rojo, azul, rojo…"
+      },
+      "valeria_scene_id": "S10",
+      "titulo": {
+        "gl": "Coidamos a Lúa",
+        "es": "Cuidamos a Lúa"
+      },
+      "guia_adulto": {
+        "gl": "Ordeamos os pasos de coidado en serie de tres: chegar, descansar e celebrar.",
+        "es": "Ordenamos los pasos de cuidado en serie de tres: llegar, descansar y celebrar."
+      },
+      "par": {
+        "a": "tile",
+        "b": "pile",
+        "fonema": "/t/ → /p/"
+      },
+      "frase_cena_en": "One, two, three steps!",
+      "frase_cena_sig": {
+        "gl": "Un, dous, tres pasos!",
+        "es": "¡Uno, dos, tres pasos!"
+      },
+      "palabras_en": [
+        "tile",
+        "pile"
+      ],
+      "frases_en": [
+        "One, two, three steps!",
+        "Turn your head!",
+        "Continue the pattern on the paper strip."
+      ],
+      "frase_modelo_mes": "Pattern.",
+      "face_id": "L07.ar2",
+      "fallback": {
+        "instrucion": {
+          "gl": "Este aparello non ten cámara nin soporte ARCore. Podedes xogar igual coas láminas sobre a mesa e a voz de Lúa.",
+          "es": "Este dispositivo no tiene cámara ni soporte ARCore. Podéis jugar igual con las láminas sobre la mesa y la voz de Lúa."
+        },
+        "laminas_suporte": [
+          "pal_tile",
+          "pal_pile"
+        ]
+      },
+      "scene_spec": {
+        "title": {
+          "gl": "Lúa RA · Coidamos a Lúa",
+          "es": "Lúa RA · Cuidamos a Lúa"
+        },
+        "placeHint": {
+          "gl": "Toca a mesa debuxada para colocar a escena.",
+          "es": "Toca la mesa dibujada para colocar la escena."
+        },
+        "searchHint": {
+          "gl": "Move o móbil amodo mirando cara á mesa.",
+          "es": "Mueve el móvil despacio mirando hacia la mesa."
+        },
+        "closeLabel": {
+          "gl": "Pechar",
+          "es": "Cerrar"
+        },
+        "replaceLabel": {
+          "gl": "Recolocar",
+          "es": "Recolocar"
+        },
+        "luaPrefix": "Lúa: ",
+        "events": [
+          {
+            "id": "S10.PASO_1",
+            "label_gl": "Paso 1",
+            "label_es": "Paso 1",
+            "prompt_gl": "Ordeamos os pasos de coidado en serie de tres: chegar, descansar e celebrar.",
+            "prompt_es": "Ordenamos los pasos de cuidado en serie de tres: llegar, descansar y celebrar.",
+            "englishPhrase": "One, two, three steps!"
+          },
+          {
+            "id": "S10.FIN",
+            "label_gl": "Logro",
+            "label_es": "Logro",
+            "prompt_gl": "Todo no seu sitio sobre a mesa.",
+            "prompt_es": "Todo en su sitio sobre la mesa.",
+            "englishPhrase": "One, two, three steps!"
+          }
+        ],
+        "shapes": [
+          {
+            "kind": "tile",
+            "style": "piece",
+            "pts": [
+              [
+                -0.1,
+                -0.06
+              ]
+            ],
+            "w": 0.2,
+            "d": 0.12,
+            "y": 0.0,
+            "text": ""
+          },
+          {
+            "kind": "rings",
+            "style": "light",
+            "pts": [
+              [
+                0.0,
+                0.0
+              ]
+            ],
+            "r": 0.06,
+            "y": 0.02,
+            "text": "OK!",
+            "after": "S10.FIN"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ra_curso_3_4_m03",
+      "curso": "curso_3_4",
+      "mes": 3,
+      "fenomeno": "cinematica",
+      "steam_id": "STEAM-3_4-11",
+      "steam_titulo": {
+        "gl": "O tren baixa a costa",
+        "es": "El tren baja la cuesta"
+      },
+      "valeria_scene_id": "S1",
+      "titulo": {
+        "gl": "Camiño da mesa",
+        "es": "Camino en la mesa"
+      },
+      "guia_adulto": {
+        "gl": "Sobre a mesa vese o percorrido. Move o obxecto coas mans pola liña marcada mentres escoitades as ordes en inglés.",
+        "es": "Sobre la mesa se ve el recorrido. Mueve el objeto con las manos por la línea marcada mientras escucháis las órdenes en inglés."
+      },
+      "par": {
+        "a": "toy",
+        "b": "boy",
+        "fonema": "/t/ → /b/"
+      },
+      "frase_cena_en": "Connect the path and turn!",
+      "frase_cena_sig": {
+        "gl": "Conecta o camiño e xira!",
+        "es": "¡Conecta el camino y gira!"
+      },
+      "palabras_en": [
+        "toy",
+        "boy"
+      ],
+      "frases_en": [
+        "Connect the path and turn!",
+        "Open your mouth!",
+        "Place the toy train on the ramp."
+      ],
+      "frase_modelo_mes": "Train.",
+      "face_id": "L01.ar1",
+      "fallback": {
+        "instrucion": {
+          "gl": "Este aparello non ten cámara nin soporte ARCore. Podedes xogar igual coas láminas sobre a mesa e a voz de Lúa.",
+          "es": "Este dispositivo no tiene cámara ni soporte ARCore. Podéis jugar igual con las láminas sobre la mesa y la voz de Lúa."
+        },
+        "laminas_suporte": [
+          "pal_toy",
+          "pal_boy"
+        ]
+      },
+      "scene_spec": {
+        "title": {
+          "gl": "Lúa RA · Camiño da mesa",
+          "es": "Lúa RA · Camino en la mesa"
+        },
+        "placeHint": {
+          "gl": "Toca a mesa debuxada para colocar a escena.",
+          "es": "Toca la mesa dibujada para colocar la escena."
+        },
+        "searchHint": {
+          "gl": "Move o móbil amodo mirando cara á mesa.",
+          "es": "Mueve el móvil despacio mirando hacia la mesa."
+        },
+        "closeLabel": {
+          "gl": "Pechar",
+          "es": "Cerrar"
+        },
+        "replaceLabel": {
+          "gl": "Recolocar",
+          "es": "Recolocar"
+        },
+        "luaPrefix": "Lúa: ",
+        "events": [
+          {
+            "id": "S1.LUA_EN_INICIO",
+            "label_gl": "Inicio",
+            "label_es": "Inicio",
+            "prompt_gl": "Pon o boneco ou peza no punto de saída.",
+            "prompt_es": "Pon el muñeco o pieza en el punto de salida.",
+            "englishPhrase": "Connect the path!"
+          },
+          {
+            "id": "S1.LUA_GIRA",
+            "label_gl": "Xiro",
+            "label_es": "Giro",
+            "prompt_gl": "Facede o xiro xunto á esquina marcada.",
+            "prompt_es": "Haced el giro junto a la esquina marcada.",
+            "englishPhrase": "Turn here!"
+          }
+        ],
+        "shapes": [
+          {
+            "kind": "flow",
+            "style": "light",
+            "pts": [
+              [
+                -0.14,
+                0.06
+              ],
+              [
+                0.0,
+                0.06
+              ],
+              [
+                0.0,
+                -0.06
+              ],
+              [
+                0.14,
+                -0.06
+              ]
+            ],
+            "y": 0.01,
+            "text": ""
+          },
+          {
+            "kind": "circle",
+            "style": "light",
+            "pts": [
+              [
+                -0.14,
+                0.06
+              ]
+            ],
+            "r": 0.035,
+            "y": 0.02,
+            "text": "START",
+            "after": "S1.LUA_EN_INICIO"
+          },
+          {
+            "kind": "arrow",
+            "style": "warn",
+            "pts": [
+              [
+                0.0,
+                0.06
+              ],
+              [
+                0.0,
+                -0.06
+              ]
+            ],
+            "y": 0.03,
+            "text": "TURN!",
+            "after": "S1.LUA_GIRA"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ra_curso_3_4_m04",
+      "curso": "curso_3_4",
+      "mes": 4,
+      "fenomeno": "acustica",
+      "steam_id": "STEAM-3_4-12",
+      "steam_titulo": {
+        "gl": "O teléfono de vasos",
+        "es": "El teléfono de vasos"
+      },
+      "valeria_scene_id": "S2",
+      "titulo": {
+        "gl": "Ondas de son na mesa",
+        "es": "Ondas de sonido en la mesa"
+      },
+      "guia_adulto": {
+        "gl": "Golpea amodo ou forte na mesa mentres as ondas medran sobre o centro. Sinalade ondas grandes e pequenas.",
+        "es": "Golpea suave o fuerte en la mesa mientras las ondas crecen sobre el centro. Señalad ondas grandes y pequeñas."
+      },
+      "par": {
+        "a": "talk",
+        "b": "taut",
+        "fonema": "/k/ → /t/"
+      },
+      "frase_cena_en": "Big sound, small sound!",
+      "frase_cena_sig": {
+        "gl": "Son grande, son pequeno!",
+        "es": "¡Sonido grande, sonido pequeño!"
+      },
+      "palabras_en": [
+        "talk",
+        "taut"
+      ],
+      "frases_en": [
+        "Big sound, small sound!",
+        "Smile!",
+        "Talk softly into the paper cup phone."
+      ],
+      "frase_modelo_mes": "Phone.",
+      "face_id": "L07.ar6",
+      "fallback": {
+        "instrucion": {
+          "gl": "Este aparello non ten cámara nin soporte ARCore. Podedes xogar igual coas láminas sobre a mesa e a voz de Lúa.",
+          "es": "Este dispositivo no tiene cámara ni soporte ARCore. Podéis jugar igual con las láminas sobre la mesa y la voz de Lúa."
+        },
+        "laminas_suporte": [
+          "pal_talk",
+          "pal_taut"
+        ]
+      },
+      "scene_spec": {
+        "title": {
+          "gl": "Lúa RA · Ondas de son na mesa",
+          "es": "Lúa RA · Ondas de sonido en la mesa"
+        },
+        "placeHint": {
+          "gl": "Toca a mesa debuxada para colocar a escena.",
+          "es": "Toca la mesa dibujada para colocar la escena."
+        },
+        "searchHint": {
+          "gl": "Move o móbil amodo mirando cara á mesa.",
+          "es": "Mueve el móvil despacio mirando hacia la mesa."
+        },
+        "closeLabel": {
+          "gl": "Pechar",
+          "es": "Cerrar"
+        },
+        "replaceLabel": {
+          "gl": "Recolocar",
+          "es": "Recolocar"
+        },
+        "luaPrefix": "Lúa: ",
+        "events": [
+          {
+            "id": "S2.GOLPE_FUERTE",
+            "label_gl": "Forte",
+            "label_es": "Fuerte",
+            "prompt_gl": "Un golpe fondo coa palma aberta.",
+            "prompt_es": "Un golpe hondo con la palma abierta.",
+            "englishPhrase": "Big and low!"
+          },
+          {
+            "id": "S2.GOLPE_DEBIL",
+            "label_gl": "Suave",
+            "label_es": "Suave",
+            "prompt_gl": "Toque suave cos dedos na mesa.",
+            "prompt_es": "Toque suave con los dedos en la mesa.",
+            "englishPhrase": "Small and high!"
+          }
+        ],
+        "shapes": [
+          {
+            "kind": "circle",
+            "style": "piece",
+            "pts": [
+              [
+                0.0,
+                0.0
+              ]
+            ],
+            "r": 0.06,
+            "y": 0.01,
+            "text": ""
+          },
+          {
+            "kind": "rings",
+            "style": "warn",
+            "pts": [
+              [
+                0.0,
+                0.0
+              ]
+            ],
+            "r": 0.08,
+            "y": 0.03,
+            "text": "BIG!",
+            "last": [
+              "S2.GOLPE_FUERTE"
+            ]
+          },
+          {
+            "kind": "rings",
+            "style": "light",
+            "pts": [
+              [
+                0.0,
+                0.0
+              ]
+            ],
+            "r": 0.04,
+            "y": 0.03,
+            "text": "SMALL!",
+            "last": [
+              "S2.GOLPE_DEBIL"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "ra_curso_3_4_m05",
+      "curso": "curso_3_4",
+      "mes": 5,
+      "fenomeno": "optica",
+      "steam_id": "STEAM-3_4-01",
+      "steam_titulo": {
+        "gl": "A sombra da torre",
+        "es": "La sombra de la torre"
+      },
+      "valeria_scene_id": "S6",
+      "titulo": {
+        "gl": "Luz, sol e sombra",
+        "es": "Luz, sol y sombra"
+      },
+      "guia_adulto": {
+        "gl": "Coa mesa iluminada ou cunha lanterna, observade onde cae a sombra e como xira ao mover a luz.",
+        "es": "Con la mesa iluminada o con una linterna, observad dónde cae la sombra y cómo gira al mover la luz."
+      },
+      "par": {
+        "a": "tall",
+        "b": "ball",
+        "fonema": "/t/ → /b/"
+      },
+      "frase_cena_en": "Turn the sun and look!",
+      "frase_cena_sig": {
+        "gl": "Xira o sol e mira!",
+        "es": "¡Gira el sol y mira!"
+      },
+      "palabras_en": [
+        "tall",
+        "ball"
+      ],
+      "frases_en": [
+        "Turn the sun and look!",
+        "Big eyes!",
+        "See the tower shadow on the wall."
+      ],
+      "frase_modelo_mes": "Shadow.",
+      "face_id": "L01.ar3",
+      "fallback": {
+        "instrucion": {
+          "gl": "Este aparello non ten cámara nin soporte ARCore. Podedes xogar igual coas láminas sobre a mesa e a voz de Lúa.",
+          "es": "Este dispositivo no tiene cámara ni soporte ARCore. Podéis jugar igual con las láminas sobre la mesa y la voz de Lúa."
+        },
+        "laminas_suporte": [
+          "pal_tall",
+          "pal_ball"
+        ]
+      },
+      "scene_spec": {
+        "title": {
+          "gl": "Lúa RA · Luz, sol e sombra",
+          "es": "Lúa RA · Luz, sol y sombra"
+        },
+        "placeHint": {
+          "gl": "Toca a mesa debuxada para colocar a escena.",
+          "es": "Toca la mesa dibujada para colocar la escena."
+        },
+        "searchHint": {
+          "gl": "Move o móbil amodo mirando cara á mesa.",
+          "es": "Mueve el móvil despacio mirando hacia la mesa."
+        },
+        "closeLabel": {
+          "gl": "Pechar",
+          "es": "Cerrar"
+        },
+        "replaceLabel": {
+          "gl": "Recolocar",
+          "es": "Recolocar"
+        },
+        "luaPrefix": "Lúa: ",
+        "events": [
+          {
+            "id": "S6.RIEGO",
+            "label_gl": "Luz",
+            "label_es": "Luz",
+            "prompt_gl": "Aluma o obxecto desde un lado.",
+            "prompt_es": "Ilumina el objeto desde un lado.",
+            "englishPhrase": "Light here!"
+          },
+          {
+            "id": "S6.SOMBRA_ALINEADA",
+            "label_gl": "Sombra",
+            "label_es": "Sombra",
+            "prompt_gl": "Sinala co dedo onde se alonga a sombra.",
+            "prompt_es": "Señala con el dedo dónde se alarga la sombra.",
+            "englishPhrase": "Turn the sun!"
+          }
+        ],
+        "shapes": [
+          {
+            "kind": "circle",
+            "style": "warn",
+            "pts": [
+              [
+                -0.12,
+                -0.06
+              ]
+            ],
+            "r": 0.04,
+            "y": 0.06,
+            "text": "SUN"
+          },
+          {
+            "kind": "flow",
+            "style": "light",
+            "pts": [
+              [
+                -0.12,
+                -0.06
+              ],
+              [
+                0.06,
+                0.04
+              ]
+            ],
+            "y": 0.04,
+            "text": ""
+          },
+          {
+            "kind": "tile",
+            "style": "light",
+            "pts": [
+              [
+                0.04,
+                0.02
+              ]
+            ],
+            "w": 0.1,
+            "d": 0.05,
+            "y": 0.01,
+            "text": "SHADOW",
+            "after": "S6.SOMBRA_ALINEADA"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ra_curso_3_4_m06",
+      "curso": "curso_3_4",
+      "mes": 6,
+      "fenomeno": "materia",
+      "steam_id": "STEAM-3_4-02",
+      "steam_titulo": {
+        "gl": "O xeo no zume",
+        "es": "El hielo en el zumo"
+      },
+      "valeria_scene_id": "S5",
+      "titulo": {
+        "gl": "Ponte e equilibrio",
+        "es": "Puente y equilibrio"
+      },
+      "guia_adulto": {
+        "gl": "Comparade un obxecto pesado e un lixeiro sobre a ponte debuxada na mesa: cal inclina o lado?",
+        "es": "Comparad un objeto pesado y uno ligero sobre el puente dibujado en la mesa: ¿cuál inclina el lado?"
+      },
+      "par": {
+        "a": "drink",
+        "b": "shrink",
+        "fonema": "/d/ → /ʃ/"
+      },
+      "frase_cena_en": "Heavy, light, level the bridge!",
+      "frase_cena_sig": {
+        "gl": "Pesado, lixeiro, nivela a ponte!",
+        "es": "¡Pesado, ligero, nivela el puente!"
+      },
+      "palabras_en": [
+        "drink",
+        "shrink"
+      ],
+      "frases_en": [
+        "Heavy, light, level the bridge!",
+        "Pucker your lips!",
+        "Watch the ice in the cold juice."
+      ],
+      "frase_modelo_mes": "Juice.",
+      "face_id": "L01.ar4",
+      "fallback": {
+        "instrucion": {
+          "gl": "Este aparello non ten cámara nin soporte ARCore. Podedes xogar igual coas láminas sobre a mesa e a voz de Lúa.",
+          "es": "Este dispositivo no tiene cámara ni soporte ARCore. Podéis jugar igual con las láminas sobre la mesa y la voz de Lúa."
+        },
+        "laminas_suporte": [
+          "pal_drink",
+          "pal_shrink"
+        ]
+      },
+      "scene_spec": {
+        "title": {
+          "gl": "Lúa RA · Ponte e equilibrio",
+          "es": "Lúa RA · Puente y equilibrio"
+        },
+        "placeHint": {
+          "gl": "Toca a mesa debuxada para colocar a escena.",
+          "es": "Toca la mesa dibujada para colocar la escena."
+        },
+        "searchHint": {
+          "gl": "Move o móbil amodo mirando cara á mesa.",
+          "es": "Mueve el móvil despacio mirando hacia la mesa."
+        },
+        "closeLabel": {
+          "gl": "Pechar",
+          "es": "Cerrar"
+        },
+        "replaceLabel": {
+          "gl": "Recolocar",
+          "es": "Recolocar"
+        },
+        "luaPrefix": "Lúa: ",
+        "events": [
+          {
+            "id": "S5.INCLINA_IZQ",
+            "label_gl": "Pesado",
+            "label_es": "Pesado",
+            "prompt_gl": "Pon o obxecto pesado nun extremo.",
+            "prompt_es": "Pon el objeto pesado en un extremo.",
+            "englishPhrase": "Heavy side down!"
+          },
+          {
+            "id": "S5.PUENTE_ESTABLE",
+            "label_gl": "Equilibrio",
+            "label_es": "Equilibrio",
+            "prompt_gl": "Equilibrade os dous lados da ponte.",
+            "prompt_es": "Equilibrad los dos lados del puente.",
+            "englishPhrase": "Level the bridge!"
+          }
+        ],
+        "shapes": [
+          {
+            "kind": "tile",
+            "style": "piece",
+            "pts": [
+              [
+                -0.14,
+                -0.04
+              ]
+            ],
+            "w": 0.28,
+            "d": 0.08,
+            "y": 0.02,
+            "text": ""
+          },
+          {
+            "kind": "arrow",
+            "style": "warn",
+            "pts": [
+              [
+                -0.1,
+                -0.02
+              ],
+              [
+                -0.1,
+                0.06
+              ]
+            ],
+            "y": 0.05,
+            "text": "HEAVY",
+            "last": [
+              "S5.INCLINA_IZQ"
+            ]
+          },
+          {
+            "kind": "rings",
+            "style": "light",
+            "pts": [
+              [
+                0.0,
+                0.0
+              ]
+            ],
+            "r": 0.06,
+            "y": 0.04,
+            "text": "EVEN!",
+            "after": "S5.PUENTE_ESTABLE"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ra_curso_3_4_m07",
+      "curso": "curso_3_4",
+      "mes": 7,
+      "fenomeno": "logica",
+      "steam_id": "STEAM-3_4-03",
+      "steam_titulo": {
+        "gl": "Un prato para cada un",
+        "es": "Un plato para cada uno"
+      },
+      "valeria_scene_id": "S11",
+      "titulo": {
+        "gl": "Estación e orde",
+        "es": "Estación y orden"
+      },
+      "guia_adulto": {
+        "gl": "Emparellade cada peza co seu sitio antes de dar a saída ao tren.",
+        "es": "Emparejad cada pieza con su sitio antes de dar salida al tren."
+      },
+      "par": {
+        "a": "seat",
+        "b": "set",
+        "fonema": "/iː/ → /ɛ/"
+      },
+      "frase_cena_en": "Match each spot first!",
+      "frase_cena_sig": {
+        "gl": "Emparella cada sitio primeiro!",
+        "es": "¡Empareja cada sitio primero!"
+      },
+      "palabras_en": [
+        "seat",
+        "set"
+      ],
+      "frases_en": [
+        "Match each spot first!",
+        "Puff your cheeks!",
+        "Count the chairs around the table."
+      ],
+      "frase_modelo_mes": "Table.",
+      "face_id": "L07.ar5",
+      "fallback": {
+        "instrucion": {
+          "gl": "Este aparello non ten cámara nin soporte ARCore. Podedes xogar igual coas láminas sobre a mesa e a voz de Lúa.",
+          "es": "Este dispositivo no tiene cámara ni soporte ARCore. Podéis jugar igual con las láminas sobre la mesa y la voz de Lúa."
+        },
+        "laminas_suporte": [
+          "pal_seat",
+          "pal_set"
+        ]
+      },
+      "scene_spec": {
+        "title": {
+          "gl": "Lúa RA · Estación e orde",
+          "es": "Lúa RA · Estación y orden"
+        },
+        "placeHint": {
+          "gl": "Toca a mesa debuxada para colocar a escena.",
+          "es": "Toca la mesa dibujada para colocar la escena."
+        },
+        "searchHint": {
+          "gl": "Move o móbil amodo mirando cara á mesa.",
+          "es": "Mueve el móvil despacio mirando hacia la mesa."
+        },
+        "closeLabel": {
+          "gl": "Pechar",
+          "es": "Cerrar"
+        },
+        "replaceLabel": {
+          "gl": "Recolocar",
+          "es": "Recolocar"
+        },
+        "luaPrefix": "Lúa: ",
+        "events": [
+          {
+            "id": "S11.PASO_1",
+            "label_gl": "Paso 1",
+            "label_es": "Paso 1",
+            "prompt_gl": "Emparellade cada peza co seu sitio antes de dar a saída ao tren.",
+            "prompt_es": "Emparejad cada pieza con su sitio antes de dar salida al tren.",
+            "englishPhrase": "Match each spot first!"
+          },
+          {
+            "id": "S11.FIN",
+            "label_gl": "Logro",
+            "label_es": "Logro",
+            "prompt_gl": "Todo no seu sitio sobre a mesa.",
+            "prompt_es": "Todo en su sitio sobre la mesa.",
+            "englishPhrase": "Match each spot first!"
+          }
+        ],
+        "shapes": [
+          {
+            "kind": "tile",
+            "style": "piece",
+            "pts": [
+              [
+                -0.1,
+                -0.06
+              ]
+            ],
+            "w": 0.2,
+            "d": 0.12,
+            "y": 0.0,
+            "text": ""
+          },
+          {
+            "kind": "rings",
+            "style": "light",
+            "pts": [
+              [
+                0.0,
+                0.0
+              ]
+            ],
+            "r": 0.06,
+            "y": 0.02,
+            "text": "OK!",
+            "after": "S11.FIN"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ra_curso_3_4_m08",
+      "curso": "curso_3_4",
+      "mes": 8,
+      "fenomeno": "cinematica",
+      "steam_id": "STEAM-3_4-04",
+      "steam_titulo": {
+        "gl": "Verter amodo",
+        "es": "Verter despacio"
+      },
+      "valeria_scene_id": "S3",
+      "titulo": {
+        "gl": "Rampla e velocidade",
+        "es": "Rampa y velocidad"
+      },
+      "guia_adulto": {
+        "gl": "Poñede un cartón inclinado ou un libro na mesa e soltade unha peza grande para ver como roda ata a meta.",
+        "es": "Poned un cartón inclinado o un libro en la mesa y soltad una pieza grande para ver cómo rueda hasta la meta."
+      },
+      "par": {
+        "a": "fill",
+        "b": "full",
+        "fonema": "/ɪ/ → /ʊ/"
+      },
+      "frase_cena_en": "Roll down, fast and slow!",
+      "frase_cena_sig": {
+        "gl": "Roda cara abaixo, rápido e amodo!",
+        "es": "¡Rueda hacia abajo, rápido y despacio!"
+      },
+      "palabras_en": [
+        "fill",
+        "full"
+      ],
+      "frases_en": [
+        "Roll down, fast and slow!",
+        "Turn your head!",
+        "Hold the big funnel above the cup."
+      ],
+      "frase_modelo_mes": "Funnel.",
+      "face_id": "L07.ar2",
+      "fallback": {
+        "instrucion": {
+          "gl": "Este aparello non ten cámara nin soporte ARCore. Podedes xogar igual coas láminas sobre a mesa e a voz de Lúa.",
+          "es": "Este dispositivo no tiene cámara ni soporte ARCore. Podéis jugar igual con las láminas sobre la mesa y la voz de Lúa."
+        },
+        "laminas_suporte": [
+          "pal_fill",
+          "pal_full"
+        ]
+      },
+      "scene_spec": {
+        "title": {
+          "gl": "Lúa RA · Rampla e velocidade",
+          "es": "Lúa RA · Rampa y velocidad"
+        },
+        "placeHint": {
+          "gl": "Toca a mesa debuxada para colocar a escena.",
+          "es": "Toca la mesa dibujada para colocar la escena."
+        },
+        "searchHint": {
+          "gl": "Move o móbil amodo mirando cara á mesa.",
+          "es": "Mueve el móvil despacio mirando hacia la mesa."
+        },
+        "closeLabel": {
+          "gl": "Pechar",
+          "es": "Cerrar"
+        },
+        "replaceLabel": {
+          "gl": "Recolocar",
+          "es": "Recolocar"
+        },
+        "luaPrefix": "Lúa: ",
+        "events": [
+          {
+            "id": "S3.ESFERA_ARRIBA",
+            "label_gl": "Arriba",
+            "label_es": "Arriba",
+            "prompt_gl": "Suxeitade o obxecto no alto da costa.",
+            "prompt_es": "Sujetad el objeto en lo alto de la cuesta.",
+            "englishPhrase": "High tower!"
+          },
+          {
+            "id": "S3.LLEGADA_RAPIDA",
+            "label_gl": "Rápido",
+            "label_es": "Rápido",
+            "prompt_gl": "Soltádeo e mirade como chega abaixo.",
+            "prompt_es": "Soltadlo y mirad cómo llega abajo.",
+            "englishPhrase": "Roll down fast!"
+          }
+        ],
+        "shapes": [
+          {
+            "kind": "flow",
+            "style": "light",
+            "pts": [
+              [
+                -0.14,
+                -0.05
+              ],
+              [
+                0.14,
+                0.05
+              ]
+            ],
+            "y": 0.04,
+            "text": "ROLL!"
+          },
+          {
+            "kind": "circle",
+            "style": "warn",
+            "pts": [
+              [
+                -0.14,
+                -0.05
+              ]
+            ],
+            "r": 0.03,
+            "y": 0.06,
+            "text": "UP",
+            "after": "S3.ESFERA_ARRIBA"
+          },
+          {
+            "kind": "rings",
+            "style": "light",
+            "pts": [
+              [
+                0.14,
+                0.05
+              ]
+            ],
+            "r": 0.05,
+            "y": 0.02,
+            "text": "FAST!",
+            "after": "S3.LLEGADA_RAPIDA"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ra_curso_3_4_m09",
+      "curso": "curso_3_4",
+      "mes": 9,
+      "fenomeno": "acustica",
+      "steam_id": "STEAM-3_4-05",
+      "steam_titulo": {
+        "gl": "A música dos vasos",
+        "es": "La música de los vasos"
+      },
+      "valeria_scene_id": "S4",
+      "titulo": {
+        "gl": "Sopro e movemento",
+        "es": "Soplo y movimiento"
+      },
+      "guia_adulto": {
+        "gl": "Soprade amodo ou con forza cara a unha folla ou barquiño de papel na mesa mentres seguides as frechas de aire.",
+        "es": "Soplad despacio o con fuerza hacia una hoja o barquito de papel en la mesa mientras seguís las flechas de aire."
+      },
+      "par": {
+        "a": "tap",
+        "b": "cap",
+        "fonema": "/t/ → /k/"
+      },
+      "frase_cena_en": "Blow gently and spin!",
+      "frase_cena_sig": {
+        "gl": "Sopra suave e faino xirar!",
+        "es": "¡Sopla suave y hazlo girar!"
+      },
+      "palabras_en": [
+        "tap",
+        "cap"
+      ],
+      "frases_en": [
+        "Blow gently and spin!",
+        "Open your mouth!",
+        "Five glass jars hold different water levels."
+      ],
+      "frase_modelo_mes": "Jar.",
+      "face_id": "L01.ar1",
+      "fallback": {
+        "instrucion": {
+          "gl": "Este aparello non ten cámara nin soporte ARCore. Podedes xogar igual coas láminas sobre a mesa e a voz de Lúa.",
+          "es": "Este dispositivo no tiene cámara ni soporte ARCore. Podéis jugar igual con las láminas sobre la mesa y la voz de Lúa."
+        },
+        "laminas_suporte": [
+          "pal_tap",
+          "pal_cap"
+        ]
+      },
+      "scene_spec": {
+        "title": {
+          "gl": "Lúa RA · Sopro e movemento",
+          "es": "Lúa RA · Soplo y movimiento"
+        },
+        "placeHint": {
+          "gl": "Toca a mesa debuxada para colocar a escena.",
+          "es": "Toca la mesa dibujada para colocar la escena."
+        },
+        "searchHint": {
+          "gl": "Move o móbil amodo mirando cara á mesa.",
+          "es": "Mueve el móvil despacio mirando hacia la mesa."
+        },
+        "closeLabel": {
+          "gl": "Pechar",
+          "es": "Cerrar"
+        },
+        "replaceLabel": {
+          "gl": "Recolocar",
+          "es": "Recolocar"
+        },
+        "luaPrefix": "Lúa: ",
+        "events": [
+          {
+            "id": "S4.PRAXIA_REDONDEO",
+            "label_gl": "Sopro",
+            "label_es": "Soplo",
+            "prompt_gl": "Sopro longo e suave sobre a mesa.",
+            "prompt_es": "Soplo largo y suave sobre la mesa.",
+            "englishPhrase": "Blow gently!"
+          },
+          {
+            "id": "S4.MOLINETE_GIRA",
+            "label_gl": "Xira",
+            "label_es": "Gira",
+            "prompt_gl": "Vemos moverse ou xirar o obxecto.",
+            "prompt_es": "Vemos moverse o girar el objeto.",
+            "englishPhrase": "Spin the wheel!"
+          }
+        ],
+        "shapes": [
+          {
+            "kind": "flow",
+            "style": "light",
+            "pts": [
+              [
+                -0.15,
+                0.0
+              ],
+              [
+                0.08,
+                0.0
+              ]
+            ],
+            "y": 0.04,
+            "text": "AIR"
+          },
+          {
+            "kind": "rings",
+            "style": "light",
+            "pts": [
+              [
+                0.1,
+                0.0
+              ]
+            ],
+            "r": 0.06,
+            "y": 0.04,
+            "text": "SPIN!",
+            "after": "S4.MOLINETE_GIRA"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ra_curso_3_4_m10",
+      "curso": "curso_3_4",
+      "mes": 10,
+      "fenomeno": "optica",
+      "steam_id": "STEAM-3_4-06",
+      "steam_titulo": {
+        "gl": "A cara na culler",
+        "es": "La cara en la cuchara"
+      },
+      "valeria_scene_id": "S6",
+      "titulo": {
+        "gl": "Luz, sol e sombra",
+        "es": "Luz, sol y sombra"
+      },
+      "guia_adulto": {
+        "gl": "Coa mesa iluminada ou cunha lanterna, observade onde cae a sombra e como xira ao mover a luz.",
+        "es": "Con la mesa iluminada o con una linterna, observad dónde cae la sombra y cómo gira al mover la luz."
+      },
+      "par": {
+        "a": "cheek",
+        "b": "peek",
+        "fonema": "/tʃ/ → /p/"
+      },
+      "frase_cena_en": "Turn the sun and look!",
+      "frase_cena_sig": {
+        "gl": "Xira o sol e mira!",
+        "es": "¡Gira el sol y mira!"
+      },
+      "palabras_en": [
+        "cheek",
+        "peek"
+      ],
+      "frases_en": [
+        "Turn the sun and look!",
+        "Smile!",
+        "Look at yourself in the metal spoon."
+      ],
+      "frase_modelo_mes": "Spoon.",
+      "face_id": "L07.ar6",
+      "fallback": {
+        "instrucion": {
+          "gl": "Este aparello non ten cámara nin soporte ARCore. Podedes xogar igual coas láminas sobre a mesa e a voz de Lúa.",
+          "es": "Este dispositivo no tiene cámara ni soporte ARCore. Podéis jugar igual con las láminas sobre la mesa y la voz de Lúa."
+        },
+        "laminas_suporte": [
+          "pal_cheek",
+          "pal_peek"
+        ]
+      },
+      "scene_spec": {
+        "title": {
+          "gl": "Lúa RA · Luz, sol e sombra",
+          "es": "Lúa RA · Luz, sol y sombra"
+        },
+        "placeHint": {
+          "gl": "Toca a mesa debuxada para colocar a escena.",
+          "es": "Toca la mesa dibujada para colocar la escena."
+        },
+        "searchHint": {
+          "gl": "Move o móbil amodo mirando cara á mesa.",
+          "es": "Mueve el móvil despacio mirando hacia la mesa."
+        },
+        "closeLabel": {
+          "gl": "Pechar",
+          "es": "Cerrar"
+        },
+        "replaceLabel": {
+          "gl": "Recolocar",
+          "es": "Recolocar"
+        },
+        "luaPrefix": "Lúa: ",
+        "events": [
+          {
+            "id": "S6.RIEGO",
+            "label_gl": "Luz",
+            "label_es": "Luz",
+            "prompt_gl": "Aluma o obxecto desde un lado.",
+            "prompt_es": "Ilumina el objeto desde un lado.",
+            "englishPhrase": "Light here!"
+          },
+          {
+            "id": "S6.SOMBRA_ALINEADA",
+            "label_gl": "Sombra",
+            "label_es": "Sombra",
+            "prompt_gl": "Sinala co dedo onde se alonga a sombra.",
+            "prompt_es": "Señala con el dedo dónde se alarga la sombra.",
+            "englishPhrase": "Turn the sun!"
+          }
+        ],
+        "shapes": [
+          {
+            "kind": "circle",
+            "style": "warn",
+            "pts": [
+              [
+                -0.12,
+                -0.06
+              ]
+            ],
+            "r": 0.04,
+            "y": 0.06,
+            "text": "SUN"
+          },
+          {
+            "kind": "flow",
+            "style": "light",
+            "pts": [
+              [
+                -0.12,
+                -0.06
+              ],
+              [
+                0.06,
+                0.04
+              ]
+            ],
+            "y": 0.04,
+            "text": ""
+          },
+          {
+            "kind": "tile",
+            "style": "light",
+            "pts": [
+              [
+                0.04,
+                0.02
+              ]
+            ],
+            "w": 0.1,
+            "d": 0.05,
+            "y": 0.01,
+            "text": "SHADOW",
+            "after": "S6.SOMBRA_ALINEADA"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ra_curso_4_5_m01",
+      "curso": "curso_4_5",
+      "mes": 1,
+      "fenomeno": "materia",
+      "steam_id": "STEAM-4_5-09",
+      "steam_titulo": {
+        "gl": "Que venda absorbe?",
+        "es": "¿Qué venda absorbe?"
+      },
+      "valeria_scene_id": "S0",
+      "titulo": {
+        "gl": "Mesa de formas e encaixe",
+        "es": "Mesa de formas y encaje"
+      },
+      "guia_adulto": {
+        "gl": "Coloca dous ou tres obxectos seguros na mesa. Lúa amosa sobre a mesa onde vai cada peza: sinala ou encaixa sen présa.",
+        "es": "Coloca dos o tres objetos seguros en la mesa. Lúa muestra sobre la mesa dónde va cada pieza: señala o encaja sin prisa."
+      },
+      "par": {
+        "a": "wet",
+        "b": "vet",
+        "fonema": "/w/ → /v/"
+      },
+      "frase_cena_en": "Fit it in and match the shape!",
+      "frase_cena_sig": {
+        "gl": "Encaixa e emparella a forma!",
+        "es": "¡Encaja y empareja la forma!"
+      },
+      "palabras_en": [
+        "wet",
+        "vet"
+      ],
+      "frases_en": [
+        "Fit it in and match the shape!",
+        "Big eyes!",
+        "Wrap the best bandage on the paw."
+      ],
+      "frase_modelo_mes": "Bandage.",
+      "face_id": "L01.ar3",
+      "fallback": {
+        "instrucion": {
+          "gl": "Este aparello non ten cámara nin soporte ARCore. Podedes xogar igual coas láminas sobre a mesa e a voz de Lúa.",
+          "es": "Este dispositivo no tiene cámara ni soporte ARCore. Podéis jugar igual con las láminas sobre la mesa y la voz de Lúa."
+        },
+        "laminas_suporte": [
+          "pal_wet",
+          "pal_vet"
+        ]
+      },
+      "scene_spec": {
+        "title": {
+          "gl": "Lúa RA · Mesa de formas e encaixe",
+          "es": "Lúa RA · Mesa de formas y encaje"
+        },
+        "placeHint": {
+          "gl": "Toca a mesa debuxada para colocar a escena.",
+          "es": "Toca la mesa dibujada para colocar la escena."
+        },
+        "searchHint": {
+          "gl": "Move o móbil amodo mirando cara á mesa.",
+          "es": "Mueve el móvil despacio mirando hacia la mesa."
+        },
+        "closeLabel": {
+          "gl": "Pechar",
+          "es": "Cerrar"
+        },
+        "replaceLabel": {
+          "gl": "Recolocar",
+          "es": "Recolocar"
+        },
+        "luaPrefix": "Lúa: ",
+        "events": [
+          {
+            "id": "S0.CABEZA_ENCAJADA",
+            "label_gl": "Cabeza",
+            "label_es": "Cabeza",
+            "prompt_gl": "Toca ou encaixa a peza principal na mesa.",
+            "prompt_es": "Toca o encaja la pieza principal en la mesa.",
+            "englishPhrase": "Fit it in!"
+          },
+          {
+            "id": "S0.PLACA_LEIDA",
+            "label_gl": "Forma",
+            "label_es": "Forma",
+            "prompt_gl": "Sinala a silueta igual no taboleiro.",
+            "prompt_es": "Señala la silueta igual en el tablero.",
+            "englishPhrase": "Match the shape!"
+          }
+        ],
+        "shapes": [
+          {
+            "kind": "tile",
+            "style": "piece",
+            "pts": [
+              [
+                -0.08,
+                -0.06
+              ]
+            ],
+            "w": 0.16,
+            "d": 0.12,
+            "y": 0.0,
+            "text": ""
+          },
+          {
+            "kind": "circle",
+            "style": "light",
+            "pts": [
+              [
+                0.0,
+                0.0
+              ]
+            ],
+            "r": 0.055,
+            "y": 0.02,
+            "text": "FIT!",
+            "after": "S0.CABEZA_ENCAJADA"
+          },
+          {
+            "kind": "rings",
+            "style": "light",
+            "pts": [
+              [
+                0.0,
+                0.0
+              ]
+            ],
+            "r": 0.07,
+            "y": 0.02,
+            "text": "SHAPE!",
+            "after": "S0.PLACA_LEIDA"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ra_curso_4_5_m02",
+      "curso": "curso_4_5",
+      "mes": 2,
+      "fenomeno": "acustica",
+      "steam_id": "STEAM-4_5-10",
+      "steam_titulo": {
+        "gl": "Escoitar o corazón",
+        "es": "Escuchar el corazón"
+      },
+      "valeria_scene_id": "S2",
+      "titulo": {
+        "gl": "Ondas de son na mesa",
+        "es": "Ondas de sonido en la mesa"
+      },
+      "guia_adulto": {
+        "gl": "Golpea amodo ou forte na mesa mentres as ondas medran sobre o centro. Sinalade ondas grandes e pequenas.",
+        "es": "Golpea suave o fuerte en la mesa mientras las ondas crecen sobre el centro. Señalad ondas grandes y pequeñas."
+      },
+      "par": {
+        "a": "beat",
+        "b": "feet",
+        "fonema": "/b/ → /f/"
+      },
+      "frase_cena_en": "Big sound, small sound!",
+      "frase_cena_sig": {
+        "gl": "Son grande, son pequeno!",
+        "es": "¡Sonido grande, sonido pequeño!"
+      },
+      "palabras_en": [
+        "beat",
+        "feet"
+      ],
+      "frases_en": [
+        "Big sound, small sound!",
+        "Pucker your lips!",
+        "Listen to your heart after you run."
+      ],
+      "frase_modelo_mes": "Heart.",
+      "face_id": "L01.ar4",
+      "fallback": {
+        "instrucion": {
+          "gl": "Este aparello non ten cámara nin soporte ARCore. Podedes xogar igual coas láminas sobre a mesa e a voz de Lúa.",
+          "es": "Este dispositivo no tiene cámara ni soporte ARCore. Podéis jugar igual con las láminas sobre la mesa y la voz de Lúa."
+        },
+        "laminas_suporte": [
+          "pal_beat",
+          "pal_feet"
+        ]
+      },
+      "scene_spec": {
+        "title": {
+          "gl": "Lúa RA · Ondas de son na mesa",
+          "es": "Lúa RA · Ondas de sonido en la mesa"
+        },
+        "placeHint": {
+          "gl": "Toca a mesa debuxada para colocar a escena.",
+          "es": "Toca la mesa dibujada para colocar la escena."
+        },
+        "searchHint": {
+          "gl": "Move o móbil amodo mirando cara á mesa.",
+          "es": "Mueve el móvil despacio mirando hacia la mesa."
+        },
+        "closeLabel": {
+          "gl": "Pechar",
+          "es": "Cerrar"
+        },
+        "replaceLabel": {
+          "gl": "Recolocar",
+          "es": "Recolocar"
+        },
+        "luaPrefix": "Lúa: ",
+        "events": [
+          {
+            "id": "S2.GOLPE_FUERTE",
+            "label_gl": "Forte",
+            "label_es": "Fuerte",
+            "prompt_gl": "Un golpe fondo coa palma aberta.",
+            "prompt_es": "Un golpe hondo con la palma abierta.",
+            "englishPhrase": "Big and low!"
+          },
+          {
+            "id": "S2.GOLPE_DEBIL",
+            "label_gl": "Suave",
+            "label_es": "Suave",
+            "prompt_gl": "Toque suave cos dedos na mesa.",
+            "prompt_es": "Toque suave con los dedos en la mesa.",
+            "englishPhrase": "Small and high!"
+          }
+        ],
+        "shapes": [
+          {
+            "kind": "circle",
+            "style": "piece",
+            "pts": [
+              [
+                0.0,
+                0.0
+              ]
+            ],
+            "r": 0.06,
+            "y": 0.01,
+            "text": ""
+          },
+          {
+            "kind": "rings",
+            "style": "warn",
+            "pts": [
+              [
+                0.0,
+                0.0
+              ]
+            ],
+            "r": 0.08,
+            "y": 0.03,
+            "text": "BIG!",
+            "last": [
+              "S2.GOLPE_FUERTE"
+            ]
+          },
+          {
+            "kind": "rings",
+            "style": "light",
+            "pts": [
+              [
+                0.0,
+                0.0
+              ]
+            ],
+            "r": 0.04,
+            "y": 0.03,
+            "text": "SMALL!",
+            "last": [
+              "S2.GOLPE_DEBIL"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "ra_curso_4_5_m03",
+      "curso": "curso_4_5",
+      "mes": 3,
+      "fenomeno": "logica",
+      "steam_id": "STEAM-4_5-11",
+      "steam_titulo": {
+        "gl": "Dúas patas, catro patas",
+        "es": "Dos patas, cuatro patas"
+      },
+      "valeria_scene_id": "L02",
+      "titulo": {
+        "gl": "Lúa xira á cousa pedida",
+        "es": "Lúa gira a lo pedido"
+      },
+      "guia_adulto": {
+        "gl": "Coloca dous obxectos a cada lado e axuda ao neno ou á nena a sinalar cal mira Lúa.",
+        "es": "Coloca dos objetos a cada lado y ayuda al niño o a la niña a señalar cuál mira Lúa."
+      },
+      "par": {
+        "a": "fish",
+        "b": "dish",
+        "fonema": "/f/ → /d/"
+      },
+      "frase_cena_en": "Point where Lúa looks!",
+      "frase_cena_sig": {
+        "gl": "Sinala onde mira Lúa!",
+        "es": "¡Señala dónde mira Lúa!"
+      },
+      "palabras_en": [
+        "fish",
+        "dish"
+      ],
+      "frases_en": [
+        "Point where Lúa looks!",
+        "Puff your cheeks!",
+        "Check how many legs the toy dog has."
+      ],
+      "frase_modelo_mes": "Dog.",
+      "face_id": "L07.ar5",
+      "fallback": {
+        "instrucion": {
+          "gl": "Este aparello non ten cámara nin soporte ARCore. Podedes xogar igual coas láminas sobre a mesa e a voz de Lúa.",
+          "es": "Este dispositivo no tiene cámara ni soporte ARCore. Podéis jugar igual con las láminas sobre la mesa y la voz de Lúa."
+        },
+        "laminas_suporte": [
+          "pal_fish",
+          "pal_dish"
+        ]
+      },
+      "scene_spec": {
+        "title": {
+          "gl": "Lúa RA · Lúa xira á cousa pedida",
+          "es": "Lúa RA · Lúa gira a lo pedido"
+        },
+        "placeHint": {
+          "gl": "Toca a mesa debuxada para colocar a escena.",
+          "es": "Toca la mesa dibujada para colocar la escena."
+        },
+        "searchHint": {
+          "gl": "Move o móbil amodo mirando cara á mesa.",
+          "es": "Mueve el móvil despacio mirando hacia la mesa."
+        },
+        "closeLabel": {
+          "gl": "Pechar",
+          "es": "Cerrar"
+        },
+        "replaceLabel": {
+          "gl": "Recolocar",
+          "es": "Recolocar"
+        },
+        "luaPrefix": "Lúa: ",
+        "events": [
+          {
+            "id": "L02.PASO_1",
+            "label_gl": "Paso 1",
+            "label_es": "Paso 1",
+            "prompt_gl": "Coloca dous obxectos a cada lado e axuda ao neno ou á nena a sinalar cal mira Lúa.",
+            "prompt_es": "Coloca dos objetos a cada lado y ayuda al niño o a la niña a señalar cuál mira Lúa.",
+            "englishPhrase": "Point where Lúa looks!"
+          },
+          {
+            "id": "L02.FIN",
+            "label_gl": "Logro",
+            "label_es": "Logro",
+            "prompt_gl": "Todo no seu sitio sobre a mesa.",
+            "prompt_es": "Todo en su sitio sobre la mesa.",
+            "englishPhrase": "Point where Lúa looks!"
+          }
+        ],
+        "shapes": [
+          {
+            "kind": "tile",
+            "style": "piece",
+            "pts": [
+              [
+                -0.1,
+                -0.06
+              ]
+            ],
+            "w": 0.2,
+            "d": 0.12,
+            "y": 0.0,
+            "text": ""
+          },
+          {
+            "kind": "rings",
+            "style": "light",
+            "pts": [
+              [
+                0.0,
+                0.0
+              ]
+            ],
+            "r": 0.06,
+            "y": 0.02,
+            "text": "OK!",
+            "after": "L02.FIN"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ra_curso_4_5_m04",
+      "curso": "curso_4_5",
+      "mes": 4,
+      "fenomeno": "optica",
+      "steam_id": "STEAM-4_5-12",
+      "steam_titulo": {
+        "gl": "Coa lupa, máis grande",
+        "es": "Con la lupa, más grande"
+      },
+      "valeria_scene_id": "S6",
+      "titulo": {
+        "gl": "Luz, sol e sombra",
+        "es": "Luz, sol y sombra"
+      },
+      "guia_adulto": {
+        "gl": "Coa mesa iluminada ou cunha lanterna, observade onde cae a sombra e como xira ao mover a luz.",
+        "es": "Con la mesa iluminada o con una linterna, observad dónde cae la sombra y cómo gira al mover la luz."
+      },
+      "par": {
+        "a": "see",
+        "b": "bee",
+        "fonema": "/s/ → /b/"
+      },
+      "frase_cena_en": "Turn the sun and look!",
+      "frase_cena_sig": {
+        "gl": "Xira o sol e mira!",
+        "es": "¡Gira el sol y mira!"
+      },
+      "palabras_en": [
+        "see",
+        "bee"
+      ],
+      "frases_en": [
+        "Turn the sun and look!",
+        "Turn your head!",
+        "Look closely through the plastic lens."
+      ],
+      "frase_modelo_mes": "Lens.",
+      "face_id": "L07.ar2",
+      "fallback": {
+        "instrucion": {
+          "gl": "Este aparello non ten cámara nin soporte ARCore. Podedes xogar igual coas láminas sobre a mesa e a voz de Lúa.",
+          "es": "Este dispositivo no tiene cámara ni soporte ARCore. Podéis jugar igual con las láminas sobre la mesa y la voz de Lúa."
+        },
+        "laminas_suporte": [
+          "pal_see",
+          "pal_bee"
+        ]
+      },
+      "scene_spec": {
+        "title": {
+          "gl": "Lúa RA · Luz, sol e sombra",
+          "es": "Lúa RA · Luz, sol y sombra"
+        },
+        "placeHint": {
+          "gl": "Toca a mesa debuxada para colocar a escena.",
+          "es": "Toca la mesa dibujada para colocar la escena."
+        },
+        "searchHint": {
+          "gl": "Move o móbil amodo mirando cara á mesa.",
+          "es": "Mueve el móvil despacio mirando hacia la mesa."
+        },
+        "closeLabel": {
+          "gl": "Pechar",
+          "es": "Cerrar"
+        },
+        "replaceLabel": {
+          "gl": "Recolocar",
+          "es": "Recolocar"
+        },
+        "luaPrefix": "Lúa: ",
+        "events": [
+          {
+            "id": "S6.RIEGO",
+            "label_gl": "Luz",
+            "label_es": "Luz",
+            "prompt_gl": "Aluma o obxecto desde un lado.",
+            "prompt_es": "Ilumina el objeto desde un lado.",
+            "englishPhrase": "Light here!"
+          },
+          {
+            "id": "S6.SOMBRA_ALINEADA",
+            "label_gl": "Sombra",
+            "label_es": "Sombra",
+            "prompt_gl": "Sinala co dedo onde se alonga a sombra.",
+            "prompt_es": "Señala con el dedo dónde se alarga la sombra.",
+            "englishPhrase": "Turn the sun!"
+          }
+        ],
+        "shapes": [
+          {
+            "kind": "circle",
+            "style": "warn",
+            "pts": [
+              [
+                -0.12,
+                -0.06
+              ]
+            ],
+            "r": 0.04,
+            "y": 0.06,
+            "text": "SUN"
+          },
+          {
+            "kind": "flow",
+            "style": "light",
+            "pts": [
+              [
+                -0.12,
+                -0.06
+              ],
+              [
+                0.06,
+                0.04
+              ]
+            ],
+            "y": 0.04,
+            "text": ""
+          },
+          {
+            "kind": "tile",
+            "style": "light",
+            "pts": [
+              [
+                0.04,
+                0.02
+              ]
+            ],
+            "w": 0.1,
+            "d": 0.05,
+            "y": 0.01,
+            "text": "SHADOW",
+            "after": "S6.SOMBRA_ALINEADA"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ra_curso_4_5_m05",
+      "curso": "curso_4_5",
+      "mes": 5,
+      "fenomeno": "cinematica",
+      "steam_id": "STEAM-4_5-01",
+      "steam_titulo": {
+        "gl": "A padiola",
+        "es": "La camilla"
+      },
+      "valeria_scene_id": "S1",
+      "titulo": {
+        "gl": "Camiño da mesa",
+        "es": "Camino en la mesa"
+      },
+      "guia_adulto": {
+        "gl": "Sobre a mesa vese o percorrido. Move o obxecto coas mans pola liña marcada mentres escoitades as ordes en inglés.",
+        "es": "Sobre la mesa se ve el recorrido. Mueve el objeto con las manos por la línea marcada mientras escucháis las órdenes en inglés."
+      },
+      "par": {
+        "a": "cone",
+        "b": "tone",
+        "fonema": "/k/ → /t/"
+      },
+      "frase_cena_en": "Connect the path and turn!",
+      "frase_cena_sig": {
+        "gl": "Conecta o camiño e xira!",
+        "es": "¡Conecta el camino y gira!"
+      },
+      "palabras_en": [
+        "cone",
+        "tone"
+      ],
+      "frases_en": [
+        "Connect the path and turn!",
+        "Open your mouth!",
+        "Hold the stretcher together with both hands."
+      ],
+      "frase_modelo_mes": "Stretcher.",
+      "face_id": "L01.ar1",
+      "fallback": {
+        "instrucion": {
+          "gl": "Este aparello non ten cámara nin soporte ARCore. Podedes xogar igual coas láminas sobre a mesa e a voz de Lúa.",
+          "es": "Este dispositivo no tiene cámara ni soporte ARCore. Podéis jugar igual con las láminas sobre la mesa y la voz de Lúa."
+        },
+        "laminas_suporte": [
+          "pal_cone",
+          "pal_tone"
+        ]
+      },
+      "scene_spec": {
+        "title": {
+          "gl": "Lúa RA · Camiño da mesa",
+          "es": "Lúa RA · Camino en la mesa"
+        },
+        "placeHint": {
+          "gl": "Toca a mesa debuxada para colocar a escena.",
+          "es": "Toca la mesa dibujada para colocar la escena."
+        },
+        "searchHint": {
+          "gl": "Move o móbil amodo mirando cara á mesa.",
+          "es": "Mueve el móvil despacio mirando hacia la mesa."
+        },
+        "closeLabel": {
+          "gl": "Pechar",
+          "es": "Cerrar"
+        },
+        "replaceLabel": {
+          "gl": "Recolocar",
+          "es": "Recolocar"
+        },
+        "luaPrefix": "Lúa: ",
+        "events": [
+          {
+            "id": "S1.LUA_EN_INICIO",
+            "label_gl": "Inicio",
+            "label_es": "Inicio",
+            "prompt_gl": "Pon o boneco ou peza no punto de saída.",
+            "prompt_es": "Pon el muñeco o pieza en el punto de salida.",
+            "englishPhrase": "Connect the path!"
+          },
+          {
+            "id": "S1.LUA_GIRA",
+            "label_gl": "Xiro",
+            "label_es": "Giro",
+            "prompt_gl": "Facede o xiro xunto á esquina marcada.",
+            "prompt_es": "Haced el giro junto a la esquina marcada.",
+            "englishPhrase": "Turn here!"
+          }
+        ],
+        "shapes": [
+          {
+            "kind": "flow",
+            "style": "light",
+            "pts": [
+              [
+                -0.14,
+                0.06
+              ],
+              [
+                0.0,
+                0.06
+              ],
+              [
+                0.0,
+                -0.06
+              ],
+              [
+                0.14,
+                -0.06
+              ]
+            ],
+            "y": 0.01,
+            "text": ""
+          },
+          {
+            "kind": "circle",
+            "style": "light",
+            "pts": [
+              [
+                -0.14,
+                0.06
+              ]
+            ],
+            "r": 0.035,
+            "y": 0.02,
+            "text": "START",
+            "after": "S1.LUA_EN_INICIO"
+          },
+          {
+            "kind": "arrow",
+            "style": "warn",
+            "pts": [
+              [
+                0.0,
+                0.06
+              ],
+              [
+                0.0,
+                -0.06
+              ]
+            ],
+            "y": 0.03,
+            "text": "TURN!",
+            "after": "S1.LUA_GIRA"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ra_curso_4_5_m06",
+      "curso": "curso_4_5",
+      "mes": 6,
+      "fenomeno": "materia",
+      "steam_id": "STEAM-4_5-02",
+      "steam_titulo": {
+        "gl": "Facemos lama",
+        "es": "Hacemos barro"
+      },
+      "valeria_scene_id": "S5",
+      "titulo": {
+        "gl": "Ponte e equilibrio",
+        "es": "Puente y equilibrio"
+      },
+      "guia_adulto": {
+        "gl": "Comparade un obxecto pesado e un lixeiro sobre a ponte debuxada na mesa: cal inclina o lado?",
+        "es": "Comparad un objeto pesado y uno ligero sobre el puente dibujado en la mesa: ¿cuál inclina el lado?"
+      },
+      "par": {
+        "a": "mix",
+        "b": "six",
+        "fonema": "/m/ → /s/"
+      },
+      "frase_cena_en": "Heavy, light, level the bridge!",
+      "frase_cena_sig": {
+        "gl": "Pesado, lixeiro, nivela a ponte!",
+        "es": "¡Pesado, ligero, nivela el puente!"
+      },
+      "palabras_en": [
+        "mix",
+        "six"
+      ],
+      "frases_en": [
+        "Heavy, light, level the bridge!",
+        "Smile!",
+        "Make thick brown mud in the tub."
+      ],
+      "frase_modelo_mes": "Mud.",
+      "face_id": "L07.ar6",
+      "fallback": {
+        "instrucion": {
+          "gl": "Este aparello non ten cámara nin soporte ARCore. Podedes xogar igual coas láminas sobre a mesa e a voz de Lúa.",
+          "es": "Este dispositivo no tiene cámara ni soporte ARCore. Podéis jugar igual con las láminas sobre la mesa y la voz de Lúa."
+        },
+        "laminas_suporte": [
+          "pal_mix",
+          "pal_six"
+        ]
+      },
+      "scene_spec": {
+        "title": {
+          "gl": "Lúa RA · Ponte e equilibrio",
+          "es": "Lúa RA · Puente y equilibrio"
+        },
+        "placeHint": {
+          "gl": "Toca a mesa debuxada para colocar a escena.",
+          "es": "Toca la mesa dibujada para colocar la escena."
+        },
+        "searchHint": {
+          "gl": "Move o móbil amodo mirando cara á mesa.",
+          "es": "Mueve el móvil despacio mirando hacia la mesa."
+        },
+        "closeLabel": {
+          "gl": "Pechar",
+          "es": "Cerrar"
+        },
+        "replaceLabel": {
+          "gl": "Recolocar",
+          "es": "Recolocar"
+        },
+        "luaPrefix": "Lúa: ",
+        "events": [
+          {
+            "id": "S5.INCLINA_IZQ",
+            "label_gl": "Pesado",
+            "label_es": "Pesado",
+            "prompt_gl": "Pon o obxecto pesado nun extremo.",
+            "prompt_es": "Pon el objeto pesado en un extremo.",
+            "englishPhrase": "Heavy side down!"
+          },
+          {
+            "id": "S5.PUENTE_ESTABLE",
+            "label_gl": "Equilibrio",
+            "label_es": "Equilibrio",
+            "prompt_gl": "Equilibrade os dous lados da ponte.",
+            "prompt_es": "Equilibrad los dos lados del puente.",
+            "englishPhrase": "Level the bridge!"
+          }
+        ],
+        "shapes": [
+          {
+            "kind": "tile",
+            "style": "piece",
+            "pts": [
+              [
+                -0.14,
+                -0.04
+              ]
+            ],
+            "w": 0.28,
+            "d": 0.08,
+            "y": 0.02,
+            "text": ""
+          },
+          {
+            "kind": "arrow",
+            "style": "warn",
+            "pts": [
+              [
+                -0.1,
+                -0.02
+              ],
+              [
+                -0.1,
+                0.06
+              ]
+            ],
+            "y": 0.05,
+            "text": "HEAVY",
+            "last": [
+              "S5.INCLINA_IZQ"
+            ]
+          },
+          {
+            "kind": "rings",
+            "style": "light",
+            "pts": [
+              [
+                0.0,
+                0.0
+              ]
+            ],
+            "r": 0.06,
+            "y": 0.04,
+            "text": "EVEN!",
+            "after": "S5.PUENTE_ESTABLE"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ra_curso_4_5_m07",
+      "curso": "curso_4_5",
+      "mes": 7,
+      "fenomeno": "cinematica",
+      "steam_id": "STEAM-4_5-03",
+      "steam_titulo": {
+        "gl": "O muíño de vento",
+        "es": "El molinillo de viento"
+      },
+      "valeria_scene_id": "S3",
+      "titulo": {
+        "gl": "Rampla e velocidade",
+        "es": "Rampa y velocidad"
+      },
+      "guia_adulto": {
+        "gl": "Poñede un cartón inclinado ou un libro na mesa e soltade unha peza grande para ver como roda ata a meta.",
+        "es": "Poned un cartón inclinado o un libro en la mesa y soltad una pieza grande para ver cómo rueda hasta la meta."
+      },
+      "par": {
+        "a": "fan",
+        "b": "van",
+        "fonema": "/f/ → /v/"
+      },
+      "frase_cena_en": "Roll down, fast and slow!",
+      "frase_cena_sig": {
+        "gl": "Roda cara abaixo, rápido e amodo!",
+        "es": "¡Rueda hacia abajo, rápido y despacio!"
+      },
+      "palabras_en": [
+        "fan",
+        "van"
+      ],
+      "frases_en": [
+        "Roll down, fast and slow!",
+        "Big eyes!",
+        "Hold the paper pinwheel near the window."
+      ],
+      "frase_modelo_mes": "Pinwheel.",
+      "face_id": "L01.ar3",
+      "fallback": {
+        "instrucion": {
+          "gl": "Este aparello non ten cámara nin soporte ARCore. Podedes xogar igual coas láminas sobre a mesa e a voz de Lúa.",
+          "es": "Este dispositivo no tiene cámara ni soporte ARCore. Podéis jugar igual con las láminas sobre la mesa y la voz de Lúa."
+        },
+        "laminas_suporte": [
+          "pal_fan",
+          "pal_van"
+        ]
+      },
+      "scene_spec": {
+        "title": {
+          "gl": "Lúa RA · Rampla e velocidade",
+          "es": "Lúa RA · Rampa y velocidad"
+        },
+        "placeHint": {
+          "gl": "Toca a mesa debuxada para colocar a escena.",
+          "es": "Toca la mesa dibujada para colocar la escena."
+        },
+        "searchHint": {
+          "gl": "Move o móbil amodo mirando cara á mesa.",
+          "es": "Mueve el móvil despacio mirando hacia la mesa."
+        },
+        "closeLabel": {
+          "gl": "Pechar",
+          "es": "Cerrar"
+        },
+        "replaceLabel": {
+          "gl": "Recolocar",
+          "es": "Recolocar"
+        },
+        "luaPrefix": "Lúa: ",
+        "events": [
+          {
+            "id": "S3.ESFERA_ARRIBA",
+            "label_gl": "Arriba",
+            "label_es": "Arriba",
+            "prompt_gl": "Suxeitade o obxecto no alto da costa.",
+            "prompt_es": "Sujetad el objeto en lo alto de la cuesta.",
+            "englishPhrase": "High tower!"
+          },
+          {
+            "id": "S3.LLEGADA_RAPIDA",
+            "label_gl": "Rápido",
+            "label_es": "Rápido",
+            "prompt_gl": "Soltádeo e mirade como chega abaixo.",
+            "prompt_es": "Soltadlo y mirad cómo llega abajo.",
+            "englishPhrase": "Roll down fast!"
+          }
+        ],
+        "shapes": [
+          {
+            "kind": "flow",
+            "style": "light",
+            "pts": [
+              [
+                -0.14,
+                -0.05
+              ],
+              [
+                0.14,
+                0.05
+              ]
+            ],
+            "y": 0.04,
+            "text": "ROLL!"
+          },
+          {
+            "kind": "circle",
+            "style": "warn",
+            "pts": [
+              [
+                -0.14,
+                -0.05
+              ]
+            ],
+            "r": 0.03,
+            "y": 0.06,
+            "text": "UP",
+            "after": "S3.ESFERA_ARRIBA"
+          },
+          {
+            "kind": "rings",
+            "style": "light",
+            "pts": [
+              [
+                0.14,
+                0.05
+              ]
+            ],
+            "r": 0.05,
+            "y": 0.02,
+            "text": "FAST!",
+            "after": "S3.LLEGADA_RAPIDA"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ra_curso_4_5_m08",
+      "curso": "curso_4_5",
+      "mes": 8,
+      "fenomeno": "acustica",
+      "steam_id": "STEAM-4_5-04",
+      "steam_titulo": {
+        "gl": "A orquestra da tormenta",
+        "es": "La orquesta de la tormenta"
+      },
+      "valeria_scene_id": "S4",
+      "titulo": {
+        "gl": "Sopro e movemento",
+        "es": "Soplo y movimiento"
+      },
+      "guia_adulto": {
+        "gl": "Soprade amodo ou con forza cara a unha folla ou barquiño de papel na mesa mentres seguides as frechas de aire.",
+        "es": "Soplad despacio o con fuerza hacia una hoja o barquito de papel en la mesa mientras seguís las flechas de aire."
+      },
+      "par": {
+        "a": "zoom",
+        "b": "boom",
+        "fonema": "/z/ → /b/"
+      },
+      "frase_cena_en": "Blow gently and spin!",
+      "frase_cena_sig": {
+        "gl": "Sopra suave e faino xirar!",
+        "es": "¡Sopla suave y hazlo girar!"
+      },
+      "palabras_en": [
+        "zoom",
+        "boom"
+      ],
+      "frases_en": [
+        "Blow gently and spin!",
+        "Pucker your lips!",
+        "Tilt the cardboard rainstick slowly."
+      ],
+      "frase_modelo_mes": "Rainstick.",
+      "face_id": "L01.ar4",
+      "fallback": {
+        "instrucion": {
+          "gl": "Este aparello non ten cámara nin soporte ARCore. Podedes xogar igual coas láminas sobre a mesa e a voz de Lúa.",
+          "es": "Este dispositivo no tiene cámara ni soporte ARCore. Podéis jugar igual con las láminas sobre la mesa y la voz de Lúa."
+        },
+        "laminas_suporte": [
+          "pal_zoom",
+          "pal_boom"
+        ]
+      },
+      "scene_spec": {
+        "title": {
+          "gl": "Lúa RA · Sopro e movemento",
+          "es": "Lúa RA · Soplo y movimiento"
+        },
+        "placeHint": {
+          "gl": "Toca a mesa debuxada para colocar a escena.",
+          "es": "Toca la mesa dibujada para colocar la escena."
+        },
+        "searchHint": {
+          "gl": "Move o móbil amodo mirando cara á mesa.",
+          "es": "Mueve el móvil despacio mirando hacia la mesa."
+        },
+        "closeLabel": {
+          "gl": "Pechar",
+          "es": "Cerrar"
+        },
+        "replaceLabel": {
+          "gl": "Recolocar",
+          "es": "Recolocar"
+        },
+        "luaPrefix": "Lúa: ",
+        "events": [
+          {
+            "id": "S4.PRAXIA_REDONDEO",
+            "label_gl": "Sopro",
+            "label_es": "Soplo",
+            "prompt_gl": "Sopro longo e suave sobre a mesa.",
+            "prompt_es": "Soplo largo y suave sobre la mesa.",
+            "englishPhrase": "Blow gently!"
+          },
+          {
+            "id": "S4.MOLINETE_GIRA",
+            "label_gl": "Xira",
+            "label_es": "Gira",
+            "prompt_gl": "Vemos moverse ou xirar o obxecto.",
+            "prompt_es": "Vemos moverse o girar el objeto.",
+            "englishPhrase": "Spin the wheel!"
+          }
+        ],
+        "shapes": [
+          {
+            "kind": "flow",
+            "style": "light",
+            "pts": [
+              [
+                -0.15,
+                0.0
+              ],
+              [
+                0.08,
+                0.0
+              ]
+            ],
+            "y": 0.04,
+            "text": "AIR"
+          },
+          {
+            "kind": "rings",
+            "style": "light",
+            "pts": [
+              [
+                0.1,
+                0.0
+              ]
+            ],
+            "r": 0.06,
+            "y": 0.04,
+            "text": "SPIN!",
+            "after": "S4.MOLINETE_GIRA"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ra_curso_4_5_m09",
+      "curso": "curso_4_5",
+      "mes": 9,
+      "fenomeno": "optica",
+      "steam_id": "STEAM-4_5-05",
+      "steam_titulo": {
+        "gl": "A sombra e o sol",
+        "es": "La sombra y el sol"
+      },
+      "valeria_scene_id": "S6",
+      "titulo": {
+        "gl": "Luz, sol e sombra",
+        "es": "Luz, sol y sombra"
+      },
+      "guia_adulto": {
+        "gl": "Coa mesa iluminada ou cunha lanterna, observade onde cae a sombra e como xira ao mover a luz.",
+        "es": "Con la mesa iluminada o con una linterna, observad dónde cae la sombra y cómo gira al mover la luz."
+      },
+      "par": {
+        "a": "sun",
+        "b": "fun",
+        "fonema": "/s/ → /f/"
+      },
+      "frase_cena_en": "Turn the sun and look!",
+      "frase_cena_sig": {
+        "gl": "Xira o sol e mira!",
+        "es": "¡Gira el sol y mira!"
+      },
+      "palabras_en": [
+        "sun",
+        "fun"
+      ],
+      "frases_en": [
+        "Turn the sun and look!",
+        "Puff your cheeks!",
+        "Pick colored chalk to mark the yard."
+      ],
+      "frase_modelo_mes": "Chalk.",
+      "face_id": "L07.ar5",
+      "fallback": {
+        "instrucion": {
+          "gl": "Este aparello non ten cámara nin soporte ARCore. Podedes xogar igual coas láminas sobre a mesa e a voz de Lúa.",
+          "es": "Este dispositivo no tiene cámara ni soporte ARCore. Podéis jugar igual con las láminas sobre la mesa y la voz de Lúa."
+        },
+        "laminas_suporte": [
+          "pal_sun",
+          "pal_fun"
+        ]
+      },
+      "scene_spec": {
+        "title": {
+          "gl": "Lúa RA · Luz, sol e sombra",
+          "es": "Lúa RA · Luz, sol y sombra"
+        },
+        "placeHint": {
+          "gl": "Toca a mesa debuxada para colocar a escena.",
+          "es": "Toca la mesa dibujada para colocar la escena."
+        },
+        "searchHint": {
+          "gl": "Move o móbil amodo mirando cara á mesa.",
+          "es": "Mueve el móvil despacio mirando hacia la mesa."
+        },
+        "closeLabel": {
+          "gl": "Pechar",
+          "es": "Cerrar"
+        },
+        "replaceLabel": {
+          "gl": "Recolocar",
+          "es": "Recolocar"
+        },
+        "luaPrefix": "Lúa: ",
+        "events": [
+          {
+            "id": "S6.RIEGO",
+            "label_gl": "Luz",
+            "label_es": "Luz",
+            "prompt_gl": "Aluma o obxecto desde un lado.",
+            "prompt_es": "Ilumina el objeto desde un lado.",
+            "englishPhrase": "Light here!"
+          },
+          {
+            "id": "S6.SOMBRA_ALINEADA",
+            "label_gl": "Sombra",
+            "label_es": "Sombra",
+            "prompt_gl": "Sinala co dedo onde se alonga a sombra.",
+            "prompt_es": "Señala con el dedo dónde se alarga la sombra.",
+            "englishPhrase": "Turn the sun!"
+          }
+        ],
+        "shapes": [
+          {
+            "kind": "circle",
+            "style": "warn",
+            "pts": [
+              [
+                -0.12,
+                -0.06
+              ]
+            ],
+            "r": 0.04,
+            "y": 0.06,
+            "text": "SUN"
+          },
+          {
+            "kind": "flow",
+            "style": "light",
+            "pts": [
+              [
+                -0.12,
+                -0.06
+              ],
+              [
+                0.06,
+                0.04
+              ]
+            ],
+            "y": 0.04,
+            "text": ""
+          },
+          {
+            "kind": "tile",
+            "style": "light",
+            "pts": [
+              [
+                0.04,
+                0.02
+              ]
+            ],
+            "w": 0.1,
+            "d": 0.05,
+            "y": 0.01,
+            "text": "SHADOW",
+            "after": "S6.SOMBRA_ALINEADA"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ra_curso_4_5_m10",
+      "curso": "curso_4_5",
+      "mes": 10,
+      "fenomeno": "logica",
+      "steam_id": "STEAM-4_5-06",
+      "steam_titulo": {
+        "gl": "Que roupa pide o tempo?",
+        "es": "¿Qué ropa pide el tiempo?"
+      },
+      "valeria_scene_id": "L03",
+      "titulo": {
+        "gl": "A merenda de Lúa",
+        "es": "La merienda de Lúa"
+      },
+      "guia_adulto": {
+        "gl": "Dádelle a cada peza o seu turno en orde mentres Lúa agarda na mesa.",
+        "es": "Dadle a cada pieza su turno en orden mientras Lúa espera en la mesa."
+      },
+      "par": {
+        "a": "hat",
+        "b": "cat",
+        "fonema": "/h/ → /k/"
+      },
+      "frase_cena_en": "Wait, then share the snack!",
+      "frase_cena_sig": {
+        "gl": "Agarda e despois comparte a merenda!",
+        "es": "¡Espera y después comparte la merienda!"
+      },
+      "palabras_en": [
+        "hat",
+        "cat"
+      ],
+      "frases_en": [
+        "Wait, then share the snack!",
+        "Turn your head!",
+        "Pick the raincoat when clouds bring rain."
+      ],
+      "frase_modelo_mes": "Raincoat.",
+      "face_id": "L07.ar2",
+      "fallback": {
+        "instrucion": {
+          "gl": "Este aparello non ten cámara nin soporte ARCore. Podedes xogar igual coas láminas sobre a mesa e a voz de Lúa.",
+          "es": "Este dispositivo no tiene cámara ni soporte ARCore. Podéis jugar igual con las láminas sobre la mesa y la voz de Lúa."
+        },
+        "laminas_suporte": [
+          "pal_hat",
+          "pal_cat"
+        ]
+      },
+      "scene_spec": {
+        "title": {
+          "gl": "Lúa RA · A merenda de Lúa",
+          "es": "Lúa RA · La merienda de Lúa"
+        },
+        "placeHint": {
+          "gl": "Toca a mesa debuxada para colocar a escena.",
+          "es": "Toca la mesa dibujada para colocar la escena."
+        },
+        "searchHint": {
+          "gl": "Move o móbil amodo mirando cara á mesa.",
+          "es": "Mueve el móvil despacio mirando hacia la mesa."
+        },
+        "closeLabel": {
+          "gl": "Pechar",
+          "es": "Cerrar"
+        },
+        "replaceLabel": {
+          "gl": "Recolocar",
+          "es": "Recolocar"
+        },
+        "luaPrefix": "Lúa: ",
+        "events": [
+          {
+            "id": "L03.PASO_1",
+            "label_gl": "Paso 1",
+            "label_es": "Paso 1",
+            "prompt_gl": "Dádelle a cada peza o seu turno en orde mentres Lúa agarda na mesa.",
+            "prompt_es": "Dadle a cada pieza su turno en orden mientras Lúa espera en la mesa.",
+            "englishPhrase": "Wait, then share the snack!"
+          },
+          {
+            "id": "L03.FIN",
+            "label_gl": "Logro",
+            "label_es": "Logro",
+            "prompt_gl": "Todo no seu sitio sobre a mesa.",
+            "prompt_es": "Todo en su sitio sobre la mesa.",
+            "englishPhrase": "Wait, then share the snack!"
+          }
+        ],
+        "shapes": [
+          {
+            "kind": "tile",
+            "style": "piece",
+            "pts": [
+              [
+                -0.1,
+                -0.06
+              ]
+            ],
+            "w": 0.2,
+            "d": 0.12,
+            "y": 0.0,
+            "text": ""
+          },
+          {
+            "kind": "rings",
+            "style": "light",
+            "pts": [
+              [
+                0.0,
+                0.0
+              ]
+            ],
+            "r": 0.06,
+            "y": 0.02,
+            "text": "OK!",
+            "after": "L03.FIN"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ra_curso_5_6_m01",
+      "curso": "curso_5_6",
+      "mes": 1,
+      "fenomeno": "materia",
+      "steam_id": "STEAM-5_6-09",
+      "steam_titulo": {
+        "gl": "Cores que nacen",
+        "es": "Colores que nacen"
+      },
+      "valeria_scene_id": "S0",
+      "titulo": {
+        "gl": "Mesa de formas e encaixe",
+        "es": "Mesa de formas y encaje"
+      },
+      "guia_adulto": {
+        "gl": "Coloca dous ou tres obxectos seguros na mesa. Lúa amosa sobre a mesa onde vai cada peza: sinala ou encaixa sen présa.",
+        "es": "Coloca dos o tres objetos seguros en la mesa. Lúa muestra sobre la mesa dónde va cada pieza: señala o encaja sin prisa."
+      },
+      "par": {
+        "a": "spot",
+        "b": "pot",
+        "fonema": "/sp-/ → /p-/"
+      },
+      "frase_cena_en": "Fit it in and match the shape!",
+      "frase_cena_sig": {
+        "gl": "Encaixa e emparella a forma!",
+        "es": "¡Encaja y empareja la forma!"
+      },
+      "palabras_en": [
+        "spot",
+        "pot"
+      ],
+      "frases_en": [
+        "Fit it in and match the shape!",
+        "Open your mouth!",
+        "Mix yellow and blue paint in a dish."
+      ],
+      "frase_modelo_mes": "Paint.",
+      "face_id": "L01.ar1",
+      "fallback": {
+        "instrucion": {
+          "gl": "Este aparello non ten cámara nin soporte ARCore. Podedes xogar igual coas láminas sobre a mesa e a voz de Lúa.",
+          "es": "Este dispositivo no tiene cámara ni soporte ARCore. Podéis jugar igual con las láminas sobre la mesa y la voz de Lúa."
+        },
+        "laminas_suporte": [
+          "pal_spot",
+          "pal_pot"
+        ]
+      },
+      "scene_spec": {
+        "title": {
+          "gl": "Lúa RA · Mesa de formas e encaixe",
+          "es": "Lúa RA · Mesa de formas y encaje"
+        },
+        "placeHint": {
+          "gl": "Toca a mesa debuxada para colocar a escena.",
+          "es": "Toca la mesa dibujada para colocar la escena."
+        },
+        "searchHint": {
+          "gl": "Move o móbil amodo mirando cara á mesa.",
+          "es": "Mueve el móvil despacio mirando hacia la mesa."
+        },
+        "closeLabel": {
+          "gl": "Pechar",
+          "es": "Cerrar"
+        },
+        "replaceLabel": {
+          "gl": "Recolocar",
+          "es": "Recolocar"
+        },
+        "luaPrefix": "Lúa: ",
+        "events": [
+          {
+            "id": "S0.CABEZA_ENCAJADA",
+            "label_gl": "Cabeza",
+            "label_es": "Cabeza",
+            "prompt_gl": "Toca ou encaixa a peza principal na mesa.",
+            "prompt_es": "Toca o encaja la pieza principal en la mesa.",
+            "englishPhrase": "Fit it in!"
+          },
+          {
+            "id": "S0.PLACA_LEIDA",
+            "label_gl": "Forma",
+            "label_es": "Forma",
+            "prompt_gl": "Sinala a silueta igual no taboleiro.",
+            "prompt_es": "Señala la silueta igual en el tablero.",
+            "englishPhrase": "Match the shape!"
+          }
+        ],
+        "shapes": [
+          {
+            "kind": "tile",
+            "style": "piece",
+            "pts": [
+              [
+                -0.08,
+                -0.06
+              ]
+            ],
+            "w": 0.16,
+            "d": 0.12,
+            "y": 0.0,
+            "text": ""
+          },
+          {
+            "kind": "circle",
+            "style": "light",
+            "pts": [
+              [
+                0.0,
+                0.0
+              ]
+            ],
+            "r": 0.055,
+            "y": 0.02,
+            "text": "FIT!",
+            "after": "S0.CABEZA_ENCAJADA"
+          },
+          {
+            "kind": "rings",
+            "style": "light",
+            "pts": [
+              [
+                0.0,
+                0.0
+              ]
+            ],
+            "r": 0.07,
+            "y": 0.02,
+            "text": "SHAPE!",
+            "after": "S0.PLACA_LEIDA"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ra_curso_5_6_m02",
+      "curso": "curso_5_6",
+      "mes": 2,
+      "fenomeno": "optica",
+      "steam_id": "STEAM-5_6-10",
+      "steam_titulo": {
+        "gl": "O mundo de cores",
+        "es": "El mundo de colores"
+      },
+      "valeria_scene_id": "S6",
+      "titulo": {
+        "gl": "Luz, sol e sombra",
+        "es": "Luz, sol y sombra"
+      },
+      "guia_adulto": {
+        "gl": "Coa mesa iluminada ou cunha lanterna, observade onde cae a sombra e como xira ao mover a luz.",
+        "es": "Con la mesa iluminada o con una linterna, observad dónde cae la sombra y cómo gira al mover la luz."
+      },
+      "par": {
+        "a": "glow",
+        "b": "low",
+        "fonema": "/gl-/ → /l-/"
+      },
+      "frase_cena_en": "Turn the sun and look!",
+      "frase_cena_sig": {
+        "gl": "Xira o sol e mira!",
+        "es": "¡Gira el sol y mira!"
+      },
+      "palabras_en": [
+        "glow",
+        "low"
+      ],
+      "frases_en": [
+        "Turn the sun and look!",
+        "Smile!",
+        "Hold the colored filter before the light."
+      ],
+      "frase_modelo_mes": "Filter.",
+      "face_id": "L07.ar6",
+      "fallback": {
+        "instrucion": {
+          "gl": "Este aparello non ten cámara nin soporte ARCore. Podedes xogar igual coas láminas sobre a mesa e a voz de Lúa.",
+          "es": "Este dispositivo no tiene cámara ni soporte ARCore. Podéis jugar igual con las láminas sobre la mesa y la voz de Lúa."
+        },
+        "laminas_suporte": [
+          "pal_glow",
+          "pal_low"
+        ]
+      },
+      "scene_spec": {
+        "title": {
+          "gl": "Lúa RA · Luz, sol e sombra",
+          "es": "Lúa RA · Luz, sol y sombra"
+        },
+        "placeHint": {
+          "gl": "Toca a mesa debuxada para colocar a escena.",
+          "es": "Toca la mesa dibujada para colocar la escena."
+        },
+        "searchHint": {
+          "gl": "Move o móbil amodo mirando cara á mesa.",
+          "es": "Mueve el móvil despacio mirando hacia la mesa."
+        },
+        "closeLabel": {
+          "gl": "Pechar",
+          "es": "Cerrar"
+        },
+        "replaceLabel": {
+          "gl": "Recolocar",
+          "es": "Recolocar"
+        },
+        "luaPrefix": "Lúa: ",
+        "events": [
+          {
+            "id": "S6.RIEGO",
+            "label_gl": "Luz",
+            "label_es": "Luz",
+            "prompt_gl": "Aluma o obxecto desde un lado.",
+            "prompt_es": "Ilumina el objeto desde un lado.",
+            "englishPhrase": "Light here!"
+          },
+          {
+            "id": "S6.SOMBRA_ALINEADA",
+            "label_gl": "Sombra",
+            "label_es": "Sombra",
+            "prompt_gl": "Sinala co dedo onde se alonga a sombra.",
+            "prompt_es": "Señala con el dedo dónde se alarga la sombra.",
+            "englishPhrase": "Turn the sun!"
+          }
+        ],
+        "shapes": [
+          {
+            "kind": "circle",
+            "style": "warn",
+            "pts": [
+              [
+                -0.12,
+                -0.06
+              ]
+            ],
+            "r": 0.04,
+            "y": 0.06,
+            "text": "SUN"
+          },
+          {
+            "kind": "flow",
+            "style": "light",
+            "pts": [
+              [
+                -0.12,
+                -0.06
+              ],
+              [
+                0.06,
+                0.04
+              ]
+            ],
+            "y": 0.04,
+            "text": ""
+          },
+          {
+            "kind": "tile",
+            "style": "light",
+            "pts": [
+              [
+                0.04,
+                0.02
+              ]
+            ],
+            "w": 0.1,
+            "d": 0.05,
+            "y": 0.01,
+            "text": "SHADOW",
+            "after": "S6.SOMBRA_ALINEADA"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ra_curso_5_6_m03",
+      "curso": "curso_5_6",
+      "mes": 3,
+      "fenomeno": "logica",
+      "steam_id": "STEAM-5_6-11",
+      "steam_titulo": {
+        "gl": "A bolboreta igual",
+        "es": "La mariposa igual"
+      },
+      "valeria_scene_id": "L04",
+      "titulo": {
+        "gl": "Lúa descansa en calma",
+        "es": "Lúa descansa en calma"
+      },
+      "guia_adulto": {
+        "gl": "Secuencia tranquila: cando baixa o movemento, Lúa esperta feliz.",
+        "es": "Secuencia tranquila: cuando baja el movimiento, Lúa despierta feliz."
+      },
+      "par": {
+        "a": "light",
+        "b": "right",
+        "fonema": "/l/ → /r/"
+      },
+      "frase_cena_en": "Calm and awake now!",
+      "frase_cena_sig": {
+        "gl": "En calma e esperto agora!",
+        "es": "¡En calma y despierto ahora!"
+      },
+      "palabras_en": [
+        "light",
+        "right"
+      ],
+      "frases_en": [
+        "Calm and awake now!",
+        "Big eyes!",
+        "Open the paper to see a butterfly."
+      ],
+      "frase_modelo_mes": "Butterfly.",
+      "face_id": "L01.ar3",
+      "fallback": {
+        "instrucion": {
+          "gl": "Este aparello non ten cámara nin soporte ARCore. Podedes xogar igual coas láminas sobre a mesa e a voz de Lúa.",
+          "es": "Este dispositivo no tiene cámara ni soporte ARCore. Podéis jugar igual con las láminas sobre la mesa y la voz de Lúa."
+        },
+        "laminas_suporte": [
+          "pal_light",
+          "pal_right"
+        ]
+      },
+      "scene_spec": {
+        "title": {
+          "gl": "Lúa RA · Lúa descansa en calma",
+          "es": "Lúa RA · Lúa descansa en calma"
+        },
+        "placeHint": {
+          "gl": "Toca a mesa debuxada para colocar a escena.",
+          "es": "Toca la mesa dibujada para colocar la escena."
+        },
+        "searchHint": {
+          "gl": "Move o móbil amodo mirando cara á mesa.",
+          "es": "Mueve el móvil despacio mirando hacia la mesa."
+        },
+        "closeLabel": {
+          "gl": "Pechar",
+          "es": "Cerrar"
+        },
+        "replaceLabel": {
+          "gl": "Recolocar",
+          "es": "Recolocar"
+        },
+        "luaPrefix": "Lúa: ",
+        "events": [
+          {
+            "id": "L04.PASO_1",
+            "label_gl": "Paso 1",
+            "label_es": "Paso 1",
+            "prompt_gl": "Secuencia tranquila: cando baixa o movemento, Lúa esperta feliz.",
+            "prompt_es": "Secuencia tranquila: cuando baja el movimiento, Lúa despierta feliz.",
+            "englishPhrase": "Calm and awake now!"
+          },
+          {
+            "id": "L04.FIN",
+            "label_gl": "Logro",
+            "label_es": "Logro",
+            "prompt_gl": "Todo no seu sitio sobre a mesa.",
+            "prompt_es": "Todo en su sitio sobre la mesa.",
+            "englishPhrase": "Calm and awake now!"
+          }
+        ],
+        "shapes": [
+          {
+            "kind": "tile",
+            "style": "piece",
+            "pts": [
+              [
+                -0.1,
+                -0.06
+              ]
+            ],
+            "w": 0.2,
+            "d": 0.12,
+            "y": 0.0,
+            "text": ""
+          },
+          {
+            "kind": "rings",
+            "style": "light",
+            "pts": [
+              [
+                0.0,
+                0.0
+              ]
+            ],
+            "r": 0.06,
+            "y": 0.02,
+            "text": "OK!",
+            "after": "L04.FIN"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ra_curso_5_6_m04",
+      "curso": "curso_5_6",
+      "mes": 4,
+      "fenomeno": "cinematica",
+      "steam_id": "STEAM-5_6-12",
+      "steam_titulo": {
+        "gl": "O círculo que xira",
+        "es": "El círculo que gira"
+      },
+      "valeria_scene_id": "S1",
+      "titulo": {
+        "gl": "Camiño da mesa",
+        "es": "Camino en la mesa"
+      },
+      "guia_adulto": {
+        "gl": "Sobre a mesa vese o percorrido. Move o obxecto coas mans pola liña marcada mentres escoitades as ordes en inglés.",
+        "es": "Sobre la mesa se ve el recorrido. Mueve el objeto con las manos por la línea marcada mientras escucháis las órdenes en inglés."
+      },
+      "par": {
+        "a": "spin",
+        "b": "pin",
+        "fonema": "/sp-/ → /p-/"
+      },
+      "frase_cena_en": "Connect the path and turn!",
+      "frase_cena_sig": {
+        "gl": "Conecta o camiño e xira!",
+        "es": "¡Conecta el camino y gira!"
+      },
+      "palabras_en": [
+        "spin",
+        "pin"
+      ],
+      "frases_en": [
+        "Connect the path and turn!",
+        "Pucker your lips!",
+        "Spin the painted cardboard top fast!"
+      ],
+      "frase_modelo_mes": "Top.",
+      "face_id": "L01.ar4",
+      "fallback": {
+        "instrucion": {
+          "gl": "Este aparello non ten cámara nin soporte ARCore. Podedes xogar igual coas láminas sobre a mesa e a voz de Lúa.",
+          "es": "Este dispositivo no tiene cámara ni soporte ARCore. Podéis jugar igual con las láminas sobre la mesa y la voz de Lúa."
+        },
+        "laminas_suporte": [
+          "pal_spin",
+          "pal_pin"
+        ]
+      },
+      "scene_spec": {
+        "title": {
+          "gl": "Lúa RA · Camiño da mesa",
+          "es": "Lúa RA · Camino en la mesa"
+        },
+        "placeHint": {
+          "gl": "Toca a mesa debuxada para colocar a escena.",
+          "es": "Toca la mesa dibujada para colocar la escena."
+        },
+        "searchHint": {
+          "gl": "Move o móbil amodo mirando cara á mesa.",
+          "es": "Mueve el móvil despacio mirando hacia la mesa."
+        },
+        "closeLabel": {
+          "gl": "Pechar",
+          "es": "Cerrar"
+        },
+        "replaceLabel": {
+          "gl": "Recolocar",
+          "es": "Recolocar"
+        },
+        "luaPrefix": "Lúa: ",
+        "events": [
+          {
+            "id": "S1.LUA_EN_INICIO",
+            "label_gl": "Inicio",
+            "label_es": "Inicio",
+            "prompt_gl": "Pon o boneco ou peza no punto de saída.",
+            "prompt_es": "Pon el muñeco o pieza en el punto de salida.",
+            "englishPhrase": "Connect the path!"
+          },
+          {
+            "id": "S1.LUA_GIRA",
+            "label_gl": "Xiro",
+            "label_es": "Giro",
+            "prompt_gl": "Facede o xiro xunto á esquina marcada.",
+            "prompt_es": "Haced el giro junto a la esquina marcada.",
+            "englishPhrase": "Turn here!"
+          }
+        ],
+        "shapes": [
+          {
+            "kind": "flow",
+            "style": "light",
+            "pts": [
+              [
+                -0.14,
+                0.06
+              ],
+              [
+                0.0,
+                0.06
+              ],
+              [
+                0.0,
+                -0.06
+              ],
+              [
+                0.14,
+                -0.06
+              ]
+            ],
+            "y": 0.01,
+            "text": ""
+          },
+          {
+            "kind": "circle",
+            "style": "light",
+            "pts": [
+              [
+                -0.14,
+                0.06
+              ]
+            ],
+            "r": 0.035,
+            "y": 0.02,
+            "text": "START",
+            "after": "S1.LUA_EN_INICIO"
+          },
+          {
+            "kind": "arrow",
+            "style": "warn",
+            "pts": [
+              [
+                0.0,
+                0.06
+              ],
+              [
+                0.0,
+                -0.06
+              ]
+            ],
+            "y": 0.03,
+            "text": "TURN!",
+            "after": "S1.LUA_GIRA"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ra_curso_5_6_m05",
+      "curso": "curso_5_6",
+      "mes": 5,
+      "fenomeno": "acustica",
+      "steam_id": "STEAM-5_6-01",
+      "steam_titulo": {
+        "gl": "Cantos sons ten o papel?",
+        "es": "¿Cuántos sonidos tiene el papel?"
+      },
+      "valeria_scene_id": "S2",
+      "titulo": {
+        "gl": "Ondas de son na mesa",
+        "es": "Ondas de sonido en la mesa"
+      },
+      "guia_adulto": {
+        "gl": "Golpea amodo ou forte na mesa mentres as ondas medran sobre o centro. Sinalade ondas grandes e pequenas.",
+        "es": "Golpea suave o fuerte en la mesa mientras las ondas crecen sobre el centro. Señalad ondas grandes y pequeñas."
+      },
+      "par": {
+        "a": "snip",
+        "b": "nip",
+        "fonema": "/sn-/ → /n-/"
+      },
+      "frase_cena_en": "Big sound, small sound!",
+      "frase_cena_sig": {
+        "gl": "Son grande, son pequeno!",
+        "es": "¡Sonido grande, sonido pequeño!"
+      },
+      "palabras_en": [
+        "snip",
+        "nip"
+      ],
+      "frases_en": [
+        "Big sound, small sound!",
+        "Puff your cheeks!",
+        "Test three kinds of paper by sound."
+      ],
+      "frase_modelo_mes": "Paper.",
+      "face_id": "L07.ar5",
+      "fallback": {
+        "instrucion": {
+          "gl": "Este aparello non ten cámara nin soporte ARCore. Podedes xogar igual coas láminas sobre a mesa e a voz de Lúa.",
+          "es": "Este dispositivo no tiene cámara ni soporte ARCore. Podéis jugar igual con las láminas sobre la mesa y la voz de Lúa."
+        },
+        "laminas_suporte": [
+          "pal_snip",
+          "pal_nip"
+        ]
+      },
+      "scene_spec": {
+        "title": {
+          "gl": "Lúa RA · Ondas de son na mesa",
+          "es": "Lúa RA · Ondas de sonido en la mesa"
+        },
+        "placeHint": {
+          "gl": "Toca a mesa debuxada para colocar a escena.",
+          "es": "Toca la mesa dibujada para colocar la escena."
+        },
+        "searchHint": {
+          "gl": "Move o móbil amodo mirando cara á mesa.",
+          "es": "Mueve el móvil despacio mirando hacia la mesa."
+        },
+        "closeLabel": {
+          "gl": "Pechar",
+          "es": "Cerrar"
+        },
+        "replaceLabel": {
+          "gl": "Recolocar",
+          "es": "Recolocar"
+        },
+        "luaPrefix": "Lúa: ",
+        "events": [
+          {
+            "id": "S2.GOLPE_FUERTE",
+            "label_gl": "Forte",
+            "label_es": "Fuerte",
+            "prompt_gl": "Un golpe fondo coa palma aberta.",
+            "prompt_es": "Un golpe hondo con la palma abierta.",
+            "englishPhrase": "Big and low!"
+          },
+          {
+            "id": "S2.GOLPE_DEBIL",
+            "label_gl": "Suave",
+            "label_es": "Suave",
+            "prompt_gl": "Toque suave cos dedos na mesa.",
+            "prompt_es": "Toque suave con los dedos en la mesa.",
+            "englishPhrase": "Small and high!"
+          }
+        ],
+        "shapes": [
+          {
+            "kind": "circle",
+            "style": "piece",
+            "pts": [
+              [
+                0.0,
+                0.0
+              ]
+            ],
+            "r": 0.06,
+            "y": 0.01,
+            "text": ""
+          },
+          {
+            "kind": "rings",
+            "style": "warn",
+            "pts": [
+              [
+                0.0,
+                0.0
+              ]
+            ],
+            "r": 0.08,
+            "y": 0.03,
+            "text": "BIG!",
+            "last": [
+              "S2.GOLPE_FUERTE"
+            ]
+          },
+          {
+            "kind": "rings",
+            "style": "light",
+            "pts": [
+              [
+                0.0,
+                0.0
+              ]
+            ],
+            "r": 0.04,
+            "y": 0.03,
+            "text": "SMALL!",
+            "last": [
+              "S2.GOLPE_DEBIL"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "ra_curso_5_6_m06",
+      "curso": "curso_5_6",
+      "mes": 6,
+      "fenomeno": "cinematica",
+      "steam_id": "STEAM-5_6-02",
+      "steam_titulo": {
+        "gl": "Avións de papel",
+        "es": "Aviones de papel"
+      },
+      "valeria_scene_id": "S3",
+      "titulo": {
+        "gl": "Rampla e velocidade",
+        "es": "Rampa y velocidad"
+      },
+      "guia_adulto": {
+        "gl": "Poñede un cartón inclinado ou un libro na mesa e soltade unha peza grande para ver como roda ata a meta.",
+        "es": "Poned un cartón inclinado o un libro en la mesa y soltad una pieza grande para ver cómo rueda hasta la meta."
+      },
+      "par": {
+        "a": "plane",
+        "b": "lane",
+        "fonema": "/pl-/ → /l-/"
+      },
+      "frase_cena_en": "Roll down, fast and slow!",
+      "frase_cena_sig": {
+        "gl": "Roda cara abaixo, rápido e amodo!",
+        "es": "¡Rueda hacia abajo, rápido y despacio!"
+      },
+      "palabras_en": [
+        "plane",
+        "lane"
+      ],
+      "frases_en": [
+        "Roll down, fast and slow!",
+        "Turn your head!",
+        "Fold a paper plane for the hallway."
+      ],
+      "frase_modelo_mes": "Plane.",
+      "face_id": "L07.ar2",
+      "fallback": {
+        "instrucion": {
+          "gl": "Este aparello non ten cámara nin soporte ARCore. Podedes xogar igual coas láminas sobre a mesa e a voz de Lúa.",
+          "es": "Este dispositivo no tiene cámara ni soporte ARCore. Podéis jugar igual con las láminas sobre la mesa y la voz de Lúa."
+        },
+        "laminas_suporte": [
+          "pal_pal_plane",
+          "pal_lane"
+        ]
+      },
+      "scene_spec": {
+        "title": {
+          "gl": "Lúa RA · Rampla e velocidade",
+          "es": "Lúa RA · Rampa y velocidad"
+        },
+        "placeHint": {
+          "gl": "Toca a mesa debuxada para colocar a escena.",
+          "es": "Toca la mesa dibujada para colocar la escena."
+        },
+        "searchHint": {
+          "gl": "Move o móbil amodo mirando cara á mesa.",
+          "es": "Mueve el móvil despacio mirando hacia la mesa."
+        },
+        "closeLabel": {
+          "gl": "Pechar",
+          "es": "Cerrar"
+        },
+        "replaceLabel": {
+          "gl": "Recolocar",
+          "es": "Recolocar"
+        },
+        "luaPrefix": "Lúa: ",
+        "events": [
+          {
+            "id": "S3.ESFERA_ARRIBA",
+            "label_gl": "Arriba",
+            "label_es": "Arriba",
+            "prompt_gl": "Suxeitade o obxecto no alto da costa.",
+            "prompt_es": "Sujetad el objeto en lo alto de la cuesta.",
+            "englishPhrase": "High tower!"
+          },
+          {
+            "id": "S3.LLEGADA_RAPIDA",
+            "label_gl": "Rápido",
+            "label_es": "Rápido",
+            "prompt_gl": "Soltádeo e mirade como chega abaixo.",
+            "prompt_es": "Soltadlo y mirad cómo llega abajo.",
+            "englishPhrase": "Roll down fast!"
+          }
+        ],
+        "shapes": [
+          {
+            "kind": "flow",
+            "style": "light",
+            "pts": [
+              [
+                -0.14,
+                -0.05
+              ],
+              [
+                0.14,
+                0.05
+              ]
+            ],
+            "y": 0.04,
+            "text": "ROLL!"
+          },
+          {
+            "kind": "circle",
+            "style": "warn",
+            "pts": [
+              [
+                -0.14,
+                -0.05
+              ]
+            ],
+            "r": 0.03,
+            "y": 0.06,
+            "text": "UP",
+            "after": "S3.ESFERA_ARRIBA"
+          },
+          {
+            "kind": "rings",
+            "style": "light",
+            "pts": [
+              [
+                0.14,
+                0.05
+              ]
+            ],
+            "r": 0.05,
+            "y": 0.02,
+            "text": "FAST!",
+            "after": "S3.LLEGADA_RAPIDA"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ra_curso_5_6_m07",
+      "curso": "curso_5_6",
+      "mes": 7,
+      "fenomeno": "logica",
+      "steam_id": "STEAM-5_6-03",
+      "steam_titulo": {
+        "gl": "O mapa do tesouro",
+        "es": "El mapa del tesoro"
+      },
+      "valeria_scene_id": "L05",
+      "titulo": {
+        "gl": "Aloumiño lento",
+        "es": "Caricia lenta"
+      },
+      "guia_adulto": {
+        "gl": "Cando a man vai amodo pola mesa, acéndese o recuncho de calma.",
+        "es": "Cuando la mano va despacio por la mesa, se enciende el rincón de calma."
+      },
+      "par": {
+        "a": "trail",
+        "b": "rail",
+        "fonema": "/tr-/ → /r-/"
+      },
+      "frase_cena_en": "Move your hand slowly!",
+      "frase_cena_sig": {
+        "gl": "Move a man amodo!",
+        "es": "¡Mueve la mano despacio!"
+      },
+      "palabras_en": [
+        "trail",
+        "rail"
+      ],
+      "frases_en": [
+        "Move your hand slowly!",
+        "Open your mouth!",
+        "Turn the room map to match the walls."
+      ],
+      "frase_modelo_mes": "Map.",
+      "face_id": "L01.ar1",
+      "fallback": {
+        "instrucion": {
+          "gl": "Este aparello non ten cámara nin soporte ARCore. Podedes xogar igual coas láminas sobre a mesa e a voz de Lúa.",
+          "es": "Este dispositivo no tiene cámara ni soporte ARCore. Podéis jugar igual con las láminas sobre la mesa y la voz de Lúa."
+        },
+        "laminas_suporte": [
+          "pal_trail",
+          "pal_rail"
+        ]
+      },
+      "scene_spec": {
+        "title": {
+          "gl": "Lúa RA · Aloumiño lento",
+          "es": "Lúa RA · Caricia lenta"
+        },
+        "placeHint": {
+          "gl": "Toca a mesa debuxada para colocar a escena.",
+          "es": "Toca la mesa dibujada para colocar la escena."
+        },
+        "searchHint": {
+          "gl": "Move o móbil amodo mirando cara á mesa.",
+          "es": "Mueve el móvil despacio mirando hacia la mesa."
+        },
+        "closeLabel": {
+          "gl": "Pechar",
+          "es": "Cerrar"
+        },
+        "replaceLabel": {
+          "gl": "Recolocar",
+          "es": "Recolocar"
+        },
+        "luaPrefix": "Lúa: ",
+        "events": [
+          {
+            "id": "L05.PASO_1",
+            "label_gl": "Paso 1",
+            "label_es": "Paso 1",
+            "prompt_gl": "Cando a man vai amodo pola mesa, acéndese o recuncho de calma.",
+            "prompt_es": "Cuando la mano va despacio por la mesa, se enciende el rincón de calma.",
+            "englishPhrase": "Move your hand slowly!"
+          },
+          {
+            "id": "L05.FIN",
+            "label_gl": "Logro",
+            "label_es": "Logro",
+            "prompt_gl": "Todo no seu sitio sobre a mesa.",
+            "prompt_es": "Todo en su sitio sobre la mesa.",
+            "englishPhrase": "Move your hand slowly!"
+          }
+        ],
+        "shapes": [
+          {
+            "kind": "tile",
+            "style": "piece",
+            "pts": [
+              [
+                -0.1,
+                -0.06
+              ]
+            ],
+            "w": 0.2,
+            "d": 0.12,
+            "y": 0.0,
+            "text": ""
+          },
+          {
+            "kind": "rings",
+            "style": "light",
+            "pts": [
+              [
+                0.0,
+                0.0
+              ]
+            ],
+            "r": 0.06,
+            "y": 0.02,
+            "text": "OK!",
+            "after": "L05.FIN"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ra_curso_5_6_m08",
+      "curso": "curso_5_6",
+      "mes": 8,
+      "fenomeno": "materia",
+      "steam_id": "STEAM-5_6-04",
+      "steam_titulo": {
+        "gl": "A maleta que pesa",
+        "es": "La maleta que pesa"
+      },
+      "valeria_scene_id": "S5",
+      "titulo": {
+        "gl": "Ponte e equilibrio",
+        "es": "Puente y equilibrio"
+      },
+      "guia_adulto": {
+        "gl": "Comparade un obxecto pesado e un lixeiro sobre a ponte debuxada na mesa: cal inclina o lado?",
+        "es": "Comparad un objeto pesado y uno ligero sobre el puente dibujado en la mesa: ¿cuál inclina el lado?"
+      },
+      "par": {
+        "a": "scale",
+        "b": "sale",
+        "fonema": "/sk-/ → /s-/"
+      },
+      "frase_cena_en": "Heavy, light, level the bridge!",
+      "frase_cena_sig": {
+        "gl": "Pesado, lixeiro, nivela a ponte!",
+        "es": "¡Pesado, ligero, nivela el puente!"
+      },
+      "palabras_en": [
+        "scale",
+        "sale"
+      ],
+      "frases_en": [
+        "Heavy, light, level the bridge!",
+        "Smile!",
+        "Lift the suitcase with clothes or books."
+      ],
+      "frase_modelo_mes": "Suitcase.",
+      "face_id": "L07.ar6",
+      "fallback": {
+        "instrucion": {
+          "gl": "Este aparello non ten cámara nin soporte ARCore. Podedes xogar igual coas láminas sobre a mesa e a voz de Lúa.",
+          "es": "Este dispositivo no tiene cámara ni soporte ARCore. Podéis jugar igual con las láminas sobre la mesa y la voz de Lúa."
+        },
+        "laminas_suporte": [
+          "pal_scale",
+          "pal_sale"
+        ]
+      },
+      "scene_spec": {
+        "title": {
+          "gl": "Lúa RA · Ponte e equilibrio",
+          "es": "Lúa RA · Puente y equilibrio"
+        },
+        "placeHint": {
+          "gl": "Toca a mesa debuxada para colocar a escena.",
+          "es": "Toca la mesa dibujada para colocar la escena."
+        },
+        "searchHint": {
+          "gl": "Move o móbil amodo mirando cara á mesa.",
+          "es": "Mueve el móvil despacio mirando hacia la mesa."
+        },
+        "closeLabel": {
+          "gl": "Pechar",
+          "es": "Cerrar"
+        },
+        "replaceLabel": {
+          "gl": "Recolocar",
+          "es": "Recolocar"
+        },
+        "luaPrefix": "Lúa: ",
+        "events": [
+          {
+            "id": "S5.INCLINA_IZQ",
+            "label_gl": "Pesado",
+            "label_es": "Pesado",
+            "prompt_gl": "Pon o obxecto pesado nun extremo.",
+            "prompt_es": "Pon el objeto pesado en un extremo.",
+            "englishPhrase": "Heavy side down!"
+          },
+          {
+            "id": "S5.PUENTE_ESTABLE",
+            "label_gl": "Equilibrio",
+            "label_es": "Equilibrio",
+            "prompt_gl": "Equilibrade os dous lados da ponte.",
+            "prompt_es": "Equilibrad los dos lados del puente.",
+            "englishPhrase": "Level the bridge!"
+          }
+        ],
+        "shapes": [
+          {
+            "kind": "tile",
+            "style": "piece",
+            "pts": [
+              [
+                -0.14,
+                -0.04
+              ]
+            ],
+            "w": 0.28,
+            "d": 0.08,
+            "y": 0.02,
+            "text": ""
+          },
+          {
+            "kind": "arrow",
+            "style": "warn",
+            "pts": [
+              [
+                -0.1,
+                -0.02
+              ],
+              [
+                -0.1,
+                0.06
+              ]
+            ],
+            "y": 0.05,
+            "text": "HEAVY",
+            "last": [
+              "S5.INCLINA_IZQ"
+            ]
+          },
+          {
+            "kind": "rings",
+            "style": "light",
+            "pts": [
+              [
+                0.0,
+                0.0
+              ]
+            ],
+            "r": 0.06,
+            "y": 0.04,
+            "text": "EVEN!",
+            "after": "S5.PUENTE_ESTABLE"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ra_curso_5_6_m09",
+      "curso": "curso_5_6",
+      "mes": 9,
+      "fenomeno": "optica",
+      "steam_id": "STEAM-5_6-05",
+      "steam_titulo": {
+        "gl": "Mensaxes de luz",
+        "es": "Mensajes de luz"
+      },
+      "valeria_scene_id": "S6",
+      "titulo": {
+        "gl": "Luz, sol e sombra",
+        "es": "Luz, sol y sombra"
+      },
+      "guia_adulto": {
+        "gl": "Coa mesa iluminada ou cunha lanterna, observade onde cae a sombra e como xira ao mover a luz.",
+        "es": "Con la mesa iluminada o con una linterna, observad dónde cae la sombra y cómo gira al mover la luz."
+      },
+      "par": {
+        "a": "flash",
+        "b": "lash",
+        "fonema": "/fl-/ → /l-/"
+      },
+      "frase_cena_en": "Turn the sun and look!",
+      "frase_cena_sig": {
+        "gl": "Xira o sol e mira!",
+        "es": "¡Gira el sol y mira!"
+      },
+      "palabras_en": [
+        "flash",
+        "lash"
+      ],
+      "frases_en": [
+        "Turn the sun and look!",
+        "Big eyes!",
+        "Aim the lamp across the dark room."
+      ],
+      "frase_modelo_mes": "Lamp.",
+      "face_id": "L01.ar3",
+      "fallback": {
+        "instrucion": {
+          "gl": "Este aparello non ten cámara nin soporte ARCore. Podedes xogar igual coas láminas sobre a mesa e a voz de Lúa.",
+          "es": "Este dispositivo no tiene cámara ni soporte ARCore. Podéis jugar igual con las láminas sobre la mesa y la voz de Lúa."
+        },
+        "laminas_suporte": [
+          "pal_flash",
+          "pal_lash"
+        ]
+      },
+      "scene_spec": {
+        "title": {
+          "gl": "Lúa RA · Luz, sol e sombra",
+          "es": "Lúa RA · Luz, sol y sombra"
+        },
+        "placeHint": {
+          "gl": "Toca a mesa debuxada para colocar a escena.",
+          "es": "Toca la mesa dibujada para colocar la escena."
+        },
+        "searchHint": {
+          "gl": "Move o móbil amodo mirando cara á mesa.",
+          "es": "Mueve el móvil despacio mirando hacia la mesa."
+        },
+        "closeLabel": {
+          "gl": "Pechar",
+          "es": "Cerrar"
+        },
+        "replaceLabel": {
+          "gl": "Recolocar",
+          "es": "Recolocar"
+        },
+        "luaPrefix": "Lúa: ",
+        "events": [
+          {
+            "id": "S6.RIEGO",
+            "label_gl": "Luz",
+            "label_es": "Luz",
+            "prompt_gl": "Aluma o obxecto desde un lado.",
+            "prompt_es": "Ilumina el objeto desde un lado.",
+            "englishPhrase": "Light here!"
+          },
+          {
+            "id": "S6.SOMBRA_ALINEADA",
+            "label_gl": "Sombra",
+            "label_es": "Sombra",
+            "prompt_gl": "Sinala co dedo onde se alonga a sombra.",
+            "prompt_es": "Señala con el dedo dónde se alarga la sombra.",
+            "englishPhrase": "Turn the sun!"
+          }
+        ],
+        "shapes": [
+          {
+            "kind": "circle",
+            "style": "warn",
+            "pts": [
+              [
+                -0.12,
+                -0.06
+              ]
+            ],
+            "r": 0.04,
+            "y": 0.06,
+            "text": "SUN"
+          },
+          {
+            "kind": "flow",
+            "style": "light",
+            "pts": [
+              [
+                -0.12,
+                -0.06
+              ],
+              [
+                0.06,
+                0.04
+              ]
+            ],
+            "y": 0.04,
+            "text": ""
+          },
+          {
+            "kind": "tile",
+            "style": "light",
+            "pts": [
+              [
+                0.04,
+                0.02
+              ]
+            ],
+            "w": 0.1,
+            "d": 0.05,
+            "y": 0.01,
+            "text": "SHADOW",
+            "after": "S6.SOMBRA_ALINEADA"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ra_curso_5_6_m10",
+      "curso": "curso_5_6",
+      "mes": 10,
+      "fenomeno": "acustica",
+      "steam_id": "STEAM-5_6-06",
+      "steam_titulo": {
+        "gl": "A frauta do tren",
+        "es": "La flauta del tren"
+      },
+      "valeria_scene_id": "S4",
+      "titulo": {
+        "gl": "Sopro e movemento",
+        "es": "Soplo y movimiento"
+      },
+      "guia_adulto": {
+        "gl": "Soprade amodo ou con forza cara a unha folla ou barquiño de papel na mesa mentres seguides as frechas de aire.",
+        "es": "Soplad despacio o con fuerza hacia una hoja o barquito de papel en la mesa mientras seguís las flechas de aire."
+      },
+      "par": {
+        "a": "blow",
+        "b": "low",
+        "fonema": "/bl-/ → /l-/"
+      },
+      "frase_cena_en": "Blow gently and spin!",
+      "frase_cena_sig": {
+        "gl": "Sopra suave e faino xirar!",
+        "es": "¡Sopla suave y hazlo girar!"
+      },
+      "palabras_en": [
+        "blow",
+        "low"
+      ],
+      "frases_en": [
+        "Blow gently and spin!",
+        "Pucker your lips!",
+        "Tape the straws into a Pan flute."
+      ],
+      "frase_modelo_mes": "Flute.",
+      "face_id": "L01.ar4",
+      "fallback": {
+        "instrucion": {
+          "gl": "Este aparello non ten cámara nin soporte ARCore. Podedes xogar igual coas láminas sobre a mesa e a voz de Lúa.",
+          "es": "Este dispositivo no tiene cámara ni soporte ARCore. Podéis jugar igual con las láminas sobre la mesa y la voz de Lúa."
+        },
+        "laminas_suporte": [
+          "pal_blow",
+          "pal_low"
+        ]
+      },
+      "scene_spec": {
+        "title": {
+          "gl": "Lúa RA · Sopro e movemento",
+          "es": "Lúa RA · Soplo y movimiento"
+        },
+        "placeHint": {
+          "gl": "Toca a mesa debuxada para colocar a escena.",
+          "es": "Toca la mesa dibujada para colocar la escena."
+        },
+        "searchHint": {
+          "gl": "Move o móbil amodo mirando cara á mesa.",
+          "es": "Mueve el móvil despacio mirando hacia la mesa."
+        },
+        "closeLabel": {
+          "gl": "Pechar",
+          "es": "Cerrar"
+        },
+        "replaceLabel": {
+          "gl": "Recolocar",
+          "es": "Recolocar"
+        },
+        "luaPrefix": "Lúa: ",
+        "events": [
+          {
+            "id": "S4.PRAXIA_REDONDEO",
+            "label_gl": "Sopro",
+            "label_es": "Soplo",
+            "prompt_gl": "Sopro longo e suave sobre a mesa.",
+            "prompt_es": "Soplo largo y suave sobre la mesa.",
+            "englishPhrase": "Blow gently!"
+          },
+          {
+            "id": "S4.MOLINETE_GIRA",
+            "label_gl": "Xira",
+            "label_es": "Gira",
+            "prompt_gl": "Vemos moverse ou xirar o obxecto.",
+            "prompt_es": "Vemos moverse o girar el objeto.",
+            "englishPhrase": "Spin the wheel!"
+          }
+        ],
+        "shapes": [
+          {
+            "kind": "flow",
+            "style": "light",
+            "pts": [
+              [
+                -0.15,
+                0.0
+              ],
+              [
+                0.08,
+                0.0
+              ]
+            ],
+            "y": 0.04,
+            "text": "AIR"
+          },
+          {
+            "kind": "rings",
+            "style": "light",
+            "pts": [
+              [
+                0.1,
+                0.0
+              ]
+            ],
+            "r": 0.06,
+            "y": 0.04,
+            "text": "SPIN!",
+            "after": "S4.MOLINETE_GIRA"
+          }
+        ]
+      }
+    }
+  ]
+}

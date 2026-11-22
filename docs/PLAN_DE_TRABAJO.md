@@ -41,7 +41,7 @@ Comprobado contra la app el 20/10/2026 con `grep` sobre `lib/` y
 | Marco normativo: OBX5, CA2.7 por nivel, un período semanal en 2.º ciclo, XADE | `curriculo-ingles-infantil-galicia.txt` | Citas del Decreto 150/2022; criterios de 1.º ciclo vacíos | **F6** |
 | Ratios de 3 adultos y subgrupos | sparkling | No está | P3: una adulta |
 | Marioneta-ancla de habla solo en L2 | sparkling | Lúa existe, pero en Academy habla en gl/es | P4: **F2** (Lúa solo en inglés) |
-| Registro objetivo (LENA, pruebas) | sparkling | No está; la app no guarda datos de criaturas | P5: **F2** (se explica) |
+| Registro objetivo (LENA, pruebas) | sparkling | No está; la app no guarda datos de niños y niñas | P5: **F2** (se explica) |
 
 ## 3. Fases, en orden de lo que Frank verá antes
 

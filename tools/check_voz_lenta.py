@@ -72,6 +72,19 @@ def _frases_neno() -> list[tuple[str, str]]:
             mira = p.get("mira_e_nota")
             if isinstance(mira, dict) and mira.get("frase_en"):
                 out.append((f"acopros mes {p.get('mesCalendario', '?')} mira_e_nota", str(mira["frase_en"])))
+
+    ar_path = CONTENT_DIR / "escoita" / "ar_estimulacion.json"
+    if ar_path.exists():
+        ar = json.loads(ar_path.read_text(encoding="utf-8"))
+        for act in ar.get("actividades_faciais") or []:
+            if act.get("frase_en"):
+                out.append((f"ar.face.{act.get('id', '?')}", str(act["frase_en"])))
+        for esc in ar.get("escenas") or []:
+            for fr in esc.get("frases_en") or []:
+                out.append((f"ar.{esc.get('id', '?')}.frase", str(fr)))
+            for ev in (esc.get("scene_spec") or {}).get("events") or []:
+                if ev.get("englishPhrase"):
+                    out.append((f"ar.{esc.get('id', '?')}.ev", str(ev["englishPhrase"])))
     return out
 
 

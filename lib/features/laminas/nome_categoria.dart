@@ -10,7 +10,7 @@ String nomeCategoria(String clave, AppLanguage lang) {
     'alfabeto': ['Alfabeto', 'Alfabeto'],
     'vocabulario': ['Vocabulario', 'Vocabulario'],
     'animais': ['Animais', 'Animales'],
-    'vigo_natureza': ['Vigo e natureza', 'Vigo y naturaleza'],
+    'vigo_natureza': ['Natureza e ría', 'Naturaleza y ría'],
     'escola_rutinas': ['Escola e rutinas', 'Escuela y rutinas'],
     'emocions_corpo': ['Emocións e corpo', 'Emociones y cuerpo'],
     'cuento_ilustrado': ['Contos ilustrados', 'Cuentos ilustrados'],

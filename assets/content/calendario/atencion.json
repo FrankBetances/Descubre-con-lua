@@ -1,7 +1,7 @@
 {
   "version": 1,
   "id": "calendario.atencion.01",
-  "nota": "Guía de la familia para el inglés en casa. Contenido, no código. Los minutos son un TIEMPO DE JUEGO SUGERIDO, escrito en lenguaje de crianza: no son un valor normativo de desarrollo ni una medida de nada, y la app no evalúa a ninguna criatura. Las frases de `fraseIngles` tienen grabación en assets/voice/, igual que el léxico de meses.json.",
+  "nota": "Guía de la familia para el inglés en casa. Contenido, no código. Los minutos son un TIEMPO DE JUEGO SUGERIDO, escrito en lenguaje de neno ou nena: no son un valor normativo de desarrollo ni una medida de nada, y la app no evalúa a ninguna neno ou nena. Las frases de `fraseIngles` tienen grabación en assets/voice/, igual que el léxico de meses.json.",
   "reglas": [
     {
       "id": "linguas",
@@ -31,8 +31,8 @@
       "id": "sen_pantallas",
       "icono": "sen_pantallas",
       "titulo": {
-        "gl": "3. A app é para ti, non para a crianza",
-        "es": "3. La app es para ti, no para la criatura"
+        "gl": "3. A app é para ti, non para o neno ou a nena",
+        "es": "3. La app es para ti, no para el niño o la niña"
       },
       "texto": {
         "gl": "Escoita aquí a pronuncia antes de xogar. Cando xogues con ela, garda o móbil no peto: a lingua apréndese na mirada, na voz e no contacto, non nunha pantalla.",
@@ -44,7 +44,10 @@
     {
       "id": "0_6",
       "icono": "bebe",
-      "rangoEdad": { "gl": "0 a 6 meses", "es": "0 a 6 meses" },
+      "rangoEdad": {
+        "gl": "0 a 6 meses",
+        "es": "0 a 6 meses"
+      },
       "minutosSugeridos": 2,
       "momentoDomestico": {
         "gl": "Masaxe suave tras o baño ou no cambio de cueiro.",
@@ -63,7 +66,10 @@
     {
       "id": "6_12",
       "icono": "mirada",
-      "rangoEdad": { "gl": "6 a 12 meses", "es": "6 a 12 meses" },
+      "rangoEdad": {
+        "gl": "6 a 12 meses",
+        "es": "6 a 12 meses"
+      },
       "minutosSugeridos": 3,
       "momentoDomestico": {
         "gl": "Xogo de agocho na alfombra (peek-a-boo).",
@@ -82,7 +88,10 @@
     {
       "id": "12_18",
       "icono": "camina",
-      "rangoEdad": { "gl": "12 a 18 meses", "es": "12 a 18 meses" },
+      "rangoEdad": {
+        "gl": "12 a 18 meses",
+        "es": "12 a 18 meses"
+      },
       "minutosSugeridos": 5,
       "momentoDomestico": {
         "gl": "Ao calzar os zapatos ou mudar a roupa pola mañá.",
@@ -101,7 +110,10 @@
     {
       "id": "18_24",
       "icono": "auga",
-      "rangoEdad": { "gl": "18 a 24 meses", "es": "18 a 24 meses" },
+      "rangoEdad": {
+        "gl": "18 a 24 meses",
+        "es": "18 a 24 meses"
+      },
       "minutosSugeridos": 6,
       "momentoDomestico": {
         "gl": "No lavabo, ao lavar as mans ou no baño.",
@@ -120,7 +132,10 @@
     {
       "id": "24_36",
       "icono": "movemento",
-      "rangoEdad": { "gl": "24 a 36 meses", "es": "24 a 36 meses" },
+      "rangoEdad": {
+        "gl": "24 a 36 meses",
+        "es": "24 a 36 meses"
+      },
       "minutosSugeridos": 8,
       "momentoDomestico": {
         "gl": "Xogo de desprazamento na alfombra do salón.",

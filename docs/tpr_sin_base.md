@@ -71,7 +71,7 @@ Total piezas auditadas sin base visual hasta ahora: **835**.
 | P2.90 | Can you write your name? | ¿Sabes escribir tu nombre? | phrase | Escribir en el aire | Pregunta ligada a escritura y texto propio del niño. |
 | P2.83 | Carefree | Despreocupado | adjective | Saltar libres | Adjetivo anímico abstracto («Despreocupado»); indistinguible de saltar alegre sin texto. |
 | P2.90 | Caring | Atento | adjective | Preguntar «¿estás bien?» con la mano | Valor afectivo abstracto sin símbolo único no ambiguo. |
-| P2.88 | Castrelos Park | Parque de Castrelos | noun | Señalar el parque en el mapa | Topónimo local concreto («Parque de Castrelos»); sin rótulo de texto no se distingue de un parque genérico. |
+| P2.88 | Autumn park | Parque de otoño | noun | Señalar el parque en el mapa | Parque en otoño («Parque de otoño»); sin rótulo de texto no se distingue de un parque genérico. |
 | P2.88 | Cat and hat rhyme! | ¡Cat y hat riman! | phrase | Señalar la cabeza y hacer un gato | Concepto fonológico verbal en inglés («¡Cat y hat riman!»). |
 | P2.83 | Ceremony | Ceremonia | noun | Caminar despacio y erguido | Sustantivo institucional abstracto («Ceremonia»); ambiguo frente a desfilar o caminar erguido. |
 | P2.90 | Challenge | Desafío | noun | Poner los puños fuertes | Sustantivo abstracto de reto sin objeto concreto universal. |
@@ -419,7 +419,7 @@ Total piezas auditadas sin base visual hasta ahora: **835**.
 | P2.93 | Older | Mayor | adjective | Medirse la altura con la mano por encima de la cabeza | Comparativo de edad (`mayor`) sin referencia clara sin texto. |
 | P2.89 | Oldest | El más viejo | adjective | Señalar arriba en el álbum | Superlativo temporal abstracto («El más viejo»). |
 | P2.89 | On time | A tiempo | adjective | Señalar el reloj y sonreír | Concepto temporal de puntualidad («A tiempo»); un reloj solo no expresa puntualidad sin texto. |
-| P2.88 | One by one | Uno a uno | complex | Tocar el hombro de cada criatura, de una en una | Secuencia adverbial («Uno a uno»); requiere orden temporal o numeración escrita. |
+| P2.88 | One by one | Uno a uno | complex | Tocar el hombro de cada niño o niña, de una en una | Secuencia adverbial («Uno a uno»); requiere orden temporal o numeración escrita. |
 | P2.93 | One for you, one for me | Uno para ti, uno para mí | complex | Repartir dos bloques | Frase verbal de reparto (`uno para ti, uno para mí`). |
 | P2.87 | One more sleep! | ¡Solo una noche más! | phrase | Enseñar un dedo | Expresión temporal idiomática («¡Solo una noche más!»); imposible distinguirla de «dormir» sin texto. |
 | P2.93 | One step, two steps | Un paso, dos pasos | complex | Dar un paso y luego dos | Consigna numérica secuencial que requiere leer números. |
@@ -594,7 +594,7 @@ Total piezas auditadas sin base visual hasta ahora: **835**.
 | P2.94 | Sort by number | Ordenar por número | verb | Poner en fila de menos a más | Regla numérica (`ordenar por número`) prohibida sin dígitos. |
 | P2.94 | Sorted | Clasificado | adjective | Juntar ceras del mismo color | Participio duplicado de `sort`. |
 | P2.94 | Sourer | Más ácido | adjective | Arrugar más la cara | Grado comparativo (`más ácido`) sin escala visual frente a `sour`. |
-| P2.89 | Special | Especial | adjective | Señalar a cada criatura con una sonrisa | Adjetivo valorativo abstracto («Especial»). |
+| P2.89 | Special | Especial | adjective | Señalar a cada niño o niña con una sonrisa | Adjetivo valorativo abstracto («Especial»). |
 | P2.87 | Speech | Discurso | noun | Hablar delante de todos | Concepto lingüístico abstracto («Discurso»); sin texto se confunde con «talk» o «give a speech». |
 | P2.90 | Speedy | Veloz | adjective | Mover los pies muy rápido | Adjetivo de rapidez sin objeto único (reduntante con rápido/correr/coche). |
 | P2.94 | Spit out | Escupir | verb | Escupir en el lavabo | Duplicada directa de `spit in the sink`. |
@@ -716,7 +716,7 @@ Total piezas auditadas sin base visual hasta ahora: **835**.
 | P2.86 | Useful helper | Ayudante útil | adjective | Llevar una caja | Epíteto valorativo («Ayudante útil»); redundante con «helpful» y «cooperate». |
 | P2.94 | Vegetables make us strong | Las verduras nos hacen fuertes | complex | Poner los brazos fuertes | Oración nutricional compleja dependiente del mensaje verbal. |
 | P2.84 | Verse | Verso | noun | Marcar el ritmo de un verso | Concepto textual/poético («Verso»); ya señalado en P2.81 sin base visual propia. |
-| P2.88 | Vigo was small, but now it is big | Vigo era pequeño, pero ahora es grande | complex | Juntar las manos y abrirlas | Oración histórica comparativa («Vigo era pequeño, pero ahora es grande»). |
+| P2.88 | The town was small, but now it is big | La villa era pequeña, pero ahora es grande | complex | Juntar las manos y abrirlas | Oración histórica comparativa («La villa era pequeña, pero ahora es grande»). |
 | P2.84 | Visit | Visitar | verb | Caminar y mirar alrededor | Verbo social genérico («Visitar»); sin acción u objeto único distinguible sin texto. |
 | P2.88 | Vivid | Vivo | adjective | Abrir los ojos mucho | Adjetivo sensorial abstracto («Vivo»). |
 | P2.87 | Voice | Voz | noun | Hablar con una voz distinta | Fenómeno acústico invisible («Voz»); carece de imagen única no textual. |
@@ -725,7 +725,7 @@ Total piezas auditadas sin base visual hasta ahora: **835**.
 | P2.83 | Walking is better than driving for short trips | Caminar es mejor que conducir para ir cerca | complex | Caminar y sonreír | Juicio comparativo de movilidad imposible de expresar fielmente sin texto. |
 | P2.84 | Warm-hearted | De buen corazón | adjective | Abrazarse a sí mismo | Adjetivo moral abstracto («De buen corazón»). |
 | P2.90 | Warm-up exercise | Calentamiento | noun | Mover los brazos en círculos | Duplicado directo de `warm up your body` en el mismo grupo `move`. |
-| P2.88 | Was Vigo always big? | ¿Vigo siempre fue grande? | phrase | Abrir y cerrar las manos | Pregunta histórica verbal («¿Vigo siempre fue grande?»). |
+| P2.88 | Was the town always big? | ¿La villa siempre fue grande? | phrase | Abrir y cerrar las manos | Pregunta histórica verbal («¿La villa siempre fue grande?»). |
 | P2.86 | Wasteful | Que desperdicia | adjective | Dejar caer agua y parar | Adjetivo moral abstracto («Que desperdicia»); no se distingue claramente de un grifo abierto o salpicar. |
 | P2.94 | Water first, then soap | Primero agua, luego jabón | complex | Hacer los dos gestos en orden | Secuencia instruccional en dos tiempos dependiente del texto. |
 | P2.85 | Wave to families | Saludar a las familias | verb | Saludar al público | Acción redundante con «hand wave» y «proud parents» sin marca propia. |

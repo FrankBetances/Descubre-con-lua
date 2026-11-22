@@ -103,7 +103,8 @@
             "gl": "Asentir coa cabeza",
             "es": "Asentir con la cabeza"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_agree"
         },
         {
           "id": "4_5.setembro.s1.raise-a-hand",

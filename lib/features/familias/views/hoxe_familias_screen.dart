@@ -486,16 +486,6 @@ class _HoxeFamiliasScreenState extends State<HoxeFamiliasScreen> {
               language: lang,
               audioService: widget.audioService,
             ),
-            const SizedBox(height: 12),
-            EntradaEstimulacionCard(
-              cursoId: widget.cursoId,
-              mesCalendario: _toca.dia.mesCalendario,
-              language: lang,
-              onLanguageChanged: widget.onLanguageChanged,
-              audioService: widget.audioService,
-              enAula: false,
-              onCambiarCurso: widget.onCambiarCurso,
-            ),
             // O-20261109-3: Lúa de Valeria, con los premios del niño.
             if (CrianzaDaCasa.maybeOf(context) case final casa?)
               if (casa.store.activa case final neno?) ...[

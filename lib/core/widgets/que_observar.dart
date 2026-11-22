@@ -22,8 +22,8 @@ class QueObservar extends StatelessWidget {
   static const _titulo =
       LocalizedString(gl: 'Que observar', es: 'Qué observar');
   static const _nota = LocalizedString(
-    gl: 'Non é unha avaliación: son pistas para ti. A app non garda nada de ningunha criatura.',
-    es: 'No es una evaluación: son pistas para ti. La app no guarda nada de ninguna criatura.',
+    gl: 'Non é unha avaliación: son pistas para ti. A app non garda nada de ningún neno nin nena.',
+    es: 'No es una evaluación: son pistas para ti. La app no guarda nada de ningún niño ni niña.',
   );
 
   @override

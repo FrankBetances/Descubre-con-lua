@@ -1,22 +1,25 @@
-# Lo que queda pendiente (lista para la semana del 23/11/2026)
+# Pendiente después de P10
 
-Actualizada por Claude Code el 20/11/2026, después de mergear P9 (Estimulación del lenguaje y el pensamiento). Cada punto dice quién lo hace.
+Rama `antigravity/escoita` con la entrega integral **P10** completada localmente (`P10.0`–`P10.9`). Quedan únicamente las validaciones en dispositivo real, los pasos que requieren ejecución en GitHub/CI y las decisiones reservadas a Frank / Claude Code:
 
-## Decisiones de Frank (nadie puede avanzarlas sin él)
+1. **Push de `antigravity/escoita`, CI y revisión por Claude Code (`O-20261122-1`)**
+   - Desde este entorno el `git push` devuelve HTTP 403 porque `FrankBetances/Descubre-con-lua` no figura montado como recurso conectable. Quedan todos los commits (`P10.0`–`P10.9`) en local sobre `antigravity/escoita`.
+   - Tras subir la rama, Claude Code valida el trabajo, marca las evidencias en `docs/ORDENES.md` (incluidos `O-20261120-1`, `O-20261120-2` y `O-20261122-1`) y comprueba el run completo en CI (`Flutter 3.47.9`, `AGP 8.11.1`, `Gradle 8.14.3`) más `aapt2 dump permissions` sobre el APK generado por CI.
 
-1. **Realidad aumentada (ORDEN de Frank, 20/11/2026): traer la RA de Valeria adaptada al aprendizaje de inglés, con el permiso de cámara.** Lo hace Antigravity (P10, el prompt se da la semana que viene). En el mismo cambio: AndroidManifest (CAMERA), política de privacidad, ficha de Seguridad de los datos de Play y gate de permisos. Claude Code lo revisa y lo mergea.
-2. **ORDEN de Frank (20/11/2026): quitar la entrada de Estimulación de abajo en Hoxe (casa y aula); se queda la de arriba.** El freno de borrado no la dejó quitar porque el mensaje decía «quitarlo»; se hace la semana que viene con su «quita la entrada de abajo», o ampliando el freno para que entienda «quitarlo».
-3. **Hecho: la logopeda escuchó los pares mínimos y los dio por buenos** (Frank, 20/11/2026).
-4. **Hecho: la voz copiada de Valeria** (orden de Frank): las mismas velocidades (niño 1.05, lenta 1.6, adulto 1.0) y la misma frase lenta con «Oír despacio». Comprobar en el APK que suena (punto 7).
-5. **Probar en la app** (Na casa → Hoxe → Estimulación) tres meses de edades distintas y darlo por bueno (O-20261118-3).
+2. **Síntesis de nuevos audios en CI (`voice-assets`)**
+   - `voice-corpus.json` está al día (`40160 locutions`, `export_voice_corpus.py --check` en verde) tras P10.1, P10.2, P10.4 y P10.5.
+   - Falta ejecutar en CI el workflow `voice-assets` para sintetizar los `.m4a` nuevos/modificados (gallego, castellano e inglés en voz `child` `1.05` y lenta `1.6`) y verificar `python3 tools/check_voice_coverage.py`.
 
-## Trabajo de Claude Code
+3. **Prueba en dispositivo Android físico con ARCore y cámara real (NO PROBADO)**
+   - Comprobar en teléfono físico con Android: escena ARCore + Filament en mesa real, espejo facial frontal MediaPipe (`ar1`–`ar6`), degradación en un terminal sin ARCore o sin permiso de cámara y escucha real de «Oír amodo / Oír despacio» (`1.6`).
 
-6. **Ver en un móvil Android real** la sección nueva: nada de esto se ha visto en un aparato, solo en la app de escritorio. Sobre todo el texto en gallego con letra grande.
-7. **Botón «Oír despacio».** En escritorio no se ve porque los audios nuevos aún no estaban generados; comprobar en el APK de main que sale al lado de cada frase.
-8. **Freno de borrado.** Proponer a Frank que el hook `sin_borrar.py` bloquee también `mv` y `git mv` de ficheros del repositorio (fallo del 20/11 con `test/failures`). Solo Frank puede cambiar los hooks.
+4. **Decisión de Frank sobre 302 grabaciones huérfanas (`8.4 MB`)**
+   - `python3 tools/prune_voice_assets.py --check` detecta 302 ficheros `.m4a` que ya no corresponden a ninguna locución (p. ej. `en_child_0321e0f6_32.m4a`, `en_child_062f5505_35.m4a`, `en_child_08eaa6cc_30.m4a`, `en_child_0911caa2_10.m4a`, `en_child_14248edc_34.m4a`).
+   - Conservados en disco sin borrar por regla R-BORRAR; pendientes de que Frank autorice `python3 tools/prune_voice_assets.py --borrar`.
 
-## Trabajo de Antigravity
+5. **Actualización de `CLAUDE.md` («Privacidad declarada = privacidad compilada»)**
+   - Antigravity no edita `CLAUDE.md`; texto propuesto incluido en la entrega para que Claude Code lo someta a Frank y actualice el párrafo de permisos permitidos (`CAMERA` opcional junto a `DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION`).
 
-9. **P9.4, si Frank dice sí a la cámara:** realidad aumentada en Flutter con los sets de Valeria orientados al STEAM del mes, Lúa como guía, gl y es.
-10. **Revisión de inglés** de las frases «frase» de cada palabra (las que suenan en voz de niño) con el mismo criterio con que Claude Code corrigió los momentos de pensamiento: frases cortas, gramaticales y del experimento.
+6. **Pendientes previos de repositorio / herramienta**
+   - Revisar `.claude/hooks/sin_borrar.py` (fuera del alcance de Antigravity) para que distinga el borrado de trabajo de una orden expresa de quitar un elemento repetido.
+   - Compilar `check_pulse_bpm.py` (con `numpy`) y `check_voice_levels.py` (con `ffmpeg`) en CI, donde ambas herramientas están disponibles.

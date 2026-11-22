@@ -91,11 +91,11 @@ def main() -> int:
            "<h1>Descubre con Lúa · Material por edades</h1>",
            "<p>Todo el material que la app enseña en cada edad, tal como sale de sus ficheros de "
            "contenido: diez temas por edad, uno por mes, de cuatro semanas. Cada tema trabaja una "
-           "unidad de gramática de las 48 (A1-A2 para las criaturas) y tiene su experimento STEAM, "
+           "unidad de gramática de las 48 (A1-A2 para los niños y las niñas) y tiene su experimento STEAM, "
            "que es el eje del mes; cada semana, sus palabras nuevas, la frase de la unidad, su cuento "
            "y los cinco días. Al final, las unidades 21-48 (B1-C1), para la persona adulta.</p>"]
 
-    out.append("<h2>El método: cómo se habla a la criatura</h2>")
+    out.append("<h2>El método: cómo se habla al niño o a la niña</h2>")
     out.append(f"<p>{e(modelo.get('intro') or modelo.get('resumo') or '')}</p>")
     for sec in modelo.get("seccions") or []:
         out.append(f"<h3>{e(sec.get('titulo'))}</h3>" + campos(sec))

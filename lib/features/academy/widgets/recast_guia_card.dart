@@ -33,7 +33,7 @@ class RecastGuiaCard extends StatelessWidget {
         es: '«¡Sí! El abrigo en la percha: Up on the hook, zip!» (Acompañar con el gesto de colgar y subir la cremallera sin pedir que repita).',
       ),
       consejoEvitar: LocalizedString(
-        gl: '«Non se di así! Mal, tes que dicir: mamá, colle o abrigo...» (Convértese en exame: a crianza cala e deixa de probar).',
+        gl: '«Non se di así! Mal, tes que dicir: mamá, colle o abrigo...» (Convértese en exame: o neno ou a nena cala e deixa de probar).',
         es: '«¡No se dice así! Mal, tienes que decir: mamá, coge el abrigo...» (Se convierte en examen: el niño calla y deja de probar).',
       ),
     ),
@@ -183,7 +183,9 @@ class RecastGuiaCard extends StatelessWidget {
                         const SizedBox(width: 8),
                         Expanded(
                             child: Text(
-                          isGl ? 'A crianza di:' : 'La criatura dice:',
+                          isGl
+                              ? 'O neno ou a nena di:'
+                              : 'El niño o la niña dice:',
                           style: const TextStyle(
                             fontFamily: AppTheme.fontFamily,
                             fontSize: 13,

@@ -180,7 +180,7 @@ def _escenas() -> dict[str, tuple[str, list[dict], str, str | None]]:
             E(111, 71, 7.5, 7.5, PEL, PELB, 1.8),
             E(114, 70, 1.3, 1.5, TINTA),
         ] + pompas([(122, 58, 3), (128, 50, 4)]),
-        "Pez tropical y criatura nadando juntos con las manos delante bajo el agua.")
+        "Pez tropical y niño o niña nadando juntos con las manos delante bajo el agua.")
     put("swim underwater", "D",
         [
             R(0, 0, 160, 100, 0, "#bae6fd"),
@@ -191,7 +191,7 @@ def _escenas() -> dict[str, tuple[str, list[dict], str, str | None]]:
             R(88, 54, 9, 5, 2, "#38bdf8", AZUL_OSCURO, 1.4),
             L("M96 58 L114 54", PELB, 3.0),
         ] + pompas([(100, 44, 3.5), (104, 34, 4.5), (96, 48, 2.5)]),
-        "Criatura con gafas buceando por debajo de la línea de las olas con burbujas.")
+        "Niño o niña con gafas buceando por debajo de la línea de las olas con burbujas.")
     put("swish", "D",
         fondo_sala() + [
             E(64, 46, 20, 20, PEL, PELB, 2.2),
@@ -231,7 +231,7 @@ def _escenas() -> dict[str, tuple[str, list[dict], str, str | None]]:
         "Fondo marino bajo las olas con pez tropical, coral y burbujas.")
     put("under the umbrella", "C",
         fondo_prado() + gotas([(24, 20), (42, 14), (120, 16), (136, 24)]) + fl("Umbrella", 44, 12, 72) + nino_busto(68, 56, camisa=(ROJO, ROJO_OSCURO), r=7) + nino_busto(92, 56, camisa=(AZUL, AZUL_OSCURO), r=7),
-        "Dos criaturas resguardadas bajo un gran paraguas mientras llueve fuera.")
+        "Dos niños o niñas resguardadas bajo un gran paraguas mientras llueve fuera.")
     put("wash vegetables", "C",
         fondo_mesa() + _grifo(64, 12) + [L("M84 26 L84 44", AGUA, 4.5)] + fl("Carrot", 44, 40, 36) + fl("Tomato", 84, 44, 34) + gotas([(66, 36), (98, 36)]),
         "Zanahoria y tomate frescos lavándose bajo el agua del grifo.")
@@ -248,7 +248,7 @@ def _escenas() -> dict[str, tuple[str, list[dict], str, str | None]]:
             R(90, 20, 10, 8, 2, AZUL_OSCURO),
             R(86, 40, 18, 16, 2, "#bae6fd"),
         ],
-        "Botella reutilizable de agua junto a una criatura dispuesta a dar un sorbo.")
+        "Botella reutilizable de agua junto a un niño o una niña dispuesta a dar un sorbo.")
     put("water it", "C",
         fondo_prado() + _regadera(32, 22, VERDE, VERDE_OSCURO) + gotas([(82, 42), (90, 50)]) + fl("Potted plant", 88, 36, 44),
         "Regadera vertiendo agua sobre la planta de la maceta.")
@@ -304,7 +304,7 @@ def _escenas() -> dict[str, tuple[str, list[dict], str, str | None]]:
             E(66, 47, 4.5, 4.0, "#fed7aa", "#c2410c", 1.2),
             L("M72 48 Q78 52 72 56", ROJO, 1.8),
         ] + fl("Red apple", 96, 36, 38),
-        "Criatura con el carrillo lleno masticando despacio un bocado de manzana.")
+        "Niño o niña con el carrillo lleno masticando despacio un bocado de manzana.")
     put("chocolate", "D",
         fondo_mesa() + nino_busto(48, 44, camisa=(AZUL, AZUL_OSCURO), r=10.5) + [
             R(84, 44, 36, 28, 6, ROJO, ROJO_OSCURO, 2.2),
@@ -333,7 +333,7 @@ def _escenas() -> dict[str, tuple[str, list[dict], str, str | None]]:
         "Vaso de agua dulce cristalina recién recogida.")
     put("hydrated", "C",
         fondo_prado() + nino_busto(58, 44, camisa=(AZUL, AZUL_OSCURO), r=10.5) + _vaso_agua(98, 40, 22, 30) + fl("Sparkles", 112, 18, 26),
-        "Criatura sonriente y fresca hidratándose con un vaso de agua limpia.")
+        "Niño o niña sonriente y fresca hidratándose con un vaso de agua limpia.")
     put("ice lolly", "D",
         fondo_cielo() + [
             R(74, 58, 12, 28, 4, MADERA, MADERA_OSCURA, 1.8),
@@ -352,7 +352,7 @@ def _escenas() -> dict[str, tuple[str, list[dict], str, str | None]]:
             E(98, 36, 15, 13, ROSA, ROSA_OSCURO, 2.0),
             E(92, 26, 11, 10, AMARILLO, AMARILLO_OSCURO, 1.8),
         ],
-        "Criatura sacando la lengua para lamer un cucurucho de helado.")
+        "Niño o niña sacando la lengua para lamer un cucurucho de helado.")
     put("refreshing", "C",
         fondo_cielo("#e0f2fe") + _vaso_agua(76, 32, 30, 40) + [R(70, 36, 10, 10, 2, "#bae6fd", AGUA_OSCURO, 1.5)] + fl("Ice", 32, 36, 34) + lineas_viento(104, 42, 26, AGUA_OSCURO),
         "Agua helada con cubito de hielo y brisa refrescante.")
@@ -371,7 +371,7 @@ def _escenas() -> dict[str, tuple[str, list[dict], str, str | None]]:
         "Cara feliz relamiéndose los labios con la lengua ante una fresa dulce.")
     put("thirsty", "C",
         fondo_cielo("#fef3c7") + fl("Sun", 16, 12, 34) + nino_busto(58, 46, camisa=(ROJO, ROJO_OSCURO), r=10.5) + [E(46, 42, 2.4, 3.5, AGUA)] + _vaso_agua(104, 42, 24, 32) + frecha((74, 54), (90, 54), AGUA_OSCURO, 2.4),
-        "Criatura con calor y sed tendiendo la mano hacia un vaso de agua fresca.")
+        "Niño o niña con calor y sed tendiendo la mano hacia un vaso de agua fresca.")
     put("water break", "C",
         fondo_prado() + nino_corriendo(48, 22, camisa=(VERDE, VERDE_OSCURO)) + [
             R(100, 32, 20, 38, 5, AGUA, AGUA_OSCURO, 2.0),
@@ -380,7 +380,7 @@ def _escenas() -> dict[str, tuple[str, list[dict], str, str | None]]:
         "Pausa tras correr para hidratarse bebiendo agua de la botella.")
     put("water cup", "D",
         fondo_mesa() + nino_busto(54, 44, camisa=(AZUL, AZUL_OSCURO), r=10.5) + _vaso_agua(98, 40, 26, 32),
-        "Vaso propio lleno de agua limpia junto a la criatura para beber.")
+        "Vaso propio lleno de agua limpia junto al niño o a la niña para beber.")
     put("yummy", "C",
         fondo_mesa() + nino_busto(56, 44, camisa=(ROSA, ROSA_OSCURO), r=10.5) + [E(62, 51, 3.2, 3.2, "#ec4899")] + fl("Cupcake", 94, 32, 42),
         "Cara relamiéndose de gusto frente a un pastelito riquísimo.")
@@ -404,7 +404,7 @@ def _escenas() -> dict[str, tuple[str, list[dict], str, str | None]]:
             L("M66 56 L94 56", PEL, 3.0),
             E(80, 56, 5, 4, PEL, PELB, 1.6),
         ],
-        "Dos criaturas sonrientes dándose la mano con gesto amigable.")
+        "Dos niños o niñas sonrientes dándose la mano con gesto amigable.")
     put("huddle together", "D",
         fondo_cielo("#dbeafe") + [R(0, 74, 160, 26, 0, BLANCO, GRIS, 2.0)] + copos_nieve([(28, 22), (132, 22), (80, 14)])
           + nino_busto(62, 46, camisa=(ROJO, ROJO_OSCURO), r=8)
@@ -413,7 +413,7 @@ def _escenas() -> dict[str, tuple[str, list[dict], str, str | None]]:
         "Tres niños muy juntos acurrucándose para darse calor en el frío.")
     put("kind", "C",
         fondo_prado() + nino_busto(48, 42, camisa=(ROSA, ROSA_OSCURO), r=9.5) + nino_busto(112, 42, camisa=(AZUL, AZUL_OSCURO), r=9.5, mira=-1) + fl("Red apple", 68, 36, 24) + frecha((68, 64), (92, 64), ROJO, 2.4),
-        "Criatura amable ofreciendo una manzana con una sonrisa a su amiga.")
+        "Niño o niña amable ofreciendo una manzana con una sonrisa a su amiga.")
     put("shoal", "D",
         fondo_mar() + [
             E(44, 68, 10, 5, "#93c5fd", AZUL_OSCURO, 1.6), P([(34, 68), (27, 63), (27, 73)], "#93c5fd", AZUL_OSCURO, 1.4),
@@ -695,7 +695,7 @@ def _escenas() -> dict[str, tuple[str, list[dict], str, str | None]]:
             R(52, 60, 6, 16, 1, MADERA_OSCURA),
             R(102, 60, 6, 16, 1, MADERA_OSCURA),
         ] + nino_busto(80, 32, camisa=(VERDE, VERDE_OSCURO), r=9, ojos="cerrados"),
-        "Criatura sentada en un banco descansando tranquila en una pausa.")
+        "Niño o niña sentada en un banco descansando tranquila en una pausa.")
     put("taller", "D",
         fondo_sala() + [
             R(46, 56, 22, 20, 2, ROJO, ROJO_OSCURO, 1.8),
@@ -760,7 +760,7 @@ def _escenas() -> dict[str, tuple[str, list[dict], str, str | None]]:
             L("M52 38 L46 44 L52 50", AZUL_OSCURO, 2.2),
             L("M108 38 L114 44 L108 50", AZUL_OSCURO, 2.2),
         ],
-        "Criatura tiritando helada entre copos de nieve y líneas de temblor.")
+        "Niño o niña tiritando helada entre copos de nieve y líneas de temblor.")
     put("glitter", "C",
         fondo_sala() + fl("Jar", 52, 24, 52) + fl("Sparkles", 64, 40, 28) + [E(46, 28, 2.5, 2.5, DORADO), E(112, 34, 2.5, 2.5, ROSA), E(108, 60, 2, 2, AZUL)],
         "Bote transparente lleno de purpurina brillante centelleando.")
@@ -855,7 +855,7 @@ def _escenas() -> dict[str, tuple[str, list[dict], str, str | None]]:
             R(92, 19, 10, 7, 2, AZUL_OSCURO),
             E(92, 54, 2, 1.6, TIERRA_CLARA), E(100, 56, 2, 1.6, TIERRA_CLARA), E(96, 48, 2, 1.6, TIERRA_CLARA),
         ] + frecha((116, 34), (116, 18), NARANJA, 2.0) + frecha((116, 48), (116, 64), NARANJA, 2.0),
-        "Criatura agitando arriba y abajo una botella cerrada con granos dentro.")
+        "Niño o niña agitando arriba y abajo una botella cerrada con granos dentro.")
     put("shake the glitter", "C",
         fondo_cielo("#e0f2fe") + fl("Jar", 54, 26, 48) + fl("Sparkles", 64, 38, 28) + ondas_sonido(44, 48, ROSA, -1) + ondas_sonido(116, 48, ROSA, 1),
         "Tarro de purpurina agitándose con ondas de movimiento y destellos.")
@@ -878,7 +878,7 @@ def _escenas() -> dict[str, tuple[str, list[dict], str, str | None]]:
         fondo_sala() + nino((80, 32), (80, 44), (80, 60), [[(60, 26)], [(100, 26)]], [[(74, 80)], [(86, 80)]], camisa=(PEL, PELB)) + [
             F("M64 14 L96 14 L108 26 L100 34 L94 28 L94 34 L66 34 L66 28 L60 34 L52 26 Z", ROJO, ROJO_OSCURO, 2.0),
         ] + frecha((44, 38), (44, 16), AZUL_OSCURO, 2.2),
-        "Criatura tirando hacia arriba para quitarse la camiseta.")
+        "Niño o niña tirando hacia arriba para quitarse la camiseta.")
     put("watch the glitter settle", "D",
         fondo_mesa() + [
             R(64, 22, 32, 52, 7, "#e0f2fe", AZUL_OSCURO, 2.0),
@@ -969,7 +969,7 @@ def _escenas() -> dict[str, tuple[str, list[dict], str, str | None]]:
         "Tarro de miel dulce que hace sonreír frente al limón ácido.")
     put("i'm a tiger", "C",
         fondo_prado() + fl("Tiger", 28, 24, 48) + nino((106, 24), (106, 36), (106, 52), [[(90, 34)], [(122, 34)]], [[(100, 74)], [(112, 74)]], camisa=(NARANJA, NARANJA_OSCURO)),
-        "Tigre rayado y criatura imitando sus zarpas con alegría.")
+        "Tigre rayado y niño o niña imitando sus zarpas con alegría.")
     put("jolly", "C",
         fondo_sala() + nino((80, 24), (80, 36), (80, 52), [[(60, 24)], [(100, 24)]], [[(68, 72)], [(92, 72)]], camisa=(AMARILLO, AMARILLO_OSCURO)) + notas([(34, 34), (48, 22), (114, 24), (128, 36)]),
         "Niño muy alegre saltando y riendo al ritmo de la música.")
@@ -990,7 +990,7 @@ def _escenas() -> dict[str, tuple[str, list[dict], str, str | None]]:
             L("M108 28 L116 22", NARANJA, 2.2),
             L("M110 38 L120 38", NARANJA, 2.2),
         ],
-        "Criatura riendo a carcajadas con destellos de alegría alrededor.")
+        "Niño o niña riendo a carcajadas con destellos de alegría alrededor.")
     put("laugh together", "D",
         fondo_prado() + nino_busto(58, 40, camisa=(ROJO, ROJO_OSCURO), r=9.5, brazos_arriba=True) + nino_busto(102, 40, camisa=(AZUL, AZUL_OSCURO), r=9.5, mira=-1, brazos_arriba=True) + [
             L("M74 22 L80 14 L86 22", AMARILLO_OSCURO, 2.2),
@@ -1018,7 +1018,7 @@ def _escenas() -> dict[str, tuple[str, list[dict], str, str | None]]:
             R(28, 52, 104, 24, 5, AZUL, AZUL_OSCURO, 2.0),
             R(34, 46, 28, 10, 4, BLANCO, GRIS_OSCURO, 1.6),
         ] + nino_busto(80, 34, camisa=(AMARILLO, AMARILLO_OSCURO), r=9.5, brazos_arriba=True),
-        "Criatura estirando los brazos contenta y descansada al despertar.")
+        "Niño o niña estirando los brazos contenta y descansada al despertar.")
     put("say cheese", "C",
         fondo_sala() + fl("Camera", 24, 28, 44) + [
             R(76, 22, 62, 54, 6, BLANCO, AMARILLO_OSCURO, 2.2),
@@ -1068,7 +1068,7 @@ def _escenas() -> dict[str, tuple[str, list[dict], str, str | None]]:
         "Niño quitándose el antifaz de carnaval mostrando su cara sonriente.")
     put("taste sweet", "C",
         fondo_mesa() + nino_busto(54, 44, camisa=(AMARILLO, AMARILLO_OSCURO), r=10.5) + fl("Spoon", 84, 38, 32) + fl("Honey pot", 104, 32, 36),
-        "Criatura probando una cucharadita de miel dulce y sonriendo.")
+        "Niño o niña probando una cucharadita de miel dulce y sonriendo.")
     put("we share because we care", "C",
         fondo_prado() + nino_busto(46, 44, camisa=(ROJO, ROJO_OSCURO), r=9.5) + nino_busto(114, 44, camisa=(AZUL, AZUL_OSCURO), r=9.5, mira=-1) + fl("Red apple", 66, 38, 22) + fl("Red apple", 88, 38, 22),
         "Dos amigos repartiéndose por igual sus manzanas con cariño.")
@@ -1120,7 +1120,7 @@ def _escenas() -> dict[str, tuple[str, list[dict], str, str | None]]:
             R(74, 42, 16, 22, 4, "#e0f2fe", AGUA_OSCURO, 1.8),
             R(75, 48, 14, 15, 2, AGUA),
         ] + frecha((102, 56), (92, 42), AGUA_OSCURO, 2.0),
-        "Criatura acercando el vaso de agua a la boca para beber.")
+        "Niño o niña acercando el vaso de agua a la boca para beber.")
     put("eat your greens", "C",
         fondo_mesa() + plato_prop(80, 56, 28) + fl("Broccoli", 62, 36, 26) + fl("Leafy green", 84, 38, 24) + fl("Fork and knife", 26, 38, 28),
         "Plato lleno de brócoli y verdura verde con tenedor listo.")
@@ -1136,7 +1136,7 @@ def _escenas() -> dict[str, tuple[str, list[dict], str, str | None]]:
         "Primero recoger los bloques a su caja y después los coches.")
     put("flamingo pose", "C",
         fondo_prado() + fl("Flamingo", 32, 20, 50) + nino((106, 22), (106, 34), (106, 52), [[(90, 38)], [(122, 38)]], [[(106, 74)], [(118, 56), (110, 64)]], camisa=(ROSA, ROSA_OSCURO)),
-        "Flamenco rosa en una pata imitado por una criatura en equilibrio.")
+        "Flamenco rosa en una pata imitado por un niño o una niña en equilibrio.")
     put("go on holiday", "C",
         fondo_cielo() + [R(0, 74, 160, 26, 0, HERBA)] + fl("Sun", 118, 10, 30) + nino_caminando(58, 24, 1, (AMARILLO, AMARILLO_OSCURO)) + fl("Luggage", 84, 32, 42),
         "Niño saliendo feliz de vacaciones llevando su maleta.")
@@ -1214,7 +1214,7 @@ def _escenas() -> dict[str, tuple[str, list[dict], str, str | None]]:
         "Cesto trenzado lleno de ropa limpia doblada encima.")
     put("look through the binoculars", "C",
         fondo_prado() + nino_busto(78, 46, camisa=(VERDE, VERDE_OSCURO), r=11) + ico("tabler", "binoculars", 64, 28, 28, NEGRO),
-        "Criatura mirando a lo lejos con unos prismáticos delante de los ojos.")
+        "Niño o niña mirando a lo lejos con unos prismáticos delante de los ojos.")
     put("palette", "D",
         fondo_sala() + [
             E(80, 50, 34, 24, MADERA, MADERA_OSCURA, 2.2),
@@ -1237,7 +1237,7 @@ def _escenas() -> dict[str, tuple[str, list[dict], str, str | None]]:
             E(116, 26, 4, 3.5, BLANCO, GRIS_OSCURO, 1.6),
             P([(120, 25), (130, 26), (120, 28)], NARANJA),
         ],
-        "Criatura sosteniéndose en un pie imitando a la garza del agua.")
+        "Niño o niña sosteniéndose en un pie imitando a la garza del agua.")
     put("taste", "C",
         fondo_mesa() + nino_busto(56, 44, camisa=(ROSA, ROSA_OSCURO), r=10.5, ojos="cerrados") + [
             L("M72 48 L92 56", GRIS_OSCURO, 2.8),

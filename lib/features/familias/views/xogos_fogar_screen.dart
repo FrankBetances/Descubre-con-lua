@@ -139,8 +139,8 @@ class _XogosFogarScreenState extends State<XogosFogarScreen> {
                               const SizedBox(height: 4),
                               Text(
                                 isGl
-                                    ? 'A pantalla é a túa partitura. A crianza xoga con obxectos reais da casa, movemento corporal e a túa voz viva.'
-                                    : 'La pantalla es tu partitura. La criatura juega con objetos reales de la casa, movimiento corporal y tu voz viva.',
+                                    ? 'A pantalla é a túa partitura. O neno ou a nena xoga con obxectos reais da casa, movemento corporal e a túa voz viva.'
+                                    : 'La pantalla es tu partitura. El niño o la niña juega con objetos reales de la casa, movimiento corporal y tu voz viva.',
                                 style: const TextStyle(
                                   fontSize: 14,
                                   color: AppTheme.textPrimary,
@@ -365,7 +365,9 @@ class _XogosFogarScreenState extends State<XogosFogarScreen> {
 
             // Acción kinestésica
             Text(
-              isGl ? 'Movemento da crianza:' : 'Movimiento de la criatura:',
+              isGl
+                  ? 'Movemento do neno ou da nena:'
+                  : 'Movimiento del niño o de la niña:',
               style: const TextStyle(
                 fontSize: 12,
                 fontWeight: FontWeight.bold,

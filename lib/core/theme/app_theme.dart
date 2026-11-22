@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-/// Tokens de diseño y tema Material 3 de «Descubre con Lúa · Edición Vigo».
+/// Tokens de diseño y tema Material 3 de «Descubre con Lúa».
 ///
 /// Fuente única de verdad para color, radios, espaciado y tipografía. Son los
 /// tokens del proyecto anterior de la casa, portados

@@ -310,12 +310,12 @@ void main() {
         ),
       );
       await tester.pumpAndSettle();
-      // F-20261120-2: arriba de Hoxe, a la vista sin hacer scroll.
-      expect(find.byKey(const Key('entrada_estimulacion_casa')), findsWidgets);
+      // F-20261120-2 / P10.3: una sola entrada arriba de Hoxe, sin bajar.
+      expect(
+          find.byKey(const Key('entrada_estimulacion_casa')), findsOneWidget);
       expect(
           tester
-              .getTopLeft(
-                  find.byKey(const Key('entrada_estimulacion_casa')).first)
+              .getTopLeft(find.byKey(const Key('entrada_estimulacion_casa')))
               .dy,
           lessThan(300));
 
@@ -354,12 +354,12 @@ void main() {
         ),
       );
       await tester.pumpAndSettle();
-      // F-20261120-2: arriba de Hoxe del aula, a la vista sin hacer scroll.
-      expect(find.byKey(const Key('entrada_estimulacion_aula')), findsWidgets);
+      // F-20261120-2 / P10.3: una sola entrada arriba de Hoxe del aula, sin bajar.
+      expect(
+          find.byKey(const Key('entrada_estimulacion_aula')), findsOneWidget);
       expect(
           tester
-              .getTopLeft(
-                  find.byKey(const Key('entrada_estimulacion_aula')).first)
+              .getTopLeft(find.byKey(const Key('entrada_estimulacion_aula')))
               .dy,
           lessThan(300));
 

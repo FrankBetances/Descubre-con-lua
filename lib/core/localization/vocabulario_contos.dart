@@ -8,12 +8,12 @@ import 'app_language.dart';
 ///
 /// **Por qué existe.** `CuentoPagina.vocabularioClave` es una lista de cadenas
 /// planas, no un `LocalizedString`: el banco lo trae solo en gallego. La
-/// tarjeta del cuento enseñaba «Acollemento · Calma · Lúa · Vigo» igual en
+/// tarjeta del cuento enseñaba «Acollemento · Calma · Lúa · Galicia» igual en
 /// gallego que en castellano, dentro de una pantalla por lo demás bilingüe.
 ///
 /// La traducción vive en `assets/content/cuentos/vocabulario_gl_es.json`, no
 /// aquí: el contenido va en JSON, nunca escrito en los widgets. Los nombres
-/// propios —Vigo, Lúa, Castrelos— y las onomatopeyas no se traducen, y por eso
+/// propios —Galicia, Lúa— y las onomatopeyas no se traducen, y por eso
 /// aparecen en el fichero con el mismo valor a los dos lados.
 class VocabularioContos {
   static const String assetPath =

@@ -649,7 +649,8 @@
             "gl": "Facer que se pon a roupa",
             "es": "Hacer que se pone la ropa"
           },
-          "category": "verb"
+          "category": "verb",
+          "lamina": "pal_get_dressed"
         },
         {
           "id": "2_3.decembro.s3.snuggly-jumper",

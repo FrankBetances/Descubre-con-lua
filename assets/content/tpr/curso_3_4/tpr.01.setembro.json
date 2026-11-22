@@ -152,7 +152,8 @@
           "tprAction": {
             "gl": "Chamar co brazo para que se acheguen",
             "es": "Llamar con el brazo para que se acerquen"
-          }
+          },
+          "lamina": "pal_come"
         },
         {
           "id": "3_4.setembro.s1.listen",
@@ -423,7 +424,8 @@
           "tprAction": {
             "gl": "Pousar as mans nos xeonllos e mirar á persoa docente",
             "es": "Poner las manos en las rodillas y mirar a la persona docente"
-          }
+          },
+          "lamina": "pal_ready"
         },
         {
           "id": "3_4.setembro.s2.empty",
@@ -480,8 +482,8 @@
           "es": "Uno a uno",
           "category": "complex",
           "tprAction": {
-            "gl": "Tocar o ombro de cada criatura, dunha en unha",
-            "es": "Tocar el hombro de cada criatura, de una en una"
+            "gl": "Tocar o ombro de cada neno ou nena, dunha en unha",
+            "es": "Tocar el hombro de cada niño o niña, de una en una"
           }
         },
         {

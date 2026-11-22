@@ -18,12 +18,12 @@
     "es": "La familia recoge con prisa, con un abrigo en una mano y una mochila en la otra. Lo que le llega no es el resumen de la asamblea: es una frase. Elige cuál, y dísela completa antes de que salgan por la puerta."
   },
   "porQueImporta": {
-    "gl": "O que a crianza fai na aula ocupa poucas horas; o resto do día está na casa. Unha actividade que non sae da aula vale só o que dura. E a mensaxe funciona mellor cando nomea algo concreto que pasou hoxe —unha palabra, un xogo, unha reacción— que cando dá un consello xeral: o consello xeral esquécese na escaleira.",
-    "es": "Lo que la criatura hace en el aula ocupa pocas horas; el resto del día está en casa. Una actividad que no sale del aula vale solo lo que dura. Y el mensaje funciona mejor cuando nombra algo concreto que pasó hoy —una palabra, un juego, una reacción— que cuando da un consejo general: el consejo general se olvida en la escalera."
+    "gl": "O que o neno ou a nena fai na aula ocupa poucas horas; o resto do día está na casa. Unha actividade que non sae da aula vale só o que dura. E a mensaxe funciona mellor cando nomea algo concreto que pasou hoxe —unha palabra, un xogo, unha reacción— que cando dá un consello xeral: o consello xeral esquécese na escaleira.",
+    "es": "Lo que el niño o la niña hace en el aula ocupa pocas horas; el resto del día está en casa. Una actividad que no sale del aula vale solo lo que dura. Y el mensaje funciona mejor cuando nombra algo concreto que pasó hoy —una palabra, un juego, una reacción— que cuando da un consejo general: el consejo general se olvida en la escalera."
   },
   "queHacerEnCasa": {
-    "gl": "Le na pantalla a mensaxe do día antes de que empece a recollida e quédate cunha soa idea. Dilla nomeando á crianza e dicindo que facer esta noite, non que evitar. Se tes dúas cousas que contar, garda unha para mañá.",
-    "es": "Lee en la pantalla el mensaje del día antes de que empiece la recogida y quédate con una sola idea. Dísela nombrando a la criatura y diciendo qué hacer esta noche, no qué evitar. Si tienes dos cosas que contar, guarda una para mañana."
+    "gl": "Le na pantalla a mensaxe do día antes de que empece a recollida e quédate cunha soa idea. Dilla nomeando ao neno ou á nena e dicindo que facer esta noite, non que evitar. Se tes dúas cousas que contar, garda unha para mañá.",
+    "es": "Lee en la pantalla el mensaje del día antes de que empiece la recogida y quédate con una sola idea. Dísela nombrando al niño o a la niña y diciendo qué hacer esta noche, no qué evitar. Si tienes dos cosas que contar, guarda una para mañana."
   },
   "ejemploCotidiano": {
     "gl": "«Hoxe Xiana meteu as mans na auga e dixo ¡ba! polo barco. Esta noite, na bañeira, dille barco cando o colla e agarda un pouco a ver que fai.» Trinta segundos, unha soa idea, e algo que se pode facer sen preparar nada.",
@@ -68,7 +68,7 @@
   },
   "revision": {
     "autor": "Dr. Frank Betances",
-    "revisorPedagogico": "Equipo Pedagóxico Vigo",
+    "revisorPedagogico": "Equipo Pedagóxico Galicia",
     "fechaRevision": "2026-09-12",
     "version": "1.0.0",
     "aprobadoParaAula": true

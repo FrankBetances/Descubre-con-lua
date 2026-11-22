@@ -190,8 +190,8 @@
             "gl": "Onde están as botas amarelas de Lúa? Toca a bota esquerda e a dereita!",
             "es": "¿Dónde están las botas amarillas de Lúa? ¡Toca la bota izquierda y la derecha!",
             "axuda": {
-              "gl": "Toca ti unha bota, conta «one» e deixa a outra para a criatura.",
-              "es": "Toca tú una bota, cuenta «one» y deja la otra para la criatura."
+              "gl": "Toca ti unha bota, conta «one» e deixa outro ou outra para o neno ou a nena.",
+              "es": "Toca tú una bota, cuenta «one» y deja otro u otra para el niño o la niña."
             }
           },
           "nivel2": {
@@ -208,8 +208,8 @@
             "gl": "Cando chove, que levas nos pés?",
             "es": "Cuando llueve, ¿qué llevas en los pies?",
             "axuda": {
-              "gl": "Mira os teus pés e despois os da criatura; agarda sen dar a resposta.",
-              "es": "Mira tus pies y después los de la criatura; espera sin dar la respuesta."
+              "gl": "Mira os teus pés e despois os do neno ou da nena; agarda sen dar a resposta.",
+              "es": "Mira tus pies y después los del niño o de la niña; espera sin dar la respuesta."
             }
           }
         },
@@ -565,8 +565,8 @@
             "gl": "Toca a ovella nai! E agora toca o año!",
             "es": "¡Toca a la oveja madre! ¡Y ahora toca al corderito!",
             "axuda": {
-              "gl": "Sinala ti a ovella grande e deixa o año para a criatura.",
-              "es": "Señala tú la oveja grande y deja el corderito para la criatura."
+              "gl": "Sinala ti a ovella grande e deixa o año para o neno ou a nena.",
+              "es": "Señala tú la oveja grande y deja el corderito para el niño o la niña."
             }
           },
           "nivel2": {
@@ -736,8 +736,8 @@
             "gl": "Mira ben! Que hai debaixo da mesa? Toca a pelota vermella!",
             "es": "¡Mira bien! ¿Qué hay debajo de la mesa? ¡Toca la pelota roja!",
             "axuda": {
-              "gl": "Achega o dedo á mesa e agarda a que a criatura atope a pelota.",
-              "es": "Acerca el dedo a la mesa y espera a que la criatura encuentre la pelota."
+              "gl": "Achega o dedo á mesa e agarda a que o neno ou a nena atope a pelota.",
+              "es": "Acerca el dedo a la mesa y espera a que el niño o la niña encuentre la pelota."
             }
           },
           "nivel2": {
@@ -975,8 +975,8 @@
             "gl": "Onde está o abrigo verde? Toca o abrigo no colgadoiro!",
             "es": "¿Dónde está el abrigo verde? ¡Toca el abrigo en el perchero!",
             "axuda": {
-              "gl": "Sinala ti o colgadoiro e deixa o abrigo para a criatura.",
-              "es": "Señala tú el perchero y deja el abrigo para la criatura."
+              "gl": "Sinala ti o colgadoiro e deixa o abrigo para o neno ou a nena.",
+              "es": "Señala tú el perchero y deja el abrigo para el niño o la niña."
             }
           },
           "nivel2": {
@@ -1351,8 +1351,8 @@
             "gl": "Onde están as liñas brillantes? Toca a liña de prata da pedra!",
             "es": "¿Dónde están las líneas brillantes? ¡Toca la línea plateada de la piedra!",
             "axuda": {
-              "gl": "Sinala a pedra gris e deixa que a criatura busque a liña.",
-              "es": "Señala la piedra gris y deja que la criatura busque la línea."
+              "gl": "Sinala a pedra gris e deixa que o neno ou a nena busque a liña.",
+              "es": "Señala la piedra gris y deja que el niño o la niña busque la línea."
             }
           },
           "nivel2": {
@@ -1590,8 +1590,8 @@
             "gl": "Onde está a fiestra? Toca as nubes grises!",
             "es": "¿Dónde está la ventana? ¡Toca las nubes grises!",
             "axuda": {
-              "gl": "Sinala ti o marco da fiestra e deixa as nubes para a criatura.",
-              "es": "Señala tú el marco de la ventana y deja las nubes para la criatura."
+              "gl": "Sinala ti o marco da fiestra e deixa as nubes para o neno ou a nena.",
+              "es": "Señala tú el marco de la ventana y deja las nubes para el niño o la niña."
             }
           },
           "nivel2": {
@@ -2033,8 +2033,8 @@
             "gl": "Onde está o abrigo mollado? Toca o abrigo no gancho!",
             "es": "¿Dónde está el abrigo mojado? ¡Toca el abrigo en el gancho!",
             "axuda": {
-              "gl": "Sinala o gancho e deixa o abrigo para a criatura.",
-              "es": "Señala el gancho y deja el abrigo para la criatura."
+              "gl": "Sinala o gancho e deixa o abrigo para o neno ou a nena.",
+              "es": "Señala el gancho y deja el abrigo para el niño o la niña."
             }
           },
           "nivel2": {
@@ -2511,8 +2511,8 @@
             "gl": "Onde está o sombreiro? Toca a cinta vermella do sombreiro!",
             "es": "¿Dónde está el sombrero? ¡Toca la cinta roja del sombrero!",
             "axuda": {
-              "gl": "Sinala o banco e deixa o sombreiro para a criatura.",
-              "es": "Señala el banco y deja el sombrero para la criatura."
+              "gl": "Sinala o banco e deixa o sombreiro para o neno ou a nena.",
+              "es": "Señala el banco y deja el sombrero para el niño o la niña."
             }
           },
           "nivel2": {
@@ -3022,8 +3022,8 @@
             "gl": "Toca o sol amarelo brillante! Agora toca a herba verde!",
             "es": "¡Toca el sol amarillo brillante! ¡Ahora toca la hierba verde!",
             "axuda": {
-              "gl": "Sinala ti o sol e deixa a herba para a criatura.",
-              "es": "Señala tú el sol y deja la hierba para la criatura."
+              "gl": "Sinala ti o sol e deixa a herba para o neno ou a nena.",
+              "es": "Señala tú el sol y deja la hierba para el niño o la niña."
             }
           },
           "nivel2": {
@@ -3125,8 +3125,8 @@
             "gl": "Onde está o papel de Lúa? Toca o papel branco!",
             "es": "¿Dónde está el papel de Lúa? ¡Toca el papel blanco!",
             "axuda": {
-              "gl": "Sinala o caderno e deixa o papel para a criatura.",
-              "es": "Señala el cuaderno y deja el papel para la criatura."
+              "gl": "Sinala o caderno e deixa o papel para o neno ou a nena.",
+              "es": "Señala el cuaderno y deja el papel para el niño o la niña."
             }
           },
           "nivel2": {
@@ -3568,8 +3568,8 @@
             "gl": "Onde está a pintura verde nova? Tócaa!",
             "es": "¿Dónde está la pintura verde nueva? ¡Tócala!",
             "axuda": {
-              "gl": "Sinala o amarelo e o azul e deixa o medio para a criatura.",
-              "es": "Señala el amarillo y el azul y deja el medio para la criatura."
+              "gl": "Sinala o amarelo e o azul e deixa o medio para o neno ou a nena.",
+              "es": "Señala el amarillo y el azul y deja el medio para el niño o la niña."
             }
           },
           "nivel2": {
@@ -3739,8 +3739,8 @@
             "gl": "Onde están os porquiños rosas? Toca os porquiños que dormen!",
             "es": "¿Dónde están los cerditos rosas? ¡Toca los cerditos que duermen!",
             "axuda": {
-              "gl": "Sinala a palla e deixa os porquiños para a criatura.",
-              "es": "Señala la paja y deja los cerditos para la criatura."
+              "gl": "Sinala a palla e deixa os porquiños para o neno ou a nena.",
+              "es": "Señala la paja y deja los cerditos para el niño o la niña."
             }
           },
           "nivel2": {
@@ -3875,8 +3875,8 @@
             "gl": "Onde está o pincel? Toca a cunca, o pincel e o papel!",
             "es": "¿Dónde está el pincel? ¡Toca la taza, el pincel y el papel!",
             "axuda": {
-              "gl": "Toca ti a cunca e deixa o resto para a criatura.",
-              "es": "Toca tú la taza y deja el resto para la criatura."
+              "gl": "Toca ti a cunca e deixa o resto para o neno ou a nena.",
+              "es": "Toca tú la taza y deja el resto para el niño o la niña."
             }
           },
           "nivel2": {
@@ -4114,8 +4114,8 @@
             "gl": "Onde está o polbo? Detrás da pedra? Toca o seu brazo morado!",
             "es": "¿Dónde está el pulpo? ¿Detrás de la piedra? ¡Toca su brazo morado!",
             "axuda": {
-              "gl": "Sinala a pedra e deixa que a criatura atope o brazo.",
-              "es": "Señala la piedra y deja que la criatura encuentre el brazo."
+              "gl": "Sinala a pedra e deixa que o neno ou a nena atope o brazo.",
+              "es": "Señala la piedra y deja que el niño o la niña encuentre el brazo."
             }
           },
           "nivel2": {
@@ -4421,8 +4421,8 @@
             "gl": "Mira ben! Cantas cenorias de papel hai agora na mesa? Tócaas!",
             "es": "¡Mira bien! ¿Cuántas zanahorias de papel hay ahora en la mesa? ¡Tócalas!",
             "axuda": {
-              "gl": "Pasa a man pola mesa e agarda a que a criatura conte.",
-              "es": "Pasa la mano por la mesa y espera a que la criatura cuente."
+              "gl": "Pasa a man pola mesa e agarda a que o neno ou a nena conte.",
+              "es": "Pasa la mano por la mesa y espera a que el niño o la niña cuente."
             }
           },
           "nivel2": {
@@ -4439,8 +4439,8 @@
             "gl": "Lembras cantas cenorias cortou Lúa?",
             "es": "¿Te acuerdas de cuántas zanahorias cortó Lúa?",
             "axuda": {
-              "gl": "Ensina os dedos pechados e agarda a que a criatura os abra.",
-              "es": "Enseña los dedos cerrados y espera a que la criatura los abra."
+              "gl": "Ensina os dedos pechados e agarda a que o neno ou a nena os abra.",
+              "es": "Enseña los dedos cerrados y espera a que el niño o la niña los abra."
             }
           }
         },
@@ -4660,8 +4660,8 @@
             "gl": "Onde está o papel pegañento? Toca a folla amarela!",
             "es": "¿Dónde está el papel pegajoso? ¡Toca la hoja amarilla!",
             "axuda": {
-              "gl": "Sinala o papel e deixa a folla para a criatura.",
-              "es": "Señala el papel y deja la hoja para la criatura."
+              "gl": "Sinala o papel e deixa a folla para o neno ou a nena.",
+              "es": "Señala el papel y deja la hoja para el niño o la niña."
             }
           },
           "nivel2": {
@@ -5103,8 +5103,8 @@
             "gl": "Mira ben! Cal é a xoaniña de verdade? Tócaa suave!",
             "es": "¡Mira bien! ¿Cuál es la mariquita de verdad? ¡Tócala suave!",
             "axuda": {
-              "gl": "Sinala as dúas e agarda a que a criatura escolla.",
-              "es": "Señala las dos y espera a que la criatura elija."
+              "gl": "Sinala as dúas e agarda a que o neno ou a nena escolla.",
+              "es": "Señala las dos y espera a que el niño o la niña elija."
             }
           },
           "nivel2": {
@@ -5171,8 +5171,8 @@
             "gl": "Toca a xoaniña pintada e a xoaniña de verdade!",
             "es": "¡Toca la mariquita pintada y la mariquita de verdad!",
             "axuda": {
-              "gl": "Sinala ti a pintada e deixa a real para a criatura.",
-              "es": "Señala tú la pintada y deja la real para la criatura."
+              "gl": "Sinala ti a pintada e deixa a real para o neno ou a nena.",
+              "es": "Señala tú la pintada y deja la real para el niño o la niña."
             }
           },
           "nivel2": {
@@ -5342,8 +5342,8 @@
             "gl": "Onde están os viaxeiros? Toca o pato e o porquiño!",
             "es": "¿Dónde están los viajeros? ¡Toca el pato y el cerdito!",
             "axuda": {
-              "gl": "Sinala ti o pato e deixa o porquiño para a criatura.",
-              "es": "Señala tú el pato y deja el cerdito para la criatura."
+              "gl": "Sinala ti o pato e deixa o porquiño para o neno ou a nena.",
+              "es": "Señala tú el pato y deja el cerdito para el niño o la niña."
             }
           },
           "nivel2": {
@@ -5581,8 +5581,8 @@
             "gl": "Onde está o mapa? Toca a X vermella!",
             "es": "¿Dónde está el mapa? ¡Toca la X roja!",
             "axuda": {
-              "gl": "Sinala o mapa e deixa a X para a criatura.",
-              "es": "Señala el mapa y deja la X para la criatura."
+              "gl": "Sinala o mapa e deixa a X para o neno ou a nena.",
+              "es": "Señala el mapa y deja la X para el niño o la niña."
             }
           },
           "nivel2": {
@@ -5785,8 +5785,8 @@
             "gl": "Toca a mazá vermella! E agora toca o pan!",
             "es": "¡Toca la manzana roja! ¡Y ahora toca el pan!",
             "axuda": {
-              "gl": "Sinala a mazá e deixa o pan para a criatura.",
-              "es": "Señala la manzana y deja el pan para la criatura."
+              "gl": "Sinala a mazá e deixa o pan para o neno ou a nena.",
+              "es": "Señala la manzana y deja el pan para el niño o la niña."
             }
           },
           "nivel2": {
@@ -6024,8 +6024,8 @@
             "gl": "Mira ben! Onde está o coral rosa? Tócao!",
             "es": "¡Mira bien! ¿Dónde está el coral rosa? ¡Tócalo!",
             "axuda": {
-              "gl": "Sinala as algas e deixa o coral para a criatura.",
-              "es": "Señala las algas y deja el coral para la criatura."
+              "gl": "Sinala as algas e deixa o coral para o neno ou a nena.",
+              "es": "Señala las algas y deja el coral para el niño o la niña."
             }
           },
           "nivel2": {
@@ -6281,8 +6281,8 @@
             "gl": "Lembras que meteu Lúa na maleta?",
             "es": "¿Te acuerdas de qué metió Lúa en la maleta?",
             "axuda": {
-              "gl": "Sinala a maleta e agarda a que a criatura enumere.",
-              "es": "Señala la maleta y espera a que la criatura enumere."
+              "gl": "Sinala a maleta e agarda a que o neno ou a nena enumere.",
+              "es": "Señala la maleta y espera a que el niño o la niña enumere."
             }
           }
         },
@@ -6502,8 +6502,8 @@
             "gl": "Onde está o tren? Toca as fiestras amarelas!",
             "es": "¿Dónde está el tren? ¡Toca las ventanas amarillas!",
             "axuda": {
-              "gl": "Sinala o tren e deixa as fiestras para a criatura.",
-              "es": "Señala el tren y deja las ventanas para la criatura."
+              "gl": "Sinala o tren e deixa as fiestras para o neno ou a nena.",
+              "es": "Señala el tren y deja las ventanas para el niño o la niña."
             }
           },
           "nivel2": {
@@ -7423,8 +7423,8 @@
             "gl": "Onde está a ra verde? Toca a súa maleta diminuta!",
             "es": "¿Dónde está la rana verde? ¡Toca su maleta diminuta!",
             "axuda": {
-              "gl": "Sinala a ra e deixa a maleta para a criatura.",
-              "es": "Señala la rana y deja la maleta para la criatura."
+              "gl": "Sinala a ra e deixa a maleta para o neno ou a nena.",
+              "es": "Señala la rana y deja la maleta para el niño o la niña."
             }
           },
           "nivel2": {

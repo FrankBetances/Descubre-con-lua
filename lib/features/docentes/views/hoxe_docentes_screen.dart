@@ -412,16 +412,6 @@ class _HoxeDocentesScreenState extends State<HoxeDocentesScreen> {
                 agora: widget.agora,
               ),
             ],
-            const SizedBox(height: 12),
-            EntradaEstimulacionCard(
-              cursoId: widget.cursoId,
-              mesCalendario: _toca.dia.mesCalendario,
-              language: lang,
-              onLanguageChanged: widget.onLanguageChanged,
-              audioService: widget.audioService,
-              enAula: true,
-              onCambiarCurso: widget.onCambiarCurso,
-            ),
             // Sin número: los pasos 1-3 de la lección antigua ya no están.
             Padding(
               padding: const EdgeInsets.only(top: 22, bottom: 10),

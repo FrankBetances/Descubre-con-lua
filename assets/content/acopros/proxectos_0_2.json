@@ -331,8 +331,8 @@
      "es": "Acerca la esponja mojada a la mano y luego la toalla seca, en silencio, para que note el contraste."
     },
     "observar": {
-     "gl": "Se a criatura busca a toalla despois de mollarse, ou repite o xesto de espremer.",
-     "es": "Si la criatura busca la toalla después de mojarse, o repite el gesto de estrujar."
+     "gl": "Se o neno ou a nena busca a toalla despois de mollarse, ou repite o xesto de espremer.",
+     "es": "Si el niño o la niña busca la toalla después de mojarse, o repite el gesto de estrujar."
     }
    }
   },
@@ -676,8 +676,8 @@
      "es": "Echa agua despacio de la jarra al cubo y agita la botella cerca para que note cada sonido."
     },
     "observar": {
-     "gl": "Se a criatura queda quieta para escoitar, ou busca co ollo de onde vén o son.",
-     "es": "Si la criatura se queda quieta para escuchar, o busca con la mirada de dónde viene el sonido."
+     "gl": "Se o neno ou a nena queda quieta para escoitar, ou busca co ollo de onde vén o son.",
+     "es": "Si el niño o la niña se queda quieta para escuchar, o busca con la mirada de dónde viene el sonido."
     }
    }
   },
@@ -1021,8 +1021,8 @@
      "es": "Suelta a la vez una hoja seca y una piedra grande desde poca altura para que siga el movimiento con los ojos."
     },
     "observar": {
-     "gl": "Se a criatura segue a folla coa mirada ata o chan, ou agarda o pum da pedra.",
-     "es": "Si la criatura sigue la hoja con la mirada hasta el suelo, o espera el pum de la piedra."
+     "gl": "Se o neno ou a nena segue a folla coa mirada ata o chan, ou agarda o pum da pedra.",
+     "es": "Si el niño o la niña sigue la hoja con la mirada hasta el suelo, o espera el pum de la piedra."
     }
    }
   },
@@ -1366,8 +1366,8 @@
      "es": "Ilumina con la linterna una hoja grande contra la pared para que mire la luz y la sombra."
     },
     "observar": {
-     "gl": "Se a criatura sinala a folla iluminada ou intenta coller a sombra.",
-     "es": "Si la criatura señala la hoja iluminada o intenta coger la sombra."
+     "gl": "Se o neno ou a nena sinala a folla iluminada ou intenta coller a sombra.",
+     "es": "Si el niño o la niña señala la hoja iluminada o intenta coger la sombra."
     }
    }
   },
@@ -1709,8 +1709,8 @@
      "es": "Guarda dos piezas iguales en su cesta mientras dices el nombre con calma, dejando que mire dónde va cada una."
     },
     "observar": {
-     "gl": "Se a criatura repite o lugar dunha peza igual, ou mira a cesta antes de soltar.",
-     "es": "Si la criatura repite el lugar de una pieza igual, o mira la cesta antes de soltar."
+     "gl": "Se o neno ou a nena repite o lugar dunha peza igual, ou mira a cesta antes de soltar.",
+     "es": "Si el niño o la niña repite el lugar de una pieza igual, o mira la cesta antes de soltar."
     }
    }
   },
@@ -2054,8 +2054,8 @@
      "es": "Pon en su palma un segundo la manzana fría y luego el pan templado para que sienta los dos contrastes."
     },
     "observar": {
-     "gl": "Se a criatura retira a man da mazá fría ou volve ao pan morno.",
-     "es": "Si la criatura retira la mano de la manzana fría o vuelve al pan templado."
+     "gl": "Se o neno ou a nena retira a man da mazá fría ou volve ao pan morno.",
+     "es": "Si el niño o la niña retira la mano de la manzana fría o vuelve al pan templado."
     }
    }
   },
@@ -2399,8 +2399,8 @@
      "es": "Sopla dos burbujas suaves a la altura de sus ojos para que las siga con el cuerpo y con la mano."
     },
     "observar": {
-     "gl": "Se a criatura segue unha burbulla co corpo ou estira a man cara a ela.",
-     "es": "Si la criatura sigue una burbuja con el cuerpo o estira la mano hacia ella."
+     "gl": "Se o neno ou a nena segue unha burbulla co corpo ou estira a man cara a ela.",
+     "es": "Si el niño o la niña sigue una burbuja con el cuerpo o estira la mano hacia ella."
     }
    }
   },
@@ -2744,8 +2744,8 @@
      "es": "Frota despacio tela contra tela y luego cartón estriado para que escuche y toque cada textura."
     },
     "observar": {
-     "gl": "Se a criatura frega ela soa para facer o son, ou prefire un dos dous.",
-     "es": "Si la criatura frota ella sola para hacer el sonido, o prefiere uno de los dos."
+     "gl": "Se o neno ou a nena frega sen axuda para facer o son, ou prefire un dos dous.",
+     "es": "Si el niño o la niña frota sin ayuda para hacer el sonido, o prefiere uno de los dos."
     }
    }
   },
@@ -3089,16 +3089,16 @@
      "es": "Proyecta en la pared la sombra del perro o del gato de juguete junto al muñeco real para que mire los dos."
     },
     "observar": {
-     "gl": "Se a criatura mira da sombra ao xoguete e volve, ou sinala a sombra.",
-     "es": "Si la criatura mira de la sombra al juguete y vuelve, o señala la sombra."
+     "gl": "Se o neno ou a nena mira da sombra ao xoguete e volve, ou sinala a sombra.",
+     "es": "Si el niño o la niña mira de la sombra al juguete y vuelve, o señala la sombra."
     }
    }
   },
   {
    "mesCalendario": 6,
    "proxecto": {
-    "gl": "O Atlántico, as rías de Vigo e a despedida do curso",
-    "es": "El Atlántico, las rías de Vigo y la despedida del curso"
+    "gl": "O Atlántico, as rías galegas e a despedida do curso",
+    "es": "El Atlántico, las rías galegas y la despedida del curso"
    },
    "steam": {
     "id": "STEAM-0_2-06",
@@ -3231,9 +3231,9 @@
      "lamina": "pal_footprint"
     },
     {
-     "en": "Samil beach",
-     "gl": "Praia de Samil",
-     "es": "Playa de Samil",
+     "en": "Sunny beach",
+     "gl": "A praia",
+     "es": "La playa",
      "xesto": {
       "gl": "Sinalar o mar dende a area",
       "es": "Señalar el mar desde la arena"
@@ -3377,7 +3377,7 @@
       "es": "La rima tradicional, con las palabras del tema"
      },
      "palabras": [
-      "Samil beach",
+      "Sunny beach",
       "Seaside",
       "Tide",
       "Seaweed",
@@ -3434,8 +3434,8 @@
      "es": "Haz rodar la pelota blanda y posa al lado la caja para que note cuál rueda por el suelo."
     },
     "observar": {
-     "gl": "Se a criatura busca outra cousa redonda para facela rodar.",
-     "es": "Si la criatura busca otra cosa redonda para hacerla rodar."
+     "gl": "Se o neno ou a nena busca outra cousa redonda para facela rodar.",
+     "es": "Si el niño o la niña busca otra cosa redonda para hacerla rodar."
     }
    }
   }

@@ -209,7 +209,7 @@ void main() {
 
     test('os títulos dos xogos levan maiúscula só ao principio', () {
       // Nomes propios e a orde inglesa que dá nome ao xogo.
-      const propios = {'Samil', 'Lúa', 'Freeze'};
+      const propios = {'Lúa', 'Freeze'};
       final fallos = <String>[];
       for (final x in xogos.xogos) {
         for (final titulo in [x.titulo.gl, x.titulo.es]) {

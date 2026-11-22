@@ -72,8 +72,8 @@
         "es": "Calzarse las botas y señalar la lluvia por la ventana"
       },
       "nota": {
-        "gl": "Because: porque. A docente di a razón; a criatura responde co corpo ou cunha palabra.",
-        "es": "Because: porque. La docente dice la razón; la criatura responde con el cuerpo o con una palabra."
+        "gl": "Because: porque. A docente di a razón; o neno ou a nena responde co corpo ou cunha palabra.",
+        "es": "Because: porque. La docente dice la razón; el niño o la niña responde con el cuerpo o con una palabra."
       },
       "fonte": "referencias/base/curriculo-vocabulario-infantil-2-6.txt:221"
     },
@@ -3037,8 +3037,8 @@
       "tipo": "xogo",
       "en": "Find the red apple, quick and gentle!",
       "accion": {
-        "gl": "A crianza camiña ou gatea polo cuarto ata coller o obxecto e traelo nas mans.",
-        "es": "La criatura camina o gatea por la habitación hasta coger el objeto y traerlo en las manos."
+        "gl": "O neno ou a nena camiña ou gatea polo cuarto ata coller o obxecto e traelo nas mans.",
+        "es": "El niño o la niña camina o gatea por la habitación hasta coger el objeto y traerlo en las manos."
       },
       "fonte": "xogos_fogar.json"
     },
@@ -6225,7 +6225,7 @@
     {
       "id": "frase.lamina.vigo_nat_98",
       "tipo": "lamina",
-      "en": "Cíes Islands",
+      "en": "Green coastal islands",
       "accion": {
         "gl": "Brazos arredor coma un escudo",
         "es": "Brazos alrededor como un escudo"
@@ -6285,7 +6285,7 @@
     {
       "id": "frase.lamina.vigo_nat_101",
       "tipo": "lamina",
-      "en": "Castrelos Park",
+      "en": "Autumn park",
       "accion": {
         "gl": "Pescozo ergueito coma un cisne",
         "es": "Cuello erguido como un cisne"
@@ -7705,7 +7705,7 @@
     {
       "id": "frase.lamina.cuento_ilus_172",
       "tipo": "lamina",
-      "en": "Samil shore walk",
+      "en": "Sunny shore walk",
       "accion": {
         "gl": "Sinalar o mar co índice",
         "es": "Señalar el mar con el índice"
@@ -7905,7 +7905,7 @@
     {
       "id": "frase.lamina.cuento_ilus_182",
       "tipo": "lamina",
-      "en": "Vigo festive lights",
+      "en": "Town festive lights",
       "accion": {
         "gl": "Abrir e pechar dedos coma chispas",
         "es": "Abrir y cerrar los dedos como chispas"
@@ -8305,7 +8305,7 @@
     {
       "id": "frase.lamina.cuento_ilus_202",
       "tipo": "lamina",
-      "en": "Dinamita the dog of Vigo",
+      "en": "Dinamita the playful dog",
       "accion": {
         "gl": "Mover as mans coma quen saúda a todos",
         "es": "Mover las manos como quien saluda a todos"
@@ -8825,10 +8825,10 @@
     {
       "id": "frase.calendario.c5_m5",
       "tipo": "calendario",
-      "en": "FIRST the seed, THEN a strong tree, FINALLY the symbol of Vigo!",
+      "en": "FIRST the seed, THEN a strong tree, FINALLY the symbol of Galicia!",
       "significado": {
-        "gl": "PRIMEIRO a semente, DESPOIS unha árbore forte, AO FINAL o símbolo de Vigo!",
-        "es": "¡PRIMERO la semilla, DESPUÉS un árbol fuerte, AL FINAL el símbolo de Vigo!"
+        "gl": "PRIMEIRO a semente, DESPOIS unha árbore forte, AO FINAL o símbolo de Galicia!",
+        "es": "¡PRIMERO la semilla, DESPUÉS un árbol fuerte, AL FINAL el símbolo de Galicia!"
       },
       "fonte": "calendario/curriculo_50_meses.json"
     },

@@ -34,8 +34,8 @@ class LaminaDetailScreen extends StatelessWidget {
     switch (lamina.categoria.toLowerCase()) {
       case 'animais':
         return isGl
-            ? 'Coloca un boneco ou figura do animal diante. Anima á crianza a imitar o seu son e movemento polo chan antes de nomealo.'
-            : 'Coloca un muñeco o figura del animal delante. Anima a la criatura a imitar su sonido y movimiento por el suelo antes de nombrarlo.';
+            ? 'Coloca un boneco ou figura do animal diante. Anima ao neno ou á nena a imitar o seu son e movemento polo chan antes de nomealo.'
+            : 'Coloca un muñeco o figura del animal delante. Anima al niño o a la niña a imitar su sonido y movimiento por el suelo antes de nombrarlo.';
       case 'vigo_natureza':
         return isGl
             ? 'Se tedes unha cuncha, folla, pedra de praia ou auga nun caldeiro, tocade a textura real xuntos mentres escoitades o son do mar.'

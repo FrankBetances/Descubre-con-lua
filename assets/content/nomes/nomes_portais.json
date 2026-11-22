@@ -63,7 +63,7 @@
         "Salen del diccionario de la revisión de interfaz: un nombre que diría una",
         "familia y una frase de menos de quince palabras. Antes eran «Biblioteca de",
         "Contos Dialóxicos», «Aprender a Ler · Fónica Manipulativa» o «Academy ·",
-        "Pautas de Crianza», y la teoría iba delante de lo que hay que hacer."
+        "Pautas para casa», y la teoría iba delante de lo que hay que hacer."
       ],
       "grupos": [
         {
@@ -182,6 +182,20 @@
               "id": "estimulacionDi",
               "gl": "Escoita, palabras que medran, modelo e pensamento STEAM.",
               "es": "Escucha, palabras que crecen, modelo y pensamiento STEAM."
+            },
+            {
+              "id": "realidadeAumentada",
+              "gl": "Realidade aumentada con Lúa",
+              "es": "Realidad aumentada con Lúa",
+              "cabeceira": {
+                "gl": "RA con Lúa",
+                "es": "RA con Lúa"
+              }
+            },
+            {
+              "id": "realidadeAumentadaDi",
+              "gl": "A escena STEAM do mes na mesa e o espello facial en inglés.",
+              "es": "La escena STEAM del mes en la mesa y el espejo facial en inglés."
             }
           ]
         },
@@ -209,8 +223,8 @@
             },
             {
               "id": "guiasFamiliaDi",
-              "gl": "Lecturas curtas para ti: como falar e xogar coa túa criatura.",
-              "es": "Lecturas cortas para ti: cómo hablar y jugar con tu criatura."
+              "gl": "Lecturas curtas para ti: como falar e xogar co teu neno ou coa túa nena.",
+              "es": "Lecturas cortas para ti: cómo hablar y jugar con tu niño o niña."
             },
             {
               "id": "inglesNaCasa",
@@ -414,6 +428,20 @@
               "id": "estimulacionDi",
               "gl": "Para a asemblea: a docente guía e o grupo responde.",
               "es": "Para la asamblea: la docente guía y el grupo responde."
+            },
+            {
+              "id": "realidadeAumentada",
+              "gl": "Realidade aumentada con Lúa",
+              "es": "Realidad aumentada con Lúa",
+              "cabeceira": {
+                "gl": "RA con Lúa",
+                "es": "RA con Lúa"
+              }
+            },
+            {
+              "id": "realidadeAumentadaDi",
+              "gl": "Escena STEAM na mesa ou espello facial, sen gardar imaxes.",
+              "es": "Escena STEAM en mesa o espejo facial, sin guardar imágenes."
             },
             {
               "id": "programacion",

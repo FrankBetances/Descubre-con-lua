@@ -1622,8 +1622,8 @@
       "es": "sol",
       "en": "sun",
       "sampleSentence": {
-        "gl": "O sol dourado quenta a praia de Samil.",
-        "es": "El sol dorado calienta la playa de Samil."
+        "gl": "O sol dourado quenta a a praia.",
+        "es": "El sol dorado calienta la playa."
       },
       "audioTrack": 112,
       "nfcUid": "04:D1:01:E1"
@@ -1685,8 +1685,8 @@
       "es": "barco",
       "en": "ship",
       "sampleSentence": {
-        "gl": "O barco cruza a ría de Vigo cara ás Illas Cíes.",
-        "es": "El barco cruza la ría de Vigo hacia las Islas Cíes."
+        "gl": "O barco cruza a ría cara ás Illas da ría.",
+        "es": "El barco cruza la ría hacia las islas del mar."
       },
       "audioTrack": 114,
       "nfcUid": "04:D2:02:A1"

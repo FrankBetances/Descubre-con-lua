@@ -78,14 +78,14 @@ class _SteamSesionGuiadaScreenState extends State<SteamSesionGuiadaScreen> {
   static const _ordes =
       LocalizedString(gl: 'Ordes en inglés', es: 'Órdenes en inglés');
   static const _ordesAxuda = LocalizedString(
-    gl: 'Escóitaa antes de dicila. A criatura responde co corpo: non ten que repetila.',
-    es: 'Escúchala antes de decirla. La criatura responde con el cuerpo: no tiene que repetirla.',
+    gl: 'Escóitaa antes de dicila. O neno ou a nena responde co corpo: non ten que repetila.',
+    es: 'Escúchala antes de decirla. El niño o la niña responde con el cuerpo: no tiene que repetirla.',
   );
   static const _observar =
       LocalizedString(gl: 'Que observar', es: 'Qué observar');
   static const _observarNota = LocalizedString(
-    gl: 'Non é unha avaliación: son pistas para ti. A app non garda nada de ningunha criatura.',
-    es: 'No es una evaluación: son pistas para ti. La app no guarda nada de ninguna criatura.',
+    gl: 'Non é unha avaliación: son pistas para ti. A app non garda nada de ningún neno nin nena.',
+    es: 'No es una evaluación: son pistas para ti. La app no guarda nada de ningún niño ni niña.',
   );
   static const _curriculo = LocalizedString(gl: 'Currículo', es: 'Currículo');
 

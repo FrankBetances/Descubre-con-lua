@@ -222,7 +222,7 @@ class _MicroRutinaSetembroScreenState extends State<MicroRutinaSetembroScreen> {
                           const SizedBox(height: 6),
                           Text(
                             isGl
-                                ? 'No recibidor da casa: a crianza descalza e quita a chaqueta con calma. En vez de facer preguntas directas ou pedir traducións («Como se di abrigo?»), acompañamos o movemento con ritmo e modelado: «Coat off, hang it up! Moi ben, que acolledora queda a entrada!»'
+                                ? 'No recibidor da casa: o neno ou a nena descalza e quita a chaqueta con calma. En vez de facer preguntas directas ou pedir traducións («Como se di abrigo?»), acompañamos o movemento con ritmo e modelado: «Coat off, hang it up! Moi ben, que acolledora queda a entrada!»'
                                 : 'En el recibidor de casa: el menor se descalza y se quita la chaqueta con calma. En lugar de hacer preguntas directas o pedir traducciones («¿Cómo se dice abrigo?»), acompañamos el movimiento con ritmo y modelado: «Coat off, hang it up! ¡Muy bien, qué acogedora queda la entrada!»',
                             style: const TextStyle(
                               fontFamily: AppTheme.fontFamily,
