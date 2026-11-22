@@ -67,8 +67,36 @@ import 'package:descubre_con_lua/features/steam/views/steam_sesion_guiada_screen
 import 'package:descubre_con_lua/data/models/cuento_model.dart';
 import 'package:descubre_con_lua/data/models/como_funciona_o_conto_model.dart';
 import 'package:descubre_con_lua/features/familias/views/ponte_ao_dia_screen.dart';
+import 'package:descubre_con_lua/data/models/plan_escoita_model.dart';
 import 'package:descubre_con_lua/features/cuentos/views/cuento_viewer_screen.dart';
+import 'package:descubre_con_lua/features/estimulacion/ar/ar_bridge.dart';
+import 'package:descubre_con_lua/features/estimulacion/data/ar_estimulacion_model.dart';
+import 'package:descubre_con_lua/features/estimulacion/data/estimulacion_ui.dart';
+import 'package:descubre_con_lua/features/estimulacion/views/ar_actividad_screen.dart';
+import 'package:descubre_con_lua/features/estimulacion/views/estimulacion_screen.dart';
 import 'package:descubre_con_lua/features/juega/widgets/circulo_do_dia.dart';
+
+class _CapturasArBridge implements ArBridge {
+  const _CapturasArBridge();
+
+  @override
+  Future<ArAvailability> checkAvailability() async => const ArAvailability(
+        available: true,
+        hasCamera: true,
+        hasFrontCamera: true,
+        arCoreSupported: true,
+        modelShaOk: true,
+        reason: 'OK',
+      );
+
+  @override
+  Future<ArLaunchOutcome> openFaceActivity(String specJson) async =>
+      const ArLaunchOutcome(outcome: 'completed', gestureDone: true);
+
+  @override
+  Future<ArLaunchOutcome> openScene(String specJson) async =>
+      const ArLaunchOutcome(outcome: 'completed');
+}
 
 /// Genera las imágenes de pantalla del manual.
 ///
@@ -162,6 +190,12 @@ void main() {
     Normativa.sembrar(Normativa.fromRaw(ler(Normativa.assetPath)));
     GuiaDeCasa.sembrar(GuiaDeCasa.fromRaw(
         ler(GuiaDeCasa.guiaAsset), ler(GuiaDeCasa.idadeAsset)));
+    await EstimulacionUi.cargar();
+    await Proxectos02.cargar();
+    await ArEstimulacionPlan.cargar();
+    PlanEscoita.sembrar(
+      PlanEscoita.fromRaw(ler('assets/content/escoita/plan_mensual.json')),
+    );
     contenido = ContentRepository();
     await contenido.initialize();
     tmp = Directory.systemTemp.createTempSync('capturas');
@@ -1365,6 +1399,41 @@ void main() {
         'guia-ingles-$l',
         GuiaAtencionScreen(contenido: contenido, initialLanguage: lang),
         tamano: const Size(412, 1500),
+        tema: AppTheme.temaFamilias,
+      );
+    });
+
+    testWidgets('estimulación da linguaxe · $l', (tester) async {
+      await capturar(
+        tester,
+        'estimulacion-$l',
+        EstimulacionScreen(
+          language: lang,
+          onLanguageChanged: (_) {},
+          audioService: MockOfflineAudioService(),
+          initialCursoId: 'curso_3_4',
+          initialMes: 1,
+          enAula: false,
+        ),
+        tamano: const Size(412, 1500),
+        tema: AppTheme.temaFamilias,
+      );
+    });
+
+    testWidgets('realidade aumentada con lúa · $l', (tester) async {
+      await capturar(
+        tester,
+        'ar-lua-$l',
+        ArActividadScreen(
+          language: lang,
+          onLanguageChanged: (_) {},
+          audioService: MockOfflineAudioService(),
+          initialCursoId: 'curso_3_4',
+          initialMes: 1,
+          enAula: false,
+          arBridge: const _CapturasArBridge(),
+        ),
+        tamano: const Size(412, 1200),
         tema: AppTheme.temaFamilias,
       );
     });

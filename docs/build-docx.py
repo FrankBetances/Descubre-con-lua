@@ -30,7 +30,7 @@ DOCS = os.path.join(ROOT, 'docs')
 SRC = os.path.join(DOCS, 'manual-casos-de-uso.html')
 OUT = os.path.join(DOCS, 'Descubre-con-Lua-Manual-Casos-de-Uso.docx')
 
-# Paleta de Lúa: el azul marítimo de Vigo que usa la propia app.
+# Paleta de Lúa: el azul marítimo que usa la propia app.
 PRIMARY = RGBColor(0x1B, 0x49, 0x65)
 SLATE = RGBColor(0x3D, 0x5A, 0x80)
 INK = RGBColor(0x2B, 0x2D, 0x42)
