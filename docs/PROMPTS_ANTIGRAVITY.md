@@ -253,3 +253,251 @@ cerrados M»): rama, SHA de cada commit, salida de los gates, rutas de las captu
 de AR de P9.4, y lo que no hayas podido hacer y por qué. Claude Code lo revisa antes de integrar.
 ```
 
+## P10 · Versión definitiva para el piloto (22/11/2026)
+
+Los pasos P10.0–P10.9 ya están en la tabla de pasos (los añadió Claude Code al guardar este prompt);
+en P10.0 Antigravity no los vuelve a añadir.
+
+```text
+TRABAJO INTEGRAL DE ANTIGRAVITY · P10 · VERSIÓN DEFINITIVA PARA EL PILOTO
+(órdenes de Frank del 22/11/2026, O-20261122-1; R-STEAM de CLAUDE.md, regla suprema)
+
+Frank ha dado por bueno todo el trabajo anterior. Esta es la versión definitiva para probar ya.
+El 100 % del trabajo lo haces tú, Antigravity. Claude Code solo valida y, si algo está mal, te lo
+devuelve.
+
+REPOSITORIO Y RAMA
+Repositorio: FrankBetances/Descubre-con-lua. Rama: antigravity/escoita.
+Antes de empezar:
+  git fetch origin && git merge origin/main && git merge origin/claude/upbeat-fermi-3d0utp
+Si hay conflicto, PARA y dímelo.
+Commit y push SOLO a antigravity/escoita. Prohibido: merge a main, PR, reset duro, git add -f,
+tools/push_seguro.sh. NO toques la carpeta de configuración de Claude Code (.claude).
+SÍ puedes tocar lib/, test/, android/, assets/, docs/ y tools/.
+
+PROHIBIDO BORRAR, salvo lo que este prompt nombra (R-BORRAR). Se cambia texto; no se quitan
+pantallas, pasos ni contenido.
+
+REGISTRO DE COMMITS
+Los pasos P10.0 … P10.9 ya están en la tabla de pasos de docs/PLAN_ANTIGRAVITY.md. Cada commit
+empieza por su paso («P10.3: …») y lleva su fila en el «Registro de commits».
+
+REGLAS DE CONTENIDO
+- Todas las edades a la vez: 0-2, 2-3, 3-4, 4-5 y 5-6. Nada de pilotos por edad.
+- Todo en gallego y castellano.
+- La app tiene ánimo de lucro: nada NC/ND (ni ARASAAC). Valen MIT, Apache 2.0, BSD, CC0, CC BY y
+  OFL.
+- Sin emoji del sistema.
+- Contenido en JSON, nunca escrito en los widgets.
+- Prohibidas en la app «logopedia», «terapia», «trastorno», «clínico» y «diagnóstico».
+- Ningún texto exige al niño que repita, traduzca o «diga cómo se dice».
+
+══════════════════════════════════════════════════════════════════════════════
+
+P10.0 · Plan
+- docs/p10-plan.md: qué vas a cambiar en cada paso y con qué gate lo compruebas.
+
+P10.1 · En Galicia se dice NENO e NENA, no «criatura» ni «crianza»
+Orden de Frank: «en Galicia no se dice criatura ni crianzas ni nada de eso, aquí se habla de neno o
+nena».
+- En TODO texto que se ve o se oye, se cambia:
+    gallego: criatura/criaturas/crianza/crianzas → neno ou nena / nenos e nenas / o neno ou a nena
+      (concordancia correcta en cada frase);
+    castellano: criatura/criaturas/crianza/crianzas → niño o niña / niños y niñas / el niño o la
+      niña (concordancia correcta).
+- Cuando la frase lo permita sin quedar pesada, «o neno ou a nena» puede ir en plural o como
+  «nenos e nenas».
+- Lugares:
+    assets/content/** (JSON gl/es);
+    textos en lib/ (nombres de portales, nomes_*.dart, ARB si hay);
+    docs/manual-casos-de-uso.html;
+    docs/privacy.html, docs/terms.html, docs/index.html;
+    README.md y STATUS.md;
+    las fichas de Play que haya en docs/.
+- Los identificadores internos (nombres de clase, del fichero criancas.json, claves JSON) NO se
+  renombran: romperían los datos guardados. Solo cambia lo que se ve o se oye.
+- Gate nuevo tools/check_lexico_galicia.py en tools/gates.sh. Falla si «criatura», «criaturas»,
+  «crianza», «crianzas» o «criança» aparecen en texto visible de assets/content, en las cadenas de
+  lib/ o en docs/*.html y README.md (insensible a mayúsculas). Excepciones solo para
+  identificadores de código, con una lista explícita y justificada en el propio gate.
+- Corpus de voz: python3 tools/export_voice_corpus.py. Los audios gl/es nuevos los sintetiza el
+  workflow voice-assets. Las grabaciones que queden sin texto NO las borres: me lo dices y Frank
+  decide.
+
+P10.2 · Fuera «Edición Vigo»: la app sirve para toda Galicia (piloto en Ourense)
+Orden de Frank: «tenemos que cambiar el tema de edición Vigo y dejarlo simplemente sin decir que es
+para Vigo porque lo vamos a utilizar en Orense para un piloto».
+- Quita «Edición Vigo» y cualquier «para Vigo», «escuelas infantiles municipales de Vigo», «de
+  Vigo» como destino. Lugares:
+    bienvenida (debajo del logo);
+    splash;
+    créditos;
+    nombres de portales;
+    AndroidManifest (android:label);
+    README.md;
+    manual (HTML, PDF y Word);
+    privacy.html, terms.html, index.html;
+    fichas de Play;
+    textos de la app.
+- El nombre queda «Descubre con Lúa».
+- Donde hacía falta destino, «escolas infantís de Galicia / escuelas infantiles de Galicia».
+- Procedencia: startTIC y el Consorcio da Zona Franca de Vigo SE QUEDAN en créditos y README («nace
+  dentro del programa startTIC»).
+- El Concello de Vigo como destinatario SE QUITA del texto. Si aparece como logotipo o en algún
+  convenio, PARA y pregúntamelo.
+- Contenido con lugares de Vigo (Castrelos, Samil, las Cíes, el Castro, la ría de Vigo…):
+  inventario en docs/p10-vigo.md (fichero, texto, propuesta) y cambio a referentes gallegos
+  neutros que no rompan el STEAM ni la rima («o parque», «a praia», «o río», «o monte»).
+  Gallego y castellano a la vez.
+- No cambies el applicationId ni el nombre del paquete Android (rompería la ficha de Play).
+- Gate: amplía tools/check_lexico_galicia.py para que falle si «Edición Vigo» o «Edición
+  Vigo» vuelve a aparecer en texto visible.
+
+P10.3 · Una sola entrada de Estimulación en Hoxe
+Orden de Frank: «si hoxe se repite dos veces hay que quitarlo de uno de los dos lugares y
+evidentemente que será el de abajo».
+- QUITA la EntradaEstimulacionCard de ABAJO en lib/features/familias/views/hoxe_familias_screen.dart
+  (la que va después de LeccionDaSemanaCargada) y en
+  lib/features/docentes/views/hoxe_docentes_screen.dart (la que va antes de «A sesión de 45
+  minutos»).
+- Se queda la de ARRIBA (compacta: true).
+- test/features/estimulacion_test.dart: findsOneWidget para entrada_estimulacion_casa y
+  entrada_estimulacion_aula, y sigue exigiendo que esté arriba sin scroll.
+- test/features/ux_l3_test.dart («Learn de Duolingo, sen baixar, a 412×915») tiene que seguir en
+  verde.
+
+P10.4 · Realidad aumentada de Valeria, adaptada al aprendizaje del inglés (ORDEN, con cámara)
+Orden de Frank: «trajeras aquí la RA que creamos con la Valeria adaptada al aprendizaje de inglés».
+Fuente: github.com/FrankBetances/valeria, commit e2a2a5e8:
+  src/steam/arActivities.ts, src/steam/arScenes.ts, src/steam/worlds/ (s1_camino … s6_jardin,
+  retos.ts), src/steam/luaSolo.ts, src/steam/engine/LuaLink.ts, src/valeriaArBridge.ts y el módulo
+  nativo Android de Valeria (ValeriaArSceneActivity, ValeriaArActivity, ValeriaArSceneLaunch).
+Tu informe previo: docs/estimulacion-ar-informe.md.
+- Módulo nativo Kotlin en android/ llamado por MethodChannel, con los MISMOS paquetes de Valeria,
+  todos Apache-2.0:
+    com.google.ar:core;
+    com.google.android.filament:filament-android, gltfio-android y filament-utils-android;
+    com.google.mediapipe:tasks-vision;
+    el modelo face_landmarker.task empaquetado, con su SHA-256 fijado.
+  Los .glb y el .task dentro del APK, sin descargas.
+- Sin permiso INTERNET ni de red: se mantienen los tools:node="remove". Se añade
+  android.permission.CAMERA, con <uses-feature android:name="android.hardware.camera.ar"
+  android:required="false"/> y com.google.ar.core «optional».
+- Si el aparato no tiene ARCore, la app lo dice en gl/es y ofrece la versión sin cámara (las
+  láminas y la voz). Nunca se cierra ni se queda en blanco.
+- Adaptación al inglés:
+    cada escena de RA va con el experimento STEAM del mes y la edad. Mapa por fenómeno:
+    materia → S0/S5, acústica → S2/S4, cinemática → S1/S3, óptica → S6, lógica → S8–S11 y
+    L02–L05. Cada mes de 2-3 a 5-6 años, una escena.
+    Lúa es la guía. Dice en inglés las palabras del par y de la progresión de ese mes
+    (assets/content/escoita/plan_mensual.json), con la voz de niño y «Oír despacio».
+    La persona adulta lee en gl/es qué hacer.
+    El niño toca, señala o hace el gesto. Nunca se le exige que repita.
+    Las actividades de cara (cámara frontal, L01/L07, ar1–ar6) van con frases inglesas del mes
+    («Open your mouth», «Smile», «Big eyes») con voz de niño y lenta.
+    Sin reconocimiento de voz.
+- Sin finalidad sanitaria. Ningún dato de la cámara sale ni se guarda: ni foto, ni vídeo, ni
+  puntos de la cara. Todo en memoria y se descarta. Un test lo comprueba.
+- Entrada:
+    en la sección «Estimulación da linguaxe e o pensamento», un quinto bloque «Realidade aumentada
+    con Lúa / Realidad aumentada con Lúa» por mes;
+    y en Explorar (casa) y Recursos (aula).
+- En EL MISMO commit:
+    docs/privacy.html: la cámara, para qué, que no se guarda nada y que no sale del móvil;
+    docs/terms.html si hace falta;
+    la ficha de Seguridad de los datos de Play en docs/ (o crea docs/play-seguridad-datos.md con lo
+    que hay que declarar);
+    README.md (sección Privacidad);
+    CLAUDE.md, sección «Privacidad declarada = privacidad compilada» → NO la toques: me pasas el
+    texto propuesto y Claude Code se lo da a Frank;
+    el gate de permisos del APK en tools/gates.sh y .github/workflows/ci.yml, que hoy solo acepta
+    los de AndroidX: se añade CAMERA a la lista permitida y NADA más.
+- Créditos y LICENSE.md: ARCore SDK, Filament y MediaPipe (Apache-2.0), con su aviso NOTICE si lo
+  tienen. tools/check_licencias.py en verde.
+- Tests:
+    el canal nativo con un mock: abrir escena, que no haya cámara, que no haya ARCore;
+    la pantalla de entrada en gl y es a escala 1.8;
+    que no se guarda nada (ningún fichero nuevo en getFilesDir).
+
+P10.5 · Inglés de las frases de cada palabra
+- Revisa todas las frases inglesas que suenan en voz de niño: los «frase» de cada palabra de las
+  progresiones y las tres del modelo del adulto en plan_mensual.json, y los textos de la RA de
+  P10.4. Que sean cortas, gramaticales, naturales para un niño de esa edad y del experimento del
+  mes.
+- Corrige las que no lo sean y su «significado» gl/es (también en
+  assets/content/significados/significados.json).
+- Lista de cambios en docs/p10-ingles.md (antes → después y por qué).
+- check_plan_escoita.py, check_pares_en.py, check_voz_lenta.py y test/core/significados_test.dart
+  en verde.
+
+P10.6 · Manual
+Regla 1 de CLAUDE.md.
+- Regenera TODAS las capturas:
+  flutter test --tags capturas --update-goldens test/capturas_test.dart
+- Mira las que cambian.
+- Añade captura de la sección de Estimulación y de la entrada de RA.
+- Quita «Vigo» como destino y «criatura/crianza» del manual.
+- Reconstruye el PDF (node docs/build-pdf.js) y el Word (python3 docs/build-docx.py) y mira el PDF
+  página a página. Ninguna figura se sale de la hoja.
+- tools/check_manual_build.py en verde.
+
+P10.7 · Capturas de escritorio
+Receta de CLAUDE.md §1d, en gl y es, en docs/capturas/escritorio/p10-*.png. Mira cada una.
+- Inicio sin «Edición Vigo».
+- Na casa → Hoxe con UNA entrada de Estimulación.
+- Modo Aula → Hoy con una.
+- La sección con «neno/nena».
+- El bloque de RA (en escritorio sale la versión sin cámara; dilo).
+
+P10.8 · Control final
+docs/p10-control.md, criterio por criterio, con su evidencia: el gate, el test o la captura.
+- P10.1: cuántos textos cambiados, por fichero.
+- P10.2: inventario de Vigo y qué se cambió.
+- P10.3: el test.
+- P10.4: paquetes, licencias, permisos del APK (salida de aapt2 dump permissions si tienes SDK; si
+  no, dilo).
+- P10.5: la lista.
+- P10.6: páginas del PDF miradas.
+- P10.7: rutas de las capturas.
+
+P10.9 · Pendientes
+Actualiza docs/PENDIENTE.md: quita lo hecho y deja solo lo que de verdad falta. Por ejemplo, probar
+en un Android real con ARCore, que solo puede hacer Frank.
+
+══════════════════════════════════════════════════════════════════════════════
+
+ANTES DE CADA PUSH, en local y en verde, y pega la salida en la entrega:
+dart format --output=none --set-exit-if-changed lib test
+flutter analyze
+flutter test --exclude-tags capturas
+python3 tools/check_lexico_galicia.py
+python3 tools/check_plan_escoita.py
+python3 tools/check_pares_en.py
+python3 tools/check_escoita.py
+python3 tools/check_finalidade.py
+python3 tools/check_voz_lenta.py
+python3 tools/check_sin_repetir.py
+python3 tools/check_laminas.py
+python3 tools/check_bundled_assets.py
+python3 tools/check_licencias.py
+python3 tools/check_no_emoji.py
+python3 tools/check_contact_email.py
+python3 tools/check_legal_urls.py --offline
+python3 tools/check_manual_build.py
+python3 tools/check_registro_commits.py
+python3 tools/check_ordenes.py
+python3 tools/export_voice_corpus.py --check
+python3 tools/prune_voice_assets.py --check   (si dice que sobran, NO borres: dímelo)
+bash tools/gates.sh --fast
+
+ENTREGA
+Empieza por lo que falta, con números: «de 10 pasos, cerrados N; textos con criatura/crianza que
+quedan: 0; referencias a Vigo como destino que quedan: 0; escenas de RA: N de 40». Después:
+- rama y SHA de cada commit;
+- salida entera de los gates;
+- rutas de las capturas gl/es;
+- el texto propuesto para CLAUDE.md (privacidad con cámara);
+- lo que no hayas podido hacer y por qué.
+Claude Code lo valida y lo mergea a main.
+```
+

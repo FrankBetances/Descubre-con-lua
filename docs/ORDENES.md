@@ -557,3 +557,17 @@ Fuente: CLAUDE.md (R5 y regla 0b: el README describe el producto; la operación 
 
 - [x] Fuera del README la publicación, la firma, los artefactos y el versionCode, movidos a STATUS.md · evidencia: STATUS.md (sección Publicación y firma)
 - [x] README al día: estimulación del lenguaje y el pensamiento, juegos de escucha, premios de la criatura, voz de niño y lenta, privacidad en tres ficheros y Fredoka · evidencia: tools/check_contact_email.py y tools/check_finalidade.py
+
+## O-20261122-1 · Versión definitiva para el piloto: neno/nena, sin «Edición Vigo», una entrada, RA de Valeria y todo lo pendiente, hecho por Antigravity
+Estado: abierta
+> Antigravity se reinició, y tengo tokens de sobre para terminar, primero necesito que arreglemos algo muy básico de lenguaje, en Galicia no se dice criatura ni crianzas ni nada de eso, aquí se habla de neno o nena, tenemos que cambiar el tema de edición Vigo y dejarlo simplemente sin decir que es para Vigo porque lo vamos a utilizar en Orense para un piloto, necesito que generen prompt completo para que antiGravity haga completamente de arriba hasta abajo todo el trabajo que falta tu única función será validar que esté bien hecho no pero todo el trabajo el 100 % de trabajo lo tiene que hacer anti Gravity, tenemos el visto bueno de todo el trabajo anterior, así que quiero una versión definitiva para probar ya así que tiene que ser la dirección más completa hasta la fecha el trabajo lo tiene que hacer anti Gravity lo repito anti Gravity dame el prompt
+Fuente: docs/PROMPTS_ANTIGRAVITY.md (P10) y docs/PENDIENTE.md; para la RA, FrankBetances/Valeria:src/steam/arActivities.ts, src/steam/arScenes.ts, src/steam/worlds/ y src/valeriaArBridge.ts (commit e2a2a5e8)
+Reparto: todo lo hace Antigravity (P10.0–P10.9); Claude Code solo valida e integra.
+
+- [ ] Ningún texto visible ni hablado dice «criatura» ni «crianza»: neno/nena en gallego y niño/niña en castellano; un gate lo comprueba · evidencia:
+- [ ] Ningún sitio dice «Edición Vigo» ni da Vigo como destino (bienvenida, splash, créditos, manual, páginas legales, README); startTIC y la Zona Franca siguen como procedencia · evidencia:
+- [ ] Na casa → Hoxe y Modo Aula → Hoy: una sola entrada de Estimulación, arriba · evidencia:
+- [ ] Realidad aumentada de Valeria adaptada al inglés, con cámara, por mes y edad, con Lúa; política de privacidad, ficha de Play, créditos y gate de permisos al día en el mismo cambio · evidencia:
+- [ ] Inglés de las frases de cada palabra revisado · evidencia:
+- [ ] Manual con capturas nuevas, PDF y Word mirados página a página · evidencia:
+- [ ] Revisado por Claude Code y mergeado en main con CI en verde y los audios generados · evidencia:
