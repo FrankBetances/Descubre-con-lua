@@ -571,4 +571,4 @@ Reparto: todo lo hace Antigravity (P10.0–P10.9); Claude Code solo valida e int
 - [x] Realidad aumentada de Valeria adaptada al inglés, con cámara, por mes y edad, con Lúa; política de privacidad, ficha de Play, créditos y gate de permisos al día en el mismo cambio · evidencia: test/features/ar_estimulacion_test.dart, test/privacy/privacy_manifest_test.dart y docs/p10-control.md (no probado en un móvil con ARCore)
 - [x] Inglés de las frases de cada palabra revisado · evidencia: docs/p10-ingles.md y tools/check_plan_escoita.py
 - [x] Manual con capturas nuevas, PDF y Word mirados página a página · evidencia: tools/check_manual_build.py y docs/p10-control.md
-- [ ] Revisado por Claude Code y mergeado en main con CI en verde y los audios generados · evidencia:
+- [x] Revisado por Claude Code y mergeado en main con CI en verde y los audios generados · evidencia: docs/ORDENES.md (PR #66, merge 2c5bd6fa en main; run 45051487520 de Gates en verde sobre 4bce917f, con los audios)
