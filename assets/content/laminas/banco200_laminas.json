@@ -2525,20 +2525,20 @@
     "id": "vigo_nat_98",
     "numero": 98,
     "categoria": "vigo_natureza",
-    "gl": "Illas da ría verdes",
-    "es": "Islas de la ría verdes",
-    "en": "illas da ría Islands",
+    "gl": "Illas costeiras verdes",
+    "es": "Islas costeras verdes",
+    "en": "Green coastal islands",
     "cefr": "A1",
     "ratio": "3:5",
     "corHex": "#059669",
     "bgHex": "#05966912",
     "preguntaSugerida": {
-      "gl": "¿As illas da ría protexen a nosa cidade das tormentas?",
-      "es": "¿Las islas protegen nuestra ciudad de las tormentas?"
+      "gl": "As illas protexen a nosa costa das tormentas?",
+      "es": "¿Las islas protegen nuestra costa de las tormentas?"
     },
     "obxectivo": {
-      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Illas da ría verdes».",
-      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Islas de la ría verdes»."
+      "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «Illas costeiras verdes».",
+      "es": "Desarrollo de la discriminación visual, fónica y afectiva con el elemento «Islas costeras verdes»."
     },
     "tprAccion": {
       "en": "Form a shelter with your arms",
@@ -5237,8 +5237,8 @@
     "corHex": "#78350f",
     "bgHex": "#78350f12",
     "preguntaSugerida": {
-      "gl": "¿Recoñeces a historia do famoso can vigués?",
-      "es": "¿Reconoces la historia del famoso perro vigués?"
+      "gl": "Recoñeces a historia do famoso can da vila?",
+      "es": "¿Reconoces la historia del famoso perro de la villa?"
     },
     "obxectivo": {
       "gl": "Desenvolvemento da discriminación visual, fónica e afectiva co elemento «O can Dinamita paseando pola vila».",

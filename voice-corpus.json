@@ -1,15 +1,15 @@
 {
- "generatedAt": "2026-11-22T09:49:58Z",
- "entries": 40013,
+ "generatedAt": "2026-11-22T10:26:25Z",
+ "entries": 40160,
  "byStyle": {
-  "child": 483,
-  "slow": 6503,
-  "tutor": 33027
+  "child": 493,
+  "slow": 6513,
+  "tutor": 33154
  },
  "byLang": {
-  "en": 18187,
-  "es": 10913,
-  "gl": 10913
+  "en": 18207,
+  "es": 10976,
+  "gl": 10977
  },
  "corpus": [
   {
@@ -40,12 +40,12 @@
    "pack": false
   },
   {
-   "id": "en_child_0321e0f6_32",
+   "id": "en_child_029caa07_27",
    "lang": "en",
    "style": "child",
-   "text": "Tap with the wooden spoon stick.",
-   "speech": "Tap with the wooden spoon stick.",
-   "source": "escoita/curso_2_3/4/stick/frase",
+   "text": "Move your feet to the beat.",
+   "speech": "Move your feet to the beat.",
+   "source": "escoita/curso_2_3/9/foot/frase",
    "pack": false
   },
   {
@@ -112,15 +112,6 @@
    "pack": false
   },
   {
-   "id": "en_child_062f5505_35",
-   "lang": "en",
-   "style": "child",
-   "text": "Turn the handle to see the outside.",
-   "speech": "Turn the handle to see the outside.",
-   "source": "escoita/curso_3_4/10/handle/frase",
-   "pack": false
-  },
-  {
    "id": "en_child_072d19b6_35",
    "lang": "en",
    "style": "child",
@@ -130,21 +121,12 @@
    "pack": false
   },
   {
-   "id": "en_child_08eaa6cc_30",
+   "id": "en_child_08817ff6_31",
    "lang": "en",
    "style": "child",
-   "text": "Wash the clean hand with soap.",
-   "speech": "Wash the clean hand with soap.",
-   "source": "escoita/curso_2_3/7/modelo/2",
-   "pack": false
-  },
-  {
-   "id": "en_child_0911caa2_10",
-   "lang": "en",
-   "style": "child",
-   "text": "Dark room.",
-   "speech": "Dark room.",
-   "source": "escoita/curso_2_3/10/modelo/1",
+   "text": "Tap gently with a wooden stick.",
+   "speech": "Tap gently with a wooden stick.",
+   "source": "escoita/curso_2_3/4/stick/frase",
    "pack": false
   },
   {
@@ -180,7 +162,7 @@
    "style": "child",
    "text": "Move each foot with the box beat.",
    "speech": "Move each foot with the box beat.",
-   "source": "escoita/curso_2_3/9/foot/frase",
+   "source": "escoita/ar/ra_curso_2_3_m09/frase/2",
    "pack": false
   },
   {
@@ -190,6 +172,15 @@
    "text": "What do you wear in rain: hat or raincoat?",
    "speech": "What do you wear in rain: hat or raincoat?",
    "source": "escoita/curso_4_5/10/pensamiento/predice",
+   "pack": false
+  },
+  {
+   "id": "en_child_0b22ab4b_44",
+   "lang": "en",
+   "style": "child",
+   "text": "Your voice travels when the string is tight.",
+   "speech": "Your voice travels when the string is tight.",
+   "source": "escoita/curso_3_4/4/tight/frase",
    "pack": false
   },
   {
@@ -265,6 +256,15 @@
    "pack": false
   },
   {
+   "id": "en_child_0ee25c63_45",
+   "lang": "en",
+   "style": "child",
+   "text": "Lift a suitcase packed with clothes or books.",
+   "speech": "Lift a suitcase packed with clothes or books.",
+   "source": "escoita/curso_5_6/8/suitcase/frase",
+   "pack": false
+  },
+  {
    "id": "en_child_0f46924d_37",
    "lang": "en",
    "style": "child",
@@ -328,15 +328,6 @@
    "pack": false
   },
   {
-   "id": "en_child_14248edc_34",
-   "lang": "en",
-   "style": "child",
-   "text": "Look how tall the steady tower is!",
-   "speech": "Look how tall the steady tower is!",
-   "source": "escoita/curso_3_4/1/tall/frase",
-   "pack": false
-  },
-  {
    "id": "en_child_148542a1_53",
    "lang": "en",
    "style": "child",
@@ -361,6 +352,15 @@
    "text": "A secret spot.",
    "speech": "A secret spot.",
    "source": "escoita/curso_5_6/7/modelo/1",
+   "pack": false
+  },
+  {
+   "id": "en_child_162d273f_12",
+   "lang": "en",
+   "style": "child",
+   "text": "A dark room.",
+   "speech": "A dark room.",
+   "source": "escoita/curso_2_3/10/modelo/1",
    "pack": false
   },
   {
@@ -445,6 +445,15 @@
    "pack": false
   },
   {
+   "id": "en_child_1c47a4c3_35",
+   "lang": "en",
+   "style": "child",
+   "text": "Fold a piece of paper for the sail.",
+   "speech": "Fold a piece of paper for the sail.",
+   "source": "escoita/curso_2_3/2/paper/frase",
+   "pack": false
+  },
+  {
    "id": "en_child_1c79484e_11",
    "lang": "en",
    "style": "child",
@@ -478,15 +487,6 @@
    "text": "Talk with taut string or loose string?",
    "speech": "Talk with taut string or loose string?",
    "source": "escoita/curso_3_4/4/pensamiento/compara",
-   "pack": false
-  },
-  {
-   "id": "en_child_1e00f2de_44",
-   "lang": "en",
-   "style": "child",
-   "text": "After jumping, the heartbeat goes very fast.",
-   "speech": "After jumping, the heartbeat goes very fast.",
-   "source": "escoita/curso_4_5/2/fast/frase",
    "pack": false
   },
   {
@@ -580,15 +580,6 @@
    "pack": false
   },
   {
-   "id": "en_child_21db34d6_42",
-   "lang": "en",
-   "style": "child",
-   "text": "The white plane glides from the nose fold.",
-   "speech": "The white plane glides from the nose fold.",
-   "source": "escoita/curso_5_6/6/modelo/2",
-   "pack": false
-  },
-  {
    "id": "en_child_21e55f45_22",
    "lang": "en",
    "style": "child",
@@ -613,6 +604,15 @@
    "text": "Put your hand in the cool water.",
    "speech": "Put your hand in the cool water.",
    "source": "escoita/curso_2_3/1/water/frase",
+   "pack": false
+  },
+  {
+   "id": "en_child_2379234f_29",
+   "lang": "en",
+   "style": "child",
+   "text": "Look at each tiny brown seed.",
+   "speech": "Look at each tiny brown seed.",
+   "source": "escoita/curso_2_3/6/tiny/frase",
    "pack": false
   },
   {
@@ -706,6 +706,15 @@
    "pack": false
   },
   {
+   "id": "en_child_267efa0d_38",
+   "lang": "en",
+   "style": "child",
+   "text": "Wrap a soft bandage gently on the paw.",
+   "speech": "Wrap a soft bandage gently on the paw.",
+   "source": "escoita/curso_4_5/1/bandage/frase",
+   "pack": false
+  },
+  {
    "id": "en_child_2686caf6_37",
    "lang": "en",
    "style": "child",
@@ -787,21 +796,21 @@
    "pack": false
   },
   {
+   "id": "en_child_2bca5af2_28",
+   "lang": "en",
+   "style": "child",
+   "text": "Press the soft bread gently.",
+   "speech": "Press the soft bread gently.",
+   "source": "escoita/curso_2_3/5/modelo/2",
+   "pack": false
+  },
+  {
    "id": "en_child_2bfec078_27",
    "lang": "en",
    "style": "child",
    "text": "Why does the pinwheel spin?",
    "speech": "Why does the pinwheel spin?",
    "source": "escoita/curso_4_5/7/pensamiento/explica",
-   "pack": false
-  },
-  {
-   "id": "en_child_2c920c36_36",
-   "lang": "en",
-   "style": "child",
-   "text": "Blow gently to move the boat across.",
-   "speech": "Blow gently to move the boat across.",
-   "source": "escoita/curso_2_3/2/blow/frase",
    "pack": false
   },
   {
@@ -828,7 +837,7 @@
    "style": "child",
    "text": "See the tower shadow on the wall.",
    "speech": "See the tower shadow on the wall.",
-   "source": "escoita/curso_3_4/5/shadow/frase",
+   "source": "escoita/ar/ra_curso_3_4_m05/frase/2",
    "pack": false
   },
   {
@@ -847,6 +856,15 @@
    "text": "We found it because the grid shows where each spot is.",
    "speech": "We found it because the grid shows where each spot is.",
    "source": "escoita/curso_5_6/7/pensamiento/explica/modelo",
+   "pack": false
+  },
+  {
+   "id": "en_child_2e704fa1_44",
+   "lang": "en",
+   "style": "child",
+   "text": "Fold the nose so the white plane glides far.",
+   "speech": "Fold the nose so the white plane glides far.",
+   "source": "escoita/curso_5_6/6/modelo/2",
    "pack": false
   },
   {
@@ -877,6 +895,15 @@
    "pack": false
   },
   {
+   "id": "en_child_2ff4691d_38",
+   "lang": "en",
+   "style": "child",
+   "text": "Wash both hands with soap until clean.",
+   "speech": "Wash both hands with soap until clean.",
+   "source": "escoita/curso_2_3/7/modelo/2",
+   "pack": false
+  },
+  {
    "id": "en_child_308b3688_21",
    "lang": "en",
    "style": "child",
@@ -901,6 +928,15 @@
    "text": "Does one flash mean yes or no in our code?",
    "speech": "Does one flash mean yes or no in our code?",
    "source": "escoita/curso_5_6/9/pensamiento/predice",
+   "pack": false
+  },
+  {
+   "id": "en_child_3163d5b1_50",
+   "lang": "en",
+   "style": "child",
+   "text": "Carry the cloth stretcher steadily past the cones.",
+   "speech": "Carry the cloth stretcher steadily past the cones.",
+   "source": "escoita/curso_4_5/5/modelo/2",
    "pack": false
   },
   {
@@ -963,7 +999,7 @@
    "style": "child",
    "text": "Lift the suitcase with clothes or books.",
    "speech": "Lift the suitcase with clothes or books.",
-   "source": "escoita/curso_5_6/8/suitcase/frase",
+   "source": "escoita/ar/ra_curso_5_6_m08/frase/2",
    "pack": false
   },
   {
@@ -1045,6 +1081,15 @@
    "text": "Soft sound!",
    "speech": "Soft sound!",
    "source": "acopros/4/mira_e_nota",
+   "pack": false
+  },
+  {
+   "id": "en_child_392b1517_45",
+   "lang": "en",
+   "style": "child",
+   "text": "Tape the straws together to make a pan flute.",
+   "speech": "Tape the straws together to make a pan flute.",
+   "source": "escoita/curso_5_6/10/flute/frase",
    "pack": false
   },
   {
@@ -1165,15 +1210,6 @@
    "pack": false
   },
   {
-   "id": "en_child_3dfb3d46_32",
-   "lang": "en",
-   "style": "child",
-   "text": "Run fast when the pats go quick.",
-   "speech": "Run fast when the pats go quick.",
-   "source": "escoita/curso_2_3/9/run/frase",
-   "pack": false
-  },
-  {
    "id": "en_child_3e2a888f_34",
    "lang": "en",
    "style": "child",
@@ -1210,6 +1246,15 @@
    "pack": false
   },
   {
+   "id": "en_child_408066e1_13",
+   "lang": "en",
+   "style": "child",
+   "text": "Steady hands.",
+   "speech": "Steady hands.",
+   "source": "escoita/curso_4_5/5/modelo/1",
+   "pack": false
+  },
+  {
    "id": "en_child_410b1af6_45",
    "lang": "en",
    "style": "child",
@@ -1225,24 +1270,6 @@
    "text": "The wall looks bright and colorful!",
    "speech": "The wall looks bright and colorful!",
    "source": "escoita/curso_5_6/2/colorful/frase",
-   "pack": false
-  },
-  {
-   "id": "en_child_41b849c0_44",
-   "lang": "en",
-   "style": "child",
-   "text": "Wear the raincoat with the hood to stay dry.",
-   "speech": "Wear the raincoat with the hood to stay dry.",
-   "source": "escoita/curso_4_5/10/modelo/2",
-   "pack": false
-  },
-  {
-   "id": "en_child_41c514f0_41",
-   "lang": "en",
-   "style": "child",
-   "text": "Four legs go inside the number four hoop.",
-   "speech": "Four legs go inside the number four hoop.",
-   "source": "escoita/curso_4_5/3/four/frase",
    "pack": false
   },
   {
@@ -1282,24 +1309,6 @@
    "pack": false
   },
   {
-   "id": "en_child_4241cc27_39",
-   "lang": "en",
-   "style": "child",
-   "text": "The white folio plane crosses the tape.",
-   "speech": "The white folio plane crosses the tape.",
-   "source": "escoita/curso_5_6/6/white/frase",
-   "pack": false
-  },
-  {
-   "id": "en_child_43260476_32",
-   "lang": "en",
-   "style": "child",
-   "text": "Rub soap to make a white bubble.",
-   "speech": "Rub soap to make a white bubble.",
-   "source": "escoita/curso_2_3/7/bubble/frase",
-   "pack": false
-  },
-  {
    "id": "en_child_44f810b1_33",
    "lang": "en",
    "style": "child",
@@ -1315,6 +1324,15 @@
    "text": "Put the big wooden block at the base.",
    "speech": "Put the big wooden block at the base.",
    "source": "escoita/curso_3_4/1/block/frase",
+   "pack": false
+  },
+  {
+   "id": "en_child_45df302e_44",
+   "lang": "en",
+   "style": "child",
+   "text": "Every place has a plate: the table is ready.",
+   "speech": "Every place has a plate: the table is ready.",
+   "source": "escoita/curso_3_4/7/ready/frase",
    "pack": false
   },
   {
@@ -1372,15 +1390,6 @@
    "pack": false
   },
   {
-   "id": "en_child_4a63a4aa_32",
-   "lang": "en",
-   "style": "child",
-   "text": "The boat is very light on water.",
-   "speech": "The boat is very light on water.",
-   "source": "escoita/curso_2_3/2/light/frase",
-   "pack": false
-  },
-  {
    "id": "en_child_4ad6c490_15",
    "lang": "en",
    "style": "child",
@@ -1426,30 +1435,21 @@
    "pack": false
   },
   {
+   "id": "en_child_4c5968d9_37",
+   "lang": "en",
+   "style": "child",
+   "text": "Put toys with four legs in hoop four.",
+   "speech": "Put toys with four legs in hoop four.",
+   "source": "escoita/curso_4_5/3/four/frase",
+   "pack": false
+  },
+  {
    "id": "en_child_4c701d97_14",
    "lang": "en",
    "style": "child",
    "text": "A ready table.",
    "speech": "A ready table.",
    "source": "escoita/curso_3_4/7/modelo/1",
-   "pack": false
-  },
-  {
-   "id": "en_child_4c882ac8_36",
-   "lang": "en",
-   "style": "child",
-   "text": "Trace the dark outline on big paper.",
-   "speech": "Trace the dark outline on big paper.",
-   "source": "escoita/curso_3_4/5/outline/frase",
-   "pack": false
-  },
-  {
-   "id": "en_child_4c8e3af8_35",
-   "lang": "en",
-   "style": "child",
-   "text": "Wear the right clothes for the sky.",
-   "speech": "Wear the right clothes for the sky.",
-   "source": "escoita/curso_4_5/10/wear/frase",
    "pack": false
   },
   {
@@ -1516,15 +1516,6 @@
    "pack": false
   },
   {
-   "id": "en_child_500a6ced_30",
-   "lang": "en",
-   "style": "child",
-   "text": "The adult cuts the apple wide.",
-   "speech": "The adult cuts the apple wide.",
-   "source": "escoita/curso_2_3/6/cut/frase",
-   "pack": false
-  },
-  {
    "id": "en_child_5041fe39_41",
    "lang": "en",
    "style": "child",
@@ -1561,12 +1552,21 @@
    "pack": false
   },
   {
-   "id": "en_child_5282e93f_25",
+   "id": "en_child_512e6fb1_37",
    "lang": "en",
    "style": "child",
-   "text": "Sort the small leaf here.",
-   "speech": "Sort the small leaf here.",
-   "source": "escoita/curso_2_3/3/modelo/2",
+   "text": "Feel the wet towel and the dry towel.",
+   "speech": "Feel the wet towel and the dry towel.",
+   "source": "escoita/curso_2_3/8/towel/frase",
+   "pack": false
+  },
+  {
+   "id": "en_child_52184d8c_37",
+   "lang": "en",
+   "style": "child",
+   "text": "Quiet now: curl up like a sleepy cat.",
+   "speech": "Quiet now: curl up like a sleepy cat.",
+   "source": "escoita/curso_2_3/9/sleepy/frase",
    "pack": false
   },
   {
@@ -1579,21 +1579,12 @@
    "pack": false
   },
   {
-   "id": "en_child_53704971_11",
+   "id": "en_child_5727994c_42",
    "lang": "en",
    "style": "child",
-   "text": "A high jar.",
-   "speech": "A high jar.",
-   "source": "escoita/curso_3_4/9/modelo/1",
-   "pack": false
-  },
-  {
-   "id": "en_child_57ad9148_34",
-   "lang": "en",
-   "style": "child",
-   "text": "Watch every drop fall in the sink.",
-   "speech": "Watch every drop fall in the sink.",
-   "source": "escoita/curso_2_3/8/drop/frase",
+   "text": "After jumping, your heart beats very fast!",
+   "speech": "After jumping, your heart beats very fast!",
+   "source": "escoita/curso_4_5/2/fast/frase",
    "pack": false
   },
   {
@@ -1642,12 +1633,30 @@
    "pack": false
   },
   {
+   "id": "en_child_59d50783_35",
+   "lang": "en",
+   "style": "child",
+   "text": "Watch each drop fall into the sink.",
+   "speech": "Watch each drop fall into the sink.",
+   "source": "escoita/curso_2_3/8/drop/frase",
+   "pack": false
+  },
+  {
    "id": "en_child_59d7fb91_25",
    "lang": "en",
    "style": "child",
    "text": "Where do small leaves go?",
    "speech": "Where do small leaves go?",
    "source": "escoita/curso_2_3/3/pensamiento/explica",
+   "pack": false
+  },
+  {
+   "id": "en_child_5a7f12c0_33",
+   "lang": "en",
+   "style": "child",
+   "text": "The ice cube starts to melt fast.",
+   "speech": "The ice cube starts to melt fast.",
+   "source": "escoita/curso_3_4/6/melt/frase",
    "pack": false
   },
   {
@@ -1687,6 +1696,15 @@
    "pack": false
   },
   {
+   "id": "en_child_5e032802_42",
+   "lang": "en",
+   "style": "child",
+   "text": "Hold the handle and turn the spoon around.",
+   "speech": "Hold the handle and turn the spoon around.",
+   "source": "escoita/curso_3_4/10/handle/frase",
+   "pack": false
+  },
+  {
    "id": "en_child_5e713aa9_34",
    "lang": "en",
    "style": "child",
@@ -1723,6 +1741,15 @@
    "pack": false
   },
   {
+   "id": "en_child_5f05967a_30",
+   "lang": "en",
+   "style": "child",
+   "text": "Look at the apple cut in half.",
+   "speech": "Look at the apple cut in half.",
+   "source": "escoita/curso_2_3/6/apple/frase",
+   "pack": false
+  },
+  {
    "id": "en_child_6088173a_25",
    "lang": "en",
    "style": "child",
@@ -1747,15 +1774,6 @@
    "text": "Warm water makes cold ice melt.",
    "speech": "Warm water makes cold ice melt.",
    "source": "escoita/curso_3_4/6/pensamiento/explica/modelo",
-   "pack": false
-  },
-  {
-   "id": "en_child_62a3c7c9_32",
-   "lang": "en",
-   "style": "child",
-   "text": "The room is dark so stars shine.",
-   "speech": "The room is dark so stars shine.",
-   "source": "escoita/curso_2_3/10/dark/frase",
    "pack": false
   },
   {
@@ -1804,12 +1822,12 @@
    "pack": false
   },
   {
-   "id": "en_child_653c06b4_37",
+   "id": "en_child_6593624d_26",
    "lang": "en",
    "style": "child",
-   "text": "Pour the water slow without spilling.",
-   "speech": "Pour the water slow without spilling.",
-   "source": "escoita/curso_3_4/8/pour/frase",
+   "text": "Drop a stone from up high.",
+   "speech": "Drop a stone from up high.",
+   "source": "escoita/curso_2_3/4/drop/frase",
    "pack": false
   },
   {
@@ -1935,7 +1953,7 @@
    "style": "child",
    "text": "Hold the colored filter before the light.",
    "speech": "Hold the colored filter before the light.",
-   "source": "escoita/curso_5_6/2/filter/frase",
+   "source": "escoita/ar/ra_curso_5_6_m02/frase/2",
    "pack": false
   },
   {
@@ -1945,15 +1963,6 @@
    "text": "Soft bread.",
    "speech": "Soft bread.",
    "source": "escoita/curso_2_3/5/modelo/1",
-   "pack": false
-  },
-  {
-   "id": "en_child_6b694fef_29",
-   "lang": "en",
-   "style": "child",
-   "text": "We blow the light paper sail.",
-   "speech": "We blow the light paper sail.",
-   "source": "escoita/curso_2_3/2/modelo/2",
    "pack": false
   },
   {
@@ -1981,6 +1990,15 @@
    "text": "Blue and yellow make bright green!",
    "speech": "Blue and yellow make bright green!",
    "source": "escoita/curso_5_6/1/green/frase",
+   "pack": false
+  },
+  {
+   "id": "en_child_6c242d61_12",
+   "lang": "en",
+   "style": "child",
+   "text": "A slow pour.",
+   "speech": "A slow pour.",
+   "source": "escoita/curso_3_4/8/modelo/1",
    "pack": false
   },
   {
@@ -2038,12 +2056,12 @@
    "pack": false
   },
   {
-   "id": "en_child_719d1ee9_33",
+   "id": "en_child_70684c87_39",
    "lang": "en",
    "style": "child",
-   "text": "We fold stiff paper for the sail.",
-   "speech": "We fold stiff paper for the sail.",
-   "source": "escoita/curso_2_3/2/paper/frase",
+   "text": "Smile wide and look in the shiny spoon!",
+   "speech": "Smile wide and look in the shiny spoon!",
+   "source": "escoita/curso_3_4/10/smile/frase",
    "pack": false
   },
   {
@@ -2074,21 +2092,21 @@
    "pack": false
   },
   {
-   "id": "en_child_75698129_25",
-   "lang": "en",
-   "style": "child",
-   "text": "Drop it on the loud drum.",
-   "speech": "Drop it on the loud drum.",
-   "source": "escoita/curso_2_3/4/modelo/2",
-   "pack": false
-  },
-  {
    "id": "en_child_75971d5b_31",
    "lang": "en",
    "style": "child",
    "text": "Why does the soft bread squash?",
    "speech": "Why does the soft bread squash?",
    "source": "escoita/curso_2_3/5/pensamiento/explica",
+   "pack": false
+  },
+  {
+   "id": "en_child_759ed3e6_37",
+   "lang": "en",
+   "style": "child",
+   "text": "Pour water slowly through the funnel.",
+   "speech": "Pour water slowly through the funnel.",
+   "source": "escoita/curso_3_4/8/modelo/2",
    "pack": false
   },
   {
@@ -2110,15 +2128,6 @@
    "pack": false
   },
   {
-   "id": "en_child_76ed794f_36",
-   "lang": "en",
-   "style": "child",
-   "text": "The heavy stone will sink down fast.",
-   "speech": "The heavy stone will sink down fast.",
-   "source": "escoita/curso_2_3/1/sink/frase",
-   "pack": false
-  },
-  {
    "id": "en_child_776dbdb2_11",
    "lang": "en",
    "style": "child",
@@ -2134,6 +2143,15 @@
    "text": "Chalk leaves bright dust on the ground.",
    "speech": "Chalk leaves bright dust on the ground.",
    "source": "escoita/curso_4_5/9/dust/frase",
+   "pack": false
+  },
+  {
+   "id": "en_child_780ae2fc_33",
+   "lang": "en",
+   "style": "child",
+   "text": "Run fast when the beat goes fast!",
+   "speech": "Run fast when the beat goes fast!",
+   "source": "escoita/curso_2_3/9/run/frase",
    "pack": false
   },
   {
@@ -2160,7 +2178,7 @@
    "style": "child",
    "text": "Lift the wet towel and dry towel.",
    "speech": "Lift the wet towel and dry towel.",
-   "source": "escoita/curso_2_3/8/towel/frase",
+   "source": "escoita/ar/ra_curso_2_3_m08/frase/2",
    "pack": false
   },
   {
@@ -2182,12 +2200,30 @@
    "pack": false
   },
   {
+   "id": "en_child_7c0f85d7_27",
+   "lang": "en",
+   "style": "child",
+   "text": "Watch the heavy stone sink!",
+   "speech": "Watch the heavy stone sink!",
+   "source": "escoita/curso_2_3/1/sink/frase",
+   "pack": false
+  },
+  {
    "id": "en_child_7d00de96_28",
    "lang": "en",
    "style": "child",
    "text": "Which ice cube shrinks more?",
    "speech": "Which ice cube shrinks more?",
    "source": "escoita/curso_3_4/6/pensamiento/compara",
+   "pack": false
+  },
+  {
+   "id": "en_child_7d012598_32",
+   "lang": "en",
+   "style": "child",
+   "text": "We blow on the light paper sail.",
+   "speech": "We blow on the light paper sail.",
+   "source": "escoita/curso_2_3/2/modelo/2",
    "pack": false
   },
   {
@@ -2242,15 +2278,6 @@
    "text": "Let the train roll down the board.",
    "speech": "Let the train roll down the board.",
    "source": "escoita/curso_3_4/3/roll/frase",
-   "pack": false
-  },
-  {
-   "id": "en_child_808b769b_47",
-   "lang": "en",
-   "style": "child",
-   "text": "Carry the cloth stretcher steady past the cone.",
-   "speech": "Carry the cloth stretcher steady past the cone.",
-   "source": "escoita/curso_4_5/5/modelo/2",
    "pack": false
   },
   {
@@ -2335,6 +2362,15 @@
    "pack": false
   },
   {
+   "id": "en_child_86676142_29",
+   "lang": "en",
+   "style": "child",
+   "text": "An adult cuts the apple open.",
+   "speech": "An adult cuts the apple open.",
+   "source": "escoita/curso_2_3/6/cut/frase",
+   "pack": false
+  },
+  {
    "id": "en_child_8690d7ea_42",
    "lang": "en",
    "style": "child",
@@ -2344,12 +2380,12 @@
    "pack": false
   },
   {
-   "id": "en_child_86d38003_11",
+   "id": "en_child_873705c0_41",
    "lang": "en",
    "style": "child",
-   "text": "Clean hand.",
-   "speech": "Clean hand.",
-   "source": "escoita/curso_2_3/7/modelo/1",
+   "text": "Soft cotton soaks up every drop of water.",
+   "speech": "Soft cotton soaks up every drop of water.",
+   "source": "escoita/curso_4_5/1/cotton/frase",
    "pack": false
   },
   {
@@ -2425,6 +2461,15 @@
    "pack": false
   },
   {
+   "id": "en_child_8ab92e97_39",
+   "lang": "en",
+   "style": "child",
+   "text": "Wear the right clothes for the weather.",
+   "speech": "Wear the right clothes for the weather.",
+   "source": "escoita/curso_4_5/10/wear/frase",
+   "pack": false
+  },
+  {
    "id": "en_child_8b743236_12",
    "lang": "en",
    "style": "child",
@@ -2479,12 +2524,12 @@
    "pack": false
   },
   {
-   "id": "en_child_91958c8b_40",
+   "id": "en_child_9049b629_16",
    "lang": "en",
    "style": "child",
-   "text": "Pour water through the funnel very slow.",
-   "speech": "Pour water through the funnel very slow.",
-   "source": "escoita/curso_3_4/8/modelo/2",
+   "text": "A large picture.",
+   "speech": "A large picture.",
+   "source": "escoita/curso_4_5/4/modelo/1",
    "pack": false
   },
   {
@@ -2497,21 +2542,21 @@
    "pack": false
   },
   {
+   "id": "en_child_91decade_38",
+   "lang": "en",
+   "style": "child",
+   "text": "Trace the dark outline on a big sheet.",
+   "speech": "Trace the dark outline on a big sheet.",
+   "source": "escoita/curso_3_4/5/outline/frase",
+   "pack": false
+  },
+  {
    "id": "en_child_921bf4c0_30",
    "lang": "en",
    "style": "child",
    "text": "Slow pour fills the cup clean.",
    "speech": "Slow pour fills the cup clean.",
    "source": "escoita/curso_3_4/8/pensamiento/explica/modelo",
-   "pack": false
-  },
-  {
-   "id": "en_child_927b91e0_13",
-   "lang": "en",
-   "style": "child",
-   "text": "Carry steady.",
-   "speech": "Carry steady.",
-   "source": "escoita/curso_4_5/5/modelo/1",
    "pack": false
   },
   {
@@ -2529,7 +2574,7 @@
    "style": "child",
    "text": "Tape the straws into a Pan flute.",
    "speech": "Tape the straws into a Pan flute.",
-   "source": "escoita/curso_5_6/10/flute/frase",
+   "source": "escoita/ar/ra_curso_5_6_m10/frase/2",
    "pack": false
   },
   {
@@ -2587,12 +2632,12 @@
    "pack": false
   },
   {
-   "id": "en_child_957c6929_43",
+   "id": "en_child_983626c7_27",
    "lang": "en",
    "style": "child",
-   "text": "The voice travels when the string is tight.",
-   "speech": "The voice travels when the string is tight.",
-   "source": "escoita/curso_3_4/4/tight/frase",
+   "text": "Look how tall our tower is!",
+   "speech": "Look how tall our tower is!",
+   "source": "escoita/curso_3_4/1/tall/frase",
    "pack": false
   },
   {
@@ -2677,15 +2722,6 @@
    "pack": false
   },
   {
-   "id": "en_child_9ce3e38a_38",
-   "lang": "en",
-   "style": "child",
-   "text": "Zoom in with the lens to see it large.",
-   "speech": "Zoom in with the lens to see it large.",
-   "source": "escoita/curso_4_5/4/modelo/2",
-   "pack": false
-  },
-  {
    "id": "en_child_9d2cc22f_35",
    "lang": "en",
    "style": "child",
@@ -2755,15 +2791,6 @@
    "text": "Which towel is heavy and wet?",
    "speech": "Which towel is heavy and wet?",
    "source": "escoita/curso_2_3/8/pensamiento/compara",
-   "pack": false
-  },
-  {
-   "id": "en_child_9f384ce1_13",
-   "lang": "en",
-   "style": "child",
-   "text": "A quick foot.",
-   "speech": "A quick foot.",
-   "source": "escoita/curso_2_3/9/modelo/1",
    "pack": false
   },
   {
@@ -2848,6 +2875,15 @@
    "pack": false
   },
   {
+   "id": "en_child_a5a56eca_36",
+   "lang": "en",
+   "style": "child",
+   "text": "Fold the plane's nose sharp or wide.",
+   "speech": "Fold the plane's nose sharp or wide.",
+   "source": "escoita/curso_5_6/6/nose/frase",
+   "pack": false
+  },
+  {
    "id": "en_child_a69ec95e_16",
    "lang": "en",
    "style": "child",
@@ -2871,7 +2907,7 @@
    "style": "child",
    "text": "Hit the metal tray or drum.",
    "speech": "Hit the metal tray or drum.",
-   "source": "escoita/curso_2_3/4/drum/frase",
+   "source": "escoita/ar/ra_curso_2_3_m04/frase/2",
    "pack": false
   },
   {
@@ -2920,21 +2956,21 @@
    "pack": false
   },
   {
-   "id": "en_child_a83f1c4f_25",
-   "lang": "en",
-   "style": "child",
-   "text": "Press the soft bread now.",
-   "speech": "Press the soft bread now.",
-   "source": "escoita/curso_2_3/5/modelo/2",
-   "pack": false
-  },
-  {
    "id": "en_child_a841ecf9_32",
    "lang": "en",
    "style": "child",
    "text": "Light comes from the small bulb.",
    "speech": "Light comes from the small bulb.",
    "source": "escoita/curso_2_3/10/bulb/frase",
+   "pack": false
+  },
+  {
+   "id": "en_child_a8b805d7_46",
+   "lang": "en",
+   "style": "child",
+   "text": "Hold the colored filter in front of the light.",
+   "speech": "Hold the colored filter in front of the light.",
+   "source": "escoita/curso_5_6/2/filter/frase",
    "pack": false
   },
   {
@@ -2965,21 +3001,12 @@
    "pack": false
   },
   {
-   "id": "en_child_aaafddbd_13",
+   "id": "en_child_ab80e15e_32",
    "lang": "en",
    "style": "child",
-   "text": "A large leaf.",
-   "speech": "A large leaf.",
-   "source": "escoita/curso_4_5/4/modelo/1",
-   "pack": false
-  },
-  {
-   "id": "en_child_aab4b8cb_36",
-   "lang": "en",
-   "style": "child",
-   "text": "Go slow when the cup is nearly full.",
-   "speech": "Go slow when the cup is nearly full.",
-   "source": "escoita/curso_3_4/8/slow/frase",
+   "text": "Touch fresh bread and old bread.",
+   "speech": "Touch fresh bread and old bread.",
+   "source": "escoita/curso_2_3/5/bread/frase",
    "pack": false
   },
   {
@@ -3060,7 +3087,7 @@
    "style": "child",
    "text": "Cut the apple in half across.",
    "speech": "Cut the apple in half across.",
-   "source": "escoita/curso_2_3/6/apple/frase",
+   "source": "escoita/ar/ra_curso_2_3_m06/frase/2",
    "pack": false
   },
   {
@@ -3082,21 +3109,21 @@
    "pack": false
   },
   {
+   "id": "en_child_b3ecdf59_10",
+   "lang": "en",
+   "style": "child",
+   "text": "Fast feet.",
+   "speech": "Fast feet.",
+   "source": "escoita/curso_2_3/9/modelo/1",
+   "pack": false
+  },
+  {
    "id": "en_child_b4225b40_45",
    "lang": "en",
    "style": "child",
    "text": "Compare one clear flash and two quick blinks.",
    "speech": "Compare one clear flash and two quick blinks.",
    "source": "escoita/curso_5_6/9/pensamiento/compara",
-   "pack": false
-  },
-  {
-   "id": "en_child_b447ffa7_35",
-   "lang": "en",
-   "style": "child",
-   "text": "The round disc looks one new color!",
-   "speech": "The round disc looks one new color!",
-   "source": "escoita/curso_5_6/4/round/frase",
    "pack": false
   },
   {
@@ -3124,6 +3151,15 @@
    "text": "We build a tall tower with big blocks.",
    "speech": "We build a tall tower with big blocks.",
    "source": "escoita/curso_3_4/1/modelo/2",
+   "pack": false
+  },
+  {
+   "id": "en_child_b578b46b_29",
+   "lang": "en",
+   "style": "child",
+   "text": "Blow gently to push the boat!",
+   "speech": "Blow gently to push the boat!",
+   "source": "escoita/curso_2_3/2/blow/frase",
    "pack": false
   },
   {
@@ -3172,15 +3208,6 @@
    "pack": false
   },
   {
-   "id": "en_child_b77e63c2_10",
-   "lang": "en",
-   "style": "child",
-   "text": "Pour slow.",
-   "speech": "Pour slow.",
-   "source": "escoita/curso_3_4/8/modelo/1",
-   "pack": false
-  },
-  {
    "id": "en_child_b78f2fcd_32",
    "lang": "en",
    "style": "child",
@@ -3205,6 +3232,15 @@
    "text": "Pan or drum: which is loud?",
    "speech": "Pan or drum: which is loud?",
    "source": "escoita/curso_2_3/4/pensamiento/predice",
+   "pack": false
+  },
+  {
+   "id": "en_child_b8a27f58_37",
+   "lang": "en",
+   "style": "child",
+   "text": "Put up the raincoat hood to stay dry.",
+   "speech": "Put up the raincoat hood to stay dry.",
+   "source": "escoita/curso_4_5/10/modelo/2",
    "pack": false
   },
   {
@@ -3244,6 +3280,15 @@
    "pack": false
   },
   {
+   "id": "en_child_babe6863_28",
+   "lang": "en",
+   "style": "child",
+   "text": "Tap gently on the loud drum.",
+   "speech": "Tap gently on the loud drum.",
+   "source": "escoita/curso_2_3/4/modelo/2",
+   "pack": false
+  },
+  {
    "id": "en_child_bbbad9a2_22",
    "lang": "en",
    "style": "child",
@@ -3262,12 +3307,12 @@
    "pack": false
   },
   {
-   "id": "en_child_bcbba30f_30",
+   "id": "en_child_bc661614_30",
    "lang": "en",
    "style": "child",
-   "text": "Each seed in the star is tiny.",
-   "speech": "Each seed in the star is tiny.",
-   "source": "escoita/curso_2_3/6/tiny/frase",
+   "text": "The wet towel feels heavy now!",
+   "speech": "The wet towel feels heavy now!",
+   "source": "escoita/curso_2_3/8/wet/frase",
    "pack": false
   },
   {
@@ -3277,6 +3322,15 @@
    "text": "Which keeps the cat dry: hat or hood?",
    "speech": "Which keeps the cat dry: hat or hood?",
    "source": "escoita/curso_4_5/10/pensamiento/compara",
+   "pack": false
+  },
+  {
+   "id": "en_child_bd9ba427_30",
+   "lang": "en",
+   "style": "child",
+   "text": "A big stone makes a loud boom!",
+   "speech": "A big stone makes a loud boom!",
+   "source": "escoita/curso_2_3/4/loud/frase",
    "pack": false
   },
   {
@@ -3322,6 +3376,15 @@
    "text": "Big eyes!",
    "speech": "Big eyes!",
    "source": "escoita/ar/face/L01.ar3",
+   "pack": false
+  },
+  {
+   "id": "en_child_c0bd7639_42",
+   "lang": "en",
+   "style": "child",
+   "text": "Step fast to the drum, then tiptoe slowly.",
+   "speech": "Step fast to the drum, then tiptoe slowly.",
+   "source": "escoita/curso_2_3/9/modelo/2",
    "pack": false
   },
   {
@@ -3394,15 +3457,6 @@
    "text": "Light paper catches the blow.",
    "speech": "Light paper catches the blow.",
    "source": "escoita/curso_2_3/2/pensamiento/explica/modelo",
-   "pack": false
-  },
-  {
-   "id": "en_child_c405d05d_30",
-   "lang": "en",
-   "style": "child",
-   "text": "Drop the big stone from above.",
-   "speech": "Drop the big stone from above.",
-   "source": "escoita/curso_2_3/4/drop/frase",
    "pack": false
   },
   {
@@ -3496,15 +3550,6 @@
    "pack": false
   },
   {
-   "id": "en_child_ccacbc37_32",
-   "lang": "en",
-   "style": "child",
-   "text": "The big ice starts to melt fast.",
-   "speech": "The big ice starts to melt fast.",
-   "source": "escoita/curso_3_4/6/melt/frase",
-   "pack": false
-  },
-  {
    "id": "en_child_cd014d59_13",
    "lang": "en",
    "style": "child",
@@ -3541,12 +3586,12 @@
    "pack": false
   },
   {
-   "id": "en_child_ce826429_36",
+   "id": "en_child_cf16e50f_39",
    "lang": "en",
    "style": "child",
-   "text": "Silence now: get sleepy on the sofa.",
-   "speech": "Silence now: get sleepy on the sofa.",
-   "source": "escoita/curso_2_3/9/sleepy/frase",
+   "text": "Look at the tower's shadow on the wall.",
+   "speech": "Look at the tower's shadow on the wall.",
+   "source": "escoita/curso_3_4/5/shadow/frase",
    "pack": false
   },
   {
@@ -3556,6 +3601,15 @@
    "text": "Heavy, light, level the bridge!",
    "speech": "Heavy, light, level the bridge!",
    "source": "escoita/ar/ra_curso_2_3_m05/frase/0",
+   "pack": false
+  },
+  {
+   "id": "en_child_d1afdbd2_29",
+   "lang": "en",
+   "style": "child",
+   "text": "The paper boat is very light.",
+   "speech": "The paper boat is very light.",
+   "source": "escoita/curso_2_3/2/light/frase",
    "pack": false
   },
   {
@@ -3600,7 +3654,25 @@
    "style": "child",
    "text": "Wrap the best bandage on the paw.",
    "speech": "Wrap the best bandage on the paw.",
-   "source": "escoita/curso_4_5/1/bandage/frase",
+   "source": "escoita/ar/ra_curso_4_5_m01/frase/2",
+   "pack": false
+  },
+  {
+   "id": "en_child_d3acf26e_12",
+   "lang": "en",
+   "style": "child",
+   "text": "A high note.",
+   "speech": "A high note.",
+   "source": "escoita/curso_3_4/9/modelo/1",
+   "pack": false
+  },
+  {
+   "id": "en_child_d44bcec7_37",
+   "lang": "en",
+   "style": "child",
+   "text": "The room is dark, so the stars shine!",
+   "speech": "The room is dark, so the stars shine!",
+   "source": "escoita/curso_2_3/10/dark/frase",
    "pack": false
   },
   {
@@ -3631,15 +3703,6 @@
    "pack": false
   },
   {
-   "id": "en_child_d5aed654_31",
-   "lang": "en",
-   "style": "child",
-   "text": "The wet towel weighs much more.",
-   "speech": "The wet towel weighs much more.",
-   "source": "escoita/curso_2_3/8/wet/frase",
-   "pack": false
-  },
-  {
    "id": "en_child_d5fc1803_40",
    "lang": "en",
    "style": "child",
@@ -3655,6 +3718,15 @@
    "text": "The soaked towel starts to drip.",
    "speech": "The soaked towel starts to drip.",
    "source": "escoita/curso_2_3/8/drip/frase",
+   "pack": false
+  },
+  {
+   "id": "en_child_d6f68ac2_43",
+   "lang": "en",
+   "style": "child",
+   "text": "The white paper plane glides past the tape.",
+   "speech": "The white paper plane glides past the tape.",
+   "source": "escoita/curso_5_6/6/white/frase",
    "pack": false
   },
   {
@@ -3685,12 +3757,30 @@
    "pack": false
   },
   {
+   "id": "en_child_d9468bae_42",
+   "lang": "en",
+   "style": "child",
+   "text": "Look through the lens to see things large.",
+   "speech": "Look through the lens to see things large.",
+   "source": "escoita/curso_4_5/4/modelo/2",
+   "pack": false
+  },
+  {
    "id": "en_child_d9475d78_34",
    "lang": "en",
    "style": "child",
    "text": "Aim the lamp across the dark room.",
    "speech": "Aim the lamp across the dark room.",
    "source": "escoita/curso_5_6/9/lamp/frase",
+   "pack": false
+  },
+  {
+   "id": "en_child_da652831_30",
+   "lang": "en",
+   "style": "child",
+   "text": "Tap the metal pan like a drum.",
+   "speech": "Tap the metal pan like a drum.",
+   "source": "escoita/curso_2_3/4/drum/frase",
    "pack": false
   },
   {
@@ -3703,12 +3793,12 @@
    "pack": false
   },
   {
-   "id": "en_child_dc1a0f17_29",
+   "id": "en_child_dbb585fc_36",
    "lang": "en",
    "style": "child",
-   "text": "A big stone makes a loud pum.",
-   "speech": "A big stone makes a loud pum.",
-   "source": "escoita/curso_2_3/4/loud/frase",
+   "text": "Wash both hands with water and soap.",
+   "speech": "Wash both hands with water and soap.",
+   "source": "escoita/curso_2_3/7/wash/frase",
    "pack": false
   },
   {
@@ -3721,24 +3811,6 @@
    "pack": false
   },
   {
-   "id": "en_child_dca99f84_56",
-   "lang": "en",
-   "style": "child",
-   "text": "Run fast when the drum beats, then walk slow and sleepy.",
-   "speech": "Run fast when the drum beats, then walk slow and sleepy.",
-   "source": "escoita/curso_2_3/9/modelo/2",
-   "pack": false
-  },
-  {
-   "id": "en_child_debc4866_34",
-   "lang": "en",
-   "style": "child",
-   "text": "Smile wide inside the shiny spoon!",
-   "speech": "Smile wide inside the shiny spoon!",
-   "source": "escoita/curso_3_4/10/smile/frase",
-   "pack": false
-  },
-  {
    "id": "en_child_ded4a205_44",
    "lang": "en",
    "style": "child",
@@ -3748,30 +3820,12 @@
    "pack": false
   },
   {
-   "id": "en_child_df4c5f8d_34",
-   "lang": "en",
-   "style": "child",
-   "text": "Make the plane nose sharp or wide.",
-   "speech": "Make the plane nose sharp or wide.",
-   "source": "escoita/curso_5_6/6/nose/frase",
-   "pack": false
-  },
-  {
    "id": "en_child_e0174f24_31",
    "lang": "en",
    "style": "child",
    "text": "Mix six spoons of water in mud.",
    "speech": "Mix six spoons of water in mud.",
    "source": "escoita/curso_4_5/6/pensamiento/proba",
-   "pack": false
-  },
-  {
-   "id": "en_child_e0c1161d_39",
-   "lang": "en",
-   "style": "child",
-   "text": "Every spot matches: the table is ready.",
-   "speech": "Every spot matches: the table is ready.",
-   "source": "escoita/curso_3_4/7/ready/frase",
    "pack": false
   },
   {
@@ -3838,6 +3892,15 @@
    "pack": false
   },
   {
+   "id": "en_child_e460acb7_39",
+   "lang": "en",
+   "style": "child",
+   "text": "Pour the water slowly without spilling.",
+   "speech": "Pour the water slowly without spilling.",
+   "source": "escoita/curso_3_4/8/pour/frase",
+   "pack": false
+  },
+  {
    "id": "en_child_e48cd213_33",
    "lang": "en",
    "style": "child",
@@ -3870,7 +3933,7 @@
    "style": "child",
    "text": "Compare today's bread and yesterday's bread.",
    "speech": "Compare today's bread and yesterday's bread.",
-   "source": "escoita/curso_2_3/5/bread/frase",
+   "source": "escoita/ar/ra_curso_2_3_m05/frase/2",
    "pack": false
   },
   {
@@ -3901,12 +3964,30 @@
    "pack": false
   },
   {
+   "id": "en_child_e6ad6b3f_32",
+   "lang": "en",
+   "style": "child",
+   "text": "Put the small leaf in this hoop.",
+   "speech": "Put the small leaf in this hoop.",
+   "source": "escoita/curso_2_3/3/modelo/2",
+   "pack": false
+  },
+  {
    "id": "en_child_e8261b94_28",
    "lang": "en",
    "style": "child",
    "text": "Tall shadow or short shadow?",
    "speech": "Tall shadow or short shadow?",
    "source": "escoita/curso_3_4/5/pensamiento/predice",
+   "pack": false
+  },
+  {
+   "id": "en_child_e9475d7e_12",
+   "lang": "en",
+   "style": "child",
+   "text": "Clean hands.",
+   "speech": "Clean hands.",
+   "source": "escoita/curso_2_3/7/modelo/1",
    "pack": false
   },
   {
@@ -3934,15 +4015,6 @@
    "text": "Big stone makes a loud drum.",
    "speech": "Big stone makes a loud drum.",
    "source": "escoita/curso_2_3/4/pensamiento/explica/modelo",
-   "pack": false
-  },
-  {
-   "id": "en_child_eb5a3371_30",
-   "lang": "en",
-   "style": "child",
-   "text": "Wash your hands in four steps.",
-   "speech": "Wash your hands in four steps.",
-   "source": "escoita/curso_2_3/7/wash/frase",
    "pack": false
   },
   {
@@ -4006,6 +4078,24 @@
    "text": "Turn the sun and look!",
    "speech": "Turn the sun and look!",
    "source": "escoita/ar/ra_curso_2_3_m06/frase/0",
+   "pack": false
+  },
+  {
+   "id": "en_child_ed071f33_35",
+   "lang": "en",
+   "style": "child",
+   "text": "Rub the soap to make white bubbles.",
+   "speech": "Rub the soap to make white bubbles.",
+   "source": "escoita/curso_2_3/7/bubble/frase",
+   "pack": false
+  },
+  {
+   "id": "en_child_ed246d9f_42",
+   "lang": "en",
+   "style": "child",
+   "text": "Use a slow pour so the cup does not spill.",
+   "speech": "Use a slow pour so the cup does not spill.",
+   "source": "escoita/curso_3_4/8/slow/frase",
    "pack": false
   },
   {
@@ -4234,6 +4324,15 @@
    "pack": false
   },
   {
+   "id": "en_child_f9743230_40",
+   "lang": "en",
+   "style": "child",
+   "text": "The round disc looks like one new color!",
+   "speech": "The round disc looks like one new color!",
+   "source": "escoita/curso_5_6/4/round/frase",
+   "pack": false
+  },
+  {
    "id": "en_child_f9dcb462_28",
    "lang": "en",
    "style": "child",
@@ -4276,15 +4375,6 @@
    "text": "Put the small leaf in the small hoop.",
    "speech": "Put the small leaf in the small hoop.",
    "source": "escoita/curso_2_3/3/small/frase",
-   "pack": false
-  },
-  {
-   "id": "en_child_fc21eb99_39",
-   "lang": "en",
-   "style": "child",
-   "text": "Soft cotton drinks every drop of water.",
-   "speech": "Soft cotton drinks every drop of water.",
-   "source": "escoita/curso_4_5/1/cotton/frase",
    "pack": false
   },
   {
@@ -4954,6 +5044,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_029caa07_27",
+   "lang": "en",
+   "style": "slow",
+   "text": "Move your feet to the beat.",
+   "speech": "Move your feet to the beat.",
+   "source": "escoita/curso_2_3/9/foot/frase/slow",
+   "pack": false
+  },
+  {
    "id": "en_slow_02a57704_8",
    "lang": "en",
    "style": "slow",
@@ -5122,15 +5221,6 @@
    "text": "region",
    "speech": "region",
    "source": "corpus/1734/lemma",
-   "pack": false
-  },
-  {
-   "id": "en_slow_0321e0f6_32",
-   "lang": "en",
-   "style": "slow",
-   "text": "Tap with the wooden spoon stick.",
-   "speech": "Tap with the wooden spoon stick.",
-   "source": "escoita/curso_2_3/4/stick/frase/slow",
    "pack": false
   },
   {
@@ -5737,15 +5827,6 @@
    "pack": false
   },
   {
-   "id": "en_slow_062f5505_35",
-   "lang": "en",
-   "style": "slow",
-   "text": "Turn the handle to see the outside.",
-   "speech": "Turn the handle to see the outside.",
-   "source": "escoita/curso_3_4/10/handle/frase/slow",
-   "pack": false
-  },
-  {
    "id": "en_slow_0644fc10_6",
    "lang": "en",
    "style": "slow",
@@ -6160,6 +6241,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_08817ff6_31",
+   "lang": "en",
+   "style": "slow",
+   "text": "Tap gently with a wooden stick.",
+   "speech": "Tap gently with a wooden stick.",
+   "source": "escoita/curso_2_3/4/stick/frase/slow",
+   "pack": false
+  },
+  {
    "id": "en_slow_088f20d0_8",
    "lang": "en",
    "style": "slow",
@@ -6241,15 +6331,6 @@
    "pack": false
   },
   {
-   "id": "en_slow_08eaa6cc_30",
-   "lang": "en",
-   "style": "slow",
-   "text": "Wash the clean hand with soap.",
-   "speech": "Wash the clean hand with soap.",
-   "source": "escoita/curso_2_3/7/modelo/2/slow",
-   "pack": false
-  },
-  {
    "id": "en_slow_090aa9ab_5",
    "lang": "en",
    "style": "slow",
@@ -6265,15 +6346,6 @@
    "text": "temple",
    "speech": "temple",
    "source": "corpus/3903/lemma",
-   "pack": false
-  },
-  {
-   "id": "en_slow_0911caa2_10",
-   "lang": "en",
-   "style": "slow",
-   "text": "Dark room.",
-   "speech": "Dark room.",
-   "source": "escoita/curso_2_3/10/modelo/1/slow",
    "pack": false
   },
   {
@@ -6678,7 +6750,7 @@
    "style": "slow",
    "text": "Move each foot with the box beat.",
    "speech": "Move each foot with the box beat.",
-   "source": "escoita/curso_2_3/9/foot/frase/slow",
+   "source": "escoita/ar/ra_curso_2_3_m09/frase/2/slow",
    "pack": false
   },
   {
@@ -6823,6 +6895,15 @@
    "text": "greed",
    "speech": "greed",
    "source": "corpus/3443/lemma",
+   "pack": false
+  },
+  {
+   "id": "en_slow_0b22ab4b_44",
+   "lang": "en",
+   "style": "slow",
+   "text": "Your voice travels when the string is tight.",
+   "speech": "Your voice travels when the string is tight.",
+   "source": "escoita/curso_3_4/4/tight/frase/slow",
    "pack": false
   },
   {
@@ -7786,6 +7867,15 @@
    "text": "Fire",
    "speech": "Fire",
    "source": "tpr.0_2.novembro/s3/0_2.novembro.s3.fire",
+   "pack": false
+  },
+  {
+   "id": "en_slow_0ee25c63_45",
+   "lang": "en",
+   "style": "slow",
+   "text": "Lift a suitcase packed with clothes or books.",
+   "speech": "Lift a suitcase packed with clothes or books.",
+   "source": "escoita/curso_5_6/8/suitcase/frase/slow",
    "pack": false
   },
   {
@@ -8968,15 +9058,6 @@
    "pack": false
   },
   {
-   "id": "en_slow_14248edc_34",
-   "lang": "en",
-   "style": "slow",
-   "text": "Look how tall the steady tower is!",
-   "speech": "Look how tall the steady tower is!",
-   "source": "escoita/curso_3_4/1/tall/frase/slow",
-   "pack": false
-  },
-  {
    "id": "en_slow_142ce44f_4",
    "lang": "en",
    "style": "slow",
@@ -9298,6 +9379,15 @@
    "text": "nine",
    "speech": "nine",
    "source": "corpus/565/lemma",
+   "pack": false
+  },
+  {
+   "id": "en_slow_162d273f_12",
+   "lang": "en",
+   "style": "slow",
+   "text": "A dark room.",
+   "speech": "A dark room.",
+   "source": "escoita/curso_2_3/10/modelo/1/slow",
    "pack": false
   },
   {
@@ -10642,6 +10732,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_1c47a4c3_35",
+   "lang": "en",
+   "style": "slow",
+   "text": "Fold a piece of paper for the sail.",
+   "speech": "Fold a piece of paper for the sail.",
+   "source": "escoita/curso_2_3/2/paper/frase/slow",
+   "pack": false
+  },
+  {
    "id": "en_slow_1c48c242_9",
    "lang": "en",
    "style": "slow",
@@ -11044,15 +11143,6 @@
    "text": "global",
    "speech": "global",
    "source": "corpus/2445/lemma",
-   "pack": false
-  },
-  {
-   "id": "en_slow_1e00f2de_44",
-   "lang": "en",
-   "style": "slow",
-   "text": "After jumping, the heartbeat goes very fast.",
-   "speech": "After jumping, the heartbeat goes very fast.",
-   "source": "escoita/curso_4_5/2/fast/frase/slow",
    "pack": false
   },
   {
@@ -12010,15 +12100,6 @@
    "pack": false
   },
   {
-   "id": "en_slow_21db34d6_42",
-   "lang": "en",
-   "style": "slow",
-   "text": "The white plane glides from the nose fold.",
-   "speech": "The white plane glides from the nose fold.",
-   "source": "escoita/curso_5_6/6/modelo/2/slow",
-   "pack": false
-  },
-  {
    "id": "en_slow_21e55f45_22",
    "lang": "en",
    "style": "slow",
@@ -12286,6 +12367,15 @@
    "text": "breath",
    "speech": "breath",
    "source": "corpus/118/lemma",
+   "pack": false
+  },
+  {
+   "id": "en_slow_2379234f_29",
+   "lang": "en",
+   "style": "slow",
+   "text": "Look at each tiny brown seed.",
+   "speech": "Look at each tiny brown seed.",
+   "source": "escoita/curso_2_3/6/tiny/frase/slow",
    "pack": false
   },
   {
@@ -13051,6 +13141,15 @@
    "text": "Anemone",
    "speech": "Anemone",
    "source": "tpr.4_5.abril/s3/4_5.abril.s3.anemone",
+   "pack": false
+  },
+  {
+   "id": "en_slow_267efa0d_38",
+   "lang": "en",
+   "style": "slow",
+   "text": "Wrap a soft bandage gently on the paw.",
+   "speech": "Wrap a soft bandage gently on the paw.",
+   "source": "escoita/curso_4_5/1/bandage/frase/slow",
    "pack": false
   },
   {
@@ -14323,6 +14422,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_2bca5af2_28",
+   "lang": "en",
+   "style": "slow",
+   "text": "Press the soft bread gently.",
+   "speech": "Press the soft bread gently.",
+   "source": "escoita/curso_2_3/5/modelo/2/slow",
+   "pack": false
+  },
+  {
    "id": "en_slow_2bd1616e_5",
    "lang": "en",
    "style": "slow",
@@ -14455,15 +14563,6 @@
    "text": "Rocket",
    "speech": "Rocket",
    "source": "tpr.5_6.decembro/s2/5_6.decembro.s2.rocket",
-   "pack": false
-  },
-  {
-   "id": "en_slow_2c920c36_36",
-   "lang": "en",
-   "style": "slow",
-   "text": "Blow gently to move the boat across.",
-   "speech": "Blow gently to move the boat across.",
-   "source": "escoita/curso_2_3/2/blow/frase/slow",
    "pack": false
   },
   {
@@ -14670,7 +14769,7 @@
    "style": "slow",
    "text": "See the tower shadow on the wall.",
    "speech": "See the tower shadow on the wall.",
-   "source": "escoita/curso_3_4/5/shadow/frase/slow",
+   "source": "escoita/ar/ra_curso_3_4_m05/frase/2/slow",
    "pack": false
   },
   {
@@ -14869,6 +14968,15 @@
    "text": "lean",
    "speech": "lean",
    "source": "corpus/1510/lemma",
+   "pack": false
+  },
+  {
+   "id": "en_slow_2e704fa1_44",
+   "lang": "en",
+   "style": "slow",
+   "text": "Fold the nose so the white plane glides far.",
+   "speech": "Fold the nose so the white plane glides far.",
+   "source": "escoita/curso_5_6/6/modelo/2/slow",
    "pack": false
   },
   {
@@ -15304,6 +15412,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_2ff4691d_38",
+   "lang": "en",
+   "style": "slow",
+   "text": "Wash both hands with soap until clean.",
+   "speech": "Wash both hands with soap until clean.",
+   "source": "escoita/curso_2_3/7/modelo/2/slow",
+   "pack": false
+  },
+  {
    "id": "en_slow_2ffcbe05_4",
    "lang": "en",
    "style": "slow",
@@ -15607,6 +15724,15 @@
    "text": "invent",
    "speech": "invent",
    "source": "corpus/2532/lemma",
+   "pack": false
+  },
+  {
+   "id": "en_slow_3163d5b1_50",
+   "lang": "en",
+   "style": "slow",
+   "text": "Carry the cloth stretcher steadily past the cones.",
+   "speech": "Carry the cloth stretcher steadily past the cones.",
+   "source": "escoita/curso_4_5/5/modelo/2/slow",
    "pack": false
   },
   {
@@ -16353,7 +16479,7 @@
    "style": "slow",
    "text": "Lift the suitcase with clothes or books.",
    "speech": "Lift the suitcase with clothes or books.",
-   "source": "escoita/curso_5_6/8/suitcase/frase/slow",
+   "source": "escoita/ar/ra_curso_5_6_m08/frase/2/slow",
    "pack": false
   },
   {
@@ -17263,6 +17389,15 @@
    "text": "Soft sound!",
    "speech": "Soft sound!",
    "source": "acopros/4/mira_e_nota/slow",
+   "pack": false
+  },
+  {
+   "id": "en_slow_392b1517_45",
+   "lang": "en",
+   "style": "slow",
+   "text": "Tape the straws together to make a pan flute.",
+   "speech": "Tape the straws together to make a pan flute.",
+   "source": "escoita/curso_5_6/10/flute/frase/slow",
    "pack": false
   },
   {
@@ -18373,15 +18508,6 @@
    "pack": false
   },
   {
-   "id": "en_slow_3dfb3d46_32",
-   "lang": "en",
-   "style": "slow",
-   "text": "Run fast when the pats go quick.",
-   "speech": "Run fast when the pats go quick.",
-   "source": "escoita/curso_2_3/9/run/frase/slow",
-   "pack": false
-  },
-  {
    "id": "en_slow_3dff097f_3",
    "lang": "en",
    "style": "slow",
@@ -18841,6 +18967,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_408066e1_13",
+   "lang": "en",
+   "style": "slow",
+   "text": "Steady hands.",
+   "speech": "Steady hands.",
+   "source": "escoita/curso_4_5/5/modelo/1/slow",
+   "pack": false
+  },
+  {
    "id": "en_slow_408cfca8_6",
    "lang": "en",
    "style": "slow",
@@ -19066,30 +19201,12 @@
    "pack": false
   },
   {
-   "id": "en_slow_41b849c0_44",
-   "lang": "en",
-   "style": "slow",
-   "text": "Wear the raincoat with the hood to stay dry.",
-   "speech": "Wear the raincoat with the hood to stay dry.",
-   "source": "escoita/curso_4_5/10/modelo/2/slow",
-   "pack": false
-  },
-  {
    "id": "en_slow_41bda2f1_5",
    "lang": "en",
    "style": "slow",
    "text": "Happy",
    "speech": "Happy",
    "source": "tpr.3_4.setembro/s1/3_4.setembro.s1.happy",
-   "pack": false
-  },
-  {
-   "id": "en_slow_41c514f0_41",
-   "lang": "en",
-   "style": "slow",
-   "text": "Four legs go inside the number four hoop.",
-   "speech": "Four legs go inside the number four hoop.",
-   "source": "escoita/curso_4_5/3/four/frase/slow",
    "pack": false
   },
   {
@@ -19234,15 +19351,6 @@
    "text": "A long straw.",
    "speech": "A long straw.",
    "source": "escoita/curso_5_6/10/modelo/1/slow",
-   "pack": false
-  },
-  {
-   "id": "en_slow_4241cc27_39",
-   "lang": "en",
-   "style": "slow",
-   "text": "The white folio plane crosses the tape.",
-   "speech": "The white folio plane crosses the tape.",
-   "source": "escoita/curso_5_6/6/white/frase/slow",
    "pack": false
   },
   {
@@ -19477,15 +19585,6 @@
    "text": "discourse",
    "speech": "discourse",
    "source": "corpus/2291/lemma",
-   "pack": false
-  },
-  {
-   "id": "en_slow_43260476_32",
-   "lang": "en",
-   "style": "slow",
-   "text": "Rub soap to make a white bubble.",
-   "speech": "Rub soap to make a white bubble.",
-   "source": "escoita/curso_2_3/7/bubble/frase/slow",
    "pack": false
   },
   {
@@ -20206,6 +20305,15 @@
    "text": "orange",
    "speech": "orange",
    "source": "corpus/597/lemma",
+   "pack": false
+  },
+  {
+   "id": "en_slow_45df302e_44",
+   "lang": "en",
+   "style": "slow",
+   "text": "Every place has a plate: the table is ready.",
+   "speech": "Every place has a plate: the table is ready.",
+   "source": "escoita/curso_3_4/7/ready/frase/slow",
    "pack": false
   },
   {
@@ -21235,15 +21343,6 @@
    "pack": false
   },
   {
-   "id": "en_slow_4a63a4aa_32",
-   "lang": "en",
-   "style": "slow",
-   "text": "The boat is very light on water.",
-   "speech": "The boat is very light on water.",
-   "source": "escoita/curso_2_3/2/light/frase/slow",
-   "pack": false
-  },
-  {
    "id": "en_slow_4a645abb_10",
    "lang": "en",
    "style": "slow",
@@ -21712,6 +21811,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_4c5968d9_37",
+   "lang": "en",
+   "style": "slow",
+   "text": "Put toys with four legs in hoop four.",
+   "speech": "Put toys with four legs in hoop four.",
+   "source": "escoita/curso_4_5/3/four/frase/slow",
+   "pack": false
+  },
+  {
    "id": "en_slow_4c701d97_14",
    "lang": "en",
    "style": "slow",
@@ -21775,30 +21883,12 @@
    "pack": false
   },
   {
-   "id": "en_slow_4c882ac8_36",
-   "lang": "en",
-   "style": "slow",
-   "text": "Trace the dark outline on big paper.",
-   "speech": "Trace the dark outline on big paper.",
-   "source": "escoita/curso_3_4/5/outline/frase/slow",
-   "pack": false
-  },
-  {
    "id": "en_slow_4c8d7fd1_10",
    "lang": "en",
    "style": "slow",
    "text": "Tambourine",
    "speech": "Tambourine",
    "source": "tpr.3_4.decembro/s2/3_4.decembro.s2.tambourine",
-   "pack": false
-  },
-  {
-   "id": "en_slow_4c8e3af8_35",
-   "lang": "en",
-   "style": "slow",
-   "text": "Wear the right clothes for the sky.",
-   "speech": "Wear the right clothes for the sky.",
-   "source": "escoita/curso_4_5/10/wear/frase/slow",
    "pack": false
   },
   {
@@ -22639,15 +22729,6 @@
    "pack": false
   },
   {
-   "id": "en_slow_500a6ced_30",
-   "lang": "en",
-   "style": "slow",
-   "text": "The adult cuts the apple wide.",
-   "speech": "The adult cuts the apple wide.",
-   "source": "escoita/curso_2_3/6/cut/frase/slow",
-   "pack": false
-  },
-  {
    "id": "en_slow_501be1a9_11",
    "lang": "en",
    "style": "slow",
@@ -22864,6 +22945,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_512e6fb1_37",
+   "lang": "en",
+   "style": "slow",
+   "text": "Feel the wet towel and the dry towel.",
+   "speech": "Feel the wet towel and the dry towel.",
+   "source": "escoita/curso_2_3/8/towel/frase/slow",
+   "pack": false
+  },
+  {
    "id": "en_slow_51335fd0_3",
    "lang": "en",
    "style": "slow",
@@ -23008,6 +23098,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_52184d8c_37",
+   "lang": "en",
+   "style": "slow",
+   "text": "Quiet now: curl up like a sleepy cat.",
+   "speech": "Quiet now: curl up like a sleepy cat.",
+   "source": "escoita/curso_2_3/9/sleepy/frase/slow",
+   "pack": false
+  },
+  {
    "id": "en_slow_52186758_3",
    "lang": "en",
    "style": "slow",
@@ -23095,15 +23194,6 @@
    "text": "complement",
    "speech": "complement",
    "source": "corpus/3195/lemma",
-   "pack": false
-  },
-  {
-   "id": "en_slow_5282e93f_25",
-   "lang": "en",
-   "style": "slow",
-   "text": "Sort the small leaf here.",
-   "speech": "Sort the small leaf here.",
-   "source": "escoita/curso_2_3/3/modelo/2/slow",
    "pack": false
   },
   {
@@ -23302,15 +23392,6 @@
    "text": "confess",
    "speech": "confess",
    "source": "corpus/2180/lemma",
-   "pack": false
-  },
-  {
-   "id": "en_slow_53704971_11",
-   "lang": "en",
-   "style": "slow",
-   "text": "A high jar.",
-   "speech": "A high jar.",
-   "source": "escoita/curso_3_4/9/modelo/1/slow",
    "pack": false
   },
   {
@@ -24115,6 +24196,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_5727994c_42",
+   "lang": "en",
+   "style": "slow",
+   "text": "After jumping, your heart beats very fast!",
+   "speech": "After jumping, your heart beats very fast!",
+   "source": "escoita/curso_4_5/2/fast/frase/slow",
+   "pack": false
+  },
+  {
    "id": "en_slow_5745c7b1_4",
    "lang": "en",
    "style": "slow",
@@ -24211,15 +24301,6 @@
    "text": "villa",
    "speech": "villa",
    "source": "corpus/3974/lemma",
-   "pack": false
-  },
-  {
-   "id": "en_slow_57ad9148_34",
-   "lang": "en",
-   "style": "slow",
-   "text": "Watch every drop fall in the sink.",
-   "speech": "Watch every drop fall in the sink.",
-   "source": "escoita/curso_2_3/8/drop/frase/slow",
    "pack": false
   },
   {
@@ -24808,6 +24889,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_59d50783_35",
+   "lang": "en",
+   "style": "slow",
+   "text": "Watch each drop fall into the sink.",
+   "speech": "Watch each drop fall into the sink.",
+   "source": "escoita/curso_2_3/8/drop/frase/slow",
+   "pack": false
+  },
+  {
    "id": "en_slow_59d7c83f_6",
    "lang": "en",
    "style": "slow",
@@ -24913,6 +25003,15 @@
    "text": "ensure",
    "speech": "ensure",
    "source": "corpus/2343/lemma",
+   "pack": false
+  },
+  {
+   "id": "en_slow_5a7f12c0_33",
+   "lang": "en",
+   "style": "slow",
+   "text": "The ice cube starts to melt fast.",
+   "speech": "The ice cube starts to melt fast.",
+   "source": "escoita/curso_3_4/6/melt/frase/slow",
    "pack": false
   },
   {
@@ -25726,6 +25825,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_5e032802_42",
+   "lang": "en",
+   "style": "slow",
+   "text": "Hold the handle and turn the spoon around.",
+   "speech": "Hold the handle and turn the spoon around.",
+   "source": "escoita/curso_3_4/10/handle/frase/slow",
+   "pack": false
+  },
+  {
    "id": "en_slow_5e121904_10",
    "lang": "en",
    "style": "slow",
@@ -25984,6 +26092,15 @@
    "text": "component",
    "speech": "component",
    "source": "corpus/2165/lemma",
+   "pack": false
+  },
+  {
+   "id": "en_slow_5f05967a_30",
+   "lang": "en",
+   "style": "slow",
+   "text": "Look at the apple cut in half.",
+   "speech": "Look at the apple cut in half.",
+   "source": "escoita/curso_2_3/6/apple/frase/slow",
    "pack": false
   },
   {
@@ -26860,15 +26977,6 @@
    "pack": false
   },
   {
-   "id": "en_slow_62a3c7c9_32",
-   "lang": "en",
-   "style": "slow",
-   "text": "The room is dark so stars shine.",
-   "speech": "The room is dark so stars shine.",
-   "source": "escoita/curso_2_3/10/dark/frase/slow",
-   "pack": false
-  },
-  {
    "id": "en_slow_62ad2ba1_7",
    "lang": "en",
    "style": "slow",
@@ -27436,15 +27544,6 @@
    "pack": false
   },
   {
-   "id": "en_slow_653c06b4_37",
-   "lang": "en",
-   "style": "slow",
-   "text": "Pour the water slow without spilling.",
-   "speech": "Pour the water slow without spilling.",
-   "source": "escoita/curso_3_4/8/pour/frase/slow",
-   "pack": false
-  },
-  {
    "id": "en_slow_654426fa_7",
    "lang": "en",
    "style": "slow",
@@ -27541,6 +27640,15 @@
    "text": "Copy",
    "speech": "Copy",
    "source": "tpr.0_2.outubro/s3/0_2.outubro.s3.copy",
+   "pack": false
+  },
+  {
+   "id": "en_slow_6593624d_26",
+   "lang": "en",
+   "style": "slow",
+   "text": "Drop a stone from up high.",
+   "speech": "Drop a stone from up high.",
+   "source": "escoita/curso_2_3/4/drop/frase/slow",
    "pack": false
   },
   {
@@ -28791,7 +28899,7 @@
    "style": "slow",
    "text": "Hold the colored filter before the light.",
    "speech": "Hold the colored filter before the light.",
-   "source": "escoita/curso_5_6/2/filter/frase/slow",
+   "source": "escoita/ar/ra_curso_5_6_m02/frase/2/slow",
    "pack": false
   },
   {
@@ -29011,15 +29119,6 @@
    "pack": false
   },
   {
-   "id": "en_slow_6b694fef_29",
-   "lang": "en",
-   "style": "slow",
-   "text": "We blow the light paper sail.",
-   "speech": "We blow the light paper sail.",
-   "source": "escoita/curso_2_3/2/modelo/2/slow",
-   "pack": false
-  },
-  {
    "id": "en_slow_6b81ce15_4",
    "lang": "en",
    "style": "slow",
@@ -29161,6 +29260,15 @@
    "text": "similar",
    "speech": "similar",
    "source": "corpus/1829/lemma",
+   "pack": false
+  },
+  {
+   "id": "en_slow_6c242d61_12",
+   "lang": "en",
+   "style": "slow",
+   "text": "A slow pour.",
+   "speech": "A slow pour.",
+   "source": "escoita/curso_3_4/8/modelo/1/slow",
    "pack": false
   },
   {
@@ -29821,6 +29929,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_70684c87_39",
+   "lang": "en",
+   "style": "slow",
+   "text": "Smile wide and look in the shiny spoon!",
+   "speech": "Smile wide and look in the shiny spoon!",
+   "source": "escoita/curso_3_4/10/smile/frase/slow",
+   "pack": false
+  },
+  {
    "id": "en_slow_706a76dc_4",
    "lang": "en",
    "style": "slow",
@@ -30088,15 +30205,6 @@
    "text": "tough",
    "speech": "tough",
    "source": "corpus/1940/lemma",
-   "pack": false
-  },
-  {
-   "id": "en_slow_719d1ee9_33",
-   "lang": "en",
-   "style": "slow",
-   "text": "We fold stiff paper for the sail.",
-   "speech": "We fold stiff paper for the sail.",
-   "source": "escoita/curso_2_3/2/paper/frase/slow",
    "pack": false
   },
   {
@@ -30919,15 +31027,6 @@
    "pack": false
   },
   {
-   "id": "en_slow_75698129_25",
-   "lang": "en",
-   "style": "slow",
-   "text": "Drop it on the loud drum.",
-   "speech": "Drop it on the loud drum.",
-   "source": "escoita/curso_2_3/4/modelo/2/slow",
-   "pack": false
-  },
-  {
    "id": "en_slow_756e8a24_9",
    "lang": "en",
    "style": "slow",
@@ -30997,6 +31096,15 @@
    "text": "Bubbly",
    "speech": "Bubbly",
    "source": "tpr.3_4.maio/s1/3_4.maio.s1.bubbly",
+   "pack": false
+  },
+  {
+   "id": "en_slow_759ed3e6_37",
+   "lang": "en",
+   "style": "slow",
+   "text": "Pour water slowly through the funnel.",
+   "speech": "Pour water slowly through the funnel.",
+   "source": "escoita/curso_3_4/8/modelo/2/slow",
    "pack": false
   },
   {
@@ -31261,15 +31369,6 @@
    "pack": false
   },
   {
-   "id": "en_slow_76ed794f_36",
-   "lang": "en",
-   "style": "slow",
-   "text": "The heavy stone will sink down fast.",
-   "speech": "The heavy stone will sink down fast.",
-   "source": "escoita/curso_2_3/1/sink/frase/slow",
-   "pack": false
-  },
-  {
    "id": "en_slow_76f0a887_10",
    "lang": "en",
    "style": "slow",
@@ -31465,6 +31564,15 @@
    "text": "invasion",
    "speech": "invasion",
    "source": "corpus/2531/lemma",
+   "pack": false
+  },
+  {
+   "id": "en_slow_780ae2fc_33",
+   "lang": "en",
+   "style": "slow",
+   "text": "Run fast when the beat goes fast!",
+   "speech": "Run fast when the beat goes fast!",
+   "source": "escoita/curso_2_3/9/run/frase/slow",
    "pack": false
   },
   {
@@ -31824,7 +31932,7 @@
    "style": "slow",
    "text": "Lift the wet towel and dry towel.",
    "speech": "Lift the wet towel and dry towel.",
-   "source": "escoita/curso_2_3/8/towel/frase/slow",
+   "source": "escoita/ar/ra_curso_2_3_m08/frase/2/slow",
    "pack": false
   },
   {
@@ -32260,6 +32368,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_7c0f85d7_27",
+   "lang": "en",
+   "style": "slow",
+   "text": "Watch the heavy stone sink!",
+   "speech": "Watch the heavy stone sink!",
+   "source": "escoita/curso_2_3/1/sink/frase/slow",
+   "pack": false
+  },
+  {
    "id": "en_slow_7c1e7670_5",
    "lang": "en",
    "style": "slow",
@@ -32446,6 +32563,15 @@
    "text": "Which ice cube shrinks more?",
    "speech": "Which ice cube shrinks more?",
    "source": "escoita/curso_3_4/6/pensamiento/compara/slow",
+   "pack": false
+  },
+  {
+   "id": "en_slow_7d012598_32",
+   "lang": "en",
+   "style": "slow",
+   "text": "We blow on the light paper sail.",
+   "speech": "We blow on the light paper sail.",
+   "source": "escoita/curso_2_3/2/modelo/2/slow",
    "pack": false
   },
   {
@@ -33139,15 +33265,6 @@
    "text": "Let the train roll down the board.",
    "speech": "Let the train roll down the board.",
    "source": "escoita/curso_3_4/3/roll/frase/slow",
-   "pack": false
-  },
-  {
-   "id": "en_slow_808b769b_47",
-   "lang": "en",
-   "style": "slow",
-   "text": "Carry the cloth stretcher steady past the cone.",
-   "speech": "Carry the cloth stretcher steady past the cone.",
-   "source": "escoita/curso_4_5/5/modelo/2/slow",
    "pack": false
   },
   {
@@ -34393,6 +34510,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_86676142_29",
+   "lang": "en",
+   "style": "slow",
+   "text": "An adult cuts the apple open.",
+   "speech": "An adult cuts the apple open.",
+   "source": "escoita/curso_2_3/6/cut/frase/slow",
+   "pack": false
+  },
+  {
    "id": "en_slow_867a28a2_10",
    "lang": "en",
    "style": "slow",
@@ -34492,15 +34618,6 @@
    "pack": false
   },
   {
-   "id": "en_slow_86d38003_11",
-   "lang": "en",
-   "style": "slow",
-   "text": "Clean hand.",
-   "speech": "Clean hand.",
-   "source": "escoita/curso_2_3/7/modelo/1/slow",
-   "pack": false
-  },
-  {
    "id": "en_slow_86def18e_9",
    "lang": "en",
    "style": "slow",
@@ -34588,6 +34705,15 @@
    "text": "vertical",
    "speech": "vertical",
    "source": "corpus/3969/lemma",
+   "pack": false
+  },
+  {
+   "id": "en_slow_873705c0_41",
+   "lang": "en",
+   "style": "slow",
+   "text": "Soft cotton soaks up every drop of water.",
+   "speech": "Soft cotton soaks up every drop of water.",
+   "source": "escoita/curso_4_5/1/cotton/frase/slow",
    "pack": false
   },
   {
@@ -35398,6 +35524,15 @@
    "text": "Necklace",
    "speech": "Necklace",
    "source": "tpr.5_6.marzo/s1/5_6.marzo.s1.necklace",
+   "pack": false
+  },
+  {
+   "id": "en_slow_8ab92e97_39",
+   "lang": "en",
+   "style": "slow",
+   "text": "Wear the right clothes for the weather.",
+   "speech": "Wear the right clothes for the weather.",
+   "source": "escoita/curso_4_5/10/wear/frase/slow",
    "pack": false
   },
   {
@@ -36652,6 +36787,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_9049b629_16",
+   "lang": "en",
+   "style": "slow",
+   "text": "A large picture.",
+   "speech": "A large picture.",
+   "source": "escoita/curso_4_5/4/modelo/1/slow",
+   "pack": false
+  },
+  {
    "id": "en_slow_904fc12f_6",
    "lang": "en",
    "style": "slow",
@@ -36922,15 +37066,6 @@
    "pack": false
   },
   {
-   "id": "en_slow_91958c8b_40",
-   "lang": "en",
-   "style": "slow",
-   "text": "Pour water through the funnel very slow.",
-   "speech": "Pour water through the funnel very slow.",
-   "source": "escoita/curso_3_4/8/modelo/2/slow",
-   "pack": false
-  },
-  {
    "id": "en_slow_919a0c3d_4",
    "lang": "en",
    "style": "slow",
@@ -36991,6 +37126,15 @@
    "text": "pool",
    "speech": "pool",
    "source": "corpus/1665/lemma",
+   "pack": false
+  },
+  {
+   "id": "en_slow_91decade_38",
+   "lang": "en",
+   "style": "slow",
+   "text": "Trace the dark outline on a big sheet.",
+   "speech": "Trace the dark outline on a big sheet.",
+   "source": "escoita/curso_3_4/5/outline/frase/slow",
    "pack": false
   },
   {
@@ -37099,15 +37243,6 @@
    "text": "Left",
    "speech": "Left",
    "source": "tpr.4_5.xaneiro/s1/4_5.xaneiro.s1.left",
-   "pack": false
-  },
-  {
-   "id": "en_slow_927b91e0_13",
-   "lang": "en",
-   "style": "slow",
-   "text": "Carry steady.",
-   "speech": "Carry steady.",
-   "source": "escoita/curso_4_5/5/modelo/1/slow",
    "pack": false
   },
   {
@@ -37224,7 +37359,7 @@
    "style": "slow",
    "text": "Tape the straws into a Pan flute.",
    "speech": "Tape the straws into a Pan flute.",
-   "source": "escoita/curso_5_6/10/flute/frase/slow",
+   "source": "escoita/ar/ra_curso_5_6_m10/frase/2/slow",
    "pack": false
   },
   {
@@ -37849,15 +37984,6 @@
    "pack": false
   },
   {
-   "id": "en_slow_957c6929_43",
-   "lang": "en",
-   "style": "slow",
-   "text": "The voice travels when the string is tight.",
-   "speech": "The voice travels when the string is tight.",
-   "source": "escoita/curso_3_4/4/tight/frase/slow",
-   "pack": false
-  },
-  {
    "id": "en_slow_95858f56_5",
    "lang": "en",
    "style": "slow",
@@ -38440,6 +38566,15 @@
    "text": "brake",
    "speech": "brake",
    "source": "corpus/1116/lemma",
+   "pack": false
+  },
+  {
+   "id": "en_slow_983626c7_27",
+   "lang": "en",
+   "style": "slow",
+   "text": "Look how tall our tower is!",
+   "speech": "Look how tall our tower is!",
+   "source": "escoita/curso_3_4/1/tall/frase/slow",
    "pack": false
   },
   {
@@ -39748,15 +39883,6 @@
    "pack": false
   },
   {
-   "id": "en_slow_9ce3e38a_38",
-   "lang": "en",
-   "style": "slow",
-   "text": "Zoom in with the lens to see it large.",
-   "speech": "Zoom in with the lens to see it large.",
-   "source": "escoita/curso_4_5/4/modelo/2/slow",
-   "pack": false
-  },
-  {
    "id": "en_slow_9ce94d7a_7",
    "lang": "en",
    "style": "slow",
@@ -40303,15 +40429,6 @@
    "text": "item",
    "speech": "item",
    "source": "corpus/1479/lemma",
-   "pack": false
-  },
-  {
-   "id": "en_slow_9f384ce1_13",
-   "lang": "en",
-   "style": "slow",
-   "text": "A quick foot.",
-   "speech": "A quick foot.",
-   "source": "escoita/curso_2_3/9/modelo/1/slow",
    "pack": false
   },
   {
@@ -41674,6 +41791,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_a5a56eca_36",
+   "lang": "en",
+   "style": "slow",
+   "text": "Fold the plane's nose sharp or wide.",
+   "speech": "Fold the plane's nose sharp or wide.",
+   "source": "escoita/curso_5_6/6/nose/frase/slow",
+   "pack": false
+  },
+  {
    "id": "en_slow_a5a651e6_8",
    "lang": "en",
    "style": "slow",
@@ -41949,7 +42075,7 @@
    "style": "slow",
    "text": "Hit the metal tray or drum.",
    "speech": "Hit the metal tray or drum.",
-   "source": "escoita/curso_2_3/4/drum/frase/slow",
+   "source": "escoita/ar/ra_curso_2_3_m04/frase/2/slow",
    "pack": false
   },
   {
@@ -42259,15 +42385,6 @@
    "pack": false
   },
   {
-   "id": "en_slow_a83f1c4f_25",
-   "lang": "en",
-   "style": "slow",
-   "text": "Press the soft bread now.",
-   "speech": "Press the soft bread now.",
-   "source": "escoita/curso_2_3/5/modelo/2/slow",
-   "pack": false
-  },
-  {
    "id": "en_slow_a841ecf9_32",
    "lang": "en",
    "style": "slow",
@@ -42400,6 +42517,15 @@
    "text": "nominate",
    "speech": "nominate",
    "source": "corpus/2626/lemma",
+   "pack": false
+  },
+  {
+   "id": "en_slow_a8b805d7_46",
+   "lang": "en",
+   "style": "slow",
+   "text": "Hold the colored filter in front of the light.",
+   "speech": "Hold the colored filter in front of the light.",
+   "source": "escoita/curso_5_6/2/filter/frase/slow",
    "pack": false
   },
   {
@@ -42871,24 +42997,6 @@
    "pack": false
   },
   {
-   "id": "en_slow_aaafddbd_13",
-   "lang": "en",
-   "style": "slow",
-   "text": "A large leaf.",
-   "speech": "A large leaf.",
-   "source": "escoita/curso_4_5/4/modelo/1/slow",
-   "pack": false
-  },
-  {
-   "id": "en_slow_aab4b8cb_36",
-   "lang": "en",
-   "style": "slow",
-   "text": "Go slow when the cup is nearly full.",
-   "speech": "Go slow when the cup is nearly full.",
-   "source": "escoita/curso_3_4/8/slow/frase/slow",
-   "pack": false
-  },
-  {
    "id": "en_slow_aabed473_9",
    "lang": "en",
    "style": "slow",
@@ -43129,6 +43237,15 @@
    "text": "Fold",
    "speech": "Fold",
    "source": "tpr.3_4.marzo/s2/3_4.marzo.s2.fold",
+   "pack": false
+  },
+  {
+   "id": "en_slow_ab80e15e_32",
+   "lang": "en",
+   "style": "slow",
+   "text": "Touch fresh bread and old bread.",
+   "speech": "Touch fresh bread and old bread.",
+   "source": "escoita/curso_2_3/5/bread/frase/slow",
    "pack": false
   },
   {
@@ -44550,7 +44667,7 @@
    "style": "slow",
    "text": "Cut the apple in half across.",
    "speech": "Cut the apple in half across.",
-   "source": "escoita/curso_2_3/6/apple/frase/slow",
+   "source": "escoita/ar/ra_curso_2_3_m06/frase/2/slow",
    "pack": false
   },
   {
@@ -45202,6 +45319,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_b3ecdf59_10",
+   "lang": "en",
+   "style": "slow",
+   "text": "Fast feet.",
+   "speech": "Fast feet.",
+   "source": "escoita/curso_2_3/9/modelo/1/slow",
+   "pack": false
+  },
+  {
    "id": "en_slow_b3f184a9_4",
    "lang": "en",
    "style": "slow",
@@ -45298,15 +45424,6 @@
    "text": "swing",
    "speech": "swing",
    "source": "corpus/1906/lemma",
-   "pack": false
-  },
-  {
-   "id": "en_slow_b447ffa7_35",
-   "lang": "en",
-   "style": "slow",
-   "text": "The round disc looks one new color!",
-   "speech": "The round disc looks one new color!",
-   "source": "escoita/curso_5_6/4/round/frase/slow",
    "pack": false
   },
   {
@@ -45586,6 +45703,15 @@
    "text": "draft",
    "speech": "draft",
    "source": "corpus/2314/lemma",
+   "pack": false
+  },
+  {
+   "id": "en_slow_b578b46b_29",
+   "lang": "en",
+   "style": "slow",
+   "text": "Blow gently to push the boat!",
+   "speech": "Blow gently to push the boat!",
+   "source": "escoita/curso_2_3/2/blow/frase/slow",
    "pack": false
   },
   {
@@ -46057,15 +46183,6 @@
    "pack": false
   },
   {
-   "id": "en_slow_b77e63c2_10",
-   "lang": "en",
-   "style": "slow",
-   "text": "Pour slow.",
-   "speech": "Pour slow.",
-   "source": "escoita/curso_3_4/8/modelo/1/slow",
-   "pack": false
-  },
-  {
    "id": "en_slow_b78a2d18_7",
    "lang": "en",
    "style": "slow",
@@ -46297,6 +46414,15 @@
    "text": "Help",
    "speech": "Help",
    "source": "tpr.3_4.setembro/s2/3_4.setembro.s2.help",
+   "pack": false
+  },
+  {
+   "id": "en_slow_b8a27f58_37",
+   "lang": "en",
+   "style": "slow",
+   "text": "Put up the raincoat hood to stay dry.",
+   "speech": "Put up the raincoat hood to stay dry.",
+   "source": "escoita/curso_4_5/10/modelo/2/slow",
    "pack": false
   },
   {
@@ -46921,6 +47047,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_babe6863_28",
+   "lang": "en",
+   "style": "slow",
+   "text": "Tap gently on the loud drum.",
+   "speech": "Tap gently on the loud drum.",
+   "source": "escoita/curso_2_3/4/modelo/2/slow",
+   "pack": false
+  },
+  {
    "id": "en_slow_bac371ff_7",
    "lang": "en",
    "style": "slow",
@@ -47245,6 +47380,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_bc661614_30",
+   "lang": "en",
+   "style": "slow",
+   "text": "The wet towel feels heavy now!",
+   "speech": "The wet towel feels heavy now!",
+   "source": "escoita/curso_2_3/8/wet/frase/slow",
+   "pack": false
+  },
+  {
    "id": "en_slow_bc7a115e_6",
    "lang": "en",
    "style": "slow",
@@ -47314,15 +47458,6 @@
    "text": "modify",
    "speech": "modify",
    "source": "corpus/2601/lemma",
-   "pack": false
-  },
-  {
-   "id": "en_slow_bcbba30f_30",
-   "lang": "en",
-   "style": "slow",
-   "text": "Each seed in the star is tiny.",
-   "speech": "Each seed in the star is tiny.",
-   "source": "escoita/curso_2_3/6/tiny/frase/slow",
    "pack": false
   },
   {
@@ -47557,6 +47692,15 @@
    "text": "polish",
    "speech": "polish",
    "source": "corpus/1661/lemma",
+   "pack": false
+  },
+  {
+   "id": "en_slow_bd9ba427_30",
+   "lang": "en",
+   "style": "slow",
+   "text": "A big stone makes a loud boom!",
+   "speech": "A big stone makes a loud boom!",
+   "source": "escoita/curso_2_3/4/loud/frase/slow",
    "pack": false
   },
   {
@@ -48313,6 +48457,15 @@
    "text": "Windy",
    "speech": "Windy",
    "source": "tpr.3_4.novembro/s1/3_4.novembro.s1.windy",
+   "pack": false
+  },
+  {
+   "id": "en_slow_c0bd7639_42",
+   "lang": "en",
+   "style": "slow",
+   "text": "Step fast to the drum, then tiptoe slowly.",
+   "speech": "Step fast to the drum, then tiptoe slowly.",
+   "source": "escoita/curso_2_3/9/modelo/2/slow",
    "pack": false
   },
   {
@@ -49285,15 +49438,6 @@
    "text": "sail",
    "speech": "sail",
    "source": "corpus/713/lemma",
-   "pack": false
-  },
-  {
-   "id": "en_slow_c405d05d_30",
-   "lang": "en",
-   "style": "slow",
-   "text": "Drop the big stone from above.",
-   "speech": "Drop the big stone from above.",
-   "source": "escoita/curso_2_3/4/drop/frase/slow",
    "pack": false
   },
   {
@@ -51106,15 +51250,6 @@
    "pack": false
   },
   {
-   "id": "en_slow_ccacbc37_32",
-   "lang": "en",
-   "style": "slow",
-   "text": "The big ice starts to melt fast.",
-   "speech": "The big ice starts to melt fast.",
-   "source": "escoita/curso_3_4/6/melt/frase/slow",
-   "pack": false
-  },
-  {
    "id": "en_slow_ccbef093_5",
    "lang": "en",
    "style": "slow",
@@ -51601,15 +51736,6 @@
    "pack": false
   },
   {
-   "id": "en_slow_ce826429_36",
-   "lang": "en",
-   "style": "slow",
-   "text": "Silence now: get sleepy on the sofa.",
-   "speech": "Silence now: get sleepy on the sofa.",
-   "source": "escoita/curso_2_3/9/sleepy/frase/slow",
-   "pack": false
-  },
-  {
    "id": "en_slow_ce861995_5",
    "lang": "en",
    "style": "slow",
@@ -51742,6 +51868,15 @@
    "text": "couple",
    "speech": "couple",
    "source": "corpus/192/lemma",
+   "pack": false
+  },
+  {
+   "id": "en_slow_cf16e50f_39",
+   "lang": "en",
+   "style": "slow",
+   "text": "Look at the tower's shadow on the wall.",
+   "speech": "Look at the tower's shadow on the wall.",
+   "source": "escoita/curso_3_4/5/shadow/frase/slow",
    "pack": false
   },
   {
@@ -52330,6 +52465,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_d1afdbd2_29",
+   "lang": "en",
+   "style": "slow",
+   "text": "The paper boat is very light.",
+   "speech": "The paper boat is very light.",
+   "source": "escoita/curso_2_3/2/light/frase/slow",
+   "pack": false
+  },
+  {
    "id": "en_slow_d1b29beb_9",
    "lang": "en",
    "style": "slow",
@@ -52713,7 +52857,7 @@
    "style": "slow",
    "text": "Wrap the best bandage on the paw.",
    "speech": "Wrap the best bandage on the paw.",
-   "source": "escoita/curso_4_5/1/bandage/frase/slow",
+   "source": "escoita/ar/ra_curso_4_5_m01/frase/2/slow",
    "pack": false
   },
   {
@@ -52741,6 +52885,15 @@
    "text": "Sleepy",
    "speech": "Sleepy",
    "source": "tpr.3_4.decembro/s3/3_4.decembro.s3.sleepy",
+   "pack": false
+  },
+  {
+   "id": "en_slow_d3acf26e_12",
+   "lang": "en",
+   "style": "slow",
+   "text": "A high note.",
+   "speech": "A high note.",
+   "source": "escoita/curso_3_4/9/modelo/1/slow",
    "pack": false
   },
   {
@@ -52804,6 +52957,15 @@
    "text": "Juicy",
    "speech": "Juicy",
    "source": "tpr.3_4.novembro/s4/3_4.novembro.s4.juicy",
+   "pack": false
+  },
+  {
+   "id": "en_slow_d44bcec7_37",
+   "lang": "en",
+   "style": "slow",
+   "text": "The room is dark, so the stars shine!",
+   "speech": "The room is dark, so the stars shine!",
+   "source": "escoita/curso_2_3/10/dark/frase/slow",
    "pack": false
   },
   {
@@ -53140,15 +53302,6 @@
    "pack": false
   },
   {
-   "id": "en_slow_d5aed654_31",
-   "lang": "en",
-   "style": "slow",
-   "text": "The wet towel weighs much more.",
-   "speech": "The wet towel weighs much more.",
-   "source": "escoita/curso_2_3/8/wet/frase/slow",
-   "pack": false
-  },
-  {
    "id": "en_slow_d5bdbb42_6",
    "lang": "en",
    "style": "slow",
@@ -53434,6 +53587,15 @@
    "text": "Identical",
    "speech": "Identical",
    "source": "tpr.5_6.marzo/s2/5_6.marzo.s2.identical",
+   "pack": false
+  },
+  {
+   "id": "en_slow_d6f68ac2_43",
+   "lang": "en",
+   "style": "slow",
+   "text": "The white paper plane glides past the tape.",
+   "speech": "The white paper plane glides past the tape.",
+   "source": "escoita/curso_5_6/6/white/frase/slow",
    "pack": false
   },
   {
@@ -54004,6 +54166,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_d9468bae_42",
+   "lang": "en",
+   "style": "slow",
+   "text": "Look through the lens to see things large.",
+   "speech": "Look through the lens to see things large.",
+   "source": "escoita/curso_4_5/4/modelo/2/slow",
+   "pack": false
+  },
+  {
    "id": "en_slow_d9475d78_34",
    "lang": "en",
    "style": "slow",
@@ -54283,6 +54454,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_da652831_30",
+   "lang": "en",
+   "style": "slow",
+   "text": "Tap the metal pan like a drum.",
+   "speech": "Tap the metal pan like a drum.",
+   "source": "escoita/curso_2_3/4/drum/frase/slow",
+   "pack": false
+  },
+  {
    "id": "en_slow_da67b321_16",
    "lang": "en",
    "style": "slow",
@@ -54535,6 +54715,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_dbb585fc_36",
+   "lang": "en",
+   "style": "slow",
+   "text": "Wash both hands with water and soap.",
+   "speech": "Wash both hands with water and soap.",
+   "source": "escoita/curso_2_3/7/wash/frase/slow",
+   "pack": false
+  },
+  {
    "id": "en_slow_dbc0dcc7_5",
    "lang": "en",
    "style": "slow",
@@ -54622,15 +54811,6 @@
    "text": "silly",
    "speech": "silly",
    "source": "corpus/760/lemma",
-   "pack": false
-  },
-  {
-   "id": "en_slow_dc1a0f17_29",
-   "lang": "en",
-   "style": "slow",
-   "text": "A big stone makes a loud pum.",
-   "speech": "A big stone makes a loud pum.",
-   "source": "escoita/curso_2_3/4/loud/frase/slow",
    "pack": false
   },
   {
@@ -54730,15 +54910,6 @@
    "text": "upgrade",
    "speech": "upgrade",
    "source": "corpus/3955/lemma",
-   "pack": false
-  },
-  {
-   "id": "en_slow_dca99f84_56",
-   "lang": "en",
-   "style": "slow",
-   "text": "Run fast when the drum beats, then walk slow and sleepy.",
-   "speech": "Run fast when the drum beats, then walk slow and sleepy.",
-   "source": "escoita/curso_2_3/9/modelo/2/slow",
    "pack": false
   },
   {
@@ -55201,15 +55372,6 @@
    "pack": false
   },
   {
-   "id": "en_slow_debc4866_34",
-   "lang": "en",
-   "style": "slow",
-   "text": "Smile wide inside the shiny spoon!",
-   "speech": "Smile wide inside the shiny spoon!",
-   "source": "escoita/curso_3_4/10/smile/frase/slow",
-   "pack": false
-  },
-  {
    "id": "en_slow_dec68ba9_7",
    "lang": "en",
    "style": "slow",
@@ -55279,15 +55441,6 @@
    "text": "underlie",
    "speech": "underlie",
    "source": "corpus/2957/lemma",
-   "pack": false
-  },
-  {
-   "id": "en_slow_df4c5f8d_34",
-   "lang": "en",
-   "style": "slow",
-   "text": "Make the plane nose sharp or wide.",
-   "speech": "Make the plane nose sharp or wide.",
-   "source": "escoita/curso_5_6/6/nose/frase/slow",
    "pack": false
   },
   {
@@ -55585,15 +55738,6 @@
    "text": "ally",
    "speech": "ally",
    "source": "corpus/2047/lemma",
-   "pack": false
-  },
-  {
-   "id": "en_slow_e0c1161d_39",
-   "lang": "en",
-   "style": "slow",
-   "text": "Every spot matches: the table is ready.",
-   "speech": "Every spot matches: the table is ready.",
-   "source": "escoita/curso_3_4/7/ready/frase/slow",
    "pack": false
   },
   {
@@ -56353,6 +56497,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_e460acb7_39",
+   "lang": "en",
+   "style": "slow",
+   "text": "Pour the water slowly without spilling.",
+   "speech": "Pour the water slowly without spilling.",
+   "source": "escoita/curso_3_4/8/pour/frase/slow",
+   "pack": false
+  },
+  {
    "id": "en_slow_e46b4575_5",
    "lang": "en",
    "style": "slow",
@@ -56502,7 +56655,7 @@
    "style": "slow",
    "text": "Compare today's bread and yesterday's bread.",
    "speech": "Compare today's bread and yesterday's bread.",
-   "source": "escoita/curso_2_3/5/bread/frase/slow",
+   "source": "escoita/ar/ra_curso_2_3_m05/frase/2/slow",
    "pack": false
   },
   {
@@ -56908,6 +57061,15 @@
    "text": "narrow",
    "speech": "narrow",
    "source": "corpus/1584/lemma",
+   "pack": false
+  },
+  {
+   "id": "en_slow_e6ad6b3f_32",
+   "lang": "en",
+   "style": "slow",
+   "text": "Put the small leaf in this hoop.",
+   "speech": "Put the small leaf in this hoop.",
+   "source": "escoita/curso_2_3/3/modelo/2/slow",
    "pack": false
   },
   {
@@ -57532,6 +57694,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_e9475d7e_12",
+   "lang": "en",
+   "style": "slow",
+   "text": "Clean hands.",
+   "speech": "Clean hands.",
+   "source": "escoita/curso_2_3/7/modelo/1/slow",
+   "pack": false
+  },
+  {
    "id": "en_slow_e94aebc3_6",
    "lang": "en",
    "style": "slow",
@@ -58099,15 +58270,6 @@
    "pack": false
   },
   {
-   "id": "en_slow_eb5a3371_30",
-   "lang": "en",
-   "style": "slow",
-   "text": "Wash your hands in four steps.",
-   "speech": "Wash your hands in four steps.",
-   "source": "escoita/curso_2_3/7/wash/frase/slow",
-   "pack": false
-  },
-  {
    "id": "en_slow_eb61841d_28",
    "lang": "en",
    "style": "slow",
@@ -58513,6 +58675,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_ed071f33_35",
+   "lang": "en",
+   "style": "slow",
+   "text": "Rub the soap to make white bubbles.",
+   "speech": "Rub the soap to make white bubbles.",
+   "source": "escoita/curso_2_3/7/bubble/frase/slow",
+   "pack": false
+  },
+  {
    "id": "en_slow_ed0777e9_5",
    "lang": "en",
    "style": "slow",
@@ -58528,6 +58699,15 @@
    "text": "Telescope",
    "speech": "Telescope",
    "source": "tpr.5_6.decembro/s2/5_6.decembro.s2.telescope",
+   "pack": false
+  },
+  {
+   "id": "en_slow_ed246d9f_42",
+   "lang": "en",
+   "style": "slow",
+   "text": "Use a slow pour so the cup does not spill.",
+   "speech": "Use a slow pour so the cup does not spill.",
+   "source": "escoita/curso_3_4/8/slow/frase/slow",
    "pack": false
   },
   {
@@ -61267,6 +61447,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_f9743230_40",
+   "lang": "en",
+   "style": "slow",
+   "text": "The round disc looks like one new color!",
+   "speech": "The round disc looks like one new color!",
+   "source": "escoita/curso_5_6/4/round/frase/slow",
+   "pack": false
+  },
+  {
    "id": "en_slow_f9783800_8",
    "lang": "en",
    "style": "slow",
@@ -61822,15 +62011,6 @@
    "text": "chapel",
    "speech": "chapel",
    "source": "corpus/3158/lemma",
-   "pack": false
-  },
-  {
-   "id": "en_slow_fc21eb99_39",
-   "lang": "en",
-   "style": "slow",
-   "text": "Soft cotton drinks every drop of water.",
-   "speech": "Soft cotton drinks every drop of water.",
-   "source": "escoita/curso_4_5/1/cotton/frase/slow",
    "pack": false
   },
   {
@@ -126157,15 +126337,6 @@
    "pack": false
   },
   {
-   "id": "en_tutor_a0010ca5_20",
-   "lang": "en",
-   "style": "tutor",
-   "text": "illas da ría Islands",
-   "speech": "illas da ría Islands",
-   "source": "lamina/vigo_nat_98/en",
-   "pack": false
-  },
-  {
    "id": "en_tutor_a001e6ba_21",
    "lang": "en",
    "style": "tutor",
@@ -156649,6 +156820,15 @@
    "pack": false
   },
   {
+   "id": "en_tutor_edb511bd_21",
+   "lang": "en",
+   "style": "tutor",
+   "text": "Green coastal islands",
+   "speech": "Green coastal islands",
+   "source": "lamina/vigo_nat_98/en",
+   "pack": false
+  },
+  {
    "id": "en_tutor_edb59fae_30",
    "lang": "en",
    "style": "tutor",
@@ -167335,6 +167515,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_0899316c_37",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Toca el cazo de metal como un tambor.",
+   "speech": "Toca el cazo de metal como un tambor.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_089cb208_45",
    "lang": "es",
    "style": "tutor",
@@ -169617,6 +169806,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_0e402e3b_6",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Lente.",
+   "speech": "Lente.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_0e4d8b71_35",
    "lang": "es",
    "style": "tutor",
@@ -170513,7 +170711,7 @@
    "style": "tutor",
    "text": "Tren.",
    "speech": "Tren.",
-   "source": "escoita/curso_3_4/3/modelo/0/significado",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -171975,6 +172173,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_14bb95e5_41",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Tu voz viaja cuando la cuerda está tensa.",
+   "speech": "Tu voz viaja cuando la cuerda está tensa.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_14bc9699_15",
    "lang": "es",
    "style": "tutor",
@@ -173240,7 +173447,7 @@
    "style": "tutor",
    "text": "Chubasquero.",
    "speech": "Chubasquero.",
-   "source": "escoita/curso_4_5/10/modelo/0/significado",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -174348,6 +174555,15 @@
    "text": "niño",
    "speech": "niño",
    "source": "escoita/curso_3_4/3/boy/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_1b189c19_49",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Ponte la capucha del chubasquero para estar seco.",
+   "speech": "Ponte la capucha del chubasquero para estar seco.",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -175998,6 +176214,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_1f037f82_37",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Mira la manzana cortada por la mitad.",
+   "speech": "Mira la manzana cortada por la mitad.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_1f1fe3d7_22",
    "lang": "es",
    "style": "tutor",
@@ -177524,6 +177749,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_232d7541_42",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Hazlo despacio para que el vaso no rebose.",
+   "speech": "Hazlo despacio para que el vaso no rebose.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_232e7a44_18",
    "lang": "es",
    "style": "tutor",
@@ -177763,6 +177997,15 @@
    "style": "tutor",
    "text": "¿Dónde está el abrigo verde de Lúa? ¡Toca el abrigo!",
    "speech": "¿Dónde está el abrigo verde de Lúa? ¡Toca el abrigo!",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_23cff458_40",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡El disco redondo parece un color nuevo!",
+   "speech": "¡El disco redondo parece un color nuevo!",
    "source": "significados/significado",
    "pack": false
   },
@@ -179119,7 +179362,7 @@
    "style": "tutor",
    "text": "Sombra.",
    "speech": "Sombra.",
-   "source": "escoita/curso_3_4/5/modelo/0/significado",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -179147,6 +179390,15 @@
    "text": "Deja la lupa con cuidado.",
    "speech": "Deja la lupa con cuidado.",
    "source": "gramatica/curso_4_5/12/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_2733d1a4_44",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Traza el contorno oscuro en un papel grande.",
+   "speech": "Traza el contorno oscuro en un papel grande.",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -179252,6 +179504,15 @@
    "speech": "Sombrero",
    "source": "tpr.3_4.xuno/s2/3_4.xuno.s2.sun-hat/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_2774d7cb_43",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Da toquecitos suaves con un palo de madera.",
+   "speech": "Da toquecitos suaves con un palo de madera.",
+   "source": "significados/significado",
+   "pack": false
   },
   {
    "id": "es_tutor_277ce7e4_15",
@@ -179515,6 +179776,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_28398050_22",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Islas costeras verdes.",
+   "speech": "Islas costeras verdes.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_283c745b_15",
    "lang": "es",
    "style": "tutor",
@@ -179657,6 +179927,15 @@
    "speech": "Mover los deditos",
    "source": "tpr.0_2.xuno/s1/0_2.xuno.s1.wriggle-toes/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_288a17d2_59",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Da un toquecito al bote de cristal para oír una nota aguda.",
+   "speech": "Da un toquecito al bote de cristal para oír una nota aguda.",
+   "source": "escoita/curso_3_4/9/modelo/2/significado",
+   "pack": false
   },
   {
    "id": "es_tutor_288acd24_24",
@@ -181051,6 +181330,15 @@
    "text": "Shhh... ¡un gatito! Con delicadeza. ¡Sano y contento!",
    "speech": "Shhh... ¡un gatito! Con delicadeza. ¡Sano y contento!",
    "source": "biblioteca/HIS-072/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_2c4df14a_44",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Mira por la lupa para ver las cosas grandes.",
+   "speech": "Mira por la lupa para ver las cosas grandes.",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -183997,6 +184285,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_346a8e01_43",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Frota el jabón para hacer burbujas blancas.",
+   "speech": "Frota el jabón para hacer burbujas blancas.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_346c73d9_7",
    "lang": "es",
    "style": "tutor",
@@ -184753,6 +185050,15 @@
    "text": "¡Llamemos a las cajas como Lúa! Knock, knock... no. Knock, knock... no. Knock, knock... ¡tap, tap!",
    "speech": "¡Llamemos a las cajas como Lúa! Knock, knock... no. Knock, knock... no. Knock, knock... ¡tap, tap!",
    "source": "biblioteca/HIS-075/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_363d24fe_37",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Echa el agua despacio sin derramarla.",
+   "speech": "Echa el agua despacio sin derramarla.",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -185724,7 +186030,7 @@
    "style": "tutor",
    "text": "Perro.",
    "speech": "Perro.",
-   "source": "escoita/curso_4_5/3/modelo/0/significado",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -186219,7 +186525,7 @@
    "style": "tutor",
    "text": "Venda.",
    "speech": "Venda.",
-   "source": "escoita/curso_4_5/1/modelo/0/significado",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -186554,6 +186860,15 @@
    "speech": "Hielo en el charco",
    "source": "tpr.4_5.decembro/s1/4_5.decembro.s1.puddle-ice/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_3aea2263_48",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Sonríe grande y mírate en la cuchara brillante!",
+   "speech": "¡Sonríe grande y mírate en la cuchara brillante!",
+   "source": "significados/significado",
+   "pack": false
   },
   {
    "id": "es_tutor_3af34cbf_37",
@@ -187069,6 +187384,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_3c67fe7d_32",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Mira qué alta es nuestra torre!",
+   "speech": "¡Mira qué alta es nuestra torre!",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_3c6fb8b2_18",
    "lang": "es",
    "style": "tutor",
@@ -187515,7 +187839,7 @@
    "style": "tutor",
    "text": "Camilla.",
    "speech": "Camilla.",
-   "source": "escoita/curso_4_5/5/modelo/0/significado",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -188797,6 +189121,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_40bdec75_46",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Cada sitio tiene un plato: la mesa está lista.",
+   "speech": "Cada sitio tiene un plato: la mesa está lista.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_40c89aba_72",
    "lang": "es",
    "style": "tutor",
@@ -189913,6 +190246,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_43733fca_15",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Echar despacio.",
+   "speech": "Echar despacio.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_4373b0f1_26",
    "lang": "es",
    "style": "tutor",
@@ -189936,6 +190278,15 @@
    "style": "tutor",
    "text": "Las olas suben, las olas bajan, mar azul",
    "speech": "Las olas suben, las olas bajan, mar azul",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_438bfd46_31",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Toca suave en el tambor fuerte.",
+   "speech": "Toca suave en el tambor fuerte.",
    "source": "significados/significado",
    "pack": false
   },
@@ -190143,7 +190494,7 @@
    "style": "tutor",
    "text": "Maleta.",
    "speech": "Maleta.",
-   "source": "escoita/curso_5_6/8/modelo/0/significado",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -191398,6 +191749,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_46fbb1bf_39",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Toca la toalla mojada y la toalla seca.",
+   "speech": "Toca la toalla mojada y la toalla seca.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_4703f0b4_73",
    "lang": "es",
    "style": "tutor",
@@ -191547,6 +191907,15 @@
    "style": "tutor",
    "text": "Mira, Lúa lleva la bolsa. ¡Uf, una bolsa pesada!",
    "speech": "Mira, Lúa lleva la bolsa. ¡Uf, una bolsa pesada!",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_474c430a_50",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Pon los juguetes de cuatro patas en el aro cuatro.",
+   "speech": "Pon los juguetes de cuatro patas en el aro cuatro.",
    "source": "significados/significado",
    "pack": false
   },
@@ -191952,6 +192321,15 @@
    "style": "tutor",
    "text": "Compara el pliegue del morro y la distancia de planeo.",
    "speech": "Compara el pliegue del morro y la distancia de planeo.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_484e21ea_28",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Dinamita, el perro juguetón.",
+   "speech": "Dinamita, el perro juguetón.",
    "source": "significados/significado",
    "pack": false
   },
@@ -193203,7 +193581,7 @@
    "style": "tutor",
    "text": "Flauta.",
    "speech": "Flauta.",
-   "source": "escoita/curso_5_6/10/modelo/0/significado",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -193492,6 +193870,15 @@
    "text": "Cuando algo está muy alto en casa, ¿quién te ayuda?",
    "speech": "Cuando algo está muy alto en casa, ¿quién te ayuda?",
    "source": "biblioteca/HIS-085/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_4c27ed79_39",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Mira la sombra de la torre en la pared.",
+   "speech": "Mira la sombra de la torre en la pared.",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -195309,6 +195696,15 @@
    "style": "tutor",
    "text": "¡Una semilla! ¡Una semilla pequeñita!",
    "speech": "¡Una semilla! ¡Una semilla pequeñita!",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_50c094d0_35",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Mira cada semilla marrón pequeñita.",
+   "speech": "Mira cada semilla marrón pequeñita.",
    "source": "significados/significado",
    "pack": false
   },
@@ -197352,7 +197748,7 @@
    "style": "tutor",
    "text": "Zumo.",
    "speech": "Zumo.",
-   "source": "escoita/curso_3_4/6/modelo/0/significado",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -197768,6 +198164,15 @@
    "speech": "¡Mírame!",
    "source": "tpr.3_4.outubro/s4/3_4.outubro.s4.look-at-me/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_57b2c088_38",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Sopla suave para empujar el barquito!",
+   "speech": "¡Sopla suave para empujar el barquito!",
+   "source": "significados/significado",
+   "pack": false
   },
   {
    "id": "es_tutor_57b353c6_18",
@@ -198324,7 +198729,7 @@
    "style": "tutor",
    "text": "Torre.",
    "speech": "Torre.",
-   "source": "escoita/curso_3_4/1/modelo/0/significado",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -199152,7 +199557,7 @@
    "style": "tutor",
    "text": "Piedra.",
    "speech": "Piedra.",
-   "source": "escoita/curso_2_3/1/modelo/0/significado",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -199234,6 +199639,15 @@
    "text": "Yes! Take the small watering can, pour the water, toca la hoja verde con cuidado.",
    "speech": "Yes! Take the small watering can, pour the water, toca la hoja verde con cuidado.",
    "source": "asamblea.segundo_ciclo.marzo.4_infantil/microRutina/pauta/0/modeladoIndirecto",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_5bbbd6f0_44",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Sujeta el filtro de color delante de la luz.",
+   "speech": "Sujeta el filtro de color delante de la luz.",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -200461,6 +200875,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_5ed81b4f_65",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Pisa rápido con el tambor y después camina de puntillas despacio.",
+   "speech": "Pisa rápido con el tambor y después camina de puntillas despacio.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_5edbce0a_45",
    "lang": "es",
    "style": "tutor",
@@ -200817,7 +201240,7 @@
    "style": "tutor",
    "text": "Mapa.",
    "speech": "Mapa.",
-   "source": "escoita/curso_5_6/7/modelo/0/significado",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -201627,6 +202050,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_61ba3890_41",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Corre rápido cuando el ritmo va deprisa!",
+   "speech": "¡Corre rápido cuando el ritmo va deprisa!",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_61bdfe60_45",
    "lang": "es",
    "style": "tutor",
@@ -202334,6 +202766,15 @@
    "style": "tutor",
    "text": "Pon un plato a cada uno y la mesa está lista.",
    "speech": "Pon un plato a cada uno y la mesa está lista.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_63c65021_56",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Pega las pajitas con cinta para hacer una flauta de pan.",
+   "speech": "Pega las pajitas con cinta para hacer una flauta de pan.",
    "source": "significados/significado",
    "pack": false
   },
@@ -204723,6 +205164,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_69ef5fe8_22",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Una habitación oscura.",
+   "speech": "Una habitación oscura.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_69f229af_18",
    "lang": "es",
    "style": "tutor",
@@ -205290,6 +205740,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_6b231433_47",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Ponte la ropa adecuada para el tiempo que hace.",
+   "speech": "Ponte la ropa adecuada para el tiempo que hace.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_6b26fbe1_5",
    "lang": "es",
    "style": "tutor",
@@ -205702,6 +206161,15 @@
    "speech": "Cormorán",
    "source": "tpr.4_5.abril/s2/4_5.abril.s2.cormorant/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_6c97aca6_58",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡La habitación está oscura para que brillen las estrellas!",
+   "speech": "¡La habitación está oscura para que brillen las estrellas!",
+   "source": "significados/significado",
+   "pack": false
   },
   {
    "id": "es_tutor_6c99e33a_36",
@@ -209864,6 +210332,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_76ca7053_44",
+   "lang": "es",
+   "style": "tutor",
+   "text": "El algodón blando absorbe cada gota de agua.",
+   "speech": "El algodón blando absorbe cada gota de agua.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_76dab67e_43",
    "lang": "es",
    "style": "tutor",
@@ -210863,6 +211340,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_79757aa9_49",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Una persona adulta corta la manzana por la mitad.",
+   "speech": "Una persona adulta corta la manzana por la mitad.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_7978b512_17",
    "lang": "es",
    "style": "tutor",
@@ -211597,7 +212083,7 @@
    "style": "tutor",
    "text": "Tambor.",
    "speech": "Tambor.",
-   "source": "escoita/curso_2_3/4/modelo/0/significado",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -214141,7 +214627,7 @@
    "style": "tutor",
    "text": "Mano.",
    "speech": "Mano.",
-   "source": "escoita/curso_2_3/7/modelo/0/significado",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -215266,7 +215752,7 @@
    "style": "tutor",
    "text": "Avión.",
    "speech": "Avión.",
-   "source": "escoita/curso_5_6/6/modelo/0/significado",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -218298,7 +218784,7 @@
    "style": "tutor",
    "text": "Bote.",
    "speech": "Bote.",
-   "source": "escoita/curso_3_4/9/modelo/0/significado",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -218334,7 +218820,7 @@
    "style": "tutor",
    "text": "Pan.",
    "speech": "Pan.",
-   "source": "escoita/curso_2_3/5/modelo/0/significado",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -218577,7 +219063,7 @@
    "style": "tutor",
    "text": "Lámpara.",
    "speech": "Lámpara.",
-   "source": "escoita/curso_5_6/9/modelo/0/significado",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -219761,6 +220247,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_90a8fc9d_35",
+   "lang": "es",
+   "style": "tutor",
+   "text": "El barquito de papel es muy ligero.",
+   "speech": "El barquito de papel es muy ligero.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_90aa14cd_23",
    "lang": "es",
    "style": "tutor",
@@ -220157,6 +220652,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_91aef707_49",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Silencio ahora: enróscate como un gato con sueño.",
+   "speech": "Silencio ahora: enróscate como un gato con sueño.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_91af343d_47",
    "lang": "es",
    "style": "tutor",
@@ -220308,6 +220812,15 @@
    "speech": "Horas de sueño",
    "source": "tpr.5_6.outubro/s4/5_6.outubro.s4.hours-of-sleep/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_9218f26f_28",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Aprieta suave el pan blando.",
+   "speech": "Aprieta suave el pan blando.",
+   "source": "significados/significado",
+   "pack": false
   },
   {
    "id": "es_tutor_9225e7a7_14",
@@ -220550,6 +221063,15 @@
    "text": "Esto es la boca.",
    "speech": "Esto es la boca.",
    "source": "escoita/valeria_es",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_92a0717e_50",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Lava las manos con jabón hasta que queden limpias.",
+   "speech": "Lava las manos con jabón hasta que queden limpias.",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -222452,6 +222974,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_97502d5a_37",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Dobla un trozo de papel para la vela.",
+   "speech": "Dobla un trozo de papel para la vela.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_975d27f8_19",
    "lang": "es",
    "style": "tutor",
@@ -223789,7 +224320,7 @@
    "style": "tutor",
    "text": "Pintura.",
    "speech": "Pintura.",
-   "source": "escoita/curso_5_6/1/modelo/0/significado",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -223917,6 +224448,15 @@
    "speech": "Da palmas después de mí",
    "source": "tpr.4_5.outubro/s4/4_5.outubro.s4.clap-after-me/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_9b4aa8c1_35",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡La toalla mojada pesa mucho ahora!",
+   "speech": "¡La toalla mojada pesa mucho ahora!",
+   "source": "significados/significado",
+   "pack": false
   },
   {
    "id": "es_tutor_9b4cadf6_76",
@@ -224360,6 +224900,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_9c513000_36",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Soplamos en la vela de papel ligera.",
+   "speech": "Soplamos en la vela de papel ligera.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_9c5ccf90_42",
    "lang": "es",
    "style": "tutor",
@@ -224666,6 +225215,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_9d1a456c_37",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Mira cómo se hunde la piedra pesada!",
+   "speech": "¡Mira cómo se hunde la piedra pesada!",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_9d1d1325_28",
    "lang": "es",
    "style": "tutor",
@@ -224681,6 +225239,15 @@
    "text": "¡Un bloque! Sí, Lúa quiere el último bloque.",
    "speech": "¡Un bloque! Sí, Lúa quiere el último bloque.",
    "source": "biblioteca/HIS-061/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_9d25ee86_35",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Mueve los pies al ritmo del tambor.",
+   "speech": "Mueve los pies al ritmo del tambor.",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -226741,6 +227308,24 @@
    "pack": false
   },
   {
+   "id": "es_tutor_a25ca3fe_36",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Lava las dos manos con agua y jabón.",
+   "speech": "Lava las dos manos con agua y jabón.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_a25fd00d_41",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Toca el pan fresco y el pan duro de ayer.",
+   "speech": "Toca el pan fresco y el pan duro de ayer.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_a2622cd8_30",
    "lang": "es",
    "style": "tutor",
@@ -228001,6 +228586,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_a58de6ca_37",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Mira cómo cae cada gota en el lavabo.",
+   "speech": "Mira cómo cae cada gota en el lavabo.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_a59ec2dd_40",
    "lang": "es",
    "style": "tutor",
@@ -229249,6 +229843,15 @@
    "text": "¿Dónde está la hojita? ¡Tócala!",
    "speech": "¿Dónde está la hojita? ¡Tócala!",
    "source": "biblioteca/HIS-019/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_a84f16cf_34",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Deja caer una piedra desde arriba.",
+   "speech": "Deja caer una piedra desde arriba.",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -233087,6 +233690,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_b22205fc_47",
+   "lang": "es",
+   "style": "tutor",
+   "text": "El cubito de hielo empieza a derretirse rápido.",
+   "speech": "El cubito de hielo empieza a derretirse rápido.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_b2322952_111",
    "lang": "es",
    "style": "tutor",
@@ -234433,6 +235045,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_b530cb99_53",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Dobla el morro para que el avión blanco planee lejos.",
+   "speech": "Dobla el morro para que el avión blanco planee lejos.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_b53fc99f_29",
    "lang": "es",
    "style": "tutor",
@@ -235438,7 +236059,7 @@
    "style": "tutor",
    "text": "Mariposa.",
    "speech": "Mariposa.",
-   "source": "escoita/curso_5_6/3/modelo/0/significado",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -236279,6 +236900,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_b9e25442_14",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Manos limpias.",
+   "speech": "Manos limpias.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_b9e93fd0_43",
    "lang": "es",
    "style": "tutor",
@@ -236419,7 +237049,7 @@
    "style": "tutor",
    "text": "Mesa.",
    "speech": "Mesa.",
-   "source": "escoita/curso_3_4/7/modelo/0/significado",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -236608,7 +237238,7 @@
    "style": "tutor",
    "text": "Papel.",
    "speech": "Papel.",
-   "source": "escoita/curso_5_6/5/modelo/0/significado",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -236763,6 +237393,15 @@
    "speech": "Final",
    "source": "tpr.5_6.xaneiro/s4/5_6.xaneiro.s4.ending/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_bb62c59b_13",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Manos firmes.",
+   "speech": "Manos firmes.",
+   "source": "significados/significado",
+   "pack": false
   },
   {
    "id": "es_tutor_bb8676b8_20",
@@ -239915,6 +240554,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_c3eeaa54_44",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Coge el mango y dale la vuelta a la cuchara.",
+   "speech": "Coge el mango y dale la vuelta a la cuchara.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_c3f126c2_37",
    "lang": "es",
    "style": "tutor",
@@ -240127,7 +240775,7 @@
    "style": "tutor",
    "text": "Toalla.",
    "speech": "Toalla.",
-   "source": "escoita/curso_2_3/8/modelo/0/significado",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -240662,6 +241310,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_c5f0e85f_42",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Levanta una maleta llena de ropa o libros.",
+   "speech": "Levanta una maleta llena de ropa o libros.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_c5f129ee_6",
    "lang": "es",
    "style": "tutor",
@@ -240928,7 +241585,7 @@
    "style": "tutor",
    "text": "Serie.",
    "speech": "Serie.",
-   "source": "escoita/curso_3_4/2/modelo/0/significado",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -241172,6 +241829,15 @@
    "text": "Se detiene y se encoge, manteniendo el silencio hasta la orden siguiente.",
    "speech": "Se detiene y se encoge, manteniendo el silencio hasta la orden siguiente.",
    "source": "asamblea.segundo_ciclo.novembro.5_infantil/fase/3/cmd/cmd.novembro.5i.02/modeladoDocente",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_c71c8d97_18",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Una imagen grande.",
+   "speech": "Una imagen grande.",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -241774,7 +242440,7 @@
    "style": "tutor",
    "text": "Pie.",
    "speech": "Pie.",
-   "source": "escoita/curso_2_3/9/modelo/0/significado",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -242399,6 +243065,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_ca303797_47",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Después de saltar, tu corazón late muy rápido!",
+   "speech": "¡Después de saltar, tu corazón late muy rápido!",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_ca31d62f_20",
    "lang": "es",
    "style": "tutor",
@@ -242863,7 +243538,7 @@
    "style": "tutor",
    "text": "Vela.",
    "speech": "Vela.",
-   "source": "escoita/curso_2_3/2/modelo/0/significado",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -243961,7 +244636,7 @@
    "style": "tutor",
    "text": "Teléfono.",
    "speech": "Teléfono.",
-   "source": "escoita/curso_3_4/4/modelo/0/significado",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -244384,7 +245059,7 @@
    "style": "tutor",
    "text": "Palo de lluvia.",
    "speech": "Palo de lluvia.",
-   "source": "escoita/curso_4_5/8/modelo/0/significado",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -244909,6 +245584,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_d083bebf_32",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Pon la hoja pequeña en este aro.",
+   "speech": "Pon la hoja pequeña en este aro.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_d0867c2d_30",
    "lang": "es",
    "style": "tutor",
@@ -244986,7 +245670,7 @@
    "style": "tutor",
    "text": "Peonza.",
    "speech": "Peonza.",
-   "source": "escoita/curso_5_6/4/modelo/0/significado",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -246093,7 +246777,7 @@
    "style": "tutor",
    "text": "Hoja.",
    "speech": "Hoja.",
-   "source": "escoita/curso_2_3/3/modelo/0/significado",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -248712,6 +249396,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_db4c4702_54",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Llevad la camilla de tela con firmeza entre los conos.",
+   "speech": "Llevad la camilla de tela con firmeza entre los conos.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_db4fe83e_22",
    "lang": "es",
    "style": "tutor",
@@ -248781,6 +249474,15 @@
    "text": "Detener al instante cualquier oscilación.",
    "speech": "Detener al instante cualquier oscilación.",
    "source": "asamblea.primeiro_ciclo.outubro.2_3_anos/fase/3/cmd/cmd.outubro.2_3.03/accionFisica",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_db72f6c7_15",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Una nota aguda.",
+   "speech": "Una nota aguda.",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -249473,7 +250175,7 @@
    "style": "tutor",
    "text": "Barro.",
    "speech": "Barro.",
-   "source": "escoita/curso_4_5/6/modelo/0/significado",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -249554,7 +250256,7 @@
    "style": "tutor",
    "text": "Corazón.",
    "speech": "Corazón.",
-   "source": "escoita/curso_4_5/2/modelo/0/significado",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -249572,7 +250274,7 @@
    "style": "tutor",
    "text": "Tiza.",
    "speech": "Tiza.",
-   "source": "escoita/curso_4_5/9/modelo/0/significado",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -249788,7 +250490,7 @@
    "style": "tutor",
    "text": "Cuchara.",
    "speech": "Cuchara.",
-   "source": "escoita/curso_3_4/10/modelo/0/significado",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -249896,7 +250598,7 @@
    "style": "tutor",
    "text": "Linterna.",
    "speech": "Linterna.",
-   "source": "escoita/curso_2_3/10/modelo/0/significado",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -250661,7 +251363,7 @@
    "style": "tutor",
    "text": "Embudo.",
    "speech": "Embudo.",
-   "source": "escoita/curso_3_4/8/modelo/0/significado",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -251075,6 +251777,15 @@
    "style": "tutor",
    "text": "¡Equilibrio! ¡Lúa lleva el plato en equilibrio por el tronco!",
    "speech": "¡Equilibrio! ¡Lúa lleva el plato en equilibrio por el tronco!",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_e211f285_36",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Echa el agua despacio por el embudo.",
+   "speech": "Echa el agua despacio por el embudo.",
    "source": "significados/significado",
    "pack": false
   },
@@ -253267,7 +253978,7 @@
    "style": "tutor",
    "text": "Filtro.",
    "speech": "Filtro.",
-   "source": "escoita/curso_5_6/2/modelo/0/significado",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -255575,6 +256286,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_ee465afe_38",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Dobla la punta del avión fina o ancha.",
+   "speech": "Dobla la punta del avión fina o ancha.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_ee4a2c11_45",
    "lang": "es",
    "style": "tutor",
@@ -256580,7 +257300,7 @@
    "style": "tutor",
    "text": "Molinillo.",
    "speech": "Molinillo.",
-   "source": "escoita/curso_4_5/7/modelo/0/significado",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -257376,15 +258096,6 @@
    "pack": false
   },
   {
-   "id": "es_tutor_f3100819_5",
-   "lang": "es",
-   "style": "tutor",
-   "text": "Lupa.",
-   "speech": "Lupa.",
-   "source": "escoita/curso_4_5/4/modelo/0/significado",
-   "pack": false
-  },
-  {
    "id": "es_tutor_f31e8e07_14",
    "lang": "es",
    "style": "tutor",
@@ -257610,6 +258321,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_f39936fc_53",
+   "lang": "es",
+   "style": "tutor",
+   "text": "El avión blanco de papel planea más allá de la cinta.",
+   "speech": "El avión blanco de papel planea más allá de la cinta.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "es_tutor_f39a4cd3_11",
    "lang": "es",
    "style": "tutor",
@@ -257696,7 +258416,7 @@
    "style": "tutor",
    "text": "Manzana.",
    "speech": "Manzana.",
-   "source": "escoita/curso_2_3/6/modelo/0/significado",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -258246,6 +258966,15 @@
    "text": "¡Sí, tu papá! Tu papá te espera.",
    "speech": "¡Sí, tu papá! Tu papá te espera.",
    "source": "biblioteca/HIS-071/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_f5295f6c_13",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Pies rápidos.",
+   "speech": "Pies rápidos.",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -258822,6 +259551,15 @@
    "text": "Repite la orden de ayer con el material del mes en la mano. El objeto atrae la mirada; la palabra va con el gesto.",
    "speech": "Repite la orden de ayer con el material del mes en la mano. El objeto atrae la mirada; la palabra va con el gesto.",
    "source": "progresion.primeiro_ciclo.0_2/s1/d2/consigna",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_f6f26aff_44",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Una piedra grande hace un estruendo fuerte!",
+   "speech": "¡Una piedra grande hace un estruendo fuerte!",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -261882,6 +262620,15 @@
    "text": "¡Sí, pequeño! ¡Un charco pequeño, no grande!",
    "speech": "¡Sí, pequeño! ¡Un charco pequeño, no grande!",
    "source": "biblioteca/HIS-004/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_fedf44f1_50",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Envuelve una venda blanda con cariño en la patita.",
+   "speech": "Envuelve una venda blanda con cariño en la patita.",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -266570,6 +267317,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_0a384806_12",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Mans firmes.",
+   "speech": "Mans firmes.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_0a392179_24",
    "lang": "gl",
    "style": "tutor",
@@ -267839,6 +268595,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_0d818757_40",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Faino amodo para que o vaso non reborde.",
+   "speech": "Faino amodo para que o vaso non reborde.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_0d862e2e_52",
    "lang": "gl",
    "style": "tutor",
@@ -268125,6 +268890,15 @@
    "speech": "Xogo do semáforo",
    "source": "tpr.4_5.outubro/s1/4_5.outubro.s1.traffic-game/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_0e402e3b_6",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Lente.",
+   "speech": "Lente.",
+   "source": "significados/significado",
+   "pack": false
   },
   {
    "id": "gl_tutor_0e4f19fe_39",
@@ -268946,6 +269720,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_10896e51_35",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Lava as dúas mans con auga e xabón.",
+   "speech": "Lava as dúas mans con auga e xabón.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_108ca52f_29",
    "lang": "gl",
    "style": "tutor",
@@ -269158,7 +269941,7 @@
    "style": "tutor",
    "text": "Tren.",
    "speech": "Tren.",
-   "source": "escoita/curso_3_4/3/modelo/0/significado",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -269978,6 +270761,15 @@
    "text": "A miña quenda! Si, a miña quenda, e despois a túa.",
    "speech": "A miña quenda! Si, a miña quenda, e despois a túa.",
    "source": "biblioteca/HIS-056/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_12cb8e7b_34",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "O barquiño de papel é moi lixeiro.",
+   "speech": "O barquiño de papel é moi lixeiro.",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -271427,15 +272219,6 @@
    "pack": false
   },
   {
-   "id": "gl_tutor_165767e2_12",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Impermeable.",
-   "speech": "Impermeable.",
-   "source": "escoita/curso_4_5/10/modelo/0/significado",
-   "pack": false
-  },
-  {
    "id": "gl_tutor_165c844a_79",
    "lang": "gl",
    "style": "tutor",
@@ -271940,6 +272723,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_17a78654_12",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Mans limpas.",
+   "speech": "Mans limpas.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_17b05713_73",
    "lang": "gl",
    "style": "tutor",
@@ -271981,6 +272773,15 @@
    "style": "tutor",
    "text": "Pisadas pesadas de xigante",
    "speech": "Pisadas pesadas de xigante",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_17cc879e_33",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Mira a sombra da torre na parede.",
+   "speech": "Mira a sombra da torre na parede.",
    "source": "significados/significado",
    "pack": false
   },
@@ -274154,6 +274955,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_1d15604b_38",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Suxeita o filtro de cor diante da luz.",
+   "speech": "Suxeita o filtro de cor diante da luz.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_1d17ba61_18",
    "lang": "gl",
    "style": "tutor",
@@ -274907,6 +275717,15 @@
    "text": "Pesa, verdade?",
    "speech": "Pesa, verdade?",
    "source": "gramatica/curso_4_5/1/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_1f3cf262_37",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Sopra suave para empurrar o barquiño!",
+   "speech": "Sopra suave para empurrar o barquiño!",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -275734,7 +276553,7 @@
    "style": "tutor",
    "text": "Peón.",
    "speech": "Peón.",
-   "source": "escoita/curso_5_6/4/modelo/0/significado",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -277358,6 +278177,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_25c48b39_39",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Colle o mango e dálle a volta á culler.",
+   "speech": "Colle o mango e dálle a volta á culler.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_25c57381_16",
    "lang": "gl",
    "style": "tutor",
@@ -277464,6 +278292,15 @@
    "speech": "Hurra por nós!",
    "source": "tpr.4_5.xuno/s3/4_5.xuno.s3.hooray-for-us/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_2600bbf5_43",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "O cubiño de xeo empeza a derreterse rápido.",
+   "speech": "O cubiño de xeo empeza a derreterse rápido.",
+   "source": "significados/significado",
+   "pack": false
   },
   {
    "id": "gl_tutor_260cd529_112",
@@ -277912,12 +278749,21 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_2718f723_44",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Pon os xoguetes de catro patas no aro catro.",
+   "speech": "Pon os xoguetes de catro patas no aro catro.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_2720a6b5_7",
    "lang": "gl",
    "style": "tutor",
    "text": "Sombra.",
    "speech": "Sombra.",
-   "source": "escoita/curso_3_4/5/modelo/0/significado",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -278281,6 +279127,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_2816e176_36",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Dobra un anaco de papel para a vela.",
+   "speech": "Dobra un anaco de papel para a vela.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_281b41f4_9",
    "lang": "gl",
    "style": "tutor",
@@ -278531,6 +279386,24 @@
    "speech": "Cubo de xeo",
    "source": "tpr.4_5.decembro/s1/4_5.decembro.s1.ice-cube/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_28d95cd8_30",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Bota a auga amodo polo embude.",
+   "speech": "Bota a auga amodo polo embude.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_28d9e709_29",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Mira que alta é a nosa torre!",
+   "speech": "Mira que alta é a nosa torre!",
+   "source": "significados/significado",
+   "pack": false
   },
   {
    "id": "gl_tutor_28df72b3_14",
@@ -278972,6 +279845,15 @@
    "speech": "Caderno de exercicios",
    "source": "tpr.5_6.xuno/s2/5_6.xuno.s2.exercise-book/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_2a2f9061_50",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Dobra o morro para que o avión branco plane lonxe.",
+   "speech": "Dobra o morro para que o avión branco plane lonxe.",
+   "source": "significados/significado",
+   "pack": false
   },
   {
    "id": "gl_tutor_2a33b740_40",
@@ -279631,6 +280513,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_2bce3a75_34",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Sopramos na vela de papel lixeira.",
+   "speech": "Sopramos na vela de papel lixeira.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_2bce5313_14",
    "lang": "gl",
    "style": "tutor",
@@ -279997,6 +280888,15 @@
    "text": "Mira: a palla cae. Pum! Os patos paran.",
    "speech": "Mira: a palla cae. Pum! Os patos paran.",
    "source": "biblioteca/HIS-059/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_2c8df85c_32",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Bota a auga amodo sen entornala.",
+   "speech": "Bota a auga amodo sen entornala.",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -280882,6 +281782,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_2e9b190a_42",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Pon a roupa axeitada para o tempo que fai.",
+   "speech": "Pon a roupa axeitada para o tempo que fai.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_2e9c1fca_18",
    "lang": "gl",
    "style": "tutor",
@@ -280924,6 +281833,15 @@
    "text": "Si, auga! Estás tocando o mar azul! Suave e fresquiña!",
    "speech": "Si, auga! Estás tocando o mar azul! Suave e fresquiña!",
    "source": "biblioteca/HIS-001/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_2ec61e40_42",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "A túa voz viaxa cando o cordel está tenso.",
+   "speech": "A túa voz viaxa cando o cordel está tenso.",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -284221,6 +285139,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_36b45dd5_51",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Despois de saltar, o teu corazón latexa moi rápido!",
+   "speech": "Despois de saltar, o teu corazón latexa moi rápido!",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_36bcf385_27",
    "lang": "gl",
    "style": "tutor",
@@ -285396,7 +286323,7 @@
    "style": "tutor",
    "text": "Venda.",
    "speech": "Venda.",
-   "source": "escoita/curso_4_5/1/modelo/0/significado",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -286899,7 +287826,7 @@
    "style": "tutor",
    "text": "Culler.",
    "speech": "Culler.",
-   "source": "escoita/curso_3_4/10/modelo/0/significado",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -287410,6 +288337,15 @@
    "speech": "Caixa dos xoguetes",
    "source": "tpr.2_3.setembro/s1/2_3.setembro.s1.toy-box/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_3ffefeaa_42",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Sorrí grande e mírate na culler brillante!",
+   "speech": "Sorrí grande e mírate na culler brillante!",
+   "source": "significados/significado",
+   "pack": false
   },
   {
    "id": "gl_tutor_400a5a7c_29",
@@ -288839,7 +289775,7 @@
    "style": "tutor",
    "text": "Folla.",
    "speech": "Folla.",
-   "source": "escoita/curso_2_3/3/modelo/0/significado",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -289172,7 +290108,7 @@
    "style": "tutor",
    "text": "Maleta.",
    "speech": "Maleta.",
-   "source": "escoita/curso_5_6/8/modelo/0/significado",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -290132,6 +291068,15 @@
    "text": "Na mesa, con toda a familia e sen obxectos.",
    "speech": "Na mesa, con toda a familia e sen obxectos.",
    "source": "asamblea.segundo_ciclo.maio.6_infantil/microRutina/escenaCotidiana",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_46a977a9_37",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Dobra a punta do avión fina ou ancha.",
+   "speech": "Dobra a punta do avión fina ou ancha.",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -292574,6 +293519,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_4d127a7f_45",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Lava as mans con xabón ata que queden limpas.",
+   "speech": "Lava as mans con xabón ata que queden limpas.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_4d128c88_36",
    "lang": "gl",
    "style": "tutor",
@@ -292795,6 +293749,15 @@
    "style": "tutor",
    "text": "Camiña ata o colgadoiro e colga o abrigo",
    "speech": "Camiña ata o colgadoiro e colga o abrigo",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_4d9fa173_12",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Pés rápidos.",
+   "speech": "Pés rápidos.",
    "source": "significados/significado",
    "pack": false
   },
@@ -293031,6 +293994,15 @@
    "speech": "Bzzz, bzzz!",
    "source": "tpr.3_4.abril/s3/3_4.abril.s3.buzz-buzz/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_4e2b1dab_48",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Envolve unha venda branda con agarimo na patiña.",
+   "speech": "Envolve unha venda branda con agarimo na patiña.",
+   "source": "significados/significado",
+   "pack": false
   },
   {
    "id": "gl_tutor_4e3128a7_11",
@@ -293624,6 +294596,15 @@
    "text": "Si, a charca! A viaxe da ra é ata a charca.",
    "speech": "Si, a charca! A viaxe da ra é ata a charca.",
    "source": "biblioteca/HIS-100/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_4fdb5cb2_39",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Toca o pan fresco e o pan duro de onte.",
+   "speech": "Toca o pan fresco e o pan duro de onte.",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -294473,6 +295454,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_51e2682e_41",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Unha persoa adulta corta a mazá á metade.",
+   "speech": "Unha persoa adulta corta a mazá á metade.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_51eab7df_34",
    "lang": "gl",
    "style": "tutor",
@@ -294785,6 +295775,15 @@
    "text": "Podes lavar un pincel na auga? Chap, chap!",
    "speech": "Podes lavar un pincel na auga? Chap, chap!",
    "source": "biblioteca/HIS-087/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_52dd30af_31",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Move os pés ao ritmo do tambor.",
+   "speech": "Move os pés ao ritmo do tambor.",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -295577,6 +296576,15 @@
    "text": "anaco",
    "speech": "anaco",
    "source": "escoita/curso_2_3/5/bit/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_54a42dbd_39",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Corre rápido cando o ritmo vai á présa!",
+   "speech": "Corre rápido cando o ritmo vai á présa!",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -297562,7 +298570,7 @@
    "style": "tutor",
    "text": "Torre.",
    "speech": "Torre.",
-   "source": "escoita/curso_3_4/1/modelo/0/significado",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -300096,7 +301104,7 @@
    "style": "tutor",
    "text": "Mapa.",
    "speech": "Mapa.",
-   "source": "escoita/curso_5_6/7/modelo/0/significado",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -300602,6 +301610,15 @@
    "speech": "Máis amodo",
    "source": "tpr.4_5.outubro/s4/4_5.outubro.s4.slower/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_60e480fd_7",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Embude.",
+   "speech": "Embude.",
+   "source": "significados/significado",
+   "pack": false
   },
   {
    "id": "gl_tutor_60e97199_11",
@@ -303057,7 +304074,7 @@
    "style": "tutor",
    "text": "Lámpada.",
    "speech": "Lámpada.",
-   "source": "escoita/curso_5_6/9/modelo/0/significado",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -307863,6 +308880,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_73e4cb08_35",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Deixa caer unha pedra dende arriba.",
+   "speech": "Deixa caer unha pedra dende arriba.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_73e6605b_24",
    "lang": "gl",
    "style": "tutor",
@@ -310649,7 +311675,7 @@
    "style": "tutor",
    "text": "Tambor.",
    "speech": "Tambor.",
-   "source": "escoita/curso_2_3/4/modelo/0/significado",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -310901,6 +311927,24 @@
    "style": "tutor",
    "text": "Que é o que salta?",
    "speech": "Que é o que salta?",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_7bfd6c7b_38",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Toca a toalla mollada e a toalla seca.",
+   "speech": "Toca a toalla mollada e a toalla seca.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_7bff6cf8_43",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Frega o xabón para facer burbullas brancas.",
+   "speech": "Frega o xabón para facer burbullas brancas.",
    "source": "significados/significado",
    "pack": false
   },
@@ -313322,7 +314366,7 @@
    "style": "tutor",
    "text": "Frauta.",
    "speech": "Frauta.",
-   "source": "escoita/curso_5_6/10/modelo/0/significado",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -314258,7 +315302,7 @@
    "style": "tutor",
    "text": "Avión.",
    "speech": "Avión.",
-   "source": "escoita/curso_5_6/6/modelo/0/significado",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -314748,6 +315792,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_866391c0_25",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Dinamita, o can xoguetón.",
+   "speech": "Dinamita, o can xoguetón.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_866f3a15_33",
    "lang": "gl",
    "style": "tutor",
@@ -314906,6 +315959,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_86ca7ed7_32",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Mira como afunde a pedra pesada!",
+   "speech": "Mira como afunde a pedra pesada!",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_86cc3b25_14",
    "lang": "gl",
    "style": "tutor",
@@ -314965,7 +316027,7 @@
    "style": "tutor",
    "text": "Padiola.",
    "speech": "Padiola.",
-   "source": "escoita/curso_4_5/5/modelo/0/significado",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -317448,7 +318510,7 @@
    "style": "tutor",
    "text": "Bote.",
    "speech": "Bote.",
-   "source": "escoita/curso_3_4/9/modelo/0/significado",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -317502,7 +318564,7 @@
    "style": "tutor",
    "text": "Pan.",
    "speech": "Pan.",
-   "source": "escoita/curso_2_3/5/modelo/0/significado",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -317958,6 +319020,15 @@
    "text": "Mira, unha pedra lisa. Lúa píntaa de vermello. Chis, chis!",
    "speech": "Mira, unha pedra lisa. Lúa píntaa de vermello. Chis, chis!",
    "source": "biblioteca/HIS-092/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_8e3913cf_43",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Cada sitio ten un prato: a mesa está lista.",
+   "speech": "Cada sitio ten un prato: a mesa está lista.",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -319541,7 +320612,7 @@
    "style": "tutor",
    "text": "Pedra.",
    "speech": "Pedra.",
-   "source": "escoita/curso_2_3/1/modelo/0/significado",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -320144,7 +321215,7 @@
    "style": "tutor",
    "text": "Pé.",
    "speech": "Pé.",
-   "source": "escoita/curso_2_3/9/modelo/0/significado",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -320362,6 +321433,15 @@
    "speech": "Axudo na casa poñendo a mesa",
    "source": "tpr.5_6.maio/s4/5_6.maio.s4.i-help-at-home-by-setting-the-table/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_93930441_59",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Pega as palliñas cunha cinta para facer unha frauta de pan.",
+   "speech": "Pega as palliñas cunha cinta para facer unha frauta de pan.",
+   "source": "significados/significado",
+   "pack": false
   },
   {
    "id": "gl_tutor_9395589d_32",
@@ -323057,7 +324137,7 @@
    "style": "tutor",
    "text": "Pintura.",
    "speech": "Pintura.",
-   "source": "escoita/curso_5_6/1/modelo/0/significado",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -324758,7 +325838,7 @@
    "style": "tutor",
    "text": "Mazá.",
    "speech": "Mazá.",
-   "source": "escoita/curso_2_3/6/modelo/0/significado",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -326708,7 +327788,7 @@
    "style": "tutor",
    "text": "Pau de choiva.",
    "speech": "Pau de choiva.",
-   "source": "escoita/curso_4_5/8/modelo/0/significado",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -327840,6 +328920,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_a75bf8f4_55",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Pisa rápido co tambor e despois camiña de puntas amodo.",
+   "speech": "Pisa rápido co tambor e despois camiña de puntas amodo.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_a7618489_34",
    "lang": "gl",
    "style": "tutor",
@@ -327972,6 +329061,15 @@
    "text": "Marcha con pisadas marcadas e sonoras sobre a alfombra.",
    "speech": "Marcha con pisadas marcadas e sonoras sobre a alfombra.",
    "source": "asamblea.segundo_ciclo.decembro.4_infantil/fase/3/cmd/cmd.decembro.4i.02/accionFisica",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_a7c43cf6_36",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Toca o cazo de metal coma un tambor.",
+   "speech": "Toca o cazo de metal coma un tambor.",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -329447,7 +330545,7 @@
    "style": "tutor",
    "text": "Xiz.",
    "speech": "Xiz.",
-   "source": "escoita/curso_4_5/9/modelo/0/significado",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -330115,6 +331213,15 @@
    "speech": "Total",
    "source": "tpr.5_6.novembro/s2/5_6.novembro.s2.total/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_ad0ef9cc_25",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Preme suave o pan brando.",
+   "speech": "Preme suave o pan brando.",
+   "source": "significados/significado",
+   "pack": false
   },
   {
    "id": "gl_tutor_ad10770f_20",
@@ -333546,6 +334653,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_b6246e36_32",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Mira a mazá cortada pola metade.",
+   "speech": "Mira a mazá cortada pola metade.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_b6251653_19",
    "lang": "gl",
    "style": "tutor",
@@ -333776,7 +334892,7 @@
    "style": "tutor",
    "text": "Zume.",
    "speech": "Zume.",
-   "source": "escoita/curso_3_4/6/modelo/0/significado",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -333848,6 +334964,15 @@
    "style": "tutor",
    "text": "Onde está o timbre? Toca o timbre!",
    "speech": "Onde está o timbre? Toca o timbre!",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_b6eea104_27",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Toca suave no tambor forte.",
+   "speech": "Toca suave no tambor forte.",
    "source": "significados/significado",
    "pack": false
   },
@@ -334626,6 +335751,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_b8eb9f6f_12",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Botar amodo.",
+   "speech": "Botar amodo.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_b8f09bbd_36",
    "lang": "gl",
    "style": "tutor",
@@ -334968,15 +336102,6 @@
    "pack": true
   },
   {
-   "id": "gl_tutor_b9d085ef_6",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Funil.",
-   "speech": "Funil.",
-   "source": "escoita/curso_3_4/8/modelo/0/significado",
-   "pack": false
-  },
-  {
    "id": "gl_tutor_b9da8593_16",
    "lang": "gl",
    "style": "tutor",
@@ -335103,12 +336228,21 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_ba3529af_54",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "A habitación está escura para que brillen as estrelas!",
+   "speech": "A habitación está escura para que brillen as estrelas!",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_ba3dac8b_5",
    "lang": "gl",
    "style": "tutor",
    "text": "Mesa.",
    "speech": "Mesa.",
-   "source": "escoita/curso_3_4/7/modelo/0/significado",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -335144,7 +336278,7 @@
    "style": "tutor",
    "text": "Bolboreta.",
    "speech": "Bolboreta.",
-   "source": "escoita/curso_5_6/3/modelo/0/significado",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -335275,7 +336409,7 @@
    "style": "tutor",
    "text": "Papel.",
    "speech": "Papel.",
-   "source": "escoita/curso_5_6/5/modelo/0/significado",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -335430,6 +336564,15 @@
    "speech": "Abrir o dobrez",
    "source": "tpr.5_6.marzo/s2/5_6.marzo.s2.open-up-the-fold/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_bb3ec740_44",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Levanta unha maleta chea de roupa ou libros.",
+   "speech": "Levanta unha maleta chea de roupa ou libros.",
+   "source": "significados/significado",
+   "pack": false
   },
   {
    "id": "gl_tutor_bb47ff99_43",
@@ -337242,6 +338385,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_c08871a7_34",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "A toalla mollada pesa moito agora!",
+   "speech": "A toalla mollada pesa moito agora!",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_c08d16fe_19",
    "lang": "gl",
    "style": "tutor",
@@ -337626,6 +338778,15 @@
    "text": "Si, o xabón está aí! Na escuma!",
    "speech": "Si, o xabón está aí! Na escuma!",
    "source": "biblioteca/HIS-031/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_c1b934a4_16",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Quentiño e seco.",
+   "speech": "Quentiño e seco.",
+   "source": "escoita/curso_4_5/10/modelo/1/significado",
    "pack": false
   },
   {
@@ -338655,7 +339816,7 @@
    "style": "tutor",
    "text": "Toalla.",
    "speech": "Toalla.",
-   "source": "escoita/curso_2_3/8/modelo/0/significado",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -339100,6 +340261,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_c5ebf557_30",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Pon a folla pequena neste aro.",
+   "speech": "Pon a folla pequena neste aro.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_c5ec239c_29",
    "lang": "gl",
    "style": "tutor",
@@ -339384,7 +340554,7 @@
    "style": "tutor",
    "text": "Serie.",
    "speech": "Serie.",
-   "source": "escoita/curso_3_4/2/modelo/0/significado",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -339861,6 +341031,15 @@
    "style": "tutor",
    "text": "Cóxegas nos pés e toca o nariz!",
    "speech": "Cóxegas nos pés e toca o nariz!",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_c7f6f0e7_43",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Mira pola lente para ver as cousas grandes.",
+   "speech": "Mira pola lente para ver as cousas grandes.",
    "source": "significados/significado",
    "pack": false
   },
@@ -340495,6 +341674,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_c95c8803_49",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Pon a carapucha do chuvasqueiro para quedar seco.",
+   "speech": "Pon a carapucha do chuvasqueiro para quedar seco.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_c963d25a_46",
    "lang": "gl",
    "style": "tutor",
@@ -340664,6 +341852,15 @@
    "speech": "Nariz de botón",
    "source": "tpr.0_2.outubro/s1/0_2.outubro.s1.button-nose/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_ca0bda03_16",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Unha nota aguda.",
+   "speech": "Unha nota aguda.",
+   "source": "significados/significado",
+   "pack": false
   },
   {
    "id": "gl_tutor_ca0ec4e9_45",
@@ -341198,7 +342395,7 @@
    "style": "tutor",
    "text": "Vela.",
    "speech": "Vela.",
-   "source": "escoita/curso_2_3/2/modelo/0/significado",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -342206,7 +343403,7 @@
    "style": "tutor",
    "text": "Teléfono.",
    "speech": "Teléfono.",
-   "source": "escoita/curso_3_4/4/modelo/0/significado",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -343335,6 +344532,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_d0b0b0d4_13",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Chuvasqueiro.",
+   "speech": "Chuvasqueiro.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_d0b581d4_8",
    "lang": "gl",
    "style": "tutor",
@@ -343520,6 +344726,15 @@
    "style": "tutor",
    "text": "Si, unha toalla azul grande!",
    "speech": "Si, unha toalla azul grande!",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_d1390236_18",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Unha imaxe grande.",
+   "speech": "Unha imaxe grande.",
    "source": "significados/significado",
    "pack": false
   },
@@ -343943,7 +345158,7 @@
    "style": "tutor",
    "text": "Can.",
    "speech": "Can.",
-   "source": "escoita/curso_4_5/3/modelo/0/significado",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -345927,6 +347142,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_d768485e_51",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Levade a padiola de tea con firmeza entre os conos.",
+   "speech": "Levade a padiola de tea con firmeza entre os conos.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_d7754d01_19",
    "lang": "gl",
    "style": "tutor",
@@ -347457,6 +348681,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_dbd229ce_23",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Unha habitación escura.",
+   "speech": "Unha habitación escura.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_dbd4c8a2_22",
    "lang": "gl",
    "style": "tutor",
@@ -348056,7 +349289,7 @@
    "style": "tutor",
    "text": "Barro.",
    "speech": "Barro.",
-   "source": "escoita/curso_4_5/6/modelo/0/significado",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -348110,7 +349343,7 @@
    "style": "tutor",
    "text": "Corazón.",
    "speech": "Corazón.",
-   "source": "escoita/curso_4_5/2/modelo/0/significado",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -349185,6 +350418,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_e09a848f_41",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Traza o contorno escuro nun papel grande.",
+   "speech": "Traza o contorno escuro nun papel grande.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_e0a812cb_11",
    "lang": "gl",
    "style": "tutor",
@@ -350234,7 +351476,7 @@
    "style": "tutor",
    "text": "Lanterna.",
    "speech": "Lanterna.",
-   "source": "escoita/curso_2_3/10/modelo/0/significado",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -351470,6 +352712,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_e689d484_31",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Mira como cae cada gota na pía.",
+   "speech": "Mira como cae cada gota na pía.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_e698a4ad_33",
    "lang": "gl",
    "style": "tutor",
@@ -352123,7 +353374,7 @@
    "style": "tutor",
    "text": "Filtro.",
    "speech": "Filtro.",
-   "source": "escoita/curso_5_6/2/modelo/0/significado",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -352142,6 +353393,15 @@
    "text": "Mira: o coche está enriba da torre. Hop, hop, stop!",
    "speech": "Mira: o coche está enriba da torre. Hop, hop, stop!",
    "source": "biblioteca/HIS-058/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_e830a52f_43",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "O algodón brando absorbe cada gota de auga.",
+   "speech": "O algodón brando absorbe cada gota de auga.",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -352649,6 +353909,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_e980d06e_58",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Dá un toquiño ao bote de cristal para oír unha nota aguda.",
+   "speech": "Dá un toquiño ao bote de cristal para oír unha nota aguda.",
+   "source": "escoita/curso_3_4/9/modelo/2/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_e982ea8d_58",
    "lang": "gl",
    "style": "tutor",
@@ -353149,6 +354418,15 @@
    "style": "tutor",
    "text": "Enche o testo, planta a semente e rega",
    "speech": "Enche o testo, planta a semente e rega",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_eae2f0d8_48",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Silencio agora: enróscate coma un gato con sono.",
+   "speech": "Silencio agora: enróscate coma un gato con sono.",
    "source": "significados/significado",
    "pack": false
   },
@@ -354512,6 +355790,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_eecfd65f_48",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "O avión branco de papel plana máis alá da cinta.",
+   "speech": "O avión branco de papel plana máis alá da cinta.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_eed1f739_71",
    "lang": "gl",
    "style": "tutor",
@@ -355031,6 +356318,15 @@
    "text": "Mira, Lúa debuxa na area lisa. Un peixe grande!",
    "speech": "Mira, Lúa debuxa na area lisa. Un peixe grande!",
    "source": "biblioteca/HIS-089/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_f028b378_40",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Unha pedra grande fai un estrondo forte!",
+   "speech": "Unha pedra grande fai un estrondo forte!",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -356294,15 +357590,6 @@
    "pack": false
   },
   {
-   "id": "gl_tutor_f3100819_5",
-   "lang": "gl",
-   "style": "tutor",
-   "text": "Lupa.",
-   "speech": "Lupa.",
-   "source": "escoita/curso_4_5/4/modelo/0/significado",
-   "pack": false
-  },
-  {
    "id": "gl_tutor_f3142574_6",
    "lang": "gl",
    "style": "tutor",
@@ -356389,6 +357676,15 @@
    "style": "tutor",
    "text": "Catro patas.",
    "speech": "Catro patas.",
+   "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_f33f46bc_37",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "O disco redondo parece unha cor nova!",
+   "speech": "O disco redondo parece unha cor nova!",
    "source": "significados/significado",
    "pack": false
   },
@@ -356488,7 +357784,7 @@
    "style": "tutor",
    "text": "Man.",
    "speech": "Man.",
-   "source": "escoita/curso_2_3/7/modelo/0/significado",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -357181,7 +358477,7 @@
    "style": "tutor",
    "text": "Muíño.",
    "speech": "Muíño.",
-   "source": "escoita/curso_4_5/7/modelo/0/significado",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -357488,6 +358784,15 @@
    "text": "Si, brilla! Unha liña de prata brillante na pedra.",
    "speech": "Si, brilla! Unha liña de prata brillante na pedra.",
    "source": "biblioteca/HIS-080/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_f66f7e00_23",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Illas costeiras verdes.",
+   "speech": "Illas costeiras verdes.",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -358514,6 +359819,15 @@
    "text": "Empurremos xuntos, coma Lúa e o polbo! Un, dous, tres... e a rocha cae: splash!",
    "speech": "Empurremos xuntos, coma Lúa e o polbo! Un, dous, tres... e a rocha cae: splash!",
    "source": "biblioteca/HIS-006/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_f8e30133_36",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Mira cada semente marrón pequechiña.",
+   "speech": "Mira cada semente marrón pequechiña.",
+   "source": "significados/significado",
    "pack": false
   },
   {
@@ -359946,6 +361260,15 @@
    "speech": "Imos ao parque!",
    "source": "tpr.2_3.novembro/s1/2_3.novembro.s1.let-s-go-to-the-park/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_fcdf6554_38",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Dá toquiños suaves cun pau de madeira.",
+   "speech": "Dá toquiños suaves cun pau de madeira.",
+   "source": "significados/significado",
+   "pack": false
   },
   {
    "id": "gl_tutor_fcf13442_8",
