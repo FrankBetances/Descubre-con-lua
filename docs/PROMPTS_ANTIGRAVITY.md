@@ -665,3 +665,16 @@ Actualiza docs/PENDIENTE.md solo con lo que de verdad falta. Corre tools/gates.s
 LO QUE REVISARÁ CLAUDE CODE
 auditoria_niveles.py --gate y check_capas_semana.py a cero; gates.sh y flutter test en verde; nada borrado fuera de lo que autorizan D1 y D4; tres semanas al azar por edad (STEAM, longitud de las frases y repaso); el alta con su prueba, una sola vez, y la fila de niños abiertas en la app de escritorio en gl y es; la privacidad declarada igual a lo que se guarda; ninguna palabra clínica en pantalla.
 ```
+
+## P11 · Corrección del alta (26/11/2026), para pegar sobre el trabajo en curso
+
+Frank ya le había pasado P11 a Antigravity. Esta es la corrección que se le pega, sin reiniciar el trabajo (F-20261126-3).
+
+```text
+CORRECCIÓN DE FRANK (26/11/2026) al trabajo P11 que estás haciendo. No empieces de nuevo; aplica esto donde toque:
+1. P11.1 · El alta de cada niño se hace UNA SOLA VEZ, en un solo recorrido: nombre o apodo, mes y año de nacimiento (sin día) y curso propuesto por la edad; para 2 años o más, a continuación y dentro de la misma alta, la prueba de entrada de P11.3; al terminar, «Hai outro neno ou nena na casa? / ¿Hay otro niño o niña en casa?». Un niño ya dado de alta no vuelve a ver el alta; sus datos se cambian en «Editar a …».
+2. P11.3 · La prueba de entrada es el último tramo del alta y se hace una sola vez: no se ofrece desde la ficha ni se repite; desde ahí el nivel lo ajusta P11.4 cada semana. Si se interrumpe, la próxima vez que se abra Na casa sigue donde se quedó, y hasta acabarla el niño empieza por el inicio de su curso. 0-2 no hace prueba.
+3. Tests nuevos: que un niño dado de alta no vuelve a ver el alta, y que la prueba sale una sola vez y se reanuda si se interrumpe.
+4. P11.10 · Captura en gl y es del alta de un niño de 4 años con su prueba de principio a fin, y luego la de un segundo niño.
+El texto completo con esta corrección ya está en main: «P11 · Prompt único (26/11/2026, vigente)» de docs/PROMPTS_ANTIGRAVITY.md. Si algo de lo que ya hiciste choca con esto, corrígelo en el paso donde lo hiciste y apúntalo en docs/p11-control.md.
+```
