@@ -145,6 +145,11 @@ jobs:
       - name: Install the content gates' dependencies
         run: pip install numpy Pillow
 
+      # F-20261126-12: lo generado desfasado sale en rojo en un minuto, antes
+      # de compilar nada, en vez de al final de veinticinco minutos de gates.
+      - name: Generated content is up to date
+        run: bash tools/generadores_al_dia.sh
+
       # ffmpeg es lo que MIDE las grabaciones en check_voice_levels.py. Sin él
       # ese gate se saltaba y devolvía 0: salía PASS en el resumen sin haber
       # abierto un solo fichero. Un gate que informa de verde sin comprobar nada
