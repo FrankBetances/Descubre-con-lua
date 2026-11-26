@@ -609,7 +609,7 @@ Reparto: Claude Code lo diseña en el plan; se programa en la fase F3b con las d
 - [x] Cada semana de las cinco edades tiene núcleo, «Máis / Más» y «Apoio / Apoyo», las tres con el STEAM del mes; un gate lo comprueba · evidencia: tools/check_capas_semana.py (200 semanas, las tres capas con su STEAM y sus piezas)
 
 ## O-20261126-3 · Plan completo para que lo ejecute Antigravity, revisado por Claude Code
-Estado: abierta
+Estado: cumplida
 > Genera un plan completo de trabajo para que me ejecute totalmente anti Gravity, y tu función será revisarlo
 > (26/11/2026) Apruebo d1 a d6
 Fuente: docs/AUDITORIA_NIVELES_Y_REPASO.md (secciones 2 a 5) y las órdenes O-20261126-1 y O-20261126-2
@@ -617,7 +617,7 @@ Reparto: todo lo hace Antigravity (P11.0–P11.11) en la rama antigravity/nivele
 
 - [x] Prompt P11 guardado en el repositorio con sus pasos P11.0–P11.11 en la tabla de pasos, antes de que Antigravity empiece · evidencia: docs/PROMPTS_ANTIGRAVITY.md y tools/check_registro_commits.py
 - [x] Entrega de Antigravity en antigravity/niveles con docs/p11-control.md criterio por criterio · evidencia: docs/p11-control.md (P11.11, f23dd434)
-- [ ] Revisado por Claude Code (auditoria_niveles --gate y check_capas_semana a cero, gates.sh y flutter test en verde, tres semanas al azar por edad, capturas gl y es miradas) y mergeado en main con CI en verde y los audios generados · evidencia:
+- [x] Revisado por Claude Code (auditoria_niveles --gate y check_capas_semana a cero, gates.sh y flutter test en verde, tres semanas al azar por edad, capturas gl y es miradas) y mergeado en main con CI en verde y los audios generados · evidencia: tools/auditoria_niveles.py (--gate a 0) y tools/check_capas_semana.py (200 semanas); 15 semanas al azar, tres por edad, revisadas el 26/11/2026: todas con su STEAM, palabras nuevas, palabras que vuelven y frase del experimento, sin fallo de contenido; 130 capturas gl y es (P8.41); mergeado en main (#71 a #76); run 617 de Gates en main (b2fca253) en verde, con gates.sh y flutter test completos; voces en verde (Generate Voice Assets 143)
 
 ## O-20261126-4 · Prompt completo con las mejoras M1-M5, guardado ya
 Estado: abierta
@@ -635,7 +635,7 @@ Reparto: lo hace Antigravity dentro de P11.0–P11.11; Claude Code revisa.
 - [x] M1 marcar en diez segundos, M2 rutinas de casa, M3 reto de hermanos, M4 cuántas veces la ha oído y M5 tarjeta para la escuela, en la app en gl y es, cada una con su test y su captura · evidencia: test/capturas_test.dart (capturas p11-marcar, p11-lua-pregunta, p11-reto-irmans, p11-volven-hoxe y p11-tarxeta-escola en gl y es) y docs/manual-casos-de-uso.html
 
 ## O-20261126-5 · Claude Code termina P11 y lo mergea en main
-Estado: abierta
+Estado: cumplida
 > Haz tú lo que falta y mergea en main
 Fuente: docs/AUDITORIA_NIVELES_Y_REPASO.md y docs/PROMPTS_ANTIGRAVITY.md (P11), sobre la rama antigravity/niveles (52397432) revisada por Claude Code el 26/11/2026
 Reparto: Claude Code, en claude/intelligent-mayer-e3iriy sobre antigravity/niveles.
@@ -655,7 +655,7 @@ Decisión: las 72 palabras raras de PENDENTES_FRANK se cambian también; la pala
 > (26/11/2026) «Cuando termines Mergea y push al main»
 > (26/11/2026, a pregunta de Claude Code) «sí, borra las 740» (grabaciones sobrantes, 8,4 MB)
 > (26/11/2026) «Esto es inaceptable / Mergea y push ya» (con el CI del PR #71 aún en curso y todos los gates en verde en local)
-- [ ] gates.sh y flutter test completos en verde, mergeado en main con CI en verde y los audios generados · evidencia:
+- [x] gates.sh y flutter test completos en verde, mergeado en main con CI en verde y los audios generados · evidencia: tools/gates.sh (run 617 de Gates en main (b2fca253) en verde: todos los gates, flutter test y APK de release); mergeado en main (#73 a #76); voces en verde (Generate Voice Assets 143)
 
 ## O-20261126-6 · Un único prompt completo para Antigravity, sin trozos
 Estado: cumplida
@@ -666,7 +666,7 @@ Fuente: docs/PROMPTS_ANTIGRAVITY.md (las dos secciones «vigente» de P11 y las 
 - [x] Una guarda que falla si vuelve a haber más de un prompt vigente o uno incompleto, y la regla escrita en CLAUDE.md · evidencia: tools/check_prompt_unico.py (en rojo con el fichero de antes, que tenía dos vigentes) y CLAUDE.md (R-PROMPT-ÚNICO)
 
 ## O-20261126-7 · Nada pendiente y el manual rehecho completo
-Estado: abierta
+Estado: cumplida
 > O quiero nada pendiente
 > No quiero nada pendiente / Y el manual donde está ? / Hay que rehacerlo completo
 Fuente: docs/manual-casos-de-uso.html (y su PDF y Word, de docs/build-pdf.js y docs/build-docx.py), test/capturas_test.dart y la app de main tras el PR #71
@@ -676,7 +676,7 @@ Reparto: Claude Code.
 - [x] Manual de casos de uso rehecho entero sobre la app de hoy: cada pantalla de Na casa y del Modo Aula por su camino, con P11 (varios niños, alta con prueba, Volven hoxe, ajuste semanal y capas, reto de hermanos, tarjeta para la escuela, 0-2 rehecho), en gl y es · evidencia: docs/manual-casos-de-uso.html (rehecho de cero: 14 capítulos, maqueta nueva, 38 pantallas en gl y es) y tools/check_manual_pantallas.py
 - [x] Todas las capturas regeneradas (flutter test --tags capturas --update-goldens test/capturas_test.dart), cada pantalla nueva con la suya en gl y es · evidencia: test/capturas_test.dart (130 capturas regeneradas en verde, con las 8 pantallas nuevas de P11 en gl y es) y tools/check_manual_pantallas.py
 - [x] PDF y Word reconstruidos y mirados o medidos página a página, sin nada fuera de la hoja · evidencia: tools/check_manual_build.py (PDF de 38 páginas, todas miradas en hojas de contacto y medidas por script sin nada fuera de la hoja; Word con las 76 capturas)
-- [ ] Ningún pull request abierto ni criterio pendiente en docs/ORDENES.md que dependa de Claude Code · evidencia:
+- [x] Ningún pull request abierto ni criterio pendiente en docs/ORDENES.md que dependa de Claude Code · evidencia: docs/ORDENES.md (cero criterios abiertos tras este cambio) y GitHub, con los PR #71 a #76 mergeados y ninguno abierto
 
 ## O-20261126-8 · A una pregunta de Frank se responde siempre, primero
 Estado: cumplida
@@ -688,12 +688,12 @@ Fuente: CLAUDE.md (R-FRANK, reglas con freno)
 - [x] La regla escrita en CLAUDE.md y el fallo en docs/FALLOS.md con su guarda · evidencia: CLAUDE.md (R-RESPONDER) y docs/FALLOS.md (F-20261126-8)
 
 ## O-20261126-9 · Un único build con todos los arreglos y todos los artefactos
-Estado: abierta
+Estado: cumplida
 > (26/11/2026) «Te he ordenado que solo exista un solo wil con todo arreglado uno único que tenga todo con todos los artefactos y todos los arreglos, una única cosa, todo arreglado ya»
 > (26/11/2026) «Tumba todo» / «Lanza uno nuevo con todos los arreglos»
 Fuente: .github/workflows/ci.yml (KEEP_ARTIFACTS_PER_NAME y el paso «Retirar artefactos de runs anteriores») y la lista de runs de Gates en GitHub Actions
 Reparto: Claude Code.
 
-- [ ] Un solo run de Gates en marcha, sobre el último main con todos los arreglos (P8.42 y P8.43); los demás cancelados · evidencia:
-- [ ] Ese run sale en verde y deja una sola copia de cada artefacto (APK, AAB): KEEP_ARTIFACTS_PER_NAME a 1 · evidencia:
+- [x] Un solo run de Gates en marcha, sobre el último main con todos los arreglos (P8.42 y P8.43); los demás cancelados · evidencia: docs/PLAN_ANTIGRAVITY.md (P8.42 a P8.45) y GitHub Actions: runs 604 a 616 cancelados, solo el 617 sobre main b2fca253
+- [x] Ese run sale en verde y deja una sola copia de cada artefacto (APK, AAB): KEEP_ARTIFACTS_PER_NAME a 1 · evidencia: .github/workflows/ci.yml (KEEP_ARTIFACTS_PER_NAME: 1) y run 617 de Gates en main (b2fca253) en verde, con un android-apk y un android-aab
 
