@@ -305,8 +305,8 @@ class _LeccionProxecto02State extends State<LeccionProxecto02> {
             seccion(
                 const Key('proxecto_como_falar'),
                 isGl
-                    ? 'Como falar: dúas palabras, co xesto'
-                    : 'Cómo hablar: dos palabras, con el gesto',
+                    ? 'Como falar: ata tres palabras, co xesto'
+                    : 'Cómo hablar: hasta tres palabras, con el gesto',
                 [
                   for (final f in pr.comoFalar)
                     Padding(

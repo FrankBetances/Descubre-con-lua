@@ -291,6 +291,16 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "all done": {
+   "clave": "pal_02_all_done",
+   "orixe": "nova",
+   "porque": "Cesta baleira e sinal verde indicando todo feito para All done.",
+   "fuente": "propia",
+   "asset": "tools/laminas_0_2_nucleo.py#02_all_done",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "all hands on deck": {
    "clave": "pal_all_hands_on_deck",
    "orixe": "composta",
@@ -819,6 +829,16 @@
    "asset": "tools/gen_laminas_0_2.py#baa",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "baa, lamb": {
+   "clave": "pal_02_baa_lamb",
+   "orixe": "nova",
+   "porque": "Año branco no prado con ondas de son para Baa, lamb!",
+   "fuente": "propia",
+   "asset": "tools/laminas_0_2_nucleo.py#02_baa_lamb",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
    "revisado": true
   },
   "baby": {
@@ -1957,6 +1977,16 @@
    "porque": "Tres formas creciendo progresivamente: grande, más grande y el más grande.",
    "fuente": "propia",
    "asset": "tools/gen_laminas_tpr.py#big_bigger_biggest",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "big, small, big": {
+   "clave": "pal_02_big_small_big",
+   "orixe": "nova",
+   "porque": "Círculo grande, pequeno e grande en serie para Big, small, big.",
+   "fuente": "propia",
+   "asset": "tools/laminas_0_2_nucleo.py#02_big_small_big",
    "sha": "6be3d38b",
    "licencia": "Propia",
    "revisado": true
@@ -5302,6 +5332,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "clean up": {
+   "clave": "pal_02_clean_up",
+   "orixe": "nova",
+   "porque": "Xoguetes entrando nunha caixa ordenada para Clean up.",
+   "fuente": "propia",
+   "asset": "tools/laminas_0_2_nucleo.py#02_clean_up",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "clean up, clean up": {
    "clave": "pal_clean_up_clean_up",
    "orixe": "composta",
@@ -5660,6 +5700,16 @@
    "asset": "tools/gen_laminas_4_5.py#cold_winter_night_curl",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "cold, warm, cold": {
+   "clave": "pal_02_cold_warm_cold",
+   "orixe": "nova",
+   "porque": "Serie bloque frío azul, sol morno laranxa e bloque frío para Cold, warm, cold.",
+   "fuente": "propia",
+   "asset": "tools/laminas_0_2_nucleo.py#02_cold_warm_cold",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
    "revisado": true
   },
   "colder": {
@@ -14062,6 +14112,16 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "hold me": {
+   "clave": "pal_02_hold_me",
+   "orixe": "nova",
+   "porque": "Dúas figuras abrazándose para Hold me.",
+   "fuente": "propia",
+   "asset": "tools/laminas_0_2_nucleo.py#02_hold_me",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "hold my hand": {
    "clave": "pal_hold_my_hand",
    "orixe": "composta",
@@ -15568,6 +15628,16 @@
    "porque": "Nido y pajarito posados en lo alto de la copa del árbol señalados.",
    "fuente": "propia",
    "asset": "tools/gen_laminas_tpr.py#in_the_tree",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "in, out, in": {
+   "clave": "pal_02_in_out_in",
+   "orixe": "nova",
+   "porque": "Pelota dentro, fóra e dentro da caixa en serie para In, out, in.",
+   "fuente": "propia",
+   "asset": "tools/laminas_0_2_nucleo.py#02_in_out_in",
    "sha": "6be3d38b",
    "licencia": "Propia",
    "revisado": true
@@ -18552,6 +18622,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "mama": {
+   "clave": "pal_02_mama",
+   "orixe": "nova",
+   "porque": "Muller sorrinte cos brazos abertos representando a mamá.",
+   "fuente": "propia",
+   "asset": "tools/laminas_0_2_nucleo.py#02_mama",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "mane": {
    "clave": "pal_mane",
    "orixe": "nova",
@@ -19011,6 +19091,16 @@
    "asset": "tools/gen_laminas_tpr.py#meow",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "meow, cat": {
+   "clave": "pal_02_meow_cat",
+   "orixe": "nova",
+   "porque": "Gato laranxa coas orellas dereitas e ondas de son para Meow, cat!",
+   "fuente": "propia",
+   "asset": "tools/laminas_0_2_nucleo.py#02_meow_cat",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
    "revisado": true
   },
   "merry christmas": {
@@ -20183,6 +20273,16 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "night night": {
+   "clave": "pal_02_night_night",
+   "orixe": "nova",
+   "porque": "Lúa, estrelas e cama arroupada para Night night.",
+   "fuente": "propia",
+   "asset": "tools/laminas_0_2_nucleo.py#02_night_night",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "nimble-footed": {
    "clave": "pal_nimble_footed",
    "orixe": "composta",
@@ -20763,6 +20863,16 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "one, two, three": {
+   "clave": "pal_02_one_two_three",
+   "orixe": "nova",
+   "porque": "Tres torres en escaleira con 1, 2 e 3 puntos para One, two, three.",
+   "fuente": "propia",
+   "asset": "tools/laminas_0_2_nucleo.py#02_one_two_three",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "one, two, toes": {
    "clave": "pal_one_two_toes",
    "orixe": "nova",
@@ -20799,6 +20909,16 @@
    "porque": "Puerta abierta hacia fuera con flecha clara indicando abrir.",
    "fuente": "propia",
    "asset": "tools/gen_laminas_tpr.py#open",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "open and close": {
+   "clave": "pal_02_open_close",
+   "orixe": "nova",
+   "porque": "Unha caixa aberta á esquerda e pechada á dereita para Open and close.",
+   "fuente": "propia",
+   "asset": "tools/laminas_0_2_nucleo.py#02_open_close",
    "sha": "6be3d38b",
    "licencia": "Propia",
    "revisado": true
@@ -21343,6 +21463,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "papa": {
+   "clave": "pal_02_papa",
+   "orixe": "nova",
+   "porque": "Home sorrinte con lentes representando a papá.",
+   "fuente": "propia",
+   "asset": "tools/laminas_0_2_nucleo.py#02_papa",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "paper": {
    "clave": "pal_pal_paper",
    "orixe": "banco",
@@ -21849,6 +21979,16 @@
    "porque": "Animalito curioso con orejas asomando detrás de un arbusto verde.",
    "fuente": "propia",
    "asset": "tools/gen_laminas_tpr.py#peek_out",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "peek-a-boo": {
+   "clave": "pal_02_peek_a_boo",
+   "orixe": "nova",
+   "porque": "Cara sorrinte asomándose entre as mans para Peek-a-boo.",
+   "fuente": "propia",
+   "asset": "tools/laminas_0_2_nucleo.py#02_peek_a_boo",
    "sha": "6be3d38b",
    "licencia": "Propia",
    "revisado": true
@@ -22893,6 +23033,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "pop, bubble": {
+   "clave": "pal_02_pop_bubble",
+   "orixe": "nova",
+   "porque": "Burbulla grande estoupando con raios arredor para Pop, bubble!",
+   "fuente": "propia",
+   "asset": "tools/laminas_0_2_nucleo.py#02_pop_bubble",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "pop, pop, pop": {
    "clave": "pal_pop_pop_pop",
    "orixe": "nova",
@@ -23769,6 +23919,16 @@
    "porque": "Pirámide dorada de dos caras visibles sobre arena clara.",
    "fuente": "propia",
    "asset": "tools/gen_laminas_tpr.py#pyramid",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "quack, duck": {
+   "clave": "pal_02_quack_duck",
+   "orixe": "nova",
+   "porque": "Pato amarelo na auga co peteiro aberto e ondas de son para Quack, duck!",
+   "fuente": "propia",
+   "asset": "tools/laminas_0_2_nucleo.py#02_quack_duck",
    "sha": "6be3d38b",
    "licencia": "Propia",
    "revisado": true
@@ -29496,6 +29656,16 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "splash, water": {
+   "clave": "pal_02_splash_water",
+   "orixe": "nova",
+   "porque": "Salpicadura con pingas de auga saltando para Splash, water!",
+   "fuente": "propia",
+   "asset": "tools/laminas_0_2_nucleo.py#02_splash_water",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "splashing": {
    "clave": "pal_splashing",
    "orixe": "nova",
@@ -32176,6 +32346,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "tap, spoon": {
+   "clave": "pal_02_tap_spoon",
+   "orixe": "nova",
+   "porque": "Culler petando nun vaso de cristal con ondas de son para Tap, spoon!",
+   "fuente": "propia",
+   "asset": "tools/laminas_0_2_nucleo.py#02_tap_spoon",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "tap-tap": {
    "clave": "pal_tap_tap",
    "orixe": "composta",
@@ -33802,6 +33982,16 @@
    "porque": "Reloj de péndulo oscilando en arco rítmico de un lado a otro.",
    "fuente": "propia",
    "asset": "tools/gen_laminas_tpr.py#tick_tock",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "tick-tock, clock": {
+   "clave": "pal_02_tick_tock",
+   "orixe": "nova",
+   "porque": "Reloxo de agullas con ondas de son para Tick-tock, clock!",
+   "fuente": "propia",
+   "asset": "tools/laminas_0_2_nucleo.py#02_tick_tock",
    "sha": "6be3d38b",
    "licencia": "Propia",
    "revisado": true
@@ -35656,6 +35846,16 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "up, down, up": {
+   "clave": "pal_02_up_down_up",
+   "orixe": "nova",
+   "porque": "Tres frechas arriba, abaixo e arriba en serie para Up, down, up.",
+   "fuente": "propia",
+   "asset": "tools/laminas_0_2_nucleo.py#02_up_down_up",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "uphill": {
    "clave": "pal_uphill",
    "orixe": "nova",
@@ -36492,6 +36692,16 @@
    "porque": "Niño lavándose el pelo con espuma blanca y agua.",
    "fuente": "propia",
    "asset": "tools/gen_laminas_tpr.py#wash_hair",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "wash hands": {
+   "clave": "pal_02_wash_hands",
+   "orixe": "nova",
+   "porque": "Dúas mans xuntas con escuma e pompas de xabón para Wash hands.",
+   "fuente": "propia",
+   "asset": "tools/laminas_0_2_nucleo.py#02_wash_hands",
    "sha": "6be3d38b",
    "licencia": "Propia",
    "revisado": true
@@ -37586,6 +37796,16 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "wet, dry, wet": {
+   "clave": "pal_02_wet_dry_wet",
+   "orixe": "nova",
+   "porque": "Serie auga, esponxa seca e auga para Wet, dry, wet.",
+   "fuente": "propia",
+   "asset": "tools/laminas_0_2_nucleo.py#02_wet_dry_wet",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "whale": {
    "clave": "pal_whale",
    "orixe": "banco",
@@ -38612,6 +38832,16 @@
    "porque": "Pájaro carpintero de cresta roja y vientre blanco picoteando rápido el tronco.",
    "fuente": "propia",
    "asset": "tools/gen_laminas_tpr.py#woodpecker",
+   "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "woof, dog": {
+   "clave": "pal_02_woof_dog",
+   "orixe": "nova",
+   "porque": "Can de cor marrón ladrando con ondas de son para Woof, dog!",
+   "fuente": "propia",
+   "asset": "tools/laminas_0_2_nucleo.py#02_woof_dog",
    "sha": "6be3d38b",
    "licencia": "Propia",
    "revisado": true

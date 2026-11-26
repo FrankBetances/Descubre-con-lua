@@ -854,14 +854,16 @@ def collect_locutions(content_dir: Path = CONTENT_DIR) -> list[Locution]:
     acopros = content_dir / "acopros" / "proxectos_0_2.json"
     if acopros.exists():
         for p in json.loads(acopros.read_text(encoding="utf-8")).get("proxectos", []):
+            mes_c = p.get("mesCalendario", "?")
             rima = (p.get("rima") or {}).get("en", "")
             if rima:
                 _one(rima, "en", estilo_ingles(rima), "acopros/rima", seen)
             for w in p.get("palabras", []):
-                _one(w.get("en", ""), "en", estilo_ingles(w.get("en", "")), "acopros/palabra", seen)
+                en_w = str(w.get("en", "")).strip()
+                if en_w:
+                    _one_neno(en_w, f"acopros/{mes_c}/palabra", seen)
             mira = p.get("mira_e_nota")
             if isinstance(mira, dict) and mira.get("frase_en"):
-                mes_c = p.get("mesCalendario", "?")
                 _one_neno(str(mira["frase_en"]), f"acopros/{mes_c}/mira_e_nota", seen)
                 sig = mira.get("significado")
                 if isinstance(sig, dict):

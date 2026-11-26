@@ -1,13 +1,13 @@
 {
- "generatedAt": "2026-11-26T12:50:04Z",
- "entries": 40541,
+ "generatedAt": "2026-11-26T13:01:19Z",
+ "entries": 40595,
  "byStyle": {
-  "child": 552,
-  "slow": 6572,
+  "child": 576,
+  "slow": 6602,
   "tutor": 33417
  },
  "byLang": {
-  "en": 18321,
+  "en": 18375,
   "es": 11109,
   "gl": 11111
  },
@@ -154,6 +154,15 @@
    "text": "It turns green because yellow and blue mix.",
    "speech": "It turns green because yellow and blue mix.",
    "source": "escoita/curso_5_6/1/pensamiento/explica/modelo",
+   "pack": false
+  },
+  {
+   "id": "en_child_09c8c6ce_7",
+   "lang": "en",
+   "style": "child",
+   "text": "Hold me",
+   "speech": "Hold me",
+   "source": "acopros/4/palabra",
    "pack": false
   },
   {
@@ -508,6 +517,15 @@
    "pack": false
   },
   {
+   "id": "en_child_1c8e081e_10",
+   "lang": "en",
+   "style": "child",
+   "text": "Baa, lamb!",
+   "speech": "Baa, lamb!",
+   "source": "acopros/6/palabra",
+   "pack": false
+  },
+  {
    "id": "en_child_1ca56e6d_33",
    "lang": "en",
    "style": "child",
@@ -523,6 +541,15 @@
    "text": "Hold the stretcher together with both hands.",
    "speech": "Hold the stretcher together with both hands.",
    "source": "escoita/curso_4_5/5/stretcher/frase",
+   "pack": false
+  },
+  {
+   "id": "en_child_1cfc69e5_15",
+   "lang": "en",
+   "style": "child",
+   "text": "One, two, three",
+   "speech": "One, two, three",
+   "source": "acopros/6/palabra",
    "pack": false
   },
   {
@@ -613,6 +640,15 @@
    "text": "Shiny mirror or upside-down spoon?",
    "speech": "Shiny mirror or upside down spoon?",
    "source": "escoita/curso_3_4/10/pensamiento/compara",
+   "pack": false
+  },
+  {
+   "id": "en_child_21754877_8",
+   "lang": "en",
+   "style": "child",
+   "text": "Clean up",
+   "speech": "Clean up",
+   "source": "acopros/1/palabra",
    "pack": false
   },
   {
@@ -1246,6 +1282,15 @@
    "pack": false
   },
   {
+   "id": "en_child_3ceda303_10",
+   "lang": "en",
+   "style": "child",
+   "text": "Woof, dog!",
+   "speech": "Woof, dog!",
+   "source": "acopros/5/palabra",
+   "pack": false
+  },
+  {
    "id": "en_child_3cf7d171_52",
    "lang": "en",
    "style": "child",
@@ -1288,6 +1333,15 @@
    "text": "They sound different because thin paper bends easier than thick card.",
    "speech": "They sound different because thin paper bends easier than thick card.",
    "source": "escoita/curso_5_6/5/pensamiento/explica/modelo",
+   "pack": false
+  },
+  {
+   "id": "en_child_3d98ae1e_10",
+   "lang": "en",
+   "style": "child",
+   "text": "Meow, cat!",
+   "speech": "Meow, cat!",
+   "source": "acopros/5/palabra",
    "pack": false
   },
   {
@@ -1369,6 +1423,15 @@
    "text": "The wall looks bright and colorful!",
    "speech": "The wall looks bright and colorful!",
    "source": "escoita/curso_5_6/2/colorful/frase",
+   "pack": false
+  },
+  {
+   "id": "en_child_418d1c14_16",
+   "lang": "en",
+   "style": "child",
+   "text": "Cold, warm, cold",
+   "speech": "Cold, warm, cold",
+   "source": "acopros/2/palabra",
    "pack": false
   },
   {
@@ -1723,6 +1786,15 @@
    "pack": false
   },
   {
+   "id": "en_child_533b5c79_12",
+   "lang": "en",
+   "style": "child",
+   "text": "Up, down, up",
+   "speech": "Up, down, up",
+   "source": "acopros/11/palabra",
+   "pack": false
+  },
+  {
    "id": "en_child_54dd9760_22",
    "lang": "en",
    "style": "child",
@@ -1738,6 +1810,15 @@
    "text": "After jumping, your heart beats very fast!",
    "speech": "After jumping, your heart beats very fast!",
    "source": "escoita/curso_4_5/2/fast/frase",
+   "pack": false
+  },
+  {
+   "id": "en_child_5732d324_13",
+   "lang": "en",
+   "style": "child",
+   "text": "Wet, dry, wet",
+   "speech": "Wet, dry, wet",
+   "source": "acopros/9/palabra",
    "pack": false
   },
   {
@@ -2155,6 +2236,15 @@
    "pack": false
   },
   {
+   "id": "en_child_698a3712_12",
+   "lang": "en",
+   "style": "child",
+   "text": "More, please",
+   "speech": "More, please",
+   "source": "acopros/2/palabra",
+   "pack": false
+  },
+  {
    "id": "en_child_69a3f5cd_36",
    "lang": "en",
    "style": "child",
@@ -2278,6 +2368,15 @@
    "text": "Smile wide and look in the shiny spoon!",
    "speech": "Smile wide and look in the shiny spoon!",
    "source": "escoita/curso_3_4/10/smile/frase",
+   "pack": false
+  },
+  {
+   "id": "en_child_72570d74_10",
+   "lang": "en",
+   "style": "child",
+   "text": "Wash hands",
+   "speech": "Wash hands",
+   "source": "acopros/4/palabra",
    "pack": false
   },
   {
@@ -2413,6 +2512,15 @@
    "text": "When was your heartbeat fast?",
    "speech": "When was your heartbeat fast?",
    "source": "escoita/curso_4_5/2/pensamiento/compara",
+   "pack": false
+  },
+  {
+   "id": "en_child_7ada4189_12",
+   "lang": "en",
+   "style": "child",
+   "text": "Pop, bubble!",
+   "speech": "Pop, bubble!",
+   "source": "acopros/3/palabra",
    "pack": false
   },
   {
@@ -2686,6 +2794,15 @@
    "pack": false
   },
   {
+   "id": "en_child_88c8a479_9",
+   "lang": "en",
+   "style": "child",
+   "text": "Bath time",
+   "speech": "Bath time",
+   "source": "acopros/10/palabra",
+   "pack": false
+  },
+  {
    "id": "en_child_8a24a4d1_34",
    "lang": "en",
    "style": "child",
@@ -2710,6 +2827,15 @@
    "text": "Small leaf or big leaf?",
    "speech": "Small leaf or big leaf?",
    "source": "escoita/curso_2_3/3/pensamiento/compara",
+   "pack": false
+  },
+  {
+   "id": "en_child_8a847c1b_11",
+   "lang": "en",
+   "style": "child",
+   "text": "Night night",
+   "speech": "Night night",
+   "source": "acopros/12/palabra",
    "pack": false
   },
   {
@@ -2821,6 +2947,15 @@
    "pack": false
   },
   {
+   "id": "en_child_91bff390_12",
+   "lang": "en",
+   "style": "child",
+   "text": "Quack, duck!",
+   "speech": "Quack, duck!",
+   "source": "acopros/5/palabra",
+   "pack": false
+  },
+  {
    "id": "en_child_91decade_38",
    "lang": "en",
    "style": "child",
@@ -2890,6 +3025,15 @@
    "text": "Colors blend because the round top spins very fast.",
    "speech": "Colors blend because the round top spins very fast.",
    "source": "escoita/curso_5_6/4/pensamiento/explica/modelo",
+   "pack": false
+  },
+  {
+   "id": "en_child_943257bc_14",
+   "lang": "en",
+   "style": "child",
+   "text": "Splash, water!",
+   "speech": "Splash, water!",
+   "source": "acopros/9/palabra",
    "pack": false
   },
   {
@@ -3007,6 +3151,15 @@
    "text": "What happens to your heart after jumping?",
    "speech": "What happens to your heart after jumping?",
    "source": "escoita/curso_4_5/2/pensamiento/predice",
+   "pack": false
+  },
+  {
+   "id": "en_child_9cfdf1b6_15",
+   "lang": "en",
+   "style": "child",
+   "text": "Big, small, big",
+   "speech": "Big, small, big",
+   "source": "acopros/11/palabra",
    "pack": false
   },
   {
@@ -3199,6 +3352,15 @@
    "pack": false
   },
   {
+   "id": "en_child_a6312368_14",
+   "lang": "en",
+   "style": "child",
+   "text": "Open and close",
+   "speech": "Open and close",
+   "source": "acopros/3/palabra",
+   "pack": false
+  },
+  {
    "id": "en_child_a69ec95e_16",
    "lang": "en",
    "style": "child",
@@ -3388,6 +3550,15 @@
    "pack": false
   },
   {
+   "id": "en_child_ae5280e2_11",
+   "lang": "en",
+   "style": "child",
+   "text": "Tap, spoon!",
+   "speech": "Tap, spoon!",
+   "source": "acopros/10/palabra",
+   "pack": false
+  },
+  {
    "id": "en_child_aef72aab_10",
    "lang": "en",
    "style": "child",
@@ -3559,6 +3730,15 @@
    "pack": false
   },
   {
+   "id": "en_child_b733c605_17",
+   "lang": "en",
+   "style": "child",
+   "text": "Tick-tock, clock!",
+   "speech": "Tick tock, clock!",
+   "source": "acopros/12/palabra",
+   "pack": false
+  },
+  {
    "id": "en_child_b78f2fcd_32",
    "lang": "en",
    "style": "child",
@@ -3628,6 +3808,15 @@
    "text": "Leaf, stone!",
    "speech": "Leaf, stone!",
    "source": "acopros/11/mira_e_nota",
+   "pack": false
+  },
+  {
+   "id": "en_child_ba55ebec_8",
+   "lang": "en",
+   "style": "child",
+   "text": "All done",
+   "speech": "All done",
+   "source": "acopros/1/palabra",
    "pack": false
   },
   {
@@ -4108,6 +4297,15 @@
    "pack": false
   },
   {
+   "id": "en_child_d3941f95_11",
+   "lang": "en",
+   "style": "child",
+   "text": "In, out, in",
+   "speech": "In, out, in",
+   "source": "acopros/1/palabra",
+   "pack": false
+  },
+  {
    "id": "en_child_d3acf26e_12",
    "lang": "en",
    "style": "child",
@@ -4456,6 +4654,15 @@
    "text": "Tall shadow or short shadow?",
    "speech": "Tall shadow or short shadow?",
    "source": "escoita/curso_3_4/5/pensamiento/predice",
+   "pack": false
+  },
+  {
+   "id": "en_child_e9461a30_12",
+   "lang": "en",
+   "style": "child",
+   "text": "Good morning",
+   "speech": "Good morning",
+   "source": "acopros/12/palabra",
    "pack": false
   },
   {
@@ -4870,6 +5077,15 @@
    "text": "Stormy music.",
    "speech": "Stormy music.",
    "source": "escoita/curso_4_5/8/modelo/1",
+   "pack": false
+  },
+  {
+   "id": "en_child_fac57f46_11",
+   "lang": "en",
+   "style": "child",
+   "text": "Stop and go",
+   "speech": "Stop and go",
+   "source": "acopros/6/palabra",
    "pack": false
   },
   {
@@ -7021,6 +7237,15 @@
    "text": "Jingle-jangle",
    "speech": "Jingle jangle",
    "source": "tpr.0_2.febreiro/s4/0_2.febreiro.s4.jingle-jangle",
+   "pack": false
+  },
+  {
+   "id": "en_slow_09c8c6ce_7",
+   "lang": "en",
+   "style": "slow",
+   "text": "Hold me",
+   "speech": "Hold me",
+   "source": "acopros/4/palabra/slow",
    "pack": false
   },
   {
@@ -11416,6 +11641,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_1c8e081e_10",
+   "lang": "en",
+   "style": "slow",
+   "text": "Baa, lamb!",
+   "speech": "Baa, lamb!",
+   "source": "acopros/6/palabra/slow",
+   "pack": false
+  },
+  {
    "id": "en_slow_1c90ef81_6",
    "lang": "en",
    "style": "slow",
@@ -11494,6 +11728,15 @@
    "text": "contradict",
    "speech": "contradict",
    "source": "corpus/2209/lemma",
+   "pack": false
+  },
+  {
+   "id": "en_slow_1cfc69e5_15",
+   "lang": "en",
+   "style": "slow",
+   "text": "One, two, three",
+   "speech": "One, two, three",
+   "source": "acopros/6/palabra/slow",
    "pack": false
   },
   {
@@ -12520,6 +12763,15 @@
    "text": "gasp",
    "speech": "gasp",
    "source": "corpus/3422/lemma",
+   "pack": false
+  },
+  {
+   "id": "en_slow_21754877_8",
+   "lang": "en",
+   "style": "slow",
+   "text": "Clean up",
+   "speech": "Clean up",
+   "source": "acopros/1/palabra/slow",
    "pack": false
   },
   {
@@ -14221,6 +14473,15 @@
    "text": "Shop",
    "speech": "Shop",
    "source": "tpr.2_3.xaneiro/s3/2_3.xaneiro.s3.shop",
+   "pack": false
+  },
+  {
+   "id": "en_slow_287ac5f9_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "Mama",
+   "speech": "Mama",
+   "source": "acopros/3/palabra",
    "pack": false
   },
   {
@@ -18886,6 +19147,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_3ceda303_10",
+   "lang": "en",
+   "style": "slow",
+   "text": "Woof, dog!",
+   "speech": "Woof, dog!",
+   "source": "acopros/5/palabra/slow",
+   "pack": false
+  },
+  {
    "id": "en_slow_3cf7d171_52",
    "lang": "en",
    "style": "slow",
@@ -19009,6 +19279,15 @@
    "text": "literacy",
    "speech": "literacy",
    "source": "corpus/3569/lemma",
+   "pack": false
+  },
+  {
+   "id": "en_slow_3d98ae1e_10",
+   "lang": "en",
+   "style": "slow",
+   "text": "Meow, cat!",
+   "speech": "Meow, cat!",
+   "source": "acopros/5/palabra/slow",
    "pack": false
   },
   {
@@ -19819,6 +20098,15 @@
    "text": "Stir",
    "speech": "Stir",
    "source": "tpr.3_4.novembro/s4/3_4.novembro.s4.stir",
+   "pack": false
+  },
+  {
+   "id": "en_slow_418d1c14_16",
+   "lang": "en",
+   "style": "slow",
+   "text": "Cold, warm, cold",
+   "speech": "Cold, warm, cold",
+   "source": "acopros/2/palabra/slow",
    "pack": false
   },
   {
@@ -20638,6 +20926,15 @@
    "text": "Melon",
    "speech": "Melon",
    "source": "tpr.0_2.marzo/s4/0_2.marzo.s4.melon",
+   "pack": false
+  },
+  {
+   "id": "en_slow_44e67b40_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "Hand",
+   "speech": "Hand",
+   "source": "acopros/10/palabra",
    "pack": false
   },
   {
@@ -24025,6 +24322,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_533b5c79_12",
+   "lang": "en",
+   "style": "slow",
+   "text": "Up, down, up",
+   "speech": "Up, down, up",
+   "source": "acopros/11/palabra/slow",
+   "pack": false
+  },
+  {
    "id": "en_slow_534f5a2a_5",
    "lang": "en",
    "style": "slow",
@@ -24886,6 +25192,15 @@
    "text": "After jumping, your heart beats very fast!",
    "speech": "After jumping, your heart beats very fast!",
    "source": "escoita/curso_4_5/2/fast/frase/slow",
+   "pack": false
+  },
+  {
+   "id": "en_slow_5732d324_13",
+   "lang": "en",
+   "style": "slow",
+   "text": "Wet, dry, wet",
+   "speech": "Wet, dry, wet",
+   "source": "acopros/9/palabra/slow",
    "pack": false
   },
   {
@@ -29452,6 +29767,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_698a3712_12",
+   "lang": "en",
+   "style": "slow",
+   "text": "More, please",
+   "speech": "More, please",
+   "source": "acopros/2/palabra/slow",
+   "pack": false
+  },
+  {
    "id": "en_slow_698f976a_4",
    "lang": "en",
    "style": "slow",
@@ -31123,6 +31447,15 @@
    "text": "Starfish",
    "speech": "Starfish",
    "source": "tpr.3_4.xuno/s3/3_4.xuno.s3.starfish",
+   "pack": false
+  },
+  {
+   "id": "en_slow_72570d74_10",
+   "lang": "en",
+   "style": "slow",
+   "text": "Wash hands",
+   "speech": "Wash hands",
+   "source": "acopros/4/palabra/slow",
    "pack": false
   },
   {
@@ -32914,6 +33247,15 @@
    "text": "brilliant",
    "speech": "brilliant",
    "source": "corpus/1126/lemma",
+   "pack": false
+  },
+  {
+   "id": "en_slow_7ada4189_12",
+   "lang": "en",
+   "style": "slow",
+   "text": "Pop, bubble!",
+   "speech": "Pop, bubble!",
+   "source": "acopros/3/palabra/slow",
    "pack": false
   },
   {
@@ -35833,6 +36175,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_88c8a479_9",
+   "lang": "en",
+   "style": "slow",
+   "text": "Bath time",
+   "speech": "Bath time",
+   "source": "acopros/10/palabra/slow",
+   "pack": false
+  },
+  {
    "id": "en_slow_88d2ddfc_4",
    "lang": "en",
    "style": "slow",
@@ -36238,6 +36589,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_8a847c1b_11",
+   "lang": "en",
+   "style": "slow",
+   "text": "Night night",
+   "speech": "Night night",
+   "source": "acopros/12/palabra/slow",
+   "pack": false
+  },
+  {
    "id": "en_slow_8a861607_7",
    "lang": "en",
    "style": "slow",
@@ -36451,6 +36811,15 @@
    "text": "sacred",
    "speech": "sacred",
    "source": "corpus/3781/lemma",
+   "pack": false
+  },
+  {
+   "id": "en_slow_8b55efe5_10",
+   "lang": "en",
+   "style": "slow",
+   "text": "Peek-a-boo",
+   "speech": "Peek a boo",
+   "source": "acopros/12/palabra",
    "pack": false
   },
   {
@@ -37912,6 +38281,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_91bff390_12",
+   "lang": "en",
+   "style": "slow",
+   "text": "Quack, duck!",
+   "speech": "Quack, duck!",
+   "source": "acopros/5/palabra/slow",
+   "pack": false
+  },
+  {
    "id": "en_slow_91c5f742_7",
    "lang": "en",
    "style": "slow",
@@ -38512,6 +38890,15 @@
    "text": "furnish",
    "speech": "furnish",
    "source": "corpus/3416/lemma",
+   "pack": false
+  },
+  {
+   "id": "en_slow_943257bc_14",
+   "lang": "en",
+   "style": "slow",
+   "text": "Splash, water!",
+   "speech": "Splash, water!",
+   "source": "acopros/9/palabra/slow",
    "pack": false
   },
   {
@@ -40720,6 +41107,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_9cfdf1b6_15",
+   "lang": "en",
+   "style": "slow",
+   "text": "Big, small, big",
+   "speech": "Big, small, big",
+   "source": "acopros/11/palabra/slow",
+   "pack": false
+  },
+  {
    "id": "en_slow_9d0b4eea_6",
    "lang": "en",
    "style": "slow",
@@ -42763,6 +43159,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_a6312368_14",
+   "lang": "en",
+   "style": "slow",
+   "text": "Open and close",
+   "speech": "Open and close",
+   "source": "acopros/3/palabra/slow",
+   "pack": false
+  },
+  {
    "id": "en_slow_a6478e7c_4",
    "lang": "en",
    "style": "slow",
@@ -44758,6 +45163,15 @@
    "text": "infant",
    "speech": "infant",
    "source": "corpus/2501/lemma",
+   "pack": false
+  },
+  {
+   "id": "en_slow_ae5280e2_11",
+   "lang": "en",
+   "style": "slow",
+   "text": "Tap, spoon!",
+   "speech": "Tap, spoon!",
+   "source": "acopros/10/palabra/slow",
    "pack": false
   },
   {
@@ -47047,6 +47461,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_b733c605_17",
+   "lang": "en",
+   "style": "slow",
+   "text": "Tick-tock, clock!",
+   "speech": "Tick tock, clock!",
+   "source": "acopros/12/palabra/slow",
+   "pack": false
+  },
+  {
    "id": "en_slow_b733df61_7",
    "lang": "en",
    "style": "slow",
@@ -47836,6 +48259,15 @@
    "text": "whether",
    "speech": "whether",
    "source": "corpus/960/lemma",
+   "pack": false
+  },
+  {
+   "id": "en_slow_ba55ebec_8",
+   "lang": "en",
+   "style": "slow",
+   "text": "All done",
+   "speech": "All done",
+   "source": "acopros/1/palabra/slow",
    "pack": false
   },
   {
@@ -51997,6 +52429,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_cb731c53_3",
+   "lang": "en",
+   "style": "slow",
+   "text": "Ear",
+   "speech": "Ear",
+   "source": "acopros/4/palabra",
+   "pack": false
+  },
+  {
    "id": "en_slow_cb8c2daa_40",
    "lang": "en",
    "style": "slow",
@@ -53839,6 +54280,15 @@
    "text": "Wrap the best bandage on the paw.",
    "speech": "Wrap the best bandage on the paw.",
    "source": "escoita/ar/ra_curso_4_5_m01/frase/2/slow",
+   "pack": false
+  },
+  {
+   "id": "en_slow_d3941f95_11",
+   "lang": "en",
+   "style": "slow",
+   "text": "In, out, in",
+   "speech": "In, out, in",
+   "source": "acopros/1/palabra/slow",
    "pack": false
   },
   {
@@ -55864,6 +56314,15 @@
    "text": "Spring-like",
    "speech": "Spring like",
    "source": "tpr.0_2.abril/s1/0_2.abril.s1.springy",
+   "pack": false
+  },
+  {
+   "id": "en_slow_dc5dd25d_4",
+   "lang": "en",
+   "style": "slow",
+   "text": "Papa",
+   "speech": "Papa",
+   "source": "acopros/3/palabra",
    "pack": false
   },
   {
@@ -58693,6 +59152,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_e9461a30_12",
+   "lang": "en",
+   "style": "slow",
+   "text": "Good morning",
+   "speech": "Good morning",
+   "source": "acopros/12/palabra/slow",
+   "pack": false
+  },
+  {
    "id": "en_slow_e9464899_8",
    "lang": "en",
    "style": "slow",
@@ -60409,6 +60877,15 @@
    "text": "devise",
    "speech": "devise",
    "source": "corpus/3275/lemma",
+   "pack": false
+  },
+  {
+   "id": "en_slow_f0adedba_3",
+   "lang": "en",
+   "style": "slow",
+   "text": "Eye",
+   "speech": "Eye",
+   "source": "acopros/12/palabra",
    "pack": false
   },
   {
@@ -62749,6 +63226,15 @@
    "text": "brush",
    "speech": "brush",
    "source": "corpus/1128/lemma",
+   "pack": false
+  },
+  {
+   "id": "en_slow_fac57f46_11",
+   "lang": "en",
+   "style": "slow",
+   "text": "Stop and go",
+   "speech": "Stop and go",
+   "source": "acopros/6/palabra/slow",
    "pack": false
   },
   {

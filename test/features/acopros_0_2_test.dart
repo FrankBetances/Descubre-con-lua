@@ -20,28 +20,33 @@ void main() {
       .length;
 
   test(
-      'os 10 proxectos: unhas 20 palabras, dous elementos como moito, sen to be',
+      'os 10 proxectos: núcleo dunhas 60 pezas en 5 familias, <=3 palabras, sen to be e con capas STEAM',
       () {
     final ps = Proxectos02.lidos!.proxectos;
     expect(ps, hasLength(10));
+    final todas = <String>{};
     for (final pr in ps) {
-      expect(pr.palabras.length, inInclusiveRange(18, 22));
+      expect(pr.palabras.length, inInclusiveRange(6, 20),
+          reason: 'mes ${pr.mesCalendario}');
       for (final w in pr.palabras) {
-        expect(elementos(w.en), lessThanOrEqualTo(2), reason: w.en);
+        todas.add(w.en.toLowerCase());
+        expect(elementos(w.en), lessThanOrEqualTo(3), reason: w.en);
         expect(RegExp(r'\b(is|are|am)\b', caseSensitive: false).hasMatch(w.en),
             isFalse,
             reason: w.en);
+        expect(w.lamina, isNotNull, reason: w.en);
       }
       for (final f in pr.comoFalar) {
-        expect(elementos(f), lessThanOrEqualTo(2), reason: f);
+        expect(elementos(f), lessThanOrEqualTo(3), reason: f);
         expect(pr.palabra(f), isNotNull, reason: 'presentada antes: $f');
       }
       for (final x in pr.xaSabe) {
-        expect(elementos(x), 1, reason: x);
+        expect(elementos(x), lessThanOrEqualTo(3), reason: x);
       }
       expect(pr.semanas.first.fase.es, contains('canción'));
       expect(pr.rimaEn, isNotEmpty);
     }
+    expect(todas.length, inInclusiveRange(55, 65));
   });
 
   for (final lang in AppLanguage.deInterfaz) {

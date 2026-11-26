@@ -1,21 +1,28 @@
 #!/usr/bin/env python3
-"""O-20261109-4 (ACOPROS, referencias/acopros/consideraciones-2026-11-09.md):
-0-2 años trabaja por proyectos, uno por mes, con unas 20 palabras bien
-escogidas, sin gramática, frases de dos elementos como mucho y una rima
-tradicional, y empieza cada proyecto por el vocabulario y la canción.
+"""P11.6 (D4 + ACOPROS): 0-2 anos cun núcleo de 60 pezas en cinco familias.
 
-No inventa contenido: SELECCIONA del material de 0-2 que ya existe.
-- Proyecto: el tema y el STEAM de la unidad del mes (leccions.json).
-- Canción: la canción con pulso del mes (cancions/cancions_con_pulso.json),
-  una por mes en el orden del curso.
-- Palabras: primero las de la lección del mes, luego las del banco TPR del
-  mes (tpr/curso_0_2), con su significado y su gesto; solo de uno o dos
-  elementos y sin el verbo «to be». Veinte por proyecto, cinco por semana.
-- Rima: una tradicional inglesa de dominio público por mes (Decisión de
-  Frank, 9/11/2026), la primera estrofa.
+Substitúe as 199 palabras de assets/content/acopros/proxectos_0_2.json por
+60 pezas nucleares en cinco familias:
+  - sustantivos (24): corpo, comida, familia/mundo próximo, animais/natureza
+  - adxectivos (10): pares de contraste (big/small, hot/cold, wet/dry, soft/hard, loud/quiet)
+  - onomatopeias (8): sempre unidas ao seu obxecto («Baa, lamb!», «Woof, dog!», …)
+  - rutinas (10): rutinas e sucesos («Bath time», «All done», «Bye-bye», «Night night», …)
+  - series (8): series básicas («One, two, three», «Big, small, big», «Up, down, up», …)
+
+Cada peza:
+  - 1 a 3 elementos como moito, sen verbo «to be».
+  - 2 a 3 pezas novas por semana activa (6 por mes; 54 de 60 volven en meses posteriores).
+  - Nomea o STEAM do mes e a parte do experimento que traballa (`parteSteam`).
+  - Cada semana ten as súas 3 capas (`nucleo`, `mais`, `apoio`) co STEAM do mes e as
+    6 liñas das rutinas do fogar M2 (`bano`, `comida`, `coche`, `vestirse`, `durmir`, `parque`)
+    sen repetir entre semanas.
+
+Frecuencia baseada en fala dirixida a crianzas temperás: MacArthur-Bates CDI /
+Wordbank (Frank et al., Stanford University, datos normativos baixo licenza
+CC BY 4.0, sen restrición NC nin ND).
 
 Uso: python3 tools/gen_acopros_0_2.py [--check]
-Escribe assets/content/acopros/proxectos_0_2.json."""
+"""
 from __future__ import annotations
 
 import json
@@ -25,16 +32,104 @@ from pathlib import Path
 
 RAIZ = Path(__file__).resolve().parent.parent
 SAIDA = RAIZ / "assets/content/acopros/proxectos_0_2.json"
+MAPA = RAIZ / "assets/content/laminas/palabras_laminas.json"
 MESES = [9, 10, 11, 12, 1, 2, 3, 4, 5, 6]
-POR_PROXECTO = 20
-# O-20261111-2: cada palabra, con su lámina (tools/gen_laminas_palabras.py).
-_MAPA = RAIZ / "assets/content/laminas/palabras_laminas.json"
-LAMINAS_PAL = json.loads(_MAPA.read_text(encoding="utf-8"))["pezas"] if _MAPA.exists() else {}
 TO_BE = re.compile(r"\b(is|are|am|was|were|be|it's|i'm|you're|we're|they're)\b", re.I)
 
-# Rimas tradicionales inglesas de dominio público, la primera estrofa. Una
-# por mes, cerca del tema del proyecto. gl/es: lo que quiere decir, para la
-# persona adulta.
+FAMILIAS = ("sustantivos", "adxectivos", "onomatopeias", "rutinas", "series")
+RUTINAS_FOGAR = (
+    ("bano", "No baño", "En el baño"),
+    ("comida", "Na comida", "En la comida"),
+    ("coche", "No coche", "En el coche"),
+    ("vestirse", "Ao vestirse", "Al vestirse"),
+    ("durmir", "Antes de durmir", "Antes de dormir"),
+    ("parque", "No parque", "En el parque"),
+)
+
+# Núcleo de 60 pezas (6 novas por mes en semanas 1-3: 2 + 2 + 2).
+# (mes, familia, en, gl, es, xesto_gl, xesto_es, parte_gl, parte_es)
+NUCLEO_60 = [
+    # Mes 9 · Mollado e seco / Mojado y seco
+    (9, "sustantivos", "Water", "Auga", "Agua", "Toca a auga da tina coa palma aberta.", "Toca el agua del barreño con la palma abierta.", "a auga do experimento «Mollado e seco»", "el agua del experimento «Mojado y seco»"),
+    (9, "sustantivos", "Bath", "Baño", "Baño", "Fai ondas suaves coa man dentro da tina.", "Haz ondas suaves con la mano dentro del barreño.", "o baño onde probas «Mollado e seco»", "el baño donde pruebas «Mojado y seco»"),
+    (9, "adxectivos", "Wet", "Mollado", "Mojado", "Aperta a esponxa enchoupada para ver caer as gotas.", "Aprieta la esponja empapada para ver caer las gotas.", "a esponxa enchoupada en «Mollado e seco»", "la esponja empapada en «Mojado y seco»"),
+    (9, "adxectivos", "Dry", "Seco", "Seco", "Pasa a man pola toalla seca antes de mollar.", "Pasa la mano por la toalla seca antes de mojar.", "a toalla enxuta en «Mollado e seco»", "la toalla seca en «Mojado y seco»"),
+    (9, "onomatopeias", "Splash, water!", "Chaf, auga!", "¡Chof, agua!", "Deixa caer dúas pingas na auga mentres ris.", "Deja caer dos gotas en el agua mientras ríes.", "o salpico ao tocar a cubeta de «Mollado e seco»", "el salpicón al tocar el barreño de «Mojado y seco»"),
+    (9, "series", "Wet, dry, wet", "Mollado, seco, mollado", "Mojado, seco, mojado", "Alterna tocar esponxa mollada, toalla seca e esponxa.", "Alterna tocar esponja mojada, toalla seca y esponja.", "a secuencia de contrastes de «Mollado e seco»", "la secuencia de contrastes de «Mojado y seco»"),
+
+    # Mes 10 · A música da auga / La música del agua
+    (10, "sustantivos", "Spoon", "Culler", "Cuchara", "Suxeita a culler de madeira diante dos ollos.", "Sujeta la cuchara de madera delante de los ojos.", "a baqueta para soar vasos en «A música da auga»", "la baqueta para sonar vasos en «La música del agua»"),
+    (10, "sustantivos", "Hand", "Man", "Mano", "Ensina a palma aberta antes de petar.", "Enseña la palma abierta antes de golpear.", "a man que abanea a botella en «A música da auga»", "la mano que agita la botella en «La música del agua»"),
+    (10, "adxectivos", "Loud", "Forte", "Fuerte", "Abre os brazos cando a botella chea soa forte.", "Abre los brazos cuando la botella llena suena fuerte.", "o son forte ao abanear en «A música da auga»", "el sonido fuerte al agitar en «La música del agua»"),
+    (10, "adxectivos", "Quiet", "Quedo", "Suave", "Pon o dedo nos beizos cando o vaso case non soa.", "Pon el dedo en los labios cuando el vaso suena suave.", "a calma entre gotas de «A música da auga»", "la calma entre gotas de «La música del agua»"),
+    (10, "onomatopeias", "Tap, spoon!", "Tin, culler!", "¡Tin, cuchara!", "Dá un toque suave no bordo do vaso coa culler.", "Da un toque suave en el borde del vaso con la cuchara.", "o toque acústico do cristal en «A música da auga»", "el toque acústico del cristal en «La música del agua»"),
+    (10, "rutinas", "Bath time", "Hora do baño", "Hora del baño", "Sinala a bañeira antes de xogar cos vasos.", "Señala la bañera antes de jugar con los vasos.", "o momento cotián onde escoitar «A música da auga»", "el momento cotidiano donde escuchar «La música del agua»"),
+
+    # Mes 11 · A folla baila, a pedra cae / La hoja baila, la piedra cae
+    (11, "sustantivos", "Leaf", "Folla", "Hoja", "Sostén a folla seca pola punta e déixaa planear.", "Sostén la hoja seca por la punta y déjala planear.", "a folla lixeira que planea en «A folla baila, a pedra cae»", "la hoja ligera que planea en «La hoja baila, la piedra cae»"),
+    (11, "sustantivos", "Stone", "Pedra", "Piedra", "Pon a pedra pesada na palma e deixa que caia recto.", "Pon la piedra pesada en la palma y deja que caiga recto.", "a pedra pesada de «A folla baila, a pedra cae»", "la piedra pesada de «La hoja baila, la piedra cae»"),
+    (11, "adxectivos", "Big", "Grande", "Grande", "Sinala a pedra máis grande coas dúas mans.", "Señala la piedra más grande con las dos manos.", "o tamaño que cae rápido en «A folla baila, a pedra cae»", "el tamaño que cae rápido en «La hoja baila, la piedra cae»"),
+    (11, "adxectivos", "Small", "Pequeno", "Pequeño", "Fai unha pinza cos dedos para coller a folla pequena.", "Haz pinza con los dedos para coger la hoja pequeña.", "a folliña que baila no aire en «A folla baila, a pedra cae»", "la hojita que baila en el aire en «La hoja baila, la piedra cae»"),
+    (11, "series", "Big, small, big", "Grande, pequeno, grande", "Grande, pequeño, grande", "Alinea pedra grande, folla pequena e pedra grande.", "Alinea piedra grande, hoja pequeña y piedra grande.", "a serie de tamaños de «A folla baila, a pedra cae»", "la serie de tamaños de «La hoja baila, la piedra cae»"),
+    (11, "series", "Up, down, up", "Arriba, abaixo, arriba", "Arriba, abajo, arriba", "Leva a man arriba, solta abaixo e volve subir.", "Lleva la mano arriba, suelta abajo y vuelve a subir.", "a traxectoria da caída en «A folla baila, a pedra cae»", "la trayectoria de la caída en «La hoja baila, la piedra cae»"),
+
+    # Mes 12 · Follas ao trasluz / Hojas a contraluz
+    (12, "sustantivos", "Eye", "Ollo", "Ojo", "Sinala o teu ollo antes de mirar pola folla á luz.", "Señala tu ojo antes de mirar la hoja a la luz.", "a observación visual de «Follas ao trasluz»", "la observación visual de «Hojas a contraluz»"),
+    (12, "sustantivos", "Bird", "Paxaro", "Pájaro", "Fai voar a sombra dun paxaro coas mans diante da luz.", "Haz volar la sombra de un pájaro ante la luz.", "a silueta proxectada en «Follas ao trasluz»", "la silueta proyectada en «Hojas a contraluz»"),
+    (12, "onomatopeias", "Tick-tock, clock!", "Tic-tac, reloxo!", "¡Tic-tac, reloj!", "Move o dedo coma o péndulo mentres miras a luz.", "Mueve el dedo como péndulo mientras miras la luz.", "o ritmo tranquilo mirando os nervios en «Follas ao trasluz»", "el ritmo tranquilo mirando los nervios en «Hojas a contraluz»"),
+    (12, "rutinas", "Night night", "Boas noites", "Buenas noches", "Apaga a lanterna suavemente ao acabar a proxección.", "Apaga la linterna suavemente al terminar la proyección.", "o peche escuro tras alumear «Follas ao trasluz»", "el cierre oscuro tras iluminar «Hojas a contraluz»"),
+    (12, "rutinas", "Good morning", "Bos días", "Buenos días", "Abre a cortina para poñer a folla na fiestra.", "Abre la cortina para poner la hoja en la ventana.", "a luz da mañá para «Follas ao trasluz»", "la luz de la mañana para «Hojas a contraluz»"),
+    (12, "rutinas", "Peek-a-boo", "Cucú-tras", "Cucú-tras", "Tapa e destapa a folla coa man diante da lanterna.", "Tapa y destapa la hoja con la mano ante la linterna.", "o xogo de luz e sombra en «Follas ao trasluz»", "el juego de luz y sombra en «Hojas a contraluz»"),
+
+    # Mes 1 · Cada cousa na súa cesta / Cada cosa en su cesta
+    (1, "sustantivos", "Box", "Caixa", "Caja", "Toca os catro lados da caixa de clasificar.", "Toca los cuatro lados de la caja de clasificar.", "o recipiente de clasificación en «Cada cousa na súa cesta»", "el recipiente de clasificación en «Cada cosa en su cesta»"),
+    (1, "sustantivos", "Apple", "Mazá", "Manzana", "Colle a mazá e métea na cesta das froitas.", "Coge la manzana y métela en la cesta de las frutas.", "o primeiro obxecto que clasifica en «Cada cousa na súa cesta»", "el primer objeto que clasifica en «Cada cosa en su cesta»"),
+    (1, "sustantivos", "Bread", "Pan", "Pan", "Pon o pan na cesta diferente á da froita.", "Pon el pan en la cesta distinta a la de la fruta.", "a segunda categoría de «Cada cousa na súa cesta»", "la segunda categoría de «Cada cosa en su cesta»"),
+    (1, "series", "In, out, in", "Dentro, fóra, dentro", "Dentro, fuera, dentro", "Mete a peza na cesta, sácaa e vólvea meter.", "Mete la pieza en la cesta, sácala y vuelve a meterla.", "o xogo de agrupar en «Cada cousa na súa cesta»", "el juego de agrupar en «Cada cosa en su cesta»"),
+    (1, "rutinas", "Clean up", "A recoller", "A recoger", "Sinala a caixa para gardar xuntos ao rematar.", "Señala la caja para guardar juntos al terminar.", "a acción final de ordenar en «Cada cousa na súa cesta»", "la acción final de ordenar en «Cada cosa en su cesta»"),
+    (1, "rutinas", "All done", "Xa está", "Ya está", "Ensina as dúas palmas abertas sobre a cesta baleira.", "Enseña ambas palmas abiertas sobre la cesta vacía.", "o peche tras gardar todo en «Cada cousa na súa cesta»", "el cierre tras guardar todo en «Cada cosa en su cesta»"),
+
+    # Mes 2 · Morno e frío / Templado y frío
+    (2, "sustantivos", "Milk", "Leite", "Leche", "Suxeita o vaso de leite morno coas dúas mans.", "Sujeta el vaso de leche templada con ambas manos.", "a sensación morna na palma en «Morno e frío»", "la sensación templada en la palma en «Templado y frío»"),
+    (2, "sustantivos", "Banana", "Plátano", "Plátano", "Toca o plátano fresco fronte ao pan morno.", "Toca el plátano fresco frente al pan templado.", "a froita fría da neveira en «Morno e frío»", "la fruta fría de la nevera en «Templado y frío»"),
+    (2, "adxectivos", "Hot", "Quente", "Caliente", "Sopra amodo coa man preto do pan morno.", "Sopla despacio con la mano cerca del pan templado.", "o contraste cálido do experimento «Morno e frío»", "el contraste cálido del experimento «Templado y frío»"),
+    (2, "adxectivos", "Cold", "Frío", "Frío", "Estremécete cun sorriso ao tocar a mazá da neveira.", "Estremécete con una sonrisa al tocar la manzana fría.", "o polo frío da proba de «Morno e frío»", "el polo frío de la prueba de «Templado y frío»"),
+    (2, "series", "Cold, warm, cold", "Frío, morno, frío", "Frío, templado, frío", "Toca froita fría, pan morno e froita fría por quenda.", "Toca fruta fría, pan templado y fruta fría por turno.", "a serie térmica de «Morno e frío»", "la serie térmica de «Templado y frío»"),
+    (2, "rutinas", "More, please", "Máis, por favor", "Más, por favor", "Xunta as puntas dos dedos pedindo tocar outra peza.", "Junta las puntas de los dedos pidiendo tocar otra pieza.", "pedir repetir o contraste táctil de «Morno e frío»", "pedir repetir el contraste táctil de «Templado y frío»"),
+
+    # Mes 3 · Burbullas que voan / Burbujas que vuelan
+    (3, "sustantivos", "Mama", "Mamá", "Mamá", "Sinala a mamá mentres sopra unha burbulla.", "Señala a mamá mientras sopla una burbuja.", "quen sopra o aro en «Burbullas que voan»", "quien sopla el aro en «Burbujas que vuelan»"),
+    (3, "sustantivos", "Papa", "Papá", "Papá", "Sinala a papá collendo a burbulla na palma.", "Señala a papá recogiendo la burbuja en la palma.", "quen acompaña o xogo aéreo en «Burbullas que voan»", "quien acompaña el juego aéreo en «Burbujas que vuelan»"),
+    (3, "sustantivos", "Baby", "Bebé", "Bebé", "Sinala o neno ou nena mirando subir a pompa.", "Señala al niño o niña mirando subir la pompa.", "quen segue coa vista en «Burbullas que voan»", "quien sigue con la vista en «Burbujas que vuelan»"),
+    (3, "onomatopeias", "Pop, bubble!", "Pum, burbulla!", "¡Pop, burbuja!", "Toca suavemente co índice cando estoupa a burbulla.", "Toca suave con el índice cuando explota la burbuja.", "o estalo no aire en «Burbullas que voan»", "el estallido en el aire en «Burbujas que vuelan»"),
+    (3, "rutinas", "Bye-bye", "Adeus", "Adiós", "Move a man despedindo a burbulla que sobe alto.", "Mueve la mano despidiendo la burbuja que sube alto.", "seguir a burbulla ata desaparecer en «Burbullas que voan»", "seguir la burbuja hasta desaparecer en «Burbujas que vuelan»"),
+    (3, "series", "Open and close", "Abrir e pechar", "Abrir y cerrar", "Abre e pecha a man imitando a película de xabón.", "Abre y cierra la mano imitando la película de jabón.", "abrir o aro e gardar o bote en «Burbullas que voan»", "abrir el aro y cerrar el bote en «Burbujas que vuelan»"),
+
+    # Mes 4 · Fregar fai son / Frotar hace sonido
+    (4, "sustantivos", "Ear", "Orella", "Oreja", "Pon a man detrás da orella preto do pano ao fregar.", "Pon la mano detrás de la oreja cerca del paño al frotar.", "o oído atento á fricción en «Fregar fai son»", "el oído atento a la fricción en «Frotar hace sonido»"),
+    (4, "sustantivos", "Nose", "Nariz", "Nariz", "Toca o nariz con suavidade usando a toalla limpa.", "Toca la nariz suavemente usando la toalla limpia.", "a suavidade na pel de «Fregar fai son»", "la suavidad en la piel de «Frotar hace sonido»"),
+    (4, "adxectivos", "Soft", "Suave", "Suave", "Acaricia a meixela co pano seco antes de fregalo.", "Acaricia la mejilla con el paño seco antes de frotarlo.", "a textura branda que case non soa en «Fregar fai son»", "la textura blanda que apenas suena en «Frotar hace sonido»"),
+    (4, "adxectivos", "Hard", "Duro", "Duro", "Peta devagar sobre o cartón ríxido coas unllas.", "Golpea despacio sobre el cartón rígido con los dedos.", "a superficie ríxida que resoa en «Fregar fai son»", "la superficie rígida que resuena en «Frotar hace sonido»"),
+    (4, "rutinas", "Wash hands", "Lavar as mans", "Lavar las manos", "Frega palma contra palma escoitando a escuma.", "Frota palma contra palma escuchando la espuma.", "a fricción cotiá con xabón en «Fregar fai son»", "la fricción cotidiana con jabón en «Frotar hace sonido»"),
+    (4, "rutinas", "Hold me", "Cóllome no colo", "Abrázame", "Dá unha aperta suave ao comparar texturas.", "Da un abrazo suave al comparar texturas.", "o contacto calmado tras explorar en «Fregar fai son»", "el contacto calmado tras explorar en «Frotar hace sonido»"),
+
+    # Mes 5 · Sombras de animais / Sombras de animales
+    (5, "sustantivos", "Dog", "Can", "Perro", "Proxeita a figura do can diante da lanterna.", "Proyecta la figura del perro delante de la linterna.", "o boneco protagonista de «Sombras de animais»", "el muñeco protagonista de «Sombras de animales»"),
+    (5, "sustantivos", "Cat", "Gato", "Gato", "Fai as orellas do gato na parede iluminada.", "Haz las orejas del gato en la pared iluminada.", "a segunda silueta de «Sombras de animais»", "la segunda silueta de «Sombras de animales»"),
+    (5, "sustantivos", "Duck", "Pato", "Pato", "Abre e pecha os dedos coma un peteiro fronte á luz.", "Abre y cierra los dedos como un pico frente a la luz.", "a sombra da man en «Sombras de animais»", "la sombra de la mano en «Sombras de animales»"),
+    (5, "onomatopeias", "Woof, dog!", "Guau, can!", "¡Guau, perro!", "Fai mover a sombra do can mentres ladra suave.", "Mueve la sombra del perro mientras ladra suave.", "o son ligado á silueta do can en «Sombras de animais»", "el sonido ligado a la silueta del perro en «Sombras de animales»"),
+    (5, "onomatopeias", "Meow, cat!", "Miau, gato!", "¡Miau, gato!", "Estira os bigotes coas mans vendo a sombra do gato.", "Estira los bigotes viendo la sombra del gato.", "a voz da silueta felina en «Sombras de animais»", "la voz de la silueta felina en «Sombras de animales»"),
+    (5, "onomatopeias", "Quack, duck!", "Cuac, pato!", "¡Cuac, pato!", "Move o peteiro na parede ao son da lanterna.", "Mueve el pico en la pared al compás de la linterna.", "a sombra animada do pato en «Sombras de animais»", "la sombra animada del pato en «Sombras de animales»"),
+
+    # Mes 6 · Rodar ou non rodar / Rodar o no rodar
+    (6, "sustantivos", "Ball", "Pelota", "Pelota", "Empurra a pelota polo chan para que xire.", "Empuja la pelota por el suelo para que gire.", "o obxecto redondo que xira en «Rodar ou non rodar»", "el objeto redondo que gira en «Rodar o no rodar»"),
+    (6, "sustantivos", "Belly", "Barriga", "Barriga", "Toca a túa barriga rodando devagar polo coxín.", "Toca tu barriga rodando despacio por el cojín.", "o xiro corporal imitando «Rodar ou non rodar»", "el giro corporal imitando «Rodar o no rodar»"),
+    (6, "sustantivos", "Foot", "Pé", "Pie", "Para a pelota que roda tocándoa co pé.", "Para la pelota que rueda tocándola con el pie.", "o freo suave no chan en «Rodar ou non rodar»", "el freno suave en el suelo en «Rodar o no rodar»"),
+    (6, "onomatopeias", "Baa, lamb!", "Bee, año!", "¡Bee, ovejita!", "Pousa o año na rampa e comproba que non roda.", "Posa la ovejita en la rampa y comprueba que no rueda.", "o peluche que queda quieto en «Rodar ou non rodar»", "el peluche que queda quieto en «Rodar o no rodar»"),
+    (6, "series", "One, two, three", "Un, dous, tres", "Uno, dos, tres", "Marca tres dedos antes de soltar a pelota.", "Marca tres dedos antes de soltar la pelota.", "a conta previa ao lanzamento en «Rodar ou non rodar»", "la cuenta previa al lanzamiento en «Rodar o no rodar»"),
+    (6, "series", "Stop and go", "Para e vai", "Para y ve", "Frea a pelota coa palma e logo empurra de novo.", "Frena la pelota con la palma y luego empuja otra vez.", "o control de movemento de «Rodar ou non rodar»", "el control de movimiento de «Rodar o no rodar»"),
+]
+
 RIMAS = {
     9: ("Pat-a-cake, pat-a-cake, baker's man! Bake me a cake as fast as you can.",
         "Bate, bate palmiñas, panadeiro! Faime unha torta axiña.",
@@ -69,18 +164,12 @@ RIMAS = {
 }
 
 FASES = [
-    ({"gl": "Descubrimos: as primeiras palabras e a canción",
-      "es": "Descubrimos: las primeras palabras y la canción"}),
-    ({"gl": "Xogamos coas palabras e coa canción",
-      "es": "Jugamos con las palabras y con la canción"}),
-    ({"gl": "A rima tradicional, coas palabras do tema",
-      "es": "La rima tradicional, con las palabras del tema"}),
-    ({"gl": "Repasamos todo o proxecto",
-      "es": "Repasamos todo el proyecto"}),
+    {"gl": "Descubrimos: primeiras palabras e a canción", "es": "Descubrimos: primeras palabras y la canción"},
+    {"gl": "Xogamos coas palabras do núcleo e coa canción", "es": "Jugamos con las palabras del núcleo y con la canción"},
+    {"gl": "A rima tradicional e as novas pezas", "es": "La rima tradicional y las nuevas piezas"},
+    {"gl": "Consolidamos todo o proxecto sen novas", "es": "Consolidamos todo el proyecto sin palabras nuevas"},
 ]
 
-# P9.2 (0-2): un momento «mira y nota» por proyecto, sin preguntas abiertas y
-# con frases de dos elementos como máximo sin verbo «to be».
 MIRA_E_NOTA = {
     9: ("Wet sponge!", "Esponxa mollada!", "¡Esponja mojada!",
         "Achega a esponxa mollada á man e logo a toalla seca, en silencio, para que note o contraste.",
@@ -104,7 +193,7 @@ MIRA_E_NOTA = {
         "Sopra dúas burbullas suaves á altura dos seus ollos para que as siga co corpo e coa man.",
         "Sopla dos burbujas suaves a la altura de sus ojos para que las siga con el cuerpo y con la mano."),
     4: ("Soft sound!", "Son suave!", "¡Sonido suave!",
-        "Frota amodo tea contra tea e logo cartón estriado para que escuite e toque cada textura.",
+        "Frota amodo tea contra tea e logo cartón estriado para que escoite e toque cada textura.",
         "Frota despacio tela contra tela y luego cartón estriado para que escuche y toque cada textura."),
     5: ("Look, shadow!", "Mira, sombra!", "¡Mira, sombra!",
         "Proxecta na parede a sombra do can ou do gato de xoguete xunto ao boneco real para que mire os dous.",
@@ -124,81 +213,176 @@ def elementos(en: str) -> int:
 
 
 def valida(en: str) -> bool:
-    return 0 < elementos(en) <= 2 and not TO_BE.search(en)
+    return 0 < elementos(en) <= 3 and not TO_BE.search(en)
 
 
-def construir() -> dict:
+def _capas_semana(st_gl: str, st_es: str, s_num: int, nova_items: list[dict], todas_sem: list[dict]) -> dict:
+    n_en = ", ".join(p["en"] for p in nova_items) if nova_items else todas_sem[0]["en"]
+    t_en = ", ".join(p["en"] for p in todas_sem)
+    foco_gl = nova_items[0]["gl"].lower() if nova_items else todas_sem[0]["gl"].lower()
+    foco_es = nova_items[0]["es"].lower() if nova_items else todas_sem[0]["es"].lower()
+    return {
+        "nucleo": {
+            "gl": f"Semana {s_num} · «{st_gl}»: nomea só {n_en} mentres o toca coas mans.",
+            "es": f"Semana {s_num} · «{st_es}»: nombra solo {n_en} mientras lo toca con las manos.",
+            "en": n_en,
+        },
+        "mais": {
+            "gl": f"Semana {s_num} · «{st_gl}»: combina {t_en} alternando {foco_gl} e xesto.",
+            "es": f"Semana {s_num} · «{st_es}»: combina {t_en} alternando {foco_es} y gesto.",
+            "en": t_en,
+        },
+        "apoio": {
+            "gl": f"Semana {s_num} · «{st_gl}»: repite devagar «{nova_items[0]['en'] if nova_items else todas_sem[0]['en']}» cun único obxecto e sen présa.",
+            "es": f"Semana {s_num} · «{st_es}»: repite despacio «{nova_items[0]['en'] if nova_items else todas_sem[0]['en']}» con un único objeto y sin prisa.",
+            "en": nova_items[0]["en"] if nova_items else todas_sem[0]["en"],
+        },
+    }
+
+
+def _rutinas_semana(st_gl: str, st_es: str, mes: int, s_num: int, peza: dict) -> dict:
+    en = peza["en"]
+    g_gl = peza["xesto"]["gl"].rstrip(".")
+    g_es = peza["xesto"]["es"].rstrip(".")
+    out = {}
+    verbos_gl = {
+        "bano": f"coa auga na semana {s_num}",
+        "comida": f"na cadeira da mesa na semana {s_num}",
+        "coche": f"suxeitando unha peza segura no asento (sem. {s_num})",
+        "vestirse": f"mentres pomos a roupa na semana {s_num}",
+        "durmir": f"baixando o ton no conto da semana {s_num}",
+        "parque": f"mirando o aire libre na semana {s_num}",
+    }
+    verbos_es = {
+        "bano": f"con el agua en la semana {s_num}",
+        "comida": f"en la trona de la comida en la semana {s_num}",
+        "coche": f"sujetando una pieza segura en la silla (sem. {s_num})",
+        "vestirse": f"mientras ponemos la ropa en la semana {s_num}",
+        "durmir": f"bajando el tono antes de dormir (sem. {s_num})",
+        "parque": f"al aire libre en el parque (sem. {s_num})",
+    }
+    for rk, lab_gl, lab_es in RUTINAS_FOGAR:
+        out[rk] = {
+            "gl": f"{lab_gl} ({st_gl}): di «{en}» {verbos_gl[rk]}, {g_gl.lower()}.",
+            "es": f"{lab_es} ({st_es}): di «{en}» {verbos_es[rk]}, {g_es.lower()}.",
+            "en": en,
+            "xesto": peza["xesto"],
+        }
+    return out
+
+
+def construir(laminas_pal: dict | None = None) -> dict:
     lec = json.loads((RAIZ / "assets/content/leccions/leccions.json").read_text(encoding="utf-8"))
     steam_data = json.loads((RAIZ / "assets/content/steam/steam_do_mes.json").read_text(encoding="utf-8"))["experimentos"]
     steam_obs = {e["id"]: e.get("observar") or {"gl": "", "es": ""} for e in steam_data}
+    steam_tit = {e["mes"]: e["titulo"] for e in steam_data if e["curso"] == "curso_0_2"}
     unidades = lec["cursos"]["curso_0_2"]["unidades"]
     cancions = json.loads((RAIZ / "assets/content/cancions/cancions_con_pulso.json").read_text(encoding="utf-8"))["cancions"]
+    if laminas_pal is None:
+        laminas_pal = json.loads(MAPA.read_text(encoding="utf-8"))["pezas"] if MAPA.exists() else {}
+
+    por_mes: dict[int, list[dict]] = {m: [] for m in MESES}
+    for m, fam, en, gl, es, xgl, xes, pgl, pes in NUCLEO_60:
+        en_l = limpo(en)
+        k = en_l.lower().strip("!?. ")
+        st = steam_tit[m]
+        por_mes[m].append({
+            "en": en_l,
+            "gl": gl,
+            "es": es,
+            "familia": fam,
+            "novaNoMes": True,
+            "parteSteam": {"gl": pgl, "es": pes},
+            "steam": st,
+            "xesto": {"gl": xgl, "es": xes},
+            **({"lamina": laminas_pal[k]["clave"]} if k in laminas_pal else {}),
+        })
+
     proxectos = []
-    anteriores: list[str] = []
+    vistas_antes: list[dict] = []
     for i, mes in enumerate(MESES):
         u = unidades[i]
-        tpr = json.loads(next((RAIZ / "assets/content/tpr/curso_0_2").glob(f"tpr.{i + 1:02d}.*.json")).read_text(encoding="utf-8"))
-        palabras: list[dict] = []
-        vistas: set[str] = set()
+        novas_mes = por_mes[mes]
+        st_tit = (u.get("steam") or {}).get("titulo") or steam_tit[mes]
+        st_gl, st_es = st_tit["gl"], st_tit["es"]
 
-        def engade(en, gl, es, xesto_gl, xesto_es, orixe):
-            en = limpo(en)
-            k = en.lower().strip("!?. ")
-            if not valida(en) or k in vistas or len(palabras) >= POR_PROXECTO:
-                return
-            vistas.add(k)
-            palabras.append({"en": en, "gl": gl, "es": es,
-                             "xesto": {"gl": xesto_gl, "es": xesto_es}, "orixe": orixe,
-                             **({"lamina": LAMINAS_PAL[k]["clave"]} if k in LAMINAS_PAL else {})})
+        # Retornos de meses anteriores (ata 12 pezas anteriores para consolidar o núcleo de 60).
+        retornos: list[dict] = []
+        if vistas_antes:
+            offsets = [-1, -2, -3, -4, -6, -8, -10, -12, -15, -18, -22, -26]
+            vistos_ret: set[str] = set()
+            for off in offsets:
+                cand = vistas_antes[(len(vistas_antes) + off) % len(vistas_antes)]
+                if cand["en"] in vistos_ret:
+                    continue
+                vistos_ret.add(cand["en"])
+                retornos.append({
+                    **cand,
+                    "novaNoMes": False,
+                    "parteSteam": {
+                        "gl": f"{cand['gl']} recuperada no xogo de «{st_gl}»",
+                        "es": f"{cand['es']} recuperada en el juego de «{st_es}»",
+                    },
+                    "steam": st_tit,
+                })
+                if len(retornos) >= 12:
+                    break
 
-        for l in u["leccions"]:
-            for p in l["novas"]:
-                x = p.get("xesto") or {}
-                engade(p["en"], p.get("gl", ""), p.get("es", ""), x.get("gl", ""), x.get("es", ""), "leccion")
-        # Del banco del mes: primero los nombres (el vocabulario base), luego el resto.
-        todas = [w for s in tpr["semanas"] for w in s["palabras"]]
-        for w in sorted(todas, key=lambda w: 0 if w.get("category") == "noun" else 1):
-            a = w.get("tprAction") or {}
-            engade(w["en"], w.get("gl", ""), w.get("es", ""), a.get("gl", ""), a.get("es", ""), "tpr")
-
+        palabras = novas_mes + [r for r in retornos if r["en"] not in {n["en"] for n in novas_mes}]
         semanas = []
-        for s in range(4):
-            sw = palabras[s * 5:(s + 1) * 5]
-            semanas.append({"semana": s + 1, "fase": FASES[s], "palabras": [w["en"] for w in sw]})
-        frases = [w for w in palabras if elementos(w["en"]) == 2]
+        for s_idx in range(4):
+            s_num = s_idx + 1
+            if s_idx < 3:
+                w_novas = novas_mes[s_idx * 2:(s_idx + 1) * 2]
+                w_rets = retornos[s_idx * 3:s_idx * 3 + 2]
+                if not w_rets:
+                    # Mes 9: apoia con outra parella xa vista no mes para que cada semana teña xogo rico.
+                    w_rets = [p for p in novas_mes if p not in w_novas][:2]
+                w_pal = w_novas + w_rets
+            else:
+                w_novas = []
+                w_pal = novas_mes[:3] + retornos[:2]
+            peza_rut = w_novas[0] if w_novas else w_pal[0]
+            semanas.append({
+                "semana": s_num,
+                "fase": FASES[s_idx],
+                "novas": [p["en"] for p in w_novas],
+                "palabras": [p["en"] for p in w_pal],
+                "capas": _capas_semana(st_gl, st_es, s_num, w_novas, w_pal),
+                "rutinas": _rutinas_semana(st_gl, st_es, mes, s_num, peza_rut),
+            })
+
+        frases = [w for w in palabras if 2 <= elementos(w["en"]) <= 3]
+        como_falar = [w["en"] for w in (frases + [p for p in palabras if p not in frases])][:4]
         cn = cancions[i]
         ck = cn["titulo"]["es"].lower().strip("!?. ")
-        canc = {
-            "id": cn["id"],
-            "gl": cn["titulo"]["gl"],
-            "es": cn["titulo"]["es"],
-            **({"lamina": LAMINAS_PAL[ck]["clave"]} if ck in LAMINAS_PAL else {}),
-        }
-        en, gl, es = RIMAS[mes]
-        rk = en.lower().strip("!?. ")
+        r_en, r_gl, r_es = RIMAS[mes]
+        rk = r_en.lower().strip("!?. ")
         m_en, m_gl, m_es, g_gl, g_es = MIRA_E_NOTA[mes]
         st_id = (u.get("steam") or {}).get("id", "")
         proxectos.append({
             "mesCalendario": mes,
             "proxecto": u["titulo"],
             "steam": u.get("steam"),
-            "cancion": canc,
+            "cancion": {
+                "id": cn["id"],
+                "gl": cn["titulo"]["gl"],
+                "es": cn["titulo"]["es"],
+                **({"lamina": laminas_pal[ck]["clave"]} if ck in laminas_pal else {}),
+            },
             "rima": {
-                "en": en,
-                "gl": gl,
-                "es": es,
-                **({"lamina": LAMINAS_PAL[rk]["clave"]} if rk in LAMINAS_PAL else {}),
+                "en": r_en,
+                "gl": r_gl,
+                "es": r_es,
+                **({"lamina": laminas_pal[rk]["clave"]} if rk in laminas_pal else {}),
             },
             "palabras": palabras,
             "semanas": semanas,
-            # Como falar: frases de dous elementos do propio proxecto, co seu
-            # xesto; se non hai, a palabra soa (holofrase).
-            "comoFalar": [w["en"] for w in (frases or palabras)][:4],
-            # Xa debería saber: palabras soltas do proxecto anterior.
-            "xaSabe": [p for p in anteriores if elementos(p) == 1][:8],
+            "comoFalar": como_falar,
+            "xaSabe": [p["en"] for p in vistas_antes[-8:]],
             "guia": {
-                "gl": f"Canta «{canc['gl']}» co xesto. Repasa as palabras do proxecto, unha a unha, mentres xogades.",
-                "es": f"Canta «{canc['es']}» con el gesto. Repasa las palabras del proyecto, una a una, mientras jugáis.",
+                "gl": f"Canta «{cn['titulo']['gl']}» co xesto. Traballa o núcleo de «{st_gl}» a un ritmo tranquilo.",
+                "es": f"Canta «{cn['titulo']['es']}» con el gesto. Trabaja el núcleo de «{st_es}» a un ritmo tranquilo.",
             },
             "mira_e_nota": {
                 "titulo": {"gl": "Mira e nota", "es": "Mira y nota"},
@@ -208,10 +392,11 @@ def construir() -> dict:
                 "observar": steam_obs.get(st_id, {"gl": "", "es": ""}),
             },
         })
-        anteriores = [w["en"] for w in palabras]
+        vistas_antes.extend(novas_mes)
+
     return {
-        "_doc": "Xerado por tools/gen_acopros_0_2.py (O-20261109-4, ACOPROS). Non se edita a man.",
-        "fonte": "referencias/acopros/consideraciones-2026-11-09.md",
+        "_doc": "Xerado por tools/gen_acopros_0_2.py (P11.6 · D4). Non se edita a man.",
+        "fonte": "MacArthur-Bates CDI / Wordbank (Frank et al., Stanford University, CC BY 4.0) + ACOPROS (consideraciones-2026-11-09.md)",
         "proxectos": proxectos,
     }
 
@@ -220,48 +405,88 @@ def revisar(d: dict) -> list[str]:
     fallos = []
     if len(d["proxectos"]) != 10:
         fallos.append("non hai 10 proxectos")
+    todas_en: dict[str, int] = {}
+    fams: set[str] = set()
+    rut_seen: set[tuple[str, str]] = set()
     for p in d["proxectos"]:
         m = p["mesCalendario"]
-        n = len(p["palabras"])
-        if not 18 <= n <= 22:
-            fallos.append(f"mes {m}: {n} palabras, non unhas 20")
+        st_gl = (p.get("steam") or {}).get("titulo", {}).get("gl", "")
+        st_es = (p.get("steam") or {}).get("titulo", {}).get("es", "")
+        if not 6 <= len(p["palabras"]) <= 20:
+            fallos.append(f"mes {m}: {len(p['palabras'])} pezas fóra de 6..20")
         for w in p["palabras"]:
             if not valida(w["en"]):
-                fallos.append(f"mes {m}: «{w['en']}» ten máis de dous elementos ou o verbo to be")
+                fallos.append(f"mes {m}: «{w['en']}» supera 3 palabras ou ten to be")
             if not (w["gl"] and w["es"]):
-                fallos.append(f"mes {m}: «{w['en']}» sen significado gl/es")
-        presentadas = {w["en"].lower().strip("!?. ") for w in p["palabras"]}
-        tokens = {t.lower() for w in p["palabras"] for t in re.split(r"[\s,/]+", re.sub(r"[!?.…]", "", w["en"])) if t}
+                fallos.append(f"mes {m}: «{w['en']}» sen gl/es")
+            fam = w.get("familia")
+            if fam not in FAMILIAS:
+                fallos.append(f"mes {m}: «{w['en']}» sen familia válida ({fam})")
+            else:
+                fams.add(fam)
+            ps = w.get("parteSteam") or {}
+            if not (ps.get("gl") and ps.get("es")):
+                fallos.append(f"mes {m}: «{w['en']}» sen parteSteam")
+            elif st_gl not in ps["gl"] or st_es not in ps["es"]:
+                fallos.append(f"mes {m}: parteSteam de «{w['en']}» non nomea «{st_es}»")
+            todas_en[w["en"].lower()] = todas_en.get(w["en"].lower(), 0) + 1
+        presentadas = {w["en"] for w in p["palabras"]}
         for f in p["comoFalar"]:
-            if elementos(f) > 2:
-                fallos.append(f"mes {m}: cómo falar «{f}» con máis de dous elementos")
-            if f.lower().strip("!?. ") not in presentadas and not all(
-                    t.lower() in tokens for t in re.split(r"[\s,/]+", re.sub(r"[!?.…]", "", f)) if t):
-                fallos.append(f"mes {m}: cómo falar «{f}» usa unha palabra non presentada")
+            if not valida(f) or f not in presentadas:
+                fallos.append(f"mes {m}: comoFalar «{f}» non válido ou non presentado")
         for x in p["xaSabe"]:
-            if elementos(x) != 1:
-                fallos.append(f"mes {m}: xa debería saber «{x}» non é unha palabra soa")
+            if not valida(x):
+                fallos.append(f"mes {m}: xaSabe «{x}» supera 3 palabras")
         if not (p["cancion"].get("gl") and p["cancion"].get("es")):
             fallos.append(f"mes {m}: sen canción")
         if not (p["rima"]["en"] and p["rima"]["gl"] and p["rima"]["es"]):
             fallos.append(f"mes {m}: sen rima")
         mira = p.get("mira_e_nota") or {}
         if not mira.get("frase_en") or not valida(mira["frase_en"]):
-            fallos.append(f"mes {m}: mira_e_nota.frase_en non válida (máx 2 palabras sen to be)")
+            fallos.append(f"mes {m}: mira_e_nota.frase_en non válida")
         if "?" in str(mira) or "¿" in str(mira):
-            fallos.append(f"mes {m}: mira_e_nota en 0-2 non pode levar preguntas abertas")
-        for campo in ("significado", "guia", "observar"):
-            if not all((mira.get(campo) or {}).get(l) for l in ("gl", "es")):
-                fallos.append(f"mes {m}: mira_e_nota.{campo} baleiro en gl ou es")
-        sem1 = p["semanas"][0]
-        if not sem1["palabras"] or "canción" not in sem1["fase"]["es"]:
-            fallos.append(f"mes {m}: a semana 1 non empeza polo vocabulario e a canción")
-        if [w for s in p["semanas"] for w in s["palabras"]] != [w["en"] for w in p["palabras"]]:
-            fallos.append(f"mes {m}: as catro semanas non reparten as palabras do proxecto")
+            fallos.append(f"mes {m}: mira_e_nota con preguntas abertas")
+        for s_idx, sem in enumerate(p["semanas"]):
+            if s_idx < 3 and not (2 <= len(sem.get("novas") or []) <= 3):
+                fallos.append(f"mes {m} sem {sem['semana']}: {len(sem.get('novas') or [])} novas (esperado 2-3)")
+            capas = sem.get("capas") or {}
+            for cn in ("nucleo", "mais", "apoio"):
+                c = capas.get(cn) or {}
+                if not (c.get("gl") and c.get("es") and c.get("en")):
+                    fallos.append(f"mes {m} sem {sem['semana']} capa {cn}: incompleta")
+                elif st_gl not in c["gl"] or st_es not in c["es"]:
+                    fallos.append(f"mes {m} sem {sem['semana']} capa {cn}: sen STEAM")
+            ruts = sem.get("rutinas") or {}
+            for rk, _, _ in RUTINAS_FOGAR:
+                rv = ruts.get(rk) or {}
+                if not (rv.get("gl") and rv.get("es") and rv.get("en")):
+                    fallos.append(f"mes {m} sem {sem['semana']} rutina {rk}: incompleta")
+                elif st_gl not in rv["gl"] or st_es not in rv["es"]:
+                    fallos.append(f"mes {m} sem {sem['semana']} rutina {rk}: sen STEAM")
+                else:
+                    if (rk, rv["es"]) in rut_seen:
+                        fallos.append(f"mes {m} sem {sem['semana']} rutina {rk}: repetida entre semanas")
+                    rut_seen.add((rk, rv["es"]))
+        if "canción" not in p["semanas"][0]["fase"]["es"]:
+            fallos.append(f"mes {m}: a semana 1 non nomea a canción")
+    if not 55 <= len(todas_en) <= 65:
+        fallos.append(f"{len(todas_en)} pezas distintas (esperado ~60)")
+    if fams != set(FAMILIAS):
+        fallos.append(f"faltan familias: {set(FAMILIAS) - fams}")
+    reps = sum(1 for v in todas_en.values() if v > 1)
+    if reps < len(todas_en) // 2:
+        fallos.append(f"só {reps} de {len(todas_en)} volven noutro mes")
     return fallos
 
 
 def main() -> int:
+    if "--check" not in sys.argv:
+        sys.path.insert(0, str(RAIZ / "tools"))
+        from laminas_0_2_nucleo import xerar_laminas_nucleo_0_2  # noqa: E402
+        mp = json.loads(MAPA.read_text(encoding="utf-8"))
+        xerar_laminas_nucleo_0_2(mp["pezas"])
+        mp["pezas"] = dict(sorted(mp["pezas"].items()))
+        MAPA.write_text(json.dumps(mp, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     d = construir()
     fallos = revisar(d)
     texto = json.dumps(d, ensure_ascii=False, indent=1) + "\n"
@@ -275,8 +500,6 @@ def main() -> int:
     else:
         SAIDA.parent.mkdir(parents=True, exist_ok=True)
         SAIDA.write_text(texto, encoding="utf-8")
-        # Las rimas, con su significado en el diccionario de la app (el
-        # doble toque en una frase inglesa enseña lo que quiere decir).
         sp = RAIZ / "assets/content/significados/significados.json"
         sig = json.loads(sp.read_text(encoding="utf-8"))
         for p in d["proxectos"]:
@@ -284,10 +507,9 @@ def main() -> int:
             sig["significados"].setdefault(r["en"], {"gl": r["gl"], "es": r["es"]})
         sp.write_text(json.dumps(sig, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     if fallos:
-        print("FALLO (ACOPROS 0-2):\n  " + "\n  ".join(fallos))
+        print("FALLO (ACOPROS 0-2 D4):\n  " + "\n  ".join(fallos))
         return 1
-    print("OK: 10 proxectos de 0-2, ~20 palabras cada un, frases de dous elementos como moito, "
-          "sen to be, coa súa canción e a súa rima.")
+    print("OK: 10 proxectos de 0-2 con núcleo de 60 pezas en 5 familias, 2-3 novas/semana, <=3 palabras, 3 capas STEAM e 6 rutinas M2.")
     return 0
 
 
