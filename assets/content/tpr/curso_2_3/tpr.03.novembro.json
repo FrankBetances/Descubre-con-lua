@@ -97,15 +97,15 @@
         },
         {
           "id": "2_3.novembro.s1.stroll",
-          "en": "Stroll",
-          "gl": "Pasear",
-          "es": "Pasear",
+          "en": "March",
+          "gl": "Marchar",
+          "es": "Marchar",
           "tprAction": {
-            "gl": "Camiñar amodo de man",
-            "es": "Caminar despacio de la mano"
+            "gl": "Sinala ou colle o que nomeas: marchar.",
+            "es": "Señala o coge lo que nombras: marchar."
           },
           "category": "verb",
-          "lamina": "pal_stroll"
+          "lamina": "pal_march"
         },
         {
           "id": "2_3.novembro.s1.feed-the-ducks",
@@ -346,15 +346,15 @@
         },
         {
           "id": "2_3.novembro.s2.blow-away",
-          "en": "Blow away",
-          "gl": "Levar o vento",
-          "es": "Llevárselo el viento",
+          "en": "Spin",
+          "gl": "Xirar",
+          "es": "Girar",
           "tprAction": {
-            "gl": "Soprar e deixar voar unha folla",
-            "es": "Soplar y dejar volar una hoja"
+            "gl": "Sinala ou colle o que nomeas: xirar.",
+            "es": "Señala o coge lo que nombras: girar."
           },
           "category": "verb",
-          "lamina": "pal_blow_away"
+          "lamina": "pal_spin"
         },
         {
           "id": "2_3.novembro.s2.flap-arms",
@@ -606,15 +606,16 @@
         },
         {
           "id": "2_3.novembro.s3.tread",
-          "en": "Tread",
-          "gl": "Pisar",
-          "es": "Pisar",
+          "en": "Stamp",
+          "gl": "Pisar forte",
+          "es": "Pisar fuerte",
           "tprAction": {
-            "gl": "Pisar amodo unha folla",
-            "es": "Pisar despacio una hoja"
+            "gl": "Sinala ou colle o que nomeas: pisar forte.",
+            "es": "Señala o coge lo que nombras: pisar fuerte."
           },
           "category": "verb",
-          "lamina": "pal_tread"
+          "lamina": "pal_stamp",
+          "volve": "curso_0_2"
         },
         {
           "id": "2_3.novembro.s3.stamp-feet",

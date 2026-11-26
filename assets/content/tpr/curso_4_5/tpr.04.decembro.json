@@ -181,15 +181,16 @@
         },
         {
           "id": "4_5.decembro.s1.frozen-solid",
-          "en": "Frozen solid",
-          "gl": "Conxelado de todo",
-          "es": "Congelado del todo",
+          "en": "Icy",
+          "gl": "Xeado",
+          "es": "Helado",
           "tprAction": {
-            "gl": "Quedar ríxido",
-            "es": "Quedarse rígido"
+            "gl": "Sinala ou colle o que nomeas: xeado.",
+            "es": "Señala o coge lo que nombras: helado."
           },
           "category": "adjective",
-          "lamina": "pal_frozen_solid"
+          "lamina": "pal_icy",
+          "volve": "curso_2_3"
         },
         {
           "id": "4_5.decembro.s1.melty",
@@ -681,15 +682,16 @@
         },
         {
           "id": "4_5.decembro.s3.brightest",
-          "en": "Brightest",
-          "gl": "O máis brillante",
-          "es": "El más brillante",
+          "en": "Shiny",
+          "gl": "Brillante",
+          "es": "Brillante",
           "tprAction": {
-            "gl": "Sinalar a luz máis brillante",
-            "es": "Señalar la luz más brillante"
+            "gl": "Sinala ou colle o que nomeas: brillante.",
+            "es": "Señala o coge lo que nombras: brillante."
           },
           "category": "adjective",
-          "lamina": "pal_brightest"
+          "lamina": "pal_shiny",
+          "volve": "curso_3_4"
         },
         {
           "id": "4_5.decembro.s3.look-at-all-the-lights",

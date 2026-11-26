@@ -14,29 +14,37 @@ casa y *Hoy · Calendario · Recursos · Yo* en la escuela.
 - **La lección de la semana** — los dos portales se abren por ella. El curso de
   cada grupo es una fila de lecciones de una semana que salen del plan
   curricular y de la unidad de cada mes: diez unidades por curso, de cuatro
-  lecciones, sin repetir una palabra nueva en ninguna edad y con al menos tres
-  nuevas cada semana. Enseña la ruta de los cinco
-  cursos (de escuchar y hacer a argumentar), qué se espera esa semana, qué
-  clase de palabras trae —nombres, verbos, adjetivos, frases— y una actividad
-  distinta cada día. Cada mes trabaja una de las 48 unidades de gramática, de A1 a C1,
-  adaptada a la edad: de la 1 en septiembre de 0-2 años a la 48 en junio de
-  5-6, sin volver atrás, con cuatro frases que cuentan el STEAM del mes. Arriba dice dónde
-  se está en las 48 unidades —la anterior, la de ahora y la siguiente, con su título: sustantivos, adjetivos,
-  presente…—, el tema del mes y la lección; debajo, los cinco días de la
-  semana, las palabras nuevas, la frase de la unidad y lo que ya debería saber.
-  La guía —qué hacer, cómo esperar y por qué— va plegada. La misma lección sale
-  en los dos calendarios, en la nota que la escuela da a las familias y en el
-  código para casa.
+  lecciones, sin repetir palabras entre cursos y con repaso espaciado desde
+  semanas anteriores. Cada semana de las cinco edades trae tres capas ligadas
+  al experimento STEAM del mes (**núcleo**, **Máis / Más** y **Apoio / Apoyo**).
+  Las **48 unidades de gramática** forman una escalera por dominio con techo
+  según la edad: 0-2 años trabaja 60 piezas básicas en cinco familias con el
+  STEAM del mes (sin gramática explícita); 2-3 años hasta el punto 9 con
+  fórmulas fijas; 3-4 años, los puntos A1; 4-5 y 5-6 años, hasta A2; y las
+  unidades 21 a 48 (B1-C1) quedan como guía de consulta para la persona adulta.
+  Arriba dice dónde se está en la ruta, el tema del mes y la lección; debajo,
+  los cinco días de la semana, las palabras nuevas y de repaso, la frase de la
+  unidad y lo que ya salió antes. La guía —qué hacer, cómo esperar y por qué—
+  va plegada. La misma lección sale en los dos calendarios, en la nota que la
+  escuela da a las familias y en el código para casa.
 - **Hoy, en la escuela** — la lección de la semana y la sesión de 45 minutos;
   debajo, como material complementario, la asamblea diaria de cuatro fases, las
   palabras del banco, el plan del mes, el cuento, la dinámica y la ciencia.
-- **Hoy, en casa** — la lección de la semana; debajo, plegado en «Más para
-  casa», el código de la escuela, el juego de tres minutos del día con un solo botón, las
-  palabras del día, el reto del mes con su microcuento y el cuento. Si el niño o la niña llega nueva a un curso empezado, **Ponte al día**
-  enseña las palabras de antes que dan por sabidas las asambleas y los retos
-  de los cuentos del mes, dos
-  o tres al día, con su gesto y su voz. Se elige la edad y el mes; no se guarda
-  nada.
+- **Hoy, en casa** — arriba muestra en fila cada niño o niña registrada en ese
+  móvil (puede haber varios de edades distintas) con su actividad del día; un
+  toque cambia al niño o a la niña activa en Hoy, Calendario y Explorar. El
+  alta se hace una sola vez (datos, mes y año de nacimiento sin día, una o dos
+  rutinas del hogar —baño, comida, coche, vestirse, ir a dormir o parque— y,
+  desde los 2 años, el juego inicial de Lúa para saber por dónde empezar). Cada
+  semana, un ajuste automático adapta el cupo de palabras nuevas y la capa del
+  niño o la niña sin porcentaje ni calificación clínica, explicando el motivo en
+  una línea; debajo muestra sus palabras con lámina y audio (**Vuelven hoy**),
+  el marcador de diez segundos al terminar el juego, **Lúa pregunta** los
+  domingos, el contador de cuántas veces oyó cada palabra, sus rutinas de casa
+  con el STEAM del mes, el **Reto de hermanos** si hay dos cursos distintos en
+  casa y la tarjeta de Lúa para enseñar en la escuela infantil. Plegado en
+  «Más para casa», el código de la escuela, el juego diario, **Ponte al día**,
+  el reto del mes con su microcuento y el cuento.
 - **Juega con Lúa · Modo Aula** — todas las asambleas, de cualquier grupo, mes y
   día; el grupo, el mes y el día van en una línea que se abre si hace falta.
 - **Yo, en la escuela** — el nivel y la racha de la docente, *Antes de entrar
@@ -196,15 +204,11 @@ por escrito. El texto completo está en [LICENSE.md](LICENSE.md).
 
 | | |
 | --- | --- |
-| [**Manual de uso**](docs/manual-casos-de-uso.html) | Para la docente, la familia y quien tenga que entender el proyecto sin abrirlo: qué es la app, cómo funciona el mes, y qué hay en cada una de sus partes —el inicio, los dos portales con sus pestañas, el Modo Aula de los dos ciclos, el calendario, las guías para la familia, STEAM, las lenguas y la voz, los premios y la privacidad—. Lleva 40 imágenes de pantalla: 20 pantallas, cada una en gallego y en castellano. **No lleva documentación de desarrollo**: eso vive aquí y en `PROJECT.md`. También en [PDF](docs/Descubre-con-Lua-Manual-Casos-de-Uso.pdf) y [Word](docs/Descubre-con-Lua-Manual-Casos-de-Uso.docx) |
+| [**Manual de uso**](docs/manual-casos-de-uso.html) | Para la docente, la familia y quien tenga que entender el proyecto sin abrirlo: qué es la app, cómo funciona el mes, y qué hay en cada una de sus partes —el inicio, los dos portales con sus pestañas, el Modo Aula de los dos ciclos, el calendario, las guías para la familia, STEAM, las lenguas y la voz, los premios y la privacidad—. También en [PDF](docs/Descubre-con-Lua-Manual-Casos-de-Uso.pdf) y [Word](docs/Descubre-con-Lua-Manual-Casos-de-Uso.docx) |
+| [**Catálogo de material por edades**](docs/catalogo-por-idades.html) | Todo el contenido semanal de los cinco cursos (0-2 a 5-6 años) y la guía adulta 21-48, también en [PDF](docs/Descubre-con-Lua-Material-por-edades.pdf) |
 | [**Base pedagógica de STEAM**](docs/BASE_PEDAGOGICA_STEAM.md) | Qué hay en las cinco sesiones STEAM y por qué, sus criterios de seguridad y sus fuentes |
-| [**STATUS.md**](STATUS.md) | Qué funciona y qué no, con la evidencia al lado de cada línea |
-| [**PROJECT.md**](PROJECT.md) | Arquitectura y diseño |
-| [**CLAUDE.md**](CLAUDE.md) | Reglas de trabajo del proyecto |
+| [**STATUS.md**](STATUS.md) | Estado de verificación técnica, gates de comprobación, tubería de compilación y estructura interna del repositorio |
 | [**LICENSE.md**](LICENSE.md) | Quién puede usar esto y con qué condiciones |
-
-Si sólo vas a leer uno: **STATUS.md**, que separa lo comprobado de lo no
-comprobado y nombra el comando que lo comprobó.
 
 ## Qué hay dentro
 
@@ -212,71 +216,21 @@ comprobado y nombra el comando que lo comprobó.
 | --- | --- |
 | Contenido · primer ciclo | 20 asambleas de 4 fases, una por mes del curso en cada tramo (0-2 y 2-3 años) |
 | Canciones con pulso | 10, una por mes del curso, en Recursos del Portal Docentes, con el pulso dibujado |
-| Calendario e inglés | 50 meses de calendario (5 cursos × 10, de 0-2 a 5-6 años) · 4.000 palabras inglesas, 800 por curso, cinco nuevas al día · 63 colocaciones · 44 fonemas |
+| Calendario e inglés | 50 meses de calendario (5 cursos × 10, de 0-2 a 5-6 años) · 200 semanas con tres capas STEAM (**núcleo**, **Máis / Más**, **Apoio / Apoyo**) y 6 rutinas del hogar por capa · 4.000 palabras inglesas, 800 por curso · 63 colocaciones · 44 fonemas |
+| 0-2 años · núcleo de casa | 60 piezas en cinco familias (sustantivos, adjetivos, onomatopeyas unidas a su objeto, rutinas y sucesos, series básicas) ligadas al STEAM del mes |
+| Niveles, entrada y hermanos | Juego inicial de Lúa para casa (72 ítems STEAM en 6 peldaños por curso desde los 2 años) · ajuste dinámico semanal · 160 retos semanales de hermanos entre cursos vecinos |
 | Contenido · segundo ciclo | 3 asambleas matinales, una por nivel (4.º, 5.º y 6.º de Infantil), de 4 fases cada una |
-| Cuentos | 100 cuentos dialogados de tres o cuatro láminas, cada uno atado a su unidad del plan curricular, y 40 microcuentos, uno por mes desde 2-3 años. Además, 303 de antes: 200 de la semana —uno por semana de cada curso, de septiembre a junio—, cada uno con las 20 palabras inglesas de su semana dentro del texto, y 103 más que no son de ninguna semana |
-| Ponte al día | 250 palabras de cursos o meses anteriores que dan por sabidas 86 de las 133 órdenes de las asambleas y 68 de los 303 retos de los cuentos, revisadas a mano, cada una con su gesto y su voz |
+| Cuentos | 100 cuentos dialogados de tres o cuatro láminas, cada uno atado a su unidad del plan curricular, y 40 microcuentos, uno por mes desde 2-3 años, más los 200 cuentos semanales y 103 adicionales |
+| Ponte al día | Palabras de cursos o meses anteriores que dan por sabidas las asambleas y los retos de los cuentos, revisadas a mano, cada una con su gesto y su voz |
 | Cápsulas | 12: 6 de Academy para las familias y 6 de formación docente |
 | STEAM | 5 sesiones de ciencia, una por curso de 12 meses a 6 años, y 50 experimentos del mes, uno por mes y curso, cada uno en versión de aula y de casa |
-| Voz | 39.834 locuciones grabadas dentro de la app: 18.118 en inglés y 10.858 en gallego y otras tantas en castellano, entre el módulo base y el paquete de voz de instalación |
+| Voz | 41.549 locuciones catalogadas (18.693 en inglés, 11.429 en gallego y 11.427 en castellano; 735 en voz de niño y 6.761 lentas), empaquetadas sin conexión en el APK |
 | Estimulación del lenguaje y el pensamiento | 40 piezas, una por mes y edad de 2-3 a 5-6 años, cada una con su par mínimo, su progresión, el modelo del adulto y cuatro momentos de pensamiento sobre el experimento STEAM del mes; 10 proyectos de 0-2 con «mira y nota» |
-| Láminas | 350 en pixel art para los 100 cuentos dialogados, con Lúa desde su rejilla; y 80 propias, dibujadas como datos: 50 de vocabulario y 30 escenas del cuento |
-| Casa | En cada uno de los 50 meses, cuatro retos semanales, la lectura del microcuento, un juego, qué mirar y la palabra del mes anterior; una guía de casa y una guía por edad |
+| Casa | En cada uno de los 50 meses, cuatro retos semanales, la lectura del microcuento, rutinas del hogar con STEAM, un juego, qué mirar y la palabra del mes anterior; una guía de casa y una guía por edad |
 | Premios | Los del niño o de la niña (nivel, racha e insignias de Lúa) y los de la persona adulta (contadores y medallas de calendario) |
-| Android | `minSdk 24` · `compileSdk` y `targetSdk` 36 |
 
-El binario **no declara ni un permiso de red**, y eso lo comprueba un gate que
-lee el APK compilado, no el manifiesto fuente.
-
-**El estado de verificación no vive en este documento.** Qué está comprobado,
-con qué comando, y qué no lo está, va en [STATUS.md](STATUS.md), que es el
-fichero cuya regla es que cada línea diga con qué se comprobó. Aquí no se
-resume: un resumen de estado envejece en silencio y acaba afirmando de más.
-
-## Comprobar
-
-```bash
-flutter pub get
-tools/gates.sh --fast   # formato, análisis, tests y gates de contenido
-tools/gates.sh          # además compila el APK release y audita sus permisos
-```
-
-CI ejecuta ese mismo script (`.github/workflows/ci.yml`). La lista de gates vive
-en el script, no en un documento que se pueda quedar atrás. Esta tabla es una
-copia de cortesía, en el orden en que corren; si discrepa de `tools/gates.sh`,
-manda el script:
-
-| Gate | Qué comprueba |
-| --- | --- |
-| `dart format` · `flutter analyze` · `flutter test` | Formato, análisis y la suite, ejecutándose de verdad |
-| `check_contact_email.py` | Que no aparezca ningún correo distinto del fijo del proyecto |
-| `check_bundled_assets.py` | Que todo activo que el código pide exista y viaje dentro del paquete |
-| `check_laminas.py` | Que cada forma de cada lámina se pinte de verdad, y no salga una lámina en blanco |
-| `draw_flashcards.py --check` | Que cada lámina del banco apunte a un dibujo |
-| `check_no_emoji.py` | Que no se use emoji del sistema como iconografía (regla 5) |
-| `build_corpus_ingles.py --check` | Que cada palabra del vocabulario inglés traiga categoría, definición y una frase entera escritas a mano; que la frase use la palabra sin ser una definición disfrazada ni repetirse; y que no entre ninguna de las excluidas |
-| `humaniza_rutinas_fogar.py --check` | Que las rutinas de casa no vuelvan a ser un mismo texto repetido |
-| `xera_nomes.py --check` | Que los nombres del inicio y de los dos portales salgan de su JSON |
-| `planificador_5_palabras.py --check` | Que el inglés sea el del modelo en cada uno de los cinco cursos: 20 palabras por semana, 800 por curso, 4.000 sin que ninguna se repita entre cursos, con significado y gesto en gl y es, y con el reparto 280/200/160/96/64 **contado** en el contenido |
-| `check_contos_palabras.py` | Que el cuento de cada semana lleve las 20 palabras inglesas de su semana: entre “…” en gallego y en castellano, de 1 a 4 por página y con su significado |
-| `xera_ponte_ao_dia.py --check` | Que lo que cada orden de la asamblea da por sabido salga del curso y de las asambleas actuales, con la revisión a mano aplicada y sin decisiones de revisión que ya no hagan falta |
-| `export_voice_corpus.py --check` | Que el corpus de voz siga sincronizado con los textos |
-| `check_pulse_bpm.py` | Que el tempo mostrado sea el que suena, **medido del audio** |
-| `check_pulse_markers.py` | Que el compás sea constante e igual en las dos lenguas |
-| `check_voice_coverage.py` | Que toda locución reproducible tenga grabación en el paquete |
-| `prune_voice_assets.py --check` | Que no queden grabaciones de contenido que ya no existe |
-| `check_voice_levels.py` | Que ninguna grabación del paquete pique cerca de saturación, **medido del fichero** |
-| `check_manual_build.py` | Que el PDF y el Word del manual salgan del HTML actual y no de uno anterior |
-| `check_legal_urls.py --offline` | Que las páginas legales de `docs/` existan, sean lo que dicen ser y lleven el correo fijo |
-| `flutter build apk --release` | Que el APK compile |
-| Permisos del APK | Que el **binario** no declare más permisos que el que inyecta AndroidX y `CAMERA` (para RA) |
-
-Los dos últimos solo corren sin `--fast`: son los que necesitan el SDK de
-Android. Por eso `--fast` da **22 de 22** y el run completo, **24 de 24**.
-
-## Publicar
-
-El binario firmado lo compila el mismo workflow que corre los gates (`.github/workflows/ci.yml`). Los detalles de operación están en [STATUS.md](STATUS.md).
+La aplicación **no declara ningún permiso de red**. Todo el detalle técnico
+de comprobación, compilación y publicación vive en [STATUS.md](STATUS.md).
 
 ## El pulso se ve, no se oye
 
@@ -319,39 +273,30 @@ casa, y en Academy las cuatro partes de cada cápsula, sus afirmaciones y el
 cierre de Lúa. Si un texto no tiene grabación, el botón **no se pinta** —ni
 apagado ni con aviso—: un altavoz que no suena promete algo que no cumple.
 
-- gallego → **Celtia**, do Proxecto Nós (*gated* en Hugging Face: la descarga
-  necesita un token, que vive en el workflow)
-- castellano → **Sharvard** (rhasspy/piper-voices)
-- inglés → **LJSpeech** (rhasspy/piper-voices)
+- gallego → **Celtia**, do Proxecto Nós
+- castellano → **Sharvard**
+- inglés → **LJSpeech**
 
 **El inglés es un caso aparte.** No hay pantallas en inglés: lo que se graba son
 las 4.000 palabras de los cinco cursos, las órdenes TPR, la frase de cada mes
 del calendario y de cada uno de los 50 meses del trayecto, las colocaciones,
-las palabras de ejemplo de los fonemas y, aparte, **las 4.000 palabras de uso
-habitual del inglés con su frase completa**. Cada una suena dos
-veces: la palabra sola, despacio, que es la que se imita, y su frase entera, a
-ritmo de tutor, que es la que se entiende. Las frases que oye el niño o la niña en la
-estimulación del lenguaje van, como en Valeria, en **voz de niño** y en una
-versión **lenta** de la frase entera, que suena con «Oír despacio». La persona adulta pulsa la pastilla y
-oye cómo se dice antes de decírselo al niño o a la niña. Una pastilla sin grabación se
-pinta igual, con la palabra legible y sin altavoz.
+los retos de hermanos, las piezas de la prueba inicial de Lúa, las palabras de
+ejemplo de los fonemas y, aparte, **las 4.000 palabras de uso habitual del inglés
+con su frase completa**. Las palabras y frases dirigidas al niño o a la niña en
+casa, en estimulación y en 0-2 años van en **voz de niño** y en una versión
+**lenta** («Oír amodo / Oír despacio»). La persona adulta pulsa la pastilla y
+oye cómo se dice antes de decírselo al niño o a la niña. Una pastilla sin
+grabación se pinta igual, con la palabra legible y sin altavoz.
 
-```bash
-python3 tools/export_voice_corpus.py       # corpus desde assets/content
-python3 tools/generate_voice_assets.py --lang gl
-python3 tools/check_voice_coverage.py      # ¿falta alguna grabación?
-```
-
-El identificador de cada grabación es el hash de su propio texto, así que
-editar una frase cambia el identificador, la grabación pasa a faltar y el gate
-lo detecta. La app no puede enseñar un texto y reproducir otro.
+El identificador de cada grabación corresponde al propio texto, así que texto y
+locución permanecen siempre emparejados sin descarga externa.
 
 ## Privacidad
 
 Ningún dato sale del aparato: cero analítica, cero SDK de terceros y ningún
-permiso de red. En casa, el nombre, la edad y el curso de cada niño, y lo que la
-familia marca de sus palabras, se guardan solo en el móvil. `pubspec.yaml` no tiene una sola dependencia externa: la reproducción de
-audio va por un `MethodChannel` contra el `MediaPlayer` de Android.
+permiso de red. En casa, el nombre, el mes y año de nacimiento (sin día), el
+curso de cada niño y lo que la familia marca de sus palabras se guardan solo en
+el móvil.
 
 **Lo único que la app guarda**, en el almacenamiento privado del aparato y en
 tres ficheros:
@@ -360,67 +305,34 @@ tres ficheros:
   cápsulas leídas, racha, la fecha del último día *sin hora* e insignias—;
 - si usa el repaso de inglés, **una ficha de repaso por palabra**: la palabra,
   los números del repaso espaciado y dos fechas *sin hora*;
-- **solo en casa**, de cada niño el nombre o apodo que escribe la familia, la
-  edad y el curso, lo que la persona adulta marca de sus palabras por semana
-  (sin fecha ni hora) y sus premios con Lúa. Se borra desde la app o al
-  desinstalarla. En el aula no se registra a ningún niño.
+- **solo en casa**, de cada niño el nombre o apodo que escribe la familia, el
+  mes y año de nacimiento (sin día), la edad, el curso y el año de revisión de
+  septiembre, las rutinas del hogar elegidas, su peldaño, cupo y estado del
+  juego inicial de Lúa más la tasa, capa por semana del curso y retos semanales
+  de hermanos por pareja de cursos y semana del curso (sin fecha ni hora), cuántas
+  semanas lleva con marcas (sin fecha ni hora), cuántas veces ha oído cada
+  palabra (sin hora), lo que la persona adulta marca de sus
+  palabras por semana (sin fecha ni hora), su ficha de repaso espaciado por
+  palabra (fechas en día, sin hora) y sus premios con Lúa. Se borra desde la
+  app o al desinstalarla. En el aula no se registra a ningún niño.
 
-Nada de esto puede salir del aparato. Lo guardan tres gates:
-`test/features/premios_test.dart`, `test/core/progreso_privacidad_test.dart` y
-`test/core/criancas_privacidad_test.dart` fallan si aparece una clave nueva en
-el fichero que vigila cada uno.
-
-La comprobación que cuenta se hace sobre el **APK compilado** con `aapt2`, no
-sobre el manifiesto fuente.
-
-**URLs legales** (las que se declaran en Play Console; salen del sitio de Pages
-que publica `docs/`):
+**URLs legales** (publicadas junto con la aplicación):
 
 | | |
 | --- | --- |
 | Política de privacidad | `https://frankbetances.github.io/Descubre-con-lua/privacy.html` |
 | Página del proyecto | `https://frankbetances.github.io/Descubre-con-lua/` |
 
-Las vigilan dos gates: `check_legal_urls.py --offline` dentro de `tools/gates.sh`
-comprueba los ficheros, y `.github/workflows/legal-urls.yml` pide las URLs **a
-diario**. El segundo existe porque un sitio de Pages se puede apagar sin que se
-ponga rojo nada, y entonces la ficha de la tienda apunta a un 404 con el último
-despliegue en verde. Un despliegue correcto no demuestra que el sitio esté
-vivo; solo lo demuestra pedir la URL.
-
 Contacto: frank.alberto.betances.reinoso@gmail.com
 
 ## El manual
 
-`docs/manual-casos-de-uso.html` es la **fuente única**. De ahí salen el PDF y el
-Word; no se editan a mano:
-
-```bash
-npm install playwright                          # sólo para el PDF
-CHROMIUM_PATH=<chrome> node docs/build-pdf.js   # → docs/*.pdf
-pip install python-docx lxml                    # sólo para el Word
-python3 docs/build-docx.py                      # → docs/*.docx
-python3 tools/check_manual_build.py             # ¿alguno se quedó atrás?
-```
-
-El texto vive en un solo sitio a propósito: cuando el constructor lleva su
-propia copia, la fuente avanza y el documento generado se queda describiendo una
-versión anterior sin que nada avise.
-
-Las 40 imágenes que el manual incrusta viven en `docs/capturas/`, que guarda
-además las hojas de las láminas, las capturas que aún no entran en el manual y
-las de la app de escritorio que acompañan a cada cambio de pantalla. Las del
-manual se regeneran con:
-
-```bash
-flutter test --tags capturas --update-goldens test/capturas_test.dart
-```
-
-**No son fotos de un móvil.** Son el árbol de widgets real pintado por el motor
-de Flutter, con la tipografía y el contenido de la app, pero sin muesca, sin
-barra de gestos, sin la densidad de un aparato concreto y sin audio. Ver
-[`docs/capturas/README.md`](docs/capturas/README.md). Sustituirlas por capturas
-de verdad es reemplazar los PNG; el manual no se toca.
+El manual completo de uso está disponible en [HTML](docs/manual-casos-de-uso.html),
+[PDF](docs/Descubre-con-Lua-Manual-Casos-de-Uso.pdf) y
+[Word](docs/Descubre-con-Lua-Manual-Casos-de-Uso.docx), ilustrado con las
+pantallas reales de la aplicación en gallego y en castellano (no son fotografías
+de un teléfono físico: muestran el diseño y los textos de la interfaz dentro
+del documento).
 
 ## Licencia
 
@@ -440,32 +352,10 @@ Las condiciones de una licencia institucional se acuerdan caso por caso y
 frank.alberto.betances.reinoso@gmail.com.
 
 Los componentes de terceros conservan su licencia: las tipografías Nunito y
-Fredoka (SIL OFL 1.1, en `assets/fonts/`), las imágenes de Fluent Emoji (MIT),
-Google ARCore SDK, Google Filament y Google MediaPipe Tasks Vision (Apache 2.0,
-aviso NOTICE en `assets/third_party/ar-apache-2.0/NOTICE.txt`), Flutter y sus paquetes, y los modelos de
-voz Celtia, Sharvard y LJSpeech, que **solo corren en compilación y nunca en el
-aparato**. Los logotipos institucionales son marcas de sus titulares y no se
-licencian aquí.
+Fredoka (SIL OFL 1.1), las imágenes de Fluent Emoji (MIT), Google ARCore SDK,
+Google Filament y Google MediaPipe Tasks Vision (Apache 2.0), Flutter y sus
+paquetes, y los modelos de voz Celtia, Sharvard y LJSpeech, que **solo corren en
+compilación y nunca en el aparato**. Los logotipos institucionales son marcas de
+sus titulares y no se licencian aquí.
 
 El texto que manda es [LICENSE.md](LICENSE.md).
-
-## Estructura
-
-```
-lib/core/       tema, idiomas, audio (servicio, reproductor nativo, ids de voz)
-lib/data/       modelos, cargador, repositorio, validador de contenido
-lib/features/   juega/ (aula, asamblea de 4 fases, canciones con pulso, formación docente)
-                academy/ (familias) · calendario/ (escola·fogar, 0-6 anos)
-                english/ (palabras, repaso, escoita, colocacións, fonemas)
-                estimulacion/ (estimulación del lenguaje y el pensamiento)
-                premios/ (insignias y medallas) · bienvenida/ · creditos/
-assets/content/ unidades del mes, cápsulas, asambleas, canciones y premios en JSON, bilingües
-                calendario/ (10 meses, los 50 del trayecto y la guía de inglés en casa)
-                tpr/ (el inglés: 5 cursos de 800 palabras, cinco al día)
-assets/voice/   grabaciones neuronales (generadas en CI)
-assets/brand/   rejilla de píxeles de Lúa: de aquí salen icono y splash
-                awards/ (los 10 glifos de insignia) · logos/ (marcas)
-docs/capturas/  imágenes de la app; 32 las incrusta el manual
-tools/          gates y tubería de voz
-LICENSE.md      condiciones de uso: familias gratis, instituciones con licencia
-```

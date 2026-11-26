@@ -166,9 +166,12 @@ def comprobar() -> list:
                         fallos.append(f"{donde}: «{en}» tiene la categoría {categoria!r}.")
                     cuenta[categoria] = cuenta.get(categoria, 0) + 1
                     clave = _clave(en)
-                    if clave in vistas:
+                    # Frank, 26/11/2026 (O-20261126-5): una palabra sencilla de
+                    # una edad anterior puede volver como repaso si lo dice
+                    # «volve»; si no, nueva solo una vez en todo el trayecto.
+                    if clave in vistas and not (p.get("volve") and vistas[clave].startswith(p["volve"])):
                         fallos.append(f"{donde}: «{en}» ya era nueva en {vistas[clave]}.")
-                    vistas[clave] = donde
+                    vistas.setdefault(clave, donde)
                     malas = set(re.findall(r"\b[a-z]+\b", en.lower())) & PROHIBIDAS
                     if malas:
                         fallos.append(f"{donde}: «{en}» lleva {sorted(malas)}, que la lista excluye.")

@@ -68,6 +68,9 @@ class BotonEscuchar extends StatefulWidget {
   /// versión `VoiceStyle.slow` (1.6), equivalente a `speakPhraseSlow` de Valeria.
   final bool conVozLenta;
 
+  /// M4: avisa cuando la persona adulta pulsa para reproducir el audio.
+  final VoidCallback? onEscoitar;
+
   const BotonEscuchar({
     super.key,
     required this.audioService,
@@ -81,6 +84,7 @@ class BotonEscuchar extends StatefulWidget {
     this.descripcion,
     this.significado,
     this.conVozLenta = false,
+    this.onEscoitar,
   });
 
   static const _escuchar = LocalizedString(gl: 'Escoitar', es: 'Escuchar');
@@ -214,6 +218,7 @@ class _BotonEscucharState extends State<BotonEscuchar> {
       // Parar lo anterior antes de empezar: si no, dos tarjetas seguidas dejan
       // dos voces hablando encima.
       if (servicio.isPlaying) await servicio.stop();
+      widget.onEscoitar?.call();
       await servicio.playAsset(_ruta);
     }
   }
@@ -225,6 +230,7 @@ class _BotonEscucharState extends State<BotonEscuchar> {
       await servicio.stop();
     } else {
       if (servicio.isPlaying) await servicio.stop();
+      widget.onEscoitar?.call();
       await servicio.playAsset(_rutaLenta);
     }
   }

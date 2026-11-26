@@ -295,7 +295,8 @@
             "gl": "Levar un balde imaxinario pola asa",
             "es": "Llevar un cubo imaginario por el asa"
           },
-          "lamina": "pal_bucket"
+          "lamina": "pal_bucket",
+          "volve": "curso_2_3"
         },
         {
           "id": "3_4.xuno.s2.spade",
@@ -554,7 +555,8 @@
             "gl": "Pegar a man aberta ao chan coma unha estrela de mar",
             "es": "Pegar la mano abierta al suelo como una estrella de mar"
           },
-          "lamina": "pal_starfish"
+          "lamina": "pal_starfish",
+          "volve": "curso_2_3"
         },
         {
           "id": "3_4.xuno.s3.mussel",
@@ -578,7 +580,8 @@
             "gl": "Botar auga cara arriba coas mans desde a cabeza",
             "es": "Echar agua hacia arriba con las manos desde la cabeza"
           },
-          "lamina": "pal_whale"
+          "lamina": "pal_whale",
+          "volve": "curso_2_3"
         },
         {
           "id": "3_4.xuno.s3.dolphin",

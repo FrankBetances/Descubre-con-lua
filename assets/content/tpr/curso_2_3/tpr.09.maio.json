@@ -14,15 +14,15 @@
       "palabras": [
         {
           "id": "2_3.maio.s1.soap-pump",
-          "en": "Soap pump",
-          "gl": "Dosificador de xabón",
-          "es": "Dosificador de jabón",
+          "en": "Bubbles",
+          "gl": "Burbullas",
+          "es": "Burbujas",
           "tprAction": {
-            "gl": "Premer o dosificador",
-            "es": "Apretar el dosificador"
+            "gl": "Sinala ou colle o que nomeas: burbullas.",
+            "es": "Señala o coge lo que nombras: burbujas."
           },
           "category": "noun",
-          "lamina": "pal_soap_pump"
+          "lamina": "pal_bubbles"
         },
         {
           "id": "2_3.maio.s1.tap-water",
@@ -260,15 +260,15 @@
       "palabras": [
         {
           "id": "2_3.maio.s2.brush-head",
-          "en": "Brush head",
-          "gl": "Cabeza do cepillo",
-          "es": "Cabeza del cepillo",
+          "en": "Comb",
+          "gl": "Peite",
+          "es": "Peine",
           "tprAction": {
-            "gl": "Amosar a cabeza do cepillo",
-            "es": "Enseñar la cabeza del cepillo"
+            "gl": "Sinala ou colle o que nomeas: peite.",
+            "es": "Señala o coge lo que nombras: peine."
           },
           "category": "noun",
-          "lamina": "pal_brush_head"
+          "lamina": "pal_comb"
         },
         {
           "id": "2_3.maio.s2.rinse-cup",
@@ -507,27 +507,28 @@
       "palabras": [
         {
           "id": "2_3.maio.s3.water-table",
-          "en": "Water table",
-          "gl": "Mesa de auga",
-          "es": "Mesa de agua",
+          "en": "Bucket",
+          "gl": "Balde",
+          "es": "Cubo",
           "tprAction": {
-            "gl": "Pousar as mans na mesa de auga",
-            "es": "Posar las manos en la mesa de agua"
+            "gl": "Sinala ou colle o que nomeas: balde.",
+            "es": "Señala o coge lo que nombras: cubo."
           },
           "category": "noun",
-          "lamina": "pal_water_table"
+          "lamina": "pal_bucket"
         },
         {
           "id": "2_3.maio.s3.sieve",
-          "en": "Sieve",
-          "gl": "Coador",
-          "es": "Colador",
+          "en": "Jug",
+          "gl": "Xerra",
+          "es": "Jarra",
           "tprAction": {
-            "gl": "Deixar escorrer auga polo coador",
-            "es": "Dejar escurrir agua por el colador"
+            "gl": "Sinala ou colle o que nomeas: xerra.",
+            "es": "Señala o coge lo que nombras: jarra."
           },
           "category": "noun",
-          "lamina": "pal_sieve"
+          "lamina": "pal_jug",
+          "volve": "curso_0_2"
         },
         {
           "id": "2_3.maio.s3.measuring-cup",

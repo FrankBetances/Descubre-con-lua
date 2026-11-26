@@ -122,18 +122,26 @@ class _TarxetaLuaState extends State<TarxetaLua> {
   }
 
   Future<void> _xogar(CatalogoLua c) async {
-    final r = await widget.store.xogarHoxe(widget.crianza.id, c,
-        agora: _agora,
-        semana: widget.semana,
-        palabrasDaSemana: widget.palabrasDaSemana);
+    final r = await widget.store.xogarHoxe(
+      widget.crianza.id,
+      c,
+      agora: _agora,
+      semana: widget.semana,
+      palabrasDaSemana: widget.palabrasDaSemana,
+    );
     if (!mounted) return;
     setState(() {
       _cara = CaraLua.love;
       _humor = 'luaPurring';
     });
     _volver(const Duration(milliseconds: 1800));
-    await mostrarRecompensa(context, r, c, widget.language,
-        nome: widget.crianza.nome);
+    await mostrarRecompensa(
+      context,
+      r,
+      c,
+      widget.language,
+      nome: widget.crianza.nome,
+    );
   }
 
   @override
@@ -160,7 +168,10 @@ class _TarxetaLuaState extends State<TarxetaLua> {
         border: Border.all(color: acento.withAlpha(70)),
         boxShadow: const [
           BoxShadow(
-              color: Color(0x210F172A), blurRadius: 20, offset: Offset(0, 8)),
+            color: Color(0x210F172A),
+            blurRadius: 20,
+            offset: Offset(0, 8),
+          ),
         ],
       ),
       child: Column(
@@ -204,7 +215,9 @@ class _TarxetaLuaState extends State<TarxetaLua> {
                                   child: _Burbulla(
                                     borde: acento,
                                     child: const ObxectoLuaIcona(
-                                        id: 'snack_fish', alto: 12),
+                                      id: 'snack_fish',
+                                      alto: 12,
+                                    ),
                                   ),
                                 ),
                               if (_cara == CaraLua.love)
@@ -215,9 +228,10 @@ class _TarxetaLuaState extends State<TarxetaLua> {
                                     borde: Color(0xFFEF8296),
                                     fondo: Color(0xFFFFF0F4),
                                     child: PixelAward(
-                                        glyph: AwardGlyph.heart,
-                                        tier: AwardTier.teal,
-                                        size: 15),
+                                      glyph: AwardGlyph.heart,
+                                      tier: AwardTier.teal,
+                                      size: 15,
+                                    ),
                                   ),
                                 ),
                             ],
@@ -253,9 +267,10 @@ class _TarxetaLuaState extends State<TarxetaLua> {
                     Text(
                       widget.crianza.nome,
                       style: TextStyle(
-                          fontSize: 13,
-                          fontWeight: FontWeight.w800,
-                          color: acento),
+                        fontSize: 13,
+                        fontWeight: FontWeight.w800,
+                        color: acento,
+                      ),
                     ),
                     Row(
                       children: [
@@ -264,15 +279,18 @@ class _TarxetaLuaState extends State<TarxetaLua> {
                             'Nivel $nivel · ${c.nomeNivel(nivel).resolve(lang)}',
                             key: const Key('lua_nivel'),
                             style: const TextStyle(
-                                fontSize: 15,
-                                height: 1.25,
-                                fontWeight: FontWeight.w900,
-                                color: AppTheme.textPrimary),
+                              fontSize: 15,
+                              height: 1.25,
+                              fontWeight: FontWeight.w900,
+                              color: AppTheme.textPrimary,
+                            ),
                           ),
                         ),
                         Container(
                           padding: const EdgeInsets.symmetric(
-                              horizontal: 8, vertical: 4),
+                            horizontal: 8,
+                            vertical: 4,
+                          ),
                           decoration: BoxDecoration(
                             color: const Color(0xFFFFF3EA),
                             borderRadius: BorderRadius.circular(12),
@@ -287,12 +305,15 @@ class _TarxetaLuaState extends State<TarxetaLua> {
                                 locked: racha == 0,
                               ),
                               const SizedBox(width: 4),
-                              Text('$racha',
-                                  key: const Key('lua_racha'),
-                                  style: const TextStyle(
-                                      fontSize: 16,
-                                      fontWeight: FontWeight.w900,
-                                      color: Color(0xFFB4530F))),
+                              Text(
+                                '$racha',
+                                key: const Key('lua_racha'),
+                                style: const TextStyle(
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.w900,
+                                  color: Color(0xFFB4530F),
+                                ),
+                              ),
                             ],
                           ),
                         ),
@@ -316,9 +337,10 @@ class _TarxetaLuaState extends State<TarxetaLua> {
                               ? '${c.xpParaSeguinte(g.xp)} XP para o seguinte nivel'
                               : '${c.xpParaSeguinte(g.xp)} XP para el siguiente nivel'),
                       style: const TextStyle(
-                          fontSize: 12.5,
-                          fontWeight: FontWeight.w800,
-                          color: AppTheme.textSecondary),
+                        fontSize: 12.5,
+                        fontWeight: FontWeight.w800,
+                        color: AppTheme.textSecondary,
+                      ),
                     ),
                   ],
                 ),
@@ -342,23 +364,28 @@ class _TarxetaLuaState extends State<TarxetaLua> {
                       const ObxectoLuaIcona(id: 'snack_fish', alto: 12),
                       const SizedBox(width: 6),
                       Flexible(
-                        child: Text(c.humor['luaFeedFish']!.resolve(lang),
-                            style:
-                                const TextStyle(fontWeight: FontWeight.w900)),
+                        child: Text(
+                          c.humor['luaFeedFish']!.resolve(lang),
+                          style: const TextStyle(fontWeight: FontWeight.w900),
+                        ),
                       ),
                     ],
                   ),
                 ),
               TextButton(
                 key: const Key('lua_premios'),
-                onPressed: () => abrirPremiosLua(context,
-                    store: widget.store,
-                    crianza: widget.crianza,
-                    catalogo: c,
-                    language: lang,
-                    agora: _agora),
-                child: Text('${isGl ? 'Premios' : 'Premios'} ›',
-                    style: const TextStyle(fontWeight: FontWeight.w900)),
+                onPressed: () => abrirPremiosLua(
+                  context,
+                  store: widget.store,
+                  crianza: widget.crianza,
+                  catalogo: c,
+                  language: lang,
+                  agora: _agora,
+                ),
+                child: Text(
+                  '${isGl ? 'Premios' : 'Premios'} ›',
+                  style: const TextStyle(fontWeight: FontWeight.w900),
+                ),
               ),
             ],
           ),
@@ -392,8 +419,11 @@ class _Burbulla extends StatelessWidget {
   final Widget child;
   final Color borde;
   final Color fondo;
-  const _Burbulla(
-      {required this.child, required this.borde, this.fondo = Colors.white});
+  const _Burbulla({
+    required this.child,
+    required this.borde,
+    this.fondo = Colors.white,
+  });
 
   @override
   Widget build(BuildContext context) => Container(

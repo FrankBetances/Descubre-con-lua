@@ -125,17 +125,17 @@
           "es": "Descubrir"
         },
         "frase": {
-          "en": "splashy",
-          "gl": "que salpica",
-          "es": "que salpica"
+          "en": "Slippery",
+          "gl": "Esvaradío",
+          "es": "Resbaladizo"
         },
         "queFacer": {
-          "gl": "Dio ti mentres o fas, cara a cara e á súa altura: «splashy». Só ten que escoitar e mirar.",
-          "es": "Dilo tú mientras lo haces, cara a cara y a su altura: «splashy». Solo tiene que escuchar y mirar."
+          "gl": "Dio ti mentres o fas, cara a cara e á súa altura: «Slippery». Só ten que escoitar e mirar.",
+          "es": "Dilo tú mientras lo haces, cara a cara y a su altura: «Slippery». Solo tiene que escuchar y mirar."
         },
         "mans": {
-          "gl": "Sinala ou colle o que nomeas: que salpica.",
-          "es": "Señala o coge lo que nombras: que salpica."
+          "gl": "Sinala ou colle o que nomeas: Esvaradío.",
+          "es": "Señala o coge lo que nombras: Resbaladizo."
         },
         "esperaSegundos": 5,
         "nonPedir": {
@@ -144,16 +144,16 @@
         },
         "recast": {
           "silencio": {
-            "gl": "Fai ti o xesto e volve dicir «splashy» amodo, sorrindo, e segue co xogo.",
-            "es": "Haz tú el gesto y vuelve a decir «splashy» despacio, sonriendo, y sigue con el juego."
+            "gl": "Fai ti o xesto e volve dicir «Slippery» amodo, sorrindo, e segue co xogo.",
+            "es": "Haz tú el gesto y vuelve a decir «Slippery» despacio, sonriendo, y sigue con el juego."
           },
           "linguaCasa": {
-            "gl": "Acolle o que di na lingua da casa, asente e devólvello en inglés: «splashy».",
-            "es": "Acoge lo que dice en la lengua de casa, asiente y devuélveselo en inglés: «splashy»."
+            "gl": "Acolle o que di na lingua da casa, asente e devólvello en inglés: «Slippery».",
+            "es": "Acoge lo que dice en la lengua de casa, asiente y devuélveselo en inglés: «Slippery»."
           },
           "unhaPalabra": {
-            "gl": "Celébrao e engade o que falta: «Yes! splashy».",
-            "es": "Celébralo y añade lo que falta: «Yes! splashy»."
+            "gl": "Celébrao e engade o que falta: «Yes! Slippery».",
+            "es": "Celébralo y añade lo que falta: «Yes! Slippery»."
           }
         }
       },

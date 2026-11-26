@@ -508,15 +508,15 @@
       "palabras": [
         {
           "id": "2_3.xaneiro.s3.pavement",
-          "en": "Pavement",
-          "gl": "Beirarrúa",
-          "es": "Acera",
+          "en": "Street",
+          "gl": "Rúa",
+          "es": "Calle",
           "tprAction": {
-            "gl": "Camiñar pola beirarrúa",
-            "es": "Caminar por la acera"
+            "gl": "Sinala ou colle o que nomeas: rúa.",
+            "es": "Señala o coge lo que nombras: calle."
           },
           "category": "noun",
-          "lamina": "pal_pavement"
+          "lamina": "pal_street"
         },
         {
           "id": "2_3.xaneiro.s3.shop",

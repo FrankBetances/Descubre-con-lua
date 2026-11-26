@@ -1,0 +1,2259 @@
+{
+  "version": 1,
+  "peldanos": [
+    {
+      "nivel": 1,
+      "tipo": "comprension",
+      "titulo": {
+        "gl": "Comprender unha orde con xesto",
+        "es": "Comprender una orden con gesto"
+      }
+    },
+    {
+      "nivel": 2,
+      "tipo": "comprension",
+      "titulo": {
+        "gl": "Sinalar un obxecto",
+        "es": "Señalar un objeto"
+      }
+    },
+    {
+      "nivel": 3,
+      "tipo": "comprension",
+      "titulo": {
+        "gl": "Distinguir un contraste",
+        "es": "Distinguir un contraste"
+      }
+    },
+    {
+      "nivel": 4,
+      "tipo": "expresion",
+      "titulo": {
+        "gl": "Dicir a palabra",
+        "es": "Decir la palabra"
+      }
+    },
+    {
+      "nivel": 5,
+      "tipo": "expresion",
+      "titulo": {
+        "gl": "Dicir dúas palabras xuntas",
+        "es": "Decir dos palabras juntas"
+      }
+    },
+    {
+      "nivel": 6,
+      "tipo": "expresion",
+      "titulo": {
+        "gl": "Dicir unha frase curta",
+        "es": "Decir una frase corta"
+      }
+    }
+  ],
+  "cursos": {
+    "curso_2_3": [
+      {
+        "id": "c2_3_p1_1",
+        "peldano": 1,
+        "steamId": "STEAM-2_3-09",
+        "steamTitulo": {
+          "gl": "Flota ou afúndese?",
+          "es": "¿Flota o se hunde?"
+        },
+        "experimentoParte": {
+          "gl": "soltar o barco na tina con auga",
+          "es": "soltar el barco en el barreño con agua"
+        },
+        "en": "Put the boat on the water",
+        "enSignificado": {
+          "gl": "Pon o barco na auga",
+          "es": "Pon el barco en el agua"
+        },
+        "instrucion": {
+          "gl": "No experimento «Flota ou afúndese?» (soltar o barco na auga), pídelle cun xesto cara á cunca ou á lámina que faga coma quen pon o barquiño.",
+          "es": "En el experimento «¿Flota o se hunde?» (soltar el barco en el agua), pídele con un gesto hacia el cuenco o la lámina que haga como quien pone el barquito."
+        },
+        "obxectoCasa": {
+          "gl": "Un barquiño de papel ou culler na mesa",
+          "es": "Un barquito de papel o cuchara en la mesa"
+        },
+        "lamina": "pal_boat",
+        "palabrasSemente": [
+          "boat",
+          "water"
+        ]
+      },
+      {
+        "id": "c2_3_p1_2",
+        "peldano": 1,
+        "steamId": "STEAM-2_3-10",
+        "steamTitulo": {
+          "gl": "O vento empurra o barco",
+          "es": "El viento empuja el barco"
+        },
+        "experimentoParte": {
+          "gl": "soprar suave para mover o barco",
+          "es": "soplar suave para mover el barco"
+        },
+        "en": "Blow the boat",
+        "enSignificado": {
+          "gl": "Sopra o barco",
+          "es": "Sopla el barco"
+        },
+        "instrucion": {
+          "gl": "No experimento «O vento empurra o barco» (soprar para mover o barco), dislle a frase abrindo os beizos sen ensinarlle aínda o movemento: mira se sopra.",
+          "es": "En el experimento «El viento empuja el barco» (soplar para mover el barco), dile la frase redondeando los labios antes de soplar tú: mira si sopla."
+        },
+        "obxectoCasa": {
+          "gl": "Un barquiño ou folla lixeira sobre a mesa",
+          "es": "Un barquito o trozo de papel sobre la mesa"
+        },
+        "lamina": "pal_blow_the_boat",
+        "palabrasSemente": [
+          "blow"
+        ]
+      },
+      {
+        "id": "c2_3_p1_3",
+        "peldano": 1,
+        "steamId": "STEAM-2_3-03",
+        "steamTitulo": {
+          "gl": "Primeiro mollo, despois xabón",
+          "es": "Primero mojo, después jabón"
+        },
+        "experimentoParte": {
+          "gl": "mollar as mans antes do xabón",
+          "es": "mojar las manos antes del jabón"
+        },
+        "en": "Wash your hands",
+        "enSignificado": {
+          "gl": "Lava as mans",
+          "es": "Lava las manos"
+        },
+        "instrucion": {
+          "gl": "No experimento «Primeiro mollo, despois xabón» (mollar e enjabonar), pídelle co xesto de fregar as mans se comprende a orde.",
+          "es": "En el experimento «Primero mojo, después jabón» (mojar y enjabonar), pídele con el gesto de frotar las manos si comprende la orden."
+        },
+        "obxectoCasa": {
+          "gl": "Cunca pequena con auga ou toalla",
+          "es": "Cuenco pequeño con agua o toalla"
+        },
+        "lamina": "pal_soap",
+        "palabrasSemente": [
+          "wash",
+          "soap"
+        ]
+      },
+      {
+        "id": "c2_3_p2_1",
+        "peldano": 2,
+        "steamId": "STEAM-2_3-09",
+        "steamTitulo": {
+          "gl": "Flota ou afúndese?",
+          "es": "¿Flota o se hunde?"
+        },
+        "experimentoParte": {
+          "gl": "identificar o barco que flota",
+          "es": "identificar el barco que flota"
+        },
+        "en": "Where is the boat?",
+        "enSignificado": {
+          "gl": "Onde está o barco?",
+          "es": "¿Dónde está el barco?"
+        },
+        "instrucion": {
+          "gl": "No experimento «Flota ou afúndese?» (identificar o barco que flota), ensínalle a lámina ou dous obxectos e mira se sinala o barco.",
+          "es": "En el experimento «¿Flota o se hunde?» (identificar el barco que flota), enséñale la lámina o dos objetos y mira si señala el barco."
+        },
+        "obxectoCasa": {
+          "gl": "Un barco de xoguete e unha pedra",
+          "es": "Un barco de juguete y una piedra"
+        },
+        "lamina": "pal_all_aboard_the_boat",
+        "palabrasSemente": [
+          "boat"
+        ]
+      },
+      {
+        "id": "c2_3_p2_2",
+        "peldano": 2,
+        "steamId": "STEAM-2_3-11",
+        "steamTitulo": {
+          "gl": "Grande aquí, pequeno alí",
+          "es": "Grande aquí, pequeño allí"
+        },
+        "experimentoParte": {
+          "gl": "atopar a pedra para comparar tamaños",
+          "es": "encontrar la piedra para comparar tamaños"
+        },
+        "en": "Find the stone",
+        "enSignificado": {
+          "gl": "Atopa a pedra",
+          "es": "Encuentra la piedra"
+        },
+        "instrucion": {
+          "gl": "No experimento «Grande aquí, pequeno alí» (atopar pezas para ordenar por tamaño), pídelle que sinale a pedra na lámina ou na mesa.",
+          "es": "En el experimento «Grande aquí, pequeño allí» (encontrar piezas para ordenar por tamaño), pídele que señale la piedra en la lámina o en la mesa."
+        },
+        "obxectoCasa": {
+          "gl": "Unha pedra limpa e unha toalla",
+          "es": "Una piedra limpia y una toalla"
+        },
+        "lamina": "pal_a_big_stone",
+        "palabrasSemente": [
+          "stone"
+        ]
+      },
+      {
+        "id": "c2_3_p2_3",
+        "peldano": 2,
+        "steamId": "STEAM-2_3-04",
+        "steamTitulo": {
+          "gl": "A toalla mollada pesa",
+          "es": "La toalla mojada pesa"
+        },
+        "experimentoParte": {
+          "gl": "atopar a toalla para comprobar o peso",
+          "es": "encontrar la toalla para comprobar el peso"
+        },
+        "en": "Show me the towel",
+        "enSignificado": {
+          "gl": "Ensíname a toalla",
+          "es": "Enséñame la toalla"
+        },
+        "instrucion": {
+          "gl": "No experimento «A toalla mollada pesa» (identificar a toalla antes de mollala), mira se sinala a toalla na lámina ou no baño.",
+          "es": "En el experimento «La toalla mojada pesa» (identificar la toalla antes de mojarla), mira si señala la toalla en la lámina o en el baño."
+        },
+        "obxectoCasa": {
+          "gl": "Unha toalla pequena seca",
+          "es": "Una toalla pequeña seca"
+        },
+        "lamina": "pal_hand_towel",
+        "palabrasSemente": [
+          "towel"
+        ]
+      },
+      {
+        "id": "c2_3_p3_1",
+        "peldano": 3,
+        "steamId": "STEAM-2_3-11",
+        "steamTitulo": {
+          "gl": "Grande aquí, pequeno alí",
+          "es": "Grande aquí, pequeño allí"
+        },
+        "experimentoParte": {
+          "gl": "diferenciar tamaño grande e pequeno",
+          "es": "diferenciar tamaño grande y pequeño"
+        },
+        "en": "Big or small?",
+        "enSignificado": {
+          "gl": "Grande ou pequeno?",
+          "es": "¿Grande o pequeño?"
+        },
+        "instrucion": {
+          "gl": "No experimento «Grande aquí, pequeno alí» (comparar tamaños), pon dous obxectos ou mira a lámina e pregúntalle cal é «Big».",
+          "es": "En el experimento «Grande aquí, pequeño allí» (comparar tamaños), pon dos objetos o mira la lámina y pregúntale cuál es «Big»."
+        },
+        "obxectoCasa": {
+          "gl": "Dúas culleres ou bloques de tamaño distinto",
+          "es": "Dos cucharas o bloques de distinto tamaño"
+        },
+        "lamina": "pal_big",
+        "palabrasSemente": [
+          "big",
+          "small"
+        ]
+      },
+      {
+        "id": "c2_3_p3_2",
+        "peldano": 3,
+        "steamId": "STEAM-2_3-04",
+        "steamTitulo": {
+          "gl": "A toalla mollada pesa",
+          "es": "La toalla mojada pesa"
+        },
+        "experimentoParte": {
+          "gl": "contrastar toalla mollada e seca",
+          "es": "contrastar toalla mojada y seca"
+        },
+        "en": "Wet or dry?",
+        "enSignificado": {
+          "gl": "Mollado ou seco?",
+          "es": "¿Mojado o seco?"
+        },
+        "instrucion": {
+          "gl": "No experimento «A toalla mollada pesa» (contrastar mollado e seco), toca con el a lámina ou un pano húmido e outro seco e distingue «Wet».",
+          "es": "En el experimento «La toalla mojada pesa» (contrastar mojado y seco), toca con él la lámina o un paño húmedo y otro seco y distingue «Wet»."
+        },
+        "obxectoCasa": {
+          "gl": "Un pano seco e outro cunhas pingas de auga",
+          "es": "Un paño seco y otro con unas gotas de agua"
+        },
+        "lamina": "pal_all_wet",
+        "palabrasSemente": [
+          "wet",
+          "dry"
+        ]
+      },
+      {
+        "id": "c2_3_p3_3",
+        "peldano": 3,
+        "steamId": "STEAM-2_3-12",
+        "steamTitulo": {
+          "gl": "Pum grande, pum pequeno",
+          "es": "Pum grande, pum pequeño"
+        },
+        "experimentoParte": {
+          "gl": "contrastar golpe forte e suave",
+          "es": "contrastar golpe fuerte y suave"
+        },
+        "en": "Loud or quiet?",
+        "enSignificado": {
+          "gl": "Forte ou baixiño?",
+          "es": "¿Fuerte o bajito?"
+        },
+        "instrucion": {
+          "gl": "No experimento «Pum grande, pum pequeno» (distinguir intensidade do son), fai un toque suave na mesa e outro forte e mira se escolle «Quiet».",
+          "es": "En el experimento «Pum grande, pum pequeño» (distinguir intensidad del sonido), da un toque suave en la mesa y otro fuerte y mira si elige «Quiet»."
+        },
+        "obxectoCasa": {
+          "gl": "A mesa ou un tambor de caixa",
+          "es": "La mesa o un tambor de caja"
+        },
+        "lamina": "pal_loud_and_soft",
+        "palabrasSemente": [
+          "loud",
+          "quiet"
+        ]
+      },
+      {
+        "id": "c2_3_p4_1",
+        "peldano": 4,
+        "steamId": "STEAM-2_3-09",
+        "steamTitulo": {
+          "gl": "Flota ou afúndese?",
+          "es": "¿Flota o se hunde?"
+        },
+        "experimentoParte": {
+          "gl": "nomear cando o obxecto flota",
+          "es": "nombrar cuando el objeto flota"
+        },
+        "en": "Float",
+        "enSignificado": {
+          "gl": "Flota",
+          "es": "Flota"
+        },
+        "instrucion": {
+          "gl": "No experimento «Flota ou afúndese?» (observar se flota), sinala o barco na auga ou na lámina e agarda a ver se di «Float».",
+          "es": "En el experimento «¿Flota o se hunde?» (observar si flota), señala el barco en el agua o en la lámina y espera a ver si dice «Float»."
+        },
+        "obxectoCasa": {
+          "gl": "Un tapón de cortiza nun vaso con auga",
+          "es": "Un corcho en un vaso con agua"
+        },
+        "lamina": "pal_float",
+        "palabrasSemente": [
+          "float"
+        ]
+      },
+      {
+        "id": "c2_3_p4_2",
+        "peldano": 4,
+        "steamId": "STEAM-2_3-01",
+        "steamTitulo": {
+          "gl": "Pan duro, pan brando",
+          "es": "Pan duro, pan blando"
+        },
+        "experimentoParte": {
+          "gl": "nomear a textura dura fronte á branda",
+          "es": "nombrar la textura dura frente a la blanda"
+        },
+        "en": "Hard",
+        "enSignificado": {
+          "gl": "Duro",
+          "es": "Duro"
+        },
+        "instrucion": {
+          "gl": "No experimento «Pan duro, pan brando» (explorar texturas), preme con el algo duro e algo brando e mira se nomea «Hard».",
+          "es": "En el experimento «Pan duro, pan blando» (explorar texturas), aprieta con él algo duro y algo blando y mira si nombra «Hard»."
+        },
+        "obxectoCasa": {
+          "gl": "Un anaco de pan ou culler de madeira",
+          "es": "Un trozo de pan o cuchara de madera"
+        },
+        "lamina": "pal_hard",
+        "palabrasSemente": [
+          "hard"
+        ]
+      },
+      {
+        "id": "c2_3_p4_3",
+        "peldano": 4,
+        "steamId": "STEAM-2_3-10",
+        "steamTitulo": {
+          "gl": "O vento empurra o barco",
+          "es": "El viento empuja el barco"
+        },
+        "experimentoParte": {
+          "gl": "nomear as ondas que fai o vento",
+          "es": "nombrar las olas que hace el viento"
+        },
+        "en": "Waves",
+        "enSignificado": {
+          "gl": "Ondas",
+          "es": "Olas"
+        },
+        "instrucion": {
+          "gl": "No experimento «O vento empurra o barco» (facer ondas suaves co sopro), sinala a lámina das ondas e mira se di «Waves».",
+          "es": "En el experimento «El viento empuja el barco» (hacer olas suaves al soplar), señala la lámina de las olas y mira si dice «Waves»."
+        },
+        "obxectoCasa": {
+          "gl": "Un pano azul ondulado no chan",
+          "es": "Un paño azul ondulado en el suelo"
+        },
+        "lamina": "pal_gentle_waves",
+        "palabrasSemente": [
+          "waves"
+        ]
+      },
+      {
+        "id": "c2_3_p5_1",
+        "peldano": 5,
+        "steamId": "STEAM-2_3-11",
+        "steamTitulo": {
+          "gl": "Grande aquí, pequeno alí",
+          "es": "Grande aquí, pequeño allí"
+        },
+        "experimentoParte": {
+          "gl": "xuntar adxectivo e obxecto do experimento",
+          "es": "juntar adjetivo y objeto del experimento"
+        },
+        "en": "Big stone",
+        "enSignificado": {
+          "gl": "Pedra grande",
+          "es": "Piedra grande"
+        },
+        "instrucion": {
+          "gl": "No experimento «Grande aquí, pequeno alí» (emparellar tamaño e peza), sinala a pedra grande na lámina e convídaoo a dicir «Big stone».",
+          "es": "En el experimento «Grande aquí, pequeño allí» (emparejar tamaño y pieza), señala la piedra grande en la lámina e invítalo a decir «Big stone»."
+        },
+        "obxectoCasa": {
+          "gl": "Unha pedra ou pelota grande",
+          "es": "Una piedra o pelota grande"
+        },
+        "lamina": "pal_a_big_stone",
+        "palabrasSemente": [
+          "big",
+          "stone"
+        ]
+      },
+      {
+        "id": "c2_3_p5_2",
+        "peldano": 5,
+        "steamId": "STEAM-2_3-04",
+        "steamTitulo": {
+          "gl": "A toalla mollada pesa",
+          "es": "La toalla mojada pesa"
+        },
+        "experimentoParte": {
+          "gl": "xuntar estado e obxecto ao secarnos",
+          "es": "juntar estado y objeto al secarnos"
+        },
+        "en": "Dry towel",
+        "enSignificado": {
+          "gl": "Toalla seca",
+          "es": "Toalla seca"
+        },
+        "instrucion": {
+          "gl": "No experimento «A toalla mollada pesa» (comparar coa seca), toca a toalla seca e mira se di «Dry towel».",
+          "es": "En el experimento «La toalla mojada pesa» (comparar con la seca), toca la toalla seca y mira si dice «Dry towel»."
+        },
+        "obxectoCasa": {
+          "gl": "Toalla pequena sen mollar",
+          "es": "Toalla pequeña sin mojar"
+        },
+        "lamina": "pal_dry",
+        "palabrasSemente": [
+          "dry",
+          "towel"
+        ]
+      },
+      {
+        "id": "c2_3_p5_3",
+        "peldano": 5,
+        "steamId": "STEAM-2_3-10",
+        "steamTitulo": {
+          "gl": "O vento empurra o barco",
+          "es": "El viento empuja el barco"
+        },
+        "experimentoParte": {
+          "gl": "pedir o barco pequeno ou as ondas grandes",
+          "es": "nombrar tamaño e onda en el experimento"
+        },
+        "en": "Big waves",
+        "enSignificado": {
+          "gl": "Ondas grandes",
+          "es": "Olas grandes"
+        },
+        "instrucion": {
+          "gl": "No experimento «O vento empurra o barco» (soprar máis forte), sinala as ondas grandes e escoita se xunta «Big waves».",
+          "es": "En el experimento «El viento empuja el barco» (soplar más fuerte), señala las olas grandes y escucha si junta «Big waves»."
+        },
+        "obxectoCasa": {
+          "gl": "Manta ou pano azul sacudido con forza",
+          "es": "Manta o paño azul sacudido con fuerza"
+        },
+        "lamina": "pal_big_waves",
+        "palabrasSemente": [
+          "big",
+          "waves"
+        ]
+      },
+      {
+        "id": "c2_3_p6_1",
+        "peldano": 6,
+        "steamId": "STEAM-2_3-09",
+        "steamTitulo": {
+          "gl": "Flota ou afúndese?",
+          "es": "¿Flota o se hunde?"
+        },
+        "experimentoParte": {
+          "gl": "dicir o resultado do barco na auga",
+          "es": "decir el resultado del barco en el agua"
+        },
+        "en": "The boat floats!",
+        "enSignificado": {
+          "gl": "O barco flota!",
+          "es": "¡El barco flota!"
+        },
+        "instrucion": {
+          "gl": "No experimento «Flota ou afúndese?» (comprobar o barco na auga), pregúntalle que pasa co barco e mira se repite «The boat floats!».",
+          "es": "En el experimento «¿Flota o se hunde?» (comprobar el barco en el agua), pregúntale qué pasa con el barco y mira si dice «The boat floats!»."
+        },
+        "obxectoCasa": {
+          "gl": "Barquiño flotando nunha cunca",
+          "es": "Barquito flotando en un cuenco"
+        },
+        "lamina": "pal_float_or_sink",
+        "palabrasSemente": [
+          "boat",
+          "float"
+        ]
+      },
+      {
+        "id": "c2_3_p6_2",
+        "peldano": 6,
+        "steamId": "STEAM-2_3-04",
+        "steamTitulo": {
+          "gl": "A toalla mollada pesa",
+          "es": "La toalla mojada pesa"
+        },
+        "experimentoParte": {
+          "gl": "expresar que a toalla está mollada",
+          "es": "expresar que la toalla está mojada"
+        },
+        "en": "It is wet!",
+        "enSignificado": {
+          "gl": "Está mollado!",
+          "es": "¡Está mojado!"
+        },
+        "instrucion": {
+          "gl": "No experimento «A toalla mollada pesa» (comprobar o pano mollado), tórceo suavemente e mira se di a frase curta «It is wet!».",
+          "es": "En el experimento «La toalla mojada pesa» (comprobar el paño mojado), escúrrelo suavemente y mira si dice la frase corta «It is wet!»."
+        },
+        "obxectoCasa": {
+          "gl": "Unha esponxa ou toalla mollada",
+          "es": "Una esponja o toalla mojada"
+        },
+        "lamina": "pal_dripping_wet",
+        "palabrasSemente": [
+          "wet"
+        ]
+      },
+      {
+        "id": "c2_3_p6_3",
+        "peldano": 6,
+        "steamId": "STEAM-2_3-03",
+        "steamTitulo": {
+          "gl": "Primeiro mollo, despois xabón",
+          "es": "Primero mojo, después jabón"
+        },
+        "experimentoParte": {
+          "gl": "celebrar o lavado con xabón e auga",
+          "es": "celebrar el lavado con jabón y agua"
+        },
+        "en": "Soap and water!",
+        "enSignificado": {
+          "gl": "Xabón e auga!",
+          "es": "¡Jabón y agua!"
+        },
+        "instrucion": {
+          "gl": "No experimento «Primeiro mollo, despois xabón» (enxabonar as mans), ensínalle a lámina e mira se di «Soap and water!».",
+          "es": "En el experimento «Primero mojo, después jabón» (enjabonar las manos), enséñale la lámina y mira si dice «Soap and water!»."
+        },
+        "obxectoCasa": {
+          "gl": "Xabón de mans e auga",
+          "es": "Jabón de manos y agua"
+        },
+        "lamina": "pal_soap_and_water",
+        "palabrasSemente": [
+          "soap",
+          "water"
+        ]
+      }
+    ],
+    "curso_3_4": [
+      {
+        "id": "c3_4_p1_1",
+        "peldano": 1,
+        "steamId": "STEAM-3_4-09",
+        "steamTitulo": {
+          "gl": "Que torre aguanta?",
+          "es": "¿Qué torre aguanta?"
+        },
+        "experimentoParte": {
+          "gl": "colocar un bloque sobre outro",
+          "es": "colocar un bloque sobre otro"
+        },
+        "en": "Put a block on top",
+        "enSignificado": {
+          "gl": "Pon un bloque enriba",
+          "es": "Pon un bloque encima"
+        },
+        "instrucion": {
+          "gl": "No experimento «Que torre aguanta?» (apilar bloques na base), pídelle cun xesto cara á torre ou á lámina se entende onde poñer o bloque.",
+          "es": "En el experimento «¿Qué torre aguanta?» (apilar bloques en la base), pídele con un gesto hacia la torre o la lámina si entiende dónde poner el bloque."
+        },
+        "obxectoCasa": {
+          "gl": "Dous bloques ou caixiñas pequenas",
+          "es": "Dos bloques o cajitas pequeñas"
+        },
+        "lamina": "pal_blocks",
+        "palabrasSemente": [
+          "block"
+        ]
+      },
+      {
+        "id": "c3_4_p1_2",
+        "peldano": 1,
+        "steamId": "STEAM-3_4-04",
+        "steamTitulo": {
+          "gl": "Verter amodo",
+          "es": "Verter despacio"
+        },
+        "experimentoParte": {
+          "gl": "verter auga dun vaso a outro sen verter fóra",
+          "es": "verter agua de un vaso a otro sin derramar"
+        },
+        "en": "Pour into the cup",
+        "enSignificado": {
+          "gl": "Verte no vaso",
+          "es": "Vierte en el vaso"
+        },
+        "instrucion": {
+          "gl": "No experimento «Verter amodo» (trasvasar entre vasos), pídelle cun xesto que faga coma quen verte dun vaso a outro.",
+          "es": "En el experimento «Verter despacio» (trasvasar entre vasos), pídele con un gesto que haga como quien vierte de un vaso a otro."
+        },
+        "obxectoCasa": {
+          "gl": "Dous vasos de plástico",
+          "es": "Dos vasos de plástico"
+        },
+        "lamina": "pal_cup",
+        "palabrasSemente": [
+          "cup"
+        ]
+      },
+      {
+        "id": "c3_4_p1_3",
+        "peldano": 1,
+        "steamId": "STEAM-3_4-11",
+        "steamTitulo": {
+          "gl": "O tren baixa a costa",
+          "es": "El tren baja la cuesta"
+        },
+        "experimentoParte": {
+          "gl": "soltar o tren pola rampla inclinada",
+          "es": "soltar el tren por la rampa inclinada"
+        },
+        "en": "Roll it down!",
+        "enSignificado": {
+          "gl": "Faio baixar rodando!",
+          "es": "¡Hazlo bajar rodando!"
+        },
+        "instrucion": {
+          "gl": "No experimento «O tren baixa a costa» (deixar caer pola rampla), pídelle que solte un xoguete ou coche pola costa dun libro.",
+          "es": "En el experimento «El tren baja la cuesta» (dejar caer por la rampa), pídele que suelte un juguete o coche por la cuesta de un libro."
+        },
+        "obxectoCasa": {
+          "gl": "Un libro inclinado e un tren ou coche pequeno",
+          "es": "Un libro inclinado y un tren o coche pequeño"
+        },
+        "lamina": "pal_the_train_has_gone_down",
+        "palabrasSemente": [
+          "train"
+        ]
+      },
+      {
+        "id": "c3_4_p2_1",
+        "peldano": 2,
+        "steamId": "STEAM-3_4-10",
+        "steamTitulo": {
+          "gl": "Vermello, azul, vermello…",
+          "es": "Rojo, azul, rojo…"
+        },
+        "experimentoParte": {
+          "gl": "sinalar a cor da serie na mesa",
+          "es": "señalar el color de la serie en la mesa"
+        },
+        "en": "Touch the blue cup",
+        "enSignificado": {
+          "gl": "Toca o vaso azul",
+          "es": "Toca el vaso azul"
+        },
+        "instrucion": {
+          "gl": "No experimento «Vermello, azul, vermello…» (continuar a serie), pon algo vermello e azul ou usa a lámina e mira se sinala o vaso azul.",
+          "es": "En el experimento «Rojo, azul, rojo…» (continuar la serie), pon algo rojo y azul o usa la lámina y mira si señala el vaso azul."
+        },
+        "obxectoCasa": {
+          "gl": "Un vaso ou tapa azul e outro vermello",
+          "es": "Un vaso o tapa azul y otro rojo"
+        },
+        "lamina": "pal_blue_cup",
+        "palabrasSemente": [
+          "blue",
+          "cup"
+        ]
+      },
+      {
+        "id": "c3_4_p2_2",
+        "peldano": 2,
+        "steamId": "STEAM-3_4-01",
+        "steamTitulo": {
+          "gl": "A sombra da torre",
+          "es": "La sombra de la torre"
+        },
+        "experimentoParte": {
+          "gl": "localizar a sombra proxectada no chan",
+          "es": "localizar la sombra proyectada en el suelo"
+        },
+        "en": "Point to the shadow",
+        "enSignificado": {
+          "gl": "Sinala a sombra",
+          "es": "Señala la sombra"
+        },
+        "instrucion": {
+          "gl": "No experimento «A sombra da torre» (observar a sombra cunha lanterna), pídelle que sinale «shadow» na lámina ou na mesa.",
+          "es": "En el experimento «La sombra de la torre» (observar la sombra con una linterna), pídele que señale «shadow» en la lámina o en la mesa."
+        },
+        "obxectoCasa": {
+          "gl": "Unha botella ou vaso diante dunha lanterna",
+          "es": "Una botella o vaso delante de una linterna"
+        },
+        "lamina": "pal_shadow",
+        "palabrasSemente": [
+          "shadow"
+        ]
+      },
+      {
+        "id": "c3_4_p2_3",
+        "peldano": 2,
+        "steamId": "STEAM-3_4-06",
+        "steamTitulo": {
+          "gl": "A cara na culler",
+          "es": "La cara en la cuchara"
+        },
+        "experimentoParte": {
+          "gl": "atopar a culler brillante do reflexo",
+          "es": "encontrar la cuchara brillante del reflejo"
+        },
+        "en": "Where is the spoon?",
+        "enSignificado": {
+          "gl": "Onde está a culler?",
+          "es": "¿Dónde está la cuchara?"
+        },
+        "instrucion": {
+          "gl": "No experimento «A cara na culler» (mirarse polo dereito e polo revés), pídelle que sinale a culler.",
+          "es": "En el experimento «La cara en la cuchara» (mirarse por delante y por detrás), pídele que señale la cuchara."
+        },
+        "obxectoCasa": {
+          "gl": "Unha culler metálica limpa",
+          "es": "Una cuchara metálica limpia"
+        },
+        "lamina": "pal_a_spoon_for_you",
+        "palabrasSemente": [
+          "spoon"
+        ]
+      },
+      {
+        "id": "c3_4_p3_1",
+        "peldano": 3,
+        "steamId": "STEAM-3_4-09",
+        "steamTitulo": {
+          "gl": "Que torre aguanta?",
+          "es": "¿Qué torre aguanta?"
+        },
+        "experimentoParte": {
+          "gl": "distinguir torre alta estable da que bambalea",
+          "es": "distinguir torre alta estable de la que tambalea"
+        },
+        "en": "Tall or wobbly?",
+        "enSignificado": {
+          "gl": "Alta ou bambaleante?",
+          "es": "¿Alta o tambaleante?"
+        },
+        "instrucion": {
+          "gl": "No experimento «Que torre aguanta?» (probar a estabilidade da torre), sinala a lámina e mira se distingue a torre firme («Tall»).",
+          "es": "En el experimento «¿Qué torre aguanta?» (probar la estabilidad de la torre), señala la lámina y mira si distingue la torre firme («Tall»)."
+        },
+        "obxectoCasa": {
+          "gl": "Tres bloques apilados na mesa",
+          "es": "Tres bloques apilados en la mesa"
+        },
+        "lamina": "pal_tall_tower",
+        "palabrasSemente": [
+          "tall",
+          "tower"
+        ]
+      },
+      {
+        "id": "c3_4_p3_2",
+        "peldano": 3,
+        "steamId": "STEAM-3_4-05",
+        "steamTitulo": {
+          "gl": "A música dos vasos",
+          "es": "La música de los vasos"
+        },
+        "experimentoParte": {
+          "gl": "contrastar vaso cheo grave e vaso case baleiro",
+          "es": "contrastar vaso lleno grave y vaso casi vacío"
+        },
+        "en": "Loud or quiet?",
+        "enSignificado": {
+          "gl": "Forte ou baixiño?",
+          "es": "¿Fuerte o bajito?"
+        },
+        "instrucion": {
+          "gl": "No experimento «A música dos vasos» (golpear vasos con distinta auga), toca suave e forte e mira se escolle «Quiet».",
+          "es": "En el experimento «La música de los vasos» (golpear vasos con distinta agua), toca suave y fuerte y mira si elige «Quiet»."
+        },
+        "obxectoCasa": {
+          "gl": "Dous vasos con distinta altura de auga e culler",
+          "es": "Dos vasos con distinta altura de agua y cuchara"
+        },
+        "lamina": "pal_added_water_sound_low",
+        "palabrasSemente": [
+          "loud",
+          "quiet"
+        ]
+      },
+      {
+        "id": "c3_4_p3_3",
+        "peldano": 3,
+        "steamId": "STEAM-3_4-10",
+        "steamTitulo": {
+          "gl": "Vermello, azul, vermello…",
+          "es": "Rojo, azul, rojo…"
+        },
+        "experimentoParte": {
+          "gl": "contrastar pezas vermellas e azuis da serie",
+          "es": "contrastar piezas rojas y azules de la serie"
+        },
+        "en": "Red or blue?",
+        "enSignificado": {
+          "gl": "Vermello ou azul?",
+          "es": "¿Rojo o azul?"
+        },
+        "instrucion": {
+          "gl": "No experimento «Vermello, azul, vermello…» (clasificar cores da serie), amósalle a tarxeta vermella e a azul e mira se distingue «Red».",
+          "es": "En el experimento «Rojo, azul, rojo…» (clasificar colores de la serie), muéstrale la tarjeta roja y la azul y mira si distingue «Red»."
+        },
+        "obxectoCasa": {
+          "gl": "Dúas tapas ou pezas vermella e azul",
+          "es": "Dos tapas o piezas roja y azul"
+        },
+        "lamina": "pal_red_card",
+        "palabrasSemente": [
+          "red",
+          "blue"
+        ]
+      },
+      {
+        "id": "c3_4_p4_1",
+        "peldano": 4,
+        "steamId": "STEAM-3_4-09",
+        "steamTitulo": {
+          "gl": "Que torre aguanta?",
+          "es": "¿Qué torre aguanta?"
+        },
+        "experimentoParte": {
+          "gl": "nomear a torre construída",
+          "es": "nombrar la torre construida"
+        },
+        "en": "Tower",
+        "enSignificado": {
+          "gl": "Torre",
+          "es": "Torre"
+        },
+        "instrucion": {
+          "gl": "No experimento «Que torre aguanta?» (erixir a torre sen caer), sinala a lámina da torre e escoita se di «Tower».",
+          "es": "En el experimento «¿Qué torre aguanta?» (levantar la torre sin caer), señala la lámina de la torre y escucha si dice «Tower»."
+        },
+        "obxectoCasa": {
+          "gl": "Varios vasos ou bloques apilados",
+          "es": "Varios vasos o bloques apilados"
+        },
+        "lamina": "pal_tower",
+        "palabrasSemente": [
+          "tower"
+        ]
+      },
+      {
+        "id": "c3_4_p4_2",
+        "peldano": 4,
+        "steamId": "STEAM-3_4-02",
+        "steamTitulo": {
+          "gl": "O xeo no zume",
+          "es": "El hielo en el zumo"
+        },
+        "experimentoParte": {
+          "gl": "nomear o zume antes de botar o xeo",
+          "es": "nombrar el zumo antes de echar el hielo"
+        },
+        "en": "Juice",
+        "enSignificado": {
+          "gl": "Zume",
+          "es": "Zumo"
+        },
+        "instrucion": {
+          "gl": "No experimento «O xeo no zume» (observar como arrefría e derrete), sinala o vaso con zume e mira se di «Juice».",
+          "es": "En el experimento «El hielo en el zumo» (observar cómo enfría y derrite), señala el vaso con zumo y mira si dice «Juice»."
+        },
+        "obxectoCasa": {
+          "gl": "Un vaso con auga ou zume",
+          "es": "Un vaso con agua o zumo"
+        },
+        "lamina": "pal_juice_in_a_cup",
+        "palabrasSemente": [
+          "juice"
+        ]
+      },
+      {
+        "id": "c3_4_p4_3",
+        "peldano": 4,
+        "steamId": "STEAM-3_4-11",
+        "steamTitulo": {
+          "gl": "O tren baixa a costa",
+          "es": "El tren baja la cuesta"
+        },
+        "experimentoParte": {
+          "gl": "nomear o tren da pista inclinada",
+          "es": "nombrar el tren de la pista inclinada"
+        },
+        "en": "Train",
+        "enSignificado": {
+          "gl": "Tren",
+          "es": "Tren"
+        },
+        "instrucion": {
+          "gl": "No experimento «O tren baixa a costa» (preparar o vagón enriba), sinala a lámina do tren e mira se di «Train».",
+          "es": "En el experimento «El tren baja la cuesta» (preparar el vagón arriba), señala la lámina del tren y mira si dice «Train»."
+        },
+        "obxectoCasa": {
+          "gl": "Un trencito ou caixiña con rodas",
+          "es": "Un trenecito o cajita con ruedas"
+        },
+        "lamina": "pal_pal_train",
+        "palabrasSemente": [
+          "train"
+        ]
+      },
+      {
+        "id": "c3_4_p5_1",
+        "peldano": 5,
+        "steamId": "STEAM-3_4-09",
+        "steamTitulo": {
+          "gl": "Que torre aguanta?",
+          "es": "¿Qué torre aguanta?"
+        },
+        "experimentoParte": {
+          "gl": "describir a altura da torre que aguanta",
+          "es": "describir la altura de la torre que aguanta"
+        },
+        "en": "Tall tower",
+        "enSignificado": {
+          "gl": "Torre alta",
+          "es": "Torre alta"
+        },
+        "instrucion": {
+          "gl": "No experimento «Que torre aguanta?» (engadir un piso firme), amósalle a torre alta e mira se xunta «Tall tower».",
+          "es": "En el experimento «¿Qué torre aguanta?» (añadir un piso firme), muéstrale la torre alta y mira si junta «Tall tower»."
+        },
+        "obxectoCasa": {
+          "gl": "Torre alta de catro bloques",
+          "es": "Torre alta de cuatro bloques"
+        },
+        "lamina": "pal_tall_tower",
+        "palabrasSemente": [
+          "tall",
+          "tower"
+        ]
+      },
+      {
+        "id": "c3_4_p5_2",
+        "peldano": 5,
+        "steamId": "STEAM-3_4-10",
+        "steamTitulo": {
+          "gl": "Vermello, azul, vermello…",
+          "es": "Rojo, azul, rojo…"
+        },
+        "experimentoParte": {
+          "gl": "nomear cada peza seguinte da serie",
+          "es": "nombrar cada pieza siguiente de la serie"
+        },
+        "en": "Blue cup",
+        "enSignificado": {
+          "gl": "Vaso azul",
+          "es": "Vaso azul"
+        },
+        "instrucion": {
+          "gl": "No experimento «Vermello, azul, vermello…» (continuar o padrón con vasos), sinala o vaso azul e escoita se di «Blue cup».",
+          "es": "En el experimento «Rojo, azul, rojo…» (continuar el patrón con vasos), señala el vaso azul y escucha si dice «Blue cup»."
+        },
+        "obxectoCasa": {
+          "gl": "Vaso azul na serie",
+          "es": "Vaso azul en la serie"
+        },
+        "lamina": "pal_blue_cup",
+        "palabrasSemente": [
+          "blue",
+          "cup"
+        ]
+      },
+      {
+        "id": "c3_4_p5_3",
+        "peldano": 5,
+        "steamId": "STEAM-3_4-02",
+        "steamTitulo": {
+          "gl": "O xeo no zume",
+          "es": "El hielo en el zumo"
+        },
+        "experimentoParte": {
+          "gl": "nomear a mestura de zume frío no vaso",
+          "es": "nombrar la mezcla de zumo frío en el vaso"
+        },
+        "en": "More juice",
+        "enSignificado": {
+          "gl": "Máis zume",
+          "es": "Más zumo"
+        },
+        "instrucion": {
+          "gl": "No experimento «O xeo no zume» (engadir un chisco máis), amósalle a lámina e convídaoo a dicir «More juice».",
+          "es": "En el experimento «El hielo en el zumo» (añadir un poco más), muéstrale la lámina e invítalo a decir «More juice»."
+        },
+        "obxectoCasa": {
+          "gl": "Un vaso mediano",
+          "es": "Un vaso mediano"
+        },
+        "lamina": "pal_more_juice_in_my_cup",
+        "palabrasSemente": [
+          "juice"
+        ]
+      },
+      {
+        "id": "c3_4_p6_1",
+        "peldano": 6,
+        "steamId": "STEAM-3_4-09",
+        "steamTitulo": {
+          "gl": "Que torre aguanta?",
+          "es": "¿Qué torre aguanta?"
+        },
+        "experimentoParte": {
+          "gl": "contar se a torre queda en pé",
+          "es": "contar si la torre queda en pie"
+        },
+        "en": "It stands tall!",
+        "enSignificado": {
+          "gl": "Aguanta en pé!",
+          "es": "¡Aguanta en pie!"
+        },
+        "instrucion": {
+          "gl": "No experimento «Que torre aguanta?» (comprobar a torre rematada), sinala a lámina e mira se di a frase curta «It stands tall!».",
+          "es": "En el experimento «¿Qué torre aguanta?» (comprobar la torre terminada), señala la lámina y mira si dice la frase corta «It stands tall!»."
+        },
+        "obxectoCasa": {
+          "gl": "Torre rematada sobre a mesa",
+          "es": "Torre terminada sobre la mesa"
+        },
+        "lamina": "pal_we_build_a_tower_and_it_stands",
+        "palabrasSemente": [
+          "tower",
+          "tall"
+        ]
+      },
+      {
+        "id": "c3_4_p6_2",
+        "peldano": 6,
+        "steamId": "STEAM-3_4-10",
+        "steamTitulo": {
+          "gl": "Vermello, azul, vermello…",
+          "es": "Rojo, azul, rojo…"
+        },
+        "experimentoParte": {
+          "gl": "enunciar a orde da serie",
+          "es": "enunciar el orden de la serie"
+        },
+        "en": "Red, blue, red!",
+        "enSignificado": {
+          "gl": "Vermello, azul, vermello!",
+          "es": "¡Rojo, azul, rojo!"
+        },
+        "instrucion": {
+          "gl": "No experimento «Vermello, azul, vermello…» (ler a serie en voz alta), sinala a secuencia e escoita se repite «Red, blue, red!».",
+          "es": "En el experimento «Rojo, azul, rojo…» (leer la serie en voz alta), señala la secuencia y escucha si repite «Red, blue, red!»."
+        },
+        "obxectoCasa": {
+          "gl": "Tres tapas vermella, azul e vermella",
+          "es": "Tres tapas roja, azul y roja"
+        },
+        "lamina": "pal_red_card",
+        "palabrasSemente": [
+          "red",
+          "blue"
+        ]
+      },
+      {
+        "id": "c3_4_p6_3",
+        "peldano": 6,
+        "steamId": "STEAM-3_4-11",
+        "steamTitulo": {
+          "gl": "O tren baixa a costa",
+          "es": "El tren baja la cuesta"
+        },
+        "experimentoParte": {
+          "gl": "contar o traxecto ata abaixo",
+          "es": "contar el trayecto hasta abajo"
+        },
+        "en": "The train goes down!",
+        "enSignificado": {
+          "gl": "O tren vai abaixo!",
+          "es": "¡El tren va abajo!"
+        },
+        "instrucion": {
+          "gl": "No experimento «O tren baixa a costa» (soltar pola costa), mira como esvara e escoita se di «The train goes down!».",
+          "es": "En el experimento «El tren baja la cuesta» (soltar por la cuesta), mira cómo desliza y escucha si dice «The train goes down!»."
+        },
+        "obxectoCasa": {
+          "gl": "Rampla cun libro e tren pequeno",
+          "es": "Rampa con un libro y tren pequeño"
+        },
+        "lamina": "pal_the_train_has_gone_down",
+        "palabrasSemente": [
+          "train"
+        ]
+      }
+    ],
+    "curso_4_5": [
+      {
+        "id": "c4_5_p1_1",
+        "peldano": 1,
+        "steamId": "STEAM-4_5-10",
+        "steamTitulo": {
+          "gl": "Escoitar o corazón",
+          "es": "Escuchar el corazón"
+        },
+        "experimentoParte": {
+          "gl": "pór a man no peito despois de saltar",
+          "es": "poner la mano en el pecho después de saltar"
+        },
+        "en": "Feel your heart",
+        "enSignificado": {
+          "gl": "Sinte o teu corazón",
+          "es": "Siente tu corazón"
+        },
+        "instrucion": {
+          "gl": "No experimento «Escoitar o corazón» (notar o latexo tras moverse), dislle que poña a man no peito coma na lámina.",
+          "es": "En el experimento «Escuchar el corazón» (notar el latido tras moverse), dile que ponga la mano en el pecho como en la lámina."
+        },
+        "obxectoCasa": {
+          "gl": "Sen obxectos: a propia man no peito",
+          "es": "Sin objetos: la propia mano en el pecho"
+        },
+        "lamina": "pal_can_you_feel_your_heart",
+        "palabrasSemente": [
+          "heart"
+        ]
+      },
+      {
+        "id": "c4_5_p1_2",
+        "peldano": 1,
+        "steamId": "STEAM-4_5-06",
+        "steamTitulo": {
+          "gl": "Que roupa pide o tempo?",
+          "es": "¿Qué ropa pide el tiempo?"
+        },
+        "experimentoParte": {
+          "gl": "preparar o abrigo antes de saír á choiva",
+          "es": "preparar el abrigo antes de salir a la lluvia"
+        },
+        "en": "Put on your coat",
+        "enSignificado": {
+          "gl": "Pon o abrigo",
+          "es": "Ponte el abrigo"
+        },
+        "instrucion": {
+          "gl": "No experimento «Que roupa pide o tempo?» (escoller abrigo para o frío e choiva), pídelle cun xesto se entende a orde.",
+          "es": "En el experimento «¿Qué ropa pide el tiempo?» (elegir abrigo para el frío y lluvia), pídele con un gesto si entiende la orden."
+        },
+        "obxectoCasa": {
+          "gl": "Un abrigo ou chaqueta á man",
+          "es": "Un abrigo o chaqueta a mano"
+        },
+        "lamina": "pal_put_on_your_coat",
+        "palabrasSemente": [
+          "coat"
+        ]
+      },
+      {
+        "id": "c4_5_p1_3",
+        "peldano": 1,
+        "steamId": "STEAM-4_5-03",
+        "steamTitulo": {
+          "gl": "O muíño de vento",
+          "es": "El molinillo de viento"
+        },
+        "experimentoParte": {
+          "gl": "soprar con máis forza para xirar as aspas",
+          "es": "soplar con más fuerza para girar las aspas"
+        },
+        "en": "Blow harder",
+        "enSignificado": {
+          "gl": "Sopra máis forte",
+          "es": "Sopla más fuerte"
+        },
+        "instrucion": {
+          "gl": "No experimento «O muíño de vento» (probar un sopro suave e outro forte), mira se comprende e sopra con máis forza.",
+          "es": "En el experimento «El molinillo de viento» (probar un soplo suave y otro fuerte), mira si comprende y sopla con más fuerza."
+        },
+        "obxectoCasa": {
+          "gl": "Un papel lixeiro colgado polos dedos",
+          "es": "Un papel ligero sujeto por los dedos"
+        },
+        "lamina": "pal_blow_harder",
+        "palabrasSemente": [
+          "blow",
+          "hard"
+        ]
+      },
+      {
+        "id": "c4_5_p2_1",
+        "peldano": 2,
+        "steamId": "STEAM-4_5-09",
+        "steamTitulo": {
+          "gl": "Que venda absorbe?",
+          "es": "¿Qué venda absorbe?"
+        },
+        "experimentoParte": {
+          "gl": "identificar a venda que chucha a auga",
+          "es": "identificar la venda que absorbe el agua"
+        },
+        "en": "Show me the bandage",
+        "enSignificado": {
+          "gl": "Ensíname a venda",
+          "es": "Enséñame la venda"
+        },
+        "instrucion": {
+          "gl": "No experimento «Que venda absorbe?» (escoller o material antes de mollalo), pídelle que sinale a venda na lámina ou na mesa.",
+          "es": "En el experimento «¿Qué venda absorbe?» (elegir el material antes de mojarlo), pídele que señale la venda en la lámina o en la mesa."
+        },
+        "obxectoCasa": {
+          "gl": "Unha gasa, venda ou anaco de pano",
+          "es": "Una gasa, venda o trozo de tela"
+        },
+        "lamina": "pal_bandage",
+        "palabrasSemente": [
+          "bandage"
+        ]
+      },
+      {
+        "id": "c4_5_p2_2",
+        "peldano": 2,
+        "steamId": "STEAM-4_5-05",
+        "steamTitulo": {
+          "gl": "A sombra e o sol",
+          "es": "La sombra y el sol"
+        },
+        "experimentoParte": {
+          "gl": "atopar o sol que proxecta a sombra",
+          "es": "encontrar el sol que proyecta la sombra"
+        },
+        "en": "Point to the sun",
+        "enSignificado": {
+          "gl": "Sinala o sol",
+          "es": "Señala el sol"
+        },
+        "instrucion": {
+          "gl": "No experimento «A sombra e o sol» (situar a fonte de luz), mira se sinala o sol na lámina.",
+          "es": "En el experimento «La sombra y el sol» (situar la fuente de luz), mira si señala el sol en la lámina."
+        },
+        "obxectoCasa": {
+          "gl": "A lámina ou a fiestra con luz",
+          "es": "La lámina o la ventana con luz"
+        },
+        "lamina": "pal_sun",
+        "palabrasSemente": [
+          "sun"
+        ]
+      },
+      {
+        "id": "c4_5_p2_3",
+        "peldano": 2,
+        "steamId": "STEAM-4_5-04",
+        "steamTitulo": {
+          "gl": "A orquestra da tormenta",
+          "es": "La orquesta de la tormenta"
+        },
+        "experimentoParte": {
+          "gl": "recoñecer a nube de choiva da tormenta",
+          "es": "reconocer la nube de lluvia de la tormenta"
+        },
+        "en": "Find the rain cloud",
+        "enSignificado": {
+          "gl": "Atopa a nube de choiva",
+          "es": "Encuentra la nube de lluvia"
+        },
+        "instrucion": {
+          "gl": "No experimento «A orquestra da tormenta» (sinalar o momento da choiva), pídelle que atope «rain cloud» na lámina.",
+          "es": "En el experimento «La orquesta de la tormenta» (señalar el momento de la lluvia), pídele que encuentre «rain cloud» en la lámina."
+        },
+        "obxectoCasa": {
+          "gl": "A lámina da nube e da choiva",
+          "es": "La lámina de la nube y la lluvia"
+        },
+        "lamina": "pal_rain_cloud",
+        "palabrasSemente": [
+          "rain",
+          "cloud"
+        ]
+      },
+      {
+        "id": "c4_5_p3_1",
+        "peldano": 3,
+        "steamId": "STEAM-4_5-09",
+        "steamTitulo": {
+          "gl": "Que venda absorbe?",
+          "es": "¿Qué venda absorbe?"
+        },
+        "experimentoParte": {
+          "gl": "distinguir a venda que absorbe da bolsa seca",
+          "es": "distinguir la venda que absorbe de la bolsa seca"
+        },
+        "en": "Sponge wet or bag dry?",
+        "enSignificado": {
+          "gl": "Esponxa mollada ou bolsa seca?",
+          "es": "¿Esponja mojada o bolsa seca?"
+        },
+        "instrucion": {
+          "gl": "No experimento «Que venda absorbe?» (comparar o material que chucha co impermeable), pregúntalle cal está «Wet».",
+          "es": "En el experimento «¿Qué venda absorbe?» (comparar el material absorbente con el impermeable), pregúntale cuál está «Wet»."
+        },
+        "obxectoCasa": {
+          "gl": "Unha esponxa húmida e unha bolsa plástica",
+          "es": "Una esponja húmeda y una bolsa de plástico"
+        },
+        "lamina": "pal_the_sponge_is_wet",
+        "palabrasSemente": [
+          "wet",
+          "dry"
+        ]
+      },
+      {
+        "id": "c4_5_p3_2",
+        "peldano": 3,
+        "steamId": "STEAM-4_5-10",
+        "steamTitulo": {
+          "gl": "Escoitar o corazón",
+          "es": "Escuchar el corazón"
+        },
+        "experimentoParte": {
+          "gl": "comparar o latexo en calma co de despois de correr",
+          "es": "comparar el latido en calma con el de después de correr"
+        },
+        "en": "Fast or slow?",
+        "enSignificado": {
+          "gl": "Rápido ou amodo?",
+          "es": "¿Rápido o despacio?"
+        },
+        "instrucion": {
+          "gl": "No experimento «Escoitar o corazón» (comparar antes e despois de correr), fai palmas lentas e rápidas e mira se distingue «Fast».",
+          "es": "En el experimento «Escuchar el corazón» (comparar antes y después de correr), da palmas lentas y rápidas y mira si distingue «Fast»."
+        },
+        "obxectoCasa": {
+          "gl": "As propias mans dando palmas",
+          "es": "Las propias manos dando palmas"
+        },
+        "lamina": "pal_after_running_the_heart_beats_faster",
+        "palabrasSemente": [
+          "fast",
+          "slow"
+        ]
+      },
+      {
+        "id": "c4_5_p3_3",
+        "peldano": 3,
+        "steamId": "STEAM-4_5-05",
+        "steamTitulo": {
+          "gl": "A sombra e o sol",
+          "es": "La sombra y el sol"
+        },
+        "experimentoParte": {
+          "gl": "distinguir cando a sombra medra ou encolle",
+          "es": "distinguir cuando la sombra crece o encoge"
+        },
+        "en": "Bigger or smaller?",
+        "enSignificado": {
+          "gl": "Máis grande ou máis pequena?",
+          "es": "¿Más grande o más pequeña?"
+        },
+        "instrucion": {
+          "gl": "No experimento «A sombra e o sol» (achegar e afastar a luz), mira se distingue cando a sombra é «Bigger».",
+          "es": "En el experimento «La sombra y el sol» (acercar y alejar la luz), mira si distingue cuando la sombra es «Bigger»."
+        },
+        "obxectoCasa": {
+          "gl": "Lanterna ou luz do móbil e un vaso",
+          "es": "Linterna o luz y un vaso"
+        },
+        "lamina": "pal_shadow_grown",
+        "palabrasSemente": [
+          "big",
+          "small"
+        ]
+      },
+      {
+        "id": "c4_5_p4_1",
+        "peldano": 4,
+        "steamId": "STEAM-4_5-02",
+        "steamTitulo": {
+          "gl": "Facemos lama",
+          "es": "Hacemos barro"
+        },
+        "experimentoParte": {
+          "gl": "nomear a mestura de terra e auga",
+          "es": "nombrar la mezcla de tierra y agua"
+        },
+        "en": "Mud",
+        "enSignificado": {
+          "gl": "Lama",
+          "es": "Barro"
+        },
+        "instrucion": {
+          "gl": "No experimento «Facemos lama» (mesturar terra e auga), amósalle a lámina e escoita se di «Mud».",
+          "es": "En el experimento «Hacemos barro» (mezclar tierra y agua), muéstrale la lámina y escucha si dice «Mud»."
+        },
+        "obxectoCasa": {
+          "gl": "Cunca con terra ou a lámina de barro",
+          "es": "Cuenco con tierra o la lámina de barro"
+        },
+        "lamina": "pal_mud",
+        "palabrasSemente": [
+          "mud"
+        ]
+      },
+      {
+        "id": "c4_5_p4_2",
+        "peldano": 4,
+        "steamId": "STEAM-4_5-04",
+        "steamTitulo": {
+          "gl": "A orquestra da tormenta",
+          "es": "La orquesta de la tormenta"
+        },
+        "experimentoParte": {
+          "gl": "nomear a tormenta do concerto caseiro",
+          "es": "nombrar la tormenta del concierto casero"
+        },
+        "en": "Storm",
+        "enSignificado": {
+          "gl": "Tormenta",
+          "es": "Tormenta"
+        },
+        "instrucion": {
+          "gl": "No experimento «A orquestra da tormenta» (o momento máis forte), sinala a lámina e mira se di «Storm».",
+          "es": "En el experimento «La orquesta de la tormenta» (el momento más fuerte), señala la lámina y mira si dice «Storm»."
+        },
+        "obxectoCasa": {
+          "gl": "Un pano escuro ou a lámina",
+          "es": "Un paño oscuro o la lámina"
+        },
+        "lamina": "pal_storm",
+        "palabrasSemente": [
+          "storm"
+        ]
+      },
+      {
+        "id": "c4_5_p4_3",
+        "peldano": 4,
+        "steamId": "STEAM-4_5-03",
+        "steamTitulo": {
+          "gl": "O muíño de vento",
+          "es": "El molinillo de viento"
+        },
+        "experimentoParte": {
+          "gl": "nomear o vento que fai xirar o muíño",
+          "es": "nombrar el viento que hace girar el molinillo"
+        },
+        "en": "Wind",
+        "enSignificado": {
+          "gl": "Vento",
+          "es": "Viento"
+        },
+        "instrucion": {
+          "gl": "No experimento «O muíño de vento» (observar que move as aspas), sinala a lámina e mira se di «Wind».",
+          "es": "En el experimento «El molinillo de viento» (observar qué mueve las aspas), señala la lámina y mira si dice «Wind»."
+        },
+        "obxectoCasa": {
+          "gl": "Un folio recortado ou pano",
+          "es": "Un folio o paño"
+        },
+        "lamina": "pal_bend_in_the_wind",
+        "palabrasSemente": [
+          "wind"
+        ]
+      },
+      {
+        "id": "c4_5_p5_1",
+        "peldano": 5,
+        "steamId": "STEAM-4_5-09",
+        "steamTitulo": {
+          "gl": "Que venda absorbe?",
+          "es": "¿Qué venda absorbe?"
+        },
+        "experimentoParte": {
+          "gl": "dicir que a bolsa quedou seca tras mollar",
+          "es": "decir que la bolsa quedó seca tras mojar"
+        },
+        "en": "Dry bag",
+        "enSignificado": {
+          "gl": "Bolsa seca",
+          "es": "Bolsa seca"
+        },
+        "instrucion": {
+          "gl": "No experimento «Que venda absorbe?» (comprobar que o plástico non absorbe), sinala a bolsa seca e mira se di «Dry bag».",
+          "es": "En el experimento «¿Qué venda absorbe?» (comprobar que el plástico no absorbe), señala la bolsa seca y mira si dice «Dry bag»."
+        },
+        "obxectoCasa": {
+          "gl": "Unha bolsa pequena seca",
+          "es": "Una bolsa pequeña seca"
+        },
+        "lamina": "pal_bag_stayed_dry",
+        "palabrasSemente": [
+          "dry",
+          "bag"
+        ]
+      },
+      {
+        "id": "c4_5_p5_2",
+        "peldano": 5,
+        "steamId": "STEAM-4_5-06",
+        "steamTitulo": {
+          "gl": "Que roupa pide o tempo?",
+          "es": "¿Qué ropa pide el tiempo?"
+        },
+        "experimentoParte": {
+          "gl": "nomear o paraugas baixo a tormenta",
+          "es": "nombrar el paraguas bajo la tormenta"
+        },
+        "en": "Storm umbrella",
+        "enSignificado": {
+          "gl": "Paraugas de tormenta",
+          "es": "Paraguas de tormenta"
+        },
+        "instrucion": {
+          "gl": "No experimento «Que roupa pide o tempo?» (protexerse do chuvasco), sinala a lámina e escoita se xunta «Storm umbrella».",
+          "es": "En el experimento «¿Qué ropa pide el tiempo?» (protegerse del chaparrón), señala la lámina y escucha si junta «Storm umbrella»."
+        },
+        "obxectoCasa": {
+          "gl": "Un paraugas dobrado",
+          "es": "Un paraguas plegado"
+        },
+        "lamina": "pal_storm_hide_umbrella",
+        "palabrasSemente": [
+          "storm",
+          "umbrella"
+        ]
+      },
+      {
+        "id": "c4_5_p5_3",
+        "peldano": 5,
+        "steamId": "STEAM-4_5-02",
+        "steamTitulo": {
+          "gl": "Facemos lama",
+          "es": "Hacemos barro"
+        },
+        "experimentoParte": {
+          "gl": "nomear os pasos ou charco con lama",
+          "es": "nombrar las botas en los charcos de barro"
+        },
+        "en": "Muddy puddle",
+        "enSignificado": {
+          "gl": "Charco con lama",
+          "es": "Charco de barro"
+        },
+        "instrucion": {
+          "gl": "No experimento «Facemos lama» (pisa nos charcos coa imaxinación), mira se xunta dúas palabras coma «Muddy puddle».",
+          "es": "En el experimento «Hacemos barro» (imaginar charcos de lluvia), mira si junta dos palabras como «Muddy puddle»."
+        },
+        "obxectoCasa": {
+          "gl": "Un prato con pingas de auga",
+          "es": "Un plato con gotas de agua"
+        },
+        "lamina": "pal_stomp_boots_puddles",
+        "palabrasSemente": [
+          "mud",
+          "puddle"
+        ]
+      },
+      {
+        "id": "c4_5_p6_1",
+        "peldano": 6,
+        "steamId": "STEAM-4_5-09",
+        "steamTitulo": {
+          "gl": "Que venda absorbe?",
+          "es": "¿Qué venda absorbe?"
+        },
+        "experimentoParte": {
+          "gl": "enunciar o resultado da esponxa na auga",
+          "es": "enunciar el resultado de la esponja en el agua"
+        },
+        "en": "The sponge is wet.",
+        "enSignificado": {
+          "gl": "A esponxa está mollada.",
+          "es": "La esponja está mojada."
+        },
+        "instrucion": {
+          "gl": "No experimento «Que venda absorbe?» (comprobar despois de mergullar), escoita se di «The sponge is wet.».",
+          "es": "En el experimento «¿Qué venda absorbe?» (comprobar después de sumergir), escucha si dice «The sponge is wet.»."
+        },
+        "obxectoCasa": {
+          "gl": "Unha esponxa ou venda húmida",
+          "es": "Una esponja o venda húmeda"
+        },
+        "lamina": "pal_the_sponge_is_wet",
+        "palabrasSemente": [
+          "wet"
+        ]
+      },
+      {
+        "id": "c4_5_p6_2",
+        "peldano": 6,
+        "steamId": "STEAM-4_5-10",
+        "steamTitulo": {
+          "gl": "Escoitar o corazón",
+          "es": "Escuchar el corazón"
+        },
+        "experimentoParte": {
+          "gl": "describir que o corazón latexa rápido ao correr",
+          "es": "describir que el corazón late rápido al correr"
+        },
+        "en": "My heart beats fast!",
+        "enSignificado": {
+          "gl": "O meu corazón vai rápido!",
+          "es": "¡Mi corazón va rápido!"
+        },
+        "instrucion": {
+          "gl": "No experimento «Escoitar o corazón» (comparar tras saltar cinco veces), escoita se di «My heart beats fast!».",
+          "es": "En el experimento «Escuchar el corazón» (comparar tras saltar cinco veces), escucha si dice «My heart beats fast!»."
+        },
+        "obxectoCasa": {
+          "gl": "As mans no peito",
+          "es": "Las manos en el pecho"
+        },
+        "lamina": "pal_after_running_the_heart_beats_faster",
+        "palabrasSemente": [
+          "heart",
+          "fast"
+        ]
+      },
+      {
+        "id": "c4_5_p6_3",
+        "peldano": 6,
+        "steamId": "STEAM-4_5-02",
+        "steamTitulo": {
+          "gl": "Facemos lama",
+          "es": "Hacemos barro"
+        },
+        "experimentoParte": {
+          "gl": "explicar que choveu e hai lama",
+          "es": "explicar que llovió y hay barro"
+        },
+        "en": "If it rains, we make mud.",
+        "enSignificado": {
+          "gl": "Se chove, facemos lama.",
+          "es": "Si llueve, hacemos barro."
+        },
+        "instrucion": {
+          "gl": "No experimento «Facemos lama» (xuntar auga e terra), mira se repite a frase curta da causa e efecto.",
+          "es": "En el experimento «Hacemos barro» (juntar agua y tierra), mira si repite la frase corta de causa y efecto."
+        },
+        "obxectoCasa": {
+          "gl": "Terra e un vaso con auga",
+          "es": "Tierra y un vaso con agua"
+        },
+        "lamina": "pal_if_rained_mud",
+        "palabrasSemente": [
+          "rain",
+          "mud"
+        ]
+      }
+    ],
+    "curso_5_6": [
+      {
+        "id": "c5_6_p1_1",
+        "peldano": 1,
+        "steamId": "STEAM-5_6-02",
+        "steamTitulo": {
+          "gl": "Avións de papel",
+          "es": "Aviones de papel"
+        },
+        "experimentoParte": {
+          "gl": "dobrar o papel para montar a á",
+          "es": "doblar el papel para montar el ala"
+        },
+        "en": "Fold the paper",
+        "enSignificado": {
+          "gl": "Dobra o papel",
+          "es": "Dobla el papel"
+        },
+        "instrucion": {
+          "gl": "No experimento «Avións de papel» (facer o primeiro dobre), dislle «Fold the paper» cun xesto nas mans e mira se o fai.",
+          "es": "En el experimento «Aviones de papel» (hacer el primer pliegue), dile «Fold the paper» con un gesto en las manos y mira si lo hace."
+        },
+        "obxectoCasa": {
+          "gl": "Un folio de papel usado",
+          "es": "Un folio de papel usado"
+        },
+        "lamina": "pal_fold_paper",
+        "palabrasSemente": [
+          "fold",
+          "paper"
+        ]
+      },
+      {
+        "id": "c5_6_p1_2",
+        "peldano": 1,
+        "steamId": "STEAM-5_6-03",
+        "steamTitulo": {
+          "gl": "O mapa do tesouro",
+          "es": "El mapa del tesoro"
+        },
+        "experimentoParte": {
+          "gl": "seguir a ruta do mapa pola sala",
+          "es": "seguir la ruta del mapa por la habitación"
+        },
+        "en": "Follow the map",
+        "enSignificado": {
+          "gl": "Segue o mapa",
+          "es": "Sigue el mapa"
+        },
+        "instrucion": {
+          "gl": "No experimento «O mapa do tesouro» (ler o percorrido), pídelle cun aceno que siga un camiño debuxado nun papel.",
+          "es": "En el experimento «El mapa del tesoro» (leer el recorrido), pídele con un gesto que siga un camino dibujado en un papel."
+        },
+        "obxectoCasa": {
+          "gl": "Un papel cun camiño sinxelo debuxado",
+          "es": "Un papel con un camino sencillo dibujado"
+        },
+        "lamina": "pal_follow_the_map",
+        "palabrasSemente": [
+          "map"
+        ]
+      },
+      {
+        "id": "c5_6_p1_3",
+        "peldano": 1,
+        "steamId": "STEAM-5_6-12",
+        "steamTitulo": {
+          "gl": "O círculo que xira",
+          "es": "El círculo que gira"
+        },
+        "experimentoParte": {
+          "gl": "facer xirar a peonza de papel co dedo",
+          "es": "hacer girar la peonza de papel con el dedo"
+        },
+        "en": "Spin the circle",
+        "enSignificado": {
+          "gl": "Fai xirar o círculo",
+          "es": "Haz girar el círculo"
+        },
+        "instrucion": {
+          "gl": "No experimento «O círculo que xira» (dar impulso ao disco), pídelle cun xiro dos dedos se entende «Spin».",
+          "es": "En el experimento «El círculo que gira» (dar impulso al disco), pídele con un giro de los dedos si entiende «Spin»."
+        },
+        "obxectoCasa": {
+          "gl": "Un tapón redondo ou prato pequeno",
+          "es": "Una tapa redonda o plato pequeño"
+        },
+        "lamina": "pal_spin",
+        "palabrasSemente": [
+          "spin"
+        ]
+      },
+      {
+        "id": "c5_6_p2_1",
+        "peldano": 2,
+        "steamId": "STEAM-5_6-11",
+        "steamTitulo": {
+          "gl": "A bolboreta igual",
+          "es": "La mariposa igual"
+        },
+        "experimentoParte": {
+          "gl": "sinalar a simetría das ás na bolboreta",
+          "es": "señalar la simetría de las alas en la mariposa"
+        },
+        "en": "Point to the butterfly",
+        "enSignificado": {
+          "gl": "Sinala a bolboreta",
+          "es": "Señala la mariposa"
+        },
+        "instrucion": {
+          "gl": "No experimento «A bolboreta igual» (observar as dúas metades iguais), pídelle que sinale a bolboreta na lámina.",
+          "es": "En el experimento «La mariposa igual» (observar las dos mitades iguales), pídele que señale la mariposa en la lámina."
+        },
+        "obxectoCasa": {
+          "gl": "Folio dobrado pola metade coma dúas ás",
+          "es": "Folio doblado por la mitad como dos alas"
+        },
+        "lamina": "pal_butterfly",
+        "palabrasSemente": [
+          "butterfly"
+        ]
+      },
+      {
+        "id": "c5_6_p2_2",
+        "peldano": 2,
+        "steamId": "STEAM-5_6-04",
+        "steamTitulo": {
+          "gl": "A maleta que pesa",
+          "es": "La maleta que pesa"
+        },
+        "experimentoParte": {
+          "gl": "atopar a maleta antes de enchela de libros",
+          "es": "encontrar la maleta antes de llenarla de libros"
+        },
+        "en": "Show me the suitcase",
+        "enSignificado": {
+          "gl": "Ensíname a maleta",
+          "es": "Enséñame la maleta"
+        },
+        "instrucion": {
+          "gl": "No experimento «A maleta que pesa» (preparar a carga da viaxe), mira se sinala a maleta na lámina.",
+          "es": "En el experimento «La maleta que pesa» (preparar la carga del viaje), mira si señala la maleta en la lámina."
+        },
+        "obxectoCasa": {
+          "gl": "Unha mochila ou bolsa baleira",
+          "es": "Una mochila o bolsa vacía"
+        },
+        "lamina": "pal_suitcase",
+        "palabrasSemente": [
+          "suitcase"
+        ]
+      },
+      {
+        "id": "c5_6_p2_3",
+        "peldano": 2,
+        "steamId": "STEAM-5_6-06",
+        "steamTitulo": {
+          "gl": "A frauta do tren",
+          "es": "La flauta del tren"
+        },
+        "experimentoParte": {
+          "gl": "identificar o instrumento de vento da viaxe",
+          "es": "identificar el instrumento de viento del viaje"
+        },
+        "en": "Where is the flute?",
+        "enSignificado": {
+          "gl": "Onde está a frauta?",
+          "es": "¿Dónde está la flauta?"
+        },
+        "instrucion": {
+          "gl": "No experimento «A frauta do tren» (probas de son co tubo), mira se sinala a frauta na lámina.",
+          "es": "En el experimento «La flauta del tren» (pruebas de sonido con el tubo), mira si señala la flauta en la lámina."
+        },
+        "obxectoCasa": {
+          "gl": "Un rolo de cartón ou palliña",
+          "es": "Un tubo de cartón o pajita"
+        },
+        "lamina": "pal_flute",
+        "palabrasSemente": [
+          "flute"
+        ]
+      },
+      {
+        "id": "c5_6_p3_1",
+        "peldano": 3,
+        "steamId": "STEAM-5_6-01",
+        "steamTitulo": {
+          "gl": "Cantos sons ten o papel?",
+          "es": "¿Cuántos sonidos tiene el papel?"
+        },
+        "experimentoParte": {
+          "gl": "distinguir papel ruidoso de papel suave",
+          "es": "distinguir papel ruidoso de papel suave"
+        },
+        "en": "Loud paper or soft paper?",
+        "enSignificado": {
+          "gl": "Papel ruidoso ou papel suave?",
+          "es": "¿Papel ruidoso o papel suave?"
+        },
+        "instrucion": {
+          "gl": "No experimento «Cantos sons ten o papel?» (comparar xornal e pano de papel), sacode ambos e mira se distingue «Soft».",
+          "es": "En el experimento «¿Cuántos sonidos tiene el papel?» (comparar periódico y pañuelo), sacude ambos y mira si distingue «Soft»."
+        },
+        "obxectoCasa": {
+          "gl": "Un pano de papel e outro de folla firme",
+          "es": "Un pañuelo de papel y una hoja firme"
+        },
+        "lamina": "pal_newspaper_loud_tissue_soft",
+        "palabrasSemente": [
+          "loud",
+          "soft",
+          "paper"
+        ]
+      },
+      {
+        "id": "c5_6_p3_2",
+        "peldano": 3,
+        "steamId": "STEAM-5_6-04",
+        "steamTitulo": {
+          "gl": "A maleta que pesa",
+          "es": "La maleta que pesa"
+        },
+        "experimentoParte": {
+          "gl": "contrastar maleta chea de libros con baleira",
+          "es": "contrastar maleta llena de libros con vacía"
+        },
+        "en": "Heavy or light?",
+        "enSignificado": {
+          "gl": "Pesada ou lixeira?",
+          "es": "¿Pesada o ligera?"
+        },
+        "instrucion": {
+          "gl": "No experimento «A maleta que pesa» (probar con libros e sen eles), pregúntalle cal é «Heavy».",
+          "es": "En el experimento «La maleta que pesa» (probar con libros y sin ellos), pregúntale cuál es «Heavy»."
+        },
+        "obxectoCasa": {
+          "gl": "Mochila con dous libros e unha bolsa baleira",
+          "es": "Mochila con dos libros y una bolsa vacía"
+        },
+        "lamina": "pal_books_make_it_heavy",
+        "palabrasSemente": [
+          "heavy",
+          "light"
+        ]
+      },
+      {
+        "id": "c5_6_p3_3",
+        "peldano": 3,
+        "steamId": "STEAM-5_6-12",
+        "steamTitulo": {
+          "gl": "O círculo que xira",
+          "es": "El círculo que gira"
+        },
+        "experimentoParte": {
+          "gl": "distinguir cando o círculo xira máis rápido",
+          "es": "distinguir cuando el círculo gira más rápido"
+        },
+        "en": "Faster or slower?",
+        "enSignificado": {
+          "gl": "Máis rápido ou máis amodo?",
+          "es": "¿Más rápido o más despacio?"
+        },
+        "instrucion": {
+          "gl": "No experimento «O círculo que xira» (mesturar as cores ao xirar), xira un rápido e outro devagar e mira se sinala «Faster».",
+          "es": "En el experimento «El círculo que gira» (mezclar los colores al girar), gira uno rápido y otro despacio y mira si señala «Faster»."
+        },
+        "obxectoCasa": {
+          "gl": "Un prato ou tapa xirando na mesa",
+          "es": "Un plato o tapa girando en la mesa"
+        },
+        "lamina": "pal_bigger_spin_faster",
+        "palabrasSemente": [
+          "fast",
+          "spin"
+        ]
+      },
+      {
+        "id": "c5_6_p4_1",
+        "peldano": 4,
+        "steamId": "STEAM-5_6-09",
+        "steamTitulo": {
+          "gl": "Cores que nacen",
+          "es": "Colores que nacen"
+        },
+        "experimentoParte": {
+          "gl": "nomear a cor verde que nace da mestura",
+          "es": "nombrar el color verde que nace de la mezcla"
+        },
+        "en": "Green",
+        "enSignificado": {
+          "gl": "Verde",
+          "es": "Verde"
+        },
+        "instrucion": {
+          "gl": "No experimento «Cores que nacen» (xuntar amarelo e azul), sinala o resultado na lámina e mira se di «Green».",
+          "es": "En el experimento «Colores que nacen» (juntar amarillo y azul), señala el resultado en la lámina y mira si dice «Green»."
+        },
+        "obxectoCasa": {
+          "gl": "Lapis amarelo, azul e verde",
+          "es": "Lápices amarillo, azul y verde"
+        },
+        "lamina": "pal_blending_yellow_blue_green",
+        "palabrasSemente": [
+          "green"
+        ]
+      },
+      {
+        "id": "c5_6_p4_2",
+        "peldano": 4,
+        "steamId": "STEAM-5_6-11",
+        "steamTitulo": {
+          "gl": "A bolboreta igual",
+          "es": "La mariposa igual"
+        },
+        "experimentoParte": {
+          "gl": "nomear a bolboreta simétrica ao abrir o papel",
+          "es": "nombrar la mariposa simétrica al abrir el papel"
+        },
+        "en": "Butterfly",
+        "enSignificado": {
+          "gl": "Bolboreta",
+          "es": "Mariposa"
+        },
+        "instrucion": {
+          "gl": "No experimento «A bolboreta igual» (abrir a folla co debuxo dobre), mira se nomea «Butterfly».",
+          "es": "En el experimento «La mariposa igual» (abrir la hoja con el dibujo doble), mira si nombra «Butterfly»."
+        },
+        "obxectoCasa": {
+          "gl": "Folio dobrado coma bolboreta",
+          "es": "Folio doblado como mariposa"
+        },
+        "lamina": "pal_butterfly_print",
+        "palabrasSemente": [
+          "butterfly"
+        ]
+      },
+      {
+        "id": "c5_6_p4_3",
+        "peldano": 4,
+        "steamId": "STEAM-5_6-03",
+        "steamTitulo": {
+          "gl": "O mapa do tesouro",
+          "es": "El mapa del tesoro"
+        },
+        "experimentoParte": {
+          "gl": "nomear o mapa guía",
+          "es": "nombrar el mapa guía"
+        },
+        "en": "Map",
+        "enSignificado": {
+          "gl": "Mapa",
+          "es": "Mapa"
+        },
+        "instrucion": {
+          "gl": "No experimento «O mapa do tesouro» (ler as pistas do cuarto), sinala a lámina do mapa e escoita se di «Map».",
+          "es": "En el experimento «El mapa del tesoro» (leer las pistas de la habitación), señala la lámina del mapa y escucha si dice «Map»."
+        },
+        "obxectoCasa": {
+          "gl": "Un papel dobrado coma mapa",
+          "es": "Un papel doblado como mapa"
+        },
+        "lamina": "pal_map",
+        "palabrasSemente": [
+          "map"
+        ]
+      },
+      {
+        "id": "c5_6_p5_1",
+        "peldano": 5,
+        "steamId": "STEAM-5_6-02",
+        "steamTitulo": {
+          "gl": "Avións de papel",
+          "es": "Aviones de papel"
+        },
+        "experimentoParte": {
+          "gl": "nomear o avión dobrado antes do voo",
+          "es": "nombrar el avión doblado antes del vuelo"
+        },
+        "en": "Paper plane",
+        "enSignificado": {
+          "gl": "Avión de papel",
+          "es": "Avión de papel"
+        },
+        "instrucion": {
+          "gl": "No experimento «Avións de papel» (preparar o lanzamento), sinala a lámina e mira se di «Paper plane».",
+          "es": "En el experimento «Aviones de papel» (preparar el lanzamiento), señala la lámina y mira si dice «Paper plane»."
+        },
+        "obxectoCasa": {
+          "gl": "Un avión feito cun folio",
+          "es": "Un avión hecho con un folio"
+        },
+        "lamina": "pal_folded_plane_threw_it",
+        "palabrasSemente": [
+          "paper",
+          "plane"
+        ]
+      },
+      {
+        "id": "c5_6_p5_2",
+        "peldano": 5,
+        "steamId": "STEAM-5_6-10",
+        "steamTitulo": {
+          "gl": "O mundo de cores",
+          "es": "El mundo de colores"
+        },
+        "experimentoParte": {
+          "gl": "nomear as luces de cores da experiencia",
+          "es": "nombrar las luces de colores de la experiencia"
+        },
+        "en": "Bright colors",
+        "enSignificado": {
+          "gl": "Cores vivas",
+          "es": "Colores vivos"
+        },
+        "instrucion": {
+          "gl": "No experimento «O mundo de cores» (probas de cor e luz), amósalle a lámina e mira se xunta «Bright colors».",
+          "es": "En el experimento «El mundo de colores» (pruebas de color y luz), muéstrale la lámina y mira si junta «Bright colors»."
+        },
+        "obxectoCasa": {
+          "gl": "Tres papeis de cores vivas",
+          "es": "Tres papeles de colores vivos"
+        },
+        "lamina": "pal_colorful",
+        "palabrasSemente": [
+          "color"
+        ]
+      },
+      {
+        "id": "c5_6_p5_3",
+        "peldano": 5,
+        "steamId": "STEAM-5_6-05",
+        "steamTitulo": {
+          "gl": "Mensaxes de luz",
+          "es": "Mensajes de luz"
+        },
+        "experimentoParte": {
+          "gl": "nomear os puntos pequenos de luz",
+          "es": "nombrar los puntos pequeños de luz"
+        },
+        "en": "Little lights",
+        "enSignificado": {
+          "gl": "Luces pequenas",
+          "es": "Luces pequeñas"
+        },
+        "instrucion": {
+          "gl": "No experimento «Mensaxes de luz» (enviar sinais curtos de luz), sinala a lámina e escoita se di «Little lights».",
+          "es": "En el experimento «Mensajes de luz» (enviar señales cortos de luz), señala la lámina y escucha si dice «Little lights»."
+        },
+        "obxectoCasa": {
+          "gl": "Lanterna ou lámina de luces",
+          "es": "Linterna o lámina de luces"
+        },
+        "lamina": "pal_fairy_lights",
+        "palabrasSemente": [
+          "light"
+        ]
+      },
+      {
+        "id": "c5_6_p6_1",
+        "peldano": 6,
+        "steamId": "STEAM-5_6-09",
+        "steamTitulo": {
+          "gl": "Cores que nacen",
+          "es": "Colores que nacen"
+        },
+        "experimentoParte": {
+          "gl": "explicar a mestura azul e amarela que dá verde",
+          "es": "explicar la mezcla azul y amarilla que da verde"
+        },
+        "en": "Blue and yellow make green.",
+        "enSignificado": {
+          "gl": "Azul e amarelo fan verde.",
+          "es": "Azul y amarillo hacen verde."
+        },
+        "instrucion": {
+          "gl": "No experimento «Cores que nacen» (anotar o resultado da mestura), escoita se formula a frase «Blue and yellow make green.».",
+          "es": "En el experimento «Colores que nacen» (anotar el resultado de la mezcla), escucha si dice la frase «Blue and yellow make green.»."
+        },
+        "obxectoCasa": {
+          "gl": "Dous lapis azul e amarelo",
+          "es": "Dos lápices azul y amarillo"
+        },
+        "lamina": "pal_blue_and_yellow_make_green",
+        "palabrasSemente": [
+          "blue",
+          "yellow",
+          "green"
+        ]
+      },
+      {
+        "id": "c5_6_p6_2",
+        "peldano": 6,
+        "steamId": "STEAM-5_6-02",
+        "steamTitulo": {
+          "gl": "Avións de papel",
+          "es": "Aviones de papel"
+        },
+        "experimentoParte": {
+          "gl": "comparar que avión voou máis lonxe",
+          "es": "comparar qué avión voló más lejos"
+        },
+        "en": "This plane flew further!",
+        "enSignificado": {
+          "gl": "Este avión voou máis lonxe!",
+          "es": "¡Este avión voló más lejos!"
+        },
+        "instrucion": {
+          "gl": "No experimento «Avións de papel» (medir os dous lanzamentos), mira se di «This plane flew further!».",
+          "es": "En el experimento «Aviones de papel» (medir los dos lanzamientos), mira si dice «This plane flew further!»."
+        },
+        "obxectoCasa": {
+          "gl": "Dous avións de papel no chan",
+          "es": "Dos aviones de papel en el suelo"
+        },
+        "lamina": "pal_changed_plane_flew_further",
+        "palabrasSemente": [
+          "plane"
+        ]
+      },
+      {
+        "id": "c5_6_p6_3",
+        "peldano": 6,
+        "steamId": "STEAM-5_6-04",
+        "steamTitulo": {
+          "gl": "A maleta que pesa",
+          "es": "La maleta que pesa"
+        },
+        "experimentoParte": {
+          "gl": "explicar por que pesa máis a maleta con libros",
+          "es": "explicar por qué pesa más la maleta con libros"
+        },
+        "en": "Books make it heavy.",
+        "enSignificado": {
+          "gl": "Os libros fana pesada.",
+          "es": "Los libros la hacen pesada."
+        },
+        "instrucion": {
+          "gl": "No experimento «A maleta que pesa» (xustificar o peso despois de probar), mira se di «Books make it heavy.».",
+          "es": "En el experimento «La maleta que pesa» (justificar el peso después de probar), mira si dice «Books make it heavy.»."
+        },
+        "obxectoCasa": {
+          "gl": "Mochila con dous libros dentro",
+          "es": "Mochila con dos libros dentro"
+        },
+        "lamina": "pal_books_make_it_heavy",
+        "palabrasSemente": [
+          "heavy"
+        ]
+      }
+    ]
+  }
+}

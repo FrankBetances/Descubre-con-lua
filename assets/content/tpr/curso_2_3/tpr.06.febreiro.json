@@ -532,15 +532,15 @@
         },
         {
           "id": "2_3.febreiro.s3.walrus",
-          "en": "Walrus",
-          "gl": "Morsa",
-          "es": "Morsa",
+          "en": "Whale",
+          "gl": "Balea",
+          "es": "Ballena",
           "tprAction": {
-            "gl": "Poñer dous dedos coma cairos",
-            "es": "Poner dos dedos como colmillos"
+            "gl": "Sinala ou colle o que nomeas: pingüín.",
+            "es": "Señala o coge lo que nombras: pingüino."
           },
           "category": "noun",
-          "lamina": "pal_walrus"
+          "lamina": "pal_whale"
         },
         {
           "id": "2_3.febreiro.s3.arctic-fox",

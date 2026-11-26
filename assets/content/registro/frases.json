@@ -392,7 +392,7 @@
     {
       "id": "frase.lua.2_3.10.1",
       "tipo": "lua",
-      "en": "The sea! Calm sea!",
+      "en": "The sea! Sunny sea!",
       "accion": {
         "gl": "Pasar a man plana amodo, coma a auga quieta",
         "es": "Pasar la mano plana despacio, como el agua quieta"
@@ -762,7 +762,7 @@
     {
       "id": "frase.lua.4_5.02.1",
       "tipo": "lua",
-      "en": "The tree! An alert squirrel!",
+      "en": "The tree! An awake squirrel!",
       "accion": {
         "gl": "Abrir moito os ollos e sinalar arriba, á árbore",
         "es": "Abrir mucho los ojos y señalar arriba, al árbol"
@@ -782,7 +782,7 @@
     {
       "id": "frase.lua.4_5.02.3",
       "tipo": "lua",
-      "en": "Climb, squirrel! Nimble-footed squirrel!",
+      "en": "Climb, squirrel! Quick, quick squirrel!",
       "accion": {
         "gl": "Mover brazos e pernas coma se rubísemos, moi rápido",
         "es": "Mover brazos y piernas como si trepáramos, muy rápido"
@@ -792,7 +792,7 @@
     {
       "id": "frase.lua.4_5.02.4",
       "tipo": "lua",
-      "en": "A chestnut! Sly squirrel!",
+      "en": "A chestnut! Furry squirrel!",
       "accion": {
         "gl": "Facer unha castaña coas mans pechadas e poñer cara de pillo",
         "es": "Hacer una castaña con las manos cerradas y poner cara de pillo"
@@ -812,7 +812,7 @@
     {
       "id": "frase.lua.4_5.03.2",
       "tipo": "lua",
-      "en": "Oh no! The chestnut rolls downhill!",
+      "en": "Oh no! The chestnut rolls, bumpy!",
       "accion": {
         "gl": "Facer rodar as mans unha arredor da outra e baixalas amodo",
         "es": "Hacer rodar las manos una alrededor de la otra y bajarlas despacio"
@@ -872,7 +872,7 @@
     {
       "id": "frase.lua.4_5.04.4",
       "tipo": "lua",
-      "en": "The brightest sun! Stretch, stretch!",
+      "en": "A shiny sun! Stretch, stretch!",
       "accion": {
         "gl": "Abrir os dedos coma raios de sol e estirar todo o corpo cara ao teito",
         "es": "Abrir los dedos como rayos de sol y estirar todo el cuerpo hacia el techo"
@@ -922,7 +922,7 @@
     {
       "id": "frase.lua.4_5.06.1",
       "tipo": "lua",
-      "en": "A fox! A sly fox!",
+      "en": "A fox! A furry fox!",
       "accion": {
         "gl": "Poñer as mans enriba da cabeza coma orellas en punta e poñer cara de pillo",
         "es": "Poner las manos sobre la cabeza como orejas en punta y poner cara de pillo"
@@ -932,7 +932,7 @@
     {
       "id": "frase.lua.4_5.06.2",
       "tipo": "lua",
-      "en": "We sneak across the bridge!",
+      "en": "We peek across the bridge!",
       "accion": {
         "gl": "Camiñar agachándose e en silencio, cun dedo diante da boca",
         "es": "Caminar agachándose y en silencio, con un dedo delante de la boca"
@@ -942,7 +942,7 @@
     {
       "id": "frase.lua.4_5.06.3",
       "tipo": "lua",
-      "en": "Mysterious… motionless… horses!",
+      "en": "Dark… tired… horses!",
       "accion": {
         "gl": "Quedar inmóbil, mirar a un lado e ao outro e abrir moito os ollos",
         "es": "Quedarse inmóvil, mirar a un lado y a otro y abrir mucho los ojos"
@@ -1022,7 +1022,7 @@
     {
       "id": "frase.lua.4_5.08.3",
       "tipo": "lua",
-      "en": "A hungry wolf… motionless!",
+      "en": "A hungry wolf… tired!",
       "accion": {
         "gl": "Frotar a barriga en círculos e despois quedar sen moverse",
         "es": "Frotarse la barriga en círculos y luego quedarse sin moverse"
@@ -1092,7 +1092,7 @@
     {
       "id": "frase.lua.4_5.10.2",
       "tipo": "lua",
-      "en": "Waves! Rushing waves!",
+      "en": "Waves! Fast waves!",
       "accion": {
         "gl": "Subir e baixar as mans coma ondas, cada vez máis rápido",
         "es": "Subir y bajar las manos como olas, cada vez más rápido"
@@ -1112,7 +1112,7 @@
     {
       "id": "frase.lua.4_5.10.4",
       "tipo": "lua",
-      "en": "Deep blue sea… sleep, fish.",
+      "en": "Salty sea… sleep, fish.",
       "accion": {
         "gl": "Baixar as mans amodo, coma quen se mete no fondo do mar, e pechar os ollos",
         "es": "Bajar las manos despacio, como quien se mete en el fondo del mar, y cerrar los ojos"
@@ -1272,7 +1272,7 @@
     {
       "id": "frase.lua.5_6.04.4",
       "tipo": "lua",
-      "en": "Here! The brightest light!",
+      "en": "Here! A shiny light!",
       "accion": {
         "gl": "Sinalar a luz máis brillante e despois abrazarse",
         "es": "Señalar la luz más brillante y después abrazarse"
@@ -1342,7 +1342,7 @@
     {
       "id": "frase.lua.5_6.06.3",
       "tipo": "lua",
-      "en": "Statue! Motionless and dramatic!",
+      "en": "Statue! Tired… arms up!",
       "accion": {
         "gl": "Quedar inmóbil coa man na fronte",
         "es": "Quedarse inmóvil con la mano en la frente"
@@ -1412,7 +1412,7 @@
     {
       "id": "frase.lua.5_6.08.2",
       "tipo": "lua",
-      "en": "Mysterious! A green snake… slithering!",
+      "en": "Dark! A green snake… slithering!",
       "accion": {
         "gl": "Mover un brazo en zigzag coma unha serpe",
         "es": "Mover un brazo en zigzag como una serpiente"

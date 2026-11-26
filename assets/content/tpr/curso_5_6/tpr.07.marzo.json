@@ -254,15 +254,16 @@
       "palabras": [
         {
           "id": "5_6.marzo.s2.symmetry",
-          "en": "Symmetry",
-          "gl": "Simetría",
-          "es": "Simetría",
+          "en": "Same",
+          "gl": "Igual",
+          "es": "Igual",
           "tprAction": {
-            "gl": "Mover as dúas mans igual",
-            "es": "Mover las dos manos igual"
+            "gl": "Sinala ou colle o que nomeas: igual.",
+            "es": "Señala o coge lo que nombras: igual."
           },
           "category": "noun",
-          "lamina": "pal_symmetry"
+          "lamina": "pal_same",
+          "volve": "curso_3_4"
         },
         {
           "id": "5_6.marzo.s2.mirror-line",

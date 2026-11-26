@@ -155,15 +155,16 @@
         },
         {
           "id": "4_5.setembro.s1.fair",
-          "en": "Fair",
-          "gl": "Xusto",
-          "es": "Justo",
+          "en": "Kind",
+          "gl": "Amable",
+          "es": "Amable",
           "tprAction": {
-            "gl": "Repartir en partes iguais",
-            "es": "Repartir en partes iguales"
+            "gl": "Sinala ou colle o que nomeas: amable.",
+            "es": "Señala o coge lo que nombras: amable."
           },
           "category": "adjective",
-          "lamina": "pal_fair"
+          "lamina": "pal_kind",
+          "volve": "curso_3_4"
         },
         {
           "id": "4_5.setembro.s1.responsible",
@@ -397,15 +398,16 @@
         },
         {
           "id": "4_5.setembro.s2.sturdy",
-          "en": "Sturdy",
-          "gl": "Resistente",
-          "es": "Resistente",
+          "en": "Solid",
+          "gl": "Sólido",
+          "es": "Sólido",
           "tprAction": {
-            "gl": "Empurrar a torre sen que caia",
-            "es": "Empujar la torre sin que caiga"
+            "gl": "Sinala ou colle o que nomeas: sólido.",
+            "es": "Señala o coge lo que nombras: sólido."
           },
           "category": "adjective",
-          "lamina": "pal_sturdy"
+          "lamina": "pal_solid",
+          "volve": "curso_2_3"
         },
         {
           "id": "4_5.setembro.s2.taller",

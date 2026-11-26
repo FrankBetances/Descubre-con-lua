@@ -14,15 +14,16 @@
       "palabras": [
         {
           "id": "5_6.xuno.s1.memory-lane",
-          "en": "Memory lane",
-          "gl": "Camiño dos recordos",
-          "es": "Camino de los recuerdos",
+          "en": "Picture",
+          "gl": "Imaxe",
+          "es": "Imagen",
           "tprAction": {
-            "gl": "Camiñar mirando atrás",
-            "es": "Caminar mirando atrás"
+            "gl": "Sinala ou colle o que nomeas: imaxe.",
+            "es": "Señala o coge lo que nombras: imagen."
           },
           "category": "noun",
-          "lamina": "pal_memory_lane"
+          "lamina": "pal_picture",
+          "volve": "curso_3_4"
         },
         {
           "id": "5_6.xuno.s1.scrapbook",
@@ -250,15 +251,16 @@
       "palabras": [
         {
           "id": "5_6.xuno.s2.primary-school",
-          "en": "Primary school",
-          "gl": "Escola de Primaria",
-          "es": "Colegio de Primaria",
+          "en": "Big school",
+          "gl": "A escola dos maiores",
+          "es": "El cole de mayores",
           "tprAction": {
-            "gl": "Sinalar un edificio grande",
-            "es": "Señalar un edificio grande"
+            "gl": "Sinala ou colle o que nomeas: a escola dos maiores.",
+            "es": "Señala o coge lo que nombras: el cole de mayores."
           },
           "category": "noun",
-          "lamina": "pal_primary_school"
+          "lamina": "pal_big_school",
+          "volve": "curso_4_5"
         },
         {
           "id": "5_6.xuno.s2.desk",

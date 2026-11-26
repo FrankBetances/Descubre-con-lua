@@ -130,17 +130,17 @@
           "es": "Descubrir"
         },
         "frase": {
-          "en": "blend",
-          "gl": "mesturar",
-          "es": "mezclar"
+          "en": "Mix",
+          "gl": "Mesturar",
+          "es": "Mezclar"
         },
         "queFacer": {
-          "gl": "Dio ti mentres o fas, cara a cara e á súa altura: «blend». Só ten que escoitar e mirar.",
-          "es": "Dilo tú mientras lo haces, cara a cara y a su altura: «blend». Solo tiene que escuchar y mirar."
+          "gl": "Dio ti mentres o fas, cara a cara e á súa altura: «Mix». Só ten que escoitar e mirar.",
+          "es": "Dilo tú mientras lo haces, cara a cara y a su altura: «Mix». Solo tiene que escuchar y mirar."
         },
         "mans": {
-          "gl": "Sinala ou colle o que nomeas: mesturar.",
-          "es": "Señala o coge lo que nombras: mezclar."
+          "gl": "Sinala ou colle o que nomeas: Mesturar.",
+          "es": "Señala o coge lo que nombras: Mezclar."
         },
         "esperaSegundos": 5,
         "nonPedir": {
@@ -149,16 +149,16 @@
         },
         "recast": {
           "silencio": {
-            "gl": "Fai ti o xesto e volve dicir «blend» amodo, sorrindo, e segue co xogo.",
-            "es": "Haz tú el gesto y vuelve a decir «blend» despacio, sonriendo, y sigue con el juego."
+            "gl": "Fai ti o xesto e volve dicir «Mix» amodo, sorrindo, e segue co xogo.",
+            "es": "Haz tú el gesto y vuelve a decir «Mix» despacio, sonriendo, y sigue con el juego."
           },
           "linguaCasa": {
-            "gl": "Acolle o que di na lingua da casa, asente e devólvello en inglés: «blend».",
-            "es": "Acoge lo que dice en la lengua de casa, asiente y devuélveselo en inglés: «blend»."
+            "gl": "Acolle o que di na lingua da casa, asente e devólvello en inglés: «Mix».",
+            "es": "Acoge lo que dice en la lengua de casa, asiente y devuélveselo en inglés: «Mix»."
           },
           "unhaPalabra": {
-            "gl": "Celébrao e engade o que falta: «Yes! blend».",
-            "es": "Celébralo y añade lo que falta: «Yes! blend»."
+            "gl": "Celébrao e engade o que falta: «Yes! Mix».",
+            "es": "Celébralo y añade lo que falta: «Yes! Mix»."
           }
         }
       },

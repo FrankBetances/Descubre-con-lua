@@ -130,11 +130,6 @@
         "motivo": "No curso, «group» é agrupar de cinco en cinco; na orde, «the group» é o grupo da clase."
       },
       {
-        "orde": "cmd.maio.6i.03",
-        "palabra": "3_4.marzo.s1.stick",
-        "motivo": "No curso, «stick» é pegar; na orde, «rhythm stick» é a baqueta."
-      },
-      {
         "orde": "cmd.decembro.6i.02",
         "palabra": "4_5.novembro.s1.steps",
         "motivo": "No curso, «steps» son as escaleiras; na orde, «step over» é pasar por riba."
@@ -188,11 +183,6 @@
         "orde": "conto_085_o_magosto_popular_e_",
         "palabra": "3_4.marzo.s2.round",
         "motivo": "«in a round» é un canon; no curso, redondo"
-      },
-      {
-        "orde": "conto_091_os_m_zcaras_e_os_pel",
-        "palabra": "3_4.marzo.s2.square",
-        "motivo": "«the square» é a praza; no curso, o cadrado"
       },
       {
         "orde": "conto_092_a_orquestra_dos_sons",
@@ -811,6 +801,17 @@
         "es": "Girar sobre un pie"
       }
     },
+    "2_3.novembro.s1.stroll": {
+      "curso": "curso_2_3",
+      "mes": 11,
+      "en": "March",
+      "gl": "Marchar",
+      "es": "Marchar",
+      "xesto": {
+        "gl": "Sinala ou colle o que nomeas: marchar.",
+        "es": "Señala o coge lo que nombras: marchar."
+      }
+    },
     "2_3.novembro.s1.oak-tree": {
       "curso": "curso_2_3",
       "mes": 11,
@@ -820,6 +821,28 @@
       "xesto": {
         "gl": "Estirar os brazos coma un carballo",
         "es": "Estirar los brazos como un roble"
+      }
+    },
+    "2_3.novembro.s2.blow-away": {
+      "curso": "curso_2_3",
+      "mes": 11,
+      "en": "Spin",
+      "gl": "Xirar",
+      "es": "Girar",
+      "xesto": {
+        "gl": "Sinala ou colle o que nomeas: xirar.",
+        "es": "Señala o coge lo que nombras: girar."
+      }
+    },
+    "2_3.decembro.s1.jump-in": {
+      "curso": "curso_2_3",
+      "mes": 12,
+      "en": "Hop",
+      "gl": "Brincar",
+      "es": "Brincar",
+      "xesto": {
+        "gl": "Sinala ou colle o que nomeas: brincar.",
+        "es": "Señala o coge lo que nombras: brincar."
       }
     },
     "2_3.decembro.s1.in-the-puddle": {
@@ -877,15 +900,26 @@
         "es": "Caminar agachado despacio"
       }
     },
+    "2_3.marzo.s1.oval": {
+      "curso": "curso_2_3",
+      "mes": 3,
+      "en": "Square",
+      "gl": "Cadrado",
+      "es": "Cuadrado",
+      "xesto": {
+        "gl": "Sinala ou colle o que nomeas: cadrado.",
+        "es": "Señala o coge lo que nombras: cuadrado."
+      }
+    },
     "2_3.abril.s1.meadow": {
       "curso": "curso_2_3",
       "mes": 4,
-      "en": "Meadow",
-      "gl": "Prado",
-      "es": "Prado",
+      "en": "Grass",
+      "gl": "Herba",
+      "es": "Hierba",
       "xesto": {
-        "gl": "Abrir os brazos no prado",
-        "es": "Abrir los brazos en el prado"
+        "gl": "Sinala ou colle o que nomeas: herba.",
+        "es": "Señala o coge lo que nombras: hierba."
       }
     },
     "2_3.abril.s1.roll-down": {
@@ -921,15 +955,26 @@
         "es": "Quedarse en silencio con la boca cerrada y a la vista"
       }
     },
-    "2_3.xuno.s1.calm-sea": {
+    "2_3.maio.s1.soap-pump": {
+      "curso": "curso_2_3",
+      "mes": 5,
+      "en": "Bubbles",
+      "gl": "Burbullas",
+      "es": "Burbujas",
+      "xesto": {
+        "gl": "Sinala ou colle o que nomeas: burbullas.",
+        "es": "Señala o coge lo que nombras: burbujas."
+      }
+    },
+    "2_3.xuno.s3.driftwood": {
       "curso": "curso_2_3",
       "mes": 6,
-      "en": "Calm sea",
-      "gl": "Mar tranquilo",
-      "es": "Mar tranquilo",
+      "en": "Stick",
+      "gl": "Pau",
+      "es": "Palo",
       "xesto": {
-        "gl": "Pasar a man plana",
-        "es": "Pasar la mano plana"
+        "gl": "Sinala ou colle o que nomeas: pau.",
+        "es": "Señala o coge lo que nombras: palo."
       }
     },
     "2_3.xuno.s3.under-the-stone": {
@@ -1546,28 +1591,6 @@
       "xesto": {
         "gl": "Levantar unha pedra imaxinaria moi pesada",
         "es": "Levantar una piedra imaginaria muy pesada"
-      }
-    },
-    "3_4.outubro.s4.hop": {
-      "curso": "curso_3_4",
-      "mes": 10,
-      "en": "Hop",
-      "gl": "Saltar a pé coxo",
-      "es": "Saltar a la pata coja",
-      "xesto": {
-        "gl": "Saltar a pé coxo agarrados da man",
-        "es": "Saltar a la pata coja cogidos de la mano"
-      }
-    },
-    "3_4.outubro.s4.march": {
-      "curso": "curso_3_4",
-      "mes": 10,
-      "en": "March",
-      "gl": "Marchar",
-      "es": "Marchar",
-      "xesto": {
-        "gl": "Marchar no sitio levantando os xeonllos",
-        "es": "Marchar en el sitio levantando las rodillas"
       }
     },
     "3_4.outubro.s4.tall": {
@@ -2351,17 +2374,6 @@
         "es": "Hacer una forma con el cuerpo y quedarse quietos"
       }
     },
-    "3_4.marzo.s2.spin": {
-      "curso": "curso_3_4",
-      "mes": 3,
-      "en": "Spin",
-      "gl": "Facer xirar",
-      "es": "Hacer girar",
-      "xesto": {
-        "gl": "Facer xirar un aro imaxinario na cintura",
-        "es": "Hacer girar un aro imaginario en la cintura"
-      }
-    },
     "3_4.marzo.s3.smooth": {
       "curso": "curso_3_4",
       "mes": 3,
@@ -2868,17 +2880,6 @@
         "es": "Levantar un dedo antes de la orden"
       }
     },
-    "4_5.outubro.s2.sneak": {
-      "curso": "curso_4_5",
-      "mes": 10,
-      "en": "Sneak",
-      "gl": "Andar ás agachadas",
-      "es": "Andar a hurtadillas",
-      "xesto": {
-        "gl": "Camiñar en silencio agachado",
-        "es": "Caminar en silencio agachado"
-      }
-    },
     "4_5.novembro.s2.roots": {
       "curso": "curso_4_5",
       "mes": 11,
@@ -3126,8 +3127,7 @@
     ],
     "cmd.abril.4i.01": [
       "3_4.febreiro.s2.gallop",
-      "3_4.febreiro.s2.horse",
-      "2_3.abril.s1.meadow"
+      "3_4.febreiro.s2.horse"
     ],
     "cmd.abril.4i.02": [
       "3_4.outubro.s1.big",
@@ -3174,7 +3174,7 @@
       "3_4.setembro.s1.smile"
     ],
     "cmd.outubro.5i.01": [
-      "3_4.outubro.s4.hop",
+      "2_3.decembro.s1.jump-in",
       "3_4.novembro.s2.squirrel",
       "3_4.xuno.s2.collect",
       "3_4.novembro.s2.chestnut"
@@ -3251,7 +3251,6 @@
       "3_4.outubro.s1.freeze"
     ],
     "cmd.febreiro.5i.03": [
-      "4_5.outubro.s2.sneak",
       "3_4.setembro.s1.quiet",
       "3_4.novembro.s3.fox"
     ],
@@ -3305,7 +3304,8 @@
       "3_4.setembro.s1.friend"
     ],
     "cmd.xuno.5i.01": [
-      "2_3.xuno.s1.calm-sea",
+      "3_4.setembro.s3.calm",
+      "3_4.xuno.s1.sea",
       "3_4.outubro.s3.slow"
     ],
     "cmd.xuno.5i.02": [
@@ -3462,6 +3462,7 @@
     "cmd.maio.6i.03": [
       "3_4.maio.s3.pass",
       "0_2.febreiro.s4.rhythm",
+      "2_3.xuno.s3.driftwood",
       "3_4.marzo.s2.circle"
     ],
     "cmd.xuno.6i.01": [
@@ -3503,6 +3504,9 @@
     ],
     "conto_034_a_bolboreta_azul_que": [
       "0_2.xaneiro.s3.flutter"
+    ],
+    "conto_038_a_herba_verde_que_ol": [
+      "2_3.abril.s1.meadow"
     ],
     "conto_039_a_gaivota_curiosa_da": [
       "0_2.xuno.s2.glide",
@@ -3563,7 +3567,8 @@
     "conto_057_as_burbullas_que_que": [
       "3_4.outubro.s3.reach",
       "3_4.decembro.s4.pop",
-      "3_4.novembro.s1.sky"
+      "3_4.novembro.s1.sky",
+      "2_3.maio.s1.soap-pump"
     ],
     "conto_058_a_danza_da_chuvia_do": [
       "3_4.outubro.s4.dance",
@@ -3633,7 +3638,7 @@
       "3_4.setembro.s1.friend"
     ],
     "conto_071_o_entroido_dos_cabez": [
-      "3_4.outubro.s4.march",
+      "2_3.novembro.s1.stroll",
       "3_4.outubro.s1.big",
       "3_4.outubro.s1.head"
     ],
@@ -3670,7 +3675,7 @@
       "3_4.outubro.s1.jump"
     ],
     "conto_078_a_batalla_dos_xogos_": [
-      "3_4.marzo.s2.spin",
+      "2_3.novembro.s2.blow-away",
       "2_3.xaneiro.s4.rope"
     ],
     "historia_auga_hixiene": [
@@ -3721,7 +3726,7 @@
       "0_2.outubro.s2.warm-hands"
     ],
     "conto_088_o_solsticio_de_inver": [
-      "3_4.marzo.s2.spin",
+      "2_3.novembro.s2.blow-away",
       "3_4.outubro.s3.slow",
       "3_4.xaneiro.s4.lamp"
     ],
@@ -3739,7 +3744,8 @@
     ],
     "conto_091_os_m_zcaras_e_os_pel": [
       "3_4.decembro.s2.ring",
-      "3_4.febreiro.s4.leap"
+      "3_4.febreiro.s4.leap",
+      "2_3.marzo.s1.oval"
     ],
     "conto_092_a_orquestra_dos_sons": [
       "3_4.decembro.s4.music"
@@ -3824,7 +3830,8 @@
         "0_2.xaneiro.s3.flutter"
       ],
       "5": [
-        "0_2.outubro.s2.belly"
+        "0_2.outubro.s2.belly",
+        "2_3.abril.s1.meadow"
       ],
       "6": [
         "0_2.xuno.s2.little-fish",
@@ -3898,7 +3905,6 @@
       "4": [
         "3_4.febreiro.s2.gallop",
         "3_4.febreiro.s2.horse",
-        "2_3.abril.s1.meadow",
         "3_4.outubro.s1.big",
         "3_4.febreiro.s2.cow",
         "3_4.febreiro.s2.graze",
@@ -3915,6 +3921,7 @@
         "3_4.outubro.s3.reach",
         "3_4.decembro.s4.pop",
         "3_4.novembro.s1.sky",
+        "2_3.maio.s1.soap-pump",
         "3_4.outubro.s4.dance",
         "3_4.abril.s1.rain",
         "0_2.febreiro.s4.stamp",
@@ -3953,7 +3960,7 @@
         "3_4.febreiro.s3.green"
       ],
       "10": [
-        "3_4.outubro.s4.hop",
+        "2_3.decembro.s1.jump-in",
         "3_4.novembro.s2.squirrel",
         "3_4.xuno.s2.collect",
         "3_4.novembro.s2.chestnut",
@@ -4033,10 +4040,9 @@
         "3_4.febreiro.s2.horse",
         "3_4.novembro.s3.wolf",
         "3_4.outubro.s1.freeze",
-        "4_5.outubro.s2.sneak",
         "3_4.setembro.s1.quiet",
         "3_4.novembro.s3.fox",
-        "3_4.outubro.s4.march",
+        "2_3.novembro.s1.stroll",
         "3_4.outubro.s1.big",
         "3_4.outubro.s1.head",
         "3_4.maio.s1.rub",
@@ -4092,15 +4098,15 @@
         "3_4.outubro.s3.slow",
         "3_4.xuno.s3.dolphin",
         "3_4.outubro.s1.jump",
-        "3_4.marzo.s2.spin",
+        "2_3.novembro.s2.blow-away",
         "3_4.maio.s1.wash-your-hands"
       ],
       "6": [
-        "2_3.xuno.s1.calm-sea",
+        "3_4.setembro.s3.calm",
+        "3_4.xuno.s1.sea",
         "3_4.outubro.s3.slow",
         "2_3.decembro.s2.storm",
         "3_4.marzo.s4.shake",
-        "3_4.xuno.s1.sea",
         "3_4.decembro.s3.sleep",
         "3_4.outubro.s1.down",
         "2_3.abril.s3.lie-still",
@@ -4177,7 +4183,7 @@
         "3_4.maio.s3.bread",
         "3_4.outubro.s3.strong",
         "0_2.outubro.s2.warm-hands",
-        "3_4.marzo.s2.spin",
+        "2_3.novembro.s2.blow-away",
         "3_4.xaneiro.s4.lamp"
       ],
       "1": [
@@ -4211,6 +4217,7 @@
         "3_4.marzo.s2.shape",
         "3_4.decembro.s2.ring",
         "3_4.febreiro.s4.leap",
+        "2_3.marzo.s1.oval",
         "3_4.decembro.s4.music"
       ],
       "3": [
@@ -4260,6 +4267,7 @@
         "0_2.outubro.s3.copy",
         "3_4.maio.s3.pass",
         "0_2.febreiro.s4.rhythm",
+        "2_3.xuno.s3.driftwood",
         "3_4.marzo.s2.circle",
         "3_4.xuno.s1.dive",
         "3_4.xuno.s1.waves",

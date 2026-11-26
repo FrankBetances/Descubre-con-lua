@@ -165,27 +165,29 @@
         },
         {
           "id": "4_5.outubro.s1.alert",
-          "en": "Alert",
-          "gl": "Atento",
-          "es": "Alerta",
+          "en": "Awake",
+          "gl": "Esperto",
+          "es": "Despierto",
           "tprAction": {
-            "gl": "Abrir moito os ollos",
-            "es": "Abrir mucho los ojos"
+            "gl": "Sinala ou colle o que nomeas: esperto.",
+            "es": "Señala o coge lo que nombras: despierto."
           },
           "category": "adjective",
-          "lamina": "pal_alert"
+          "lamina": "pal_awake",
+          "volve": "curso_3_4"
         },
         {
           "id": "4_5.outubro.s1.motionless",
-          "en": "Motionless",
-          "gl": "Inmóbil",
-          "es": "Inmóvil",
+          "en": "Tired",
+          "gl": "Canso",
+          "es": "Cansado",
           "tprAction": {
-            "gl": "Quedar sen moverse",
-            "es": "Quedarse sin moverse"
+            "gl": "Sinala ou colle o que nomeas: canso.",
+            "es": "Señala o coge lo que nombras: cansado."
           },
           "category": "adjective",
-          "lamina": "pal_motionless"
+          "lamina": "pal_tired",
+          "volve": "curso_3_4"
         },
         {
           "id": "4_5.outubro.s1.sudden",
@@ -350,15 +352,16 @@
         },
         {
           "id": "4_5.outubro.s2.sneak",
-          "en": "Sneak",
-          "gl": "Andar ás agachadas",
-          "es": "Andar a hurtadillas",
+          "en": "Peek",
+          "gl": "Asomar a cabeza",
+          "es": "Asomarse",
           "tprAction": {
-            "gl": "Camiñar en silencio agachado",
-            "es": "Caminar en silencio agachado"
+            "gl": "Sinala ou colle o que nomeas: asomar a cabeza.",
+            "es": "Señala o coge lo que nombras: asomarse."
           },
           "category": "verb",
-          "lamina": "pal_sneak"
+          "lamina": "pal_peek",
+          "volve": "curso_3_4"
         },
         {
           "id": "4_5.outubro.s2.tag",
@@ -398,27 +401,28 @@
         },
         {
           "id": "4_5.outubro.s2.sly",
-          "en": "Sly",
-          "gl": "Astuto",
-          "es": "Astuto",
+          "en": "Furry",
+          "gl": "Peludo",
+          "es": "Peludo",
           "tprAction": {
-            "gl": "Poñer cara de pillo",
-            "es": "Poner cara de pillo"
+            "gl": "Sinala ou colle o que nomeas: peludo.",
+            "es": "Señala o coge lo que nombras: peludo."
           },
           "category": "adjective",
-          "lamina": "pal_sly"
+          "lamina": "pal_furry",
+          "volve": "curso_3_4"
         },
         {
           "id": "4_5.outubro.s2.nimble-footed",
-          "en": "Nimble-footed",
-          "gl": "De pés áxiles",
-          "es": "De pies ágiles",
+          "en": "Quick",
+          "gl": "Rápido",
+          "es": "Rápido",
           "tprAction": {
-            "gl": "Mover os pés moi rápido",
-            "es": "Mover los pies muy rápido"
+            "gl": "Sinala ou colle o que nomeas: rápido.",
+            "es": "Señala o coge lo que nombras: rápido."
           },
           "category": "adjective",
-          "lamina": "pal_nimble_footed"
+          "lamina": "pal_quick"
         },
         {
           "id": "4_5.outubro.s2.out-of-sight",

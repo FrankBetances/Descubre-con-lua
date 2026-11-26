@@ -85,6 +85,45 @@ def _frases_neno() -> list[tuple[str, str]]:
             for ev in (esc.get("scene_spec") or {}).get("events") or []:
                 if ev.get("englishPhrase"):
                     out.append((f"ar.{esc.get('id', '?')}.ev", str(ev["englishPhrase"])))
+
+    irmans_path = CONTENT_DIR / "nivel" / "reto_irmans.json"
+    if irmans_path.exists():
+        rm = json.loads(irmans_path.read_text(encoding="utf-8"))
+        for par_key, items in (rm.get("pares") or {}).items():
+            for it in items:
+                if it.get("fraseEn"):
+                    out.append((f"irmans.{par_key}.{it.get('id', '?')}", str(it["fraseEn"])))
+
+    if acopros_path.exists():
+        data = json.loads(acopros_path.read_text(encoding="utf-8"))
+        for p in data.get("proxectos") or []:
+            mc = p.get("mesCalendario", "?")
+            for s in p.get("semanas") or []:
+                sn = s.get("semana", "?")
+                for cname, cap in (s.get("capas") or {}).items():
+                    if not isinstance(cap, dict):
+                        continue
+                    if cap.get("en"):
+                        out.append((f"acopros.{mc}.s{sn}.capa.{cname}", str(cap["en"])))
+                    for pz in cap.get("pezas") or []:
+                        if isinstance(pz, dict) and pz.get("en"):
+                            out.append((f"acopros.{mc}.s{sn}.capa.{cname}.peza", str(pz["en"])))
+
+    leccions_path = CONTENT_DIR / "leccions" / "leccions.json"
+    if leccions_path.exists():
+        lc = json.loads(leccions_path.read_text(encoding="utf-8"))
+        for cid, cdata in (lc.get("cursos") or {}).items():
+            for u in cdata.get("unidades") or []:
+                for l in u.get("leccions") or []:
+                    lid = l.get("id", "?")
+                    for cname, cap in (l.get("capas") or {}).items():
+                        if not isinstance(cap, dict):
+                            continue
+                        if cap.get("en"):
+                            out.append((f"leccions.{cid}.{lid}.capa.{cname}", str(cap["en"])))
+                        for pz in cap.get("pezas") or []:
+                            if isinstance(pz, dict) and pz.get("en"):
+                                out.append((f"leccions.{cid}.{lid}.capa.{cname}.peza", str(pz["en"])))
     return out
 
 

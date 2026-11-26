@@ -166,7 +166,8 @@
             "gl": "Sorrir cos brazos abertos cara ao sol",
             "es": "Sonreír con los brazos abiertos hacia el sol"
           },
-          "lamina": "pal_sunny"
+          "lamina": "pal_sunny",
+          "volve": "curso_2_3"
         },
         {
           "id": "3_4.abril.s1.cloudy",
@@ -763,7 +764,8 @@
             "gl": "Pasar as mans polo chan coma se acariñasemos herba",
             "es": "Pasar las manos por el suelo como si acariciáramos hierba"
           },
-          "lamina": "pal_grass"
+          "lamina": "pal_grass",
+          "volve": "curso_2_3"
         },
         {
           "id": "3_4.abril.s4.nest",
@@ -799,7 +801,8 @@
             "gl": "Abrir os brazos e mirar arredor contentos",
             "es": "Abrir los brazos y mirar alrededor contentos"
           },
-          "lamina": "pal_park"
+          "lamina": "pal_park",
+          "volve": "curso_2_3"
         },
         {
           "id": "3_4.abril.s4.bench",

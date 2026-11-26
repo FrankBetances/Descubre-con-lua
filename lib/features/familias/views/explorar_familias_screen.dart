@@ -151,8 +151,9 @@ class ExplorarFamiliasScreen extends StatelessWidget {
         icona: Icons.forum_rounded,
         nome: const LocalizedString(gl: 'Os 100 contos', es: 'Los 100 cuentos'),
         di: const LocalizedString(
-            gl: 'Para contar lámina a lámina',
-            es: 'Para contar lámina a lámina'),
+          gl: 'Para contar lámina a lámina',
+          es: 'Para contar lámina a lámina',
+        ),
         abrir: (_) => BibliotecaContosScreen(
           language: language,
           onLanguageChanged: onLanguageChanged,
@@ -165,7 +166,9 @@ class ExplorarFamiliasScreen extends StatelessWidget {
         icona: Icons.hearing_rounded,
         nome: XogosEscoitaScreen.titulo,
         di: const LocalizedString(
-            gl: 'Escoitar, sinalar e xogar', es: 'Escuchar, señalar y jugar'),
+          gl: 'Escoitar, sinalar e xogar',
+          es: 'Escuchar, señalar y jugar',
+        ),
         abrir: (_) => XogosEscoitaScreen(
           language: language,
           onLanguageChanged: onLanguageChanged,
@@ -175,10 +178,14 @@ class ExplorarFamiliasScreen extends StatelessWidget {
       _Modulo(
         clave: 'explorar_steam_do_ano',
         icona: Icons.biotech_rounded,
-        nome:
-            const LocalizedString(gl: 'STEAM do curso', es: 'STEAM del curso'),
+        nome: const LocalizedString(
+          gl: 'STEAM do curso',
+          es: 'STEAM del curso',
+        ),
         di: const LocalizedString(
-            gl: 'Un experimento cada mes', es: 'Un experimento cada mes'),
+          gl: 'Un experimento cada mes',
+          es: 'Un experimento cada mes',
+        ),
         abrir: (_) => SteamDoAnoScreen(
           cursoId: cursoId,
           language: language,

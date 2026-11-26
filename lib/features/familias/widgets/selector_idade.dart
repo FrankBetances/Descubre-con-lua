@@ -58,8 +58,11 @@ class SelectorIdade extends StatelessWidget {
               child: Row(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  Icon(Icons.child_care_rounded,
-                      size: 20, color: context.acento),
+                  Icon(
+                    Icons.child_care_rounded,
+                    size: 20,
+                    color: context.acento,
+                  ),
                   const SizedBox(width: 6),
                   if (nome != null)
                     // Con letra grande el nombre se recorta antes que la
@@ -88,8 +91,11 @@ class SelectorIdade extends StatelessWidget {
                       color: context.acento,
                     ),
                   ),
-                  Icon(Icons.expand_more_rounded,
-                      size: 22, color: context.acento),
+                  Icon(
+                    Icons.expand_more_rounded,
+                    size: 22,
+                    color: context.acento,
+                  ),
                 ],
               ),
             ),
@@ -101,8 +107,11 @@ class SelectorIdade extends StatelessWidget {
 
   Future<void> _abrir(BuildContext context) async {
     if (!paraAula && CrianzaDaCasa.maybeOf(context)?.store.activa != null) {
-      return abrirFollaCrianza(context,
-          language: language, onCambiarCurso: onCambiar);
+      return abrirFollaCrianza(
+        context,
+        language: language,
+        onCambiarCurso: onCambiar,
+      );
     }
     final isGl = language == AppLanguage.gl;
     final elixido = await showModalBottomSheet<String>(

@@ -850,7 +850,8 @@
             "gl": "Saltar a pé coxo agarrados da man",
             "es": "Saltar a la pata coja cogidos de la mano"
           },
-          "lamina": "pal_hop"
+          "lamina": "pal_hop",
+          "volve": "curso_2_3"
         },
         {
           "id": "3_4.outubro.s4.march",
@@ -862,7 +863,8 @@
             "gl": "Marchar no sitio levantando os xeonllos",
             "es": "Marchar en el sitio levantando las rodillas"
           },
-          "lamina": "pal_march"
+          "lamina": "pal_march",
+          "volve": "curso_2_3"
         },
         {
           "id": "3_4.outubro.s4.tiptoe",

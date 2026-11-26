@@ -124,17 +124,17 @@
           "es": "Descubrir"
         },
         "frase": {
-          "en": "destination",
-          "gl": "destino",
-          "es": "destino"
+          "en": "Beach",
+          "gl": "Praia",
+          "es": "Playa"
         },
         "queFacer": {
-          "gl": "Dio ti mentres o fas, cara a cara e á súa altura: «destination». Só ten que escoitar e mirar.",
-          "es": "Dilo tú mientras lo haces, cara a cara y a su altura: «destination». Solo tiene que escuchar y mirar."
+          "gl": "Dio ti mentres o fas, cara a cara e á súa altura: «Beach». Só ten que escoitar e mirar.",
+          "es": "Dilo tú mientras lo haces, cara a cara y a su altura: «Beach». Solo tiene que escuchar y mirar."
         },
         "mans": {
-          "gl": "Sinala ou colle o que nomeas: destino.",
-          "es": "Señala o coge lo que nombras: destino."
+          "gl": "Sinala ou colle o que nomeas: Praia.",
+          "es": "Señala o coge lo que nombras: Playa."
         },
         "esperaSegundos": 5,
         "nonPedir": {
@@ -143,16 +143,16 @@
         },
         "recast": {
           "silencio": {
-            "gl": "Fai ti o xesto e volve dicir «destination» amodo, sorrindo, e segue co xogo.",
-            "es": "Haz tú el gesto y vuelve a decir «destination» despacio, sonriendo, y sigue con el juego."
+            "gl": "Fai ti o xesto e volve dicir «Beach» amodo, sorrindo, e segue co xogo.",
+            "es": "Haz tú el gesto y vuelve a decir «Beach» despacio, sonriendo, y sigue con el juego."
           },
           "linguaCasa": {
-            "gl": "Acolle o que di na lingua da casa, asente e devólvello en inglés: «destination».",
-            "es": "Acoge lo que dice en la lengua de casa, asiente y devuélveselo en inglés: «destination»."
+            "gl": "Acolle o que di na lingua da casa, asente e devólvello en inglés: «Beach».",
+            "es": "Acoge lo que dice en la lengua de casa, asiente y devuélveselo en inglés: «Beach»."
           },
           "unhaPalabra": {
-            "gl": "Celébrao e engade o que falta: «Yes! destination».",
-            "es": "Celébralo y añade lo que falta: «Yes! destination»."
+            "gl": "Celébrao e engade o que falta: «Yes! Beach».",
+            "es": "Celébralo y añade lo que falta: «Yes! Beach»."
           }
         }
       },

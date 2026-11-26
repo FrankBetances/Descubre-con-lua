@@ -5,13 +5,18 @@ import '../../juega/widgets/pasos_do_dia.dart';
 import '../../juega/widgets/tarxeta_curricular.dart';
 
 import '../../../core/audio/offline_audio_service.dart';
+import '../../../core/audio/voice_id.dart';
+import '../../../core/audio/widgets/boton_escuchar.dart';
+import '../../../core/brand/imaxe_escena.dart';
 import '../../../core/brand/lua_pixel.dart';
 import '../../criancas/xogo_lua.dart' show CatalogoLua;
 import '../../../core/localization/app_language.dart';
 import '../../../core/localization/localized_string.dart';
+import '../../../core/localization/significados.dart';
 import '../../../core/navigation/ruta_lua.dart';
 import '../../../core/storage/calendario_store.dart';
 import '../../../core/theme/app_theme.dart';
+import '../../../data/models/fsrs_card_model.dart';
 import '../../../core/widgets/cabecera.dart';
 import '../../../data/models/calendario_model.dart';
 import '../../../data/models/cuento_model.dart';
@@ -30,7 +35,11 @@ import '../../docentes/widgets/hoxe_na_aula.dart';
 import '../../juega/widgets/aula_ciclo_panel.dart' show nomeDoMes;
 import '../../leccions/widgets/leccion_da_semana.dart';
 import '../../criancas/crianza_da_casa.dart';
+import '../../criancas/marcar_palabras_screen.dart';
 import '../../criancas/criancas_store.dart';
+import '../../criancas/proba_entrada.dart';
+import '../../criancas/proba_entrada_screen.dart';
+import '../../criancas/reto_irmans.dart';
 import '../../criancas/tarxeta_lua.dart';
 import '../widgets/learn_duolingo.dart';
 import '../../leccions/widgets/proxecto_0_2.dart';
@@ -80,6 +89,7 @@ class _HoxeFamiliasScreenState extends State<HoxeFamiliasScreen> {
   DiaCalendarioDual? _dia;
   Cuento? _conto;
   SteamUnit? _steam;
+  Leccions? _leccions;
   bool _cargando = true;
 
   late DiaQueToca _toca = DiaQueToca.para(agora: widget.agora);
@@ -160,6 +170,20 @@ class _HoxeFamiliasScreenState extends State<HoxeFamiliasScreen> {
       });
     }
 
+    Leccions.cargar().then<Leccions?>((l) => l, onError: (_) => null).then((l) {
+      if (mounted && l != null) setState(() => _leccions = l);
+    });
+    if (CatalogoRetoIrmans.lido == null) {
+      CatalogoRetoIrmans.cargar().then((_) {
+        if (mounted) setState(() {});
+      }, onError: (_) {});
+    }
+    if (Proxectos02.lidos == null) {
+      Proxectos02.cargar().then((_) {
+        if (mounted) setState(() {});
+      }, onError: (_) {});
+    }
+
     repo.loadSteamUnits().then((_) {
       if (!vixente()) return;
       setState(() => _steam = steamDoDiaDoCurso(repo, curso, _toca.dia));
@@ -220,7 +244,10 @@ class _HoxeFamiliasScreenState extends State<HoxeFamiliasScreen> {
               store: widget.store,
               agora: widget.agora,
               plan: curso?.planDoDia(
-                  _toca.dia.mesCalendario, _toca.dia.semana, _toca.dia.dia),
+                _toca.dia.mesCalendario,
+                _toca.dia.semana,
+                _toca.dia.dia,
+              ),
             ),
           ),
         )
@@ -271,11 +298,48 @@ class _HoxeFamiliasScreenState extends State<HoxeFamiliasScreen> {
     final programa = widget.repository.programaTprSync;
     final curso = programa?.curso(widget.cursoId);
     final plan = curso?.planDoDia(
-        _toca.dia.mesCalendario, _toca.dia.semana, _toca.dia.dia);
+      _toca.dia.mesCalendario,
+      _toca.dia.semana,
+      _toca.dia.dia,
+    );
     // Para quen chega novo: o que dan por sabido as asembleas deste mes.
     final ponte = widget.repository.ponteAoDiaSync;
     final dadasPorSabidas =
         ponte?.doMes(widget.cursoId, _toca.dia.mesCalendario) ?? const [];
+
+    final casa = CrianzaDaCasa.maybeOf(context);
+    final criancas = casa?.store.criancas ?? const <Crianza>[];
+    final nenoActivo = casa?.store.activa;
+    final agora = widget.agora ?? DateTime.now();
+    final proxSetembro = (casa != null && nenoActivo != null)
+        ? casa.store.cursoPropostoEnSetembro(nenoActivo, agora)
+        : null;
+
+    String resumoHoxePara(Crianza c) {
+      final feito = casa?.store.xogo(c.id).xogouHoxe(agora) ?? false;
+      final prefixo = feito ? (lang == AppLanguage.gl ? 'Feito' : 'Hecho') : '';
+      String tema = '';
+      if (c.curso == 'curso_0_2') {
+        tema = Proxectos02.lidos
+                ?.doMes(_toca.dia.mesCalendario)
+                ?.titulo
+                .resolve(lang) ??
+            '';
+      } else {
+        tema = _leccions
+                ?.da(c.curso, _toca.dia.mesCalendario, _toca.dia.semana)
+                ?.$1
+                .titulo
+                .resolve(lang) ??
+            '';
+      }
+      if (tema.isEmpty) {
+        return prefixo.isNotEmpty
+            ? prefixo
+            : '${_semana[_toca.dia.dia - 1].resolve(lang)} · S${_toca.dia.semana}';
+      }
+      return prefixo.isNotEmpty ? '$prefixo · $tema' : tema;
+    }
 
     return Scaffold(
       backgroundColor: AppTheme.pageBg,
@@ -287,60 +351,64 @@ class _HoxeFamiliasScreenState extends State<HoxeFamiliasScreen> {
       body: SafeArea(
         child: ListView(
           key: const Key('hoxe_familias'),
-          padding: const EdgeInsets.fromLTRB(16, 14, 16, 28),
+          padding: const EdgeInsets.fromLTRB(16, 8, 16, 28),
           children: [
             // O-20261028-4: la edad, la fecha y el título en una fila, para
             // que la lección entre en la primera pantalla.
             // Con letra normal, en una fila; con letra grande, el título
             // baja debajo del selector en vez de estrecharse.
-            Builder(builder: (context) {
-              final grande = MediaQuery.textScalerOf(context).scale(1) > 1.3;
-              final selector = SelectorIdade(
-                cursoId: widget.cursoId,
-                language: lang,
-                onCambiar: widget.onCambiarCurso,
-              );
-              final titulo = Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    _data(lang).toUpperCase(),
-                    key: const Key('hoxe_data'),
-                    style: const TextStyle(
-                      fontSize: 12,
-                      fontWeight: FontWeight.w800,
-                      letterSpacing: 0.6,
-                      color: AppTheme.textSecondary,
-                    ),
-                  ),
-                  Semantics(
-                    header: true,
-                    child: Text(
-                      _titulo(lang),
-                      key: const Key('hoxe_titulo'),
+            Builder(
+              builder: (context) {
+                final grande = MediaQuery.textScalerOf(context).scale(1) > 1.3;
+                final selector = SelectorIdade(
+                  cursoId: widget.cursoId,
+                  language: lang,
+                  onCambiar: widget.onCambiarCurso,
+                );
+                final titulo = Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      _data(lang).toUpperCase(),
+                      key: const Key('hoxe_data'),
                       style: const TextStyle(
-                        fontSize: 17,
+                        fontSize: 12,
                         fontWeight: FontWeight.w800,
-                        color: AppTheme.textPrimary,
-                        height: 1.2,
+                        letterSpacing: 0.6,
+                        color: AppTheme.textSecondary,
                       ),
                     ),
-                  ),
-                ],
-              );
-              return grande
-                  ? Wrap(
-                      spacing: 12,
-                      runSpacing: 6,
-                      crossAxisAlignment: WrapCrossAlignment.center,
-                      children: [selector, titulo],
-                    )
-                  : Row(children: [
-                      selector,
-                      const SizedBox(width: 12),
-                      Expanded(child: titulo),
-                    ]);
-            }),
+                    Semantics(
+                      header: true,
+                      child: Text(
+                        _titulo(lang),
+                        key: const Key('hoxe_titulo'),
+                        style: const TextStyle(
+                          fontSize: 17,
+                          fontWeight: FontWeight.w800,
+                          color: AppTheme.textPrimary,
+                          height: 1.2,
+                        ),
+                      ),
+                    ),
+                  ],
+                );
+                return grande
+                    ? Wrap(
+                        spacing: 12,
+                        runSpacing: 6,
+                        crossAxisAlignment: WrapCrossAlignment.center,
+                        children: [selector, titulo],
+                      )
+                    : Row(
+                        children: [
+                          selector,
+                          const SizedBox(width: 12),
+                          Expanded(child: titulo),
+                        ],
+                      );
+              },
+            ),
             if (_toca.finDeSemana || _toca.prevista) ...[
               const SizedBox(height: 4),
               Text(
@@ -358,9 +426,197 @@ class _HoxeFamiliasScreenState extends State<HoxeFamiliasScreen> {
                 ),
               ),
             ],
+            // P11.1: en septiembre, si por mes/año de nacimiento toca el curso
+            // siguiente, la app lo propone y la persona adulta confirma.
+            if (proxSetembro != null && nenoActivo != null && casa != null) ...[
+              const SizedBox(height: 6),
+              Container(
+                key: const Key('setembro_promocion_card'),
+                padding: const EdgeInsets.all(12),
+                decoration: BoxDecoration(
+                  color: context.acentoTint,
+                  borderRadius: BorderRadius.circular(AppTheme.radiusCard),
+                  border: Border.all(color: context.acento.withAlpha(110)),
+                ),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      lang == AppLanguage.gl
+                          ? 'É setembro! ${nenoActivo.nome} pasa a ${NomesFamilias.idade(proxSetembro).resolve(lang)}?'
+                          : '¡Es septiembre! ¿${nenoActivo.nome} pasa a ${NomesFamilias.idade(proxSetembro).resolve(lang)}?',
+                      style: const TextStyle(
+                        fontSize: 14.5,
+                        fontWeight: FontWeight.w800,
+                        color: AppTheme.textPrimary,
+                      ),
+                    ),
+                    const SizedBox(height: 8),
+                    Row(
+                      children: [
+                        FilledButton(
+                          key: const Key('setembro_promocion_si'),
+                          onPressed: () =>
+                              casa.store.responderPromocionSetembro(
+                            nenoActivo.id,
+                            ano: agora.year,
+                            aceptar: true,
+                            agora: agora,
+                          ),
+                          child: Text(
+                            lang == AppLanguage.gl
+                                ? 'Pasar a ${NomesFamilias.idade(proxSetembro).resolve(lang)}'
+                                : 'Pasar a ${NomesFamilias.idade(proxSetembro).resolve(lang)}',
+                          ),
+                        ),
+                        const SizedBox(width: 8),
+                        OutlinedButton(
+                          key: const Key('setembro_promocion_non'),
+                          onPressed: () =>
+                              casa.store.responderPromocionSetembro(
+                            nenoActivo.id,
+                            ano: agora.year,
+                            aceptar: false,
+                            agora: agora,
+                          ),
+                          child: Text(
+                            lang == AppLanguage.gl
+                                ? 'Manter agora'
+                                : 'Mantener ahora',
+                          ),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
+            ],
+            // P11.1: fila arriba con cada niño de la casa (su Lúa, su nombre,
+            // su curso y en una línea lo que le toca hoy). Un toque cambia el
+            // niño activo y actualiza Hoxe, Calendario y Explorar.
+            if (criancas.isNotEmpty && casa != null) ...[
+              const SizedBox(height: 6),
+              FutureBuilder<CatalogoLua>(
+                future: CatalogoLua.cargar(),
+                initialData: CatalogoLua.lido,
+                builder: (context, cat) {
+                  final ini = cat.data?.deInicio ?? const {};
+                  return SingleChildScrollView(
+                    key: const Key('fila_nenos_hoxe'),
+                    scrollDirection: Axis.horizontal,
+                    child: Row(
+                      children: [
+                        for (var idx = 0; idx < criancas.length; idx++) ...[
+                          if (idx > 0) const SizedBox(width: 8),
+                          Builder(
+                            builder: (context) {
+                              final c = criancas[idx];
+                              final activo = c.id == nenoActivo?.id;
+                              final g = casa.store.xogo(c.id);
+                              final tocaLinha = resumoHoxePara(c);
+                              final cursoNome =
+                                  NomesFamilias.idade(c.curso).resolve(lang);
+                              return Semantics(
+                                button: true,
+                                selected: activo,
+                                label: '${c.nome}, $cursoNome, $tocaLinha',
+                                excludeSemantics: true,
+                                child: Material(
+                                  color: activo
+                                      ? context.acentoTint
+                                      : Colors.white,
+                                  shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(14),
+                                    side: BorderSide(
+                                      color: activo
+                                          ? context.acento
+                                          : AppTheme.border,
+                                      width: activo ? 1.5 : 1,
+                                    ),
+                                  ),
+                                  child: InkWell(
+                                    key: ValueKey('hoxe_neno_${c.id}'),
+                                    borderRadius: BorderRadius.circular(14),
+                                    onTap: () => casa.store.escoller(c.id),
+                                    child: ConstrainedBox(
+                                      constraints: const BoxConstraints(
+                                        minHeight: 48,
+                                        maxWidth: 205,
+                                      ),
+                                      child: Padding(
+                                        padding: const EdgeInsets.symmetric(
+                                          horizontal: 10,
+                                          vertical: 5,
+                                        ),
+                                        child: Row(
+                                          mainAxisSize: MainAxisSize.min,
+                                          children: [
+                                            LuaValeria(
+                                              ancho: 24,
+                                              cabeza: g.cabeza ?? ini['head'],
+                                              pescozo: g.pescozo ?? ini['neck'],
+                                            ),
+                                            const SizedBox(width: 8),
+                                            Flexible(
+                                              child: Column(
+                                                mainAxisSize: MainAxisSize.min,
+                                                crossAxisAlignment:
+                                                    CrossAxisAlignment.start,
+                                                children: [
+                                                  Text(
+                                                    '${c.nome} · $cursoNome',
+                                                    maxLines: 1,
+                                                    overflow:
+                                                        TextOverflow.ellipsis,
+                                                    style: TextStyle(
+                                                      fontSize: 14,
+                                                      fontWeight:
+                                                          FontWeight.w800,
+                                                      height: 1.15,
+                                                      color: activo
+                                                          ? context.acento
+                                                          : AppTheme
+                                                              .textPrimary,
+                                                    ),
+                                                  ),
+                                                  const SizedBox(height: 1),
+                                                  Text(
+                                                    tocaLinha,
+                                                    key: ValueKey(
+                                                      'hoxe_neno_toca_${c.id}',
+                                                    ),
+                                                    maxLines: 1,
+                                                    overflow:
+                                                        TextOverflow.ellipsis,
+                                                    style: const TextStyle(
+                                                      fontSize: 14,
+                                                      height: 1.15,
+                                                      color: AppTheme
+                                                          .textSecondary,
+                                                    ),
+                                                  ),
+                                                ],
+                                              ),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              );
+                            },
+                          ),
+                        ],
+                      ],
+                    ),
+                  );
+                },
+              ),
+            ],
             // O-20261120-1 (F-20261120-2): la estimulación del lenguaje y el
             // pensamiento, arriba y a la vista, no al final de la lección.
-            const SizedBox(height: 6),
+            const SizedBox(height: 2),
             EntradaEstimulacionCard(
               cursoId: widget.cursoId,
               mesCalendario: _toca.dia.mesCalendario,
@@ -376,19 +632,35 @@ class _HoxeFamiliasScreenState extends State<HoxeFamiliasScreen> {
             // cinco días en nodos; el nodo de hoy abre la lección paso a paso.
             const SizedBox(height: 2),
             FutureBuilder<Leccions?>(
-              future: Leccions.cargar()
-                  .then<Leccions?>((l) => l, onError: (_) => null),
+              future: Leccions.cargar().then<Leccions?>(
+                (l) => l,
+                onError: (_) => null,
+              ),
               builder: (context, snap) {
                 final da = snap.data?.da(
-                    widget.cursoId, _toca.dia.mesCalendario, _toca.dia.semana);
+                  widget.cursoId,
+                  _toca.dia.mesCalendario,
+                  _toca.dia.semana,
+                );
                 if (da == null) return const SizedBox.shrink();
                 final (u, lec) = da;
-                final casa = CrianzaDaCasa.maybeOf(context);
                 final neno = casa?.store.activa;
                 final xogo = neno == null ? null : casa!.store.xogo(neno.id);
-                final agora = widget.agora ?? DateTime.now();
+                final ax = (neno != null && casa != null)
+                    ? casa.store.calcularAxustePara(
+                        neno.id,
+                        mesCalendario: _toca.dia.mesCalendario,
+                        semana: _toca.dia.semana,
+                        agora: agora,
+                      )
+                    : null;
+                final cupo = ax?.cupoNovas;
+                final novasDoNeno = lec.novasConCupo(cupo);
                 final semanaKey = CriancasStore.semana(
-                    widget.cursoId, _toca.dia.mesCalendario, _toca.dia.semana);
+                  widget.cursoId,
+                  _toca.dia.mesCalendario,
+                  _toca.dia.semana,
+                );
                 final actual = _toca.prevista
                     ? 0
                     : _toca.finDeSemana
@@ -406,119 +678,410 @@ class _HoxeFamiliasScreenState extends State<HoxeFamiliasScreen> {
                   ];
                   ScaffoldMessenger.of(context)
                     ..hideCurrentSnackBar()
-                    ..showSnackBar(SnackBar(
-                      key: const Key('learn_aviso_futuro'),
-                      content: Text(lang == AppLanguage.gl
-                          ? 'Este día ábrese ${dias[i].gl}'
-                          : 'Este día se abre ${dias[i].es}'),
-                    ));
+                    ..showSnackBar(
+                      SnackBar(
+                        key: const Key('learn_aviso_futuro'),
+                        content: Text(
+                          lang == AppLanguage.gl
+                              ? 'Este día ábrese ${dias[i].gl}'
+                              : 'Este día se abre ${dias[i].es}',
+                        ),
+                      ),
+                    );
                 }
 
-                void abrirLeccion(int i) => abrirLeccionDuolingo(context,
-                    leccion: lec,
-                    dia: i + 1,
-                    language: lang,
-                    semana: semanaKey,
-                    cursoId: widget.cursoId,
-                    mesCalendario: _toca.dia.mesCalendario,
-                    semanaN: _toca.dia.semana,
-                    audioService: widget.audioService,
-                    store: casa?.store,
-                    crianza: neno,
-                    agora: widget.agora);
+                void abrirLeccion(int i) => abrirLeccionDuolingo(
+                      context,
+                      leccion: lec,
+                      dia: i + 1,
+                      language: lang,
+                      semana: semanaKey,
+                      cursoId: widget.cursoId,
+                      mesCalendario: _toca.dia.mesCalendario,
+                      semanaN: _toca.dia.semana,
+                      audioService: widget.audioService,
+                      store: casa?.store,
+                      crianza: neno,
+                      agora: widget.agora,
+                      cupo: cupo,
+                    );
                 void abrir(int i) => i > actual ? avisar(i) : abrirLeccion(i);
+                final excluidas = {
+                  for (final p in novasDoNeno) CriancasStore.claveRepaso(p.en),
+                };
+                final vencidas = (neno != null && casa != null)
+                    ? casa.store.tarxetasVencidas(
+                        neno.id,
+                        agora: agora,
+                        excluir: excluidas,
+                      )
+                    : const <FSRSCard>[];
+                final volven = vencidas.take(4).toList(growable: false);
+                final moitasVencidas = vencidas.length > 6;
+                final mapaPezas = _pezasDoCurso(snap.data, widget.cursoId);
+                final senMarcas = (neno != null && casa != null)
+                    ? casa.store.semanasSenMarcas(
+                        neno.id,
+                        mesCalendario: _toca.dia.mesCalendario,
+                        semana: _toca.dia.semana,
+                      )
+                    : 0;
+                final vistosDomingo = <String>{};
+                final palabrasDomingo = [
+                  for (final p in [...novasDoNeno, ...lec.repasa])
+                    if (vistosDomingo.add(CriancasStore.claveRepaso(p.en))) p,
+                ].take(3).toList(growable: false);
                 return Column(
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
                     if (xogo != null)
                       CabeceraLearn(
-                        curso: Text(neno!.nome,
-                            overflow: TextOverflow.ellipsis,
-                            style: const TextStyle(
-                                fontSize: 15,
-                                fontWeight: FontWeight.w800,
-                                color: AppTheme.textPrimary)),
+                        curso: Text(
+                          neno!.nome,
+                          overflow: TextOverflow.ellipsis,
+                          style: const TextStyle(
+                            fontSize: 15,
+                            fontWeight: FontWeight.w800,
+                            color: AppTheme.textPrimary,
+                          ),
+                        ),
                         xp: xogo.xp,
                         racha: xogo.rachaViva(agora),
                       ),
-                    const SizedBox(height: 10),
-                    BannerUnidade(
-                      titulo: u.titulo.resolve(lang),
-                      descricion: u.steam?.resolve(lang) ?? '',
-                      continuar:
-                          lang == AppLanguage.gl ? 'Continuar' : 'Continuar',
-                      onContinuar: () => abrir(actual),
-                    ),
-                    CaminoNodos(
-                      etiquetas: [
-                        for (var d = 0; d < 5; d++) _semana[d].resolve(lang),
-                      ],
-                      actual: actual,
-                      feitoHoxe: xogo?.xogouHoxe(agora) ?? false,
-                      empezar: lang == AppLanguage.gl ? 'Empezar' : 'Empezar',
-                      onNodo: abrir,
-                      lua: xogo == null
-                          ? null
-                          : FutureBuilder<CatalogoLua>(
-                              future: CatalogoLua.cargar(),
-                              initialData: CatalogoLua.lido,
-                              builder: (context, cat) {
-                                final ini = cat.data?.deInicio ?? const {};
-                                return LuaValeria(
+                    if (neno != null &&
+                        casa != null &&
+                        CatalogoProbaEntrada.debeFacerProba(neno)) ...[
+                      const SizedBox(height: 6),
+                      Container(
+                        key: const Key('retomar_proba_entrada_card'),
+                        padding: const EdgeInsets.all(14),
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(18),
+                          border: Border.all(color: AppTheme.border),
+                        ),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.stretch,
+                          children: [
+                            Text(
+                              lang == AppLanguage.gl
+                                  ? 'Xogo de Lúa pendente para ${neno.nome} (${neno.probaRespostas.length}/18)'
+                                  : 'Juego de Lúa pendiente para ${neno.nome} (${neno.probaRespostas.length}/18)',
+                              style: const TextStyle(
+                                fontSize: 15,
+                                fontWeight: FontWeight.w800,
+                                color: AppTheme.textPrimary,
+                              ),
+                            ),
+                            const SizedBox(height: 6),
+                            Text(
+                              lang == AppLanguage.gl
+                                  ? 'Mentres non remate, ${neno.nome} empeza polo comezo do seu curso.'
+                                  : 'Mientras no acabe, ${neno.nome} empieza por el principio de su curso.',
+                              style: const TextStyle(
+                                fontSize: 14,
+                                color: AppTheme.textSecondary,
+                                height: 1.3,
+                              ),
+                            ),
+                            const SizedBox(height: 10),
+                            Row(
+                              children: [
+                                Expanded(
+                                  child: FilledButton(
+                                    key: const Key('retomar_proba_entrada'),
+                                    onPressed: () => Navigator.of(context).push(
+                                      RutaLua(
+                                        de: context,
+                                        builder: (_) => ProbaEntradaScreen(
+                                          store: casa.store,
+                                          crianza: neno,
+                                          language: lang,
+                                          audioService: widget.audioService,
+                                          agora: agora,
+                                        ),
+                                      ),
+                                    ),
+                                    child: Text(
+                                      lang == AppLanguage.gl
+                                          ? 'Seguir onde quedou'
+                                          : 'Seguir donde se quedó',
+                                    ),
+                                  ),
+                                ),
+                                const SizedBox(width: 8),
+                                TextButton(
+                                  key: const Key('saltar_proba_desde_hoxe'),
+                                  onPressed: () => casa.store.completarProba(
+                                    neno.id,
+                                    peldano: 1,
+                                    agora: agora,
+                                  ),
+                                  child: const Text('Saltar'),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ),
+                    ],
+                    if (senMarcas >= 2 && neno != null) ...[
+                      const SizedBox(height: 6),
+                      Container(
+                        key: const Key('aviso_duas_semanas_sen_marcas'),
+                        padding: const EdgeInsets.symmetric(
+                          horizontal: 14,
+                          vertical: 10,
+                        ),
+                        decoration: BoxDecoration(
+                          color: AppTheme.pageBg,
+                          borderRadius: BorderRadius.circular(14),
+                          border: Border.all(color: AppTheme.border),
+                        ),
+                        child: Text(
+                          lang == AppLanguage.gl
+                              ? 'Levas dúas semanas sen marcar as palabras de ${neno.nome}. Podes facelo nun intre cando xoguedes.'
+                              : 'Llevas dos semanas sin marcar las palabras de ${neno.nome}. Puedes hacerlo en un momento cuando juguéis.',
+                          style: const TextStyle(
+                            fontSize: 14,
+                            color: AppTheme.textSecondary,
+                            height: 1.3,
+                          ),
+                        ),
+                      ),
+                    ],
+                    if (agora.weekday == DateTime.sunday &&
+                        neno != null &&
+                        casa != null &&
+                        palabrasDomingo.isNotEmpty) ...[
+                      const SizedBox(height: 6),
+                      _LuaPreguntaCard(
+                        neno: neno,
+                        semana: semanaKey,
+                        palabras: palabrasDomingo,
+                        store: casa.store,
+                        agora: agora,
+                        language: lang,
+                        audioService: widget.audioService,
+                      ),
+                    ],
+                    if (volven.isNotEmpty && neno != null && casa != null) ...[
+                      const SizedBox(height: 6),
+                      _VolvenHoxeCard(
+                        nenoId: neno.id,
+                        vencidasTotais: vencidas.length,
+                        tarxetas: volven,
+                        pezas: mapaPezas,
+                        store: casa.store,
+                        agora: agora,
+                        language: lang,
+                        audioService: widget.audioService,
+                      ),
+                    ],
+                    if (!moitasVencidas) ...[
+                      const SizedBox(height: 6),
+                      BannerUnidade(
+                        titulo: u.titulo.resolve(lang),
+                        descricion: u.steam?.resolve(lang) ?? '',
+                        continuar:
+                            lang == AppLanguage.gl ? 'Continuar' : 'Continuar',
+                        onContinuar: () => abrir(actual),
+                      ),
+                      CaminoNodos(
+                        etiquetas: [
+                          for (var d = 0; d < 5; d++) _semana[d].resolve(lang),
+                        ],
+                        actual: actual,
+                        feitoHoxe: xogo?.xogouHoxe(agora) ?? false,
+                        empezar: lang == AppLanguage.gl ? 'Empezar' : 'Empezar',
+                        onNodo: abrir,
+                        lua: xogo == null
+                            ? null
+                            : FutureBuilder<CatalogoLua>(
+                                future: CatalogoLua.cargar(),
+                                initialData: CatalogoLua.lido,
+                                builder: (context, cat) {
+                                  final ini = cat.data?.deInicio ?? const {};
+                                  return LuaValeria(
                                     key: const Key('hoxe_lua'),
                                     ancho: 112,
                                     cabeza: xogo.cabeza ?? ini['head'],
-                                    pescozo: xogo.pescozo ?? ini['neck']);
-                              }),
-                    ),
+                                    pescozo: xogo.pescozo ?? ini['neck'],
+                                  );
+                                },
+                              ),
+                      ),
+                    ],
+                    if (neno != null && casa != null && ax != null) ...[
+                      Builder(
+                        builder: (context) {
+                          final capaKey = ax.capa.name;
+                          final Map<String, CapaSemanal> capasSem =
+                              neno.curso == 'curso_0_2'
+                                  ? (Proxectos02.lidos
+                                          ?.doMes(_toca.dia.mesCalendario)
+                                          ?.capasDaSemana(_toca.dia.semana) ??
+                                      lec.capas)
+                                  : lec.capas;
+                          final capaObj =
+                              capasSem[capaKey] ?? capasSem['nucleo'];
+                          final capaUsada = capasSem.containsKey(capaKey)
+                              ? capaKey
+                              : 'nucleo';
+                          final ruts = capaObj?.rutinas ?? const {};
+                          final irmansPar = _parellaIrmans(casa.store.criancas);
+                          final pezaIrmans = irmansPar == null
+                              ? null
+                              : CatalogoRetoIrmans.lido?.paraCursos(
+                                  irmansPar.$1.curso,
+                                  irmansPar.$2.curso,
+                                  mesCalendario: _toca.dia.mesCalendario,
+                                  semanaDoMes: _toca.dia.semana,
+                                );
+                          return Column(
+                            crossAxisAlignment: CrossAxisAlignment.stretch,
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.only(top: 8),
+                                child: Text(
+                                  ax.explicacion(lang),
+                                  key: const Key('axuste_semanal_explicacion'),
+                                  style: const TextStyle(
+                                    fontSize: 14,
+                                    color: AppTheme.textSecondary,
+                                    height: 1.3,
+                                  ),
+                                ),
+                              ),
+                              if (capaObj != null) ...[
+                                const SizedBox(height: 10),
+                                _CapaSemanalCard(
+                                  capaKey: capaUsada,
+                                  capaObj: capaObj,
+                                  language: lang,
+                                  audioService: widget.audioService,
+                                ),
+                              ],
+                              if (ruts.isNotEmpty) ...[
+                                const SizedBox(height: 10),
+                                _RutinasFogarCard(
+                                  neno: neno,
+                                  rutinas: ruts,
+                                  store: casa.store,
+                                  language: lang,
+                                  audioService: widget.audioService,
+                                ),
+                              ],
+                              if (irmansPar != null && pezaIrmans != null) ...[
+                                const SizedBox(height: 10),
+                                _RetoIrmansCard(
+                                  menor: irmansPar.$1,
+                                  maior: irmansPar.$2,
+                                  peza: pezaIrmans,
+                                  mesCalendario: _toca.dia.mesCalendario,
+                                  semanaDoMes: _toca.dia.semana,
+                                  leccions: _leccions,
+                                  store: casa.store,
+                                  agora: agora,
+                                  language: lang,
+                                  audioService: widget.audioService,
+                                ),
+                              ],
+                            ],
+                          );
+                        },
+                      ),
+                    ],
                     const SizedBox(height: 16),
                   ],
                 );
               },
             ),
-            // P11: debajo, la lección de la semana entera, para consultar.
-            const SizedBox(height: 10),
-            LeccionDaSemanaCargada(
-              cursoId: widget.cursoId,
-              mesCalendario: _toca.dia.mesCalendario,
-              semana: _toca.dia.semana,
-              dia: _toca.dia.dia,
-              language: lang,
-              audioService: widget.audioService,
-            ),
-            // O-20261109-3: Lúa de Valeria, con los premios del niño.
-            if (CrianzaDaCasa.maybeOf(context) case final casa?)
-              if (casa.store.activa case final neno?) ...[
+            // P11: debajo, la lección de la semana entera, para consultar
+            // (salvo si hay más de 6 palabras vencidas, que ese día no entran nuevas).
+            if (CrianzaDaCasa.maybeOf(context) case final casaAtiva?)
+              if (casaAtiva.store.activa case final nenoAtivo?) ...[
+                if (!_haiMoitasVencidas(context, _leccions)) ...[
+                  const SizedBox(height: 10),
+                  LeccionDaSemanaCargada(
+                    cursoId: widget.cursoId,
+                    mesCalendario: _toca.dia.mesCalendario,
+                    semana: _toca.dia.semana,
+                    dia: _toca.dia.dia,
+                    cupo: casaAtiva.store
+                        .calcularAxustePara(
+                          nenoAtivo.id,
+                          mesCalendario: _toca.dia.mesCalendario,
+                          semana: _toca.dia.semana,
+                          agora: widget.agora ?? DateTime.now(),
+                        )
+                        .cupoNovas,
+                    language: lang,
+                    audioService: widget.audioService,
+                  ),
+                ],
+                // O-20261109-3: Lúa de Valeria, con los premios del niño.
                 const SizedBox(height: 16),
                 FutureBuilder<Leccions?>(
-                  future: Leccions.cargar()
-                      .then<Leccions?>((l) => l, onError: (_) => null),
-                  builder: (context, snap) => TarxetaLua(
-                    key: ValueKey('tarxeta_lua_${neno.id}'),
-                    store: casa.store,
-                    crianza: neno,
-                    language: lang,
-                    agora: widget.agora,
-                    semana: CriancasStore.semana(
-                        neno.curso, _toca.dia.mesCalendario, _toca.dia.semana),
-                    palabrasDaSemana: neno.curso == 'curso_0_2'
-                        ? [
-                            for (final w in Proxectos02.lidos
-                                    ?.doMes(_toca.dia.mesCalendario)
-                                    ?.daSemana(_toca.dia.semana) ??
-                                const <PalabraProxecto>[])
-                              w.en,
-                          ]
-                        : [
-                            for (final p in snap.data
-                                    ?.da(neno.curso, _toca.dia.mesCalendario,
-                                        _toca.dia.semana)
-                                    ?.$2
-                                    .novas ??
-                                const <PezaDaLeccion>[])
-                              if (p.en.isNotEmpty) p.en,
-                          ],
+                  future: Leccions.cargar().then<Leccions?>(
+                    (l) => l,
+                    onError: (_) => null,
                   ),
+                  builder: (context, snap) {
+                    final cupoLua = casaAtiva.store
+                        .calcularAxustePara(
+                          nenoAtivo.id,
+                          mesCalendario: _toca.dia.mesCalendario,
+                          semana: _toca.dia.semana,
+                          agora: widget.agora ?? DateTime.now(),
+                        )
+                        .cupoNovas;
+                    return TarxetaLua(
+                      key: ValueKey('tarxeta_lua_${nenoAtivo.id}'),
+                      store: casaAtiva.store,
+                      crianza: nenoAtivo,
+                      language: lang,
+                      agora: widget.agora,
+                      semana: CriancasStore.semana(
+                        nenoAtivo.curso,
+                        _toca.dia.mesCalendario,
+                        _toca.dia.semana,
+                      ),
+                      palabrasDaSemana: nenoAtivo.curso == 'curso_0_2'
+                          ? [
+                              for (final w in Proxectos02.lidos
+                                      ?.doMes(_toca.dia.mesCalendario)
+                                      ?.daSemanaConCupo(
+                                        _toca.dia.semana,
+                                        cupoLua,
+                                      ) ??
+                                  const <PalabraProxecto>[])
+                                w.en,
+                            ]
+                          : [
+                              for (final p in snap.data
+                                      ?.da(
+                                        nenoAtivo.curso,
+                                        _toca.dia.mesCalendario,
+                                        _toca.dia.semana,
+                                      )
+                                      ?.$2
+                                      .novasConCupo(cupoLua) ??
+                                  const <PezaDaLeccion>[])
+                                if (p.en.isNotEmpty) p.en,
+                            ],
+                    );
+                  },
+                ),
+              ] else if (!_haiMoitasVencidas(context, _leccions)) ...[
+                const SizedBox(height: 10),
+                LeccionDaSemanaCargada(
+                  cursoId: widget.cursoId,
+                  mesCalendario: _toca.dia.mesCalendario,
+                  semana: _toca.dia.semana,
+                  dia: _toca.dia.dia,
+                  language: lang,
+                  audioService: widget.audioService,
                 ),
               ],
             const SizedBox(height: 16),
@@ -549,7 +1112,9 @@ class _HoxeFamiliasScreenState extends State<HoxeFamiliasScreen> {
                       ? 'Para cando queirades máis. Non fai falta.'
                       : 'Para cuando queráis más. No hace falta.',
                   style: const TextStyle(
-                      fontSize: 14, color: AppTheme.textSecondary),
+                    fontSize: 14,
+                    color: AppTheme.textSecondary,
+                  ),
                 ),
                 childrenPadding: const EdgeInsets.fromLTRB(12, 0, 12, 12),
                 expandedCrossAxisAlignment: CrossAxisAlignment.stretch,
@@ -565,15 +1130,17 @@ class _HoxeFamiliasScreenState extends State<HoxeFamiliasScreen> {
                     ),
                     child: InkWell(
                       borderRadius: BorderRadius.circular(14),
-                      onTap: () => Navigator.of(context).push(RutaLua(
-                        de: context,
-                        builder: (_) => CodigoDaEscolaScreen(
-                          repository: widget.repository,
-                          language: lang,
-                          onLanguageChanged: widget.onLanguageChanged,
-                          audioService: widget.audioService,
+                      onTap: () => Navigator.of(context).push(
+                        RutaLua(
+                          de: context,
+                          builder: (_) => CodigoDaEscolaScreen(
+                            repository: widget.repository,
+                            language: lang,
+                            onLanguageChanged: widget.onLanguageChanged,
+                            audioService: widget.audioService,
+                          ),
                         ),
-                      )),
+                      ),
                       child: Padding(
                         padding: const EdgeInsets.all(14),
                         child: Row(
@@ -592,8 +1159,10 @@ class _HoxeFamiliasScreenState extends State<HoxeFamiliasScreen> {
                                 ),
                               ),
                             ),
-                            Icon(Icons.chevron_right_rounded,
-                                color: context.acento),
+                            Icon(
+                              Icons.chevron_right_rounded,
+                              color: context.acento,
+                            ),
                           ],
                         ),
                       ),
@@ -654,7 +1223,9 @@ class _HoxeFamiliasScreenState extends State<HoxeFamiliasScreen> {
                         plan: plan,
                         modeloDoDia: curso.modelo.dia(_toca.dia.dia),
                         nucleo: switch (widget.repository.unidadeDoMesSync(
-                            widget.cursoId, _toca.dia.mesCalendario)) {
+                          widget.cursoId,
+                          _toca.dia.mesCalendario,
+                        )) {
                           final u? => widget.repository.nucleoSync(u),
                           null => const <PezaDaUnidade>[],
                         },
@@ -674,7 +1245,9 @@ class _HoxeFamiliasScreenState extends State<HoxeFamiliasScreen> {
                     ],
                     if (widget.repository
                             .unidadeDoMesSync(
-                                widget.cursoId, _toca.dia.mesCalendario)
+                              widget.cursoId,
+                              _toca.dia.mesCalendario,
+                            )
                             ?.hogar
                         case final hogar?) ...[
                       RetoDaSemana(
@@ -753,6 +1326,51 @@ class _HoxeFamiliasScreenState extends State<HoxeFamiliasScreen> {
           ],
         ),
       ),
+    );
+  }
+
+  Map<String, PezaDaLeccion> _pezasDoCurso(Leccions? lec, String cursoId) {
+    final mapa = <String, PezaDaLeccion>{};
+    if (lec == null) return mapa;
+    void engadirCurso(String cid) {
+      for (final u in lec.unidades[cid] ?? const <UnidadeDeLeccions>[]) {
+        for (final l in u.leccions) {
+          for (final p in [...l.novas, ...l.repasa, ...l.xaSabe]) {
+            mapa.putIfAbsent(CriancasStore.claveRepaso(p.en), () => p);
+          }
+        }
+      }
+    }
+
+    engadirCurso(cursoId);
+    for (final cid in lec.unidades.keys) {
+      if (cid != cursoId) engadirCurso(cid);
+    }
+    return mapa;
+  }
+
+  bool _haiMoitasVencidas(BuildContext context, Leccions? lec) {
+    final casa = CrianzaDaCasa.maybeOf(context);
+    final neno = casa?.store.activa;
+    if (casa == null || neno == null) return false;
+    final par =
+        lec?.da(widget.cursoId, _toca.dia.mesCalendario, _toca.dia.semana);
+    final cupo = casa.store
+        .calcularAxustePara(
+          neno.id,
+          mesCalendario: _toca.dia.mesCalendario,
+          semana: _toca.dia.semana,
+          agora: widget.agora ?? DateTime.now(),
+        )
+        .cupoNovas;
+    final excluidas = {
+      for (final p in par?.$2.novasConCupo(cupo) ?? const <PezaDaLeccion>[])
+        CriancasStore.claveRepaso(p.en),
+    };
+    return casa.store.haiMoitasVencidas(
+      neno.id,
+      agora: widget.agora,
+      excluir: excluidas,
     );
   }
 }
@@ -868,8 +1486,11 @@ class _TarxetaXogo extends StatelessWidget {
             Row(
               key: const Key('hoxe_feito'),
               children: [
-                const Icon(Icons.check_circle_rounded,
-                    color: AppTheme.successInk, size: 26),
+                const Icon(
+                  Icons.check_circle_rounded,
+                  color: AppTheme.successInk,
+                  size: 26,
+                ),
                 const SizedBox(width: 8),
                 Expanded(
                   child: Text(
@@ -918,8 +1539,10 @@ class _TarxetaPalabras extends StatelessWidget {
   final DailyTprPlan plan;
   final List<PezaDaUnidade> nucleo;
 
-  static const _tituloPalabras =
-      LocalizedString(gl: 'PALABRAS DE HOXE', es: 'PALABRAS DE HOY');
+  static const _tituloPalabras = LocalizedString(
+    gl: 'PALABRAS DE HOXE',
+    es: 'PALABRAS DE HOY',
+  );
   final DiaDoModeloTpr? modeloDoDia;
   final AppLanguage language;
   final OfflineAudioService? audioService;
@@ -1038,8 +1661,11 @@ class _FilaPonteAoDia extends StatelessWidget {
                   color: context.acentoTint,
                   borderRadius: BorderRadius.circular(14),
                 ),
-                child:
-                    Icon(Icons.update_rounded, color: context.acento, size: 26),
+                child: Icon(
+                  Icons.update_rounded,
+                  color: context.acento,
+                  size: 26,
+                ),
               ),
               const SizedBox(width: 14),
               Expanded(
@@ -1071,8 +1697,10 @@ class _FilaPonteAoDia extends StatelessWidget {
                   ],
                 ),
               ),
-              const Icon(Icons.chevron_right_rounded,
-                  color: AppTheme.textSecondary),
+              const Icon(
+                Icons.chevron_right_rounded,
+                color: AppTheme.textSecondary,
+              ),
             ],
           ),
         ),
@@ -1114,8 +1742,11 @@ class _FilaConto extends StatelessWidget {
                   color: context.acentoTint,
                   borderRadius: BorderRadius.circular(14),
                 ),
-                child: Icon(Icons.auto_stories_rounded,
-                    color: context.acento, size: 26),
+                child: Icon(
+                  Icons.auto_stories_rounded,
+                  color: context.acento,
+                  size: 26,
+                ),
               ),
               const SizedBox(width: 14),
               Expanded(
@@ -1158,12 +1789,937 @@ class _FilaConto extends StatelessWidget {
                   ],
                 ),
               ),
-              const Icon(Icons.chevron_right_rounded,
-                  color: AppTheme.textSecondary),
+              const Icon(
+                Icons.chevron_right_rounded,
+                color: AppTheme.textSecondary,
+              ),
             ],
           ),
         ),
       ),
+    );
+  }
+}
+
+class _VolvenHoxeCard extends StatelessWidget {
+  const _VolvenHoxeCard({
+    required this.nenoId,
+    required this.vencidasTotais,
+    required this.tarxetas,
+    required this.pezas,
+    required this.store,
+    required this.agora,
+    required this.language,
+    required this.audioService,
+  });
+
+  final String nenoId;
+  final int vencidasTotais;
+  final List<FSRSCard> tarxetas;
+  final Map<String, PezaDaLeccion> pezas;
+  final CriancasStore store;
+  final DateTime agora;
+  final AppLanguage language;
+  final OfflineAudioService? audioService;
+
+  @override
+  Widget build(BuildContext context) {
+    final isGl = language == AppLanguage.gl;
+    final acento = context.acento;
+    final moitas = vencidasTotais > 6;
+    return Container(
+      key: const Key('volven_hoxe_card'),
+      padding: const EdgeInsets.all(14),
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(18),
+        border: Border.all(color: AppTheme.border),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          Row(
+            children: [
+              Icon(Icons.replay_rounded, color: acento, size: 22),
+              const SizedBox(width: 8),
+              Expanded(
+                child: Text(
+                  isGl ? 'Volven hoxe' : 'Vuelven hoy',
+                  key: const Key('volven_hoxe_titulo'),
+                  style: TextStyle(
+                    fontSize: 16,
+                    fontWeight: FontWeight.w800,
+                    color: acento,
+                  ),
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: 6),
+          Text(
+            moitas
+                ? (isGl
+                    ? 'Hoxe non entran palabras novas: hai $vencidasTotais palabras vencidas para repasar con calma.'
+                    : 'Hoy no entran palabras nuevas: hay $vencidasTotais palabras vencidas para repasar con calma.')
+                : (isGl
+                    ? 'Palabras doutros días para lembrar xuntos. Marca o que ves sen pantalla para o neno.'
+                    : 'Palabras de otros días para recordar juntos. Marca lo que ves sin pantalla para el niño.'),
+            key: moitas ? const Key('volven_hoxe_sen_novas') : null,
+            style: const TextStyle(
+              fontSize: 14,
+              color: AppTheme.textSecondary,
+              height: 1.35,
+            ),
+          ),
+          const SizedBox(height: 10),
+          for (var i = 0; i < tarxetas.length; i++) ...[
+            if (i > 0) const Divider(height: 16, color: AppTheme.border),
+            _FilaVolvenHoxe(
+              nenoId: nenoId,
+              tarxeta: tarxetas[i],
+              peza: pezas[CriancasStore.claveRepaso(tarxetas[i].lemma)],
+              store: store,
+              agora: agora,
+              language: language,
+              audioService: audioService,
+            ),
+          ],
+        ],
+      ),
+    );
+  }
+}
+
+class _FilaVolvenHoxe extends StatelessWidget {
+  const _FilaVolvenHoxe({
+    required this.nenoId,
+    required this.tarxeta,
+    required this.peza,
+    required this.store,
+    required this.agora,
+    required this.language,
+    required this.audioService,
+  });
+
+  final String nenoId;
+  final FSRSCard tarxeta;
+  final PezaDaLeccion? peza;
+  final CriancasStore store;
+  final DateTime agora;
+  final AppLanguage language;
+  final OfflineAudioService? audioService;
+
+  @override
+  Widget build(BuildContext context) {
+    final isGl = language == AppLanguage.gl;
+    final en = peza?.en ?? tarxeta.lemma;
+    final significado = peza?.significado;
+    final lamina = peza?.lamina;
+    final xesto = peza?.xesto?.resolve(language) ??
+        (isGl
+            ? 'Ten na man aquilo do que falas e ensínallo mentres o dis.'
+            : 'Ten en la mano aquello de lo que hablas y enséñaselo mientras lo dices.');
+
+    Widget boton(Observacion o, String texto) {
+      return Expanded(
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 2),
+          child: Semantics(
+            button: true,
+            label: '$en: $texto',
+            child: Material(
+              key: ValueKey('volven_marcar_${tarxeta.lemma}_${o.name}'),
+              color: Colors.white,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(12),
+                side: const BorderSide(color: AppTheme.border),
+              ),
+              child: InkWell(
+                borderRadius: BorderRadius.circular(12),
+                onTap: () => store.repasar(nenoId, en, o, agora: agora),
+                child: ConstrainedBox(
+                  constraints: const BoxConstraints(minHeight: 48),
+                  child: Center(
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: 6,
+                        vertical: 8,
+                      ),
+                      child: Text(
+                        texto,
+                        textAlign: TextAlign.center,
+                        style: const TextStyle(
+                          fontSize: 13,
+                          fontWeight: FontWeight.w700,
+                          color: AppTheme.textPrimary,
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            ),
+          ),
+        ),
+      );
+    }
+
+    return Column(
+      key: ValueKey('volven_hoxe_${tarxeta.lemma}'),
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        Row(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            if (lamina != null) ...[
+              LaminaPalabra(
+                clave: lamina,
+                significado: significado?.resolve(language) ?? en,
+                lang: language,
+                ancho: 48,
+              ),
+              const SizedBox(width: 10),
+            ],
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  BotonEscuchar(
+                    audioService: audioService,
+                    texto: en,
+                    language: AppLanguage.en,
+                    interfaz: language,
+                    comoChip: true,
+                    colorChip: context.acento,
+                    descripcion: en,
+                    significado: significado,
+                    onEscoitar: () => store.rexistrarEscoita(nenoId, en),
+                  ),
+                  const SizedBox(height: 4),
+                  Text(
+                    TarxetaMarcarPalabra.textoEscoitas(
+                      store.escoitasDe(nenoId, en),
+                      language,
+                    ),
+                    key: ValueKey('escoitas_${CriancasStore.claveRepaso(en)}'),
+                    style: const TextStyle(
+                      fontSize: 14,
+                      fontWeight: FontWeight.w700,
+                      color: AppTheme.textSecondary,
+                    ),
+                  ),
+                  const SizedBox(height: 4),
+                  Text(
+                    xesto,
+                    style: const TextStyle(
+                      fontSize: 14,
+                      color: AppTheme.textSecondary,
+                      height: 1.3,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ),
+        const SizedBox(height: 8),
+        Row(
+          children: [
+            boton(Observacion.aindaNon, isGl ? 'Aínda non' : 'Aún no'),
+            boton(Observacion.entende, isGl ? 'Enténdea' : 'La entiende'),
+            boton(Observacion.di, isGl ? 'Dia' : 'La dice'),
+          ],
+        ),
+      ],
+    );
+  }
+}
+
+class _LuaPreguntaCard extends StatelessWidget {
+  const _LuaPreguntaCard({
+    required this.neno,
+    required this.semana,
+    required this.palabras,
+    required this.store,
+    required this.agora,
+    required this.language,
+    required this.audioService,
+  });
+
+  final Crianza neno;
+  final String semana;
+  final List<PezaDaLeccion> palabras;
+  final CriancasStore store;
+  final DateTime agora;
+  final AppLanguage language;
+  final OfflineAudioService? audioService;
+
+  @override
+  Widget build(BuildContext context) {
+    final isGl = language == AppLanguage.gl;
+    final acento = context.acento;
+    return Container(
+      key: const Key('lua_pregunta_card'),
+      padding: const EdgeInsets.all(14),
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(18),
+        border: Border.all(color: AppTheme.border),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          Row(
+            children: [
+              const LuaValeria(ancho: 32, cara: CaraLua.love),
+              const SizedBox(width: 8),
+              Expanded(
+                child: Text(
+                  'Lúa pregunta',
+                  key: const Key('lua_pregunta_titulo'),
+                  style: TextStyle(
+                    fontSize: 16,
+                    fontWeight: FontWeight.w800,
+                    color: acento,
+                  ),
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: 6),
+          Text(
+            isGl
+                ? 'Tres palabras desta semana para ${neno.nome}.'
+                : 'Tres palabras de esta semana para ${neno.nome}.',
+            style: const TextStyle(
+              fontSize: 14,
+              color: AppTheme.textSecondary,
+              height: 1.35,
+            ),
+          ),
+          const SizedBox(height: 10),
+          for (var i = 0; i < palabras.length; i++) ...[
+            if (i > 0) const SizedBox(height: 8),
+            TarxetaMarcarPalabra(
+              key: ValueKey('lua_pregunta_card_${palabras[i].en}'),
+              peza: palabras[i],
+              store: store,
+              crianzaId: neno.id,
+              semana: semana,
+              language: language,
+              audioService: audioService,
+              agora: agora,
+              prefixoBoton: 'lua_pregunta',
+            ),
+          ],
+        ],
+      ),
+    );
+  }
+}
+
+class _CapaSemanalCard extends StatelessWidget {
+  const _CapaSemanalCard({
+    required this.capaKey,
+    required this.capaObj,
+    required this.language,
+    this.audioService,
+  });
+
+  final String capaKey;
+  final CapaSemanal capaObj;
+  final AppLanguage language;
+  final OfflineAudioService? audioService;
+
+  @override
+  Widget build(BuildContext context) {
+    final isGl = language == AppLanguage.gl;
+    final acento = context.acento;
+    final etiquetaCapa = switch (capaKey) {
+      'mais' => isGl ? 'Capa · Máis' : 'Capa · Más',
+      'apoio' => isGl ? 'Capa · Apoio' : 'Capa · Apoyo',
+      _ => 'Capa · Núcleo',
+    };
+    final sigCapa = capaObj.en.isEmpty ? null : Significados.de(capaObj.en);
+    return Container(
+      key: ValueKey('capa_semanal_$capaKey'),
+      padding: const EdgeInsets.all(14),
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(18),
+        border: Border.all(color: AppTheme.border),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          Row(
+            children: [
+              Container(
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
+                decoration: BoxDecoration(
+                  color: acento.withValues(alpha: 0.10),
+                  borderRadius: BorderRadius.circular(20),
+                  border: Border.all(color: acento.withValues(alpha: 0.35)),
+                ),
+                child: Text(
+                  etiquetaCapa,
+                  key: ValueKey('capa_semanal_titulo_$capaKey'),
+                  style: const TextStyle(
+                    fontSize: 14,
+                    fontWeight: FontWeight.w800,
+                    color: AppTheme.textPrimary,
+                  ),
+                ),
+              ),
+            ],
+          ),
+          if (capaObj.texto.resolve(language).isNotEmpty) ...[
+            const SizedBox(height: 8),
+            Text(
+              capaObj.texto.resolve(language),
+              key: ValueKey('capa_semanal_texto_$capaKey'),
+              style: const TextStyle(
+                fontSize: 15,
+                color: AppTheme.textPrimary,
+                height: 1.35,
+              ),
+            ),
+          ],
+          if (capaObj.en.isNotEmpty) ...[
+            const SizedBox(height: 8),
+            BotonEscuchar(
+              key: ValueKey('capa_semanal_audio_$capaKey'),
+              audioService: audioService,
+              texto: capaObj.en,
+              language: AppLanguage.en,
+              interfaz: language,
+              style: estiloIngles(capaObj.en, paraNeno: true),
+              conVozLenta: true,
+              comoChip: true,
+              colorChip: acento,
+              descripcion: capaObj.en,
+              significado: sigCapa,
+            ),
+            if (sigCapa case final sc?)
+              if (sc.resolve(language).isNotEmpty) ...[
+                const SizedBox(height: 4),
+                Text(
+                  sc.resolve(language),
+                  style: const TextStyle(
+                    fontSize: 14,
+                    color: AppTheme.textSecondary,
+                    height: 1.3,
+                  ),
+                ),
+              ],
+          ],
+          if (capaObj.pezas.isNotEmpty) ...[
+            const SizedBox(height: 10),
+            for (var i = 0; i < capaObj.pezas.length; i++) ...[
+              if (i > 0) const SizedBox(height: 8),
+              Builder(
+                builder: (context) {
+                  final p = capaObj.pezas[i];
+                  final sig = p.significado ?? Significados.de(p.en);
+                  final sigTxt = sig?.resolve(language) ?? '';
+                  final xestoTxt = p.xesto?.resolve(language) ?? '';
+                  return Container(
+                    key: ValueKey('capa_peza_${capaKey}_${p.en}'),
+                    padding: const EdgeInsets.all(10),
+                    decoration: BoxDecoration(
+                      color: AppTheme.pageBg,
+                      borderRadius: BorderRadius.circular(14),
+                      border: Border.all(color: AppTheme.border),
+                    ),
+                    child: Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        if (p.lamina case final lam?)
+                          if (lam.isNotEmpty) ...[
+                            LaminaPalabra(
+                              clave: lam,
+                              significado: sigTxt.isNotEmpty ? sigTxt : p.en,
+                              lang: language,
+                              ancho: 60,
+                            ),
+                            const SizedBox(width: 10),
+                          ],
+                        Expanded(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              BotonEscuchar(
+                                audioService: audioService,
+                                texto: p.en,
+                                language: AppLanguage.en,
+                                interfaz: language,
+                                style: estiloIngles(p.en, paraNeno: true),
+                                conVozLenta: true,
+                                comoChip: true,
+                                colorChip: acento,
+                                descripcion: p.en,
+                                significado: sig,
+                              ),
+                              if (sigTxt.isNotEmpty) ...[
+                                const SizedBox(height: 4),
+                                Text(
+                                  sigTxt,
+                                  style: const TextStyle(
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.w600,
+                                    color: AppTheme.textPrimary,
+                                    height: 1.3,
+                                  ),
+                                ),
+                              ],
+                              if (xestoTxt.isNotEmpty) ...[
+                                const SizedBox(height: 2),
+                                Text(
+                                  xestoTxt,
+                                  style: const TextStyle(
+                                    fontSize: 14,
+                                    color: AppTheme.textSecondary,
+                                    height: 1.3,
+                                  ),
+                                ),
+                              ],
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  );
+                },
+              ),
+            ],
+          ],
+        ],
+      ),
+    );
+  }
+}
+
+(Crianza, Crianza)? _parellaIrmans(List<Crianza> criancas) {
+  if (criancas.length < 2) return null;
+  const orde = CatalogoRetoIrmans.ordeCursos;
+  final ordenadas = [...criancas]
+    ..sort((a, b) => orde.indexOf(a.curso).compareTo(orde.indexOf(b.curso)));
+  final menor = ordenadas.first;
+  for (var i = ordenadas.length - 1; i > 0; i--) {
+    if (ordenadas[i].curso != menor.curso) {
+      return (menor, ordenadas[i]);
+    }
+  }
+  return null;
+}
+
+class _RutinasFogarCard extends StatelessWidget {
+  const _RutinasFogarCard({
+    required this.neno,
+    required this.rutinas,
+    required this.store,
+    required this.language,
+    this.audioService,
+  });
+
+  final Crianza neno;
+  final Map<String, RutinaFogar> rutinas;
+  final CriancasStore store;
+  final AppLanguage language;
+  final OfflineAudioService? audioService;
+
+  static const _titulos = <String, (String, String)>{
+    'bano': ('No baño', 'En el baño'),
+    'comida': ('Na comida', 'En la comida'),
+    'coche': ('No coche', 'En el coche'),
+    'vestirse': ('Ao vestirse', 'Al vestirse'),
+    'durmir': ('Antes de durmir', 'Antes de dormir'),
+    'parque': ('No parque', 'En el parque'),
+  };
+
+  @override
+  Widget build(BuildContext context) {
+    final isGl = language == AppLanguage.gl;
+    final acento = context.acento;
+    final elixidas = neno.rutinas.isEmpty ? const ['bano'] : neno.rutinas;
+    final visibles = [
+      for (final rk in elixidas)
+        if (rutinas[rk] case final r?) (rk, r),
+    ];
+    if (visibles.isEmpty) return const SizedBox.shrink();
+    return Container(
+      key: const Key('rutinas_fogar_card'),
+      padding: const EdgeInsets.all(14),
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(18),
+        border: Border.all(color: AppTheme.border),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          Text(
+            isGl
+                ? 'Nas túas rutinas · ${neno.nome}'
+                : 'En tus rutinas · ${neno.nome}',
+            key: const Key('rutinas_fogar_titulo'),
+            style: TextStyle(
+              fontSize: 15,
+              fontWeight: FontWeight.w800,
+              color: acento,
+            ),
+          ),
+          const SizedBox(height: 8),
+          for (var i = 0; i < visibles.length; i++) ...[
+            if (i > 0) const SizedBox(height: 10),
+            Builder(
+              builder: (context) {
+                final rk = visibles[i].$1;
+                final r = visibles[i].$2;
+                final nomes = _titulos[rk] ?? (rk, rk);
+                return Container(
+                  key: ValueKey('rutina_fogar_$rk'),
+                  padding: const EdgeInsets.all(12),
+                  decoration: BoxDecoration(
+                    color: AppTheme.pageBg,
+                    borderRadius: BorderRadius.circular(14),
+                    border: Border.all(color: AppTheme.border),
+                  ),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        isGl ? nomes.$1 : nomes.$2,
+                        style: const TextStyle(
+                          fontSize: 13.5,
+                          fontWeight: FontWeight.w800,
+                          color: AppTheme.textPrimary,
+                        ),
+                      ),
+                      const SizedBox(height: 4),
+                      Text(
+                        r.texto.resolve(language),
+                        style: const TextStyle(
+                          fontSize: 14,
+                          color: AppTheme.textPrimary,
+                          height: 1.35,
+                        ),
+                      ),
+                      const SizedBox(height: 4),
+                      Text(
+                        r.xesto.resolve(language),
+                        style: const TextStyle(
+                          fontSize: 14,
+                          color: AppTheme.textSecondary,
+                          height: 1.3,
+                        ),
+                      ),
+                      if (r.en.isNotEmpty) ...[
+                        const SizedBox(height: 6),
+                        BotonEscuchar(
+                          key: ValueKey('rutina_audio_$rk'),
+                          audioService: audioService,
+                          texto: r.en,
+                          language: AppLanguage.en,
+                          interfaz: language,
+                          style: estiloIngles(r.en, paraNeno: true),
+                          comoChip: true,
+                          colorChip: acento,
+                          onEscoitar: () => store.rexistrarEscoita(
+                            neno.id,
+                            r.en,
+                          ),
+                        ),
+                      ],
+                    ],
+                  ),
+                );
+              },
+            ),
+          ],
+        ],
+      ),
+    );
+  }
+}
+
+class _RetoIrmansCard extends StatefulWidget {
+  const _RetoIrmansCard({
+    required this.menor,
+    required this.maior,
+    required this.peza,
+    required this.mesCalendario,
+    required this.semanaDoMes,
+    required this.leccions,
+    required this.store,
+    required this.agora,
+    required this.language,
+    this.audioService,
+  });
+
+  final Crianza menor;
+  final Crianza maior;
+  final RetoIrmansPeza peza;
+  final int mesCalendario;
+  final int semanaDoMes;
+  final Leccions? leccions;
+  final CriancasStore store;
+  final DateTime agora;
+  final AppLanguage language;
+  final OfflineAudioService? audioService;
+
+  @override
+  State<_RetoIrmansCard> createState() => _RetoIrmansCardState();
+}
+
+class _RetoIrmansCardState extends State<_RetoIrmansCard> {
+  Observacion _obsMenor = Observacion.entende;
+  Observacion _obsMaior = Observacion.di;
+
+  (String, String?) _palabraDoMaior() {
+    if (widget.maior.curso == widget.peza.cursoMaior) {
+      return (
+        widget.peza.palabraMaior.en,
+        widget.peza.steamMaior.resolve(widget.language),
+      );
+    }
+    final lec = widget.leccions;
+    if (lec != null) {
+      const meses = [9, 10, 11, 12, 1, 2, 3, 4, 5, 6];
+      final mIdx = meses.indexOf(widget.mesCalendario);
+      final us = lec.unidades[widget.maior.curso];
+      if (us != null && mIdx >= 0 && mIdx < us.length) {
+        final u = us[mIdx];
+        final sIdx = (widget.semanaDoMes - 1).clamp(0, u.leccions.length - 1);
+        final l = u.leccions[sIdx];
+        final cands = [
+          ...l.novas,
+          ...l.repasa,
+          ...l.xaSabe,
+        ];
+        if (cands.isNotEmpty) {
+          return (
+            cands.first.en,
+            u.steam?.resolve(widget.language) ??
+                u.titulo.resolve(widget.language),
+          );
+        }
+      }
+    }
+    return (
+      widget.peza.palabraMaior.en,
+      widget.peza.steamMaior.resolve(widget.language),
+    );
+  }
+
+  Widget _selectorNeno(
+    String nome,
+    String curso,
+    String palabra,
+    Observacion actual,
+    ValueChanged<Observacion> onSelect,
+    String prefixo,
+  ) {
+    final isGl = widget.language == AppLanguage.gl;
+    final opciones = <(Observacion, String, String)>[
+      (Observacion.aindaNon, isGl ? 'Aínda non' : 'Aún no', '${prefixo}_ainda'),
+      (
+        Observacion.entende,
+        isGl ? 'Entende' : 'La entiende',
+        '${prefixo}_entende'
+      ),
+      (Observacion.di, isGl ? 'Dío' : 'La dice', '${prefixo}_di'),
+    ];
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(
+          '$nome (${NomesFamilias.idade(curso).resolve(widget.language)}): «$palabra»',
+          style: const TextStyle(
+            fontSize: 13.5,
+            fontWeight: FontWeight.w700,
+            color: AppTheme.textPrimary,
+          ),
+        ),
+        const SizedBox(height: 6),
+        Wrap(
+          spacing: 6,
+          runSpacing: 6,
+          children: [
+            for (final op in opciones)
+              ChoiceChip(
+                key: ValueKey(op.$3),
+                label: Text(op.$2),
+                selected: actual == op.$1,
+                onSelected: (_) => onSelect(op.$1),
+                materialTapTargetSize: MaterialTapTargetSize.padded,
+              ),
+          ],
+        ),
+      ],
+    );
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return ListenableBuilder(
+      listenable: widget.store,
+      builder: (context, _) {
+        final isGl = widget.language == AppLanguage.gl;
+        final acento = context.acento;
+        final chave =
+            '${widget.peza.cursoMenor}__${widget.peza.cursoMaior}/${widget.mesCalendario}/${widget.semanaDoMes}';
+        final feito = widget.store.retoIrmansFeito(chave);
+        final infoMaior = _palabraDoMaior();
+
+        if (feito) {
+          return Container(
+            key: const Key('reto_irmans_feito'),
+            padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
+            decoration: BoxDecoration(
+              color: AppTheme.pageBg,
+              borderRadius: BorderRadius.circular(14),
+              border: Border.all(color: AppTheme.border),
+            ),
+            child: Text(
+              isGl
+                  ? 'Reto de irmáns desta semana feito (${widget.maior.nome} e ${widget.menor.nome}).'
+                  : 'Reto de hermanos de esta semana hecho (${widget.maior.nome} y ${widget.menor.nome}).',
+              style: const TextStyle(
+                fontSize: 13.5,
+                color: AppTheme.textSecondary,
+              ),
+            ),
+          );
+        }
+
+        return Container(
+          key: const Key('reto_irmans_card'),
+          padding: const EdgeInsets.all(14),
+          decoration: BoxDecoration(
+            color: Colors.white,
+            borderRadius: BorderRadius.circular(18),
+            border: Border.all(color: AppTheme.border),
+          ),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              Row(
+                children: [
+                  const LuaValeria(ancho: 30, cara: CaraLua.love),
+                  const SizedBox(width: 8),
+                  Expanded(
+                    child: Text(
+                      isGl ? 'Reto de irmáns' : 'Reto de hermanos',
+                      key: const Key('reto_irmans_titulo'),
+                      style: TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.w800,
+                        color: acento,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+              const SizedBox(height: 4),
+              Text(
+                widget.peza.titulo.resolve(widget.language),
+                style: const TextStyle(
+                  fontSize: 13.5,
+                  fontWeight: FontWeight.w700,
+                  color: AppTheme.textSecondary,
+                ),
+              ),
+              const SizedBox(height: 6),
+              Text(
+                widget.peza.instrucion.resolve(widget.language),
+                style: const TextStyle(
+                  fontSize: 14,
+                  color: AppTheme.textPrimary,
+                  height: 1.35,
+                ),
+              ),
+              if (widget.maior.curso != widget.peza.cursoMaior &&
+                  infoMaior.$2 != null) ...[
+                const SizedBox(height: 4),
+                Text(
+                  isGl
+                      ? '${widget.maior.nome} suma tamén «${infoMaior.$1}» (${infoMaior.$2}).'
+                      : '${widget.maior.nome} suma también «${infoMaior.$1}» (${infoMaior.$2}).',
+                  style: const TextStyle(
+                    fontSize: 13.5,
+                    color: AppTheme.textSecondary,
+                  ),
+                ),
+              ],
+              const SizedBox(height: 8),
+              BotonEscuchar(
+                key: const Key('reto_irmans_audio'),
+                audioService: widget.audioService,
+                texto: widget.peza.fraseEn,
+                language: AppLanguage.en,
+                interfaz: widget.language,
+                style: estiloIngles(widget.peza.fraseEn, paraNeno: true),
+                comoChip: true,
+                colorChip: acento,
+                descripcion: widget.peza.fraseEn,
+                significado: widget.peza.fraseSignificado,
+              ),
+              const SizedBox(height: 10),
+              _selectorNeno(
+                widget.maior.nome,
+                widget.maior.curso,
+                infoMaior.$1,
+                _obsMaior,
+                (o) => setState(() => _obsMaior = o),
+                'reto_irmans_maior',
+              ),
+              const SizedBox(height: 8),
+              _selectorNeno(
+                widget.menor.nome,
+                widget.menor.curso,
+                widget.peza.palabraMenor.en,
+                _obsMenor,
+                (o) => setState(() => _obsMenor = o),
+                'reto_irmans_menor',
+              ),
+              const SizedBox(height: 10),
+              ConstrainedBox(
+                constraints: const BoxConstraints(minHeight: 48),
+                child: FilledButton(
+                  key: const Key('reto_irmans_gardar'),
+                  onPressed: () {
+                    widget.store.rexistrarRetoIrmans(
+                      chave: chave,
+                      idMenor: widget.menor.id,
+                      semanaMenor: CriancasStore.semana(
+                        widget.menor.curso,
+                        widget.mesCalendario,
+                        widget.semanaDoMes,
+                      ),
+                      palabraMenor: widget.peza.palabraMenor.en,
+                      obsMenor: _obsMenor,
+                      idMaior: widget.maior.id,
+                      semanaMaior: CriancasStore.semana(
+                        widget.maior.curso,
+                        widget.mesCalendario,
+                        widget.semanaDoMes,
+                      ),
+                      palabraMaior: infoMaior.$1,
+                      obsMaior: _obsMaior,
+                      agora: widget.agora,
+                    );
+                  },
+                  child: Text(
+                    isGl ? 'Gardar reto dos dous' : 'Guardar reto de los dos',
+                  ),
+                ),
+              ),
+            ],
+          ),
+        );
+      },
     );
   }
 }

@@ -305,7 +305,8 @@
             "gl": "Xuntar as palmas e abrilas como un libro",
             "es": "Juntar las palmas y abrirlas como un libro"
           },
-          "lamina": "pal_book"
+          "lamina": "pal_book",
+          "volve": "curso_2_3"
         },
         {
           "id": "3_4.setembro.s2.crayon",
@@ -461,7 +462,8 @@
             "gl": "Recoller xoguetes imaxinarios e gardalos nunha caixa",
             "es": "Recoger juguetes imaginarios y guardarlos en una caja"
           },
-          "lamina": "pal_tidy_up"
+          "lamina": "pal_tidy_up",
+          "volve": "curso_2_3"
         },
         {
           "id": "3_4.setembro.s2.your-turn",

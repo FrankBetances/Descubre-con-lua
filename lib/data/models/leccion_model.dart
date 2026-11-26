@@ -66,6 +66,67 @@ class DiaDaLeccion {
   });
 }
 
+/// Rutina cotidiana de la casa con una frase STEAM no repetida entre semanas (M2).
+@immutable
+class RutinaFogar {
+  final LocalizedString texto;
+  final String en;
+  final LocalizedString xesto;
+
+  const RutinaFogar({
+    required this.texto,
+    required this.en,
+    required this.xesto,
+  });
+
+  factory RutinaFogar.fromJson(Map<String, dynamic> j) => RutinaFogar(
+        texto: _t(j),
+        en: j['en']?.toString() ?? '',
+        xesto: _t(j['xesto']),
+      );
+}
+
+/// Una de las tres capas de una semana (`nucleo`, `mais`, `apoio`) con sus rutinas M2.
+@immutable
+class CapaSemanal {
+  final LocalizedString texto;
+  final String en;
+  final List<PezaDaLeccion> pezas;
+  final Map<String, RutinaFogar> rutinas;
+
+  const CapaSemanal({
+    required this.texto,
+    required this.en,
+    this.pezas = const [],
+    this.rutinas = const {},
+  });
+
+  factory CapaSemanal.fromJson(Map<String, dynamic> j) {
+    final rawPezas = j['pezas'];
+    final pezas = <PezaDaLeccion>[
+      if (rawPezas is List)
+        for (final p in rawPezas)
+          if (p is Map) PezaDaLeccion.fromJson(Map<String, dynamic>.from(p)),
+    ];
+    final rawRut = j['rutinas'];
+    final rutinas = <String, RutinaFogar>{};
+    if (rawRut is Map) {
+      for (final e in rawRut.entries) {
+        if (e.value is Map) {
+          rutinas[e.key.toString()] =
+              RutinaFogar.fromJson(Map<String, dynamic>.from(e.value as Map));
+        }
+      }
+    }
+    return CapaSemanal(
+      texto: _t(j),
+      en: j['en']?.toString() ?? '',
+      pezas: pezas,
+      rutinas: rutinas,
+    );
+  }
+}
+
 /// Una semana de una unidad del plan curricular (P11): lo que ya debería
 /// saber, lo nuevo, el reto de casa, el cuento, el juego y qué mirar.
 @immutable
@@ -100,6 +161,7 @@ class Leccion {
 
   /// La frase de gramática de la semana, con su significado.
   final PezaDaLeccion? fraseGramatica;
+  final Map<String, CapaSemanal> capas;
 
   const Leccion({
     required this.id,
@@ -122,6 +184,7 @@ class Leccion {
     this.fraseGramatica,
     this.comoFalarTitulo,
     this.comoFalar = const [],
+    this.capas = const {},
   });
 
   factory Leccion.fromJson(Map<String, dynamic> j) {
@@ -131,6 +194,16 @@ class Leccion {
         ];
     final r = Map<String, dynamic>.from(j['reto'] as Map? ?? const {});
     final xogo = Map<String, dynamic>.from(j['xogo'] as Map? ?? const {});
+    final rawCapas = j['capas'];
+    final capas = <String, CapaSemanal>{};
+    if (rawCapas is Map) {
+      for (final e in rawCapas.entries) {
+        if (e.value is Map) {
+          capas[e.key.toString()] =
+              CapaSemanal.fromJson(Map<String, dynamic>.from(e.value as Map));
+        }
+      }
+    }
     return Leccion(
       id: j['id']?.toString() ?? '',
       numero: (j['numero'] as num?)?.toInt() ?? 1,
@@ -165,6 +238,7 @@ class Leccion {
               'tipo': 'gramatica'
             })
           : null,
+      capas: capas,
       dias: [
         for (final d in (j['dias'] as List? ?? const []))
           if (d is Map)
@@ -176,6 +250,23 @@ class Leccion {
             ),
       ],
     );
+  }
+
+  /// Las palabras nuevas de la semana respetando [cupo] (Paso 2 de P11).
+  /// Si [cupo] supera [novas], completa con piezas reales de la capa `mais`.
+  List<PezaDaLeccion> novasConCupo(int? cupo) {
+    if (cupo == null || cupo <= 0) return novas;
+    if (novas.length >= cupo) return novas.take(cupo).toList(growable: false);
+    final out = List<PezaDaLeccion>.from(novas);
+    final vistos = {for (final p in out) p.en.trim().toLowerCase()};
+    for (final extra in capas['mais']?.pezas ?? const <PezaDaLeccion>[]) {
+      if (out.length >= cupo) break;
+      final k = extra.en.trim().toLowerCase();
+      if (k.isEmpty || vistos.contains(k)) continue;
+      vistos.add(k);
+      out.add(extra);
+    }
+    return out;
   }
 }
 
@@ -352,6 +443,7 @@ class PuntoDeGramatica {
   final LocalizedString? descricion;
   final LocalizedString? paraFamilias;
   final PezaDaLeccion? exemplo;
+  final bool paraCriaturas;
 
   const PuntoDeGramatica({
     required this.n,
@@ -360,6 +452,7 @@ class PuntoDeGramatica {
     this.descricion,
     this.paraFamilias,
     this.exemplo,
+    this.paraCriaturas = true,
   });
 
   factory PuntoDeGramatica.fromJson(Map<String, dynamic> j) => PuntoDeGramatica(
@@ -374,6 +467,8 @@ class PuntoDeGramatica {
                 'tipo': 'gramatica'
               })
             : null,
+        paraCriaturas:
+            j['paraCriaturas'] as bool? ?? ((j['n'] as num).toInt() <= 20),
       );
 }
 

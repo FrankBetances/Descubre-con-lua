@@ -130,7 +130,8 @@
             "gl": "Pegar un papel imaxinario na parede dándolle palmadiñas",
             "es": "Pegar un papel imaginario en la pared dándole palmaditas"
           },
-          "lamina": "pal_stick"
+          "lamina": "pal_stick",
+          "volve": "curso_2_3"
         },
         {
           "id": "3_4.marzo.s1.choose",
@@ -280,7 +281,8 @@
             "gl": "Debuxar catro lados iguais no aire",
             "es": "Dibujar cuatro lados iguales en el aire"
           },
-          "lamina": "pal_square"
+          "lamina": "pal_square",
+          "volve": "curso_2_3"
         },
         {
           "id": "3_4.marzo.s2.triangle",
@@ -292,7 +294,8 @@
             "gl": "Xuntar os polgares e os índices en forma de triángulo",
             "es": "Juntar pulgares e índices en forma de triángulo"
           },
-          "lamina": "pal_triangle"
+          "lamina": "pal_triangle",
+          "volve": "curso_2_3"
         },
         {
           "id": "3_4.marzo.s2.line",
@@ -399,7 +402,8 @@
             "gl": "Facer xirar un aro imaxinario na cintura",
             "es": "Hacer girar un aro imaginario en la cintura"
           },
-          "lamina": "pal_spin"
+          "lamina": "pal_spin",
+          "volve": "curso_2_3"
         },
         {
           "id": "3_4.marzo.s2.round",

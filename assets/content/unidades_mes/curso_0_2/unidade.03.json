@@ -137,7 +137,9 @@
           "es": "Practicar"
         },
         "frase": {
-          "en": "Pick up!"
+          "en": "Pick up!",
+          "gl": "Apañar",
+          "es": "Recoger"
         },
         "queFacer": {
           "gl": "Di «Pick up!» e fai o xesto sobre o seu corpo, amodo, mentres o miras aos ollos.",

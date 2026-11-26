@@ -39,23 +39,29 @@ void main() {
     return s;
   }
 
-  Future<void> abrirPortal(WidgetTester tester, AppLanguage lang,
-      {required DateTime agora, CalendarioStore? store}) async {
+  Future<void> abrirPortal(
+    WidgetTester tester,
+    AppLanguage lang, {
+    required DateTime agora,
+    CalendarioStore? store,
+  }) async {
     tester.view.physicalSize = const Size(360, 780);
     tester.view.devicePixelRatio = 1.0;
     addTearDown(tester.view.reset);
-    await tester.pumpWidget(MaterialApp(
-      theme: AppTheme.temaFamilias,
-      home: PortalFamiliasScreen(
-        repository: p.contenido,
-        audioService: p.audio,
-        currentLanguage: lang,
-        onToggleLanguage: () {},
-        premios: p.premios,
-        calendario: store ?? p.store,
-        agora: agora,
+    await tester.pumpWidget(
+      MaterialApp(
+        theme: AppTheme.temaFamilias,
+        home: PortalFamiliasScreen(
+          repository: p.contenido,
+          audioService: p.audio,
+          currentLanguage: lang,
+          onToggleLanguage: () {},
+          premios: p.premios,
+          calendario: store ?? p.store,
+          agora: agora,
+        ),
       ),
-    ));
+    );
     await Pasarela.asentar(tester);
   }
 
@@ -65,12 +71,17 @@ void main() {
   // O-20261109-5: arriba va la pantalla «Learn» de Duolingo; debajo, la
   // lección de la semana para consultar.
   // En 0-2 (O-20261109-4, ACOPROS) la lección es el proyecto del mes.
-  final leccion = find.byWidgetPredicate((w) =>
-      w.key == const Key('leccion_cabeceira') ||
-      w.key == const Key('proxecto_0_2'));
+  final leccion = find.byWidgetPredicate(
+    (w) =>
+        w.key == const Key('leccion_cabeceira') ||
+        w.key == const Key('proxecto_0_2'),
+  );
   Future<void> verLeccion(WidgetTester tester) async {
-    await tester.scrollUntilVisible(leccion, 300,
-        scrollable: find.byType(Scrollable).first);
+    await tester.scrollUntilVisible(
+      leccion,
+      300,
+      scrollable: find.byType(Scrollable).first,
+    );
     await tester.pumpAndSettle();
   }
 
@@ -78,8 +89,11 @@ void main() {
   Future<void> irAoXogo(WidgetTester tester) async {
     await Pasarela.abrirMaisParaCasa(tester);
     final comezar = find.byKey(const Key('hoxe_comezar'));
-    await tester.scrollUntilVisible(comezar, 300,
-        scrollable: find.byType(Scrollable).first);
+    await tester.scrollUntilVisible(
+      comezar,
+      300,
+      scrollable: find.byType(Scrollable).first,
+    );
     await tester.ensureVisible(comezar);
     await tester.pumpAndSettle();
   }
@@ -87,21 +101,28 @@ void main() {
   for (final lang in AppLanguage.deInterfaz) {
     final gl = lang == AppLanguage.gl;
 
-    testWidgets('Hoxe, un venres: o xogo co título de casa (${lang.code})',
-        (tester) async {
+    testWidgets('Hoxe, un venres: o xogo co título de casa (${lang.code})', (
+      tester,
+    ) async {
       await abrirPortal(tester, lang, agora: venres);
 
-      expect(texto(tester, 'hoxe_titulo'),
-          gl ? 'A lección desta semana' : 'La lección de esta semana');
-      expect(texto(tester, 'hoxe_data'),
-          gl ? 'VENRES, 2 DE OUTUBRO' : 'VIERNES, 2 DE OCTUBRE');
+      expect(
+        texto(tester, 'hoxe_titulo'),
+        gl ? 'A lección desta semana' : 'La lección de esta semana',
+      );
+      expect(
+        texto(tester, 'hoxe_data'),
+        gl ? 'VENRES, 2 DE OUTUBRO' : 'VIERNES, 2 DE OCTUBRE',
+      );
       await verLeccion(tester);
       expect(leccion, findsOneWidget);
       await irAoXogo(tester);
 
       // El título es el momento del día, no el nombre de la asamblea (A6).
-      expect(texto(tester, 'hoxe_xogo_titulo'),
-          gl ? 'Antes de durmir' : 'Antes de dormir');
+      expect(
+        texto(tester, 'hoxe_xogo_titulo'),
+        gl ? 'Antes de durmir' : 'Antes de dormir',
+      );
       final xogo = texto(tester, 'hoxe_xogo_texto');
       expect(xogo, isNot(contains('Asemblea de')));
       expect(xogo, isNot(contains('Asamblea de')));
@@ -112,17 +133,22 @@ void main() {
       // Un solo botón principal: «Comezar».
       expect(find.byKey(const Key('hoxe_comezar')), findsOneWidget);
       await tester.scrollUntilVisible(
-          find.byKey(const Key('hoxe_conto_da_semana')), 200,
-          scrollable: find.byType(Scrollable).first);
+        find.byKey(const Key('hoxe_conto_da_semana')),
+        200,
+        scrollable: find.byType(Scrollable).first,
+      );
       expect(
-          find.descendant(
-              of: find.byKey(const Key('hoxe_conto_da_semana')),
-              matching: find.text(conto)),
-          findsOneWidget);
+        find.descendant(
+          of: find.byKey(const Key('hoxe_conto_da_semana')),
+          matching: find.text(conto),
+        ),
+        findsOneWidget,
+      );
     });
 
-    testWidgets('Learn de Duolingo, sen baixar, a 412×915 (${lang.code})',
-        (tester) async {
+    testWidgets('Learn de Duolingo, sen baixar, a 412×915 (${lang.code})', (
+      tester,
+    ) async {
       // O-20261109-5: como en duolingo-clone, la primera pantalla es la
       // unidad en su caja y el camino con los nodos de la semana.
       await abrirPortal(tester, lang, agora: venres);
@@ -138,8 +164,10 @@ void main() {
         'learn_empezar',
       ]) {
         expect(
-            tester.getRect(find.byKey(Key(k))).bottom, lessThanOrEqualTo(barra),
-            reason: k);
+          tester.getRect(find.byKey(Key(k))).bottom,
+          lessThanOrEqualTo(barra),
+          reason: k,
+        );
       }
       // Debajo, la lección de la semana entera.
       await verLeccion(tester);
@@ -147,109 +175,142 @@ void main() {
     });
 
     testWidgets(
-        'os nodos dos días responden sempre, sen tocar o banner (${lang.code})',
-        (tester) async {
-      // O-20261111-2 (B): mércores 11/11/2026. O luns e o mércores abren a
-      // súa lección; o xoves aínda non chegou e avisa, nunca cala.
-      await abrirPortal(tester, lang, agora: DateTime(2026, 11, 11, 18));
-      expect(find.byType(HoxeFamiliasScreen), findsOneWidget);
-      for (final i in [0, 2]) {
-        final nodo = find.byKey(ValueKey('learn_nodo_$i'));
-        expect(tester.getSize(nodo).height, greaterThanOrEqualTo(48));
-        expect(tester.getSize(nodo).width, greaterThanOrEqualTo(48));
-        await Scrollable.ensureVisible(tester.element(nodo), alignment: 0.5);
+      'os nodos dos días responden sempre, sen tocar o banner (${lang.code})',
+      (tester) async {
+        // O-20261111-2 (B): mércores 11/11/2026. O luns e o mércores abren a
+        // súa lección; o xoves aínda non chegou e avisa, nunca cala.
+        await abrirPortal(tester, lang, agora: DateTime(2026, 11, 11, 18));
+        expect(find.byType(HoxeFamiliasScreen), findsOneWidget);
+        for (final i in [0, 2]) {
+          final nodo = find.byKey(ValueKey('learn_nodo_$i'));
+          expect(tester.getSize(nodo).height, greaterThanOrEqualTo(48));
+          expect(tester.getSize(nodo).width, greaterThanOrEqualTo(48));
+          await Scrollable.ensureVisible(tester.element(nodo), alignment: 0.5);
+          await Pasarela.asentar(tester);
+          await tester.tap(nodo);
+          await Pasarela.asentar(tester);
+          expect(
+            find.byKey(const Key('leccion_progreso')),
+            findsOneWidget,
+            reason: 'nodo $i',
+          );
+          Navigator.of(
+            tester.element(find.byKey(const Key('leccion_progreso'))),
+          ).pop();
+          await Pasarela.asentar(tester);
+          expect(find.byKey(const Key('leccion_progreso')), findsNothing);
+        }
+        final xoves = find.byKey(const ValueKey('learn_nodo_3'));
+        expect(tester.getSize(xoves).height, greaterThanOrEqualTo(48));
+        await Scrollable.ensureVisible(tester.element(xoves), alignment: 0.5);
         await Pasarela.asentar(tester);
-        await tester.tap(nodo);
-        await Pasarela.asentar(tester);
-        expect(find.byKey(const Key('leccion_progreso')), findsOneWidget,
-            reason: 'nodo $i');
-        Navigator.of(tester.element(find.byKey(const Key('leccion_progreso'))))
-            .pop();
-        await Pasarela.asentar(tester);
+        // No texto da etiqueta, non só no círculo.
+        await tester.tapAt(
+          tester.getRect(xoves).bottomCenter - const Offset(0, 6),
+        );
+        await tester.pump();
+        await tester.pump(const Duration(milliseconds: 400));
         expect(find.byKey(const Key('leccion_progreso')), findsNothing);
-      }
-      final xoves = find.byKey(const ValueKey('learn_nodo_3'));
-      expect(tester.getSize(xoves).height, greaterThanOrEqualTo(48));
-      await Scrollable.ensureVisible(tester.element(xoves), alignment: 0.5);
-      await Pasarela.asentar(tester);
-      // No texto da etiqueta, non só no círculo.
-      await tester
-          .tapAt(tester.getRect(xoves).bottomCenter - const Offset(0, 6));
-      await tester.pump();
-      await tester.pump(const Duration(milliseconds: 400));
-      expect(find.byKey(const Key('leccion_progreso')), findsNothing);
-      expect(
+        expect(
           find.text(
-              gl ? 'Este día ábrese o xoves' : 'Este día se abre el jueves'),
-          findsOneWidget);
-    });
+            gl ? 'Este día ábrese o xoves' : 'Este día se abre el jueves',
+          ),
+          findsOneWidget,
+        );
+      },
+    );
 
     testWidgets(
-        'Lúa, grande, ao lado do camiño e con accesorios (${lang.code})',
-        (tester) async {
-      // O-20261118-1: sin hueco entre los días y Lúa, más grande y con la
-      // flor y el lazo de inicio del catálogo (deInicio).
-      await abrirPortal(tester, lang, agora: venres);
-      tester.view.physicalSize = const Size(412, 915);
-      await Pasarela.asentar(tester);
-      final lua = find.byKey(const Key('hoxe_lua'));
-      expect(lua, findsOneWidget);
-      final w = tester.widget<LuaValeria>(lua);
-      expect(w.ancho, 112);
-      expect(w.cabeza, 'head_flower');
-      expect(w.pescozo, 'neck_red_bow');
-      final rl = tester.getRect(lua);
-      final martes = find.byKey(const Key('learn_nodo_1'));
-      final rm = tester.getRect(martes);
-      expect(rl.left - rm.right, lessThan(80),
-          reason: 'Lúa pegada al camino, no contra el borde');
-      expect(rl.right, lessThanOrEqualTo(412));
-    });
+      'Lúa, grande, ao lado do camiño e con accesorios (${lang.code})',
+      (tester) async {
+        // O-20261118-1: sin hueco entre los días y Lúa, más grande y con la
+        // flor y el lazo de inicio del catálogo (deInicio).
+        await abrirPortal(tester, lang, agora: venres);
+        tester.view.physicalSize = const Size(412, 915);
+        await Pasarela.asentar(tester);
+        final lua = find.byKey(const Key('hoxe_lua'));
+        expect(lua, findsOneWidget);
+        final w = tester.widget<LuaValeria>(lua);
+        expect(w.ancho, 112);
+        expect(w.cabeza, 'head_flower');
+        expect(w.pescozo, 'neck_red_bow');
+        final rl = tester.getRect(lua);
+        final martes = find.byKey(const Key('learn_nodo_1'));
+        final rm = tester.getRect(martes);
+        expect(
+          rl.left - rm.right,
+          lessThan(80),
+          reason: 'Lúa pegada al camino, no contra el borde',
+        );
+        expect(rl.right, lessThanOrEqualTo(412));
+      },
+    );
 
-    testWidgets('«Máis para casa» vai pregado, ao final (${lang.code})',
-        (tester) async {
+    testWidgets('«Máis para casa» vai pregado, ao final (${lang.code})', (
+      tester,
+    ) async {
       await abrirPortal(tester, lang, agora: venres);
       final mais = find.byKey(const Key('hoxe_complementario'));
-      await tester.scrollUntilVisible(mais, 300,
-          scrollable: find.byType(Scrollable).first);
+      await tester.scrollUntilVisible(
+        mais,
+        300,
+        scrollable: find.byType(Scrollable).first,
+      );
       // Debajo de la lección (en 0-2, el proyecto del mes): lo último de Hoy.
       final guia = find.byKey(const Key('proxecto_0_2'));
       expect(
-          tester.getTopLeft(mais).dy, greaterThan(tester.getTopLeft(guia).dy));
+        tester.getTopLeft(mais).dy,
+        greaterThan(tester.getTopLeft(guia).dy),
+      );
       // Plegado: el juego y el código no están hasta que se abre.
       for (final k in ['hoxe_comezar', 'hoxe_codigo_escola']) {
-        expect(find.byKey(Key(k), skipOffstage: false), findsNothing,
-            reason: k);
+        expect(
+          find.byKey(Key(k), skipOffstage: false),
+          findsNothing,
+          reason: k,
+        );
       }
       await Pasarela.abrirMaisParaCasa(tester);
-      expect(find.byKey(const Key('hoxe_codigo_escola'), skipOffstage: false),
-          findsOneWidget);
+      expect(
+        find.byKey(const Key('hoxe_codigo_escola'), skipOffstage: false),
+        findsOneWidget,
+      );
     });
 
     testWidgets(
-        'o venres en 0-2: as do proxecto, sen o reto das 20 (${lang.code})',
-        (tester) async {
-      // O-20261109-4 (ACOPROS): 0-2 no usa el banco diario ni su reto de los
-      // viernes; en «Máis para casa» salen las palabras de la semana del
-      // proyecto.
-      await abrirPortal(tester, lang, agora: venres);
-      await Pasarela.abrirMaisParaCasa(tester);
-      final tarxeta = find.byKey(const Key('tarxeta_ingles_de_hoxe_fogar'));
-      await tester.scrollUntilVisible(tarxeta, 200,
-          scrollable: find.byType(Scrollable).first);
-      await tester.pumpAndSettle();
-      expect(
+      'o venres en 0-2: as do proxecto, sen o reto das 20 (${lang.code})',
+      (tester) async {
+        // O-20261109-4 (ACOPROS): 0-2 no usa el banco diario ni su reto de los
+        // viernes; en «Máis para casa» salen las palabras de la semana del
+        // proyecto.
+        await abrirPortal(tester, lang, agora: venres);
+        await Pasarela.abrirMaisParaCasa(tester);
+        final tarxeta = find.byKey(const Key('tarxeta_ingles_de_hoxe_fogar'));
+        await tester.scrollUntilVisible(
+          tarxeta,
+          200,
+          scrollable: find.byType(Scrollable).first,
+        );
+        await tester.pumpAndSettle();
+        expect(
           find.byKey(const Key('palabras_proxecto_0_2'), skipOffstage: false),
-          findsOneWidget);
-      expect(find.byKey(const Key('reto_con_voz'), skipOffstage: false),
-          findsNothing);
-    });
+          findsOneWidget,
+        );
+        expect(
+          find.byKey(const Key('reto_con_voz'), skipOffstage: false),
+          findsNothing,
+        );
+      },
+    );
 
-    testWidgets('fin de semana: o xogo do luns, sen marcalo (${lang.code})',
-        (tester) async {
+    testWidgets('fin de semana: o xogo do luns, sen marcalo (${lang.code})', (
+      tester,
+    ) async {
       await abrirPortal(tester, lang, agora: domingo);
-      expect(texto(tester, 'hoxe_titulo'),
-          gl ? 'A lección desta semana' : 'La lección de esta semana');
+      expect(
+        texto(tester, 'hoxe_titulo'),
+        gl ? 'A lección desta semana' : 'La lección de esta semana',
+      );
       await irAoXogo(tester);
       await tester.tap(find.byKey(const Key('hoxe_comezar')));
       await Pasarela.asentar(tester);
@@ -259,8 +320,9 @@ void main() {
       expect(find.byKey(const Key('xogo_non_e_hoxe')), findsOneWidget);
     });
 
-    testWidgets('«Xa o fixemos» suma o día da persoa adulta (${lang.code})',
-        (tester) async {
+    testWidgets('«Xa o fixemos» suma o día da persoa adulta (${lang.code})', (
+      tester,
+    ) async {
       // Con E/S de verdad: dentro del reloj falso una lectura de disco no
       // termina nunca.
       final store = (await tester.runAsync(storeBaleiro))!;
@@ -270,8 +332,10 @@ void main() {
       await tester.tap(find.byKey(const Key('hoxe_comezar')));
       await Pasarela.asentar(tester);
       expect(find.byType(XogoDeHoxeScreen), findsOneWidget);
-      expect(texto(tester, 'xogo_momento'),
-          gl ? 'Antes de durmir' : 'Antes de dormir');
+      expect(
+        texto(tester, 'xogo_momento'),
+        gl ? 'Antes de durmir' : 'Antes de dormir',
+      );
 
       // El porqué, plegado hasta que se pide.
       final consigna = p.diaDeCasa.familias.consignaFamilia.resolve(lang);
@@ -292,13 +356,16 @@ void main() {
       expect(find.byKey(const Key('hoxe_comezar')), findsNothing);
     });
 
-    testWidgets('a idade cámbiase arriba e vale para todo (${lang.code})',
-        (tester) async {
+    testWidgets('a idade cámbiase arriba e vale para todo (${lang.code})', (
+      tester,
+    ) async {
       await abrirPortal(tester, lang, agora: venres);
       bool leccionDe(String curso) => find
-          .byWidgetPredicate((w) =>
-              w.key is ValueKey<String> &&
-              (w.key as ValueKey<String>).value.startsWith('leccion_$curso.'))
+          .byWidgetPredicate(
+            (w) =>
+                w.key is ValueKey<String> &&
+                (w.key as ValueKey<String>).value.startsWith('leccion_$curso.'),
+          )
           .evaluate()
           .isNotEmpty;
       await verLeccion(tester);
@@ -309,7 +376,17 @@ void main() {
       await tester.pumpAndSettle();
       await tester.tap(find.byKey(const ValueKey('selector_idade')));
       await tester.pumpAndSettle();
-      await tester.tap(find.byKey(const ValueKey('idade_curso_5_6')));
+      await tester.tap(find.byKey(const Key('crianza_editar')));
+      await Pasarela.asentar(tester);
+      await tester.ensureVisible(
+        find.byKey(const ValueKey('rexistro_curso_curso_5_6')),
+      );
+      await tester.tap(find.byKey(const ValueKey('rexistro_curso_curso_5_6')));
+      await tester.pump();
+      await tester.ensureVisible(find.byKey(const Key('rexistro_gardar')));
+      await tester.tap(find.byKey(const Key('rexistro_gardar')));
+      await Pasarela.asentar(tester);
+      await tester.tap(find.byKey(const Key('rexistro_confirmar_curso_si')));
       await Pasarela.asentar(tester);
       // P11: la lección es la del curso elegido.
       await verLeccion(tester);
@@ -331,8 +408,9 @@ void main() {
       await Pasarela.asentar(tester);
       await tester.tap(find.byKey(const ValueKey('explorar_contos')));
       await Pasarela.asentar(tester);
-      final lista =
-          tester.widget<CuentosListScreen>(find.byType(CuentosListScreen));
+      final lista = tester.widget<CuentosListScreen>(
+        find.byType(CuentosListScreen),
+      );
       expect(lista.initialCursoId, 'curso_5_6');
       expect(lista.semanaDestacada, (mes: 2, semana: 1));
     });
@@ -341,11 +419,12 @@ void main() {
   test('as 1.000 rutinas citan o conto da súa semana, non a asemblea', () {
     // A6: el texto de casa nombraba la asamblea por su nombre interno.
     final dias = jsonDecode(
-        File('assets/content/calendario/calendario_dias.json')
-            .readAsStringSync()) as List;
+      File('assets/content/calendario/calendario_dias.json').readAsStringSync(),
+    ) as List;
     final contos = (jsonDecode(
-            File('assets/content/cuentos/historias_progresivas.json')
-                .readAsStringSync()) as List)
+      File('assets/content/cuentos/historias_progresivas.json')
+          .readAsStringSync(),
+    ) as List)
         .cast<Map>()
         .where((c) => c['semanaSugerida'] != null);
     final titulo = {

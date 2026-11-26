@@ -31,10 +31,9 @@ void main() {
   final validator = ContentValidator();
 
   List<dynamic> copia() => jsonDecode(crudo) as List<dynamic>;
-  Map<String, dynamic> unidad(List<dynamic> banco, String nivel) =>
-      banco.cast<Map<String, dynamic>>().firstWhere(
-            (u) => u['nivelMadurativo'] == nivel,
-          );
+  Map<String, dynamic> unidad(List<dynamic> banco, String nivel) => banco
+      .cast<Map<String, dynamic>>()
+      .firstWhere((u) => u['nivelMadurativo'] == nivel);
   List<SteamUnit> unidades() =>
       ContentAssetLoader(stringLoader: (_) async => crudo)
           .parseSteamUnits(crudo);
@@ -53,8 +52,10 @@ void main() {
     });
 
     test('el fichero real pasa el validador STEAM', () {
-      final r = validator.validateSteamBankJson(copia(),
-          sourcePath: ContentAssetLoader.steamAssetPath);
+      final r = validator.validateSteamBankJson(
+        copia(),
+        sourcePath: ContentAssetLoader.steamAssetPath,
+      );
       expect(r.isValid, isTrue, reason: r.errors.join('\n'));
     });
 
@@ -62,36 +63,44 @@ void main() {
       for (final u in unidades()) {
         expect(u.aula.ciclo.consignaAdulto.gl, isNotEmpty);
         expect(u.hogar.ciclo.consignaAdulto.gl, isNotEmpty);
-        expect(u.hogar.agrupamiento.gl, isNot(u.aula.agrupamiento.gl),
-            reason: '${u.id}: la casa no es el aula con otro título');
+        expect(
+          u.hogar.agrupamiento.gl,
+          isNot(u.aula.agrupamiento.gl),
+          reason: '${u.id}: la casa no es el aula con otro título',
+        );
       }
     });
 
-    test('ningún material ni texto de la primera versión que era un riesgo',
-        () {
-      final todo = crudo.toLowerCase();
-      for (final prohibido in [
-        'látex',
-        'arroz',
-        'globo',
-        'sin riesgo de asfixia',
-        'sen risco de asfixia',
-        'gorxa da criatura',
-        'garganta de la criatura',
-        'fonoarticula',
-        'modelado fonador',
-        'robot lúa',
-      ]) {
-        expect(todo.contains(prohibido), isFalse, reason: prohibido);
-      }
-    });
+    test(
+      'ningún material ni texto de la primera versión que era un riesgo',
+      () {
+        final todo = crudo.toLowerCase();
+        for (final prohibido in [
+          'látex',
+          'arroz',
+          'globo',
+          'sin riesgo de asfixia',
+          'sen risco de asfixia',
+          'gorxa da criatura',
+          'garganta de la criatura',
+          'fonoarticula',
+          'modelado fonador',
+          'robot lúa',
+        ]) {
+          expect(todo.contains(prohibido), isFalse, reason: prohibido);
+        }
+      },
+    );
 
     test('ida y vuelta del modelo sin perder nada', () {
       final original = copia();
       final u = unidades();
       for (var i = 0; i < u.length; i++) {
-        expect(jsonEncode(u[i].toJson()), jsonEncode(original[i]),
-            reason: u[i].id);
+        expect(
+          jsonEncode(u[i].toJson()),
+          jsonEncode(original[i]),
+          reason: u[i].id,
+        );
       }
     });
   });
@@ -144,7 +153,7 @@ void main() {
           'clave': 'exploradora',
           'nombre': {'gl': 'Exploradora', 'es': 'Exploradora'},
           'mision': {'gl': 'Aperta', 'es': 'Aprieta'},
-        }
+        },
       ];
       rechaza(b, 'before 3 years');
     });
@@ -220,10 +229,11 @@ void main() {
     // Lo que la sesión pinta con altavoz tiene que estar en el corpus, con el
     // MISMO identificador que calcula la pantalla. Si no, el altavoz no sale
     // nunca y nadie sabe por qué.
-    final corpus = jsonDecode(File('voice-corpus.json').readAsStringSync())
-        as Map<String, dynamic>;
+    final corpus = jsonDecode(
+      File('voice-corpus.json').readAsStringSync(),
+    ) as Map<String, dynamic>;
     final ids = {
-      for (final e in corpus['corpus'] as List) (e as Map)['id'] as String
+      for (final e in corpus['corpus'] as List) (e as Map)['id'] as String,
     };
 
     test('toda la prosa con altavoz está en el corpus, en gl y en es', () {
@@ -257,7 +267,8 @@ void main() {
 
   group('Repositorio', () {
     ContentRepository repo() => ContentRepository(
-        loader: ContentAssetLoader(stringLoader: (_) async => crudo));
+          loader: ContentAssetLoader(stringLoader: (_) async => crudo),
+        );
 
     test('carga, busca por curso, por id y por nivel, y se vacía', () async {
       final r = repo();
@@ -265,7 +276,9 @@ void main() {
       await r.loadSteamUnits();
       expect(r.steamUnitCount, 5);
       expect(
-          r.getSteamUnitsByEstadio('curso_3_4').single.id, 'I3-ACUSTICA-001');
+        r.getSteamUnitsByEstadio('curso_3_4').single.id,
+        'I3-ACUSTICA-001',
+      );
       expect(r.getSteamUnitById('I4-OPTICA-001')?.nivelMadurativo, 'I4');
       expect(r.getSteamUnitByNivel('i5')?.id, 'I5-LOGICA-001');
       r.clear();
@@ -299,7 +312,8 @@ void main() {
     setUp(() async {
       audio = MockOfflineAudioService();
       repo = ContentRepository(
-          loader: ContentAssetLoader(stringLoader: (_) async => crudo));
+        loader: ContentAssetLoader(stringLoader: (_) async => crudo),
+      );
       await repo.loadSteamUnits();
     });
 
@@ -315,16 +329,25 @@ void main() {
 
     Finder enLaLista(String key) => find.byKey(ValueKey(key));
 
-    Future<void> verTexto(WidgetTester tester, String texto,
-        {String lista = 'steam_sesion_lista'}) async {
-      await tester.scrollUntilVisible(find.text(texto), 250,
-          scrollable: find.descendant(
-              of: enLaLista(lista), matching: find.byType(Scrollable)));
+    Future<void> verTexto(
+      WidgetTester tester,
+      String texto, {
+      String lista = 'steam_sesion_lista',
+    }) async {
+      await tester.scrollUntilVisible(
+        find.text(texto),
+        250,
+        scrollable: find.descendant(
+          of: enLaLista(lista),
+          matching: find.byType(Scrollable),
+        ),
+      );
       expect(find.text(texto), findsOneWidget);
     }
 
-    testWidgets('el hub del aula abre filtrado por el curso de hoy',
-        (tester) async {
+    testWidgets('el hub del aula abre filtrado por el curso de hoy', (
+      tester,
+    ) async {
       await pintar(
         tester,
         SteamHubScreen(
@@ -341,8 +364,11 @@ void main() {
 
       await tester.tap(find.byKey(const ValueKey('steam_filtro_todas')));
       await tester.pumpAndSettle();
-      await verTexto(tester, 'A cuadrícula: programamos un robot',
-          lista: 'steam_hub_lista');
+      await verTexto(
+        tester,
+        'A cuadrícula: programamos un robot',
+        lista: 'steam_hub_lista',
+      );
     });
 
     testWidgets('el hub de casa enseña la versión de casa', (tester) async {
@@ -359,8 +385,9 @@ void main() {
       expect(find.text('Para casa'), findsOneWidget);
       expect(find.text('Blando y duro'), findsOneWidget);
       expect(
-          find.textContaining('Tú y el niño o la niña, sentados en el suelo.'),
-          findsOneWidget);
+        find.textContaining('Tú y el niño o la niña, sentados en el suelo.'),
+        findsOneWidget,
+      );
 
       final abrir = find.byKey(const ValueKey('abrir_steam_I1-MATERIA-001'));
       await tester.ensureVisible(abrir);
@@ -373,11 +400,13 @@ void main() {
 
     // Hoy hay una unidad por curso, pero nada impide añadir otra: el filtro
     // hacía un chip por unidad, y dos chips con la misma clave rompen la fila.
-    testWidgets('un curso con dos unidades sigue teniendo un solo chip',
-        (tester) async {
+    testWidgets('un curso con dos unidades sigue teniendo un solo chip', (
+      tester,
+    ) async {
       final i3 = repo.getSteamUnitByNivel('I3')!;
       repo.addSteamUnit(
-          SteamUnit.fromJson({...i3.toJson(), 'id': 'I3-ACUSTICA-002'}));
+        SteamUnit.fromJson({...i3.toJson(), 'id': 'I3-ACUSTICA-002'}),
+      );
       await pintar(
         tester,
         SteamHubScreen(
@@ -390,72 +419,90 @@ void main() {
       );
       expect(tester.takeException(), isNull);
       expect(
-          find.byKey(const ValueKey('steam_filtro_curso_3_4')), findsOneWidget);
+        find.byKey(const ValueKey('steam_filtro_curso_3_4')),
+        findsOneWidget,
+      );
       await tester.scrollUntilVisible(
-          find.byKey(const ValueKey('abrir_steam_I3-ACUSTICA-002')), 250,
-          scrollable: find.descendant(
-              of: enLaLista('steam_hub_lista'),
-              matching: find.byType(Scrollable)));
-      expect(find.byKey(const ValueKey('abrir_steam_I3-ACUSTICA-002')),
-          findsOneWidget);
-    });
-
-    testWidgets('la sesión del aula: seguridad, papeles, pasos, pausa y pistas',
-        (tester) async {
-      final i3 = repo.getSteamUnitByNivel('I3')!;
-      await pintar(
-        tester,
-        SteamSesionGuiadaScreen(
-          unit: i3,
-          audiencia: SteamAudiencia.aula,
-          audioService: audio,
-          initialLanguage: AppLanguage.gl,
+        find.byKey(const ValueKey('abrir_steam_I3-ACUSTICA-002')),
+        250,
+        scrollable: find.descendant(
+          of: enLaLista('steam_hub_lista'),
+          matching: find.byType(Scrollable),
         ),
       );
-
-      // La seguridad va arriba, antes que nada.
-      expect(find.byKey(const ValueKey('steam_seguridade')), findsOneWidget);
-      expect(find.text(i3.avisoSeguridad.gl), findsOneWidget);
-
-      await verTexto(tester, 'Tamborileira');
-      await verTexto(tester, 'Observadora da auga');
-
-      // La pausa de silencio cuenta de verdad.
-      await tester.scrollUntilVisible(
-          find.byKey(const ValueKey('steam_pausa')), 250,
-          scrollable: find.descendant(
-              of: enLaLista('steam_sesion_lista'),
-              matching: find.byType(Scrollable)));
-      await tester.tap(find.byKey(const ValueKey('steam_pausa')));
-      await tester.pump(const Duration(seconds: 1));
-      expect(find.text('En silencio… quedan 4 s'), findsOneWidget);
-      await tester.pump(const Duration(seconds: 4));
-      expect(find.textContaining('Feito.'), findsOneWidget);
-
-      // Las pistas se abren una a una.
-      expect(find.text(i3.aula.ciclo.pistaN1.gl), findsNothing);
-      await tester.scrollUntilVisible(
-          find.byKey(const ValueKey('steam_pista_1')), 250,
-          scrollable: find.descendant(
-              of: enLaLista('steam_sesion_lista'),
-              matching: find.byType(Scrollable)));
-      await tester.tap(find.byKey(const ValueKey('steam_pista_1')));
-      await tester.pumpAndSettle();
-      expect(find.text(i3.aula.ciclo.pistaN1.gl), findsOneWidget);
-
-      // El currículo solo en el aula.
-      await tester.scrollUntilVisible(
-          find.byKey(const ValueKey('steam_curriculo')), 250,
-          scrollable: find.descendant(
-              of: enLaLista('steam_sesion_lista'),
-              matching: find.byType(Scrollable)));
-      expect(find.text('Decreto 150/2022'), findsOneWidget);
-
-      // Nada de registro: ni botones ni la palabra.
-      expect(find.text('Logrado'), findsNothing);
-      expect(find.textContaining('1-Tap'), findsNothing);
-      expect(find.textContaining('ZERO-SCREEN'), findsNothing);
+      expect(
+        find.byKey(const ValueKey('abrir_steam_I3-ACUSTICA-002')),
+        findsOneWidget,
+      );
     });
+
+    testWidgets(
+      'la sesión del aula: seguridad, papeles, pasos, pausa y pistas',
+      (tester) async {
+        final i3 = repo.getSteamUnitByNivel('I3')!;
+        await pintar(
+          tester,
+          SteamSesionGuiadaScreen(
+            unit: i3,
+            audiencia: SteamAudiencia.aula,
+            audioService: audio,
+            initialLanguage: AppLanguage.gl,
+          ),
+        );
+
+        // La seguridad va arriba, antes que nada.
+        expect(find.byKey(const ValueKey('steam_seguridade')), findsOneWidget);
+        expect(find.text(i3.avisoSeguridad.gl), findsOneWidget);
+
+        await verTexto(tester, 'Tamborileira');
+        await verTexto(tester, 'Observadora da auga');
+
+        // La pausa de silencio cuenta de verdad.
+        await tester.scrollUntilVisible(
+          find.byKey(const ValueKey('steam_pausa')),
+          250,
+          scrollable: find.descendant(
+            of: enLaLista('steam_sesion_lista'),
+            matching: find.byType(Scrollable),
+          ),
+        );
+        await tester.tap(find.byKey(const ValueKey('steam_pausa')));
+        await tester.pump(const Duration(seconds: 1));
+        expect(find.text('En silencio… quedan 4 s'), findsOneWidget);
+        await tester.pump(const Duration(seconds: 4));
+        expect(find.textContaining('Feito.'), findsOneWidget);
+
+        // Las pistas se abren una a una.
+        expect(find.text(i3.aula.ciclo.pistaN1.gl), findsNothing);
+        await tester.scrollUntilVisible(
+          find.byKey(const ValueKey('steam_pista_1')),
+          250,
+          scrollable: find.descendant(
+            of: enLaLista('steam_sesion_lista'),
+            matching: find.byType(Scrollable),
+          ),
+        );
+        await tester.tap(find.byKey(const ValueKey('steam_pista_1')));
+        await tester.pumpAndSettle();
+        expect(find.text(i3.aula.ciclo.pistaN1.gl), findsOneWidget);
+
+        // El currículo solo en el aula.
+        await tester.scrollUntilVisible(
+          find.byKey(const ValueKey('steam_curriculo')),
+          250,
+          scrollable: find.descendant(
+            of: enLaLista('steam_sesion_lista'),
+            matching: find.byType(Scrollable),
+          ),
+        );
+        expect(find.text('Decreto 150/2022'), findsOneWidget);
+
+        // Nada de registro: ni botones ni la palabra.
+        expect(find.text('Logrado'), findsNothing);
+        expect(find.textContaining('1-Tap'), findsNothing);
+        expect(find.textContaining('ZERO-SCREEN'), findsNothing);
+      },
+    );
 
     testWidgets('la orden en inglés suena con su grabación', (tester) async {
       final i3 = repo.getSteamUnitByNivel('I3')!;
@@ -469,26 +516,32 @@ void main() {
         ),
       );
       await tester.scrollUntilVisible(
-          find.byKey(const ValueKey('steam_ordes')), 250,
-          scrollable: find.descendant(
-              of: enLaLista('steam_sesion_lista'),
-              matching: find.byType(Scrollable)));
+        find.byKey(const ValueKey('steam_ordes')),
+        250,
+        scrollable: find.descendant(
+          of: enLaLista('steam_sesion_lista'),
+          matching: find.byType(Scrollable),
+        ),
+      );
       await tester.pumpAndSettle();
       final listen = find.descendant(
-          of: find.byKey(const ValueKey('steam_ordes')),
-          matching: find.text('Listen'));
+        of: find.byKey(const ValueKey('steam_ordes')),
+        matching: find.text('Listen'),
+      );
       expect(listen, findsOneWidget);
       await tester.tap(listen);
       await tester.pumpAndSettle();
       expect(
         audio.callLog,
         contains(
-            'playAsset:${englishVoiceAssetPath(VoiceStyle.slow, 'Listen')}'),
+          'playAsset:${englishVoiceAssetPath(VoiceStyle.slow, 'Listen')}',
+        ),
       );
     });
 
-    testWidgets('la sesión de casa no trae currículo ni papeles de aula',
-        (tester) async {
+    testWidgets('la sesión de casa no trae currículo ni papeles de aula', (
+      tester,
+    ) async {
       final i4 = repo.getSteamUnitByNivel('I4')!;
       await pintar(
         tester,
@@ -506,38 +559,43 @@ void main() {
       expect(find.byKey(const ValueKey('steam_curriculo')), findsNothing);
     });
 
-    testWidgets('Portal Docentes: Recursos abre la versión del aula, del grupo',
-        (tester) async {
-      await pintar(
-        tester,
-        PortalDocentesScreen(
-          repository: repo,
-          audioService: audio,
-          currentLanguage: AppLanguage.gl,
-          onToggleLanguage: () {},
-        ),
-      );
-      // El grupo se elige una vez, arriba de «Hoxe»…
-      await tester.tap(find.byKey(const ValueKey('selector_idade')));
-      await tester.pumpAndSettle();
-      await tester.tap(find.byKey(const ValueKey('idade_curso_2_3')));
-      await tester.pumpAndSettle();
-      // …y viaja a Recursos → Ciencia coas mans, que dice que es STEAM.
-      await tester.tap(find.byKey(const Key('pestana_recursos')));
-      await tester.pumpAndSettle();
-      final fila = find.byKey(const ValueKey('recurso_ciencia'));
-      expect(find.descendant(of: fila, matching: find.textContaining('STEAM')),
-          findsOneWidget);
-      await tester.tap(fila);
-      await tester.pumpAndSettle();
-      final hub = tester.widget<SteamHubScreen>(find.byType(SteamHubScreen));
-      expect(hub.audiencia, SteamAudiencia.aula);
-      expect(hub.initialCursoId, 'curso_2_3');
-      expect(find.text('A rampla: que roda e que non?'), findsOneWidget);
-    });
+    testWidgets(
+      'Portal Docentes: Recursos abre la versión del aula, del grupo',
+      (tester) async {
+        await pintar(
+          tester,
+          PortalDocentesScreen(
+            repository: repo,
+            audioService: audio,
+            currentLanguage: AppLanguage.gl,
+            onToggleLanguage: () {},
+          ),
+        );
+        // El grupo se elige una vez, arriba de «Hoxe»…
+        await tester.tap(find.byKey(const ValueKey('selector_idade')));
+        await tester.pumpAndSettle();
+        await tester.tap(find.byKey(const ValueKey('idade_curso_2_3')));
+        await tester.pumpAndSettle();
+        // …y viaja a Recursos → Ciencia coas mans, que dice que es STEAM.
+        await tester.tap(find.byKey(const Key('pestana_recursos')));
+        await tester.pumpAndSettle();
+        final fila = find.byKey(const ValueKey('recurso_ciencia'));
+        expect(
+          find.descendant(of: fila, matching: find.textContaining('STEAM')),
+          findsOneWidget,
+        );
+        await tester.tap(fila);
+        await tester.pumpAndSettle();
+        final hub = tester.widget<SteamHubScreen>(find.byType(SteamHubScreen));
+        expect(hub.audiencia, SteamAudiencia.aula);
+        expect(hub.initialCursoId, 'curso_2_3');
+        expect(find.text('A rampla: que roda e que non?'), findsOneWidget);
+      },
+    );
 
-    testWidgets('Portal Familias: la edad y la versión de casa',
-        (tester) async {
+    testWidgets('Portal Familias: la edad y la versión de casa', (
+      tester,
+    ) async {
       await pintar(
         tester,
         PortalFamiliasScreen(
@@ -547,10 +605,23 @@ void main() {
           onToggleLanguage: () {},
         ),
       );
-      // La edad se elige una vez, arriba, en el chip de la portada…
+      // La edad se elige una vez, arriba, editando el niño en el chip…
       await tester.tap(find.byKey(const ValueKey('selector_idade')));
       await tester.pumpAndSettle();
-      await tester.tap(find.byKey(const ValueKey('idade_curso_3_4')));
+      await tester.tap(find.byKey(const Key('crianza_editar')));
+      await tester.pumpAndSettle();
+      await tester.ensureVisible(
+        find.byKey(const ValueKey('rexistro_curso_curso_3_4')),
+      );
+      await tester.tap(find.byKey(const ValueKey('rexistro_curso_curso_3_4')));
+      await tester.pump();
+      await tester.ensureVisible(find.byKey(const Key('rexistro_gardar')));
+      await tester.tap(find.byKey(const Key('rexistro_gardar')));
+      await tester.pumpAndSettle();
+      await tester.tap(find.byKey(const Key('rexistro_confirmar_curso_si')));
+      await tester.runAsync(
+        () => Future<void>.delayed(const Duration(milliseconds: 120)),
+      );
       await tester.pumpAndSettle();
 
       // …y viaja hasta «Ciencia con las manos», en Explorar.

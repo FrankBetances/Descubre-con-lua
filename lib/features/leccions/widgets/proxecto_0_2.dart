@@ -10,6 +10,7 @@ import '../../../core/audio/widgets/boton_escuchar.dart';
 import '../../../core/localization/app_language.dart';
 import '../../../core/localization/localized_string.dart';
 import '../../../core/theme/app_theme.dart';
+import '../../../data/models/leccion_model.dart';
 
 /// 0-2 años por proyectos (O-20261109-4, ACOPROS): un proyecto por mes con
 /// unas 20 palabras, su canción, una rima tradicional y cuatro semanas que
@@ -60,6 +61,7 @@ class Proxecto02 {
   final List<PalabraProxecto> palabras;
   final List<({int semana, LocalizedString fase, List<String> palabras})>
       semanas;
+  final List<Map<String, CapaSemanal>> capasPorSemana;
   final List<String> comoFalar;
   final List<String> xaSabe;
   final LocalizedString guia;
@@ -76,6 +78,7 @@ class Proxecto02 {
     this.rimaLamina,
     required this.palabras,
     required this.semanas,
+    this.capasPorSemana = const [],
     required this.comoFalar,
     required this.xaSabe,
     required this.guia,
@@ -92,6 +95,39 @@ class Proxecto02 {
       for (final en in s.palabras)
         if (palabra(en) case final p?) p,
     ];
+  }
+
+  /// Las 3 capas y sus rutinas M2 para la semana 1 a 4.
+  Map<String, CapaSemanal> capasDaSemana(int semana) {
+    if (capasPorSemana.isEmpty) return const {};
+    return capasPorSemana[(semana.clamp(1, capasPorSemana.length)) - 1];
+  }
+
+  /// Palabras de la semana ajustadas al [cupo] del niño (Paso 2 de P11).
+  List<PalabraProxecto> daSemanaConCupo(int semana, int? cupo) {
+    final base = daSemana(semana);
+    if (cupo == null || cupo <= 0) return base;
+    if (base.length >= cupo) return base.take(cupo).toList(growable: false);
+    final out = List<PalabraProxecto>.from(base);
+    final vistos = {for (final p in out) p.en.trim().toLowerCase()};
+    for (final extra
+        in capasDaSemana(semana)['mais']?.pezas ?? const <PezaDaLeccion>[]) {
+      if (out.length >= cupo) break;
+      final k = extra.en.trim().toLowerCase();
+      if (k.isEmpty || vistos.contains(k)) continue;
+      vistos.add(k);
+      out.add(
+        palabra(extra.en) ??
+            PalabraProxecto(
+              en: extra.en,
+              significado:
+                  extra.significado ?? const LocalizedString(gl: '', es: ''),
+              xesto: extra.xesto ?? const LocalizedString(gl: '', es: ''),
+              lamina: extra.lamina,
+            ),
+      );
+    }
+    return out;
   }
 }
 
@@ -122,6 +158,33 @@ class Proxectos02 {
   static Proxectos02 fromRaw(String raw) {
     final j = json.decode(raw) as Map<String, dynamic>;
     List<String> l(Object? v) => [for (final x in v as List) x.toString()];
+    Map<String, CapaSemanal> capasSem(Map<String, dynamic> semMap) {
+      final rawCapas = semMap['capas'] as Map? ?? const {};
+      final rawRuts = semMap['rutinas'] as Map? ?? const {};
+      final rutsBase = <String, RutinaFogar>{
+        for (final e in rawRuts.entries)
+          if (e.value is Map)
+            e.key.toString():
+                RutinaFogar.fromJson(Map<String, dynamic>.from(e.value as Map)),
+      };
+      final out = <String, CapaSemanal>{};
+      for (final e in rawCapas.entries) {
+        if (e.value is Map) {
+          final parsed =
+              CapaSemanal.fromJson(Map<String, dynamic>.from(e.value as Map));
+          out[e.key.toString()] = parsed.rutinas.isNotEmpty
+              ? parsed
+              : CapaSemanal(
+                  texto: parsed.texto,
+                  en: parsed.en,
+                  pezas: parsed.pezas,
+                  rutinas: rutsBase,
+                );
+        }
+      }
+      return out;
+    }
+
     return Proxectos02([
       for (final p in j['proxectos'] as List)
         Proxecto02(
@@ -152,6 +215,10 @@ class Proxectos02 {
                 palabras: l(s['palabras']),
               ),
           ],
+          capasPorSemana: [
+            for (final s in p['semanas'] as List)
+              capasSem(Map<String, dynamic>.from(s as Map)),
+          ],
           comoFalar: l(p['comoFalar']),
           xaSabe: l(p['xaSabe']),
           guia: _t(p['guia']),
@@ -178,6 +245,7 @@ class LeccionProxecto02 extends StatefulWidget {
   final int semana;
   final AppLanguage language;
   final OfflineAudioService? audioService;
+  final int? cupo;
 
   const LeccionProxecto02({
     super.key,
@@ -185,6 +253,7 @@ class LeccionProxecto02 extends StatefulWidget {
     required this.semana,
     required this.language,
     this.audioService,
+    this.cupo,
   });
 
   @override
@@ -224,7 +293,7 @@ class _LeccionProxecto02State extends State<LeccionProxecto02> {
     final isGl = lang == AppLanguage.gl;
     final acento = context.acento;
     final s = pr.semanas[(widget.semana.clamp(1, pr.semanas.length)) - 1];
-    final daSemana = pr.daSemana(widget.semana);
+    final daSemana = pr.daSemanaConCupo(widget.semana, widget.cupo);
 
     Widget seccion(Key key, String titulo, List<Widget> fillos) => Padding(
           key: key,
@@ -305,8 +374,8 @@ class _LeccionProxecto02State extends State<LeccionProxecto02> {
             seccion(
                 const Key('proxecto_como_falar'),
                 isGl
-                    ? 'Como falar: dúas palabras, co xesto'
-                    : 'Cómo hablar: dos palabras, con el gesto',
+                    ? 'Como falar: ata tres palabras, co xesto'
+                    : 'Cómo hablar: hasta tres palabras, con el gesto',
                 [
                   for (final f in pr.comoFalar)
                     Padding(
@@ -376,6 +445,7 @@ class PalabrasProxecto02 extends StatelessWidget {
   final int semana;
   final AppLanguage language;
   final OfflineAudioService? audioService;
+  final int? cupo;
 
   const PalabrasProxecto02({
     super.key,
@@ -383,6 +453,7 @@ class PalabrasProxecto02 extends StatelessWidget {
     required this.semana,
     required this.language,
     this.audioService,
+    this.cupo,
   });
 
   @override
@@ -402,7 +473,7 @@ class PalabrasProxecto02 extends StatelessWidget {
                 const TextStyle(fontSize: 14, color: AppTheme.textSecondary)),
         const SizedBox(height: 8),
         Wrap(spacing: 8, runSpacing: 8, children: [
-          for (final p in pr.daSemana(semana))
+          for (final p in pr.daSemanaConCupo(semana, cupo))
             BotonEscuchar(
               audioService: audioService,
               texto: p.en,

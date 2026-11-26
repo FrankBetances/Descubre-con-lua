@@ -47,38 +47,60 @@ class RetoDaSemana extends StatefulWidget {
 
 class _RetoDaSemanaState extends State<RetoDaSemana> {
   // Sin catchError: en un SynchronousFuture no completa nunca.
-  late final Future<XogosFogar?> _xogos =
-      XogosFogar.cargar().then<XogosFogar?>((x) => x, onError: (_) => null);
-  late final Future<SteamDoMes?> _steam =
-      SteamDoMes.cargar().then<SteamDoMes?>((s) => s, onError: (_) => null);
+  late final Future<XogosFogar?> _xogos = XogosFogar.cargar().then<XogosFogar?>(
+    (x) => x,
+    onError: (_) => null,
+  );
+  late final Future<SteamDoMes?> _steam = SteamDoMes.cargar().then<SteamDoMes?>(
+    (s) => s,
+    onError: (_) => null,
+  );
 
-  static const _kicker =
-      LocalizedString(gl: 'O RETO DA SEMANA', es: 'EL RETO DE LA SEMANA');
+  static const _kicker = LocalizedString(
+    gl: 'O RETO DA SEMANA',
+    es: 'EL RETO DE LA SEMANA',
+  );
   static const _semana = LocalizedString(gl: 'Semana', es: 'Semana');
   static const _momento = LocalizedString(gl: 'Cando', es: 'Cuándo');
   static const _con = LocalizedString(gl: 'Con', es: 'Con');
   static const _facer = LocalizedString(gl: 'Que fas', es: 'Qué haces');
   static const _mans = LocalizedString(gl: 'Coas mans', es: 'Con las manos');
-  static const _nonPedir =
-      LocalizedString(gl: 'Que non lle pides', es: 'Qué no le pides');
-  static const _seResponde =
-      LocalizedString(gl: 'Segundo como responda', es: 'Según cómo responda');
-  static const _silencio =
-      LocalizedString(gl: 'Se non di nada', es: 'Si no dice nada');
+  static const _nonPedir = LocalizedString(
+    gl: 'Que non lle pides',
+    es: 'Qué no le pides',
+  );
+  static const _seResponde = LocalizedString(
+    gl: 'Segundo como responda',
+    es: 'Según cómo responda',
+  );
+  static const _silencio = LocalizedString(
+    gl: 'Se non di nada',
+    es: 'Si no dice nada',
+  );
   static const _linguaCasa = LocalizedString(
-      gl: 'Se contesta na lingua da casa',
-      es: 'Si contesta en la lengua de casa');
-  static const _unhaPalabra =
-      LocalizedString(gl: 'Se di unha palabra', es: 'Si dice una palabra');
-  static const _xogo =
-      LocalizedString(gl: 'O XOGO DO MES', es: 'EL JUEGO DEL MES');
-  static const _xogoDaUnidade =
-      LocalizedString(gl: 'O XOGO DA UNIDADE', es: 'EL JUEGO DE LA UNIDAD');
+    gl: 'Se contesta na lingua da casa',
+    es: 'Si contesta en la lengua de casa',
+  );
+  static const _unhaPalabra = LocalizedString(
+    gl: 'Se di unha palabra',
+    es: 'Si dice una palabra',
+  );
+  static const _xogo = LocalizedString(
+    gl: 'O XOGO DO MES',
+    es: 'EL JUEGO DEL MES',
+  );
+  static const _xogoDaUnidade = LocalizedString(
+    gl: 'O XOGO DA UNIDADE',
+    es: 'EL JUEGO DE LA UNIDAD',
+  );
   static const _observar = LocalizedString(
-      gl: 'QUE MIRAR · NON SE MARCA NIN SE GARDA',
-      es: 'QUÉ MIRAR · NO SE MARCA NI SE GUARDA');
-  static const _reactivar =
-      LocalizedString(gl: 'O MES PASADO', es: 'EL MES PASADO');
+    gl: 'QUE MIRAR · NON SE MARCA NIN SE GARDA',
+    es: 'QUÉ MIRAR · NO SE MARCA NI SE GUARDA',
+  );
+  static const _reactivar = LocalizedString(
+    gl: 'O MES PASADO',
+    es: 'EL MES PASADO',
+  );
 
   @override
   Widget build(BuildContext context) {
@@ -100,13 +122,15 @@ class _RetoDaSemanaState extends State<RetoDaSemana> {
     Widget linea(LocalizedString rotulo, LocalizedString texto) => Padding(
           padding: const EdgeInsets.only(top: 8),
           child: Text.rich(
-            TextSpan(children: [
-              TextSpan(
-                text: '${rotulo.resolve(lang)}: ',
-                style: const TextStyle(fontWeight: FontWeight.w800),
-              ),
-              TextSpan(text: texto.resolve(lang)),
-            ]),
+            TextSpan(
+              children: [
+                TextSpan(
+                  text: '${rotulo.resolve(lang)}: ',
+                  style: const TextStyle(fontWeight: FontWeight.w800),
+                ),
+                TextSpan(text: texto.resolve(lang)),
+              ],
+            ),
             style: corpo,
           ),
         );
@@ -155,11 +179,12 @@ class _RetoDaSemanaState extends State<RetoDaSemana> {
                 ),
               ),
             linea(
-                _momento,
-                LocalizedString(
-                  gl: '${h.momento.gl} · ${h.minutos} min',
-                  es: '${h.momento.es} · ${h.minutos} min',
-                )),
+              _momento,
+              LocalizedString(
+                gl: '${h.momento.gl} · ${h.minutos} min',
+                es: '${h.momento.es} · ${h.minutos} min',
+              ),
+            ),
             if (h.escena.resolve(lang).isNotEmpty) ...[
               const SizedBox(height: 8),
               ImaxeEscena(escena: h.escena, lang: lang),
@@ -192,17 +217,15 @@ class _RetoDaSemanaState extends State<RetoDaSemana> {
                 ],
               ),
             ),
-            if (widget.lectura case final l?) ...[
-              const SizedBox(height: 4),
-              l,
-            ],
+            if (widget.lectura case final l?) ...[const SizedBox(height: 4), l],
             XogoDoReto(
               hogar: h,
               xogos: _xogos,
               steam: _steam,
               language: lang,
-              rotulo: (widget.rotulo == null ? _xogo : _xogoDaUnidade)
-                  .resolve(lang),
+              rotulo: (widget.rotulo == null ? _xogo : _xogoDaUnidade).resolve(
+                lang,
+              ),
               kicker: kicker,
             ),
             if (h.queObservar.isNotEmpty) ...[
@@ -293,8 +316,10 @@ class XogoDoReto extends StatelessWidget {
         builder: (context, snap) {
           final x = snap.data?.xogos.where((x) => x.id == id).firstOrNull;
           if (x == null) return const SizedBox.shrink();
-          return pinta('${x.titulo.resolve(language)} · ${x.duracionMin} min',
-              x.guionAdulto.resolve(language));
+          return pinta(
+            '${x.titulo.resolve(language)} · ${x.duracionMin} min',
+            x.guionAdulto.resolve(language),
+          );
         },
       );
     }
@@ -305,8 +330,10 @@ class XogoDoReto extends StatelessWidget {
           final e =
               snap.data?.experimentos.where((e) => e.id == id).firstOrNull;
           if (e == null) return const SizedBox.shrink();
-          return pinta(e.titulo.resolve(language),
-              [for (final p in e.casa) p.resolve(language)].join(' '));
+          return pinta(
+            e.titulo.resolve(language),
+            [for (final p in e.casa) p.resolve(language)].join(' '),
+          );
         },
       );
     }

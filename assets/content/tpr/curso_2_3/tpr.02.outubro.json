@@ -14,15 +14,16 @@
       "palabras": [
         {
           "id": "2_3.outubro.s1.kneecap",
-          "en": "Kneecap",
-          "gl": "Rótula",
-          "es": "Rótula",
+          "en": "Knee",
+          "gl": "Xeonllo",
+          "es": "Rodilla",
           "tprAction": {
-            "gl": "Tocar a rótula dúas veces",
-            "es": "Tocar la rótula dos veces"
+            "gl": "Sinala ou colle o que nomeas: xeonllo.",
+            "es": "Señala o coge lo que nombras: rodilla."
           },
           "category": "noun",
-          "lamina": "pal_kneecap"
+          "lamina": "pal_knee",
+          "volve": "curso_0_2"
         },
         {
           "id": "2_3.outubro.s1.ankle",
@@ -262,15 +263,15 @@
       "palabras": [
         {
           "id": "2_3.outubro.s2.merry-go-round",
-          "en": "Merry-go-round",
-          "gl": "Carrusel",
-          "es": "Tiovivo",
+          "en": "Swing",
+          "gl": "Randeeira",
+          "es": "Columpio",
           "tprAction": {
             "gl": "Xirar en círculo coas mans estiradas",
             "es": "Girar en círculo con las manos estiradas"
           },
           "category": "noun",
-          "lamina": "pal_merry_go_round"
+          "lamina": "pal_swing"
         },
         {
           "id": "2_3.outubro.s2.spin-top",
@@ -510,27 +511,27 @@
       "palabras": [
         {
           "id": "2_3.outubro.s3.race-track",
-          "en": "Race track",
-          "gl": "Pista de carreiras",
-          "es": "Pista de carreras",
+          "en": "Park",
+          "gl": "Parque",
+          "es": "Parque",
           "tprAction": {
-            "gl": "Correr pola pista pintada",
-            "es": "Correr por la pista pintada"
+            "gl": "Sinala ou colle o que nomeas: parque.",
+            "es": "Señala o coge lo que nombras: parque."
           },
           "category": "noun",
-          "lamina": "pal_race_track"
+          "lamina": "pal_park"
         },
         {
           "id": "2_3.outubro.s3.finish-line",
-          "en": "Finish line",
-          "gl": "Liña de meta",
-          "es": "Línea de meta",
+          "en": "Slide",
+          "gl": "Tobogán",
+          "es": "Tobogán",
           "tprAction": {
-            "gl": "Pasar a liña de meta",
-            "es": "Pasar la línea de meta"
+            "gl": "Sinala ou colle o que nomeas: tobogán.",
+            "es": "Señala o coge lo que nombras: tobogán."
           },
           "category": "noun",
-          "lamina": "pal_finish_line"
+          "lamina": "pal_slide"
         },
         {
           "id": "2_3.outubro.s3.whistle-blow",

@@ -27,6 +27,10 @@ class TprWord {
   /// O-20261111-2: la lámina que dibuja ESTA palabra y su gesto.
   final String? lamina;
 
+  /// O-20261126-5: si la palabra ya era nueva en una edad anterior, el curso
+  /// del que vuelve (aquí es repaso, no nueva). Lo escribe tools/vocab_idade.py.
+  final String? volve;
+
   const TprWord({
     required this.id,
     required this.en,
@@ -35,6 +39,7 @@ class TprWord {
     required this.tprAction,
     required this.category,
     this.lamina,
+    this.volve,
   });
 
   factory TprWord.fromJson(Map<String, dynamic> json) {
@@ -49,6 +54,7 @@ class TprWord {
           : const LocalizedString(gl: '', es: ''),
       category: json['category'] as String? ?? 'noun',
       lamina: json['lamina'] as String?,
+      volve: json['volve'] as String?,
     );
   }
 

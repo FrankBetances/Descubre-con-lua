@@ -14,27 +14,29 @@
       "palabras": [
         {
           "id": "4_5.xuno.s1.mussel-raft",
-          "en": "Mussel raft",
-          "gl": "Batea",
-          "es": "Batea",
+          "en": "Mussel",
+          "gl": "Mexillón",
+          "es": "Mejillón",
           "tprAction": {
-            "gl": "Facer un cadrado plano coas mans",
-            "es": "Hacer un cuadrado plano con las manos"
+            "gl": "Sinala ou colle o que nomeas: mexillón.",
+            "es": "Señala o coge lo que nombras: mejillón."
           },
           "category": "noun",
-          "lamina": "pal_mussel_raft"
+          "lamina": "pal_mussel",
+          "volve": "curso_3_4"
         },
         {
           "id": "4_5.xuno.s1.rope-line",
-          "en": "Rope line",
-          "gl": "Corda de cultivo",
-          "es": "Cuerda de cultivo",
+          "en": "Rope",
+          "gl": "Corda",
+          "es": "Cuerda",
           "tprAction": {
-            "gl": "Baixar unha corda imaxinaria",
-            "es": "Bajar una cuerda imaginaria"
+            "gl": "Sinala ou colle o que nomeas: corda.",
+            "es": "Señala o coge lo que nombras: cuerda."
           },
           "category": "noun",
-          "lamina": "pal_rope_line"
+          "lamina": "pal_rope",
+          "volve": "curso_2_3"
         },
         {
           "id": "4_5.xuno.s1.fishing-boat",
@@ -261,15 +263,16 @@
       "palabras": [
         {
           "id": "4_5.xuno.s2.photo-book",
-          "en": "Photo book",
-          "gl": "Libro de fotos",
-          "es": "Libro de fotos",
+          "en": "Photo",
+          "gl": "Foto",
+          "es": "Foto",
           "tprAction": {
-            "gl": "Pasar as páxinas",
-            "es": "Pasar las páginas"
+            "gl": "Sinala ou colle o que nomeas: foto.",
+            "es": "Señala o coge lo que nombras: foto."
           },
           "category": "noun",
-          "lamina": "pal_photo_book"
+          "lamina": "pal_photo",
+          "volve": "curso_3_4"
         },
         {
           "id": "4_5.xuno.s2.memory",

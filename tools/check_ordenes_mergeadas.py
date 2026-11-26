@@ -20,7 +20,16 @@ ORDENES = Path("docs/ORDENES.md")
 
 
 def asuntos() -> set[str] | None:
-    r = subprocess.run(["git", "log", "--no-merges", "--format=%s", "HEAD"],
+    # Lo que está en main, no lo que lleva la rama en la que se trabaja: una
+    # entrega que aún vive en una rama no está mergeada (26/11/2026, la rama
+    # de integración llevaba P11.11 y la guarda la daba por mergeada).
+    ref = "HEAD"
+    for candidato in ("origin/main", "main"):
+        if subprocess.run(["git", "rev-parse", "--verify", "-q", candidato],
+                          capture_output=True).returncode == 0:
+            ref = candidato
+            break
+    r = subprocess.run(["git", "log", "--no-merges", "--format=%s", ref],
                        capture_output=True, text=True)
     if r.returncode != 0 or not r.stdout.strip():
         return None

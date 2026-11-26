@@ -181,8 +181,14 @@ void main() {
         expect(temas.putIfAbsent(u.titulo.gl, () => c), c,
             reason: '«${u.titulo.gl}» en dúas idades');
         for (final l in u.leccions) {
-          expect(l.repaso, isFalse, reason: '${l.id}: semana sen nada novo');
-          expect(l.novas.length, greaterThanOrEqualTo(3), reason: l.id);
+          if (l.numero == 4) {
+            expect(l.repaso, isTrue, reason: '${l.id}: semana 4 é de repaso');
+            expect(l.novas.length, lessThanOrEqualTo(1), reason: l.id);
+            expect(l.repasa, isNotEmpty, reason: l.id);
+          } else {
+            expect(l.repaso, isFalse, reason: '${l.id}: semana sen nada novo');
+            expect(l.novas.length, greaterThanOrEqualTo(3), reason: l.id);
+          }
           for (final p in l.novas) {
             expect(palabras.putIfAbsent(norm(p.en), () => c), c,
                 reason: '«${p.en}» nova en dúas idades');
@@ -218,22 +224,47 @@ void main() {
 
   test('cada unidade leva o seu punto de gramática e cada semana a súa frase',
       () {
-    final puntos = <int>{};
+    const ordenMcer = ['A1', 'A2', 'B1', 'B2', 'C1'];
+    const teitoMcer = {
+      'curso_0_2': 'A1',
+      'curso_2_3': 'A1',
+      'curso_3_4': 'A1',
+      'curso_4_5': 'A2',
+      'curso_5_6': 'A2',
+    };
+    const teitoPunto = {
+      'curso_0_2': 9,
+      'curso_2_3': 9,
+      'curso_3_4': 10,
+      'curso_4_5': 20,
+      'curso_5_6': 20,
+    };
     for (final c in cursos) {
       for (final u in leccions.unidades[c]!) {
         final g = u.gramatica;
         expect(g, isNotNull, reason: u.id);
-        expect(g!.n, inInclusiveRange(1, 48), reason: u.id);
+        expect(g!.n, inInclusiveRange(1, teitoPunto[c]!), reason: u.id);
+        expect(
+          ordenMcer.indexOf(g.nivel),
+          lessThanOrEqualTo(ordenMcer.indexOf(teitoMcer[c]!)),
+          reason: '${u.id} (${g.nivel})',
+        );
         expect(g.paraFamilias?.hasParity, isTrue, reason: u.id);
-        puntos.add(g.n);
         for (final l in u.leccions) {
           expect(l.fraseGramatica?.significado?.hasParity, isTrue,
               reason: l.id);
         }
       }
     }
-    // O-20261028-9: las 48 unidades son para las criaturas, todas en la ruta.
-    expect(puntos, hasLength(48));
+    // D1: os 48 puntos seguen todos en GramaticaDoCurso (1-20 na ruta, 21-48 guía adulta con exemplo).
+    final gram = GramaticaDoCurso.fromRaw(
+        File(GramaticaDoCurso.assetPath).readAsStringSync());
+    expect(gram.puntos, hasLength(48));
+    for (final p in gram.puntos.where((p) => p.n > 20)) {
+      expect(p.paraCriaturas, isFalse, reason: 'punto ${p.n}');
+      expect(p.exemplo, isNotNull, reason: 'punto ${p.n}');
+      expect(p.paraFamilias?.hasParity, isTrue, reason: 'punto ${p.n}');
+    }
   });
 
   testWidgets('a gramática do curso, a 360 px e escala 1.8', (tester) async {
@@ -332,8 +363,8 @@ void main() {
         await pintar(tester, const Size(412, 915), 1.0, lang);
         expect(tester.takeException(), isNull);
         expect(find.byKey(const Key('leccion_ruta_gramatica')), findsOneWidget);
-        // Antes, ahora y después: 29, 30 y 31 en octubre de 4-5 años.
-        for (final t in ['29 · B1', '30 · B1', '31 · B1']) {
+        // Antes, ahora y después: 7, 8 y 9 en octubre de 4-5 años (D1).
+        for (final t in ['7 · A1', '8 · A1', '9 · A1']) {
           expect(find.text(t), findsOneWidget, reason: t);
         }
         // La barra es la del curso, y lo dice: tema 2, lección 4 = semana 8.
@@ -390,13 +421,13 @@ void main() {
             findsOneWidget,
             reason: x.id);
       }
-      // Cada tema dice qué unidad de las 48 trabaja: la 30 en octubre.
+      // Cada tema dice qué unidad de las 48 trabaja (D1: dentro del techo de su edad).
       expect(
           tester
               .widget<Text>(find.byKey(ValueKey('camino_gramatica_${u.id}')))
               .data,
-          '${lang == AppLanguage.gl ? 'Unidade' : 'Unidad'} 30 de 48 · '
-          'B1 · ${u.gramatica!.titulo.resolve(lang)}');
+          '${lang == AppLanguage.gl ? 'Unidade' : 'Unidad'} ${u.gramatica!.n} de 48 · '
+          '${u.gramatica!.nivel} · ${u.gramatica!.titulo.resolve(lang)}');
       // Solo una lección marcada como la de esta semana.
       expect(find.byKey(const Key('leccion_globo')), findsOneWidget);
       final punto = find.descendant(

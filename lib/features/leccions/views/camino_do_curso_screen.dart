@@ -69,7 +69,7 @@ class _CaminoDoCursoScreenState extends State<CaminoDoCursoScreen> {
       isScrollControlled: true,
       showDragHandle: true,
       builder: (context) => SafeArea(
-        child: Padding(
+        child: SingleChildScrollView(
           key: ValueKey('camino_leccion_${l.id}'),
           padding: const EdgeInsets.fromLTRB(20, 0, 20, 20),
           child: Column(
@@ -90,7 +90,9 @@ class _CaminoDoCursoScreenState extends State<CaminoDoCursoScreen> {
                 spacing: 8,
                 runSpacing: 8,
                 children: [
-                  for (final p in l.repaso ? l.repasa : l.novas) chip(p)
+                  for (final p
+                      in l.repaso ? [...l.novas, ...l.repasa] : l.novas)
+                    chip(p)
                 ],
               ),
               if (u.gramatica case final gr?) ...[

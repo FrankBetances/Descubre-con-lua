@@ -260,15 +260,16 @@
       "palabras": [
         {
           "id": "4_5.xaneiro.s2.tunnel-under",
-          "en": "Underpass",
-          "gl": "Paso inferior",
-          "es": "Paso inferior",
+          "en": "Tunnel",
+          "gl": "Túnel",
+          "es": "Túnel",
           "tprAction": {
-            "gl": "Pasar agachado por debaixo",
-            "es": "Pasar agachado por debajo"
+            "gl": "Sinala ou colle o que nomeas: túnel.",
+            "es": "Señala o coge lo que nombras: túnel."
           },
           "category": "noun",
-          "lamina": "pal_underpass"
+          "lamina": "pal_tunnel",
+          "volve": "curso_0_2"
         },
         {
           "id": "4_5.xaneiro.s2.overpass",

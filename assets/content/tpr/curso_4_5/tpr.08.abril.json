@@ -14,15 +14,16 @@
       "palabras": [
         {
           "id": "4_5.abril.s1.seabird",
-          "en": "Seabird",
-          "gl": "Ave mariña",
-          "es": "Ave marina",
+          "en": "Seagull",
+          "gl": "Gaivota",
+          "es": "Gaviota",
           "tprAction": {
-            "gl": "Planear cos brazos abertos",
-            "es": "Planear con los brazos abiertos"
+            "gl": "Sinala ou colle o que nomeas: gaivota.",
+            "es": "Señala o coge lo que nombras: gaviota."
           },
           "category": "noun",
-          "lamina": "gaivota"
+          "lamina": "pal_seagull",
+          "volve": "curso_3_4"
         },
         {
           "id": "4_5.abril.s1.cliff",
@@ -259,15 +260,16 @@
       "palabras": [
         {
           "id": "4_5.abril.s2.gull-chick",
-          "en": "Gull chick",
-          "gl": "Pito de gaivota",
-          "es": "Pollo de gaviota",
+          "en": "Nest",
+          "gl": "Niño",
+          "es": "Nido",
           "tprAction": {
-            "gl": "Encollerse pequeno",
-            "es": "Acurrucarse pequeño"
+            "gl": "Sinala ou colle o que nomeas: niño.",
+            "es": "Señala o coge lo que nombras: nido."
           },
           "category": "noun",
-          "lamina": "pal_gull_chick"
+          "lamina": "pal_nest",
+          "volve": "curso_3_4"
         },
         {
           "id": "4_5.abril.s2.cormorant",
@@ -673,15 +675,16 @@
         },
         {
           "id": "4_5.abril.s3.deep-blue",
-          "en": "Deep blue",
-          "gl": "Azul fondo",
-          "es": "Azul profundo",
+          "en": "Salty",
+          "gl": "Salgado",
+          "es": "Salado",
           "tprAction": {
-            "gl": "Baixar amodo",
-            "es": "Bajar despacio"
+            "gl": "Sinala ou colle o que nomeas: salgado.",
+            "es": "Señala o coge lo que nombras: salado."
           },
           "category": "adjective",
-          "lamina": "pal_deep_blue"
+          "lamina": "pal_salty",
+          "volve": "curso_3_4"
         },
         {
           "id": "4_5.abril.s3.spiny",

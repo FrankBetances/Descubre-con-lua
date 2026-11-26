@@ -4,6 +4,8 @@ import 'dart:io';
 
 import 'package:descubre_con_lua/core/brand/lua_valeria.dart';
 import 'package:descubre_con_lua/features/criancas/criancas_store.dart';
+import 'package:descubre_con_lua/features/criancas/proba_entrada.dart';
+import 'package:descubre_con_lua/features/criancas/reto_irmans.dart';
 import 'package:descubre_con_lua/features/criancas/xogo_lua.dart';
 import 'package:descubre_con_lua/features/leccions/widgets/proxecto_0_2.dart';
 
@@ -20,6 +22,10 @@ Future<void> testExecutable(FutureOr<void> Function() testMain) async {
       CatalogoLua.fromRaw(File(CatalogoLua.assetPath).readAsStringSync()));
   Proxectos02.sembrar(
       Proxectos02.fromRaw(File(Proxectos02.assetPath).readAsStringSync()));
+  CatalogoProbaEntrada.sembrar(CatalogoProbaEntrada.fromJsonString(
+      File(CatalogoProbaEntrada.assetPath).readAsStringSync()));
+  CatalogoRetoIrmans.sembrar(CatalogoRetoIrmans.fromRaw(
+      File(CatalogoRetoIrmans.assetPath).readAsStringSync()));
   CriancasStore.crear = () => CriancasStore.enMemoria(const [
         Crianza(id: 'c1', nome: 'Uxía', idade: 1, curso: 'curso_0_2'),
       ]);

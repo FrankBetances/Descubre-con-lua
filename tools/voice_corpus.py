@@ -854,18 +854,36 @@ def collect_locutions(content_dir: Path = CONTENT_DIR) -> list[Locution]:
     acopros = content_dir / "acopros" / "proxectos_0_2.json"
     if acopros.exists():
         for p in json.loads(acopros.read_text(encoding="utf-8")).get("proxectos", []):
+            mes_c = p.get("mesCalendario", "?")
             rima = (p.get("rima") or {}).get("en", "")
             if rima:
                 _one(rima, "en", estilo_ingles(rima), "acopros/rima", seen)
             for w in p.get("palabras", []):
-                _one(w.get("en", ""), "en", estilo_ingles(w.get("en", "")), "acopros/palabra", seen)
+                en_w = str(w.get("en", "")).strip()
+                if en_w:
+                    _one_neno(en_w, f"acopros/{mes_c}/palabra", seen)
             mira = p.get("mira_e_nota")
             if isinstance(mira, dict) and mira.get("frase_en"):
-                mes_c = p.get("mesCalendario", "?")
                 _one_neno(str(mira["frase_en"]), f"acopros/{mes_c}/mira_e_nota", seen)
                 sig = mira.get("significado")
                 if isinstance(sig, dict):
                     _add(_localized(sig), "tutor", f"acopros/{mes_c}/mira_e_nota/significado", seen)
+            for s in p.get("semanas") or []:
+                s_num = s.get("semana", "?")
+                for cname, cap in (s.get("capas") or {}).items():
+                    if not isinstance(cap, dict):
+                        continue
+                    c_en = str(cap.get("en") or "").strip()
+                    if c_en:
+                        _one_neno(c_en, f"acopros/{mes_c}/s{s_num}/capa/{cname}", seen)
+                    for pz in cap.get("pezas") or []:
+                        if not isinstance(pz, dict):
+                            continue
+                        p_en = str(pz.get("en") or "").strip()
+                        if p_en:
+                            _one_neno(p_en, f"acopros/{mes_c}/s{s_num}/capa/{cname}/peza", seen)
+                        if pz.get("gl") and pz.get("es"):
+                            _add(_localized(pz), "tutor", f"acopros/{mes_c}/s{s_num}/capa/{cname}/sig", seen)
 
     # O-20261119-8: los Juegos de escucha, copiados de Valeria. Cada palabra y
     # cada frase suena en la lengua de su banco; la persona adulta las oye en
@@ -955,6 +973,64 @@ def collect_locutions(content_dir: Path = CONTENT_DIR) -> list[Locution]:
                 ep = ev.get("englishPhrase")
                 if ep:
                     _one_neno(str(ep), f"escoita/ar/{eid}/ev/{ev.get('id', '?')}", seen)
+
+    # P11.3: Prueba de entrada por curso (2-3 a 5-6 años).
+    proba_json = content_dir / "nivel" / "proba_entrada.json"
+    if proba_json.exists():
+        p_doc = json.loads(proba_json.read_text(encoding="utf-8"))
+        for pel in p_doc.get("peldanos") or []:
+            _add(_localized(pel.get("titulo") or {}), "tutor",
+                 f"nivel/peldano/{pel.get('nivel', '?')}", seen)
+        for cid, items in (p_doc.get("cursos") or {}).items():
+            for it in items:
+                iid = it.get("id", "item")
+                if it.get("en"):
+                    _one_neno(str(it["en"]), f"nivel/{cid}/{iid}/en", seen)
+                if isinstance(it.get("enSignificado"), dict):
+                    _add(_localized(it["enSignificado"]), "tutor",
+                         f"nivel/{cid}/{iid}/sig", seen)
+                if isinstance(it.get("instrucion"), dict):
+                    _add(_localized(it["instrucion"]), "tutor",
+                         f"nivel/{cid}/{iid}/instrucion", seen)
+
+    # M3 (P11.7): Reto de irmáns (parellas de cursos veciños × 40 semanas).
+    reto_json = content_dir / "nivel" / "reto_irmans.json"
+    if reto_json.exists():
+        r_doc = json.loads(reto_json.read_text(encoding="utf-8"))
+        for par_key, items in (r_doc.get("pares") or {}).items():
+            for it in items:
+                iid = it.get("id", "reto_irmans")
+                if it.get("fraseEn"):
+                    _one_neno(str(it["fraseEn"]), f"nivel/irmans/{par_key}/{iid}/en", seen)
+                if isinstance(it.get("fraseSignificado"), dict):
+                    _add(_localized(it["fraseSignificado"]), "tutor",
+                         f"nivel/irmans/{par_key}/{iid}/sig", seen)
+                if isinstance(it.get("instrucion"), dict):
+                    _add(_localized(it["instrucion"]), "tutor",
+                         f"nivel/irmans/{par_key}/{iid}/instrucion", seen)
+
+    # P11 (Paso 1): As 3 capas semanais das leccións e as súas pezas con voz child+slow.
+    leccions_json = content_dir / "leccions" / "leccions.json"
+    if leccions_json.exists():
+        lc = json.loads(leccions_json.read_text(encoding="utf-8"))
+        for cid, cdata in (lc.get("cursos") or {}).items():
+            for u in cdata.get("unidades") or []:
+                for l in u.get("leccions") or []:
+                    lid = l.get("id", "?")
+                    for cname, cap in (l.get("capas") or {}).items():
+                        if not isinstance(cap, dict):
+                            continue
+                        c_en = str(cap.get("en") or "").strip()
+                        if c_en:
+                            _one_neno(c_en, f"leccions/{cid}/{lid}/capa/{cname}", seen)
+                        for pz in cap.get("pezas") or []:
+                            if not isinstance(pz, dict):
+                                continue
+                            p_en = str(pz.get("en") or "").strip()
+                            if p_en:
+                                _one_neno(p_en, f"leccions/{cid}/{lid}/capa/{cname}/peza", seen)
+                            if pz.get("gl") and pz.get("es"):
+                                _add(_localized(pz), "tutor", f"leccions/{cid}/{lid}/capa/{cname}/sig", seen)
 
     return sorted(seen.values(), key=lambda e: (e.lang, e.style, e.id))
 

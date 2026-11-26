@@ -320,7 +320,7 @@ def construir():
     for n, (niv, tgl, tes, dgl, des, fgl, fes) in PUNTOS.items():
         p = {"n": n, "nivel": niv, "titulo": {"gl": tgl, "es": tes},
              "descricion": {"gl": dgl, "es": des},
-             "paraCriaturas": True}
+             "paraCriaturas": n <= 20}
         if not fgl and n in PARA_FAMILIAS:
             fgl, fes = PARA_FAMILIAS[n]
         if fgl:
@@ -342,12 +342,40 @@ def construir():
             "puntos": puntos, "ruta": ruta}
 
 
+TECHO_PUNTO = {
+    "curso_0_2": 9,
+    "curso_2_3": 9,
+    "curso_3_4": 10,
+    "curso_4_5": 20,
+    "curso_5_6": 20,
+}
+TECHO_MCER = {
+    "curso_0_2": "A1",
+    "curso_2_3": "A1",
+    "curso_3_4": "A1",
+    "curso_4_5": "A2",
+    "curso_5_6": "A2",
+}
+ORDE_MCER = ["A1", "A2", "B1", "B2", "C1"]
+MAX_FRASE = {
+    "curso_0_2": 3,
+    "curso_2_3": 4,
+    "curso_3_4": 5,
+    "curso_4_5": 6,
+    "curso_5_6": 7,
+}
+MAX_SALTO = 2
+
+
 def revisar(d):
     fallos = []
-    usados = {m["punto"] for c in d["ruta"].values() for m in c.values()}
+    por_n = {p["n"]: p for p in d["puntos"]}
     for n in range(1, 49):
-        if n not in usados:
-            fallos.append(f"el punto {n} no está en ninguna edad")
+        if n not in por_n:
+            fallos.append(f"falta el punto {n} en `puntos`")
+        elif n > 20:
+            if not por_n[n].get("exemplo") or not por_n[n].get("paraFamilias"):
+                fallos.append(f"punto B1-C1 {n} sin guía/ejemplo adulto")
     for c, ms in d["ruta"].items():
         if len(ms) != 10:
             fallos.append(f"{c}: {len(ms)} meses")
@@ -379,18 +407,35 @@ def revisar(d):
                 out |= {w, raiz(w), w[:-1] if w.endswith("s") else w}
         return out
     for c, ms in d["ruta"].items():
-        for m, x in ms.items():
-            st = steam[(c, int(m))]
-            sv = pal(" ".join(o["en"] for o in st["ordes"]) + " " + STEAM_EN[c][int(m)])
+        pts_curso = []
+        longs = []
+        techo_p = TECHO_PUNTO[c]
+        techo_m = TECHO_MCER[c]
+        max_f = MAX_FRASE[c]
+        for mes in MESES:
+            x = ms[str(mes)]
+            p_num = x["punto"]
+            pts_curso.append(p_num)
+            p_info = por_n.get(p_num)
+            if p_num > techo_p:
+                fallos.append(f"{c} mes {mes}: punto {p_num} supera el techo {techo_p} (D1)")
+            if p_info and ORDE_MCER.index(p_info["nivel"]) > ORDE_MCER.index(techo_m):
+                fallos.append(f"{c} mes {mes}: nivel {p_info['nivel']} supera el techo {techo_m} (D1)")
+            st = steam[(c, mes)]
+            sv = pal(" ".join(o["en"] for o in st["ordes"]) + " " + STEAM_EN[c][mes])
             for k, f in enumerate(x["frases"]):
                 if not pal(f["en"]) & sv:
-                    fallos.append(f"{c} {m} semana {k + 1}: «{f['en']}» no habla de su STEAM")
-    # Progresión real: a lo largo de los 50 meses, de 0-2 en septiembre a
-    # 5-6 en junio, la unidad nunca vuelve atrás.
-    seq = [d["ruta"][c][str(m)]["punto"] for c in RUTA_48 for m in MESES]
-    atras = [(i, a, b) for i, (a, b) in enumerate(zip(seq, seq[1:])) if b < a]
-    if atras:
-        fallos.append(f"la columna vuelve atrás {len(atras)} veces: {atras[:5]}")
+                    fallos.append(f"{c} {mes} semana {k + 1}: «{f['en']}» no habla de su STEAM")
+                nw = len(f["en"].split())
+                longs.append(nw)
+                if nw > max_f:
+                    fallos.append(f"{c} {mes} semana {k + 1}: frase de {nw} palabras > techo {max_f}")
+        for i, (a, b) in enumerate(zip(pts_curso, pts_curso[1:])):
+            if b < a:
+                fallos.append(f"{c}: la escalera baja del mes {MESES[i]} ({a}) al {MESES[i + 1]} ({b})")
+        for i, (a, b) in enumerate(zip(longs, longs[1:])):
+            if b - a > MAX_SALTO:
+                fallos.append(f"{c} semana {i + 2}: salto de {b - a} palabras ({a}->{b} > {MAX_SALTO})")
     return fallos
 
 
@@ -408,11 +453,11 @@ def main():
         if not SAIDA.exists() or SAIDA.read_text() != texto:
             print("FALLO: gramatica.json no está al día (python3 tools/gen_gramatica.py)")
             return 1
-        print("OK: gramática al día; las 48 unidades, en orden, en las cinco edades.")
+        print("OK: gramática al día; los 48 puntos (1-20 por techo de edad, 21-48 guía adulta).")
         return 0
     SAIDA.parent.mkdir(parents=True, exist_ok=True)
     SAIDA.write_text(texto)
-    print("OK: 48 puntos; 50 unidades con su punto y cuatro frases.")
+    print("OK: 48 puntos; 50 unidades dentro del techo de cada edad y con cuatro frases STEAM.")
     return 0
 
 

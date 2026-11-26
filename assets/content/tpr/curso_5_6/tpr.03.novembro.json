@@ -575,15 +575,16 @@
         },
         {
           "id": "5_6.novembro.s3.investigate",
-          "en": "Investigate",
-          "gl": "Investigar",
-          "es": "Investigar",
+          "en": "Search",
+          "gl": "Buscar",
+          "es": "Buscar",
           "tprAction": {
-            "gl": "Mirar de preto con atención",
-            "es": "Mirar de cerca con atención"
+            "gl": "Sinala ou colle o que nomeas: buscar.",
+            "es": "Señala o coge lo que nombras: buscar."
           },
           "category": "verb",
-          "lamina": "pal_investigate"
+          "lamina": "pal_search",
+          "volve": "curso_3_4"
         },
         {
           "id": "5_6.novembro.s3.write-down",

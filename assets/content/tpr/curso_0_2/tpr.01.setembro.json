@@ -963,7 +963,8 @@
             "gl": "Abrir as mans ao rematar",
             "es": "Abrir las manos al terminar"
           },
-          "category": "phrase"
+          "category": "phrase",
+          "lamina": "pal_02_all_done"
         },
         {
           "id": "0_2.setembro.s4.before-and-after",

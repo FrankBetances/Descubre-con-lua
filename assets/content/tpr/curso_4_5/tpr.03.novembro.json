@@ -14,15 +14,15 @@
       "palabras": [
         {
           "id": "4_5.novembro.s1.hilltop",
-          "en": "Hilltop",
-          "gl": "Cumio do monte",
-          "es": "Cima del monte",
+          "en": "Hill",
+          "gl": "Outeiro",
+          "es": "Colina",
           "tprAction": {
-            "gl": "Estirar os brazos no alto",
-            "es": "Estirar los brazos en lo alto"
+            "gl": "Sinala ou colle o que nomeas: outeiro.",
+            "es": "Señala o coge lo que nombras: colina."
           },
           "category": "noun",
-          "lamina": "pal_cima"
+          "lamina": "pal_hill"
         },
         {
           "id": "4_5.novembro.s1.chapel",
@@ -158,15 +158,16 @@
         },
         {
           "id": "4_5.novembro.s1.steep",
-          "en": "Steep",
-          "gl": "Empinado",
-          "es": "Empinado",
+          "en": "Grassy",
+          "gl": "Con herba",
+          "es": "Con hierba",
           "tprAction": {
-            "gl": "Inclinar moito a man",
-            "es": "Inclinar mucho la mano"
+            "gl": "Sinala ou colle o que nomeas: con herba.",
+            "es": "Señala o coge lo que nombras: con hierba."
           },
           "category": "adjective",
-          "lamina": "pal_empinado"
+          "lamina": "pal_grassy",
+          "volve": "curso_2_3"
         },
         {
           "id": "4_5.novembro.s1.breathtaking",
@@ -193,15 +194,16 @@
         },
         {
           "id": "4_5.novembro.s1.downhill",
-          "en": "Downhill",
-          "gl": "Costa abaixo",
-          "es": "Cuesta abajo",
+          "en": "Bumpy",
+          "gl": "Con baches",
+          "es": "Con baches",
           "tprAction": {
-            "gl": "Camiñar lixeiro cara abaixo",
-            "es": "Caminar ligero hacia abajo"
+            "gl": "Sinala ou colle o que nomeas: con baches.",
+            "es": "Señala o coge lo que nombras: con baches."
           },
           "category": "adjective",
-          "lamina": "pal_costa_abaixo"
+          "lamina": "pal_bumpy",
+          "volve": "curso_3_4"
         },
         {
           "id": "4_5.novembro.s1.almost-at-the-top",

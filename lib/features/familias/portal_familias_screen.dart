@@ -78,6 +78,7 @@ class _PortalFamiliasScreenState extends State<PortalFamiliasScreen> {
   /// Los niños de la casa: el curso de Hoy es el del último que se vio, y
   /// así no se pregunta cada vez que se abre la app (O-20261109-1).
   late final CriancasStore _criancas = widget.criancas ?? CriancasStore.crear();
+  bool _enAlta = false;
 
   String get _curso {
     final c = _criancas.activa?.curso ?? NomesFamilias.idades.first.$1;
@@ -90,7 +91,11 @@ class _PortalFamiliasScreenState extends State<PortalFamiliasScreen> {
   void initState() {
     super.initState();
     _criancas.addListener(_cambioCriancas);
-    if (!_criancas.cargado) _criancas.cargar();
+    if (_criancas.cargado) {
+      _enAlta = _criancas.activa == null;
+    } else {
+      _criancas.cargar();
+    }
   }
 
   @override
@@ -100,21 +105,28 @@ class _PortalFamiliasScreenState extends State<PortalFamiliasScreen> {
   }
 
   void _cambioCriancas() {
-    if (mounted) setState(() {});
+    if (!mounted) return;
+    setState(() {
+      if (_criancas.cargado && _criancas.activa == null) {
+        _enAlta = true;
+      }
+    });
   }
 
   void _abrirResultados(BuildContext context) {
-    Navigator.of(context).push(RutaLua(
-      de: context,
-      builder: (_) => ResultadosCrianzaScreen(
-        store: _criancas,
-        language: _language,
-        onLanguageChanged: _cambiarLingua,
-        calendario: _store,
-        premios: widget.premios,
-        agora: widget.agora,
+    Navigator.of(context).push(
+      RutaLua(
+        de: context,
+        builder: (_) => ResultadosCrianzaScreen(
+          store: _criancas,
+          language: _language,
+          onLanguageChanged: _cambiarLingua,
+          calendario: _store,
+          premios: widget.premios,
+          agora: widget.agora,
+        ),
       ),
-    ));
+    );
   }
 
   @override
@@ -195,21 +207,25 @@ class _PortalFamiliasScreenState extends State<PortalFamiliasScreen> {
     if (!_criancas.cargado) {
       return const Scaffold(body: Center(child: CircularProgressIndicator()));
     }
-    // La primera vez: quién va a aprender. Después, nunca más.
-    if (_criancas.activa == null) {
+    // La primera vez: quién va a aprender (y se pueden registrar varios sin salir).
+    if (_enAlta || _criancas.activa == null) {
       return RexistroCrianzaScreen(
         key: const Key('rexistro_primeira'),
         store: _criancas,
         language: lang,
         onLanguageChanged: _cambiarLingua,
         primeira: true,
-        onGardado: (_) {},
+        agora: widget.agora,
+        audioService: widget.audioService,
+        onGardado: (_) => setState(() => _enAlta = false),
       );
     }
     return CrianzaDaCasa(
       store: _criancas,
       onLanguageChanged: _cambiarLingua,
       abrirResultados: _abrirResultados,
+      agora: widget.agora,
+      audioService: widget.audioService,
       child: _portal(context, lang),
     );
   }

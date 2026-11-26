@@ -598,15 +598,15 @@
         },
         {
           "id": "2_3.setembro.s3.roll-up",
-          "en": "Roll up",
-          "gl": "Enrolar",
-          "es": "Enrollar",
+          "en": "Tidy up",
+          "gl": "Recoller",
+          "es": "Recoger",
           "tprAction": {
-            "gl": "Enrolar a esteira amodo",
-            "es": "Enrollar la esterilla despacio"
+            "gl": "Sinala ou colle o que nomeas: recoller.",
+            "es": "Señala o coge lo que nombras: recoger."
           },
           "category": "verb",
-          "lamina": "pal_roll_up"
+          "lamina": "pal_tidy_up"
         },
         {
           "id": "2_3.setembro.s3.wipe-the-table",

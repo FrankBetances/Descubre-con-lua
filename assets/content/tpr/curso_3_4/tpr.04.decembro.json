@@ -118,7 +118,8 @@
             "gl": "Esvarar amodo polo chan sen levantar os pés",
             "es": "Deslizarse despacio por el suelo sin levantar los pies"
           },
-          "lamina": "pal_slide"
+          "lamina": "pal_slide",
+          "volve": "curso_2_3"
         },
         {
           "id": "3_4.decembro.s1.melt",
@@ -295,7 +296,8 @@
             "gl": "Abrir brazos e pernas en forma de estrela",
             "es": "Abrir brazos y piernas en forma de estrella"
           },
-          "lamina": "pal_star"
+          "lamina": "pal_star",
+          "volve": "curso_2_3"
         },
         {
           "id": "3_4.decembro.s2.gift",
