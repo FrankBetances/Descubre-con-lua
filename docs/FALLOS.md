@@ -159,3 +159,8 @@ Formato de cada entrada (una por fallo):
 - Qué pasó: Claude Code le dijo a Frank que faltaban 15 criterios. Cuatro estaban hechos por Antigravity en la rama, con sus tests en verde (varios niños, alta con la prueba dentro, 0-2 y nivel sin saltos), y la tabla docs/p11-control.md ya los daba por hechos. Frank respondió que era falso. Lo hizo Claude Code.
 - Causa raíz: Claude Code repitió la cuenta del aviso automático, que lee los «- [ ]» de docs/ORDENES.md, sin pasar a ORDENES lo que ya había comprobado en la rama ni decir de cada criterio abierto qué le faltaba.
 - Guarda: tools/check_ordenes_abertas.py (falla si un criterio con evidencia en una tabla de control sigue abierto en docs/ORDENES.md sin una línea «> Abierto (…)» que diga qué falta; dentro de tools/gates.sh)
+
+## F-20261126-7 · Claude Code le dio a Frank el prompt de Antigravity en trozos
+- Qué pasó: después de dar un prompt para Antigravity, Claude Code le dio a Frank correcciones y líneas sueltas «para pegar antes» o «añadir al final», y dejó dos secciones «vigente» en docs/PROMPTS_ANTIGRAVITY.md. Frank ya había pedido varias veces un único prompt completo. Lo hizo Claude Code.
+- Causa raíz: cada cambio se resolvía con un parche para pegar en vez de reescribir el prompt entero, y ningún gate miraba cuántos prompts vigentes había ni si estaban enteros.
+- Guarda: tools/check_prompt_unico.py (falla si hay más de una sección vigente o si la vigente es una corrección o le faltan reglas, paso 0, cierre o informe final; en tools/gates.sh) y CLAUDE.md (R-PROMPT-ÚNICO)

@@ -584,7 +584,7 @@ LO QUE REVISARÁ CLAUDE CODE
 auditoria_niveles.py --gate y check_capas_semana.py a cero; gates.sh y flutter test en verde; nada borrado fuera de lo que autorizan D1 y D4; tres semanas al azar por edad (STEAM, longitud de las frases y repaso); la prueba de entrada y la fila de niños abiertas en la app de escritorio en gl y es; la privacidad declarada igual a lo que se guarda; ninguna palabra clínica en pantalla.
 ```
 
-## P11 · Prompt único (26/11/2026, vigente)
+## P11 · Prompt único (26/11/2026, sustituido por el «Prompt completo final»)
 
 Los doce pasos en un solo prompt, como pidió Frank. Con su decisión del 26/11/2026: el alta de cada niño se hace una sola vez y lleva dentro la prueba de entrada; después la app se ajusta sola cada semana. Los pasos P11.0–P11.11 ya están en la tabla de pasos.
 
@@ -679,7 +679,7 @@ CORRECCIÓN DE FRANK (26/11/2026) al trabajo P11 que estás haciendo. No empiece
 El texto completo con esta corrección ya está en main: «P11 · Prompt único (26/11/2026, vigente)» de docs/PROMPTS_ANTIGRAVITY.md. Si algo de lo que ya hiciste choca con esto, corrígelo en el paso donde lo hiciste y apúntalo en docs/p11-control.md.
 ```
 
-## P11 · Corrección final: alta de una sola vez y mejoras M1-M5 (26/11/2026, vigente)
+## P11 · Corrección final: alta de una sola vez y mejoras M1-M5 (26/11/2026, sustituida por el «Prompt completo final»)
 
 La que Frank pega a Antigravity sobre el P11 en curso. Sustituye a la «Corrección del alta» de arriba, que queda dentro de esta. M1-M5 aprobadas por Frank el 26/11/2026 (O-20261126-4).
 
@@ -709,4 +709,78 @@ En la ficha de cada niño, «Tarxeta para a escola / Tarjeta para la escuela»: 
 CAPTURAS (P11.10), además de las del prompt único, en gl y es: la pantalla de marcar en diez segundos, «Lúa pregunta», Hoxe con la rutina elegida, el reto de hermanos, «La ha oído N veces» y la tarjeta para la escuela.
 
 CONTROL: en docs/p11-control.md, cada mejora M1-M5 con su evidencia, igual que los criterios de las órdenes. El informe final empieza por «De la orden falta: …», con M1-M5 incluidas.
+```
+
+## P11 · Prompt completo final (26/11/2026, vigente)
+
+El único prompt vigente para Antigravity, entero: se da a Frank copiado tal cual, sin trozos ni correcciones aparte (O-20261126-6, F-20261126-7). Lo vigila tools/check_prompt_unico.py.
+
+```text
+PROMPT COMPLETO PARA ANTIGRAVITY · TERMINAR P11 (26/11/2026)
+Es el único texto que manda y está entero: no hay correcciones ni añadidos aparte. Sustituye a todo lo anterior.
+
+QUIÉN ERES Y DÓNDE TRABAJAS
+Eres Antigravity. Trabajas en FrankBetances/Descubre-con-lua, una app Android en Flutter con fines solo educativos, en gallego y castellano, para estimular el inglés de niños de 0 a 6 años en casa (Na casa) y en el aula (Juega con Lúa). Haces todo el trabajo seguido, sin esperar entre pasos. Claude Code revisa e integra. Tú no abres pull request a main ni mergeas.
+
+REGLAS (no se negocian)
+1. No borres, quites, vacíes ni sustituyas nada que Frank no haya pedido con palabras en docs/ORDENES.md.
+2. STEAM es el eje: cada palabra, frase, capa, ítem y cuento nombra el experimento STEAM de su mes y qué parte trabaja.
+3. Prohibido rellenar: no se repite, se estira ni se copia contenido para que cuadre una cifra. Si falta material, escríbelo en docs/p11-control.md y sigue.
+4. El niño no usa la pantalla: la app propone a la persona adulta y ella marca lo que ve.
+5. Nada sanitario: nunca «examen», «diagnóstico», «evaluación», «trastorno», «retraso» ni «puntuación». tools/check_finalidade.py en verde.
+6. Ningún dato sale del móvil: sin INTERNET y sin micrófono; el único permiso es CAMERA. Todo campo nuevo de criancas.json va en día o en semana del curso, nunca con hora, y en el mismo commit se actualizan docs/privacy.html, docs/play-seguridad-datos.md, README.md y test/core/criancas_privacidad_test.dart.
+7. Léxico de Galicia: neno/nena y niño/niña; nunca «criatura» ni «crianza» visibles; nunca «Edición Vigo». Sin emoji. Sin licencias NC ni ND.
+8. Texto con audio que cambia: corpus de voz exportado en el mismo commit (python3 tools/export_voice_corpus.py). Las frases inglesas para el niño llevan voz child y lenta (tools/check_voz_lenta.py).
+9. Cada commit empieza por «P11.10:» o «P11.11:» (los pasos ya están en la tabla de docs/PLAN_ANTIGRAVITY.md) y añade su fila al Registro de commits de ese fichero: la última fila lleva «este» y el commit siguiente la cambia por el SHA real. tools/check_registro_commits.py en OK antes de cada push.
+10. Antes de cada push: tools/gates.sh --fast y flutter test completos en local.
+11. Lo que no hayas visto en la app se dice con estas palabras: «esto no lo he verificado».
+12. Paras y escribes a Frank solo si hay cambios sin commit que no son tuyos, si un gate no se puede poner en verde sin saltarte una regla o si falta algo que solo Frank puede dar.
+
+PASO 0 · PREPARAR LA RAMA
+git fetch origin; git checkout antigravity/niveles; git merge origin/claude/intelligent-mayer-e3iriy. Esa rama lleva tu trabajo P11.0-P11.9 y el de Claude Code hasta el commit P8.37. Si no está en el remoto, para y avisa a Frank.
+Si hay conflicto en un fichero generado (assets/content/leccions/leccions.json, voice-corpus.json, assets/content/laminas/palabras_laminas.json, docs/catalogo-por-idades.html o su PDF), no lo resuelvas a mano: quédate con la versión de Claude Code y vuelve a correr sus generadores (python3 tools/gen_leccions.py, tools/gen_laminas_palabras.py, tools/gen_reto_irmans.py, tools/export_voice_corpus.py, tools/gen_catalogo.py). En el resto, conserva lo de los dos.
+Lo que ya está hecho y no se rehace:
+- Varios niños con alta de una sola vez y la prueba de entrada dentro.
+- Repaso FSRS por niño («Volven hoxe»).
+- Ajuste semanal, escalera de los 48 puntos y 0-2 rehecho.
+- Las mejoras: M1 · marcar en diez segundos, M2 · rutinas de casa, M3 · reto de hermanos, M4 · cuántas veces la ha oído, M5 · tarjeta para la escuela.
+- Las tres capas por semana con piezas reales en el campo "pezas" (gate tools/check_capas_semana.py).
+- Ninguna palabra ni orden rara en 2-3 a 5-6: 131 sustituciones en lección, banco, cuento y frases de Lúa (tools/vocab_idade.py). La palabra sencilla que ya era nueva en una edad anterior vuelve marcada «volve», y tools/planificador_5_palabras.py la acepta. No vuelvas a poner las palabras viejas.
+
+PASO 1 · HOXE ENSEÑA LA CAPA ELEGIDA
+Na casa → Hoxe enseña, para cada niño, las "pezas" de la capa que eligió su ajuste semanal (núcleo, «Máis / Más» o «Apoio / Apoyo»). Cada pieza va con su lámina, su voz normal y despacio, y su significado en gl y es; y la frase de la capa, con su voz. Hoy solo enseña las rutinas.
+Test: el mismo niño con capa «mais» y con capa «apoio» ve piezas distintas.
+
+PASO 2 · EL CUPO CAMBIA LO QUE SE VE
+Hoxe y la lección del día enseñan exactamente el número de palabras nuevas que fija el cupo del niño esa semana: las «novas» en su orden, y si el cupo es mayor, las que faltan salen de las piezas de «Máis».
+Test: dos niños del mismo curso y semana, con cupo 2 y cupo 5, ven 2 y 5.
+
+PASO 3 · UMBRAL DE VUELTAS
+En tools/auditoria_niveles.py, «vuelven menos de 4 veces» cuenta solo palabras con al menos 16 semanas de curso por delante. Las presentadas después vuelven en la semana 1 del curso siguiente («xaSabe» de septiembre), y el gate lo comprueba. Cuando dé cero, añade «python3 tools/auditoria_niveles.py --gate» a tools/gates.sh.
+
+PASO 4 · TESTS Y GATES QUE FALLAN
+Corrige, sin borrar ni saltar nada:
+- test/core/significados_test.dart: cada frase del reto de hermanos («Tick-tock, clock, and Wake up!»…) con su significado en gl y es.
+- test/features/ux_l6_test.dart (portal_familias gl y es) y test/features/ux_l8_test.dart (Ponte ao día gl y es) en verde.
+- flutter analyze limpio (lib/features/criancas/criancas_store.dart:210 y lib/features/familias/views/hoxe_familias_screen.dart:2066).
+- lib/features/familias/nomes_familias.dart regenerado con python3 tools/xera_nomes.py.
+- En test/features/criancas_test.dart y test/features/acopros_0_2_test.dart vuelven los nombres de test que docs/ORDENES.md cita como evidencia (O-20261109-1 y O-20261109-4).
+Al final, flutter test completo y tools/gates.sh --fast en verde. Los audios que falten los genera el workflow de voz en CI.
+
+PASO 5 · CAPTURAS (P11.10)
+Compila la app de escritorio en una copia del repositorio fuera de él, en /tmp. Los cambios de esa copia (LUA_STORE_DIR, linux/) no entran nunca en el repositorio. Ábrela en Xvfb 460×1000 y navega por clic, por el camino de Frank. Captura en gl y es y mira cada captura:
+- Na casa → alta de un niño de 4 años con su prueba de principio a fin, y luego la de un segundo niño;
+- Hoxe con tres niños de cursos distintos;
+- «Volven hoxe» y la pantalla de marcar en diez segundos;
+- «Lúa pregunta» y la línea del ajuste semanal;
+- la misma semana en sus tres capas y dos niños con cupos distintos;
+- la rutina elegida, el reto de hermanos y «La ha oído N veces»;
+- la tarjeta para la escuela;
+- 0-2 en tres meses y una semana de 4-5;
+- Modo Aula → Hoy sin cambios.
+Guárdalas en docs/capturas/escritorio/p11-*.png. Regenera el manual (capturas con flutter test --tags capturas --update-goldens test/capturas_test.dart, PDF y Word) y el catálogo con docs/build-catalogo.js (unas 390 páginas). Mira ambos PDF página a página o mide por script que ninguna página se sale de la hoja, y escribe cuál de las dos hiciste.
+
+PASO 6 · CIERRE (P11.11)
+En docs/p11-control.md, cada criterio de O-20261126-1 a O-20261126-5 y M1-M5 con su evidencia (test, gate o captura) y lo que no se ha visto en un móvil. docs/PENDIENTE.md al día. Push de antigravity/niveles, sin pull request ni merge.
+Informe final a Frank: empieza por «De la orden falta: …», criterio por criterio y con números.
 ```

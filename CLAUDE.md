@@ -11,6 +11,8 @@ Las dictó Frank el 19/11/2026: «es obligatorio en todos los sentidos siempre h
 
 5. **R-ENTREGA.** Si Frank pide un texto (un prompt, un mensaje, una lista para pegar), la respuesta empieza por ese texto, completo y solo, sin ninguna herramienta antes y sin mezclarlo con otra cosa. Lo demás va después. Freno: `stop_freno.py` pone la marca `pide_texto` y `freno_herramientas.py` bloquea toda herramienta hasta el siguiente mensaje de Frank (F-20261119-6).
 
+6. **R-PROMPT-ÚNICO.** Para Antigravity hay un solo prompt, entero, y se le da a Frank copiado tal cual de la única sección «vigente» de `docs/PROMPTS_ANTIGRAVITY.md`. Prohibido darle trozos, correcciones, líneas sueltas o «pega esto además»: si algo cambia, se reescribe el prompt entero, se guarda como el nuevo vigente y se da entero. La dictó Frank el 26/11/2026: «me des todo completo, que no me des nada trozo y me digas cómo hay que pegar». Freno: `tools/check_prompt_unico.py` (en `tools/gates.sh`) falla si hay más de un prompt vigente o si el vigente no está entero (F-20261126-7).
+
 Blindaje: `.claude/hooks/blindaje.py` impide a Claude Code escribir en `.claude/` (hooks, settings, estado). Los frenos solo los cambia Frank.
 
 ## R∞ · REGLA SUPREMA · LA ORDEN LITERAL, SUS CRITERIOS ESCRITOS ANTES Y PROHIBIDO SIMULAR

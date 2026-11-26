@@ -652,3 +652,11 @@ Decisión: las 72 palabras raras de PENDENTES_FRANK se cambian también; la pala
 - [x] Vocabulario de 2-3 a 5-6 sin palabras ajenas a la edad; gate de lista · evidencia: tools/vocab_idade.py (131 sustituciones en lección, banco TPR y cuento; --check en tools/gates.sh) y tools/planificador_5_palabras.py (las que vuelven de otra edad, marcadas «volve»)
 - [ ] Umbral de vueltas corregido y auditoria_niveles.py --gate en tools/gates.sh a cero · evidencia:
 - [ ] gates.sh y flutter test completos en verde, mergeado en main con CI en verde y los audios generados · evidencia:
+
+## O-20261126-6 · Un único prompt completo para Antigravity, sin trozos
+Estado: cumplida
+> Ya te dije antes que me des todo completo, que no me des nada trozo y me digas cómo hay que pegar no lo vuelvo a repetir más genera algo para evitar y no repetirlo más
+Fuente: docs/PROMPTS_ANTIGRAVITY.md (las dos secciones «vigente» de P11 y las correcciones sueltas dadas en el chat el 26/11/2026)
+
+- [x] Un solo prompt vigente para Antigravity, entero, con todo lo anterior dentro · evidencia: docs/PROMPTS_ANTIGRAVITY.md (sección «P11 · Prompt completo final») y tools/check_prompt_unico.py
+- [x] Una guarda que falla si vuelve a haber más de un prompt vigente o uno incompleto, y la regla escrita en CLAUDE.md · evidencia: tools/check_prompt_unico.py (en rojo con el fichero de antes, que tenía dos vigentes) y CLAUDE.md (R-PROMPT-ÚNICO)
