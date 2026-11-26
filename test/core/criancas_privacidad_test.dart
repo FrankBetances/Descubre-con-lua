@@ -21,23 +21,50 @@ void main() {
 
   test('criancas.json: solo estas claves, sin hora ni fecha', () async {
     final s = CriancasStore(
-        store: LocalStore(
-            fileName: CriancasStore.nomeFicheiro, overrideDirectory: dir.path));
+      store: LocalStore(
+        fileName: CriancasStore.nomeFicheiro,
+        overrideDirectory: dir.path,
+      ),
+    );
     await s.cargar();
-    final a = await s.engadir(nome: 'Uxía', idade: 2, curso: 'curso_2_3');
-    final b = await s.engadir(nome: 'Antón', idade: 5, curso: 'curso_5_6');
+    final a = await s.engadir(
+      nome: 'Uxía',
+      idade: 2,
+      curso: 'curso_2_3',
+      mesNacemento: 3,
+      anoNacemento: 2024,
+    );
+    final b = await s.engadir(
+      nome: 'Antón',
+      idade: 5,
+      curso: 'curso_5_6',
+      mesNacemento: 11,
+      anoNacemento: 2021,
+      promocionVistaAno: 2026,
+    );
     await s.escoller(a.id);
-    await s.observar(a.id, CriancasStore.semana('curso_2_3', 10, 2), 'leaf',
-        Observacion.entende);
     await s.observar(
-        b.id, CriancasStore.semana('curso_5_6', 3, 4), 'river', Observacion.di);
+      a.id,
+      CriancasStore.semana('curso_2_3', 10, 2),
+      'leaf',
+      Observacion.entende,
+    );
+    await s.observar(
+      b.id,
+      CriancasStore.semana('curso_5_6', 3, 4),
+      'river',
+      Observacion.di,
+    );
 
     // O-20261109-3: el juego del niño con Lúa (XP, racha, insignias, armario).
     final c = CatalogoLua.lido!;
-    await s.xogarHoxe(a.id, c,
-        agora: DateTime(2026, 10, 6, 21, 47),
-        semana: CriancasStore.semana('curso_2_3', 10, 2),
-        palabrasDaSemana: ['leaf']);
+    await s.xogarHoxe(
+      a.id,
+      c,
+      agora: DateTime(2026, 10, 6, 21, 47),
+      semana: CriancasStore.semana('curso_2_3', 10, 2),
+      palabrasDaSemana: ['leaf'],
+    );
     await s.acariciar(a.id);
     await s.darPeixe(a.id, DateTime(2026, 10, 6, 21, 50));
 
@@ -52,15 +79,34 @@ void main() {
       expect(g['ultimoDia'], '2026-10-06');
       expect(g['comeu'], '2026-10-06');
     }
+    const clavesCrianza = {
+      'id',
+      'nome',
+      'idade',
+      'curso',
+      'mesNacemento',
+      'anoNacemento',
+      'promocionVistaAno',
+    };
     for (final c in j['criancas'] as List) {
-      expect((c as Map).keys.toSet(), {'id', 'nome', 'idade', 'curso'});
-      expect(c['idade'], isA<int>());
+      final m = c as Map;
+      expect(m.keys.toSet().difference(clavesCrianza), isEmpty);
+      expect(m['idade'], isA<int>());
+      if (m['mesNacemento'] != null) {
+        expect(m['mesNacemento'], inInclusiveRange(1, 12));
+      }
+      if (m['anoNacemento'] != null) {
+        expect(m['anoNacemento'], isA<int>());
+      }
     }
     final semana = RegExp(r'^curso_\d_\d/\d{1,2}/[1-5]$');
     for (final porNeno in (j['observacions'] as Map).values) {
       for (final e in (porNeno as Map).entries) {
-        expect(semana.hasMatch(e.key as String), isTrue,
-            reason: 'semana sin fecha: ${e.key}');
+        expect(
+          semana.hasMatch(e.key as String),
+          isTrue,
+          reason: 'semana sin fecha: ${e.key}',
+        );
         for (final v in (e.value as Map).values) {
           expect(v, anyOf(1, 2));
         }

@@ -80,6 +80,7 @@ class _HoxeFamiliasScreenState extends State<HoxeFamiliasScreen> {
   DiaCalendarioDual? _dia;
   Cuento? _conto;
   SteamUnit? _steam;
+  Leccions? _leccions;
   bool _cargando = true;
 
   late DiaQueToca _toca = DiaQueToca.para(agora: widget.agora);
@@ -160,6 +161,10 @@ class _HoxeFamiliasScreenState extends State<HoxeFamiliasScreen> {
       });
     }
 
+    Leccions.cargar().then<Leccions?>((l) => l, onError: (_) => null).then((l) {
+      if (mounted && l != null) setState(() => _leccions = l);
+    });
+
     repo.loadSteamUnits().then((_) {
       if (!vixente()) return;
       setState(() => _steam = steamDoDiaDoCurso(repo, curso, _toca.dia));
@@ -220,7 +225,10 @@ class _HoxeFamiliasScreenState extends State<HoxeFamiliasScreen> {
               store: widget.store,
               agora: widget.agora,
               plan: curso?.planDoDia(
-                  _toca.dia.mesCalendario, _toca.dia.semana, _toca.dia.dia),
+                _toca.dia.mesCalendario,
+                _toca.dia.semana,
+                _toca.dia.dia,
+              ),
             ),
           ),
         )
@@ -271,11 +279,48 @@ class _HoxeFamiliasScreenState extends State<HoxeFamiliasScreen> {
     final programa = widget.repository.programaTprSync;
     final curso = programa?.curso(widget.cursoId);
     final plan = curso?.planDoDia(
-        _toca.dia.mesCalendario, _toca.dia.semana, _toca.dia.dia);
+      _toca.dia.mesCalendario,
+      _toca.dia.semana,
+      _toca.dia.dia,
+    );
     // Para quen chega novo: o que dan por sabido as asembleas deste mes.
     final ponte = widget.repository.ponteAoDiaSync;
     final dadasPorSabidas =
         ponte?.doMes(widget.cursoId, _toca.dia.mesCalendario) ?? const [];
+
+    final casa = CrianzaDaCasa.maybeOf(context);
+    final criancas = casa?.store.criancas ?? const <Crianza>[];
+    final nenoActivo = casa?.store.activa;
+    final agora = widget.agora ?? DateTime.now();
+    final proxSetembro = (casa != null && nenoActivo != null)
+        ? casa.store.cursoPropostoEnSetembro(nenoActivo, agora)
+        : null;
+
+    String resumoHoxePara(Crianza c) {
+      final feito = casa?.store.xogo(c.id).xogouHoxe(agora) ?? false;
+      final prefixo = feito ? (lang == AppLanguage.gl ? 'Feito' : 'Hecho') : '';
+      String tema = '';
+      if (c.curso == 'curso_0_2') {
+        tema = Proxectos02.lidos
+                ?.doMes(_toca.dia.mesCalendario)
+                ?.titulo
+                .resolve(lang) ??
+            '';
+      } else {
+        tema = _leccions
+                ?.da(c.curso, _toca.dia.mesCalendario, _toca.dia.semana)
+                ?.$1
+                .titulo
+                .resolve(lang) ??
+            '';
+      }
+      if (tema.isEmpty) {
+        return prefixo.isNotEmpty
+            ? prefixo
+            : '${_semana[_toca.dia.dia - 1].resolve(lang)} · S${_toca.dia.semana}';
+      }
+      return prefixo.isNotEmpty ? '$prefixo · $tema' : tema;
+    }
 
     return Scaffold(
       backgroundColor: AppTheme.pageBg,
@@ -287,60 +332,64 @@ class _HoxeFamiliasScreenState extends State<HoxeFamiliasScreen> {
       body: SafeArea(
         child: ListView(
           key: const Key('hoxe_familias'),
-          padding: const EdgeInsets.fromLTRB(16, 14, 16, 28),
+          padding: const EdgeInsets.fromLTRB(16, 8, 16, 28),
           children: [
             // O-20261028-4: la edad, la fecha y el título en una fila, para
             // que la lección entre en la primera pantalla.
             // Con letra normal, en una fila; con letra grande, el título
             // baja debajo del selector en vez de estrecharse.
-            Builder(builder: (context) {
-              final grande = MediaQuery.textScalerOf(context).scale(1) > 1.3;
-              final selector = SelectorIdade(
-                cursoId: widget.cursoId,
-                language: lang,
-                onCambiar: widget.onCambiarCurso,
-              );
-              final titulo = Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    _data(lang).toUpperCase(),
-                    key: const Key('hoxe_data'),
-                    style: const TextStyle(
-                      fontSize: 12,
-                      fontWeight: FontWeight.w800,
-                      letterSpacing: 0.6,
-                      color: AppTheme.textSecondary,
-                    ),
-                  ),
-                  Semantics(
-                    header: true,
-                    child: Text(
-                      _titulo(lang),
-                      key: const Key('hoxe_titulo'),
+            Builder(
+              builder: (context) {
+                final grande = MediaQuery.textScalerOf(context).scale(1) > 1.3;
+                final selector = SelectorIdade(
+                  cursoId: widget.cursoId,
+                  language: lang,
+                  onCambiar: widget.onCambiarCurso,
+                );
+                final titulo = Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      _data(lang).toUpperCase(),
+                      key: const Key('hoxe_data'),
                       style: const TextStyle(
-                        fontSize: 17,
+                        fontSize: 12,
                         fontWeight: FontWeight.w800,
-                        color: AppTheme.textPrimary,
-                        height: 1.2,
+                        letterSpacing: 0.6,
+                        color: AppTheme.textSecondary,
                       ),
                     ),
-                  ),
-                ],
-              );
-              return grande
-                  ? Wrap(
-                      spacing: 12,
-                      runSpacing: 6,
-                      crossAxisAlignment: WrapCrossAlignment.center,
-                      children: [selector, titulo],
-                    )
-                  : Row(children: [
-                      selector,
-                      const SizedBox(width: 12),
-                      Expanded(child: titulo),
-                    ]);
-            }),
+                    Semantics(
+                      header: true,
+                      child: Text(
+                        _titulo(lang),
+                        key: const Key('hoxe_titulo'),
+                        style: const TextStyle(
+                          fontSize: 17,
+                          fontWeight: FontWeight.w800,
+                          color: AppTheme.textPrimary,
+                          height: 1.2,
+                        ),
+                      ),
+                    ),
+                  ],
+                );
+                return grande
+                    ? Wrap(
+                        spacing: 12,
+                        runSpacing: 6,
+                        crossAxisAlignment: WrapCrossAlignment.center,
+                        children: [selector, titulo],
+                      )
+                    : Row(
+                        children: [
+                          selector,
+                          const SizedBox(width: 12),
+                          Expanded(child: titulo),
+                        ],
+                      );
+              },
+            ),
             if (_toca.finDeSemana || _toca.prevista) ...[
               const SizedBox(height: 4),
               Text(
@@ -358,9 +407,197 @@ class _HoxeFamiliasScreenState extends State<HoxeFamiliasScreen> {
                 ),
               ),
             ],
+            // P11.1: en septiembre, si por mes/año de nacimiento toca el curso
+            // siguiente, la app lo propone y la persona adulta confirma.
+            if (proxSetembro != null && nenoActivo != null && casa != null) ...[
+              const SizedBox(height: 6),
+              Container(
+                key: const Key('setembro_promocion_card'),
+                padding: const EdgeInsets.all(12),
+                decoration: BoxDecoration(
+                  color: context.acentoTint,
+                  borderRadius: BorderRadius.circular(AppTheme.radiusCard),
+                  border: Border.all(color: context.acento.withAlpha(110)),
+                ),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      lang == AppLanguage.gl
+                          ? 'É setembro! ${nenoActivo.nome} pasa a ${NomesFamilias.idade(proxSetembro).resolve(lang)}?'
+                          : '¡Es septiembre! ¿${nenoActivo.nome} pasa a ${NomesFamilias.idade(proxSetembro).resolve(lang)}?',
+                      style: const TextStyle(
+                        fontSize: 14.5,
+                        fontWeight: FontWeight.w800,
+                        color: AppTheme.textPrimary,
+                      ),
+                    ),
+                    const SizedBox(height: 8),
+                    Row(
+                      children: [
+                        FilledButton(
+                          key: const Key('setembro_promocion_si'),
+                          onPressed: () =>
+                              casa.store.responderPromocionSetembro(
+                            nenoActivo.id,
+                            ano: agora.year,
+                            aceptar: true,
+                            agora: agora,
+                          ),
+                          child: Text(
+                            lang == AppLanguage.gl
+                                ? 'Pasar a ${NomesFamilias.idade(proxSetembro).resolve(lang)}'
+                                : 'Pasar a ${NomesFamilias.idade(proxSetembro).resolve(lang)}',
+                          ),
+                        ),
+                        const SizedBox(width: 8),
+                        OutlinedButton(
+                          key: const Key('setembro_promocion_non'),
+                          onPressed: () =>
+                              casa.store.responderPromocionSetembro(
+                            nenoActivo.id,
+                            ano: agora.year,
+                            aceptar: false,
+                            agora: agora,
+                          ),
+                          child: Text(
+                            lang == AppLanguage.gl
+                                ? 'Manter agora'
+                                : 'Mantener ahora',
+                          ),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
+            ],
+            // P11.1: fila arriba con cada niño de la casa (su Lúa, su nombre,
+            // su curso y en una línea lo que le toca hoy). Un toque cambia el
+            // niño activo y actualiza Hoxe, Calendario y Explorar.
+            if (criancas.isNotEmpty && casa != null) ...[
+              const SizedBox(height: 6),
+              FutureBuilder<CatalogoLua>(
+                future: CatalogoLua.cargar(),
+                initialData: CatalogoLua.lido,
+                builder: (context, cat) {
+                  final ini = cat.data?.deInicio ?? const {};
+                  return SingleChildScrollView(
+                    key: const Key('fila_nenos_hoxe'),
+                    scrollDirection: Axis.horizontal,
+                    child: Row(
+                      children: [
+                        for (var idx = 0; idx < criancas.length; idx++) ...[
+                          if (idx > 0) const SizedBox(width: 8),
+                          Builder(
+                            builder: (context) {
+                              final c = criancas[idx];
+                              final activo = c.id == nenoActivo?.id;
+                              final g = casa.store.xogo(c.id);
+                              final tocaLinha = resumoHoxePara(c);
+                              final cursoNome =
+                                  NomesFamilias.idade(c.curso).resolve(lang);
+                              return Semantics(
+                                button: true,
+                                selected: activo,
+                                label: '${c.nome}, $cursoNome, $tocaLinha',
+                                excludeSemantics: true,
+                                child: Material(
+                                  color: activo
+                                      ? context.acentoTint
+                                      : Colors.white,
+                                  shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(14),
+                                    side: BorderSide(
+                                      color: activo
+                                          ? context.acento
+                                          : AppTheme.border,
+                                      width: activo ? 1.5 : 1,
+                                    ),
+                                  ),
+                                  child: InkWell(
+                                    key: ValueKey('hoxe_neno_${c.id}'),
+                                    borderRadius: BorderRadius.circular(14),
+                                    onTap: () => casa.store.escoller(c.id),
+                                    child: ConstrainedBox(
+                                      constraints: const BoxConstraints(
+                                        minHeight: 48,
+                                        maxWidth: 205,
+                                      ),
+                                      child: Padding(
+                                        padding: const EdgeInsets.symmetric(
+                                          horizontal: 10,
+                                          vertical: 5,
+                                        ),
+                                        child: Row(
+                                          mainAxisSize: MainAxisSize.min,
+                                          children: [
+                                            LuaValeria(
+                                              ancho: 24,
+                                              cabeza: g.cabeza ?? ini['head'],
+                                              pescozo: g.pescozo ?? ini['neck'],
+                                            ),
+                                            const SizedBox(width: 8),
+                                            Flexible(
+                                              child: Column(
+                                                mainAxisSize: MainAxisSize.min,
+                                                crossAxisAlignment:
+                                                    CrossAxisAlignment.start,
+                                                children: [
+                                                  Text(
+                                                    '${c.nome} · $cursoNome',
+                                                    maxLines: 1,
+                                                    overflow:
+                                                        TextOverflow.ellipsis,
+                                                    style: TextStyle(
+                                                      fontSize: 14,
+                                                      fontWeight:
+                                                          FontWeight.w800,
+                                                      height: 1.15,
+                                                      color: activo
+                                                          ? context.acento
+                                                          : AppTheme
+                                                              .textPrimary,
+                                                    ),
+                                                  ),
+                                                  const SizedBox(height: 1),
+                                                  Text(
+                                                    tocaLinha,
+                                                    key: ValueKey(
+                                                      'hoxe_neno_toca_${c.id}',
+                                                    ),
+                                                    maxLines: 1,
+                                                    overflow:
+                                                        TextOverflow.ellipsis,
+                                                    style: const TextStyle(
+                                                      fontSize: 14,
+                                                      height: 1.15,
+                                                      color: AppTheme
+                                                          .textSecondary,
+                                                    ),
+                                                  ),
+                                                ],
+                                              ),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              );
+                            },
+                          ),
+                        ],
+                      ],
+                    ),
+                  );
+                },
+              ),
+            ],
             // O-20261120-1 (F-20261120-2): la estimulación del lenguaje y el
             // pensamiento, arriba y a la vista, no al final de la lección.
-            const SizedBox(height: 6),
+            const SizedBox(height: 2),
             EntradaEstimulacionCard(
               cursoId: widget.cursoId,
               mesCalendario: _toca.dia.mesCalendario,
@@ -376,19 +613,25 @@ class _HoxeFamiliasScreenState extends State<HoxeFamiliasScreen> {
             // cinco días en nodos; el nodo de hoy abre la lección paso a paso.
             const SizedBox(height: 2),
             FutureBuilder<Leccions?>(
-              future: Leccions.cargar()
-                  .then<Leccions?>((l) => l, onError: (_) => null),
+              future: Leccions.cargar().then<Leccions?>(
+                (l) => l,
+                onError: (_) => null,
+              ),
               builder: (context, snap) {
                 final da = snap.data?.da(
-                    widget.cursoId, _toca.dia.mesCalendario, _toca.dia.semana);
+                  widget.cursoId,
+                  _toca.dia.mesCalendario,
+                  _toca.dia.semana,
+                );
                 if (da == null) return const SizedBox.shrink();
                 final (u, lec) = da;
-                final casa = CrianzaDaCasa.maybeOf(context);
                 final neno = casa?.store.activa;
                 final xogo = neno == null ? null : casa!.store.xogo(neno.id);
-                final agora = widget.agora ?? DateTime.now();
                 final semanaKey = CriancasStore.semana(
-                    widget.cursoId, _toca.dia.mesCalendario, _toca.dia.semana);
+                  widget.cursoId,
+                  _toca.dia.mesCalendario,
+                  _toca.dia.semana,
+                );
                 final actual = _toca.prevista
                     ? 0
                     : _toca.finDeSemana
@@ -406,42 +649,51 @@ class _HoxeFamiliasScreenState extends State<HoxeFamiliasScreen> {
                   ];
                   ScaffoldMessenger.of(context)
                     ..hideCurrentSnackBar()
-                    ..showSnackBar(SnackBar(
-                      key: const Key('learn_aviso_futuro'),
-                      content: Text(lang == AppLanguage.gl
-                          ? 'Este día ábrese ${dias[i].gl}'
-                          : 'Este día se abre ${dias[i].es}'),
-                    ));
+                    ..showSnackBar(
+                      SnackBar(
+                        key: const Key('learn_aviso_futuro'),
+                        content: Text(
+                          lang == AppLanguage.gl
+                              ? 'Este día ábrese ${dias[i].gl}'
+                              : 'Este día se abre ${dias[i].es}',
+                        ),
+                      ),
+                    );
                 }
 
-                void abrirLeccion(int i) => abrirLeccionDuolingo(context,
-                    leccion: lec,
-                    dia: i + 1,
-                    language: lang,
-                    semana: semanaKey,
-                    cursoId: widget.cursoId,
-                    mesCalendario: _toca.dia.mesCalendario,
-                    semanaN: _toca.dia.semana,
-                    audioService: widget.audioService,
-                    store: casa?.store,
-                    crianza: neno,
-                    agora: widget.agora);
+                void abrirLeccion(int i) => abrirLeccionDuolingo(
+                      context,
+                      leccion: lec,
+                      dia: i + 1,
+                      language: lang,
+                      semana: semanaKey,
+                      cursoId: widget.cursoId,
+                      mesCalendario: _toca.dia.mesCalendario,
+                      semanaN: _toca.dia.semana,
+                      audioService: widget.audioService,
+                      store: casa?.store,
+                      crianza: neno,
+                      agora: widget.agora,
+                    );
                 void abrir(int i) => i > actual ? avisar(i) : abrirLeccion(i);
                 return Column(
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
                     if (xogo != null)
                       CabeceraLearn(
-                        curso: Text(neno!.nome,
-                            overflow: TextOverflow.ellipsis,
-                            style: const TextStyle(
-                                fontSize: 15,
-                                fontWeight: FontWeight.w800,
-                                color: AppTheme.textPrimary)),
+                        curso: Text(
+                          neno!.nome,
+                          overflow: TextOverflow.ellipsis,
+                          style: const TextStyle(
+                            fontSize: 15,
+                            fontWeight: FontWeight.w800,
+                            color: AppTheme.textPrimary,
+                          ),
+                        ),
                         xp: xogo.xp,
                         racha: xogo.rachaViva(agora),
                       ),
-                    const SizedBox(height: 10),
+                    const SizedBox(height: 6),
                     BannerUnidade(
                       titulo: u.titulo.resolve(lang),
                       descricion: u.steam?.resolve(lang) ?? '',
@@ -465,11 +717,13 @@ class _HoxeFamiliasScreenState extends State<HoxeFamiliasScreen> {
                               builder: (context, cat) {
                                 final ini = cat.data?.deInicio ?? const {};
                                 return LuaValeria(
-                                    key: const Key('hoxe_lua'),
-                                    ancho: 112,
-                                    cabeza: xogo.cabeza ?? ini['head'],
-                                    pescozo: xogo.pescozo ?? ini['neck']);
-                              }),
+                                  key: const Key('hoxe_lua'),
+                                  ancho: 112,
+                                  cabeza: xogo.cabeza ?? ini['head'],
+                                  pescozo: xogo.pescozo ?? ini['neck'],
+                                );
+                              },
+                            ),
                     ),
                     const SizedBox(height: 16),
                   ],
@@ -491,8 +745,10 @@ class _HoxeFamiliasScreenState extends State<HoxeFamiliasScreen> {
               if (casa.store.activa case final neno?) ...[
                 const SizedBox(height: 16),
                 FutureBuilder<Leccions?>(
-                  future: Leccions.cargar()
-                      .then<Leccions?>((l) => l, onError: (_) => null),
+                  future: Leccions.cargar().then<Leccions?>(
+                    (l) => l,
+                    onError: (_) => null,
+                  ),
                   builder: (context, snap) => TarxetaLua(
                     key: ValueKey('tarxeta_lua_${neno.id}'),
                     store: casa.store,
@@ -500,7 +756,10 @@ class _HoxeFamiliasScreenState extends State<HoxeFamiliasScreen> {
                     language: lang,
                     agora: widget.agora,
                     semana: CriancasStore.semana(
-                        neno.curso, _toca.dia.mesCalendario, _toca.dia.semana),
+                      neno.curso,
+                      _toca.dia.mesCalendario,
+                      _toca.dia.semana,
+                    ),
                     palabrasDaSemana: neno.curso == 'curso_0_2'
                         ? [
                             for (final w in Proxectos02.lidos
@@ -511,8 +770,11 @@ class _HoxeFamiliasScreenState extends State<HoxeFamiliasScreen> {
                           ]
                         : [
                             for (final p in snap.data
-                                    ?.da(neno.curso, _toca.dia.mesCalendario,
-                                        _toca.dia.semana)
+                                    ?.da(
+                                      neno.curso,
+                                      _toca.dia.mesCalendario,
+                                      _toca.dia.semana,
+                                    )
                                     ?.$2
                                     .novas ??
                                 const <PezaDaLeccion>[])
@@ -549,7 +811,9 @@ class _HoxeFamiliasScreenState extends State<HoxeFamiliasScreen> {
                       ? 'Para cando queirades máis. Non fai falta.'
                       : 'Para cuando queráis más. No hace falta.',
                   style: const TextStyle(
-                      fontSize: 14, color: AppTheme.textSecondary),
+                    fontSize: 14,
+                    color: AppTheme.textSecondary,
+                  ),
                 ),
                 childrenPadding: const EdgeInsets.fromLTRB(12, 0, 12, 12),
                 expandedCrossAxisAlignment: CrossAxisAlignment.stretch,
@@ -565,15 +829,17 @@ class _HoxeFamiliasScreenState extends State<HoxeFamiliasScreen> {
                     ),
                     child: InkWell(
                       borderRadius: BorderRadius.circular(14),
-                      onTap: () => Navigator.of(context).push(RutaLua(
-                        de: context,
-                        builder: (_) => CodigoDaEscolaScreen(
-                          repository: widget.repository,
-                          language: lang,
-                          onLanguageChanged: widget.onLanguageChanged,
-                          audioService: widget.audioService,
+                      onTap: () => Navigator.of(context).push(
+                        RutaLua(
+                          de: context,
+                          builder: (_) => CodigoDaEscolaScreen(
+                            repository: widget.repository,
+                            language: lang,
+                            onLanguageChanged: widget.onLanguageChanged,
+                            audioService: widget.audioService,
+                          ),
                         ),
-                      )),
+                      ),
                       child: Padding(
                         padding: const EdgeInsets.all(14),
                         child: Row(
@@ -592,8 +858,10 @@ class _HoxeFamiliasScreenState extends State<HoxeFamiliasScreen> {
                                 ),
                               ),
                             ),
-                            Icon(Icons.chevron_right_rounded,
-                                color: context.acento),
+                            Icon(
+                              Icons.chevron_right_rounded,
+                              color: context.acento,
+                            ),
                           ],
                         ),
                       ),
@@ -654,7 +922,9 @@ class _HoxeFamiliasScreenState extends State<HoxeFamiliasScreen> {
                         plan: plan,
                         modeloDoDia: curso.modelo.dia(_toca.dia.dia),
                         nucleo: switch (widget.repository.unidadeDoMesSync(
-                            widget.cursoId, _toca.dia.mesCalendario)) {
+                          widget.cursoId,
+                          _toca.dia.mesCalendario,
+                        )) {
                           final u? => widget.repository.nucleoSync(u),
                           null => const <PezaDaUnidade>[],
                         },
@@ -674,7 +944,9 @@ class _HoxeFamiliasScreenState extends State<HoxeFamiliasScreen> {
                     ],
                     if (widget.repository
                             .unidadeDoMesSync(
-                                widget.cursoId, _toca.dia.mesCalendario)
+                              widget.cursoId,
+                              _toca.dia.mesCalendario,
+                            )
                             ?.hogar
                         case final hogar?) ...[
                       RetoDaSemana(
@@ -868,8 +1140,11 @@ class _TarxetaXogo extends StatelessWidget {
             Row(
               key: const Key('hoxe_feito'),
               children: [
-                const Icon(Icons.check_circle_rounded,
-                    color: AppTheme.successInk, size: 26),
+                const Icon(
+                  Icons.check_circle_rounded,
+                  color: AppTheme.successInk,
+                  size: 26,
+                ),
                 const SizedBox(width: 8),
                 Expanded(
                   child: Text(
@@ -918,8 +1193,10 @@ class _TarxetaPalabras extends StatelessWidget {
   final DailyTprPlan plan;
   final List<PezaDaUnidade> nucleo;
 
-  static const _tituloPalabras =
-      LocalizedString(gl: 'PALABRAS DE HOXE', es: 'PALABRAS DE HOY');
+  static const _tituloPalabras = LocalizedString(
+    gl: 'PALABRAS DE HOXE',
+    es: 'PALABRAS DE HOY',
+  );
   final DiaDoModeloTpr? modeloDoDia;
   final AppLanguage language;
   final OfflineAudioService? audioService;
@@ -1038,8 +1315,11 @@ class _FilaPonteAoDia extends StatelessWidget {
                   color: context.acentoTint,
                   borderRadius: BorderRadius.circular(14),
                 ),
-                child:
-                    Icon(Icons.update_rounded, color: context.acento, size: 26),
+                child: Icon(
+                  Icons.update_rounded,
+                  color: context.acento,
+                  size: 26,
+                ),
               ),
               const SizedBox(width: 14),
               Expanded(
@@ -1071,8 +1351,10 @@ class _FilaPonteAoDia extends StatelessWidget {
                   ],
                 ),
               ),
-              const Icon(Icons.chevron_right_rounded,
-                  color: AppTheme.textSecondary),
+              const Icon(
+                Icons.chevron_right_rounded,
+                color: AppTheme.textSecondary,
+              ),
             ],
           ),
         ),
@@ -1114,8 +1396,11 @@ class _FilaConto extends StatelessWidget {
                   color: context.acentoTint,
                   borderRadius: BorderRadius.circular(14),
                 ),
-                child: Icon(Icons.auto_stories_rounded,
-                    color: context.acento, size: 26),
+                child: Icon(
+                  Icons.auto_stories_rounded,
+                  color: context.acento,
+                  size: 26,
+                ),
               ),
               const SizedBox(width: 14),
               Expanded(
@@ -1158,8 +1443,10 @@ class _FilaConto extends StatelessWidget {
                   ],
                 ),
               ),
-              const Icon(Icons.chevron_right_rounded,
-                  color: AppTheme.textSecondary),
+              const Icon(
+                Icons.chevron_right_rounded,
+                color: AppTheme.textSecondary,
+              ),
             ],
           ),
         ),

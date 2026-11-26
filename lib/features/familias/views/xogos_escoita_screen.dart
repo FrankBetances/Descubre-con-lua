@@ -31,8 +31,10 @@ class XogosEscoitaScreen extends StatefulWidget {
     this.audioService,
   });
 
-  static const titulo =
-      LocalizedString(gl: 'Xogos de escoita', es: 'Juegos de escucha');
+  static const titulo = LocalizedString(
+    gl: 'Xogos de escoita',
+    es: 'Juegos de escucha',
+  );
 
   @override
   State<XogosEscoitaScreen> createState() => _XogosEscoitaScreenState();
@@ -86,7 +88,7 @@ class _XogosEscoitaScreenState extends State<XogosEscoitaScreen> {
                 isGl
                     ? 'O que é, unha parte, o que fai e como é'
                     : 'Qué es, una parte, qué hace y cómo es',
-                b.progresions
+                b.progresions,
               ),
               (
                 'escoita_capsulas',
@@ -95,7 +97,7 @@ class _XogosEscoitaScreenState extends State<XogosEscoitaScreen> {
                 isGl
                     ? 'Grande e pequeno, cheo e baleiro…'
                     : 'Grande y pequeño, lleno y vacío…',
-                b.capsulas
+                b.capsulas,
               ),
               (
                 'escoita_escenarios',
@@ -104,7 +106,7 @@ class _XogosEscoitaScreenState extends State<XogosEscoitaScreen> {
                 isGl
                     ? 'As palabras da mañá, o baño e a cama'
                     : 'Las palabras de la mañana, el baño y la cama',
-                b.escenarios
+                b.escenarios,
               ),
               (
                 'escoita_categorias',
@@ -113,7 +115,7 @@ class _XogosEscoitaScreenState extends State<XogosEscoitaScreen> {
                 isGl
                     ? 'Froitas, animais, cores, o corpo…'
                     : 'Frutas, animales, colores, el cuerpo…',
-                b.categorias
+                b.categorias,
               ),
             ])
               _Seccion(
@@ -123,10 +125,11 @@ class _XogosEscoitaScreenState extends State<XogosEscoitaScreen> {
                 di: di,
                 n: grupos.length,
                 abrir: (_) => _GruposScreen(
-                    titulo: nome,
-                    grupos: grupos,
-                    lang: lang,
-                    audio: audioService),
+                  titulo: nome,
+                  grupos: grupos,
+                  lang: lang,
+                  audio: audioService,
+                ),
               ),
           ];
           return ListView(
@@ -138,7 +141,10 @@ class _XogosEscoitaScreenState extends State<XogosEscoitaScreen> {
                     ? 'Para xogar xuntos: a app di a palabra, o neno ou a nena sinala o debuxo e ti tocas o que sinalou.'
                     : 'Para jugar juntos: la app dice la palabra, el niño o la niña señala el dibujo y tú tocas el que señaló.',
                 style: const TextStyle(
-                    fontSize: 16, height: 1.35, color: AppTheme.textSecondary),
+                  fontSize: 16,
+                  height: 1.35,
+                  color: AppTheme.textSecondary,
+                ),
               ),
               const SizedBox(height: 14),
               for (var i = 0; i < seccions.length; i++)
@@ -148,8 +154,9 @@ class _XogosEscoitaScreenState extends State<XogosEscoitaScreen> {
                     padding: const EdgeInsets.only(bottom: 12),
                     child: _TarxetaSeccion(
                       s: seccions[i],
-                      onTap: () => Navigator.of(context).push(
-                          RutaLua(de: context, builder: seccions[i].abrir)),
+                      onTap: () => Navigator.of(
+                        context,
+                      ).push(RutaLua(de: context, builder: seccions[i].abrir)),
                     ),
                   ),
                 ),
@@ -204,7 +211,9 @@ class _TarxetaSeccion extends StatelessWidget {
               // El canto de abajo de Valeria: el botón en relieve.
               boxShadow: [
                 BoxShadow(
-                    color: acento.withAlpha(110), offset: const Offset(0, 4)),
+                  color: acento.withAlpha(110),
+                  offset: const Offset(0, 4),
+                ),
               ],
             ),
             child: Row(
@@ -223,24 +232,34 @@ class _TarxetaSeccion extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(s.nome,
-                          style: const TextStyle(
-                              fontSize: 19,
-                              fontWeight: FontWeight.w900,
-                              color: AppTheme.textPrimary)),
+                      Text(
+                        s.nome,
+                        style: const TextStyle(
+                          fontSize: 19,
+                          fontWeight: FontWeight.w900,
+                          color: AppTheme.textPrimary,
+                        ),
+                      ),
                       const SizedBox(height: 2),
-                      Text(s.di,
-                          style: const TextStyle(
-                              fontSize: 15, color: AppTheme.textSecondary)),
+                      Text(
+                        s.di,
+                        style: const TextStyle(
+                          fontSize: 15,
+                          color: AppTheme.textSecondary,
+                        ),
+                      ),
                     ],
                   ),
                 ),
                 const SizedBox(width: 8),
-                Text('${s.n}',
-                    style: TextStyle(
-                        fontSize: 18,
-                        fontWeight: FontWeight.w900,
-                        color: acento)),
+                Text(
+                  '${s.n}',
+                  style: TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.w900,
+                    color: acento,
+                  ),
+                ),
                 Icon(Icons.chevron_right_rounded, color: acento),
               ],
             ),
@@ -262,7 +281,11 @@ class _Debuxo extends StatelessWidget {
   Widget build(BuildContext context) {
     if (p.lamina case final c?) {
       return LaminaPalabra(
-          clave: c, significado: p.palabra, lang: lang, ancho: ancho);
+        clave: c,
+        significado: p.palabra,
+        lang: lang,
+        ancho: ancho,
+      );
     }
     return Semantics(
       image: true,
@@ -275,19 +298,25 @@ class _Debuxo extends StatelessWidget {
           color: context.acentoTint,
           borderRadius: BorderRadius.circular(16),
         ),
-        child: Text(p.palabra,
-            textAlign: TextAlign.center,
-            style: TextStyle(
-                fontSize: 22,
-                fontWeight: FontWeight.w900,
-                color: context.acento)),
+        child: Text(
+          p.palabra,
+          textAlign: TextAlign.center,
+          style: TextStyle(
+            fontSize: 22,
+            fontWeight: FontWeight.w900,
+            color: context.acento,
+          ),
+        ),
       ),
     );
   }
 }
 
 Future<void> _soar(
-    OfflineAudioService? a, String texto, AppLanguage lang) async {
+  OfflineAudioService? a,
+  String texto,
+  AppLanguage lang,
+) async {
   if (a == null || texto.isEmpty) return;
   try {
     await a.playAsset(voiceAssetPath(VoiceStyle.tutor, texto, lang));
@@ -300,16 +329,20 @@ class _ParesScreen extends StatelessWidget {
   final BancoEscoita banco;
   final AppLanguage lang;
   final OfflineAudioService? audio;
-  const _ParesScreen(
-      {required this.banco, required this.lang, required this.audio});
+  const _ParesScreen({
+    required this.banco,
+    required this.lang,
+    required this.audio,
+  });
 
   @override
   Widget build(BuildContext context) {
     final isGl = lang == AppLanguage.gl;
     return Scaffold(
       backgroundColor: AppTheme.pageBg,
-      appBar:
-          AppBar(title: Text(isGl ? 'Escoita e sinala' : 'Escucha y señala')),
+      appBar: AppBar(
+        title: Text(isGl ? 'Escoita e sinala' : 'Escucha y señala'),
+      ),
       body: ListView(
         key: const Key('escoita_pares_lista'),
         padding: const EdgeInsets.all(16),
@@ -321,18 +354,32 @@ class _ParesScreen extends StatelessWidget {
                 margin: const EdgeInsets.only(bottom: 10),
                 child: ListTile(
                   key: Key('escoita_par_${banco.pares[i].id}'),
-                  contentPadding:
-                      const EdgeInsets.symmetric(horizontal: 16, vertical: 6),
+                  contentPadding: const EdgeInsets.symmetric(
+                    horizontal: 16,
+                    vertical: 6,
+                  ),
                   title: Text(
-                      '${banco.pares[i].a.palabra} · ${banco.pares[i].b.palabra}',
-                      style: const TextStyle(
-                          fontSize: 19, fontWeight: FontWeight.w900)),
-                  trailing: Icon(Icons.play_circle_fill_rounded,
-                      color: context.acento, size: 34),
-                  onTap: () => Navigator.of(context).push(RutaLua(
+                    '${banco.pares[i].a.palabra} · ${banco.pares[i].b.palabra}',
+                    style: const TextStyle(
+                      fontSize: 19,
+                      fontWeight: FontWeight.w900,
+                    ),
+                  ),
+                  trailing: Icon(
+                    Icons.play_circle_fill_rounded,
+                    color: context.acento,
+                    size: 34,
+                  ),
+                  onTap: () => Navigator.of(context).push(
+                    RutaLua(
                       de: context,
                       builder: (_) => XogoPar(
-                          par: banco.pares[i], lang: lang, audio: audio))),
+                        par: banco.pares[i],
+                        lang: lang,
+                        audio: audio,
+                      ),
+                    ),
+                  ),
                 ),
               ),
             ),
@@ -350,12 +397,13 @@ class XogoPar extends StatefulWidget {
   final AppLanguage lang;
   final OfflineAudioService? audio;
   final math.Random? azar;
-  const XogoPar(
-      {super.key,
-      required this.par,
-      required this.lang,
-      required this.audio,
-      this.azar});
+  const XogoPar({
+    super.key,
+    required this.par,
+    required this.lang,
+    required this.audio,
+    this.azar,
+  });
 
   @override
   State<XogoPar> createState() => _XogoParState();
@@ -407,11 +455,17 @@ class _XogoParState extends State<XogoPar> {
                 ),
                 child: Column(
                   children: [
-                    FittedBox(child: _Debuxo(p: p, lang: widget.lang)),
+                    FittedBox(
+                      child: _Debuxo(p: p, lang: widget.lang),
+                    ),
                     const SizedBox(height: 6),
-                    Text(p.palabra,
-                        style: const TextStyle(
-                            fontSize: 20, fontWeight: FontWeight.w900)),
+                    Text(
+                      p.palabra,
+                      style: const TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.w900,
+                      ),
+                    ),
                   ],
                 ),
               ),
@@ -432,11 +486,13 @@ class _XogoParState extends State<XogoPar> {
             style: const TextStyle(fontSize: 16, height: 1.35),
           ),
           const SizedBox(height: 16),
-          Row(children: [
-            opcion(par.a, 'escoita_a'),
-            const SizedBox(width: 12),
-            opcion(par.b, 'escoita_b'),
-          ]),
+          Row(
+            children: [
+              opcion(par.a, 'escoita_a'),
+              const SizedBox(width: 12),
+              opcion(par.b, 'escoita_b'),
+            ],
+          ),
           const SizedBox(height: 16),
           Center(
             child: Latido(
@@ -446,13 +502,17 @@ class _XogoParState extends State<XogoPar> {
                   backgroundColor: acento,
                   minimumSize: const Size(220, 56),
                   textStyle: const TextStyle(
-                      fontSize: 20, fontWeight: FontWeight.w900),
+                    fontSize: 20,
+                    fontWeight: FontWeight.w900,
+                  ),
                 ),
                 onPressed: _escoitar,
                 icon: const Icon(Icons.volume_up_rounded),
-                label: Text(_dita == null
-                    ? (isGl ? 'Escoitar' : 'Escuchar')
-                    : (isGl ? 'Outra palabra' : 'Otra palabra')),
+                label: Text(
+                  _dita == null
+                      ? (isGl ? 'Escoitar' : 'Escuchar')
+                      : (isGl ? 'Outra palabra' : 'Otra palabra'),
+                ),
               ),
             ),
           ),
@@ -481,16 +541,22 @@ class _XogoParState extends State<XogoPar> {
                               ? 'Era «${_dita!.palabra}». Escoitade outra vez.'
                               : 'Era «${_dita!.palabra}». Escuchad otra vez.'),
                       style: const TextStyle(
-                          fontSize: 18, fontWeight: FontWeight.w900),
+                        fontSize: 18,
+                        fontWeight: FontWeight.w900,
+                      ),
                     ),
                     const SizedBox(height: 8),
                     if (!_acerto!) ...[
-                      Text(par.pista,
-                          style: const TextStyle(fontSize: 16, height: 1.35)),
+                      Text(
+                        par.pista,
+                        style: const TextStyle(fontSize: 16, height: 1.35),
+                      ),
                       const SizedBox(height: 6),
                     ],
-                    Text(_acerto! ? par.misionAcerto : par.misionFallo,
-                        style: const TextStyle(fontSize: 16, height: 1.35)),
+                    Text(
+                      _acerto! ? par.misionAcerto : par.misionFallo,
+                      style: const TextStyle(fontSize: 16, height: 1.35),
+                    ),
                   ],
                 ),
               ),
@@ -507,11 +573,12 @@ class _GruposScreen extends StatelessWidget {
   final List<GrupoEscoita> grupos;
   final AppLanguage lang;
   final OfflineAudioService? audio;
-  const _GruposScreen(
-      {required this.titulo,
-      required this.grupos,
-      required this.lang,
-      required this.audio});
+  const _GruposScreen({
+    required this.titulo,
+    required this.grupos,
+    required this.lang,
+    required this.audio,
+  });
 
   @override
   Widget build(BuildContext context) => Scaffold(
@@ -531,14 +598,22 @@ class _GruposScreen extends StatelessWidget {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(grupos[i].titulo,
-                            style: const TextStyle(
-                                fontSize: 19, fontWeight: FontWeight.w900)),
+                        Text(
+                          grupos[i].titulo,
+                          style: const TextStyle(
+                            fontSize: 19,
+                            fontWeight: FontWeight.w900,
+                          ),
+                        ),
                         if (grupos[i].subtitulo.isNotEmpty) ...[
                           const SizedBox(height: 4),
-                          Text(grupos[i].subtitulo,
-                              style: const TextStyle(
-                                  fontSize: 15, color: AppTheme.textSecondary)),
+                          Text(
+                            grupos[i].subtitulo,
+                            style: const TextStyle(
+                              fontSize: 15,
+                              color: AppTheme.textSecondary,
+                            ),
+                          ),
                         ],
                         const SizedBox(height: 10),
                         for (final p in grupos[i].pezas)
@@ -571,28 +646,38 @@ class _FilaPeza extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Row(children: [
-                    Flexible(
-                      child: Text(p.palabra,
+                  Row(
+                    children: [
+                      Flexible(
+                        child: Text(
+                          p.palabra,
                           style: const TextStyle(
-                              fontSize: 19, fontWeight: FontWeight.w900)),
-                    ),
-                    IconButton(
-                      tooltip: lang == AppLanguage.gl ? 'Escoitar' : 'Escuchar',
-                      icon:
-                          Icon(Icons.volume_up_rounded, color: context.acento),
-                      onPressed: () => _soar(audio, p.palabra, lang),
-                    ),
-                  ]),
+                            fontSize: 19,
+                            fontWeight: FontWeight.w900,
+                          ),
+                        ),
+                      ),
+                      IconButton(
+                        tooltip:
+                            lang == AppLanguage.gl ? 'Escoitar' : 'Escuchar',
+                        icon: Icon(Icons.volume_up_rounded,
+                            color: context.acento),
+                        onPressed: () => _soar(audio, p.palabra, lang),
+                      ),
+                    ],
+                  ),
                   if (p.frase.isNotEmpty)
                     Text(p.frase, style: const TextStyle(fontSize: 16)),
                   if (p.accion.isNotEmpty) ...[
                     const SizedBox(height: 4),
-                    Text(p.accion,
-                        style: const TextStyle(
-                            fontSize: 15,
-                            height: 1.3,
-                            color: AppTheme.textSecondary)),
+                    Text(
+                      p.accion,
+                      style: const TextStyle(
+                        fontSize: 15,
+                        height: 1.3,
+                        color: AppTheme.textSecondary,
+                      ),
+                    ),
                   ],
                 ],
               ),

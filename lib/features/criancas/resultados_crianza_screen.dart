@@ -45,8 +45,10 @@ class ResultadosCrianzaScreen extends StatefulWidget {
 }
 
 class _ResultadosCrianzaScreenState extends State<ResultadosCrianzaScreen> {
-  late final Future<Leccions?> _leccions =
-      Leccions.cargar().then<Leccions?>((l) => l, onError: (_) => null);
+  late final Future<Leccions?> _leccions = Leccions.cargar().then<Leccions?>(
+    (l) => l,
+    onError: (_) => null,
+  );
   late AppLanguage _lang = widget.language;
 
   @override
@@ -100,12 +102,19 @@ class _ResultadosCrianzaScreenState extends State<ResultadosCrianzaScreen> {
   }
 
   Widget _corpo(
-      BuildContext context, Crianza c, Leccions? l, AppLanguage lang) {
+    BuildContext context,
+    Crianza c,
+    Leccions? l,
+    AppLanguage lang,
+  ) {
     final isGl = lang == AppLanguage.gl;
     final store = widget.store;
     final toca = DiaQueToca.para(agora: widget.agora);
-    final semanaKey =
-        CriancasStore.semana(c.curso, toca.dia.mesCalendario, toca.dia.semana);
+    final semanaKey = CriancasStore.semana(
+      c.curso,
+      toca.dia.mesCalendario,
+      toca.dia.semana,
+    );
     final lec = l?.da(c.curso, toca.dia.mesCalendario, toca.dia.semana)?.$2;
     // O-20261109-4: en 0-2, las cinco palabras de la semana del proyecto.
     final proxecto = c.curso == 'curso_0_2'
@@ -115,7 +124,10 @@ class _ResultadosCrianzaScreenState extends State<ResultadosCrianzaScreen> {
         ? [
             for (final w in proxecto.daSemana(toca.dia.semana))
               PezaDaLeccion(
-                  tipo: 'palabra', en: w.en, significado: w.significado),
+                tipo: 'palabra',
+                en: w.en,
+                significado: w.significado,
+              ),
           ]
         : [
             for (final p in lec?.novas ?? const <PezaDaLeccion>[])
@@ -148,18 +160,28 @@ class _ResultadosCrianzaScreenState extends State<ResultadosCrianzaScreen> {
             border: Border.all(color: AppTheme.border),
           ),
           child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start, children: children),
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: children,
+          ),
         );
 
-    Text titulo(String t) => Text(t,
-        style: const TextStyle(
+    Text titulo(String t) => Text(
+          t,
+          style: const TextStyle(
             fontSize: 17,
             fontWeight: FontWeight.w800,
-            color: AppTheme.textPrimary));
+            color: AppTheme.textPrimary,
+          ),
+        );
 
-    Text nota(String t) => Text(t,
-        style: const TextStyle(
-            fontSize: 14, height: 1.35, color: AppTheme.textSecondary));
+    Text nota(String t) => Text(
+          t,
+          style: const TextStyle(
+            fontSize: 14,
+            height: 1.35,
+            color: AppTheme.textSecondary,
+          ),
+        );
 
     return ListView(
       key: const Key('resultados_crianza'),
@@ -175,13 +197,16 @@ class _ResultadosCrianzaScreenState extends State<ResultadosCrianzaScreen> {
           palabrasDaSemana: [for (final p in palabras) p.en],
         ),
         const SizedBox(height: 12),
-        Text(mensaxe,
-            key: const Key('resultados_mensaxe'),
-            style: const TextStyle(
-                fontSize: 15.5,
-                height: 1.35,
-                fontWeight: FontWeight.w600,
-                color: AppTheme.textPrimary)),
+        Text(
+          mensaxe,
+          key: const Key('resultados_mensaxe'),
+          style: const TextStyle(
+            fontSize: 15.5,
+            height: 1.35,
+            fontWeight: FontWeight.w600,
+            color: AppTheme.textPrimary,
+          ),
+        ),
         const SizedBox(height: 14),
         // Las cuentas grandes.
         Row(
@@ -206,18 +231,24 @@ class _ResultadosCrianzaScreenState extends State<ResultadosCrianzaScreen> {
         tarxeta(
           key: const Key('resultados_observar'),
           children: [
-            titulo(isGl
-                ? 'Esta semana, que viches?'
-                : 'Esta semana, ¿qué has visto?'),
+            titulo(
+              isGl
+                  ? 'Esta semana, que viches?'
+                  : 'Esta semana, ¿qué has visto?',
+            ),
             const SizedBox(height: 4),
-            nota(isGl
-                ? 'Marca cada palabra nova cando a entenda (fai o xesto, mira, colle) ou cando a diga. É a túa observación, non un exame.'
-                : 'Marca cada palabra nueva cuando la entienda (hace el gesto, mira, coge) o cuando la diga. Es tu observación, no un examen.'),
+            nota(
+              isGl
+                  ? 'Marca cada palabra nova cando a entenda (fai o xesto, mira, colle) ou cando a diga. É a túa observación, non un exame.'
+                  : 'Marca cada palabra nueva cuando la entienda (hace el gesto, mira, coge) o cuando la diga. Es tu observación, no un examen.',
+            ),
             const SizedBox(height: 10),
             if (palabras.isEmpty)
-              nota(isGl
-                  ? 'Esta semana non hai palabras novas: é de repaso.'
-                  : 'Esta semana no hay palabras nuevas: es de repaso.')
+              nota(
+                isGl
+                    ? 'Esta semana non hai palabras novas: é de repaso.'
+                    : 'Esta semana no hay palabras nuevas: es de repaso.',
+              )
             else
               for (final p in palabras)
                 _FilaObservacion(
@@ -237,9 +268,11 @@ class _ResultadosCrianzaScreenState extends State<ResultadosCrianzaScreen> {
             titulo(isGl ? 'Semana a semana' : 'Semana a semana'),
             const SizedBox(height: 8),
             if (evolucion.isEmpty)
-              nota(isGl
-                  ? 'Aínda non marcaches ningunha palabra. Cando o fagas, aquí verás como medra semana a semana.'
-                  : 'Todavía no has marcado ninguna palabra. Cuando lo hagas, aquí verás cómo crece semana a semana.')
+              nota(
+                isGl
+                    ? 'Aínda non marcaches ningunha palabra. Cando o fagas, aquí verás como medra semana a semana.'
+                    : 'Todavía no has marcado ninguna palabra. Cuando lo hagas, aquí verás cómo crece semana a semana.',
+              )
             else ...[
               _Lenda(lang: lang),
               const SizedBox(height: 8),
@@ -260,11 +293,14 @@ class _ResultadosCrianzaScreenState extends State<ResultadosCrianzaScreen> {
           key: const Key('resultados_adulto'),
           children: [
             titulo(
-                isGl ? 'O que fixestes xuntos' : 'Lo que habéis hecho juntos'),
+              isGl ? 'O que fixestes xuntos' : 'Lo que habéis hecho juntos',
+            ),
             const SizedBox(height: 6),
-            nota(isGl
-                ? 'Días de xogo en casa marcados no calendario: ${contadores?.diasFogar ?? 0}. Días seguidos agora: $racha.'
-                : 'Días de juego en casa marcados en el calendario: ${contadores?.diasFogar ?? 0}. Días seguidos ahora: $racha.'),
+            nota(
+              isGl
+                  ? 'Días de xogo en casa marcados no calendario: ${contadores?.diasFogar ?? 0}. Días seguidos agora: $racha.'
+                  : 'Días de juego en casa marcados en el calendario: ${contadores?.diasFogar ?? 0}. Días seguidos ahora: $racha.',
+            ),
             if (contadores != null && medallas.isNotEmpty) ...[
               const SizedBox(height: 12),
               MedallasCalendario(
@@ -276,9 +312,11 @@ class _ResultadosCrianzaScreenState extends State<ResultadosCrianzaScreen> {
             ],
           ],
         ),
-        nota(isGl
-            ? 'Todo isto gárdase só neste móbil e non é unha avaliación: cada neno leva o seu ritmo.'
-            : 'Todo esto se guarda solo en este móvil y no es una evaluación: cada niño lleva su ritmo.'),
+        nota(
+          isGl
+              ? 'Todo isto gárdase só neste móbil e non é unha avaliación: cada neno leva o seu ritmo.'
+              : 'Todo esto se guarda solo en este móvil y no es una evaluación: cada niño lleva su ritmo.',
+        ),
       ],
     );
   }
@@ -299,7 +337,7 @@ class _ResultadosCrianzaScreenState extends State<ResultadosCrianzaScreen> {
       'set',
       'out',
       'nov',
-      'dec'
+      'dec',
     ];
     const es = [
       'ene',
@@ -313,7 +351,7 @@ class _ResultadosCrianzaScreenState extends State<ResultadosCrianzaScreen> {
       'sep',
       'oct',
       'nov',
-      'dic'
+      'dic',
     ];
     final nome = (lang == AppLanguage.gl ? gl : es)[(mes - 1).clamp(0, 11)];
     return '$nome · s${p[2]}';
@@ -381,16 +419,22 @@ class _Cifra extends StatelessWidget {
             children: [
               Icon(icono, color: context.acento, size: 22),
               const SizedBox(height: 4),
-              Text('$numero',
-                  style: TextStyle(
-                      fontSize: 28,
-                      fontWeight: FontWeight.w900,
-                      color: context.acento)),
-              Text(texto,
-                  style: const TextStyle(
-                      fontSize: 13.5,
-                      height: 1.25,
-                      color: AppTheme.textSecondary)),
+              Text(
+                '$numero',
+                style: TextStyle(
+                  fontSize: 28,
+                  fontWeight: FontWeight.w900,
+                  color: context.acento,
+                ),
+              ),
+              Text(
+                texto,
+                style: const TextStyle(
+                  fontSize: 13.5,
+                  height: 1.25,
+                  color: AppTheme.textSecondary,
+                ),
+              ),
             ],
           ),
         ),
@@ -438,19 +482,28 @@ class _FilaObservacion extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text.rich(TextSpan(children: [
+          Text.rich(
             TextSpan(
-                text: palabra,
-                style: const TextStyle(
+              children: [
+                TextSpan(
+                  text: palabra,
+                  style: const TextStyle(
                     fontSize: 16,
                     fontWeight: FontWeight.w800,
-                    color: AppTheme.textPrimary)),
-            if (significado != null && significado!.isNotEmpty)
-              TextSpan(
-                  text: '  ·  $significado',
-                  style: const TextStyle(
-                      fontSize: 14, color: AppTheme.textSecondary)),
-          ])),
+                    color: AppTheme.textPrimary,
+                  ),
+                ),
+                if (significado != null && significado!.isNotEmpty)
+                  TextSpan(
+                    text: '  ·  $significado',
+                    style: const TextStyle(
+                      fontSize: 14,
+                      color: AppTheme.textSecondary,
+                    ),
+                  ),
+              ],
+            ),
+          ),
           const SizedBox(height: 6),
           Wrap(
             spacing: 6,
@@ -478,20 +531,28 @@ class _Lenda extends StatelessWidget {
           mainAxisSize: MainAxisSize.min,
           children: [
             Container(
-                width: 12,
-                height: 12,
-                decoration: BoxDecoration(
-                    color: cor, borderRadius: BorderRadius.circular(3))),
+              width: 12,
+              height: 12,
+              decoration: BoxDecoration(
+                color: cor,
+                borderRadius: BorderRadius.circular(3),
+              ),
+            ),
             const SizedBox(width: 6),
-            Text(t,
-                style: const TextStyle(
-                    fontSize: 13.5, color: AppTheme.textSecondary)),
+            Text(
+              t,
+              style: const TextStyle(
+                  fontSize: 13.5, color: AppTheme.textSecondary),
+            ),
           ],
         );
-    return Wrap(spacing: 16, children: [
-      item(context.acento.withAlpha(110), isGl ? 'Entende' : 'Entiende'),
-      item(context.acento, isGl ? 'Di' : 'Dice'),
-    ]);
+    return Wrap(
+      spacing: 16,
+      children: [
+        item(context.acento.withAlpha(110), isGl ? 'Entende' : 'Entiende'),
+        item(context.acento, isGl ? 'Di' : 'Dice'),
+      ],
+    );
   }
 }
 
@@ -517,32 +578,43 @@ class _BarraSemana extends StatelessWidget {
         children: [
           SizedBox(
             width: 64,
-            child: Text(etiqueta,
-                style: const TextStyle(
-                    fontSize: 13.5,
-                    fontWeight: FontWeight.w700,
-                    color: AppTheme.textSecondary)),
+            child: Text(
+              etiqueta,
+              style: const TextStyle(
+                fontSize: 13.5,
+                fontWeight: FontWeight.w700,
+                color: AppTheme.textSecondary,
+              ),
+            ),
           ),
           Expanded(
-            child: LayoutBuilder(builder: (context, box) {
-              final unidade = box.maxWidth / (maximo < 1 ? 1 : maximo);
-              return Row(children: [
-                Container(
-                    width: unidade * entende,
-                    height: 16,
-                    color: acento.withAlpha(110)),
-                Container(width: unidade * di, height: 16, color: acento),
-              ]);
-            }),
+            child: LayoutBuilder(
+              builder: (context, box) {
+                final unidade = box.maxWidth / (maximo < 1 ? 1 : maximo);
+                return Row(
+                  children: [
+                    Container(
+                      width: unidade * entende,
+                      height: 16,
+                      color: acento.withAlpha(110),
+                    ),
+                    Container(width: unidade * di, height: 16, color: acento),
+                  ],
+                );
+              },
+            ),
           ),
           SizedBox(
             width: 44,
-            child: Text('${entende + di}',
-                textAlign: TextAlign.right,
-                style: const TextStyle(
-                    fontSize: 14,
-                    fontWeight: FontWeight.w800,
-                    color: AppTheme.textPrimary)),
+            child: Text(
+              '${entende + di}',
+              textAlign: TextAlign.right,
+              style: const TextStyle(
+                fontSize: 14,
+                fontWeight: FontWeight.w800,
+                color: AppTheme.textPrimary,
+              ),
+            ),
           ),
         ],
       ),

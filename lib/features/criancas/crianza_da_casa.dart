@@ -16,11 +16,13 @@ class CrianzaDaCasa extends InheritedNotifier<CriancasStore> {
     required CriancasStore store,
     required this.onLanguageChanged,
     required this.abrirResultados,
+    this.agora,
     required super.child,
   }) : super(notifier: store);
 
   final ValueChanged<AppLanguage> onLanguageChanged;
   final void Function(BuildContext context) abrirResultados;
+  final DateTime? agora;
 
   CriancasStore get store => notifier!;
 
@@ -28,10 +30,10 @@ class CrianzaDaCasa extends InheritedNotifier<CriancasStore> {
       context.dependOnInheritedWidgetOfExactType<CrianzaDaCasa>();
 }
 
-/// La hoja del chip: el curso del niño, sus resultados y los demás niños.
+/// La hoja del chip: los resultados del niño, los demás niños y editar/borrar.
 ///
-/// [onCambiarCurso] es el mismo que el del chip, para que el curso cambie a
-/// la vez en Hoy, el calendario y Explorar.
+/// P11.1: la lista de cursos sale de esta hoja; el curso solo se cambia dentro
+/// de «Editar a …», con confirmación.
 Future<void> abrirFollaCrianza(
   BuildContext context, {
   required AppLanguage language,
@@ -66,8 +68,9 @@ Future<void> abrirFollaCrianza(
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(AppTheme.radiusField),
                 side: BorderSide(
-                    color: marcada ? acento : AppTheme.border,
-                    width: marcada ? 1.5 : 1),
+                  color: marcada ? acento : AppTheme.border,
+                  width: marcada ? 1.5 : 1,
+                ),
               ),
               child: InkWell(
                 key: key,
@@ -77,32 +80,40 @@ Future<void> abrirFollaCrianza(
                   constraints: const BoxConstraints(minHeight: 52),
                   child: Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 14),
-                    child: Row(children: [
-                      Icon(icono, size: 22, color: cor ?? acento),
-                      const SizedBox(width: 12),
-                      Expanded(
-                        child: Text(texto,
+                    child: Row(
+                      children: [
+                        Icon(icono, size: 22, color: cor ?? acento),
+                        const SizedBox(width: 12),
+                        Expanded(
+                          child: Text(
+                            texto,
                             style: TextStyle(
-                                fontSize: 16,
-                                fontWeight:
-                                    marcada ? FontWeight.w800 : FontWeight.w600,
-                                color: cor ??
-                                    (marcada ? acento : AppTheme.textPrimary))),
-                      ),
-                      if (marcada)
-                        Icon(Icons.check_rounded, color: acento, size: 22),
-                    ]),
+                              fontSize: 16,
+                              fontWeight:
+                                  marcada ? FontWeight.w800 : FontWeight.w600,
+                              color: cor ??
+                                  (marcada ? acento : AppTheme.textPrimary),
+                            ),
+                          ),
+                        ),
+                        if (marcada)
+                          Icon(Icons.check_rounded, color: acento, size: 22),
+                      ],
+                    ),
                   ),
                 ),
               ),
             ),
           );
 
-      Text seccion(String t) => Text(t,
-          style: const TextStyle(
+      Text seccion(String t) => Text(
+            t,
+            style: const TextStyle(
               fontSize: 14,
               fontWeight: FontWeight.w800,
-              color: AppTheme.textSecondary));
+              color: AppTheme.textSecondary,
+            ),
+          );
 
       return SafeArea(
         child: SingleChildScrollView(
@@ -112,40 +123,39 @@ Future<void> abrirFollaCrianza(
             mainAxisSize: MainAxisSize.min,
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              Text(activa.nome,
-                  style: const TextStyle(
-                      fontSize: 20,
-                      fontWeight: FontWeight.w800,
-                      color: AppTheme.textPrimary)),
+              Text(
+                '${activa.nome} · ${NomesFamilias.idade(activa.curso).resolve(language)}',
+                style: const TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.w800,
+                  color: AppTheme.textPrimary,
+                ),
+              ),
               const SizedBox(height: 4),
               Text(
                 isGl
-                    ? 'O xogo, as palabras e o conto son os do seu curso. Gárdase neste móbil.'
-                    : 'El juego, las palabras y el cuento son los de su curso. Se guarda en este móvil.',
+                    ? 'O xogo, as palabras e o conto son os do seu curso. Para cambiar de curso, entra en «Editar a ${activa.nome}».'
+                    : 'El juego, las palabras y el cuento son los de su curso. Para cambiar de curso, entra en «Editar a ${activa.nome}».',
                 style: const TextStyle(
-                    fontSize: 14, color: AppTheme.textSecondary, height: 1.35),
+                  fontSize: 14,
+                  color: AppTheme.textSecondary,
+                  height: 1.35,
+                ),
               ),
               const SizedBox(height: 12),
-              for (final (id, nome) in NomesFamilias.idades)
-                fila(
-                  key: ValueKey('idade_$id'),
-                  icono: Icons.school_rounded,
-                  texto: nome.resolve(language),
-                  marcada: id == activa.curso,
-                  onTap: () => Navigator.of(ctx).pop('curso:$id'),
-                ),
-              const SizedBox(height: 4),
               FilledButton.icon(
                 key: const Key('crianza_resultados'),
                 style: FilledButton.styleFrom(
-                    backgroundColor: acento,
-                    minimumSize: const Size.fromHeight(50)),
+                  backgroundColor: acento,
+                  minimumSize: const Size.fromHeight(50),
+                ),
                 icon: const Icon(Icons.insights_rounded),
                 label: Text(
-                    isGl
-                        ? 'Ver os resultados de ${activa.nome}'
-                        : 'Ver los resultados de ${activa.nome}',
-                    style: const TextStyle(fontWeight: FontWeight.w800)),
+                  isGl
+                      ? 'Ver os resultados de ${activa.nome}'
+                      : 'Ver los resultados de ${activa.nome}',
+                  style: const TextStyle(fontWeight: FontWeight.w800),
+                ),
                 onPressed: () => Navigator.of(ctx).pop('resultados'),
               ),
               const SizedBox(height: 16),
@@ -191,21 +201,21 @@ Future<void> abrirFollaCrianza(
   );
   if (accion == null || !context.mounted) return;
 
-  Future<void> rexistro({Crianza? crianza}) =>
-      Navigator.of(context).push(RutaLua(
-        de: context,
-        builder: (_) => RexistroCrianzaScreen(
-          store: store,
-          language: language,
-          onLanguageChanged: casa.onLanguageChanged,
-          crianza: crianza,
-          cursoInicial: crianza == null ? activa.curso : null,
+  Future<void> rexistro({Crianza? crianza}) => Navigator.of(context).push(
+        RutaLua(
+          de: context,
+          builder: (_) => RexistroCrianzaScreen(
+            store: store,
+            language: language,
+            onLanguageChanged: casa.onLanguageChanged,
+            crianza: crianza,
+            cursoInicial: crianza == null ? activa.curso : null,
+            agora: casa.agora,
+          ),
         ),
-      ));
+      );
 
   switch (accion.split(':')) {
-    case ['curso', final id]:
-      if (id != activa.curso) onCambiarCurso(id);
     case ['escoller', final id]:
       await store.escoller(id);
     case ['resultados']:
@@ -219,19 +229,26 @@ Future<void> abrirFollaCrianza(
         context: context,
         builder: (ctx) => AlertDialog(
           title: Text(
-              isGl ? 'Borrar a ${activa.nome}?' : '¿Borrar a ${activa.nome}?'),
-          content: Text(isGl
-              ? 'Bórranse o seu nome, a idade, o curso e todo o que marcaches del. Non se pode desfacer.'
-              : 'Se borran su nombre, la edad, el curso y todo lo que marcaste de él. No se puede deshacer.'),
+            isGl ? 'Borrar a ${activa.nome}?' : '¿Borrar a ${activa.nome}?',
+          ),
+          content: Text(
+            isGl
+                ? 'Bórranse o seu nome, a idade, o curso e todo o que marcaches del. Non se pode desfacer.'
+                : 'Se borran su nombre, la edad, el curso y todo lo que marcaste de él. No se puede deshacer.',
+          ),
           actions: [
             TextButton(
-                onPressed: () => Navigator.of(ctx).pop(false),
-                child: Text(isGl ? 'Cancelar' : 'Cancelar')),
+              onPressed: () => Navigator.of(ctx).pop(false),
+              child: Text(isGl ? 'Cancelar' : 'Cancelar'),
+            ),
             TextButton(
-                key: const Key('crianza_borrar_si'),
-                onPressed: () => Navigator.of(ctx).pop(true),
-                child: Text(isGl ? 'Borrar' : 'Borrar',
-                    style: const TextStyle(color: AppTheme.errorInk))),
+              key: const Key('crianza_borrar_si'),
+              onPressed: () => Navigator.of(ctx).pop(true),
+              child: Text(
+                isGl ? 'Borrar' : 'Borrar',
+                style: const TextStyle(color: AppTheme.errorInk),
+              ),
+            ),
           ],
         ),
       );

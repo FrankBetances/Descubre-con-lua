@@ -6,10 +6,12 @@ import '../../core/theme/app_theme.dart';
 import '../familias/nomes_familias.dart';
 import 'criancas_store.dart';
 
-/// El registro de un niño de la casa (O-20261109-1): Lúa, el nombre, la
-/// edad y el curso. Se rellena una vez; después la app abre con él.
+/// El registro de un niño de la casa (O-20261109-1, P11.1): Lúa, el nombre,
+/// mes y año de nacimiento (sin día), la edad y el curso. Se rellena una vez;
+/// después la app abre con él.
 ///
-/// Sirve para dar de alta y para editar: con [crianza] viene relleno.
+/// Sirve para dar de alta (incluyendo varios niños seguidos) y para editar:
+/// con [crianza] viene relleno y cambiar de curso pide confirmación.
 class RexistroCrianzaScreen extends StatefulWidget {
   const RexistroCrianzaScreen({
     super.key,
@@ -20,6 +22,7 @@ class RexistroCrianzaScreen extends StatefulWidget {
     this.cursoInicial,
     this.onGardado,
     this.primeira = false,
+    this.agora,
   });
 
   final CriancasStore store;
@@ -31,29 +34,62 @@ class RexistroCrianzaScreen extends StatefulWidget {
   /// Sin él, la pantalla se cierra al guardar.
   final ValueChanged<Crianza>? onGardado;
 
-  /// La primera vez que se entra en casa: sin flecha de volver a la casa.
+  /// La primera vez que se entra en casa: pregunta se hai outro neno na casa.
   final bool primeira;
+
+  final DateTime? agora;
 
   @override
   State<RexistroCrianzaScreen> createState() => _RexistroCrianzaScreenState();
 }
 
 class _RexistroCrianzaScreenState extends State<RexistroCrianzaScreen> {
-  late final TextEditingController _nome =
-      TextEditingController(text: widget.crianza?.nome ?? '');
+  late final TextEditingController _nome = TextEditingController(
+    text: widget.crianza?.nome ?? '',
+  );
   late int? _idade = widget.crianza?.idade;
+  late int? _mesNacemento = widget.crianza?.mesNacemento;
+  late int? _anoNacemento = widget.crianza?.anoNacemento;
   late String? _curso = widget.crianza?.curso ?? widget.cursoInicial;
   bool _gardando = false;
+  bool _preguntandoOutro = false;
+  Crianza? _ultimoGardado;
+
+  DateTime get _agora => widget.agora ?? DateTime.now();
 
   /// El curso que suele ir con cada edad. Se propone, no se impone: un niño
   /// nacido en diciembre puede ir con los de un año menos.
-  static String _cursoDe(int idade) => switch (idade) {
-        0 || 1 => 'curso_0_2',
-        2 => 'curso_2_3',
-        3 => 'curso_3_4',
-        4 => 'curso_4_5',
-        _ => 'curso_5_6',
-      };
+  static String _cursoDe(int idade) => CriancasStore.cursoParaIdade(idade);
+
+  static const _mesesGl = [
+    'Xaneiro',
+    'Febreiro',
+    'Marzo',
+    'Abril',
+    'Maio',
+    'Xuño',
+    'Xullo',
+    'Agosto',
+    'Setembro',
+    'Outubro',
+    'Novembro',
+    'Decembro',
+  ];
+
+  static const _mesesEs = [
+    'Enero',
+    'Febrero',
+    'Marzo',
+    'Abril',
+    'Mayo',
+    'Junio',
+    'Julio',
+    'Agosto',
+    'Septiembre',
+    'Octubre',
+    'Noviembre',
+    'Diciembre',
+  ];
 
   bool get _valido =>
       _nome.text.trim().isNotEmpty && _idade != null && _curso != null;
@@ -64,24 +100,116 @@ class _RexistroCrianzaScreenState extends State<RexistroCrianzaScreen> {
     super.dispose();
   }
 
+  void _actualizarDesdeNacemento(int? mes, int? ano) {
+    setState(() {
+      _mesNacemento = mes;
+      _anoNacemento = ano;
+      if (mes != null && ano != null) {
+        var anos = _agora.year - ano;
+        if (_agora.month < mes) anos--;
+        final cl = anos.clamp(0, 6);
+        _idade = cl;
+        if (widget.crianza == null) _curso = _cursoDe(cl);
+      }
+    });
+  }
+
+  Future<bool> _confirmarCambioCurso(
+    String nome,
+    String antes,
+    String novo,
+  ) async {
+    final isGl = widget.language == AppLanguage.gl;
+    final nomeAntes = NomesFamilias.idade(antes).resolve(widget.language);
+    final nomeNovo = NomesFamilias.idade(novo).resolve(widget.language);
+    final res = await showDialog<bool>(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        key: const Key('rexistro_confirmar_curso'),
+        title: Text(
+          isGl ? 'Cambiar de curso a $nome?' : '¿Cambiar de curso a $nome?',
+        ),
+        content: Text(
+          isGl
+              ? 'Pasará de $nomeAntes a $nomeNovo. O historial previo consérvase.'
+              : 'Pasará de $nomeAntes a $nomeNovo. El historial previo se conserva.',
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.of(ctx).pop(false),
+            child: const Text('Cancelar'),
+          ),
+          FilledButton(
+            key: const Key('rexistro_confirmar_curso_si'),
+            onPressed: () => Navigator.of(ctx).pop(true),
+            child: const Text('Confirmar'),
+          ),
+        ],
+      ),
+    );
+    return res == true;
+  }
+
   Future<void> _gardar() async {
     if (!_valido || _gardando) return;
+    if (widget.crianza case final orixe?) {
+      if (_curso != orixe.curso) {
+        final ok = await _confirmarCambioCurso(
+          _nome.text.trim(),
+          orixe.curso,
+          _curso!,
+        );
+        if (!ok || !mounted) return;
+      }
+    }
     setState(() => _gardando = true);
     final store = widget.store;
     final Crianza c;
     if (widget.crianza case final orixe?) {
-      await store.actualizar(orixe.id,
-          nome: _nome.text, idade: _idade, curso: _curso);
+      await store.actualizar(
+        orixe.id,
+        nome: _nome.text,
+        idade: _idade,
+        curso: _curso,
+        mesNacemento: _mesNacemento,
+        anoNacemento: _anoNacemento,
+      );
       c = store.criancas.firstWhere((x) => x.id == orixe.id);
     } else {
-      c = await store.engadir(nome: _nome.text, idade: _idade!, curso: _curso!);
+      c = await store.engadir(
+        nome: _nome.text,
+        idade: _idade!,
+        curso: _curso!,
+        mesNacemento: _mesNacemento,
+        anoNacemento: _anoNacemento,
+      );
     }
     if (!mounted) return;
+    if (widget.primeira && widget.crianza == null) {
+      setState(() {
+        _gardando = false;
+        _ultimoGardado = c;
+        _preguntandoOutro = true;
+      });
+      return;
+    }
     if (widget.onGardado case final f?) {
       f(c);
     } else {
       Navigator.of(context).pop(c);
     }
+  }
+
+  void _prepararOutro() {
+    setState(() {
+      _nome.clear();
+      _idade = null;
+      _mesNacemento = null;
+      _anoNacemento = null;
+      _curso = null;
+      _preguntandoOutro = false;
+      _gardando = false;
+    });
   }
 
   @override
@@ -91,14 +219,157 @@ class _RexistroCrianzaScreenState extends State<RexistroCrianzaScreen> {
     final acento = context.acento;
     final editar = widget.crianza != null;
 
+    if (_preguntandoOutro) {
+      final nenos = widget.store.criancas;
+      return Scaffold(
+        backgroundColor: AppTheme.pageBg,
+        appBar: AppBar(
+          title: Text(isGl ? 'Na casa' : 'En casa'),
+          actions: [
+            TextButton(
+              key: const Key('rexistro_lingua'),
+              onPressed: () => widget.onLanguageChanged(
+                isGl ? AppLanguage.es : AppLanguage.gl,
+              ),
+              child: Text(
+                isGl ? 'ES' : 'GL',
+                style: const TextStyle(fontWeight: FontWeight.w800),
+              ),
+            ),
+          ],
+        ),
+        body: SafeArea(
+          child: ListView(
+            key: const Key('rexistro_outro_neno'),
+            padding: const EdgeInsets.fromLTRB(20, 16, 20, 28),
+            children: [
+              Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  const LuaPixel(pose: LuaPose.sit, size: 88),
+                  const SizedBox(width: 12),
+                  Expanded(
+                    child: Container(
+                      padding: const EdgeInsets.all(14),
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(
+                          AppTheme.radiusCard,
+                        ),
+                        border: Border.all(color: acento.withAlpha(90)),
+                      ),
+                      child: Text(
+                        isGl
+                            ? 'Hai outro neno ou nena na casa?'
+                            : '¿Hay otro niño o niña en casa?',
+                        style: const TextStyle(
+                          fontSize: 17,
+                          fontWeight: FontWeight.w800,
+                          height: 1.3,
+                          color: AppTheme.textPrimary,
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+              const SizedBox(height: 16),
+              for (final n in nenos)
+                Container(
+                  margin: const EdgeInsets.only(bottom: 8),
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 14,
+                    vertical: 12,
+                  ),
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(AppTheme.radiusField),
+                    border: Border.all(color: AppTheme.border),
+                  ),
+                  child: Row(
+                    children: [
+                      Icon(Icons.check_circle_rounded, color: acento, size: 22),
+                      const SizedBox(width: 10),
+                      Expanded(
+                        child: Text(
+                          '${n.nome} · ${NomesFamilias.idade(n.curso).resolve(lang)}',
+                          style: const TextStyle(
+                            fontSize: 15.5,
+                            fontWeight: FontWeight.w700,
+                            color: AppTheme.textPrimary,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              const SizedBox(height: 14),
+              FilledButton.icon(
+                key: const Key('rexistro_outro_si'),
+                style: FilledButton.styleFrom(
+                  backgroundColor: acento,
+                  minimumSize: const Size.fromHeight(52),
+                ),
+                icon: const Icon(Icons.person_add_alt_1_rounded),
+                label: Text(
+                  isGl
+                      ? 'Si, engadir outro neno ou nena'
+                      : 'Sí, añadir otro niño o niña',
+                  style: const TextStyle(
+                    fontSize: 15.5,
+                    fontWeight: FontWeight.w800,
+                  ),
+                ),
+                onPressed: _prepararOutro,
+              ),
+              const SizedBox(height: 10),
+              OutlinedButton.icon(
+                key: const Key('rexistro_outro_non'),
+                style: OutlinedButton.styleFrom(
+                  minimumSize: const Size.fromHeight(52),
+                  side: BorderSide(color: acento, width: 1.5),
+                  foregroundColor: acento,
+                ),
+                icon: const Icon(Icons.home_rounded),
+                label: Text(
+                  isGl ? 'Non, entrar na casa' : 'No, entrar en casa',
+                  style: const TextStyle(
+                    fontSize: 15.5,
+                    fontWeight: FontWeight.w800,
+                  ),
+                ),
+                onPressed: () {
+                  final fin = _ultimoGardado ?? widget.store.activa;
+                  if (fin != null) {
+                    if (widget.onGardado case final f?) {
+                      f(fin);
+                    } else {
+                      Navigator.of(context).pop(fin);
+                    }
+                  }
+                },
+              ),
+            ],
+          ),
+        ),
+      );
+    }
+
     Widget etiqueta(String t) => Padding(
           padding: const EdgeInsets.only(top: 18, bottom: 8),
-          child: Text(t,
-              style: const TextStyle(
-                  fontSize: 15,
-                  fontWeight: FontWeight.w800,
-                  color: AppTheme.textPrimary)),
+          child: Text(
+            t,
+            style: const TextStyle(
+              fontSize: 15,
+              fontWeight: FontWeight.w800,
+              color: AppTheme.textPrimary,
+            ),
+          ),
         );
+
+    final anoActual = _agora.year;
+    final anos = [for (var y = anoActual; y >= anoActual - 7; y--) y];
+    final meses = isGl ? _mesesGl : _mesesEs;
 
     return Scaffold(
       backgroundColor: AppTheme.pageBg,
@@ -111,16 +382,21 @@ class _RexistroCrianzaScreenState extends State<RexistroCrianzaScreen> {
                 onPressed: () => Navigator.of(context).maybePop(),
               )
             : null,
-        title: Text(editar
-            ? (isGl ? 'Editar' : 'Editar')
-            : (isGl ? 'Quen vai aprender?' : '¿Quién va a aprender?')),
+        title: Text(
+          editar
+              ? (isGl ? 'Editar' : 'Editar')
+              : (isGl ? 'Quen vai aprender?' : '¿Quién va a aprender?'),
+        ),
         actions: [
           TextButton(
             key: const Key('rexistro_lingua'),
-            onPressed: () => widget
-                .onLanguageChanged(isGl ? AppLanguage.es : AppLanguage.gl),
-            child: Text(isGl ? 'ES' : 'GL',
-                style: const TextStyle(fontWeight: FontWeight.w800)),
+            onPressed: () => widget.onLanguageChanged(
+              isGl ? AppLanguage.es : AppLanguage.gl,
+            ),
+            child: Text(
+              isGl ? 'ES' : 'GL',
+              style: const TextStyle(fontWeight: FontWeight.w800),
+            ),
           ),
         ],
       ),
@@ -151,9 +427,10 @@ class _RexistroCrianzaScreenState extends State<RexistroCrianzaScreen> {
                               ? 'Ola, son Lúa. Dime quen vai aprender inglés contigo e non cho volvo preguntar.'
                               : 'Hola, soy Lúa. Dime quién va a aprender inglés contigo y no te lo vuelvo a preguntar.'),
                       style: const TextStyle(
-                          fontSize: 15,
-                          height: 1.35,
-                          color: AppTheme.textPrimary),
+                        fontSize: 15,
+                        height: 1.35,
+                        color: AppTheme.textPrimary,
+                      ),
                     ),
                   ),
                 ),
@@ -176,6 +453,68 @@ class _RexistroCrianzaScreenState extends State<RexistroCrianzaScreen> {
               ),
               onChanged: (_) => setState(() {}),
             ),
+            etiqueta(
+              isGl
+                  ? 'Mes e ano de nacemento (sen día)'
+                  : 'Mes y año de nacimiento (sin día)',
+            ),
+            Row(
+              children: [
+                Expanded(
+                  child: DropdownButtonFormField<int>(
+                    key: const Key('rexistro_mes_nacemento'),
+                    initialValue: _mesNacemento,
+                    isExpanded: true,
+                    decoration: InputDecoration(
+                      labelText: isGl ? 'Mes' : 'Mes',
+                      filled: true,
+                      fillColor: Colors.white,
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(
+                          AppTheme.radiusField,
+                        ),
+                      ),
+                    ),
+                    items: [
+                      for (var m = 1; m <= 12; m++)
+                        DropdownMenuItem<int>(
+                          value: m,
+                          child: Text(meses[m - 1]),
+                        ),
+                    ],
+                    onChanged: (m) =>
+                        _actualizarDesdeNacemento(m, _anoNacemento),
+                  ),
+                ),
+                const SizedBox(width: 10),
+                Expanded(
+                  child: DropdownButtonFormField<int>(
+                    key: const Key('rexistro_ano_nacemento'),
+                    initialValue:
+                        _anoNacemento != null && anos.contains(_anoNacemento)
+                            ? _anoNacemento
+                            : null,
+                    isExpanded: true,
+                    decoration: InputDecoration(
+                      labelText: isGl ? 'Ano' : 'Año',
+                      filled: true,
+                      fillColor: Colors.white,
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(
+                          AppTheme.radiusField,
+                        ),
+                      ),
+                    ),
+                    items: [
+                      for (final y in anos)
+                        DropdownMenuItem<int>(value: y, child: Text('$y')),
+                    ],
+                    onChanged: (y) =>
+                        _actualizarDesdeNacemento(_mesNacemento, y),
+                  ),
+                ),
+              ],
+            ),
             etiqueta(isGl ? 'Idade' : 'Edad'),
             Wrap(
               spacing: 8,
@@ -184,9 +523,11 @@ class _RexistroCrianzaScreenState extends State<RexistroCrianzaScreen> {
                 for (var i = 0; i <= 6; i++)
                   ChoiceChip(
                     key: ValueKey('rexistro_idade_$i'),
-                    label: Text(i == 1
-                        ? (isGl ? '1 ano' : '1 año')
-                        : '$i ${isGl ? 'anos' : 'años'}'),
+                    label: Text(
+                      i == 1
+                          ? (isGl ? '1 ano' : '1 año')
+                          : '$i ${isGl ? 'anos' : 'años'}',
+                    ),
                     selected: _idade == i,
                     showCheckmark: false,
                     selectedColor: acento,
@@ -196,6 +537,8 @@ class _RexistroCrianzaScreenState extends State<RexistroCrianzaScreen> {
                     ),
                     onSelected: (_) => setState(() {
                       _idade = i;
+                      _mesNacemento ??= _agora.month;
+                      _anoNacemento = _agora.year - i;
                       if (widget.crianza == null) _curso = _cursoDe(i);
                     }),
                   ),
@@ -229,28 +572,36 @@ class _RexistroCrianzaScreenState extends State<RexistroCrianzaScreen> {
                 minimumSize: const Size.fromHeight(52),
               ),
               icon: const Icon(Icons.check_rounded),
-              label: Text(isGl ? 'Gardar' : 'Guardar',
-                  style: const TextStyle(
-                      fontSize: 16, fontWeight: FontWeight.w800)),
+              label: Text(
+                isGl ? 'Gardar' : 'Guardar',
+                style: const TextStyle(
+                  fontSize: 16,
+                  fontWeight: FontWeight.w800,
+                ),
+              ),
               onPressed: _valido && !_gardando ? _gardar : null,
             ),
             const SizedBox(height: 12),
             Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const Icon(Icons.lock_outline_rounded,
-                    size: 18, color: AppTheme.textSecondary),
+                const Icon(
+                  Icons.lock_outline_rounded,
+                  size: 18,
+                  color: AppTheme.textSecondary,
+                ),
                 const SizedBox(width: 8),
                 Expanded(
                   child: Text(
                     isGl
-                        ? 'O nome, a idade e o curso gárdanse só neste móbil. Non saen de aquí: a app non ten internet. Pódese borrar cando queiras.'
-                        : 'El nombre, la edad y el curso se guardan solo en este móvil. No salen de aquí: la app no tiene internet. Se puede borrar cuando quieras.',
+                        ? 'O nome, o mes e o ano de nacemento (sen día) e o curso gárdanse só neste móbil. Non saen de aquí: a app non ten internet. Pódese borrar cando queiras.'
+                        : 'El nombre, el mes y el año de nacimiento (sin día) y el curso se guardan solo en este móvil. No salen de aquí: la app no tiene internet. Se puede borrar cuando quieras.',
                     key: const Key('rexistro_privacidade'),
                     style: const TextStyle(
-                        fontSize: 13.5,
-                        height: 1.35,
-                        color: AppTheme.textSecondary),
+                      fontSize: 13.5,
+                      height: 1.35,
+                      color: AppTheme.textSecondary,
+                    ),
                   ),
                 ),
               ],

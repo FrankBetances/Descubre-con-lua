@@ -70,12 +70,15 @@ class _Coleccion extends StatelessWidget {
     final racha = g.rachaViva(agora);
     final ganadas = c.insignias.where((i) => g.insignias.contains(i.id));
 
-    Text seccion(String t) => Text(t,
-        style: const TextStyle(
+    Text seccion(String t) => Text(
+          t,
+          style: const TextStyle(
             fontSize: 14,
             fontWeight: FontWeight.w900,
             letterSpacing: 0.4,
-            color: AppTheme.textSecondary));
+            color: AppTheme.textSecondary,
+          ),
+        );
 
     return ListView(
       key: const Key('premios_lua'),
@@ -90,17 +93,22 @@ class _Coleccion extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(c.textos['titulo']!.resolve(lang),
-                      style: const TextStyle(
-                          fontSize: 20,
-                          fontWeight: FontWeight.w900,
-                          color: AppTheme.textPrimary)),
                   Text(
-                      '${crianza.nome} · Nivel $nivel · ${c.nomeNivel(nivel).resolve(lang)}',
-                      style: TextStyle(
-                          fontSize: 14,
-                          fontWeight: FontWeight.w800,
-                          color: acento)),
+                    c.textos['titulo']!.resolve(lang),
+                    style: const TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.w900,
+                      color: AppTheme.textPrimary,
+                    ),
+                  ),
+                  Text(
+                    '${crianza.nome} · Nivel $nivel · ${c.nomeNivel(nivel).resolve(lang)}',
+                    style: TextStyle(
+                      fontSize: 14,
+                      fontWeight: FontWeight.w800,
+                      color: acento,
+                    ),
+                  ),
                 ],
               ),
             ),
@@ -124,19 +132,21 @@ class _Coleccion extends StatelessWidget {
                   ? '${c.xpParaSeguinte(g.xp)} XP para o seguinte nivel'
                   : '${c.xpParaSeguinte(g.xp)} XP para el siguiente nivel'),
           style: const TextStyle(
-              fontSize: 13,
-              fontWeight: FontWeight.w800,
-              color: AppTheme.textSecondary),
+            fontSize: 13,
+            fontWeight: FontWeight.w800,
+            color: AppTheme.textSecondary,
+          ),
         ),
         const SizedBox(height: 12),
         Row(
           children: [
             _Dato(
               icono: PixelAward(
-                  glyph: AwardGlyph.flame,
-                  tier: tierDeRacha(racha),
-                  size: 26,
-                  locked: racha == 0),
+                glyph: AwardGlyph.flame,
+                tier: tierDeRacha(racha),
+                size: 26,
+                locked: racha == 0,
+              ),
               valor: '$racha',
               texto: racha == 0
                   ? (isGl ? 'Empeza hoxe a racha' : 'Empieza hoy la racha')
@@ -149,7 +159,10 @@ class _Coleccion extends StatelessWidget {
             const SizedBox(width: 10),
             _Dato(
               icono: const PixelAward(
-                  glyph: AwardGlyph.star, tier: AwardTier.gold, size: 26),
+                glyph: AwardGlyph.star,
+                tier: AwardTier.gold,
+                size: 26,
+              ),
               valor: '${g.xp}',
               texto: isGl ? 'XP en total' : 'XP en total',
             ),
@@ -164,81 +177,97 @@ class _Coleccion extends StatelessWidget {
           children: [
             for (var n = 1; n <= c.nivelMaximo; n++)
               Container(
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 10,
+                  vertical: 6,
+                ),
                 decoration: BoxDecoration(
                   color: n <= nivel ? context.acentoTint : Colors.white,
                   borderRadius: BorderRadius.circular(10),
                   border: Border.all(
-                      color: n == nivel ? acento : AppTheme.border,
-                      width: n == nivel ? 1.5 : 1),
+                    color: n == nivel ? acento : AppTheme.border,
+                    width: n == nivel ? 1.5 : 1,
+                  ),
                 ),
-                child: Text('$n · ${c.nomeNivel(n).resolve(lang)}',
-                    style: TextStyle(
-                        fontSize: 13,
-                        fontWeight:
-                            n == nivel ? FontWeight.w900 : FontWeight.w600,
-                        color: n <= nivel ? acento : AppTheme.textSecondary)),
+                child: Text(
+                  '$n · ${c.nomeNivel(n).resolve(lang)}',
+                  style: TextStyle(
+                    fontSize: 13,
+                    fontWeight: n == nivel ? FontWeight.w900 : FontWeight.w600,
+                    color: n <= nivel ? acento : AppTheme.textSecondary,
+                  ),
+                ),
               ),
           ],
         ),
         const SizedBox(height: 18),
-        seccion(isGl
-            ? 'INSIGNIAS · ${ganadas.length} DE ${c.insignias.length}'
-            : 'INSIGNIAS · ${ganadas.length} DE ${c.insignias.length}'),
+        seccion(
+          isGl
+              ? 'INSIGNIAS · ${ganadas.length} DE ${c.insignias.length}'
+              : 'INSIGNIAS · ${ganadas.length} DE ${c.insignias.length}',
+        ),
         const SizedBox(height: 8),
-        LayoutBuilder(builder: (context, box) {
-          final ancho = (box.maxWidth - 16) / 3;
-          return Wrap(
-            spacing: 8,
-            runSpacing: 12,
-            children: [
-              for (final i in c.insignias)
-                SizedBox(
-                  width: ancho,
-                  child: Semantics(
-                    label:
-                        '${i.nome.resolve(lang)}. ${g.insignias.contains(i.id) ? (isGl ? 'Conseguida' : 'Conseguida') : (isGl ? 'Aínda non conseguida' : 'Todavía no conseguida')}.',
-                    excludeSemantics: true,
-                    child: Column(
-                      key: ValueKey('insignia_${i.id}'),
-                      children: [
-                        PixelAward(
+        LayoutBuilder(
+          builder: (context, box) {
+            final ancho = (box.maxWidth - 16) / 3;
+            return Wrap(
+              spacing: 8,
+              runSpacing: 12,
+              children: [
+                for (final i in c.insignias)
+                  SizedBox(
+                    width: ancho,
+                    child: Semantics(
+                      label:
+                          '${i.nome.resolve(lang)}. ${g.insignias.contains(i.id) ? (isGl ? 'Conseguida' : 'Conseguida') : (isGl ? 'Aínda non conseguida' : 'Todavía no conseguida')}.',
+                      excludeSemantics: true,
+                      child: Column(
+                        key: ValueKey('insignia_${i.id}'),
+                        children: [
+                          PixelAward(
                             glyph: i.glyph,
                             tier: i.tier,
                             size: 44,
-                            locked: !g.insignias.contains(i.id)),
-                        const SizedBox(height: 4),
-                        Text(i.nome.resolve(lang),
+                            locked: !g.insignias.contains(i.id),
+                          ),
+                          const SizedBox(height: 4),
+                          Text(
+                            i.nome.resolve(lang),
                             textAlign: TextAlign.center,
                             maxLines: 2,
                             style: TextStyle(
-                                fontSize: 12.5,
-                                fontWeight: FontWeight.w800,
-                                color: g.insignias.contains(i.id)
-                                    ? AppTheme.textPrimary
-                                    : AppTheme.textMuted)),
-                        Text(i.di.resolve(lang),
+                              fontSize: 12.5,
+                              fontWeight: FontWeight.w800,
+                              color: g.insignias.contains(i.id)
+                                  ? AppTheme.textPrimary
+                                  : AppTheme.textMuted,
+                            ),
+                          ),
+                          Text(
+                            i.di.resolve(lang),
                             textAlign: TextAlign.center,
                             maxLines: 3,
                             style: const TextStyle(
-                                fontSize: 12,
-                                height: 1.25,
-                                color: AppTheme.textSecondary)),
-                      ],
+                              fontSize: 12,
+                              height: 1.25,
+                              color: AppTheme.textSecondary,
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
                   ),
-                ),
-            ],
-          );
-        }),
+              ],
+            );
+          },
+        ),
         const SizedBox(height: 6),
         Text(
-            isGl
-                ? 'As insignias en gris aínda non están conseguidas.'
-                : 'Las insignias en gris todavía no están conseguidas.',
-            style:
-                const TextStyle(fontSize: 13, color: AppTheme.textSecondary)),
+          isGl
+              ? 'As insignias en gris aínda non están conseguidas.'
+              : 'Las insignias en gris todavía no están conseguidas.',
+          style: const TextStyle(fontSize: 13, color: AppTheme.textSecondary),
+        ),
         const SizedBox(height: 18),
         seccion(c.textos['armario']!.resolve(lang).toUpperCase()),
         const SizedBox(height: 8),
@@ -282,14 +311,21 @@ class _Dato extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(valor,
-                        style: const TextStyle(
-                            fontSize: 20,
-                            fontWeight: FontWeight.w900,
-                            color: AppTheme.textPrimary)),
-                    Text(texto,
-                        style: const TextStyle(
-                            fontSize: 12, color: AppTheme.textSecondary)),
+                    Text(
+                      valor,
+                      style: const TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.w900,
+                        color: AppTheme.textPrimary,
+                      ),
+                    ),
+                    Text(
+                      texto,
+                      style: const TextStyle(
+                        fontSize: 12,
+                        color: AppTheme.textSecondary,
+                      ),
+                    ),
                   ],
                 ),
               ),
@@ -327,7 +363,9 @@ class _Obxecto extends StatelessWidget {
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(14),
           side: BorderSide(
-              color: posto ? acento : AppTheme.border, width: posto ? 1.5 : 1),
+            color: posto ? acento : AppTheme.border,
+            width: posto ? 1.5 : 1,
+          ),
         ),
         child: InkWell(
           key: ValueKey('obxecto_${o.id}'),
@@ -340,33 +378,39 @@ class _Obxecto extends StatelessWidget {
                 Opacity(
                   opacity: desbloqueado ? 1 : 0.35,
                   child: SizedBox(
-                      width: 44,
-                      height: 28,
-                      child:
-                          Center(child: ObxectoLuaIcona(id: o.id, alto: 24))),
+                    width: 44,
+                    height: 28,
+                    child: Center(child: ObxectoLuaIcona(id: o.id, alto: 24)),
+                  ),
                 ),
                 const SizedBox(width: 10),
                 Expanded(
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(o.nome.resolve(lang),
-                          style: TextStyle(
-                              fontSize: 14.5,
-                              fontWeight: FontWeight.w800,
-                              color: desbloqueado
-                                  ? AppTheme.textPrimary
-                                  : AppTheme.textMuted)),
                       Text(
-                          desbloqueado
-                              ? (o.slot == 'snack'
-                                  ? (lang == AppLanguage.gl
-                                      ? 'Dispoñible para premiar'
-                                      : 'Disponible para premiar')
-                                  : (posto ? textoPosto : textoPor))
-                              : o.condicion.resolve(lang),
-                          style: const TextStyle(
-                              fontSize: 12.5, color: AppTheme.textSecondary)),
+                        o.nome.resolve(lang),
+                        style: TextStyle(
+                          fontSize: 14.5,
+                          fontWeight: FontWeight.w800,
+                          color: desbloqueado
+                              ? AppTheme.textPrimary
+                              : AppTheme.textMuted,
+                        ),
+                      ),
+                      Text(
+                        desbloqueado
+                            ? (o.slot == 'snack'
+                                ? (lang == AppLanguage.gl
+                                    ? 'Dispoñible para premiar'
+                                    : 'Disponible para premiar')
+                                : (posto ? textoPosto : textoPor))
+                            : o.condicion.resolve(lang),
+                        style: const TextStyle(
+                          fontSize: 12.5,
+                          color: AppTheme.textSecondary,
+                        ),
+                      ),
                     ],
                   ),
                 ),
@@ -407,37 +451,45 @@ Future<void> mostrarRecompensa(
           const LuaValeria(ancho: 80, cara: CaraLua.love),
           const SizedBox(height: 8),
           if (!r.xaXogouHoxe)
-            Text('+${r.xpGanado} XP',
-                key: const Key('recompensa_xp'),
-                style: TextStyle(
-                    fontSize: 26,
-                    fontWeight: FontWeight.w900,
-                    color: ctx.acento)),
+            Text(
+              '+${r.xpGanado} XP',
+              key: const Key('recompensa_xp'),
+              style: TextStyle(
+                fontSize: 26,
+                fontWeight: FontWeight.w900,
+                color: ctx.acento,
+              ),
+            ),
           if (r.subeNivel)
             Text(
-                '${isGl ? 'Novo nivel' : 'Nuevo nivel'}: ${r.nivel} · ${c.nomeNivel(r.nivel).resolve(lang)}',
-                textAlign: TextAlign.center,
-                style: const TextStyle(fontWeight: FontWeight.w800)),
+              '${isGl ? 'Novo nivel' : 'Nuevo nivel'}: ${r.nivel} · ${c.nomeNivel(r.nivel).resolve(lang)}',
+              textAlign: TextAlign.center,
+              style: const TextStyle(fontWeight: FontWeight.w800),
+            ),
           for (final i in r.insigniasNovas) ...[
             const SizedBox(height: 8),
             PixelAward(glyph: i.glyph, tier: i.tier, size: 44),
-            Text(i.nome.resolve(lang),
-                style: const TextStyle(fontWeight: FontWeight.w800)),
+            Text(
+              i.nome.resolve(lang),
+              style: const TextStyle(fontWeight: FontWeight.w800),
+            ),
           ],
           for (final o in r.obxectosNovos) ...[
             const SizedBox(height: 8),
             ObxectoLuaIcona(id: o.id, alto: 24),
             Text(
-                '${isGl ? 'Novo para Lúa' : 'Nuevo para Lúa'}: ${o.nome.resolve(lang)}',
-                textAlign: TextAlign.center,
-                style: const TextStyle(fontWeight: FontWeight.w800)),
+              '${isGl ? 'Novo para Lúa' : 'Nuevo para Lúa'}: ${o.nome.resolve(lang)}',
+              textAlign: TextAlign.center,
+              style: const TextStyle(fontWeight: FontWeight.w800),
+            ),
           ],
           if (r.xaXogouHoxe)
             Text(
-                isGl
-                    ? 'O xogo do día cóntase unha vez. Mañá máis!'
-                    : 'El juego del día cuenta una vez. ¡Mañana más!',
-                textAlign: TextAlign.center),
+              isGl
+                  ? 'O xogo do día cóntase unha vez. Mañá máis!'
+                  : 'El juego del día cuenta una vez. ¡Mañana más!',
+              textAlign: TextAlign.center,
+            ),
         ],
       ),
       actions: [

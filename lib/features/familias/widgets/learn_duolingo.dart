@@ -49,8 +49,12 @@ class CabeceraLearn extends StatelessWidget {
   final Widget curso;
   final int xp;
   final int racha;
-  const CabeceraLearn(
-      {super.key, required this.curso, required this.xp, required this.racha});
+  const CabeceraLearn({
+    super.key,
+    required this.curso,
+    required this.xp,
+    required this.racha,
+  });
 
   @override
   Widget build(BuildContext context) => Row(
@@ -61,25 +65,32 @@ class CabeceraLearn extends StatelessWidget {
           const PixelAward(
               glyph: AwardGlyph.star, tier: AwardTier.gold, size: 26),
           const SizedBox(width: 4),
-          Text('$xp',
-              key: const Key('learn_xp'),
-              style: const TextStyle(
-                  fontSize: 17,
-                  fontWeight: FontWeight.w900,
-                  color: DuoCores.laranxaTexto)),
+          Text(
+            '$xp',
+            key: const Key('learn_xp'),
+            style: const TextStyle(
+              fontSize: 17,
+              fontWeight: FontWeight.w900,
+              color: DuoCores.laranxaTexto,
+            ),
+          ),
           const SizedBox(width: 12),
           PixelAward(
-              glyph: AwardGlyph.flame,
-              tier: tierDeRacha(racha),
-              size: 24,
-              locked: racha == 0),
+            glyph: AwardGlyph.flame,
+            tier: tierDeRacha(racha),
+            size: 24,
+            locked: racha == 0,
+          ),
           const SizedBox(width: 4),
-          Text('$racha',
-              key: const Key('learn_racha'),
-              style: const TextStyle(
-                  fontSize: 17,
-                  fontWeight: FontWeight.w900,
-                  color: DuoCores.rosaTexto)),
+          Text(
+            '$racha',
+            key: const Key('learn_racha'),
+            style: const TextStyle(
+              fontSize: 17,
+              fontWeight: FontWeight.w900,
+              color: DuoCores.rosaTexto,
+            ),
+          ),
         ],
       );
 }
@@ -116,32 +127,46 @@ class BannerUnidade extends StatelessWidget {
                 ),
                 borderRadius: BorderRadius.circular(16),
                 border: const Border(
-                    bottom: BorderSide(color: DuoCores.verdeBorde, width: 4)),
+                  bottom: BorderSide(color: DuoCores.verdeBorde, width: 4),
+                ),
               ),
               child: Stack(
                 children: [
                   // Dos lunas de adorno, sin texto ni toque.
                   const Positioned(
-                      right: -26, top: -30, child: _Circulo(diametro: 110)),
+                    right: -26,
+                    top: -30,
+                    child: _Circulo(diametro: 110),
+                  ),
                   const Positioned(
-                      right: 46, bottom: -38, child: _Circulo(diametro: 70)),
+                    right: 46,
+                    bottom: -38,
+                    child: _Circulo(diametro: 70),
+                  ),
                   Padding(
-                    padding: const EdgeInsets.all(16),
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 16, vertical: 11),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(titulo,
-                            style: const TextStyle(
-                                fontFamily: AppTheme.fontTitulos,
-                                fontSize: 21,
-                                fontWeight: FontWeight.w800,
-                                color: Colors.white)),
-                        const SizedBox(height: 6),
-                        Text(descricion,
-                            style: const TextStyle(
-                                fontSize: 15.5,
-                                height: 1.3,
-                                color: Colors.white)),
+                        Text(
+                          titulo,
+                          style: const TextStyle(
+                            fontFamily: AppTheme.fontTitulos,
+                            fontSize: 21,
+                            fontWeight: FontWeight.w800,
+                            color: Colors.white,
+                          ),
+                        ),
+                        const SizedBox(height: 4),
+                        Text(
+                          descricion,
+                          style: const TextStyle(
+                            fontSize: 15.5,
+                            height: 1.3,
+                            color: Colors.white,
+                          ),
+                        ),
                         // En la fuente el botón va `hidden ... xl:flex`: en el móvil no
                         // sale, y la caja entera se toca.
                         if (onContinuar != null &&
@@ -220,7 +245,9 @@ class _BotonDuo extends StatelessWidget {
               borderRadius: BorderRadius.circular(14),
               border: Border(
                 bottom: BorderSide(
-                    color: off ? DuoCores.bloqueadoBorde : borde, width: 4),
+                  color: off ? DuoCores.bloqueadoBorde : borde,
+                  width: 4,
+                ),
                 top: BorderSide(color: off ? DuoCores.bloqueado : borde),
                 left: BorderSide(color: off ? DuoCores.bloqueado : borde),
                 right: BorderSide(color: off ? DuoCores.bloqueado : borde),
@@ -235,14 +262,17 @@ class _BotonDuo extends StatelessWidget {
                   const SizedBox(width: 8),
                 ],
                 Flexible(
-                  child: Text(texto.toUpperCase(),
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                          fontFamily: AppTheme.fontTitulos,
-                          fontSize: 16,
-                          letterSpacing: 0.6,
-                          fontWeight: FontWeight.w900,
-                          color: off ? Colors.white : cor)),
+                  child: Text(
+                    texto.toUpperCase(),
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      fontFamily: AppTheme.fontTitulos,
+                      fontSize: 16,
+                      letterSpacing: 0.6,
+                      fontWeight: FontWeight.w900,
+                      color: off ? Colors.white : cor,
+                    ),
+                  ),
                 ),
               ],
             ),
@@ -303,7 +333,7 @@ class CaminoNodos extends StatelessWidget {
               Positioned(
                 key: const Key('learn_lua'),
                 left: c.maxWidth / 2 + 28,
-                top: 96,
+                top: 84,
                 // O-20261119-7: Lúa entra, y salta si se la toca.
                 child: Entrada(orden: 6, child: SaltoLua(child: lua!)),
               ),
@@ -314,7 +344,7 @@ class CaminoNodos extends StatelessWidget {
                 children: [
                   for (var i = 0; i < etiquetas.length; i++)
                     Padding(
-                      padding: EdgeInsets.only(top: i == 0 ? 12 : 6),
+                      padding: EdgeInsets.only(top: i == 0 ? 4 : 1),
                       // `right: ${rightPosition}px` de la fuente. Con relleno y
                       // no con Transform.translate: un nodo trasladado solo al
                       // pintar queda fuera de la caja de su padre y no recibe el
@@ -380,8 +410,9 @@ class _Nodo extends StatelessWidget {
         color: bloq ? DuoCores.bloqueado : DuoCores.verde,
         border: Border(
           bottom: BorderSide(
-              color: bloq ? DuoCores.bloqueadoBorde : DuoCores.verdeBorde,
-              width: 6),
+            color: bloq ? DuoCores.bloqueadoBorde : DuoCores.verdeBorde,
+            width: 6,
+          ),
         ),
       ),
       child: Icon(
@@ -434,27 +465,34 @@ class _Nodo extends StatelessWidget {
                         ),
                         // O-20261119-7: el de hoy late, para que se vea qué toca.
                         Positioned(
-                            top: 42,
-                            child:
-                                Halo(cor: DuoCores.verdeClaro, child: boton)),
+                          top: 42,
+                          child: Halo(cor: DuoCores.verdeClaro, child: boton),
+                        ),
                         Positioned(
                           top: 0,
                           child: Flotar(
                             child: Container(
                               key: const Key('learn_empezar'),
                               padding: const EdgeInsets.symmetric(
-                                  horizontal: 12, vertical: 8),
+                                horizontal: 12,
+                                vertical: 8,
+                              ),
                               decoration: BoxDecoration(
                                 color: Colors.white,
                                 borderRadius: BorderRadius.circular(12),
                                 border: Border.all(
-                                    color: DuoCores.trilla, width: 2),
+                                  color: DuoCores.trilla,
+                                  width: 2,
+                                ),
                               ),
-                              child: Text(empezar.toUpperCase(),
-                                  style: const TextStyle(
-                                      fontWeight: FontWeight.w900,
-                                      letterSpacing: 0.6,
-                                      color: DuoCores.textoVerde)),
+                              child: Text(
+                                empezar.toUpperCase(),
+                                style: const TextStyle(
+                                  fontWeight: FontWeight.w900,
+                                  letterSpacing: 0.6,
+                                  color: DuoCores.textoVerde,
+                                ),
+                              ),
                             ),
                           ),
                         ),
@@ -464,12 +502,14 @@ class _Nodo extends StatelessWidget {
                 else
                   boton,
                 const SizedBox(height: 2),
-                Text(etiqueta,
-                    style: TextStyle(
-                        fontSize: 13,
-                        fontWeight: FontWeight.w800,
-                        color:
-                            bloq ? AppTheme.textMuted : DuoCores.textoVerde)),
+                Text(
+                  etiqueta,
+                  style: TextStyle(
+                    fontSize: 13,
+                    fontWeight: FontWeight.w800,
+                    color: bloq ? AppTheme.textMuted : DuoCores.textoVerde,
+                  ),
+                ),
               ],
             ),
           ),
@@ -494,13 +534,14 @@ class PasoLeccion {
 
   /// O-20261119-8: la actividad de escucha de la semana.
   final PasoEscoita? escoita;
-  const PasoLeccion(
-      {required this.titulo,
-      required this.texto,
-      this.peza,
-      this.escena,
-      this.laminas = const [],
-      this.escoita});
+  const PasoLeccion({
+    required this.titulo,
+    required this.texto,
+    this.peza,
+    this.escena,
+    this.laminas = const [],
+    this.escoita,
+  });
 }
 
 /// Los pasos del día: qué se hace, cada palabra nueva con su voz y la frase.
@@ -522,10 +563,11 @@ List<PasoLeccion> pasosDoDia(Leccion l, int dia, AppLanguage lang) {
   return [
     if (d != null)
       PasoLeccion(
-          titulo: d.dia.resolve(lang),
-          texto: d.texto.resolve(lang),
-          escena: escena,
-          laminas: escena == null ? daSemana : const []),
+        titulo: d.dia.resolve(lang),
+        texto: d.texto.resolve(lang),
+        escena: escena,
+        laminas: escena == null ? daSemana : const [],
+      ),
     for (final p in pezas)
       if (p.en.isNotEmpty)
         PasoLeccion(
@@ -556,10 +598,11 @@ List<PasoLeccion> pasosDoProxecto(Proxecto02 p, int semana, AppLanguage lang) {
         titulo: isGl ? 'Escoita e fai o xesto' : 'Escucha y haz el gesto',
         texto: w.xesto.resolve(lang),
         peza: PezaDaLeccion(
-            tipo: 'palabra',
-            en: w.en,
-            significado: w.significado,
-            lamina: w.lamina),
+          tipo: 'palabra',
+          en: w.en,
+          significado: w.significado,
+          lamina: w.lamina,
+        ),
       ),
     PasoLeccion(
       titulo: isGl ? 'A canción do proxecto' : 'La canción del proyecto',
@@ -573,10 +616,11 @@ List<PasoLeccion> pasosDoProxecto(Proxecto02 p, int semana, AppLanguage lang) {
       titulo: isGl ? 'Rima tradicional' : 'Rima tradicional',
       texto: '',
       peza: PezaDaLeccion(
-          tipo: 'frase',
-          en: p.rimaEn,
-          significado: p.rima,
-          lamina: p.rimaLamina),
+        tipo: 'frase',
+        en: p.rimaEn,
+        significado: p.rima,
+        lamina: p.rimaLamina,
+      ),
     ),
   ];
 }
@@ -624,10 +668,13 @@ class _LeccionDuolingoScreenState extends State<LeccionDuolingoScreen> {
     RecompensaLua? r;
     if (widget.store case final s?) {
       if (widget.crianza case final n?) {
-        r = await s.xogarHoxe(n.id, c,
-            agora: widget.agora ?? DateTime.now(),
-            semana: widget.semana,
-            palabrasDaSemana: widget.palabrasDaSemana);
+        r = await s.xogarHoxe(
+          n.id,
+          c,
+          agora: widget.agora ?? DateTime.now(),
+          semana: widget.semana,
+          palabrasDaSemana: widget.palabrasDaSemana,
+        );
       }
     }
     if (mounted) {
@@ -656,8 +703,11 @@ class _LeccionDuolingoScreenState extends State<LeccionDuolingoScreen> {
                   IconButton(
                     key: const Key('leccion_pechar'),
                     tooltip: isGl ? 'Saír' : 'Salir',
-                    icon: const Icon(Icons.close_rounded,
-                        color: Color(0xFF64748B), size: 28),
+                    icon: const Icon(
+                      Icons.close_rounded,
+                      color: Color(0xFF64748B),
+                      size: 28,
+                    ),
                     onPressed: () => Navigator.of(context).maybePop(),
                   ),
                   Expanded(
@@ -700,8 +750,9 @@ class _LeccionDuolingoScreenState extends State<LeccionDuolingoScreen> {
             // footer.tsx: la franja de abajo con el botón.
             Container(
               decoration: const BoxDecoration(
-                border:
-                    Border(top: BorderSide(color: DuoCores.trilla, width: 2)),
+                border: Border(
+                  top: BorderSide(color: DuoCores.trilla, width: 2),
+                ),
               ),
               padding: const EdgeInsets.fromLTRB(20, 16, 20, 20),
               child: _BotonDuo(
@@ -757,20 +808,26 @@ class _PasoVista extends StatelessWidget {
   final PasoLeccion paso;
   final AppLanguage lang;
   final OfflineAudioService? audioService;
-  const _PasoVista(
-      {required this.paso, required this.lang, required this.audioService});
+  const _PasoVista({
+    required this.paso,
+    required this.lang,
+    required this.audioService,
+  });
 
   @override
   Widget build(BuildContext context) => ListView(
         key: const Key('leccion_paso'),
         padding: const EdgeInsets.fromLTRB(24, 20, 24, 20),
         children: [
-          Text(paso.titulo,
-              style: const TextStyle(
-                  fontSize: 24,
-                  fontFamily: AppTheme.fontTitulos,
-                  fontWeight: FontWeight.w900,
-                  color: Color(0xFF334155))),
+          Text(
+            paso.titulo,
+            style: const TextStyle(
+              fontSize: 24,
+              fontFamily: AppTheme.fontTitulos,
+              fontWeight: FontWeight.w900,
+              color: Color(0xFF334155),
+            ),
+          ),
           const SizedBox(height: 24),
           if (paso.laminas.isNotEmpty) ...[
             Entrada(
@@ -783,10 +840,11 @@ class _PasoVista extends StatelessWidget {
                 children: [
                   for (final l in paso.laminas)
                     LaminaPalabra(
-                        clave: l.clave,
-                        significado: l.significado,
-                        lang: lang,
-                        ancho: paso.laminas.length == 1 ? 240 : 104),
+                      clave: l.clave,
+                      significado: l.significado,
+                      lang: lang,
+                      ancho: paso.laminas.length == 1 ? 240 : 104,
+                    ),
                 ],
               ),
             ),
@@ -798,9 +856,10 @@ class _PasoVista extends StatelessWidget {
                 orden: 2,
                 child: Center(
                   child: LaminaPalabra(
-                      clave: c,
-                      significado: p.significado?.resolve(lang) ?? p.en,
-                      lang: lang),
+                    clave: c,
+                    significado: p.significado?.resolve(lang) ?? p.en,
+                    lang: lang,
+                  ),
                 ),
               ),
               const SizedBox(height: 16),
@@ -821,33 +880,46 @@ class _PasoVista extends StatelessWidget {
             if (p.significado case final s?) ...[
               const SizedBox(height: 12),
               Center(
-                child: Text(s.resolve(lang),
-                    style: const TextStyle(
-                        fontSize: 18, color: AppTheme.textSecondary)),
+                child: Text(
+                  s.resolve(lang),
+                  style: const TextStyle(
+                    fontSize: 18,
+                    color: AppTheme.textSecondary,
+                  ),
+                ),
               ),
             ],
             const SizedBox(height: 20),
           ],
           if (paso.escena case final e?) ...[
             Entrada(
-                orden: 2,
-                child: ImaxeEscena(escena: e, lang: lang, ancho: 260)),
+              orden: 2,
+              child: ImaxeEscena(escena: e, lang: lang, ancho: 260),
+            ),
             const SizedBox(height: 8),
-            Text(e.resolve(lang),
-                key: const Key('leccion_paso_escena'),
-                textAlign: TextAlign.center,
-                style: const TextStyle(
-                    fontSize: 16,
-                    fontWeight: FontWeight.w700,
-                    color: AppTheme.textSecondary)),
+            Text(
+              e.resolve(lang),
+              key: const Key('leccion_paso_escena'),
+              textAlign: TextAlign.center,
+              style: const TextStyle(
+                fontSize: 16,
+                fontWeight: FontWeight.w700,
+                color: AppTheme.textSecondary,
+              ),
+            ),
             const SizedBox(height: 16),
           ],
           if (paso.escoita case final e?)
             VistaPasoEscoita(paso: e, lang: lang, audioService: audioService),
           if (paso.texto.isNotEmpty)
-            Text(paso.texto,
-                style: const TextStyle(
-                    fontSize: 18, height: 1.4, color: AppTheme.textPrimary)),
+            Text(
+              paso.texto,
+              style: const TextStyle(
+                fontSize: 18,
+                height: 1.4,
+                color: AppTheme.textPrimary,
+              ),
+            ),
         ],
       );
 }
@@ -870,13 +942,19 @@ class _Fin extends StatelessWidget {
         // toca.
         if (r?.xaXogouHoxe != true)
           Estrelas(
-              estrela: (t) => PixelAward(
-                  glyph: AwardGlyph.star, tier: AwardTier.gold, size: t)),
+            estrela: (t) => PixelAward(
+              glyph: AwardGlyph.star,
+              tier: AwardTier.gold,
+              size: t,
+            ),
+          ),
         const SizedBox(height: 6),
         const Center(
-            child: SaltoLua(
-                alEntrar: true,
-                child: LuaValeria(ancho: 120, cara: CaraLua.love))),
+          child: SaltoLua(
+            alEntrar: true,
+            child: LuaValeria(ancho: 120, cara: CaraLua.love),
+          ),
+        ),
         const SizedBox(height: 16),
         Text(
           r?.xaXogouHoxe == true
@@ -888,10 +966,11 @@ class _Fin extends StatelessWidget {
                   : '¡Muy bien${nome == null ? '' : ', $nome'}!\nLección completada.'),
           textAlign: TextAlign.center,
           style: const TextStyle(
-              fontFamily: AppTheme.fontTitulos,
-              fontSize: 24,
-              fontWeight: FontWeight.w900,
-              color: Color(0xFF334155)),
+            fontFamily: AppTheme.fontTitulos,
+            fontSize: 24,
+            fontWeight: FontWeight.w900,
+            color: Color(0xFF334155),
+          ),
         ),
         const SizedBox(height: 20),
         Entrada(
@@ -925,34 +1004,42 @@ class _Fin extends StatelessWidget {
         ),
         if (r != null && c != null) ...[
           const SizedBox(height: 12),
-          Text('Nivel ${r!.nivel} · ${c.nomeNivel(r!.nivel).resolve(lang)}',
-              key: const Key('leccion_fin_nivel'),
-              textAlign: TextAlign.center,
-              style: const TextStyle(
-                  fontSize: 16,
-                  fontWeight: FontWeight.w800,
-                  color: AppTheme.textPrimary)),
+          Text(
+            'Nivel ${r!.nivel} · ${c.nomeNivel(r!.nivel).resolve(lang)}',
+            key: const Key('leccion_fin_nivel'),
+            textAlign: TextAlign.center,
+            style: const TextStyle(
+              fontSize: 16,
+              fontWeight: FontWeight.w800,
+              color: AppTheme.textPrimary,
+            ),
+          ),
           for (final i in r!.insigniasNovas) ...[
             const SizedBox(height: 14),
             Entrada(
-                orden: 4,
-                desde: 30,
-                child: Center(
-                    child: Latido(
-                        escala: 1.1,
-                        child: PixelAward(
-                            glyph: i.glyph, tier: i.tier, size: 48)))),
-            Text(i.nome.resolve(lang),
-                textAlign: TextAlign.center,
-                style: const TextStyle(fontWeight: FontWeight.w800)),
+              orden: 4,
+              desde: 30,
+              child: Center(
+                child: Latido(
+                  escala: 1.1,
+                  child: PixelAward(glyph: i.glyph, tier: i.tier, size: 48),
+                ),
+              ),
+            ),
+            Text(
+              i.nome.resolve(lang),
+              textAlign: TextAlign.center,
+              style: const TextStyle(fontWeight: FontWeight.w800),
+            ),
           ],
           for (final o in r!.obxectosNovos) ...[
             const SizedBox(height: 14),
             Center(child: ObxectoLuaIcona(id: o.id, alto: 26)),
             Text(
-                '${isGl ? 'Novo para Lúa' : 'Nuevo para Lúa'}: ${o.nome.resolve(lang)}',
-                textAlign: TextAlign.center,
-                style: const TextStyle(fontWeight: FontWeight.w800)),
+              '${isGl ? 'Novo para Lúa' : 'Nuevo para Lúa'}: ${o.nome.resolve(lang)}',
+              textAlign: TextAlign.center,
+              style: const TextStyle(fontWeight: FontWeight.w800),
+            ),
           ],
         ],
       ],
@@ -962,9 +1049,7 @@ class _Fin extends StatelessWidget {
     return Stack(
       children: [
         lista,
-        const Positioned.fill(
-          child: Confeti(cores: coresCelebracion),
-        ),
+        const Positioned.fill(child: Confeti(cores: coresCelebracion)),
       ],
     );
   }
@@ -997,11 +1082,14 @@ class _Resultado extends StatelessWidget {
           children: [
             Padding(
               padding: const EdgeInsets.all(6),
-              child: Text(titulo.toUpperCase(),
-                  style: const TextStyle(
-                      fontSize: 12,
-                      fontWeight: FontWeight.w900,
-                      color: Colors.white)),
+              child: Text(
+                titulo.toUpperCase(),
+                style: const TextStyle(
+                  fontSize: 12,
+                  fontWeight: FontWeight.w900,
+                  color: Colors.white,
+                ),
+              ),
             ),
             Container(
               width: double.infinity,
@@ -1016,11 +1104,13 @@ class _Resultado extends StatelessWidget {
                   PixelAward(glyph: icono, tier: AwardTier.gold, size: 26),
                   const SizedBox(width: 8),
                   ContadorAnimado(
-                      valor: valor,
-                      style: TextStyle(
-                          fontSize: 20,
-                          fontWeight: FontWeight.w900,
-                          color: texto)),
+                    valor: valor,
+                    style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.w900,
+                      color: texto,
+                    ),
+                  ),
                 ],
               ),
             ),
@@ -1046,24 +1136,26 @@ void abrirLeccionDuolingo(
 }) {
   final proxecto =
       cursoId == 'curso_0_2' ? Proxectos02.lidos?.doMes(mesCalendario) : null;
-  Navigator.of(context).push(RutaLua(
-    de: context,
-    builder: (_) => LeccionDuolingoScreen(
-      pasos: proxecto != null
-          ? pasosDoProxecto(proxecto, semanaN, language)
-          : pasosDoDia(leccion, dia, language),
-      language: language,
-      audioService: audioService,
-      store: store,
-      crianza: crianza,
-      semana: semana,
-      palabrasDaSemana: proxecto != null
-          ? [for (final w in proxecto.daSemana(semanaN)) w.en]
-          : [
-              for (final p in leccion.novas)
-                if (p.en.isNotEmpty) p.en,
-            ],
-      agora: agora,
+  Navigator.of(context).push(
+    RutaLua(
+      de: context,
+      builder: (_) => LeccionDuolingoScreen(
+        pasos: proxecto != null
+            ? pasosDoProxecto(proxecto, semanaN, language)
+            : pasosDoDia(leccion, dia, language),
+        language: language,
+        audioService: audioService,
+        store: store,
+        crianza: crianza,
+        semana: semana,
+        palabrasDaSemana: proxecto != null
+            ? [for (final w in proxecto.daSemana(semanaN)) w.en]
+            : [
+                for (final p in leccion.novas)
+                  if (p.en.isNotEmpty) p.en,
+              ],
+        agora: agora,
+      ),
     ),
-  ));
+  );
 }

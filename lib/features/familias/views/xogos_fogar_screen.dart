@@ -160,8 +160,10 @@ class _XogosFogarScreenState extends State<XogosFogarScreen> {
                     scrollDirection: Axis.horizontal,
                     child: Row(
                       children: [
-                        _buildFiltroChip('todas',
-                            isGl ? 'Todas as idades' : 'Todas las edades'),
+                        _buildFiltroChip(
+                          'todas',
+                          isGl ? 'Todas as idades' : 'Todas las edades',
+                        ),
                         const SizedBox(width: 8),
                         _buildFiltroChip('0-2', '0 a 2 anos'),
                         const SizedBox(width: 8),
@@ -238,7 +240,9 @@ class _XogosFogarScreenState extends State<XogosFogarScreen> {
                         children: [
                           Container(
                             padding: const EdgeInsets.symmetric(
-                                horizontal: 8, vertical: 2),
+                              horizontal: 8,
+                              vertical: 2,
+                            ),
                             decoration: BoxDecoration(
                               color: context.acentoTint,
                               borderRadius: BorderRadius.circular(6),
@@ -282,8 +286,11 @@ class _XogosFogarScreenState extends State<XogosFogarScreen> {
               ),
               child: Row(
                 children: [
-                  const Icon(Icons.inventory_2_rounded,
-                      size: 16, color: Color(0xFF4A5568)),
+                  const Icon(
+                    Icons.inventory_2_rounded,
+                    size: 16,
+                    color: Color(0xFF4A5568),
+                  ),
                   const SizedBox(width: 8),
                   Expanded(
                     child: Text(
@@ -313,8 +320,11 @@ class _XogosFogarScreenState extends State<XogosFogarScreen> {
                 children: [
                   const Row(
                     children: [
-                      Icon(Icons.record_voice_over_rounded,
-                          size: 16, color: Color(0xFF2B6CB0)),
+                      Icon(
+                        Icons.record_voice_over_rounded,
+                        size: 16,
+                        color: Color(0xFF2B6CB0),
+                      ),
                       SizedBox(width: 6),
                       Expanded(
                         child: Text(
@@ -359,7 +369,10 @@ class _XogosFogarScreenState extends State<XogosFogarScreen> {
             Text(
               xogo.guionAdulto.resolve(_language),
               style: const TextStyle(
-                  fontSize: 14, color: Color(0xFF2D3748), height: 1.35),
+                fontSize: 14,
+                color: Color(0xFF2D3748),
+                height: 1.35,
+              ),
             ),
             const SizedBox(height: 10),
 
@@ -378,7 +391,10 @@ class _XogosFogarScreenState extends State<XogosFogarScreen> {
             Text(
               xogo.accionKinestesica.resolve(_language),
               style: const TextStyle(
-                  fontSize: 14, color: Color(0xFF4A5568), height: 1.35),
+                fontSize: 14,
+                color: Color(0xFF4A5568),
+                height: 1.35,
+              ),
             ),
             const SizedBox(height: 14),
 

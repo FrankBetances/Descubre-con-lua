@@ -60,10 +60,11 @@ class VistaPasoEscoita extends StatelessWidget {
         children: [
           if (p.lamina case final c?)
             LaminaPalabra(
-                clave: c,
-                significado: p.significado.resolve(lang),
-                lang: lang,
-                ancho: ancho),
+              clave: c,
+              significado: p.significado.resolve(lang),
+              lang: lang,
+              ancho: ancho,
+            ),
           const SizedBox(height: 6),
           BotonEscuchar(
             audioService: audioService,
@@ -79,9 +80,14 @@ class VistaPasoEscoita extends StatelessWidget {
         ],
       );
 
-  Text _nota(String t) => Text(t,
-      style: const TextStyle(
-          fontSize: 16, height: 1.4, color: AppTheme.textPrimary));
+  Text _nota(String t) => Text(
+        t,
+        style: const TextStyle(
+          fontSize: 16,
+          height: 1.4,
+          color: AppTheme.textPrimary,
+        ),
+      );
 
   @override
   Widget build(BuildContext context) {
@@ -101,14 +107,17 @@ class VistaPasoEscoita extends StatelessWidget {
           const SizedBox(height: 14),
           _nota(p.nota.resolve(lang)),
           const SizedBox(height: 8),
-          _nota(gl
-              ? 'Di ti unha das dúas sen sinalar; o neno ou a nena sinala o debuxo.'
-              : 'Di tú una de las dos sin señalar; el niño o la niña señala el dibujo.'),
+          _nota(
+            gl
+                ? 'Di ti unha das dúas sen sinalar; o neno ou a nena sinala o debuxo.'
+                : 'Di tú una de las dos sin señalar; el niño o la niña señala el dibujo.',
+          ),
         ],
       2 => [
-          Text(p.tema.resolve(lang),
-              style:
-                  const TextStyle(fontSize: 18, fontWeight: FontWeight.w800)),
+          Text(
+            p.tema.resolve(lang),
+            style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w800),
+          ),
           const SizedBox(height: 10),
           for (var i = 0; i < p.fases.length; i++)
             Entrada(
@@ -124,12 +133,15 @@ class VistaPasoEscoita extends StatelessWidget {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text(_tipo(p.fases[i].tipo, gl),
-                              style: TextStyle(
-                                  fontSize: 14,
-                                  fontWeight: FontWeight.w900,
-                                  letterSpacing: 0.6,
-                                  color: context.acento)),
+                          Text(
+                            _tipo(p.fases[i].tipo, gl),
+                            style: TextStyle(
+                              fontSize: 14,
+                              fontWeight: FontWeight.w900,
+                              letterSpacing: 0.6,
+                              color: context.acento,
+                            ),
+                          ),
                           const SizedBox(height: 4),
                           _nota(p.fases[i].accion.resolve(lang)),
                         ],
@@ -141,9 +153,11 @@ class VistaPasoEscoita extends StatelessWidget {
             ),
         ],
       3 => [
-          _nota(gl
-              ? 'Se di «${p.neno}», devólvelle a palabra un pouco máis longa:'
-              : 'Si dice «${p.neno}», devuélvele la palabra un poco más larga:'),
+          _nota(
+            gl
+                ? 'Se di «${p.neno}», devólvelle a palabra un pouco máis longa:'
+                : 'Si dice «${p.neno}», devuélvele la palabra un poco más larga:',
+          ),
           const SizedBox(height: 10),
           for (var i = 0; i < p.adulto.length; i++)
             Entrada(

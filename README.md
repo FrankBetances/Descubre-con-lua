@@ -360,8 +360,9 @@ tres ficheros:
   cápsulas leídas, racha, la fecha del último día *sin hora* e insignias—;
 - si usa el repaso de inglés, **una ficha de repaso por palabra**: la palabra,
   los números del repaso espaciado y dos fechas *sin hora*;
-- **solo en casa**, de cada niño el nombre o apodo que escribe la familia, la
-  edad y el curso, lo que la persona adulta marca de sus palabras por semana
+- **solo en casa**, de cada niño el nombre o apodo que escribe la familia, el
+  mes y año de nacimiento (sin día), la edad, el curso y el año de revisión de
+  septiembre, lo que la persona adulta marca de sus palabras por semana
   (sin fecha ni hora) y sus premios con Lúa. Se borra desde la app o al
   desinstalarla. En el aula no se registra a ningún niño.
 

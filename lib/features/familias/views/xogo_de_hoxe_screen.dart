@@ -307,8 +307,11 @@ class _Pregado extends StatelessWidget {
                 padding: const EdgeInsets.symmetric(horizontal: 16),
                 child: Row(
                   children: [
-                    Icon(Icons.lightbulb_outline_rounded,
-                        color: context.acento, size: 22),
+                    Icon(
+                      Icons.lightbulb_outline_rounded,
+                      color: context.acento,
+                      size: 22,
+                    ),
                     const SizedBox(width: 10),
                     Expanded(
                       child: Text(

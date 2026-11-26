@@ -3,7 +3,7 @@ import 'package:flutter/foundation.dart';
 import '../../core/storage/local_store.dart';
 import 'xogo_lua.dart';
 
-/// Una criatura de la casa, tal como la registra la persona adulta.
+/// Un niño o niña de la casa, tal como lo registra la persona adulta.
 @immutable
 class Crianza {
   final String id;
@@ -11,6 +11,16 @@ class Crianza {
 
   /// Años cumplidos, de 0 a 6.
   final int idade;
+
+  /// Mes de nacimiento (1..12), opcional, sin día.
+  final int? mesNacemento;
+
+  /// Año de nacimiento (AAAA), opcional, sin día.
+  final int? anoNacemento;
+
+  /// Año del último septiembre en que la familia respondió a la propuesta
+  /// de pasar al curso siguiente (evita volver a preguntar ese año).
+  final int? promocionVistaAno;
 
   /// El curso de la app que sigue: `curso_0_2` … `curso_5_6`.
   final String curso;
@@ -20,17 +30,58 @@ class Crianza {
     required this.nome,
     required this.idade,
     required this.curso,
+    this.mesNacemento,
+    this.anoNacemento,
+    this.promocionVistaAno,
   });
 
-  Crianza copyWith({String? nome, int? idade, String? curso}) => Crianza(
+  /// Años cumplidos en [agora] a partir de [mesNacemento] y [anoNacemento] si
+  /// existen; si no, [idade].
+  int idadeEn(DateTime agora) {
+    final ano = anoNacemento;
+    final mes = mesNacemento;
+    if (ano == null || mes == null) return idade;
+    var anos = agora.year - ano;
+    if (agora.month < mes) anos--;
+    return anos.clamp(0, 6);
+  }
+
+  /// Meses de edad en [agora] cuando hay mes y año de nacimiento.
+  int? mesesEn(DateTime agora) {
+    final ano = anoNacemento;
+    final mes = mesNacemento;
+    if (ano == null || mes == null) return null;
+    final m = (agora.year - ano) * 12 + (agora.month - mes);
+    return m < 0 ? 0 : m;
+  }
+
+  Crianza copyWith({
+    String? nome,
+    int? idade,
+    String? curso,
+    int? mesNacemento,
+    int? anoNacemento,
+    int? promocionVistaAno,
+  }) =>
+      Crianza(
         id: id,
         nome: nome ?? this.nome,
         idade: idade ?? this.idade,
         curso: curso ?? this.curso,
+        mesNacemento: mesNacemento ?? this.mesNacemento,
+        anoNacemento: anoNacemento ?? this.anoNacemento,
+        promocionVistaAno: promocionVistaAno ?? this.promocionVistaAno,
       );
 
-  Map<String, dynamic> toJson() =>
-      {'id': id, 'nome': nome, 'idade': idade, 'curso': curso};
+  Map<String, dynamic> toJson() => {
+        'id': id,
+        'nome': nome,
+        'idade': idade,
+        'curso': curso,
+        if (mesNacemento != null) 'mesNacemento': mesNacemento,
+        if (anoNacemento != null) 'anoNacemento': anoNacemento,
+        if (promocionVistaAno != null) 'promocionVistaAno': promocionVistaAno,
+      };
 
   static Crianza? fromJson(Object? j) {
     if (j is! Map) return null;
@@ -38,8 +89,20 @@ class Crianza {
     final nome = j['nome']?.toString().trim() ?? '';
     final curso = j['curso']?.toString() ?? '';
     final idade = j['idade'] is int ? j['idade'] as int : 0;
+    final mes = j['mesNacemento'] is int ? j['mesNacemento'] as int : null;
+    final ano = j['anoNacemento'] is int ? j['anoNacemento'] as int : null;
+    final prom =
+        j['promocionVistaAno'] is int ? j['promocionVistaAno'] as int : null;
     if (id.isEmpty || nome.isEmpty || curso.isEmpty) return null;
-    return Crianza(id: id, nome: nome, idade: idade.clamp(0, 6), curso: curso);
+    return Crianza(
+      id: id,
+      nome: nome,
+      idade: idade.clamp(0, 6),
+      curso: curso,
+      mesNacemento: mes == null ? null : mes.clamp(1, 12),
+      anoNacemento: ano,
+      promocionVistaAno: prom,
+    );
   }
 }
 
@@ -49,10 +112,12 @@ enum Observacion { aindaNon, entende, di }
 
 /// Los niños de la casa y lo que la persona adulta ha observado de cada uno.
 ///
-/// **Lo que guarda** (O-20261109-1, decidido por Frank el 9/11/2026), en
-/// `criancas.json` de la carpeta privada de la app y en ningún otro sitio:
-/// - de cada niño, el nombre que escribió la persona adulta, la edad en años
-///   y el curso de la app;
+/// **Lo que guarda** (O-20261109-1, decidido por Frank el 9/11/2026; D3,
+/// 26/11/2026), en `criancas.json` de la carpeta privada de la app y en ningún
+/// otro sitio:
+/// - de cada niño, el nombre que escribió la persona adulta, la edad en años,
+///   el mes y año de nacimiento (sin día), el año de la última revisión de
+///   curso de septiembre y el curso de la app;
 /// - qué niño se vio el último, para no volver a preguntarlo;
 /// - por semana del curso (`curso/mes/semana`, sin fecha ni hora), qué
 ///   palabras inglesas la persona adulta marcó como «la entiende» o «la dice».
@@ -65,6 +130,28 @@ class CriancasStore extends ChangeNotifier {
       : _store = store ?? LocalStore(fileName: nomeFicheiro);
 
   static const nomeFicheiro = 'criancas.json';
+
+  static const List<String> cursosOrde = [
+    'curso_0_2',
+    'curso_2_3',
+    'curso_3_4',
+    'curso_4_5',
+    'curso_5_6',
+  ];
+
+  static String cursoParaIdade(int idade) => switch (idade) {
+        0 || 1 => 'curso_0_2',
+        2 => 'curso_2_3',
+        3 => 'curso_3_4',
+        4 => 'curso_4_5',
+        _ => 'curso_5_6',
+      };
+
+  static String? seguinteCurso(String curso) {
+    final i = cursosOrde.indexOf(curso);
+    if (i < 0 || i + 1 >= cursosOrde.length) return null;
+    return cursosOrde[i + 1];
+  }
 
   /// El que usa el Portal Familias si no se le pasa otro. Los tests lo
   /// cambian (`test/flutter_test_config.dart`) para entrar con un niño ya
@@ -171,12 +258,18 @@ class CriancasStore extends ChangeNotifier {
     required String nome,
     required int idade,
     required String curso,
+    int? mesNacemento,
+    int? anoNacemento,
+    int? promocionVistaAno,
   }) async {
     final c = Crianza(
       id: _novoId(),
       nome: nome.trim(),
       idade: idade.clamp(0, 6),
       curso: curso,
+      mesNacemento: mesNacemento?.clamp(1, 12),
+      anoNacemento: anoNacemento,
+      promocionVistaAno: promocionVistaAno,
     );
     _criancas.add(c);
     _activa = c.id;
@@ -190,14 +283,58 @@ class CriancasStore extends ChangeNotifier {
     await _gardar();
   }
 
-  Future<void> actualizar(String id,
-      {String? nome, int? idade, String? curso}) async {
+  Future<void> actualizar(
+    String id, {
+    String? nome,
+    int? idade,
+    String? curso,
+    int? mesNacemento,
+    int? anoNacemento,
+    int? promocionVistaAno,
+  }) async {
     final i = _criancas.indexWhere((c) => c.id == id);
     if (i < 0) return;
     _criancas[i] = _criancas[i].copyWith(
       nome: nome?.trim(),
       idade: idade?.clamp(0, 6),
       curso: curso,
+      mesNacemento: mesNacemento?.clamp(1, 12),
+      anoNacemento: anoNacemento,
+      promocionVistaAno: promocionVistaAno,
+    );
+    await _gardar();
+  }
+
+  /// En septiembre propone pasar al curso siguiente si por mes y año de
+  /// nacimiento le corresponde un curso superior al actual y no se ha
+  /// respondido ya este año.
+  String? cursoPropostoEnSetembro(Crianza c, DateTime agora) {
+    if (agora.month != 9) return null;
+    if (c.promocionVistaAno == agora.year) return null;
+    if (c.mesNacemento == null || c.anoNacemento == null) return null;
+    final prox = seguinteCurso(c.curso);
+    if (prox == null) return null;
+    final esperado = cursoParaIdade(c.idadeEn(agora));
+    if (cursosOrde.indexOf(esperado) > cursosOrde.indexOf(c.curso)) {
+      return prox;
+    }
+    return null;
+  }
+
+  Future<void> responderPromocionSetembro(
+    String id, {
+    required int ano,
+    required bool aceptar,
+    DateTime? agora,
+  }) async {
+    final i = _criancas.indexWhere((c) => c.id == id);
+    if (i < 0) return;
+    final c = _criancas[i];
+    final prox = aceptar ? seguinteCurso(c.curso) : null;
+    _criancas[i] = c.copyWith(
+      curso: prox ?? c.curso,
+      idade: c.idadeEn(agora ?? DateTime(ano, 9)),
+      promocionVistaAno: ano,
     );
     await _gardar();
   }
@@ -222,7 +359,11 @@ class CriancasStore extends ChangeNotifier {
       };
 
   Future<void> observar(
-      String id, String semana, String palabra, Observacion o) async {
+    String id,
+    String semana,
+    String palabra,
+    Observacion o,
+  ) async {
     final porSemana = _obs.putIfAbsent(id, () => {});
     final palabras = porSemana.putIfAbsent(semana, () => {});
     if (o == Observacion.aindaNon) {
@@ -299,11 +440,14 @@ class CriancasStore extends ChangeNotifier {
         vistas.isEmpty ? 0.0 : vistas.reduce((a, b) => a + b) / vistas.length;
     final perfecta = palabrasDaSemana.isNotEmpty &&
         palabrasDaSemana.every((p) => marcas[p] == 2);
-    final r = rexistrarSesion(xogo(id), c,
-        agora: agora,
-        palabras: vistas.length,
-        media: media,
-        perfecta: perfecta);
+    final r = rexistrarSesion(
+      xogo(id),
+      c,
+      agora: agora,
+      palabras: vistas.length,
+      media: media,
+      perfecta: perfecta,
+    );
     _xogo[id] = r.xogo;
     await _gardar();
     return r.recompensa;
