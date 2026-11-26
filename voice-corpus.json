@@ -1,15 +1,15 @@
 {
- "generatedAt": "2026-11-22T10:26:25Z",
- "entries": 40160,
+ "generatedAt": "2026-11-26T12:23:23Z",
+ "entries": 40550,
  "byStyle": {
-  "child": 493,
-  "slow": 6513,
-  "tutor": 33154
+  "child": 552,
+  "slow": 6572,
+  "tutor": 33426
  },
  "byLang": {
-  "en": 18207,
-  "es": 10976,
-  "gl": 10977
+  "en": 18325,
+  "es": 11112,
+  "gl": 11113
  },
  "corpus": [
   {
@@ -238,6 +238,15 @@
    "pack": false
   },
   {
+   "id": "en_child_0e605430_12",
+   "lang": "en",
+   "style": "child",
+   "text": "Red or blue?",
+   "speech": "Red or blue?",
+   "source": "nivel/curso_3_4/c3_4_p3_3/en",
+   "pack": false
+  },
+  {
    "id": "en_child_0e6c3449_35",
    "lang": "en",
    "style": "child",
@@ -283,12 +292,30 @@
    "pack": false
   },
   {
+   "id": "en_child_0fbcefc5_20",
+   "lang": "en",
+   "style": "child",
+   "text": "Books make it heavy.",
+   "speech": "Books make it heavy.",
+   "source": "nivel/curso_5_6/c5_6_p6_3/en",
+   "pack": false
+  },
+  {
    "id": "en_child_10a16af1_45",
    "lang": "en",
    "style": "child",
    "text": "Compare the heavy suitcase and the light bag.",
    "speech": "Compare the heavy suitcase and the light bag.",
    "source": "escoita/curso_5_6/8/pensamiento/compara",
+   "pack": false
+  },
+  {
+   "id": "en_child_10f2abf3_14",
+   "lang": "en",
+   "style": "child",
+   "text": "Loud or quiet?",
+   "speech": "Loud or quiet?",
+   "source": "nivel/curso_2_3/c2_3_p3_3/en",
    "pack": false
   },
   {
@@ -355,6 +382,15 @@
    "pack": false
   },
   {
+   "id": "en_child_1601925c_13",
+   "lang": "en",
+   "style": "child",
+   "text": "Roll it down!",
+   "speech": "Roll it down!",
+   "source": "nivel/curso_3_4/c3_4_p1_3/en",
+   "pack": false
+  },
+  {
    "id": "en_child_162d273f_12",
    "lang": "en",
    "style": "child",
@@ -370,6 +406,15 @@
    "text": "Hold the handle to test the weight.",
    "speech": "Hold the handle to test the weight.",
    "source": "escoita/curso_5_6/8/handle/frase",
+   "pack": false
+  },
+  {
+   "id": "en_child_1712eaf2_12",
+   "lang": "en",
+   "style": "child",
+   "text": "Muddy puddle",
+   "speech": "Muddy puddle",
+   "source": "nivel/curso_4_5/c4_5_p5_3/en",
    "pack": false
   },
   {
@@ -514,6 +559,15 @@
    "text": "Where on the map grid is the secret trail?",
    "speech": "Where on the map grid is the secret trail?",
    "source": "escoita/curso_5_6/7/pensamiento/predice",
+   "pack": false
+  },
+  {
+   "id": "en_child_1fbd0b80_18",
+   "lang": "en",
+   "style": "child",
+   "text": "The sponge is wet.",
+   "speech": "The sponge is wet.",
+   "source": "nivel/curso_4_5/c4_5_p6_1/en",
    "pack": false
   },
   {
@@ -697,6 +751,15 @@
    "pack": false
   },
   {
+   "id": "en_child_2660b14f_15",
+   "lang": "en",
+   "style": "child",
+   "text": "Wash your hands",
+   "speech": "Wash your hands",
+   "source": "nivel/curso_2_3/c2_3_p1_3/en",
+   "pack": false
+  },
+  {
    "id": "en_child_26745307_31",
    "lang": "en",
    "style": "child",
@@ -850,6 +913,15 @@
    "pack": false
   },
   {
+   "id": "en_child_2dd1d48f_15",
+   "lang": "en",
+   "style": "child",
+   "text": "Soap and water!",
+   "speech": "Soap and water!",
+   "source": "nivel/curso_2_3/c2_3_p6_3/en",
+   "pack": false
+  },
+  {
    "id": "en_child_2dd542db_54",
    "lang": "en",
    "style": "child",
@@ -892,6 +964,15 @@
    "text": "Why is every seat ready now?",
    "speech": "Why is every seat ready now?",
    "source": "escoita/curso_3_4/7/pensamiento/explica",
+   "pack": false
+  },
+  {
+   "id": "en_child_2ec687e7_19",
+   "lang": "en",
+   "style": "child",
+   "text": "Where is the spoon?",
+   "speech": "Where is the spoon?",
+   "source": "nivel/curso_3_4/c3_4_p2_3/en",
    "pack": false
   },
   {
@@ -1057,12 +1138,30 @@
    "pack": false
   },
   {
+   "id": "en_child_38009881_8",
+   "lang": "en",
+   "style": "child",
+   "text": "Blue cup",
+   "speech": "Blue cup",
+   "source": "nivel/curso_3_4/c3_4_p5_2/en",
+   "pack": false
+  },
+  {
    "id": "en_child_383db316_12",
    "lang": "en",
    "style": "child",
    "text": "A loud drum.",
    "speech": "A loud drum.",
    "source": "escoita/curso_2_3/4/modelo/1",
+   "pack": false
+  },
+  {
+   "id": "en_child_38aa15ef_25",
+   "lang": "en",
+   "style": "child",
+   "text": "Loud paper or soft paper?",
+   "speech": "Loud paper or soft paper?",
+   "source": "nivel/curso_5_6/c5_6_p3_1/en",
    "pack": false
   },
   {
@@ -1363,12 +1462,30 @@
    "pack": false
   },
   {
+   "id": "en_child_46fb5732_25",
+   "lang": "en",
+   "style": "child",
+   "text": "Put the boat on the water",
+   "speech": "Put the boat on the water",
+   "source": "nivel/curso_2_3/c2_3_p1_1/en",
+   "pack": false
+  },
+  {
    "id": "en_child_471583b3_36",
    "lang": "en",
    "style": "child",
    "text": "This big stone goes down in the tub.",
    "speech": "This big stone goes down in the tub.",
    "source": "escoita/curso_2_3/1/stone/frase",
+   "pack": false
+  },
+  {
+   "id": "en_child_47920b04_7",
+   "lang": "en",
+   "style": "child",
+   "text": "Dry bag",
+   "speech": "Dry bag",
+   "source": "nivel/curso_4_5/c4_5_p5_1/en",
    "pack": false
   },
   {
@@ -1435,6 +1552,15 @@
    "pack": false
   },
   {
+   "id": "en_child_4c36c10e_11",
+   "lang": "en",
+   "style": "child",
+   "text": "Wet or dry?",
+   "speech": "Wet or dry?",
+   "source": "nivel/curso_2_3/c2_3_p3_2/en",
+   "pack": false
+  },
+  {
    "id": "en_child_4c5968d9_37",
    "lang": "en",
    "style": "child",
@@ -1459,6 +1585,15 @@
    "text": "We mix the wet sticky mud.",
    "speech": "We mix the wet sticky mud.",
    "source": "escoita/curso_4_5/6/modelo/2",
+   "pack": false
+  },
+  {
+   "id": "en_child_4cb2be3e_17",
+   "lang": "en",
+   "style": "child",
+   "text": "Show me the towel",
+   "speech": "Show me the towel",
+   "source": "nivel/curso_2_3/c2_3_p2_3/en",
    "pack": false
   },
   {
@@ -1570,6 +1705,15 @@
    "pack": false
   },
   {
+   "id": "en_child_5292c5df_20",
+   "lang": "en",
+   "style": "child",
+   "text": "My heart beats fast!",
+   "speech": "My heart beats fast!",
+   "source": "nivel/curso_4_5/c4_5_p6_2/en",
+   "pack": false
+  },
+  {
    "id": "en_child_532e1310_27",
    "lang": "en",
    "style": "child",
@@ -1579,12 +1723,39 @@
    "pack": false
   },
   {
+   "id": "en_child_54dd9760_22",
+   "lang": "en",
+   "style": "child",
+   "text": "Sponge wet or bag dry?",
+   "speech": "Sponge wet or bag dry?",
+   "source": "nivel/curso_4_5/c4_5_p3_1/en",
+   "pack": false
+  },
+  {
    "id": "en_child_5727994c_42",
    "lang": "en",
    "style": "child",
    "text": "After jumping, your heart beats very fast!",
    "speech": "After jumping, your heart beats very fast!",
    "source": "escoita/curso_4_5/2/fast/frase",
+   "pack": false
+  },
+  {
+   "id": "en_child_57fabcb4_19",
+   "lang": "en",
+   "style": "child",
+   "text": "Find the rain cloud",
+   "speech": "Find the rain cloud",
+   "source": "nivel/curso_4_5/c4_5_p2_3/en",
+   "pack": false
+  },
+  {
+   "id": "en_child_581af4e9_16",
+   "lang": "en",
+   "style": "child",
+   "text": "Put on your coat",
+   "speech": "Put on your coat",
+   "source": "nivel/curso_4_5/c4_5_p1_2/en",
    "pack": false
   },
   {
@@ -1603,6 +1774,15 @@
    "text": "Shine the light in the dark.",
    "speech": "Shine the light in the dark.",
    "source": "escoita/curso_2_3/10/pensamiento/proba",
+   "pack": false
+  },
+  {
+   "id": "en_child_587da5dc_10",
+   "lang": "en",
+   "style": "child",
+   "text": "More juice",
+   "speech": "More juice",
+   "source": "nivel/curso_3_4/c3_4_p5_3/en",
    "pack": false
   },
   {
@@ -1687,6 +1867,15 @@
    "pack": false
   },
   {
+   "id": "en_child_5c2bf63d_27",
+   "lang": "en",
+   "style": "child",
+   "text": "Blue and yellow make green.",
+   "speech": "Blue and yellow make green.",
+   "source": "nivel/curso_5_6/c5_6_p6_1/en",
+   "pack": false
+  },
+  {
    "id": "en_child_5ca96c6c_30",
    "lang": "en",
    "style": "child",
@@ -1750,12 +1939,30 @@
    "pack": false
   },
   {
+   "id": "en_child_5ff5a70a_13",
+   "lang": "en",
+   "style": "child",
+   "text": "Fast or slow?",
+   "speech": "Fast or slow?",
+   "source": "nivel/curso_4_5/c4_5_p3_2/en",
+   "pack": false
+  },
+  {
    "id": "en_child_6088173a_25",
    "lang": "en",
    "style": "child",
    "text": "See the tiny seed inside.",
    "speech": "See the tiny seed inside.",
    "source": "escoita/curso_2_3/6/pensamiento/proba",
+   "pack": false
+  },
+  {
+   "id": "en_child_62080b83_11",
+   "lang": "en",
+   "style": "child",
+   "text": "Paper plane",
+   "speech": "Paper plane",
+   "source": "nivel/curso_5_6/c5_6_p5_1/en",
    "pack": false
   },
   {
@@ -1828,6 +2035,15 @@
    "text": "Drop a stone from up high.",
    "speech": "Drop a stone from up high.",
    "source": "escoita/curso_2_3/4/drop/frase",
+   "pack": false
+  },
+  {
+   "id": "en_child_6622a0a3_20",
+   "lang": "en",
+   "style": "child",
+   "text": "The train goes down!",
+   "speech": "The train goes down!",
+   "source": "nivel/curso_3_4/c3_4_p6_3/en",
    "pack": false
   },
   {
@@ -2200,12 +2416,30 @@
    "pack": false
   },
   {
+   "id": "en_child_7bf8f308_24",
+   "lang": "en",
+   "style": "child",
+   "text": "This plane flew further!",
+   "speech": "This plane flew further!",
+   "source": "nivel/curso_5_6/c5_6_p6_2/en",
+   "pack": false
+  },
+  {
    "id": "en_child_7c0f85d7_27",
    "lang": "en",
    "style": "child",
    "text": "Watch the heavy stone sink!",
    "speech": "Watch the heavy stone sink!",
    "source": "escoita/curso_2_3/1/sink/frase",
+   "pack": false
+  },
+  {
+   "id": "en_child_7c38d79b_9",
+   "lang": "en",
+   "style": "child",
+   "text": "Big waves",
+   "speech": "Big waves",
+   "source": "nivel/curso_2_3/c2_3_p5_3/en",
    "pack": false
   },
   {
@@ -2242,6 +2476,15 @@
    "text": "Stop, wait, and cross safely!",
    "speech": "Stop, wait, and cross safely!",
    "source": "escoita/ar/ra_curso_2_3_m03/frase/0",
+   "pack": false
+  },
+  {
+   "id": "en_child_7de3284d_14",
+   "lang": "en",
+   "style": "child",
+   "text": "Follow the map",
+   "speech": "Follow the map",
+   "source": "nivel/curso_5_6/c5_6_p1_2/en",
    "pack": false
   },
   {
@@ -2332,6 +2575,24 @@
    "text": "Tight string or loose string: can we talk?",
    "speech": "Tight string or loose string: can we talk?",
    "source": "escoita/curso_3_4/4/pensamiento/predice",
+   "pack": false
+  },
+  {
+   "id": "en_child_83f0acc1_11",
+   "lang": "en",
+   "style": "child",
+   "text": "Blow harder",
+   "speech": "Blow harder",
+   "source": "nivel/curso_4_5/c4_5_p1_3/en",
+   "pack": false
+  },
+  {
+   "id": "en_child_845f763b_14",
+   "lang": "en",
+   "style": "child",
+   "text": "Fold the paper",
+   "speech": "Fold the paper",
+   "source": "nivel/curso_5_6/c5_6_p1_1/en",
    "pack": false
   },
   {
@@ -2533,6 +2794,24 @@
    "pack": false
   },
   {
+   "id": "en_child_90a3d5be_25",
+   "lang": "en",
+   "style": "child",
+   "text": "If it rains, we make mud.",
+   "speech": "If it rains, we make mud.",
+   "source": "nivel/curso_4_5/c4_5_p6_3/en",
+   "pack": false
+  },
+  {
+   "id": "en_child_9143eda4_14",
+   "lang": "en",
+   "style": "child",
+   "text": "Find the stone",
+   "speech": "Find the stone",
+   "source": "nivel/curso_2_3/c2_3_p2_2/en",
+   "pack": false
+  },
+  {
    "id": "en_child_91be43f4_35",
    "lang": "en",
    "style": "child",
@@ -2593,6 +2872,15 @@
    "text": "Big apple or tiny seed?",
    "speech": "Big apple or tiny seed?",
    "source": "escoita/curso_2_3/6/pensamiento/compara",
+   "pack": false
+  },
+  {
+   "id": "en_child_9386a346_19",
+   "lang": "en",
+   "style": "child",
+   "text": "Where is the flute?",
+   "speech": "Where is the flute?",
+   "source": "nivel/curso_5_6/c5_6_p2_3/en",
    "pack": false
   },
   {
@@ -2749,6 +3037,15 @@
    "pack": false
   },
   {
+   "id": "en_child_9dd08a26_13",
+   "lang": "en",
+   "style": "child",
+   "text": "Big or small?",
+   "speech": "Big or small?",
+   "source": "nivel/curso_2_3/c2_3_p3_1/en",
+   "pack": false
+  },
+  {
    "id": "en_child_9dedaf3f_40",
    "lang": "en",
    "style": "child",
@@ -2764,6 +3061,15 @@
    "text": "High note jar or low note jar?",
    "speech": "High note jar or low note jar?",
    "source": "escoita/curso_3_4/9/pensamiento/compara",
+   "pack": false
+  },
+  {
+   "id": "en_child_9e2ee9a0_13",
+   "lang": "en",
+   "style": "child",
+   "text": "Blow the boat",
+   "speech": "Blow the boat",
+   "source": "nivel/curso_2_3/c2_3_p1_2/en",
    "pack": false
   },
   {
@@ -2800,6 +3106,15 @@
    "text": "Pull the string tight and listen.",
    "speech": "Pull the string tight and listen.",
    "source": "escoita/curso_3_4/4/pensamiento/proba",
+   "pack": false
+  },
+  {
+   "id": "en_child_a1639384_16",
+   "lang": "en",
+   "style": "child",
+   "text": "The boat floats!",
+   "speech": "The boat floats!",
+   "source": "nivel/curso_2_3/c2_3_p6_1/en",
    "pack": false
   },
   {
@@ -2947,6 +3262,24 @@
    "pack": false
   },
   {
+   "id": "en_child_a77cca54_17",
+   "lang": "en",
+   "style": "child",
+   "text": "Pour into the cup",
+   "speech": "Pour into the cup",
+   "source": "nivel/curso_3_4/c3_4_p1_2/en",
+   "pack": false
+  },
+  {
+   "id": "en_child_a79f0f6b_16",
+   "lang": "en",
+   "style": "child",
+   "text": "Point to the sun",
+   "speech": "Point to the sun",
+   "source": "nivel/curso_4_5/c4_5_p2_2/en",
+   "pack": false
+  },
+  {
    "id": "en_child_a7a79a4d_30",
    "lang": "en",
    "style": "child",
@@ -3034,6 +3367,15 @@
    "text": "Fold the butterfly wing and press it flat.",
    "speech": "Fold the butterfly wing and press it flat.",
    "source": "escoita/curso_5_6/3/pensamiento/proba",
+   "pack": false
+  },
+  {
+   "id": "en_child_acf57f62_15",
+   "lang": "en",
+   "style": "child",
+   "text": "Red, blue, red!",
+   "speech": "Red, blue, red!",
+   "source": "nivel/curso_3_4/c3_4_p6_2/en",
    "pack": false
   },
   {
@@ -3178,6 +3520,15 @@
    "text": "Continue the pattern on the paper strip.",
    "speech": "Continue the pattern on the paper strip.",
    "source": "escoita/curso_3_4/2/pattern/frase",
+   "pack": false
+  },
+  {
+   "id": "en_child_b66b0312_20",
+   "lang": "en",
+   "style": "child",
+   "text": "Show me the suitcase",
+   "speech": "Show me the suitcase",
+   "source": "nivel/curso_5_6/c5_6_p2_2/en",
    "pack": false
   },
   {
@@ -3352,12 +3703,30 @@
    "pack": false
   },
   {
+   "id": "en_child_bedb8547_15",
+   "lang": "en",
+   "style": "child",
+   "text": "It stands tall!",
+   "speech": "It stands tall!",
+   "source": "nivel/curso_3_4/c3_4_p6_1/en",
+   "pack": false
+  },
+  {
    "id": "en_child_bfb99ae4_33",
    "lang": "en",
    "style": "child",
    "text": "Which color piece comes next now?",
    "speech": "Which color piece comes next now?",
    "source": "escoita/curso_3_4/2/piece/frase",
+   "pack": false
+  },
+  {
+   "id": "en_child_bfcadae6_18",
+   "lang": "en",
+   "style": "child",
+   "text": "Put a block on top",
+   "speech": "Put a block on top",
+   "source": "nivel/curso_3_4/c3_4_p1_1/en",
    "pack": false
   },
   {
@@ -3385,6 +3754,15 @@
    "text": "Step fast to the drum, then tiptoe slowly.",
    "speech": "Step fast to the drum, then tiptoe slowly.",
    "source": "escoita/curso_2_3/9/modelo/2",
+   "pack": false
+  },
+  {
+   "id": "en_child_c1244a18_18",
+   "lang": "en",
+   "style": "child",
+   "text": "Where is the boat?",
+   "speech": "Where is the boat?",
+   "source": "nivel/curso_2_3/c2_3_p2_1/en",
    "pack": false
   },
   {
@@ -3421,6 +3799,15 @@
    "text": "Air pushes each folded paper blade.",
    "speech": "Air pushes each folded paper blade.",
    "source": "escoita/curso_4_5/7/blade/frase",
+   "pack": false
+  },
+  {
+   "id": "en_child_c2a6810a_13",
+   "lang": "en",
+   "style": "child",
+   "text": "Little lights",
+   "speech": "Little lights",
+   "source": "nivel/curso_5_6/c5_6_p5_3/en",
    "pack": false
   },
   {
@@ -3505,6 +3892,15 @@
    "pack": false
   },
   {
+   "id": "en_child_c56db616_14",
+   "lang": "en",
+   "style": "child",
+   "text": "Storm umbrella",
+   "speech": "Storm umbrella",
+   "source": "nivel/curso_4_5/c4_5_p5_2/en",
+   "pack": false
+  },
+  {
    "id": "en_child_c7714bae_35",
    "lang": "en",
    "style": "child",
@@ -3550,6 +3946,15 @@
    "pack": false
   },
   {
+   "id": "en_child_ccfdceb9_15",
+   "lang": "en",
+   "style": "child",
+   "text": "Tall or wobbly?",
+   "speech": "Tall or wobbly?",
+   "source": "nivel/curso_3_4/c3_4_p3_1/en",
+   "pack": false
+  },
+  {
    "id": "en_child_cd014d59_13",
    "lang": "en",
    "style": "child",
@@ -3574,6 +3979,15 @@
    "text": "Mix soil and water with a spoon.",
    "speech": "Mix soil and water with a spoon.",
    "source": "escoita/curso_4_5/6/mix/frase",
+   "pack": false
+  },
+  {
+   "id": "en_child_cdff60ff_10",
+   "lang": "en",
+   "style": "child",
+   "text": "It is wet!",
+   "speech": "It is wet!",
+   "source": "nivel/curso_2_3/c2_3_p6_2/en",
    "pack": false
   },
   {
@@ -3604,6 +4018,24 @@
    "pack": false
   },
   {
+   "id": "en_child_d046b5f8_9",
+   "lang": "en",
+   "style": "child",
+   "text": "Big stone",
+   "speech": "Big stone",
+   "source": "nivel/curso_2_3/c2_3_p5_1/en",
+   "pack": false
+  },
+  {
+   "id": "en_child_d086d6d5_18",
+   "lang": "en",
+   "style": "child",
+   "text": "Touch the blue cup",
+   "speech": "Touch the blue cup",
+   "source": "nivel/curso_3_4/c3_4_p2_1/en",
+   "pack": false
+  },
+  {
    "id": "en_child_d1afdbd2_29",
    "lang": "en",
    "style": "child",
@@ -3622,12 +4054,30 @@
    "pack": false
   },
   {
+   "id": "en_child_d202e6db_19",
+   "lang": "en",
+   "style": "child",
+   "text": "Point to the shadow",
+   "speech": "Point to the shadow",
+   "source": "nivel/curso_3_4/c3_4_p2_2/en",
+   "pack": false
+  },
+  {
    "id": "en_child_d2879337_51",
    "lang": "en",
    "style": "child",
    "text": "What color appears if we mix yellow and blue paint?",
    "speech": "What color appears if we mix yellow and blue paint?",
    "source": "escoita/curso_5_6/1/pensamiento/predice",
+   "pack": false
+  },
+  {
+   "id": "en_child_d2f8331e_17",
+   "lang": "en",
+   "style": "child",
+   "text": "Faster or slower?",
+   "speech": "Faster or slower?",
+   "source": "nivel/curso_5_6/c5_6_p3_3/en",
    "pack": false
   },
   {
@@ -3811,6 +4261,15 @@
    "pack": false
   },
   {
+   "id": "en_child_de1f3ef2_15",
+   "lang": "en",
+   "style": "child",
+   "text": "Spin the circle",
+   "speech": "Spin the circle",
+   "source": "nivel/curso_5_6/c5_6_p1_3/en",
+   "pack": false
+  },
+  {
    "id": "en_child_ded4a205_44",
    "lang": "en",
    "style": "child",
@@ -3853,6 +4312,15 @@
    "text": "Why did one side of the scale go down?",
    "speech": "Why did one side of the scale go down?",
    "source": "escoita/curso_5_6/8/pensamiento/explica",
+   "pack": false
+  },
+  {
+   "id": "en_child_e2cb0fba_15",
+   "lang": "en",
+   "style": "child",
+   "text": "Heavy or light?",
+   "speech": "Heavy or light?",
+   "source": "nivel/curso_5_6/c5_6_p3_2/en",
    "pack": false
   },
   {
@@ -3937,6 +4405,15 @@
    "pack": false
   },
   {
+   "id": "en_child_e50e8531_9",
+   "lang": "en",
+   "style": "child",
+   "text": "Dry towel",
+   "speech": "Dry towel",
+   "source": "nivel/curso_2_3/c2_3_p5_2/en",
+   "pack": false
+  },
+  {
    "id": "en_child_e573ce2e_20",
    "lang": "en",
    "style": "child",
@@ -4006,6 +4483,15 @@
    "text": "The boot is heavy.",
    "speech": "The boot is heavy.",
    "source": "escoita/curso_2_3/1/pensamiento/explica/modelo",
+   "pack": false
+  },
+  {
+   "id": "en_child_eb0798a7_13",
+   "lang": "en",
+   "style": "child",
+   "text": "Bright colors",
+   "speech": "Bright colors",
+   "source": "nivel/curso_5_6/c5_6_p5_2/en",
    "pack": false
   },
   {
@@ -4189,6 +4675,15 @@
    "pack": false
   },
   {
+   "id": "en_child_f264709b_19",
+   "lang": "en",
+   "style": "child",
+   "text": "Show me the bandage",
+   "speech": "Show me the bandage",
+   "source": "nivel/curso_4_5/c4_5_p2_1/en",
+   "pack": false
+  },
+  {
    "id": "en_child_f2701277_43",
    "lang": "en",
    "style": "child",
@@ -4213,6 +4708,15 @@
    "text": "Five glass jars hold different water levels.",
    "speech": "Five glass jars hold different water levels.",
    "source": "escoita/curso_3_4/9/jar/frase",
+   "pack": false
+  },
+  {
+   "id": "en_child_f5fc22f7_10",
+   "lang": "en",
+   "style": "child",
+   "text": "Tall tower",
+   "speech": "Tall tower",
+   "source": "nivel/curso_3_4/c3_4_p5_1/en",
    "pack": false
   },
   {
@@ -4279,12 +4783,30 @@
    "pack": false
   },
   {
+   "id": "en_child_f7156b77_18",
+   "lang": "en",
+   "style": "child",
+   "text": "Bigger or smaller?",
+   "speech": "Bigger or smaller?",
+   "source": "nivel/curso_4_5/c4_5_p3_3/en",
+   "pack": false
+  },
+  {
    "id": "en_child_f71954aa_33",
    "lang": "en",
    "style": "child",
    "text": "The little boat has a paper sail.",
    "speech": "The little boat has a paper sail.",
    "source": "escoita/curso_2_3/2/sail/frase",
+   "pack": false
+  },
+  {
+   "id": "en_child_f7c4231a_22",
+   "lang": "en",
+   "style": "child",
+   "text": "Point to the butterfly",
+   "speech": "Point to the butterfly",
+   "source": "nivel/curso_5_6/c5_6_p2_1/en",
    "pack": false
   },
   {
@@ -4447,6 +4969,15 @@
    "text": "Why is the wet towel heavy?",
    "speech": "Why is the wet towel heavy?",
    "source": "escoita/curso_2_3/8/pensamiento/explica",
+   "pack": false
+  },
+  {
+   "id": "en_child_ffed3920_15",
+   "lang": "en",
+   "style": "child",
+   "text": "Feel your heart",
+   "speech": "Feel your heart",
+   "source": "nivel/curso_4_5/c4_5_p1_1/en",
    "pack": false
   },
   {
@@ -7735,6 +8266,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_0e605430_12",
+   "lang": "en",
+   "style": "slow",
+   "text": "Red or blue?",
+   "speech": "Red or blue?",
+   "source": "nivel/curso_3_4/c3_4_p3_3/en/slow",
+   "pack": false
+  },
+  {
    "id": "en_slow_0e6c3449_35",
    "lang": "en",
    "style": "slow",
@@ -8068,6 +8608,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_0fbcefc5_20",
+   "lang": "en",
+   "style": "slow",
+   "text": "Books make it heavy.",
+   "speech": "Books make it heavy.",
+   "source": "nivel/curso_5_6/c5_6_p6_3/en/slow",
+   "pack": false
+  },
+  {
    "id": "en_slow_0fbeac38_8",
    "lang": "en",
    "style": "slow",
@@ -8344,6 +8893,15 @@
    "text": "intend",
    "speech": "intend",
    "source": "corpus/1470/lemma",
+   "pack": false
+  },
+  {
+   "id": "en_slow_10f2abf3_14",
+   "lang": "en",
+   "style": "slow",
+   "text": "Loud or quiet?",
+   "speech": "Loud or quiet?",
+   "source": "nivel/curso_2_3/c2_3_p3_3/en/slow",
    "pack": false
   },
   {
@@ -9373,6 +9931,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_1601925c_13",
+   "lang": "en",
+   "style": "slow",
+   "text": "Roll it down!",
+   "speech": "Roll it down!",
+   "source": "nivel/curso_3_4/c3_4_p1_3/en/slow",
+   "pack": false
+  },
+  {
    "id": "en_slow_16266f55_4",
    "lang": "en",
    "style": "slow",
@@ -9622,6 +10189,15 @@
    "text": "Suitcase.",
    "speech": "Suitcase.",
    "source": "escoita/curso_5_6/8/modelo/0",
+   "pack": false
+  },
+  {
+   "id": "en_slow_1712eaf2_12",
+   "lang": "en",
+   "style": "slow",
+   "text": "Muddy puddle",
+   "speech": "Muddy puddle",
+   "source": "nivel/curso_4_5/c4_5_p5_3/en/slow",
    "pack": false
   },
   {
@@ -11578,6 +12154,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_1fbd0b80_18",
+   "lang": "en",
+   "style": "slow",
+   "text": "The sponge is wet.",
+   "speech": "The sponge is wet.",
+   "source": "nivel/curso_4_5/c4_5_p6_1/en/slow",
+   "pack": false
+  },
+  {
    "id": "en_slow_1fc3d34b_5",
    "lang": "en",
    "style": "slow",
@@ -13114,6 +13699,15 @@
    "text": "Put on the raincoat hood to stay dry.",
    "speech": "Put on the raincoat hood to stay dry.",
    "source": "escoita/curso_4_5/10/pensamiento/proba/slow",
+   "pack": false
+  },
+  {
+   "id": "en_slow_2660b14f_15",
+   "lang": "en",
+   "style": "slow",
+   "text": "Wash your hands",
+   "speech": "Wash your hands",
+   "source": "nivel/curso_2_3/c2_3_p1_3/en/slow",
    "pack": false
   },
   {
@@ -14854,6 +15448,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_2dd1d48f_15",
+   "lang": "en",
+   "style": "slow",
+   "text": "Soap and water!",
+   "speech": "Soap and water!",
+   "source": "nivel/curso_2_3/c2_3_p6_3/en/slow",
+   "pack": false
+  },
+  {
    "id": "en_slow_2dd542db_54",
    "lang": "en",
    "style": "slow",
@@ -15076,6 +15679,15 @@
    "text": "criminal",
    "speech": "criminal",
    "source": "corpus/1238/lemma",
+   "pack": false
+  },
+  {
+   "id": "en_slow_2ec687e7_19",
+   "lang": "en",
+   "style": "slow",
+   "text": "Where is the spoon?",
+   "speech": "Where is the spoon?",
+   "source": "nivel/curso_3_4/c3_4_p2_3/en/slow",
    "pack": false
   },
   {
@@ -17131,6 +17743,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_38009881_8",
+   "lang": "en",
+   "style": "slow",
+   "text": "Blue cup",
+   "speech": "Blue cup",
+   "source": "nivel/curso_3_4/c3_4_p5_2/en/slow",
+   "pack": false
+  },
+  {
    "id": "en_slow_382ba080_2",
    "lang": "en",
    "style": "slow",
@@ -17290,6 +17911,15 @@
    "text": "combine",
    "speech": "combine",
    "source": "corpus/1195/lemma",
+   "pack": false
+  },
+  {
+   "id": "en_slow_38aa15ef_25",
+   "lang": "en",
+   "style": "slow",
+   "text": "Loud paper or soft paper?",
+   "speech": "Loud paper or soft paper?",
+   "source": "nivel/curso_5_6/c5_6_p3_1/en/slow",
    "pack": false
   },
   {
@@ -20569,6 +21199,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_46fb5732_25",
+   "lang": "en",
+   "style": "slow",
+   "text": "Put the boat on the water",
+   "speech": "Put the boat on the water",
+   "source": "nivel/curso_2_3/c2_3_p1_1/en/slow",
+   "pack": false
+  },
+  {
    "id": "en_slow_46ff9c40_6",
    "lang": "en",
    "style": "slow",
@@ -20719,6 +21358,15 @@
    "text": "quit",
    "speech": "quit",
    "source": "corpus/1714/lemma",
+   "pack": false
+  },
+  {
+   "id": "en_slow_47920b04_7",
+   "lang": "en",
+   "style": "slow",
+   "text": "Dry bag",
+   "speech": "Dry bag",
+   "source": "nivel/curso_4_5/c4_5_p5_1/en/slow",
    "pack": false
   },
   {
@@ -21784,6 +22432,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_4c36c10e_11",
+   "lang": "en",
+   "style": "slow",
+   "text": "Wet or dry?",
+   "speech": "Wet or dry?",
+   "source": "nivel/curso_2_3/c2_3_p3_2/en/slow",
+   "pack": false
+  },
+  {
    "id": "en_slow_4c5165c8_3",
    "lang": "en",
    "style": "slow",
@@ -21916,6 +22573,15 @@
    "text": "Lovely",
    "speech": "Lovely",
    "source": "tpr.3_4.xuno/s2/3_4.xuno.s2.lovely",
+   "pack": false
+  },
+  {
+   "id": "en_slow_4cb2be3e_17",
+   "lang": "en",
+   "style": "slow",
+   "text": "Show me the towel",
+   "speech": "Show me the towel",
+   "source": "nivel/curso_2_3/c2_3_p2_3/en/slow",
    "pack": false
   },
   {
@@ -23197,6 +23863,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_5292c5df_20",
+   "lang": "en",
+   "style": "slow",
+   "text": "My heart beats fast!",
+   "speech": "My heart beats fast!",
+   "source": "nivel/curso_4_5/c4_5_p6_2/en/slow",
+   "pack": false
+  },
+  {
    "id": "en_slow_52951b36_5",
    "lang": "en",
    "style": "slow",
@@ -23671,6 +24346,15 @@
    "text": "tower",
    "speech": "tower",
    "source": "corpus/1943/lemma",
+   "pack": false
+  },
+  {
+   "id": "en_slow_54dd9760_22",
+   "lang": "en",
+   "style": "slow",
+   "text": "Sponge wet or bag dry?",
+   "speech": "Sponge wet or bag dry?",
+   "source": "nivel/curso_4_5/c4_5_p3_1/en/slow",
    "pack": false
   },
   {
@@ -24340,12 +25024,30 @@
    "pack": false
   },
   {
+   "id": "en_slow_57fabcb4_19",
+   "lang": "en",
+   "style": "slow",
+   "text": "Find the rain cloud",
+   "speech": "Find the rain cloud",
+   "source": "nivel/curso_4_5/c4_5_p2_3/en/slow",
+   "pack": false
+  },
+  {
    "id": "en_slow_58153cb5_7",
    "lang": "en",
    "style": "slow",
    "text": "Fairest",
    "speech": "Fairest",
    "source": "tpr.5_6.setembro/s1/5_6.setembro.s1.fairest",
+   "pack": false
+  },
+  {
+   "id": "en_slow_581af4e9_16",
+   "lang": "en",
+   "style": "slow",
+   "text": "Put on your coat",
+   "speech": "Put on your coat",
+   "source": "nivel/curso_4_5/c4_5_p1_2/en/slow",
    "pack": false
   },
   {
@@ -24517,6 +25219,15 @@
    "text": "Verse",
    "speech": "Verse",
    "source": "tpr.5_6.febreiro/s1/5_6.febreiro.s1.verse",
+   "pack": false
+  },
+  {
+   "id": "en_slow_587da5dc_10",
+   "lang": "en",
+   "style": "slow",
+   "text": "More juice",
+   "speech": "More juice",
+   "source": "nivel/curso_3_4/c3_4_p5_3/en/slow",
    "pack": false
   },
   {
@@ -25390,6 +26101,15 @@
    "text": "sheriff",
    "speech": "sheriff",
    "source": "corpus/3810/lemma",
+   "pack": false
+  },
+  {
+   "id": "en_slow_5c2bf63d_27",
+   "lang": "en",
+   "style": "slow",
+   "text": "Blue and yellow make green.",
+   "speech": "Blue and yellow make green.",
+   "source": "nivel/curso_5_6/c5_6_p6_1/en/slow",
    "pack": false
   },
   {
@@ -26311,6 +27031,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_5ff5a70a_13",
+   "lang": "en",
+   "style": "slow",
+   "text": "Fast or slow?",
+   "speech": "Fast or slow?",
+   "source": "nivel/curso_4_5/c4_5_p3_2/en/slow",
+   "pack": false
+  },
+  {
    "id": "en_slow_5fffc4f7_6",
    "lang": "en",
    "style": "slow",
@@ -26794,6 +27523,15 @@
    "text": "outrage",
    "speech": "outrage",
    "source": "corpus/2650/lemma",
+   "pack": false
+  },
+  {
+   "id": "en_slow_62080b83_11",
+   "lang": "en",
+   "style": "slow",
+   "text": "Paper plane",
+   "speech": "Paper plane",
+   "source": "nivel/curso_5_6/c5_6_p5_1/en/slow",
    "pack": false
   },
   {
@@ -27748,6 +28486,15 @@
    "text": "opposite",
    "speech": "opposite",
    "source": "corpus/1611/lemma",
+   "pack": false
+  },
+  {
+   "id": "en_slow_6622a0a3_20",
+   "lang": "en",
+   "style": "slow",
+   "text": "The train goes down!",
+   "speech": "The train goes down!",
+   "source": "nivel/curso_3_4/c3_4_p6_3/en/slow",
    "pack": false
   },
   {
@@ -32350,6 +33097,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_7bf8f308_24",
+   "lang": "en",
+   "style": "slow",
+   "text": "This plane flew further!",
+   "speech": "This plane flew further!",
+   "source": "nivel/curso_5_6/c5_6_p6_2/en/slow",
+   "pack": false
+  },
+  {
    "id": "en_slow_7bfaa7ed_7",
    "lang": "en",
    "style": "slow",
@@ -32410,6 +33166,15 @@
    "text": "mechanic",
    "speech": "mechanic",
    "source": "corpus/2582/lemma",
+   "pack": false
+  },
+  {
+   "id": "en_slow_7c38d79b_9",
+   "lang": "en",
+   "style": "slow",
+   "text": "Big waves",
+   "speech": "Big waves",
+   "source": "nivel/curso_2_3/c2_3_p5_3/en/slow",
    "pack": false
   },
   {
@@ -32788,6 +33553,15 @@
    "text": "probe",
    "speech": "probe",
    "source": "corpus/2720/lemma",
+   "pack": false
+  },
+  {
+   "id": "en_slow_7de3284d_14",
+   "lang": "en",
+   "style": "slow",
+   "text": "Follow the map",
+   "speech": "Follow the map",
+   "source": "nivel/curso_5_6/c5_6_p1_2/en/slow",
    "pack": false
   },
   {
@@ -34006,6 +34780,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_83f0acc1_11",
+   "lang": "en",
+   "style": "slow",
+   "text": "Blow harder",
+   "speech": "Blow harder",
+   "source": "nivel/curso_4_5/c4_5_p1_3/en/slow",
+   "pack": false
+  },
+  {
    "id": "en_slow_83f3d6ad_6",
    "lang": "en",
    "style": "slow",
@@ -34057,6 +34840,15 @@
    "text": "Sort",
    "speech": "Sort",
    "source": "tpr.0_2.marzo/s1/0_2.marzo.s1.sort",
+   "pack": false
+  },
+  {
+   "id": "en_slow_845f763b_14",
+   "lang": "en",
+   "style": "slow",
+   "text": "Fold the paper",
+   "speech": "Fold the paper",
+   "source": "nivel/curso_5_6/c5_6_p1_1/en/slow",
    "pack": false
   },
   {
@@ -36931,6 +37723,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_90a3d5be_25",
+   "lang": "en",
+   "style": "slow",
+   "text": "If it rains, we make mud.",
+   "speech": "If it rains, we make mud.",
+   "source": "nivel/curso_4_5/c4_5_p6_3/en/slow",
+   "pack": false
+  },
+  {
    "id": "en_slow_90ad4210_5",
    "lang": "en",
    "style": "slow",
@@ -37009,6 +37810,15 @@
    "text": "hazard",
    "speech": "hazard",
    "source": "corpus/2464/lemma",
+   "pack": false
+  },
+  {
+   "id": "en_slow_9143eda4_14",
+   "lang": "en",
+   "style": "slow",
+   "text": "Find the stone",
+   "speech": "Find the stone",
+   "source": "nivel/curso_2_3/c2_3_p2_2/en/slow",
    "pack": false
   },
   {
@@ -37540,6 +38350,15 @@
    "text": "minimum",
    "speech": "minimum",
    "source": "corpus/2593/lemma",
+   "pack": false
+  },
+  {
+   "id": "en_slow_9386a346_19",
+   "lang": "en",
+   "style": "slow",
+   "text": "Where is the flute?",
+   "speech": "Where is the flute?",
+   "source": "nivel/curso_5_6/c5_6_p2_3/en/slow",
    "pack": false
   },
   {
@@ -40081,6 +40900,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_9dd08a26_13",
+   "lang": "en",
+   "style": "slow",
+   "text": "Big or small?",
+   "speech": "Big or small?",
+   "source": "nivel/curso_2_3/c2_3_p3_1/en/slow",
+   "pack": false
+  },
+  {
    "id": "en_slow_9dd38e5e_7",
    "lang": "en",
    "style": "slow",
@@ -40186,6 +41014,15 @@
    "text": "High note jar or low note jar?",
    "speech": "High note jar or low note jar?",
    "source": "escoita/curso_3_4/9/pensamiento/compara/slow",
+   "pack": false
+  },
+  {
+   "id": "en_slow_9e2ee9a0_13",
+   "lang": "en",
+   "style": "slow",
+   "text": "Blow the boat",
+   "speech": "Blow the boat",
+   "source": "nivel/curso_2_3/c2_3_p1_2/en/slow",
    "pack": false
   },
   {
@@ -40762,6 +41599,15 @@
    "text": "grand",
    "speech": "grand",
    "source": "corpus/1421/lemma",
+   "pack": false
+  },
+  {
+   "id": "en_slow_a1639384_16",
+   "lang": "en",
+   "style": "slow",
+   "text": "The boat floats!",
+   "speech": "The boat floats!",
+   "source": "nivel/curso_2_3/c2_3_p6_1/en/slow",
    "pack": false
   },
   {
@@ -42232,6 +43078,24 @@
    "pack": false
   },
   {
+   "id": "en_slow_a77cca54_17",
+   "lang": "en",
+   "style": "slow",
+   "text": "Pour into the cup",
+   "speech": "Pour into the cup",
+   "source": "nivel/curso_3_4/c3_4_p1_2/en/slow",
+   "pack": false
+  },
+  {
+   "id": "en_slow_a79f0f6b_16",
+   "lang": "en",
+   "style": "slow",
+   "text": "Point to the sun",
+   "speech": "Point to the sun",
+   "source": "nivel/curso_4_5/c4_5_p2_2/en/slow",
+   "pack": false
+  },
+  {
    "id": "en_slow_a7a79a4d_30",
    "lang": "en",
    "style": "slow",
@@ -43534,6 +44398,15 @@
    "text": "for",
    "speech": "for",
    "source": "corpus/321/lemma",
+   "pack": false
+  },
+  {
+   "id": "en_slow_acf57f62_15",
+   "lang": "en",
+   "style": "slow",
+   "text": "Red, blue, red!",
+   "speech": "Red, blue, red!",
+   "source": "nivel/curso_3_4/c3_4_p6_2/en/slow",
    "pack": false
   },
   {
@@ -45913,6 +46786,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_b66b0312_20",
+   "lang": "en",
+   "style": "slow",
+   "text": "Show me the suitcase",
+   "speech": "Show me the suitcase",
+   "source": "nivel/curso_5_6/c5_6_p2_2/en/slow",
+   "pack": false
+  },
+  {
    "id": "en_slow_b6779c5f_5",
    "lang": "en",
    "style": "slow",
@@ -48064,6 +48946,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_bedb8547_15",
+   "lang": "en",
+   "style": "slow",
+   "text": "It stands tall!",
+   "speech": "It stands tall!",
+   "source": "nivel/curso_3_4/c3_4_p6_1/en/slow",
+   "pack": false
+  },
+  {
    "id": "en_slow_bee3749c_7",
    "lang": "en",
    "style": "slow",
@@ -48241,6 +49132,15 @@
    "text": "Lantern",
    "speech": "Lantern",
    "source": "tpr.0_2.decembro/s3/0_2.decembro.s3.lantern",
+   "pack": false
+  },
+  {
+   "id": "en_slow_bfcadae6_18",
+   "lang": "en",
+   "style": "slow",
+   "text": "Put a block on top",
+   "speech": "Put a block on top",
+   "source": "nivel/curso_3_4/c3_4_p1_1/en/slow",
    "pack": false
   },
   {
@@ -48556,6 +49456,15 @@
    "text": "Geometric",
    "speech": "Geometric",
    "source": "tpr.5_6.marzo/s4/5_6.marzo.s4.geometric",
+   "pack": false
+  },
+  {
+   "id": "en_slow_c1244a18_18",
+   "lang": "en",
+   "style": "slow",
+   "text": "Where is the boat?",
+   "speech": "Where is the boat?",
+   "source": "nivel/curso_2_3/c2_3_p2_1/en/slow",
    "pack": false
   },
   {
@@ -49060,6 +49969,15 @@
    "text": "Air pushes each folded paper blade.",
    "speech": "Air pushes each folded paper blade.",
    "source": "escoita/curso_4_5/7/blade/frase/slow",
+   "pack": false
+  },
+  {
+   "id": "en_slow_c2a6810a_13",
+   "lang": "en",
+   "style": "slow",
+   "text": "Little lights",
+   "speech": "Little lights",
+   "source": "nivel/curso_5_6/c5_6_p5_3/en/slow",
    "pack": false
   },
   {
@@ -49834,6 +50752,15 @@
    "text": "Celebration",
    "speech": "Celebration",
    "source": "tpr.5_6.decembro/s4/5_6.decembro.s4.celebration",
+   "pack": false
+  },
+  {
+   "id": "en_slow_c56db616_14",
+   "lang": "en",
+   "style": "slow",
+   "text": "Storm umbrella",
+   "speech": "Storm umbrella",
+   "source": "nivel/curso_4_5/c4_5_p5_2/en/slow",
    "pack": false
   },
   {
@@ -51322,6 +52249,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_ccfdceb9_15",
+   "lang": "en",
+   "style": "slow",
+   "text": "Tall or wobbly?",
+   "speech": "Tall or wobbly?",
+   "source": "nivel/curso_3_4/c3_4_p3_1/en/slow",
+   "pack": false
+  },
+  {
    "id": "en_slow_ccfe4c45_5",
    "lang": "en",
    "style": "slow",
@@ -51625,6 +52561,15 @@
    "text": "Pirate",
    "speech": "Pirate",
    "source": "tpr.4_5.febreiro/s2/4_5.febreiro.s2.pirate",
+   "pack": false
+  },
+  {
+   "id": "en_slow_cdff60ff_10",
+   "lang": "en",
+   "style": "slow",
+   "text": "It is wet!",
+   "speech": "It is wet!",
+   "source": "nivel/curso_2_3/c2_3_p6_2/en/slow",
    "pack": false
   },
   {
@@ -52168,6 +53113,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_d046b5f8_9",
+   "lang": "en",
+   "style": "slow",
+   "text": "Big stone",
+   "speech": "Big stone",
+   "source": "nivel/curso_2_3/c2_3_p5_1/en/slow",
+   "pack": false
+  },
+  {
    "id": "en_slow_d0624e33_6",
    "lang": "en",
    "style": "slow",
@@ -52228,6 +53182,15 @@
    "text": "Protected",
    "speech": "Protected",
    "source": "tpr.4_5.abril/s1/4_5.abril.s1.protected",
+   "pack": false
+  },
+  {
+   "id": "en_slow_d086d6d5_18",
+   "lang": "en",
+   "style": "slow",
+   "text": "Touch the blue cup",
+   "speech": "Touch the blue cup",
+   "source": "nivel/curso_3_4/c3_4_p2_1/en/slow",
    "pack": false
   },
   {
@@ -52546,6 +53509,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_d202e6db_19",
+   "lang": "en",
+   "style": "slow",
+   "text": "Point to the shadow",
+   "speech": "Point to the shadow",
+   "source": "nivel/curso_3_4/c3_4_p2_2/en/slow",
+   "pack": false
+  },
+  {
    "id": "en_slow_d209ff45_7",
    "lang": "en",
    "style": "slow",
@@ -52723,6 +53695,15 @@
    "text": "material",
    "speech": "material",
    "source": "corpus/1546/lemma",
+   "pack": false
+  },
+  {
+   "id": "en_slow_d2f8331e_17",
+   "lang": "en",
+   "style": "slow",
+   "text": "Faster or slower?",
+   "speech": "Faster or slower?",
+   "source": "nivel/curso_5_6/c5_6_p3_3/en/slow",
    "pack": false
   },
   {
@@ -55282,6 +56263,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_de1f3ef2_15",
+   "lang": "en",
+   "style": "slow",
+   "text": "Spin the circle",
+   "speech": "Spin the circle",
+   "source": "nivel/curso_5_6/c5_6_p1_3/en/slow",
+   "pack": false
+  },
+  {
    "id": "en_slow_de2f0f4d_4",
    "lang": "en",
    "style": "slow",
@@ -56191,6 +57181,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_e2cb0fba_15",
+   "lang": "en",
+   "style": "slow",
+   "text": "Heavy or light?",
+   "speech": "Heavy or light?",
+   "source": "nivel/curso_5_6/c5_6_p3_2/en/slow",
+   "pack": false
+  },
+  {
    "id": "en_slow_e2d789d4_9",
    "lang": "en",
    "style": "slow",
@@ -56674,6 +57673,15 @@
    "text": "bloom",
    "speech": "bloom",
    "source": "corpus/1104/lemma",
+   "pack": false
+  },
+  {
+   "id": "en_slow_e50e8531_9",
+   "lang": "en",
+   "style": "slow",
+   "text": "Dry towel",
+   "speech": "Dry towel",
+   "source": "nivel/curso_2_3/c2_3_p5_2/en/slow",
    "pack": false
   },
   {
@@ -58195,6 +59203,15 @@
    "text": "Lazy",
    "speech": "Lazy",
    "source": "tpr.3_4.febreiro/s2/3_4.febreiro.s2.lazy",
+   "pack": false
+  },
+  {
+   "id": "en_slow_eb0798a7_13",
+   "lang": "en",
+   "style": "slow",
+   "text": "Bright colors",
+   "speech": "Bright colors",
+   "source": "nivel/curso_5_6/c5_6_p5_2/en/slow",
    "pack": false
   },
   {
@@ -59755,6 +60772,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_f264709b_19",
+   "lang": "en",
+   "style": "slow",
+   "text": "Show me the bandage",
+   "speech": "Show me the bandage",
+   "source": "nivel/curso_4_5/c4_5_p2_1/en/slow",
+   "pack": false
+  },
+  {
    "id": "en_slow_f26fa97b_4",
    "lang": "en",
    "style": "slow",
@@ -60610,6 +61636,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_f5fc22f7_10",
+   "lang": "en",
+   "style": "slow",
+   "text": "Tall tower",
+   "speech": "Tall tower",
+   "source": "nivel/curso_3_4/c3_4_p5_1/en/slow",
+   "pack": false
+  },
+  {
    "id": "en_slow_f60d2779_7",
    "lang": "en",
    "style": "slow",
@@ -60916,6 +61951,15 @@
    "pack": false
   },
   {
+   "id": "en_slow_f7156b77_18",
+   "lang": "en",
+   "style": "slow",
+   "text": "Bigger or smaller?",
+   "speech": "Bigger or smaller?",
+   "source": "nivel/curso_4_5/c4_5_p3_3/en/slow",
+   "pack": false
+  },
+  {
    "id": "en_slow_f71954aa_33",
    "lang": "en",
    "style": "slow",
@@ -61084,6 +62128,15 @@
    "text": "disclose",
    "speech": "disclose",
    "source": "corpus/3295/lemma",
+   "pack": false
+  },
+  {
+   "id": "en_slow_f7c4231a_22",
+   "lang": "en",
+   "style": "slow",
+   "text": "Point to the butterfly",
+   "speech": "Point to the butterfly",
+   "source": "nivel/curso_5_6/c5_6_p2_1/en/slow",
    "pack": false
   },
   {
@@ -62785,6 +63838,15 @@
    "text": "Why is the wet towel heavy?",
    "speech": "Why is the wet towel heavy?",
    "source": "escoita/curso_2_3/8/pensamiento/explica/slow",
+   "pack": false
+  },
+  {
+   "id": "en_slow_ffed3920_15",
+   "lang": "en",
+   "style": "slow",
+   "text": "Feel your heart",
+   "speech": "Feel your heart",
+   "source": "nivel/curso_4_5/c4_5_p1_1/en/slow",
    "pack": false
   },
   {
@@ -165265,6 +166327,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_03180110_14",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Sopla el barco",
+   "speech": "Sopla el barco",
+   "source": "nivel/curso_2_3/c2_3_p1_2/sig",
+   "pack": false
+  },
+  {
    "id": "es_tutor_031a48e7_11",
    "lang": "es",
    "style": "tutor",
@@ -165733,6 +166804,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_04195985_29",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¿Esponja mojada o bolsa seca?",
+   "speech": "¿Esponja mojada o bolsa seca?",
+   "source": "nivel/curso_4_5/c4_5_p3_1/sig",
+   "pack": false
+  },
+  {
    "id": "es_tutor_041c5aa8_8",
    "lang": "es",
    "style": "tutor",
@@ -166189,6 +167269,15 @@
    "text": "¿A qué llegas tú de puntillas en casa?",
    "speech": "¿A qué llegas tú de puntillas en casa?",
    "source": "biblioteca/HIS-061/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_0527345e_13",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Sigue el mapa",
+   "speech": "Sigue el mapa",
+   "source": "nivel/curso_5_6/c5_6_p1_2/sig",
    "pack": false
   },
   {
@@ -167110,6 +168199,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_0788a0f4_132",
+   "lang": "es",
+   "style": "tutor",
+   "text": "En el experimento «¿Qué venda absorbe?» (elegir el material antes de mojarlo), pídele que señale la venda en la lámina o en la mesa.",
+   "speech": "En el experimento «¿Qué venda absorbe?» (elegir el material antes de mojarlo), pídele que señale la venda en la lámina o en la mesa.",
+   "source": "nivel/curso_4_5/c4_5_p2_1/instrucion",
+   "pack": false
+  },
+  {
    "id": "es_tutor_079407ba_49",
    "lang": "es",
    "style": "tutor",
@@ -167332,6 +168430,15 @@
    "text": "¡Mi pez! ¡Nada, pez!",
    "speech": "¡Mi pez! ¡Nada, pez!",
    "source": "biblioteca/HIS-017/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_08153030_17",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¿Pesada o ligera?",
+   "speech": "¿Pesada o ligera?",
+   "source": "nivel/curso_5_6/c5_6_p3_2/sig",
    "pack": false
   },
   {
@@ -168213,6 +169320,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_0a5ed47b_13",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Señala el sol",
+   "speech": "Señala el sol",
+   "source": "nivel/curso_4_5/c4_5_p2_2/sig",
+   "pack": false
+  },
+  {
    "id": "es_tutor_0a6547ca_19",
    "lang": "es",
    "style": "tutor",
@@ -168744,6 +169860,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_0b9473b2_125",
+   "lang": "es",
+   "style": "tutor",
+   "text": "En el experimento «Rojo, azul, rojo…» (leer la serie en voz alta), señala la secuencia y escucha si repite «Red, blue, red!».",
+   "speech": "En el experimento «Rojo, azul, rojo…» (leer la serie en voz alta), señala la secuencia y escucha si repite «Red, blue, red!».",
+   "source": "nivel/curso_3_4/c3_4_p6_2/instrucion",
+   "pack": false
+  },
+  {
    "id": "es_tutor_0b96feb6_6",
    "lang": "es",
    "style": "tutor",
@@ -168949,6 +170074,15 @@
    "speech": "Abre el paraguas",
    "source": "tpr.3_4.xaneiro/s2/3_4.xaneiro.s2.put-up-the-umbrella/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_0c2d76f4_17",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¿Fuerte o bajito?",
+   "speech": "¿Fuerte o bajito?",
+   "source": "nivel/curso_2_3/c2_3_p3_3/sig",
+   "pack": false
   },
   {
    "id": "es_tutor_0c3238f7_9",
@@ -171057,6 +172191,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_11c8ebf0_125",
+   "lang": "es",
+   "style": "tutor",
+   "text": "En el experimento «¿Cuántos sonidos tiene el papel?» (comparar periódico y pañuelo), sacude ambos y mira si distingue «Soft».",
+   "speech": "En el experimento «¿Cuántos sonidos tiene el papel?» (comparar periódico y pañuelo), sacude ambos y mira si distingue «Soft».",
+   "source": "nivel/curso_5_6/c5_6_p3_1/instrucion",
+   "pack": false
+  },
+  {
    "id": "es_tutor_11c90749_10",
    "lang": "es",
    "style": "tutor",
@@ -171444,6 +172587,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_129eceb0_139",
+   "lang": "es",
+   "style": "tutor",
+   "text": "En el experimento «La toalla mojada pesa» (contrastar mojado y seco), toca con él la lámina o un paño húmedo y otro seco y distingue «Wet».",
+   "speech": "En el experimento «La toalla mojada pesa» (contrastar mojado y seco), toca con él la lámina o un paño húmedo y otro seco y distingue «Wet».",
+   "source": "nivel/curso_2_3/c2_3_p3_2/instrucion",
+   "pack": false
+  },
+  {
    "id": "es_tutor_12b4be69_37",
    "lang": "es",
    "style": "tutor",
@@ -171604,6 +172756,15 @@
    "speech": "Corazón acelerado",
    "source": "tpr.5_6.outubro/s2/5_6.outubro.s2.racing-heart/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_13358685_134",
+   "lang": "es",
+   "style": "tutor",
+   "text": "En el experimento «Rojo, azul, rojo…» (clasificar colores de la serie), muéstrale la tarjeta roja y la azul y mira si distingue «Red».",
+   "speech": "En el experimento «Rojo, azul, rojo…» (clasificar colores de la serie), muéstrale la tarjeta roja y la azul y mira si distingue «Red».",
+   "source": "nivel/curso_3_4/c3_4_p3_3/instrucion",
+   "pack": false
   },
   {
    "id": "es_tutor_1337790e_68",
@@ -173046,6 +174207,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_1719c0ea_115",
+   "lang": "es",
+   "style": "tutor",
+   "text": "En el experimento «El círculo que gira» (dar impulso al disco), pídele con un giro de los dedos si entiende «Spin».",
+   "speech": "En el experimento «El círculo que gira» (dar impulso al disco), pídele con un giro de los dedos si entiende «Spin».",
+   "source": "nivel/curso_5_6/c5_6_p1_3/instrucion",
+   "pack": false
+  },
+  {
    "id": "es_tutor_17224eed_36",
    "lang": "es",
    "style": "tutor",
@@ -173242,6 +174412,15 @@
    "speech": "¿El pueblo siempre fue grande?",
    "source": "tpr.5_6.xaneiro/s2/5_6.xaneiro.s2.was-vigo-always-big/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_17ed1586_22",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¿Dónde está la flauta?",
+   "speech": "¿Dónde está la flauta?",
+   "source": "nivel/curso_5_6/c5_6_p2_3/sig",
+   "pack": false
   },
   {
    "id": "es_tutor_180188ca_13",
@@ -173757,6 +174936,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_1936a2ab_16",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Aguanta en pie!",
+   "speech": "¡Aguanta en pie!",
+   "source": "nivel/curso_3_4/c3_4_p6_1/sig",
+   "pack": false
+  },
+  {
    "id": "es_tutor_19398002_46",
    "lang": "es",
    "style": "tutor",
@@ -174081,6 +175269,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_1a033252_107",
+   "lang": "es",
+   "style": "tutor",
+   "text": "En el experimento «La cara en la cuchara» (mirarse por delante y por detrás), pídele que señale la cuchara.",
+   "speech": "En el experimento «La cara en la cuchara» (mirarse por delante y por detrás), pídele que señale la cuchara.",
+   "source": "nivel/curso_3_4/c3_4_p2_3/instrucion",
+   "pack": false
+  },
+  {
    "id": "es_tutor_1a036cd3_9",
    "lang": "es",
    "style": "tutor",
@@ -174267,6 +175464,15 @@
    "text": "¿Qué hay en tu cama?",
    "speech": "¿Qué hay en tu cama?",
    "source": "biblioteca/HIS-051/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_1a795104_123",
+   "lang": "es",
+   "style": "tutor",
+   "text": "En el experimento «El molinillo de viento» (probar un soplo suave y otro fuerte), mira si comprende y sopla con más fuerza.",
+   "speech": "En el experimento «El molinillo de viento» (probar un soplo suave y otro fuerte), mira si comprende y sopla con más fuerza.",
+   "source": "nivel/curso_4_5/c4_5_p1_3/instrucion",
    "pack": false
   },
   {
@@ -175647,6 +176853,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_1dc60c21_16",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡El barco flota!",
+   "speech": "¡El barco flota!",
+   "source": "nivel/curso_2_3/c2_3_p6_1/sig",
+   "pack": false
+  },
+  {
    "id": "es_tutor_1dc664a1_46",
    "lang": "es",
    "style": "tutor",
@@ -175761,6 +176976,15 @@
    "text": "La app es para ti. El niño o la niña no toca la pantalla en ningún momento: lo que funciona a esta edad es el cuerpo, la voz y los objetos de casa. Todo lo que aquí se propone se hace sin pantallas.",
    "speech": "La app es para ti. El niño o la niña no toca la pantalla en ningún momento: lo que funciona a esta edad es el cuerpo, la voz y los objetos de casa. Todo lo que aquí se propone se hace sin pantallas.",
    "source": "formacion.familia/paso/0/corpo",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_1e12630b_147",
+   "lang": "es",
+   "style": "tutor",
+   "text": "En el experimento «Pum grande, pum pequeño» (distinguir intensidad del sonido), da un toque suave en la mesa y otro fuerte y mira si elige «Quiet».",
+   "speech": "En el experimento «Pum grande, pum pequeño» (distinguir intensidad del sonido), da un toque suave en la mesa y otro fuerte y mira si elige «Quiet».",
+   "source": "nivel/curso_2_3/c2_3_p3_3/instrucion",
    "pack": false
   },
   {
@@ -177587,6 +178811,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_22e49112_16",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Sopla más fuerte",
+   "speech": "Sopla más fuerte",
+   "source": "nivel/curso_4_5/c4_5_p1_3/sig",
+   "pack": false
+  },
+  {
    "id": "es_tutor_22e56c35_37",
    "lang": "es",
    "style": "tutor",
@@ -178898,6 +180131,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_26452319_20",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Haz girar el círculo",
+   "speech": "Haz girar el círculo",
+   "source": "nivel/curso_5_6/c5_6_p1_3/sig",
+   "pack": false
+  },
+  {
    "id": "es_tutor_264532ee_24",
    "lang": "es",
    "style": "tutor",
@@ -179695,6 +180937,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_27fbbc62_108",
+   "lang": "es",
+   "style": "tutor",
+   "text": "En el experimento «La maleta que pesa» (preparar la carga del viaje), mira si señala la maleta en la lámina.",
+   "speech": "En el experimento «La maleta que pesa» (preparar la carga del viaje), mira si señala la maleta en la lámina.",
+   "source": "nivel/curso_5_6/c5_6_p2_2/instrucion",
+   "pack": false
+  },
+  {
    "id": "es_tutor_2801df7f_41",
    "lang": "es",
    "style": "tutor",
@@ -179845,6 +181096,15 @@
    "text": "¿Quieres más manzana?",
    "speech": "¿Quieres más manzana?",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_2862ebdd_4",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Duro",
+   "speech": "Duro",
+   "source": "nivel/curso_2_3/c2_3_p4_2/sig",
    "pack": false
   },
   {
@@ -180451,6 +181711,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_29d3cba9_25",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Decir dos palabras juntas",
+   "speech": "Decir dos palabras juntas",
+   "source": "nivel/peldano/5",
+   "pack": false
+  },
+  {
    "id": "es_tutor_29d5c053_42",
    "lang": "es",
    "style": "tutor",
@@ -180847,6 +182116,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_2ade7e8c_113",
+   "lang": "es",
+   "style": "tutor",
+   "text": "En el experimento «La sombra y el sol» (acercar y alejar la luz), mira si distingue cuando la sombra es «Bigger».",
+   "speech": "En el experimento «La sombra y el sol» (acercar y alejar la luz), mira si distingue cuando la sombra es «Bigger».",
+   "source": "nivel/curso_4_5/c4_5_p3_3/instrucion",
+   "pack": false
+  },
+  {
    "id": "es_tutor_2ae85f20_29",
    "lang": "es",
    "style": "tutor",
@@ -180889,6 +182167,15 @@
    "text": "¡Sí, rojo! Pintura roja viva.",
    "speech": "¡Sí, rojo! Pintura roja viva.",
    "source": "biblioteca/HIS-092/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_2b0755bd_111",
+   "lang": "es",
+   "style": "tutor",
+   "text": "En el experimento «Hacemos barro» (imaginar charcos de lluvia), mira si junta dos palabras como «Muddy puddle».",
+   "speech": "En el experimento «Hacemos barro» (imaginar charcos de lluvia), mira si junta dos palabras como «Muddy puddle».",
+   "source": "nivel/curso_4_5/c4_5_p5_3/instrucion",
    "pack": false
   },
   {
@@ -182026,6 +183313,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_2e8cf58e_122",
+   "lang": "es",
+   "style": "tutor",
+   "text": "En el experimento «La música de los vasos» (golpear vasos con distinta agua), toca suave y fuerte y mira si elige «Quiet».",
+   "speech": "En el experimento «La música de los vasos» (golpear vasos con distinta agua), toca suave y fuerte y mira si elige «Quiet».",
+   "source": "nivel/curso_3_4/c3_4_p3_2/instrucion",
+   "pack": false
+  },
+  {
    "id": "es_tutor_2ea8abc6_6",
    "lang": "es",
    "style": "tutor",
@@ -182051,6 +183347,15 @@
    "speech": "¿Cómo te sentirías si...?",
    "source": "tpr.5_6.maio/s3/5_6.maio.s3.how-would-you-feel-if/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_2eb7a498_120",
+   "lang": "es",
+   "style": "tutor",
+   "text": "En el experimento «Colores que nacen» (juntar amarillo y azul), señala el resultado en la lámina y mira si dice «Green».",
+   "speech": "En el experimento «Colores que nacen» (juntar amarillo y azul), señala el resultado en la lámina y mira si dice «Green».",
+   "source": "nivel/curso_5_6/c5_6_p4_1/instrucion",
+   "pack": false
   },
   {
    "id": "es_tutor_2ebb5f16_17",
@@ -183475,6 +184780,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_32ac08e9_150",
+   "lang": "es",
+   "style": "tutor",
+   "text": "En el experimento «¿Qué torre aguanta?» (apilar bloques en la base), pídele con un gesto hacia la torre o la lámina si entiende dónde poner el bloque.",
+   "speech": "En el experimento «¿Qué torre aguanta?» (apilar bloques en la base), pídele con un gesto hacia la torre o la lámina si entiende dónde poner el bloque.",
+   "source": "nivel/curso_3_4/c3_4_p1_1/instrucion",
+   "pack": false
+  },
+  {
    "id": "es_tutor_32b46545_21",
    "lang": "es",
    "style": "tutor",
@@ -184096,6 +185410,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_33fd7c40_13",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¿Rojo o azul?",
+   "speech": "¿Rojo o azul?",
+   "source": "nivel/curso_3_4/c3_4_p3_3/sig",
+   "pack": false
+  },
+  {
    "id": "es_tutor_34031324_55",
    "lang": "es",
    "style": "tutor",
@@ -184465,6 +185788,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_34cde952_17",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Toca el vaso azul",
+   "speech": "Toca el vaso azul",
+   "source": "nivel/curso_3_4/c3_4_p2_1/sig",
+   "pack": false
+  },
+  {
    "id": "es_tutor_34d1adbc_11",
    "lang": "es",
    "style": "tutor",
@@ -184516,6 +185848,24 @@
    "text": "Bajar los hombros y respirar hondo",
    "speech": "Bajar los hombros y respirar hondo",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_34fad022_20",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Paraguas de tormenta",
+   "speech": "Paraguas de tormenta",
+   "source": "nivel/curso_4_5/c4_5_p5_2/sig",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_3504a431_16",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Señala la sombra",
+   "speech": "Señala la sombra",
+   "source": "nivel/curso_3_4/c3_4_p2_2/sig",
    "pack": false
   },
   {
@@ -184927,6 +186277,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_36093de4_119",
+   "lang": "es",
+   "style": "tutor",
+   "text": "En el experimento «Mensajes de luz» (enviar señales cortos de luz), señala la lámina y escucha si dice «Little lights».",
+   "speech": "En el experimento «Mensajes de luz» (enviar señales cortos de luz), señala la lámina y escucha si dice «Little lights».",
+   "source": "nivel/curso_5_6/c5_6_p5_3/instrucion",
+   "pack": false
+  },
+  {
    "id": "es_tutor_360e9532_15",
    "lang": "es",
    "style": "tutor",
@@ -185278,6 +186637,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_36b7e866_139",
+   "lang": "es",
+   "style": "tutor",
+   "text": "En el experimento «¿Flota o se hunde?» (comprobar el barco en el agua), pregúntale qué pasa con el barco y mira si dice «The boat floats!».",
+   "speech": "En el experimento «¿Flota o se hunde?» (comprobar el barco en el agua), pregúntale qué pasa con el barco y mira si dice «The boat floats!».",
+   "source": "nivel/curso_2_3/c2_3_p6_1/instrucion",
+   "pack": false
+  },
+  {
    "id": "es_tutor_36bc339a_34",
    "lang": "es",
    "style": "tutor",
@@ -185500,6 +186868,15 @@
    "text": "¡Sí, el erizo baila con Lúa!",
    "speech": "¡Sí, el erizo baila con Lúa!",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_3737cb68_130",
+   "lang": "es",
+   "style": "tutor",
+   "text": "En el experimento «El círculo que gira» (mezclar los colores al girar), gira uno rápido y otro despacio y mira si señala «Faster».",
+   "speech": "En el experimento «El círculo que gira» (mezclar los colores al girar), gira uno rápido y otro despacio y mira si señala «Faster».",
+   "source": "nivel/curso_5_6/c5_6_p3_3/instrucion",
    "pack": false
   },
   {
@@ -186061,6 +187438,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_38b3376f_112",
+   "lang": "es",
+   "style": "tutor",
+   "text": "En el experimento «La orquesta de la tormenta» (el momento más fuerte), señala la lámina y mira si dice «Storm».",
+   "speech": "En el experimento «La orquesta de la tormenta» (el momento más fuerte), señala la lámina y mira si dice «Storm».",
+   "source": "nivel/curso_4_5/c4_5_p4_2/instrucion",
+   "pack": false
+  },
+  {
    "id": "es_tutor_38b92168_48",
    "lang": "es",
    "style": "tutor",
@@ -186184,6 +187570,15 @@
    "text": "Mira, Lúa está tranquila. Frota, frota... chis.",
    "speech": "Mira, Lúa está tranquila. Frota, frota... chis.",
    "source": "biblioteca/HIS-039/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_390a78af_132",
+   "lang": "es",
+   "style": "tutor",
+   "text": "En el experimento «¿Flota o se hunde?» (identificar el barco que flota), enséñale la lámina o dos objetos y mira si señala el barco.",
+   "speech": "En el experimento «¿Flota o se hunde?» (identificar el barco que flota), enséñale la lámina o dos objetos y mira si señala el barco.",
+   "source": "nivel/curso_2_3/c2_3_p2_1/instrucion",
    "pack": false
   },
   {
@@ -187015,6 +188410,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_3b52e953_27",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¿Más rápido o más despacio?",
+   "speech": "¿Más rápido o más despacio?",
+   "source": "nivel/curso_5_6/c5_6_p3_3/sig",
+   "pack": false
+  },
+  {
    "id": "es_tutor_3b57bd99_52",
    "lang": "es",
    "style": "tutor",
@@ -187102,6 +188506,15 @@
    "text": "Sí, la abeja duerme en la flor roja.",
    "speech": "Sí, la abeja duerme en la flor roja.",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_3ba5d3c8_25",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Si llueve, hacemos barro.",
+   "speech": "Si llueve, hacemos barro.",
+   "source": "nivel/curso_4_5/c4_5_p6_3/sig",
    "pack": false
   },
   {
@@ -187321,6 +188734,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_3c3dcb76_99",
+   "lang": "es",
+   "style": "tutor",
+   "text": "En el experimento «La maleta que pesa» (probar con libros y sin ellos), pregúntale cuál es «Heavy».",
+   "speech": "En el experimento «La maleta que pesa» (probar con libros y sin ellos), pregúntale cuál es «Heavy».",
+   "source": "nivel/curso_5_6/c5_6_p3_2/instrucion",
+   "pack": false
+  },
+  {
    "id": "es_tutor_3c404ad5_11",
    "lang": "es",
    "style": "tutor",
@@ -187372,6 +188794,15 @@
    "text": "¿Dónde está el timbre? ¡Toca el timbre!",
    "speech": "¿Dónde está el timbre? ¡Toca el timbre!",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_3c5f58dd_129",
+   "lang": "es",
+   "style": "tutor",
+   "text": "En el experimento «Colores que nacen» (anotar el resultado de la mezcla), escucha si dice la frase «Blue and yellow make green.».",
+   "speech": "En el experimento «Colores que nacen» (anotar el resultado de la mezcla), escucha si dice la frase «Blue and yellow make green.».",
+   "source": "nivel/curso_5_6/c5_6_p6_1/instrucion",
    "pack": false
   },
   {
@@ -187489,6 +188920,15 @@
    "text": "¡Oh! ¡Llueve con fuerza! ¡Plof, plof!",
    "speech": "¡Oh! ¡Llueve con fuerza! ¡Plof, plof!",
    "source": "biblioteca/HIS-076/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_3ca30017_18",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¿Grande o pequeño?",
+   "speech": "¿Grande o pequeño?",
+   "source": "nivel/curso_2_3/c2_3_p3_1/sig",
    "pack": false
   },
   {
@@ -188383,6 +189823,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_3ecc8909_138",
+   "lang": "es",
+   "style": "tutor",
+   "text": "En el experimento «¿Qué torre aguanta?» (probar la estabilidad de la torre), señala la lámina y mira si distingue la torre firme («Tall»).",
+   "speech": "En el experimento «¿Qué torre aguanta?» (probar la estabilidad de la torre), señala la lámina y mira si distingue la torre firme («Tall»).",
+   "source": "nivel/curso_3_4/c3_4_p3_1/instrucion",
+   "pack": false
+  },
+  {
    "id": "es_tutor_3ed32417_80",
    "lang": "es",
    "style": "tutor",
@@ -188851,6 +190300,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_40496749_8",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Más zumo",
+   "speech": "Más zumo",
+   "source": "nivel/curso_3_4/c3_4_p5_3/sig",
+   "pack": false
+  },
+  {
    "id": "es_tutor_404d9d86_8",
    "lang": "es",
    "style": "tutor",
@@ -188993,6 +190451,15 @@
    "speech": "Ver bajar la purpurina",
    "source": "tpr.5_6.maio/s1/5_6.maio.s1.watch-the-glitter-settle/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_408de5ad_127",
+   "lang": "es",
+   "style": "tutor",
+   "text": "En el experimento «¿Qué ropa pide el tiempo?» (protegerse del chaparrón), señala la lámina y escucha si junta «Storm umbrella».",
+   "speech": "En el experimento «¿Qué ropa pide el tiempo?» (protegerse del chaparrón), señala la lámina y escucha si junta «Storm umbrella».",
+   "source": "nivel/curso_4_5/c4_5_p5_2/instrucion",
+   "pack": false
   },
   {
    "id": "es_tutor_409213da_15",
@@ -190003,6 +191470,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_4307dccc_16",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Decir la palabra",
+   "speech": "Decir la palabra",
+   "source": "nivel/peldano/4",
+   "pack": false
+  },
+  {
    "id": "es_tutor_430c7289_30",
    "lang": "es",
    "style": "tutor",
@@ -191002,6 +192478,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_455ade53_17",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Enséñame la venda",
+   "speech": "Enséñame la venda",
+   "source": "nivel/curso_4_5/c4_5_p2_1/sig",
+   "pack": false
+  },
+  {
    "id": "es_tutor_4566d1ff_8",
    "lang": "es",
    "style": "tutor",
@@ -191486,6 +192971,15 @@
    "speech": "Abrazo grande",
    "source": "tpr.0_2.decembro/s2/0_2.decembro.s2.big-hug/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_468ef99d_126",
+   "lang": "es",
+   "style": "tutor",
+   "text": "En el experimento «¿Qué venda absorbe?» (comprobar que el plástico no absorbe), señala la bolsa seca y mira si dice «Dry bag».",
+   "speech": "En el experimento «¿Qué venda absorbe?» (comprobar que el plástico no absorbe), señala la bolsa seca y mira si dice «Dry bag».",
+   "source": "nivel/curso_4_5/c4_5_p5_1/instrucion",
+   "pack": false
   },
   {
    "id": "es_tutor_469b5f07_11",
@@ -192838,6 +194332,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_49a10ed0_12",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Olas grandes",
+   "speech": "Olas grandes",
+   "source": "nivel/curso_2_3/c2_3_p5_3/sig",
+   "pack": false
+  },
+  {
    "id": "es_tutor_49af5959_8",
    "lang": "es",
    "style": "tutor",
@@ -193207,6 +194710,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_4a795e5c_13",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Está mojado!",
+   "speech": "¡Está mojado!",
+   "source": "nivel/curso_2_3/c2_3_p6_2/sig",
+   "pack": false
+  },
+  {
    "id": "es_tutor_4a839d48_22",
    "lang": "es",
    "style": "tutor",
@@ -193430,6 +194942,15 @@
    "speech": "Busca algo rojo",
    "source": "tpr.3_4.marzo/s1/3_4.marzo.s1.find-something-red/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_4b00a939_115",
+   "lang": "es",
+   "style": "tutor",
+   "text": "En el experimento «La maleta que pesa» (justificar el peso después de probar), mira si dice «Books make it heavy.».",
+   "speech": "En el experimento «La maleta que pesa» (justificar el peso después de probar), mira si dice «Books make it heavy.».",
+   "source": "nivel/curso_5_6/c5_6_p6_3/instrucion",
+   "pack": false
   },
   {
    "id": "es_tutor_4b01059b_16",
@@ -193709,6 +195230,15 @@
    "speech": "Shh, bebé",
    "source": "tpr.0_2.xaneiro/s4/0_2.xaneiro.s4.hush-little-baby/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_4b96d9ea_154",
+   "lang": "es",
+   "style": "tutor",
+   "text": "En el experimento «¿Flota o se hunde?» (soltar el barco en el agua), pídele con un gesto hacia el cuenco o la lámina que haga como quien pone el barquito.",
+   "speech": "En el experimento «¿Flota o se hunde?» (soltar el barco en el agua), pídele con un gesto hacia el cuenco o la lámina que haga como quien pone el barquito.",
+   "source": "nivel/curso_2_3/c2_3_p1_1/instrucion",
+   "pack": false
   },
   {
    "id": "es_tutor_4b9d086f_19",
@@ -195520,6 +197050,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_50496e32_23",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¿Dónde está la cuchara?",
+   "speech": "¿Dónde está la cuchara?",
+   "source": "nivel/curso_3_4/c3_4_p2_3/sig",
+   "pack": false
+  },
+  {
    "id": "es_tutor_50497497_63",
    "lang": "es",
    "style": "tutor",
@@ -196094,6 +197633,15 @@
    "speech": "Carrera de barcos de papel",
    "source": "tpr.4_5.maio/s2/4_5.maio.s2.paper-boat-race/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_51d34029_120",
+   "lang": "es",
+   "style": "tutor",
+   "text": "En el experimento «El tren baja la cuesta» (preparar el vagón arriba), señala la lámina del tren y mira si dice «Train».",
+   "speech": "En el experimento «El tren baja la cuesta» (preparar el vagón arriba), señala la lámina del tren y mira si dice «Train».",
+   "source": "nivel/curso_3_4/c3_4_p4_3/instrucion",
+   "pack": false
   },
   {
    "id": "es_tutor_51d7e656_17",
@@ -197950,6 +199498,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_57303d1c_20",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Pon un bloque encima",
+   "speech": "Pon un bloque encima",
+   "source": "nivel/curso_3_4/c3_4_p1_1/sig",
+   "pack": false
+  },
+  {
    "id": "es_tutor_5736ab09_34",
    "lang": "es",
    "style": "tutor",
@@ -199192,6 +200749,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_5a91fad0_120",
+   "lang": "es",
+   "style": "tutor",
+   "text": "En el experimento «El mapa del tesoro» (leer el recorrido), pídele con un gesto que siga un camino dibujado en un papel.",
+   "speech": "En el experimento «El mapa del tesoro» (leer el recorrido), pídele con un gesto que siga un camino dibujado en un papel.",
+   "source": "nivel/curso_5_6/c5_6_p1_2/instrucion",
+   "pack": false
+  },
+  {
    "id": "es_tutor_5aa93a53_83",
    "lang": "es",
    "style": "tutor",
@@ -200263,6 +201829,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_5d306067_14",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Avión de papel",
+   "speech": "Avión de papel",
+   "source": "nivel/curso_5_6/c5_6_p5_1/sig",
+   "pack": false
+  },
+  {
    "id": "es_tutor_5d30b935_20",
    "lang": "es",
    "style": "tutor",
@@ -200314,6 +201889,15 @@
    "text": "¡Sí, botas! ¿Dónde están las botas?",
    "speech": "¡Sí, botas! ¿Dónde están las botas?",
    "source": "biblioteca/HIS-079/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_5d5e2975_107",
+   "lang": "es",
+   "style": "tutor",
+   "text": "En el experimento «Aviones de papel» (medir los dos lanzamientos), mira si dice «This plane flew further!».",
+   "speech": "En el experimento «Aviones de papel» (medir los dos lanzamientos), mira si dice «This plane flew further!».",
+   "source": "nivel/curso_5_6/c5_6_p6_2/instrucion",
    "pack": false
   },
   {
@@ -200755,6 +202339,15 @@
    "text": "¡Sí, el perro y el gato! ¡Buenos días, perro y gato!",
    "speech": "¡Sí, el perro y el gato! ¡Buenos días, perro y gato!",
    "source": "biblioteca/HIS-009/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_5e64920e_122",
+   "lang": "es",
+   "style": "tutor",
+   "text": "En el experimento «El viento empuja el barco» (soplar más fuerte), señala las olas grandes y escucha si junta «Big waves».",
+   "speech": "En el experimento «El viento empuja el barco» (soplar más fuerte), señala las olas grandes y escucha si junta «Big waves».",
+   "source": "nivel/curso_2_3/c2_3_p5_3/instrucion",
    "pack": false
   },
   {
@@ -201829,6 +203422,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_611eb85a_126",
+   "lang": "es",
+   "style": "tutor",
+   "text": "En el experimento «Verter despacio» (trasvasar entre vasos), pídele con un gesto que haga como quien vierte de un vaso a otro.",
+   "speech": "En el experimento «Verter despacio» (trasvasar entre vasos), pídele con un gesto que haga como quien vierte de un vaso a otro.",
+   "source": "nivel/curso_3_4/c3_4_p1_2/instrucion",
+   "pack": false
+  },
+  {
    "id": "es_tutor_6120ea10_25",
    "lang": "es",
    "style": "tutor",
@@ -202174,6 +203776,15 @@
    "speech": "Protegido",
    "source": "tpr.4_5.abril/s1/4_5.abril.s1.protected/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_6221a64e_147",
+   "lang": "es",
+   "style": "tutor",
+   "text": "En el experimento «El viento empuja el barco» (soplar para mover el barco), dile la frase redondeando los labios antes de soplar tú: mira si sopla.",
+   "speech": "En el experimento «El viento empuja el barco» (soplar para mover el barco), dile la frase redondeando los labios antes de soplar tú: mira si sopla.",
+   "source": "nivel/curso_2_3/c2_3_p1_2/instrucion",
+   "pack": false
   },
   {
    "id": "es_tutor_6226e335_18",
@@ -202551,6 +204162,15 @@
    "text": "¿Dónde está la manzana del osito? ¡Tócala!",
    "speech": "¿Dónde está la manzana del osito? ¡Tócala!",
    "source": "biblioteca/HIS-002/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_6321a2f2_14",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Luces pequeñas",
+   "speech": "Luces pequeñas",
+   "source": "nivel/curso_5_6/c5_6_p5_3/sig",
    "pack": false
   },
   {
@@ -203739,6 +205359,15 @@
    "text": "Preguntar le pide al niño o a la niña la palabra que todavía no tiene e interrumpe lo que está haciendo. Nombrar tú mientras ella toca le da la palabra en el instante exacto; pedírsela viene después, y la mayoría de las veces ni hace falta.",
    "speech": "Preguntar le pide al niño o a la niña la palabra que todavía no tiene e interrumpe lo que está haciendo. Nombrar tú mientras ella toca le da la palabra en el instante exacto; pedírsela viene después, y la mayoría de las veces ni hace falta.",
    "source": "aula.exploracion.01/afirmaciones/afirmacion_01/explicacion",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_6655157d_18",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Rojo, azul, rojo!",
+   "speech": "¡Rojo, azul, rojo!",
+   "source": "nivel/curso_3_4/c3_4_p6_2/sig",
    "pack": false
   },
   {
@@ -205110,6 +206739,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_69ca208a_117",
+   "lang": "es",
+   "style": "tutor",
+   "text": "En el experimento «¿Qué torre aguanta?» (añadir un piso firme), muéstrale la torre alta y mira si junta «Tall tower».",
+   "speech": "En el experimento «¿Qué torre aguanta?» (añadir un piso firme), muéstrale la torre alta y mira si junta «Tall tower».",
+   "source": "nivel/curso_3_4/c3_4_p5_1/instrucion",
+   "pack": false
+  },
+  {
    "id": "es_tutor_69cba521_57",
    "lang": "es",
    "style": "tutor",
@@ -205893,6 +207531,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_6baf5e27_5",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Flota",
+   "speech": "Flota",
+   "source": "nivel/curso_2_3/c2_3_p4_1/sig",
+   "pack": false
+  },
+  {
    "id": "es_tutor_6bdbbaa3_16",
    "lang": "es",
    "style": "tutor",
@@ -206348,6 +207995,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_6cf650d6_129",
+   "lang": "es",
+   "style": "tutor",
+   "text": "En el experimento «El viento empuja el barco» (hacer olas suaves al soplar), señala la lámina de las olas y mira si dice «Waves».",
+   "speech": "En el experimento «El viento empuja el barco» (hacer olas suaves al soplar), señala la lámina de las olas y mira si dice «Waves».",
+   "source": "nivel/curso_2_3/c2_3_p4_3/instrucion",
+   "pack": false
+  },
+  {
    "id": "es_tutor_6cf8a9e5_20",
    "lang": "es",
    "style": "tutor",
@@ -206615,6 +208271,15 @@
    "text": "¿Cantas canciones con tu familia?",
    "speech": "¿Cantas canciones con tu familia?",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_6d9303a6_15",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Ponte el abrigo",
+   "speech": "Ponte el abrigo",
+   "source": "nivel/curso_4_5/c4_5_p1_2/sig",
    "pack": false
   },
   {
@@ -207716,6 +209381,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_702b595f_125",
+   "lang": "es",
+   "style": "tutor",
+   "text": "En el experimento «El mapa del tesoro» (leer las pistas de la habitación), señala la lámina del mapa y escucha si dice «Map».",
+   "speech": "En el experimento «El mapa del tesoro» (leer las pistas de la habitación), señala la lámina del mapa y escucha si dice «Map».",
+   "source": "nivel/curso_5_6/c5_6_p4_3/instrucion",
+   "pack": false
+  },
+  {
    "id": "es_tutor_702c77f9_15",
    "lang": "es",
    "style": "tutor",
@@ -208747,6 +210421,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_72993211_137",
+   "lang": "es",
+   "style": "tutor",
+   "text": "En el experimento «¿Qué torre aguanta?» (comprobar la torre terminada), señala la lámina y mira si dice la frase corta «It stands tall!».",
+   "speech": "En el experimento «¿Qué torre aguanta?» (comprobar la torre terminada), señala la lámina y mira si dice la frase corta «It stands tall!».",
+   "source": "nivel/curso_3_4/c3_4_p6_1/instrucion",
+   "pack": false
+  },
+  {
    "id": "es_tutor_729a4149_46",
    "lang": "es",
    "style": "tutor",
@@ -209747,6 +211430,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_75240f76_20",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¿Alta o tambaleante?",
+   "speech": "¿Alta o tambaleante?",
+   "source": "nivel/curso_3_4/c3_4_p3_1/sig",
+   "pack": false
+  },
+  {
    "id": "es_tutor_7525ca2c_32",
    "lang": "es",
    "style": "tutor",
@@ -210194,6 +211886,15 @@
    "text": "Coloca cinco dedos en fila representando los cinco botes ordenados.",
    "speech": "Coloca cinco dedos en fila representando los cinco botes ordenados.",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_767580fd_114",
+   "lang": "es",
+   "style": "tutor",
+   "text": "En el experimento «El hielo en el zumo» (añadir un poco más), muéstrale la lámina e invítalo a decir «More juice».",
+   "speech": "En el experimento «El hielo en el zumo» (añadir un poco más), muéstrale la lámina e invítalo a decir «More juice».",
+   "source": "nivel/curso_3_4/c3_4_p5_3/instrucion",
    "pack": false
   },
   {
@@ -211394,6 +213095,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_7989b229_18",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Enséñame la maleta",
+   "speech": "Enséñame la maleta",
+   "source": "nivel/curso_5_6/c5_6_p2_2/sig",
+   "pack": false
+  },
+  {
    "id": "es_tutor_7995c570_38",
    "lang": "es",
    "style": "tutor",
@@ -212197,6 +213907,15 @@
    "text": "Cuenta con el dedo dos veces mientras recoge, sin pedir que nadie cuente en voz alta.",
    "speech": "Cuenta con el dedo dos veces mientras recoge, sin pedir que nadie cuente en voz alta.",
    "source": "asamblea.segundo_ciclo.outubro.4_infantil/fase/3/cmd/cmd.outubro.4i.03/modeladoDocente",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_7b72af6f_13",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Piedra grande",
+   "speech": "Piedra grande",
+   "source": "nivel/curso_2_3/c2_3_p5_1/sig",
    "pack": false
   },
   {
@@ -213766,6 +215485,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_7f8f2b11_125",
+   "lang": "es",
+   "style": "tutor",
+   "text": "En el experimento «Pan duro, pan blando» (explorar texturas), aprieta con él algo duro y algo blando y mira si nombra «Hard».",
+   "speech": "En el experimento «Pan duro, pan blando» (explorar texturas), aprieta con él algo duro y algo blando y mira si nombra «Hard».",
+   "source": "nivel/curso_2_3/c2_3_p4_2/instrucion",
+   "pack": false
+  },
+  {
    "id": "es_tutor_7f98cc9f_29",
    "lang": "es",
    "style": "tutor",
@@ -214150,6 +215878,15 @@
    "text": "Señala una a una las patas del juguete mientras vas contando en orden.",
    "speech": "Señala una a una las patas del juguete mientras vas contando en orden.",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_80a721b7_135",
+   "lang": "es",
+   "style": "tutor",
+   "text": "En el experimento «La toalla mojada pesa» (identificar la toalla antes de mojarla), mira si señala la toalla en la lámina o en el baño.",
+   "speech": "En el experimento «La toalla mojada pesa» (identificar la toalla antes de mojarla), mira si señala la toalla en la lámina o en el baño.",
+   "source": "nivel/curso_2_3/c2_3_p2_3/instrucion",
    "pack": false
   },
   {
@@ -216313,6 +218050,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_864356c7_17",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Vierte en el vaso",
+   "speech": "Vierte en el vaso",
+   "source": "nivel/curso_3_4/c3_4_p1_2/sig",
+   "pack": false
+  },
+  {
    "id": "es_tutor_864614ec_27",
    "lang": "es",
    "style": "tutor",
@@ -217456,6 +219202,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_897d64ce_21",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Hazlo bajar rodando!",
+   "speech": "¡Hazlo bajar rodando!",
+   "source": "nivel/curso_3_4/c3_4_p1_3/sig",
+   "pack": false
+  },
+  {
    "id": "es_tutor_897ed70c_18",
    "lang": "es",
    "style": "tutor",
@@ -217840,6 +219595,15 @@
    "text": "¿Por qué era importante el ratoncito?",
    "speech": "¿Por qué era importante el ratoncito?",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_8a9b0860_130",
+   "lang": "es",
+   "style": "tutor",
+   "text": "En el experimento «Aviones de papel» (hacer el primer pliegue), dile «Fold the paper» con un gesto en las manos y mira si lo hace.",
+   "speech": "En el experimento «Aviones de papel» (hacer el primer pliegue), dile «Fold the paper» con un gesto en las manos y mira si lo hace.",
+   "source": "nivel/curso_5_6/c5_6_p1_1/instrucion",
    "pack": false
   },
   {
@@ -218608,6 +220372,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_8caf67ff_18",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Señala la mariposa",
+   "speech": "Señala la mariposa",
+   "source": "nivel/curso_5_6/c5_6_p2_1/sig",
+   "pack": false
+  },
+  {
    "id": "es_tutor_8cba8eaa_40",
    "lang": "es",
    "style": "tutor",
@@ -219073,6 +220846,15 @@
    "text": "Flotar y posarse con suavidad",
    "speech": "Flotar y posarse con suavidad",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_8dad8913_121",
+   "lang": "es",
+   "style": "tutor",
+   "text": "En el experimento «El hielo en el zumo» (observar cómo enfría y derrite), señala el vaso con zumo y mira si dice «Juice».",
+   "speech": "En el experimento «El hielo en el zumo» (observar cómo enfría y derrite), señala el vaso con zumo y mira si dice «Juice».",
+   "source": "nivel/curso_3_4/c3_4_p4_2/instrucion",
    "pack": false
   },
   {
@@ -219877,6 +221659,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_8fd40828_18",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Enséñame la toalla",
+   "speech": "Enséñame la toalla",
+   "source": "nivel/curso_2_3/c2_3_p2_3/sig",
+   "pack": false
+  },
+  {
    "id": "es_tutor_8fd4b752_49",
    "lang": "es",
    "style": "tutor",
@@ -220418,6 +222209,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_9127feb7_26",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¿Más grande o más pequeña?",
+   "speech": "¿Más grande o más pequeña?",
+   "source": "nivel/curso_4_5/c4_5_p3_3/sig",
+   "pack": false
+  },
+  {
    "id": "es_tutor_912c563d_48",
    "lang": "es",
    "style": "tutor",
@@ -220766,6 +222566,15 @@
    "text": "¡Sí, pelota! ¡Va, pelota, va!",
    "speech": "¡Sí, pelota! ¡Va, pelota, va!",
    "source": "biblioteca/HIS-049/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_920c0c90_123",
+   "lang": "es",
+   "style": "tutor",
+   "text": "En el experimento «Primero mojo, después jabón» (enjabonar las manos), enséñale la lámina y mira si dice «Soap and water!».",
+   "speech": "En el experimento «Primero mojo, después jabón» (enjabonar las manos), enséñale la lámina y mira si dice «Soap and water!».",
+   "source": "nivel/curso_2_3/c2_3_p6_3/instrucion",
    "pack": false
   },
   {
@@ -221900,6 +223709,15 @@
    "text": "La escuela pide que cada niño traiga un gorro.",
    "speech": "La escuela pide que cada niño traiga un gorro.",
    "source": "gramatica/punto/47/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_94c5fe0d_23",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Distinguir un contraste",
+   "speech": "Distinguir un contraste",
+   "source": "nivel/peldano/3",
    "pack": false
   },
   {
@@ -223388,6 +225206,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_987b33a2_17",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Señalar un objeto",
+   "speech": "Señalar un objeto",
+   "source": "nivel/peldano/2",
+   "pack": false
+  },
+  {
    "id": "es_tutor_987f072b_3",
    "lang": "es",
    "style": "tutor",
@@ -224340,6 +226167,15 @@
    "speech": "Selva",
    "source": "tpr.2_3.febreiro/s2/2_3.febreiro.s2.jungle/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_9aa0f85b_103",
+   "lang": "es",
+   "style": "tutor",
+   "text": "En el experimento «Hacemos barro» (mezclar tierra y agua), muéstrale la lámina y escucha si dice «Mud».",
+   "speech": "En el experimento «Hacemos barro» (mezclar tierra y agua), muéstrale la lámina y escucha si dice «Mud».",
+   "source": "nivel/curso_4_5/c4_5_p4_1/instrucion",
+   "pack": false
   },
   {
    "id": "es_tutor_9aa5365b_4",
@@ -226139,6 +227975,15 @@
    "text": "¡Tubo largo, sonido grave!",
    "speech": "¡Tubo largo, sonido grave!",
    "source": "steam/STEAM-5_6-06/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_9f3e0f49_121",
+   "lang": "es",
+   "style": "tutor",
+   "text": "En el experimento «¿Qué venda absorbe?» (comparar el material absorbente con el impermeable), pregúntale cuál está «Wet».",
+   "speech": "En el experimento «¿Qué venda absorbe?» (comparar el material absorbente con el impermeable), pregúntale cuál está «Wet».",
+   "source": "nivel/curso_4_5/c4_5_p3_1/instrucion",
    "pack": false
   },
   {
@@ -228217,6 +230062,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_a4ad6dc0_30",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Comprender una orden con gesto",
+   "speech": "Comprender una orden con gesto",
+   "source": "nivel/peldano/1",
+   "pack": false
+  },
+  {
    "id": "es_tutor_a4b402d2_37",
    "lang": "es",
    "style": "tutor",
@@ -228520,6 +230374,15 @@
    "text": "Mira, la abeja llega a casa. ¡Un abrazo pequeñito en la nariz!",
    "speech": "Mira, la abeja llega a casa. ¡Un abrazo pequeñito en la nariz!",
    "source": "biblioteca/HIS-098/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_a5586a45_110",
+   "lang": "es",
+   "style": "tutor",
+   "text": "En el experimento «Aviones de papel» (preparar el lanzamiento), señala la lámina y mira si dice «Paper plane».",
+   "speech": "En el experimento «Aviones de papel» (preparar el lanzamiento), señala la lámina y mira si dice «Paper plane».",
+   "source": "nivel/curso_5_6/c5_6_p5_1/instrucion",
    "pack": false
   },
   {
@@ -228862,6 +230725,15 @@
    "text": "¿Tienes una manta calentita en casa?",
    "speech": "¿Tienes una manta calentita en casa?",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_a6352268_15",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¿Mojado o seco?",
+   "speech": "¿Mojado o seco?",
+   "source": "nivel/curso_2_3/c2_3_p3_2/sig",
    "pack": false
   },
   {
@@ -229729,6 +231601,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_a8151114_101",
+   "lang": "es",
+   "style": "tutor",
+   "text": "En el experimento «La sombra y el sol» (situar la fuente de luz), mira si señala el sol en la lámina.",
+   "speech": "En el experimento «La sombra y el sol» (situar la fuente de luz), mira si señala el sol en la lámina.",
+   "source": "nivel/curso_4_5/c4_5_p2_2/instrucion",
+   "pack": false
+  },
+  {
    "id": "es_tutor_a81709e7_24",
    "lang": "es",
    "style": "tutor",
@@ -230107,6 +231988,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_a9113268_21",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¿Dónde está el barco?",
+   "speech": "¿Dónde está el barco?",
+   "source": "nivel/curso_2_3/c2_3_p2_1/sig",
+   "pack": false
+  },
+  {
    "id": "es_tutor_a914268f_43",
    "lang": "es",
    "style": "tutor",
@@ -230377,6 +232267,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_aa091498_27",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Los libros la hacen pesada.",
+   "speech": "Los libros la hacen pesada.",
+   "source": "nivel/curso_5_6/c5_6_p6_3/sig",
+   "pack": false
+  },
+  {
    "id": "es_tutor_aa094ae7_7",
    "lang": "es",
    "style": "tutor",
@@ -230536,6 +232435,15 @@
    "text": "¡Sí, estatua! ¡El oso está inmóvil!",
    "speech": "¡Sí, estatua! ¡El oso está inmóvil!",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_aa666c7f_27",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Este avión voló más lejos!",
+   "speech": "¡Este avión voló más lejos!",
+   "source": "nivel/curso_5_6/c5_6_p6_2/sig",
    "pack": false
   },
   {
@@ -232519,6 +234427,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_af788f06_144",
+   "lang": "es",
+   "style": "tutor",
+   "text": "En el experimento «Grande aquí, pequeño allí» (encontrar piezas para ordenar por tamaño), pídele que señale la piedra en la lámina o en la mesa.",
+   "speech": "En el experimento «Grande aquí, pequeño allí» (encontrar piezas para ordenar por tamaño), pídele que señale la piedra en la lámina o en la mesa.",
+   "source": "nivel/curso_2_3/c2_3_p2_2/instrucion",
+   "pack": false
+  },
+  {
    "id": "es_tutor_af7a74b5_21",
    "lang": "es",
    "style": "tutor",
@@ -232588,6 +234505,15 @@
    "text": "¡Señala dónde mira Lúa!",
    "speech": "¡Señala dónde mira Lúa!",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_afa51fba_11",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Toalla seca",
+   "speech": "Toalla seca",
+   "source": "nivel/curso_2_3/c2_3_p5_2/sig",
    "pack": false
   },
   {
@@ -232841,6 +234767,15 @@
    "speech": "¡Nos vemos el año que viene!",
    "source": "tpr.4_5.xuno/s3/4_5.xuno.s3.see-you-next-year/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_b014e94f_27",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Encuentra la nube de lluvia",
+   "speech": "Encuentra la nube de lluvia",
+   "source": "nivel/curso_4_5/c4_5_p2_3/sig",
+   "pack": false
   },
   {
    "id": "es_tutor_b015637b_27",
@@ -233589,6 +235524,15 @@
    "speech": "Historia",
    "source": "tpr.5_6.xaneiro/s1/5_6.xaneiro.s1.history/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_b1d82c50_115",
+   "lang": "es",
+   "style": "tutor",
+   "text": "En el experimento «Escuchar el corazón» (comparar tras saltar cinco veces), escucha si dice «My heart beats fast!».",
+   "speech": "En el experimento «Escuchar el corazón» (comparar tras saltar cinco veces), escucha si dice «My heart beats fast!».",
+   "source": "nivel/curso_4_5/c4_5_p6_2/instrucion",
+   "pack": false
   },
   {
    "id": "es_tutor_b1e3634d_44",
@@ -234829,6 +236773,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_b4acbf86_28",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Azul y amarillo hacen verde.",
+   "speech": "Azul y amarillo hacen verde.",
+   "source": "nivel/curso_5_6/c5_6_p6_1/sig",
+   "pack": false
+  },
+  {
    "id": "es_tutor_b4b25187_54",
    "lang": "es",
    "style": "tutor",
@@ -235072,6 +237025,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_b550031d_129",
+   "lang": "es",
+   "style": "tutor",
+   "text": "En el experimento «La orquesta de la tormenta» (señalar el momento de la lluvia), pídele que encuentre «rain cloud» en la lámina.",
+   "speech": "En el experimento «La orquesta de la tormenta» (señalar el momento de la lluvia), pídele que encuentre «rain cloud» en la lámina.",
+   "source": "nivel/curso_4_5/c4_5_p2_3/instrucion",
+   "pack": false
+  },
+  {
    "id": "es_tutor_b551eecf_7",
    "lang": "es",
    "style": "tutor",
@@ -235225,6 +237187,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_b5c07d9a_114",
+   "lang": "es",
+   "style": "tutor",
+   "text": "En el experimento «El molinillo de viento» (observar qué mueve las aspas), señala la lámina y mira si dice «Wind».",
+   "speech": "En el experimento «El molinillo de viento» (observar qué mueve las aspas), señala la lámina y mira si dice «Wind».",
+   "source": "nivel/curso_4_5/c4_5_p4_3/instrucion",
+   "pack": false
+  },
+  {
    "id": "es_tutor_b5c728be_15",
    "lang": "es",
    "style": "tutor",
@@ -235336,6 +237307,15 @@
    "speech": "Voz tranquila",
    "source": "tpr.5_6.maio/s2/5_6.maio.s2.calm-voice/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_b600ed2a_126",
+   "lang": "es",
+   "style": "tutor",
+   "text": "En el experimento «¿Qué ropa pide el tiempo?» (elegir abrigo para el frío y lluvia), pídele con un gesto si entiende la orden.",
+   "speech": "En el experimento «¿Qué ropa pide el tiempo?» (elegir abrigo para el frío y lluvia), pídele con un gesto si entiende la orden.",
+   "source": "nivel/curso_4_5/c4_5_p1_2/instrucion",
+   "pack": false
   },
   {
    "id": "es_tutor_b60a982d_10",
@@ -237035,6 +239015,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_ba37890f_131",
+   "lang": "es",
+   "style": "tutor",
+   "text": "En el experimento «Primero mojo, después jabón» (mojar y enjabonar), pídele con el gesto de frotar las manos si comprende la orden.",
+   "speech": "En el experimento «Primero mojo, después jabón» (mojar y enjabonar), pídele con el gesto de frotar las manos si comprende la orden.",
+   "source": "nivel/curso_2_3/c2_3_p1_3/instrucion",
+   "pack": false
+  },
+  {
    "id": "es_tutor_ba3b68db_33",
    "lang": "es",
    "style": "tutor",
@@ -237366,6 +239355,15 @@
    "speech": "Atrezo",
    "source": "tpr.5_6.febreiro/s2/5_6.febreiro.s2.props/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_bb440ee4_19",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Encuentra la piedra",
+   "speech": "Encuentra la piedra",
+   "source": "nivel/curso_2_3/c2_3_p2_2/sig",
+   "pack": false
   },
   {
    "id": "es_tutor_bb479c2e_20",
@@ -238124,6 +240122,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_bd423f72_106",
+   "lang": "es",
+   "style": "tutor",
+   "text": "En el experimento «Hacemos barro» (juntar agua y tierra), mira si repite la frase corta de causa y efecto.",
+   "speech": "En el experimento «Hacemos barro» (juntar agua y tierra), mira si repite la frase corta de causa y efecto.",
+   "source": "nivel/curso_4_5/c4_5_p6_3/instrucion",
+   "pack": false
+  },
+  {
    "id": "es_tutor_bd442785_46",
    "lang": "es",
    "style": "tutor",
@@ -238598,6 +240605,15 @@
    "text": "¿En casa tu toalla es suave?",
    "speech": "¿En casa tu toalla es suave?",
    "source": "biblioteca/HIS-032/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_be6e1ce9_18",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡El tren va abajo!",
+   "speech": "¡El tren va abajo!",
+   "source": "nivel/curso_3_4/c3_4_p6_3/sig",
    "pack": false
   },
   {
@@ -241292,6 +243308,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_c5d141ba_132",
+   "lang": "es",
+   "style": "tutor",
+   "text": "En el experimento «Escuchar el corazón» (comparar antes y después de correr), da palmas lentas y rápidas y mira si distingue «Fast».",
+   "speech": "En el experimento «Escuchar el corazón» (comparar antes y después de correr), da palmas lentas y rápidas y mira si distingue «Fast».",
+   "source": "nivel/curso_4_5/c4_5_p3_2/instrucion",
+   "pack": false
+  },
+  {
    "id": "es_tutor_c5e41d67_20",
    "lang": "es",
    "style": "tutor",
@@ -242066,6 +244091,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_c7c6ba59_118",
+   "lang": "es",
+   "style": "tutor",
+   "text": "En el experimento «El mundo de colores» (pruebas de color y luz), muéstrale la lámina y mira si junta «Bright colors».",
+   "speech": "En el experimento «El mundo de colores» (pruebas de color y luz), muéstrale la lámina y mira si junta «Bright colors».",
+   "source": "nivel/curso_5_6/c5_6_p5_2/instrucion",
+   "pack": false
+  },
+  {
    "id": "es_tutor_c7c7581f_259",
    "lang": "es",
    "style": "tutor",
@@ -242117,6 +244151,15 @@
    "text": "En el agua, primero la seguridad; el inglés es un juego que acompaña.",
    "speech": "En el agua, primero la seguridad; el inglés es un juego que acompaña.",
    "source": "asamblea.segundo_ciclo.xuno.4_infantil/microRutina/pauta/0/consejoEvitar",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_c7ddbbc9_142",
+   "lang": "es",
+   "style": "tutor",
+   "text": "En el experimento «Grande aquí, pequeño allí» (emparejar tamaño y pieza), señala la piedra grande en la lámina e invítalo a decir «Big stone».",
+   "speech": "En el experimento «Grande aquí, pequeño allí» (emparejar tamaño y pieza), señala la piedra grande en la lámina e invítalo a decir «Big stone».",
+   "source": "nivel/curso_2_3/c2_3_p5_1/instrucion",
    "pack": false
   },
   {
@@ -242354,6 +244397,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_c868b2a4_125",
+   "lang": "es",
+   "style": "tutor",
+   "text": "En el experimento «¿Qué torre aguanta?» (levantar la torre sin caer), señala la lámina de la torre y escucha si dice «Tower».",
+   "speech": "En el experimento «¿Qué torre aguanta?» (levantar la torre sin caer), señala la lámina de la torre y escucha si dice «Tower».",
+   "source": "nivel/curso_3_4/c3_4_p4_1/instrucion",
+   "pack": false
+  },
+  {
    "id": "es_tutor_c86a050f_9",
    "lang": "es",
    "style": "tutor",
@@ -242406,6 +244458,15 @@
    "speech": "Burbujas por todas partes",
    "source": "tpr.0_2.maio/s4/0_2.maio.s4.bubbles-everywhere/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_c8856513_22",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Mi corazón va rápido!",
+   "speech": "¡Mi corazón va rápido!",
+   "source": "nivel/curso_4_5/c4_5_p6_2/sig",
+   "pack": false
   },
   {
    "id": "es_tutor_c88fdffe_33",
@@ -242568,6 +244629,15 @@
    "speech": "Fuente",
    "source": "tpr.2_3.novembro/s1/2_3.novembro.s1.fountain/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_c8fd7558_134",
+   "lang": "es",
+   "style": "tutor",
+   "text": "En el experimento «La toalla mojada pesa» (comprobar el paño mojado), escúrrelo suavemente y mira si dice la frase corta «It is wet!».",
+   "speech": "En el experimento «La toalla mojada pesa» (comprobar el paño mojado), escúrrelo suavemente y mira si dice la frase corta «It is wet!».",
+   "source": "nivel/curso_2_3/c2_3_p6_2/instrucion",
+   "pack": false
   },
   {
    "id": "es_tutor_c903b559_21",
@@ -243000,6 +245070,15 @@
    "speech": "Nariz de botón",
    "source": "tpr.0_2.outubro/s1/0_2.outubro.s1.button-nose/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_ca0fa46a_17",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Siente tu corazón",
+   "speech": "Siente tu corazón",
+   "source": "nivel/curso_4_5/c4_5_p1_1/sig",
+   "pack": false
   },
   {
    "id": "es_tutor_ca161344_6",
@@ -243587,6 +245666,15 @@
    "pack": true
   },
   {
+   "id": "es_tutor_cb7e44ce_14",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¡Jabón y agua!",
+   "speech": "¡Jabón y agua!",
+   "source": "nivel/curso_2_3/c2_3_p6_3/sig",
+   "pack": false
+  },
+  {
    "id": "es_tutor_cb8242ef_37",
    "lang": "es",
    "style": "tutor",
@@ -243873,6 +245961,15 @@
    "speech": "Arquear la espalda",
    "source": "tpr.5_6.outubro/s3/5_6.outubro.s3.arch-back/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_cc215ed0_110",
+   "lang": "es",
+   "style": "tutor",
+   "text": "En el experimento «¿Qué venda absorbe?» (comprobar después de sumergir), escucha si dice «The sponge is wet.».",
+   "speech": "En el experimento «¿Qué venda absorbe?» (comprobar después de sumergir), escucha si dice «The sponge is wet.».",
+   "source": "nivel/curso_4_5/c4_5_p6_1/instrucion",
+   "pack": false
   },
   {
    "id": "es_tutor_cc21d98f_6",
@@ -244259,6 +246356,15 @@
    "text": "¡Barrigas llenas! Sí, los peces tienen la barriga llena.",
    "speech": "¡Barrigas llenas! Sí, los peces tienen la barriga llena.",
    "source": "biblioteca/HIS-068/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_cd0d8fc5_133",
+   "lang": "es",
+   "style": "tutor",
+   "text": "En el experimento «¿Flota o se hunde?» (observar si flota), señala el barco en el agua o en la lámina y espera a ver si dice «Float».",
+   "speech": "En el experimento «¿Flota o se hunde?» (observar si flota), señala el barco en el agua o en la lámina y espera a ver si dice «Float».",
+   "source": "nivel/curso_2_3/c2_3_p4_1/instrucion",
    "pack": false
   },
   {
@@ -246385,6 +248491,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_d2a1d392_110",
+   "lang": "es",
+   "style": "tutor",
+   "text": "En el experimento «La flauta del tren» (pruebas de sonido con el tubo), mira si señala la flauta en la lámina.",
+   "speech": "En el experimento «La flauta del tren» (pruebas de sonido con el tubo), mira si señala la flauta en la lámina.",
+   "source": "nivel/curso_5_6/c5_6_p2_3/instrucion",
+   "pack": false
+  },
+  {
    "id": "es_tutor_d2a54155_5",
    "lang": "es",
    "style": "tutor",
@@ -246817,6 +248932,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_d3f5f8ba_10",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Bolsa seca",
+   "speech": "Bolsa seca",
+   "source": "nivel/curso_4_5/c4_5_p5_1/sig",
+   "pack": false
+  },
+  {
    "id": "es_tutor_d3f78944_6",
    "lang": "es",
    "style": "tutor",
@@ -246868,6 +248992,15 @@
    "text": "Separa las manos despacio viendo cómo se alarga la sombra al mover el foco.",
    "speech": "Separa las manos despacio viendo cómo se alarga la sombra al mover el foco.",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_d41fce61_19",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¿Rápido o despacio?",
+   "speech": "¿Rápido o despacio?",
+   "source": "nivel/curso_4_5/c4_5_p3_2/sig",
    "pack": false
   },
   {
@@ -247236,6 +249369,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_d50d9ae1_125",
+   "lang": "es",
+   "style": "tutor",
+   "text": "En el experimento «Escuchar el corazón» (notar el latido tras moverse), dile que ponga la mano en el pecho como en la lámina.",
+   "speech": "En el experimento «Escuchar el corazón» (notar el latido tras moverse), dile que ponga la mano en el pecho como en la lámina.",
+   "source": "nivel/curso_4_5/c4_5_p1_1/instrucion",
+   "pack": false
+  },
+  {
    "id": "es_tutor_d520022b_73",
    "lang": "es",
    "style": "tutor",
@@ -247269,6 +249411,15 @@
    "text": "La luz va en línea recta y no puede atravesar el juguete. Por eso, ¿qué queda detrás de él?",
    "speech": "La luz va en línea recta y no puede atravesar el juguete. Por eso, ¿qué queda detrás de él?",
    "source": "steam/I4-OPTICA-001/hogar/construye/sintesisCierre",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_d52cc01a_23",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Pon el barco en el agua",
+   "speech": "Pon el barco en el agua",
+   "source": "nivel/curso_2_3/c2_3_p1_1/sig",
    "pack": false
   },
   {
@@ -248350,6 +250501,15 @@
    "speech": "Brillante",
    "source": "tpr.0_2.decembro/s4/0_2.decembro.s4.sparkly/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_d80bb4ea_21",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Decir una frase corta",
+   "speech": "Decir una frase corta",
+   "source": "nivel/peldano/6",
+   "pack": false
   },
   {
    "id": "es_tutor_d8134a89_25",
@@ -250368,6 +252528,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_de2ce490_117",
+   "lang": "es",
+   "style": "tutor",
+   "text": "En el experimento «La mariposa igual» (observar las dos mitades iguales), pídele que señale la mariposa en la lámina.",
+   "speech": "En el experimento «La mariposa igual» (observar las dos mitades iguales), pídele que señale la mariposa en la lámina.",
+   "source": "nivel/curso_5_6/c5_6_p2_1/instrucion",
+   "pack": false
+  },
+  {
    "id": "es_tutor_de30fe2b_5",
    "lang": "es",
    "style": "tutor",
@@ -251115,6 +253284,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_e047812d_14",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Lava las manos",
+   "speech": "Lava las manos",
+   "source": "nivel/curso_2_3/c2_3_p1_3/sig",
+   "pack": false
+  },
+  {
    "id": "es_tutor_e057da16_27",
    "lang": "es",
    "style": "tutor",
@@ -251239,6 +253417,15 @@
    "speech": "¡Pi pi, nariz!",
    "source": "tpr.0_2.outubro/s1/0_2.outubro.s1.beep-beep-nose/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_e0881889_127",
+   "lang": "es",
+   "style": "tutor",
+   "text": "En el experimento «Rojo, azul, rojo…» (continuar la serie), pon algo rojo y azul o usa la lámina y mira si señala el vaso azul.",
+   "speech": "En el experimento «Rojo, azul, rojo…» (continuar la serie), pon algo rojo y azul o usa la lámina y mira si señala el vaso azul.",
+   "source": "nivel/curso_3_4/c3_4_p2_1/instrucion",
+   "pack": false
   },
   {
    "id": "es_tutor_e08de66a_27",
@@ -253356,6 +255543,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_e685bfef_29",
+   "lang": "es",
+   "style": "tutor",
+   "text": "¿Papel ruidoso o papel suave?",
+   "speech": "¿Papel ruidoso o papel suave?",
+   "source": "nivel/curso_5_6/c5_6_p3_1/sig",
+   "pack": false
+  },
+  {
    "id": "es_tutor_e68e1c6e_12",
    "lang": "es",
    "style": "tutor",
@@ -254168,6 +256364,15 @@
    "text": "¡Sí, una piedra! Una piedra lisa con pintura roja.",
    "speech": "¡Sí, una piedra! Una piedra lisa con pintura roja.",
    "source": "biblioteca/HIS-092/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_e87d04ba_126",
+   "lang": "es",
+   "style": "tutor",
+   "text": "En el experimento «Grande aquí, pequeño allí» (comparar tamaños), pon dos objetos o mira la lámina y pregúntale cuál es «Big».",
+   "speech": "En el experimento «Grande aquí, pequeño allí» (comparar tamaños), pon dos objetos o mira la lámina y pregúntale cuál es «Big».",
+   "source": "nivel/curso_2_3/c2_3_p3_1/instrucion",
    "pack": false
   },
   {
@@ -256088,6 +258293,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_ed9e8def_102",
+   "lang": "es",
+   "style": "tutor",
+   "text": "En el experimento «La mariposa igual» (abrir la hoja con el dibujo doble), mira si nombra «Butterfly».",
+   "speech": "En el experimento «La mariposa igual» (abrir la hoja con el dibujo doble), mira si nombra «Butterfly».",
+   "source": "nivel/curso_5_6/c5_6_p4_2/instrucion",
+   "pack": false
+  },
+  {
    "id": "es_tutor_eda2896c_69",
    "lang": "es",
    "style": "tutor",
@@ -256789,6 +259003,15 @@
    "speech": "Meñique",
    "source": "tpr.0_2.outubro/s4/0_2.outubro.s4.little-finger/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_ef71ee13_113",
+   "lang": "es",
+   "style": "tutor",
+   "text": "En el experimento «La toalla mojada pesa» (comparar con la seca), toca la toalla seca y mira si dice «Dry towel».",
+   "speech": "En el experimento «La toalla mojada pesa» (comparar con la seca), toca la toalla seca y mira si dice «Dry towel».",
+   "source": "nivel/curso_2_3/c2_3_p5_2/instrucion",
+   "pack": false
   },
   {
    "id": "es_tutor_ef7552bb_85",
@@ -257511,6 +259734,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_f1902907_134",
+   "lang": "es",
+   "style": "tutor",
+   "text": "En el experimento «La sombra de la torre» (observar la sombra con una linterna), pídele que señale «shadow» en la lámina o en la mesa.",
+   "speech": "En el experimento «La sombra de la torre» (observar la sombra con una linterna), pídele que señale «shadow» en la lámina o en la mesa.",
+   "source": "nivel/curso_3_4/c3_4_p2_2/instrucion",
+   "pack": false
+  },
+  {
    "id": "es_tutor_f190ac8b_31",
    "lang": "es",
    "style": "tutor",
@@ -258075,6 +260307,15 @@
    "text": "Si hubieras saltado, habría salpicado.",
    "speech": "Si hubieras saltado, habría salpicado.",
    "source": "gramatica/curso_4_5/2/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_f2fa0e40_133",
+   "lang": "es",
+   "style": "tutor",
+   "text": "En el experimento «El tren baja la cuesta» (dejar caer por la rampa), pídele que suelte un juguete o coche por la cuesta de un libro.",
+   "speech": "En el experimento «El tren baja la cuesta» (dejar caer por la rampa), pídele que suelte un juguete o coche por la cuesta de un libro.",
+   "source": "nivel/curso_3_4/c3_4_p1_3/instrucion",
    "pack": false
   },
   {
@@ -258742,6 +260983,15 @@
    "speech": "Un bocado más",
    "source": "tpr.0_2.marzo/s2/0_2.marzo.s2.one-more-bite/significado",
    "pack": true
+  },
+  {
+   "id": "es_tutor_f48d2e4b_13",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Colores vivos",
+   "speech": "Colores vivos",
+   "source": "nivel/curso_5_6/c5_6_p5_2/sig",
+   "pack": false
   },
   {
    "id": "es_tutor_f48e1b8e_21",
@@ -259950,6 +262200,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_f80a8ca5_120",
+   "lang": "es",
+   "style": "tutor",
+   "text": "En el experimento «Rojo, azul, rojo…» (continuar el patrón con vasos), señala el vaso azul y escucha si dice «Blue cup».",
+   "speech": "En el experimento «Rojo, azul, rojo…» (continuar el patrón con vasos), señala el vaso azul y escucha si dice «Blue cup».",
+   "source": "nivel/curso_3_4/c3_4_p5_2/instrucion",
+   "pack": false
+  },
+  {
    "id": "es_tutor_f8102b05_55",
    "lang": "es",
    "style": "tutor",
@@ -260262,6 +262521,15 @@
    "text": "¿Dos idiomas? ¡Qué suerte tienes!",
    "speech": "¿Dos idiomas? ¡Qué suerte tienes!",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_f8e6c750_15",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Charco de barro",
+   "speech": "Charco de barro",
+   "source": "nivel/curso_4_5/c4_5_p5_3/sig",
    "pack": false
   },
   {
@@ -261309,6 +263577,15 @@
    "pack": false
   },
   {
+   "id": "es_tutor_fbd4a11a_14",
+   "lang": "es",
+   "style": "tutor",
+   "text": "Dobla el papel",
+   "speech": "Dobla el papel",
+   "source": "nivel/curso_5_6/c5_6_p1_1/sig",
+   "pack": false
+  },
+  {
    "id": "es_tutor_fbd69802_58",
    "lang": "es",
    "style": "tutor",
@@ -261873,6 +264150,15 @@
    "text": "Deja una hoja en la mano del bebé y baja la voz.",
    "speech": "Deja una hoja en la mano del bebé y baja la voz.",
    "source": "asamblea.primeiro_ciclo.novembro.0_2_anos/fase/4/consigna",
+   "pack": false
+  },
+  {
+   "id": "es_tutor_fd14de11_126",
+   "lang": "es",
+   "style": "tutor",
+   "text": "En el experimento «El tren baja la cuesta» (soltar por la cuesta), mira cómo desliza y escucha si dice «The train goes down!».",
+   "speech": "En el experimento «El tren baja la cuesta» (soltar por la cuesta), mira cómo desliza y escucha si dice «The train goes down!».",
+   "source": "nivel/curso_3_4/c3_4_p6_3/instrucion",
    "pack": false
   },
   {
@@ -264612,6 +266898,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_0395c2e3_100",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "No experimento «Avións de papel» (medir os dous lanzamentos), mira se di «This plane flew further!».",
+   "speech": "No experimento «Avións de papel» (medir os dous lanzamentos), mira se di «This plane flew further!».",
+   "source": "nivel/curso_5_6/c5_6_p6_2/instrucion",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_0397579d_18",
    "lang": "gl",
    "style": "tutor",
@@ -265716,6 +268011,15 @@
    "text": "Mira! Auga no nariz de Lúa! Un nariz mollado! Tap!",
    "speech": "Mira! Auga no nariz de Lúa! Un nariz mollado! Tap!",
    "source": "biblioteca/HIS-012/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_065b6d32_22",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Os libros fana pesada.",
+   "speech": "Os libros fana pesada.",
+   "source": "nivel/curso_5_6/c5_6_p6_3/sig",
    "pack": false
   },
   {
@@ -267614,6 +269918,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_0b00b138_139",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "No experimento «Flota ou afúndese?» (soltar o barco na auga), pídelle cun xesto cara á cunca ou á lámina que faga coma quen pon o barquiño.",
+   "speech": "No experimento «Flota ou afúndese?» (soltar o barco na auga), pídelle cun xesto cara á cunca ou á lámina que faga coma quen pon o barquiño.",
+   "source": "nivel/curso_2_3/c2_3_p1_1/instrucion",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_0b05166d_25",
    "lang": "gl",
    "style": "tutor",
@@ -269063,6 +271376,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_0ec46ca1_18",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Onde está o barco?",
+   "speech": "Onde está o barco?",
+   "source": "nivel/curso_2_3/c2_3_p2_1/sig",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_0ec6d298_12",
    "lang": "gl",
    "style": "tutor",
@@ -269555,6 +271877,15 @@
    "text": "talo",
    "speech": "talo",
    "source": "escoita/curso_2_3/3/stem/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_102e1f80_124",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "No experimento «O tren baixa a costa» (deixar caer pola rampla), pídelle que solte un xoguete ou coche pola costa dun libro.",
+   "speech": "No experimento «O tren baixa a costa» (deixar caer pola rampla), pídelle que solte un xoguete ou coche pola costa dun libro.",
+   "source": "nivel/curso_3_4/c3_4_p1_3/instrucion",
    "pack": false
   },
   {
@@ -270564,6 +272895,15 @@
    "speech": "Túnel de aros",
    "source": "tpr.4_5.xaneiro/s2/4_5.xaneiro.s2.hoop-tunnel/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_124ee71c_15",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Charco con lama",
+   "speech": "Charco con lama",
+   "source": "nivel/curso_4_5/c4_5_p5_3/sig",
+   "pack": false
   },
   {
    "id": "gl_tutor_124f4e7f_7",
@@ -274136,6 +276476,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_1b0601d0_12",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Pedra grande",
+   "speech": "Pedra grande",
+   "source": "nivel/curso_2_3/c2_3_p5_1/sig",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_1b0a696d_5",
    "lang": "gl",
    "style": "tutor",
@@ -274727,6 +277076,15 @@
    "text": "Si, Lúa está dando a volta!",
    "speech": "Si, Lúa está dando a volta!",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_1c90158e_111",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "No experimento «O mapa do tesouro» (ler o percorrido), pídelle cun aceno que siga un camiño debuxado nun papel.",
+   "speech": "No experimento «O mapa do tesouro» (ler o percorrido), pídelle cun aceno que siga un camiño debuxado nun papel.",
+   "source": "nivel/curso_5_6/c5_6_p1_2/instrucion",
    "pack": false
   },
   {
@@ -275402,6 +277760,15 @@
    "text": "soltar",
    "speech": "soltar",
    "source": "escoita/curso_2_3/4/drop/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_1e30d340_90",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "No experimento «A sombra e o sol» (situar a fonte de luz), mira se sinala o sol na lámina.",
+   "speech": "No experimento «A sombra e o sol» (situar a fonte de luz), mira se sinala o sol na lámina.",
+   "source": "nivel/curso_4_5/c4_5_p2_2/instrucion",
    "pack": false
   },
   {
@@ -277025,6 +279392,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_2293969f_151",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "No experimento «O vento empurra o barco» (soprar para mover o barco), dislle a frase abrindo os beizos sen ensinarlle aínda o movemento: mira se sopra.",
+   "speech": "No experimento «O vento empurra o barco» (soprar para mover o barco), dislle a frase abrindo os beizos sen ensinarlle aínda o movemento: mira se sopra.",
+   "source": "nivel/curso_2_3/c2_3_p1_2/instrucion",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_2296ad31_15",
    "lang": "gl",
    "style": "tutor",
@@ -278051,6 +280427,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_255542bc_18",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "O tren vai abaixo!",
+   "speech": "O tren vai abaixo!",
+   "source": "nivel/curso_3_4/c3_4_p6_3/sig",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_2559b719_23",
    "lang": "gl",
    "style": "tutor",
@@ -278318,6 +280703,15 @@
    "text": "Si, estaba canso! Estaba canso e doíalle un pouco a perna.",
    "speech": "Si, estaba canso! Estaba canso e doíalle un pouco a perna.",
    "source": "biblioteca/HIS-071/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_261559a6_13",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Sopra o barco",
+   "speech": "Sopra o barco",
+   "source": "nivel/curso_2_3/c2_3_p1_2/sig",
    "pack": false
   },
   {
@@ -279244,6 +281638,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_2862ebdd_4",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Duro",
+   "speech": "Duro",
+   "source": "nivel/curso_2_3/c2_3_p4_2/sig",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_2881a9a2_11",
    "lang": "gl",
    "style": "tutor",
@@ -279386,6 +281789,15 @@
    "speech": "Cubo de xeo",
    "source": "tpr.4_5.decembro/s1/4_5.decembro.s1.ice-cube/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_28d84f31_130",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "No experimento «Grande aquí, pequeno alí» (atopar pezas para ordenar por tamaño), pídelle que sinale a pedra na lámina ou na mesa.",
+   "speech": "No experimento «Grande aquí, pequeno alí» (atopar pezas para ordenar por tamaño), pídelle que sinale a pedra na lámina ou na mesa.",
+   "source": "nivel/curso_2_3/c2_3_p2_2/instrucion",
+   "pack": false
   },
   {
    "id": "gl_tutor_28d95cd8_30",
@@ -279745,6 +282157,15 @@
    "text": "Balanzo de cabeza a 72 bpm",
    "speech": "Balanzo de cabeza a 72 bpm",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_29e98590_123",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "No experimento «O círculo que xira» (mesturar as cores ao xirar), xira un rápido e outro devagar e mira se sinala «Faster».",
+   "speech": "No experimento «O círculo que xira» (mesturar as cores ao xirar), xira un rápido e outro devagar e mira se sinala «Faster».",
+   "source": "nivel/curso_5_6/c5_6_p3_3/instrucion",
    "pack": false
   },
   {
@@ -281152,6 +283573,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_2d316b18_102",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "No experimento «A orquestra da tormenta» (o momento máis forte), sinala a lámina e mira se di «Storm».",
+   "speech": "No experimento «A orquestra da tormenta» (o momento máis forte), sinala a lámina e mira se di «Storm».",
+   "source": "nivel/curso_4_5/c4_5_p4_2/instrucion",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_2d31fd43_51",
    "lang": "gl",
    "style": "tutor",
@@ -281881,6 +284311,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_2ed9feb4_28",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Máis grande ou máis pequena?",
+   "speech": "Máis grande ou máis pequena?",
+   "source": "nivel/curso_4_5/c4_5_p3_3/sig",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_2eda1594_29",
    "lang": "gl",
    "style": "tutor",
@@ -281915,6 +284354,15 @@
    "speech": "Fofo, fofa",
    "source": "tpr.3_4.febreiro/s1/3_4.febreiro.s1.fluffy/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_2ee8d08e_135",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "No experimento «Vermello, azul, vermello…» (clasificar cores da serie), amósalle a tarxeta vermella e a azul e mira se distingue «Red».",
+   "speech": "No experimento «Vermello, azul, vermello…» (clasificar cores da serie), amósalle a tarxeta vermella e a azul e mira se distingue «Red».",
+   "source": "nivel/curso_3_4/c3_4_p3_3/instrucion",
+   "pack": false
   },
   {
    "id": "gl_tutor_2eee2f15_19",
@@ -282520,6 +284968,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_306a9886_16",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Toca o vaso azul",
+   "speech": "Toca o vaso azul",
+   "source": "nivel/curso_3_4/c3_4_p2_1/sig",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_306b8ec5_71",
    "lang": "gl",
    "style": "tutor",
@@ -282734,6 +285191,15 @@
    "speech": "Arrorró, meu neno",
    "source": "tpr.0_2.febreiro/s2/0_2.febreiro.s2.rock-a-bye-baby/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_30f14a87_124",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "No experimento «Primeiro mollo, despois xabón» (mollar e enjabonar), pídelle co xesto de fregar as mans se comprende a orde.",
+   "speech": "No experimento «Primeiro mollo, despois xabón» (mollar e enjabonar), pídelle co xesto de fregar as mans se comprende a orde.",
+   "source": "nivel/curso_2_3/c2_3_p1_3/instrucion",
+   "pack": false
   },
   {
    "id": "gl_tutor_30f19194_28",
@@ -284464,6 +286930,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_351c389d_125",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "No experimento «A toalla mollada pesa» (comprobar o pano mollado), tórceo suavemente e mira se di a frase curta «It is wet!».",
+   "speech": "No experimento «A toalla mollada pesa» (comprobar o pano mollado), tórceo suavemente e mira se di a frase curta «It is wet!».",
+   "source": "nivel/curso_2_3/c2_3_p6_2/instrucion",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_35201867_33",
    "lang": "gl",
    "style": "tutor",
@@ -284488,6 +286963,15 @@
    "text": "estirar",
    "speech": "estirar",
    "source": "escoita/curso_3_4/5/stretch/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_3528e861_19",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Onde está a culler?",
+   "speech": "Onde está a culler?",
+   "source": "nivel/curso_3_4/c3_4_p2_3/sig",
    "pack": false
   },
   {
@@ -284842,6 +287326,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_35ea3322_100",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "No experimento «O muíño de vento» (observar que move as aspas), sinala a lámina e mira se di «Wind».",
+   "speech": "No experimento «O muíño de vento» (observar que move as aspas), sinala a lámina e mira se di «Wind».",
+   "source": "nivel/curso_4_5/c4_5_p4_3/instrucion",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_35fb10ab_17",
    "lang": "gl",
    "style": "tutor",
@@ -284893,6 +287386,15 @@
    "text": "Onde está o bloque? Toca o bloque!",
    "speech": "Onde está o bloque? Toca o bloque!",
    "source": "biblioteca/HIS-028/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_3620fc9f_108",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "No experimento «O xeo no zume» (engadir un chisco máis), amósalle a lámina e convídaoo a dicir «More juice».",
+   "speech": "No experimento «O xeo no zume» (engadir un chisco máis), amósalle a lámina e convídaoo a dicir «More juice».",
+   "source": "nivel/curso_3_4/c3_4_p5_3/instrucion",
    "pack": false
   },
   {
@@ -285589,6 +288091,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_37cff037_20",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Faio baixar rodando!",
+   "speech": "Faio baixar rodando!",
+   "source": "nivel/curso_3_4/c3_4_p1_3/sig",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_37d00833_15",
    "lang": "gl",
    "style": "tutor",
@@ -285803,6 +288314,15 @@
    "speech": "Panorámica",
    "source": "tpr.4_5.novembro/s1/4_5.novembro.s1.panorama/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_386cc2f3_119",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "No experimento «O vento empurra o barco» (facer ondas suaves co sopro), sinala a lámina das ondas e mira se di «Waves».",
+   "speech": "No experimento «O vento empurra o barco» (facer ondas suaves co sopro), sinala a lámina das ondas e mira se di «Waves».",
+   "source": "nivel/curso_2_3/c2_3_p4_3/instrucion",
+   "pack": false
   },
   {
    "id": "gl_tutor_386f0de1_14",
@@ -286064,6 +288584,15 @@
    "speech": "Suave e amodo",
    "source": "tpr.0_2.xaneiro/s4/0_2.xaneiro.s4.soft-and-slow/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_393adc8a_138",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "No experimento «A toalla mollada pesa» (contrastar mollado e seco), toca con el a lámina ou un pano húmido e outro seco e distingue «Wet».",
+   "speech": "No experimento «A toalla mollada pesa» (contrastar mollado e seco), toca con el a lámina ou un pano húmido e outro seco e distingue «Wet».",
+   "source": "nivel/curso_2_3/c2_3_p3_2/instrucion",
+   "pack": false
   },
   {
    "id": "gl_tutor_394fd1d6_39",
@@ -286756,6 +289285,15 @@
    "text": "Mira: un caracol. Shhh... un caracoliño durmido.",
    "speech": "Mira: un caracol. Shhh... un caracoliño durmido.",
    "source": "biblioteca/HIS-057/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_3b3c9631_107",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "No experimento «O mundo de cores» (probas de cor e luz), amósalle a lámina e mira se xunta «Bright colors».",
+   "speech": "No experimento «O mundo de cores» (probas de cor e luz), amósalle a lámina e mira se xunta «Bright colors».",
+   "source": "nivel/curso_5_6/c5_6_p5_2/instrucion",
    "pack": false
   },
   {
@@ -288208,6 +290746,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_3f920d97_118",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "No experimento «Avións de papel» (facer o primeiro dobre), dislle «Fold the paper» cun xesto nas mans e mira se o fai.",
+   "speech": "No experimento «Avións de papel» (facer o primeiro dobre), dislle «Fold the paper» cun xesto nas mans e mira se o fai.",
+   "source": "nivel/curso_5_6/c5_6_p1_1/instrucion",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_3f9f88d7_53",
    "lang": "gl",
    "style": "tutor",
@@ -288463,6 +291010,15 @@
    "speech": "Mimoso",
    "source": "tpr.0_2.decembro/s2/0_2.decembro.s2.snuggly/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_405c68ff_23",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Se chove, facemos lama.",
+   "speech": "Se chove, facemos lama.",
+   "source": "nivel/curso_4_5/c4_5_p6_3/sig",
+   "pack": false
   },
   {
    "id": "gl_tutor_405dc880_33",
@@ -288858,6 +291414,15 @@
    "text": "Colgado! O abrigo verde está colgado no gancho!",
    "speech": "Colgado! O abrigo verde está colgado no gancho!",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_4159facd_100",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "No experimento «Facemos lama» (xuntar auga e terra), mira se repite a frase curta da causa e efecto.",
+   "speech": "No experimento «Facemos lama» (xuntar auga e terra), mira se repite a frase curta da causa e efecto.",
+   "source": "nivel/curso_4_5/c4_5_p6_3/instrucion",
    "pack": false
   },
   {
@@ -289293,6 +291858,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_424aeeed_12",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Pon o abrigo",
+   "speech": "Pon o abrigo",
+   "source": "nivel/curso_4_5/c4_5_p1_2/sig",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_424e4280_2",
    "lang": "gl",
    "style": "tutor",
@@ -289596,6 +292170,15 @@
    "text": "Toc, toc! Si, Lúa peta na cesta.",
    "speech": "Toc, toc! Si, Lúa peta na cesta.",
    "source": "biblioteca/HIS-064/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_42e744cf_117",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "No experimento «Que roupa pide o tempo?» (escoller abrigo para o frío e choiva), pídelle cun xesto se entende a orde.",
+   "speech": "No experimento «Que roupa pide o tempo?» (escoller abrigo para o frío e choiva), pídelle cun xesto se entende a orde.",
+   "source": "nivel/curso_4_5/c4_5_p1_2/instrucion",
    "pack": false
   },
   {
@@ -290643,6 +293226,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_45b85e66_119",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "No experimento «Que venda absorbe?» (comprobar que o plástico non absorbe), sinala a bolsa seca e mira se di «Dry bag».",
+   "speech": "No experimento «Que venda absorbe?» (comprobar que o plástico non absorbe), sinala a bolsa seca e mira se di «Dry bag».",
+   "source": "nivel/curso_4_5/c4_5_p5_1/instrucion",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_45bc8e17_33",
    "lang": "gl",
    "style": "tutor",
@@ -291518,6 +294110,15 @@
    "text": "Onde está a pintura verde nova? Tócaa!",
    "speech": "Onde está a pintura verde nova? Tócaa!",
    "source": "biblioteca/HIS-087/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_47f7d2e0_119",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "No experimento «Pan duro, pan brando» (explorar texturas), preme con el algo duro e algo brando e mira se nomea «Hard».",
+   "speech": "No experimento «Pan duro, pan brando» (explorar texturas), preme con el algo duro e algo brando e mira se nomea «Hard».",
+   "source": "nivel/curso_2_3/c2_3_p4_2/instrucion",
    "pack": false
   },
   {
@@ -294608,6 +297209,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_4fdfca0e_11",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Cores vivas",
+   "speech": "Cores vivas",
+   "source": "nivel/curso_5_6/c5_6_p5_2/sig",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_4fe0fa87_17",
    "lang": "gl",
    "style": "tutor",
@@ -295418,6 +298028,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_51ced083_117",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "No experimento «O vento empurra o barco» (soprar máis forte), sinala as ondas grandes e escoita se xunta «Big waves».",
+   "speech": "No experimento «O vento empurra o barco» (soprar máis forte), sinala as ondas grandes e escoita se xunta «Big waves».",
+   "source": "nivel/curso_2_3/c2_3_p5_3/instrucion",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_51cf9636_9",
    "lang": "gl",
    "style": "tutor",
@@ -295767,6 +298386,15 @@
    "speech": "Respirar",
    "source": "tpr.3_4.xuno/s3/3_4.xuno.s3.breathe/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_52dcf7b5_30",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Comprender unha orde con xesto",
+   "speech": "Comprender unha orde con xesto",
+   "source": "nivel/peldano/1",
+   "pack": false
   },
   {
    "id": "gl_tutor_52dd236d_42",
@@ -296273,6 +298901,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_53c91228_18",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Sinalar un obxecto",
+   "speech": "Sinalar un obxecto",
+   "source": "nivel/peldano/2",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_53c96f19_47",
    "lang": "gl",
    "style": "tutor",
@@ -296694,6 +299331,15 @@
    "speech": "Axita a botella",
    "source": "tpr.3_4.marzo/s4/3_4.marzo.s4.shake-the-bottle/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_54d4711f_95",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "No experimento «Facemos lama» (mesturar terra e auga), amósalle a lámina e escoita se di «Mud».",
+   "speech": "No experimento «Facemos lama» (mesturar terra e auga), amósalle a lámina e escoita se di «Mud».",
+   "source": "nivel/curso_4_5/c4_5_p4_1/instrucion",
+   "pack": false
   },
   {
    "id": "gl_tutor_54d63af2_9",
@@ -297758,6 +300404,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_57705f8f_29",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Papel ruidoso ou papel suave?",
+   "speech": "Papel ruidoso ou papel suave?",
+   "source": "nivel/curso_5_6/c5_6_p3_1/sig",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_5771ea12_11",
    "lang": "gl",
    "style": "tutor",
@@ -298242,6 +300897,15 @@
    "text": "Si! Un peixe! Un peixe laranxa!",
    "speech": "Si! Un peixe! Un peixe laranxa!",
    "source": "biblioteca/HIS-017/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_58c0b4c7_124",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "No experimento «Que venda absorbe?» (escoller o material antes de mollalo), pídelle que sinale a venda na lámina ou na mesa.",
+   "speech": "No experimento «Que venda absorbe?» (escoller o material antes de mollalo), pídelle que sinale a venda na lámina ou na mesa.",
+   "source": "nivel/curso_4_5/c4_5_p2_1/instrucion",
    "pack": false
   },
   {
@@ -298754,6 +301418,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_59de7c1c_17",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Vermello ou azul?",
+   "speech": "Vermello ou azul?",
+   "source": "nivel/curso_3_4/c3_4_p3_3/sig",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_59e52b85_30",
    "lang": "gl",
    "style": "tutor",
@@ -298842,6 +301515,15 @@
    "speech": "Parar un taxi",
    "source": "tpr.4_5.xaneiro/s3/4_5.xaneiro.s3.hail-a-taxi/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_5a08d43f_134",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "No experimento «Grande aquí, pequeno alí» (emparellar tamaño e peza), sinala a pedra grande na lámina e convídaoo a dicir «Big stone».",
+   "speech": "No experimento «Grande aquí, pequeno alí» (emparellar tamaño e peza), sinala a pedra grande na lámina e convídaoo a dicir «Big stone».",
+   "source": "nivel/curso_2_3/c2_3_p5_1/instrucion",
+   "pack": false
   },
   {
    "id": "gl_tutor_5a118dc7_43",
@@ -299447,6 +302129,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_5b73816b_98",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "No experimento «A maleta que pesa» (preparar a carga da viaxe), mira se sinala a maleta na lámina.",
+   "speech": "No experimento «A maleta que pesa» (preparar a carga da viaxe), mira se sinala a maleta na lámina.",
+   "source": "nivel/curso_5_6/c5_6_p2_2/instrucion",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_5b778630_60",
    "lang": "gl",
    "style": "tutor",
@@ -299786,6 +302477,15 @@
    "text": "Circuíto en parellas: un neno guía o compañeiro cos ollos pechados por un camiño delimitado con cordas, transportando unha vela LED apagada.",
    "speech": "Circuíto en parellas: un neno guía o compañeiro cos ollos pechados por un camiño delimitado con cordas, transportando unha vela LED apagada.",
    "source": "asamblea.segundo_ciclo.decembro.6_infantil/fase/3/consigna",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_5c51b28b_17",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Forte ou baixiño?",
+   "speech": "Forte ou baixiño?",
+   "source": "nivel/curso_2_3/c2_3_p3_3/sig",
    "pack": false
   },
   {
@@ -300138,6 +302838,15 @@
    "speech": "Xabón, fregar, aclarar",
    "source": "tpr.2_3.maio/s1/2_3.maio.s1.soap-rub-rinse/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_5d306067_14",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Avión de papel",
+   "speech": "Avión de papel",
+   "source": "nivel/curso_5_6/c5_6_p5_1/sig",
+   "pack": false
   },
   {
    "id": "gl_tutor_5d314b3f_31",
@@ -301675,6 +304384,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_610be16a_16",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Sopra máis forte",
+   "speech": "Sopra máis forte",
+   "source": "nivel/curso_4_5/c4_5_p1_3/sig",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_610e541b_5",
    "lang": "gl",
    "style": "tutor",
@@ -302932,6 +305650,15 @@
    "text": "Escoita en silencio: oes a choiva suave que bate?",
    "speech": "Escoita en silencio: oes a choiva suave que bate?",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_64580bd7_109",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "No experimento «Escoitar o corazón» (comparar tras saltar cinco veces), escoita se di «My heart beats fast!».",
+   "speech": "No experimento «Escoitar o corazón» (comparar tras saltar cinco veces), escoita se di «My heart beats fast!».",
+   "source": "nivel/curso_4_5/c4_5_p6_2/instrucion",
    "pack": false
   },
   {
@@ -304717,6 +307444,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_68da97f6_22",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Dicir unha frase curta",
+   "speech": "Dicir unha frase curta",
+   "source": "nivel/peldano/6",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_68ec9ba7_49",
    "lang": "gl",
    "style": "tutor",
@@ -304768,6 +307504,15 @@
    "text": "Reconstruímos unha casiña. Shhh... durme, caracoliño.",
    "speech": "Reconstruímos unha casiña. Shhh... durme, caracoliño.",
    "source": "biblioteca/HIS-057/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_691b3c2f_26",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Dicir dúas palabras xuntas",
+   "speech": "Dicir dúas palabras xuntas",
+   "source": "nivel/peldano/5",
    "pack": false
   },
   {
@@ -304876,6 +307621,15 @@
    "text": "Si, un tren! Un trenciño vermello na granxa.",
    "speech": "Si, un tren! Un trenciño vermello na granxa.",
    "source": "biblioteca/HIS-093/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_69884af2_25",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Vermello, azul, vermello!",
+   "speech": "Vermello, azul, vermello!",
+   "source": "nivel/curso_3_4/c3_4_p6_2/sig",
    "pack": false
   },
   {
@@ -305014,6 +307768,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_69ffad0b_19",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Onde está a frauta?",
+   "speech": "Onde está a frauta?",
+   "source": "nivel/curso_5_6/c5_6_p2_3/sig",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_6a02e049_25",
    "lang": "gl",
    "style": "tutor",
@@ -305102,6 +307865,24 @@
    "speech": "Deitar",
    "source": "tpr.0_2.setembro/s4/0_2.setembro.s4.lay-down/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_6a4ae0cd_115",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "No experimento «Verter amodo» (trasvasar entre vasos), pídelle cun xesto que faga coma quen verte dun vaso a outro.",
+   "speech": "No experimento «Verter amodo» (trasvasar entre vasos), pídelle cun xesto que faga coma quen verte dun vaso a outro.",
+   "source": "nivel/curso_3_4/c3_4_p1_2/instrucion",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_6a501fc7_101",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "No experimento «Avións de papel» (preparar o lanzamento), sinala a lámina e mira se di «Paper plane».",
+   "speech": "No experimento «Avións de papel» (preparar o lanzamento), sinala a lámina e mira se di «Paper plane».",
+   "source": "nivel/curso_5_6/c5_6_p5_1/instrucion",
+   "pack": false
   },
   {
    "id": "gl_tutor_6a53d0ff_31",
@@ -305254,6 +308035,15 @@
    "text": "Fagamos o ritmo do baile! Knock, knock, tap, tap... e baila coma a gata!",
    "speech": "Fagamos o ritmo do baile! Knock, knock, tap, tap... e baila coma a gata!",
    "source": "biblioteca/HIS-075/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_6acce914_15",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Sinala a sombra",
+   "speech": "Sinala a sombra",
+   "source": "nivel/curso_3_4/c3_4_p2_2/sig",
    "pack": false
   },
   {
@@ -305551,6 +308341,15 @@
    "text": "Sopa quente! Remexe amodo!",
    "speech": "Sopa quente! Remexe amodo!",
    "source": "biblioteca/HIS-010/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_6baf5e27_5",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Flota",
+   "speech": "Flota",
+   "source": "nivel/curso_2_3/c2_3_p4_1/sig",
    "pack": false
   },
   {
@@ -307309,6 +310108,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_700cbfcd_105",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "No experimento «Que venda absorbe?» (comprobar despois de mergullar), escoita se di «The sponge is wet.».",
+   "speech": "No experimento «Que venda absorbe?» (comprobar despois de mergullar), escoita se di «The sponge is wet.».",
+   "source": "nivel/curso_4_5/c4_5_p6_1/instrucion",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_700d579f_32",
    "lang": "gl",
    "style": "tutor",
@@ -308026,6 +310834,24 @@
    "text": "O bebé está sucio! Xabón!",
    "speech": "O bebé está sucio! Xabón!",
    "source": "biblioteca/HIS-035/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_71e4e468_134",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "No experimento «Vermello, azul, vermello…» (continuar a serie), pon algo vermello e azul ou usa a lámina e mira se sinala o vaso azul.",
+   "speech": "No experimento «Vermello, azul, vermello…» (continuar a serie), pon algo vermello e azul ou usa a lámina e mira se sinala o vaso azul.",
+   "source": "nivel/curso_3_4/c3_4_p2_1/instrucion",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_71e8d3f4_14",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "O barco flota!",
+   "speech": "O barco flota!",
+   "source": "nivel/curso_2_3/c2_3_p6_1/sig",
    "pack": false
   },
   {
@@ -310212,6 +313038,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_77baa748_16",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Ensíname a venda",
+   "speech": "Ensíname a venda",
+   "source": "nivel/curso_4_5/c4_5_p2_1/sig",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_77bba9b8_3",
    "lang": "gl",
    "style": "tutor",
@@ -310986,6 +313821,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_79d386ed_110",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "No experimento «O tren baixa a costa» (preparar o vagón enriba), sinala a lámina do tren e mira se di «Train».",
+   "speech": "No experimento «O tren baixa a costa» (preparar o vagón enriba), sinala a lámina do tren e mira se di «Train».",
+   "source": "nivel/curso_3_4/c3_4_p4_3/instrucion",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_79d5192a_17",
    "lang": "gl",
    "style": "tutor",
@@ -311463,6 +314307,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_7ab741ef_130",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "No experimento «Flota ou afúndese?» (identificar o barco que flota), ensínalle a lámina ou dous obxectos e mira se sinala o barco.",
+   "speech": "No experimento «Flota ou afúndese?» (identificar o barco que flota), ensínalle a lámina ou dous obxectos e mira se sinala o barco.",
+   "source": "nivel/curso_2_3/c2_3_p2_1/instrucion",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_7ab9d48c_75",
    "lang": "gl",
    "style": "tutor",
@@ -311739,6 +314592,15 @@
    "text": "Mira! O barco vai rápido polo camiño mollado! Hop, hop, para!",
    "speech": "Mira! O barco vai rápido polo camiño mollado! Hop, hop, para!",
    "source": "biblioteca/HIS-018/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_7b7d1ed3_13",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Xabón e auga!",
+   "speech": "Xabón e auga!",
+   "source": "nivel/curso_2_3/c2_3_p6_3/sig",
    "pack": false
   },
   {
@@ -312579,6 +315441,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_7d8b008b_105",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "No experimento «O círculo que xira» (dar impulso ao disco), pídelle cun xiro dos dedos se entende «Spin».",
+   "speech": "No experimento «O círculo que xira» (dar impulso ao disco), pídelle cun xiro dos dedos se entende «Spin».",
+   "source": "nivel/curso_5_6/c5_6_p1_3/instrucion",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_7d8d9b0b_60",
    "lang": "gl",
    "style": "tutor",
@@ -312963,6 +315834,15 @@
    "text": "Percusión de palmas nas pernas",
    "speech": "Percusión de palmas nas pernas",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_7eee6fbb_113",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "No experimento «A orquestra da tormenta» (sinalar o momento da choiva), pídelle que atope «rain cloud» na lámina.",
+   "speech": "No experimento «A orquestra da tormenta» (sinalar o momento da choiva), pídelle que atope «rain cloud» na lámina.",
+   "source": "nivel/curso_4_5/c4_5_p2_3/instrucion",
    "pack": false
   },
   {
@@ -314334,6 +317214,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_826b9820_17",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Ensíname a maleta",
+   "speech": "Ensíname a maleta",
+   "source": "nivel/curso_5_6/c5_6_p2_2/sig",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_827cf020_9",
    "lang": "gl",
    "style": "tutor",
@@ -315288,6 +318177,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_84fbe946_20",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Paraugas de tormenta",
+   "speech": "Paraugas de tormenta",
+   "source": "nivel/curso_4_5/c4_5_p5_2/sig",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_84ff80e9_43",
    "lang": "gl",
    "style": "tutor",
@@ -315358,6 +318256,15 @@
    "speech": "Festivo",
    "source": "tpr.0_2.decembro/s4/0_2.decembro.s4.merry/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_853376c8_18",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Grande ou pequeno?",
+   "speech": "Grande ou pequeno?",
+   "source": "nivel/curso_2_3/c2_3_p3_1/sig",
+   "pack": false
   },
   {
    "id": "gl_tutor_85377a44_17",
@@ -316001,6 +318908,15 @@
    "text": "Quen che dá calor na casa cando vai vento?",
    "speech": "Quen che dá calor na casa cando vai vento?",
    "source": "biblioteca/HIS-077/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_86df6030_25",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Azul e amarelo fan verde.",
+   "speech": "Azul e amarelo fan verde.",
+   "source": "nivel/curso_5_6/c5_6_p6_1/sig",
    "pack": false
   },
   {
@@ -316903,6 +319819,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_89274f0f_131",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "No experimento «Flota ou afúndese?» (comprobar o barco na auga), pregúntalle que pasa co barco e mira se repite «The boat floats!».",
+   "speech": "No experimento «Flota ou afúndese?» (comprobar o barco na auga), pregúntalle que pasa co barco e mira se repite «The boat floats!».",
+   "source": "nivel/curso_2_3/c2_3_p6_1/instrucion",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_8927d3d2_20",
    "lang": "gl",
    "style": "tutor",
@@ -317468,6 +320393,15 @@
    "speech": "As dúas partes",
    "source": "tpr.5_6.maio/s2/5_6.maio.s2.both-sides/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_8a68d2fb_123",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "No experimento «Grande aquí, pequeno alí» (comparar tamaños), pon dous obxectos ou mira a lámina e pregúntalle cal é «Big».",
+   "speech": "No experimento «Grande aquí, pequeno alí» (comparar tamaños), pon dous obxectos ou mira a lámina e pregúntalle cal é «Big».",
+   "source": "nivel/curso_2_3/c2_3_p3_1/instrucion",
+   "pack": false
   },
   {
    "id": "gl_tutor_8a6a5a11_29",
@@ -318215,6 +321149,15 @@
    "speech": "Canción",
    "source": "tpr.3_4.setembro/s4/3_4.setembro.s4.song/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_8c5350b7_93",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "No experimento «A frauta do tren» (probas de son co tubo), mira se sinala a frauta na lámina.",
+   "speech": "No experimento «A frauta do tren» (probas de son co tubo), mira se sinala a frauta na lámina.",
+   "source": "nivel/curso_5_6/c5_6_p2_3/instrucion",
+   "pack": false
   },
   {
    "id": "gl_tutor_8c55b49c_114",
@@ -319644,6 +322587,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_8f840202_108",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "No experimento «O mapa do tesouro» (ler as pistas do cuarto), sinala a lámina do mapa e escoita se di «Map».",
+   "speech": "No experimento «O mapa do tesouro» (ler as pistas do cuarto), sinala a lámina do mapa e escoita se di «Map».",
+   "source": "nivel/curso_5_6/c5_6_p4_3/instrucion",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_8f84a49f_13",
    "lang": "gl",
    "style": "tutor",
@@ -319678,6 +322630,15 @@
    "speech": "Castelo de area",
    "source": "tpr.3_4.xuno/s2/3_4.xuno.s2.sandcastle/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_8f964138_22",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Atopa a nube de choiva",
+   "speech": "Atopa a nube de choiva",
+   "source": "nivel/curso_4_5/c4_5_p2_3/sig",
+   "pack": false
   },
   {
    "id": "gl_tutor_8f9b27a2_30",
@@ -319830,6 +322791,15 @@
    "text": "Conteo motriz de cinco pasos e recollida da cuncha nomeada.",
    "speech": "Conteo motriz de cinco pasos e recollida da cuncha nomeada.",
    "source": "asamblea.segundo_ciclo.xuno.6_infantil/fase/3/cmd/cmd.xuno.6i.01/accionFisica",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_9002dec3_127",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "No experimento «Vermello, azul, vermello…» (ler a serie en voz alta), sinala a secuencia e escoita se repite «Red, blue, red!».",
+   "speech": "No experimento «Vermello, azul, vermello…» (ler a serie en voz alta), sinala a secuencia e escoita se repite «Red, blue, red!».",
+   "source": "nivel/curso_3_4/c3_4_p6_2/instrucion",
    "pack": false
   },
   {
@@ -321687,6 +324657,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_94264c1e_12",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Segue o mapa",
+   "speech": "Segue o mapa",
+   "source": "nivel/curso_5_6/c5_6_p1_2/sig",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_942a131f_14",
    "lang": "gl",
    "style": "tutor",
@@ -321918,6 +324897,15 @@
    "text": "Tes burbullas no teu baño?",
    "speech": "Tes burbullas no teu baño?",
    "source": "biblioteca/HIS-046/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_94c5fe0d_23",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Distinguir un contraste",
+   "speech": "Distinguir un contraste",
+   "source": "nivel/peldano/3",
    "pack": false
   },
   {
@@ -324681,6 +327669,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_9c1b0543_115",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "No experimento «O tren baixa a costa» (soltar pola costa), mira como esvara e escoita se di «The train goes down!».",
+   "speech": "No experimento «O tren baixa a costa» (soltar pola costa), mira como esvara e escoita se di «The train goes down!».",
+   "source": "nivel/curso_3_4/c3_4_p6_3/instrucion",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_9c1e9c4e_7",
    "lang": "gl",
    "style": "tutor",
@@ -325149,6 +328146,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_9d04ef21_13",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Atopa a pedra",
+   "speech": "Atopa a pedra",
+   "source": "nivel/curso_2_3/c2_3_p2_2/sig",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_9d10cc7e_3",
    "lang": "gl",
    "style": "tutor",
@@ -325255,6 +328261,15 @@
    "speech": "Mente tranquila",
    "source": "tpr.4_5.setembro/s4/4_5.setembro.s4.peaceful-mind/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_9d5dcba3_117",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "No experimento «Cantos sons ten o papel?» (comparar xornal e pano de papel), sacode ambos e mira se distingue «Soft».",
+   "speech": "No experimento «Cantos sons ten o papel?» (comparar xornal e pano de papel), sacode ambos e mira se distingue «Soft».",
+   "source": "nivel/curso_5_6/c5_6_p3_1/instrucion",
+   "pack": false
   },
   {
    "id": "gl_tutor_9d5e65cd_30",
@@ -325516,6 +328531,15 @@
    "speech": "Pechar o libro",
    "source": "tpr.2_3.abril/s3/2_3.abril.s3.close-the-book/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_9e03ae4a_13",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Ondas grandes",
+   "speech": "Ondas grandes",
+   "source": "nivel/curso_2_3/c2_3_p5_3/sig",
+   "pack": false
   },
   {
    "id": "gl_tutor_9e0911a7_26",
@@ -326076,6 +329100,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_9f7715e4_108",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "No experimento «A maleta que pesa» (xustificar o peso despois de probar), mira se di «Books make it heavy.».",
+   "speech": "No experimento «A maleta que pesa» (xustificar o peso despois de probar), mira se di «Books make it heavy.».",
+   "source": "nivel/curso_5_6/c5_6_p6_3/instrucion",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_9f791a4e_22",
    "lang": "gl",
    "style": "tutor",
@@ -326326,6 +329359,15 @@
    "text": "Nota a vibración coa man no tambor ou na súa propia gorxa ao cantar «mmm».",
    "speech": "Nota a vibración coa man no tambor ou na súa propia gorxa ao cantar «mmm».",
    "source": "steam/I3-ACUSTICA-001/observar/1",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_a0260209_8",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Tormenta",
+   "speech": "Tormenta",
+   "source": "nivel/curso_4_5/c4_5_p4_2/sig",
    "pack": false
   },
   {
@@ -326848,6 +329890,15 @@
    "text": "Podes trabar coma Lúa? Ñam, cronch!",
    "speech": "Podes trabar coma Lúa? Ñam, cronch!",
    "source": "biblioteca/HIS-002/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_a1bf5bc3_13",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Está mollado!",
+   "speech": "Está mollado!",
+   "source": "nivel/curso_2_3/c2_3_p6_2/sig",
    "pack": false
   },
   {
@@ -327639,6 +330690,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_a3d0ba78_127",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "No experimento «Que torre aguanta?» (comprobar a torre rematada), sinala a lámina e mira se di a frase curta «It stands tall!».",
+   "speech": "No experimento «Que torre aguanta?» (comprobar a torre rematada), sinala a lámina e mira se di a frase curta «It stands tall!».",
+   "source": "nivel/curso_3_4/c3_4_p6_1/instrucion",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_a3d7a403_28",
    "lang": "gl",
    "style": "tutor",
@@ -327864,6 +330924,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_a4972bd1_19",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Pon o barco na auga",
+   "speech": "Pon o barco na auga",
+   "source": "nivel/curso_2_3/c2_3_p1_1/sig",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_a499e541_11",
    "lang": "gl",
    "style": "tutor",
@@ -327871,6 +330940,15 @@
    "speech": "Rir baixiño",
    "source": "tpr.0_2.setembro/s3/0_2.setembro.s3.chuckle/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_a49d56b4_118",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "No experimento «Primeiro mollo, despois xabón» (enxabonar as mans), ensínalle a lámina e mira se di «Soap and water!».",
+   "speech": "No experimento «Primeiro mollo, despois xabón» (enxabonar as mans), ensínalle a lámina e mira se di «Soap and water!».",
+   "source": "nivel/curso_2_3/c2_3_p6_3/instrucion",
+   "pack": false
   },
   {
    "id": "gl_tutor_a4a61efe_74",
@@ -328272,6 +331350,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_a56f91e9_119",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "No experimento «Que roupa pide o tempo?» (protexerse do chuvasco), sinala a lámina e escoita se xunta «Storm umbrella».",
+   "speech": "No experimento «Que roupa pide o tempo?» (protexerse do chuvasco), sinala a lámina e escoita se xunta «Storm umbrella».",
+   "source": "nivel/curso_4_5/c4_5_p5_2/instrucion",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_a57189c4_56",
    "lang": "gl",
    "style": "tutor",
@@ -328305,6 +331392,15 @@
    "text": "Si, correr! Lúa corre rápido!",
    "speech": "Si, correr! Lúa corre rápido!",
    "source": "biblioteca/HIS-045/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_a5879e18_105",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "No experimento «A sombra e o sol» (achegar e afastar a luz), mira se distingue cando a sombra é «Bigger».",
+   "speech": "No experimento «A sombra e o sol» (achegar e afastar a luz), mira se distingue cando a sombra é «Bigger».",
+   "source": "nivel/curso_4_5/c4_5_p3_3/instrucion",
    "pack": false
   },
   {
@@ -329152,6 +332248,15 @@
    "speech": "Paleta de pintor",
    "source": "tpr.5_6.marzo/s4/5_6.marzo.s4.palette/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_a7fc5c96_9",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Máis zume",
+   "speech": "Máis zume",
+   "source": "nivel/curso_3_4/c3_4_p5_3/sig",
+   "pack": false
   },
   {
    "id": "gl_tutor_a7fea6d3_35",
@@ -330252,6 +333357,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_aad4ef9a_112",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "No experimento «Que torre aguanta?» (engadir un piso firme), amósalle a torre alta e mira se xunta «Tall tower».",
+   "speech": "No experimento «Que torre aguanta?» (engadir un piso firme), amósalle a torre alta e mira se xunta «Tall tower».",
+   "source": "nivel/curso_3_4/c3_4_p5_1/instrucion",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_aaea3a55_14",
    "lang": "gl",
    "style": "tutor",
@@ -330978,6 +334092,15 @@
    "text": "Lavado de mans antes de comer",
    "speech": "Lavado de mans antes de comer",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_aca5496e_129",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "No experimento «Escoitar o corazón» (comparar antes e despois de correr), fai palmas lentas e rápidas e mira se distingue «Fast».",
+   "speech": "No experimento «Escoitar o corazón» (comparar antes e despois de correr), fai palmas lentas e rápidas e mira se distingue «Fast».",
+   "source": "nivel/curso_4_5/c4_5_p3_2/instrucion",
    "pack": false
   },
   {
@@ -331827,6 +334950,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_af245ebb_121",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "No experimento «Vermello, azul, vermello…» (continuar o padrón con vasos), sinala o vaso azul e escoita se di «Blue cup».",
+   "speech": "No experimento «Vermello, azul, vermello…» (continuar o padrón con vasos), sinala o vaso azul e escoita se di «Blue cup».",
+   "source": "nivel/curso_3_4/c3_4_p5_2/instrucion",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_af24eeea_81",
    "lang": "gl",
    "style": "tutor",
@@ -332023,6 +335155,15 @@
    "speech": "Contar unha historia",
    "source": "tpr.4_5.xuno/s2/4_5.xuno.s2.tell-a-story/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_afa51fba_11",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Toalla seca",
+   "speech": "Toalla seca",
+   "source": "nivel/curso_2_3/c2_3_p5_2/sig",
+   "pack": false
   },
   {
    "id": "gl_tutor_afaa178f_29",
@@ -332355,6 +335496,15 @@
    "text": "tormentosa",
    "speech": "tormentosa",
    "source": "escoita/curso_4_5/8/stormy/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_b067a326_99",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "No experimento «A cara na culler» (mirarse polo dereito e polo revés), pídelle que sinale a culler.",
+   "speech": "No experimento «A cara na culler» (mirarse polo dereito e polo revés), pídelle que sinale a culler.",
+   "source": "nivel/curso_3_4/c3_4_p2_3/instrucion",
    "pack": false
   },
   {
@@ -332958,6 +336108,15 @@
    "text": "Si, as campás soan moi forte!",
    "speech": "Si, as campás soan moi forte!",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_b1f757be_125",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "No experimento «A toalla mollada pesa» (identificar a toalla antes de mollala), mira se sinala a toalla na lámina ou no baño.",
+   "speech": "No experimento «A toalla mollada pesa» (identificar a toalla antes de mollala), mira se sinala a toalla na lámina ou no baño.",
+   "source": "nivel/curso_2_3/c2_3_p2_3/instrucion",
    "pack": false
   },
   {
@@ -334743,6 +337902,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_b6467ec0_16",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Mollado ou seco?",
+   "speech": "Mollado ou seco?",
+   "source": "nivel/curso_2_3/c2_3_p3_2/sig",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_b64dc95f_58",
    "lang": "gl",
    "style": "tutor",
@@ -334965,6 +338133,15 @@
    "text": "Onde está o timbre? Toca o timbre!",
    "speech": "Onde está o timbre? Toca o timbre!",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_b6e4bf86_114",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "No experimento «O muíño de vento» (probar un sopro suave e outro forte), mira se comprende e sopra con máis forza.",
+   "speech": "No experimento «O muíño de vento» (probar un sopro suave e outro forte), mira se comprende e sopra con máis forza.",
+   "source": "nivel/curso_4_5/c4_5_p1_3/instrucion",
    "pack": false
   },
   {
@@ -335334,6 +338511,15 @@
    "text": "Onde está a botella verde? Tócaa!",
    "speech": "Onde está a botella verde? Tócaa!",
    "source": "biblioteca/HIS-095/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_b7d46651_112",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "No experimento «Que venda absorbe?» (comparar o material que chucha co impermeable), pregúntalle cal está «Wet».",
+   "speech": "No experimento «Que venda absorbe?» (comparar o material que chucha co impermeable), pregúntalle cal está «Wet».",
+   "source": "nivel/curso_4_5/c4_5_p3_1/instrucion",
    "pack": false
   },
   {
@@ -337160,6 +340346,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_bcf81566_113",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "No experimento «Escoitar o corazón» (notar o latexo tras moverse), dislle que poña a man no peito coma na lámina.",
+   "speech": "No experimento «Escoitar o corazón» (notar o latexo tras moverse), dislle que poña a man no peito coma na lámina.",
+   "source": "nivel/curso_4_5/c4_5_p1_1/instrucion",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_bcf9193b_46",
    "lang": "gl",
    "style": "tutor",
@@ -337903,6 +341098,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_bf21b461_14",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Aguanta en pé!",
+   "speech": "Aguanta en pé!",
+   "source": "nivel/curso_3_4/c3_4_p6_1/sig",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_bf223164_49",
    "lang": "gl",
    "style": "tutor",
@@ -337964,6 +341168,15 @@
    "speech": "Fóra do ovo",
    "source": "tpr.2_3.abril/s4/2_3.abril.s4.out-of-the-egg/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_bf82ec17_26",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Máis rápido ou máis amodo?",
+   "speech": "Máis rápido ou máis amodo?",
+   "source": "nivel/curso_5_6/c5_6_p3_3/sig",
+   "pack": false
   },
   {
    "id": "gl_tutor_bf898509_31",
@@ -339294,6 +342507,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_c305cb6b_30",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Esponxa mollada ou bolsa seca?",
+   "speech": "Esponxa mollada ou bolsa seca?",
+   "source": "nivel/curso_4_5/c4_5_p3_1/sig",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_c308828a_7",
    "lang": "gl",
    "style": "tutor",
@@ -339418,6 +342640,15 @@
    "speech": "Tic, tac!",
    "source": "tpr.3_4.xaneiro/s4/3_4.xaneiro.s4.tick-tock/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_c3869232_13",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Dobra o papel",
+   "speech": "Dobra o papel",
+   "source": "nivel/curso_5_6/c5_6_p1_1/sig",
+   "pack": false
   },
   {
    "id": "gl_tutor_c3894cc7_48",
@@ -340549,6 +343780,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_c6847b1c_20",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Alta ou bambaleante?",
+   "speech": "Alta ou bambaleante?",
+   "source": "nivel/curso_3_4/c3_4_p3_1/sig",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_c68b3057_6",
    "lang": "gl",
    "style": "tutor",
@@ -340600,6 +343840,15 @@
    "text": "Z · Cebra a raias",
    "speech": "Z · Cebra a raias",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_c6a44b63_14",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Luces pequenas",
+   "speech": "Luces pequenas",
+   "source": "nivel/curso_5_6/c5_6_p5_3/sig",
    "pack": false
   },
   {
@@ -341575,6 +344824,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_c91d9c9f_111",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "No experimento «A bolboreta igual» (observar as dúas metades iguais), pídelle que sinale a bolboreta na lámina.",
+   "speech": "No experimento «A bolboreta igual» (observar as dúas metades iguais), pídelle que sinale a bolboreta na lámina.",
+   "source": "nivel/curso_5_6/c5_6_p2_1/instrucion",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_c92347ee_13",
    "lang": "gl",
    "style": "tutor",
@@ -341843,6 +345101,15 @@
    "speech": "A recoller, a recoller",
    "source": "tpr.2_3.setembro/s3/2_3.setembro.s3.clean-up-clean-up/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_c9f33244_15",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Dicir a palabra",
+   "speech": "Dicir a palabra",
+   "source": "nivel/peldano/4",
+   "pack": false
   },
   {
    "id": "gl_tutor_ca0b6c40_14",
@@ -342180,6 +345447,15 @@
    "text": "Si, dá palmas! Plas, plas!",
    "speech": "Si, dá palmas! Plas, plas!",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_cadb3ade_120",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "No experimento «A sombra da torre» (observar a sombra cunha lanterna), pídelle que sinale «shadow» na lámina ou na mesa.",
+   "speech": "No experimento «A sombra da torre» (observar a sombra cunha lanterna), pídelle que sinale «shadow» na lámina ou na mesa.",
+   "source": "nivel/curso_3_4/c3_4_p2_2/instrucion",
    "pack": false
   },
   {
@@ -343452,6 +346728,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_ce07de2e_122",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "No experimento «Flota ou afúndese?» (observar se flota), sinala o barco na auga ou na lámina e agarda a ver se di «Float».",
+   "speech": "No experimento «Flota ou afúndese?» (observar se flota), sinala o barco na auga ou na lámina e agarda a ver se di «Float».",
+   "source": "nivel/curso_2_3/c2_3_p4_1/instrucion",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_ce28cade_29",
    "lang": "gl",
    "style": "tutor",
@@ -344487,6 +347772,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_d099cf26_136",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "No experimento «Que torre aguanta?» (apilar bloques na base), pídelle cun xesto cara á torre ou á lámina se entende onde poñer o bloque.",
+   "speech": "No experimento «Que torre aguanta?» (apilar bloques na base), pídelle cun xesto cara á torre ou á lámina se entende onde poñer o bloque.",
+   "source": "nivel/curso_3_4/c3_4_p1_1/instrucion",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_d0a10feb_12",
    "lang": "gl",
    "style": "tutor",
@@ -344916,6 +348210,15 @@
    "text": "bichiño",
    "speech": "bichiño",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_d1a3ffcf_25",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "O meu corazón vai rápido!",
+   "speech": "O meu corazón vai rápido!",
+   "source": "nivel/curso_4_5/c4_5_p6_2/sig",
    "pack": false
   },
   {
@@ -345888,6 +349191,15 @@
    "text": "Podes facer choiva cos dedos? Choiva, choiva, choiva!",
    "speech": "Podes facer choiva cos dedos? Choiva, choiva, choiva!",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_d3f5f8ba_10",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Bolsa seca",
+   "speech": "Bolsa seca",
+   "source": "nivel/curso_4_5/c4_5_p5_1/sig",
    "pack": false
   },
   {
@@ -348663,6 +351975,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_db9f0b53_112",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "No experimento «Mensaxes de luz» (enviar sinais curtos de luz), sinala a lámina e escoita se di «Little lights».",
+   "speech": "No experimento «Mensaxes de luz» (enviar sinais curtos de luz), sinala a lámina e escoita se di «Little lights».",
+   "source": "nivel/curso_5_6/c5_6_p5_3/instrucion",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_dbb51b1f_11",
    "lang": "gl",
    "style": "tutor",
@@ -349473,6 +352794,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_ddf3c3d5_19",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Fai xirar o círculo",
+   "speech": "Fai xirar o círculo",
+   "source": "nivel/curso_5_6/c5_6_p1_3/sig",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_de02c9bf_5",
    "lang": "gl",
    "style": "tutor",
@@ -349480,6 +352810,15 @@
    "speech": "Bater",
    "source": "tpr.3_4.marzo/s4/3_4.marzo.s4.bang/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_de0d4dec_18",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Sinala a bolboreta",
+   "speech": "Sinala a bolboreta",
+   "source": "nivel/curso_5_6/c5_6_p2_1/sig",
+   "pack": false
   },
   {
    "id": "gl_tutor_de11d1dd_38",
@@ -349878,6 +353217,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_defe4aef_114",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "No experimento «Facemos lama» (pisa nos charcos coa imaxinación), mira se xunta dúas palabras coma «Muddy puddle».",
+   "speech": "No experimento «Facemos lama» (pisa nos charcos coa imaxinación), mira se xunta dúas palabras coma «Muddy puddle».",
+   "source": "nivel/curso_4_5/c4_5_p5_3/instrucion",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_df023001_48",
    "lang": "gl",
    "style": "tutor",
@@ -349986,6 +353334,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_df2a6540_123",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "No experimento «Cores que nacen» (anotar o resultado da mestura), escoita se formula a frase «Blue and yellow make green.».",
+   "speech": "No experimento «Cores que nacen» (anotar o resultado da mestura), escoita se formula a frase «Blue and yellow make green.».",
+   "source": "nivel/curso_5_6/c5_6_p6_1/instrucion",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_df4c4d10_10",
    "lang": "gl",
    "style": "tutor",
@@ -350055,6 +353412,15 @@
    "text": "Canción enteira coas tres ordes dentro. Ti aínda modelas todo; o freeze vai ao final de cada estrofa.",
    "speech": "Canción enteira coas tres ordes dentro. Ti aínda modelas todo; o freeze vai ao final de cada estrofa.",
    "source": "progresion.segundo_ciclo.5/s2/d3/consigna",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_df754dac_12",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Sinala o sol",
+   "speech": "Sinala o sol",
+   "source": "nivel/curso_4_5/c4_5_p2_2/sig",
    "pack": false
   },
   {
@@ -350307,6 +353673,15 @@
    "text": "O meu barco! Barco mollado!",
    "speech": "O meu barco! Barco mollado!",
    "source": "biblioteca/HIS-018/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_e036763c_108",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "No experimento «Cores que nacen» (xuntar amarelo e azul), sinala o resultado na lámina e mira se di «Green».",
+   "speech": "No experimento «Cores que nacen» (xuntar amarelo e azul), sinala o resultado na lámina e mira se di «Green».",
+   "source": "nivel/curso_5_6/c5_6_p4_1/instrucion",
    "pack": false
   },
   {
@@ -350715,6 +354090,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_e142cf37_19",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Sinte o teu corazón",
+   "speech": "Sinte o teu corazón",
+   "source": "nivel/curso_4_5/c4_5_p1_1/sig",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_e143a627_22",
    "lang": "gl",
    "style": "tutor",
@@ -351018,6 +354402,15 @@
    "text": "Agardando na cola do supermercado, en vez de darlle o móbil: «Arriba! (lévalo en volandas) ...e abaixo. Arriba... e abaixo. Outra vez?» Tres minutos, cero pantalla, e o neno acaba de escoitar «arriba» e «abaixo» dez veces mentres o seu corpo sentía as dúas cousas.",
    "speech": "Agardando na cola do supermercado, en vez de darlle o móbil: «Arriba! (lévalo en volandas) ...e abaixo. Arriba... e abaixo. Outra vez?» Tres minutos, cero pantalla, e o neno acaba de escoitar «arriba» e «abaixo» dez veces mentres o seu corpo sentía as dúas cousas.",
    "source": "academy.juego_movimiento_sin_pantallas.01/ejemploCotidiano",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_e28b2e77_27",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Este avión voou máis lonxe!",
+   "speech": "Este avión voou máis lonxe!",
+   "source": "nivel/curso_5_6/c5_6_p6_2/sig",
    "pack": false
   },
   {
@@ -352856,6 +356249,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_e6e243a6_116",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "No experimento «A música dos vasos» (golpear vasos con distinta auga), toca suave e forte e mira se escolle «Quiet».",
+   "speech": "No experimento «A música dos vasos» (golpear vasos con distinta auga), toca suave e forte e mira se escolle «Quiet».",
+   "source": "nivel/curso_3_4/c3_4_p3_2/instrucion",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_e6e66498_46",
    "lang": "gl",
    "style": "tutor",
@@ -352881,6 +356283,15 @@
    "speech": "Empinado",
    "source": "tpr.4_5.novembro/s1/4_5.novembro.s1.steep/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_e6f4e351_17",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Ensíname a toalla",
+   "speech": "Ensíname a toalla",
+   "source": "nivel/curso_2_3/c2_3_p2_3/sig",
+   "pack": false
   },
   {
    "id": "gl_tutor_e6ff9e71_13",
@@ -354143,6 +357554,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_e9fd1dea_112",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "No experimento «Que torre aguanta?» (erixir a torre sen caer), sinala a lámina da torre e escoita se di «Tower».",
+   "speech": "No experimento «Que torre aguanta?» (erixir a torre sen caer), sinala a lámina da torre e escoita se di «Tower».",
+   "source": "nivel/curso_3_4/c3_4_p4_1/instrucion",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_e9fe2c50_32",
    "lang": "gl",
    "style": "tutor",
@@ -355232,6 +358652,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_ed63e05f_13",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Verte no vaso",
+   "speech": "Verte no vaso",
+   "source": "nivel/curso_3_4/c3_4_p1_2/sig",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_ed66b27a_6",
    "lang": "gl",
    "style": "tutor",
@@ -356193,6 +359622,15 @@
    "speech": "Delgado, delgada",
    "source": "tpr.3_4.abril/s2/3_4.abril.s2.thin/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_efe8652c_111",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "No experimento «O xeo no zume» (observar como arrefría e derrete), sinala o vaso con zume e mira se di «Juice».",
+   "speech": "No experimento «O xeo no zume» (observar como arrefría e derrete), sinala o vaso con zume e mira se di «Juice».",
+   "source": "nivel/curso_3_4/c3_4_p4_2/instrucion",
+   "pack": false
   },
   {
    "id": "gl_tutor_efea467a_21",
@@ -357338,6 +360776,15 @@
    "pack": false
   },
   {
+   "id": "gl_tutor_f275f243_93",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "No experimento «A maleta que pesa» (probar con libros e sen eles), pregúntalle cal é «Heavy».",
+   "speech": "No experimento «A maleta que pesa» (probar con libros e sen eles), pregúntalle cal é «Heavy».",
+   "source": "nivel/curso_5_6/c5_6_p3_2/instrucion",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_f276a11c_10",
    "lang": "gl",
    "style": "tutor",
@@ -357698,6 +361145,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_f34b999a_20",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Pon un bloque enriba",
+   "speech": "Pon un bloque enriba",
+   "source": "nivel/curso_3_4/c3_4_p1_1/sig",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_f3583ffc_64",
    "lang": "gl",
    "style": "tutor",
@@ -357966,6 +361422,15 @@
    "speech": "Cheira a flor",
    "source": "tpr.0_2.abril/s1/0_2.abril.s1.smell-the-flower/significado",
    "pack": true
+  },
+  {
+   "id": "gl_tutor_f428c388_129",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "No experimento «Que torre aguanta?» (probar a estabilidade da torre), sinala a lámina e mira se distingue a torre firme («Tall»).",
+   "speech": "No experimento «Que torre aguanta?» (probar a estabilidade da torre), sinala a lámina e mira se distingue a torre firme («Tall»).",
+   "source": "nivel/curso_3_4/c3_4_p3_1/instrucion",
+   "pack": false
   },
   {
    "id": "gl_tutor_f43b2def_39",
@@ -358280,6 +361745,15 @@
    "text": "A choiva miudiña e as botas vermellas",
    "speech": "A choiva miudiña e as botas vermellas",
    "source": "significados/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_f4f86309_141",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "No experimento «Pum grande, pum pequeno» (distinguir intensidade do son), fai un toque suave na mesa e outro forte e mira se escolle «Quiet».",
+   "speech": "No experimento «Pum grande, pum pequeno» (distinguir intensidade do son), fai un toque suave na mesa e outro forte e mira se escolle «Quiet».",
+   "source": "nivel/curso_2_3/c2_3_p3_3/instrucion",
    "pack": false
   },
   {
@@ -359705,6 +363179,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_f89b39d9_16",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Rápido ou amodo?",
+   "speech": "Rápido ou amodo?",
+   "source": "nivel/curso_4_5/c4_5_p3_2/sig",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_f8a32c0f_37",
    "lang": "gl",
    "style": "tutor",
@@ -359999,6 +363482,15 @@
    "text": "Para que usas ti as cuncas na casa?",
    "speech": "Para que usas ti as cuncas na casa?",
    "source": "biblioteca/HIS-060/significado",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_f95b464e_18",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "Pesada ou lixeira?",
+   "speech": "Pesada ou lixeira?",
+   "source": "nivel/curso_5_6/c5_6_p3_2/sig",
    "pack": false
   },
   {
@@ -360425,6 +363917,15 @@
    "pack": true
   },
   {
+   "id": "gl_tutor_fa4b18a0_94",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "No experimento «A bolboreta igual» (abrir a folla co debuxo dobre), mira se nomea «Butterfly».",
+   "speech": "No experimento «A bolboreta igual» (abrir a folla co debuxo dobre), mira se nomea «Butterfly».",
+   "source": "nivel/curso_5_6/c5_6_p4_2/instrucion",
+   "pack": false
+  },
+  {
    "id": "gl_tutor_fa519a26_7",
    "lang": "gl",
    "style": "tutor",
@@ -360476,6 +363977,15 @@
    "text": "Baixar a tea ata pousala e deixala quieta enriba deles.",
    "speech": "Baixar a tea ata pousala e deixala quieta enriba deles.",
    "source": "asamblea.primeiro_ciclo.xuno.0_2_anos/fase/4/consigna",
+   "pack": false
+  },
+  {
+   "id": "gl_tutor_fa73d38c_104",
+   "lang": "gl",
+   "style": "tutor",
+   "text": "No experimento «A toalla mollada pesa» (comparar coa seca), toca a toalla seca e mira se di «Dry towel».",
+   "speech": "No experimento «A toalla mollada pesa» (comparar coa seca), toca a toalla seca e mira se di «Dry towel».",
+   "source": "nivel/curso_2_3/c2_3_p5_2/instrucion",
    "pack": false
   },
   {

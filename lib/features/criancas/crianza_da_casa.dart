@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../core/audio/offline_audio_service.dart';
 import '../../core/localization/app_language.dart';
 import '../../core/navigation/ruta_lua.dart';
 import '../../core/theme/app_theme.dart';
@@ -17,12 +18,14 @@ class CrianzaDaCasa extends InheritedNotifier<CriancasStore> {
     required this.onLanguageChanged,
     required this.abrirResultados,
     this.agora,
+    this.audioService,
     required super.child,
   }) : super(notifier: store);
 
   final ValueChanged<AppLanguage> onLanguageChanged;
   final void Function(BuildContext context) abrirResultados;
   final DateTime? agora;
+  final OfflineAudioService? audioService;
 
   CriancasStore get store => notifier!;
 
@@ -211,6 +214,7 @@ Future<void> abrirFollaCrianza(
             crianza: crianza,
             cursoInicial: crianza == null ? activa.curso : null,
             agora: casa.agora,
+            audioService: casa.audioService,
           ),
         ),
       );

@@ -62,6 +62,18 @@ void main() {
       agora: DateTime(2026, 10, 6, 21, 49),
     );
     await s.rexistrarEscoita(a.id, 'leaf');
+    await s.gardarRespostaProba(
+      a.id,
+      Observacion.entende,
+      palabrasSemente: const ['boat'],
+      agora: DateTime(2026, 10, 6, 21, 51),
+    );
+    await s.completarProba(
+      b.id,
+      peldano: 3,
+      semente: const {'map': Observacion.di},
+      agora: DateTime(2026, 10, 6, 21, 52),
+    );
 
     // O-20261109-3: el juego del niño con Lúa (XP, racha, insignias, armario).
     final c = CatalogoLua.lido!;
@@ -99,6 +111,9 @@ void main() {
       'semanasConMarcas',
       'ultimaSemanaMarca',
       'semanaAlta',
+      'peldano',
+      'probaCompletada',
+      'probaRespostas',
     };
     final semana = RegExp(r'^curso_\d_\d/\d{1,2}/[1-5]$');
     for (final c in j['criancas'] as List) {
@@ -122,6 +137,15 @@ void main() {
       }
       if (m['semanaAlta'] != null) {
         expect(semana.hasMatch(m['semanaAlta'] as String), isTrue);
+      }
+      if (m['peldano'] != null) {
+        expect(m['peldano'], inInclusiveRange(1, 6));
+      }
+      if (m['probaCompletada'] != null) {
+        expect(m['probaCompletada'], isA<bool>());
+      }
+      if (m['probaRespostas'] != null) {
+        expect(m['probaRespostas'], isA<List>());
       }
     }
     for (final porNeno in (j['observacions'] as Map).values) {

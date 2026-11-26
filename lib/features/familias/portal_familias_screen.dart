@@ -216,6 +216,7 @@ class _PortalFamiliasScreenState extends State<PortalFamiliasScreen> {
         onLanguageChanged: _cambiarLingua,
         primeira: true,
         agora: widget.agora,
+        audioService: widget.audioService,
         onGardado: (_) => setState(() => _enAlta = false),
       );
     }
@@ -224,6 +225,7 @@ class _PortalFamiliasScreenState extends State<PortalFamiliasScreen> {
       onLanguageChanged: _cambiarLingua,
       abrirResultados: _abrirResultados,
       agora: widget.agora,
+      audioService: widget.audioService,
       child: _portal(context, lang),
     );
   }

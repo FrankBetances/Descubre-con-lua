@@ -40,6 +40,15 @@ class Crianza {
   /// Semana del curso en que se registró (`curso_x_y/mes/semana`, sin fecha).
   final String? semanaAlta;
 
+  /// Peldaño de inicio/progresión dentro de su curso (1..6, P11.3/P11.4).
+  final int peldano;
+
+  /// Si ya se completó o saltó el juego de entrada de Lúa (ALTA P11.3).
+  final bool probaCompletada;
+
+  /// Respuestas guardadas si la prueba de entrada se interrumpió a mitad (0..2).
+  final List<int> probaRespostas;
+
   static const List<String> rutinasValidas = [
     'bano',
     'comida',
@@ -61,6 +70,9 @@ class Crianza {
     this.semanasConMarcas = 0,
     this.ultimaSemanaMarca,
     this.semanaAlta,
+    this.peldano = 1,
+    this.probaCompletada = true,
+    this.probaRespostas = const [],
   });
 
   /// Años cumplidos en [agora] a partir de [mesNacemento] y [anoNacemento] si
@@ -94,6 +106,9 @@ class Crianza {
     int? semanasConMarcas,
     String? ultimaSemanaMarca,
     String? semanaAlta,
+    int? peldano,
+    bool? probaCompletada,
+    List<int>? probaRespostas,
   }) =>
       Crianza(
         id: id,
@@ -107,6 +122,9 @@ class Crianza {
         semanasConMarcas: semanasConMarcas ?? this.semanasConMarcas,
         ultimaSemanaMarca: ultimaSemanaMarca ?? this.ultimaSemanaMarca,
         semanaAlta: semanaAlta ?? this.semanaAlta,
+        peldano: (peldano ?? this.peldano).clamp(1, 6),
+        probaCompletada: probaCompletada ?? this.probaCompletada,
+        probaRespostas: probaRespostas ?? this.probaRespostas,
       );
 
   Map<String, dynamic> toJson() => {
@@ -121,6 +139,9 @@ class Crianza {
         if (semanasConMarcas > 0) 'semanasConMarcas': semanasConMarcas,
         if (ultimaSemanaMarca != null) 'ultimaSemanaMarca': ultimaSemanaMarca,
         if (semanaAlta != null) 'semanaAlta': semanaAlta,
+        if (peldano != 1) 'peldano': peldano,
+        if (!probaCompletada) 'probaCompletada': false,
+        if (probaRespostas.isNotEmpty) 'probaRespostas': probaRespostas,
       };
 
   static List<String> normalizarRutinas(Iterable<String> orixe) {
@@ -148,6 +169,15 @@ class Crianza {
         j['semanasConMarcas'] is int ? j['semanasConMarcas'] as int : 0;
     final ultSem = j['ultimaSemanaMarca']?.toString();
     final semAlta = j['semanaAlta']?.toString();
+    final pel = j['peldano'] is int ? j['peldano'] as int : 1;
+    final comp =
+        j['probaCompletada'] is bool ? j['probaCompletada'] as bool : true;
+    final respRaw = j['probaRespostas'] is List
+        ? [
+            for (final x in j['probaRespostas'] as List)
+              if (x is int && x >= 0 && x <= 2) x,
+          ]
+        : const <int>[];
     if (id.isEmpty || nome.isEmpty || curso.isEmpty) return null;
     return Crianza(
       id: id,
@@ -161,6 +191,9 @@ class Crianza {
       semanasConMarcas: semMarcas < 0 ? 0 : semMarcas,
       ultimaSemanaMarca: ultSem,
       semanaAlta: semAlta,
+      peldano: pel.clamp(1, 6),
+      probaCompletada: comp,
+      probaRespostas: List.unmodifiable(respRaw),
     );
   }
 }
@@ -385,7 +418,9 @@ class CriancasStore extends ChangeNotifier {
     int? promocionVistaAno,
     List<String>? rutinas,
     String? semanaAlta,
+    bool? probaCompletada,
   }) async {
+    final comp = probaCompletada ?? (idade < 2 || curso == 'curso_0_2');
     final c = Crianza(
       id: _novoId(),
       nome: nome.trim(),
@@ -396,11 +431,66 @@ class CriancasStore extends ChangeNotifier {
       promocionVistaAno: promocionVistaAno,
       rutinas: Crianza.normalizarRutinas(rutinas ?? const ['bano']),
       semanaAlta: semanaAlta,
+      probaCompletada: comp,
     );
     _criancas.add(c);
     _activa = c.id;
     await _gardar();
     return c;
+  }
+
+  /// Guarda una respuesta incremental de la prueba de entrada para poder
+  /// reanudarla si se interrumpe (Alta única, corrección 26/11/2026).
+  Future<void> gardarRespostaProba(
+    String id,
+    Observacion obs, {
+    Iterable<String> palabrasSemente = const [],
+    DateTime? agora,
+  }) async {
+    final i = _criancas.indexWhere((c) => c.id == id);
+    if (i < 0) return;
+    final c = _criancas[i];
+    if (c.probaCompletada) return;
+    final novas = List<int>.unmodifiable([...c.probaRespostas, obs.index]);
+    _criancas[i] = c.copyWith(probaRespostas: novas);
+    if (obs != Observacion.aindaNon && palabrasSemente.isNotEmpty) {
+      final dia = _soloDia(agora ?? DateTime.now());
+      for (final raw in palabrasSemente) {
+        final w = raw.trim();
+        if (w.isEmpty) continue;
+        final mapa = _repaso.putIfAbsent(id, () => {});
+        if (!mapa.containsKey(claveRepaso(w))) {
+          _actualizarTarxeta(id, w, obs, dia);
+        }
+      }
+    }
+    await _gardar();
+  }
+
+  /// Cierra la prueba de entrada, fija el peldaño de partida y siembra el repaso.
+  Future<void> completarProba(
+    String id, {
+    required int peldano,
+    Map<String, Observacion> semente = const {},
+    DateTime? agora,
+  }) async {
+    final i = _criancas.indexWhere((c) => c.id == id);
+    if (i < 0) return;
+    final c = _criancas[i];
+    _criancas[i] = c.copyWith(
+      peldano: peldano.clamp(1, 6),
+      probaCompletada: true,
+      probaRespostas: const [],
+    );
+    final dia = _soloDia(agora ?? DateTime.now());
+    final mapa = _repaso.putIfAbsent(id, () => {});
+    for (final e in semente.entries) {
+      if (e.value == Observacion.aindaNon) continue;
+      final clave = claveRepaso(e.key);
+      if (clave.isEmpty || mapa.containsKey(clave)) continue;
+      _actualizarTarxeta(id, e.key, e.value, dia);
+    }
+    await _gardar();
   }
 
   Future<void> escoller(String id) async {

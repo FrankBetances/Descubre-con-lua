@@ -35,6 +35,8 @@ import '../../leccions/widgets/leccion_da_semana.dart';
 import '../../criancas/crianza_da_casa.dart';
 import '../../criancas/marcar_palabras_screen.dart';
 import '../../criancas/criancas_store.dart';
+import '../../criancas/proba_entrada.dart';
+import '../../criancas/proba_entrada_screen.dart';
 import '../../criancas/tarxeta_lua.dart';
 import '../widgets/learn_duolingo.dart';
 import '../../leccions/widgets/proxecto_0_2.dart';
@@ -722,6 +724,83 @@ class _HoxeFamiliasScreenState extends State<HoxeFamiliasScreen> {
                         xp: xogo.xp,
                         racha: xogo.rachaViva(agora),
                       ),
+                    if (neno != null &&
+                        casa != null &&
+                        CatalogoProbaEntrada.debeFacerProba(neno)) ...[
+                      const SizedBox(height: 6),
+                      Container(
+                        key: const Key('retomar_proba_entrada_card'),
+                        padding: const EdgeInsets.all(14),
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(18),
+                          border: Border.all(color: AppTheme.border),
+                        ),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.stretch,
+                          children: [
+                            Text(
+                              lang == AppLanguage.gl
+                                  ? 'Xogo de Lúa pendente para ${neno.nome} (${neno.probaRespostas.length}/18)'
+                                  : 'Juego de Lúa pendiente para ${neno.nome} (${neno.probaRespostas.length}/18)',
+                              style: const TextStyle(
+                                fontSize: 15,
+                                fontWeight: FontWeight.w800,
+                                color: AppTheme.textPrimary,
+                              ),
+                            ),
+                            const SizedBox(height: 6),
+                            Text(
+                              lang == AppLanguage.gl
+                                  ? 'Mentres non remate, ${neno.nome} empeza polo comezo do seu curso.'
+                                  : 'Mientras no acabe, ${neno.nome} empieza por el principio de su curso.',
+                              style: const TextStyle(
+                                fontSize: 14,
+                                color: AppTheme.textSecondary,
+                                height: 1.3,
+                              ),
+                            ),
+                            const SizedBox(height: 10),
+                            Row(
+                              children: [
+                                Expanded(
+                                  child: FilledButton(
+                                    key: const Key('retomar_proba_entrada'),
+                                    onPressed: () => Navigator.of(context).push(
+                                      RutaLua(
+                                        de: context,
+                                        builder: (_) => ProbaEntradaScreen(
+                                          store: casa.store,
+                                          crianza: neno,
+                                          language: lang,
+                                          audioService: widget.audioService,
+                                          agora: agora,
+                                        ),
+                                      ),
+                                    ),
+                                    child: Text(
+                                      lang == AppLanguage.gl
+                                          ? 'Seguir onde quedou'
+                                          : 'Seguir donde se quedó',
+                                    ),
+                                  ),
+                                ),
+                                const SizedBox(width: 8),
+                                TextButton(
+                                  key: const Key('saltar_proba_desde_hoxe'),
+                                  onPressed: () => casa.store.completarProba(
+                                    neno.id,
+                                    peldano: 1,
+                                    agora: agora,
+                                  ),
+                                  child: const Text('Saltar'),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ),
+                    ],
                     if (senMarcas >= 2 && neno != null) ...[
                       const SizedBox(height: 6),
                       Container(

@@ -956,6 +956,25 @@ def collect_locutions(content_dir: Path = CONTENT_DIR) -> list[Locution]:
                 if ep:
                     _one_neno(str(ep), f"escoita/ar/{eid}/ev/{ev.get('id', '?')}", seen)
 
+    # P11.3: Prueba de entrada por curso (2-3 a 5-6 años).
+    proba_json = content_dir / "nivel" / "proba_entrada.json"
+    if proba_json.exists():
+        p_doc = json.loads(proba_json.read_text(encoding="utf-8"))
+        for pel in p_doc.get("peldanos") or []:
+            _add(_localized(pel.get("titulo") or {}), "tutor",
+                 f"nivel/peldano/{pel.get('nivel', '?')}", seen)
+        for cid, items in (p_doc.get("cursos") or {}).items():
+            for it in items:
+                iid = it.get("id", "item")
+                if it.get("en"):
+                    _one_neno(str(it["en"]), f"nivel/{cid}/{iid}/en", seen)
+                if isinstance(it.get("enSignificado"), dict):
+                    _add(_localized(it["enSignificado"]), "tutor",
+                         f"nivel/{cid}/{iid}/sig", seen)
+                if isinstance(it.get("instrucion"), dict):
+                    _add(_localized(it["instrucion"]), "tutor",
+                         f"nivel/{cid}/{iid}/instrucion", seen)
+
     return sorted(seen.values(), key=lambda e: (e.lang, e.style, e.id))
 
 

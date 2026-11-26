@@ -115,7 +115,15 @@ void main() {
 
       expect(s1.criancas.single.rutinas, contains('comida'));
 
-      // P11.1: tras guardar el primero, pregunta si hay otro niño en casa.
+      // P11.3 + Alta única: Breixo tiene 3 años (>=2) -> entra en la prueba de Lúa.
+      expect(find.byKey(const Key('proba_titulo')), findsOneWidget);
+      await tester.runAsync(() async {
+        await tester.tap(find.byKey(const Key('proba_saltar')));
+        await Future<void>.delayed(const Duration(milliseconds: 50));
+      });
+      await Pasarela.asentar(tester);
+
+      // P11.1: tras acabar la prueba, pregunta si hay otro niño en casa.
       expect(find.byKey(const Key('rexistro_outro_neno')), findsOneWidget);
       expect(find.text('Hai outro neno ou nena na casa?'), findsOneWidget);
       await tester.tap(find.byKey(const Key('rexistro_outro_non')));
@@ -126,10 +134,11 @@ void main() {
       expect(find.text('Breixo · '), findsOneWidget);
       expect(find.text('3-4 anos'), findsWidgets);
 
-      // Otra vez, como al volver a abrir la app: sin registro, con Breixo.
+      // Otra vez, como al volver a abrir la app: sin registro ni prueba, con Breixo.
       await tester.pumpWidget(const SizedBox());
       await abrir(tester, storeEnDisco(d));
       expect(find.byKey(const Key('rexistro_crianza')), findsNothing);
+      expect(find.byKey(const Key('retomar_proba_entrada_card')), findsNothing);
       expect(find.text('Breixo · '), findsOneWidget);
       expect(find.text('3-4 anos'), findsWidgets);
     },
@@ -143,12 +152,14 @@ void main() {
     await tester.enterText(find.byKey(const Key('rexistro_nome')), 'Sabela');
     await tester.tap(find.byKey(const ValueKey('rexistro_idade_1')));
     await tester.pump();
+    await tester.ensureVisible(find.byKey(const Key('rexistro_gardar')));
     await tester.runAsync(() async {
       await tester.tap(find.byKey(const Key('rexistro_gardar')));
       await Future<void>.delayed(const Duration(milliseconds: 50));
     });
     await Pasarela.asentar(tester);
 
+    // 0-2 (1 año) no hace prueba de entrada.
     expect(find.text('¿Hay otro niño o niña en casa?'), findsOneWidget);
     await tester.tap(find.byKey(const Key('rexistro_outro_si')));
     await Pasarela.asentar(tester);
@@ -156,8 +167,17 @@ void main() {
     await tester.enterText(find.byKey(const Key('rexistro_nome')), 'Brais');
     await tester.tap(find.byKey(const ValueKey('rexistro_idade_5')));
     await tester.pump();
+    await tester.ensureVisible(find.byKey(const Key('rexistro_gardar')));
     await tester.runAsync(() async {
       await tester.tap(find.byKey(const Key('rexistro_gardar')));
+      await Future<void>.delayed(const Duration(milliseconds: 50));
+    });
+    await Pasarela.asentar(tester);
+
+    // Brais (5 años) pasa por la prueba como último tramo antes de preguntar otro.
+    expect(find.byKey(const Key('proba_titulo')), findsOneWidget);
+    await tester.runAsync(() async {
+      await tester.tap(find.byKey(const Key('proba_saltar')));
       await Future<void>.delayed(const Duration(milliseconds: 50));
     });
     await Pasarela.asentar(tester);

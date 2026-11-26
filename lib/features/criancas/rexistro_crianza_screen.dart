@@ -1,15 +1,17 @@
 import 'package:flutter/material.dart';
 
+import '../../core/audio/offline_audio_service.dart';
 import '../../core/brand/lua_pixel.dart';
 import '../../core/localization/app_language.dart';
 import '../../core/theme/app_theme.dart';
 import '../docentes/widgets/hoxe_na_aula.dart' show DiaQueToca;
 import '../familias/nomes_familias.dart';
 import 'criancas_store.dart';
+import 'proba_entrada.dart';
+import 'proba_entrada_screen.dart';
 
-/// El registro de un niño de la casa (O-20261109-1, P11.1): Lúa, el nombre,
-/// mes y año de nacimiento (sin día), la edad y el curso. Se rellena una vez;
-/// después la app abre con él.
+/// El registro de un niño de la casa (O-20261109-1, P11.1, Alta única 26/11):
+/// Lúa, datos, rutinas de casa (M2), prueba de entrada (>=2 años) y «Hai outro neno?».
 ///
 /// Sirve para dar de alta (incluyendo varios niños seguidos) y para editar:
 /// con [crianza] viene relleno y cambiar de curso pide confirmación.
@@ -24,6 +26,7 @@ class RexistroCrianzaScreen extends StatefulWidget {
     this.onGardado,
     this.primeira = false,
     this.agora,
+    this.audioService,
   });
 
   final CriancasStore store;
@@ -39,6 +42,7 @@ class RexistroCrianzaScreen extends StatefulWidget {
   final bool primeira;
 
   final DateTime? agora;
+  final OfflineAudioService? audioService;
 
   @override
   State<RexistroCrianzaScreen> createState() => _RexistroCrianzaScreenState();
@@ -56,6 +60,7 @@ class _RexistroCrianzaScreenState extends State<RexistroCrianzaScreen> {
     widget.crianza?.rutinas ?? const ['bano'],
   );
   bool _gardando = false;
+  bool _enProba = false;
   bool _preguntandoOutro = false;
   Crianza? _ultimoGardado;
 
@@ -197,6 +202,14 @@ class _RexistroCrianzaScreenState extends State<RexistroCrianzaScreen> {
       );
     }
     if (!mounted) return;
+    if (widget.crianza == null && CatalogoProbaEntrada.debeFacerProba(c)) {
+      setState(() {
+        _gardando = false;
+        _ultimoGardado = c;
+        _enProba = true;
+      });
+      return;
+    }
     if (widget.primeira && widget.crianza == null) {
       setState(() {
         _gardando = false;
@@ -220,6 +233,7 @@ class _RexistroCrianzaScreenState extends State<RexistroCrianzaScreen> {
       _anoNacemento = null;
       _curso = null;
       _rutinas = ['bano'];
+      _enProba = false;
       _preguntandoOutro = false;
       _gardando = false;
     });
@@ -231,6 +245,31 @@ class _RexistroCrianzaScreenState extends State<RexistroCrianzaScreen> {
     final isGl = lang == AppLanguage.gl;
     final acento = context.acento;
     final editar = widget.crianza != null;
+
+    if (_enProba && _ultimoGardado != null) {
+      return ProbaEntradaScreen(
+        key: const Key('rexistro_proba_entrada'),
+        store: widget.store,
+        crianza: _ultimoGardado!,
+        language: lang,
+        audioService: widget.audioService,
+        agora: widget.agora,
+        embutido: widget.primeira,
+        onRematada: (_) {
+          if (!mounted) return;
+          if (widget.primeira) {
+            setState(() {
+              _enProba = false;
+              _preguntandoOutro = true;
+            });
+          } else if (widget.onGardado case final f?) {
+            f(_ultimoGardado!);
+          } else {
+            Navigator.of(context).pop(_ultimoGardado!);
+          }
+        },
+      );
+    }
 
     if (_preguntandoOutro) {
       final nenos = widget.store.criancas;
