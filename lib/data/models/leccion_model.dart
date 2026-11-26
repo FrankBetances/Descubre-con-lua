@@ -352,6 +352,7 @@ class PuntoDeGramatica {
   final LocalizedString? descricion;
   final LocalizedString? paraFamilias;
   final PezaDaLeccion? exemplo;
+  final bool paraCriaturas;
 
   const PuntoDeGramatica({
     required this.n,
@@ -360,6 +361,7 @@ class PuntoDeGramatica {
     this.descricion,
     this.paraFamilias,
     this.exemplo,
+    this.paraCriaturas = true,
   });
 
   factory PuntoDeGramatica.fromJson(Map<String, dynamic> j) => PuntoDeGramatica(
@@ -374,6 +376,8 @@ class PuntoDeGramatica {
                 'tipo': 'gramatica'
               })
             : null,
+        paraCriaturas:
+            j['paraCriaturas'] as bool? ?? ((j['n'] as num).toInt() <= 20),
       );
 }
 

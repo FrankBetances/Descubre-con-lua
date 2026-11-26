@@ -10,9 +10,9 @@ import '../../../data/models/leccion_model.dart';
 import '../../juega/widgets/aula_ciclo_panel.dart' show nomeDoMes;
 import '../widgets/leccion_da_semana.dart';
 
-/// La gramática del curso, de A1 a C1 (Frank, 28/10/2026). Los puntos 1-20
-/// son la columna de las cinco edades y dicen en qué edad y mes se trabajan;
-/// las 48 van en la ruta de las criaturas, una por mes (O-20261028-9).
+/// A gramática do curso, de A1 a C1 (D1 · P11.5): os puntos 1-20 (A1-A2)
+/// forman a escaleira por dominio dentro do teito de cada idade; os 21-48
+/// (B1-C1) quedan na guía da persoa adulta co seu exemplo.
 class GramaticaScreen extends StatefulWidget {
   final AppLanguage language;
   final ValueChanged<AppLanguage>? onLanguageChanged;
@@ -73,8 +73,8 @@ class _GramaticaScreenState extends State<GramaticaScreen> {
               children: [
                 Text(
                   isGl
-                      ? 'Do máis sinxelo ao máis complexo: as 48, unha por mes, de 0 a 6 anos, adaptadas a cada idade nas frases que dis ti co STEAM do mes.'
-                      : 'De lo más sencillo a lo más complejo: las 48, una por mes, de 0 a 6 años, adaptadas a cada edad en las frases que dices tú con el STEAM del mes.',
+                      ? 'Os puntos 1-20 van por chanzos segundo a idade e o dominio; os 21-48 (B1-C1) son guía para a persoa adulta.'
+                      : 'Los puntos 1-20 van por peldaños según la edad y el dominio; los 21-48 (B1-C1) son guía para la persona adulta.',
                   style: const TextStyle(
                     fontSize: 15,
                     color: AppTheme.textSecondary,
@@ -177,6 +177,19 @@ class _Punto extends StatelessWidget {
             const SizedBox(height: 6),
             Text(
               '${isGl ? 'Na ruta' : 'En la ruta'}: ${onde.map((o) => '${LeccionDaSemana.grupos[o.$1]?.resolve(lang) ?? o.$1}, ${(nomeDoMes[o.$2]?.resolve(lang) ?? '').toLowerCase()}').join(' · ')}',
+              style: TextStyle(
+                fontSize: 14,
+                fontWeight: FontWeight.w700,
+                color: context.acento,
+                height: 1.35,
+              ),
+            ),
+          ] else if (!punto.paraCriaturas) ...[
+            const SizedBox(height: 6),
+            Text(
+              isGl
+                  ? 'Guía para a persoa adulta · exemplo de apoio (${punto.nivel})'
+                  : 'Guía para la persona adulta · ejemplo de apoyo (${punto.nivel})',
               style: TextStyle(
                 fontSize: 14,
                 fontWeight: FontWeight.w700,

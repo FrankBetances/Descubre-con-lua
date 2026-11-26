@@ -1,6 +1,16 @@
 {
  "_doc": "Xerado por tools/gen_laminas_palabras.py e ferramentas do banco (O-20261111-2 / O-20261111-4). Non se edita a man.",
  "pezas": {
+  "a big leaf": {
+   "clave": "pal_big",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «big» (pal_big).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_big.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "a big stone": {
    "clave": "pal_a_big_stone",
    "orixe": "composta",
@@ -78,6 +88,16 @@
    "fuente": "propia",
    "asset": "tools/gen_laminas_tpr.py#a_spoon_for_you",
    "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "a stone drops": {
+   "clave": "vigo_nat_118",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «stone» (vigo_nat_118).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/vigo_nat_118.json",
+   "sha": "1973cc64",
    "licencia": "Propia",
    "revisado": true
   },
@@ -281,6 +301,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "all the colours mixed into white": {
+   "clave": "pal_colour",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «colour» (pal_colour).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_colour.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "all together": {
    "clave": "pal_all_together",
    "orixe": "nova",
@@ -339,6 +369,16 @@
    "asset": "tools/gen_laminas_5_6.py#closed_eyes_guessed",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "always squeeze soft bread": {
+   "clave": "pal_squeeze",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «squeeze» (pal_squeeze).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_squeeze.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
    "revisado": true
   },
   "ambulance": {
@@ -681,6 +721,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "at night, look up": {
+   "clave": "pal_night",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «night» (pal_night).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_night.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "at night, the ball sleeps in the box": {
    "clave": "pal_at_night_the_ball_sleeps_in_the_box",
    "orixe": "composta",
@@ -689,6 +739,16 @@
    "asset": "tools/gen_laminas_0_2.py#at_night_the_ball_sleeps_in_the_box",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "at school, examine a leaf": {
+   "clave": "pal_school",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «school» (pal_school).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_school.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
    "revisado": true
   },
   "audience": {
@@ -1008,6 +1068,16 @@
    "fuente": "propia",
    "asset": "assets/brand/laminas/vocab_45.json",
    "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "ball in box": {
+   "clave": "vocab_45",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «ball» (vocab_45).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/vocab_45.json",
+   "sha": "1973cc64",
    "licencia": "Propia",
    "revisado": true
   },
@@ -1841,6 +1911,16 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "big stone, small leaf": {
+   "clave": "pal_big",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «big» (pal_big).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_big.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "big toe": {
    "clave": "pal_big_toe",
    "orixe": "nova",
@@ -1988,6 +2068,16 @@
    "fuente": "propia",
    "asset": "tools/gen_laminas_tpr.py#bird_feeder",
    "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "bird has two little legs": {
+   "clave": "pal_bird",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «bird» (pal_bird).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_bird.json",
+   "sha": "1973cc64",
    "licencia": "Propia",
    "revisado": true
   },
@@ -2331,6 +2421,26 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "blow soap bubble": {
+   "clave": "pal_blow",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «blow» (pal_blow).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_blow.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "blow softly or blow fast train": {
+   "clave": "pal_blow",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «blow» (pal_blow).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_blow.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "blow the boat": {
    "clave": "pal_blow_the_boat",
    "orixe": "composta",
@@ -2339,6 +2449,16 @@
    "asset": "tools/gen_laminas_tpr.py#blow_the_boat",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "blow the straw and listen close": {
+   "clave": "pal_blow",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «blow» (pal_blow).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_blow.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
    "revisado": true
   },
   "blow to cool": {
@@ -2488,6 +2608,16 @@
    "fuente": "propia",
    "asset": "assets/brand/laminas/barco.json",
    "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "boat is wet": {
+   "clave": "barco",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «boat» (barco).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/barco.json",
+   "sha": "1973cc64",
    "licencia": "Propia",
    "revisado": true
   },
@@ -2731,6 +2861,16 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "bottle is loud": {
+   "clave": "pal_bottle",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «bottle» (pal_bottle).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_bottle.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "bounce": {
    "clave": "pal_bounce",
    "orixe": "nova",
@@ -2889,6 +3029,16 @@
    "asset": "tools/gen_laminas_tpr.py#bread_and_cheese",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "bread is warm": {
+   "clave": "pal_bread",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «bread» (pal_bread).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_bread.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
    "revisado": true
   },
   "breakfast": {
@@ -3258,6 +3408,16 @@
    "fuente": "propia",
    "asset": "tools/gen_laminas_tpr.py#bubbles_everywhere",
    "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "bubbles on towel": {
+   "clave": "pal_bubbles",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «bubbles» (pal_bubbles).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_bubbles.json",
+   "sha": "1973cc64",
    "licencia": "Propia",
    "revisado": true
   },
@@ -3891,6 +4051,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "can red and blue make purple": {
+   "clave": "vermello",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «red» (vermello).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/vermello.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "can the stone float": {
    "clave": "pal_can_the_stone_float",
    "orixe": "composta",
@@ -3919,6 +4089,26 @@
    "asset": "tools/gen_laminas_tpr.py#can_you_feel_your_heart",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "can you guess tissue paper yourself": {
+   "clave": "pal_tissue",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «tissue» (pal_tissue).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_tissue.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "can you shine the bright torch": {
+   "clave": "pal_shine",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «shine» (pal_shine).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_shine.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
    "revisado": true
   },
   "can you swim": {
@@ -4189,6 +4379,16 @@
    "fuente": "propia",
    "asset": "tools/gen_laminas_tpr.py#carry_carefully",
    "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "carry the towel with us": {
+   "clave": "pal_carry",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «carry» (pal_carry).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_carry.json",
+   "sha": "1973cc64",
    "licencia": "Propia",
    "revisado": true
   },
@@ -5262,6 +5462,16 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "close your eyes, listen with me": {
+   "clave": "pal_close",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «close» (pal_close).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_close.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "cloth": {
    "clave": "pal_cloth",
    "orixe": "nova",
@@ -5430,6 +5640,16 @@
    "asset": "tools/gen_laminas_tpr.py#cold_and_fresh",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "cold apple": {
+   "clave": "pal_cold",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «cold» (pal_cold).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_cold.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
    "revisado": true
   },
   "cold winter night: curl up and do not move": {
@@ -6132,6 +6352,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "count the teddy legs carefully": {
+   "clave": "pal_count",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «count» (pal_count).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_count.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "count three leaves and jump over the ring": {
    "clave": "pal_count_3_leaves_jump_ring",
    "orixe": "composta",
@@ -6542,6 +6772,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "crumple the newspaper for us now": {
+   "clave": "pal_pal_paper",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «paper» (pal_pal_paper).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_pal_paper.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "crumpled": {
    "clave": "pal_crumpled",
    "orixe": "nova",
@@ -6849,6 +7089,16 @@
    "fuente": "propia",
    "asset": "tools/gen_laminas_tpr.py#cut_a_cross",
    "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "cut an apple": {
+   "clave": "pal_cut",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «cut» (pal_cut).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_cut.json",
+   "sha": "1973cc64",
    "licencia": "Propia",
    "revisado": true
   },
@@ -7312,6 +7562,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "did you spin the painted circle": {
+   "clave": "pal_spin",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «spin» (pal_spin).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_spin.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "different": {
    "clave": "pal_different",
    "orixe": "nova",
@@ -7592,6 +7852,26 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "does snake fit in group": {
+   "clave": "pal_pal_snake",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «snake» (pal_pal_snake).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_pal_snake.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "does the car go fast": {
+   "clave": "pal_car",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «car» (pal_car).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_car.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "dog": {
    "clave": "pal_dog",
    "orixe": "banco",
@@ -7670,6 +7950,16 @@
    "asset": "tools/gen_laminas_tpr.py#dolphins_breathe_air_through_a_blowhole",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "don't let teddy fall slowly": {
+   "clave": "pal_teddy",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «teddy» (pal_teddy).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_teddy.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
    "revisado": true
   },
   "donate": {
@@ -8142,6 +8432,16 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "drop the nut": {
+   "clave": "pal_drop",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «drop» (pal_drop).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_drop.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "droplet": {
    "clave": "pal_droplet",
    "orixe": "banco",
@@ -8382,6 +8682,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "eat warm bread": {
+   "clave": "pal_eat",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «eat» (pal_eat).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_eat.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "eat your greens": {
    "clave": "pal_eat_your_greens",
    "orixe": "composta",
@@ -8539,6 +8849,16 @@
    "fuente": "propia",
    "asset": "tools/gen_laminas_3_4.py#empty",
    "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "empty glass sounds very high": {
+   "clave": "pal_empty",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «empty» (pal_empty).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_empty.json",
+   "sha": "1973cc64",
    "licencia": "Propia",
    "revisado": true
   },
@@ -10022,6 +10342,16 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "flash once for yes, twice no": {
+   "clave": "pal_flash",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «flash» (pal_flash).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_flash.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "flashlight": {
    "clave": "pal_flashlight",
    "orixe": "banco",
@@ -10452,6 +10782,16 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "fold a paper plane with care": {
+   "clave": "pal_fold",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «fold» (pal_fold).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_fold.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "fold paper": {
    "clave": "pal_fold_paper",
    "orixe": "nova",
@@ -10480,6 +10820,16 @@
    "asset": "tools/gen_laminas_p9.py#follow",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "follow our map into the room": {
+   "clave": "pal_follow",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «follow» (pal_follow).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_follow.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
    "revisado": true
   },
   "follow the light": {
@@ -11029,6 +11379,16 @@
    "fuente": "propia",
    "asset": "tools/gen_laminas_3_4.py#full",
    "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "full glass sounds very low": {
+   "clave": "pal_full",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «full» (pal_full).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_full.json",
+   "sha": "1973cc64",
    "licencia": "Propia",
    "revisado": true
   },
@@ -13012,6 +13372,26 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "hear loud rice with me": {
+   "clave": "pal_loud",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «loud» (pal_loud).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_loud.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "hear that soft sound": {
+   "clave": "pal_soft",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «soft» (pal_soft).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_soft.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "hearing": {
    "clave": "pal_hearing",
    "orixe": "nova",
@@ -13492,6 +13872,16 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "hide the treasure under a chair": {
+   "clave": "pal_hide",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «hide» (pal_hide).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_hide.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "hide thumbs": {
    "clave": "pal_hide_thumbs",
    "orixe": "nova",
@@ -13662,6 +14052,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "hold it and listen with us": {
+   "clave": "pal_hold",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «hold» (pal_hold).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_hold.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "hold my hand": {
    "clave": "pal_hold_my_hand",
    "orixe": "composta",
@@ -13682,6 +14082,16 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "hold red paper over the light": {
+   "clave": "vermello",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «red» (vermello).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/vermello.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "hold steady": {
    "clave": "pal_hold_steady",
    "orixe": "nova",
@@ -13689,6 +14099,16 @@
    "fuente": "propia",
    "asset": "tools/gen_laminas_tpr.py#hold_steady",
    "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "hold this teddy with me": {
+   "clave": "pal_teddy",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «teddy» (pal_teddy).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_teddy.json",
+   "sha": "1973cc64",
    "licencia": "Propia",
    "revisado": true
   },
@@ -13709,6 +14129,16 @@
    "fuente": "propia",
    "asset": "tools/gen_laminas_tpr.py#hold_up_high",
    "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "hold windmill high with me": {
+   "clave": "pal_windmill",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «windmill» (pal_windmill).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_windmill.json",
+   "sha": "1973cc64",
    "licencia": "Propia",
    "revisado": true
   },
@@ -14062,6 +14492,26 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "how fast do we run": {
+   "clave": "pal_fast",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «fast» (pal_fast).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_fast.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "how full is the glass": {
+   "clave": "pal_full",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «full» (pal_full).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_full.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "however, the gift paper was the loudest": {
    "clave": "pal_gift_paper_loudest",
    "orixe": "composta",
@@ -14332,6 +14782,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "i choose the blue sock": {
+   "clave": "pal_blue",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «blue» (pal_blue).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_blue.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "i feel better after a hug": {
    "clave": "pal_i_feel_better_after_a_hug",
    "orixe": "composta",
@@ -14390,6 +14850,16 @@
    "asset": "tools/gen_laminas_3_4.py#i_have_made_a_new_one",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "i hear your voice": {
+   "clave": "pal_hear",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «hear» (pal_hear).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_hear.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
    "revisado": true
   },
   "i help at home by setting the table": {
@@ -14590,6 +15060,16 @@
    "asset": "tools/gen_laminas_tpr.py#ice_cube",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "ice is always cold": {
+   "clave": "pal_ice",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «ice» (pal_ice).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_ice.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
    "revisado": true
   },
   "ice lolly": {
@@ -14932,6 +15412,36 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "in autumn we mix warm colours": {
+   "clave": "pal_autumn",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «autumn» (pal_autumn).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_autumn.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "in autumn, count cat legs": {
+   "clave": "pal_autumn",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «autumn» (pal_autumn).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_autumn.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "in morning, shadow will stretch": {
+   "clave": "pal_morning",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «morning» (pal_morning).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_morning.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "in my arms": {
    "clave": "pal_in_my_arms",
    "orixe": "composta",
@@ -15152,6 +15662,36 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "is it heavy now": {
+   "clave": "pal_heavy",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «heavy» (pal_heavy).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_heavy.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "is the shadow short now": {
+   "clave": "pal_shadow",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «shadow» (pal_shadow).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_shadow.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "is the stone wet": {
+   "clave": "vigo_nat_118",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «stone» (vigo_nat_118).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/vigo_nat_118.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "island": {
    "clave": "pal_island",
    "orixe": "banco",
@@ -15222,6 +15762,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "it is dark, so use torch": {
+   "clave": "pal_dark",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «dark» (pal_dark).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_dark.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "it is fair to share": {
    "clave": "pal_it_is_fair_to_share",
    "orixe": "composta",
@@ -15230,6 +15780,16 @@
    "asset": "tools/gen_laminas_5_6.py#it_is_fair_to_share",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "it is going to hide hat": {
+   "clave": "pal_hide",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «hide» (pal_hide).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_hide.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
    "revisado": true
   },
   "it is raining hard": {
@@ -16032,6 +16592,16 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "knock on hard bread": {
+   "clave": "pal_knock",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «knock» (pal_knock).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_knock.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "knock on the door": {
    "clave": "pal_knock_on_the_door",
    "orixe": "composta",
@@ -16782,6 +17352,26 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "lift the dry towel": {
+   "clave": "pal_lift",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «lift» (pal_lift).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_lift.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "lift the heavy bag off floor": {
+   "clave": "pal_lift",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «lift» (pal_lift).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_lift.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "lift up": {
    "clave": "pal_lift_up",
    "orixe": "composta",
@@ -16810,6 +17400,16 @@
    "asset": "fluentui-emoji:assets/Light bulb/Flat",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "light or heavy towel": {
+   "clave": "pal_light",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «light» (pal_light).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_light.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
    "revisado": true
   },
   "light show": {
@@ -17022,6 +17622,16 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "listen to my chest quietly": {
+   "clave": "pal_chest",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «chest» (pal_chest).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_chest.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "listen to the birds": {
    "clave": "pal_listen_to_the_birds",
    "orixe": "composta",
@@ -17042,6 +17652,26 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "listen to the pan": {
+   "clave": "pal_pan",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «pan» (pal_pan).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_pan.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "listen to the rain tube": {
+   "clave": "pal_rain",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «rain» (pal_rain).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_rain.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "listen to the woodpecker": {
    "clave": "pal_listen_to_the_woodpecker",
    "orixe": "composta",
@@ -17059,6 +17689,16 @@
    "fuente": "propia",
    "asset": "tools/gen_laminas_tpr.py#listen_with_a_hand_to_the_ear",
    "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "listen with the cup phone": {
+   "clave": "pal_cup",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «cup» (pal_cup).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_cup.json",
+   "sha": "1973cc64",
    "licencia": "Propia",
    "revisado": true
   },
@@ -17172,6 +17812,16 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "long straw is low, short high": {
+   "clave": "pal_long",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «long» (pal_long).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_long.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "long-legged": {
    "clave": "pal_long_legged",
    "orixe": "nova",
@@ -17222,6 +17872,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "look around the chair and find it": {
+   "clave": "pal_chair",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «chair» (pal_chair).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_chair.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "look at all the lights": {
    "clave": "pal_look_at_all_the_lights",
    "orixe": "composta",
@@ -17242,6 +17902,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "look at me carry it": {
+   "clave": "pal_carry",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «carry» (pal_carry).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_carry.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "look at old photos": {
    "clave": "pal_look_at_old_photos",
    "orixe": "nova",
@@ -17249,6 +17919,26 @@
    "fuente": "propia",
    "asset": "tools/gen_laminas_tpr.py#look_at_old_photos",
    "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "look at orange and green paint": {
+   "clave": "pal_orange",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «orange» (pal_orange).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_orange.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "look at that boat": {
+   "clave": "barco",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «boat» (barco).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/barco.json",
+   "sha": "1973cc64",
    "licencia": "Propia",
    "revisado": true
   },
@@ -17290,6 +17980,16 @@
    "asset": "tools/gen_laminas_4_5.py#look_stone_closely",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "look at the wet mud": {
+   "clave": "pal_wet",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «wet» (pal_wet).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_wet.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
    "revisado": true
   },
   "look at this": {
@@ -17362,6 +18062,26 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "look how the room turns purple": {
+   "clave": "pal_door",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «door» (pal_door).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_door.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "look in the soup spoon": {
+   "clave": "pal_soup",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «soup» (pal_soup).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_soup.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "look into the distance": {
    "clave": "pal_look_into_the_distance",
    "orixe": "nova",
@@ -17379,6 +18099,16 @@
    "fuente": "propia",
    "asset": "tools/gen_laminas_tpr.py#look_left_look_right",
    "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "look out into the sky": {
+   "clave": "pal_out",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «out» (pal_out).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_out.json",
+   "sha": "1973cc64",
    "licencia": "Propia",
    "revisado": true
   },
@@ -17432,6 +18162,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "look through the magic lens": {
+   "clave": "pal_lens",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «lens» (pal_lens).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_lens.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "look under the log": {
    "clave": "pal_look_under_the_log",
    "orixe": "nova",
@@ -17452,6 +18192,26 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "look! both sides are the same": {
+   "clave": "pal_side",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «side» (pal_side).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_side.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "look! clean hands now": {
+   "clave": "pal_clean",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «clean» (pal_clean).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_clean.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "look, a butterfly": {
    "clave": "pal_look_a_butterfly",
    "orixe": "composta",
@@ -17460,6 +18220,16 @@
    "asset": "tools/gen_laminas_tpr.py#look_a_butterfly",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "look, a little star": {
+   "clave": "pal_little",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «little» (pal_little).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_little.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
    "revisado": true
   },
   "look, a rainbow": {
@@ -17500,6 +18270,16 @@
    "asset": "tools/gen_laminas_tpr.py#look_a_spiral",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "look, dog shadow": {
+   "clave": "pal_dog",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «dog» (pal_dog).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_dog.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
    "revisado": true
   },
   "look, dolphins": {
@@ -17702,6 +18482,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "make a big pile": {
+   "clave": "pal_big",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «big» (pal_big).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_big.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "make a card": {
    "clave": "pal_make_a_card",
    "orixe": "nova",
@@ -17782,6 +18572,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "many apple seeds here": {
+   "clave": "pal_apple",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «apple» (pal_apple).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_apple.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "many bubbles": {
    "clave": "pal_many_bubbles",
    "orixe": "banco",
@@ -17790,6 +18590,16 @@
    "asset": "fluentui-emoji:assets/Bubbles/Flat",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "many soap bubbles": {
+   "clave": "pal_soap",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «soap» (pal_soap).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_soap.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
    "revisado": true
   },
   "many-legged": {
@@ -18413,6 +19223,16 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "mix red and yellow paint now": {
+   "clave": "pal_mix",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «mix» (pal_mix).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_mix.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "mmm, chestnuts": {
    "clave": "pal_mmm_chestnuts",
    "orixe": "nova",
@@ -18663,6 +19483,16 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "move the lighter suitcase across floor": {
+   "clave": "pal_move",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «move» (pal_move).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_move.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "mud": {
    "clave": "pal_mud",
    "orixe": "nova",
@@ -18893,6 +19723,26 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "my boat moves far": {
+   "clave": "barco",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «boat» (barco).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/barco.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "my cup on top": {
+   "clave": "pal_cup",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «cup» (pal_cup).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_cup.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "my face is turned upside down": {
    "clave": "pal_face_upside_down",
    "orixe": "composta",
@@ -18901,6 +19751,16 @@
    "asset": "tools/gen_laminas_3_4.py#face_upside_down",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "my face turns upside down": {
+   "clave": "pal_face",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «face» (pal_face).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_face.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
    "revisado": true
   },
   "my torch": {
@@ -18921,6 +19781,16 @@
    "asset": "tools/gen_laminas_3_4.py#my_turn",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "my warm light": {
+   "clave": "quente",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «warm» (quente).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/quente.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
    "revisado": true
   },
   "mysterious": {
@@ -19213,6 +20083,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "never touch hot glass": {
+   "clave": "pal_touch",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «touch» (pal_touch).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_touch.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "new year": {
    "clave": "pal_new_year",
    "orixe": "composta",
@@ -19443,6 +20323,26 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "now draw that tiny hair": {
+   "clave": "pal_draw",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «draw» (pal_draw).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_draw.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "now i am folding the butterfly": {
+   "clave": "pal_fold",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «fold» (pal_fold).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_fold.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "now the group copies your pattern": {
    "clave": "pal_group_copies_pattern",
    "orixe": "composta",
@@ -19451,6 +20351,16 @@
    "asset": "tools/gen_laminas_5_6.py#group_copies_pattern",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "now the sun sits high": {
+   "clave": "pal_sun",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «sun» (pal_sun).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_sun.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
    "revisado": true
   },
   "nudge": {
@@ -19600,6 +20510,16 @@
    "fuente": "propia",
    "asset": "tools/gen_laminas_escoita.py#off",
    "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "oh no, it wobbles": {
+   "clave": "pal_wobble",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «wobble» (pal_wobble).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_wobble.json",
+   "sha": "1973cc64",
    "licencia": "Propia",
    "revisado": true
   },
@@ -19793,6 +20713,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "one big bubble": {
+   "clave": "pal_big",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «big» (pal_big).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_big.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "one fish, two fish": {
    "clave": "pal_one_fish_two_fish",
    "orixe": "nova",
@@ -19890,6 +20820,16 @@
    "fuente": "propia",
    "asset": "tools/gen_laminas_tpr.py#open_like_a_flower",
    "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "open the box": {
+   "clave": "pal_open",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «open» (pal_open).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_open.json",
+   "sha": "1973cc64",
    "licencia": "Propia",
    "revisado": true
   },
@@ -20041,6 +20981,16 @@
    "asset": "fluentui-emoji:assets/Otter/Flat",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "our shadow will grow long": {
+   "clave": "pal_shadow",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «shadow» (pal_shadow).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_shadow.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
    "revisado": true
   },
   "out": {
@@ -20200,6 +21150,16 @@
    "fuente": "propia",
    "asset": "tools/gen_laminas_tpr.py#pack",
    "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "pack books and coat into suitcase": {
+   "clave": "pal_pack",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «pack» (pal_pack).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_pack.json",
+   "sha": "1973cc64",
    "licencia": "Propia",
    "revisado": true
   },
@@ -21643,6 +22603,16 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "play water music with spoons": {
+   "clave": "auga",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «water» (auga).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/auga.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "playful summer": {
    "clave": "pal_playful_summer",
    "orixe": "composta",
@@ -21903,6 +22873,16 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "pop the bubble": {
+   "clave": "pal_pop",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «pop» (pal_pop).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_pop.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "pop up": {
    "clave": "pal_pop_up",
    "orixe": "composta",
@@ -22070,6 +23050,16 @@
    "fuente": "propia",
    "asset": "tools/gen_laminas_tpr.py#pour_it_out",
    "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "pour slowly, do not spill": {
+   "clave": "pal_pour",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «pour» (pal_pour).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_pour.json",
+   "sha": "1973cc64",
    "licencia": "Propia",
    "revisado": true
   },
@@ -22353,6 +23343,16 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "pull the string tight": {
+   "clave": "pal_pull",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «pull» (pal_pull).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_pull.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "pull the strings": {
    "clave": "pal_pull_the_strings",
    "orixe": "nova",
@@ -22513,6 +23513,26 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "push the box": {
+   "clave": "pal_push",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «push» (pal_push).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_push.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "push the fast train": {
+   "clave": "pal_push",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «push» (pal_push).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_push.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "put arms in": {
    "clave": "pal_put_arms_in",
    "orixe": "nova",
@@ -22623,6 +23643,16 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "put the apple": {
+   "clave": "pal_apple",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «apple» (pal_apple).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_apple.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "put the boat in the water": {
    "clave": "pal_put_the_boat_in_the_water",
    "orixe": "composta",
@@ -22631,6 +23661,16 @@
    "asset": "tools/gen_laminas_2_3.py#put_the_boat_in_the_water",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "put the hat onto head": {
+   "clave": "pal_hat",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «hat» (pal_hat).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_hat.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
    "revisado": true
   },
   "put the lens down gently": {
@@ -22651,6 +23691,16 @@
    "asset": "tools/gen_laminas_5_6.py#rough_here_smooth_there",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "put the spoon next": {
+   "clave": "pal_pal_spoon",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «spoon» (pal_pal_spoon).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_pal_spoon.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
    "revisado": true
   },
   "put up the umbrella": {
@@ -23380,6 +24430,16 @@
    "fuente": "propia",
    "asset": "tools/gen_laminas_0_2.py#red_ball",
    "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "red block, then blue block": {
+   "clave": "vermello",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «red» (vermello).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/vermello.json",
+   "sha": "1973cc64",
    "licencia": "Propia",
    "revisado": true
   },
@@ -24153,6 +25213,16 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "roll the ball": {
+   "clave": "pal_roll",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «roll» (pal_roll).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_roll.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "roll the dice": {
    "clave": "pal_roll_the_dice",
    "orixe": "composta",
@@ -24560,6 +25630,16 @@
    "fuente": "propia",
    "asset": "tools/gen_laminas_tpr.py#rub_palms",
    "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "rub wet hands": {
+   "clave": "pal_rub",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «rub» (pal_rub).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_rub.json",
+   "sha": "1973cc64",
    "licencia": "Propia",
    "revisado": true
   },
@@ -25463,6 +26543,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "see ceiling stars now": {
+   "clave": "pal_ceiling",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «ceiling» (pal_ceiling).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_ceiling.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "see you after summer": {
    "clave": "pal_see_you_after_summer",
    "orixe": "composta",
@@ -25823,6 +26913,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "shake the storm for us": {
+   "clave": "pal_shake",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «shake» (pal_shake).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_shake.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "shake the tree": {
    "clave": "pal_shake_the_tree",
    "orixe": "composta",
@@ -26093,6 +27193,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "shine light through holes": {
+   "clave": "pal_shine",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «shine» (pal_shine).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_shine.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "shine like the sun": {
    "clave": "pal_shine_like_the_sun",
    "orixe": "composta",
@@ -26101,6 +27211,16 @@
    "asset": "tools/gen_laminas_tpr.py#shine_like_the_sun",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "shine the torch low": {
+   "clave": "pal_shine",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «shine» (pal_shine).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_shine.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
    "revisado": true
   },
   "shiny": {
@@ -26680,6 +27800,16 @@
    "fuente": "propia",
    "asset": "tools/gen_laminas_escoita.py#sit_down",
    "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "sit on sofa, hear beat": {
+   "clave": "pal_sit",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «sit» (pal_sit).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_sit.json",
+   "sha": "1973cc64",
    "licencia": "Propia",
    "revisado": true
   },
@@ -27524,6 +28654,26 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "soap is in water": {
+   "clave": "pal_soap",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «soap» (pal_soap).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_soap.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "soap on hands": {
+   "clave": "pal_soap",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «soap» (pal_soap).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_soap.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "soap pump": {
    "clave": "pal_soap_pump",
    "orixe": "nova",
@@ -27654,6 +28804,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "soft dry towel": {
+   "clave": "pal_soft",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «soft» (pal_soft).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_soft.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "soft like a cat": {
    "clave": "pal_soft_like_a_cat",
    "orixe": "composta",
@@ -27701,6 +28861,16 @@
    "fuente": "propia",
    "asset": "tools/gen_laminas_3_4.py#soil",
    "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "soil and rain make mud": {
+   "clave": "pal_soil",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «soil» (pal_soil).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_soil.json",
+   "sha": "1973cc64",
    "licencia": "Propia",
    "revisado": true
   },
@@ -27761,6 +28931,16 @@
    "fuente": "propia",
    "asset": "tools/gen_laminas_tpr.py#solve",
    "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "some seeds inside": {
+   "clave": "pal_seed",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «seed» (pal_seed).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_seed.json",
+   "sha": "1973cc64",
    "licencia": "Propia",
    "revisado": true
   },
@@ -28286,6 +29466,16 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "splash the water": {
+   "clave": "charco",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «splash» (charco).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/charco.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "splash zone": {
    "clave": "pal_splash_zone",
    "orixe": "nova",
@@ -28373,6 +29563,16 @@
    "fuente": "propia",
    "asset": "tools/gen_laminas_tpr.py#sponge_ball",
    "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "sponge is wet": {
+   "clave": "pal_sponge",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «sponge» (pal_sponge).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_sponge.json",
+   "sha": "1973cc64",
    "licencia": "Propia",
    "revisado": true
   },
@@ -28896,6 +30096,16 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "stars in dark room": {
+   "clave": "pal_star",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «star» (pal_star).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_star.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "statue": {
    "clave": "pal_statue",
    "orixe": "composta",
@@ -29374,6 +30584,26 @@
    "asset": "tools/gen_laminas_tpr.py#stop_and_go",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "stop in the box": {
+   "clave": "pal_stop",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «stop» (pal_stop).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_stop.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "stop the ball": {
+   "clave": "pal_stop",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «stop» (pal_stop).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_stop.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
    "revisado": true
   },
   "stop, look and listen": {
@@ -30626,6 +31856,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "take it outside with you": {
+   "clave": "pal_windy",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «windy» (pal_windy).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_windy.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "take off": {
    "clave": "pal_take_off",
    "orixe": "nova",
@@ -30643,6 +31883,16 @@
    "fuente": "propia",
    "asset": "tools/gen_laminas_tpr.py#take_off_your_mask",
    "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "take one bottle out of bag": {
+   "clave": "pal_bottle",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «bottle» (pal_bottle).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_bottle.json",
+   "sha": "1973cc64",
    "licencia": "Propia",
    "revisado": true
   },
@@ -30684,6 +31934,16 @@
    "asset": "fluentui-emoji:assets/Speaking head/Flat",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "talk into your cup": {
+   "clave": "pal_talk",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «talk» (pal_talk).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_talk.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
    "revisado": true
   },
   "talkative": {
@@ -30856,6 +32116,26 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "tap the glass": {
+   "clave": "pal_tap",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «tap» (pal_tap).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_tap.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "tap the glass gently now": {
+   "clave": "pal_tap",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «tap» (pal_tap).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_tap.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "tap the rhythm": {
    "clave": "pal_tap_the_rhythm",
    "orixe": "nova",
@@ -30874,6 +32154,16 @@
    "asset": "tools/gen_laminas_tpr.py#tap_water",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "tap with a spoon": {
+   "clave": "pal_tap",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «tap» (pal_tap).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_tap.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
    "revisado": true
   },
   "tap your knees like rain falling fast": {
@@ -31066,6 +32356,26 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "teddy bandage is on leg": {
+   "clave": "pal_teddy",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «teddy» (pal_teddy).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_teddy.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "teddy can sleep": {
+   "clave": "pal_teddy",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «teddy» (pal_teddy).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_teddy.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "teeny": {
    "clave": "pal_teeny",
    "orixe": "nova",
@@ -31196,6 +32506,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "that dark shadow": {
+   "clave": "pal_dark",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «dark» (pal_dark).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_dark.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "that shadow": {
    "clave": "pal_that_shadow",
    "orixe": "composta",
@@ -31224,6 +32544,16 @@
    "asset": "tools/gen_laminas_0_2.py#the_apple_is_always_cold",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "the bag is dry inside": {
+   "clave": "pal_pal_suitcase",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «suitcase» (pal_pal_suitcase).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_pal_suitcase.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
    "revisado": true
   },
   "the bag that we used stayed dry": {
@@ -31264,6 +32594,16 @@
    "asset": "tools/gen_laminas_2_3.py#the_boat_can_float",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "the boat floats": {
+   "clave": "barco",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «boat» (barco).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/barco.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
    "revisado": true
   },
   "the boat is moving": {
@@ -31466,6 +32806,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "the leaf is small": {
+   "clave": "pal_leaf",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «leaf» (pal_leaf).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_leaf.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "the leaf made a small sound": {
    "clave": "pal_leaf_small_sound",
    "orixe": "composta",
@@ -31556,6 +32906,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "the orange goes down fast": {
+   "clave": "pal_orange",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «orange» (pal_orange).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_orange.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "the paint had been drying all morning": {
    "clave": "pal_paint_drying_all_morning",
    "orixe": "composta",
@@ -31564,6 +32924,26 @@
    "asset": "tools/gen_laminas_5_6.py#paint_drying_all_morning",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "the plaster stays under water": {
+   "clave": "pal_venda",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «bandage» (pal_venda).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_venda.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "the plate is empty now": {
+   "clave": "pal_plate",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «plate» (pal_plate).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_plate.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
    "revisado": true
   },
   "the rainbow, which we painted, is big": {
@@ -31666,6 +33046,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "the spoons sit on table": {
+   "clave": "pal_pal_spoon",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «spoon» (pal_pal_spoon).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_pal_spoon.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "the stars go up to the ceiling": {
    "clave": "pal_the_stars_go_up_to_the_ceiling",
    "orixe": "composta",
@@ -31684,6 +33074,26 @@
    "asset": "tools/gen_laminas_2_3.py#the_stone_can_t_float",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "the stone is heavy": {
+   "clave": "vigo_nat_118",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «stone» (vigo_nat_118).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/vigo_nat_118.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "the stone looks much bigger": {
+   "clave": "vigo_nat_118",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «stone» (vigo_nat_118).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/vigo_nat_118.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
    "revisado": true
   },
   "the stone was big": {
@@ -31816,6 +33226,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "the tower shadow grows long": {
+   "clave": "pal_tower",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «tower» (pal_tower).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_tower.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "the train has gone down": {
    "clave": "pal_the_train_has_gone_down",
    "orixe": "composta",
@@ -31843,6 +33263,16 @@
    "fuente": "propia",
    "asset": "tools/gen_laminas_tpr.py#the_tram_is_faster_than_the_bus",
    "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "the tray goes down slowly": {
+   "clave": "pal_tray",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «tray» (pal_tray).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_tray.json",
+   "sha": "1973cc64",
    "licencia": "Propia",
    "revisado": true
   },
@@ -31936,6 +33366,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "there are three small spoons": {
+   "clave": "pal_small",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «small» (pal_small).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_small.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "there is a towel": {
    "clave": "toalla",
    "orixe": "reutilizada",
@@ -31943,6 +33383,26 @@
    "fuente": "propia",
    "asset": "assets/brand/laminas/toalla.json",
    "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "there is one big plate": {
+   "clave": "pal_big",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «big» (pal_big).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_big.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "there is water on cloth": {
+   "clave": "auga",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «water» (auga).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/auga.json",
+   "sha": "1973cc64",
    "licencia": "Propia",
    "revisado": true
   },
@@ -32026,6 +33486,26 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "this big leaf": {
+   "clave": "pal_big",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «big» (pal_big).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_big.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "this box is tall": {
+   "clave": "pal_box",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «box» (pal_box).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_box.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "this card is for my grandma": {
    "clave": "pal_this_card_is_for_my_grandma",
    "orixe": "composta",
@@ -32043,6 +33523,16 @@
    "fuente": "propia",
    "asset": "tools/gen_laminas_tpr.py#this_flower_has_more_petals_than_that_one",
    "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "this is my boat": {
+   "clave": "barco",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «boat» (barco).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/barco.json",
+   "sha": "1973cc64",
    "licencia": "Propia",
    "revisado": true
   },
@@ -32234,6 +33724,16 @@
    "asset": "tools/gen_laminas_tpr.py#throw_it_higher_than_the_tree",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "throw the plane across the room": {
+   "clave": "pal_throw",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «throw» (pal_throw).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_throw.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
    "revisado": true
   },
   "thrown gently, it flew far": {
@@ -32766,6 +34266,26 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "today it is hard": {
+   "clave": "pal_hard",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «hard» (pal_hard).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_hard.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "today we paint a rainbow together": {
+   "clave": "pal_pal_paint",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «paint» (pal_pal_paint).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_pal_paint.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "toe": {
    "clave": "pal_toe",
    "orixe": "composta",
@@ -32956,6 +34476,16 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "touch cold apple": {
+   "clave": "pal_touch",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «touch» (pal_touch).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_touch.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "touch your head": {
    "clave": "pal_touch_your_head",
    "orixe": "nova",
@@ -33003,6 +34533,26 @@
    "fuente": "propia",
    "asset": "assets/brand/laminas/toalla.json",
    "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "towel is dry": {
+   "clave": "toalla",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «towel» (toalla).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/toalla.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "towel is right here": {
+   "clave": "toalla",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «towel» (toalla).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/toalla.json",
+   "sha": "1973cc64",
    "licencia": "Propia",
    "revisado": true
   },
@@ -33586,6 +35136,16 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "turn the spoon round slowly": {
+   "clave": "pal_turn",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «turn» (pal_turn).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_turn.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "turn the tap": {
    "clave": "pal_turn_the_tap",
    "orixe": "nova",
@@ -34156,6 +35716,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "usually ice melts slowly": {
+   "clave": "pal_ice",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «ice» (pal_ice).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_ice.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "van": {
    "clave": "pal_van",
    "orixe": "banco",
@@ -34356,6 +35926,16 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "wait for thunder with them": {
+   "clave": "pal_wait",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «wait» (pal_wait).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_wait.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "wait in line": {
    "clave": "pal_wait_in_line",
    "orixe": "composta",
@@ -34373,6 +35953,16 @@
    "fuente": "propia",
    "asset": "tools/gen_laminas_4_5.py#wait_your_turn",
    "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "wait! listen and count high notes": {
+   "clave": "pal_wait",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «wait» (pal_wait).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_wait.json",
+   "sha": "1973cc64",
    "licencia": "Propia",
    "revisado": true
   },
@@ -34436,6 +36026,16 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "walk along and count your steps": {
+   "clave": "pal_walk",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «walk» (pal_walk).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_walk.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "walk backwards": {
    "clave": "pal_walk_backwards",
    "orixe": "nova",
@@ -34463,6 +36063,16 @@
    "fuente": "propia",
    "asset": "tools/gen_laminas_tpr.py#walk_down",
    "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "walk down the corridor to kitchen": {
+   "clave": "pal_walk",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «walk» (pal_walk).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_walk.json",
+   "sha": "1973cc64",
    "licencia": "Propia",
    "revisado": true
   },
@@ -34506,6 +36116,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "walk like a dog": {
+   "clave": "pal_walk",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «walk» (pal_walk).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_walk.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "walk like a penguin": {
    "clave": "pal_walk_like_a_penguin",
    "orixe": "composta",
@@ -34543,6 +36163,16 @@
    "fuente": "propia",
    "asset": "tools/gen_laminas_tpr.py#walk_on_stage",
    "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "walk out into sunny weather": {
+   "clave": "pal_walk",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «walk» (pal_walk).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_walk.json",
+   "sha": "1973cc64",
    "licencia": "Propia",
    "revisado": true
   },
@@ -34683,6 +36313,16 @@
    "fuente": "propia",
    "asset": "tools/gen_laminas_tpr.py#warm_as_toast",
    "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "warm bread here": {
+   "clave": "quente",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «warm» (quente).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/quente.json",
+   "sha": "1973cc64",
    "licencia": "Propia",
    "revisado": true
   },
@@ -34856,6 +36496,16 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "wash muddy boots with me": {
+   "clave": "pal_wash",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «wash» (pal_wash).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_wash.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "wash thoroughly": {
    "clave": "pal_wash_thoroughly",
    "orixe": "nova",
@@ -35016,6 +36666,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "watch how far it can fly": {
+   "clave": "pal_far",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «far» (pal_far).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_far.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "watch it grow": {
    "clave": "pal_watch_it_grow",
    "orixe": "nova",
@@ -35053,6 +36713,16 @@
    "fuente": "propia",
    "asset": "tools/gen_laminas_tpr.py#watch_the_glitter_settle",
    "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "watch the paper windmill spin": {
+   "clave": "pal_pal_paper",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «paper» (pal_pal_paper).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_pal_paper.json",
+   "sha": "1973cc64",
    "licencia": "Propia",
    "revisado": true
   },
@@ -35174,6 +36844,16 @@
    "asset": "tools/gen_laminas_tpr.py#water_it",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "water on hands": {
+   "clave": "auga",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «water» (auga).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/auga.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
    "revisado": true
   },
   "water on my toes": {
@@ -35326,6 +37006,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "wave at your tiny face": {
+   "clave": "pal_wave",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «wave» (pal_wave).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_wave.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "wave fingers": {
    "clave": "pal_wave_fingers",
    "orixe": "nova",
@@ -35416,6 +37106,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "we are going to check sun": {
+   "clave": "pal_sun",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «sun» (pal_sun).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_sun.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "we are going to lift it": {
    "clave": "pal_we_are_going_to_lift_it",
    "orixe": "composta",
@@ -35424,6 +37124,26 @@
    "asset": "tools/gen_laminas_2_3.py#we_are_going_to_lift_it",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "we are opening the folded paper": {
+   "clave": "pal_fold",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «fold» (pal_fold).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_fold.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "we are painting one paper side": {
+   "clave": "pal_pal_paint",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «paint» (pal_pal_paint).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_pal_paint.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
    "revisado": true
   },
   "we are tiny seeds under the ground": {
@@ -35536,6 +37256,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "we make a long row": {
+   "clave": "pal_long",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «long» (pal_long).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_long.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "we never eat cold bread": {
    "clave": "pal_we_never_eat_cold_bread",
    "orixe": "composta",
@@ -35586,6 +37316,36 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "we sometimes stir cold juice": {
+   "clave": "pal_stir",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «stir» (pal_stir).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_stir.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "we spun the circle very fast": {
+   "clave": "pal_circle",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «circle» (pal_circle).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_circle.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "we understand the message because it glows": {
+   "clave": "pal_understand",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «understand» (pal_understand).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_understand.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "we walk across the bridge": {
    "clave": "pal_walk_across_bridge",
    "orixe": "nova",
@@ -35593,6 +37353,16 @@
    "fuente": "propia",
    "asset": "tools/gen_laminas_4_5.py#walk_across_bridge",
    "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "we walk together": {
+   "clave": "pal_walk",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «walk» (pal_walk).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_walk.json",
+   "sha": "1973cc64",
    "licencia": "Propia",
    "revisado": true
   },
@@ -35604,6 +37374,16 @@
    "asset": "tools/gen_laminas_4_5.py#we_want_to_run",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "we watch and answer every question": {
+   "clave": "pal_watch",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «watch» (pal_watch).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_watch.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
    "revisado": true
   },
   "we were squeezing the bread": {
@@ -35624,6 +37404,16 @@
    "asset": "tools/gen_laminas_escoita_2.py#wear",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "wear boots, keep them clean": {
+   "clave": "pal_wear",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «wear» (pal_wear).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_wear.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
    "revisado": true
   },
   "weather": {
@@ -35816,6 +37606,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "what does cat do": {
+   "clave": "pal_cat",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «cat» (pal_cat).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_cat.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "what is it? a dog": {
    "clave": "pal_what_dog",
    "orixe": "banco",
@@ -35986,6 +37786,26 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "where does your heart beat": {
+   "clave": "pal_heart",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «heart» (pal_heart).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_heart.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "where is light": {
+   "clave": "pal_light",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «light» (pal_light).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_light.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "where is the light": {
    "clave": "pal_where_is_the_light",
    "orixe": "composta",
@@ -36004,6 +37824,26 @@
    "asset": "tools/gen_laminas_0_2.py#where_is_the_shadow",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "where is the water jug": {
+   "clave": "auga",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «water» (auga).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/auga.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "where is wet towel": {
+   "clave": "pal_wet",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «wet» (pal_wet).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_wet.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
    "revisado": true
   },
   "where's the sun": {
@@ -36126,6 +37966,16 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "who can drink water now": {
+   "clave": "pal_drink",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «drink» (pal_drink).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_drink.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "who runs": {
    "clave": "pal_who_runs",
    "orixe": "composta",
@@ -36134,6 +37984,26 @@
    "asset": "tools/gen_laminas_0_2.py#who_runs",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "who runs fast": {
+   "clave": "pal_run",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «run» (pal_run).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_run.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "who runs very fast": {
+   "clave": "pal_run",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «run» (pal_run).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_run.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
    "revisado": true
   },
   "whole": {
@@ -36333,6 +38203,16 @@
    "fuente": "propia",
    "asset": "tools/gen_laminas_tpr.py#wind",
    "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "wind blows it for us": {
+   "clave": "pal_wind",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «wind» (pal_wind).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_wind.json",
+   "sha": "1973cc64",
    "licencia": "Propia",
    "revisado": true
   },
@@ -36986,6 +38866,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "yesterday bread was soft": {
+   "clave": "pal_bread",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «bread» (pal_bread).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_bread.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "yesterday the train went slowly": {
    "clave": "pal_yesterday_the_train_went_slowly",
    "orixe": "composta",
@@ -36994,6 +38884,16 @@
    "asset": "tools/gen_laminas_3_4.py#yesterday_the_train_went_slowly",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "yesterday we painted a colour circle": {
+   "clave": "pal_pal_paint",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «paint» (pal_pal_paint).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_pal_paint.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
    "revisado": true
   },
   "yoga mat": {
@@ -37176,6 +39076,16 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "your big shadow": {
+   "clave": "pal_big",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «big» (pal_big).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_big.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "your hands are cleaner now": {
    "clave": "pal_hands_cleaner_now",
    "orixe": "composta",
@@ -37204,6 +39114,16 @@
    "asset": "tools/gen_laminas_4_5.py#shadow_grown",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "your tower stands strong": {
+   "clave": "pal_tower",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «tower» (pal_tower).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_tower.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
    "revisado": true
   },
   "your turn": {
@@ -37293,6 +39213,16 @@
    "fuente": "propia",
    "asset": "tools/gen_laminas_tpr.py#zip",
    "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "zip coat up against rain": {
+   "clave": "pal_zip",
+   "orixe": "reutilizada",
+   "porque": "Frase do STEAM do mes representada pola lámina de «zip» (pal_zip).",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_zip.json",
+   "sha": "1973cc64",
    "licencia": "Propia",
    "revisado": true
   },
