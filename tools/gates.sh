@@ -77,6 +77,9 @@ run_gate "no merged order still says its merge is pending" \
 # F-20261126-4: el plan de mejoras trae mejoras propias de Claude Code.
 run_gate "the improvement plan carries Claude Code's own proposals" \
   python3 tools/check_plan_mejoras.py
+# F-20261126-5: lo aprobado para Antigravity está guardado en un prompt vigente.
+run_gate "approved improvements are saved in a current prompt" \
+  python3 tools/check_prompt_vigente.py
 # Automejora (Frank, 9/11/2026, O-20261109-2): cada fallo que señala Frank,
 # con su causa raíz y una guarda que exista.
 run_gate "every failure Frank reported has its guard" python3 tools/check_fallos.py
