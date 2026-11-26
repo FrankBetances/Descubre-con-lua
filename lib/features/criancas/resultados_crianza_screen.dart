@@ -117,13 +117,22 @@ class _ResultadosCrianzaScreenState extends State<ResultadosCrianzaScreen> {
       toca.dia.semana,
     );
     final lec = l?.da(c.curso, toca.dia.mesCalendario, toca.dia.semana)?.$2;
-    // O-20261109-4: en 0-2, las cinco palabras de la semana del proyecto.
+    final ax = store.calcularAxustePara(
+      c.id,
+      mesCalendario: toca.dia.mesCalendario,
+      semana: toca.dia.semana,
+      agora: widget.agora,
+    );
+    // O-20261109-4: en 0-2, las palabras de la semana del proyecto (con cupo).
     final proxecto = c.curso == 'curso_0_2'
         ? Proxectos02.lidos?.doMes(toca.dia.mesCalendario)
         : null;
     final palabras = proxecto != null
         ? [
-            for (final w in proxecto.daSemana(toca.dia.semana))
+            for (final w in proxecto.daSemanaConCupo(
+              toca.dia.semana,
+              ax.cupoNovas,
+            ))
               PezaDaLeccion(
                 tipo: 'palabra',
                 en: w.en,
@@ -131,7 +140,8 @@ class _ResultadosCrianzaScreenState extends State<ResultadosCrianzaScreen> {
               ),
           ]
         : [
-            for (final p in lec?.novas ?? const <PezaDaLeccion>[])
+            for (final p
+                in lec?.novasConCupo(ax.cupoNovas) ?? const <PezaDaLeccion>[])
               if (p.en.isNotEmpty) p,
           ];
     final totais = store.totais(c.id);

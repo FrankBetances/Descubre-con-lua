@@ -22,149 +22,97 @@ class NomesFamilias {
   // ---------------------------------------------------------------- explorar
   static const contos = LocalizedString(gl: 'Contos', es: 'Cuentos');
   static const contosDi = LocalizedString(
-    gl: 'O da semana, primeiro',
-    es: 'El de la semana, primero',
-  );
-  static const ingles = LocalizedString(
-    gl: 'Palabras en inglés',
-    es: 'Palabras en inglés',
-  );
+      gl: 'O da semana, primeiro', es: 'El de la semana, primero');
+  static const ingles =
+      LocalizedString(gl: 'Palabras en inglés', es: 'Palabras en inglés');
   static const inglesDi = LocalizedString(
-    gl: 'As de cada día, con voz',
-    es: 'Las de cada día, con voz',
-  );
+      gl: 'As de cada día, con voz', es: 'Las de cada día, con voz');
   static const inglesToques = LocalizedString(
-    gl: 'Un toque: en inglés. Dous toques: o que quere dicir.',
-    es: 'Un toque: en inglés. Dos toques: lo que quiere decir.',
-  );
-  static const movemento = LocalizedString(
-    gl: 'Xogos de movemento',
-    es: 'Juegos de movimiento',
-  );
+      gl: 'Un toque: en inglés. Dous toques: o que quere dicir.',
+      es: 'Un toque: en inglés. Dos toques: lo que quiere decir.');
+  static const movemento =
+      LocalizedString(gl: 'Xogos de movemento', es: 'Juegos de movimiento');
 
   /// En la cabecera de su pantalla: «Xogos de movemento» y «Juegos de
   /// movimiento» no caben enteros a 360 px.
   static const movementoCabeceira = LocalizedString(gl: 'Xogos', es: 'Juegos');
-  static const movementoDi = LocalizedString(
-    gl: 'Curtos e sen pantalla',
-    es: 'Cortos y sin pantalla',
-  );
+  static const movementoDi =
+      LocalizedString(gl: 'Curtos e sen pantalla', es: 'Cortos y sin pantalla');
   static const ler = LocalizedString(gl: 'Ler xogando', es: 'Leer jugando');
   static const lerDi = LocalizedString(
-    gl: 'Sons e letras coas mans',
-    es: 'Sonidos y letras con las manos',
-  );
+      gl: 'Sons e letras coas mans', es: 'Sonidos y letras con las manos');
   static const laminas = LocalizedString(gl: 'Láminas', es: 'Láminas');
   static const laminasDi = LocalizedString(
-    gl: 'Para mirar xuntos e falar',
-    es: 'Para mirar juntos y hablar',
-  );
-  static const ciencia = LocalizedString(
-    gl: 'Ciencia coas mans',
-    es: 'Ciencia con las manos',
-  );
+      gl: 'Para mirar xuntos e falar', es: 'Para mirar juntos y hablar');
+  static const ciencia =
+      LocalizedString(gl: 'Ciencia coas mans', es: 'Ciencia con las manos');
 
   /// «Ciencia con las manos» no cabe a 360 px. La cabecera conserva «STEAM», el
   /// nombre con que se pidió el módulo.
-  static const cienciaCabeceira = LocalizedString(
-    gl: 'Ciencia · STEAM',
-    es: 'Ciencia · STEAM',
-  );
+  static const cienciaCabeceira =
+      LocalizedString(gl: 'Ciencia · STEAM', es: 'Ciencia · STEAM');
 
   /// «STEAM» a la vista: es el nombre con que se pidió el módulo.
   static const cienciaDi = LocalizedString(
-    gl: 'STEAM: un xogo por idade',
-    es: 'STEAM: un juego por edad',
-  );
+      gl: 'STEAM: un xogo por idade', es: 'STEAM: un juego por edad');
   static const estimulacion = LocalizedString(
-    gl: 'Estimulación da linguaxe e o pensamento',
-    es: 'Estimulación del lenguaje y el pensamiento',
-  );
+      gl: 'Estimulación da linguaxe e o pensamento',
+      es: 'Estimulación del lenguaje y el pensamiento');
 
   /// En la cabecera de su pantalla: «Estimulación da linguaxe e o pensamento» y
   /// «Estimulación del lenguaje y el pensamiento» no caben enteros a 360 px.
-  static const estimulacionCabeceira = LocalizedString(
-    gl: 'Estimulación',
-    es: 'Estimulación',
-  );
+  static const estimulacionCabeceira =
+      LocalizedString(gl: 'Estimulación', es: 'Estimulación');
   static const estimulacionDi = LocalizedString(
-    gl: 'Escoita, palabras que medran, modelo e pensamento STEAM.',
-    es: 'Escucha, palabras que crecen, modelo y pensamiento STEAM.',
-  );
+      gl: 'Escoita, palabras que medran, modelo e pensamento STEAM.',
+      es: 'Escucha, palabras que crecen, modelo y pensamiento STEAM.');
   static const realidadeAumentada = LocalizedString(
-    gl: 'Realidade aumentada con Lúa',
-    es: 'Realidad aumentada con Lúa',
-  );
+      gl: 'Realidade aumentada con Lúa', es: 'Realidad aumentada con Lúa');
 
   /// En la cabecera de su pantalla: «Realidade aumentada con Lúa» y «Realidad
   /// aumentada con Lúa» no caben enteros a 360 px.
-  static const realidadeAumentadaCabeceira = LocalizedString(
-    gl: 'RA con Lúa',
-    es: 'RA con Lúa',
-  );
+  static const realidadeAumentadaCabeceira =
+      LocalizedString(gl: 'RA con Lúa', es: 'RA con Lúa');
   static const realidadeAumentadaDi = LocalizedString(
-    gl: 'A escena STEAM do mes na mesa e o espello facial en inglés.',
-    es: 'La escena STEAM del mes en la mesa y el espejo facial en inglés.',
-  );
+      gl: 'A escena STEAM do mes na mesa e o espello facial en inglés.',
+      es: 'La escena STEAM del mes en la mesa y el espejo facial en inglés.');
 
   // ------------------------------------------------------------------- guías
-  static const antesDeEmpezar = LocalizedString(
-    gl: 'Antes de empezar',
-    es: 'Antes de empezar',
-  );
+  static const antesDeEmpezar =
+      LocalizedString(gl: 'Antes de empezar', es: 'Antes de empezar');
   static const antesDeEmpezarDi = LocalizedString(
-    gl: 'Como usar a app na casa, en dous minutos.',
-    es: 'Cómo usar la app en casa, en dos minutos.',
-  );
-  static const guiasFamilia = LocalizedString(
-    gl: 'Guías para a familia',
-    es: 'Guías para la familia',
-  );
+      gl: 'Como usar a app na casa, en dous minutos.',
+      es: 'Cómo usar la app en casa, en dos minutos.');
+  static const guiasFamilia =
+      LocalizedString(gl: 'Guías para a familia', es: 'Guías para la familia');
 
   /// En la cabecera de su pantalla: «Guías para a familia» y «Guías para la
   /// familia» no caben enteros a 360 px.
-  static const guiasFamiliaCabeceira = LocalizedString(
-    gl: 'Guías',
-    es: 'Guías',
-  );
+  static const guiasFamiliaCabeceira =
+      LocalizedString(gl: 'Guías', es: 'Guías');
   static const guiasFamiliaDi = LocalizedString(
-    gl: 'Lecturas curtas para ti: como falar e xogar co teu neno ou coa túa nena.',
-    es: 'Lecturas cortas para ti: cómo hablar y jugar con tu niño o niña.',
-  );
-  static const inglesNaCasa = LocalizedString(
-    gl: 'O inglés na casa',
-    es: 'El inglés en casa',
-  );
+      gl: 'Lecturas curtas para ti: como falar e xogar co teu neno ou coa túa nena.',
+      es: 'Lecturas cortas para ti: cómo hablar y jugar con tu niño o niña.');
+  static const inglesNaCasa =
+      LocalizedString(gl: 'O inglés na casa', es: 'El inglés en casa');
   static const inglesNaCasaDi = LocalizedString(
-    gl: 'Canto dura o xogo segundo a idade e como se di cada frase.',
-    es: 'Cuánto dura el juego según la edad y cómo se dice cada frase.',
-  );
-  static const premios = LocalizedString(
-    gl: 'Os teus premios',
-    es: 'Tus premios',
-  );
+      gl: 'Canto dura o xogo segundo a idade e como se di cada frase.',
+      es: 'Cuánto dura el juego según la edad y cómo se dice cada frase.');
+  static const premios =
+      LocalizedString(gl: 'Os teus premios', es: 'Tus premios');
   static const premiosDi = LocalizedString(
-    gl: 'Lúa celebra a túa constancia: días seguidos e lecturas feitas.',
-    es: 'Lúa celebra tu constancia: días seguidos y lecturas hechas.',
-  );
+      gl: 'Lúa celebra a túa constancia: días seguidos e lecturas feitas.',
+      es: 'Lúa celebra tu constancia: días seguidos y lecturas hechas.');
 
   // ------------------------------------------------------------- ler xogando
   static const lerPestanaSons = LocalizedString(
-    gl: '1. Conciencia fonolóxica',
-    es: '1. Conciencia fonológica',
-  );
-  static const lerPestanaLetras = LocalizedString(
-    gl: '2. Colocar letras',
-    es: '2. Colocar letras',
-  );
-  static const lerPestanaCubos = LocalizedString(
-    gl: '3. Xuntar cubos',
-    es: '3. Juntar cubos',
-  );
-  static const lerPestanaPares = LocalizedString(
-    gl: '4. Pares mínimos',
-    es: '4. Pares mínimos',
-  );
+      gl: '1. Conciencia fonolóxica', es: '1. Conciencia fonológica');
+  static const lerPestanaLetras =
+      LocalizedString(gl: '2. Colocar letras', es: '2. Colocar letras');
+  static const lerPestanaCubos =
+      LocalizedString(gl: '3. Xuntar cubos', es: '3. Juntar cubos');
+  static const lerPestanaPares =
+      LocalizedString(gl: '4. Pares mínimos', es: '4. Pares mínimos');
 
   // ------------------------------------------------------------------ idades
   /// Las cinco edades, con la clave de su curso. En casa, la elegida se guarda

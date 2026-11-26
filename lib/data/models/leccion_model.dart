@@ -91,15 +91,23 @@ class RutinaFogar {
 class CapaSemanal {
   final LocalizedString texto;
   final String en;
+  final List<PezaDaLeccion> pezas;
   final Map<String, RutinaFogar> rutinas;
 
   const CapaSemanal({
     required this.texto,
     required this.en,
+    this.pezas = const [],
     this.rutinas = const {},
   });
 
   factory CapaSemanal.fromJson(Map<String, dynamic> j) {
+    final rawPezas = j['pezas'];
+    final pezas = <PezaDaLeccion>[
+      if (rawPezas is List)
+        for (final p in rawPezas)
+          if (p is Map) PezaDaLeccion.fromJson(Map<String, dynamic>.from(p)),
+    ];
     final rawRut = j['rutinas'];
     final rutinas = <String, RutinaFogar>{};
     if (rawRut is Map) {
@@ -113,6 +121,7 @@ class CapaSemanal {
     return CapaSemanal(
       texto: _t(j),
       en: j['en']?.toString() ?? '',
+      pezas: pezas,
       rutinas: rutinas,
     );
   }
@@ -241,6 +250,23 @@ class Leccion {
             ),
       ],
     );
+  }
+
+  /// Las palabras nuevas de la semana respetando [cupo] (Paso 2 de P11).
+  /// Si [cupo] supera [novas], completa con piezas reales de la capa `mais`.
+  List<PezaDaLeccion> novasConCupo(int? cupo) {
+    if (cupo == null || cupo <= 0) return novas;
+    if (novas.length >= cupo) return novas.take(cupo).toList(growable: false);
+    final out = List<PezaDaLeccion>.from(novas);
+    final vistos = {for (final p in out) p.en.trim().toLowerCase()};
+    for (final extra in capas['mais']?.pezas ?? const <PezaDaLeccion>[]) {
+      if (out.length >= cupo) break;
+      final k = extra.en.trim().toLowerCase();
+      if (k.isEmpty || vistos.contains(k)) continue;
+      vistos.add(k);
+      out.add(extra);
+    }
+    return out;
   }
 }
 

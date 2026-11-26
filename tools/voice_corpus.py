@@ -868,6 +868,22 @@ def collect_locutions(content_dir: Path = CONTENT_DIR) -> list[Locution]:
                 sig = mira.get("significado")
                 if isinstance(sig, dict):
                     _add(_localized(sig), "tutor", f"acopros/{mes_c}/mira_e_nota/significado", seen)
+            for s in p.get("semanas") or []:
+                s_num = s.get("semana", "?")
+                for cname, cap in (s.get("capas") or {}).items():
+                    if not isinstance(cap, dict):
+                        continue
+                    c_en = str(cap.get("en") or "").strip()
+                    if c_en:
+                        _one_neno(c_en, f"acopros/{mes_c}/s{s_num}/capa/{cname}", seen)
+                    for pz in cap.get("pezas") or []:
+                        if not isinstance(pz, dict):
+                            continue
+                        p_en = str(pz.get("en") or "").strip()
+                        if p_en:
+                            _one_neno(p_en, f"acopros/{mes_c}/s{s_num}/capa/{cname}/peza", seen)
+                        if pz.get("gl") and pz.get("es"):
+                            _add(_localized(pz), "tutor", f"acopros/{mes_c}/s{s_num}/capa/{cname}/sig", seen)
 
     # O-20261119-8: los Juegos de escucha, copiados de Valeria. Cada palabra y
     # cada frase suena en la lengua de su banco; la persona adulta las oye en
@@ -992,6 +1008,29 @@ def collect_locutions(content_dir: Path = CONTENT_DIR) -> list[Locution]:
                 if isinstance(it.get("instrucion"), dict):
                     _add(_localized(it["instrucion"]), "tutor",
                          f"nivel/irmans/{par_key}/{iid}/instrucion", seen)
+
+    # P11 (Paso 1): As 3 capas semanais das leccións e as súas pezas con voz child+slow.
+    leccions_json = content_dir / "leccions" / "leccions.json"
+    if leccions_json.exists():
+        lc = json.loads(leccions_json.read_text(encoding="utf-8"))
+        for cid, cdata in (lc.get("cursos") or {}).items():
+            for u in cdata.get("unidades") or []:
+                for l in u.get("leccions") or []:
+                    lid = l.get("id", "?")
+                    for cname, cap in (l.get("capas") or {}).items():
+                        if not isinstance(cap, dict):
+                            continue
+                        c_en = str(cap.get("en") or "").strip()
+                        if c_en:
+                            _one_neno(c_en, f"leccions/{cid}/{lid}/capa/{cname}", seen)
+                        for pz in cap.get("pezas") or []:
+                            if not isinstance(pz, dict):
+                                continue
+                            p_en = str(pz.get("en") or "").strip()
+                            if p_en:
+                                _one_neno(p_en, f"leccions/{cid}/{lid}/capa/{cname}/peza", seen)
+                            if pz.get("gl") and pz.get("es"):
+                                _add(_localized(pz), "tutor", f"leccions/{cid}/{lid}/capa/{cname}/sig", seen)
 
     return sorted(seen.values(), key=lambda e: (e.lang, e.style, e.id))
 

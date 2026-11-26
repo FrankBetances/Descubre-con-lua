@@ -102,6 +102,33 @@ class Proxecto02 {
     if (capasPorSemana.isEmpty) return const {};
     return capasPorSemana[(semana.clamp(1, capasPorSemana.length)) - 1];
   }
+
+  /// Palabras de la semana ajustadas al [cupo] del niño (Paso 2 de P11).
+  List<PalabraProxecto> daSemanaConCupo(int semana, int? cupo) {
+    final base = daSemana(semana);
+    if (cupo == null || cupo <= 0) return base;
+    if (base.length >= cupo) return base.take(cupo).toList(growable: false);
+    final out = List<PalabraProxecto>.from(base);
+    final vistos = {for (final p in out) p.en.trim().toLowerCase()};
+    for (final extra
+        in capasDaSemana(semana)['mais']?.pezas ?? const <PezaDaLeccion>[]) {
+      if (out.length >= cupo) break;
+      final k = extra.en.trim().toLowerCase();
+      if (k.isEmpty || vistos.contains(k)) continue;
+      vistos.add(k);
+      out.add(
+        palabra(extra.en) ??
+            PalabraProxecto(
+              en: extra.en,
+              significado:
+                  extra.significado ?? const LocalizedString(gl: '', es: ''),
+              xesto: extra.xesto ?? const LocalizedString(gl: '', es: ''),
+              lamina: extra.lamina,
+            ),
+      );
+    }
+    return out;
+  }
 }
 
 class Proxectos02 {
@@ -150,6 +177,7 @@ class Proxectos02 {
               : CapaSemanal(
                   texto: parsed.texto,
                   en: parsed.en,
+                  pezas: parsed.pezas,
                   rutinas: rutsBase,
                 );
         }
@@ -217,6 +245,7 @@ class LeccionProxecto02 extends StatefulWidget {
   final int semana;
   final AppLanguage language;
   final OfflineAudioService? audioService;
+  final int? cupo;
 
   const LeccionProxecto02({
     super.key,
@@ -224,6 +253,7 @@ class LeccionProxecto02 extends StatefulWidget {
     required this.semana,
     required this.language,
     this.audioService,
+    this.cupo,
   });
 
   @override
@@ -263,7 +293,7 @@ class _LeccionProxecto02State extends State<LeccionProxecto02> {
     final isGl = lang == AppLanguage.gl;
     final acento = context.acento;
     final s = pr.semanas[(widget.semana.clamp(1, pr.semanas.length)) - 1];
-    final daSemana = pr.daSemana(widget.semana);
+    final daSemana = pr.daSemanaConCupo(widget.semana, widget.cupo);
 
     Widget seccion(Key key, String titulo, List<Widget> fillos) => Padding(
           key: key,
@@ -415,6 +445,7 @@ class PalabrasProxecto02 extends StatelessWidget {
   final int semana;
   final AppLanguage language;
   final OfflineAudioService? audioService;
+  final int? cupo;
 
   const PalabrasProxecto02({
     super.key,
@@ -422,6 +453,7 @@ class PalabrasProxecto02 extends StatelessWidget {
     required this.semana,
     required this.language,
     this.audioService,
+    this.cupo,
   });
 
   @override
@@ -441,7 +473,7 @@ class PalabrasProxecto02 extends StatelessWidget {
                 const TextStyle(fontSize: 14, color: AppTheme.textSecondary)),
         const SizedBox(height: 8),
         Wrap(spacing: 8, runSpacing: 8, children: [
-          for (final p in pr.daSemana(semana))
+          for (final p in pr.daSemanaConCupo(semana, cupo))
             BotonEscuchar(
               audioService: audioService,
               texto: p.en,

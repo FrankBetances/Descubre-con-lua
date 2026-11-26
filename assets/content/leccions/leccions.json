@@ -26506,7 +26506,603 @@
          }
         ]
        },
-       "xaSabe": [],
+       "xaSabe": [
+        {
+         "tipo": "orde",
+         "en": "Roll, roll, yellow circle!",
+         "que": {
+          "gl": "Orde: unha acción",
+          "es": "Orden: una acción"
+         },
+         "gl": "Roda, roda, círculo amarelo!",
+         "es": "¡Rueda, rueda, círculo amarillo!",
+         "xesto": {
+          "gl": "Guiar a presión coas dúas mans para que sacuda o recipiente.",
+          "es": "Guiar la prensión con las dos manos para que sacuda el recipiente."
+         },
+         "lamina": "pal_roll_roll_yellow_circle"
+        },
+        {
+         "tipo": "adjective",
+         "en": "Sunny yellow",
+         "que": {
+          "gl": "Adxectivo: como é",
+          "es": "Adjetivo: cómo es"
+         },
+         "gl": "Amarelo sol",
+         "es": "Amarillo sol",
+         "xesto": {
+          "gl": "Abrir as mans coma o sol",
+          "es": "Abrir las manos como el sol"
+         },
+         "lamina": "pal_sunny_yellow"
+        },
+        {
+         "tipo": "orde",
+         "en": "Wash!",
+         "que": {
+          "gl": "Orde: unha acción",
+          "es": "Orden: una acción"
+         },
+         "xesto": {
+          "gl": "Fregar as palmas das mans facendo círculos sen parar.",
+          "es": "Frotarse las palmas de las manos haciendo círculos sin parar."
+         },
+         "gl": "lavar",
+         "es": "lavar",
+         "lamina": "pal_wash"
+        },
+        {
+         "tipo": "noun",
+         "en": "Red ball",
+         "que": {
+          "gl": "Nome: unha cousa",
+          "es": "Nombre: una cosa"
+         },
+         "gl": "Pelota vermella",
+         "es": "Pelota roja",
+         "xesto": {
+          "gl": "Rodar a pelota vermella",
+          "es": "Rodar la pelota roja"
+         },
+         "lamina": "pal_red_ball"
+        },
+        {
+         "tipo": "phrase",
+         "en": "Roll it to me",
+         "que": {
+          "gl": "Frase para relacionarse",
+          "es": "Frase para relacionarse"
+         },
+         "gl": "Ródaa cara a min",
+         "es": "Ruédala hacia mí",
+         "xesto": {
+          "gl": "Abrir as mans para recibila",
+          "es": "Abrir las manos para recibirla"
+         },
+         "lamina": "pal_roll_it_to_me"
+        },
+        {
+         "tipo": "noun",
+         "en": "Soap",
+         "que": {
+          "gl": "Nome: unha cousa",
+          "es": "Nombre: una cosa"
+         },
+         "gl": "xabón",
+         "es": "jabón",
+         "lamina": "pal_soap"
+        },
+        {
+         "tipo": "noun",
+         "en": "Honey",
+         "que": {
+          "gl": "Nome: unha cousa",
+          "es": "Nombre: una cosa"
+         },
+         "gl": "Mel",
+         "es": "Miel",
+         "xesto": {
+          "gl": "Amosar o bote de mel e cheiralo",
+          "es": "Mostrar el bote de miel y olerlo"
+         },
+         "lamina": "pal_honey"
+        },
+        {
+         "tipo": "phrase",
+         "en": "Shake, shake, shake!",
+         "que": {
+          "gl": "Frase para relacionarse",
+          "es": "Frase para relacionarse"
+         },
+         "gl": "Axita, axita, axita!",
+         "es": "¡Agita, agita, agita!",
+         "xesto": {
+          "gl": "Axitar o axóuxere tres veces",
+          "es": "Agitar el sonajero tres veces"
+         },
+         "lamina": "pal_shake_shake_shake"
+        },
+        {
+         "tipo": "noun",
+         "en": "Towel",
+         "que": {
+          "gl": "Nome: unha cousa",
+          "es": "Nombre: una cosa"
+         },
+         "gl": "toalla",
+         "es": "toalla",
+         "lamina": "toalla"
+        },
+        {
+         "tipo": "noun",
+         "en": "Beach ball",
+         "que": {
+          "gl": "Nome: unha cousa",
+          "es": "Nombre: una cosa"
+         },
+         "gl": "Pelota de praia",
+         "es": "Pelota de playa",
+         "xesto": {
+          "gl": "Rodar a pelota grande",
+          "es": "Rodar la pelota grande"
+         },
+         "lamina": "pal_beach_ball"
+        },
+        {
+         "tipo": "orde",
+         "en": "Rub!",
+         "que": {
+          "gl": "Orde: unha acción",
+          "es": "Orden: una acción"
+         },
+         "xesto": {
+          "gl": "Pasar os dedos polos brazos ou polas pernas fregando.",
+          "es": "Pasar los dedos por los brazos o por las piernas frotando."
+         },
+         "gl": "fregar, frotar",
+         "es": "frotar",
+         "lamina": "pal_rub"
+        },
+        {
+         "tipo": "orde",
+         "en": "Rain, rain, little drops, tap, tap, tap",
+         "que": {
+          "gl": "Orde: unha acción",
+          "es": "Orden: una acción"
+         },
+         "gl": "Choiva, choiva, pingas pequenas, tap, tap, tap",
+         "es": "Lluvia, lluvia, gotitas, tap, tap, tap",
+         "xesto": {
+          "gl": "Pulverizar auga morna sobre o dorso das mans.",
+          "es": "Pulverizar agua tibia sobre el dorso de las manos."
+         },
+         "lamina": "pal_rain_rain_little_drops_tap_tap_tap"
+        },
+        {
+         "tipo": "orde",
+         "en": "The sun comes up!",
+         "que": {
+          "gl": "Orde: unha acción",
+          "es": "Orden: una acción"
+         },
+         "gl": "Sae o sol!",
+         "es": "¡Sale el sol!",
+         "xesto": {
+          "gl": "Ondear o tul amarelo sobre os seus rostros.",
+          "es": "Ondear el tul amarillo sobre sus rostros."
+         },
+         "lamina": "pal_the_sun_comes_up"
+        },
+        {
+         "tipo": "orde",
+         "en": "Soft!",
+         "que": {
+          "gl": "Orde: unha acción",
+          "es": "Orden: una acción"
+         },
+         "xesto": {
+          "gl": "Tocar as meixelas suavemente.",
+          "es": "Tocarse las mejillas suavemente."
+         },
+         "gl": "suave, brando",
+         "es": "suave, blando",
+         "lamina": "pal_soft"
+        },
+        {
+         "tipo": "phrase",
+         "en": "Drip, drop!",
+         "que": {
+          "gl": "Frase para relacionarse",
+          "es": "Frase para relacionarse"
+         },
+         "gl": "Pinga, pinga!",
+         "es": "¡Gota, gota!",
+         "xesto": {
+          "gl": "Tocar a man dúas veces",
+          "es": "Tocar la mano dos veces"
+         },
+         "lamina": "pal_drip_drop"
+        },
+        {
+         "tipo": "verb",
+         "en": "Pitter-patter",
+         "que": {
+          "gl": "Verbo: unha acción",
+          "es": "Verbo: una acción"
+         },
+         "gl": "Tamborilar",
+         "es": "Repiquetear",
+         "xesto": {
+          "gl": "Bater cos dedos na mesa coma a choiva",
+          "es": "Golpear con los dedos en la mesa como la lluvia"
+         },
+         "lamina": "pal_pitter_patter"
+        },
+        {
+         "tipo": "noun",
+         "en": "Drizzle",
+         "que": {
+          "gl": "Nome: unha cousa",
+          "es": "Nombre: una cosa"
+         },
+         "gl": "Orballo",
+         "es": "Llovizna",
+         "xesto": {
+          "gl": "Mover os dedos coma pingas finas",
+          "es": "Mover los dedos como gotas finas"
+         },
+         "lamina": "choiva"
+        },
+        {
+         "tipo": "noun",
+         "en": "Plant pot",
+         "que": {
+          "gl": "Nome: unha cousa",
+          "es": "Nombre: una cosa"
+         },
+         "gl": "Testo",
+         "es": "Maceta",
+         "xesto": {
+          "gl": "Encher o vaso con terra",
+          "es": "Llenar la maceta con tierra"
+         },
+         "lamina": "pal_plant_pot"
+        },
+        {
+         "tipo": "noun",
+         "en": "Earth",
+         "que": {
+          "gl": "Nome: unha cousa",
+          "es": "Nombre: una cosa"
+         },
+         "gl": "Terra",
+         "es": "Tierra",
+         "xesto": {
+          "gl": "Tocar a terra coa punta dos dedos",
+          "es": "Tocar la tierra con la punta de los dedos"
+         },
+         "lamina": "terra"
+        },
+        {
+         "tipo": "noun",
+         "en": "Bean",
+         "que": {
+          "gl": "Nome: unha cousa",
+          "es": "Nombre: una cosa"
+         },
+         "gl": "Feixón",
+         "es": "Judía",
+         "xesto": {
+          "gl": "Enterrar un feixón no vaso",
+          "es": "Enterrar una judía en la maceta"
+         },
+         "lamina": "pal_bean"
+        },
+        {
+         "tipo": "orde",
+         "en": "Wash, wash, clean hands!",
+         "que": {
+          "gl": "Orde: unha acción",
+          "es": "Orden: una acción"
+         },
+         "gl": "Lava, lava, mans limpas!",
+         "es": "¡Lava, lava, manos limpias!",
+         "xesto": {
+          "gl": "Sostén as mans do bebé e frótaas unha contra a outra.",
+          "es": "Sostén las manos del bebé y frótalas una contra la otra."
+         },
+         "lamina": "pal_wash_wash_clean_hands"
+        },
+        {
+         "tipo": "phrase",
+         "en": "Splish, splash!",
+         "que": {
+          "gl": "Frase para relacionarse",
+          "es": "Frase para relacionarse"
+         },
+         "gl": "Chis, chas!",
+         "es": "¡Chis, chas!",
+         "xesto": {
+          "gl": "Bater na auga dúas veces",
+          "es": "Golpear el agua dos veces"
+         },
+         "lamina": "pal_splish_splash"
+        },
+        {
+         "tipo": "noun",
+         "en": "Dog",
+         "que": {
+          "gl": "Nome: unha cousa",
+          "es": "Nombre: una cosa"
+         },
+         "gl": "can",
+         "es": "perro",
+         "lamina": "pal_dog"
+        },
+        {
+         "tipo": "orde",
+         "en": "Cat!",
+         "que": {
+          "gl": "Orde: unha acción",
+          "es": "Orden: una acción"
+         },
+         "xesto": {
+          "gl": "Poñerse a catro patas e arquear o lombo coma un gato.",
+          "es": "Ponerse a cuatro patas y arquear el lomo como un gato."
+         },
+         "gl": "gato",
+         "es": "gato",
+         "lamina": "pal_cat"
+        },
+        {
+         "tipo": "phrase",
+         "en": "All wet!",
+         "que": {
+          "gl": "Frase para relacionarse",
+          "es": "Frase para relacionarse"
+         },
+         "gl": "Todo mollado!",
+         "es": "¡Todo mojado!",
+         "xesto": {
+          "gl": "Amosar as mans molladas",
+          "es": "Enseñar las manos mojadas"
+         },
+         "lamina": "pal_all_wet"
+        },
+        {
+         "tipo": "complex",
+         "en": "Soap and water",
+         "que": {
+          "gl": "Expresión",
+          "es": "Expresión"
+         },
+         "gl": "Xabón e auga",
+         "es": "Jabón y agua",
+         "xesto": {
+          "gl": "Amosar o xabón e logo a auga",
+          "es": "Enseñar el jabón y luego el agua"
+         },
+         "lamina": "pal_soap_and_water"
+        },
+        {
+         "tipo": "orde",
+         "en": "Run!",
+         "que": {
+          "gl": "Orde: unha acción",
+          "es": "Orden: una acción"
+         },
+         "xesto": {
+          "gl": "Correr levantando os xeonllos no sitio ou dando voltas en círculo.",
+          "es": "Correr levantando las rodillas en el sitio o dando vueltas en círculo."
+         },
+         "gl": "correr",
+         "es": "correr",
+         "lamina": "pal_run"
+        },
+        {
+         "tipo": "phrase",
+         "en": "Bath time!",
+         "que": {
+          "gl": "Frase para relacionarse",
+          "es": "Frase para relacionarse"
+         },
+         "gl": "Hora do baño!",
+         "es": "¡Hora del baño!",
+         "xesto": {
+          "gl": "Amosar a bañeira",
+          "es": "Enseñar la bañera"
+         },
+         "lamina": "pal_bath_time"
+        },
+        {
+         "tipo": "orde",
+         "en": "Sleep!",
+         "que": {
+          "gl": "Orde: unha acción",
+          "es": "Orden: una acción"
+         },
+         "xesto": {
+          "gl": "Apoiar a cabeza nas mans xuntas, pechar os ollos e respirar fondo de mentira.",
+          "es": "Apoyar la cabeza en las manos juntas, cerrar los ojos y respirar hondo de mentira."
+         },
+         "gl": "durmir",
+         "es": "dormir",
+         "lamina": "pal_sleep"
+        },
+        {
+         "tipo": "noun",
+         "en": "Hand towel",
+         "que": {
+          "gl": "Nome: unha cousa",
+          "es": "Nombre: una cosa"
+         },
+         "gl": "Toalla de mans",
+         "es": "Toalla de manos",
+         "xesto": {
+          "gl": "Secar as mans na toalla",
+          "es": "Secar las manos en la toalla"
+         },
+         "lamina": "pal_hand_towel"
+        },
+        {
+         "tipo": "orde",
+         "en": "Waves go up, waves go down, blue sea",
+         "que": {
+          "gl": "Orde: unha acción",
+          "es": "Orden: una acción"
+         },
+         "gl": "As ondas soben, as ondas baixan, mar azul",
+         "es": "Las olas suben, las olas bajan, mar azul",
+         "xesto": {
+          "gl": "Ondear a tea creando fluxo de aire e ondada visual.",
+          "es": "Ondear la tela creando flujo de aire y oleaje visual."
+         },
+         "lamina": "pal_waves_go_up_waves_go_down_blue_sea"
+        },
+        {
+         "tipo": "phrase",
+         "en": "Here comes a wave!",
+         "que": {
+          "gl": "Frase para relacionarse",
+          "es": "Frase para relacionarse"
+         },
+         "gl": "Aí vén unha onda!",
+         "es": "¡Ahí viene una ola!",
+         "xesto": {
+          "gl": "Levantar os brazos coma unha onda",
+          "es": "Levantar los brazos como una ola"
+         },
+         "lamina": "pal_here_comes_a_wave"
+        },
+        {
+         "tipo": "noun",
+         "en": "Ball",
+         "que": {
+          "gl": "Nome: unha cousa",
+          "es": "Nombre: una cosa"
+         },
+         "gl": "pelota",
+         "es": "pelota",
+         "lamina": "vocab_45"
+        },
+        {
+         "tipo": "noun",
+         "en": "Box",
+         "que": {
+          "gl": "Nome: unha cousa",
+          "es": "Nombre: una cosa"
+         },
+         "gl": "caixa",
+         "es": "caja",
+         "lamina": "pal_box"
+        },
+        {
+         "tipo": "phrase",
+         "en": "Swim, little fish",
+         "que": {
+          "gl": "Frase para relacionarse",
+          "es": "Frase para relacionarse"
+         },
+         "gl": "Nada, peixiño",
+         "es": "Nada, pececito",
+         "xesto": {
+          "gl": "Mover a man coma un peixe",
+          "es": "Mover la mano como un pez"
+         },
+         "lamina": "pal_swim_little_fish"
+        },
+        {
+         "tipo": "phrase",
+         "en": "Hello, sea!",
+         "que": {
+          "gl": "Frase para relacionarse",
+          "es": "Frase para relacionarse"
+         },
+         "gl": "Ola, mar!",
+         "es": "¡Hola, mar!",
+         "xesto": {
+          "gl": "Acenar ao mar",
+          "es": "Saludar al mar"
+         },
+         "lamina": "pal_hello_sea"
+        },
+        {
+         "tipo": "noun",
+         "en": "Little fish",
+         "que": {
+          "gl": "Nome: unha cousa",
+          "es": "Nombre: una cosa"
+         },
+         "gl": "Peixiño",
+         "es": "Pececito",
+         "xesto": {
+          "gl": "Mover a man coma un peixiño",
+          "es": "Mover la mano como un pececito"
+         },
+         "lamina": "pal_little_fish"
+        },
+        {
+         "tipo": "phrase",
+         "en": "Bye-bye, nursery!",
+         "que": {
+          "gl": "Frase para relacionarse",
+          "es": "Frase para relacionarse"
+         },
+         "gl": "Adeus, escola!",
+         "es": "¡Adiós, escuela!",
+         "xesto": {
+          "gl": "Acenar á porta da escola",
+          "es": "Saludar a la puerta de la escuela"
+         },
+         "lamina": "pal_bye_bye_nursery"
+        },
+        {
+         "tipo": "orde",
+         "en": "Go!",
+         "que": {
+          "gl": "Orde: unha acción",
+          "es": "Orden: una acción"
+         },
+         "xesto": {
+          "gl": "Botar a andar con forza, movendo os brazos.",
+          "es": "Echar a andar con fuerza, moviendo los brazos."
+         },
+         "gl": "ir, adiante",
+         "es": "ir, adelante",
+         "lamina": "pal_go"
+        },
+        {
+         "tipo": "noun",
+         "en": "Sun cream",
+         "que": {
+          "gl": "Nome: unha cousa",
+          "es": "Nombre: una cosa"
+         },
+         "gl": "Crema solar",
+         "es": "Crema solar",
+         "xesto": {
+          "gl": "Estender a crema no brazo",
+          "es": "Extender la crema en el brazo"
+         },
+         "lamina": "pal_sun_cream"
+        },
+        {
+         "tipo": "orde",
+         "en": "Roll! / Ball!",
+         "que": {
+          "gl": "Orde: unha acción",
+          "es": "Orden: una acción"
+         },
+         "xesto": {
+          "gl": "Facer rodar unha cousa polo chan coas dúas mans.",
+          "es": "Hacer rodar una cosa por el suelo con las dos manos."
+         },
+         "gl": "Rodar / Pelota",
+         "es": "Rodar / Pelota",
+         "lamina": "pal_roll_ball"
+        }
+       ],
        "novas": [
         {
          "tipo": "orde",
@@ -26871,8 +27467,8 @@
          }
         },
         "apoio": {
-         "gl": "«Flota ou afúndese?», semana 1, con calma: só «Hello!», co seu xesto.",
-         "es": "«¿Flota o se hunde?», semana 1, con calma: solo «Hello!», con su gesto.",
+         "gl": "«Flota ou afúndese?», semana 1, con calma: só «Hello!», co seu xesto, xunto a «Roll, roll, yellow circle!», que xa coñece.",
+         "es": "«¿Flota o se hunde?», semana 1, con calma: solo «Hello!», con su gesto, junto a «Roll, roll, yellow circle!», que ya conoce.",
          "en": "Hello!",
          "pezas": [
           {
@@ -26884,6 +27480,16 @@
             "es": "Traslado del peso de un pie al otro."
            },
            "lamina": "pal_hello"
+          },
+          {
+           "en": "Roll, roll, yellow circle!",
+           "gl": "Roda, roda, círculo amarelo!",
+           "es": "¡Rueda, rueda, círculo amarillo!",
+           "xesto": {
+            "gl": "Guiar a presión coas dúas mans para que sacuda o recipiente.",
+            "es": "Guiar la prensión con las dos manos para que sacuda el recipiente."
+           },
+           "lamina": "pal_roll_roll_yellow_circle"
           }
          ],
          "rutinas": {
@@ -52218,7 +52824,548 @@
          }
         ]
        },
-       "xaSabe": [],
+       "xaSabe": [
+        {
+         "tipo": "orde",
+         "en": "Touch the red circle!",
+         "que": {
+          "gl": "Orde: unha acción",
+          "es": "Orden: una acción"
+         },
+         "gl": "Toca o círculo vermello!",
+         "es": "¡Toca el círculo rojo!",
+         "xesto": {
+          "gl": "Localizar a peza no chan e pousar a punta do zapato enriba.",
+          "es": "Localizar la pieza en el suelo y posar la punta del zapato encima."
+         },
+         "lamina": "pal_find_a_red_circle_touch_it_with_your_foot"
+        },
+        {
+         "tipo": "verb",
+         "en": "Find the shape",
+         "que": {
+          "gl": "Verbo: unha acción",
+          "es": "Verbo: una acción"
+         },
+         "gl": "Buscar a forma",
+         "es": "Buscar la forma",
+         "xesto": {
+          "gl": "Buscar un círculo na sala",
+          "es": "Buscar un círculo en la sala"
+         },
+         "lamina": "pal_find_the_shape"
+        },
+        {
+         "tipo": "noun",
+         "en": "Oval",
+         "que": {
+          "gl": "Nome: unha cousa",
+          "es": "Nombre: una cosa"
+         },
+         "gl": "Óvalo",
+         "es": "Óvalo",
+         "xesto": {
+          "gl": "Debuxar un óvalo no aire",
+          "es": "Dibujar un óvalo en el aire"
+         },
+         "lamina": "pal_oval"
+        },
+        {
+         "tipo": "noun",
+         "en": "Red card",
+         "que": {
+          "gl": "Nome: unha cousa",
+          "es": "Nombre: una cosa"
+         },
+         "gl": "Tarxeta vermella",
+         "es": "Tarjeta roja",
+         "xesto": {
+          "gl": "Parar ao ver a tarxeta vermella",
+          "es": "Parar al ver la tarjeta roja"
+         },
+         "lamina": "pal_red_card"
+        },
+        {
+         "tipo": "complex",
+         "en": "A red tomato",
+         "que": {
+          "gl": "Expresión",
+          "es": "Expresión"
+         },
+         "gl": "Un tomate vermello",
+         "es": "Un tomate rojo",
+         "xesto": {
+          "gl": "Amosar o tomate",
+          "es": "Enseñar el tomate"
+         },
+         "lamina": "pal_red_tomato"
+        },
+        {
+         "tipo": "noun",
+         "en": "Pineapple",
+         "que": {
+          "gl": "Nome: unha cousa",
+          "es": "Nombre: una cosa"
+         },
+         "gl": "Ananás",
+         "es": "Piña",
+         "xesto": {
+          "gl": "Facer a coroa da piña coas mans",
+          "es": "Hacer la corona de la piña con las manos"
+         },
+         "lamina": "pal_pineapple"
+        },
+        {
+         "tipo": "complex",
+         "en": "Round and flat",
+         "que": {
+          "gl": "Expresión",
+          "es": "Expresión"
+         },
+         "gl": "Redondo e plano",
+         "es": "Redondo y plano",
+         "xesto": {
+          "gl": "Amosar unha bóla e unha táboa",
+          "es": "Enseñar una bola y una tabla"
+         },
+         "lamina": "pal_round_and_flat"
+        },
+        {
+         "tipo": "noun",
+         "en": "Cube",
+         "que": {
+          "gl": "Nome: unha cousa",
+          "es": "Nombre: una cosa"
+         },
+         "gl": "Cubo",
+         "es": "Cubo",
+         "xesto": {
+          "gl": "Facer un cubo coas mans",
+          "es": "Hacer un cubo con las manos"
+         },
+         "lamina": "pal_cube"
+        },
+        {
+         "tipo": "noun",
+         "en": "Sphere",
+         "que": {
+          "gl": "Nome: unha cousa",
+          "es": "Nombre: una cosa"
+         },
+         "gl": "Esfera",
+         "es": "Esfera",
+         "xesto": {
+          "gl": "Rodar unha bóla imaxinaria",
+          "es": "Rodar una bola imaginaria"
+         },
+         "lamina": "pal_sphere"
+        },
+        {
+         "tipo": "orde",
+         "en": "Tiny seeds, sleep!",
+         "que": {
+          "gl": "Orde: unha acción",
+          "es": "Orden: una acción"
+         },
+         "gl": "Sementiñas, a durmir!",
+         "es": "¡Semillitas, a dormir!",
+         "xesto": {
+          "gl": "Manterse encollidos e quietos no chan.",
+          "es": "Mantenerse encogidos y quietos en el suelo."
+         },
+         "lamina": "pal_tiny_seeds_ground"
+        },
+        {
+         "tipo": "orde",
+         "en": "Bloom! Big bright flowers!",
+         "que": {
+          "gl": "Orde: unha acción",
+          "es": "Orden: una acción"
+         },
+         "gl": "Florece! Flores grandes e brillantes!",
+         "es": "¡Florece! ¡Flores grandes y brillantes!",
+         "xesto": {
+          "gl": "Erguerse milímetro a milímetro ata as puntas dos pés cos brazos en abano.",
+          "es": "Erguirse milímetro a milímetro hasta las puntas de los pies con los brazos en abanico."
+         },
+         "lamina": "pal_bloom_big_bright_flowers"
+        },
+        {
+         "tipo": "noun",
+         "en": "Meadow",
+         "que": {
+          "gl": "Nome: unha cousa",
+          "es": "Nombre: una cosa"
+         },
+         "gl": "Prado",
+         "es": "Prado",
+         "xesto": {
+          "gl": "Abrir os brazos no prado",
+          "es": "Abrir los brazos en el prado"
+         },
+         "lamina": "pal_meadow"
+        },
+        {
+         "tipo": "verb",
+         "en": "Blow seeds",
+         "que": {
+          "gl": "Verbo: unha acción",
+          "es": "Verbo: una acción"
+         },
+         "gl": "Soprar sementes",
+         "es": "Soplar semillas",
+         "xesto": {
+          "gl": "Soprar un dente de león",
+          "es": "Soplar un diente de león"
+         },
+         "lamina": "pal_blow_seeds"
+        },
+        {
+         "tipo": "adjective",
+         "en": "Fluffy seeds",
+         "que": {
+          "gl": "Adxectivo: como é",
+          "es": "Adjetivo: cómo es"
+         },
+         "gl": "Sementes peludas",
+         "es": "Semillas algodonosas",
+         "xesto": {
+          "gl": "Soprar suave",
+          "es": "Soplar suave"
+         },
+         "lamina": "pal_fluffy_seeds"
+        },
+        {
+         "tipo": "noun",
+         "en": "Blackbird",
+         "que": {
+          "gl": "Nome: unha cousa",
+          "es": "Nombre: una cosa"
+         },
+         "gl": "Merlo",
+         "es": "Mirlo",
+         "xesto": {
+          "gl": "Asubiar coma un merlo",
+          "es": "Silbar como un mirlo"
+         },
+         "lamina": "pal_blackbird"
+        },
+        {
+         "tipo": "phrase",
+         "en": "Where's the sun?",
+         "que": {
+          "gl": "Frase para relacionarse",
+          "es": "Frase para relacionarse"
+         },
+         "gl": "Onde está o sol?",
+         "es": "¿Dónde está el sol?",
+         "xesto": {
+          "gl": "Buscar coa man na fronte",
+          "es": "Buscar con la mano en la frente"
+         },
+         "lamina": "pal_wheres_the_sun"
+        },
+        {
+         "tipo": "noun",
+         "en": "Whisper game",
+         "que": {
+          "gl": "Nome: unha cousa",
+          "es": "Nombre: una cosa"
+         },
+         "gl": "Xogo do segredo",
+         "es": "Juego del secreto",
+         "xesto": {
+          "gl": "Dicir algo á orella",
+          "es": "Decir algo al oído"
+         },
+         "lamina": "pal_whisper_game"
+        },
+        {
+         "tipo": "noun",
+         "en": "Library",
+         "que": {
+          "gl": "Nome: unha cousa",
+          "es": "Nombre: una cosa"
+         },
+         "gl": "Biblioteca",
+         "es": "Biblioteca",
+         "xesto": {
+          "gl": "Pasar un libro amodo",
+          "es": "Pasar un libro despacio"
+         },
+         "lamina": "pal_library"
+        },
+        {
+         "tipo": "orde",
+         "en": "Wash your face!",
+         "que": {
+          "gl": "Orde: unha acción",
+          "es": "Orden: una acción"
+         },
+         "gl": "Lava a cara!",
+         "es": "¡Lávate la cara!",
+         "xesto": {
+          "gl": "Fregar con suavidade meixelas e fronte coa toalla.",
+          "es": "Frotar con suavidad mejillas y frente con la toalla."
+         },
+         "lamina": "pal_wash_your_face"
+        },
+        {
+         "tipo": "orde",
+         "en": "Wash your belly!",
+         "que": {
+          "gl": "Orde: unha acción",
+          "es": "Orden: una acción"
+         },
+         "gl": "Lava a barriga!",
+         "es": "¡Lávate la barriga!",
+         "xesto": {
+          "gl": "Describir círculos sobre a camiseta á altura do embigo.",
+          "es": "Describir círculos sobre la camiseta a la altura del ombligo."
+         },
+         "lamina": "pal_wash_your_belly"
+        },
+        {
+         "tipo": "noun",
+         "en": "Soap pump",
+         "que": {
+          "gl": "Nome: unha cousa",
+          "es": "Nombre: una cosa"
+         },
+         "gl": "Dosificador de xabón",
+         "es": "Dosificador de jabón",
+         "xesto": {
+          "gl": "Premer o dosificador",
+          "es": "Apretar el dosificador"
+         },
+         "lamina": "pal_soap_pump"
+        },
+        {
+         "tipo": "orde",
+         "en": "Dry your toes!",
+         "que": {
+          "gl": "Orde: unha acción",
+          "es": "Orden: una acción"
+         },
+         "gl": "Seca os dedos dos pés!",
+         "es": "¡Sécate los dedos de los pies!",
+         "xesto": {
+          "gl": "Inclinar o tronco adiante para secar os zapatos sen dobrar os xeonllos.",
+          "es": "Inclinar el tronco adelante para secar los zapatos sin doblar las rodillas."
+         },
+         "lamina": "pal_dry_your_toes"
+        },
+        {
+         "tipo": "phrase",
+         "en": "Soap, rub, rinse",
+         "que": {
+          "gl": "Frase para relacionarse",
+          "es": "Frase para relacionarse"
+         },
+         "gl": "Xabón, fregar, aclarar",
+         "es": "Jabón, frotar, aclarar",
+         "xesto": {
+          "gl": "Facer os tres xestos",
+          "es": "Hacer los tres gestos"
+         },
+         "lamina": "pal_soap_rub_rinse"
+        },
+        {
+         "tipo": "noun",
+         "en": "Brush head",
+         "que": {
+          "gl": "Nome: unha cousa",
+          "es": "Nombre: una cosa"
+         },
+         "gl": "Cabeza do cepillo",
+         "es": "Cabeza del cepillo",
+         "xesto": {
+          "gl": "Amosar a cabeza do cepillo",
+          "es": "Enseñar la cabeza del cepillo"
+         },
+         "lamina": "pal_brush_head"
+        },
+        {
+         "tipo": "verb",
+         "en": "Shake dry",
+         "que": {
+          "gl": "Verbo: unha acción",
+          "es": "Verbo: una acción"
+         },
+         "gl": "Sacudir para secar",
+         "es": "Sacudir para secar",
+         "xesto": {
+          "gl": "Sacudir as mans tres veces",
+          "es": "Sacudir las manos tres veces"
+         },
+         "lamina": "pal_shake_dry"
+        },
+        {
+         "tipo": "noun",
+         "en": "Water table",
+         "que": {
+          "gl": "Nome: unha cousa",
+          "es": "Nombre: una cosa"
+         },
+         "gl": "Mesa de auga",
+         "es": "Mesa de agua",
+         "xesto": {
+          "gl": "Pousar as mans na mesa de auga",
+          "es": "Posar las manos en la mesa de agua"
+         },
+         "lamina": "pal_water_table"
+        },
+        {
+         "tipo": "noun",
+         "en": "Sieve",
+         "que": {
+          "gl": "Nome: unha cousa",
+          "es": "Nombre: una cosa"
+         },
+         "gl": "Coador",
+         "es": "Colador",
+         "xesto": {
+          "gl": "Deixar escorrer auga polo coador",
+          "es": "Dejar escurrir agua por el colador"
+         },
+         "lamina": "pal_sieve"
+        },
+        {
+         "tipo": "orde",
+         "en": "Gentle waves",
+         "que": {
+          "gl": "Orde: unha acción",
+          "es": "Orden: una acción"
+         },
+         "gl": "Ondas suaves",
+         "es": "Olas suaves",
+         "xesto": {
+          "gl": "Pequenos tremores de pulso.",
+          "es": "Pequeños temblores de muñeca."
+         },
+         "lamina": "pal_gentle_waves"
+        },
+        {
+         "tipo": "orde",
+         "en": "Giant waves!",
+         "que": {
+          "gl": "Orde: unha acción",
+          "es": "Orden: una acción"
+         },
+         "gl": "Ondas xigantes!",
+         "es": "¡Olas gigantes!",
+         "xesto": {
+          "gl": "Bater os brazos enteiros desde os ombreiros.",
+          "es": "Batir los brazos enteros desde los hombros."
+         },
+         "lamina": "pal_giant_waves"
+        },
+        {
+         "tipo": "noun",
+         "en": "Sailing boat",
+         "que": {
+          "gl": "Nome: unha cousa",
+          "es": "Nombre: una cosa"
+         },
+         "gl": "Veleiro",
+         "es": "Velero",
+         "xesto": {
+          "gl": "Facer unha vela coas mans",
+          "es": "Hacer una vela con las manos"
+         },
+         "lamina": "pal_sailing_boat"
+        },
+        {
+         "tipo": "orde",
+         "en": "Swim like a little fish!",
+         "que": {
+          "gl": "Orde: unha acción",
+          "es": "Orden: una acción"
+         },
+         "gl": "Nada coma un peixiño!",
+         "es": "¡Nada como un pececito!",
+         "xesto": {
+          "gl": "Dous nenos designados gatean rápido por debaixo da tea.",
+          "es": "Dos niños designados gatean rápido por debajo de la tela."
+         },
+         "lamina": "pal_little_fish_under_sea"
+        },
+        {
+         "tipo": "adjective",
+         "en": "Calm sea",
+         "que": {
+          "gl": "Adxectivo: como é",
+          "es": "Adjetivo: cómo es"
+         },
+         "gl": "Mar tranquilo",
+         "es": "Mar tranquilo",
+         "xesto": {
+          "gl": "Pasar a man plana",
+          "es": "Pasar la mano plana"
+         },
+         "lamina": "pal_calm_sea"
+        },
+        {
+         "tipo": "noun",
+         "en": "Sandpit",
+         "que": {
+          "gl": "Nome: unha cousa",
+          "es": "Nombre: una cosa"
+         },
+         "gl": "Areeiro",
+         "es": "Arenero",
+         "xesto": {
+          "gl": "Sentarse no areeiro",
+          "es": "Sentarse en el arenero"
+         },
+         "lamina": "pal_sandpit"
+        },
+        {
+         "tipo": "verb",
+         "en": "Wave goodbye",
+         "que": {
+          "gl": "Verbo: unha acción",
+          "es": "Verbo: una acción"
+         },
+         "gl": "Acenar para despedirse",
+         "es": "Decir adiós con la mano",
+         "xesto": {
+          "gl": "Acenar dende a porta",
+          "es": "Saludar desde la puerta"
+         },
+         "lamina": "pal_wave_goodbye"
+        },
+        {
+         "tipo": "noun",
+         "en": "Sea glass",
+         "que": {
+          "gl": "Nome: unha cousa",
+          "es": "Nombre: una cosa"
+         },
+         "gl": "Cristal de mar",
+         "es": "Cristal de mar",
+         "xesto": {
+          "gl": "Mirar un cristal á luz",
+          "es": "Mirar un cristal a la luz"
+         },
+         "lamina": "pal_sea_glass"
+        },
+        {
+         "tipo": "noun",
+         "en": "Driftwood",
+         "que": {
+          "gl": "Nome: unha cousa",
+          "es": "Nombre: una cosa"
+         },
+         "gl": "Madeira de deriva",
+         "es": "Madera a la deriva",
+         "xesto": {
+          "gl": "Coller un pau da praia",
+          "es": "Coger un palo de la playa"
+         },
+         "lamina": "pal_driftwood"
+        }
+       ],
        "novas": [
         {
          "tipo": "verb",
@@ -52575,8 +53722,8 @@
          }
         },
         "apoio": {
-         "gl": "«Que torre aguanta?», semana 1, con calma: só «Sit», co seu xesto.",
-         "es": "«¿Qué torre aguanta?», semana 1, con calma: solo «Sit», con su gesto.",
+         "gl": "«Que torre aguanta?», semana 1, con calma: só «Sit», co seu xesto, xunto a «Touch the red circle!», que xa coñece.",
+         "es": "«¿Qué torre aguanta?», semana 1, con calma: solo «Sit», con su gesto, junto a «Touch the red circle!», que ya conoce.",
          "en": "Sit",
          "pezas": [
           {
@@ -52588,6 +53735,16 @@
             "es": "Bajar despacio hasta sentarse en el suelo"
            },
            "lamina": "pal_sit"
+          },
+          {
+           "en": "Touch the red circle!",
+           "gl": "Toca o círculo vermello!",
+           "es": "¡Toca el círculo rojo!",
+           "xesto": {
+            "gl": "Localizar a peza no chan e pousar a punta do zapato enriba.",
+            "es": "Localizar la pieza en el suelo y posar la punta del zapato encima."
+           },
+           "lamina": "pal_find_a_red_circle_touch_it_with_your_foot"
           }
          ],
          "rutinas": {
@@ -79110,7 +80267,617 @@
          }
         ]
        },
-       "xaSabe": [],
+       "xaSabe": [
+        {
+         "tipo": "noun",
+         "en": "Seed",
+         "que": {
+          "gl": "Nome: unha cousa",
+          "es": "Nombre: una cosa"
+         },
+         "gl": "Semente",
+         "es": "Semilla",
+         "xesto": {
+          "gl": "Pechar o puño coma unha semente pechada",
+          "es": "Cerrar el puño como una semilla cerrada"
+         },
+         "lamina": "pal_seed"
+        },
+        {
+         "tipo": "palabra",
+         "en": "juice",
+         "que": {
+          "gl": "Palabra nova",
+          "es": "Palabra nueva"
+         },
+         "gl": "zume",
+         "es": "zumo",
+         "lamina": "pal_juice"
+        },
+        {
+         "tipo": "noun",
+         "en": "Brush",
+         "que": {
+          "gl": "Nome: unha cousa",
+          "es": "Nombre: una cosa"
+         },
+         "gl": "Pincel",
+         "es": "Pincel",
+         "xesto": {
+          "gl": "Mover un pincel imaxinario de arriba abaixo",
+          "es": "Mover un pincel imaginario de arriba abajo"
+         },
+         "lamina": "pal_brush"
+        },
+        {
+         "tipo": "verb",
+         "en": "Dig",
+         "que": {
+          "gl": "Verbo: unha acción",
+          "es": "Verbo: una acción"
+         },
+         "gl": "Cavar",
+         "es": "Cavar",
+         "xesto": {
+          "gl": "Cavar no chan coas mans",
+          "es": "Cavar en el suelo con las manos"
+         },
+         "lamina": "pal_dig"
+        },
+        {
+         "tipo": "noun",
+         "en": "Soil",
+         "que": {
+          "gl": "Nome: unha cousa",
+          "es": "Nombre: una cosa"
+         },
+         "gl": "Terra",
+         "es": "Tierra",
+         "xesto": {
+          "gl": "Tocar o chan e refregar as mans coma con terra",
+          "es": "Tocar el suelo y frotar las manos como con tierra"
+         },
+         "lamina": "pal_soil"
+        },
+        {
+         "tipo": "orde",
+         "en": "Curl up like a seed",
+         "que": {
+          "gl": "Orde: unha acción",
+          "es": "Orden: una acción"
+         },
+         "gl": "Encóllete coma unha semente",
+         "es": "Acurrúcate como una semilla",
+         "xesto": {
+          "gl": "Flexión completa no chan, cabeza recollida entre os xeonllos.",
+          "es": "Flexión completa en el suelo, cabeza recogida entre las rodillas."
+         },
+         "lamina": "pal_curl_up_small_like_a_tiny_seed"
+        },
+        {
+         "tipo": "orde",
+         "en": "Grow tall into a sunflower",
+         "que": {
+          "gl": "Orde: unha acción",
+          "es": "Orden: una acción"
+         },
+         "gl": "Medra alto ata ser un xirasol",
+         "es": "Crece alto hasta ser un girasol",
+         "xesto": {
+          "gl": "Extensión axial progresiva ata quedar de pé cos brazos arriba.",
+          "es": "Extensión axial progresiva hasta quedar de pie con los brazos arriba."
+         },
+         "lamina": "pal_grow_tall_into_a_sunflower"
+        },
+        {
+         "tipo": "orde",
+         "en": "Dig the soil with your hands",
+         "que": {
+          "gl": "Orde: unha acción",
+          "es": "Orden: una acción"
+         },
+         "gl": "Cava a terra coas mans",
+         "es": "Cava la tierra con las manos",
+         "xesto": {
+          "gl": "Mímica de cavar coas dúas mans sobre a alfombra ou a terra.",
+          "es": "Mímica de cavar con las dos manos sobre la alfombra o la tierra."
+         },
+         "lamina": "pal_dig_the_soil_with_your_hands"
+        },
+        {
+         "tipo": "phrase",
+         "en": "Yes, please",
+         "que": {
+          "gl": "Frase para relacionarse",
+          "es": "Frase para relacionarse"
+         },
+         "gl": "Si, por favor",
+         "es": "Sí, por favor",
+         "xesto": {
+          "gl": "Asentir coa cabeza e estender a man",
+          "es": "Asentir con la cabeza y extender la mano"
+         },
+         "lamina": "pal_yes_please"
+        },
+        {
+         "tipo": "phrase",
+         "en": "No, thank you",
+         "que": {
+          "gl": "Frase para relacionarse",
+          "es": "Frase para relacionarse"
+         },
+         "gl": "Non, grazas",
+         "es": "No, gracias",
+         "xesto": {
+          "gl": "Negar coa cabeza amodo e sorrir",
+          "es": "Negar con la cabeza despacio y sonreír"
+         },
+         "lamina": "pal_no_thank_you"
+        },
+        {
+         "tipo": "adjective",
+         "en": "delicious",
+         "que": {
+          "gl": "Adxectivo: como é",
+          "es": "Adjetivo: cómo es"
+         },
+         "gl": "delicioso",
+         "es": "delicioso",
+         "lamina": "pal_delicious"
+        },
+        {
+         "tipo": "noun",
+         "en": "Horse",
+         "que": {
+          "gl": "Nome: unha cousa",
+          "es": "Nombre: una cosa"
+         },
+         "gl": "Cabalo",
+         "es": "Caballo",
+         "xesto": {
+          "gl": "Trotar no sitio suxeitando unhas rendas imaxinarias",
+          "es": "Trotar en el sitio sujetando unas riendas imaginarias"
+         },
+         "lamina": "pal_pal_horse"
+        },
+        {
+         "tipo": "noun",
+         "en": "Cow",
+         "que": {
+          "gl": "Nome: unha cousa",
+          "es": "Nombre: una cosa"
+         },
+         "gl": "Vaca",
+         "es": "Vaca",
+         "xesto": {
+          "gl": "Facer cornos pequenos cos índices e camiñar amodo",
+          "es": "Hacer cuernos pequeños con los índices y caminar despacio"
+         },
+         "lamina": "pal_pal_cow"
+        },
+        {
+         "tipo": "noun",
+         "en": "Sheep",
+         "que": {
+          "gl": "Nome: unha cousa",
+          "es": "Nombre: una cosa"
+         },
+         "gl": "Ovella",
+         "es": "Oveja",
+         "xesto": {
+          "gl": "Facer rizos no aire arredor da cabeza",
+          "es": "Hacer rizos en el aire alrededor de la cabeza"
+         },
+         "lamina": "pal_pal_sheep"
+        },
+        {
+         "tipo": "verb",
+         "en": "Gallop",
+         "que": {
+          "gl": "Verbo: unha acción",
+          "es": "Verbo: una acción"
+         },
+         "gl": "Galopar",
+         "es": "Galopar",
+         "xesto": {
+          "gl": "Galopar no sitio cunha perna diante",
+          "es": "Galopar en el sitio con una pierna delante"
+         },
+         "lamina": "pal_gallop"
+        },
+        {
+         "tipo": "verb",
+         "en": "Walk",
+         "que": {
+          "gl": "Verbo: unha acción",
+          "es": "Verbo: una acción"
+         },
+         "gl": "Camiñar",
+         "es": "Caminar",
+         "xesto": {
+          "gl": "Camiñar amodo en círculo",
+          "es": "Caminar despacio en círculo"
+         },
+         "lamina": "pal_walk"
+        },
+        {
+         "tipo": "orde",
+         "en": "Gallop like a horse",
+         "que": {
+          "gl": "Orde: unha acción",
+          "es": "Orden: una acción"
+         },
+         "gl": "Galopa coma un cabalo",
+         "es": "Galopa como un caballo",
+         "xesto": {
+          "gl": "Galope rítmico con cambio de apoio e mans nas rendas imaxinarias.",
+          "es": "Galope rítmico con cambio de apoyo y manos en las riendas imaginarias."
+         },
+         "lamina": "pal_gallop_like_a_horse_in_the_meadow"
+        },
+        {
+         "tipo": "adjective",
+         "en": "hungry",
+         "que": {
+          "gl": "Adxectivo: como é",
+          "es": "Adjetivo: cómo es"
+         },
+         "gl": "con fame",
+         "es": "con hambre",
+         "lamina": "pal_hungry"
+        },
+        {
+         "tipo": "orde",
+         "en": "Walk heavily like a big cow",
+         "que": {
+          "gl": "Orde: unha acción",
+          "es": "Orden: una acción"
+         },
+         "gl": "Camiña pesado coma unha vaca grande",
+         "es": "Camina pesado como una vaca grande",
+         "xesto": {
+          "gl": "Marcha cuadrúpeda lenta cos apoios ben marcados.",
+          "es": "Marcha cuadrúpeda lenta con los apoyos bien marcados."
+         },
+         "lamina": "pal_walk_heavily_like_a_big_cow"
+        },
+        {
+         "tipo": "orde",
+         "en": "Graze like a gentle sheep",
+         "que": {
+          "gl": "Orde: unha acción",
+          "es": "Orden: una acción"
+         },
+         "gl": "Pace coma unha ovella mansa",
+         "es": "Pasta como una oveja mansa",
+         "xesto": {
+          "gl": "Agachada suave e xesto de pacer coa cabeza preto do chan.",
+          "es": "Agachada suave y gesto de pacer con la cabeza cerca del suelo."
+         },
+         "lamina": "pal_graze_like_a_gentle_sheep"
+        },
+        {
+         "tipo": "adjective",
+         "en": "empty",
+         "que": {
+          "gl": "Adxectivo: como é",
+          "es": "Adjetivo: cómo es"
+         },
+         "gl": "baleiro",
+         "es": "vacío",
+         "lamina": "pal_empty"
+        },
+        {
+         "tipo": "formula",
+         "en": "You are welcome",
+         "que": {
+          "gl": "Frase para relacionarse",
+          "es": "Frase para relacionarse"
+         },
+         "gl": "De nada",
+         "es": "De nada",
+         "lamina": "pal_you_are_welcome"
+        },
+        {
+         "tipo": "phrase",
+         "en": "Clap your hands",
+         "que": {
+          "gl": "Frase para relacionarse",
+          "es": "Frase para relacionarse"
+         },
+         "gl": "Bate as palmas",
+         "es": "Da palmas",
+         "xesto": {
+          "gl": "Bater as palmas tres veces ao escoitar a orde",
+          "es": "Dar tres palmadas al oír la orden"
+         },
+         "lamina": "pal_clap_your_hands"
+        },
+        {
+         "tipo": "adjective",
+         "en": "High",
+         "que": {
+          "gl": "Adxectivo: como é",
+          "es": "Adjetivo: cómo es"
+         },
+         "gl": "Agudo, aguda",
+         "es": "Agudo, aguda",
+         "xesto": {
+          "gl": "Subir a man ao cantar unha nota aguda",
+          "es": "Subir la mano al cantar una nota aguda"
+         },
+         "lamina": "pal_high"
+        },
+        {
+         "tipo": "adjective",
+         "en": "full",
+         "que": {
+          "gl": "Adxectivo: como é",
+          "es": "Adjetivo: cómo es"
+         },
+         "gl": "cheo",
+         "es": "lleno",
+         "lamina": "pal_full"
+        },
+        {
+         "tipo": "adjective",
+         "en": "Low",
+         "que": {
+          "gl": "Adxectivo: como é",
+          "es": "Adjetivo: cómo es"
+         },
+         "gl": "Grave",
+         "es": "Grave",
+         "xesto": {
+          "gl": "Baixar a man ao cantar unha nota grave",
+          "es": "Bajar la mano al cantar una nota grave"
+         },
+         "lamina": "pal_low"
+        },
+        {
+         "tipo": "orde",
+         "en": "Clap the rhythm on your chest",
+         "que": {
+          "gl": "Orde: unha acción",
+          "es": "Orden: una acción"
+         },
+         "gl": "Marca o ritmo con palmadas no peito",
+         "es": "Marca el ritmo con palmadas en el pecho",
+         "xesto": {
+          "gl": "Palmadas sobre o peito marcando o pulso regular.",
+          "es": "Palmadas sobre el pecho marcando el pulso regular."
+         },
+         "lamina": "pal_clap_the_rhythm_on_your_chest"
+        },
+        {
+         "tipo": "verb",
+         "en": "pour",
+         "que": {
+          "gl": "Verbo: unha acción",
+          "es": "Verbo: una acción"
+         },
+         "gl": "verter",
+         "es": "verter",
+         "lamina": "pal_pour"
+        },
+        {
+         "tipo": "noun",
+         "en": "Friend",
+         "que": {
+          "gl": "Nome: unha cousa",
+          "es": "Nombre: una cosa"
+         },
+         "gl": "Amigo, amiga",
+         "es": "Amigo, amiga",
+         "xesto": {
+          "gl": "Dar a man á persoa que está ao lado",
+          "es": "Dar la mano a la persona que está al lado"
+         },
+         "lamina": "pal_friend"
+        },
+        {
+         "tipo": "orde",
+         "en": "Clap with your friend",
+         "que": {
+          "gl": "Orde: unha acción",
+          "es": "Orden: una acción"
+         },
+         "gl": "Aplaude co teu amigo",
+         "es": "Aplaude con tu amigo",
+         "xesto": {
+          "gl": "Palmada cruzada coa man do compañeiro pasando a liña media.",
+          "es": "Palmada cruzada con la mano del compañero pasando la línea media."
+         },
+         "lamina": "pal_cross_your_hands_and_clap_with_your_friend"
+        },
+        {
+         "tipo": "orde",
+         "en": "Clap high, clap low",
+         "que": {
+          "gl": "Orde: unha acción",
+          "es": "Orden: una acción"
+         },
+         "gl": "Palmas arriba, palmas abaixo",
+         "es": "Palmas arriba, palmas abajo",
+         "xesto": {
+          "gl": "Palmada arriba da cabeza e palmada abaixo preto do chan.",
+          "es": "Palmada encima de la cabeza y palmada abajo cerca del suelo."
+         },
+         "lamina": "pal_clap_high_clap_low"
+        },
+        {
+         "tipo": "estructura",
+         "en": "More juice in my cup.",
+         "que": {
+          "gl": "Estrutura de frase",
+          "es": "Estructura de frase"
+         },
+         "gl": "Máis zume na miña cunca.",
+         "es": "Más zumo en mi taza.",
+         "lamina": "pal_more_juice_in_my_cup"
+        },
+        {
+         "tipo": "estructura",
+         "en": "A full plate on the table.",
+         "que": {
+          "gl": "Estrutura de frase",
+          "es": "Estructura de frase"
+         },
+         "gl": "Un prato cheo enriba da mesa.",
+         "es": "Un plato lleno encima de la mesa.",
+         "lamina": "pal_a_full_plate_on_the_table"
+        },
+        {
+         "tipo": "verb",
+         "en": "Row",
+         "que": {
+          "gl": "Verbo: unha acción",
+          "es": "Verbo: una acción"
+         },
+         "gl": "Remar",
+         "es": "Remar",
+         "xesto": {
+          "gl": "Remar sentados cun remo imaxinario",
+          "es": "Remar sentados con un remo imaginario"
+         },
+         "lamina": "pal_row"
+        },
+        {
+         "tipo": "noun",
+         "en": "Waves",
+         "que": {
+          "gl": "Nome: unha cousa",
+          "es": "Nombre: una cosa"
+         },
+         "gl": "Ondas",
+         "es": "Olas",
+         "xesto": {
+          "gl": "Subir e baixar as mans coma ondas",
+          "es": "Subir y bajar las manos como olas"
+         },
+         "lamina": "pal_waves"
+        },
+        {
+         "tipo": "noun",
+         "en": "Sea",
+         "que": {
+          "gl": "Nome: unha cousa",
+          "es": "Nombre: una cosa"
+         },
+         "gl": "Mar",
+         "es": "Mar",
+         "xesto": {
+          "gl": "Mover os brazos en ondas longas diante do corpo",
+          "es": "Mover los brazos en ondas largas delante del cuerpo"
+         },
+         "lamina": "pal_sea"
+        },
+        {
+         "tipo": "noun",
+         "en": "Shell",
+         "que": {
+          "gl": "Nome: unha cousa",
+          "es": "Nombre: una cosa"
+         },
+         "gl": "Cuncha",
+         "es": "Concha",
+         "xesto": {
+          "gl": "Pousar unha cuncha imaxinaria na orella e escoitar",
+          "es": "Poner una concha imaginaria en la oreja y escuchar"
+         },
+         "lamina": "pal_pal_shell"
+        },
+        {
+         "tipo": "orde",
+         "en": "Row your boat!",
+         "que": {
+          "gl": "Orde: unha acción",
+          "es": "Orden: una acción"
+         },
+         "gl": "Rema na túa barca!",
+         "es": "¡Rema en tu barca!",
+         "xesto": {
+          "gl": "Flexo-extensión alternada do tronco en parella, collidos das mans.",
+          "es": "Flexo-extensión alternada del tronco en pareja, cogidos de las manos."
+         },
+         "lamina": "pal_row_boat_waves"
+        },
+        {
+         "tipo": "noun",
+         "en": "Sand",
+         "que": {
+          "gl": "Nome: unha cousa",
+          "es": "Nombre: una cosa"
+         },
+         "gl": "Area",
+         "es": "Arena",
+         "xesto": {
+          "gl": "Pisar amodo coma sobre area quente",
+          "es": "Pisar despacio como sobre arena caliente"
+         },
+         "lamina": "pal_sand"
+        },
+        {
+         "tipo": "orde",
+         "en": "Swim fast like a fish",
+         "que": {
+          "gl": "Orde: unha acción",
+          "es": "Orden: una acción"
+         },
+         "gl": "Nada rápido coma un peixe",
+         "es": "Nada rápido como un pez",
+         "xesto": {
+          "gl": "Desprazamento polo chan con brazada alternada de peito.",
+          "es": "Desplazamiento por el suelo con brazada alternada de pecho."
+         },
+         "lamina": "pal_swim_fast_fish"
+        },
+        {
+         "tipo": "orde",
+         "en": "Dive and find a shell",
+         "que": {
+          "gl": "Orde: unha acción",
+          "es": "Orden: una acción"
+         },
+         "gl": "Mergúllate e atopa unha cuncha",
+         "es": "Sumérgete y encuentra una concha",
+         "xesto": {
+          "gl": "Inmersión simulada e recollida dunha cuncha do chan.",
+          "es": "Inmersión simulada y recogida de una concha del suelo."
+         },
+         "lamina": "pal_dive_white_shell"
+        },
+        {
+         "tipo": "noun",
+         "en": "Crab",
+         "que": {
+          "gl": "Nome: unha cousa",
+          "es": "Nombre: una cosa"
+         },
+         "gl": "Cangrexo",
+         "es": "Cangrejo",
+         "xesto": {
+          "gl": "Abrir e pechar os dedos coma pinzas",
+          "es": "Abrir y cerrar los dedos como pinzas"
+         },
+         "lamina": "pal_crab"
+        },
+        {
+         "tipo": "phrase",
+         "en": "Goodbye",
+         "que": {
+          "gl": "Frase para relacionarse",
+          "es": "Frase para relacionarse"
+         },
+         "gl": "Adeus",
+         "es": "Adiós",
+         "xesto": {
+          "gl": "Acenar amodo coa man mentres se camiña cara atrás",
+          "es": "Decir adiós despacio con la mano mientras se camina hacia atrás"
+         },
+         "lamina": "pal_goodbye"
+        }
+       ],
        "novas": [
         {
          "tipo": "noun",
@@ -79534,8 +81301,8 @@
          }
         },
         "apoio": {
-         "gl": "«Que venda absorbe?», semana 1, con calma: só «Backpack», co seu xesto.",
-         "es": "«¿Qué venda absorbe?», semana 1, con calma: solo «Backpack», con su gesto.",
+         "gl": "«Que venda absorbe?», semana 1, con calma: só «Backpack», co seu xesto, xunto a «Seed», que xa coñece.",
+         "es": "«¿Qué venda absorbe?», semana 1, con calma: solo «Backpack», con su gesto, junto a «Seed», que ya conoce.",
          "en": "Backpack",
          "pezas": [
           {
@@ -79547,6 +81314,16 @@
             "es": "Ponerse una mochila imaginaria a la espalda"
            },
            "lamina": "pal_backpack"
+          },
+          {
+           "en": "Seed",
+           "gl": "Semente",
+           "es": "Semilla",
+           "xesto": {
+            "gl": "Pechar o puño coma unha semente pechada",
+            "es": "Cerrar el puño como una semilla cerrada"
+           },
+           "lamina": "pal_seed"
           }
          ],
          "rutinas": {
@@ -107554,7 +109331,688 @@
          }
         ]
        },
-       "xaSabe": [],
+       "xaSabe": [
+        {
+         "tipo": "noun",
+         "en": "Bee",
+         "que": {
+          "gl": "Nome: unha cousa",
+          "es": "Nombre: una cosa"
+         },
+         "gl": "Abella",
+         "es": "Abeja",
+         "xesto": {
+          "gl": "Mover os brazos pegados ao corpo moi rápido",
+          "es": "Mover los brazos pegados al cuerpo muy rápido"
+         },
+         "lamina": "pal_bee"
+        },
+        {
+         "tipo": "verb",
+         "en": "Fly",
+         "que": {
+          "gl": "Verbo: unha acción",
+          "es": "Verbo: una acción"
+         },
+         "gl": "Voar",
+         "es": "Volar",
+         "xesto": {
+          "gl": "Voar pola aula cos brazos abertos, amodo",
+          "es": "Volar por el aula con los brazos abiertos, despacio"
+         },
+         "lamina": "pal_fly_action"
+        },
+        {
+         "tipo": "noun",
+         "en": "Flower",
+         "que": {
+          "gl": "Nome: unha cousa",
+          "es": "Nombre: una cosa"
+         },
+         "gl": "Flor",
+         "es": "Flor",
+         "xesto": {
+          "gl": "Xuntar os pulsos e abrir os dedos coma pétalos",
+          "es": "Juntar las muñecas y abrir los dedos como pétalos"
+         },
+         "lamina": "pal_flower"
+        },
+        {
+         "tipo": "verb",
+         "en": "Land",
+         "que": {
+          "gl": "Verbo: unha acción",
+          "es": "Verbo: una acción"
+         },
+         "gl": "Pousarse",
+         "es": "Posarse",
+         "xesto": {
+          "gl": "Baixar os brazos amodo e pousarse no chan",
+          "es": "Bajar los brazos despacio y posarse en el suelo"
+         },
+         "lamina": "pal_land_action"
+        },
+        {
+         "tipo": "adjective",
+         "en": "Red",
+         "que": {
+          "gl": "Adxectivo: como é",
+          "es": "Adjetivo: cómo es"
+         },
+         "gl": "Vermello, vermella",
+         "es": "Rojo, roja",
+         "xesto": {
+          "gl": "Sinalar algo vermello na aula",
+          "es": "Señalar algo rojo en el aula"
+         },
+         "lamina": "vermello"
+        },
+        {
+         "tipo": "adjective",
+         "en": "Sweeter",
+         "que": {
+          "gl": "Adxectivo: como é",
+          "es": "Adjetivo: cómo es"
+         },
+         "gl": "Máis doce",
+         "es": "Más dulce",
+         "xesto": {
+          "gl": "Sorrir máis",
+          "es": "Sonreír más"
+         },
+         "lamina": "pal_sweeter"
+        },
+        {
+         "tipo": "formula",
+         "en": "It is raining hard",
+         "que": {
+          "gl": "Frase para relacionarse",
+          "es": "Frase para relacionarse"
+         },
+         "gl": "Chove con forza",
+         "es": "Llueve con fuerza",
+         "lamina": "pal_raining_hard"
+        },
+        {
+         "tipo": "orde",
+         "en": "Fly like a busy bee",
+         "que": {
+          "gl": "Orde: unha acción",
+          "es": "Orden: una acción"
+         },
+         "gl": "Voa coma unha abella traballadora",
+         "es": "Vuela como una abeja trabajadora",
+         "xesto": {
+          "gl": "Desprazamento rápido cos brazos en batido curto e continuo.",
+          "es": "Desplazamiento rápido con los brazos en batido corto y continuo."
+         },
+         "lamina": "pal_fly_busy_bee"
+        },
+        {
+         "tipo": "orde",
+         "en": "Find the red flower and land softly",
+         "que": {
+          "gl": "Orde: unha acción",
+          "es": "Orden: una acción"
+         },
+         "gl": "Busca a flor vermella e pousa amodo",
+         "es": "Busca la flor roja y posa despacio",
+         "xesto": {
+          "gl": "Aterraxe suave sobre a marca vermella, axeonllado.",
+          "es": "Aterrizaje suave sobre la marca roja, arrodillado."
+         },
+         "lamina": "pal_red_flower_land_softly"
+        },
+        {
+         "tipo": "orde",
+         "en": "Sleep in the flower",
+         "que": {
+          "gl": "Orde: unha acción",
+          "es": "Orden: una acción"
+         },
+         "gl": "Durme na flor",
+         "es": "Duerme en la flor",
+         "xesto": {
+          "gl": "Quietude total sobre a marca ata escoitar a orde de espertar.",
+          "es": "Quietud total sobre la marca hasta escuchar la orden de despertar."
+         },
+         "lamina": "pal_sleep_flower_sun_wakes"
+        },
+        {
+         "tipo": "noun",
+         "en": "hat",
+         "que": {
+          "gl": "Nome: unha cousa",
+          "es": "Nombre: una cosa"
+         },
+         "gl": "sombreiro",
+         "es": "sombrero",
+         "lamina": "pal_hat"
+        },
+        {
+         "tipo": "adjective",
+         "en": "windy",
+         "que": {
+          "gl": "Adxectivo: como é",
+          "es": "Adjetivo: cómo es"
+         },
+         "gl": "con vento",
+         "es": "con viento",
+         "lamina": "pal_windy"
+        },
+        {
+         "tipo": "formula",
+         "en": "Come under my umbrella",
+         "que": {
+          "gl": "Frase para relacionarse",
+          "es": "Frase para relacionarse"
+         },
+         "gl": "Ven debaixo do meu paraugas",
+         "es": "Ven debajo de mi paraguas",
+         "lamina": "pal_come_under_umbrella"
+        },
+        {
+         "tipo": "noun",
+         "en": "Seabird",
+         "que": {
+          "gl": "Nome: unha cousa",
+          "es": "Nombre: una cosa"
+         },
+         "gl": "Ave mariña",
+         "es": "Ave marina",
+         "xesto": {
+          "gl": "Planear cos brazos abertos",
+          "es": "Planear con los brazos abiertos"
+         },
+         "lamina": "gaivota"
+        },
+        {
+         "tipo": "noun",
+         "en": "Cliff",
+         "que": {
+          "gl": "Nome: unha cousa",
+          "es": "Nombre: una cosa"
+         },
+         "gl": "Cantil",
+         "es": "Acantilado",
+         "xesto": {
+          "gl": "Poñer a man vertical",
+          "es": "Poner la mano vertical"
+         },
+         "lamina": "pal_cliff"
+        },
+        {
+         "tipo": "adjective",
+         "en": "Calm",
+         "que": {
+          "gl": "Adxectivo: como é",
+          "es": "Adjetivo: cómo es"
+         },
+         "gl": "Tranquilo, tranquila",
+         "es": "Tranquilo, tranquila",
+         "xesto": {
+          "gl": "Respirar fondo e deixar caer os ombros",
+          "es": "Respirar hondo y dejar caer los hombros"
+         },
+         "lamina": "pal_calm"
+        },
+        {
+         "tipo": "adjective",
+         "en": "stormy",
+         "que": {
+          "gl": "Adxectivo: como é",
+          "es": "Adjetivo: cómo es"
+         },
+         "gl": "de treboada",
+         "es": "de tormenta",
+         "lamina": "pal_stormy"
+        },
+        {
+         "tipo": "noun",
+         "en": "Gull chick",
+         "que": {
+          "gl": "Nome: unha cousa",
+          "es": "Nombre: una cosa"
+         },
+         "gl": "Pito de gaivota",
+         "es": "Pollo de gaviota",
+         "xesto": {
+          "gl": "Encollerse pequeno",
+          "es": "Acurrucarse pequeño"
+         },
+         "lamina": "pal_gull_chick"
+        },
+        {
+         "tipo": "orde",
+         "en": "Walk calmly like a sheep",
+         "que": {
+          "gl": "Orde: unha acción",
+          "es": "Orden: una acción"
+         },
+         "gl": "Camiña tranquilo coma unha ovella",
+         "es": "Camina tranquilo como una oveja",
+         "xesto": {
+          "gl": "Marcha tranquila e dispersa polo espazo, sen présa.",
+          "es": "Marcha tranquila y dispersa por el espacio, sin prisa."
+         },
+         "lamina": "pal_walk_calmly_sheep"
+        },
+        {
+         "tipo": "orde",
+         "en": "The hungry wolf wakes up: FREEZE!",
+         "que": {
+          "gl": "Orde: unha acción",
+          "es": "Orden: una acción"
+         },
+         "gl": "O lobo con fame esperta: estátuas!",
+         "es": "El lobo hambriento se despierta: ¡estatuas!",
+         "xesto": {
+          "gl": "Conxelación inmediata na postura en que se estaba.",
+          "es": "Congelación inmediata en la postura en que se estaba."
+         },
+         "lamina": "pal_hungry_wolf_wakes_freeze"
+        },
+        {
+         "tipo": "orde",
+         "en": "The wolf sleeps again: tiptoe away",
+         "que": {
+          "gl": "Orde: unha acción",
+          "es": "Orden: una acción"
+         },
+         "gl": "O lobo volve durmir: vaite de puntillas",
+         "es": "El lobo vuelve a dormir: vete de puntillas",
+         "xesto": {
+          "gl": "Marcha silenciosa en puntas afastándose do centro.",
+          "es": "Marcha silenciosa de puntillas alejándose del centro."
+         },
+         "lamina": "pal_wolf_sleeps_tiptoe_away"
+        },
+        {
+         "tipo": "adjective",
+         "en": "muddy",
+         "que": {
+          "gl": "Adxectivo: como é",
+          "es": "Adjetivo: cómo es"
+         },
+         "gl": "enlamado",
+         "es": "embarrado",
+         "lamina": "pal_muddy"
+        },
+        {
+         "tipo": "formula",
+         "en": "Are you ready?",
+         "que": {
+          "gl": "Frase para relacionarse",
+          "es": "Frase para relacionarse"
+         },
+         "gl": "Preparados?",
+         "es": "¿Preparados?",
+         "lamina": "pal_are_you_ready"
+        },
+        {
+         "tipo": "verb",
+         "en": "Pull",
+         "que": {
+          "gl": "Verbo: unha acción",
+          "es": "Verbo: una acción"
+         },
+         "gl": "Tirar de",
+         "es": "Tirar de",
+         "xesto": {
+          "gl": "Tirar dunha corda imaxinaria cara a un mesmo",
+          "es": "Tirar de una cuerda imaginaria hacia uno mismo"
+         },
+         "lamina": "pal_pull"
+        },
+        {
+         "tipo": "verb",
+         "en": "Help",
+         "que": {
+          "gl": "Verbo: unha acción",
+          "es": "Verbo: una acción"
+         },
+         "gl": "Axudar",
+         "es": "Ayudar",
+         "xesto": {
+          "gl": "Levantar entre dous un obxecto imaxinario pesado",
+          "es": "Levantar entre dos un objeto imaginario pesado"
+         },
+         "lamina": "pal_help"
+        },
+        {
+         "tipo": "verb",
+         "en": "Whisper",
+         "que": {
+          "gl": "Verbo: unha acción",
+          "es": "Verbo: una acción"
+         },
+         "gl": "Musitar",
+         "es": "Susurrar",
+         "xesto": {
+          "gl": "Achegarse á orella de quen está ao lado e falar moi baixiño, coa boca á vista",
+          "es": "Acercarse a la oreja de quien está al lado y hablar muy bajito, con la boca a la vista"
+         },
+         "lamina": "pal_whisper"
+        },
+        {
+         "tipo": "adjective",
+         "en": "Secret",
+         "que": {
+          "gl": "Adxectivo: como é",
+          "es": "Adjetivo: cómo es"
+         },
+         "gl": "Secreto, secreta",
+         "es": "Secreto, secreta",
+         "xesto": {
+          "gl": "Levar o dedo aos beizos e chiscar un ollo",
+          "es": "Llevarse el dedo a los labios y guiñar un ojo"
+         },
+         "lamina": "pal_secret"
+        },
+        {
+         "tipo": "adjective",
+         "en": "splashy",
+         "que": {
+          "gl": "Adxectivo: como é",
+          "es": "Adjetivo: cómo es"
+         },
+         "gl": "que salpica",
+         "es": "que salpica",
+         "lamina": "pal_splashy"
+        },
+        {
+         "tipo": "complex",
+         "en": "All together",
+         "que": {
+          "gl": "Expresión",
+          "es": "Expresión"
+         },
+         "gl": "Todos xuntos",
+         "es": "Todos juntos",
+         "xesto": {
+          "gl": "Dar as mans en círculo e subilas á vez",
+          "es": "Darse las manos en círculo y subirlas a la vez"
+         },
+         "lamina": "pal_all_together"
+        },
+        {
+         "tipo": "adjective",
+         "en": "Fair",
+         "que": {
+          "gl": "Adxectivo: como é",
+          "es": "Adjetivo: cómo es"
+         },
+         "gl": "Xusto",
+         "es": "Justo",
+         "xesto": {
+          "gl": "Repartir en partes iguais",
+          "es": "Repartir en partes iguales"
+         },
+         "lamina": "pal_fair"
+        },
+        {
+         "tipo": "adjective",
+         "en": "Sturdy",
+         "que": {
+          "gl": "Adxectivo: como é",
+          "es": "Adjetivo: cómo es"
+         },
+         "gl": "Resistente",
+         "es": "Resistente",
+         "xesto": {
+          "gl": "Empurrar a torre sen que caia",
+          "es": "Empujar la torre sin que caiga"
+         },
+         "lamina": "pal_sturdy"
+        },
+        {
+         "tipo": "adjective",
+         "en": "Brave and kind",
+         "que": {
+          "gl": "Adxectivo: como é",
+          "es": "Adjetivo: cómo es"
+         },
+         "gl": "Valente e amable",
+         "es": "Valiente y amable",
+         "xesto": {
+          "gl": "Poñer o puño e despois a man aberta",
+          "es": "Poner el puño y luego la mano abierta"
+         },
+         "lamina": "pal_brave_and_kind"
+        },
+        {
+         "tipo": "verb",
+         "en": "protect",
+         "que": {
+          "gl": "Verbo: unha acción",
+          "es": "Verbo: una acción"
+         },
+         "gl": "protexer",
+         "es": "proteger",
+         "lamina": "pal_protect"
+        },
+        {
+         "tipo": "orde",
+         "en": "Pull the rope together: one, two, three!",
+         "que": {
+          "gl": "Orde: unha acción",
+          "es": "Orden: una acción"
+         },
+         "gl": "Tirade xuntos da corda: un, dous, tres!",
+         "es": "¡Tirad juntos de la cuerda: uno, dos, tres!",
+         "xesto": {
+          "gl": "Tracción cooperativa da corda coordinada ao conteo.",
+          "es": "Tracción cooperativa de la cuerda coordinada al conteo."
+         },
+         "lamina": "pal_pull_rope_together"
+        },
+        {
+         "tipo": "orde",
+         "en": "Call your friend: come and help us!",
+         "que": {
+          "gl": "Orde: unha acción",
+          "es": "Orden: una acción"
+         },
+         "gl": "Chama ao teu amigo: ven axudarnos!",
+         "es": "Llama a tu amigo: ¡ven a ayudarnos!",
+         "xesto": {
+          "gl": "Xesto amplo de chamada e incorporación dun novo neno á corda.",
+          "es": "Gesto amplio de llamada e incorporación de un nuevo niño a la cuerda."
+         },
+         "lamina": "pal_call_friend_help"
+        },
+        {
+         "tipo": "orde",
+         "en": "Whisper the secret word to your friend",
+         "que": {
+          "gl": "Orde: unha acción",
+          "es": "Orden: una acción"
+         },
+         "gl": "Dille ao oído ao teu amigo a palabra secreta",
+         "es": "Dile al oído a tu amigo la palabra secreta",
+         "xesto": {
+          "gl": "Murmurio ao oído do compañeiro sen que o escoite o resto.",
+          "es": "Susurro al oído del compañero sin que lo escuche el resto."
+         },
+         "lamina": "pal_whisper_secret_friend"
+        },
+        {
+         "tipo": "estructura",
+         "en": "When it rains, we need boots.",
+         "que": {
+          "gl": "Estrutura de frase",
+          "es": "Estructura de frase"
+         },
+         "gl": "Cando chove, necesitamos botas.",
+         "es": "Cuando llueve, necesitamos botas.",
+         "lamina": "pal_when_rains_need_boots"
+        },
+        {
+         "tipo": "verb",
+         "en": "Evaporate",
+         "que": {
+          "gl": "Verbo: unha acción",
+          "es": "Verbo: una acción"
+         },
+         "gl": "Evaporarse",
+         "es": "Evaporarse",
+         "xesto": {
+          "gl": "Subir amodo coma vapor",
+          "es": "Subir despacio como vapor"
+         },
+         "lamina": "pal_evaporate"
+        },
+        {
+         "tipo": "noun",
+         "en": "Mussel raft",
+         "que": {
+          "gl": "Nome: unha cousa",
+          "es": "Nombre: una cosa"
+         },
+         "gl": "Batea",
+         "es": "Batea",
+         "xesto": {
+          "gl": "Facer un cadrado plano coas mans",
+          "es": "Hacer un cuadrado plano con las manos"
+         },
+         "lamina": "pal_mussel_raft"
+        },
+        {
+         "tipo": "noun",
+         "en": "Rope line",
+         "que": {
+          "gl": "Nome: unha cousa",
+          "es": "Nombre: una cosa"
+         },
+         "gl": "Corda de cultivo",
+         "es": "Cuerda de cultivo",
+         "xesto": {
+          "gl": "Baixar unha corda imaxinaria",
+          "es": "Bajar una cuerda imaginaria"
+         },
+         "lamina": "pal_rope_line"
+        },
+        {
+         "tipo": "noun",
+         "en": "Fishing boat",
+         "que": {
+          "gl": "Nome: unha cousa",
+          "es": "Nombre: una cosa"
+         },
+         "gl": "Barco pesqueiro",
+         "es": "Barco pesquero",
+         "xesto": {
+          "gl": "Remar con forza",
+          "es": "Remar con fuerza"
+         },
+         "lamina": "pal_fishing_boat"
+        },
+        {
+         "tipo": "adjective",
+         "en": "Rushing",
+         "que": {
+          "gl": "Adxectivo: como é",
+          "es": "Adjetivo: cómo es"
+         },
+         "gl": "Rápido e forte",
+         "es": "Rápido y fuerte",
+         "xesto": {
+          "gl": "Mover as mans moi rápido",
+          "es": "Mover las manos muy rápido"
+         },
+         "lamina": "pal_rushing"
+        },
+        {
+         "tipo": "adjective",
+         "en": "Deep blue",
+         "que": {
+          "gl": "Adxectivo: como é",
+          "es": "Adjetivo: cómo es"
+         },
+         "gl": "Azul fondo",
+         "es": "Azul profundo",
+         "xesto": {
+          "gl": "Baixar amodo",
+          "es": "Bajar despacio"
+         },
+         "lamina": "pal_deep_blue"
+        },
+        {
+         "tipo": "noun",
+         "en": "Photo book",
+         "que": {
+          "gl": "Nome: unha cousa",
+          "es": "Nombre: una cosa"
+         },
+         "gl": "Libro de fotos",
+         "es": "Libro de fotos",
+         "xesto": {
+          "gl": "Pasar as páxinas",
+          "es": "Pasar las páginas"
+         },
+         "lamina": "pal_photo_book"
+        },
+        {
+         "tipo": "orde",
+         "en": "Calm sea: move the cloth very slowly",
+         "que": {
+          "gl": "Orde: unha acción",
+          "es": "Orden: una acción"
+         },
+         "gl": "Mar en calma: move o pano moi amodo",
+         "es": "Mar en calma: mueve la tela muy despacio",
+         "xesto": {
+          "gl": "Ondulación lenta e sostida da tea azul con ambas as mans.",
+          "es": "Ondulación lenta y sostenida de la tela azul con ambas manos."
+         },
+         "lamina": "pal_calm_sea_cloth"
+        },
+        {
+         "tipo": "orde",
+         "en": "Storm! Shake the sea!",
+         "que": {
+          "gl": "Orde: unha acción",
+          "es": "Orden: una acción"
+         },
+         "gl": "Treboada! Axita o mar!",
+         "es": "¡Tormenta! ¡Agita el mar!",
+         "xesto": {
+          "gl": "Axitación enérxica da tea con movemento amplo de brazos.",
+          "es": "Agitación enérgica de la tela con movimiento amplio de brazos."
+         },
+         "lamina": "pal_storm_shake_sea"
+        },
+        {
+         "tipo": "orde",
+         "en": "The sea sleeps: lie still",
+         "que": {
+          "gl": "Orde: unha acción",
+          "es": "Orden: una acción"
+         },
+         "gl": "O mar dorme: deitado e quieto",
+         "es": "El mar duerme: tumbado y quieto",
+         "xesto": {
+          "gl": "Depositar a tea no chan e deitarse inmóbil debaixo ou ao lado.",
+          "es": "Depositar la tela en el suelo y tumbarse inmóvil debajo o al lado."
+         },
+         "lamina": "pal_sea_sleeps_lie_still"
+        },
+        {
+         "tipo": "phrase",
+         "en": "Thank you for everything",
+         "que": {
+          "gl": "Frase para relacionarse",
+          "es": "Frase para relacionarse"
+         },
+         "gl": "Grazas por todo",
+         "es": "Gracias por todo",
+         "xesto": {
+          "gl": "Pousar a man no peito",
+          "es": "Poner la mano en el pecho"
+         },
+         "lamina": "pal_thank_you_everything"
+        }
+       ],
        "novas": [
         {
          "tipo": "verb",
@@ -107911,8 +110369,8 @@
          }
         },
         "apoio": {
-         "gl": "«Cores que nacen», semana 1, con calma: só «Hang», co seu xesto.",
-         "es": "«Colores que nacen», semana 1, con calma: solo «Hang», con su gesto.",
+         "gl": "«Cores que nacen», semana 1, con calma: só «Hang», co seu xesto, xunto a «Bee», que xa coñece.",
+         "es": "«Colores que nacen», semana 1, con calma: solo «Hang», con su gesto, junto a «Bee», que ya conoce.",
          "en": "Hang",
          "pezas": [
           {
@@ -107924,6 +110382,16 @@
             "es": "Colgar una estrella imaginaria en lo alto"
            },
            "lamina": "pal_hang"
+          },
+          {
+           "en": "Bee",
+           "gl": "Abella",
+           "es": "Abeja",
+           "xesto": {
+            "gl": "Mover os brazos pegados ao corpo moi rápido",
+            "es": "Mover los brazos pegados al cuerpo muy rápido"
+           },
+           "lamina": "pal_bee"
           }
          ],
          "rutinas": {

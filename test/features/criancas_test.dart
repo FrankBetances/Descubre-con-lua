@@ -2,15 +2,19 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:descubre_con_lua/core/audio/widgets/boton_escuchar.dart';
 import 'package:descubre_con_lua/core/localization/app_language.dart';
 import 'package:descubre_con_lua/core/localization/localized_string.dart';
 import 'package:descubre_con_lua/core/storage/local_store.dart';
 import 'package:descubre_con_lua/core/theme/app_theme.dart';
 import 'package:descubre_con_lua/data/models/leccion_model.dart';
+import 'package:descubre_con_lua/features/criancas/axuste_semanal.dart';
 import 'package:descubre_con_lua/features/criancas/criancas_store.dart';
 import 'package:descubre_con_lua/features/criancas/marcar_palabras_screen.dart';
 import 'package:descubre_con_lua/features/criancas/xogo_lua.dart';
+import 'package:descubre_con_lua/features/docentes/widgets/hoxe_na_aula.dart';
 import 'package:descubre_con_lua/features/familias/portal_familias_screen.dart';
+import 'package:descubre_con_lua/features/familias/widgets/learn_duolingo.dart';
 
 import '../helpers/pasarela.dart';
 
@@ -66,7 +70,7 @@ void main() {
   }
 
   testWidgets(
-    'a primeira vez pide nome, idade e curso con Lúa, pregunta se hai outro neno, e a segunda xa non',
+    'a primeira vez pide nome, idade e curso con Lúa; a segunda xa non',
     (tester) async {
       final d = dir();
       final s1 = storeEnDisco(d);
@@ -193,7 +197,7 @@ void main() {
   });
 
   testWidgets(
-    'a folla do chip xa non cambia o curso dun toque; só en Editar con confirmación',
+    'varios nenos: cambiar de neno, de curso e borrar',
     (tester) async {
       final store = CriancasStore.enMemoria(const [
         Crianza(id: 'c1', nome: 'Uxía', idade: 1, curso: 'curso_0_2'),
@@ -996,6 +1000,214 @@ void main() {
 
       await store.borrar('c1');
       expect(store.escoitasDe('c1', 'Leaf'), 0);
+    },
+  );
+
+  testWidgets(
+    'Paso 1: o mesmo neno con capa mais e con capa apoio ve pezas distintas en Hoxe',
+    (tester) async {
+      final leccions = await Leccions.cargar();
+      final toca = DiaQueToca.para(agora: martes);
+      final lec =
+          leccions.da('curso_3_4', toca.dia.mesCalendario, toca.dia.semana)!.$2;
+      final prev = CriancasStore.semanaAnterior(
+        'curso_3_4',
+        toca.dia.mesCalendario,
+        toca.dia.semana,
+      )!;
+      final maisPezas = lec.capas['mais']!.pezas;
+      final apoioPezas = lec.capas['apoio']!.pezas;
+      expect(maisPezas, isNotEmpty);
+      expect(apoioPezas, isNotEmpty);
+      expect(
+        {for (final pz in maisPezas) pz.en},
+        isNot(equals({for (final pz in apoioPezas) pz.en})),
+      );
+
+      final store = CriancasStore.enMemoria(const [
+        Crianza(id: 'c1', nome: 'Uxía', idade: 3, curso: 'curso_3_4', cupo: 3),
+      ]);
+      for (final w in ['hello_prev', 'water_prev', 'leaf_prev']) {
+        await store.observar(
+          'c1',
+          prev,
+          w,
+          Observacion.di,
+          agora: martes.subtract(const Duration(days: 7)),
+        );
+      }
+      expect(
+        store
+            .calcularAxustePara(
+              'c1',
+              mesCalendario: toca.dia.mesCalendario,
+              semana: toca.dia.semana,
+              agora: martes,
+            )
+            .capa,
+        CapaSemana.mais,
+      );
+
+      await abrir(tester, store);
+      expect(find.byKey(const ValueKey('capa_semanal_mais')), findsOneWidget);
+      for (final pz in maisPezas) {
+        expect(
+          find.byKey(ValueKey('capa_peza_mais_${pz.en}')),
+          findsOneWidget,
+        );
+      }
+
+      // Mesmo neno con >6 tarxetas vencidas pasa a capa apoio e mostra as súas pezas.
+      final antes = martes.subtract(const Duration(days: 10));
+      for (var i = 0; i < 7; i++) {
+        await store.observar(
+          'c1',
+          prev,
+          'vencida_extra_$i',
+          Observacion.aindaNon,
+          agora: antes,
+        );
+      }
+      expect(
+        store
+            .calcularAxustePara(
+              'c1',
+              mesCalendario: toca.dia.mesCalendario,
+              semana: toca.dia.semana,
+              agora: martes,
+            )
+            .capa,
+        CapaSemana.apoio,
+      );
+
+      await abrir(tester, store);
+      expect(find.byKey(const ValueKey('capa_semanal_apoio')), findsOneWidget);
+      expect(find.byKey(const ValueKey('capa_semanal_mais')), findsNothing);
+      for (final pz in apoioPezas) {
+        expect(
+          find.byKey(ValueKey('capa_peza_apoio_${pz.en}')),
+          findsOneWidget,
+        );
+      }
+    },
+  );
+
+  testWidgets(
+    'Paso 2: dous nenos no mesmo curso e semana con cupo 2 e 5 ven 2 e 5 palabras en Hoxe e na lección',
+    (tester) async {
+      final leccions = await Leccions.cargar();
+      final toca = DiaQueToca.para(agora: martes);
+      final lec =
+          leccions.da('curso_3_4', toca.dia.mesCalendario, toca.dia.semana)!.$2;
+      final prev = CriancasStore.semanaAnterior(
+        'curso_3_4',
+        toca.dia.mesCalendario,
+        toca.dia.semana,
+      )!;
+      final esperadas2 = lec.novasConCupo(2);
+      final esperadas5 = lec.novasConCupo(5);
+      expect(esperadas2.length, 2);
+      expect(esperadas5.length, 5);
+
+      final store = CriancasStore.enMemoria(const [
+        Crianza(id: 'c1', nome: 'Noa', idade: 3, curso: 'curso_3_4', cupo: 2),
+        Crianza(id: 'c2', nome: 'Leo', idade: 3, curso: 'curso_3_4', cupo: 4),
+      ]);
+      for (final w in ['hello_prev', 'water_prev', 'leaf_prev']) {
+        await store.observar(
+          'c2',
+          prev,
+          w,
+          Observacion.di,
+          agora: martes.subtract(const Duration(days: 7)),
+        );
+      }
+      expect(
+        store
+            .calcularAxustePara(
+              'c1',
+              mesCalendario: toca.dia.mesCalendario,
+              semana: toca.dia.semana,
+              agora: martes,
+            )
+            .cupoNovas,
+        2,
+      );
+      expect(
+        store
+            .calcularAxustePara(
+              'c2',
+              mesCalendario: toca.dia.mesCalendario,
+              semana: toca.dia.semana,
+              agora: martes,
+            )
+            .cupoNovas,
+        5,
+      );
+
+      // 1) Nena con cupo = 2.
+      await abrir(tester, store);
+      await tester.scrollUntilVisible(
+        find.byKey(const Key('leccion_novas')),
+        300,
+        scrollable: find.byType(Scrollable).first,
+      );
+      final chip2 = find.descendant(
+        of: find.byKey(const Key('leccion_novas')),
+        matching: find.byType(BotonEscuchar),
+      );
+      expect(chip2, findsNWidgets(2));
+      expect(
+        pasosDoDia(lec, toca.dia.dia, AppLanguage.gl, cupo: 2)
+            .where((s) => s.peza != null && s.peza!.tipo != 'gramatica'),
+        hasLength(2),
+      );
+
+      // Abrir a lección do día dende Hoxe e verificar os 2 pasos de palabra.
+      await tester.ensureVisible(find.byKey(const Key('learn_empezar')));
+      await Pasarela.asentar(tester);
+      await tester.tap(find.byKey(const Key('learn_empezar')));
+      await Pasarela.asentar(tester);
+      // Paso 0 = resumo do día; logo 2 palabras antes da frase de gramática.
+      final vistas2 = <String>[];
+      await tester.tap(find.byKey(const Key('leccion_continuar')));
+      await Pasarela.asentar(tester);
+      vistas2.add(tester
+          .widget<BotonEscuchar>(find.descendant(
+            of: find.byKey(const Key('leccion_paso')),
+            matching: find.byType(BotonEscuchar),
+          ))
+          .texto);
+      await tester.tap(find.byKey(const Key('leccion_continuar')));
+      await Pasarela.asentar(tester);
+      vistas2.add(tester
+          .widget<BotonEscuchar>(find.descendant(
+            of: find.byKey(const Key('leccion_paso')),
+            matching: find.byType(BotonEscuchar),
+          ))
+          .texto);
+      expect(vistas2, [for (final x in esperadas2) x.en]);
+      await tester.tap(find.byKey(const Key('leccion_pechar')));
+      await Pasarela.asentar(tester);
+
+      // 2) Cambiar ao neno con cupo = 5 na mesma semana e curso.
+      await store.escoller('c2');
+      await abrir(tester, store);
+      await tester.scrollUntilVisible(
+        find.byKey(const Key('leccion_novas')),
+        300,
+        scrollable: find.byType(Scrollable).first,
+      );
+      final chip5 = find.descendant(
+        of: find.byKey(const Key('leccion_novas')),
+        matching: find.byType(BotonEscuchar),
+      );
+      expect(chip5, findsNWidgets(5));
+      expect(
+        pasosDoDia(lec, toca.dia.dia, AppLanguage.gl, cupo: 5)
+            .where((s) => s.peza != null && s.peza!.tipo != 'gramatica'),
+        hasLength(5),
+      );
     },
   );
 }
