@@ -126,6 +126,10 @@ run_gate "home guide of every month is regenerated from its sources" \
 # toca el plan sin regenerarlas, la lección enseñaría otra unidad.
 run_gate "weekly lessons are regenerated from the plan" \
   python3 tools/gen_leccions.py --check
+run_gate "sibling challenges are regenerated (M3)" \
+  python3 tools/gen_reto_irmans.py --check
+run_gate "every week in 5 ages has 3 STEAM layers, 6 unique M2 routines and sibling challenges" \
+  python3 tools/check_capas_semana.py
 # La gramática del curso (Frank, 28/10/2026): los 20 puntos de A1-A2 en las
 # cinco edades, sin bajar de una edad a la siguiente.
 run_gate "course grammar covers A1-A2 across the five ages" \
