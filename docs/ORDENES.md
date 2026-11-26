@@ -576,7 +576,7 @@ Reparto: todo lo hace Antigravity (P10.0–P10.9); Claude Code solo valida e int
 - [x] Revisado por Claude Code y mergeado en main con CI en verde y los audios generados · evidencia: docs/ORDENES.md (PR #66, merge 2c5bd6fa en main; run 45051487520 de Gates en verde sobre 4bce917f, con los audios, y run 45053829115 en verde sobre 2c5bd6fa)
 
 ## O-20261126-1 · Auditoría forense y plan: varios niños por familia, nivel por edad, prueba de nivel y repaso
-Estado: abierta
+Estado: cumplida
 > ayudame a realizar un plan de mejoras , primero necesito que tenga registro multiples, porque una misma familia puede tener multiples niños en cursos distintos, ademas tenemos muchos problemas con los niveles ajustados a la edad,  primero que nada la edad de 0-2 años deberia centrarse en temas muy sencillos como adjetivos, sustantivos, onomatopeyas, aprender a reconocer tareas o eventos, o incluso aprender las series mas básicas, siempre con muchas repeticiones, luego en los niños mayores, tenemos el problema de que no sabemos que nivel tienen, creo que deberían hacer un pequeño examen básico para identificar el nivel y que se ajuste a su conocimiento, y luego las repeticiones de las lecciones anteriores son muy muy deficientes, y entre semana y semana el nivel del contenido tambien esta desajustado, primero realiza una auditoria forense, analiza como podemos hacer las mejoras y plantea un plan completo de mejoras
 Fuente: assets/content/leccions/leccions.json, assets/content/acopros/proxectos_0_2.json, assets/content/gramatica/gramatica.json, tools/gen_leccions.py, lib/features/criancas/ y lib/core/fsrs_service.dart, medidos con tools/auditoria_niveles.py
 Reparto: Claude Code audita y propone; la ejecución, por fases, con las decisiones D1-D5 de Frank.
@@ -597,7 +597,7 @@ Decisión: los siete criterios de O-20261126-1 y O-20261126-2 quedan aprobados c
 - [x] De una semana a la siguiente el nivel sube sin saltos y la gramática no pasa del techo de cada edad, en las cinco edades (tools/auditoria_niveles.py --gate) · evidencia: tools/auditoria_niveles.py (0 saltos de frase y 0 meses por encima del techo en las cinco edades; P11.5 y P11.7)
 
 ## O-20261126-2 · Ajuste dinámico: el material crece con lo que el niño sabe
-Estado: abierta
+Estado: cumplida
 > Podrías agregar alguna forma que sea dinámico, que, dependiendo de los conocimientos que vaya adquiriendo de los resultados del test de entrada, la cantidad de material al que accede, sea distinto y ajustado a sus capacidades
 Fuente: docs/AUDITORIA_NIVELES_Y_REPASO.md (H3 y H4: las marcas «aún no / la entiende / la dice» de lib/features/criancas/criancas_store.dart y el FSRS de lib/core/fsrs_service.dart); no copia de otro producto
 Reparto: Claude Code lo diseña en el plan; se programa en la fase F3b con las decisiones D1, D5 y D6 de Frank.
@@ -620,7 +620,7 @@ Reparto: todo lo hace Antigravity (P11.0–P11.11) en la rama antigravity/nivele
 - [x] Revisado por Claude Code (auditoria_niveles --gate y check_capas_semana a cero, gates.sh y flutter test en verde, tres semanas al azar por edad, capturas gl y es miradas) y mergeado en main con CI en verde y los audios generados · evidencia: tools/auditoria_niveles.py (--gate a 0) y tools/check_capas_semana.py (200 semanas); 15 semanas al azar, tres por edad, revisadas el 26/11/2026: todas con su STEAM, palabras nuevas, palabras que vuelven y frase del experimento, sin fallo de contenido; 130 capturas gl y es (P8.41); mergeado en main (#71 a #76); run 617 de Gates en main (b2fca253) en verde, con gates.sh y flutter test completos; voces en verde (Generate Voice Assets 143)
 
 ## O-20261126-4 · Prompt completo con las mejoras M1-M5, guardado ya
-Estado: abierta
+Estado: cumplida
 > Pero me cago en todo, dame el prom completo dámelo todo esto no puede ser dámelo ya
 > No me des las cosas a medias dámelo con las propuestas que me acabas de dar arreglado todo
 > Me acabas de dar una serie de propuestas dámelo completo como debe ser para poder copiar y pegar no me pongas lo mismo otra vez ni dar vueltas ni hacer perder el tiempo
