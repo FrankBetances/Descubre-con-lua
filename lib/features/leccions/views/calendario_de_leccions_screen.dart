@@ -243,9 +243,10 @@ class _Semana extends StatelessWidget {
   Widget build(BuildContext context) {
     final isGl = language == AppLanguage.gl;
     final acento = context.acento;
-    final palabras = (leccion.repaso ? leccion.repasa : leccion.novas)
-        .map((p) => p.en)
-        .join(' · ');
+    final palabras =
+        (leccion.repaso ? [...leccion.novas, ...leccion.repasa] : leccion.novas)
+            .map((p) => p.en)
+            .join(' · ');
     return Padding(
       padding: const EdgeInsets.only(bottom: 10),
       child: Material(

@@ -362,9 +362,12 @@ tres ficheros:
   los números del repaso espaciado y dos fechas *sin hora*;
 - **solo en casa**, de cada niño el nombre o apodo que escribe la familia, el
   mes y año de nacimiento (sin día), la edad, el curso y el año de revisión de
-  septiembre, lo que la persona adulta marca de sus palabras por semana
-  (sin fecha ni hora) y sus premios con Lúa. Se borra desde la app o al
-  desinstalarla. En el aula no se registra a ningún niño.
+  septiembre, las rutinas del hogar elegidas, cuántas semanas lleva con marcas
+  (sin fecha ni hora), cuántas veces ha oído cada palabra (sin hora), lo que
+  la persona adulta marca de sus palabras por semana (sin fecha ni hora), su
+  ficha de repaso espaciado por palabra (fechas en día, sin hora) y sus
+  premios con Lúa. Se borra desde la app o al desinstalarla. En el aula no se
+  registra a ningún niño.
 
 Nada de esto puede salir del aparato. Lo guardan tres gates:
 `test/features/premios_test.dart`, `test/core/progreso_privacidad_test.dart` y

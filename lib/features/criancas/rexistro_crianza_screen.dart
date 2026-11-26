@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../../core/brand/lua_pixel.dart';
 import '../../core/localization/app_language.dart';
 import '../../core/theme/app_theme.dart';
+import '../docentes/widgets/hoxe_na_aula.dart' show DiaQueToca;
 import '../familias/nomes_familias.dart';
 import 'criancas_store.dart';
 
@@ -51,6 +52,9 @@ class _RexistroCrianzaScreenState extends State<RexistroCrianzaScreen> {
   late int? _mesNacemento = widget.crianza?.mesNacemento;
   late int? _anoNacemento = widget.crianza?.anoNacemento;
   late String? _curso = widget.crianza?.curso ?? widget.cursoInicial;
+  late List<String> _rutinas = List.of(
+    widget.crianza?.rutinas ?? const ['bano'],
+  );
   bool _gardando = false;
   bool _preguntandoOutro = false;
   Crianza? _ultimoGardado;
@@ -173,15 +177,23 @@ class _RexistroCrianzaScreenState extends State<RexistroCrianzaScreen> {
         curso: _curso,
         mesNacemento: _mesNacemento,
         anoNacemento: _anoNacemento,
+        rutinas: _rutinas,
       );
       c = store.criancas.firstWhere((x) => x.id == orixe.id);
     } else {
+      final toca = DiaQueToca.para(agora: _agora);
       c = await store.engadir(
         nome: _nome.text,
         idade: _idade!,
         curso: _curso!,
         mesNacemento: _mesNacemento,
         anoNacemento: _anoNacemento,
+        rutinas: _rutinas,
+        semanaAlta: CriancasStore.semana(
+          _curso!,
+          toca.dia.mesCalendario,
+          toca.dia.semana,
+        ),
       );
     }
     if (!mounted) return;
@@ -207,6 +219,7 @@ class _RexistroCrianzaScreenState extends State<RexistroCrianzaScreen> {
       _mesNacemento = null;
       _anoNacemento = null;
       _curso = null;
+      _rutinas = ['bano'];
       _preguntandoOutro = false;
       _gardando = false;
     });
@@ -561,6 +574,58 @@ class _RexistroCrianzaScreenState extends State<RexistroCrianzaScreen> {
                       color: _curso == id ? Colors.white : AppTheme.textPrimary,
                     ),
                     onSelected: (_) => setState(() => _curso = id),
+                  ),
+              ],
+            ),
+            etiqueta(isGl ? 'Rutinas da casa' : 'Rutinas de casa'),
+            Padding(
+              padding: const EdgeInsets.only(bottom: 8),
+              child: Text(
+                isGl
+                    ? 'Elixe unha ou dúas rutinas onde dicir as palabras:'
+                    : 'Elige una o dos rutinas donde decir las palabras:',
+                style: const TextStyle(
+                  fontSize: 14,
+                  color: AppTheme.textSecondary,
+                ),
+              ),
+            ),
+            Wrap(
+              spacing: 8,
+              runSpacing: 8,
+              children: [
+                for (final (clave, gl, es) in const [
+                  ('bano', 'Baño', 'Baño'),
+                  ('comida', 'Comida', 'Comida'),
+                  ('coche', 'Coche', 'Coche'),
+                  ('vestirse', 'Vestirse', 'Vestirse'),
+                  ('durmir', 'Ir a durmir', 'Ir a dormir'),
+                  ('parque', 'Parque', 'Parque'),
+                ])
+                  FilterChip(
+                    key: ValueKey('rexistro_rutina_$clave'),
+                    label: Text(isGl ? gl : es),
+                    selected: _rutinas.contains(clave),
+                    showCheckmark: false,
+                    selectedColor: acento,
+                    labelStyle: TextStyle(
+                      fontWeight: FontWeight.w700,
+                      color: _rutinas.contains(clave)
+                          ? Colors.white
+                          : AppTheme.textPrimary,
+                    ),
+                    onSelected: (_) => setState(() {
+                      if (_rutinas.contains(clave)) {
+                        if (_rutinas.length > 1) {
+                          _rutinas.remove(clave);
+                        }
+                      } else {
+                        if (_rutinas.length >= 2) {
+                          _rutinas.removeAt(0);
+                        }
+                        _rutinas.add(clave);
+                      }
+                    }),
                   ),
               ],
             ),

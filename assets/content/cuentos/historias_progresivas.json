@@ -29549,31 +29549,6 @@
           "Funny",
           "Wave and smile"
         ]
-      },
-      {
-        "numero": 7,
-        "tituloPagina": {
-          "gl": "E ademais",
-          "es": "Y además"
-        },
-        "lamina": "conto_cores_3",
-        "extra": true,
-        "texto": {
-          "gl": "Pola mañá, Olivia di: “Good morning!”. Nico préstalle o carriño e ela responde: “Thank you”.",
-          "es": "Por la mañana, Olivia dice: “Good morning!”. Nico le presta el carrito y ella responde: “Thank you”."
-        },
-        "palabras": [
-          "Good morning!",
-          "Thank you"
-        ],
-        "vocabularioClave": [
-          "Bos días!",
-          "Grazas"
-        ],
-        "vocabularioClaveEs": [
-          "¡Buenos días!",
-          "Gracias"
-        ]
       }
     ],
     "preguntasGraduadas": [
@@ -32034,6 +32009,31 @@
           "Calienta las manos y frótalas rápido",
           "firme"
         ]
+      },
+      {
+        "numero": 8,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_follas_3",
+        "extra": true,
+        "texto": {
+          "gl": "A avoa dálle pan a Uxío: “Here you are!”. El ensínalle o prato: “Look at this!”.",
+          "es": "La abuela le da pan a Uxío: “Here you are!”. Él le enseña el plato: “Look at this!”."
+        },
+        "palabras": [
+          "Here you are!",
+          "Look at this!"
+        ],
+        "vocabularioClave": [
+          "Aquí tes!",
+          "Mira isto!"
+        ],
+        "vocabularioClaveEs": [
+          "¡Toma!",
+          "¡Mira esto!"
+        ]
       }
     ],
     "preguntasGraduadas": [
@@ -32360,31 +32360,6 @@
           "More, please",
           "Ripe",
           "Crunchy"
-        ]
-      },
-      {
-        "numero": 7,
-        "tituloPagina": {
-          "gl": "E ademais",
-          "es": "Y además"
-        },
-        "lamina": "conto_follas_3",
-        "extra": true,
-        "texto": {
-          "gl": "A avoa dálle pan a Uxío: “Here you are!”. El ensínalle o prato: “Look at this!”.",
-          "es": "La abuela le da pan a Uxío: “Here you are!”. Él le enseña el plato: “Look at this!”."
-        },
-        "palabras": [
-          "Here you are!",
-          "Look at this!"
-        ],
-        "vocabularioClave": [
-          "Aquí tes!",
-          "Mira isto!"
-        ],
-        "vocabularioClaveEs": [
-          "¡Toma!",
-          "¡Mira esto!"
         ]
       }
     ],
@@ -38021,22 +37996,16 @@
         "lamina": "conto_cores_3",
         "extra": true,
         "texto": {
-          "gl": "Na merenda, Vera di: “Yes, please” ás mazás e “No, thank you” ao queixo. Está delicioso, “delicious”.",
-          "es": "En la merienda, Vera dice: “Yes, please” a las manzanas y “No, thank you” al queso. Está delicioso, “delicious”."
+          "gl": "Está delicioso, “delicious”.",
+          "es": "Está delicioso, “delicious”."
         },
         "palabras": [
-          "Yes, please",
-          "No, thank you",
           "delicious"
         ],
         "vocabularioClave": [
-          "Si, por favor",
-          "Non, grazas",
           "delicioso"
         ],
         "vocabularioClaveEs": [
-          "Sí, por favor",
-          "No, gracias",
           "delicioso"
         ]
       }
@@ -43838,23 +43807,17 @@
         "lamina": "conto_corpo_2",
         "extra": true,
         "texto": {
-          "gl": "Na fila das botas, Bruno espera: “Wait your turn, please”. O pai axúdao: “Put your feet into the boots.” Un pé dóelle un pouco, “hurt”, e respira coma o oso ata que pasa.",
-          "es": "En la fila de las botas, Bruno espera: “Wait your turn, please”. Su padre lo ayuda: “Put your feet into the boots.” Un pie le duele un poco, “hurt”, y respira como el oso hasta que se le pasa."
+          "gl": "Bruno pon os seus zapatos de choiva: “Put your feet into the boots.”",
+          "es": "Bruno se pone sus botas de lluvia: “Put your feet into the boots.”"
         },
         "palabras": [
-          "Wait your turn, please",
-          "Put your feet into the boots.",
-          "hurt"
+          "Put your feet into the boots."
         ],
         "vocabularioClave": [
-          "Agarda a túa quenda, por favor",
-          "Mete os pés nas botas.",
-          "doer, facer dano"
+          "Mete os pés nas botas."
         ],
         "vocabularioClaveEs": [
-          "Espera tu turno, por favor",
-          "Mete los pies en las botas.",
-          "doler, hacer daño"
+          "Mete los pies en las botas."
         ]
       }
     ],
@@ -44245,26 +44208,23 @@
         "lamina": "conto_corpo_2",
         "extra": true,
         "texto": {
-          "gl": "No xogo de Simón dí, Uxío é un esquío, “Squirrel”, e logo un xabaril, “Boar”. Simón dí: “Climb!”, e Uxío trepa levantando unha perna, “leg”.",
-          "es": "En el juego de Simón dice, Uxío es una ardilla, “Squirrel”, y luego un jabalí, “Boar”. Simón dice: “Climb!”, y Uxío trepa levantando una pierna, “leg”."
+          "gl": "No souto, o esquío —“Squirrel”— e o xabarín —“Boar”— aprenden a rubir —“Climb”— pola árbore.",
+          "es": "En el bosque, la ardilla —“Squirrel”— y el jabalí —“Boar”— aprenden a trepar —“Climb”— por el árbol."
         },
         "palabras": [
           "Squirrel",
           "Boar",
-          "Climb!",
-          "leg"
+          "Climb!"
         ],
         "vocabularioClave": [
           "Esquío",
           "Xabarín",
-          "Rubir",
-          "perna"
+          "Rubir"
         ],
         "vocabularioClaveEs": [
           "Ardilla",
           "Jabalí",
-          "Trepar",
-          "pierna"
+          "Trepar"
         ]
       }
     ],
@@ -45472,20 +45432,17 @@
         "lamina": "conto_cores_2",
         "extra": true,
         "texto": {
-          "gl": "No eco, Xiana di: “The dog is behind the tree.” O can sae de detrás da árbore e ela acarícialle a cabeza, amodo, “gentle”.",
-          "es": "En el eco, Xiana dice: “The dog is behind the tree.” El perro sale de detrás del árbol y ella le acaricia la cabeza, despacio, “gentle”."
+          "gl": "Atopan ao cadeliño: “The dog is behind the tree.”",
+          "es": "Encuentran al perrito: “The dog is behind the tree.”"
         },
         "palabras": [
-          "The dog is behind the tree.",
-          "gentle"
+          "The dog is behind the tree."
         ],
         "vocabularioClave": [
-          "O can está detrás da árbore.",
-          "con delicadeza"
+          "O can está detrás da árbore."
         ],
         "vocabularioClaveEs": [
-          "El perro está detrás del árbol.",
-          "con delicadeza"
+          "El perro está detrás del árbol."
         ]
       }
     ],
@@ -46733,6 +46690,28 @@
           "Sal y baila alrededor del fuego",
           "examinar"
         ]
+      },
+      {
+        "numero": 10,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_follas_2",
+        "extra": true,
+        "texto": {
+          "gl": "No hotel dos bichos, un bicho perde a folla e Martiño consólao: “Do not worry, be gentle”.",
+          "es": "En el hotel de los bichos, un bicho pierde la hoja y Martiño lo consuela: “Do not worry, be gentle”."
+        },
+        "palabras": [
+          "Do not worry, be gentle"
+        ],
+        "vocabularioClave": [
+          "Non te preocupes, con delicadeza"
+        ],
+        "vocabularioClaveEs": [
+          "No te preocupes, con delicadeza"
+        ]
       }
     ],
     "preguntasGraduadas": [
@@ -47122,20 +47101,17 @@
         "lamina": "conto_follas_2",
         "extra": true,
         "texto": {
-          "gl": "Antes da merenda, Martiño di: “First we wash, then we eat.” A súa irmá perde a folla vermella e el consólaa: “Do not worry, be gentle”.",
-          "es": "Antes de la merienda, Martiño dice: “First we wash, then we eat.” Su hermana pierde la hoja roja y él la consuela: “Do not worry, be gentle”."
+          "gl": "Antes da merenda, Martiño di: “First we wash, then we eat.”",
+          "es": "Antes de la merienda, Martiño dice: “First we wash, then we eat.”"
         },
         "palabras": [
-          "First we wash, then we eat.",
-          "Do not worry, be gentle"
+          "First we wash, then we eat."
         ],
         "vocabularioClave": [
-          "Primeiro lavamos, despois comemos.",
-          "Non te preocupes, con delicadeza"
+          "Primeiro lavamos, despois comemos."
         ],
         "vocabularioClaveEs": [
-          "Primero lavamos, después comemos.",
-          "No te preocupes, con delicadeza"
+          "Primero lavamos, después comemos."
         ]
       }
     ],
@@ -48367,6 +48343,31 @@
           "¡Luz del sol! Ponte de pie y estírate bien alto",
           "¿Por qué le pones la venda? Porque el gato está malito."
         ]
+      },
+      {
+        "numero": 10,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_inverno_2",
+        "extra": true,
+        "texto": {
+          "gl": "Rosa di: “I put on my boots because it is raining.” Na casa, xoga a doutora: “First we check the heart, then we wrap the bandage.”",
+          "es": "Rosa dice: “I put on my boots because it is raining.” En casa, juega a ser doctora: “First we check the heart, then we wrap the bandage.”"
+        },
+        "palabras": [
+          "I put on my boots because it is raining.",
+          "First we check the heart, then we wrap the bandage."
+        ],
+        "vocabularioClave": [
+          "Poño as botas porque está chovendo.",
+          "Primeiro miramos o corazón e despois poñemos a venda."
+        ],
+        "vocabularioClaveEs": [
+          "Me pongo las botas porque está lloviendo.",
+          "Primero miramos el corazón y después ponemos la venda."
+        ]
       }
     ],
     "preguntasGraduadas": [
@@ -48745,31 +48746,6 @@
         "palabras": [
           "Thank you so much!",
           "Grateful heart"
-        ]
-      },
-      {
-        "numero": 9,
-        "tituloPagina": {
-          "gl": "E ademais",
-          "es": "Y además"
-        },
-        "lamina": "conto_inverno_2",
-        "extra": true,
-        "texto": {
-          "gl": "Rosa di: “I put on my boots because it is raining.” Na casa, xoga a doutora: “First we check the heart, then we wrap the bandage.”",
-          "es": "Rosa dice: “I put on my boots because it is raining.” En casa, juega a ser doctora: “First we check the heart, then we wrap the bandage.”"
-        },
-        "palabras": [
-          "I put on my boots because it is raining.",
-          "First we check the heart, then we wrap the bandage."
-        ],
-        "vocabularioClave": [
-          "Poño as botas porque está chovendo.",
-          "Primeiro miramos o corazón e despois poñemos a venda."
-        ],
-        "vocabularioClaveEs": [
-          "Me pongo las botas porque está lloviendo.",
-          "Primero miramos el corazón y después ponemos la venda."
         ]
       }
     ],
@@ -51583,6 +51559,28 @@
           "Ve sigiloso como un zorro en el bosque",
           "¡Mira fuera!"
         ]
+      },
+      {
+        "numero": 10,
+        "tituloPagina": {
+          "gl": "E ademais",
+          "es": "Y además"
+        },
+        "lamina": "conto_cores_2",
+        "extra": true,
+        "texto": {
+          "gl": "Cando Nela mira pola fiestra, vai frío e pon o abrigo, “coat”.",
+          "es": "Cuando Nela mira por la ventana, hace frío y se pone el abrigo, “coat”."
+        },
+        "palabras": [
+          "coat"
+        ],
+        "vocabularioClave": [
+          "abrigo"
+        ],
+        "vocabularioClaveEs": [
+          "abrigo"
+        ]
       }
     ],
     "preguntasGraduadas": [
@@ -51972,23 +51970,17 @@
         "lamina": "conto_cores_2",
         "extra": true,
         "texto": {
-          "gl": "Bruno e Calcetín xogan por quendas: “Whose turn is it?”. Logo cruzan: “We walk across the bridge.” Bruno ponlle o abrigo, “coat”, porque vai frío.",
-          "es": "Bruno y Calcetín juegan por turnos: “Whose turn is it?”. Luego cruzan: “We walk across the bridge.” Bruno le pone el abrigo, “coat”, porque hace frío."
+          "gl": "Logo cruzan: “We walk across the bridge.”",
+          "es": "Luego cruzan: “We walk across the bridge.”"
         },
         "palabras": [
-          "Whose turn is it?",
-          "We walk across the bridge.",
-          "coat"
+          "We walk across the bridge."
         ],
         "vocabularioClave": [
-          "De quen é a quenda?",
-          "Cruzamos a ponte camiñando.",
-          "abrigo"
+          "Cruzamos a ponte camiñando."
         ],
         "vocabularioClaveEs": [
-          "¿De quién es el turno?",
-          "Cruzamos el puente caminando.",
-          "abrigo"
+          "Cruzamos el puente caminando."
         ]
       }
     ],
@@ -61705,28 +61697,6 @@
         ],
         "palabras": [
           "Rested and happy"
-        ]
-      },
-      {
-        "numero": 9,
-        "tituloPagina": {
-          "gl": "E ademais",
-          "es": "Y además"
-        },
-        "lamina": "conto_corpo_2",
-        "extra": true,
-        "texto": {
-          "gl": "Por fin chega o soño, cunha lúa moi brillante, “bright”.",
-          "es": "Por fin llega el sueño, con una luna muy brillante, “bright”."
-        },
-        "palabras": [
-          "bright"
-        ],
-        "vocabularioClave": [
-          "vivo, brillante"
-        ],
-        "vocabularioClaveEs": [
-          "vivo, brillante"
         ]
       }
     ],

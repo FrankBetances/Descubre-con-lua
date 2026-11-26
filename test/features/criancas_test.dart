@@ -3,9 +3,12 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:descubre_con_lua/core/localization/app_language.dart';
+import 'package:descubre_con_lua/core/localization/localized_string.dart';
 import 'package:descubre_con_lua/core/storage/local_store.dart';
 import 'package:descubre_con_lua/core/theme/app_theme.dart';
+import 'package:descubre_con_lua/data/models/leccion_model.dart';
 import 'package:descubre_con_lua/features/criancas/criancas_store.dart';
+import 'package:descubre_con_lua/features/criancas/marcar_palabras_screen.dart';
 import 'package:descubre_con_lua/features/criancas/xogo_lua.dart';
 import 'package:descubre_con_lua/features/familias/portal_familias_screen.dart';
 
@@ -66,16 +69,34 @@ void main() {
     'a primeira vez pide nome, idade e curso con Lúa, pregunta se hai outro neno, e a segunda xa non',
     (tester) async {
       final d = dir();
-      await abrir(tester, storeEnDisco(d));
+      final s1 = storeEnDisco(d);
+      await abrir(tester, s1);
       expect(find.byKey(const Key('rexistro_crianza')), findsOneWidget);
-      expect(find.byKey(const Key('rexistro_privacidade')), findsOneWidget);
-      // Sin nombre no se puede guardar.
       final boton = find.byKey(const Key('rexistro_gardar'));
       expect(tester.widget<FilledButton>(boton).onPressed, isNull);
+      await tester.drag(
+        find.byKey(const Key('rexistro_crianza')),
+        const Offset(0, -400),
+      );
+      await tester.pump();
+      expect(find.byKey(const Key('rexistro_privacidade')), findsOneWidget);
+      await tester.drag(
+        find.byKey(const Key('rexistro_crianza')),
+        const Offset(0, 400),
+      );
+      await tester.pump();
 
       await tester.enterText(find.byKey(const Key('rexistro_nome')), 'Breixo');
       await tester.tap(find.byKey(const ValueKey('rexistro_idade_3')));
       await tester.pump();
+      await tester.ensureVisible(
+        find.byKey(const ValueKey('rexistro_rutina_comida')),
+      );
+      await tester.tap(find.byKey(const ValueKey('rexistro_rutina_comida')));
+      await tester.pump();
+      await tester.ensureVisible(
+        find.byKey(const ValueKey('rexistro_curso_curso_3_4')),
+      );
       // La edad propone su curso.
       expect(
         tester
@@ -85,11 +106,14 @@ void main() {
             .selected,
         isTrue,
       );
+      await tester.ensureVisible(boton);
       await tester.runAsync(() async {
         await tester.tap(boton);
         await Future<void>.delayed(const Duration(milliseconds: 50));
       });
       await Pasarela.asentar(tester);
+
+      expect(s1.criancas.single.rutinas, contains('comida'));
 
       // P11.1: tras guardar el primero, pregunta si hay otro niño en casa.
       expect(find.byKey(const Key('rexistro_outro_neno')), findsOneWidget);
@@ -603,7 +627,355 @@ void main() {
       expect(store.xogo('c1').xp, greaterThan(0));
       await tester.tap(find.byKey(const Key('leccion_continuar')));
       await Pasarela.asentar(tester);
+      expect(find.byKey(const Key('marcar10_titulo')), findsOneWidget);
+      await tester.tap(find.byKey(const Key('marcar10_listo')));
+      await Pasarela.asentar(tester);
       expect(find.byKey(const Key('learn_banner')), findsOneWidget);
+    },
+  );
+
+  test(
+    'FSRS por neno: semente, vencemento e intervalos distintos por marca',
+    () async {
+      final d = dir();
+      final store = storeEnDisco(d);
+      await store.cargar();
+      final dia0 = DateTime(2026, 10, 5);
+      final n1 = await store.engadir(
+        nome: 'Uxía',
+        idade: 3,
+        curso: 'curso_3_4',
+      );
+      final n2 = await store.engadir(
+        nome: 'Antón',
+        idade: 5,
+        curso: 'curso_5_6',
+      );
+
+      // Siembra conocida: queda programada en el futuro (no vencida hoy).
+      await store.sembrarRepaso(
+        n1.id,
+        ['Leaf', 'River'],
+        agora: dia0,
+        nivel: Observacion.di,
+      );
+      expect(store.tarxetasDe(n1.id), hasLength(2));
+      expect(store.tarxetasDe(n2.id), isEmpty);
+      expect(store.tarxetasVencidas(n1.id, agora: dia0), isEmpty);
+
+      // Marcar «di» alarga más que «entende», y «entende» más que «aindaNon».
+      await store.observar(
+        n1.id,
+        CriancasStore.semana('curso_3_4', 10, 1),
+        'Sun',
+        Observacion.di,
+        agora: dia0,
+      );
+      await store.observar(
+        n1.id,
+        CriancasStore.semana('curso_3_4', 10, 1),
+        'Cloud',
+        Observacion.entende,
+        agora: dia0,
+      );
+      await store.observar(
+        n1.id,
+        CriancasStore.semana('curso_3_4', 10, 1),
+        'Rain',
+        Observacion.aindaNon,
+        agora: dia0,
+      );
+      final cSun = store.tarxetaDe(n1.id, 'Sun')!;
+      final cCloud = store.tarxetaDe(n1.id, 'Cloud')!;
+      final cRain = store.tarxetaDe(n1.id, 'Rain')!;
+      expect(cSun.scheduledDays, greaterThanOrEqualTo(cCloud.scheduledDays));
+      expect(cCloud.scheduledDays, greaterThanOrEqualTo(cRain.scheduledDays));
+
+      // Cuando pasan días suficientes, las tarjetas vencen para n1 y no para n2.
+      final mesDespois = dia0.add(const Duration(days: 30));
+      expect(store.tarxetasVencidas(n1.id, agora: mesDespois), hasLength(5));
+      expect(store.volvenHoxe(n1.id, agora: mesDespois), hasLength(4));
+      expect(store.haiMoitasVencidas(n1.id, agora: mesDespois), isFalse);
+      expect(store.tarxetasVencidas(n2.id, agora: mesDespois), isEmpty);
+
+      // Siembra vencida hoy para n2: con 7 (> 6) salta haiMoitasVencidas.
+      await store.sembrarRepaso(
+        n2.id,
+        ['One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven'],
+        agora: dia0,
+        vencidasHoxe: true,
+      );
+      expect(store.tarxetasVencidas(n2.id, agora: dia0), hasLength(7));
+      expect(store.haiMoitasVencidas(n2.id, agora: dia0), isTrue);
+
+      // Persiste en criancas.json y borrar a n1 elimina solo sus tarjetas.
+      final re = storeEnDisco(d);
+      await re.cargar();
+      expect(re.tarxetasDe(n1.id), hasLength(5));
+      expect(re.tarxetasDe(n2.id), hasLength(7));
+      await re.borrar(n1.id);
+      expect(re.tarxetasDe(n1.id), isEmpty);
+      expect(re.tarxetasDe(n2.id), hasLength(7));
+    },
+  );
+
+  testWidgets(
+    'Volven hoxe en Hoxe: mostra 2-4 vencidas por neno e >6 frea palabras novas',
+    (tester) async {
+      final agora = DateTime(2026, 11, 16);
+      final store = CriancasStore.enMemoria(const [
+        Crianza(id: 'c1', nome: 'Uxía', idade: 3, curso: 'curso_3_4'),
+        Crianza(id: 'c2', nome: 'Antón', idade: 5, curso: 'curso_5_6'),
+      ]);
+      // 7 palabras vencidas hoy para c1 (> 6): no entran palabras nuevas.
+      await store.sembrarRepaso(
+        'c1',
+        ['Clap', 'Knees', 'Leaf', 'Roll', 'Warm', 'Small', 'Tall'],
+        agora: agora,
+        vencidasHoxe: true,
+      );
+      // 2 vencidas hoy para c2: sí entran palabras nuevas y muestra 2 en Volven hoxe.
+      await store.sembrarRepaso(
+        'c2',
+        ['Coat', 'Seed'],
+        agora: agora,
+        vencidasHoxe: true,
+      );
+      await store.escoller('c1');
+
+      tester.view.physicalSize = const Size(412, 915);
+      tester.view.devicePixelRatio = 1.0;
+      addTearDown(tester.view.reset);
+      await tester.pumpWidget(
+        MaterialApp(
+          theme: AppTheme.temaFamilias,
+          home: PortalFamiliasScreen(
+            repository: p.contenido,
+            audioService: p.audio,
+            currentLanguage: AppLanguage.gl,
+            onToggleLanguage: () {},
+            premios: p.premios,
+            calendario: p.store,
+            criancas: store,
+            agora: agora,
+          ),
+        ),
+      );
+      await tester.runAsync(
+        () => Future<void>.delayed(const Duration(milliseconds: 50)),
+      );
+      await Pasarela.asentar(tester);
+
+      expect(find.byKey(const Key('volven_hoxe_card')), findsOneWidget);
+      expect(find.byKey(const Key('volven_hoxe_titulo')), findsOneWidget);
+      expect(find.byKey(const Key('volven_hoxe_sen_novas')), findsOneWidget);
+      // Solo enseña un bloque de hasta 4 tarjetas a la vez, y frea learn_banner.
+      expect(find.byKey(const Key('learn_banner')), findsNothing);
+      final visibles = find.byWidgetPredicate(
+        (w) =>
+            w.key is ValueKey<String> &&
+            (w.key! as ValueKey<String>).value.startsWith('volven_hoxe_') &&
+            (w.key! as ValueKey<String>).value != 'volven_hoxe_card' &&
+            (w.key! as ValueKey<String>).value != 'volven_hoxe_titulo' &&
+            (w.key! as ValueKey<String>).value != 'volven_hoxe_sen_novas',
+      );
+      expect(visibles, findsNWidgets(4));
+
+      // Al marcar «Dia» en una, baja a 6 vencidas: ya entran palabras nuevas.
+      await tester.tap(find.byKey(const ValueKey('volven_marcar_Clap_di')));
+      await Pasarela.asentar(tester);
+      expect(find.byKey(const Key('volven_hoxe_sen_novas')), findsNothing);
+      expect(find.byKey(const Key('learn_banner')), findsOneWidget);
+      expect(find.byKey(const ValueKey('volven_hoxe_Clap')), findsNothing);
+
+      // Cambiar a Antón (c2) muestra solo sus 2 palabras vencidas.
+      await tester.tap(find.byKey(const ValueKey('hoxe_neno_c2')));
+      await Pasarela.asentar(tester);
+      expect(find.byKey(const ValueKey('volven_hoxe_Coat')), findsOneWidget);
+      expect(find.byKey(const ValueKey('volven_hoxe_Seed')), findsOneWidget);
+      expect(find.byKey(const ValueKey('volven_hoxe_Knees')), findsNothing);
+    },
+  );
+
+  testWidgets(
+    'M1: marcar tres palabras nunha soa pantalla actualiza FSRS e semanasConMarcas',
+    (tester) async {
+      final agora = DateTime(2026, 11, 16);
+      const neno = Crianza(
+        id: 'c1',
+        nome: 'Breixo',
+        idade: 3,
+        curso: 'curso_3_4',
+      );
+      final store = CriancasStore.enMemoria(const [neno]);
+      const pezas = [
+        PezaDaLeccion(
+          tipo: 'palabra',
+          en: 'Leaf',
+          significado: LocalizedString(gl: 'folla', es: 'hoja'),
+          lamina: 'autumn_leaf',
+        ),
+        PezaDaLeccion(
+          tipo: 'palabra',
+          en: 'Clap',
+          significado: LocalizedString(gl: 'aplaudir', es: 'aplaudir'),
+          lamina: 'body_clap',
+        ),
+        PezaDaLeccion(
+          tipo: 'palabra',
+          en: 'Seed',
+          significado: LocalizedString(gl: 'semente', es: 'semilla'),
+          lamina: 'plant_seed',
+        ),
+      ];
+      tester.view.physicalSize = const Size(412, 915);
+      tester.view.devicePixelRatio = 1.0;
+      addTearDown(tester.view.reset);
+
+      await tester.pumpWidget(
+        MaterialApp(
+          theme: AppTheme.temaFamilias,
+          home: MarcarEnDezSegundosScreen(
+            store: store,
+            crianza: neno,
+            semana: CriancasStore.semana('curso_3_4', 11, 2),
+            palabras: pezas,
+            language: AppLanguage.gl,
+            audioService: p.audio,
+            agora: agora,
+          ),
+        ),
+      );
+      await Pasarela.asentar(tester);
+
+      expect(find.byKey(const Key('marcar10_titulo')), findsOneWidget);
+      await tester.tap(find.byKey(const ValueKey('marcar10_Leaf_di')));
+      await tester.tap(find.byKey(const ValueKey('marcar10_Clap_entende')));
+      await tester.tap(find.byKey(const ValueKey('marcar10_Seed_aindaNon')));
+      await Pasarela.asentar(tester);
+
+      final tarxetas = store.tarxetasDe('c1');
+      expect(tarxetas.keys, containsAll(['leaf', 'clap', 'seed']));
+      expect(tarxetas['leaf']!.reps, 1);
+      expect(tarxetas['seed']!.reps, 1);
+      expect(
+        tarxetas['leaf']!.scheduledDays,
+        greaterThanOrEqualTo(tarxetas['seed']!.scheduledDays),
+      );
+      expect(store.criancas.single.semanasConMarcas, 1);
+      expect(store.escoitasDe('c1', 'Leaf'), 1);
+    },
+  );
+
+  testWidgets(
+    'M1: Lúa pregunta en domingo e recordatorio sen reñir tras dúas semanas sen marcas',
+    (tester) async {
+      final domingo = DateTime(2026, 11, 15, 11);
+      final store = CriancasStore.enMemoria(const [
+        Crianza(
+          id: 'c1',
+          nome: 'Uxía',
+          idade: 3,
+          curso: 'curso_3_4',
+          semanaAlta: 'curso_3_4/9/1',
+        ),
+      ]);
+      tester.view.physicalSize = const Size(412, 915);
+      tester.view.devicePixelRatio = 1.0;
+      addTearDown(tester.view.reset);
+
+      await tester.pumpWidget(
+        MaterialApp(
+          theme: AppTheme.temaFamilias,
+          home: PortalFamiliasScreen(
+            repository: p.contenido,
+            audioService: p.audio,
+            currentLanguage: AppLanguage.gl,
+            onToggleLanguage: () {},
+            premios: p.premios,
+            calendario: p.store,
+            criancas: store,
+            agora: domingo,
+          ),
+        ),
+      );
+      await tester.runAsync(
+        () => Future<void>.delayed(const Duration(milliseconds: 50)),
+      );
+      await Pasarela.asentar(tester);
+
+      expect(find.byKey(const Key('aviso_duas_semanas_sen_marcas')),
+          findsOneWidget);
+      expect(find.byKey(const Key('lua_pregunta_card')), findsOneWidget);
+      expect(find.byKey(const Key('lua_pregunta_titulo')), findsOneWidget);
+
+      final botonsDomingo = find.byWidgetPredicate(
+        (w) =>
+            w.key is ValueKey<String> &&
+            (w.key! as ValueKey<String>).value.startsWith('lua_pregunta_') &&
+            (w.key! as ValueKey<String>).value.endsWith('_di'),
+      );
+      expect(botonsDomingo, findsWidgets);
+      await tester.tap(botonsDomingo.first);
+      await Pasarela.asentar(tester);
+
+      expect(store.tarxetasDe('c1'), isNotEmpty);
+      expect(store.criancas.single.semanasConMarcas, 1);
+      expect(
+          find.byKey(const Key('aviso_duas_semanas_sen_marcas')), findsNothing);
+    },
+  );
+
+  testWidgets(
+    'M4: contador Oíuna N veces por palabra e neno e reinicio ao borrar',
+    (tester) async {
+      final agora = DateTime(2026, 11, 16);
+      final store = CriancasStore.enMemoria(const [
+        Crianza(id: 'c1', nome: 'Uxía', idade: 3, curso: 'curso_3_4'),
+        Crianza(id: 'c2', nome: 'Antón', idade: 5, curso: 'curso_5_6'),
+      ]);
+      for (var i = 0; i < 4; i++) {
+        await store.rexistrarEscoita('c1', 'Leaf');
+      }
+      expect(store.escoitasDe('c1', 'Leaf'), 4);
+      expect(store.escoitasDe('c2', 'Leaf'), 0);
+
+      tester.view.physicalSize = const Size(412, 915);
+      tester.view.devicePixelRatio = 1.0;
+      addTearDown(tester.view.reset);
+
+      await tester.pumpWidget(
+        MaterialApp(
+          theme: AppTheme.temaFamilias,
+          home: MarcarEnDezSegundosScreen(
+            store: store,
+            crianza: store.criancas.first,
+            semana: CriancasStore.semana('curso_3_4', 11, 2),
+            palabras: const [
+              PezaDaLeccion(
+                tipo: 'palabra',
+                en: 'Leaf',
+                significado: LocalizedString(gl: 'folla', es: 'hoja'),
+              ),
+            ],
+            language: AppLanguage.es,
+            audioService: p.audio,
+            agora: agora,
+          ),
+        ),
+      );
+      await Pasarela.asentar(tester);
+
+      expect(find.byKey(const ValueKey('escoitas_leaf')), findsOneWidget);
+      expect(find.text('La ha oído 4 veces'), findsOneWidget);
+
+      await tester.tap(find.byKey(const ValueKey('marcar10_Leaf_entende')));
+      await Pasarela.asentar(tester);
+      expect(store.escoitasDe('c1', 'Leaf'), 5);
+      expect(find.text('La ha oído 5 veces'), findsOneWidget);
+
+      await store.borrar('c1');
+      expect(store.escoitasDe('c1', 'Leaf'), 0);
     },
   );
 }

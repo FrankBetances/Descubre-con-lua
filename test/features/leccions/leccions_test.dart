@@ -181,8 +181,14 @@ void main() {
         expect(temas.putIfAbsent(u.titulo.gl, () => c), c,
             reason: '«${u.titulo.gl}» en dúas idades');
         for (final l in u.leccions) {
-          expect(l.repaso, isFalse, reason: '${l.id}: semana sen nada novo');
-          expect(l.novas.length, greaterThanOrEqualTo(3), reason: l.id);
+          if (l.numero == 4) {
+            expect(l.repaso, isTrue, reason: '${l.id}: semana 4 é de repaso');
+            expect(l.novas.length, lessThanOrEqualTo(1), reason: l.id);
+            expect(l.repasa, isNotEmpty, reason: l.id);
+          } else {
+            expect(l.repaso, isFalse, reason: '${l.id}: semana sen nada novo');
+            expect(l.novas.length, greaterThanOrEqualTo(3), reason: l.id);
+          }
           for (final p in l.novas) {
             expect(palabras.putIfAbsent(norm(p.en), () => c), c,
                 reason: '«${p.en}» nova en dúas idades');

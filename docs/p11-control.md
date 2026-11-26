@@ -104,13 +104,19 @@ Umbrales del plan incumplidos: 30
   - curso_0_2: solo 1 de 199 palabras vuelven otro mes
 ```
 
-## Tabla de control de criterios abiertos (`O-20261126-1`, `O-20261126-2`, `O-20261126-3`)
+## Tabla de control de criterios abiertos (`O-20261126-1`, `O-20261126-2`, `O-20261126-3`) y mejoras `M1–M5` (corrección 26/11/2026)
 
 | Orden | Criterio abierto | Paso | Evidencia |
 | --- | --- | --- | --- |
-| O-20261126-1 | Na casa → alta y Hoxe: varios niños de cursos distintos visibles a la vez, cada uno con su tarea, sus premios y su repaso | P11.1 | |
-| O-20261126-1 | Na casa → Hoxe: «Volven hoxe / Vuelven hoy» por niño; cada palabra vuelve al menos 4 veces en el curso y alguna pasado un mes (`tools/auditoria_niveles.py --gate` en `tools/gates.sh`) | P11.2, P11.8 | |
+| O-20261126-1 | Na casa → alta y Hoxe: varios niños de cursos distintos visibles a la vez, cada uno con su tarea, sus premios y su repaso | P11.1 | `54e380fc`: alta encadenada («Hai outro neno ou nena na casa?»), fila arriba de `Hoxe` por niño, hoja sin cambio de curso de un toque (solo «Editar a …» con confirmación), mes/año de nacimiento con propuesta de septiembre, premios/observaciones/repaso por niño activo (`criancas_test.dart`, `criancas_privacidad_test.dart`) |
+| O-20261126-1 | Na casa → Hoxe: «Volven hoxe / Vuelven hoy» por niño; cada palabra vuelve al menos 4 veces en el curso y alguna pasado un mes (`tools/auditoria_niveles.py --gate` en `tools/gates.sh`) | P11.2, P11.8 | P11.2: FSRS por niño en `criancas.json` y bloque `Volven hoxe / Vuelven hoy` (2-4 vencidas, `>6` frena nuevas) verificados en `criancas_test.dart`; `gen_leccions.py` genera 10 semanas de repaso + retornos espaciados `+1/+2/+4/+8/+16` (`auditoria_niveles.py`: 0 `ninguna palabra vuelve pasado un mes` y 0 `semana 1 de otro curso`; solo quedan 9-11 de junio con `<4` semanas finales) |
 | O-20261126-1 | Al registrar un niño de 2 años o más: juego de Lúa para saber por dónde empezar, dirigido por la persona adulta, que fija su punto de partida y siembra su repaso | P11.3 | |
+| Corrección 26/11 | Alta de una sola vez (`datos -> rutinas -> prueba >=2a -> otro niño?`), reanudable si se interrumpe, no repetida desde ficha ni tras completar | P11.1, P11.3 | Parcial en P11.1/P11.2: niño dado de alta no vuelve a ver el alta y elige 1-2 rutinas de casa en `RexistroCrianzaScreen` (`criancas_test.dart`); falta tramo final de prueba >=2a en P11.3 |
+| M1 | Marcar en diez segundos al acabar el juego del día (2-4 palabras, lámina + 3 botones), «Lúa pregunta» en domingo (3 palabras de la semana), `semanasConMarcas` sin hora y recordatorio en `Hoxe` tras 2 semanas sin marcas | P11.2 | P11.2: `MarcarEnDezSegundosScreen` al terminar `LeccionDuolingoScreen`, `_LuaPreguntaCard` los domingos en `Hoxe`, `semanasConMarcas` y aviso `aviso_duas_semanas_sen_marcas` verificados en `criancas_test.dart` y `criancas_privacidad_test.dart` |
+| M2 | El inglés dentro de las rutinas de casa: elegir 1-2 rutinas en el alta y poner en `Hoxe` la línea STEAM de cada rutina por semana sin repetir entre semanas | P11.1, P11.7 | Parcial en P11.2: selector de 1-2 rutinas (`bano`, `comida`, `coche`, `vestirse`, `durmir`, `parque`) persistido en `Crianza.rutinas` y cubierto por `criancas_privacidad_test.dart`; falta contenido por rutina en P11.7 |
+| M3 | Reto de hermanos en `Hoxe` (1/semana cuando hay >=2 niños en cursos distintos, gl/es/en + voz + gate por pareja vecina y semana) | P11.7 | |
+| M4 | Cuántas veces la ha oído (`Oíuna N veces / La ha oído N veces`, audio + marcas, sin hora) y mínimo de 8 escuchas (`minimoEscoitasParaFallo = 8`) en P11.4 | P11.2, P11.4 | Parcial en P11.2: contador `escoitas` por palabra y niño mostrado en tarjetas/observaciones e incrementado al escuchar o marcar (`criancas_test.dart`, `criancas_privacidad_test.dart`); falta umbral `>=8` en motor P11.4 |
+| M5 | La tarjeta de Lúa para la escuela infantil (en ficha de cada niño, solo mostrar, sin porcentajes ni vocabulario clínico, `check_finalidade.py` verde) | P11.4 | |
 | O-20261126-1 | 0-2 años: sustantivos, adjetivos, onomatopeyas, rutinas y sucesos y series básicas, con el STEAM del mes y muchas repeticiones | P11.6 | |
 | O-20261126-1 | De una semana a la siguiente el nivel sube sin saltos y la gramática no pasa del techo de cada edad, en las cinco edades (`tools/auditoria_niveles.py --gate`) | P11.5, P11.7, P11.8 | |
 | O-20261126-2 | Na casa → Hoxe: el cupo de palabras nuevas, el repaso y el peldaño de cada niño cambian cada lunes según lo marcado la semana anterior y una línea en gl y es dice por qué; un test de cuatro niños simulados durante cuarenta semanas lo comprueba | P11.4 | |
@@ -118,6 +124,8 @@ Umbrales del plan incumplidos: 30
 | O-20261126-3 | Entrega de Antigravity en `antigravity/niveles` con `docs/p11-control.md` criterio por criterio | P11.10, P11.11 | |
 | O-20261126-3 | Revisado por Claude Code (`auditoria_niveles --gate` y `check_capas_semana` a cero, `gates.sh` y `flutter test` en verde, tres semanas al azar por edad, capturas gl y es miradas) y mergeado en `main` con CI en verde y los audios generados | P11.11 (revisión Claude Code) | |
 
-## Notas y referencias externas usadas en P11
+## Notas y ajustes de la corrección 26/11/2026 y evolución de `auditoria_niveles.py`
 
-(Se rellenarán conforme avancen los pasos P11.1–P11.11.)
+- **Corrección 26/11/2026 («ALTA DE UNA SOLA VEZ Y MEJORAS M1-M5»)**: integrada sin añadir pasos nuevos dentro de `P11.1–P11.10`. El alta incorpora la elección de rutinas de casa (`M2`) desde `P11.2`; `M1` y el contador `M4` quedan integrados en `P11.2` antes de `P11.4`; el tramo final de prueba para >=2 años se añade al alta en `P11.3`; el umbral `>=8` de `M4` y `M5` van en `P11.4`; las líneas por rutina de `M2` y `M3` (reto de hermanos) van en `P11.7` + gate `P11.8`; y las 6 capturas extra (en `gl` y `es`) en `P11.10`.
+- **Tras P11.2 (`auditoria_niveles.py`)**: baja de **30** a **20** incumplimientos (0 en «ninguna semana de repaso», 0 en «ninguna palabra vuelve pasado un mes» y 0 en «semana 1 de otro curso»). Las únicas palabras con `< 4` apariciones son las 9–11 introducidas al final de junio (`idx >= 35`), donde quedan menos de 4 semanas del curso escolar de 40 semanas.
+

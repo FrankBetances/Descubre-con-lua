@@ -106,7 +106,8 @@ class _LeccionDaSemanaState extends State<LeccionDaSemana> {
     final iUnidade = unidades.indexWhere((u) => u.id == unidade.id);
     final grupo = LeccionDaSemana.grupos[widget.cursoId]?.resolve(lang) ?? '';
     final reto = leccion.reto;
-    final pezas = leccion.repaso ? leccion.repasa : leccion.novas;
+    final pezas =
+        leccion.repaso ? [...leccion.novas, ...leccion.repasa] : leccion.novas;
 
     // A dónde va: la lección siguiente de la unidad o, si es la última, la
     // unidad siguiente.
@@ -1004,7 +1005,8 @@ class LeccionNoCalendario extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final isGl = language == AppLanguage.gl;
-    final pezas = leccion.repaso ? leccion.repasa : leccion.novas;
+    final pezas =
+        leccion.repaso ? [...leccion.novas, ...leccion.repasa] : leccion.novas;
     final reto = leccion.reto;
     return Container(
       key: ValueKey('calendario_leccion_$semana'),
@@ -1159,7 +1161,8 @@ class _LeccionFamiliaState extends State<LeccionFamilia> {
     final unidades = g.unidades[widget.cursoId] ?? const [];
     final iU = unidades.indexWhere((u) => u.id == unidade.id);
     final grupo = LeccionDaSemana.grupos[widget.cursoId]?.resolve(lang) ?? '';
-    final pezas = leccion.repaso ? leccion.repasa : leccion.novas;
+    final pezas =
+        leccion.repaso ? [...leccion.novas, ...leccion.repasa] : leccion.novas;
     final acento = context.acento;
     final hoxeN = (widget.dia ?? 1).clamp(1, 5);
     final nDia = _diaElixido ?? hoxeN;

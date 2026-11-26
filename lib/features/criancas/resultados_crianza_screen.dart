@@ -10,6 +10,7 @@ import '../premios/medallas_widget.dart';
 import '../premios/premios_model.dart';
 import '../premios/premios_repository.dart';
 import 'criancas_store.dart';
+import 'marcar_palabras_screen.dart';
 import 'tarxeta_lua.dart';
 import '../leccions/widgets/proxecto_0_2.dart';
 
@@ -256,6 +257,7 @@ class _ResultadosCrianzaScreenState extends State<ResultadosCrianzaScreen> {
                   palabra: p.en,
                   significado: p.significado?.resolve(lang),
                   valor: store.observacion(c.id, semanaKey, p.en),
+                  escoitas: store.escoitasDe(c.id, p.en),
                   lang: lang,
                   onCambiar: (o) => store.observar(c.id, semanaKey, p.en, o),
                 ),
@@ -447,6 +449,7 @@ class _FilaObservacion extends StatelessWidget {
     required this.palabra,
     required this.significado,
     required this.valor,
+    required this.escoitas,
     required this.lang,
     required this.onCambiar,
   });
@@ -454,6 +457,7 @@ class _FilaObservacion extends StatelessWidget {
   final String palabra;
   final String? significado;
   final Observacion valor;
+  final int escoitas;
   final AppLanguage lang;
   final ValueChanged<Observacion> onCambiar;
 
@@ -502,6 +506,16 @@ class _FilaObservacion extends StatelessWidget {
                     ),
                   ),
               ],
+            ),
+          ),
+          const SizedBox(height: 2),
+          Text(
+            TarxetaMarcarPalabra.textoEscoitas(escoitas, lang),
+            key: ValueKey('obs_escoitas_${CriancasStore.claveRepaso(palabra)}'),
+            style: const TextStyle(
+              fontSize: 14,
+              color: AppTheme.textSecondary,
+              fontWeight: FontWeight.w600,
             ),
           ),
           const SizedBox(height: 6),

@@ -5,6 +5,8 @@ import '../../juega/widgets/pasos_do_dia.dart';
 import '../../juega/widgets/tarxeta_curricular.dart';
 
 import '../../../core/audio/offline_audio_service.dart';
+import '../../../core/audio/widgets/boton_escuchar.dart';
+import '../../../core/brand/imaxe_escena.dart';
 import '../../../core/brand/lua_pixel.dart';
 import '../../criancas/xogo_lua.dart' show CatalogoLua;
 import '../../../core/localization/app_language.dart';
@@ -12,6 +14,7 @@ import '../../../core/localization/localized_string.dart';
 import '../../../core/navigation/ruta_lua.dart';
 import '../../../core/storage/calendario_store.dart';
 import '../../../core/theme/app_theme.dart';
+import '../../../data/models/fsrs_card_model.dart';
 import '../../../core/widgets/cabecera.dart';
 import '../../../data/models/calendario_model.dart';
 import '../../../data/models/cuento_model.dart';
@@ -30,6 +33,7 @@ import '../../docentes/widgets/hoxe_na_aula.dart';
 import '../../juega/widgets/aula_ciclo_panel.dart' show nomeDoMes;
 import '../../leccions/widgets/leccion_da_semana.dart';
 import '../../criancas/crianza_da_casa.dart';
+import '../../criancas/marcar_palabras_screen.dart';
 import '../../criancas/criancas_store.dart';
 import '../../criancas/tarxeta_lua.dart';
 import '../widgets/learn_duolingo.dart';
@@ -676,6 +680,31 @@ class _HoxeFamiliasScreenState extends State<HoxeFamiliasScreen> {
                       agora: widget.agora,
                     );
                 void abrir(int i) => i > actual ? avisar(i) : abrirLeccion(i);
+                final excluidas = {
+                  for (final p in lec.novas) CriancasStore.claveRepaso(p.en),
+                };
+                final vencidas = (neno != null && casa != null)
+                    ? casa.store.tarxetasVencidas(
+                        neno.id,
+                        agora: agora,
+                        excluir: excluidas,
+                      )
+                    : const <FSRSCard>[];
+                final volven = vencidas.take(4).toList(growable: false);
+                final moitasVencidas = vencidas.length > 6;
+                final mapaPezas = _pezasDoCurso(snap.data, widget.cursoId);
+                final senMarcas = (neno != null && casa != null)
+                    ? casa.store.semanasSenMarcas(
+                        neno.id,
+                        mesCalendario: _toca.dia.mesCalendario,
+                        semana: _toca.dia.semana,
+                      )
+                    : 0;
+                final vistosDomingo = <String>{};
+                final palabrasDomingo = [
+                  for (final p in [...lec.novas, ...lec.repasa])
+                    if (vistosDomingo.add(CriancasStore.claveRepaso(p.en))) p,
+                ].take(3).toList(growable: false);
                 return Column(
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
@@ -693,53 +722,111 @@ class _HoxeFamiliasScreenState extends State<HoxeFamiliasScreen> {
                         xp: xogo.xp,
                         racha: xogo.rachaViva(agora),
                       ),
-                    const SizedBox(height: 6),
-                    BannerUnidade(
-                      titulo: u.titulo.resolve(lang),
-                      descricion: u.steam?.resolve(lang) ?? '',
-                      continuar:
-                          lang == AppLanguage.gl ? 'Continuar' : 'Continuar',
-                      onContinuar: () => abrir(actual),
-                    ),
-                    CaminoNodos(
-                      etiquetas: [
-                        for (var d = 0; d < 5; d++) _semana[d].resolve(lang),
-                      ],
-                      actual: actual,
-                      feitoHoxe: xogo?.xogouHoxe(agora) ?? false,
-                      empezar: lang == AppLanguage.gl ? 'Empezar' : 'Empezar',
-                      onNodo: abrir,
-                      lua: xogo == null
-                          ? null
-                          : FutureBuilder<CatalogoLua>(
-                              future: CatalogoLua.cargar(),
-                              initialData: CatalogoLua.lido,
-                              builder: (context, cat) {
-                                final ini = cat.data?.deInicio ?? const {};
-                                return LuaValeria(
-                                  key: const Key('hoxe_lua'),
-                                  ancho: 112,
-                                  cabeza: xogo.cabeza ?? ini['head'],
-                                  pescozo: xogo.pescozo ?? ini['neck'],
-                                );
-                              },
-                            ),
-                    ),
+                    if (senMarcas >= 2 && neno != null) ...[
+                      const SizedBox(height: 6),
+                      Container(
+                        key: const Key('aviso_duas_semanas_sen_marcas'),
+                        padding: const EdgeInsets.symmetric(
+                          horizontal: 14,
+                          vertical: 10,
+                        ),
+                        decoration: BoxDecoration(
+                          color: AppTheme.pageBg,
+                          borderRadius: BorderRadius.circular(14),
+                          border: Border.all(color: AppTheme.border),
+                        ),
+                        child: Text(
+                          lang == AppLanguage.gl
+                              ? 'Levas dúas semanas sen marcar as palabras de ${neno.nome}. Podes facelo nun intre cando xoguedes.'
+                              : 'Llevas dos semanas sin marcar las palabras de ${neno.nome}. Puedes hacerlo en un momento cuando juguéis.',
+                          style: const TextStyle(
+                            fontSize: 14,
+                            color: AppTheme.textSecondary,
+                            height: 1.3,
+                          ),
+                        ),
+                      ),
+                    ],
+                    if (agora.weekday == DateTime.sunday &&
+                        neno != null &&
+                        casa != null &&
+                        palabrasDomingo.isNotEmpty) ...[
+                      const SizedBox(height: 6),
+                      _LuaPreguntaCard(
+                        neno: neno,
+                        semana: semanaKey,
+                        palabras: palabrasDomingo,
+                        store: casa.store,
+                        agora: agora,
+                        language: lang,
+                        audioService: widget.audioService,
+                      ),
+                    ],
+                    if (volven.isNotEmpty && neno != null && casa != null) ...[
+                      const SizedBox(height: 6),
+                      _VolvenHoxeCard(
+                        nenoId: neno.id,
+                        vencidasTotais: vencidas.length,
+                        tarxetas: volven,
+                        pezas: mapaPezas,
+                        store: casa.store,
+                        agora: agora,
+                        language: lang,
+                        audioService: widget.audioService,
+                      ),
+                    ],
+                    if (!moitasVencidas) ...[
+                      const SizedBox(height: 6),
+                      BannerUnidade(
+                        titulo: u.titulo.resolve(lang),
+                        descricion: u.steam?.resolve(lang) ?? '',
+                        continuar:
+                            lang == AppLanguage.gl ? 'Continuar' : 'Continuar',
+                        onContinuar: () => abrir(actual),
+                      ),
+                      CaminoNodos(
+                        etiquetas: [
+                          for (var d = 0; d < 5; d++) _semana[d].resolve(lang),
+                        ],
+                        actual: actual,
+                        feitoHoxe: xogo?.xogouHoxe(agora) ?? false,
+                        empezar: lang == AppLanguage.gl ? 'Empezar' : 'Empezar',
+                        onNodo: abrir,
+                        lua: xogo == null
+                            ? null
+                            : FutureBuilder<CatalogoLua>(
+                                future: CatalogoLua.cargar(),
+                                initialData: CatalogoLua.lido,
+                                builder: (context, cat) {
+                                  final ini = cat.data?.deInicio ?? const {};
+                                  return LuaValeria(
+                                    key: const Key('hoxe_lua'),
+                                    ancho: 112,
+                                    cabeza: xogo.cabeza ?? ini['head'],
+                                    pescozo: xogo.pescozo ?? ini['neck'],
+                                  );
+                                },
+                              ),
+                      ),
+                    ],
                     const SizedBox(height: 16),
                   ],
                 );
               },
             ),
-            // P11: debajo, la lección de la semana entera, para consultar.
-            const SizedBox(height: 10),
-            LeccionDaSemanaCargada(
-              cursoId: widget.cursoId,
-              mesCalendario: _toca.dia.mesCalendario,
-              semana: _toca.dia.semana,
-              dia: _toca.dia.dia,
-              language: lang,
-              audioService: widget.audioService,
-            ),
+            // P11: debajo, la lección de la semana entera, para consultar
+            // (salvo si hay más de 6 palabras vencidas, que ese día no entran nuevas).
+            if (!_haiMoitasVencidas(context, _leccions)) ...[
+              const SizedBox(height: 10),
+              LeccionDaSemanaCargada(
+                cursoId: widget.cursoId,
+                mesCalendario: _toca.dia.mesCalendario,
+                semana: _toca.dia.semana,
+                dia: _toca.dia.dia,
+                language: lang,
+                audioService: widget.audioService,
+              ),
+            ],
             // O-20261109-3: Lúa de Valeria, con los premios del niño.
             if (CrianzaDaCasa.maybeOf(context) case final casa?)
               if (casa.store.activa case final neno?) ...[
@@ -1025,6 +1112,43 @@ class _HoxeFamiliasScreenState extends State<HoxeFamiliasScreen> {
           ],
         ),
       ),
+    );
+  }
+
+  Map<String, PezaDaLeccion> _pezasDoCurso(Leccions? lec, String cursoId) {
+    final mapa = <String, PezaDaLeccion>{};
+    if (lec == null) return mapa;
+    void engadirCurso(String cid) {
+      for (final u in lec.unidades[cid] ?? const <UnidadeDeLeccions>[]) {
+        for (final l in u.leccions) {
+          for (final p in [...l.novas, ...l.repasa, ...l.xaSabe]) {
+            mapa.putIfAbsent(CriancasStore.claveRepaso(p.en), () => p);
+          }
+        }
+      }
+    }
+
+    engadirCurso(cursoId);
+    for (final cid in lec.unidades.keys) {
+      if (cid != cursoId) engadirCurso(cid);
+    }
+    return mapa;
+  }
+
+  bool _haiMoitasVencidas(BuildContext context, Leccions? lec) {
+    final casa = CrianzaDaCasa.maybeOf(context);
+    final neno = casa?.store.activa;
+    if (casa == null || neno == null) return false;
+    final par =
+        lec?.da(widget.cursoId, _toca.dia.mesCalendario, _toca.dia.semana);
+    final excluidas = {
+      for (final p in par?.$2.novas ?? const <PezaDaLeccion>[])
+        CriancasStore.claveRepaso(p.en),
+    };
+    return casa.store.haiMoitasVencidas(
+      neno.id,
+      agora: widget.agora,
+      excluir: excluidas,
     );
   }
 }
@@ -1450,6 +1574,323 @@ class _FilaConto extends StatelessWidget {
             ],
           ),
         ),
+      ),
+    );
+  }
+}
+
+class _VolvenHoxeCard extends StatelessWidget {
+  const _VolvenHoxeCard({
+    required this.nenoId,
+    required this.vencidasTotais,
+    required this.tarxetas,
+    required this.pezas,
+    required this.store,
+    required this.agora,
+    required this.language,
+    required this.audioService,
+  });
+
+  final String nenoId;
+  final int vencidasTotais;
+  final List<FSRSCard> tarxetas;
+  final Map<String, PezaDaLeccion> pezas;
+  final CriancasStore store;
+  final DateTime agora;
+  final AppLanguage language;
+  final OfflineAudioService? audioService;
+
+  @override
+  Widget build(BuildContext context) {
+    final isGl = language == AppLanguage.gl;
+    final acento = context.acento;
+    final moitas = vencidasTotais > 6;
+    return Container(
+      key: const Key('volven_hoxe_card'),
+      padding: const EdgeInsets.all(14),
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(18),
+        border: Border.all(color: AppTheme.border),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          Row(
+            children: [
+              Icon(Icons.replay_rounded, color: acento, size: 22),
+              const SizedBox(width: 8),
+              Expanded(
+                child: Text(
+                  isGl ? 'Volven hoxe' : 'Vuelven hoy',
+                  key: const Key('volven_hoxe_titulo'),
+                  style: TextStyle(
+                    fontSize: 16,
+                    fontWeight: FontWeight.w800,
+                    color: acento,
+                  ),
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: 6),
+          Text(
+            moitas
+                ? (isGl
+                    ? 'Hoxe non entran palabras novas: hai $vencidasTotais palabras vencidas para repasar con calma.'
+                    : 'Hoy no entran palabras nuevas: hay $vencidasTotais palabras vencidas para repasar con calma.')
+                : (isGl
+                    ? 'Palabras doutros días para lembrar xuntos. Marca o que ves sen pantalla para o neno.'
+                    : 'Palabras de otros días para recordar juntos. Marca lo que ves sin pantalla para el niño.'),
+            key: moitas ? const Key('volven_hoxe_sen_novas') : null,
+            style: const TextStyle(
+              fontSize: 14,
+              color: AppTheme.textSecondary,
+              height: 1.35,
+            ),
+          ),
+          const SizedBox(height: 10),
+          for (var i = 0; i < tarxetas.length; i++) ...[
+            if (i > 0) const Divider(height: 16, color: AppTheme.border),
+            _FilaVolvenHoxe(
+              nenoId: nenoId,
+              tarxeta: tarxetas[i],
+              peza: pezas[CriancasStore.claveRepaso(tarxetas[i].lemma)],
+              store: store,
+              agora: agora,
+              language: language,
+              audioService: audioService,
+            ),
+          ],
+        ],
+      ),
+    );
+  }
+}
+
+class _FilaVolvenHoxe extends StatelessWidget {
+  const _FilaVolvenHoxe({
+    required this.nenoId,
+    required this.tarxeta,
+    required this.peza,
+    required this.store,
+    required this.agora,
+    required this.language,
+    required this.audioService,
+  });
+
+  final String nenoId;
+  final FSRSCard tarxeta;
+  final PezaDaLeccion? peza;
+  final CriancasStore store;
+  final DateTime agora;
+  final AppLanguage language;
+  final OfflineAudioService? audioService;
+
+  @override
+  Widget build(BuildContext context) {
+    final isGl = language == AppLanguage.gl;
+    final en = peza?.en ?? tarxeta.lemma;
+    final significado = peza?.significado;
+    final lamina = peza?.lamina;
+    final xesto = peza?.xesto?.resolve(language) ??
+        (isGl
+            ? 'Ten na man aquilo do que falas e ensínallo mentres o dis.'
+            : 'Ten en la mano aquello de lo que hablas y enséñaselo mientras lo dices.');
+
+    Widget boton(Observacion o, String texto) {
+      return Expanded(
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 2),
+          child: Semantics(
+            button: true,
+            label: '$en: $texto',
+            child: Material(
+              key: ValueKey('volven_marcar_${tarxeta.lemma}_${o.name}'),
+              color: Colors.white,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(12),
+                side: const BorderSide(color: AppTheme.border),
+              ),
+              child: InkWell(
+                borderRadius: BorderRadius.circular(12),
+                onTap: () => store.repasar(nenoId, en, o, agora: agora),
+                child: ConstrainedBox(
+                  constraints: const BoxConstraints(minHeight: 48),
+                  child: Center(
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: 6,
+                        vertical: 8,
+                      ),
+                      child: Text(
+                        texto,
+                        textAlign: TextAlign.center,
+                        style: const TextStyle(
+                          fontSize: 13,
+                          fontWeight: FontWeight.w700,
+                          color: AppTheme.textPrimary,
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            ),
+          ),
+        ),
+      );
+    }
+
+    return Column(
+      key: ValueKey('volven_hoxe_${tarxeta.lemma}'),
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        Row(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            if (lamina != null) ...[
+              LaminaPalabra(
+                clave: lamina,
+                significado: significado?.resolve(language) ?? en,
+                lang: language,
+                ancho: 48,
+              ),
+              const SizedBox(width: 10),
+            ],
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  BotonEscuchar(
+                    audioService: audioService,
+                    texto: en,
+                    language: AppLanguage.en,
+                    interfaz: language,
+                    comoChip: true,
+                    colorChip: context.acento,
+                    descripcion: en,
+                    significado: significado,
+                    onEscoitar: () => store.rexistrarEscoita(nenoId, en),
+                  ),
+                  const SizedBox(height: 4),
+                  Text(
+                    TarxetaMarcarPalabra.textoEscoitas(
+                      store.escoitasDe(nenoId, en),
+                      language,
+                    ),
+                    key: ValueKey('escoitas_${CriancasStore.claveRepaso(en)}'),
+                    style: const TextStyle(
+                      fontSize: 14,
+                      fontWeight: FontWeight.w700,
+                      color: AppTheme.textSecondary,
+                    ),
+                  ),
+                  const SizedBox(height: 4),
+                  Text(
+                    xesto,
+                    style: const TextStyle(
+                      fontSize: 14,
+                      color: AppTheme.textSecondary,
+                      height: 1.3,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ),
+        const SizedBox(height: 8),
+        Row(
+          children: [
+            boton(Observacion.aindaNon, isGl ? 'Aínda non' : 'Aún no'),
+            boton(Observacion.entende, isGl ? 'Enténdea' : 'La entiende'),
+            boton(Observacion.di, isGl ? 'Dia' : 'La dice'),
+          ],
+        ),
+      ],
+    );
+  }
+}
+
+class _LuaPreguntaCard extends StatelessWidget {
+  const _LuaPreguntaCard({
+    required this.neno,
+    required this.semana,
+    required this.palabras,
+    required this.store,
+    required this.agora,
+    required this.language,
+    required this.audioService,
+  });
+
+  final Crianza neno;
+  final String semana;
+  final List<PezaDaLeccion> palabras;
+  final CriancasStore store;
+  final DateTime agora;
+  final AppLanguage language;
+  final OfflineAudioService? audioService;
+
+  @override
+  Widget build(BuildContext context) {
+    final isGl = language == AppLanguage.gl;
+    final acento = context.acento;
+    return Container(
+      key: const Key('lua_pregunta_card'),
+      padding: const EdgeInsets.all(14),
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(18),
+        border: Border.all(color: AppTheme.border),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          Row(
+            children: [
+              const LuaValeria(ancho: 32, cara: CaraLua.love),
+              const SizedBox(width: 8),
+              Expanded(
+                child: Text(
+                  'Lúa pregunta',
+                  key: const Key('lua_pregunta_titulo'),
+                  style: TextStyle(
+                    fontSize: 16,
+                    fontWeight: FontWeight.w800,
+                    color: acento,
+                  ),
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: 6),
+          Text(
+            isGl
+                ? 'Tres palabras desta semana para ${neno.nome}.'
+                : 'Tres palabras de esta semana para ${neno.nome}.',
+            style: const TextStyle(
+              fontSize: 14,
+              color: AppTheme.textSecondary,
+              height: 1.35,
+            ),
+          ),
+          const SizedBox(height: 10),
+          for (var i = 0; i < palabras.length; i++) ...[
+            if (i > 0) const SizedBox(height: 8),
+            TarxetaMarcarPalabra(
+              key: ValueKey('lua_pregunta_card_${palabras[i].en}'),
+              peza: palabras[i],
+              store: store,
+              crianzaId: neno.id,
+              semana: semana,
+              language: language,
+              audioService: audioService,
+              agora: agora,
+              prefixoBoton: 'lua_pregunta',
+            ),
+          ],
+        ],
       ),
     );
   }

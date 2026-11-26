@@ -1,6 +1,8 @@
 import 'package:flutter/foundation.dart';
 
+import '../../core/fsrs_service.dart';
 import '../../core/storage/local_store.dart';
+import '../../data/models/fsrs_card_model.dart';
 import 'xogo_lua.dart';
 
 /// Un niño o niña de la casa, tal como lo registra la persona adulta.
@@ -25,6 +27,28 @@ class Crianza {
   /// El curso de la app que sigue: `curso_0_2` … `curso_5_6`.
   final String curso;
 
+  /// Una o dos rutinas de casa elegidas en el alta (M2):
+  /// `bano`, `comida`, `coche`, `vestirse`, `durmir`, `parque`.
+  final List<String> rutinas;
+
+  /// Número de semanas del curso con alguna marca de la persona adulta (M1).
+  final int semanasConMarcas;
+
+  /// Última semana del curso con alguna marca (`curso_x_y/mes/semana`, sin fecha).
+  final String? ultimaSemanaMarca;
+
+  /// Semana del curso en que se registró (`curso_x_y/mes/semana`, sin fecha).
+  final String? semanaAlta;
+
+  static const List<String> rutinasValidas = [
+    'bano',
+    'comida',
+    'coche',
+    'vestirse',
+    'durmir',
+    'parque',
+  ];
+
   const Crianza({
     required this.id,
     required this.nome,
@@ -33,6 +57,10 @@ class Crianza {
     this.mesNacemento,
     this.anoNacemento,
     this.promocionVistaAno,
+    this.rutinas = const ['bano'],
+    this.semanasConMarcas = 0,
+    this.ultimaSemanaMarca,
+    this.semanaAlta,
   });
 
   /// Años cumplidos en [agora] a partir de [mesNacemento] y [anoNacemento] si
@@ -62,6 +90,10 @@ class Crianza {
     int? mesNacemento,
     int? anoNacemento,
     int? promocionVistaAno,
+    List<String>? rutinas,
+    int? semanasConMarcas,
+    String? ultimaSemanaMarca,
+    String? semanaAlta,
   }) =>
       Crianza(
         id: id,
@@ -71,6 +103,10 @@ class Crianza {
         mesNacemento: mesNacemento ?? this.mesNacemento,
         anoNacemento: anoNacemento ?? this.anoNacemento,
         promocionVistaAno: promocionVistaAno ?? this.promocionVistaAno,
+        rutinas: rutinas ?? this.rutinas,
+        semanasConMarcas: semanasConMarcas ?? this.semanasConMarcas,
+        ultimaSemanaMarca: ultimaSemanaMarca ?? this.ultimaSemanaMarca,
+        semanaAlta: semanaAlta ?? this.semanaAlta,
       );
 
   Map<String, dynamic> toJson() => {
@@ -81,7 +117,19 @@ class Crianza {
         if (mesNacemento != null) 'mesNacemento': mesNacemento,
         if (anoNacemento != null) 'anoNacemento': anoNacemento,
         if (promocionVistaAno != null) 'promocionVistaAno': promocionVistaAno,
+        'rutinas': rutinas,
+        if (semanasConMarcas > 0) 'semanasConMarcas': semanasConMarcas,
+        if (ultimaSemanaMarca != null) 'ultimaSemanaMarca': ultimaSemanaMarca,
+        if (semanaAlta != null) 'semanaAlta': semanaAlta,
       };
+
+  static List<String> normalizarRutinas(Iterable<String> orixe) {
+    final validas = [
+      for (final r in orixe)
+        if (rutinasValidas.contains(r)) r,
+    ].take(2).toList(growable: false);
+    return validas.isEmpty ? const ['bano'] : List.unmodifiable(validas);
+  }
 
   static Crianza? fromJson(Object? j) {
     if (j is! Map) return null;
@@ -93,6 +141,13 @@ class Crianza {
     final ano = j['anoNacemento'] is int ? j['anoNacemento'] as int : null;
     final prom =
         j['promocionVistaAno'] is int ? j['promocionVistaAno'] as int : null;
+    final rRaw = j['rutinas'] is List
+        ? [for (final x in j['rutinas'] as List) x.toString()]
+        : const <String>[];
+    final semMarcas =
+        j['semanasConMarcas'] is int ? j['semanasConMarcas'] as int : 0;
+    final ultSem = j['ultimaSemanaMarca']?.toString();
+    final semAlta = j['semanaAlta']?.toString();
     if (id.isEmpty || nome.isEmpty || curso.isEmpty) return null;
     return Crianza(
       id: id,
@@ -102,6 +157,10 @@ class Crianza {
       mesNacemento: mes == null ? null : mes.clamp(1, 12),
       anoNacemento: ano,
       promocionVistaAno: prom,
+      rutinas: normalizarRutinas(rRaw),
+      semanasConMarcas: semMarcas < 0 ? 0 : semMarcas,
+      ultimaSemanaMarca: ultSem,
+      semanaAlta: semAlta,
     );
   }
 }
@@ -160,12 +219,12 @@ class CriancasStore extends ChangeNotifier {
 
   /// Ya cargado, en memoria: para los tests.
   CriancasStore.enMemoria(List<Crianza> criancas, {LocalStore? store})
-      : _store = store ?? LocalStore(fileName: nomeFicheiro) {
+      : _store = store {
     _criancas.addAll(criancas);
     _cargado = true;
   }
 
-  final LocalStore _store;
+  final LocalStore? _store;
   final List<Crianza> _criancas = [];
   String? _activa;
 
@@ -174,6 +233,14 @@ class CriancasStore extends ChangeNotifier {
 
   /// niño → su juego con Lúa (O-20261109-3): XP, racha, insignias y armario.
   final Map<String, XogoLua> _xogo = {};
+
+  /// niño → palabra normalizada → tarjeta FSRS de ese niño (sin hora).
+  final Map<String, Map<String, FSRSCard>> _repaso = {};
+  final Map<String, int> _repasoSeguinteId = {};
+  final FsrsService _fsrs = const FsrsService();
+
+  /// niño → palabra normalizada → número de veces que la ha oído/marcado (M4).
+  final Map<String, Map<String, int>> _escoitas = {};
 
   bool _cargado = false;
   bool get cargado => _cargado;
@@ -187,11 +254,24 @@ class CriancasStore extends ChangeNotifier {
     return _criancas.isEmpty ? null : _criancas.first;
   }
 
+  static String claveRepaso(String palabra) => palabra.trim().toLowerCase();
+
+  static DateTime _soloDia(DateTime d) => DateTime(d.year, d.month, d.day);
+
   Future<void> cargar() async {
-    final j = await _store.read();
+    final store = _store;
+    if (store == null) {
+      _cargado = true;
+      notifyListeners();
+      return;
+    }
+    final j = await store.read();
     _criancas.clear();
     _obs.clear();
     _xogo.clear();
+    _repaso.clear();
+    _repasoSeguinteId.clear();
+    _escoitas.clear();
     if (j != null) {
       if (j['xogo'] case final Map x) {
         for (final e in x.entries) {
@@ -219,6 +299,36 @@ class CriancasStore extends ChangeNotifier {
           _obs[porNeno.key.toString()] = semanas;
         }
       }
+      final r = j['repaso'];
+      if (r is Map) {
+        for (final porNeno in r.entries) {
+          if (porNeno.value is! Map) continue;
+          final nid = porNeno.key.toString();
+          final tarjetas = <String, FSRSCard>{};
+          var maxId = 0;
+          for (final entry in (porNeno.value as Map).entries) {
+            if (entry.value is! Map) continue;
+            final card = FSRSCard.fromJson(
+              Map<String, dynamic>.from(entry.value as Map),
+            );
+            tarjetas[claveRepaso(entry.key.toString())] = card;
+            if (card.id > maxId) maxId = card.id;
+          }
+          _repaso[nid] = tarjetas;
+          _repasoSeguinteId[nid] = maxId + 1;
+        }
+      }
+      final es = j['escoitas'];
+      if (es is Map) {
+        for (final porNeno in es.entries) {
+          if (porNeno.value is! Map) continue;
+          _escoitas[porNeno.key.toString()] = {
+            for (final p in (porNeno.value as Map).entries)
+              if (p.value is int && (p.value as int) > 0)
+                claveRepaso(p.key.toString()): p.value as int,
+          };
+        }
+      }
     }
     _cargado = true;
     notifyListeners();
@@ -239,11 +349,23 @@ class CriancasStore extends ChangeNotifier {
           for (final e in _xogo.entries)
             if (_criancas.any((c) => c.id == e.key)) e.key: e.value.toJson(),
         },
+        'repaso': {
+          for (final e in _repaso.entries)
+            if (_criancas.any((c) => c.id == e.key) && e.value.isNotEmpty)
+              e.key: {
+                for (final c in e.value.entries) c.key: c.value.toJson(),
+              },
+        },
+        'escoitas': {
+          for (final e in _escoitas.entries)
+            if (_criancas.any((c) => c.id == e.key) && e.value.isNotEmpty)
+              e.key: e.value,
+        },
       };
 
   Future<void> _gardar() async {
     notifyListeners();
-    await _store.write(_json());
+    await _store?.write(_json());
   }
 
   String _novoId() {
@@ -261,6 +383,8 @@ class CriancasStore extends ChangeNotifier {
     int? mesNacemento,
     int? anoNacemento,
     int? promocionVistaAno,
+    List<String>? rutinas,
+    String? semanaAlta,
   }) async {
     final c = Crianza(
       id: _novoId(),
@@ -270,6 +394,8 @@ class CriancasStore extends ChangeNotifier {
       mesNacemento: mesNacemento?.clamp(1, 12),
       anoNacemento: anoNacemento,
       promocionVistaAno: promocionVistaAno,
+      rutinas: Crianza.normalizarRutinas(rutinas ?? const ['bano']),
+      semanaAlta: semanaAlta,
     );
     _criancas.add(c);
     _activa = c.id;
@@ -291,6 +417,7 @@ class CriancasStore extends ChangeNotifier {
     int? mesNacemento,
     int? anoNacemento,
     int? promocionVistaAno,
+    List<String>? rutinas,
   }) async {
     final i = _criancas.indexWhere((c) => c.id == id);
     if (i < 0) return;
@@ -301,6 +428,7 @@ class CriancasStore extends ChangeNotifier {
       mesNacemento: mesNacemento?.clamp(1, 12),
       anoNacemento: anoNacemento,
       promocionVistaAno: promocionVistaAno,
+      rutinas: rutinas == null ? null : Crianza.normalizarRutinas(rutinas),
     );
     await _gardar();
   }
@@ -344,12 +472,74 @@ class CriancasStore extends ChangeNotifier {
     _criancas.removeWhere((c) => c.id == id);
     _obs.remove(id);
     _xogo.remove(id);
+    _repaso.remove(id);
+    _repasoSeguinteId.remove(id);
+    _escoitas.remove(id);
     if (_activa == id) _activa = _criancas.isEmpty ? null : _criancas.first.id;
     await _gardar();
   }
 
   static String semana(String curso, int mes, int semana) =>
       '$curso/$mes/$semana';
+
+  static const List<int> _mesesCurso = [9, 10, 11, 12, 1, 2, 3, 4, 5, 6];
+
+  /// Índice 0..39 dentro del curso escolar a partir de `'curso_x_y/mes/semana'`.
+  static int indiceSemanaCurso(String? semanaKey) {
+    if (semanaKey == null) return -1;
+    final partes = semanaKey.split('/');
+    if (partes.length != 3) return -1;
+    final mes = int.tryParse(partes[1]);
+    final sem = int.tryParse(partes[2]);
+    if (mes == null || sem == null) return -1;
+    final idxMes = _mesesCurso.indexOf(mes);
+    if (idxMes < 0) return -1;
+    return idxMes * 4 + (sem.clamp(1, 4) - 1);
+  }
+
+  /// Cuántas semanas lleva este niño sin marcas desde la última marca o desde su alta.
+  int semanasSenMarcas(
+    String id, {
+    required int mesCalendario,
+    required int semana,
+  }) {
+    final i = _criancas.indexWhere((c) => c.id == id);
+    if (i < 0) return 0;
+    final c = _criancas[i];
+    final ref = c.ultimaSemanaMarca ?? c.semanaAlta;
+    if (ref == null) return 0;
+    final actual = indiceSemanaCurso('${c.curso}/$mesCalendario/$semana');
+    final previa = indiceSemanaCurso(ref);
+    if (actual < 0 || previa < 0 || actual <= previa) return 0;
+    return actual - previa;
+  }
+
+  int escoitasDe(String id, String palabra) =>
+      _escoitas[id]?[claveRepaso(palabra)] ?? 0;
+
+  void _incrementarEscoita(String id, String palabra) {
+    final clave = claveRepaso(palabra);
+    if (clave.isEmpty) return;
+    final mapa = _escoitas.putIfAbsent(id, () => {});
+    mapa[clave] = (mapa[clave] ?? 0) + 1;
+  }
+
+  Future<void> rexistrarEscoita(String id, String palabra) async {
+    _incrementarEscoita(id, palabra);
+    await _gardar();
+  }
+
+  void _marcarSemana(String id, String? semanaKey) {
+    if (semanaKey == null) return;
+    final i = _criancas.indexWhere((c) => c.id == id);
+    if (i < 0) return;
+    final c = _criancas[i];
+    if (c.ultimaSemanaMarca == semanaKey) return;
+    _criancas[i] = c.copyWith(
+      semanasConMarcas: c.semanasConMarcas + 1,
+      ultimaSemanaMarca: semanaKey,
+    );
+  }
 
   Observacion observacion(String id, String semana, String palabra) =>
       switch (_obs[id]?[semana]?[palabra]) {
@@ -358,12 +548,50 @@ class CriancasStore extends ChangeNotifier {
         _ => Observacion.aindaNon,
       };
 
+  static int ratingParaObservacion(Observacion o) => switch (o) {
+        Observacion.di => 3,
+        Observacion.entende => 2,
+        Observacion.aindaNon => 1,
+      };
+
+  FSRSCard _asegurarTarxeta(String id, String palabra, DateTime dia) {
+    final clave = claveRepaso(palabra);
+    final mapa = _repaso.putIfAbsent(id, () => {});
+    final existente = mapa[clave];
+    if (existente != null) return existente;
+    final nextId = _repasoSeguinteId[id] ?? 1;
+    _repasoSeguinteId[id] = nextId + 1;
+    final creada = FSRSCard.initial(
+      id: nextId,
+      lemma: palabra.trim(),
+      now: dia,
+    );
+    mapa[clave] = creada;
+    return creada;
+  }
+
+  void _actualizarTarxeta(
+    String id,
+    String palabra,
+    Observacion o,
+    DateTime dia,
+  ) {
+    final clave = claveRepaso(palabra);
+    final actual = _asegurarTarxeta(id, palabra, dia);
+    _repaso.putIfAbsent(id, () => {})[clave] = _fsrs.repeat(
+      card: actual,
+      rating: ratingParaObservacion(o),
+      now: dia,
+    );
+  }
+
   Future<void> observar(
     String id,
     String semana,
     String palabra,
-    Observacion o,
-  ) async {
+    Observacion o, {
+    DateTime? agora,
+  }) async {
     final porSemana = _obs.putIfAbsent(id, () => {});
     final palabras = porSemana.putIfAbsent(semana, () => {});
     if (o == Observacion.aindaNon) {
@@ -371,8 +599,114 @@ class CriancasStore extends ChangeNotifier {
     } else {
       palabras[palabra] = o == Observacion.di ? 2 : 1;
     }
+    _actualizarTarxeta(id, palabra, o, _soloDia(agora ?? DateTime.now()));
+    _incrementarEscoita(id, palabra);
+    _marcarSemana(id, semana);
     await _gardar();
   }
+
+  /// Marca una palabra desde «Volven hoxe / Vuelven hoy» y actualiza su FSRS.
+  Future<void> repasar(
+    String id,
+    String palabra,
+    Observacion o, {
+    String? semana,
+    DateTime? agora,
+  }) async {
+    final dia = _soloDia(agora ?? DateTime.now());
+    _actualizarTarxeta(id, palabra, o, dia);
+    _incrementarEscoita(id, palabra);
+    if (semana != null) {
+      final porSemana = _obs.putIfAbsent(id, () => {});
+      final palabras = porSemana.putIfAbsent(semana, () => {});
+      if (o == Observacion.aindaNon) {
+        palabras.remove(palabra);
+      } else {
+        palabras[palabra] = o == Observacion.di ? 2 : 1;
+      }
+      _marcarSemana(id, semana);
+    }
+    await _gardar();
+  }
+
+  /// Siembra tarjetas FSRS para un niño (por ejemplo tras la prueba de entrada
+  /// o desde lecciones pasadas). No pisa tarjetas ya repasadas salvo que se pida.
+  Future<void> sembrarRepaso(
+    String id,
+    Iterable<String> palabras, {
+    DateTime? agora,
+    Observacion nivel = Observacion.di,
+    bool vencidasHoxe = false,
+  }) async {
+    final dia = _soloDia(agora ?? DateTime.now());
+    final mapa = _repaso.putIfAbsent(id, () => {});
+    var mudou = false;
+    for (final raw in palabras) {
+      final palabra = raw.trim();
+      if (palabra.isEmpty) continue;
+      final clave = claveRepaso(palabra);
+      if (mapa.containsKey(clave)) continue;
+      final tarxeta = _asegurarTarxeta(id, palabra, dia);
+      mapa[clave] = vencidasHoxe
+          ? tarxeta.copyWith(lastReviewDate: dia, nextDueDate: dia)
+          : _fsrs.repeat(
+              card: tarxeta,
+              rating: ratingParaObservacion(nivel),
+              now: dia,
+            );
+      mudou = true;
+    }
+    if (mudou) await _gardar();
+  }
+
+  Map<String, FSRSCard> tarxetasDe(String id) =>
+      Map.unmodifiable(_repaso[id] ?? const {});
+
+  FSRSCard? tarxetaDe(String id, String palabra) =>
+      _repaso[id]?[claveRepaso(palabra)];
+
+  List<FSRSCard> tarxetasVencidas(
+    String id, {
+    DateTime? agora,
+    Set<String> excluir = const {},
+  }) {
+    final mapa = _repaso[id];
+    if (mapa == null || mapa.isEmpty) return const [];
+    final hoxe = _soloDia(agora ?? DateTime.now());
+    final excl = {for (final w in excluir) claveRepaso(w)};
+    final lista = [
+      for (final e in mapa.entries)
+        if (!excl.contains(e.key) &&
+            !_soloDia(e.value.nextDueDate).isAfter(hoxe))
+          e.value,
+    ];
+    lista.sort((a, b) {
+      final cmpDate =
+          _soloDia(a.nextDueDate).compareTo(_soloDia(b.nextDueDate));
+      if (cmpDate != 0) return cmpDate;
+      final cmpStab = a.stability.compareTo(b.stability);
+      if (cmpStab != 0) return cmpStab;
+      return a.id.compareTo(b.id);
+    });
+    return lista;
+  }
+
+  List<FSRSCard> volvenHoxe(
+    String id, {
+    DateTime? agora,
+    Set<String> excluir = const {},
+    int maximo = 4,
+  }) =>
+      tarxetasVencidas(id, agora: agora, excluir: excluir)
+          .take(maximo)
+          .toList(growable: false);
+
+  bool haiMoitasVencidas(
+    String id, {
+    DateTime? agora,
+    Set<String> excluir = const {},
+  }) =>
+      tarxetasVencidas(id, agora: agora, excluir: excluir).length > 6;
 
   /// Las semanas con alguna observación, en el orden del curso, y cuántas
   /// palabras entiende y dice en cada una.

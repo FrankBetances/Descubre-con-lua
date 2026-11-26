@@ -13,6 +13,7 @@ import '../../../core/theme/app_theme.dart';
 import '../../../core/widgets/movimiento.dart';
 import '../../../data/models/leccion_model.dart';
 import '../../criancas/criancas_store.dart';
+import '../../criancas/marcar_palabras_screen.dart';
 import '../../criancas/xogo_lua.dart';
 import '../../leccions/widgets/proxecto_0_2.dart';
 import '../../../data/models/plan_escoita_model.dart';
@@ -549,7 +550,7 @@ List<PasoLeccion> pasosDoDia(Leccion l, int dia, AppLanguage lang) {
   final isGl = lang == AppLanguage.gl;
   final d =
       l.dias.isEmpty ? null : l.dias[(dia - 1).clamp(0, l.dias.length - 1)];
-  final pezas = l.repaso ? l.repasa : l.novas;
+  final pezas = l.repaso ? [...l.novas, ...l.repasa] : l.novas;
   // O-20261111-2: la lámina de la escena solo va en el paso del reto (el día
   // cuyo inglés es la frase del reto). Los demás días enseñan los dibujos de
   // las palabras de la semana, que son las que ese paso nombra.
@@ -685,11 +686,52 @@ class _LeccionDuolingoScreenState extends State<LeccionDuolingoScreen> {
     }
   }
 
+  List<PezaDaLeccion> _pezasDeHoxe() {
+    final vistos = <String>{};
+    final out = <PezaDaLeccion>[];
+    for (final p in widget.pasos) {
+      final z = p.peza;
+      if (z == null) continue;
+      if (vistos.add(CriancasStore.claveRepaso(z.en))) {
+        out.add(z);
+        if (out.length >= 4) break;
+      }
+    }
+    return out;
+  }
+
+  void _rematarLeccion() {
+    final store = widget.store;
+    final crianza = widget.crianza;
+    final pezas = _pezasDeHoxe();
+    if (store != null && crianza != null && pezas.isNotEmpty) {
+      Navigator.of(context).pushReplacement(
+        RutaLua(
+          de: context,
+          builder: (_) => MarcarEnDezSegundosScreen(
+            store: store,
+            crianza: crianza,
+            semana: widget.semana,
+            palabras: pezas,
+            language: widget.language,
+            audioService: widget.audioService,
+            agora: widget.agora,
+          ),
+        ),
+      );
+      return;
+    }
+    Navigator.of(context).maybePop();
+  }
+
   @override
   Widget build(BuildContext context) {
     final lang = widget.language;
     final isGl = lang == AppLanguage.gl;
     final total = widget.pasos.isEmpty ? 1 : widget.pasos.length;
+    final onEscoitar = (widget.store != null && widget.crianza != null)
+        ? (String en) => widget.store!.rexistrarEscoita(widget.crianza!.id, en)
+        : null;
     return Scaffold(
       backgroundColor: Colors.white,
       body: SafeArea(
@@ -744,6 +786,7 @@ class _LeccionDuolingoScreenState extends State<LeccionDuolingoScreen> {
                             : widget.pasos[_i],
                         lang: lang,
                         audioService: widget.audioService,
+                        onEscoitar: onEscoitar,
                       ),
               ),
             ),
@@ -762,8 +805,7 @@ class _LeccionDuolingoScreenState extends State<LeccionDuolingoScreen> {
                 borde: DuoCores.verdeBorde,
                 cor: Colors.white,
                 ancho: true,
-                onTap:
-                    _fin ? () => Navigator.of(context).maybePop() : _continuar,
+                onTap: _fin ? _rematarLeccion : _continuar,
               ),
             ),
           ],
@@ -808,10 +850,12 @@ class _PasoVista extends StatelessWidget {
   final PasoLeccion paso;
   final AppLanguage lang;
   final OfflineAudioService? audioService;
+  final ValueChanged<String>? onEscoitar;
   const _PasoVista({
     required this.paso,
     required this.lang,
     required this.audioService,
+    this.onEscoitar,
   });
 
   @override
@@ -875,6 +919,7 @@ class _PasoVista extends StatelessWidget {
                 colorChip: DuoCores.verde,
                 descripcion: p.en,
                 significado: p.significado,
+                onEscoitar: onEscoitar == null ? null : () => onEscoitar!(p.en),
               ),
             ),
             if (p.significado case final s?) ...[

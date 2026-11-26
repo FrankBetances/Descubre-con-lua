@@ -389,10 +389,17 @@ def revisar(saida):
             titulos[t] = curso
             cu = cat_da_unidade(u["gramatica"]["titulo"]["es"])
             for l in u["leccions"]:
-                if cu and not any(p.get("tipo") == cu for p in l["novas"]):
-                    fallos.append(f"{l['id']}: ninguna palabra nueva es de la clase de su unidad ({cu})")
-                if len(l["novas"]) < MINIMO_NOVAS:
-                    fallos.append(f"{l['id']}: {len(l['novas'])} palabras nuevas")
+                is_repaso = l.get("tipo") == "repaso"
+                if not is_repaso:
+                    if cu and not any(p.get("tipo") == cu for p in l["novas"]):
+                        fallos.append(f"{l['id']}: ninguna palabra nueva es de la clase de su unidad ({cu})")
+                    if len(l["novas"]) < MINIMO_NOVAS:
+                        fallos.append(f"{l['id']}: {len(l['novas'])} palabras nuevas")
+                else:
+                    if len(l["novas"]) > 1:
+                        fallos.append(f"{l['id']}: semana de repaso con {len(l['novas'])} palabras nuevas (máx 1)")
+                    if not l["repasa"]:
+                        fallos.append(f"{l['id']}: semana de repaso sin palabras en repasa")
                 if curso in CONTO_COMPLETO:
                     for p in l["novas"]:
                         if sen_puntos(p["en"]) not in CONTO_TEXTO.get(l["id"], ""):
@@ -466,11 +473,34 @@ def main():
         trozos_plan = {}
         for uid, sems in semanas_plan.items():
             its = items_da_unidade(plan[uid])
-            tr = repartir(its, len(sems)) if its else [[] for _ in sems]
-            trozos_plan[uid] = dict(zip(sems, tr))
+            # Preferir semanas 1-3 (y las que ya citan la palabra en su cuento)
+            # para dejar como mucho 1 palabra nueva en la semana 4 de cada mes.
+            sems_ord = sorted(sems, key=lambda ms: (ms[1] == 4, MESES_ORDE.index(ms[0]), ms[1]))
+            asig = {ms: [] for ms in sems}
+            if its:
+                w4_usadas = set()
+                textos_uid = {
+                    ms: sen_puntos(json.dumps(
+                        (conto_sem.get((curso, MESES_ORDE.index(ms[0]) + 1, ms[1])) or {}).get("paginas", []),
+                        ensure_ascii=False,
+                    ))
+                    for ms in sems
+                }
+                for idx_it, it in enumerate(its):
+                    sp = sen_puntos(it[1]["en"])
+                    cands_w = [ms for ms in sems_ord if sp in textos_uid[ms] and (ms[1] < 4 or ms not in w4_usadas)]
+                    if not cands_w:
+                        cands_w = [ms for ms in sems_ord if sp in textos_uid[ms]]
+                    if not cands_w:
+                        cands_w = [ms for ms in sems_ord if ms[1] < 4]
+                    destino = min(cands_w, key=lambda ms: (ms[1] == 4 and ms in w4_usadas, ms[1] == 4, len(asig[ms])))
+                    if destino[1] == 4:
+                        w4_usadas.add(destino)
+                    asig[destino].append(it)
+            trozos_plan[uid] = asig
         ensinado, unidades, calendario = set(ensinado_antes), [], {}
-        # Lo que ya debería saber al empezar el curso: lo último del anterior.
-        anterior = list(ultimas_do_curso)
+        anterior = []
+        leccions_curso, intro_sem, pezas_curso = [], {}, {}
         k_plan, ultimo_reto = {}, None
         for n_mes, mes in enumerate(MESES_ORDE, start=1):
             um = json.loads((C / "unidades_mes" / curso / f"unidade.{n_mes:02d}.json").read_text())
@@ -493,18 +523,47 @@ def main():
             xc = hogar.get("juegoCasa") or {}
             xogo_tit = (xogos[xc["xogo"]]["titulo"] if xc.get("xogo") in xogos
                         else steam_tit.get(xc.get("steam")))
+            textos_mes = [
+                sen_puntos(json.dumps((conto_sem.get((curso, n_mes, w + 1)) or {}).get("paginas", []), ensure_ascii=False))
+                for w in range(4)
+            ]
+            cands_mes = [[] for _ in range(4)]
+            vistos_mes = set()
+            for k in range(4):
+                sem_k = k + 1
+                for p in trozos_mes[k] + [peza_de(it, t if t != "palabra" else
+                                                  cat_en.get(norm(it["en"]), "palabra"), sig)
+                                          for t, it in trozos_plan[uid].get((mes, sem_k), [])]:
+                    nk = norm(p["en"])
+                    if nk in ensinado or nk in vistos_mes:
+                        continue
+                    vistos_mes.add(nk)
+                    sp = sen_puntos(p["en"])
+                    if sp in textos_mes[k]:
+                        cands_mes[k].append(p)
+                    else:
+                        destino = next((w for w in range(3) if sp in textos_mes[w]), k)
+                        cands_mes[destino].append(p)
+            if len(cands_mes[3]) > 1:
+                quedan_w4 = []
+                extras_w4 = []
+                for p in cands_mes[3]:
+                    sp = sen_puntos(p["en"])
+                    destino = next((w for w in range(3) if sp in textos_mes[w]), None)
+                    if destino is not None:
+                        cands_mes[destino].append(p)
+                    else:
+                        extras_w4.append(p)
+                if extras_w4:
+                    quedan_w4.append(extras_w4[0])
+                    for p in extras_w4[1:]:
+                        cands_mes[2].append(p)
+                cands_mes[3] = quedan_w4[:1]
             leccions, da_unidade, micro_usado = [], [], False
             for k in range(4):
                 semana = k + 1
-                novas, vistos = [], set()
-                for p in trozos_mes[k] + [peza_de(it, t if t != "palabra" else
-                                                  cat_en.get(norm(it["en"]), "palabra"), sig)
-                                          for t, it in trozos_plan[uid].get((mes, semana), [])]:
-                    nk = norm(p["en"])
-                    if nk in ensinado or nk in vistos:
-                        continue
-                    vistos.add(nk)
-                    novas.append(p)
+                novas = list(cands_mes[k])
+                vistos = {norm(p["en"]) for p in novas}
                 # Si el plan no da bastante, el banco de la edad para esa
                 # semana, en su orden: es lo que esa edad trabaja ese mes.
                 cs = conto_sem.get((curso, n_mes, semana))
@@ -513,16 +572,17 @@ def main():
                 # Primero, las de la clase que trabaja la unidad de gramática;
                 # luego, las que salen en el cuento de la semana.
                 cu = cat_da_unidade(puntos[gram["ruta"][curso][str(mes)]["punto"]]["titulo"]["es"])
-                for it in sorted(da_semana, key=lambda x: (x["que"] != cu, norm(x["en"]) not in do_conto)):
-                    if len(novas) >= MINIMO_NOVAS and (not cu or any(p.get("tipo") == cu for p in novas)):
-                        break
-                    nk = norm(it["en"])
-                    if nk in ensinado or nk in vistos or not (it.get("gl") and it.get("es")):
-                        continue
-                    vistos.add(nk)
-                    novas.append(peza_de(it, it["que"], sig))
-                repaso = not novas
-                repasa = [] if novas else (da_unidade or anterior)[-4:]
+                if semana < 4:
+                    for it in sorted(da_semana, key=lambda x: (x["que"] != cu, norm(x["en"]) not in do_conto)):
+                        if len(novas) >= MINIMO_NOVAS and (not cu or any(p.get("tipo") == cu for p in novas)):
+                            break
+                        nk = norm(it["en"])
+                        if nk in ensinado or nk in vistos or not (it.get("gl") and it.get("es")):
+                            continue
+                        vistos.add(nk)
+                        novas.append(peza_de(it, it["que"], sig))
+                repaso = (semana == 4) or (not novas)
+                repasa = (da_unidade or anterior)[-4:] if repaso else []
                 # El reto practica una palabra de ESTA semana, no otra de la
                 # unidad del plan: si no, el tema del mes y el reto no casan.
                 cand = [p for p in (novas or repasa) if p["en"] != ultimo_reto]
@@ -618,7 +678,12 @@ def main():
                     r["frase"] = con_significado(r["frase"], idx)
                 lid = f"{curso}.{n_mes:02d}.{semana}"
                 CONTO_TEXTO[lid] = sen_puntos(json.dumps((cs or {}).get("paginas", []), ensure_ascii=False))
-                leccions.append({
+                idx_sem = len(leccions_curso)
+                for p in novas:
+                    nk = norm(p["en"])
+                    intro_sem.setdefault(nk, idx_sem)
+                    pezas_curso[nk] = dict(p)
+                lec_obj = {
                     "id": lid,
                     "numero": semana,
                     "de": 4,
@@ -631,7 +696,7 @@ def main():
                     "comoFalar": (lambda t: {"clave": t["clave"], "titulo": t["titulo"],
                                              "como": t["como"][:2]})(
                         modelo[TECNICA.get(curso, TECNICA_RESTO)[k]]),
-                    "xaSabe": [con_significado(dict(p), idx) for p in (da_unidade or anterior)[-8:]],
+                    "xaSabe": [],
                     "novas": novas,
                     "repasa": [dict(p) for p in repasa],
                     "reto": {**r, "momento": momento,
@@ -643,7 +708,9 @@ def main():
                     "dias": [{"dia": {"gl": g, "es": e}, "texto": {"gl": tg, "es": te},
                               **(con_significado({"en": en}, idx) if en else {})}
                              for (g, e), (tg, te, en) in zip(DIAS, dias)],
-                })
+                }
+                leccions.append(lec_obj)
+                leccions_curso.append(lec_obj)
                 calendario.setdefault(str(mes), []).append(lid)
                 for p in novas:
                     ensinado.add(norm(p["en"]))
@@ -673,9 +740,40 @@ def main():
                 "leccions": leccions,
             })
             anterior = da_unidade or anterior
+        # Repaso espaciado en el aula (+1, +2, +4, +8, +16 semanas desde la
+        # introducción en este curso), sin repetir piezas entre xaSabe y repasa.
+        for idx_sem, lec_obj in enumerate(leccions_curso):
+            due_rep = [nk for nk, j in intro_sem.items()
+                       if idx_sem - j in (1, 2)]
+            due_xa = [nk for nk, j in intro_sem.items()
+                      if idx_sem - j in (4, 8, 16)]
+            if idx_sem == len(leccions_curso) - 1:
+                extra_end = [nk for nk, j in intro_sem.items()
+                             if idx_sem - j in (5, 6, 7)]
+                due_xa = due_xa + extra_end
+            if lec_obj["tipo"] == "repaso":
+                lec_obj["repasa"] = [dict(pezas_curso[nk]) for nk in due_rep]
+                lec_obj["xaSabe"] = [dict(pezas_curso[nk]) for nk in due_xa]
+                rep_str = ", ".join(f"«{p['en']}»" for p in lec_obj["repasa"][:4])
+                if lec_obj["novas"]:
+                    nova_str = f"«{lec_obj['novas'][0]['en']}»"
+                    lec_obj["dias"][0]["texto"] = {
+                        "gl": f"Escoita ti a palabra nova, {nova_str}, e repasa {rep_str} co seu xesto.",
+                        "es": f"Escucha tú la palabra nueva, {nova_str}, y repasa {rep_str} con su gesto.",
+                    }
+                else:
+                    lec_obj["dias"][0]["texto"] = {
+                        "gl": f"Escoita ti as palabras que volven, {rep_str}, e dias co seu xesto.",
+                        "es": f"Escucha tú las palabras que vuelven, {rep_str}, y dilas con su gesto.",
+                    }
+            else:
+                due_all = [nk for nk, j in intro_sem.items()
+                           if idx_sem - j in (1, 2, 4, 8, 16)]
+                lec_obj["xaSabe"] = [dict(pezas_curso[nk]) for nk in due_all]
+                lec_obj["repasa"] = []
         saida["cursos"][curso] = {"unidades": unidades, "calendario": calendario}
         ensinado_antes |= ensinado
-        ultimas_do_curso = (anterior or [])[-8:]
+        ultimas_do_curso = []
     # O-20261111-2: cada pieza enseñada, con su lámina (tools/gen_laminas_palabras.py).
     mapa_laminas = json.loads((Path(__file__).resolve().parent.parent / "assets/content/laminas/palabras_laminas.json").read_text(encoding="utf-8"))["pezas"] \
         if (Path(__file__).resolve().parent.parent / "assets/content/laminas/palabras_laminas.json").exists() else {}
