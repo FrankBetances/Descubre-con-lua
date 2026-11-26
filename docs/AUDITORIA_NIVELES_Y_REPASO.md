@@ -182,7 +182,7 @@ la fase que corrige cada uno, no antes, porque hoy tumbaría CI.
 | --- | --- | --- | --- |
 | F1 · Familia con varios niños | Na casa: al dar de alta, «¿Hay otro neno na casa?». En Hoxe, arriba, una fila con cada niño (Lúa y su nombre) y la tarea de hoy de cada uno; un toque cambia de niño. El curso solo se cambia dentro de «Editar». Premios por niño | D3 (si se guarda la fecha) | widget test con tres niños en tres cursos y capturas gl/es |
 | F2 · Repaso por niño | En Hoxe, «Volven hoxe / Vuelven hoy»: 2 a 4 palabras de cualquier semana anterior, elegidas por el FSRS de ese niño. «La dice» alarga el intervalo, «la entiende» lo mantiene, «aún no» lo acorta. En el aula, donde no hay niños, vuelven a 1, 2, 4, 8 y 16 semanas fijas | D3 | `auditoria_niveles.py --gate`: cada palabra vuelve al menos 4 veces y alguna pasado un mes; test de la tarjeta por niño |
-| F3 · Prueba de nivel | Al registrar un niño de 2 años o más, y cuando se quiera desde su ficha: «Xogo de Lúa para saber por onde empezar». Peldaños de comprensión de órdenes, señalar, contraste, decir la palabra y decir una frase corta, con palabras del STEAM de su curso. Para tras tres fallos seguidos; el peldaño es el último con dos de tres. Siembra el repaso con lo que ya sabe | D1, D2, D3 | test del árbol de decisión y de la siembra |
+| F3 · Prueba de nivel | Dentro del alta, una sola vez por niño de 2 años o más (Frank, 26/11/2026): «Xogo de Lúa para saber por onde empezar». Después no se repite: el nivel lo ajusta F3b cada semana. Peldaños de comprensión de órdenes, señalar, contraste, decir la palabra y decir una frase corta, con palabras del STEAM de su curso. Para tras tres fallos seguidos; el peldaño es el último con dos de tres. Siembra el repaso con lo que ya sabe | D1, D2, D3 | test del árbol de decisión y de la siembra |
 | F3b · Ajuste dinámico | Na casa → Hoxe: cada lunes, cuántas palabras nuevas tiene el niño, cuánto repaso y en qué peldaño está cambian según lo que la familia marcó la semana anterior; una línea dice por qué («Esta semana 4 palabras novas: Uxía xa di 4 das 5 da anterior»). Ver 4b | F2, F3, D1, D5, D6 | test con cuatro niños simulados (rápido, medio, lento y sin marcas) y gate de capas por semana |
 | F4 · 0-2 rehecho | Na casa, 0-2: dos o tres piezas nuevas por semana de las cinco familias de D4, frases de tres palabras como mucho, y lo de semanas anteriores volviendo cada día | D4, D5 | `--gate` en 0-2 |
 | F5 · 2-3 a 5-6 recalibrados | Cada semana un poco más que la anterior, sin saltos; la gramática dentro del techo de su edad y avanzando por peldaño | D1, D5 | `--gate` en las cuatro edades |
@@ -268,7 +268,56 @@ rápido. Por eso para subir de peldaño hacen falta dos semanas seguidas, el
 repaso devuelve las palabras que se marcaron como sabidas y, si después no
 salen, la regla del 50 % vuelve a frenar.
 
-## 5. Riesgos
+## 6. Mejoras propuestas por Claude Code, para que decida Frank
+
+Lo de arriba arregla lo que Frank señaló. Esto es lo que yo añadiría, ordenado
+por valor. Todo es **[propuesta]**; nada entra en P11 sin el sí de Frank.
+
+**M1 · Marcar en diez segundos (recomendada, la primera).** Por qué: el repaso
+por niño y el ajuste dinámico solo funcionan si la familia marca; sin marcas,
+la regla de 4b deja al niño quieto y todo P11 rinde como hoy. Qué: al acabar el
+juego del día, una sola pantalla con las 2 a 4 palabras de hoy y tres botones
+grandes por palabra («aínda non», «entende», «dío»), sin texto que leer; y el
+domingo, «Lúa pregunta» por tres palabras de la semana. Cómo se mide: semanas
+con marcas por niño, guardado como contador, sin hora. Coste: una pantalla y un
+test; sin audio nuevo.
+
+**M2 · El inglés dentro de una rutina que elige la familia.** Por qué: hoy el
+«momento» de cada unidad lo fija el contenido (`hogar.momento` en
+`assets/content/unidades_mes/`), no la casa; si en esa casa no hay baño a esa
+hora, no hay inglés. Qué: en el alta, la familia elige una o dos rutinas suyas
+(baño, comida, coche, ir a dormir) y la app pone ahí las palabras de cada día,
+con su gesto. Principio general de la intervención temprana en rutinas, no un
+dato medido en esta app. Coste: un campo más en el alta (privacidad) y una
+línea por rutina en cada capa.
+
+**M3 · Reto de hermanos.** Por qué: con varios niños en cursos distintos, cada
+uno tiene otro experimento STEAM el mismo mes (por ejemplo, en septiembre 2-3
+hace «¿Flota o se hunde?» y 4-5 «¿Qué venda absorbe?»), así que la familia
+tiene que hacer dos cosas. Qué: una vez por semana, una actividad que junta las
+palabras de los dos, en la que el mayor se las dice al pequeño; el mayor
+practica decir y el pequeño oye a otro niño. Coste: una pieza por semana y por
+pareja de cursos; contenido nuevo con su STEAM.
+
+**M4 · Cuántas veces la ha oído.** Por qué: la familia no ve la repetición, y
+por eso no sabe si «aún no la dice» es normal. Qué: junto a cada palabra, «a
+oído 12 veces», contando las veces que la persona adulta la puso en la app y
+las que marcó; el motor no espera que la diga antes de un mínimo de veces. Coste:
+un contador por palabra y por niño, sin hora.
+
+**M5 · La tarjeta de Lúa para la escuela.** Por qué: lo que se hace en casa y
+lo que hace la docente no se tocan; ningún dato puede salir del móvil. Qué: una
+pantalla que la familia enseña en la escuela, con el peldaño del niño y las
+palabras que ya dice, para que la docente sepa por dónde va. No se envía ni se
+imprime sola: se muestra. Coste: una pantalla; nada de red.
+
+Lo que no propongo: grabar la voz de la familia o del niño. Pediría micrófono,
+y hoy el único permiso es la cámara.
+
+Recomiendo M1 dentro de P11, antes de P11.4, porque sin ella el ajuste dinámico
+no tiene datos. M2 a M5, como P12, después de ver P11 en la app.
+
+## 7. Riesgos
 
 La prueba de nivel es una observación de juego hecha por la familia, no una
 medida fiable: sirve para no empezar en el sitio equivocado, no para etiquetar

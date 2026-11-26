@@ -588,7 +588,10 @@ Decisión: D1 a D6 aprobadas tal como las recomienda docs/AUDITORIA_NIVELES_Y_RE
 - [x] Decisiones de Frank D1 (48 unidades), D2 (prueba de nivel sin pantalla para el niño), D3 (datos nuevos), D4 (rehacer 0-2) y D5 (ritmo por edad), escritas aquí · evidencia: docs/ORDENES.md (decisión de Frank del 26/11/2026: «Apruebo d1 a d6»)
 - [ ] Na casa → alta y Hoxe: varios niños de cursos distintos visibles a la vez, cada uno con su tarea, sus premios y su repaso · evidencia:
 - [ ] Na casa → Hoxe: «Volven hoxe / Vuelven hoy» por niño; cada palabra vuelve al menos 4 veces en el curso y alguna pasado un mes (tools/auditoria_niveles.py --gate en tools/gates.sh) · evidencia:
-- [ ] Al registrar un niño de 2 años o más: juego de Lúa para saber por dónde empezar, dirigido por la persona adulta, que fija su punto de partida y siembra su repaso · evidencia:
+> (26/11/2026, a pregunta de Claude Code sobre los criterios abiertos) «2, 3 ,4 ,5 ,6 y 7 aprobados»
+> (26/11/2026) «1 también aprobado, el tema del alta debería ser solo una vez sabes que tengo un pequeño examen para ver el nivel que le corresponde para que la propia aplicación se ajuste a esa capacidad»
+Decisión: los siete criterios de O-20261126-1 y O-20261126-2 quedan aprobados como alcance (no como hechos). El alta de cada niño se hace una sola vez y lleva dentro la prueba de entrada; después la app se ajusta sola cada semana (P11.4). En la app no se llama «examen» (regla de producto: nada sanitario).
+- [ ] Na casa → alta, una sola vez por niño: para 2 años o más, dentro del alta, el juego de Lúa para saber por dónde empezar, dirigido por la persona adulta, que fija su punto de partida y siembra su repaso; no se repite después, el nivel lo ajusta la app cada semana · evidencia:
 - [ ] 0-2 años: sustantivos, adjetivos, onomatopeyas, rutinas y sucesos y series básicas, con el STEAM del mes y muchas repeticiones · evidencia:
 - [ ] De una semana a la siguiente el nivel sube sin saltos y la gramática no pasa del techo de cada edad, en las cinco edades (tools/auditoria_niveles.py --gate) · evidencia:
 
@@ -613,3 +616,16 @@ Reparto: todo lo hace Antigravity (P11.0–P11.11) en la rama antigravity/nivele
 - [x] Prompt P11 guardado en el repositorio con sus pasos P11.0–P11.11 en la tabla de pasos, antes de que Antigravity empiece · evidencia: docs/PROMPTS_ANTIGRAVITY.md y tools/check_registro_commits.py
 - [ ] Entrega de Antigravity en antigravity/niveles con docs/p11-control.md criterio por criterio · evidencia:
 - [ ] Revisado por Claude Code (auditoria_niveles --gate y check_capas_semana a cero, gates.sh y flutter test en verde, tres semanas al azar por edad, capturas gl y es miradas) y mergeado en main con CI en verde y los audios generados · evidencia:
+
+## O-20261126-4 · Prompt completo con las mejoras M1-M5, guardado ya
+Estado: abierta
+> Pero me cago en todo, dame el prom completo dámelo todo esto no puede ser dámelo ya
+> No me des las cosas a medias dámelo con las propuestas que me acabas de dar arreglado todo
+> Me acabas de dar una serie de propuestas dámelo completo como debe ser para poder copiar y pegar no me pongas lo mismo otra vez ni dar vueltas ni hacer perder el tiempo
+> Pero qué cojones guárdalo ya si te he ordenado hacerlo antes porque tengo que darle de nuevo y que quede a medias colgados. Eso es un incompetencia de tu parte
+Fuente: docs/AUDITORIA_NIVELES_Y_REPASO.md (sección 6, M1-M5)
+Decisión: M1-M5 aprobadas por Frank («dámelo con las propuestas que me acabas de dar»); entran en P11 como corrección sobre el trabajo en curso de Antigravity.
+Reparto: lo hace Antigravity dentro de P11.0–P11.11; Claude Code revisa.
+
+- [x] Corrección final con el alta de una sola vez y M1-M5 guardada en el repositorio y en main · evidencia: docs/PROMPTS_ANTIGRAVITY.md (sección «P11 · Corrección final») y tools/check_prompt_vigente.py
+- [ ] M1 marcar en diez segundos, M2 rutinas de casa, M3 reto de hermanos, M4 cuántas veces la ha oído y M5 tarjeta para la escuela, en la app en gl y es, cada una con su test y su captura · evidencia:
