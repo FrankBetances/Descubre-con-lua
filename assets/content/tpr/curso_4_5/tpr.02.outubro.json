@@ -410,15 +410,15 @@
         },
         {
           "id": "4_5.outubro.s2.nimble-footed",
-          "en": "Nimble-footed",
-          "gl": "De pés áxiles",
-          "es": "De pies ágiles",
+          "en": "Quick",
+          "gl": "Rápido",
+          "es": "Rápido",
           "tprAction": {
-            "gl": "Mover os pés moi rápido",
-            "es": "Mover los pies muy rápido"
+            "gl": "Sinala ou colle o que nomeas: rápido.",
+            "es": "Señala o coge lo que nombras: rápido."
           },
           "category": "adjective",
-          "lamina": "pal_nimble_footed"
+          "lamina": "pal_quick"
         },
         {
           "id": "4_5.outubro.s2.out-of-sight",

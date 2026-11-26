@@ -14,15 +14,15 @@
       "palabras": [
         {
           "id": "4_5.novembro.s1.hilltop",
-          "en": "Hilltop",
-          "gl": "Cumio do monte",
-          "es": "Cima del monte",
+          "en": "Hill",
+          "gl": "Outeiro",
+          "es": "Colina",
           "tprAction": {
-            "gl": "Estirar os brazos no alto",
-            "es": "Estirar los brazos en lo alto"
+            "gl": "Sinala ou colle o que nomeas: outeiro.",
+            "es": "Señala o coge lo que nombras: colina."
           },
           "category": "noun",
-          "lamina": "pal_cima"
+          "lamina": "pal_hill"
         },
         {
           "id": "4_5.novembro.s1.chapel",

@@ -168,19 +168,75 @@
      ],
      "capas": {
       "nucleo": {
-       "gl": "Semana 1 · «Mollado e seco»: nomea só Water, Bath mentres o toca coas mans.",
-       "es": "Semana 1 · «Mojado y seco»: nombra solo Water, Bath mientras lo toca con las manos.",
-       "en": "Water, Bath"
+       "gl": "«Mollado e seco», semana 1: nomea «Water» e «Bath» mentres o toca coas mans.",
+       "es": "«Mojado y seco», semana 1: nombra «Water» y «Bath» mientras lo toca con las manos.",
+       "en": "Water, Bath",
+       "pezas": [
+        {
+         "en": "Water",
+         "gl": "Auga",
+         "es": "Agua",
+         "lamina": "auga",
+         "xesto": {
+          "gl": "Toca a auga da tina coa palma aberta.",
+          "es": "Toca el agua del barreño con la palma abierta."
+         }
+        },
+        {
+         "en": "Bath",
+         "gl": "Baño",
+         "es": "Baño",
+         "lamina": "pal_bath",
+         "xesto": {
+          "gl": "Fai ondas suaves coa man dentro da tina.",
+          "es": "Haz ondas suaves con la mano dentro del barreño."
+         }
+        }
+       ]
       },
       "mais": {
-       "gl": "Semana 1 · «Mollado e seco»: combina Water, Bath, Wet, Dry alternando auga e xesto.",
-       "es": "Semana 1 · «Mojado y seco»: combina Water, Bath, Wet, Dry alternando agua y gesto.",
-       "en": "Water, Bath, Wet, Dry"
+       "gl": "«Mollado e seco», semana 1, se xa mira e busca as novas: engade «Wet» e «Dry», unha a unha e co seu xesto.",
+       "es": "«Mojado y seco», semana 1, si ya mira y busca las nuevas: añade «Wet» y «Dry», una a una y con su gesto.",
+       "en": "Wet, Dry",
+       "pezas": [
+        {
+         "en": "Wet",
+         "gl": "Mollado",
+         "es": "Mojado",
+         "lamina": "pal_wet",
+         "xesto": {
+          "gl": "Aperta a esponxa enchoupada para ver caer as gotas.",
+          "es": "Aprieta la esponja empapada para ver caer las gotas."
+         }
+        },
+        {
+         "en": "Dry",
+         "gl": "Seco",
+         "es": "Seco",
+         "lamina": "pal_dry",
+         "xesto": {
+          "gl": "Pasa a man pola toalla seca antes de mollar.",
+          "es": "Pasa la mano por la toalla seca antes de mojar."
+         }
+        }
+       ]
       },
       "apoio": {
-       "gl": "Semana 1 · «Mollado e seco»: repite devagar «Water» cun único obxecto e sen présa.",
-       "es": "Semana 1 · «Mojado y seco»: repite despacio «Water» con un único objeto y sin prisa.",
-       "en": "Water"
+       "gl": "«Mollado e seco», semana 1, con calma: só «Water», co obxecto na man, e agarda a que o mire.",
+       "es": "«Mojado y seco», semana 1, con calma: solo «Water», con el objeto en la mano, y espera a que lo mire.",
+       "en": "Water",
+       "pezas": [
+        {
+         "en": "Water",
+         "gl": "Auga",
+         "es": "Agua",
+         "lamina": "auga",
+         "xesto": {
+          "gl": "Toca a auga da tina coa palma aberta.",
+          "es": "Toca el agua del barreño con la palma abierta."
+         }
+        }
+       ]
       }
      },
      "rutinas": {
@@ -258,19 +314,75 @@
      ],
      "capas": {
       "nucleo": {
-       "gl": "Semana 2 · «Mollado e seco»: nomea só Wet, Dry mentres o toca coas mans.",
-       "es": "Semana 2 · «Mojado y seco»: nombra solo Wet, Dry mientras lo toca con las manos.",
-       "en": "Wet, Dry"
+       "gl": "«Mollado e seco», semana 2: nomea «Wet» e «Dry» mentres o toca coas mans.",
+       "es": "«Mojado y seco», semana 2: nombra «Wet» y «Dry» mientras lo toca con las manos.",
+       "en": "Wet, Dry",
+       "pezas": [
+        {
+         "en": "Wet",
+         "gl": "Mollado",
+         "es": "Mojado",
+         "lamina": "pal_wet",
+         "xesto": {
+          "gl": "Aperta a esponxa enchoupada para ver caer as gotas.",
+          "es": "Aprieta la esponja empapada para ver caer las gotas."
+         }
+        },
+        {
+         "en": "Dry",
+         "gl": "Seco",
+         "es": "Seco",
+         "lamina": "pal_dry",
+         "xesto": {
+          "gl": "Pasa a man pola toalla seca antes de mollar.",
+          "es": "Pasa la mano por la toalla seca antes de mojar."
+         }
+        }
+       ]
       },
       "mais": {
-       "gl": "Semana 2 · «Mollado e seco»: combina Wet, Dry, Water, Bath alternando mollado e xesto.",
-       "es": "Semana 2 · «Mojado y seco»: combina Wet, Dry, Water, Bath alternando mojado y gesto.",
-       "en": "Wet, Dry, Water, Bath"
+       "gl": "«Mollado e seco», semana 2, se xa mira e busca as novas: engade «Water» e «Bath», unha a unha e co seu xesto.",
+       "es": "«Mojado y seco», semana 2, si ya mira y busca las nuevas: añade «Water» y «Bath», una a una y con su gesto.",
+       "en": "Water, Bath",
+       "pezas": [
+        {
+         "en": "Water",
+         "gl": "Auga",
+         "es": "Agua",
+         "lamina": "auga",
+         "xesto": {
+          "gl": "Toca a auga da tina coa palma aberta.",
+          "es": "Toca el agua del barreño con la palma abierta."
+         }
+        },
+        {
+         "en": "Bath",
+         "gl": "Baño",
+         "es": "Baño",
+         "lamina": "pal_bath",
+         "xesto": {
+          "gl": "Fai ondas suaves coa man dentro da tina.",
+          "es": "Haz ondas suaves con la mano dentro del barreño."
+         }
+        }
+       ]
       },
       "apoio": {
-       "gl": "Semana 2 · «Mollado e seco»: repite devagar «Wet» cun único obxecto e sen présa.",
-       "es": "Semana 2 · «Mojado y seco»: repite despacio «Wet» con un único objeto y sin prisa.",
-       "en": "Wet"
+       "gl": "«Mollado e seco», semana 2, con calma: só «Wet», co obxecto na man, e agarda a que o mire.",
+       "es": "«Mojado y seco», semana 2, con calma: solo «Wet», con el objeto en la mano, y espera a que lo mire.",
+       "en": "Wet",
+       "pezas": [
+        {
+         "en": "Wet",
+         "gl": "Mollado",
+         "es": "Mojado",
+         "lamina": "pal_wet",
+         "xesto": {
+          "gl": "Aperta a esponxa enchoupada para ver caer as gotas.",
+          "es": "Aprieta la esponja empapada para ver caer las gotas."
+         }
+        }
+       ]
       }
      },
      "rutinas": {
@@ -348,19 +460,75 @@
      ],
      "capas": {
       "nucleo": {
-       "gl": "Semana 3 · «Mollado e seco»: nomea só Splash, water!, Wet, dry, wet mentres o toca coas mans.",
-       "es": "Semana 3 · «Mojado y seco»: nombra solo Splash, water!, Wet, dry, wet mientras lo toca con las manos.",
-       "en": "Splash, water!, Wet, dry, wet"
+       "gl": "«Mollado e seco», semana 3: nomea «Splash, water!» e «Wet, dry, wet» mentres o toca coas mans.",
+       "es": "«Mojado y seco», semana 3: nombra «Splash, water!» y «Wet, dry, wet» mientras lo toca con las manos.",
+       "en": "Splash, water!, Wet, dry, wet",
+       "pezas": [
+        {
+         "en": "Splash, water!",
+         "gl": "Chaf, auga!",
+         "es": "¡Chof, agua!",
+         "lamina": "pal_02_splash_water",
+         "xesto": {
+          "gl": "Deixa caer dúas pingas na auga mentres ris.",
+          "es": "Deja caer dos gotas en el agua mientras ríes."
+         }
+        },
+        {
+         "en": "Wet, dry, wet",
+         "gl": "Mollado, seco, mollado",
+         "es": "Mojado, seco, mojado",
+         "lamina": "pal_02_wet_dry_wet",
+         "xesto": {
+          "gl": "Alterna tocar esponxa mollada, toalla seca e esponxa.",
+          "es": "Alterna tocar esponja mojada, toalla seca y esponja."
+         }
+        }
+       ]
       },
       "mais": {
-       "gl": "Semana 3 · «Mollado e seco»: combina Splash, water!, Wet, dry, wet, Water, Bath alternando chaf, auga! e xesto.",
-       "es": "Semana 3 · «Mojado y seco»: combina Splash, water!, Wet, dry, wet, Water, Bath alternando ¡chof, agua! y gesto.",
-       "en": "Splash, water!, Wet, dry, wet, Water, Bath"
+       "gl": "«Mollado e seco», semana 3, se xa mira e busca as novas: engade «Water» e «Bath», unha a unha e co seu xesto.",
+       "es": "«Mojado y seco», semana 3, si ya mira y busca las nuevas: añade «Water» y «Bath», una a una y con su gesto.",
+       "en": "Water, Bath",
+       "pezas": [
+        {
+         "en": "Water",
+         "gl": "Auga",
+         "es": "Agua",
+         "lamina": "auga",
+         "xesto": {
+          "gl": "Toca a auga da tina coa palma aberta.",
+          "es": "Toca el agua del barreño con la palma abierta."
+         }
+        },
+        {
+         "en": "Bath",
+         "gl": "Baño",
+         "es": "Baño",
+         "lamina": "pal_bath",
+         "xesto": {
+          "gl": "Fai ondas suaves coa man dentro da tina.",
+          "es": "Haz ondas suaves con la mano dentro del barreño."
+         }
+        }
+       ]
       },
       "apoio": {
-       "gl": "Semana 3 · «Mollado e seco»: repite devagar «Splash, water!» cun único obxecto e sen présa.",
-       "es": "Semana 3 · «Mojado y seco»: repite despacio «Splash, water!» con un único objeto y sin prisa.",
-       "en": "Splash, water!"
+       "gl": "«Mollado e seco», semana 3, con calma: só «Splash, water!», co obxecto na man, e agarda a que o mire.",
+       "es": "«Mojado y seco», semana 3, con calma: solo «Splash, water!», con el objeto en la mano, y espera a que lo mire.",
+       "en": "Splash, water!",
+       "pezas": [
+        {
+         "en": "Splash, water!",
+         "gl": "Chaf, auga!",
+         "es": "¡Chof, agua!",
+         "lamina": "pal_02_splash_water",
+         "xesto": {
+          "gl": "Deixa caer dúas pingas na auga mentres ris.",
+          "es": "Deja caer dos gotas en el agua mientras ríes."
+         }
+        }
+       ]
       }
      },
      "rutinas": {
@@ -434,19 +602,65 @@
      ],
      "capas": {
       "nucleo": {
-       "gl": "Semana 4 · «Mollado e seco»: nomea só Water mentres o toca coas mans.",
-       "es": "Semana 4 · «Mojado y seco»: nombra solo Water mientras lo toca con las manos.",
-       "en": "Water"
+       "gl": "«Mollado e seco», semana 4: nomea «Water» e «Bath» mentres o toca coas mans.",
+       "es": "«Mojado y seco», semana 4: nombra «Water» y «Bath» mientras lo toca con las manos.",
+       "en": "Water, Bath",
+       "pezas": [
+        {
+         "en": "Water",
+         "gl": "Auga",
+         "es": "Agua",
+         "lamina": "auga",
+         "xesto": {
+          "gl": "Toca a auga da tina coa palma aberta.",
+          "es": "Toca el agua del barreño con la palma abierta."
+         }
+        },
+        {
+         "en": "Bath",
+         "gl": "Baño",
+         "es": "Baño",
+         "lamina": "pal_bath",
+         "xesto": {
+          "gl": "Fai ondas suaves coa man dentro da tina.",
+          "es": "Haz ondas suaves con la mano dentro del barreño."
+         }
+        }
+       ]
       },
       "mais": {
-       "gl": "Semana 4 · «Mollado e seco»: combina Water, Bath, Wet alternando auga e xesto.",
-       "es": "Semana 4 · «Mojado y seco»: combina Water, Bath, Wet alternando agua y gesto.",
-       "en": "Water, Bath, Wet"
+       "gl": "«Mollado e seco», semana 4, se xa mira e busca as novas: engade «Wet», unha a unha e co seu xesto.",
+       "es": "«Mojado y seco», semana 4, si ya mira y busca las nuevas: añade «Wet», una a una y con su gesto.",
+       "en": "Wet",
+       "pezas": [
+        {
+         "en": "Wet",
+         "gl": "Mollado",
+         "es": "Mojado",
+         "lamina": "pal_wet",
+         "xesto": {
+          "gl": "Aperta a esponxa enchoupada para ver caer as gotas.",
+          "es": "Aprieta la esponja empapada para ver caer las gotas."
+         }
+        }
+       ]
       },
       "apoio": {
-       "gl": "Semana 4 · «Mollado e seco»: repite devagar «Water» cun único obxecto e sen présa.",
-       "es": "Semana 4 · «Mojado y seco»: repite despacio «Water» con un único objeto y sin prisa.",
-       "en": "Water"
+       "gl": "«Mollado e seco», semana 4, con calma: só «Water», co obxecto na man, e agarda a que o mire.",
+       "es": "«Mojado y seco», semana 4, con calma: solo «Water», con el objeto en la mano, y espera a que lo mire.",
+       "en": "Water",
+       "pezas": [
+        {
+         "en": "Water",
+         "gl": "Auga",
+         "es": "Agua",
+         "lamina": "auga",
+         "xesto": {
+          "gl": "Toca a auga da tina coa palma aberta.",
+          "es": "Toca el agua del barreño con la palma abierta."
+         }
+        }
+       ]
       }
      },
      "rutinas": {
@@ -804,19 +1018,75 @@
      ],
      "capas": {
       "nucleo": {
-       "gl": "Semana 1 · «A música da auga»: nomea só Spoon, Hand mentres o toca coas mans.",
-       "es": "Semana 1 · «La música del agua»: nombra solo Spoon, Hand mientras lo toca con las manos.",
-       "en": "Spoon, Hand"
+       "gl": "«A música da auga», semana 1: nomea «Spoon» e «Hand» mentres o toca coas mans.",
+       "es": "«La música del agua», semana 1: nombra «Spoon» y «Hand» mientras lo toca con las manos.",
+       "en": "Spoon, Hand",
+       "pezas": [
+        {
+         "en": "Spoon",
+         "gl": "Culler",
+         "es": "Cuchara",
+         "lamina": "pal_pal_spoon",
+         "xesto": {
+          "gl": "Suxeita a culler de madeira diante dos ollos.",
+          "es": "Sujeta la cuchara de madera delante de los ojos."
+         }
+        },
+        {
+         "en": "Hand",
+         "gl": "Man",
+         "es": "Mano",
+         "lamina": "pal_hand",
+         "xesto": {
+          "gl": "Ensina a palma aberta antes de petar.",
+          "es": "Enseña la palma abierta antes de golpear."
+         }
+        }
+       ]
       },
       "mais": {
-       "gl": "Semana 1 · «A música da auga»: combina Spoon, Hand, Wet, dry, wet, Splash, water! alternando culler e xesto.",
-       "es": "Semana 1 · «La música del agua»: combina Spoon, Hand, Wet, dry, wet, Splash, water! alternando cuchara y gesto.",
-       "en": "Spoon, Hand, Wet, dry, wet, Splash, water!"
+       "gl": "«A música da auga», semana 1, se xa mira e busca as novas: engade «Wet, dry, wet» e «Splash, water!», unha a unha e co seu xesto.",
+       "es": "«La música del agua», semana 1, si ya mira y busca las nuevas: añade «Wet, dry, wet» y «Splash, water!», una a una y con su gesto.",
+       "en": "Wet, dry, wet, Splash, water!",
+       "pezas": [
+        {
+         "en": "Wet, dry, wet",
+         "gl": "Mollado, seco, mollado",
+         "es": "Mojado, seco, mojado",
+         "lamina": "pal_02_wet_dry_wet",
+         "xesto": {
+          "gl": "Alterna tocar esponxa mollada, toalla seca e esponxa.",
+          "es": "Alterna tocar esponja mojada, toalla seca y esponja."
+         }
+        },
+        {
+         "en": "Splash, water!",
+         "gl": "Chaf, auga!",
+         "es": "¡Chof, agua!",
+         "lamina": "pal_02_splash_water",
+         "xesto": {
+          "gl": "Deixa caer dúas pingas na auga mentres ris.",
+          "es": "Deja caer dos gotas en el agua mientras ríes."
+         }
+        }
+       ]
       },
       "apoio": {
-       "gl": "Semana 1 · «A música da auga»: repite devagar «Spoon» cun único obxecto e sen présa.",
-       "es": "Semana 1 · «La música del agua»: repite despacio «Spoon» con un único objeto y sin prisa.",
-       "en": "Spoon"
+       "gl": "«A música da auga», semana 1, con calma: só «Spoon», co obxecto na man, e agarda a que o mire.",
+       "es": "«La música del agua», semana 1, con calma: solo «Spoon», con el objeto en la mano, y espera a que lo mire.",
+       "en": "Spoon",
+       "pezas": [
+        {
+         "en": "Spoon",
+         "gl": "Culler",
+         "es": "Cuchara",
+         "lamina": "pal_pal_spoon",
+         "xesto": {
+          "gl": "Suxeita a culler de madeira diante dos ollos.",
+          "es": "Sujeta la cuchara de madera delante de los ojos."
+         }
+        }
+       ]
       }
      },
      "rutinas": {
@@ -894,19 +1164,75 @@
      ],
      "capas": {
       "nucleo": {
-       "gl": "Semana 2 · «A música da auga»: nomea só Loud, Quiet mentres o toca coas mans.",
-       "es": "Semana 2 · «La música del agua»: nombra solo Loud, Quiet mientras lo toca con las manos.",
-       "en": "Loud, Quiet"
+       "gl": "«A música da auga», semana 2: nomea «Loud» e «Quiet» mentres o toca coas mans.",
+       "es": "«La música del agua», semana 2: nombra «Loud» y «Quiet» mientras lo toca con las manos.",
+       "en": "Loud, Quiet",
+       "pezas": [
+        {
+         "en": "Loud",
+         "gl": "Forte",
+         "es": "Fuerte",
+         "lamina": "pal_loud",
+         "xesto": {
+          "gl": "Abre os brazos cando a botella chea soa forte.",
+          "es": "Abre los brazos cuando la botella llena suena fuerte."
+         }
+        },
+        {
+         "en": "Quiet",
+         "gl": "Quedo",
+         "es": "Suave",
+         "lamina": "pal_quiet",
+         "xesto": {
+          "gl": "Pon o dedo nos beizos cando o vaso case non soa.",
+          "es": "Pon el dedo en los labios cuando el vaso suena suave."
+         }
+        }
+       ]
       },
       "mais": {
-       "gl": "Semana 2 · «A música da auga»: combina Loud, Quiet, Wet, Water alternando forte e xesto.",
-       "es": "Semana 2 · «La música del agua»: combina Loud, Quiet, Wet, Water alternando fuerte y gesto.",
-       "en": "Loud, Quiet, Wet, Water"
+       "gl": "«A música da auga», semana 2, se xa mira e busca as novas: engade «Wet» e «Water», unha a unha e co seu xesto.",
+       "es": "«La música del agua», semana 2, si ya mira y busca las nuevas: añade «Wet» y «Water», una a una y con su gesto.",
+       "en": "Wet, Water",
+       "pezas": [
+        {
+         "en": "Wet",
+         "gl": "Mollado",
+         "es": "Mojado",
+         "lamina": "pal_wet",
+         "xesto": {
+          "gl": "Aperta a esponxa enchoupada para ver caer as gotas.",
+          "es": "Aprieta la esponja empapada para ver caer las gotas."
+         }
+        },
+        {
+         "en": "Water",
+         "gl": "Auga",
+         "es": "Agua",
+         "lamina": "auga",
+         "xesto": {
+          "gl": "Toca a auga da tina coa palma aberta.",
+          "es": "Toca el agua del barreño con la palma abierta."
+         }
+        }
+       ]
       },
       "apoio": {
-       "gl": "Semana 2 · «A música da auga»: repite devagar «Loud» cun único obxecto e sen présa.",
-       "es": "Semana 2 · «La música del agua»: repite despacio «Loud» con un único objeto y sin prisa.",
-       "en": "Loud"
+       "gl": "«A música da auga», semana 2, con calma: só «Loud», co obxecto na man, e agarda a que o mire.",
+       "es": "«La música del agua», semana 2, con calma: solo «Loud», con el objeto en la mano, y espera a que lo mire.",
+       "en": "Loud",
+       "pezas": [
+        {
+         "en": "Loud",
+         "gl": "Forte",
+         "es": "Fuerte",
+         "lamina": "pal_loud",
+         "xesto": {
+          "gl": "Abre os brazos cando a botella chea soa forte.",
+          "es": "Abre los brazos cuando la botella llena suena fuerte."
+         }
+        }
+       ]
       }
      },
      "rutinas": {
@@ -984,19 +1310,75 @@
      ],
      "capas": {
       "nucleo": {
-       "gl": "Semana 3 · «A música da auga»: nomea só Tap, spoon!, Bath time mentres o toca coas mans.",
-       "es": "Semana 3 · «La música del agua»: nombra solo Tap, spoon!, Bath time mientras lo toca con las manos.",
-       "en": "Tap, spoon!, Bath time"
+       "gl": "«A música da auga», semana 3: nomea «Tap, spoon!» e «Bath time» mentres o toca coas mans.",
+       "es": "«La música del agua», semana 3: nombra «Tap, spoon!» y «Bath time» mientras lo toca con las manos.",
+       "en": "Tap, spoon!, Bath time",
+       "pezas": [
+        {
+         "en": "Tap, spoon!",
+         "gl": "Tin, culler!",
+         "es": "¡Tin, cuchara!",
+         "lamina": "pal_02_tap_spoon",
+         "xesto": {
+          "gl": "Dá un toque suave no bordo do vaso coa culler.",
+          "es": "Da un toque suave en el borde del vaso con la cuchara."
+         }
+        },
+        {
+         "en": "Bath time",
+         "gl": "Hora do baño",
+         "es": "Hora del baño",
+         "lamina": "pal_bath_time",
+         "xesto": {
+          "gl": "Sinala a bañeira antes de xogar cos vasos.",
+          "es": "Señala la bañera antes de jugar con los vasos."
+         }
+        }
+       ]
       },
       "mais": {
-       "gl": "Semana 3 · «A música da auga»: combina Tap, spoon!, Bath time, Spoon, Hand alternando tin, culler! e xesto.",
-       "es": "Semana 3 · «La música del agua»: combina Tap, spoon!, Bath time, Spoon, Hand alternando ¡tin, cuchara! y gesto.",
-       "en": "Tap, spoon!, Bath time, Spoon, Hand"
+       "gl": "«A música da auga», semana 3, se xa mira e busca as novas: engade «Spoon» e «Hand», unha a unha e co seu xesto.",
+       "es": "«La música del agua», semana 3, si ya mira y busca las nuevas: añade «Spoon» y «Hand», una a una y con su gesto.",
+       "en": "Spoon, Hand",
+       "pezas": [
+        {
+         "en": "Spoon",
+         "gl": "Culler",
+         "es": "Cuchara",
+         "lamina": "pal_pal_spoon",
+         "xesto": {
+          "gl": "Suxeita a culler de madeira diante dos ollos.",
+          "es": "Sujeta la cuchara de madera delante de los ojos."
+         }
+        },
+        {
+         "en": "Hand",
+         "gl": "Man",
+         "es": "Mano",
+         "lamina": "pal_hand",
+         "xesto": {
+          "gl": "Ensina a palma aberta antes de petar.",
+          "es": "Enseña la palma abierta antes de golpear."
+         }
+        }
+       ]
       },
       "apoio": {
-       "gl": "Semana 3 · «A música da auga»: repite devagar «Tap, spoon!» cun único obxecto e sen présa.",
-       "es": "Semana 3 · «La música del agua»: repite despacio «Tap, spoon!» con un único objeto y sin prisa.",
-       "en": "Tap, spoon!"
+       "gl": "«A música da auga», semana 3, con calma: só «Tap, spoon!», co obxecto na man, e agarda a que o mire.",
+       "es": "«La música del agua», semana 3, con calma: solo «Tap, spoon!», con el objeto en la mano, y espera a que lo mire.",
+       "en": "Tap, spoon!",
+       "pezas": [
+        {
+         "en": "Tap, spoon!",
+         "gl": "Tin, culler!",
+         "es": "¡Tin, cuchara!",
+         "lamina": "pal_02_tap_spoon",
+         "xesto": {
+          "gl": "Dá un toque suave no bordo do vaso coa culler.",
+          "es": "Da un toque suave en el borde del vaso con la cuchara."
+         }
+        }
+       ]
       }
      },
      "rutinas": {
@@ -1072,19 +1454,85 @@
      ],
      "capas": {
       "nucleo": {
-       "gl": "Semana 4 · «A música da auga»: nomea só Spoon mentres o toca coas mans.",
-       "es": "Semana 4 · «La música del agua»: nombra solo Spoon mientras lo toca con las manos.",
-       "en": "Spoon"
+       "gl": "«A música da auga», semana 4: nomea «Spoon» e «Hand» mentres o toca coas mans.",
+       "es": "«La música del agua», semana 4: nombra «Spoon» y «Hand» mientras lo toca con las manos.",
+       "en": "Spoon, Hand",
+       "pezas": [
+        {
+         "en": "Spoon",
+         "gl": "Culler",
+         "es": "Cuchara",
+         "lamina": "pal_pal_spoon",
+         "xesto": {
+          "gl": "Suxeita a culler de madeira diante dos ollos.",
+          "es": "Sujeta la cuchara de madera delante de los ojos."
+         }
+        },
+        {
+         "en": "Hand",
+         "gl": "Man",
+         "es": "Mano",
+         "lamina": "pal_hand",
+         "xesto": {
+          "gl": "Ensina a palma aberta antes de petar.",
+          "es": "Enseña la palma abierta antes de golpear."
+         }
+        }
+       ]
       },
       "mais": {
-       "gl": "Semana 4 · «A música da auga»: combina Spoon, Hand, Loud, Wet, dry, wet, Splash, water! alternando culler e xesto.",
-       "es": "Semana 4 · «La música del agua»: combina Spoon, Hand, Loud, Wet, dry, wet, Splash, water! alternando cuchara y gesto.",
-       "en": "Spoon, Hand, Loud, Wet, dry, wet, Splash, water!"
+       "gl": "«A música da auga», semana 4, se xa mira e busca as novas: engade «Loud», «Wet, dry, wet» e «Splash, water!», unha a unha e co seu xesto.",
+       "es": "«La música del agua», semana 4, si ya mira y busca las nuevas: añade «Loud», «Wet, dry, wet» y «Splash, water!», una a una y con su gesto.",
+       "en": "Loud, Wet, dry, wet, Splash, water!",
+       "pezas": [
+        {
+         "en": "Loud",
+         "gl": "Forte",
+         "es": "Fuerte",
+         "lamina": "pal_loud",
+         "xesto": {
+          "gl": "Abre os brazos cando a botella chea soa forte.",
+          "es": "Abre los brazos cuando la botella llena suena fuerte."
+         }
+        },
+        {
+         "en": "Wet, dry, wet",
+         "gl": "Mollado, seco, mollado",
+         "es": "Mojado, seco, mojado",
+         "lamina": "pal_02_wet_dry_wet",
+         "xesto": {
+          "gl": "Alterna tocar esponxa mollada, toalla seca e esponxa.",
+          "es": "Alterna tocar esponja mojada, toalla seca y esponja."
+         }
+        },
+        {
+         "en": "Splash, water!",
+         "gl": "Chaf, auga!",
+         "es": "¡Chof, agua!",
+         "lamina": "pal_02_splash_water",
+         "xesto": {
+          "gl": "Deixa caer dúas pingas na auga mentres ris.",
+          "es": "Deja caer dos gotas en el agua mientras ríes."
+         }
+        }
+       ]
       },
       "apoio": {
-       "gl": "Semana 4 · «A música da auga»: repite devagar «Spoon» cun único obxecto e sen présa.",
-       "es": "Semana 4 · «La música del agua»: repite despacio «Spoon» con un único objeto y sin prisa.",
-       "en": "Spoon"
+       "gl": "«A música da auga», semana 4, con calma: só «Spoon», co obxecto na man, e agarda a que o mire.",
+       "es": "«La música del agua», semana 4, con calma: solo «Spoon», con el objeto en la mano, y espera a que lo mire.",
+       "en": "Spoon",
+       "pezas": [
+        {
+         "en": "Spoon",
+         "gl": "Culler",
+         "es": "Cuchara",
+         "lamina": "pal_pal_spoon",
+         "xesto": {
+          "gl": "Suxeita a culler de madeira diante dos ollos.",
+          "es": "Sujeta la cuchara de madera delante de los ojos."
+         }
+        }
+       ]
       }
      },
      "rutinas": {
@@ -1509,19 +1957,75 @@
      ],
      "capas": {
       "nucleo": {
-       "gl": "Semana 1 · «A folla baila, a pedra cae»: nomea só Leaf, Stone mentres o toca coas mans.",
-       "es": "Semana 1 · «La hoja baila, la piedra cae»: nombra solo Leaf, Stone mientras lo toca con las manos.",
-       "en": "Leaf, Stone"
+       "gl": "«A folla baila, a pedra cae», semana 1: nomea «Leaf» e «Stone» mentres o toca coas mans.",
+       "es": "«La hoja baila, la piedra cae», semana 1: nombra «Leaf» y «Stone» mientras lo toca con las manos.",
+       "en": "Leaf, Stone",
+       "pezas": [
+        {
+         "en": "Leaf",
+         "gl": "Folla",
+         "es": "Hoja",
+         "lamina": "pal_leaf",
+         "xesto": {
+          "gl": "Sostén a folla seca pola punta e déixaa planear.",
+          "es": "Sostén la hoja seca por la punta y déjala planear."
+         }
+        },
+        {
+         "en": "Stone",
+         "gl": "Pedra",
+         "es": "Piedra",
+         "lamina": "vigo_nat_118",
+         "xesto": {
+          "gl": "Pon a pedra pesada na palma e deixa que caia recto.",
+          "es": "Pon la piedra pesada en la palma y deja que caiga recto."
+         }
+        }
+       ]
       },
       "mais": {
-       "gl": "Semana 1 · «A folla baila, a pedra cae»: combina Leaf, Stone, Bath time, Tap, spoon! alternando folla e xesto.",
-       "es": "Semana 1 · «La hoja baila, la piedra cae»: combina Leaf, Stone, Bath time, Tap, spoon! alternando hoja y gesto.",
-       "en": "Leaf, Stone, Bath time, Tap, spoon!"
+       "gl": "«A folla baila, a pedra cae», semana 1, se xa mira e busca as novas: engade «Bath time» e «Tap, spoon!», unha a unha e co seu xesto.",
+       "es": "«La hoja baila, la piedra cae», semana 1, si ya mira y busca las nuevas: añade «Bath time» y «Tap, spoon!», una a una y con su gesto.",
+       "en": "Bath time, Tap, spoon!",
+       "pezas": [
+        {
+         "en": "Bath time",
+         "gl": "Hora do baño",
+         "es": "Hora del baño",
+         "lamina": "pal_bath_time",
+         "xesto": {
+          "gl": "Sinala a bañeira antes de xogar cos vasos.",
+          "es": "Señala la bañera antes de jugar con los vasos."
+         }
+        },
+        {
+         "en": "Tap, spoon!",
+         "gl": "Tin, culler!",
+         "es": "¡Tin, cuchara!",
+         "lamina": "pal_02_tap_spoon",
+         "xesto": {
+          "gl": "Dá un toque suave no bordo do vaso coa culler.",
+          "es": "Da un toque suave en el borde del vaso con la cuchara."
+         }
+        }
+       ]
       },
       "apoio": {
-       "gl": "Semana 1 · «A folla baila, a pedra cae»: repite devagar «Leaf» cun único obxecto e sen présa.",
-       "es": "Semana 1 · «La hoja baila, la piedra cae»: repite despacio «Leaf» con un único objeto y sin prisa.",
-       "en": "Leaf"
+       "gl": "«A folla baila, a pedra cae», semana 1, con calma: só «Leaf», co obxecto na man, e agarda a que o mire.",
+       "es": "«La hoja baila, la piedra cae», semana 1, con calma: solo «Leaf», con el objeto en la mano, y espera a que lo mire.",
+       "en": "Leaf",
+       "pezas": [
+        {
+         "en": "Leaf",
+         "gl": "Folla",
+         "es": "Hoja",
+         "lamina": "pal_leaf",
+         "xesto": {
+          "gl": "Sostén a folla seca pola punta e déixaa planear.",
+          "es": "Sostén la hoja seca por la punta y déjala planear."
+         }
+        }
+       ]
       }
      },
      "rutinas": {
@@ -1599,19 +2103,75 @@
      ],
      "capas": {
       "nucleo": {
-       "gl": "Semana 2 · «A folla baila, a pedra cae»: nomea só Big, Small mentres o toca coas mans.",
-       "es": "Semana 2 · «La hoja baila, la piedra cae»: nombra solo Big, Small mientras lo toca con las manos.",
-       "en": "Big, Small"
+       "gl": "«A folla baila, a pedra cae», semana 2: nomea «Big» e «Small» mentres o toca coas mans.",
+       "es": "«La hoja baila, la piedra cae», semana 2: nombra «Big» y «Small» mientras lo toca con las manos.",
+       "en": "Big, Small",
+       "pezas": [
+        {
+         "en": "Big",
+         "gl": "Grande",
+         "es": "Grande",
+         "lamina": "pal_big",
+         "xesto": {
+          "gl": "Sinala a pedra máis grande coas dúas mans.",
+          "es": "Señala la piedra más grande con las dos manos."
+         }
+        },
+        {
+         "en": "Small",
+         "gl": "Pequeno",
+         "es": "Pequeño",
+         "lamina": "pal_small",
+         "xesto": {
+          "gl": "Fai unha pinza cos dedos para coller a folla pequena.",
+          "es": "Haz pinza con los dedos para coger la hoja pequeña."
+         }
+        }
+       ]
       },
       "mais": {
-       "gl": "Semana 2 · «A folla baila, a pedra cae»: combina Big, Small, Loud, Spoon alternando grande e xesto.",
-       "es": "Semana 2 · «La hoja baila, la piedra cae»: combina Big, Small, Loud, Spoon alternando grande y gesto.",
-       "en": "Big, Small, Loud, Spoon"
+       "gl": "«A folla baila, a pedra cae», semana 2, se xa mira e busca as novas: engade «Loud» e «Spoon», unha a unha e co seu xesto.",
+       "es": "«La hoja baila, la piedra cae», semana 2, si ya mira y busca las nuevas: añade «Loud» y «Spoon», una a una y con su gesto.",
+       "en": "Loud, Spoon",
+       "pezas": [
+        {
+         "en": "Loud",
+         "gl": "Forte",
+         "es": "Fuerte",
+         "lamina": "pal_loud",
+         "xesto": {
+          "gl": "Abre os brazos cando a botella chea soa forte.",
+          "es": "Abre los brazos cuando la botella llena suena fuerte."
+         }
+        },
+        {
+         "en": "Spoon",
+         "gl": "Culler",
+         "es": "Cuchara",
+         "lamina": "pal_pal_spoon",
+         "xesto": {
+          "gl": "Suxeita a culler de madeira diante dos ollos.",
+          "es": "Sujeta la cuchara de madera delante de los ojos."
+         }
+        }
+       ]
       },
       "apoio": {
-       "gl": "Semana 2 · «A folla baila, a pedra cae»: repite devagar «Big» cun único obxecto e sen présa.",
-       "es": "Semana 2 · «La hoja baila, la piedra cae»: repite despacio «Big» con un único objeto y sin prisa.",
-       "en": "Big"
+       "gl": "«A folla baila, a pedra cae», semana 2, con calma: só «Big», co obxecto na man, e agarda a que o mire.",
+       "es": "«La hoja baila, la piedra cae», semana 2, con calma: solo «Big», con el objeto en la mano, y espera a que lo mire.",
+       "en": "Big",
+       "pezas": [
+        {
+         "en": "Big",
+         "gl": "Grande",
+         "es": "Grande",
+         "lamina": "pal_big",
+         "xesto": {
+          "gl": "Sinala a pedra máis grande coas dúas mans.",
+          "es": "Señala la piedra más grande con las dos manos."
+         }
+        }
+       ]
       }
      },
      "rutinas": {
@@ -1689,19 +2249,75 @@
      ],
      "capas": {
       "nucleo": {
-       "gl": "Semana 3 · «A folla baila, a pedra cae»: nomea só Big, small, big, Up, down, up mentres o toca coas mans.",
-       "es": "Semana 3 · «La hoja baila, la piedra cae»: nombra solo Big, small, big, Up, down, up mientras lo toca con las manos.",
-       "en": "Big, small, big, Up, down, up"
+       "gl": "«A folla baila, a pedra cae», semana 3: nomea «Big, small, big» e «Up, down, up» mentres o toca coas mans.",
+       "es": "«La hoja baila, la piedra cae», semana 3: nombra «Big, small, big» y «Up, down, up» mientras lo toca con las manos.",
+       "en": "Big, small, big, Up, down, up",
+       "pezas": [
+        {
+         "en": "Big, small, big",
+         "gl": "Grande, pequeno, grande",
+         "es": "Grande, pequeño, grande",
+         "lamina": "pal_02_big_small_big",
+         "xesto": {
+          "gl": "Alinea pedra grande, folla pequena e pedra grande.",
+          "es": "Alinea piedra grande, hoja pequeña y piedra grande."
+         }
+        },
+        {
+         "en": "Up, down, up",
+         "gl": "Arriba, abaixo, arriba",
+         "es": "Arriba, abajo, arriba",
+         "lamina": "pal_02_up_down_up",
+         "xesto": {
+          "gl": "Leva a man arriba, solta abaixo e volve subir.",
+          "es": "Lleva la mano arriba, suelta abajo y vuelve a subir."
+         }
+        }
+       ]
       },
       "mais": {
-       "gl": "Semana 3 · «A folla baila, a pedra cae»: combina Big, small, big, Up, down, up, Wet, Water alternando grande, pequeno, grande e xesto.",
-       "es": "Semana 3 · «La hoja baila, la piedra cae»: combina Big, small, big, Up, down, up, Wet, Water alternando grande, pequeño, grande y gesto.",
-       "en": "Big, small, big, Up, down, up, Wet, Water"
+       "gl": "«A folla baila, a pedra cae», semana 3, se xa mira e busca as novas: engade «Wet» e «Water», unha a unha e co seu xesto.",
+       "es": "«La hoja baila, la piedra cae», semana 3, si ya mira y busca las nuevas: añade «Wet» y «Water», una a una y con su gesto.",
+       "en": "Wet, Water",
+       "pezas": [
+        {
+         "en": "Wet",
+         "gl": "Mollado",
+         "es": "Mojado",
+         "lamina": "pal_wet",
+         "xesto": {
+          "gl": "Aperta a esponxa enchoupada para ver caer as gotas.",
+          "es": "Aprieta la esponja empapada para ver caer las gotas."
+         }
+        },
+        {
+         "en": "Water",
+         "gl": "Auga",
+         "es": "Agua",
+         "lamina": "auga",
+         "xesto": {
+          "gl": "Toca a auga da tina coa palma aberta.",
+          "es": "Toca el agua del barreño con la palma abierta."
+         }
+        }
+       ]
       },
       "apoio": {
-       "gl": "Semana 3 · «A folla baila, a pedra cae»: repite devagar «Big, small, big» cun único obxecto e sen présa.",
-       "es": "Semana 3 · «La hoja baila, la piedra cae»: repite despacio «Big, small, big» con un único objeto y sin prisa.",
-       "en": "Big, small, big"
+       "gl": "«A folla baila, a pedra cae», semana 3, con calma: só «Big, small, big», co obxecto na man, e agarda a que o mire.",
+       "es": "«La hoja baila, la piedra cae», semana 3, con calma: solo «Big, small, big», con el objeto en la mano, y espera a que lo mire.",
+       "en": "Big, small, big",
+       "pezas": [
+        {
+         "en": "Big, small, big",
+         "gl": "Grande, pequeno, grande",
+         "es": "Grande, pequeño, grande",
+         "lamina": "pal_02_big_small_big",
+         "xesto": {
+          "gl": "Alinea pedra grande, folla pequena e pedra grande.",
+          "es": "Alinea piedra grande, hoja pequeña y piedra grande."
+         }
+        }
+       ]
       }
      },
      "rutinas": {
@@ -1777,19 +2393,85 @@
      ],
      "capas": {
       "nucleo": {
-       "gl": "Semana 4 · «A folla baila, a pedra cae»: nomea só Leaf mentres o toca coas mans.",
-       "es": "Semana 4 · «La hoja baila, la piedra cae»: nombra solo Leaf mientras lo toca con las manos.",
-       "en": "Leaf"
+       "gl": "«A folla baila, a pedra cae», semana 4: nomea «Leaf» e «Stone» mentres o toca coas mans.",
+       "es": "«La hoja baila, la piedra cae», semana 4: nombra «Leaf» y «Stone» mientras lo toca con las manos.",
+       "en": "Leaf, Stone",
+       "pezas": [
+        {
+         "en": "Leaf",
+         "gl": "Folla",
+         "es": "Hoja",
+         "lamina": "pal_leaf",
+         "xesto": {
+          "gl": "Sostén a folla seca pola punta e déixaa planear.",
+          "es": "Sostén la hoja seca por la punta y déjala planear."
+         }
+        },
+        {
+         "en": "Stone",
+         "gl": "Pedra",
+         "es": "Piedra",
+         "lamina": "vigo_nat_118",
+         "xesto": {
+          "gl": "Pon a pedra pesada na palma e deixa que caia recto.",
+          "es": "Pon la piedra pesada en la palma y deja que caiga recto."
+         }
+        }
+       ]
       },
       "mais": {
-       "gl": "Semana 4 · «A folla baila, a pedra cae»: combina Leaf, Stone, Big, Bath time, Tap, spoon! alternando folla e xesto.",
-       "es": "Semana 4 · «La hoja baila, la piedra cae»: combina Leaf, Stone, Big, Bath time, Tap, spoon! alternando hoja y gesto.",
-       "en": "Leaf, Stone, Big, Bath time, Tap, spoon!"
+       "gl": "«A folla baila, a pedra cae», semana 4, se xa mira e busca as novas: engade «Big», «Bath time» e «Tap, spoon!», unha a unha e co seu xesto.",
+       "es": "«La hoja baila, la piedra cae», semana 4, si ya mira y busca las nuevas: añade «Big», «Bath time» y «Tap, spoon!», una a una y con su gesto.",
+       "en": "Big, Bath time, Tap, spoon!",
+       "pezas": [
+        {
+         "en": "Big",
+         "gl": "Grande",
+         "es": "Grande",
+         "lamina": "pal_big",
+         "xesto": {
+          "gl": "Sinala a pedra máis grande coas dúas mans.",
+          "es": "Señala la piedra más grande con las dos manos."
+         }
+        },
+        {
+         "en": "Bath time",
+         "gl": "Hora do baño",
+         "es": "Hora del baño",
+         "lamina": "pal_bath_time",
+         "xesto": {
+          "gl": "Sinala a bañeira antes de xogar cos vasos.",
+          "es": "Señala la bañera antes de jugar con los vasos."
+         }
+        },
+        {
+         "en": "Tap, spoon!",
+         "gl": "Tin, culler!",
+         "es": "¡Tin, cuchara!",
+         "lamina": "pal_02_tap_spoon",
+         "xesto": {
+          "gl": "Dá un toque suave no bordo do vaso coa culler.",
+          "es": "Da un toque suave en el borde del vaso con la cuchara."
+         }
+        }
+       ]
       },
       "apoio": {
-       "gl": "Semana 4 · «A folla baila, a pedra cae»: repite devagar «Leaf» cun único obxecto e sen présa.",
-       "es": "Semana 4 · «La hoja baila, la piedra cae»: repite despacio «Leaf» con un único objeto y sin prisa.",
-       "en": "Leaf"
+       "gl": "«A folla baila, a pedra cae», semana 4, con calma: só «Leaf», co obxecto na man, e agarda a que o mire.",
+       "es": "«La hoja baila, la piedra cae», semana 4, con calma: solo «Leaf», con el objeto en la mano, y espera a que lo mire.",
+       "en": "Leaf",
+       "pezas": [
+        {
+         "en": "Leaf",
+         "gl": "Folla",
+         "es": "Hoja",
+         "lamina": "pal_leaf",
+         "xesto": {
+          "gl": "Sostén a folla seca pola punta e déixaa planear.",
+          "es": "Sostén la hoja seca por la punta y déjala planear."
+         }
+        }
+       ]
       }
      },
      "rutinas": {
@@ -2256,19 +2938,75 @@
      ],
      "capas": {
       "nucleo": {
-       "gl": "Semana 1 · «Follas ao trasluz»: nomea só Eye, Bird mentres o toca coas mans.",
-       "es": "Semana 1 · «Hojas a contraluz»: nombra solo Eye, Bird mientras lo toca con las manos.",
-       "en": "Eye, Bird"
+       "gl": "«Follas ao trasluz», semana 1: nomea «Eye» e «Bird» mentres o toca coas mans.",
+       "es": "«Hojas a contraluz», semana 1: nombra «Eye» y «Bird» mientras lo toca con las manos.",
+       "en": "Eye, Bird",
+       "pezas": [
+        {
+         "en": "Eye",
+         "gl": "Ollo",
+         "es": "Ojo",
+         "lamina": "pal_eye",
+         "xesto": {
+          "gl": "Sinala o teu ollo antes de mirar pola folla á luz.",
+          "es": "Señala tu ojo antes de mirar la hoja a la luz."
+         }
+        },
+        {
+         "en": "Bird",
+         "gl": "Paxaro",
+         "es": "Pájaro",
+         "lamina": "pal_bird",
+         "xesto": {
+          "gl": "Fai voar a sombra dun paxaro coas mans diante da luz.",
+          "es": "Haz volar la sombra de un pájaro ante la luz."
+         }
+        }
+       ]
       },
       "mais": {
-       "gl": "Semana 1 · «Follas ao trasluz»: combina Eye, Bird, Up, down, up, Big, small, big alternando ollo e xesto.",
-       "es": "Semana 1 · «Hojas a contraluz»: combina Eye, Bird, Up, down, up, Big, small, big alternando ojo y gesto.",
-       "en": "Eye, Bird, Up, down, up, Big, small, big"
+       "gl": "«Follas ao trasluz», semana 1, se xa mira e busca as novas: engade «Up, down, up» e «Big, small, big», unha a unha e co seu xesto.",
+       "es": "«Hojas a contraluz», semana 1, si ya mira y busca las nuevas: añade «Up, down, up» y «Big, small, big», una a una y con su gesto.",
+       "en": "Up, down, up, Big, small, big",
+       "pezas": [
+        {
+         "en": "Up, down, up",
+         "gl": "Arriba, abaixo, arriba",
+         "es": "Arriba, abajo, arriba",
+         "lamina": "pal_02_up_down_up",
+         "xesto": {
+          "gl": "Leva a man arriba, solta abaixo e volve subir.",
+          "es": "Lleva la mano arriba, suelta abajo y vuelve a subir."
+         }
+        },
+        {
+         "en": "Big, small, big",
+         "gl": "Grande, pequeno, grande",
+         "es": "Grande, pequeño, grande",
+         "lamina": "pal_02_big_small_big",
+         "xesto": {
+          "gl": "Alinea pedra grande, folla pequena e pedra grande.",
+          "es": "Alinea piedra grande, hoja pequeña y piedra grande."
+         }
+        }
+       ]
       },
       "apoio": {
-       "gl": "Semana 1 · «Follas ao trasluz»: repite devagar «Eye» cun único obxecto e sen présa.",
-       "es": "Semana 1 · «Hojas a contraluz»: repite despacio «Eye» con un único objeto y sin prisa.",
-       "en": "Eye"
+       "gl": "«Follas ao trasluz», semana 1, con calma: só «Eye», co obxecto na man, e agarda a que o mire.",
+       "es": "«Hojas a contraluz», semana 1, con calma: solo «Eye», con el objeto en la mano, y espera a que lo mire.",
+       "en": "Eye",
+       "pezas": [
+        {
+         "en": "Eye",
+         "gl": "Ollo",
+         "es": "Ojo",
+         "lamina": "pal_eye",
+         "xesto": {
+          "gl": "Sinala o teu ollo antes de mirar pola folla á luz.",
+          "es": "Señala tu ojo antes de mirar la hoja a la luz."
+         }
+        }
+       ]
       }
      },
      "rutinas": {
@@ -2346,19 +3084,75 @@
      ],
      "capas": {
       "nucleo": {
-       "gl": "Semana 2 · «Follas ao trasluz»: nomea só Tick-tock, clock!, Night night mentres o toca coas mans.",
-       "es": "Semana 2 · «Hojas a contraluz»: nombra solo Tick-tock, clock!, Night night mientras lo toca con las manos.",
-       "en": "Tick-tock, clock!, Night night"
+       "gl": "«Follas ao trasluz», semana 2: nomea «Tick-tock, clock!» e «Night night» mentres o toca coas mans.",
+       "es": "«Hojas a contraluz», semana 2: nombra «Tick-tock, clock!» y «Night night» mientras lo toca con las manos.",
+       "en": "Tick-tock, clock!, Night night",
+       "pezas": [
+        {
+         "en": "Tick-tock, clock!",
+         "gl": "Tic-tac, reloxo!",
+         "es": "¡Tic-tac, reloj!",
+         "lamina": "pal_02_tick_tock",
+         "xesto": {
+          "gl": "Move o dedo coma o péndulo mentres miras a luz.",
+          "es": "Mueve el dedo como péndulo mientras miras la luz."
+         }
+        },
+        {
+         "en": "Night night",
+         "gl": "Boas noites",
+         "es": "Buenas noches",
+         "lamina": "pal_02_night_night",
+         "xesto": {
+          "gl": "Apaga a lanterna suavemente ao acabar a proxección.",
+          "es": "Apaga la linterna suavemente al terminar la proyección."
+         }
+        }
+       ]
       },
       "mais": {
-       "gl": "Semana 2 · «Follas ao trasluz»: combina Tick-tock, clock!, Night night, Big, Leaf alternando tic-tac, reloxo! e xesto.",
-       "es": "Semana 2 · «Hojas a contraluz»: combina Tick-tock, clock!, Night night, Big, Leaf alternando ¡tic-tac, reloj! y gesto.",
-       "en": "Tick-tock, clock!, Night night, Big, Leaf"
+       "gl": "«Follas ao trasluz», semana 2, se xa mira e busca as novas: engade «Big» e «Leaf», unha a unha e co seu xesto.",
+       "es": "«Hojas a contraluz», semana 2, si ya mira y busca las nuevas: añade «Big» y «Leaf», una a una y con su gesto.",
+       "en": "Big, Leaf",
+       "pezas": [
+        {
+         "en": "Big",
+         "gl": "Grande",
+         "es": "Grande",
+         "lamina": "pal_big",
+         "xesto": {
+          "gl": "Sinala a pedra máis grande coas dúas mans.",
+          "es": "Señala la piedra más grande con las dos manos."
+         }
+        },
+        {
+         "en": "Leaf",
+         "gl": "Folla",
+         "es": "Hoja",
+         "lamina": "pal_leaf",
+         "xesto": {
+          "gl": "Sostén a folla seca pola punta e déixaa planear.",
+          "es": "Sostén la hoja seca por la punta y déjala planear."
+         }
+        }
+       ]
       },
       "apoio": {
-       "gl": "Semana 2 · «Follas ao trasluz»: repite devagar «Tick-tock, clock!» cun único obxecto e sen présa.",
-       "es": "Semana 2 · «Hojas a contraluz»: repite despacio «Tick-tock, clock!» con un único objeto y sin prisa.",
-       "en": "Tick-tock, clock!"
+       "gl": "«Follas ao trasluz», semana 2, con calma: só «Tick-tock, clock!», co obxecto na man, e agarda a que o mire.",
+       "es": "«Hojas a contraluz», semana 2, con calma: solo «Tick-tock, clock!», con el objeto en la mano, y espera a que lo mire.",
+       "en": "Tick-tock, clock!",
+       "pezas": [
+        {
+         "en": "Tick-tock, clock!",
+         "gl": "Tic-tac, reloxo!",
+         "es": "¡Tic-tac, reloj!",
+         "lamina": "pal_02_tick_tock",
+         "xesto": {
+          "gl": "Move o dedo coma o péndulo mentres miras a luz.",
+          "es": "Mueve el dedo como péndulo mientras miras la luz."
+         }
+        }
+       ]
       }
      },
      "rutinas": {
@@ -2436,19 +3230,75 @@
      ],
      "capas": {
       "nucleo": {
-       "gl": "Semana 3 · «Follas ao trasluz»: nomea só Good morning, Peek-a-boo mentres o toca coas mans.",
-       "es": "Semana 3 · «Hojas a contraluz»: nombra solo Good morning, Peek-a-boo mientras lo toca con las manos.",
-       "en": "Good morning, Peek-a-boo"
+       "gl": "«Follas ao trasluz», semana 3: nomea «Good morning» e «Peek-a-boo» mentres o toca coas mans.",
+       "es": "«Hojas a contraluz», semana 3: nombra «Good morning» y «Peek-a-boo» mientras lo toca con las manos.",
+       "en": "Good morning, Peek-a-boo",
+       "pezas": [
+        {
+         "en": "Good morning",
+         "gl": "Bos días",
+         "es": "Buenos días",
+         "lamina": "pal_good_morning",
+         "xesto": {
+          "gl": "Abre a cortina para poñer a folla na fiestra.",
+          "es": "Abre la cortina para poner la hoja en la ventana."
+         }
+        },
+        {
+         "en": "Peek-a-boo",
+         "gl": "Cucú-tras",
+         "es": "Cucú-tras",
+         "lamina": "pal_02_peek_a_boo",
+         "xesto": {
+          "gl": "Tapa e destapa a folla coa man diante da lanterna.",
+          "es": "Tapa y destapa la hoja con la mano ante la linterna."
+         }
+        }
+       ]
       },
       "mais": {
-       "gl": "Semana 3 · «Follas ao trasluz»: combina Good morning, Peek-a-boo, Loud, Spoon alternando bos días e xesto.",
-       "es": "Semana 3 · «Hojas a contraluz»: combina Good morning, Peek-a-boo, Loud, Spoon alternando buenos días y gesto.",
-       "en": "Good morning, Peek-a-boo, Loud, Spoon"
+       "gl": "«Follas ao trasluz», semana 3, se xa mira e busca as novas: engade «Loud» e «Spoon», unha a unha e co seu xesto.",
+       "es": "«Hojas a contraluz», semana 3, si ya mira y busca las nuevas: añade «Loud» y «Spoon», una a una y con su gesto.",
+       "en": "Loud, Spoon",
+       "pezas": [
+        {
+         "en": "Loud",
+         "gl": "Forte",
+         "es": "Fuerte",
+         "lamina": "pal_loud",
+         "xesto": {
+          "gl": "Abre os brazos cando a botella chea soa forte.",
+          "es": "Abre los brazos cuando la botella llena suena fuerte."
+         }
+        },
+        {
+         "en": "Spoon",
+         "gl": "Culler",
+         "es": "Cuchara",
+         "lamina": "pal_pal_spoon",
+         "xesto": {
+          "gl": "Suxeita a culler de madeira diante dos ollos.",
+          "es": "Sujeta la cuchara de madera delante de los ojos."
+         }
+        }
+       ]
       },
       "apoio": {
-       "gl": "Semana 3 · «Follas ao trasluz»: repite devagar «Good morning» cun único obxecto e sen présa.",
-       "es": "Semana 3 · «Hojas a contraluz»: repite despacio «Good morning» con un único objeto y sin prisa.",
-       "en": "Good morning"
+       "gl": "«Follas ao trasluz», semana 3, con calma: só «Good morning», co obxecto na man, e agarda a que o mire.",
+       "es": "«Hojas a contraluz», semana 3, con calma: solo «Good morning», con el objeto en la mano, y espera a que lo mire.",
+       "en": "Good morning",
+       "pezas": [
+        {
+         "en": "Good morning",
+         "gl": "Bos días",
+         "es": "Buenos días",
+         "lamina": "pal_good_morning",
+         "xesto": {
+          "gl": "Abre a cortina para poñer a folla na fiestra.",
+          "es": "Abre la cortina para poner la hoja en la ventana."
+         }
+        }
+       ]
       }
      },
      "rutinas": {
@@ -2524,19 +3374,85 @@
      ],
      "capas": {
       "nucleo": {
-       "gl": "Semana 4 · «Follas ao trasluz»: nomea só Eye mentres o toca coas mans.",
-       "es": "Semana 4 · «Hojas a contraluz»: nombra solo Eye mientras lo toca con las manos.",
-       "en": "Eye"
+       "gl": "«Follas ao trasluz», semana 4: nomea «Eye» e «Bird» mentres o toca coas mans.",
+       "es": "«Hojas a contraluz», semana 4: nombra «Eye» y «Bird» mientras lo toca con las manos.",
+       "en": "Eye, Bird",
+       "pezas": [
+        {
+         "en": "Eye",
+         "gl": "Ollo",
+         "es": "Ojo",
+         "lamina": "pal_eye",
+         "xesto": {
+          "gl": "Sinala o teu ollo antes de mirar pola folla á luz.",
+          "es": "Señala tu ojo antes de mirar la hoja a la luz."
+         }
+        },
+        {
+         "en": "Bird",
+         "gl": "Paxaro",
+         "es": "Pájaro",
+         "lamina": "pal_bird",
+         "xesto": {
+          "gl": "Fai voar a sombra dun paxaro coas mans diante da luz.",
+          "es": "Haz volar la sombra de un pájaro ante la luz."
+         }
+        }
+       ]
       },
       "mais": {
-       "gl": "Semana 4 · «Follas ao trasluz»: combina Eye, Bird, Tick-tock, clock!, Up, down, up, Big, small, big alternando ollo e xesto.",
-       "es": "Semana 4 · «Hojas a contraluz»: combina Eye, Bird, Tick-tock, clock!, Up, down, up, Big, small, big alternando ojo y gesto.",
-       "en": "Eye, Bird, Tick-tock, clock!, Up, down, up, Big, small, big"
+       "gl": "«Follas ao trasluz», semana 4, se xa mira e busca as novas: engade «Tick-tock, clock!», «Up, down, up» e «Big, small, big», unha a unha e co seu xesto.",
+       "es": "«Hojas a contraluz», semana 4, si ya mira y busca las nuevas: añade «Tick-tock, clock!», «Up, down, up» y «Big, small, big», una a una y con su gesto.",
+       "en": "Tick-tock, clock!, Up, down, up, Big, small, big",
+       "pezas": [
+        {
+         "en": "Tick-tock, clock!",
+         "gl": "Tic-tac, reloxo!",
+         "es": "¡Tic-tac, reloj!",
+         "lamina": "pal_02_tick_tock",
+         "xesto": {
+          "gl": "Move o dedo coma o péndulo mentres miras a luz.",
+          "es": "Mueve el dedo como péndulo mientras miras la luz."
+         }
+        },
+        {
+         "en": "Up, down, up",
+         "gl": "Arriba, abaixo, arriba",
+         "es": "Arriba, abajo, arriba",
+         "lamina": "pal_02_up_down_up",
+         "xesto": {
+          "gl": "Leva a man arriba, solta abaixo e volve subir.",
+          "es": "Lleva la mano arriba, suelta abajo y vuelve a subir."
+         }
+        },
+        {
+         "en": "Big, small, big",
+         "gl": "Grande, pequeno, grande",
+         "es": "Grande, pequeño, grande",
+         "lamina": "pal_02_big_small_big",
+         "xesto": {
+          "gl": "Alinea pedra grande, folla pequena e pedra grande.",
+          "es": "Alinea piedra grande, hoja pequeña y piedra grande."
+         }
+        }
+       ]
       },
       "apoio": {
-       "gl": "Semana 4 · «Follas ao trasluz»: repite devagar «Eye» cun único obxecto e sen présa.",
-       "es": "Semana 4 · «Hojas a contraluz»: repite despacio «Eye» con un único objeto y sin prisa.",
-       "en": "Eye"
+       "gl": "«Follas ao trasluz», semana 4, con calma: só «Eye», co obxecto na man, e agarda a que o mire.",
+       "es": "«Hojas a contraluz», semana 4, con calma: solo «Eye», con el objeto en la mano, y espera a que lo mire.",
+       "en": "Eye",
+       "pezas": [
+        {
+         "en": "Eye",
+         "gl": "Ollo",
+         "es": "Ojo",
+         "lamina": "pal_eye",
+         "xesto": {
+          "gl": "Sinala o teu ollo antes de mirar pola folla á luz.",
+          "es": "Señala tu ojo antes de mirar la hoja a la luz."
+         }
+        }
+       ]
       }
      },
      "rutinas": {
@@ -3023,19 +3939,75 @@
      ],
      "capas": {
       "nucleo": {
-       "gl": "Semana 1 · «Cada cousa na súa cesta»: nomea só Box, Apple mentres o toca coas mans.",
-       "es": "Semana 1 · «Cada cosa en su cesta»: nombra solo Box, Apple mientras lo toca con las manos.",
-       "en": "Box, Apple"
+       "gl": "«Cada cousa na súa cesta», semana 1: nomea «Box» e «Apple» mentres o toca coas mans.",
+       "es": "«Cada cosa en su cesta», semana 1: nombra «Box» y «Apple» mientras lo toca con las manos.",
+       "en": "Box, Apple",
+       "pezas": [
+        {
+         "en": "Box",
+         "gl": "Caixa",
+         "es": "Caja",
+         "lamina": "pal_box",
+         "xesto": {
+          "gl": "Toca os catro lados da caixa de clasificar.",
+          "es": "Toca los cuatro lados de la caja de clasificar."
+         }
+        },
+        {
+         "en": "Apple",
+         "gl": "Mazá",
+         "es": "Manzana",
+         "lamina": "pal_apple",
+         "xesto": {
+          "gl": "Colle a mazá e métea na cesta das froitas.",
+          "es": "Coge la manzana y métela en la cesta de las frutas."
+         }
+        }
+       ]
       },
       "mais": {
-       "gl": "Semana 1 · «Cada cousa na súa cesta»: combina Box, Apple, Peek-a-boo, Good morning alternando caixa e xesto.",
-       "es": "Semana 1 · «Cada cosa en su cesta»: combina Box, Apple, Peek-a-boo, Good morning alternando caja y gesto.",
-       "en": "Box, Apple, Peek-a-boo, Good morning"
+       "gl": "«Cada cousa na súa cesta», semana 1, se xa mira e busca as novas: engade «Peek-a-boo» e «Good morning», unha a unha e co seu xesto.",
+       "es": "«Cada cosa en su cesta», semana 1, si ya mira y busca las nuevas: añade «Peek-a-boo» y «Good morning», una a una y con su gesto.",
+       "en": "Peek-a-boo, Good morning",
+       "pezas": [
+        {
+         "en": "Peek-a-boo",
+         "gl": "Cucú-tras",
+         "es": "Cucú-tras",
+         "lamina": "pal_02_peek_a_boo",
+         "xesto": {
+          "gl": "Tapa e destapa a folla coa man diante da lanterna.",
+          "es": "Tapa y destapa la hoja con la mano ante la linterna."
+         }
+        },
+        {
+         "en": "Good morning",
+         "gl": "Bos días",
+         "es": "Buenos días",
+         "lamina": "pal_good_morning",
+         "xesto": {
+          "gl": "Abre a cortina para poñer a folla na fiestra.",
+          "es": "Abre la cortina para poner la hoja en la ventana."
+         }
+        }
+       ]
       },
       "apoio": {
-       "gl": "Semana 1 · «Cada cousa na súa cesta»: repite devagar «Box» cun único obxecto e sen présa.",
-       "es": "Semana 1 · «Cada cosa en su cesta»: repite despacio «Box» con un único objeto y sin prisa.",
-       "en": "Box"
+       "gl": "«Cada cousa na súa cesta», semana 1, con calma: só «Box», co obxecto na man, e agarda a que o mire.",
+       "es": "«Cada cosa en su cesta», semana 1, con calma: solo «Box», con el objeto en la mano, y espera a que lo mire.",
+       "en": "Box",
+       "pezas": [
+        {
+         "en": "Box",
+         "gl": "Caixa",
+         "es": "Caja",
+         "lamina": "pal_box",
+         "xesto": {
+          "gl": "Toca os catro lados da caixa de clasificar.",
+          "es": "Toca los cuatro lados de la caja de clasificar."
+         }
+        }
+       ]
       }
      },
      "rutinas": {
@@ -3113,19 +4085,75 @@
      ],
      "capas": {
       "nucleo": {
-       "gl": "Semana 2 · «Cada cousa na súa cesta»: nomea só Bread, In, out, in mentres o toca coas mans.",
-       "es": "Semana 2 · «Cada cosa en su cesta»: nombra solo Bread, In, out, in mientras lo toca con las manos.",
-       "en": "Bread, In, out, in"
+       "gl": "«Cada cousa na súa cesta», semana 2: nomea «Bread» e «In, out, in» mentres o toca coas mans.",
+       "es": "«Cada cosa en su cesta», semana 2: nombra «Bread» y «In, out, in» mientras lo toca con las manos.",
+       "en": "Bread, In, out, in",
+       "pezas": [
+        {
+         "en": "Bread",
+         "gl": "Pan",
+         "es": "Pan",
+         "lamina": "pal_bread",
+         "xesto": {
+          "gl": "Pon o pan na cesta diferente á da froita.",
+          "es": "Pon el pan en la cesta distinta a la de la fruta."
+         }
+        },
+        {
+         "en": "In, out, in",
+         "gl": "Dentro, fóra, dentro",
+         "es": "Dentro, fuera, dentro",
+         "lamina": "pal_02_in_out_in",
+         "xesto": {
+          "gl": "Mete a peza na cesta, sácaa e vólvea meter.",
+          "es": "Mete la pieza en la cesta, sácala y vuelve a meterla."
+         }
+        }
+       ]
       },
       "mais": {
-       "gl": "Semana 2 · «Cada cousa na súa cesta»: combina Bread, In, out, in, Tick-tock, clock!, Eye alternando pan e xesto.",
-       "es": "Semana 2 · «Cada cosa en su cesta»: combina Bread, In, out, in, Tick-tock, clock!, Eye alternando pan y gesto.",
-       "en": "Bread, In, out, in, Tick-tock, clock!, Eye"
+       "gl": "«Cada cousa na súa cesta», semana 2, se xa mira e busca as novas: engade «Tick-tock, clock!» e «Eye», unha a unha e co seu xesto.",
+       "es": "«Cada cosa en su cesta», semana 2, si ya mira y busca las nuevas: añade «Tick-tock, clock!» y «Eye», una a una y con su gesto.",
+       "en": "Tick-tock, clock!, Eye",
+       "pezas": [
+        {
+         "en": "Tick-tock, clock!",
+         "gl": "Tic-tac, reloxo!",
+         "es": "¡Tic-tac, reloj!",
+         "lamina": "pal_02_tick_tock",
+         "xesto": {
+          "gl": "Move o dedo coma o péndulo mentres miras a luz.",
+          "es": "Mueve el dedo como péndulo mientras miras la luz."
+         }
+        },
+        {
+         "en": "Eye",
+         "gl": "Ollo",
+         "es": "Ojo",
+         "lamina": "pal_eye",
+         "xesto": {
+          "gl": "Sinala o teu ollo antes de mirar pola folla á luz.",
+          "es": "Señala tu ojo antes de mirar la hoja a la luz."
+         }
+        }
+       ]
       },
       "apoio": {
-       "gl": "Semana 2 · «Cada cousa na súa cesta»: repite devagar «Bread» cun único obxecto e sen présa.",
-       "es": "Semana 2 · «Cada cosa en su cesta»: repite despacio «Bread» con un único objeto y sin prisa.",
-       "en": "Bread"
+       "gl": "«Cada cousa na súa cesta», semana 2, con calma: só «Bread», co obxecto na man, e agarda a que o mire.",
+       "es": "«Cada cosa en su cesta», semana 2, con calma: solo «Bread», con el objeto en la mano, y espera a que lo mire.",
+       "en": "Bread",
+       "pezas": [
+        {
+         "en": "Bread",
+         "gl": "Pan",
+         "es": "Pan",
+         "lamina": "pal_bread",
+         "xesto": {
+          "gl": "Pon o pan na cesta diferente á da froita.",
+          "es": "Pon el pan en la cesta distinta a la de la fruta."
+         }
+        }
+       ]
       }
      },
      "rutinas": {
@@ -3203,19 +4231,75 @@
      ],
      "capas": {
       "nucleo": {
-       "gl": "Semana 3 · «Cada cousa na súa cesta»: nomea só Clean up, All done mentres o toca coas mans.",
-       "es": "Semana 3 · «Cada cosa en su cesta»: nombra solo Clean up, All done mientras lo toca con las manos.",
-       "en": "Clean up, All done"
+       "gl": "«Cada cousa na súa cesta», semana 3: nomea «Clean up» e «All done» mentres o toca coas mans.",
+       "es": "«Cada cosa en su cesta», semana 3: nombra «Clean up» y «All done» mientras lo toca con las manos.",
+       "en": "Clean up, All done",
+       "pezas": [
+        {
+         "en": "Clean up",
+         "gl": "A recoller",
+         "es": "A recoger",
+         "lamina": "pal_02_clean_up",
+         "xesto": {
+          "gl": "Sinala a caixa para gardar xuntos ao rematar.",
+          "es": "Señala la caja para guardar juntos al terminar."
+         }
+        },
+        {
+         "en": "All done",
+         "gl": "Xa está",
+         "es": "Ya está",
+         "lamina": "pal_02_all_done",
+         "xesto": {
+          "gl": "Ensina as dúas palmas abertas sobre a cesta baleira.",
+          "es": "Enseña ambas palmas abiertas sobre la cesta vacía."
+         }
+        }
+       ]
       },
       "mais": {
-       "gl": "Semana 3 · «Cada cousa na súa cesta»: combina Clean up, All done, Big, Leaf alternando a recoller e xesto.",
-       "es": "Semana 3 · «Cada cosa en su cesta»: combina Clean up, All done, Big, Leaf alternando a recoger y gesto.",
-       "en": "Clean up, All done, Big, Leaf"
+       "gl": "«Cada cousa na súa cesta», semana 3, se xa mira e busca as novas: engade «Big» e «Leaf», unha a unha e co seu xesto.",
+       "es": "«Cada cosa en su cesta», semana 3, si ya mira y busca las nuevas: añade «Big» y «Leaf», una a una y con su gesto.",
+       "en": "Big, Leaf",
+       "pezas": [
+        {
+         "en": "Big",
+         "gl": "Grande",
+         "es": "Grande",
+         "lamina": "pal_big",
+         "xesto": {
+          "gl": "Sinala a pedra máis grande coas dúas mans.",
+          "es": "Señala la piedra más grande con las dos manos."
+         }
+        },
+        {
+         "en": "Leaf",
+         "gl": "Folla",
+         "es": "Hoja",
+         "lamina": "pal_leaf",
+         "xesto": {
+          "gl": "Sostén a folla seca pola punta e déixaa planear.",
+          "es": "Sostén la hoja seca por la punta y déjala planear."
+         }
+        }
+       ]
       },
       "apoio": {
-       "gl": "Semana 3 · «Cada cousa na súa cesta»: repite devagar «Clean up» cun único obxecto e sen présa.",
-       "es": "Semana 3 · «Cada cosa en su cesta»: repite despacio «Clean up» con un único objeto y sin prisa.",
-       "en": "Clean up"
+       "gl": "«Cada cousa na súa cesta», semana 3, con calma: só «Clean up», co obxecto na man, e agarda a que o mire.",
+       "es": "«Cada cosa en su cesta», semana 3, con calma: solo «Clean up», con el objeto en la mano, y espera a que lo mire.",
+       "en": "Clean up",
+       "pezas": [
+        {
+         "en": "Clean up",
+         "gl": "A recoller",
+         "es": "A recoger",
+         "lamina": "pal_02_clean_up",
+         "xesto": {
+          "gl": "Sinala a caixa para gardar xuntos ao rematar.",
+          "es": "Señala la caja para guardar juntos al terminar."
+         }
+        }
+       ]
       }
      },
      "rutinas": {
@@ -3291,19 +4375,85 @@
      ],
      "capas": {
       "nucleo": {
-       "gl": "Semana 4 · «Cada cousa na súa cesta»: nomea só Box mentres o toca coas mans.",
-       "es": "Semana 4 · «Cada cosa en su cesta»: nombra solo Box mientras lo toca con las manos.",
-       "en": "Box"
+       "gl": "«Cada cousa na súa cesta», semana 4: nomea «Box» e «Apple» mentres o toca coas mans.",
+       "es": "«Cada cosa en su cesta», semana 4: nombra «Box» y «Apple» mientras lo toca con las manos.",
+       "en": "Box, Apple",
+       "pezas": [
+        {
+         "en": "Box",
+         "gl": "Caixa",
+         "es": "Caja",
+         "lamina": "pal_box",
+         "xesto": {
+          "gl": "Toca os catro lados da caixa de clasificar.",
+          "es": "Toca los cuatro lados de la caja de clasificar."
+         }
+        },
+        {
+         "en": "Apple",
+         "gl": "Mazá",
+         "es": "Manzana",
+         "lamina": "pal_apple",
+         "xesto": {
+          "gl": "Colle a mazá e métea na cesta das froitas.",
+          "es": "Coge la manzana y métela en la cesta de las frutas."
+         }
+        }
+       ]
       },
       "mais": {
-       "gl": "Semana 4 · «Cada cousa na súa cesta»: combina Box, Apple, Bread, Peek-a-boo, Good morning alternando caixa e xesto.",
-       "es": "Semana 4 · «Cada cosa en su cesta»: combina Box, Apple, Bread, Peek-a-boo, Good morning alternando caja y gesto.",
-       "en": "Box, Apple, Bread, Peek-a-boo, Good morning"
+       "gl": "«Cada cousa na súa cesta», semana 4, se xa mira e busca as novas: engade «Bread», «Peek-a-boo» e «Good morning», unha a unha e co seu xesto.",
+       "es": "«Cada cosa en su cesta», semana 4, si ya mira y busca las nuevas: añade «Bread», «Peek-a-boo» y «Good morning», una a una y con su gesto.",
+       "en": "Bread, Peek-a-boo, Good morning",
+       "pezas": [
+        {
+         "en": "Bread",
+         "gl": "Pan",
+         "es": "Pan",
+         "lamina": "pal_bread",
+         "xesto": {
+          "gl": "Pon o pan na cesta diferente á da froita.",
+          "es": "Pon el pan en la cesta distinta a la de la fruta."
+         }
+        },
+        {
+         "en": "Peek-a-boo",
+         "gl": "Cucú-tras",
+         "es": "Cucú-tras",
+         "lamina": "pal_02_peek_a_boo",
+         "xesto": {
+          "gl": "Tapa e destapa a folla coa man diante da lanterna.",
+          "es": "Tapa y destapa la hoja con la mano ante la linterna."
+         }
+        },
+        {
+         "en": "Good morning",
+         "gl": "Bos días",
+         "es": "Buenos días",
+         "lamina": "pal_good_morning",
+         "xesto": {
+          "gl": "Abre a cortina para poñer a folla na fiestra.",
+          "es": "Abre la cortina para poner la hoja en la ventana."
+         }
+        }
+       ]
       },
       "apoio": {
-       "gl": "Semana 4 · «Cada cousa na súa cesta»: repite devagar «Box» cun único obxecto e sen présa.",
-       "es": "Semana 4 · «Cada cosa en su cesta»: repite despacio «Box» con un único objeto y sin prisa.",
-       "en": "Box"
+       "gl": "«Cada cousa na súa cesta», semana 4, con calma: só «Box», co obxecto na man, e agarda a que o mire.",
+       "es": "«Cada cosa en su cesta», semana 4, con calma: solo «Box», con el objeto en la mano, y espera a que lo mire.",
+       "en": "Box",
+       "pezas": [
+        {
+         "en": "Box",
+         "gl": "Caixa",
+         "es": "Caja",
+         "lamina": "pal_box",
+         "xesto": {
+          "gl": "Toca os catro lados da caixa de clasificar.",
+          "es": "Toca los cuatro lados de la caja de clasificar."
+         }
+        }
+       ]
       }
      },
      "rutinas": {
@@ -3810,19 +4960,75 @@
      ],
      "capas": {
       "nucleo": {
-       "gl": "Semana 1 · «Morno e frío»: nomea só Milk, Banana mentres o toca coas mans.",
-       "es": "Semana 1 · «Templado y frío»: nombra solo Milk, Banana mientras lo toca con las manos.",
-       "en": "Milk, Banana"
+       "gl": "«Morno e frío», semana 1: nomea «Milk» e «Banana» mentres o toca coas mans.",
+       "es": "«Templado y frío», semana 1: nombra «Milk» y «Banana» mientras lo toca con las manos.",
+       "en": "Milk, Banana",
+       "pezas": [
+        {
+         "en": "Milk",
+         "gl": "Leite",
+         "es": "Leche",
+         "lamina": "pal_milk",
+         "xesto": {
+          "gl": "Suxeita o vaso de leite morno coas dúas mans.",
+          "es": "Sujeta el vaso de leche templada con ambas manos."
+         }
+        },
+        {
+         "en": "Banana",
+         "gl": "Plátano",
+         "es": "Plátano",
+         "lamina": "pal_pal_banana",
+         "xesto": {
+          "gl": "Toca o plátano fresco fronte ao pan morno.",
+          "es": "Toca el plátano fresco frente al pan templado."
+         }
+        }
+       ]
       },
       "mais": {
-       "gl": "Semana 1 · «Morno e frío»: combina Milk, Banana, All done, Clean up alternando leite e xesto.",
-       "es": "Semana 1 · «Templado y frío»: combina Milk, Banana, All done, Clean up alternando leche y gesto.",
-       "en": "Milk, Banana, All done, Clean up"
+       "gl": "«Morno e frío», semana 1, se xa mira e busca as novas: engade «All done» e «Clean up», unha a unha e co seu xesto.",
+       "es": "«Templado y frío», semana 1, si ya mira y busca las nuevas: añade «All done» y «Clean up», una a una y con su gesto.",
+       "en": "All done, Clean up",
+       "pezas": [
+        {
+         "en": "All done",
+         "gl": "Xa está",
+         "es": "Ya está",
+         "lamina": "pal_02_all_done",
+         "xesto": {
+          "gl": "Ensina as dúas palmas abertas sobre a cesta baleira.",
+          "es": "Enseña ambas palmas abiertas sobre la cesta vacía."
+         }
+        },
+        {
+         "en": "Clean up",
+         "gl": "A recoller",
+         "es": "A recoger",
+         "lamina": "pal_02_clean_up",
+         "xesto": {
+          "gl": "Sinala a caixa para gardar xuntos ao rematar.",
+          "es": "Señala la caja para guardar juntos al terminar."
+         }
+        }
+       ]
       },
       "apoio": {
-       "gl": "Semana 1 · «Morno e frío»: repite devagar «Milk» cun único obxecto e sen présa.",
-       "es": "Semana 1 · «Templado y frío»: repite despacio «Milk» con un único objeto y sin prisa.",
-       "en": "Milk"
+       "gl": "«Morno e frío», semana 1, con calma: só «Milk», co obxecto na man, e agarda a que o mire.",
+       "es": "«Templado y frío», semana 1, con calma: solo «Milk», con el objeto en la mano, y espera a que lo mire.",
+       "en": "Milk",
+       "pezas": [
+        {
+         "en": "Milk",
+         "gl": "Leite",
+         "es": "Leche",
+         "lamina": "pal_milk",
+         "xesto": {
+          "gl": "Suxeita o vaso de leite morno coas dúas mans.",
+          "es": "Sujeta el vaso de leche templada con ambas manos."
+         }
+        }
+       ]
       }
      },
      "rutinas": {
@@ -3900,19 +5106,75 @@
      ],
      "capas": {
       "nucleo": {
-       "gl": "Semana 2 · «Morno e frío»: nomea só Hot, Cold mentres o toca coas mans.",
-       "es": "Semana 2 · «Templado y frío»: nombra solo Hot, Cold mientras lo toca con las manos.",
-       "en": "Hot, Cold"
+       "gl": "«Morno e frío», semana 2: nomea «Hot» e «Cold» mentres o toca coas mans.",
+       "es": "«Templado y frío», semana 2: nombra «Hot» y «Cold» mientras lo toca con las manos.",
+       "en": "Hot, Cold",
+       "pezas": [
+        {
+         "en": "Hot",
+         "gl": "Quente",
+         "es": "Caliente",
+         "lamina": "pal_hot",
+         "xesto": {
+          "gl": "Sopra amodo coa man preto do pan morno.",
+          "es": "Sopla despacio con la mano cerca del pan templado."
+         }
+        },
+        {
+         "en": "Cold",
+         "gl": "Frío",
+         "es": "Frío",
+         "lamina": "pal_cold",
+         "xesto": {
+          "gl": "Estremécete cun sorriso ao tocar a mazá da neveira.",
+          "es": "Estremécete con una sonrisa al tocar la manzana fría."
+         }
+        }
+       ]
       },
       "mais": {
-       "gl": "Semana 2 · «Morno e frío»: combina Hot, Cold, Bread, Box alternando quente e xesto.",
-       "es": "Semana 2 · «Templado y frío»: combina Hot, Cold, Bread, Box alternando caliente y gesto.",
-       "en": "Hot, Cold, Bread, Box"
+       "gl": "«Morno e frío», semana 2, se xa mira e busca as novas: engade «Bread» e «Box», unha a unha e co seu xesto.",
+       "es": "«Templado y frío», semana 2, si ya mira y busca las nuevas: añade «Bread» y «Box», una a una y con su gesto.",
+       "en": "Bread, Box",
+       "pezas": [
+        {
+         "en": "Bread",
+         "gl": "Pan",
+         "es": "Pan",
+         "lamina": "pal_bread",
+         "xesto": {
+          "gl": "Pon o pan na cesta diferente á da froita.",
+          "es": "Pon el pan en la cesta distinta a la de la fruta."
+         }
+        },
+        {
+         "en": "Box",
+         "gl": "Caixa",
+         "es": "Caja",
+         "lamina": "pal_box",
+         "xesto": {
+          "gl": "Toca os catro lados da caixa de clasificar.",
+          "es": "Toca los cuatro lados de la caja de clasificar."
+         }
+        }
+       ]
       },
       "apoio": {
-       "gl": "Semana 2 · «Morno e frío»: repite devagar «Hot» cun único obxecto e sen présa.",
-       "es": "Semana 2 · «Templado y frío»: repite despacio «Hot» con un único objeto y sin prisa.",
-       "en": "Hot"
+       "gl": "«Morno e frío», semana 2, con calma: só «Hot», co obxecto na man, e agarda a que o mire.",
+       "es": "«Templado y frío», semana 2, con calma: solo «Hot», con el objeto en la mano, y espera a que lo mire.",
+       "en": "Hot",
+       "pezas": [
+        {
+         "en": "Hot",
+         "gl": "Quente",
+         "es": "Caliente",
+         "lamina": "pal_hot",
+         "xesto": {
+          "gl": "Sopra amodo coa man preto do pan morno.",
+          "es": "Sopla despacio con la mano cerca del pan templado."
+         }
+        }
+       ]
       }
      },
      "rutinas": {
@@ -3990,19 +5252,75 @@
      ],
      "capas": {
       "nucleo": {
-       "gl": "Semana 3 · «Morno e frío»: nomea só Cold, warm, cold, More, please mentres o toca coas mans.",
-       "es": "Semana 3 · «Templado y frío»: nombra solo Cold, warm, cold, More, please mientras lo toca con las manos.",
-       "en": "Cold, warm, cold, More, please"
+       "gl": "«Morno e frío», semana 3: nomea «Cold, warm, cold» e «More, please» mentres o toca coas mans.",
+       "es": "«Templado y frío», semana 3: nombra «Cold, warm, cold» y «More, please» mientras lo toca con las manos.",
+       "en": "Cold, warm, cold, More, please",
+       "pezas": [
+        {
+         "en": "Cold, warm, cold",
+         "gl": "Frío, morno, frío",
+         "es": "Frío, templado, frío",
+         "lamina": "pal_02_cold_warm_cold",
+         "xesto": {
+          "gl": "Toca froita fría, pan morno e froita fría por quenda.",
+          "es": "Toca fruta fría, pan templado y fruta fría por turno."
+         }
+        },
+        {
+         "en": "More, please",
+         "gl": "Máis, por favor",
+         "es": "Más, por favor",
+         "lamina": "pal_more_please",
+         "xesto": {
+          "gl": "Xunta as puntas dos dedos pedindo tocar outra peza.",
+          "es": "Junta las puntas de los dedos pidiendo tocar otra pieza."
+         }
+        }
+       ]
       },
       "mais": {
-       "gl": "Semana 3 · «Morno e frío»: combina Cold, warm, cold, More, please, Tick-tock, clock!, Eye alternando frío, morno, frío e xesto.",
-       "es": "Semana 3 · «Templado y frío»: combina Cold, warm, cold, More, please, Tick-tock, clock!, Eye alternando frío, templado, frío y gesto.",
-       "en": "Cold, warm, cold, More, please, Tick-tock, clock!, Eye"
+       "gl": "«Morno e frío», semana 3, se xa mira e busca as novas: engade «Tick-tock, clock!» e «Eye», unha a unha e co seu xesto.",
+       "es": "«Templado y frío», semana 3, si ya mira y busca las nuevas: añade «Tick-tock, clock!» y «Eye», una a una y con su gesto.",
+       "en": "Tick-tock, clock!, Eye",
+       "pezas": [
+        {
+         "en": "Tick-tock, clock!",
+         "gl": "Tic-tac, reloxo!",
+         "es": "¡Tic-tac, reloj!",
+         "lamina": "pal_02_tick_tock",
+         "xesto": {
+          "gl": "Move o dedo coma o péndulo mentres miras a luz.",
+          "es": "Mueve el dedo como péndulo mientras miras la luz."
+         }
+        },
+        {
+         "en": "Eye",
+         "gl": "Ollo",
+         "es": "Ojo",
+         "lamina": "pal_eye",
+         "xesto": {
+          "gl": "Sinala o teu ollo antes de mirar pola folla á luz.",
+          "es": "Señala tu ojo antes de mirar la hoja a la luz."
+         }
+        }
+       ]
       },
       "apoio": {
-       "gl": "Semana 3 · «Morno e frío»: repite devagar «Cold, warm, cold» cun único obxecto e sen présa.",
-       "es": "Semana 3 · «Templado y frío»: repite despacio «Cold, warm, cold» con un único objeto y sin prisa.",
-       "en": "Cold, warm, cold"
+       "gl": "«Morno e frío», semana 3, con calma: só «Cold, warm, cold», co obxecto na man, e agarda a que o mire.",
+       "es": "«Templado y frío», semana 3, con calma: solo «Cold, warm, cold», con el objeto en la mano, y espera a que lo mire.",
+       "en": "Cold, warm, cold",
+       "pezas": [
+        {
+         "en": "Cold, warm, cold",
+         "gl": "Frío, morno, frío",
+         "es": "Frío, templado, frío",
+         "lamina": "pal_02_cold_warm_cold",
+         "xesto": {
+          "gl": "Toca froita fría, pan morno e froita fría por quenda.",
+          "es": "Toca fruta fría, pan templado y fruta fría por turno."
+         }
+        }
+       ]
       }
      },
      "rutinas": {
@@ -4078,19 +5396,85 @@
      ],
      "capas": {
       "nucleo": {
-       "gl": "Semana 4 · «Morno e frío»: nomea só Milk mentres o toca coas mans.",
-       "es": "Semana 4 · «Templado y frío»: nombra solo Milk mientras lo toca con las manos.",
-       "en": "Milk"
+       "gl": "«Morno e frío», semana 4: nomea «Milk» e «Banana» mentres o toca coas mans.",
+       "es": "«Templado y frío», semana 4: nombra «Milk» y «Banana» mientras lo toca con las manos.",
+       "en": "Milk, Banana",
+       "pezas": [
+        {
+         "en": "Milk",
+         "gl": "Leite",
+         "es": "Leche",
+         "lamina": "pal_milk",
+         "xesto": {
+          "gl": "Suxeita o vaso de leite morno coas dúas mans.",
+          "es": "Sujeta el vaso de leche templada con ambas manos."
+         }
+        },
+        {
+         "en": "Banana",
+         "gl": "Plátano",
+         "es": "Plátano",
+         "lamina": "pal_pal_banana",
+         "xesto": {
+          "gl": "Toca o plátano fresco fronte ao pan morno.",
+          "es": "Toca el plátano fresco frente al pan templado."
+         }
+        }
+       ]
       },
       "mais": {
-       "gl": "Semana 4 · «Morno e frío»: combina Milk, Banana, Hot, All done, Clean up alternando leite e xesto.",
-       "es": "Semana 4 · «Templado y frío»: combina Milk, Banana, Hot, All done, Clean up alternando leche y gesto.",
-       "en": "Milk, Banana, Hot, All done, Clean up"
+       "gl": "«Morno e frío», semana 4, se xa mira e busca as novas: engade «Hot», «All done» e «Clean up», unha a unha e co seu xesto.",
+       "es": "«Templado y frío», semana 4, si ya mira y busca las nuevas: añade «Hot», «All done» y «Clean up», una a una y con su gesto.",
+       "en": "Hot, All done, Clean up",
+       "pezas": [
+        {
+         "en": "Hot",
+         "gl": "Quente",
+         "es": "Caliente",
+         "lamina": "pal_hot",
+         "xesto": {
+          "gl": "Sopra amodo coa man preto do pan morno.",
+          "es": "Sopla despacio con la mano cerca del pan templado."
+         }
+        },
+        {
+         "en": "All done",
+         "gl": "Xa está",
+         "es": "Ya está",
+         "lamina": "pal_02_all_done",
+         "xesto": {
+          "gl": "Ensina as dúas palmas abertas sobre a cesta baleira.",
+          "es": "Enseña ambas palmas abiertas sobre la cesta vacía."
+         }
+        },
+        {
+         "en": "Clean up",
+         "gl": "A recoller",
+         "es": "A recoger",
+         "lamina": "pal_02_clean_up",
+         "xesto": {
+          "gl": "Sinala a caixa para gardar xuntos ao rematar.",
+          "es": "Señala la caja para guardar juntos al terminar."
+         }
+        }
+       ]
       },
       "apoio": {
-       "gl": "Semana 4 · «Morno e frío»: repite devagar «Milk» cun único obxecto e sen présa.",
-       "es": "Semana 4 · «Templado y frío»: repite despacio «Milk» con un único objeto y sin prisa.",
-       "en": "Milk"
+       "gl": "«Morno e frío», semana 4, con calma: só «Milk», co obxecto na man, e agarda a que o mire.",
+       "es": "«Templado y frío», semana 4, con calma: solo «Milk», con el objeto en la mano, y espera a que lo mire.",
+       "en": "Milk",
+       "pezas": [
+        {
+         "en": "Milk",
+         "gl": "Leite",
+         "es": "Leche",
+         "lamina": "pal_milk",
+         "xesto": {
+          "gl": "Suxeita o vaso de leite morno coas dúas mans.",
+          "es": "Sujeta el vaso de leche templada con ambas manos."
+         }
+        }
+       ]
       }
      },
      "rutinas": {
@@ -4597,19 +5981,75 @@
      ],
      "capas": {
       "nucleo": {
-       "gl": "Semana 1 · «Burbullas que voan»: nomea só Mama, Papa mentres o toca coas mans.",
-       "es": "Semana 1 · «Burbujas que vuelan»: nombra solo Mama, Papa mientras lo toca con las manos.",
-       "en": "Mama, Papa"
+       "gl": "«Burbullas que voan», semana 1: nomea «Mama» e «Papa» mentres o toca coas mans.",
+       "es": "«Burbujas que vuelan», semana 1: nombra «Mama» y «Papa» mientras lo toca con las manos.",
+       "en": "Mama, Papa",
+       "pezas": [
+        {
+         "en": "Mama",
+         "gl": "Mamá",
+         "es": "Mamá",
+         "lamina": "pal_02_mama",
+         "xesto": {
+          "gl": "Sinala a mamá mentres sopra unha burbulla.",
+          "es": "Señala a mamá mientras sopla una burbuja."
+         }
+        },
+        {
+         "en": "Papa",
+         "gl": "Papá",
+         "es": "Papá",
+         "lamina": "pal_02_papa",
+         "xesto": {
+          "gl": "Sinala a papá collendo a burbulla na palma.",
+          "es": "Señala a papá recogiendo la burbuja en la palma."
+         }
+        }
+       ]
       },
       "mais": {
-       "gl": "Semana 1 · «Burbullas que voan»: combina Mama, Papa, More, please, Cold, warm, cold alternando mamá e xesto.",
-       "es": "Semana 1 · «Burbujas que vuelan»: combina Mama, Papa, More, please, Cold, warm, cold alternando mamá y gesto.",
-       "en": "Mama, Papa, More, please, Cold, warm, cold"
+       "gl": "«Burbullas que voan», semana 1, se xa mira e busca as novas: engade «More, please» e «Cold, warm, cold», unha a unha e co seu xesto.",
+       "es": "«Burbujas que vuelan», semana 1, si ya mira y busca las nuevas: añade «More, please» y «Cold, warm, cold», una a una y con su gesto.",
+       "en": "More, please, Cold, warm, cold",
+       "pezas": [
+        {
+         "en": "More, please",
+         "gl": "Máis, por favor",
+         "es": "Más, por favor",
+         "lamina": "pal_more_please",
+         "xesto": {
+          "gl": "Xunta as puntas dos dedos pedindo tocar outra peza.",
+          "es": "Junta las puntas de los dedos pidiendo tocar otra pieza."
+         }
+        },
+        {
+         "en": "Cold, warm, cold",
+         "gl": "Frío, morno, frío",
+         "es": "Frío, templado, frío",
+         "lamina": "pal_02_cold_warm_cold",
+         "xesto": {
+          "gl": "Toca froita fría, pan morno e froita fría por quenda.",
+          "es": "Toca fruta fría, pan templado y fruta fría por turno."
+         }
+        }
+       ]
       },
       "apoio": {
-       "gl": "Semana 1 · «Burbullas que voan»: repite devagar «Mama» cun único obxecto e sen présa.",
-       "es": "Semana 1 · «Burbujas que vuelan»: repite despacio «Mama» con un único objeto y sin prisa.",
-       "en": "Mama"
+       "gl": "«Burbullas que voan», semana 1, con calma: só «Mama», co obxecto na man, e agarda a que o mire.",
+       "es": "«Burbujas que vuelan», semana 1, con calma: solo «Mama», con el objeto en la mano, y espera a que lo mire.",
+       "en": "Mama",
+       "pezas": [
+        {
+         "en": "Mama",
+         "gl": "Mamá",
+         "es": "Mamá",
+         "lamina": "pal_02_mama",
+         "xesto": {
+          "gl": "Sinala a mamá mentres sopra unha burbulla.",
+          "es": "Señala a mamá mientras sopla una burbuja."
+         }
+        }
+       ]
       }
      },
      "rutinas": {
@@ -4687,19 +6127,75 @@
      ],
      "capas": {
       "nucleo": {
-       "gl": "Semana 2 · «Burbullas que voan»: nomea só Baby, Pop, bubble! mentres o toca coas mans.",
-       "es": "Semana 2 · «Burbujas que vuelan»: nombra solo Baby, Pop, bubble! mientras lo toca con las manos.",
-       "en": "Baby, Pop, bubble!"
+       "gl": "«Burbullas que voan», semana 2: nomea «Baby» e «Pop, bubble!» mentres o toca coas mans.",
+       "es": "«Burbujas que vuelan», semana 2: nombra «Baby» y «Pop, bubble!» mientras lo toca con las manos.",
+       "en": "Baby, Pop, bubble!",
+       "pezas": [
+        {
+         "en": "Baby",
+         "gl": "Bebé",
+         "es": "Bebé",
+         "lamina": "pal_baby",
+         "xesto": {
+          "gl": "Sinala o neno ou nena mirando subir a pompa.",
+          "es": "Señala al niño o niña mirando subir la pompa."
+         }
+        },
+        {
+         "en": "Pop, bubble!",
+         "gl": "Pum, burbulla!",
+         "es": "¡Pop, burbuja!",
+         "lamina": "pal_02_pop_bubble",
+         "xesto": {
+          "gl": "Toca suavemente co índice cando estoupa a burbulla.",
+          "es": "Toca suave con el índice cuando explota la burbuja."
+         }
+        }
+       ]
       },
       "mais": {
-       "gl": "Semana 2 · «Burbullas que voan»: combina Baby, Pop, bubble!, Hot, Milk alternando bebé e xesto.",
-       "es": "Semana 2 · «Burbujas que vuelan»: combina Baby, Pop, bubble!, Hot, Milk alternando bebé y gesto.",
-       "en": "Baby, Pop, bubble!, Hot, Milk"
+       "gl": "«Burbullas que voan», semana 2, se xa mira e busca as novas: engade «Hot» e «Milk», unha a unha e co seu xesto.",
+       "es": "«Burbujas que vuelan», semana 2, si ya mira y busca las nuevas: añade «Hot» y «Milk», una a una y con su gesto.",
+       "en": "Hot, Milk",
+       "pezas": [
+        {
+         "en": "Hot",
+         "gl": "Quente",
+         "es": "Caliente",
+         "lamina": "pal_hot",
+         "xesto": {
+          "gl": "Sopra amodo coa man preto do pan morno.",
+          "es": "Sopla despacio con la mano cerca del pan templado."
+         }
+        },
+        {
+         "en": "Milk",
+         "gl": "Leite",
+         "es": "Leche",
+         "lamina": "pal_milk",
+         "xesto": {
+          "gl": "Suxeita o vaso de leite morno coas dúas mans.",
+          "es": "Sujeta el vaso de leche templada con ambas manos."
+         }
+        }
+       ]
       },
       "apoio": {
-       "gl": "Semana 2 · «Burbullas que voan»: repite devagar «Baby» cun único obxecto e sen présa.",
-       "es": "Semana 2 · «Burbujas que vuelan»: repite despacio «Baby» con un único objeto y sin prisa.",
-       "en": "Baby"
+       "gl": "«Burbullas que voan», semana 2, con calma: só «Baby», co obxecto na man, e agarda a que o mire.",
+       "es": "«Burbujas que vuelan», semana 2, con calma: solo «Baby», con el objeto en la mano, y espera a que lo mire.",
+       "en": "Baby",
+       "pezas": [
+        {
+         "en": "Baby",
+         "gl": "Bebé",
+         "es": "Bebé",
+         "lamina": "pal_baby",
+         "xesto": {
+          "gl": "Sinala o neno ou nena mirando subir a pompa.",
+          "es": "Señala al niño o niña mirando subir la pompa."
+         }
+        }
+       ]
       }
      },
      "rutinas": {
@@ -4777,19 +6273,75 @@
      ],
      "capas": {
       "nucleo": {
-       "gl": "Semana 3 · «Burbullas que voan»: nomea só Bye-bye, Open and close mentres o toca coas mans.",
-       "es": "Semana 3 · «Burbujas que vuelan»: nombra solo Bye-bye, Open and close mientras lo toca con las manos.",
-       "en": "Bye-bye, Open and close"
+       "gl": "«Burbullas que voan», semana 3: nomea «Bye-bye» e «Open and close» mentres o toca coas mans.",
+       "es": "«Burbujas que vuelan», semana 3: nombra «Bye-bye» y «Open and close» mientras lo toca con las manos.",
+       "en": "Bye-bye, Open and close",
+       "pezas": [
+        {
+         "en": "Bye-bye",
+         "gl": "Adeus",
+         "es": "Adiós",
+         "lamina": "pal_bye_bye",
+         "xesto": {
+          "gl": "Move a man despedindo a burbulla que sobe alto.",
+          "es": "Mueve la mano despidiendo la burbuja que sube alto."
+         }
+        },
+        {
+         "en": "Open and close",
+         "gl": "Abrir e pechar",
+         "es": "Abrir y cerrar",
+         "lamina": "pal_02_open_close",
+         "xesto": {
+          "gl": "Abre e pecha a man imitando a película de xabón.",
+          "es": "Abre y cierra la mano imitando la película de jabón."
+         }
+        }
+       ]
       },
       "mais": {
-       "gl": "Semana 3 · «Burbullas que voan»: combina Bye-bye, Open and close, Bread, Box alternando adeus e xesto.",
-       "es": "Semana 3 · «Burbujas que vuelan»: combina Bye-bye, Open and close, Bread, Box alternando adiós y gesto.",
-       "en": "Bye-bye, Open and close, Bread, Box"
+       "gl": "«Burbullas que voan», semana 3, se xa mira e busca as novas: engade «Bread» e «Box», unha a unha e co seu xesto.",
+       "es": "«Burbujas que vuelan», semana 3, si ya mira y busca las nuevas: añade «Bread» y «Box», una a una y con su gesto.",
+       "en": "Bread, Box",
+       "pezas": [
+        {
+         "en": "Bread",
+         "gl": "Pan",
+         "es": "Pan",
+         "lamina": "pal_bread",
+         "xesto": {
+          "gl": "Pon o pan na cesta diferente á da froita.",
+          "es": "Pon el pan en la cesta distinta a la de la fruta."
+         }
+        },
+        {
+         "en": "Box",
+         "gl": "Caixa",
+         "es": "Caja",
+         "lamina": "pal_box",
+         "xesto": {
+          "gl": "Toca os catro lados da caixa de clasificar.",
+          "es": "Toca los cuatro lados de la caja de clasificar."
+         }
+        }
+       ]
       },
       "apoio": {
-       "gl": "Semana 3 · «Burbullas que voan»: repite devagar «Bye-bye» cun único obxecto e sen présa.",
-       "es": "Semana 3 · «Burbujas que vuelan»: repite despacio «Bye-bye» con un único objeto y sin prisa.",
-       "en": "Bye-bye"
+       "gl": "«Burbullas que voan», semana 3, con calma: só «Bye-bye», co obxecto na man, e agarda a que o mire.",
+       "es": "«Burbujas que vuelan», semana 3, con calma: solo «Bye-bye», con el objeto en la mano, y espera a que lo mire.",
+       "en": "Bye-bye",
+       "pezas": [
+        {
+         "en": "Bye-bye",
+         "gl": "Adeus",
+         "es": "Adiós",
+         "lamina": "pal_bye_bye",
+         "xesto": {
+          "gl": "Move a man despedindo a burbulla que sobe alto.",
+          "es": "Mueve la mano despidiendo la burbuja que sube alto."
+         }
+        }
+       ]
       }
      },
      "rutinas": {
@@ -4865,19 +6417,85 @@
      ],
      "capas": {
       "nucleo": {
-       "gl": "Semana 4 · «Burbullas que voan»: nomea só Mama mentres o toca coas mans.",
-       "es": "Semana 4 · «Burbujas que vuelan»: nombra solo Mama mientras lo toca con las manos.",
-       "en": "Mama"
+       "gl": "«Burbullas que voan», semana 4: nomea «Mama» e «Papa» mentres o toca coas mans.",
+       "es": "«Burbujas que vuelan», semana 4: nombra «Mama» y «Papa» mientras lo toca con las manos.",
+       "en": "Mama, Papa",
+       "pezas": [
+        {
+         "en": "Mama",
+         "gl": "Mamá",
+         "es": "Mamá",
+         "lamina": "pal_02_mama",
+         "xesto": {
+          "gl": "Sinala a mamá mentres sopra unha burbulla.",
+          "es": "Señala a mamá mientras sopla una burbuja."
+         }
+        },
+        {
+         "en": "Papa",
+         "gl": "Papá",
+         "es": "Papá",
+         "lamina": "pal_02_papa",
+         "xesto": {
+          "gl": "Sinala a papá collendo a burbulla na palma.",
+          "es": "Señala a papá recogiendo la burbuja en la palma."
+         }
+        }
+       ]
       },
       "mais": {
-       "gl": "Semana 4 · «Burbullas que voan»: combina Mama, Papa, Baby, More, please, Cold, warm, cold alternando mamá e xesto.",
-       "es": "Semana 4 · «Burbujas que vuelan»: combina Mama, Papa, Baby, More, please, Cold, warm, cold alternando mamá y gesto.",
-       "en": "Mama, Papa, Baby, More, please, Cold, warm, cold"
+       "gl": "«Burbullas que voan», semana 4, se xa mira e busca as novas: engade «Baby», «More, please» e «Cold, warm, cold», unha a unha e co seu xesto.",
+       "es": "«Burbujas que vuelan», semana 4, si ya mira y busca las nuevas: añade «Baby», «More, please» y «Cold, warm, cold», una a una y con su gesto.",
+       "en": "Baby, More, please, Cold, warm, cold",
+       "pezas": [
+        {
+         "en": "Baby",
+         "gl": "Bebé",
+         "es": "Bebé",
+         "lamina": "pal_baby",
+         "xesto": {
+          "gl": "Sinala o neno ou nena mirando subir a pompa.",
+          "es": "Señala al niño o niña mirando subir la pompa."
+         }
+        },
+        {
+         "en": "More, please",
+         "gl": "Máis, por favor",
+         "es": "Más, por favor",
+         "lamina": "pal_more_please",
+         "xesto": {
+          "gl": "Xunta as puntas dos dedos pedindo tocar outra peza.",
+          "es": "Junta las puntas de los dedos pidiendo tocar otra pieza."
+         }
+        },
+        {
+         "en": "Cold, warm, cold",
+         "gl": "Frío, morno, frío",
+         "es": "Frío, templado, frío",
+         "lamina": "pal_02_cold_warm_cold",
+         "xesto": {
+          "gl": "Toca froita fría, pan morno e froita fría por quenda.",
+          "es": "Toca fruta fría, pan templado y fruta fría por turno."
+         }
+        }
+       ]
       },
       "apoio": {
-       "gl": "Semana 4 · «Burbullas que voan»: repite devagar «Mama» cun único obxecto e sen présa.",
-       "es": "Semana 4 · «Burbujas que vuelan»: repite despacio «Mama» con un único objeto y sin prisa.",
-       "en": "Mama"
+       "gl": "«Burbullas que voan», semana 4, con calma: só «Mama», co obxecto na man, e agarda a que o mire.",
+       "es": "«Burbujas que vuelan», semana 4, con calma: solo «Mama», con el objeto en la mano, y espera a que lo mire.",
+       "en": "Mama",
+       "pezas": [
+        {
+         "en": "Mama",
+         "gl": "Mamá",
+         "es": "Mamá",
+         "lamina": "pal_02_mama",
+         "xesto": {
+          "gl": "Sinala a mamá mentres sopra unha burbulla.",
+          "es": "Señala a mamá mientras sopla una burbuja."
+         }
+        }
+       ]
       }
      },
      "rutinas": {
@@ -5384,19 +7002,75 @@
      ],
      "capas": {
       "nucleo": {
-       "gl": "Semana 1 · «Fregar fai son»: nomea só Ear, Nose mentres o toca coas mans.",
-       "es": "Semana 1 · «Frotar hace sonido»: nombra solo Ear, Nose mientras lo toca con las manos.",
-       "en": "Ear, Nose"
+       "gl": "«Fregar fai son», semana 1: nomea «Ear» e «Nose» mentres o toca coas mans.",
+       "es": "«Frotar hace sonido», semana 1: nombra «Ear» y «Nose» mientras lo toca con las manos.",
+       "en": "Ear, Nose",
+       "pezas": [
+        {
+         "en": "Ear",
+         "gl": "Orella",
+         "es": "Oreja",
+         "lamina": "pal_ear",
+         "xesto": {
+          "gl": "Pon a man detrás da orella preto do pano ao fregar.",
+          "es": "Pon la mano detrás de la oreja cerca del paño al frotar."
+         }
+        },
+        {
+         "en": "Nose",
+         "gl": "Nariz",
+         "es": "Nariz",
+         "lamina": "pal_nose",
+         "xesto": {
+          "gl": "Toca o nariz con suavidade usando a toalla limpa.",
+          "es": "Toca la nariz suavemente usando la toalla limpia."
+         }
+        }
+       ]
       },
       "mais": {
-       "gl": "Semana 1 · «Fregar fai son»: combina Ear, Nose, Open and close, Bye-bye alternando orella e xesto.",
-       "es": "Semana 1 · «Frotar hace sonido»: combina Ear, Nose, Open and close, Bye-bye alternando oreja y gesto.",
-       "en": "Ear, Nose, Open and close, Bye-bye"
+       "gl": "«Fregar fai son», semana 1, se xa mira e busca as novas: engade «Open and close» e «Bye-bye», unha a unha e co seu xesto.",
+       "es": "«Frotar hace sonido», semana 1, si ya mira y busca las nuevas: añade «Open and close» y «Bye-bye», una a una y con su gesto.",
+       "en": "Open and close, Bye-bye",
+       "pezas": [
+        {
+         "en": "Open and close",
+         "gl": "Abrir e pechar",
+         "es": "Abrir y cerrar",
+         "lamina": "pal_02_open_close",
+         "xesto": {
+          "gl": "Abre e pecha a man imitando a película de xabón.",
+          "es": "Abre y cierra la mano imitando la película de jabón."
+         }
+        },
+        {
+         "en": "Bye-bye",
+         "gl": "Adeus",
+         "es": "Adiós",
+         "lamina": "pal_bye_bye",
+         "xesto": {
+          "gl": "Move a man despedindo a burbulla que sobe alto.",
+          "es": "Mueve la mano despidiendo la burbuja que sube alto."
+         }
+        }
+       ]
       },
       "apoio": {
-       "gl": "Semana 1 · «Fregar fai son»: repite devagar «Ear» cun único obxecto e sen présa.",
-       "es": "Semana 1 · «Frotar hace sonido»: repite despacio «Ear» con un único objeto y sin prisa.",
-       "en": "Ear"
+       "gl": "«Fregar fai son», semana 1, con calma: só «Ear», co obxecto na man, e agarda a que o mire.",
+       "es": "«Frotar hace sonido», semana 1, con calma: solo «Ear», con el objeto en la mano, y espera a que lo mire.",
+       "en": "Ear",
+       "pezas": [
+        {
+         "en": "Ear",
+         "gl": "Orella",
+         "es": "Oreja",
+         "lamina": "pal_ear",
+         "xesto": {
+          "gl": "Pon a man detrás da orella preto do pano ao fregar.",
+          "es": "Pon la mano detrás de la oreja cerca del paño al frotar."
+         }
+        }
+       ]
       }
      },
      "rutinas": {
@@ -5474,19 +7148,75 @@
      ],
      "capas": {
       "nucleo": {
-       "gl": "Semana 2 · «Fregar fai son»: nomea só Soft, Hard mentres o toca coas mans.",
-       "es": "Semana 2 · «Frotar hace sonido»: nombra solo Soft, Hard mientras lo toca con las manos.",
-       "en": "Soft, Hard"
+       "gl": "«Fregar fai son», semana 2: nomea «Soft» e «Hard» mentres o toca coas mans.",
+       "es": "«Frotar hace sonido», semana 2: nombra «Soft» y «Hard» mientras lo toca con las manos.",
+       "en": "Soft, Hard",
+       "pezas": [
+        {
+         "en": "Soft",
+         "gl": "Suave",
+         "es": "Suave",
+         "lamina": "pal_soft",
+         "xesto": {
+          "gl": "Acaricia a meixela co pano seco antes de fregalo.",
+          "es": "Acaricia la mejilla con el paño seco antes de frotarlo."
+         }
+        },
+        {
+         "en": "Hard",
+         "gl": "Duro",
+         "es": "Duro",
+         "lamina": "pal_hard",
+         "xesto": {
+          "gl": "Peta devagar sobre o cartón ríxido coas unllas.",
+          "es": "Golpea despacio sobre el cartón rígido con los dedos."
+         }
+        }
+       ]
       },
       "mais": {
-       "gl": "Semana 2 · «Fregar fai son»: combina Soft, Hard, Baby, Mama alternando suave e xesto.",
-       "es": "Semana 2 · «Frotar hace sonido»: combina Soft, Hard, Baby, Mama alternando suave y gesto.",
-       "en": "Soft, Hard, Baby, Mama"
+       "gl": "«Fregar fai son», semana 2, se xa mira e busca as novas: engade «Baby» e «Mama», unha a unha e co seu xesto.",
+       "es": "«Frotar hace sonido», semana 2, si ya mira y busca las nuevas: añade «Baby» y «Mama», una a una y con su gesto.",
+       "en": "Baby, Mama",
+       "pezas": [
+        {
+         "en": "Baby",
+         "gl": "Bebé",
+         "es": "Bebé",
+         "lamina": "pal_baby",
+         "xesto": {
+          "gl": "Sinala o neno ou nena mirando subir a pompa.",
+          "es": "Señala al niño o niña mirando subir la pompa."
+         }
+        },
+        {
+         "en": "Mama",
+         "gl": "Mamá",
+         "es": "Mamá",
+         "lamina": "pal_02_mama",
+         "xesto": {
+          "gl": "Sinala a mamá mentres sopra unha burbulla.",
+          "es": "Señala a mamá mientras sopla una burbuja."
+         }
+        }
+       ]
       },
       "apoio": {
-       "gl": "Semana 2 · «Fregar fai son»: repite devagar «Soft» cun único obxecto e sen présa.",
-       "es": "Semana 2 · «Frotar hace sonido»: repite despacio «Soft» con un único objeto y sin prisa.",
-       "en": "Soft"
+       "gl": "«Fregar fai son», semana 2, con calma: só «Soft», co obxecto na man, e agarda a que o mire.",
+       "es": "«Frotar hace sonido», semana 2, con calma: solo «Soft», con el objeto en la mano, y espera a que lo mire.",
+       "en": "Soft",
+       "pezas": [
+        {
+         "en": "Soft",
+         "gl": "Suave",
+         "es": "Suave",
+         "lamina": "pal_soft",
+         "xesto": {
+          "gl": "Acaricia a meixela co pano seco antes de fregalo.",
+          "es": "Acaricia la mejilla con el paño seco antes de frotarlo."
+         }
+        }
+       ]
       }
      },
      "rutinas": {
@@ -5564,19 +7294,75 @@
      ],
      "capas": {
       "nucleo": {
-       "gl": "Semana 3 · «Fregar fai son»: nomea só Wash hands, Hold me mentres o toca coas mans.",
-       "es": "Semana 3 · «Frotar hace sonido»: nombra solo Wash hands, Hold me mientras lo toca con las manos.",
-       "en": "Wash hands, Hold me"
+       "gl": "«Fregar fai son», semana 3: nomea «Wash hands» e «Hold me» mentres o toca coas mans.",
+       "es": "«Frotar hace sonido», semana 3: nombra «Wash hands» y «Hold me» mientras lo toca con las manos.",
+       "en": "Wash hands, Hold me",
+       "pezas": [
+        {
+         "en": "Wash hands",
+         "gl": "Lavar as mans",
+         "es": "Lavar las manos",
+         "lamina": "pal_02_wash_hands",
+         "xesto": {
+          "gl": "Frega palma contra palma escoitando a escuma.",
+          "es": "Frota palma contra palma escuchando la espuma."
+         }
+        },
+        {
+         "en": "Hold me",
+         "gl": "Cóllome no colo",
+         "es": "Abrázame",
+         "lamina": "pal_02_hold_me",
+         "xesto": {
+          "gl": "Dá unha aperta suave ao comparar texturas.",
+          "es": "Da un abrazo suave al comparar texturas."
+         }
+        }
+       ]
       },
       "mais": {
-       "gl": "Semana 3 · «Fregar fai son»: combina Wash hands, Hold me, Hot, Milk alternando lavar as mans e xesto.",
-       "es": "Semana 3 · «Frotar hace sonido»: combina Wash hands, Hold me, Hot, Milk alternando lavar las manos y gesto.",
-       "en": "Wash hands, Hold me, Hot, Milk"
+       "gl": "«Fregar fai son», semana 3, se xa mira e busca as novas: engade «Hot» e «Milk», unha a unha e co seu xesto.",
+       "es": "«Frotar hace sonido», semana 3, si ya mira y busca las nuevas: añade «Hot» y «Milk», una a una y con su gesto.",
+       "en": "Hot, Milk",
+       "pezas": [
+        {
+         "en": "Hot",
+         "gl": "Quente",
+         "es": "Caliente",
+         "lamina": "pal_hot",
+         "xesto": {
+          "gl": "Sopra amodo coa man preto do pan morno.",
+          "es": "Sopla despacio con la mano cerca del pan templado."
+         }
+        },
+        {
+         "en": "Milk",
+         "gl": "Leite",
+         "es": "Leche",
+         "lamina": "pal_milk",
+         "xesto": {
+          "gl": "Suxeita o vaso de leite morno coas dúas mans.",
+          "es": "Sujeta el vaso de leche templada con ambas manos."
+         }
+        }
+       ]
       },
       "apoio": {
-       "gl": "Semana 3 · «Fregar fai son»: repite devagar «Wash hands» cun único obxecto e sen présa.",
-       "es": "Semana 3 · «Frotar hace sonido»: repite despacio «Wash hands» con un único objeto y sin prisa.",
-       "en": "Wash hands"
+       "gl": "«Fregar fai son», semana 3, con calma: só «Wash hands», co obxecto na man, e agarda a que o mire.",
+       "es": "«Frotar hace sonido», semana 3, con calma: solo «Wash hands», con el objeto en la mano, y espera a que lo mire.",
+       "en": "Wash hands",
+       "pezas": [
+        {
+         "en": "Wash hands",
+         "gl": "Lavar as mans",
+         "es": "Lavar las manos",
+         "lamina": "pal_02_wash_hands",
+         "xesto": {
+          "gl": "Frega palma contra palma escoitando a escuma.",
+          "es": "Frota palma contra palma escuchando la espuma."
+         }
+        }
+       ]
       }
      },
      "rutinas": {
@@ -5652,19 +7438,85 @@
      ],
      "capas": {
       "nucleo": {
-       "gl": "Semana 4 · «Fregar fai son»: nomea só Ear mentres o toca coas mans.",
-       "es": "Semana 4 · «Frotar hace sonido»: nombra solo Ear mientras lo toca con las manos.",
-       "en": "Ear"
+       "gl": "«Fregar fai son», semana 4: nomea «Ear» e «Nose» mentres o toca coas mans.",
+       "es": "«Frotar hace sonido», semana 4: nombra «Ear» y «Nose» mientras lo toca con las manos.",
+       "en": "Ear, Nose",
+       "pezas": [
+        {
+         "en": "Ear",
+         "gl": "Orella",
+         "es": "Oreja",
+         "lamina": "pal_ear",
+         "xesto": {
+          "gl": "Pon a man detrás da orella preto do pano ao fregar.",
+          "es": "Pon la mano detrás de la oreja cerca del paño al frotar."
+         }
+        },
+        {
+         "en": "Nose",
+         "gl": "Nariz",
+         "es": "Nariz",
+         "lamina": "pal_nose",
+         "xesto": {
+          "gl": "Toca o nariz con suavidade usando a toalla limpa.",
+          "es": "Toca la nariz suavemente usando la toalla limpia."
+         }
+        }
+       ]
       },
       "mais": {
-       "gl": "Semana 4 · «Fregar fai son»: combina Ear, Nose, Soft, Open and close, Bye-bye alternando orella e xesto.",
-       "es": "Semana 4 · «Frotar hace sonido»: combina Ear, Nose, Soft, Open and close, Bye-bye alternando oreja y gesto.",
-       "en": "Ear, Nose, Soft, Open and close, Bye-bye"
+       "gl": "«Fregar fai son», semana 4, se xa mira e busca as novas: engade «Soft», «Open and close» e «Bye-bye», unha a unha e co seu xesto.",
+       "es": "«Frotar hace sonido», semana 4, si ya mira y busca las nuevas: añade «Soft», «Open and close» y «Bye-bye», una a una y con su gesto.",
+       "en": "Soft, Open and close, Bye-bye",
+       "pezas": [
+        {
+         "en": "Soft",
+         "gl": "Suave",
+         "es": "Suave",
+         "lamina": "pal_soft",
+         "xesto": {
+          "gl": "Acaricia a meixela co pano seco antes de fregalo.",
+          "es": "Acaricia la mejilla con el paño seco antes de frotarlo."
+         }
+        },
+        {
+         "en": "Open and close",
+         "gl": "Abrir e pechar",
+         "es": "Abrir y cerrar",
+         "lamina": "pal_02_open_close",
+         "xesto": {
+          "gl": "Abre e pecha a man imitando a película de xabón.",
+          "es": "Abre y cierra la mano imitando la película de jabón."
+         }
+        },
+        {
+         "en": "Bye-bye",
+         "gl": "Adeus",
+         "es": "Adiós",
+         "lamina": "pal_bye_bye",
+         "xesto": {
+          "gl": "Move a man despedindo a burbulla que sobe alto.",
+          "es": "Mueve la mano despidiendo la burbuja que sube alto."
+         }
+        }
+       ]
       },
       "apoio": {
-       "gl": "Semana 4 · «Fregar fai son»: repite devagar «Ear» cun único obxecto e sen présa.",
-       "es": "Semana 4 · «Frotar hace sonido»: repite despacio «Ear» con un único objeto y sin prisa.",
-       "en": "Ear"
+       "gl": "«Fregar fai son», semana 4, con calma: só «Ear», co obxecto na man, e agarda a que o mire.",
+       "es": "«Frotar hace sonido», semana 4, con calma: solo «Ear», con el objeto en la mano, y espera a que lo mire.",
+       "en": "Ear",
+       "pezas": [
+        {
+         "en": "Ear",
+         "gl": "Orella",
+         "es": "Oreja",
+         "lamina": "pal_ear",
+         "xesto": {
+          "gl": "Pon a man detrás da orella preto do pano ao fregar.",
+          "es": "Pon la mano detrás de la oreja cerca del paño al frotar."
+         }
+        }
+       ]
       }
      },
      "rutinas": {
@@ -6171,19 +8023,75 @@
      ],
      "capas": {
       "nucleo": {
-       "gl": "Semana 1 · «Sombras de animais»: nomea só Dog, Cat mentres o toca coas mans.",
-       "es": "Semana 1 · «Sombras de animales»: nombra solo Dog, Cat mientras lo toca con las manos.",
-       "en": "Dog, Cat"
+       "gl": "«Sombras de animais», semana 1: nomea «Dog» e «Cat» mentres o toca coas mans.",
+       "es": "«Sombras de animales», semana 1: nombra «Dog» y «Cat» mientras lo toca con las manos.",
+       "en": "Dog, Cat",
+       "pezas": [
+        {
+         "en": "Dog",
+         "gl": "Can",
+         "es": "Perro",
+         "lamina": "pal_dog",
+         "xesto": {
+          "gl": "Proxeita a figura do can diante da lanterna.",
+          "es": "Proyecta la figura del perro delante de la linterna."
+         }
+        },
+        {
+         "en": "Cat",
+         "gl": "Gato",
+         "es": "Gato",
+         "lamina": "pal_cat",
+         "xesto": {
+          "gl": "Fai as orellas do gato na parede iluminada.",
+          "es": "Haz las orejas del gato en la pared iluminada."
+         }
+        }
+       ]
       },
       "mais": {
-       "gl": "Semana 1 · «Sombras de animais»: combina Dog, Cat, Hold me, Wash hands alternando can e xesto.",
-       "es": "Semana 1 · «Sombras de animales»: combina Dog, Cat, Hold me, Wash hands alternando perro y gesto.",
-       "en": "Dog, Cat, Hold me, Wash hands"
+       "gl": "«Sombras de animais», semana 1, se xa mira e busca as novas: engade «Hold me» e «Wash hands», unha a unha e co seu xesto.",
+       "es": "«Sombras de animales», semana 1, si ya mira y busca las nuevas: añade «Hold me» y «Wash hands», una a una y con su gesto.",
+       "en": "Hold me, Wash hands",
+       "pezas": [
+        {
+         "en": "Hold me",
+         "gl": "Cóllome no colo",
+         "es": "Abrázame",
+         "lamina": "pal_02_hold_me",
+         "xesto": {
+          "gl": "Dá unha aperta suave ao comparar texturas.",
+          "es": "Da un abrazo suave al comparar texturas."
+         }
+        },
+        {
+         "en": "Wash hands",
+         "gl": "Lavar as mans",
+         "es": "Lavar las manos",
+         "lamina": "pal_02_wash_hands",
+         "xesto": {
+          "gl": "Frega palma contra palma escoitando a escuma.",
+          "es": "Frota palma contra palma escuchando la espuma."
+         }
+        }
+       ]
       },
       "apoio": {
-       "gl": "Semana 1 · «Sombras de animais»: repite devagar «Dog» cun único obxecto e sen présa.",
-       "es": "Semana 1 · «Sombras de animales»: repite despacio «Dog» con un único objeto y sin prisa.",
-       "en": "Dog"
+       "gl": "«Sombras de animais», semana 1, con calma: só «Dog», co obxecto na man, e agarda a que o mire.",
+       "es": "«Sombras de animales», semana 1, con calma: solo «Dog», con el objeto en la mano, y espera a que lo mire.",
+       "en": "Dog",
+       "pezas": [
+        {
+         "en": "Dog",
+         "gl": "Can",
+         "es": "Perro",
+         "lamina": "pal_dog",
+         "xesto": {
+          "gl": "Proxeita a figura do can diante da lanterna.",
+          "es": "Proyecta la figura del perro delante de la linterna."
+         }
+        }
+       ]
       }
      },
      "rutinas": {
@@ -6261,19 +8169,75 @@
      ],
      "capas": {
       "nucleo": {
-       "gl": "Semana 2 · «Sombras de animais»: nomea só Duck, Woof, dog! mentres o toca coas mans.",
-       "es": "Semana 2 · «Sombras de animales»: nombra solo Duck, Woof, dog! mientras lo toca con las manos.",
-       "en": "Duck, Woof, dog!"
+       "gl": "«Sombras de animais», semana 2: nomea «Duck» e «Woof, dog!» mentres o toca coas mans.",
+       "es": "«Sombras de animales», semana 2: nombra «Duck» y «Woof, dog!» mientras lo toca con las manos.",
+       "en": "Duck, Woof, dog!",
+       "pezas": [
+        {
+         "en": "Duck",
+         "gl": "Pato",
+         "es": "Pato",
+         "lamina": "pal_duck",
+         "xesto": {
+          "gl": "Abre e pecha os dedos coma un peteiro fronte á luz.",
+          "es": "Abre y cierra los dedos como un pico frente a la luz."
+         }
+        },
+        {
+         "en": "Woof, dog!",
+         "gl": "Guau, can!",
+         "es": "¡Guau, perro!",
+         "lamina": "pal_02_woof_dog",
+         "xesto": {
+          "gl": "Fai mover a sombra do can mentres ladra suave.",
+          "es": "Mueve la sombra del perro mientras ladra suave."
+         }
+        }
+       ]
       },
       "mais": {
-       "gl": "Semana 2 · «Sombras de animais»: combina Duck, Woof, dog!, Soft, Ear alternando pato e xesto.",
-       "es": "Semana 2 · «Sombras de animales»: combina Duck, Woof, dog!, Soft, Ear alternando pato y gesto.",
-       "en": "Duck, Woof, dog!, Soft, Ear"
+       "gl": "«Sombras de animais», semana 2, se xa mira e busca as novas: engade «Soft» e «Ear», unha a unha e co seu xesto.",
+       "es": "«Sombras de animales», semana 2, si ya mira y busca las nuevas: añade «Soft» y «Ear», una a una y con su gesto.",
+       "en": "Soft, Ear",
+       "pezas": [
+        {
+         "en": "Soft",
+         "gl": "Suave",
+         "es": "Suave",
+         "lamina": "pal_soft",
+         "xesto": {
+          "gl": "Acaricia a meixela co pano seco antes de fregalo.",
+          "es": "Acaricia la mejilla con el paño seco antes de frotarlo."
+         }
+        },
+        {
+         "en": "Ear",
+         "gl": "Orella",
+         "es": "Oreja",
+         "lamina": "pal_ear",
+         "xesto": {
+          "gl": "Pon a man detrás da orella preto do pano ao fregar.",
+          "es": "Pon la mano detrás de la oreja cerca del paño al frotar."
+         }
+        }
+       ]
       },
       "apoio": {
-       "gl": "Semana 2 · «Sombras de animais»: repite devagar «Duck» cun único obxecto e sen présa.",
-       "es": "Semana 2 · «Sombras de animales»: repite despacio «Duck» con un único objeto y sin prisa.",
-       "en": "Duck"
+       "gl": "«Sombras de animais», semana 2, con calma: só «Duck», co obxecto na man, e agarda a que o mire.",
+       "es": "«Sombras de animales», semana 2, con calma: solo «Duck», con el objeto en la mano, y espera a que lo mire.",
+       "en": "Duck",
+       "pezas": [
+        {
+         "en": "Duck",
+         "gl": "Pato",
+         "es": "Pato",
+         "lamina": "pal_duck",
+         "xesto": {
+          "gl": "Abre e pecha os dedos coma un peteiro fronte á luz.",
+          "es": "Abre y cierra los dedos como un pico frente a la luz."
+         }
+        }
+       ]
       }
      },
      "rutinas": {
@@ -6351,19 +8315,75 @@
      ],
      "capas": {
       "nucleo": {
-       "gl": "Semana 3 · «Sombras de animais»: nomea só Meow, cat!, Quack, duck! mentres o toca coas mans.",
-       "es": "Semana 3 · «Sombras de animales»: nombra solo Meow, cat!, Quack, duck! mientras lo toca con las manos.",
-       "en": "Meow, cat!, Quack, duck!"
+       "gl": "«Sombras de animais», semana 3: nomea «Meow, cat!» e «Quack, duck!» mentres o toca coas mans.",
+       "es": "«Sombras de animales», semana 3: nombra «Meow, cat!» y «Quack, duck!» mientras lo toca con las manos.",
+       "en": "Meow, cat!, Quack, duck!",
+       "pezas": [
+        {
+         "en": "Meow, cat!",
+         "gl": "Miau, gato!",
+         "es": "¡Miau, gato!",
+         "lamina": "pal_02_meow_cat",
+         "xesto": {
+          "gl": "Estira os bigotes coas mans vendo a sombra do gato.",
+          "es": "Estira los bigotes viendo la sombra del gato."
+         }
+        },
+        {
+         "en": "Quack, duck!",
+         "gl": "Cuac, pato!",
+         "es": "¡Cuac, pato!",
+         "lamina": "pal_02_quack_duck",
+         "xesto": {
+          "gl": "Move o peteiro na parede ao son da lanterna.",
+          "es": "Mueve el pico en la pared al compás de la linterna."
+         }
+        }
+       ]
       },
       "mais": {
-       "gl": "Semana 3 · «Sombras de animais»: combina Meow, cat!, Quack, duck!, Baby, Mama alternando miau, gato! e xesto.",
-       "es": "Semana 3 · «Sombras de animales»: combina Meow, cat!, Quack, duck!, Baby, Mama alternando ¡miau, gato! y gesto.",
-       "en": "Meow, cat!, Quack, duck!, Baby, Mama"
+       "gl": "«Sombras de animais», semana 3, se xa mira e busca as novas: engade «Baby» e «Mama», unha a unha e co seu xesto.",
+       "es": "«Sombras de animales», semana 3, si ya mira y busca las nuevas: añade «Baby» y «Mama», una a una y con su gesto.",
+       "en": "Baby, Mama",
+       "pezas": [
+        {
+         "en": "Baby",
+         "gl": "Bebé",
+         "es": "Bebé",
+         "lamina": "pal_baby",
+         "xesto": {
+          "gl": "Sinala o neno ou nena mirando subir a pompa.",
+          "es": "Señala al niño o niña mirando subir la pompa."
+         }
+        },
+        {
+         "en": "Mama",
+         "gl": "Mamá",
+         "es": "Mamá",
+         "lamina": "pal_02_mama",
+         "xesto": {
+          "gl": "Sinala a mamá mentres sopra unha burbulla.",
+          "es": "Señala a mamá mientras sopla una burbuja."
+         }
+        }
+       ]
       },
       "apoio": {
-       "gl": "Semana 3 · «Sombras de animais»: repite devagar «Meow, cat!» cun único obxecto e sen présa.",
-       "es": "Semana 3 · «Sombras de animales»: repite despacio «Meow, cat!» con un único objeto y sin prisa.",
-       "en": "Meow, cat!"
+       "gl": "«Sombras de animais», semana 3, con calma: só «Meow, cat!», co obxecto na man, e agarda a que o mire.",
+       "es": "«Sombras de animales», semana 3, con calma: solo «Meow, cat!», con el objeto en la mano, y espera a que lo mire.",
+       "en": "Meow, cat!",
+       "pezas": [
+        {
+         "en": "Meow, cat!",
+         "gl": "Miau, gato!",
+         "es": "¡Miau, gato!",
+         "lamina": "pal_02_meow_cat",
+         "xesto": {
+          "gl": "Estira os bigotes coas mans vendo a sombra do gato.",
+          "es": "Estira los bigotes viendo la sombra del gato."
+         }
+        }
+       ]
       }
      },
      "rutinas": {
@@ -6439,19 +8459,85 @@
      ],
      "capas": {
       "nucleo": {
-       "gl": "Semana 4 · «Sombras de animais»: nomea só Dog mentres o toca coas mans.",
-       "es": "Semana 4 · «Sombras de animales»: nombra solo Dog mientras lo toca con las manos.",
-       "en": "Dog"
+       "gl": "«Sombras de animais», semana 4: nomea «Dog» e «Cat» mentres o toca coas mans.",
+       "es": "«Sombras de animales», semana 4: nombra «Dog» y «Cat» mientras lo toca con las manos.",
+       "en": "Dog, Cat",
+       "pezas": [
+        {
+         "en": "Dog",
+         "gl": "Can",
+         "es": "Perro",
+         "lamina": "pal_dog",
+         "xesto": {
+          "gl": "Proxeita a figura do can diante da lanterna.",
+          "es": "Proyecta la figura del perro delante de la linterna."
+         }
+        },
+        {
+         "en": "Cat",
+         "gl": "Gato",
+         "es": "Gato",
+         "lamina": "pal_cat",
+         "xesto": {
+          "gl": "Fai as orellas do gato na parede iluminada.",
+          "es": "Haz las orejas del gato en la pared iluminada."
+         }
+        }
+       ]
       },
       "mais": {
-       "gl": "Semana 4 · «Sombras de animais»: combina Dog, Cat, Duck, Hold me, Wash hands alternando can e xesto.",
-       "es": "Semana 4 · «Sombras de animales»: combina Dog, Cat, Duck, Hold me, Wash hands alternando perro y gesto.",
-       "en": "Dog, Cat, Duck, Hold me, Wash hands"
+       "gl": "«Sombras de animais», semana 4, se xa mira e busca as novas: engade «Duck», «Hold me» e «Wash hands», unha a unha e co seu xesto.",
+       "es": "«Sombras de animales», semana 4, si ya mira y busca las nuevas: añade «Duck», «Hold me» y «Wash hands», una a una y con su gesto.",
+       "en": "Duck, Hold me, Wash hands",
+       "pezas": [
+        {
+         "en": "Duck",
+         "gl": "Pato",
+         "es": "Pato",
+         "lamina": "pal_duck",
+         "xesto": {
+          "gl": "Abre e pecha os dedos coma un peteiro fronte á luz.",
+          "es": "Abre y cierra los dedos como un pico frente a la luz."
+         }
+        },
+        {
+         "en": "Hold me",
+         "gl": "Cóllome no colo",
+         "es": "Abrázame",
+         "lamina": "pal_02_hold_me",
+         "xesto": {
+          "gl": "Dá unha aperta suave ao comparar texturas.",
+          "es": "Da un abrazo suave al comparar texturas."
+         }
+        },
+        {
+         "en": "Wash hands",
+         "gl": "Lavar as mans",
+         "es": "Lavar las manos",
+         "lamina": "pal_02_wash_hands",
+         "xesto": {
+          "gl": "Frega palma contra palma escoitando a escuma.",
+          "es": "Frota palma contra palma escuchando la espuma."
+         }
+        }
+       ]
       },
       "apoio": {
-       "gl": "Semana 4 · «Sombras de animais»: repite devagar «Dog» cun único obxecto e sen présa.",
-       "es": "Semana 4 · «Sombras de animales»: repite despacio «Dog» con un único objeto y sin prisa.",
-       "en": "Dog"
+       "gl": "«Sombras de animais», semana 4, con calma: só «Dog», co obxecto na man, e agarda a que o mire.",
+       "es": "«Sombras de animales», semana 4, con calma: solo «Dog», con el objeto en la mano, y espera a que lo mire.",
+       "en": "Dog",
+       "pezas": [
+        {
+         "en": "Dog",
+         "gl": "Can",
+         "es": "Perro",
+         "lamina": "pal_dog",
+         "xesto": {
+          "gl": "Proxeita a figura do can diante da lanterna.",
+          "es": "Proyecta la figura del perro delante de la linterna."
+         }
+        }
+       ]
       }
      },
      "rutinas": {
@@ -6958,19 +9044,75 @@
      ],
      "capas": {
       "nucleo": {
-       "gl": "Semana 1 · «Rodar ou non rodar»: nomea só Ball, Belly mentres o toca coas mans.",
-       "es": "Semana 1 · «Rodar o no rodar»: nombra solo Ball, Belly mientras lo toca con las manos.",
-       "en": "Ball, Belly"
+       "gl": "«Rodar ou non rodar», semana 1: nomea «Ball» e «Belly» mentres o toca coas mans.",
+       "es": "«Rodar o no rodar», semana 1: nombra «Ball» y «Belly» mientras lo toca con las manos.",
+       "en": "Ball, Belly",
+       "pezas": [
+        {
+         "en": "Ball",
+         "gl": "Pelota",
+         "es": "Pelota",
+         "lamina": "vocab_45",
+         "xesto": {
+          "gl": "Empurra a pelota polo chan para que xire.",
+          "es": "Empuja la pelota por el suelo para que gire."
+         }
+        },
+        {
+         "en": "Belly",
+         "gl": "Barriga",
+         "es": "Barriga",
+         "lamina": "pal_belly",
+         "xesto": {
+          "gl": "Toca a túa barriga rodando devagar polo coxín.",
+          "es": "Toca tu barriga rodando despacio por el cojín."
+         }
+        }
+       ]
       },
       "mais": {
-       "gl": "Semana 1 · «Rodar ou non rodar»: combina Ball, Belly, Quack, duck!, Meow, cat! alternando pelota e xesto.",
-       "es": "Semana 1 · «Rodar o no rodar»: combina Ball, Belly, Quack, duck!, Meow, cat! alternando pelota y gesto.",
-       "en": "Ball, Belly, Quack, duck!, Meow, cat!"
+       "gl": "«Rodar ou non rodar», semana 1, se xa mira e busca as novas: engade «Quack, duck!» e «Meow, cat!», unha a unha e co seu xesto.",
+       "es": "«Rodar o no rodar», semana 1, si ya mira y busca las nuevas: añade «Quack, duck!» y «Meow, cat!», una a una y con su gesto.",
+       "en": "Quack, duck!, Meow, cat!",
+       "pezas": [
+        {
+         "en": "Quack, duck!",
+         "gl": "Cuac, pato!",
+         "es": "¡Cuac, pato!",
+         "lamina": "pal_02_quack_duck",
+         "xesto": {
+          "gl": "Move o peteiro na parede ao son da lanterna.",
+          "es": "Mueve el pico en la pared al compás de la linterna."
+         }
+        },
+        {
+         "en": "Meow, cat!",
+         "gl": "Miau, gato!",
+         "es": "¡Miau, gato!",
+         "lamina": "pal_02_meow_cat",
+         "xesto": {
+          "gl": "Estira os bigotes coas mans vendo a sombra do gato.",
+          "es": "Estira los bigotes viendo la sombra del gato."
+         }
+        }
+       ]
       },
       "apoio": {
-       "gl": "Semana 1 · «Rodar ou non rodar»: repite devagar «Ball» cun único obxecto e sen présa.",
-       "es": "Semana 1 · «Rodar o no rodar»: repite despacio «Ball» con un único objeto y sin prisa.",
-       "en": "Ball"
+       "gl": "«Rodar ou non rodar», semana 1, con calma: só «Ball», co obxecto na man, e agarda a que o mire.",
+       "es": "«Rodar o no rodar», semana 1, con calma: solo «Ball», con el objeto en la mano, y espera a que lo mire.",
+       "en": "Ball",
+       "pezas": [
+        {
+         "en": "Ball",
+         "gl": "Pelota",
+         "es": "Pelota",
+         "lamina": "vocab_45",
+         "xesto": {
+          "gl": "Empurra a pelota polo chan para que xire.",
+          "es": "Empuja la pelota por el suelo para que gire."
+         }
+        }
+       ]
       }
      },
      "rutinas": {
@@ -7048,19 +9190,75 @@
      ],
      "capas": {
       "nucleo": {
-       "gl": "Semana 2 · «Rodar ou non rodar»: nomea só Foot, Baa, lamb! mentres o toca coas mans.",
-       "es": "Semana 2 · «Rodar o no rodar»: nombra solo Foot, Baa, lamb! mientras lo toca con las manos.",
-       "en": "Foot, Baa, lamb!"
+       "gl": "«Rodar ou non rodar», semana 2: nomea «Foot» e «Baa, lamb!» mentres o toca coas mans.",
+       "es": "«Rodar o no rodar», semana 2: nombra «Foot» y «Baa, lamb!» mientras lo toca con las manos.",
+       "en": "Foot, Baa, lamb!",
+       "pezas": [
+        {
+         "en": "Foot",
+         "gl": "Pé",
+         "es": "Pie",
+         "lamina": "pal_foot",
+         "xesto": {
+          "gl": "Para a pelota que roda tocándoa co pé.",
+          "es": "Para la pelota que rueda tocándola con el pie."
+         }
+        },
+        {
+         "en": "Baa, lamb!",
+         "gl": "Bee, año!",
+         "es": "¡Bee, ovejita!",
+         "lamina": "pal_02_baa_lamb",
+         "xesto": {
+          "gl": "Pousa o año na rampa e comproba que non roda.",
+          "es": "Posa la ovejita en la rampa y comprueba que no rueda."
+         }
+        }
+       ]
       },
       "mais": {
-       "gl": "Semana 2 · «Rodar ou non rodar»: combina Foot, Baa, lamb!, Duck, Dog alternando pé e xesto.",
-       "es": "Semana 2 · «Rodar o no rodar»: combina Foot, Baa, lamb!, Duck, Dog alternando pie y gesto.",
-       "en": "Foot, Baa, lamb!, Duck, Dog"
+       "gl": "«Rodar ou non rodar», semana 2, se xa mira e busca as novas: engade «Duck» e «Dog», unha a unha e co seu xesto.",
+       "es": "«Rodar o no rodar», semana 2, si ya mira y busca las nuevas: añade «Duck» y «Dog», una a una y con su gesto.",
+       "en": "Duck, Dog",
+       "pezas": [
+        {
+         "en": "Duck",
+         "gl": "Pato",
+         "es": "Pato",
+         "lamina": "pal_duck",
+         "xesto": {
+          "gl": "Abre e pecha os dedos coma un peteiro fronte á luz.",
+          "es": "Abre y cierra los dedos como un pico frente a la luz."
+         }
+        },
+        {
+         "en": "Dog",
+         "gl": "Can",
+         "es": "Perro",
+         "lamina": "pal_dog",
+         "xesto": {
+          "gl": "Proxeita a figura do can diante da lanterna.",
+          "es": "Proyecta la figura del perro delante de la linterna."
+         }
+        }
+       ]
       },
       "apoio": {
-       "gl": "Semana 2 · «Rodar ou non rodar»: repite devagar «Foot» cun único obxecto e sen présa.",
-       "es": "Semana 2 · «Rodar o no rodar»: repite despacio «Foot» con un único objeto y sin prisa.",
-       "en": "Foot"
+       "gl": "«Rodar ou non rodar», semana 2, con calma: só «Foot», co obxecto na man, e agarda a que o mire.",
+       "es": "«Rodar o no rodar», semana 2, con calma: solo «Foot», con el objeto en la mano, y espera a que lo mire.",
+       "en": "Foot",
+       "pezas": [
+        {
+         "en": "Foot",
+         "gl": "Pé",
+         "es": "Pie",
+         "lamina": "pal_foot",
+         "xesto": {
+          "gl": "Para a pelota que roda tocándoa co pé.",
+          "es": "Para la pelota que rueda tocándola con el pie."
+         }
+        }
+       ]
       }
      },
      "rutinas": {
@@ -7138,19 +9336,75 @@
      ],
      "capas": {
       "nucleo": {
-       "gl": "Semana 3 · «Rodar ou non rodar»: nomea só One, two, three, Stop and go mentres o toca coas mans.",
-       "es": "Semana 3 · «Rodar o no rodar»: nombra solo One, two, three, Stop and go mientras lo toca con las manos.",
-       "en": "One, two, three, Stop and go"
+       "gl": "«Rodar ou non rodar», semana 3: nomea «One, two, three» e «Stop and go» mentres o toca coas mans.",
+       "es": "«Rodar o no rodar», semana 3: nombra «One, two, three» y «Stop and go» mientras lo toca con las manos.",
+       "en": "One, two, three, Stop and go",
+       "pezas": [
+        {
+         "en": "One, two, three",
+         "gl": "Un, dous, tres",
+         "es": "Uno, dos, tres",
+         "lamina": "pal_02_one_two_three",
+         "xesto": {
+          "gl": "Marca tres dedos antes de soltar a pelota.",
+          "es": "Marca tres dedos antes de soltar la pelota."
+         }
+        },
+        {
+         "en": "Stop and go",
+         "gl": "Para e vai",
+         "es": "Para y ve",
+         "lamina": "pal_stop_and_go",
+         "xesto": {
+          "gl": "Frea a pelota coa palma e logo empurra de novo.",
+          "es": "Frena la pelota con la palma y luego empuja otra vez."
+         }
+        }
+       ]
       },
       "mais": {
-       "gl": "Semana 3 · «Rodar ou non rodar»: combina One, two, three, Stop and go, Soft, Ear alternando un, dous, tres e xesto.",
-       "es": "Semana 3 · «Rodar o no rodar»: combina One, two, three, Stop and go, Soft, Ear alternando uno, dos, tres y gesto.",
-       "en": "One, two, three, Stop and go, Soft, Ear"
+       "gl": "«Rodar ou non rodar», semana 3, se xa mira e busca as novas: engade «Soft» e «Ear», unha a unha e co seu xesto.",
+       "es": "«Rodar o no rodar», semana 3, si ya mira y busca las nuevas: añade «Soft» y «Ear», una a una y con su gesto.",
+       "en": "Soft, Ear",
+       "pezas": [
+        {
+         "en": "Soft",
+         "gl": "Suave",
+         "es": "Suave",
+         "lamina": "pal_soft",
+         "xesto": {
+          "gl": "Acaricia a meixela co pano seco antes de fregalo.",
+          "es": "Acaricia la mejilla con el paño seco antes de frotarlo."
+         }
+        },
+        {
+         "en": "Ear",
+         "gl": "Orella",
+         "es": "Oreja",
+         "lamina": "pal_ear",
+         "xesto": {
+          "gl": "Pon a man detrás da orella preto do pano ao fregar.",
+          "es": "Pon la mano detrás de la oreja cerca del paño al frotar."
+         }
+        }
+       ]
       },
       "apoio": {
-       "gl": "Semana 3 · «Rodar ou non rodar»: repite devagar «One, two, three» cun único obxecto e sen présa.",
-       "es": "Semana 3 · «Rodar o no rodar»: repite despacio «One, two, three» con un único objeto y sin prisa.",
-       "en": "One, two, three"
+       "gl": "«Rodar ou non rodar», semana 3, con calma: só «One, two, three», co obxecto na man, e agarda a que o mire.",
+       "es": "«Rodar o no rodar», semana 3, con calma: solo «One, two, three», con el objeto en la mano, y espera a que lo mire.",
+       "en": "One, two, three",
+       "pezas": [
+        {
+         "en": "One, two, three",
+         "gl": "Un, dous, tres",
+         "es": "Uno, dos, tres",
+         "lamina": "pal_02_one_two_three",
+         "xesto": {
+          "gl": "Marca tres dedos antes de soltar a pelota.",
+          "es": "Marca tres dedos antes de soltar la pelota."
+         }
+        }
+       ]
       }
      },
      "rutinas": {
@@ -7226,19 +9480,85 @@
      ],
      "capas": {
       "nucleo": {
-       "gl": "Semana 4 · «Rodar ou non rodar»: nomea só Ball mentres o toca coas mans.",
-       "es": "Semana 4 · «Rodar o no rodar»: nombra solo Ball mientras lo toca con las manos.",
-       "en": "Ball"
+       "gl": "«Rodar ou non rodar», semana 4: nomea «Ball» e «Belly» mentres o toca coas mans.",
+       "es": "«Rodar o no rodar», semana 4: nombra «Ball» y «Belly» mientras lo toca con las manos.",
+       "en": "Ball, Belly",
+       "pezas": [
+        {
+         "en": "Ball",
+         "gl": "Pelota",
+         "es": "Pelota",
+         "lamina": "vocab_45",
+         "xesto": {
+          "gl": "Empurra a pelota polo chan para que xire.",
+          "es": "Empuja la pelota por el suelo para que gire."
+         }
+        },
+        {
+         "en": "Belly",
+         "gl": "Barriga",
+         "es": "Barriga",
+         "lamina": "pal_belly",
+         "xesto": {
+          "gl": "Toca a túa barriga rodando devagar polo coxín.",
+          "es": "Toca tu barriga rodando despacio por el cojín."
+         }
+        }
+       ]
       },
       "mais": {
-       "gl": "Semana 4 · «Rodar ou non rodar»: combina Ball, Belly, Foot, Quack, duck!, Meow, cat! alternando pelota e xesto.",
-       "es": "Semana 4 · «Rodar o no rodar»: combina Ball, Belly, Foot, Quack, duck!, Meow, cat! alternando pelota y gesto.",
-       "en": "Ball, Belly, Foot, Quack, duck!, Meow, cat!"
+       "gl": "«Rodar ou non rodar», semana 4, se xa mira e busca as novas: engade «Foot», «Quack, duck!» e «Meow, cat!», unha a unha e co seu xesto.",
+       "es": "«Rodar o no rodar», semana 4, si ya mira y busca las nuevas: añade «Foot», «Quack, duck!» y «Meow, cat!», una a una y con su gesto.",
+       "en": "Foot, Quack, duck!, Meow, cat!",
+       "pezas": [
+        {
+         "en": "Foot",
+         "gl": "Pé",
+         "es": "Pie",
+         "lamina": "pal_foot",
+         "xesto": {
+          "gl": "Para a pelota que roda tocándoa co pé.",
+          "es": "Para la pelota que rueda tocándola con el pie."
+         }
+        },
+        {
+         "en": "Quack, duck!",
+         "gl": "Cuac, pato!",
+         "es": "¡Cuac, pato!",
+         "lamina": "pal_02_quack_duck",
+         "xesto": {
+          "gl": "Move o peteiro na parede ao son da lanterna.",
+          "es": "Mueve el pico en la pared al compás de la linterna."
+         }
+        },
+        {
+         "en": "Meow, cat!",
+         "gl": "Miau, gato!",
+         "es": "¡Miau, gato!",
+         "lamina": "pal_02_meow_cat",
+         "xesto": {
+          "gl": "Estira os bigotes coas mans vendo a sombra do gato.",
+          "es": "Estira los bigotes viendo la sombra del gato."
+         }
+        }
+       ]
       },
       "apoio": {
-       "gl": "Semana 4 · «Rodar ou non rodar»: repite devagar «Ball» cun único obxecto e sen présa.",
-       "es": "Semana 4 · «Rodar o no rodar»: repite despacio «Ball» con un único objeto y sin prisa.",
-       "en": "Ball"
+       "gl": "«Rodar ou non rodar», semana 4, con calma: só «Ball», co obxecto na man, e agarda a que o mire.",
+       "es": "«Rodar o no rodar», semana 4, con calma: solo «Ball», con el objeto en la mano, y espera a que lo mire.",
+       "en": "Ball",
+       "pezas": [
+        {
+         "en": "Ball",
+         "gl": "Pelota",
+         "es": "Pelota",
+         "lamina": "vocab_45",
+         "xesto": {
+          "gl": "Empurra a pelota polo chan para que xire.",
+          "es": "Empuja la pelota por el suelo para que gire."
+         }
+        }
+       ]
       }
      },
      "rutinas": {

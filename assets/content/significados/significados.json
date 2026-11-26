@@ -1,4 +1,8 @@
 {
+ "Climb, squirrel! Quick, quick squirrel!": {
+  "gl": "Sobe, esquío! Esquío rápido, rápido!",
+  "es": "¡Sube, ardilla! ¡Ardilla rápida, rápida!"
+ },
  "_doc": "Significado en gallego y castellano de cada frase en inglés que no trae el suyo en su propio contenido. Lo dice el doble toque de BotonEscuchar (F7), con voz.",
  "significados": {
   "A bag! A mystery bag from the hedgehog!": {

@@ -774,6 +774,12 @@ def main():
                 lec_obj["xaSabe"] = [dict(pezas_curso[nk]) for nk in due_all]
                 lec_obj["repasa"] = []
 
+        # O-20261126-5 (punto 6): lo que llega del plan curricular con
+        # palabras ajenas a la edad, por las de tools/vocab_idade.py.
+        import vocab_idade as VI  # noqa: E402
+        _mapa_vi = json.loads((C / "laminas" / "palabras_laminas.json").read_text(encoding="utf-8"))["pezas"]
+        for u_obj in unidades:
+            VI.sustituir_leccions(curso, u_obj["leccions"], _mapa_vi)
         ruts_m2 = (
             ("bano", "No baño", "En el baño", "mentres botas a auga", "mientras echas el agua"),
             ("comida", "Na comida", "En la comida", "ao sentar á mesa", "al sentar a la mesa"),
@@ -782,6 +788,8 @@ def main():
             ("durmir", "Antes de durmir", "Antes de dormir", "con voz suave antes do conto", "con voz suave antes del cuento"),
             ("parque", "No parque", "En el parque", "ao aire libre co seu xesto", "al aire libre con su gesto"),
         )
+        _todas_l = [l for u_ in unidades for l in u_["leccions"]]
+        proxima_frase = {a_["id"]: (b_.get("fraseGramatica") or {}) for a_, b_ in zip(_todas_l, _todas_l[1:])}
         sem_index = 0
         for u_obj in unidades:
             st_tit = (u_obj.get("steam") or {}).get("titulo") or {"gl": u_obj["titulo"]["gl"], "es": u_obj["titulo"]["es"]}
@@ -809,24 +817,61 @@ def main():
                         for rk, lgl, les, acc_gl, acc_es in ruts_m2
                     }
 
+                # O-20261126-5 (punto 5): cada capa trae SUS piezas reales.
+                # «Máis»: tres palabras más de la misma semana del banco de la
+                # edad (salen en el cuento de esa semana y tienen lámina y voz)
+                # y la frase de la semana siguiente, un peldaño más. «Apoio»:
+                # la pieza nueva más corta, junto a una que ya conoce.
+                def _pz(x):
+                    q = {k: x[k] for k in ("en", "gl", "es", "xesto") if x.get(k)}
+                    m = _mapa_vi.get(x["en"].lower().strip(" .!?"))
+                    if m:
+                        q["lamina"] = m["clave"]
+                    return q
+                n_u, w_l = (int(v) for v in l_obj["id"].split(".")[1:3])
+                xa = {norm(x["en"]) for k in ("novas", "xaSabe", "repasa") for x in l_obj.get(k) or []}
+                texto_c = CONTO_TEXTO.get(l_obj["id"], "")
+                banco_w = [x for x in bsem.get(curso, {}).get((n_u, w_l), [])
+                           if norm(x["en"]) not in xa and x.get("gl") and x.get("es")
+                           and _mapa_vi.get(x["en"].lower().strip(" .!?"))]
+                banco_w.sort(key=lambda x: sen_puntos(x["en"]) not in texto_c)
+                mais_pz = [_pz(x) for x in banco_w[:3]]
+                seg = proxima_frase.get(l_obj["id"]) or (l_obj.get("fraseGramatica") or {})
+                fr_mais = seg.get("en") or fg_en
+                novas_l = l_obj.get("novas") or l_obj.get("repasa") or []
+                curta = min(novas_l, key=lambda x: len(x["en"].split())) if novas_l else {"en": foco_en}
+                coñecida = next(iter(l_obj.get("xaSabe") or []), None)
+                apoio_pz = [_pz(curta)] + ([_pz(coñecida)] if coñecida else [])
+                def _lista(xs, y):
+                    n_ = [f"«{x['en']}»" for x in xs]
+                    return n_[0] if len(n_) == 1 else ", ".join(n_[:-1]) + y + n_[-1]
                 l_obj["capas"] = {
                     "nucleo": {
                         "gl": f"Semana {sem_index} · «{st_gl}»: practica o núcleo ({nov_en}) coa frase «{fg_en}».",
                         "es": f"Semana {sem_index} · «{st_es}»: practica el núcleo ({nov_en}) con la frase «{fg_en}».",
                         "en": fg_en,
+                        "pezas": [_pz(x) for x in novas_l],
                         "rutinas": _ruts_capa("núcleo", "núcleo", foco_en),
                     },
                     "mais": {
-                        "gl": f"Semana {sem_index} · «{st_gl}»: amplía xuntando «{fg_en}» con {rep_en}.",
-                        "es": f"Semana {sem_index} · «{st_es}»: amplía juntando «{fg_en}» con {rep_en}.",
-                        "en": fg_en,
-                        "rutinas": _ruts_capa("máis", "más", fg_en),
+                        "gl": (f"«{st_gl}», semana {sem_index}, para quen xa as di: engade {_lista(mais_pz, ' e ')}, que saen no conto, "
+                               f"e proba a frase do paso seguinte, «{fr_mais}»." if mais_pz else
+                               f"«{st_gl}», semana {sem_index}, para quen xa as di: proba a frase do paso seguinte, «{fr_mais}»."),
+                        "es": (f"«{st_es}», semana {sem_index}, para quien ya las dice: añade {_lista(mais_pz, ' y ')}, que salen en el cuento, "
+                               f"y prueba la frase del paso siguiente, «{fr_mais}»." if mais_pz else
+                               f"«{st_es}», semana {sem_index}, para quien ya las dice: prueba la frase del paso siguiente, «{fr_mais}»."),
+                        "en": fr_mais,
+                        "pezas": mais_pz,
+                        "rutinas": _ruts_capa("máis", "más", (mais_pz or [{"en": fr_mais}])[0]["en"]),
                     },
                     "apoio": {
-                        "gl": f"Semana {sem_index} · «{st_gl}»: apoio devagar cunha soa peza («{foco_en}») e o seu xesto.",
-                        "es": f"Semana {sem_index} · «{st_es}»: apoyo despacio con una sola pieza («{foco_en}») y su gesto.",
-                        "en": foco_en,
-                        "rutinas": _ruts_capa("apoio", "apoyo", foco_en),
+                        "gl": (f"«{st_gl}», semana {sem_index}, con calma: só «{curta['en']}», co seu xesto"
+                               + (f", xunto a «{coñecida['en']}», que xa coñece." if coñecida else ".")),
+                        "es": (f"«{st_es}», semana {sem_index}, con calma: solo «{curta['en']}», con su gesto"
+                               + (f", junto a «{coñecida['en']}», que ya conoce." if coñecida else ".")),
+                        "en": curta["en"],
+                        "pezas": apoio_pz,
+                        "rutinas": _ruts_capa("apoio", "apoyo", curta["en"]),
                     },
                 }
 

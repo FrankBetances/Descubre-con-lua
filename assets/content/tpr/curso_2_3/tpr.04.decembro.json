@@ -594,15 +594,15 @@
         },
         {
           "id": "2_3.decembro.s3.pull-on",
-          "en": "Pull on",
-          "gl": "Poñer tirando",
-          "es": "Ponerse tirando",
+          "en": "Wear",
+          "gl": "Levar posto",
+          "es": "Llevar puesto",
           "tprAction": {
-            "gl": "Tirar do xersei cara abaixo",
-            "es": "Tirar del jersey hacia abajo"
+            "gl": "Sinala ou colle o que nomeas: levar posto.",
+            "es": "Señala o coge lo que nombras: llevar puesto."
           },
           "category": "verb",
-          "lamina": "pal_pull_on"
+          "lamina": "pal_wear"
         },
         {
           "id": "2_3.decembro.s3.zip-up",

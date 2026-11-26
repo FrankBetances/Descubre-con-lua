@@ -19412,8 +19412,8 @@
         },
         "lamina": "conto_inverno_2",
         "texto": {
-          "gl": "Nerea quere vestirse soa, coma os maiores. Pon as medias tirando —“Pull on”— e mete os brazos no xersei: “Put arms in”.",
-          "es": "Nerea quiere vestirse sola, como los mayores. Se pone los leotardos tirando —“Pull on”— y mete los brazos en el jersey: “Put arms in”."
+          "gl": "Nerea quere vestirse soa, coma os maiores. Pon as medias tirando —“Wear”— e mete os brazos no xersei: “Put arms in”.",
+          "es": "Nerea quiere vestirse sola, como los mayores. Se pone los leotardos tirando —“Wear”— y mete los brazos en el jersey: “Put arms in”."
         },
         "preguntaImaxe": {
           "gl": "Que quere Nerea? Móstrao co dedo.",
@@ -19424,15 +19424,15 @@
           "es": "Pon voz al deseo del personaje: es lo que mueve la historia."
         },
         "vocabularioClave": [
-          "Poñer tirando",
+          "Levar posto",
           "Meter os brazos"
         ],
         "vocabularioClaveEs": [
-          "Ponerse tirando",
+          "Llevar puesto",
           "Meter los brazos"
         ],
         "palabras": [
-          "Pull on",
+          "Wear",
           "Put arms in"
         ]
       },
@@ -20267,20 +20267,20 @@
         "lamina": "conto_choiva_3",
         "extra": true,
         "texto": {
-          "gl": "Antes de saír: “Put on your coat!”. Fóra: “Stomp your boots in the puddles!”.",
-          "es": "Antes de salir: “Put on your coat!”. Fuera: “Stomp your boots in the puddles!”."
+          "gl": "Antes de saír: “Put on your coat!”. Fóra: “Stomp in the puddles!”.",
+          "es": "Antes de salir: “Put on your coat!”. Fuera: “Stomp in the puddles!”."
         },
         "palabras": [
           "Put on your coat!",
-          "Stomp your boots in the puddles!"
+          "Stomp in the puddles!"
         ],
         "vocabularioClave": [
           "Pon o abrigo!",
-          "Pisa forte coas botas nas pozas!"
+          "Pisa forte nas pozas!"
         ],
         "vocabularioClaveEs": [
           "¡Ponte el abrigo!",
-          "¡Pisa fuerte con las botas en los charcos!"
+          "¡Pisa fuerte en los charcos!"
         ]
       }
     ],
@@ -23005,17 +23005,17 @@
         "lamina": "conto_cores_3",
         "extra": true,
         "texto": {
-          "gl": "Adrián xoga: “Find a red circle! Touch it with your foot!”.",
-          "es": "Adrián juega: “Find a red circle! Touch it with your foot!”."
+          "gl": "Adrián xoga: “Touch the red circle!”.",
+          "es": "Adrián juega: “Touch the red circle!”."
         },
         "palabras": [
-          "Find a red circle! Touch it with your foot!"
+          "Touch the red circle!"
         ],
         "vocabularioClave": [
-          "Busca un círculo vermello! Tócao co pé!"
+          "Toca o círculo vermello!"
         ],
         "vocabularioClaveEs": [
-          "¡Busca un círculo rojo! ¡Tócalo con el pie!"
+          "¡Toca el círculo rojo!"
         ]
       }
     ],
@@ -24360,19 +24360,19 @@
         "lamina": "conto_primavera_3",
         "extra": true,
         "texto": {
-          "gl": "Na herba, Mauro e a mamá son sementes: “We are tiny seeds under the ground”. E logo: “Bloom! Big bright flowers!”.",
-          "es": "En la hierba, Mauro y mamá son semillas: “We are tiny seeds under the ground”. Y luego: “Bloom! Big bright flowers!”."
+          "gl": "Na herba, Mauro e a mamá son sementes: “Tiny seeds, sleep!”. E logo: “Bloom! Big bright flowers!”.",
+          "es": "En la hierba, Mauro y mamá son semillas: “Tiny seeds, sleep!”. Y luego: “Bloom! Big bright flowers!”."
         },
         "palabras": [
-          "We are tiny seeds under the ground",
+          "Tiny seeds, sleep!",
           "Bloom! Big bright flowers!"
         ],
         "vocabularioClave": [
-          "Somos sementes pequeniñas debaixo da terra",
+          "Sementiñas, a durmir!",
           "Florece! Flores grandes e brillantes!"
         ],
         "vocabularioClaveEs": [
-          "Somos semillas pequeñitas bajo la tierra",
+          "¡Semillitas, a dormir!",
           "¡Florece! ¡Flores grandes y brillantes!"
         ]
       }
@@ -27472,19 +27472,19 @@
         "lamina": "conto_mar_3",
         "extra": true,
         "texto": {
-          "gl": "Duarte imaxina: “Little fish swimming under the sea!”. Hoxe o mar está tranquilo, “Calm sea”.",
-          "es": "Duarte imagina: “Little fish swimming under the sea!”. Hoy el mar está tranquilo, “Calm sea”."
+          "gl": "Duarte imaxina: “Swim like a little fish!”. Hoxe o mar está tranquilo, “Calm sea”.",
+          "es": "Duarte imagina: “Swim like a little fish!”. Hoy el mar está tranquilo, “Calm sea”."
         },
         "palabras": [
-          "Little fish swimming under the sea!",
+          "Swim like a little fish!",
           "Calm sea"
         ],
         "vocabularioClave": [
-          "Peixiños nadando baixo o mar!",
+          "Nada coma un peixiño!",
           "Mar tranquilo"
         ],
         "vocabularioClaveEs": [
-          "¡Pececitos nadando bajo el mar!",
+          "¡Nada como un pececito!",
           "Mar tranquilo"
         ]
       }
@@ -29204,21 +29204,21 @@
         "lamina": "conto_benvida_3",
         "extra": true,
         "texto": {
-          "gl": "Na casa, Martiño ensina: “Walk to the circle and sit down”. Logo: “Touch your knees and freeze!”. E di: “My turn”.",
-          "es": "En casa, Martiño enseña: “Walk to the circle and sit down”. Luego: “Touch your knees and freeze!”. Y dice: “My turn”."
+          "gl": "Na casa, Martiño ensina: “Walk to the circle!”. Logo: “Touch your knees and freeze!”. E di: “My turn”.",
+          "es": "En casa, Martiño enseña: “Walk to the circle!”. Luego: “Touch your knees and freeze!”. Y dice: “My turn”."
         },
         "palabras": [
-          "Walk to the circle and sit down",
+          "Walk to the circle!",
           "Touch your knees and freeze!",
           "My turn"
         ],
         "vocabularioClave": [
-          "Camiña ata o círculo e senta",
+          "Camiña ao círculo!",
           "Toca os xeonllos e estátua!",
           "A miña quenda"
         ],
         "vocabularioClaveEs": [
-          "Camina hasta el círculo y siéntate",
+          "¡Camina al círculo!",
           "Tócate las rodillas y ¡estatua!",
           "Mi turno"
         ]
@@ -30596,22 +30596,22 @@
         "lamina": "conto_corpo_3",
         "extra": true,
         "texto": {
-          "gl": "Despois de Samaín: “Spin around and fall down like a leaf”. Logo: “Pick up two acorns and put them in the basket”. E Antía fai, “make”, un colar.",
-          "es": "Después de Samaín: “Spin around and fall down like a leaf”. Luego: “Pick up two acorns and put them in the basket”. Y Antía hace, “make”, un collar."
+          "gl": "Despois de Samaín: “Spin and fall like a leaf”. Logo: “Two acorns in the basket”. E Antía fai, “make”, un colar.",
+          "es": "Después de Samaín: “Spin and fall like a leaf”. Luego: “Two acorns in the basket”. Y Antía hace, “make”, un collar."
         },
         "palabras": [
-          "Spin around and fall down like a leaf",
-          "Pick up two acorns and put them in the basket",
+          "Spin and fall like a leaf",
+          "Two acorns in the basket",
           "make"
         ],
         "vocabularioClave": [
-          "Dá voltas e cae coma unha folla",
-          "Colle dúas landras e ponas no cesto",
+          "Xira e cae coma unha folla",
+          "Dúas landras na cesta",
           "facer"
         ],
         "vocabularioClaveEs": [
-          "Da vueltas y cae como una hoja",
-          "Coge dos bellotas y ponlas en la cesta",
+          "Gira y cae como una hoja",
+          "Dos bellotas en la cesta",
           "hacer"
         ]
       }
@@ -31636,22 +31636,22 @@
         "lamina": "conto_follas_3",
         "extra": true,
         "texto": {
-          "gl": "A castaña roda, “Roll”. No lume: “The chestnut pops in the fire: jump!”. Alma atopa unha cuncha rota, “broken”.",
-          "es": "La castaña rueda, “Roll”. En el fuego: “The chestnut pops in the fire: jump!”. Alma encuentra una cáscara rota, “broken”."
+          "gl": "A castaña roda, “Roll”. No lume: “Pop! Jump like a chestnut!”. Alma atopa unha cuncha rota, “broken”.",
+          "es": "La castaña rueda, “Roll”. En el fuego: “Pop! Jump like a chestnut!”. Alma encuentra una cáscara rota, “broken”."
         },
         "palabras": [
           "Roll",
-          "The chestnut pops in the fire: jump!",
+          "Pop! Jump like a chestnut!",
           "broken"
         ],
         "vocabularioClave": [
           "Rodar",
-          "A castaña estoura no lume: salta!",
+          "Pop! Salta coma unha castaña!",
           "roto"
         ],
         "vocabularioClaveEs": [
           "Rodar",
-          "La castaña estalla en el fuego: ¡salta!",
+          "¡Pop! ¡Salta como una castaña!",
           "roto"
         ]
       }
@@ -31991,22 +31991,22 @@
         "lamina": "conto_animais_3",
         "extra": true,
         "texto": {
-          "gl": "Tito xoga: “Roll the pumpkin on the floor”. Logo: “Warm your hands and rub them fast”. E queda firme, “steady”.",
-          "es": "Tito juega: “Roll the pumpkin on the floor”. Luego: “Warm your hands and rub them fast”. Y se queda firme, “steady”."
+          "gl": "Tito xoga: “Roll the pumpkin on the floor”. Logo: “Rub your hands fast”. E queda firme, “steady”.",
+          "es": "Tito juega: “Roll the pumpkin on the floor”. Luego: “Rub your hands fast”. Y se queda firme, “steady”."
         },
         "palabras": [
           "Roll the pumpkin on the floor",
-          "Warm your hands and rub them fast",
+          "Rub your hands fast",
           "steady"
         ],
         "vocabularioClave": [
           "Fai rodar a cabaza polo chan",
-          "Quenta as mans e frégaas rápido",
+          "Frega as mans axiña",
           "firme"
         ],
         "vocabularioClaveEs": [
           "Haz rodar la calabaza por el suelo",
-          "Calienta las manos y frótalas rápido",
+          "Frota las manos rápido",
           "firme"
         ]
       },
@@ -33408,22 +33408,22 @@
         "lamina": "conto_inverno_3",
         "extra": true,
         "texto": {
-          "gl": "Xan xoga: “Stomp in the snow”. Logo: “Tiptoe quietly to blow out the light”. E di: “The car is on the block.”",
-          "es": "Xan juega: “Stomp in the snow”. Luego: “Tiptoe quietly to blow out the light”. Y dice: “The car is on the block.”"
+          "gl": "Xan xoga: “Stomp in the snow”. Logo: “Tiptoe and blow!”. E di: “The car is on the block.”",
+          "es": "Xan juega: “Stomp in the snow”. Luego: “Tiptoe and blow!”. Y dice: “The car is on the block.”"
         },
         "palabras": [
           "Stomp in the snow",
-          "Tiptoe quietly to blow out the light",
+          "Tiptoe and blow!",
           "The car is on the block."
         ],
         "vocabularioClave": [
           "Pisa forte na neve",
-          "Vai de puntillas, en silencio, a apagar a luz",
+          "De puntillas, e sopra!",
           "O coche está enriba do bloque."
         ],
         "vocabularioClaveEs": [
           "Pisa fuerte en la nieve",
-          "Ve de puntillas, en silencio, a apagar la luz",
+          "¡De puntillas, y sopla!",
           "El coche está encima del bloque."
         ]
       }
@@ -34470,17 +34470,17 @@
         "lamina": "conto_choiva_3",
         "extra": true,
         "texto": {
-          "gl": "Baixo o paraugas, Xiana xoga: “Tap your knees like rain falling fast”.",
-          "es": "Bajo el paraguas, Xiana juega: “Tap your knees like rain falling fast”."
+          "gl": "Baixo o paraugas, Xiana xoga: “Tap your knees like rain”.",
+          "es": "Bajo el paraguas, Xiana juega: “Tap your knees like rain”."
         },
         "palabras": [
-          "Tap your knees like rain falling fast"
+          "Tap your knees like rain"
         ],
         "vocabularioClave": [
-          "Dá golpiños nos xeonllos coma a choiva que cae rápido"
+          "Bate nos xeonllos coma a chuvia"
         ],
         "vocabularioClaveEs": [
-          "Da golpecitos en las rodillas como la lluvia que cae rápido"
+          "Golpea las rodillas como la lluvia"
         ]
       }
     ],
@@ -36233,22 +36233,22 @@
         "lamina": "conto_animais_3",
         "extra": true,
         "texto": {
-          "gl": "Lolo xoga: “Quiet: hands on your tummy”. Logo: “Put on your animal mask and roar”. E pregunta: “What do you want?”.",
-          "es": "Lolo juega: “Quiet: hands on your tummy”. Luego: “Put on your animal mask and roar”. Y pregunta: “What do you want?”."
+          "gl": "Lolo xoga: “Quiet: hands on your tummy”. Logo: “Mask on and roar!”. E pregunta: “What do you want?”.",
+          "es": "Lolo juega: “Quiet: hands on your tummy”. Luego: “Mask on and roar!”. Y pregunta: “What do you want?”."
         },
         "palabras": [
           "Quiet: hands on your tummy",
-          "Put on your animal mask and roar",
+          "Mask on and roar!",
           "What do you want?"
         ],
         "vocabularioClave": [
           "Silencio: mans na barriga",
-          "Ponte a máscara de animal e ruxe",
+          "Ponte a máscara e brúa!",
           "Que queres?"
         ],
         "vocabularioClaveEs": [
           "Silencio: manos en la barriga",
-          "Ponte la máscara de animal y ruge",
+          "¡Ponte la máscara y ruge!",
           "¿Qué quieres?"
         ]
       }
@@ -37289,23 +37289,23 @@
         "lamina": "conto_cores_3",
         "extra": true,
         "texto": {
-          "gl": "Noa cava, “Dig”, na terra, “Soil”, e xoga: “Curl up small like a tiny seed”.",
-          "es": "Noa cava, “Dig”, en la tierra, “Soil”, y juega: “Curl up small like a tiny seed”."
+          "gl": "Noa cava, “Dig”, na terra, “Soil”, e xoga: “Curl up like a seed”.",
+          "es": "Noa cava, “Dig”, en la tierra, “Soil”, y juega: “Curl up like a seed”."
         },
         "palabras": [
           "Dig",
           "Soil",
-          "Curl up small like a tiny seed"
+          "Curl up like a seed"
         ],
         "vocabularioClave": [
           "Cavar",
           "Terra",
-          "Enróscate pequeniño coma unha semente"
+          "Encóllete coma unha semente"
         ],
         "vocabularioClaveEs": [
           "Cavar",
           "Tierra",
-          "Acurrúcate pequeñito como una semilla"
+          "Acurrúcate como una semilla"
         ]
       }
     ],
@@ -38700,25 +38700,25 @@
         "lamina": "conto_primavera_3",
         "extra": true,
         "texto": {
-          "gl": "Xulia galopa, “Gallop”, e camiña, “Walk”: “Gallop like a horse in the meadow”. Despois ten fame, “hungry”.",
-          "es": "Xulia galopa, “Gallop”, y camina, “Walk”: “Gallop like a horse in the meadow”. Después tiene hambre, “hungry”."
+          "gl": "Xulia galopa, “Gallop”, e camiña, “Walk”: “Gallop like a horse”. Despois ten fame, “hungry”.",
+          "es": "Xulia galopa, “Gallop”, y camina, “Walk”: “Gallop like a horse”. Después tiene hambre, “hungry”."
         },
         "palabras": [
           "Gallop",
           "Walk",
-          "Gallop like a horse in the meadow",
+          "Gallop like a horse",
           "hungry"
         ],
         "vocabularioClave": [
           "Galopar",
           "Camiñar",
-          "Galopa coma un cabalo no prado",
+          "Galopa coma un cabalo",
           "con fame"
         ],
         "vocabularioClaveEs": [
           "Galopar",
           "Caminar",
-          "Galopa como un caballo en el prado",
+          "Galopa como un caballo",
           "con hambre"
         ]
       }
@@ -40466,21 +40466,21 @@
         "lamina": "conto_cores_3",
         "extra": true,
         "texto": {
-          "gl": "No comedor, Sofía xoga: “Cross your hands and clap with your friend”, e “Clap high, clap low”. E pide: “More juice in my cup.”",
-          "es": "En el comedor, Sofía juega: “Cross your hands and clap with your friend”, y “Clap high, clap low”. Y pide: “More juice in my cup.”"
+          "gl": "No comedor, Sofía xoga: “Clap with your friend”, e “Clap high, clap low”. E pide: “More juice in my cup.”",
+          "es": "En el comedor, Sofía juega: “Clap with your friend”, y “Clap high, clap low”. Y pide: “More juice in my cup.”"
         },
         "palabras": [
-          "Cross your hands and clap with your friend",
+          "Clap with your friend",
           "Clap high, clap low",
           "More juice in my cup."
         ],
         "vocabularioClave": [
-          "Cruza as mans e dá palmas co teu amigo",
+          "Aplaude co teu amigo",
           "Palmas arriba, palmas abaixo",
           "Máis zume na miña cunca."
         ],
         "vocabularioClaveEs": [
-          "Cruza las manos y da palmas con tu amigo",
+          "Aplaude con tu amigo",
           "Palmas arriba, palmas abajo",
           "Más zumo en mi taza."
         ]
@@ -41497,20 +41497,20 @@
         "lamina": "conto_mar_3",
         "extra": true,
         "texto": {
-          "gl": "Laura pon unha cuncha, “Shell”, no castelo, e xoga: “Row your boat through the big waves”.",
-          "es": "Laura pone una concha, “Shell”, en el castillo, y juega: “Row your boat through the big waves”."
+          "gl": "Laura pon unha cuncha, “Shell”, no castelo, e xoga: “Row your boat!”.",
+          "es": "Laura pone una concha, “Shell”, en el castillo, y juega: “Row your boat!”."
         },
         "palabras": [
           "Shell",
-          "Row your boat through the big waves"
+          "Row your boat!"
         ],
         "vocabularioClave": [
           "Cuncha",
-          "Rema na barca entre as ondas grandes"
+          "Rema na túa barca!"
         ],
         "vocabularioClaveEs": [
           "Concha",
-          "Rema en la barca entre las olas grandes"
+          "¡Rema en tu barca!"
         ]
       }
     ],
@@ -41849,20 +41849,20 @@
         "lamina": "conto_mar_3",
         "extra": true,
         "texto": {
-          "gl": "Cris xoga: “Swim like a fast fish in the ría”, e logo: “Dive deep and find a white shell”.",
-          "es": "Cris juega: “Swim like a fast fish in the ría”, y luego: “Dive deep and find a white shell”."
+          "gl": "Cris xoga: “Swim fast like a fish”, e logo: “Dive and find a shell”.",
+          "es": "Cris juega: “Swim fast like a fish”, y luego: “Dive and find a shell”."
         },
         "palabras": [
-          "Swim like a fast fish in the ría",
-          "Dive deep and find a white shell"
+          "Swim fast like a fish",
+          "Dive and find a shell"
         ],
         "vocabularioClave": [
-          "Nada coma un peixe rápido na ría",
-          "Mergúllate fondo e busca unha cuncha branca"
+          "Nada rápido coma un peixe",
+          "Mergúllate e atopa unha cuncha"
         ],
         "vocabularioClaveEs": [
-          "Nada como un pez rápido en la ría",
-          "Bucea hondo y busca una concha blanca"
+          "Nada rápido como un pez",
+          "Sumérgete y encuentra una concha"
         ]
       }
     ],
@@ -43397,25 +43397,25 @@
         "lamina": "conto_auga_2",
         "extra": true,
         "texto": {
-          "gl": "Antes do patio, a mestra xoga con Nela: “Walk like a sleepy bear with your heavy bag”. Despois, “The bell rings: run to the circle and freeze!”. Na clase, “Open your bag, take out your smock and smile”. E Nela pregunta á amiga: “Can I help you?”.",
-          "es": "Antes del patio, la maestra juega con Nela: “Walk like a sleepy bear with your heavy bag”. Después, “The bell rings: run to the circle and freeze!”. En clase, “Open your bag, take out your smock and smile”. Y Nela le pregunta a su amiga: “Can I help you?”."
+          "gl": "Antes do patio, a mestra xoga con Nela: “Walk like a sleepy bear”. Despois, “Bell! Run and freeze!”. Na clase, “Open your bag and smile”. E Nela pregunta á amiga: “Can I help you?”.",
+          "es": "Antes del patio, la maestra juega con Nela: “Walk like a sleepy bear”. Después, “Bell! Run and freeze!”. En clase, “Open your bag and smile”. Y Nela le pregunta a su amiga: “Can I help you?”."
         },
         "palabras": [
-          "Walk like a sleepy bear with your heavy bag",
-          "The bell rings: run to the circle and freeze!",
-          "Open your bag, take out your smock and smile",
+          "Walk like a sleepy bear",
+          "Bell! Run and freeze!",
+          "Open your bag and smile",
           "Can I help you?"
         ],
         "vocabularioClave": [
-          "Camiña coma un oso durmido coa mochila pesada",
-          "Soa o timbre: corre ao círculo e estátua!",
-          "Abre a mochila, saca o mandil e sorrí",
+          "Camiña coma un oso con sono",
+          "Campá! Corre e queda quieto!",
+          "Abre a mochila e sorrí",
           "Podo axudarte?"
         ],
         "vocabularioClaveEs": [
-          "Camina como un oso dormido con la mochila pesada",
-          "Suena el timbre: corre al círculo y ¡estatua!",
-          "Abre la mochila, saca el babi y sonríe",
+          "Camina como un oso con sueño",
+          "¡Campana! ¡Corre y quédate quieto!",
+          "Abre la mochila y sonríe",
           "¿Puedo ayudarte?"
         ]
       }
@@ -44550,8 +44550,8 @@
         },
         "lamina": "conto_follas_1",
         "texto": {
-          "gl": "Martín segue a pista, o “Trail”, de pedras pintadas ata o tobo, cos pés áxiles, “Nimble-footed”… e xa ninguén o pilla!",
-          "es": "Martín sigue el rastro, el “Trail”, de piedras pintadas hasta la madriguera, con los pies ágiles, “Nimble-footed”… ¡y ya nadie lo pilla!"
+          "gl": "Martín segue a pista, o “Trail”, de pedras pintadas ata o tobo, cos pés áxiles, “Quick”… e xa ninguén o pilla!",
+          "es": "Martín sigue el rastro, el “Trail”, de piedras pintadas hasta la madriguera, con los pies ágiles, “Quick”… ¡y ya nadie lo pilla!"
         },
         "preguntaImaxe": {
           "gl": "Como o arranxaron? Sinala o que usaron.",
@@ -44563,15 +44563,15 @@
         },
         "vocabularioClave": [
           "Pista",
-          "De pés áxiles"
+          "Rápido"
         ],
         "vocabularioClaveEs": [
           "Rastro",
-          "De pies ágiles"
+          "Rápido"
         ],
         "palabras": [
           "Trail",
-          "Nimble-footed"
+          "Quick"
         ]
       },
       {
@@ -45022,25 +45022,25 @@
         "lamina": "conto_corpo_2",
         "extra": true,
         "texto": {
-          "gl": "Despois do flamenco, Pío salta: “Hop like a squirrel and collect the chestnuts”. De súpeto: “The wild boar is coming: FREEZE!”. Logo, “Climb the oak tree and hide your nuts”. E ao final xoga a ser veterinario, “doctor / vet”, cun peluche.",
-          "es": "Después del flamenco, Pío salta: “Hop like a squirrel and collect the chestnuts”. De repente: “The wild boar is coming: FREEZE!”. Luego, “Climb the oak tree and hide your nuts”. Y al final juega a ser veterinario, “doctor / vet”, con un peluche."
+          "gl": "Despois do flamenco, Pío salta: “Hop like a squirrel”. De súpeto: “The wild boar is coming: FREEZE!”. Logo, “Climb and hide your nuts”. E ao final xoga a ser veterinario, “doctor / vet”, cun peluche.",
+          "es": "Después del flamenco, Pío salta: “Hop like a squirrel”. De repente: “The wild boar is coming: FREEZE!”. Luego, “Climb and hide your nuts”. Y al final juega a ser veterinario, “doctor / vet”, con un peluche."
         },
         "palabras": [
-          "Hop like a squirrel and collect the chestnuts",
+          "Hop like a squirrel",
           "The wild boar is coming: FREEZE!",
-          "Climb the oak tree and hide your nuts",
+          "Climb and hide your nuts",
           "doctor / vet"
         ],
         "vocabularioClave": [
-          "Brinca coma un esquío e recolle as castañas",
+          "Brinca coma un esquío",
           "Vén o xabaril: estátuas!",
-          "Sobe ao carballo e agocha as túas noces",
+          "Rube e agocha as noces",
           "doutor / veterinario"
         ],
         "vocabularioClaveEs": [
-          "Brinca como una ardilla y recoge las castañas",
+          "Brinca como una ardilla",
           "Viene el jabalí: ¡estatuas!",
-          "Sube al roble y esconde tus nueces",
+          "Trepa y esconde las nueces",
           "doctor / veterinario"
         ]
       }
@@ -45564,8 +45564,8 @@
         },
         "lamina": "conto_follas_1",
         "texto": {
-          "gl": "O domingo, Tomé e a súa familia van de andaina —“Hike”— ao monte da vila. No cumio do monte, o “Hilltop”, hai unha capela branca, a “Chapel”.",
-          "es": "El domingo, Tomé y su familia van de excursión —“Hike”— al Monte del pueblo. En la cima del monte, el “Hilltop”, hay una capilla blanca, la “Chapel”."
+          "gl": "O domingo, Tomé e a súa familia van de andaina —“Hike”— ao monte da vila. No outeiro, o “Hill”, hai unha capela branca, a “Chapel”.",
+          "es": "El domingo, Tomé y su familia van de excursión —“Hike”— al Monte del pueblo. En la colina, el “Hill”, hay una capilla blanca, la “Chapel”."
         },
         "preguntaImaxe": {
           "gl": "Quen sae nesta lámina? Sinálao co dedo.",
@@ -45577,17 +45577,17 @@
         },
         "vocabularioClave": [
           "Facer andaina",
-          "Cumio do monte",
+          "Outeiro",
           "Capela"
         ],
         "vocabularioClaveEs": [
           "Hacer senderismo",
-          "Cima del monte",
+          "Colina",
           "Capilla"
         ],
         "palabras": [
           "Hike",
-          "Hilltop",
+          "Hill",
           "Chapel"
         ]
       },
@@ -46669,24 +46669,24 @@
         "lamina": "conto_follas_2",
         "extra": true,
         "texto": {
-          "gl": "No hotel dos bichos, Nela xoga: “Roll down the hill like a chestnut”. Logo: “The hedgehog wakes up: FREEZE and curl up small!”. Ao final, “Pop out and dance around the fire”. E examina, “examine”, cada bicho coa lupa.",
-          "es": "En el hotel de los bichos, Nela juega: “Roll down the hill like a chestnut”. Luego: “The hedgehog wakes up: FREEZE and curl up small!”. Al final, “Pop out and dance around the fire”. Y examina, “examine”, cada bicho con la lupa."
+          "gl": "No hotel dos bichos, Nela xoga: “Roll down the hill like a chestnut”. Logo: “Hedgehog! Freeze and curl up!”. Ao final, “Pop out and dance around the fire”. E examina, “examine”, cada bicho coa lupa.",
+          "es": "En el hotel de los bichos, Nela juega: “Roll down the hill like a chestnut”. Luego: “Hedgehog! Freeze and curl up!”. Al final, “Pop out and dance around the fire”. Y examina, “examine”, cada bicho con la lupa."
         },
         "palabras": [
           "Roll down the hill like a chestnut",
-          "The hedgehog wakes up: FREEZE and curl up small!",
+          "Hedgehog! Freeze and curl up!",
           "Pop out and dance around the fire",
           "examine"
         ],
         "vocabularioClave": [
           "Roda costa abaixo coma unha castaña",
-          "O ourizo esperta: estátua e faite unha bóla!",
+          "Ourizo! Quieto e enróscate!",
           "Sae e baila arredor do lume",
           "examinar"
         ],
         "vocabularioClaveEs": [
           "Rueda cuesta abajo como una castaña",
-          "El erizo se despierta: ¡estatua y hazte una bola!",
+          "¡Erizo! ¡Quieto y enróscate!",
           "Sal y baila alrededor del fuego",
           "examinar"
         ]
@@ -48322,26 +48322,26 @@
         "lamina": "conto_inverno_2",
         "extra": true,
         "texto": {
-          "gl": "Buscando a bufanda, Bruno baila: “Dance freely while the drum sings”. Logo: “Cold winter night: curl up and do not move”. E por fin: “Sunlight! Stand up and stretch tall”. Atopa a bufanda no gato, e explica: “Why are you putting the bandage? Because the cat is sick.”",
-          "es": "Buscando la bufanda, Bruno baila: “Dance freely while the drum sings”. Luego: “Cold winter night: curl up and do not move”. Y por fin: “Sunlight! Stand up and stretch tall”. Encuentra la bufanda en el gato y explica: “Why are you putting the bandage? Because the cat is sick.”"
+          "gl": "Buscando a bufanda, Bruno baila: “Dance freely while the drum sings”. Logo: “Cold night: curl up!”. E por fin: “Sunlight! Stand up and stretch tall”. Atopa a bufanda no gato, e explica: “Why a bandage? The cat is sick.”",
+          "es": "Buscando la bufanda, Bruno baila: “Dance freely while the drum sings”. Luego: “Cold night: curl up!”. Y por fin: “Sunlight! Stand up and stretch tall”. Encuentra la bufanda en el gato y explica: “Why a bandage? The cat is sick.”"
         },
         "palabras": [
           "Dance freely while the drum sings",
-          "Cold winter night: curl up and do not move",
+          "Cold night: curl up!",
           "Sunlight! Stand up and stretch tall",
-          "Why are you putting the bandage? Because the cat is sick."
+          "Why a bandage? The cat is sick."
         ],
         "vocabularioClave": [
           "Baila libre mentres canta o tambor",
-          "Noite fría de inverno: enróscate e non te movas",
+          "Noite fría: enróscate!",
           "Luz do sol! Ponte de pé e estírate ben alto",
-          "Por que lle pos a venda? Porque o gato está malo."
+          "Por que unha venda? O gato está malo."
         ],
         "vocabularioClaveEs": [
           "Baila libre mientras canta el tambor",
-          "Noche fría de invierno: acurrúcate y no te muevas",
+          "Noche fría: ¡enróscate!",
           "¡Luz del sol! Ponte de pie y estírate bien alto",
-          "¿Por qué le pones la venda? Porque el gato está malito."
+          "¿Por qué una venda? El gato está malito."
         ]
       },
       {
@@ -48353,20 +48353,20 @@
         "lamina": "conto_inverno_2",
         "extra": true,
         "texto": {
-          "gl": "Rosa di: “I put on my boots because it is raining.” Na casa, xoga a doutora: “First we check the heart, then we wrap the bandage.”",
-          "es": "Rosa dice: “I put on my boots because it is raining.” En casa, juega a ser doctora: “First we check the heart, then we wrap the bandage.”"
+          "gl": "Rosa di: “Boots on, because it rains.” Na casa, xoga a doutora: “First the heart, then the bandage.”",
+          "es": "Rosa dice: “Boots on, because it rains.” En casa, juega a ser doctora: “First the heart, then the bandage.”"
         },
         "palabras": [
-          "I put on my boots because it is raining.",
-          "First we check the heart, then we wrap the bandage."
+          "Boots on, because it rains.",
+          "First the heart, then the bandage."
         ],
         "vocabularioClave": [
-          "Poño as botas porque está chovendo.",
-          "Primeiro miramos o corazón e despois poñemos a venda."
+          "Botas postas, porque chove.",
+          "Primeiro o corazón, despois a venda."
         ],
         "vocabularioClaveEs": [
-          "Me pongo las botas porque está lloviendo.",
-          "Primero miramos el corazón y después ponemos la venda."
+          "Botas puestas, porque llueve.",
+          "Primero el corazón, luego la venda."
         ]
       }
     ],
@@ -49944,23 +49944,23 @@
         "lamina": "conto_cores_2",
         "extra": true,
         "texto": {
-          "gl": "No andén, Daniela xoga coa familia: “Walk together like one big cloud”. Logo: “The storm is here: run and hide under the umbrella!”. E cando para: “The sun comes back: shake the water off”.",
-          "es": "En el andén, Daniela juega con su familia: “Walk together like one big cloud”. Luego: “The storm is here: run and hide under the umbrella!”. Y cuando para: “The sun comes back: shake the water off”."
+          "gl": "No andén, Daniela xoga coa familia: “Walk together like one big cloud”. Logo: “Storm! Hide under the umbrella!”. E cando para: “Sun! Shake the water off!”.",
+          "es": "En el andén, Daniela juega con su familia: “Walk together like one big cloud”. Luego: “Storm! Hide under the umbrella!”. Y cuando para: “Sun! Shake the water off!”."
         },
         "palabras": [
           "Walk together like one big cloud",
-          "The storm is here: run and hide under the umbrella!",
-          "The sun comes back: shake the water off"
+          "Storm! Hide under the umbrella!",
+          "Sun! Shake the water off!"
         ],
         "vocabularioClave": [
           "Camiñade xuntos coma unha nube grande",
-          "Chega a tormenta: corre e agóchate debaixo do paraugas!",
-          "Volve o sol: sacode a auga"
+          "Treboada! Agóchate baixo o paraugas!",
+          "Sol! Sacode a auga!"
         ],
         "vocabularioClaveEs": [
           "Caminad juntos como una nube grande",
-          "Llega la tormenta: ¡corre y escóndete bajo el paraguas!",
-          "Vuelve el sol: sacúdete el agua"
+          "¡Tormenta! ¡Escóndete bajo el paraguas!",
+          "¡Sol! ¡Sacude el agua!"
         ]
       }
     ],
@@ -51538,25 +51538,25 @@
         "lamina": "conto_cores_2",
         "extra": true,
         "texto": {
-          "gl": "Nela xoga sen ganar: “Gallop like a wild horse”. Logo: “The wolf is watching: FREEZE!”. Despois: “Sneak quietly like a fox in the woods”. E ao final, á fiestra: “Look outside!”.",
-          "es": "Nela juega sin ganar: “Gallop like a wild horse”. Luego: “The wolf is watching: FREEZE!”. Después: “Sneak quietly like a fox in the woods”. Y al final, en la ventana: “Look outside!”."
+          "gl": "Nela xoga sen ganar: “Gallop like a wild horse”. Logo: “The wolf is watching: FREEZE!”. Despois: “Quiet like a fox!”. E ao final, á fiestra: “Look outside!”.",
+          "es": "Nela juega sin ganar: “Gallop like a wild horse”. Luego: “The wolf is watching: FREEZE!”. Después: “Quiet like a fox!”. Y al final, en la ventana: “Look outside!”."
         },
         "palabras": [
           "Gallop like a wild horse",
           "The wolf is watching: FREEZE!",
-          "Sneak quietly like a fox in the woods",
+          "Quiet like a fox!",
           "Look outside!"
         ],
         "vocabularioClave": [
           "Galopa coma un cabalo salvaxe",
           "O lobo está mirando: estátuas!",
-          "Vai a modiño coma un raposo no bosque",
+          "Caladiño coma un raposo!",
           "Mira fóra!"
         ],
         "vocabularioClaveEs": [
           "Galopa como un caballo salvaje",
           "El lobo está mirando: ¡estatuas!",
-          "Ve sigiloso como un zorro en el bosque",
+          "¡Calladito como un zorro!",
           "¡Mira fuera!"
         ]
       },
@@ -53188,23 +53188,23 @@
         "lamina": "conto_primavera_2",
         "extra": true,
         "texto": {
-          "gl": "Baixo as árbores, Uxía xoga: “Fly like a busy bee”. Logo: “Find the red flower and land softly”. E á noite: “Sleep in the flower until the sun wakes up”.",
-          "es": "Bajo los árboles, Uxía juega: “Fly like a busy bee”. Luego: “Find the red flower and land softly”. Y por la noche: “Sleep in the flower until the sun wakes up”."
+          "gl": "Baixo as árbores, Uxía xoga: “Fly like a busy bee”. Logo: “Find the red flower and land softly”. E á noite: “Sleep in the flower”.",
+          "es": "Bajo los árboles, Uxía juega: “Fly like a busy bee”. Luego: “Find the red flower and land softly”. Y por la noche: “Sleep in the flower”."
         },
         "palabras": [
           "Fly like a busy bee",
           "Find the red flower and land softly",
-          "Sleep in the flower until the sun wakes up"
+          "Sleep in the flower"
         ],
         "vocabularioClave": [
           "Voa coma unha abella traballadora",
           "Busca a flor vermella e pousa amodo",
-          "Durme na flor ata que esperte o sol"
+          "Durme na flor"
         ],
         "vocabularioClaveEs": [
           "Vuela como una abeja trabajadora",
           "Busca la flor roja y posa despacio",
-          "Duerme en la flor hasta que despierte el sol"
+          "Duerme en la flor"
         ]
       }
     ],
@@ -54801,23 +54801,23 @@
         "lamina": "conto_mar_2",
         "extra": true,
         "texto": {
-          "gl": "Na praia, Xoel xoga: “Walk calmly like a sheep in the field”. De súpeto: “The hungry wolf wakes up: FREEZE!”. E logo: “The wolf sleeps again: tiptoe away”. Sae da auga cos pés cheos de lama, “muddy”.",
-          "es": "En la playa, Xoel juega: “Walk calmly like a sheep in the field”. De repente: “The hungry wolf wakes up: FREEZE!”. Y luego: “The wolf sleeps again: tiptoe away”. Sale del agua con los pies llenos de barro, “muddy”."
+          "gl": "Na praia, Xoel xoga: “Walk calmly like a sheep”. De súpeto: “The hungry wolf wakes up: FREEZE!”. E logo: “The wolf sleeps again: tiptoe away”. Sae da auga cos pés cheos de lama, “muddy”.",
+          "es": "En la playa, Xoel juega: “Walk calmly like a sheep”. De repente: “The hungry wolf wakes up: FREEZE!”. Y luego: “The wolf sleeps again: tiptoe away”. Sale del agua con los pies llenos de barro, “muddy”."
         },
         "palabras": [
-          "Walk calmly like a sheep in the field",
+          "Walk calmly like a sheep",
           "The hungry wolf wakes up: FREEZE!",
           "The wolf sleeps again: tiptoe away",
           "muddy"
         ],
         "vocabularioClave": [
-          "Camiña tranquilo coma unha ovella no campo",
+          "Camiña tranquilo coma unha ovella",
           "O lobo con fame esperta: estátuas!",
           "O lobo volve durmir: vaite de puntillas",
           "enlamado"
         ],
         "vocabularioClaveEs": [
-          "Camina tranquilo como una oveja en el campo",
+          "Camina tranquilo como una oveja",
           "El lobo hambriento se despierta: ¡estatuas!",
           "El lobo vuelve a dormir: vete de puntillas",
           "embarrado"
@@ -58048,23 +58048,23 @@
         "lamina": "conto_benvida_2",
         "extra": true,
         "texto": {
-          "gl": "Antes do diploma, Nela xoga: “Calm sea: move the cloth very slowly”. Logo: “Storm! Shake the sea with all your strength”. E ao final: “The sea sleeps: put the cloth down and lie still”.",
-          "es": "Antes del diploma, Nela juega: “Calm sea: move the cloth very slowly”. Luego: “Storm! Shake the sea with all your strength”. Y al final: “The sea sleeps: put the cloth down and lie still”."
+          "gl": "Antes do diploma, Nela xoga: “Calm sea: move the cloth very slowly”. Logo: “Storm! Shake the sea!”. E ao final: “The sea sleeps: lie still”.",
+          "es": "Antes del diploma, Nela juega: “Calm sea: move the cloth very slowly”. Luego: “Storm! Shake the sea!”. Y al final: “The sea sleeps: lie still”."
         },
         "palabras": [
           "Calm sea: move the cloth very slowly",
-          "Storm! Shake the sea with all your strength",
-          "The sea sleeps: put the cloth down and lie still"
+          "Storm! Shake the sea!",
+          "The sea sleeps: lie still"
         ],
         "vocabularioClave": [
           "Mar en calma: move o pano moi amodo",
-          "Tormenta! Abanea o mar con toda a túa forza",
-          "O mar durme: pousa o pano e queda quieto"
+          "Treboada! Axita o mar!",
+          "O mar dorme: deitado e quieto"
         ],
         "vocabularioClaveEs": [
           "Mar en calma: mueve la tela muy despacio",
-          "¡Tormenta! Agita el mar con toda tu fuerza",
-          "El mar duerme: deja la tela y quédate quieto"
+          "¡Tormenta! ¡Agita el mar!",
+          "El mar duerme: tumbado y quieto"
         ]
       }
     ],
@@ -59670,24 +59670,24 @@
         "lamina": "conto_benvida_2",
         "extra": true,
         "texto": {
-          "gl": "Noa xoga: “Walk to the hook and hang up your coat”. Logo: “Take the smock, turn around and give it to Noa”. Despois: “Sit on the green mat and freeze!”. E pregunta: “Can we trade?”.",
-          "es": "Noa juega: “Walk to the hook and hang up your coat”. Luego: “Take the smock, turn around and give it to Noa”. Después: “Sit on the green mat and freeze!”. Y pregunta: “Can we trade?”."
+          "gl": "Noa xoga: “Hang up your coat on the hook”. Logo: “Take the smock and give it to Noa”. Despois: “Sit on the green mat and freeze!”. E pregunta: “Can we trade?”.",
+          "es": "Noa juega: “Hang up your coat on the hook”. Luego: “Take the smock and give it to Noa”. Después: “Sit on the green mat and freeze!”. Y pregunta: “Can we trade?”."
         },
         "palabras": [
-          "Walk to the hook and hang up your coat",
-          "Take the smock, turn around and give it to Noa",
+          "Hang up your coat on the hook",
+          "Take the smock and give it to Noa",
           "Sit on the green mat and freeze!",
           "Can we trade?"
         ],
         "vocabularioClave": [
-          "Camiña ata o colgadoiro e colga o abrigo",
-          "Colle o mandil, dá a volta e dállo a Noa",
+          "Colga o abrigo no colgador",
+          "Colle o mandil e dállo a Noa",
           "Senta na esterilla verde e estátua!",
           "Facemos un troco?"
         ],
         "vocabularioClaveEs": [
-          "Camina hasta el perchero y cuelga el abrigo",
-          "Coge el babi, date la vuelta y dáselo a Noa",
+          "Cuelga el abrigo en el perchero",
+          "Coge el babi y dáselo a Noa",
           "Siéntate en la colchoneta verde y ¡estatua!",
           "¿Hacemos un cambio?"
         ]
@@ -61298,24 +61298,24 @@
         "lamina": "conto_corpo_2",
         "extra": true,
         "texto": {
-          "gl": "Bieito xoga: “Take a rough leaf and put it in the brown ring”. Logo: “Noa, walk slowly and give the smooth leaf to your friend”. Despois: “Count three leaves and jump over the ring”. E debuxa, “draw”, a súa árbore.",
-          "es": "Bieito juega: “Take a rough leaf and put it in the brown ring”. Luego: “Noa, walk slowly and give the smooth leaf to your friend”. Después: “Count three leaves and jump over the ring”. Y dibuja, “draw”, su árbol."
+          "gl": "Bieito xoga: “Put a rough leaf in the ring”. Logo: “Give the smooth leaf to your friend”. Despois: “Count three leaves and jump over the ring”. E debuxa, “draw”, a súa árbore.",
+          "es": "Bieito juega: “Put a rough leaf in the ring”. Luego: “Give the smooth leaf to your friend”. Después: “Count three leaves and jump over the ring”. Y dibuja, “draw”, su árbol."
         },
         "palabras": [
-          "Take a rough leaf and put it in the brown ring",
-          "Noa, walk slowly and give the smooth leaf to your friend",
+          "Put a rough leaf in the ring",
+          "Give the smooth leaf to your friend",
           "Count three leaves and jump over the ring",
           "draw"
         ],
         "vocabularioClave": [
-          "Colle unha folla áspera e ponna no aro marrón",
-          "Noa, camiña amodo e dálle a folla lisa ao teu amigo",
+          "Pon unha folla áspera no aro",
+          "Dálle a folla lisa ao teu amigo",
           "Conta tres follas e salta por riba do aro",
           "debuxar"
         ],
         "vocabularioClaveEs": [
-          "Coge una hoja áspera y ponla en el aro marrón",
-          "Noa, camina despacio y dale la hoja lisa a tu amigo",
+          "Pon una hoja áspera en el aro",
+          "Dale la hoja lisa a tu amigo",
           "Cuenta tres hojas y salta por encima del aro",
           "dibujar"
         ]
@@ -62904,24 +62904,24 @@
         "lamina": "conto_follas_2",
         "extra": true,
         "texto": {
-          "gl": "Xoana xoga: “Mateo, find a round cold chestnut”. Logo: “Put the rough one here and the smooth one there”. Despois: “Your turn: give the command to your friend”. É moi creativa, “creative”.",
-          "es": "Xoana juega: “Mateo, find a round cold chestnut”. Luego: “Put the rough one here and the smooth one there”. Después: “Your turn: give the command to your friend”. Es muy creativa, “creative”."
+          "gl": "Xoana xoga: “Mateo, find a round cold chestnut”. Logo: “Rough one here, smooth one there”. Despois: “Your turn: give the command to your friend”. É moi creativa, “creative”.",
+          "es": "Xoana juega: “Mateo, find a round cold chestnut”. Luego: “Rough one here, smooth one there”. Después: “Your turn: give the command to your friend”. Es muy creativa, “creative”."
         },
         "palabras": [
           "Mateo, find a round cold chestnut",
-          "Put the rough one here and the smooth one there",
+          "Rough one here, smooth one there",
           "Your turn: give the command to your friend",
           "creative"
         ],
         "vocabularioClave": [
           "Mateo, busca unha castaña redonda e fría",
-          "Pon a áspera aquí e a lisa alí",
+          "A áspera aquí, a lisa alí",
           "Tócache: dálle a orde ao teu amigo",
           "creativo"
         ],
         "vocabularioClaveEs": [
           "Mateo, busca una castaña redonda y fría",
-          "Pon la áspera aquí y la lisa allí",
+          "La áspera aquí, la lisa allí",
           "Te toca: dale la orden a tu amigo",
           "creativo"
         ]
@@ -64532,23 +64532,23 @@
         "lamina": "conto_inverno_2",
         "extra": true,
         "texto": {
-          "gl": "Ledicia xoga: “Walk slowly and hold your friend's hand”. Logo: “Turn left and step over the rope”. E: “Here you go: give the light to the next pair”.",
-          "es": "Ledicia juega: “Walk slowly and hold your friend's hand”. Luego: “Turn left and step over the rope”. Y: “Here you go: give the light to the next pair”."
+          "gl": "Ledicia xoga: “Walk slowly and hold your friend's hand”. Logo: “Turn left and step over the rope”. E: “Here you go: pass the light”.",
+          "es": "Ledicia juega: “Walk slowly and hold your friend's hand”. Luego: “Turn left and step over the rope”. Y: “Here you go: pass the light”."
         },
         "palabras": [
           "Walk slowly and hold your friend's hand",
           "Turn left and step over the rope",
-          "Here you go: give the light to the next pair"
+          "Here you go: pass the light"
         ],
         "vocabularioClave": [
           "Camiña amodo e colle a man do teu amigo",
           "Xira á esquerda e pasa por riba da corda",
-          "Aquí tes: dálle a luz á parella seguinte"
+          "Toma: pasa a luz"
         ],
         "vocabularioClaveEs": [
           "Camina despacio y coge la mano de tu amigo",
           "Gira a la izquierda y pasa por encima de la cuerda",
-          "Toma: dale la luz a la pareja siguiente"
+          "Toma: pasa la luz"
         ]
       }
     ],
@@ -64939,17 +64939,17 @@
         "lamina": "conto_inverno_2",
         "extra": true,
         "texto": {
-          "gl": "Xabier pinta a postal: “I am blending yellow and blue because I want to make green.”",
-          "es": "Xabier pinta la postal: “I am blending yellow and blue because I want to make green.”"
+          "gl": "Xabier pinta a postal: “Yellow and blue make green!”",
+          "es": "Xabier pinta la postal: “Yellow and blue make green!”"
         },
         "palabras": [
-          "I am blending yellow and blue because I want to make green."
+          "Yellow and blue make green!"
         ],
         "vocabularioClave": [
-          "Estou mesturando amarelo e azul porque quero facer verde."
+          "Amarelo e azul fan verde!"
         ],
         "vocabularioClaveEs": [
-          "Estoy mezclando amarillo y azul porque quiero hacer verde."
+          "¡Amarillo y azul hacen verde!"
         ]
       }
     ],
@@ -65340,26 +65340,26 @@
         "lamina": "conto_follas_2",
         "extra": true,
         "texto": {
-          "gl": "Ánxela mantén o equilibrio, “Balance”, pasa por riba, “Step across”, e leva un prato en equilibrio, “Balance a plate”. E di: “The brush is between the cup and the paper.”",
-          "es": "Ánxela mantiene el equilibrio, “Balance”, pasa por encima, “Step across”, y lleva un plato en equilibrio, “Balance a plate”. Y dice: “The brush is between the cup and the paper.”"
+          "gl": "Ánxela mantén o equilibrio, “Balance”, pasa por riba, “Step across”, e leva un prato en equilibrio, “Balance a plate”. E di: “The brush is between the cup and paper.”",
+          "es": "Ánxela mantiene el equilibrio, “Balance”, pasa por encima, “Step across”, y lleva un plato en equilibrio, “Balance a plate”. Y dice: “The brush is between the cup and paper.”"
         },
         "palabras": [
           "Balance",
           "Step across",
           "Balance a plate",
-          "The brush is between the cup and the paper."
+          "The brush is between the cup and paper."
         ],
         "vocabularioClave": [
           "Manter o equilibrio",
           "Pasar por riba",
           "Equilibrar o prato",
-          "O pincel está entre a cunca e o papel."
+          "O pincel está entre o vaso e o papel."
         ],
         "vocabularioClaveEs": [
           "Mantener el equilibrio",
           "Pasar por encima",
           "Equilibrar el plato",
-          "El pincel está entre la taza y el papel."
+          "El pincel está entre el vaso y el papel."
         ]
       }
     ],
@@ -66154,23 +66154,23 @@
         "lamina": "conto_benvida_2",
         "extra": true,
         "texto": {
-          "gl": "Aroa xoga: “Step slowly and don't spill the water into the river”. Logo: “Ready, steady, go: pass the tray to your friend”. E: “If the water is cold, walk to the blue mat”.",
-          "es": "Aroa juega: “Step slowly and don't spill the water into the river”. Luego: “Ready, steady, go: pass the tray to your friend”. Y: “If the water is cold, walk to the blue mat”."
+          "gl": "Aroa xoga: “Step slowly, don't spill the water”. Logo: “Ready, steady, go: pass the tray!”. E: “Cold water? Walk to the blue mat”.",
+          "es": "Aroa juega: “Step slowly, don't spill the water”. Luego: “Ready, steady, go: pass the tray!”. Y: “Cold water? Walk to the blue mat”."
         },
         "palabras": [
-          "Step slowly and don't spill the water into the river",
-          "Ready, steady, go: pass the tray to your friend",
-          "If the water is cold, walk to the blue mat"
+          "Step slowly, don't spill the water",
+          "Ready, steady, go: pass the tray!",
+          "Cold water? Walk to the blue mat"
         ],
         "vocabularioClave": [
-          "Pisa amodo e non deixes caer a auga no río",
-          "Preparados, listos, xa: pásalle a bandexa ao teu amigo",
-          "Se a auga está fría, camiña ata a esterilla azul"
+          "Pisa amodo, non verques a auga",
+          "Preparados, listos, xa: pasa a bandexa!",
+          "Auga fría? Camiña á alfombra azul"
         ],
         "vocabularioClaveEs": [
-          "Pisa despacio y no derrames el agua en el río",
-          "Preparados, listos, ya: pásale la bandeja a tu amigo",
-          "Si el agua está fría, camina hasta la colchoneta azul"
+          "Pisa despacio, no derrames el agua",
+          "Preparados, listos, ya: ¡pasa la bandeja!",
+          "¿Agua fría? Camina a la alfombra azul"
         ]
       }
     ],
@@ -67776,23 +67776,23 @@
         "lamina": "conto_cores_2",
         "extra": true,
         "texto": {
-          "gl": "Xoán xoga: “Put your arms up and your left foot forward”. Logo: “Your turn: now you are the sculptor”. Despois: “Look at the card and copy the shape”. E saúda: “Welcome aboard!”.",
-          "es": "Xoán juega: “Put your arms up and your left foot forward”. Luego: “Your turn: now you are the sculptor”. Después: “Look at the card and copy the shape”. Y saluda: “Welcome aboard!”."
+          "gl": "Xoán xoga: “Arms up, left foot forward”. Logo: “Your turn: now you are the sculptor”. Despois: “Look at the card and copy the shape”. E saúda: “Welcome aboard!”.",
+          "es": "Xoán juega: “Arms up, left foot forward”. Luego: “Your turn: now you are the sculptor”. Después: “Look at the card and copy the shape”. Y saluda: “Welcome aboard!”."
         },
         "palabras": [
-          "Put your arms up and your left foot forward",
+          "Arms up, left foot forward",
           "Your turn: now you are the sculptor",
           "Look at the card and copy the shape",
           "Welcome aboard!"
         ],
         "vocabularioClave": [
-          "Brazos arriba e o pé esquerdo adiante",
+          "Brazos arriba, pé esquerdo diante",
           "Tócache: agora ti es o escultor",
           "Mira a tarxeta e copia a forma",
           "Benvidos a bordo!"
         ],
         "vocabularioClaveEs": [
-          "Brazos arriba y el pie izquierdo adelante",
+          "Brazos arriba, pie izquierdo delante",
           "Te toca: ahora tú eres el escultor",
           "Mira la tarjeta y copia la forma",
           "¡Bienvenidos a bordo!"
@@ -69395,25 +69395,25 @@
         "lamina": "conto_primavera_2",
         "extra": true,
         "texto": {
-          "gl": "Candela xoga: “Fill the pot, plant the seed and water it”. Logo: “Here you go: pass the soil to your friend”. E: “If the seed is big, put it in the brown pot”. Despois prepara a maleta, “suitcase”.",
-          "es": "Candela juega: “Fill the pot, plant the seed and water it”. Luego: “Here you go: pass the soil to your friend”. Y: “If the seed is big, put it in the brown pot”. Después prepara la maleta, “suitcase”."
+          "gl": "Candela xoga: “Fill the pot and plant the seed”. Logo: “Here you go: pass the soil”. E: “Big seed? Brown pot!”. Despois prepara a maleta, “suitcase”.",
+          "es": "Candela juega: “Fill the pot and plant the seed”. Luego: “Here you go: pass the soil”. Y: “Big seed? Brown pot!”. Después prepara la maleta, “suitcase”."
         },
         "palabras": [
-          "Fill the pot, plant the seed and water it",
-          "Here you go: pass the soil to your friend",
-          "If the seed is big, put it in the brown pot",
+          "Fill the pot and plant the seed",
+          "Here you go: pass the soil",
+          "Big seed? Brown pot!",
           "suitcase"
         ],
         "vocabularioClave": [
-          "Enche o testo, planta a semente e rega",
-          "Aquí tes: pásalle a terra ao teu amigo",
-          "Se a semente é grande, ponna no testo marrón",
+          "Enche o testo e planta a semente",
+          "Toma: pasa a terra",
+          "Semente grande? Testo marrón!",
           "maleta"
         ],
         "vocabularioClaveEs": [
-          "Llena la maceta, planta la semilla y riégala",
-          "Toma: pásale la tierra a tu amigo",
-          "Si la semilla es grande, ponla en la maceta marrón",
+          "Llena la maceta y planta la semilla",
+          "Toma: pasa la tierra",
+          "¿Semilla grande? ¡Maceta marrón!",
           "maleta"
         ]
       }
@@ -71020,25 +71020,25 @@
         "lamina": "conto_primavera_2",
         "extra": true,
         "texto": {
-          "gl": "Mateo xoga: “Where does the fox hide? Point with your elbows”. Logo: “Under the stones! Slither like a snake”. E: “If it climbs the chestnut tree, crawl to the green mat”. Despois amosa o pasaporte, “passport”.",
-          "es": "Mateo juega: “Where does the fox hide? Point with your elbows”. Luego: “Under the stones! Slither like a snake”. Y: “If it climbs the chestnut tree, crawl to the green mat”. Después enseña el pasaporte, “passport”."
+          "gl": "Mateo xoga: “Where does the fox hide? Point!”. Logo: “Under the stones! Slither like a snake”. E: “It climbs? Crawl to the green mat!”. Despois amosa o pasaporte, “passport”.",
+          "es": "Mateo juega: “Where does the fox hide? Point!”. Luego: “Under the stones! Slither like a snake”. Y: “It climbs? Crawl to the green mat!”. Después enseña el pasaporte, “passport”."
         },
         "palabras": [
-          "Where does the fox hide? Point with your elbows",
+          "Where does the fox hide? Point!",
           "Under the stones! Slither like a snake",
-          "If it climbs the chestnut tree, crawl to the green mat",
+          "It climbs? Crawl to the green mat!",
           "passport"
         ],
         "vocabularioClave": [
-          "Onde se agocha o raposo? Sinala cos cóbados",
+          "Onde se agocha o raposo? Sinala!",
           "Debaixo das pedras! Arrástrate coma unha serpe",
-          "Se sobe ao castiñeiro, gatea ata a esterilla verde",
+          "Rube? Gatea á alfombra verde!",
           "pasaporte"
         ],
         "vocabularioClaveEs": [
-          "¿Dónde se esconde el zorro? Señala con los codos",
+          "¿Dónde se esconde el zorro? ¡Señala!",
           "¡Debajo de las piedras! Arrástrate como una serpiente",
-          "Si sube al castaño, gatea hasta la colchoneta verde",
+          "¿Trepa? ¡Gatea a la alfombra verde!",
           "pasaporte"
         ]
       }
@@ -73080,17 +73080,17 @@
         "lamina": "conto_primavera_2",
         "extra": true,
         "texto": {
-          "gl": "Amaro corre: “We have to hurry because the train is leaving in front of us.”",
-          "es": "Amaro corre: “We have to hurry because the train is leaving in front of us.”"
+          "gl": "Amaro corre: “Hurry, the train is leaving!”",
+          "es": "Amaro corre: “Hurry, the train is leaving!”"
         },
         "palabras": [
-          "We have to hurry because the train is leaving in front of us."
+          "Hurry, the train is leaving!"
         ],
         "vocabularioClave": [
-          "Temos que darnos présa porque o tren sae diante de nós."
+          "Présa, que o tren marcha!"
         ],
         "vocabularioClaveEs": [
-          "Tenemos que darnos prisa porque el tren sale delante de nosotros."
+          "¡Deprisa, que el tren se va!"
         ]
       }
     ],
@@ -74289,22 +74289,22 @@
         "lamina": "conto_benvida_2",
         "extra": true,
         "texto": {
-          "gl": "Despois do discurso, Olaia xoga: “Noa, walk five steps and take the white shell”. Logo: “If the shell is smooth, put it in the blue basket”. E: “Here you go. Thank you! Your turn”.",
-          "es": "Después del discurso, Olaia juega: “Noa, walk five steps and take the white shell”. Luego: “If the shell is smooth, put it in the blue basket”. Y: “Here you go. Thank you! Your turn”."
+          "gl": "Despois do discurso, Olaia xoga: “Walk five steps, take the shell”. Logo: “Smooth shell? Blue basket!”. E: “Here you go. Thank you! Your turn”.",
+          "es": "Después del discurso, Olaia juega: “Walk five steps, take the shell”. Luego: “Smooth shell? Blue basket!”. Y: “Here you go. Thank you! Your turn”."
         },
         "palabras": [
-          "Noa, walk five steps and take the white shell",
-          "If the shell is smooth, put it in the blue basket",
+          "Walk five steps, take the shell",
+          "Smooth shell? Blue basket!",
           "Here you go. Thank you! Your turn"
         ],
         "vocabularioClave": [
-          "Noa, dá cinco pasos e colle a cuncha branca",
-          "Se a cuncha é lisa, ponna no cesto azul",
+          "Dá cinco pasos, colle a cuncha",
+          "Cuncha lisa? Cesta azul!",
           "Aquí tes. Grazas! Tócache"
         ],
         "vocabularioClaveEs": [
-          "Noa, da cinco pasos y coge la concha blanca",
-          "Si la concha es lisa, ponla en la cesta azul",
+          "Da cinco pasos, coge la concha",
+          "¿Concha lisa? ¡Cesta azul!",
           "Toma. ¡Gracias! Te toca"
         ]
       }

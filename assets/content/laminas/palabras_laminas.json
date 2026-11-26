@@ -651,6 +651,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "arms up, left foot forward": {
+   "clave": "pal_arms_up_left_foot",
+   "orixe": "reutilizada",
+   "porque": "Versión curta de «Put your arms up and your left foot forward» para a idade (O-20261126-5): a mesma acción.",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_arms_up_left_foot.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "around the fire": {
    "clave": "pal_around_the_fire",
    "orixe": "composta",
@@ -1691,6 +1701,16 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "bell! run and freeze": {
+   "clave": "pal_bell_run_circle_freeze",
+   "orixe": "reutilizada",
+   "porque": "Versión curta de «The bell rings: run to the circle and freeze!» para a idade (O-20261126-5): a mesma acción.",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_bell_run_circle_freeze.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "belly": {
    "clave": "pal_belly",
    "orixe": "nova",
@@ -1908,6 +1928,16 @@
    "fuente": "propia",
    "asset": "tools/gen_laminas_tpr.py#big_school",
    "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "big seed? brown pot": {
+   "clave": "pal_big_seed_brown_pot",
+   "orixe": "reutilizada",
+   "porque": "Versión curta de «If the seed is big, put it in the brown pot» para a idade (O-20261126-5): a mesma acción.",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_big_seed_brown_pot.json",
+   "sha": "1973cc64",
    "licencia": "Propia",
    "revisado": true
   },
@@ -2858,6 +2888,16 @@
    "fuente": "propia",
    "asset": "tools/gen_laminas_3_4.py#boots",
    "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "boots on, because it rains": {
+   "clave": "pal_boots_because_raining",
+   "orixe": "reutilizada",
+   "porque": "Versión curta de «I put on my boots because it is raining.» para a idade (O-20261126-5): a mesma acción.",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_boots_because_raining.json",
+   "sha": "1973cc64",
    "licencia": "Propia",
    "revisado": true
   },
@@ -5192,6 +5232,16 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "clap with your friend": {
+   "clave": "pal_cross_your_hands_and_clap_with_your_friend",
+   "orixe": "reutilizada",
+   "porque": "Versión curta de «Cross your hands and clap with your friend» para a idade (O-20261126-5): a mesma acción.",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_cross_your_hands_and_clap_with_your_friend.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "clap your hands": {
    "clave": "pal_clap_your_hands",
    "orixe": "composta",
@@ -5409,6 +5459,16 @@
    "fuente": "propia",
    "asset": "tools/gen_laminas_tpr.py#climb_aboard",
    "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "climb and hide your nuts": {
+   "clave": "pal_climb_oak_hide_nuts",
+   "orixe": "reutilizada",
+   "porque": "Versión curta de «Climb the oak tree and hide your nuts» para a idade (O-20261126-5): a mesma acción.",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_climb_oak_hide_nuts.json",
+   "sha": "1973cc64",
    "licencia": "Propia",
    "revisado": true
   },
@@ -5688,6 +5748,26 @@
    "porque": "Frase do STEAM do mes representada pola lámina de «cold» (pal_cold).",
    "fuente": "propia",
    "asset": "assets/brand/laminas/pal_cold.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "cold night: curl up": {
+   "clave": "pal_cold_winter_night_curl",
+   "orixe": "reutilizada",
+   "porque": "Versión curta de «Cold winter night: curl up and do not move» para a idade (O-20261126-5): a mesma acción.",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_cold_winter_night_curl.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "cold water? walk to the blue mat": {
+   "clave": "pal_cold_water_blue_mat",
+   "orixe": "reutilizada",
+   "porque": "Versión curta de «If the water is cold, walk to the blue mat» para a idade (O-20261126-5): a mesma acción.",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_cold_water_blue_mat.json",
    "sha": "1973cc64",
    "licencia": "Propia",
    "revisado": true
@@ -7022,6 +7102,16 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "curl up like a seed": {
+   "clave": "pal_curl_up_small_like_a_tiny_seed",
+   "orixe": "reutilizada",
+   "porque": "Versión curta de «Curl up small like a tiny seed» para a idade (O-20261126-5): a mesma acción.",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_curl_up_small_like_a_tiny_seed.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "curl up on the sofa": {
    "clave": "pal_curl_up_on_the_sofa",
    "orixe": "composta",
@@ -7809,6 +7899,16 @@
    "fuente": "propia",
    "asset": "tools/gen_laminas_tpr.py#dive",
    "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "dive and find a shell": {
+   "clave": "pal_dive_white_shell",
+   "orixe": "reutilizada",
+   "porque": "Versión curta de «Dive deep and find a white shell» para a idade (O-20261126-5): a mesma acción.",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_dive_white_shell.json",
+   "sha": "1973cc64",
    "licencia": "Propia",
    "revisado": true
   },
@@ -9932,6 +10032,16 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "fill the pot and plant the seed": {
+   "clave": "pal_fill_pot_plant_seed",
+   "orixe": "reutilizada",
+   "porque": "Versión curta de «Fill the pot, plant the seed and water it» para a idade (O-20261126-5): a mesma acción.",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_fill_pot_plant_seed.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "fill the pot, plant the seed and water it": {
    "clave": "pal_fill_pot_plant_seed",
    "orixe": "composta",
@@ -10189,6 +10299,16 @@
    "fuente": "propia",
    "asset": "tools/gen_laminas_tpr.py#first_the_blocks_then_the_cars",
    "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "first the heart, then the bandage": {
+   "clave": "pal_first_heart_then_bandage",
+   "orixe": "reutilizada",
+   "porque": "Versión curta de «First we check the heart, then we wrap the bandage.» para a idade (O-20261126-5): a mesma acción.",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_first_heart_then_bandage.json",
+   "sha": "1973cc64",
    "licencia": "Propia",
    "revisado": true
   },
@@ -11542,6 +11662,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "gallop like a horse": {
+   "clave": "pal_gallop_like_a_horse_in_the_meadow",
+   "orixe": "reutilizada",
+   "porque": "Versión curta de «Gallop like a horse in the meadow» para a idade (O-20261126-5): a mesma acción.",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_gallop_like_a_horse_in_the_meadow.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "gallop like a horse in the meadow": {
    "clave": "pal_gallop_like_a_horse_in_the_meadow",
    "orixe": "composta",
@@ -11899,6 +12029,16 @@
    "fuente": "propia",
    "asset": "tools/gen_laminas_tpr.py#give_me_five",
    "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "give the smooth leaf to your friend": {
+   "clave": "pal_noa_slowly_leaf_friend",
+   "orixe": "reutilizada",
+   "porque": "Versión curta de «Noa, walk slowly and give the smooth leaf to your friend» para a idade (O-20261126-5): a mesma acción.",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_noa_slowly_leaf_friend.json",
+   "sha": "1973cc64",
    "licencia": "Propia",
    "revisado": true
   },
@@ -13052,6 +13192,16 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "hang up your coat on the hook": {
+   "clave": "pal_walk_hook_hang_coat",
+   "orixe": "reutilizada",
+   "porque": "Versión curta de «Walk to the hook and hang up your coat» para a idade (O-20261126-5): a mesma acción.",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_walk_hook_hang_coat.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "happy": {
    "clave": "pal_happy",
    "orixe": "composta",
@@ -13572,6 +13722,16 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "hedgehog! freeze and curl up": {
+   "clave": "pal_hedgehog_curl_small",
+   "orixe": "reutilizada",
+   "porque": "Versión curta de «The hedgehog wakes up: FREEZE and curl up small!» para a idade (O-20261126-5): a mesma acción.",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_hedgehog_curl_small.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "heel": {
    "clave": "pal_heel",
    "orixe": "nova",
@@ -13790,6 +13950,26 @@
    "asset": "tools/gen_laminas_5_6.py#give_light_next_pair",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "here you go: pass the light": {
+   "clave": "pal_give_light_next_pair",
+   "orixe": "reutilizada",
+   "porque": "Versión curta de «Here you go: give the light to the next pair» para a idade (O-20261126-5): a mesma acción.",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_give_light_next_pair.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "here you go: pass the soil": {
+   "clave": "pal_pass_soil_friend",
+   "orixe": "reutilizada",
+   "porque": "Versión curta de «Here you go: pass the soil to your friend» para a idade (O-20261126-5): a mesma acción.",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_pass_soil_friend.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
    "revisado": true
   },
   "here you go: pass the soil to your friend": {
@@ -14402,6 +14582,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "hop like a squirrel": {
+   "clave": "pal_hop_squirrel_chestnuts",
+   "orixe": "reutilizada",
+   "porque": "Versión curta de «Hop like a squirrel and collect the chestnuts» para a idade (O-20261126-5): a mesma acción.",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_hop_squirrel_chestnuts.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "hop like a squirrel and collect the chestnuts": {
    "clave": "pal_hop_squirrel_chestnuts",
    "orixe": "composta",
@@ -14759,6 +14949,16 @@
    "fuente": "propia",
    "asset": "tools/gen_laminas_tpr.py#hurry",
    "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "hurry, the train is leaving": {
+   "clave": "pal_hurry_train_leaving",
+   "orixe": "reutilizada",
+   "porque": "Versión curta de «We have to hurry because the train is leaving in front of us.» para a idade (O-20261126-5): a mesma acción.",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_hurry_train_leaving.json",
+   "sha": "1973cc64",
    "licencia": "Propia",
    "revisado": true
   },
@@ -15800,6 +16000,16 @@
    "asset": "tools/gen_laminas_3_4.py#it_can_t_be_warm",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "it climbs? crawl to the green mat": {
+   "clave": "pal_climbs_chestnut_green_mat",
+   "orixe": "reutilizada",
+   "porque": "Versión curta de «If it climbs the chestnut tree, crawl to the green mat» para a idade (O-20261126-5): a mesma acción.",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_climbs_chestnut_green_mat.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
    "revisado": true
   },
   "it could be empty": {
@@ -18823,6 +19033,16 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "mask on and roar": {
+   "clave": "pal_put_on_animal_mask_roar",
+   "orixe": "reutilizada",
+   "porque": "Versión curta de «Put on your animal mask and roar» para a idade (O-20261126-5): a mesma acción.",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_put_on_animal_mask_roar.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "masked": {
    "clave": "pal_masked",
    "orixe": "nova",
@@ -20973,6 +21193,16 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "open your bag and smile": {
+   "clave": "pal_open_bag_smock_smile",
+   "orixe": "reutilizada",
+   "porque": "Versión curta de «Open your bag, take out your smock and smile» para a idade (O-20261126-5): a mesma acción.",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_open_bag_smock_smile.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "open your bag, take out your smock and smile": {
    "clave": "pal_open_bag_smock_smile",
    "orixe": "composta",
@@ -23033,6 +23263,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "pop! jump like a chestnut": {
+   "clave": "pal_chestnut_pops_fire_jump",
+   "orixe": "reutilizada",
+   "porque": "Versión curta de «The chestnut pops in the fire: jump!» para a idade (O-20261126-5): a mesma acción.",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_chestnut_pops_fire_jump.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "pop, bubble": {
    "clave": "pal_02_pop_bubble",
    "orixe": "nova",
@@ -23683,6 +23923,16 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "put a rough leaf in the ring": {
+   "clave": "pal_rough_leaf_brown_ring",
+   "orixe": "reutilizada",
+   "porque": "Versión curta de «Take a rough leaf and put it in the brown ring» para a idade (O-20261126-5): a mesma acción.",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_rough_leaf_brown_ring.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "put arms in": {
    "clave": "pal_put_arms_in",
    "orixe": "nova",
@@ -24001,6 +24251,16 @@
    "asset": "tools/gen_laminas_tpr.py#quiet_corner",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "quiet like a fox": {
+   "clave": "pal_sneak_fox_woods",
+   "orixe": "reutilizada",
+   "porque": "Versión curta de «Sneak quietly like a fox in the woods» para a idade (O-20261126-5): a mesma acción.",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_sneak_fox_woods.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
    "revisado": true
   },
   "quiet time": {
@@ -24491,6 +24751,16 @@
    "asset": "tools/gen_laminas_escoita_2.py#ready",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "ready, steady, go: pass the tray": {
+   "clave": "pal_ready_steady_pass_tray",
+   "orixe": "reutilizada",
+   "porque": "Versión curta de «Ready, steady, go: pass the tray to your friend» para a idade (O-20261126-5): a mesma acción.",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_ready_steady_pass_tray.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
    "revisado": true
   },
   "ready, steady, go: pass the tray to your friend": {
@@ -25583,6 +25853,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "rough one here, smooth one there": {
+   "clave": "pal_rough_here_smooth_there",
+   "orixe": "reutilizada",
+   "porque": "Versión curta de «Put the rough one here and the smooth one there» para a idade (O-20261126-5): a mesma acción.",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_rough_here_smooth_there.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "round": {
    "clave": "pal_round",
    "orixe": "nova",
@@ -25703,6 +25983,16 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "row your boat": {
+   "clave": "pal_row_boat_waves",
+   "orixe": "reutilizada",
+   "porque": "Versión curta de «Row your boat through the big waves» para a idade (O-20261126-5): a mesma acción.",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_row_boat_waves.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "row your boat through the big waves": {
    "clave": "pal_row_boat_waves",
    "orixe": "composta",
@@ -25810,6 +26100,16 @@
    "fuente": "propia",
    "asset": "tools/gen_laminas_tpr.py#rub_your_hands",
    "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "rub your hands fast": {
+   "clave": "pal_warm_hands_rub_fast",
+   "orixe": "reutilizada",
+   "porque": "Versión curta de «Warm your hands and rub them fast» para a idade (O-20261126-5): a mesma acción.",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_warm_hands_rub_fast.json",
+   "sha": "1973cc64",
    "licencia": "Propia",
    "revisado": true
   },
@@ -28094,6 +28394,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "sleep in the flower": {
+   "clave": "pal_sleep_flower_sun_wakes",
+   "orixe": "reutilizada",
+   "porque": "Versión curta de «Sleep in the flower until the sun wakes up» para a idade (O-20261126-5): a mesma acción.",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_sleep_flower_sun_wakes.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "sleep in the flower until the sun wakes up": {
    "clave": "pal_sleep_flower_sun_wakes",
    "orixe": "composta",
@@ -28491,6 +28801,16 @@
    "fuente": "propia",
    "asset": "tools/gen_laminas_tpr.py#smooth_sand",
    "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "smooth shell? blue basket": {
+   "clave": "pal_smooth_shell_blue_basket",
+   "orixe": "reutilizada",
+   "porque": "Versión curta de «If the shell is smooth, put it in the blue basket» para a idade (O-20261126-5): a mesma acción.",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_smooth_shell_blue_basket.json",
+   "sha": "1973cc64",
    "licencia": "Propia",
    "revisado": true
   },
@@ -29451,6 +29771,16 @@
    "fuente": "propia",
    "asset": "tools/gen_laminas_tpr.py#spin",
    "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "spin and fall like a leaf": {
+   "clave": "pal_spin_around_fall_like_leaf",
+   "orixe": "reutilizada",
+   "porque": "Versión curta de «Spin around and fall down like a leaf» para a idade (O-20261126-5): a mesma acción.",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_spin_around_fall_like_leaf.json",
+   "sha": "1973cc64",
    "licencia": "Propia",
    "revisado": true
   },
@@ -30456,6 +30786,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "step slowly, don't spill the water": {
+   "clave": "pal_step_slowly_no_spill",
+   "orixe": "reutilizada",
+   "porque": "Versión curta de «Step slowly and don't spill the water into the river» para a idade (O-20261126-5): a mesma acción.",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_step_slowly_no_spill.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "step stool": {
    "clave": "pal_step_stool",
    "orixe": "nova",
@@ -30624,6 +30964,16 @@
    "asset": "tools/gen_laminas_2_3.py#stomp_around",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "stomp in the puddles": {
+   "clave": "pal_stomp_boots_puddles",
+   "orixe": "reutilizada",
+   "porque": "Versión curta de «Stomp your boots in the puddles!» para a idade (O-20261126-5): a mesma acción.",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_stomp_boots_puddles.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
    "revisado": true
   },
   "stomp in the snow": {
@@ -30813,6 +31163,26 @@
    "fuente": "propia",
    "asset": "tools/gen_laminas_tpr.py#storm",
    "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "storm! hide under the umbrella": {
+   "clave": "pal_storm_hide_umbrella",
+   "orixe": "reutilizada",
+   "porque": "Versión curta de «The storm is here: run and hide under the umbrella!» para a idade (O-20261126-5): a mesma acción.",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_storm_hide_umbrella.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "storm! shake the sea": {
+   "clave": "pal_storm_shake_sea",
+   "orixe": "reutilizada",
+   "porque": "Versión curta de «Storm! Shake the sea with all your strength» para a idade (O-20261126-5): a mesma acción.",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_storm_shake_sea.json",
+   "sha": "1973cc64",
    "licencia": "Propia",
    "revisado": true
   },
@@ -31286,6 +31656,16 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "sun! shake the water off": {
+   "clave": "pal_sun_back_shake_water",
+   "orixe": "reutilizada",
+   "porque": "Versión curta de «The sun comes back: shake the water off» para a idade (O-20261126-5): a mesma acción.",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_sun_back_shake_water.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "sun-dried": {
    "clave": "pal_sun_dried",
    "orixe": "composta",
@@ -31666,6 +32046,16 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "swim fast like a fish": {
+   "clave": "pal_swim_fast_fish",
+   "orixe": "reutilizada",
+   "porque": "Versión curta de «Swim like a fast fish in the ría» para a idade (O-20261126-5): a mesma acción.",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_swim_fast_fish.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "swim in a group": {
    "clave": "pal_swim_in_a_group",
    "orixe": "nova",
@@ -31714,6 +32104,16 @@
    "asset": "tools/gen_laminas_tpr.py#swim_like_a_fish",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "swim like a little fish": {
+   "clave": "pal_little_fish_under_sea",
+   "orixe": "reutilizada",
+   "porque": "Versión curta de «Little fish swimming under the sea!» para a idade (O-20261126-5): a mesma acción.",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_little_fish_under_sea.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
    "revisado": true
   },
   "swim underwater": {
@@ -32076,6 +32476,16 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "take the smock and give it to noa": {
+   "clave": "pal_take_smock_give_noa",
+   "orixe": "reutilizada",
+   "porque": "Versión curta de «Take the smock, turn around and give it to Noa» para a idade (O-20261126-5): a mesma acción.",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_take_smock_give_noa.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "take the smock, turn around and give it to noa": {
    "clave": "pal_take_smock_give_noa",
    "orixe": "composta",
@@ -32332,6 +32742,16 @@
    "porque": "Frase do STEAM do mes representada pola lámina de «tap» (pal_tap).",
    "fuente": "propia",
    "asset": "assets/brand/laminas/pal_tap.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "tap your knees like rain": {
+   "clave": "pal_tap_knees_like_rain",
+   "orixe": "reutilizada",
+   "porque": "Versión curta de «Tap your knees like rain falling fast» para a idade (O-20261126-5): a mesma acción.",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_tap_knees_like_rain.json",
    "sha": "1973cc64",
    "licencia": "Propia",
    "revisado": true
@@ -32826,6 +33246,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "the brush is between the cup and paper": {
+   "clave": "pal_brush_between_cup_paper",
+   "orixe": "reutilizada",
+   "porque": "Versión curta de «The brush is between the cup and the paper.» para a idade (O-20261126-5): a mesma acción.",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_brush_between_cup_paper.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "the brush is between the cup and the paper": {
    "clave": "pal_brush_between_cup_paper",
    "orixe": "composta",
@@ -33154,6 +33584,16 @@
    "asset": "tools/gen_laminas_tpr.py#the_robot_walks_slowly_but_the_hero_runs_fast",
    "sha": "81ad501f19cc13e548e4cb6a9c63a3873c87262a",
    "licencia": "Apache-2.0",
+   "revisado": true
+  },
+  "the sea sleeps: lie still": {
+   "clave": "pal_sea_sleeps_lie_still",
+   "orixe": "reutilizada",
+   "porque": "Versión curta de «The sea sleeps: put the cloth down and lie still» para a idade (O-20261126-5): a mesma acción.",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_sea_sleeps_lie_still.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
    "revisado": true
   },
   "the sea sleeps: put the cloth down and lie still": {
@@ -34276,6 +34716,16 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "tiny seeds, sleep": {
+   "clave": "pal_tiny_seeds_ground",
+   "orixe": "reutilizada",
+   "porque": "Versión curta de «We are tiny seeds under the ground» para a idade (O-20261126-5): a mesma acción.",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_tiny_seeds_ground.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "tiny shoe": {
    "clave": "pal_tiny_shoe",
    "orixe": "nova",
@@ -34344,6 +34794,16 @@
    "asset": "tools/gen_laminas_3_4.py#tiptoe",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "tiptoe and blow": {
+   "clave": "pal_tiptoe_quietly_blow_light",
+   "orixe": "reutilizada",
+   "porque": "Versión curta de «Tiptoe quietly to blow out the light» para a idade (O-20261126-5): a mesma acción.",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_tiptoe_quietly_blow_light.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
    "revisado": true
   },
   "tiptoe around": {
@@ -34672,6 +35132,16 @@
    "porque": "Frase do STEAM do mes representada pola lámina de «touch» (pal_touch).",
    "fuente": "propia",
    "asset": "assets/brand/laminas/pal_touch.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "touch the red circle": {
+   "clave": "pal_find_a_red_circle_touch_it_with_your_foot",
+   "orixe": "reutilizada",
+   "porque": "Versión curta de «Find a red circle! Touch it with your foot!» para a idade (O-20261126-5): a mesma acción.",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_find_a_red_circle_touch_it_with_your_foot.json",
    "sha": "1973cc64",
    "licencia": "Propia",
    "revisado": true
@@ -35476,6 +35946,16 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "two acorns in the basket": {
+   "clave": "pal_pick_up_two_acorns_basket",
+   "orixe": "reutilizada",
+   "porque": "Versión curta de «Pick up two acorns and put them in the basket» para a idade (O-20261126-5): a mesma acción.",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_pick_up_two_acorns_basket.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "two apples, please": {
    "clave": "pal_two_apples_please",
    "orixe": "composta",
@@ -36246,6 +36726,16 @@
    "licencia": "Propia",
    "revisado": true
   },
+  "walk calmly like a sheep": {
+   "clave": "pal_walk_calmly_sheep",
+   "orixe": "reutilizada",
+   "porque": "Versión curta de «Walk calmly like a sheep in the field» para a idade (O-20261126-5): a mesma acción.",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_walk_calmly_sheep.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "walk calmly like a sheep in the field": {
    "clave": "pal_walk_calmly_sheep",
    "orixe": "composta",
@@ -36283,6 +36773,16 @@
    "fuente": "propia",
    "asset": "tools/gen_laminas_tpr.py#walk_fingers",
    "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "walk five steps, take the shell": {
+   "clave": "pal_noa_5_steps_shell",
+   "orixe": "reutilizada",
+   "porque": "Versión curta de «Noa, walk five steps and take the white shell» para a idade (O-20261126-5): a mesma acción.",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_noa_5_steps_shell.json",
+   "sha": "1973cc64",
    "licencia": "Propia",
    "revisado": true
   },
@@ -36334,6 +36834,16 @@
    "asset": "tools/gen_laminas_tpr.py#walk_like_a_penguin",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "walk like a sleepy bear": {
+   "clave": "pal_walk_sleepy_bear_bag",
+   "orixe": "reutilizada",
+   "porque": "Versión curta de «Walk like a sleepy bear with your heavy bag» para a idade (O-20261126-5): a mesma acción.",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_walk_sleepy_bear_bag.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
    "revisado": true
   },
   "walk like a sleepy bear with your heavy bag": {
@@ -36424,6 +36934,16 @@
    "asset": "tools/gen_laminas_tpr.py#walk_to_school",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "walk to the circle": {
+   "clave": "pal_walk_to_the_circle_and_sit_down",
+   "orixe": "reutilizada",
+   "porque": "Versión curta de «Walk to the circle and sit down» para a idade (O-20261126-5): a mesma acción.",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_walk_to_the_circle_and_sit_down.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
    "revisado": true
   },
   "walk to the circle and sit down": {
@@ -37996,6 +38516,16 @@
    "licencia": "MIT",
    "revisado": true
   },
+  "where does the fox hide? point": {
+   "clave": "pal_fox_hide_point_elbows",
+   "orixe": "reutilizada",
+   "porque": "Versión curta de «Where does the fox hide? Point with your elbows» para a idade (O-20261126-5): a mesma acción.",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_fox_hide_point_elbows.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
+   "revisado": true
+  },
   "where does the fox hide? point with your elbows": {
    "clave": "pal_fox_hide_point_elbows",
    "orixe": "composta",
@@ -38264,6 +38794,16 @@
    "asset": "tools/gen_laminas_4_5.py#whose_turn",
    "sha": "1ffb34c752ecf5d402f04cfb4b392c77f57c54bc",
    "licencia": "MIT",
+   "revisado": true
+  },
+  "why a bandage? the cat is sick": {
+   "clave": "pal_why_bandage_cat_sick",
+   "orixe": "reutilizada",
+   "porque": "Versión curta de «Why are you putting the bandage? Because the cat is sick.» para a idade (O-20261126-5): a mesma acción.",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_why_bandage_cat_sick.json",
+   "sha": "1973cc64",
+   "licencia": "Propia",
    "revisado": true
   },
   "why are you putting the bandage? because the cat is sick": {
@@ -39073,6 +39613,16 @@
    "fuente": "propia",
    "asset": "tools/gen_laminas_tpr.py#yellow",
    "sha": "6be3d38b",
+   "licencia": "Propia",
+   "revisado": true
+  },
+  "yellow and blue make green": {
+   "clave": "pal_blending_yellow_blue_green",
+   "orixe": "reutilizada",
+   "porque": "Versión curta de «I am blending yellow and blue because I want to make green.» para a idade (O-20261126-5): a mesma acción.",
+   "fuente": "propia",
+   "asset": "assets/brand/laminas/pal_blending_yellow_blue_green.json",
+   "sha": "1973cc64",
    "licencia": "Propia",
    "revisado": true
   },

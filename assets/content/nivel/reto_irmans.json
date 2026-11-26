@@ -1158,9 +1158,9 @@
      "lamina": "pal_02_mama"
     },
     "palabraMaior": {
-     "en": "Find a red circle! Touch it with your foot!",
-     "gl": "Busca un círculo vermello! Tócao co pé!",
-     "es": "¡Busca un círculo rojo! ¡Tócalo con el pie!",
+     "en": "Touch the red circle!",
+     "gl": "Toca o círculo vermello!",
+     "es": "¡Toca el círculo rojo!",
      "lamina": "pal_find_a_red_circle_touch_it_with_your_foot"
     },
     "titulo": {
@@ -1168,13 +1168,13 @@
      "es": "Reto de hermanos · Semana 1 (0-2 años y 2-3 años)"
     },
     "instrucion": {
-     "gl": "Quen vai en 2-3 anos («Primeiro mollo, despois xabón») dille «Find a red circle! Touch it with your foot!» e «Mama» a quen vai en 0-2 anos («Burbullas que voan»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
-     "es": "Quien va en 2-3 años («Primero mojo, después jabón») dice «Find a red circle! Touch it with your foot!» y «Mama» a quien va en 0-2 años («Burbujas que vuelan»), haciendo el gesto juntos. La persona adulta marca a los dos."
+     "gl": "Quen vai en 2-3 anos («Primeiro mollo, despois xabón») dille «Touch the red circle!» e «Mama» a quen vai en 0-2 anos («Burbullas que voan»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
+     "es": "Quien va en 2-3 años («Primero mojo, después jabón») dice «Touch the red circle!» y «Mama» a quien va en 0-2 años («Burbujas que vuelan»), haciendo el gesto juntos. La persona adulta marca a los dos."
     },
-    "fraseEn": "Mama, and Find a red circle! Touch it with your foot!",
+    "fraseEn": "Mama, and Touch the red circle!",
     "fraseSignificado": {
-     "gl": "Mamá e Busca un círculo vermello! Tócao co pé.",
-     "es": "Mamá y ¡Busca un círculo rojo! ¡Tócalo con el pie."
+     "gl": "Mamá e Toca o círculo vermello.",
+     "es": "Mamá y ¡Toca el círculo rojo."
     }
    },
    {
@@ -1346,9 +1346,9 @@
      "lamina": "pal_ear"
     },
     "palabraMaior": {
-     "en": "We are tiny seeds under the ground",
-     "gl": "Somos sementes pequeniñas debaixo da terra",
-     "es": "Somos semillas pequeñitas bajo la tierra",
+     "en": "Tiny seeds, sleep!",
+     "gl": "Sementiñas, a durmir!",
+     "es": "¡Semillitas, a dormir!",
      "lamina": "pal_tiny_seeds_ground"
     },
     "titulo": {
@@ -1356,13 +1356,13 @@
      "es": "Reto de hermanos · Semana 1 (0-2 años y 2-3 años)"
     },
     "instrucion": {
-     "gl": "Quen vai en 2-3 anos («A toalla mollada pesa») dille «We are tiny seeds under the ground» e «Ear» a quen vai en 0-2 anos («Fregar fai son»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
-     "es": "Quien va en 2-3 años («La toalla mojada pesa») dice «We are tiny seeds under the ground» y «Ear» a quien va en 0-2 años («Frotar hace sonido»), haciendo el gesto juntos. La persona adulta marca a los dos."
+     "gl": "Quen vai en 2-3 anos («A toalla mollada pesa») dille «Tiny seeds, sleep!» e «Ear» a quen vai en 0-2 anos («Fregar fai son»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
+     "es": "Quien va en 2-3 años («La toalla mojada pesa») dice «Tiny seeds, sleep!» y «Ear» a quien va en 0-2 años («Frotar hace sonido»), haciendo el gesto juntos. La persona adulta marca a los dos."
     },
-    "fraseEn": "Ear, and We are tiny seeds under the ground!",
+    "fraseEn": "Ear, and Tiny seeds, sleep!",
     "fraseSignificado": {
-     "gl": "Orella e Somos sementes pequeniñas debaixo da terra.",
-     "es": "Oreja y Somos semillas pequeñitas bajo la tierra."
+     "gl": "Orella e Sementiñas, a durmir.",
+     "es": "Oreja y ¡Semillitas, a dormir."
     }
    },
    {
@@ -1769,9 +1769,9 @@
      "lamina": "pal_foot"
     },
     "palabraMaior": {
-     "en": "Little fish swimming under the sea!",
-     "gl": "Peixiños nadando baixo o mar!",
-     "es": "¡Pececitos nadando bajo el mar!",
+     "en": "Swim like a little fish!",
+     "gl": "Nada coma un peixiño!",
+     "es": "¡Nada como un pececito!",
      "lamina": "pal_little_fish_under_sea"
     },
     "titulo": {
@@ -1779,13 +1779,13 @@
      "es": "Reto de hermanos · Semana 2 (0-2 años y 2-3 años)"
     },
     "instrucion": {
-     "gl": "Quen vai en 2-3 anos («A caixa das estrelas») dille «Little fish swimming under the sea!» e «Foot» a quen vai en 0-2 anos («Rodar ou non rodar»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
-     "es": "Quien va en 2-3 años («La caja de las estrellas») dice «Little fish swimming under the sea!» y «Foot» a quien va en 0-2 años («Rodar o no rodar»), haciendo el gesto juntos. La persona adulta marca a los dos."
+     "gl": "Quen vai en 2-3 anos («A caixa das estrelas») dille «Swim like a little fish!» e «Foot» a quen vai en 0-2 anos («Rodar ou non rodar»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
+     "es": "Quien va en 2-3 años («La caja de las estrellas») dice «Swim like a little fish!» y «Foot» a quien va en 0-2 años («Rodar o no rodar»), haciendo el gesto juntos. La persona adulta marca a los dos."
     },
-    "fraseEn": "Foot, and Little fish swimming under the sea!",
+    "fraseEn": "Foot, and Swim like a little fish!",
     "fraseSignificado": {
-     "gl": "Pé e Peixiños nadando baixo o mar.",
-     "es": "Pie y ¡Pececitos nadando bajo el mar."
+     "gl": "Pé e Nada coma un peixiño.",
+     "es": "Pie y ¡Nada como un pececito."
     }
    },
    {
@@ -1863,9 +1863,9 @@
      "lamina": "vocab_45"
     },
     "palabraMaior": {
-     "en": "Little fish swimming under the sea!",
-     "gl": "Peixiños nadando baixo o mar!",
-     "es": "¡Pececitos nadando bajo el mar!",
+     "en": "Swim like a little fish!",
+     "gl": "Nada coma un peixiño!",
+     "es": "¡Nada como un pececito!",
      "lamina": "pal_little_fish_under_sea"
     },
     "titulo": {
@@ -1873,13 +1873,13 @@
      "es": "Reto de hermanos · Semana 4 (0-2 años y 2-3 años)"
     },
     "instrucion": {
-     "gl": "Quen vai en 2-3 anos («A caixa das estrelas») dille «Little fish swimming under the sea!» e «Ball» a quen vai en 0-2 anos («Rodar ou non rodar»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
-     "es": "Quien va en 2-3 años («La caja de las estrellas») dice «Little fish swimming under the sea!» y «Ball» a quien va en 0-2 años («Rodar o no rodar»), haciendo el gesto juntos. La persona adulta marca a los dos."
+     "gl": "Quen vai en 2-3 anos («A caixa das estrelas») dille «Swim like a little fish!» e «Ball» a quen vai en 0-2 anos («Rodar ou non rodar»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
+     "es": "Quien va en 2-3 años («La caja de las estrellas») dice «Swim like a little fish!» y «Ball» a quien va en 0-2 años («Rodar o no rodar»), haciendo el gesto juntos. La persona adulta marca a los dos."
     },
-    "fraseEn": "Ball, and Little fish swimming under the sea!",
+    "fraseEn": "Ball, and Swim like a little fish!",
     "fraseSignificado": {
-     "gl": "Pelota e Peixiños nadando baixo o mar.",
-     "es": "Pelota y ¡Pececitos nadando bajo el mar."
+     "gl": "Pelota e Nada coma un peixiño.",
+     "es": "Pelota y ¡Nada como un pececito."
     }
    }
   ],
@@ -2006,9 +2006,9 @@
      "lamina": "pal_friends_in_a_circle"
     },
     "palabraMaior": {
-     "en": "Walk to the circle and sit down",
-     "gl": "Camiña ata o círculo e senta",
-     "es": "Camina hasta el círculo y siéntate",
+     "en": "Walk to the circle!",
+     "gl": "Camiña ao círculo!",
+     "es": "¡Camina al círculo!",
      "lamina": "pal_walk_to_the_circle_and_sit_down"
     },
     "titulo": {
@@ -2016,13 +2016,13 @@
      "es": "Reto de hermanos · Semana 3 (2-3 años y 3-4 años)"
     },
     "instrucion": {
-     "gl": "Quen vai en 3-4 anos («Que torre aguanta?») dille «Walk to the circle and sit down» e «Friends in a circle» a quen vai en 2-3 anos («Flota ou afúndese?»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
-     "es": "Quien va en 3-4 años («¿Qué torre aguanta?») dice «Walk to the circle and sit down» y «Friends in a circle» a quien va en 2-3 años («¿Flota o se hunde?»), haciendo el gesto juntos. La persona adulta marca a los dos."
+     "gl": "Quen vai en 3-4 anos («Que torre aguanta?») dille «Walk to the circle!» e «Friends in a circle» a quen vai en 2-3 anos («Flota ou afúndese?»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
+     "es": "Quien va en 3-4 años («¿Qué torre aguanta?») dice «Walk to the circle!» y «Friends in a circle» a quien va en 2-3 años («¿Flota o se hunde?»), haciendo el gesto juntos. La persona adulta marca a los dos."
     },
-    "fraseEn": "Friends in a circle, and Walk to the circle and sit down!",
+    "fraseEn": "Friends in a circle, and Walk to the circle!",
     "fraseSignificado": {
-     "gl": "Amigos en círculo e Camiña ata o círculo e senta.",
-     "es": "Amigos en círculo y Camina hasta el círculo y siéntate."
+     "gl": "Amigos en círculo e Camiña ao círculo.",
+     "es": "Amigos en círculo y ¡Camina al círculo."
     }
    },
    {
@@ -2194,9 +2194,9 @@
      "lamina": "pal_dance_and_freeze"
     },
     "palabraMaior": {
-     "en": "Spin around and fall down like a leaf",
-     "gl": "Dá voltas e cae coma unha folla",
-     "es": "Da vueltas y cae como una hoja",
+     "en": "Spin and fall like a leaf",
+     "gl": "Xira e cae coma unha folla",
+     "es": "Gira y cae como una hoja",
      "lamina": "pal_spin_around_fall_like_leaf"
     },
     "titulo": {
@@ -2204,13 +2204,13 @@
      "es": "Reto de hermanos · Semana 3 (2-3 años y 3-4 años)"
     },
     "instrucion": {
-     "gl": "Quen vai en 3-4 anos («Vermello, azul, vermello…») dille «Spin around and fall down like a leaf» e «Dance and freeze» a quen vai en 2-3 anos («O vento empurra o barco»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
-     "es": "Quien va en 3-4 años («Rojo, azul, rojo…») dice «Spin around and fall down like a leaf» y «Dance and freeze» a quien va en 2-3 años («El viento empuja el barco»), haciendo el gesto juntos. La persona adulta marca a los dos."
+     "gl": "Quen vai en 3-4 anos («Vermello, azul, vermello…») dille «Spin and fall like a leaf» e «Dance and freeze» a quen vai en 2-3 anos («O vento empurra o barco»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
+     "es": "Quien va en 3-4 años («Rojo, azul, rojo…») dice «Spin and fall like a leaf» y «Dance and freeze» a quien va en 2-3 años («El viento empuja el barco»), haciendo el gesto juntos. La persona adulta marca a los dos."
     },
-    "fraseEn": "Dance and freeze, and Spin around and fall down like a leaf!",
+    "fraseEn": "Dance and freeze, and Spin and fall like a leaf!",
     "fraseSignificado": {
-     "gl": "Baila e conxélate e Dá voltas e cae coma unha folla.",
-     "es": "Baila y congélate y Da vueltas y cae como una hoja."
+     "gl": "Baila e conxélate e Xira e cae coma unha folla.",
+     "es": "Baila y congélate y Gira y cae como una hoja."
     }
    },
    {
@@ -3034,9 +3034,9 @@
      }
     },
     "palabraMenor": {
-     "en": "Find a red circle! Touch it with your foot!",
-     "gl": "Busca un círculo vermello! Tócao co pé!",
-     "es": "¡Busca un círculo rojo! ¡Tócalo con el pie!",
+     "en": "Touch the red circle!",
+     "gl": "Toca o círculo vermello!",
+     "es": "¡Toca el círculo rojo!",
      "lamina": "pal_find_a_red_circle_touch_it_with_your_foot"
     },
     "palabraMaior": {
@@ -3050,13 +3050,13 @@
      "es": "Reto de hermanos · Semana 1 (2-3 años y 3-4 años)"
     },
     "instrucion": {
-     "gl": "Quen vai en 3-4 anos («Un prato para cada un») dille «Seed» e «Find a red circle! Touch it with your foot!» a quen vai en 2-3 anos («Primeiro mollo, despois xabón»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
-     "es": "Quien va en 3-4 años («Un plato para cada uno») dice «Seed» y «Find a red circle! Touch it with your foot!» a quien va en 2-3 años («Primero mojo, después jabón»), haciendo el gesto juntos. La persona adulta marca a los dos."
+     "gl": "Quen vai en 3-4 anos («Un prato para cada un») dille «Seed» e «Touch the red circle!» a quen vai en 2-3 anos («Primeiro mollo, despois xabón»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
+     "es": "Quien va en 3-4 años («Un plato para cada uno») dice «Seed» y «Touch the red circle!» a quien va en 2-3 años («Primero mojo, después jabón»), haciendo el gesto juntos. La persona adulta marca a los dos."
     },
-    "fraseEn": "Find a red circle! Touch it with your foot, and Seed!",
+    "fraseEn": "Touch the red circle, and Seed!",
     "fraseSignificado": {
-     "gl": "Busca un círculo vermello! Tócao co pé e Semente.",
-     "es": "¡Busca un círculo rojo! ¡Tócalo con el pie y Semilla."
+     "gl": "Toca o círculo vermello e Semente.",
+     "es": "¡Toca el círculo rojo y Semilla."
     }
    },
    {
@@ -3222,9 +3222,9 @@
      }
     },
     "palabraMenor": {
-     "en": "We are tiny seeds under the ground",
-     "gl": "Somos sementes pequeniñas debaixo da terra",
-     "es": "Somos semillas pequeñitas bajo la tierra",
+     "en": "Tiny seeds, sleep!",
+     "gl": "Sementiñas, a durmir!",
+     "es": "¡Semillitas, a dormir!",
      "lamina": "pal_tiny_seeds_ground"
     },
     "palabraMaior": {
@@ -3238,13 +3238,13 @@
      "es": "Reto de hermanos · Semana 1 (2-3 años y 3-4 años)"
     },
     "instrucion": {
-     "gl": "Quen vai en 3-4 anos («Verter amodo») dille «Horse» e «We are tiny seeds under the ground» a quen vai en 2-3 anos («A toalla mollada pesa»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
-     "es": "Quien va en 3-4 años («Verter despacio») dice «Horse» y «We are tiny seeds under the ground» a quien va en 2-3 años («La toalla mojada pesa»), haciendo el gesto juntos. La persona adulta marca a los dos."
+     "gl": "Quen vai en 3-4 anos («Verter amodo») dille «Horse» e «Tiny seeds, sleep!» a quen vai en 2-3 anos («A toalla mollada pesa»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
+     "es": "Quien va en 3-4 años («Verter despacio») dice «Horse» y «Tiny seeds, sleep!» a quien va en 2-3 años («La toalla mojada pesa»), haciendo el gesto juntos. La persona adulta marca a los dos."
     },
-    "fraseEn": "We are tiny seeds under the ground, and Horse!",
+    "fraseEn": "Tiny seeds, sleep, and Horse!",
     "fraseSignificado": {
-     "gl": "Somos sementes pequeniñas debaixo da terra e Cabalo.",
-     "es": "Somos semillas pequeñitas bajo la tierra y Caballo."
+     "gl": "Sementiñas, a durmir e Cabalo.",
+     "es": "¡Semillitas, a dormir y Caballo."
     }
    },
    {
@@ -3645,9 +3645,9 @@
      }
     },
     "palabraMenor": {
-     "en": "Little fish swimming under the sea!",
-     "gl": "Peixiños nadando baixo o mar!",
-     "es": "¡Pececitos nadando bajo el mar!",
+     "en": "Swim like a little fish!",
+     "gl": "Nada coma un peixiño!",
+     "es": "¡Nada como un pececito!",
      "lamina": "pal_little_fish_under_sea"
     },
     "palabraMaior": {
@@ -3661,13 +3661,13 @@
      "es": "Reto de hermanos · Semana 2 (2-3 años y 3-4 años)"
     },
     "instrucion": {
-     "gl": "Quen vai en 3-4 anos («A cara na culler») dille «Shell» e «Little fish swimming under the sea!» a quen vai en 2-3 anos («A caixa das estrelas»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
-     "es": "Quien va en 3-4 años («La cara en la cuchara») dice «Shell» y «Little fish swimming under the sea!» a quien va en 2-3 años («La caja de las estrellas»), haciendo el gesto juntos. La persona adulta marca a los dos."
+     "gl": "Quen vai en 3-4 anos («A cara na culler») dille «Shell» e «Swim like a little fish!» a quen vai en 2-3 anos («A caixa das estrelas»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
+     "es": "Quien va en 3-4 años («La cara en la cuchara») dice «Shell» y «Swim like a little fish!» a quien va en 2-3 años («La caja de las estrellas»), haciendo el gesto juntos. La persona adulta marca a los dos."
     },
-    "fraseEn": "Little fish swimming under the sea, and Shell!",
+    "fraseEn": "Swim like a little fish, and Shell!",
     "fraseSignificado": {
-     "gl": "Peixiños nadando baixo o mar e Cuncha.",
-     "es": "¡Pececitos nadando bajo el mar y Concha."
+     "gl": "Nada coma un peixiño e Cuncha.",
+     "es": "¡Nada como un pececito y Concha."
     }
    },
    {
@@ -3698,9 +3698,9 @@
      "lamina": "pal_wave_goodbye"
     },
     "palabraMaior": {
-     "en": "Swim like a fast fish in the ría",
-     "gl": "Nada coma un peixe rápido na ría",
-     "es": "Nada como un pez rápido en la ría",
+     "en": "Swim fast like a fish",
+     "gl": "Nada rápido coma un peixe",
+     "es": "Nada rápido como un pez",
      "lamina": "pal_swim_fast_fish"
     },
     "titulo": {
@@ -3708,13 +3708,13 @@
      "es": "Reto de hermanos · Semana 3 (2-3 años y 3-4 años)"
     },
     "instrucion": {
-     "gl": "Quen vai en 3-4 anos («A cara na culler») dille «Swim like a fast fish in the ría» e «Wave goodbye» a quen vai en 2-3 anos («A caixa das estrelas»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
-     "es": "Quien va en 3-4 años («La cara en la cuchara») dice «Swim like a fast fish in the ría» y «Wave goodbye» a quien va en 2-3 años («La caja de las estrellas»), haciendo el gesto juntos. La persona adulta marca a los dos."
+     "gl": "Quen vai en 3-4 anos («A cara na culler») dille «Swim fast like a fish» e «Wave goodbye» a quen vai en 2-3 anos («A caixa das estrelas»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
+     "es": "Quien va en 3-4 años («La cara en la cuchara») dice «Swim fast like a fish» y «Wave goodbye» a quien va en 2-3 años («La caja de las estrellas»), haciendo el gesto juntos. La persona adulta marca a los dos."
     },
-    "fraseEn": "Wave goodbye, and Swim like a fast fish in the ría!",
+    "fraseEn": "Wave goodbye, and Swim fast like a fish!",
     "fraseSignificado": {
-     "gl": "Acenar para despedirse e Nada coma un peixe rápido na ría.",
-     "es": "Decir adiós con la mano y Nada como un pez rápido en la ría."
+     "gl": "Acenar para despedirse e Nada rápido coma un peixe.",
+     "es": "Decir adiós con la mano y Nada rápido como un pez."
     }
    },
    {
@@ -3739,9 +3739,9 @@
      }
     },
     "palabraMenor": {
-     "en": "Little fish swimming under the sea!",
-     "gl": "Peixiños nadando baixo o mar!",
-     "es": "¡Pececitos nadando bajo el mar!",
+     "en": "Swim like a little fish!",
+     "gl": "Nada coma un peixiño!",
+     "es": "¡Nada como un pececito!",
      "lamina": "pal_little_fish_under_sea"
     },
     "palabraMaior": {
@@ -3755,13 +3755,13 @@
      "es": "Reto de hermanos · Semana 4 (2-3 años y 3-4 años)"
     },
     "instrucion": {
-     "gl": "Quen vai en 3-4 anos («A cara na culler») dille «Goodbye» e «Little fish swimming under the sea!» a quen vai en 2-3 anos («A caixa das estrelas»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
-     "es": "Quien va en 3-4 años («La cara en la cuchara») dice «Goodbye» y «Little fish swimming under the sea!» a quien va en 2-3 años («La caja de las estrellas»), haciendo el gesto juntos. La persona adulta marca a los dos."
+     "gl": "Quen vai en 3-4 anos («A cara na culler») dille «Goodbye» e «Swim like a little fish!» a quen vai en 2-3 anos («A caixa das estrelas»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
+     "es": "Quien va en 3-4 años («La cara en la cuchara») dice «Goodbye» y «Swim like a little fish!» a quien va en 2-3 años («La caja de las estrellas»), haciendo el gesto juntos. La persona adulta marca a los dos."
     },
-    "fraseEn": "Little fish swimming under the sea, and Goodbye!",
+    "fraseEn": "Swim like a little fish, and Goodbye!",
     "fraseSignificado": {
-     "gl": "Peixiños nadando baixo o mar e Adeus.",
-     "es": "¡Pececitos nadando bajo el mar y Adiós."
+     "gl": "Nada coma un peixiño e Adeus.",
+     "es": "¡Nada como un pececito y Adiós."
     }
    }
   ],
@@ -3882,15 +3882,15 @@
      }
     },
     "palabraMenor": {
-     "en": "Walk to the circle and sit down",
-     "gl": "Camiña ata o círculo e senta",
-     "es": "Camina hasta el círculo y siéntate",
+     "en": "Walk to the circle!",
+     "gl": "Camiña ao círculo!",
+     "es": "¡Camina al círculo!",
      "lamina": "pal_walk_to_the_circle_and_sit_down"
     },
     "palabraMaior": {
-     "en": "Walk like a sleepy bear with your heavy bag",
-     "gl": "Camiña coma un oso durmido coa mochila pesada",
-     "es": "Camina como un oso dormido con la mochila pesada",
+     "en": "Walk like a sleepy bear",
+     "gl": "Camiña coma un oso con sono",
+     "es": "Camina como un oso con sueño",
      "lamina": "pal_walk_sleepy_bear_bag"
     },
     "titulo": {
@@ -3898,13 +3898,13 @@
      "es": "Reto de hermanos · Semana 3 (3-4 años y 4-5 años)"
     },
     "instrucion": {
-     "gl": "Quen vai en 4-5 anos («Que venda absorbe?») dille «Walk like a sleepy bear with your heavy bag» e «Walk to the circle and sit down» a quen vai en 3-4 anos («Que torre aguanta?»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
-     "es": "Quien va en 4-5 años («¿Qué venda absorbe?») dice «Walk like a sleepy bear with your heavy bag» y «Walk to the circle and sit down» a quien va en 3-4 años («¿Qué torre aguanta?»), haciendo el gesto juntos. La persona adulta marca a los dos."
+     "gl": "Quen vai en 4-5 anos («Que venda absorbe?») dille «Walk like a sleepy bear» e «Walk to the circle!» a quen vai en 3-4 anos («Que torre aguanta?»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
+     "es": "Quien va en 4-5 años («¿Qué venda absorbe?») dice «Walk like a sleepy bear» y «Walk to the circle!» a quien va en 3-4 años («¿Qué torre aguanta?»), haciendo el gesto juntos. La persona adulta marca a los dos."
     },
-    "fraseEn": "Walk to the circle and sit down, and Walk like a sleepy bear with your heavy bag!",
+    "fraseEn": "Walk to the circle, and Walk like a sleepy bear!",
     "fraseSignificado": {
-     "gl": "Camiña ata o círculo e senta e Camiña coma un oso durmido coa mochila pesada.",
-     "es": "Camina hasta el círculo y siéntate y Camina como un oso dormido con la mochila pesada."
+     "gl": "Camiña ao círculo e Camiña coma un oso con sono.",
+     "es": "¡Camina al círculo y Camina como un oso con sueño."
     }
    },
    {
@@ -4070,15 +4070,15 @@
      }
     },
     "palabraMenor": {
-     "en": "Spin around and fall down like a leaf",
-     "gl": "Dá voltas e cae coma unha folla",
-     "es": "Da vueltas y cae como una hoja",
+     "en": "Spin and fall like a leaf",
+     "gl": "Xira e cae coma unha folla",
+     "es": "Gira y cae como una hoja",
      "lamina": "pal_spin_around_fall_like_leaf"
     },
     "palabraMaior": {
-     "en": "Hop like a squirrel and collect the chestnuts",
-     "gl": "Brinca coma un esquío e recolle as castañas",
-     "es": "Brinca como una ardilla y recoge las castañas",
+     "en": "Hop like a squirrel",
+     "gl": "Brinca coma un esquío",
+     "es": "Brinca como una ardilla",
      "lamina": "pal_hop_squirrel_chestnuts"
     },
     "titulo": {
@@ -4086,13 +4086,13 @@
      "es": "Reto de hermanos · Semana 3 (3-4 años y 4-5 años)"
     },
     "instrucion": {
-     "gl": "Quen vai en 4-5 anos («Escoitar o corazón») dille «Hop like a squirrel and collect the chestnuts» e «Spin around and fall down like a leaf» a quen vai en 3-4 anos («Vermello, azul, vermello…»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
-     "es": "Quien va en 4-5 años («Escuchar el corazón») dice «Hop like a squirrel and collect the chestnuts» y «Spin around and fall down like a leaf» a quien va en 3-4 años («Rojo, azul, rojo…»), haciendo el gesto juntos. La persona adulta marca a los dos."
+     "gl": "Quen vai en 4-5 anos («Escoitar o corazón») dille «Hop like a squirrel» e «Spin and fall like a leaf» a quen vai en 3-4 anos («Vermello, azul, vermello…»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
+     "es": "Quien va en 4-5 años («Escuchar el corazón») dice «Hop like a squirrel» y «Spin and fall like a leaf» a quien va en 3-4 años («Rojo, azul, rojo…»), haciendo el gesto juntos. La persona adulta marca a los dos."
     },
-    "fraseEn": "Spin around and fall down like a leaf, and Hop like a squirrel and collect the chestnuts!",
+    "fraseEn": "Spin and fall like a leaf, and Hop like a squirrel!",
     "fraseSignificado": {
-     "gl": "Dá voltas e cae coma unha folla e Brinca coma un esquío e recolle as castañas.",
-     "es": "Da vueltas y cae como una hoja y Brinca como una ardilla y recoge las castañas."
+     "gl": "Xira e cae coma unha folla e Brinca coma un esquío.",
+     "es": "Gira y cae como una hoja y Brinca como una ardilla."
     }
    },
    {
@@ -5110,23 +5110,23 @@
      "lamina": "pal_pal_horse"
     },
     "palabraMaior": {
-     "en": "hat",
-     "gl": "sombreiro",
-     "es": "sombrero",
-     "lamina": "pal_hat"
+     "en": "Come under my umbrella",
+     "gl": "Ven debaixo do meu paraugas",
+     "es": "Ven debajo de mi paraguas",
+     "lamina": "pal_come_under_umbrella"
     },
     "titulo": {
      "gl": "Reto de irmáns · Semana 1 (3-4 anos e 4-5 anos)",
      "es": "Reto de hermanos · Semana 1 (3-4 años y 4-5 años)"
     },
     "instrucion": {
-     "gl": "Quen vai en 4-5 anos («A orquestra da tormenta») dille «hat» e «Horse» a quen vai en 3-4 anos («Verter amodo»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
-     "es": "Quien va en 4-5 años («La orquesta de la tormenta») dice «hat» y «Horse» a quien va en 3-4 años («Verter despacio»), haciendo el gesto juntos. La persona adulta marca a los dos."
+     "gl": "Quen vai en 4-5 anos («A orquestra da tormenta») dille «Come under my umbrella» e «Horse» a quen vai en 3-4 anos («Verter amodo»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
+     "es": "Quien va en 4-5 años («La orquesta de la tormenta») dice «Come under my umbrella» y «Horse» a quien va en 3-4 años («Verter despacio»), haciendo el gesto juntos. La persona adulta marca a los dos."
     },
-    "fraseEn": "Horse, and hat!",
+    "fraseEn": "Horse, and Come under my umbrella!",
     "fraseSignificado": {
-     "gl": "Cabalo e sombreiro.",
-     "es": "Caballo y sombrero."
+     "gl": "Cabalo e Ven debaixo do meu paraugas.",
+     "es": "Caballo y Ven debajo de mi paraguas."
     }
    },
    {
@@ -5204,9 +5204,9 @@
      "lamina": "pal_walk_heavily_like_a_big_cow"
     },
     "palabraMaior": {
-     "en": "Walk calmly like a sheep in the field",
-     "gl": "Camiña tranquilo coma unha ovella no campo",
-     "es": "Camina tranquilo como una oveja en el campo",
+     "en": "Walk calmly like a sheep",
+     "gl": "Camiña tranquilo coma unha ovella",
+     "es": "Camina tranquilo como una oveja",
      "lamina": "pal_walk_calmly_sheep"
     },
     "titulo": {
@@ -5214,13 +5214,13 @@
      "es": "Reto de hermanos · Semana 3 (3-4 años y 4-5 años)"
     },
     "instrucion": {
-     "gl": "Quen vai en 4-5 anos («A orquestra da tormenta») dille «Walk calmly like a sheep in the field» e «Walk heavily like a big cow» a quen vai en 3-4 anos («Verter amodo»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
-     "es": "Quien va en 4-5 años («La orquesta de la tormenta») dice «Walk calmly like a sheep in the field» y «Walk heavily like a big cow» a quien va en 3-4 años («Verter despacio»), haciendo el gesto juntos. La persona adulta marca a los dos."
+     "gl": "Quen vai en 4-5 anos («A orquestra da tormenta») dille «Walk calmly like a sheep» e «Walk heavily like a big cow» a quen vai en 3-4 anos («Verter amodo»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
+     "es": "Quien va en 4-5 años («La orquesta de la tormenta») dice «Walk calmly like a sheep» y «Walk heavily like a big cow» a quien va en 3-4 años («Verter despacio»), haciendo el gesto juntos. La persona adulta marca a los dos."
     },
-    "fraseEn": "Walk heavily like a big cow, and Walk calmly like a sheep in the field!",
+    "fraseEn": "Walk heavily like a big cow, and Walk calmly like a sheep!",
     "fraseSignificado": {
-     "gl": "Camiña pesado coma unha vaca grande e Camiña tranquilo coma unha ovella no campo.",
-     "es": "Camina pesado como una vaca grande y Camina tranquilo como una oveja en el campo."
+     "gl": "Camiña pesado coma unha vaca grande e Camiña tranquilo coma unha ovella.",
+     "es": "Camina pesado como una vaca grande y Camina tranquilo como una oveja."
     }
    },
    {
@@ -5574,9 +5574,9 @@
      }
     },
     "palabraMenor": {
-     "en": "Swim like a fast fish in the ría",
-     "gl": "Nada coma un peixe rápido na ría",
-     "es": "Nada como un pez rápido en la ría",
+     "en": "Swim fast like a fish",
+     "gl": "Nada rápido coma un peixe",
+     "es": "Nada rápido como un pez",
      "lamina": "pal_swim_fast_fish"
     },
     "palabraMaior": {
@@ -5590,13 +5590,13 @@
      "es": "Reto de hermanos · Semana 3 (3-4 años y 4-5 años)"
     },
     "instrucion": {
-     "gl": "Quen vai en 4-5 anos («Que roupa pide o tempo?») dille «Calm sea: move the cloth very slowly» e «Swim like a fast fish in the ría» a quen vai en 3-4 anos («A cara na culler»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
-     "es": "Quien va en 4-5 años («¿Qué ropa pide el tiempo?») dice «Calm sea: move the cloth very slowly» y «Swim like a fast fish in the ría» a quien va en 3-4 años («La cara en la cuchara»), haciendo el gesto juntos. La persona adulta marca a los dos."
+     "gl": "Quen vai en 4-5 anos («Que roupa pide o tempo?») dille «Calm sea: move the cloth very slowly» e «Swim fast like a fish» a quen vai en 3-4 anos («A cara na culler»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
+     "es": "Quien va en 4-5 años («¿Qué ropa pide el tiempo?») dice «Calm sea: move the cloth very slowly» y «Swim fast like a fish» a quien va en 3-4 años («La cara en la cuchara»), haciendo el gesto juntos. La persona adulta marca a los dos."
     },
-    "fraseEn": "Swim like a fast fish in the ría, and Calm sea: move the cloth very slowly!",
+    "fraseEn": "Swim fast like a fish, and Calm sea: move the cloth very slowly!",
     "fraseSignificado": {
-     "gl": "Nada coma un peixe rápido na ría e Mar en calma: move o pano moi amodo.",
-     "es": "Nada como un pez rápido en la ría y Mar en calma: mueve la tela muy despacio."
+     "gl": "Nada rápido coma un peixe e Mar en calma: move o pano moi amodo.",
+     "es": "Nada rápido como un pez y Mar en calma: mueve la tela muy despacio."
     }
    },
    {
@@ -5764,15 +5764,15 @@
      }
     },
     "palabraMenor": {
-     "en": "Walk like a sleepy bear with your heavy bag",
-     "gl": "Camiña coma un oso durmido coa mochila pesada",
-     "es": "Camina como un oso dormido con la mochila pesada",
+     "en": "Walk like a sleepy bear",
+     "gl": "Camiña coma un oso con sono",
+     "es": "Camina como un oso con sueño",
      "lamina": "pal_walk_sleepy_bear_bag"
     },
     "palabraMaior": {
-     "en": "Walk to the hook and hang up your coat",
-     "gl": "Camiña ata o colgadoiro e colga o abrigo",
-     "es": "Camina hasta el perchero y cuelga el abrigo",
+     "en": "Hang up your coat on the hook",
+     "gl": "Colga o abrigo no colgador",
+     "es": "Cuelga el abrigo en el perchero",
      "lamina": "pal_walk_hook_hang_coat"
     },
     "titulo": {
@@ -5780,13 +5780,13 @@
      "es": "Reto de hermanos · Semana 3 (4-5 años y 5-6 años)"
     },
     "instrucion": {
-     "gl": "Quen vai en 5-6 anos («Cores que nacen») dille «Walk to the hook and hang up your coat» e «Walk like a sleepy bear with your heavy bag» a quen vai en 4-5 anos («Que venda absorbe?»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
-     "es": "Quien va en 5-6 años («Colores que nacen») dice «Walk to the hook and hang up your coat» y «Walk like a sleepy bear with your heavy bag» a quien va en 4-5 años («¿Qué venda absorbe?»), haciendo el gesto juntos. La persona adulta marca a los dos."
+     "gl": "Quen vai en 5-6 anos («Cores que nacen») dille «Hang up your coat on the hook» e «Walk like a sleepy bear» a quen vai en 4-5 anos («Que venda absorbe?»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
+     "es": "Quien va en 5-6 años («Colores que nacen») dice «Hang up your coat on the hook» y «Walk like a sleepy bear» a quien va en 4-5 años («¿Qué venda absorbe?»), haciendo el gesto juntos. La persona adulta marca a los dos."
     },
-    "fraseEn": "Walk like a sleepy bear with your heavy bag, and Walk to the hook and hang up your coat!",
+    "fraseEn": "Walk like a sleepy bear, and Hang up your coat on the hook!",
     "fraseSignificado": {
-     "gl": "Camiña coma un oso durmido coa mochila pesada e Camiña ata o colgadoiro e colga o abrigo.",
-     "es": "Camina como un oso dormido con la mochila pesada y Camina hasta el perchero y cuelga el abrigo."
+     "gl": "Camiña coma un oso con sono e Colga o abrigo no colgador.",
+     "es": "Camina como un oso con sueño y Cuelga el abrigo en el perchero."
     }
    },
    {
@@ -5952,15 +5952,15 @@
      }
     },
     "palabraMenor": {
-     "en": "Hop like a squirrel and collect the chestnuts",
-     "gl": "Brinca coma un esquío e recolle as castañas",
-     "es": "Brinca como una ardilla y recoge las castañas",
+     "en": "Hop like a squirrel",
+     "gl": "Brinca coma un esquío",
+     "es": "Brinca como una ardilla",
      "lamina": "pal_hop_squirrel_chestnuts"
     },
     "palabraMaior": {
-     "en": "Take a rough leaf and put it in the brown ring",
-     "gl": "Colle unha folla áspera e ponna no aro marrón",
-     "es": "Coge una hoja áspera y ponla en el aro marrón",
+     "en": "Put a rough leaf in the ring",
+     "gl": "Pon unha folla áspera no aro",
+     "es": "Pon una hoja áspera en el aro",
      "lamina": "pal_rough_leaf_brown_ring"
     },
     "titulo": {
@@ -5968,13 +5968,13 @@
      "es": "Reto de hermanos · Semana 3 (4-5 años y 5-6 años)"
     },
     "instrucion": {
-     "gl": "Quen vai en 5-6 anos («O mundo de cores») dille «Take a rough leaf and put it in the brown ring» e «Hop like a squirrel and collect the chestnuts» a quen vai en 4-5 anos («Escoitar o corazón»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
-     "es": "Quien va en 5-6 años («El mundo de colores») dice «Take a rough leaf and put it in the brown ring» y «Hop like a squirrel and collect the chestnuts» a quien va en 4-5 años («Escuchar el corazón»), haciendo el gesto juntos. La persona adulta marca a los dos."
+     "gl": "Quen vai en 5-6 anos («O mundo de cores») dille «Put a rough leaf in the ring» e «Hop like a squirrel» a quen vai en 4-5 anos («Escoitar o corazón»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
+     "es": "Quien va en 5-6 años («El mundo de colores») dice «Put a rough leaf in the ring» y «Hop like a squirrel» a quien va en 4-5 años («Escuchar el corazón»), haciendo el gesto juntos. La persona adulta marca a los dos."
     },
-    "fraseEn": "Hop like a squirrel and collect the chestnuts, and Take a rough leaf and put it in the brown ring!",
+    "fraseEn": "Hop like a squirrel, and Put a rough leaf in the ring!",
     "fraseSignificado": {
-     "gl": "Brinca coma un esquío e recolle as castañas e Colle unha folla áspera e ponna no aro marrón.",
-     "es": "Brinca como una ardilla y recoge las castañas y Coge una hoja áspera y ponla en el aro marrón."
+     "gl": "Brinca coma un esquío e Pon unha folla áspera no aro.",
+     "es": "Brinca como una ardilla y Pon una hoja áspera en el aro."
     }
    },
    {
@@ -6381,9 +6381,9 @@
      "lamina": "pal_thank_you_so_much"
     },
     "palabraMaior": {
-     "en": "I am blending yellow and blue because I want to make green.",
-     "gl": "Estou mesturando amarelo e azul porque quero facer verde.",
-     "es": "Estoy mezclando amarillo y azul porque quiero hacer verde.",
+     "en": "Yellow and blue make green!",
+     "gl": "Amarelo e azul fan verde!",
+     "es": "¡Amarillo y azul hacen verde!",
      "lamina": "pal_blending_yellow_blue_green"
     },
     "titulo": {
@@ -6391,13 +6391,13 @@
      "es": "Reto de hermanos · Semana 4 (4-5 años y 5-6 años)"
     },
     "instrucion": {
-     "gl": "Quen vai en 5-6 anos («O círculo que xira») dille «I am blending yellow and blue because I want to make green.» e «Thank you so much!» a quen vai en 4-5 anos («Coa lupa, máis grande»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
-     "es": "Quien va en 5-6 años («El círculo que gira») dice «I am blending yellow and blue because I want to make green.» y «Thank you so much!» a quien va en 4-5 años («Con la lupa, más grande»), haciendo el gesto juntos. La persona adulta marca a los dos."
+     "gl": "Quen vai en 5-6 anos («O círculo que xira») dille «Yellow and blue make green!» e «Thank you so much!» a quen vai en 4-5 anos («Coa lupa, máis grande»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
+     "es": "Quien va en 5-6 años («El círculo que gira») dice «Yellow and blue make green!» y «Thank you so much!» a quien va en 4-5 años («Con la lupa, más grande»), haciendo el gesto juntos. La persona adulta marca a los dos."
     },
-    "fraseEn": "Thank you so much, and I am blending yellow and blue because I want to make green!",
+    "fraseEn": "Thank you so much, and Yellow and blue make green!",
     "fraseSignificado": {
-     "gl": "Moitísimas grazas e Estou mesturando amarelo e azul porque quero facer verde.",
-     "es": "¡Muchísimas gracias y Estoy mezclando amarillo y azul porque quiero hacer verde."
+     "gl": "Moitísimas grazas e Amarelo e azul fan verde.",
+     "es": "¡Muchísimas gracias y ¡Amarillo y azul hacen verde."
     }
    },
    {
@@ -6522,9 +6522,9 @@
      "lamina": "pal_walk_together_cloud"
     },
     "palabraMaior": {
-     "en": "Step slowly and don't spill the water into the river",
-     "gl": "Pisa amodo e non deixes caer a auga no río",
-     "es": "Pisa despacio y no derrames el agua en el río",
+     "en": "Step slowly, don't spill the water",
+     "gl": "Pisa amodo, non verques a auga",
+     "es": "Pisa despacio, no derrames el agua",
      "lamina": "pal_step_slowly_no_spill"
     },
     "titulo": {
@@ -6532,13 +6532,13 @@
      "es": "Reto de hermanos · Semana 3 (4-5 años y 5-6 años)"
     },
     "instrucion": {
-     "gl": "Quen vai en 5-6 anos («Cantos sons ten o papel?») dille «Step slowly and don't spill the water into the river» e «Walk together like one big cloud» a quen vai en 4-5 anos («A padiola»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
-     "es": "Quien va en 5-6 años («¿Cuántos sonidos tiene el papel?») dice «Step slowly and don't spill the water into the river» y «Walk together like one big cloud» a quien va en 4-5 años («La camilla»), haciendo el gesto juntos. La persona adulta marca a los dos."
+     "gl": "Quen vai en 5-6 anos («Cantos sons ten o papel?») dille «Step slowly, don't spill the water» e «Walk together like one big cloud» a quen vai en 4-5 anos («A padiola»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
+     "es": "Quien va en 5-6 años («¿Cuántos sonidos tiene el papel?») dice «Step slowly, don't spill the water» y «Walk together like one big cloud» a quien va en 4-5 años («La camilla»), haciendo el gesto juntos. La persona adulta marca a los dos."
     },
-    "fraseEn": "Walk together like one big cloud, and Step slowly and don't spill the water into the river!",
+    "fraseEn": "Walk together like one big cloud, and Step slowly, don't spill the water!",
     "fraseSignificado": {
-     "gl": "Camiñade xuntos coma unha nube grande e Pisa amodo e non deixes caer a auga no río.",
-     "es": "Caminad juntos como una nube grande y Pisa despacio y no derrames el agua en el río."
+     "gl": "Camiñade xuntos coma unha nube grande e Pisa amodo, non verques a auga.",
+     "es": "Caminad juntos como una nube grande y Pisa despacio, no derrames el agua."
     }
    },
    {
@@ -6710,9 +6710,9 @@
      "lamina": "pal_gallop_wild_horse"
     },
     "palabraMaior": {
-     "en": "Put your arms up and your left foot forward",
-     "gl": "Brazos arriba e o pé esquerdo adiante",
-     "es": "Brazos arriba y el pie izquierdo adelante",
+     "en": "Arms up, left foot forward",
+     "gl": "Brazos arriba, pé esquerdo diante",
+     "es": "Brazos arriba, pie izquierdo delante",
      "lamina": "pal_arms_up_left_foot"
     },
     "titulo": {
@@ -6720,13 +6720,13 @@
      "es": "Reto de hermanos · Semana 3 (4-5 años y 5-6 años)"
     },
     "instrucion": {
-     "gl": "Quen vai en 5-6 anos («Avións de papel») dille «Put your arms up and your left foot forward» e «Gallop like a wild horse» a quen vai en 4-5 anos («Facemos lama»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
-     "es": "Quien va en 5-6 años («Aviones de papel») dice «Put your arms up and your left foot forward» y «Gallop like a wild horse» a quien va en 4-5 años («Hacemos barro»), haciendo el gesto juntos. La persona adulta marca a los dos."
+     "gl": "Quen vai en 5-6 anos («Avións de papel») dille «Arms up, left foot forward» e «Gallop like a wild horse» a quen vai en 4-5 anos («Facemos lama»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
+     "es": "Quien va en 5-6 años («Aviones de papel») dice «Arms up, left foot forward» y «Gallop like a wild horse» a quien va en 4-5 años («Hacemos barro»), haciendo el gesto juntos. La persona adulta marca a los dos."
     },
-    "fraseEn": "Gallop like a wild horse, and Put your arms up and your left foot forward!",
+    "fraseEn": "Gallop like a wild horse, and Arms up, left foot forward!",
     "fraseSignificado": {
-     "gl": "Galopa coma un cabalo salvaxe e Brazos arriba e o pé esquerdo adiante.",
-     "es": "Galopa como un caballo salvaje y Brazos arriba y el pie izquierdo adelante."
+     "gl": "Galopa coma un cabalo salvaxe e Brazos arriba, pé esquerdo diante.",
+     "es": "Galopa como un caballo salvaje y Brazos arriba, pie izquierdo delante."
     }
    },
    {
@@ -6898,9 +6898,9 @@
      "lamina": "pal_fly_busy_bee"
     },
     "palabraMaior": {
-     "en": "Fill the pot, plant the seed and water it",
-     "gl": "Enche o testo, planta a semente e rega",
-     "es": "Llena la maceta, planta la semilla y riégala",
+     "en": "Fill the pot and plant the seed",
+     "gl": "Enche o testo e planta a semente",
+     "es": "Llena la maceta y planta la semilla",
      "lamina": "pal_fill_pot_plant_seed"
     },
     "titulo": {
@@ -6908,13 +6908,13 @@
      "es": "Reto de hermanos · Semana 3 (4-5 años y 5-6 años)"
     },
     "instrucion": {
-     "gl": "Quen vai en 5-6 anos («O mapa do tesouro») dille «Fill the pot, plant the seed and water it» e «Fly like a busy bee» a quen vai en 4-5 anos («O muíño de vento»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
-     "es": "Quien va en 5-6 años («El mapa del tesoro») dice «Fill the pot, plant the seed and water it» y «Fly like a busy bee» a quien va en 4-5 años («El molinillo de viento»), haciendo el gesto juntos. La persona adulta marca a los dos."
+     "gl": "Quen vai en 5-6 anos («O mapa do tesouro») dille «Fill the pot and plant the seed» e «Fly like a busy bee» a quen vai en 4-5 anos («O muíño de vento»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
+     "es": "Quien va en 5-6 años («El mapa del tesoro») dice «Fill the pot and plant the seed» y «Fly like a busy bee» a quien va en 4-5 años («El molinillo de viento»), haciendo el gesto juntos. La persona adulta marca a los dos."
     },
-    "fraseEn": "Fly like a busy bee, and Fill the pot, plant the seed and water it!",
+    "fraseEn": "Fly like a busy bee, and Fill the pot and plant the seed!",
     "fraseSignificado": {
-     "gl": "Voa coma unha abella traballadora e Enche o testo, planta a semente e rega.",
-     "es": "Vuela como una abeja trabajadora y Llena la maceta, planta la semilla y riégala."
+     "gl": "Voa coma unha abella traballadora e Enche o testo e planta a semente.",
+     "es": "Vuela como una abeja trabajadora y Llena la maceta y planta la semilla."
     }
    },
    {
@@ -6986,10 +6986,10 @@
      }
     },
     "palabraMenor": {
-     "en": "hat",
-     "gl": "sombreiro",
-     "es": "sombrero",
-     "lamina": "pal_hat"
+     "en": "Come under my umbrella",
+     "gl": "Ven debaixo do meu paraugas",
+     "es": "Ven debajo de mi paraguas",
+     "lamina": "pal_come_under_umbrella"
     },
     "palabraMaior": {
      "en": "Snake",
@@ -7002,13 +7002,13 @@
      "es": "Reto de hermanos · Semana 1 (4-5 años y 5-6 años)"
     },
     "instrucion": {
-     "gl": "Quen vai en 5-6 anos («A maleta que pesa») dille «Snake» e «hat» a quen vai en 4-5 anos («A orquestra da tormenta»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
-     "es": "Quien va en 5-6 años («La maleta que pesa») dice «Snake» y «hat» a quien va en 4-5 años («La orquesta de la tormenta»), haciendo el gesto juntos. La persona adulta marca a los dos."
+     "gl": "Quen vai en 5-6 anos («A maleta que pesa») dille «Snake» e «Come under my umbrella» a quen vai en 4-5 anos («A orquestra da tormenta»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
+     "es": "Quien va en 5-6 años («La maleta que pesa») dice «Snake» y «Come under my umbrella» a quien va en 4-5 años («La orquesta de la tormenta»), haciendo el gesto juntos. La persona adulta marca a los dos."
     },
-    "fraseEn": "hat, and Snake!",
+    "fraseEn": "Come under my umbrella, and Snake!",
     "fraseSignificado": {
-     "gl": "sombreiro e Serpe.",
-     "es": "sombrero y Serpiente."
+     "gl": "Ven debaixo do meu paraugas e Serpe.",
+     "es": "Ven debajo de mi paraguas y Serpiente."
     }
    },
    {
@@ -7080,15 +7080,15 @@
      }
     },
     "palabraMenor": {
-     "en": "Walk calmly like a sheep in the field",
-     "gl": "Camiña tranquilo coma unha ovella no campo",
-     "es": "Camina tranquilo como una oveja en el campo",
+     "en": "Walk calmly like a sheep",
+     "gl": "Camiña tranquilo coma unha ovella",
+     "es": "Camina tranquilo como una oveja",
      "lamina": "pal_walk_calmly_sheep"
     },
     "palabraMaior": {
-     "en": "Where does the fox hide? Point with your elbows",
-     "gl": "Onde se agocha o raposo? Sinala cos cóbados",
-     "es": "¿Dónde se esconde el zorro? Señala con los codos",
+     "en": "Where does the fox hide? Point!",
+     "gl": "Onde se agocha o raposo? Sinala!",
+     "es": "¿Dónde se esconde el zorro? ¡Señala!",
      "lamina": "pal_fox_hide_point_elbows"
     },
     "titulo": {
@@ -7096,13 +7096,13 @@
      "es": "Reto de hermanos · Semana 3 (4-5 años y 5-6 años)"
     },
     "instrucion": {
-     "gl": "Quen vai en 5-6 anos («A maleta que pesa») dille «Where does the fox hide? Point with your elbows» e «Walk calmly like a sheep in the field» a quen vai en 4-5 anos («A orquestra da tormenta»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
-     "es": "Quien va en 5-6 años («La maleta que pesa») dice «Where does the fox hide? Point with your elbows» y «Walk calmly like a sheep in the field» a quien va en 4-5 años («La orquesta de la tormenta»), haciendo el gesto juntos. La persona adulta marca a los dos."
+     "gl": "Quen vai en 5-6 anos («A maleta que pesa») dille «Where does the fox hide? Point!» e «Walk calmly like a sheep» a quen vai en 4-5 anos («A orquestra da tormenta»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
+     "es": "Quien va en 5-6 años («La maleta que pesa») dice «Where does the fox hide? Point!» y «Walk calmly like a sheep» a quien va en 4-5 años («La orquesta de la tormenta»), haciendo el gesto juntos. La persona adulta marca a los dos."
     },
-    "fraseEn": "Walk calmly like a sheep in the field, and Where does the fox hide? Point with your elbows!",
+    "fraseEn": "Walk calmly like a sheep, and Where does the fox hide? Point!",
     "fraseSignificado": {
-     "gl": "Camiña tranquilo coma unha ovella no campo e Onde se agocha o raposo? Sinala cos cóbados.",
-     "es": "Camina tranquilo como una oveja en el campo y ¿Dónde se esconde el zorro? Señala con los codos."
+     "gl": "Camiña tranquilo coma unha ovella e Onde se agocha o raposo? Sinala.",
+     "es": "Camina tranquilo como una oveja y ¿Dónde se esconde el zorro? ¡Señala."
     }
    },
    {
@@ -7321,9 +7321,9 @@
      "lamina": "pal_all_together"
     },
     "palabraMaior": {
-     "en": "We have to hurry because the train is leaving in front of us.",
-     "gl": "Temos que darnos présa porque o tren sae diante de nós.",
-     "es": "Tenemos que darnos prisa porque el tren sale delante de nosotros.",
+     "en": "Hurry, the train is leaving!",
+     "gl": "Présa, que o tren marcha!",
+     "es": "¡Deprisa, que el tren se va!",
      "lamina": "pal_hurry_train_leaving"
     },
     "titulo": {
@@ -7331,13 +7331,13 @@
      "es": "Reto de hermanos · Semana 4 (4-5 años y 5-6 años)"
     },
     "instrucion": {
-     "gl": "Quen vai en 5-6 anos («Mensaxes de luz») dille «We have to hurry because the train is leaving in front of us.» e «All together» a quen vai en 4-5 anos («A sombra e o sol»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
-     "es": "Quien va en 5-6 años («Mensajes de luz») dice «We have to hurry because the train is leaving in front of us.» y «All together» a quien va en 4-5 años («La sombra y el sol»), haciendo el gesto juntos. La persona adulta marca a los dos."
+     "gl": "Quen vai en 5-6 anos («Mensaxes de luz») dille «Hurry, the train is leaving!» e «All together» a quen vai en 4-5 anos («A sombra e o sol»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
+     "es": "Quien va en 5-6 años («Mensajes de luz») dice «Hurry, the train is leaving!» y «All together» a quien va en 4-5 años («La sombra y el sol»), haciendo el gesto juntos. La persona adulta marca a los dos."
     },
-    "fraseEn": "All together, and We have to hurry because the train is leaving in front of us!",
+    "fraseEn": "All together, and Hurry, the train is leaving!",
     "fraseSignificado": {
-     "gl": "Todos xuntos e Temos que darnos présa porque o tren sae diante de nós.",
-     "es": "Todos juntos y Tenemos que darnos prisa porque el tren sale delante de nosotros."
+     "gl": "Todos xuntos e Présa, que o tren marcha.",
+     "es": "Todos juntos y ¡Deprisa, que el tren se va."
     }
    },
    {
@@ -7462,9 +7462,9 @@
      "lamina": "pal_calm_sea_cloth"
     },
     "palabraMaior": {
-     "en": "Noa, walk five steps and take the white shell",
-     "gl": "Noa, dá cinco pasos e colle a cuncha branca",
-     "es": "Noa, da cinco pasos y coge la concha blanca",
+     "en": "Walk five steps, take the shell",
+     "gl": "Dá cinco pasos, colle a cuncha",
+     "es": "Da cinco pasos, coge la concha",
      "lamina": "pal_noa_5_steps_shell"
     },
     "titulo": {
@@ -7472,13 +7472,13 @@
      "es": "Reto de hermanos · Semana 3 (4-5 años y 5-6 años)"
     },
     "instrucion": {
-     "gl": "Quen vai en 5-6 anos («A frauta do tren») dille «Noa, walk five steps and take the white shell» e «Calm sea: move the cloth very slowly» a quen vai en 4-5 anos («Que roupa pide o tempo?»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
-     "es": "Quien va en 5-6 años («La flauta del tren») dice «Noa, walk five steps and take the white shell» y «Calm sea: move the cloth very slowly» a quien va en 4-5 años («¿Qué ropa pide el tiempo?»), haciendo el gesto juntos. La persona adulta marca a los dos."
+     "gl": "Quen vai en 5-6 anos («A frauta do tren») dille «Walk five steps, take the shell» e «Calm sea: move the cloth very slowly» a quen vai en 4-5 anos («Que roupa pide o tempo?»), facendo o xesto xuntos. A persoa adulta marca aos dous.",
+     "es": "Quien va en 5-6 años («La flauta del tren») dice «Walk five steps, take the shell» y «Calm sea: move the cloth very slowly» a quien va en 4-5 años («¿Qué ropa pide el tiempo?»), haciendo el gesto juntos. La persona adulta marca a los dos."
     },
-    "fraseEn": "Calm sea: move the cloth very slowly, and Noa, walk five steps and take the white shell!",
+    "fraseEn": "Calm sea: move the cloth very slowly, and Walk five steps, take the shell!",
     "fraseSignificado": {
-     "gl": "Mar en calma: move o pano moi amodo e Noa, dá cinco pasos e colle a cuncha branca.",
-     "es": "Mar en calma: mueve la tela muy despacio y Noa, da cinco pasos y coge la concha blanca."
+     "gl": "Mar en calma: move o pano moi amodo e Dá cinco pasos, colle a cuncha.",
+     "es": "Mar en calma: mueve la tela muy despacio y Da cinco pasos, coge la concha."
     }
    },
    {

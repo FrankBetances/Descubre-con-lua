@@ -216,26 +216,40 @@ def valida(en: str) -> bool:
     return 0 < elementos(en) <= 3 and not TO_BE.search(en)
 
 
+def _peza_capa(p: dict) -> dict:
+    return {k: p[k] for k in ("en", "gl", "es", "lamina", "xesto") if k in p}
+
+
 def _capas_semana(st_gl: str, st_es: str, s_num: int, nova_items: list[dict], todas_sem: list[dict]) -> dict:
-    n_en = ", ".join(p["en"] for p in nova_items) if nova_items else todas_sem[0]["en"]
-    t_en = ", ".join(p["en"] for p in todas_sem)
-    foco_gl = nova_items[0]["gl"].lower() if nova_items else todas_sem[0]["gl"].lower()
-    foco_es = nova_items[0]["es"].lower() if nova_items else todas_sem[0]["es"].lower()
+    """O-20261126-5 (punto 5): cada capa trae SUS piezas, con lámina, voz y
+    significado. Núcleo: las nuevas de la semana. «Máis»: las otras palabras
+    del proyecto de esa semana, para quien ya mira y busca las nuevas.
+    «Apoio»: una sola pieza, la primera nueva, con su objeto."""
+    nucleo = nova_items or todas_sem[:2]
+    mais = [p for p in todas_sem if p not in nucleo][:3] or todas_sem[:2]
+    apoio = nucleo[:1]
+    def lista(xs, gl=True):
+        nomes = [f"«{x['en']}»" for x in xs]
+        y = " e " if gl else " y "
+        return nomes[0] if len(nomes) == 1 else ", ".join(nomes[:-1]) + y + nomes[-1]
     return {
         "nucleo": {
-            "gl": f"Semana {s_num} · «{st_gl}»: nomea só {n_en} mentres o toca coas mans.",
-            "es": f"Semana {s_num} · «{st_es}»: nombra solo {n_en} mientras lo toca con las manos.",
-            "en": n_en,
+            "gl": f"«{st_gl}», semana {s_num}: nomea {lista(nucleo)} mentres o toca coas mans.",
+            "es": f"«{st_es}», semana {s_num}: nombra {lista(nucleo, False)} mientras lo toca con las manos.",
+            "en": ", ".join(x["en"] for x in nucleo),
+            "pezas": [_peza_capa(x) for x in nucleo],
         },
         "mais": {
-            "gl": f"Semana {s_num} · «{st_gl}»: combina {t_en} alternando {foco_gl} e xesto.",
-            "es": f"Semana {s_num} · «{st_es}»: combina {t_en} alternando {foco_es} y gesto.",
-            "en": t_en,
+            "gl": f"«{st_gl}», semana {s_num}, se xa mira e busca as novas: engade {lista(mais)}, unha a unha e co seu xesto.",
+            "es": f"«{st_es}», semana {s_num}, si ya mira y busca las nuevas: añade {lista(mais, False)}, una a una y con su gesto.",
+            "en": ", ".join(x["en"] for x in mais),
+            "pezas": [_peza_capa(x) for x in mais],
         },
         "apoio": {
-            "gl": f"Semana {s_num} · «{st_gl}»: repite devagar «{nova_items[0]['en'] if nova_items else todas_sem[0]['en']}» cun único obxecto e sen présa.",
-            "es": f"Semana {s_num} · «{st_es}»: repite despacio «{nova_items[0]['en'] if nova_items else todas_sem[0]['en']}» con un único objeto y sin prisa.",
-            "en": nova_items[0]["en"] if nova_items else todas_sem[0]["en"],
+            "gl": f"«{st_gl}», semana {s_num}, con calma: só {lista(apoio)}, co obxecto na man, e agarda a que o mire.",
+            "es": f"«{st_es}», semana {s_num}, con calma: solo {lista(apoio, False)}, con el objeto en la mano, y espera a que lo mire.",
+            "en": apoio[0]["en"],
+            "pezas": [_peza_capa(x) for x in apoio],
         },
     }
 

@@ -17,6 +17,23 @@ from pathlib import Path
 RAIZ = Path(__file__).resolve().parent.parent
 C = RAIZ / "assets" / "content"
 CAPAS = ("nucleo", "mais", "apoio")
+
+# O-20261126-5 (punto 5): las capas traen SUS piezas, no una frase de plantilla.
+PLANTILLA = ("amplía xuntando", "amplía juntando", "apoio devagar cunha soa peza",
+             "apoyo despacio con una sola pieza", "combina ", "repite devagar", "repite despacio")
+
+
+def pezas_da_capa(onde: str, c_key: str, c_obj: dict, fallos: list) -> None:
+    for marca in PLANTILLA:
+        if marca in c_obj.get("gl", "") or marca in c_obj.get("es", ""):
+            fallos.append(f"{onde} capa {c_key}: texto de plantilla («{marca.strip()}»)")
+    pz = c_obj.get("pezas") or []
+    if c_key in ("mais", "apoio") and not pz:
+        fallos.append(f"{onde} capa {c_key}: sen pezas propias")
+    for x in pz:
+        if not (x.get("en") and x.get("gl") and x.get("es") and x.get("lamina")):
+            fallos.append(f"{onde} capa {c_key}: peza «{x.get('en')}» sen significado ou lámina")
+
 RUTINAS = ("bano", "comida", "coche", "vestirse", "durmir", "parque")
 PARELLAS = (
     "curso_0_2__curso_2_3",
@@ -53,6 +70,7 @@ def revisar() -> list[str]:
                         fallos.append(f"{lid} capa {c_key}: falta gl/es/en")
                     elif (st_gl and st_gl not in gl) or (st_es and st_es not in es):
                         fallos.append(f"{lid} capa {c_key}: non nomea o STEAM «{st_es}»")
+                    pezas_da_capa(lid, c_key, c_obj, fallos)
                     ruts = c_obj.get("rutinas") or {}
                     for r_key in RUTINAS:
                         r_obj = ruts.get(r_key) or {}
@@ -89,6 +107,7 @@ def revisar() -> list[str]:
                     fallos.append(f"0-2 mes {mes} sem {snum} capa {c_key}: incompleta")
                 elif (st_gl and st_gl not in c_obj["gl"]) or (st_es and st_es not in c_obj["es"]):
                     fallos.append(f"0-2 mes {mes} sem {snum} capa {c_key}: sen STEAM")
+                pezas_da_capa(f"0-2 mes {mes} sem {snum}", c_key, c_obj, fallos)
             ruts = sem.get("rutinas") or {}
             for r_key in RUTINAS:
                 r_obj = ruts.get(r_key) or {}

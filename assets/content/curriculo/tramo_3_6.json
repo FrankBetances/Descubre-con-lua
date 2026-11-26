@@ -624,14 +624,14 @@
       ],
       "estructuras": [
         {
-          "en": "Why are you putting the bandage? Because the cat is sick.",
-          "gl": "Por que lle pos a venda? Porque o gato está malo.",
-          "es": "¿Por qué le pones la venda? Porque el gato está malito."
+          "en": "Why a bandage? The cat is sick.",
+          "gl": "Por que unha venda? O gato está malo.",
+          "es": "¿Por qué una venda? El gato está malito."
         },
         {
-          "en": "First we check the heart, then we wrap the bandage.",
-          "gl": "Primeiro miramos o corazón e despois poñemos a venda.",
-          "es": "Primero miramos el corazón y después ponemos la venda."
+          "en": "First the heart, then the bandage.",
+          "gl": "Primeiro o corazón, despois a venda.",
+          "es": "Primero el corazón, luego la venda."
         }
       ],
       "concienciaFonoloxica": {
@@ -1100,14 +1100,14 @@
       ],
       "estructuras": [
         {
-          "en": "I am blending yellow and blue because I want to make green.",
-          "gl": "Estou mesturando amarelo e azul porque quero facer verde.",
-          "es": "Estoy mezclando amarillo y azul porque quiero hacer verde."
+          "en": "Yellow and blue make green!",
+          "gl": "Amarelo e azul fan verde!",
+          "es": "¡Amarillo y azul hacen verde!"
         },
         {
-          "en": "The brush is between the cup and the paper.",
-          "gl": "O pincel está entre a cunca e o papel.",
-          "es": "El pincel está entre la taza y el papel."
+          "en": "The brush is between the cup and paper.",
+          "gl": "O pincel está entre o vaso e o papel.",
+          "es": "El pincel está entre el vaso y el papel."
         }
       ],
       "concienciaFonoloxica": {
@@ -1345,9 +1345,9 @@
       ],
       "estructuras": [
         {
-          "en": "We have to hurry because the train is leaving in front of us.",
-          "gl": "Temos que darnos présa porque o tren sae diante de nós.",
-          "es": "Tenemos que darnos prisa porque el tren sale delante de nosotros."
+          "en": "Hurry, the train is leaving!",
+          "gl": "Présa, que o tren marcha!",
+          "es": "¡Deprisa, que el tren se va!"
         }
       ],
       "concienciaFonoloxica": {

@@ -629,3 +629,19 @@ Reparto: lo hace Antigravity dentro de P11.0–P11.11; Claude Code revisa.
 
 - [x] Corrección final con el alta de una sola vez y M1-M5 guardada en el repositorio y en main · evidencia: docs/PROMPTS_ANTIGRAVITY.md (sección «P11 · Corrección final») y tools/check_prompt_vigente.py
 - [ ] M1 marcar en diez segundos, M2 rutinas de casa, M3 reto de hermanos, M4 cuántas veces la ha oído y M5 tarjeta para la escuela, en la app en gl y es, cada una con su test y su captura · evidencia:
+
+## O-20261126-5 · Claude Code termina P11 y lo mergea en main
+Estado: abierta
+> Haz tú lo que falta y mergea en main
+Fuente: rama antigravity/niveles (52397432) y la revisión de Claude Code del 26/11/2026 (cupo sin aplicar, capas de plantilla, vocabulario de 2-6 sin recalibrar, umbral de vueltas, 3 tests rojos, P11.10 y P11.11)
+Reparto: Claude Code, en claude/intelligent-mayer-e3iriy sobre antigravity/niveles.
+> (26/11/2026) Vamos a ver, yo quiero que hagas ahora lo más pesado, el cinco y el seis, Cuando termines de la más pesado, vas a parar y volvemos a empezar con el trabajo con anti Gravity
+Decisión: Claude Code hace solo el 5 (capas «Más» y «Apoyo» escritas) y el 6 (vocabulario de 2-3 a 5-6 por edad) y para; lo demás vuelve a Antigravity.
+
+- [ ] Los tests que fallaban (significados_test, ux_l6_test gl y es) en verde sin saltar ninguno · evidencia:
+- [ ] El cupo de cada niño cambia el número de palabras nuevas que ve en Hoxe; test con dos cupos distintos · evidencia:
+- [ ] Hoxe enseña el contenido de la capa elegida (piezas, frase y voz) · evidencia:
+- [ ] Capas «Máis / Más» y «Apoio / Apoyo» escritas, sin plantilla, en las 200 semanas; gate que falla con texto de plantilla · evidencia:
+- [ ] Vocabulario de 2-3 a 5-6 sin palabras ajenas a la edad; gate de lista · evidencia:
+- [ ] Umbral de vueltas corregido y auditoria_niveles.py --gate en tools/gates.sh a cero · evidencia:
+- [ ] gates.sh y flutter test completos en verde, mergeado en main con CI en verde y los audios generados · evidencia:
