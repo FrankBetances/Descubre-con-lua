@@ -678,3 +678,35 @@ CORRECCIÓN DE FRANK (26/11/2026) al trabajo P11 que estás haciendo. No empiece
 4. P11.10 · Captura en gl y es del alta de un niño de 4 años con su prueba de principio a fin, y luego la de un segundo niño.
 El texto completo con esta corrección ya está en main: «P11 · Prompt único (26/11/2026, vigente)» de docs/PROMPTS_ANTIGRAVITY.md. Si algo de lo que ya hiciste choca con esto, corrígelo en el paso donde lo hiciste y apúntalo en docs/p11-control.md.
 ```
+
+## P11 · Corrección final: alta de una sola vez y mejoras M1-M5 (26/11/2026, vigente)
+
+La que Frank pega a Antigravity sobre el P11 en curso. Sustituye a la «Corrección del alta» de arriba, que queda dentro de esta. M1-M5 aprobadas por Frank el 26/11/2026 (O-20261126-4).
+
+```text
+CORRECCIÓN DE FRANK (26/11/2026) PARA EL TRABAJO P11 · ALTA DE UNA SOLA VEZ Y MEJORAS M1-M5
+
+Sigue con P11 donde vas; no empieces de nuevo. Manda el «P11 · Prompt único (26/11/2026, vigente)» de docs/PROMPTS_ANTIGRAVITY.md en main, con sus reglas 1-12, más esta corrección, que sustituye a cualquier texto anterior. Lo que ya hiciste y choque con esto, corrígelo en el paso donde lo hiciste y apúntalo en docs/p11-control.md. No crees pasos nuevos: todo va dentro de P11.0-P11.11.
+
+ALTA (P11.1 y P11.3)
+El alta de cada niño se hace UNA SOLA VEZ, en un solo recorrido: nombre o apodo, mes y año de nacimiento (sin día), curso propuesto por la edad, rutinas de casa (M2) y, para 2 años o más, la prueba de entrada como último tramo; al terminar, «Hai outro neno ou nena na casa? / ¿Hay otro niño o niña en casa?». La prueba no se repite ni se ofrece desde la ficha: desde ahí el nivel lo ajusta P11.4 cada semana. Si se interrumpe, sigue donde se quedó; hasta acabarla, el niño empieza por el inicio de su curso. 0-2 no hace prueba. Un niño ya dado de alta no vuelve a ver el alta: sus datos se cambian en «Editar a …». Tests: un niño dado de alta no vuelve a ver el alta; la prueba sale una sola vez y se reanuda si se interrumpe.
+
+M1 · MARCAR EN DIEZ SEGUNDOS (en P11.2, antes de P11.4)
+Al acabar el juego del día, una sola pantalla con las 2 a 4 palabras de hoy, cada una con su lámina y tres botones grandes: «aínda non / aún no», «entende / la entiende», «dío / la dice»; nada más que leer. El domingo, «Lúa pregunta» por tres palabras de la semana, con los mismos botones. Se guarda por niño un contador de semanas con marcas, sin hora. Si un niño lleva dos semanas sin marcas, Hoxe lo recuerda en una línea, sin reñir. Hecho cuando: un widget test marca tres palabras en una pantalla y comprueba que llegan a la tarjeta FSRS del niño, y un test comprueba «Lúa pregunta» en domingo.
+
+M2 · EL INGLÉS DENTRO DE LAS RUTINAS DE CASA (en P11.1 y P11.7)
+En el alta, la familia elige una o dos rutinas suyas: baño, comida, coche, vestirse, ir a dormir o parque. Na casa → Hoxe pone las palabras de cada día en esas rutinas, con una frase de cómo decirlas ahí y su gesto («No baño: "Water!", mentres botas a auga»), que nombra el STEAM del mes. Cada capa de cada semana lleva una línea por rutina, escrita y no repetida entre semanas. El «momento» fijo de las unidades se queda para el aula. La rutina se guarda en criancas.json: privacidad en el mismo commit. Hecho cuando: un test con dos niños que eligieron rutinas distintas comprueba que Hoxe enseña a cada uno su rutina; un gate falla si a una semana le falta la línea de alguna rutina.
+
+M3 · RETO DE HERMANOS (en P11.7)
+Si en la casa hay dos niños o más en cursos distintos, Na casa → Hoxe enseña una vez por semana «Reto de irmáns / Reto de hermanos»: una actividad que junta palabras de los dos cursos de esa semana, con el STEAM de cada uno nombrado; el mayor le dice las palabras al pequeño y la persona adulta marca a los dos. Una pieza por semana y por pareja de cursos vecinos (0-2 con 2-3, 2-3 con 3-4, 3-4 con 4-5, 4-5 con 5-6), escrita en gl, es y en, con voz; para dos cursos no vecinos, la del curso del pequeño con el siguiente. Hecho cuando: un test con dos niños de 2-3 y 4-5 comprueba que el reto sale y trae palabras de los dos cursos; un gate falla si a una semana le falta su reto en alguna pareja.
+
+M4 · CUÁNTAS VECES LA HA OÍDO (en P11.2 y P11.4)
+Junto a cada palabra del niño, «Oíuna 12 veces / La ha oído 12 veces», contando las veces que la persona adulta puso su audio en la app y las que la marcó. El motor de P11.4 no cuenta una palabra como fallo de «la dice» hasta que la ha oído al menos 8 veces (constante en el código, para que la logopeda la ajuste). Contador por palabra y por niño, sin hora: privacidad en el mismo commit. Hecho cuando: un test comprueba el contador y otro que una palabra con menos de 8 escuchas no baja la tasa.
+
+M5 · LA TARJETA DE LÚA PARA LA ESCUELA (en P11.4)
+En la ficha de cada niño, «Tarxeta para a escola / Tarjeta para la escuela»: una pantalla que la familia enseña en la escuela infantil, con el nombre o apodo, el curso, el peldaño en palabras sencillas y las palabras que ya dice, con su lámina. No se envía, no se comparte y no se imprime sola: solo se muestra. Sin porcentajes ni lenguaje clínico. Hecho cuando: un widget test la abre y comprueba sus datos; check_finalidade.py en verde.
+
+CAPTURAS (P11.10), además de las del prompt único, en gl y es: la pantalla de marcar en diez segundos, «Lúa pregunta», Hoxe con la rutina elegida, el reto de hermanos, «La ha oído N veces» y la tarjeta para la escuela.
+
+CONTROL: en docs/p11-control.md, cada mejora M1-M5 con su evidencia, igual que los criterios de las órdenes. El informe final empieza por «De la orden falta: …», con M1-M5 incluidas.
+```

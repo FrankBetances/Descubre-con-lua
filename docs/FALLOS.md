@@ -144,3 +144,13 @@ Formato de cada entrada (una por fallo):
 - Qué pasó: tras cambiar el alta (una sola vez, con la prueba dentro), Claude Code le dijo a Frank que el texto anterior «ya no vale» y que le pegara uno nuevo a Antigravity. Frank ya se lo había pasado hacía tiempo y Antigravity estaba trabajando. Lo hizo Claude Code.
 - Causa raíz: Claude Code dio por hecho que Antigravity no había empezado, sin preguntarlo ni mirar el remoto, y presentó un cambio de alcance como prompt de arranque en vez de como corrección sobre el trabajo en curso.
 - Guarda: tools/estado_antigravity.py (lista las ramas antigravity/* con sus pasos fuera de main y recuerda que, si Frank ya pasó el prompt, el cambio va como corrección para pegar) y docs/PROMPTS_ANTIGRAVITY.md (la corrección del 26/11/2026, guardada junto al prompt único)
+
+## F-20261126-4 · Una mañana de Frank perdida y un plan sin mejoras propias
+- Qué pasó: Frank pidió un plan de mejoras. Claude Code entregó la auditoría y un plan que solo arreglaba lo que Frank había señalado, sin ninguna mejora propia, y gastó la mañana de Frank en rondas evitables: le dio por pendientes cuatro criterios ya hechos (F-20261126-2), le mandó pegar un prompt nuevo a Antigravity cuando ya trabajaba (F-20261126-3) y le dio el prompt en tres formas distintas antes de la que servía. Lo hizo Claude Code.
+- Causa raíz: Claude Code trató «plan de mejoras» como «lista de arreglos» y no aplicó la preferencia de Frank de proponer con criterio propio; y contestó sin comprobar antes el estado real (ORDENES frente a main, Antigravity en marcha).
+- Guarda: tools/check_plan_mejoras.py (falla si el plan no trae al menos tres mejoras propias de Claude Code con su porqué, su coste y cuál va primero; dentro de tools/gates.sh), junto a tools/check_ordenes_mergeadas.py y tools/estado_antigravity.py
+
+## F-20261126-5 · Claude Code esperó un «sigue» para guardar lo que Frank ya había mandado guardar
+- Qué pasó: Frank pidió el prompt completo con las mejoras M1-M5. Claude Code se lo dio en el chat y dijo que lo guardaría y mergearía «cuando digas sigue», aunque Frank ya había ordenado tenerlo todo; Frank tuvo que volver a pedirlo con Antigravity trabajando. Lo hizo Claude Code.
+- Causa raíz: Claude Code aplicó la entrega de texto (R-ENTREGA, sin herramientas en ese turno) como si dejar el repositorio a medias fuera aceptable, en vez de guardarlo en el turno siguiente sin pedir permiso para algo ya ordenado.
+- Guarda: tools/check_prompt_vigente.py (falla si docs/ORDENES.md da por aprobadas mejoras M<n> y ninguna sección «vigente» de docs/PROMPTS_ANTIGRAVITY.md las nombra; dentro de tools/gates.sh)
