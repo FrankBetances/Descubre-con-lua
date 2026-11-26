@@ -141,6 +141,7 @@ run_gate "levels, review returns and age ceilings pass audit" \
 # O-20261126-5 (punto 6): ninguna sustitución de vocabulario por edad sin aplicar.
 run_gate "age vocabulary substitutions are applied" python3 tools/vocab_idade.py --check
 # F-20261126-6: un criterio con evidencia en la tabla de control no sigue abierto sin motivo.
+run_gate "no criterion is closed with an evidence that says it is not done (F-20261126-13)" python3 tools/check_evidencia_honesta.py
 run_gate "done criteria are not left open" python3 tools/check_ordenes_abertas.py
 # F-20261126-7: un solo prompt vigente para Antigravity, entero.
 run_gate "one complete current prompt for Antigravity" python3 tools/check_prompt_unico.py

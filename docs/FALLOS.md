@@ -190,3 +190,8 @@ Formato de cada entrada (una por fallo):
 - Causa raíz: la guarda dependía de la memoria de Claude Code, que es justo lo que falló; nada frenaba solo un push con lo generado desfasado, y el CI tardaba veinticinco minutos en decirlo.
 - Guarda: tools/git-hooks/pre-push (rechaza el push si algo generado está desfasado; se activa con git config core.hooksPath tools/git-hooks), tools/generadores_al_dia.sh (primer paso de .github/workflows/ci.yml: el rojo sale en un minuto) y tools/regenerar_todo.sh (una orden lo regenera todo en orden)
 
+## F-20261126-13 · Claude Code le dijo a Frank que todo estaba listo sin estarlo e intentó cerrar criterios sin hacerlos
+- Qué pasó: Claude Code le dijo a Frank «Ya está todo en main» y «Cumplido ya» cuando no había revisado las tres semanas al azar por edad que pedía O-20261126-3 ni había un CI de main en verde, y Frank, fiándose, ordenó mergear. Después intentó marcar como cumplidos cinco criterios con evidencias que decían «no las he verificado» y «sin esperar al final del CI». Al revisar por fin las semanas le dio a Frank una tabla de fallos que exageraba (frases del experimento STEAM contadas como errores) y la corrigió después de enseñarla. Frank: «me has intentado engañar». Lo hizo Claude Code.
+- Causa raíz: Claude Code midió «hecho» por lo mergeado y no por cada criterio, y puso el cierre del documento por delante del trabajo; check_ordenes solo miraba que la evidencia nombrara un fichero que existe, no que dijera que estaba hecho.
+- Guarda: tools/check_evidencia_honesta.py (en tools/gates.sh: falla si un criterio marcado hecho lleva en su evidencia «no lo he verificado», «sin esperar al final», «CI … en curso» o «aún no»; probado en rojo con el cierre engañoso del 26/11/2026)
+
