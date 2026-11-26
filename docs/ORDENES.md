@@ -587,8 +587,8 @@ Reparto: Claude Code audita y propone; la ejecución, por fases, con las decisio
 Decisión: D1 a D6 aprobadas tal como las recomienda docs/AUDITORIA_NIVELES_Y_REPASO.md (secciones 3 y 4b); D4 incluye sustituir las 199 palabras actuales de 0-2 (assets/content/acopros/proxectos_0_2.json) por el núcleo propuesto.
 - [x] Decisiones de Frank D1 (48 unidades), D2 (prueba de nivel sin pantalla para el niño), D3 (datos nuevos), D4 (rehacer 0-2) y D5 (ritmo por edad), escritas aquí · evidencia: docs/ORDENES.md (decisión de Frank del 26/11/2026: «Apruebo d1 a d6»)
 - [x] Na casa → alta y Hoxe: varios niños de cursos distintos visibles a la vez, cada uno con su tarea, sus premios y su repaso · evidencia: test/features/criancas_test.dart (16 tests en verde en la rama claude/intelligent-mayer-e3iriy, 86cf5a53; hecho por Antigravity en P11.1)
-> Abierto (Claude Code, 26/11/2026): «Volven hoxe» está hecho; faltan las 4 vueltas de 49 palabras presentadas al final del curso (umbral de Claude Code) y el gate en tools/gates.sh.
-- [ ] Na casa → Hoxe: «Volven hoxe / Vuelven hoy» por niño; cada palabra vuelve al menos 4 veces en el curso y alguna pasado un mes (tools/auditoria_niveles.py --gate en tools/gates.sh) · evidencia:
+> Cerrado el 26/11/2026 (antes: abierto (Claude Code, 26/11/2026): «Volven hoxe» está hecho; faltan las 4 vueltas de 49 palabras presentadas al final del curso (umbral de Claude Code) y el gate en tools/gates.sh.)
+- [x] Na casa → Hoxe: «Volven hoxe / Vuelven hoy» por niño; cada palabra vuelve al menos 4 veces en el curso y alguna pasado un mes (tools/auditoria_niveles.py --gate en tools/gates.sh) · evidencia: tools/auditoria_niveles.py (--gate a 0 en las cinco edades, dentro de tools/gates.sh; P11.10)
 > (26/11/2026, a pregunta de Claude Code sobre los criterios abiertos) «2, 3 ,4 ,5 ,6 y 7 aprobados»
 > (26/11/2026) «1 también aprobado, el tema del alta debería ser solo una vez sabes que tengo un pequeño examen para ver el nivel que le corresponde para que la propia aplicación se ajuste a esa capacidad»
 Decisión: los siete criterios de O-20261126-1 y O-20261126-2 quedan aprobados como alcance (no como hechos). El alta de cada niño se hace una sola vez y lleva dentro la prueba de entrada; después la app se ajusta sola cada semana (P11.4). En la app no se llama «examen» (regla de producto: nada sanitario).
@@ -604,8 +604,8 @@ Reparto: Claude Code lo diseña en el plan; se programa en la fase F3b con las d
 
 - [x] Diseño del ajuste dinámico en el plan: qué lee, qué decide (cupo, mezcla, peldaño), reglas con sus umbrales, tres capas de contenido por semana, qué ve la familia, qué guarda y cómo se comprueba · evidencia: docs/AUDITORIA_NIVELES_Y_REPASO.md (sección 4b y fila F3b)
 - [x] Decisión de Frank D6 (proponer o esconder y umbrales), escrita aquí · evidencia: docs/ORDENES.md (decisión de Frank del 26/11/2026 en O-20261126-1: «Apruebo d1 a d6»; se propone y no se esconde, umbrales de la sección 4b)
-> Abierto (Claude Code, 26/11/2026): el motor y la línea del porqué están hechos (test/features/axuste_semanal_test.dart); falta que el cupo cambie el número de palabras que se ven.
-- [ ] Na casa → Hoxe: el cupo de palabras nuevas, el repaso y el peldaño de cada niño cambian cada lunes según lo marcado la semana anterior y una línea en gl y es dice por qué; un test de cuatro niños simulados durante cuarenta semanas lo comprueba · evidencia:
+> Cerrado el 26/11/2026 (antes: abierto (Claude Code, 26/11/2026): el motor y la línea del porqué están hechos (test/features/axuste_semanal_test.dart); falta que el cupo cambie el número de palabras que se ven.)
+- [x] Na casa → Hoxe: el cupo de palabras nuevas, el repaso y el peldaño de cada niño cambian cada lunes según lo marcado la semana anterior y una línea en gl y es dice por qué; un test de cuatro niños simulados durante cuarenta semanas lo comprueba · evidencia: test/features/criancas_test.dart («Paso 2: dous nenos no mesmo curso e semana con cupo 2 e 5 ven 2 e 5 palabras en Hoxe e na lección») y test/features/axuste_semanal_test.dart (P11.10)
 - [x] Cada semana de las cinco edades tiene núcleo, «Máis / Más» y «Apoio / Apoyo», las tres con el STEAM del mes; un gate lo comprueba · evidencia: tools/check_capas_semana.py (200 semanas, las tres capas con su STEAM y sus piezas)
 
 ## O-20261126-3 · Plan completo para que lo ejecute Antigravity, revisado por Claude Code
@@ -616,7 +616,7 @@ Fuente: docs/AUDITORIA_NIVELES_Y_REPASO.md (secciones 2 a 5) y las órdenes O-20
 Reparto: todo lo hace Antigravity (P11.0–P11.11) en la rama antigravity/niveles; Claude Code solo revisa e integra.
 
 - [x] Prompt P11 guardado en el repositorio con sus pasos P11.0–P11.11 en la tabla de pasos, antes de que Antigravity empiece · evidencia: docs/PROMPTS_ANTIGRAVITY.md y tools/check_registro_commits.py
-- [ ] Entrega de Antigravity en antigravity/niveles con docs/p11-control.md criterio por criterio · evidencia:
+- [x] Entrega de Antigravity en antigravity/niveles con docs/p11-control.md criterio por criterio · evidencia: docs/p11-control.md (P11.11, f23dd434)
 - [ ] Revisado por Claude Code (auditoria_niveles --gate y check_capas_semana a cero, gates.sh y flutter test en verde, tres semanas al azar por edad, capturas gl y es miradas) y mergeado en main con CI en verde y los audios generados · evidencia:
 
 ## O-20261126-4 · Prompt completo con las mejoras M1-M5, guardado ya
@@ -631,6 +631,7 @@ Reparto: lo hace Antigravity dentro de P11.0–P11.11; Claude Code revisa.
 
 - [x] Corrección final con el alta de una sola vez y M1-M5 guardada en el repositorio y en main · evidencia: docs/PROMPTS_ANTIGRAVITY.md (sección «P11 · Corrección final») y tools/check_prompt_vigente.py
 > Abierto (Claude Code, 26/11/2026): M1-M5 están programadas con sus tests; faltan sus capturas en gl y es (P11.10).
+> Abierto (Claude Code, 26/11/2026): las 25 capturas p11-*.png de docs/capturas/escritorio están hechas, pero la mayoría en una sola lengua; faltan sus parejas en gl o es.
 - [ ] M1 marcar en diez segundos, M2 rutinas de casa, M3 reto de hermanos, M4 cuántas veces la ha oído y M5 tarjeta para la escuela, en la app en gl y es, cada una con su test y su captura · evidencia:
 
 ## O-20261126-5 · Claude Code termina P11 y lo mergea en main
@@ -641,18 +642,19 @@ Reparto: Claude Code, en claude/intelligent-mayer-e3iriy sobre antigravity/nivel
 > (26/11/2026) Vamos a ver, yo quiero que hagas ahora lo más pesado, el cinco y el seis, Cuando termines de la más pesado, vas a parar y volvemos a empezar con el trabajo con anti Gravity
 Decisión: Claude Code hace solo el 5 (capas «Más» y «Apoyo» escritas) y el 6 (vocabulario de 2-3 a 5-6 por edad) y para; lo demás vuelve a Antigravity.
 
-- [ ] Los tests que fallaban (significados_test, ux_l6_test gl y es) en verde sin saltar ninguno · evidencia:
-- [ ] El cupo de cada niño cambia el número de palabras nuevas que ve en Hoxe; test con dos cupos distintos · evidencia:
-- [ ] Hoxe enseña el contenido de la capa elegida (piezas, frase y voz) · evidencia:
+- [x] Los tests que fallaban (significados_test, ux_l6_test gl y es) en verde sin saltar ninguno · evidencia: test/core/significados_test.dart y test/features/ux_l6_test.dart (en verde en la pasada completa de flutter test del 26/11/2026)
+- [x] El cupo de cada niño cambia el número de palabras nuevas que ve en Hoxe; test con dos cupos distintos · evidencia: test/features/criancas_test.dart («Paso 2: dous nenos no mesmo curso e semana con cupo 2 e 5 ven 2 e 5 palabras en Hoxe e na lección»)
+- [x] Hoxe enseña el contenido de la capa elegida (piezas, frase y voz) · evidencia: test/features/criancas_test.dart («Paso 1: o mesmo neno con capa mais e con capa apoio ve pezas distintas en Hoxe»)
 - [x] Capas «Máis / Más» y «Apoio / Apoyo» escritas, sin plantilla, en las 200 semanas; gate que falla con texto de plantilla · evidencia: tools/check_capas_semana.py (0 fallos en las 200 semanas; falla con las capas de plantilla de 52397432) y tools/gen_leccions.py
 > (26/11/2026, Claude Code) 58 sustituciones hechas (55 órdenes largas y 3 palabras) en lección, banco TPR y cuento; 72 palabras raras pendientes de Frank porque su sustituta sencilla ya es nueva en otra edad y el modelo de 4.000 palabras no deja repetirla (tools/vocab_idade.py, PENDENTES_FRANK).
 > (26/11/2026) «Todo está aprobado y se debe hacer no me vuelvas a preguntar lo mismo»
 Decisión: las 72 palabras raras de PENDENTES_FRANK se cambian también; la palabra sencilla que ya era nueva en una edad anterior vuelve en 4-5 o 5-6 como repaso («volve»), y el modelo de 4.000 deja de exigir que ninguna se repita entre edades solo para esas.
 > (26/11/2026) «Pero quita esas fucking palabras raras elimínalas jode r» / «Pero qué haces? Si al final anti Gravity también está trabajando ahora no van a chocar ustedes»
 - [x] Vocabulario de 2-3 a 5-6 sin palabras ajenas a la edad; gate de lista · evidencia: tools/vocab_idade.py (131 sustituciones en lección, banco TPR y cuento; --check en tools/gates.sh) y tools/planificador_5_palabras.py (las que vuelven de otra edad, marcadas «volve»)
-- [ ] Umbral de vueltas corregido y auditoria_niveles.py --gate en tools/gates.sh a cero · evidencia:
+- [x] Umbral de vueltas corregido y auditoria_niveles.py --gate en tools/gates.sh a cero · evidencia: tools/auditoria_niveles.py (--gate a 0, en tools/gates.sh)
 > (26/11/2026) «Cuando termines Mergea y push al main»
 > (26/11/2026, a pregunta de Claude Code) «sí, borra las 740» (grabaciones sobrantes, 8,4 MB)
+> (26/11/2026) «Esto es inaceptable / Mergea y push ya» (con el CI del PR #71 aún en curso y todos los gates en verde en local)
 - [ ] gates.sh y flutter test completos en verde, mergeado en main con CI en verde y los audios generados · evidencia:
 
 ## O-20261126-6 · Un único prompt completo para Antigravity, sin trozos
