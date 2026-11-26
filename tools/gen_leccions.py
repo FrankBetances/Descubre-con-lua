@@ -740,17 +740,18 @@ def main():
                 "leccions": leccions,
             })
             anterior = da_unidade or anterior
-        # Repaso espaciado en el aula (+1, +2, +4, +8, +16 semanas desde la
-        # introducción en este curso), sin repetir piezas entre xaSabe y repasa.
+        # Repaso espaciado en el aula (+1, +2, +4, +8, +16 semanas; e +3 nas
+        # últimas semanas para que a semana 35 complete as 4 voltas antes de xuño).
         for idx_sem, lec_obj in enumerate(leccions_curso):
             due_rep = [nk for nk, j in intro_sem.items()
                        if idx_sem - j in (1, 2)]
             due_xa = [nk for nk, j in intro_sem.items()
-                      if idx_sem - j in (4, 8, 16)]
+                      if idx_sem - j in (4, 8, 16)
+                      or (j >= len(leccions_curso) - 5 and idx_sem - j == 3)]
             if idx_sem == len(leccions_curso) - 1:
                 extra_end = [nk for nk, j in intro_sem.items()
                              if idx_sem - j in (5, 6, 7)]
-                due_xa = due_xa + extra_end
+                due_xa = due_xa + [nk for nk in extra_end if nk not in due_rep and nk not in due_xa]
             if lec_obj["tipo"] == "repaso":
                 lec_obj["repasa"] = [dict(pezas_curso[nk]) for nk in due_rep]
                 lec_obj["xaSabe"] = [dict(pezas_curso[nk]) for nk in due_xa]
@@ -768,9 +769,67 @@ def main():
                     }
             else:
                 due_all = [nk for nk, j in intro_sem.items()
-                           if idx_sem - j in (1, 2, 4, 8, 16)]
+                           if idx_sem - j in (1, 2, 4, 8, 16)
+                           or (j >= len(leccions_curso) - 5 and idx_sem - j == 3)]
                 lec_obj["xaSabe"] = [dict(pezas_curso[nk]) for nk in due_all]
                 lec_obj["repasa"] = []
+
+        ruts_m2 = (
+            ("bano", "No baño", "En el baño", "mentres botas a auga", "mientras echas el agua"),
+            ("comida", "Na comida", "En la comida", "ao sentar á mesa", "al sentar a la mesa"),
+            ("coche", "No coche", "En el coche", "mirando pola fiestra na cadeira", "mirando por la ventana en la silla"),
+            ("vestirse", "Ao vestirse", "Al vestirse", "mentres pomos a roupa", "mientras ponemos la ropa"),
+            ("durmir", "Antes de durmir", "Antes de dormir", "con voz suave antes do conto", "con voz suave antes del cuento"),
+            ("parque", "No parque", "En el parque", "ao aire libre co seu xesto", "al aire libre con su gesto"),
+        )
+        sem_index = 0
+        for u_obj in unidades:
+            st_tit = (u_obj.get("steam") or {}).get("titulo") or {"gl": u_obj["titulo"]["gl"], "es": u_obj["titulo"]["es"]}
+            st_gl, st_es = st_tit["gl"], st_tit["es"]
+            for l_obj in u_obj["leccions"]:
+                sem_index += 1
+                foco = (l_obj.get("novas") or l_obj.get("repasa") or [{}])[0]
+                foco_en = foco.get("en") or (l_obj.get("fraseGramatica") or {}).get("en") or "Look!"
+                foco_xesto = foco.get("xesto") or {
+                    "gl": f"Sinala e repite «{foco_en}» con calma.",
+                    "es": f"Señala y repite «{foco_en}» con calma.",
+                }
+                fg_en = (l_obj.get("fraseGramatica") or {}).get("en") or foco_en
+                nov_en = ", ".join(p["en"] for p in (l_obj.get("novas") or [])[:3]) or foco_en
+                rep_en = ", ".join(p["en"] for p in (l_obj.get("repasa") or l_obj.get("xaSabe") or [])[:2]) or foco_en
+
+                def _ruts_capa(capa_tag_gl: str, capa_tag_es: str, palabra_en: str) -> dict:
+                    return {
+                        rk: {
+                            "gl": f"{lgl} (sem. {sem_index} · «{st_gl}» · {capa_tag_gl}): \"{palabra_en}\", {acc_gl}.",
+                            "es": f"{les} (sem. {sem_index} · «{st_es}» · {capa_tag_es}): \"{palabra_en}\", {acc_es}.",
+                            "en": palabra_en,
+                            "xesto": foco_xesto,
+                        }
+                        for rk, lgl, les, acc_gl, acc_es in ruts_m2
+                    }
+
+                l_obj["capas"] = {
+                    "nucleo": {
+                        "gl": f"Semana {sem_index} · «{st_gl}»: practica o núcleo ({nov_en}) coa frase «{fg_en}».",
+                        "es": f"Semana {sem_index} · «{st_es}»: practica el núcleo ({nov_en}) con la frase «{fg_en}».",
+                        "en": fg_en,
+                        "rutinas": _ruts_capa("núcleo", "núcleo", foco_en),
+                    },
+                    "mais": {
+                        "gl": f"Semana {sem_index} · «{st_gl}»: amplía xuntando «{fg_en}» con {rep_en}.",
+                        "es": f"Semana {sem_index} · «{st_es}»: amplía juntando «{fg_en}» con {rep_en}.",
+                        "en": fg_en,
+                        "rutinas": _ruts_capa("máis", "más", fg_en),
+                    },
+                    "apoio": {
+                        "gl": f"Semana {sem_index} · «{st_gl}»: apoio devagar cunha soa peza («{foco_en}») e o seu xesto.",
+                        "es": f"Semana {sem_index} · «{st_es}»: apoyo despacio con una sola pieza («{foco_en}») y su gesto.",
+                        "en": foco_en,
+                        "rutinas": _ruts_capa("apoio", "apoyo", foco_en),
+                    },
+                }
+
         saida["cursos"][curso] = {"unidades": unidades, "calendario": calendario}
         ensinado_antes |= ensinado
         ultimas_do_curso = []

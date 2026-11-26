@@ -10,6 +10,7 @@ import '../../../core/audio/widgets/boton_escuchar.dart';
 import '../../../core/localization/app_language.dart';
 import '../../../core/localization/localized_string.dart';
 import '../../../core/theme/app_theme.dart';
+import '../../../data/models/leccion_model.dart';
 
 /// 0-2 años por proyectos (O-20261109-4, ACOPROS): un proyecto por mes con
 /// unas 20 palabras, su canción, una rima tradicional y cuatro semanas que
@@ -60,6 +61,7 @@ class Proxecto02 {
   final List<PalabraProxecto> palabras;
   final List<({int semana, LocalizedString fase, List<String> palabras})>
       semanas;
+  final List<Map<String, CapaSemanal>> capasPorSemana;
   final List<String> comoFalar;
   final List<String> xaSabe;
   final LocalizedString guia;
@@ -76,6 +78,7 @@ class Proxecto02 {
     this.rimaLamina,
     required this.palabras,
     required this.semanas,
+    this.capasPorSemana = const [],
     required this.comoFalar,
     required this.xaSabe,
     required this.guia,
@@ -92,6 +95,12 @@ class Proxecto02 {
       for (final en in s.palabras)
         if (palabra(en) case final p?) p,
     ];
+  }
+
+  /// Las 3 capas y sus rutinas M2 para la semana 1 a 4.
+  Map<String, CapaSemanal> capasDaSemana(int semana) {
+    if (capasPorSemana.isEmpty) return const {};
+    return capasPorSemana[(semana.clamp(1, capasPorSemana.length)) - 1];
   }
 }
 
@@ -122,6 +131,32 @@ class Proxectos02 {
   static Proxectos02 fromRaw(String raw) {
     final j = json.decode(raw) as Map<String, dynamic>;
     List<String> l(Object? v) => [for (final x in v as List) x.toString()];
+    Map<String, CapaSemanal> capasSem(Map<String, dynamic> semMap) {
+      final rawCapas = semMap['capas'] as Map? ?? const {};
+      final rawRuts = semMap['rutinas'] as Map? ?? const {};
+      final rutsBase = <String, RutinaFogar>{
+        for (final e in rawRuts.entries)
+          if (e.value is Map)
+            e.key.toString():
+                RutinaFogar.fromJson(Map<String, dynamic>.from(e.value as Map)),
+      };
+      final out = <String, CapaSemanal>{};
+      for (final e in rawCapas.entries) {
+        if (e.value is Map) {
+          final parsed =
+              CapaSemanal.fromJson(Map<String, dynamic>.from(e.value as Map));
+          out[e.key.toString()] = parsed.rutinas.isNotEmpty
+              ? parsed
+              : CapaSemanal(
+                  texto: parsed.texto,
+                  en: parsed.en,
+                  rutinas: rutsBase,
+                );
+        }
+      }
+      return out;
+    }
+
     return Proxectos02([
       for (final p in j['proxectos'] as List)
         Proxecto02(
@@ -151,6 +186,10 @@ class Proxectos02 {
                 fase: _t(s['fase']),
                 palabras: l(s['palabras']),
               ),
+          ],
+          capasPorSemana: [
+            for (final s in p['semanas'] as List)
+              capasSem(Map<String, dynamic>.from(s as Map)),
           ],
           comoFalar: l(p['comoFalar']),
           xaSabe: l(p['xaSabe']),

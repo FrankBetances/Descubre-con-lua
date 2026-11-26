@@ -977,6 +977,22 @@ def collect_locutions(content_dir: Path = CONTENT_DIR) -> list[Locution]:
                     _add(_localized(it["instrucion"]), "tutor",
                          f"nivel/{cid}/{iid}/instrucion", seen)
 
+    # M3 (P11.7): Reto de irmáns (parellas de cursos veciños × 40 semanas).
+    reto_json = content_dir / "nivel" / "reto_irmans.json"
+    if reto_json.exists():
+        r_doc = json.loads(reto_json.read_text(encoding="utf-8"))
+        for par_key, items in (r_doc.get("pares") or {}).items():
+            for it in items:
+                iid = it.get("id", "reto_irmans")
+                if it.get("fraseEn"):
+                    _one_neno(str(it["fraseEn"]), f"nivel/irmans/{par_key}/{iid}/en", seen)
+                if isinstance(it.get("fraseSignificado"), dict):
+                    _add(_localized(it["fraseSignificado"]), "tutor",
+                         f"nivel/irmans/{par_key}/{iid}/sig", seen)
+                if isinstance(it.get("instrucion"), dict):
+                    _add(_localized(it["instrucion"]), "tutor",
+                         f"nivel/irmans/{par_key}/{iid}/instrucion", seen)
+
     return sorted(seen.values(), key=lambda e: (e.lang, e.style, e.id))
 
 

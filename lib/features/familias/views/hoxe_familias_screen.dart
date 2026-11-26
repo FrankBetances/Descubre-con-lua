@@ -5,6 +5,7 @@ import '../../juega/widgets/pasos_do_dia.dart';
 import '../../juega/widgets/tarxeta_curricular.dart';
 
 import '../../../core/audio/offline_audio_service.dart';
+import '../../../core/audio/voice_id.dart';
 import '../../../core/audio/widgets/boton_escuchar.dart';
 import '../../../core/brand/imaxe_escena.dart';
 import '../../../core/brand/lua_pixel.dart';
@@ -37,6 +38,7 @@ import '../../criancas/marcar_palabras_screen.dart';
 import '../../criancas/criancas_store.dart';
 import '../../criancas/proba_entrada.dart';
 import '../../criancas/proba_entrada_screen.dart';
+import '../../criancas/reto_irmans.dart';
 import '../../criancas/tarxeta_lua.dart';
 import '../widgets/learn_duolingo.dart';
 import '../../leccions/widgets/proxecto_0_2.dart';
@@ -170,6 +172,16 @@ class _HoxeFamiliasScreenState extends State<HoxeFamiliasScreen> {
     Leccions.cargar().then<Leccions?>((l) => l, onError: (_) => null).then((l) {
       if (mounted && l != null) setState(() => _leccions = l);
     });
+    if (CatalogoRetoIrmans.lido == null) {
+      CatalogoRetoIrmans.cargar().then((_) {
+        if (mounted) setState(() {});
+      }, onError: (_) {});
+    }
+    if (Proxectos02.lidos == null) {
+      Proxectos02.cargar().then((_) {
+        if (mounted) setState(() {});
+      }, onError: (_) {});
+    }
 
     repo.loadSteamUnits().then((_) {
       if (!vixente()) return;
@@ -888,26 +900,80 @@ class _HoxeFamiliasScreenState extends State<HoxeFamiliasScreen> {
                               ),
                       ),
                     ],
-                    if (neno != null && casa != null)
-                      Padding(
-                        padding: const EdgeInsets.only(top: 8),
-                        child: Text(
-                          casa.store
-                              .calcularAxustePara(
-                                neno.id,
-                                mesCalendario: _toca.dia.mesCalendario,
-                                semana: _toca.dia.semana,
-                                agora: agora,
-                              )
-                              .explicacion(lang),
-                          key: const Key('axuste_semanal_explicacion'),
-                          style: const TextStyle(
-                            fontSize: 14,
-                            color: AppTheme.textSecondary,
-                            height: 1.3,
-                          ),
-                        ),
+                    if (neno != null && casa != null) ...[
+                      Builder(
+                        builder: (context) {
+                          final ax = casa.store.calcularAxustePara(
+                            neno.id,
+                            mesCalendario: _toca.dia.mesCalendario,
+                            semana: _toca.dia.semana,
+                            agora: agora,
+                          );
+                          final capaKey = ax.capa.name;
+                          final Map<String, CapaSemanal> capasSem =
+                              neno.curso == 'curso_0_2'
+                                  ? (Proxectos02.lidos
+                                          ?.doMes(_toca.dia.mesCalendario)
+                                          ?.capasDaSemana(_toca.dia.semana) ??
+                                      lec.capas)
+                                  : lec.capas;
+                          final capaObj =
+                              capasSem[capaKey] ?? capasSem['nucleo'];
+                          final ruts = capaObj?.rutinas ?? const {};
+                          final irmansPar = _parellaIrmans(casa.store.criancas);
+                          final pezaIrmans = irmansPar == null
+                              ? null
+                              : CatalogoRetoIrmans.lido?.paraCursos(
+                                  irmansPar.$1.curso,
+                                  irmansPar.$2.curso,
+                                  mesCalendario: _toca.dia.mesCalendario,
+                                  semanaDoMes: _toca.dia.semana,
+                                );
+                          return Column(
+                            crossAxisAlignment: CrossAxisAlignment.stretch,
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.only(top: 8),
+                                child: Text(
+                                  ax.explicacion(lang),
+                                  key: const Key('axuste_semanal_explicacion'),
+                                  style: const TextStyle(
+                                    fontSize: 14,
+                                    color: AppTheme.textSecondary,
+                                    height: 1.3,
+                                  ),
+                                ),
+                              ),
+                              if (ruts.isNotEmpty) ...[
+                                const SizedBox(height: 10),
+                                _RutinasFogarCard(
+                                  neno: neno,
+                                  rutinas: ruts,
+                                  store: casa.store,
+                                  language: lang,
+                                  audioService: widget.audioService,
+                                ),
+                              ],
+                              if (irmansPar != null && pezaIrmans != null) ...[
+                                const SizedBox(height: 10),
+                                _RetoIrmansCard(
+                                  menor: irmansPar.$1,
+                                  maior: irmansPar.$2,
+                                  peza: pezaIrmans,
+                                  mesCalendario: _toca.dia.mesCalendario,
+                                  semanaDoMes: _toca.dia.semana,
+                                  leccions: _leccions,
+                                  store: casa.store,
+                                  agora: agora,
+                                  language: lang,
+                                  audioService: widget.audioService,
+                                ),
+                              ],
+                            ],
+                          );
+                        },
                       ),
+                    ],
                     const SizedBox(height: 16),
                   ],
                 );
@@ -1991,6 +2057,430 @@ class _LuaPreguntaCard extends StatelessWidget {
           ],
         ],
       ),
+    );
+  }
+}
+
+(Crianza, Crianza)? _parellaIrmans(List<Crianza> criancas) {
+  if (criancas.length < 2) return null;
+  final orde = CatalogoRetoIrmans.ordeCursos;
+  final ordenadas = [...criancas]
+    ..sort((a, b) => orde.indexOf(a.curso).compareTo(orde.indexOf(b.curso)));
+  final menor = ordenadas.first;
+  for (var i = ordenadas.length - 1; i > 0; i--) {
+    if (ordenadas[i].curso != menor.curso) {
+      return (menor, ordenadas[i]);
+    }
+  }
+  return null;
+}
+
+class _RutinasFogarCard extends StatelessWidget {
+  const _RutinasFogarCard({
+    required this.neno,
+    required this.rutinas,
+    required this.store,
+    required this.language,
+    this.audioService,
+  });
+
+  final Crianza neno;
+  final Map<String, RutinaFogar> rutinas;
+  final CriancasStore store;
+  final AppLanguage language;
+  final OfflineAudioService? audioService;
+
+  static const _titulos = <String, (String, String)>{
+    'bano': ('No baño', 'En el baño'),
+    'comida': ('Na comida', 'En la comida'),
+    'coche': ('No coche', 'En el coche'),
+    'vestirse': ('Ao vestirse', 'Al vestirse'),
+    'durmir': ('Antes de durmir', 'Antes de dormir'),
+    'parque': ('No parque', 'En el parque'),
+  };
+
+  @override
+  Widget build(BuildContext context) {
+    final isGl = language == AppLanguage.gl;
+    final acento = context.acento;
+    final elixidas = neno.rutinas.isEmpty ? const ['bano'] : neno.rutinas;
+    final visibles = [
+      for (final rk in elixidas)
+        if (rutinas[rk] case final r?) (rk, r),
+    ];
+    if (visibles.isEmpty) return const SizedBox.shrink();
+    return Container(
+      key: const Key('rutinas_fogar_card'),
+      padding: const EdgeInsets.all(14),
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(18),
+        border: Border.all(color: AppTheme.border),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          Text(
+            isGl
+                ? 'Nas túas rutinas · ${neno.nome}'
+                : 'En tus rutinas · ${neno.nome}',
+            key: const Key('rutinas_fogar_titulo'),
+            style: TextStyle(
+              fontSize: 15,
+              fontWeight: FontWeight.w800,
+              color: acento,
+            ),
+          ),
+          const SizedBox(height: 8),
+          for (var i = 0; i < visibles.length; i++) ...[
+            if (i > 0) const SizedBox(height: 10),
+            Builder(
+              builder: (context) {
+                final rk = visibles[i].$1;
+                final r = visibles[i].$2;
+                final nomes = _titulos[rk] ?? (rk, rk);
+                return Container(
+                  key: ValueKey('rutina_fogar_$rk'),
+                  padding: const EdgeInsets.all(12),
+                  decoration: BoxDecoration(
+                    color: AppTheme.pageBg,
+                    borderRadius: BorderRadius.circular(14),
+                    border: Border.all(color: AppTheme.border),
+                  ),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        isGl ? nomes.$1 : nomes.$2,
+                        style: const TextStyle(
+                          fontSize: 13.5,
+                          fontWeight: FontWeight.w800,
+                          color: AppTheme.textPrimary,
+                        ),
+                      ),
+                      const SizedBox(height: 4),
+                      Text(
+                        r.texto.resolve(language),
+                        style: const TextStyle(
+                          fontSize: 14,
+                          color: AppTheme.textPrimary,
+                          height: 1.35,
+                        ),
+                      ),
+                      const SizedBox(height: 4),
+                      Text(
+                        r.xesto.resolve(language),
+                        style: const TextStyle(
+                          fontSize: 13,
+                          color: AppTheme.textSecondary,
+                          height: 1.3,
+                        ),
+                      ),
+                      if (r.en.isNotEmpty) ...[
+                        const SizedBox(height: 6),
+                        BotonEscuchar(
+                          key: ValueKey('rutina_audio_$rk'),
+                          audioService: audioService,
+                          texto: r.en,
+                          language: AppLanguage.en,
+                          interfaz: language,
+                          style: estiloIngles(r.en, paraNeno: true),
+                          comoChip: true,
+                          colorChip: acento,
+                          onEscoitar: () => store.rexistrarEscoita(
+                            neno.id,
+                            r.en,
+                          ),
+                        ),
+                      ],
+                    ],
+                  ),
+                );
+              },
+            ),
+          ],
+        ],
+      ),
+    );
+  }
+}
+
+class _RetoIrmansCard extends StatefulWidget {
+  const _RetoIrmansCard({
+    required this.menor,
+    required this.maior,
+    required this.peza,
+    required this.mesCalendario,
+    required this.semanaDoMes,
+    required this.leccions,
+    required this.store,
+    required this.agora,
+    required this.language,
+    this.audioService,
+  });
+
+  final Crianza menor;
+  final Crianza maior;
+  final RetoIrmansPeza peza;
+  final int mesCalendario;
+  final int semanaDoMes;
+  final Leccions? leccions;
+  final CriancasStore store;
+  final DateTime agora;
+  final AppLanguage language;
+  final OfflineAudioService? audioService;
+
+  @override
+  State<_RetoIrmansCard> createState() => _RetoIrmansCardState();
+}
+
+class _RetoIrmansCardState extends State<_RetoIrmansCard> {
+  Observacion _obsMenor = Observacion.entende;
+  Observacion _obsMaior = Observacion.di;
+
+  (String, String?) _palabraDoMaior() {
+    if (widget.maior.curso == widget.peza.cursoMaior) {
+      return (
+        widget.peza.palabraMaior.en,
+        widget.peza.steamMaior.resolve(widget.language),
+      );
+    }
+    final lec = widget.leccions;
+    if (lec != null) {
+      const meses = [9, 10, 11, 12, 1, 2, 3, 4, 5, 6];
+      final mIdx = meses.indexOf(widget.mesCalendario);
+      final us = lec.unidades[widget.maior.curso];
+      if (us != null && mIdx >= 0 && mIdx < us.length) {
+        final u = us[mIdx];
+        final sIdx = (widget.semanaDoMes - 1).clamp(0, u.leccions.length - 1);
+        final l = u.leccions[sIdx];
+        final cands = [
+          ...l.novas,
+          ...l.repasa,
+          ...l.xaSabe,
+        ];
+        if (cands.isNotEmpty) {
+          return (
+            cands.first.en,
+            u.steam?.resolve(widget.language) ??
+                u.titulo.resolve(widget.language),
+          );
+        }
+      }
+    }
+    return (
+      widget.peza.palabraMaior.en,
+      widget.peza.steamMaior.resolve(widget.language),
+    );
+  }
+
+  Widget _selectorNeno(
+    String nome,
+    String curso,
+    String palabra,
+    Observacion actual,
+    ValueChanged<Observacion> onSelect,
+    String prefixo,
+  ) {
+    final isGl = widget.language == AppLanguage.gl;
+    final opciones = <(Observacion, String, String)>[
+      (Observacion.aindaNon, isGl ? 'Aínda non' : 'Aún no', '${prefixo}_ainda'),
+      (
+        Observacion.entende,
+        isGl ? 'Entende' : 'La entiende',
+        '${prefixo}_entende'
+      ),
+      (Observacion.di, isGl ? 'Dío' : 'La dice', '${prefixo}_di'),
+    ];
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(
+          '$nome (${NomesFamilias.idade(curso).resolve(widget.language)}): «$palabra»',
+          style: const TextStyle(
+            fontSize: 13.5,
+            fontWeight: FontWeight.w700,
+            color: AppTheme.textPrimary,
+          ),
+        ),
+        const SizedBox(height: 6),
+        Wrap(
+          spacing: 6,
+          runSpacing: 6,
+          children: [
+            for (final op in opciones)
+              ChoiceChip(
+                key: ValueKey(op.$3),
+                label: Text(op.$2),
+                selected: actual == op.$1,
+                onSelected: (_) => onSelect(op.$1),
+                materialTapTargetSize: MaterialTapTargetSize.padded,
+              ),
+          ],
+        ),
+      ],
+    );
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return ListenableBuilder(
+      listenable: widget.store,
+      builder: (context, _) {
+        final isGl = widget.language == AppLanguage.gl;
+        final acento = context.acento;
+        final chave =
+            '${widget.peza.cursoMenor}__${widget.peza.cursoMaior}/${widget.mesCalendario}/${widget.semanaDoMes}';
+        final feito = widget.store.retoIrmansFeito(chave);
+        final infoMaior = _palabraDoMaior();
+
+        if (feito) {
+          return Container(
+            key: const Key('reto_irmans_feito'),
+            padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
+            decoration: BoxDecoration(
+              color: AppTheme.pageBg,
+              borderRadius: BorderRadius.circular(14),
+              border: Border.all(color: AppTheme.border),
+            ),
+            child: Text(
+              isGl
+                  ? 'Reto de irmáns desta semana feito (${widget.maior.nome} e ${widget.menor.nome}).'
+                  : 'Reto de hermanos de esta semana hecho (${widget.maior.nome} y ${widget.menor.nome}).',
+              style: const TextStyle(
+                fontSize: 13.5,
+                color: AppTheme.textSecondary,
+              ),
+            ),
+          );
+        }
+
+        return Container(
+          key: const Key('reto_irmans_card'),
+          padding: const EdgeInsets.all(14),
+          decoration: BoxDecoration(
+            color: Colors.white,
+            borderRadius: BorderRadius.circular(18),
+            border: Border.all(color: AppTheme.border),
+          ),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              Row(
+                children: [
+                  const LuaValeria(ancho: 30, cara: CaraLua.love),
+                  const SizedBox(width: 8),
+                  Expanded(
+                    child: Text(
+                      isGl ? 'Reto de irmáns' : 'Reto de hermanos',
+                      key: const Key('reto_irmans_titulo'),
+                      style: TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.w800,
+                        color: acento,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+              const SizedBox(height: 4),
+              Text(
+                widget.peza.titulo.resolve(widget.language),
+                style: const TextStyle(
+                  fontSize: 13.5,
+                  fontWeight: FontWeight.w700,
+                  color: AppTheme.textSecondary,
+                ),
+              ),
+              const SizedBox(height: 6),
+              Text(
+                widget.peza.instrucion.resolve(widget.language),
+                style: const TextStyle(
+                  fontSize: 14,
+                  color: AppTheme.textPrimary,
+                  height: 1.35,
+                ),
+              ),
+              if (widget.maior.curso != widget.peza.cursoMaior &&
+                  infoMaior.$2 != null) ...[
+                const SizedBox(height: 4),
+                Text(
+                  isGl
+                      ? '${widget.maior.nome} suma tamén «${infoMaior.$1}» (${infoMaior.$2}).'
+                      : '${widget.maior.nome} suma también «${infoMaior.$1}» (${infoMaior.$2}).',
+                  style: const TextStyle(
+                    fontSize: 13.5,
+                    color: AppTheme.textSecondary,
+                  ),
+                ),
+              ],
+              const SizedBox(height: 8),
+              BotonEscuchar(
+                key: const Key('reto_irmans_audio'),
+                audioService: widget.audioService,
+                texto: widget.peza.fraseEn,
+                language: AppLanguage.en,
+                interfaz: widget.language,
+                style: estiloIngles(widget.peza.fraseEn, paraNeno: true),
+                comoChip: true,
+                colorChip: acento,
+                descripcion: widget.peza.fraseEn,
+                significado: widget.peza.fraseSignificado,
+              ),
+              const SizedBox(height: 10),
+              _selectorNeno(
+                widget.maior.nome,
+                widget.maior.curso,
+                infoMaior.$1,
+                _obsMaior,
+                (o) => setState(() => _obsMaior = o),
+                'reto_irmans_maior',
+              ),
+              const SizedBox(height: 8),
+              _selectorNeno(
+                widget.menor.nome,
+                widget.menor.curso,
+                widget.peza.palabraMenor.en,
+                _obsMenor,
+                (o) => setState(() => _obsMenor = o),
+                'reto_irmans_menor',
+              ),
+              const SizedBox(height: 10),
+              ConstrainedBox(
+                constraints: const BoxConstraints(minHeight: 48),
+                child: FilledButton(
+                  key: const Key('reto_irmans_gardar'),
+                  onPressed: () {
+                    widget.store.rexistrarRetoIrmans(
+                      chave: chave,
+                      idMenor: widget.menor.id,
+                      semanaMenor: CriancasStore.semana(
+                        widget.menor.curso,
+                        widget.mesCalendario,
+                        widget.semanaDoMes,
+                      ),
+                      palabraMenor: widget.peza.palabraMenor.en,
+                      obsMenor: _obsMenor,
+                      idMaior: widget.maior.id,
+                      semanaMaior: CriancasStore.semana(
+                        widget.maior.curso,
+                        widget.mesCalendario,
+                        widget.semanaDoMes,
+                      ),
+                      palabraMaior: infoMaior.$1,
+                      obsMaior: _obsMaior,
+                      agora: widget.agora,
+                    );
+                  },
+                  child: Text(
+                    isGl ? 'Gardar reto dos dous' : 'Guardar reto de los dos',
+                  ),
+                ),
+              ),
+            ],
+          ),
+        );
+      },
     );
   }
 }

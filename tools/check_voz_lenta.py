@@ -85,6 +85,14 @@ def _frases_neno() -> list[tuple[str, str]]:
             for ev in (esc.get("scene_spec") or {}).get("events") or []:
                 if ev.get("englishPhrase"):
                     out.append((f"ar.{esc.get('id', '?')}.ev", str(ev["englishPhrase"])))
+
+    irmans_path = CONTENT_DIR / "nivel" / "reto_irmans.json"
+    if irmans_path.exists():
+        rm = json.loads(irmans_path.read_text(encoding="utf-8"))
+        for par_key, items in (rm.get("pares") or {}).items():
+            for it in items:
+                if it.get("fraseEn"):
+                    out.append((f"irmans.{par_key}.{it.get('id', '?')}", str(it["fraseEn"])))
     return out
 
 

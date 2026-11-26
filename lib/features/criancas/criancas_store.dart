@@ -304,6 +304,9 @@ class CriancasStore extends ChangeNotifier {
   /// niño → semana (`curso/mes/semana`) → estado semanal P11.4 (sin fecha).
   final Map<String, Map<String, RexistroAxusteSemanal>> _axustes = {};
 
+  /// Claves (`cursoMenor__cursoMaior/mes/semana`) de retos de hermanos completados (M3).
+  final Set<String> _retosIrmans = {};
+
   bool _cargado = false;
   bool get cargado => _cargado;
 
@@ -335,6 +338,7 @@ class CriancasStore extends ChangeNotifier {
     _repasoSeguinteId.clear();
     _escoitas.clear();
     _axustes.clear();
+    _retosIrmans.clear();
     if (j != null) {
       if (j['xogo'] case final Map x) {
         for (final e in x.entries) {
@@ -404,6 +408,12 @@ class CriancasStore extends ChangeNotifier {
           _axustes[porNeno.key.toString()] = sems;
         }
       }
+      final ri = j['retosIrmans'];
+      if (ri is List) {
+        for (final x in ri) {
+          if (x is String && x.isNotEmpty) _retosIrmans.add(x);
+        }
+      }
     }
     _cargado = true;
     notifyListeners();
@@ -444,6 +454,8 @@ class CriancasStore extends ChangeNotifier {
                   for (final s in e.value.entries) s.key: s.value.toJson(),
                 },
           },
+        if (_retosIrmans.isNotEmpty && _criancas.length >= 2)
+          'retosIrmans': (_retosIrmans.toList()..sort()),
       };
 
   Future<void> _gardar() async {
@@ -857,6 +869,42 @@ class CriancasStore extends ChangeNotifier {
     _actualizarTarxeta(id, palabra, o, _soloDia(agora ?? DateTime.now()));
     _incrementarEscoita(id, palabra);
     _marcarSemana(id, semana);
+    await _gardar();
+  }
+
+  /// Indica si el reto semanal de hermanos [chave] ya se completó esta semana (M3).
+  bool retoIrmansFeito(String chave) => _retosIrmans.contains(chave);
+
+  /// Marca a ambos hermanos en el reto semanal [chave] (M3) sin fechas ni horas.
+  Future<void> rexistrarRetoIrmans({
+    required String chave,
+    required String idMenor,
+    required String semanaMenor,
+    required String palabraMenor,
+    required Observacion obsMenor,
+    required String idMaior,
+    required String semanaMaior,
+    required String palabraMaior,
+    required Observacion obsMaior,
+    DateTime? agora,
+  }) async {
+    final dia = _soloDia(agora ?? DateTime.now());
+    void rexistrar(String id, String sem, String pal, Observacion o) {
+      final porSem = _obs.putIfAbsent(id, () => {});
+      final mapa = porSem.putIfAbsent(sem, () => {});
+      if (o == Observacion.aindaNon) {
+        mapa.remove(pal);
+      } else {
+        mapa[pal] = o == Observacion.di ? 2 : 1;
+      }
+      _actualizarTarxeta(id, pal, o, dia);
+      _incrementarEscoita(id, pal);
+      _marcarSemana(id, sem);
+    }
+
+    rexistrar(idMenor, semanaMenor, palabraMenor, obsMenor);
+    rexistrar(idMaior, semanaMaior, palabraMaior, obsMaior);
+    _retosIrmans.add(chave);
     await _gardar();
   }
 

@@ -93,6 +93,19 @@ void main() {
     await s.acariciar(a.id);
     await s.darPeixe(a.id, DateTime(2026, 10, 6, 21, 50));
 
+    await s.rexistrarRetoIrmans(
+      chave: 'curso_2_3__curso_3_4/10/2',
+      idMenor: a.id,
+      semanaMenor: CriancasStore.semana('curso_2_3', 10, 2),
+      palabraMenor: 'water',
+      obsMenor: Observacion.entende,
+      idMaior: b.id,
+      semanaMaior: CriancasStore.semana('curso_5_6', 10, 2),
+      palabraMaior: 'tower',
+      obsMaior: Observacion.di,
+      agora: DateTime(2026, 10, 12, 9),
+    );
+
     final raw =
         File('${dir.path}/${CriancasStore.nomeFicheiro}').readAsStringSync();
     final j = json.decode(raw) as Map<String, dynamic>;
@@ -105,7 +118,12 @@ void main() {
       'repaso',
       'escoitas',
       'axustes',
+      'retosIrmans',
     });
+    final rm = RegExp(r'^curso_\d_\d__curso_\d_\d/\d{1,2}/[1-5]$');
+    for (final k in (j['retosIrmans'] as List)) {
+      expect(rm.hasMatch(k.toString()), isTrue);
+    }
     for (final g in (j['xogo'] as Map).values) {
       expect((g as Map).keys.toSet().difference(XogoLua.claves), isEmpty);
       // Las dos fechas del juego, en día y sin hora.
